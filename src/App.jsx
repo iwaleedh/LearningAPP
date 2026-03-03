@@ -51,6 +51,7 @@ function AppContent() {
               <Route path="/" element={<HomePage />} />
               <Route path="/chapters" element={<ChapterPage />} />
               <Route path="/chapters/:chapterId" element={<ChapterPage />} />
+              <Route path="/notes" element={<ChapterPage />} />
               <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<NotePage />} />
               <Route path="/exercises" element={<ExercisePage />} />
               <Route path="/past-papers" element={<PastPapersPage />} />

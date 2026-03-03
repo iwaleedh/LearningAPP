@@ -1,7 +1,6 @@
 import { deriveConfidenceBand, estimateReadMinutes } from './noteContext.js';
 import { extractMentionsFromDoc } from './mentionGraph.js';
 import { getClient } from '../../spacetime.js';
-import { tables, reducers } from '../../spacetime/index.js';
 
 export function getStorageCapabilities() {
     return {
@@ -121,7 +120,7 @@ export async function getNote(noteId) {
     if (!client) return null;
 
     // Using simple iteration since primary key queries map to normal array finds
-    const row = Array.from(tables.note.iter()).find(n => n.noteId === noteId);
+    const row = Array.from(client.db.note.iter()).find(n => n.noteId === noteId);
     if (!row) return null;
 
     return mapSpacetimeNoteRow(row);
@@ -142,24 +141,30 @@ export async function upsertNote(noteDoc) {
 
     const breadcrumbsStr = JSON.stringify(normalized.breadcrumbs || []);
 
-    reducers.upsertNote(
-        normalized.noteId,
-        normalized.subject || '',
-        normalized.topicTitle || '',
-        normalized.subtopicTitle || '',
-        breadcrumbsStr,
+    const client = getClient();
+    if (!client) return;
+
+    client.reducers.upsertNote({
+        noteId: normalized.noteId,
+        subject: normalized.subject || '',
+        title: normalized.topicTitle || '',
+        subtopicTitle: normalized.subtopicTitle || '',
+        breadcrumbs: breadcrumbsStr,
         contentJson,
-        normalized.confidenceScore,
-        normalized.estimatedReadMinutes || 0
-    );
+        confidenceScore: normalized.confidenceScore,
+        estimatedReadMinutes: Math.floor(normalized.estimatedReadMinutes || 0)
+    });
 }
 
 export async function listNotesBySubject(subject) {
     const key = String(subject).toLowerCase();
 
     const notes = [];
-    for (const row of tables.note.iter()) {
-        if (row.subject.toLowerCase() === key) {
+    const client = getClient();
+    if (!client) return notes;
+
+    for (const row of client.db.note.iter()) {
+        if (String(row.subject || '').toLowerCase() === key) {
             const parsed = mapSpacetimeNoteRow(row);
             if (parsed) notes.push(parsed);
         }
@@ -191,24 +196,30 @@ export async function saveFlashcard(card) {
     const sourceNoteId = String(card.sourceNoteId || '');
     const sourceLabel = String(card.sourceLabel || '');
 
-    reducers.saveFlashcard(
+    const client = getClient();
+    if (!client) return;
+
+    client.reducers.saveFlashcard({
         cardId,
         subject,
         sourceNoteId,
         sourceLabel,
         front,
         back
-    );
+    });
 }
 
 export async function listFlashcards(filters = {}) {
     let cards = [];
-    for (const row of tables.flashcard.iter()) {
+    const client = getClient();
+    if (!client) return cards;
+
+    for (const row of client.db.flashcard.iter()) {
         cards.push(mapSpacetimeFlashcardRow(row));
     }
 
     const filtered = cards.filter((item) => {
-        if (filters.subject && item.subject.toLowerCase() !== String(filters.subject).toLowerCase()) return false;
+        if (filters.subject && String(item.subject || '').toLowerCase() !== String(filters.subject).toLowerCase()) return false;
         if (filters.sourceNoteId && item.sourceNoteId !== String(filters.sourceNoteId)) return false;
         return true;
     });
@@ -222,12 +233,15 @@ export async function saveNoteAsset(asset) {
     const type = String(asset.type || '');
     const data = asset.data || '';
 
-    reducers.saveNoteAsset(
+    const client = getClient();
+    if (!client) return assetId;
+
+    client.reducers.saveNoteAsset({
         assetId,
         noteId,
-        type,
+        assetType: type,
         data
-    );
+    });
 
     return assetId;
 }

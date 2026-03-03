@@ -1,5 +1,6 @@
-import { Wifi, Printer, CloudOff, Download } from 'lucide-react';
+import { Wifi, Printer, CloudOff, Download, Database } from 'lucide-react';
 import { AIGrading, DraftAutoSave, PhotoUpload } from '../components/advanced/AdvancedFeatures';
+import { getClient } from '../spacetime.js';
 import usePwaStatus from '../hooks/usePwaStatus';
 import './Pages.css';
 
@@ -38,6 +39,46 @@ export default function AdvancedPage() {
             <p style={{ color: 'var(--color-text-secondary)', marginBottom: 'var(--space-5)' }}>
                 AI grading, resilient draft auto-save, validated uploads, and PWA readiness checks.
             </p>
+
+            <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)', border: '2px solid var(--color-primary)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
+                    <Database size={18} style={{ color: 'var(--color-primary)' }} />
+                    <h3 style={{ margin: 0 }}>SpacetimeDB Test</h3>
+                </div>
+                <button
+                    className="btn btn-primary no-print"
+                    id="test-spacetime-btn"
+                    onClick={() => {
+                        console.log('Testing SpacetimeDB...');
+                        try {
+                            const client = getClient();
+                            if (!client) throw new Error("SpacetimeDB client not initialized yet.");
+
+                            client.reducers.upsertNote(
+                                'test:123',
+                                'physics',
+                                'Test Title',
+                                'Test Subtopic',
+                                '[]',
+                                '{"blocks": [{"data": "Hello World!"}]}',
+                                4,
+                                1
+                            );
+                            setTimeout(() => {
+                                const notes = Array.from(client.db.note.iter());
+                                console.log('Notes in DB:', notes);
+                                document.getElementById('spacetime-result').innerText = `Success! Found ${notes.length} note(s). Content: ${notes[0]?.title}`;
+                            }, 500);
+                        } catch (e) {
+                            console.error(e);
+                            document.getElementById('spacetime-result').innerText = 'Error: ' + e.message;
+                        }
+                    }}
+                >
+                    Run Database Test
+                </button>
+                <div id="spacetime-result" style={{ marginTop: '10px', fontWeight: 'bold' }}></div>
+            </div>
 
             <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>

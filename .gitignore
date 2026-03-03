@@ -12,11 +12,18 @@ dist
 dist-ssr
 *.local
 
+# SpacetimeDB
+spacetime-backend/target/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# SpacetimeDB build artifacts
+spacetime-backend/spacetimedb/target/
+
 *.suo
 *.ntvs*
 *.njsproj

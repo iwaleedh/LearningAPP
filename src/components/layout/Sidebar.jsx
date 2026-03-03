@@ -10,7 +10,7 @@ import './Layout.css';
 
 const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
-    { path: '/chapters', label: 'Notes', icon: BookOpen },
+    { path: '/notes', label: 'Notes', icon: BookOpen },
     { path: '/exercises', label: 'Exercises', icon: FlaskConical },
     { path: '/past-papers', label: 'Past Papers', icon: FileQuestion },
     { path: '/flashcards', label: 'Flashcards', icon: Brain },

@@ -53,6 +53,8 @@ pub struct NoteAsset {
 // ==========================================
 #[spacetimedb::reducer]
 pub fn register_user(ctx: &ReducerContext, username: String) -> Result<(), String> {
+    spacetimedb::log::info!("DEBUG: register_user called with username: '{}'", username);
+    
     if ctx.db.user().identity().find(ctx.sender()).is_some() {
         return Err("User already registered".to_string());
     }

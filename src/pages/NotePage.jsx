@@ -3,6 +3,8 @@ import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getSubjectLabel, getSyllabusBySubject } from '../data/syllabusIndex.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote } from '../data/seedNotes/index.js';
+import { getNote } from '../services/notes/noteStore.js';
+import { onSpacetimeDBReady } from '../spacetime.js';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
 import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
 import './Pages.css';
@@ -258,7 +260,22 @@ export default function NotePage() {
     }, [activeUnit, topicId, subtopicIndex]);
 
     const noteId = `note:${context.subject}:${context.unitId}:${context.topicId}:${context.subtopicIndex}`;
-    const seedNote = useMemo(() => getSeedNote(noteId), [noteId]);
+
+    const [dbNote, setDbNote] = useState(null);
+    useEffect(() => {
+        let mounted = true;
+        onSpacetimeDBReady(() => {
+            getNote(noteId).then(n => {
+                if (mounted && n) setDbNote(n);
+            });
+        });
+        return () => { mounted = false; };
+    }, [noteId]);
+
+    const seedNote = useMemo(() => {
+        if (dbNote) return dbNote;
+        return getSeedNote(noteId);
+    }, [dbNote, noteId]);
     const { isRead, readAt, markRead, markUnread } = useNoteReadStatus(noteId);
 
     const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);

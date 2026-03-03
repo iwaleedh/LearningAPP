@@ -1,21 +1,25 @@
-import { DbConnection } from './spacetime/index';
+import { Identity } from 'spacetimedb';
+import { DbConnection } from './spacetime/index.js';
 
-const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI || 'http://localhost:3000';
+const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI || 'https://maincloud.spacetimedb.com';
 const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE || 'spacetime-backend-otpgp';
 
 export let client = null;
 let currentIdentity = null;
 let connectionCallbacks = [];
+let hasRequestedRegistration = false;
+let isInitialized = false;
 
 export async function initSpacetimeDB() {
     if (client) return client;
 
     return new Promise((resolve, reject) => {
-        const token = localStorage.getItem('spacetime-token') || undefined;
+        const tokenKey = `spacetime-token-${SPACETIMEDB_URI}`;
+        const token = localStorage.getItem(tokenKey) || undefined;
 
         const builder = DbConnection.builder()
             .withUri(SPACETIMEDB_URI)
-            .withModuleName(SPACETIMEDB_MODULE);
+            .withDatabaseName(SPACETIMEDB_MODULE);
 
         if (token) {
             builder.withToken(token);
@@ -25,7 +29,7 @@ export async function initSpacetimeDB() {
             console.log('SpacetimeDB Connected!', { identity, token: tokenStr });
 
             if (tokenStr) {
-                localStorage.setItem('spacetime-token', tokenStr);
+                localStorage.setItem(`spacetime-token-${SPACETIMEDB_URI}`, tokenStr);
             }
 
             client = conn;
@@ -34,9 +38,26 @@ export async function initSpacetimeDB() {
             // Subscribe to public tables we care about
             conn.subscriptionBuilder()
                 .onApplied(() => {
-                    console.log('SpacetimeDB Subscription Applied!');
-                    resolve(client);
-                    connectionCallbacks.forEach(cb => cb(client, currentIdentity));
+                    // Auto-register user if they don't exist
+                    const user = Array.from(client.db.user.iter()).find(
+                        u => u.identity.toHexString() === identity.toHexString()
+                    );
+
+                    if (!user && !hasRequestedRegistration) {
+                        hasRequestedRegistration = true;
+                        const randomUsername = 'user_' + identity.toHexString().substring(0, 6) + '_' + Date.now();
+                        console.log('Registering new user:', randomUsername);
+                        client.reducers.registerUser({ username: randomUsername });
+                    } else if (user) {
+                        hasRequestedRegistration = true; // prevent future triggers if user was found
+                    }
+
+                    if (!isInitialized) {
+                        isInitialized = true;
+                        resolve(client);
+                        connectionCallbacks.forEach(cb => cb(client, currentIdentity));
+                        connectionCallbacks = [];
+                    }
                 })
                 .subscribe([
                     "SELECT * FROM user",

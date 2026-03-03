@@ -2,8 +2,9 @@ import { useState } from 'react';
 import {
     LayoutDashboard, Users, AlertTriangle, Clock, Download,
     CheckCircle, XCircle, TrendingUp, TrendingDown, Filter,
-    Mail, ChevronDown, ChevronUp, BarChart3
+    Mail, ChevronDown, ChevronUp, BarChart3, BookOpen, Save
 } from 'lucide-react';
+import { upsertNote } from '../services/notes/noteStore.js';
 import './TeacherDashboard.css';
 
 /* ─── Sample Data ─── */
@@ -79,6 +80,36 @@ export default function TeacherDashboard() {
     const [questionSort, setQuestionSort] = useState('successRate');
     const [sortAsc, setSortAsc] = useState(true);
 
+    // Note Editor State
+    const [noteSubject, setNoteSubject] = useState('chemistry');
+    const [noteUnitId, setNoteUnitId] = useState('1');
+    const [noteTopicId, setNoteTopicId] = useState('1');
+    const [noteSubtopicIndex, setNoteSubtopicIndex] = useState('0');
+    const [noteTitle, setNoteTitle] = useState('');
+    const [noteJson, setNoteJson] = useState('{\n  "blocks": [],\n  "recall": {}\n}');
+    const [noteSaveStatus, setNoteSaveStatus] = useState('');
+
+    const handleSaveNote = async () => {
+        try {
+            setNoteSaveStatus('Saving...');
+            const parsed = JSON.parse(noteJson);
+            const noteDoc = {
+                noteId: `note:${noteSubject}:${noteUnitId}:${noteTopicId}:${noteSubtopicIndex}`,
+                subject: noteSubject,
+                topicTitle: noteTitle,
+                subtopicTitle: noteTitle,
+                blocks: parsed.blocks || [],
+                recall: parsed.recall || { enabled: true, cues: [] },
+                confidenceScore: 3,
+            };
+            await upsertNote(noteDoc);
+            setNoteSaveStatus('Saved successfully to SpacetimeDB!');
+            setTimeout(() => setNoteSaveStatus(''), 3000);
+        } catch (e) {
+            setNoteSaveStatus(`Error: ${e.message}`);
+        }
+    };
+
     // Summary stats
     const totalStudents = STUDENTS.length;
     const avgMastery = Math.round(MASTERY_DATA.flat().reduce((s, v) => s + v, 0) / MASTERY_DATA.flat().length);
@@ -125,6 +156,7 @@ export default function TeacherDashboard() {
         { id: 'heatmap', label: 'Topic Mastery', icon: BarChart3 },
         { id: 'questions', label: 'Question Validity', icon: AlertTriangle },
         { id: 'time', label: 'Time Analytics', icon: Clock },
+        { id: 'notes', label: 'Manage Notes', icon: BookOpen },
         { id: 'export', label: 'Data Export', icon: Download },
     ];
 
@@ -384,6 +416,62 @@ export default function TeacherDashboard() {
                         <button className="btn btn-primary export-btn" onClick={exportCSV}>
                             <Download size={16} /> Export as CSV
                         </button>
+                    </div>
+                )}
+
+                {activeTab === 'notes' && (
+                    <div className="notes-editor-section">
+                        <h3>Raw Note Editor (SpacetimeDB Sync)</h3>
+                        <p className="section-desc">Create or update notes directly in the database to test CRUD operations.</p>
+
+                        <div className="card note-form">
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+                                <div>
+                                    <label>Subject</label>
+                                    <input className="search-input" value={noteSubject} onChange={e => setNoteSubject(e.target.value)} />
+                                </div>
+                                <div>
+                                    <label>Title (Topic/Subtopic)</label>
+                                    <input className="search-input" value={noteTitle} onChange={e => setNoteTitle(e.target.value)} />
+                                </div>
+                            </div>
+
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+                                <div>
+                                    <label>Unit ID</label>
+                                    <input type="number" className="search-input" value={noteUnitId} onChange={e => setNoteUnitId(e.target.value)} />
+                                </div>
+                                <div>
+                                    <label>Topic ID</label>
+                                    <input type="number" className="search-input" value={noteTopicId} onChange={e => setNoteTopicId(e.target.value)} />
+                                </div>
+                                <div>
+                                    <label>Subtopic Index</label>
+                                    <input type="number" className="search-input" value={noteSubtopicIndex} onChange={e => setNoteSubtopicIndex(e.target.value)} />
+                                </div>
+                            </div>
+
+                            <div style={{ marginBottom: '1rem' }}>
+                                <label>Content JSON (Blocks & Recall)</label>
+                                <textarea
+                                    className="search-input"
+                                    style={{ width: '100%', height: '200px', fontFamily: 'monospace', padding: '0.5rem' }}
+                                    value={noteJson}
+                                    onChange={e => setNoteJson(e.target.value)}
+                                />
+                            </div>
+
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                <button className="btn btn-primary" onClick={handleSaveNote}>
+                                    <Save size={16} /> Save to SpacetimeDB
+                                </button>
+                                {noteSaveStatus && (
+                                    <span style={{ color: noteSaveStatus.includes('Error') ? 'var(--danger-color)' : 'var(--success-color)' }}>
+                                        {noteSaveStatus}
+                                    </span>
+                                )}
+                            </div>
+                        </div>
                     </div>
                 )}
             </div>
