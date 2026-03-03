@@ -1,0 +1,767 @@
+/* ── NotePage Layout ──────────────────────────────────────────────────────── */
+
+.note-page {
+    height: calc(100vh - var(--header-height) - calc(var(--space-8) * 2));
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .note-page {
+        height: calc(100vh - var(--header-height) - calc(var(--space-4) * 2));
+    }
+}
+
+/* ── Toolbar ──────────────────────────────────────────────────────────────── */
+
+.note-toolbar {
+    margin: var(--space-4);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    flex-shrink: 0;
+}
+
+.note-toolbar-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.note-toolbar-title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    margin: 0 0 0 var(--space-2);
+    color: var(--color-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+}
+
+.note-toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+}
+
+.note-view-toggle {
+    display: flex;
+    gap: 3px;
+    background: var(--color-bg-secondary);
+    border-radius: 8px;
+    padding: 3px;
+}
+
+/* ── Mark as Read Button ──────────────────────────────────────────────────── */
+
+.note-read-btn {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+
+/* Idle state — greyed out, not yet scrolled enough */
+.note-read-btn--idle {
+    background: var(--color-bg-secondary);
+    color: var(--color-text-tertiary);
+    border: 1px solid var(--color-border);
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+/* Ready state — scrolled ≥80%, ready to click */
+.note-read-btn--ready {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #065f46;
+    border: 1px solid #34d399;
+    cursor: pointer;
+    animation: note-read-pulse 1.8s ease-in-out infinite;
+}
+
+.note-read-btn--ready:hover {
+    background: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+    transform: translateY(-1px);
+}
+
+/* Done state — already marked read */
+.note-read-btn--done {
+    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    color: #14532d;
+    border: 1px solid #86efac;
+    cursor: pointer;
+}
+
+.note-read-btn--done:hover {
+    background: #fee2e2;
+    color: #991b1b;
+    border-color: #fca5a5;
+}
+
+@keyframes note-read-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 5px rgba(52, 211, 153, 0);
+    }
+}
+
+/* ── Read Progress Bar ────────────────────────────────────────────────────── */
+
+.note-read-progress {
+    height: 3px;
+    background: var(--color-border-light);
+    margin: 0 var(--space-4);
+    border-radius: 2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.note-read-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+    border-radius: 2px;
+    transition: width 0.15s ease;
+}
+
+/* ── Body (ToC + Note + Recall) ───────────────────────────────────────────── */
+
+.note-body {
+    flex: 1;
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+    margin: var(--space-3) var(--space-4) var(--space-4);
+    min-height: 0;
+}
+
+/* ── Table of Contents Sidebar ───────────────────────────────────────────── */
+
+.note-toc {
+    width: 220px;
+    flex-shrink: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px 0 0 12px;
+    overflow-y: auto;
+    padding: var(--space-4) 0 var(--space-4);
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+}
+
+.note-toc-header {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-tertiary);
+    padding: 0 var(--space-4) var(--space-3);
+    border-bottom: 1px solid var(--color-border-light);
+    margin-bottom: var(--space-2);
+}
+
+.note-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.note-toc-item {
+    margin: 0;
+}
+
+.note-toc-item.level-2 {
+    padding-left: var(--space-3);
+}
+
+.note-toc-item.level-3 {
+    padding-left: var(--space-6);
+}
+
+.note-toc-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.78rem;
+    color: var(--color-text-secondary);
+    padding: var(--space-2) var(--space-3);
+    border-radius: 6px;
+    transition: background var(--transition-fast), color var(--transition-fast);
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note-toc-link:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
+}
+
+.note-toc-link.active {
+    background: var(--color-primary-50);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    border-right: 2px solid var(--color-primary);
+}
+
+/* ── Note Scroll Area ─────────────────────────────────────────────────────── */
+
+.note-scroll-area {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    min-width: 0;
+}
+
+/* When ToC is open, note has no left radius */
+.note-toc+.note-scroll-area {
+    border-radius: 0 12px 12px 0;
+}
+
+/* When recall is open, note has no right radius */
+.note-scroll-area:has(+ .recall-panel) {
+    border-radius: 12px 0 0 12px;
+}
+
+/* When both ToC and recall are open */
+.note-toc+.note-scroll-area:has(+ .recall-panel) {
+    border-radius: 0;
+}
+
+/* ── Recall Panel ─────────────────────────────────────────────────────────── */
+
+.recall-panel {
+    width: 280px;
+    flex-shrink: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0 12px 12px 0;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.recall-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-light);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
+    background: var(--color-bg-secondary);
+    flex-shrink: 0;
+}
+
+.recall-count {
+    font-weight: 400;
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-xs);
+    margin-left: var(--space-2);
+}
+
+.recall-progress-track {
+    height: 3px;
+    background: var(--color-border-light);
+    flex-shrink: 0;
+}
+
+.recall-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+    transition: width 0.3s ease;
+}
+
+.recall-cue-card {
+    flex: 1;
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    overflow-y: auto;
+}
+
+.recall-prompt {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    padding: var(--space-4);
+    background: var(--color-primary-50);
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0 8px 8px 0;
+}
+
+.recall-reveal-btn {
+    align-self: center;
+    margin-top: var(--space-2);
+}
+
+.recall-answer {
+    background: var(--color-success-light);
+    border: 1px solid var(--color-success);
+    border-radius: 8px;
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.recall-answer-label {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-success-dark);
+}
+
+.recall-answer-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.recall-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    border-top: 1px solid var(--color-border-light);
+    background: var(--color-bg-secondary);
+    flex-shrink: 0;
+    gap: var(--space-2);
+}
+
+.recall-dots {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.recall-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-border);
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+    padding: 0;
+}
+
+.recall-dot:hover {
+    transform: scale(1.3);
+}
+
+.recall-dot.active {
+    background: var(--color-primary);
+    transform: scale(1.2);
+}
+
+.recall-dot.done {
+    background: var(--color-success);
+}
+
+/* ── Scroll To Top Button ─────────────────────────────────────────────────── */
+
+.note-scroll-top-btn {
+    position: sticky;
+    bottom: var(--space-5);
+    /* Float to the right within the scroll container */
+    float: right;
+    margin-right: var(--space-5);
+    /* Clear float so it doesn't collapse layout */
+    clear: both;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s;
+    z-index: 10;
+
+    /* Hidden by default */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+}
+
+.note-scroll-top-btn--visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.note-scroll-top-btn:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+.note-scroll-top-btn:active {
+    transform: translateY(0);
+}
+
+/* Slightly larger touch target on mobile */
+@media (max-width: 768px) {
+    .note-scroll-top-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+        bottom: var(--space-4);
+        margin-right: var(--space-3);
+    }
+}
+
+/* ── Empty state ──────────────────────────────────────────────────────────── */
+
+.note-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-surface);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-tertiary);
+    gap: var(--space-3);
+}
+
+.note-empty span {
+    font-size: 3rem;
+}
+
+.note-empty-title {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
+.note-empty-sub {
+    margin: 0;
+    font-size: var(--font-size-sm);
+}
+
+/* ── PDF container ────────────────────────────────────────────────────────── */
+
+.note-pdf-container {
+    flex: 1;
+    background: var(--color-bg-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+
+    /* Hide sidebar ToC — too narrow to show side-by-side */
+    .note-toc {
+        display: none;
+    }
+
+    /* Reset all radius overrides; each panel gets its own */
+    .note-toc+.note-scroll-area,
+    .note-scroll-area:has(+ .recall-panel),
+    .note-toc+.note-scroll-area:has(+ .recall-panel),
+    .note-scroll-area {
+        border-radius: 12px;
+    }
+
+    .recall-panel {
+        border-radius: 12px;
+        border-left: 1px solid var(--color-border);
+        width: 100%;
+        height: 300px;
+        flex-shrink: 0;
+    }
+
+    .note-body {
+        flex-direction: column;
+    }
+
+    .note-toolbar-title {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Tighter toolbar on phones */
+    .note-toolbar {
+        padding: var(--space-2) var(--space-3);
+        gap: var(--space-2);
+        margin: var(--space-2);
+        margin-bottom: 0;
+    }
+
+    /* Stack toolbar into two rows: badges on top, actions below */
+    .note-toolbar-left {
+        gap: var(--space-1);
+        flex-wrap: wrap;
+    }
+
+    /* Show title but smaller + truncated */
+    .note-toolbar-title {
+        font-size: var(--font-size-sm);
+        max-width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 0;
+    }
+
+    /* Compact action buttons */
+    .note-toolbar-right {
+        gap: var(--space-1);
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    /* Make view-toggle buttons slightly smaller */
+    .note-view-toggle .btn {
+        padding: 4px 8px;
+        font-size: var(--font-size-xs);
+    }
+
+    /* Shrink body margins on phones */
+    .note-body {
+        margin: var(--space-2);
+        gap: var(--space-2);
+    }
+
+    /* Recall panel takes less height on small phones */
+    .recall-panel {
+        height: 260px;
+    }
+
+    /* Cue card tighter on small screens */
+    .recall-cue-card {
+        padding: var(--space-3);
+        gap: var(--space-3);
+    }
+
+    .recall-prompt {
+        font-size: var(--font-size-xs);
+        padding: var(--space-3);
+    }
+
+    .recall-nav {
+        padding: var(--space-2) var(--space-3);
+    }
+
+    /* Progress bar flush with toolbar on small screens */
+    .note-read-progress {
+        margin: 0 var(--space-2);
+    }
+}
+
+/* ── Topic Tabs Navigation ────────────────────────────────────────────────── */
+
+.note-topics-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: 0 var(--space-4) var(--space-3);
+    margin-bottom: var(--space-2);
+    position: relative;
+    z-index: 50;
+    /* Ensure tabs render above note body */
+}
+
+@media (max-width: 600px) {
+    .note-topics-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* Firefox */
+        padding-bottom: var(--space-2);
+    }
+
+    .note-topics-tabs::-webkit-scrollbar {
+        display: none;
+        /* Chrome/Safari */
+    }
+}
+
+.topic-tab-container {
+    position: relative;
+    display: inline-block;
+}
+
+.topic-tab {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+.topic-tab:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
+}
+
+.topic-tab-container.active .topic-tab {
+    background: var(--color-primary-50);
+    border-color: var(--color-primary);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+}
+
+/* ── Subtopics Dropdown ───────────────────────────────────────────────────── */
+
+.topic-subtopics-dropdown {
+    position: absolute;
+    top: calc(100% + var(--space-1));
+    left: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    min-width: 240px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-2) 0;
+
+    /* Hidden by default, show on hover of container */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+}
+
+.topic-tab-container:hover {
+    z-index: 100;
+}
+
+/* Make hover zone larger so mouse doesn't fall off */
+.topic-tab-container::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+
+.topic-tab-container:hover .topic-subtopics-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    background: var(--color-surface);
+    /* Force opaque */
+}
+
+.topic-subtopics-dropdown .dropdown-item {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    white-space: normal;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.topic-subtopics-dropdown .dropdown-item:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
+}
+
+.topic-subtopics-dropdown .dropdown-item.active {
+    background: var(--color-primary-50);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    border-left: 3px solid var(--color-primary);
+}
+
+/* ── Note Footer Navigation ───────────────────────────────────────────────── */
+
+.note-footer-nav {
+    margin: var(--space-8) var(--space-4) var(--space-4) var(--space-4);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border-light);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-next-subtopic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: var(--space-3) var(--space-5);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-next-subtopic:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary-light);
+}
+
+.btn-next-subtopic span {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+}
+
+.btn-next-subtopic strong {
+    font-size: var(--font-size-base);
+    color: var(--color-primary);
+}

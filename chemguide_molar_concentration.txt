@@ -1,0 +1,149 @@
+introduction to calculations in equations involving solutions
+
+Chemguide: Core Chemistry 14 - 16
+
+Introducing calculations in equations involving solutions
+
+This page looks at the various ways concentrations of solutions can be expressed and how you convert between them.  It then looks at some simple calculations involving solutions.
+
+I am assuming you have already read and understood the pages about moles,  calculations from equations involving masses and calculations involving gases.  This page follows on from those.
+
+Ways of talking about concentration
+
+There are two ways of describing concentration that you will have to be familiar with, as well as convert between them.
+
+grams per cubic decimetre: g dm-3
+
+The cubic decimetre (dm3) isn't a common everyday unit of volume, but is exactly the same as the litre.
+
+There are 1000 cm3 in 1 dm3.
+
+Note:  A decimetre is a tenth of a meter - 10 cm.  A cubic decimetre is the volume of a cube 10 cm x 10 cm x 10 cm - 1000 cm3.  If you have read the page about gas calculations you will already know that.
+
+You could also write g dm-3 as g/dm3 - grams per cubic decimetre.
+
+So the negative sign in g dm-3 introduces the word "per" into the expression.
+
+Personally, although I would always write g dm-3 in this form, I always mentally think about it  and even say it as  "grams per litre".   "cubic decimetre" is too much of bother to say (or think)!
+
+moles per cubic decimetre: mol dm-3
+
+But the more common measure of concentration you will come across is moles per cubic decimetre, mol dm-3 (or moles per litre).
+
+So you will come across expressions such as 0.10 mol dm-3 hydrochloric acid.  That is hydrochloric acid which contains 0.10 moles of HCl in every cubic decimetre (litre) of solution.
+
+And one further useful term - molarity.  The molarity of a solution is simply the numerical value of its concentration in mol dm-3.  It is given the symbol M.
+
+So our hydrochloric acid of concentration 0.10 mol dm-3 would be described as 0.10M HCl.  The dilute hydrochloric acid typically used in the lab is probably either M or 2M HCl.  If you don't write a number in front of the M, it is assumed to be 1.
+
+Converting between the two measures
+
+There is absolutely nothing new in this.  You already know how to convert from grams to moles and vice versa.  The fact that the number of grams or moles is present in a particular volume of solution makes no difference to that.
+
+Example 1
+
+What is the concentration in moles per cubic decimetre of sodium hydroxide containing 20.0 g dm-3? (RAMs: H = 1; O = 16; Na = 23)
+
+1 mol NaOH weighs 23 + 16 + 1 = 40 g
+
+20.0 g is 20.0/40 = 0.500 mol
+
+Concentration of NaOH solution = 0.500 mol dm-3.
+
+Example 2
+
+What is the concentration in grams per cubic decimetre of sodium chloride solution containing 0.240 mol dm-3? (RAMs: Na = 23; Cl 35.5)
+
+1 mol NaCl weighs 23 + 35.5 = 58.5 g
+
+0.240 mol weighs 0.240 x 58.5 = 14.0 g
+
+Concentration of NaCl solution = 14.0 g dm-3.
+
+You mustn't quote that to more than 3 significant figures - that' the accuracy used in the numbers you are working with.
+
+Calculations from equations involving a solution
+
+For the moment we are only looking at examples involving just one solution.  On the page about titration calculations, we will look at what happens if you have two solutions.
+
+Example 3
+
+What mass of calcium carbonate, CaCO3, would you have to add to 50 cm3 of 1.0 mol dm-3 hydrochloric acid to exactly neutralise the acid?
+
+(RAMs:  C = 12; O = 16; Ca = 40)
+
+CaCO3 + 2HCl     CaCl2 + H2O + CO2
+
+With these calculations, always start with what you know most about.  In this case you know both the volume and concentration of the acid.  Work out how many moles of it you have got.
+
+1000 cm3 of 1.0 mol dm-3 HCl contains 1.0 mol HCl
+
+Therefore 50 cm3 contains 50/1000 mol = 0.050 mol
+
+The equation says that 1 mol CaCO3 reacts with 2 mol HCl.
+
+So you need half the number of moles of CaCO3 as of HCl.
+
+No of moles CaCO3 = 0.050/2 = 0.025 mol
+
+1 mol CaCO3 weighs 40 + 12 + (3 x 16) = 100 g
+
+Therefore 0.025 mol weighs 0.025 x 100 = 2.5 g
+
+Once you start these calculations there is an inevitability about them.  If you work out the number of moles of HCl, it is fairly obvious that you can use the equation to work out the number of moles of calcium carbonate.  And it is also fairly obvious that once you have done that, you can work out the mass in grams of calcium carbonate.
+
+However complicated the question may look, if you start with what you know most about and work out the number of moles of it, everything else will follow.
+
+Example 4
+
+I am going to use the same reaction because the numbers work out easily, but add a complication by referring to the volume of carbon dioxide given off.  You won't be able to do this unless you have read the page about calculations involving gases.
+
+What volume of carbon dioxide, CO2, measured at rtp, would you get if you added an excess of calcium carbonate to 100 cm3 of 2.0 mol dm-3 hydrochloric acid? (Molar volume = 24 dm-3 at rtp)
+
+CaCO3 + 2HCl     CaCl2 + H2O + CO2
+
+Again the thing you know everything essential about is the hydrochloric acid.  So start there and see where it leads you.
+
+1000 cm3 of 2.0 mol dm-3 HCl contains 2.0 mol HCl
+
+Therefore 100 cm3 contains 100/1000 x 2 mol = 0.20 mol
+
+The equation says that 2 mol HCl gives 1 mol CO2.
+
+Therefore 0.20 mol HCl would give 0.10 mol CO2.
+
+1 mol CO2 occupies 24 dm-3 at rtp
+
+0.10 mol CO2 occupies 0.10 x 24 dm-3 at rtp = 2.4 dm-3
+
+Example 5
+
+25.0 cm3 of 0.100 mol dm-3 silver nitrate solution was added to an excess of sodium chloride solution.  What mass of silver chloride would be formed? (RAMs: Cl = 35.5; Ag = 108)
+
+AgNO3(aq) + NaCl(aq)     AgCl(s) + NaNO3(aq)
+
+Start with what you know most about and work out how many moles of it there are.
+
+1000 cm3 of AgNO3 solution contains 0.100 mol.
+
+25.0 cm3 of AgNO3 solution contains 25.0/1000 x 0.100 mol = 0.00250 mol.
+
+From the equation, 1 mol AgNO3 forms 1 mol AgCl.
+
+So 0.00250 mol AgNO3 forms 0.00250 mol AgCl.
+
+1 mol AgCl weighs 108 + 35.5 = 143.5 g
+
+So 0.00250 mol weighs 0.00250 x 143.5 = 0.359 g
+
+Don't quote your answer to more than 3 significant figures - that's the accuracy of the figures in the question.
+
+Where would you like to go now?
+
+To the calculations menu . . .
+
+To the Chemistry 14-16 menu . . .
+
+To Chemguide Main Menu . . .
+
+© Jim Clark 2021

@@ -1,0 +1,598 @@
+/* ============================================
+   Past Paper Component Styles
+   ============================================ */
+
+/* ---- Timed Exam ---- */
+.timed-exam {
+    max-width: 800px;
+}
+
+/* Timer */
+.exam-timer {
+    margin-bottom: var(--space-4);
+}
+
+.exam-timer-bar {
+    height: 6px;
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-bottom: var(--space-2);
+}
+
+.exam-timer-fill {
+    height: 100%;
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+    transition: width 1s linear;
+}
+
+.exam-timer.low-time .exam-timer-fill {
+    background: var(--color-error);
+    animation: pulse-timer 1s ease-in-out infinite;
+}
+
+@keyframes pulse-timer {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.exam-timer-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-secondary);
+}
+
+.exam-timer.low-time .exam-timer-info {
+    color: var(--color-error);
+}
+
+.exam-timer-count {
+    margin-left: auto;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-tertiary);
+}
+
+/* Question Navigator */
+.exam-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--space-4);
+    padding: var(--space-3);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-xl);
+}
+
+.exam-nav-btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: var(--font-sans);
+}
+
+.exam-nav-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.exam-nav-btn.answered:not(.active) {
+    background: var(--color-primary-50);
+    border-color: var(--color-primary-200);
+    color: var(--color-primary);
+}
+
+/* Question Card */
+.exam-question {
+    margin-bottom: var(--space-4);
+}
+
+.exam-q-header {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.exam-q-stem {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-4);
+    line-height: var(--line-height-normal);
+}
+
+/* Confidence */
+.confidence-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+}
+
+.confidence-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: var(--font-weight-semibold);
+}
+
+.confidence-buttons {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.confidence-btn {
+    border: 1px solid var(--color-border) !important;
+    background: var(--color-surface) !important;
+    transition: all var(--transition-fast);
+}
+
+.confidence-btn.conf-Easy.active {
+    background: var(--color-success-light) !important;
+    border-color: var(--color-success) !important;
+    color: var(--color-success-dark) !important;
+}
+
+.confidence-btn.conf-Medium.active {
+    background: var(--color-warning-light, rgba(245, 158, 11, 0.15)) !important;
+    border-color: var(--color-warning, #f59e0b) !important;
+    color: var(--color-warning-dark, #b45309) !important;
+}
+
+.confidence-btn.conf-Hard.active {
+    background: var(--color-error-light) !important;
+    border-color: var(--color-error) !important;
+    color: var(--color-error-dark) !important;
+}
+
+.confidence-badge {
+    font-size: var(--font-size-xs);
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-semibold);
+}
+
+.confidence-badge.conf-Easy {
+    background: var(--color-success-light);
+    color: var(--color-success-dark);
+}
+
+.confidence-badge.conf-Medium {
+    background: var(--color-warning-light, rgba(245, 158, 11, 0.15));
+    color: var(--color-warning-dark, #b45309);
+}
+
+.confidence-badge.conf-Hard {
+    background: var(--color-error-light);
+    color: var(--color-error-dark);
+}
+
+/* Exam Actions */
+.exam-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---- Results ---- */
+.exam-results-header {
+    margin-bottom: var(--space-6);
+}
+
+.exam-timeout-banner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-error-light);
+    border: 1px solid var(--color-error);
+    border-radius: var(--radius-lg);
+    color: var(--color-error-dark);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-4);
+}
+
+.exam-score-display {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    margin-top: var(--space-4);
+}
+
+.exam-score-ring {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    flex-shrink: 0;
+}
+
+.exam-score-ring.pass {
+    border-color: var(--color-success);
+    background: var(--color-success-light);
+}
+
+.exam-score-ring.fail {
+    border-color: var(--color-error);
+    background: var(--color-error-light);
+}
+
+.exam-score-number {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-extrabold);
+}
+
+.exam-score-ring.pass .exam-score-number {
+    color: var(--color-success-dark);
+}
+
+.exam-score-ring.fail .exam-score-number {
+    color: var(--color-error-dark);
+}
+
+.exam-score-details p {
+    font-size: var(--font-size-lg);
+}
+
+.exam-score-label {
+    font-size: var(--font-size-sm) !important;
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-1);
+}
+
+/* Review */
+.exam-review {
+    margin-bottom: var(--space-6);
+}
+
+.exam-review h3 {
+    margin-bottom: var(--space-4);
+}
+
+.exam-review-item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-4);
+    margin-bottom: var(--space-3);
+    border-left: 4px solid;
+}
+
+.exam-review-item.correct {
+    border-left-color: var(--color-success);
+}
+
+.exam-review-item.incorrect {
+    border-left-color: var(--color-error);
+}
+
+.exam-review-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+.exam-review-q {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.exam-review-stem {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-3);
+    font-weight: var(--font-weight-medium);
+}
+
+.exam-review-answers {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-2);
+}
+
+.exam-review-option {
+    font-size: var(--font-size-sm);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+}
+
+.exam-review-option.correct {
+    background: var(--color-success-light);
+    color: var(--color-success-dark);
+    font-weight: var(--font-weight-semibold);
+}
+
+.exam-review-option.incorrect {
+    background: var(--color-error-light);
+    color: var(--color-error-dark);
+    text-decoration: line-through;
+}
+
+.exam-review-rationale {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    line-height: var(--line-height-relaxed);
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-border);
+}
+
+/* ---- Performance Dashboard ---- */
+.perf-dashboard {
+    margin-top: var(--space-6);
+}
+
+.perf-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.perf-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+}
+
+.perf-stat-card {
+    text-align: center;
+    padding: var(--space-4);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-xl);
+}
+
+.perf-stat-value {
+    display: block;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-primary);
+}
+
+.perf-stat-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    margin-top: var(--space-1);
+}
+
+.perf-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+.perf-chart-card {
+    padding: var(--space-4);
+}
+
+.perf-chart-card h4 {
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.perf-chart-container {
+    height: 220px;
+    position: relative;
+}
+
+.perf-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-8);
+    text-align: center;
+    color: var(--color-text-tertiary);
+}
+
+@media (max-width: 768px) {
+    .perf-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perf-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   Past Paper Downloads & Marking Schemes
+   ============================================ */
+
+/* Past Paper Card */
+.past-paper-card {
+    margin-bottom: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.past-paper-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.past-paper-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    cursor: pointer;
+    background: var(--color-bg);
+}
+
+.past-paper-header:hover {
+    background: var(--color-bg-secondary);
+}
+
+.past-paper-main {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-width: 140px;
+}
+
+.past-paper-year {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+}
+
+.past-paper-month {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    padding: 2px 8px;
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-sm);
+}
+
+.past-paper-info {
+    flex: 1;
+}
+
+.past-paper-info h4 {
+    margin: 0 0 var(--space-1) 0;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+}
+
+.past-paper-info p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.past-paper-meta {
+    margin-top: var(--space-1) !important;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.past-paper-expand {
+    color: var(--color-text-tertiary);
+}
+
+.past-paper-details {
+    padding: var(--space-4);
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.past-paper-downloads {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+/* Marking Scheme Dropdown */
+.marking-scheme-dropdown {
+    margin-top: var(--space-3);
+}
+
+.marking-scheme-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.marking-scheme-content {
+    margin-top: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-primary);
+}
+
+.marking-scheme-section {
+    margin-bottom: var(--space-3);
+}
+
+.marking-scheme-section:last-child {
+    margin-bottom: 0;
+}
+
+.marking-scheme-section strong {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-1);
+}
+
+.marking-scheme-section p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+}
+
+.marking-scheme-marks {
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Download Button States */
+.btn-success {
+    background: var(--color-success) !important;
+    color: white !important;
+    border-color: var(--color-success) !important;
+}
+
+/* Subject Buttons */
+.subject-buttons {
+    flex-wrap: wrap;
+}
+
+.subject-btn {
+    font-size: var(--font-size-base);
+}
+
+.subject-btn.active {
+    transform: scale(1.02);
+}
+
+/* View Mode Toggle */
+.view-mode-toggle {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-3);
+}
+
+/* Past Papers List */
+.past-papers-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}

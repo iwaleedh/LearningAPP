@@ -1,0 +1,1 @@
+/Users/ibrahimwaleed/Documents/LearningAPP/spacetime-backend/spacetimedb/target/wasm32-unknown-unknown/release/spacetime_backend.wasm: /Users/ibrahimwaleed/Documents/LearningAPP/spacetime-backend/spacetimedb/src/lib.rs

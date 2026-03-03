@@ -1,0 +1,219 @@
+calculations from equations involving gases
+
+Chemguide: Core Chemistry 14 - 16
+
+Calculations from equations involving gases
+
+This page shows how to do simple calculations involving gases. I am assuming you have already read and understood the pages about moles and calculations from equations involving masses.  It is pointless reading this page unless you are happy with those.
+
+Avogadro's Hypothesis
+
+Avogadro's Hypothesis is sometimes known as Avogadro's Law.
+
+What Avogadro says is:
+
+Equal volumes of gases at the same temperature and pressure contain the same number of molecules.
+
+In other words, if you had a litre of any gas at the same temperature and pressure it will always contain the same number of molecules whether you were talking about hydrogen, or ammonia, or carbon dioxide, or chlorine, or methane . . . or any other gas you care to name.
+
+You can make use of this in simple reactions involving gases - for example the combustion of hydrogen and oxygen to make water.
+
+2H2(g) + O2(g)     2H2O(g or l)
+
+It doesn't matter whether the water is formed as steam or liquid water.
+
+If you want to maximise the bang, you would need twice as many molecules of hydrogen as of oxygen.  What Avogadro tells us is that that means making a mixture with twice the volume of hydrogen as of oxygen.
+
+I love this piece of video - this is the third time I have used it in this 14 to 16 section!
+
+The molar volume of a gas
+
+This is the most useful thing to come out of Avogadro's Hypothesis.
+
+The thinking goes like this:
+
+1 mole of any gas contains the same number of molecules.  (That comes from the definition of a mole.)
+
+If you have the same number of molecules of any gas they must occupy the same volume at the same temperature and pressure.  (That comes from Avogadro's Hypothesis.)
+
+The volume occupied by 1 mole of any gas is called the molar volume.
+
+The molar volume varies with temperature and pressure, but at this level you will almost always be given the value at room temperature and pressure (rtp) which is taken to be about 20°C and 1 atmosphere pressure.
+
+The number will usually be quoted as 24 dm3 per mole (dm3 mol-1), but you may find it as 24000 cm3 per mole.
+
+The cubic decimetre (dm3) isn't a common everyday unit of volume, but is exactly the same as the litre.
+
+There are 1000 cm3 in 1 dm3.
+
+Note:  A decimetre is a tenth of a meter - 10 cm.  A cubic decimetre is the volume of a cube 10 cm x 10 cm x 10 cm - 1000 cm3.
+
+Using the molar volume in calculations from equations involving gases
+
+Example 1
+
+The usual example used to illustrate is the effect of excess dilute hydrochloric acid on calcium carbonate because the numbers are so easy.
+
+ I want to repeat the example I used when we were talking about calculations from equations using masses, but this time calculate the volume of carbon dioxide produced.
+
+I am going to start by using the same technique as I used in that example.
+
+Calcium carbonate and dilute hydrochloric acid react together according to this equation:
+
+CaCO3 + 2HCl     CaCl2 + H2O + CO2
+
+What volume of carbon dioxide (measured at rtp) would you get if you added excess hydrochloric acid to 10 g of calcium carbonate?  (RAMs: C = 12; O = 16; Ca = 40.  Molar volume = 24 dm3 mol-1 at rtp.)
+
+Start by writing down what the equation says in terms of moles.
+
+1 mol CaCO3 gives 1 mol CO2
+
+Now convert the amounts in moles into grams or dm3 as appropriate
+
+1 mol CaCO3 weighs 40 + 12 + (3 x 16) = 100 g.
+
+1 mol CO2 has a volume of 24 dm3.
+
+So the equation is saying that:
+
+100 g of CaCO3 gives 24 dm3 of CO2.
+
+Therefore 10 g of CaCO3 gives 10/100 x 24 dm3 of CO2 = 2.4 dm3.
+
+Note:  If you need to, put in another step by calculating what 1 g would give and then multiply that by 10.
+
+Example 2
+
+Now let's look at the same example but using the other method of doing these calculations.
+
+Calcium carbonate and dilute hydrochloric acid react together according to this equation:
+
+CaCO3 + 2HCl     CaCl2 + H2O + CO2
+
+What volume of carbon dioxide (measured at rtp) would you get if you added excess hydrochloric acid to 10 g of calcium carbonate?  (RAMs: C = 12; O = 16; Ca = 40.  Molar volume = 24 dm3 mol-1 at rtp.)
+
+This time, instead of interpreting the equation in terms of moles, you start with what you know most about and work out how many moles of it you have.
+
+You know the mass of calcium carbonate, and can easily work out the mass of 1 mole.
+
+1 mol CaCO3 weighs 40 + 12 + (3 x 16) = 100 g.
+
+10 g is 10/100 = 0.10 mol
+
+The equation says:
+
+1 mol CaCO3 gives 1 mol CO2
+
+So 0.10 mol CaCO3 gives 0.10 mol CO2
+
+Now use the molar volume:
+
+1 mol CO2 has a volume of 24 dm3.
+
+So 0.10 mol CO2 has a volume of 0.1 x 24 = 2.4 dm3.
+
+It is a toss-up which of these methods you use, but my recommendation would be that you use the second one.  The reason is that that is the approach you have to take to do titration calculations coming up on a later page.
+
+Example 3
+
+I'm going to reverse this now, using a slightly more complicated relationship and starting with the gas.
+
+I'm only going to do this using the second method - not because you can't do it the first way, but because I want to shift the focus on to the second method.
+
+Hydrogen gas is produced when you drop lithium metal into water.
+
+2Li + 2H2O     2LiOH + H2
+
+Assuming you have an excess of water, what is the maximum mass of lithium you could use to avoid over-filling a 100 cm3 gas syringe, collecting the gas at room temperature and pressure?
+
+(RAMs: Li = 7.  Molar volume = 24000 cm3 mol-1 at rtp.)
+
+Start with what you know most about and work out how many moles of it you have.
+
+You know the volume of the syringe you can fill with hydrogen (100 cm3), and you can easily calculate the number of moles of hydrogen.
+
+1 mol H2 has a volume of 24000 cm3.
+
+So 100 cm3 must be 100/24000 = 4.17 x 10-3 mol
+
+(Again, put in an extra step working out how many moles there are in 1 cm3 if you feel more confident doing that.)
+
+The equation says 2 mol Li gives 1 mol H2
+
+4.17 x 10-3 mol H2 comes from 2 x  4.17 x 10-3 = 8.34 x 10-3 mol Li.
+
+1 mol Li weighs 7 g
+
+. . . and 8.34 x 10-3 mol Li weighs 8.34 x 10-3 x 7 = 0.058 g.
+
+Some comments:  You may have noticed that I have switched between "mole" and its abbreviation "mol" in these calculations.  It really doesn't matter.  Normally you use the full word in a piece of text and mol in a calculation.  It is a bit like "grams" and "g".  But I repeat, it doesn't matter.
+
+In this, and the wherever it is relevant in future calculations, I am expressing small numbers in scientific notation (for example, 4.17 x 10-3) because that is almost certainly how it will come off your calculator.
+
+Your calculator will show this as 4.17-03.  That is NOT 4.17 to the power of -03.  It means 4.17 x 10-3.
+
+Notice that I have only quoted the answer to 2 significant figures.  The 24 dm-3 or 24000 cm-3 are only quoted to that accuracy.  Notice, though, that the intermediate answers (based on 4.17 x 10-3) were to 3 significant figures.  It is often good practice to write down intermediate answers to a slightly greater accuracy.
+
+Some other calculations involving molar volume
+
+The calculations we have just looked at are the most likely sort of questions that you could be asked involving molar volume, but there are a few other examples you might get.
+
+Example 4
+
+You can calculate the molar volume if you know the density of a gas at a particular temperature and pressure.
+
+At 0°C and 1 atmosphere pressure, the density of oxygen is 1.429 g dm-3.  Calculate the value for the molar volume of a gas at this temperature and pressure.  (RAM: O = 16)
+
+Note:  You read g dm-3 as "grams per cubic decimetre"
+
+The density value means that 1.429 g of oxygen occupies 1 dm-3.
+
+1 mole of oxygen gas O2 weighs 2 x 16 = 32g.
+
+32 g of oxygen gas occupies 32/1.429 x 1 dm-3 = 22.4 dm-3
+
+Note:  Again, if necessary, work out what volume 1 g would occupy by dividing 1 by 1.429, and then multiply that by 32 to find the volume occupied by 32 g.
+
+You may well find this value for the molar volume quoted at "standard temperature and pressure (stp)" -  0°C and 1 atmosphere pressure.
+
+Example 5
+
+Calculate the volume of 1.42 g of chlorine, Cl2, at room temperature and pressure. (RAM: Cl = 35.5.  Molar volume = 24000 cm3 mol-1 at rtp.)
+
+You know that 1 mole of chlorine weighs 2 x 35.5 = 71 g
+
+1 mole occupies 24000 cm3 at rtp.
+
+If 71 g occupies 24000 cm3 . . .
+
+. . . 1.42 g occupies 1.42/71 x 24000 = 480 cm3.
+
+As always, if it helps you can go via the volume occupied by 1 g and then multiply that by 1.42.
+
+Example 6
+
+Calculate the density of ammonia gas, NH3, in g dm-3 at room temperature and pressure.  (RAMs: H = 1; N = 14.  Molar volume = 24 dm3 mol-1 at rtp.)
+
+1 mol NH3 weighs 14 + (3 x 1) = 17 g
+
+17 g NH3 occupies 24.0 dm3 at rtp
+
+1 dm3 would contain 17/24 = 0.71 g
+
+So the density is 0.71 g dm-3.
+
+Finally
+
+You need to practise this by doing as many similar calculations as possible.  Find out what sort of questions you might get in an exam by looking at past papers and mark schemes.
+
+You will find links to the main UK Exam Boards on this page.
+
+Where would you like to go now?
+
+To the calculations menu . . .
+
+To the Chemistry 14-16 menu . . .
+
+To Chemguide Main Menu . . .
+
+© Jim Clark 2021

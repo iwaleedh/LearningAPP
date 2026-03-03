@@ -1,0 +1,121 @@
+import { useState } from 'react';
+import { CheckCircle, Search, ArrowRight } from 'lucide-react';
+import './Exercises.css';
+
+export default function KeywordCheck({ question, onNext }) {
+    const [answer, setAnswer] = useState('');
+    const [submitted, setSubmitted] = useState(false);
+    const [showModel, setShowModel] = useState(false);
+
+    const handleSubmit = () => {
+        if (answer.trim() === '') return;
+        setSubmitted(true);
+    };
+
+    const handleNext = () => {
+        setAnswer('');
+        setSubmitted(false);
+        setShowModel(false);
+        onNext?.();
+    };
+
+    const foundKeywords = submitted
+        ? question.keywords.filter(kw => answer.toLowerCase().includes(kw.toLowerCase()))
+        : [];
+
+    const highlightKeywords = () => {
+        if (!submitted) return answer;
+        let highlighted = answer;
+        question.keywords.forEach(kw => {
+            const regex = new RegExp(`(${kw})`, 'gi');
+            highlighted = highlighted.replace(regex, '⟨$1⟩');
+        });
+        return highlighted;
+    };
+
+    const score = foundKeywords.length;
+    const total = question.keywords.length;
+    const percentage = Math.round((score / total) * 100);
+
+    return (
+        <div className="keyword-exercise card animate-fade-in">
+            <div className="mcq-stem">
+                <h3>{question.stem}</h3>
+                <span className="kw-marks">{question.marks} marks</span>
+            </div>
+
+            <textarea
+                className="kw-textarea"
+                value={answer}
+                onChange={e => setAnswer(e.target.value)}
+                placeholder="Type your answer here..."
+                disabled={submitted}
+                rows={6}
+            />
+
+            {submitted && (
+                <div className="kw-results animate-slide-in-up">
+                    <div className="kw-score-bar">
+                        <div className="kw-score-info">
+                            <Search size={16} />
+                            <span>Keywords found: {score}/{total} ({percentage}%)</span>
+                        </div>
+                        <div className="kw-progress">
+                            <div
+                                className="kw-progress-fill"
+                                style={{ width: `${percentage}%`, background: percentage >= 70 ? 'var(--color-success)' : percentage >= 40 ? 'var(--color-warning)' : 'var(--color-error)' }}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="kw-keyword-chips">
+                        {question.keywords.map(kw => {
+                            const found = foundKeywords.includes(kw);
+                            return (
+                                <span key={kw} className={`kw-chip ${found ? 'found' : 'missing'}`}>
+                                    {found && <CheckCircle size={12} />}
+                                    {kw}
+                                </span>
+                            );
+                        })}
+                    </div>
+
+                    <div className="kw-highlighted-answer">
+                        <strong>Your answer (keywords highlighted):</strong>
+                        <p>{highlightKeywords()}</p>
+                    </div>
+
+                    <button
+                        className="btn btn-ghost btn-sm"
+                        onClick={() => setShowModel(!showModel)}
+                    >
+                        {showModel ? 'Hide' : 'Show'} Model Answer
+                    </button>
+
+                    {showModel && (
+                        <div className="kw-model-answer animate-fade-in">
+                            <strong>Model Answer:</strong>
+                            <p>{question.modelAnswer}</p>
+                        </div>
+                    )}
+                </div>
+            )}
+
+            <div className="mcq-actions">
+                {!submitted ? (
+                    <button
+                        className="btn btn-primary btn-lg"
+                        onClick={handleSubmit}
+                        disabled={answer.trim() === ''}
+                    >
+                        <Search size={18} /> Scan for Keywords
+                    </button>
+                ) : (
+                    <button className="btn btn-primary btn-lg" onClick={handleNext}>
+                        Next Question <ArrowRight size={18} />
+                    </button>
+                )}
+            </div>
+        </div>
+    );
+}

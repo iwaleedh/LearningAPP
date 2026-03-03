@@ -1,0 +1,513 @@
+[
+  {
+    "file": "note_1_1_0.js",
+    "index": 1,
+    "viewBox": "0 0 260 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Nucleus\""
+    ]
+  },
+  {
+    "file": "note_1_1_0.js",
+    "index": 2,
+    "viewBox": "0 0 350 120",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"C\"",
+      "Text without proper alignment: \"12\"",
+      "Text without proper alignment: \"6\"",
+      "Text without proper alignment: \"Mass number (A) = protons + ne\"",
+      "Text without proper alignment: \"Atomic number (Z) = protons = \""
+    ]
+  },
+  {
+    "file": "note_1_1_2.js",
+    "index": 1,
+    "viewBox": "0 0 560 300",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Step 1 — Unbalanced:\"",
+      "Text without proper alignment: \"Na(s)  +  H₂O(l)  →  NaOH(aq) \"",
+      "Text without proper alignment: \"Step 2 — Count atoms: LHS: 1 N\"",
+      "Text without proper alignment: \"<tspan class=\"bad\">✗ Not balan\"",
+      "Text without proper alignment: \"Step 3 — Try ×2 on H₂O:\"",
+      "Text without proper alignment: \"Na(s)  +  <tspan class=\"fix\">2\"",
+      "Text without proper alignment: \"Step 4 — Now O is unbalanced (\"",
+      "Text without proper alignment: \"<tspan class=\"fix\">2</tspan>Na\"",
+      "Text without proper alignment: \"Step 5 — Check: LHS: 2 Na · 4 \""
+    ]
+  },
+  {
+    "file": "note_1_1_2.js",
+    "index": 2,
+    "viewBox": "0 0 560 260",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Step 1 — Balance molecular equ\"",
+      "Text without proper alignment: \"CaCO₃(s) + 2HCl(aq) → CaCl₂(aq\"",
+      "Text without proper alignment: \"Step 2 — Split aqueous ionic s\"",
+      "Text without proper alignment: \"CaCO₃(s) + 2H⁺(aq) + 2Cl⁻(aq) \"",
+      "Text without proper alignment: \"Step 3 — Identify spectator io\"",
+      "Text without proper alignment: \"CaCO₃(s) + 2H⁺(aq) + <tspan cl\"",
+      "Text without proper alignment: \"Step 4 — Final net ionic equat\"",
+      "Text without proper alignment: \"CaCO₃(s) + 2H⁺(aq) → Ca²⁺(aq) \""
+    ]
+  },
+  {
+    "file": "note_1_1_4.js",
+    "index": 3,
+    "viewBox": "0 0 320 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Standard solution\"",
+      "Text without proper alignment: \"(known conc.)\"",
+      "Text without proper alignment: \"Indicator\"",
+      "Text without proper alignment: \"changes colour\"",
+      "Text without proper alignment: \"at end point\""
+    ]
+  },
+  {
+    "file": "note_1_1_5.js",
+    "index": 1,
+    "viewBox": "0 0 560 290",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Step 1: Assume 100 g\"",
+      "Text without proper alignment: \"40.0% C → 40.0 g   |   6.7% H \"",
+      "Text without proper alignment: \"53.3% O → 53.3 g\"",
+      "Text without proper alignment: \"Step 2: Divide by Aᵣ → moles\"",
+      "Text without proper alignment: \"C: 40.0÷12=3.33   H: 6.7÷1=6.7\"",
+      "Text without proper alignment: \"O: 53.3÷16=3.33\"",
+      "Text without proper alignment: \"Step 3: Divide by smallest (3.\"",
+      "Text without proper alignment: \"C: 3.33÷3.33=1   H: 6.7÷3.33=2\"",
+      "Text without proper alignment: \"O: 3.33÷3.33=1  → ratio C:H:O \"",
+      "Text without proper alignment: \"Step 4: Write empirical formul\"",
+      "Text without proper alignment: \"CH₂O\""
+    ]
+  },
+  {
+    "file": "note_1_1_8.js",
+    "index": 1,
+    "viewBox": "0 0 520 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Mg ribbon\"",
+      "Text without proper alignment: \"HCl(aq)\"",
+      "Text without proper alignment: \"H₂(g) collected\"",
+      "Text without proper alignment: \"0\"",
+      "Text without proper alignment: \"V\"",
+      "Text without proper alignment: \"Conical flask\"",
+      "Text without proper alignment: \"Gas syringe\"",
+      "Text without proper alignment: \"Delivery tube\"",
+      "Text without proper alignment: \"thermometer\""
+    ]
+  },
+  {
+    "file": "note_1_1_9.js",
+    "index": 1,
+    "viewBox": "0 0 540 320",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Step 1 — Read observation &amp\"",
+      "Text without proper alignment: \"e.g. \"white precipitate forms \"",
+      "Text without proper alignment: \"Step 2 — Identify reactants an\"",
+      "Text without proper alignment: \"AgNO₃(aq) + NaCl(aq) → AgCl(s)\"",
+      "Text without proper alignment: \"Step 3 — Split aqueous ionic c\"",
+      "Text without proper alignment: \"Ag⁺(aq) + NO₃⁻(aq) + Na⁺(aq) +\"",
+      "Text without proper alignment: \"AgCl stays as molecular — it i\"",
+      "Text without proper alignment: \"Step 4 — Identify and cancel s\"",
+      "Text without proper alignment: \"Na⁺ and NO₃⁻ are spectators → \"",
+      "Text without proper alignment: \"Step 5 — Write net ionic equat\"",
+      "Text without proper alignment: \"Ag⁺(aq) + Cl⁻(aq) → AgCl(s)\"",
+      "Text without proper alignment: \"Check: atoms balance ✓  |  cha\""
+    ]
+  },
+  {
+    "file": "note_1_2_0.js",
+    "index": 1,
+    "viewBox": "0 0 320 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Nucleus (10⁻¹⁵ m)\""
+    ]
+  },
+  {
+    "file": "note_1_2_10_7.js",
+    "index": 1,
+    "viewBox": "0 0 220 280",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"vapour rises,\"",
+      "Text without proper alignment: \"condenses,\"",
+      "Text without proper alignment: \"returns\""
+    ]
+  },
+  {
+    "file": "note_1_2_10_8.js",
+    "index": 1,
+    "viewBox": "0 0 550 260",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"H₃PO₄/heat\""
+    ]
+  },
+  {
+    "file": "note_1_2_4.js",
+    "index": 1,
+    "viewBox": "0 0 420 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"IE₁ / kJ mol⁻¹\""
+    ]
+  },
+  {
+    "file": "note_1_2_5.js",
+    "index": 1,
+    "viewBox": "0 0 420 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Most pass through\"",
+      "Text without proper alignment: \"Small deflection\"",
+      "Text without proper alignment: \"Large deflection (rare)\"",
+      "Text without proper alignment: \"nucleus\""
+    ]
+  },
+  {
+    "file": "note_1_2_6.js",
+    "index": 1,
+    "viewBox": "0 0 380 180",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"+\"",
+      "Text without proper alignment: \"−\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_0.js",
+    "index": 1,
+    "viewBox": "0 0 520 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"ΔH = −ve\"",
+      "Text without proper alignment: \"ΔH = +ve\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_1.js",
+    "index": 1,
+    "viewBox": "0 0 440 230",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Eₐ\"",
+      "Text without proper alignment: \"ΔH &lt; 0\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_1.js",
+    "index": 2,
+    "viewBox": "0 0 440 230",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Eₐ\"",
+      "Text without proper alignment: \"ΔH &gt; 0\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_3.js",
+    "index": 1,
+    "viewBox": "0 0 340 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Thermometer\"",
+      "Text without proper alignment: \"draught\"",
+      "Text without proper alignment: \"shield\"",
+      "Text without proper alignment: \"ΔT measured\"",
+      "Text without proper alignment: \"Δm(fuel)\"",
+      "Text without proper alignment: \"weighed\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_3.js",
+    "index": 2,
+    "viewBox": "0 0 400 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"ΔT\"",
+      "Text without proper alignment: \"Before mixing\"",
+      "Text without proper alignment: \"After mixing\"",
+      "Text without proper alignment: \"extrapolated\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_4.js",
+    "index": 1,
+    "viewBox": "0 0 420 160",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"ΔH₂\"",
+      "Text without proper alignment: \"ΔH₃\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_5.js",
+    "index": 1,
+    "viewBox": "0 0 320 210",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Thermometer\"",
+      "Text without proper alignment: \"Stirring rod\""
+    ]
+  },
+  {
+    "file": "note_1_2_6_6.js",
+    "index": 1,
+    "viewBox": "0 0 460 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"ΔH\"",
+      "Text without proper alignment: \"(−ve)\""
+    ]
+  },
+  {
+    "file": "note_1_2_7_0.js",
+    "index": 1,
+    "viewBox": "0 0 420 120",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"δ−\"",
+      "Text without proper alignment: \"δ+\"",
+      "Text without proper alignment: \"δ−\"",
+      "Text without proper alignment: \"δ+\""
+    ]
+  },
+  {
+    "file": "note_1_2_7_2.js",
+    "index": 1,
+    "viewBox": "0 0 400 180",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"δ+\"",
+      "Text without proper alignment: \"δ+\""
+    ]
+  },
+  {
+    "file": "note_1_2_7_3.js",
+    "index": 1,
+    "viewBox": "0 0 360 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"· · · = H-bond\""
+    ]
+  },
+  {
+    "file": "note_1_2_9_3.js",
+    "index": 1,
+    "viewBox": "0 0 420 200",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Eₐ\"",
+      "Text without proper alignment: \"O\""
+    ]
+  },
+  {
+    "file": "note_1_3_11.js",
+    "index": 1,
+    "viewBox": "0 0 420 180",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Force\"",
+      "Text without proper alignment: \"e⁻\"",
+      "Text without proper alignment: \"e⁻\"",
+      "Text without proper alignment: \"e⁻\""
+    ]
+  },
+  {
+    "file": "note_1_3_2.js",
+    "index": 1,
+    "viewBox": "0 0 420 180",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"+\""
+    ]
+  },
+  {
+    "file": "note_1_3_3.js",
+    "index": 1,
+    "viewBox": "0 0 380 240",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Na⁺\"",
+      "Text without proper alignment: \"Cl⁻\""
+    ]
+  },
+  {
+    "file": "note_1_3_6.js",
+    "index": 1,
+    "viewBox": "0 0 500 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"• •\"",
+      "Text without proper alignment: \"• •\"",
+      "Text without proper alignment: \"× ×\"",
+      "Text without proper alignment: \"× ×\"",
+      "Text without proper alignment: \"× •\"",
+      "Text without proper alignment: \"• ×\"",
+      "Text without proper alignment: \"• •\"",
+      "Text without proper alignment: \"• •\"",
+      "Text without proper alignment: \"× ×\"",
+      "Text without proper alignment: \"× ×\""
+    ]
+  },
+  {
+    "file": "note_1_3_8.js",
+    "index": 1,
+    "viewBox": "0 0 380 160",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"net μ\""
+    ]
+  },
+  {
+    "file": "note_1_4_12.js",
+    "index": 1,
+    "viewBox": "0 0 380 260",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"INITIATION\"",
+      "Text without proper alignment: \"Cl₂  →(UV)→  Cl•  +  Cl•\"",
+      "Text without proper alignment: \"PROPAGATION (repeats ~10,000×)\"",
+      "Text without proper alignment: \"Step 1:  Cl•  +  CH₄  →  HCl  \"",
+      "Text without proper alignment: \"Step 2:  CH₃•  +  Cl₂  →  CH₃C\"",
+      "Text without proper alignment: \"TERMINATION (any two radicals \"",
+      "Text without proper alignment: \"Cl•  +  Cl•  →  Cl₂\"",
+      "Text without proper alignment: \"CH₃•  +  CH₃•  →  C₂H₆  (by-pr\"",
+      "Text without proper alignment: \"CH₃•  +  Cl•  →  CH₃Cl\""
+    ]
+  },
+  {
+    "file": "note_1_4_9.js",
+    "index": 1,
+    "viewBox": "0 0 340 420",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Refinery gas (C₁–C₄)\"",
+      "Text without proper alignment: \"b.p. below 25 °C — bottled gas\"",
+      "Text without proper alignment: \"Petrol/gasoline (C₅–C₁₀)\"",
+      "Text without proper alignment: \"25–75 °C — motor fuel\"",
+      "Text without proper alignment: \"Naphtha (C₆–C₁₀)\"",
+      "Text without proper alignment: \"75–190 °C — chemical feedstock\"",
+      "Text without proper alignment: \"Kerosene (C₁₀–C₁₆)\"",
+      "Text without proper alignment: \"150–250 °C — jet fuel\"",
+      "Text without proper alignment: \"Diesel (C₁₄–C₂₀)\"",
+      "Text without proper alignment: \"220–350 °C — road diesel\"",
+      "Text without proper alignment: \"Fuel oil (C₂₀–C₅₀)\"",
+      "Text without proper alignment: \"300–370 °C — ships, power stat\""
+    ]
+  },
+  {
+    "file": "note_1_5_0.js",
+    "index": 1,
+    "viewBox": "0 0 380 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"120°\""
+    ]
+  },
+  {
+    "file": "note_1_5_5.js",
+    "index": 1,
+    "viewBox": "0 0 420 220",
+    "width": null,
+    "height": null,
+    "texts": [],
+    "issues": [
+      "Text without proper alignment: \"Step 1: π bond attacks Hδ⁺ (el\"",
+      "Text without proper alignment: \"H₂C\"",
+      "Text without proper alignment: \"CH₂\"",
+      "Text without proper alignment: \"+\"",
+      "Text without proper alignment: \"H\"",
+      "Text without proper alignment: \"δ+\"",
+      "Text without proper alignment: \"—Br\"",
+      "Text without proper alignment: \"δ−\"",
+      "Text without proper alignment: \"H₃C—\"",
+      "Text without proper alignment: \"CH₂⁺\"",
+      "Text without proper alignment: \"+  Br⁻\"",
+      "Text without proper alignment: \"(carbocation)\"",
+      "Text without proper alignment: \"Step 2: Br⁻ (nucleophile) atta\"",
+      "Text without proper alignment: \"H₃C—\"",
+      "Text without proper alignment: \"CH₂⁺\"",
+      "Text without proper alignment: \"+  Br⁻\"",
+      "Text without proper alignment: \"H₃C—CH₂—Br\"",
+      "Text without proper alignment: \"bromoethane (product)\""
+    ]
+  }
+]

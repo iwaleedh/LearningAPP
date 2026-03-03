@@ -1,0 +1,115 @@
+// CAE (C1 Advanced) Sample Papers — Cambridge English
+// Source: cambridgeenglish.org/exams-and-tests/advanced/preparation/
+// PDFs stored locally in public/pastpapers/cae/
+// Note: Cambridge only releases official Sample Papers (not full yearly past papers publicly).
+// Each "sample" corresponds to a full exam set (Reading & Use of English, Writing, Listening, Speaking).
+
+export const caePastPapers = [
+    {
+        id: 'cae-sample1-reading',
+        sampleSet: 'Sample Paper 1',
+        year: 2022,
+        component: 'Reading & Use of English',
+        paper: 'Paper 1',
+        level: 'C1',
+        duration: '1 hour 30 minutes',
+        totalMarks: 72,
+        questionPaperUrl: '/pastpapers/cae/cae-sample1-reading-use-of-english-2022.pdf',
+        markingSchemeUrl: '/pastpapers/cae/cae-sample1-answer-keys.pdf',
+    },
+    {
+        id: 'cae-sample1-writing',
+        sampleSet: 'Sample Paper 1',
+        year: 2022,
+        component: 'Writing',
+        paper: 'Paper 2',
+        level: 'C1',
+        duration: '1 hour 30 minutes',
+        totalMarks: 40,
+        questionPaperUrl: null,
+        markingSchemeUrl: '/pastpapers/cae/cae-sample1-answer-keys.pdf',
+    },
+    {
+        id: 'cae-sample1-listening',
+        sampleSet: 'Sample Paper 1',
+        year: 2022,
+        component: 'Listening',
+        paper: 'Paper 3',
+        level: 'C1',
+        duration: '40 minutes (approx)',
+        totalMarks: 30,
+        questionPaperUrl: '/pastpapers/cae/cae-sample1-listening-2022.pdf',
+        markingSchemeUrl: '/pastpapers/cae/cae-sample1-listening-answer-key.pdf',
+        tapescriptUrl: '/pastpapers/cae/cae-sample1-listening-tapescript.pdf',
+    },
+    {
+        id: 'cae-sample2-reading',
+        sampleSet: 'Sample Paper 2',
+        year: 2022,
+        component: 'Reading & Use of English',
+        paper: 'Paper 1',
+        level: 'C1',
+        duration: '1 hour 30 minutes',
+        totalMarks: 72,
+        questionPaperUrl: '/pastpapers/cae/cae-sample2-reading-use-of-english-2022.pdf',
+        markingSchemeUrl: '/pastpapers/cae/cae-sample2-answer-keys.pdf',
+    },
+    {
+        id: 'cae-sample2-writing',
+        sampleSet: 'Sample Paper 2',
+        year: 2022,
+        component: 'Writing',
+        paper: 'Paper 2',
+        level: 'C1',
+        duration: '1 hour 30 minutes',
+        totalMarks: 40,
+        questionPaperUrl: '/pastpapers/cae/cae-sample2-writing-2022.pdf',
+        markingSchemeUrl: '/pastpapers/cae/cae-sample2-answer-keys.pdf',
+    },
+    {
+        id: 'cae-sample2-listening',
+        sampleSet: 'Sample Paper 2',
+        year: 2022,
+        component: 'Listening',
+        paper: 'Paper 3',
+        level: 'C1',
+        duration: '40 minutes (approx)',
+        totalMarks: 30,
+        questionPaperUrl: '/pastpapers/cae/cae-sample2-listening-2022.pdf',
+        markingSchemeUrl: '/pastpapers/cae/cae-sample2-answer-keys.pdf',
+    },
+    {
+        id: 'cae-sample2-speaking',
+        sampleSet: 'Sample Paper 2',
+        year: 2022,
+        component: 'Speaking',
+        paper: 'Paper 4',
+        level: 'C1',
+        duration: '15 minutes (per pair)',
+        totalMarks: null,
+        questionPaperUrl: '/pastpapers/cae/cae-sample2-speaking.pdf',
+        markingSchemeUrl: null,
+    },
+    {
+        id: 'cae-information',
+        sampleSet: 'Reference',
+        year: 2024,
+        component: 'Information for Candidates',
+        paper: 'Reference',
+        level: 'C1',
+        duration: null,
+        totalMarks: null,
+        questionPaperUrl: '/pastpapers/cae/cae-information-for-candidates.pdf',
+        markingSchemeUrl: null,
+    },
+];
+
+// CAE exam components
+export const caeComponents = [
+    { id: 'Paper 1', name: 'Reading & Use of English', duration: '1 hour 30 minutes', marks: 72 },
+    { id: 'Paper 2', name: 'Writing', duration: '1 hour 30 minutes', marks: 40 },
+    { id: 'Paper 3', name: 'Listening', duration: '40 minutes approx', marks: 30 },
+    { id: 'Paper 4', name: 'Speaking', duration: '15 minutes per pair', marks: null },
+];
+
+export const caeSampleSets = ['Sample Paper 1', 'Sample Paper 2'];

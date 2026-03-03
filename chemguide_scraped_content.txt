@@ -1,0 +1,679 @@
+================================================================================
+CHEMGUIDE SCRAPED CONTENT - Complete Plain Text
+================================================================================
+
+PAGE 1: EMPIRICAL FORMULAE
+https://chemguide.co.uk/14to16/calculations/empirical.html
+================================================================================
+
+empirical formulae
+
+meta description: Finding empircial formulae from experimental data
+meta keywords: calculations, mole, mol, empirical, formula
+
+Chemguide: Core Chemistry 14 - 16
+
+Empirical formulae
+
+This page shows how you can find formulae of compounds from experimental data.  I am assuming you have already read and understood the page about moles.
+
+Explaining what an empirical formula is
+
+The empirical formula tells you the simplest ratio of the various atoms present in a substance.  For example, in ethane, C2H6, the ratio of the number of carbon to hydrogen atoms is 1:3.  The empirical formula is CH3.  For hydrogen peroxide, H2O2, where the simplest ratio is 1:1, the empirical formula is HO.
+
+The empirical formula for most molecular substances is virtually never used, unless it happens to be the same as the molecular formula - as in H2O, for example.  So what is the point of them?
+
+The word "empirical" means "derived from observation or experiment" - so an empirical formula is one which you can find by doing experiments.  In other words, you can calculate results from an experiment which will tell you that the empirical formula of a particular hydrocarbon (not ethane) is CH2, for example.
+
+That in itself isn't very helpful.  The hydrocarbon could be C2H4, C3H6, C4H8, and so on and so on - anything with a carbon to hydrogen ratio of 1:2.
+
+To find out the correct molecular formula from the empirical formula, you would need to know, or be able to calculate, the relative formula mass.
+
+The empirical formula is just a stage on the way to finding out the molecular formula of something.
+
+The empirical formula and ionic compounds
+
+For ionic compounds, like sodium chloride, the formula quoted is almost always the empirical formula.  In an ionic compound, there are no fixed numbers of ions - it depends on how big the crystal is.  So the formula of sodium chloride is simply given as NaCl, showing the 1:1 ratio.  The formula of sodium oxide is Na2O, showing a 2:1 ratio.
+
+Note: There are a few ionic compounds such as sodium peroxide, Na2O2, or mercury(I) chloride, Hg2Cl2, where the formula normally used isn't the empirical formula.  There are good reasons for this which would be unnecessarily confusing to discuss now.  Almost all ionic compounds use the empirical formula.
+
+In a real crystal of sodium chloride or sodium oxide, there will be some huge variable number of positive and negative ions.  The formula we write just tells us what the ratio is.
+
+Calculating empirical formulae from masses or percentages
+
+If you have a formula like, say, CH4, you can read this as saying that 1 mole of carbon atoms are combined with 4 moles of hydrogen atoms.
+
+In a different example, if you could work out that phosphorus and oxygen atoms combined together in the ratio of 2 moles of phosphorus atoms to 3 moles of oxygen atoms, then you would know that the empirical formula was P2O3.
+
+You don't, of course know anything about the molecular formula.  All you know is that the ratio is 2:3.  The molecular formula could equally well be P4O6 or P6O9 or whatever.
+
+You can find mole ratios from data involving either the masses or percentages of the combining atoms.
+
+Finding empirical formulae from mass data
+
+Suppose you found that 0.46 g of sodium formed 0.78 g of sodium sulfide.  That means that 0.46 g of sodium combines with (0.78 - 0.46) g = 0.32 g of sulfur.
+
+Relative atomic masses: Na = 23; S = 32
+
+It is clearest if you set your answer out as a simple table:
+
+NaS
+mass: 0.46 g, 0.32 g
+number of moles: 0.46/23, 0.32/32
+= 0.02, = 0.01
+ratio: 2, 1
+
+That would tell you that the empirical formula was Na2S.
+
+Finding empirical formulae from percentage data
+
+You might have been given the last example in a different form.  You could have been told that the compound contained 59.0% of Na and 41.0% of S by mass.
+
+That's not a problem.  If you had 100 g of the compound, then the masses of sodium and sulfur would be 59.0 g and 41.0 g respectively.  So use those figures in a sum like the last one.
+
+NaS
+mass: 59.0 g, 41.0 g
+number of moles: 59.0/23, 41.0/32
+= 2.565, = 1.281
+ratio: 2, 1
+
+Note: You may find that this time it isn't as easy to spot the ratio.  If it isn't immediately obvious, try dividing through by the smallest number.  That will almost invariably help.
+
+Converting empirical formulae into molecular formulae
+
+This is really simple!  You can do it if you are told either the relative formula mass of the compound or the mass of 1 mole (which is just the relative formula mass expressed in grams).
+
+Example 1
+
+Let's suppose that you have calculated the empirical formula of a hydrocarbon as CH2.  And suppose you also knew that the relative formula mass was 42.
+
+If you add up the relative formula mass of the empirical formula, CH2, it comes to 12 + (2 x 1) = 14.
+
+The true molecular formula must be some multiple of this - so how many times does 14 go into 42?
+
+Dividing 42 by 14 gives 3, and so the molecular formula must be 3 times bigger than CH2 - in other words C3H6.
+
+Example 2
+
+Let's take another example which gave an empirical formula of C2H6O.  Suppose you knew that the mass of 1 mole was 46 g.
+
+1 mole of the empirical formula, C2H6O, would have a mass of
+(2 x 12) + (6 x 1) + 16 g = 46 g.
+
+That's the same as the mass of 1 mole that you are given.  Therefore the molecular formula must be the same as the empirical formula - C2H6O.
+
+Empirical formulae experiments
+
+Finding the formula of magnesium oxide
+
+This video shows the experimental method and the calculation.  I will repeat the calculation below.
+
+Results
+
+Mass of crucible + lid = 40.19 g
+Mass of crucible + lid + magnesium = 40.30 g
+Mass of crucible + lid + magnesium oxide = 40.37 g
+
+Now you can use those results to find the masses of magnesium and oxygen.
+
+Mass of magnesium = 40.30 - 40.19 = 0.11 g
+Mass of oxygen = 40.37 - 40.30 = 0.07 g
+
+So you have all the information to do the sort of sum we looked at further up the page.  The relative atomic masses are: O = 16; Mg = 24.3.
+
+MgO
+mass: 0.11 g, 0.07 g
+number of moles: 0.11/24.3, 0.11/16
+= 4.53 x 10-3, = 4.38 x 10-3
+ratio: 1, 1
+
+The formula is therefore MgO.
+
+If you do this sort of calculation in an exam, the answers will always work out as some exact ratio.  If you do it practically, errors in the experiment will give you the sort of answer above, and you accept that this is a "near enough" 1 : 1 ratio.
+
+Note: I do have issues with this video, although the experimental detail closely follows what you would do in the lab at this level.
+
+You can't do this experiment with a 2 decimal place balance and expect to get a good result.  On the screen, the results table shows each result with an error of ± 0.01 g.  When you have calculated the results by doing two subtractions, the error in each answer has grown to ± 0.02 g.  That means that the mass of magnesium could realistically be anywhere between 0.09 g and 0.13 g, and the oxygen anywhere between 0.05 g and 0.09 g.
+
+It is noticeable that the balance readings aren't real - they have been pasted on afterwards.  I suspect the readings were adjusted to give as good an answer as possible!
+
+Finding the formula of black copper oxide
+
+(There are actually two different copper oxides, a black one and a red one.  The familiar one is black copper(II) oxide, but I can't call it that, because that prejudges the result of this experiment!)
+
+This next video is actually produced to show teachers how to do this experiment and therefore gives a lot of detail.
+
+Essentially, you reduce the copper oxide to copper by heating it in a stream of hydrogen taken from a cylinder.  You can ignore all the detail about using the cylinder.
+
+Results
+
+Mass of tube = 28.93 g
+Mass of tube + copper oxide = 33.03 g
+Mass of tube + copper = 32.13 g
+
+Now you can use those results to find the masses of copper and oxygen.
+
+Mass of copper = 32.13 - 28.93 = 3.20 g
+Mass of oxygen = 33.03 - 32.13 = 0.90 g
+
+The relative atomic masses are: O = 16; Cu = 63.5.
+
+CuO
+mass: 3.20 g, 0.90 g
+number of moles: 3.20/63.5, 0.90/16
+= 0.050, = 0.056
+ratio: 1, 1.1
+
+This is consistent with the sort of result you would get if you did this in the lab.  The correct ratio is obviously going to be 1:1, and the formula is CuO.
+
+Note: The experimental technique was faultless.  The weighing errors matter proportionally less this time because you are using a greater mass of material.  There was too much weight loss in the experiment for a perfect result, and I wonder if the copper oxide might have been slightly damp to start with.
+
+Finding the formula of hydrated copper(II) sulfate
+
+Blue copper(II) sulfate crystals contain water of crystallisation.  This experiment sets out to find out how many molecules of water of crystallisation are present.
+
+In other words, if copper(II) sulfate crystals are CuSO4.nH2O, what is the value of n?
+
+Notice that the dish was heated very gently electrically.  Strong heat decomposes copper(II) sulfate, and we have to avoid that.
+
+Here are the results again.
+
+Mass of dish = 25.1 g
+Mass of dish + hydrated copper(II) sulfate = 29.2 g
+Mass of tube + anhydrous copper(II) sulfate = 27.7 g
+
+Now you can use those results to find the masses of anhydrous copper(II) sulfate and water.
+
+Mass of anhydrous copper(II) sulfate = 27.7 - 25.1 = 2.6 g
+Mass of water = 29.2 - 27.7 = 1.5 g
+
+The relative atomic masses are: H = 1; O = 16; S = 32; Cu = 63.5.
+
+This time you will first have to calculate the relative formula masses of anhydrous copper(II) sulfate, CuSO4, and water.
+
+RFM H2O = (2 x 1) + 16 = 18
+RFM CuSO4 = 63.5 + 32 + (4 x 16) = 159.5
+
+Note: That is not the value for CuSO4 given in the video which is using more precise relative atomic masses.  It is pointless going to that precision if you are only measuring your mass to 1 decimal place.
+
+CuSO4, H2O
+mass: 2.6 g, 1.5 g
+number of moles: 2.6/159.5, 1.5/18
+= 0.0163, = 0.0833
+ratio: 1, 5.1
+
+You find the ratio by dividing by the smaller number in the last stage - in other words divide both 0.0163 and 0.0833 by 0.0163.
+
+So the answer is actually remarkably close to the expected value of 5 given the errors introduced by only using a 1 decimal place balance.
+
+Where would you like to go now?
+
+To the calculations menu . . .
+To the Chemistry 14-16 menu . . .
+To Chemguide Main Menu . . .
+
+© Jim Clark 2021
+
+================================================================================
+PAGE 2: RELATIVE ATOMIC MASS AND RELATIVE FORMULA MASS
+https://chemguide.co.uk/14to16/calculations/relative.html
+================================================================================
+
+relative atomic mass and relative formula mass
+
+meta description: An introduction to relative atomic mass, relative molecular mass and relative formula mass
+meta keywords: calculations, relative, atomic, molecular, formula, mass, c12, scale
+
+Chemguide: Core Chemistry 14 - 16
+
+Relative atomic mass, relative molecular mass and relative formula mass
+
+This page explains the atomic mass scale based on the mass of an atom of the C-12 isotope.
+
+The importance of the C-12 isotope in chemistry calculations
+
+A brief revision of isotopes
+
+The number of neutrons in an atom can vary within small limits.  For example, there are three kinds of carbon atom 12C, 13C and 14C.  They all have the same number of protons, but the number of neutrons varies.
+
+protons, neutrons, mass number
+carbon-12: 6, 6, 12
+carbon-13: 6, 7, 13
+carbon-14: 6, 8, 14
+
+These different atoms of carbon are called isotopes.  The fact that they have varying numbers of neutrons makes no difference whatsoever to the chemical reactions of the carbon.
+
+Isotopes are atoms which have the same atomic number but different mass numbers.  They have the same number of protons but different numbers of neutrons.
+
+The C-12 scale
+
+The masses of atoms are measured relative to the mass of a C-12 atom.
+
+You can't use a familiar mass unit like a gram because atoms are so small.  For example, it would take about 6 x 1023 hydrogen atoms to weigh 1 g.
+
+That's 600,000,000,000,000,000,000,000 atoms.  Weighing atoms in a standard mass unit like grams would be daft!
+
+Relative isotopic mass
+
+Most people start with relative atomic mass but it makes sense to talk about relative isotopic mass first.
+
+The relative isotopic mass is the mass of the isotope relative to 1/12 of the mass of a carbon-12 atom.
+
+There is an alternative phrasing for this which some people find easier to understand.
+
+The relative isotopic mass is the mass of the isotope on a scale on which the mass of a carbon-12 atom is exactly 12 units.
+
+For example, an atom of Mg-24 is twice as heavy as an atom of C-12, and so is given a relative isotopic mass of 24.
+
+Use whichever seems more obvious to you while you are trying to understand this, but for exam purposes learn whichever is in your syllabus.
+
+Isotopes and relative atomic mass
+
+The relative atomic mass is the weighted average of the masses of the isotopes on a scale on which the mass of a carbon-12 atom is exactly 12 units.
+
+(I'm using the version of the definition which I find easier!)
+
+Relative atomic mass is given the symbol Ar.
+
+"Weighted average" is also called "weighted mean".  An example shows how this works.
+
+An example using chlorine
+
+This is an example where the numbers are so easy that you might well be expected to remember them.
+
+Chlorine has two isotopes, Cl-35 and Cl-37, and ordinary chlorine contains these in the ratio of 3 atoms of Cl-35 to every 1 atom of Cl-37 (to a good-enough approximation for our purposes).
+
+If you have a sample of chlorine it will contain unbelievably vast numbers of chlorine atoms, and it is useful to be able to give an average value for the mass of a chlorine atom.  An average of 35 and 37 is 36, but that doesn't allow for the fact that there are three times as many Cl-35 atoms as Cl-37.
+
+Relative atomic mass is a weighted average (often called a weighted mean) of the masses of the isotopes.  That is an average which takes account of the different proportions of the various isotopes.
+
+Suppose you had four typical chlorine atoms - 3 atoms of Cl-35 and 1 atom of Cl-37.
+
+The total mass of the four atoms would be
+(3 x 35) + (1 x 37) = 142
+
+The "average" mass of one atom is therefore
+142/4 = 35.5
+
+If you look at the Periodic Table you will find that 35.5 is the figure quoted as the relative atomic mass of chlorine.
+
+In case you are wondering about the units of relative atomic mass - there aren't any!  It is a value which is measured relative to the mass of the C-12 isotope.
+
+Looking up relative atomic masses
+
+Most Periodic Tables include relative atomic masses, and if you need them in exams, you will always be given any values necessary - either on a Periodic Table or in the question.
+
+If you don't have a paper copy of a Periodic Table with relative atomic masses on, you can download and print one from this site.  The download button is at the beginning of the second paragraph under the table.
+
+Most Periodic Tables have two numbers against each atom - the atomic number and the relative atomic mass.  The relative atomic mass is always the bigger one.
+
+The Periodic Table I have suggested quotes the relative atomic mass to more decimal places than you you are likely to need at this level - it will be rare for you to find them rounded to more than 1 decimal place in reality.
+
+Working out relative atomic masses from percentages
+
+Suppose you had to work out the relative atomic mass of boron, given the following data.
+
+A sample of boron contains
+B-10: 18.7%
+B-11: 81.3%
+
+If you had 100 typical atoms, 18.7 would be B-10 and 81.3 would be B-11.
+
+Note: If it bothers you to have 0.7 or 0.3 of an atom, you could always take 1000 atoms instead, but that just involves more thought!  The answer will be the same either way.
+
+Total mass of 100 atoms = (18.7 x 10) + (81.3 x 11) = 1081.3
+
+So relative atomic mass = 1081.3/100 = 10.8 to 3 significant figures.
+
+Note: You can't quote your answer to more than 3 significant figures because that is all the percentages are quoted to.  You might argue that the mass numbers are only quoted to 2 significant figures, but in fact these are totally precise numbers.  The mass numbers count the numbers of protons and neutrons in the atom.  There is no error in this.
+
+You mustn't quote answers more accurately than your least accurate input number.
+
+Relative molecular mass and relative formula mass, Mr
+
+Relative molecular mass, Mr
+
+You have to be careful with this term, because it should only be applied to substances which actually exist as molecules.  A molecule consists of a fixed number of atoms joined together by covalent bonds.
+
+You shouldn't use the term for things, like sodium chloride, which are ionically bonded.
+
+Working out the relative molecular mass
+
+You work out the relative molecular mass of a substance by adding up the relative atomic masses of the atoms it consists of.  So, for example, to work out the relative molecular mass of water, H2O, you add the relative atomic masses of two hydrogens and one oxygen.
+
+Mr of H2O = (2 x 1) + 16 = 18
+
+To work out the relative molecular mass of CHCl3:
+
+Mr of CHCl3 = 12 + 1 + (3 x 35.5) = 119.5
+
+Defining the relative molecular mass
+
+The relative molecular mass of a substance is the weighted average of the masses of the molecules on a scale on which the mass of a carbon-12 atom is exactly 12 units.
+
+Note: You may find that many sources miss out the bit about weighted averages, but this should be included unless you are thinking about the mass of a particular molecule with a particular combination of isotopes of the various atoms.
+
+For example, taking the example of CHCl3 above:
+
+There is no single molecule of CHCl3 which has a mass of 119.5.  The problem is that an average sample of these molecules will contain isotopes of both chlorine-35 and chlorine-37.  That means that individual molecules can have the following masses:
+
+12 + 1 + (3 x 35) = 118
+12 + 1 + (2 x 35) + 37 = 120
+12 + 1 + 35 + (2 x 37) = 122
+12 + 1 + (3 x 37) = 124
+
+The weighted average takes account of the proportions of each of these molecules in an average sample of the substance.
+
+Don't get too worried about all this!  It is far more likely that you will have to work out a relative molecular mass by adding up the relative atomic masses than that you will have to define it.
+
+Relative formula mass, Mr
+
+Notice that relative formula mass is given exactly the same symbol, Mr, as relative molecular mass.
+
+In fact, relative formula mass is a much more useful term than relative molecular mass because it includes everything, whatever the bonding.  It works just as well for ionic substances as for covalent substances.
+
+I strongly recommend that you use this term all the time, and only talk about relative molecular mass if you are specifically asked about it in an exam.
+
+Working out the relative formula mass
+
+Write down the formula, and then add up all the relative atomic masses of the atoms it contains.
+
+Example 1
+
+The relative formula mass of NaCl = 23 + 35.5 = 58.5
+
+Example 2
+
+The relative formula mass of copper(II) sulfate crystals, CuSO4.5H2O:
+
+Mr of CuSO4.5H2O
+= 63.5 + 32 + (4 x 16) + 5 x [(2 x 1) + 16] = 249.5
+
+Be careful with things which contain water of crystallisation like the copper(II) sulfate crystals in this example.  Add the water up first and then multiply it by 5 (or whatever other number you need).  If you try to do it as hydrogen and oxygen separately, you stand a good chance of getting it wrong.  Students usually remember to multiply the 2 hydrogens by 5, but forget to multiply the oxygen by 5.  If you add the water up as a whole, that can't happen.
+
+Defining the relative formula mass
+
+I find it hard to imagine an exam question in which you were asked to define relative formula mass rather then just work it out, but just in case . . .
+
+The relative formula mass of a substance is the weighted average of the masses of the formula units on a scale on which the mass of a carbon-12 atom is exactly 12 units.
+
+The "formula unit" is just the formula as you have written it - for example, NaCl or CuSO4.5H2O or CO2 or Cl2 or whatever.
+
+Where would you like to go now?
+
+To the calculations menu . . .
+To the Chemistry 14-16 menu . . .
+To Chemguide Main Menu . . .
+
+© Jim Clark 2021
+
+================================================================================
+PAGE 3: LIMITING REAGENT AND ATOM ECONOMY
+https://chemguide.co.uk/14to16/calculations/othermole.html
+================================================================================
+
+limiting reagent and atom economy
+
+meta description: An explanation of the terms and a look at the calculations involved
+meta keywords: calculations, mole, limiting reagent, atom economy
+
+Chemguide: Core Chemistry 14 - 16
+
+Limiting reagent and atom economy calculations
+
+You won't find the terms limiting reagent and atom economy on all syllabuses, so check to see if you need to know about either of these.
+
+Limiting reagent calculations
+
+I am assuming in this section that you are happy with calculations from equations involving masses, solutions and volumes of gases.  The example I am going to take involves all of these.
+
+If that is a problem, explore the rest of the calculations menu before you go on. (Link to the menu at the bottom of the page.)
+
+Consider the familiar reaction between calcium carbonate and dilute hydrochloric acid.
+
+CaCO3 + 2HCl → CaCl2 + H2O + CO2
+
+If you add a small amount of acid to a large amount of calcium carbonate, the reaction will soon stop because the acid is all used up.  The acid is the limiting reagent - the amount of carbon dioxide is limited by the amount of acid present.
+
+On the other hand, if you had a tiny amount of calcium carbonate and added lots of acid, the reaction would stop when the calcium carbonate was all used up.  In this case, the calcium carbonate is the limiting reagent.
+
+There is nothing difficult about this.  The limiting reagent is the one which controls the amount of reaction you can get - in other words, the reagent which isn't in excess.
+
+This becomes important if you are trying to calculate the theoretical yield from a reaction involving a lot of ingredients.
+
+For example, one of my practical chemistry books gives a a recipe for preparing 1-bromobutane which starts from the following:
+
+10 g sodium bromide
+7.5 cm3 butan-1-ol
+10 cm3 water
+10 cm3 concentrated sulfuric acid
+
+You couldn't possibly work out the possible yield unless you knew which was the limiting reagent, and that would be a bothersome sum because you are given some things as volumes rather than masses, and so you would have to convert volumes into masses using density values.
+
+So we are going to take a simple example instead!
+
+Suppose you added 150 cm3 of 1.0 mol dm-3 hydrochloric acid to 5.0 g of calcium carbonate.  What volume of carbon dioxide would you collect at room temperature and pressure?
+
+(RAMs; C = 12; O = 16; Ca = 40. Molar volume = 24 dm3 mol-1 at rtp.)
+
+CaCO3 + 2HCl → CaCl2 + H2O + CO2
+
+When you do most mole calculations you start with what you know most about and work out the number of moles.  But in this case, you know everything necessary about both reagents.  What you don't know is which is in excess.
+
+So work out the number of moles of both of them.
+
+1000 cm3 1.0 mol dm-3 HCl contains 1.0 mol
+150 cm3 1.0 mol dm-3 HCl contains 150/1000 = 0.15 mol
+
+1 mol CaCO3 weighs 40 + 12 + (3 x 16) = 100 g
+So 5.0g CaCO3 is 5.0/100 = 0.050 mol
+
+The equation says that 1 mol CaCO3 reacts with 2 mol HCl
+So 0.050 mol CaCO3 reacts with 2 x 0.050 mol of this HCl = 0.10 mol
+
+Now compare the numbers of moles.
+
+The calcium carbonate needs 0.10 mol HCl; you have 0.15 mol.  So the acid is in excess.
+
+The limiting reagent is the calcium carbonate, and that determines the volume of carbon dioxide produced.  The rest of the acid has nothing to react with.
+
+Now we can calculate the volume of carbon dioxide produced based on the calcium carbonate present.
+
+1 mol CaCO3 produces 1 mol CO2
+0.050 mol CaCO3 produces 0.050 mol CO2
+
+1 mol CO2 occupies 24 dm3 at rtp
+0.050 mol CO2 produces 0.050 x 24 = 1.2 dm3 at rtp
+
+Note: I have deliberately included all the other variants of calculations from equations in this sum (apart from titration calculations) so that you can check that you are happy with them.  I can't include titration calculations because they involve knowing that you have exactly the right proportions with nothing in excess and no limiting reagent.
+
+Atom economy
+
+Suppose you take a reaction like the one that produces the iron in a Blast Furnace - the reaction between iron(III) oxide and carbon monoxide.
+
+Fe2O3 + 3CO → 2Fe + 3CO2
+
+You have no real interest in anything apart from the iron produced.  Carbon dioxide is an unwelcome by-product, but you are bound to get it using this reaction.
+
+Atom economy can be defined as:
+
+Atom economy = (Total relative formula mass of desired product / Total relative formula mass of all reactants) × 100%
+
+It doesn't matter whether you calculate this from the total mass of the reactants or the products, because they are going to be the same if you work from a balanced equation.
+
+It also doesn't matter what mass units you use, because you are simply finding a ratio.  The easiest thing to do is just to calculate the total mass from the relative formula masses.
+
+In this case: RAMs: C = 12; O = 16; Fe = 56
+
+The total relative formula mass of the iron = 2 x 56 = 112
+The total relative formula masses of the products = (2 x 56) + 3[12 + (2 x 16)] = 244
+
+Atom economy = 100 x 112/244 = 45.9%
+
+I'm not going to go any further with this.  If you want a lot more examples and a discussion around them, then you can go to this page on Doc Brown's website which includes the example I have used here.
+
+Where would you like to go now?
+
+To the calculations menu . . .
+To the Chemistry 14-16 menu . . .
+To Chemguide Main Menu . . .
+
+© Jim Clark 2021
+
+================================================================================
+PAGE 4: INTRODUCTION TO CALCULATIONS IN EQUATIONS INVOLVING SOLUTIONS
+https://chemguide.co.uk/14to16/calculations/solutions.html
+================================================================================
+
+introduction to calculations in equations involving solutions
+
+meta description: Introducing the various ways concentrations of solutions can be given, and some simple examples involving them.
+meta keywords: calculations, mole, mol, solution, molarity, equation, molar, volume
+
+Chemguide: Core Chemistry 14 - 16
+
+Introducing calculations in equations involving solutions
+
+This page looks at the various ways concentrations of solutions can be expressed and how you convert between them.  It then looks at some simple calculations involving solutions.
+
+I am assuming you have already read and understood the pages about moles, calculations from equations involving masses and calculations involving gases.  This page follows on from those.
+
+Ways of talking about concentration
+
+There are two ways of describing concentration that you will have to be familiar with, as well as convert between them.
+
+grams per cubic decimetre: g dm-3
+
+The cubic decimetre (dm3) isn't a common everyday unit of volume, but is exactly the same as the litre.
+
+There are 1000 cm3 in 1 dm3.
+
+Note: A decimetre is a tenth of a meter - 10 cm.  A cubic decimetre is the volume of a cube 10 cm x 10 cm x 10 cm - 1000 cm3.  If you have read the page about gas calculations you will already know that.
+
+You could also write g dm-3 as g/dm3 - grams per cubic decimetre.
+
+So the negative sign in g dm-3 introduces the word "per" into the expression.
+
+Personally, although I would always write g dm-3 in this form, I always mentally think about it and even say it as "grams per litre".  "cubic decimetre" is too much of bother to say (or think)!
+
+moles per cubic decimetre: mol dm-3
+
+But the more common measure of concentration you will come across is moles per cubic decimetre, mol dm-3 (or moles per litre).
+
+So you will come across expressions such as 0.10 mol dm-3 hydrochloric acid.  That is hydrochloric acid which contains 0.10 moles of HCl in every cubic decimetre (litre) of solution.
+
+And one further useful term - molarity.  The molarity of a solution is simply the numerical value of its concentration in mol dm-3.  It is given the symbol M.
+
+So our hydrochloric acid of concentration 0.10 mol dm-3 would be described as 0.10M HCl.  The dilute hydrochloric acid typically used in the lab is probably either M or 2M HCl.  If you don't write a number in front of the M, it is assumed to be 1.
+
+Converting between the two measures
+
+There is absolutely nothing new in this.  You already know how to convert from grams to moles and vice versa.  The fact that the number of grams or moles is present in a particular volume of solution makes no difference to that.
+
+Example 1
+
+What is the concentration in moles per cubic decimetre of sodium hydroxide containing 20.0 g dm-3? (RAMs: H = 1; O = 16; Na = 23)
+
+1 mol NaOH weighs 23 + 16 + 1 = 40 g
+
+20.0 g is 20.0/40 = 0.500 mol
+
+Concentration of NaOH solution = 0.500 mol dm-3.
+
+Example 2
+
+What is the concentration in grams per cubic decimetre of sodium chloride solution containing 0.240 mol dm-3? (RAMs: Na = 23; Cl 35.5)
+
+1 mol NaCl weighs 23 + 35.5 = 58.5 g
+
+0.240 mol weighs 0.240 x 58.5 = 14.0 g
+
+Concentration of NaCl solution = 14.0 g dm-3.
+
+You mustn't quote that to more than 3 significant figures - that' the accuracy used in the numbers you are working with.
+
+Calculations from equations involving a solution
+
+For the moment we are only looking at examples involving just one solution.  On the page about titration calculations, we will look at what happens if you have two solutions.
+
+Example 3
+
+What mass of calcium carbonate, CaCO3, would you have to add to 50 cm3 of 1.0 mol dm-3 hydrochloric acid to exactly neutralise the acid?
+
+(RAMs: C = 12; O = 16; Ca = 40)
+
+CaCO3 + 2HCl → CaCl2 + H2O + CO2
+
+With these calculations, always start with what you know most about.  In this case you know both the volume and concentration of the acid.  Work out how many moles of it you have got.
+
+1000 cm3 of 1.0 mol dm-3 HCl contains 1.0 mol HCl
+Therefore 50 cm3 contains 50/1000 mol = 0.050 mol
+
+The equation says that 1 mol CaCO3 reacts with 2 mol HCl.
+
+So you need half the number of moles of CaCO3 as of HCl.
+
+No of moles CaCO3 = 0.050/2 = 0.025 mol
+
+1 mol CaCO3 weighs 40 + 12 + (3 x 16) = 100 g
+
+Therefore 0.025 mol weighs 0.025 x 100 = 2.5 g
+
+Once you start these calculations there is an inevitability about them.  If you work out the number of moles of HCl, it is fairly obvious that you can use the equation to work out the number of moles of calcium carbonate.  And it is also fairly obvious that once you have done that, you can work out the mass in grams of calcium carbonate.
+
+However complicated the question may look, if you start with what you know most about and work out the number of moles of it, everything else will follow.
+
+Example 4
+
+I am going to use the same reaction because the numbers work out easily, but add a complication by referring to the volume of carbon dioxide given off.  You won't be able to do this unless you have read the page about calculations involving gases.
+
+What volume of carbon dioxide, CO2, measured at rtp, would you get if you added an excess of calcium carbonate to 100 cm3 of 2.0 mol dm-3 hydrochloric acid? (Molar volume = 24 dm-3 at rtp)
+
+CaCO3 + 2HCl → CaCl2 + H2O + CO2
+
+Again the thing you know everything essential about is the hydrochloric acid.  So start there and see where it leads you.
+
+1000 cm3 of 2.0 mol dm-3 HCl contains 2.0 mol HCl
+Therefore 100 cm3 contains 100/1000 x 2 mol = 0.20 mol
+
+The equation says that 2 mol HCl gives 1 mol CO2.
+
+Therefore 0.20 mol HCl would give 0.10 mol CO2.
+
+1 mol CO2 occupies 24 dm-3 at rtp
+
+0.10 mol CO2 occupies 0.10 x 24 dm-3 at rtp = 2.4 dm-3
+
+Example 5
+
+25.0 cm3 of 0.100 mol dm-3 silver nitrate solution was added to an excess of sodium chloride solution.  What mass of silver chloride would be formed? (RAMs: Cl = 35.5; Ag = 108)
+
+AgNO3(aq) + NaCl(aq) → AgCl(s) + NaNO3(aq)
+
+Start with what you know most about and work out how many moles of it there are.
+
+1000 cm3 of AgNO3 solution contains 0.100 mol.
+
+25.0 cm3 of AgNO3 solution contains 25.0/1000 x 0.100 mol = 0.00250 mol.
+
+From the equation, 1 mol AgNO3 forms 1 mol AgCl.
+
+So 0.00250 mol AgNO3 forms 0.00250 mol AgCl.
+
+1 mol AgCl weighs 108 + 35.5 = 143.5 g
+
+So 0.00250 mol weighs 0.00250 x 143.5 = 0.359 g
+
+Don't quote your answer to more than 3 significant figures - that's the accuracy of the figures in the question.
+
+Where would you like to go now?
+
+To the calculations menu . . .
+To the Chemistry 14-16 menu . . .
+To Chemguide Main Menu . . .
+
+© Jim Clark 2021
+
+================================================================================
+END OF SCRAPED CONTENT
+================================================================================

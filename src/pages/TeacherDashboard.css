@@ -1,0 +1,394 @@
+/* ============================================
+   Teacher Dashboard Styles
+   ============================================ */
+
+.teacher-dashboard {
+    max-width: 1100px;
+}
+
+.teacher-subtitle {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+}
+
+/* ---- Summary Cards ---- */
+.teacher-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.teacher-stat-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--color-border);
+}
+
+.teacher-stat-card svg {
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.teacher-stat-card.warning svg {
+    color: #f59e0b;
+}
+
+.stat-big {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+}
+
+.stat-desc {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+}
+
+/* ---- Tabs ---- */
+.teacher-tabs {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-5);
+    flex-wrap: wrap;
+}
+
+.teacher-tab {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.teacher-tab:hover {
+    background: var(--color-surface);
+}
+
+.teacher-tab.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+/* ---- Content ---- */
+.teacher-content {
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+}
+
+.teacher-content h3 {
+    margin-bottom: var(--space-2);
+}
+
+.section-desc {
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-5);
+}
+
+/* ---- Heatmap ---- */
+.mastery-heatmap {
+    overflow-x: auto;
+    margin-bottom: var(--space-4);
+}
+
+.heatmap-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+    font-size: var(--font-size-sm);
+}
+
+.heatmap-table th {
+    padding: var(--space-2);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.heatmap-table th:first-child {
+    text-align: left;
+}
+
+.heatmap-student {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    padding: var(--space-2);
+}
+
+.heatmap-cell-value {
+    padding: 6px 10px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xs);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    min-width: 45px;
+}
+
+.avg-cell {
+    font-weight: var(--font-weight-bold);
+}
+
+.heatmap-table tfoot td {
+    padding-top: var(--space-2);
+}
+
+.mastery-legend {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+
+/* ---- Questions Table ---- */
+.questions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-4);
+}
+
+.questions-table th {
+    padding: var(--space-3);
+    text-align: left;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    border-bottom: 1px solid var(--color-border);
+    white-space: nowrap;
+}
+
+.questions-table td {
+    padding: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: middle;
+}
+
+.questions-table .sortable {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.questions-table .sortable:hover {
+    color: var(--color-primary);
+}
+
+.question-stem {
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topic-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+}
+
+.success-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.success-badge.good {
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.success-badge.warn {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.success-badge.bad {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.flag-badge {
+    font-size: var(--font-size-xs);
+    color: #f59e0b;
+    font-weight: var(--font-weight-semibold);
+}
+
+.ok-badge {
+    font-size: var(--font-size-xs);
+    color: #22c55e;
+}
+
+.flagged-row {
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.question-summary {
+    padding: var(--space-3);
+    background: rgba(245, 158, 11, 0.08);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+/* ---- Time Analytics ---- */
+.time-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+}
+
+.time-bar-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 70px 80px;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.time-bar-label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.time-bar-track {
+    height: 24px;
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.time-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), #818cf8);
+    border-radius: var(--radius-full);
+    transition: width 0.8s ease;
+}
+
+.time-bar-value {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    text-align: right;
+}
+
+.time-bar-sessions {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    text-align: right;
+}
+
+.time-insight {
+    padding: var(--space-3) var(--space-4);
+    background: rgba(99, 102, 241, 0.08);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+/* ---- Export ---- */
+.export-preview {
+    margin-bottom: var(--space-5);
+}
+
+.export-preview h4 {
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.export-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+}
+
+.export-table th {
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.export-table td {
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.confidence-chip {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.confidence-chip.easy {
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.confidence-chip.medium {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.confidence-chip.hard {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.trend-up {
+    color: #22c55e;
+}
+
+.trend-down {
+    color: #ef4444;
+}
+
+.export-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
