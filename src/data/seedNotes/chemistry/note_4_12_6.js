@@ -15,7 +15,7 @@ export const note_chemistry_4_12_6 = {
     {
       type: 'paragraph',
       id: 'p-lattice-factors',
-      data: { text: 'The magnitude of Lattice Energy depends heavily on the electrostatic attraction between the ions. This is governed by two factors:' }
+      data: { text: 'The magnitude of lattice energy is determined by four factors:' }
     },
     {
       type: 'list',
@@ -23,8 +23,10 @@ export const note_chemistry_4_12_6 = {
       data: {
         style: 'numbered',
         items: [
-          '<strong>Ionic Charge:</strong> This has the biggest effect. Doubling the charge of an ion roughly doubles the lattice energy (e.g. Mg²⁺ vs Na⁺).',
-          '<strong>Ionic Radius:</strong> Smaller ions can pack closer together, resulting in stronger electrostatic attraction and a more exothermic lattice energy.'
+          '<strong>Ionic Charge (biggest effect):</strong> Higher charge → stronger electrostatic attraction → larger lattice energy. Doubling charge roughly quadruples the force (Coulomb\'s law). e.g. Mg²⁺ vs Na⁺.',
+          '<strong>Ionic Radius (sum of radii):</strong> Smaller ions pack closer together → stronger attraction → larger lattice energy. e.g. Li⁺ gives a larger lattice energy than Cs⁺ with the same anion.',
+          '<strong>Type of lattice structure:</strong> Different crystal structures (e.g. rock salt, wurtzite) affect coordination number and therefore packing efficiency and lattice energy.',
+          '<strong>Extent of covalent interactions:</strong> If the ions are polarised, there is partial covalent character, causing the experimental lattice energy to be more negative than the theoretical (perfect ionic) value.'
         ]
       }
     },
@@ -48,6 +50,46 @@ export const note_chemistry_4_12_6 = {
       }
     },
     {
+      type: 'paragraph',
+      id: 'p-charge-density',
+      data: {
+        text: '<strong>Polarising power</strong> is the ability of a cation to distort (polarise) an anion\'s electron cloud. It can be approximated using <strong>charge density</strong> = charge ÷ (ionic radius)². The higher the charge density of the cation, the greater its polarising power.'
+      }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-charge-density',
+      data: {
+        caption: 'Charge density comparison: Na⁺ vs Mg²⁺ — explaining MgCl₂ vs NaCl lattice discrepancy',
+        headers: ['Ion', 'Charge', 'Charge density (approx.)', '% diff from theoretical ΔH_latt', 'Interpretation'],
+        rows: [
+          ['Na⁺', '+1', '~111 (relative)', '~1.3%', 'Low polarising power → mainly ionic'],
+          ['Mg²⁺', '+2', '~556 (relative)', '~7.7%', 'High polarising power → significant covalent character']
+        ]
+      }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-ag-halides',
+      data: {
+        caption: 'Silver halides: increasing covalent character with anion size',
+        headers: ['Compound', 'Anion radius / nm', 'Experimental – Theoretical difference', 'Conclusion'],
+        rows: [
+          ['AgF', '0.133', '~4%', 'Small F⁻ — low polarisability — small discrepancy'],
+          ['AgI', '0.215', '~12.5%', 'Large I⁻ — highly polarisable — large discrepancy, significant covalent character']
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-fajans-pattern',
+      data: {
+        style: 'warning',
+        title: 'Fajans\' Rules — Pattern to Remember',
+        text: 'The bigger the anion and the smaller/more charged the cation, the <strong>more covalent</strong> the compound\'s character. Moving from AgF to AgI, the fluoride radius increases significantly (0.133 → 0.215 nm). The larger I⁻ is far more polarisable — its electrons are further from the nucleus and more easily distorted towards the Ag⁺ cation. This covalent overlap makes the experimental ΔH_latt more negative than the theoretical value.'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-hydration',
       data: { text: 'Enthalpies of Solution and Hydration', level: 2 }
@@ -57,8 +99,8 @@ export const note_chemistry_4_12_6 = {
       id: 'callout-def-sol',
       data: {
         style: 'key',
-        title: 'Definitions',
-        text: '<strong>Enthalpy of Hydration (ΔH_hyd):</strong> The energy released when one mole of gaseous ions is completely surrounded by water molecules. (Always exothermic because bonds are made between ions and water dipoles).<br/><br/><strong>Enthalpy of Solution (ΔH_sol):</strong> The enthalpy change when one mole of an ionic solid dissolves in water. It can be exothermic or endothermic.'
+        title: 'Definitions: Solution and Hydration Enthalpies',
+        text: '<strong>Enthalpy of Hydration (ΔH_hyd):</strong> The enthalpy change when one mole of gaseous ions is completely surrounded by water molecules to form an infinitely dilute solution. Always exothermic (bonds formed between ions and water dipoles).<br/><br/><strong>Enthalpy of Solution (ΔH_sol):</strong> The enthalpy change when one mole of an ionic solid dissolves in water to form an <strong>infinitely dilute solution</strong>. Can be exothermic or endothermic.<br/><br/><strong>Why "infinitely dilute"?</strong> During dissolution, two competing processes occur simultaneously:<br/>• Ions moving further apart as concentration decreases → <em>endothermic</em><br/>• Ions becoming increasingly hydrated → <em>exothermic</em><br/>At infinite dilution, further dilution has <strong>no further effect</strong> on the enthalpy. This point cannot be achieved experimentally, so values are obtained by <strong>extrapolation</strong>.'
       }
     },
     {
@@ -175,6 +217,15 @@ export const note_chemistry_4_12_6 = {
       }
     },
     {
+      type: 'callout',
+      id: 'co-hydration-entropy',
+      data: {
+        style: 'warning',
+        title: 'Hydration and Entropy — Opposing Effects',
+        text: 'Hydration releases energy (ΔH < 0, favourable), but it also <strong>decreases entropy</strong>. When water molecules order themselves tightly around an ion they lose freedom of movement — the surrounding water becomes <strong>more ordered</strong>. This is the opposite of what entropy favours (more disorder).\n\nSo hydration is enthalpically favourable but entropically unfavourable. At normal temperatures the enthalpy term wins and dissolution is thermodynamically driven — but this is why some compounds need to be heated to dissolve.'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-solution-enthalpy',
       data: {
@@ -280,6 +331,20 @@ export const note_chemistry_4_12_6 = {
       }
     },
     {
+      type: 'heading',
+      id: 'h-ppq-li2so4',
+      data: { text: 'Past Paper Style: Li₂SO₄ Energy Cycle', level: 2 }
+    },
+    {
+      type: 'callout',
+      id: 'co-ppq-li2so4',
+      data: {
+        style: 'worked',
+        title: 'Past Paper Example (June 2019 style): Labelling a Li₂SO₄ Born-Haber Cycle',
+        text: 'An energy cycle is used to determine the experimental lattice energy of Li₂SO₄. Steps are labelled W, X, Y, Z, V.\n\n<strong>Identify each step:</strong>\n• W: 2Li(g) → 2Li⁺(g) + 2e⁻  →  <em>2 × first IE of lithium</em>  (multiply by 2)\n• X: S(s) → S(g)  →  <em>enthalpy of atomisation of sulfur</em>\n• Y: S(g) + 2e⁻ → SO₄²⁻(g)  →  <em>first EA + second EA of sulfur</em>\n• Z: 2Li(s) + S(s) → Li₂SO₄(s)  →  <em>standard enthalpy of formation of Li₂SO₄</em>\n• V: 2Li(s) → 2Li(g)  →  <em>2 × enthalpy of atomisation of lithium</em>\n\n<strong>Lattice enthalpy equation:</strong>\nΔH_latt = Z − W − V − X − Y\n(or equivalently: ΔH_latt = Z − (W + V + X + Y))\n\n<strong>Key exam technique:</strong>\n• Name the <em>specific substance</em> — "first ionisation energy of <em>lithium</em>", not just "first ionisation energy"\n• Include multiplying factors (W = 2 × IE₁ of Li, V = 2 × ΔH_at of Li)\n• "First EA + Second EA of sulfur" counts as one mark — state both\n\n<strong>Why is experimental ΔH_latt more negative than theoretical for Li₂SO₄?</strong>\nThe experimental value is more negative because Li₂SO₄ has <strong>covalent character</strong> — the small, highly charged Li⁺ cation polarises the large SO₄²⁻ anion, distorting its electron cloud and causing partial covalent overlap.'
+      }
+    },
+    {
       type: 'checklist',
       id: 'cl-lattice-hydration',
       data: {
@@ -287,9 +352,11 @@ export const note_chemistry_4_12_6 = {
           { text: 'Lattice enthalpy (dissociation) is the energy to break apart an ionic solid into gaseous ions', checked: false },
           { text: 'Hydration enthalpy is the energy released when gaseous ions become aqueous', checked: false },
           { text: 'Higher ion charge and smaller radius → larger hydration enthalpy (more negative)', checked: false },
-          { text: 'Solution enthalpy = lattice enthalpy + sum of hydration enthalpies', checked: false },
-          { text: 'Enthalpy level diagrams show the pathway visually', checked: false },
-          { text: 'If solution enthalpy < 0, dissolution is exothermic; if > 0, endothermic', checked: false }
+          { text: 'Solution enthalpy = lattice enthalpy (dissociation) + sum of hydration enthalpies', checked: false },
+          { text: 'Enthalpy of solution refers to infinitely dilute solution — values obtained by extrapolation', checked: false },
+          { text: 'Hydration increases order (decreases entropy) despite being exothermic', checked: false },
+          { text: 'Experimental ΔH_latt more negative than theoretical → covalent character (polarisation)', checked: false },
+          { text: 'In exam questions: always name the specific ion/atom, include multiplying factors', checked: false }
         ]
       }
     },

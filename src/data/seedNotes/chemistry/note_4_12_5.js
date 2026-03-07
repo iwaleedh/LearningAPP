@@ -8,6 +8,15 @@ export const note_chemistry_4_12_5 = {
       }
     },
     {
+      type: 'callout',
+      id: 'co-terminology',
+      data: {
+        style: 'tip',
+        title: 'Terminology: Lattice Energy vs Lattice Enthalpy',
+        text: 'At A Level, the terms <strong>lattice energy</strong> and <strong>lattice enthalpy</strong> are used interchangeably — you will get full marks in the exam regardless of which term you use. Both refer to the enthalpy change when one mole of an ionic solid is formed from its constituent gaseous ions under standard conditions (298 K, 100 kPa).'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-definitions',
       data: { text: 'Key Definitions for Born-Haber Cycles', level: 2 }
@@ -28,6 +37,33 @@ export const note_chemistry_4_12_5 = {
         style: 'key',
         title: 'Electron Affinity',
         text: 'The <strong>First Electron Affinity</strong> is the enthalpy change when each atom in one mole of gaseous atoms gains an electron to form a 1- ion.<br/><em>e.g. Cl(g) + e⁻ → Cl⁻(g)</em><br/>This is typically exothermic because the electron is attracted to the nucleus. However, the <strong>Second Electron Affinity</strong> (e.g. O⁻ → O²⁻) is always endothermic because the negative electron is being repelled by an already negative ion.'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-charge-data',
+      data: { text: 'Effect of Charge and Radius on Lattice Enthalpy', level: 2 }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-charge-radius',
+      data: {
+        caption: 'Lattice enthalpy values illustrating charge and radius effects',
+        headers: ['Compound', 'Ions', 'Interionic distance / nm', 'Lattice enthalpy / kJ mol⁻¹'],
+        rows: [
+          ['LiF', 'Li⁺ F⁻ (+1/−1)', '0.207', '−1031'],
+          ['CaF₂', 'Ca²⁺ F⁻ (+2/−1)', '0.236', '−2630'],
+          ['Al₂O₃', 'Al³⁺ O²⁻ (+3/−2)', '0.193', '−15 504']
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-charge-analysis',
+      data: {
+        style: 'tip',
+        title: 'Key Comparison: NaF vs CaF₂ — Charge Dominates',
+        text: 'NaF and CaF₂ have almost <strong>identical interionic distances</strong> (~0.233–0.235 nm), yet CaF₂ has a lattice enthalpy almost <strong>triple</strong> that of NaF. This demonstrates that ionic <strong>charge has by far the largest effect</strong> on lattice enthalpy magnitude — much greater than the effect of ionic radius.'
       }
     },
     {
@@ -127,6 +163,15 @@ export const note_chemistry_4_12_5 = {
       }
     },
     {
+      type: 'callout',
+      id: 'co-bhc-example-cscl',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Born-Haber Cycle for CsCl',
+        text: 'Target: Cs(s) + ½Cl₂(g) → CsCl(s)\nΔH_f(CsCl) = −433 kJ mol⁻¹\n\nSteps:\n1. Atomisation of Cs:  Cs(s) → Cs(g)              ΔH_at = +73 kJ mol⁻¹\n2. 1st IE of Cs:       Cs(g) → Cs⁺(g) + e⁻        IE₁ = +376 kJ mol⁻¹\n3. Atomisation of Cl:  ½Cl₂(g) → Cl(g)            ΔH_at = +121 kJ mol⁻¹\n4. 1st EA of Cl:       Cl(g) + e⁻ → Cl⁻(g)        EA₁ = −346 kJ mol⁻¹\n5. Lattice formation:  Cs⁺(g) + Cl⁻(g) → CsCl(s)  ΔH_latt = ?\n\nBy Hess\'s law:\n−433 = 73 + 376 + 121 + (−346) + ΔH_latt\n−433 = 224 + ΔH_latt\nΔH_latt = −433 − 224 = −657 kJ mol⁻¹'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-bhc-mgcl2',
       data: {
@@ -148,6 +193,36 @@ export const note_chemistry_4_12_5 = {
         style: 'worked',
         title: 'Born-Haber Cycle for MgCl₂',
         text: 'Target: Mg(s) + Cl₂(g) → MgCl₂(s)   ΔH_f = −641 kJ mol⁻¹\n\nBorn-Haber cycle steps:\n1. Atomisation of Mg:     Mg(s) → Mg(g)                    ΔH₁ = +148 kJ mol⁻¹\n2. First ionisation of Mg: Mg(g) → Mg⁺(g) + e⁻            ΔH₂ = +738 kJ mol⁻¹\n3. Second ionisation:     Mg⁺(g) → Mg²⁺(g) + e⁻            ΔH₃ = +1451 kJ mol⁻¹\n4. Atomisation of Cl₂:    Cl₂(g) → 2Cl(g)                  ΔH₄ = +242 kJ mol⁻¹\n5. Electron affinities:   2Cl(g) + 2e⁻ → 2Cl⁻(g)          ΔH₅ = 2 × (−364) = −728 kJ mol⁻¹\n6. Lattice formation:     Mg²⁺(g) + 2Cl⁻(g) → MgCl₂(s)   ΔH₆ = ΔH_lattice\n\nBy Hess\'s law:\n−641 = 148 + 738 + 1451 + 242 + (−728) + ΔH_lattice\n−641 = 1851 + ΔH_lattice\nΔH_lattice = −641 − 1851 = −2492 kJ mol⁻¹\n\nMgCl₂ has a lower lattice enthalpy than MgO because the ionic radii are larger and the charges are lower (Cl⁻ vs O²⁻).'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-exam-tip-label',
+      data: {
+        style: 'tip',
+        title: '📝 Exam Technique: Labelling vs Drawing',
+        text: 'In the exam it is <strong>extremely rare</strong> to be asked to draw a Born-Haber cycle from scratch. You are far more likely to be asked to:<br/>• <strong>Label specific arrows</strong> on a pre-drawn cycle (e.g. "what enthalpy change does W represent?")<br/>• Include correct <strong>multiplying factors</strong> (e.g. write 2 × IE₁ when two Na atoms are ionised)<br/>• Write the algebraic equation for the unknown step<br/><br/>Always specify the <strong>ion or atom</strong> — e.g. "first ionisation energy of <em>lithium</em>", not just "first ionisation energy". You can also write Li⁺ as the symbol.'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-bhc-na2o',
+      data: { text: 'Labelling Example: Na₂O Born-Haber Cycle', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-na2o-intro',
+      data: {
+        text: 'Na₂O is a good exam example because it requires multiplying by 2 for sodium, and it uses both the first AND second electron affinities of oxygen. Note that the second EA is always positive (endothermic) — the arrow goes UP in a cycle diagram, which can look unusual at first.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-bhc-example-na2o',
+      data: {
+        style: 'worked',
+        title: 'Worked Labelling Example: Na₂O (Lattice enthalpy = −2520 kJ mol⁻¹)',
+        text: 'Formation: 2Na(s) + ½O₂(g) → Na₂O(s)   ΔH_f = −414 kJ mol⁻¹\n\nSteps with exam labels:\n• 2 × ΔH_at(Na):  2 × (+108) = +216 kJ mol⁻¹    ← multiply by 2 (two Na atoms)\n• ΔH_at(O):       ½O₂(g) → O(g)   +249 kJ mol⁻¹\n• 2 × IE₁(Na):    2 × (+496) = +992 kJ mol⁻¹    ← multiply by 2\n• 1st EA(O):      O(g) + e⁻ → O⁻(g)   −141 kJ mol⁻¹  (arrow DOWN — exothermic)\n• 2nd EA(O):      O⁻(g) + e⁻ → O²⁻(g)  +790 kJ mol⁻¹  (arrow UP — endothermic)\n• ΔH_latt:        2Na⁺(g) + O²⁻(g) → Na₂O(s)  unknown\n\nBy Hess\'s law:\n−414 = 216 + 249 + 992 + (−141) + 790 + ΔH_latt\n−414 = 2106 + ΔH_latt\nΔH_latt = −414 − 2106 = −2520 kJ mol⁻¹\n\nKey exam point: always show working. If you omit the ×2 for Na and get a wrong final answer, you still earn error-carried-forward marks — but only if the working is shown.'
       }
     },
     {
@@ -191,27 +266,38 @@ export const note_chemistry_4_12_5 = {
       type: 'paragraph',
       id: 'p-theory-exp-1',
       data: {
-        text: 'Lattice enthalpy can be calculated in two ways: theoretically (using Born-Haber cycles with experimental thermodynamic data) and experimentally (using Born-Landé equation or other models based on ionic crystal theory).'
+        text: 'The <strong>experimental lattice enthalpy</strong> is found from a Born-Haber cycle (using experimentally measured atomisation, ionisation, electron affinity and formation enthalpies). The <strong>theoretical lattice enthalpy</strong> is calculated from electrostatic principles. At A Level you are not required to carry out this calculation, but you must know the three assumptions it makes.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-perfect-ionic',
+      data: {
+        style: 'key',
+        title: 'The Perfect Ionic Model — Three Assumptions',
+        text: 'The theoretical calculation assumes a <strong>perfect ionic model</strong>:<br/>1. The ions are <strong>in contact</strong> with each other.<br/>2. The ions are <strong>perfectly spherical</strong> (no distortion of electron cloud).<br/>3. The <strong>charge is evenly distributed</strong> over the surface of each ion.<br/><br/>If these assumptions hold, the compound is 100% ionic. When experiment and theory diverge significantly it means the model has broken down — the substance has <strong>covalent character</strong> caused by polarisation.'
       }
     },
     {
       type: 'paragraph',
       id: 'p-theory-exp-2',
       data: {
-        text: 'For purely ionic compounds (like NaCl), theoretical and experimental values agree closely. However, for compounds with significant covalent character (like AgCl or CuCl), the experimental lattice enthalpy is often higher than predicted by simple ionic theory. This discrepancy reveals polarisation effects and partial covalent bonding.'
+        text: 'For the sodium halides, theoretical and experimental values agree very closely (~1–2% difference), confirming they are essentially ionic. For silver halides, the experimental value is noticeably more negative than the theoretical, revealing significant covalent character caused by the Ag⁺ cation polarising the large halide anion.'
       }
     },
     {
       type: 'comparisonTable',
       id: 'table-lattice-values',
       data: {
-        caption: 'Theoretical vs Experimental Lattice Enthalpy (Examples)',
-        headers: ['Compound', 'Theoretical / kJ mol⁻¹', 'Experimental / kJ mol⁻¹', 'Difference / %', 'Interpretation'],
+        caption: 'Sodium halides (agree well) vs Silver halides (diverge, covalent character)',
+        headers: ['Compound', 'Theoretical / kJ mol⁻¹', 'Experimental / kJ mol⁻¹', 'Difference / %', 'Conclusion'],
         rows: [
-          ['NaCl', '−766', '−786', '+2.6%', 'Good agreement; mostly ionic'],
-          ['MgO', '−3850', '−3900', '+1.3%', 'Excellent agreement; purely ionic'],
-          ['AgCl', '−910', '−915', '+0.5%', 'Good agreement; slight covalent character'],
-          ['CuCl', '−980', '−1000', '+2%', 'Some covalent character detected']
+          ['NaF', '−912', '−918', '~0.7%', 'Very close — purely ionic'],
+          ['NaCl', '−771', '−786', '~2.0%', 'Close — mostly ionic'],
+          ['NaBr', '−736', '−751', '~2.0%', 'Close — mostly ionic'],
+          ['AgF', '−920', '−953', '~3.6%', 'Diverging — some covalent character'],
+          ['AgCl', '−833', '−905', '~8.6%', 'Large divergence — significant covalent character'],
+          ['AgBr', '−816', '−891', '~9.2%', 'Large divergence — considerable covalent character']
         ]
       }
     },
