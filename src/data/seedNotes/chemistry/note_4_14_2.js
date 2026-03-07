@@ -35,6 +35,15 @@ export const note_chemistry_4_14_2 = {
       }
     },
     {
+      id: 'callout-negative-ph',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Negative pH is Real!',
+        text: '• pH = −log[H⁺], so if [H⁺] > 1 mol dm⁻³ → pH is negative\n• This is NOT an error — it happens at very high strong acid concentrations\n• Example: 2 mol dm⁻³ HCl → pH = −log(2) = −0.30\n• In the exam, a negative pH answer is acceptable if the calculation supports it'
+      }
+    },
+    {
       id: 'h-poh',
       type: 'heading',
       data: { text: 'pOH and the Kw Relationship', level: 2 }
@@ -52,6 +61,28 @@ export const note_chemistry_4_14_2 = {
       data: {
         html: 'K<sub>w</sub> = [H<sup>+</sup>][OH<sup>−</sup>] = 1.0 × 10<sup>−14</sup> mol² dm<sup>−6</sup> (at 25°C)',
         caption: 'Ionic product of water at 25°C'
+      }
+    },
+    {
+      id: 'tbl-kw-temperature',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Temperature', 'Kw (mol² dm⁻⁶)', 'Neutral pH', 'Meaning'],
+        rows: [
+          ['0°C (273 K)', '0.11 × 10⁻¹⁴', '7.47', 'Neutral solution has pH 7.47'],
+          ['25°C (298 K)', '1.00 × 10⁻¹⁴', '7.00', 'Neutral solution has pH 7.00'],
+          ['40°C (313 K)', '3.00 × 10⁻¹⁴', '6.77', 'Neutral solution has pH 6.77']
+        ],
+        caption: 'Kw increases with temperature → neutral pH decreases with temperature'
+      }
+    },
+    {
+      id: 'callout-neutral-not-7',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '💡 Key Point: Neutral ≠ Always pH 7',
+        text: '• NEUTRAL means [H⁺] = [OH⁻] — NOT necessarily pH 7\n• At 25°C: [H⁺] = [OH⁻] = 10⁻⁷ → pH = 7 ✓\n• At 40°C: [H⁺] = [OH⁻] → each = √(3.00 × 10⁻¹⁴) → pH = 6.77 (still neutral!)\n• pH 6.77 at 40°C is neutral — the solution is neither acidic nor basic\n• Neutral = [H⁺] = [OH⁻] at whatever temperature you are at'
       }
     },
     {
@@ -91,12 +122,24 @@ export const note_chemistry_4_14_2 = {
       }
     },
     {
+      id: 'list-strong-acid-steps',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Write the dissociation: e.g. HCl → H⁺ + Cl⁻ (complete for strong acids)',
+          'Identify [H⁺]: for monoprotic strong acids, [H⁺] = concentration of acid',
+          'Apply: pH = −log[H⁺]'
+        ]
+      }
+    },
+    {
       id: 'ex-strong-acid-1',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Example: pH of Strong Monoprotic Acid',
-        text: 'For a solution of 0.1 mol dm⁻³ HCl: HCl completely dissociates, so [H⁺] = 0.1 = 10⁻¹ mol dm⁻³. pH = −log(10⁻¹) = 1. This is an acidic solution.'
+        title: 'Example 1: Standard Strong Acid',
+        text: 'Q: Calculate the pH of 0.150 mol dm⁻³ HBr.\n\nHBr → H⁺ + Br⁻ (complete dissociation)\n[H⁺] = 0.150 mol dm⁻³\npH = −log(0.150) = <strong>0.82</strong>'
       }
     },
     {
@@ -104,8 +147,17 @@ export const note_chemistry_4_14_2 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Example: pH of Very Dilute Strong Acid',
-        text: 'For a solution of 10⁻⁸ mol dm⁻³ HCl: At first glance, [H⁺] = 10⁻⁸. However, we must include the H⁺ from water autoionization. At pH 7 (neutral), [H⁺] = 10⁻⁷. For very dilute strong acid, the pH ≈ 6.5−7, not 8 (which would be basic). The solution remains slightly acidic.'
+        title: 'Example 2: Negative pH (Exam Trap)',
+        text: 'Q: 10 mol dm⁻³ HCl is 55% dissociated. Calculate the pH.\n\n[H⁺] = 0.55 × 10 = 5.50 mol dm⁻³\npH = −log(5.50) = <strong>−0.74</strong> (negative pH — this is correct!)\n\n⚠️ Not all strong acids fully dissociate at very high concentrations — always use the given % if provided.'
+      }
+    },
+    {
+      id: 'ex-strong-acid-3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example 3: Reverse — pH to [H⁺]',
+        text: 'Q: A solution has pH = 4.8. Calculate [H⁺].\n\n[H⁺] = 10<sup>−pH</sup> = 10<sup>−4.8</sup> = <strong>1.58 × 10⁻⁵ mol dm⁻³</strong>\n\nTip: On a calculator press: 10^(−4.8) or use the 10ˣ key.'
       }
     },
     {
@@ -121,12 +173,24 @@ export const note_chemistry_4_14_2 = {
       }
     },
     {
+      id: 'list-strong-base-steps',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Find [OH⁻]: for Group 1 hydroxides, [OH⁻] = concentration; for Ca(OH)₂, [OH⁻] = 2 × concentration',
+          'Find [H⁺]: [H⁺] = Kw ÷ [OH⁻] = 10⁻¹⁴ ÷ [OH⁻]',
+          'Apply: pH = −log[H⁺]'
+        ]
+      }
+    },
+    {
       id: 'ex-strong-base-1',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Example: pH of Strong Base (NaOH)',
-        text: 'For 0.1 mol dm⁻³ NaOH: [OH⁻] = 0.1 = 10⁻¹ mol dm⁻³. pOH = −log(10⁻¹) = 1. pH = 14 − 1 = 13. This is a basic solution.'
+        title: 'Example 1: KOH (Group 1 hydroxide)',
+        text: 'Q: Calculate the pH of 0.020 mol dm⁻³ KOH.\n\nKOH → K⁺ + OH⁻\n[OH⁻] = 0.020 mol dm⁻³\n[H⁺] = 10⁻¹⁴ ÷ 0.020 = 5.0 × 10⁻¹³ mol dm⁻³\npH = −log(5.0 × 10⁻¹³) = <strong>12.3</strong>'
       }
     },
     {
@@ -134,8 +198,17 @@ export const note_chemistry_4_14_2 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Example: pH of Ca(OH)₂',
-        text: 'For 0.05 mol dm⁻³ Ca(OH)₂: Ca(OH)₂ → Ca²⁺ + 2OH⁻, so [OH⁻] = 2 × 0.05 = 0.1 = 10⁻¹ mol dm⁻³. pOH = 1, pH = 14 − 1 = 13. Same pH as 0.1 M NaOH because both produce [OH⁻] = 0.1 M.'
+        title: 'Example 2: Ca(OH)₂ — REMEMBER: 2 OH⁻ per formula unit',
+        text: 'Q: Calculate the pH of 0.050 mol dm⁻³ Ca(OH)₂.\n\nCa(OH)₂ → Ca²⁺ + 2OH⁻\n[OH⁻] = 2 × 0.050 = 0.10 mol dm⁻³\n[H⁺] = 10⁻¹⁴ ÷ 0.10 = 1.0 × 10⁻¹³ mol dm⁻³\npH = −log(1.0 × 10⁻¹³) = <strong>13.00</strong>\n\n⚠️ Common mistake: forgetting to multiply by 2 for Ca(OH)₂'
+      }
+    },
+    {
+      id: 'ex-strong-base-3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example 3: NaOH reverse calculation',
+        text: 'Q: A NaOH solution has pH = 12.50. Calculate [NaOH].\n\npH = 12.50 → [H⁺] = 10⁻¹²·⁵⁰ = 3.16 × 10⁻¹³ mol dm⁻³\n[OH⁻] = Kw ÷ [H⁺] = 10⁻¹⁴ ÷ 3.16 × 10⁻¹³ = 0.031 mol dm⁻³\n[NaOH] = [OH⁻] = <strong>0.031 mol dm⁻³</strong>'
       }
     },
     {

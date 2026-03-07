@@ -58,15 +58,15 @@ export const note_chemistry_4_14_4 = {
       id: 'tbl-pka-examples',
       type: 'comparisonTable',
       data: {
-        headers: ['Weak Acid', 'Ka (mol dm⁻³)', 'pKa', 'Acid Strength'],
+        headers: ['Weak Acid', 'Ka (mol dm⁻³)', 'pKa', 'Strength'],
         rows: [
-          ['Acetic acid (CH₃COOH)', '1.8 × 10⁻⁵', '4.74', 'Weak'],
-          ['Formic acid (HCOOH)', '1.6 × 10⁻⁴', '3.80', 'Moderately weak'],
-          ['Hydrofluoric acid (HF)', '6.8 × 10⁻⁴', '3.17', 'Moderately weak'],
-          ['Hydrogen cyanide (HCN)', '4.9 × 10⁻¹⁰', '9.31', 'Very weak'],
-          ['Phenol (C₆H₅OH)', '1.0 × 10⁻¹⁰', '10.0', 'Very weak']
+          ['Trichloroethanoic acid (CCl₃COOH)', '2.21 × 10⁻¹', '0.65', 'Relatively strong weak acid'],
+          ['Formic / methanoic acid (HCOOH)', '1.70 × 10⁻⁴', '3.77', 'Moderate'],
+          ['Acetic / ethanoic acid (CH₃COOH)', '1.74 × 10⁻⁵', '4.76', 'Weak'],
+          ['Propanoic acid (CH₃CH₂COOH)', '1.35 × 10⁻⁵', '4.87', 'Slightly weaker than ethanoic'],
+          ['Hydrogen cyanide (HCN)', '4.9 × 10⁻¹⁰', '9.31', 'Very weak']
         ],
-        caption: 'Ka and pKa values for common weak acids'
+        caption: 'Ka and pKa values — lower pKa = stronger acid (more dissociation)'
       }
     },
     {
@@ -84,7 +84,24 @@ export const note_chemistry_4_14_4 = {
     {
       id: 'h-approximation',
       type: 'heading',
-      data: { text: 'The Simplifying Approximation: [HA] ≈ c', level: 2 }
+      data: { text: 'Simplifying: [H⁺] = √(Ka × c)', level: 2 }
+    },
+    {
+      id: 'eq-ka-simplified',
+      type: 'equation',
+      data: {
+        html: 'K<sub>a</sub> = <span class="nb-frac"><span class="nb-num">[H<sup>+</sup>]²</span><span class="nb-den">[HA]</span></span> &emsp;→&emsp; [H<sup>+</sup>] = √(K<sub>a</sub> × [HA])',
+        caption: 'Simplified Ka expression: valid when [H⁺] = [A⁻] and [HA]eq ≈ [HA]initial'
+      }
+    },
+    {
+      id: 'callout-two-assumptions',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ The Two Assumptions — EXAM FAVOURITE',
+        text: '<strong>Assumption 1:</strong> [HA] at equilibrium ≈ [HA] initial\n→ Because weak acids dissociate so little (< 5%), the change in [HA] is negligible\n→ So (c − x) ≈ c, allowing: Ka ≈ [H⁺]² / c\n\n<strong>Assumption 2:</strong> All H⁺ ions come from the weak acid only\n→ The contribution of H⁺ from water autoionisation is negligible\n→ So [H⁺] from water is ignored\n\n✅ Verify assumption 1: check that [H⁺]/c × 100 < 5%'
+      }
     },
     {
       id: 'p-approx-intro',
@@ -110,12 +127,30 @@ export const note_chemistry_4_14_4 = {
       }
     },
     {
+      id: 'ex-ethanoic-transcript',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Exam-Style Example: Ethanoic Acid pH (Full Steps)',
+        text: 'Q: Calculate the pH of 0.050 mol dm⁻³ ethanoic acid. Ka = 1.74 × 10⁻⁵ mol dm⁻³.\n\nStep 1: Write Ka = [H⁺]² / [HA]  (using both assumptions)\n\nStep 2: [H⁺]² = Ka × [HA] = 1.74 × 10⁻⁵ × 0.050 = 8.70 × 10⁻⁷\n\nStep 3: [H⁺] = √(8.70 × 10⁻⁷) = 9.33 × 10⁻⁴ mol dm⁻³\n\nStep 4: pH = −log(9.33 × 10⁻⁴) = <strong>3.03</strong>\n\nVerify assumption: 9.33 × 10⁻⁴ / 0.050 × 100 = 1.9% < 5% ✓'
+      }
+    },
+    {
       id: 'ex-weak-acid-no-approx',
       type: 'callout',
       data: {
         style: 'worked',
         title: 'Example: Weak Acid Without Approximation (if needed)',
         text: 'For 0.01 mol dm⁻³ acetic acid (Ka = 1.8 × 10⁻⁵): Using approximation: [H⁺] ≈ √(1.8 × 10⁻⁵ × 0.01) ≈ 4.24 × 10⁻⁴. Check: 4.24 × 10⁻⁴ / 0.01 = 0.0424 = 4.24%, which is < 5%, so approximation is valid. If the acid were stronger (Ka = 0.01) or concentration much lower, we\'d need the quadratic formula: Ka = x² / (c − x), where x² + Ka × x − Ka × c = 0.'
+      }
+    },
+    {
+      id: 'callout-diprotic',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '💬 Diprotic Acids (e.g. H₂SO₄)',
+        text: '• Diprotic acids donate TWO protons in two separate steps:\n  H₂SO₄ → H⁺ + HSO₄⁻  (first dissociation — complete)\n  HSO₄⁻ ⇌ H⁺ + SO₄²⁻  (second dissociation — partial)\n\n• Calculating pH of diprotic acids requires treating both steps separately\n• This leads to a quadratic equation → <strong>NOT required in the Edexcel IAL exam</strong>\n• You only need to handle diprotic acids if told [H⁺] or given simplified data'
       }
     },
     {

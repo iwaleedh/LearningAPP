@@ -13,17 +13,42 @@ export const note_chemistry_4_14_0 = {
       data: { text: 'Brønsted-Lowry Acid-Base Model', level: 2 }
     },
     {
-      id: 'p-brønsted',
-      type: 'paragraph',
+      id: 'list-brønsted-def',
+      type: 'list',
       data: {
-        text: 'The Brønsted-Lowry model defines acids and bases in terms of proton (H⁺) transfer. An acid is a proton donor—a species that releases H⁺ ions. A base is a proton acceptor—a species that accepts H⁺ ions. This model is more general than the Arrhenius model because it applies to non-aqueous systems and better explains the behaviour of weak acids and bases.'
+        style: 'bullet',
+        items: [
+          '<strong>Acid</strong> = proton (H⁺) donor — releases H⁺ to another species',
+          '<strong>Base</strong> = proton (H⁺) acceptor — takes H⁺ from an acid',
+          'A base must have a <strong>lone pair of electrons</strong> to form a dative (coordinate) bond with H⁺',
+          'More general than Arrhenius model — applies to non-aqueous systems and explains amphoteric behaviour'
+        ]
       }
     },
     {
-      id: 'p-examples',
-      type: 'paragraph',
+      id: 'h-bl-examples',
+      type: 'heading',
+      data: { text: 'Brønsted-Lowry Examples', level: 3 }
+    },
+    {
+      id: 'list-bl-examples',
+      type: 'list',
       data: {
-        text: 'HCl is an acid because it donates a proton: HCl → H⁺ + Cl⁻. NH₃ is a base because it accepts a proton: NH₃ + H⁺ → NH₄⁺. H₂O can act as both: in the presence of HCl, water acts as a base (H₂O + H⁺ → H₃O⁺); in the presence of NH₃, water acts as an acid (H₂O → H⁺ + OH⁻). Water is amphoteric.'
+        style: 'bullet',
+        items: [
+          'HCl + H₂O → H₃O⁺ + Cl⁻ &emsp; HCl = acid (donates H⁺); H₂O = base (accepts H⁺)',
+          'NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ &emsp; H₂O = acid (donates H⁺); NH₃ = base (accepts H⁺)',
+          'Water can be acid OR base → it is <strong>amphoteric</strong>'
+        ]
+      }
+    },
+    {
+      id: 'callout-bl-flow',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '🔢 Sequential Steps: Identify Acid/Base in Any Equation',
+        text: '1. Write out the full equilibrium equation.\n2. Find the species that LOSES a H⁺ → that is the <strong>acid</strong>.\n3. Find the species that GAINS a H⁺ → that is the <strong>base</strong>.\n4. The acid minus H⁺ = its <strong>conjugate base</strong>.\n5. The base plus H⁺ = its <strong>conjugate acid</strong>.\n6. Each acid/conjugate-base pair (and base/conjugate-acid pair) are the two conjugate pairs.'
       }
     },
     {
@@ -80,6 +105,24 @@ export const note_chemistry_4_14_0 = {
       }
     },
     {
+      id: 'h-protic',
+      type: 'heading',
+      data: { text: 'Number of Protons: Monoprotic to Triprotic', level: 2 }
+    },
+    {
+      id: 'tbl-protic',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Term', 'Protons donated', 'Example acid', 'Example base'],
+        rows: [
+          ['Monoprotic / Monobasic / Monoacidic', '1', 'HCl, HNO₃, CH₃COOH', 'NaOH'],
+          ['Diprotic / Dibasic', '2', 'H₂SO₄, H₂CO₃', 'Ca(OH)₂'],
+          ['Triprotic / Tribasic', '3', 'H₃PO₄', '—']
+        ],
+        caption: 'Classification of acids/bases by number of transferable protons'
+      }
+    },
+    {
       id: 'h-amphoteric',
       type: 'heading',
       data: { text: 'Amphoteric Substances', level: 2 }
@@ -89,6 +132,15 @@ export const note_chemistry_4_14_0 = {
       type: 'paragraph',
       data: {
         text: 'An amphoteric substance can act as both a proton donor (acid) and a proton acceptor (base). Water is the classic example: H₂O ⇌ H⁺ + OH⁻ (acid side) and H₂O + H⁺ → H₃O⁺ (base side). Other amphoteric species include hydrogen carbonate (HCO₃⁻), hydrogen sulfate (HSO₄⁻), and amino acids. Whether an amphoteric substance acts primarily as an acid or base depends on what it is mixed with.'
+      }
+    },
+    {
+      id: 'callout-ampho-hno3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Unusual Amphoteric Example: HNO₃ acting as a BASE',
+        text: 'HNO₃ is normally a strong acid. However, when mixed with concentrated H₂SO₄ (a stronger acid), HNO₃ acts as a BASE:\n\nH₂SO₄ + HNO₃ → HSO₄⁻ + H₂NO₃⁺\n\nHere H₂SO₄ donates H⁺ to HNO₃ → HNO₃ accepts H⁺ = base in this reaction.\nThis illustrates that acid/base character is relative — it depends on the partner species.'
       }
     },
     {

@@ -97,6 +97,50 @@ export const note_chemistry_4_14_7 = {
       }
     },
     {
+      id: 'h-simple-ka-from-ph',
+      type: 'heading',
+      data: { text: 'Simple Ka Determination from pH (No Titration)', level: 2 }
+    },
+    {
+      id: 'p-simple-ka',
+      type: 'paragraph',
+      data: {
+        text: 'Ka can also be determined without a full titration — simply by dissolving a known mass of weak acid in a known volume and measuring the pH of the resulting solution.'
+      }
+    },
+    {
+      id: 'ex-benzoic-ka',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Ka of Benzoic Acid from pH',
+        text: 'Q: 0.49 g of benzoic acid (C₆H₅COOH, Mr = 122) is dissolved in water to make 250 cm³ of solution. The pH is measured as 3.00. Calculate Ka.\n\nStep 1: Find moles of benzoic acid\nn = 0.49 ÷ 122 = 4.02 × 10⁻³ mol\n\nStep 2: Find concentration\nc = 4.02 × 10⁻³ ÷ 0.250 = 0.0161 mol dm⁻³ (≈ 0.016 mol dm⁻³)\n\nStep 3: Find [H⁺] from pH\n[H⁺] = 10⁻³·⁰⁰ = 1.00 × 10⁻³ mol dm⁻³\n\nStep 4: Apply Ka = [H⁺]² / [HA]\nKa = (1.00 × 10⁻³)² ÷ 0.0161 = 6.21 × 10⁻⁵ mol dm⁻³\n\n<strong>Ka ≈ 6.2 × 10⁻⁵ mol dm⁻³</strong>'
+      }
+    },
+    {
+      id: 'h-ppq',
+      type: 'heading',
+      data: { text: 'Past Paper Style Questions', level: 2 }
+    },
+    {
+      id: 'ex-methanoic-ppq',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '5-Mark PPQ: Methanoic Acid pH Calculation',
+        text: 'Q: A solution of methanoic acid (HCOOH) has a concentration of 30 g dm⁻³. Ka = 1.70 × 10⁻⁴ mol dm⁻³. Calculate the pH of this solution.\n\n[1 mark] Step 1: Convert g dm⁻³ to mol dm⁻³\nMr(HCOOH) = 1 + 12 + 16 + 16 + 1 = 46\nc = 30 ÷ 46 = 0.652 mol dm⁻³\n\n[1 mark] Step 2: Write Ka expression with simplification\nKa = [H⁺]² / c → [H⁺]² = Ka × c\n\n[1 mark] Step 3: Calculate [H⁺]²\n[H⁺]² = 1.70 × 10⁻⁴ × 0.652 = 1.108 × 10⁻⁴\n\n[1 mark] Step 4: Find [H⁺]\n[H⁺] = √(1.108 × 10⁻⁴) = 1.053 × 10⁻² mol dm⁻³\n\n[1 mark] Step 5: Calculate pH\npH = −log(1.053 × 10⁻²) = <strong>1.98</strong>'
+      }
+    },
+    {
+      id: 'callout-two-assumptions-ppq',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '💬 PPQ: "State the two assumptions made in the above calculation"',
+        text: '1. The equilibrium concentration of the weak acid [HA] is approximately equal to its initial concentration (dissociation is so small it is negligible).\n\n2. The concentration of H⁺ ions from the ionisation of water is negligible; all H⁺ comes from the dissociation of the weak acid only.\n\n⚠️ These two assumptions appear frequently — practise writing them in full sentences!'
+      }
+    },
+    {
       id: 'h-sources-error',
       type: 'heading',
       data: { text: 'Sources of Error and Improvements', level: 2 }
