@@ -39,7 +39,7 @@ export const note_chemistry_4_11_7 = {
       id: 'eq-arrhenius',
       type: 'equation',
       data: {
-        latex: 'k = A \\cdot e^{\\frac{-E_a}{RT}}',
+        html: 'k = A · e<sup>−E<sub>a</sub>/RT</sup>',
         caption: 'The standard (exponential) form of the Arrhenius equation.'
       },
       terms: []
@@ -79,7 +79,7 @@ export const note_chemistry_4_11_7 = {
       id: 'eq-log',
       type: 'equation',
       data: {
-        latex: '\\ln(k) = -\\frac{E_a}{R} \\cdot \\frac{1}{T} + \\ln(A)',
+        html: 'ln(k) = −<span class="nb-frac"><span class="nb-num">E<sub>a</sub></span><span class="nb-den">R</span></span> · <span class="nb-frac"><span class="nb-num">1</span><span class="nb-den">T</span></span> + ln(A)',
         caption: 'The logarithmic form of the Arrhenius Equation.'
       },
       terms: []
@@ -103,6 +103,32 @@ export const note_chemistry_4_11_7 = {
         text: '<strong>Q: An Arrhenius plot of ln(k) vs 1/T gave a straight line with a mathematically calculated negative gradient of -6500 K. Calculate the activation energy (Eₐ) for this reaction in kJ mol⁻¹. (R = 8.31 J K⁻¹ mol⁻¹)</strong><br/><br/><strong>A:</strong><br/>Gradient (m) = -6500<br/>m = -Eₐ / R<br/>-6500 = -Eₐ / 8.31<br/><br/>Eₐ = 6500 × 8.31<br/>Eₐ = 54,015 J mol⁻¹<br/><br/>Divide by 1000 to convert to kJ:<br/><strong>Eₐ = +54.0 kJ mol⁻¹</strong>'
       },
       terms: []
+    },
+    // ── ARRHENIUS PLOT SVG ─────────────────────────────────────────────────
+    {
+      id: 'h-arrhenius-graph',
+      type: 'heading',
+      data: { text: 'The Arrhenius Graph (ln(k) vs 1/T)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'svg-arrhenius',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 400 230" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif"><defs><marker id="arrA" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#374151"/></marker></defs><rect x="0" y="0" width="400" height="230" rx="8" fill="#fdf4ff" stroke="#e9d5ff" stroke-width="1"/><text x="200" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">Arrhenius Plot: ln(k) against 1/T</text><line x1="65" y1="185" x2="65" y2="28" stroke="#374151" stroke-width="1.5" marker-end="url(#arrA)"/><line x1="65" y1="185" x2="355" y2="185" stroke="#374151" stroke-width="1.5" marker-end="url(#arrA)"/><text x="210" y="207" text-anchor="middle" font-size="11" fill="#374151">1/T (K⁻¹)  →  increasing 1/T = decreasing T</text><text x="22" y="110" text-anchor="middle" font-size="11" fill="#374151" transform="rotate(-90,22,110)">ln(k) ↑</text><line x1="82" y1="48" x2="335" y2="172" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/><circle cx="82" cy="48" r="5" fill="#7c3aed"/><text x="92" y="44" font-size="10" fill="#7c3aed" font-weight="bold">y-intercept = ln(A)</text><line x1="180" y1="100" x2="270" y2="100" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/><line x1="270" y1="100" x2="270" y2="152" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3"/><text x="280" y="130" font-size="10" fill="#374151">Δy</text><text x="222" y="94" text-anchor="middle" font-size="10" fill="#374151">Δx</text><rect x="85" y="152" width="155" height="44" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/><text x="162" y="167" text-anchor="middle" font-size="10" fill="#5b21b6" font-weight="bold">gradient = −Eₐ / R</text><text x="162" y="183" text-anchor="middle" font-size="10" fill="#5b21b6">∴ Eₐ = −gradient × R</text><text x="280" y="65" font-size="9" fill="#64748b" font-weight="bold">Higher T:</text><text x="280" y="78" font-size="9" fill="#64748b">smaller 1/T</text><text x="280" y="91" font-size="9" fill="#64748b">larger ln(k)</text><text x="280" y="104" font-size="9" fill="#64748b">→ faster reaction</text><text x="90" y="175" font-size="9" fill="#94a3b8">negative gradient (always)</text></svg>',
+        caption: 'Arrhenius plot: ln(k) on y-axis, 1/T on x-axis gives a straight line with negative gradient = −Eₐ/R. The y-intercept = ln(A). To find Eₐ: rearrange gradient = −Eₐ/R → Eₐ = −gradient × R.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-arrhenius-steps',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Steps: Using an Arrhenius Plot',
+        text: '<strong>1. Plot</strong> ln(k) on y-axis and 1/T on x-axis (T must be in Kelvin!)<br/><strong>2. Draw</strong> a best-fit straight line through the data<br/><strong>3. Calculate gradient</strong> = Δ(ln k) / Δ(1/T) → this will be negative<br/><strong>4. Use</strong> gradient = −Eₐ/R → Eₐ = −(gradient) × R<br/><strong>5. Convert</strong> Eₐ from J mol⁻¹ to kJ mol⁻¹ (÷ 1000)<br/><br/>⚠️ Ea is ALWAYS given in J mol⁻¹ in the equation — convert any kJ data first!'
+      },
+      terms: []
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────
@@ -112,30 +138,30 @@ export const note_chemistry_4_11_7 = {
       {
         id: 'cue-1',
         blockId: 'p-temp',
-        prompt: 'What are the only two factors that can change the numerical value of the rate constant (k)?'
+        prompt: 'What are the only two factors that can change the numerical value of the rate constant k?'
       },
       {
         id: 'cue-2',
         blockId: 'list-arrhenius-terms',
-        prompt: 'In the Arrhenius equation, what are the strict standard metric units for Temperature (T) and Activation Energy (Eₐ)?'
+        prompt: 'In the Arrhenius equation k = A·e^(−Eₐ/RT), what are the required units for T and Eₐ?'
       },
       {
         id: 'cue-3',
         blockId: 'eq-log',
-        prompt: 'Write down the logarithmic form of the Arrhenius equation in the layout y = mx + c.'
+        prompt: 'Write the logarithmic (y = mx + c) form of the Arrhenius equation. What does each term represent?'
       },
       {
         id: 'cue-4',
-        blockId: 'callout-graphical',
-        prompt: 'When plotting an Arrhenius graph of ln(k) against 1/T, what does the gradient of the straight line represent mathematically algebra-wise?'
+        blockId: 'svg-arrhenius',
+        prompt: 'An Arrhenius plot has a gradient of −9600 K. Calculate the activation energy Eₐ in kJ mol⁻¹. (R = 8.31 J K⁻¹ mol⁻¹)'
       },
       {
         id: 'cue-5',
-        blockId: 'bloom-gradient',
-        prompt: 'If the gradient (m) of an Arrhenius plot is found to be -10,000, how would you calculate the Activation Energy (Eₐ) in Joules?'
+        blockId: 'callout-arrhenius-steps',
+        prompt: 'Why must temperature be in Kelvin when using the Arrhenius equation? (Explain the consequence of using °C)'
       }
     ],
-    summaryText: 'The Arrhenius equation k = A * e^(-Ea/RT) proves that rate constants (k) increase exponentially with temperature. By taking the natural log, we get ln(k) = -(Ea/R)(1/T) + ln(A), which is a linear y = mx + c equation. Plotting ln(k) against 1/T gives a graph where the negative gradient equals -Ea/R, allowing Activation Energy to be calculated.',
+    summaryText: 'The Arrhenius equation k = A·e^(−Eₐ/RT) shows k increases exponentially with T. Taking ln: ln(k) = −(Eₐ/R)(1/T) + ln(A). Plotting ln(k) vs 1/T gives a straight line — gradient = −Eₐ/R, y-intercept = ln(A). Always use T in Kelvin and Eₐ in J mol⁻¹.',
     ready: false
   },
   evidence: []

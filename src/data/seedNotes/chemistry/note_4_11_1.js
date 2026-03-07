@@ -88,8 +88,8 @@ export const note_chemistry_4_11_1 = {
       id: 'eq-halflife',
       type: 'equation',
       data: {
-        latex: 'k = \\frac{\\ln(2)}{t_{1/2}}',
-        caption: 'Equation linking the rate constant (k) to half-life for a first-order reaction.'
+        html: 'k = <span class="nb-frac"><span class="nb-num">ln(2)</span><span class="nb-den">t½</span></span>',
+        caption: 'Equation linking the rate constant (k) to half-life for a first-order reaction. Note: ln(2) = 0.693.'
       },
       terms: []
     },
@@ -100,6 +100,30 @@ export const note_chemistry_4_11_1 = {
         style: 'worked',
         title: 'Example Calculation',
         text: '<strong>Q:</strong> From a concentration-time graph, the half-life of a first-order reaction is found to be 200 seconds. Calculate the rate constant, k, and state its units.<br/><br/><strong>A:</strong><br/>t½ = 200 s<br/>k = ln(2) / 200<br/>k = 0.693 / 200<br/>k = <strong>3.47 × 10⁻³ s⁻¹</strong>'
+      },
+      terms: []
+    },
+    // ── CONCENTRATION-TIME GRAPHS ──────────────────────────────────────────
+    {
+      id: 'h-conc-graphs',
+      type: 'heading',
+      data: { text: 'Concentration-Time Graphs for Each Order', level: 2 },
+      terms: []
+    },
+    {
+      id: 'svg-conc-time',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 555 195" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif"><defs><marker id="arrC" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#374151"/></marker></defs><rect x="0" y="0" width="555" height="195" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/><text x="277" y="17" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">Concentration-Time Graphs: Half-life Behaviour</text><g transform="translate(12,26)"><text x="84" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#4f46e5">Zero Order</text><line x1="32" y1="135" x2="32" y2="22" stroke="#374151" stroke-width="1.5" marker-end="url(#arrC)"/><line x1="32" y1="135" x2="158" y2="135" stroke="#374151" stroke-width="1.5" marker-end="url(#arrC)"/><text x="95" y="153" text-anchor="middle" font-size="10" fill="#64748b">Time</text><text x="14" y="83" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90,14,83)">[Conc]</text><line x1="37" y1="28" x2="148" y2="130" stroke="#4f46e5" stroke-width="2.5"/><text x="30" y="30" text-anchor="end" font-size="8" fill="#4f46e5">A₀</text><text x="95" y="99" text-anchor="middle" font-size="9" fill="#4f46e5">t½ <tspan font-weight="bold">decreases</tspan></text><text x="95" y="113" text-anchor="middle" font-size="9" fill="#4f46e5">over time ↓</text></g><g transform="translate(197,26)"><text x="82" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#059669">1st Order</text><line x1="32" y1="135" x2="32" y2="22" stroke="#374151" stroke-width="1.5" marker-end="url(#arrC)"/><line x1="32" y1="135" x2="158" y2="135" stroke="#374151" stroke-width="1.5" marker-end="url(#arrC)"/><text x="95" y="153" text-anchor="middle" font-size="10" fill="#64748b">Time</text><text x="14" y="83" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90,14,83)">[Conc]</text><path d="M37,28 C55,38 75,62 95,85 C112,103 130,120 150,130" fill="none" stroke="#059669" stroke-width="2.5"/><text x="30" y="30" text-anchor="end" font-size="8" fill="#059669">A₀</text><text x="30" y="57" text-anchor="end" font-size="8" fill="#059669">A₀/2</text><line x1="32" y1="55" x2="70" y2="55" stroke="#059669" stroke-width="1" stroke-dasharray="3,2"/><line x1="70" y1="55" x2="70" y2="135" stroke="#059669" stroke-width="1" stroke-dasharray="3,2"/><text x="30" y="83" text-anchor="end" font-size="8" fill="#059669">A₀/4</text><line x1="32" y1="81" x2="108" y2="81" stroke="#059669" stroke-width="1" stroke-dasharray="3,2"/><line x1="108" y1="81" x2="108" y2="135" stroke="#059669" stroke-width="1" stroke-dasharray="3,2"/><text x="51" y="148" text-anchor="middle" font-size="8" fill="#059669">t½</text><text x="89" y="148" text-anchor="middle" font-size="8" fill="#059669">t½</text><text x="95" y="103" text-anchor="middle" font-size="9" fill="#059669" font-weight="bold">t½₁ = t½₂ = CONSTANT</text><text x="95" y="116" text-anchor="middle" font-size="9" fill="#059669">→ proves 1st order!</text></g><g transform="translate(382,26)"><text x="82" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">Second Order</text><line x1="32" y1="135" x2="32" y2="22" stroke="#374151" stroke-width="1.5" marker-end="url(#arrC)"/><line x1="32" y1="135" x2="158" y2="135" stroke="#374151" stroke-width="1.5" marker-end="url(#arrC)"/><text x="95" y="153" text-anchor="middle" font-size="10" fill="#64748b">Time</text><text x="14" y="83" text-anchor="middle" font-size="10" fill="#64748b" transform="rotate(-90,14,83)">[Conc]</text><path d="M37,28 C42,52 52,85 70,108 C88,123 115,131 150,134" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="30" y="30" text-anchor="end" font-size="8" fill="#dc2626">A₀</text><text x="95" y="99" text-anchor="middle" font-size="9" fill="#dc2626">t½ <tspan font-weight="bold">increases</tspan></text><text x="95" y="113" text-anchor="middle" font-size="9" fill="#dc2626">over time ↑</text></g></svg>',
+        caption: 'Concentration-Time graph shapes for each order. The KEY diagnostic: only a first-order reaction shows a CONSTANT half-life. Measure two half-lives and compare them to prove the order.'
+      },
+      terms: []
+    },
+    {
+      id: 'summary-halflife',
+      type: 'summary',
+      data: {
+        text: 'Half-life diagnostic: Zero order → t½ decreases | First order → t½ is CONSTANT | Second order → t½ increases. Only first-order reactions obey k = ln(2)/t½.'
       },
       terms: []
     }
@@ -115,21 +139,26 @@ export const note_chemistry_4_11_1 = {
       },
       {
         id: 'cue-2',
-        blockId: 'table-halflife',
-        prompt: 'You look at a concentration-time graph. The first half-life takes 30 seconds. The second half-life takes 30 seconds. What is the order of the reaction?'
+        blockId: 'svg-conc-time',
+        prompt: 'From a [Conc] vs Time graph, the 1st half-life is 40s and the 2nd half-life is 40s. What order is the reaction? How do you know?'
       },
       {
         id: 'cue-3',
         blockId: 'warning-exam',
-        prompt: 'How must you prove a reaction is first-order using a concentration-time graph in an exam?'
+        prompt: 'How must you prove a reaction is first-order from a concentration-time graph in an exam? What must you show?'
       },
       {
         id: 'cue-4',
         blockId: 'eq-halflife',
-        prompt: 'What mathematical formula links the rate constant (k) to the half-life (t½) for a first-order reaction?'
+        prompt: 'Write the formula linking the rate constant k to half-life t½ for a first-order reaction. What are the units of k?'
+      },
+      {
+        id: 'cue-5',
+        blockId: 'bloom-calc',
+        prompt: 'The half-life of a first-order reaction is 500 s. Calculate the rate constant k (give units).'
       }
     ],
-    summaryText: 'Half-life is the time taken for concentration to halve. A CONSTANT half-life proves a reaction is first-order. For first-order reactions, k can be calculated using the formula k = ln(2) / t½.',
+    summaryText: 'Half-life is the time for concentration to halve. CONSTANT half-life → first order. Decreasing t½ → zero order. Increasing t½ → second order. For first order only: k = ln(2)/t½ = 0.693/t½.',
     ready: false
   },
   evidence: []
