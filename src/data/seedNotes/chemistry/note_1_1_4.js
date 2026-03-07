@@ -1,463 +1,231 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 1 · Subtopic 4
  * "Solution concentration calculations"
- * Source: wch11-1.pdf — Spec refs: 1.5
+ * Source: Pearson Edexcel IAL Chemistry — Sections 1B.2–1B.4, concentration context
  */
-
 export const note_chemistry_1_1_4 = {
-  blocks: [{
-    id: 'objective-block',
-    type: 'objective',
-    data: {
-      text: 'Calculate the concentration of a solution in mol dm⁻³ and g dm⁻³; interconvert between concentration units; use c = n/V in calculations. Use titration data (volumes and concentrations) to calculate the unknown concentration of an acid or alkali.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Calculate the concentration of a solution in mol dm⁻³ and g dm⁻³. Perform calculations involving volumes and concentrations, including titration calculations.' },
+      terms: []
     },
-    terms: []
-  },
-  // ── WHY CONCENTRATION? ────────────────────────────────────────────────
-  {
-    id: 'h-intro',
-    type: 'heading',
-    data: {
-      text: 'Why Measure Concentration?',
-      level: 2
+    {
+      id: 'h-conc',
+      type: 'heading',
+      data: { text: 'Concentration', level: 2 },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'p-intro',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Many chemical reactions occur in solution.", "To predict how much product forms or how much reactant is needed, chemists must know the concentration of each dissolved substance.", "Concentration tells us how much solute is packed into a given volume of solution."]
+    {
+      id: 'callout-conc',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Concentration Formula',
+        text: 'Concentration (mol dm⁻³) = amount (mol) ÷ volume (dm³)<br/><br/>c = n/V &nbsp;&nbsp; or equivalently &nbsp;&nbsp; n = c × V<br/><br/>Note: 1 dm³ = 1 litre = 1000 cm³. To convert cm³ to dm³, <strong>divide by 1000</strong>.'
+      },
+      terms: ['Concentration']
     },
-    terms: ['Concentration']
-  },
-  // ── UNITS & DEFINITIONS ───────────────────────────────────────────────
-  {
-    id: 'h-units',
-    type: 'heading',
-    data: {
-      text: 'Concentration Units',
-      level: 2
+    {
+      id: 'callout-conc-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 1: Calculate n from concentration and volume',
+        text: '<strong>Q: How many moles of NaOH are in 25.0 cm³ of 0.100 mol dm⁻³ NaOH?</strong><br/><br/>V = 25.0/1000 = 0.0250 dm³<br/>n = c × V = 0.100 × 0.0250 = <strong>2.50 × 10⁻³ mol</strong>'
+      },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'keybox-units',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Key Idea — Two Concentration Units',
-      text: 'Molar concentration (molarity): mol dm⁻³\n → Number of moles of solute per dm³ of solution\n\nMass concentration: g dm⁻³\n → Mass of solute in grams per dm³ of solution\n\n1 litre = 1 dm³ = 1000 cm³'
+    {
+      id: 'callout-conc-worked2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 2: Calculate concentration from titration',
+        text: '<strong>Q: 25.0 cm³ of HCl is neutralised by 23.5 cm³ of 0.100 mol dm⁻³ NaOH. Find [HCl].</strong><br/><br/>Equation: HCl + NaOH → NaCl + H₂O (1:1 ratio)<br/>n(NaOH) = 0.100 × (23.5/1000) = 2.35 × 10⁻³ mol<br/>n(HCl) = 2.35 × 10⁻³ mol (1:1 ratio)<br/>c(HCl) = n/V = 2.35 × 10⁻³ ÷ (25.0/1000) = <strong>0.0940 mol dm⁻³</strong>'
+      },
+      terms: []
     },
-    terms: ['Concentration']
-  }, {
-    id: 'table-vol',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Volume unit conversions',
-      headers: ['Unit', 'Equivalent', 'Conversion'],
-      rows: [['1 dm³', '1 litre (L)', 'Base unit for concentration'], ['1000 cm³', '1 dm³', 'cm³ ÷ 1000 = dm³'], ['1 mL', '1 cm³', 'Used interchangeably']]
+    {
+      id: 'callout-mr-titration',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 3: Finding Molar Mass (Mr) from Titration',
+        text: '<strong>Q: 2.50 g of an unknown monoprotic acid (HA) is dissolved to make 250 cm³ of solution. 25.0 cm³ of this requires 23.5 cm³ of 0.100 mol dm⁻³ NaOH for neutralisation. Find the Mr of HA.</strong><br/><br/>Equation: HA + NaOH → NaA + H₂O<br/><br/>Step 1: n(NaOH) = 0.100 × (23.5/1000) = 2.35 × 10⁻³ mol<br/>Step 2 (Mole ratio): n(HA) in 25.0 cm³ = 2.35 × 10⁻³ mol<br/>Step 3 (Scale up to full flask): n(HA) in 250 cm³ = 2.35 × 10⁻³ × 10 = 0.0235 mol<br/>Step 4 (Find Mr): Mr = m / n = 2.50 / 0.0235 = <strong>106.4 g mol⁻¹</strong>'
+      },
+      terms: []
     },
-    terms: []
-  },
-  // ── THE CONCENTRATION EQUATION ────────────────────────────────────────
-  {
-    id: 'h-eq',
-    type: 'heading',
-    data: {
-      text: 'The Concentration Equation',
-      level: 2
+    {
+      id: 'h-dilution',
+      type: 'heading',
+      data: { text: 'Dilution Calculations', level: 2 },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'eq-conc',
-    type: 'equation',
-    data: {
-      html: 'c = <span class="nb-frac"><span class="nb-num">n</span><span class="nb-den">V</span></span>&emsp;&emsp;n = c × V&emsp;&emsp;V = <span class="nb-frac"><span class="nb-num">n</span><span class="nb-den">c</span></span>',
-      caption: 'c = concentration (mol dm⁻³) · n = moles (mol) · V = volume (dm³)\nAlways convert cm³ → dm³ (÷ 1000) before using this equation.'
+    {
+      id: 'callout-dilution',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'The Dilution Principle: c₁V₁ = c₂V₂',
+        text: 'When you dilute a solution by adding water, the <strong>number of moles of solute stays exactly the same</strong> — only the volume changes.<br/><br/><strong>c₁ × V₁ = c₂ × V₂</strong><br/><br/>(Where c₁ and V₁ are the initial concentration and volume, and c₂ and V₂ are the final concentration and volume. Volumes can be in cm³ or dm³, as long as they are the <em>same unit</em> on both sides).'
+      },
+      terms: ['Dilution']
     },
-    terms: ['Concentration']
-  },
-  // SVG concentration triangle
-  {
-    id: 'svg-ctriangle',
-    type: 'svg',
-    data: {
-      caption: 'Concentration triangle — cover what you want to find',
-      svg: `<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Concentration triangle showing n at top, c bottom left, V bottom right">
-  <defs>
-    <linearGradient id="cTriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.15"/>
-    </linearGradient>
-  </defs>
-  <polygon points="150,20 20,170 280,170" fill="url(#cTriGrad)" stroke="#06b6d4" stroke-width="2.5"/>
-  <line x1="75" y1="115" x2="225" y2="115" stroke="#06b6d4" stroke-width="2" stroke-dasharray="5,3"/>
-  <line x1="150" y1="115" x2="150" y2="170" stroke="#06b6d4" stroke-width="2" stroke-dasharray="5,3"/>
-  <text x="150" y="76" text-anchor="middle" font-size="16" font-weight="bold" fill="#111">n</text>
-  <text x="150" y="91" text-anchor="middle" font-size="10" fill="#555">(moles / mol)</text>
-  <text x="80" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#0891b2">c</text>
-  <text x="80" y="164" text-anchor="middle" font-size="9" fill="#555">(mol dm⁻³)</text>
-  <text x="220" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed">V</text>
-  <text x="220" y="164" text-anchor="middle" font-size="9" fill="#555">(dm³)</text>
-  <text x="150" y="192" text-anchor="middle" font-size="10" fill="#374151">n = c × V  |  c = n ÷ V  |  V = n ÷ c</text>
-</svg>`
+    {
+      id: 'callout-dilution-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Dilution',
+        text: '<strong>Q: What volume of water must be added to 100 cm³ of 3.0 mol dm⁻³ NaOH to dilute it to 0.50 mol dm⁻³?</strong><br/><br/>c₁V₁ = c₂V₂<br/>3.0 × 100 = 0.50 × V₂<br/>300 = 0.50 × V₂<br/>V₂ = 600 cm³ (Final total volume)<br/><br/>Volume of water to add = Final volume − Initial volume<br/>Water to add = 600 − 100 = <strong>500 cm³</strong>'
+      },
+      terms: []
     },
-    terms: ['Concentration']
-  },
-  // ── INTERCONVERTING UNITS ─────────────────────────────────────────────
-  {
-    id: 'h-convert',
-    type: 'heading',
-    data: {
-      text: 'Converting Between mol dm⁻³ and g dm⁻³',
-      level: 2
+    {
+      id: 'h-back-titration',
+      type: 'heading',
+      data: { text: 'Back Titrations', level: 2 },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'eq-convert',
-    type: 'equation',
-    data: {
-      html: 'g dm<sup>−3</sup> = mol dm<sup>−3</sup> × M&emsp;&emsp;mol dm<sup>−3</sup> = <span class="nb-frac"><span class="nb-num">g dm<sup>−3</sup></span><span class="nb-den">M</span></span>',
-      caption: 'M = molar mass (g mol⁻¹). Molar mass is the conversion factor between the two units.'
+    {
+      id: 'callout-back-titration',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'What is a Back Titration?',
+        text: 'A back titration is used when a direct titration is impossible (e.g. the solid is insoluble, the reaction is too slow, or the substance is volatile).<br/><br/><strong>Method:</strong><br/>1. Add an accurately known <strong>EXCESS</strong> of a reagent to the solid.<br/>2. Allow the solid to react completely.<br/>3. Titrate the <strong>remaining unreacted excess</strong> against a standard solution.<br/>4. Calculate: (Moles of reagent initially added) − (Moles of unreacted excess) = Moles of reagent that actually reacted with the solid.'
+      },
+      terms: ['Back titration']
     },
-    terms: ['Concentration', 'Molar mass']
-  },
-  // ── WORKED EXAMPLES ───────────────────────────────────────────────────
-  {
-    id: 'h-worked',
-    type: 'heading',
-    data: {
-      text: 'Worked Examples',
-      level: 2
+    {
+      id: 'callout-back-titration-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Back Titration for Purity',
+        text: '<strong>Q: 2.00 g of impure CaCO₃ is reacted with 50.0 cm³ of 1.00 mol dm⁻³ HCl (an excess). The unreacted HCl required 25.0 cm³ of 0.500 mol dm⁻³ NaOH for neutralisation. Find the % purity of the CaCO₃.</strong><br/><br/>Step 1 (Total HCl added): n(HCl total) = 1.00 × 0.0500 = 0.0500 mol<br/>Step 2 (Excess HCl): n(NaOH) = 0.500 × 0.0250 = 0.0125 mol. Ratio 1:1, so unreacted HCl = 0.0125 mol.<br/>Step 3 (Reacted HCl): 0.0500 − 0.0125 = 0.0375 mol reacted with CaCO₃.<br/>Step 4 (Moles CaCO₃): CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂<br/>Ratio is 1:2, so n(CaCO₃) = 0.0375 / 2 = 0.01875 mol<br/>Step 5 (Mass & Purity): Pure mass = 0.01875 × 100.1 = 1.877 g<br/>% Purity = (1.877 / 2.00) × 100 = <strong>93.9%</strong>'
+      },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'callout-we1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 1 — Finding moles in a solution',
-      text: 'How many moles of NaOH are in 250 cm³ of 0.100 mol dm⁻³ NaOH solution?\n\nStep 1: Convert volume: 250 ÷ 1000 = 0.250 dm³\nStep 2: n = c × V = 0.100 × 0.250 = 0.0250 mol'
+    {
+      id: 'h-ppm',
+      type: 'heading',
+      data: { text: 'Parts Per Million (ppm)', level: 2 },
+      terms: []
     },
-    terms: ['Concentration']
-  }, {
-    id: 'callout-we2',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 2 — Finding concentration from mass',
-      text: 'What is the molar concentration of a solution containing 4.00 g of NaOH in 500 cm³?\n\nM(NaOH) = 23 + 16 + 1 = 40 g mol⁻¹\nStep 1: n = m ÷ M = 4.00 ÷ 40 = 0.100 mol\nStep 2: V = 500 ÷ 1000 = 0.500 dm³\nStep 3: c = n ÷ V = 0.100 ÷ 0.500 = 0.200 mol dm⁻³'
+    {
+      id: 'callout-ppm',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Calculating ppm',
+        text: 'For very dilute concentrations, we use parts per million (ppm). It is the mass of the solute divided by the total mass of the solution, multiplied by 1,000,000.<br/><br/>ppm = (Mass of Solute / Mass of Solution) × 10⁶<br/><br/><em>Example:</em> 2 g of lead in 2,000,000 g of engine fuel = (2 / 2,000,000) × 10⁶ = <strong>1 ppm</strong>.'
+      },
+      terms: ['Parts per million', 'ppm']
     },
-    terms: ['Concentration']
-  }, {
-    id: 'callout-we3',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 3 — Need to make 0.150 mol dm⁻³ NaCl (500 cm³)',
-      text: 'How many grams of NaCl are needed to make 500 cm³ of 0.150 mol dm⁻³ NaCl?\n\nM(NaCl) = 23 + 35.5 = 58.5 g mol⁻¹\nStep 1: V = 500 ÷ 1000 = 0.500 dm³\nStep 2: n = c × V = 0.150 × 0.500 = 0.0750 mol\nStep 3: m = n × M = 0.0750 × 58.5 = 4.39 g'
+    {
+      id: 'h-gdm3',
+      type: 'heading',
+      data: { text: 'Concentration in g dm⁻³', level: 2 },
+      terms: []
     },
-    terms: ['Concentration']
-  }, {
-    id: 'callout-we4',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 4 — Converting mol dm⁻³ to g dm⁻³',
-      text: 'Convert 0.500 mol dm⁻³ NaCl to g dm⁻³.\n\nM(NaCl) = 58.5 g mol⁻¹\ng dm⁻³ = mol dm⁻³ × M = 0.500 × 58.5 = 29.25 g dm⁻³'
+    {
+      id: 'p-gdm3',
+      type: 'paragraph',
+      data: { text: 'To convert between mol dm⁻³ and g dm⁻³, multiply by the molar mass (M):<br/><br/>Concentration in g dm⁻³ = Concentration in mol dm⁻³ × M' },
+      terms: []
     },
-    terms: ['Concentration']
-  },
-  // ── MAKING A SOLUTION (SODIUM CHLORIDE EXAMPLE) ───────────────────────
-  {
-    id: 'h-make',
-    type: 'heading',
-    data: {
-      text: 'Making a Solution of Known Concentration',
-      level: 2
+    {
+      id: 'callout-prec-tip',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Precipitation Reactions and Concentration',
+        text: 'Precipitation experiments can be used to deduce the mole ratio of reactants. By measuring volumes of two solutions of known concentration at which precipitation just stops, you can determine the stoichiometric ratio.<br/><br/>Example: Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)<br/>If 2.5 cm³ of 1.0 mol dm⁻³ Pb²⁺ reacts exactly with 5.0 cm³ of 1.0 mol dm⁻³ KI, the ratio is 1:2.'
+      },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'p-make',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["5 g of NaCl in about 500 cm\xB3 of water, then add more water to make the total volume up to exactly 1000 cm\xB3 (using a volumetric flask).", "5 g to 1000 cm\xB3 of water \u2014 that would give slightly more than 1 dm\xB3 of solution and a slightly lower concentration."]
+    {
+      id: 'h-ppm-gas',
+      type: 'heading',
+      data: { text: 'Parts Per Million (ppm) for Gases', level: 2 },
+      terms: []
     },
-    terms: ['Concentration']
-  }, {
-    id: 'keybox-make',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Key Idea — Molarity',
-      text: 'Molarity = Moles of solute ÷ Volume of solution (dm³)\n\nTo convert molarity to g dm⁻³: multiply by molar mass\nTo convert g dm⁻³ to molarity: divide by molar mass'
+    {
+      id: 'callout-ppm-gas',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Gas ppm: Volume / Volume',
+        text: 'For gases (e.g. pollutants in the atmosphere), ppm is calculated using <strong>volumes</strong> instead of masses:<br/><br/>ppm = (Volume of gas / Volume of air sample) × 10⁶<br/><br/>The units of both volumes must match (both cm³, both dm³, etc.). This formula is the same structure as mass ppm — only the quantity changes from mass to volume.<br/><br/><em>Common use: measuring pollutants like NO₂, SO₂, O₃ in the atmosphere.</em>'
+      },
+      terms: []
     },
-    terms: ['Concentration']
-  },
-  // ── SVG: concentration step animation ────────────────────────────────
-  {
-    id: 'svg-conc-flow',
-    type: 'svg',
-    data: {
-      caption: 'Flow for concentration calculations — mass ↔ moles ↔ concentration',
-      svg: `<svg viewBox="0 0 520 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram for concentration calculations">
-  <defs>
-    <marker id="arrC" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
-      <path d="M0,0 L7,3.5 L0,7 Z" fill="#0891b2"/>
-    </marker>
-  </defs>
-  <rect x="10"  y="30" width="110" height="50" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
-  <text x="65"  y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Mass (g)</text>
-  <text x="65"  y="68" text-anchor="middle" font-size="9"  fill="#92400e">m = n × M</text>
-
-  <rect x="200" y="30" width="120" height="50" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
-  <text x="260" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#3730a3">Moles (n)</text>
-  <text x="260" y="68" text-anchor="middle" font-size="9"  fill="#3730a3">n = m ÷ M</text>
-
-  <rect x="390" y="30" width="120" height="50" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="450" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">Concentration</text>
-  <text x="450" y="68" text-anchor="middle" font-size="9"  fill="#14532d">c = n ÷ V</text>
-
-  <line x1="120" y1="52" x2="198" y2="52" stroke="#0891b2" stroke-width="2" marker-end="url(#arrC)"/>
-  <text x="160"  y="46" text-anchor="middle" font-size="8" fill="#0891b2">÷ M</text>
-  <line x1="198" y1="62" x2="120" y2="62" stroke="#0891b2" stroke-width="2" marker-end="url(#arrC)"/>
-  <text x="160"  y="76" text-anchor="middle" font-size="8" fill="#0891b2">× M</text>
-
-  <line x1="320" y1="52" x2="388" y2="52" stroke="#16a34a" stroke-width="2" marker-end="url(#arrC)"/>
-  <text x="355"  y="46" text-anchor="middle" font-size="8" fill="#16a34a">÷ V</text>
-  <line x1="388" y1="62" x2="320" y2="62" stroke="#16a34a" stroke-width="2" marker-end="url(#arrC)"/>
-  <text x="355"  y="76" text-anchor="middle" font-size="8" fill="#16a34a">× V</text>
-
-  <text x="260"  y="16" text-anchor="middle" font-size="9" fill="#6b7280">Remember: V must be in dm³ (divide cm³ by 1000)</text>
-</svg>`
+    {
+      id: 'callout-ppm-gas-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Gas ppm Worked Examples',
+        text: '<strong>Q1: 1.5 dm³ of NO₂ in a 10,000 dm³ air sample. Find ppm.</strong><br/>ppm = (1.5 / 10,000) × 10⁶ = <strong>150 ppm</strong><br/><br/><strong>Q2: Ozone at 87 ppm in 5,000 dm³ of air. Find volume of O₃.</strong><br/>Rearrange: V(O₃) = (ppm × V_air) / 10⁶<br/>V(O₃) = (87 × 5,000) / 10⁶ = <strong>0.435 dm³</strong><br/><br/><em>Tip: If volumes are in different units (one in cm³, one in dm³), convert both to the same unit before substituting.</em>'
+      },
+      terms: []
     },
-    terms: ['Concentration']
-  },
-  // ── TITRATION CALCULATIONS ────────────────────────────────────────────
-  {
-    id: 'h-titration',
-    type: 'heading',
-    data: {
-      text: 'Titration Calculations',
-      level: 2
+    {
+      id: 'h-practice-ppm',
+      type: 'heading',
+      data: { text: 'Practice Questions', level: 2 },
+      terms: []
     },
-    terms: ['Titration']
-  }, {
-    id: 'p-titration',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["A titration is a technique used to find the unknown concentration of a solution (the analyte) by reacting it with a solution of known concentration (the standard solution).", "A measured volume of one solution is placed in a conical flask; the other is added from a burette until the indicator changes colour at the end point.", "The volume added from the burette is called the titre."]
+    {
+      id: 'callout-pq-ppm1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q1: Mass ppm (Solution)',
+        text: '<strong>Question:</strong> A sample of seawater contains 1.3 g of magnesium ions dissolved in 1.00 kg of seawater. Calculate the concentration of magnesium ions in ppm.<br/><br/><strong>Step 1 — Convert mass of solution to grams:</strong><br/>1.00 kg = 1000 g<br/><br/><strong>Step 2 — Apply ppm formula:</strong><br/>ppm = (m_solute / m_solution) × 10⁶<br/>ppm = (1.3 / 1000) × 10⁶ = <strong>1300 ppm</strong>'
+      },
+      terms: []
     },
-    terms: ['Titration']
-  }, {
-    id: 'callout-titration-key',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '💡 4-Step Titration Calculation Method',
-      text: 'Step 1 — Find moles of the KNOWN solution:\n  n = c × V   (remember: V must be in dm³)\n\nStep 2 — Use the mole ratio from the balanced equation to find moles of UNKNOWN\n\nStep 3 — Find concentration of UNKNOWN:\n  c = n ÷ V\n\nStep 4 — Check units: answer in mol dm⁻³ (or g dm⁻³ if asked)'
+    {
+      id: 'callout-pq-ppm2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q2: Gas ppm (Forward)',
+        text: '<strong>Question:</strong> A 500 dm³ sample of urban air contains 0.035 dm³ of sulfur dioxide (SO₂). Calculate the concentration of SO₂ in ppm.<br/><br/><strong>Step 1 — Check units match:</strong> Both values are in dm³ ✓<br/><br/><strong>Step 2 — Apply gas ppm formula:</strong><br/>ppm = (V_gas / V_air) × 10⁶<br/>ppm = (0.035 / 500) × 10⁶ = <strong>70 ppm</strong>'
+      },
+      terms: []
     },
-    terms: ['Titration', 'Concentration']
-  }, {
-    id: 'svg-titration',
-    type: 'svg',
-    data: {
-      caption: 'Acid-base titration setup — burette delivers standard solution into conical flask',
-      svg: `<svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Titration apparatus diagram">
-  <!-- Burette -->
-  <rect x="140" y="10" width="22" height="110" rx="3" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="151" y="7" text-anchor="middle" font-size="9" fill="#1e40af">Burette</text>
-  <!-- Graduation marks on burette -->
-  <line x1="140" y1="30" x2="148" y2="30" stroke="#3b82f6" stroke-width="1"/>
-  <line x1="140" y1="50" x2="148" y2="50" stroke="#3b82f6" stroke-width="1"/>
-  <line x1="140" y1="70" x2="148" y2="70" stroke="#3b82f6" stroke-width="1"/>
-  <line x1="140" y1="90" x2="148" y2="90" stroke="#3b82f6" stroke-width="1"/>
-  <text x="136" y="33" font-size="7" fill="#3b82f6" text-anchor="end">0</text>
-  <text x="136" y="93" font-size="7" fill="#3b82f6" text-anchor="end">25</text>
-  <!-- Tap -->
-  <rect x="136" y="118" width="30" height="8" rx="3" fill="#6366f1" stroke="#4338ca" stroke-width="1"/>
-  <text x="151" y="125" text-anchor="middle" font-size="7" fill="white">tap</text>
-  <!-- Liquid in burette -->
-  <rect x="141" y="11" width="20" height="60" rx="2" fill="#bfdbfe" opacity="0.7"/>
-  <!-- Drop from burette -->
-  <ellipse cx="151" cy="134" rx="3" ry="4" fill="#3b82f6" opacity="0.8"/>
-  <!-- Conical flask -->
-  <polygon points="130,210 190,210 175,145 145,145" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
-  <rect x="145" y="135" width="30" height="12" rx="2" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="160" y="187" text-anchor="middle" font-size="8" fill="#14532d">Analyte</text>
-  <text x="160" y="198" text-anchor="middle" font-size="7" fill="#14532d">(unknown conc.)</text>
-  <!-- White tile -->
-  <rect x="118" y="210" width="84" height="8" rx="2" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
-  <text x="160" y="218" text-anchor="middle" font-size="7" fill="#6b7280">white tile</text>
-  <!-- Labels -->
-  <text x="220" y="40" font-size="9" fill="#374151">Standard solution</text>
-  <text x="220" y="52" font-size="9" fill="#374151">(known conc.)</text>
-  <line x1="163" y1="45" x2="218" y2="45" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="220" y="170" font-size="9" fill="#374151">Indicator</text>
-  <text x="220" y="182" font-size="9" fill="#374151">changes colour</text>
-  <text x="220" y="194" font-size="9" fill="#374151">at end point</text>
-  <line x1="190" y1="180" x2="218" y2="180" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,2"/>
-</svg>`
-    },
-    terms: ['Titration']
-  }, {
-    id: 'callout-we-tit1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: '✏️ Worked Example 1 — Find concentration of NaOH',
-      text: '25.0 cm³ of NaOH solution required 18.40 cm³ of 0.100 mol dm⁻³ HCl to reach the end point.\nCalculate the concentration of the NaOH solution.\n\nEquation:  HCl(aq)  +  NaOH(aq)  →  NaCl(aq)  +  H₂O(l)\nMole ratio:  HCl : NaOH  =  1 : 1\n\n─────────────────────────────────────────\nStep 1 — Moles of HCl (known):\n  V(HCl) = 18.40 ÷ 1000 = 0.01840 dm³\n  n(HCl) = c × V = 0.100 × 0.01840 = 1.840 × 10⁻³ mol\n\nStep 2 — Moles of NaOH (mole ratio 1:1):\n  n(NaOH) = 1.840 × 10⁻³ mol\n\nStep 3 — Concentration of NaOH:\n  V(NaOH) = 25.0 ÷ 1000 = 0.0250 dm³\n  c(NaOH) = n ÷ V = 1.840 × 10⁻³ ÷ 0.0250 = 0.0736 mol dm⁻³\n\n∴ c(NaOH) = 0.0736 mol dm⁻³'
-    },
-    terms: ['Titration', 'Concentration']
-  }, {
-    id: 'callout-we-tit2',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: '✏️ Worked Example 2 — Different mole ratio (H₂SO₄ + NaOH)',
-      text: '20.0 cm³ of H₂SO₄ solution required 24.00 cm³ of 0.200 mol dm⁻³ NaOH to reach the end point.\nCalculate the concentration of the H₂SO₄ solution.\n\nEquation:  H₂SO₄(aq)  +  2NaOH(aq)  →  Na₂SO₄(aq)  +  2H₂O(l)\nMole ratio:  H₂SO₄ : NaOH  =  1 : 2\n\n─────────────────────────────────────────\nStep 1 — Moles of NaOH (known):\n  V(NaOH) = 24.00 ÷ 1000 = 0.02400 dm³\n  n(NaOH) = 0.200 × 0.02400 = 4.800 × 10⁻³ mol\n\nStep 2 — Moles of H₂SO₄ (mole ratio 1:2):\n  n(H₂SO₄) = 4.800 × 10⁻³ ÷ 2 = 2.400 × 10⁻³ mol\n\nStep 3 — Concentration of H₂SO₄:\n  V(H₂SO₄) = 20.0 ÷ 1000 = 0.0200 dm³\n  c(H₂SO₄) = 2.400 × 10⁻³ ÷ 0.0200 = 0.120 mol dm⁻³\n\n∴ c(H₂SO₄) = 0.120 mol dm⁻³'
-    },
-    terms: ['Titration', 'Concentration']
-  }, {
-    id: 'table-titration',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Common acid-base titration equations and mole ratios',
-      headers: ['Acid', 'Base', 'Equation', 'Mole ratio (acid:base)'],
-      rows: [['HCl', 'NaOH', 'HCl + NaOH → NaCl + H₂O', '1 : 1'], ['HCl', 'Na₂CO₃', '2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂', '2 : 1'], ['H₂SO₄', 'NaOH', 'H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O', '1 : 2'], ['H₂SO₄', 'KOH', 'H₂SO₄ + 2KOH → K₂SO₄ + 2H₂O', '1 : 2'], ['HNO₃', 'NaOH', 'HNO₃ + NaOH → NaNO₃ + H₂O', '1 : 1']]
-    },
-    terms: ['Titration']
-  }, {
-    id: 'callout-tit-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: '💬 Exam Tips — Titration Calculations',
-      text: 'Key things the examiner checks:\n  ✓ V converted to dm³ (÷ 1000) before using c = n/V\n  ✓ Balanced equation written and mole ratio stated\n  ✓ Mole ratio correctly applied (not always 1:1!)\n  ✓ Final answer to correct significant figures (usually 3 s.f.)\n  ✓ Units stated: mol dm⁻³\n\nAverage titre: use concordant titres (within 0.10 cm³ of each other).\nDo NOT include the rough titre in the average.'
-    },
-    terms: []
-  }, {
-    id: 'callout-tit-warning',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: '⚠️ Common Mistakes in Titration Calculations',
-      text: 'Forgetting to ÷ 1000 to convert cm³ to dm³ — this gives answers 1000× too large!\nUsing the wrong mole ratio — always write the balanced equation first.\nAveraging the rough titre with the accurate titres.\nConfusing which solution is in the burette and which is in the flask.'
-    },
-    terms: []
-  },
-  // ── EXAM CHECKLIST ────────────────────────────────────────────────────
-  {
-    id: 'h-tips',
-    type: 'heading',
-    data: {
-      text: 'Exam Tips',
-      level: 2
-    },
-    terms: []
-  }, {
-    id: 'checklist-tips',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'Always convert cm³ → dm³ by dividing by 1000 before using c = n/V',
-        checked: false
-      }, {
-        text: 'To find mass: use n = c × V first, then m = n × M',
-        checked: false
-      }, {
-        text: 'Molar mass converts between mol dm⁻³ and g dm⁻³',
-        checked: false
-      }, {
-        text: 'Titration: write the balanced equation and state the mole ratio first',
-        checked: false
-      }, {
-        text: 'Titration: find moles of KNOWN, apply mole ratio, then find concentration of UNKNOWN',
-        checked: false
-      }, {
-        text: 'Average titre: use only concordant titres (within 0.10 cm³) — exclude the rough',
-        checked: false
-      }, {
-        text: 'Show all working: write V in dm³, state c and n clearly',
-        checked: false
-      }]
-    },
-    terms: []
-  },
-  // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  // ── SUMMARY ───────────────────────────────────────────────────────────
-  // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Concentration tells us the "crowdedness" of solute particles in a given volume. A higher concentration means more particles per unit volume, leading to more frequent collisions and faster reactions. The distinction between mol dm⁻³ and g dm⁻³ matters because moles allow direct stoichiometric comparison, while mass does not.\n\nApply: You need to prepare 250 cm³ of 0.500 mol dm⁻³ K₂CO₃ (M = 138). Walk through each step: calculate moles needed, calculate mass needed, describe the practical steps using a balance and volumetric flask.\n\nAnalyze: In a titration, 25.0 cm³ of H₂SO₄ reacts with 20.0 cm³ of 0.200 mol dm⁻³ NaOH. If the student forgot that the mole ratio is 1:2 (not 1:1), how would their calculated concentration differ from the correct value? Quantify the error.\n\nEvaluate: Why is it essential to use concordant titre values rather than simply averaging all results? Discuss how using the rough titre would affect accuracy and reliability.'
-    },
-    terms: []
-  },
-  {
-    id: 'summary-block',
-    type: 'summary',
-    data: {
-      text: 'Solution concentration is measured in mol dm⁻³ (molarity) or g dm⁻³. Use c = n/V with volume in dm³ (divide cm³ by 1000). To find moles: n = c × V. To convert mol dm⁻³ to g dm⁻³, multiply by molar mass; divide to go the other way. Molarity equals moles of solute divided by volume of solution in dm³.'
-    },
-    terms: []
-  }],
+    {
+      id: 'callout-pq-ppm3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q3: Gas ppm (Reverse — Find Volume)',
+        text: '<strong>Question:</strong> The concentration of carbon monoxide (CO) in a room is 35 ppm. The room has a volume of 80 m³. Calculate the volume of CO in the room (in m³).<br/><br/><strong>Step 1 — Rearrange the formula:</strong><br/>V(CO) = (ppm × V_total) / 10⁶<br/><br/><strong>Step 2 — Substitute:</strong><br/>V(CO) = (35 × 80) / 10⁶ = 2800 / 10⁶ = <strong>2.8 × 10⁻³ m³</strong><br/><br/><em>Note: Units of both volumes must be the same — here both are m³, so no conversion needed.</em>'
+      },
+      terms: []
+    }
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'eq-conc',
-      prompt: 'State the concentration equation. What units must V be in?'
-    }, {
-      id: 'cue-2',
-      blockId: 'callout-we1',
-      prompt: 'How many moles of NaOH are in 250 cm³ of 0.100 mol dm⁻³ solution?'
-    }, {
-      id: 'cue-3',
-      blockId: 'callout-we2',
-      prompt: 'What is the concentration of 4.00 g NaOH dissolved in 500 cm³?'
-    }, {
-      id: 'cue-4',
-      blockId: 'eq-convert',
-      prompt: 'How do you convert mol dm⁻³ to g dm⁻³?'
-    }, {
-      id: 'cue-5',
-      blockId: 'table-vol',
-      prompt: 'How many cm³ are in 1 dm³?'
-    }, {
-      id: 'cue-6',
-      blockId: 'callout-titration-key',
-      prompt: 'State the 4-step method for a titration calculation.'
-    }, {
-      id: 'cue-7',
-      blockId: 'callout-we-tit1',
-      prompt: '25.0 cm³ NaOH required 18.40 cm³ of 0.100 mol dm⁻³ HCl. Calculate the concentration of NaOH.'
-    }, {
-      id: 'cue-8',
-      blockId: 'callout-we-tit2',
-      prompt: 'H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O. 20.0 cm³ H₂SO₄ reacts with 24.00 cm³ of 0.200 mol dm⁻³ NaOH. Find c(H₂SO₄).'
-    }],
-    summaryText: 'Solution concentration is measured in mol dm⁻³ (molarity) or g dm⁻³. Use c = n/V with volume in dm³ (divide cm³ by 1000). To find moles: n = c × V. To convert mol dm⁻³ to g dm⁻³, multiply by molar mass; divide to go the other way.',
+    cues: [
+      { id: 'c1', blockId: 'callout-conc', prompt: 'State the formula for concentration and give the units of each quantity.' },
+      { id: 'c1-dil', blockId: 'callout-dilution', prompt: 'State the formula used for dilution calculations and explain the core principle behind it.' },
+      { id: 'c1-back', blockId: 'callout-back-titration', prompt: 'What is a back titration and give three reasons why you might need to use one instead of a direct titration.' },
+      { id: 'c1-ppm', blockId: 'callout-ppm', prompt: 'State the formula for calculating parts per million (ppm) from mass data, and explain when it is used.' },
+      { id: 'c2', blockId: 'callout-conc', prompt: 'How do you convert a volume from cm³ to dm³?' },
+      { id: 'c3', blockId: 'callout-conc-worked2', prompt: 'In a titration, 25.0 cm³ HCl reacted with 20.0 cm³ of 0.200 mol dm⁻³ NaOH (1:1 ratio). Calculate [HCl] in mol dm⁻³.' },
+      { id: 'c4', blockId: 'callout-pq-ppm1', prompt: '1.3 g of Mg²⁺ is dissolved in 1.00 kg of seawater. Calculate the concentration in ppm.' },
+      { id: 'c5', blockId: 'callout-pq-ppm2', prompt: 'A 500 dm³ air sample contains 0.035 dm³ of SO₂. What is the SO₂ concentration in ppm?' },
+      { id: 'c6', blockId: 'callout-pq-ppm3', prompt: 'CO in a room is at 35 ppm. The room is 80 m³. Calculate the volume of CO.' }
+    ],
+    summaryText: 'c = n/V. Dilutions: c₁V₁ = c₂V₂ (moles stay constant, volume changes). Back titration: Add excess reagent, titrate the unreacted excess, subtract to find reacted amount (used for insoluble/slow/volatile reactants). g dm⁻³ = mol dm⁻³ × M. Mass ppm = (m_solute/m_solution) × 10⁶. Gas ppm = (V_gas/V_air) × 10⁶.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'CHSE Dept of Chemistry — Topic 1 Notes (wch11-1.pdf)',
-    detail: 'Section 1E: Concentration in mol dm⁻³ and g dm⁻³; NaCl molarity example; Exercise 10.',
-    year: '2023',
-    source: 'Centre for Higher Secondary Education',
-    tags: ['concentration', 'molarity', 'solution']
-  }, {
-    id: 'ev-2',
-    title: 'Pearson Edexcel IAL Chemistry Spec — Objective 1.5',
-    detail: 'Calculate concentration in mol dm⁻³ and g dm⁻³.',
-    year: '2024',
-    source: 'Pearson Edexcel',
-    tags: ['specification']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_1_4;

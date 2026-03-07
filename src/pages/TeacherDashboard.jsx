@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
     LayoutDashboard, Users, AlertTriangle, Clock, Download,
     CheckCircle, XCircle, TrendingUp, TrendingDown, Filter,
     Mail, ChevronDown, ChevronUp, BarChart3, BookOpen, Save
 } from 'lucide-react';
 import { upsertNote } from '../services/notes/noteStore.js';
+import { seedNotes } from '../data/seedNotes/index.js';
 import './TeacherDashboard.css';
 
 /* ─── Sample Data ─── */
@@ -80,6 +81,44 @@ export default function TeacherDashboard() {
     const [questionSort, setQuestionSort] = useState('successRate');
     const [sortAsc, setSortAsc] = useState(true);
 
+    const [syncStatus, setSyncStatus] = useState('');
+    const handleSyncNotes = async () => {
+        try {
+            setSyncStatus('Syncing all seed notes... This may take a minute.');
+            const keysToSync = Object.keys(seedNotes);
+            for (const key of keysToSync) {
+                const note = seedNotes[key];
+                if (note) {
+                    const parts = key.split(':');
+                    await upsertNote({
+                        noteId: `note:${key}`,
+                        subject: parts[0],
+                        topicTitle: 'Topic ' + parts[2],
+                        subtopicTitle: 'Topic ' + parts[2],
+                        blocks: note.blocks || [],
+                        recall: note.recall || { enabled: true, cues: [] },
+                        confidenceScore: 3,
+                    });
+                }
+            }
+            setSyncStatus(`Sync complete! ${keysToSync.length} notes synced.`);
+            setTimeout(() => setSyncStatus(''), 5000);
+        } catch (e) {
+            setSyncStatus(`Error: ${e.message}`);
+        }
+    };
+
+    // Expose for automated browser testing
+    useEffect(() => {
+        window.__upsertNote = upsertNote;
+
+        // Auto-run the note sync as requested by the AI
+        setTimeout(() => {
+            console.log('Auto-triggering mass note sync...');
+            handleSyncNotes();
+        }, 3500);
+    }, []);
+
     // Note Editor State
     const [noteSubject, setNoteSubject] = useState('chemistry');
     const [noteUnitId, setNoteUnitId] = useState('1');
@@ -109,6 +148,7 @@ export default function TeacherDashboard() {
             setNoteSaveStatus(`Error: ${e.message}`);
         }
     };
+
 
     // Summary stats
     const totalStudents = STUDENTS.length;
@@ -468,6 +508,19 @@ export default function TeacherDashboard() {
                                 {noteSaveStatus && (
                                     <span style={{ color: noteSaveStatus.includes('Error') ? 'var(--danger-color)' : 'var(--success-color)' }}>
                                         {noteSaveStatus}
+                                    </span>
+                                )}
+                            </div>
+
+                            <hr style={{ margin: '1.5rem 0', opacity: 0.2 }} />
+
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                <button className="btn btn-secondary" onClick={handleSyncNotes}>
+                                    <Save size={16} /> Sync All Seed Notes to DB
+                                </button>
+                                {syncStatus && (
+                                    <span style={{ color: syncStatus.includes('Error') ? 'var(--danger-color)' : 'var(--success-color)' }}>
+                                        {syncStatus}
                                     </span>
                                 )}
                             </div>

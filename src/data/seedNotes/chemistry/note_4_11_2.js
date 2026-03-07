@@ -1,174 +1,131 @@
+/**
+ * Seed note: Chemistry · Unit 4 · Topic 11 · Subtopic 2
+ * "Rate-data experimental methods"
+ */
+
 export const note_chemistry_4_11_2 = {
   blocks: [
     {
-      id: 'obj',
+      id: 'objective-block',
       type: 'objective',
-      data: { text: 'Learn experimental methods for measuring reaction rates: clock reactions, colorimetry, gas syringe, conductivity, and quenching.' },
-      terms: ['rate measurement', 'clock reaction', 'colorimetry', 'quenching'],
-    },
-    {
-      id: 'h-methods-intro',
-      type: 'heading',
-      data: { text: 'Experimental Methods for Rate Determination', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'p-methods-intro',
-      type: 'paragraph',
-      data: { text: 'Reaction rates are determined experimentally by monitoring how a physical or chemical property changes over time. Different methods are suited to different reactions. This subtopic covers five main techniques: clock reactions, colorimetry, gas syringe, conductivity, and quenching. Each has advantages and limitations depending on the reaction type.' },
-      terms: ['rate measurement'],
-    },
-    {
-      id: 'h-clock',
-      type: 'heading',
-      data: { text: 'Clock Reactions (Iodine Clock)', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'p-clock',
-      type: 'paragraph',
-      data: { text: 'A clock reaction reaches a sudden, visible endpoint after a measurable time. The most common is the iodine clock, where iodine is produced and then immediately reduced by a reducing agent (e.g., thiosulfate S₂O₃²⁻). When all the reducing agent is consumed, iodine turns a blue-black colour with starch (added as an indicator). The time from start to colour change is measured.' },
-      terms: ['clock reaction', 'iodine clock'],
-    },
-    {
-      id: 'callout-we1',
-      type: 'callout',
       data: {
-        style: 'worked',
-        title: 'Iodine Clock Example',
-        text: 'Reaction: S₂O₃²⁻ + 2H⁺ + I₂ → S₄O₆²⁻ + 2I⁻ (reducing I₂). A known amount of S₂O₃²⁻ is added. When it is consumed, the next I₂ produced reacts with starch to give blue-black colour. Time measured = time to produce a fixed amount of I₂, proportional to how fast I₂ is generated in the main reaction.',
+        text: 'Understand the different practical methods used to monitor the rate of a chemical reaction, including continuous monitoring and sampling.'
       },
-      terms: [],
+      terms: []
     },
+    // ── MONITORING RATE ────────────────────────────────────────────────────
     {
-      id: 'h-colorimetry',
+      id: 'h-monitoring',
       type: 'heading',
-      data: { text: 'Colorimetry', level: 2 },
-      terms: [],
+      data: { text: 'How do we measure the rate of a reaction?', level: 2 },
+      terms: []
     },
     {
-      id: 'p-colorimetry',
+      id: 'p-intro-rates',
       type: 'paragraph',
-      data: { text: 'Colorimetry measures the absorbance (or intensity) of light passing through a coloured solution. Using Beer–Lambert law, absorbance is proportional to concentration of the coloured species. A colorimeter continuously records absorbance vs time, giving a concentration vs time graph. Advantages: precise, continuous data; disadvantages: only for reactions involving coloured species (e.g., KMnO₄, Br₂, dyes).' },
-      terms: ['colorimetry'],
-    },
-    {
-      id: 'callout-key-colorimetry',
-      type: 'callout',
       data: {
-        style: 'key',
-        title: 'Beer–Lambert Law',
-        text: 'A = εlc, where A = absorbance, ε = molar absorptivity, l = path length (constant), c = concentration. Since A ∝ c, measuring absorbance directly gives concentration changes.',
+        text: 'To calculate the rate, we must measure how the concentration of a reactant or product changes over time. We cannot "see" individual molecules reacting, so we must monitor a <strong>measurable physical or chemical property</strong> that changes as the reaction progresses.'
       },
-      terms: [],
+      terms: []
     },
+    // ── CONTINUOUS PHYSICAL METHODS ────────────────────────────────────────
     {
-      id: 'h-gas-syringe',
+      id: 'h-continuous',
       type: 'heading',
-      data: { text: 'Gas Syringe Method', level: 2 },
-      terms: [],
+      data: { text: 'Continuous Monitoring (Physical Methods)', level: 2 },
+      terms: []
     },
     {
-      id: 'p-gas-syringe',
+      id: 'p-continuous',
       type: 'paragraph',
-      data: { text: 'For reactions producing a gas, a gas syringe directly measures the volume of gas produced against time. The reaction mixture is in a flask, gas is collected in the syringe. As reaction proceeds, gas volume increases. Plotting volume vs time gives a curve from which the rate can be calculated (rate ∝ Δvolume/Δtime). Advantages: simple, direct; disadvantages: inaccurate at high pressures, difficult to maintain constant temperature.' },
-      terms: ['gas syringe'],
-    },
-    {
-      id: 'h-conductivity',
-      type: 'heading',
-      data: { text: 'Conductivity Method', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'p-conductivity',
-      type: 'paragraph',
-      data: { text: 'Conductivity measures the ability of a solution to conduct electricity, which depends on the concentration and types of ions present. If a reaction changes ion concentrations (e.g., acid-base reactions, precipitation), conductivity changes. A conductivity probe continuously records conductivity vs time. Since conductivity is proportional to ion concentration, this gives reaction progress data. Advantages: works for reactions without colour; disadvantages: temperature sensitive.' },
-      terms: ['conductivity'],
-    },
-    {
-      id: 'h-quenching',
-      type: 'heading',
-      data: { text: 'Quenching Method', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'p-quenching',
-      type: 'paragraph',
-      data: { text: 'In quenching, the reaction is rapidly stopped (quenched) at specific time intervals by removing heat, adding a reagent that consumes reactants, or diluting drastically. At each time point, the reaction mixture is analysed (e.g., titrated, weighed, or chromatographed) to determine concentrations. Multiple identical reaction vessels are quenched at different times, and a concentration vs time graph is constructed. Advantages: works for any reaction; disadvantages: labour-intensive, requires care to truly stop the reaction.' },
-      terms: ['quenching'],
+      data: {
+        text: 'Physical methods are usually the best choice because they are "continuous." You can set up a sensor (like a gas syringe or a colorimeter) to take readings automatically without interfering with the reaction mixture.'
+      },
+      terms: []
     },
     {
       id: 'table-methods',
       type: 'comparisonTable',
       data: {
-        headers: ['Method', 'Suitable for...', 'Measured property', 'Advantages', 'Limitations'],
+        caption: 'Common Continuous Monitoring Methods',
+        headers: ['Method', 'When to use it', 'Example Reaction'],
         rows: [
-          ['Clock', 'Reactions producing a timed colour change', 'Time to endpoint', 'Simple, visual, fast', 'Only one data point per run; less precise'],
-          ['Colorimetry', 'Reactions involving coloured species', 'Absorbance (∝ [A])', 'Continuous data, precise, digital', 'Need coloured reactant/product'],
-          ['Gas syringe', 'Reactions producing gas', 'Gas volume', 'Direct, simple apparatus', 'Pressure effects, temperature control difficult'],
-          ['Conductivity', 'Reactions changing ion concentration', 'Conductivity (∝ [A])', 'Non-invasive, continuous', 'Temperature sensitive, requires calibration'],
-          ['Quenching', 'Any reaction', 'Concentration (via titration, etc.)', 'Universal, accurate analysis', 'Time-consuming, multiple vessels needed'],
-        ],
-        caption: 'Comparison of rate measurement methods',
+          ['<strong>Gas Volume</strong> (Gas Syringe)', 'When one of the products is a gas.', 'CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + <strong>CO₂(g)</strong>'],
+          ['<strong>Mass Loss</strong> (Top-pan balance)', 'When a heavy gas (like CO₂) is produced and escapes the open flask.', 'Measuring the decreasing mass of the CaCO₃ + HCl reaction flask over time.'],
+          ['<strong>Colorimetry</strong>', 'When one of the reactants or products is coloured. A colorimeter measures absorbance of light.', 'Reactions involving Iodine (<strong>I₂</strong> - brown) or Transition Metals (e.g., Manganate(VII) <strong>MnO₄⁻</strong> - deep purple).'],
+          ['<strong>pH tracking</strong> (pH meter)', 'When H⁺ or OH⁻ ions are reacting or being produced, causing a massive change in pH.', 'Iodination of propanone produces H⁺ ions, making the solution increasingly acidic.']
+        ]
       },
-      terms: [],
+      terms: ['Colorimetry']
+    },
+    // ── CHEMICAL SAMPLING (TITRATION) ──────────────────────────────────────
+    {
+      id: 'h-sampling',
+      type: 'heading',
+      data: { text: 'Sampling and Quenching (Chemical Method)', level: 2 },
+      terms: []
     },
     {
-      id: 'callout-tip',
-      type: 'callout',
+      id: 'p-sampling',
+      type: 'paragraph',
       data: {
-        style: 'tip',
-        title: 'Choosing a Method',
-        text: 'Clock reactions are fastest for quick estimates. Colorimetry gives continuous, precise data. Gas syringe is simple but less accurate. Conductivity avoids colour requirement. Quenching is versatile but labour-intensive. Choose based on reaction type and required precision.',
+        text: 'If there is no physical property that changes cleanly, we must use a chemical method (usually a titration). Because titrations take several minutes to perform, we cannot titrate the mixture while it is still reacting! We must use the <strong>Quenching method</strong>.'
       },
-      terms: [],
+      terms: ['Quenching']
     },
     {
-      id: 'checklist',
-      type: 'checklist',
+      id: 'list-quenching',
+      type: 'list',
       data: {
+        style: 'ordered',
         items: [
-          { text: 'I can describe how clock reactions work and give an example', checked: false },
-          { text: 'I can explain colorimetry and Beer–Lambert law', checked: false },
-          { text: 'I can describe gas syringe and conductivity methods', checked: false },
-          { text: 'I can explain quenching and why multiple vessels are needed', checked: false },
-          { text: 'I can choose an appropriate method for different reaction types', checked: false },
-        ],
-      },
-      terms: [],
-    },
-    // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
-    {
-      id: 'bloom-understand',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Different methods suit different reactions — colorimetry for colour changes, gas syringe for gas production, conductivity for ionic concentration changes.\n\nApply: Design an experiment to measure the rate of Mg + HCl using gas collection. State the measurements needed.\n\nAnalyze: Compare continuous monitoring vs clock reactions. Which gives more data points and why?\n\nEvaluate: A clock reaction measures the time for a fixed amount of product. Does this give a true initial rate? Justify.'
+          'At regular intervals (e.g. every 5 minutes), extract a small, known volume (aliquot) of the reaction mixture using a pipette.',
+          'Immediately <strong>QUENCH</strong> the sample to completely stop the reaction.',
+          'Once quenched, the concentration of the sample is "frozen in time." You can now perform a titration at your own pace to determine the concentration of the reactant/product at that exact 5-minute mark.'
+        ]
       },
       terms: []
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: { text: 'Five main rate measurement methods: clock reactions (iodine clock — visible endpoint), colorimetry (absorbance ∝ [A]), gas syringe (volume of gas produced), conductivity (ion concentration changes), quenching (stop reaction, analyse later). Each suited to different reaction types.' },
-      terms: [],
-    },
+      id: 'callout-how-to-quench',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'How do you "Quench" a reaction?',
+        text: 'Quenching means stopping the reaction instantly. This is usually done by:<br/>1. Plunging the sample into a huge volume of <strong>ice-cold water</strong> (rapid cooling and dilution).<br/>2. Adding a chemical that rapidly reacts with one of the reactants, destroying it (e.g., adding sodium hydrogencarbonate to neutralise an acid catalyst).'
+      },
+      terms: []
+    }
   ],
+  // ── RECALL CUES ────────────────────────────────────────────────────────
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'p-clock', prompt: 'Explain how an iodine clock reaction works and what colour change signals the endpoint.' },
-      { id: 'cue-2', blockId: 'callout-key-colorimetry', prompt: 'State Beer–Lambert law and explain why colorimetry gives concentration data.' },
-      { id: 'cue-3', blockId: 'p-gas-syringe', prompt: 'Describe the gas syringe method and name one advantage and one limitation.' },
-      { id: 'cue-4', blockId: 'p-conductivity', prompt: 'Why does conductivity change in a reaction, and when is this method most useful?' },
-      { id: 'cue-5', blockId: 'p-quenching', prompt: 'Explain the quenching method and why multiple identical vessels are needed.' },
+      {
+        id: 'cue-1',
+        blockId: 'table-methods',
+        prompt: 'Name three physical methods for continuously monitoring the rate of a reaction.'
+      },
+      {
+        id: 'cue-2',
+        blockId: 'table-methods',
+        prompt: 'What piece of equipment would you use to monitor the concentration of Iodine (I₂) in a reaction mixture over time without extracting samples?'
+      },
+      {
+        id: 'cue-3',
+        blockId: 'p-sampling',
+        prompt: 'Define the term "Quenching" in the context of rate experiments.'
+      },
+      {
+        id: 'cue-4',
+        blockId: 'callout-how-to-quench',
+        prompt: 'Describe two methods by which a reaction sample can be quenched.'
+      }
     ],
-    summaryText: 'Clock reactions: timed colour change (iodine clock). Colorimetry: A = εlc, absorbance ∝ [A]. Gas syringe: measures gas volume. Conductivity: measures ion concentration changes. Quenching: stop reaction at intervals, analyse concentration.',
-    ready: false,
+    summaryText: 'Continuous physical methods (gas volume, mass loss, colorimetry) are preferred as they don\'t disturb the reaction. If chemical titration is required, samples must be immediately "quenched" (by ice or neutralizing a catalyst) to instantly stop the reaction before titrating.',
+    ready: false
   },
-  evidence: [
-    { id: 'ev-1', title: 'Experimental Methods in Kinetics — Royal Society of Chemistry', detail: 'Overview of practical techniques for measuring reaction rates in A-level chemistry.', year: '2020', source: 'rsc.org/learn-chemistry/resources/rates-of-reaction', tags: ['kinetics', 'experimental methods', 'rate measurement'] },
-  ],
+  evidence: []
 };
+
+export default note_chemistry_4_11_2;

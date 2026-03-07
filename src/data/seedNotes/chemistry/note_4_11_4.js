@@ -1,190 +1,123 @@
+/**
+ * Seed note: Chemistry · Unit 4 · Topic 11 · Subtopic 4
+ * "Deducing order from data"
+ */
+
 export const note_chemistry_4_11_4 = {
   blocks: [
     {
-      id: 'obj',
+      id: 'objective-block',
       type: 'objective',
-      data: { text: 'Learn how to deduce the order of reaction from initial-rate data by comparing how rates change when concentrations are varied.' },
-      terms: ['order deduction', 'initial rates', 'concentration variation'],
+      data: {
+        text: 'Provide rules and worked examples for deducing reaction orders from tables of initial rate data.'
+      },
+      terms: []
     },
+    // ── THE METHOD ─────────────────────────────────────────────────────────
     {
-      id: 'h-comparing-rates',
+      id: 'h-method',
       type: 'heading',
-      data: { text: 'Comparing Initial Rates', level: 2 },
-      terms: [],
+      data: { text: 'How to Deduce Orders from a Table', level: 2 },
+      terms: []
     },
     {
-      id: 'p-comparing',
+      id: 'p-intro',
       type: 'paragraph',
-      data: { text: 'To deduce order from initial-rate data, we perform experiments where we vary the initial concentration of one reactant (keeping others constant) and measure how the initial rate changes. By comparing the rate changes to concentration changes, we can determine the order. For example, if doubling [A] doubles the rate, order is 1. If doubling [A] quadruples the rate, order is 2. If rate is unaffected by [A], order is 0.' },
-      terms: ['order deduction'],
-    },
-    {
-      id: 'h-doubling-effect',
-      type: 'heading',
-      data: { text: 'Doubling Concentration Effect Table', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'table-doubling',
-      type: 'comparisonTable',
       data: {
-        headers: ['Order', 'When [A] doubles', 'Effect on rate', 'Calculation'],
-        rows: [
-          ['0', '[A] → 2[A]', 'No change (rate stays same)', 'rate = k (no [A] term)'],
-          ['1', '[A] → 2[A]', 'Rate × 2', 'rate = k(2[A]) = 2k[A]'],
-          ['2', '[A] → 2[A]', 'Rate × 4 (= 2²)', 'rate = k(2[A])² = 4k[A]²'],
-          ['1.5 (e.g.)', '[A] → 2[A]', 'Rate × 2^1.5 ≈ 2.83', 'rate = k(2[A])^1.5 = 2^1.5 × k[A]^1.5'],
-        ],
-        caption: 'Effect on rate when concentration is doubled, for different orders',
-      },
-      terms: [],
-    },
-    {
-      id: 'callout-key-pattern',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'The Pattern',
-        text: 'If [A] is multiplied by a factor f, the rate is multiplied by f^m, where m is the order. For example: [A] × 3 → rate × 3^m. [A] × 2 → rate × 2^m. This is the key to deducing order from concentration and rate comparisons.',
-      },
-      terms: [],
-    },
-    {
-      id: 'h-worked-ex1',
-      type: 'heading',
-      data: { text: 'Worked Example 1: Finding Order from Doubling', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'callout-we1',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Example: Order with respect to A',
-        text: 'Experiments for reaction A + B → products: (1) [A]₀ = 0.10 mol dm⁻³, [B]₀ = 0.20 mol dm⁻³, initial rate = 0.008 mol dm⁻³ s⁻¹. (2) [A]₀ = 0.20 mol dm⁻³, [B]₀ = 0.20 mol dm⁻³, initial rate = 0.032 mol dm⁻³ s⁻¹. [A] doubled, [B] constant. Rate changed from 0.008 to 0.032: factor = 0.032/0.008 = 4 = 2². Therefore, order with respect to A is 2.',
-      },
-      terms: [],
-    },
-    {
-      id: 'h-worked-ex2',
-      type: 'heading',
-      data: { text: 'Worked Example 2: Finding Overall Order', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'callout-we2',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Example: Order with respect to B',
-        text: 'Using same reaction. From Expt 1: [B]₀ = 0.20, rate = 0.008. New expt: [A]₀ = 0.10, [B]₀ = 0.40, rate = 0.016. [B] doubled, [A] constant. Rate doubled: factor = 2 = 2¹. Order with respect to B is 1. Overall order = 2 + 1 = 3. Rate equation: rate = k[A]²[B].',
-      },
-      terms: [],
-    },
-    {
-      id: 'h-step-by-step',
-      type: 'heading',
-      data: { text: 'Step-by-Step Procedure', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'list-steps',
-      type: 'list',
-      data: {
-        style: 'numbered',
-        items: [
-          'From initial-rate data, select two experiments that differ in the concentration of only one reactant.',
-          'Calculate the factor by which that concentration changed: factor = [A]₂ / [A]₁.',
-          'Calculate the factor by which the rate changed: factor = rate₂ / rate₁.',
-          'Use: rate factor = (concentration factor)^m, so m = log(rate factor) / log(concentration factor).',
-          'Repeat for each reactant to find all individual orders.',
-          'Sum all orders to find overall order.',
-          'Write the rate equation: rate = k[A]^m[B]^n...',
-        ],
-      },
-      terms: [],
-    },
-    {
-      id: 'callout-formula',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Key Formula',
-        text: 'Order m = log(rate₂/rate₁) / log([A]₂/[A]₁). Alternatively, if concentration doubles: order m such that 2^m = rate factor.',
-      },
-      terms: [],
-    },
-    {
-      id: 'h-table-example',
-      type: 'heading',
-      data: { text: 'Full Data Analysis Table', level: 2 },
-      terms: [],
-    },
-    {
-      id: 'table-analysis',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Expt', '[A] / mol dm⁻³', '[B] / mol dm⁻³', 'Initial rate / mol dm⁻³ s⁻¹'],
-        rows: [
-          ['1', '0.10', '0.10', '0.001'],
-          ['2', '0.20', '0.10', '0.004'],
-          ['3', '0.10', '0.20', '0.002'],
-        ],
-        caption: 'Example initial-rate data for order deduction',
-      },
-      terms: [],
-    },
-    {
-      id: 'p-analysis',
-      type: 'paragraph',
-      data: { text: 'Analysis of table above: (1) Expt 1 → 2: [A] × 2, [B] constant. Rate × 4. Order w.r.t. A = 2. (2) Expt 1 → 3: [A] constant, [B] × 2. Rate × 2. Order w.r.t. B = 1. Overall order = 3. Rate equation: rate = k[A]²[B].' },
-      terms: [],
-    },
-    {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'I understand the principle that rate ∝ (concentration)^m', checked: false },
-          { text: 'I can use doubling tables to find order quickly', checked: false },
-          { text: 'I can apply the formula m = log(rate₂/rate₁) / log([A]₂/[A]₁)', checked: false },
-          { text: 'I can find the order with respect to each reactant from data', checked: false },
-          { text: 'I can write the complete rate equation and find overall order', checked: false },
-        ],
-      },
-      terms: [],
-    },
-    // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
-    {
-      id: 'bloom-understand',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Comparing ratios of rate change to concentration change reveals the order. If rate doubles when concentration doubles, order = 1; if rate quadruples, order = 2.\n\nApply: Three experiments give rates 2.0, 8.0, and 2.0 × 10⁻³ when [X] = 0.1, 0.2, 0.1 and [Y] = 0.1, 0.1, 0.2. Deduce orders.\n\nAnalyze: What happens if two concentrations change simultaneously? Can you still deduce orders?\n\nEvaluate: Experimental errors in rate measurements can lead to non-integer orders. How should you handle this?'
+        text: 'Exams frequently provide a table showing the results of several different "Initial Rate" experiments. For each experiment, the starting concentration of one or more reactants has been changed. <br/><br/>Your goal is to compare two experiments where <strong>only one reactant\'s concentration changes</strong> while all others remain perfectly constant.'
       },
       terms: []
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: { text: 'Deducing order: compare initial rates for different concentrations. Rate factor = (concentration factor)^m. If [A] doubles and rate × 4, order = 2. If [A] × 3 and rate × 9, order = 2. Use m = log(rate₂/rate₁) / log([A]₂/[A]₁).' },
-      terms: [],
+      id: 'list-rules',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Rule 1 (Zero Order):</strong> If you double [A], and the initial rate <strong>does not change</strong>, the reaction is zero order with respect to A.',
+          '<strong>Rule 2 (First Order):</strong> If you double [A], and the initial rate <strong>doubles (×2)</strong>, the reaction is first order with respect to A.',
+          '<strong>Rule 3 (Second Order):</strong> If you double [A], and the initial rate <strong>quadruples (×4)</strong>, the reaction is second order with respect to A.'
+        ]
+      },
+      terms: []
     },
+    // ── WORKED EXAMPLE ─────────────────────────────────────────────────────
+    {
+      id: 'h-worked',
+      type: 'heading',
+      data: { text: 'Worked Example: Deducing the Rate Equation', level: 2 },
+      terms: []
+    },
+    {
+      id: 'bloom-table',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Data Table Analysis',
+        text: `<table style="width:100%; text-align:left; border-collapse:collapse; margin-top:10px;">
+  <tr style="border-bottom: 1px solid #ccc;">
+    <th style="padding: 5px;">Experiment</th>
+    <th style="padding: 5px;">[A] (mol dm⁻³)</th>
+    <th style="padding: 5px;">[B] (mol dm⁻³)</th>
+    <th style="padding: 5px;">Initial Rate (mol dm⁻³ s⁻¹)</th>
+  </tr>
+  <tr>
+    <td style="padding: 5px;">1</td>
+    <td style="padding: 5px;">0.10</td>
+    <td style="padding: 5px;">0.20</td>
+    <td style="padding: 5px;">1.5 × 10⁻³</td>
+  </tr>
+  <tr>
+    <td style="padding: 5px;">2</td>
+    <td style="padding: 5px;">0.20</td>
+    <td style="padding: 5px;">0.20</td>
+    <td style="padding: 5px;">3.0 × 10⁻³</td>
+  </tr>
+  <tr>
+    <td style="padding: 5px;">3</td>
+    <td style="padding: 5px;">0.20</td>
+    <td style="padding: 5px;">0.40</td>
+    <td style="padding: 5px;">1.2 × 10⁻²</td>
+  </tr>
+</table><br/><strong>Step 1: Find the order w.r.t [A]</strong><br/>Compare Exp 1 and Exp 2. The concentration of [B] is held constant at 0.20.<br/>The concentration of [A] has doubled (0.10 → 0.20).<br/>The initial rate has also doubled (1.5 × 10⁻³ → 3.0 × 10⁻³).<br/>Because Rate ∝ [A]¹, the reaction is <strong>First Order</strong> with respect to A.<br/><br/><strong>Step 2: Find the order w.r.t [B]</strong><br/>Compare Exp 2 and Exp 3. The concentration of [A] is held constant at 0.20.<br/>The concentration of [B] has doubled (0.20 → 0.40).<br/>The initial rate has quadrupled (3.0 × 10⁻³ → 12.0 × 10⁻³).<br/>Because Rate ∝ [B]², the reaction is <strong>Second Order</strong> with respect to B.<br/><br/><strong>Step 3: Construct the Rate Equation</strong><br/>Rate = k[A]¹[B]²`
+      },
+      terms: []
+    },
+    {
+      id: 'warning-complex',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Exam Trick: No Constant Variables!',
+        text: 'Sometimes, you cannot find two experiments where [A] changes but [B] is completely constant! If this happens, you must calculate the effect of [A] first, mathematically account for how MUCH the rate was supposed to change due to [A], and then attribute any "extra" change in the rate to [B].'
+      },
+      terms: []
+    }
   ],
+  // ── RECALL CUES ────────────────────────────────────────────────────────
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'callout-key-pattern', prompt: 'If [A] is multiplied by factor f, by what factor does the rate change for order m?' },
-      { id: 'cue-2', blockId: 'table-doubling', prompt: 'If [A] doubles, by what factor does the rate change for order 0, 1, and 2?' },
-      { id: 'cue-3', blockId: 'callout-we1', prompt: 'In a worked example, [A] doubled and rate × 4. What is the order with respect to A?' },
-      { id: 'cue-4', blockId: 'callout-formula', prompt: 'Write the formula relating order m to rate and concentration factors.' },
-      { id: 'cue-5', blockId: 'list-steps', prompt: 'Outline the step-by-step procedure to deduce order from initial-rate data.' },
+      {
+        id: 'cue-1',
+        blockId: 'list-rules',
+        prompt: 'In an initial rate experiment, the concentration of reactant [X] is tripled, while all other reactants are held constant. The rate does not change at all. What is the order of reaction with respect to [X]?'
+      },
+      {
+        id: 'cue-2',
+        blockId: 'list-rules',
+        prompt: 'If the concentration of a reactant is tripled (×3), and the overall rate increases by a factor of 9 (×9), what is the order of reaction with respect to that reactant?'
+      },
+      {
+        id: 'cue-3',
+        blockId: 'bloom-table',
+        prompt: 'When deducing the order for reactant [A] from a data table, why must you select two experiments where the concentration of reactant [B] does not change?'
+      }
     ],
-    summaryText: 'Rate factor = (concentration factor)^m. If [A] doubles: order 0 → rate same; order 1 → rate × 2; order 2 → rate × 4. Formula: m = log(rate₂/rate₁) / log([A]₂/[A]₁).',
-    ready: false,
+    summaryText: 'To deduce order from a data table, isolate experiments where only one reactant’s concentration changes. If doubling the concentration: does nothing = Zero Order. Doubles the rate (×2) = First Order. Quadruples the rate (×4) = Second Order.',
+    ready: false
   },
-  evidence: [
-    { id: 'ev-1', title: 'Deducing Orders from Rate Data — Chemguide', detail: 'Step-by-step guide to determining reaction order from experimental initial-rate measurements.', year: '2013', source: 'chemguide.co.uk/physical/basicrates/determineorder.html', tags: ['kinetics', 'order', 'rate data'] },
-  ],
+  evidence: []
 };
+
+export default note_chemistry_4_11_4;

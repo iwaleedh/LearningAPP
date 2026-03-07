@@ -1,213 +1,97 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 5
+ * "Free radical substitution of alkanes"
+ * Source: Pearson Edexcel IAL Chemistry — Section 4B.4
+ */
 export const note_chemistry_1_4_5 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Describe homolytic and heterolytic bond fission; explain how each type of fission leads to different reactive intermediates.'
-    }
-  }, {
-    id: 'h-intro',
-    type: 'heading',
-    data: {
-      text: 'Bond Fission — Introduction',
-      level: 2
-    }
-  }, {
-    id: 'p-intro',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["When a covalent bond breaks during a chemical reaction, the two bonding electrons can be distributed between the two fragments in two fundamentally different ways.", "The way a bond breaks determines what type of reactive intermediate is formed and what mechanism follows."]
-    }
-  }, {
-    id: 'h-homolytic',
-    type: 'heading',
-    data: {
-      text: 'Homolytic Fission',
-      level: 2
-    }
-  }, {
-    id: 'callout-key-homo',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Homolytic Fission',
-      text: 'Each atom receives ONE of the two bonding electrons. This produces two electrically neutral species called FREE RADICALS, each with one unpaired electron. Shown with a single-headed (fish-hook) arrow (↷) in mechanisms.'
-    }
-  }, {
-    id: 'eq-homo',
-    type: 'equation',
-    data: {
-      html: 'A–B → A• + B•',
-      caption: 'Homolytic fission: each fragment gets one electron → two free radicals (•).'
-    }
-  }, {
-    id: 'p-homo-conditions',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Homolytic fission is favoured by high energy conditions such as <strong>UV light</strong> or very high temperatures.", "g.", "halogenation of alkanes)."]
-    }
-  }, {
-    id: 'h-heterolytic',
-    type: 'heading',
-    data: {
-      text: 'Heterolytic Fission',
-      level: 2
-    }
-  }, {
-    id: 'callout-key-hetero',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Heterolytic Fission',
-      text: 'Both bonding electrons go to ONE of the two atoms. This produces a positive ion (cation, carbocation) and a negative ion (anion, carbanion or halide). Shown with a full double-headed curved arrow (⟶) in mechanisms.'
-    }
-  }, {
-    id: 'eq-hetero',
-    type: 'equation',
-    data: {
-      html: 'A–B → A<sup>+</sup> + B<sup>−</sup>  &nbsp;or&nbsp;  A–B → A<sup>−</sup> + B<sup>+</sup>',
-      caption: 'Heterolytic fission: both electrons go to one fragment → ions.'
-    }
-  }, {
-    id: 'p-hetero-conditions',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Heterolytic fission is favoured by <strong>polar solvents</strong> and the presence of nucleophiles or electrophiles.", "g.", "electrophilic addition to alkenes, nucleophilic substitution of halogenoalkanes)."]
-    }
-  }, {
-    id: 'h-comparison',
-    type: 'heading',
-    data: {
-      text: 'Comparison Table',
-      level: 2
-    }
-  }, {
-    id: 'table-comparison',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Homolytic vs heterolytic fission',
-      headers: ['Feature', 'Homolytic fission', 'Heterolytic fission'],
-      rows: [['Electron distribution', 'One electron each (1:1)', 'Both electrons to one atom (0:2)'], ['Products', 'Two free radicals (neutral)', 'Cation + anion (charged)'], ['Arrow type (mechanism)', 'Single-headed (fish-hook) ↷', 'Double-headed (full) ⟶'], ['Conditions favoured', 'UV light, high temperature, gas phase', 'Polar solvents, ionic reagents'], ['Reaction type', 'Free-radical reactions', 'Ionic mechanisms (SN, EA, EA)'], ['Example', 'Cl–Cl → 2 Cl• (UV light)', 'H–Br → H⁺ + Br⁻ (polar solvent)']]
-    }
-  }, {
-    id: 'h-intermediates',
-    type: 'heading',
-    data: {
-      text: 'Reactive Intermediates',
-      level: 2
-    }
-  }, {
-    id: 'table-intermediates',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Reactive intermediates produced by bond fission',
-      headers: ['Intermediate', 'Origin', 'Charge', 'Electrons', 'Reactivity'],
-      rows: [['Free radical (•)', 'Homolytic fission', 'Neutral', '1 unpaired e⁻', 'Very reactive; attacks bonds to pair its electron'], ['Carbocation (R⁺)', 'Heterolytic fission (C keeps 0 e⁻)', 'Positive', 'Empty orbital on C', 'Electrophile; attacked by nucleophiles'], ['Carbanion (R⁻)', 'Heterolytic fission (C keeps 2 e⁻)', 'Negative', 'Lone pair on C', 'Nucleophile; attacks electrophiles'], ['Nucleophile (:Nu)', 'Electron-rich species', 'Neutral or −', 'Lone pair available', 'Attacks electron-deficient C'], ['Electrophile (E⁺)', 'Electron-deficient species', 'Neutral or +', 'Empty orbital or δ+', 'Attacks electron-rich sites (C=C, lone pairs)']]
-    }
-  }, {
-    id: 'h-polar-bonds',
-    type: 'heading',
-    data: {
-      text: 'Polar Bonds and Fission',
-      level: 2
-    }
-  }, {
-    id: 'p-polar',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["The polarity of a bond influences which type of fission is more likely.", "In a polar C\u2013X bond (X = halogen), the electrons are already shifted towards X.", "Heterolytic fission giving C\u207A and X\u207B is therefore facilitated \u2014 the bond is pre-polarised.", "Non-polar bonds (C\u2013C, Cl\u2013Cl) tend towards homolytic fission when activated by UV light."]
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam Tips — Curly Arrows',
-      text: '• A full curly arrow (⟶) represents the movement of a pair of electrons (heterolytic).\n• A half-headed (fish-hook) arrow (↷) represents the movement of a single electron (homolytic).\n• Arrows go FROM the electron source (bond or lone pair) TO the electron sink (electrophilic centre or new bond).'
-    }
-  }, {
-    id: 'callout-warning',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: 'Common Mistakes',
-      text: '• Drawing full curly arrows for free-radical steps — must use single-headed (fish-hook) arrows.\n• Confusing "homolytic" with "homogeneous" — they are unrelated terms.\n• Saying free radicals are "positively charged" — they are neutral with one unpaired electron.'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'I can define homolytic fission and state the intermediates produced.',
-        checked: false
-      }, {
-        text: 'I can define heterolytic fission and state the intermediates produced.',
-        checked: false
-      }, {
-        text: 'I can compare homolytic and heterolytic fission in a table.',
-        checked: false
-      }, {
-        text: 'I can explain why UV light promotes homolytic fission.',
-        checked: false
-      }, {
-        text: 'I can draw the correct arrow type (full or fish-hook) for each type of fission.',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Homolytic fission → radicals (one electron each); heterolytic fission → ions (both electrons to one atom). Type depends on polarity and conditions.\n\nApply: Draw curly arrows for (a) homolytic Cl–Cl fission (b) heterolytic H–Cl fission. State products.\n\nAnalyze: Why does homolytic fission need UV/heat while heterolytic occurs at room temperature in polar solvents?\n\nEvaluate: "Homolytic fission is less common than heterolytic in organic reactions." Assess this statement.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Describe the mechanism of free radical substitution (FRS) of alkanes with halogens. Write equations for all three stages: initiation, propagation and termination. Know the role of UV light.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'Homolytic fission: one electron each → two free radicals (neutral, unpaired e⁻); fish-hook arrows; UV/high temperature. Heterolytic fission: both electrons to one atom → cation + anion; full curly arrows; polar solvents/ionic conditions. Carbocations are electrophiles; carbanions are nucleophiles; free radicals are neutral and highly reactive.'
+    {
+      id: 'h-overview',
+      type: 'heading',
+      data: { text: 'Overview: Free Radical Substitution', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-overview',
+      type: 'paragraph',
+      data: { text: '<strong>Alkanes</strong> are generally unreactive, but they do react with halogens in the presence of UV light. In free radical substitution, a hydrogen atom on the alkane is replaced by a halogen atom.<br/><br/>Example: CH₄ + Cl₂ → CH₃Cl + HCl (chloromethane + hydrogen chloride)' },
+      terms: ['Free radical substitution', 'Free radical', 'Homolytic fission']
+    },
+    {
+      id: 'h-stages',
+      type: 'heading',
+      data: { text: 'Three Stages of FRS: Cl₂/CH₄ example', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-init',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Stage 1: Initiation',
+        text: 'UV light (photons) causes <strong>homolytic fission</strong> of the Cl–Cl bond. Each chlorine atom receives ONE electron from the shared pair, forming two chlorine radicals.<br/><br/>Cl₂ → 2Cl• (UV light required)<br/><br/><strong>Homolytic fission:</strong> one electron goes to each atom. The movement of a <em>single</em> electron is represented by a <strong>half-curly arrow</strong> (fish-hook arrow).<br/>A <strong>free radical</strong> is a species with an unpaired electron, represented by •.'
+      },
+      terms: ['Initiation', 'Homolytic fission', 'Free radical', 'Half-curly arrow']
+    },
+    {
+      id: 'callout-prop',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Stage 2: Propagation (two steps, repeated)',
+        text: 'The chain is sustained by two alternating steps that regenerate radicals:<br/><br/><strong>Step 1:</strong> Cl• + CH₄ → HCl + CH₃•<br/>A chlorine radical abstracts a hydrogen atom from methane, forming HCl and a methyl radical.<br/><br/><strong>Step 2:</strong> CH₃• + Cl₂ → CH₃Cl + Cl•<br/>The methyl radical reacts with Cl₂, forming chloromethane and regenerating a chlorine radical — which can then repeat Step 1.<br/><br/>These steps are exothermic and continue until termination.'
+      },
+      terms: ['Propagation']
+    },
+    {
+      id: 'callout-term',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Stage 3: Termination',
+        text: 'The chain ends when any two radicals combine (no new radicals produced):<br/><br/>Cl• + Cl• → Cl₂<br/>CH₃• + CH₃• → C₂H₆<br/>CH₃• + Cl• → CH₃Cl<br/><br/>Note: termination can produce unexpected by-products such as ethane (C₂H₆).'
+      },
+      terms: ['Termination']
+    },
+    {
+      id: 'callout-exam-trick',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Exam Trick: Propagation vs Termination Yield',
+        text: '<strong>Why is much more chloromethane formed in propagation than termination?</strong><br/><br/>In propagation, a molecule of chloromethane is produced <em>alongside a new radical</em>. This means the cycle can repeat continuously, producing lots of product. In termination, two radicals react but <em>the reaction cycle stops</em> because no new radicals are formed. Therefore, the vast majority of the product comes from the repeating propagation steps.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-further',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Further substitution / mixture of products',
+        text: 'The reaction produces a mixture of products because substitution can continue:<br/>CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄<br/>(chloromethane → dichloromethane → trichloromethane → tetrachloromethane)<br/><br/>This limits the usefulness of FRS as a synthetic method for pure products.'
+      },
+      terms: []
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'callout-key-homo',
-      prompt: 'Define homolytic fission. What intermediates does it produce?'
-    }, {
-      id: 'cue-2',
-      blockId: 'callout-key-hetero',
-      prompt: 'Define heterolytic fission. What intermediates does it produce?'
-    }, {
-      id: 'cue-3',
-      blockId: 'table-comparison',
-      prompt: 'Compare homolytic and heterolytic fission: conditions, products, and arrow types.'
-    }, {
-      id: 'cue-4',
-      blockId: 'table-intermediates',
-      prompt: 'Is a carbocation a nucleophile or electrophile? Explain why.'
-    }, {
-      id: 'cue-5',
-      blockId: 'callout-tip',
-      prompt: 'When drawing a mechanism, what is the difference between a full curly arrow and a fish-hook arrow?'
-    }],
-    summaryText: 'Homolytic: 1 e⁻ each → 2 free radicals (neutral); fish-hook arrows; UV light. Heterolytic: 2 e⁻ to one atom → cation + anion; full curly arrows; polar conditions.',
+    cues: [
+      { id: 'c1', blockId: 'callout-init', prompt: 'Describe the initiation step of free radical substitution of methane. What does a half-curly arrow represent?' },
+      { id: 'c2', blockId: 'callout-prop', prompt: 'Write the two propagation steps for the chlorination of methane.' },
+      { id: 'c3', blockId: 'callout-term', prompt: 'Write three possible termination steps for the chlorination of methane. What unexpected product is commonly formed?' },
+      { id: 'c4', blockId: 'callout-exam-trick', prompt: 'Explain why much more chloromethane is formed during the propagation steps than during the termination step.' },
+      { id: 'c5', blockId: 'callout-further', prompt: 'Why does free radical substitution give a mixture of products?' }
+    ],
+    summaryText: 'FRS = substitution of H by halogen in alkane, requires UV light. Initiation: UV causes homolytic fission of Cl₂ → 2Cl• (shown with half-curly arrows). Propagation: Cl• abstracts H → HCl + CH₃•; then CH₃• + Cl₂ → CH₃Cl + Cl• (repeating cycle = main source of product). Termination: two radicals combine, stopping the chain. Mixture of products forms due to further substitution.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'Edexcel WCH11 Specification',
-    detail: 'Bond fission types are core content for Topic 4 Organic Foundations.',
-    year: '2018',
-    source: 'Pearson Edexcel',
-    tags: ['bond fission', 'mechanism']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_4_5;

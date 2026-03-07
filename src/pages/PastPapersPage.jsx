@@ -281,49 +281,7 @@ function PastPaperCard({ paper, onStartPractice }) {
     );
 }
 
-// Marking scheme dropdown component
-function MarkingSchemeDropdown({ question }) {
-    const [isOpen, setIsOpen] = useState(false);
 
-    if (!question.rationale && !question.markingScheme) {
-        return null;
-    }
-
-    return (
-        <div className="marking-scheme-dropdown">
-            <button
-                className="btn btn-sm btn-outline marking-scheme-toggle"
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                <FileText size={14} />
-                Marking Scheme
-                {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-            </button>
-
-            {isOpen && (
-                <div className="marking-scheme-content">
-                    {question.markingScheme && (
-                        <div className="marking-scheme-section">
-                            <strong>Mark Scheme:</strong>
-                            <p>{question.markingScheme}</p>
-                        </div>
-                    )}
-                    {question.rationale && (
-                        <div className="marking-scheme-section">
-                            <strong>Explanation:</strong>
-                            <p>{question.rationale}</p>
-                        </div>
-                    )}
-                    {question.marks && (
-                        <div className="marking-scheme-marks">
-                            <strong>Marks:</strong> {question.marks}
-                        </div>
-                    )}
-                </div>
-            )}
-        </div>
-    );
-}
 
 export default function PastPapersPage() {
     const [activeSubject, setActiveSubject] = useState('chemistry');

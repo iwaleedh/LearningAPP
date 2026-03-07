@@ -1,208 +1,137 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 3
+ * "Alkanes from crude oil — fractional distillation and cracking"
+ * Source: Pearson Edexcel IAL Chemistry — Section 4B.1
+ */
 export const note_chemistry_1_4_3 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Apply IUPAC systematic naming rules to name and draw straight-chain, branched-chain, and substituted organic compounds up to 10 carbons.'
-    }
-  }, {
-    id: 'h-prefixes',
-    type: 'heading',
-    data: {
-      text: 'Carbon Chain Prefixes',
-      level: 2
-    }
-  }, {
-    id: 'p-prefixes-intro',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["The IUPAC name of an organic compound is built from a stem that indicates the number of carbon atoms in the longest continuous chain, plus a suffix indicating the functional group, and prefixes for substituents."]
-    }
-  }, {
-    id: 'table-prefixes',
-    type: 'comparisonTable',
-    data: {
-      caption: 'IUPAC carbon-chain prefixes (must be memorised)',
-      headers: ['Number of C atoms', 'Prefix', 'Example (alkane)'],
-      rows: [['1', 'meth-', 'Methane'], ['2', 'eth-', 'Ethane'], ['3', 'prop-', 'Propane'], ['4', 'but-', 'Butane'], ['5', 'pent-', 'Pentane'], ['6', 'hex-', 'Hexane'], ['7', 'hept-', 'Heptane'], ['8', 'oct-', 'Octane'], ['9', 'non-', 'Nonane'], ['10', 'dec-', 'Decane']]
-    }
-  }, {
-    id: 'h-suffixes',
-    type: 'heading',
-    data: {
-      text: 'Functional Group Suffixes',
-      level: 2
-    }
-  }, {
-    id: 'table-suffixes',
-    type: 'comparisonTable',
-    data: {
-      caption: 'IUPAC suffixes for major functional groups',
-      headers: ['Functional group', 'Suffix', 'Example'],
-      rows: [['Alkane (C–C only)', '-ane', 'Propane'], ['Alkene (C=C)', '-ene', 'Propene'], ['Alkyne (C≡C)', '-yne', 'Propyne'], ['Alcohol (–OH)', '-ol', 'Propan-1-ol'], ['Aldehyde (–CHO)', '-al', 'Propanal'], ['Ketone (C=O)', '-one', 'Propan-2-one'], ['Carboxylic acid (–COOH)', '-oic acid', 'Propanoic acid'], ['Ester (–COO–)', '-anoate', 'Ethyl propanoate'], ['Amine (–NH₂)', '-amine', 'Propylamine / propan-1-amine'], ['Amide (–CONH₂)', '-amide', 'Propanamide'], ['Nitrile (–CN)', '-nitrile', 'Propanenitrile']]
-    }
-  }, {
-    id: 'h-rules',
-    type: 'heading',
-    data: {
-      text: 'IUPAC Naming Rules — Step by Step',
-      level: 2
-    }
-  }, {
-    id: 'list-rules',
-    type: 'list',
-    data: {
-      style: 'numbered',
-      items: ['<strong>Find the longest carbon chain</strong> containing the principal functional group — this is the parent chain.', '<strong>Number the chain</strong> from the end that gives the principal functional group (or first branch) the lowest locant.', '<strong>Name substituents</strong> as prefixes: methyl (–CH₃), ethyl (–C₂H₅), fluoro (–F), chloro (–Cl), bromo (–Br), iodo (–I), nitro (–NO₂).', '<strong>Use multiplier prefixes</strong> for repeated substituents: di-, tri-, tetra-, penta-.', '<strong>List substituents alphabetically</strong> (ignoring di-, tri- etc.) before the parent chain name.', '<strong>Indicate position</strong> of each substituent and functional group with a locant (number) placed immediately before the part of the name it refers to.', '<strong>Use commas</strong> to separate numbers from numbers, and <strong>hyphens</strong> to separate numbers from letters.']
-    }
-  }, {
-    id: 'h-worked1',
-    type: 'heading',
-    data: {
-      text: 'Worked Examples',
-      level: 2
-    }
-  }, {
-    id: 'callout-we1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Example 1 — Branched alkane',
-      text: 'Name: CH₃–CH(CH₃)–CH₂–CH₃\n\nStep 1: Longest chain = 4 carbons → but-\nStep 2: Number from left: methyl group on C2 → 2-methyl\nStep 3: Functional group = alkane → -ane\nName: 2-methylbutane'
-    }
-  }, {
-    id: 'callout-we2',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Example 2 — Alcohol',
-      text: 'Name: CH₃–CH₂–CH(OH)–CH₃\n\nStep 1: Longest chain = 4 carbons → but-\nStep 2: –OH on C3 from the left, but C2 from the right → number from right to give –OH locant 2\nStep 3: Functional group = alcohol → -ol\nName: butan-2-ol'
-    }
-  }, {
-    id: 'callout-we3',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Example 3 — Alkene with branch',
-      text: 'Name: CH₂=C(CH₃)–CH₂–CH₃\n\nStep 1: Longest chain including C=C = 4 carbons → but-\nStep 2: C=C starts at C1 → but-1-ene\nStep 3: Methyl branch on C2\nName: 2-methylbut-1-ene'
-    }
-  }, {
-    id: 'callout-we4',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Example 4 — Halogenoalkane',
-      text: 'Name: CH₃–CHBr–CH₂–CH₂–CH₃\n\nStep 1: Longest chain = 5 carbons → pent-\nStep 2: Br on C2 (from left) → 2-bromo\nStep 3: Functional group = alkane → -ane\nName: 2-bromopentane'
-    }
-  }, {
-    id: 'h-cyclo',
-    type: 'heading',
-    data: {
-      text: 'Naming Cyclic Compounds',
-      level: 2
-    }
-  }, {
-    id: 'p-cyclo',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Cyclic compounds use the prefix <strong>cyclo-</strong> before the parent chain name.", "The ring carbons are always numbered starting from the carbon bearing the principal functional group or highest-priority substituent."]
-    }
-  }, {
-    id: 'list-cyclo',
-    type: 'list',
-    data: {
-      style: 'bullet',
-      items: ['Cyclopropane — 3-carbon ring, C₃H₆', 'Cyclobutane — 4-carbon ring, C₄H₈', 'Cyclopentane — 5-carbon ring, C₅H₁₀', 'Cyclohexane — 6-carbon ring, C₆H₁₂', 'Methylcyclohexane — cyclohexane ring with a –CH₃ substituent']
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam Tips',
-      text: '• Always give the principal functional group the lowest possible locant.\n• For alkenes, the locant refers to the lower-numbered carbon of the double bond.\n• When alphabetising substituents, ignore multiplier prefixes (di, tri): "dimethyl" is alphabetised under "m".\n• In older IUPAC style, the locant can precede the whole name (e.g. 2-butanol), but modern IUPAC prefers butan-2-ol — learn to recognise both.'
-    }
-  }, {
-    id: 'callout-warning',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: 'Common Mistakes',
-      text: '• Not finding the longest chain — the parent chain must be the longest continuous carbon chain.\n• Numbering from the wrong end — always minimise the locant of the principal functional group first.\n• Forgetting to alphabetise substituents before writing the name.\n• Writing "2-butanol" when the modern IUPAC name is "butan-2-ol".'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'I know the IUPAC prefixes for 1–10 carbon chains (meth- to dec-).',
-        checked: false
-      }, {
-        text: 'I can name alkanes, alkenes, alcohols, halogenoalkanes, and carboxylic acids using IUPAC rules.',
-        checked: false
-      }, {
-        text: 'I can correctly number the chain to give the functional group the lowest locant.',
-        checked: false
-      }, {
-        text: 'I can name branched compounds with multiple substituents, listed alphabetically.',
-        checked: false
-      }, {
-        text: 'I can name cycloalkanes using the cyclo- prefix.',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: IUPAC naming: identify longest chain, number from end nearest first substituent, name substituents with positions.\n\nApply: Name CH₃CH(CH₃)CH₂CH(Cl)CH₃. Draw 2,3-dimethylbutane.\n\nAnalyze: Why does IUPAC require numbering from the end giving lowest locants?\n\nEvaluate: Common names like "acetone" persist despite IUPAC. Discuss advantages/disadvantages of each system.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Know that alkanes are obtained from crude oil by fractional distillation. Know the process of cracking and why it is economically important. Distinguish between thermal cracking and catalytic cracking.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'IUPAC names = prefix (chain length) + substituent prefixes (alphabetical) + suffix (functional group). Number the chain to give the principal functional group the lowest locant. Use cyclo- for ring compounds. Multipliers di-, tri- are not counted in alphabetical ordering of substituents.'
+    {
+      id: 'h-crude',
+      type: 'heading',
+      data: { text: 'Crude Oil and Fractional Distillation', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-crude',
+      type: 'paragraph',
+      data: { text: '<strong>Crude oil</strong> is a complex mixture of hydrocarbons (mostly alkanes). It is separated by <strong>fractional distillation</strong>: the crude oil is heated, and the vapours rise up a fractionating column where different fractions condense at different temperatures (based on their boiling points, which depend on chain length).' },
+      terms: ['Crude oil', 'Fractional distillation']
+    },
+    {
+      id: 'table-fractions',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Key fractions from fractional distillation of crude oil',
+        headers: ['Fraction', 'Approximate C range', 'Boiling point range', 'Use'],
+        rows: [
+          ['Gases (LPG)', 'C₁–C₄', 'Below 25°C', 'Cooking gas, heating'],
+          ['Gasoline (petrol)', 'C₅–C₁₀', '25–60°C', 'Fuel for car engines'],
+          ['Naphtha', 'C₅–C₁₀', '60–100°C', 'Chemical feedstock'],
+          ['Kerosene', 'C₁₀–C₁₅', '150–250°C', 'Jet fuel'],
+          ['Diesel / Gas oil', 'C₁₅–C₂₀', '220–350°C', 'Diesel engines, heating'],
+          ['Residue (bitumen)', '>C₂₀', 'Above 350°C', 'Road surfacing, roofing']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-trends',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Properties vs Chain Length',
+        text: 'As the hydrocarbon chain length increases, London/dispersion forces increase. This causes:<br/>• <strong>Boiling point:</strong> Increases<br/>• <strong>Volatility:</strong> Decreases (doesn\'t evaporate as easily)<br/>• <strong>Viscosity:</strong> Increases (becomes thicker, flows less easily)<br/>• <strong>Flammability:</strong> Decreases (harder to catch fire)<br/>• <strong>Colour:</strong> Becomes darker'
+      },
+      terms: ['Volatility', 'Viscosity']
+    },
+    {
+      id: 'h-cracking',
+      type: 'heading',
+      data: { text: 'Cracking', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-cracking',
+      type: 'paragraph',
+      data: { text: 'There is a greater demand for shorter-chain fractions (petrol) than for longer-chain ones (heavy oils). <strong>Cracking</strong> is the process of breaking large, less useful hydrocarbon molecules into smaller, more useful ones. It also produces alkenes, which are important in manufacturing polymers.' },
+      terms: ['Cracking']
+    },
+    {
+      id: 'table-cracking',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Thermal vs Catalytic cracking',
+        headers: ['Feature', 'Thermal Cracking', 'Catalytic Cracking'],
+        rows: [
+          ['Temperature', 'High (~750°C)', 'Lower (~450°C)',],
+          ['Pressure', 'High', 'Low (near atmospheric)'],
+          ['Catalyst', 'None', 'Zeolite (aluminosilicate)'],
+          ['Products', 'More alkenes (useful for polymers)', 'More aromatic hydrocarbons + branched alkanes (good for petrol octane rating)'],
+          ['Mechanism', 'Homolytic fission → free radicals', 'Ionic mechanism (carbocations)']
+        ]
+      },
+      terms: ['Thermal cracking', 'Catalytic cracking']
+    },
+    {
+      id: 'callout-example',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example Cracking Equation',
+        text: 'C₁₅H₃₂ → C₈H₁₈ + C₅H₁₀ + C₂H₄<br/>(pentadecane → octane + pentene + ethene)<br/><br/>Note: carbon and hydrogen atoms balance. One or more products must be an alkene (unsaturated).'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-cracking-experiment',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Laboratory Cracking & Preventing Suck-Back',
+        text: 'In the lab, medicinal oil (alkane) is heated, passes over a catalyst (e.g., aluminium oxide/porcelain chips), and the alkene gas is collected over water.<br/><strong>Safety hazard ("Suck-back"):</strong> The delivery tube MUST be removed from the water before stopping the heat. If you stop the heat first, the gas inside cools and contracts, sucking cold water back up into the hot glass test tube, which would cause it to shatter.'
+      },
+      terms: ['Suck-back']
+    },
+    {
+      id: 'h-reforming',
+      type: 'heading',
+      data: { text: 'Reforming', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-reforming',
+      type: 'paragraph',
+      data: { text: '<strong>Reforming</strong> is the conversion of straight-chain hydrocarbons into branched-chain or cyclic hydrocarbons. This is done by heating them with a catalyst (usually Platinum, Pt). Alkanes have a tendency to cause "knocking" in car engines when they burn. Branched and cyclic hydrocarbons burn more efficiently and smoothly (reducing knocking).' },
+      terms: ['Reforming', 'Knocking']
+    },
+    {
+      id: 'callout-reforming-examples',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Reforming Examples',
+        text: '1. <strong>Straight to cyclic:</strong> Pentane → Cyclopentane + H₂<br/>(C₅H₁₂ → C₅H₁₀ + H₂)<br/><br/>2. <strong>Straight to aromatic (benzene ring):</strong> Heptane → Methylbenzene + 4H₂<br/>(C₇H₁₆ → C₇H₈ + 4H₂)'
+      },
+      terms: []
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'table-prefixes',
-      prompt: 'Give the IUPAC prefixes for 1, 4, 6, and 10 carbons.'
-    }, {
-      id: 'cue-2',
-      blockId: 'table-suffixes',
-      prompt: 'What suffix indicates an alcohol? A carboxylic acid? An alkene?'
-    }, {
-      id: 'cue-3',
-      blockId: 'list-rules',
-      prompt: 'What are the key steps in applying IUPAC naming rules to a branched compound?'
-    }, {
-      id: 'cue-4',
-      blockId: 'callout-we2',
-      prompt: 'Name CH₃–CH₂–CH(OH)–CH₃ using IUPAC rules.'
-    }, {
-      id: 'cue-5',
-      blockId: 'callout-warning',
-      prompt: 'State two common mistakes students make when applying IUPAC naming rules.'
-    }],
-    summaryText: 'IUPAC: longest chain (meth–dec) + suffix (functional group) + numbered substituent prefixes (alphabetical). Minimise locant of principal functional group. Cyclo- for rings.',
+    cues: [
+      { id: 'c1', blockId: 'callout-trends', prompt: 'Explain how the boiling point, volatility, viscosity, and flammability change as the carbon chain length increases.' },
+      { id: 'c2', blockId: 'p-cracking', prompt: 'Why is cracking economically important?' },
+      { id: 'c3', blockId: 'callout-cracking-experiment', prompt: 'In a laboratory cracking experiment, why must the delivery tube be removed from the water before the heat is completely taken away?' },
+      { id: 'c4', blockId: 'p-reforming', prompt: 'What is reforming, and why are alkanes reformed before being used as engine fuels?' }
+    ],
+    summaryText: 'Crude oil = mixture of hydrocarbons. Separated by fractional distillation (longer chain = higher bp, more viscous, less volatile, less flammable). Cracking = breaking large alkanes. Lab cracking: remove delivery tube before stopping heat to stop suck-back. Reforming = converts straight chains to branched/cyclic (using Pt catalyst) to burn more efficiently and reduce engine knocking.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'IUPAC 2013 Recommendations',
-    detail: 'The current IUPAC 2013 recommendations for organic nomenclature establish the rules for systematic naming used in A-level chemistry.',
-    year: '2013',
-    source: 'IUPAC',
-    tags: ['naming', 'IUPAC']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_4_3;

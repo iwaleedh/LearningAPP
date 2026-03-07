@@ -4,6 +4,12 @@
  * Key format: "subject:unitId:topicId:subtopicIndex"
  */
 
+// Scaffolded Notes
+import { note_accounting_1_1_0 } from './accounting/note_1_1_0.js';
+import { note_business_1_1_0 } from './business/note_1_1_0.js';
+import { note_economics_1_1_0 } from './economics/note_1_1_0.js';
+import { note_mathematics_1_1_0 } from './mathematics/note_1_1_0.js';
+
 // WBI11 — Topic 1: Molecules, Transport & Health
 import { note_biology_1_1_0 } from './biology/note_1_1_0.js';
 import { note_biology_1_1_1 } from './biology/note_1_1_1.js';
@@ -184,11 +190,6 @@ import { note_chemistry_1_4_4 } from './chemistry/note_1_4_4.js';
 import { note_chemistry_1_4_5 } from './chemistry/note_1_4_5.js';
 import { note_chemistry_1_4_6 } from './chemistry/note_1_4_6.js';
 import { note_chemistry_1_4_7 } from './chemistry/note_1_4_7.js';
-import { note_chemistry_1_4_8 } from './chemistry/note_1_4_8.js';
-import { note_chemistry_1_4_9 } from './chemistry/note_1_4_9.js';
-import { note_chemistry_1_4_10 } from './chemistry/note_1_4_10.js';
-import { note_chemistry_1_4_11 } from './chemistry/note_1_4_11.js';
-import { note_chemistry_1_4_12 } from './chemistry/note_1_4_12.js';
 
 // WCH11 — Topic 3: Bonding & Structure
 import { note_chemistry_1_3_0 } from './chemistry/note_1_3_0.js';
@@ -226,59 +227,18 @@ import { note_chemistry_1_1_6 } from './chemistry/note_1_1_6.js';
 import note_chemistry_1_1_7 from './chemistry/note_1_1_7.js';
 import { note_chemistry_1_1_8 } from './chemistry/note_1_1_8.js';
 import { note_chemistry_1_1_9 } from './chemistry/note_1_1_9.js';
+import { note_chemistry_1_1_10 } from './chemistry/note_1_1_10.js';
+
+
 
 // WCH12 — Topic 6: Energetics
-import { note_chemistry_1_2_6_0 } from './chemistry/note_1_2_6_0.js';
-import { note_chemistry_1_2_6_1 } from './chemistry/note_1_2_6_1.js';
-import { note_chemistry_1_2_6_2 } from './chemistry/note_1_2_6_2.js';
-import { note_chemistry_1_2_6_3 } from './chemistry/note_1_2_6_3.js';
-import { note_chemistry_1_2_6_4 } from './chemistry/note_1_2_6_4.js';
-import { note_chemistry_1_2_6_5 } from './chemistry/note_1_2_6_5.js';
-import { note_chemistry_1_2_6_6 } from './chemistry/note_1_2_6_6.js';
-import { note_chemistry_1_2_6_7 } from './chemistry/note_1_2_6_7.js';
-
-// WCH12 — Topic 7: Intermolecular Forces
-import { note_chemistry_1_2_7_0 } from './chemistry/note_1_2_7_0.js';
-import { note_chemistry_1_2_7_1 } from './chemistry/note_1_2_7_1.js';
-import { note_chemistry_1_2_7_2 } from './chemistry/note_1_2_7_2.js';
-import { note_chemistry_1_2_7_3 } from './chemistry/note_1_2_7_3.js';
-import { note_chemistry_1_2_7_4 } from './chemistry/note_1_2_7_4.js';
-import { note_chemistry_1_2_7_5 } from './chemistry/note_1_2_7_5.js';
-import { note_chemistry_1_2_7_6 } from './chemistry/note_1_2_7_6.js';
-
-// WCH12 — Topic 8: Redox & Groups 1, 2, 7
-import { note_chemistry_1_2_8_0 } from './chemistry/note_1_2_8_0.js';
-import { note_chemistry_1_2_8_1 } from './chemistry/note_1_2_8_1.js';
-import { note_chemistry_1_2_8_2 } from './chemistry/note_1_2_8_2.js';
-import { note_chemistry_1_2_8_3 } from './chemistry/note_1_2_8_3.js';
-import { note_chemistry_1_2_8_4 } from './chemistry/note_1_2_8_4.js';
-import { note_chemistry_1_2_8_5 } from './chemistry/note_1_2_8_5.js';
-import { note_chemistry_1_2_8_6 } from './chemistry/note_1_2_8_6.js';
-import { note_chemistry_1_2_8_7 } from './chemistry/note_1_2_8_7.js';
-import { note_chemistry_1_2_8_8 } from './chemistry/note_1_2_8_8.js';
-
-// WCH12 — Topic 9: Kinetics & Equilibrium Intro
-import { note_chemistry_1_2_9_0 } from './chemistry/note_1_2_9_0.js';
-import { note_chemistry_1_2_9_1 } from './chemistry/note_1_2_9_1.js';
-import { note_chemistry_1_2_9_2 } from './chemistry/note_1_2_9_2.js';
-import { note_chemistry_1_2_9_3 } from './chemistry/note_1_2_9_3.js';
-import { note_chemistry_1_2_9_4 } from './chemistry/note_1_2_9_4.js';
-import { note_chemistry_1_2_9_5 } from './chemistry/note_1_2_9_5.js';
-import { note_chemistry_1_2_9_6 } from './chemistry/note_1_2_9_6.js';
-import { note_chemistry_1_2_9_7 } from './chemistry/note_1_2_9_7.js';
-
-// WCH12 — Topic 10: Alcohols, Halogenoalkanes & Spectra
-import { note_chemistry_1_2_10_0 } from './chemistry/note_1_2_10_0.js';
-import { note_chemistry_1_2_10_1 } from './chemistry/note_1_2_10_1.js';
-import { note_chemistry_1_2_10_2 } from './chemistry/note_1_2_10_2.js';
-import { note_chemistry_1_2_10_3 } from './chemistry/note_1_2_10_3.js';
-import { note_chemistry_1_2_10_4 } from './chemistry/note_1_2_10_4.js';
-import { note_chemistry_1_2_10_5 } from './chemistry/note_1_2_10_5.js';
-import { note_chemistry_1_2_10_6 } from './chemistry/note_1_2_10_6.js';
-import { note_chemistry_1_2_10_7 } from './chemistry/note_1_2_10_7.js';
-import { note_chemistry_1_2_10_8 } from './chemistry/note_1_2_10_8.js';
-import { note_chemistry_1_2_10_9 } from './chemistry/note_1_2_10_9.js';
-import { note_chemistry_1_2_10_10 } from './chemistry/note_1_2_10_10.js';
+import { note_chemistry_2_6_0 } from './chemistry/note_2_6_0.js';
+import { note_chemistry_2_6_1 } from './chemistry/note_2_6_1.js';
+import { note_chemistry_2_6_2 } from './chemistry/note_2_6_2.js';
+import { note_chemistry_2_6_3 } from './chemistry/note_2_6_3.js';
+import { note_chemistry_2_6_4 } from './chemistry/note_2_6_4.js';
+import { note_chemistry_2_6_5 } from './chemistry/note_2_6_5.js';
+import { note_chemistry_2_6_6 } from './chemistry/note_2_6_6.js';
 
 // WCH14 — Topic 11: Kinetics
 import { note_chemistry_4_11_0 } from './chemistry/note_4_11_0.js';
@@ -513,7 +473,112 @@ import { note_physics_6_6A_3 } from './physics/note_6_6A_3.js';
 import { note_physics_6_6A_4 } from './physics/note_6_6A_4.js';
 import { note_physics_6_6A_5 } from './physics/note_6_6A_5.js';
 
+
+
+// WCH12 — Topic 7: Intermolecular Forces
+import { note_chemistry_2_7_0 } from './chemistry/note_2_7_0.js';
+import { note_chemistry_2_7_1 } from './chemistry/note_2_7_1.js';
+import { note_chemistry_2_7_2 } from './chemistry/note_2_7_2.js';
+import { note_chemistry_2_7_3 } from './chemistry/note_2_7_3.js';
+import { note_chemistry_2_7_4 } from './chemistry/note_2_7_4.js';
+import { note_chemistry_2_7_5 } from './chemistry/note_2_7_5.js';
+import { note_chemistry_2_7_6 } from './chemistry/note_2_7_6.js';
+
+// WCH12 — Topic 8: Redox & Groups 1, 2, 7
+import { note_chemistry_2_8_0 } from './chemistry/note_2_8_0.js';
+import { note_chemistry_2_8_1 } from './chemistry/note_2_8_1.js';
+import { note_chemistry_2_8_2 } from './chemistry/note_2_8_2.js';
+import { note_chemistry_2_8_3 } from './chemistry/note_2_8_3.js';
+import { note_chemistry_2_8_4 } from './chemistry/note_2_8_4.js';
+import { note_chemistry_2_8_5 } from './chemistry/note_2_8_5.js';
+import { note_chemistry_2_8_6 } from './chemistry/note_2_8_6.js';
+import { note_chemistry_2_8_7 } from './chemistry/note_2_8_7.js';
+import { note_chemistry_2_8_8 } from './chemistry/note_2_8_8.js';
+
+// WCH12 — Topic 9: Kinetics & Equilibrium Intro
+import { note_chemistry_2_9_0 } from './chemistry/note_2_9_0.js';
+import { note_chemistry_2_9_1 } from './chemistry/note_2_9_1.js';
+import { note_chemistry_2_9_2 } from './chemistry/note_2_9_2.js';
+import { note_chemistry_2_9_3 } from './chemistry/note_2_9_3.js';
+import { note_chemistry_2_9_4 } from './chemistry/note_2_9_4.js';
+import { note_chemistry_2_9_5 } from './chemistry/note_2_9_5.js';
+import { note_chemistry_2_9_6 } from './chemistry/note_2_9_6.js';
+import { note_chemistry_2_9_7 } from './chemistry/note_2_9_7.js';
+
+// WCH12 — Topic 10: Alcohols, Halogenoalkanes & Spectra
+import { note_chemistry_2_10_0 } from './chemistry/note_2_10_0.js';
+import { note_chemistry_2_10_1 } from './chemistry/note_2_10_1.js';
+import { note_chemistry_2_10_2 } from './chemistry/note_2_10_2.js';
+import { note_chemistry_2_10_3 } from './chemistry/note_2_10_3.js';
+import { note_chemistry_2_10_4 } from './chemistry/note_2_10_4.js';
+import { note_chemistry_2_10_5 } from './chemistry/note_2_10_5.js';
+import { note_chemistry_2_10_6 } from './chemistry/note_2_10_6.js';
+import { note_chemistry_2_10_7 } from './chemistry/note_2_10_7.js';
+import { note_chemistry_2_10_8 } from './chemistry/note_2_10_8.js';
+import { note_chemistry_2_10_9 } from './chemistry/note_2_10_9.js';
+import { note_chemistry_2_10_10 } from './chemistry/note_2_10_10.js';
+
+// WCH16 — Topic 6A: Practical Skills II
+import { note_chemistry_6_6A_0 } from './chemistry/note_6_6A_0.js';
+import { note_chemistry_6_6A_1 } from './chemistry/note_6_6A_1.js';
+import { note_chemistry_6_6A_2 } from './chemistry/note_6_6A_2.js';
+import { note_chemistry_6_6A_3 } from './chemistry/note_6_6A_3.js';
+import { note_chemistry_6_6A_4 } from './chemistry/note_6_6A_4.js';
+import { note_chemistry_6_6A_5 } from './chemistry/note_6_6A_5.js';
+
 export const seedNotes = {
+
+
+    'chemistry:2:7:0': note_chemistry_2_7_0,
+    'chemistry:2:7:1': note_chemistry_2_7_1,
+    'chemistry:2:7:2': note_chemistry_2_7_2,
+    'chemistry:2:7:3': note_chemistry_2_7_3,
+    'chemistry:2:7:4': note_chemistry_2_7_4,
+    'chemistry:2:7:5': note_chemistry_2_7_5,
+    'chemistry:2:7:6': note_chemistry_2_7_6,
+    'chemistry:2:8:0': note_chemistry_2_8_0,
+    'chemistry:2:8:1': note_chemistry_2_8_1,
+    'chemistry:2:8:2': note_chemistry_2_8_2,
+    'chemistry:2:8:3': note_chemistry_2_8_3,
+    'chemistry:2:8:4': note_chemistry_2_8_4,
+    'chemistry:2:8:5': note_chemistry_2_8_5,
+    'chemistry:2:8:6': note_chemistry_2_8_6,
+    'chemistry:2:8:7': note_chemistry_2_8_7,
+    'chemistry:2:8:8': note_chemistry_2_8_8,
+    'chemistry:2:9:0': note_chemistry_2_9_0,
+    'chemistry:2:9:1': note_chemistry_2_9_1,
+    'chemistry:2:9:2': note_chemistry_2_9_2,
+    'chemistry:2:9:3': note_chemistry_2_9_3,
+    'chemistry:2:9:4': note_chemistry_2_9_4,
+    'chemistry:2:9:5': note_chemistry_2_9_5,
+    'chemistry:2:9:6': note_chemistry_2_9_6,
+    'chemistry:2:9:7': note_chemistry_2_9_7,
+    'chemistry:2:10:0': note_chemistry_2_10_0,
+    'chemistry:2:10:1': note_chemistry_2_10_1,
+    'chemistry:2:10:2': note_chemistry_2_10_2,
+    'chemistry:2:10:3': note_chemistry_2_10_3,
+    'chemistry:2:10:4': note_chemistry_2_10_4,
+    'chemistry:2:10:5': note_chemistry_2_10_5,
+    'chemistry:2:10:6': note_chemistry_2_10_6,
+    'chemistry:2:10:7': note_chemistry_2_10_7,
+    'chemistry:2:10:8': note_chemistry_2_10_8,
+    'chemistry:2:10:9': note_chemistry_2_10_9,
+    'chemistry:2:10:10': note_chemistry_2_10_10,
+
+    // WCH16
+    'chemistry:6:6A:0': note_chemistry_6_6A_0,
+    'chemistry:6:6A:1': note_chemistry_6_6A_1,
+    'chemistry:6:6A:2': note_chemistry_6_6A_2,
+    'chemistry:6:6A:3': note_chemistry_6_6A_3,
+    'chemistry:6:6A:4': note_chemistry_6_6A_4,
+    'chemistry:6:6A:5': note_chemistry_6_6A_5,
+
+    // Scaffolded Notes
+    'accounting:1:1:0': note_accounting_1_1_0,
+    'business:1:1:0': note_business_1_1_0,
+    'economics:1:1:0': note_economics_1_1_0,
+    'mathematics:1:1:0': note_mathematics_1_1_0,
+
     // WBI11 — Topic 1: Molecules, Transport & Health
     'biology:1:1:0': note_biology_1_1_0,
     'biology:1:1:1': note_biology_1_1_1,
@@ -686,11 +751,7 @@ export const seedNotes = {
     'chemistry:1:4:5': note_chemistry_1_4_5,
     'chemistry:1:4:6': note_chemistry_1_4_6,
     'chemistry:1:4:7': note_chemistry_1_4_7,
-    'chemistry:1:4:8': note_chemistry_1_4_8,
-    'chemistry:1:4:9': note_chemistry_1_4_9,
-    'chemistry:1:4:10': note_chemistry_1_4_10,
-    'chemistry:1:4:11': note_chemistry_1_4_11,
-    'chemistry:1:4:12': note_chemistry_1_4_12,
+
 
     // WCH11 — Topic 3: Bonding & Structure
     'chemistry:1:3:0': note_chemistry_1_3_0,
@@ -728,46 +789,16 @@ export const seedNotes = {
     'chemistry:1:1:7': note_chemistry_1_1_7,
     'chemistry:1:1:8': note_chemistry_1_1_8,
     'chemistry:1:1:9': note_chemistry_1_1_9,
+    'chemistry:1:1:10': note_chemistry_1_1_10,
 
     // WCH12 — Topic 6: Energetics
-    'chemistry:2:6:0': note_chemistry_1_2_6_0,
-    'chemistry:2:6:1': note_chemistry_1_2_6_1,
-    'chemistry:2:6:2': note_chemistry_1_2_6_2,
-    'chemistry:2:6:3': note_chemistry_1_2_6_3,
-    'chemistry:2:6:4': note_chemistry_1_2_6_4,
-    'chemistry:2:6:5': note_chemistry_1_2_6_5,
-    'chemistry:2:6:6': note_chemistry_1_2_6_6,
-    'chemistry:2:6:7': note_chemistry_1_2_6_7,
-
-    // WCH12 — Topic 7: Intermolecular Forces
-    'chemistry:2:7:0': note_chemistry_1_2_7_0,
-    'chemistry:2:7:1': note_chemistry_1_2_7_1,
-    'chemistry:2:7:2': note_chemistry_1_2_7_2,
-    'chemistry:2:7:3': note_chemistry_1_2_7_3,
-    'chemistry:2:7:4': note_chemistry_1_2_7_4,
-    'chemistry:2:7:5': note_chemistry_1_2_7_5,
-    'chemistry:2:7:6': note_chemistry_1_2_7_6,
-
-    // WCH12 — Topic 8: Redox & Groups 1, 2, 7
-    'chemistry:2:8:0': note_chemistry_1_2_8_0,
-    'chemistry:2:8:1': note_chemistry_1_2_8_1,
-    'chemistry:2:8:2': note_chemistry_1_2_8_2,
-    'chemistry:2:8:3': note_chemistry_1_2_8_3,
-    'chemistry:2:8:4': note_chemistry_1_2_8_4,
-    'chemistry:2:8:5': note_chemistry_1_2_8_5,
-    'chemistry:2:8:6': note_chemistry_1_2_8_6,
-    'chemistry:2:8:7': note_chemistry_1_2_8_7,
-    'chemistry:2:8:8': note_chemistry_1_2_8_8,
-
-    // WCH12 — Topic 9: Kinetics & Equilibrium Intro
-    'chemistry:2:9:0': note_chemistry_1_2_9_0,
-    'chemistry:2:9:1': note_chemistry_1_2_9_1,
-    'chemistry:2:9:2': note_chemistry_1_2_9_2,
-    'chemistry:2:9:3': note_chemistry_1_2_9_3,
-    'chemistry:2:9:4': note_chemistry_1_2_9_4,
-    'chemistry:2:9:5': note_chemistry_1_2_9_5,
-    'chemistry:2:9:6': note_chemistry_1_2_9_6,
-    'chemistry:2:9:7': note_chemistry_1_2_9_7,
+    'chemistry:2:6:0': note_chemistry_2_6_0,
+    'chemistry:2:6:1': note_chemistry_2_6_1,
+    'chemistry:2:6:2': note_chemistry_2_6_2,
+    'chemistry:2:6:3': note_chemistry_2_6_3,
+    'chemistry:2:6:4': note_chemistry_2_6_4,
+    'chemistry:2:6:5': note_chemistry_2_6_5,
+    'chemistry:2:6:6': note_chemistry_2_6_6,
 
     // WCH13 — Topic 3A: Practical Skills I
     'chemistry:3:3A:0': note_chemistry_3_3A_0,
@@ -776,19 +807,6 @@ export const seedNotes = {
     'chemistry:3:3A:3': note_chemistry_3_3A_3,
     'chemistry:3:3A:4': note_chemistry_3_3A_4,
     'chemistry:3:3A:5': note_chemistry_3_3A_5,
-
-    // WCH12 — Topic 10: Alcohols, Halogenoalkanes & Spectra
-    'chemistry:2:10:0': note_chemistry_1_2_10_0,
-    'chemistry:2:10:1': note_chemistry_1_2_10_1,
-    'chemistry:2:10:2': note_chemistry_1_2_10_2,
-    'chemistry:2:10:3': note_chemistry_1_2_10_3,
-    'chemistry:2:10:4': note_chemistry_1_2_10_4,
-    'chemistry:2:10:5': note_chemistry_1_2_10_5,
-    'chemistry:2:10:6': note_chemistry_1_2_10_6,
-    'chemistry:2:10:7': note_chemistry_1_2_10_7,
-    'chemistry:2:10:8': note_chemistry_1_2_10_8,
-    'chemistry:2:10:9': note_chemistry_1_2_10_9,
-    'chemistry:2:10:10': note_chemistry_1_2_10_10,
 
     // WCH14 — Topic 11: Kinetics
     'chemistry:4:11:0': note_chemistry_4_11_0,

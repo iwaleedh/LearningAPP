@@ -17,16 +17,34 @@ export const note_chemistry_3_3A_4 = {
             data: { text: 'Types of Error', level: 2 },
         },
         {
-            id: 'list-error-types',
-            type: 'list',
+            id: 'table-random-systematic',
+            type: 'comparisonTable',
             data: {
-                style: 'unordered',
-                items: [
-                    'Random errors — unpredictable variations in measurements (e.g. reading a burette, temperature fluctuations); reduced by repeating and averaging',
-                    'Systematic errors — consistent offset in one direction (e.g. zero error on balance, heat loss in calorimetry); NOT reduced by repeating',
-                    'Random errors affect precision; systematic errors affect accuracy'
+                caption: 'Random vs Systematic Errors',
+                headers: ['Feature', 'Random Error', 'Systematic Error'],
+                rows: [
+                    ['<strong>Predictability</strong>', 'Unpredictable (scatter in data)', 'Predictable (always offsets in same direction)'],
+                    ['<strong>Effect on results</strong>', 'Reduces precision', 'Reduces accuracy (but precision can still be high)'],
+                    ['<strong>Detection</strong>', 'Seen in wide spread of repeated data', 'Seen when comparing to known/true value'],
+                    ['<strong>Solution</strong>', 'Repeat measurements and calculate a mean', 'Calibrate or fix the equipment/method']
                 ]
             },
+            terms: ['Random error', 'Systematic error']
+        },
+        {
+            id: 'table-error-examples',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Examples of Errors in Context',
+                headers: ['Situation', 'Error Type', 'Explanation'],
+                rows: [
+                    ['Reading burette slightly differently each time', '<strong>Random</strong>', 'Small, unpredictable variations in eye position (parallax error)'],
+                    ['Different people timing a reaction stopclock', '<strong>Random</strong>', 'Human reaction time varies randomly per person'],
+                    ['Balance reads 0.01 g too high always', '<strong>Systematic</strong>', 'Calibration error; every reading will be offset by +0.01 g'],
+                    ['Heat loss during enthalpy experiment', '<strong>Systematic</strong>', 'Energy consistently escapes to surroundings, always causing a lower temp change']
+                ]
+            },
+            terms: []
         },
         {
             id: 'callout-key-terms',
@@ -51,6 +69,16 @@ export const note_chemistry_3_3A_4 = {
             },
         },
         {
+            id: 'callout-error-we1',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Worked Example: Percentage Error (Enthalpy)',
+                text: '<strong>Question:</strong> The accepted enthalpy change is -57.0 kJ mol⁻¹. A student measures -52.0 kJ mol⁻¹. Calculate the percentage error.<br/><br/><strong>Solution:</strong><br/>% Error = $|-52.0 - (-57.0)| \\div |-57.0| \\times 100$<br/>% Error = $|5.0| \\div 57.0 \\times 100$<br/>% Error = <strong>8.77%</strong>'
+            },
+            terms: []
+        },
+        {
             id: 'eq-pct-uncert',
             type: 'equation',
             data: {
@@ -63,45 +91,119 @@ export const note_chemistry_3_3A_4 = {
             type: 'callout',
             data: {
                 style: 'worked',
-                title: '✏️ Worked Example — Percentage Uncertainty',
-                text: 'A burette has an uncertainty of ±0.05 cm³ per reading.\nA titre requires two readings (initial + final), so total uncertainty = ±0.10 cm³.\n\nIf the titre is 25.30 cm³:\n% uncertainty = (0.10 / 25.30) × 100 = 0.40%\n\nIf the titre is 5.20 cm³:\n% uncertainty = (0.10 / 5.20) × 100 = 1.92%\n\n→ Smaller measurements have larger percentage uncertainties — this is why titres should not be too small.'
+                title: '✏️ Worked Example 1: Single vs Multiple Measurements',
+                text: '<strong>Single Measurement (e.g., Mass):</strong><br/>A mass of 2.50 g is measured on a balance with ±0.01 g uncertainty.<br/>% Uncertainty = (0.01 / 2.50) × 100 = <strong>0.4%</strong><br/><br/><strong>Multiple Measurements (e.g., Titre Volume):</strong><br/>A burette has an uncertainty of ±0.05 cm³ per reading. A titre requires TWO readings (initial + final), so total absolute uncertainty = ±0.10 cm³.<br/>If the titre is 25.00 cm³:<br/>% Uncertainty = (2 × 0.05 / 25.00) × 100 = <strong>0.4%</strong>'
             },
+            terms: []
+        },
+        {
+            id: 'callout-we2',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: '✏️ Worked Example 2: Measurement Size Effect',
+                text: 'Compare the percentage uncertainty using the same burette (±0.05 cm³ per reading):<br/><strong>a) 10.00 cm³ titre:</strong> % Uncertainty = (0.10 / 10.00) × 100 = <strong>1.0%</strong><br/><strong>b) 25.00 cm³ titre:</strong> % Uncertainty = (0.10 / 25.00) × 100 = <strong>0.4%</strong><br/><br/><strong>Conclusion:</strong> Larger measurements yield <em>lower</em> percentage uncertainties. This is why we use larger sample sizes and titre volumes.'
+            },
+            terms: []
+        },
+        {
+            id: 'h-total-uncert',
+            type: 'heading',
+            data: { text: 'Total Percentage Uncertainty', level: 2 },
+            terms: []
+        },
+        {
+            id: 'callout-we3',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: '✏️ Worked Example 3: Combining Uncertainties',
+                text: 'When combining multiple distinct measurements in a calculation (e.g., mass AND volume), you must <strong>ADD</strong> the percentage uncertainties together.<br/><br/><strong>Question:</strong> In a titration:<br/>Mass weighed: 2.50 g (balance ±0.01 g)<br/>Volume made up: 250 cm³ (flask ±0.15 cm³)<br/>Titre volume: 25.00 cm³ (burette ±0.05 cm³ per reading)<br/>Calculate total percentage uncertainty.<br/><br/><strong>Solution:</strong><br/>Mass: % = (0.01 / 2.50) × 100 = 0.4%<br/>Volumetric Flask: % = (0.15 / 250) × 100 = 0.06%<br/>Burette (2 readings): % = (2 × 0.05 / 25.00) × 100 = 0.4%<br/>Result = 0.4% + 0.06% + 0.4% = <strong>0.86% total uncertainty</strong>'
+            },
+            terms: []
         },
         {
             id: 'h-eval',
             type: 'heading',
-            data: { text: 'Evaluating Methods — What Examiners Expect', level: 2 },
+            data: { text: 'Evaluating Methods & Improving Accuracy', level: 2 },
+            terms: []
         },
         {
-            id: 'list-eval-skills',
-            type: 'list',
-            data: {
-                style: 'unordered',
-                items: [
-                    'Identify the largest source of uncertainty — this limits the overall accuracy',
-                    'Suggest specific, practical improvements (not just "be more careful")',
-                    'Link each source of error to its direction of effect (too high / too low)',
-                    'Explain whether the error is systematic or random',
-                    'Suggest how to check for systematic errors (e.g. use a different method, calibrate instruments)',
-                    'Assess whether the method is valid — does it actually measure what is intended?'
-                ]
-            },
-        },
-        {
-            id: 'table-instruments',
+            id: 'table-improve-general',
             type: 'comparisonTable',
             data: {
-                caption: 'Common instrument uncertainties',
-                headers: ['Instrument', 'Uncertainty', 'Note'],
+                caption: 'General Strategies for Improvement',
+                headers: ['Strategy', 'How it Helps', 'Example'],
                 rows: [
-                    ['Burette (50 cm³)', '±0.05 cm³ per reading', 'Two readings per titre → ±0.10 cm³'],
-                    ['Volumetric pipette (25 cm³)', '±0.06 cm³', 'More precise than measuring cylinder'],
-                    ['Measuring cylinder (100 cm³)', '±0.5 cm³', 'Less precise — use for approximate volumes'],
-                    ['Electronic balance (2 d.p.)', '±0.01 g', 'Weigh by difference to cancel zero error'],
-                    ['Thermometer (0.5°C)', '±0.5 °C', 'Use digital for better precision (±0.1 °C)'],
-                    ['Volumetric flask (250 cm³)', '±0.23 cm³', 'Used for making standard solutions']
+                    ['Use more precise equipment', 'Reduces absolute uncertainty', 'Using a 3 d.p. balance instead of 2 d.p.'],
+                    ['Increase measurement size', 'Reduces percentage uncertainty', 'Using a larger mass or titre volume'],
+                    ['Repeat measurements', 'Reduces random error', 'Taking 3+ concordant titres and averaging'],
+                    ['Calibrate equipment', 'Reduces systematic error', 'Checking a balance with standard weights']
                 ]
             },
+            terms: []
+        },
+        {
+            id: 'h-errors-titration',
+            type: 'heading',
+            data: { text: 'Specific Error Analysis: Titrations', level: 3 },
+            terms: []
+        },
+        {
+            id: 'table-errors-titration',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Common Titration Errors',
+                headers: ['Error Source', 'Effect on Result', 'Type of Error'],
+                rows: [
+                    ['Air bubble in burette jet releases during titre', 'Titre volume recorded is too high', 'Systematic or Random'],
+                    ['Not rinsing burette with titrant', 'Titre volume too high (titrant is diluted by water)', 'Systematic'],
+                    ['Overshooting the end point', 'Titre volume too high', 'Random'],
+                    ['Wrong indicator chosen', 'End point does not match equivalence point volume', 'Systematic']
+                ]
+            },
+            terms: []
+        },
+        {
+            id: 'h-errors-mass',
+            type: 'heading',
+            data: { text: 'Specific Error Analysis: Mass & Temperature', level: 3 },
+            terms: []
+        },
+        {
+            id: 'table-errors-mass',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Common Mass and Temperature Errors',
+                headers: ['Error Source', 'Effect', 'Type of Error'],
+                rows: [
+                    ['Balance not tared/zeroed', 'All masses offset by same amount', 'Systematic'],
+                    ['Weighing a hot/warm object', 'Convection currents lift the pan, reading fluctuates or is too low', 'Systematic/Random'],
+                    ['Hygroscopic substance absorbs moisture', 'Recorded mass is too high', 'Systematic'],
+                    ['Heat loss to surroundings (Enthalpy)', 'Temperature change (ΔT) is always lower than it should be', 'Systematic']
+                ]
+            },
+            terms: []
+        },
+        {
+            id: 'callout-we4',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: '✏️ Worked Example 4: Percentage Error vs Uncertainty Bounds',
+                text: '<strong>Question:</strong> A student determines the M_r of a gas as 42.0. The true value is 44.0. The experimental uncertainty is 5%.<br/>a) Calculate the percentage error.<br/>b) Is the error within the experimental uncertainty?<br/><br/><strong>Solution:</strong><br/>a) % Error = $|42.0 - 44.0| \\div 44.0 \\times 100$ = <strong>4.55%</strong><br/><br/>b) Uncertainty range: $42.0 \\pm 5\\%$ = $42.0 \\pm 2.1$.<br/>The bounds are 39.9 to 44.1. The true value (44.0) falls <strong>within</strong> this range, so yes.'
+            },
+            terms: []
+        },
+        {
+            id: 'callout-we-identify',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: '✏️ Worked Example 5: Identifying Error Types',
+                text: 'Identify whether each error is random or systematic:<br/>a) Balance reads 0.02 g too high $\\rightarrow$ <strong>Systematic</strong> (always in same direction, calibration error)<br/>b) Different students read the burette differently $\\rightarrow$ <strong>Random</strong> (unpredictable parallax error)<br/>c) Heat escapes during enthalpy experiment $\\rightarrow$ <strong>Systematic</strong> (always causes a lower temperature change)'
+            },
+            terms: []
         },
         {
             id: 'callout-tip',
@@ -109,8 +211,9 @@ export const note_chemistry_3_3A_4 = {
             data: {
                 style: 'tip',
                 title: '💬 Exam Tip — Evaluation Questions',
-                text: 'When asked to evaluate a method:\n1. Identify the biggest source of error\n2. State whether it is systematic or random\n3. State the direction of effect (result too high/low)\n4. Suggest a specific improvement\n5. Explain how the improvement would reduce the error\n\nAvoid vague answers like "use better equipment" — name the specific instrument and explain why.'
+                text: 'When asked to evaluate a method:\n1. Identify the biggest source of error\n2. State whether it is systematic or random\n3. State the direction of effect (result too high/low)\n4. Suggest a specific improvement\n\nAvoid vague answers like "use better equipment" — name the specific instrument (e.g., "Use a 3 d.p. balance instead of 2 d.p. to reduce percentage uncertainty").'
             },
+            terms: []
         },
         // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
         // ── SUMMARY ─────────────────────────────────────────────────────────
@@ -136,13 +239,18 @@ export const note_chemistry_3_3A_4 = {
     recall: {
         enabled: true,
         cues: [
-            { id: 'cue-1', blockId: 'callout-key-terms', prompt: 'Define accuracy, precision, reliability and validity.' },
-            { id: 'cue-2', blockId: 'eq-pct-error', prompt: 'State the formula for percentage error.' },
+            { id: 'cue-1', blockId: 'callout-key-terms', prompt: 'Define accuracy vs precision, and reliability vs validity.' },
+            { id: 'cue-error-types', blockId: 'table-random-systematic', prompt: 'State the difference between random and systematic errors in terms of predictability, effect on results, and how to reduce them.' },
+            { id: 'cue-2', blockId: 'eq-pct-error', prompt: 'State the formula for percentage error. Does a negative answer matter?' },
             { id: 'cue-3', blockId: 'eq-pct-uncert', prompt: 'State the formula for percentage uncertainty.' },
-            { id: 'cue-4', blockId: 'callout-we1', prompt: 'A burette has ±0.05 cm³ uncertainty. Calculate % uncertainty for a 25.30 cm³ titre.' },
-            { id: 'cue-5', blockId: 'list-eval-skills', prompt: 'What should you include when evaluating a practical method?' },
+            { id: 'cue-4', blockId: 'callout-we1', prompt: 'Why must you multiply the absolute uncertainty of a burette reading by 2 when calculating the percentage uncertainty of a titre?' },
+            { id: 'cue-measure-size', blockId: 'callout-we2', prompt: 'What effect does using a LARGER measurement (e.g. 25cm³ titre instead of 10cm³) have on the percentage uncertainty?' },
+            { id: 'cue-combine', blockId: 'callout-we3', prompt: 'How do you calculate the TOTAL percentage uncertainty for an experiment involving multiple measurements (e.g., mass and titre)?' },
+            { id: 'cue-eval-strategies', blockId: 'table-improve-general', prompt: 'State four general strategies to improve experimental accuracy/precision.' },
+            { id: 'cue-errors-titre', blockId: 'table-errors-titration', prompt: 'In a titration, what is the effect on the titre volume if your burette jet contains an air bubble that releases during the titration?' },
+            { id: 'cue-errors-mass', blockId: 'table-errors-mass', prompt: 'In a mass measurement, what is the effect of weighing a completely hot/warm object?' }
         ],
-        summaryText: 'Errors: random (reduced by repeating) vs systematic (not reduced). Accuracy vs precision. % error and % uncertainty formulae. Evaluate by identifying largest source, direction, and improvement.',
+        summaryText: 'Random vs Systematic: Random = unpredictable, affects precision, fix by repeating. Systematic = predictable offset, affects accuracy, fix by calibrating. % Error = |Exp - True| / True × 100. % Uncertainty = (Uncertainty / Measurement) × 100. *Burettes require ×2 uncertainty* because you read them twice. Larger measurements = lower % uncertainty. Total % Uncertainty = Sum of all % uncertainties. Common Errors: Air bubble (titre too high), Hot object on balance (convection lifts pan, reading too low).',
         ready: false
     },
     evidence: [

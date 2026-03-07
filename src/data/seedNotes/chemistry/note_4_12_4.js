@@ -229,6 +229,28 @@ export const note_chemistry_4_12_4 = {
         ]
       }
     },
+    {
+      id: "h-graph",
+      type: "heading",
+      data: { "text": "Analyzing ΔG vs T Graphs", "level": 2 }
+    },
+    {
+      id: "p-graph",
+      type: "paragraph",
+      data: { "text": "You can plot ΔG on the y-axis against Temperature (T) on the x-axis. Comparing this to the equation of a straight line (y = mx + c):<br/><strong>ΔG = (−ΔS)T + ΔH</strong><br/>y = mx + c" }
+    },
+    {
+      id: "list-graph",
+      type: "list",
+      data: {
+        style: "bullet",
+        items: [
+          "<strong>y-intercept (c):</strong> The value where the line crosses the y-axis is the enthalpy change (<strong>ΔH</strong>).",
+          "<strong>Gradient (m):</strong> The slope of the line is exactly <strong>−ΔS</strong>. (So if the graph goes <em>downwards</em>, −ΔS is negative, which means ΔS is <em>positive</em>!).",
+          "<strong>x-intercept:</strong> The point where the line crosses the x-axis (where ΔG = 0) is the exact temperature (T) at which the reaction becomes feasible."
+        ]
+      }
+    },
     // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
     {
       id: 'bloom-understand',
@@ -270,9 +292,14 @@ export const note_chemistry_4_12_4 = {
         id: 'cue-4',
         blockId: 'h-critical-temperature',
         prompt: 'Derive the formula for critical temperature and explain when it applies.'
+      },
+      {
+        id: 'cue-5',
+        blockId: 'h-graph',
+        prompt: 'When plotting a graph of ΔG against Temperature (T), what do the y-intercept, gradient, and x-intercept represent?'
       }
     ],
-    summaryText: 'ΔG = ΔH − TΔS < 0 is spontaneous. Four cases: (1) ΔH<0, ΔS>0 always spontaneous; (2) ΔH>0, ΔS<0 never spontaneous; (3) ΔH>0, ΔS>0 spontaneous above T_crit; (4) ΔH<0, ΔS<0 spontaneous below T_crit. T_crit = ΔH / ΔS.',
+    summaryText: 'ΔG = ΔH − TΔS < 0 is spontaneous. Four cases. T_crit = ΔH / ΔS. On a ΔG vs T graph: y-intercept is ΔH, gradient is −ΔS, and x-intercept is T_crit.',
     ready: false
   },
   evidence: [

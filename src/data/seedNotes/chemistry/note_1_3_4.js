@@ -1,183 +1,225 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 3 · Subtopic 4
+ * "Shapes of molecules — VSEPR theory"
+ * Source: Pearson Edexcel IAL Chemistry — Section 3B.2
+ */
 export const note_chemistry_1_3_4 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Explain how ionic radius and ionic charge affect the strength of ionic bonding and the melting point of ionic compounds; compare melting points of different ionic compounds.'
-    }
-  }, {
-    id: 'h-strength',
-    type: 'heading',
-    data: {
-      text: 'Factors Affecting Ionic Bond Strength',
-      level: 2
-    }
-  }, {
-    id: 'p-intro',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["The strength of an ionic bond (and the lattice energy of an ionic compound) depends on two key factors: the charge on the ions and the size (radius) of the ions.", "These are summarised by Coulomb's Law: the force between two charged species is proportional to the product of their charges and inversely proportional to the square of the distance between them."]
-    }
-  }, {
-    id: 'eq-coulomb',
-    type: 'equation',
-    data: {
-      html: 'F ∝ <span class="nb-frac"><span class="nb-num">Q₁ × Q₂</span><span class="nb-den">r²</span></span>',
-      caption: 'Coulomb\'s Law — F = electrostatic force, Q = ionic charges, r = distance between ion centres (sum of ionic radii)'
-    }
-  }, {
-    id: 'h-charge',
-    type: 'heading',
-    data: {
-      text: '1. Effect of Ionic Charge',
-      level: 2
-    }
-  }, {
-    id: 'p-charge',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Higher ionic charges result in stronger electrostatic attraction between ions \u2192 higher lattice energy \u2192 higher melting point.", "For example, MgO (Mg\xB2\u207A and O\xB2\u207B) has a much higher melting point than NaCl (Na\u207A and Cl\u207B) because the ions in MgO carry double the charge."]
-    }
-  }, {
-    id: 'table-charge',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Effect of charge on melting point',
-      headers: ['Compound', 'Cation', 'Anion', 'Charge product (Q₁×Q₂)', 'Melting point / °C'],
-      rows: [['NaCl', 'Na⁺ (+1)', 'Cl⁻ (−1)', '1 × 1 = 1', '801'], ['MgO', 'Mg²⁺ (+2)', 'O²⁻ (−2)', '2 × 2 = 4', '2852'], ['NaF', 'Na⁺ (+1)', 'F⁻ (−1)', '1 × 1 = 1', '993'], ['MgF₂', 'Mg²⁺ (+2)', 'F⁻ (−1)', '2 × 1 = 2', '1263']]
-    }
-  }, {
-    id: 'h-radius',
-    type: 'heading',
-    data: {
-      text: '2. Effect of Ionic Radius',
-      level: 2
-    }
-  }, {
-    id: 'p-radius',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Smaller ions can get closer together, reducing the distance r between ion centres.", "A smaller r means a stronger electrostatic force \u2192 stronger ionic bond \u2192 higher melting point.", "Conversely, larger ions are further apart, leading to weaker forces and lower melting points."]
-    }
-  }, {
-    id: 'table-radius',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Effect of ionic radius on melting point (all 1+/1− compounds)',
-      headers: ['Compound', 'Cation radius / pm', 'Anion radius / pm', 'Melting point / °C'],
-      rows: [['LiF', '76', '133', '848'], ['LiCl', '76', '181', '605'], ['NaCl', '102', '181', '801'], ['KCl', '138', '181', '770'], ['KBr', '138', '196', '734'], ['KI', '138', '220', '681']]
-    }
-  }, {
-    id: 'p-radius2',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Going down Group 1 (Li \u2192 K), the cation radius increases \u2192 ions are further apart \u2192 weaker forces \u2192 lower melting point.", "Going down Group 17 (F \u2192 I), the anion radius also increases \u2192 lower melting points.", "Both trends are consistent with Coulomb's Law."]
-    }
-  }, {
-    id: 'h-ionic-radius-trends',
-    type: 'heading',
-    data: {
-      text: 'Trends in Ionic Radius',
-      level: 2
-    }
-  }, {
-    id: 'list-radius-trends',
-    type: 'list',
-    data: {
-      style: 'bullet',
-      items: ['Down a group: ionic radius increases (more electron shells)', 'Across a period (isoelectronic ions): radius decreases as nuclear charge increases (e.g. O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺ — all have 10 electrons)', 'Cations are smaller than the parent atom (lost electrons → less shielding, nucleus pulls remaining electrons closer)', 'Anions are larger than the parent atom (gained electrons → more repulsion, electrons spread out)']
-    }
-  }, {
-    id: 'callout-key',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Key comparison — NaCl vs MgO',
-      text: 'NaCl: Na⁺ (1+), Cl⁻ (1−) → charge product = 1. Melting point 801°C.\nMgO: Mg²⁺ (2+), O²⁻ (2−) → charge product = 4. Melting point 2852°C.\n\nMgO has a much higher mp because:\n1. Higher ionic charges → much stronger electrostatic attraction\n2. Smaller ionic radii (Mg²⁺ smaller than Na⁺; O²⁻ smaller than Cl⁻) → ions closer together → stronger forces'
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam tip — always give two reasons for melting point differences',
-      text: 'When comparing melting points of two ionic compounds, consider BOTH charge AND radius:\n1. State which has larger charge product (if different)\n2. State which has smaller ionic radii (if relevant)\nAlways conclude: "stronger electrostatic attraction → more energy to break lattice → higher melting point."'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'State the two factors that affect ionic bond strength',
-        checked: false
-      }, {
-        text: 'Explain why MgO has a higher melting point than NaCl',
-        checked: false
-      }, {
-        text: 'Explain the trend in melting point going down Group 1 halides',
-        checked: false
-      }, {
-        text: 'Explain why cations are smaller and anions are larger than their parent atoms',
-        checked: false
-      }, {
-        text: 'Compare ionic radii of isoelectronic ions across a period',
-        checked: false
-      }]
-    }
-  },
-  // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Ionic bond strength depends on charge and radius — F ∝ q₁q₂/r² (Coulomb\'s law). Smaller, more charged ions form stronger lattices.\n\nApply: Predict which has higher m.p.: NaCl or MgO. Justify using charges and radii.\n\nAnalyze: Why does LiF have higher m.p. than LiI? Quantify the effect of anion size on lattice energy.\n\nEvaluate: Be compounds show significant covalent character despite Be²⁺ being highly charged. Explain using Fajans\' rules.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Use VSEPR theory to predict and explain the shapes of simple molecules and ions. Know the bond angles for all common shapes. Understand the effect of lone pairs on bond angles.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'Ionic bond strength ∝ charge / r². Higher charge → stronger forces → higher mp (MgO > NaCl). Smaller ions → closer together → stronger forces (LiF > KI). Cations smaller than parent atom; anions larger. Isoelectronic series: radius decreases with increasing nuclear charge (O²⁻ > F⁻ > Na⁺ > Mg²⁺).'
+    {
+      id: 'h-vsepr',
+      type: 'heading',
+      data: { text: 'VSEPR Theory', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-vsepr',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Valence Shell Electron Pair Repulsion (VSEPR)',
+        text: 'Electron pairs (both bonding pairs and lone pairs) around a central atom repel each other and <strong>arrange themselves to be as far apart as possible</strong>, minimising repulsion. This determines the shape of the molecule.<br/><br/>Repulsion order: <strong>lone pair–lone pair > lone pair–bonding pair > bonding pair–bonding pair</strong><br/><br/>Each lone pair reduces bond angles by approximately 2.5°.'
+      },
+      terms: ['VSEPR', 'Lone pair', 'Bonding pair']
+    },
+    {
+      id: 'h-shapes',
+      type: 'heading',
+      data: { text: 'Common Shapes and Bond Angles', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-shapes',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Molecular shapes (VSEPR) — from the textbook',
+        headers: ['Shape', 'Bonding Pairs', 'Lone Pairs', 'Bond Angle', 'Example'],
+        rows: [
+          ['Linear', '2', '0', '180°', 'CO₂, BeCl₂'],
+          ['Trigonal planar', '3', '0', '120°', 'BF₃, SO₃'],
+          ['Tetrahedral', '4', '0', '109.5°', 'CH₄, CCl₄, NH₄⁺'],
+          ['Pyramidal (trigonal pyramidal)', '3', '1', '107°', 'NH₃, PCl₃'],
+          ['Bent (V-shaped)', '2', '2', '104.5°', 'H₂O'],
+          ['Trigonal bipyramidal', '5', '0', '90°/120°', 'PCl₅'],
+          ['Octahedral', '6', '0', '90°', 'SF₆']
+        ]
+      },
+      terms: ['Linear', 'Trigonal planar', 'Tetrahedral', 'Pyramidal', 'Bent', 'Octahedral']
+    },
+    {
+      id: 'svg-shapes',
+      type: 'svg',
+      data: {
+        caption: 'Figure: Common molecular shapes — bond angles and lone pairs',
+        svg: `<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+
+  <!-- LINEAR: CO₂ -->
+  <text x="68" y="15" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">Linear</text>
+  <text x="68" y="27" text-anchor="middle" fill="#64748b" font-size="10">180°</text>
+  <circle cx="20" cy="70" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="20" y="74" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
+  <line x1="34" y1="70" x2="54" y2="70" stroke="#334155" stroke-width="2"/>
+  <circle cx="68" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="68" y="74" text-anchor="middle" fill="#1e40af" font-size="10">C</text>
+  <line x1="82" y1="70" x2="102" y2="70" stroke="#334155" stroke-width="2"/>
+  <circle cx="116" cy="70" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="116" y="74" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
+  <text x="68" y="100" text-anchor="middle" fill="#64748b" font-size="10">e.g. CO₂, BeCl₂</text>
+
+  <!-- TRIGONAL PLANAR: BF₃ -->
+  <text x="220" y="15" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">Trigonal Planar</text>
+  <text x="220" y="27" text-anchor="middle" fill="#64748b" font-size="10">120°</text>
+  <circle cx="220" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="220" y="74" text-anchor="middle" fill="#1e40af" font-size="10">B</text>
+  <line x1="220" y1="56" x2="220" y2="36" stroke="#334155" stroke-width="2"/>
+  <circle cx="220" cy="24" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="220" y="28" text-anchor="middle" fill="#166534" font-size="10">F</text>
+  <line x1="208" y1="77" x2="190" y2="93" stroke="#334155" stroke-width="2"/>
+  <circle cx="181" cy="100" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="181" y="104" text-anchor="middle" fill="#166534" font-size="10">F</text>
+  <line x1="232" y1="77" x2="250" y2="93" stroke="#334155" stroke-width="2"/>
+  <circle cx="259" cy="100" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="259" y="104" text-anchor="middle" fill="#166534" font-size="10">F</text>
+  <text x="220" y="120" text-anchor="middle" fill="#64748b" font-size="10">e.g. BF₃, SO₃</text>
+
+  <!-- TETRAHEDRAL: CH₄ -->
+  <text x="370" y="15" text-anchor="middle" fill="#7c3aed" font-weight="bold" font-size="12">Tetrahedral</text>
+  <text x="370" y="27" text-anchor="middle" fill="#64748b" font-size="10">109.5°</text>
+  <circle cx="370" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="370" y="74" text-anchor="middle" fill="#1e40af" font-size="10">C</text>
+  <line x1="370" y1="56" x2="370" y2="36" stroke="#334155" stroke-width="2"/>
+  <circle cx="370" cy="24" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="370" y="28" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <line x1="358" y1="63" x2="335" y2="50" stroke="#334155" stroke-width="2"/>
+  <circle cx="325" cy="44" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="325" y="48" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <line x1="382" y1="63" x2="405" y2="50" stroke="#334155" stroke-width="2"/>
+  <circle cx="415" cy="44" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="415" y="48" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <line x1="370" y1="84" x2="370" y2="104" stroke="#334155" stroke-width="2" stroke-dasharray="4,2"/>
+  <circle cx="370" cy="116" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="370" y="120" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <text x="370" y="136" text-anchor="middle" fill="#64748b" font-size="10">e.g. CH₄, NH₄⁺</text>
+
+  <!-- PYRAMIDAL: NH₃ -->
+  <text x="525" y="15" text-anchor="middle" fill="#b45309" font-weight="bold" font-size="12">Pyramidal</text>
+  <text x="525" y="27" text-anchor="middle" fill="#64748b" font-size="10">107°</text>
+  <circle cx="525" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="525" y="74" text-anchor="middle" fill="#1e40af" font-size="10">N</text>
+  <!-- Lone pair arc -->
+  <path d="M515,58 Q525,45 535,58" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <text x="525" y="44" text-anchor="middle" fill="#b45309" font-size="9">LP</text>
+  <line x1="513" y1="77" x2="495" y2="98" stroke="#334155" stroke-width="2"/>
+  <circle cx="487" cy="107" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="487" y="111" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <line x1="525" y1="84" x2="525" y2="104" stroke="#334155" stroke-width="2"/>
+  <circle cx="525" cy="116" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="525" y="120" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <line x1="537" y1="77" x2="555" y2="98" stroke="#334155" stroke-width="2"/>
+  <circle cx="563" cy="107" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="563" y="111" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <text x="525" y="136" text-anchor="middle" fill="#64748b" font-size="10">e.g. NH₃, PCl₃</text>
+
+  <!-- BENT: H₂O -->
+  <text x="645" y="15" text-anchor="middle" fill="#be185d" font-weight="bold" font-size="12">Bent</text>
+  <text x="645" y="27" text-anchor="middle" fill="#64748b" font-size="10">104.5°</text>
+  <circle cx="645" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="645" y="74" text-anchor="middle" fill="#1e40af" font-size="10">O</text>
+  <!-- 2 lone pairs -->
+  <path d="M633,58 Q640,46 650,58" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M638,54 Q645,42 655,54" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="645" y="42" text-anchor="middle" fill="#b45309" font-size="9">2LP</text>
+  <line x1="633" y1="77" x2="615" y2="98" stroke="#334155" stroke-width="2"/>
+  <circle cx="607" cy="107" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="607" y="111" text-anchor="middle" fill="#7f1d1d" font-size="10">H</text>
+  <line x1="657" y1="77" x2="675" y2="98" stroke="#334155" stroke-width="2"/>
+  <circle cx="683" cy="107" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="683" y="111" text-anchor="middle" fill="#7f1d1d" font-size="10">H</text>
+  <text x="645" y="136" text-anchor="middle" fill="#64748b" font-size="10">e.g. H₂O</text>
+
+  <!-- Legend -->
+  <rect x="10" y="155" width="680" height="1" fill="#e2e8f0"/>
+  <text x="350" y="172" text-anchor="middle" fill="#64748b" font-size="10">LP = lone pair (not shown as atoms but takes up space and pushes bonding pairs closer)</text>
+  <text x="350" y="185" text-anchor="middle" fill="#64748b" font-size="10">More lone pairs → smaller bond angle: CH₄ (109.5°) → NH₃ (107°) → H₂O (104.5°)</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
+      id: 'callout-nh3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked: NH₃ and H₂O bond angles explained',
+        text: '<strong>NH₃ (ammonia):</strong><br/>4 electron pairs around N (3 bonding, 1 lone pair).<br/>Based on 4 pairs → starts as tetrahedral arrangement BUT shape (based only on atoms) = <strong>trigonal pyramidal</strong>.<br/>1 lone pair pushes bonding pairs closer together → bond angle = <strong>107°</strong> (less than 109.5°).<br/><br/><strong>H₂O (water):</strong><br/>4 electron pairs around O (2 bonding, 2 lone pairs).<br/>Shape = <strong>bent/V-shaped</strong>.<br/>2 lone pairs push bonding pairs even more → bond angle = <strong>104.5°</strong>.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-double',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Double and triple bonds count as ONE electron pair',
+        text: 'For the purpose of VSEPR, a double bond counts as one region of electron density (one pair), not two. So CO₂ has 2 regions around C → linear (180°). This is why CO₂ is linear despite having 4 bonding pairs from the two double bonds.'
+      },
+      terms: []
+    },
+    {
+      id: 'h-practice-vsepr',
+      type: 'heading',
+      data: { text: 'Practice Questions', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-pq-vsepr1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q1: Predict Shape and Bond Angle of PCl₃',
+        text: '<strong>Question:</strong> Using VSEPR theory, predict the shape and bond angle of PCl₃.<br/><br/><strong>Step 1 — Count electron pairs around P:</strong><br/>P has 5 outer electrons. It forms 3 bonds with Cl (3 bonding pairs) + 1 lone pair = 4 electron pairs total.<br/><br/><strong>Step 2 — Base shape:</strong><br/>4 pairs → tetrahedral arrangement of electron pairs.<br/><br/><strong>Step 3 — Shape from atom positions only:</strong><br/>1 lone pair present → shape = <strong>trigonal pyramidal</strong> (same as NH₃)<br/><br/><strong>Step 4 — Bond angle:</strong><br/>Lone pair exerts more repulsion than bonding pairs → bond angle <strong>&lt; 109.5°, approximately 107°</strong>.<br/><br/><em>In exam: always state the shape name AND the bond angle, and justify why the angle is reduced from the ideal.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-vsepr2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q2: Why Does Bond Angle Decrease CH₄ > NH₃ > H₂O?',
+        text: '<strong>Question:</strong> Explain why the bond angle decreases in the order CH₄ (109.5°) > NH₃ (107°) > H₂O (104.5°).<br/><br/><strong>All three molecules have 4 electron pairs around the central atom.</strong><br/><br/>• CH₄: 4 bonding pairs, 0 lone pairs → perfectly tetrahedral → 109.5°<br/>• NH₃: 3 bonding pairs, 1 lone pair → lone pair takes up more space, pushes bonding pairs together → 107°<br/>• H₂O: 2 bonding pairs, 2 lone pairs → two lone pairs each exert greater repulsion → bonding pairs pushed even closer → 104.5°<br/><br/><strong>Key rule:</strong> lone pair–lone pair repulsion &gt; lone pair–bonding pair &gt; bonding pair–bonding pair. Each lone pair reduces the bond angle.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-vsepr3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q3: Outer Configuration of Arsenic (Video Past Paper)',
+        text: '<strong>Question:</strong> The outer electron configuration of carbon is 2s² 2p². Write the outer configuration of arsenic (As) and explain how you deduced it.<br/><br/><strong>Step 1 — Locate As on periodic table:</strong><br/>As is in Period 4, Group 5.<br/><br/><strong>Step 2 — Determine which subshells:</strong><br/>Group 5 → As is in the p-block. Period 4 → outer electrons are in quantum shell 4.<br/>Group 5 means 5 outer electrons: 2 in 4s and 3 in 4p.<br/><br/><strong>Outer electronic configuration: 4s² 4p³</strong><br/><br/><strong>Box notation for 4p:</strong> [↑][↑][↑] — three separate orbitals each with one electron (Hund\'s rule), same as the 2p³ arrangement in N.<br/><br/><em>Since As is in the same group as N and P, they all have the same outer shell configuration (just in higher quantum shells).</em>'
+      },
+      terms: []
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'eq-coulomb',
-      prompt: 'State Coulomb\'s Law and explain what each symbol means in the context of ionic bonding.'
-    }, {
-      id: 'cue-2',
-      blockId: 'table-charge',
-      prompt: 'Why does MgO have a much higher melting point than NaCl?'
-    }, {
-      id: 'cue-3',
-      blockId: 'table-radius',
-      prompt: 'Why does LiF have a higher melting point than KI, given both are 1+/1− compounds?'
-    }, {
-      id: 'cue-4',
-      blockId: 'list-radius-trends',
-      prompt: 'Why is a cation smaller than its parent atom? Why is an anion larger?'
-    }, {
-      id: 'cue-5',
-      blockId: 'list-radius-trends',
-      prompt: 'Place in order of decreasing ionic radius: Na⁺, Mg²⁺, O²⁻, F⁻, Al³⁺.'
-    }],
-    summaryText: 'Bond strength ∝ Q₁Q₂/r². Higher charge → stronger (MgO > NaCl). Smaller radius → stronger (LiF > KI). Cation < parent atom. Anion > parent atom. Isoelectronic: O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺.',
+    cues: [
+      { id: 'c1', blockId: 'callout-vsepr', prompt: 'State the core principle of VSEPR theory.' },
+      { id: 'c2', blockId: 'callout-vsepr', prompt: 'State the order of repulsion strength: lone pair vs bonding pair.' },
+      { id: 'c3', blockId: 'table-shapes', prompt: 'Give the shape and bond angle of: (a) CH₄, (b) NH₃, (c) H₂O, (d) BF₃.' },
+      { id: 'c4', blockId: 'callout-nh3', prompt: 'Why is the bond angle in NH₃ (107°) less than in CH₄ (109.5°)?' },
+      { id: 'c5', blockId: 'callout-pq-vsepr2', prompt: 'Explain why bond angle decreases in the order CH₄ > NH₃ > H₂O, using repulsion theory.' },
+      { id: 'c6', blockId: 'callout-pq-vsepr1', prompt: 'Predict the shape and bond angle of PCl₃. Justify your answer using VSEPR.' }
+    ],
+    summaryText: 'VSEPR: electron pairs repel and spread as far as possible. LP-LP > LP-BP > BP-BP repulsion. Each lone pair reduces bond angles ≈ 2.5°. Shapes: 0LP=tetrahedral(109.5°), 1LP=pyramidal(107°), 2LP=bent(104.5°), 3=trigonal planar(120°), 2bp=linear(180°). Double bond counts as one region of electron density.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'Edexcel IAL Chemistry Specification — Topic 3',
-    detail: 'Ionic size, charge and lattice strength',
-    year: '2018',
-    source: 'Pearson Edexcel',
-    tags: ['ionic bonding', 'ionic radius', 'melting point']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_3_4;

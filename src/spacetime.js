@@ -1,8 +1,8 @@
 import { Identity } from 'spacetimedb';
 import { DbConnection } from './spacetime/index.js';
 
-const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI || 'https://maincloud.spacetimedb.com';
-const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE || 'spacetime-backend-otpgp';
+const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI || 'http://localhost:3000';
+const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE || 'spacetime-backend-dev';
 
 export let client = null;
 let currentIdentity = null;

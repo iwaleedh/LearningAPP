@@ -9,6 +9,90 @@ export const note_chemistry_4_12_6 = {
     },
     {
       type: 'heading',
+      id: 'h-lattice-factors',
+      data: { text: 'Factors Affecting Lattice Energy', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-lattice-factors',
+      data: { text: 'The magnitude of Lattice Energy depends heavily on the electrostatic attraction between the ions. This is governed by two factors:' }
+    },
+    {
+      type: 'list',
+      id: 'list-lattice',
+      data: {
+        style: 'numbered',
+        items: [
+          '<strong>Ionic Charge:</strong> This has the biggest effect. Doubling the charge of an ion roughly doubles the lattice energy (e.g. Mg²⁺ vs Na⁺).',
+          '<strong>Ionic Radius:</strong> Smaller ions can pack closer together, resulting in stronger electrostatic attraction and a more exothermic lattice energy.'
+        ]
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-covalent',
+      data: { text: 'Experimental vs Theoretical Lattice Energy', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-covalent',
+      data: { text: 'Theoretical lattice energies are calculated using the <strong>Perfect Ionic Model</strong>, which assumes ions are perfect, un-distorted solid spheres. A significant difference between the theoretical value and the experimental value (from a Born-Haber cycle) indicates the presence of <strong>Covalent Character</strong>.' }
+    },
+    {
+      type: 'callout',
+      id: 'callout-fajans',
+      data: {
+        style: 'key',
+        title: 'Fajans\' Rules for Polarization',
+        text: 'Covalent character arises when the positive cation distorts (polarizes) the electron cloud of the negative anion. Polarization is highest when:<br/>1. The cation is small and highly charged (high charge density).<br/>2. The anion is large and highly charged (electrons are further from the nucleus).<br/><br/><em>Example: Silver iodide (AgI) has a much more exothermic experimental lattice energy than its theoretical value because the large I⁻ ion is heavily polarized by the Ag⁺ ion, causing significant covalent overlap.</em>'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-hydration',
+      data: { text: 'Enthalpies of Solution and Hydration', level: 2 }
+    },
+    {
+      type: 'callout',
+      id: 'callout-def-sol',
+      data: {
+        style: 'key',
+        title: 'Definitions',
+        text: '<strong>Enthalpy of Hydration (ΔH_hyd):</strong> The energy released when one mole of gaseous ions is completely surrounded by water molecules. (Always exothermic because bonds are made between ions and water dipoles).<br/><br/><strong>Enthalpy of Solution (ΔH_sol):</strong> The enthalpy change when one mole of an ionic solid dissolves in water. It can be exothermic or endothermic.'
+      }
+    },
+    {
+      type: 'equation',
+      id: 'eq-sol-cycle',
+      data: {
+        html: 'ΔH<sub>sol</sub> = −ΔH<sub>lattice</sub> + ΣΔH<sub>hydration</sub>',
+        caption: 'The solution energy cycle'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-group2',
+      data: { text: 'Solubility Trends in Group 2', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-group2',
+      data: { text: 'We can explain the opposite solubility trends of Group 2 Hydroxides vs Sulfates by comparing the rate at which Lattice Energy and Hydration Enthalpy decrease as the cation gets larger down the group.' }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-group2',
+      data: {
+        caption: 'Group 2 Solubility Trends',
+        headers: ['Compound', 'Trend Down Group', 'Explanation'],
+        rows: [
+          ['Sulfates', 'BECOME LESS SOLUBLE', 'Both Lattice and Hydration enthalpies become less negative (fall in magnitude) down the group. However, because sulfate is a large ion, Lattice Enthalpy falls <em>slower</em> than Hydration Enthalpy. Therefore, ΔH_sol becomes more endothermic.'],
+          ['Hydroxides', 'BECOME MORE SOLUBLE', 'Because hydroxide is a small ion, the distance from cation to anion matters immensely. Here, Lattice Enthalpy falls <em>much faster</em> than Hydration Enthalpy. Therefore, ΔH_sol becomes more exothermic (favorable).']
+        ]
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-lattice-formation',
       data: {
         text: 'Lattice Enthalpy: Formation and Dissociation',
@@ -232,13 +316,28 @@ export const note_chemistry_4_12_6 = {
     enabled: true,
     cues: [
       {
+        id: 'cue-0a',
+        blockId: 'list-lattice',
+        prompt: 'Which factor has a larger effect on Lattice Energy magnitude: Ionic Charge or Ionic Radius?'
+      },
+      {
+        id: 'cue-0b',
+        blockId: 'callout-fajans',
+        prompt: 'According to Fajans\' Rules, what characteristics make an ion highly polarizing (cation) or easily polarizable (anion)?'
+      },
+      {
+        id: 'cue-0c',
+        blockId: 'table-group2',
+        prompt: 'Explain why Group 2 Sulfates become less soluble down the group while Hydroxides become more soluble.'
+      },
+      {
         id: 'cue-1',
         blockId: 'h-lattice-formation',
         prompt: 'Explain the difference between lattice enthalpy (formation) and lattice enthalpy (dissociation).'
       },
       {
         id: 'cue-2',
-        blockId: 'h-hydration-enthalpy',
+        blockId: 'callout-def-sol',
         prompt: 'Define hydration enthalpy. Explain why Mg²⁺ has a much larger hydration enthalpy than Na⁺.'
       },
       {
@@ -257,7 +356,7 @@ export const note_chemistry_4_12_6 = {
         prompt: 'Sketch an enthalpy level diagram for an endothermic dissolution process.'
       }
     ],
-    summaryText: 'Lattice enthalpy (dissociation) breaks solid to gaseous ions (endothermic, +ve). Hydration enthalpy aquates ions (exothermic, −ve). Solution enthalpy = ΔH_latt + ΣΔH_hyd. Small, highly charged ions have large |ΔH_hyd|. Dissolution is exothermic if hydration > lattice; endothermic if lattice > hydration.',
+    summaryText: 'Ionic Charge controls lattice magnitude more than radius. Covalent character is shown by discrepancies with the perfect ionic model (due to polarization/Fajans\' rules). ΔH_sol = −ΔH_latt + ΣΔH_hyd. Sulfates become less soluble (lattice falls slower), hydroxides more soluble down group 2.',
     ready: false
   },
   evidence: [

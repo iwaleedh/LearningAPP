@@ -29,6 +29,36 @@ export const note_chemistry_4_14_5 = {
       }
     },
     {
+      id: "h-buffer-create",
+      type: "heading",
+      data: { "text": "Creating an Acidic Buffer", "level": 2 }
+    },
+    {
+      id: "p-buffer-create",
+      type: "paragraph",
+      data: { "text": "An acidic buffer requires two things: a large reservoir of Weak Acid (HA) and a large reservoir of its Conjugate Base (A⁻). There are two ways to make one:" }
+    },
+    {
+      id: "list-buffer-make",
+      type: "list",
+      data: {
+        style: "numbered",
+        items: [
+            "<strong>Direct mix:</strong> Mix a weak acid (e.g., Ethanoic acid) with the salt of its conjugate base (e.g., Sodium ethanoate).",
+            "<strong>Partial neutralisation (The tricky one):</strong> Mix an <em>excess</em> of weak acid with a strong alkali (e.g., NaOH). The alkali reacts completely to form the conjugate base salt, but because the acid was in excess, plenty of unreacted weak acid remains."
+        ]
+      }
+    },
+    {
+      id: "callout-buffer-part",
+      type: "callout",
+      data: {
+        style: "worked",
+        title: "Worked Example: Partial Neutralisation",
+        text: "<strong>Q: 50 cm³ of 0.2 mol dm⁻³ ethanoic acid (CH₃COOH) is mixed with 25 cm³ of 0.1 mol dm⁻³ NaOH. Calculate the pH of the resulting buffer. (Ka = 1.74 × 10⁻⁵ mol dm⁻³)</strong><br/><br/><em>Step 1: Calculate initial moles.</em><br/>n(Acid_initial) = 50/1000 × 0.2 = 0.010 mol.<br/>n(NaOH) = 25/1000 × 0.1 = 0.0025 mol.<br/><br/><em>Step 2: Calculate moles after reaction.</em><br/>The NaOH reacts 1:1 with the acid to form the conjugate base (CH₃COO⁻).<br/>n(Conjugate Base formed) = 0.0025 mol.<br/>n(Acid_remaining) = 0.010 - 0.0025 = 0.0075 mol.<br/><br/><em>Step 3: Calculate new concentrations.</em><br/>Total volume = 50 + 25 = 75 cm³ = 0.075 dm³.<br/>[Acid] = 0.0075 / 0.075 = 0.10 mol dm⁻³.<br/>[Base] = 0.0025 / 0.075 = 0.033 mol dm⁻³.<br/><br/><em>Step 4: Use Ka expression or Henderson-Hasselbalch.</em><br/>[H⁺] = Ka × ([Acid] / [Base]) = (1.74 × 10⁻⁵) × (0.10 / 0.033) = 5.22 × 10⁻⁵ mol dm⁻³.<br/>pH = -log₁₀(5.22 × 10⁻⁵) = <strong>4.28</strong>."
+      }
+    },
+    {
       id: 'h-buffer-action',
       type: 'heading',
       data: { text: 'How Buffers Work: Mechanism', level: 2 }
@@ -83,6 +113,20 @@ export const note_chemistry_4_14_5 = {
         style: 'worked',
         title: 'Example: Calculate Buffer pH Using Henderson-Hasselbalch',
         text: 'A buffer contains 0.1 M acetic acid (pKa = 4.74) and 0.15 M acetate. pH = 4.74 + log(0.15/0.1) = 4.74 + log(1.5) = 4.74 + 0.176 = 4.92. If the ratio were reversed, pH = 4.74 + log(0.1/0.15) = 4.74 − 0.176 = 4.56.'
+      }
+    },
+    {
+      id: "h-buffer-add",
+      type: "heading",
+      data: { "text": "Buffer Action: Adding Small Amounts of Acid/Alkali", "level": 2 }
+    },
+    {
+      id: "callout-buffer-add",
+      type: "callout",
+      data: {
+        style: "worked",
+        title: "Worked Example: How pH resists change",
+        text: "<strong>Q: A buffer contains 0.10 moles of HA and 0.10 moles of A⁻. (Ka = 1.0 × 10⁻⁵). 0.01 moles of HCl is added. Calculate the new pH.</strong><br/><br/><em>Step 1: Understand the reaction.</em><br/>Added H⁺ reacts with the conjugate base: A⁻ + H⁺ → HA.<br/><br/><em>Step 2: Update the moles.</em><br/>n(A⁻) <em>decreases</em> by 0.01: 0.10 - 0.01 = 0.09 mol.<br/>n(HA) <em>increases</em> by 0.01: 0.10 + 0.01 = 0.11 mol.<br/><br/><em>Step 3: Calculate new [H⁺]</em><br/>Because they are in the same total volume, the ratio of moles is exactly the same as the ratio of concentrations!<br/>[H⁺] = Ka × (n(HA) / n(A⁻)) = (1.0 × 10⁻⁵) × (0.11 / 0.09) = 1.22 × 10⁻⁵ mol dm⁻³.<br/>pH = <strong>4.91</strong>.<br/>(For context, the original pH was 5.00. Adding strong acid only dropped it by 0.09 units!)"
       }
     },
     {
@@ -184,9 +228,19 @@ export const note_chemistry_4_14_5 = {
         id: 'cue-5',
         blockId: 'p-blood-buffer',
         prompt: 'Describe the blood buffer system and why blood pH remains at 7.4.'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'list-buffer-make',
+        prompt: 'What are the two ways to create an acidic buffer experimentally? Explain how "Partial Neutralisation" works.'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'callout-buffer-add',
+        prompt: 'If you add a small amount of strong acid H⁺ to a buffer, how do the moles of HA and A⁻ change?'
       }
     ],
-    summaryText: 'Buffer = weak acid + salt. pH = pKa + log([A⁻]/[HA]). When [A⁻] = [HA], pH = pKa. Most effective near pKa (±1 unit). Blood: H₂CO₃/HCO₃⁻ at pH 7.4 with [HCO₃⁻]/[H₂CO₃] ≈ 20:1. Buffers consume added H⁺ or OH⁻.',
+    summaryText: 'Buffer = weak acid + salt. Made via direct mixing or partial neutralisation. pH = pKa + log([A⁻]/[HA]). When strong acid is added, A⁻ becomes HA. Most effective near pKa (±1 unit). Blood: H₂CO₃/HCO₃⁻ at pH 7.4.',
     ready: false
   },
   evidence: [

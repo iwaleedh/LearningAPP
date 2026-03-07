@@ -1,220 +1,184 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 2 · Subtopic 6
+ * "Periodicity of first ionisation energies"
+ * Source: Pearson Edexcel IAL Chemistry — Section 2A.5
+ */
 export const note_chemistry_1_2_6 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Describe the shapes of s and p atomic orbitals; understand that each orbital holds a maximum of two electrons with opposite spins; explain sub-shells and their energy ordering.'
-    }
-  }, {
-    id: 'h-orbital',
-    type: 'heading',
-    data: {
-      text: 'What is an Atomic Orbital?',
-      level: 2
-    }
-  }, {
-    id: 'p-orbital',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["An atomic orbital is a region of space around the nucleus where there is a high probability (\u226590%) of finding an electron.", "Orbitals are not fixed paths \u2014 they are probability distributions described by wave functions.", "Each orbital can hold a maximum of two electrons, which must have opposite spins (Pauli exclusion principle)."]
-    }
-  }, {
-    id: 'callout-key-pauli',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Pauli Exclusion Principle',
-      text: 'No two electrons in the same atom can have the same set of quantum numbers. In practice: each orbital holds a maximum of 2 electrons, and they must have opposite spins (↑↓).'
-    }
-  }, {
-    id: 'h-shells',
-    type: 'heading',
-    data: {
-      text: 'Shells, Sub-shells and Orbitals',
-      level: 2
-    }
-  }, {
-    id: 'p-shells',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Electrons are arranged in principal energy levels called shells (n = 1, 2, 3 \u2026).", "Each shell is divided into sub-shells labelled s, p, d, f.", "Each sub-shell contains a fixed number of orbitals, and each orbital holds 2 electrons."]
-    }
-  }, {
-    id: 'table-subshells',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Sub-shells, number of orbitals and maximum electrons',
-      headers: ['Sub-shell', 'Number of orbitals', 'Max electrons', 'Shape'],
-      rows: [['s', '1', '2', 'Spherical'], ['p', '3', '6', 'Dumbbell (3 orientations: px, py, pz)'], ['d', '5', '10', 'Complex (4-lobed + 1 ring)'], ['f', '7', '14', 'Very complex']]
-    }
-  }, {
-    id: 'h-s-orbital',
-    type: 'heading',
-    data: {
-      text: 's Orbitals',
-      level: 2
-    }
-  }, {
-    id: 'p-s-orbital',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["An s orbital is spherically symmetric \u2014 the electron density is equal in all directions from the nucleus.", "Each principal shell has exactly one s orbital.", "The 1s orbital (n=1) is closest to the nucleus and has the lowest energy.", "The 2s orbital (n=2) is larger and has a slightly higher energy, with a spherical node inside it."]
-    }
-  }, {
-    id: 'svg-orbitals',
-    type: 'svg',
-    data: {
-      caption: 'Shapes of s orbital (left) and one p orbital (right)',
-      svg: `<svg viewBox="0 0 380 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
-  <!-- s orbital — sphere -->
-  <circle cx="90" cy="90" r="60" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="2"/>
-  <circle cx="90" cy="90" r="4" fill="#4f46e5"/>
-  <text x="90" y="170" text-anchor="middle" fill="#4f46e5" font-size="12" font-weight="600">s orbital</text>
-  <text x="90" y="184" text-anchor="middle" fill="#6b7280" font-size="10">Spherically symmetric</text>
-
-  <!-- p orbital — two lobes -->
-  <!-- Top lobe -->
-  <ellipse cx="280" cy="48" rx="28" ry="42" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="2"/>
-  <!-- Bottom lobe -->
-  <ellipse cx="280" cy="132" rx="28" ry="42" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
-  <!-- nucleus -->
-  <circle cx="280" cy="90" r="4" fill="#374151"/>
-  <!-- axis line -->
-  <line x1="280" y1="10" x2="280" y2="170" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4,3"/>
-  <text x="316" y="48" fill="#ef4444" font-size="10">+</text>
-  <text x="316" y="132" fill="#10b981" font-size="10">−</text>
-  <text x="280" y="184" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">p orbital (pz)</text>
-  <text x="280" y="198" text-anchor="middle" fill="#6b7280" font-size="10">Two lobes, opposite phase</text>
-</svg>`
-    }
-  }, {
-    id: 'h-p-orbital',
-    type: 'heading',
-    data: {
-      text: 'p Orbitals',
-      level: 2
-    }
-  }, {
-    id: 'p-p-orbital',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["p orbitals have a dumbbell shape with two lobes of electron density on either side of the nucleus, separated by a nodal plane where the probability of finding an electron is zero.", "There are three p orbitals in each p sub-shell, oriented at 90\xB0 to each other along the x, y, and z axes (px, py, pz).", "All three have equal energy (they are degenerate)."]
-    }
-  }, {
-    id: 'callout-key-hunds',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Hund\'s Rule',
-      text: 'When filling orbitals of equal energy (degenerate orbitals, e.g. the three 2p orbitals), electrons occupy separate orbitals with parallel spins before pairing up.\n\nCorrect: 2p has ↑_ ↑_ ↑_ for 3 electrons\nIncorrect: 2p has ↑↓ ↑_ __ (would pair before filling all orbitals)'
-    }
-  }, {
-    id: 'h-energy',
-    type: 'heading',
-    data: {
-      text: 'Energy Order of Sub-shells',
-      level: 2
-    }
-  }, {
-    id: 'p-energy',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Within a given principal shell, sub-shell energies increase in the order s < p < d < f.", "Electrons always fill the lowest available energy sub-shell first (Aufbau principle)."]
-    }
-  }, {
-    id: 'list-filling',
-    type: 'list',
-    data: {
-      style: 'bullet',
-      items: ['1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p', 'Note: 4s fills before 3d because 4s has lower energy than 3d for atoms with Z ≤ 20', 'After filling 3d, the order resumes: 4p → 5s → 4d → 5p → 6s → 4f …']
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam tip — orbital box diagrams',
-      text: 'Draw each orbital as a box [ ] and each electron as an arrow ↑ or ↓.\nFill sub-shells using Aufbau (lowest energy first) and Hund\'s rule (one electron per orbital before pairing).\nExample for carbon (Z=6): 1s[↑↓] 2s[↑↓] 2p[↑][↑][ ]'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'Define an atomic orbital',
-        checked: false
-      }, {
-        text: 'State the maximum number of electrons per orbital',
-        checked: false
-      }, {
-        text: 'Describe the shape of an s orbital',
-        checked: false
-      }, {
-        text: 'Describe the shape of a p orbital and state how many p orbitals exist per sub-shell',
-        checked: false
-      }, {
-        text: 'Apply Hund\'s rule and the Aufbau principle to fill orbitals',
-        checked: false
-      }, {
-        text: 'State the energy order: 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: s orbitals are spherical; p orbitals are dumbbell-shaped. Each orbital holds max 2 electrons with opposite spins.\n\nApply: Draw shapes of 1s, 2s, and 2p orbitals. Why is 2s larger than 1s?\n\nAnalyze: Why can a p subshell hold 6 electrons while s holds only 2? Relate to number of orbitals and Pauli exclusion.\n\nEvaluate: "Electrons orbit the nucleus like planets orbit the sun." Critique using electron probability density and the uncertainty principle.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Explain the periodic trend in first ionisation energies across Periods 2 and 3, including the two dips, and down groups of the Periodic Table.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'An orbital is a region of ≥90% electron probability. Max 2 electrons per orbital (opposite spins — Pauli). s orbitals: spherical, 1 per sub-shell. p orbitals: dumbbell-shaped, 3 per sub-shell (px, py, pz), degenerate. Filling order (Aufbau): 1s 2s 2p 3s 3p 4s 3d 4p. Hund\'s rule: fill degenerate orbitals singly before pairing.'
+    {
+      id: 'h-period',
+      type: 'heading',
+      data: { text: 'Trend Across Period 3 (Na → Ar)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-period3',
+      type: 'comparisonTable',
+      data: {
+        caption: 'First ionisation energies across Period 3 (kJ mol⁻¹)',
+        headers: ['Element', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar'],
+        rows: [
+          ['IE₁', '496', '738', '577', '786', '1012', '1000', '1251', '1521']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-general',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'General Trend: Increases across a period',
+        text: 'Across Period 3, nuclear charge (Z) increases from Na (+11) to Ar (+18). Electrons are added to the <em>same quantum shell</em> (n = 3), so shielding and distance stay roughly constant. The increasing Z means stronger attraction on outer electrons → higher IE₁.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-dip1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Dip 1: Mg → Al (Group 2 → Group 3)',
+        text: '<strong>IE₁(Al) < IE₁(Mg)</strong> — despite Al having a higher nuclear charge.<br/><br/><strong>Reason:</strong> Al\'s outer electron is in the 3p subshell (configuration: [Ne]3s²3p¹). The 3p subshell is at a slightly higher energy level than 3s, and is partially shielded by the 3s² electrons beneath it. The outer electron is therefore easier to remove.<br/><br/><em>Similarly in Period 2:</em> IE₁(B) < IE₁(Be)'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-dip2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Dip 2: P → S (Group 5 → Group 6)',
+        text: '<strong>IE₁(S) < IE₁(P)</strong> — despite S having a higher nuclear charge.<br/><br/><strong>Reason:</strong> Phosphorus (3p³) — each 3p electron occupies a <em>separate</em> orbital (Hund\'s Rule). Sulfur (3p⁴) — one orbital has two paired electrons. Those paired electrons repel each other, reducing the energy needed to remove one.<br/><br/><em>Similarly in Period 2:</em> IE₁(O) < IE₁(N)'
+      },
+      terms: []
+    },
+    {
+      id: 'h-group',
+      type: 'heading',
+      data: { text: 'Trend Down a Group', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-group1',
+      type: 'comparisonTable',
+      data: {
+        caption: 'First IE down Group 1',
+        headers: ['Element', 'Li', 'Na', 'K', 'Rb'],
+        rows: [
+          ['IE₁ (kJ mol⁻¹)', '520', '496', '419', '403']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-repulsion-group',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Down a Group: More Electron-Electron Repulsion Too',
+        text: 'Going down a group, the decrease in IE₁ has two causes:<br/>1. <strong>Greater atomic radius</strong> — outer electron is further from the nucleus, attraction is weaker.<br/>2. <strong>Increased electron-electron repulsion</strong> — more inner shells of electrons repel the outer electron upward, raising its energy and making it easier to remove.<br/><br/><em>Example (N vs P):</em> Nitrogen (Period 2) has two quantum shells; phosphorus (Period 3) has three. The outer electron in P experiences more repulsion from the inner electrons and is further from the nucleus → IE₁(P) &lt; IE₁(N).'
+      },
+      terms: []
+    },
+    {
+      id: 'h-atomic-radius',
+      type: 'heading',
+      data: { text: 'Atomic Radius (Periodicity)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-atomic-radius',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Definition and Trend: Atomic Radius',
+        text: '<strong>Atomic radius</strong> is the measure of the size of an atom — the distance from the nucleus to the boundary of the electron cloud (determined by halving the distance between two adjacent nuclei).<br/><br/><strong>Across a period → DECREASES:</strong><br/>Nuclear charge (Z) increases; electrons are added to the same quantum shell (same shielding). The increased nuclear attraction pulls the electron cloud inward → smaller atom.<br/><br/><strong>Down a group → INCREASES:</strong><br/>Each new period adds a whole new quantum shell. More shells = greater distance from the nucleus = larger atom. (The increase in nuclear charge does not compensate for the extra shells.)<br/><br/><em>Note: electron-electron repulsion from inner shells also pushes outer electrons further out, contributing to the increase down a group.</em>'
+      },
+      terms: ['Atomic radius']
+    },
+    {
+      id: 'h-melting',
+      type: 'heading',
+      data: { text: 'Melting and Boiling Point Trends Across Period 2 & 3', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-melting',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Pattern: Metallic → Covalent Giant → Simple Molecular',
+        text: 'Going across Periods 2 and 3, the melting/boiling point follows a predictable pattern:<br/><br/><strong>Metallic structures (Groups 1–3):</strong> Giant metallic lattice → high melting point (e.g. Na, Mg, Al).<br/><br/><strong>Covalent giant lattice (e.g. C as diamond, Si):</strong> Very strong covalent bonds throughout → extremely high melting point (diamond = 3550 °C).<br/><br/><strong>Simple molecular covalent structures (Groups 5–8):</strong> Only weak van der Waals forces between molecules → very low melting point (e.g. N₂, O₂, F₂, Cl₂ are gases at room temperature).<br/><br/><em>Summary: metallic = high; covalent lattice = very high; simple molecular = low. Pattern shows an increase then a sharp decrease across the period.</em>'
+      },
+      terms: ['Melting point trend', 'Periodicity']
+    },
+    {
+      id: 'h-practice-2b',
+      type: 'heading',
+      data: { text: 'Practice Questions (Past Paper Style)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-pq-2b1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q1: Phosphorus Box Notation (Jan 2016 Paper)',
+        text: '<strong>Question:</strong> Complete the box (orbital) notation for phosphorus (Z = 15). Label each subshell.<br/><br/><strong>Configuration: 1s² 2s² 2p⁶ 3s² 3p³</strong><br/><br/>1s: [↑↓]<br/>2s: [↑↓]<br/>2p: [↑↓][↑↓][↑↓]<br/>3s: [↑↓]<br/>3p: [↑][↑][↑]<br/><br/><em>Key rule: the three 3p electrons each occupy a separate orbital (Hund\'s rule). Never place a paired electron when an orbital is available. Award: 1 mark for correct arrows, 1 mark for correct labels.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-2b2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q2: Why is IE₁(S) < IE₁(P)? (Jan 2016 Paper)',
+        text: '<strong>Question:</strong> Explain why the first ionisation energy of sulfur (Z=16) is lower than that of phosphorus (Z=15), even though S has a higher nuclear charge.<br/><br/><strong>P (Z=15):</strong> 3p³ — three 3p electrons, each in a separate orbital. No pairing.<br/><strong>S (Z=16):</strong> 3p⁴ — one 3p orbital must contain a pair of electrons.<br/><br/><strong>These paired electrons experience electron-electron repulsion within the same orbital.</strong> This repulsion raises the energy of the paired electron, making it easier to remove.<br/>∴ Less energy is required to remove the outer electron from S than from P → IE₁(S) < IE₁(P).<br/><br/><em>Exam tip: Always reference "electron-electron repulsion" in the same orbital, NOT just "pairing". State that this makes the electron easier to remove.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-2b3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q3: Write the Equation for 3rd IE of Phosphorus',
+        text: '<strong>Question:</strong> Write the equation, including state symbols, for the third ionisation energy of phosphorus.<br/><br/><strong>For the nth IE:</strong> the starting species has charge (n−1)+<br/>3rd IE → start with P²⁺<br/><br/><strong>Equation: P²⁺(g) → P³⁺(g) + e⁻</strong><br/><br/><em>Missing state symbols (g) will cost marks. All species — ion, product ion, and electron — must be shown in the gaseous state.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-2b4',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q4: Why is IE₁(N) > IE₁(P)? (Down Group)',
+        text: '<strong>Question:</strong> Explain why the first ionisation energy of nitrogen is greater than that of phosphorus. (3 marks)<br/><br/><strong>N (Period 2):</strong> outer electron in 2p (quantum shell 2)<br/><strong>P (Period 3):</strong> outer electron in 3p (quantum shell 3)<br/><br/><strong>Mark-scheme points:</strong><br/>1. Phosphorus has more quantum shells (3) than nitrogen (2), so its outer electron is further from the nucleus.<br/>2. Phosphorus has more inner-shell electrons, causing greater electron-electron repulsion on the outer electron.<br/>3. Both effects reduce the attraction between the outer electron and the nucleus in phosphorus → less energy needed to remove it → lower IE₁.<br/><br/><em>∴ IE₁(N) > IE₁(P)</em>'
+      },
+      terms: []
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'p-orbital',
-      prompt: 'What is an atomic orbital? How many electrons can it hold?'
-    }, {
-      id: 'cue-2',
-      blockId: 'svg-orbitals',
-      prompt: 'Describe the shapes of s and p orbitals.'
-    }, {
-      id: 'cue-3',
-      blockId: 'callout-key-hunds',
-      prompt: 'State Hund\'s rule and show the correct filling of the 2p sub-shell for nitrogen (3 electrons in 2p).'
-    }, {
-      id: 'cue-4',
-      blockId: 'list-filling',
-      prompt: 'Write the sub-shell filling order from 1s to 4p.'
-    }, {
-      id: 'cue-5',
-      blockId: 'table-subshells',
-      prompt: 'How many orbitals are in an s, p and d sub-shell? What is the maximum number of electrons each holds?'
-    }],
-    summaryText: 'Orbital = region of ≥90% probability, max 2 electrons (opposite spins). s = sphere; p = dumbbell (3 orientations). Aufbau: 1s 2s 2p 3s 3p 4s 3d 4p. Hund\'s: fill singly before pairing.',
+    cues: [
+      { id: 'c1', blockId: 'callout-general', prompt: 'Why does the first ionisation energy generally increase across a period?' },
+      { id: 'c2', blockId: 'callout-dip1', prompt: 'Explain why IE₁(Al) < IE₁(Mg) even though Al has a higher nuclear charge.' },
+      { id: 'c3', blockId: 'callout-dip2', prompt: 'Explain why IE₁(S) < IE₁(P) even though S has a higher nuclear charge.' },
+      { id: 'c4', blockId: 'callout-atomic-radius', prompt: 'Describe and explain the trend in atomic radius across a period and down a group.' },
+      { id: 'c5', blockId: 'callout-melting', prompt: 'Describe the melting point trend across Period 3 and explain the sharp drop after Group 4.' },
+      { id: 'c6', blockId: 'callout-pq-2b4', prompt: 'Explain why IE₁(N) > IE₁(P), using quantum shells and electron-electron repulsion. Give 3 marking points.' }
+    ],
+    summaryText: 'Period trend: IE₁ generally increases (Z↑, same shell). Dip at G2→G3 (outer e⁻ in higher-energy p subshell). Dip at G5→G6 (paired e⁻ repulsion in p⁴ orbital). Group trend: IE₁ decreases (greater distance + more electron-electron repulsion from inner shells). Atomic radius: decreases across period (Z↑), increases down group (more shells). Melting points: metallic (high) → covalent lattice (very high) → simple molecular (low).',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'Edexcel IAL Chemistry Specification — Topic 2',
-    detail: 's and p orbitals, Aufbau principle, Hund\'s rule',
-    year: '2018',
-    source: 'Pearson Edexcel',
-    tags: ['orbitals', 'electron configuration']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_2_6;

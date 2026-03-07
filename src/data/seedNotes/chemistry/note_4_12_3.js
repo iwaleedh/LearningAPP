@@ -9,6 +9,62 @@ export const note_chemistry_4_12_3 = {
     },
     {
       type: 'heading',
+      id: 'h-entropy-intro',
+      data: { text: 'What is Entropy?', level: 2 }
+    },
+    {
+      type: 'callout',
+      id: 'callout-entropy-def',
+      data: {
+        style: 'key',
+        title: 'Entropy & Arrangements',
+        text: 'Entropy (<strong>S</strong>) is a measure of the disorder or randomness in a system. It is fundamentally linked to the number of possible arrangements (<strong>W</strong>) of particles and their energy. The more ways particles and energy can be distributed, the higher the entropy.<br/><br/>Gases have a much higher entropy than liquids, and liquids have a higher entropy than solids, because gas particles move freely and have virtually infinite possible arrangements.'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-predicting-entropy',
+      data: { text: 'We can often predict whether the entropy of a system increases or decreases just by looking at a chemical equation:' }
+    },
+    {
+      type: 'list',
+      id: 'list-entropy-rules',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Change of State:</strong> Solid → Liquid → Gas results in an <em>increase</em> in entropy.',
+          '<strong>Number of Moles:</strong> A reaction that produces <em>more</em> moles of products than reactants (especially gas moles) results in an <em>increase</em> in entropy.'
+        ]
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-stability',
+      data: { text: 'Thermodynamic vs Kinetic Stability', level: 2 }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-stability',
+      data: {
+        caption: 'Comparing Stability Types',
+        headers: ['Type', 'Governed By', 'Meaning'],
+        rows: [
+          ['Thermodynamic Stability', 'Entropy (ΔS_total)', 'Describes whether a reaction is fundamentally feasible or spontaneous. If thermodynamically <em>unstable</em>, the reaction <em>wants</em> to happen.'],
+          ['Kinetic Stability', 'Activation Energy (Ea)', 'Describes the rate. A mixture might be thermodynamically unstable but kinetically stable (e.g. petrol and oxygen at room temp won\'t combust without a spark - high Ea).']
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-entropy-sys',
+      data: {
+        style: 'key',
+        title: 'Entropy of System (ΔS_system)',
+        text: 'Calculated using standard entropy values from a data booklet.<br/><br/><strong>ΔS_system = ΣS(products) - ΣS(reactants)</strong><br/><br/><em>Units: J K⁻¹ mol⁻¹</em>'
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-system-surroundings',
       data: {
         text: 'System, Surroundings, and the Universe',
@@ -200,6 +256,21 @@ export const note_chemistry_4_12_3 = {
     enabled: true,
     cues: [
       {
+        id: 'cue-0a',
+        blockId: 'list-entropy-rules',
+        prompt: 'How do changes of state and moles affect the entropy of a system?'
+      },
+      {
+        id: 'cue-0b',
+        blockId: 'table-stability',
+        prompt: 'What is the difference between thermodynamic and kinetic stability?'
+      },
+      {
+        id: 'cue-0c',
+        blockId: 'callout-entropy-sys',
+        prompt: 'State the formula for calculating the Entropy of the System.'
+      },
+      {
         id: 'cue-1',
         blockId: 'h-system-surroundings',
         prompt: 'State the Second Law of Thermodynamics in terms of total entropy.'
@@ -220,7 +291,7 @@ export const note_chemistry_4_12_3 = {
         prompt: 'Under what temperature condition is an endothermic reaction with ΔS_system > 0 spontaneous?'
       }
     ],
-    summaryText: 'ΔS_total = ΔS_sys − ΔH_sys/T. Spontaneous when ΔS_total > 0. At equilibrium, ΔS_total = 0. Exothermic → ΔS_surr > 0. Endothermic → ΔS_surr < 0. Temperature controls the balance.',
+    summaryText: 'Entropy links to arrangements. Thermodynamic stability depends on ΔS_total, kinetic on Ea. ΔS_sys = ΣS(products) - ΣS(reactants). ΔS_total = ΔS_sys − ΔH_sys/T. Spontaneous when ΔS_total > 0. At equilibrium, ΔS_total = 0.',
     ready: false
   },
   evidence: [

@@ -264,16 +264,21 @@ export default function NotePage() {
     const [dbNote, setDbNote] = useState(null);
     useEffect(() => {
         let mounted = true;
-        onSpacetimeDBReady(() => {
+        const doFetch = () => {
             getNote(noteId).then(n => {
-                if (mounted && n) setDbNote(n);
+                if (mounted && n && n.blocks && n.blocks.length > 0) setDbNote(n);
             });
+        };
+        onSpacetimeDBReady(() => {
+            doFetch();
+            const interval = setInterval(doFetch, 3000);
+            return () => clearInterval(interval);
         });
         return () => { mounted = false; };
     }, [noteId]);
 
     const seedNote = useMemo(() => {
-        if (dbNote) return dbNote;
+        if (dbNote && dbNote.blocks && dbNote.blocks.length > 0) return dbNote;
         return getSeedNote(noteId);
     }, [dbNote, noteId]);
     const { isRead, readAt, markRead, markUnread } = useNoteReadStatus(noteId);

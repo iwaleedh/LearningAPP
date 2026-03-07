@@ -9,6 +9,56 @@ export const note_chemistry_4_12_5 = {
     },
     {
       type: 'heading',
+      id: 'h-definitions',
+      data: { text: 'Key Definitions for Born-Haber Cycles', level: 2 }
+    },
+    {
+      type: 'callout',
+      id: 'callout-at',
+      data: {
+        style: 'key',
+        title: 'Standard Enthalpy of Atomisation (ΔH_at)',
+        text: 'The enthalpy change when <strong>one mole of gaseous atoms</strong> is formed from an element in its standard state.<br/><br/><em>e.g. ½Cl₂(g) → Cl(g)</em><br/>This is always an endothermic process.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-ea',
+      data: {
+        style: 'key',
+        title: 'Electron Affinity',
+        text: 'The <strong>First Electron Affinity</strong> is the enthalpy change when each atom in one mole of gaseous atoms gains an electron to form a 1- ion.<br/><em>e.g. Cl(g) + e⁻ → Cl⁻(g)</em><br/>This is typically exothermic because the electron is attracted to the nucleus. However, the <strong>Second Electron Affinity</strong> (e.g. O⁻ → O²⁻) is always endothermic because the negative electron is being repelled by an already negative ion.'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-born-haber',
+      data: { text: 'Born-Haber Cycles', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-born-haber',
+      data: { text: 'Lattice energy cannot be calculated directly from an experiment. Instead, we use a Born-Haber cycle, which applies Hess\'s Law. It states that the direct route (Enthalpy of Formation) equals the sum of the indirect steps:' }
+    },
+    {
+      type: 'equation',
+      id: 'eq-born-haber',
+      data: {
+        html: 'ΔH<sub>form</sub> = ΔH<sub>at(metal)</sub> + ΔH<sub>IE</sub> + ΔH<sub>at(non-metal)</sub> + ΔH<sub>EA</sub> + ΔH<sub>lattice</sub>',
+        caption: 'The Born-Haber equation summary'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-bh-example',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Finding Lattice Energy of NaCl',
+        text: '<strong>Given:</strong><br/>ΔH_form(NaCl) = -411 kJ mol⁻¹<br/>ΔH_at(Na) = +107 kJ mol⁻¹<br/>1st IE(Na) = +496 kJ mol⁻¹<br/>ΔH_at(Cl) = +122 kJ mol⁻¹<br/>1st EA(Cl) = -349 kJ mol⁻¹<br/><br/><strong>Calculation:</strong><br/>-411 = (+107) + (+496) + (+122) + (-349) + ΔH_lattice<br/>-411 = 376 + ΔH_lattice<br/>ΔH_lattice = -411 - 376 = <strong>-787 kJ mol⁻¹</strong>'
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-lattice-enthalpy-def',
       data: {
         text: 'Lattice Enthalpy: Definition and Significance',
@@ -211,13 +261,23 @@ export const note_chemistry_4_12_5 = {
     enabled: true,
     cues: [
       {
+        id: 'cue-0a',
+        blockId: 'callout-at',
+        prompt: 'Define standard enthalpy of atomisation.'
+      },
+      {
+        id: 'cue-0b',
+        blockId: 'callout-ea',
+        prompt: 'Why is the First Electron Affinity exothermic, but the Second is endothermic?'
+      },
+      {
         id: 'cue-1',
         blockId: 'h-lattice-enthalpy-def',
         prompt: 'Define lattice enthalpy. Why is it always negative and what does its magnitude indicate?'
       },
       {
         id: 'cue-2',
-        blockId: 'h-born-haber-cycle',
+        blockId: 'eq-born-haber',
         prompt: 'List the five main steps in a Born-Haber cycle for a simple MX compound.'
       },
       {
@@ -231,7 +291,7 @@ export const note_chemistry_4_12_5 = {
         prompt: 'Explain why experimental lattice enthalpy is sometimes higher than theoretical predictions.'
       }
     ],
-    summaryText: 'Lattice enthalpy is the enthalpy to form 1 mol of ionic solid from gaseous ions (always negative). Born-Haber cycles combine atomisation, ionisation, electron affinity, and formation via Hess\'s law. Theoretical and experimental values agree for purely ionic compounds but diverge with covalent character or polarisation.',
+    summaryText: 'Atomisation = elements → gaseous atoms. Electron Affinity = atoms gaining electrons. Born-Haber uses Hess\'s law: form = at + IE + EA + lattice. Experimental & theoretical agree for ionic compounds but diverge with covalent character or polarisation.',
     ready: false
   },
   evidence: [

@@ -1,173 +1,137 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 2 · Subtopic 7
+ * "Atomic orbitals (s, p, d)"
+ * Source: Pearson Edexcel IAL Chemistry — Section 2A.3
+ */
 export const note_chemistry_1_2_7 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Write full and abbreviated electronic configurations for elements and their ions; relate electronic configuration to position in the periodic table.'
-    }
-  }, {
-    id: 'h-config',
-    type: 'heading',
-    data: {
-      text: 'Writing Electronic Configurations',
-      level: 2
-    }
-  }, {
-    id: 'p-config',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["The electronic configuration of an atom describes how its electrons are arranged in sub-shells.", "Electrons fill sub-shells in order of increasing energy (Aufbau principle), with Hund's rule applied to degenerate orbitals.", "The configuration is written as a series of sub-shell labels with superscript electron counts."]
-    }
-  }, {
-    id: 'table-configs',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Electronic configurations of selected elements',
-      headers: ['Element', 'Z', 'Full configuration', 'Abbreviated'],
-      rows: [['Hydrogen', '1', '1s¹', '1s¹'], ['Helium', '2', '1s²', '1s²'], ['Carbon', '6', '1s² 2s² 2p²', '[He] 2s² 2p²'], ['Neon', '10', '1s² 2s² 2p⁶', '[He] 2s² 2p⁶'], ['Sodium', '11', '1s² 2s² 2p⁶ 3s¹', '[Ne] 3s¹'], ['Chlorine', '17', '1s² 2s² 2p⁶ 3s² 3p⁵', '[Ne] 3s² 3p⁵'], ['Calcium', '20', '1s² 2s² 2p⁶ 3s² 3p⁶ 4s²', '[Ar] 4s²'], ['Iron', '26', '1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²', '[Ar] 3d⁶ 4s²']]
-    }
-  }, {
-    id: 'h-ions',
-    type: 'heading',
-    data: {
-      text: 'Electronic Configurations of Ions',
-      level: 2
-    }
-  }, {
-    id: 'p-ions',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["When atoms form ions, electrons are removed from or added to the outermost sub-shell.", "For transition metal cations, the 4s electrons are lost first (even though 4s fills before 3d, the 4s electrons are at higher energy in the ion and are removed first)."]
-    }
-  }, {
-    id: 'list-ion-configs',
-    type: 'list',
-    data: {
-      style: 'bullet',
-      items: ['Na⁺ (loses 1e⁻): 1s² 2s² 2p⁶ — same as neon', 'Cl⁻ (gains 1e⁻): 1s² 2s² 2p⁶ 3s² 3p⁶ — same as argon', 'Ca²⁺ (loses 2e⁻ from 4s): 1s² 2s² 2p⁶ 3s² 3p⁶ — same as argon', 'Fe²⁺ (loses 2e⁻ from 4s): [Ar] 3d⁶', 'Fe³⁺ (loses 3e⁻: 2 from 4s, 1 from 3d): [Ar] 3d⁵']
-    }
-  }, {
-    id: 'callout-warning-4s3d',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: 'Common mistake — 4s and 3d in transition metal ions',
-      text: 'Although 4s fills before 3d, the 4s electrons are ALWAYS removed first when transition metals form ions. This is because in the cation, 3d is lower in energy than 4s.\n\nFe: [Ar] 3d⁶ 4s²\nFe²⁺: [Ar] 3d⁶   ← 4s electrons removed first\nFe³⁺: [Ar] 3d⁵   ← one more electron removed from 3d'
-    }
-  }, {
-    id: 'h-periodicity',
-    type: 'heading',
-    data: {
-      text: 'Electronic Configuration and the Periodic Table',
-      level: 2
-    }
-  }, {
-    id: 'p-periodicity',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["The periodic table is arranged so that elements in the same group have the same outer shell (valence) electron configuration.", "The period number tells you the highest principal quantum number (shell) in use.", "The block of the periodic table corresponds to the sub-shell being filled."]
-    }
-  }, {
-    id: 'table-blocks',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Periodic table blocks and the sub-shell being filled',
-      headers: ['Block', 'Sub-shell filling', 'Elements', 'Example'],
-      rows: [['s-block', 's sub-shell', 'Groups 1 & 2', 'Na: [Ne] 3s¹'], ['p-block', 'p sub-shell', 'Groups 3–8 (13–18)', 'Cl: [Ne] 3s² 3p⁵'], ['d-block', 'd sub-shell', 'Transition metals', 'Fe: [Ar] 3d⁶ 4s²'], ['f-block', 'f sub-shell', 'Lanthanides/actinides', 'Ce: [Xe] 4f¹ 5d¹ 6s²']]
-    }
-  }, {
-    id: 'callout-key-valence',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Valence electrons and group number',
-      text: 'The number of outer shell (valence) electrons equals the group number (for s- and p-block elements):\n• Group 1: 1 valence electron (ns¹)\n• Group 2: 2 valence electrons (ns²)\n• Group 6 (16): 6 valence electrons (ns² np⁴)\n• Group 7 (17): 7 valence electrons (ns² np⁵)'
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam tip — using the periodic table as a guide',
-      text: 'To write the configuration of any element up to Z=36, count across the periods:\n1st period: fills 1s (2 elements)\n2nd period: fills 2s then 2p (8 elements)\n3rd period: fills 3s then 3p (8 elements)\n4th period: fills 4s, then 3d, then 4p (18 elements)'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'Write full electronic configurations for elements Z = 1–36',
-        checked: false
-      }, {
-        text: 'Write abbreviated configurations using noble gas cores',
-        checked: false
-      }, {
-        text: 'Write electronic configurations of common ions (e.g. Na⁺, Ca²⁺, Fe²⁺, Fe³⁺, Cl⁻)',
-        checked: false
-      }, {
-        text: 'Explain why 4s electrons are lost before 3d in transition metal ions',
-        checked: false
-      }, {
-        text: 'Link group number to number of valence electrons',
-        checked: false
-      }, {
-        text: 'Identify the s, p, d, f blocks on the periodic table',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Electronic configurations follow Aufbau, Pauli, and Hund\'s rules. These explain the periodic table structure.\n\nApply: Write configurations for Fe (Z=26) and Fe²⁺. Which electrons are removed first?\n\nAnalyze: Cr has [Ar] 3d⁵4s¹ not [Ar] 3d⁴4s². Explain the extra stability of half-filled d subshells.\n\nEvaluate: Could the periodic table be arranged by electron configuration rather than atomic number? Would it be more useful?'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Know the shapes of s, p and d atomic orbitals. Understand orbital notation for electron configurations using boxes.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'Electronic configurations use Aufbau (lowest energy first) and Hund\'s rule. Abbreviated form uses noble gas core: e.g. Na = [Ne] 3s¹. For ions: remove/add electrons from/to outermost sub-shell; transition metal ions lose 4s before 3d. Periodic table blocks: s (Groups 1–2), p (Groups 13–18), d (transition metals), f (lanthanides/actinides).'
+    {
+      id: 'h-orbital',
+      type: 'heading',
+      data: { text: 'What is an Atomic Orbital?', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-def',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Definition: Atomic Orbital',
+        text: 'An <strong>atomic orbital</strong> is a region of space around the nucleus where there is a high <strong>probability</strong> of finding an electron. Each orbital can hold a maximum of <strong>2 electrons</strong> (with opposite spins — Pauli exclusion principle).'
+      },
+      terms: ['Atomic orbital', 'Pauli exclusion principle']
+    },
+    {
+      id: 'h-shapes',
+      type: 'heading',
+      data: { text: 'Shapes of Orbitals', level: 2 },
+      terms: []
+    },
+    {
+      id: 'svg-orbitals',
+      type: 'svg',
+      data: {
+        caption: 'Figure: Shapes of s, p and d atomic orbitals',
+        svg: `<svg viewBox="0 0 540 180" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <!-- s orbital: sphere -->
+  <ellipse cx="80" cy="85" rx="50" ry="50" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" opacity="0.85"/>
+  <text x="80" y="90" text-anchor="middle" fill="#1e40af" font-weight="bold">s</text>
+  <text x="80" y="155" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="bold">s orbital</text>
+  <text x="80" y="168" text-anchor="middle" fill="#64748b" font-size="10">Sphere</text>
+
+  <!-- p orbital: two lobes -->
+  <!-- top lobe -->
+  <ellipse cx="230" cy="45" rx="22" ry="38" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5" opacity="0.85"/>
+  <!-- bottom lobe -->
+  <ellipse cx="230" cy="125" rx="22" ry="38" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5" opacity="0.6"/>
+  <!-- nucleus dot -->
+  <circle cx="230" cy="85" r="4" fill="#15803d"/>
+  <!-- axis line -->
+  <line x1="230" y1="5" x2="230" y2="165" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="246" y="18" fill="#64748b" font-size="9">+</text>
+  <text x="246" y="165" fill="#64748b" font-size="9">−</text>
+  <text x="230" y="155" text-anchor="middle" fill="#15803d" font-size="12" font-weight="bold">p orbital</text>
+  <text x="230" y="168" text-anchor="middle" fill="#64748b" font-size="10">Dumbbell (2 lobes)</text>
+
+  <!-- Three p orbitals label -->
+  <text x="230" y="178" text-anchor="middle" fill="#64748b" font-size="9">pₓ, pᵧ, p_z along x/y/z axes</text>
+
+  <!-- d orbital: 4 lobes (representative d_xy) -->
+  <!-- lobe top-right -->
+  <ellipse cx="405" cy="55" rx="30" ry="18" fill="#fde68a" stroke="#d97706" stroke-width="1.5" opacity="0.85" transform="rotate(45,405,55)"/>
+  <!-- lobe bottom-left -->
+  <ellipse cx="405" cy="115" rx="30" ry="18" fill="#fde68a" stroke="#d97706" stroke-width="1.5" opacity="0.85" transform="rotate(45,405,115)"/>
+  <!-- lobe top-left -->
+  <ellipse cx="355" cy="55" rx="30" ry="18" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" opacity="0.7" transform="rotate(-45,355,55)"/>
+  <!-- lobe bottom-right -->
+  <ellipse cx="455" cy="115" rx="30" ry="18" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" opacity="0.7" transform="rotate(-45,455,115)"/>
+  <!-- nucleus -->
+  <circle cx="405" cy="85" r="4" fill="#92400e"/>
+  <text x="405" y="155" text-anchor="middle" fill="#92400e" font-size="12" font-weight="bold">d orbital</text>
+  <text x="405" y="168" text-anchor="middle" fill="#64748b" font-size="10">4-lobed (cloverleaf)</text>
+  <text x="405" y="178" text-anchor="middle" fill="#64748b" font-size="9">5 d orbitals per subshell</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
+      id: 'table-shapes',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Shapes and properties of s, p and d orbitals',
+        headers: ['Orbital Type', 'Shape', 'Number per subshell', 'Max electrons per subshell'],
+        rows: [
+          ['<strong>s orbital</strong>', 'Spherical — the electron cloud is distributed equally in all directions around the nucleus.', '1', '2'],
+          ['<strong>p orbital</strong>', 'Dumbbell (figure-8) shaped — two lobes, one on each side of the nucleus. Three p orbitals are oriented along the x, y and z axes (pₓ, pᵧ, p_z).', '3', '6'],
+          ['<strong>d orbital</strong>', 'More complex shapes (cloverleaf and dumbbell-with-ring). Five d orbitals per subshell.', '5', '10']
+        ]
+      },
+      terms: ['s orbital', 'p orbital', 'd orbital']
+    },
+    {
+      id: 'h-notation',
+      type: 'heading',
+      data: { text: 'Box (Orbital) Notation', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-box',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Box Notation Rules',
+        text: '• Each box represents one orbital.<br/>• Arrows represent electrons: ↑ (spin up) and ↓ (spin down).<br/>• A maximum of 2 electrons per box, with opposite spins.<br/>• <strong>Hund\'s rule:</strong> Fill all boxes in a subshell singly before pairing. This minimises electron-electron repulsion.'
+      },
+      terms: ["Hund's rule"]
+    },
+    {
+      id: 'callout-box-example',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Box notation examples',
+        text: '<strong>Nitrogen (N, Z=7): 1s² 2s² 2p³</strong><br/>1s: [↑↓] | 2s: [↑↓] | 2p: [↑][↑][↑]<br/><br/><strong>Oxygen (O, Z=8): 1s² 2s² 2p⁴</strong><br/>1s: [↑↓] | 2s: [↑↓] | 2p: [↑↓][↑][↑]<br/>(one orbital in 2p is paired, the other two remain singly filled)'
+      },
+      terms: []
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'table-configs',
-      prompt: 'Write the full electronic configuration of chlorine (Z=17).'
-    }, {
-      id: 'cue-2',
-      blockId: 'list-ion-configs',
-      prompt: 'Write the electronic configuration of Fe²⁺ and Fe³⁺ (Fe is Z=26).'
-    }, {
-      id: 'cue-3',
-      blockId: 'callout-warning-4s3d',
-      prompt: 'Why are 4s electrons removed before 3d when transition metals form ions?'
-    }, {
-      id: 'cue-4',
-      blockId: 'table-blocks',
-      prompt: 'What sub-shell is being filled in the s-block, p-block and d-block of the periodic table?'
-    }, {
-      id: 'cue-5',
-      blockId: 'callout-key-valence',
-      prompt: 'How does the group number relate to the number of valence electrons for s- and p-block elements?'
-    }],
-    summaryText: 'Aufbau + Hund\'s rule fills orbitals. Abbreviated form uses [noble gas] core. Ions: lose/gain from outermost; transition metals lose 4s first. s-block = Groups 1–2; p-block = Groups 13–18; d-block = transition metals.',
+    cues: [
+      { id: 'c1', blockId: 'callout-def', prompt: 'Define the term "atomic orbital". What is the maximum number of electrons it can hold?' },
+      { id: 'c2', blockId: 'table-shapes', prompt: 'Describe the shape of (a) an s orbital and (b) a p orbital.' },
+      { id: 'c3', blockId: 'callout-box', prompt: 'State Hund\'s rule in your own words.' },
+      { id: 'c4', blockId: 'callout-box-example', prompt: 'Draw the orbital box notation for carbon (Z = 6).' }
+    ],
+    summaryText: 'Orbital = region where electron is likely to be found (max 2 electrons, opposite spins). s = sphere; p = dumbbell (3 orbitals per subshell); d = complex (5 orbitals). Hund\'s rule: half-fill before pairing. Box notation uses arrows ↑↓ to represent electrons.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'Edexcel IAL Chemistry Specification — Topic 2',
-    detail: 'Electronic configuration, periodicity, blocks',
-    year: '2018',
-    source: 'Pearson Edexcel',
-    tags: ['electron configuration', 'periodicity']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_2_7;

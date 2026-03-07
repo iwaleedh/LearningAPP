@@ -1,202 +1,146 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 2 · Subtopic 3
+ * "Electron configuration (shells and subshells)"
+ * Source: Pearson Edexcel IAL Chemistry — Sections 2A.3–2A.4
+ */
 export const note_chemistry_1_2_3 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Describe the principles of mass spectrometry; interpret a mass spectrum to identify isotopes, calculate relative atomic mass, and understand how a time-of-flight (TOF) mass spectrometer works.'
-    }
-  }, {
-    id: 'h-principle',
-    type: 'heading',
-    data: {
-      text: 'What is Mass Spectrometry?',
-      level: 2
-    }
-  }, {
-    id: 'p-principle',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Mass spectrometry is an analytical technique that separates ions according to their mass-to-charge ratio (m/z).", "It is used to determine the masses and abundances of isotopes, calculate accurate relative atomic masses, and identify unknown compounds.", "The instrument used is called a mass spectrometer."]
-    }
-  }, {
-    id: 'h-tof',
-    type: 'heading',
-    data: {
-      text: 'Time-of-Flight (TOF) Mass Spectrometer — Four Stages',
-      level: 2
-    }
-  }, {
-    id: 'list-stages',
-    type: 'list',
-    data: {
-      style: 'numbered',
-      items: ['Ionisation — Sample is vaporised. Electrons are removed (electrospray ionisation or electron bombardment) to form positive ions: X → X⁺ + e⁻', 'Acceleration — Positive ions are accelerated by an electric field. All ions gain the same kinetic energy: ½mv² = zV (where V = accelerating voltage, z = charge)', 'Ion drift — Ions travel through a field-free drift tube. Lighter ions travel faster (same KE, less mass → higher velocity)', 'Detection — Ions hit a detector plate. Time of arrival is recorded — lighter ions arrive sooner. Signal intensity ∝ abundance of that isotope']
-    }
-  }, {
-    id: 'svg-tof',
-    type: 'svg',
-    data: {
-      caption: 'Simplified diagram of a time-of-flight mass spectrometer',
-      svg: `<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
-  <!-- Sample inlet -->
-  <rect x="10" y="60" width="60" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="40" y="78" text-anchor="middle" fill="#1e40af" font-weight="600">Sample</text>
-  <text x="40" y="92" text-anchor="middle" fill="#1e40af">inlet</text>
-  <!-- Arrow to ionisation -->
-  <line x1="70" y1="80" x2="100" y2="80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- Ionisation -->
-  <rect x="100" y="55" width="80" height="50" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="140" y="76" text-anchor="middle" fill="#5b21b6" font-weight="600">Ionisation</text>
-  <text x="140" y="91" text-anchor="middle" fill="#5b21b6">X → X⁺ + e⁻</text>
-  <!-- Arrow -->
-  <line x1="180" y1="80" x2="210" y2="80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- Acceleration -->
-  <rect x="210" y="55" width="80" height="50" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-  <text x="250" y="76" text-anchor="middle" fill="#92400e" font-weight="600">Acceleration</text>
-  <text x="250" y="91" text-anchor="middle" fill="#92400e">electric field</text>
-  <!-- Arrow -->
-  <line x1="290" y1="80" x2="320" y2="80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- Drift tube -->
-  <rect x="320" y="55" width="80" height="50" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="360" y="76" text-anchor="middle" fill="#14532d" font-weight="600">Drift tube</text>
-  <text x="360" y="91" text-anchor="middle" fill="#14532d">field-free</text>
-  <!-- Arrow -->
-  <line x1="400" y1="80" x2="430" y2="80" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arr)"/>
-  <!-- Detector -->
-  <rect x="430" y="55" width="60" height="50" rx="6" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
-  <text x="460" y="76" text-anchor="middle" fill="#9d174d" font-weight="600">Detector</text>
-  <text x="460" y="91" text-anchor="middle" fill="#9d174d">records t</text>
-  <!-- Stage labels -->
-  <text x="140" y="120" text-anchor="middle" fill="#7c3aed" font-size="9">Stage 1</text>
-  <text x="250" y="120" text-anchor="middle" fill="#92400e" font-size="9">Stage 2</text>
-  <text x="360" y="120" text-anchor="middle" fill="#14532d" font-size="9">Stage 3</text>
-  <text x="460" y="120" text-anchor="middle" fill="#9d174d" font-size="9">Stage 4</text>
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#6b7280"/>
-    </marker>
-  </defs>
-</svg>`
-    }
-  }, {
-    id: 'h-spectrum',
-    type: 'heading',
-    data: {
-      text: 'Interpreting a Mass Spectrum',
-      level: 2
-    }
-  }, {
-    id: 'p-spectrum',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["A mass spectrum is a bar chart of relative abundance (y-axis) against m/z ratio (x-axis).", "For a monatomic element with singly charged ions (z = 1), m/z = mass number.", "Each peak represents one isotope; peak height gives its relative abundance."]
-    }
-  }, {
-    id: 'callout-we1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example — Aᵣ from a mass spectrum of neon',
-      text: 'Neon mass spectrum shows:\n  m/z = 20, abundance = 90.9%\n  m/z = 21, abundance = 0.3%\n  m/z = 22, abundance = 8.8%\n\nAᵣ = (20 × 90.9 + 21 × 0.3 + 22 × 8.8) ÷ 100\n   = (1818 + 6.3 + 193.6) ÷ 100\n   = 2017.9 ÷ 100\n   = 20.18\n\n∴ Aᵣ(Ne) ≈ 20.2'
-    }
-  }, {
-    id: 'callout-key',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Key equation — kinetic energy in TOF',
-      text: 'All ions are accelerated through the same potential difference V, gaining equal kinetic energy:\n\n½mv² = zV\n\nRearranging: v = √(2zV/m)\n\nLighter ions (smaller m) have greater velocity → arrive at the detector first → recorded at shorter time t.'
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam tip — electrospray vs electron bombardment',
-      text: 'Electrospray ionisation (ESI): sample dissolved, sprayed through needle, gains H⁺ → gives [M+H]⁺ ions. Used for large/fragile molecules.\nElectron bombardment: high-energy electrons knock out an electron → X⁺. Used for small molecules and elements.'
-    }
-  }, {
-    id: 'callout-warning',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: 'Common mistake — m/z vs mass number',
-      text: 'Mass spectrometers measure m/z, not mass directly. For singly charged ions (z = 1), m/z = mass number. For doubly charged ions (z = 2), m/z = mass ÷ 2. Always check the charge state of the ions if given.'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'Describe the four stages of a TOF mass spectrometer',
-        checked: false
-      }, {
-        text: 'Explain why lighter ions arrive at the detector first',
-        checked: false
-      }, {
-        text: 'Read isotope masses and abundances from a mass spectrum',
-        checked: false
-      }, {
-        text: 'Calculate Aᵣ from mass spectrum data',
-        checked: false
-      }, {
-        text: 'Distinguish between electrospray and electron bombardment ionisation',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Mass spectrometry separates ions by m/z ratio. Ionisation, acceleration, deflection, detection each serve a specific purpose.\n\nApply: A mass spectrum shows peaks at m/z = 20 (90.5%), 21 (0.3%), 22 (9.2%). Calculate Aᵣ and identify the element.\n\nAnalyze: Why must the mass spectrometer operate under vacuum? What would happen to ions if air molecules were present?\n\nEvaluate: Compare electron impact vs electrospray ionisation for large biological molecules.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Know the electron configurations of the first 36 elements. Understand quantum shells, subshells (s, p, d) and orbitals. Relate the Periodic Table to electron configuration.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'TOF mass spectrometer: (1) ionisation → X⁺, (2) acceleration by electric field (equal KE), (3) drift tube — lighter ions faster, (4) detection by arrival time. Mass spectrum: peaks at m/z values, height = abundance. Aᵣ = Σ(m/z × %) ÷ 100.'
+    {
+      id: 'h-shells',
+      type: 'heading',
+      data: { text: 'Quantum Shells and Subshells', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-shells',
+      type: 'paragraph',
+      data: { text: 'Electrons occupy <strong>quantum shells</strong> (numbered n = 1, 2, 3, …) around the nucleus. Higher shell numbers = further from nucleus = more energy. Each shell is divided into <strong>subshells</strong> labelled s, p, d and f.' },
+      terms: ['Quantum shell', 'Subshell']
+    },
+    {
+      id: 'table-subshells',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Subshell capacity and orbits',
+        headers: ['Subshell', 'Number of Orbitals', 'Max Electrons'],
+        rows: [
+          ['<strong>s</strong>', '1', '2'],
+          ['<strong>p</strong>', '3', '6'],
+          ['<strong>d</strong>', '5', '10'],
+          ['<strong>f</strong>', '7', '14']
+        ]
+      },
+      terms: ['Orbital', 's orbital', 'p orbital', 'd orbital']
+    },
+    {
+      id: 'callout-filling',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Filling Order (Aufbau Principle)',
+        text: 'Electrons fill subshells in order of increasing energy:<br/>1s → 2s → 2p → 3s → 3p → <strong>4s → 3d</strong> → 4p → 5s → 4d → 5p<br/><br/>Note: 4s fills <strong>before</strong> 3d! (3d is slightly higher energy than 4s)<br/><br/>Within a subshell, electrons occupy separate orbitals first (one each) before pairing up — this is <strong>Hund\'s rule</strong>.'
+      },
+      terms: ['Aufbau principle', "Hund's rule"]
+    },
+    {
+      id: 'h-configs',
+      type: 'heading',
+      data: { text: 'Writing Electron Configurations', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-configs',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Electron configurations of selected elements',
+        headers: ['Element', 'Z', 'Full Configuration'],
+        rows: [
+          ['Hydrogen (H)', '1', '1s¹'],
+          ['Carbon (C)', '6', '1s² 2s² 2p²'],
+          ['Sodium (Na)', '11', '1s² 2s² 2p⁶ 3s¹'],
+          ['Chlorine (Cl)', '17', '1s² 2s² 2p⁶ 3s² 3p⁵'],
+          ['Calcium (Ca)', '20', '1s² 2s² 2p⁶ 3s² 3p⁶ 4s²'],
+          ['Chromium (Cr)*', '24', '1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁵ 4s¹'],
+          ['Copper (Cu)*', '29', '1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s¹']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-exceptions',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠ Exceptions: Cr and Cu',
+        text: 'Chromium and Copper are famous exceptions to the Aufbau filling order.<br/>Cr: expected [Ar] 3d⁴ 4s² but actual is [Ar] <strong>3d⁵ 4s¹</strong><br/>Cu: expected [Ar] 3d⁹ 4s² but actual is [Ar] <strong>3d¹⁰ 4s¹</strong><br/><br/>Reason: extra stability of a <em>half-filled</em> (d⁵) or <em>fully-filled</em> (d¹⁰) d subshell. An electron moves from 4s to 3d.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pt',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Periodic Table and Electron Configuration',
+        text: '• <strong>Group number</strong> = number of electrons in the outer shell (for main group elements).<br/>• <strong>Period number</strong> = highest quantum shell number occupied.<br/>• <strong>s-block</strong> (Groups 1 & 2): filling s subshell.<br/>• <strong>p-block</strong> (Groups 3–8/18): filling p subshell.<br/>• <strong>d-block</strong> (Transition metals, Groups 3–12): filling d subshell.'
+      },
+      terms: []
+    },
+    {
+      id: 'h-practice-ec',
+      type: 'heading',
+      data: { text: 'Practice Questions', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-pq-ec1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q1: Zinc (Z = 30) — Full spdf Configuration (Past Paper)',
+        text: '<strong>Question:</strong> Write the full electron configuration of zinc (Z = 30) in spdf notation.<br/><br/><strong>Step 1 — Start at lowest energy and fill in order:</strong><br/>1s² → 2s² → 2p⁶ → 3s² → 3p⁶ — that\'s 18 electrons<br/><br/><strong>Step 2 — Apply the 4s before 3d exception:</strong><br/>Fill 4s² next (not 3d!) → now 20 electrons placed<br/><br/><strong>Step 3 — Fill 3d:</strong><br/>3d can hold 10 electrons; Zn needs 10 more → 3d¹⁰<br/><br/><strong>Full config: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰</strong><br/>(often written as: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s² — both orders accepted)<br/><br/><em>Note: Zn is NOT a transition metal because its 3d subshell is completely full — it cannot form ions with a partially filled d subshell.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-ec2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q2: Chromium (Z = 24) — Anomalous Configuration',
+        text: '<strong>Question:</strong> Write the full electron configuration of chromium (Z = 24) and explain why it is anomalous.<br/><br/><strong>Expected (if Aufbau applied strictly):</strong><br/>1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁴ ← WRONG<br/><br/><strong>Actual configuration:</strong><br/>1s² 2s² 2p⁶ 3s² 3p⁶ <strong>4s¹ 3d⁵</strong><br/><br/><strong>Reason:</strong><br/>A half-filled 3d subshell (3d⁵) gives extra stability due to minimised electron-electron repulsion (one electron in each orbital, all same-spin). To achieve this, one electron is promoted from the 4s to the 3d.<br/><br/>This is a commonly tested exam question — always write 4s¹ 3d⁵ for Cr, NOT 4s² 3d⁴.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq-ec3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q3: Iron (Z = 26)',
+        text: '<strong>Question:</strong> Write the full electron configuration of iron (Z = 26).<br/><br/><strong>Step 1 — Fill up to Ar core (Z=18):</strong><br/>1s² 2s² 2p⁶ 3s² 3p⁶<br/><br/><strong>Step 2 — Fill 4s before 3d:</strong><br/>...4s²<br/><br/><strong>Step 3 — Fill 3d for remaining 6 electrons:</strong><br/>...3d⁶<br/><br/><strong>Full config: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶</strong><br/><br/><em>Iron is NOT an exception (unlike Cr and Cu). Does not have a half-filled or full d, so Aufbau applies normally.</em>'
+      },
+      terms: []
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'list-stages',
-      prompt: 'List the four stages of a time-of-flight mass spectrometer.'
-    }, {
-      id: 'cue-2',
-      blockId: 'callout-key',
-      prompt: 'Why do lighter ions arrive at the detector first in a TOF instrument?'
-    }, {
-      id: 'cue-3',
-      blockId: 'callout-we1',
-      prompt: 'Calculate the Aᵣ of neon given peaks at m/z 20 (90.9%), 21 (0.3%), 22 (8.8%).'
-    }, {
-      id: 'cue-4',
-      blockId: 'p-spectrum',
-      prompt: 'What do the x-axis and y-axis of a mass spectrum represent?'
-    }, {
-      id: 'cue-5',
-      blockId: 'callout-tip',
-      prompt: 'What is the difference between electrospray and electron bombardment ionisation?'
-    }],
-    summaryText: 'TOF stages: ionisation → acceleration (equal KE) → drift (lighter = faster) → detection. Aᵣ = Σ(m/z × %) ÷ 100. m/z = mass for singly charged ions.',
+    cues: [
+      { id: 'c1', blockId: 'table-subshells', prompt: 'How many orbitals are in a p subshell? What is the maximum number of electrons it can hold?' },
+      { id: 'c2', blockId: 'callout-filling', prompt: 'State the electron filling order up to 4p. Which fills first: 4s or 3d?' },
+      { id: 'c3', blockId: 'callout-exceptions', prompt: 'Write the full electronic configuration of chromium (Z = 24) and explain why it is anomalous.' },
+      { id: 'c4', blockId: 'callout-pq-ec1', prompt: 'Write the full spdf configuration of zinc (Z = 30), showing why 4s fills before 3d.' },
+      { id: 'c5', blockId: 'callout-pq-ec3', prompt: 'Write the full configuration of Fe (Z = 26). Is it an exception to Aufbau? Explain.' }
+    ],
+    summaryText: 'Shells n=1,2,3… contain subshells (s×1, p×3, d×5, f×7 orbitals). Filling: 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p. Hund\'s rule: fill each orbital singly before pairing. Exceptions: Cr ([Ar]3d⁵4s¹) and Cu ([Ar]3d¹⁰4s¹) for extra stability from half-filled/full-d subshell.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'Edexcel IAL Chemistry Specification — Topic 2',
-    detail: 'Mass spectrometry, TOF instrument, mass spectrum interpretation',
-    year: '2018',
-    source: 'Pearson Edexcel',
-    tags: ['mass spectrometry', 'atomic structure']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_2_3;

@@ -38,7 +38,7 @@ export const note_chemistry_1_2_10_10 = {
     data: {
       caption: 'Chemical tests for identification of organic functional groups',
       headers: ['Test / Reagent', 'Positive result', 'Functional group identified'],
-      rows: [['Acidified K₂Cr₂O₇', 'Orange → green', 'Alcohol (primary or secondary) or aldehyde'], ['Fehling\'s / Benedict\'s solution', 'Blue → brick-red precipitate', 'Aldehyde (not ketone)'], ['Tollens\' reagent (ammoniacal AgNO₃)', 'Silver mirror forms', 'Aldehyde (not ketone)'], ['Acidified AgNO₃ (after hydrolysis with NaOH)', 'White/cream/yellow precipitate', 'Halogenoalkane (halide ion confirmed)'], ['Na₂CO₃ solution', 'Effervescence (CO₂)', 'Carboxylic acid'], ['Bromine water', 'Orange → colourless', 'Alkene (C=C)'], ['Universal indicator / litmus', 'Turns red', 'Acidic compound (carboxylic acid)'], ['Sodium metal', 'Fizzing (H₂)', 'O–H group present (alcohol or carboxylic acid)']]
+      rows: [['Acidified K₂Cr₂O₇', 'Orange → green', 'Alcohol (primary or secondary) or aldehyde'], ['Fehling\'s / Benedict\'s solution', 'Blue → brick-red precipitate', 'Aldehyde (not ketone)'], ['Tollens\' reagent (ammoniacal AgNO₃)', 'Silver mirror forms', 'Aldehyde (not ketone)'], ['Acidified AgNO₃ (after hydrolysis with NaOH)', 'White/cream/yellow precipitate', 'Halogenoalkane (halide ion confirmed)'], ['Na₂CO₃ solution', 'Effervescence (CO₂)', 'Carboxylic acid'], ['Combustion (Flame test)', 'Smoky/sooty flame (indicates high C:H ratio or aromatic). Clean blue flame (saturated/low C:H ratio)', 'Aromatic rings or unsaturated compounds'], ['Bromine water', 'Orange → colourless (rapidly decolourises)', 'Alkene (C=C)'], ['Universal indicator / litmus', 'Turns red', 'Acidic compound (carboxylic acid)'], ['Sodium metal', 'Fizzing (H₂)', 'O–H group present (alcohol or carboxylic acid)']]
     }
   }, {
     id: 'callout-systematic-key',
@@ -99,6 +99,12 @@ export const note_chemistry_1_2_10_10 = {
         text: 'AgNO₃ after NaOH hydrolysis: ppt → halogenoalkane',
         checked: false
       }, {
+        text: 'Bromine water: orange → colourless (rapidly decolourises) → unsaturated (C=C)',
+        checked: false
+      }, {
+        text: 'Combustion: smoky flame indicates aromatic or high C:H ratio',
+        checked: false
+      }, {
         text: 'IR: broad O–H, sharp C=O, fingerprint region',
         checked: false
       }]
@@ -107,7 +113,7 @@ export const note_chemistry_1_2_10_10 = {
     id: 'summary',
     type: 'summary',
     data: {
-      text: 'Core Practical 8 uses a systematic series of chemical tests: Na₂CO₃ (carboxylic acid), K₂Cr₂O₇ (alcohol/aldehyde), Tollens\' (aldehyde), Fehling\'s (aldehyde), AgNO₃ (halide), bromine water (alkene). IR spectroscopy confirms functional groups and the fingerprint region confirms identity. Always give reagent, observation and conclusion.'
+      text: "Core Practical 8 uses a systematic series of chemical tests: Combustion (flame test), Na₂CO₃ (carboxylic acid), K₂Cr₂O₇ (alcohol/aldehyde), Tollens' (aldehyde), Fehling's (aldehyde), AgNO₃ (halide), bromine water (rapidly decolourises for alkene). IR spectroscopy confirms functional groups and the fingerprint region confirms identity. Always give reagent, observation and conclusion."
     }
   }],
   recall: {
@@ -125,7 +131,7 @@ export const note_chemistry_1_2_10_10 = {
       blockId: 'callout-systematic-key',
       prompt: 'Describe a systematic approach to identifying an unknown organic compound using chemical tests and IR spectroscopy.'
     }],
-    summaryText: 'Core Practical 8: chemical tests for functional groups, systematic identification, IR confirmation.',
+    summaryText: "Core Practical 8: chemical tests for functional groups (Combustion, Na₂CO₃, K₂Cr₂O₇, Tollens', Fehling's, AgNO₃, Bromine Water), systematic identification, IR confirmation.",
     ready: false
   },
   evidence: [{

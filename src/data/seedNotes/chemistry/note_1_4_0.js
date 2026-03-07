@@ -1,220 +1,210 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 0
+ * "Introduction to organic chemistry"
+ * Source: Pearson Edexcel IAL Chemistry — Section 4A.1–4A.3
+ */
 export const note_chemistry_1_4_0 = {
-  blocks: [{
-    id: 'obj-hazard-risk',
-    type: 'objective',
-    data: {
-      text: 'Distinguish between hazard and risk; explain how risk is assessed and managed in chemistry practical work.'
-    }
-  }, {
-    id: 'h-definitions',
-    type: 'heading',
-    data: {
-      text: 'Hazard vs Risk — Core Definitions',
-      level: 2
-    }
-  }, {
-    id: 'p-intro',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Before carrying out any chemical experiment, it is essential to understand two key safety concepts: <strong>hazard</strong> and <strong>risk</strong>.", "These terms are often confused but have precise scientific meanings."]
-    }
-  }, {
-    id: 'callout-key-hazard',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Hazard',
-      text: 'A hazard is an inherent property of a substance or situation that has the potential to cause harm. It is an intrinsic characteristic — e.g. flammability, toxicity, corrosiveness.'
-    }
-  }, {
-    id: 'callout-key-risk',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Risk',
-      text: 'Risk is the likelihood (probability) that a hazard will actually cause harm under the conditions of use, combined with the severity of that harm.'
-    }
-  }, {
-    id: 'p-distinction',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["A substance can be highly hazardous but carry very low risk if suitable precautions are taken.", "Conversely, a low-hazard substance may pose a high risk if used carelessly."]
-    }
-  }, {
-    id: 'h-equation',
-    type: 'heading',
-    data: {
-      text: 'The Risk Equation',
-      level: 2
-    }
-  }, {
-    id: 'eq-risk',
-    type: 'equation',
-    data: {
-      html: 'Risk ∝ Hazard × Likelihood of exposure × Severity of consequence',
-      caption: 'Risk is not the same as hazard — it depends on both probability and consequence.'
-    }
-  }, {
-    id: 'h-examples',
-    type: 'heading',
-    data: {
-      text: 'Worked Examples',
-      level: 2
-    }
-  }, {
-    id: 'table-examples',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Hazard vs Risk — practical examples',
-      headers: ['Substance / Situation', 'Hazard', 'Risk (with precautions)', 'Risk (without precautions)'],
-      rows: [['Concentrated HCl', 'Corrosive, toxic fumes', 'Low — used in fume cupboard with gloves', 'High — causes chemical burns'], ['Ethanol', 'Highly flammable', 'Low — no naked flames, small quantities', 'High — ignites easily, fire hazard'], ['Bromine water (dilute)', 'Toxic, irritant', 'Low — used in small amounts, gloves worn', 'Medium — irritates skin/eyes'], ['Liquid nitrogen', 'Cryogenic burns, asphyxiant', 'Low — insulated gloves, ventilated room', 'High — severe frostbite, O₂ displacement']]
-    }
-  }, {
-    id: 'h-assessment',
-    type: 'heading',
-    data: {
-      text: 'Risk Assessment Process',
-      level: 2
-    }
-  }, {
-    id: 'list-ra',
-    type: 'list',
-    data: {
-      style: 'numbered',
-      items: ['Identify all hazardous substances and operations in the experiment.', 'Consult CLEAPSS Hazcard / safety data sheets (SDS) for each substance.', 'Assess the likelihood of exposure and severity of harm.', 'Identify control measures to reduce risk (substitution, containment, PPE).', 'Record the risk assessment before the experiment begins.', 'Review and update if the procedure changes.']
-    }
-  }, {
-    id: 'h-hazard-symbols',
-    type: 'heading',
-    data: {
-      text: 'GHS Hazard Pictograms',
-      level: 2
-    }
-  }, {
-    id: 'p-ghs',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["The Globally Harmonised System (GHS) uses standardised pictograms to communicate hazards.", "Students must be able to recognise these symbols and state what they mean."]
-    }
-  }, {
-    id: 'table-ghs',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Common GHS hazard pictograms',
-      headers: ['Symbol name', 'Appearance', 'Meaning'],
-      rows: [['Flame', '🔥 Red diamond, flame', 'Flammable — catches fire easily'], ['Skull & crossbones', '☠️ Black skull', 'Acute toxicity — harmful/fatal if swallowed, inhaled or absorbed'], ['Corrosion', '🧪 Liquid destroying surface', 'Corrosive — damages skin, eyes, metals'], ['Exclamation mark', '❗ Black exclamation', 'Irritant, harmful, skin/eye sensitiser'], ['Exploding bomb', '💥 Explosion shape', 'Explosive or unstable'], ['Health hazard', '🫁 Torso with star', 'Serious long-term health effects (carcinogen, mutagen, reproductive toxin)'], ['Oxidiser', '⭕ Flame over circle', 'Oxidising agent — can intensify fire'], ['Gas cylinder', '🟦 Pressurised cylinder', 'Gas under pressure — risk of explosion if heated'], ['Environment', '🌿 Dead fish & tree', 'Aquatic or environmental hazard']]
-    }
-  }, {
-    id: 'h-control',
-    type: 'heading',
-    data: {
-      text: 'Control Measures — Hierarchy',
-      level: 2
-    }
-  }, {
-    id: 'list-hierarchy',
-    type: 'list',
-    data: {
-      style: 'numbered',
-      items: ['<strong>Elimination</strong> — remove the hazard entirely (best option).', '<strong>Substitution</strong> — replace with a less hazardous substance.', '<strong>Engineering controls</strong> — fume cupboard, safety screens.', '<strong>Administrative controls</strong> — written procedures, training.', '<strong>PPE (Personal Protective Equipment)</strong> — gloves, goggles, lab coat (last resort).']
-    }
-  }, {
-    id: 'callout-tip-exam',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam Tip',
-      text: 'Exam questions often ask you to "identify the hazard" and "state a precaution to reduce the risk". Always distinguish: the hazard is the property of the substance (e.g. flammable); the precaution reduces the risk (e.g. keep away from naked flames).'
-    }
-  }, {
-    id: 'callout-warning',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: 'Common Mistake',
-      text: 'Do NOT say "the risk is that it is toxic" — toxicity is the hazard. The risk is the probability of being harmed by the toxic substance given the conditions of use.'
-    }
-  }, {
-    id: 'checklist-hazard',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'I can define hazard and risk precisely and distinguish between them.',
-        checked: false
-      }, {
-        text: 'I can explain how risk depends on both likelihood and severity.',
-        checked: false
-      }, {
-        text: 'I can recognise common GHS hazard pictograms and state their meaning.',
-        checked: false
-      }, {
-        text: 'I can describe the five steps of a risk assessment.',
-        checked: false
-      }, {
-        text: 'I can list the hierarchy of control measures in order of preference.',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Hazard is the potential danger; risk considers likelihood and severity under actual conditions.\n\nApply: Conc. H₂SO₄ is corrosive. Describe three control measures that reduce the risk in a school lab.\n\nAnalyze: Compare risk assessments for ethanol (flammable, low toxicity) vs benzene (carcinogenic) as solvents.\n\nEvaluate: "Zero risk is impossible in chemistry." Discuss whether the goal should be eliminating hazards or managing risks.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Understand the scope of organic chemistry. Know the terms: organic molecule, hydrocarbon, saturated, unsaturated, functional group, homologous series.' },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'summary-hazard',
-    type: 'summary',
-    data: {
-      text: 'A hazard is an inherent property with potential to cause harm; risk is the likelihood × severity of that harm occurring. Risk assessments identify hazards, consult safety data, and apply control measures in order: elimination > substitution > engineering > admin > PPE. GHS pictograms communicate hazard type globally.'
+    {
+      id: 'h-org',
+      type: 'heading',
+      data: { text: 'What is Organic Chemistry?', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-org',
+      type: 'paragraph',
+      data: { text: '<strong>Organic chemistry</strong> is the chemistry of carbon-containing compounds. Carbon is uniquely able to form long chains and rings because it can form four covalent bonds and bond with itself repeatedly (catenation). This gives rise to millions of organic compounds.' },
+      terms: ['Organic chemistry', 'Catenation']
+    },
+    {
+      id: 'table-terms',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Key organic chemistry terms',
+        headers: ['Term', 'Definition', 'Example'],
+        rows: [
+          ['<strong>Hydrocarbon</strong>', 'A compound containing only carbon and hydrogen atoms.', 'CH₄ (methane), C₆H₆ (benzene)'],
+          ['<strong>Saturated</strong>', 'Contains only single C–C bonds; no C=C double bonds.', 'Alkanes (e.g. ethane, C₂H₆)'],
+          ['<strong>Unsaturated</strong>', 'Contains one or more C=C or C≡C bonds.', 'Alkenes (e.g. ethene, C₂H₄)'],
+          ['<strong>Functional group</strong>', 'An atom or group of atoms that determines the characteristic reactions of a molecule.', 'C=C (alkene); –OH (alcohol); –Br (halogenoalkane)'],
+          ['<strong>Homologous series</strong>', 'A family of organic compounds with the same functional group and general formula, where each member differs by –CH₂–.', 'Alkanes: CₙH₂ₙ₊₂']
+        ]
+      },
+      terms: ['Hydrocarbon', 'Saturated', 'Unsaturated', 'Functional group', 'Homologous series']
+    },
+    {
+      id: 'callout-homologous',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Properties of a Homologous Series',
+        text: 'Members of the same homologous series:<br/>• Have the same <strong>functional group</strong> → similar chemical properties<br/>• Differ by one CH₂ unit → gradually changing physical properties (boiling point, solubility etc.)<br/>• Share the same <strong>general formula</strong><br/>• Can be named using the same systematic rules'
+      },
+      terms: []
+    },
+    {
+      id: 'table-series',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Common homologous series',
+        headers: ['Series', 'Functional Group', 'General Formula'],
+        rows: [
+          ['Alkanes', 'None (C–H and C–C only)', 'CₙH₂ₙ₊₂'],
+          ['Alkenes', 'C=C (double bond)', 'CₙH₂ₙ'],
+          ['Alkynes', 'C≡C (triple bond)', 'CₙH₂ₙ₋₂'],
+          ['Alcohols', '–OH (hydroxyl)', 'CₙH₂ₙ₊₁OH'],
+          ['Halogenoalkanes', 'C–X (X = F, Cl, Br, I)', 'CₙH₂ₙ₊₁X'],
+          ['Carboxylic acids', '–COOH', 'CₙH₂ₙ₊₁COOH'],
+          ['Cycloalkanes', 'Ring of CH₂ groups', 'CₙH₂ₙ']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'h-formula-types',
+      type: 'heading',
+      data: { text: 'Types of Formula', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-formula',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Five ways to represent organic molecules',
+        headers: ['Type', 'Definition', 'Example (Butane)'],
+        rows: [
+          ['<strong>Empirical</strong>', 'Simplest whole-number ratio of atoms in the molecule.', 'C₂H₅'],
+          ['<strong>Molecular</strong>', 'Actual number of atoms of each element in the molecule.', 'C₄H₁₀'],
+          ['<strong>Structural</strong>', 'Shows how atoms are grouped together without showing all bonds.', 'CH₃CH₂CH₂CH₃'],
+          ['<strong>Displayed</strong>', 'Shows every single atom and every single covalent bond.', 'Full drawn structure with 13 bonds'],
+          ['<strong>Skeletal</strong>', 'Shows only the carbon skeleton as lines. C atoms are at vertices/ends. H atoms on C are not shown.', 'Zig-zag line']
+        ]
+      },
+      terms: ['Empirical formula', 'Molecular formula', 'Structural formula', 'Displayed formula', 'Skeletal formula']
+    },
+    {
+      id: 'svg-formula',
+      type: 'svg',
+      data: {
+        caption: 'Figure: Displayed, structural and skeletal formulas for butane and chloroethane',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="12">
+  <!-- Butane -->
+  <text x="150" y="20" text-anchor="middle" font-weight="bold" fill="#1e40af">Butane (C₄H₁₀)</text>
+  
+  <text x="80" y="60" text-anchor="end" fill="#64748b">Displayed:</text>
+  <!-- Displayed Butane -->
+  <text x="100" y="60" font-family="monospace">
+    <tspan x="100" dy="0">  H   H   H   H</tspan>
+    <tspan x="100" dy="15">  |   |   |   |</tspan>
+    <tspan x="100" dy="15">H-C---C---C---C-H</tspan>
+    <tspan x="100" dy="15">  |   |   |   |</tspan>
+    <tspan x="100" dy="15">  H   H   H   H</tspan>
+  </text>
+  
+  <text x="80" y="150" text-anchor="end" fill="#64748b">Structural:</text>
+  <text x="100" y="150" font-family="monospace">CH₃CH₂CH₂CH₃</text>
+  
+  <text x="80" y="190" text-anchor="end" fill="#64748b">Skeletal:</text>
+  <polyline points="100,200 130,180 160,200 190,180" fill="none" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Chloroethane -->
+  <text x="400" y="20" text-anchor="middle" font-weight="bold" fill="#15803d">Chloroethane (C₂H₅Cl)</text>
+  
+  <!-- Displayed Chloroethane -->
+  <text x="350" y="60" font-family="monospace">
+    <tspan x="350" dy="0">  H   H</tspan>
+    <tspan x="350" dy="15">  |   |</tspan>
+    <tspan x="350" dy="15">H-C---C-Cl</tspan>
+    <tspan x="350" dy="15">  |   |</tspan>
+    <tspan x="350" dy="15">  H   H</tspan>
+  </text>
+  
+  <text x="350" y="150" font-family="monospace">CH₃CH₂Cl</text>
+  
+  <polyline points="350,200 380,180 410,200" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="415" y="205" font-family="monospace" fill="#15803d" font-weight="bold">Cl</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
+      id: 'h-reactions',
+      type: 'heading',
+      data: { text: 'Reaction Types & Bond Breaking', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-rxn',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Common organic reaction classifications',
+        headers: ['Reaction Type', 'Description'],
+        rows: [
+          ['<strong>Addition</strong>', 'Two reactants join to form a single product. (e.g. alkene + H₂ → alkane)'],
+          ['<strong>Substitution</strong>', 'An atom or group is replaced by a different atom or group. (e.g. alkane + halogen → halogenoalkane + hydrogen halide)'],
+          ['<strong>Oxidation</strong>', 'Addition of oxygen or removal of hydrogen. (e.g. alcohol → aldehyde)'],
+          ['<strong>Reduction</strong>', 'Addition of hydrogen or removal of oxygen. (e.g. alkene + H₂ → alkane)'],
+          ['<strong>Polymerisation</strong>', 'Many small molecules (monomers) join together to form a very large chain molecule (polymer).']
+        ]
+      },
+      terms: ['Addition reaction', 'Substitution reaction', 'Oxidation', 'Reduction', 'Polymerisation']
+    },
+    {
+      id: 'callout-breaking',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Covalent Bond Breaking (Fission)',
+        text: 'When a covalent bond breaks, it can do so in two ways:<br/><br/><strong>Homolytic Fission:</strong> The bond breaks evenly. Each atom takes one electron from the shared pair, forming two highly reactive <strong>free radicals</strong>. (A free radical is an atom or group with an unpaired electron, represented by •).<br/><br/><strong>Heterolytic Fission:</strong> The bond breaks unevenly. One atom takes both electrons from the shared covalent bond, forming a positive ion (cation) and a negative ion (anion). The more electronegative atom takes the electrons.'
+      },
+      terms: ['Homolytic fission', 'Heterolytic fission', 'Free radical']
+    },
+    {
+      id: 'callout-electrophile',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'What is an Electrophile?',
+        text: 'An <strong>electrophile</strong> ("electron-loving") is a species that is attracted to an electron-rich centre or area of high electron density (like a C=C double bond), where it accepts a pair of electrons to form a new covalent bond. Electrophiles are usually positive ions or molecules with a partial positive charge (δ+).'
+      },
+      terms: ['Electrophile']
+    },
+    {
+      id: 'h-hazards',
+      type: 'heading',
+      data: { text: 'Hazards and Risk Assessments', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-risk',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Hazard vs. Risk',
+        text: 'A <strong>hazard</strong> is an intrinsic property of a substance or procedure that has the potential to cause harm (e.g. toxic, flammable, corrosive).<br/><br/>A <strong>risk</strong> is the probability or chance that the hazard will actually cause harm in a particular scenario.<br/><br/><strong>Risk Assessments</strong> evaluate both the hazard and the risk, to determine necessary <strong>control measures</strong>. Examples of control measures include:<br/>• Using a fume cupboard for toxic gases<br/>• Wearing gloves and safety goggles for corrosive liquids<br/>• Keeping flammable liquids away from naked flames (using a water bath instead of a bunsen burner)<br/>• Using a lower and safer concentration or a smaller amount of a hazardous chemical'
+      },
+      terms: ['Hazard', 'Risk', 'Risk assessment', 'Control measure']
     }
-  }],
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'callout-key-hazard',
-      prompt: 'What is the precise definition of a hazard?'
-    }, {
-      id: 'cue-2',
-      blockId: 'callout-key-risk',
-      prompt: 'What is the precise definition of risk, and how does it differ from hazard?'
-    }, {
-      id: 'cue-3',
-      blockId: 'list-ra',
-      prompt: 'What are the six steps of a risk assessment?'
-    }, {
-      id: 'cue-4',
-      blockId: 'list-hierarchy',
-      prompt: 'List the five levels of the control measure hierarchy, from most to least preferred.'
-    }, {
-      id: 'cue-5',
-      blockId: 'table-ghs',
-      prompt: 'What do the flame, skull & crossbones, and corrosion GHS pictograms mean?'
-    }],
-    summaryText: 'Hazard = inherent potential to harm. Risk = likelihood × severity. Risk assessments use the hierarchy: eliminate, substitute, engineer, administrate, PPE. GHS symbols communicate hazard type at a glance.',
+    cues: [
+      { id: 'c1', blockId: 'table-terms', prompt: 'Define the terms: saturated, unsaturated, functional group, and homologous series.' },
+      { id: 'c2', blockId: 'callout-homologous', prompt: 'State four characteristics that all members of the same homologous series share.' },
+      { id: 'c3', blockId: 'table-formula', prompt: 'Explain the difference between molecular, structural, displayed, and skeletal formulas.' },
+      { id: 'c4', blockId: 'callout-breaking', prompt: 'Distinguish between homolytic and heterolytic fission. What is formed in each case?' },
+      { id: 'c5', blockId: 'callout-risk', prompt: 'Explain the difference between a hazard and a risk, and give two examples of control measures.' }
+    ],
+    summaryText: 'Organic chemistry = chemistry of C-containing compounds. Homologous series = same functional group, same general formula. Formula types: empirical, molecular, structural, displayed, skeletal. Reactions: addition, substitution, oxidation, reduction, polymerisation. Fission: homolytic (forms radicals) vs heterolytic (forms ions). Hazard = potential to harm; risk = likelihood of harm occurring.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'CLEAPSS Hazcard guidance',
-    detail: 'CLEAPSS provides hazard cards for all common laboratory chemicals used in UK schools and colleges.',
-    year: '2023',
-    source: 'CLEAPSS',
-    tags: ['safety', 'hazard']
-  }, {
-    id: 'ev-2',
-    title: 'GHS globally harmonised system',
-    detail: 'The UN GHS standardises hazard communication through pictograms, signal words and hazard statements worldwide.',
-    year: '2021',
-    source: 'United Nations',
-    tags: ['GHS', 'pictograms']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_4_0;

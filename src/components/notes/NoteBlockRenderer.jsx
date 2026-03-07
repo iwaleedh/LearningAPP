@@ -13,7 +13,7 @@ function ObjectiveBlock({ data }) {
     return (
         <div className="nb-objective">
             <span className="nb-objective-label">🎯 Learning Objective</span>
-            <p>{data.text}</p>
+            <p dangerouslySetInnerHTML={{ __html: data.text }} />
         </div>
     );
 }
@@ -21,11 +21,11 @@ function ObjectiveBlock({ data }) {
 function HeadingBlock({ data, blockId }) {
     const level = data.level || 2;
     const Tag = `h${Math.min(Math.max(level, 1), 6)}`;
-    return <Tag className={`nb-heading nb-h${level}`} data-block-id={blockId}>{data.text}</Tag>;
+    return <Tag className={`nb-heading nb-h${level}`} data-block-id={blockId} dangerouslySetInnerHTML={{ __html: data.text }} />;
 }
 
 function ParagraphBlock({ data }) {
-    return <p className="nb-paragraph">{data.text}</p>;
+    return <p className="nb-paragraph" dangerouslySetInnerHTML={{ __html: data.text }} />;
 }
 
 function ListBlock({ data }) {
@@ -35,7 +35,7 @@ function ListBlock({ data }) {
         return (
             <ol className="nb-list nb-list-ordered">
                 {items.map((item, i) => (
-                    <li key={i}>{typeof item === 'object' ? item.text : item}</li>
+                    <li key={i} dangerouslySetInnerHTML={{ __html: typeof item === 'object' ? item.text : item }} />
                 ))}
             </ol>
         );
@@ -43,7 +43,7 @@ function ListBlock({ data }) {
     return (
         <ul className="nb-list nb-list-bullet">
             {items.map((item, i) => (
-                <li key={i}>{typeof item === 'object' ? item.text : item}</li>
+                <li key={i} dangerouslySetInnerHTML={{ __html: typeof item === 'object' ? item.text : item }} />
             ))}
         </ul>
     );
@@ -60,7 +60,7 @@ function ChecklistBlock({ data }) {
             {items.map((item, i) => (
                 <li key={i} className={`nb-checklist-item ${checked[i] ? 'checked' : ''}`} onClick={() => toggle(i)}>
                     <span className="nb-checkbox">{checked[i] ? '✅' : '☐'}</span>
-                    <span>{typeof item === 'object' ? item.text : item}</span>
+                    <span dangerouslySetInnerHTML={{ __html: typeof item === 'object' ? item.text : item }} />
                 </li>
             ))}
         </ul>
@@ -187,13 +187,13 @@ function ComparisonTableBlock({ data }) {
             <div className="nb-table-scroll">
                 <table className="nb-table">
                     <thead>
-                        <tr>{headers.map((h, i) => <th key={i}>{h}</th>)}</tr>
+                        <tr>{headers.map((h, i) => <th key={i} dangerouslySetInnerHTML={{ __html: h }} />)}</tr>
                     </thead>
                     <tbody>
                         {rows.map((row, i) => (
                             <tr key={i}>
                                 {(Array.isArray(row) ? row : Object.values(row)).map((cell, j) => (
-                                    <td key={j}>{cell}</td>
+                                    <td key={j} dangerouslySetInnerHTML={{ __html: cell }} />
                                 ))}
                             </tr>
                         ))}
@@ -208,7 +208,7 @@ function SummaryBlock({ data }) {
     return (
         <div className="nb-summary">
             <span className="nb-summary-label">📝 Summary</span>
-            <p>{data.text}</p>
+            <p dangerouslySetInnerHTML={{ __html: data.text }} />
         </div>
     );
 }
@@ -216,14 +216,14 @@ function SummaryBlock({ data }) {
 function CalloutBlock({ data }) {
     const style = data.style || 'key';
     const styleMap = {
-        key:    { icon: '💡', cls: 'nb-callout-key' },
+        key: { icon: '💡', cls: 'nb-callout-key' },
         worked: { icon: '✏️', cls: 'nb-callout-worked' },
-        tip:    { icon: '💬', cls: 'nb-callout-tip' },
-        warning:{ icon: '⚠️', cls: 'nb-callout-warning' },
+        tip: { icon: '💬', cls: 'nb-callout-tip' },
+        warning: { icon: '⚠️', cls: 'nb-callout-warning' },
     };
     const { icon, cls } = styleMap[style] || styleMap.key;
-    // Convert newlines to <br/> in text
-    const lines = (data.text || '').split('\n');
+    // Render body as HTML so that <strong>, <em>, <br/> etc. are parsed correctly
+    const bodyHtml = (data.text || '').replace(/\n/g, '<br/>');
     return (
         <div className={`nb-callout ${cls}`}>
             {data.title && (
@@ -231,11 +231,10 @@ function CalloutBlock({ data }) {
                     <span>{icon}</span> {data.title}
                 </div>
             )}
-            <div className="nb-callout-body">
-                {lines.map((line, i) => (
-                    <span key={i}>{line}{i < lines.length - 1 && <br />}</span>
-                ))}
-            </div>
+            <div
+                className="nb-callout-body"
+                dangerouslySetInnerHTML={{ __html: bodyHtml }}
+            />
         </div>
     );
 }
@@ -281,9 +280,9 @@ function CodeBlock({ data }) {
 function DeeperBlock({ data }) {
     const levels = [
         { key: 'understand', label: 'Understand', icon: '🔍', cls: 'nb-deeper-understand' },
-        { key: 'apply',      label: 'Apply',      icon: '⚙️', cls: 'nb-deeper-apply'     },
-        { key: 'analyze',    label: 'Analyse',    icon: '🔬', cls: 'nb-deeper-analyze'   },
-        { key: 'evaluate',   label: 'Evaluate',   icon: '⚖️', cls: 'nb-deeper-evaluate'  },
+        { key: 'apply', label: 'Apply', icon: '⚙️', cls: 'nb-deeper-apply' },
+        { key: 'analyze', label: 'Analyse', icon: '🔬', cls: 'nb-deeper-analyze' },
+        { key: 'evaluate', label: 'Evaluate', icon: '⚖️', cls: 'nb-deeper-evaluate' },
     ];
     return (
         <div className="nb-deeper">
@@ -315,19 +314,19 @@ export default function NoteBlockRenderer({ blocks = [] }) {
             {blocks.map((block, i) => {
                 const key = block.id || `block-${i}`;
                 switch (block.type) {
-                    case 'objective':       return <ObjectiveBlock       key={key} data={block.data || {}} />;
-                    case 'heading':         return <HeadingBlock         key={key} data={block.data || {}} blockId={key} />;
-                    case 'paragraph':       return <ParagraphBlock       key={key} data={block.data || {}} />;
-                    case 'list':            return <ListBlock            key={key} data={block.data || {}} />;
-                    case 'checklist':       return <ChecklistBlock       key={key} data={block.data || {}} />;
-                    case 'equation':        return <EquationBlock        key={key} data={block.data || {}} />;
+                    case 'objective': return <ObjectiveBlock key={key} data={block.data || {}} />;
+                    case 'heading': return <HeadingBlock key={key} data={block.data || {}} blockId={key} />;
+                    case 'paragraph': return <ParagraphBlock key={key} data={block.data || {}} />;
+                    case 'list': return <ListBlock key={key} data={block.data || {}} />;
+                    case 'checklist': return <ChecklistBlock key={key} data={block.data || {}} />;
+                    case 'equation': return <EquationBlock key={key} data={block.data || {}} />;
                     case 'comparisonTable': return <ComparisonTableBlock key={key} data={block.data || {}} />;
-                    case 'summary':         return <SummaryBlock         key={key} data={block.data || {}} />;
-                    case 'callout':         return <CalloutBlock         key={key} data={block.data || {}} />;
-                    case 'svg':             return <SvgBlock             key={key} data={block.data || {}} />;
-                    case 'quote':           return <QuoteBlock           key={key} data={block.data || {}} />;
-                    case 'code':            return <CodeBlock            key={key} data={block.data || {}} />;
-                    case 'deeper':          return <DeeperBlock          key={key} data={block.data || {}} />;
+                    case 'summary': return <SummaryBlock key={key} data={block.data || {}} />;
+                    case 'callout': return <CalloutBlock key={key} data={block.data || {}} />;
+                    case 'svg': return <SvgBlock key={key} data={block.data || {}} />;
+                    case 'quote': return <QuoteBlock key={key} data={block.data || {}} />;
+                    case 'code': return <CodeBlock key={key} data={block.data || {}} />;
+                    case 'deeper': return <DeeperBlock key={key} data={block.data || {}} />;
                     default:
                         return null;
                 }

@@ -1,339 +1,214 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 1 · Subtopic 9
  * "Equations from test-tube observations"
- * Source: wch11-1.pdf — Spec refs: 1.10, 1.12(i)(ii)(iii)
+ * Source: Pearson Edexcel IAL Chemistry — Sections 1B.2, 1B.3, 1B.4
+ * Updated with flame test, halide identification and decomposition content from video analysis.
  */
-
 export const note_chemistry_1_1_9 = {
-  blocks: [{
-    id: 'objective-block',
-    type: 'objective',
-    data: {
-      text: 'Relate ionic and full equations (with state symbols) to observations from simple test-tube experiments: displacement reactions, typical reactions of acids, and precipitation reactions.'
+  blocks: [
+    {
+      id: 'objective',
+      type: 'objective',
+      data: { text: 'Relate ionic and full equations to observations from simple test-tube reactions: reactions of acids (with metals, alkalis, carbonates), displacement reactions, precipitation reactions, flame tests, and halide/sulfate identification.' },
+      terms: []
     },
-    terms: []
-  },
-  // ── READING OBSERVATIONS ──────────────────────────────────────────────
-  {
-    id: 'h-obs',
-    type: 'heading',
-    data: {
-      text: 'Reading Observations to Write Equations',
-      level: 2
+    {
+      id: 'h-acids',
+      type: 'heading',
+      data: { text: 'Reactions of Acids', level: 2 },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'p-obs',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["When given observations from a test-tube reaction, the task is to identify: (1) the reaction type, (2) the products formed, then write balanced full and ionic equations with correct state symbols.", "Visual clues such as gas bubbles, colour changes and precipitate formation are the key indicators."]
+    {
+      id: 'table-acids',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Acid reactions — observations, full and ionic equations',
+        headers: ['Reaction Type', 'Observation', 'General Equation', 'Ionic Equation'],
+        rows: [
+          ['<strong>Acid + Metal</strong>', 'Bubbles of colourless gas (H₂). Metal dissolves. Solution forms if salt soluble.<br/><em>(Test: gas burns with a squeaky pop)</em>', 'Mg + 2HCl → MgCl₂ + H₂', 'Mg(s) + 2H⁺(aq) → Mg²⁺(aq) + H₂(g)'],
+          ['<strong>Acid + Alkali</strong>', 'No visible change. Temperature rise.', 'NaOH + HCl → NaCl + H₂O', 'H⁺(aq) + OH⁻(aq) → H₂O(l)'],
+          ['<strong>Acid + Metal Oxide</strong>', 'Solid dissolves in acid. Solution forms.', 'CuO + H₂SO₄ → CuSO₄ + H₂O', 'CuO(s) + 2H⁺(aq) → Cu²⁺(aq) + H₂O(l)'],
+          ['<strong>Acid + Carbonate</strong>', 'Effervescence (bubbles of CO₂). Solid/solution dissolves.<br/><em>(Test: gas turns limewater cloudy)</em>', 'CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂', 'CO₃²⁻(aq) + 2H⁺(aq) → H₂O(l) + CO₂(g)'],
+          ['<strong>Acid + Hydrogencarbonate</strong>', 'Effervescence (bubbles of CO₂).<br/><em>(Test: gas turns limewater cloudy)</em>', 'NaHCO₃ + HCl → NaCl + H₂O + CO₂', 'HCO₃⁻(aq) + H⁺(aq) → H₂O(l) + CO₂(g)']
+        ]
+      },
+      terms: ['Neutralisation', 'Displacement']
     },
-    terms: []
-  }, {
-    id: 'keybox-clues',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Key Observation Clues',
-      text: 'Effervescence (bubbles) → gas produced\nSolution warms up → exothermic reaction\nColour fades / change → ions reacting (redox or displacement)\nCloudy / solid forms → precipitate\nGas turns limewater milky → CO₂\nSqueaky pop with burning splint → H₂\nBleaches damp litmus → Cl₂\nPungent smell, turns red litmus blue → NH₃'
+    {
+      id: 'h-displacement',
+      type: 'heading',
+      data: { text: 'Metal Displacement Reactions', level: 2 },
+      terms: []
     },
-    terms: []
-  },
-  // ── GAS TESTS TABLE ───────────────────────────────────────────────────
-  {
-    id: 'h-gas-tests',
-    type: 'heading',
-    data: {
-      text: 'Gas Tests',
-      level: 2
+    {
+      id: 'p-displacement',
+      type: 'paragraph',
+      data: { text: 'In a displacement reaction, a more reactive element displaces a less reactive element from its compound. These are <strong>redox reactions</strong>: electrons transfer from the reactive metal to the metal ion in solution, or between halogens.' },
+      terms: ['Displacement reaction']
     },
-    terms: []
-  }, {
-    id: 'table-gas-tests',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Tests for common gases produced in reactions',
-      headers: ['Gas', 'Formula', 'Test', 'Positive result'],
-      rows: [['Carbon dioxide', 'CO₂', 'Bubble through limewater Ca(OH)₂', 'Limewater turns milky white'], ['Hydrogen', 'H₂', 'Hold burning splint to mouth of tube', 'Squeaky pop sound'], ['Chlorine', 'Cl₂', 'Damp litmus paper near the gas', 'Bleaches litmus to white'], ['Oxygen', 'O₂', 'Glowing splint into gas jar', 'Splint relights'], ['Ammonia', 'NH₃', 'Damp red litmus near gas', 'Litmus turns blue; pungent smell']]
+    {
+      id: 'callout-thermite',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'The Thermite Reaction (Solid-State Displacement)',
+        text: 'A highly exothermic solid-state displacement between aluminium powder and iron(III) oxide. Because it involves two solids, it requires very high heat (e.g., from a burning magnesium ribbon) to kickstart the reaction.<br/><br/><strong>Equation:</strong> 2Al(s) + Fe₂O₃(s) → Al₂O₃(s) + 2Fe(l)<br/><br/>The incredibly high temperatures produced melt the iron product, which is used practically to weld railway lines together.'
+      },
+      terms: ['Thermite reaction']
     },
-    terms: []
-  },
-  // ── TYPICAL REACTIONS OF ACIDS ────────────────────────────────────────
-  {
-    id: 'h-acid-rxns',
-    type: 'heading',
-    data: {
-      text: 'Typical Reactions of Acids (Objective 1.12ii)',
-      level: 2
+    {
+      id: 'callout-halogens',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Halogen Displacement',
+        text: 'A more reactive halogen will displace a less reactive halogen from its halide solution. Reactivity decreases down Group 7 (F₂ > Cl₂ > Br₂ > I₂).<br/><br/>Example: Chlorine gas passed through potassium bromide solution.<br/><strong>Equation:</strong> Cl₂(g) + 2KBr(aq) → 2KCl(aq) + Br₂(aq)<br/><strong>Ionic:</strong> Cl₂(g) + 2Br⁻(aq) → 2Cl⁻(aq) + Br₂(aq)<br/><em>Observation: Colourless solution turns orange/brown due to the formation of aqueous bromine.</em>'
+      },
+      terms: ['Halogen displacement']
     },
-    terms: []
-  }, {
-    id: 'table-acid-rxns',
-    type: 'comparisonTable',
-    data: {
-      caption: 'General patterns for acid reactions',
-      headers: ['Reaction type', 'General equation', 'Observations'],
-      rows: [['Acid + Metal', 'Acid + Metal → Salt + H₂(g)', 'Effervescence (squeaky pop); metal dissolves; solution warms'], ['Acid + Metal oxide', 'Acid + Metal oxide → Salt + H₂O', 'Solid dissolves; no gas; solution may warm'], ['Acid + Metal hydroxide', 'Acid + Hydroxide → Salt + H₂O', 'No visible change (if both aq); solution warms'], ['Acid + Carbonate', 'Acid + Carbonate → Salt + H₂O + CO₂(g)', 'Effervescence; solid dissolves; limewater turns milky']]
+    {
+      id: 'callout-displacement',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example: Mg displacing Cu from CuSO₄(aq)',
+        text: '<strong>Observation:</strong> Blue solution becomes colourless. Brown solid (copper metal) forms on the magnesium.<br/><br/>Full: Mg(s) + CuSO₄(aq) → Cu(s) + MgSO₄(aq)<br/>Ionic: Mg(s) + Cu²⁺(aq) → Cu(s) + Mg²⁺(aq)<br/><br/>Mg is oxidised (loses 2e⁻); Cu²⁺ is reduced (gains 2e⁻).'
+      },
+      terms: []
     },
-    terms: []
-  },
-  // ── DISPLACEMENT REACTIONS ────────────────────────────────────────────
-  {
-    id: 'h-displacement',
-    type: 'heading',
-    data: {
-      text: 'Displacement Reactions (Objective 1.12i)',
-      level: 2
+    {
+      id: 'h-precip',
+      type: 'heading',
+      data: { text: 'Precipitation Reactions', level: 2 },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'p-displacement',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["A displacement reaction occurs when a more reactive element displaces a less reactive element from its compound.", "In solution, this is visible as a colour change (as ionic species change) and a solid metal depositing.", "The reactivity series determines which metal displaces which."]
+    {
+      id: 'table-precip',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Common precipitation reactions and their uses as tests',
+        headers: ['Test for…', 'Reagent Added', 'Observation', 'Ionic Equation'],
+        rows: [
+          ['CO₂ gas', 'Bubble through Ca(OH)₂ (limewater)', 'Milky-white precipitate', 'Ca²⁺(aq) + CO₃²⁻(aq) → CaCO₃(s)'],
+          ['Sulfate ions', 'BaCl₂(aq) in acidified HCl', 'White precipitate of BaSO₄', 'Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)'],
+          ['Chloride ions', 'AgNO₃(aq) in dilute HNO₃', 'White precipitate of AgCl', 'Ag⁺(aq) + Cl⁻(aq) → AgCl(s)'],
+          ['Bromide ions', 'AgNO₃(aq) in dilute HNO₃', 'Cream precipitate of AgBr', 'Ag⁺(aq) + Br⁻(aq) → AgBr(s)'],
+          ['Iodide ions', 'AgNO₃(aq) in dilute HNO₃', 'Yellow precipitate of AgI', 'Ag⁺(aq) + I⁻(aq) → AgI(s)'],
+          ['Lead(II) ions / Iodide ions', 'Mix Pb(NO₃)₂(aq) with KI(aq)', 'Bright yellow precipitate of PbI₂', 'Pb²⁺(aq) + 2I⁻(aq) → PbI₂(s)']
+        ]
+      },
+      terms: ['Precipitation reaction']
     },
-    terms: ['Displacement reaction']
-  }, {
-    id: 'callout-disp1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 1 — Fe displaces Cu from CuSO₄',
-      text: 'Observation: Iron powder is added to blue CuSO₄ solution. The blue colour fades and a brown solid forms.\n\nFull equation:\nFe(s) + CuSO₄(aq) → FeSO₄(aq) + Cu(s)\n\nIonic equation:\nFe(s) + Cu²⁺(aq) + SO₄²⁻(aq) → Fe²⁺(aq) + SO₄²⁻(aq) + Cu(s)\n\nNet ionic equation (SO₄²⁻ is spectator):\nFe(s) + Cu²⁺(aq) → Fe²⁺(aq) + Cu(s)\n\nExplanation: Fe is more reactive than Cu → oxidised (loses 2e⁻). Cu²⁺ is reduced (gains 2e⁻) → deposits as copper metal.'
+    {
+      id: 'h-halide-ammonia',
+      type: 'heading',
+      data: { text: 'Distinguishing Halide Precipitates with Ammonia', level: 2 },
+      terms: []
     },
-    terms: ['Displacement reaction']
-  }, {
-    id: 'callout-disp2',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 2 — Mg displaces Cu from CuSO₄ (from PDF p.8)',
-      text: 'Mg(s) + CuSO₄(aq) → Cu(s) + MgSO₄(aq)\n\nNet ionic equation:\nMg(s) + Cu²⁺(aq) → Cu(s) + Mg²⁺(aq)\n\nAlso from PDF:\n2Al(s) + Fe₂O₃(s) → 2Fe(s) + Al₂O₃(s)\n(Thermite reaction — solid state displacement, no aqueous ions)'
+    {
+      id: 'callout-halide-ammonia',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Halide Identification Using Ammonia',
+        text: 'After adding AgNO₃, all three halides give a precipitate — but their colours are similar enough to be confused. Add ammonia solution to distinguish them:<br/><br/><strong>AgCl (white)</strong> — dissolves in <em>dilute</em> NH₃(aq) ✓<br/><strong>AgBr (cream)</strong> — dissolves only in <em>concentrated</em> NH₃(aq) ✓<br/><strong>AgI (yellow)</strong> — <em>insoluble</em> in both dilute and concentrated NH₃(aq) ✗<br/><br/><em>Exam tip: Be very specific — "dilute" and "concentrated" ammonia give different results. Writing just "ammonia" is not sufficient for full marks.</em>'
+      },
+      terms: ['Silver chloride', 'Silver bromide', 'Silver iodide']
     },
-    terms: ['Displacement reaction']
-  },
-  // ── PRECIPITATION REACTIONS ───────────────────────────────────────────
-  {
-    id: 'h-precip',
-    type: 'heading',
-    data: {
-      text: 'Precipitation Reactions (Objective 1.12iii)',
-      level: 2
+    {
+      id: 'h-sulfate-test',
+      type: 'heading',
+      data: { text: 'The Sulfate Test in Detail', level: 2 },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'p-precip',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["A precipitation reaction forms an insoluble solid (precipitate) when two aqueous solutions containing soluble salts are mixed.", "The insoluble product falls out of solution as a solid.", "Use solubility rules to predict which combinations form precipitates."]
+    {
+      id: 'callout-sulfate',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Testing for Sulfate Ions (SO₄²⁻)',
+        text: '<strong>Method:</strong><br/>1. Acidify the test solution with dilute HCl (this removes carbonate and sulfite ions which would give false positives).<br/>2. Add barium chloride solution, BaCl₂(aq).<br/>3. If a <strong>white precipitate</strong> of barium sulfate (BaSO₄) forms, sulfate ions are present.<br/>4. The BaSO₄ precipitate is insoluble in dilute HCl — this confirms sulfate (unlike BaCO₃ or BaSO₃ which dissolve).<br/><br/><strong>Ionic equation:</strong> Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)'
+      },
+      terms: []
     },
-    terms: ['Precipitate']
-  }, {
-    id: 'table-precipitates',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Common precipitates and their colours',
-      headers: ['Precipitate', 'Formula', 'Colour', 'Net ionic equation'],
-      rows: [['Silver chloride', 'AgCl', 'White', 'Ag⁺(aq) + Cl⁻(aq) → AgCl(s)'], ['Barium sulfate', 'BaSO₄', 'White', 'Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)'], ['Iron(II) hydroxide', 'Fe(OH)₂', 'Green', 'Fe²⁺(aq) + 2OH⁻(aq) → Fe(OH)₂(s)'], ['Iron(III) hydroxide', 'Fe(OH)₃', 'Brown/rust', 'Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)'], ['Copper(II) hydroxide', 'Cu(OH)₂', 'Blue', 'Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)'], ['Lead(II) chloride', 'PbCl₂', 'White', 'Pb²⁺(aq) + 2Cl⁻(aq) → PbCl₂(s)'], ['Calcium carbonate', 'CaCO₃', 'White', 'Ca²⁺(aq) + CO₃²⁻(aq) → CaCO₃(s)']]
+    {
+      id: 'h-flame',
+      type: 'heading',
+      data: { text: 'Flame Tests', level: 2 },
+      terms: []
     },
-    terms: ['Precipitate']
-  }, {
-    id: 'callout-precip1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 3 — AgNO₃ + NaCl',
-      text: 'Observation: White precipitate forms immediately when AgNO₃(aq) is added to NaCl(aq).\n\nFull equation:\nAgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)\n\nIonic equation:\nAg⁺(aq) + NO₃⁻(aq) + Na⁺(aq) + Cl⁻(aq) → AgCl(s) + Na⁺(aq) + NO₃⁻(aq)\n\nSpectator ions: Na⁺ and NO₃⁻\n\nNet ionic equation:\nAg⁺(aq) + Cl⁻(aq) → AgCl(s)'
+    {
+      id: 'callout-flame-method',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Flame Test Procedure',
+        text: '<strong>Method:</strong><br/>1. Clean a nichrome wire loop by dipping it in concentrated HCl and heating it in a hot Bunsen burner flame until no colour is seen.<br/>2. Dip the clean wire in the solid compound (or its solution).<br/>3. Hold it in the <em>hottest part</em> of the blue Bunsen flame and observe the colour.<br/><br/><em>One reason for cleaning the wire first: to prevent contamination from previous tests affecting the result.</em>'
+      },
+      terms: ['Flame test', 'Nichrome wire']
     },
-    terms: ['Precipitate']
-  }, {
-    id: 'callout-precip2',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'Worked Example 4 — Sodium thiosulfate + HCl (from PDF p.7)',
-      text: 'Observation: Sulfur precipitate forms (cloudy yellow/white) when Na₂S₂O₃(aq) reacts with HCl(aq). SO₂ gas is also produced.\n\nFull equation:\nNa₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + S(s) + SO₂(g) + H₂O(l)'
+    {
+      id: 'table-flame',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Flame test colours for common metal cations',
+        headers: ['Metal Ion (Cation)', 'Flame Colour'],
+        rows: [
+          ['Li⁺ (Lithium)', 'Crimson / scarlet red'],
+          ['Na⁺ (Sodium)', 'Persistent yellow-orange'],
+          ['K⁺ (Potassium)', 'Lilac (pale violet)'],
+          ['Ca²⁺ (Calcium)', 'Brick red / orange-red'],
+          ['Sr²⁺ (Strontium)', 'Crimson red'],
+          ['Ba²⁺ (Barium)', 'Apple green'],
+          ['Cu²⁺ (Copper)', 'Blue-green']
+        ]
+      },
+      terms: ['Flame test']
     },
-    terms: ['Precipitate']
-  },
-  // ── STEP-BY-STEP ANIMATION: writing ionic equations ───────────────────
-  {
-    id: 'h-method',
-    type: 'heading',
-    data: {
-      text: 'Step-by-Step: Writing Net Ionic Equations from Observations',
-      level: 2
+    {
+      id: 'callout-flame-tip',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Watch out: Lithium vs Strontium',
+        text: 'Both Li⁺ and Sr²⁺ give <strong>crimson red</strong> flames — they can be difficult to distinguish by observation alone. If the question specifies a "crimson" or "bright red" flame take note of which group the element belongs to (Li is Group 1, Sr is Group 2) for context.'
+      },
+      terms: []
     },
-    terms: []
-  }, {
-    id: 'svg-ionic-steps',
-    type: 'svg',
-    data: {
-      caption: 'Method for writing net ionic equations from test-tube observations',
-      svg: `<svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five step method for writing net ionic equations from observations">
-  <style>.s{font-size:11px;fill:#111;font-family:sans-serif} .h{font-weight:bold;font-size:11px} .sub{font-size:9px;fill:#6b7280}</style>
-  <defs>
-    <marker id="arrI" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
-      <path d="M0,0 L7,3.5 L0,7 Z" fill="#6366f1"/>
-    </marker>
-  </defs>
-
-  <rect x="10" y="8"   width="660" height="46" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
-  <text x="20" y="26"  class="s h" fill="#92400e">Step 1 — Read observation &amp; identify reaction type</text>
-  <text x="20" y="44"  class="s">e.g. "white precipitate forms when AgNO₃(aq) + NaCl(aq) are mixed"  →  Precipitation</text>
-
-  <line x1="330" y1="54" x2="330" y2="66" stroke="#6366f1" stroke-width="2" marker-end="url(#arrI)"/>
-
-  <rect x="10" y="66"  width="660" height="46" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="20" y="84"  class="s h" fill="#5b21b6">Step 2 — Identify reactants and products; write full balanced equation</text>
-  <text x="20" y="102" class="s">AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)</text>
-
-  <line x1="330" y1="112" x2="330" y2="124" stroke="#6366f1" stroke-width="2" marker-end="url(#arrI)"/>
-
-  <rect x="10" y="124" width="660" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
-  <text x="20" y="142" class="s h" fill="#0c4a6e">Step 3 — Split aqueous ionic compounds into ions (solids, gases, liquids stay molecular)</text>
-  <text x="20" y="158" class="s">Ag⁺(aq) + NO₃⁻(aq) + Na⁺(aq) + Cl⁻(aq) → AgCl(s) + Na⁺(aq) + NO₃⁻(aq)</text>
-  <text x="20" y="174" class="sub">AgCl stays as molecular — it is INSOLUBLE (solid)</text>
-
-  <line x1="330" y1="180" x2="330" y2="192" stroke="#6366f1" stroke-width="2" marker-end="url(#arrI)"/>
-
-  <rect x="10" y="192" width="660" height="46" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
-  <text x="20" y="210" class="s h" fill="#9a3412">Step 4 — Identify and cancel spectator ions (appear unchanged on both sides)</text>
-  <text x="20" y="228" class="s">Na⁺ and NO₃⁻ are spectators → cross them out from both sides</text>
-
-  <line x1="330" y1="238" x2="330" y2="250" stroke="#6366f1" stroke-width="2" marker-end="url(#arrI)"/>
-
-  <rect x="10" y="250" width="660" height="58" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
-  <text x="20" y="268" class="s h" fill="#14532d">Step 5 — Write net ionic equation ✓</text>
-  <text x="20" y="288" class="s" font-size="13" font-weight="bold">Ag⁺(aq) + Cl⁻(aq) → AgCl(s)</text>
-  <text x="20" y="302" class="sub">Check: atoms balance ✓  |  charges balance: (+1) + (−1) = 0 → 0 ✓</text>
-</svg>`
+    {
+      id: 'h-nitrate',
+      type: 'heading',
+      data: { text: 'Thermal Decomposition of Nitrates', level: 2 },
+      terms: []
     },
-    terms: ['Precipitate', 'Spectator ion']
-  },
-  // ── PREDICTING PRODUCTS ───────────────────────────────────────────────
-  {
-    id: 'h-predict',
-    type: 'heading',
-    data: {
-      text: 'Predicting Products from Reactants',
-      level: 2
-    },
-    terms: []
-  }, {
-    id: 'table-predict',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Reaction patterns — predicting products',
-      headers: ['Reactants', 'Products', 'Key observation'],
-      rows: [['Acid + reactive metal', 'Salt + H₂(g)', 'Effervescence; squeaky pop'], ['Acid + carbonate', 'Salt + H₂O + CO₂(g)', 'Effervescence; limewater turns milky'], ['Acid + base (neutralisation)', 'Salt + H₂O', 'Solution warms; no gas'], ['Acid + metal oxide', 'Salt + H₂O', 'Solid dissolves; no gas'], ['More reactive metal + salt soln', 'New salt + displaced metal', 'Colour change; solid deposits'], ['Two solutions (incompatible ions)', 'Precipitate + solution', 'Immediate cloudiness/solid']]
-    },
-    terms: []
-  },
-  // ── EXAM CHECKLIST ────────────────────────────────────────────────────
-  {
-    id: 'h-tips',
-    type: 'heading',
-    data: {
-      text: 'Exam Checklist',
-      level: 2
-    },
-    terms: []
-  }, {
-    id: 'checklist-tips',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'Always include state symbols: (s), (l), (g), (aq)',
-        checked: false
-      }, {
-        text: 'Identify reaction type from observation before writing equation',
-        checked: false
-      }, {
-        text: 'Only split aqueous ionic compounds (strong electrolytes) into ions',
-        checked: false
-      }, {
-        text: 'Insoluble precipitates (e.g. AgCl, BaSO₄) stay as molecular formula',
-        checked: false
-      }, {
-        text: 'Identify spectator ions — they appear unchanged on both sides',
-        checked: false
-      }, {
-        text: 'Check charge balance in net ionic equation',
-        checked: false
-      }, {
-        text: 'Know the colours of common precipitates: AgCl white, Fe(OH)₂ green, Fe(OH)₃ brown, Cu(OH)₂ blue',
-        checked: false
-      }, {
-        text: 'Acid + metal → salt + H₂; acid + carbonate → salt + H₂O + CO₂',
-        checked: false
-      }]
-    },
-    terms: []
-  },
-  // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  // ── SUMMARY ───────────────────────────────────────────────────────────
-  // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Observations are the bridge between laboratory experience and chemical theory. Each observation (colour change, effervescence, precipitate, temperature change) maps to a specific type of chemical process. Linking observations to equations develops the skill of translating real-world phenomena into symbolic chemistry.\n\nApply: A student adds a few drops of silver nitrate solution to a solution containing chloride ions. Describe the observation and write the full equation, ionic equation, and net ionic equation.\n\nAnalyze: When zinc is added to blue copper sulfate solution, the solution turns colourless and a brown deposit appears. Identify the type of reaction, write the net ionic equation, and explain which species is oxidised and which is reduced.\n\nEvaluate: A student observes effervescence when adding acid to an unknown white powder. They conclude it must be a carbonate. Is this conclusion valid? What other tests could confirm or refute it?'
-    },
-    terms: []
-  },
-  {
-    id: 'summary-block',
-    type: 'summary',
-    data: {
-      text: 'Observations from test-tube reactions allow you to identify reaction type and write balanced full and ionic equations. Effervescence indicates H₂ (squeaky pop) or CO₂ (limewater milky). Colour changes indicate displacement or redox. Cloudiness indicates precipitation. Write full equation, split aqueous ionic species, cancel spectator ions to give net ionic equation. Always include state symbols and check charge balance.'
-    },
-    terms: []
-  }],
+    {
+      id: 'callout-nitrate',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Decomposition of Nitrates on Heating',
+        text: 'Nitrates decompose on heating in different ways depending on which Group the metal belongs to:<br/><br/><strong>Group 1 (except Li)</strong> → nitrite + oxygen:<br/>e.g. 2KNO₃(s) → 2KNO₂(s) + O₂(g)<br/><em>Test: relights a glowing splint (O₂)</em><br/><br/><strong>Group 1 lithium and Group 2 metals</strong> → metal oxide + NO₂ + oxygen:<br/>e.g. 2Ca(NO₃)₂(s) → 2CaO(s) + 4NO₂(g) + O₂(g)<br/><em>Test: brown gas (NO₂) + relights glowing splint (O₂)</em><br/><br/><strong>Transition metals (e.g. Cu)</strong> → metal oxide + NO₂ + O₂<br/>e.g. 2Cu(NO₃)₂(s) → 2CuO(s) + 4NO₂(g) + O₂(g)'
+      },
+      terms: ['Thermal decomposition', 'Nitrate']
+    }
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'table-gas-tests',
-      prompt: 'State the test for CO₂ and H₂ and give the positive result for each.'
-    }, {
-      id: 'cue-2',
-      blockId: 'callout-disp1',
-      prompt: 'Write the net ionic equation for Fe reacting with CuSO₄(aq).'
-    }, {
-      id: 'cue-3',
-      blockId: 'callout-precip1',
-      prompt: 'Write the net ionic equation for AgNO₃(aq) + NaCl(aq).'
-    }, {
-      id: 'cue-4',
-      blockId: 'table-precipitates',
-      prompt: 'State the colour of: AgCl, Fe(OH)₂, Fe(OH)₃, Cu(OH)₂ precipitates.'
-    }, {
-      id: 'cue-5',
-      blockId: 'table-acid-rxns',
-      prompt: 'State the general equation for: acid + carbonate. What observations would you see?'
-    }],
-    summaryText: 'Observations identify reaction type: effervescence (H₂ or CO₂), colour change (displacement), precipitate (ionic combination). Write full equation → split aqueous ionic compounds → cancel spectator ions → net ionic equation. Always include state symbols and check charge balance.',
+    cues: [
+      { id: 'c1', blockId: 'table-acids', prompt: 'Describe the observation AND write the ionic equation for the reaction of excess magnesium with dilute hydrochloric acid.' },
+      { id: 'c2', blockId: 'table-acids', prompt: 'What ion is the same in all acid-alkali neutralisation reactions? Write the ionic equation.' },
+      { id: 'c3', blockId: 'callout-displacement', prompt: 'Magnesium is added to copper(II) sulfate solution. Describe the observations and write the ionic equation. State what is oxidised and what is reduced.' },
+      { id: 'c4', blockId: 'callout-thermite', prompt: 'Write the chemical equation for the thermite reaction. State why it requires an initial heat source, and give a practical use of the process.' },
+      { id: 'c5', blockId: 'callout-halogens', prompt: 'Write the ionic equation and state the observation when chlorine gas is passed into an aqueous solution of potassium bromide.' },
+      { id: 'c6', blockId: 'table-precip', prompt: 'What observation is made when aqueous lead(II) nitrate is mixed with aqueous potassium iodide? Write the ionic equation.' },
+      { id: 'c7', blockId: 'table-precip', prompt: 'Describe the test for sulfate ions and write the ionic equation for the precipitation.' },
+      { id: 'c8', blockId: 'callout-halide-ammonia', prompt: 'AgNO₃ is added to an unknown solution and a cream precipitate forms. What halide ion is present? How would you confirm this using ammonia?' },
+      { id: 'c9', blockId: 'table-flame', prompt: 'What flame colour is given by potassium ions? What colour is sodium, and what is the main complication when both might be present?' },
+      { id: 'c10', blockId: 'callout-nitrate', prompt: 'What gas is produced when a Group 1 nitrate (not Li) is heated? Write the equation for the thermal decomposition of KNO₃.' }
+    ],
+    summaryText: 'Acid+Metal → H₂ (squeaky pop). Acid+Alkali → H⁺+OH⁻→H₂O. Acid+Carbonate → CO₂ (turns limewater cloudy). Displacement is redox (e.g. Mg replacing Cu, Thermite reaction with Al and Fe₂O₃, or Cl₂ displacing Br⁻). Precipitates: BaSO₄ (white, via BaCl₂+HCl) for SO₄²⁻; AgCl/AgBr/AgI (white/cream/yellow) for halides — distinguish with dilute/concentrated NH₃. Yellow PbI₂ from lead(II) and iodide. Flame tests: Li/Sr=crimson, Na=yellow, K=lilac, Ca=orange-red, Ba=green. Group 1 nitrates → nitrite + O₂; Group 2 → oxide + NO₂ + O₂.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'CHSE Dept of Chemistry — Topic 1 Notes (wch11-1.pdf)',
-    detail: 'Section 1B: Displacement reactions; typical acid reactions; precipitation. Worked examples from pages 7–9. Checkpoints 2–3.',
-    year: '2023',
-    source: 'Centre for Higher Secondary Education',
-    tags: ['displacement', 'precipitation', 'ionic equations', 'acid reactions']
-  }, {
-    id: 'ev-2',
-    title: 'Pearson Edexcel IAL Chemistry Spec — Objectives 1.10, 1.12(i)(ii)(iii)',
-    detail: 'Relate ionic/full equations to test-tube observations; displacement, acid reactions, precipitation.',
-    year: '2024',
-    source: 'Pearson Edexcel',
-    tags: ['specification']
-  }]
+  evidence: []
 };
+export default note_chemistry_1_1_9;

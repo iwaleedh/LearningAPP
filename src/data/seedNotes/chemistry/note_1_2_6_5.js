@@ -154,6 +154,25 @@ export const note_chemistry_1_2_6_5 = {
     },
     terms: ['Enthalpy change', 'Calorimetry']
   },
+  // ── USING HESS'S LAW (INDIRECT DETERMINATION) ─────────────────────────
+  {
+    id: 'h-hess',
+    type: 'heading',
+    data: {
+      text: "Indirect Determination via Hess's Law",
+      level: 2
+    },
+    terms: []
+  }, {
+    id: 'callout-hess',
+    type: 'callout',
+    data: {
+      style: 'worked',
+      title: '✏️ Thermal Decomposition of KHCO₃',
+      text: "Some reactions, like the thermal decomposition of KHCO₃ (2KHCO₃(s) → K₂CO₃(s) + CO₂(g) + H₂O(l)), cannot be measured directly because they require constant heating, making calorimetry impossible.\n\nInstead, we measure the enthalpy changes of both solids reacting with dilute HCl:\n  1. KHCO₃(s) + HCl(aq) → KCl(aq) + CO₂(g) + H₂O(l)  [Endothermic, +ΔH₁]\n  2. K₂CO₃(s) + 2HCl(aq) → 2KCl(aq) + CO₂(g) + H₂O(l)  [Exothermic, −ΔH₂]\n\nUsing a Hess cycle, the target reaction (decomposition) connects the two reactants to the common products (KCl + CO₂ + H₂O).\n\n<strong>Calculation:</strong>\nΔH_decomposition = (2 × ΔH₁) − ΔH₂"
+    },
+    terms: ["Hess's Law"]
+  },
   // ── SOURCES OF ERROR ──────────────────────────────────────────────────
   {
     id: 'h-errors',
@@ -262,6 +281,10 @@ export const note_chemistry_1_2_6_5 = {
   recall: {
     enabled: true,
     cues: [{
+      id: 'c-hess',
+      blockId: 'callout-hess',
+      prompt: 'Why can the enthalpy change of thermal decomposition of KHCO₃ not be measured directly using a calorimeter? How is it determined indirectly?'
+    }, {
       id: 'cue-1',
       blockId: 'h-apparatus',
       prompt: 'List the key pieces of apparatus needed for Core Practical 2. Why is a polystyrene cup used instead of a glass beaker?'
@@ -282,7 +305,7 @@ export const note_chemistry_1_2_6_5 = {
       blockId: 'callout-evaluation',
       prompt: 'What three things must you include when evaluating a calorimetry experiment in an exam?'
     }],
-    summaryText: 'Core Practical 2: polystyrene cup calorimetry, method, calculation, errors, improvements.',
+    summaryText: "Core Practical 2: polystyrene cup calorimetry, method, calculation, errors, improvements. Hess's Law is used for indirect determinations (e.g. KHCO₃ decomposition) by reacting both reactants and products with HCl.",
     ready: false
   },
   evidence: [{

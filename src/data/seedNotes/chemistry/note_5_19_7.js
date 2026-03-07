@@ -103,7 +103,7 @@ export const note_chemistry_5_19_7 = {
       id: 'eq-ninhydrin',
       type: 'equation',
       data: {
-        html: 'Amino acid + ninhydrin (heat) → Ruhemann\'s purple (blue-purple colour)<br />The aldehyde/ketone groups in ninhydrin oxidise the amino acid, producing coloured product'
+        latex: 'Amino acid + ninhydrin (heat) → Ruhemann\'s purple (blue-purple colour)<br />The aldehyde/ketone groups in ninhydrin oxidise the amino acid, producing coloured product'
       }
     },
     {
