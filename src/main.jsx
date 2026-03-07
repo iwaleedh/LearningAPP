@@ -12,6 +12,7 @@ initSpacetimeDB().catch(console.error);
 // serve stale cached JS modules. Unregister it, wipe caches, and reload ONCE
 // so the next page load has no SW intercepting fetches.
 if (import.meta.env.DEV && 'serviceWorker' in navigator) {
+  console.log('🛠️ Dev Mode: Cleaning up Service Workers and Caches...');
   const swControlling = navigator.serviceWorker.controller;
   if (swControlling) {
     // SW is active on this page — nuke everything and reload once
@@ -23,6 +24,7 @@ if (import.meta.env.DEV && 'serviceWorker' in navigator) {
         Promise.all(keys.map(k => caches.delete(k)))
       ),
     ]).then(() => {
+      console.log('✅ SW and Caches nuked. Reloading...');
       // Reload so the next load has no SW controlling the page
       window.location.reload();
     });
