@@ -375,7 +375,6 @@ export const note_chemistry_4_14_6 = {
     ],
     summaryText: 'End point ≠ equivalence point. Strong+strong: pH=7. Weak acid+strong base: pH>7, phenolphthalein. Strong acid+weak base: pH<7, methyl orange. Weak+weak: no steep section, no indicator. HIn ⇌ H⁺ + In⁻ — range ≈ pKind ± 1. Half-equiv: [HA]=[A⁻], pH = pKa. Diprotic: 2 equivalences, 2nd = 2× 1st. Buffer region: flat plateau before equivalence in weak acid/base titrations.',
     ready: false
-    ready: false
   },
   evidence: [
     {
