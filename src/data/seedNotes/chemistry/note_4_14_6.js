@@ -16,19 +16,50 @@ export const note_chemistry_4_14_6 = {
       id: 'p-titration-intro',
       type: 'paragraph',
       data: {
-        text: 'A titration curve plots pH against the volume of titrant (acid or base) added during a titration. The shape of the curve depends on what is being titrated (strong acid, weak acid, strong base, weak base) and what is being added. Key features include the initial pH, the equivalence point (where moles of acid equals moles of base), the steep region (where pH changes most rapidly), and the final plateau. Titration curves help us understand acid-base reactions and choose appropriate indicators.'
+        text: 'A titration curve plots pH against the volume of titrant (acid or base) added during a titration. The shape depends on whether strong or weak acids/bases are involved. Key features are: initial pH, the buffer region, the steep region, and the equivalence point. Curves allow us to choose the correct indicator and determine pKa values.'
+      }
+    },
+    {
+      id: 'callout-endpoint-equiv',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ End Point ≠ Equivalence Point — Learn the Difference',
+        text: '• <strong>Equivalence point</strong> — the point where acid and base have reacted in the exact stoichiometric ratio (from the balanced equation). This is a theoretical point.\n• <strong>End point</strong> — the point where the indicator changes colour. This is what we observe experimentally.\n• The end point occurs AFTER the equivalence point (one or two extra drops of titrant trigger the colour change).\n• In a good titration with a correct indicator, end point ≈ equivalence point — but they are never exactly the same.\n• Do NOT use these terms interchangeably in an exam.'
+      }
+    },
+    {
+      id: 'tbl-equiv-summary',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Acid–Base Combination', 'Equivalence Point pH', 'Reason'],
+        rows: [
+          ['Strong acid + Strong base', 'pH = 7', 'Salt (e.g., NaCl) does not hydrolyse — neutral solution'],
+          ['Weak acid + Strong base', 'pH > 7', 'Salt contains weak conjugate base — hydrolyses to give OH⁻'],
+          ['Strong acid + Weak base', 'pH < 7', 'Salt contains weak conjugate acid — hydrolyses to give H⁺'],
+          ['Weak acid + Weak base', 'No sharp change', 'Both partially dissociate — no clear equivalence point on graph']
+        ],
+        caption: 'Equivalence point pH depends on the relative strength of the acid and base used'
       }
     },
     {
       id: 'h-strong-strong',
       type: 'heading',
-      data: { text: 'Titration Curve: Strong Acid vs Strong Base', level: 2 }
+      data: { text: 'Strong Acid + Strong Base: HCl / NaOH', level: 2 }
     },
     {
-      id: 'p-strong-strong',
-      type: 'paragraph',
+      id: 'list-strong-strong',
+      type: 'list',
       data: {
-        text: 'When titrating a strong acid (e.g., HCl) with a strong base (e.g., NaOH), the equivalence point occurs at pH = 7 because the salt produced (NaCl) does not hydrolyse. Before the equivalence point, excess strong acid dominates and pH is low. At the equivalence point, pH = 7. After the equivalence point, excess strong base dominates and pH is high. The steep region is sharp and narrow, centered at pH 7. Any indicator with a pKind between 4 and 10 can be used (e.g., methyl orange, methyl red, or phenolphthalein).'
+        style: 'bullet',
+        items: [
+          '<strong>Setup:</strong> acid (HCl) is added to base (NaOH) — start in the flask with NaOH, so initial pH ≈ 14',
+          '<strong>As HCl is added:</strong> pH falls slowly at first, then drops steeply near the equivalence point',
+          '<strong>Example:</strong> at 24.9 cm³ pH ≈ 11.3; at 25.1 cm³ pH ≈ 2.7 — adding just 0.2 cm³ causes huge change',
+          '<strong>Equivalence point:</strong> pH = 7 (NaCl salt does not hydrolyse)',
+          '<strong>After equivalence:</strong> excess HCl brings pH close to 0',
+          '<strong>Indicators:</strong> any indicator with pH range in the steep region works — both <em>methyl orange</em> (pH 2.7–4.7) and <em>phenolphthalein</em> (pH 8.3–10.0) are suitable as both fall in the sharp drop region'
+        ]
       }
     },
     {
@@ -42,13 +73,21 @@ export const note_chemistry_4_14_6 = {
     {
       id: 'h-weak-strong',
       type: 'heading',
-      data: { text: 'Titration Curve: Weak Acid vs Strong Base', level: 2 }
+      data: { text: 'Weak Acid + Strong Base: CH₃COOH / NaOH', level: 2 }
     },
     {
-      id: 'p-weak-strong',
-      type: 'paragraph',
+      id: 'list-weak-strong',
+      type: 'list',
       data: {
-        text: 'When titrating a weak acid (e.g., CH₃COOH) with a strong base (e.g., NaOH), the equivalence point occurs at pH > 7 because the salt produced (CH₃COONa) contains acetate ions, which are weak bases and hydrolyse to raise pH. Before the equivalence point, the solution is a buffer of weak acid and its conjugate base (acetate), so pH increases gradually. At the half-equivalence point (when exactly half the acid has been neutralized), the concentrations of HA and A⁻ are equal, so pH = pKa by the Henderson-Hasselbalch equation. The steep region is less sharp than for strong/strong titrations, centered at a pH > 7 (typically around pH 8−10 for acetic acid with pKa ≈ 4.74).'
+        style: 'bullet',
+        items: [
+          '<strong>Setup:</strong> acid (CH₃COOH) is added to base (NaOH) in the flask — initial pH ≈ 14',
+          '<strong>Buffer region:</strong> as acid is added before equivalence point, a mixture of CH₃COOH + CH₃COO⁻ forms → acts as a buffer — pH rises gradually',
+          '<strong>Half-equivalence point:</strong> pH = pKa of the weak acid (when exactly half the acid has been neutralised)',
+          '<strong>Equivalence point:</strong> pH > 7 (typically 8–9) because CH₃COO⁻ (conjugate base) hydrolyses to give OH⁻',
+          '<strong>After equivalence:</strong> excess acid added past equivalence creates acid/salt mixture continuing the buffer curve',
+          '<strong>Suitable indicator:</strong> phenolphthalein only — its range (pH 8.3–10.0) falls in the steep region. Methyl orange (pH 2.7–4.7) changes colour far below the steep section → NOT suitable'
+        ]
       }
     },
     {
@@ -62,57 +101,131 @@ export const note_chemistry_4_14_6 = {
     {
       id: 'h-strong-weak',
       type: 'heading',
-      data: { text: 'Titration Curve: Strong Acid vs Weak Base', level: 2 }
+      data: { text: 'Strong Acid + Weak Base: HCl / Aqueous Ammonia', level: 2 }
     },
     {
-      id: 'p-strong-weak',
-      type: 'paragraph',
+      id: 'list-strong-weak',
+      type: 'list',
       data: {
-        text: 'When titrating a strong base (e.g., NaOH) with a strong acid (e.g., HCl), or conversely, a weak base (e.g., NH₃) with a strong acid, the equivalence point occurs at pH < 7. This is because the salt contains a weak conjugate acid (e.g., NH₄⁺ from NH₃ + HCl → NH₄Cl). The conjugate acid hydrolyses to lower pH. Before the equivalence point, the solution is a buffer of weak base and its conjugate acid. At the half-equivalence point, pH = pKb (or can be related to pKa of the conjugate acid). The steep region is less sharp than for strong/strong titrations, centered at a pH < 7.'
+        style: 'bullet',
+        items: [
+          '<strong>Setup:</strong> NH₃ (weak base) is in the flask — initial pH ≈ 11',
+          '<strong>When HCl is first added:</strong> pH drops sharply at first, then levels out into a buffer region (NH₃ + NH₄Cl buffer)',
+          '<strong>Buffer region:</strong> a mixture of NH₃ and NH₄⁺ acts as a buffer — pH changes only slowly across a wide range of HCl added',
+          '<strong>Near equivalence:</strong> another sharp drop in pH',
+          '<strong>Equivalence point:</strong> pH < 7 (typically 5–6) because NH₄⁺ (conjugate acid) hydrolyses to give H⁺',
+          '<strong>After equivalence:</strong> excess HCl brings pH close to 0',
+          '<strong>Suitable indicator:</strong> methyl orange only — its range (pH 2.7–4.7) falls in the steep section. Phenolphthalein (pH 8.3–10.0) changes colour far above the steep section → NOT suitable'
+        ]
+      }
+    },
+    {
+      id: 'svg-strong-weak-curve',
+      type: 'svg',
+      data: {
+        svg: '<svg width="420" height="310" xmlns="http://www.w3.org/2000/svg"><defs><style>.ax{stroke:#333;stroke-width:2;fill:none}.lbl{font-size:11px;font-family:Arial;fill:#333}.curve{fill:none;stroke:#e07b00;stroke-width:2.5}.buf{stroke:#aaa;stroke-width:1;stroke-dasharray:4,3}</style></defs><rect width="420" height="310" fill="#fafafa"/><line class="ax" x1="55" y1="270" x2="400" y2="270"/><line class="ax" x1="55" y1="20" x2="55" y2="270"/><text class="lbl" x="190" y="295">Volume of HCl added (cm³)</text><text class="lbl" x="12" y="150" transform="rotate(-90,12,150)">pH</text><text class="lbl" x="38" y="32">13</text><line x1="50" y1="30" x2="55" y2="30"/><text class="lbl" x="38" y="100">9</text><line x1="50" y1="97" x2="55" y2="97"/><text class="lbl" x="38" y="155">7</text><line x1="50" y1="152" x2="55" y2="152"/><text class="lbl" x="38" y="205">5</text><line x1="50" y1="202" x2="55" y2="202"/><text class="lbl" x="38" y="270">1</text><line x1="50" y1="268" x2="55" y2="268"/><text class="lbl" x="68" y="285">0</text><text class="lbl" x="188" y="285">25</text><text class="lbl" x="308" y="285">50</text><polyline class="curve" points="60,42 80,58 100,80 120,100 140,110 160,115 180,120 200,122 220,125 230,130 240,175 250,225 260,248 280,258 300,262 320,264 350,265 380,266"/><line class="buf" x1="90" y1="20" x2="90" y2="270"/><line class="buf" x1="240" y1="20" x2="240" y2="270"/><text class="lbl" x="95" y="85" fill="#888">Buffer region</text><text class="lbl" x="95" y="98" fill="#888">(NH₃/NH₄⁺)</text><circle cx="240" cy="202" r="4" fill="red"/><text class="lbl" x="242" y="196" fill="red">Equiv. pt (pH≈5–6)</text></svg>',
+        caption: 'Strong acid (HCl) added to weak base (NH₃): buffer region before equivalence, equivalence point pH 5–6'
       }
     },
     {
       id: 'h-weak-weak',
       type: 'heading',
-      data: { text: 'Titration Curve: Weak Acid vs Weak Base', level: 2 }
+      data: { text: 'Weak Acid + Weak Base: CH₃COOH / Aqueous Ammonia', level: 2 }
     },
     {
-      id: 'p-weak-weak',
-      type: 'paragraph',
+      id: 'list-weak-weak',
+      type: 'list',
       data: {
-        text: 'Weak acid versus weak base titrations are complex. The equivalence point pH depends on the relative strengths (Ka and Kb) of the acid and base. If Ka > Kb, the equivalence point is acidic (pH < 7). If Ka < Kb, the equivalence point is basic (pH > 7). If Ka ≈ Kb, the equivalence point is near pH 7. These titrations are generally not recommended in practice because the equivalence point is not sharp, making indicator selection difficult.'
+        style: 'bullet',
+        items: [
+          'There is <strong>no sharp change</strong> in pH — the curve rises gradually throughout without a steep section',
+          'It is impossible to precisely identify the equivalence point from the graph',
+          '<strong>Indicators cannot be used</strong> — no indicator pH range can fall within a steep section that does not exist',
+          'The pH of the equivalence point depends on the relative Ka and Kb values',
+          '<strong>Alternative methods</strong> needed: temperature change (calorimetry) or electrical conductivity — these are not required at A-level but explain why the method fails'
+        ]
+      }
+    },
+    {
+      id: 'svg-weak-weak-curve',
+      type: 'svg',
+      data: {
+        svg: '<svg width="420" height="310" xmlns="http://www.w3.org/2000/svg"><defs><style>.ax{stroke:#333;stroke-width:2;fill:none}.lbl{font-size:11px;font-family:Arial;fill:#333}.curve{fill:none;stroke:#9c27b0;stroke-width:2.5}</style></defs><rect width="420" height="310" fill="#fafafa"/><line class="ax" x1="55" y1="270" x2="400" y2="270"/><line class="ax" x1="55" y1="20" x2="55" y2="270"/><text class="lbl" x="190" y="295">Volume of acid added (cm³)</text><text class="lbl" x="12" y="150" transform="rotate(-90,12,150)">pH</text><text class="lbl" x="38" y="32">14</text><line x1="50" y1="30" x2="55" y2="30"/><text class="lbl" x="38" y="100">9</text><line x1="50" y1="97" x2="55" y2="97"/><text class="lbl" x="38" y="155">7</text><line x1="50" y1="152" x2="55" y2="152"/><text class="lbl" x="38" y="205">5</text><line x1="50" y1="202" x2="55" y2="202"/><text class="lbl" x="38" y="270">3</text><line x1="50" y1="268" x2="55" y2="268"/><polyline class="curve" points="60,35 90,55 120,80 150,105 180,130 210,152 240,170 270,188 300,205 330,220 360,233 390,243"/><text class="lbl" x="90" y="180" fill="#9c27b0">No steep section —</text><text class="lbl" x="90" y="195" fill="#9c27b0">equivalence point</text><text class="lbl" x="90" y="210" fill="#9c27b0">cannot be determined</text></svg>',
+        caption: 'Weak acid + weak base: gradual pH change, no steep section — indicators cannot be used'
+      }
+    },
+    {
+      id: 'callout-weak-weak-exam',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '💬 Exam Tip: Weak Acid + Weak Base',
+        text: 'In an exam you will NEVER be asked to determine the equivalence point of a weak acid / weak base titration. However, you could be asked WHY it is impossible. The answer is: there is an absence of a sharp/steep decrease in the pH curve, so the equivalence point cannot be pinpointed. No single indicator can be used because none of their pH ranges fall within a steep section.'
       }
     },
     {
       id: 'h-indicators',
       type: 'heading',
-      data: { text: 'Choosing Indicators: pKind', level: 2 }
+      data: { text: 'Indicators: Mechanism and Choice', level: 2 }
     },
     {
-      id: 'p-indicators-intro',
+      id: 'list-indicator-mechanism',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'An indicator (HIn) is itself a weak acid: <strong>HIn ⇌ H⁺ + In⁻</strong>',
+          'HIn and In⁻ must have <strong>different colours</strong> — otherwise it cannot function as an indicator',
+          '<strong>In acid (high [H⁺]):</strong> equilibrium shifts LEFT → HIn predominates → colour of the acid form (e.g., red for methyl orange)',
+          '<strong>In alkali (low [H⁺]):</strong> equilibrium shifts RIGHT → In⁻ predominates → colour of the conjugate base form (e.g., yellow for methyl orange)',
+          '<strong>At equal concentrations</strong> [HIn] = [In⁻]: intermediate colour (e.g., orange for methyl orange) — this is the colour change point',
+          'The pH at the colour change = pKind (defined by K<sub>in</sub> = [H⁺][In⁻]/[HIn] → when [HIn]=[In⁻], [H⁺] = K<sub>in</sub>)',
+          '<strong>The pH range</strong> of an indicator spans approximately ±1 from pKind (roughly pKind − 1 to pKind + 1), derived when one form is 10× the other'
+        ]
+      }
+    },
+    {
+      id: 'callout-methyl-orange-range',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Worked: Deriving the pH Range of Methyl Orange (K<sub>in</sub> = 2.00 × 10⁻⁴)',
+        text: 'Colour change mid-point: [HIn] = [In⁻] → [H⁺] = K<sub>in</sub> = 2.00 × 10⁻⁴ → pH = −log(2.00 × 10⁻⁴) = 3.70\n\nRed end (acid predominates, [HIn] = 10[In⁻]):\nK<sub>in</sub> = [H⁺] × [In⁻] / (10[In⁻]) = [H⁺]/10\n→ [H⁺] = 10 × K<sub>in</sub> = 10 × 2.00 × 10⁻⁴ = 2.00 × 10⁻³\n→ pH = 2.70 (red colour predominates below this)\n\nYellow end (base predominates, [In⁻] = 10[HIn]):\n[H⁺] = K<sub>in</sub>/10 = 2.00 × 10⁻⁵ → pH = 4.70 (yellow colour above this)\n\nResult: Methyl orange pH range = 2.70 to 4.70'
+      }
+    },
+    {
+      id: 'p-indicators-rule',
       type: 'paragraph',
       data: {
-        text: 'Acid-base indicators are weak acids or bases that change colour depending on pH. Each indicator has a colour change range, typically spanning about 2 pH units centred at its pKind (the pH at which the indicator is 50% dissociated, i.e., half its colour one way and half the other). The indicator must be chosen so that its colour change range overlaps the steep region of the titration curve.'
+        text: 'A good indicator shows a complete colour change upon the addition of just ONE drop near the equivalence point. For this, the minimum pH change across the steep region must be at least as wide as the indicator\'s pH range. The indicator\'s range MUST fall entirely within the steep section of the titration curve.'
       }
     },
     {
       id: 'tbl-indicators',
       type: 'comparisonTable',
       data: {
-        headers: ['Indicator', 'pKind', 'Colour Range (pH)', 'Colour Change', 'Best Used For'],
+        headers: ['Indicator', 'pH Range', 'Colour Change', 'Suitable For'],
         rows: [
-          ['Methyl orange', '3.4', '3.1–4.4', 'Red to yellow', 'Strong acid/strong base (HCl + NaOH)'],
-          ['Methyl red', '5.1', '4.4–6.2', 'Red to yellow', 'Weak acid/strong base (CH₃COOH + NaOH)'],
-          ['Phenolphthalein', '8.3', '8.3–10.0', 'Colourless to pink', 'Weak acid/strong base (CH₃COOH + NaOH)']
+          ['Methyl orange', '2.7–4.7', 'Red → Yellow', 'Strong acid + strong base; Strong acid + weak base'],
+          ['Methyl red', '4.4–6.2', 'Red → Yellow', 'Strong acid + strong base; Strong acid + weak base'],
+          ['Phenolphthalein', '8.3–10.0', 'Colourless → Pink', 'Weak acid + strong base; Strong acid + strong base'],
+          ['Universal indicator', 'Full range', 'Multiple colours', 'NEVER suitable for titrations — range too wide']
         ],
-        caption: 'Common acid-base indicators and their properties'
+        caption: 'Indicator pH ranges — values found in data booklet; choose based on titration type'
       }
     },
     {
-      id: 'p-indicator-choice',
-      type: 'paragraph',
+      id: 'tbl-indicator-choice',
+      type: 'comparisonTable',
       data: {
-        text: 'For strong acid–strong base (equivalence pH = 7), methyl orange (pKind 3.4) is not ideal but works because the steep region is very sharp. For weak acid–strong base (equivalence pH ≈ 8−9), phenolphthalein (pKind 8.3) is ideal because its colour change range (8.3−10.0) overlaps the steep region. For weak base–strong acid (equivalence pH ≈ 5−6), methyl red (pKind 5.1) is appropriate.'
+        headers: ['Titration Type', 'Equiv. pH', 'Methyl Orange', 'Phenolphthalein'],
+        rows: [
+          ['Strong acid + Strong base', '= 7', '✓ Suitable (steep region covers its range)', '✓ Suitable'],
+          ['Weak acid + Strong base', '> 7 (8–9)', '✗ NOT suitable (range below steep region)', '✓ Suitable'],
+          ['Strong acid + Weak base', '< 7 (5–6)', '✓ Suitable', '✗ NOT suitable (range above steep region)'],
+          ['Weak acid + Weak base', 'Varies', '✗ NOT suitable', '✗ NOT suitable — no steep section exists']
+        ],
+        caption: 'Indicator suitability depends on whether its pH range falls in the steep region'
       }
     },
     {
@@ -127,13 +240,68 @@ export const note_chemistry_4_14_6 = {
     {
       id: 'h-half-equivalence',
       type: 'heading',
-      data: { text: 'The Half-Equivalence Point', level: 2 }
+      data: { text: 'Half-Equivalence Point and Determining pKa', level: 2 }
     },
     {
-      id: 'p-half-equiv',
-      type: 'paragraph',
+      id: 'list-half-equiv',
+      type: 'list',
       data: {
-        text: 'At the half-equivalence point of a weak acid–strong base titration, exactly half the weak acid has been neutralized, so [HA] = [A⁻]. By the Henderson-Hasselbalch equation, pH = pKa + log(1) = pKa. This is a practical way to measure pKa: carry out a titration, find the volume at the equivalence point, take half that volume, and measure the pH at that point—that pH is the pKa of the acid. This method is often used in practice and is part of Core Practical 11.'
+        style: 'bullet',
+        items: [
+          '<strong>Half-equivalence point</strong> = the volume at exactly half of the equivalence point volume',
+          'At this point: [HA] = [A⁻] (equal concentrations of acid and conjugate base)',
+          'Substituting into Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA]) = pKa + log(1) = <strong>pKa + 0 = pKa</strong>',
+          'To find Ka from a titration curve: (1) find equivalence point volume V<sub>eq</sub>, (2) read pH at V<sub>eq</sub>/2 — this pH = pKa, (3) Ka = 10<sup>−pKa</sup>',
+          '<strong>Example:</strong> equivalence point at 25 cm³ → half-equivalence at 12.5 cm³ → pH at 12.5 cm³ = 4.8 → pKa = 4.8 → Ka = 10⁻⁴·⁸ = 1.58 × 10⁻⁵'
+        ]
+      }
+    },
+    {
+      id: 'h-diprotic',
+      type: 'heading',
+      data: { text: 'pH Curves of Diprotic Acids', level: 2 }
+    },
+    {
+      id: 'list-diprotic',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'A <strong>diprotic acid</strong> (e.g., H₂SO₄, H₂CO₃) can donate <strong>two protons</strong> in two separate dissociation steps',
+          'This produces <strong>two equivalence points</strong> on the titration curve',
+          '<strong>First equivalence point</strong> = from the 1st dissociation (HA⁻ formed)',
+          '<strong>Second equivalence point</strong> = from both dissociations combined (A²⁻ formed)',
+          '<strong>Key relationship:</strong> Volume at 2nd equivalence point = exactly 2× the volume at the 1st equivalence point',
+          'There are also two buffer regions and (for weak diprotic acids) two half-equivalence points'
+        ]
+      }
+    },
+    {
+      id: 'svg-diprotic',
+      type: 'svg',
+      data: {
+        svg: '<svg width="420" height="310" xmlns="http://www.w3.org/2000/svg"><defs><style>.ax{stroke:#333;stroke-width:2;fill:none}.lbl{font-size:11px;font-family:Arial;fill:#333}.curve{fill:none;stroke:#1565c0;stroke-width:2.5}.ev{stroke-dasharray:4,3;stroke:#c00;stroke-width:1}</style></defs><rect width="420" height="310" fill="#fafafa"/><line class="ax" x1="55" y1="270" x2="400" y2="270"/><line class="ax" x1="55" y1="20" x2="55" y2="270"/><text class="lbl" x="190" y="298">Volume of NaOH added (cm³)</text><text class="lbl" x="12" y="150" transform="rotate(-90,12,150)">pH</text><text class="lbl" x="38" y="32">14</text><line x1="50" y1="30" x2="55" y2="30"/><text class="lbl" x="38" y="155">7</text><line x1="50" y1="152" x2="55" y2="152"/><text class="lbl" x="38" y="270">1</text><line x1="50" y1="268" x2="55" y2="268"/><polyline class="curve" points="60,240 85,228 110,210 130,185 145,160 155,140 165,120 175,108 185,105 200,110 215,120 225,135 235,155 245,185 255,215 265,238 285,252 310,258 335,261 360,263"/><line class="ev" x1="160" y1="20" x2="160" y2="270"/><line class="ev" x1="260" y1="20" x2="260" y2="270"/><text class="lbl" x="140" y="285" fill="#c00">1st equiv.</text><text class="lbl" x="242" y="285" fill="#c00">2nd equiv.</text><text class="lbl" x="248" y="300" fill="#c00">(= 2× 1st)</text><text class="lbl" x="100" y="195" fill="#555">Buffer 1</text><text class="lbl" x="280" y="245" fill="#555">Buffer 2</text></svg>',
+        caption: 'Diprotic acid titration: two equivalence points; 2nd volume = 2× 1st volume'
+      }
+    },
+    {
+      id: 'h-buffer-in-curves',
+      type: 'heading',
+      data: { text: 'Buffer Regions in Titration Curves', level: 2 }
+    },
+    {
+      id: 'list-buffer-in-curves',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'In any titration involving a <strong>weak acid or weak base</strong>, a buffer region appears <em>before</em> the equivalence point',
+          'In the buffer region, pH changes only gradually despite adding a significant volume of titrant',
+          'The buffer region forms because a mixture of the weak acid and its conjugate base (or weak base and conjugate acid) exists in solution',
+          'The flat plateau of the buffer region is centred at the <strong>half-equivalence point</strong> where pH = pKa',
+          '<strong>Why the plateau is flat:</strong> [HA]/[A⁻] ratio stays roughly constant as long as both are in excess → [H⁺] = Ka × ([HA]/[A⁻]) stays roughly constant',
+          'Strong acid + strong base has <strong>no buffer region</strong> — both fully dissociate with no reservoir to resist pH change'
+        ]
       }
     },
     {
@@ -141,11 +309,14 @@ export const note_chemistry_4_14_6 = {
       type: 'checklist',
       data: {
         items: [
-          { text: 'Can describe the shape of strong/strong titration curves', checked: false },
-          { text: 'Can describe the shape of weak/strong titration curves and identify equivalence point pH', checked: false },
-          { text: 'Understand the half-equivalence point and its relation to pKa', checked: false },
-          { text: 'Can select appropriate indicators based on pKind and titration type', checked: false },
-          { text: 'Know the colour changes of methyl orange and phenolphthalein', checked: false }
+          { text: 'Can distinguish end point from equivalence point', checked: false },
+          { text: 'Can describe and sketch all 4 types of titration curves (strong/strong, weak/strong, strong/weak, weak/weak)', checked: false },
+          { text: 'Understand why weak+weak shows no steep section and indicators cannot be used', checked: false },
+          { text: 'Understand indicator mechanism (HIn ⇌ H⁺ + In⁻) and how to derive pH range from Kin', checked: false },
+          { text: 'Can select appropriate indicators (methyl orange vs phenolphthalein) for different titrations', checked: false },
+          { text: 'Understand the half-equivalence point: pH = pKa, and can find Ka from a titration curve', checked: false },
+          { text: 'Know that diprotic acids give two equivalence points; 2nd volume = 2× 1st volume', checked: false },
+          { text: 'Can identify and explain the buffer region in titration curves involving weak acids/bases', checked: false }
         ]
       }
     },
@@ -164,7 +335,7 @@ export const note_chemistry_4_14_6 = {
       id: 'summary-titration',
       type: 'summary',
       data: {
-        text: 'Strong/strong: equivalence at pH 7, steep region sharp, any indicator works. Weak/strong: equivalence at pH > 7, buffer region, phenolphthalein ideal. Half-equivalence point: pH = pKa. Indicator choice: pKind must overlap steep region. pKind defines the centre of the indicator\'s colour change range.'
+        text: 'End point ≠ equivalence point. Strong+strong: equiv pH = 7, any indicator. Weak acid+strong base: equiv pH > 7 (8–9), phenolphthalein only. Strong acid+weak base: equiv pH < 7 (5–6), methyl orange only. Weak+weak: no steep section, no indicator. Indicators work via HIn ⇌ H⁺ + In⁻; range ≈ pKind ± 1. Half-equivalence: pH = pKa. Diprotic: 2 equivalence points; 2nd = 2× 1st.'
       }
     }
   ],
@@ -173,31 +344,37 @@ export const note_chemistry_4_14_6 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'p-strong-strong',
-        prompt: 'For a strong acid–strong base titration, where is the equivalence point and why?'
+        blockId: 'callout-endpoint-equiv',
+        prompt: 'What is the difference between the end point and the equivalence point in a titration?'
       },
       {
         id: 'cue-2',
-        blockId: 'p-weak-strong',
-        prompt: 'For a weak acid–strong base titration, where is the equivalence point and why?'
+        blockId: 'tbl-equiv-summary',
+        prompt: 'State the equivalence point pH for each of the four acid-base combinations and explain why.'
       },
       {
         id: 'cue-3',
-        blockId: 'p-half-equiv',
-        prompt: 'What is the half-equivalence point and what is the pH at this point?'
+        blockId: 'list-indicator-mechanism',
+        prompt: 'Explain how an acid-base indicator works using the equilibrium HIn ⇌ H⁺ + In⁻.'
       },
       {
         id: 'cue-4',
-        blockId: 'tbl-indicators',
-        prompt: 'Why is phenolphthalein ideal for weak acid–strong base titrations but not for strong acid–strong base?'
+        blockId: 'tbl-indicator-choice',
+        prompt: 'Which indicator(s) are suitable for: (a) strong acid + strong base, (b) weak acid + strong base, (c) strong acid + weak base?'
       },
       {
         id: 'cue-5',
-        blockId: 'ex-indicator-choice',
-        prompt: 'You are titrating acetic acid with NaOH. Which indicator would you use and why?'
+        blockId: 'list-half-equiv',
+        prompt: 'How can you determine pKa of a weak acid from a titration curve? What is the half-equivalence point?'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'list-diprotic',
+        prompt: 'How does a diprotic acid titration curve differ from a monoprotic acid? How are the two equivalence point volumes related?'
       }
     ],
-    summaryText: 'Strong/strong: equivalence pH = 7. Weak/strong: equivalence pH > 7, half-equivalence pH = pKa. Half-equivalence: [HA] = [A⁻], pH = pKa. Phenolphthalein (pKind 8.3) for weak/strong. Methyl orange (pKind 3.4) for strong/strong. Indicator pKind must overlap steep region.',
+    summaryText: 'End point ≠ equivalence point. Strong+strong: pH=7. Weak acid+strong base: pH>7, phenolphthalein. Strong acid+weak base: pH<7, methyl orange. Weak+weak: no steep section, no indicator. HIn ⇌ H⁺ + In⁻ — range ≈ pKind ± 1. Half-equiv: [HA]=[A⁻], pH = pKa. Diprotic: 2 equivalences, 2nd = 2× 1st. Buffer region: flat plateau before equivalence in weak acid/base titrations.',
+    ready: false
     ready: false
   },
   evidence: [
