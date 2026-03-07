@@ -8,9 +8,19 @@ import { initSpacetimeDB } from './spacetime.js'
 // Initialize SpacetimeDB client before the app renders
 initSpacetimeDB().catch(console.error);
 
-// Only register service worker in production — in dev mode, SW caches
-// unhashed module URLs which causes stale content after every code change.
-if (!import.meta.env.DEV) {
+// In dev mode: aggressively unregister any existing service worker and wipe
+// all caches. SW caches unhashed module URLs which causes stale content after
+// every code change. This runs once on every dev page load.
+if (import.meta.env.DEV) {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      registrations.forEach((reg) => reg.unregister());
+    });
+  }
+  if ('caches' in window) {
+    caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
+  }
+} else {
   registerServiceWorker();
 }
 
