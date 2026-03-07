@@ -1,168 +1,523 @@
 export const note_chemistry_4_15_5 = {
   blocks: [
+
+    // ── Objective ───────────────────────────────────────────────────────────
     {
       id: 'obj-carboxylic',
       type: 'objective',
       data: {
-        text: 'Understand carboxylic acid structure, acidity, and key reactions: with metals, bases, alcohols (esterification), and reduction.'
+        text: 'Know the nomenclature, displayed/skeletal formulae, and physical properties of carboxylic acids. Understand preparation methods and master the four key reactions: reduction, neutralisation, halogenation, and esterification (IAL Unit 4, Topic 15c).'
       }
     },
+
+    // ── Nomenclature & Functional Group ─────────────────────────────────────
     {
-      id: 'h-carboxylic-structure',
+      id: 'h-nomenclature',
       type: 'heading',
-      data: { text: 'Carboxylic Acid Structure & Acidity', level: 2 }
+      data: { text: 'Nomenclature & Functional Group', level: 2 }
     },
     {
-      id: 'p-carboxylic-def',
-      type: 'paragraph',
-      data: {
-        text: 'Carboxylic acids contain the carboxyl group (–COOH), which is a combination of a carbonyl (C=O) and a hydroxyl (O–H) group on the same carbon. The general formula is R–COOH. The structure is: R–C(=O)–O–H. Carboxylic acids are weak acids (pKa typically 3–5) because the O–H bond is polar and the resulting anion (R–COO⁻) is stabilised by resonance: the negative charge is delocalised between the two oxygen atoms of the carboxylate ion.'
-      }
-    },
-    {
-      id: 'equation-carboxylic-ionisation',
-      type: 'equation',
-      data: {
-        html: 'R–COOH ⇌ R–COO<sup>−</sup> + H<sup>+</sup><br/><br/>Resonance structures of carboxylate: R–C(=O)–O<sup>−</sup> ⇌ R–C(−O)=O',
-        caption: 'Carboxylic acid ionisation. The carboxylate anion is stabilised by resonance between two equivalent structures, explaining the weak acidity.'
-      }
-    },
-    {
-      id: 'p-acidity-explanation',
-      type: 'paragraph',
-      data: {
-        text: 'The acidity of carboxylic acids is much greater than that of simple alcohols (pKa ~15) because: (1) the O–H bond is more polar in carboxylic acids (the nearby C=O withdraws electron density), and (2) the resulting anion is resonance-stabilised (negative charge spread over two oxygens), making it more stable than an alkoxide anion. Common carboxylic acids: formic acid (HCOOH, pKa 3.75), acetic acid (CH₃COOH, pKa 4.76), propionic acid (CH₃CH₂COOH), butanoic acid (CH₃CH₂CH₂COOH).'
-      }
-    },
-    {
-      id: 'h-carboxylic-reactions',
-      type: 'heading',
-      data: { text: 'Reactions of Carboxylic Acids', level: 2 }
-    },
-    {
-      id: 'h-metals-bases',
-      type: 'heading',
-      data: { text: 'Reactions with Metals & Bases', level: 3 }
-    },
-    {
-      id: 'p-metal-base-reactions',
-      type: 'paragraph',
-      data: {
-        text: 'Carboxylic acids react with metals (Na, Mg) and bases (NaOH, Na₂CO₃, NaHCO₃) because they are weak acids. With sodium metal: 2R–COOH + 2Na → 2R–COONa + H₂↑. With NaOH: R–COOH + NaOH → R–COONa + H₂O (complete neutralisation). With Na₂CO₃: 2R–COOH + Na₂CO₃ → 2R–COONa + H₂O + CO₂↑. With NaHCO₃: R–COOH + NaHCO₃ → R–COONa + H₂O + CO₂↑. These reactions form sodium salts (carboxylates), which are ionic solids, often soluble in water.'
-      }
-    },
-    {
-      id: 'list-acid-reactions',
+      id: 'list-naming',
       type: 'list',
       data: {
         style: 'bullet',
         items: [
-          'With Na metal: produces H₂ gas (vigorous reaction)',
-          'With NaOH: neutralisation to salt + water',
-          'With Na₂CO₃ or NaHCO₃: forms salt, water, and CO₂ gas',
-          'With NH₃: forms ammonium salt (R–COONH₄)',
-          'With alcohols: esterification (see below)'
+          'Functional group: carboxyl group = carbonyl (C=O) + hydroxyl (–OH) attached to the same carbon',
+          'General formula: R–COOH (R = hydrogen or alkyl group)',
+          'Suffix: –anoic acid (e.g. methanoic, ethanoic, propanoic, butanoic acid)',
+          'Common names exist but always use IUPAC names: formic (methanoic), acetic (ethanoic)',
+          'Must draw displayed, structural, and skeletal formulae for first four + branched examples (e.g. 2-methylpropanoic acid)',
+          'The –COOH carbon is always carbon 1 when numbering the chain'
         ]
       }
     },
     {
-      id: 'h-esterification',
+      id: 'table-first4',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Name', 'Molecular formula', 'Shortened structural formula'],
+        rows: [
+          ['Methanoic acid', 'HCOOH', 'H–COOH'],
+          ['Ethanoic acid', 'CH₃COOH', 'CH₃–COOH'],
+          ['Propanoic acid', 'C₂H₅COOH', 'CH₃CH₂–COOH'],
+          ['Butanoic acid', 'C₃H₇COOH', 'CH₃CH₂CH₂–COOH']
+        ],
+        caption: 'First four carboxylic acids — names and formulae. All are liquids at room temperature.'
+      }
+    },
+
+    // ── Bonding & Carboxylate Ion ────────────────────────────────────────────
+    {
+      id: 'h-bonding',
       type: 'heading',
-      data: { text: 'Esterification with Alcohols', level: 3 }
+      data: { text: 'Bonding & The Carboxylate Ion', level: 2 }
     },
     {
-      id: 'p-esterification-intro',
-      type: 'paragraph',
+      id: 'list-bonding',
+      type: 'list',
       data: {
-        text: 'Carboxylic acids react with alcohols in the presence of a strong acid catalyst (typically H₂SO₄ or HCl) to form esters and water. This is called Fischer esterification. The general equation is: R–COOH + R′–OH ⇌ R–COO–R′ + H₂O (with H⁺ catalyst). The reaction is reversible and reaches equilibrium; the yield depends on conditions. To drive the reaction forward: (1) use excess alcohol (shifts equilibrium to products), (2) remove water as it forms (e.g., Dean-Stark apparatus), or (3) use a large excess of one reactant.'
+        style: 'bullet',
+        items: [
+          'The carboxyl group contains THREE polar bonds: C=O (carbonyl), C–O (single bond), and O–H',
+          'All three have δ⁻ on oxygen and δ⁺ on carbon/hydrogen — oxygen is most electronegative',
+          'Most reactions involve loss of the O–H proton (H⁺) → forms the carboxylate ion (RCOO⁻)',
+          'In the carboxylate ion, the negative charge is delocalised equally over BOTH C–O bonds',
+          'Shown with a dotted bond between C and both O atoms (neither a full single nor double bond)',
+          'This resonance stabilisation makes carboxylic acids stronger acids than alcohols (pKₐ ~3–5 vs ~15 for alcohols)'
+        ]
       }
     },
     {
-      id: 'equation-esterification',
-      type: 'equation',
+      id: 'svg-carboxylate',
+      type: 'svg',
       data: {
-        html: 'R–COOH + R′–OH <span style="font-size: 0.9em; vertical-align: super;">H<sup>+</sup></span>→ R–COO–R′ + H<sub>2</sub>O',
-        caption: 'Fischer esterification: carboxylic acid + alcohol → ester + water. The reaction is acid-catalysed and reversible.'
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 210" font-family="Arial,sans-serif" font-size="13">
+  <text x="290" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">Carboxylate Ion — Resonance Delocalisation</text>
+
+  <!-- LEFT: Carboxylic acid -->
+  <text x="28" y="58" font-size="11" fill="#6b7280">Carboxylic acid</text>
+  <text x="28" y="108" font-size="15" fill="#374151">R</text>
+  <line x1="44" y1="103" x2="72" y2="103" stroke="#374151" stroke-width="2"/>
+  <text x="74" y="108" font-size="15" fill="#374151">C</text>
+  <line x1="84" y1="95" x2="108" y2="76" stroke="#374151" stroke-width="2.5"/>
+  <line x1="87" y1="99" x2="111" y2="80" stroke="#374151" stroke-width="2.5"/>
+  <text x="112" y="74" font-size="15" fill="#dc2626">O</text>
+  <text x="126" y="68" font-size="11" fill="#dc2626">δ−</text>
+  <line x1="84" y1="108" x2="108" y2="127" stroke="#374151" stroke-width="2.5"/>
+  <text x="110" y="135" font-size="15" fill="#dc2626">O</text>
+  <text x="124" y="130" font-size="11" fill="#dc2626">δ−</text>
+  <line x1="124" y1="130" x2="142" y2="120" stroke="#374151" stroke-width="2.5"/>
+  <text x="144" y="118" font-size="15" fill="#2563eb">H</text>
+  <text x="156" y="112" font-size="11" fill="#2563eb">δ+</text>
+
+  <!-- Arrow: loses H+ -->
+  <text x="175" y="95" font-size="13" fill="#374151">−H⁺</text>
+  <line x1="170" y1="103" x2="202" y2="103" stroke="#374151" stroke-width="2"/>
+  <polygon points="202,98 212,103 202,108" fill="#374151"/>
+
+  <!-- RIGHT: Carboxylate ion -->
+  <text x="222" y="58" font-size="11" fill="#6b7280">Carboxylate ion (RCOO⁻)</text>
+  <text x="222" y="108" font-size="15" fill="#374151">R</text>
+  <line x1="238" y1="103" x2="264" y2="103" stroke="#374151" stroke-width="2"/>
+  <text x="266" y="108" font-size="15" fill="#374151">C</text>
+  <!-- Dashed (delocalised) bond to upper O -->
+  <line x1="276" y1="95" x2="300" y2="76" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="303" y="74" font-size="15" fill="#dc2626">O</text>
+  <text x="316" y="68" font-size="12" fill="#dc2626">½⁻</text>
+  <!-- Dashed (delocalised) bond to lower O -->
+  <line x1="276" y1="108" x2="300" y2="127" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <text x="303" y="135" font-size="15" fill="#dc2626">O</text>
+  <text x="316" y="135" font-size="12" fill="#dc2626">½⁻</text>
+
+  <!-- Annotation box -->
+  <rect x="222" y="152" width="230" height="44" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="232" y="170" font-size="11" fill="#5b21b6">Charge is spread equally over both</text>
+  <text x="232" y="186" font-size="11" fill="#5b21b6">C–O bonds → resonance stabilised</text>
+
+  <!-- Legend -->
+  <line x1="466" y1="100" x2="490" y2="100" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="494" y="104" font-size="11" fill="#7c3aed">delocalised bond</text>
+</svg>`,
+        caption: 'Loss of H⁺ from RCOOH gives the carboxylate ion (RCOO⁻). The negative charge delocalises equally over both C–O bonds (dashed lines), making the anion far more stable than an alkoxide (RO⁻) — this is why carboxylic acids are stronger acids than alcohols.'
+      }
+    },
+
+    // ── Physical Properties ──────────────────────────────────────────────────
+    {
+      id: 'h-physical',
+      type: 'heading',
+      data: { text: 'Physical Properties', level: 2 }
+    },
+    {
+      id: 'h-bp',
+      type: 'heading',
+      data: { text: 'Boiling Points', level: 3 }
+    },
+    {
+      id: 'list-bp',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Carboxylic acids have ALL THREE types of intermolecular force: hydrogen bonds, permanent dipole–permanent dipole (PDPD), and London dispersion forces',
+          'This gives them the highest boiling points of all organic homologous series at the same molar mass',
+          'Order of increasing boiling point (same molar mass): alkanes < alkenes < aldehydes/ketones (PDPD only) < alcohols (H-bonding) < carboxylic acids (even stronger H-bonding)',
+          'As chain length increases → BP increases due to stronger London dispersion forces (more electrons)',
+          'Carboxylic acids can also form hydrogen-bonded dimers (two molecules held together by two H-bonds) — further elevating effective BP'
+        ]
       }
     },
     {
-      id: 'p-esterification-mechanism',
-      type: 'paragraph',
+      id: 'table-bp-series',
+      type: 'comparisonTable',
       data: {
-        text: 'Mechanism (simplified): (1) The carboxylic acid is protonated by H⁺, activating the C=O. (2) The alcohol (nucleophile) attacks the electrophilic carbon, forming a tetrahedral intermediate. (3) Water is eliminated, forming a protonated ester. (4) Deprotonation gives the final ester. The catalyst is regenerated. Because the reaction is reversible, esters can be hydrolysed back to the acid and alcohol (saponification if base is used; acid hydrolysis if acid is used).'
+        headers: ['Homologous series', 'IMFs present', 'Relative boiling point'],
+        rows: [
+          ['Alkanes / alkenes', 'London forces only', 'Lowest'],
+          ['Aldehydes / ketones', 'PDPD + London forces', 'Medium-low'],
+          ['Alcohols', 'H-bonding + PDPD + London forces', 'Medium-high'],
+          ['Carboxylic acids', 'H-bonding + PDPD + London forces (strongest H-bonds)', 'Highest']
+        ],
+        caption: 'Carboxylic acids rank at the top for boiling points because their H-bonds are stronger — both the C=O and O–H are available for H-bonding.'
       }
     },
     {
-      id: 'callout-esterification-key',
+      id: 'h-solubility',
+      type: 'heading',
+      data: { text: 'Solubility in Water', level: 3 }
+    },
+    {
+      id: 'list-solubility',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Short-chain carboxylic acids (C1–C4) are very soluble in water',
+          'They form TWO types of hydrogen bond with water:',
+          '   ① The δ⁻ oxygen (C=O) attracts a δ⁺ hydrogen of a water molecule',
+          '   ② The δ⁺ hydrogen (–OH of carboxyl) donates to the lone pair on oxygen of a water molecule',
+          'As chain length increases → solubility decreases because the non-polar hydrocarbon chain becomes dominant and disrupts H-bonding with water',
+          'Must be able to draw a labelled diagram of these two H-bonds — likely examined in Unit 4'
+        ]
+      }
+    },
+    {
+      id: 'svg-hbonds',
+      type: 'svg',
+      data: {
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" font-family="Arial,sans-serif" font-size="13">
+  <text x="260" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">Hydrogen Bonding: Ethanoic Acid with Water</text>
+
+  <!-- Ethanoic acid (centre) -->
+  <text x="168" y="125" font-size="14" fill="#374151">CH₃</text>
+  <line x1="200" y1="120" x2="228" y2="120" stroke="#374151" stroke-width="2"/>
+  <text x="230" y="125" font-size="14" fill="#374151">C</text>
+  <!-- C=O double bond (upper) -->
+  <line x1="241" y1="112" x2="264" y2="93" stroke="#374151" stroke-width="2.5"/>
+  <line x1="244" y1="116" x2="267" y2="97" stroke="#374151" stroke-width="2.5"/>
+  <text x="267" y="91" font-size="14" fill="#dc2626">O</text>
+  <text x="281" y="85" font-size="11" fill="#dc2626">δ−</text>
+  <!-- C-O single bond (lower) -->
+  <line x1="241" y1="125" x2="264" y2="144" stroke="#374151" stroke-width="2.5"/>
+  <text x="266" y="152" font-size="14" fill="#dc2626">O</text>
+  <text x="280" y="150" font-size="11" fill="#dc2626">δ−</text>
+  <line x1="278" y1="148" x2="298" y2="137" stroke="#374151" stroke-width="2.5"/>
+  <text x="300" y="135" font-size="14" fill="#2563eb">H</text>
+  <text x="313" y="129" font-size="11" fill="#2563eb">δ+</text>
+
+  <!-- Water molecule ABOVE (H-bond via C=O oxygen) -->
+  <text x="285" y="52" font-size="13" fill="#374151">H</text>
+  <text x="297" y="46" font-size="11" fill="#2563eb">δ+</text>
+  <text x="310" y="52" font-size="13" fill="#dc2626">O</text>
+  <text x="324" y="46" font-size="11" fill="#dc2626">δ−</text>
+  <text x="300" y="68" font-size="13" fill="#374151">H</text>
+  <!-- H-bond ①: from water H to C=O oxygen -->
+  <line x1="291" y1="54" x2="276" y2="80" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="5,3"/>
+  <text x="253" y="68" font-size="11" fill="#0284c7" font-weight="bold">H-bond ①</text>
+
+  <!-- Water molecule RIGHT (H-bond via O-H of acid) -->
+  <text x="390" y="128" font-size="13" fill="#dc2626">O</text>
+  <text x="404" y="122" font-size="11" fill="#dc2626">δ−</text>
+  <text x="383" y="145" font-size="13" fill="#374151">H</text>
+  <text x="406" y="145" font-size="13" fill="#374151">H</text>
+  <!-- H-bond ②: from acid H to water O lone pair -->
+  <line x1="318" y1="132" x2="388" y2="128" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="5,3"/>
+  <text x="335" y="118" font-size="11" fill="#0284c7" font-weight="bold">H-bond ②</text>
+
+  <!-- Key box -->
+  <rect x="14" y="170" width="240" height="65" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="24" y="188" font-size="12" font-weight="bold" fill="#1d4ed8">Two H-bonds with water:</text>
+  <text x="24" y="206" font-size="11" fill="#374151">① δ⁻ O (C=O) ··· δ⁺ H–O (water)</text>
+  <text x="24" y="222" font-size="11" fill="#374151">② δ⁺ H (–OH) ··· lone pair on O (water)</text>
+</svg>`,
+        caption: 'Ethanoic acid forms two distinct hydrogen bonds with water — one via the carbonyl oxygen and one via the carboxyl hydrogen. This explains the high solubility of short-chain carboxylic acids.'
+      }
+    },
+    {
+      id: 'callout-smells',
       type: 'callout',
       data: {
-        style: 'key',
-        title: 'Esterification Conditions',
-        text: 'Fischer esterification requires: (1) Carboxylic acid, (2) Alcohol, (3) Strong acid catalyst (H₂SO₄ or HCl), (4) Heat (often 60–80°C) to drive the equilibrium and evaporate water. The reaction does NOT work with weak bases (NaOH will deprotonate the acid instead of promoting esterification). For high yields, use excess alcohol or remove water by azeotropic distillation.'
+        style: 'tip',
+        title: 'Smells & Tastes (for context)',
+        text: '• Carboxylic acids have sour smells and tastes\n• Ethanoic acid → vinegar (sharp sour taste)\n• Citric acid → lemons (sour taste)\n• Butanoic acid → rancid butter (unpleasant smell)\n• Esters made FROM carboxylic acids have pleasant fruity/floral odours\n\nNote: You are NOT required to memorise all smells for the exam. Ethanoic acid/vinegar is the most important to know.'
       }
     },
+
+    // ── Preparation of Carboxylic Acids ─────────────────────────────────────
+    {
+      id: 'h-preparation',
+      type: 'heading',
+      data: { text: 'Preparation of Carboxylic Acids', level: 2 }
+    },
+    {
+      id: 'h-oxidation',
+      type: 'heading',
+      data: { text: 'Method 1 — Oxidation of a Primary Alcohol or Aldehyde', level: 3 }
+    },
+    {
+      id: 'list-oxidation',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Oxidising agent: acidified potassium dichromate(VI) = K₂Cr₂O₇ + conc. H₂SO₄ (abbreviated as [O] in equations)',
+          'Conditions: REFLUX (condenser is vertical) — ensures full/complete oxidation to carboxylic acid',
+          'Key distinction: distillation = stop at aldehyde; reflux = go all the way to carboxylic acid',
+          'Primary alcohol → carboxylic acid requires 2 mol [O] (two-step: alcohol → aldehyde → acid)',
+          'Aldehyde → carboxylic acid requires 1 mol [O] (one-step)',
+          'Fractional distillation after reaction isolates the pure carboxylic acid product',
+          'Example: propan-1-ol + 2[O] → propanoic acid (under reflux)',
+          'Example: propanal + [O] → propanoic acid (under reflux)'
+        ]
+      }
+    },
+    {
+      id: 'h-nitrile',
+      type: 'heading',
+      data: { text: 'Method 2 — Hydrolysis of a Nitrile (–C≡N)', level: 3 }
+    },
+    {
+      id: 'p-nitrile-intro',
+      type: 'paragraph',
+      data: {
+        text: 'A nitrile contains the –C≡N group. The carbon in –CN counts as part of the carbon chain (e.g. propanenitrile CH₃CH₂C≡N has 3 carbons). Nitriles are hydrolysed under reflux with dilute acid or aqueous alkali.'
+      }
+    },
+    {
+      id: 'table-nitrile',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Type', 'Reagent & Conditions', 'No. of steps', 'Products'],
+        rows: [
+          ['Acidic hydrolysis', 'Dilute HCl (or H₂SO₄) + H₂O, under reflux', '1 step', 'Carboxylic acid + NH₄⁺ (ammonium salt)'],
+          ['Alkaline hydrolysis', 'NaOH(aq) + H₂O under reflux, THEN add dilute acid', '2 steps', 'Step 1: carboxylate ion (RCOO⁻) + NH₃; Step 2: + HCl → carboxylic acid']
+        ],
+        caption: 'Acidic hydrolysis = 1 step (direct to carboxylic acid). Alkaline hydrolysis = 2 steps (carboxylate ion first, then protonate). This distinction is a very common MCQ topic in IAL Unit 4.'
+      }
+    },
+    {
+      id: 'callout-nitrile-exam',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Common MCQ Trap — Single-Step to Carboxylic Acid',
+        text: 'Q: "Which reaction produces a carboxylic acid in a single step?"\n\n✓ Acidic hydrolysis of a nitrile (dilute acid + water, reflux) — 1 step\n✗ Alkaline hydrolysis of a nitrile — 2 steps (carboxylate first, then add acid)\n✓ Hydrolysis of an ester with HCl — also 1 step\n\nAlkaline hydrolysis always requires a second step to protonate the carboxylate ion.'
+      }
+    },
+
+    // ── Four Key Reactions ───────────────────────────────────────────────────
+    {
+      id: 'h-reactions',
+      type: 'heading',
+      data: { text: 'Four Key Reactions of Carboxylic Acids', level: 2 }
+    },
+    {
+      id: 'callout-no-mechanism',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'IAL Exam Note — No Mechanisms Required',
+        text: 'For all four key reactions below, you only need to know:\n• Reagents\n• Conditions\n• Products\n\nMechanisms are NOT required for any of these four reactions in the IAL Unit 4 exam.'
+      }
+    },
+
+    // Reaction 1: Reduction
     {
       id: 'h-reduction',
       type: 'heading',
-      data: { text: 'Reduction of Carboxylic Acids', level: 3 }
+      data: { text: 'Reaction 1 — Reduction to Primary Alcohol', level: 3 }
     },
     {
-      id: 'p-reduction-intro',
-      type: 'paragraph',
+      id: 'list-reduction',
+      type: 'list',
       data: {
-        text: 'Carboxylic acids are reduced to primary alcohols by lithium aluminium hydride (LiAlH₄). NaBH₄ does NOT reduce carboxylic acids. The reaction mechanism involves hydride (H⁻) attack on the carbonyl carbon, followed by hydrolysis. The two-step reduction is: (1) R–COOH + LiAlH₄ → R–CHO (aldehyde intermediate, not usually isolated), (2) further hydride attack reduces the aldehyde → R–CH₂OH. In practice, one equivalent of LiAlH₄ is used, and with careful control, you can isolate the aldehyde; with excess LiAlH₄, the primary alcohol is the major product.'
+        style: 'bullet',
+        items: [
+          'Reagent: lithium aluminium hydride (LiAlH₄)',
+          'Conditions: dry ether (anhydrous) — water must be excluded to prevent LiAlH₄ decomposing',
+          'Product: primary alcohol (R–CH₂OH)',
+          'Adds 4 H atoms in total to the carboxyl group (2 to carbonyl C, 2 to the two oxygens)',
+          'The aldehyde (RCHO) is an intermediate but CANNOT be isolated — it is more easily reduced than the carboxylic acid and immediately converts to the primary alcohol'
+        ]
       }
     },
     {
       id: 'equation-reduction',
       type: 'equation',
       data: {
-        html: 'R–COOH + LiAlH<sub>4</sub> → R–CH<sub>2</sub>OH  (primary alcohol)<br/><br/>(excess LiAlH<sub>4</sub> reduces carboxylic acids; NaBH<sub>4</sub> does not)',
-        caption: 'LiAlH₄ reduction of carboxylic acids to primary alcohols. NaBH₄ is too weak to reduce the COOH group.'
+        html: 'CH₃CH₂CH₂COOH + 4[H] → CH₃CH₂CH₂CH₂OH + H₂O',
+        caption: 'Reduction of butanoic acid → butan-1-ol using LiAlH₄ in dry ether. [H] represents hydride from LiAlH₄.'
       }
     },
     {
-      id: 'p-reduction-mechanism',
-      type: 'paragraph',
+      id: 'callout-reduction-warn',
+      type: 'callout',
       data: {
-        text: 'LiAlH₄ is a very strong reducing agent; it provides hydride ions (H⁻) that attack the electrophilic carbonyl carbon. The sequence for carboxylic acid: (1) Nucleophilic attack by H⁻ on C=O → tetrahedral intermediate with C–H and O⁻. (2) Internal hydride transfer or rearrangement gives R–CHO (if only 1 equiv. LiAlH₄). (3) With excess LiAlH₄, further hydride attack on the aldehyde → tetrahedral C–H and O⁻ → after hydrolysis, R–CH₂OH. The O⁻ is protonated during aqueous workup.'
+        style: 'warning',
+        title: 'Why Can\'t You Stop at the Aldehyde?',
+        text: 'The aldehyde intermediate is MORE easily reduced than the carboxylic acid → it converts to the primary alcohol immediately.\n\nTo make an aldehyde FROM a carboxylic acid requires TWO steps:\n① LiAlH₄ / dry ether → primary alcohol (R–CH₂OH)\n② Acidified K₂Cr₂O₇, heat, distil immediately → aldehyde (R–CHO)'
+      }
+    },
+
+    // Reaction 2: Neutralisation
+    {
+      id: 'h-neutralisation',
+      type: 'heading',
+      data: { text: 'Reaction 2 — Neutralisation', level: 3 }
+    },
+    {
+      id: 'list-neutralisation',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Carboxylic acids are weak acids — fully neutralised by aqueous alkali (strong base)',
+          'Reagent: NaOH(aq) or KOH(aq)',
+          'Products: carboxylate salt + water',
+          'Carboxylate salt formula convention: metal comes SECOND — e.g. sodium ethanoate = CH₃COONa (not NaCH₃COO)',
+          'General formula of sodium carboxylate salts: RCOONa',
+          'Salts are ionic, water-soluble, and form the basis of buffer solutions (Topic 14)'
+        ]
       }
     },
     {
-      id: 'p-esters-from-acids',
-      type: 'paragraph',
+      id: 'equation-neutralisation',
+      type: 'equation',
       data: {
-        text: 'Esters are important carboxylic acid derivatives. Common examples: ethyl acetate (CH₃COOC₂H₅, solvent), methyl salicylate (oil of wintergreen), triglycerides (fats and oils, esters of glycerol and fatty acids). Esters have lower boiling points than carboxylic acids (no O–H hydrogen bonding), pleasant odours (fruity, floral), and are less soluble in water. They are used as perfumes, solvents, plasticisers, and in polyester production.'
+        html: 'CH₃COOH + NaOH → CH₃COO<sup>−</sup>Na<sup>+</sup> + H₂O',
+        caption: 'Ethanoic acid + sodium hydroxide → sodium ethanoate (carboxylate salt) + water.'
       }
     },
+
+    // Reaction 3: Halogenation
+    {
+      id: 'h-halogenation',
+      type: 'heading',
+      data: { text: 'Reaction 3 — Halogenation to Acyl Chloride', level: 3 }
+    },
+    {
+      id: 'list-halogenation',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Reagent: phosphorus pentachloride (PCl₅)',
+          'Conditions: anhydrous (dry) — no water present',
+          'The –OH of the carboxyl group is replaced by –Cl',
+          'Products: acyl chloride (R–COCl) + phosphorus trichloride oxide (POCl₃) + hydrogen chloride gas (HCl↑)',
+          'Observation: misty white fumes of HCl produced — confirms HCl is a product',
+          'POCl₃ and HCl are ALWAYS co-products regardless of which carboxylic acid is used',
+          'Acyl chloride functional group: –COCl (carbonyl + Cl on same carbon)',
+          'Acyl chloride naming: suffix –oyl chloride (e.g. propanoyl chloride, ethanoyl chloride)',
+          'General formula: R–CO–Cl'
+        ]
+      }
+    },
+    {
+      id: 'equation-halogenation',
+      type: 'equation',
+      data: {
+        html: 'CH₃CH₂COOH + PCl₅ → CH₃CH₂COCl + POCl₃ + HCl↑',
+        caption: 'Propanoic acid + PCl₅ (anhydrous) → propanoyl chloride + POCl₃ + HCl (misty fumes). Only the carboxylic acid and acyl chloride change between examples — POCl₃ and HCl are always formed.'
+      }
+    },
+    {
+      id: 'callout-halogenation-key',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Acyl Chlorides — Key Points',
+        text: '• Always use PCl₅ under anhydrous conditions\n• Always produce POCl₃ and HCl as co-products\n• Misty white fumes = HCl gas (chemical test confirmation)\n• Acyl chlorides are very reactive carboxylic acid derivatives — explored further in Topic 15d\n• The functional group –COCl has a C=O adjacent to a C–Cl bond'
+      }
+    },
+
+    // Reaction 4: Esterification
+    {
+      id: 'h-esterification',
+      type: 'heading',
+      data: { text: 'Reaction 4 — Esterification', level: 3 }
+    },
+    {
+      id: 'list-esterification',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Reagents: carboxylic acid + alcohol',
+          'Catalyst: concentrated sulfuric acid (conc. H₂SO₄)',
+          'Conditions: heat (equilibrium reaction — also called a condensation reaction since water is lost)',
+          'Products: ester + water',
+          'The –OH is lost from the carboxylic acid and –H is lost from the alcohol –OH → join to form H₂O',
+          'Ester general formula: R–COO–R′ (R from the acid, R′ from the alcohol)',
+          'Naming: [alcohol-derived part]-yl + [acid-derived part]-oate',
+          'Esters are used as solvents, flavourings, perfumes, and to make polyesters (plastics, clothing)'
+        ]
+      }
+    },
+    {
+      id: 'equation-esterification',
+      type: 'equation',
+      data: {
+        html: 'HCOOH + CH₃CH₂OH ⇌ HCOOCH₂CH₃ + H₂O',
+        caption: 'Methanoic acid + ethanol → ethyl methanoate + water (reversible, conc. H₂SO₄ catalyst, heat). The bond broken in the acid releases –OH; the –H comes from the alcohol –OH group. Together they form water.'
+      }
+    },
+    {
+      id: 'callout-ester-naming',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'How to Name Esters',
+        text: 'Ester name = [alcohol part] + [acid part]\n\n• Alcohol → drop "-ol", add "-yl" prefix → ethanol = ethyl–\n• Acid → drop "-ic acid", add "-ate" suffix → propanoic acid = –propanoate\n\nExamples:\n• Ethanol + ethanoic acid → ethyl ethanoate (CH₃COOC₂H₅)\n• Methanol + propanoic acid → methyl propanoate\n• Ethanol + methanoic acid → ethyl methanoate\n\nIn R–COO–R′: the R group comes from the acid; the R′ group comes from the alcohol.'
+      }
+    },
+
+    // Summary table of all 4 reactions
+    {
+      id: 'h-summary-reactions',
+      type: 'heading',
+      data: { text: 'Summary: Four Key Reactions', level: 2 }
+    },
+    {
+      id: 'table-four-reactions',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Reaction', 'Reagent', 'Conditions', 'Products'],
+        rows: [
+          ['① Reduction', 'LiAlH₄', 'Dry ether, anhydrous', 'Primary alcohol (R–CH₂OH) + H₂O'],
+          ['② Neutralisation', 'NaOH(aq)', 'Aqueous, room temperature', 'Carboxylate salt (RCOONa) + H₂O'],
+          ['③ Halogenation', 'PCl₅', 'Anhydrous', 'Acyl chloride (RCOCl) + POCl₃ + HCl↑ (misty fumes)'],
+          ['④ Esterification', 'Alcohol + conc. H₂SO₄ (cat.)', 'Heat, equilibrium (⇌)', 'Ester (RCOOR′) + H₂O']
+        ],
+        caption: 'Four key reactions of carboxylic acids — IAL Unit 4. No mechanisms required; know reagents, conditions, and products only.'
+      }
+    },
+
+    // Checklist
     {
       id: 'checklist-carboxylic',
       type: 'checklist',
       data: {
         items: [
-          { text: 'I understand why carboxylic acids are weak acids (resonance stabilisation of anion).', checked: false },
-          { text: 'I can write equations for reactions with Na, NaOH, Na₂CO₃, and NaHCO₃.', checked: false },
-          { text: 'I can write the Fischer esterification equation and explain conditions needed.', checked: false },
-          { text: 'I know that LiAlH₄ (not NaBH₄) reduces carboxylic acids to primary alcohols.', checked: false }
+          { text: 'I can name and draw displayed/skeletal formulae for the first four carboxylic acids and branched examples.', checked: false },
+          { text: 'I can explain carboxylate ion resonance stabilisation and why carboxylic acids are stronger acids than alcohols.', checked: false },
+          { text: 'I can name all three IMFs in carboxylic acids and rank homologous series by boiling point.', checked: false },
+          { text: 'I can draw and label the two types of hydrogen bond between ethanoic acid and water.', checked: false },
+          { text: 'I can describe preparation of carboxylic acids by oxidation (reflux, K₂Cr₂O₇/H₂SO₄) and nitrile hydrolysis (acidic = 1 step; alkaline = 2 steps).', checked: false },
+          { text: 'I know reagents and conditions for all four key reactions: reduction, neutralisation, halogenation, esterification.', checked: false },
+          { text: 'I know LiAlH₄ in dry ether reduces RCOOH → primary alcohol, and why you cannot stop at the aldehyde.', checked: false },
+          { text: 'I know PCl₅ (anhydrous) gives acyl chloride + POCl₃ + HCl (misty fumes).', checked: false },
+          { text: 'I can name esters using the alcohol-first, acid-second convention.', checked: false }
         ]
       }
     },
-    // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
-    {
-      id: 'bloom-understand',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Carboxylic acids are weak acids (partially dissociate). Their acidity comes from the stabilisation of the carboxylate ion (RCOO⁻) by delocalisation of the negative charge.\n\nApply: Write the equation for the reaction of ethanoic acid with Na₂CO₃. State the observations.\n\nAnalyze: Why are carboxylic acids stronger acids than alcohols despite both having an −OH group?\n\nEvaluate: Compare the acid strength of CH₃COOH vs CCl₃COOH. Explain the inductive effect of Cl on acidity.'
-      },
-      terms: []
-    },
+
+    // Summary
     {
       id: 'summary-carboxylic',
       type: 'summary',
       data: {
-        text: 'Carboxylic acids (R–COOH) are weak acids (pKa ~3–5) because the carboxylate anion is resonance-stabilised. They react with metals (Na) to produce H₂, and with bases (NaOH, Na₂CO₃, NaHCO₃) to form salts + H₂O (and CO₂ if carbonate used). Fischer esterification: R–COOH + R′–OH ⇌ ester + H₂O (acid catalyst, heat, reversible). LiAlH₄ reduces R–COOH → R–CH₂OH (primary alcohol); NaBH₄ does not reduce carboxylic acids. Esters are lower-boiling, pleasant-smelling carboxylic acid derivatives.'
+        text: 'Carboxylic acids (R–COOH) contain the carboxyl group (C=O + OH on same C). Weak acids (pKₐ ~3–5) — the carboxylate ion (RCOO⁻) is stabilised by charge delocalisation over both C–O bonds. Physical properties: highest BP of all series (H-bonding + PDPD + London forces); short-chain acids very soluble (form 2 H-bonds with water). Preparations: oxidation of 1° alcohol/aldehyde with K₂Cr₂O₇/H₂SO₄ under reflux; acidic nitrile hydrolysis (1 step) or alkaline (2 steps — carboxylate first, then add acid). Four key reactions: ① Reduction (LiAlH₄/dry ether → primary alcohol — cannot stop at aldehyde); ② Neutralisation (NaOH → RCOONa + H₂O); ③ Halogenation (PCl₅/anhydrous → acyl chloride + POCl₃ + HCl misty fumes); ④ Esterification (alcohol/conc. H₂SO₄/heat → ester + H₂O, reversible).'
       }
     }
   ],
@@ -171,41 +526,54 @@ export const note_chemistry_4_15_5 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'p-carboxylic-def',
-        prompt: 'Explain why carboxylic acids are weak acids, referring to resonance stabilisation.'
+        blockId: 'svg-carboxylate',
+        prompt: 'Why are carboxylic acids stronger acids than alcohols? Describe what happens to the negative charge when H⁺ is lost from RCOOH.'
       },
       {
         id: 'cue-2',
-        blockId: 'p-metal-base-reactions',
-        prompt: 'Write equations for carboxylic acid reactions with Na, NaOH, and Na₂CO₃.'
+        blockId: 'list-bp',
+        prompt: 'State the three types of IMF present in carboxylic acids and explain why they have higher boiling points than alcohols of the same molar mass.'
       },
       {
         id: 'cue-3',
-        blockId: 'equation-esterification',
-        prompt: 'Write the Fischer esterification equation and state the required conditions.'
+        blockId: 'table-nitrile',
+        prompt: 'Compare acidic and alkaline hydrolysis of a nitrile: how many steps each, and what are the products at each step?'
       },
       {
         id: 'cue-4',
-        blockId: 'p-reduction-intro',
-        prompt: 'Which reducing agent reduces carboxylic acids to primary alcohols: NaBH₄ or LiAlH₄? Explain.'
+        blockId: 'callout-reduction-warn',
+        prompt: 'What reagent and conditions reduce a carboxylic acid? Why can you not stop the reaction at the aldehyde stage?'
       },
       {
         id: 'cue-5',
-        blockId: 'p-esters-from-acids',
-        prompt: 'Give three physical properties that distinguish esters from carboxylic acids.'
+        blockId: 'list-halogenation',
+        prompt: 'Give the reagent, conditions, and ALL products when a carboxylic acid reacts with PCl₅. What observation confirms HCl is made?'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'table-four-reactions',
+        prompt: 'From memory, state the reagents and conditions for all four key reactions of carboxylic acids.'
       }
     ],
-    summaryText: 'Carboxylic acids (R–COOH, pKa ~3–5) are weak because the anion (R–COO⁻) is resonance-stabilised. React with Na → salt + H₂; with NaOH → salt + H₂O; with Na₂CO₃ → salt + H₂O + CO₂. Fischer esterification: R–COOH + R′–OH → ester + H₂O (H⁺ catalyst, heat, reversible). LiAlH₄ reduces R–COOH → R–CH₂OH (primary alcohol); NaBH₄ is too weak. Esters are derivatives with lower boiling points, pleasant odours, used as solvents and perfumes.',
+    summaryText: 'Carboxylic acids (R–COOH) are weak acids — carboxylate ion (RCOO⁻) is resonance-stabilised (charge over both C–O bonds). Highest BP of all series (3 IMFs); short-chain acids very soluble (2 H-bonds with water). Preparations: K₂Cr₂O₇/H₂SO₄ reflux from 1° alcohol/aldehyde; acidic nitrile hydrolysis (1 step) or alkaline (2 steps). Four reactions: ① LiAlH₄/dry ether → primary alcohol (cannot stop at aldehyde); ② NaOH → carboxylate salt + H₂O; ③ PCl₅/anhydrous → acyl chloride + POCl₃ + HCl (misty fumes); ④ alcohol/conc. H₂SO₄/heat → ester + H₂O (reversible).',
     ready: false
   },
   evidence: [
     {
       id: 'ev-1',
-      title: 'Aspirin synthesis via esterification',
-      detail: 'Aspirin is synthesised by Fischer esterification: salicylic acid (2-hydroxybenzoic acid) + acetic anhydride (or acetic acid) → acetylsalicylic acid (aspirin). This reaction is acid-catalysed and demonstrates the practical importance of esterification in pharmaceutical synthesis. Aspirin is one of the most widely used drugs globally, making esterification a fundamental industrial process.',
+      title: 'Esterification in industry — polyesters and flavourings',
+      detail: 'Esterification is used industrially to make polyesters (e.g. PET, used in plastic bottles and polyester clothing) and fruit/floral flavourings. Esters have pleasant odours (e.g. pentyl pentanoate gives a banana-like smell). The reversible nature of esterification is critical — industrial processes use excess alcohol or remove water to maximise yield.',
       year: '2023',
-      source: 'Pharmaceutical Chemistry & Organic Synthesis',
-      tags: ['esterification', 'carboxylic acids', 'pharmaceutical', 'synthesis']
+      source: 'Edexcel IAL Chemistry Unit 4 — Organic Chemistry',
+      tags: ['esterification', 'carboxylic acids', 'industrial chemistry', 'polyesters']
+    },
+    {
+      id: 'ev-2',
+      title: 'Nitrile hydrolysis in carbon chain extension',
+      detail: 'Hydrolysis of nitriles is a key method for increasing carbon chain length: treating a haloalkane with KCN (nucleophilic substitution adds 1 C as –CN), then hydrolyzing the nitrile gives a carboxylic acid with one more carbon than the original haloalkane. Used in pharmaceutical and agrochemical synthesis to build complex carbon frameworks.',
+      year: '2023',
+      source: 'Edexcel IAL Chemistry Unit 4 — Organic Synthesis',
+      tags: ['nitrile hydrolysis', 'carbon chain elongation', 'synthesis', 'pharmaceutical']
     }
   ]
 };
