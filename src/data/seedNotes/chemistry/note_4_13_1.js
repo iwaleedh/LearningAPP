@@ -57,6 +57,15 @@ export const note_chemistry_4_13_1 = {
       }
     },
     {
+      id: 'co-kp-notation',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Notation: Round Brackets for Kp — Exam Critical',
+        text: 'For Kp expressions, ALWAYS use round brackets ( ) with "p" to denote partial pressures: written as p(CO₂) or p(N₂). Do NOT use square brackets [ ] — those are for Kc. Examiners will withhold marks for incorrect brackets. This is one of the most penalised notation errors in IAL exams. Always re-read the question to confirm whether it asks for Kc or Kp.'
+      }
+    },
+    {
       id: 'p-kp-units',
       type: 'paragraph',
       data: {
@@ -70,6 +79,34 @@ export const note_chemistry_4_13_1 = {
         style: 'worked',
         title: 'Example: N₂ + 3H₂ ⇌ 2NH₃',
         text: 'Kp = p(NH₃)² / (p(N₂) × p(H₂)³). Here, Δn = 2 − (1 + 3) = −2, so Kp has units of atm⁻² or Pa⁻². If the partial pressures are p(N₂) = 1.67 atm, p(H₂) = 5.0 atm, p(NH₃) = 3.33 atm, then Kp = (3.33)² / (1.67 × (5.0)³) = 11.09 / 208.75 = 0.053 atm⁻².'
+      }
+    },
+    {
+      id: 'h-pcl5',
+      type: 'heading',
+      data: { text: 'Worked Example: PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)', level: 2 }
+    },
+    {
+      id: 'co-pcl5-rice',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '1 mol PCl₅, P = 6 atm; at equilibrium 0.60 mol Cl₂',
+        text: 'RICE table (include a "Total" column for Kp calculations):\n  PCl₅: 1.00 → −0.60 → 0.40\n  PCl₃:    0 → +0.60 → 0.60\n  Cl₂:     0 → +0.60 → 0.60\n  Total at equilibrium: 0.40 + 0.60 + 0.60 = 1.60 mol\n\nMole fractions:\n  χ(PCl₅) = 0.40/1.60 = 0.250\n  χ(PCl₃) = χ(Cl₂) = 0.60/1.60 = 0.375\n\nPartial pressures (× 6 atm):\n  p(PCl₅) = 0.250 × 6 = 1.50 atm\n  p(PCl₃) = p(Cl₂) = 0.375 × 6 = 2.25 atm\n\nKp expression: Kp = p(PCl₃) × p(Cl₂) / p(PCl₅)\n   = 2.25 × 2.25 / 1.50 = 3.38 atm\n\nUnits: atm × atm / atm = atm (Δn = +1 → units = atm¹)'
+      }
+    },
+    {
+      id: 'h-haber-kp',
+      type: 'heading',
+      data: { text: 'Worked Example: Haber Process (20% Reacted, P = 2 atm)', level: 2 }
+    },
+    {
+      id: 'co-haber-kp',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'N₂ + 3H₂ ⇌ 2NH₃: 1 mol N₂, 3 mol H₂, 20% of N₂ reacts',
+        text: 'Change in N₂ = 20% × 1.00 = 0.20 mol\n\nRICE table:\n  N₂: 1.00 → −0.20 → 0.80\n  H₂: 3.00 → −3×0.20 = −0.60 → 2.40\n  NH₃:   0 → +2×0.20 = +0.40 → 0.40\n  Total: 0.80 + 2.40 + 0.40 = 3.60 mol\n\nMole fractions:\n  χ(N₂)  = 0.80/3.60 = 0.222\n  χ(H₂)  = 2.40/3.60 = 0.667\n  χ(NH₃) = 0.40/3.60 = 0.111\n\nPartial pressures (× 2 atm):\n  p(N₂)  = 0.444 atm;  p(H₂) = 1.333 atm;  p(NH₃) = 0.222 atm\n\nKp = p(NH₃)² / (p(N₂) × p(H₂)³)\n   = (0.222)² / (0.444 × (1.333)³)\n   = 0.0493 / (0.444 × 2.370) = 0.0493 / 1.052 = 0.0469 atm⁻²\n\nUnits: atm² / (atm × atm³) = atm⁻²'
       }
     },
     {
@@ -108,6 +145,15 @@ export const note_chemistry_4_13_1 = {
         style: 'tip',
         title: 'When to Use Kp',
         text: 'Kp is particularly useful for gas-phase equilibria because pressures are easily measured and equilibrium positions can be predicted by manipulating the total pressure. Kp also avoids complications from volume changes at constant T.'
+      }
+    },
+    {
+      id: 'co-kp-total-moles-tip',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'RICE Table for Kp: Always Include a Total Moles Column',
+        text: 'When working with Kp, add a fifth "Total" column to your RICE table. After completing the Equilibrium row, sum all equilibrium moles to get n_total. This is the denominator in all your mole fractions (χ = n_i / n_total). Forgetting to add the total moles column is a common source of errors in multi-step Kp questions.'
       }
     },
     {

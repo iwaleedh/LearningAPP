@@ -20,6 +20,24 @@ export const note_chemistry_4_13_0 = {
       }
     },
     {
+      id: 'co-notation-kc',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Notation: Square Brackets are Mandatory',
+        text: 'In Kc expressions, ALWAYS use square brackets [ ] to denote concentrations. The subscript "c" stands for concentration. You may occasionally see [...]eq to emphasise equilibrium concentrations, but this is not required in exams — it is implied. Round brackets ( ) are reserved for Kp. Examiners will not award notation marks if you use round brackets in a Kc expression.'
+      }
+    },
+    {
+      id: 'co-kc-vs-position',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Kc ≠ Equilibrium Position — Critical Distinction',
+        text: 'Kc is constant at a given temperature — it does NOT change when you alter concentration, pressure, or add a catalyst. Those factors shift the position of equilibrium (the ratio of products to reactants moves), but once the system re-equilibrates the ratio returns to the same Kc value. Only a change in temperature changes Kc itself. This distinction is frequently tested: the position of equilibrium can change while Kc remains constant.'
+      }
+    },
+    {
       id: 'eq-kc-general',
       type: 'equation',
       data: {
@@ -92,6 +110,15 @@ export const note_chemistry_4_13_0 = {
         style: 'worked',
         title: 'Example: C(s) + H₂O(g) ⇌ CO(g) + H₂(g)',
         text: 'Kc = ([CO][H₂]) / [H₂O]. Solid carbon is omitted. Water vapour (a gas) is included. Δn = 2 − 1 = 1, so Kc has units of mol dm⁻³.'
+      }
+    },
+    {
+      id: 'ex-hetero-mg',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Past Paper MCQ: Mg(OH)₂(s) ⇌ Mg²⁺(aq) + 2OH⁻(aq)',
+        text: 'Mg(OH)₂ is a pure solid — it is omitted from Kc. The coefficient of 2 on OH⁻ means it appears squared. Mg²⁺ and OH⁻ are aqueous solutes and are included.\n\nKc = [Mg²⁺(aq)] × [OH⁻(aq)]²\n\nCommon exam errors: (1) forgetting to square [OH⁻]; (2) including the solid. Always check state symbols — (s) and pure (l) are omitted; (g) and (aq) are included.'
       }
     },
     {

@@ -27,6 +27,15 @@ export const note_chemistry_4_13_2 = {
       }
     },
     {
+      id: 'co-rice-methods',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'RICE Table — Three Approaches to Know',
+        text: 'The ICE table is also called the RICE table (Reaction, Initial, Change, Equilibrium) in IAL specifications.\n\nApproach 1 — Moles given, volume unknown:\nSet up the table in moles. Divide by volume V when converting to concentrations. If V is not given, write it as the letter V — it will cancel algebraically in the Kc expression (works when Δn = 0, or when top and bottom have equal powers so V cancels).\n\nApproach 2 — Moles given, volume given:\nDivide each equilibrium mole value by the volume to get concentrations, then substitute into Kc.\n\nApproach 3 — % reacted given:\nIf told "X% of species A reacted", calculate the change as (X/100) × initial moles of A. Use stoichiometric ratios for all other species.\n\nApproach 4 — Concentrations given directly:\nIf the question provides initial concentrations (not moles), use them directly in the RICE table. If two solutions are mixed, dilute each concentration before setting up the table: c_new = c_original × (V_original / V_total).'
+      }
+    },
+    {
       id: 'h-example-1',
       type: 'heading',
       data: { text: 'Worked Example 1: Gas-Phase Equilibrium (N₂ + 3H₂ ⇌ 2NH₃)', level: 2 }
@@ -68,6 +77,34 @@ export const note_chemistry_4_13_2 = {
       }
     },
     {
+      id: 'h-example-n2o4',
+      type: 'heading',
+      data: { text: 'Worked Example: N₂O₄(g) ⇌ 2NO₂(g) — Coefficient in RICE Table', level: 2 }
+    },
+    {
+      id: 'co-n2o4-rice',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '0.1 mol N₂O₄ in 0.1 dm³ flask; equilibrium moles of N₂O₄ = 0.071',
+        text: 'The coefficient of 2 for NO₂ means its change is TWICE the change in N₂O₄.\n\nRICE table (moles):\n  N₂O₄: 0.100 → −0.029 → 0.071\n  NO₂:      0 → +2×0.029 = +0.058 → 0.058\n\nConcentrations (÷ 0.1 dm³):\n  [N₂O₄] = 0.071 / 0.1 = 0.71 mol dm⁻³\n  [NO₂]  = 0.058 / 0.1 = 0.58 mol dm⁻³\n\nKc = [NO₂]² / [N₂O₄] = (0.58)² / 0.71 = 0.336 / 0.71 = 0.474 mol dm⁻³\n\nUnits: (mol dm⁻³)² / (mol dm⁻³) = mol dm⁻³ (Δn = 2−1 = +1)'
+      }
+    },
+    {
+      id: 'h-example-haber-pct',
+      type: 'heading',
+      data: { text: 'Worked Example: % Reacted — N₂ + 3H₂ ⇌ 2NH₃', level: 2 }
+    },
+    {
+      id: 'co-haber-pct',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '1.5 mol N₂, 4.0 mol H₂ in 1.5 dm³; 30% of N₂ reacts',
+        text: 'Change in N₂ = 30% × 1.5 = 0.45 mol\n\nRICE table (moles):\n  N₂: 1.50 → −0.45 → 1.05\n  H₂: 4.00 → −3×0.45 = −1.35 → 2.65\n  NH₃:   0 → +2×0.45 = +0.90 → 0.90\n\nConcentrations (÷ 1.5 dm³):\n  [N₂]  = 1.05/1.5 = 0.700 mol dm⁻³\n  [H₂]  = 2.65/1.5 = 1.767 mol dm⁻³\n  [NH₃] = 0.90/1.5 = 0.600 mol dm⁻³\n\nKc = [NH₃]² / ([N₂][H₂]³)\n   = (0.600)² / (0.700 × (1.767)³)\n   = 0.360 / (0.700 × 5.514) = 0.360 / 3.860 = 0.0933 mol⁻² dm⁶\n\nUnits: (mol dm⁻³)² / ((mol dm⁻³) × (mol dm⁻³)³) = mol⁻² dm⁶'
+      }
+    },
+    {
       id: 'h-example-2',
       type: 'heading',
       data: { text: 'Worked Example 2: Esterification (CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O)', level: 2 }
@@ -106,6 +143,50 @@ export const note_chemistry_4_13_2 = {
         style: 'worked',
         title: 'Calculate Kc',
         text: 'Kc = [CH₃COOC₂H₅] / ([CH₃COOH][C₂H₅OH]) = 0.20 / (0.30 × 0.30) = 0.20 / 0.09 = 2.2 (dimensionless, since Δn = 0). This indicates a moderate forward reaction; the equilibrium mixture contains a significant amount of ester.'
+      }
+    },
+    {
+      id: 'h-example-moles-v',
+      type: 'heading',
+      data: { text: 'Worked Example: Moles Given, Volume Unknown — V Cancels', level: 2 }
+    },
+    {
+      id: 'co-ester-moles',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '2 mol CH₃COOH + 2 mol C₂H₅OH in sealed flask; 0.67 mol CH₃COOH at equilibrium',
+        text: 'Volume V is not given — use V as a symbol; it will cancel.\n\nRICE table (moles, 1:1:1:1 ratios):\n  CH₃COOH:    2.00 → −1.33 → 0.67\n  C₂H₅OH:    2.00 → −1.33 → 0.67\n  CH₃COOC₂H₅: 0   → +1.33 → 1.33\n  H₂O:         0   → +1.33 → 1.33\n\nConcentrations (÷ V):\n  [CH₃COOH] = [C₂H₅OH] = 0.67/V\n  [CH₃COOC₂H₅] = [H₂O] = 1.33/V\n\nKc = (1.33/V)(1.33/V) / ((0.67/V)(0.67/V)) = (1.33)² / (0.67)² = 1.769 / 0.449 = 3.94\n\nV cancels completely because Δn = 0. Kc is dimensionless (no units).'
+      }
+    },
+    {
+      id: 'h-example-cyano',
+      type: 'heading',
+      data: { text: 'Worked Example: Concentrations Given Directly (After Mixing)', level: 2 }
+    },
+    {
+      id: 'p-mixing-dilution',
+      type: 'paragraph',
+      data: {
+        text: 'When two solutions of known concentration are mixed, the total volume increases and each solution is diluted. Calculate diluted concentrations first: c_new = c_original × (V_original / V_total). Then use these diluted values as your RICE table initial concentrations.'
+      }
+    },
+    {
+      id: 'co-cyanohydrin',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Propanone + HCN ⇌ Cyanohydrin; 4-mark question',
+        text: '100 cm³ of 0.10 mol dm⁻³ propanone + 100 cm³ of 0.20 mol dm⁻³ HCN; V_total = 200 cm³\n\nDiluted initial concentrations:\n  [Propanone] = 0.10 × (100/200) = 0.050 mol dm⁻³\n  [HCN]       = 0.20 × (100/200) = 0.100 mol dm⁻³\n\nAt equilibrium: [cyanohydrin] = 0.034 mol dm⁻³\n\nRICE table (mol dm⁻³, all 1:1:1 ratios):\n  Propanone:   0.050 → −0.034 → 0.016\n  HCN:         0.100 → −0.034 → 0.066\n  Cyanohydrin: 0     → +0.034 → 0.034\n\nKc  = [cyanohydrin] / ([propanone][HCN])\n    = 0.034 / (0.016 × 0.066) = 0.034 / 0.001056 = 32 dm³ mol⁻¹\n\nUnits: mol dm⁻³ / (mol dm⁻³)² = dm³ mol⁻¹ (write positive power first: dm³ mol⁻¹).'
+      }
+    },
+    {
+      id: 'co-mark-scheme-5',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'How Kc / Kp Questions Are Marked (5-mark Questions)',
+        text: 'A typical 5-mark Kp or Kc calculation question awards marks as follows:\n• 1 mark: Correct Kc/Kp expression written out\n• 1 mark: Equilibrium moles/concentrations for all species (RICE table)\n• 1 mark: Partial pressures or concentrations correctly calculated\n• 1 mark: Numerical answer to the correct significant figures\n• 1 mark: Correct units\n\nAlways show your RICE table. Intermediate working earns marks even if your final answer is wrong (error carried forward). Never omit units — an answer without units loses that mark.'
       }
     },
     {
