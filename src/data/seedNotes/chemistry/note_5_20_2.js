@@ -4,7 +4,7 @@ export const note_chemistry_5_20_2 = {
       id: 'obj-chain-extension',
       type: 'objective',
       data: {
-        text: 'Extend and modify carbon chains using nitrile synthesis, Grignard reagents, and oxidation; plan multi-step synthetic routes to increase or decrease chain length.'
+        text: 'Extend and modify carbon chains using nitrile synthesis (+1 carbon) and Grignard reagents (any number of carbons); plan multi-step synthetic routes including Grignard formation and reactions with CO₂, aldehydes, ketones, and methanal; compare nitrile vs Grignard routes'
       }
     },
     {
@@ -169,12 +169,130 @@ export const note_chemistry_5_20_2 = {
       }
     },
     {
-      id: 'callout-grignard-mention',
+      id: 'h-grignard-reagents',
+      type: 'heading',
+      data: { text: 'Grignard Reagents — Organometallic Chain Extension', level: 2 }
+    },
+    {
+      id: 'p-grignard-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Grignard reagents are organometallic compounds in which a carbon atom is directly bonded to magnesium (C−Mg bond). They are powerful carbon nucleophiles and are used to form C−C bonds, extending the carbon chain by any number of carbons (unlike nitrile synthesis which adds exactly +1). Grignard reagents are denoted RMgX (where X = Cl, Br, or I).'
+      }
+    },
+    {
+      id: 'list-grignard-formation',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'Formed by reacting a haloalkane (usually bromoalkane, RBr) with magnesium metal in DRY ETHER under reflux' },
+          { text: 'Reaction: RBr + Mg → RMgBr (Grignard reagent)' },
+          { text: 'Dry ether is essential as the solvent — Grignard reagents react violently with water (and any protic solvent)' },
+          { text: 'The Mg−C bond in RMgBr is COVALENT (unusual — we don\'t usually think of metals forming covalent bonds with carbon)' },
+          { text: 'The δ− charge on C makes it an excellent nucleophile — it attacks electron-deficient carbonyl carbons (C=O)' }
+        ]
+      }
+    },
+    {
+      id: 'eq-grignard-formation',
+      type: 'equation',
+      data: {
+        html: 'RBr + Mg <span style="color: var(--color-text-secondary);">(dry ether, reflux)</span> → R−MgBr<br /><br />Example: CH₃CH₂Br + Mg → CH₃CH₂MgBr (ethylmagnesium bromide)',
+        caption: 'Formation of a Grignard reagent from a bromoalkane and magnesium in dry ether'
+      }
+    },
+    {
+      id: 'h-grignard-reactions',
+      type: 'heading',
+      data: { text: 'Reactions of Grignard Reagents', level: 3 }
+    },
+    {
+      id: 'list-grignard-steps',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'ALL Grignard reactions follow the SAME two-step process:' },
+          { text: 'Step 1: React the Grignard reagent with the carbonyl compound (or CO₂). The Grignard C⁻ attacks the electron-deficient C=O → forms C−C bond → product has MgBr attached to O' },
+          { text: 'Step 2: Add DILUTE ACID (or water) to protonate the oxygen → removes MgBr as Mg(OH)Br → releases the final organic product (alcohol or acid)' },
+          { text: 'The dilute acid workup step is always required to "liberate" the product from the magnesium salt' }
+        ]
+      }
+    },
+    {
+      id: 'table-grignard-products',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Grignard reactions: reagent + carbonyl compound → product after acid hydrolysis',
+        headers: ['Grignard + ...', 'Product (after dilute acid)', 'Alcohol type', 'Chain change'],
+        rows: [
+          ['CO₂ (carbon dioxide)', 'Carboxylic acid (R−COOH)', '— (acid, not alcohol)', '+1 carbon'],
+          ['Methanal (HCHO)', 'Primary alcohol (R−CH₂OH)', 'Primary', '+1 carbon'],
+          ['Aldehyde (R\'CHO)', 'Secondary alcohol (R−CHOH−R\')', 'Secondary', '+n carbons (from R\')'],
+          ['Ketone (R\'COR\'\')', 'Tertiary alcohol (R−CR\'R\'\'−OH)', 'Tertiary', '+n carbons']
+        ]
+      }
+    },
+    {
+      id: 'callout-grignard-worked-acid',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Grignard Reaction 1: Making a Carboxylic Acid (via CO₂)',
+        text: 'Starting Grignard: CH₃MgBr (methylmagnesium bromide)\n\nStep 1 — React with CO₂:\nCH₃MgBr + CO₂ → CH₃−COO⁻MgBr⁺ (magnesium salt of ethanoate, no product collected yet)\n\nStep 2 — Add dilute acid (H₂SO₄ aq or HCl aq) to protonate:\nCH₃−COO⁻MgBr⁺ + H⁺ → CH₃COOH + MgBr⁺ (ethanoic acid)\n\nResult: +1 carbon. CH₃Br (C1) → CH₃MgBr → CH₃COOH (C2 carboxylic acid)'
+      }
+    },
+    {
+      id: 'callout-grignard-worked-alcohols',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Grignard Reactions 2–4: Making Alcohols',
+        text: 'Using ethylmagnesium bromide (CH₃CH₂MgBr, chain length C2) as the Grignard:\n\nWith HCHO (methanal) → PRIMARY alcohol:\nCH₃CH₂MgBr + HCHO → [CH₃CH₂CH₂O⁻MgBr⁺] → + H⁺ → CH₃CH₂CH₂OH (propan-1-ol, C3)\nChain: C2 + C1 from HCHO → C3 primary alcohol\n\nWith CH₃CHO (ethanal) → SECONDARY alcohol:\nCH₃CH₂MgBr + CH₃CHO → [product-O⁻MgBr⁺] → + H⁺ → CH₃CH(OH)CH₂CH₃ (butan-2-ol, C4)\nChain: C2 (Grignard) + C2 (ethanal) → C4 secondary alcohol\n\nWith CH₃COCH₃ (propanone) → TERTIARY alcohol:\nCH₃CH₂MgBr + CH₃COCH₃ → + H⁺ → (CH₃)₂C(OH)CH₂CH₃ (2-methylbutan-2-ol, C5)\nChain: C2 (Grignard) + C3 (propanone) → C5 tertiary alcohol\n\nKey rule: the type of alcohol formed is determined by the carbonyl compound used — not the Grignard reagent.'
+      }
+    },
+    {
+      id: 'callout-grignard-vs-cyanide',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Why Grignard Reagents are Preferred Over KCN/HCN',
+        text: 'HCN and KCN are EXTREMELY TOXIC (lethal in small quantities, act as enzyme inhibitors). Grignard reagents avoid this risk.\n\nAdditionally: KCN only ever adds +1 carbon (−C≡N). Grignard reagents can add ANY number of carbons depending on the choice of R group in RMgBr. This gives a MUCH WIDER RANGE of products from a single strategy.\n\nOne limitation: Grignard reagents require strictly anhydrous (water-free) conditions — dry ether, dry glassware, inert atmosphere — which makes them more technically demanding than nitrile synthesis.'
+      }
+    },
+    {
+      id: 'h-methanol-to-ethanol',
+      type: 'heading',
+      data: { text: 'Worked Example: Methanol → Ethanol (4-Step Route)', level: 2 }
+    },
+    {
+      id: 'p-methanol-ethanol-intro',
+      type: 'paragraph',
+      data: {
+        text: 'This canonical 4-step synthesis demonstrates chain extension via nitrile. The chain increases from C1 (methanol) to C2 (ethanol). Grignard reagents cannot be used here because the increase is only +1 carbon — the nitrile route is simpler and more appropriate.'
+      }
+    },
+    {
+      id: 'list-methanol-ethanol-steps',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          { text: 'CH₃OH + PCl₅ (dry, room temperature) → CH₃Cl + POCl₃ + HCl | Convert alcohol to haloalkane so it can undergo SN2 with KCN' },
+          { text: 'CH₃Cl + KCN (ethanol solvent, reflux) → CH₃CN + KCl | Nitrile formed — chain now has 2 carbons' },
+          { text: 'CH₃CN + HCl(aq) [or H₂SO₄(aq)], reflux → CH₃COOH + NH₃ | Nitrile hydrolysis to carboxylic acid' },
+          { text: 'CH₃COOH + LiAlH₄ (dry ether, room temperature) → C₂H₅OH | Reduction of carboxylic acid to primary alcohol' }
+        ]
+      }
+    },
+    {
+      id: 'callout-methanol-ethanol-key',
       type: 'callout',
       data: {
         style: 'tip',
-        title: 'Grignard Reagents (Beyond Core A-Level)',
-        text: 'Grignard reagents (RMgX) are powerful carbon nucleophiles used for C−C bond formation. They attack C=O (ketones/aldehydes → secondary/tertiary alcohols, CO₂ → carboxylic acids) and can be used for chain extension. Not required at A-level but briefly mentioned in advanced synthesis contexts. Reactions require anhydrous conditions and dry ether solvent due to reactivity with water and oxygen.'
+        title: 'Key Decision Point in Chain Extension',
+        text: 'When the chain needs to increase by ONE carbon only → use the nitrile route (RBr + KCN → nitrile → acid or amine).\n\nWhen the chain needs to increase by MORE than one carbon → use a Grignard reagent (RMgBr + appropriate carbonyl → alcohol or acid).\n\nAlways check: can you lengthen the chain without an alcohol? You CANNOT do KCN on an alcohol directly — you MUST convert it to a haloalkane first (e.g. with PCl₅).'
       }
     },
     {
@@ -184,10 +302,17 @@ export const note_chemistry_5_20_2 = {
         items: [
           { text: 'I can write the SN2 mechanism for RBr + KCN → RCN', checked: false },
           { text: 'I know nitriles add +1 carbon to a chain', checked: false },
-          { text: 'I can reduce a nitrile to primary amine using LiAlH₄', checked: false },
-          { text: 'I can hydrolyse a nitrile to carboxylic acid under acid conditions', checked: false },
+          { text: 'I can reduce a nitrile to primary amine using LiAlH₄ in dry ether', checked: false },
+          { text: 'I can hydrolyse a nitrile to carboxylic acid under acid conditions (reflux)', checked: false },
           { text: 'I know KMnO₄ oxidises aromatic side chains to carboxylic acids', checked: false },
-          { text: 'I can plan a retrosynthetic route for a 2–3 step synthesis', checked: false }
+          { text: 'I can form a Grignard reagent: RBr + Mg (dry ether, reflux) → RMgBr', checked: false },
+          { text: 'Grignard + CO₂ + dilute acid → carboxylic acid', checked: false },
+          { text: 'Grignard + HCHO + dilute acid → primary alcohol', checked: false },
+          { text: 'Grignard + aldehyde + dilute acid → secondary alcohol', checked: false },
+          { text: 'Grignard + ketone + dilute acid → tertiary alcohol', checked: false },
+          { text: 'Grignard preferred over HCN/KCN: safer + wider range of products', checked: false },
+          { text: 'Methanol → ethanol: 4-step via PCl₅ → KCN (nitrile) → acid hydrolysis → LiAlH₄', checked: false },
+          { text: 'I can plan a retrosynthetic route for a 2–4 step synthesis', checked: false }
         ]
       }
     },
@@ -213,43 +338,23 @@ export const note_chemistry_5_20_2 = {
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-nitrile-intro',
-        prompt: 'Write the equation for forming a nitrile from a primary alkyl bromide using KCN. Why is ethanol preferred as solvent?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'eq-nitrile-amine',
-        prompt: 'What is the reducing agent for converting nitriles to primary amines? Write the equation.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'eq-nitrile-acid',
-        prompt: 'How is a nitrile hydrolysed to a carboxylic acid? What are the reagents and conditions?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'eq-arene-oxidation',
-        prompt: 'What happens when an alkyl-substituted benzene is treated with hot KMnO₄ under alkaline conditions?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-retrosynthesis-intro',
-        prompt: 'Explain retrosynthetic analysis: how do you work backwards from a target molecule to plan a synthesis?'
-      }
+      { id: 'cue-1', blockId: 'p-nitrile-intro', prompt: 'Write the equation for forming a nitrile from a primary alkyl bromide using KCN. Why is ethanol preferred as solvent?' },
+      { id: 'cue-2', blockId: 'eq-nitrile-acid', prompt: 'How is a nitrile hydrolysed to a carboxylic acid? What are the reagents and conditions?' },
+      { id: 'cue-3', blockId: 'eq-grignard-formation', prompt: 'How is a Grignard reagent formed? Write the equation and state the conditions required.' },
+      { id: 'cue-4', blockId: 'table-grignard-products', prompt: 'What product forms when a Grignard reagent reacts with (a) CO₂, (b) methanal (HCHO), (c) an aldehyde, (d) a ketone — in each case after adding dilute acid?' },
+      { id: 'cue-5', blockId: 'list-methanol-ethanol-steps', prompt: 'Outline the 4-step synthesis of ethanol from methanol, including reagents and conditions for each step.' }
     ],
-    summaryText: 'Nitriles add +1 carbon: RBr + KCN/EtOH → RCN. Reduce with LiAlH₄ to primary amine (RCH₂NH₂) or hydrolyse with H⁺/H₂O to carboxylic acid (RCOOH). Aromatic chains: KMnO₄/NaOH oxidises side chains to carboxylic acids. Retrosynthetic analysis: work backwards from target to starting materials.',
+    summaryText: 'Nitriles add +1 carbon: RBr + KCN/EtOH → RCN. Reduce with LiAlH₄ (dry ether) to primary amine or hydrolyse with H⁺/H₂O (reflux) to carboxylic acid. Grignard reagents: RBr + Mg (dry ether) → RMgBr. React with CO₂ → RCOOH; HCHO → primary alcohol; RCHO → secondary alcohol; ketone → tertiary alcohol. Always add dilute acid to liberate product. Preferred over HCN (safer, more versatile). Methanol→ethanol: PCl₅ → KCN → acid hydrolysis → LiAlH₄.',
     ready: false
   },
   evidence: [
     {
       id: 'ev-1',
       title: 'Carbon Chain Extension in Organic Synthesis',
-      detail: 'Nitrile synthesis is a fundamental method for C−C bond formation at A-level. Grignard reagents are mentioned in advanced synthesis but not required for core specification.',
+      detail: 'Nitrile synthesis (+1 carbon via KCN/SN2 then hydrolysis or reduction) and Grignard reagents (RMgBr, any chain extension via C−C bond formation) are both core WCH15 specification content.',
       year: '2023',
       source: 'A-Level Chemistry Specification (WCH15)',
-      tags: ['synthesis', 'nitrile', 'chain', 'oxidation']
+      tags: ['synthesis', 'nitrile', 'grignard', 'chain', 'oxidation']
     }
   ]
 };

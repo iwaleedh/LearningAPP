@@ -4,7 +4,7 @@ export const note_chemistry_5_20_0 = {
       id: 'obj-formula-deduction',
       type: 'objective',
       data: {
-        text: 'Deduce molecular formulas from combustion analysis data and mass spectrometry; calculate degree of unsaturation to determine structural features.'
+        text: 'Deduce empirical and molecular formulas from combustion analysis and mass spectrometry data; calculate degree of unsaturation to determine structural features; identify functional groups using systematic chemical test-tube tests'
       }
     },
     {
@@ -136,6 +136,48 @@ export const note_chemistry_5_20_0 = {
         style: 'key',
         title: 'Complete Formula Deduction Workflow',
         text: '1. Combustion analysis → mass of products → moles of C, H, O\n2. Find mole ratios and divide by smallest → empirical formula\n3. Calculate Mr of empirical formula\n4. Mass spectrometry → molar mass (M⁺ peak)\n5. n = M ÷ Mr → whole-number multiplier\n6. Molecular formula = empirical formula × n\n7. Calculate DoU from molecular formula\n8. Structure suggestion: DoU indicates unsaturation type'
+      }
+    },
+    {
+      id: 'h-functional-group-tests',
+      type: 'heading',
+      data: { text: 'Identifying Functional Groups by Chemical Tests', level: 2 }
+    },
+    {
+      id: 'p-fg-tests-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Before applying spectroscopy, small-scale test-tube reactions can identify functional groups present in an unknown compound. These tests are used alongside formula deduction to piece together the full structural formula. Each test has a specific positive observation (reagent, result).'
+      }
+    },
+    {
+      id: 'table-functional-group-tests',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Summary of functional group test-tube tests (Topics 4–5, 10, 15, 18–19)',
+        headers: ['Functional group', 'Reagent(s)', 'Positive observation'],
+        rows: [
+          ['Alkene (C=C)', 'Bromine water (Br₂ aq)', 'Rapid decolourisation of orange/brown bromine water'],
+          ['Haloalkane (C−X)', 'AgNO₃ (aq), warm; after adding ethanol', 'White ppt (Cl), cream ppt (Br), pale yellow ppt (I)'],
+          ['Alcohol (−OH)', 'PCl₅ (solid, dry)', 'Steamy white fumes of HCl produced'],
+          ['Primary/secondary alcohol', 'Acidified K₂Cr₂O₇ (warm)', 'Orange solution turns GREEN (Cr³⁺ forms)'],
+          ['Tertiary alcohol (control)', 'Acidified K₂Cr₂O₇ (warm)', 'No colour change (orange remains — no oxidation)'],
+          ['Carbonyl (C=O) — aldehyde or ketone', '2,4-DNPH (Brady\'s reagent)', 'Orange/yellow precipitate forms'],
+          ['Aldehyde (R−CHO)', 'Tollens\' reagent (ammoniacal AgNO₃, warm)', 'Silver mirror forms on inner glass surface'],
+          ['Aldehyde (R−CHO)', 'Fehling\'s / Benedict\'s solution (warm)', 'Blue→brick red precipitate (Cu₂O)'],
+          ['Carboxylic acid (−COOH)', 'Na₂CO₃ (aq) or NaHCO₃', 'Effervescence (CO₂ gas produced)'],
+          ['Phenol (−OH on aromatic ring)', 'Bromine water (Br₂ aq)', 'Decolourisation AND white precipitate (tribromophenol)'],
+          ['Amide (−CONH−)', 'Warm with NaOH; test gas with damp litmus', 'NH₃ gas produced → blue litmus turns red']
+        ]
+      }
+    },
+    {
+      id: 'callout-fg-test-strategy',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Systematic Strategy for Functional Group Testing',
+        text: '1. Test with Br₂(aq): decolourises → C=C (alkene) or phenol; white ppt → phenol (not just alkene)\n2. Test with 2,4-DNPH: orange ppt → carbonyl (aldehyde or ketone)\n3. If carbonyl present, test with Tollens\' reagent: silver mirror → ALDEHYDE; no mirror → KETONE\n4. Test with Na₂CO₃: effervescence → COOH present\n5. Test with K₂Cr₂O₇/H₂SO₄: orange→green → primary or secondary alcohol (not tertiary)\n6. Test with AgNO₃ (after ethanol): coloured ppt → haloalkane\n\nCombine all test results to build up the structural picture alongside the molecular formula.'
       }
     },
     {

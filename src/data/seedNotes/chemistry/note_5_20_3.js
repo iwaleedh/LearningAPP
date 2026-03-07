@@ -4,7 +4,7 @@ export const note_chemistry_5_20_3 = {
       id: 'obj-multistep-synthesis',
       type: 'objective',
       data: {
-        text: 'Plan and execute multi-step syntheses converting between functional groups; apply retrosynthetic analysis; consider atom economy and reaction conditions.'
+        text: 'Plan multi-step organic syntheses using the synthesis decision strategy (chain-length first, then functional group); apply retrosynthetic analysis; predict chemical properties from functional groups; solve PPQ-style synthesis problems (benzene→amide, nitrile chain extension, elimination-addition); evaluate atom economy and reaction conditions.'
       }
     },
     {
@@ -40,6 +40,43 @@ export const note_chemistry_5_20_3 = {
       }
     },
     {
+      id: 'h-synthesis-decision',
+      type: 'heading',
+      data: { text: 'How to Approach a Synthesis Question', level: 2 }
+    },
+    {
+      id: 'p-synthesis-decision-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Synthesis exam questions ask you to convert a starting material into a target molecule. Begin by asking two key questions: (1) has the carbon chain length changed, and (2) has the functional group changed? Your answers determine the entire strategy.'
+      }
+    },
+    {
+      id: 'list-synthesis-decision-steps',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Has the carbon chain length changed? YES → how many carbons needed?',
+          '+1 carbon: use nitrile route — convert to haloalkane (PCl₅), then KCN/ethanol/reflux → R−CN (nitrile adds one C)',
+          '+more than 1 carbon: use Grignard route — RMgX + carbonyl → attack C=O → add H⁺/acid → alcohol product',
+          'NO chain change: use functional group interconversion table (e.g. alcohol → ester, halide → amine)',
+          'Can you work forward from the start, or backwards from the target (retrosynthesis)? Use whichever is clearer',
+          'A-level synthesis is limited to a maximum of 4 steps — if your route is longer, look for shortcuts',
+          'Write all reagents AND conditions for every arrow in the synthesis'
+        ]
+      }
+    },
+    {
+      id: 'callout-4-step-limit',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '4-Step Limit & Route Selection',
+        text: '+1 carbon needed → nitrile route:\n  R−OH → PCl₅ → R−Cl → KCN/ethanol/reflux → R−CH₂CN → H⁺ or OH⁻/H₂O/reflux → R−CH₂COOH\n\n+many carbons needed → Grignard route:\n  Choose RMgBr where R matches the extra carbons needed\n  Add to appropriate carbonyl (CO₂ → acid; HCHO → 1° alcohol; RCHO → 2° alcohol; ketone → 3° alcohol)\n\nCannot add KCN directly to an alcohol — must convert to haloalkane first.\nAt A-level: maximum 4 steps in a synthesis route.'
+      }
+    },
+    {
       id: 'h-multistep-planning',
       type: 'heading',
       data: { text: 'Multi-Step Synthesis Planning', level: 2 }
@@ -65,6 +102,81 @@ export const note_chemistry_5_20_3 = {
         style: 'worked',
         title: '3-Step Synthesis: Ethanol to Ethyl Ethanoate',
         text: 'Target: CH₃−CO−O−CH₂CH₃ (ethyl ethanoate, ester)\nStart: CH₃CH₂OH (ethanol)\n\nRetrosynthesis:\nEthyl ethanoate ← ethanoic anhydride + ethanol (Fischer esterification or anhydride route)\nEthanoic anhydride ← acetyl chloride (available) or acetic acid\nAlternative: ethyl ethanoate ← ethanoic acid + ethanol (Fischer esterification)\n\nForward Synthesis (Route 1: via carboxylic acid):\nStep 1: CH₃CH₂OH + K₂Cr₂O₇/H₂SO₄ (reflux) → CH₃CHO (acetaldehyde)\nStep 2: CH₃CHO + K₂Cr₂O₇/H₂SO₄ (aqueous, reflux) → CH₃COOH (ethanoic acid)\nStep 3: CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O (H₂SO₄ catalyst, heat, reflux)\n\nAlternative (Route 2: direct esterification if available):\nStep 1: CH₃CH₂OH + K₂Cr₂O₇/H₂SO₄ (reflux) → CH₃COOH (oxidise to acid, then use)\nStep 2: CH₃COOH + CH₃CH₂OH → CH₃COOCH₂CH₃ (Fischer esterification as above)\n\nNote: Ethanoic anhydride (if available) is faster: CH₃COOC(=O)CH₃ + CH₃CH₂OH → ester + acetic acid (1 step, no catalyst needed, room temperature possible)'
+      }
+    },
+    {
+      id: 'h-benzene-to-amide',
+      type: 'heading',
+      data: { text: 'Worked Example: Benzene → Amide (3 Steps)', level: 2 }
+    },
+    {
+      id: 'callout-benzene-amide-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Benzene → Amide via Nitrobenzene and Phenylamine',
+        text: 'Target: amide (from benzene ring)\nStart: benzene (C₆H₆)\n\nStep 1: Benzene → Nitrobenzene (nitration)\nReagents: conc. HNO₃ + conc. H₂SO₄\nConditions: reflux below 55°C (higher temperature gives dinitration)\nProduct: C₆H₅NO₂ (nitrobenzene, yellow liquid)\n\nStep 2: Nitrobenzene → Phenylamine (reduction)\nReagents: (i) Sn + conc. HCl, reflux; then (ii) excess NaOH\nProduct: C₆H₅NH₂ (phenylamine/aniline)\nNote: Sn/HCl reduces −NO₂ → −NH₃⁺ first; NaOH deprotonates to free amine\n\nStep 3: Phenylamine → Amide (acylation)\nReagents: acyl chloride (e.g. ethanoyl chloride CH₃COCl)\nConditions: room temperature (highly exothermic; no heating needed)\nProduct: C₆H₅NHCOCH₃ (N-phenylethanamide / acetanilide)\n\nChain length: unchanged throughout — only functional group conversions\nKey exam point: step 2 requires two separate reagent stages (Sn/HCl then NaOH)'
+      }
+    },
+    {
+      id: 'h-ppq-june-2019',
+      type: 'heading',
+      data: { text: 'PPQ — June 2019 Synthesis Questions', level: 2 }
+    },
+    {
+      id: 'callout-ppq-2019a-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'PPQ June 2019 Part A: 1-Bromopropane → Butan-1-ol (3 Steps, +1 C)',
+        text: 'Start: CH₃CH₂CH₂Br (1-bromopropane, 3 carbons)\nTarget: CH₃CH₂CH₂CH₂OH (butan-1-ol, 4 carbons)\nObservation: chain has grown by +1 carbon → nitrile route\n\nStep 1: 1-bromopropane → butanenitrile (+1 carbon)\nReagents: KCN (ethanolic solution)\nConditions: reflux\nEquation: CH₃CH₂CH₂Br + KCN → CH₃CH₂CH₂CN + KBr\nProduct: butanenitrile (CH₃CH₂CH₂CN, 4 carbons)\n\nStep 2: butanenitrile → butanoic acid (hydrolysis)\nReagents: dilute HCl(aq) or H₂SO₄(aq)\nConditions: reflux (or aqueous acid + heat)\nEquation: CH₃CH₂CH₂CN + H₂O + H⁺ → CH₃CH₂CH₂COOH\nProduct: butanoic acid\n\nStep 3: butanoic acid → butan-1-ol (reduction)\nReagents: LiAlH₄\nConditions: dry ether, room temperature; then add water carefully\nEquation: CH₃CH₂CH₂COOH + LiAlH₄ → CH₃CH₂CH₂CH₂OH\nProduct: butan-1-ol ✓'
+      }
+    },
+    {
+      id: 'callout-ppq-2019b-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'PPQ June 2019 Part B: 1-Bromobutane → 2-Bromobutane (2 Steps)',
+        text: 'Start: CH₃CH₂CH₂CH₂Br (1-bromobutane)\nTarget: CH₃CH₂CHBrCH₃ (2-bromobutane)\nObservation: same chain length, bromine moves from C1 to C2 → via alkene intermediate\n\nStep 1: 1-bromobutane → but-1-ene (elimination)\nReagents: KOH (ethanolic solution)\nConditions: reflux (elimination favoured by ethanolic KOH at high temp)\nEquation: CH₃CH₂CH₂CH₂Br + KOH(ethanol) → CH₃CH₂CH=CH₂ + KBr + H₂O\nProduct: but-1-ene\n\nStep 2: but-1-ene → 2-bromobutane (electrophilic addition)\nReagents: HBr (gas or HBr(aq))\nConditions: room temperature\nEquation: CH₃CH₂CH=CH₂ + HBr → CH₃CH₂CHBrCH₃\nProduct: 2-bromobutane (Markovnikov product — H⁺ adds to C1, Br⁻ adds to C2) ✓\n\nKey thinking: cannot shift Br directly — must go via alkene as intermediate'
+      }
+    },
+    {
+      id: 'h-predicting-properties',
+      type: 'heading',
+      data: { text: 'Predicting Chemical Properties from Functional Groups', level: 2 }
+    },
+    {
+      id: 'p-predicting-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Even when two molecules share a functional group (e.g. both have −OH), their properties and reactions can be entirely different depending on where the group is located in the molecule. Always identify: (1) what functional group is present, and (2) what it is attached to (aliphatic carbon, benzene ring, acyl group, etc.).'
+      }
+    },
+    {
+      id: 'table-phenylmethanol-methylphenol',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Property / Reaction', 'Phenylmethanol C₆H₅CH₂OH (benzylic alcohol)', '4-Methylphenol CH₃-C₆H₄-OH (phenol)'],
+        rows: [
+          ['Functional group classification', 'Primary alcohol (−OH on sp³ benzylic carbon)', 'Phenol (−OH directly on benzene ring)'],
+          ['Aqueous pH', 'Neutral (~7) — −OH does not donate H⁺', 'Weakly acidic (~5–6) — lone pair delocalised into ring, O−H bond weakened; donates H⁺'],
+          ['Reaction with Na₂CO₃', 'No reaction (not acidic enough to release CO₂)', 'No CO₂ released (weaker acid than H₂CO₃); but dissolves in NaOH'],
+          ['Esterification with carboxylic acid', 'Forms ester readily (H₂SO₄ catalyst, heat): R−OH + RCOOH → RCOOR + H₂O', 'Does NOT form ester under the same conditions — phenol too weakly nucleophilic as alcohol; needs acyl chloride instead'],
+          ['Reaction with Br₂(aq)', 'No reaction with bromine water at room temp', 'Immediate decolourisation + white precipitate (2,4,6-tribromophenol) — −OH activates ring to electrophilic substitution'],
+          ['Reaction with PCl₅', 'Reacts — gives C₆H₅CH₂Cl + POCl₃ + HCl (primary alcohol → chloride)', 'Reacts differently — acidic substitution; less straightforward'],
+          ['Oxidation (K₂Cr₂O₇/H⁺)', 'Oxidised to aldehyde (C₆H₅CHO, benzaldehyde) then acid', 'Resistant to normal oxidation conditions (ring protects)']
+        ],
+        caption: 'Phenylmethanol vs 4-methylphenol — same −OH, completely different chemistry due to position on molecule'
+      }
+    },
+    {
+      id: 'callout-predicting-key',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Key Exam Insight: Where is the −OH?',
+        text: '−OH on aliphatic carbon = alcohol (neutral, esterifies, oxidised by K₂Cr₂O₇, reacts with PCl₅)\n−OH directly on benzene ring = phenol (weakly acidic, cannot esterify with carboxylic acid, tribromophenol with Br₂(aq), ring activated)\n\nRule: to predict chemical properties, always identify (1) the functional group and (2) its chemical environment (what is it attached to?).\n\nThis principle applies across all functional groups:\n− C=O in acid vs in ketone vs in acyl chloride → completely different reactivity\n− N in amide vs amine vs nitrile → different basicity and reactions'
       }
     },
     {
@@ -164,10 +276,16 @@ export const note_chemistry_5_20_3 = {
       data: {
         items: [
           { text: 'I can identify functional groups in starting material and target', checked: false },
-          { text: 'I can plan a 2–3 step synthesis using the functional group table', checked: false },
-          { text: 'I know which reagents are compatible with multiple functional groups', checked: false },
-          { text: 'I understand retrosynthetic analysis (work backwards)', checked: false },
-          { text: 'I can calculate atom economy for a reaction', checked: false },
+          { text: 'I ask "has the chain length changed?" as the first step in any synthesis', checked: false },
+          { text: 'I know +1 carbon = nitrile route; +more carbons = Grignard route', checked: false },
+          { text: 'I can plan the 3-step nitrile route: alcohol → haloalkane → nitrile → acid/amine', checked: false },
+          { text: 'I can plan benzene → nitrobenzene → phenylamine → amide (3 steps with all reagents)', checked: false },
+          { text: 'PPQ 2019A: 1-bromopropane → butanenitrile → butanoic acid → butan-1-ol', checked: false },
+          { text: 'PPQ 2019B: 1-bromobutane → but-1-ene → 2-bromobutane (Markovnikov)', checked: false },
+          { text: 'I can predict how position of −OH changes properties (phenylmethanol vs 4-methylphenol)', checked: false },
+          { text: 'I know phenol: weakly acidic, tribromophenol with Br₂(aq), cannot esterify with RCOOH directly', checked: false },
+          { text: 'I understand retrosynthetic analysis (work backwards from target)', checked: false },
+          { text: 'I can calculate atom economy for a reaction step', checked: false },
           { text: 'I know the purpose of reflux, distillation, and anhydrous conditions', checked: false }
         ]
       }
@@ -196,31 +314,31 @@ export const note_chemistry_5_20_3 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'table-functional-group-transformations',
-        prompt: 'Name the reagents and conditions to convert (a) primary alcohol to aldehyde, (b) aldehyde to primary alcohol.'
+        blockId: 'list-synthesis-decision-steps',
+        prompt: 'What is the first question to ask when planning a synthesis? What does +1 carbon vs +many carbons tell you about the route?'
       },
       {
         id: 'cue-2',
-        blockId: 'p-multistep-intro',
-        prompt: 'Why is it better to oxidise a primary alcohol to aldehyde using K₂Cr₂O₇ with distillation rather than reflux?'
+        blockId: 'callout-benzene-amide-worked',
+        prompt: 'State the three steps, reagents, and conditions to convert benzene to an amide.'
       },
       {
         id: 'cue-3',
-        blockId: 'callout-multistep-worked',
-        prompt: 'Outline a 3-step synthesis from ethanol to ethyl ethanoate, including all reagents and conditions.'
+        blockId: 'callout-ppq-2019a-worked',
+        prompt: 'How would you convert 1-bromopropane (C3) to butan-1-ol (C4) in 3 steps? State all reagents and conditions.'
       },
       {
         id: 'cue-4',
-        blockId: 'eq-atom-economy',
-        prompt: 'Define atom economy and give an example of a reaction with high and low atom economy.'
+        blockId: 'callout-ppq-2019b-worked',
+        prompt: 'How would you convert 1-bromobutane to 2-bromobutane in 2 steps? Explain why Markovnikov addition gives 2-bromobutane rather than 1-bromobutane.'
       },
       {
         id: 'cue-5',
-        blockId: 'p-selectivity-intro',
-        prompt: 'What strategies can be used to ensure a reagent reacts with only one functional group in a multi-functional molecule?'
+        blockId: 'table-phenylmethanol-methylphenol',
+        prompt: 'Phenylmethanol and 4-methylphenol both have −OH. Why does 4-methylphenol react with bromine water but phenylmethanol does not?'
       }
     ],
-    summaryText: 'Functional group transformations: alcohol↔halide (PCl₅/HBr), alcohol↔ester (acyl chloride), halide↔nitrile↔amine/acid, aldehyde↔alcohol (NaBH₄), primary alcohol↔aldehyde↔acid (K₂Cr₂O₇). Multi-step planning: identify target, work backwards (retrosynthesis), apply transformations from table, consider selectivity and protection. Atom economy = (Mr product / sum Mr reactants) × 100%.',
+    summaryText: 'Synthesis decision strategy: (1) has chain length changed? YES → +1C = nitrile route; +many C = Grignard. NO → use FG table. Max 4 steps at A-level. Benzene→amide: nitration/H₂SO₄ < 55°C → Sn/HCl then NaOH (phenylamine) → acyl chloride (room temp). PPQ 2019A: R−Br + KCN/ethanol → nitrile + acid/H₂O/reflux → acid + LiAlH₄/dry ether → 1° alcohol. PPQ 2019B: R−Br + KOH/ethanol (elimination) → alkene + HBr (Markovnikov addition) → 2° halide. Predicting from FG: −OH on aliphatic C = alcohol (neutral, esterifies, oxidised); −OH on ring = phenol (weakly acidic, tribromophenol, no ester with RCOOH).',
     ready: false
   },
   evidence: [

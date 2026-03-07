@@ -4,7 +4,7 @@ export const note_chemistry_5_20_5 = {
       id: 'obj-purification-techniques',
       type: 'objective',
       data: {
-        text: 'Apply laboratory techniques to purify organic compounds: distillation, reflux, recrystallisation, solvent extraction, drying, and filtration; measure purity using melting point, boiling point, and TLC.'
+        text: 'Apply laboratory techniques to purify organic compounds: distillation, reflux, recrystallisation, solvent extraction, drying, and filtration; measure purity using melting point, boiling point, and TLC; conduct risk assessments identifying hazards, risks, and control measures for reactants, products, and intermediates.'
       }
     },
     {
@@ -311,6 +311,65 @@ export const note_chemistry_5_20_5 = {
       }
     },
     {
+      id: 'h-hazards-risks',
+      type: 'heading',
+      data: { text: 'Hazards, Risks and Control Measures', level: 2 }
+    },
+    {
+      id: 'p-hazards-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Before any organic synthesis practical, a risk assessment is required. Three terms must be clearly distinguished: a hazard is a property of a substance, a risk is the potential harm from using it, and a control measure is a step taken to minimise that risk. Chemists must consider not just the starting materials but also all intermediates and products — some may be more hazardous than the reactants.'
+      }
+    },
+    {
+      id: 'table-hazard-risk-control',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Term', 'Definition', 'Example'],
+        rows: [
+          ['Hazard', 'A property of the substance itself that could cause harm', '"Flammable", "toxic", "corrosive", "oxidising"'],
+          ['Risk', 'The possible harmful outcome from working with the hazard', '"Skin burns if conc. H₂SO₄ is splashed onto hands"'],
+          ['Control measure', 'Action taken to reduce the risk to an acceptable level', '"Wear nitrile gloves and safety goggles; use fume cupboard"']
+        ],
+        caption: 'Hazard, risk and control measure — clear distinction required in exam answers'
+      }
+    },
+    {
+      id: 'list-hazards-substances',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Must assess ALL THREE categories: REACTANTS + PRODUCTS + INTERMEDIATES — not just the starting material',
+          'Concentrated acids (H₂SO₄, HCl, HNO₃): corrosive, causes severe burns — goggles, gloves, fume cupboard; add acid to water slowly',
+          'Flammable solvents (ether, ethanol, acetone): fire/explosion hazard when near naked flames — switch off Bunsen burners; use water bath or electric mantle',
+          'Potassium cyanide (KCN) / HCN: acutely toxic (even small amounts lethal); risk of poisoning — fume cupboard essential; no skin contact; emergency protocol in place',
+          'Organic halogens (PCl₅, SOCl₂): fumes, corrosive vapour — fume cupboard; dispose carefully',
+          'LiAlH₄: reacts explosively with water; flammable H₂ produced — strictly anhydrous conditions; no water nearby; small quantities',
+          'Oxidising agents (K₂Cr₂O₇, KMnO₄): toxic, potential carcinogen (Cr(VI)) — gloves; limited exposure; dispose as hazardous waste'
+        ]
+      }
+    },
+    {
+      id: 'callout-control-measures',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Standard Control Measures (Always Applied in Organic Practicals)',
+        text: '• Safety goggles (splash protection for eyes)\n• Nitrile gloves (chemical resistance to most organic solvents/acids)\n• Laboratory coat (protect clothing and skin)\n• Fume cupboard: required for volatile toxic substances (HCN/KCN, conc. acids, acyl chlorides, organic halides)\n• Electric mantle or water bath instead of naked flame when using flammable solvents\n• Fire extinguisher (CO₂ type for organic solvent fires — never water)\n• Emergency eye-wash station and cold water source nearby\n• No eating, drinking, or applying cosmetics in the lab\n• Read Safety Data Sheet (SDS/MSDS) for each reagent before starting\n\nGHS hazard symbols on reagent bottles give at-a-glance hazard information (flame = flammable, skull = toxic, corrosion = corrosive, exclamation = irritant/harmful).'
+      }
+    },
+    {
+      id: 'callout-risk-assessment-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Risk Assessment Example: Preparation of Ethyl Ethanoate',
+        text: 'Reaction: CH₃CH₂OH + CH₃COOH (H₂SO₄ catalyst, heat) → CH₃COOC₂H₅ + H₂O\n\nREACTANTS:\n• Ethanol: hazard = flammable liquid (bp 78°C); risk = fire/explosion near flame; control = no Bunsen, use water bath\n• Glacial acetic acid: hazard = corrosive, pungent vapour; risk = skin/eye burns, respiratory irritation; control = goggles, gloves, fume cupboard\n• Conc. H₂SO₄ (catalyst): hazard = highly corrosive, exothermic with water; risk = severe burns; control = add drop by drop, goggles, gloves\n\nINTERMEDIATES: none significant here\n\nPRODUCT:\n• Ethyl ethanoate: hazard = flammable (bp 77°C), vapour irritates lungs; risk = fire hazard during distillation; control = electric mantle for distillation, fume cupboard\n\nOverall control: goggles + gloves + lab coat + water bath + fume cupboard at collection step'
+      }
+    },
+    {
       id: 'checklist-purification',
       type: 'checklist',
       data: {
@@ -322,7 +381,10 @@ export const note_chemistry_5_20_5 = {
           { text: 'I can perform liquid-liquid extraction using a separatory funnel', checked: false },
           { text: 'I know common drying agents (Na₂SO₄, MgSO₄) and their use', checked: false },
           { text: 'I can use Buchner filtration to collect crystals under vacuum', checked: false },
-          { text: 'I can interpret melting point and TLC to assess purity', checked: false }
+          { text: 'I can interpret melting point and TLC to assess purity', checked: false },
+          { text: 'I distinguish hazard / risk / control measure and give examples', checked: false },
+          { text: 'I know to assess reactants, products AND intermediates in a risk assessment', checked: false },
+          { text: 'I know standard controls: goggles, gloves, fume cupboard, no naked flame with flammables', checked: false }
         ]
       }
     },
@@ -372,9 +434,14 @@ export const note_chemistry_5_20_5 = {
         id: 'cue-5',
         blockId: 'p-tlc-intro',
         prompt: 'What does a single spot on a TLC plate indicate? How would a mixture appear on the same plate?'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'table-hazard-risk-control',
+        prompt: 'Distinguish between hazard, risk, and control measure. Why must you consider intermediates and products — not just reactants — in a risk assessment?'
       }
     ],
-    summaryText: 'Distillation: separate by boiling point, product in separate flask. Reflux: heat under condenser, vapour returns to reaction flask. Recrystallisation: hot solvent → dissolve → cool → crystallise. Extraction: separate immiscible layers (aqueous/organic) using separatory funnel. Drying: use Na₂SO₄ or MgSO₄ to remove water. Purity: melting point (sharp 2°C range = pure), TLC (1 spot = pure, multiple spots = mixture).',
+    summaryText: 'Distillation: separate by boiling point, product in separate flask. Reflux: heat under condenser, vapour returns to reaction flask. Recrystallisation: hot solvent → dissolve → cool → crystallise. Extraction: separate immiscible layers (aqueous/organic) using separatory funnel. Drying: use Na₂SO₄ or MgSO₄ to remove water. Purity: melting point (sharp ≤2°C range = pure), TLC (1 spot = pure, multiple spots = mixture). Hazard = property of substance; risk = potential harm; control measure = action taken. Assess reactants + products + intermediates. Controls: goggles, gloves, fume cupboard, electric mantle (not Bunsen) with flammables.',
     ready: false
   },
   evidence: [

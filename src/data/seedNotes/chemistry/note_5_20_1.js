@@ -176,7 +176,16 @@ export const note_chemistry_5_20_1 = {
       data: {
         style: 'key',
         title: 'Strategy for Structure Determination',
-        text: '1. Molecular formula (C, H, N, O content) + molar mass M\n2. Calculate degree of unsaturation\n3. IR: identify O−H, N−H, C=O, C≡N, C=C, aromatic\n4. ¹H NMR: count peaks (H environments), measure integration (H ratios), interpret splitting (neighbouring H)\n5. Mass spectrum: M⁺ peak confirms molar mass, fragments suggest functional groups\n6. Propose structure fitting all data\n7. Double-check: total H matches integration, DoU matches structure'
+        text: '1. Molecular formula (C, H, N, O content) + molar mass M\n2. Calculate degree of unsaturation\n3. IR: identify O−H, N−H, C=O, C≡N, C=C, aromatic\n4. ¹H NMR: count peaks (H environments), measure integration (H ratios), interpret splitting (neighbouring H)\n5. Mass spectrum: M⁺ peak confirms molar mass, fragments suggest functional groups\n6. Chemical tests: add to confirm (2,4-DNPH for carbonyl, Tollens for aldehyde, Br₂ for alkene, etc.)\n7. Propose structure fitting all data\n8. Double-check: total H matches integration, DoU matches structure'
+      }
+    },
+    {
+      id: 'callout-compound-x-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Full Worked Example — Compound X (Exam-Style)',
+        text: 'Data given:\n• Percentage by mass: C = 62.1%, H = 10.3%, O = 27.6%\n• Chemical test 1: gives orange precipitate with 2,4-DNPH → carbonyl group present\n• Chemical test 2: does NOT react with Tollens\'\u00bf reagent or Fehling\'s solution → NOT an aldehyde → must be a KETONE\n• Mass spectrum: molecular ion peak M⁺ at m/z = 58\n• IR: strong absorption around 1715 cm⁻¹ → confirms C=O (ketone)\n• ¹H NMR: ONE peak at δ ≈2.2 ppm, integrating for 6 equivalent H atoms\n\nStep 1 — Empirical formula from percentages:\nC: 62.1 ÷ 12 = 5.175 | H: 10.3 ÷ 1 = 10.3 | O: 27.6 ÷ 16 = 1.725\nRatio: 5.175 : 10.3 : 1.725 → divide by 1.725 → 3 : 6 : 1\nEmpirical formula: C₃H₆O\n\nStep 2 — Molecular formula:\nMr of C₃H₆O = 36 + 6 + 16 = 58\nM⁺ = 58 from mass spec → n = 58/58 = 1\nMolecular formula: C₃H₆O (same as empirical)\n\nStep 3 — DoU:\nDoU = (2×3 + 2 − 6) / 2 = 2/2 = 1 → one double bond → consistent with C=O\n\nStep 4 — Chemical tests confirm ketone (not aldehyde)\n\nStep 5 — NMR: 1 singlet, 6 equivalent H at δ 2.2 ppm → two CH₃ groups in identical environments on either side of C=O\n\nConclusion: Compound X is PROPANONE (acetone) CH₃−CO−CH₃\nThe two CH₃ groups are equivalent → one NMR peak, 6H, singlet (no adjacent H to cause splitting)'
       }
     },
     {
