@@ -28,6 +28,23 @@ export const note_chemistry_4_13_5 = {
       }
     },
     {
+      id: 'co-ial-entropy-form',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'IAL Exam Form: ΔSₜₒₜₑₗ = R ln K',
+        text: 'In the Edexcel IAL specification, the equation linking equilibrium to thermodynamics is written as:\n\nΔSₜₒₜₑₗ = R ln K\n\nwhere R = 8.31 J mol⁻¹ K⁻¹ and K is either Kc or Kp. This is equivalent to ΔG° = −RT ln K because ΔG° = −TΔSₜₒₜₑₗ.\n\nKnow both forms and use the one stated in the question or data sheet.\n\nKey implications:\n• K > 1 → ln K > 0 → ΔSₜₒₜₑₗ > 0 → reaction is spontaneous\n• K < 1 → ln K < 0 → ΔSₜₒₜₑₗ < 0 → reaction not spontaneous in forward direction\n• K = 1 → ln K = 0 → ΔSₜₒₜₑₗ = 0 → at the tipping point'
+      }
+    },
+    {
+      id: 'eq-entropy-k',
+      type: 'equation',
+      data: {
+        html: 'ΔS<sub>total</sub> = R ln K &emsp;&emsp; ⇔ &emsp;&emsp; K = e<sup>ΔS<sub>total</sub>/R</sup>',
+        caption: 'IAL form: R = 8.31 J mol⁻¹ K⁻¹; K can be Kc or Kp'
+      }
+    },
+    {
       id: 'p-derivation',
       type: 'paragraph',
       data: {
@@ -62,6 +79,20 @@ export const note_chemistry_4_13_5 = {
         style: 'worked',
         title: 'Example: Small K',
         text: 'For a reaction at 298 K with K = 10⁻⁶, ΔG° = −(8.314)(298) ln(10⁻⁶) = −(2477) × (−13.82) = +34.2 kJ mol⁻¹. This positive ΔG° indicates an unfavourable reaction. Reactants are favoured; very little product forms.'
+      }
+    },
+    {
+      id: 'h-both-directions',
+      type: 'heading',
+      data: { text: 'Why Both Directions of a Reversible Reaction Are Spontaneous', level: 2 }
+    },
+    {
+      id: 'co-both-spontaneous',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'N₂O₄(g) ⇌ 2NO₂(g): Visual Entropy Demonstration',
+        text: 'At room temperature: pale brown mixture (equilibrium mixture of N₂O₄ and NO₂).\nIn hot water: darker brown (forward reaction proceeds further — more NO₂, more particles, higher entropy).\nIn ice: paler / nearly colourless (reverse reaction proceeds — more N₂O₄, fewer particles, lower entropy). Volume of mixture also decreases in cold because the gas contracts.\n\nThe entropy interpretation:\n• Starting from pure N₂O₄: ΔSₜₒₜₑₗ is POSITIVE moving towards equilibrium (forming more particles increases disorder). \u2192 Forward reaction is spontaneous.\n• Starting from pure NO₂: ΔSₜₒₜₑₗ is POSITIVE moving towards equilibrium (combining particles also increases order in surroundings). \u2192 Reverse reaction is also spontaneous.\n\nAt equilibrium: ΔSₜₒₜₑₗ = 0. Maximum entropy. Both forward and reverse rates are equal; no net change.\n\nConclusion: any mixture of N₂O₄ and NO₂ will spontaneously shift towards the equilibrium composition because that is the entropy maximum.'
       }
     },
     {
@@ -110,6 +141,20 @@ export const note_chemistry_4_13_5 = {
         style: 'key',
         title: 'Link Between Enthalpy, Entropy, and K',
         text: 'ΔG° = ΔH° − TΔS°. At low T: ΔH° term dominates; exothermic reactions (ΔH° < 0) favour products. At high T: TΔS° term grows; reactions with ΔS° > 0 favour products. At equilibrium: ΔG° = 0, so ΔH° = TΔS°. The equation ΔG° = −RT ln K quantifies this relationship.'
+      }
+    },
+    {
+      id: 'h-calc-k-entropy',
+      type: 'heading',
+      data: { text: 'Calculating K from ΔSₜₒₜₑₗ (IAL Form)', level: 2 }
+    },
+    {
+      id: 'co-so3-entropy-k',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'SO₂(g) + ½O₂(g) ⇌ SO₃(g): Calculate K from ΔSₜₒₜₑₗ',
+        text: 'Given: ΔSₜₒₜₑₗ = +238.3 J mol⁻¹ K⁻¹; R = 8.31 J mol⁻¹ K⁻¹\n\nUsing K = e^(ΔSₜₒₜₑₗ / R):\nK = e^(238.3 / 8.31) = e^(28.67) = 2.84 × 10¹²\n\nThe very large K confirms equilibrium lies far to the right — SO₃ is strongly favoured. This is consistent with the industrial Contact Process conditions.\n\nExam note: if you are given ΔSₜₒₜₑₗ and asked for K, use K = e^(ΔS/R). If you are given ΔG° and asked for K, use K = e^(−ΔG°/RT). Both are accepted.'
       }
     },
     {

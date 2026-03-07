@@ -41,6 +41,25 @@ export const note_chemistry_4_13_4 = {
       }
     },
     {
+      id: 'tbl-hi-temp',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Temperature (K)', 'Moles H₂', 'Moles I₂', 'Moles HI', 'Kc'],
+        rows: [
+          ['500', '0.14', '0.14', '1.72', '~160'],
+          ['700', '0.21', '0.21', '1.58', '~54']
+        ],
+        caption: 'H₂ + I₂ ⇌ 2HI (exothermic forward reaction): K decreases as T increases'
+      }
+    },
+    {
+      id: 'p-hi-temp-analysis',
+      type: 'paragraph',
+      data: {
+        text: 'In the H₂ + I₂ ⇌ 2HI data above, as temperature rises from 500 K to 700 K, Kc drops from ~160 to ~54. The moles of H₂ and I₂ (reactants) increase from 0.14 to 0.21, while HI (product) decreases from 1.72 to 1.58. This confirms the equilibrium is shifting LEFT — towards the endothermic direction (the reverse reaction) as temperature rises, exactly as predicted for an exothermic forward reaction.'
+      }
+    },
+    {
       id: 'h-endothermic',
       type: 'heading',
       data: { text: 'Endothermic Reactions (ΔH > 0)', level: 2 }
@@ -80,6 +99,15 @@ export const note_chemistry_4_13_4 = {
       type: 'paragraph',
       data: {
         text: 'A catalyst lowers the activation energy for both forward and backward reactions equally. It speeds up the rate at which equilibrium is reached but does NOT change the equilibrium position or K. The catalyst does not affect the thermodynamics of the reaction.'
+      }
+    },
+    {
+      id: 'co-cat-kc-reason',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Why Catalysts Cannot Affect K — The Definitive Reason',
+        text: 'A catalyst does NOT appear in the stoichiometric equation. Because Kc and Kp expressions are derived from stoichiometric coefficients, the catalyst does not appear in either expression. Therefore it has no mathematical influence on Kc or Kp, and it cannot shift the equilibrium position.\n\nIn exam answers, always state both parts:\n(1) A catalyst increases the rate of the forward AND reverse reaction equally.\n(2) It does not shift the position of equilibrium or change the value of K.'
       }
     },
     {

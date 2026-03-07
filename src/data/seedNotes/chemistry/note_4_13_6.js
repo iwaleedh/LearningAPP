@@ -122,6 +122,20 @@ export const note_chemistry_4_13_6 = {
       }
     },
     {
+      id: 'h-ppq-n2o4',
+      type: 'heading',
+      data: { text: 'Past Paper: N₂O₄ ⇌ 2NO₂ — Doubling Pressure', level: 2 }
+    },
+    {
+      id: 'co-ppq-n2o4-pressure',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '10 mol N₂O₄, 27% dissociated, P = 4 atm → Kp = 1.26 atm. Effect of doubling P?',
+        text: 'Part 1 — "State the effect of doubling pressure to 8 atm on Kp":\nAnswer (1 mark): No effect. Temperature is the ONLY factor that changes Kp.\n\nPart 2 — "Explain the change in % dissociation when pressure is doubled":\nKp = p(NO₂)² / p(N₂O₄) = constant\n\nDoubling pressure doubles ALL partial pressures:\n  Numerator (squared): (2p)² = 4p²  → increases 4-fold\n  Denominator (linear): 2p          → increases only 2-fold\n\nSo Qp immediately > Kp (numerator grew more). To restore Qp = Kp, must increase denominator.\n→ Equilibrium shifts LEFT (towards N₂O₄)\n→ More N₂O₄ re-forms\n→ % dissociation of N₂O₄ DECREASES\n\nMark scheme breakdown: (1) Kp constant shown; (2) numerator grows more than denominator / Qp > Kp; (3) shift left stated; (4) % dissociation decreases.'
+      }
+    },
+    {
       id: 'h-comparing-k',
       type: 'heading',
       data: { text: 'Comparing K Values Across Reactions', level: 2 }
