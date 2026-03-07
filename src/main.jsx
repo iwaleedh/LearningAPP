@@ -8,19 +8,34 @@ import { initSpacetimeDB } from './spacetime.js'
 // Initialize SpacetimeDB client before the app renders
 initSpacetimeDB().catch(console.error);
 
-// In dev mode: aggressively unregister any existing service worker and wipe
-// all caches. SW caches unhashed module URLs which causes stale content after
-// every code change. This runs once on every dev page load.
-if (import.meta.env.DEV) {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then((registrations) => {
-      registrations.forEach((reg) => reg.unregister());
+// In dev mode: if an old service worker is still controlling this page, it will
+// serve stale cached JS modules. Unregister it, wipe caches, and reload ONCE
+// so the next page load has no SW intercepting fetches.
+if (import.meta.env.DEV && 'serviceWorker' in navigator) {
+  const swControlling = navigator.serviceWorker.controller;
+  if (swControlling) {
+    // SW is active on this page — nuke everything and reload once
+    Promise.all([
+      navigator.serviceWorker.getRegistrations().then(regs =>
+        Promise.all(regs.map(r => r.unregister()))
+      ),
+      caches.keys().then(keys =>
+        Promise.all(keys.map(k => caches.delete(k)))
+      ),
+    ]).then(() => {
+      // Reload so the next load has no SW controlling the page
+      window.location.reload();
     });
+  } else {
+    // No SW controlling — still clean up any lingering registrations quietly
+    navigator.serviceWorker.getRegistrations().then(regs =>
+      regs.forEach(r => r.unregister())
+    );
+    if ('caches' in window) {
+      caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+    }
   }
-  if ('caches' in window) {
-    caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
-  }
-} else {
+} else if (!import.meta.env.DEV) {
   registerServiceWorker();
 }
 
