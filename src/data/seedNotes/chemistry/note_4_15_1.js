@@ -13,10 +13,27 @@ export const note_chemistry_4_15_1 = {
       data: { text: 'Racemates & Optical Inactivity', level: 2 }
     },
     {
-      id: 'p-racemate-intro',
-      type: 'paragraph',
+      id: 'callout-racemate-exam-def',
+      type: 'callout',
       data: {
-        text: 'A racemate (or racemic mixture) is a 50:50 mixture of two enantiomers. Although each enantiomer individually rotates plane-polarised light (one clockwise, one anti-clockwise), a racemate is optically inactive because the rotations cancel out exactly. The net rotation is zero, even though the solution contains chiral molecules. Racemates are denoted (±) or by writing both enantiomer names.'
+        style: 'warning',
+        title: '⚠️ Exam Definition: Racemic Mixture',
+        text: 'A <strong>racemic mixture</strong> is an <strong>equimolar</strong> (50:50) mixture of the two enantiomers of a chiral compound.\n\nKey exam words:\n• \'Equimolar\' or \'equal amounts\' — MUST specify 50:50\n• \'Shows NO optical activity\' — because the rotations of the two enantiomers cancel exactly\n• Also written as (±) or as the racemate'
+      }
+    },
+    {
+      id: 'list-racemate-points',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Each enantiomer individually</strong> rotates plane-polarised light (one +, one −)',
+          '<strong>In a racemic mixture</strong>: 50% rotate it clockwise, 50% rotate it anti-clockwise → exact cancellation',
+          '<strong>Net rotation = 0°</strong> → no optical activity detected by the analyser',
+          'The compound is still chiral at the molecular level — it just shows no <em>macroscopic</em> optical activity',
+          'Most lab syntheses produce racemates — <strong>unless</strong> a chiral catalyst, chiral reagent, or enzyme is used',
+          '<strong>Common example:</strong> SN1 reaction at a chiral centre always produces a racemic mixture'
+        ]
       }
     },
     {
@@ -80,7 +97,7 @@ export const note_chemistry_4_15_1 = {
       data: {
         style: 'warning',
         title: 'Thalidomide — A Cautionary Tale',
-        text: 'Thalidomide was marketed as a racemic mixture in the 1950s–60s to treat morning sickness in pregnancy. The (R) enantiomer is a sedative, but the (S) enantiomer is a teratogen that causes severe birth defects (phocomelia — short limbs). Although the two enantiomers interconvert in the body, the (S) form causes irreversible damage during early development. This tragedy led to stringent testing of drug stereochemistry and withdrawal of thalidomide from most markets. It was later reapproved for specific conditions (multiple myeloma) with strict controls.'
+        text: 'Thalidomide was marketed in the 1950s–60s as a cure for morning sickness in pregnancy.\n\n• Sold as a <strong>racemic mixture (50:50)</strong> of both enantiomers\n• The <strong>left-handed enantiomer</strong> was an effective <strong>anti-emetic</strong> (stopped nausea) — therapeutic\n• The <strong>right-handed enantiomer</strong> was <strong>highly teratogenic</strong> — caused severe birth defects, particularly limb deformities (phocomelia), interfering with limb formation\n• Most women took it in the first trimester (when morning sickness peaks) — exactly when limb formation occurs\n• The drug was withdrawn from the market\n• <strong>Key lesson:</strong> enantiomers can interact very differently with biological systems (receptors, enzymes) even with the same molecular formula and connectivity\n• Led to strict pharmaceutical regulations requiring separate testing of each enantiomer'
       }
     },
     {
