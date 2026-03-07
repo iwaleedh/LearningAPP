@@ -33,6 +33,75 @@ export const note_chemistry_4_12_1 = {
     },
     {
       type: 'heading',
+      id: 'h-boltzmann',
+      data: {
+        text: "Boltzmann's Statistical Interpretation of Entropy",
+        level: 2
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-boltzmann-1',
+      data: {
+        text: 'Entropy is not just a vague sense of "disorder" — it has a precise statistical definition. Ludwig Boltzmann showed that entropy is directly related to W, the number of possible arrangements (microstates) of particles and their energy. The more microstates available, the higher the entropy.'
+      }
+    },
+    {
+      type: 'equation',
+      id: 'eq-boltzmann',
+      data: {
+        html: 'S = k<sub>B</sub> ln W',
+        caption: 'Boltzmann entropy equation — k_B = 1.38 × 10⁻²³ J K⁻¹ (Boltzmann constant)'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-boltzmann-2',
+      data: {
+        text: 'Consider a thought experiment: 5 gas molecules in a container divided into two equal halves. Each molecule can be in either half, giving 2⁵ = 32 total arrangements. Only 1 of these 32 has ALL molecules on the same side. The probability of finding them spontaneously all on one side is just 1/32. Now scale up to Avogadro\'s number (6.02 × 10²³) of molecules: the number of microstates is 2^(6×10²³) — astronomically large. The probability of them all being on one side is effectively zero. This is why gas expansion is irreversible: the mixed state has overwhelmingly more microstates, and therefore overwhelmingly higher entropy.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-boltzmann-gas-jar',
+      data: {
+        style: 'key',
+        title: 'Gas Jar Mixing: Why It Is Irreversible',
+        text: 'Imagine removing a divider between two gas jars:\n• 5 molecules → 2⁵ = 32 arrangements; probability of staying unmixed = 1/32\n• 10 molecules → 2¹⁰ = 1024 arrangements; probability = 1/1024\n• 1 mole → 2^(6×10²³) arrangements; probability of unmixing ≈ 0\n\nThe mixed state has so many more arrangements that mixing is essentially irreversible. The increase in W means an increase in S = k_B ln W.'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-boltzmann-quanta',
+      data: {
+        text: 'Energy is also distributed in discrete packets called quanta. The more quanta available, and the more particles there are to share them, the more ways energy can be distributed — and the higher the entropy. Heating a substance increases the number of quanta available, which is why entropy increases with temperature.'
+      }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-quanta-arrangements',
+      data: {
+        caption: 'Number of Arrangements (W) for Energy Quanta Distribution',
+        headers: ['Molecules', 'Energy Quanta', 'Arrangements (W)', 'Trend'],
+        rows: [
+          ['2', '4', '5', 'Reference: few molecules, few quanta'],
+          ['2', '5', '6', 'One extra quantum → one more arrangement'],
+          ['3', '3', '10', 'One extra molecule → many more arrangements'],
+          ['3', '4', '15', 'Both increase → W grows rapidly']
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-boltzmann-r-link',
+      data: {
+        style: 'tip',
+        title: 'Interesting Connection: k_B × N_A = R',
+        text: 'The Boltzmann constant k_B = 1.38 × 10⁻²³ J K⁻¹ applies to individual molecules.\nThe gas constant R = 8.31 J K⁻¹ mol⁻¹ applies to one mole.\n\nThey are linked by Avogadro\'s number:\nR = k_B × N_A = 1.38 × 10⁻²³ × 6.02 × 10²³ = 8.31 J K⁻¹ mol⁻¹\n\nEntropy at the molecular scale (k_B) scales up to the molar scale (R) via N_A — just as all molecular properties do when scaled to one mole.'
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-particle-count',
       data: {
         text: 'Effect of Particle Count on Entropy',
@@ -135,6 +204,8 @@ export const note_chemistry_4_12_1 = {
       data: {
         items: [
           { text: 'Entropy (S) measures disorder; units are J K⁻¹ mol⁻¹', checked: false },
+          { text: 'Boltzmann equation: S = k_B ln W, where W = number of microstates (arrangements)', checked: false },
+          { text: '5 molecules in 2 halves → 2⁵ = 32 arrangements; only 1 has all on same side', checked: false },
           { text: 'More particles → higher entropy', checked: false },
           { text: 'More complex molecules → higher entropy (more rotational/vibrational modes)', checked: false },
           { text: 'Gases have much higher entropy than liquids, which have higher than solids', checked: false },
@@ -164,6 +235,11 @@ export const note_chemistry_4_12_1 = {
   recall: {
     enabled: true,
     cues: [
+      {
+        id: 'cue-0',
+        blockId: 'h-boltzmann',
+        prompt: 'State the Boltzmann entropy equation. Using the gas jar analogy with 5 molecules, explain why gas mixing is irreversible.'
+      },
       {
         id: 'cue-1',
         blockId: 'h-entropy-definition',

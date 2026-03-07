@@ -64,6 +64,24 @@ export const note_chemistry_4_12_3 = {
       }
     },
     {
+      type: 'callout',
+      id: 'co-ds-sys-worked-1',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 1: ΔS_system for CaCO₃ Decomposition',
+        text: 'CaCO₃(s) → CaO(s) + CO₂(g)\n\nStandard entropy values (from data booklet):\nS°(CaCO₃) = 92.9 J K⁻¹ mol⁻¹\nS°(CaO) = 39.7 J K⁻¹ mol⁻¹\nS°(CO₂) = 213.7 J K⁻¹ mol⁻¹\n\nΔS_system = ΣS(products) − ΣS(reactants)\nΔS_system = [39.7 + 213.7] − [92.9]\nΔS_system = 253.4 − 92.9 = +160.5 J K⁻¹ mol⁻¹\n\nPositive because a gas (CO₂) is produced from solids — large entropy increase. ✓'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-ds-sys-worked-2',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 2: ΔS_system for NH₃ Formation',
+        text: 'N₂(g) + 3H₂(g) → 2NH₃(g)\n\nStandard entropy values:\nS°(N₂) = 191.6 J K⁻¹ mol⁻¹\nS°(H₂) = 130.7 J K⁻¹ mol⁻¹\nS°(NH₃) = 192.3 J K⁻¹ mol⁻¹\n\nΔS_system = ΣS(products) − ΣS(reactants)\nΔS_system = [2 × 192.3] − [191.6 + 3 × 130.7]\nΔS_system = 384.6 − [191.6 + 392.1]\nΔS_system = 384.6 − 583.7 = −199.1 J K⁻¹ mol⁻¹\n\nNegative because 4 moles of gas reactants → 2 moles of gas products — fewer particles, less disorder. ✓'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-system-surroundings',
       data: {
@@ -132,6 +150,15 @@ export const note_chemistry_4_12_3 = {
     },
     {
       type: 'callout',
+      id: 'co-ds-surr-worked',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: ΔS_surroundings for H₂ Combustion',
+        text: 'H₂(g) + ½O₂(g) → H₂O(l)   ΔH = −286 kJ mol⁻¹ at 298 K\n\nΔS_surroundings = −ΔH_system / T\nΔS_surroundings = −(−286 000) / 298\nΔS_surroundings = +286 000 / 298\nΔS_surroundings = +960 J K⁻¹ mol⁻¹\n\nLarge and positive — the exothermic reaction heats the surroundings, greatly increasing their disorder. ✓\n\nNote: Convert ΔH from kJ mol⁻¹ to J mol⁻¹ before dividing: −286 kJ mol⁻¹ → −286 000 J mol⁻¹.'
+      }
+    },
+    {
+      type: 'callout',
       id: 'co-entropy-surr-expl',
       data: {
         style: 'tip',
@@ -168,6 +195,24 @@ export const note_chemistry_4_12_3 = {
         style: 'worked',
         title: 'Melting Ice at Different Temperatures',
         text: 'H₂O(s) → H₂O(l)   ΔH_sys ≈ +6 kJ mol⁻¹ (endothermic at melting point)\nΔS_sys ≈ +22 J K⁻¹ mol⁻¹\n\nAt 273 K (0 °C, melting point):\nΔS_surr = −6000 / 273 ≈ −22 J K⁻¹ mol⁻¹\nΔS_total = 22 + (−22) = 0 → At equilibrium ✓\n\nAt 278 K (5 °C, above melting point):\nΔS_surr = −6000 / 278 ≈ −21.6 J K⁻¹ mol⁻¹\nΔS_total = 22 + (−21.6) = +0.4 > 0 → Spontaneous ✓\n\nAt 268 K (−5 °C, below melting point):\nΔS_surr = −6000 / 268 ≈ −22.4 J K⁻¹ mol⁻¹\nΔS_total = 22 + (−22.4) = −0.4 < 0 → Non-spontaneous ✓'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-three-part-total-entropy',
+      data: {
+        style: 'worked',
+        title: 'Full 3-Part Calculation: H₂ + ½O₂ → H₂O at 298 K',
+        text: 'H₂(g) + ½O₂(g) → H₂O(l)   ΔH = −286 kJ mol⁻¹\n\nStep 1 — ΔS_system:\nS°(H₂O, l) = 69.9,  S°(H₂, g) = 130.7,  S°(O₂, g) = 205.0 J K⁻¹ mol⁻¹\nΔS_sys = 69.9 − [130.7 + ½ × 205.0]\nΔS_sys = 69.9 − [130.7 + 102.5]\nΔS_sys = 69.9 − 233.2 = −163.3 J K⁻¹ mol⁻¹\n(Negative: gas + gas → liquid — large loss of disorder)\n\nStep 2 — ΔS_surroundings:\nΔS_surr = −ΔH / T = −(−286 000) / 298 = +960 J K⁻¹ mol⁻¹\n\nStep 3 — ΔS_total:\nΔS_total = ΔS_sys + ΔS_surr = −163.3 + 960 = +796.7 J K⁻¹ mol⁻¹\n\nΔS_total > 0 → spontaneous at 298 K ✓\nAlthough ΔS_system is negative (unfavourable), the large positive ΔS_surr from the very exothermic ΔH drives spontaneity.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-past-paper-nh4no3',
+      data: {
+        style: 'worked',
+        title: 'Past Paper Question: NH₄NO₃ Decomposition at 160 °C (Oct 2019)',
+        text: 'NH₄NO₃(s) → N₂O(g) + 2H₂O(g)   ΔH = −36 kJ mol⁻¹,  T = 433 K\n\nStep 1 — ΔS_system:\nS°(NH₄NO₃, s) = 151.1,  S°(N₂O, g) = 219.7,  S°(H₂O, g) = 188.7 J K⁻¹ mol⁻¹\nΔS_sys = [219.7 + 2 × 188.7] − 151.1\nΔS_sys = [219.7 + 377.4] − 151.1\nΔS_sys = 597.1 − 151.1 = +446 J K⁻¹ mol⁻¹\n(Positive: solid → 3 moles of gas — huge entropy increase)\n\nStep 2 — ΔS_surroundings:\nΔS_surr = −ΔH / T = −(−36 000) / 433 = +83.1 J K⁻¹ mol⁻¹\n\nStep 3 — ΔS_total:\nΔS_total = 446 + 83.1 = +529.1 J K⁻¹ mol⁻¹\n\nΔS_total >> 0 → strongly spontaneous at 433 K ✓\nBoth ΔS_system AND ΔS_surroundings are positive — the reaction is doubly favoured.'
       }
     },
     {
@@ -269,6 +314,21 @@ export const note_chemistry_4_12_3 = {
         id: 'cue-0c',
         blockId: 'callout-entropy-sys',
         prompt: 'State the formula for calculating the Entropy of the System.'
+      },
+      {
+        id: 'cue-0d',
+        blockId: 'co-ds-sys-worked-1',
+        prompt: 'Calculate ΔS_system for CaCO₃(s) → CaO(s) + CO₂(g) using S° values: CaCO₃=92.9, CaO=39.7, CO₂=213.7 J K⁻¹ mol⁻¹.'
+      },
+      {
+        id: 'cue-0e',
+        blockId: 'co-three-part-total-entropy',
+        prompt: 'Perform the full 3-step total entropy calculation for H₂ + ½O₂ → H₂O at 298 K (ΔH = −286 kJ mol⁻¹).'
+      },
+      {
+        id: 'cue-0f',
+        blockId: 'co-past-paper-nh4no3',
+        prompt: 'Calculate ΔS_sys, ΔS_surr, and ΔS_total for NH₄NO₃(s) → N₂O(g) + 2H₂O(g) at 433 K (ΔH = −36 kJ mol⁻¹).'
       },
       {
         id: 'cue-1',

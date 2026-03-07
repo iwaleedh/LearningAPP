@@ -8,6 +8,13 @@ export const note_chemistry_4_12_0 = {
       }
     },
     {
+      type: 'paragraph',
+      id: 'p-equilibrium-framing',
+      data: {
+        text: 'Every reaction reaches a position of equilibrium — the real question is not "does this reaction happen?" but "where does the position of equilibrium lie?" For some reactions the equilibrium lies so far to the right that the reaction appears complete (e.g. combustion). For others, equilibrium lies mostly to the left and little product forms. Thermodynamics predicts which direction is favoured and how far the reaction proceeds; entropy and Gibbs free energy quantify this.'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-exo-limits',
       data: {
@@ -113,6 +120,15 @@ export const note_chemistry_4_12_0 = {
       id: 'p-kinetic-barrier',
       data: {
         text: 'Even if a reaction is thermodynamically spontaneous (ΔG < 0), it may not happen at a measurable rate if the activation energy is very high. Diamond → graphite is spontaneous at room temperature, yet diamonds don\'t convert because the activation barrier is enormous. Thermodynamic spontaneity tells us what CAN happen; kinetics tells us what WILL happen in a reasonable timeframe.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-kinetic-stability-examples',
+      data: {
+        style: 'worked',
+        title: 'Kinetic vs Thermodynamic Stability: Concrete Examples',
+        text: 'Carbon + oxygen → CO₂: Thermodynamically very feasible (ΔG << 0), but carbon sitting in air does NOT spontaneously combust — it is kinetically stable at room temperature because the activation energy barrier is too high without an ignition source.\n\nMethane + oxygen → CO₂ + H₂O: Also thermodynamically very feasible. Yet natural gas can be stored safely at room temperature — kinetically stable because C–H bonds require significant activation energy to break.\n\nH₂ + O₂ → H₂O: The mixture of gases coexists without reacting at room temperature (kinetically stable). Thermodynamically: ΔG << 0 (highly favoured). Introduce a spark → immediate reaction.\n\nKey distinction:\n• Thermodynamic feasibility (ΔG < 0) → tells us the DIRECTION and position of equilibrium.\n• Kinetic stability (high Eₐ) → determines whether the reaction actually proceeds at a useful rate.'
       }
     },
     {
