@@ -3,8 +3,6 @@ import { useNavigate, useParams, Link } from 'react-router-dom';
 import { getSubjectLabel, getSyllabusBySubject } from '../data/syllabusIndex.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
 import { getSeedNote } from '../data/seedNotes/index.js';
-import { getNote } from '../services/notes/noteStore.js';
-import { onSpacetimeDBReady } from '../spacetime.js';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
 import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
 import './Pages.css';
@@ -261,26 +259,11 @@ export default function NotePage() {
 
     const noteId = `note:${context.subject}:${context.unitId}:${context.topicId}:${context.subtopicIndex}`;
 
-    const [dbNote, setDbNote] = useState(null);
-    useEffect(() => {
-        let mounted = true;
-        const doFetch = () => {
-            getNote(noteId).then(n => {
-                if (mounted && n && n.blocks && n.blocks.length > 0) setDbNote(n);
-            });
-        };
-        onSpacetimeDBReady(() => {
-            doFetch();
-            const interval = setInterval(doFetch, 3000);
-            return () => clearInterval(interval);
-        });
-        return () => { mounted = false; };
-    }, [noteId]);
-
-    const seedNote = useMemo(() => {
-        if (dbNote && dbNote.blocks && dbNote.blocks.length > 0) return dbNote;
-        return getSeedNote(noteId);
-    }, [dbNote, noteId]);
+    // dbNote fetching is disabled — seed notes are the canonical source.
+    // Enabling it caused stale IndexedDB/SpacetimeDB data to overwrite updated
+    // seed notes every 3 seconds. Re-enable only when user-editing is wired up
+    // with a reliable way to tell user edits apart from old seed note snapshots.
+    const seedNote = useMemo(() => getSeedNote(noteId), [noteId]);
     const { isRead, readAt, markRead, markUnread } = useNoteReadStatus(noteId);
 
     const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);
