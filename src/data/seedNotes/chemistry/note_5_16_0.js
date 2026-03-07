@@ -8,6 +8,103 @@ export const note_chemistry_5_16_0 = {
       },
     },
     {
+      type: 'callout',
+      id: 'callout-oilrig',
+      data: {
+        style: 'key',
+        title: 'Reminder: OIL RIG',
+        text: '• Oxidation Is Loss of electrons — oxidation number increases\n• Reduction Is Gain of electrons — oxidation number decreases\n• A species that is oxidised always has a paired reduction (redox reactions)\n• Anything that is oxidised must cause a reduction reaction alongside it',
+      },
+    },
+    {
+      type: 'heading',
+      id: 'h-metal-equil',
+      data: {
+        text: 'Metal–Solution Equilibrium',
+        level: 2,
+      },
+    },
+    {
+      type: 'list',
+      id: 'list-metal-equil',
+      data: {
+        style: 'bullet',
+        items: [
+          'When a metal is placed in water or in a solution of its own ions, some atoms lose electrons and enter solution as positive ions (oxidation)',
+          'The electrons lost cannot enter solution — they accumulate on the metal surface, making it negatively charged',
+          'The build-up of negative charge attracts positive ions back from solution',
+          'Some positive ions regain electrons and return to the metal surface (reduction)',
+          'Forward and reverse reactions continue until dynamic equilibrium is reached (rate forward = rate reverse)',
+          'The equilibrium is always written as the reduction half-reaction (ions gaining electrons) — this is the convention throughout electrochemistry',
+        ],
+      },
+    },
+    {
+      type: 'equation',
+      id: 'eq-metal-equil',
+      data: {
+        html: 'M<sup>n+</sup>(aq) + ne<sup>−</sup> ⇌ M(s)',
+        caption: 'General metal–solution equilibrium written as the reduction half-reaction',
+      },
+    },
+    {
+      type: 'svg',
+      id: 'svg-metal-equil',
+      data: {
+        svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <rect width="420" height="200" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="210" y="20" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Metal–Solution Equilibrium</text>
+  <rect x="20" y="35" width="90" height="130" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  <text x="65" y="97" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="13">Metal</text>
+  <text x="65" y="113" text-anchor="middle" fill="#e2e8f0" font-size="11">M(s)</text>
+  <text x="118" y="58" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
+  <text x="118" y="76" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
+  <text x="118" y="94" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
+  <text x="118" y="112" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
+  <text x="112" y="148" fill="#4f46e5" font-size="9">build-up</text>
+  <rect x="160" y="35" width="240" height="130" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="280" y="58" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Solution</text>
+  <circle cx="230" cy="95" r="14" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+  <text x="230" y="100" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
+  <circle cx="285" cy="120" r="14" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+  <text x="285" y="125" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
+  <circle cx="345" cy="90" r="14" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+  <text x="345" y="95" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
+  <path d="M155,75 Q143,55 132,62" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#ra)"/>
+  <text x="94" y="50" fill="#ef4444" font-weight="bold" font-size="10">oxidation</text>
+  <text x="90" y="62" fill="#ef4444" font-size="10">M → M⁺ + e⁻</text>
+  <path d="M155,125 Q143,140 132,133" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#ga)"/>
+  <text x="88" y="155" fill="#16a34a" font-weight="bold" font-size="10">reduction</text>
+  <text x="88" y="167" fill="#16a34a" font-size="10">M⁺ + e⁻ → M</text>
+  <text x="280" y="155" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="10">Dynamic equilibrium</text>
+  <text x="280" y="168" text-anchor="middle" fill="#3b82f6" font-size="9">rate(fwd) = rate(rev)</text>
+  <defs>
+    <marker id="ra" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ef4444"/></marker>
+    <marker id="ga" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
+  </defs>
+</svg>`,
+        caption: 'Electrons cannot enter solution — they build up on the metal surface, attracting ions back to establish equilibrium',
+      },
+    },
+    {
+      type: 'callout',
+      id: 'callout-abs-potential',
+      data: {
+        style: 'warning',
+        title: 'Why Absolute Potential Difference Cannot Be Measured',
+        text: '• The absolute potential difference is the voltage between the negatively charged metal (excess electrons) and the positive ions in solution — this cannot be measured directly\n• To complete a circuit, a second electrode must touch the solution — but any second metal creates its own potential difference, interfering with the measurement\n• Using the same metal twice only measures the difference between identical electrodes (= 0)\n• Therefore, it is physically impossible to measure the absolute potential difference of a single metal–solution system',
+      },
+    },
+    {
+      type: 'callout',
+      id: 'callout-reference',
+      data: {
+        style: 'tip',
+        title: 'Solution: Measure Everything Relative to a Reference Electrode',
+        text: '• Instead of absolute values, measure all electrode potentials relative to a chosen standard reference\n• Analogy: Relative atomic mass — we set carbon-12 as exactly 12 and measure all atomic masses relative to C-12\n• In electrochemistry: the Standard Hydrogen Electrode (SHE) is our reference, assigned E° = 0.00 V by convention\n• All standard electrode potentials (E°) are measured relative to the SHE — this allows them to be directly compared',
+      },
+    },
+    {
       type: 'heading',
       id: 'h-intro',
       data: {
@@ -19,7 +116,21 @@ export const note_chemistry_5_16_0 = {
       type: 'paragraph',
       id: 'p-intro-1',
       data: {
-        text: 'Electrode potential (E) is a measure of the tendency of a half-reaction to occur. It is defined as the voltage generated when a half-cell is connected to a reference half-cell. Each half-cell consists of an electrode in contact with a solution containing ions of that element. When two half-cells are connected, electrons flow from the more negative electrode (anode, where oxidation occurs) to the more positive electrode (cathode, where reduction occurs), creating a potential difference that can be measured in volts.',
+        text: 'The standard electrode potential (E°) provides a numerical measure of where the position of equilibrium lies in a metal–solution half-cell. Each half-cell is connected to the SHE and measured with a high-resistance voltmeter. The key points:',
+      },
+    },
+    {
+      type: 'list',
+      id: 'list-eo-meaning',
+      data: {
+        style: 'bullet',
+        items: [
+          'More negative E° → equilibrium lies further to the LEFT → metal more readily loses electrons to form ions → stronger reducing agent',
+          'More positive E° → equilibrium lies further to the RIGHT → metal less readily loses electrons → weaker reducing agent (stronger oxidising agent)',
+          'E° is measured in volts (V) and can be positive or negative, depending on position relative to the SHE (E° = 0.00 V)',
+          'Example: Mg E° = −2.37 V → equilibrium lies far left, Mg readily forms Mg²⁺',
+          'Example: Cu E° = +0.34 V → equilibrium lies right, Cu prefers to remain as Cu metal',
+        ],
       },
     },
     {
@@ -176,6 +287,7 @@ export const note_chemistry_5_16_0 = {
         headers: ['Half-Reaction', 'E° / V'],
         rows: [
           ['Li⁺ + e⁻ ⇌ Li', '−3.04'],
+          ['Mg²⁺ + 2e⁻ ⇌ Mg', '−2.37'],
           ['Zn²⁺ + 2e⁻ ⇌ Zn', '−0.76'],
           ['Fe²⁺ + 2e⁻ ⇌ Fe', '−0.44'],
           ['2H⁺ + 2e⁻ ⇌ H₂', '0.00'],
@@ -183,7 +295,49 @@ export const note_chemistry_5_16_0 = {
           ['Ag⁺ + e⁻ ⇌ Ag', '+0.80'],
           ['MnO₄⁻ + 8H⁺ + 5e⁻ ⇌ Mn²⁺ + 4H₂O', '+1.51'],
         ],
-        caption: 'Selected half-reactions and their standard electrode potentials at 298 K',
+        caption: 'Electrochemical series (most negative/strongest reducing agents at top; most positive/strongest oxidising agents at bottom). Values from data book — not memorised.',
+      },
+    },
+    {
+      type: 'callout',
+      id: 'callout-topright-bottomleft',
+      data: {
+        style: 'tip',
+        title: 'Mnemonic: Top-Right / Bottom-Left',
+        text: '• Every half-equation is written: [Left side ⇌ Right side] where LEFT = oxidised form, RIGHT = reduced form\n• TOP-RIGHT species are the most powerful REDUCING AGENTS (most negative E° → equilibrium far left → readily lose electrons)\n• BOTTOM-LEFT species are the most powerful OXIDISING AGENTS (most positive E° → equilibrium far right → readily gain electrons)\n• Example: Li (top right) is the strongest reducing agent; F₂ (bottom left) is the strongest oxidising agent\n• You already know this from Groups 1 & 7: fluorine is the strongest oxidising halogen — confirmed by its position at the bottom of the electrochemical series',
+      },
+    },
+    {
+      type: 'svg',
+      id: 'svg-series-diagram',
+      data: {
+        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <rect width="400" height="220" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Electrochemical Series — Key Rules</text>
+  <rect x="20" y="35" width="360" height="145" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="40" y="56" fill="#dc2626" font-size="11" font-weight="bold">Most negative E° (top)</text>
+  <text x="40" y="72" fill="#374151" font-size="10">Li⁺ + e⁻ ⇌  Li          E° = −3.04 V</text>
+  <text x="40" y="87" fill="#374151" font-size="10">Mg²⁺ + 2e⁻ ⇌ Mg        E° = −2.37 V</text>
+  <text x="40" y="102" fill="#374151" font-size="10">Zn²⁺ + 2e⁻ ⇌ Zn        E° = −0.76 V</text>
+  <text x="40" y="117" fill="#6b7280" font-size="10">2H⁺ + 2e⁻ ⇌ H₂         E° =  0.00 V  ← SHE reference</text>
+  <text x="40" y="132" fill="#374151" font-size="10">Cu²⁺ + 2e⁻ ⇌ Cu        E° = +0.34 V</text>
+  <text x="40" y="147" fill="#374151" font-size="10">Ag⁺ + e⁻ ⇌ Ag           E° = +0.80 V</text>
+  <text x="40" y="162" fill="#0369a1" font-size="11" font-weight="bold">Most positive E° (bottom)</text>
+  <path d="M360,40 L360,175" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="378" y="56" fill="#dc2626" font-size="10" text-anchor="middle" transform="rotate(-90,378,100)">Strongest reducing agents →</text>
+  <line x1="375" y1="45" x2="375" y2="100" stroke="#dc2626" stroke-width="2" marker-end="url(#da)"/>
+  <line x1="375" y1="175" x2="375" y2="120" stroke="#2563eb" stroke-width="2" marker-end="url(#db)"/>
+  <text x="315" y="40" fill="#dc2626" font-size="9">TOP-RIGHT</text>
+  <text x="310" y="50" fill="#dc2626" font-size="9">= best reducer</text>
+  <text x="310" y="178" fill="#2563eb" font-size="9">BOTTOM-LEFT</text>
+  <text x="310" y="188" fill="#2563eb" font-size="9">= best oxidiser</text>
+  <defs>
+    <marker id="da" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/></marker>
+    <marker id="db" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,6 L6,3 L0,0 Z" fill="#2563eb"/></marker>
+  </defs>
+  <text x="200" y="210" text-anchor="middle" fill="#6b7280" font-size="9">All half-equations written as reduction (electrons on left) — same as data book</text>
+</svg>`,
+        caption: 'Top-right species are strongest reducing agents; bottom-left are strongest oxidising agents',
       },
     },
     {
@@ -228,34 +382,15 @@ export const note_chemistry_5_16_0 = {
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'callout-key-1',
-        prompt: 'What is electrode potential, and what does a positive E value indicate?',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'eq-she',
-        prompt: 'Why is the standard hydrogen electrode assigned E° = 0.00 V?',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'list-std-conditions',
-        prompt: 'List the three standard conditions for measuring E°.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-conv-1',
-        prompt: 'Why are half-equations always written with electrons on the left side?',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-series-2',
-        prompt: 'In the electrochemical series, which half-reactions are strong oxidising agents?',
-      },
+      { id: 'cue-1', blockId: 'list-metal-equil', prompt: 'Describe the metal–solution equilibrium: why do electrons build up on the metal, and when is equilibrium reached?' },
+      { id: 'cue-2', blockId: 'callout-abs-potential', prompt: 'Why can\'t we directly measure the absolute potential difference of a metal–solution system?' },
+      { id: 'cue-3', blockId: 'callout-reference', prompt: 'What analogy helps explain why we use the SHE as a reference, and what is its assigned E° value?' },
+      { id: 'cue-4', blockId: 'list-eo-meaning', prompt: 'What does a very negative E° tell you about the equilibrium position and the species\' ability to lose electrons?' },
+      { id: 'cue-5', blockId: 'callout-topright-bottomleft', prompt: 'In the electrochemical series, where do you find the strongest reducing agents and the strongest oxidising agents?' },
+      { id: 'cue-6', blockId: 'list-std-conditions', prompt: 'List the three standard conditions required to measure E° values.' },
     ],
     summaryText:
-      'Electrode potential (E) measures a half-reaction\'s tendency to occur (be reduced). The standard hydrogen electrode (SHE: 2H⁺ + 2e⁻ ⇌ H₂) has E° = 0.00 V by definition and is the reference for all other E° values. Standard conditions are 298 K, 1 mol dm⁻³, and 1 bar. Half-equations are written with reduction (electrons on left); reversing a half-equation reverses the sign of E°. The electrochemical series lists half-reactions by E° (most negative/reducing agents at top, most positive/oxidising agents at bottom).',
+      'When a metal is placed in solution, a dynamic equilibrium forms between M(s) and Mⁿ⁺(aq) — electrons accumulate on the metal surface. We cannot measure this absolute potential difference directly, so all E° values are measured relative to the SHE (E° = 0.00 V), just as atomic masses are measured relative to carbon-12. Standard conditions: 298 K, 1 mol dm⁻³, 100 kPa. More negative E° → equilibrium lies left → stronger reducing agent (top-right of series). More positive E° → equilibrium lies right → stronger oxidising agent (bottom-left of series). Half-equations always written as reduction (electrons on left).',
     ready: false,
   },
   evidence: [
