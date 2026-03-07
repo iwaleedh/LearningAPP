@@ -21,6 +21,7 @@ export const chemistrySyllabus = {
                         'Percentage yield and atom economy',
                         'Core Practical 1: gas molar volume',
                         'Equations from test-tube observations',
+                        'Ideal gas equation and PV=nRT',
                     ],
                 },
                 {

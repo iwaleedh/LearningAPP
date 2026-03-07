@@ -190,6 +190,11 @@ import { note_chemistry_1_4_4 } from './chemistry/note_1_4_4.js';
 import { note_chemistry_1_4_5 } from './chemistry/note_1_4_5.js';
 import { note_chemistry_1_4_6 } from './chemistry/note_1_4_6.js';
 import { note_chemistry_1_4_7 } from './chemistry/note_1_4_7.js';
+import { note_chemistry_1_4_8 } from './chemistry/note_1_4_8.js';
+import { note_chemistry_1_4_9 } from './chemistry/note_1_4_9.js';
+import { note_chemistry_1_4_10 } from './chemistry/note_1_4_10.js';
+import { note_chemistry_1_4_11 } from './chemistry/note_1_4_11.js';
+import { note_chemistry_1_4_12 } from './chemistry/note_1_4_12.js';
 
 // WCH11 — Topic 3: Bonding & Structure
 import { note_chemistry_1_3_0 } from './chemistry/note_1_3_0.js';
@@ -239,6 +244,7 @@ import { note_chemistry_2_6_3 } from './chemistry/note_2_6_3.js';
 import { note_chemistry_2_6_4 } from './chemistry/note_2_6_4.js';
 import { note_chemistry_2_6_5 } from './chemistry/note_2_6_5.js';
 import { note_chemistry_2_6_6 } from './chemistry/note_2_6_6.js';
+import { note_chemistry_2_6_7 } from './chemistry/note_2_6_7.js';
 
 // WCH14 — Topic 11: Kinetics
 import { note_chemistry_4_11_0 } from './chemistry/note_4_11_0.js';
@@ -751,6 +757,11 @@ export const seedNotes = {
     'chemistry:1:4:5': note_chemistry_1_4_5,
     'chemistry:1:4:6': note_chemistry_1_4_6,
     'chemistry:1:4:7': note_chemistry_1_4_7,
+    'chemistry:1:4:8': note_chemistry_1_4_8,
+    'chemistry:1:4:9': note_chemistry_1_4_9,
+    'chemistry:1:4:10': note_chemistry_1_4_10,
+    'chemistry:1:4:11': note_chemistry_1_4_11,
+    'chemistry:1:4:12': note_chemistry_1_4_12,
 
 
     // WCH11 — Topic 3: Bonding & Structure
@@ -799,6 +810,7 @@ export const seedNotes = {
     'chemistry:2:6:4': note_chemistry_2_6_4,
     'chemistry:2:6:5': note_chemistry_2_6_5,
     'chemistry:2:6:6': note_chemistry_2_6_6,
+    'chemistry:2:6:7': note_chemistry_2_6_7,
 
     // WCH13 — Topic 3A: Practical Skills I
     'chemistry:3:3A:0': note_chemistry_3_3A_0,
