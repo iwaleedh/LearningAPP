@@ -30,7 +30,7 @@ export const note_chemistry_5_19_3 = {
       id: 'p-diazotisation-2',
       type: 'paragraph',
       data: {
-        text: 'The mechanism involves: (1) HNO₂ (nitrous acid) is generated in situ from NaNO₂ + HCl. (2) Phenylamine attacks HNO₂, forming an N−nitroso intermediate (C₆H₅−N−N=O). (3) This intermediate protonates and loses water, forming the diazonium ion (C₆H₅−N₂⁺). The diazonium ion is highly electrophilic and reactive.'
+        text: 'The mechanism involves: (1) HNO₂ (nitrous acid) is generated IN SITU by mixing NaNO₂ (sodium nitrite) with HCl — the nitrous acid is NOT added directly but forms in solution from the reaction NaNO₂ + HCl → HNO₂ + NaCl. (2) HNO₂ is the actual reactive species that converts phenylamine into the diazonium ion. (3) Phenylamine attacks HNO₂, forming an N−nitroso intermediate (C₆H₅−N−N=O). (4) This intermediate protonates and loses water, forming the diazonium ion (C₆H₅−N₂⁺). The diazonium ion is highly electrophilic and reactive.'
       }
     },
     {
@@ -39,7 +39,7 @@ export const note_chemistry_5_19_3 = {
       data: {
         style: 'warning',
         title: 'Temperature Control is Vital',
-        text: 'Diazonium ions are UNSTABLE above ~10°C. Above this temperature, they decompose to give phenol, nitrogen gas, and other products. Reactions must be carried out at 0−5°C to prevent decomposition. Once formed, the diazonium ion should be used immediately in a coupling reaction.'
+        text: 'Diazonium ions are UNSTABLE above ~5°C (NOT ~10°C). If the temperature rises above 5°C during diazotisation, the diazonium ion decomposes — the product of decomposition is PHENOL (C₆H₅OH) + N₂ gas. This is why ice is always used: to keep the solution as close to 0°C as possible. Once formed, the diazonium ion should be used immediately in a coupling reaction and NOT stored.'
       }
     },
     {
@@ -62,6 +62,15 @@ export const note_chemistry_5_19_3 = {
       }
     },
     {
+      id: 'callout-phenoxide-coupling',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Phenoxide Ion — The Actual Coupling Partner',
+        text: 'Coupling with "phenol" does not use phenol directly. Alkaline conditions (Na₂CO₃ or NaOH) convert phenol into the PHENOXIDE ION (C₆H₅O⁻). The phenoxide ion is MORE reactive towards electrophilic attack than phenol because the negative charge increases electron density on the ring. The diazonium ion (an electrophile) attacks the electron-rich ring at the para position. This is electrophilic aromatic substitution on the phenoxide.\n\nIn summary: phenol + NaOH → sodium phenoxide (C₆H₅O⁻ Na⁺) → this reacts with the diazonium ion.'
+      }
+    },
+    {
       id: 'p-coupling-2',
       type: 'paragraph',
       data: {
@@ -81,7 +90,16 @@ export const note_chemistry_5_19_3 = {
       data: {
         style: 'key',
         title: 'Azo Dyes and Their Uses',
-        text: 'Azo compounds are used as synthetic dyes for textiles (fabrics), inks, and food colouring. Examples: Methyl orange (acid-base indicator), Sunset yellow (food dye), Congo red (pH indicator). The −N=N− chromophore absorbs visible light, giving bright colours. Large-scale industrial synthesis uses the same diazotisation/coupling sequence.'
+        text: 'Azo compounds are used as synthetic dyes for textiles (fabrics), inks, and food colouring. Examples: Methyl orange (acid-base indicator), Sunset yellow (food dye), Congo red (pH indicator). The −N=N− chromophore absorbs visible light, giving bright colours. Large-scale industrial synthesis uses the same diazotisation/coupling sequence.\n\nMethyl orange structure: dimethylaminobenzene−N=N−benzenesulfonate; the two benzene rings connected by the N=N group form the conjugated system. The diazonium ion from aniline couples with N,N-dimethylaniline.\n\nCoupling with phenol → para-hydroxyazobenzene → YELLOW azo dye. The specific yellow colour is characteristic of the 4-hydroxyphenyl azo product.'
+      }
+    },
+    {
+      id: 'callout-azo-stability-exam',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Point: Why Azo Dyes Don\'t Fade',
+        text: 'Azo dyes are PERMANENT dyes (they don\'t wash out or fade). The reason is conjugation: the extensive delocalised π system through both benzene rings and the N=N bridge creates a thermodynamically stable structure. When visible light is absorbed, the electrons can be excited but return to the same ground state — the molecule itself is not broken down. This makes azo dyes ideal for permanent textile dyeing.'
       }
     },
     {
@@ -93,7 +111,7 @@ export const note_chemistry_5_19_3 = {
       id: 'p-colour-1',
       type: 'paragraph',
       data: {
-        text: 'The colour of an azo compound is determined by the energy gap between electronic states. The −N=N− group is an extended conjugated system that delocalises electrons. Substitution with electron-donating groups (−OH, −NH₂, −CH₃) extends conjugation and can shift the colour from orange towards red. Substitution with electron-withdrawing groups can affect colour as well.'
+        text: 'The colour of an azo compound is determined by the energy gap between electronic states. The −N=N− group creates an EXTENDED CONJUGATED SYSTEM — alternating single and double bonds extend continuously through BOTH benzene rings and the N=N link. This delocalisation spreads electrons throughout the entire molecule. The result: (1) the compound absorbs VISIBLE light (not just UV), making it intensely coloured; (2) the conjugated system is THERMODYNAMICALLY STABLE — the electrons are delocalised over a large area, lowering overall energy; (3) because the structure is stable, the compound does NOT fade when exposed to light — making azo dyes useful as permanent dyes. Specific colours depend on substituents: phenol coupling at para position → yellow-orange azo dye; adding electron-donating groups extends delocalisation → shifts colour to longer wavelengths.'
       }
     },
     {

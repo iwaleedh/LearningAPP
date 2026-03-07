@@ -16,7 +16,7 @@ export const note_chemistry_5_19_2 = {
       id: 'p-haloalkane-1',
       type: 'paragraph',
       data: {
-        text: 'Alkylamines can be prepared by heating a haloalkane (R−X) with a large excess of ammonia in a sealed tube under pressure. The ammonia acts as both a nucleophile and a base. The reaction involves SN2 nucleophilic substitution: the lone pair on ammonia attacks the carbon bonded to the halogen, displacing the halide as a leaving group and forming a C−N bond.'
+        text: 'Alkylamines can be prepared by heating a haloalkane (R−X) with a large excess of ammonia in a sealed tube under pressure. A sealed container is essential because ammonia is a gas at room temperature — it would escape from an open vessel. An alternative is to use concentrated aqueous ammonia (which provides a high concentration in solution without needing to seal the container). The ammonia acts as both a nucleophile and a base. The reaction involves SN2 nucleophilic substitution: the lone pair on ammonia attacks the carbon bonded to the halogen, displacing the halide as a leaving group and forming a C−N bond.'
       }
     },
     {
@@ -72,14 +72,14 @@ export const note_chemistry_5_19_2 = {
       id: 'eq-nitrile-reduction',
       type: 'equation',
       data: {
-        html: 'R−C≡N + 2H₂ → R−CH₂−NH₂ (reduction of nitrile to primary amine)<br />Example: CH₃C≡N + 2H₂ → CH₃CH₂NH₂ (ethanamine from acetonitrile)'
+        html: 'R−C≡N + 2H₂ → R−CH₂−NH₂ (reduction of nitrile to primary amine)<br />Example: CH₃C≡N + 2H₂ → CH₃CH₂NH₂ (ethanamine from acetonitrile)<br /><b>Note: the product has ONE MORE carbon than the haloalkane starting material</b><br />(haloalkane → RCN adds 1 C → RCH₂NH₂ has 1 extra C compared to R−X)'
       }
     },
     {
       id: 'p-nitrile-2',
       type: 'paragraph',
       data: {
-        text: 'The reduction can be carried out with hydrogen gas and a nickel or platinum catalyst at moderate pressure and temperature. Alternatively, a strong reducing agent like lithium aluminium hydride (LiAlH₄) can be used in organic solvent. The LiAlH₄ method is faster but requires careful handling (LiAlH₄ reacts violently with water).'
+        text: 'The reduction can be carried out with hydrogen gas and a nickel or platinum catalyst at moderate pressure and temperature. Alternatively, a strong reducing agent like lithium aluminium hydride (LiAlH₄) in DRY ETHER can be used. Dry ether (e.g., diethyl ether or dry THF) is essential because LiAlH₄ reacts VIOLENTLY with water and any protic solvent — using a wet or protic solvent would destroy the LiAlH₄ and cause a dangerous reaction. The LiAlH₄ method is faster but requires strict anhydrous conditions and careful handling.'
       }
     },
     {
@@ -165,7 +165,7 @@ export const note_chemistry_5_19_2 = {
       data: {
         style: 'key',
         title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Amines can be prepared by nucleophilic substitution (haloalkane + NH₃), but this gives mixtures. Nitrile reduction (LiAlH₄ or H₂/Pd) gives pure primary amines.\n\nApply: Write equations for (a) CH₃Br + NH₃ → products (b) CH₃CN + 4[H] → product.\n\nAnalyze: Why does the reaction of excess ammonia with a haloalkane give a mixture of primary, secondary, and tertiary amines?\n\nEvaluate: Compare nitrile reduction vs Gabriel synthesis for preparing primary amines. Which avoids over-alkylation?'
+        text: 'Understand: Amines can be prepared by nucleophilic substitution (haloalkane + NH₃), but this gives mixtures. Nitrile reduction (LiAlH₄ in DRY ETHER, or H₂/Ni) gives pure primary amines with ONE MORE carbon than the nitrile.\n\nApply: Write equations for (a) CH₃Br + NH₃ → products (b) CH₃CN + 4[H] → product.\n\nAnalyze: Why does the reaction of excess ammonia with a haloalkane give a mixture of primary, secondary, and tertiary amines?\n\nEvaluate: Compare nitrile reduction vs the haloalkane/ammonia route for preparing primary amines. Which is cleaner and why?'
       },
       terms: []
     },
