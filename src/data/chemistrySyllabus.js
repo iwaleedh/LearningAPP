@@ -264,6 +264,7 @@ export const chemistrySyllabus = {
                         'Carboxylic acid reactions',
                         'Acyl chlorides and esters',
                         'Chromatography: TLC, paper, HPLC, GC',
+                        'NMR Spectroscopy (\u00b9\u00b3C and \u00b9H)',
                     ],
                 },
             ],

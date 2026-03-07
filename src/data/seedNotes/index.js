@@ -266,6 +266,7 @@ import { note_chemistry_4_15_4 } from './chemistry/note_4_15_4.js';
 import { note_chemistry_4_15_5 } from './chemistry/note_4_15_5.js';
 import { note_chemistry_4_15_6 } from './chemistry/note_4_15_6.js';
 import { note_chemistry_4_15_7 } from './chemistry/note_4_15_7.js';
+import { note_chemistry_4_15_8 } from './chemistry/note_4_15_8.js';
 
 // WCH15 — Topic 16: Redox Equilibria
 import { note_chemistry_5_16_0 } from './chemistry/note_5_16_0.js';
@@ -870,6 +871,7 @@ export const seedNotes = {
     'chemistry:4:15:5': note_chemistry_4_15_5,
     'chemistry:4:15:6': note_chemistry_4_15_6,
     'chemistry:4:15:7': note_chemistry_4_15_7,
+    'chemistry:4:15:8': note_chemistry_4_15_8,
 
     // WCH15 — Topic 16: Redox Equilibria
     'chemistry:5:16:0': note_chemistry_5_16_0,
