@@ -1,5 +1,5 @@
 /* Service Worker for Living Textbook PWA */
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const STATIC_CACHE = `living-textbook-static-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `living-textbook-runtime-${CACHE_VERSION}`;
 const MAX_RUNTIME_ENTRIES = 80;
@@ -112,6 +112,14 @@ self.addEventListener('fetch', (event) => {
     }
 
     if (!sameOrigin) {
+        event.respondWith(networkFirst(request));
+        return;
+    }
+
+    // Never cache JS/TS source modules — they have no content hash in URLs
+    // and will go stale silently after any code change.
+    const ext = url.pathname.split('.').pop();
+    if (['js', 'jsx', 'ts', 'tsx', 'mjs'].includes(ext)) {
         event.respondWith(networkFirst(request));
         return;
     }
