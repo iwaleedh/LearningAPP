@@ -4,7 +4,7 @@ export const note_chemistry_5_17_8 = {
       type: 'objective',
       id: 'obj-redox',
       data: {
-        text: 'Understand redox chemistry of transition metals; write oxidation and reduction half-equations; explain disproportionation; apply redox to Fe²⁺/Fe³⁺, Cr³⁺, and MnO₄⁻ reactions.'
+        text: 'Understand redox chemistry of transition metals; write oxidation and reduction half-equations; explain the CrO₄²⁻ ↔ Cr₂O₇²⁻ pH equilibrium; predict feasibility of vanadium reduction with Zn using E° values; explain disproportionation with Cu⁺.'
       }
     },
     {
@@ -77,8 +77,10 @@ export const note_chemistry_5_17_8 = {
     {
       type: 'heading',
       id: 'h-chromium-redox',
-      data: { text: 'Chromium Redox: Cr³⁺ ⇌ CrO₄²⁻', level: 2 }
+      data: { text: 'Chromium Redox Reactions', level: 2 }
     },
+    { type: 'callout', id: 'callout-chromate-dichromate', data: { style: 'key', title: 'CrO₄²⁻ ↔ Cr₂O₇²⁻ pH Equilibrium', text: 'These two Cr(VI) species interconvert via a pH-dependent equilibrium: 2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O. CrO₄²⁻ (chromate, yellow) is stable in alkaline (basic) conditions. Cr₂O₇²⁻ (dichromate, orange) is stable in acidic conditions. Add acid → yellow turns orange. Add alkali → orange turns yellow. This is NOT a redox change — Cr stays at +6 throughout. It is a condensation/hydrolysis equilibrium.' } },
+    { type: 'callout', id: 'callout-cr-zn-reduction', data: { style: 'worked', title: 'Zinc Reduction of Chromium: Cr⁶⁺ → Cr³⁺ → Cr²⁺', text: 'Add Zn to acidified Cr₂O₇²⁻ (orange, Cr⁶⁺). Step 1 — Cr⁶⁺ → Cr³⁺: orange solution turns green; E°cell is positive so feasible; Zn → Zn²⁺ (reducing agent). Step 2 — Cr³⁺ → Cr²⁺: green solution turns blue; E°cell is positive so feasible (E°(Cr³⁺/Cr²⁺) = −0.41 V, more positive than E°(Zn²⁺/Zn) = −0.76 V). Colour sequence: orange → green → blue. Zn cannot reduce Cr²⁺ to Cr (Cr²⁺/Cr = −0.91 V, more negative than Zn — not feasible).' } },
     {
       type: 'paragraph',
       id: 'p-chromium-intro',
@@ -188,17 +190,28 @@ export const note_chemistry_5_17_8 = {
         'Disproportionation is common in halogens (Group 17) and transition metals in intermediate oxidation states.'
       }
     },
+    { type: 'heading', id: 'h-vanadium-redox', data: { text: 'Vanadium Reduction with Zinc — E° Feasibility', level: 2 } },
+    { type: 'paragraph', id: 'p-vanadium-intro', data: { text: 'Vanadium has four accessible oxidation states: +5 (VO₂⁺, yellow), +4 (VO²⁺, blue), +3 (V³⁺, green), +2 (V²⁺, purple). Zn (E° = −0.76 V) can act as a reducing agent to step vanadium through each state. At each step, E°cell = E°(cathode) − E°(anode). If E°cell > 0 the reaction is feasible.' } },
+    { type: 'comparisonTable', id: 'table-vanadium-redox', data: { headers: ['Step', 'Reduction', 'E°(V⁽ⁿ⁺¹⁾/Vⁿ) / V', 'E°cell using Zn', 'Feasible?', 'Colour change'], rows: [
+      ['V⁵⁺ → V⁴⁺', 'Zn + 2VO₂⁺ + 4H⁺ → Zn²⁺ + 2VO²⁺ + 2H₂O', '+1.00', '+1.00 − (−0.76) = +1.76 V', 'Yes', 'Yellow → blue'],
+      ['V⁴⁺ → V³⁺', 'Zn + 2VO²⁺ + 4H⁺ → Zn²⁺ + 2V³⁺ + 2H₂O', '+0.34', '+0.34 − (−0.76) = +1.10 V', 'Yes', 'Blue → green'],
+      ['V³⁺ → V²⁺', 'Zn + 2V³⁺ → Zn²⁺ + 2V²⁺', '−0.26', '−0.26 − (−0.76) = +0.50 V', 'Yes', 'Green → purple'],
+      ['V²⁺ → V⁰', 'Not achievable with Zn', '−1.18', '−1.18 − (−0.76) = −0.42 V', 'No', 'No change']
+    ], caption: 'Vanadium reduction steps with Zn as reducing agent (standard conditions, acidic solution)' } },
+    { type: 'callout', id: 'callout-vanadium-tip', data: { style: 'tip', title: 'Exam Points — Vanadium E° Sequence', text: '1. Learn the colour sequence: yellow → blue → green → purple (V⁵⁺ → V²⁺). 2. Zn reduces all the way to V²⁺ but STOPS at V²⁺ — cannot reduce to V metal (E°cell negative). 3. You must show the full E°cell calculation: E°cell = E°(reduced species) − E°(Zn²⁺/Zn) = E° − (−0.76). 4. The overall colour change from yellow to purple is a classic observation in titration reactions.' } },
     {
       type: 'checklist',
       id: 'checklist-redox',
       data: {
         items: [
-          { text: 'Redox: half-equation method for balancing (O, H, charge, electrons)', checked: false },
-          { text: 'Fe²⁺ oxidised to Fe³⁺ by MnO₄⁻; purple colour disappears', checked: false },
-          { text: 'Fe³⁺ reduced to Fe²⁺ by Cu; brown → pale solution', checked: false },
-          { text: 'Cr³⁺ oxidised to CrO₄²⁻ in alkaline solution; green → yellow', checked: false },
-          { text: 'MnO₄⁻ reduces to different products by pH: Mn²⁺ (acidic), MnO₂ (neutral), MnO₄²⁻ (alkaline)', checked: false },
-          { text: 'Disproportionation: 2Cu⁺ → Cu + Cu²⁺', checked: false }
+          { text: 'Redox: half-equation method — balance atoms, O (add H₂O), H (add H⁺), charge (add e⁻)', checked: false },
+          { text: 'Fe²⁺ oxidised by MnO₄⁻: 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O; purple disappears', checked: false },
+          { text: 'Cr³⁺ (green) + H₂O₂ + NaOH → CrO₄²⁻ (yellow); oxidation +3 → +6', checked: false },
+          { text: 'CrO₄²⁻ (yellow, alkaline) ↔ Cr₂O₇²⁻ (orange, acidic): NOT redox — Cr stays +6; acid shifts orange', checked: false },
+          { text: 'Zn reduces Cr₂O₇²⁻: orange → green (Cr³⁺) → blue (Cr²⁺); both steps have positive E°cell', checked: false },
+          { text: 'Vanadium with Zn: yellow(V⁵⁺) → blue(V⁴⁺) E°=+1.76 V → green(V³⁺) E°=+1.10 V → purple(V²⁺) E°=+0.50 V; stops at V²⁺', checked: false },
+          { text: 'MnO₄⁻ by pH: acidic → Mn²⁺ (colourless); neutral → MnO₂ (brown); alkaline → MnO₄²⁻ (green)', checked: false },
+          { text: 'Disproportionation: 2Cu⁺ → Cu + Cu²⁺; same element simultaneously oxidised and reduced', checked: false }
         ]
       }
     },
@@ -209,7 +222,7 @@ export const note_chemistry_5_17_8 = {
       data: {
         style: 'key',
         title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Redox half-equations balance atoms, charges, and electrons. Combining half-equations gives the overall redox equation. Oxidation numbers track electron transfer.\n\nApply: Write half-equations for MnO₄⁻ → Mn²⁺ in acidic solution and combine with Fe²⁺ → Fe³⁺.\n\nAnalyze: In disproportionation, the same species is both oxidised and reduced. Explain using Cu⁺ → Cu²⁺ + Cu.\n\nEvaluate: Can you always predict redox products from E° values alone? Discuss kinetic vs thermodynamic control.'
+        text: 'Understand: Redox half-equations balance atoms, charges, and electrons. Apply: Write 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O from half-equations. Analyse: Explain why Cr₂O₇²⁻ turning yellow on adding NaOH is NOT a redox change. Evaluate: Use E° values to show Zn can reduce V³⁺ → V²⁺ but NOT V²⁺ → V.'
       },
       terms: []
     },
@@ -217,7 +230,7 @@ export const note_chemistry_5_17_8 = {
       type: 'summary',
       id: 'summary-redox',
       data: {
-        text: 'Transition metals undergo redox via variable oxidation states. Half-equation method balances O, H, charge, and electrons. Iron: Fe²⁺ oxidised by MnO₄⁻ (5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O); reduced by Cu. Chromium: Cr³⁺ (green) oxidised to CrO₄²⁻ (yellow) in alkali by H₂O₂. Permanganate colours: MnO₄⁻ (purple) → Mn²⁺ (colourless, acidic), MnO₂ (brown, neutral), MnO₄²⁻ (green, alkaline). Disproportionation: 2Cu⁺ → Cu + Cu²⁺ (Cu⁺ unstable in solution). These redox reactions are fundamental to transition metal chemistry and analytical methods.'
+        text: 'Transition metals undergo redox chemistry via variable oxidation states. Fe²⁺ → Fe³⁺ by MnO₄⁻: 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O. Cr³⁺ (green) → CrO₄²⁻ (yellow) with H₂O₂/NaOH. CrO₄²⁻ ↔ Cr₂O₇²⁻ is a pH-dependent equilbrium (NOT redox, Cr stays +6). Zn reduces Cr₂O₇²⁻: orange→green→blue. Vanadium with Zn: yellow(V⁵⁺)→blue(V⁴⁺, E°=+1.76V)→green(V³⁺, +1.10V)→purple(V²⁺, +0.50V); stops at V²⁺ (−0.42V not feasible). MnO₄⁻: acidic→Mn²⁺; neutral→MnO₂; alkaline→MnO₄²⁻. Disproportionation: 2Cu⁺→Cu+Cu²⁺.'
       }
     }
   ],
@@ -227,30 +240,30 @@ export const note_chemistry_5_17_8 = {
       {
         id: 'cue-1',
         blockId: 'p-half-equation-method',
-        prompt: 'Outline the half-equation method for balancing redox equations.'
+        prompt: 'Outline the 8-step half-equation method for balancing redox equations.'
       },
       {
         id: 'cue-2',
         blockId: 'p-iron-oxidation-example',
-        prompt: 'Write the equation for Fe²⁺ oxidation by permanganate in acidic solution and describe the colour change.'
+        prompt: 'Write the equation for Fe²⁺ oxidation by MnO₄⁻ and describe the colour change.'
       },
       {
         id: 'cue-3',
-        blockId: 'p-chromium-oxidation',
-        prompt: 'Describe the oxidation of Cr³⁺ to CrO₄²⁻ in alkaline solution. What colour change occurs?'
+        blockId: 'callout-chromate-dichromate',
+        prompt: 'Write the equation for the CrO₄²⁻ ↔ Cr₂O₇²⁻ equilibrium. Why is this NOT a redox reaction?'
       },
       {
         id: 'cue-4',
-        blockId: 'p-permanganate-acidic',
-        prompt: 'Explain what permanganate reduces to in acidic, neutral, and alkaline solutions.'
+        blockId: 'table-vanadium-redox',
+        prompt: 'Give the E°cell values and colour sequence when Zn reduces vanadium from +5 to +2. Why does it stop at +2?'
       },
       {
         id: 'cue-5',
         blockId: 'p-copper-disproportionation',
-        prompt: 'Define disproportionation and give the equation for Cu⁺ disproportionation.'
+        prompt: 'Define disproportionation and write the equation for Cu⁺ disproportionation with half-equations.'
       }
     ],
-    summaryText: 'Half-equation method: balance atoms, O (add H₂O), H (add H⁺/OH⁻), charge (add e⁻). Fe²⁺ → Fe³⁺ by MnO₄⁻: 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O. Cr³⁺ → CrO₄²⁻ (green → yellow) in alkali. MnO₄⁻: purple → Mn²⁺ colourless (acidic), MnO₂ brown (neutral), MnO₄²⁻ green (alkaline). Disproportionation: 2Cu⁺ → Cu + Cu²⁺.',
+    summaryText: 'Half-equation method: balance O (H₂O), H (H⁺), charge (e⁻). Fe²⁺ + MnO₄⁻: 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O. Cr³⁺ → CrO₄²⁻ (yellow) in alkali. CrO₄²⁻ ↔ Cr₂O₇²⁻: NOT redox. Zn+Cr₂O₇²⁻: orange→green→blue. V with Zn: yellow→blue(+1.76V)→green(+1.10V)→purple(+0.50V); stops at V²⁺. MnO₄⁻: Mn²⁺(acid)/MnO₂(neutral)/MnO₄²⁻(alkali). 2Cu⁺→Cu+Cu²⁺ (disproportionation).',
     ready: false
   },
   evidence: [

@@ -4,7 +4,7 @@ export const note_chemistry_5_17_7 = {
       type: 'objective',
       id: 'obj-catalysis',
       data: {
-        text: 'Understand heterogeneous and homogeneous catalysis by transition metals; explain how variable oxidation states enable catalytic cycles; apply catalysis concepts to industrial and laboratory examples.'
+        text: 'Understand heterogeneous and homogeneous catalysis by transition metals; use the HARD mnemonic for heterogeneous catalysis steps; explain Contact Process conditions (V₂O₅, ~725 K, ~2 atm) and catalytic converters (Pt/Rh); compare Fe²⁺ and Fe³⁺ catalytic mechanisms for S₂O₈²⁻/I⁻; explain autocatalysis with Mn²⁺.'
       }
     },
     {
@@ -31,6 +31,7 @@ export const note_chemistry_5_17_7 = {
       id: 'h-heterogeneous-catalysis',
       data: { text: 'Heterogeneous Catalysis', level: 2 }
     },
+    { type: 'callout', id: 'callout-hard-mnemonic', data: { style: 'tip', title: 'HARD Mnemonic — Heterogeneous Catalysis Steps', text: 'H — Heterogeneous (catalyst is solid; reactants are gas or liquid). A — Adsorption (reactant molecules adsorb onto catalyst surface; surface bonds weaken reactant bonds). R — Reaction (bond breaking and forming at the surface; new species form). D — Desorption (product molecules leave the surface; catalyst is regenerated). Remember: Without adsorption, the catalyst cannot lower Eₐ — the surface interaction is essential.' } },
     {
       type: 'paragraph',
       id: 'p-heterogeneous-def',
@@ -48,6 +49,56 @@ export const note_chemistry_5_17_7 = {
         '3. <strong>Reaction:</strong> Reaction occurs on the surface (e.g., breaking of bonds, rearrangement)<br/>' +
         '4. <strong>Desorption:</strong> Products desorb (leave the surface), regenerating the catalyst<br/>' +
         'The key advantage: the reaction occurs on the surface where reactant concentration is high, and the transition metal\'s variable oxidation states stabilise intermediate complexes.'
+      }
+    },
+    {
+      type: 'svg',
+      id: 'svg-surface-adsorption',
+      data: {
+        caption: 'Surface adsorption mechanism in heterogeneous catalysis',
+        svg: `<svg viewBox="0 0 520 170" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
+  <!-- Background -->
+  <rect width="520" height="170" fill="#f8f8ff" rx="8"/>
+  <!-- Step labels -->
+  <text x="80" y="18" text-anchor="middle" font-weight="bold" fill="#5c35cc" font-size="12">Adsorption</text>
+  <text x="260" y="18" text-anchor="middle" font-weight="bold" fill="#2e7d32" font-size="12">Reaction</text>
+  <text x="435" y="18" text-anchor="middle" font-weight="bold" fill="#c0392b" font-size="12">Desorption</text>
+  <!-- Metal surface - all three panels -->
+  <rect x="10" y="120" width="155" height="20" fill="#9e9e9e" rx="3"/>
+  <rect x="180" y="120" width="155" height="20" fill="#9e9e9e" rx="3"/>
+  <rect x="350" y="120" width="155" height="20" fill="#9e9e9e" rx="3"/>
+  <text x="87" y="133" text-anchor="middle" fill="white" font-size="10">Metal surface (solid)</text>
+  <text x="257" y="133" text-anchor="middle" fill="white" font-size="10">Metal surface (solid)</text>
+  <text x="427" y="133" text-anchor="middle" fill="white" font-size="10">Metal surface (solid)</text>
+  <!-- Panel 1: Adsorption — A and B molecules adsorbing -->
+  <circle cx="55" cy="90" r="13" fill="#90caf9" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="55" y="95" text-anchor="middle" fill="#1976d2" font-weight="bold">A</text>
+  <circle cx="100" cy="90" r="13" fill="#ffe082" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="100" y="95" text-anchor="middle" fill="#f57c00" font-weight="bold">B</text>
+  <!-- dashed bond lines to surface -->
+  <line x1="55" y1="103" x2="55" y2="120" stroke="#1976d2" stroke-dasharray="3,2" stroke-width="1.5"/>
+  <line x1="100" y1="103" x2="100" y2="120" stroke="#f57c00" stroke-dasharray="3,2" stroke-width="1.5"/>
+  <text x="75" y="113" text-anchor="middle" fill="#555" font-size="9">weak surface bonds</text>
+  <!-- Panel 2: Reaction — A-B bond weakens, new bond forms -->
+  <circle cx="225" cy="88" r="13" fill="#90caf9" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="225" y="93" text-anchor="middle" fill="#1976d2" font-weight="bold">A</text>
+  <circle cx="270" cy="88" r="13" fill="#ffe082" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="270" y="93" text-anchor="middle" fill="#f57c00" font-weight="bold">B</text>
+  <line x1="237" y1="88" x2="258" y2="88" stroke="#c0392b" stroke-width="2"/>
+  <text x="248" y="82" fill="#c0392b" font-size="9" text-anchor="middle">bond forms</text>
+  <line x1="225" y1="101" x2="225" y2="120" stroke="#1976d2" stroke-dasharray="3,2" stroke-width="1.5"/>
+  <line x1="270" y1="101" x2="270" y2="120" stroke="#f57c00" stroke-dasharray="3,2" stroke-width="1.5"/>
+  <!-- Panel 3: Desorption — AB product leaves -->
+  <ellipse cx="427" cy="70" rx="28" ry="16" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="427" y="75" text-anchor="middle" fill="#2e7d32" font-weight="bold">AB</text>
+  <line x1="427" y1="86" x2="427" y2="105" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="452" y="98" fill="#555" font-size="9">product</text>
+  <text x="452" y="108" fill="#555" font-size="9">desorbs</text>
+  <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#2e7d32"/></marker></defs>
+  <!-- Arrows between panels -->
+  <text x="166" y="95" font-size="18" fill="#777">→</text>
+  <text x="338" y="95" font-size="18" fill="#777">→</text>
+</svg>`
       }
     },
     {
@@ -85,7 +136,7 @@ export const note_chemistry_5_17_7 = {
       type: 'paragraph',
       id: 'p-contact-intro',
       data: {
-        text: 'The <strong>Contact Process</strong> oxidises sulfur dioxide to sulfur trioxide: 2SO₂ + O₂ ⇌ 2SO₃. Vanadium(V) oxide (V₂O₅) is the catalyst. The reaction is thermodynamically favourable but needs activation.'
+        text: 'The <strong>Contact Process</strong> oxidises sulfur dioxide to sulfur trioxide: 2SO₂ + O₂ ⇌ 2SO₃. Vanadium(V) oxide (V₂O₅) is the catalyst. <strong>Conditions: ~725 K (450°C), ~2 atm.</strong> These represent a compromise — higher temperature favours rate but lowers equilibrium yield; lower pressure reduces cost since conversion is already &gt;98% at 2 atm.'
       }
     },
     {
@@ -111,25 +162,21 @@ export const note_chemistry_5_17_7 = {
     {
       type: 'heading',
       id: 'h-catalytic-converters',
-      data: { text: 'Example 3: Catalytic Converters — Pt/Pd', level: 2 }
+      data: { text: 'Example 3: Catalytic Converters — Pt and Rh', level: 2 }
     },
     {
-      type: 'paragraph',
-      id: 'p-converter-intro',
-      data: {
-        text: 'Modern vehicles use <strong>catalytic converters</strong> to reduce toxic emissions from internal combustion engines. The converters contain platinum and palladium catalysts that oxidise carbon monoxide and unburned hydrocarbons to CO₂ and H₂O, and reduce nitrogen oxides to N₂.'
-      }
-    },
-    {
-      type: 'paragraph',
-      id: 'p-converter-reactions',
-      data: {
-        text: '<strong>Catalytic converter reactions:</strong><br/>' +
-        '• <strong>Oxidation:</strong> 2CO + O₂ → 2CO₂ (Pt catalyst)<br/>' +
-        '• <strong>Oxidation:</strong> C_xH_y + O₂ → CO₂ + H₂O (Pt catalyst)<br/>' +
-        '• <strong>Reduction:</strong> NO_x + reducing agent → N₂ (Pd catalyst)<br/>' +
-        '<strong>Mechanism:</strong> The exhaust gases pass over the hot Pt/Pd catalyst surface. CO and hydrocarbons adsorb and are oxidised to CO₂ and H₂O; NO_x is reduced to N₂. The catalyst is regenerated after each reaction cycle.'
-      }
+      type: 'list',
+      id: 'list-converter',
+      data: { style: 'bullet', items: [
+        'Catalyst: platinum (Pt) oxidises CO and hydrocarbons; rhodium (Rh) reduces NOₓ',
+        'Reactants are in the gas phase; catalyst is solid — heterogeneous catalysis',
+        'Combined equation for CO and NO: 2CO + 2NO → 2CO₂ + N₂ (key exam equation)',
+        'Separate oxidation: 2CO + O₂ → 2CO₂ (Pt)',
+        'Separate reduction: NOₓ + reducing agent → N₂ (Rh)',
+        'Gases adsorb onto the Pt/Rh surface (HARD mechanism), bonds weaken, react, products desorb',
+        'Catalytic converters require warm-up — ineffective when engine is cold (adsorption less effective at low T)',
+        'Lead (from leaded petrol) poisons the catalyst — that is why unleaded fuel must be used'
+      ] }
     },
     {
       type: 'heading',
@@ -182,6 +229,8 @@ export const note_chemistry_5_17_7 = {
         '<strong>Catalysis:</strong> Fe²⁺ is oxidised in step 1 and regenerated in step 2. The variable oxidation states (+2/+3) enable the catalytic cycle. Without the catalyst, the reaction is kinetically slow; with catalyst, it is fast.'
       }
     },
+    { type: 'callout', id: 'callout-fe3-mechanism', data: { style: 'worked', title: 'Fe³⁺ as Alternative Catalyst (S₂O₈²⁻ + I⁻)', text: 'If Fe³⁺ is the starting catalyst (instead of Fe²⁺), the two steps run in reverse order but the overall effect is identical. Step 1: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂ (Fe³⁺ is reduced). Step 2: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻ (Fe²⁺ is re-oxidised). Overall: S₂O₈²⁻ + 2I⁻ → 2SO₄²⁻ + I₂. Iron is regenerated in either route — variable oxidation states (+2/+3) are the key. Exam note: both Fe²⁺ and Fe³⁺ are valid answers when asked which iron species can act as catalyst.' } },
+    { type: 'callout', id: 'callout-why-tm-catalyst', data: { style: 'key', title: 'Exam MCQ — Why Are Transition Metals Good Catalysts?', text: 'The correct exam answer is: "a relatively small amount of energy is required to change the oxidation state of the transition metal." This means the activation energy for the redox steps in the catalytic cycle is low — the metal can switch oxidation states easily, forming intermediates rapidly. Do NOT say "they have variable oxidation states" alone without explaining why this helps kinetically.' } },
     {
       type: 'heading',
       id: 'h-autocatalysis',
@@ -211,13 +260,14 @@ export const note_chemistry_5_17_7 = {
       data: {
         items: [
           { text: 'Catalyst lowers activation energy without being permanently changed', checked: false },
-          { text: 'Variable oxidation states enable transition metal catalysis', checked: false },
-          { text: 'Heterogeneous catalysis: catalyst is solid, reactants are gases/liquids', checked: false },
-          { text: 'Haber process: Fe catalyst for N₂ + 3H₂ → 2NH₃', checked: false },
-          { text: 'Contact process: V₂O₅ catalyst for SO₂ + ½O₂ → SO₃', checked: false },
-          { text: 'Homogeneous catalysis: catalyst in same phase as reactants (dissolved)', checked: false },
-          { text: 'Fe²⁺/Fe³⁺ catalyses S₂O₈²⁻/I⁻ reaction', checked: false },
-          { text: 'Autocatalysis: product acts as catalyst', checked: false }
+          { text: 'HARD mnemonic: Heterogeneous→ Adsorption → Reaction → Desorption', checked: false },
+          { text: 'Haber process: Fe catalyst, N₂ + 3H₂ ⇌ 2NH₃', checked: false },
+          { text: 'Contact process: V₂O₅ catalyst, ~725 K, ~2 atm; V⁵⁺ ↔ V⁴⁺ cycle', checked: false },
+          { text: 'Catalytic converter: Pt (oxidises CO/hydrocarbons) + Rh (reduces NOₓ); 2CO + 2NO → 2CO₂ + N₂', checked: false },
+          { text: 'Fe²⁺ catalyses S₂O₈²⁻/I⁻: Step 1: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻; Step 2: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂', checked: false },
+          { text: 'Fe³⁺ catalyses S₂O₈²⁻/I⁻ via same steps in reverse order — both are valid', checked: false },
+          { text: 'Autocatalysis: Mn²⁺ product accelerates KMnO₄ + ethanedioate reaction; S-shaped rate curve', checked: false },
+          { text: 'Why TMs are good catalysts: small energy required to change oxidation state (exam MCQ answer)', checked: false }
         ]
       }
     },
@@ -228,7 +278,7 @@ export const note_chemistry_5_17_7 = {
       data: {
         style: 'key',
         title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Transition metals catalyse reactions by providing an alternative pathway with lower Eₐ. They do this by using variable oxidation states or providing a surface for adsorption.\n\nApply: Explain how MnO₂ catalyses the decomposition of H₂O₂, showing how Mn cycles between oxidation states.\n\nAnalyze: Compare heterogeneous catalysis (e.g. Fe in Haber process) with homogeneous catalysis (e.g. Fe²⁺/Fe³⁺ in S₂O₈²⁻/I⁻).\n\nEvaluate: Why are transition metal catalysts preferred over main-group catalysts in industry? Consider cost, selectivity, and recyclability.'
+        text: 'Understand: Catalysts lower Eₐ; transition metals do this via variable oxidation states (small energy change between OS) and via surface adsorption (HARD: Heterogeneous-Adsorption-Reaction-Desorption). Apply: Write the two-step Fe²⁺ mechanism for S₂O₈²⁻ + 2I⁻ → 2SO₄²⁻ + I₂, and then the Fe³⁺ mechanism. Analyse: Why does the rate of KMnO₄ + ethanedioate increase over time (autocatalysis — Mn²⁺ product)? Evaluate: Why must unleaded petrol be used with catalytic converters?'
       },
       terms: []
     },
@@ -269,7 +319,7 @@ export const note_chemistry_5_17_7 = {
         prompt: 'Show the Fe²⁺-catalysed mechanism for S₂O₈²⁻ + 2I⁻ reaction.'
       }
     ],
-    summaryText: 'Catalysts lower activation energy; transition metals excel because variable oxidation states enable electron transfer cycles. Heterogeneous: Fe (Haber: N₂ + 3H₂ ⇌ 2NH₃), V₂O₅ (Contact: SO₂ + ½O₂ → SO₃), Pt/Pd (emissions). Homogeneous: Mn²⁺ in MnO₄⁻ reactions, Fe²⁺/Fe³⁺ (S₂O₈²⁻ + 2I⁻ → 2SO₄²⁻ + I₂). Catalyst cycles through oxidation states, returning unchanged. Autocatalysis: product catalyses reaction.',
+    summaryText: 'TMs catalyse reactions because small energy change needed to alter oxidation state. HARD: Adsorption → Reaction at surface → Desorption. Haber: Fe, N₂ + 3H₂ ⇌ 2NH₃. Contact: V₂O₅ (V⁵⁺↔V⁴⁺), ~725 K, ~2 atm. Converters: Pt oxidises CO/hydrocarbons; Rh reduces NOₓ; combined: 2CO + 2NO → 2CO₂ + N₂. Homogeneous Fe²⁺: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻; then 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂. Fe³⁺ runs steps reversed. Autocatalysis: Mn²⁺ product catalyses KMnO₄ reactions.',
     ready: false
   },
   evidence: [
