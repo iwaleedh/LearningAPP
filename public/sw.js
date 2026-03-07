@@ -1,5 +1,5 @@
 /* Service Worker for Living Textbook PWA */
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v4';
 const STATIC_CACHE = `living-textbook-static-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `living-textbook-runtime-${CACHE_VERSION}`;
 const MAX_RUNTIME_ENTRIES = 80;
