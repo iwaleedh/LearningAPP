@@ -109,6 +109,15 @@ export const note_chemistry_5_19_5 = {
       }
     },
     {
+      id: 'callout-pi-interpretation',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Interpreting Isoelectric Point Values',
+        text: 'Low isoelectric point (e.g., 3.2) → more likely to act as an ACID (carboxylic acid character dominates; amino acid exists as anion at neutral pH).\n\nHigh isoelectric point (e.g., 9.7) → more likely to act as a BASE (amine character dominates; amino acid exists as cation at neutral pH).\n\nAt the isoelectric point itself → amino acid exists as a ZWITTERION (overall charge = 0; the molecule is electrically neutral even though it has both + and − ends).'
+      }
+    },
+    {
       id: 'h-electrophoresis',
       type: 'heading',
       data: { text: 'Amino Acids in Electrophoresis', level: 2 }
@@ -149,6 +158,72 @@ export const note_chemistry_5_19_5 = {
       }
     },
     {
+      id: 'h-amino-acid-salts',
+      type: 'heading',
+      data: { text: 'Salt Formation with Acids and Bases', level: 2 }
+    },
+    {
+      id: 'p-salts-1',
+      type: 'paragraph',
+      data: {
+        text: 'Because amino acids are amphoteric, they can form salts with both acids and bases. An amino acid reacts with an acid to protonate the −COO⁻ (carboxylate) group, and reacts with a base to deprotonate the −NH₃⁺ (ammonium) group. Multiple salts can form from amino acids with additional ionisable side chains.'
+      }
+    },
+    {
+      id: 'callout-msg',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'MSG — A Real-Life Amino Acid Salt',
+        text: 'Glutamic acid can react with sodium hydroxide to form three possible sodium salts. The most well-known is monosodium glutamate (MSG) — a widely used flavour enhancer in food. There is ongoing debate about MSG\'s health effects, but it is chemically a simple amino acid salt.'
+      }
+    },
+    {
+      id: 'h-chirality',
+      type: 'heading',
+      data: { text: 'Chirality and Optical Activity of Amino Acids', level: 2 }
+    },
+    {
+      id: 'list-chirality',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'A chiral centre is a carbon atom bonded to 4 different groups — this makes the molecule non-superimposable on its mirror image' },
+          { text: 'Most α-amino acids have a chiral centre at the α-carbon (bonded to −NH₂, −COOH, −H, and R group — all different)' },
+          { text: 'EXCEPTION: Glycine (R = H) — the α-carbon has TWO hydrogen atoms, so only 3 different groups → NOT chiral' },
+          { text: 'Because most amino acids are chiral, they are optically active — they rotate plane-polarised light' },
+          { text: 'Each amino acid has two enantiomers (non-superimposable mirror images)' },
+          { text: 'Dextrorotatory (D or +): rotates polarised light clockwise' },
+          { text: 'Laevorotatory (L or −): rotates polarised light anticlockwise' },
+          { text: 'If equal amounts of both enantiomers are present → racemic mixture → no net rotation of polarised light' }
+        ]
+      }
+    },
+    {
+      id: 'callout-glycine-exception',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Glycine: The Non-Chiral Amino Acid',
+        text: 'Glycine (R = H) has the structure H₂N−CH₂−COOH. The central carbon has: −NH₂, −COOH, −H, −H — only 3 distinct groups (H appears twice). A chiral centre requires 4 DIFFERENT groups, so glycine has no chiral centre and is NOT optically active. All other standard amino acids are chiral.'
+      }
+    },
+    {
+      id: 'h-ppq-jan2017',
+      type: 'heading',
+      data: { text: 'Exam Practice — Tyrosine (Jan 2017)', level: 2 }
+    },
+    {
+      id: 'callout-ppq-zwitterion',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Worked: Drawing the Zwitterion & Enantiomers of Tyrosine',
+        text: 'Q: Draw the zwitterion of tyrosine and show its two optical isomers.\n\nZwitterion formation:\n• The H from −COOH transfers internally to −NH₂\n• Result: the carboxylate end becomes −COO⁻ (negative)\n• The amino end becomes −NH₃⁺ (positive)\n• Overall charge = 0 (one + and one − cancel)\n\nKey rule: The + charge is on N (shown as NH₃⁺); the − charge is on O (shown as COO⁻). The H from COOH does NOT stay on the phenol −OH at the bottom of tyrosine.\n\nOptical isomers:\n1. Identify the chiral centre → the α-carbon bonded to 4 different groups: −NH₃⁺, −COO⁻, −H, and −CH₂(4-hydroxyphenyl)\n2. Draw two structures with groups arranged as mirror images (clockwise vs anticlockwise)\n3. The two enantiomers are non-superimposable mirror images of each other'
+      }
+    },
+    {
       id: 'checklist-zwitterions',
       type: 'checklist',
       data: {
@@ -157,7 +232,10 @@ export const note_chemistry_5_19_5 = {
           { text: 'Low pH: protonated form ⁺H₃N−CHR−COOH (charge +1)', checked: false },
           { text: 'Neutral pH: zwitterion ⁺H₃N−CHR−COO⁻ (charge 0)', checked: false },
           { text: 'High pH: deprotonated form H₂N−CHR−COO⁻ (charge −1)', checked: false },
-          { text: 'Isoelectric point (pI): pH where net charge = 0; varies by side chain', checked: false }
+          { text: 'Isoelectric point (pI): pH where net charge = 0; low pI → acidic; high pI → basic', checked: false },
+          { text: 'Amino acids are amphoteric → form salts with acids AND bases (e.g., MSG)', checked: false },
+          { text: 'Most amino acids are chiral (4 different groups on α-carbon); EXCEPT glycine (R = H)', checked: false },
+          { text: 'Racemic mixture: equal amounts of enantiomers → no rotation of plane-polarised light', checked: false }
         ]
       }
     },
@@ -176,7 +254,7 @@ export const note_chemistry_5_19_5 = {
       id: 'summary-zwitterions',
       type: 'summary',
       data: {
-        text: 'Amino acids have −NH₂, −COOH, and R group attached to the α-carbon. In solution, they form zwitterions (⁺H₃N−CHR−COO⁻) via internal proton transfer. Charge varies with pH: low pH gives positive charge (⁺H₃N−CHR−COOH), neutral pH gives zwitterion (charge 0), high pH gives negative charge (H₂N−CHR−COO⁻). The isoelectric point (pI) is the pH where net charge = 0; it varies among amino acids based on side chains. In electrophoresis, amino acids move towards opposite electrodes depending on their charge: positive charge moves to cathode (−), negative to anode (+), no movement at pI.'
+        text: 'Amino acids form zwitterions (⁺H₃N−CHR−COO⁻) in neutral solution via internal proton transfer. Charge varies with pH: low pH → +1 charge; neutral pH → zwitterion (0); high pH → −1 charge. Isoelectric point (pI) is the pH where net charge = 0. Low pI → amino acid is more acidic; high pI → more basic; at pI → zwitterion. Amino acids are amphoteric — they form salts with both acids and bases (e.g., glutamic acid + NaOH → sodium glutamate/MSG). In electrophoresis: pH < pI → move to cathode; pH > pI → move to anode; pH = pI → no movement. Most amino acids are chiral — the α-carbon bonds to 4 different groups; glycine (R = H) is the only non-chiral amino acid. Equal amounts of enantiomers give a racemic mixture with no net rotation of polarised light.'
       }
     }
   ],
@@ -185,10 +263,11 @@ export const note_chemistry_5_19_5 = {
     cues: [
       { id: 'cue-1', blockId: 'p-structure-2', prompt: 'What is a zwitterion, and why do amino acids form them in solution?' },
       { id: 'cue-2', blockId: 'eq-ph-states', prompt: 'Write the ionic forms of an amino acid at low, neutral, and high pH.' },
-      { id: 'cue-3', blockId: 'p-pi-1', prompt: 'Define the isoelectric point (pI). What is the charge at the pI?' },
-      { id: 'cue-4', blockId: 'p-electrophoresis-2', prompt: 'Explain how amino acids move during electrophoresis at different pH values.' }
+      { id: 'cue-3', blockId: 'callout-pi-interpretation', prompt: 'What does a low isoelectric point vs a high isoelectric point tell you about an amino acid?' },
+      { id: 'cue-4', blockId: 'list-chirality', prompt: 'Why are most amino acids optically active? Which amino acid is the exception and why?' },
+      { id: 'cue-5', blockId: 'p-electrophoresis-2', prompt: 'Explain how amino acids move during electrophoresis at different pH values.' }
     ],
-    summaryText: 'Amino acids: H₂N−CHR−COOH. In solution, form zwitterion ⁺H₃N−CHR−COO⁻ (neutral pH, charge 0). Low pH: ⁺H₃N−CHR−COOH (charge +1). High pH: H₂N−CHR−COO⁻ (charge −1). Isoelectric point (pI): pH where net charge = 0. Electrophoresis: pH < pI → positive → cathode; pH = pI → no charge → no movement; pH > pI → negative → anode.',
+    summaryText: 'Zwitterion: ⁺H₃N−CHR−COO⁻ (charge 0 at pI). Low pH: ⁺charge (+1); high pH: −charge (−1). Low pI → acidic; high pI → basic; at pI → zwitterion. Amphoteric → forms salts with acids/bases (MSG). Most amino acids chiral (α-C has 4 different groups); glycine NOT chiral (R = H, has 2 identical H). Racemic mixture: equal enantiomers → no rotation.',
     ready: false
   },
   evidence: [

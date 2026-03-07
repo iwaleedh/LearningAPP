@@ -97,6 +97,34 @@ export const note_chemistry_5_19_0 = {
       }
     },
     {
+      id: 'h-amide-physical-props',
+      type: 'heading',
+      data: { text: 'Physical Properties of Amides', level: 2 }
+    },
+    {
+      id: 'list-amide-state',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'All simple aliphatic amides are solids at room temperature EXCEPT methanamide (HCONH₂), which is a liquid' },
+          { text: 'Methanamide (1C), ethanamide (2C), propanamide (3C), butanamide (4C) — all share the −CONH₂ functional group' },
+          { text: 'Lower aliphatic amides (short chain) are soluble in water — due to hydrogen bonding between the polar −CONH₂ group and water molecules' },
+          { text: 'Both O (on C=O) and N (on NH₂) are electronegative → both form hydrogen bonds with water' },
+          { text: 'As the hydrocarbon chain length increases, London dispersion forces become more dominant, reducing water solubility' }
+        ]
+      }
+    },
+    {
+      id: 'callout-amide-hbond',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Why Amides Are Soluble in Water',
+        text: 'Two electronegative atoms in the amide group allow H-bonding: O of C=O acts as H-bond acceptor; N−H acts as H-bond donor. This makes short-chain amides very water-soluble. Longer chains have more London forces → less soluble despite the polar head group.'
+      }
+    },
+    {
       id: 'h-amino-acid-names',
       type: 'heading',
       data: { text: 'Amino Acid Nomenclature', level: 2 }
@@ -105,21 +133,35 @@ export const note_chemistry_5_19_0 = {
       id: 'p-amino-acid-1',
       type: 'paragraph',
       data: {
-        text: 'Amino acids are compounds with both an amino group (−NH₂) and a carboxylic acid group (−COOH) on the same molecule. The general structure is H₂N−CHR−COOH, where R is the side chain (varies for 20 amino acids). IUPAC naming is based on the carboxylic acid, with the amino group as a substituent.'
+        text: 'Amino acids are compounds with both an amino group (−NH₂) and a carboxylic acid group (−COOH) on the same molecule, separated by the α-carbon. The general formula is H₂N−CHR−COOH, where R is the side chain that varies among the 20 standard amino acids. They are also referred to as α-amino acids (or 2-amino acids) because both groups are on the same (α) carbon.'
+      }
+    },
+    {
+      id: 'list-amino-acid-features',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '20 amino acids found in humans — some made naturally, others obtained from diet' },
+          { text: 'All share the same backbone structure: H₂N−CHR−COOH (the α-carbon holds both groups)' },
+          { text: 'The R group (side chain) is what differentiates one amino acid from another' },
+          { text: 'Glycine is the simplest: R = H (the only amino acid where R is just a hydrogen atom)' },
+          { text: 'You are NOT expected to memorise all 20 structures, but you must identify an amino acid when shown one (look for both −NH₂ and −COOH on the same structure)' }
+        ]
+      }
+    },
+    {
+      id: 'p-amino-acid-iupac',
+      type: 'paragraph',
+      data: {
+        text: 'Amino acids are usually called by their common names (glycine, alanine, leucine, glutamic acid, lysine, etc.). IUPAC names treat them as amine derivatives of carboxylic acids — use the prefix "amino−" followed by the position number to indicate where the amino group is attached on the parent carboxylic acid chain.'
       }
     },
     {
       id: 'eq-amino-acid-examples',
       type: 'equation',
       data: {
-        html: 'H₂N−CH₂−COOH = 2−aminoethanal (glycine)<br />H₂N−CH(CH₃)−COOH = 2−aminopropanoic acid (alanine)<br />H₂N−CH(CH₂OH)−COOH = 2−amino−3−hydroxypropanoic acid (serine)'
-      }
-    },
-    {
-      id: 'p-amino-acid-2',
-      type: 'paragraph',
-      data: {
-        text: 'Amino acids are much more commonly referred to by their common names (glycine, alanine, valine, leucine, etc.). The α-carbon is the carbon bonded to both −NH₂ and −COOH. The R group varies and determines the chemical properties and identity of the amino acid. All 20 standard amino acids are α-amino acids.'
+        html: 'H₂N−CH₂−COOH = 2-aminoethanoic acid (glycine)<br />H₂N−CH(CH₃)−COOH = 2-aminopropanoic acid (alanine)<br />H₂N−CH₂CH₂−COOH = 3-aminopropanoic acid<br />H₂N−CH(CH₂OH)−COOH = 2-amino-3-hydroxypropanoic acid (serine)<br /><br />The base chain = the carboxylic acid; the amino group is a substituent with its position number.'
       }
     },
     {
@@ -130,8 +172,10 @@ export const note_chemistry_5_19_0 = {
           { text: 'Primary amine: RNH₂ (e.g., methanamine, phenylamine)', checked: false },
           { text: 'Secondary amine: R₂NH (e.g., N−methylethanamine)', checked: false },
           { text: 'Tertiary amine: R₃N (e.g., N,N−dimethylmethanamine)', checked: false },
-          { text: 'Amide: RCONH₂, RCONHR, RCONR₂ (−amide suffix)', checked: false },
-          { text: 'Amino acid: H₂N−CHR−COOH (α-amino acid)', checked: false }
+          { text: 'Amide: RCONH₂ — all solids except methanamide (liquid); soluble in water via H-bonding', checked: false },
+          { text: 'Amide solubility ↓ as chain length ↑ (London forces increase)', checked: false },
+          { text: 'Amino acid: H₂N−CHR−COOH (α-amino acid); named as "X-aminocarboxylic acid"', checked: false },
+          { text: 'Glycine: R = H — simplest amino acid; named by common names in practice', checked: false }
         ]
       }
     },
@@ -150,7 +194,7 @@ export const note_chemistry_5_19_0 = {
       id: 'summary-names',
       type: 'summary',
       data: {
-        text: 'Amines are classified by the number of carbon groups on N: primary (RNH₂), secondary (R₂NH), tertiary (R₃N). Alkylamines use the −amine suffix (methanamine, ethanamine). Arylamines have N attached to a benzene ring (phenylamine, C₆H₅NH₂). Amides have a C=O bonded to N and use the −amide suffix (methanamide, ethanamide). Amino acids have both −NH₂ and −COOH and are referred to by common names (glycine, alanine, etc.) or IUPAC names (2−aminoethanoic acid).'
+        text: 'Amines are classified by the number of carbon groups on N: primary (RNH₂), secondary (R₂NH), tertiary (R₃N). Alkylamines use the −amine suffix. Arylamines have N on a benzene ring (phenylamine). Amides (RCONH₂) are all solids except methanamide (liquid). Lower amides are water-soluble due to H-bonding through their electronegative O and N atoms; solubility decreases as chain length increases. Amino acids (H₂N−CHR−COOH) are α-amino acids; IUPAC names use the "amino-" prefix (e.g., 2-aminoethanoic acid = glycine); 20 standard amino acids exist, differentiated by their R group.'
       }
     }
   ],
@@ -159,10 +203,10 @@ export const note_chemistry_5_19_0 = {
     cues: [
       { id: 'cue-1', blockId: 'p-amine-2', prompt: 'How are primary, secondary, and tertiary alkylamines named?' },
       { id: 'cue-2', blockId: 'p-arylamine-1', prompt: 'What is phenylamine, and how does arylamine naming differ from alkylamine naming?' },
-      { id: 'cue-3', blockId: 'p-amide-1', prompt: 'Define an amide and explain the −amide naming convention.' },
-      { id: 'cue-4', blockId: 'p-amino-acid-1', prompt: 'What is the structure of an amino acid, and name the key functional groups?' }
+      { id: 'cue-3', blockId: 'list-amide-state', prompt: 'What are the key physical properties of amides? Which is the exception to the "all solids" rule?' },
+      { id: 'cue-4', blockId: 'p-amino-acid-iupac', prompt: 'How are amino acids named using IUPAC rules? Give two examples.' }
     ],
-    summaryText: 'Alkylamines: primary RNH₂ (methanamine), secondary R₂NH (N−methylethanamine), tertiary R₃N (N,N−dimethylmethanamine). Arylamines: N bonded to benzene ring, e.g. phenylamine (C₆H₅NH₂). Amides: RCONH₂/RCONHR/RCONR₂ with −amide suffix. Amino acids: H₂N−CHR−COOH (α-amino acids), named by common names (glycine, alanine, etc.).',
+    summaryText: 'Alkylamines: primary RNH₂, secondary R₂NH, tertiary R₃N (−amine suffix). Arylamines: N on benzene ring (phenylamine). Amides: RCONH₂ — all solids EXCEPT methanamide (liquid); water-soluble via H-bonding (O and N both electronegative). Amino acids: H₂N−CHR−COOH (α-amino acid); IUPAC = "X-amino[carboxylic acid]" e.g. 2-aminoethanoic acid (glycine).',
     ready: false
   },
   evidence: [

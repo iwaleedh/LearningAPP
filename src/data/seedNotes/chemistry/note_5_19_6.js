@@ -43,6 +43,83 @@ export const note_chemistry_5_19_6 = {
       }
     },
     {
+      id: 'h-dipeptide-order',
+      type: 'heading',
+      data: { text: 'Dipeptides: Order Matters', level: 2 }
+    },
+    {
+      id: 'list-dipeptide-order',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'When two DIFFERENT amino acids (e.g., alanine and glycine) combine, TWO different dipeptides can form' },
+          { text: 'Alanine–Glycine (Ala-Gly): the carboxyl end of alanine bonds to the amino end of glycine' },
+          { text: 'Glycine–Alanine (Gly-Ala): the carboxyl end of glycine bonds to the amino end of alanine' },
+          { text: 'These two products are DIFFERENT molecules — sequences are read from N-terminal (free −NH₂) to C-terminal (free −COOH)' },
+          { text: 'Both are formed by a condensation reaction with loss of water (H₂O)' }
+        ]
+      }
+    },
+    {
+      id: 'eq-dipeptide-both',
+      type: 'equation',
+      data: {
+        html: 'Possible dipeptides from Ala + Gly:<br />Ala−Gly: H₂N−CH(CH₃)−CO−NH−CH₂−COOH + H₂O<br />Gly−Ala: H₂N−CH₂−CO−NH−CH(CH₃)−COOH + H₂O<br /><br />Both are formed by condensation (−CO−NH− linkage with loss of H₂O).'
+      }
+    },
+    {
+      id: 'h-tripeptides',
+      type: 'heading',
+      data: { text: 'Tripeptides: 6 Possible Combinations', level: 2 }
+    },
+    {
+      id: 'list-tripeptides',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '3 different amino acids (e.g., Ala, Gly, Glu) can be arranged in 3! = 6 different sequences' },
+          { text: 'Three-letter codes are used to summarise (e.g., Ala, Gly, Glu are their codes)' },
+          { text: 'You are NOT expected to memorise three-letter codes — they would be provided in the exam' },
+          { text: 'The 6 tripeptide sequences: Ala-Gly-Glu / Ala-Glu-Gly / Gly-Ala-Glu / Gly-Glu-Ala / Glu-Ala-Gly / Glu-Gly-Ala' },
+          { text: 'Each arrangement gives a different molecule with different properties' }
+        ]
+      }
+    },
+    {
+      id: 'h-polypeptide-molar-mass',
+      type: 'heading',
+      data: { text: 'Polypeptides and Molar Masses', level: 2 }
+    },
+    {
+      id: 'p-polypeptide-1',
+      type: 'paragraph',
+      data: {
+        text: 'Polypeptides are long-chain condensation polymers of many amino acids. Long chain polypeptides that have adopted specific 3D shapes and functions are classified as proteins. Proteins have extremely large molar masses due to the large number of amino acids they contain.'
+      }
+    },
+    {
+      id: 'p-polypeptide-2',
+      type: 'paragraph',
+      data: {
+        text: 'It is important to know both which amino acids are present AND the order (sequence) in which they appear — even a single amino acid substitution can dramatically alter protein function (e.g., sickle cell disease results from one amino acid change in haemoglobin).'
+      }
+    },
+    {
+      id: 'table-molar-masses',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Examples of protein molar masses',
+        headers: ['Protein', 'Approx. amino acids', 'Approx. Mᵣ (g mol⁻¹)'],
+        rows: [
+          ['Insulin', '51', '5,700'],
+          ['Haemoglobin', '574', '66,000'],
+          ['Ferritin', '~4,500', '480,000']
+        ]
+      }
+    },
+    {
       id: 'h-protein-structure-primary',
       type: 'heading',
       data: { text: 'Protein Structure: Primary, Secondary, Tertiary, Quaternary', level: 2 }
@@ -100,7 +177,7 @@ export const note_chemistry_5_19_6 = {
       id: 'p-hydrolysis-1',
       type: 'paragraph',
       data: {
-        text: 'Proteins can be hydrolysed (broken down) to amino acids by heating with dilute hydrochloric acid or dilute sodium hydroxide solution. The acid or base hydrolyses the peptide bonds (the −CO−NH− linkages), cleaving the polypeptide chain into individual amino acids.'
+        text: 'Proteins can be hydrolysed (broken down) to individual amino acids by prolonged heating with concentrated hydrochloric acid. The acid hydrolyses all peptide bonds (the −CO−NH− linkages), cleaving the polypeptide chain into its constituent amino acids. Acidic conditions protonate all the amino groups (−NH₂ → −NH₃⁺).'
       }
     },
     {
@@ -125,15 +202,64 @@ export const note_chemistry_5_19_6 = {
       }
     },
     {
+      id: 'h-chromatography',
+      type: 'heading',
+      data: { text: 'Identifying Amino Acids by Paper Chromatography', level: 2 }
+    },
+    {
+      id: 'list-chromatography-steps',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          { text: 'Hydrolyse the protein (concentrated HCl, prolonged heating) → gives a mixture of individual amino acids' },
+          { text: 'Spot the hydrolysate onto chromatography paper at the baseline' },
+          { text: 'Run the chromatogram: allow the solvent front to move up the paper' },
+          { text: 'Dry the paper — amino acids are COLOURLESS and cannot be seen at this stage' },
+          { text: 'Spray with ninhydrin solution — a developing agent that reacts with amino acids to produce a purple/lilac colour' },
+          { text: 'Identify each spot by calculating its RF value' },
+          { text: 'Compare RF values to known control samples run on the same chromatogram to identify each amino acid' }
+        ]
+      }
+    },
+    {
+      id: 'eq-rf-value',
+      type: 'equation',
+      data: {
+        html: 'R<sub>F</sub> = <span class="nb-frac"><span class="nb-num">distance moved by spot</span><span class="nb-den">distance moved by solvent front</span></span><br /><br />Important: R<sub>F</sub> value must ALWAYS be less than 1 (spot cannot travel further than solvent front). If R<sub>F</sub> > 1, a calculation error has been made.'
+      }
+    },
+    {
+      id: 'callout-ninhydrin',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Ninhydrin: Why It\'s Needed',
+        text: 'Amino acids are colourless compounds — they cannot be seen on chromatography paper under normal light. Ninhydrin is sprayed as a developing agent; it reacts with amino acids to produce a distinctive purple/lilac colour. Each spot can then be measured for its RF value and compared against control samples to identify which amino acid is present.'
+      }
+    },
+    {
+      id: 'callout-chrom-note',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Exam Scope for Chromatography',
+        text: 'At A2 level you need to know: the overall method (hydrolyse → spot → run → ninhydrin → RF calculation), and be able to identify amino acids using RF values and control samples. You do NOT need to know the detailed chemistry of how ninhydrin works, or specific two-dimensional chromatography techniques — these are more advanced techniques.'
+      }
+    },
+    {
       id: 'checklist-protein-structure',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Peptide bond: −CO−NH− linkage formed by condensation of amino acids', checked: false },
-          { text: 'Primary structure: linear sequence of amino acids (N-terminal to C-terminal)', checked: false },
-          { text: 'Secondary structure: α-helix or β-sheet, stabilised by backbone hydrogen bonds', checked: false },
-          { text: 'Tertiary structure: 3D shape, stabilised by H-bonds, disulfide bonds, ionic interactions', checked: false },
-          { text: 'Quaternary structure: arrangement of multiple polypeptide chains (subunits)', checked: false }
+          { text: 'Peptide bond: −CO−NH− formed by condensation of amino acids (loss of H₂O)', checked: false },
+          { text: '2 different amino acids → 2 possible dipeptides (sequence order matters)', checked: false },
+          { text: '3 different amino acids → 6 possible tripeptides (3! = 6 arrangements)', checked: false },
+          { text: 'Primary: sequence (N→C-terminal); Secondary: α-helix/β-sheet via backbone H-bonds', checked: false },
+          { text: 'Tertiary: 3D shape from H-bonds, disulfide bonds (cysteine S−S), ionic interactions', checked: false },
+          { text: 'Quaternary: multiple polypeptide subunits (e.g., haemoglobin = 4 subunits)', checked: false },
+          { text: 'Hydrolysis: prolonged heating with CONCENTRATED HCl → breaks peptide bonds → amino acids', checked: false },
+          { text: 'Chromatography: ninhydrin → purple spots → RF = spot dist/solvent dist (< 1) → compare to controls', checked: false }
         ]
       }
     },
@@ -152,19 +278,20 @@ export const note_chemistry_5_19_6 = {
       id: 'summary-proteins',
       type: 'summary',
       data: {
-        text: 'Peptide bonds form when two amino acids condense, with loss of water, joining the carboxyl of one to the amino group of the next (−CO−NH− linkage). Proteins have four levels of structure: Primary (amino acid sequence), Secondary (α-helix/β-sheet from backbone H-bonding), Tertiary (3D fold from side chain interactions: H-bonds, disulfide bonds, ionic interactions), Quaternary (multi-subunit arrangement). Disulfide bonds between cysteines are strong covalent links. Hydrophobic residues bury inside; hydrophilic residues expose to water. Proteins are hydrolysed by heating with dilute HCl or NaOH, breaking all peptide bonds to yield individual amino acids.'
+        text: 'Peptide bonds form by condensation of amino acids (−CO−NH− + H₂O). Two different amino acids give 2 possible dipeptides; three different amino acids give 6 possible tripeptides. Polypeptides are condensation polymers; proteins have large Mᵣ values (insulin: 5700, haemoglobin: 66000, ferritin: 480000). Protein structure: Primary (amino acid sequence), Secondary (α-helix/β-sheet via H-bonds), Tertiary (3D fold: H-bonds, disulfide bonds S−S, ionic interactions, hydrophobic), Quaternary (multi-subunit). Proteins are hydrolysed by prolonged heating with concentrated HCl, breaking all peptide bonds to yield individual amino acids. Amino acids identified by paper chromatography: spots developed with ninhydrin (purple colour); RF = distance by spot ÷ distance by solvent front (always < 1); compare to known control samples.'
       }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'eq-peptide-formation', prompt: 'Write the equation for condensation of two amino acids to form a peptide bond.' },
-      { id: 'cue-2', blockId: 'p-structure-secondary', prompt: 'Describe α-helix and β-sheet secondary structures and their hydrogen bonding.' },
-      { id: 'cue-3', blockId: 'p-structure-tertiary', prompt: 'List the four types of interactions that stabilise tertiary structure.' },
-      { id: 'cue-4', blockId: 'p-hydrolysis-2', prompt: 'Describe protein hydrolysis with acid and explain what happens to the peptide bonds.' }
+      { id: 'cue-1', blockId: 'eq-dipeptide-both', prompt: 'How many dipeptides can form from two different amino acids? Why?' },
+      { id: 'cue-2', blockId: 'list-tripeptides', prompt: 'How many tripeptides can form from 3 different amino acids? What codes are used to summarise them?' },
+      { id: 'cue-3', blockId: 'p-structure-tertiary', prompt: 'List the four types of interactions that stabilise tertiary structure of a protein.' },
+      { id: 'cue-4', blockId: 'p-hydrolysis-1', prompt: 'How are proteins hydrolysed in the lab? What conditions are required?' },
+      { id: 'cue-5', blockId: 'eq-rf-value', prompt: 'How do you calculate RF value in chromatography? What must it always be less than?' }
     ],
-    summaryText: 'Peptide bond: H₂N−CHR₁−COOH + H₂N−CHR₂−COOH → H₂N−CHR₁−CO−NH−CHR₂−COOH + H₂O. Primary: amino acid sequence. Secondary: α-helix (H-bonds every 4 residues) or β-sheet (side-by-side H-bonding). Tertiary: 3D fold from H-bonds, disulfide bonds (cysteine), ionic interactions, hydrophobic effect. Quaternary: multiple subunits (if present). Hydrolysis: heat with HCl/NaOH → individual amino acids.',
+    summaryText: 'Peptide bond: −CO−NH− (condensation, loss H₂O). 2 amino acids → 2 dipeptides; 3 amino acids → 6 tripeptides. Primary: sequence. Secondary: α-helix/β-sheet. Tertiary: H-bonds, S−S bonds, ionic, hydrophobic. Quaternary: multi-subunit. Hydrolysis: concentrated HCl, prolonged heat → amino acids. Chromatography: spot + ninhydrin → purple; RF = spot/solvent front (< 1).',
     ready: false
   },
   evidence: [
