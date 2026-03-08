@@ -113,10 +113,102 @@ export const note_chemistry_1_3_1 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: 'NaCl Structure',
-        text: 'In sodium chloride, each Na⁺ ion is surrounded by 6 Cl⁻ ions, and each Cl⁻ ion is surrounded by 6 Na⁺ ions. This is called a <strong>co-ordination number of 6</strong>. The formula NaCl represents the <em>simplest whole-number ratio</em> of ions — it is the empirical formula of the lattice.'
+        title: 'NaCl Structure — 6:6 Co-ordination',
+        text: 'In sodium chloride, each Na⁺ ion is surrounded by 6 Cl⁻ ions, and each Cl⁻ ion is surrounded by 6 Na⁺ ions. This is called <strong>6:6 co-ordination</strong>.<br/><br/>Why 6 and not 8? — Na⁺ is small (only 52% the size of Cl⁻). Trying to pack 8 Cl⁻ ions around the smaller Na⁺ would force the Cl⁻ ions to touch each other, introducing repulsions that destabilise the lattice. Six is the maximum that fits without Cl⁻ ions touching.<br/><br/>The formula NaCl represents the <em>simplest whole-number ratio</em> of ions — it is the empirical formula of the lattice, not a molecular formula.'
       },
       terms: ['Co-ordination number']
+    },
+    {
+      id: 'h-cscl',
+      type: 'heading',
+      data: { text: 'Caesium Chloride (CsCl) — 8:8 Co-ordination', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-cscl',
+      type: 'paragraph',
+      data: { text: 'CsCl has a <strong>different structure</strong> to NaCl even though both compounds have formula 1:1. The Cs⁺ ion is much larger than Na⁺ (about 93% the size of Cl⁻), so 8 Cl⁻ ions can surround each Cs⁺ without touching each other. This gives a more stable arrangement with more ion contacts and greater lattice energy.' },
+      terms: []
+    },
+    {
+      id: 'svg-cscl',
+      type: 'svg',
+      data: {
+        caption: 'Figure: CsCl structure — Cs⁺ (green) centred inside a cube of 8 Cl⁻ (red). Each Cs⁺ is 8-co-ordinated; each Cl⁻ is also surrounded by 8 Cs⁺ → 8:8 co-ordination.',
+        svg: `<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <text x="210" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">CsCl Structure — 8:8 Co-ordination</text>
+
+  <!-- Cube edges (back) -->
+  <line x1="100" y1="60" x2="200" y2="60" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="100" y1="60" x2="100" y2="160" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="100" y1="60" x2="155" y2="30" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Cube edges (front) -->
+  <line x1="200" y1="60" x2="255" y2="30" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="200" y1="60" x2="200" y2="160" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="100" y1="160" x2="200" y2="160" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="100" y1="160" x2="155" y2="130" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="200" y1="160" x2="255" y2="130" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="155" y1="30" x2="255" y2="30" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="255" y1="30" x2="255" y2="130" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="155" y1="130" x2="255" y2="130" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="155" y1="30" x2="155" y2="130" stroke="#64748b" stroke-width="1.5"/>
+
+  <!-- 8 Cl⁻ ions at cube corners -->
+  <circle cx="100" cy="60" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
+  <text x="100" y="64" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="200" cy="60" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="200" y="64" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="155" cy="30" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="155" y="34" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="255" cy="30" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="255" y="34" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="100" cy="160" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="100" y="164" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="200" cy="160" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="200" y="164" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="155" cy="130" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="155" y="134" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <circle cx="255" cy="130" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="255" y="134" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
+
+  <!-- Cs⁺ ion at cube centre -->
+  <circle cx="178" cy="95" r="20" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <text x="178" y="92" text-anchor="middle" fill="#166534" font-size="10" font-weight="bold">Cs⁺</text>
+  <text x="178" y="106" text-anchor="middle" fill="#166534" font-size="8">centre</text>
+
+  <!-- Labels -->
+  <text x="210" y="200" text-anchor="middle" fill="#1e40af" font-size="11" font-weight="bold">8:8 co-ordination</text>
+  <text x="210" y="215" text-anchor="middle" fill="#64748b" font-size="10">Each Cs⁺ surrounded by 8 Cl⁻ (at cube corners)</text>
+  <text x="210" y="228" text-anchor="middle" fill="#64748b" font-size="10">Each Cl⁻ surrounded by 8 Cs⁺ (by symmetry)</text>
+
+  <!-- Comparison annotation -->
+  <rect x="300" y="50" width="110" height="80" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="355" y="67" text-anchor="middle" fill="#166534" font-weight="bold" font-size="10">NaCl vs CsCl</text>
+  <text x="355" y="82" text-anchor="middle" fill="#374151" font-size="9">NaCl: 6:6 coord.</text>
+  <text x="355" y="95" text-anchor="middle" fill="#374151" font-size="9">Na⁺ = 52% of Cl⁻</text>
+  <text x="355" y="108" text-anchor="middle" fill="#374151" font-size="9">CsCl: 8:8 coord.</text>
+  <text x="355" y="121" text-anchor="middle" fill="#374151" font-size="9">Cs⁺ = 93% of Cl⁻</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
+      id: 'callout-radius-ratio',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Radius Ratio — Why NaCl and CsCl Differ',
+        text: 'Which co-ordination number a 1:1 ionic compound adopts depends on the <strong>radius ratio</strong> of the positive ion to the negative ion:<br/><br/><strong>Radius ratio &gt; 73%</strong> → 8:8 co-ordination (e.g. CsCl: Cs⁺ is ~93% size of Cl⁻)<br/><strong>Radius ratio 41–73%</strong> → 6:6 co-ordination (e.g. NaCl: Na⁺ is ~52% size of Cl⁻)<br/><strong>Radius ratio &lt; 41%</strong> → 4:4 co-ordination (beyond A-level)<br/><br/>The rule: pack as many ions of opposite charge around a given ion as possible — but without ions of the <em>same</em> charge touching each other, which would cause repulsions and greatly reduce lattice stability.'
+      },
+      terms: ['Radius ratio']
     },
     {
       id: 'h-props',
@@ -131,12 +223,80 @@ export const note_chemistry_1_3_1 = {
         caption: 'Properties of ionic compounds explained by structure',
         headers: ['Property', 'Explanation'],
         rows: [
-          ['<strong>High melting and boiling points</strong>', 'Large amounts of energy are needed to overcome the many, strong electrostatic attractions throughout the giant lattice.'],
-          ['<strong>Brittle / cleavage</strong>', 'When a force is applied, the planes of ions shift. Ions of the same charge align next to each other, causing repulsion, and the crystal shatters along flat planes.'],
-          ['<strong>Conduct electricity when molten or dissolved in water</strong>', 'Ions are free to move and carry charge. In the solid state, ions are locked in position and cannot move, so solids do NOT conduct.'],
-          ['<strong>Do NOT conduct as a solid</strong>', 'Ions cannot move in the rigid crystal lattice.'],
-          ['<strong>Usually dissolve in polar solvents (e.g. water)</strong>', 'Water molecules can surround and hydrate the ions, breaking them away from the lattice. (More detail in intermolecular forces topic.)']
+          ['<strong>High melting and boiling points</strong>', 'Large amounts of energy are needed to overcome the many, strong electrostatic attractions throughout the giant lattice. Factors: higher ionic charge (MgO > NaCl) and smaller ionic radius both increase lattice energy and melting point.'],
+          ['<strong>Brittle / cleavage along flat planes</strong>', 'When a mechanical force shifts one ion layer, ions of the same charge align next to each other. The resulting like-charge repulsions cause the crystal to shatter along a flat cleavage plane.'],
+          ['<strong>Electrical conductivity — solid: NO</strong>', 'Ions are locked in fixed positions in the rigid lattice and cannot move — no charge carriers.'],
+          ['<strong>Electrical conductivity — molten or in solution: YES</strong>', 'Ions are free to move. In molten NaCl: Na⁺ migrates to cathode (Na⁺ + e⁻ → Na), Cl⁻ migrates to anode (2Cl⁻ → Cl₂ + 2e⁻). This is electrolysis — a chemical change, not just physical conduction.'],
+          ['<strong>Soluble in polar solvents (e.g. water)</strong>', 'Water molecules hydrate the ions: positive ions attract the lone pairs on O; negative ions form hydrogen bonds with H. This breaks the lattice if the overall energy released by hydration exceeds the lattice energy.'],
+          ['<strong>Insoluble in organic solvents</strong>', 'Organic solvents (e.g. hexane) are non-polar. Their weak van der Waals attractions to ions cannot overcome the strong ionic lattice energy. The ions are not hydrated and remain locked in the lattice.']
         ]
+      },
+      terms: []
+    },
+    {
+      id: 'svg-brittle',
+      type: 'svg',
+      data: {
+        caption: 'Figure: Brittleness of ionic crystals — when layers shift, like-charged ions align and repel, shattering the crystal',
+        svg: `<svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <!-- BEFORE (left) -->
+  <text x="120" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">Before stress</text>
+  <!-- Row 1 -->
+  <circle cx="40" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="40" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="80" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="80" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="120" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="120" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="160" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="160" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="200" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="200" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <!-- Row 2 -->
+  <circle cx="40" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="40" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="80" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="80" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="120" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="120" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="160" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="160" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="200" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="200" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <text x="120" y="150" text-anchor="middle" fill="#059669" font-size="10">+ and − alternate → attract → stable</text>
+
+  <!-- ARROW -->
+  <text x="260" y="75" text-anchor="middle" fill="#dc2626" font-size="24">→</text>
+  <text x="260" y="92" text-anchor="middle" fill="#dc2626" font-size="10">stress</text>
+
+  <!-- AFTER (right) -->
+  <text x="390" y="18" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="12">After layer shift</text>
+  <!-- Row 1 (shifted right by one position) -->
+  <circle cx="310" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="310" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="350" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="350" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="390" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="390" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="430" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="430" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="470" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="470" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <!-- Row 2 (shifted right) -->
+  <circle cx="330" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="330" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="370" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="370" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="410" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="410" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="450" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <!-- Repulsion arrows -->
+  <line x1="310" y1="64" x2="330" y2="85" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="350" y1="66" x2="370" y2="85" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="390" y1="64" x2="410" y2="85" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="390" y="150" text-anchor="middle" fill="#dc2626" font-size="10">like charges align → repel → crystal shatters</text>
+</svg>`
       },
       terms: []
     }
@@ -145,11 +305,13 @@ export const note_chemistry_1_3_1 = {
     enabled: true,
     cues: [
       { id: 'c1', blockId: 'p-lattice', prompt: 'Describe the structure of a giant ionic lattice.' },
-      { id: 'c2', blockId: 'table-props', prompt: 'Explain why ionic compounds have high melting points.' },
-      { id: 'c3', blockId: 'table-props', prompt: 'Explain why ionic compounds are brittle but also why they can conduct electricity when melted.' },
-      { id: 'c4', blockId: 'table-props', prompt: 'Why does solid NaCl not conduct electricity, but molten NaCl does?' }
+      { id: 'c2', blockId: 'callout-nacl-structure', prompt: 'Explain why NaCl is 6:6 co-ordinated and not 8:8.' },
+      { id: 'c3', blockId: 'callout-radius-ratio', prompt: 'Explain why CsCl has 8:8 co-ordination but NaCl has 6:6 co-ordination. Reference the radius ratio in your answer.' },
+      { id: 'c4', blockId: 'table-props', prompt: 'Explain why ionic compounds are brittle but also why they can conduct electricity when melted.' },
+      { id: 'c5', blockId: 'table-props', prompt: 'Why does solid NaCl not conduct electricity but molten NaCl does? Name the products formed at each electrode.' },
+      { id: 'c6', blockId: 'table-props', prompt: 'Why are ionic compounds insoluble in organic solvents like hexane?' }
     ],
-    summaryText: 'Giant ionic lattice = 3D array of alternating + and − ions held by strong electrostatic forces. High mp/bp (strong forces). Brittle (ion planes shift, like charges align, repel + shatter). Conducts when molten or dissolved (ions free to move). Does NOT conduct as solid.',
+    summaryText: 'Giant ionic lattice = 3D array of alternating + and − ions held by strong electrostatic forces. NaCl: 6:6 co-ordination (Na⁺ is 52% Cl⁻ size → can only fit 6 Cl⁻ without repulsions). CsCl: 8:8 (Cs⁺ is 93% Cl⁻ size → 8 Cl⁻ fit without touching). High mp/bp (strong forces; increases with charge and decreasing radius). Brittle (layer shift aligns like charges → repulsion → shatters). Conducts when molten (Na→Na at cathode; Cl⁻→Cl₂ at anode — electrolysis). Insoluble in organic solvents (weak VdW cannot overcome lattice energy).',
     ready: false
   },
   evidence: []
