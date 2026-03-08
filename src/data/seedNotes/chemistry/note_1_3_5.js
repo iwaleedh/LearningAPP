@@ -94,6 +94,16 @@ export const note_chemistry_1_3_5 = {
       terms: ['Bonding continuum', 'Polar covalent']
     },
     {
+      id: 'callout-diagonal',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Diagonal Relationships in the Periodic Table',
+        text: 'Some pairs of elements in diagonally adjacent positions in the periodic table have very similar electronegativities and chemical behaviour. This is the <strong>diagonal relationship</strong>:<br/><br/><strong>Pauling electronegativity values (selected):</strong><br/>• Li (1.0) ≈ Mg (1.2)<br/>• Be (1.5) ≈ Al (1.5)<br/>• B (2.0) ≈ Si (1.8)<br/><br/>Consequence: BeF₂ behaves more like AlF₃ than like MgF₂; Li acts more like Mg than Na in some reactions. This arises because a smaller radius (going up) and lower charge (going left) combine to give similar charge densities diagonally.<br/><br/><strong>Examiner note:</strong> The diagonal relationship is a good illustration of why the Pauling scale and charge density together explain bonding character across the periodic table.'
+      },
+      terms: ['Diagonal relationship', 'Pauling scale']
+    },
+    {
       id: 'h-practice-en',
       type: 'heading',
       data: { text: 'Practice Questions', level: 2 },

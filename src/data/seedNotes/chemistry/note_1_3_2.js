@@ -8,7 +8,7 @@ export const note_chemistry_1_3_2 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Define covalent bonding. Draw dot-and-cross diagrams for covalent molecules including double bonds and dative covalent bonds. Understand lone pairs.' },
+      data: { text: 'Define covalent bonding. Draw dot-and-cross diagrams for covalent molecules including double bonds and dative covalent bonds. Understand lone pairs. Recognise exceptions to the octet rule: BF₃ (electron deficient), PCl₅ (expanded octet), NCl₅ (impossible — no 2d orbitals).' },
       terms: []
     },
     {
@@ -70,9 +70,25 @@ export const note_chemistry_1_3_2 = {
       data: {
         style: 'key',
         title: 'Dative Covalent Bond',
-        text: 'A <strong>dative covalent bond</strong> (also called a co-ordinate bond) is a covalent bond in which <em>both electrons in the shared pair come from the SAME atom</em>. This atom is called the <strong>donor</strong>; the atom accepting the pair is the <strong>acceptor</strong>.<br/><br/>Once formed, a dative bond is chemically identical to an ordinary covalent bond. It is shown with an arrow (→) pointing from donor to acceptor.<br/><br/><strong>Examples:</strong><br/>• NH₄⁺: the N atom in NH₃ donates its lone pair to H⁺ forming the ammonium ion.<br/>• SO₃ → H₂SO₄: the S atom can donate a lone pair.<br/>• Al₂Cl₆ (aluminium chloride dimer): Al accepts a lone pair from Cl.'
+        text: 'A <strong>dative covalent bond</strong> (also called a co-ordinate bond) is a covalent bond in which <em>both electrons in the shared pair come from the SAME atom</em>. This atom is called the <strong>donor</strong>; the atom accepting the pair is the <strong>acceptor</strong>.<br/><br/>Once formed, a dative bond is chemically identical to an ordinary covalent bond — it has the same length and strength. It is shown with an arrow (→) pointing from donor to acceptor.<br/><br/><strong>Examples:</strong><br/>• <strong>NH₄⁺ (ammonium ion):</strong> the N atom in NH₃ donates its lone pair to H⁺, e.g. NH₃ + HCl → NH₄⁺ + Cl⁻.<br/>• <strong>H₃O⁺ (hydroxonium ion):</strong> the O atom in H₂O donates its lone pair to H⁺, e.g. H₂O + HCl → H₃O⁺ + Cl⁻.<br/>• <strong>NH₃ + BF₃ adduct:</strong> N lone pair donated to empty orbital on B (BF₃ is electron-deficient).<br/>• <strong>Al₂Cl₆ (aluminium chloride dimer):</strong> Cl lone pairs bridge two Al atoms, each donating to an electron-deficient Al.'
       },
       terms: ['Dative covalent bond', 'Co-ordinate bond', 'Donor', 'Acceptor']
+    },
+    {
+      id: 'h-exceptions',
+      type: 'heading',
+      data: { text: 'Exceptions to the "Noble Gas (8-Electron)" Rule', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-exceptions',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Not All Covalent Molecules Obey the Octet Rule',
+        text: 'At GCSE, atoms were said to bond to achieve a noble gas (8-electron) structure. At A-level this is an <em>oversimplification</em> — there are important exceptions:<br/><br/><strong>1. Electron-deficient molecules (fewer than 8 electrons around the central atom):</strong><br/>• <strong>BF₃:</strong> Boron is in Group 3 — it can only form 3 bonds, leaving just 6 electrons around it. This is not a "problem"; boron simply has no suitable low-energy orbital to form a fourth bond under normal conditions. BF₃ instead readily accepts lone pairs (acts as a Lewis acid).<br/><br/><strong>2. Expanded octets (more than 8 electrons — Period 3+ elements only):</strong><br/>• <strong>PCl₅:</strong> Phosphorus is in Period 3 and has vacant 3d orbitals. One 3s electron is promoted into a 3d orbital, giving 5 unpaired electrons → 5 bonds. The energy released in forming 2 extra bonds outweighs the cost of promotion → energetically profitable.<br/>• <strong>SF₆:</strong> Sulfur forms 6 bonds (12 electrons around S) by using 3d orbitals similarly.<br/><br/><strong>3. Why NCl₅ cannot exist (contrast with PCl₅):</strong><br/>• Nitrogen is in Period 2 — it has <em>no 2d subshell</em>. The next orbital available (3s) is too far above the 2p in energy to be accessible. Therefore nitrogen is permanently limited to 8 electrons and cannot form more than 4 bonds (including dative).<br/><br/><strong>The real A-level rule:</strong> Atoms form as many covalent bonds as is <em>energetically profitable</em>. Bond formation releases energy; the question is whether enough energy is recovered from new bonds to justify the electron promotion cost.'
+      },
+      terms: ['Expanded octet', 'Electron deficient', 'Octet rule']
     }
   ],
   recall: {
@@ -80,10 +96,11 @@ export const note_chemistry_1_3_2 = {
     cues: [
       { id: 'c1', blockId: 'callout-def', prompt: 'Define a covalent bond. How many electrons are in a single, double and triple bond?' },
       { id: 'c2', blockId: 'list-dot', prompt: 'State two key differences between a dot-and-cross diagram of a covalent molecule and one of an ionic compound.' },
-      { id: 'c3', blockId: 'callout-dative', prompt: 'Define a dative covalent bond. Give one example of a molecule/ion that contains one.' },
-      { id: 'c4', blockId: 'callout-examples', prompt: 'How many lone pairs does nitrogen have in NH₃, and how many bonding pairs?' }
+      { id: 'c3', blockId: 'callout-dative', prompt: 'Define a dative covalent bond. Give two examples of molecules/ions that contain one, including H₃O⁺.' },
+      { id: 'c4', blockId: 'callout-examples', prompt: 'How many lone pairs does nitrogen have in NH₃, and how many bonding pairs?' },
+      { id: 'c5', blockId: 'callout-exceptions', prompt: 'Explain why BF₃ is electron deficient. Why can PCl₅ exist with 5 bonds but NCl₅ cannot?' }
     ],
-    summaryText: 'Covalent bond = mutual sharing of electron pair(s) between two non-metals. Shown in dot-and-cross diagrams (outer shell only, no brackets). Lone pairs are non-bonding electrons on an atom. Dative bond = both shared electrons from one atom (donor) to another (acceptor). Shown as arrow →.',
+    summaryText: 'Covalent bond = mutual sharing of electron pairs between two non-metals. Dative bond = both electrons donated by one atom (e.g. NH₄⁺, H₃O⁺, Al₂Cl₆). Exceptions to octet rule: BF₃ has only 6e⁻ (electron deficient); PCl₅ has 10e⁻ (expanded octet using 3d); NCl₅ impossible (N has no 2d orbitals). Atoms form as many bonds as energetically profitable.',
     ready: false
   },
   evidence: []

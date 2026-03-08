@@ -54,10 +54,20 @@ export const note_chemistry_1_3_3 = {
       type: 'callout',
       data: {
         style: 'tip',
-        title: 'Factors affecting the strength of metallic bonding',
-        text: 'Metallic bond strength increases with:<br/>• <strong>More delocalised electrons per atom</strong> (e.g., Mg²⁺ has stronger metallic bonding than Na⁺)<br/>• <strong>Smaller ionic radius</strong> (ions closer to the electron sea → stronger attraction)'
+        title: 'Factors Affecting Metallic Bond Strength',
+        text: 'Metallic bond strength (and therefore melting/boiling point) increases with:<br/>• <strong>More delocalised electrons per atom:</strong> e.g. Mg²⁺ (2 delocalised e⁻ per atom) has stronger metallic bonding than Na⁺ (1 delocalised e⁻). Al has 3 → even higher still.<br/>• <strong>Smaller ionic radius:</strong> ions sit closer to the electron sea → stronger electrostatic attraction. Mg²⁺ is smaller than Na⁺, contributing further to Mg\'s higher melting point.<br/>• <strong>More nearest neighbours:</strong> Na has 8 nearest neighbours; Mg has 12 (different packing). More interactions per atom → more energy needed to disrupt.<br/><br/><strong>Melting point trend (approximate):</strong> Na 98°C → Mg 650°C → Al 660°C — reflecting increasing delocalisable electrons and stronger lattice.'
       },
       terms: []
+    },
+    {
+      id: 'callout-transition-metals',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Transition Metals: Extra Strong Metallic Bonding',
+        text: 'Transition metals (e.g. Fe, Cu, Ti, W) have particularly strong metallic bonding because they delocalise <strong>both their 4s electrons AND some of their 3d electrons</strong> into the sea. This gives a much larger "sea" of electrons per atom.<br/><br/>Results:<br/>• Very high melting and boiling points (e.g. tungsten melts at 3422°C)<br/>• Very high tensile strength and hardness<br/><br/><strong>Boiling point vs melting point:</strong> Boiling point is a better indicator of the <em>true</em> strength of metallic bonding than melting point. When a metal melts, the bonding is <em>weakened</em> but not fully broken (liquid metals still have partial metallic bonding). Boiling completely separates the atoms, fully overcoming metallic attraction.'
+      },
+      terms: ['Transition metals', 'Delocalised electrons']
     }
   ],
   recall: {
@@ -66,9 +76,10 @@ export const note_chemistry_1_3_3 = {
       { id: 'c1', blockId: 'callout-def', prompt: 'Define metallic bonding.' },
       { id: 'c2', blockId: 'table-props', prompt: 'Explain why metals are good conductors of electricity.' },
       { id: 'c3', blockId: 'table-props', prompt: 'Explain why metals are malleable but ionic crystals are brittle.' },
-      { id: 'c4', blockId: 'callout-strength', prompt: 'Why does Mg have a higher melting point than Na? Explain in terms of metallic bonding.' }
+      { id: 'c4', blockId: 'callout-strength', prompt: 'Why does Mg have a higher melting point than Na? Explain in terms of metallic bonding (give at least two reasons).' },
+      { id: 'c5', blockId: 'callout-transition-metals', prompt: 'Explain why transition metals tend to have higher melting points than s-block metals with similar periods.' }
     ],
-    summaryText: 'Metallic bonding = electrostatic attraction between lattice of +ve metal ions and a sea of delocalised electrons. Conducts electricity/heat (mobile electrons). Malleable/ductile (layers slide, sea rearranges). High mp/bp (strong attraction). Stronger with more delocalised e⁻ and smaller ionic radius.',
+    summaryText: 'Metallic bonding = electrostatic attraction between lattice of +ve metal ions and a sea of delocalised electrons. Conducts (mobile e⁻). Malleable (layers slide, sea rearranges). High mp/bp (strong attraction). Stronger with: more delocalised e⁻ (Na < Mg < Al), smaller ionic radius, more nearest neighbours. Transition metals delocalise 3d + 4s electrons → extra strong metallic bonds → very high mp. Boiling point is a better measure of metallic bond strength than melting point.',
     ready: false
   },
   evidence: []

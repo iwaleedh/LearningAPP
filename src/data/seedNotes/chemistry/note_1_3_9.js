@@ -80,10 +80,35 @@ export const note_chemistry_1_3_9 = {
         rows: [
           ['4', '4', '0', 'Tetrahedral', '109.5°', 'CH₄'],
           ['4', '3', '1', 'Pyramidal (Trigonal Pyramidal)', '107°', 'NH₃'],
-          ['4', '2', '2', 'V-shaped (Bent / Non-linear)', '104.5°', 'H₂O']
+          ['4', '2', '2', 'V-shaped (Bent / Non-linear)', '104.5°', 'H₂O'],
+          ['5', '4', '1', 'See-saw', '~120°/~90°', 'SF₄'],
+          ['5', '3', '2', 'T-shaped', '~90°', 'ClF₃'],
+          ['5', '2', '3', 'Linear', '180°', 'XeF₂'],
+          ['6', '5', '1', 'Square pyramidal', '~90°', 'BrF₅'],
+          ['6', '4', '2', 'Square planar', '90°', 'XeF₄']
         ]
       },
       terms: []
+    },
+    {
+      id: 'callout-clf3-xef4',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked: ClF₃ (T-shaped) and XeF₄ (Square Planar)',
+        text: '<strong>ClF₃:</strong><br/>Cl is in Group 7 → 7 outer electrons. Each F contributes 1 bond (3 bonds → 3 bonding pairs). Remaining electrons: 7 + 3 − 6 = 4, forming 2 lone pairs. Total = 5 pairs (trigonal bipyramidal electron geometry).<br/>Lone pairs go in <em>equatorial</em> positions to minimise the number of 90° lone pair–bonding pair repulsions.<br/>Shape (atoms only): <strong>T-shaped</strong>. Bond angles ≈ 87° (compressed from 90°).<br/><br/><strong>XeF₄:</strong><br/>Xe is in Group 8 (rare gas) → 8 outer electrons. 4 F atoms form 4 bonds → 4 bonding pairs. Remaining: 8 + 4 − 8 = 4 electrons → 2 lone pairs. Total = 6 pairs (octahedral electron geometry).<br/>Both lone pairs go to <em>opposite</em> faces of the octahedron to minimise mutual repulsion.<br/>Shape (atoms only): <strong>Square planar</strong>. Bond angles = 90°.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-isoelectronic',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Isoelectronic Species — Same Shape, Same Electrons',
+        text: '<strong>Isoelectronic</strong> species have the same number of electrons (same number of bonding and non-bonding pairs) and therefore the <em>same shape</em>.<br/><br/>Important pairs:<br/>• <strong>NH₄⁺</strong> and <strong>CH₄</strong>: both have 4 bonding pairs, 0 lone pairs → both <strong>tetrahedral</strong> (109.5°)<br/>• <strong>H₃O⁺</strong> and <strong>NH₃</strong>: both have 3 bonding pairs, 1 lone pair → both <strong>pyramidal</strong> (~107°)<br/>• <strong>CO₂</strong> and <strong>NO₂⁺</strong>: both linear<br/><br/>Exam application: if asked about the shape of H₃O⁺, note it is isoelectronic with NH₃ → pyramidal, bond angle ~107°.'
+      },
+      terms: ['Isoelectronic']
     },
     {
       id: 'callout-method',
@@ -151,11 +176,13 @@ export const note_chemistry_1_3_9 = {
       { id: 'c0b', blockId: 'table-shapes', prompt: 'State the shape and bond angle for a molecule with 5 bonding pairs and 0 lone pairs.' },
       { id: 'c0c', blockId: 'table-lonepairs', prompt: 'Explain why the bond angle in water (H₂O) is 104.5° rather than the perfect tetrahedral angle of 109.5°.' },
       { id: 'c0d', blockId: 'callout-method', prompt: 'Work out the shape and bond angle of the NCl₄⁺ ion.' },
+      { id: 'c0e', blockId: 'callout-clf3-xef4', prompt: 'Explain why ClF₃ is T-shaped and XeF₄ is square planar. How do lone pairs choose their positions?' },
+      { id: 'c0f', blockId: 'callout-isoelectronic', prompt: 'State the shape and bond angle of H₃O⁺. Which other molecule is it isoelectronic with?' },
       { id: 'c1', blockId: 'table-compare', prompt: 'Explain why giant ionic compounds have high melting points but simple molecular substances have low melting points.' },
       { id: 'c2', blockId: 'table-compare', prompt: 'Which types of structure can conduct electricity as a solid? Explain why.' },
       { id: 'c3', blockId: 'callout-id', prompt: 'A substance has a high melting point (1400°C) and does not conduct electricity in the solid or liquid state. What type of structure does it have?' }
     ],
-    summaryText: 'VSEPR: electron pairs repel to be as far apart as possible. Shapes: 2 pairs (Linear 180°), 3 (Trigonal Planar 120°), 4 (Tetrahedral 109.5°), 5 (Trigonal Bipyramidal), 6 (Octahedral 90°). Lone pairs repel more than bonding pairs (-2.5° per lone pair). Structural types: Giant ionic (high mp, conducts molten), Metallic (high mp, always conducts), Giant covalent (very high mp, no cond.), Simple molecular (low mp, no cond.).',
+    summaryText: 'VSEPR: electron pairs repel to be as far apart as possible. Shapes: 2 pairs (Linear 180°), 3 (Trigonal Planar 120°), 4 (Tetrahedral 109.5°), 5 (Trigonal Bipyramidal), 6 (Octahedral 90°). Lone pairs repel more than bonding pairs (-2.5° per lone pair). Expanded geometries with lone pairs: T-shaped (ClF₃, 5 pairs, 2LP), square planar (XeF₄, 6 pairs, 2LP). Isoelectronic: NH₄⁺ = CH₄ (tetrahedral); H₃O⁺ = NH₃ (pyramidal). Structural types: Giant ionic (high mp, conducts molten), Metallic (conducts always), Giant covalent (very high mp, no cond.), Simple molecular (low mp, no cond.).',
     ready: false
   },
   evidence: []

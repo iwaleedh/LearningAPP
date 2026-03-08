@@ -85,6 +85,32 @@ export const note_chemistry_1_3_0 = {
       terms: ['Polyatomic ion']
     },
     {
+      id: 'h-noble-gas-limit',
+      type: 'heading',
+      data: { text: 'Limitations: Not All Ions Have Noble Gas Configurations', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-non-noble',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'When Atoms Do NOT Form Noble Gas Ions',
+        text: 'At GCSE, you learned that atoms form ions to achieve a noble gas configuration. This is true for <strong>Groups 1, 2, and Al (Group 3)</strong> — their ions match the nearest noble gas. However, many common ions do NOT have noble gas electron configurations:<br/><br/><strong>Common non-noble-gas ions (transition metals + post-transition metals):</strong><br/>• <strong>Fe³⁺:</strong> [Ar]3d⁵ (not neon or argon)<br/>• <strong>Cu²⁺:</strong> [Ar]3d⁹<br/>• <strong>Zn²⁺:</strong> [Ar]3d¹⁰<br/>• <strong>Ag⁺:</strong> [Kr]4d¹⁰<br/>• <strong>Pb²⁺:</strong> [Xe]4f¹⁴5d¹⁰6s²<br/><br/>These atoms find it energetically favourable to lose outer s electrons (occasionally d electrons), but the energy cost of removing d electrons to reach a noble gas core is far too high.<br/><br/><strong>Rule:</strong> Ions form when it is <em>energetically favourable overall</em> for the whole lattice — not simply to achieve 8 outer electrons.'
+      },
+      terms: ['Noble gas configuration']
+    },
+    {
+      id: 'callout-ion-energetics',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Why Ca Forms Ca²⁺ (Not Ca⁺ or Ca³⁺) — Energetics',
+        text: 'The charge an ion forms is determined by the overall energetics of forming the ionic compound (lattice enthalpy vs ionisation energies):<br/><br/>If calcium formed <strong>CaCl (Ca⁺Cl⁻)</strong>: lattice enthalpy would be smaller (lower charge) → overall ΔHf ≈ −171 kJ mol⁻¹<br/>If calcium formed <strong>CaCl₂ (Ca²⁺Cl₂⁻)</strong>: removing a 2nd electron costs more IE, but the higher charge gives a much larger lattice enthalpy → overall ΔHf ≈ −795 kJ mol⁻¹ (much more stable!)<br/>If calcium formed <strong>CaCl₃ (Ca³⁺)</strong>: the 3rd ionisation energy of Ca is enormous (4940 kJ mol⁻¹ — removing from an inner shell). No realistic lattice enthalpy could compensate → overall ΔHf ≈ +1341 kJ mol⁻¹ (unstable, would not form).<br/><br/><strong>Conclusion:</strong> Ca²⁺ is by far the most energetically stable option. Ion charge is determined by the overall energy balance, not just the "8-electron rule".'
+      },
+      terms: []
+    },
+    {
       id: 'h-polarization',
       type: 'heading',
       data: { text: 'Polarization of Ionic Bonds', level: 2 },
@@ -177,9 +203,10 @@ export const note_chemistry_1_3_0 = {
       { id: 'c3', blockId: 'callout-mgcl2', prompt: 'Draw a dot-and-cross diagram for MgO (Mg loses 2 electrons; O gains 2 electrons).' },
       { id: 'c4', blockId: 'callout-polarization', prompt: 'What is polarization of an anion? State what type of cation has the highest polarizing power and why.' },
       { id: 'c5', blockId: 'callout-isoelectronic-radius', prompt: 'The ions N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺ are all isoelectronic. Which has the smallest ionic radius? Explain.' },
-      { id: 'c6', blockId: 'callout-pq-ionic1', prompt: 'From: Cl⁻, Ca²⁺, K⁺, S²⁻ — which has the smallest ionic radius? These are isoelectronic with the [2,8,8] configuration.' }
+      { id: 'c6', blockId: 'callout-non-noble', prompt: 'Give three examples of common ions that do NOT have a noble gas electron configuration, and explain why.' },
+      { id: 'c7', blockId: 'callout-ion-energetics', prompt: 'Explain why calcium forms Ca²⁺ rather than Ca⁺ or Ca³⁺ in ionic compounds.' }
     ],
-    summaryText: 'Ionic bonding = electrostatic attraction between oppositely charged ions in a giant lattice. Metal loses electrons (cation); non-metal gains (anion). Dot-and-cross: square brackets with charge outside. Polarization: small high-charge cation distorts large anion electron cloud → covalent character. Isoelectronic ions: same e⁻ config, different Z — higher Z = smaller radius. Electrolysis of copper chromate: blue (Cu²⁺) migrates to cathode, yellow (CrO₄²⁻) to anode — proves ions exist.',
+    summaryText: 'Ionic bonding = electrostatic attraction between oppositely charged ions in a giant lattice. Metal loses electrons (cation); non-metal gains (anion). Dot-and-cross: square brackets with charge outside. Not all ions have noble gas configurations — transition metals do not (e.g. Fe³⁺ [Ar]3d⁵). Ion charge is determined by overall energetics: Ca²⁺ preferred over Ca⁺ (too little lattice enthalpy) or Ca³⁺ (3rd IE too high). Polarization: small high-charge cation distorts large anion → covalent character. Isoelectronic: same e⁻ config, higher Z = smaller radius.',
     ready: false
   },
   evidence: []
