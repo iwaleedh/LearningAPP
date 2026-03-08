@@ -30,19 +30,104 @@ export const note_chemistry_4_14_7 = {
       data: {
         style: 'bullet',
         items: [
-          'Burette (50 mL) containing standard NaOH solution (typically 0.1 mol dm⁻³)',
-          'Conical flask (250 mL) containing the weak acid solution (e.g., 25 mL of 0.1 mol dm⁻³ acetic acid)',
-          'pH meter or pH paper (ideally a calibrated pH meter for accuracy)',
-          'Pipette (25 mL) to measure the weak acid volume',
-          'Beaker (100 mL) for mixing and measurement',
-          'Funnel, glass rod, white tile'
+          'Data logger with pH probe — for continuous, accurate pH measurement',
+          '100 cm³ burette containing standard NaOH solution (e.g. 0.1 mol dm⁻³)',
+          'Conical flask — for the ethanoic acid + NaOH reaction mixture',
+          'Pipette (25 cm³) + pipette filler — to measure exact volumes of weak acid',
+          'Phenolphthalein indicator — to detect the equivalence point (colourless → permanent pink)',
+          'Standard NaOH solution (0.1 mol dm⁻³) — strong base titrant',
+          'Ethanoic acid (CH₃COOH) solution — weak acid being studied',
+          'Clamp stand with boss and clamp — to hold burette securely'
         ]
+      }
+    },
+    {
+      id: 'h-safety-cp11',
+      type: 'heading',
+      data: { text: 'Safety', level: 3 }
+    },
+    {
+      id: 'list-safety-cp11',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Wear eye protection throughout — NaOH is corrosive; ethanoic acid is irritant',
+          'Avoid skin contact with all reactants and products — wash immediately with water if contact occurs',
+          'BURETTE HANDLING: take care when clamping the burette — do not overtighten (can crack glass); ensure clamp stand is stable so burette does not topple'
+        ]
+      }
+    },
+    {
+      id: 'svg-cp11-setup',
+      type: 'svg',
+      data: {
+        svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 290' style='font-family:Arial,sans-serif;background:#f0fdf4;border-radius:8px'>
+  <text x='210' y='18' font-size='13' font-weight='bold' fill='#14532d' text-anchor='middle'>CP11: Titration Setup — Finding Ka of Ethanoic Acid</text>
+  <!-- Burette stand -->
+  <rect x='60' y='30' width='8' height='200' rx='2' fill='#6b7280'/>
+  <rect x='30' y='228' width='68' height='8' rx='2' fill='#6b7280'/>
+  <!-- Burette -->
+  <rect x='82' y='32' width='18' height='160' rx='3' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/>
+  <rect x='87' y='192' width='8' height='20' rx='2' fill='#93c5fd' stroke='#1d4ed8' stroke-width='1'/>
+  <!-- NaOH label -->
+  <text x='108' y='80' font-size='9' fill='#1d4ed8' font-weight='bold'>NaOH(aq)</text>
+  <text x='108' y='91' font-size='8' fill='#374151'>0.1 mol dm⁻³</text>
+  <text x='108' y='102' font-size='8' fill='#374151'>in burette</text>
+  <!-- Clamp -->
+  <rect x='53' y='75' width='36' height='10' rx='2' fill='#9ca3af' stroke='#4b5563' stroke-width='1'/>
+  <text x='25' y='83' font-size='8' fill='#374151'>boss +</text>
+  <text x='25' y='92' font-size='8' fill='#374151'>clamp</text>
+  <!-- Conical flask -->
+  <polygon points='75,215 91,215 105,260 61,260' fill='#d1fae5' stroke='#059669' stroke-width='1.5'/>
+  <rect x='79' y='205' width='12' height='12' rx='1' fill='#d1fae5' stroke='#059669' stroke-width='1'/>
+  <text x='83' y='248' font-size='8' fill='#059669' text-anchor='middle'>CH₃COOH</text>
+  <text x='83' y='260' font-size='8' fill='#374151' text-anchor='middle'>+ phenolphthalein</text>
+  <!-- pH probe -->
+  <line x1='200' y1='35' x2='200' y2='250' stroke='#7c3aed' stroke-width='2'/>
+  <rect x='185' y='250' width='30' height='10' rx='3' fill='#ede9fe' stroke='#7c3aed' stroke-width='1.5'/>
+  <text x='200' y='257' font-size='7' fill='#7c3aed' text-anchor='middle'>pH probe</text>
+  <!-- Data logger box -->
+  <rect x='175' y='20' width='70' height='30' rx='5' fill='#ede9fe' stroke='#7c3aed' stroke-width='1.5'/>
+  <text x='210' y='33' font-size='9' font-weight='bold' fill='#4c1d95' text-anchor='middle'>DATA LOGGER</text>
+  <text x='210' y='43' font-size='8' fill='#6d28d9' text-anchor='middle'>continuous pH</text>
+  <!-- Steps panel -->
+  <rect x='255' y='30' width='155' height='240' rx='6' fill='#fefce8' stroke='#ca8a04' stroke-width='1'/>
+  <text x='332' y='47' font-size='10' font-weight='bold' fill='#78350f' text-anchor='middle'>Exam Method</text>
+  <text x='263' y='63' font-size='8' fill='#374151'>① Calibrate pH probe</text>
+  <text x='263' y='75' font-size='8' fill='#374151'>② Pipette 25 cm³ CH₃COOH</text>
+  <text x='263' y='87' font-size='8' fill='#374151'>   into conical flask</text>
+  <text x='263' y='99' font-size='8' fill='#374151'>③ Add phenolphthalein drops</text>
+  <text x='263' y='111' font-size='8' fill='#374151'>④ Fill burette with NaOH</text>
+  <text x='263' y='123' font-size='8' fill='#374151'>⑤ Titrate → permanent pink</text>
+  <text x='263' y='135' font-size='8' fill='#dc2626' font-weight='bold'>   (equivalence point)</text>
+  <text x='263' y='151' font-size='8' fill='#374151'>⑥ Add FURTHER 25 cm³</text>
+  <text x='263' y='163' font-size='8' fill='#374151'>   ethanoic acid</text>
+  <text x='263' y='179' font-size='8' fill='#374151'>⑦ Record pH with data</text>
+  <text x='263' y='191' font-size='8' fill='#374151'>   logger/probe</text>
+  <text x='263' y='207' font-size='8' fill='#dc2626' font-weight='bold'>⑧ Ka = [H⁺] = 10⁻ᵖᴴ</text>
+  <line x1='263' y1='218' x2='400' y2='218' stroke='#ca8a04' stroke-width='0.8' stroke-dasharray='3,2'/>
+  <text x='263' y='230' font-size='7.5' fill='#374151'>At this point exactly half</text>
+  <text x='263' y='241' font-size='7.5' fill='#374151'>the acid has been neutralised</text>
+  <text x='263' y='252' font-size='7.5' fill='#374151'>→ [HA] = [A⁻] → Ka = [H⁺]</text>
+  <text x='263' y='263' font-size='7.5' fill='#374151'>(pH = pKa at this point)</text>
+</svg>`,
+        caption: 'CP11 setup: NaOH in burette, ethanoic acid in conical flask with phenolphthalein indicator, pH probe connected to data logger. Titrate to permanent pink (equivalence), then add a further 25 cm³ weak acid → measure pH → Ka = [H⁺].'
       }
     },
     {
       id: 'h-method',
       type: 'heading',
-      data: { text: 'Experimental Method', level: 2 }
+      data: { text: 'Exam Method: Titrate then Add Equal Volume of Acid', level: 2 }
+    },
+    {
+      id: 'callout-cp11-principle',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Key Principle: Why Ka = [H⁺] at Half-Neutralisation',
+        text: 'At the equivalence point: all the acid has been neutralised by NaOH\nAdd back an EQUAL volume of original acid: exactly half the total acid is now neutralised\n→ half remains as HA, half has become A⁻ salt\n→ [HA] = [A⁻]\n\nFrom Ka = [H⁺][A⁻] / [HA]\nWhen [HA] = [A⁻]: Ka = [H⁺]\n\nTherefore: measure pH at this half-neutralisation point → Ka = 10⁻ᵖᴴ'
+      }
     },
     {
       id: 'list-method',
@@ -50,15 +135,76 @@ export const note_chemistry_4_14_7 = {
       data: {
         style: 'numbered',
         items: [
-          'Prepare a standard NaOH solution (0.1 mol dm⁻³) and place it in a clean, dry burette. Record the initial burette reading.',
-          'Using a pipette, transfer 25 mL of the weak acid solution (e.g., 0.1 mol dm⁻³ acetic acid) into a conical flask. Note the exact volume used.',
-          'Add a small portion of the NaOH from the burette (e.g., 2–5 mL) to the acid in the flask. Swirl gently to mix. Measure and record the pH using the pH meter.',
-          'Continue adding small portions of NaOH (2–5 mL each), measuring the pH after each addition. Swirl between additions.',
-          'As you approach the equivalence point (observed when pH rises sharply), reduce the volume of each addition to 1–2 mL to obtain more precise measurements in the steep region.',
-          'Once you have passed the equivalence point (pH >> 7, typically pH > 11), add larger volumes again (5–10 mL).',
-          'Record the burette readings and corresponding pH values throughout the titration.',
-          'Plot a graph of pH against cumulative volume of NaOH added (the titration curve).'
+          'Calibrate the pH probe/data logger using buffer solutions of known pH before starting — essential for accurate readings',
+          'Using a pipette and pipette filler, transfer exactly 25 cm³ of ethanoic acid (CH₃COOH) into a conical flask',
+          'Fill the 100 cm³ burette with standard NaOH solution; record the initial burette reading',
+          'Add a few drops of phenolphthalein indicator to the conical flask; swirl',
+          'Titrate the ethanoic acid with NaOH, swirling continuously; the endpoint is a PERMANENT PINK colour — if it goes pink then back to colourless when swirled, the endpoint has NOT been reached',
+          'Record the volume of NaOH used at the endpoint — this is the equivalence volume (V_eq)',
+          'Now pipette a FURTHER 25 cm³ of the same ethanoic acid solution into the same flask',
+          'Record the pH of the mixture using the pH probe/data logger',
+          'Calculate Ka: Ka = [H⁺] = 10⁻ᵖᴴ (since [HA] = [A⁻] at this point, Ka simplifies directly to [H⁺])'
         ]
+      }
+    },
+    {
+      id: 'h-why-further-acid',
+      type: 'heading',
+      data: { text: 'Why Add a Further Equal Volume of Acid?', level: 3 }
+    },
+    {
+      id: 'list-why-further',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'At equivalence point: all 25 cm³ of acid has been neutralised by NaOH → solution contains only sodium ethanoate (A⁻)',
+          'Adding a further 25 cm³ of the same acid: now total acid = 50 cm³, but only 25 cm³ worth has been neutralised',
+          'Result: exactly HALF the acid is present as HA and half as A⁻ (conjugate base)',
+          '[HA] = [A⁻] → by Henderson-Hasselbalch: pH = pKa → Ka = [H⁺] = 10⁻ᵖᴴ',
+          'This avoids the need to plot a full titration curve — single pH measurement is sufficient'
+        ]
+      }
+    },
+    {
+      id: 'h-solid-acid-method',
+      type: 'heading',
+      data: { text: 'Alternative: Ka from Solid Acid (No Titration)', level: 2 }
+    },
+    {
+      id: 'p-solid-acid-intro',
+      type: 'paragraph',
+      data: {
+        text: 'If the weak acid is a solid (e.g. benzoic acid, C₆H₅COOH), Ka can be found simply by dissolving a known mass in a known volume and measuring the pH — no titration required.'
+      }
+    },
+    {
+      id: 'list-solid-acid-method',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Weigh out a precise mass of the solid weak acid using a balance',
+          'Dissolve the acid in approximately 200 cm³ of distilled water in a beaker',
+          'Transfer quantitatively to a 250 cm³ volumetric flask — rinse the beaker several times with distilled water and add all washings to the flask',
+          'Add distilled water up to the 250 cm³ graduation mark; stopper the flask',
+          'Invert and shake repeatedly to ensure complete mixing and thorough dissolution',
+          'Withdraw a small sample into a clean beaker using a pipette',
+          'Measure the pH of the sample using a calibrated pH probe/data logger',
+          'Calculate [acid] from the mass and Mr; find [H⁺] = 10⁻ᵖᴴ; then Ka = [H⁺]² / [acid]'
+        ]
+      }
+    },
+    {
+      id: 'h-alt-method-note',
+      type: 'heading',
+      data: { text: 'Alternative Method: Full Titration Curve (Graphical)', level: 2 }
+    },
+    {
+      id: 'p-alt-method',
+      type: 'paragraph',
+      data: {
+        text: 'An alternative (and more detailed) approach is to record pH after every addition of NaOH throughout the titration and plot a full titration curve (pH vs volume of NaOH). The equivalence point is identified from the steepest part; the half-equivalence point is at V_eq/2, and the pH at that point = pKa.'
       }
     },
     {
@@ -227,12 +373,14 @@ export const note_chemistry_4_14_7 = {
       type: 'checklist',
       data: {
         items: [
-          { text: 'Can describe the apparatus and chemicals for Core Practical 11', checked: false },
-          { text: 'Can perform the titration and record accurate pH and volume readings', checked: false },
-          { text: 'Can plot the titration curve correctly', checked: false },
-          { text: 'Can identify the equivalence point and half-equivalence point on the curve', checked: false },
-          { text: 'Can calculate Ka from the half-equivalence point pH (pKa)', checked: false },
-          { text: 'Can identify sources of error and suggest improvements', checked: false }
+          { text: 'Calibrate pH probe with buffer solutions before use — essential for accurate Ka', checked: false },
+          { text: 'Use data logger and pH probe (not just pH paper) for continuous accurate readings', checked: false },
+          { text: 'Permanent pink = equivalence point; pink → colourless on swirling = NOT endpoint yet', checked: false },
+          { text: 'Add further 25 cm³ ethanoic acid AFTER reaching equivalence → creates half-neutralisation mixture', checked: false },
+          { text: 'At half-neutralisation: [HA] = [A⁻] → Ka = [H⁺] = 10⁻ᵖᴴ', checked: false },
+          { text: 'For solid acid: dissolve known mass in 250 cm³ volumetric flask; measure pH; Ka = [H⁺]² / [acid]', checked: false },
+          { text: 'Safety: eye protection; care when clamping burette (do not crack glass; ensure stand is stable)', checked: false },
+          { text: 'Can identify sources of error (uncalibrated pH meter, CO₂ absorption by NaOH, parallax error on burette)', checked: false }
         ]
       }
     },
@@ -260,31 +408,36 @@ export const note_chemistry_4_14_7 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'p-cp11-overview',
-        prompt: 'What is the key principle of Core Practical 11? How does the half-equivalence point relate to pKa?'
+        blockId: 'callout-cp11-principle',
+        prompt: 'In CP11, why does adding a further equal volume of weak acid after reaching the equivalence point mean that Ka = [H⁺]? Show the algebraic reasoning.'
       },
       {
         id: 'cue-2',
         blockId: 'list-method',
-        prompt: 'Describe the steps of the titration procedure, especially near the equivalence point.'
+        prompt: 'Describe the exam method for CP11 step by step. What indicator is used and what is the endpoint colour? What happens after the endpoint?'
       },
       {
         id: 'cue-3',
-        blockId: 'p-method-1-half-equiv',
-        prompt: 'If a titration shows equivalence point at 30 mL, where is the half-equivalence point and what does its pH tell you?'
+        blockId: 'list-solid-acid-method',
+        prompt: 'Describe how to determine Ka from a solid weak acid (e.g. benzoic acid) without a full titration. Why must the beaker washings be added to the volumetric flask?'
       },
       {
         id: 'cue-4',
-        blockId: 'ex-analysis-1',
-        prompt: 'In a titration of 25 mL of 0.1 M acetic acid with 0.1 M NaOH, the pH at 12.5 mL is 4.74. Calculate Ka.'
+        blockId: 'ex-benzoic-ka',
+        prompt: '0.49 g of benzoic acid (Mr = 122) is dissolved in 250 cm³ of distilled water. pH = 3.00. Calculate Ka step by step.'
       },
       {
         id: 'cue-5',
         blockId: 'list-errors',
-        prompt: 'Name three sources of error in this practical and suggest how to minimise each.'
+        prompt: 'Name three sources of error in CP11 and give a specific improvement for each.'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-two-assumptions-ppq',
+        prompt: 'State the two assumptions made when calculating Ka from the simplified expression Ka = [H⁺]² / [HA].'
       }
     ],
-    summaryText: 'Core Practical 11: Titrate weak acid with standard NaOH. pH = pKa at half-equivalence point. Plot curve, find half-equivalence volume (V_eq/2), read pH, calculate Ka = 10^(−pH). Calibrate pH meter. Add small volumes near equivalence point.',
+    summaryText: 'CP11 exam method: calibrate pH probe → titrate 25 cm³ ethanoic acid with NaOH (phenolphthalein indicator) until permanent pink (equivalence point) → add further 25 cm³ ethanoic acid → measure pH with data logger → Ka = [H⁺] = 10⁻ᵖᴴ. Works because [HA] = [A⁻] at half-neutralisation. Solid acid alternative: known mass dissolved in 250 cm³ volumetric flask → measure pH → Ka = [H⁺]² / [acid]. Errors: uncalibrated pH probe, CO₂ absorbed by NaOH, parallax on burette.',
     ready: false
   },
   evidence: [
