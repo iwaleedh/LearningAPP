@@ -4,25 +4,19 @@ export const note_chemistry_5_17_9 = {
       type: 'objective',
       id: 'obj-practical-14',
       data: {
-        text: 'Prepare a transition metal complex salt by precipitation and redissolution; measure yield and percentage yield; identify sources of error and suggest improvements; apply practical chemistry techniques.'
+        text: 'Prepare tetraamminecopper(II) sulfate monohydrate [Cu(NH₃)₄]SO₄·H₂O by ligand exchange from copper(II) sulfate and concentrated ammonia; isolate by ethanol precipitation and vacuum filtration; calculate actual and percentage yield; explain sources of error.'
       }
     },
     {
       type: 'heading',
       id: 'h-practical-overview',
-      data: { text: 'Core Practical 14: Metal Complex Preparation', level: 2 }
+      data: { text: 'Core Practical 14: Preparation of [Cu(NH₃)₄]SO₄·H₂O', level: 2 }
     },
     {
       type: 'paragraph',
       id: 'p-practical-aim',
       data: {
-        text: 'The aim of this practical is to prepare a transition metal complex salt, typically <strong>[Cu(NH₃)₄(H₂O)₂]SO₄·H₂O</strong> (copper(II) bis(ethylenediamine) or similar), by coordination of ammonia with copper(II) sulfate. The preparation involves:<br/>' +
-        '1. Dissolving copper(II) sulfate (CuSO₄·5H₂O) in water<br/>' +
-        '2. Adding concentrated ammonia solution<br/>' +
-        '3. Filtering the copper(II) hydroxide precipitate<br/>' +
-        '4. Redissolving the precipitate in excess ammonia<br/>' +
-        '5. Filtering and crystallising the product<br/>' +
-        '6. Weighing and calculating yield'
+        text: 'The aim of this practical is to prepare <strong>[Cu(NH₃)₄]SO₄·H₂O</strong> — tetraamminecopper(II) sulfate monohydrate — by ligand exchange: four water ligands in [Cu(H₂O)₆]²⁺ are replaced by four ammonia ligands. The product is isolated by dissolving in conc. NH₃ and precipitating into ethanol, followed by vacuum filtration.<br/><br/>The preparation involves:<br/>1. Dissolving CuSO₄·5H₂O in a minimum volume of water<br/>2. Adding concentrated ammonia in a fume cupboard → deep blue solution<br/>3. Pouring the solution into ethanol → crystals precipitate immediately<br/>4. Cooling in ice bath, then vacuum filtration (Büchner funnel)<br/>5. Washing with cold ethanol, drying, and weighing<br/>6. Calculating actual and percentage yield'
       }
     },
     {
@@ -34,14 +28,12 @@ export const note_chemistry_5_17_9 = {
       type: 'paragraph',
       id: 'p-reactions-involved',
       data: {
-        text: '<strong>Step 1: Initial precipitation with ammonia</strong><br/>' +
-        '[Cu(H₂O)₆]²⁺(aq) + 2NH₃(aq) → Cu(OH)₂(s) (pale blue precipitate) + 2NH₄⁺(aq)<br/>' +
-        'or more simply: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓<br/>' +
-        'Ammonia acts as a weak base, producing OH⁻ ions which precipitate Cu²⁺ as insoluble copper(II) hydroxide.<br/>' +
-        '<br/><strong>Step 2: Redissolution in excess ammonia</strong><br/>' +
-        'Cu(OH)₂(s) + 4NH₃(aq) → [Cu(NH₃)₄]²⁺(aq) + 2H₂O(l)<br/>' +
-        'or combined: [Cu(H₂O)₆]²⁺ + 4NH₃ → [Cu(NH₃)₄(H₂O)₂]²⁺ + 4H₂O<br/>' +
-        'Excess ammonia coordinates to the Cu²⁺ ion, forming a deep blue soluble complex. This is the key step—the complex is much more soluble than the hydroxide.'
+        text: '<strong>Ligand exchange equation:</strong><br/>' +
+        '[Cu(H₂O)₆]²⁺(aq) + 4NH₃(aq)  ⇌  [Cu(NH₃)₄(H₂O)₂]²⁺(aq) + 4H₂O(l)<br/>' +
+        'Simplified (product = tetraamminecopper(II) ion):<br/>' +
+        '[Cu(H₂O)₆]²⁺ + 4NH₃ → [Cu(NH₃)₄]²⁺ + 6H₂O  (with sulfate counter-ion and water of crystallisation)<br/><br/>' +
+        '<strong>Why NH₃ displaces H₂O?</strong> NH₃ is a stronger ligand than H₂O (higher field strength, larger Δ in spectrochemical series) — equilibrium strongly favours the ammonia complex.<br/><br/>' +
+        '<strong>Why pour into ethanol?</strong> [Cu(NH₃)₄]SO₄·H₂O is much LESS soluble in ethanol than in water → product precipitates immediately (anti-solvent precipitation). This avoids slow crystallisation and improves yield speed.'
       }
     },
     {
@@ -49,10 +41,11 @@ export const note_chemistry_5_17_9 = {
       id: 'p-complex-colour',
       data: {
         text: '<strong>Colour observations:</strong><br/>' +
-        '• [Cu(H₂O)₆]²⁺ = pale blue<br/>' +
-        '• Cu(OH)₂ = pale blue precipitate<br/>' +
-        '• [Cu(NH₃)₄(H₂O)₂]²⁺ = deep blue<br/>' +
-        'The colour change from pale blue → precipitate → deep blue is the signature of this preparation. NH₃ is a stronger field ligand than H₂O, resulting in a deeper blue colour due to larger d-orbital splitting (Δ).'
+        '• CuSO₄ solution: pale blue — [Cu(H₂O)₆]²⁺<br/>' +
+        '• On adding conc. NH₃: may briefly see pale blue precipitate (limited NH₃ acting as base) → dissolves immediately with excess → DEEP blue solution [Cu(NH₃)₄]²⁺<br/>' +
+        '• On pouring into ethanol: dark blue/violet-blue crystals precipitate<br/>' +
+        '• Final product after drying: dark blue/purple-blue crystals<br/><br/>' +
+        '<strong>Why deeper blue?</strong> NH₃ causes larger d-orbital splitting (Δ) than H₂O → absorbs shorter wavelength (higher energy) light → transmitted colour is deeper blue.'
       }
     },
     {
@@ -60,55 +53,44 @@ export const note_chemistry_5_17_9 = {
       id: 'h-detailed-method',
       data: { text: 'Detailed Method', level: 2 }
     },
+    { type: 'callout', id: 'callout-cp14-safety', data: { style: 'warning', title: '⚠️ Safety — Ammonia and Ethanol', text: 'Concentrated ammonia: corrosive, pungent, irritant \u2014 perform ALL ammonia additions in a FUME CUPBOARD; wear eye protection and gloves.\nEthanol: HIGHLY FLAMMABLE \u2014 heat using a WATER BATH only; NEVER use a Bunsen burner in steps involving ethanol.\nCopper compounds: irritant; avoid skin contact; dispose of waste in designated copper-waste container.' } },
     {
-      type: 'paragraph',
-      id: 'p-method-part-1',
-      data: {
-        text: '<strong>Part 1: Preparation of starting solution</strong><br/>' +
-        '1. Weigh approximately 3 g of copper(II) sulfate pentahydrate (CuSO₄·5H₂O) on a balance to the nearest 0.01 g. Record mass M₁<br/>' +
-        '2. Dissolve in approximately 30 cm³ of distilled water in a beaker<br/>' +
-        '3. Stir until completely dissolved (pale blue solution)<br/>' +
-        '4. If undissolved particles remain, filter through filter paper into a clean beaker<br/>' +
-        '<strong>Safety note:</strong> Copper compounds are toxic. Avoid skin contact. Ammonia solution is corrosive and has strong odour. Use in well-ventilated area or fume hood.'
-      }
+      type: 'heading',
+      id: 'h-method-exam',
+      data: { text: 'Exam Method (Transcript / Mark-Scheme Method)', level: 3 }
+    },
+    {
+      type: 'list',
+      id: 'list-cp14-method',
+      data: { style: 'numbered', items: [
+        'Weigh a weighing boat on the balance; record mass M₁',
+        'Add ~1.5 g CuSO₄·5H₂O (pale blue crystals) to the boat; record mass M₁ + sample',
+        'Tip into a test tube/small beaker; re-weigh empty boat; record M₂   →   actual mass = M₁ + sample − M₂ (weighing by difference)',
+        'Add ~4 cm³ of distilled water; warm gently in a WATER BATH (not Bunsen) until all crystals dissolve (pale blue solution)',
+        'Move to fume cupboard',
+        'Add ~2 cm³ of concentrated ammonia solution (using a dropper or measuring cylinder in fume cupboard); swirl gently → deep blue solution [Cu(NH₃)₄]²⁺ forms immediately',
+        'In a separate beaker, measure ~5 cm³ of ethanol',
+        'Pour the deep blue copper-ammonia solution into the ethanol; stir gently → dark blue/violet crystals precipitate immediately',
+        'Cool the beaker in an ice bath for ~5 minutes to maximise precipitation',
+        'Set up Büchner funnel (NOT Hirsch funnel) with filter paper and vacuum filtration apparatus',
+        'Wet the filter paper with a little ethanol to seal it; connect vacuum; pour crystals + ethanol onto filter',
+        'Wash crystals on filter with 2 × ~3 cm³ portions of cold ethanol (removes impurities; ethanol evaporates quickly)',
+        'Scrape crystals from filter paper onto a clean, dry filter paper',
+        'Press gently with a second filter paper to dry; leave to air-dry briefly',
+        'Weigh the dried product on a pre-weighed watch glass or weighing boat; record mass M₃'
+      ] }
+    },
+    { type: 'callout', id: 'callout-cp14-buchner', data: { style: 'tip', title: '\ud83d\udcac B\u00fcchner Funnel vs Hirsch Funnel', text: 'Use a B\u00dcCHNER funnel (large, flat-bottomed perforated plate) \u2014 not a Hirsch funnel (small, for tiny quantities).\nB\u00fcchner funnel + pump gives faster filtration with larger crystal batches, and the suction helps remove ethanol quickly, preventing crystals re-dissolving.\nAlways wet the filter paper with solvent before connecting the vacuum \u2014 seals the paper and prevents crystals slipping under it.' } },
+    {
+      type: 'heading',
+      id: 'h-method-alt',
+      data: { text: 'Alternative Method (Laboratory / Recrystallisation Approach)', level: 3 }
     },
     {
       type: 'paragraph',
-      id: 'p-method-part-2',
+      id: 'p-method-alt',
       data: {
-        text: '<strong>Part 2: Ammonia addition and precipitation</strong><br/>' +
-        '5. Measure 20 cm³ of concentrated ammonia solution (approximately 15 M NH₃)<br/>' +
-        '6. Add the ammonia dropwise to the copper sulfate solution, with stirring<br/>' +
-        '7. A pale blue gelatinous precipitate of Cu(OH)₂ forms<br/>' +
-        '8. Continue adding ammonia until the pale blue precipitate dissolves, revealing a deep blue solution beneath<br/>' +
-        '9. The solution becomes deep blue, indicating formation of [Cu(NH₃)₄(H₂O)₂]²⁺ complex<br/>' +
-        '<strong>Critical point:</strong> Add ammonia in excess to fully dissolve the precipitate.'
-      }
-    },
-    {
-      type: 'paragraph',
-      id: 'p-method-part-3',
-      data: {
-        text: '<strong>Part 3: Crystallisation and isolation</strong><br/>' +
-        '10. Heat the deep blue solution gently to approximately 50°C (NOT boiling—ammonia is volatile)<br/>' +
-        '11. Allow the solution to cool slowly to room temperature in a beaker covered with a watch glass<br/>' +
-        '12. Once cooled to room temperature, place the beaker in an ice-water bath or refrigerator (4°C) for 10 minutes to encourage crystallisation<br/>' +
-        '13. Dark blue crystals of [Cu(NH₃)₄(H₂O)₂]SO₄·H₂O should form<br/>' +
-        '<strong>Note:</strong> If crystallisation is slow, it may be necessary to wait overnight at room temperature before refrigerating.'
-      }
-    },
-    {
-      type: 'paragraph',
-      id: 'p-method-part-4',
-      data: {
-        text: '<strong>Part 4: Filtration and drying</strong><br/>' +
-        '14. Set up vacuum filtration (or gravity filtration if vacuum is unavailable) with filter paper in a Büchner funnel<br/>' +
-        '15. Filter the crystalline product through the filter paper<br/>' +
-        '16. Wash the crystals on the filter paper with 2 × 5 cm³ portions of cold distilled water to remove soluble impurities (e.g., ammonium sulfate)<br/>' +
-        '17. Wash with 1 × 5 cm³ of ethanol to help displace water and speed drying<br/>' +
-        '18. Allow the crystals to dry on the filter paper for 2-3 minutes under suction<br/>' +
-        '19. Transfer the dried crystals to a pre-weighed watch glass or empty weighing boat<br/>' +
-        '20. Weigh the product to the nearest 0.01 g. Record mass M₂'
+        text: '<strong>Alternative (slow crystallisation):</strong> Dissolve CuSO₄·5H₂O (~3 g) in 30 cm³ water → add conc. NH₃ dropwise → may see pale blue Cu(OH)₂ precipitate briefly → add excess NH₃ until fully dissolved (deep blue) → heat to 50°C → cool slowly to room temperature → refrigerate at 4°C overnight → dark blue crystals form → filter and wash as in exam method above.<br/><br/>⚠️ This method is slower but shown in some textbooks. The exam mark scheme typically expects the ethanol precipitation method (pouring into ethanol) as per the Edexcel specification.'
       }
     },
     {
@@ -121,13 +103,13 @@ export const note_chemistry_5_17_9 = {
       id: 'p-yield-formula',
       data: {
         text: '<strong>Molar masses:</strong><br/>' +
-        'CuSO₄·5H₂O = 64 + 32 + 64 + 90 = 250 g mol⁻¹<br/>' +
-        '[Cu(NH₃)₄(H₂O)₂]SO₄·H₂O = 64 + 4(17) + 2(18) + 96 + 18 = 64 + 68 + 36 + 96 + 18 = 282 g mol⁻¹<br/>' +
+        'CuSO₄·5H₂O: Cu(63.5) + S(32) + O₄(64) + 5H₂O(90) = <strong>249.5 g mol⁻¹</strong><br/>' +
+        '[Cu(NH₃)₄]SO₄·H₂O: Cu(63.5) + 4NH₃(68) + SO₄(96) + H₂O(18) = <strong>245.5 g mol⁻¹</strong><br/><br/>' +
+        '<strong>Mole ratio:</strong> CuSO₄ → product = 1 : 1 (one copper atom in, one product molecule out)<br/><br/>' +
         '<strong>Formula:</strong><br/>' +
-        'Moles of CuSO₄ = M₁ ÷ 250<br/>' +
-        'Theoretical mass of product = (M₁ ÷ 250) × 282<br/>' +
-        'Actual mass of product = M₂<br/>' +
-        'Percentage yield = (M₂ ÷ theoretical mass) × 100%'
+        'n(CuSO₄·5H₂O) = mass used ÷ 249.5<br/>' +
+        'Theoretical mass of product = n × 245.5<br/>' +
+        'Percentage yield = (actual mass ÷ theoretical mass) × 100%'
       }
     },
     {
@@ -135,12 +117,13 @@ export const note_chemistry_5_17_9 = {
       id: 'p-yield-worked-example',
       data: {
         text: '<strong>Worked Example:</strong><br/>' +
-        'Mass of CuSO₄·5H₂O used = 3.0 g<br/>' +
-        'Mass of product obtained = 2.1 g<br/>' +
-        '<br/>Moles of CuSO₄ = 3.0 ÷ 250 = 0.012 mol<br/>' +
-        'Theoretical mass = 0.012 × 282 = 3.384 g<br/>' +
-        'Percentage yield = (2.1 ÷ 3.384) × 100% = 62.1%<br/>' +
-        '<br/><strong>Typical yield:</strong> 50–70% is reasonable for this preparation. Losses occur during filtration, washing, and crystallisation.'
+        'Mass of CuSO₄·5H₂O used (by difference) = 1.50 g<br/>' +
+        'Mass of product obtained = 1.22 g<br/><br/>' +
+        'Step 1: n(CuSO₄·5H₂O) = 1.50 ÷ 249.5 = 6.012 × 10⁻³ mol<br/>' +
+        'Step 2: n(product) = 6.012 × 10⁻³ mol (1:1 ratio)<br/>' +
+        'Step 3: theoretical mass = 6.012 × 10⁻³ × 245.5 = 1.476 g<br/>' +
+        'Step 4: % yield = (1.22 ÷ 1.476) × 100% = 82.7%<br/><br/>' +
+        '<strong>Typical yield:</strong> 70–90% for ethanol precipitation method. Lower for slow crystallisation method (50–70%). Losses occur during pipetting, filtration, washing, and drying.'
       }
     },
     {
@@ -225,21 +208,44 @@ export const note_chemistry_5_17_9 = {
       }
     },
     {
+      type: 'heading',
+      id: 'h-ppq-cp14',
+      data: { text: 'PPQ — January 2014: Copper Complex Ions', level: 2 }
+    },
+    {
+      type: 'callout',
+      id: 'callout-ppq14-1',
+      data: {
+        style: 'worked',
+        title: 'PPQ Jan 2014 Part a: CuSO₄(aq) + Excess HCl → Colour Change and Formula',
+        text: 'Q: Describe the colour change when excess concentrated HCl is added to aqueous CuSO₄. Give the formula of the complex ion formed.\n\nObservation:\n• Blue solution → yellow/green solution\n\nComplex ion formed:\n• Formula: [CuCl₄]²⁻   (tetrachlorocuprate(II) ion)\n• Name: tetrachlorocuprate(II) ion\n\nExplanation:\n• Cl⁻ is a stronger field ligand than H₂O at high concentration (also: Cl⁻ is a larger ligand \u2014 only 4 fit around Cu²⁺)\n• 4 Cl⁻ ligands replace 6 H₂O → coordination number changes from 6 to 4 (octahedral → tetrahedral)\n• [Cu(H₂O)₆]²⁺ + 4Cl⁻ ⇌ [CuCl₄]²⁻ + 6H₂O\n• Yellow colour of [CuCl₄]²⁻ + pale blue [Cu(H₂O)₆]²⁺ present in equilibrium → overall green/yellow-green'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-ppq14-2',
+      data: {
+        style: 'worked',
+        title: 'PPQ Jan 2014 Part b: Dilute NH₃ Added Drop by Drop to CuSO₄(aq) — 3 marks',
+        text: 'Q: Describe what is observed when dilute ammonia is added drop by drop to aqueous copper(II) sulfate. Explain each observation.\n\nObservation 1 (limited NH₃):\n• Pale blue precipitate forms\n• Identity: Cu(OH)₂ — limited NH₃ acts as a base; NH₃ + H₂O ⇌ NH₄⁺ + OH⁻; OH⁻ precipitates Cu²⁺: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓\n\nObservation 2 (more NH₃ added):\n• Pale blue precipitate dissolves\n• Excess NH₃ now acts as a ligand rather than a base; ligand exchange begins\n\nObservation 3 (excess NH₃):\n• Deep blue (dark blue) solution forms — significantly darker than the original pale blue\n• Complex ion: [Cu(NH₃)₄(H₂O)₂]²⁺ or simplified [Cu(NH₃)₄]²⁺\n• NH₃ causes larger Δ → deeper blue colour\n\n⚠️ Must describe as "DEEP blue" not just "blue"\n⚠️ Must give three separate observations for 3 marks: (1) blue precipitate, (2) dissolves, (3) deep blue solution'
+      }
+    },
+    {
       type: 'checklist',
       id: 'checklist-practical',
       data: {
         items: [
-          { text: 'Weigh CuSO₄·5H₂O and record mass M₁', checked: false },
-          { text: 'Dissolve in ~30 cm³ distilled water', checked: false },
-          { text: 'Add concentrated ammonia (20 cm³) dropwise, observe pale blue precipitate', checked: false },
-          { text: 'Continue adding until precipitate dissolves (deep blue solution)', checked: false },
-          { text: 'Heat gently to ~50°C, cool to room temperature, refrigerate at 4°C', checked: false },
-          { text: 'Filter crystals using Büchner funnel or gravity filtration', checked: false },
-          { text: 'Wash with cold water (2×5 cm³) then ethanol (1×5 cm³)', checked: false },
-          { text: 'Dry on filter paper under suction for 2-3 minutes', checked: false },
-          { text: 'Transfer to watch glass, weigh product, record mass M₂', checked: false },
-          { text: 'Calculate theoretical yield and percentage yield', checked: false },
-          { text: 'Identify sources of error and suggest improvements', checked: false }
+          { text: 'Weigh CuSO₄·5H₂O by DIFFERENCE (weigh boat, add crystals, tip out, re-weigh boat)', checked: false },
+          { text: 'Dissolve in MINIMUM water (~4 cm³) — not lots of water; more water reduces precipitate when adding ethanol', checked: false },
+          { text: 'Warm in WATER BATH — NOT Bunsen burner (ethanol flammable; ammonia volatile)', checked: false },
+          { text: 'Add conc. NH₃ IN FUME CUPBOARD — corrosive and volatile; wear gloves and eye protection', checked: false },
+          { text: 'Pour into ETHANOL to precipitate crystals (anti-solvent method) — cool in ice bath', checked: false },
+          { text: 'Filter using BÜCHNER funnel (NOT Hirsch funnel) with vacuum pump; wet filter paper with ethanol first', checked: false },
+          { text: 'Wash with COLD ETHANOL × 2 — not water (water dissolves product); cold minimises losses', checked: false },
+          { text: 'Dry: scrape onto dry filter paper; press with second filter paper; air dry briefly', checked: false },
+          { text: 'Mr: CuSO₄·5H₂O = 249.5; [Cu(NH₃)₄]SO₄·H₂O = 245.5; ratio 1:1 in calculation', checked: false },
+          { text: '% yield = (actual mass ÷ theoretical mass) × 100%; theoretical = n × 245.5', checked: false },
+          { text: 'PPQ Jan 2014: + conc. HCl → yellow/green; [CuCl₄]²⁻ (tetrahedral); + dilute NH₃ → blue ppt → dissolves → DEEP blue [Cu(NH₃)₄]²⁺', checked: false }
         ]
       }
     },
@@ -250,7 +256,7 @@ export const note_chemistry_5_17_9 = {
       data: {
         style: 'key',
         title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Preparing a transition metal complex involves precipitation of the metal hydroxide, then redissolution in excess ligand. Yield is calculated from actual vs theoretical mass.\n\nApply: Describe how to prepare [Cu(NH₃)₄(H₂O)₂]SO₄ from CuSO₄ solution. Calculate theoretical yield.\n\nAnalyze: What are the main sources of yield loss in this preparation? Distinguish between unavoidable and avoidable losses.\n\nEvaluate: How would you verify the purity of the product? Suggest two analytical methods and explain what each reveals.'
+        text: 'Understand: The ethanol precipitation method works because [Cu(NH\u2083)\u2084]SO\u2084\u00b7H\u2082O is virtually insoluble in ethanol; anti-solvent precipitation is faster and gives higher yield than slow water crystallisation.\n\nApply: Given 2.00 g CuSO\u2084\u00b75H\u2082O and 1.65 g product obtained, calculate % yield.\n\nAnalyze: A student washes crystals with water instead of ethanol. Predict the effect on (a) yield and (b) purity.\n\nEvaluate: Yield > 100% is observed. Suggest two possible reasons.'
       },
       terms: []
     },
@@ -258,7 +264,7 @@ export const note_chemistry_5_17_9 = {
       type: 'summary',
       id: 'summary-practical',
       data: {
-        text: 'Core Practical 14 prepares [Cu(NH₃)₄(H₂O)₂]SO₄·H₂O by dissolving CuSO₄·5H₂O, adding ammonia to form Cu(OH)₂ precipitate, redissolving in excess ammonia (deep blue), cooling to crystallise, filtering, washing with water then ethanol, and drying. Yield is typically 50–70% (theoretical = mass of CuSO₄ × 282/250). Key observations: pale blue → blue precipitate → deep blue solution → dark blue crystals. Sources of error: product loss during filtration, solubility in washing, incomplete drying, overheating. Improvements: vacuum filtration, cold ethanol wash, slow cooling, desiccator drying, quantitative transfer, recrystallisation.'
+        text: 'CP14: Make [Cu(NH₃)₄]SO₄·H₂O (Mr = 245.5) from CuSO₄·5H₂O (Mr = 249.5). Method: weigh CuSO₄·5H₂O by difference → dissolve in minimum water → warm in water bath (NOT Bunsen) → move to fume cupboard → add conc. NH₃ → deep blue solution → pour into ethanol → ice bath → vacuum filter using Büchner funnel → wash with cold ethanol × 2 → dry → weigh. % yield = (actual ÷ theoretical) × 100%. Sources of error: product lost in filtration/washing, incomplete drying (mass too high), ethanol dissolves some product. PPQ Jan 2014: + HCl → [CuCl₄]²⁻ (yellow, tetrahedral); + dilute NH₃ → blue precipitate → precipitate dissolves → deep blue [Cu(NH₃)₄]²⁺.'
       }
     }
   ],
@@ -267,31 +273,36 @@ export const note_chemistry_5_17_9 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'h-practical-overview',
-        prompt: 'Outline the stages of the copper complex preparation practical.'
+        blockId: 'list-cp14-method',
+        prompt: 'Outline the CP14 exam method for preparing [Cu(NH₃)₄]SO₄·H₂O. List 5 key steps in order. Why use a water bath instead of a Bunsen burner?'
       },
       {
         id: 'cue-2',
         blockId: 'p-reactions-involved',
-        prompt: 'Write the two key equations: (1) precipitation of Cu(OH)₂, (2) formation of [Cu(NH₃)₄]²⁺ complex.'
+        prompt: 'Write the ligand exchange equation for the formation of [Cu(NH₃)₄]²⁺ from [Cu(H₂O)₆]²⁺. Why does NH₃ displace H₂O?'
       },
       {
         id: 'cue-3',
-        blockId: 'p-method-part-2',
-        prompt: 'Describe what happens when ammonia is added to the copper sulfate solution.'
+        blockId: 'callout-cp14-buchner',
+        prompt: 'Why is the product poured into ethanol in CP14? What is the role of the ice bath? Why use a Büchner funnel (not Hirsch)?'
       },
       {
         id: 'cue-4',
         blockId: 'p-yield-formula',
-        prompt: 'Calculate percentage yield given mass of CuSO₄·5H₂O and mass of product obtained.'
+        prompt: 'Calculate % yield for CP14: 1.50 g CuSO₄·5H₂O used, 1.22 g product obtained. Give Mr values used. What is the mole ratio?'
       },
       {
         id: 'cue-5',
-        blockId: 'p-improvements-list',
-        prompt: 'List three improvements to increase yield in this practical.'
+        blockId: 'callout-ppq14-2',
+        prompt: 'Describe, with explanations, what is observed when dilute ammonia is added drop by drop to CuSO₄(aq). Give THREE distinct observations. (Jan 2014 PPQ)'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-ppq14-1',
+        prompt: 'What colour change and complex ion form when excess concentrated HCl is added to CuSO₄(aq)? Write the equation and explain the change in geometry.'
       }
     ],
-    summaryText: 'Prepare [Cu(NH₃)₄(H₂O)₂]SO₄·H₂O: dissolve CuSO₄·5H₂O, add NH₃ (forms blue Cu(OH)₂ precipitate), add excess NH₃ (deep blue solution), heat to 50°C, cool slowly, refrigerate, filter, wash with cold water + ethanol, dry. Yield = (actual mass ÷ theoretical mass) × 100%; theoretical = (mass CuSO₄ × 282) ÷ 250. Typical yield 50–70%. Sources of error: filtration/washing losses, incomplete drying, overheating. Improvements: vacuum filtration, cold ethanol wash, slow cooling, desiccator drying.',
+    summaryText: 'CP14 exam method: weigh by difference → dissolve in minimum water (~4 cm³) → warm in water bath → fume cupboard → add conc. NH₃ → deep blue → pour into ethanol → ice bath → Büchner funnel vacuum filter → wash cold ethanol × 2 → dry → weigh. Mr: CuSO₄·5H₂O = 249.5; [Cu(NH₃)₄]SO₄·H₂O = 245.5. Ratio 1:1. % yield = actual ÷ theoretical × 100%. PPQ Jan 2014: + HCl → yellow-green [CuCl₄]²⁻ (4-coordinate, tetrahedral); + dilute NH₃ → blue precipitate (Cu(OH)₂) → dissolves → DEEP blue [Cu(NH₃)₄]²⁺.',
     ready: false
   },
   evidence: [
