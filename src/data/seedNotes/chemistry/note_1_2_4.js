@@ -28,6 +28,34 @@ export const note_chemistry_1_2_4 = {
       terms: ['First ionisation energy', 'Ionisation energy']
     },
     {
+      id: 'h-early-ie',
+      type: 'heading',
+      data: { text: 'IE\u2081 Values for the First Elements and Period 2', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-ie1-period2',
+      type: 'comparisonTable',
+      data: {
+        caption: 'First ionisation energies (kJ mol\u207b\u00b9) \u2014 H and He, then the full Period 2 sequence.',
+        headers: ['Element', 'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne'],
+        rows: [
+          ['IE\u2081', '1310', '2370', '520', '900', '799', '1086', '1402', '1314', '1681', '2080']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-ie1-early',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Explaining IE\u2081 of the First Three Elements',
+        text: '<strong>Hydrogen (H): 1s\u00b9 \u2014 IE\u2081 = 1310 kJ mol\u207b\u00b9</strong><br/>\u2022 Very small atom; one electron close to the nucleus.<br/>\u2022 No inner electrons provide any shielding.<br/>\u2022 High IE\u2081 despite only 1 proton \u2014 because the electron is so close to the nucleus.<br/><br/><strong>Helium (He): 1s\u00b2 \u2014 IE\u2081 = 2370 kJ mol\u207b\u00b9 (highest of any element)</strong><br/>\u2022 Same 1s orbital as hydrogen \u2014 same small distance, zero shielding.<br/>\u2022 But 2 protons instead of 1 attract both electrons far more strongly.<br/><br/><strong>Lithium (Li): 1s\u00b22s\u00b9 \u2014 IE\u2081 = 519 kJ mol\u207b\u00b9</strong><br/>\u2022 Outer electron is in the 2s orbital \u2014 much further from the nucleus.<br/>\u2022 Shielded by the 1s\u00b2 electrons (net pull from centre \u2248 +1).<br/>\u2022 Despite having 3 protons, IE\u2081 drops dramatically \u2014 distance and shielding together outweigh the extra nuclear charge.<br/><br/><em>Key comparison: Li (519 kJ mol\u207b\u00b9) vs H (1310 kJ mol\u207b\u00b9). H has only 1 proton yet higher IE\u2081 than Li with 3 protons. This demonstrates that distance from the nucleus and electron shielding can dominate over nuclear charge.</em>'
+      },
+      terms: []
+    },
+    {
       id: 'h-factors',
       type: 'heading',
       data: { text: 'Three Factors Affecting Ionisation Energy', level: 2 },
@@ -133,6 +161,44 @@ export const note_chemistry_1_2_4 = {
       terms: []
     },
     {
+      id: 'h-transition-ie',
+      type: 'heading',
+      data: { text: 'IE\u2081 Across the Transition Metals (d-block)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-ie1-transition',
+      type: 'comparisonTable',
+      data: {
+        caption: 'First ionisation energies across the first d-block series (kJ mol\u207b\u00b9). Values stay roughly constant from Sc to Cu, then rise sharply at Zn.',
+        headers: ['Element', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn'],
+        rows: [
+          ['IE\u2081', '631', '658', '650', '652', '717', '762', '758', '737', '745', '908']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-transition-ie',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Why IE\u2081 is Roughly Constant Across the Transition Metals (Sc \u2192 Cu)',
+        text: '<strong>All transition metals: [Ar]3d\u207f4s\u00b2</strong> (except Cr [Ar]3d\u20754s\u00b9 and Cu [Ar]3d\u00b9\u20704s\u00b9). The electron removed in IE\u2081 always comes from the <strong>4s orbital</strong> (outermost shell).<br/><br/><strong>Why IE\u2081 stays roughly constant from Sc (Z=21) to Cu (Z=29):</strong><br/>\u2022 Going Sc \u2192 Cu, nuclear charge increases by 8 protons.<br/>\u2022 The number of 3d electrons also increases by 8.<br/>\u2022 The 3d electrons are closer to the nucleus than 4s, so they partially screen the 4s electrons from the increasing nuclear charge.<br/>\u2022 Effect of extra proton \u2248 cancelled by extra 3d electron screening \u2192 IE\u2081 stays roughly constant.<br/><br/><strong>The rise from Cu to Zn:</strong><br/>Cu: [Ar]3d\u00b9\u20704s\u00b9 \u2192 IE\u2081 = 745 kJ mol\u207b\u00b9 | Zn: [Ar]3d\u00b9\u20704s\u00b2 \u2192 IE\u2081 = 908 kJ mol\u207b\u00b9<br/>Both remove a 4s electron with identical 3d\u00b9\u2070 screening present. The extra proton in Zn pulls 4s more tightly \u2192 higher IE\u2081.<br/><br/><em>Important: In actual transition metal atoms, 4s has HIGHER energy than 3d (opposite to Aufbau filling order). This means 4s electrons are always removed first when forming ions \u2014 e.g. Fe\u00b2\u207a removes 4s\u00b2 first, giving [Ar]3d\u2076, not [Ar]4s\u00b23d\u2074.</em>'
+      },
+      terms: ['Transition metal', '4s orbital']
+    },
+    {
+      id: 'callout-ie-reactivity',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Link Between IE\u2081 and Reactivity of Group 1 Metals',
+        text: '<strong>Lower IE\u2081 \u2192 easier to form M\u207a(g) \u2192 lower activation energy \u2192 more reactive</strong><br/><br/>Group 1 metals must form M\u207a ions to react. A lower IE\u2081 means less energy is needed to remove the outer electron, so reactions proceed more readily.<br/><br/><strong>Group 1 IE\u2081 values (kJ mol\u207b\u00b9):</strong><br/>Li (520) > Na (496) > K (419) > Rb (403) > Cs (375)<br/>Reactivity: Li &lt; Na &lt; K &lt; Rb &lt; Cs (increasing down the group). ✓<br/><br/><em>Caution: IE\u2081 alone is not the complete explanation for reactivity. The full thermodynamic cycle includes enthalpy of atomisation, hydration enthalpy (in aqueous reactions) and lattice enthalpy. However, within the same group these terms change less dramatically than IE\u2081, so IE\u2081 is the dominant comparative factor.</em>'
+      },
+      terms: ['Reactivity', 'Group 1']
+    },
+    {
       id: 'h-practice-ie',
       type: 'heading',
       data: { text: 'Practice Questions', level: 2 },
@@ -178,9 +244,11 @@ export const note_chemistry_1_2_4 = {
       { id: 'c4', blockId: 'callout-ee-repulsion', prompt: 'Explain why "electron-electron repulsion" is preferred over "shielding" at A-level. What is the effect of paired electrons on ionisation energy?' },
       { id: 'c5', blockId: 'callout-ie-equations', prompt: 'Write the equation for the third ionisation energy of magnesium, including all state symbols.' },
       { id: 'c6', blockId: 'callout-pq-ie3', prompt: 'Which element in Period 3 has the highest second ionisation energy? Explain your reasoning in terms of electron configuration.' },
-      { id: 'c7', blockId: 'callout-successive', prompt: 'Explain how successive ionisation energies provide evidence for electron shells. Why is there a large jump between IE₁ and IE₂ for Na?' }
+      { id: 'c7', blockId: 'callout-successive', prompt: 'Explain how successive ionisation energies provide evidence for electron shells. Why is there a large jump between IE\u2081 and IE\u2082 for Na?' },
+      { id: 'c8', blockId: 'callout-transition-ie', prompt: 'Why is the first ionisation energy roughly constant across the transition metals from Sc to Cu? What causes the rise at Zn? Which orbital is always removed first in transition metals, and why?' },
+      { id: 'c9', blockId: 'callout-ie-reactivity', prompt: 'How does IE\u2081 relate to the reactivity of Group 1 metals? Give IE\u2081 values for Li and Cs. State one limitation of using IE\u2081 alone to explain reactivity.' }
     ],
-    summaryText: 'IE₁: energy to remove 1 mol e⁻ from 1 mol X(g). Units: kJ mol⁻¹. Equation: X(g) → X⁺(g) + e⁻ — state symbols REQUIRED. Three factors: nuclear charge (+IE), atomic radius (−IE), electron-electron repulsion (−IE). Successive IEs always increase; big jumps indicate shell boundaries (evidence for shells). Across period: generally increases; dips at Group 3 (3p above 3s) and Group 6 (pairing repulsion). Down group: decreases. IE₂(Al) > IE₂(Mg) [higher Z, same 3s orbital]. IE₂(Al) > IE₂(Si) [Al removes from 3s, Si removes from 3p — subshell effect dominates].',
+    summaryText: 'IE\u2081: energy to remove 1 mol e\u207b from 1 mol X(g). Units: kJ mol\u207b\u00b9. Equation: X(g) \u2192 X\u207a(g) + e\u207b \u2014 state symbols REQUIRED. Three factors: nuclear charge (+IE), atomic radius (\u2212IE), electron-electron repulsion (\u2212IE). H (1310), He (2370 \u2014 highest), Li drops to 520 (outer e\u207b in n=2, shielded). Successive IEs always increase; big jumps indicate shell boundaries. Across period: generally increases; dips at Group 3 (3p above 3s) and Group 6 (pairing repulsion). Down group: decreases. IE\u2082(Al) > IE\u2082(Mg) [higher Z, same 3s orbital]. IE\u2082(Al) > IE\u2082(Si) [Al removes from 3s, Si removes from 3p \u2014 subshell effect dominates]. Transition metals: roughly constant IE\u2081 Sc\u2192Cu (extra 3d screens extra proton); rise at Zn (extra proton, same 3d\u00b9\u2070). Always lose 4s first. IE\u2081 + reactivity: lower IE\u2081 \u2192 easier M\u207a formation \u2192 lower activation energy \u2192 more reactive (Li &lt; Na &lt; K &lt; Rb &lt; Cs).',
     ready: false
   },
   evidence: []

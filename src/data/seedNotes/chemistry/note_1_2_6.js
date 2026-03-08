@@ -22,6 +22,34 @@ export const note_chemistry_1_2_6 = {
       terms: ['Periodic property', 'Periodicity']
     },
     {
+      id: 'h-comparison',
+      type: 'heading',
+      data: { text: 'Comparison of IE\u2081 Across Periods 2 and 3', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-period2',
+      type: 'comparisonTable',
+      data: {
+        caption: 'First ionisation energies across Period 2 (kJ mol\u207b\u00b9) \u2014 same wave pattern as Period 3 but at higher values.',
+        headers: ['Element', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne'],
+        rows: [
+          ['IE\u2081', '520', '900', '799', '1086', '1402', '1314', '1681', '2080']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-p2-vs-p3',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Period 2 vs Period 3: Same Pattern, Different Heights',
+        text: '<strong>Both periods show the identical wave pattern:</strong> general increase interrupted by two dips at the same group positions (Group 2\u21923 and Group 5\u21926).<br/><br/>\u2022 <strong>Period 3 IE\u2081 values are consistently lower than Period 2</strong> \u2014 n=3 outer electrons are further from the nucleus and shielded by more inner electrons than n=2 electrons.<br/>\u2022 This <em>same pattern repeating</em> each period is the definition of <strong>periodicity</strong>.<br/><br/><strong>Dip positions are identical:</strong><br/>\u2022 Dip 1: Be\u2192B (Period 2) and Mg\u2192Al (Period 3) \u2014 outer electron moves from s subshell to higher-energy p subshell.<br/>\u2022 Dip 2: N\u2192O (Period 2) and P\u2192S (Period 3) \u2014 4th p electron must pair up in an occupied orbital, experiencing extra electron\u2013electron repulsion.<br/><br/><em>Exam note: Edexcel often asks you to compare data from both periods. Seeing the dips at exactly the same positions in both periods confirms that the pattern is truly periodic.</em>'
+      },
+      terms: []
+    },
+    {
       id: 'h-period',
       type: 'heading',
       data: { text: 'Trend Across Period 3 (Na → Ar)', level: 2 },
@@ -158,10 +186,54 @@ export const note_chemistry_1_2_6 = {
         rows: [
           ['Metallic lattice', 'Li (180 °C), Be (1287 °C)', 'Na (98 °C), Mg (650 °C), Al (660 °C)', 'High'],
           ['Covalent giant lattice', 'B (~2076 °C), C — diamond (3550 °C)', 'Si (1414 °C)', 'Very high (peak in period)'],
-          ['Simple molecular covalent', 'N₂ (−196 °C), O₂ (−183 °C), F₂ (−220 °C), Ne (−249 °C)', 'P₄ (44 °C), S₈ (113 °C), Cl₂ (−101 °C), Ar (−189 °C)', 'Low (weak van der Waals only)']
+          ['Simple molecular covalent', 'N\u2082 (\u2212196 \u00b0C), O\u2082 (\u2212183 \u00b0C), F\u2082 (\u2212220 \u00b0C), Ne (\u2212249 \u00b0C)', 'P\u2084 (44 \u00b0C), S\u2088 (113 \u00b0C), Cl\u2082 (\u2212101 \u00b0C), Ar (\u2212189 \u00b0C)', 'Low (weak van der Waals only)']
         ]
       },
       terms: []
+    },
+    {
+      id: 'h-ionic-radius',
+      type: 'heading',
+      data: { text: 'Ionic Radius', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-ionic-radii',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Ionic Radius Trends',
+        text: '<strong>Down a group \u2014 ionic radii increase:</strong><br/>Each successive period adds a complete new electron shell \u2192 ions are progressively larger.<br/>Example: Li\u207a (0.076 nm) \u2192 Na\u207a (0.102 nm) \u2192 K\u207a (0.138 nm)<br/><br/><strong>Across a period \u2014 positive ions (isoelectronic series) decrease in size:</strong><br/>Na\u207a, Mg\u00b2\u207a and Al\u00b3\u207a all have the electron configuration 2, 8. However, nuclear charge increases from 11 \u2192 12 \u2192 13. More protons pulling the <em>same number</em> of electrons inward more strongly \u2192 radius decreases.<br/><br/><strong>Large jump from cations to anions (e.g. Al\u00b3\u207a \u2192 P\u00b3\u207b):</strong><br/>Cations (Na\u207a, Mg\u00b2\u207a, Al\u00b3\u207a) have configuration 2, 8 (10 electrons).<br/>Anions (P\u00b3\u207b, S\u00b2\u207b, Cl\u207b) have configuration 2, 8, 8 (18 electrons).<br/>The extra electron shell in anions makes them dramatically larger than cations from the same period.<br/><br/><em>Note: ionic radii depend on coordination number in a crystal lattice and method of measurement. Always compare values from the same source.</em>'
+      },
+      terms: ['Ionic radius', 'Isoelectronic']
+    },
+    {
+      id: 'table-ionic-period3',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Ionic radii across Period 3 (nm, 6-coordinated). Note the large jump from cations (config 2,8) to anions (config 2,8,8).',
+        headers: ['Ion', 'Na\u207a', 'Mg\u00b2\u207a', 'Al\u00b3\u207a', 'P\u00b3\u207b', 'S\u00b2\u207b', 'Cl\u207b'],
+        rows: [
+          ['Protons (Z)', '11', '12', '13', '15', '16', '17'],
+          ['Electron config', '2, 8', '2, 8', '2, 8', '2, 8, 8', '2, 8, 8', '2, 8, 8'],
+          ['Ionic radius (nm)', '0.102', '0.072', '0.054', '0.212', '0.184', '0.181']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'table-isoelectronic',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Isoelectronic series: all contain 10 electrons (config 2,8). Increasing nuclear charge pulls electrons inward \u2192 smaller radius.',
+        headers: ['Ion', 'N\u00b3\u207b', 'O\u00b2\u207b', 'F\u207b', 'Na\u207a', 'Mg\u00b2\u207a', 'Al\u00b3\u207a'],
+        rows: [
+          ['Protons (Z)', '7', '8', '9', '11', '12', '13'],
+          ['Electron config', '2, 8', '2, 8', '2, 8', '2, 8', '2, 8', '2, 8'],
+          ['Ionic radius (nm)', '0.171', '0.140', '0.133', '0.102', '0.072', '0.054']
+        ]
+      },
+      terms: ['Isoelectronic']
     },
     {
       id: 'h-practice-2b',
@@ -219,9 +291,11 @@ export const note_chemistry_1_2_6 = {
       { id: 'c4', blockId: 'callout-atomic-radius', prompt: 'Describe and explain the trend in atomic radius across a period and down a group.' },
       { id: 'c5', blockId: 'callout-melting', prompt: 'Describe the melting point trend across Period 3 and explain the sharp drop after Group 4.' },
       { id: 'c6', blockId: 'callout-pq-2b4', prompt: 'Explain why IE₁(N) > IE₁(P), using quantum shells and electron-electron repulsion. Give 3 marking points.' },
-      { id: 'c7', blockId: 'callout-boron-anomaly', prompt: 'Explain why IE₁(B) < IE₁(Be) in Period 2, despite boron having a higher nuclear charge. Which subshell does each element remove from?' }
+      { id: 'c7', blockId: 'callout-boron-anomaly', prompt: 'Explain why IE\u2081(B) < IE\u2081(Be) in Period 2, despite boron having a higher nuclear charge. Which subshell does each element remove from?' },
+      { id: 'c8', blockId: 'callout-ionic-radii', prompt: 'Explain why ionic radius decreases from Na\u207a to Mg\u00b2\u207a to Al\u00b3\u207a across Period 3. Why is there a large jump in ionic radius when moving from Al\u00b3\u207a to P\u00b3\u207b?' },
+      { id: 'c9', blockId: 'table-isoelectronic', prompt: 'Define isoelectronic. For the series N\u00b3\u207b, O\u00b2\u207b, F\u207b, Na\u207a, Mg\u00b2\u207a: all have 10 electrons. How does ionic radius change across this series and why?' }
     ],
-    summaryText: 'Periodicity: regularly repeating pattern of properties; predicted from position; explained from electronic configuration. Period trend (IE₁): generally increases (Z↑, same shell). Dip G2→G3: outer e⁻ in higher-energy p subshell (Al < Mg; B < Be). Dip G5→G6: paired e⁻ repulsion in shared p orbital (S < P; O < N). Group trend: IE₁ decreases (greater atomic radius + more inner-shell shielding). Atomic radius: decreases across period (Z↑, same shell); increases down group (more shells). Radius types: covalent (bonded), van der Waals (non-bonded, largest), metallic. Melting points: metallic (high) → covalent giant lattice (very high) → simple molecular covalent (low) — pattern identical in Periods 2 and 3.',
+    summaryText: 'Periodicity: regularly repeating pattern of properties; predicted from position; explained from electronic configuration. Period trend (IE\u2081): generally increases (Z\u2191, same shell). Dip G2\u2192G3: outer e\u207b in higher-energy p subshell (Al < Mg; B < Be). Dip G5\u2192G6: paired e\u207b repulsion in shared p orbital (S < P; O < N). Group trend: IE\u2081 decreases (greater atomic radius + more inner-shell shielding). Atomic radius: decreases across period (Z\u2191, same shell); increases down group (more shells). Radius types: covalent (bonded), van der Waals (non-bonded, largest), metallic. Melting points: metallic (high) \u2192 covalent giant lattice (very high) \u2192 simple molecular covalent (low). Ionic radius: decreases across period for cations (isoelectronic \u2014 more protons, same config); large jump from cations to anions (extra electron shell); decreases across isoelectronic series as Z increases.',
     ready: false
   },
   evidence: []
