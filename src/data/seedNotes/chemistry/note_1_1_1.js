@@ -71,12 +71,20 @@ export const note_chemistry_1_1_1 = {
       data: { latex: 'n = \\frac{m}{M}', caption: 'Mole equation: n = amount in mol, m = mass in g, M = molar mass in g mol⁻¹' }
     },
     {
+      id: 'svg-mole-triangle',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 230" width="280" height="230"><polygon points="140,15 10,200 270,200" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2.5"/><line x1="75" y1="108" x2="205" y2="108" stroke="#6d28d9" stroke-width="2"/><text x="140" y="72" text-anchor="middle" font-size="38" font-weight="bold" fill="#4c1d95" font-family="Arial,sans-serif">m</text><text x="140" y="100" text-anchor="middle" font-size="12" fill="#7c3aed" font-family="Arial,sans-serif">mass (g)</text><text x="86" y="158" text-anchor="middle" font-size="34" font-weight="bold" fill="#1d4ed8" font-family="Arial,sans-serif">n</text><text x="86" y="180" text-anchor="middle" font-size="11" fill="#2563eb" font-family="Arial,sans-serif">amount (mol)</text><text x="194" y="158" text-anchor="middle" font-size="34" font-weight="bold" fill="#065f46" font-family="Arial,sans-serif">M</text><text x="194" y="180" text-anchor="middle" font-size="11" fill="#059669" font-family="Arial,sans-serif">molar mass (g mol&#x207B;&#xB9;)</text><text x="140" y="218" text-anchor="middle" font-size="11" fill="#374151" font-family="Arial,sans-serif">cover the unknown: n = m/M | m = n&#xD7;M | M = m/n</text></svg>',
+        caption: 'Mole Triangle — cover the variable you want to find'
+      }
+    },
+    {
       id: 'callout-mole-worked',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Worked Examples (from the textbook)',
-        text: '<strong>1. Amount in 6.51 g of NaCl:</strong> n = 6.51 / 58.5 = <strong>0.111 mol</strong><br/><strong>2. Mass of 0.263 mol of I₂:</strong> m = 0.263 × 127.9 = <strong>33.6 g</strong><br/><strong>3. Molar mass if 0.284 mol has mass 17.8 g:</strong> M = 17.8 / 0.284 = <strong>62.7 g mol⁻¹</strong>'
+        title: 'Worked Examples',
+        text: '<strong>1. Amount in 6.51 g of NaCl:</strong> n = 6.51 / 58.5 = <strong>0.111 mol</strong><br/><strong>2. Mass of 0.263 mol of HI (hydrogen iodide):</strong> m = 0.263 × 127.9 = <strong>33.6 g</strong><br/><strong>3. Molar mass if 0.284 mol has mass 17.8 g:</strong> M = 17.8 / 0.284 = <strong>62.7 g mol⁻¹</strong>'
       },
       terms: []
     },
@@ -97,12 +105,38 @@ export const note_chemistry_1_1_1 = {
       terms: ['Avogadro constant']
     },
     {
+      id: 'table-mole-examples',
+      type: 'comparisonTable',
+      data: {
+        caption: 'One mole of any substance always contains 6.02 × 10²³ particles — the same scale-up factor',
+        headers: ['Substance', 'Formula', 'Molar Mass (g mol⁻¹)', 'Mass of 1 mol', 'Particles in 1 mol'],
+        rows: [
+          ['Helium (monatomic)', 'He', '4.0', '4.0 g', '6.02 × 10²³ atoms'],
+          ['Carbon dioxide', 'CO₂', '44.0', '44.0 g', '6.02 × 10²³ molecules'],
+          ['Nitrate ion', 'NO₃⁻', '62.0', '62.0 g', '6.02 × 10²³ ions'],
+          ['Sodium chloride', 'NaCl', '58.5', '58.5 g', '6.02 × 10²³ formula units'],
+          ['Hydrogen gas (diatomic)', 'H₂', '2.0', '2.0 g', '6.02 × 10²³ molecules (= 1.204 × 10²⁴ atoms)']
+        ]
+      },
+      terms: []
+    },
+    {
       id: 'callout-avogadro-worked',
       type: 'callout',
       data: {
         style: 'worked',
         title: 'Avogadro Calculations (from the textbook)',
         text: '<strong>Q: How many H₂O molecules are in 1.25 g of water?</strong><br/>n = 1.25 / 18.0 = 0.0694 mol<br/>Number = 0.0694 × 6.02 × 10²³ = <strong>4.18 × 10²² molecules</strong><br/><br/><strong>Q: How many total atoms are in 80.0 g of MgO?</strong><br/>n(MgO) = 80.0 / 40.3 = 1.985 mol<br/>Number of MgO formula units = 1.985 × 6.02 × 10²³ = 1.195 × 10²⁴.<br/>Because there are 2 atoms (1 Mg, 1 O) in each MgO unit, total atoms = 1.195 × 10²⁴ × 2 = <strong>2.39 × 10²⁴ atoms</strong>.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-gold-atoms',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Mass of 100 Million Gold Atoms',
+        text: '<strong>Q: What is the mass of 1 × 10⁸ (100 million) atoms of gold (Au)?</strong><br/>(Aᵣ of Au = 197.0)<br/><br/><strong>Step 1 — Find moles:</strong><br/>n = number of particles ÷ L = (1 × 10⁸) ÷ (6.02 × 10²³) = <strong>1.66 × 10⁻¹⁶ mol</strong><br/><br/><strong>Step 2 — Find mass:</strong><br/>m = n × M = 1.66 × 10⁻¹⁶ × 197.0 = <strong>3.27 × 10⁻¹⁴ g</strong><br/><br/><em>Key insight: 100 million sounds enormous, but it is an incredibly tiny mass. This shows why atoms are far too small to weigh directly — and why Avogadro\'s constant exists as a scaling factor up to laboratory quantities.</em>'
       },
       terms: []
     },
@@ -145,9 +179,10 @@ export const note_chemistry_1_1_1 = {
       { id: 'c3', blockId: 'callout-avogadro', prompt: 'State the value and units of the Avogadro constant (L).' },
       { id: 'c4', blockId: 'callout-mole-worked', prompt: 'Calculate the amount of substance in 8.00 g of sulfur dioxide (SO₂). (Aᵣ: S = 32.1, O = 16.0)' },
       { id: 'c5', blockId: 'callout-electron-count', prompt: 'How many electrons are in 10.1 g of neon? (Ar = 20.2, atomic number = 10)' },
-      { id: 'c6', blockId: 'callout-avogadro-mcq', prompt: 'Explain why "the number of atoms in one mole of O₂ gas" is NOT equal to Avogadro\'s constant.' }
+      { id: 'c6', blockId: 'callout-avogadro-mcq', prompt: 'Explain why "the number of atoms in one mole of O₂ gas" is NOT equal to Avogadro\'s constant.' },
+      { id: 'c7', blockId: 'callout-gold-atoms', prompt: 'Calculate the mass of 1 × 10⁸ atoms of gold (Aᵣ = 197.0). Show all steps.' }
     ],
-    summaryText: 'Aᵣ = weighted mean mass relative to ¹⁄₁₂ ¹²C (no units). Mᵣ = sum of Aᵣ values (no units). M = mass per mole (g mol⁻¹). Mole = amount containing 6.02×10²³ particles. n = m/M. L = 6.02×10²³ mol⁻¹. Electrons per mole = L × atomic number. Avogadro is a number not a mass; diatomic molecules contain 2L atoms per mole.',
+    summaryText: 'Aᵣ = weighted mean mass relative to ¹⁄₁₂ ¹²C (no units). Mᵣ = sum of Aᵣ values (no units). M = mass per mole (g mol⁻¹). Use the mole triangle: n = m/M, m = n×M, M = m/n. Mole = amount containing 6.02×10²³ particles (L). He (4g), CO₂ (44g), NO₃⁻ (62g) all contain exactly L particles per mole. To find number of particles from n: multiply by L. To find n from particles: divide by L. Electrons per mole = L × atomic number. Avogadro is a number not a mass; diatomic molecules contain 2L atoms per mole.',
     ready: false
   },
   evidence: []

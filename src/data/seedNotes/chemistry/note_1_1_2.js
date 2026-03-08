@@ -8,8 +8,72 @@ export const note_chemistry_1_1_2 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Write balanced full and ionic equations, including state symbols, for chemical reactions. Understand how to derive and simplify ionic equations using spectator ions.' },
+      data: { text: 'Write balanced full, ionic and half equations including state symbols. Use correct arrow types. Know the four common lab acids and their formulae. Write equations for acid reactions with metals, metal oxides, metal hydroxides, alkalis, carbonates and hydrogencarbonates.' },
       terms: []
+    },
+    {
+      id: 'h-lab-acids',
+      type: 'heading',
+      data: { text: 'The Four Common Lab Acids', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-lab-acids',
+      type: 'comparisonTable',
+      data: {
+        caption: 'You must know these four acids — their names, formulae and uses throughout the course',
+        headers: ['Acid Name', 'Formula', 'Notes'],
+        rows: [
+          ['Hydrochloric acid', 'HCl', 'Strong acid; used in many displacement and neutralisation reactions'],
+          ['Sulfuric acid', 'H₂SO₄', 'Strong diprotic acid; used as a reagent and sometimes as a catalyst'],
+          ['Nitric acid', 'HNO₃', 'Strong acid; forms nitrate salts in reactions'],
+          ['Phosphoric acid', 'H₃PO₄', 'Weak acid; forms phosphate salts; appears in biochemistry contexts']
+        ]
+      },
+      terms: ['Hydrochloric acid', 'Sulfuric acid', 'Nitric acid', 'Phosphoric acid']
+    },
+    {
+      id: 'callout-acid-tip',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Acid Formulae',
+        text: 'These four acids appear throughout the A-Level course as reagents, catalysts and sources of ions. You must memorise their names and formulae. Hydrochloric (HCl), Sulfuric (H₂SO₄), Nitric (HNO₃), Phosphoric (H₃PO₄).'
+      },
+      terms: []
+    },
+    {
+      id: 'h-acid-reactions',
+      type: 'heading',
+      data: { text: 'Types of Acid Reactions — General Rules', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-acid-reactions',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Reaction patterns for acids with different types of bases',
+        headers: ['Acid reacts with…', 'Products', 'Example', 'Key test/observation'],
+        rows: [
+          ['Metal', 'Salt + Hydrogen gas (H₂)', 'Mg + 2HCl → MgCl₂ + H₂', 'H₂ burns with a squeaky pop'],
+          ['Metal oxide', 'Salt + Water', 'CuO + H₂SO₄ → CuSO₄ + H₂O', 'Black solid (CuO) dissolves; blue solution forms'],
+          ['Metal hydroxide (insoluble)', 'Salt + Water', 'Zn(OH)₂(s) + H₂SO₄(aq) → ZnSO₄(aq) + 2H₂O(l)', 'White solid dissolves; solution is colourless'],
+          ['Alkali (soluble hydroxide)', 'Salt + Water', 'NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)', 'No visible change; temperature rises'],
+          ['Metal carbonate', 'Salt + Water + Carbon dioxide (CO₂)', 'CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂', 'Effervescence; CO₂ turns limewater cloudy'],
+          ['Metal hydrogencarbonate', 'Salt + Water + Carbon dioxide (CO₂)', 'NaHCO₃ + HCl → NaCl + H₂O + CO₂', 'Effervescence; CO₂ turns limewater cloudy']
+        ]
+      },
+      terms: ['Neutralisation', 'Effervescence']
+    },
+    {
+      id: 'callout-carbonate-hco3',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Carbonate vs Hydrogencarbonate',
+        text: 'The carbonate ion is CO₃²⁻ (charge −2). The hydrogencarbonate ion is HCO₃⁻ (charge −1). Both react with acids to give the same products (salt + water + CO₂) but with different stoichiometry:<br/><br/>CO₃²⁻(aq) + 2H⁺(aq) → H₂O(l) + CO₂(g)<br/>HCO₃⁻(aq) + H⁺(aq) → H₂O(l) + CO₂(g)'
+      },
+      terms: ['Carbonate', 'Hydrogencarbonate']
     },
     {
       id: 'h-state',
@@ -127,9 +191,12 @@ export const note_chemistry_1_1_2 = {
       { id: 'c1', blockId: 'table-states', prompt: 'What do the state symbols (s), (l), (g) and (aq) mean?' },
       { id: 'c2', blockId: 'list-ionic-steps', prompt: 'Describe the three steps for deriving a simplest ionic equation from a full equation.' },
       { id: 'c3', blockId: 'callout-ionic-w2', prompt: 'Write the simplest ionic equation for: Pb(NO₃)₂(aq) + Na₂SO₄(aq) → PbSO₄(s) + 2NaNO₃(aq).' },
-      { id: 'c4', blockId: 'callout-state-warning', prompt: 'A student writes H₂O(aq) in an equation. Explain the error.' }
+      { id: 'c4', blockId: 'callout-state-warning', prompt: 'A student writes H₂O(aq) in an equation. Explain the error.' },
+      { id: 'c5', blockId: 'table-lab-acids', prompt: 'State the names and formulae of the four common lab acids.' },
+      { id: 'c6', blockId: 'table-acid-reactions', prompt: 'What products form when an acid reacts with (a) a metal, (b) a carbonate?' },
+      { id: 'c7', blockId: 'callout-carbonate-hco3', prompt: 'Write the ionic equations for carbonate and hydrogencarbonate reacting with acid. What is the key difference?' }
     ],
-    summaryText: 'State symbols: (s) solid, (l) liquid, (g) gas, (aq) aqueous. Balance equations with coefficients. Ionic equations: expand ionic compounds, then cancel spectator ions (those on both sides unchanged). Molecules like CO₂ and H₂O are NOT split into ions.',
+    summaryText: 'Four lab acids: HCl, H₂SO₄, HNO₃, H₃PO₄. Acid+Metal → salt+H₂ (squeaky pop). Acid+Metal oxide/hydroxide → salt+H₂O. Acid+Alkali → salt+H₂O (ionic: H⁺+OH⁻→H₂O). Acid+Carbonate/HCO₃⁻ → salt+H₂O+CO₂ (turns limewater cloudy). State symbols: (s) solid, (l) liquid, (g) gas, (aq) aqueous. Balance equations with coefficients. Ionic equations: expand ionic compounds, then cancel spectator ions (those on both sides unchanged). Molecules like CO₂ and H₂O are NOT split into ions.',
     ready: false
   },
   evidence: []

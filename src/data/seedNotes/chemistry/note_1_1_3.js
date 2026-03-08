@@ -32,6 +32,34 @@ export const note_chemistry_1_1_3 = {
       terms: []
     },
     {
+      id: 'svg-4step-flowchart',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 435" width="300" height="435"><rect x="25" y="8" width="250" height="70" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/><text x="150" y="31" text-anchor="middle" font-size="13" font-weight="bold" fill="#4c1d95" font-family="Arial,sans-serif">&#x2460; Write Balanced Equation</text><text x="150" y="51" text-anchor="middle" font-size="11" fill="#5b21b6" font-family="Arial,sans-serif">Include state symbols where asked.</text><text x="150" y="67" text-anchor="middle" font-size="11" fill="#5b21b6" font-family="Arial,sans-serif">Coefficients give the mole ratio.</text><line x1="150" y1="78" x2="150" y2="100" stroke="#6d28d9" stroke-width="2"/><polygon points="150,104 143,96 157,96" fill="#6d28d9"/><rect x="25" y="104" width="250" height="70" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="150" y="127" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3a8a" font-family="Arial,sans-serif">&#x2461; Moles of KNOWN substance</text><text x="150" y="147" text-anchor="middle" font-size="14" font-style="italic" fill="#1d4ed8" font-family="Arial,sans-serif">n = m &#xF7; M</text><text x="150" y="164" text-anchor="middle" font-size="11" fill="#3b82f6" font-family="Arial,sans-serif">The substance the question gives data about.</text><line x1="150" y1="174" x2="150" y2="196" stroke="#2563eb" stroke-width="2"/><polygon points="150,200 143,192 157,192" fill="#2563eb"/><rect x="25" y="200" width="250" height="70" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="150" y="223" text-anchor="middle" font-size="13" font-weight="bold" fill="#713f12" font-family="Arial,sans-serif">&#x2462; Apply Mole Ratio</text><text x="150" y="243" text-anchor="middle" font-size="11" fill="#92400e" font-family="Arial,sans-serif">Coefficients in equation = mole ratio.</text><text x="150" y="259" text-anchor="middle" font-size="11" fill="#92400e" font-family="Arial,sans-serif">Multiply or divide n accordingly.</text><line x1="150" y1="270" x2="150" y2="292" stroke="#ca8a04" stroke-width="2"/><polygon points="150,296 143,288 157,288" fill="#ca8a04"/><rect x="25" y="296" width="250" height="70" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="150" y="319" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d" font-family="Arial,sans-serif">&#x2463; Mass (or Volume) of UNKNOWN</text><text x="150" y="339" text-anchor="middle" font-size="14" font-style="italic" fill="#15803d" font-family="Arial,sans-serif">m = n &#xD7; M</text><text x="150" y="355" text-anchor="middle" font-size="11" fill="#22c55e" font-family="Arial,sans-serif">For a gas at r.t.p.: V(cm&#xB3;) = n &#xD7; 24 000</text><rect x="25" y="380" width="250" height="47" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/><text x="150" y="399" text-anchor="middle" font-size="11" font-weight="bold" fill="#9a3412" font-family="Arial,sans-serif">&#x26A0; If given TWO reactant quantities:</text><text x="150" y="417" text-anchor="middle" font-size="11" fill="#9a3412" font-family="Arial,sans-serif">find the LIMITING REAGENT first!</text></svg>',
+        caption: '4-step method for all reacting mass calculations'
+      }
+    },
+    {
+      id: 'callout-caco3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 1: CaCO₃ Thermal Decomposition',
+        text: '<strong>Q: Calculate the mass of CaO formed when 25.0 g of CaCO₃ is thermally decomposed.</strong><br/><br/><strong>Step 1 — Balanced equation:</strong><br/>CaCO₃(s) → CaO(s) + CO₂(g)<br/><br/><strong>Step 2 — Moles of known (CaCO₃):</strong><br/>M(CaCO₃) = 40.1 + 12.0 + (3 × 16.0) = 100.1 g mol⁻¹<br/>n(CaCO₃) = 25.0 / 100.1 = <strong>0.250 mol</strong><br/><br/><strong>Step 3 — Mole ratio (CaCO₃ : CaO):</strong><br/>Coefficients: 1 : 1 → n(CaO) = 0.250 mol<br/><br/><strong>Step 4 — Mass of CaO (unknown):</strong><br/>M(CaO) = 40.1 + 16.0 = 56.1 g mol⁻¹<br/>m(CaO) = 0.250 × 56.1 = <strong>14.0 g</strong>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-methane',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 2: Methane Combustion',
+        text: '<strong>Q: What mass of water is produced when 32.0 g of CH₄ undergoes complete combustion?</strong><br/><br/><strong>Step 1 — Balanced equation:</strong><br/>CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g)<br/><br/><strong>Step 2 — Moles of known (CH₄):</strong><br/>M(CH₄) = 12.0 + (4 × 1.0) = 16.0 g mol⁻¹<br/>n(CH₄) = 32.0 / 16.0 = <strong>2.00 mol</strong><br/><br/><strong>Step 3 — Mole ratio (CH₄ : H₂O):</strong><br/>Coefficients: 1 : 2 → n(H₂O) = 2.00 × 2 = <strong>4.00 mol</strong><br/><br/><strong>Step 4 — Mass of H₂O (unknown):</strong><br/>M(H₂O) = (2 × 1.0) + 16.0 = 18.0 g mol⁻¹<br/>m(H₂O) = 4.00 × 18.0 = <strong>72.0 g</strong><br/><br/><em>Note: For combustion reactions the question will state if it is complete — unless told otherwise, always assume complete combustion.</em>'
+      },
+      terms: []
+    },
+    {
       id: 'callout-w1',
       type: 'callout',
       data: {
@@ -127,9 +155,11 @@ export const note_chemistry_1_1_3 = {
       { id: 'c2', blockId: 'callout-w2', prompt: 'From the equation 2NH₃ + H₂SO₄ → (NH₄)₂SO₄, what is the mole ratio of NH₃ to (NH₄)₂SO₄?' },
       { id: 'c3', blockId: 'callout-w3', prompt: 'Explain how you would distinguish CuO from Cu₂O using reacting mass data.' },
       { id: 'c4', blockId: 'callout-limiting-def', prompt: 'Define the terms limiting reagent and excess reagent. How do you identify which reagent is limiting?' },
-      { id: 'c5', blockId: 'callout-limiting-w1', prompt: '3.2 g of Cu reacts with 0.40 mol HNO₃. Equation: Cu + 4HNO₃ → Cu(NO₃)₂ + 2H₂O + 2NO₂. Which is the limiting reagent? Show your working.' }
+      { id: 'c5', blockId: 'callout-limiting-w1', prompt: '3.2 g of Cu reacts with 0.40 mol HNO₃. Equation: Cu + 4HNO₃ → Cu(NO₃)₂ + 2H₂O + 2NO₂. Which is the limiting reagent? Show your working.' },
+      { id: 'c6', blockId: 'callout-caco3', prompt: 'Calculate the mass of CaO formed from 25.0 g of CaCO₃. (Mᵣ: CaCO₃ = 100.1, CaO = 56.1)' },
+      { id: 'c7', blockId: 'callout-methane', prompt: 'What mass of water is produced when 32.0 g of methane burns completely? (Mᵣ: CH₄ = 16.0)' }
     ],
-    summaryText: '4-step method: (1) find M, (2) find n = m/M, (3) apply mole ratio, (4) m = n×M. Ratio comes from the coefficients in the balanced equation. Can also deduce equations by finding mole ratios from experimental masses. Limiting reagent = runs out first (check by comparing what you have vs what the ratio requires). Excess = more than needed.',
+    summaryText: '4-step method: (1) balanced equation, (2) n = m/M of known substance, (3) apply mole ratio from coefficients, (4) m = n×M of unknown. CaCO₃ → CaO + CO₂: 25g CaCO₃ → 14g CaO (1:1 ratio). CH₄ combustion: 32g CH₄ → 72g H₂O (1:2 ratio). Can also deduce equations from experimental reacting masses by converting to moles and finding the simplest whole-number ratio. Limiting reagent = runs out first; excess = more than needed.',
     ready: false
   },
   evidence: []

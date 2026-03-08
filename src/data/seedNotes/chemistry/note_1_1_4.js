@@ -28,6 +28,15 @@ export const note_chemistry_1_1_4 = {
       terms: ['Concentration']
     },
     {
+      id: 'svg-ncv-triangle',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 230" width="280" height="230"><polygon points="140,15 10,200 270,200" fill="#eff6ff" stroke="#3b82f6" stroke-width="2.5"/><line x1="75" y1="108" x2="205" y2="108" stroke="#3b82f6" stroke-width="2"/><text x="140" y="72" text-anchor="middle" font-size="38" font-weight="bold" fill="#1e40af" font-family="Arial,sans-serif">n</text><text x="140" y="100" text-anchor="middle" font-size="12" fill="#3b82f6" font-family="Arial,sans-serif">amount (mol)</text><text x="86" y="158" text-anchor="middle" font-size="34" font-weight="bold" fill="#065f46" font-family="Arial,sans-serif">c</text><text x="86" y="180" text-anchor="middle" font-size="11" fill="#059669" font-family="Arial,sans-serif">conc. (mol dm&#x207B;&#xB3;)</text><text x="194" y="158" text-anchor="middle" font-size="34" font-weight="bold" fill="#7c3aed" font-family="Arial,sans-serif">V</text><text x="194" y="180" text-anchor="middle" font-size="11" fill="#7c3aed" font-family="Arial,sans-serif">volume (dm&#xB3;)</text><text x="140" y="218" text-anchor="middle" font-size="11" fill="#374151" font-family="Arial,sans-serif">n = c&#xD7;V | c = n/V | V = n/c</text></svg>',
+        caption: 'The NCV Triangle — cover the quantity you want to find. Volume must be in dm³ (divide cm³ by 1000). All calculations pass through n (moles).'
+      },
+      terms: []
+    },
+    {
       id: 'callout-conc-worked',
       type: 'callout',
       data: {
@@ -58,6 +67,16 @@ export const note_chemistry_1_1_4 = {
       terms: []
     },
     {
+      id: 'callout-make-solution',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 4: Finding Volume Needed to Prepare a Solution',
+        text: '<strong>Q: A student wants to prepare a 0.45 mol dm⁻³ NaCl solution using 50.0 g of NaCl. What total volume of solution should she make up?</strong><br/>(Mᵣ NaCl: Na = 23.0, Cl = 35.5 → Mr = 58.5 g mol⁻¹)<br/><br/><strong>Step 1 — Find moles of NaCl (n = m/M):</strong><br/>n = 50.0 / 58.5 = 0.855 mol<br/><br/><strong>Step 2 — Find volume (NCV triangle: V = n/c):</strong><br/>V = 0.855 / 0.45 = <strong>1.90 dm³</strong><br/><br/><em>⚠ The student should dissolve the NaCl in some water, then make the total solution volume up to 1.90 dm³ — she should NOT add 1.90 dm³ of water, as that would overshoot the target concentration.</em>'
+      },
+      terms: []
+    },
+    {
       id: 'h-dilution',
       type: 'heading',
       data: { text: 'Dilution Calculations', level: 2 },
@@ -80,6 +99,32 @@ export const note_chemistry_1_1_4 = {
         style: 'worked',
         title: 'Worked Example: Dilution',
         text: '<strong>Q: What volume of water must be added to 100 cm³ of 3.0 mol dm⁻³ NaOH to dilute it to 0.50 mol dm⁻³?</strong><br/><br/>c₁V₁ = c₂V₂<br/>3.0 × 100 = 0.50 × V₂<br/>300 = 0.50 × V₂<br/>V₂ = 600 cm³ (Final total volume)<br/><br/>Volume of water to add = Final volume − Initial volume<br/>Water to add = 600 − 100 = <strong>500 cm³</strong>'
+      },
+      terms: []
+    },
+    {
+      id: 'h-stoich-concentration',
+      type: 'heading',
+      data: { text: 'Stoichiometry with Concentrations: The 4-Step Method', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-stoich-conc-method',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '4-Step Method When One Substance is a Solution',
+        text: 'The 4-step box method still applies, but Step 2 and Step 4 may use the NCV triangle instead of the mass triangle:<br/><br/><strong>Step 1:</strong> Write the <strong>balanced equation</strong>.<br/><strong>Step 2:</strong> Find moles of the <strong>KNOWN</strong> substance:<br/>&nbsp;&nbsp;• Solid/pure liquid → n = m / M<br/>&nbsp;&nbsp;• Solution → n = c × V (convert V to dm³ first!)<br/><strong>Step 3:</strong> Apply the <strong>mole ratio</strong> from the equation to find n of the UNKNOWN.<br/><strong>Step 4:</strong> Find the answer for the UNKNOWN:<br/>&nbsp;&nbsp;• Volume of solution → V = n / c<br/>&nbsp;&nbsp;• Mass of solid → m = n × M<br/>&nbsp;&nbsp;• Volume of gas → V = n × 24 dm³ (at r.t.p.)'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-stoich-conc-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Mass + Concentration Stoichiometry',
+        text: '<strong>Equation: MgCO₃(s) + 2HCl(aq) → MgCl₂(aq) + H₂O(l) + CO₂(g)</strong><br/>47.8 g of MgCO₃ is added to excess 2.50 mol dm⁻³ HCl. Calculate the minimum volume of HCl needed.<br/>(Mᵣ: Mg=24.3, C=12.0, O=16.0 → Mᵣ MgCO₃ = 84.3)<br/><br/><strong>Step 1 — Balanced equation (shown above). Ratio MgCO₃ : HCl = 1 : 2.</strong><br/><br/><strong>Step 2 — Moles of known (MgCO₃, a solid):</strong><br/>n(MgCO₃) = 47.8 / 84.3 = 0.567 mol<br/><br/><strong>Step 3 — Mole ratio → moles of HCl:</strong><br/>n(HCl) = 0.567 × 2 = 1.134 mol<br/><br/><strong>Step 4 — Volume of HCl solution (V = n/c):</strong><br/>V = 1.134 / 2.50 = <strong>0.454 dm³</strong> (454 cm³)<br/><br/><em>Only Step 4 differs from a standard reacting mass calculation — use V = n/c instead of m = n×M.</em>'
       },
       terms: []
     },
@@ -121,7 +166,7 @@ export const note_chemistry_1_1_4 = {
       data: {
         style: 'key',
         title: 'Calculating ppm',
-        text: 'For very dilute concentrations, we use parts per million (ppm). It is the mass of the solute divided by the total mass of the solution, multiplied by 1,000,000.<br/><br/>ppm = (Mass of Solute / Mass of Solution) × 10⁶<br/><br/><em>Example:</em> 2 g of lead in 2,000,000 g of engine fuel = (2 / 2,000,000) × 10⁶ = <strong>1 ppm</strong>.'
+        text: 'For very dilute concentrations, we use parts per million (ppm). It is the mass of the solute divided by the total mass of the solution, multiplied by 1,000,000.<br/><br/><strong>ppm = (mass of solute / mass of solution) × 10⁶</strong><br/><br/><em>Example:</em> 2 g of lead in 2,000,000 g of engine fuel = (2 / 2,000,000) × 10⁶ = <strong>1 ppm</strong>.<br/><br/>⚠ <strong>Units must match!</strong> Both solute and solution must be in the <em>same unit</em> (both grams, or both kilograms, etc.) before you substitute into the formula.<br/><em>Example: 23 mg of NaCl in 900 g of water → convert 23 mg to grams first: 23 ÷ 1000 = 0.023 g → ppm = (0.023 / 900) × 10⁶ = <strong>25.6 ppm</strong>. If you forget to convert, you get the wrong answer by a factor of 1000.</em>'
       },
       terms: ['Parts per million', 'ppm']
     },
@@ -221,9 +266,11 @@ export const note_chemistry_1_1_4 = {
       { id: 'c3', blockId: 'callout-conc-worked2', prompt: 'In a titration, 25.0 cm³ HCl reacted with 20.0 cm³ of 0.200 mol dm⁻³ NaOH (1:1 ratio). Calculate [HCl] in mol dm⁻³.' },
       { id: 'c4', blockId: 'callout-pq-ppm1', prompt: '1.3 g of Mg²⁺ is dissolved in 1.00 kg of seawater. Calculate the concentration in ppm.' },
       { id: 'c5', blockId: 'callout-pq-ppm2', prompt: 'A 500 dm³ air sample contains 0.035 dm³ of SO₂. What is the SO₂ concentration in ppm?' },
-      { id: 'c6', blockId: 'callout-pq-ppm3', prompt: 'CO in a room is at 35 ppm. The room is 80 m³. Calculate the volume of CO.' }
+      { id: 'c6', blockId: 'callout-pq-ppm3', prompt: 'CO in a room is at 35 ppm. The room is 80 m³. Calculate the volume of CO.' },
+      { id: 'c7', blockId: 'callout-make-solution', prompt: 'A student has 50.0 g of NaCl and wants a 0.45 mol dm⁻³ solution. What total volume should she make up? (Mᵣ NaCl = 58.5)' },
+      { id: 'c8', blockId: 'callout-stoich-conc-worked', prompt: 'MgCO₃ + 2HCl → products. 47.8 g of MgCO₃ reacts with 2.50 mol dm⁻³ HCl. Find the minimum volume of HCl needed. (Mᵣ MgCO₃ = 84.3)' }
     ],
-    summaryText: 'c = n/V. Dilutions: c₁V₁ = c₂V₂ (moles stay constant, volume changes). Back titration: Add excess reagent, titrate the unreacted excess, subtract to find reacted amount (used for insoluble/slow/volatile reactants). g dm⁻³ = mol dm⁻³ × M. Mass ppm = (m_solute/m_solution) × 10⁶. Gas ppm = (V_gas/V_air) × 10⁶.',
+    summaryText: 'c = n/V (V in dm³). NCV triangle: n = c×V, c = n/V, V = n/c. Making a solution: find n from mass (n=m/M), then V = n/c. Stoichiometry with solutions: 4-step method — use n = c×V (Step 2) or V = n/c (Step 4) instead of mass triangle. Dilutions: c₁V₁ = c₂V₂ (moles constant, volume changes). Back titration: add known excess → titrate remainder → subtract to find reacted moles. g dm⁻³ = mol dm⁻³ × M. Mass ppm = (m_solute/m_solution) × 10⁶ (units MUST match — convert mg to g first). Gas ppm = (V_gas/V_air) × 10⁶.',
     ready: false
   },
   evidence: []

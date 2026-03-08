@@ -16,14 +16,21 @@ export const note_chemistry_5_18_4 = {
       id: 'p-general-1',
       type: 'paragraph',
       data: {
-        text: 'All electrophilic aromatic substitution reactions follow the same general two-step mechanism, despite different reagents and conditions. Step 1 is a slow attack of the electrophile (E⁺) on the π electrons of the aromatic ring. This breaks the delocalisation temporarily and forms a positively charged arenium ion (or σ complex) intermediate. Step 2 is a fast loss of a proton (H⁺) from the ring carbon, which regenerates the delocalised π system and the aromatic ring.'
+        text: 'All electrophilic aromatic substitution reactions follow the same four-step mechanism. Only the identity of the electrophile changes — the steps are otherwise identical for nitration, bromination, Friedel-Crafts alkylation, and Friedel-Crafts acylation.'
       }
     },
     {
-      id: 'p-general-2',
-      type: 'paragraph',
+      id: 'table-4-steps',
+      type: 'comparisonTable',
       data: {
-        text: 'The general mechanism is: (1) Aromatic−H + E⁺ (slow) → [Aromatic−E]⁺ + H⁺ (arenium ion); (2) [Aromatic−E]⁺ (fast) → Aromatic−E + H⁺. The arenium ion is highly unstable because delocalisation is broken. Regenerating the aromatic ring (Step 2) rapidly releases the energy penalty and stabilises the product.'
+        headers: ['Step', 'What Happens', 'Curly Arrow(s)'],
+        rows: [
+          ['Step 1', 'Electrophile (Y⁺) generated from reagent + Lewis acid/acid catalyst', 'e.g. Br₂ + AlBr₃ → Br⁺ + AlBr₄⁻'],
+          ['Step 2 (slow, RDS)', 'Y⁺ attacks the delocalised π electrons of benzene → arenium ion intermediate (broken ring, positive charge)', 'Arrow FROM ring circle TO Y⁺'],
+          ['Step 3 (fast)', 'H⁺ lost from the carbon bearing Y; two electrons from C−H bond rejoin the delocalised ring → aromatic system restored', 'Arrow FROM C−H bond TO ring (restores circle)'],
+          ['Step 4', 'Lewis acid catalyst regenerated: accepts H⁺ in the form of HX product', 'e.g. AlBr₄⁻ + H⁺ → AlBr₃ + HBr']
+        ],
+        caption: 'The four-step EAS mechanism — common to all benzene substitution reactions'
       }
     },
     {
@@ -32,7 +39,7 @@ export const note_chemistry_5_18_4 = {
       data: {
         style: 'key',
         title: 'Arenium Ion (σ Complex) Intermediate',
-        text: 'The arenium ion is a benzenoid carbocation with the electrophile attached to one carbon. Delocalisation is disrupted, so it is much less stable than benzene. Electrons can be delocalised over 5 carbons (the two ortho, two meta, one para), but not the substituted carbon. Loss of H⁺ quickly restores full delocalisation.'
+        text: 'The arenium ion is a benzenoid carbocation with the electrophile attached to one ring carbon. Deloalisation is disrupted — drawn as a horseshoe (partial circle) with a + charge. The carbon bonded to Y and H is sp³ hybridised. Loss of H⁺ in Step 3 quickly restores full delocalisation — this is the driving force for substitution. Note: the arenium ion is a true intermediate (in an energy well), not just a transition state.'
       }
     },
     {

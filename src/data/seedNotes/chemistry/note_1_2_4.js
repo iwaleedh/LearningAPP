@@ -42,7 +42,7 @@ export const note_chemistry_1_2_4 = {
         rows: [
           ['<strong>Nuclear charge (Z)</strong>', 'Higher Z → Higher IE', 'More protons attract the outer electron more strongly, making it harder to remove.'],
           ['<strong>Atomic/ionic radius (distance)</strong>', 'Larger radius → Lower IE', 'Greater distance from nucleus → weaker attraction (Coulomb\'s law). Electrostatic force ∝ 1/r².'],
-          ['<strong>Shielding (screening)</strong>', 'More shielding → Lower IE', 'Inner-shell electrons repel the outer electron and partially cancel the nuclear attraction.']
+          ['<strong>Electron-electron repulsion (shielding)</strong>', 'More repulsion → Lower IE', 'Inner electrons repel outer electrons (like charges repel), reducing the effective nuclear attraction. At A-level, <em>electron-electron repulsion</em> is the preferred precise term — shielding is a simplified description of the same effect.']
         ]
       },
       terms: ['Shielding', 'Nuclear charge', 'Effective nuclear charge']
@@ -108,6 +108,31 @@ export const note_chemistry_1_2_4 = {
       terms: []
     },
     {
+      id: 'h-successive',
+      type: 'heading',
+      data: { text: 'Successive Ionisation Energies', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-successive',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'What Successive IEs Tell Us About Electron Structure',
+        text: 'Successive IEs are the energies required to remove electrons one at a time from an already-ionised atom.<br/><br/><strong>Key patterns:</strong><br/>• Successive IEs <em>always increase</em> (each electron is removed from a more positive ion with a stronger effective nuclear charge).<br/>• A <strong>large jump</strong> between adjacent IEs indicates a <em>change of quantum shell</em> — moving from the outer shell to the next inner shell (lower energy, closer to nucleus, harder to remove).<br/><br/><strong>Example — Na (1s² 2s² 2p⁶ 3s¹, one outer electron):</strong><br/>IE₁ = 496 kJ mol⁻¹ (removes 3s¹ electron)<br/>IE₂ = 4562 kJ mol⁻¹ — <strong>massive jump</strong> (now removing from n=2 shell)<br/>IE₃–IE₉: gradual increase (removing remaining 8 electrons from n=2)<br/>IE₁₀: another big jump (now removing from n=1 shell)<br/><br/><strong>Example — Mg (1s² 2s² 2p⁶ 3s²):</strong><br/>IE₁ ≈ 738 and IE₂ ≈ 1451 kJ mol⁻¹ — relatively close (both from 3s)<br/>Big jump between IE₂ and IE₃ — confirms 2 outer electrons.<br/><br/>This pattern is the main experimental evidence for the existence of discrete electron shells.'
+      },
+      terms: ['Successive ionisation energies']
+    },
+    {
+      id: 'svg-na-successive-ie',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 215" font-family="Arial,sans-serif"><text x="260" y="16" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Successive Ionisation Energies of Na (Z=11)</text><text x="260" y="30" text-anchor="middle" font-size="10" fill="#6b7280">Bar height = log10(IE / kJ mol-1). Big jumps reveal electron shell boundaries.</text><line x1="50" y1="38" x2="50" y2="168" stroke="#374151" stroke-width="1.5"/><line x1="50" y1="168" x2="515" y2="168" stroke="#374151" stroke-width="1.5"/><text x="14" y="110" text-anchor="middle" font-size="9" fill="#374151" transform="rotate(-90,14,110)">log10(IE)</text><rect x="52" y="138" width="28" height="30" fill="#3b82f6" rx="2"/><rect x="95" y="100" width="28" height="68" fill="#f59e0b" rx="2"/><rect x="138" y="92" width="28" height="76" fill="#f59e0b" rx="2"/><rect x="181" y="87" width="28" height="81" fill="#f59e0b" rx="2"/><rect x="224" y="81" width="28" height="87" fill="#f59e0b" rx="2"/><rect x="267" y="77" width="28" height="91" fill="#f59e0b" rx="2"/><rect x="310" y="74" width="28" height="94" fill="#f59e0b" rx="2"/><rect x="353" y="70" width="28" height="98" fill="#f59e0b" rx="2"/><rect x="396" y="68" width="28" height="100" fill="#f59e0b" rx="2"/><rect x="439" y="40" width="28" height="128" fill="#ef4444" rx="2"/><rect x="482" y="38" width="28" height="130" fill="#ef4444" rx="2"/><text x="66" y="183" text-anchor="middle" font-size="9" fill="#374151">1</text><text x="109" y="183" text-anchor="middle" font-size="9" fill="#374151">2</text><text x="152" y="183" text-anchor="middle" font-size="9" fill="#374151">3</text><text x="195" y="183" text-anchor="middle" font-size="9" fill="#374151">4</text><text x="238" y="183" text-anchor="middle" font-size="9" fill="#374151">5</text><text x="281" y="183" text-anchor="middle" font-size="9" fill="#374151">6</text><text x="324" y="183" text-anchor="middle" font-size="9" fill="#374151">7</text><text x="367" y="183" text-anchor="middle" font-size="9" fill="#374151">8</text><text x="410" y="183" text-anchor="middle" font-size="9" fill="#374151">9</text><text x="453" y="183" text-anchor="middle" font-size="9" fill="#374151">10</text><text x="496" y="183" text-anchor="middle" font-size="9" fill="#374151">11</text><text x="283" y="196" text-anchor="middle" font-size="10" fill="#374151">Ionisation number</text><text x="66" y="55" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">n=3</text><text x="246" y="55" text-anchor="middle" font-size="9" font-weight="bold" fill="#b45309">n=2 shell (8 electrons)</text><text x="467" y="38" text-anchor="middle" font-size="9" font-weight="bold" fill="#991b1b">n=1</text><line x1="80" y1="96" x2="95" y2="96" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/><text x="87" y="90" text-anchor="middle" font-size="8" fill="#1d4ed8">jump</text><line x1="424" y1="62" x2="439" y2="62" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/><text x="431" y="56" text-anchor="middle" font-size="8" fill="#991b1b">jump</text><rect x="52" y="200" width="12" height="8" fill="#3b82f6" rx="1"/><text x="67" y="208" font-size="9" fill="#374151">n=3 (outer)</text><rect x="135" y="200" width="12" height="8" fill="#f59e0b" rx="1"/><text x="150" y="208" font-size="9" fill="#374151">n=2 shell</text><rect x="215" y="200" width="12" height="8" fill="#ef4444" rx="1"/><text x="230" y="208" font-size="9" fill="#374151">n=1 (inner)</text></svg>',
+        caption: 'Successive IEs of Na on a log scale. Blue = n=3 shell (1 electron). Amber = n=2 shell (8 electrons). Red = n=1 shell (2 electrons). The large jumps indicate shell boundaries.'
+      },
+      terms: []
+    },
+    {
       id: 'h-practice-ie',
       type: 'heading',
       data: { text: 'Practice Questions', level: 2 },
@@ -119,7 +144,7 @@ export const note_chemistry_1_2_4 = {
       data: {
         style: 'worked',
         title: 'Practice Q1: Comparing Second IEs of Mg, Al and Si (Past Paper)',
-        text: '<strong>Question:</strong> The second ionisation energy of aluminium is greater than that of magnesium, but less than that of silicon. Explain these two observations.<br/><br/><strong>Mg vs Al (Al > Mg for 2nd IE):</strong><br/>For 2nd IE, we have already removed 1 electron from each atom.<br/>Both Mg⁺ and Al⁺ have their second electron in the 3s orbital. However, Al has one more proton (Z = 13) than Mg (Z = 12). The greater nuclear charge in Al attracts the 3s electron more strongly, so a higher energy is needed to remove it.<br/>∴ 2nd IE(Al) > 2nd IE(Mg)<br/><br/><strong>Al vs Si (Si > Al for 2nd IE):</strong><br/>For the 2nd IE of Si: Si(g) has config 1s² 2s² 2p⁶ 3s² 3p². After removing first electron (the 3p¹), Si⁺ has config ...3s² 3p¹. The second electron is now removed from the 3p subshell.<br/>For Al: Al⁺ has config ...3s². The second electron is removed from the 3s subshell.<br/>The 3p subshell is at a <em>higher energy</em> than 3s (less tightly held), so the 3p electron in Si⁺ is actually <em>easier</em> to remove — meaning 2nd IE(Si) > 2nd IE(Al) because... wait:<br/><em>Actually:</em> Al²⁺ second electron from 3s (harder to remove, lower energy orbital). Si⁺ second electron from 3p (slightly higher energy, easier to remove).<br/>∴ 2nd IE(Si) &lt; 2nd IE(Al). But we can also consider nuclear charge: Si has more protons, counteracting the 3p effect.<br/><br/><em>Exam tip: Focus on which orbital the second electron is removed from (3s or 3p) AND relative nuclear charge.</em>'
+        text: '<strong>Question:</strong> Explain why IE₂(Al) &gt; IE₂(Mg) and why IE₂(Al) &gt; IE₂(Si).<br/>(Actual values: Mg=1451, Si=1577, Al=1817 kJ mol⁻¹)<br/><br/><strong>Part (a) — Why IE₂(Al) &gt; IE₂(Mg):</strong><br/>After removing the 1st electron from each:<br/>• Mg⁺: [Ne] 3s¹ — 2nd electron removed from 3s; Z=12<br/>• Al⁺: [Ne] 3s² — 2nd electron removed from 3s; Z=13<br/>Both 2nd electrons come from the 3s subshell, but Al has higher nuclear charge (13 vs 12). Greater attraction → harder to remove → higher IE₂.<br/>∴ IE₂(Al) &gt; IE₂(Mg) ✓<br/><br/><strong>Part (b) — Why IE₂(Al) &gt; IE₂(Si):</strong><br/>After removing the 1st electron from each:<br/>• Al⁺: [Ne] 3s² — 2nd electron removed from <strong>3s</strong> subshell<br/>• Si⁺: [Ne] 3s² 3p¹ — 2nd electron removed from <strong>3p</strong> subshell<br/>The 3p subshell is at <em>higher energy</em> than 3s — 3p electrons are further from the nucleus and less tightly bound. Even though Si (Z=14) has one more proton than Al (Z=13), the subshell effect dominates: a 3p electron is easier to remove than a 3s electron.<br/>∴ IE₂(Si) &lt; IE₂(Al) ✓<br/><br/><em>Exam tip: Always identify WHICH subshell the second electron is removed from — this is usually the deciding factor when comparing IE₂ across elements.</em>'
       },
       terms: []
     },
@@ -152,9 +177,10 @@ export const note_chemistry_1_2_4 = {
       { id: 'c3', blockId: 'callout-dip', prompt: 'Explain why IE₁(Al) < IE₁(Mg) despite Al having a higher atomic number.' },
       { id: 'c4', blockId: 'callout-ee-repulsion', prompt: 'Explain why "electron-electron repulsion" is preferred over "shielding" at A-level. What is the effect of paired electrons on ionisation energy?' },
       { id: 'c5', blockId: 'callout-ie-equations', prompt: 'Write the equation for the third ionisation energy of magnesium, including all state symbols.' },
-      { id: 'c6', blockId: 'callout-pq-ie3', prompt: 'Which element in Period 3 has the highest second ionisation energy? Explain your reasoning in terms of electron configuration.' }
+      { id: 'c6', blockId: 'callout-pq-ie3', prompt: 'Which element in Period 3 has the highest second ionisation energy? Explain your reasoning in terms of electron configuration.' },
+      { id: 'c7', blockId: 'callout-successive', prompt: 'Explain how successive ionisation energies provide evidence for electron shells. Why is there a large jump between IE₁ and IE₂ for Na?' }
     ],
-    summaryText: 'IE₁: energy to remove 1 mol e⁻ from 1 mol X(g). Units: kJ mol⁻¹. Equation: X(g) → X⁺(g) + e⁻ — state symbols REQUIRED. Three factors: nuclear charge (+IE), atomic radius (−IE), electron-electron repulsion (−IE — preferred over "shielding"). Across period: generally increases; dips at Group 3 (p above s) and Group 6 (pairing repulsion). Down group: decreases (radius↑, repulsion/shielding↑).',
+    summaryText: 'IE₁: energy to remove 1 mol e⁻ from 1 mol X(g). Units: kJ mol⁻¹. Equation: X(g) → X⁺(g) + e⁻ — state symbols REQUIRED. Three factors: nuclear charge (+IE), atomic radius (−IE), electron-electron repulsion (−IE). Successive IEs always increase; big jumps indicate shell boundaries (evidence for shells). Across period: generally increases; dips at Group 3 (3p above 3s) and Group 6 (pairing repulsion). Down group: decreases. IE₂(Al) > IE₂(Mg) [higher Z, same 3s orbital]. IE₂(Al) > IE₂(Si) [Al removes from 3s, Si removes from 3p — subshell effect dominates].',
     ready: false
   },
   evidence: []

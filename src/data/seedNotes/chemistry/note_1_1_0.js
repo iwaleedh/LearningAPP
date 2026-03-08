@@ -64,6 +64,49 @@ export const note_chemistry_1_1_0 = {
       terms: []
     },
     {
+      id: 'callout-element-isotopes',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Elements and Isotopes',
+        text: 'Every atom in an element has the <strong>same atomic number</strong> (same number of protons). However, not every atom is identical — atoms of the same element may have different numbers of neutrons; these are called <strong>isotopes</strong>. Atomic structure and isotopes are covered in more detail in Topic 2.'
+      },
+      terms: ['Isotope']
+    },
+    {
+      id: 'h-alevel-skills',
+      type: 'heading',
+      data: { text: 'A-Level Equation-Writing Expectations', level: 2 },
+      terms: []
+    },
+    {
+      id: 'list-alevel-skills',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Write and interpret <strong>chemical formulae</strong> correctly (e.g. H₂O, CaCO₃).',
+          'Write <strong>balanced chemical equations</strong> with correct coefficients.',
+          'Use correct <strong>state symbols</strong>: (s), (l), (g), (aq).',
+          'Use the correct <strong>arrow</strong>: → for irreversible reactions; ⇌ for reversible/equilibrium reactions.',
+          'Write <strong>half equations</strong> (showing electron transfer in redox reactions).',
+          'Write <strong>full ionic equations</strong> showing all ions.',
+          'Write <strong>simplest ionic equations</strong> by cancelling spectator ions.'
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-arrows',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Arrow Types in Equations',
+        text: '<strong>→</strong> (single-headed arrow) — used for <em>irreversible</em> reactions that go to completion.<br/><strong>⇌</strong> (double-headed arrow) — used for <em>reversible/equilibrium</em> reactions, where products can reform reactants.'
+      },
+      terms: []
+    },
+    {
       id: 'callout-tip',
       type: 'callout',
       data: {
@@ -79,9 +122,11 @@ export const note_chemistry_1_1_0 = {
     cues: [
       { id: 'c1', blockId: 'table-terms', prompt: 'State the difference between a molecule of an element and a molecule of a compound.' },
       { id: 'c2', blockId: 'table-poly', prompt: 'Name the seven diatomic elements.' },
-      { id: 'c3', blockId: 'callout-ion', prompt: 'Define the terms cation and anion, giving one example of each.' }
+      { id: 'c3', blockId: 'callout-ion', prompt: 'Define the terms cation and anion, giving one example of each.' },
+      { id: 'c4', blockId: 'callout-element-isotopes', prompt: 'All atoms in an element are the same — True or False? Explain your answer.' },
+      { id: 'c5', blockId: 'callout-arrows', prompt: 'When should you use → versus ⇌ in a chemical equation?' }
     ],
-    summaryText: 'Atom = smallest part of element. Element = one type of atom only. Molecule = 2+ atoms bonded. Compound = different elements combined. Ion = charged species. Cation (+), Anion (−). Diatomic elements: H₂ N₂ O₂ F₂ Cl₂ Br₂ I₂.',
+    summaryText: 'Atom = smallest part of element. Element = one type of atom (same atomic number, may be isotopes). Molecule = 2+ atoms bonded. Compound = different elements combined. Ion = charged species. Cation (+), Anion (−). Diatomic elements: H₂ N₂ O₂ F₂ Cl₂ Br₂ I₂. A-Level skills: balance equations, use state symbols, correct arrow (→ irreversible, ⇌ reversible), write ionic and half equations.',
     ready: false
   },
   evidence: []

@@ -8,7 +8,7 @@ export const note_chemistry_1_1_6 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Understand the molar volume of gas at r.t.p. Perform calculations involving volumes and moles of gases. Use moles calculations in stoichiometric problems involving both masses and volumes.' },
+      data: { text: 'Understand the molar volume of gas at r.t.p. Use the ideal gas equation pV = nRT with correct SI unit conversions (p in Pa, V in m³, T in K) to find moles or molar mass. Perform calculations involving volumes and moles of gases using both n = V/24 (r.t.p.) and pV = nRT. Use the 4-step method in stoichiometric problems combining masses, gas volumes and solution concentrations.' },
       terms: []
     },
     {
@@ -76,12 +76,82 @@ export const note_chemistry_1_1_6 = {
       terms: ['Molar volume', 'r.t.p.']
     },
     {
+      id: 'svg-molar-volume-triangle',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 230" width="280" height="230"><polygon points="140,15 10,200 270,200" fill="#f0fdf4" stroke="#10b981" stroke-width="2.5"/><line x1="75" y1="108" x2="205" y2="108" stroke="#10b981" stroke-width="2"/><text x="140" y="72" text-anchor="middle" font-size="38" font-weight="bold" fill="#065f46" font-family="Arial,sans-serif">V</text><text x="140" y="100" text-anchor="middle" font-size="12" fill="#059669" font-family="Arial,sans-serif">volume (dm&#xB3; or cm&#xB3;)</text><text x="86" y="158" text-anchor="middle" font-size="34" font-weight="bold" fill="#1d4ed8" font-family="Arial,sans-serif">n</text><text x="86" y="180" text-anchor="middle" font-size="11" fill="#2563eb" font-family="Arial,sans-serif">amount (mol)</text><text x="194" y="155" text-anchor="middle" font-size="29" font-weight="bold" fill="#7c3aed" font-family="Arial,sans-serif">Vm</text><text x="194" y="177" text-anchor="middle" font-size="10" fill="#7c3aed" font-family="Arial,sans-serif">molar vol (24 dm&#xB3;)</text><text x="140" y="218" text-anchor="middle" font-size="11" fill="#374151" font-family="Arial,sans-serif">V = n&#xD7;Vm | n = V/Vm | Vm = V/n</text></svg>',
+        caption: 'Molar Volume Triangle — cover the unknown. At r.t.p., Vm = 24 dm³ = 24,000 cm³. This applies to ALL ideal gases at r.t.p.'
+      },
+      terms: []
+    },
+    {
       id: 'callout-gas-worked',
       type: 'callout',
       data: {
         style: 'worked',
         title: 'Worked Example: Volume of gas',
         text: '<strong>Q: What volume of CO₂ (at r.t.p.) is produced when 10.0 g of CaCO₃ decomposes?</strong><br/><br/>Equation: CaCO₃ → CaO + CO₂<br/><br/>n(CaCO₃) = 10.0/100.1 = 0.0999 mol<br/>Ratio 1:1, so n(CO₂) = 0.0999 mol<br/>V(CO₂) = 0.0999 × 24,000 = <strong>2,400 cm³</strong> (2.40 dm³)'
+      },
+      terms: []
+    },
+    {
+      id: 'h-ideal-gas',
+      type: 'heading',
+      data: { text: 'The Ideal Gas Equation: pV = nRT', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-ideal-gas',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'pV = nRT — Key Equation and Terms',
+        text: '<strong>pV = nRT</strong><br/><br/>p = pressure in <strong>Pa</strong> (Pascals)<br/>V = volume in <strong>m³</strong><br/>n = amount in <strong>mol</strong><br/>R = 8.31 J mol⁻¹ K⁻¹ (given on exam data sheet — do NOT memorise the value)<br/>T = temperature in <strong>K</strong> (Kelvin)<br/><br/>Rearrange for moles: <strong>n = pV / RT</strong><br/><br/>Use pV = nRT when given a specific pressure AND temperature that are NOT r.t.p. When at r.t.p. (298 K, 101 kPa), use n = V/24 for speed. You must memorise the 4 SI unit conversions below.'
+      },
+      terms: ['Ideal gas equation', 'pV = nRT']
+    },
+    {
+      id: 'table-si-units',
+      type: 'comparisonTable',
+      data: {
+        caption: 'SI Unit Conversions for pV = nRT — apply BEFORE substituting. A typical exam question awards 1 mark per correct conversion.',
+        headers: ['Quantity', 'Common unit given', 'SI unit required', 'Conversion'],
+        rows: [
+          ['<strong>Pressure (p)</strong>', 'kPa', 'Pa', '× 1000  (× 10³)'],
+          ['<strong>Pressure (p)</strong>', 'Pa (already SI)', 'Pa', 'No change needed'],
+          ['<strong>Volume (V)</strong>', 'cm³', 'm³', '÷ 1,000,000  (÷ 10⁶)'],
+          ['<strong>Volume (V)</strong>', 'dm³', 'm³', '÷ 1000  (÷ 10³)'],
+          ['<strong>Temperature (T)</strong>', '°C', 'K', '+ 273']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pv-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 1: Finding Molar Mass using pV = nRT',
+        text: '<strong>A 0.280 g sample of gas has: V = 58.5 cm³, p = 120 kPa, T = 70°C. Find the molar mass. (R = 8.31 J mol⁻¹ K⁻¹)</strong><br/><br/><strong>Step 1 — Convert to SI units:</strong><br/>p = 120 × 1000 = 120,000 Pa ✓<br/>V = 58.5 ÷ 10⁶ = 5.85 × 10⁻⁵ m³ ✓<br/>T = 70 + 273 = 343 K ✓<br/><br/><strong>Step 2 — Calculate n = pV/RT:</strong><br/>n = (120,000 × 5.85 × 10⁻⁵) / (8.31 × 343)<br/>n = 7.02 / 2850.3 = <strong>2.46 × 10⁻³ mol</strong><br/><br/><strong>Step 3 — Calculate molar mass M = m/n:</strong><br/>M = 0.280 / (2.46 × 10⁻³) = <strong>114 g mol⁻¹</strong><br/><br/><em>⚠ Exam tip: Each unit conversion typically earns 1 mark. Never omit them — this is the most common source of lost marks in pV = nRT questions.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pv-bromine',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 2 (Past Paper): Moles of Bromine Gas',
+        text: '<strong>A sample of Br₂(g) occupies 200 cm³ at 77°C and 1.51 × 10⁵ Pa. Calculate the moles of Br₂. (R = 8.31 J mol⁻¹ K⁻¹)</strong><br/><br/>p = 1.51 × 10⁵ Pa (already in Pa — no conversion) ✓<br/>V = 200 ÷ 10⁶ = 2.00 × 10⁻⁴ m³ ✓<br/>T = 77 + 273 = 350 K ✓<br/><br/>n = pV / RT = (1.51 × 10⁵ × 2.00 × 10⁻⁴) / (8.31 × 350)<br/>n = 30.2 / 2908.5 = <strong>1.04 × 10⁻² mol</strong>'
+      },
+      terms: []
+    },
+    {
+      id: 'svg-three-triangles',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 195" font-family="Arial,sans-serif"><text x="260" y="15" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2937">Three Mole Triangles — All Connected via n (moles)</text><polygon points="80,30 15,158 145,158" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/><line x1="47" y1="94" x2="113" y2="94" stroke="#7c3aed" stroke-width="1.5"/><text x="80" y="80" text-anchor="middle" font-size="24" font-weight="bold" fill="#6d28d9">m</text><text x="47" y="132" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d4ed8">n</text><text x="113" y="132" text-anchor="middle" font-size="20" font-weight="bold" fill="#065f46">M</text><text x="80" y="172" text-anchor="middle" font-size="9" fill="#374151">n = m/M</text><text x="80" y="183" text-anchor="middle" font-size="9" fill="#6b7280">mass &#x21C6; moles</text><text x="163" y="91" text-anchor="middle" font-size="18" fill="#9ca3af">&#x21C6;</text><text x="163" y="104" text-anchor="middle" font-size="8" fill="#6b7280">via n</text><polygon points="260,30 195,158 325,158" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/><line x1="227" y1="94" x2="293" y2="94" stroke="#3b82f6" stroke-width="1.5"/><text x="260" y="80" text-anchor="middle" font-size="24" font-weight="bold" fill="#1e40af">n</text><text x="227" y="132" text-anchor="middle" font-size="20" font-weight="bold" fill="#065f46">c</text><text x="293" y="132" text-anchor="middle" font-size="20" font-weight="bold" fill="#7c3aed">V</text><text x="260" y="172" text-anchor="middle" font-size="9" fill="#374151">n = c&#xD7;V</text><text x="260" y="183" text-anchor="middle" font-size="9" fill="#6b7280">solutions</text><text x="343" y="91" text-anchor="middle" font-size="18" fill="#9ca3af">&#x21C6;</text><text x="343" y="104" text-anchor="middle" font-size="8" fill="#6b7280">via n</text><polygon points="440,30 375,158 505,158" fill="#f0fdf4" stroke="#10b981" stroke-width="2"/><line x1="407" y1="94" x2="473" y2="94" stroke="#10b981" stroke-width="1.5"/><text x="440" y="80" text-anchor="middle" font-size="24" font-weight="bold" fill="#065f46">V</text><text x="407" y="132" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d4ed8">n</text><text x="473" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#7c3aed">Vm</text><text x="440" y="172" text-anchor="middle" font-size="9" fill="#374151">V = n&#xD7;Vm</text><text x="440" y="183" text-anchor="middle" font-size="9" fill="#6b7280">gas volumes</text></svg>',
+        caption: 'All three triangles share n (moles) as the connecting quantity. A 4-step calculation may use more than one triangle: e.g. mass → n (triangle 1) → mole ratio → n → volume of gas (triangle 3).'
       },
       terms: []
     },
@@ -168,6 +238,16 @@ export const note_chemistry_1_1_6 = {
         text: '<strong>Question:</strong> 20 cm³ of propane (C₃H₈) is burned completely in excess oxygen. What volume of CO₂ is produced, and what volume of O₂ is consumed? (All volumes measured at the same T and P.)<br/>Equation: C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g)<br/><br/><strong>Using Avogadro\'s Law — coefficients are volume ratios:</strong><br/>C₃H₈ : O₂ : CO₂ = 1 : 5 : 3<br/><br/>V(O₂) consumed = 5 × 20 = <strong>100 cm³</strong><br/>V(CO₂) produced = 3 × 20 = <strong>60 cm³</strong><br/><br/><em>Note: H₂O is gaseous at the same T&P — if it condenses to liquid, only count gas volumes.</em>'
       },
       terms: []
+    },
+    {
+      id: 'callout-pi3-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Past Paper (Jan 2018): Non-Simple Mole Ratio — PI₃',
+        text: '<strong>Equation: P₄(s) + 6I₂(s) → 4PI₃(s)</strong><br/>Calculate the minimum mass of iodine (I₂) required to produce 1.00 kg of PI₃, given that phosphorus is in excess.<br/>(Mᵣ: PI₃ = 411.7; I₂ = 253.8)<br/><br/><strong>Step 1 — Moles of known (PI₃):</strong><br/>1.00 kg = 1000 g<br/>n(PI₃) = 1000 / 411.7 = 2.429 mol<br/><br/><strong>Step 2 — Mole ratio I₂ : PI₃ = 6 : 4</strong><br/>Not a simple 1:1 or 1:2 ratio — method: multiply n by (coefficient of unknown) ÷ (coefficient of known)<br/>n(I₂) = 2.429 × (6 / 4) = 2.429 × 1.5 = <strong>3.643 mol</strong><br/><br/><strong>Step 3 — Mass of I₂:</strong><br/>m(I₂) = 3.643 × 253.8 = 924.8 g = <strong>0.925 kg</strong><br/><br/><em>Key skill: For any non-simple ratio, n(unknown) = n(known) × [coeff. of unknown / coeff. of known]. Store the full calculator value at each step; only round the final answer.</em>'
+      },
+      terms: []
     }
   ],
   recall: {
@@ -180,9 +260,12 @@ export const note_chemistry_1_1_6 = {
       { id: 'c3', blockId: 'callout-pq-gas1', prompt: '0.325 g of Zn reacts with excess HCl: Zn + 2HCl → ZnCl₂ + H₂. Calculate the volume of H₂ in cm³ at r.t.p. (Aᵣ Zn = 65.4).' },
       { id: 'c4', blockId: 'callout-avogadro-law', prompt: 'State Avogadro\'s Law. How can you use it to find volumes of gases in a reaction without calculating moles first?' },
       { id: 'c5', blockId: 'callout-pq-gas3', prompt: '20 cm³ of C₃H₈ burns in excess O₂: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O. What volumes of O₂ are consumed and CO₂ produced?' },
-      { id: 'c6', blockId: 'callout-pq-gas2', prompt: '480 cm³ of O₂ is produced from 2H₂O₂ → 2H₂O + O₂. What mass of H₂O₂ decomposed? (Mᵣ = 34.0)' }
+      { id: 'c6', blockId: 'callout-pq-gas2', prompt: '480 cm³ of O₂ is produced from 2H₂O₂ → 2H₂O + O₂. What mass of H₂O₂ decomposed? (Mᵣ = 34.0)' },
+      { id: 'c7', blockId: 'callout-pi3-worked', prompt: 'P₄ + 6I₂ → 4PI₃. Find the mass of I₂ needed to make 1.00 kg of PI₃ (Mᵣ PI₃ = 411.7, I₂ = 253.8). Show how to handle the non-simple 6:4 ratio.' },
+      { id: 'c8', blockId: 'table-si-units', prompt: 'State the SI unit conversion for: (a) kPa to Pa, (b) cm³ to m³, (c) dm³ to m³, (d) °C to K. Why must these be applied before using pV = nRT?' },
+      { id: 'c9', blockId: 'callout-pv-worked', prompt: 'A 0.280g gas has V = 58.5 cm³, p = 120 kPa, T = 70°C. Use pV = nRT to find n, then calculate the molar mass.' }
     ],
-    summaryText: 'Reacting mass 4-step method: (1) n=m/M of known, (2) identify ratio, (3) apply ratio to unknown, (4) m=n×M. Limiting reagent determines max product formed. One mole of gas = 24,000 cm³ = 24 dm³ at r.t.p. n = V(cm³)/24,000. Avogadro\'s Law: equal volumes of gases (same T and P) contain equal numbers of molecules → coefficients in a gas equation equal volume ratios.',
+    summaryText: 'Reacting mass 4-step method: (1) n=m/M of known, (2) identify ratio, (3) n(unk)=n(kn)×[coeffᵤ/coeffₖ], (4) m=n×M. Limiting reagent determines max product. Molar volume at r.t.p. = 24 dm³ = 24,000 cm³. Ideal gas equation: pV=nRT — SI units REQUIRED: p in Pa (kPa × 10³), V in m³ (cm³ ÷ 10⁶, dm³ ÷ 10³), T in K (°C + 273), R = 8.31 J mol⁻¹ K⁻¹ (given). n = pV/RT; M = m/n. Avogadro\'s Law: equal volumes of gases (same T, P) → equal moles → coefficients = volume ratios.',
     ready: false
   },
   evidence: []

@@ -8,8 +8,18 @@ export const note_chemistry_1_2_6 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Explain the periodic trend in first ionisation energies across Periods 2 and 3, including the two dips, and down groups of the Periodic Table.' },
+      data: { text: 'Explain the periodic trend in first ionisation energies across Periods 2 and 3, including the two dips, and down groups of the Periodic Table. Know the definition of periodicity. Describe types of atomic radius measurement and explain trends in atomic radius and melting point.' },
       terms: []
+    },
+    {
+      id: 'callout-periodicity-def',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'What is a Periodic Property (Periodicity)?',
+        text: 'A <strong>periodic property</strong> (also called <strong>periodicity</strong>) is a regularly repeating pattern of atomic, physical or chemical properties across periods or down groups of the Periodic Table.<br/><br/>• Patterns can be <em>predicted</em> from an element\'s position in the Periodic Table.<br/>• Patterns can be <em>explained</em> using electronic configurations.<br/>• Edexcel IAL focuses on Periods 2 and 3 (from Period 4 onwards the d-block transition metals cause anomalies that make trends less straightforward).<br/>• Key periodic properties: atomic radius, first ionisation energy, melting and boiling point.'
+      },
+      terms: ['Periodic property', 'Periodicity']
     },
     {
       id: 'h-period',
@@ -45,7 +55,17 @@ export const note_chemistry_1_2_6 = {
       data: {
         style: 'warning',
         title: 'Dip 1: Mg → Al (Group 2 → Group 3)',
-        text: '<strong>IE₁(Al) < IE₁(Mg)</strong> — despite Al having a higher nuclear charge.<br/><br/><strong>Reason:</strong> Al\'s outer electron is in the 3p subshell (configuration: [Ne]3s²3p¹). The 3p subshell is at a slightly higher energy level than 3s, and is partially shielded by the 3s² electrons beneath it. The outer electron is therefore easier to remove.<br/><br/><em>Similarly in Period 2:</em> IE₁(B) < IE₁(Be)'
+        text: '<strong>IE₁(Al) < IE₁(Mg)</strong> — despite Al having a higher nuclear charge.<br/><br/><strong>Reason:</strong> Al\'s outer electron is in the 3p subshell (configuration: [Ne]3s²3p¹). The 3p subshell is at a slightly higher energy level than 3s, and is partially shielded by the 3s² electrons beneath it. The outer electron is therefore easier to remove.<br/><br/><em>Similarly in Period 2:</em> IE₁(B) < IE₁(Be) — explained in detail below.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-boron-anomaly',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'The Boron–Beryllium Anomaly (Period 2) — MUST KNOW',
+        text: '<strong>IE₁(B) < IE₁(Be)</strong> — despite boron having a higher nuclear charge (Z = 5 vs Z = 4).<br/><br/><strong>Be (Z=4):</strong> 1s² 2s² — the first electron removed comes from the <strong>2s</strong> subshell.<br/><strong>B (Z=5):</strong> 1s² 2s² 2p¹ — the first electron removed comes from the <strong>2p</strong> subshell.<br/><br/><strong>Why IE₁(B) is lower:</strong><br/>• The 2p subshell is at a <em>higher energy</em> than 2s — the 2p electron is slightly further from the nucleus and is partially shielded by the 2s² electrons beneath it.<br/>• Even though boron has a greater nuclear charge, the energy required to remove a 2p electron is <em>less</em> than the energy required to remove a 2s electron.<br/>• The subshell effect outweighs the nuclear charge effect in this case.<br/><br/><em>Exam rule:</em> This is the Period 2 version of the Mg → Al dip. When comparing IE₁ of adjacent elements, always check which subshell the electron is removed from — subshell type can override nuclear charge.'
       },
       terms: []
     },
@@ -104,6 +124,16 @@ export const note_chemistry_1_2_6 = {
       terms: ['Atomic radius']
     },
     {
+      id: 'callout-atomic-radius-types',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Three Ways to Measure Atomic Radius',
+        text: 'Because the electron cloud has no definite outer boundary (electron density just decreases), atomic radius cannot be measured directly. Instead, we measure the <strong>distance between two adjacent nuclei and halve it</strong>. Three methods are used depending on the bonding:<br/><br/><strong>1. Covalent radius</strong> — half the distance between the nuclei of two atoms that are <em>covalently bonded</em> to each other (e.g. in Cl₂ or O₂).<br/><br/><strong>2. Van der Waals radius</strong> — half the distance between the nuclei of two atoms that are <em>close together but not bonded</em> (used for noble gases and across molecular contacts). Larger than covalent radius for the same element.<br/><br/><strong>3. Metallic radius</strong> — half the distance between neighbouring nuclei in a <em>metallic lattice</em> (used for metals such as Na, Mg, Al).<br/><br/><em>All three methods give consistent values for comparison. The method chosen depends on the bonding type of the element.</em>'
+      },
+      terms: ['Covalent radius', 'Van der Waals radius', 'Metallic radius']
+    },
+    {
       id: 'h-melting',
       type: 'heading',
       data: { text: 'Melting and Boiling Point Trends Across Period 2 & 3', level: 2 },
@@ -118,6 +148,20 @@ export const note_chemistry_1_2_6 = {
         text: 'Going across Periods 2 and 3, the melting/boiling point follows a predictable pattern:<br/><br/><strong>Metallic structures (Groups 1–3):</strong> Giant metallic lattice → high melting point (e.g. Na, Mg, Al).<br/><br/><strong>Covalent giant lattice (e.g. C as diamond, Si):</strong> Very strong covalent bonds throughout → extremely high melting point (diamond = 3550 °C).<br/><br/><strong>Simple molecular covalent structures (Groups 5–8):</strong> Only weak van der Waals forces between molecules → very low melting point (e.g. N₂, O₂, F₂, Cl₂ are gases at room temperature).<br/><br/><em>Summary: metallic = high; covalent lattice = very high; simple molecular = low. Pattern shows an increase then a sharp decrease across the period.</em>'
       },
       terms: ['Melting point trend', 'Periodicity']
+    },
+    {
+      id: 'table-mps-comparison',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Melting point comparison — same structural pattern repeats across both Period 2 and Period 3.',
+        headers: ['Structure type', 'Period 2 examples', 'Period 3 examples', 'MP trend'],
+        rows: [
+          ['Metallic lattice', 'Li (180 °C), Be (1287 °C)', 'Na (98 °C), Mg (650 °C), Al (660 °C)', 'High'],
+          ['Covalent giant lattice', 'B (~2076 °C), C — diamond (3550 °C)', 'Si (1414 °C)', 'Very high (peak in period)'],
+          ['Simple molecular covalent', 'N₂ (−196 °C), O₂ (−183 °C), F₂ (−220 °C), Ne (−249 °C)', 'P₄ (44 °C), S₈ (113 °C), Cl₂ (−101 °C), Ar (−189 °C)', 'Low (weak van der Waals only)']
+        ]
+      },
+      terms: []
     },
     {
       id: 'h-practice-2b',
@@ -174,9 +218,10 @@ export const note_chemistry_1_2_6 = {
       { id: 'c3', blockId: 'callout-dip2', prompt: 'Explain why IE₁(S) < IE₁(P) even though S has a higher nuclear charge.' },
       { id: 'c4', blockId: 'callout-atomic-radius', prompt: 'Describe and explain the trend in atomic radius across a period and down a group.' },
       { id: 'c5', blockId: 'callout-melting', prompt: 'Describe the melting point trend across Period 3 and explain the sharp drop after Group 4.' },
-      { id: 'c6', blockId: 'callout-pq-2b4', prompt: 'Explain why IE₁(N) > IE₁(P), using quantum shells and electron-electron repulsion. Give 3 marking points.' }
+      { id: 'c6', blockId: 'callout-pq-2b4', prompt: 'Explain why IE₁(N) > IE₁(P), using quantum shells and electron-electron repulsion. Give 3 marking points.' },
+      { id: 'c7', blockId: 'callout-boron-anomaly', prompt: 'Explain why IE₁(B) < IE₁(Be) in Period 2, despite boron having a higher nuclear charge. Which subshell does each element remove from?' }
     ],
-    summaryText: 'Period trend: IE₁ generally increases (Z↑, same shell). Dip at G2→G3 (outer e⁻ in higher-energy p subshell). Dip at G5→G6 (paired e⁻ repulsion in p⁴ orbital). Group trend: IE₁ decreases (greater distance + more electron-electron repulsion from inner shells). Atomic radius: decreases across period (Z↑), increases down group (more shells). Melting points: metallic (high) → covalent lattice (very high) → simple molecular (low).',
+    summaryText: 'Periodicity: regularly repeating pattern of properties; predicted from position; explained from electronic configuration. Period trend (IE₁): generally increases (Z↑, same shell). Dip G2→G3: outer e⁻ in higher-energy p subshell (Al < Mg; B < Be). Dip G5→G6: paired e⁻ repulsion in shared p orbital (S < P; O < N). Group trend: IE₁ decreases (greater atomic radius + more inner-shell shielding). Atomic radius: decreases across period (Z↑, same shell); increases down group (more shells). Radius types: covalent (bonded), van der Waals (non-bonded, largest), metallic. Melting points: metallic (high) → covalent giant lattice (very high) → simple molecular covalent (low) — pattern identical in Periods 2 and 3.',
     ready: false
   },
   evidence: []

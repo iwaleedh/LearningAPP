@@ -47,7 +47,7 @@ export const note_chemistry_1_1_7 = {
       data: {
         style: 'worked',
         title: 'Yield Calculation — Methanol synthesis',
-        text: '<strong>CO + 2H₂ → CH₃OH</strong><br/>A manufacturer obtains 4.07 tonnes of methanol from 4.32 tonnes of CO.<br/><br/>Theoretical yield:<br/>n(CO) = 4.32×10⁶ / 28.0 = 1.54×10⁵ mol<br/>n(CH₃OH) = 1.54×10⁵ mol (1:1 ratio)<br/>m = 1.54×10⁵ × 32.0 = 4.93×10⁶ g = 4.93 tonnes<br/><br/>% yield = 4.07 / 4.93 × 100 = <strong>82.6%</strong>'
+        text: '<strong>CO + 2H₂ → CH₃OH</strong><br/>A manufacturer obtains 4.07 tonnes of methanol from 4.32 tonnes of CO.<br/><br/>Theoretical yield:<br/>n(CO) = 4.32×10⁶ / 28.0 = 1.543×10⁵ mol<br/>n(CH₃OH) = 1.543×10⁵ mol (1:1 ratio)<br/>m = 1.543×10⁵ × 32.0 = 4.94×10⁶ g = <strong>4.94 tonnes (theoretical yield)</strong><br/><br/>% yield = (4.07 / 4.94) × 100 = <strong>82.4%</strong>'
       },
       terms: []
     },
@@ -88,6 +88,16 @@ export const note_chemistry_1_1_7 = {
       terms: []
     },
     {
+      id: 'callout-solvay-combined',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Solvay Process — % Yield AND Atom Economy',
+        text: '<strong>Equation: CaCO₃ + 2NaCl → Na₂CO₃ + CaCl₂</strong><br/>A manufacturer starts with 75.0 kg CaCO₃ and obtains 76.5 kg Na₂CO₃.<br/><br/><strong>PART A — Percentage Yield:</strong><br/>n(CaCO₃) = 75,000 / 100.1 = 749.3 mol<br/>Ratio CaCO₃ : Na₂CO₃ = 1 : 1 → n(Na₂CO₃) = 749.3 mol<br/>Theoretical yield = 749.3 × 106.0 = 79,400 g = <strong>79.4 kg</strong><br/><br/>% yield = (76.5 / 79.4) × 100 = <strong>96.3%</strong> ✔ High yield<br/><br/><strong>PART B — Atom Economy:</strong><br/>Desired product: Na₂CO₃ (Mᵣ = 106.0)<br/>By-product: CaCl₂ (Mᵣ = 111.1)<br/>Atom economy = 106.0 / (106.0 + 111.1) × 100 = <strong>48.8%</strong> ✘ Low atom economy<br/><br/><em>Conclusion: High % yield (96.3%) but poor atom economy (48.8%). In industry the CaCl₂ by-product is sold as a road de-icer, offsetting the economic cost of the waste and making the process viable.</em>'
+      },
+      terms: []
+    },
+    {
       id: 'table-atom',
       type: 'comparisonTable',
       data: {
@@ -96,8 +106,40 @@ export const note_chemistry_1_1_7 = {
         rows: [
           ['Addition reactions', '100% — only one product formed'],
           ['Substitution reactions', '<100% — atoms in the leaving group are wasted'],
-          ['Elimination reactions', '<100% — small molecule (e.g. H₂O) is also produced']
+          ['Elimination reactions', '<100% — small molecule (e.g. H₂O) is also produced'],
+          ['Multi-step reactions', 'Often 20–50% — each step creates by-products; waste accumulates']
         ]
+      },
+      terms: []
+    },
+    {
+      id: 'h-ethene-routes',
+      type: 'heading',
+      data: { text: 'Comparing Routes: Choosing the Best Process', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-ethene-routes',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Two industrial routes to 1,2-dichloroethane (CH₂ClCH₂Cl, Mᵣ = 99.0)',
+        headers: ['Feature', 'Route 1: Direct Chlorination (Addition)', 'Route 2: Oxychlorination (Substitution)'],
+        rows: [
+          ['Equation', 'CH₂=CH₂ + Cl₂ → CH₂ClCH₂Cl', 'CH₂=CH₂ + 2HCl + ½O₂ → CH₂ClCH₂Cl + H₂O'],
+          ['Number of products', '1', '2 (desired product + H₂O by-product)'],
+          ['Atom economy', '<strong>100%</strong>', '<strong>84.6%</strong> = 99 / (99 + 18) × 100'],
+          ['Verdict', 'Preferred — no atoms wasted', 'Less efficient — H₂O is a wasted by-product']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-ae-generalisation',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Atom Economy by Reaction Type — Summary',
+        text: '<strong>Addition reactions</strong> — always 100% (single product, no atoms wasted)<br/><strong>Substitution / elimination</strong> — typically 75–90% (one by-product formed)<br/><strong>Multi-step syntheses</strong> — often 20–50% (waste accumulates at every step)<br/><br/>Industrial implication: always prefer the most direct route with fewest by-products. If by-products are unavoidable, consider whether they can be <em>sold</em> (e.g. CaCl₂ in the Solvay process) to offset losses.'
       },
       terms: []
     },
@@ -142,9 +184,11 @@ export const note_chemistry_1_1_7 = {
       { id: 'c2', blockId: 'callout-yield-reasons', prompt: 'Give two specific reasons why the actual yield of a reaction might be lower than the theoretical yield.' },
       { id: 'c3', blockId: 'callout-atom-def', prompt: 'State the formula for atom economy and explain what a 100% value means.' },
       { id: 'c4', blockId: 'table-atom', prompt: 'Which type of reaction always has a 100% atom economy? Explain why.' },
-      { id: 'c-ind', blockId: 'table-industrial', prompt: 'List five key factors that must be considered when evaluating the overall viability of an industrial process.' }
+      { id: 'c-ind', blockId: 'table-industrial', prompt: 'List five key factors that must be considered when evaluating the overall viability of an industrial process.' },
+      { id: 'c-solvay', blockId: 'callout-solvay-combined', prompt: 'Starting from 75.0 kg CaCO₃: (a) calculate theoretical yield of Na₂CO₃, (b) find % yield if actual = 76.5 kg, (c) calculate atom economy. Equation: CaCO₃ + 2NaCl → Na₂CO₃ + CaCl₂.' },
+      { id: 'c-ethene', blockId: 'table-ethene-routes', prompt: 'Two routes to 1,2-dichloroethane: Route 1 is addition (CH₂=CH₂ + Cl₂), Route 2 is oxychlorination (adds H₂O as by-product). Which has higher atom economy and why?' }
     ],
-    summaryText: '% yield = (actual/theoretical) × 100. Never use starting mass as theoretical yield. Yield < 100% due to reversible reactions, side-reactions, or purification losses. Atom economy = (Mᵣ desired product / ΣMᵣ all products) × 100. Addition = 100%. Process selection requires balancing Rate, Yield, Atom Economy, Cost, and Environment.',
+    summaryText: '% yield = (actual / theoretical) × 100. Theoretical yield is calculated via the 4-step method — never divide actual yield by starting mass. Yield < 100% due to reversible reactions, side-reactions, or purification losses. Atom economy = (Mᵣ desired product / ΣMᵣ all products) × 100. Addition = 100%. Substitution/elimination = 75–90%. Multi-step = often 20–50%. By-products can be sold to offset low atom economy. Solvay: 96.3% yield but 48.8% AE. Process selection balances Rate, Yield, Atom Economy, Cost, and Environmental impact.',
     ready: false
   },
   evidence: []
