@@ -137,6 +137,7 @@ export const chemistrySyllabus = {
                         'Halide trends and tests',
                         'Halides with sulfuric acid',
                         'Fluorine and astatine predictions',
+                        'Physical properties of Period 3 oxides',
                     ],
                 },
                 {

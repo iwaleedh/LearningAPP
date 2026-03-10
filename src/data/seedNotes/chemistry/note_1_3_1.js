@@ -299,6 +299,129 @@ export const note_chemistry_1_3_1 = {
 </svg>`
       },
       terms: []
+    },
+    {
+      id: 'h-electrolysis-intro',
+      type: 'heading',
+      data: { text: 'Electrolysis of Molten Ionic Compounds', level: 2 }
+    },
+    {
+      id: 'list-electrolysis-defs',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Electrolysis</strong>: using electricity to bring about a chemical change in a molten or dissolved ionic substance',
+          '<strong>Electrolyte</strong>: the ionic compound undergoing electrolysis — must be molten or dissolved in water, <em>not</em> solid (ions are fixed in the lattice and cannot move)',
+          '<strong>Electrodes</strong>: inert conductors (usually graphite/carbon or platinum) placed in the electrolyte and connected to a DC power supply',
+          '<strong>Anode (+)</strong>: the positive electrode, connected to the positive terminal of the power supply',
+          '<strong>Cathode (−)</strong>: the negative electrode, connected to the negative terminal of the power supply',
+          '<strong>PANC mnemonic</strong>: <strong>P</strong>ositive <strong>A</strong>node, <strong>N</strong>egative <strong>C</strong>athode',
+          '<strong>Cations</strong> (positive ions) migrate towards the cathode (−) and are <em>reduced</em> there',
+          '<strong>Anions</strong> (negative ions) migrate towards the anode (+) and are <em>oxidised</em> there'
+        ]
+      }
+    },
+    {
+      id: 'callout-current',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'How current is carried in electrolysis',
+        text: '<strong>In the wires and electrodes</strong>: current is carried by <em>electrons</em> (as in any metal conductor).<br><strong>In the electrolyte melt</strong>: current is carried by <em>ions</em> — cations drift toward the cathode, anions drift toward the anode.<br>The power supply acts as an <strong>electron pump</strong>: it forces electrons through the external circuit and drives ion movement in the melt.'
+      }
+    },
+    {
+      id: 'callout-we-pbbr2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Electrolysis of molten PbBr₂',
+        text: '<strong>Observations:</strong><br>• Nothing happens while PbBr₂ is solid — ions fixed in lattice<br>• Bulb lights when PbBr₂ melts — ions are now mobile, current flows<br>• Brown gas forms at the anode (Br₂)<br>• Silvery bead of liquid metal forms at the cathode (Pb)<br><br><strong>Half-equations:</strong><br>Cathode (reduction — gain of electrons): Pb²⁺ + 2e⁻ → Pb<br>Anode (oxidation — loss of electrons): 2Br⁻ → Br₂ + 2e⁻<br><br><strong>OIL RIG:</strong> Oxidation Is Loss (anode, Br⁻ loses e⁻) | Reduction Is Gain (cathode, Pb²⁺ gains e⁻)'
+      }
+    },
+    {
+      id: 'callout-we-nacl',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Electrolysis of molten NaCl',
+        text: '<strong>Cathode (reduction):</strong> Na⁺ + e⁻ → Na (sodium metal produced)<br><strong>Anode (oxidation):</strong> 2Cl⁻ → Cl₂ + 2e⁻ (chlorine gas produced)<br><br>For every 2 mol Na produced at the cathode, 1 mol Cl₂ is produced at the anode — balance electrons transferred.'
+      }
+    },
+    {
+      id: 'callout-oil-rig',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'OIL RIG — Oxidation and Reduction at the Electrodes',
+        text: '<strong>O</strong>xidation <strong>I</strong>s <strong>L</strong>oss (of electrons) — always at the <strong>ANODE (+)</strong><br><strong>R</strong>eduction <strong>I</strong>s <strong>G</strong>ain (of electrons) — always at the <strong>CATHODE (−)</strong><br><br>• Anions arrive at anode → discharge by losing electrons → oxidised<br>• Cations arrive at cathode → discharge by gaining electrons → reduced'
+      }
+    },
+    {
+      id: 'svg-electrolysis',
+      type: 'svg',
+      data: {
+        caption: 'Figure: Electrolysis of molten PbBr₂ — ion movement, electrode products, and electron flow in external circuit',
+        svg: `<svg viewBox="0 0 600 355" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <defs>
+    <marker id="arrowB" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#1d4ed8"/>
+    </marker>
+    <marker id="arrowR" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text x="300" y="17" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Electrolysis of Molten PbBr₂</text>
+  <!-- DC Power Source box -->
+  <rect x="220" y="26" width="160" height="46" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="300" y="47" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="12">DC Power Source</text>
+  <text x="238" y="64" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="16">−</text>
+  <text x="362" y="64" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="16">+</text>
+  <!-- Left wire: − terminal to cathode -->
+  <polyline points="238,72 175,72 175,140" stroke="#374151" stroke-width="2" fill="none"/>
+  <polygon points="175,142 170,127 180,127" fill="#1d4ed8"/>
+  <text x="118" y="102" fill="#1d4ed8" font-size="10">e⁻ flow ↓</text>
+  <!-- Right wire: anode to + terminal -->
+  <polyline points="362,72 425,72 425,140" stroke="#374151" stroke-width="2" fill="none"/>
+  <polygon points="425,70 420,86 430,86" fill="#b91c1c"/>
+  <text x="437" y="102" fill="#b91c1c" font-size="10">e⁻ flow ↑</text>
+  <!-- Beaker outline -->
+  <rect x="108" y="172" width="384" height="138" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <!-- Cathode electrode (left) -->
+  <rect x="168" y="140" width="14" height="152" rx="3" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="175" y="133" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">CATHODE (−)</text>
+  <!-- Pb metal deposit at cathode bottom -->
+  <ellipse cx="175" cy="297" rx="19" ry="8" fill="#94a3b8" stroke="#64748b" stroke-width="1.5"/>
+  <text x="175" y="304" text-anchor="middle" fill="#334155" font-size="9">Pb(l)</text>
+  <!-- Anode electrode (right) -->
+  <rect x="418" y="140" width="14" height="152" rx="3" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+  <text x="425" y="133" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">ANODE (+)</text>
+  <!-- Br2 gas bubbles rising above melt surface -->
+  <circle cx="426" cy="165" r="8" fill="#fef08a" stroke="#ca8a04" stroke-width="1.2"/>
+  <circle cx="442" cy="154" r="6" fill="#fef08a" stroke="#ca8a04" stroke-width="1" opacity="0.8"/>
+  <text x="452" y="158" fill="#92400e" font-weight="bold" font-size="10">Br₂(g)</text>
+  <!-- Pb2+ cation arrows toward cathode -->
+  <text x="230" y="208" fill="#1d4ed8" font-weight="bold" font-size="13">Pb²⁺</text>
+  <line x1="227" y1="203" x2="196" y2="203" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrowB)"/>
+  <text x="230" y="250" fill="#1d4ed8" font-weight="bold" font-size="13">Pb²⁺</text>
+  <line x1="227" y1="245" x2="196" y2="245" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arrowB)"/>
+  <!-- Br- anion arrows toward anode -->
+  <text x="320" y="208" fill="#b91c1c" font-weight="bold" font-size="13">Br⁻</text>
+  <line x1="350" y1="203" x2="410" y2="203" stroke="#b91c1c" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="320" y="250" fill="#b91c1c" font-weight="bold" font-size="13">Br⁻</text>
+  <line x1="350" y1="245" x2="410" y2="245" stroke="#b91c1c" stroke-width="2" marker-end="url(#arrowR)"/>
+  <!-- Electrolyte label -->
+  <text x="300" y="275" text-anchor="middle" fill="#0369a1" font-size="10" font-weight="bold">Molten PbBr₂ (electrolyte)</text>
+  <text x="300" y="288" text-anchor="middle" fill="#0369a1" font-size="9">Ions free to move when molten</text>
+  <!-- Half-equations below beaker -->
+  <text x="175" y="325" text-anchor="middle" fill="#166534" font-size="10">Pb²⁺ + 2e⁻ → Pb</text>
+  <text x="175" y="338" text-anchor="middle" fill="#166534" font-size="9">(reduction)</text>
+  <text x="425" y="325" text-anchor="middle" fill="#9a3412" font-size="10">2Br⁻ → Br₂ + 2e⁻</text>
+  <text x="425" y="338" text-anchor="middle" fill="#9a3412" font-size="9">(oxidation)</text>
+</svg>`
+      }
     }
   ],
   recall: {
@@ -309,9 +432,11 @@ export const note_chemistry_1_3_1 = {
       { id: 'c3', blockId: 'callout-radius-ratio', prompt: 'Explain why CsCl has 8:8 co-ordination but NaCl has 6:6 co-ordination. Reference the radius ratio in your answer.' },
       { id: 'c4', blockId: 'table-props', prompt: 'Explain why ionic compounds are brittle but also why they can conduct electricity when melted.' },
       { id: 'c5', blockId: 'table-props', prompt: 'Why does solid NaCl not conduct electricity but molten NaCl does? Name the products formed at each electrode.' },
-      { id: 'c6', blockId: 'table-props', prompt: 'Why are ionic compounds insoluble in organic solvents like hexane?' }
+      { id: 'c6', blockId: 'table-props', prompt: 'Why are ionic compounds insoluble in organic solvents like hexane?' },
+      { id: 'c7', blockId: 'list-electrolysis-defs', prompt: 'Define electrolysis and electrolyte. State the PANC mnemonic and explain what happens at the anode and cathode.' },
+      { id: 'c8', blockId: 'callout-we-pbbr2', prompt: 'Write the half-equations for the electrolysis of molten PbBr₂. State the observations at each electrode and link each electrode to OIL RIG.' }
     ],
-    summaryText: 'Giant ionic lattice = 3D array of alternating + and − ions held by strong electrostatic forces. NaCl: 6:6 co-ordination (Na⁺ is 52% Cl⁻ size → can only fit 6 Cl⁻ without repulsions). CsCl: 8:8 (Cs⁺ is 93% Cl⁻ size → 8 Cl⁻ fit without touching). High mp/bp (strong forces; increases with charge and decreasing radius). Brittle (layer shift aligns like charges → repulsion → shatters). Conducts when molten (Na→Na at cathode; Cl⁻→Cl₂ at anode — electrolysis). Insoluble in organic solvents (weak VdW cannot overcome lattice energy).',
+    summaryText: 'Giant ionic lattice = 3D array of alternating + and − ions held by strong electrostatic forces. NaCl: 6:6 co-ordination; CsCl: 8:8 (larger Cs⁺). High mp/bp (strong forces). Brittle (layer shift → like charges repel → shatters). Conducts when molten via electrolysis. PANC: Positive Anode, Negative Cathode. Electrons carry current in wires; ions carry current in the electrolyte. PbBr₂ molten — Cathode: Pb²⁺ + 2e⁻ → Pb (reduction, OIL RIG: Reduction Is Gain); Anode: 2Br⁻ → Br₂ + 2e⁻ (oxidation, OIL RIG: Oxidation Is Loss). NaCl molten — Cathode: Na⁺ + e⁻ → Na; Anode: 2Cl⁻ → Cl₂ + 2e⁻. Insoluble in organic solvents (weak VdW cannot overcome lattice energy).',
     ready: false
   },
   evidence: []

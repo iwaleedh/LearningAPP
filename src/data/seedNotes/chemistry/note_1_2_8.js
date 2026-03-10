@@ -8,7 +8,7 @@ export const note_chemistry_1_2_8 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Write electronic configurations for ions of the first 36 elements. Understand how electrons are added (anions) or removed (cations), paying particular attention to transition metal ions.' },
+      data: { text: 'Write electronic configurations for ions of the first 36 elements; explain trends in first ionisation energy, atomic radius and electronegativity across Period 3; and relate the physical properties of Period 3 elements to their structure and bonding.' },
       terms: []
     },
     {
@@ -18,10 +18,17 @@ export const note_chemistry_1_2_8 = {
       terms: []
     },
     {
-      id: 'p-cations',
-      type: 'paragraph',
-      data: { text: 'Cations are formed by <strong>removing electrons</strong>. Electrons are always removed from the <strong>highest energy subshell first</strong>. For main group elements, this is straightforward — remove from the outer shell.' },
-      terms: []
+      id: 'list-cations',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Cations form by <strong>removing electrons</strong> from the atom.',
+          'Electrons are always removed from the <strong>highest energy subshell first</strong>.',
+          'For main group elements, this is straightforward — remove from the outermost shell.'
+        ]
+      },
+      terms: ['Cation']
     },
     {
       id: 'table-cations-main',
@@ -54,9 +61,15 @@ export const note_chemistry_1_2_8 = {
       terms: []
     },
     {
-      id: 'p-anions',
-      type: 'paragraph',
-      data: { text: 'Anions are formed by <strong>adding electrons</strong> to the outermost shell. The electrons are added to the next available orbital in the outer subshell.' },
+      id: 'list-anions',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Anions form by <strong>adding electrons</strong> to the atom.',
+          'Electrons are added to the next available orbital in the <strong>outermost subshell</strong>.'
+        ]
+      },
       terms: ['Anion']
     },
     {
@@ -84,7 +97,200 @@ export const note_chemistry_1_2_8 = {
       terms: ['Isoelectronic']
     },
 
-    // ── Period 3 Physical Properties (from chemguide) ────────────────────────
+    // ── Atomic Properties of Period 3 ────────────────────────────────────────
+    {
+      id: 'h-p3-atomic',
+      type: 'heading',
+      data: { text: 'Atomic Properties of Period 3 Elements (Na → Ar)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'h-p3-elec',
+      type: 'heading',
+      data: { text: 'Electronic Structures', level: 3 },
+      terms: []
+    },
+    {
+      id: 'list-p3-elec-intro',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'In Period 3, the <strong>3s and 3p orbitals</strong> progressively fill with electrons.',
+          'All 8 elements share the neon core: <strong>[Ne] = 1s² 2s² 2p⁶</strong>.',
+          'Valence electrons increase from 1 (Na) to 8 (Ar) across the period.'
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'table-p3-elec',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Abbreviated electronic structures of Period 3 elements',
+        headers: ['Element', 'Abbreviated Config.', 'Detailed outer orbitals'],
+        rows: [
+          ['Na', '[Ne] 3s¹',     '3s¹'],
+          ['Mg', '[Ne] 3s²',     '3s²'],
+          ['Al', '[Ne] 3s² 3p¹', '3s² 3p<sub>x</sub>¹'],
+          ['Si', '[Ne] 3s² 3p²', '3s² 3p<sub>x</sub>¹ 3p<sub>y</sub>¹'],
+          ['P',  '[Ne] 3s² 3p³', '3s² 3p<sub>x</sub>¹ 3p<sub>y</sub>¹ 3p<sub>z</sub>¹'],
+          ['S',  '[Ne] 3s² 3p⁴', '3s² 3p<sub>x</sub>² 3p<sub>y</sub>¹ 3p<sub>z</sub>¹'],
+          ['Cl', '[Ne] 3s² 3p⁵', '3s² 3p<sub>x</sub>² 3p<sub>y</sub>² 3p<sub>z</sub>¹'],
+          ['Ar', '[Ne] 3s² 3p⁶', '3s² 3p<sub>x</sub>² 3p<sub>y</sub>² 3p<sub>z</sub>²']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'h-p3-ie1',
+      type: 'heading',
+      data: { text: 'First Ionisation Energy (IE₁)', level: 3 },
+      terms: []
+    },
+    {
+      id: 'list-p3-ie1',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Definition:</strong> Energy to remove 1 mole of outermost electrons from 1 mole of gaseous atoms: X(g) → X⁺(g) + e⁻.',
+          '<strong>General trend:</strong> IE₁ <strong>increases</strong> from Na to Ar due to increasing nuclear charge.',
+          'Two anomalous dips break the upward trend: <strong>Mg → Al</strong> and <strong>P → S</strong>.'
+        ]
+      },
+      terms: ['First ionisation energy']
+    },
+    {
+      id: 'list-p3-ie1-factors',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Nuclear charge (↑ → IE₁ ↑):</strong> More protons = stronger attraction on outer electrons.',
+          '<strong>Distance from nucleus (↑ → IE₁ ↓):</strong> Outer electron further away = easier to remove.',
+          '<strong>Electron shielding (↑ → IE₁ ↓):</strong> Inner-shell electrons partially cancel the nuclear pull on outer electrons.',
+          '<strong>Orbital pairing (paired → IE₁ ↓):</strong> Two electrons in the same orbital repel each other → paired electron is easier to remove.'
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-p3-ie1-upward',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Why IE₁ Generally Increases Na → Ar',
+        text: '• All outer electrons are in 3-level orbitals throughout Period 3 — same orbital type, approximately the same distance from the nucleus.<br/>• All are shielded by the same inner electrons (shells 1 and 2) — constant shielding.<br/>• The only major change is increasing nuclear charge: Na (11p⁺) → Ar (18p⁺).<br/>• More protons attract outer electrons more strongly AND pull them closer → progressively higher IE₁.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-p3-ie1-dips',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Why IE₁ Dips at Al and at S (Anomalous Falls)',
+        text: '<strong>Dip at Mg → Al:</strong><br/>• Mg outer electron: 3s orbital. Al outer electron: 3p orbital.<br/>• The 3p orbital is slightly <em>higher energy</em> and <em>further from the nucleus</em> than a 3s orbital.<br/>• Al\'s 3p electron is also partially shielded by the filled 3s² electrons (extra shielding beyond inner shells).<br/>• Both effects reduce attraction more than the extra proton adds → IE₁(Al) &lt; IE₁(Mg).<br/><br/><strong>Dip at P → S:</strong><br/>• P: three singly occupied 3p orbitals (3p<sub>x</sub>¹ 3p<sub>y</sub>¹ 3p<sub>z</sub>¹) — no pairing (Hund\'s rule).<br/>• S: one doubly occupied 3p orbital (3p<sub>x</sub>² 3p<sub>y</sub>¹ 3p<sub>z</sub>¹) — first pairing occurs.<br/>• Paired electrons in S\'s 3p<sub>x</sub>² <em>repel each other</em>, lowering IE₁ below what the extra proton would predict → IE₁(S) &lt; IE₁(P).'
+      },
+      terms: []
+    },
+    {
+      id: 'svg-p3-ie1',
+      type: 'svg',
+      data: {
+        caption: 'First ionisation energy trend across Period 3. Note the general increase and the two anomalous dips at Al (3p orbital effect) and S (paired electron repulsion).',
+        svg: `<svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <text x="260" y="16" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">First Ionisation Energy Across Period 3</text>
+  <line x1="60" y1="195" x2="490" y2="195" stroke="#334155" stroke-width="2"/>
+  <line x1="60" y1="25" x2="60" y2="195" stroke="#334155" stroke-width="2"/>
+  <text transform="rotate(-90 16 115)" x="16" y="115" text-anchor="middle" fill="#475569" font-size="10">IE₁ / kJ mol⁻¹</text>
+  <text x="55" y="198" text-anchor="end" fill="#64748b" font-size="9">400</text>
+  <text x="55" y="162" text-anchor="end" fill="#64748b" font-size="9">700</text>
+  <text x="55" y="122" text-anchor="end" fill="#64748b" font-size="9">1000</text>
+  <text x="55" y="82" text-anchor="end" fill="#64748b" font-size="9">1300</text>
+  <text x="55" y="42" text-anchor="end" fill="#64748b" font-size="9">1600</text>
+  <line x1="60" y1="162" x2="490" y2="162" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="60" y1="122" x2="490" y2="122" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="60" y1="82" x2="490" y2="82" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="60" y1="42" x2="490" y2="42" stroke="#e2e8f0" stroke-width="1"/>
+  <polyline points="80,181 135,147 190,170 245,140 300,108 355,110 410,74 465,36" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <circle cx="80" cy="181" r="5" fill="#3b82f6"/>
+  <circle cx="135" cy="147" r="5" fill="#3b82f6"/>
+  <circle cx="190" cy="170" r="6" fill="#ef4444"/>
+  <circle cx="245" cy="140" r="5" fill="#3b82f6"/>
+  <circle cx="300" cy="108" r="5" fill="#3b82f6"/>
+  <circle cx="355" cy="110" r="6" fill="#ef4444"/>
+  <circle cx="410" cy="74" r="5" fill="#3b82f6"/>
+  <circle cx="465" cy="36" r="5" fill="#3b82f6"/>
+  <text x="80" y="176" text-anchor="middle" fill="#1e40af" font-size="8">496</text>
+  <text x="135" y="141" text-anchor="middle" fill="#1e40af" font-size="8">738</text>
+  <text x="190" y="179" text-anchor="middle" fill="#dc2626" font-size="8">577</text>
+  <text x="245" y="134" text-anchor="middle" fill="#1e40af" font-size="8">786</text>
+  <text x="300" y="102" text-anchor="middle" fill="#1e40af" font-size="8">1012</text>
+  <text x="355" y="119" text-anchor="middle" fill="#dc2626" font-size="8">1000</text>
+  <text x="410" y="68" text-anchor="middle" fill="#1e40af" font-size="8">1251</text>
+  <text x="465" y="30" text-anchor="middle" fill="#1e40af" font-size="8">1521</text>
+  <text x="80" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Na</text>
+  <text x="135" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Mg</text>
+  <text x="190" y="212" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">Al</text>
+  <text x="245" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Si</text>
+  <text x="300" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">P</text>
+  <text x="355" y="212" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">S</text>
+  <text x="410" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Cl</text>
+  <text x="465" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Ar</text>
+  <text x="190" y="158" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ 3p orbital</text>
+  <text x="355" y="98" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ paired e⁻</text>
+  <circle cx="78" cy="228" r="4" fill="#3b82f6"/><text x="86" y="232" fill="#1e40af" font-size="9">Normal increase</text>
+  <circle cx="185" cy="228" r="4" fill="#ef4444"/><text x="193" y="232" fill="#dc2626" font-size="9">Anomalous dip</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
+      id: 'h-p3-radius',
+      type: 'heading',
+      data: { text: 'Atomic Radius', level: 3 },
+      terms: []
+    },
+    {
+      id: 'list-p3-radius',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Atomic radius <strong>decreases</strong> from Na to Cl — a smooth, unbroken trend (no anomalous dips).',
+          '<strong>Radius types used:</strong> metallic radius (Na, Mg, Al) and covalent radius (Si, P, S, Cl) — these are directly comparable.',
+          '<strong>Argon excluded:</strong> only a van der Waals radius; not comparable to metallic/covalent radii — do not include Ar in the trend.',
+          '<strong>Explanation:</strong> Bonding electrons are in 3-level orbitals throughout; screened by the same inner electrons (shells 1 and 2) — constant shielding.',
+          'Nuclear charge increases steadily (Na: 11p⁺ → Cl: 17p⁺) → bonding electrons pulled progressively closer → atomic radius decreases.'
+        ]
+      },
+      terms: ['Atomic radius', 'Metallic radius', 'Covalent radius']
+    },
+    {
+      id: 'h-p3-en',
+      type: 'heading',
+      data: { text: 'Electronegativity', level: 3 },
+      terms: []
+    },
+    {
+      id: 'list-p3-en',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Definition:</strong> Measure of an atom\'s tendency to attract a bonding pair of electrons (Pauling scale: F = 4.0 highest; Cs/Fr = 0.7 lowest).',
+          'Electronegativity <strong>increases</strong> from Na to Cl across Period 3.',
+          '<strong>Argon excluded:</strong> forms no covalent bonds → electronegativity is undefined for Ar.',
+          '<strong>Explanation:</strong> Bonding electrons always in the 3-level; shielded by the same inner shells (constant shielding).',
+          'Increasing nuclear charge (Na → Cl) attracts the bonding pair progressively more strongly → electronegativity increases.',
+          'Trend mirrors the inverse of atomic radius: as atoms get smaller, bonding pair is held closer → higher electronegativity.'
+        ]
+      },
+      terms: ['Electronegativity', 'Pauling scale']
+    },
+    // ── Physical Properties of Period 3 ────────────────────────────────────────
     {
       id: 'h-period3',
       type: 'heading',
@@ -92,9 +298,16 @@ export const note_chemistry_1_2_8 = {
       terms: []
     },
     {
-      id: 'p-period3-intro',
-      type: 'paragraph',
-      data: { text: 'The physical properties of Period 3 elements (Na → Ar) change systematically across the period. The key driver is the change in <strong>structure type</strong> — from giant metallic, to giant covalent, to simple molecular.' },
+      id: 'list-period3-intro',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Physical properties of Period 3 elements (Na → Ar) change systematically across the period.',
+          'Key driver: change in <strong>structure type</strong> — giant metallic → giant covalent → simple molecular.',
+          'Na, Mg, Al: giant metallic; Si: giant covalent; P, S, Cl, Ar: simple molecular or monatomic.'
+        ]
+      },
       terms: []
     },
     {
@@ -236,12 +449,14 @@ export const note_chemistry_1_2_8 = {
     cues: [
       { id: 'c1', blockId: 'callout-transition', prompt: 'From which subshell are electrons removed first when transition metals form cations? Explain why this is surprising given the filling order.' },
       { id: 'c2', blockId: 'callout-transition', prompt: 'Write the electronic configurations of Fe, Fe²⁺ and Fe³⁺.' },
-      { id: 'c3', blockId: 'table-anions', prompt: 'Write the electronic configuration of Cl⁻.' },
-      { id: 'c4', blockId: 'callout-isoelectronic', prompt: 'Which ions are isoelectronic with neon? State their shared electron configuration.' },
-      { id: 'c5', blockId: 'table-period3', prompt: 'State the structure type of each Period 3 element from Na to Ar and explain the sharp drop in melting point between Al and Si, and again between Si and P.' },
-      { id: 'c6', blockId: 'callout-molecular-trend', prompt: 'Arrange P₄, S₈, Cl₂ and Ar in order of increasing melting point and explain why in terms of London forces.' }
+      { id: 'c3', blockId: 'callout-p3-ie1-dips', prompt: 'Why is the first ionisation energy of aluminium lower than that of magnesium, despite Al having one more proton?' },
+      { id: 'c4', blockId: 'callout-p3-ie1-dips', prompt: 'Why is the first ionisation energy of sulphur lower than that of phosphorus?' },
+      { id: 'c5', blockId: 'list-p3-radius', prompt: 'Explain why atomic radius decreases from Na to Cl across Period 3. Why is argon excluded from the trend?' },
+      { id: 'c6', blockId: 'list-p3-en', prompt: 'Explain the trend in electronegativity across Period 3. Why is argon not assigned an electronegativity value?' },
+      { id: 'c7', blockId: 'table-period3', prompt: 'State the structure type of each Period 3 element from Na to Ar and explain the sharp drop in melting point between Al and Si, and again between Si and P.' },
+      { id: 'c8', blockId: 'callout-molecular-trend', prompt: 'Arrange P₄, S₈, Cl₂ and Ar in order of increasing melting point and explain in terms of London forces.' }
     ],
-    summaryText: 'Cations: remove electrons from the highest energy subshell. For transition metals, remove 4s before 3d when forming ions (even though 4s fills first). Anions: add electrons to the next available orbital. Isoelectronic species share the same electron configuration (e.g. Na⁺, F⁻, O²⁻ all have Ne\'s configuration). Period 3 physical properties: Na/Mg/Al — giant metallic, mp increases (more delocalised e⁻, smaller radius); Si — giant covalent, highest mp (1414°C), semiconductor; P/S/Cl/Ar — simple molecular, low mp from weak London forces only (order: S₈ > P₄ > Cl₂ > Ar by molecule size); none conduct except Na/Mg/Al.',
+    summaryText: 'Electronic configs: cations — remove from highest energy subshell (transition metals: lose 4s before 3d); anions — add to outermost subshell. IE₁ increases Na→Ar (constant screening, increasing nuclear charge); dip at Al (3p higher than 3s, extra shielding by 3s²); dip at S (3pₓ² paired electrons repel). Atomic radius decreases Na→Cl (same 3-level orbitals, constant shielding, increasing nuclear charge); Ar excluded (van der Waals radius). Electronegativity increases Na→Cl (same explanation); Ar excluded (no covalent bonds). Physical properties: Na/Mg/Al giant metallic; Si giant covalent (highest mp 1414°C); P/S/Cl/Ar simple molecular (mp: S₈>P₄>Cl₂>Ar by molecule size). Si semiconductor. P/S/Cl/Ar non-conductors.',
     ready: false
   },
   evidence: []
