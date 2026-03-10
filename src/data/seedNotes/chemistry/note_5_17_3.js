@@ -28,6 +28,29 @@ export const note_chemistry_5_17_3 = {
     },
     {
       type: 'heading',
+      id: 'h-coordination-number',
+      data: { text: 'Coordination Number', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-coord-number-def',
+      data: {
+        text: 'The <strong>coordination number</strong> of a central metal ion is the total number of coordinate bonds formed with surrounding ligands. It equals the number of donor atoms directly bonded to the metal — <em>not</em> the number of ligand molecules (important for polydentate ligands). Common coordination numbers:<br/>' +
+          '• <strong>CN = 6</strong>: Octahedral geometry — most common for transition metals (e.g. all hexaaqua [M(H₂O)₆]ⁿ⁺ ions)<br/>' +
+          '• <strong>CN = 4</strong>: Tetrahedral or square planar geometry (e.g. [CuCl₄]²⁻ where large Cl⁻ prevents 6 from fitting)'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-bonding-examples',
+      data: {
+        style: 'worked',
+        title: 'Bonding in Specific Complexes — Worked Examples',
+        text: '[Al(H₂O)₆]³⁺: Al³⁺ loses all 3-level electrons → all 3-level orbitals are empty. Hybridises 3s + 3p + 2×3d → 6 equal empty orbitals. Each H₂O donates one lone pair → CN = 6. The 3+ charge delocalises over the whole ion.\n\n[Fe(H₂O)₆]³⁺: Fe³⁺ = [Ar]3d⁵ (loses 4s² and one 3d). The five singly occupied 3d electrons are NOT used in bonding. Fe³⁺ uses hybridised 4s/4p/4d orbitals for 6 coordinate bonds → CN = 6.\n\n[CuCl₄]²⁻: Cu²⁺ = [Ar]3d⁹. Cl⁻ is larger than H₂O → only 4 Cl⁻ can fit around Cu²⁺. Cu²⁺ uses empty 4s/4p orbitals → CN = 4. Charge = 2+ + 4(1−) = 2−.'
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-monodentate',
       data: { text: 'Monodentate Ligands', level: 2 }
     },
@@ -71,6 +94,30 @@ export const note_chemistry_5_17_3 = {
       id: 'p-bidentate-chelation',
       data: {
         text: 'When a bidentate ligand coordinates to a metal ion, it wraps around the metal, creating a five- or six-membered ring (often called a chelate ring from the Greek "chele" meaning claw). This ring structure locks the ligand in place much more effectively than two separate monodentate ligands could achieve. The formation of chelate rings significantly increases the stability of the resulting complex.'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-quadridentate',
+      data: { text: 'Quadridentate Ligands — Biological Importance', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-haem-def',
+      data: {
+        text: '<strong>Haem</strong> is a <strong>quadridentate ligand</strong> (four donor atoms). It is a porphyrin ring containing four nitrogen atoms arranged in a square, each donating a lone pair to a central Fe²⁺ ion. The remaining two coordination positions are used by:<br/>' +
+          '• Position 5: nitrogen lone pair from the globin protein chain (permanent bond)<br/>' +
+          '• Position 6: O₂ molecule (reversible) or H₂O (when not carrying oxygen)<br/>' +
+          'Total CN = 6 (4 bonds from haem ring + 1 from globin + 1 from O₂/H₂O). This is how haemoglobin carries oxygen in the bloodstream.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-co-poisoning',
+      data: {
+        style: 'warning',
+        title: '⚠️ Carbon Monoxide Poisoning',
+        text: 'CO competes with O₂ for the sixth coordination site on Fe²⁺ in haemoglobin. Unlike O₂, CO binds irreversibly — forming a coordinate bond ~200× stronger than O₂. Once CO binds, that haemoglobin molecule permanently cannot carry oxygen. Even low concentrations are fatal because CO progressively deactivates haemoglobin molecules.\n\nTreatment: high-concentration O₂ therapy displaces CO by Le Chatelier\'s principle (mass action).'
       }
     },
     {
@@ -140,15 +187,67 @@ export const note_chemistry_5_17_3 = {
       }
     },
     {
+      type: 'heading',
+      id: 'h-naming',
+      data: { text: 'Naming Complex Ions (IUPAC)', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-naming-intro',
+      data: {
+        text: 'Complex ions are named in this order: <strong>(1) number prefix + ligand name</strong> for each type of ligand (listed alphabetically, ignoring number prefixes) → <strong>(2) metal name</strong> (with oxidation state in Roman numerals).'
+      }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-ligand-names',
+      data: {
+        headers: ['Ligand', 'Name used in complex'],
+        rows: [
+          ['H₂O', 'aqua'],
+          ['NH₃', 'ammine (double-m — NOT "amine"!)'],
+          ['OH⁻', 'hydroxo'],
+          ['Cl⁻', 'chloro'],
+          ['F⁻', 'fluoro'],
+          ['CN⁻', 'cyano'],
+          ['en (1,2-diaminoethane)', 'ethylenediamine'],
+          ['C₂O₄²⁻ (oxalate)', 'oxalato']
+        ],
+        caption: 'Common ligand names in IUPAC nomenclature'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-naming-rules',
+      data: {
+        style: 'key',
+        title: 'Cationic vs Anionic Complexes — Metal Naming',
+        text: 'CATIONIC complex (positive overall charge):\n• Metal uses normal name + Roman numeral oxidation state\n• [Cu(H₂O)₆]²⁺ = hexaaquacopper(II) ion\n• [Al(H₂O)₆]³⁺ = hexaaquaaluminium (Al always 3+ → no Roman numeral needed)\n\nANIONIC complex (negative overall charge):\n• Metal name takes the suffix "-ate"; some metals use Latin roots:\n  copper → cuprate; iron → ferrate; cobalt → cobaltate;\n  chromium → chromate; aluminium → aluminate; vanadium → vanadate\n• [CuCl₄]²⁻ = tetrachlorocuprate(II) ion\n• [Fe(CN)₆]⁴⁻ = hexacyanoferrate(II) ion\n• [Al(H₂O)₂(OH)₄]⁻ = diaquatetrahydroxoaluminate(III) ion\n\nOrder of naming ligands: alphabetical ignoring number prefix\n• [Cu(NH₃)₄(H₂O)₂]²⁺: ammine before aqua → tetraamminediaquacopper(II)'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-naming-worked',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Name a Complex and Verify Charge',
+        text: 'Name [Cr(C₂O₄)₃]³⁻ and verify its charge:\n1. Ligand C₂O₄²⁻ = "oxalato"; three of them → "trioxalato"\n2. Cr in anionic complex → "chromate"; OS: x + 3(2−) = −3 → x = +3 → "chromate(III)"\n3. Full name: trioxalatochromate(III) ion\n4. Charge check: 3+ + 3×(2−) = −3 ✓\n\nName [Ni(en)₃]²⁺:\n1. en = "ethylenediamine"; three → "tris(ethylenediamine)"\n2. Ni²⁺ in cationic complex → "nickel(II)"\n3. Full name: tris(ethylenediamine)nickel(II) ion\n4. CN = 3 × 2 bonds per en = 6 (octahedral) ✓'
+      }
+    },
+    {
       type: 'checklist',
       id: 'checklist-ligands',
       data: {
         items: [
-          { text: 'Ligand = electron pair donor forming coordinate bond with metal ion', checked: false },
-          { text: 'Monodentate (H₂O, NH₃, Cl⁻, CN⁻, SCN⁻) forms one bond', checked: false },
-          { text: 'Bidentate (en, C₂O₄²⁻) forms two bonds and creates chelate ring', checked: false },
-          { text: 'EDTA⁴⁻ is hexadentate, encapsulating the metal ion', checked: false },
-          { text: 'Chelate effect: polydentate ligands form more stable complexes', checked: false }
+          { text: 'Ligand = molecule/ion with lone pair(s) donated to a metal ion via dative (coordinate) bond', checked: false },
+          { text: 'Coordination number = number of coordinate bonds formed (not number of ligands)', checked: false },
+          { text: 'Monodentate (H₂O, NH₃, Cl⁻, CN⁻, OH⁻): 1 bond; common hexaaqua ions have CN=6', checked: false },
+          { text: 'Bidentate (en, C₂O₄²⁻): 2 bonds per ligand; creates chelate ring (5- or 6-membered)', checked: false },
+          { text: 'Quadridentate: haem (4 N atoms in porphyrin ring, holds Fe²⁺)', checked: false },
+          { text: 'Hexadentate: EDTA⁴⁻ — wraps entirely around metal using all 6 positions', checked: false },
+          { text: 'Chelate effect: polydentate ligands form more stable complexes (entropy: more particles released)', checked: false },
+          { text: 'CO binds irreversibly to Fe²⁺ in haemoglobin → prevents O₂ transport → CO poisoning', checked: false },
+          { text: 'Naming: ligands alphabetically (aqua, ammine, chloro...) + metal(OS); anionic complex uses -ate suffix', checked: false }
         ]
       }
     },

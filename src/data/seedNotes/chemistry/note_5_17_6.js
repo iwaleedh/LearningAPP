@@ -7,6 +7,43 @@ export const note_chemistry_5_17_6 = {
         text: 'Understand the four types of transition metal complex reactions (redox, deprotonation, ligand exchange, coordination number change); predict products and colour changes for Co, Fe, Cu, Cr, Ni, Mn, and Zn complexes with NaOH and NH₃; use Fe³⁺ + SCN⁻ as a qualitative test for iron(III).'
       }
     },
+    {
+      type: 'heading',
+      id: 'h-acidity-hexaaqua',
+      data: { text: 'Acidity of Hexaaqua Metal Ions', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-acidity-mechanism',
+      data: {
+        text: 'Solutions of hexaaqua ions [M(H₂O)₆]ⁿ⁺ are acidic. The mechanism:<br/>' +
+          '1. The central metal ion has a high positive charge density<br/>' +
+          '2. This pulls electron density away from the O→M coordinate bond, and further through the O–H bonds<br/>' +
+          '3. The H atoms of the ligand water molecules become more δ⁺ than in free water<br/>' +
+          '4. These H⁺ ions are pulled off by water molecules in the bulk solution (Brønsted-Lowry acid behaviour)'
+      }
+    },
+    {
+      type: 'list',
+      id: 'list-acidity-stepwise',
+      data: {
+        style: 'numbered',
+        items: [
+          '[Fe(H₂O)₆]³⁺ + H₂O ⇌ [Fe(H₂O)₅(OH)]²⁺ + H₃O⁺ — 1st H⁺ lost; solution is yellow/orange (not the true pale lilac of [Fe(H₂O)₆]³⁺)',
+          '[Fe(H₂O)₅(OH)]²⁺ + H₂O ⇌ [Fe(H₂O)₄(OH)₂]⁺ + H₃O⁺ — 2nd H⁺ lost',
+          '[Fe(H₂O)₄(OH)₂]⁺ + H₂O ⇌ [Fe(H₂O)₃(OH)₃] + H₃O⁺ — 3rd H⁺ lost; neutral complex → precipitate forms'
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-acidity-charge',
+      data: {
+        style: 'key',
+        title: '3+ Ions Are More Acidic Than 2+ Ions',
+        text: 'Greater charge (3+) → stronger pull on O–H bond electrons → H atoms more δ⁺ → more readily lost as H⁺.\n\nTypical pH at equal concentrations:\n• 3+ hexaaqua ions (e.g. [Fe(H₂O)₆]³⁺): pH 1–3 (strongly acidic)\n• 2+ hexaaqua ions (e.g. [Cu(H₂O)₆]²⁺): pH 5–6 (weakly acidic)\n\nNote: The true colour of [Fe(H₂O)₆]³⁺ is very pale lilac — rarely seen in solution because the strongly coloured yellow/orange hydrolysis product [Fe(H₂O)₅(OH)]²⁺ forms. Adding concentrated acid (H⁺) pushes equilibrium left and the pale lilac can be observed.'
+      }
+    },
     { type: 'heading', id: 'h-four-types', data: { text: 'Four Types of Complex Reactions', level: 2 } },
     { type: 'list', id: 'list-four-types', data: { style: 'numbered', items: [
       'Redox — oxidation number of the metal changes (e.g. Fe²⁺ → Fe³⁺ on exposure to air). Ligands and type remain unchanged; no equation needed.',
@@ -85,6 +122,40 @@ export const note_chemistry_5_17_6 = {
       'With excess NH₃: precipitate dissolves → [Zn(NH₃)₄]²⁺ + 2H₂O + 2OH⁻ — colourless solution (ligand exchange)',
       'All Zn complexes are colourless (solutions) or white (precipitates) — no colour at any stage'
     ] } },
+    { type: 'heading', id: 'h-aluminium-reactions', data: { text: 'Aluminium Reactions (3+ non-transition metal)', level: 2 } },
+    { type: 'list', id: 'list-aluminium', data: { style: 'bullet', items: [
+      'Starting ion: [Al(H₂O)₆]³⁺ — colourless solution (Al³⁺ is d⁰, not a transition metal; no d-d transitions)',
+      'With NaOH (few drops): [Al(H₂O)₆]³⁺ + 3OH⁻ → [Al(H₂O)₃(OH)₃] + 3H₂O — white gelatinous precipitate (3+ charge → 3 mol OH⁻ needed)',
+      'With excess NaOH: precipitate dissolves → [Al(OH)₄]⁻ (tetrahydroxoaluminate) — colourless solution',
+      'With NH₃ (few drops): same white precipitate — NH₃ acts as Brønsted-Lowry base, removes 3 × H⁺',
+      'With excess NH₃: precipitate does NOT dissolve — Al³⁺ forms no stable ammine complex (key exam point)',
+      'Al(OH)₃ is amphoteric: dissolves in excess NaOH (acidic character) AND in dilute acids (basic character)',
+      'With Na₂CO₃: white precipitate + CO₂ gas (Al³⁺ is acidic enough, being 3+, to liberate CO₂ from CO₃²⁻)'
+    ] } },
+    { type: 'heading', id: 'h-carbonate-reactions', data: { text: 'Reactions with Sodium Carbonate (Na₂CO₃)', level: 2 } },
+    {
+      type: 'paragraph',
+      id: 'p-carbonate-intro',
+      data: {
+        text: 'The reaction with carbonate ions depends on the charge of the hexaaqua ion — 3+ ions are acidic enough to protonate CO₃²⁻ fully, releasing CO₂ gas; 2+ ions are not.'
+      }
+    },
+    { type: 'list', id: 'list-carbonate-reactions', data: { style: 'bullet', items: [
+      '3+ ions (Al³⁺, Fe³⁺, Cr³⁺): overall → 2[M(H₂O)₆]³⁺ + 3CO₃²⁻ → 2[M(H₂O)₃(OH)₃]↓ + 3CO₂↑ + 3H₂O — metal hydroxide precipitate + effervescence',
+      '2+ ions (Cu²⁺, Fe²⁺, Co²⁺): overall → [M(H₂O)₆]²⁺ + CO₃²⁻ → MCO₃↓ + 6H₂O — metal carbonate precipitate, NO gas evolved',
+      'Key rule: 3+ → hydroxide precipitate + CO₂ (acidic enough to release gas); 2+ → carbonate precipitate (not acidic enough)',
+      'Fe³⁺ + Na₂CO₃: orange-brown precipitate of [Fe(H₂O)₃(OH)₃] + CO₂ bubbles',
+      'Cu²⁺ + Na₂CO₃: green/blue CuCO₃ precipitate (basic carbonate in practice), no gas',
+      'Al³⁺ + Na₂CO₃: white [Al(H₂O)₃(OH)₃] precipitate + CO₂ bubbles'
+    ] } },
+    { type: 'comparisonTable', id: 'table-carbonate-summary', data: { headers: ['Ion', 'Charge', 'Product with Na₂CO₃', 'CO₂ gas?'], rows: [
+      ['[Al(H₂O)₆]³⁺', '3+', 'White Al(OH)₃ precipitate', 'Yes ✓'],
+      ['[Fe(H₂O)₆]³⁺', '3+', 'Orange-brown Fe(OH)₃ precipitate', 'Yes ✓'],
+      ['[Cr(H₂O)₆]³⁺', '3+', 'Green Cr(OH)₃ precipitate', 'Yes ✓'],
+      ['[Cu(H₂O)₆]²⁺', '2+', 'Green-blue CuCO₃ precipitate', 'No ✗'],
+      ['[Fe(H₂O)₆]²⁺', '2+', 'Green FeCO₃ precipitate', 'No ✗'],
+      ['[Co(H₂O)₆]²⁺', '2+', 'Pink CoCO₃ precipitate', 'No ✗']
+    ], caption: 'Reactions of hexaaqua ions with Na₂CO₃ — key exam distinction' } },
     { type: 'heading', id: 'h-summary-tables', data: { text: 'Summary Tables', level: 2 } },
     { type: 'comparisonTable', id: 'table-naoh-summary', data: { headers: ['Ion in solution', 'Colour', 'Precipitate (+ NaOH)', 'Excess NaOH'], rows: [
       ['[Co(H₂O)₆]²⁺', 'Pink', 'Blue precipitate', 'No change'],
@@ -94,7 +165,8 @@ export const note_chemistry_5_17_6 = {
       ['[Cr(H₂O)₆]³⁺', 'Green', 'Green precipitate', 'Dissolves → green solution'],
       ['[Mn(H₂O)₆]²⁺', 'Pale pink', 'Pale brown precipitate', 'No change'],
       ['[Ni(H₂O)₆]²⁺', 'Green', 'Green precipitate', 'No change'],
-      ['[Zn(H₂O)₆]²⁺', 'Colourless', 'White precipitate', 'Dissolves → colourless solution']
+      ['[Zn(H₂O)₆]²⁺', 'Colourless', 'White precipitate', 'Dissolves → colourless solution'],
+      ['[Al(H₂O)₆]³⁺', 'Colourless', 'White precipitate', 'Dissolves → colourless solution']
     ], caption: 'Reactions with aqueous NaOH' } },
     { type: 'comparisonTable', id: 'table-nh3-summary', data: { headers: ['Ion in solution', 'Colour', 'Precipitate (+ NH₃)', 'Excess NH₃'], rows: [
       ['[Co(H₂O)₆]²⁺', 'Pink', 'Blue precipitate', 'Dissolves → yellow solution [Co(NH₃)₆]²⁺'],
@@ -104,7 +176,8 @@ export const note_chemistry_5_17_6 = {
       ['[Cr(H₂O)₆]³⁺', 'Green', 'Green precipitate', 'Dissolves → purple/violet [Cr(NH₃)₆]³⁺'],
       ['[Mn(H₂O)₆]²⁺', 'Pale pink', 'Pale brown precipitate', 'No change'],
       ['[Ni(H₂O)₆]²⁺', 'Green', 'Green precipitate', 'Dissolves → deep blue [Ni(NH₃)₆]²⁺'],
-      ['[Zn(H₂O)₆]²⁺', 'Colourless', 'White precipitate', 'Dissolves → colourless [Zn(NH₃)₄]²⁺']
+      ['[Zn(H₂O)₆]²⁺', 'Colourless', 'White precipitate', 'Dissolves → colourless [Zn(NH₃)₄]²⁺'],
+      ['[Al(H₂O)₆]³⁺', 'Colourless', 'White precipitate', 'No change — no stable Al ammine complex']
     ], caption: 'Reactions with aqueous NH₃' } },
     {
       type: 'heading',
@@ -180,6 +253,37 @@ export const note_chemistry_5_17_6 = {
         'Adding AgNO₃ (precipitates SCN⁻): red colour fades (equilibrium shifts left)'
       }
     },
+    { type: 'heading', id: 'h-stability-constants', data: { text: 'Stability Constants (K_stab)', level: 2 } },
+    {
+      type: 'paragraph',
+      id: 'p-kstab-def',
+      data: {
+        text: 'The stability constant (K_stab) is the equilibrium constant for the formation of a complex ion from its aqueous metal ion and ligands. Water molecules are not included in the expression (their concentration is effectively constant). A large K_stab means the complex is thermodynamically stable and forms readily.'
+      }
+    },
+    { type: 'list', id: 'list-kstab-expression', data: { style: 'bullet', items: [
+      'Formation: [Cu(H₂O)₆]²⁺ + 4NH₃ ⇌ [Cu(NH₃)₄(H₂O)₂]²⁺ + 4H₂O',
+      'K_stab = [[Cu(NH₃)₄(H₂O)₂]²⁺] / { [[Cu(H₂O)₆]²⁺] × [NH₃]⁴ }',
+      'Large K_stab (e.g. 10¹³) → complex is very stable; displaces water readily',
+      'Small K_stab → equilibrium lies to the left; complex barely forms',
+      'Stepwise formation: K₁ × K₂ × K₃ × K₄ = overall K_stab',
+      'Log scale used: difference of 1 in log K = 10× difference in actual K'
+    ] } },
+    {
+      type: 'callout',
+      id: 'callout-chelate-effect',
+      data: {
+        style: 'key',
+        title: 'The Chelate Effect — Why Bidentate Ligands Win',
+        text: 'Compare [Cu(NH₃)₂(H₂O)₄]²⁺ vs [Cu(en)(H₂O)₄]²⁺ — both have 2 N donors, but the stability constants differ enormously:\n\n• 2 NH₃ (monodentate): log K = 7.86\n• 1 en (bidentate, same 2 N atoms): log K = 10.6\n• 3 en (tris-en complex): log K = 18.7\n• EDTA⁴⁻ (hexadentate): log K = 18.8\n\nReason: ENTROPY. Replacing 2 NH₃ (3 → 3 particles, ΔS ≈ 0) vs replacing 1 en (2 → 3 particles, ΔS > 0). The chelate effect is entropic — more fragments released → greater entropy increase → more stable complex. EDTA (hexadentate) releases 6 water molecules = massive entropy gain.'
+      }
+    },
+    { type: 'list', id: 'list-kstab-applications', data: { style: 'bullet', items: [
+      'EDTA chelation therapy: EDTA⁴⁻ sequesters toxic metals (Pb²⁺, Hg²⁺) with very large K_stab → removes from blood',
+      'Haemoglobin: CO binds Fe²⁺ with K_stab ≈ 200× larger than O₂ → irreversible occupancy of O₂ site',
+      'Industrial: EDTA used in food preservation and in analytical chemistry to mask interfering ions',
+      'Log K comparison: NH₃ complex log K = 7.86; en complex = 10.6; EDTA = 18.8 — each jump ≈ 10⁸ times more stable'
+    ] } },
     {
       type: 'checklist',
       id: 'checklist-substitution',
@@ -194,7 +298,11 @@ export const note_chemistry_5_17_6 = {
           { text: '[Cu(H₂O)₆]²⁺ + 4Cl⁻ → [CuCl₄]²⁻ yellow; [Co(H₂O)₆]²⁺ + 4Cl⁻ → [CoCl₄]²⁻ blue (coord. number change)', checked: false },
           { text: 'Cr³⁺ (green) + excess NaOH → dissolves; excess NH₃ → purple [Cr(NH₃)₆]³⁺', checked: false },
           { text: 'Ni²⁺: excess NH₃ → deep blue [Ni(NH₃)₆]²⁺. Zn²⁺: amphoteric (excess NaOH dissolves) and excess NH₃ → colourless [Zn(NH₃)₄]²⁺', checked: false },
-          { text: 'Fe³⁺ + SCN⁻ → blood-red [Fe(SCN)]²⁺ — qualitative test; reversible equilibrium', checked: false }
+          { text: 'Fe³⁺ + SCN⁻ → blood-red [Fe(SCN)]²⁺ — qualitative test; reversible equilibrium', checked: false },
+          { text: 'Al³⁺: white precipitate with NaOH (amphoteric, dissolves in excess); white precipitate with NH₃ (does NOT dissolve in excess — no Al ammine complex)', checked: false },
+          { text: '3+ ions + Na₂CO₃ → metal hydroxide ppt + CO₂ gas; 2+ ions + Na₂CO₃ → metal carbonate ppt, no gas', checked: false },
+          { text: 'K_stab: larger value = more stable complex; chelate effect is entropic — bidentate > monodentate at same number of donor atoms', checked: false },
+          { text: 'EDTA (hexadentate) forms most stable complexes (log K ≈ 18–25); used in chelation therapy and analytical chemistry', checked: false }
         ]
       }
     },

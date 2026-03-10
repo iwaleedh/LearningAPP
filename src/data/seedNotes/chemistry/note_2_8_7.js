@@ -1,46 +1,98 @@
 /**
  * Seed note: Chemistry · Unit 2 · Topic 8 · Subtopic 7
- * "Halide tests and reactions with H₂SO₄"
- * Source: Pearson Edexcel IAL Chemistry — Section 8C.3
+ * "Halides with Sulfuric Acid, Tests for Halides, HF Anomalies, and Chlorine Manufacture"
+ * Source: Pearson Edexcel IAL Chemistry — Section 8C.3 + chemguide.co.uk/inorganic/group7
  */
 export const note_chemistry_2_8_7 = {
     blocks: [
         {
             id: 'objective',
             type: 'objective',
-            data: { text: 'Understand the reactions of solid Group 1 halides with concentrated sulfuric acid, and the chemical tests used to identify halide ions in aqueous solution.' },
+            data: { text: 'Understand the reducing ability of halide ions with concentrated H₂SO₄, the silver nitrate test for aqueous halides (with ammonia confirmation), the anomalous properties of HF, and the industrial manufacture of chlorine by electrolysis of brine.' },
             terms: []
         },
         {
-            id: 'h-acid',
+            id: 'h-reducing',
             type: 'heading',
-            data: { text: 'Solid Halides + Concentrated H₂SO₄', level: 2 },
+            data: { text: 'Reducing Ability of Halide Ions', level: 2 },
+            terms: []
+        },
+        {
+            id: 'p-reducing',
+            type: 'paragraph',
+            data: { text: 'Reducing ability increases down Group 7: F⁻ < Cl⁻ < Br⁻ < I⁻. This trend is the opposite of oxidising ability. Iodide ions are the strongest reducing agents — they can reduce sulfur from +6 all the way down to −2.' },
+            terms: ['Reducing agent', 'Oxidation state']
+        },
+        {
+            id: 'svg-reducing-trend',
+            type: 'svg',
+            data: {
+                caption: 'Reducing ability increases down Group 7: I⁻ is the strongest, F⁻ the weakest reducing agent',
+                svg: '<svg viewBox="0 0 380 80" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><text x="190" y="14" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">Reducing Ability of X⁻</text><defs><marker id="ar" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#6366f1"/></marker></defs><line x1="35" y1="45" x2="345" y2="45" stroke="#6366f1" stroke-width="2.5" marker-end="url(#ar)"/><text x="50" y="37" text-anchor="middle" font-size="12" fill="#ef4444">F⁻</text><text x="138" y="37" text-anchor="middle" font-size="12" fill="#f59e0b">Cl⁻</text><text x="226" y="37" text-anchor="middle" font-size="12" fill="#22c55e">Br⁻</text><text x="315" y="37" text-anchor="middle" font-size="12" fill="#6366f1">I⁻</text><text x="50" y="68" text-anchor="middle" font-size="9" fill="#ef4444">Weakest</text><text x="315" y="68" text-anchor="middle" font-size="9" fill="#6366f1">Strongest</text></svg>'
+            },
+            terms: []
+        },
+        {
+            id: 'callout-reducing-thermo',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Thermochemical Explanation of Reducing Ability Trend',
+                text: 'To compare reducing ability, consider the energy required to convert the solid halide to X₂(g) (oxidation of X⁻). Key energy contributions:<br/>• Lattice enthalpy of NaX (energy to break the crystal lattice)<br/>• Removing the electron from X⁻ (= reverse of EA)<br/>• Minus the energy from forming X₂ from atoms (atomisation, reversed)<br/><br/><strong>Most important factor: lattice enthalpy.</strong> It falls by ~87 kJ mol⁻¹ from NaCl to NaI. Smaller lattice enthalpy = easier to liberate ions from the crystal = easier to donate electrons = stronger reducing agent. Electron affinity changes are a secondary factor (fall by ~54 kJ mol⁻¹).<br/><br/><strong>F⁻ anomaly:</strong> F⁻ has a very HIGH lattice enthalpy (tiny ion → very strong ionic interactions) and a very LOW energy recovered from forming F₂ (weak F–F bond). Both factors make F⁻ very difficult to oxidise → weakest reducing agent in the group.'
+            },
+            terms: []
+        },
+        {
+            id: 'h-h2so4',
+            type: 'heading',
+            data: { text: 'Reactions of Solid Halides with Concentrated H₂SO₄', level: 2 },
             terms: []
         },
         {
             id: 'p-acid',
             type: 'paragraph',
-            data: { text: 'When solid Group 1 halides (e.g. NaCl, KBr, KI) react with concentrated sulfuric acid, the products formed depend on the reducing power of the halide ion. Chloride ions are poor reducing agents, so they only undergo an acid-base reaction. Bromide and iodide ions are stronger reducing agents as you go down the group. They will reduce the sulfur (+6) in sulfuric acid into multiple lower oxidation states.' },
-            terms: ['Reducing power', 'Sulfuric acid', 'Oxidation state']
+            data: { text: 'When solid halides are treated with concentrated sulfuric acid, the products depend on the reducing power of the halide ion. F⁻ and Cl⁻ are poor reducing agents — only an acid-base reaction occurs. Br⁻ and I⁻ are stronger reducing agents and can also reduce the sulfur in H₂SO₄ to lower oxidation states.' },
+            terms: ['Reducing power', 'Sulfuric acid']
         },
         {
-            id: 'table-acid',
+            id: 'table-h2so4',
             type: 'comparisonTable',
             data: {
-                caption: 'Reactions of solid halides with conc. H₂SO₄',
-                headers: ['Halide (X⁻)', 'Reaction Type', 'Sulfur Reduction (extent)', 'Products & Observations'],
+                caption: 'Products and observations when solid halides are treated with concentrated H₂SO₄',
+                headers: ['Halide', 'Reaction type', 'S ox. state change', 'Products', 'Observations'],
                 rows: [
-                    ['Chloride (Cl⁻)', 'Acid-base only', 'None (S stays at +6)', '<strong>Observation:</strong> Steamy fumes.<br/><strong>Product:</strong> Hydrogen chloride (HCl) gas.'],
-                    ['Bromide (Br⁻)', 'Acid-Base & Redox', 'Reduced to +4', '<strong>Observations:</strong> Steamy fumes, orange-brown fumes, choking gas.<br/><strong>Products:</strong> HBr(g), Bromine (Br₂), and Sulfur Dioxide (SO₂).'],
-                    ['Iodide (I⁻)', 'Acid-Base & Redox', 'Reduced to +4, 0, and -2', '<strong>Observations:</strong> Steamy fumes, purple fumes/black solid, choking gas, yellow solid, rotten egg smell.<br/><strong>Products:</strong> HI(g), Iodine (I₂), SO₂, Sulfur (S solid), and Hydrogen Sulfide (H₂S gas).']
+                    ['F⁻', 'Acid-base only', 'None (+6 → +6)', 'HF(g)', 'Steamy colourless fumes of HF'],
+                    ['Cl⁻', 'Acid-base only', 'None (+6 → +6)', 'HCl(g)', 'Steamy colourless choking HCl fumes'],
+                    ['Br⁻', 'Acid-base + redox', '+6 → +4 (SO₂)', 'HBr(g), Br₂(g), SO₂(g)', 'Steamy HBr fumes + orange-brown Br₂ vapour + choking SO₂'],
+                    ['I⁻', 'Acid-base + strong redox', '+6 → +4, 0, −2', 'HI(g), I₂(s/g), SO₂(g), S(s), H₂S(g)', 'Steamy HI fumes + purple/dark grey I₂ + yellow S solid + choking SO₂ + rotten-egg H₂S smell'],
                 ]
+            },
+            terms: []
+        },
+        {
+            id: 'callout-ionic-eqs',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Ionic Equations for Redox Reactions with Conc. H₂SO₄',
+                text: '<strong>Bromide — reduces S(+6) to SO₂ (+4):</strong><br/>H₂SO₄ + 2H⁺ + 2Br⁻ → Br₂ + SO₂ + 2H₂O<br/>Br⁻ (−1) is oxidised to Br₂ (0); S (+6) is reduced to SO₂ (+4).<br/><br/><strong>Iodide — reduces S all the way to H₂S (−2):</strong><br/>H₂SO₄ + 8H⁺ + 8I⁻ → 4I₂ + H₂S + 4H₂O<br/>I⁻ (−1) is oxidised to I₂ (0); S (+6) is reduced to H₂S (−2). Intermediate steps via SO₂ (+4) and S⁰ (0) also occur, giving the full mixture of products observed.'
+            },
+            terms: []
+        },
+        {
+            id: 'callout-hbr-hi-h3po4',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: 'Preparing HBr and HI — Use H₃PO₄, NOT H₂SO₄',
+                text: 'All hydrogen halides can be prepared by reacting the solid ionic halide with concentrated <strong>phosphoric acid (H₃PO₄)</strong>:<br/>NaX(s) + H₃PO₄(conc) → HX(g) + NaH₂PO₄<br/><br/><strong>Why not H₂SO₄ for HBr and HI?</strong> Conc. H₂SO₄ is a strong enough oxidising agent to oxidise Br⁻ and I⁻, so instead of simply protonating them, it converts them to Br₂ and I₂. The HBr/HI produced would be immediately re-oxidised. H₃PO₄ is a strong enough acid to protonate all four halides but NOT strong enough to oxidise Br⁻ or I⁻ → all four HX gases can be prepared cleanly.'
             },
             terms: []
         },
         {
             id: 'h-silvernitrate',
             type: 'heading',
-            data: { text: 'Testing Aqueous Halides: The Silver Nitrate Test', level: 2 },
+            data: { text: 'Testing Aqueous Halide Ions — The Silver Nitrate Test', level: 2 },
             terms: []
         },
         {
@@ -48,8 +100,8 @@ export const note_chemistry_2_8_7 = {
             type: 'callout',
             data: {
                 style: 'key',
-                title: 'Procedure for Silver Nitrate Test',
-                text: '1. Add <strong>dilute nitric acid (HNO₃)</strong> to the aqueous sample. (This removes any interfering carbonate/hydroxide ions that would confusingly form Ag₂CO₃ or AgOH precipitates).<br/>2. Add <strong>aqueous silver nitrate (AgNO₃)</strong>.<br/>3. A precipitate of silver halide (AgX) will form.<br/>4. <strong>Confirmation:</strong> Because the precipitate colours (white, cream, yellow) are highly subjective and difficult to accurately distinguish visually, we confirm by adding dilute, then concentrated aqueous ammonia (NH₃) to test their solubility.'
+                title: 'Procedure',
+                text: '1. Dissolve sample in water (if not already aqueous).<br/>2. Acidify with <strong>dilute nitric acid (HNO₃)</strong> — removes interfering CO₃²⁻, SO₃²⁻, and OH⁻ ions that would otherwise form unwanted precipitates with Ag⁺ (false positives).<br/>3. Add <strong>aqueous silver nitrate (AgNO₃)</strong> — AgX precipitate forms if halide is present.<br/>4. <strong>Confirm identity</strong> by adding dilute NH₃ then concentrated NH₃ to test solubility of precipitate.<br/><br/><strong>Important:</strong> F⁻ gives <em>NO precipitate</em> — AgF is soluble in water and cannot be detected by this test.'
             },
             terms: ['Silver nitrate test']
         },
@@ -57,28 +109,142 @@ export const note_chemistry_2_8_7 = {
             id: 'table-precipitates',
             type: 'comparisonTable',
             data: {
-                caption: 'Silver Halide Precipitates and Ammonia Solubility',
-                headers: ['Halide Ion', 'Colour of AgX Precipitate', 'Effect of adding DILUTE NH₃', 'Effect of adding CONC. NH₃'],
+                caption: 'Silver halide precipitates: colours, Ksp values, and solubility in ammonia',
+                headers: ['Halide', 'AgX precipitate colour', 'Ksp (mol² dm⁻⁶)', 'Dilute NH₃', 'Conc. NH₃'],
                 rows: [
-                    ['Chloride, Cl⁻(aq)', 'White', 'Dissolves / Soluble', 'Dissolves / Soluble'],
-                    ['Bromide, Br⁻(aq)', 'Cream', 'Insoluble', 'Dissolves / Soluble'],
-                    ['Iodide, I⁻(aq)', 'Yellow', 'Insoluble', 'Insoluble']
+                    ['F⁻', 'No precipitate (AgF is soluble)', '—', '—', '—'],
+                    ['Cl⁻', 'White', '1.8 × 10⁻¹⁰', 'Dissolves', 'Dissolves'],
+                    ['Br⁻', 'Very pale cream', '7.7 × 10⁻¹³', 'Insoluble', 'Dissolves'],
+                    ['I⁻', 'Very pale yellow', '8.3 × 10⁻¹⁷', 'Insoluble', 'Insoluble in any concentration'],
                 ]
             },
-            terms: ['Precipitate', 'Aqueous ammonia']
+            terms: ['Ksp', 'Precipitate', 'Aqueous ammonia']
+        },
+        {
+            id: 'callout-ammonia-mechanism',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Why Ammonia Dissolves AgCl but NOT AgI — Ksp Explanation',
+                text: 'Ammonia forms a complex ion with silver: Ag⁺(aq) + 2NH₃(aq) → [Ag(NH₃)₂]⁺(aq)<br/><br/>This removes Ag⁺ from solution. If [Ag⁺][X⁻] falls below the Ksp for that particular AgX, the precipitate dissolves (solid shifts to ionic form to restore equilibrium).<br/><br/>• <strong>AgCl</strong> (Ksp = 1.8 × 10⁻¹⁰): Even dilute NH₃ lowes [Ag⁺] enough → AgCl dissolves.<br/>• <strong>AgBr</strong> (Ksp = 7.7 × 10⁻¹³): Dilute NH₃ insufficient; conc. NH₃ can do it.<br/>• <strong>AgI</strong> (Ksp = 8.3 × 10⁻¹⁷): Even conc. NH₃ cannot reduce [Ag⁺] to the level needed. The product [Ag⁺][I⁻] still exceeds Ksp → AgI remains insoluble at any NH₃ concentration.'
+            },
+            terms: ['Complex ion', 'Ksp']
+        },
+        {
+            id: 'h-hf',
+            type: 'heading',
+            data: { text: 'Anomalous Properties of HF', level: 2 },
+            terms: []
+        },
+        {
+            id: 'list-hf',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    '<strong>Anomalously high boiling point:</strong> HF bp = 293 K (20°C). Compare with HCl (188 K), HBr (206 K), HI (238 K). The bp of HCl, HBr, HI increases regularly with molecular mass (van der Waals forces only). HF is the anomaly.',
+                    '<strong>Cause of high bp:</strong> F is the most electronegative element. Its lone pairs are in the 2-level, extremely close to the nucleus — the most concentrated lone pairs of any element. This creates exceptionally strong hydrogen bonds between HF molecules, requiring much more energy to break → very high bp.',
+                    '<strong>HCl, HBr, HI are all strong acids</strong> (essentially fully ionised in water). <strong>HF is a weak acid</strong> — an important anomaly that requires the ion-pair model to explain properly.'
+                ]
+            },
+            terms: ['Hydrogen bonding', 'Weak acid', 'Strong acid']
+        },
+        {
+            id: 'callout-hf-weak-acid',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: 'WHY Is HF a Weak Acid? The Ion-Pair Model',
+                text: '<strong>Common misconception:</strong> "HF is weak because the H–F bond is too strong to break." This is wrong — the very high hydration enthalpy of the tiny F⁻ ion should more than compensate for the high H–F bond energy.<br/><br/><strong>Correct explanation — ion-pair model:</strong><br/>Step 1: HF + H₂O ⇌ H₃O⁺·F⁻ &nbsp;&nbsp;(position well to the RIGHT — ionisation occurs readily)<br/>Step 2: H₃O⁺·F⁻ ⇌ H₃O⁺(free) + F⁻(free) &nbsp;&nbsp;(position well to the LEFT — ion pair remains strongly associated)<br/><br/>The F⁻ ion is so small and so highly charged that it forms a very stable, tightly bound ion pair with H₃O⁺. Free H₃O⁺ ions are not released in large numbers → pH is higher than expected → HF behaves as a weak acid.'
+            },
+            terms: []
+        },
+        {
+            id: 'h-chlorine',
+            type: 'heading',
+            data: { text: 'Industrial Manufacture of Chlorine — Electrolysis of Brine', level: 2 },
+            terms: []
+        },
+        {
+            id: 'p-brine',
+            type: 'paragraph',
+            data: { text: 'Electrolysis of brine (concentrated NaCl(aq)) produces three commercially important products: chlorine (Cl₂) at the anode, hydrogen (H₂) at the cathode, and sodium hydroxide (NaOH) in the cathode compartment. Two industrial cell designs are used: the diaphragm cell and the membrane cell.' },
+            terms: []
+        },
+        {
+            id: 'callout-electrode-reactions',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Electrode Reactions in Brine Electrolysis',
+                text: '<strong>At the ANODE (titanium) — oxidation:</strong><br/>2Cl⁻(aq) − 2e⁻ → Cl₂(g)<br/>Contamination: 4OH⁻(aq) − 4e⁻ → 2H₂O(l) + O₂(g) also occurs → Cl₂ is contaminated with O₂. O₂ is removed by liquefying Cl₂ under pressure (Cl₂ condenses but O₂ remains gaseous).<br/><br/><strong>At the CATHODE (steel or nickel) — reduction:</strong><br/>2H⁺(aq) + 2e⁻ → H₂(g)<br/>Removal of H⁺ shifts the water equilibrium: H₂O ⇌ H⁺ + OH⁻ → OH⁻ accumulates → NaOH builds up on cathode side.<br/><br/><strong>Why separation matters:</strong> Cl₂ + H₂ is explosive. Cl₂ reacting with NaOH forms NaClO (bleach), contaminating the Cl₂ product.'
+            },
+            terms: ['Anode', 'Cathode', 'Electrolysis']
+        },
+        {
+            id: 'svg-cells',
+            type: 'svg',
+            data: {
+                caption: 'Schematic comparison of the diaphragm cell (left) and the membrane cell (right)',
+                svg: '<svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10"><text x="110" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Diaphragm Cell</text><rect x="10" y="22" width="200" height="175" rx="6" fill="#f8fafc" stroke="#94a3b8"/><rect x="20" y="45" width="80" height="140" rx="4" fill="#dbeafe"/><text x="60" y="78" text-anchor="middle" fill="#1d4ed8">ANODE</text><text x="60" y="93" text-anchor="middle" fill="#1d4ed8">(titanium)</text><text x="60" y="120" text-anchor="middle" fill="#1d4ed8">Cl₂ ↑</text><text x="60" y="155" text-anchor="middle" fill="#1d4ed8" font-size="9">brine in →</text><line x1="104" y1="45" x2="104" y2="185" stroke="#475569" stroke-width="2" stroke-dasharray="4,3"/><text x="104" y="37" text-anchor="middle" font-size="9" fill="#475569">porous diaphragm</text><rect x="110" y="45" width="90" height="140" rx="4" fill="#dcfce7"/><text x="155" y="78" text-anchor="middle" fill="#166534">CATHODE</text><text x="155" y="93" text-anchor="middle" fill="#166534">(steel)</text><text x="155" y="120" text-anchor="middle" fill="#166534">H₂ ↑</text><text x="155" y="145" text-anchor="middle" fill="#166534" font-size="9">NaOH(aq) dilute</text><text x="155" y="158" text-anchor="middle" fill="#166534" font-size="9">+ NaCl contamination</text><text x="370" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Membrane Cell</text><rect x="270" y="22" width="200" height="175" rx="6" fill="#f8fafc" stroke="#94a3b8"/><rect x="280" y="45" width="77" height="140" rx="4" fill="#dbeafe"/><text x="318" y="78" text-anchor="middle" fill="#1d4ed8">ANODE</text><text x="318" y="93" text-anchor="middle" fill="#1d4ed8">(titanium)</text><text x="318" y="120" text-anchor="middle" fill="#1d4ed8">Cl₂ ↑</text><text x="318" y="155" text-anchor="middle" fill="#1d4ed8" font-size="9">pure brine in →</text><rect x="359" y="45" width="6" height="140" fill="#6366f1"/><text x="362" y="37" text-anchor="middle" font-size="9" fill="#6366f1">membrane (Na⁺ only)</text><rect x="369" y="45" width="91" height="140" rx="4" fill="#dcfce7"/><text x="414" y="78" text-anchor="middle" fill="#166534">CATHODE</text><text x="414" y="93" text-anchor="middle" fill="#166534">(nickel)</text><text x="414" y="120" text-anchor="middle" fill="#166534">H₂ ↑</text><text x="414" y="145" text-anchor="middle" fill="#166534" font-size="9">NaOH(aq) pure</text><text x="414" y="158" text-anchor="middle" fill="#166534" font-size="9">~30% — no NaCl</text></svg>'
+            },
+            terms: []
+        },
+        {
+            id: 'table-cells',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Diaphragm cell versus membrane cell — key differences',
+                headers: ['Feature', 'Diaphragm Cell', 'Membrane Cell'],
+                rows: [
+                    ['Separator', 'Porous asbestos or polymer diaphragm — liquid can flow through', 'Polymer ion-exchange membrane — only Na⁺ passes; Cl⁻ is blocked'],
+                    ['Brine purity', 'Less critical', 'Must be highly pure — other cations contaminate NaOH product'],
+                    ['NaOH quality', 'Dilute; contaminated with NaCl', '~30% solution; pure (NaCl-free)'],
+                    ['NaCl removal', 'Evaporation — NaCl crystallises out; some residual NaCl always remains', 'Not needed — membrane prevents Cl⁻ from crossing to cathode side'],
+                    ['Cathode material', 'Steel', 'Nickel'],
+                    ['Notes', 'Older design; asbestos diaphragm is an environmental/health hazard', 'Modern preferred method; cleaner product; no asbestos'],
+                ]
+            },
+            terms: []
+        },
+        {
+            id: 'checklist-g7-7',
+            type: 'checklist',
+            data: {
+                items: [
+                    { text: 'State and explain the trend in reducing ability of halide ions (F⁻ < Cl⁻ < Br⁻ < I⁻).', checked: false },
+                    { text: 'Write ionic equations for Br⁻ and I⁻ reacting with conc. H₂SO₄ with oxidation state annotations.', checked: false },
+                    { text: 'List all observations for Br⁻ + conc. H₂SO₄ and I⁻ + conc. H₂SO₄.', checked: false },
+                    { text: 'Explain why HBr and HI cannot be made using conc. H₂SO₄; state the correct reagent (H₃PO₄).', checked: false },
+                    { text: 'Describe the AgNO₃ test procedure, including why HNO₃ is added first.', checked: false },
+                    { text: 'State ppt colours and Ksp values for AgCl, AgBr, AgI; state F⁻ gives no precipitate (AgF soluble).', checked: false },
+                    { text: 'Explain why AgCl dissolves in dilute NH₃ but AgI does not, using [Ag(NH₃)₂]⁺ and Ksp.', checked: false },
+                    { text: 'Explain why HF has a higher boiling point than HCl (hydrogen bonding, concentrated 2-level lone pairs).', checked: false },
+                    { text: 'Explain why HF is a weak acid using the ion-pair model (H₃O⁺·F⁻ stays associated).', checked: false },
+                    { text: 'Write the anode and cathode half-equations for brine electrolysis.', checked: false },
+                    { text: 'Compare the diaphragm cell and membrane cell (separator type, NaOH purity, NaCl contamination).', checked: false },
+                ]
+            },
+            terms: []
+        },
+        {
+            id: 'summary',
+            type: 'summary',
+            data: { text: 'Reducing ability: F⁻ < Cl⁻ < Br⁻ < I⁻ (I⁻ strongest — driven mainly by lattice enthalpy decrease). Conc. H₂SO₄: Cl⁻ → HCl only; Br⁻ → HBr + Br₂ + SO₂; I⁻ → HI + I₂ + S + SO₂ + H₂S. Use H₃PO₄, not H₂SO₄, to prepare HBr/HI. AgNO₃ test: acidify with HNO₃ first. Cl⁻ = white AgCl (dissolves in dilute NH₃); Br⁻ = cream AgBr (conc. NH₃); I⁻ = yellow AgI (insoluble in any NH₃); F⁻ = no ppt. Ksp and [Ag(NH₃)₂]⁺ explain differential solubility. HF: high bp (H-bonding from compact 2-level lone pairs on F); weak acid (H₃O⁺·F⁻ ion pair stays associated, few free H₃O⁺). Brine electrolysis: Cl₂ at anode (Ti), H₂ at cathode, NaOH builds on cathode side. Membrane cell gives purer NaOH (~30%, NaCl-free) vs dilute contaminated NaOH from diaphragm cell.' }
         }
     ],
     recall: {
         enabled: true,
         cues: [
-            { id: 'c1', blockId: 'p-acid', prompt: 'In terms of their reducing power, explain the difference in reactions when solid NaCl and solid KI are added to concentrated H₂SO₄.' },
-            { id: 'c2', blockId: 'table-acid', prompt: 'What gas is responsible for the "bad egg" smell when solid potassium iodide reacts with concentrated sulfuric acid, and what is the oxidation state of sulfur in it?' },
-            { id: 'c3', blockId: 'table-acid', prompt: 'State all five products formed when Potassium Iodide reacts with concentrated sulfuric acid.' },
-            { id: 'c4', blockId: 'callout-silvernitrate', prompt: 'Why is dilute nitric acid added BEFORE silver nitrate when testing for halide ions?' },
-            { id: 'c5', blockId: 'callout-silvernitrate', prompt: 'Why is the subsequent ammonia test necessary after observing the silver halide precipitates?' },
-            { id: 'c6', blockId: 'table-precipitates', prompt: 'A halide solution is tested with AgNO₃(aq) and forms a cream precipitate. Which reagent could you add to further confirm its identity, and what would you expect to see?' }
+            { id: 'c1', blockId: 'table-h2so4', prompt: 'State all the products and observations when solid potassium iodide reacts with concentrated sulfuric acid.' },
+            { id: 'c2', blockId: 'callout-ionic-eqs', prompt: 'Write the ionic equation for bromide ions reducing concentrated H₂SO₄. State the oxidation state change of sulfur.' },
+            { id: 'c3', blockId: 'callout-hbr-hi-h3po4', prompt: 'Why is conc. H₂SO₄ unsuitable for preparing HBr from KBr? What acid must be used instead, and why is it safe to use?' },
+            { id: 'c4', blockId: 'callout-silvernitrate', prompt: 'Why must dilute HNO₃ be added to the halide solution BEFORE adding silver nitrate in the halide test?' },
+            { id: 'c5', blockId: 'callout-ammonia-mechanism', prompt: 'Explain why AgCl dissolves in dilute NH₃ but AgI does not, using Ksp values and the [Ag(NH₃)₂]⁺ complex ion.' },
+            { id: 'c6', blockId: 'callout-hf-weak-acid', prompt: 'HF is a weak acid despite the high electronegativity of F. Explain this using the ion-pair (H₃O⁺·F⁻) model.' },
+            { id: 'c7', blockId: 'table-cells', prompt: 'What is the key difference between the separator in a diaphragm cell and a membrane cell, and how does this affect the purity of the NaOH produced?' },
         ],
-        summaryText: 'Solid salts with conc. H₂SO₄: Cl⁻ makes only HCl gas (steamy fumes, acid-base). Br⁻ and I⁻ are stronger reducing agents: Br⁻ reduces S(+6) down to SO₂ (+4). I⁻ is the strongest, reducing S(+6) to SO₂, S (0, yellow solid), and H₂S (-2, rotten egg smell). Aqueous halide test: Add dilute HNO₃, then AgNO₃. Cl⁻ = white ppt (dissolves in dilute NH₃). Br⁻ = cream ppt (dissolves only in conc. NH₃). I⁻ = yellow ppt (insoluble in any NH₃). Ammonia distinguishes between them objectively.',
+        summaryText: 'Reducing ability F⁻ < Cl⁻ < Br⁻ < I⁻ (lattice enthalpy most important factor). Conc. H₂SO₄: Cl⁻ → HCl; Br⁻ → HBr + Br₂ + SO₂ (H₂SO₄ + 2H⁺ + 2Br⁻ → Br₂ + SO₂ + 2H₂O); I⁻ → HI + I₂ + S + SO₂ + H₂S (H₂SO₄ + 8H⁺ + 8I⁻ → 4I₂ + H₂S + 4H₂O). Use H₃PO₄ for HBr/HI. AgNO₃: HNO₃ first; Cl⁻ white ppt/dilute NH₃; Br⁻ cream/conc NH₃; I⁻ yellow/no NH₃; F⁻ no ppt. [Ag(NH₃)₂]⁺ + Ksp explains NH₃ solubility. HF: strong H-bonds (2-level lone pairs) → high bp; ion-pair model → weak acid. Brine electrolysis: Cl₂ anode, H₂ cathode, NaOH cathode-side. Membrane cell: purer NaOH.',
         ready: false
     },
     evidence: []

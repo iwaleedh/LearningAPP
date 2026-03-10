@@ -138,6 +138,8 @@ export const chemistrySyllabus = {
                         'Halides with sulfuric acid',
                         'Fluorine and astatine predictions',
                         'Physical properties of Period 3 oxides',
+                        'Reactions of Period 3 oxides with water',
+                        'Properties of Period 3 hydroxides and oxyacids',
                     ],
                 },
                 {

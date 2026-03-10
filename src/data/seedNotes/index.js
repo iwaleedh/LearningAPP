@@ -502,6 +502,8 @@ import { note_chemistry_2_8_6 } from './chemistry/note_2_8_6.js';
 import { note_chemistry_2_8_7 } from './chemistry/note_2_8_7.js';
 import { note_chemistry_2_8_8 } from './chemistry/note_2_8_8.js';
 import { note_chemistry_2_8_9 } from './chemistry/note_2_8_9.js';
+import { note_chemistry_2_8_10 } from './chemistry/note_2_8_10.js';
+import { note_chemistry_2_8_11 } from './chemistry/note_2_8_11.js';
 
 // WCH12 — Topic 9: Kinetics & Equilibrium Intro
 import { note_chemistry_2_9_0 } from './chemistry/note_2_9_0.js';
@@ -554,6 +556,8 @@ export const seedNotes = {
     'chemistry:2:8:7': note_chemistry_2_8_7,
     'chemistry:2:8:8': note_chemistry_2_8_8,
     'chemistry:2:8:9': note_chemistry_2_8_9,
+    'chemistry:2:8:10': note_chemistry_2_8_10,
+    'chemistry:2:8:11': note_chemistry_2_8_11,
     'chemistry:2:9:0': note_chemistry_2_9_0,
     'chemistry:2:9:1': note_chemistry_2_9_1,
     'chemistry:2:9:2': note_chemistry_2_9_2,

@@ -494,8 +494,14 @@ export const note_chemistry_2_8_9 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Acid–Base Character of Period 3 Oxides',
-        text: '• <strong>Metallic oxides (Na₂O, MgO, Al₂O₃)</strong> are <strong>basic</strong> — react with acids to form salts + water. Na₂O and MgO dissolve in water to give alkaline solutions.<br>• <strong>SiO₂</strong> is <strong>weakly acidic</strong> — reacts with concentrated alkali (NaOH) but does not dissolve in water. SiO₂ + 2NaOH → Na₂SiO₃ + H₂O<br>• <strong>P₄O₁₀, SO₃, SO₂, Cl₂O, Cl₂O₇</strong> are all <strong>acidic oxides</strong> — dissolve in water to form acids; react with alkalis to form salts.<br>• <strong>Al₂O₃</strong> is <strong>amphoteric</strong> — reacts with both acids (Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O) and with alkalis (Al₂O₃ + 2NaOH + 3H₂O → 2NaAl(OH)₄)'
+        title: 'Acid–Base Character — Overview (Highest Oxides Only)',
+        text: 'Trend: <strong>strongly basic → amphoteric → weakly acidic → strongly acidic</strong><br><br>' +
+          '• <strong>Na₂O, MgO</strong> — basic; Na₂O + H₂O → 2NaOH (pH ~14); MgO reacts slowly with water → Mg(OH)₂<br>' +
+          '• <strong>Al₂O₃</strong> — amphoteric; reacts with HCl: Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O; reacts with hot conc NaOH: Al₂O₃ + 2NaOH + 3H₂O → 2NaAl(OH)₄<br>' +
+          '• <strong>SiO₂</strong> — weakly acidic; does NOT react with water; SiO₂ + 2NaOH → Na₂SiO₃ + H₂O (hot, conc)<br>' +
+          '• <strong>P₄O₁₀</strong> → H₃PO₄ (weak acid, pH ~1); <strong>SO₃</strong> → H₂SO₄ (strong, pH ~0); <strong>Cl₂O₇</strong> → HClO₄ (very strong)<br>' +
+          '• <strong>SO₂</strong> → H₂SO₃ (weak); <strong>Cl₂O</strong> → HClO (very weak, pKₐ 7.4)<br>' +
+          '<em>See subtopic "Reactions of Period 3 oxides with water" for full equations and explanations.</em>'
       }
     },
     {
@@ -518,7 +524,7 @@ export const note_chemistry_2_8_9 = {
       id: 'summary',
       type: 'summary',
       data: {
-        text: 'Period 3 oxide structures change left to right: <strong>giant ionic</strong> (Na₂O, MgO, Al₂O₃ — high mp, conduct when molten) → <strong>giant covalent</strong> (SiO₂ — high mp, never conducts) → <strong>molecular</strong> (P₄O₆/P₄O₁₀, SO₂/SO₃, Cl₂O/Cl₂O₇ — low mp, never conduct). Molecular oxides have low melting points due to weak van der Waals/dipole–dipole intermolecular forces. Acid–base character: basic (metal oxides) → amphoteric (Al₂O₃) → acidic (SiO₂ weakly; non-metal oxides strongly).'
+        text: 'Period 3 oxide structures change left to right: <strong>giant ionic</strong> (Na₂O, MgO, Al₂O₃ — high mp, conduct when molten) → <strong>giant covalent</strong> (SiO₂ — high mp, never conducts) → <strong>molecular</strong> (P₄O₆/P₄O₁₀, SO₂/SO₃, Cl₂O/Cl₂O₇ — low mp, never conduct). Molecular oxides have low melting points due to weak van der Waals/dipole–dipole intermolecular forces. Acid–base character: basic (metal oxides) → amphoteric (Al₂O₃) → weakly acidic (SiO₂) → acidic (non-metal oxides, increasing right). For detailed equations of these acid–base reactions, see the companion subtopic: <em>Reactions of Period 3 oxides with water</em>.'
       }
     }
   ],

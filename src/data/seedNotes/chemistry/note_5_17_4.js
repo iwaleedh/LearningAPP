@@ -75,8 +75,83 @@ export const note_chemistry_5_17_4 = {
       data: {
         text: '<strong>Common tetrahedral complexes:</strong><br/>' +
         '• [CuCl₄]²⁻ — yellow/green colour (preferred over octahedral when chloride is the ligand)<br/>' +
+        '• [CoCl₄]²⁻ — dark blue colour<br/>' +
         '• [ZnCl₄]²⁻ — colourless (d¹⁰, no colour)<br/>' +
         '• [MnO₄]⁻ — tetrahedral, purple colour, strong oxidising agent'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-tetrahedral-size',
+      data: {
+        style: 'key',
+        title: 'Why Cl⁻ Gives Tetrahedral, Not Octahedral, Complexes',
+        text: 'Cl⁻ ions are significantly larger than H₂O molecules. Around a central transition metal ion, only 4 Cl⁻ ions can fit — not 6. This steric restriction forces tetrahedral (CN=4) rather than octahedral (CN=6) geometry.\n• [CuCl₄]²⁻: CN = 4, tetrahedral, yellow/olive green\n• [CoCl₄]²⁻: CN = 4, tetrahedral, dark blue\n\nWith smaller ligands (H₂O, NH₃), 6 fit → CN = 6 → octahedral geometry. This is why adding excess water reverses [CoCl₄]²⁻ (blue) back to [Co(H₂O)₆]²⁺ (pink).'
+      }
+    },
+    {
+      type: 'svg',
+      id: 'svg-complex-shapes',
+      data: {
+        svg: `<svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;font-size:11px">
+  <text x="75" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Octahedral (CN=6)</text>
+  <circle cx="75" cy="100" r="13" fill="#6366f1"/>
+  <text x="75" y="104" text-anchor="middle" font-size="9" fill="white">M</text>
+  <line x1="75" y1="100" x2="32" y2="100" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="24" cy="100" r="9" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="24" y="103" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
+  <line x1="75" y1="100" x2="118" y2="100" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="126" cy="100" r="9" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="126" y="103" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
+  <line x1="75" y1="100" x2="75" y2="57" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="75" cy="49" r="9" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="75" y="52" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
+  <line x1="75" y1="100" x2="75" y2="143" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="75" cy="151" r="9" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="75" y="154" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
+  <polygon points="75,100 46,132 41,125" fill="#94a3b8"/>
+  <circle cx="37" cy="138" r="9" fill="#e0e7ff" stroke="#6366f1"/>
+  <text x="37" y="141" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
+  <line x1="75" y1="100" x2="105" y2="66" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,2"/>
+  <circle cx="112" cy="59" r="9" fill="#e0e7ff" stroke="#6366f1" stroke-dasharray="4,2"/>
+  <text x="112" y="62" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
+  <text x="75" y="182" text-anchor="middle" fill="#64748b">6 ligands · 90° angles</text>
+  <line x1="160" y1="25" x2="160" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="270" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Tetrahedral (CN=4)</text>
+  <circle cx="270" cy="100" r="13" fill="#6366f1"/>
+  <text x="270" y="104" text-anchor="middle" font-size="9" fill="white">M</text>
+  <line x1="270" y1="100" x2="228" y2="72" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="220" cy="67" r="9" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="220" y="70" text-anchor="middle" font-size="8" fill="#92400e">L</text>
+  <line x1="270" y1="100" x2="312" y2="72" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="320" cy="67" r="9" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="320" y="70" text-anchor="middle" font-size="8" fill="#92400e">L</text>
+  <line x1="270" y1="100" x2="240" y2="138" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,2"/>
+  <circle cx="232" cy="146" r="9" fill="#fef9c3" stroke="#ca8a04" stroke-dasharray="4,2"/>
+  <text x="232" y="149" text-anchor="middle" font-size="8" fill="#92400e">L</text>
+  <polygon points="270,100 302,136 296,140" fill="#94a3b8"/>
+  <circle cx="304" cy="144" r="9" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="304" y="147" text-anchor="middle" font-size="8" fill="#92400e">L</text>
+  <text x="270" y="182" text-anchor="middle" fill="#64748b">4 ligands · 109.5° angles</text>
+  <line x1="355" y1="25" x2="355" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="410" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Square Planar (CN=4)</text>
+  <circle cx="410" cy="100" r="13" fill="#6366f1"/>
+  <text x="410" y="104" text-anchor="middle" font-size="9" fill="white">M</text>
+  <line x1="410" y1="100" x2="372" y2="100" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="364" cy="100" r="9" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="364" y="103" text-anchor="middle" font-size="8" fill="#15803d">L</text>
+  <line x1="410" y1="100" x2="448" y2="100" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="456" cy="100" r="9" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="456" y="103" text-anchor="middle" font-size="8" fill="#15803d">L</text>
+  <line x1="410" y1="100" x2="410" y2="62" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="410" cy="54" r="9" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="410" y="57" text-anchor="middle" font-size="8" fill="#15803d">L</text>
+  <line x1="410" y1="100" x2="410" y2="138" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="410" cy="146" r="9" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="410" y="149" text-anchor="middle" font-size="8" fill="#15803d">L</text>
+  <text x="410" y="182" text-anchor="middle" fill="#64748b">4 ligands · 90° · same plane</text>
+</svg>`,
+        caption: 'Three common complex ion geometries. Octahedral (CN=6, 90° bond angles, most common); tetrahedral (CN=4, 109.5°, typical with large ligands like Cl⁻); square planar (CN=4, 90°, all ligands in one plane, typical of Pt²⁺, Pd²⁺).'
       }
     },
     {
@@ -139,6 +214,51 @@ export const note_chemistry_5_17_4 = {
         '• <strong>cis-isomer:</strong> The two H₂O ligands occupy adjacent positions (90° apart)<br/>' +
         '• <strong>trans-isomer:</strong> The two H₂O ligands occupy opposite positions (180° apart)<br/>' +
         'These are distinct isomers. The difference arises purely from spatial arrangement—no bonds are broken or formed in converting one to the other, making them geometric isomers.'
+      }
+    },
+    {
+      type: 'svg',
+      id: 'svg-cis-trans-pt',
+      data: {
+        svg: `<svg viewBox="0 0 340 205" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;font-size:11px">
+  <text x="170" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Geometric Isomers of Pt(NH₃)₂Cl₂ (Square Planar)</text>
+  <text x="85" y="38" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="bold">cis-isomer</text>
+  <text x="85" y="52" text-anchor="middle" font-size="9" fill="#475569">identical groups adjacent (90°)</text>
+  <circle cx="85" cy="115" r="12" fill="#6366f1"/>
+  <text x="85" y="119" text-anchor="middle" font-size="9" fill="white">Pt</text>
+  <line x1="85" y1="103" x2="85" y2="74" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="85" cy="65" r="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="85" y="68" text-anchor="middle" font-size="8" fill="#92400e">Cl</text>
+  <line x1="73" y1="115" x2="47" y2="115" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="38" cy="115" r="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="38" y="118" text-anchor="middle" font-size="8" fill="#92400e">Cl</text>
+  <line x1="85" y1="127" x2="85" y2="156" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="85" cy="165" r="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="85" y="168" text-anchor="middle" font-size="8" fill="#15803d">NH₃</text>
+  <line x1="97" y1="115" x2="123" y2="115" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="132" cy="115" r="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="132" y="118" text-anchor="middle" font-size="8" fill="#15803d">NH₃</text>
+  <text x="85" y="194" text-anchor="middle" font-size="9" fill="#16a34a">active anticancer drug</text>
+  <line x1="170" y1="32" x2="170" y2="185" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="255" y="38" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="bold">trans-isomer</text>
+  <text x="255" y="52" text-anchor="middle" font-size="9" fill="#475569">identical groups opposite (180°)</text>
+  <circle cx="255" cy="115" r="12" fill="#6366f1"/>
+  <text x="255" y="119" text-anchor="middle" font-size="9" fill="white">Pt</text>
+  <line x1="255" y1="103" x2="255" y2="74" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="255" cy="65" r="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="255" y="68" text-anchor="middle" font-size="8" fill="#92400e">Cl</text>
+  <line x1="255" y1="127" x2="255" y2="156" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="255" cy="165" r="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="255" y="168" text-anchor="middle" font-size="8" fill="#92400e">Cl</text>
+  <line x1="243" y1="115" x2="214" y2="115" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="205" cy="115" r="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="205" y="118" text-anchor="middle" font-size="8" fill="#15803d">NH₃</text>
+  <line x1="267" y1="115" x2="296" y2="115" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="305" cy="115" r="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="305" y="118" text-anchor="middle" font-size="8" fill="#15803d">NH₃</text>
+  <text x="255" y="194" text-anchor="middle" font-size="9" fill="#dc2626">biologically inactive</text>
+</svg>`,
+        caption: 'Cis and trans isomers of Pt(NH₃)₂Cl₂. In the cis form two identical groups are adjacent; in trans they are opposite. Only the cis-isomer (cisplatin) is an effective anticancer drug — geometry controls biological function.'
       }
     },
     {

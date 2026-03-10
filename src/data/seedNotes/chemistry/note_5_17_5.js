@@ -40,6 +40,47 @@ export const note_chemistry_5_17_5 = {
       }
     },
     {
+      type: 'svg',
+      id: 'svg-d-orbital-splitting',
+      data: {
+        svg: `<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;font-size:11px">
+  <text x="210" y="20" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e293b">D-Orbital Splitting in Octahedral Complex</text>
+  <text x="80" y="50" text-anchor="middle" fill="#475569">Isolated ion</text>
+  <text x="80" y="63" text-anchor="middle" font-size="9" fill="#64748b">(5 degenerate orbitals)</text>
+  <line x1="30" y1="140" x2="125" y2="140" stroke="#475569" stroke-width="2"/>
+  <line x1="30" y1="155" x2="125" y2="155" stroke="#475569" stroke-width="2"/>
+  <line x1="30" y1="170" x2="125" y2="170" stroke="#475569" stroke-width="2"/>
+  <line x1="30" y1="185" x2="125" y2="185" stroke="#475569" stroke-width="2"/>
+  <line x1="30" y1="200" x2="125" y2="200" stroke="#475569" stroke-width="2"/>
+  <text x="12" y="175" text-anchor="middle" font-size="9" fill="#64748b">d</text>
+  <path d="M 148 170 L 185 170" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="166" y="163" text-anchor="middle" font-size="9" fill="#94a3b8">6 ligands</text>
+  <text x="166" y="177" text-anchor="middle" font-size="9" fill="#94a3b8">coordinate</text>
+  <text x="310" y="50" text-anchor="middle" fill="#475569">In complex</text>
+  <text x="310" y="63" text-anchor="middle" font-size="9" fill="#64748b">(orbitals split into 2 groups)</text>
+  <text x="210" y="110" font-size="10" fill="#dc2626" font-weight="bold">eᵍ (2 orbitals — point at ligands)</text>
+  <line x1="240" y1="120" x2="380" y2="120" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="240" y1="137" x2="380" y2="137" stroke="#dc2626" stroke-width="2.5"/>
+  <path d="M 395 128 L 395 210" stroke="#7c3aed" stroke-width="2" marker-start="url(#arrowUp)" marker-end="url(#arrowDown)"/>
+  <text x="407" y="175" font-size="12" font-weight="bold" fill="#7c3aed">Δ</text>
+  <path d="M 310 215 Q 310 165 310 128" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowRight2)"/>
+  <text x="325" y="178" font-size="9" fill="#f59e0b">hν</text>
+  <text x="207" y="225" font-size="10" fill="#16a34a" font-weight="bold">t₂ᵍ (3 orbitals — point between ligands)</text>
+  <line x1="240" y1="205" x2="380" y2="205" stroke="#16a34a" stroke-width="2.5"/>
+  <line x1="240" y1="222" x2="380" y2="222" stroke="#16a34a" stroke-width="2.5"/>
+  <line x1="240" y1="239" x2="380" y2="239" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="210" y="260" text-anchor="middle" font-size="9" fill="#64748b">Electron absorbs visible light (energy = Δ) to jump from t₂ᵍ to eᵍ</text>
+  <defs>
+    <marker id="arrowRight" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,1 L7,4 L0,7 Z" fill="#94a3b8"/></marker>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="1" orient="auto"><path d="M1,7 L4,0 L7,7 Z" fill="#7c3aed"/></marker>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto"><path d="M1,0 L4,8 L7,0 Z" fill="#7c3aed"/></marker>
+    <marker id="arrowRight2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,1 L7,4 L0,7 Z" fill="#f59e0b"/></marker>
+  </defs>
+</svg>`,
+        caption: 'In an isolated ion all five d-orbitals are degenerate (same energy). When six ligands coordinate, they split the orbitals into two groups: eᵍ (2 orbitals, raised — point directly at ligands) and t₂ᵍ (3 orbitals, lowered — point between ligands). The energy gap Δ determines which wavelength of visible light is absorbed when an electron jumps from t₂ᵍ to eᵍ.'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-crystal-field-theory',
       data: { text: 'Crystal Field Theory (Qualitative)', level: 2 }
@@ -91,6 +132,35 @@ export const note_chemistry_5_17_5 = {
         style: 'tip',
         title: 'Weak vs Strong Field Ligands',
         text: 'Weak field ligands: cause small Δ → colours are lighter, complexes are high-spin<br/>Strong field ligands: cause large Δ → colours are deeper, complexes are low-spin<br/>This affects not only colour but also magnetic properties and stability.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-colourless-ions',
+      data: {
+        style: 'warning',
+        title: 'Why Some Complex Ions Are Colourless',
+        text: 'A complex is colourless if no d-d electron transition is possible:\n• d⁰ ions (e.g. Sc³⁺, Ti⁴⁺): NO d electrons to promote → no visible light absorbed → colourless\n• d¹⁰ ions (e.g. Zn²⁺, Cu⁺): d orbitals completely filled → NO vacancies for an electron to jump into → colourless\n• Non-transition metals (e.g. Al³⁺, Ca²⁺): no d electrons at all → colourless\n\nThis is why Zn²⁺ and Al³⁺ complexes/precipitates are always white or colourless, regardless of ligand.'
+      }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-hexaaqua-colours',
+      data: {
+        headers: ['Ion', 'd configuration', 'Colour of [M(H₂O)₆]ⁿ⁺ solution'],
+        rows: [
+          ['Ti³⁺', 'd¹', 'Purple/violet'],
+          ['V³⁺', 'd²', 'Green'],
+          ['Cr³⁺', 'd³', 'Violet-grey (often seen as green due to Cl⁻ ligand contamination)'],
+          ['Mn²⁺', 'd⁵', 'Very pale pink (almost colourless)'],
+          ['Fe²⁺', 'd⁶', 'Pale green'],
+          ['Fe³⁺', 'd⁵', 'True colour: very pale lilac; in solution: yellow/orange (from hydrolysis products)'],
+          ['Co²⁺', 'd⁷', 'Pink'],
+          ['Ni²⁺', 'd⁸', 'Green'],
+          ['Cu²⁺', 'd⁹', 'Pale blue'],
+          ['Zn²⁺', 'd¹⁰', 'Colourless (no d-d transitions possible)']
+        ],
+        caption: 'Approximate colours of common hexaaqua [M(H₂O)₆]ⁿ⁺ ions'
       }
     },
     {
