@@ -71,6 +71,15 @@ export const note_chemistry_5_16_3 = {
     { type: 'list', id: 'list-steps', data: { style: 'numbered', items: [ 'Identify anode (left, more negative E°) and cathode (right, more positive E°)', 'Write oxidation half-equation (anode, left side)', 'Write reduction half-equation (cathode, right side)', 'Balance electrons in both half-equations', 'Combine to give overall equation, cancelling electrons and spectator ions' ] } },
     { type: 'callout', id: 'callout-tip-1', data: { style: 'tip', title: 'Exam Tip: Inert Electrodes (Pt)', text: 'When both species in a half-reaction are in solution (e.g. Fe³⁺/Fe²⁺) or one is a gas (H⁺/H₂), there is no solid metal to act as electrode. Use a platinum (Pt) inert electrode.\n\nIn notation, Pt appears at the outer LEFT or outer RIGHT:\n  Pt | Fe²⁺(aq), Fe³⁺(aq) || ...   (comma = no phase boundary between dissolved ions)\n\nFor the hydrogen half-cell:\n  Pt | H₂(g) | H⁺(aq) || ... (two phase boundaries: Pt/gas and gas/solution)' } },
     { type: 'callout', id: 'callout-half-cell-examples', data: { style: 'worked', title: 'Half-Cell Notation Examples', text: 'Metal/ion half-cell (phase boundary between solid and solution):\n  Zn²⁺(aq) | Zn(s)         E° = −0.76 V\n  Mg²⁺(aq) | Mg(s)         E° = −2.37 V\n  Cu²⁺(aq) | Cu(s)         E° = +0.34 V\n\nTwo ions in solution (comma; no phase boundary between ions):\n  Pt | Fe³⁺(aq), Fe²⁺(aq)  (inert Pt electrode needed)\n\nHydrogen half-cell (two phase boundaries):\n  Pt | H₂(g) | H⁺(aq)      E° = 0.00 V (reference)' } },
+    {
+      type: 'callout',
+      id: 'callout-complex-notation',
+      data: {
+        style: 'tip',
+        title: 'Notation for Non-Metals & Complex Ions',
+        text: '• Non-Metal Gas / Ion: The gas is bubbled over Platinum. The species with lowest oxidation state goes nearer the electrode.\n  Example (Chlorine as anode): Pt | Cl⁻(aq) | Cl₂(g) ||\n  Example (Chlorine as cathode): || Cl₂(g) | Cl⁻(aq) | Pt\n\n• Complex Ions: When multiple ions AND H⁺ are present, they are separated by commas. Some conventions use square brackets to keep them tidy:\n  Pt | [Cr₂O₇²⁻(aq), H⁺(aq), Cr³⁺(aq)] || ...\n\nRemember: Pt must always remain on the far outside edge.',
+      },
+    },
     { type: 'checklist', id: 'checklist-1', data: { items: [ { text: 'I understand | (phase boundary) and || (salt bridge)', checked: false }, { text: 'I know: reduced forms go on the OUTSIDE of full cell notation', checked: false }, { text: 'I know: more positive E° goes on the RIGHT', checked: false }, { text: 'I know: SHE is always written on the LEFT when measuring E°', checked: false }, { text: 'I can write cell notation for metal/ion, ion/ion, and gas half-cells', checked: false }, { text: 'I know E°cell = E°(right) − E°(left), never changing signs', checked: false }, { text: 'I understand electrons flow through wires, ions through salt bridge', checked: false } ] } },
     // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
     {
@@ -92,6 +101,7 @@ export const note_chemistry_5_16_3 = {
     { id: 'cue-4', blockId: 'callout-sign-rule', prompt: 'Why must you NOT change the sign of E° when an electrode acts as anode?' },
     { id: 'cue-5', blockId: 'callout-she', prompt: 'Where is the SHE written when measuring standard electrode potentials? Give a rule and example.' },
     { id: 'cue-6', blockId: 'list-charge-flow', prompt: 'Distinguish between what flows through the wires and what flows through the salt bridge.' },
+    { id: 'cue-7', blockId: 'callout-complex-notation', prompt: 'How do you structure the IUPAC cell notation for reading a complex non-metal half cell like Potassium Dichromate, and what electrode goes on the outer edge?' },
   ], summaryText: 'Reduced forms on the outside. More positive E° on the right. SHE always on left. E°cell = E°(right) − E°(left); never change signs. Electrons through wires (−ve to +ve); ions through salt bridge. Zn(s) | Zn²⁺(aq) || Cu²⁺(aq) | Cu(s), E°cell = +1.10 V.', ready: false },
   evidence: [ { id: 'ev-1', title: 'IUPAC cell notation and diagrams', detail: 'Notation conventions, anode/cathode identification, writing and interpreting cell diagrams, E°cell calculation.', year: '2024', source: 'chemguide.co.uk', tags: ['cell notation', 'cell diagram', 'IUPAC', 'E°cell'] } ],
 };
