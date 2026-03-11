@@ -238,6 +238,39 @@ export const note_chemistry_4_14_5 = {
       }
     },
     {
+      id: 'h-alkaline-buffers',
+      type: 'heading',
+      data: { text: 'Alkaline Buffer Solutions', level: 2 }
+    },
+    {
+      id: 'p-alkaline-intro',
+      type: 'paragraph',
+      data: {
+        text: 'An alkaline buffer solution maintains a pH greater than 7. It is typically made by mixing a <strong>weak base</strong> with the <strong>salt of its conjugate acid</strong>. The most common example is a mixture of ammonia (NH₃) and ammonium chloride (NH₄Cl).'
+      }
+    },
+    {
+      id: 'list-alkaline-action',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>When acid is added (H⁺):</strong> The added H⁺ ions react with the weak base. <br/>NH₃ + H⁺ → NH₄⁺. Most of the H⁺ is removed.',
+          '<strong>When alkali is added (OH⁻):</strong> The added OH⁻ ions react with the conjugate acid (ammonium ions). <br/>NH₄⁺ + OH⁻ → NH₃ + H₂O. Most of the OH⁻ is removed.',
+          '<strong>How to calculate pH:</strong> The easiest method is to treat the ammonium ion as a weak acid: NH₄⁺ ⇌ NH₃ + H⁺. You use the Ka of NH₄⁺, and rearrange to find [H⁺] = Ka × ([NH₄⁺]/[NH₃]).'
+        ]
+      }
+    },
+    {
+      id: 'callout-alkaline-calc',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Worked: pH of an Alkaline Buffer',
+        text: '<strong>Q: Calculate the pH of a solution containing 0.100 mol dm⁻³ NH₃ and 0.050 mol dm⁻³ NH₄Cl. (Ka of NH₄⁺ = 5.62 × 10⁻¹⁰ mol dm⁻³).</strong><br/><br/>Step 1: Write the Ka expression for the conjugate acid.<br/>Ka = [H⁺][NH₃] / [NH₄⁺]<br/><br/>Step 2: Rearrange to find [H⁺].<br/>[H⁺] = Ka × ([NH₄⁺] / [NH₃])<br/><br/>Step 3: Plug in the values.<br/>[H⁺] = (5.62 × 10⁻¹⁰) × (0.050 / 0.100) = 2.81 × 10⁻¹⁰ mol dm⁻³<br/><br/>Step 4: Calculate pH.<br/>pH = −log(2.81 × 10⁻¹⁰) = <strong>9.55</strong>'
+      }
+    },
+    {
       id: 'h-blood-buffer',
       type: 'heading',
       data: { text: 'Biological Example: Blood pH Regulation', level: 2 }
@@ -358,9 +391,14 @@ export const note_chemistry_4_14_5 = {
         id: 'cue-7',
         blockId: 'list-food-buffers',
         prompt: 'What pH values prevent microorganism growth in food? How does protein content affect buffer capacity?'
+      },
+      {
+        id: 'cue-8',
+        blockId: 'list-alkaline-action',
+        prompt: 'What components make up an alkaline buffer? How does an ammonia/ammonium buffer react when an acid (H⁺) is added?'
       }
     ],
-    summaryText: 'Buffer minimises (not prevents) pH change. Acidic buffer: weak acid + conjugate base salt. Two exam types: acid+salt, partial neutralisation. [H⁺] = Ka × [acid]/[salt]. Blood pH 7.35–7.45: H₂CO₃/HCO₃⁻ at 20:1 ratio. Food: pH < 4.4 or > 9 prevents microbial growth. Buffer capacity increases with concentration and protein content.',
+    summaryText: 'Buffer minimises (not prevents) pH change. Acidic buffer: weak acid + conjugate base salt. Alkaline buffer: weak base + conjugate acid salt. Two exam types: acid+salt, partial neutralisation. [H⁺] = Ka × [acid]/[salt]. Blood pH 7.35–7.45: H₂CO₃/HCO₃⁻ at 20:1 ratio. Food: pH < 4.4 or > 9 prevents microbial growth. Buffer capacity increases with concentration and protein content.',
     ready: false
   },
   evidence: [
