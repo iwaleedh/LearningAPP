@@ -284,7 +284,9 @@ export const note_chemistry_5_17_5 = {
           { text: 'Stronger field ligands → larger Δ → deeper colour', checked: false },
           { text: 'Higher oxidation state → larger Δ → colour shifts', checked: false },
           { text: 'Different coordination number (4 vs 6) → different splitting → different colour', checked: false },
-          { text: 'UV-Vis spectrometry measures absorbance (A = log₁₀(I₀/I)) to find concentration via calibration curves', checked: false }
+          { text: 'UV-Vis spectrometry measures absorbance (A = log₁₀(I₀/I))', checked: false },
+          { text: 'Beer-Lambert Law (A = εcl) relates absorbance linearly to concentration for dilute solutions', checked: false },
+          { text: 'Calibration curves (Absorbance vs Concentration) are used to find unknown concentrations', checked: false }
         ]
       }
     },
@@ -313,10 +315,46 @@ export const note_chemistry_5_17_5 = {
       }
     },
     {
-      type: 'paragraph',
-      id: 'p-absorbance-curve',
+      type: 'heading',
+      id: 'h-beer-lambert',
+      data: { text: 'The Beer-Lambert Law & Concentration', level: 3 }
+    },
+    {
+      id: 'eq-beer-lambert',
+      type: 'equation',
       data: {
-        text: 'The output is a spectrum plotting <strong>Absorbance vs Wavelength</strong>. For coloured complexes, characteristic peaks occur in the visible region (380–740 nm). To find the concentration of an unknown solution, an absorbance reading is taken at the peak wavelength (where absorption is maximum) and compared to a <strong>calibration curve</strong> created from testing solutions of known concentrations. This directly relates absorbance to concentration.'
+        html: 'A = ε c l',
+        caption: 'The Beer-Lambert Law relates absorbance to concentration'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-beer-lambert',
+      data: {
+        text: 'The concentration of a coloured complex can be found using the <strong>Beer-Lambert Law</strong>. Here, <strong>A</strong> is the absorbance (log₁₀(I₀/I)), <strong>ε</strong> (epsilon) is the molar absorptivity (a constant indicating how strongly a compound absorbs light at a given wavelength), <strong>c</strong> is the concentration, and <strong>l</strong> is the path length of the sample cell (usually 1 cm).'
+      }
+    },
+    {
+      type: 'list',
+      id: 'list-calibration-curve',
+      data: {
+        style: 'numbered',
+        items: [
+          '<strong>Select wavelength:</strong> Standard solutions are tested to find the wavelength of maximum absorbance (λ<sub>max</sub>). This wavelength is used for all future measurements.',
+          '<strong>Make standard solutions:</strong> Prepare several solutions of the complex with accurately known concentrations.',
+          '<strong>Measure absorbance:</strong> Measure the absorbance of each standard solution at the chosen wavelength using the same cuvette.',
+          '<strong>Plot calibration curve:</strong> Plot Absorbance vs Concentration. The Beer-Lambert Law predicts a straight line through the origin for dilute solutions.',
+          '<strong>Find unknown:</strong> Measure the absorbance of the unknown solution and interpolate its concentration directly from the calibration curve.'
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-identifying-compounds',
+      data: {
+        style: 'tip',
+        title: '💬 Qualitative Analysis: Identifying Compounds',
+        text: 'In addition to finding concentrations, UV-Vis spectra can be used to identify unknown organic or inorganic compounds. By comparing the <strong>λ<sub>max</sub></strong> and <strong>molar absorptivity (ε)</strong> values of an unknown sample against a database of known structural features (chromophores), chemists can deduce the presence of specific conjugated systems or transition metal environments within the molecule.'
       }
     },
     // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
@@ -370,9 +408,14 @@ export const note_chemistry_5_17_5 = {
         id: 'cue-6',
         blockId: 'callout-double-beam',
         prompt: 'Describe the main components of a double-beam UV-Vis spectrometer and the purpose of the reference cell.'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'eq-beer-lambert',
+        prompt: 'State the Beer-Lambert Law and define all of its terms. How is a calibration curve used to find an unknown concentration?'
       }
     ],
-    summaryText: 'Transition metal complexes are coloured because ligands split d-orbitals; electrons absorb visible light to jump between levels; observed colour is complementary to absorbed. Spectrochemical series: I⁻ < Cl⁻ < H₂O < NH₃ < CN⁻. Four factors: (1) metal identity, (2) oxidation state (higher → larger Δ → deeper colour), (3) ligand (stronger field → larger Δ), (4) coordination number. UV-Vis spectrometry (A = log₁₀(I₀/I)) measures absorption peaks; absorbance is used with a calibration curve to find concentration.',
+    summaryText: 'Transition metal complexes are coloured because ligands split d-orbitals; electrons absorb visible light to jump between levels; observed colour is complementary to absorbed. Spectrochemical series: I⁻ < Cl⁻ < H₂O < NH₃ < CN⁻. Four factors: (1) metal identity, (2) oxidation state (higher → larger Δ → deeper colour), (3) ligand (stronger field → larger Δ), (4) coordination number. UV-Vis spectrometry (A = log₁₀(I₀/I)) measures absorption peaks; using the Beer-Lambert Law (A = εcl), absorbance is plotted on a calibration curve to find unknown concentrations.',
     ready: false
   },
   evidence: [
