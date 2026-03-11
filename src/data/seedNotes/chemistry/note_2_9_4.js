@@ -289,57 +289,25 @@ export const note_chemistry_2_9_4 = {
             terms: []
         },
         {
-            id: 'h-transition-states',
+            id: 'h-acid-catalysis',
             type: 'heading',
-            data: { text: 'Transition States vs Intermediates', level: 2 },
+            data: { text: 'Acid Catalysis in Organic Chemistry', level: 2 },
             terms: []
         },
         {
-            id: 'list-profile-features',
-            type: 'list',
-            data: {
-                style: 'bullet',
-                items: [
-                    'Many reactions do not just have a simple, single-hump energy profile.',
-                    'The shape depends on whether the reaction mechanism proceeds via a <strong>single transition state</strong> (one step) or an <strong>intermediate</strong> (multiple steps).'
-                ]
-            },
-            terms: []
-        },
-        {
-            id: 'callout-transition-intermediate',
-            type: 'callout',
-            data: {
-                style: 'key',
-                title: 'Definitions',
-                text: '<strong>Transition State:</strong> The arrangement of atoms at the exact top of the activation energy barrier. Bonds are half-broken and half-formed. It is entirely unstable and cannot be isolated.<br><br><strong>Intermediate:</strong> A chemical species formed during a multi-step reaction that has a real, albeit temporary, existence. It corresponds to a "dip" between two peaks on an energy profile.'
-            },
-            terms: []
-        },
-        {
-            id: 'table-ts-vs-intermediate',
+            id: 'table-acid-catalysts',
             type: 'comparisonTable',
             data: {
-                caption: 'Comparing Transition States and Intermediates',
-                headers: ['Feature', 'Transition State', 'Intermediate'],
+                caption: 'Important Examples of Acid Catalysts in Organic Reactions',
+                headers: ['Reaction', 'Reactants', 'Catalyst & Conditions', 'Phase / Type'],
                 rows: [
-                    ['<strong>Energy Profile Position</strong>', 'At a maximum (peak top)', 'At a local minimum (dip between peaks)'],
-                    ['<strong>Stability</strong>', 'Entirely unstable', 'Temporarily stable (though highly reactive)'],
-                    ['<strong>Detection</strong>', 'Cannot be isolated or detected', 'Can sometimes be detected or briefly isolated'],
-                    ['<strong>Reaction Example</strong>', 'S<sub>N</sub>2 nucleophilic substitution', 'S<sub>N</sub>1 nucleophilic substitution']
+                    ['Nitration of benzene', 'Benzene + Conc. Nitric acid ($HNO_3$)', 'Conc. sulfuric acid ($H_2SO_4$), < 50 °C', 'Homogeneous'],
+                    ['Hydration of ethene', 'Ethene + Steam ($H_2O$)', 'Solid silicon dioxide ($SiO_2$) coated with phosphoric(V) acid ($H_3PO_4$), 300 °C, 60-70 atm', 'Heterogeneous'],
+                    ['Esterification', 'Carboxylic acid + Alcohol', 'Conc. sulfuric acid ($H_2SO_4$) + Heat', 'Homogeneous'],
+                    ['Acid hydrolysis of esters', 'Ester + Water', 'Dilute acid (HCl or $H_2SO_4$) + Reflux', 'Homogeneous']
                 ]
             },
-            terms: []
-        },
-        {
-            id: 'callout-intermediate-peaks',
-            type: 'callout',
-            data: {
-                style: 'tip',
-                title: 'Interpreting Multi-Peak Profiles',
-                text: 'In a reaction with an intermediate (e.g. an S<sub>N</sub>1 pathway), the energy profile will have two peaks. The highest peak represents the <strong>Rate Determining Step</strong> (the slowest step), requiring the most activation energy.'
-            },
-            terms: []
+            terms: ['Esterification', 'Hydration', 'Nitration']
         }
     ],
     recall: {
@@ -351,7 +319,9 @@ export const note_chemistry_2_9_4 = {
             { id: 'c4', blockId: 'list-profiles', prompt: 'How does a catalyst affect the overall enthalpy change (ΔH) of a reaction?' },
             { id: 'c5', blockId: 'list-industry', prompt: 'Explain two economic advantages of using catalysts in large-scale industrial processes.' },
             { id: 'c6', blockId: 'table-catalyst-examples', prompt: 'Define the term "heterogeneous catalyst" and name the solid catalyst used in the Haber process.' },
-            { id: 'c7', blockId: 'table-ts-vs-intermediate', prompt: 'Distinguish between a transition state and a reaction intermediate in terms of stability and isolation.' }
+            { id: 'c7', blockId: 'table-ts-vs-intermediate', prompt: 'Distinguish between a transition state and a reaction intermediate in terms of stability and isolation.' },
+            { id: 'c8', blockId: 'table-acid-catalysts', prompt: 'Name the catalyst and conditions used for the hydration of ethene.' },
+            { id: 'c9', blockId: 'table-acid-catalysts', prompt: 'What acid catalyst is used for the esterification of carboxylic acids and alcohols, and is it homogeneous or heterogeneous?' }
         ],
         summaryText: 'Catalyst: increases rate without being used up by providing an alternative reaction route with a lower activation energy. It does not change the kinetic energy of particles or the overall ΔH. On a Maxwell-Boltzmann curve, the catalyst shifts the E_a line left, exponentially increasing the proportion of molecules with E ≥ E_a, yielding a higher frequency of successful collisions. In industry, they save money by allowing faster production at lower temperatures. Examples include Iron in the Haber process and V₂O₅ in the Contact process (both heterogeneous). The energy profile shape depends on mechanism: a single transition state (unstable top of peak) vs an intermediate (temporary stable dip between peaks).',
         ready: false
