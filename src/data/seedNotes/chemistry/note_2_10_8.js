@@ -8,14 +8,20 @@ export const note_chemistry_2_10_8 = {
         {
             id: 'objective',
             type: 'objective',
-            data: { text: 'Use fragmentation patterns from mass spectra to distinguish between different isomers and deduce the structure of organic compounds.' },
+            data: { text: 'Use fragmentation patterns from mass spectra to distinguish between different isomers and deduce the structure of organic compounds. Understand base peaks and how the stability of carbocations influences peak heights.' },
             terms: []
         },
         {
             id: 'h-fragments',
             type: 'heading',
-            data: { text: 'Common Fragment Ions', level: 2 },
+            data: { text: 'Common Fragment Ions and the Base Peak', level: 2 },
             terms: []
+        },
+        {
+            id: 'p-base-peak',
+            type: 'paragraph',
+            data: { text: 'When a molecular ion breaks apart into a positive ion and an uncharged free radical, only the positive ion is deflected and detected by the machine. The <strong>base peak</strong> is the tallest peak in the mass spectrum. It is usually assigned an arbitrary height of 100, and it represents the most common (and therefore most stable) fragment ion formed.' },
+            terms: ['Base peak', 'Free radical']
         },
         {
             id: 'table-fragments',
@@ -34,24 +40,30 @@ export const note_chemistry_2_10_8 = {
             terms: ['Fragment ion']
         },
         {
+            id: 'h-isomers',
+            type: 'heading',
+            data: { text: 'Distinguishing Isomers & Fragment Stability', level: 2 },
+            terms: []
+        },
+        {
             id: 'callout-isomers',
             type: 'callout',
             data: {
                 style: 'worked',
-                title: 'Distinguishing Isomers (Example 1)',
-                text: 'Pentane and 2-methylbutane both have the formula C₅H₁₂ (M_r = 72). Their molecular ion peaks will both be at m/z 72.<br/><br/>However, pentane (a straight chain) easily breaks into a propyl ion (m/z 43) and an ethyl ion (m/z 29).<br/>2-methylbutane (branched) will have a completely different fragmentation pattern due to its structure, perhaps featuring a massive peak at m/z 57 ([C₄H₉]⁺) from losing a single methyl group. The <strong>fragmentation pattern acts as a unique fingerprint</strong>.'
+                title: 'Distinguishing Isomers (Pentane vs 2-methylbutane)',
+                text: 'Both have the formula C₅H₁₂ (M_r = 72).<br/><br/><strong>Pentane (straight chain):</strong> Breaks easily into a propyl ion (m/z 43) and an ethyl ion (m/z 29).<br/><strong>2-methylbutane (branched):</strong> Has a completely different fragmentation pattern. It produces a massive peak at m/z 57 ([C₄H₉]⁺).<br/><br/><strong>Why? Stability of carbocations.</strong> The loss of a methyl group from 2-methylbutane produces a <em>secondary</em> carbocation, which is much more stable than the <em>primary</em> carbocations produced by breaking pure straight chains like pentane. Therefore, the peak for the more stable ion is dramatically taller.'
             },
-            terms: ['Fingerprint']
+            terms: ['Carbocation stability']
         },
         {
             id: 'callout-isomers2',
             type: 'callout',
             data: {
                 style: 'worked',
-                title: 'Distinguishing Isomers (Example 2: C₃H₆O)',
-                text: 'Propanal (an aldehyde) and propanone (a ketone) share the molecular formula C₃H₆O, yielding a molecular ion peak at m/z 58.<br/><br/>• <strong>Propanal (CH₃CH₂CHO)</strong> will exhibit a distinct peak at m/z 29 because it can lose the [CHO]⁺ fragment.<br/>• <strong>Propanone (CH₃COCH₃)</strong> cannot form a [CHO]⁺ fragment easily. Instead, it cleaves to form a prominent peak at m/z 43 due to the [CH₃CO]⁺ fragment.'
+                title: 'Example 2: Pentan-2-one vs Pentan-3-one',
+                text: 'Acylium ions (ions with a positive charge on the carbon of a C=O group, [RCO]⁺) are particularly stable and will often form the base peak.<br/><br/><strong>Pentan-2-one:</strong> Can split beside the C=O group to form [CH₃CO]⁺ (m/z 43) or [COCH₂CH₂CH₃]⁺ (m/z 71). Both will be strong peaks.<br/><strong>Pentan-3-one:</strong> Splitting either side of the central C=O group produces exactly the same very strong acylium ion fragment: [CH₃CH₂CO]⁺ (m/z 57).<br/><br/>Thus, pentan-3-one lacks the peaks at 43 and 71, and pentan-2-one lacks the peak at 57.'
             },
-            terms: []
+            terms: ['Acylium ion']
         },
         {
             id: 'h-isotopes',
@@ -81,13 +93,15 @@ export const note_chemistry_2_10_8 = {
     recall: {
         enabled: true,
         cues: [
+            { id: 'c-base', blockId: 'p-base-peak', prompt: 'What does the base peak in a mass spectrum represent?' },
             { id: 'c1', blockId: 'table-fragments', prompt: 'In a mass spectrum, what chemical group is most likely responsible for a fragment peak at m/z 15?' },
             { id: 'c2', blockId: 'table-fragments', prompt: 'Which fragment ion is likely responsible for a peak at m/z 29?' },
-            { id: 'c3', blockId: 'callout-isomers2', prompt: 'How could you use a mass spectrum to distinguish between propanal and propanone?' },
+            { id: 'c-isomers', blockId: 'callout-isomers', prompt: 'Explain why 2-methylbutane has a very tall peak at m/z 57 compared to its straight-chain isomer, pentane.' },
+            { id: 'c3', blockId: 'callout-isomers2', prompt: 'How could you use a mass spectrum to distinguish between pentan-2-one and pentan-3-one?' },
             { id: 'c4', blockId: 'list-isotopes', prompt: 'A mass spectrum shows two molecular ion peaks separated by 2 mass units, with the heavier peak being roughly one-third the height of the lighter peak. What element does the compound contain?' },
             { id: 'c5', blockId: 'list-isotopes', prompt: 'How can you identify the presence of a single Bromine atom in a molecule by looking at its mass spectrum?' }
         ],
-        summaryText: 'Molecules fragment in the mass spectrometer. Common fragment peaks: 15 ([CH₃]⁺), 29 ([C₂H₅]⁺ or [CHO]⁺), 43 ([C₃H₇]⁺ or [CH₃CO]⁺). The distinct fragmentation pattern acts as a fingerprint to distinguish between structural isomers that share the exact same M⁺ peak (e.g., propanone has an m/z 43 peak, while propanal has an m/z 29 peak). Halogens can be identified by characteristic isotopes: A 1:1 ratio of M and M+2 peaks indicates Bromine (⁷⁹Br, ⁸¹Br). A 3:1 ratio of M and M+2 indicates Chlorine (³⁵Cl, ³⁷Cl).',
+        summaryText: 'Molecules fragment in the mass spectrometer forming positive ions and uncharged radicals completely lost to the machine. The base peak (tallest peak) represents the most common/stable fragment. Carbocation stability (tertiary > secondary > primary) dictates peak height; e.g. 2-methylbutane strongly forms a secondary C₄H₉⁺ carbocation (m/z 57). Acylium ions ([RCO]⁺) are also very stable causing strong peaks for ketones (e.g. pentan-3-one forms a huge [CH₃CH₂CO]⁺ peak at 57, distinguishing it from pentan-2-one). Halogen isotopes are unique: 1:1 ratio of M/M+2 peaks indicates Bromine (⁷⁹Br/⁸¹Br); 3:1 ratio indicates Chlorine (³⁵Cl/³⁷Cl).',
         ready: false
     },
     evidence: []
