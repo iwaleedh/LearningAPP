@@ -42,6 +42,30 @@ export const note_chemistry_2_9_5 = {
             type: 'paragraph',
             data: { text: 'On a Rate vs Time graph for a reaching equilibrium, the forward rate starts high and decreases, while the reverse rate starts at zero and increases, until both curves merge into a single horizontal line. On a Concentration vs Time graph, the reactant concentrations decrease and product concentrations increase until all curves become perfectly horizontal (constant).' },
             terms: []
+        },
+        {
+            id: 'h-examples',
+            type: 'heading',
+            data: { text: 'Example: Iron and Steam', level: 2 },
+            terms: []
+        },
+        {
+            id: 'p-iron-steam',
+            type: 'paragraph',
+            data: { text: 'Consider the reaction of hot iron with steam: <br/><br/>$3Fe(s) + 4H_2O(g) \\rightleftharpoons Fe_3O_4(s) + 4H_2(g)$<br/><br/>If this takes place in an <strong>open system</strong> (where gases can escape), the hydrogen gas produced is swept away. Without the reverse reactants present together, the reverse reaction cannot occur, and it operates effectively as a one-way reaction to completion. <br/><br/>For dynamic equilibrium to be established, it MUST be in a <strong>closed system</strong> where no substances can enter or leave, meaning both the forward and back reactions can proceed continuously.' },
+            terms: []
+        },
+        {
+            id: 'h-position',
+            type: 'heading',
+            data: { text: 'Position of Equilibrium', level: 2 },
+            terms: []
+        },
+        {
+            id: 'p-position',
+            type: 'paragraph',
+            data: { text: 'The <strong>position of equilibrium</strong> describes the relative proportions of reactants and products in the equilibrium mixture.<br/><br/>• If the position of equilibrium "lies to the right", the mixture contains a higher proportion of products than reactants.<br/>• If it "lies to the left", the mixture contains a higher proportion of reactants.<br/><br/>Even though concentrations are constant at equilibrium, they are rarely equal. The conditions of the reaction (such as temperature or pressure) can be changed to shift the position of equilibrium in a desired direction.' },
+            terms: ['Position of equilibrium']
         }
     ],
     recall: {
@@ -49,9 +73,11 @@ export const note_chemistry_2_9_5 = {
         cues: [
             { id: 'c1', blockId: 'callout-reversible', prompt: 'What symbol is used to denote a reversible reaction in a chemical equation?' },
             { id: 'c2', blockId: 'callout-dynamic', prompt: 'State the two main conditions that must be true for a reaction to be described as being in a state of dynamic equilibrium.' },
-            { id: 'c3', blockId: 'callout-dynamic', prompt: 'In a dynamic equilibrium, do the concentrations of the reactants and products have to be equal? Explain.' }
+            { id: 'c3', blockId: 'callout-dynamic', prompt: 'In a dynamic equilibrium, do the concentrations of the reactants and products have to be equal? Explain.' },
+            { id: 'c4', blockId: 'p-iron-steam', prompt: 'Why must a reaction vessel be closed for a dynamic equilibrium to be established?' },
+            { id: 'c5', blockId: 'p-position', prompt: 'What does it mean if the "position of equilibrium lies to the right"?' }
         ],
-        summaryText: 'Reversible reactions (⇌) can go both forwards and backwards. In a closed system, they reach dynamic equilibrium. Key features: the rate of the forward reaction exactly equals the rate of the backward reaction, meaning the macroscopic concentrations of all species remain perfectly constant. The system is "dynamic" because both reactions are still continuously happening at a microscopic level.',
+        summaryText: 'Reversible reactions (⇌) can go both forwards and backwards. In a closed system (where no substances can enter or leave), they reach dynamic equilibrium. Key features: the rate of the forward reaction exactly equals the rate of the backward reaction, meaning the macroscopic concentrations of all species remain perfectly constant. The system is "dynamic" because both reactions are still continuously happening at a microscopic level. The *position of equilibrium* describes the relative proportions of products to reactants: if it lies to the right, products dominate.',
         ready: false
     },
     evidence: []
