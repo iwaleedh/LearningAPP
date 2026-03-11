@@ -103,6 +103,38 @@ export const note_chemistry_4_15_7 = {
       }
     },
     {
+      id: 'h-tlc-theory',
+      type: 'heading',
+      data: { text: 'How TLC Separates: Adsorption', level: 3 }
+    },
+    {
+      id: 'p-tlc-theory',
+      type: 'paragraph',
+      data: {
+        text: 'Unlike paper chromatography (which relies mainly on partition), TLC separates components via <strong>adsorption</strong>. The stationary phase (silica gel, SiO₂) has surface silicon atoms bonded to <strong>−OH groups</strong>. This makes the surface extremely polar. As the mobile phase (solvent) travels up the plate, compounds constantly swap between being dissolved in the liquid and being adsorbed (temporarily stuck) onto the solid silica surface.'
+      }
+    },
+    {
+      id: 'list-tlc-adsorption',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Polar components:</strong> Form strong hydrogen bonds or dipole-dipole attractions with the −OH groups on the silica. They are strongly adsorbed, spend less time in the mobile phase, travel slower, and have <strong>lower R_f values</strong>.',
+          '<strong>Non-polar components:</strong> Form only weak London dispersion forces with the silica. They are weakly adsorbed, stay dissolved in the mobile phase longer, travel faster, and have <strong>higher R_f values</strong>.'
+        ]
+      }
+    },
+    {
+      id: 'callout-tlc-uv',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '💬 Isolating Colourless Spots: Fluorescence & Ninhydrin',
+        text: 'Often, organic components (like amino acids) are colourless. Two main methods are used to find them:\n<br/><strong>1. UV Light:</strong> The silica plate contains a fluorescent substance that glows green/blue under UV. Organic spots mask this fluorescence, appearing as dark patches where you can circle them with a pencil.\n<br/><strong>2. Ninhydrin:</strong> Amino acid plates can be sprayed with ninhydrin solution. They react to form distinct purple/brown spots.'
+      }
+    },
+    {
       id: 'h-rf',
       type: 'heading',
       data: { text: 'Rf Value (Retention / Retardation Factor)', level: 3 }
@@ -451,6 +483,10 @@ export const note_chemistry_4_15_7 = {
         blockId: 'callout-stationary-paper',
         prompt: 'What is the stationary phase in paper chromatography? Why is this an exam trap, and what is the mobile phase?'
       },
+      { id: 'cue-tlc',
+        blockId: 'list-tlc-adsorption',
+        prompt: 'Explain the mechanism by which Thin Layer Chromatography (TLC) separates polar from non-polar molecules.'
+      },
       {
         id: 'cue-2',
         blockId: 'list-rf-rules',
@@ -477,7 +513,7 @@ export const note_chemistry_4_15_7 = {
         prompt: 'Describe GC-MS step by step. Why is coupling GC with MS more powerful than either technique alone? Give two applications.'
       }
     ],
-    summaryText: 'Chromatography: separated by differential affinity for stationary vs mobile phase. Paper: stationary = water in fibres; Rf = dist(spot)/dist(front), no units, < 1; pencil baseline; solvent below baseline. TLC: silica/alumina on plate. Column: gravity, silica, collect fractions. HPLC: high pressure, fine silica, UV detector, retention time. GC: inert carrier gas, coiled column in oven, vaporised samples; weaker attraction = shorter retention time. HRMS: H=1.0078, C=12.0000, N=14.0031, O=15.9949; accurate Mr to 4 d.p. GC-MS: GC separates, each enters MS individually, database matching. Anti-doping, forensics, pharmaceuticals.',
+    summaryText: 'Chromatography: separated by differential affinity for stationary vs mobile phase. Paper: stationary = water in fibres. TLC: silica/alumina on plate; separates via adsorption (polar molecules stick strongly via H-bonds, yielding lower Rf). Colourless spots found via UV/ninhydrin. Column: gravity, silica, collect fractions. HPLC: high pressure, fine silica, UV detector, retention time. GC: inert carrier gas, coiled column in oven, vaporised samples; weaker attraction = shorter retention time. HRMS: H=1.0078, C=12.0000, N=14.0031, O=15.9949; accurate Mr to 4 d.p. GC-MS: GC separates, each enters MS individually, database matching. Anti-doping, forensics, pharmaceuticals.',
     ready: false
   },
 
