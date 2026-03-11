@@ -201,6 +201,15 @@ export const note_chemistry_4_15_7 = {
       }
     },
     {
+      id: 'callout-column-elution',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Elution & Solvent Choice',
+        text: 'Washing a compound through the column using a solvent is known as **elution** (the solvent is the **eluent**). For mixtures containing polar and non-polar compounds, you can speed up the elution of strongly adsorbed compounds by **changing the solvent** partway through:\n\n1. Use a non-polar solvent first to quickly elute non-polar compounds (which do not adsorb strongly to the polar silica).\n2. Switch to a **more polar solvent** to elute polar compounds faster. The polar solvent **competes for space** on the silica, preventing the polar molecules from sticking, and exerts a **greater attraction** to physically pull them into solution.'
+      }
+    },
+    {
       id: 'h-hplc',
       type: 'heading',
       data: { text: 'High-Performance Liquid Chromatography (HPLC)', level: 2 }
@@ -486,6 +495,11 @@ export const note_chemistry_4_15_7 = {
       { id: 'cue-tlc',
         blockId: 'list-tlc-adsorption',
         prompt: 'Explain the mechanism by which Thin Layer Chromatography (TLC) separates polar from non-polar molecules.'
+      },
+      {
+        id: 'cue-column-elution',
+        blockId: 'callout-column-elution',
+        prompt: 'Explain what elution is and why you might change to a more polar solvent partway through column chromatography.'
       },
       {
         id: 'cue-2',
