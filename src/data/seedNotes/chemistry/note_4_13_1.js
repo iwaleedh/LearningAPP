@@ -157,6 +157,36 @@ export const note_chemistry_4_13_1 = {
       }
     },
     {
+      id: 'h-heterogeneous-kp',
+      type: 'heading',
+      data: { text: 'Homogeneous vs Heterogeneous Equilibria', level: 2 }
+    },
+    {
+      id: 'p-heterogeneous-kp',
+      type: 'paragraph',
+      data: {
+        text: 'A homogeneous gaseous equilibrium involves only components in the gaseous phase. For example, the Contact Process or Haber Process equilibria. A heterogeneous equilibrium involves gases in contact with solids or liquids. Just like with Kc, we do not include terms for solids or liquids in the Kp expression, because their concentration/vapor pressure is effectively constant and incorporated into the equilibrium constant.'
+      }
+    },
+    {
+      id: 'ex-hetero-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example: Heating Carbon with Steam',
+        text: 'Equation: C(s) + H₂O(g) ⇌ CO(g) + H₂(g)\n\nKp is exactly the same as if everything was gaseous, except you leave out the solid carbon.\n\nKp = <span class="nb-frac"><span class="nb-num">p(CO) × p(H₂)</span><span class="nb-den">p(H₂O)</span></span>'
+      }
+    },
+    {
+      id: 'ex-hetero-2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example: Heating Calcium Carbonate',
+        text: 'Equation: CaCO₃(s) ⇌ CaO(s) + CO₂(g)\n\nThis equilibrium only establishes in a closed system. The only non-solid component is carbon dioxide. That is all that remains in the Kp expression.\n\nKp = p(CO₂)'
+      }
+    },
+    {
       id: 'h-writing-kp',
       type: 'heading',
       data: { text: 'Writing Kp Expressions', level: 3 }
@@ -209,6 +239,11 @@ export const note_chemistry_4_13_1 = {
   recall: {
     enabled: true,
     cues: [
+      {
+        id: 'c-kp-hetero',
+        blockId: 'h-heterogeneous-kp',
+        prompt: 'Are solids or liquids included in Kp expressions?'
+      },
       {
         id: 'cue-1',
         blockId: 'eq-kp-general',
