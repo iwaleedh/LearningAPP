@@ -129,6 +129,41 @@ export const note_chemistry_4_11_7 = {
         text: '<strong>1. Plot</strong> ln(k) on y-axis and 1/T on x-axis (T must be in Kelvin!)<br/><strong>2. Draw</strong> a best-fit straight line through the data<br/><strong>3. Calculate gradient</strong> = Δ(ln k) / Δ(1/T) → this will be negative<br/><strong>4. Use</strong> gradient = −Eₐ/R → Eₐ = −(gradient) × R<br/><strong>5. Convert</strong> Eₐ from J mol⁻¹ to kJ mol⁻¹ (÷ 1000)<br/><br/>⚠️ Ea is ALWAYS given in J mol⁻¹ in the equation — convert any kJ data first!'
       },
       terms: []
+    },
+    // ── PROVING KINETIC RULES WITH MATH ────────────────────────────────────
+    {
+      id: 'h-exponential-factor',
+      type: 'heading',
+      data: { text: 'Using the Exponential Factor in Practice', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-exponential-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Because the pre-exponential factor (A) remains roughly constant over small temperature changes, we can calculate just the <strong>exponential fraction</strong> (e<sup>-E<sub>a</sub>/RT</sup>) to mathematically prove exactly how temperature and catalysts boost reaction rates.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-rule-of-10',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Proof: Why does rate double every 10°C?',
+        text: 'Assume a standard reaction where E<sub>a</sub> = 50,000 J mol⁻¹. Let\'s calculate the fraction of successful molecules at 20°C (293 K) and 30°C (303 K).<br><br><strong>At 293 K:</strong><br>Fraction = e<sup>-50000 / (8.31 × 293)</sup> ≈ <strong>1.21 × 10⁻⁹</strong><br><br><strong>At 303 K:</strong><br>Fraction = e<sup>-50000 / (8.31 × 303)</sup> ≈ <strong>2.38 × 10⁻⁹</strong><br><br>Notice that by raising the temperature by just 10 degrees, the fraction of molecules capable of reacting has <strong>nearly doubled</strong> (2.38 / 1.21 ≈ 1.97). This mathematically proves the famous kinetic "rule of thumb"!'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-catalyst-proof',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Proof: The massive impact of a catalyst',
+        text: 'What happens if we keep the temperature at 20°C (293 K), but introduce a catalyst that drops the activation energy from 50 kJ mol⁻¹ to just 25 kJ mol⁻¹?<br><br><strong>Uncatalysed (E<sub>a</sub> = 50,000 J mol⁻¹):</strong><br>Fraction = 1.21 × 10⁻⁹<br><br><strong>Catalysed (E<sub>a</sub> = 25,000 J mol⁻¹):</strong><br>Fraction = e<sup>-25000 / (8.31 × 293)</sup> ≈ <strong>3.48 × 10⁻⁵</strong><br><br>Because E<sub>a</sub> is located inside a negative exponent, dropping it by half increases the fraction of successful particles by a factor of nearly <strong>30,000 times!</strong>'
+      },
+      terms: []
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────
@@ -159,9 +194,14 @@ export const note_chemistry_4_11_7 = {
         id: 'cue-5',
         blockId: 'callout-arrhenius-steps',
         prompt: 'Why must temperature be in Kelvin when using the Arrhenius equation? (Explain the consequence of using °C)'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-rule-of-10',
+        prompt: 'In the Arrhenius equation, what specifically does the exponential term e^(−Eₐ/RT) mathematically represent?'
       }
     ],
-    summaryText: 'The Arrhenius equation k = A·e^(−Eₐ/RT) shows k increases exponentially with T. Taking ln: ln(k) = −(Eₐ/R)(1/T) + ln(A). Plotting ln(k) vs 1/T gives a straight line — gradient = −Eₐ/R, y-intercept = ln(A). Always use T in Kelvin and Eₐ in J mol⁻¹.',
+    summaryText: 'The Arrhenius equation k = A·e^(−Eₐ/RT) shows k increases exponentially with T. The exponential term calculates the exact fraction of molecules with enough energy to react. Taking ln: ln(k) = −(Eₐ/R)(1/T) + ln(A). Plotting ln(k) vs 1/T gives a straight line — gradient = −Eₐ/R, y-intercept = ln(A). Always use T in Kelvin and Eₐ in J mol⁻¹.',
     ready: false
   },
   evidence: []
