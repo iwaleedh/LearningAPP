@@ -122,6 +122,7 @@ export const chemistrySyllabus = {
                         'Predicting hydrogen bonding',
                         'Forces vs physical properties',
                         'Solvent choice factors',
+                        'Saturated vapour pressure',
                     ],
                 },
                 {

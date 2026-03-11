@@ -493,6 +493,7 @@ import { note_chemistry_2_7_3 } from './chemistry/note_2_7_3.js';
 import { note_chemistry_2_7_4 } from './chemistry/note_2_7_4.js';
 import { note_chemistry_2_7_5 } from './chemistry/note_2_7_5.js';
 import { note_chemistry_2_7_6 } from './chemistry/note_2_7_6.js';
+import { note_chemistry_2_7_7 } from './chemistry/note_2_7_7.js';
 
 // WCH12 — Topic 8: Redox & Groups 1, 2, 7
 import { note_chemistry_2_8_0 } from './chemistry/note_2_8_0.js';
@@ -549,6 +550,7 @@ export const seedNotes = {
     'chemistry:2:7:4': note_chemistry_2_7_4,
     'chemistry:2:7:5': note_chemistry_2_7_5,
     'chemistry:2:7:6': note_chemistry_2_7_6,
+    'chemistry:2:7:7': note_chemistry_2_7_7,
     'chemistry:2:8:0': note_chemistry_2_8_0,
     'chemistry:2:8:1': note_chemistry_2_8_1,
     'chemistry:2:8:2': note_chemistry_2_8_2,
