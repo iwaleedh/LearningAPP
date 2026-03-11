@@ -276,12 +276,11 @@ export const note_chemistry_4_15_7 = {
       data: {
         style: 'bullet',
         items: [
-          'System flow: carrier gas supply \u2192 injection port (sample vaporised) \u2192 coiled column in oven \u2192 detector \u2192 computer',
-          'Mobile phase: inert carrier gas (helium or nitrogen) \u2014 inert so it does NOT react with sample',
-          'Stationary phase: solid or liquid coated on the inside of a long coiled metal tube',
-          'Column is several metres long and coiled \u2014 this gives a longer path and more surface area for better separation',
-          'Entire column is inside a heated oven \u2014 temperature controlled to affect separation',
-          'Liquid samples can be injected: they are immediately vaporised at the injection port'
+          'System flow: carrier gas supply \u2192 heated injection port \u2192 coiled column in oven \u2192 detector \u2192 computer',
+          'Mobile phase: inert carrier gas (helium or nitrogen) \u2014 unreactive so it does not interact chemically with the sample',
+          'Stationary phase (Gas-Liquid Chromatography): a high boiling point liquid adsorbed onto a porous solid support (e.g. diatomaceous earth) packed into a coiled metal tube',
+          'Column is 1-4 metres long and coiled \u2014 this gives a longer path and fits inside a thermostatically controlled oven',
+          'Injection: very small liquid samples are injected via a rubber septum and immediately vaporised by the hot injection port'
         ]
       }
     },
@@ -291,12 +290,21 @@ export const note_chemistry_4_15_7 = {
       data: {
         style: 'bullet',
         items: [
-          'Retention time = time from injection until component is detected',
-          'The inert carrier gas does NOT attract the sample \u2014 separation is almost entirely by attraction to stationary phase',
-          'Weak attraction to stationary phase \u2192 shorter retention time (elutes first)',
-          'Strong attraction to stationary phase \u2192 longer retention time (elutes later)',
-          'Results: chromatogram with peaks at different retention times; one peak per component'
+          'Separation depends on how molecules partition themselves between the liquid stationary phase and the carrier gas',
+          'High boiling point \u2192 mostly condensed in the liquid phase \u2192 travels very slowly \u2192 long retention time',
+          'High solubility in the liquid phase \u2192 spends more time absorbed in the stationary phase \u2192 long retention time',
+          'Lower boiling point / lower solubility \u2192 spends more time in the carrier gas \u2192 shorter retention time',
+          'Results: a chromatogram plotting signal (peak) vs. retention time'
         ]
+      }
+    },
+    {
+      id: 'callout-gc-theory',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'GC Temperature Profile & Detection',
+        text: '**Column Temperature**: A low temperature gives great separation but takes forever. A high temperature is extremely fast but gives poorly separated peaks. **Solution**: Start the oven relatively cool and *gradually increase the temperature* under computer control to sequentially elute compounds of increasing "stickiness".\n\n**Detector (e.g. Flame Ionisation, FID)**: Organic compounds are burned in a hot hydrogen flame, producing ions and electrons that generate an electrical signal. The detector is kept in *an even hotter oven* than the column to ensure no compounds condense in the detector.'
       }
     },
     {
@@ -533,7 +541,12 @@ export const note_chemistry_4_15_7 = {
       {
         id: 'cue-4',
         blockId: 'list-gc-retention',
-        prompt: 'In GC, which component has the shortest retention time? Why does the inert carrier gas NOT contribute to separation?'
+        prompt: 'In Gas-Liquid Chromatography, what two properties (apart from temperature) cause a compound to have a LONG retention time?'
+      },
+      {
+        id: 'cue-gc-temp',
+        blockId: 'callout-gc-theory',
+        prompt: 'Why is the GC column temperature usually programmed to start cool and gradually increase? Why must the detector oven be even hotter?'
       },
       {
         id: 'cue-5',
