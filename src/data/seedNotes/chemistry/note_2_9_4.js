@@ -226,11 +226,11 @@ export const note_chemistry_2_9_4 = {
                 caption: 'Required Common Industrial Catalysts (Edexcel/A-Level)',
                 headers: ['Reaction / Process', 'Catalyst Used', 'Phase / Type'],
                 rows: [
-                    ['Decomposition of hydrogen peroxide', 'Manganese(IV) oxide ($MnO_2$)', 'Solid (Heterogeneous)'],
-                    ['Nitration of benzene', 'Concentrated Sulfuric Acid ($H_2SO_4$)', 'Liquid (Homogeneous)'],
-                    ['Haber Process (Ammonia $NH_3$)', 'Iron ($Fe$)', 'Solid (Heterogeneous)'],
-                    ['Contact Process (Sulfuric acid - $SO_2 \to SO_3$)', 'Vanadium(V) oxide ($V_2O_5$)', 'Solid (Heterogeneous)'],
-                    ['Hydrogenation of C=C double bonds (Margarine)', 'Nickel ($Ni$)', 'Solid (Heterogeneous)']
+                    ['Decomposition of hydrogen peroxide', 'Manganese(IV) oxide (MnO₂)', 'Solid (Heterogeneous)'],
+                    ['Nitration of benzene', 'Concentrated Sulfuric Acid (H₂SO₄)', 'Liquid (Homogeneous)'],
+                    ['Haber Process (Ammonia NH₃)', 'Iron (Fe)', 'Solid (Heterogeneous)'],
+                    ['Contact Process (Sulfuric acid - SO₂ → SO₃)', 'Vanadium(V) oxide (V₂O₅)', 'Solid (Heterogeneous)'],
+                    ['Hydrogenation of C=C double bonds (Margarine)', 'Nickel (Ni)', 'Solid (Heterogeneous)']
                 ]
             },
             terms: ['Heterogeneous catalyst', 'Haber process', 'Contact process']
