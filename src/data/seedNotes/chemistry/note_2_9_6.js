@@ -30,6 +30,30 @@ export const note_chemistry_2_9_6 = {
       terms: ["Le Chatelier's Principle", "Dynamic equilibrium"]
     },
     {
+      id: "h-applying-rules",
+      type: "heading",
+      data: { text: "Applying the Principle to Changing Conditions", level: 3 },
+      terms: []
+    },
+    {
+      id: "table-le-chat-rules",
+      type: "comparisonTable",
+      data: {
+        caption: "Summary of How Conditions Affect Equilibrium",
+        headers: ["Condition Changed", "Effect on Position of Equilibrium", "Reasoning (Le Chatelier)"],
+        rows: [
+          ["<strong>Increase Concentration</strong> (of a reactant)", "Shifts to the Right", "System attempts to decrease the concentration by converting more reactants into products."],
+          ["<strong>Decrease Concentration</strong> (of a product)", "Shifts to the Right", "System attempts to replace the removed product by converting more reactants."],
+          ["<strong>Increase Pressure</strong>", "Shifts to the side with <strong>fewer gas molecules</strong>", "System attempts to reduce the pressure by producing fewer molecules to collide with container walls."],
+          ["<strong>Decrease Pressure</strong>", "Shifts to the side with <strong>more gas molecules</strong>", "System attempts to increase the pressure by producing more molecules. <em>(No effect if moles of gas are equal on both sides)</em>."],
+          ["<strong>Increase Temperature</strong>", "Shifts in the <strong>Endothermic</strong> direction", "System attempts to absorb the excess heat added."],
+          ["<strong>Decrease Temperature</strong>", "Shifts in the <strong>Exothermic</strong> direction", "System attempts to generate heat to replace what was lost."],
+          ["<strong>Add a Catalyst</strong>", "<strong>No Shift</strong> (Position is unchanged)", "Catalysts speed up the forward and reverse reactions by the <strong>exact same proportion</strong>. They only decrease the time taken to <em>reach</em> equilibrium."]
+        ]
+      },
+      terms: []
+    },
+    {
       id: "h-methanol",
       type: "heading",
       data: { text: "Example 1: Synthesis of Methanol", level: 3 },
@@ -146,6 +170,9 @@ export const note_chemistry_2_9_6 = {
     enabled: true,
     cues: [
       { id: 'c1', blockId: 'callout-le-chat', prompt: 'State Le Chatelier’s principle.' },
+      { id: 'c1a', blockId: 'table-le-chat-rules', prompt: 'What effect does increasing the pressure have on the position of an equilibrium?' },
+      { id: 'c1b', blockId: 'table-le-chat-rules', prompt: 'Explain why adding a catalyst has NO effect on the position of equilibrium.' },
+      { id: 'c1c', blockId: 'table-le-chat-rules', prompt: 'If the forward reaction is exothermic, what happens to the position of equilibrium if the temperature is lowered?' },
       { id: 'c2', blockId: 'table-methanol', prompt: 'Explain why a temperature of 250°C is used in methanol synthesis rather than a lower temperature, even though the forward reaction is exothermic.' },
       { id: 'c3', blockId: 'table-ethanol', prompt: 'Explain why the pressure used in ethanol synthesis (60–70 atm) is not simply increased further to maximise yield.' },
       { id: 'c4', blockId: 'callout-graphs', prompt: 'If an equilibrium yield vs pressure graph shows that higher pressure gives higher yield, what can you deduce about the moles of gas in the reaction?' }
