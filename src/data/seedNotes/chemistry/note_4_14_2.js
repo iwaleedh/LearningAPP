@@ -73,6 +73,33 @@ export const note_chemistry_4_14_2 = {
       }
     },
     {
+      id: 'callout-kw-water',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '💡 Why is [H₂O] omitted?',
+        text: 'You may wonder why water isn\'t written on the bottom of the Kw expression as normal equilibrium constants do ([H⁺][OH⁻] / [H₂O]). So little of the water is ionized at any one time that its concentration remains virtually unchanged—effectively a constant. Kw is defined to avoid including this constant, combining it into Kw.'
+      }
+    },
+    {
+      id: 'callout-pkw',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '💡 pKw',
+        text: 'The relationship between Kw and pKw is exactly the same as that between [H⁺] and pH:\n\n<strong>pKw = −log₁₀(Kw)</strong>\n\nAt 25°C, where Kw = 1.00 × 10⁻¹⁴, pKw is 14.'
+      }
+    },
+    {
+      id: 'callout-le-chatelier-kw',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '🔥 Temperature & Le Chatelier\'s Principle',
+        text: 'The autoionization of water is an <strong>endothermic</strong> process. According to Le Chatelier\'s Principle, increasing the temperature will cause the equilibrium to shift to counter the change by absorbing extra heat (favouring the forward reaction). This produces more H⁺ and OH⁻ ions, meaning <strong>Kw increases as temperature increases</strong>.'
+      }
+    },
+    {
       id: 'tbl-kw-temperature',
       type: 'comparisonTable',
       data: {
@@ -299,9 +326,24 @@ export const note_chemistry_4_14_2 = {
         id: 'cue-6',
         blockId: 'callout-exam-ph-def',
         prompt: 'What is the most precise way to answer the exam question "Define pH"?'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'callout-kw-water',
+        prompt: 'Why is the concentration of water [H₂O] not included in the equilibrium expression for Kw?'
+      },
+      {
+        id: 'cue-8',
+        blockId: 'callout-pkw',
+        prompt: 'How is pKw calculated from Kw, and what is its value at 25°C?'
+      },
+      {
+        id: 'cue-9',
+        blockId: 'callout-le-chatelier-kw',
+        prompt: 'Using Le Chatelier\'s Principle, explain why Kw increases as temperature increases.'
       }
     ],
-    summaryText: 'pH = −log[H⁺]. Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C. pH + pOH = 14. Strong acid: [H⁺] = concentration. Strong base: [OH⁻] = n × concentration (n = OH⁻ per formula unit). pH < 7 is acidic, pH > 7 is basic.',
+    summaryText: 'pH = −log[H⁺]. Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C. pKw = −log₁₀(Kw). pH + pOH = 14. Autoionization of water is endothermic, so Kw increases with temperature. Strong acid: [H⁺] = concentration. Strong base: [OH⁻] = n × concentration (n = OH⁻ per formula unit). pH < 7 is acidic, pH > 7 is basic.',
     ready: false
   },
   evidence: [
