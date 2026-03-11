@@ -240,6 +240,7 @@ export const chemistrySyllabus = {
                         'Equilibrium and entropy links',
                         'Extent of reaction from K values',
                         'Solubility products (Ksp)',
+                        'Solubility product calculations',
                     ],
                 },
                 {
