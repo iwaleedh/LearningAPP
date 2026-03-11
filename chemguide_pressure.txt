@@ -1,0 +1,168 @@
+
+<html>
+<head>
+<title>The effect of pressure on rates of reaction</title>
+
+<meta name="description"
+content="Describes and explains the effect of changing the pressure of a gas on how fast reactions take place." />
+<meta name="keywords"
+content="rate, reaction, kinetics, pressure" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>THE EFFECT OF PRESSURE ON REACTION RATES</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page describes and explains the way that changing the pressure of a gas changes the rate of a reaction.</p>
+
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>The facts</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>What happens?</b></p>
+
+<p>Increasing the pressure on a reaction involving reacting gases increases the rate of reaction.  Changing the pressure on a reaction which involves only solids or liquids has no effect on the rate.</p>
+
+<p><b>An example</b></p>
+
+<p>In the manufacture of ammonia by the Haber Process, the rate of reaction between the hydrogen and the nitrogen is increased by the use of very high pressures.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="ammoniaeq.gif" width="229" height="15" /></p>
+
+<p>In fact, the main reason for using high pressures is to improve the percentage of ammonia in the equilibrium mixture, but there is a useful effect on rate of reaction as well.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you want to explore <a href="../../physmenu.html#top">equilibria</a> you will find the topic covered in a separate section of the site.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>The explanation</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>The relationship between pressure and concentration</b></p>
+
+<p>Increasing the pressure of a gas is exactly the same as increasing its concentration.  If you have a given mass of gas, the way you increase its pressure is to squeeze it into a smaller volume.  If you have the same mass in a smaller volume, then its concentration is higher.</p>
+
+<p>You can also show this relationship mathematically if you have come across the <b><i>ideal gas equation:</i></b></p> 
+
+<p align="center"><img src="pvnrt.gif" width="292" height="136" /></p>
+
+<p>Rearranging this gives:</p>
+
+<p align="center"><img src="pvnrt2.gif" width="294" height="115" /></p>
+
+<p>Because &quot;RT&quot; is constant as long as the temperature is constant, this shows that the pressure is directly proportional to the concentration.  If you double one, you will also double the other.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you should be able to do calculations involving the ideal gas equation, but aren't very happy about them, you might be interested in my <a href="../../book.html#top">chemistry calculations book</a>.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>The effect of increasing the pressure on the rate of reaction</b></p>
+
+<p><b><i>Collisions involving two particles</i></b></p>
+
+<p>The same argument applies whether the reaction involves collision between two different particles or two of the same particle.</p>
+
+<p>In order for any reaction to happen, those particles must first collide.  This is true whether both particles are in the gas state, or whether one is a gas and the other a solid.  If the pressure is higher, the chances of collision are greater.</p>
+
+<p align="center"><img src="gascollision.gif" width="310" height="392" /></p>
+
+<pre>
+
+</pre>
+<p><b><i>Reactions involving only one particle</i></b></p>
+
+<p>Things get more difficult to explain if you have reactions involving something happening to a single particle rather than being caused by a collision between two particles.  The relationship between pressure and rate is much more complicated and varies from reaction to reaction.  This is beyond A level.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>Up to May 2017, at this point I had a simplistic explanation here in terms of particle collisions and then, after 15 years of the page being on the web, someone pointed out that it was illogical!  I apologise for that.</p>
+
+<p>There are theories which show that even for unimolecular reactions (reactions only involving one molecule) collisions are necessary in order for molecules to gain activation energy.  If you want to know more about this, you will have to do chemistry to a higher level.  You could google it, but you will find explanations are at a high level and quite mathematical.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+
+</font>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>You will find questions about all the factors affecting rates of reaction on the page about catalysts at the end of this sequence of pages.</p>
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl> <font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<p><a href="../basicratesmenu.html#top"><b>To the rates of reaction menu . . .</b></a></p>
+<p><a href="../../physmenu.html#top"><b>To the Physical Chemistry menu . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<div align="center"><a href="../../book.html#top"><img src="../../advert.gif" width="456" height="46" border="0" /></a></div>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2002 (last modified May 2017)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

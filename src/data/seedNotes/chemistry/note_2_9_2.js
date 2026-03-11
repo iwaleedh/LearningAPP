@@ -103,20 +103,121 @@ export const note_chemistry_2_9_2 = {
             terms: []
         },
         {
-            id: 'p-pressure',
-            type: 'paragraph',
-            data: { text: 'Increasing the pressure of a reaction involving gases <strong>increases the rate of reaction</strong>. Changing the pressure of a gas is exactly the same concept as changing the concentration of a solution.' },
+            id: 'list-pressure-theory',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    'Increasing the pressure of a reaction involving gases <strong>increases the rate of reaction</strong>.',
+                    'For reactions involving only solids or liquids, changing pressure has virtually <strong>no effect</strong> on the rate.',
+                    'Changing the pressure of a gas operates identically to changing concentration. Higher pressure is achieved by compressing a gas into a <strong>smaller volume</strong>.',
+                    'This compresses the same mass of gas, resulting in <strong>more gas molecules per unit volume</strong>.',
+                    'Because they are more densely packed, the <strong>frequency of collisions</strong> increases.',
+                    'A higher frequency of collisions means a higher frequency of <em>successful</em> collisions, increasing the overall reaction rate.'
+                ]
+            },
+            terms: ['Frequency of collisions']
+        },
+        {
+            id: 'svg-pressure',
+            type: 'svg',
+            data: {
+                svg: `<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Piston gradient -->
+    <linearGradient id="gradPiston" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    
+    <!-- Gas particle gradient -->
+    <radialGradient id="gradGas" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </radialGradient>
+  </defs>
+
+  <!-- Title texts -->
+  <text x="200" y="30" font-family="-apple-system, sans-serif" font-size="18" fill="currentColor" text-anchor="middle" font-weight="bold">Low Pressure</text>
+  <text x="200" y="50" font-family="-apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Large volume, wide spacing</text>
+  
+  <text x="500" y="30" font-family="-apple-system, sans-serif" font-size="18" fill="currentColor" text-anchor="middle" font-weight="bold">High Pressure</text>
+  <text x="500" y="50" font-family="-apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Small volume, packed closely</text>
+
+  <!-- ================= LOW PRESSURE (LEFT) ================= -->
+  
+  <!-- Cylinder -->
+  <rect x="120" y="100" width="160" height="150" fill="none" stroke="#94a3b8" stroke-width="3" />
+  
+  <!-- Piston -->
+  <rect x="115" y="80" width="170" height="20" fill="url(#gradPiston)" stroke="#334155" stroke-width="2" rx="4" />
+  <!-- Piston Rod -->
+  <rect x="195" y="60" width="10" height="20" fill="#94a3b8" stroke="#334155" stroke-width="2" />
+  
+  <!-- Gas Particles (Low Density) -->
+  <circle cx="150" cy="130" r="10" fill="url(#gradGas)" />
+  <circle cx="230" cy="140" r="10" fill="url(#gradGas)" />
+  <circle cx="180" cy="180" r="10" fill="url(#gradGas)" />
+  <circle cx="140" cy="220" r="10" fill="url(#gradGas)" />
+  <circle cx="250" cy="200" r="10" fill="url(#gradGas)" />
+  <circle cx="210" cy="230" r="10" fill="url(#gradGas)" />
+  
+  <!-- Movement traces -->
+  <path d="M 160 135 L 195 145" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3" />
+  <path d="M 240 205 L 265 190" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,3" />
+
+  <!-- ================= HIGH PRESSURE (RIGHT) ================= -->
+  
+  <!-- Cylinder -->
+  <rect x="420" y="100" width="160" height="150" fill="none" stroke="#94a3b8" stroke-width="3" />
+  
+  <!-- Piston (Pushed deep down) -->
+  <rect x="415" y="150" width="170" height="20" fill="url(#gradPiston)" stroke="#334155" stroke-width="2" rx="4" />
+  <!-- Piston Rod -->
+  <rect x="495" y="60" width="10" height="90" fill="#94a3b8" stroke="#334155" stroke-width="2" />
+  
+  <!-- Big downward arrow to show high force -->
+  <path d="M 500 130 L 500 70" stroke="#ef4444" stroke-width="5" fill="none" />
+  <polygon points="492,130 508,130 500,145" fill="#ef4444" />
+  
+  <!-- Gas Particles (High Density, confined to bottom area) -->
+  <circle cx="450" cy="190" r="10" fill="url(#gradGas)" />
+  <circle cx="490" cy="180" r="10" fill="url(#gradGas)" />
+  <circle cx="540" cy="200" r="10" fill="url(#gradGas)" />
+  <circle cx="440" cy="225" r="10" fill="url(#gradGas)" />
+  <circle cx="480" cy="220" r="10" fill="url(#gradGas)" />
+  <circle cx="520" cy="230" r="10" fill="url(#gradGas)" />
+  
+  <!-- Collision sparks -->
+  <path d="M 465 185 L 475 185" stroke="#eab308" stroke-width="2" />
+  <path d="M 470 180 L 470 190" stroke="#eab308" stroke-width="2" />
+
+  <path d="M 455 215 L 465 220" stroke="#eab308" stroke-width="2" />
+  <path d="M 465 215 L 455 220" stroke="#eab308" stroke-width="2" />
+  
+</svg>`,
+                caption: 'Pushing the piston down increases pressure, crowding the same number of molecules into a smaller volume.'
+            },
             terms: []
         },
         {
-            id: 'callout-pressure',
+            id: 'equation-ideal-gas-derivation',
+            type: 'equation',
+            data: {
+                html: 'pV = nRT &nbsp;&nbsp;&rArr;&nbsp;&nbsp; p = <span class="nb-frac"><span class="nb-num">n</span><span class="nb-den">V</span></span>RT &nbsp;&nbsp;&rArr;&nbsp;&nbsp; p = cRT',
+                caption: 'Rearranging the ideal gas equation. Since concentration (c) is moles/volume (n/V), it shows pressure is directly proportional to concentration.'
+            },
+            terms: ['Ideal gas equation']
+        },
+        {
+            id: 'callout-pressure-example',
             type: 'callout',
             data: {
-                style: 'key',
-                title: 'Collision Theory Explanation: Pressure',
-                text: '1. Higher pressure (achieved by compressing the gas into a smaller volume) means there are <strong>more gas molecules per unit volume</strong>.<br/>2. The gas molecules are closer together.<br/>3. This leads to a <strong>higher frequency of collisions</strong>.<br/>4. This results in a higher frequency of successful collisions, increasing the rate.'
+                style: 'worked',
+                title: 'Real-world example: Haber Process',
+                text: 'In the manufacture of ammonia (N₂ + 3H₂ ⇌ 2NH₃), extremely high pressures (e.g., 200 atm) are used. While the primary reason is to shift the equilibrium position to the right (to favour product formation), the useful secondary effect is that the high pressure drastically increases the <strong>rate of reaction</strong> between the hydrogen and nitrogen gases.'
             },
-            terms: []
+            terms: ['Haber process']
         },
         {
             id: 'callout-warning',
@@ -260,8 +361,8 @@ export const note_chemistry_2_9_2 = {
     recall: {
         enabled: true,
         cues: [
-            { id: 'c1', blockId: 'callout-concentration', prompt: 'Use collision theory to explain why increasing the concentration of hydrochloric acid increases its rate of reaction with marble chips.' },
-            { id: 'c2', blockId: 'callout-pressure', prompt: 'Explain the effect of increasing gas pressure on the rate of reaction.' },
+            { id: 'c1', blockId: 'list-concentration-theory', prompt: 'Use collision theory to explain why increasing the concentration of hydrochloric acid increases its rate of reaction with marble chips.' },
+            { id: 'c2', blockId: 'list-pressure-theory', prompt: 'Explain the effect of increasing gas pressure on the rate of reaction.' },
             { id: 'c3', blockId: 'callout-warning', prompt: 'Does increasing the concentration increase the proportion of particles with energy greater than the activation energy? Explain.' },
             { id: 'c4', blockId: 'list-surface-theory', prompt: 'Explain why powdered zinc reacts much faster with acid than a single large lump of zinc of the same mass.' },
             { id: 'c4b', blockId: 'callout-surface-heap-exception', prompt: 'Why might a dense heap of magnesium powder burn slower than a thin strip of magnesium ribbon?' },
