@@ -218,6 +218,20 @@ export const note_chemistry_4_13_3 = {
       }
     },
     {
+      id: 'h-mole-fractions',
+      type: 'heading',
+      data: { text: 'Mathematical Proof of Pressure Shifts using Mole Fractions', level: 3 }
+    },
+    {
+      id: 'co-mole-fraction-proof',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Proof: N₂ + 3H₂ ⇌ 2NH₃',
+        text: 'This is an alternative way to prove why pressure shifts equilibrium without changing Kp.\n\nRecall that partial pressure $p = x \\times P$, where $x$ is the mole fraction and $P$ is total pressure.\n\nSubstitute into Kp:\n<ul><li>$K_p = \\frac{p(NH_3)^2}{p(N_2) \\times p(H_2)^3}$</li><li>$K_p = \\frac{(x_{NH_3}P)^2}{(x_{N_2}P) \\times (x_{H_2}P)^3}$</li><li>$K_p = \\frac{x_{NH_3}^2 \\times P^2}{x_{N_2} \\times x_{H_2}^3 \\times P^4}$</li><li>$K_p = \\frac{x_{NH_3}^2}{x_{N_2} \\times x_{H_2}^3} \\times \\frac{1}{P^2}$</li></ul>\nIf you increase total pressure $P$, the value of $\\frac{1}{P^2}$ decreases.\n\nBecause $K_p$ is a constant (temperature hasn\'t changed), the value of the mole fraction term $\\frac{x_{NH_3}^2}{x_{N_2} \\times x_{H_2}^3}$ MUST increase to compensate.\n\nTo increase this term, the numerator ($x_{NH_3}$) must increase and the denominator must decrease. This means the position of equilibrium shifts to the RIGHT, producing more ammonia, exactly as Le Chatelier\'s principle predicts!'
+      }
+    },
+    {
       id: 'checklist-chat',
       type: 'checklist',
       data: {
@@ -277,6 +291,11 @@ export const note_chemistry_4_13_3 = {
         id: 'cue-5',
         blockId: 'p-inert',
         prompt: 'Explain the difference between adding an inert gas at constant volume vs constant pressure.'
+      },
+      {
+        id: 'cue-mole-frac',
+        blockId: 'co-mole-fraction-proof',
+        prompt: 'Use mole fractions ($p = xP$) in the Kp expression for the Haber process to prove mathematically why an increase in total pressure shifts the position of equilibrium to the right.'
       }
     ],
     summaryText: 'Le Chatelier\'s principle predicts equilibrium shift. Concentration changes always shift equilibrium. Pressure affects equilibrium only if Δn ≠ 0; high P favours fewer moles. Catalysts do not shift equilibrium. K is constant (unless T changes).',
