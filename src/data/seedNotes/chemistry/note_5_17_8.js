@@ -80,6 +80,30 @@ export const note_chemistry_5_17_8 = {
       data: { text: 'Chromium Redox Reactions', level: 2 }
     },
     { type: 'callout', id: 'callout-chromate-dichromate', data: { style: 'key', title: 'CrO₄²⁻ ↔ Cr₂O₇²⁻ pH Equilibrium', text: 'These two Cr(VI) species interconvert via a pH-dependent equilibrium: 2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O. CrO₄²⁻ (chromate, yellow) is stable in alkaline (basic) conditions. Cr₂O₇²⁻ (dichromate, orange) is stable in acidic conditions. Add acid → yellow turns orange. Add alkali → orange turns yellow. This is NOT a redox change — Cr stays at +6 throughout. It is a condensation/hydrolysis equilibrium.' } },
+    {
+      type: 'svg',
+      id: 'svg-chromate-eq',
+      data: {
+        caption: 'Chromate/dichromate equilibrium based on pH',
+        svg: `<svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="background-color:var(--color-surface);border-radius:8px;">
+  <rect x="50" y="30" width="140" height="60" rx="4" fill="#FFD700" opacity="0.8" />
+  <rect x="310" y="30" width="140" height="60" rx="4" fill="#FF8C00" opacity="0.8" />
+  <text x="120" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">2CrO₄²⁻</text>
+  <text x="120" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">Chromate (Yellow)</text>
+  <text x="380" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Cr₂O₇²⁻ + H₂O</text>
+  <text x="380" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">Dichromate (Orange)</text>
+  <path d="M200 50 L300 50" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M300 70 L200 70" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="250" y="42" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">+ H⁺ (acid)</text>
+  <text x="250" y="88" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">+ OH⁻ (alkali)</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--color-text)" />
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
     { type: 'callout', id: 'callout-cr-zn-reduction', data: { style: 'worked', title: 'Zinc Reduction of Chromium: Cr⁶⁺ → Cr³⁺ → Cr²⁺', text: 'Add Zn to acidified Cr₂O₇²⁻ (orange, Cr⁶⁺). Step 1 — Cr⁶⁺ → Cr³⁺: orange solution turns green; E°cell is positive so feasible; Zn → Zn²⁺ (reducing agent). Step 2 — Cr³⁺ → Cr²⁺: green solution turns blue; E°cell is positive so feasible (E°(Cr³⁺/Cr²⁺) = −0.41 V, more positive than E°(Zn²⁺/Zn) = −0.76 V). Colour sequence: orange → green → blue. Zn cannot reduce Cr²⁺ to Cr (Cr²⁺/Cr = −0.91 V, more negative than Zn — not feasible).' } },
     {
       type: 'paragraph',
@@ -99,6 +123,18 @@ export const note_chemistry_5_17_8 = {
         'Oxidation: Cr³⁺ + 4OH⁻ → CrO₄²⁻ + 6H⁺ + 3e⁻ (actually: Cr³⁺ + 4OH⁻ → CrO₄²⁻ + 4H₂O + 3e⁻, net: CrO₄²⁻ + 3H₂O)<br/>' +
         'Reduction: H₂O₂ + 2e⁻ → 2OH⁻<br/>' +
         '<strong>Observation:</strong> Green Cr³⁺ solution + H₂O₂ + NaOH → yellow CrO₄²⁻ solution. This is a classic test for Cr³⁺.'
+      }
+    },
+    {
+      type: 'list',
+      id: 'list-dichromate-uses',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Testing for Chromate(VI):</strong> Adding BaCl₂ to a yellow chromate solution yields a yellow precipitate of BaCrO₄. Similarly, Pb(NO₃)₂ gives a yellow precipitate of PbCrO₄.',
+          '<strong>Dichromate in Organic Chemistry:</strong> Acidified K₂Cr₂O₇ (with H₂SO₄) is a standard oxidising agent. Primary alcohols are oxidised to aldehydes (with distillation) or carboxylic acids (with reflux). Secondary alcohols are oxidised to ketones. In both cases, orange Cr₂O₇²⁻ is reduced to green Cr³⁺.',
+          '<strong>Dichromate in Titrations:</strong> K₂Cr₂O₇ is a primary standard (stable, can be weighed accurately) and can be used to titrate Fe²⁺. Advantage over KMnO₄: can be used in the presence of Cl⁻ (does not oxidise Cl⁻ to Cl₂). Disadvantage: requires a redox indicator (like diphenylamine sulphonate, which turns violet-blue at the endpoint). Ratio: 1 mol Cr₂O₇²⁻ : 6 mol Fe²⁺.'
+        ]
       }
     },
     {
@@ -152,6 +188,18 @@ export const note_chemistry_5_17_8 = {
       }
     },
     {
+      type: 'list',
+      id: 'list-permanganate-uses',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Permanganate in Organic Chemistry:</strong> In neutral/alkaline conditions, KMnO₄ oxidises C=C double bonds to form a diol (testing for unsaturation; purple → colourless/brown). It also violently oxidises alkyl side-chains on aromatic rings (e.g., methylbenzene) directly to benzoic acid.',
+          '<strong>Permanganate in Titrations (Acidic):</strong> Used to titrate Fe²⁺, H₂O₂, and ethanedioic acid. Self-indicating (endpoint is the first permanent pale pink). MUST use dilute H₂SO₄ as the acid.',
+          '<strong>Limitations of KMnO₄:</strong> It is NOT a primary standard (slowly decomposes water to form brown MnO₂ in the bottle). It must perform standardisation against ethanedioic acid. You CANNOT use HCl to acidify it because MnO₄⁻ oxidises Cl⁻ to Cl₂ gas, ruining the titration.'
+        ]
+      }
+    },
+    {
       type: 'heading',
       id: 'h-disproportionation',
       data: { text: 'Disproportionation Reactions', level: 2 }
@@ -178,7 +226,34 @@ export const note_chemistry_5_17_8 = {
       }
     },
     {
+     
+      type: 'heading',
+      id: 'h-copper-iodine-redox',
+      data: { text: 'Copper(II) and Iodide Reaction', level: 2 }
+    },
+    {
       type: 'paragraph',
+      id: 'p-copper-iodine',
+      data: {
+        text: 'When Cu²⁺ ions react with I⁻ ions, a redox reaction occurs where Cu²⁺ oxidises I⁻ to iodine (I₂), and is itself reduced to an off-white precipitate of copper(I) iodide (CuI).<br/>' +
+        '<strong>Equation:</strong> 2Cu²⁺(aq) + 4I⁻(aq) → 2CuI(s) + I₂(aq)<br/>' +
+        '<strong>Observation:</strong> Blue Cu²⁺ solution + colourless I⁻ solution → brown solution containing I₂ with an off-white/pale-brown solid (CuI).'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-iodometric-titration',
+      data: {
+        style: 'worked',
+        title: 'Iodometric Titration for Copper',
+        text: 'This reaction is used analytically to determine the concentration of Cu²⁺ ions in an unknown sample:<br/>' +
+        '1. Add excess KI to the Cu²⁺ solution to liberate I₂.<br/>' +
+        '2. Titrate the liberated iodine with sodium thiosulfate (Na₂S₂O₃): 2S₂O₃²⁻ + I₂ → S₄O₆²⁻ + 2I⁻<br/>' +
+        '3. Add starch indicator near the endpoint. The iodine-starch complex is dark blue-black. At the endpoint, the blue-black colour sharply disappears, leaving the off-white CuI precipitate visible.<br/>' +
+        '<strong>Ratio:</strong> 2 mol Cu²⁺ libates 1 mol I₂; 1 mol I₂ reacts with 2 mol S₂O₃²⁻. Therefore, 1 mol Cu²⁺ ≡ 1 mol S₂O₃²⁻.'
+      }
+    },
+    { type: 'paragraph',
       id: 'p-sulphite-disproportionation',
       data: {
         text: '<strong>Example: Chlorine disproportionation (for comparison)</strong><br/>' +
@@ -211,7 +286,8 @@ export const note_chemistry_5_17_8 = {
           { text: 'Zn reduces Cr₂O₇²⁻: orange → green (Cr³⁺) → blue (Cr²⁺); both steps have positive E°cell', checked: false },
           { text: 'Vanadium with Zn: yellow(V⁵⁺) → blue(V⁴⁺) E°=+1.76 V → green(V³⁺) E°=+1.10 V → purple(V²⁺) E°=+0.50 V; stops at V²⁺', checked: false },
           { text: 'MnO₄⁻ by pH: acidic → Mn²⁺ (colourless); neutral → MnO₂ (brown); alkaline → MnO₄²⁻ (green)', checked: false },
-          { text: 'Disproportionation: 2Cu⁺ → Cu + Cu²⁺; same element simultaneously oxidised and reduced', checked: false }
+          { text: 'Disproportionation: 2Cu⁺ → Cu + Cu²⁺; same element simultaneously oxidised and reduced', checked: false },
+          { text: 'Copper/Iodide: 2Cu²⁺ + 4I⁻ → 2CuI(s) + I₂(aq); forms off-white ppt + brown solution', checked: false }
         ]
       }
     },

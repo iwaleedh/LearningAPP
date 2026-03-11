@@ -79,6 +79,39 @@ export const note_chemistry_5_17_2 = {
       }
     },
     {
+      type: 'svg',
+      id: 'svg-vanadium-colours',
+      data: {
+        caption: 'Vanadium oxidation states colour sequence',
+        svg: `<svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg" style="background-color:var(--color-surface);border-radius:8px;">
+  <rect x="50" y="30" width="100" height="60" rx="4" fill="#FFD700" opacity="0.8" />
+  <rect x="180" y="30" width="100" height="60" rx="4" fill="#4169E1" opacity="0.8" />
+  <rect x="310" y="30" width="100" height="60" rx="4" fill="#2E8B57" opacity="0.8" />
+  <rect x="440" y="30" width="100" height="60" rx="4" fill="#8A2BE2" opacity="0.8" />
+  <text x="100" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">+5</text>
+  <text x="100" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">VO₂⁺</text>
+  <text x="100" y="110" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">Yellow</text>
+  <text x="230" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFF">+4</text>
+  <text x="230" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#FFF">VO²⁺</text>
+  <text x="230" y="110" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">Blue</text>
+  <text x="360" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFF">+3</text>
+  <text x="360" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#FFF">V³⁺</text>
+  <text x="360" y="110" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">Green</text>
+  <text x="490" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFF">+2</text>
+  <text x="490" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#FFF">V²⁺</text>
+  <text x="490" y="110" font-family="sans-serif" font-size="12" text-anchor="middle" fill="var(--color-text)">Violet</text>
+  <path d="M155 60 L175 60" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M285 60 L305 60" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M415 60 L435 60" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="var(--color-text)" />
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       type: 'comparisonTable',
       id: 'table-vanadium',
       data: {
@@ -112,11 +145,29 @@ export const note_chemistry_5_17_2 = {
       type: 'paragraph',
       id: 'p-vanadate-reduction',
       data: {
-        text: 'When a vanadium(V) salt (containing VO₂⁺) is reduced by zinc:<br/>' +
+        text: 'When a vanadium(V) salt (containing VO₂⁺) is reduced by zinc in the laboratory:<br/>' +
         '1. <strong>First step:</strong> VO₂⁺ + 2H⁺ + e⁻ → VO²⁺ + H₂O (yellow → blue)<br/>' +
         '2. <strong>Second step:</strong> VO²⁺ + 2H⁺ + e⁻ → V³⁺ + H₂O (blue → green)<br/>' +
         '3. <strong>Third step:</strong> V³⁺ + e⁻ → V²⁺ (green → violet)<br/>' +
-        '<br/>Each reduction is stepwise, with intermediate oxidation states appearing sequentially as colour changes. Zinc acts as the reducing agent, being oxidised from Zn(0) to Zn²⁺.'
+        '<br/>The reaction is typically carried out using zinc amalgam or zinc granules in acidic solution (dilute H₂SO₄ or HCl). The flask is stoppered with a cotton wool plug to allow H₂ gas to escape whilst preventing air from entering and re-oxidising the products.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-vanadium-mixture',
+      data: {
+        style: 'warning',
+        title: 'Important Note: The "Green" Mixture',
+        text: 'During the first reduction step (+5 to +4), the solution temporarily appears green before turning blue. This initial green colour is NOT the V³⁺ oxidation state. It is simply a mixture of unreacted yellow VO₂⁺ and the newly formed blue VO²⁺.'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-vanadium-stability',
+      data: {
+        text: '<strong>Stability and other reducing agents:</strong><br/>' +
+        '• <strong>V²⁺ instability:</strong> The +2 state is very unstable. If exposed to air, it is rapidly re-oxidised back to green V³⁺. It is also slowly oxidised by H⁺ ions in the acid (V²⁺ + H⁺ → V³⁺ + ½H₂).<br/>' +
+        '• <strong>Using Tin (Sn):</strong> While Zn can reduce vanadium all the way down to +2, Sn is a weaker reducing agent (its E° is less negative). Sn can only reduce V⁵⁺ to V⁴⁺, and V⁴⁺ to V³⁺. It cannot overcome the negative E° required to reduce V³⁺ to V²⁺.'
       }
     },
     {
@@ -132,6 +183,31 @@ export const note_chemistry_5_17_2 = {
         '• <strong>Cu⁺</strong> ([Ar] 3d¹⁰): Colourless in solution (due to the stable d¹⁰ configuration with no unpaired d-electrons). Cu₂O (red) is a common example. Cu⁺ is actually more thermodynamically stable than Cu²⁺, but undergoes disproportionation in aqueous solution.' +
         '<br/>• <strong>Cu²⁺</strong> ([Ar] 3d⁹): Blue in aqueous solution (due to d-orbital splitting and absorption in the visible region). Forms compounds such as CuSO₄·5H₂O (blue crystals) and CuCl₂.<br/>' +
         'In solution, Cu⁺ → Cu + Cu²⁺ (disproportionation) due to hydration enthalpy favouring Cu²⁺.'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-copper-oxidation',
+      data: { text: 'Copper: +1 and +2 Oxidation States', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-copper-states',
+      data: {
+        text: 'Copper exhibits two oxidation states:<br/>' +
+        '• <strong>Cu⁺</strong> ([Ar] 3d¹⁰): Colourless in solution (due to the stable d¹⁰ configuration with no unpaired d-electrons). Cu₂O (red) is a common example. Cu⁺ is actually more thermodynamically stable than Cu²⁺, but undergoes disproportionation in aqueous solution.' +
+        '<br/>• <strong>Cu²⁺</strong> ([Ar] 3d⁹): Blue in aqueous solution (due to d-orbital splitting and absorption in the visible region). Forms compounds such as CuSO₄·5H₂O (blue crystals) and CuCl₂.<br/>' +
+        'In solution, Cu⁺ → Cu + Cu²⁺ (disproportionation) due to hydration enthalpy favouring Cu²⁺.'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-copper-stabilisation',
+      data: {
+        text: '<strong>Stabilising the Copper(I) State:</strong><br/>' +
+        'Because simple Cu⁺ ions disproportionate in water, Cu(I) compounds can only exist if they are stabilised. This is achieved in two ways:<br/>' +
+        '1. <strong>Insoluble compounds:</strong> Compounds that do not dissolve in water (e.g., CuI, CuCl, Cu₂O) keep the Cu⁺ out of solution, preventing disproportionation.<br/>' +
+        '2. <strong>Complex formation:</strong> Adding ligands to form stable complex ions (e.g., [Cu(NH₃)₂]⁺ or [CuCl₂]⁻) prevents disproportionation. For example, solid Cu₂O dissolves in concentrated HCl to form the stable [CuCl₂]⁻ complex ion.'
       }
     },
     {

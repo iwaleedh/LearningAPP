@@ -161,8 +161,20 @@ export const note_chemistry_5_17_7 = {
     },
     {
       type: 'heading',
+      id: 'h-hydrogenation',
+      data: { text: 'Example 3: Hydrogenation of Alkenes — Nickel Catalyst', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-hydrogenation-intro',
+      data: {
+        text: 'Nickel is used as a heterogeneous catalyst to add hydrogen across C=C double bonds. This reaction is widely used in the food industry to convert unsaturated liquid vegetable oils into solid saturated fats (margarine manufacture). The alkene and hydrogen gases adsorb onto the solid nickel surface (typically at 150°C), where the reaction occurs before the saturated alkane product desorbs.'
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-catalytic-converters',
-      data: { text: 'Example 3: Catalytic Converters — Pt and Rh', level: 2 }
+      data: { text: 'Example 4: Catalytic Converters — Pt and Rh', level: 2 }
     },
     {
       type: 'list',
