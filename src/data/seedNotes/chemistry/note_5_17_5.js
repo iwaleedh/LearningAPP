@@ -7,6 +7,57 @@ export const note_chemistry_5_17_5 = {
         text: 'Explain why transition metal complexes are coloured; understand d-orbital splitting by ligands (crystal field theory); use the spectrochemical series; predict how metal ion, oxidation state, ligand, and coordination number affect colour.'
       }
     },
+
+    // ════════════════════════════════════════════════════════════════════════
+    // SECTION 1 — ELECTROMAGNETIC RADIATION
+    // ════════════════════════════════════════════════════════════════════════
+    {
+      id: 'h-em-radiation',
+      type: 'heading',
+      data: { text: 'Electromagnetic Radiation & Properties of Light', level: 2 }
+    },
+    {
+      id: 'list-em-waves',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Light and other forms of radiation travel as <strong>electromagnetic waves</strong>',
+          '<strong>Wavelength (λ):</strong> The distance between two consecutive wave crests. Often measured in nanometres (nm = 10⁻⁹ m)',
+          '<strong>Frequency (ν):</strong> The number of wave crests passing a point per second. Measured in Hertz (Hz) or s⁻¹',
+          '<strong>Speed of light (c):</strong> All electromagnetic radiation travels at a constant speed in a vacuum (approx 3.00 × 10⁸ m s⁻¹)',
+          'Wavelength and frequency are <strong>inversely proportional</strong>. Higher frequency means shorter wavelength'
+        ]
+      }
+    },
+    {
+      id: 'callout-eq-wave',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '💡 Energy, Frequency, and Wavelength',
+        text: 'The fundamental equations linking light properties and photon energy are:\n\n<div style="text-align: center; margin: 10px 0;"><strong>c = λν</strong>    and    <strong>E = hν</strong></div>\n\nCombining these gives the most useful form for linking energy gaps to wavelength:\n<div style="text-align: center; margin: 10px 0; font-size: 1.1em; font-weight: bold;">E = hc / λ</div>\n\nWhere:\n• <strong>E</strong> = Energy of a photon (Joules)\n• <strong>h</strong> = Planck\'s constant (6.63 × 10⁻³⁴ J s)\n• <strong>c</strong> = Speed of light (3.0 × 10⁸ m s⁻¹)\n• <strong>λ</strong> = Wavelength (in metres)\n• <strong>ν</strong> = Frequency (Hz or s⁻¹)'
+      }
+    },
+    {
+      id: 'table-visible-spectrum',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Region', 'Wavelength (approx) nm', 'Energy / Frequency'],
+        rows: [
+          ['<strong>Ultraviolet (UV)</strong>', '< 380 nm', 'Highest Energy / Highest Frequency'],
+          ['<strong>Violet / Blue</strong>', '380 – 500 nm', 'High Energy'],
+          ['<strong>Green / Yellow</strong>', '500 – 590 nm', 'Medium Energy'],
+          ['<strong>Orange / Red</strong>', '590 – 740 nm', 'Low Energy'],
+          ['<strong>Infrared (IR)</strong>', '> 740 nm', 'Lowest Energy / Lowest Frequency']
+        ],
+        caption: 'The visible spectrum lies roughly between 380 nm (violet) and 740 nm (red). Notice that violet/blue light has a shorter wavelength and therefore higher relative energy than red light.'
+      }
+    },
+
+    // ════════════════════════════════════════════════════════════════════════
+    // SECTION 2 — WHY ARE TRANSITION METALS COLOURED?
+    // ════════════════════════════════════════════════════════════════════════
     {
       type: 'heading',
       id: 'h-why-coloured',
