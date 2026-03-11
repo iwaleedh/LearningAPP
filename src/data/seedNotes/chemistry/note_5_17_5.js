@@ -283,8 +283,40 @@ export const note_chemistry_5_17_5 = {
           { text: 'Spectrochemical series orders ligands from weak field (I⁻) to strong field (CN⁻)', checked: false },
           { text: 'Stronger field ligands → larger Δ → deeper colour', checked: false },
           { text: 'Higher oxidation state → larger Δ → colour shifts', checked: false },
-          { text: 'Different coordination number (4 vs 6) → different splitting → different colour', checked: false }
+          { text: 'Different coordination number (4 vs 6) → different splitting → different colour', checked: false },
+          { text: 'UV-Vis spectrometry measures absorbance (A = log₁₀(I₀/I)) to find concentration via calibration curves', checked: false }
         ]
+      }
+    },
+    // ════════════════════════════════════════════════════════════════════════
+    // SECTION 4 — APPLICATION: COLORIMETRY AND UV-VISIBLE SPECTROSCOPY
+    // ════════════════════════════════════════════════════════════════════════
+    {
+      type: 'heading',
+      id: 'h-uv-vis-spectrometry',
+      data: { text: 'Application: Colorimetry & UV-Visible Spectroscopy', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-uv-vis-intro',
+      data: {
+        text: 'The colour of transition metal complexes can be analysed quantitatively using a <strong>colorimeter</strong> or a <strong>UV-Vis Absorption Spectrometer</strong>. These instruments measure how much light of specific wavelengths is absorbed by a sample. By plotting absorbance against wavelength, we can find the exact energy gap (Δ) between d-orbitals. Furthermore, the amount of absorption at the peak wavelength depends on the concentration of the complex, allowing for quantitative analysis of dilute solutions.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-double-beam',
+      data: {
+        style: 'key',
+        title: '⚙️ How a Double-Beam Spectrometer Works',
+        text: '<strong>1. Light Source:</strong> A combination of a deuterium lamp (for UV) and a tungsten-halogen lamp (for visible light) provides a continuous spectrum (200 nm to 800 nm).<br/><br/><strong>2. Diffraction Grating:</strong> Splits the white light into individual wavelengths. A narrow slit allows only a tiny band of wavelengths through at a time.<br/><br/><strong>3. Rotating Disc & Beams:</strong> A rotating disc splits the monochromatic beam into two paths: one passing through the <strong>Sample Cell</strong> (containing the metal complex) and one through the <strong>Reference Cell</strong> (containing only the pure solvent).<br/><br/><strong>4. Detector:</strong> Compares the intensity of light passing through the reference (I₀) to the sample (I). The absorbance (A) is calculated using A = log₁₀(I₀/I). The reference cell ensures any stray absorption by the solvent or glass is cancelled out.'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-absorbance-curve',
+      data: {
+        text: 'The output is a spectrum plotting <strong>Absorbance vs Wavelength</strong>. For coloured complexes, characteristic peaks occur in the visible region (380–740 nm). To find the concentration of an unknown solution, an absorbance reading is taken at the peak wavelength (where absorption is maximum) and compared to a <strong>calibration curve</strong> created from testing solutions of known concentrations. This directly relates absorbance to concentration.'
       }
     },
     // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
@@ -333,9 +365,14 @@ export const note_chemistry_5_17_5 = {
         id: 'cue-5',
         blockId: 'p-example-copper',
         prompt: 'Explain why [Cu(H₂O)₆]²⁺ is pale blue while [Cu(NH₃)₄(H₂O)₂]²⁺ is deep blue.'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-double-beam',
+        prompt: 'Describe the main components of a double-beam UV-Vis spectrometer and the purpose of the reference cell.'
       }
     ],
-    summaryText: 'Transition metal complexes are coloured because ligands split d-orbitals; electrons absorb visible light to jump between levels; observed colour is complementary to absorbed. Spectrochemical series: I⁻ < Cl⁻ < H₂O < NH₃ < CN⁻. Four factors: (1) metal identity, (2) oxidation state (higher → larger Δ → deeper colour), (3) ligand (stronger field → larger Δ), (4) coordination number. H₂O is weak field (pale colour); NH₃ is stronger field (deeper colour).',
+    summaryText: 'Transition metal complexes are coloured because ligands split d-orbitals; electrons absorb visible light to jump between levels; observed colour is complementary to absorbed. Spectrochemical series: I⁻ < Cl⁻ < H₂O < NH₃ < CN⁻. Four factors: (1) metal identity, (2) oxidation state (higher → larger Δ → deeper colour), (3) ligand (stronger field → larger Δ), (4) coordination number. UV-Vis spectrometry (A = log₁₀(I₀/I)) measures absorption peaks; absorbance is used with a calibration curve to find concentration.',
     ready: false
   },
   evidence: [
