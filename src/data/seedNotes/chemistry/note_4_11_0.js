@@ -21,102 +21,87 @@ export const note_chemistry_4_11_0 = {
       terms: []
     },
     {
-      id: 'callout-rate',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Definition: Rate of Reaction',
-        text: 'The rate of a chemical reaction is defined as the <strong>change in concentration</strong> of a reactant or product per <strong>unit time</strong>. <br/><br/>The standard units for rate of reaction are <strong>mol dm⁻³ s⁻¹</strong>.'
-      },
-      terms: ['Rate of reaction']
-    },
-    {
-      id: 'p-rate-intro',
-      type: 'paragraph',
-      data: {
-        text: 'In Unit 2, you learned that increasing the concentration of reactants generally increases the rate of reaction. However, not all reactants affect the rate equally! To quantify exactly how much the concentration of a specific reactant affects the rate, we use <strong>Rate Equations</strong>.'
-      },
-      terms: []
-    },
-    // ── RATE EQUATIONS ─────────────────────────────────────────────────────
-    {
-      id: 'h-equation',
-      type: 'heading',
-      data: { text: 'The Rate Equation', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-equation-intro',
-      type: 'paragraph',
-      data: {
-        text: 'For a general reaction: <strong>A + B → Products</strong><br/>The rate equation takes the form:'
-      },
-      terms: []
-    },
-    {
-      id: 'eq-rate',
-      type: 'equation',
-      data: {
-        html: 'Rate = k[A]^m[B]^n',
-        caption: 'The general rate equation. The square brackets [ ] denote concentration in mol dm⁻³.'
-      },
-      terms: []
-    },
-    {
-      id: 'list-terms',
+      id: 'list-rate-intro',
       type: 'list',
       data: {
         style: 'bullet',
         items: [
-          '<strong>k</strong> = The Rate Constant. This is a constant value for a specific reaction at a specific temperature. (Changing the temperature changes k!).',
-          '<strong>m</strong> = The order of the reaction with respect to reactant A.',
-          '<strong>n</strong> = The order of the reaction with respect to reactant B.'
+          'For a formal mathematical look at rates, the rate is usually measured by looking at how fast the <strong>concentration of one of the reactants is falling</strong>.',
+          'Its standard units are <strong>mol dm⁻³ s⁻¹</strong> (moles per cubic decimetre per second).',
+          '<em>Example:</em> If the concentration of A is falling at a rate of 0.0040 mol dm⁻³ s⁻¹, this means every second the concentration falls by 0.0040 moles per cubic decimetre.'
         ]
       },
-      terms: ['Rate constant', 'Order of reaction']
+      terms: ['Rate of reaction']
     },
     {
-      id: 'warning-stoichiometry',
+      id: 'h-equation',
+      type: 'heading',
+      data: { text: 'Orders of Reaction and Rate Equations', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-experimental',
       type: 'callout',
       data: {
-        style: 'warning',
-        title: 'Critical Exam Rule: NEVER use the stoichiometric equation!',
-        text: 'The orders of reaction (m and n) <strong>CANNOT</strong> be deduced from the balanced chemical equation! For example, if the equation is 2H₂ + O₂ → 2H₂O, the order with respect to H₂ is not necessarily 2. <br/><br/><strong>Orders of reaction can ONLY be determined by experiment!</strong>'
+        style: 'key',
+        title: 'Crucial Rule: Experimental Only',
+        text: 'Orders of reaction are <strong>always found by doing experiments</strong>. You <em>cannot</em> deduce anything about the order of a reaction just by looking at the stoichiometric equation for the reaction.'
       },
       terms: []
     },
-    // ── ORDERS OF REACTION ─────────────────────────────────────────────────
     {
-      id: 'h-orders',
-      type: 'heading',
-      data: { text: 'Orders of Reaction', level: 2 },
-      terms: []
-    },
-    {
-      id: 'table-orders',
-      type: 'comparisonTable',
+      id: 'list-orders',
+      type: 'list',
       data: {
-        caption: 'The effect of reactant concentration on reaction rate',
-        headers: ['Order', 'Mathematical Meaning', 'Effect of Doubling Concentration [A]'],
-        rows: [
-          ['Zero Order (0)', 'Rate ∝ [A]⁰', 'Rate = k × (1). The rate is <strong>unaffected</strong>. Doubling [A] does nothing to the rate.'],
-          ['First Order (1)', 'Rate ∝ [A]¹', 'Rate = k × [A]. The rate is <strong>directly proportional</strong>. Doubling [A] doubles the rate (×2).'],
-          ['Second Order (2)', 'Rate ∝ [A]²', 'Rate = k × [A]². The rate is proportional to the square. Doubling [A] quadruples the rate (×4).']
+        style: 'bullet',
+        items: [
+          '<strong>First Order:</strong> The rate is <em>proportional</em> to the concentration. If you double [A], the rate doubles. If you quadruple [A], the rate goes up 4 times. Mathematically: Rate $\propto$ [A]¹',
+          '<strong>Second Order:</strong> The rate is proportional to the <em>square</em> of the concentration. If you double [A], the rate goes up 4 times (2²). If you triple [A], the rate increases 9 times (3²). Mathematically: Rate $\propto$ [A]²',
+          '<strong>Zero Order:</strong> The concentration does not affect the rate of reaction. Mathematically, [A]⁰ = 1, so the term mathematically disappears from the rate equation.'
         ]
       },
       terms: ['Zero order', 'First order', 'Second order']
     },
     {
-      id: 'bloom-overall',
+      id: 'eq-rate',
+      type: 'equation',
+      data: {
+        html: 'Rate = k[A]<sup>a</sup>[B]<sup>b</sup>',
+        caption: 'The general rate equation, where a and b are the orders of reaction.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-constant',
       type: 'callout',
       data: {
-        style: 'worked',
-        title: 'Overall Order',
-        text: 'The <strong>overall order of reaction</strong> is simply the sum of the individual orders.<br/><br/>If Rate = k[A]²[B]¹<br/>The reaction is second order with respect to A, first order with respect to B, and the <strong>overall order is 3</strong> (2 + 1).'
+        style: 'warning',
+        title: 'The Rate Constant (k)',
+        text: 'The rate constant is the proportionality constant ($k$) in the rate equation. Surprisingly, the rate constant isn\'t actually a true constant! It is only constant for a given reaction if you are <em>only</em> changing the concentration.<br/><br/>The value of $k$ <strong>varies if you change the temperature or if you add/change a catalyst</strong>.'
+      },
+      terms: ['Rate constant']
+    },
+    {
+      id: 'h-overall-order',
+      type: 'heading',
+      data: { text: 'Overall Order of Reaction', level: 2 },
+      terms: []
+    },
+    {
+      id: 'list-overall-order',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'The <strong>overall order of the reaction</strong> is found by adding up the individual orders.',
+          '<em>Example 1:</em> Rate = k[A][B]. First order with respect to A and B. Overall order = 1 + 1 = <strong>2</strong>.',
+          '<em>Example 2:</em> Rate = k[A]⁰[B]². Zero order with respect to A, second order with respect to B. Overall order = 0 + 2 = <strong>2</strong>.',
+          '<em>Example 3:</em> Rate = k[A]¹[B]⁰. First order w.r.t A, zero order w.r.t B. Overall order = 1 + 0 = <strong>1</strong>.'
+        ]
       },
       terms: ['Overall order']
     },
-    // ── DEDUCING FROM EXPERIMENTAL DATA ───────────────────────────────────
+    // ── DEDUCING FROM EXPERIMENTAL DATA ───────────────────────────────────────
     {
       id: 'h-deduce',
       type: 'heading',
@@ -196,17 +181,17 @@ export const note_chemistry_4_11_0 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'callout-rate',
+        blockId: 'list-rate-intro',
         prompt: 'Define the rate of a chemical reaction and state its standard units.'
       },
       {
         id: 'cue-2',
-        blockId: 'warning-stoichiometry',
+        blockId: 'callout-experimental',
         prompt: 'True or False: The order of a reaction can be deduced from the molar ratios in the balanced chemical equation.'
       },
       {
         id: 'cue-3',
-        blockId: 'table-orders',
+        blockId: 'list-orders',
         prompt: 'A reaction is second order with respect to reactant X. If [X] is tripled, by what factor does the rate change?'
       },
       {
