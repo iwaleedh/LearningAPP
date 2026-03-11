@@ -66,7 +66,8 @@ export const note_chemistry_2_10_2 = {
             { id: 'c1b', blockId: 'p-silvernitrate', prompt: 'Why is a water bath used instead of a Bunsen burner to heat the mixture in the CP5 hydrolysis experiment?' },
             { id: 'c2', blockId: 'callout-precipitates', prompt: 'How do you know when hydrolysis has successfully occurred during the silver nitrate rate experiment?' },
             { id: 'c3', blockId: 'table-trends', prompt: 'Which will hydrolyse faster: 1-chlorobutane or 1-iodobutane? Explain your reasoning.' },
-            { id: 'c4', blockId: 'table-trends', prompt: 'Which will hydrolyse faster: 1-bromobutane (primary) or 2-bromo-2-methylpropane (tertiary)?' }
+            { id: 'c4', blockId: 'table-trends', prompt: 'Which will hydrolyse faster: 1-bromobutane (primary) or 2-bromo-2-methylpropane (tertiary)?' },
+            { id: 'cue-fluoro', blockId: 'table-trends', prompt: 'Why are fluoroalkanes generally considered unreactive in nucleophilic substitution reactions?' }
         ],
         summaryText: 'To compare hydrolysis rates (CP5), add halogenoalkane to ethanol (solvent) and AgNO₃(aq), heated in a water bath (flammable), and time precipitate (AgX) formation. Trend 1: Iodoalkanes are fastest, then bromo, then chloro. This is entirely due to decreasing Bond Enthalpy (C-I is very weak; C-Cl is very strong). Bond polarity is irrelevant. Trend 2: Tertiary (3°) hydrolyse fastest, followed by 2°, then 1° because they use a faster SN1 mechanism.',
         ready: false

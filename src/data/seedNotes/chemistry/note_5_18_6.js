@@ -65,19 +65,59 @@ export const note_chemistry_5_18_6 = {
       }
     },
     {
+      id: 'h-reactions',
+      type: 'heading',
+      data: { text: 'Reactions of Aryl Halides', level: 2 }
+    },
+    {
+      id: 'p-nucleophilic-substitution',
+      type: 'paragraph',
+      data: {
+        text: 'The most important feature of aryl halides compared to alkyl halides (halogenoalkanes) is their **extreme unreactivity**. While primary and tertiary halogenoalkanes rapidly undergo nucleophilic substitution (S_N2 and S_N1) with nucleophiles like the hydroxide ion (OH⁻), simple aryl halides like chlorobenzene do not react with nucleophiles under normal laboratory conditions.'
+      }
+    },
+    {
       id: 'callout-reactivity',
       type: 'callout',
       data: {
         style: 'warning',
-        title: 'Unreactive to Nucleophiles',
-        text: 'Unlike halogenoalkanes, aryl halides are **unreactive towards nucleophilic substitution** under normal conditions. The delocalisation strengthens the C–X bond, making it too difficult to break. Additionally, the electron-rich pi cloud of the benzene ring actively repels approaching nucleophiles.'
+        title: 'Why Nucleophilic Substitution Fails',
+        text: 'Aryl halides are highly resistant to nucleophilic attack for two main reasons:\n\n1. **Bond Strength:** The delocalisation of an electron lone pair from the halogen atom into the benzene ring gives the carbon-halogen bond some partial double-bond character. This makes the C–X bond significantly stronger and more difficult to break than in a standard halogenoalkane.\n2. **Electron Repulsion:** The approaching nucleophile (like a negative hydroxide ion) is repelled by the high electron density of the delocalised pi cloud above and below the benzene ring.'
+      }
+    },
+    {
+      id: 'h-preparation',
+      type: 'heading',
+      data: { text: 'Preparation of Aryl Halides', level: 2 }
+    },
+    {
+      id: 'p-prep-general',
+      type: 'paragraph',
+      data: {
+        text: 'Chlorobenzene and bromobenzene are structurally made via **electrophilic aromatic substitution** of benzene. Benzene reacts with chlorine (Cl₂) or bromine (Br₂) at room temperature alongside a halogen carrier catalyst such as AlCl₃, AlBr₃, or iron filings (which react to form FeBr₃ _in situ_).'
+      }
+    },
+    {
+      id: 'p-prep-iodobenzene',
+      type: 'paragraph',
+      data: {
+        text: 'Iodobenzene is generally not made by direct substitution because the reaction is less feasible. Instead, it is commonly synthesized using a **benzenediazonium** compound.'
+      }
+    },
+    {
+      id: 'callout-prep-iodo',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Making Iodobenzene',
+        text: 'A cold aqueous solution of **benzenediazonium chloride** is mixed with **potassium iodide** (KI) solution. The diazonium ion reacts with the iodide ion, displacing nitrogen gas to form oily droplets of iodobenzene.\n\nEquation: C₆H₅N₂⁺ + I⁻ → C₆H₅I + N₂\nObservation: Effervescence (bubbling of N₂ gas) and the appearance of a dense, immiscible oily layer.'
       }
     },
     {
       id: 'summary-aryl-halides',
       type: 'summary',
       data: {
-        text: 'Aryl halides contain a halogen atom directly bonded to a benzene ring. One of the halogen\'s lone pairs overlaps and delocalises with the ring\'s pi system, giving the C–X bond partial double-bond character and strengthening it. This delocalisation, combined with the repulsive electronegative pi cloud, makes aryl halides heavily resistant to nucleophilic substitution. Physically, they are dense oily liquids that are insoluble in water; boiling points increase down the halogen group due to stronger London dispersion forces.'
+        text: 'Aryl halides contain a halogen atom directly bonded to a benzene ring. One of the halogen\'s lone pairs overlaps and delocalises with the ring\'s pi system, giving the C–X bond partial double-bond character and strengthening it. This delocalisation, combined with the repulsive electronegative pi cloud, makes aryl halides heavily resistant to nucleophilic substitution. Physically, they are dense oily liquids that are insoluble in water; boiling points increase down the halogen group due to stronger London dispersion forces. Chlorobenzene and bromobenzene are prepared via direct electrophilic substitution using halogen carriers as catalysts. Iodobenzene is specifically prepared by reacting ice-cold benzenediazonium chloride with potassium iodide.'
       }
     }
   ],
@@ -86,9 +126,10 @@ export const note_chemistry_5_18_6 = {
     cues: [
       { id: 'cue-1', blockId: 'callout-bonding', prompt: 'Why is the carbon-halogen bond in chlorobenzene stronger than in chloroalkanes?' },
       { id: 'cue-2', blockId: 'callout-reactivity', prompt: 'State two reasons why aryl halides do not undergo nucleophilic substitution under normal conditions.' },
-      { id: 'cue-3', blockId: 'list-physical', prompt: 'Explain the trend in boiling points for chlorobenzene, bromobenzene, and iodobenzene.' }
+      { id: 'cue-3', blockId: 'list-physical', prompt: 'Explain the trend in boiling points for chlorobenzene, bromobenzene, and iodobenzene.' },
+      { id: 'cue-4', blockId: 'callout-prep-iodo', prompt: 'Give the reagent and conditions required to convert benzenediazonium chloride into iodobenzene. Include an observation.' }
     ],
-    summaryText: 'C–X bond is stronger due to halogen lone pair partially delocalising into the benzene pi system (partial double-bond character). Unreactive to nucleophiles because the C–X bond is strong and the pi cloud repels the nucleophile. Boiling points increase with halogen size due to stronger London dispersion forces.',
+    summaryText: 'C–X bond is stronger due to halogen lone pair partially delocalising into the benzene pi system (partial double-bond character). Unreactive to nucleophiles because the C–X bond is strong and the pi cloud repels the nucleophile. Boiling points increase with halogen size due to stronger London dispersion forces. Iodobenzene is made by adding potassium iodide (KI) to benzenediazonium chloride → forms C₆H₅I and N₂ gas (effervescence occurs).',
     ready: false
   },
   evidence: [

@@ -54,9 +54,19 @@ export const note_chemistry_2_10_3 = {
             data: {
                 style: 'key',
                 title: 'Reaction with Cyanide Ions (-CN)',
-                text: 'Heating a halogenoalkane under reflux with a solution of potassium cyanide (KCN) in <strong>ethanol</strong> produces a <strong>nitrile</strong>.<br/><br/>• <strong>Chain Lengthening:</strong> This is synthetically very useful because it <strong>increases the carbon chain length by 1</strong> (e.g. 1-bromopropane → butanenitrile).<br/>• <strong>Solvent Importance:</strong> The solvent must be pure ethanol. If water is present, the cyanide ions interact with water to form hydroxide ions (OH⁻), causing a competing nucleophilic substitution reaction that yields an alcohol instead.'
+                text: 'Heating a halogenoalkane under reflux with a solution of potassium cyanide (KCN) in <strong>ethanol</strong> produces a <strong>nitrile</strong>.<br/><br/>• <strong>Chain Lengthening:</strong> This is synthetically very useful because it <strong>increases the carbon chain length by 1</strong> (e.g. 1-bromopropane → butanenitrile).<br/>• <strong>Solvent Importance:</strong> The solvent must be pure ethanol. A solution of potassium cyanide in water is quite alkaline and contains significant amounts of hydroxide ions (OH⁻). These would react with the halogenoalkane to yield an alcohol instead.'
             },
             terms: ['Nitrile', 'Reflux', 'Chain lengthening']
+        },
+        {
+            id: 'callout-cyanide-naming',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: 'Watch Out: Naming Nitriles',
+                text: 'When naming the nitrile product, you <strong>must include the carbon in the -CN group</strong> when counting the longest carbon chain. For example, reacting bromoethane (2 carbons) with KCN produces <strong>propanenitrile</strong> (3 carbons), not ethanenitrile!'
+            },
+            terms: ['Nomenclature']
         },
         {
             id: 'callout-ammonia-products',
@@ -87,20 +97,47 @@ export const note_chemistry_2_10_3 = {
             terms: ['SN2', 'Transition state']
         },
         {
+            id: 'p-sn-secondary',
+            type: 'paragraph',
+            data: { text: '<strong>Secondary Halogenoalkanes:</strong> Undergo nucleophilic substitution via <strong>both</strong> S<sub>N</sub>1 and S<sub>N</sub>2 mechanisms simultaneously. Depending on specific reaction conditions and the halogen involved, one may be slightly favoured over the other, but both pathways are always active.' },
+            terms: []
+        },
+        {
+            id: 'callout-water',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Mechanism with Water (Nu: H₂O)',
+                text: 'Unlike OH⁻, a water molecule is neutral, making it a weaker nucleophile. However, it can still substitute the halogen atom using one of the lone pairs on oxygen.<br/><br/><strong>Key Difference - The Extra Step:</strong><br/>1. The nucleophilic attack happens via SN1 or SN2 depending on the halogenoalkane.<br/>2. When water attacks, the immediate intermediate formed has an extra hydrogen attached (it is derived from water, not hydroxide), giving the oxygen a positive charge (an "alkyloxonium ion").<br/>3. A final <strong>"tidy up" deprotonation step</strong> is required: a second water molecule acts as a base to remove a proton (H⁺), yielding the final alcohol and forming a hydroxonium ion (H₃O⁺).'
+            },
+            terms: ['Neutral nucleophile', 'Deprotonation', 'Hydroxonium ion']
+        },
+        {
+            id: 'callout-hydrohalic',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: 'Naming the Inorganic Product',
+                text: 'In the reaction with water, the halide ion (X⁻) remains in solution alongside the generated hydroxonium ion (H₃O⁺). Although you might be tempted to write the side product as "hydrogen bromide (HBr)", you <strong>must not</strong> call it a gas. The correct name for H⁺ and Br⁻ in aqueous solution is <strong>hydrobromic acid</strong>. Calling it hydrogen bromide gas is incorrect because water is present as the reactant/solvent.'
+            },
+            terms: ['Hydrobromic acid', 'Aqueous solution']
+        },
+        {
             id: 'callout-ammonia',
             type: 'callout',
             data: {
                 style: 'worked',
                 title: 'Mechanism with Ammonia (NH₃)',
-                text: 'The reaction between a halogenoalkane and ammonia involves exactly <strong>two steps</strong> and requires <strong>excess ammonia</strong>:<br/>1. The nucleophilic lone pair on the NH₃ molecule attacks the slightly positive carbon, forming an intermediate alkylammonium ion.<br/>2. A <em>second</em> ammonia molecule then acts as a base, removing a hydrogen atom from the intermediate to yield the neutral primary amine and an ammonium salt (NH₄⁺X⁻).'
+                text: 'The reaction between a halogenoalkane and ammonia involves exactly <strong>two steps</strong> and requires <strong>excess ammonia</strong>:<br/>1. The nucleophilic lone pair on the NH₃ molecule attacks the slightly positive carbon, forming an intermediate alkylammonium ion with a positive charge on the nitrogen.<br/>2. <strong>Reversible "Tidy Up" Step:</strong> A <em>second</em> ammonia molecule acts as a base, removing a hydrogen ion (H⁺) from the intermediate to yield the neutral primary amine and an ammonium ion (NH₄⁺). Because this second step is <strong>reversible</strong>, a large excess of ammonia pushes the equilibrium forward to maximise the yield of the primary amine.'
             },
-            terms: ['Alkylammonium ion', 'Base']
+            terms: ['Alkylammonium ion', 'Reversible step', 'Base']
         }
     ],
     recall: {
         enabled: true,
         cues: [
             { id: 'c-cn-solvent', blockId: 'callout-cyanide', prompt: 'Why must the reaction between a halogenoalkane and KCN be carried out in pure ethanol? What happens if water is present?' },
+            { id: 'cue-cn-naming', blockId: 'callout-cyanide-naming', prompt: 'If you react bromoethane with KCN, what is the IUPAC name of the product? Explain why.' },
             { id: 'c-nh3-sealed', blockId: 'callout-ammonia-products', prompt: 'Why is the reaction between a halogenoalkane and ammonia carried out in a heated sealed tube rather than under reflux?' },
             { id: 'c-nh3-excess', blockId: 'callout-ammonia-products', prompt: 'If you react bromoethane with ammonia, how can you favour the production of a primary amine over secondary or tertiary amines?' },
             { id: 'c-comp1', blockId: 'callout-competition', prompt: 'Which type of halogenoalkane (primary, secondary, or tertiary) is most likely to undergo an elimination reaction when treated with hydroxide ions?' },
@@ -109,9 +146,12 @@ export const note_chemistry_2_10_3 = {
             { id: 'c2', blockId: 'table-reactions', prompt: 'Heating 1-bromobutane with AQUEOUS KOH produces an alcohol. What is the product if you heat it with ETHANOLIC KOH instead, and what type of reaction is that?' },
             { id: 'c3', blockId: 'p-sn1', prompt: 'State the type of mechanism that tertiary halogenoalkanes primarily use for substitution, and outline its two main steps.' },
             { id: 'c4', blockId: 'p-sn2', prompt: 'Why do primary halogenoalkanes undergo SN2 exclusively instead of forming a carbocation via SN1?' },
-            { id: 'c5', blockId: 'callout-ammonia', prompt: 'Describe the role of the second ammonia molecule in the nucleophilic substitution of a halogenoalkane to form a primary amine.' }
+            { id: 'cue-sn-secondary', blockId: 'p-sn-secondary', prompt: 'Which nucleophilic substitution mechanism(s) do secondary halogenoalkanes undergo when reacting with hydroxide ions?' },
+            { id: 'cue-water-tidy', blockId: 'callout-water', prompt: 'In the nucleophilic substitution mechanism of a halogenoalkane with water, what happens in the final "tidy up" step?' },
+            { id: 'cue-hydrohalic', blockId: 'callout-hydrohalic', prompt: 'Why is the inorganic product of a halogenoalkane reacting with water called hydrobromic acid rather than hydrogen bromide?' },
+            { id: 'c5', blockId: 'callout-ammonia', prompt: 'In the mechanism for reacting a halogenoalkane with ammonia, why is a large excess of ammonia required beyond just minimizing further substitutions?' }
         ],
-        summaryText: 'Halogenoalkanes react with: (1) aq KOH -> Alcohol, (2) KCN in ethanol -> Nitrile (chain length +1), (3) excess NH₃ in ethanol -> Primary Amine, (4) ethanolic KOH -> Alkene (Elimination instead of substitution). Mechanisms: SN1 (Tertiary) happens in 2 steps via a stable carbocation intermediate. SN2 (Primary) happens in 1 step via a transition state because primary carbocations are too unstable. The mechanism with ammonia specifically requires two NH₃ molecules: one acts as the nucleophile, the other acts as a base.',
+        summaryText: 'Halogenoalkanes react with: (1) aq KOH -> Alcohol, (2) KCN in ethanol -> Nitrile (chain length +1), (3) excess NH₃ in ethanol -> Primary Amine, (4) ethanolic KOH -> Alkene (Elimination instead of substitution). Mechanisms: SN1 (Tertiary) happens in 2 steps via a stable carbocation intermediate. SN2 (Primary) happens in 1 step via a transition state because primary carbocations are too unstable. Secondary halogenoalkanes use both SN1 and SN2 mechanisms simultaneously. The mechanism with ammonia specifically requires two NH₃ molecules: one acts as the nucleophile, the other acts as a base.',
         ready: false
     },
     evidence: []

@@ -104,6 +104,7 @@ export const note_chemistry_2_10_1 = {
             { id: 'c-bg3', blockId: 'p-reactivity', prompt: 'Which factor is more important in determining the reactivity of a halogenoalkane: bond polarity or bond enthalpy? Which reacts faster: a chloroalkane or an iodoalkane?' },
             { id: 'c2', blockId: 'callout-hydrolysis', prompt: 'State the reagent and conditions required to hydrolyse a halogenoalkane to produce an alcohol.' },
             { id: 'c3', blockId: 'callout-hydrolysis', prompt: 'Write the general ionic equation for the hydrolysis of a brominated alkane (R-Br) with an alkali.' },
+            { id: 'cue-solvent', blockId: 'callout-hydroxide-solvent', prompt: 'In the hydrolysis of halogenoalkanes with hydroxide ions, why is a 50/50 mixture of ethanol and water used as the solvent rather than pure water?' },
             { id: 'c4', blockId: 'p-water', prompt: 'Why is the hydrolysis of a halogenoalkane much faster when using aqueous NaOH rather than pure water?' }
         ],
         summaryText: 'Halogenoalkanes are classified by how many carbon atoms are attached to the carbon bearing the halogen (1°, 2°, or 3°). They react with aqueous alkalis (like KOH(aq)) when heated under reflux to form alcohols. The OH⁻ ion acts as a nucleophile, replacing the halogen in a nucleophilic substitution reaction.',

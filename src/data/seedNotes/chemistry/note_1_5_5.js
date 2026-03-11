@@ -23,9 +23,28 @@ export const note_chemistry_1_5_5 = {
       data: {
         style: 'key',
         title: 'Definition: Addition Polymerisation',
-        text: '<strong>Addition polymerisation</strong> is a reaction in which many small monomer molecules (alkenes) join together to form a large polymer chain, with no other products formed. Each monomer contributes ALL its atoms to the polymer.<br/><br/>Conditions: Requires <strong>high temperature and high pressure</strong> (often with a catalyst).<br/><br/>General equation:<br/>n CH₂=CH₂ → –(CH₂–CH₂)ₙ–<br/><br/>The n represents a large number of repeat units (typically thousands).<br/>The polymer is drawn by putting the repeat unit in brackets with subscript n and bonds extending from each side.'
+        text: '<strong>Addition polymerisation</strong> is a reaction in which many small monomer molecules (alkenes) join together to form a large polymer chain, with no other products formed. Each monomer contributes ALL its atoms to the polymer.<br/><br/>Conditions for ethene: Requires <strong>~200°C temperature, ~2000 atm pressure</strong>, and a small amount of oxygen (or organic peroxides) acting as an initiator.<br/><br/>General equation:<br/>n CH₂=CH₂ → –(CH₂–CH₂)ₙ–<br/><br/>The n represents a large number of repeat units (typically thousands).<br/>The polymer is drawn by putting the repeat unit in brackets with subscript n and bonds extending from each side.'
       },
       terms: ['Addition polymerisation', 'Monomer', 'Polymer', 'Repeat unit']
+    },
+    {
+      id: 'h-mechanism',
+      type: 'heading',
+      data: { text: 'Free Radical Addition Mechanism', level: 3 },
+      terms: []
+    },
+    {
+      id: 'p-mechanism',
+      type: 'list',
+      data: {
+        style: 'unordered',
+        items: [
+          '<strong>1. Initiation:</strong> The initiator (e.g. oxygen) reacts with some alkene to produce free radicals (Ra•).',
+          '<strong>2. Propagation:</strong> A radical attacks the C=C double bond, forming a new, longer free radical.<br/>Ra• + CH₂=CH₂ → Ra–CH₂–CH₂•<br/>This new radical attacks another ethene molecule:<br/>Ra–CH₂–CH₂• + CH₂=CH₂ → Ra–CH₂–CH₂–CH₂–CH₂•<br/>This process repeats thousands of times, rapidly growing the chain.',
+          '<strong>3. Termination:</strong> Two free radicals randomly collide and join together, terminating the chain reaction. Because the collision is random, the resulting polymer chains vary significantly in length.'
+        ]
+      },
+      terms: ['Free radical addition']
     },
     {
       id: 'table-polymers',
@@ -83,6 +102,7 @@ export const note_chemistry_1_5_5 = {
     enabled: true,
     cues: [
       { id: 'c1', blockId: 'callout-def', prompt: 'Define addition polymerisation, state the conditions required, and write a general equation using ethene.' },
+      { id: 'c-mech', blockId: 'p-mechanism', prompt: 'Describe the three stages of the free radical addition polymerisation mechanism for ethene.' },
       { id: 'c2', blockId: 'table-polymers', prompt: 'Name the monomer used to make: (a) PVC (b) PTFE (c) polystyrene.' },
       { id: 'c3', blockId: 'callout-how-to', prompt: 'Draw the repeat unit of the addition polymer formed from propene (CH₃CH=CH₂).' },
       { id: 'c4', blockId: 'callout-find-monomer', prompt: 'Describe how to deduce the structure of a monomer given a section of an addition polymer chain.' },
@@ -91,6 +111,15 @@ export const note_chemistry_1_5_5 = {
     summaryText: 'Addition polymerisation: n alkene molecules → polymer chain (high temp/pressure). Common examples: poly(ethene), PVC, PTFE, poly(propene). Find monomer by taking 2-carbon repeat unit and restoring C=C. Disposal: unreactive/non-biodegradable → landfill build-up. Incineration → gives off toxic fumes/CO₂. Biopolymers → biodegradable but require crop land and don\'t recycle atoms easily.',
     ready: false
   },
-  evidence: []
+  evidence: [
+    {
+      id: 'ev-1',
+      title: 'Chemguide — Free Radical Addition Polymerisation',
+      detail: 'Details the mechanism of ethene polymerisation via initiation (typically with an oxygen/peroxide initiator), propagation (forming progressively larger radicals), and termination (random length generation).',
+      year: '2013',
+      source: 'chemguide.co.uk',
+      tags: ['polymerisation', 'free radical', 'addition']
+    }
+  ]
 };
 export default note_chemistry_1_5_5;

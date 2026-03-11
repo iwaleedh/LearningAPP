@@ -17,7 +17,15 @@ export const note_chemistry_1_4_12 = {
     type: "list",
     data: {
       style: "unordered",
-      items: ["Alkanes are relatively unreactive due to their strong, non-polar C\u2013H and C\u2013C \u03C3 bonds.", "However, in the presence of <strong>UV light</strong>, alkanes react with halogens (Cl\u2082 or Br\u2082) by <strong>free-radical substitution</strong> \u2014 a chain reaction in which hydrogen atoms are progressively replaced by halogen atoms."]
+      items: ["Alkanes are relatively unreactive due to their strong, non-polar C\u2013H and C\u2013C \u03C3 bonds.", "However, in the presence of <strong>ultraviolet (UV) light</strong> like sunlight, alkanes react gently with halogens (Cl\u2082 or Br\u2082) by <strong>free-radical substitution</strong> \u2014 a chain reaction in which hydrogen atoms are progressively replaced by halogen atoms."]
+    }
+  }, {
+    id: 'callout-photochemical-warning',
+    type: 'callout',
+    data: {
+      style: 'warning',
+      title: 'Photochemical vs Combustive',
+      text: 'If a mixture of methane and chlorine is exposed to a flame, it simply explodes — producing carbon (soot) and hydrogen chloride. UV light is required to drive the gentle <strong>photochemical substitution reaction</strong>. <em>Note: Call it a photochemical reaction, not photocatalysis, as light provides the energy, rather than acting as a traditional substance-based catalyst.</em>'
     }
   }, {
     id: 'callout-key-overview',
@@ -26,6 +34,14 @@ export const note_chemistry_1_4_12 = {
       style: 'key',
       title: 'Overall Reaction (Chlorination of Methane)',
       text: 'CH₄ + Cl₂ → CH₃Cl + HCl (UV light required)\n\nThe reaction is a substitution because one H atom on methane is replaced by one Cl atom. It proceeds by a free-radical chain mechanism with three stages: initiation, propagation, termination.'
+    }
+  }, {
+    id: 'callout-bromine-identical',
+    type: 'callout',
+    data: {
+      style: 'tip',
+      title: 'Equivalent Halogens: Bromination',
+      text: 'The reaction between methane and bromine happens identically under UV light. You do not need to memorise a different mechanism — simply replace all Cl symbols with Br. The sequence of chain initiation, propagation, and termination remains exactly the same.\n\nCH₄ + Br₂ → CH₃Br + HBr'
     }
   }, {
     id: 'h-stages',
@@ -311,5 +327,19 @@ export const note_chemistry_1_4_12 = {
     year: '2018',
     source: 'Pearson Edexcel',
     tags: ['free radical', 'substitution', 'mechanism']
+  }, {
+    id: 'ev-2',
+    title: 'Chemguide — Methane and Chlorine Free Radical Substitution',
+    detail: 'Detailed breakdown of the photochemical nature of the reaction vs explosive combustion, and the exact chain mechanism stages.',
+    year: '2023',
+    source: 'chemguide.co.uk',
+    tags: ['free radical substitution', 'photochemical', 'chain reaction']
+  }, {
+    id: 'ev-3',
+    title: 'Chemguide — Methane and Bromine Free Radical Substitution',
+    detail: 'Confirmation that the substitution mechanism for bromine and chlorine is identical. Added note to treat them identically in exams.',
+    year: '2023',
+    source: 'chemguide.co.uk',
+    tags: ['bromination', 'mechanism equivalence']
   }]
 };

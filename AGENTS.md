@@ -599,7 +599,7 @@ When a user provides a URL to scrape for study content, follow this workflow:
 1. **Fetch the URL content** — Use appropriate tools to extract text and images from the provided URL
 2. **Identify the subject** — Determine which subject (chemistry, physics, biology, etc.) the content belongs to
 3. **Map to syllabus** — Find the matching unit/topic/subtopic in the relevant `src/data/{subject}Syllabus.js`
-4. **Identify images/diagrams** — Extract any relevant diagrams or images that should become SVG illustrations
+4. **Identify images/diagrams** — Extract all diagrams or images in the url web page that should become SVG illustrations
 
 ### 13b. Note Enhancement Guidelines
 
@@ -638,7 +638,7 @@ User provides: https://example.com/atomic-structure
 
 1. Analyze content → Chemistry, Unit WCH11, Topic 2 (Atomic Structure)
 2. Check existing subtopics (note_1_2_0 through note_1_2_8)
-3. If content fits existing subtopic → enhance that note
+3. Parse Diagrams or pictures from the url and input as svg in the note. If content fits existing subtopic → enhance that note
 4. If new concept → create new subtopic note_1_2_9
 5. Convert images to SVG, write in point form, verify accuracy
 6. Add recall cues and evidence references
