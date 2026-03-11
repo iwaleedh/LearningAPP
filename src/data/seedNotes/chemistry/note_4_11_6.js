@@ -106,7 +106,7 @@ export const note_chemistry_4_11_6 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'callout-rds',
+        blockId: 'list-mechanism-intro',
         prompt: 'Define the term "Rate-Determining Step" (RDS).'
       },
       {
@@ -116,12 +116,12 @@ export const note_chemistry_4_11_6 = {
       },
       {
         id: 'cue-3',
-        blockId: 'p-sn1',
+        blockId: 'table-sn1-sn2',
         prompt: 'State the rate equation for an SN1 nucleophilic substitution mechanism, and explain why [OH⁻] is missing from it.'
       },
       {
         id: 'cue-4',
-        blockId: 'bloom-mechanisms',
+        blockId: 'bloom-mechanisms-complex',
         prompt: 'The rate equation for a reaction is Rate = k[A]¹[B]¹. Explain why a proposed mechanism where Step 1 (Slow) is simply A → C cannot be correct.'
       }
     ],
