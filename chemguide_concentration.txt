@@ -1,0 +1,236 @@
+
+<html>
+<head>
+<title>The effect of concentration on rates of reaction</title>
+
+<meta name="description"
+content="Describes and explains the effect of changing the concentration of a liquid or gas on  how fast reactions take place." />
+<meta name="keywords"
+content="rate, reaction, kinetics, concentration" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>THE EFFECT OF CONCENTRATION ON REACTION RATES</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page describes and explains the way that changing the concentration of a solution affects the rate of a reaction.  Be aware that this is an introductory page only.  If you are interested in orders of reaction, you will find separate pages dealing with these.  You can access these via the rates of reaction menu (link at the bottom of the page).</p>
+
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>The facts</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>What happens?</b></p>
+
+<p>For many reactions involving liquids or gases, increasing the concentration of the reactants increases the rate of reaction.  In a few cases, increasing the concentration of one  of the reactants may have little noticeable effect of the rate.  These cases are discussed and explained further down this page.</p>
+
+<p>Don't assume that if you double the concentration of one of the reactants that you will double the rate of the reaction.  It may happen like that, but the relationship may well be more complicated.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>The mathematical relationship between concentration and rate of reaction is dealt with on the page about <a href="orders.html#top">orders of reaction</a>.  If you are interested, you can use this link or read about it later via the rate of reaction menu (link at the bottom of the page).<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Some examples</b></p>
+
+<p>The examples on this page all involve solutions.  Changing the concentration of a gas is achieved by changing its pressure.  This is covered on a separate page.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you want to explore the <a href="pressure.html#top">effect of changing pressure</a> on the rate of a reaction, you could use this link.  Alternatively, use the link to the rates of reaction menu at the bottom of this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b><i>Zinc and hydrochloric acid</i></b></p>
+
+<p>In the lab, zinc granules react fairly slowly with dilute hydrochloric acid, but much faster if the acid is concentrated.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="znhcleq.gif" width="279" height="15" /></p>
+
+<p><b><i>The catalytic decomposition of hydrogen peroxide</i></b></p>
+
+<p>Solid manganese(IV) oxide is often used as a catalyst in this reaction.  Oxygen is given off much faster if the hydrogen peroxide is concentrated than if it is dilute.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="h2o2decompeq.gif" width="242" height="24" /></p>
+
+<p><b><i>The reaction between sodium thiosulphate solution and hydrochloric acid</i></b></p>
+
+<p>This is a reaction which is often used to explore the relationship between concentration and rate of reaction in introductory courses (like GCSE).  When a dilute acid is added to sodium thiosulphate solution, a pale yellow precipitate of sulphur is formed.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="thioeq.gif" width="410" height="15" /></p>
+
+<p>As the sodium thiosulphate solution is diluted more and more, the precipitate takes longer and longer to form.</p>
+
+</font>
+<pre>
+
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>The explanation</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Cases where changing the concentration affects the rate of the reaction</b></p>
+
+<p>This is the common case, and is easily explained.</p>
+
+<p><b><i>Collisions involving two particles</i></b></p>
+
+<p>The same argument applies whether the reaction involves collision between two different particles or two of the same particle.</p>
+
+<p>In order for any reaction to happen, those particles must first collide.  This is true whether both particles are in solution, or whether one is in solution and the other a solid.  If the concentration is higher, the chances of collision are greater.</p>
+
+<p align="center"><img src="conceffect.gif" width="315" height="396" /></p>
+<pre>
+
+</pre>
+<p><b><i>Reactions involving only one particle</i></b></p>
+
+<p>If a reaction only involves a single particle splitting up in some way, then the number of collisions is irrelevant.  What matters now is how many of the particles have enough energy to react at any one time.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you aren't sure about this, then read the page about <a href="introduction.html#top">collision theory and activation energy</a> before you go on.  Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>Suppose that at any one time 1 in a million particles have enough energy to equal or exceed the activation energy.  If you had 100 million particles, 100 of them would react.  If you had 200 million particles in the same volume, 200 of them would now react.  The rate of reaction has doubled by doubling the concentration.</p>
+<pre>
+
+</pre>
+
+<p><b>Cases where changing the concentration doesn't affect the rate of the reaction</b></p>
+
+<p>At first glance this seems very surprising!</p>
+
+<p><b><i>Where a catalyst is already working  as fast as it can</i></b></p>
+
+<p>Suppose you are using a small amount of a solid catalyst in a reaction, and a high enough concentration of reactant in solution so that the catalyst surface was totally cluttered up with reacting particles.</p>
+
+<p>Increasing the concentration of the solution even more can't have any effect because the catalyst is already working at its maximum capacity.</p>
+
+<p><b><i>In certain multi-step reactions</i></b></p>
+
+<p>This is the more important effect from an A' level point of view.  Suppose you have a reaction which happens in a series of small steps.  These steps are likely to have widely different rates - some fast, some slow.</p>
+
+<p>For example, suppose two reactants <b>A</b> and <b>B</b> react together in these two stages:</p>
+
+<p align="center"><img src="mechab.gif" width="289" height="84" /></p>
+
+<p>The overall rate of the reaction is going to be governed by how fast <b>A</b> splits up to make X and Y.  This is described as the <b><i>rate determining step</i></b> of the reaction.</p>
+
+<p>If you increase the concentration of <b>A</b>, you will increase the chances of this step happening for reasons we've looked at above.</p>
+
+<p>If you increase the concentration of <b>B</b>, that will undoubtedly speed up the second step, but that makes hardly any difference to the overall rate.  You can picture the second step as happening so fast already that as soon as any X is formed, it is immediately pounced on by <b>B</b>.  That second reaction is already &quot;waiting around&quot; for the first one to happen.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>The overall rate of reaction isn't entirely independent of the concentration of <b>B</b>.  If you <i>lowered</i> its concentration enough, you will eventually reduce the rate of the second reaction to the point where it is similar to the rate of the first.  Both concentrations will matter if the concentration of <b>B</b> is low enough.</p>
+
+<p>However, for ordinary concentrations, you can say that (to a good approximation) the overall rate of reaction is unaffected by the concentration of <b>B</b>.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>The best specific examples of reactions of this type comes from organic chemistry.  These involve the reaction between a tertiary halogenoalkane (alkyl halide) and a number of possible substances - including hydroxide ions.  These are examples of nucleophilic substitution using a mechanism known as <b>S<sub>N</sub>1</b>.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you are interested in exploring <a href="../../mechanisms/nucsubmenu.html#top">nucleophilic substitution reactions</a> further, you could follow this link.</p>
+
+<p>Otherwise, you can find more about how the relationship between concentration and rate of reaction is affected by reaction mechanisms by exploring the topics at the bottom of the rates of reaction menu (link below).<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>You will find questions about all the factors affecting rates of reaction on the page about catalysts at the end of this sequence of pages.</p>
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl> <font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<p><a href="../basicratesmenu.html#top"><b>To the rates of reaction menu . . .</b></a></p>
+<p><a href="../../physmenu.html#top"><b>To the Physical Chemistry menu . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<div align="center"><a href="../../book.html#top"><img src="../../advert.gif" width="456" height="46" border="0" /></a></div>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2002 (modified October 2013)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

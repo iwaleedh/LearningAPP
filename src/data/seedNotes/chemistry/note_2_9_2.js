@@ -18,20 +18,83 @@ export const note_chemistry_2_9_2 = {
             terms: []
         },
         {
-            id: 'p-concentration',
-            type: 'paragraph',
-            data: { text: 'Increasing the concentration of a reactant in solution <strong>increases the rate of reaction</strong>.' },
+            id: 'list-concentration-theory',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    'For most reactions involving solutions or gases, increasing concentration <strong>increases the rate of reaction</strong>.',
+                    'Higher concentration means there are <strong>more particles per unit volume</strong>.',
+                    'The particles are crowded closer together, leading to a <strong>higher frequency of collisions</strong>.',
+                    'If more collisions occur per second, there is a higher frequency of <em>successful</em> collisions.',
+                    'Important: Changing concentration <strong>does not</strong> change the activation energy or particle energies.'
+                ]
+            },
+            terms: ['Frequency of collisions']
+        },
+        {
+            id: 'svg-concentration',
+            type: 'svg',
+            data: {
+                svg: `<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradLow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </radialGradient>
+    <radialGradient id="gradHigh" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#881337" />
+    </radialGradient>
+  </defs>
+
+  <!-- Low Concentration Box -->
+  <rect x="50" y="30" width="200" height="180" rx="4" fill="none" stroke="currentColor" stroke-width="2" />
+  <text x="150" y="240" font-family="-apple-system, sans-serif" font-size="16" fill="currentColor" text-anchor="middle">Low Concentration</text>
+  <text x="150" y="20" font-family="-apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Fewer particles per unit volume</text>
+
+  <!-- Particles in Low Concentration -->
+  <circle cx="90" cy="70" r="8" fill="url(#gradLow)" />
+  <circle cx="160" cy="90" r="8" fill="url(#gradLow)" />
+  <circle cx="120" cy="150" r="8" fill="url(#gradLow)" />
+  <circle cx="210" cy="130" r="8" fill="url(#gradLow)" />
+  <circle cx="80" cy="170" r="8" fill="url(#gradLow)" />
+
+  <path d="M 100 70 L 145 85" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,4" />
+
+  <!-- High Concentration Box -->
+  <rect x="350" y="30" width="200" height="180" rx="4" fill="none" stroke="currentColor" stroke-width="2" />
+  <text x="450" y="240" font-family="-apple-system, sans-serif" font-size="16" fill="currentColor" text-anchor="middle">High Concentration</text>
+  <text x="450" y="20" font-family="-apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">More particles per unit volume</text>
+
+  <!-- Particles in High Concentration -->
+  <circle cx="380" cy="60" r="8" fill="url(#gradHigh)" />
+  <circle cx="420" cy="50" r="8" fill="url(#gradHigh)" />
+  <circle cx="480" cy="70" r="8" fill="url(#gradHigh)" />
+  <circle cx="510" cy="100" r="8" fill="url(#gradHigh)" />
+  <circle cx="390" cy="110" r="8" fill="url(#gradHigh)" />
+  <circle cx="440" cy="130" r="8" fill="url(#gradHigh)" />
+  <circle cx="490" cy="150" r="8" fill="url(#gradHigh)" />
+  <circle cx="530" cy="170" r="8" fill="url(#gradHigh)" />
+  <circle cx="380" cy="180" r="8" fill="url(#gradHigh)" />
+  <circle cx="430" cy="190" r="8" fill="url(#gradHigh)" />
+
+  <path d="M 395 110 L 425 125" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,4" />
+  <path d="M 480 70 L 500 95" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,4" />
+</svg>`,
+                caption: 'Higher concentration crowds particles together, drastically increasing collision frequency.'
+            },
             terms: []
         },
         {
-            id: 'callout-concentration',
+            id: 'callout-conc-exceptions',
             type: 'callout',
             data: {
-                style: 'key',
-                title: 'Collision Theory Explanation: Concentration',
-                text: '1. Higher concentration means there are <strong>more particles per unit volume</strong>.<br/>2. Therefore, the particles are closer together.<br/>3. This leads to a <strong>higher frequency of collisions</strong> (more collisions per second) between reactant particles.<br/>4. This results in a higher frequency of <em>successful</em> collisions, increasing the overall rate.'
+                style: 'warning',
+                title: "Exceptions: When Concentration Does not Increase Rate",
+                text: '<strong>1. Zero Order Reactants in Multi-Step Reactions:</strong> If a reaction happens in multiple steps, the overall rate is governed by the slow <em>Rate-Determining Step (RDS)</em>. Increasing the concentration of a reactant that is only involved in a subsequent <em>fast</em> step will have practically zero effect on the overall rate.<br/><br/><strong>2. Catalyst Saturation:</strong> If a solid catalyst surface is already entirely saturated with reactant molecules, adding more reactant (higher concentration) cannot speed up the reaction further because the catalyst is already working at its maximum theoretical capacity.'
             },
-            terms: ['Frequency of collisions']
+            terms: []
         },
         {
             id: 'h-pressure',
