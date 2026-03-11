@@ -147,6 +147,73 @@ export const note_chemistry_1_4_9 = {
       text: '• Fractional distillation is a PHYSICAL process — no new substances are made, only separated.\n• Cracking is a CHEMICAL process — covalent bonds are broken; new substances are formed.\n• Always link boiling point differences to London dispersion forces (longer chain → more electrons → stronger London forces → higher b.p.).'
     }
   }, {
+    id: 'h-isomerisation',
+    type: 'heading',
+    data: {
+      text: 'Improving Octane Rating: Isomerisation',
+      level: 2
+    }
+  }, {
+    id: 'p-octane-rating',
+    type: 'list',
+    data: {
+      style: 'unordered',
+      items: [
+        'Straight-chain alkanes auto-ignite too easily (engine knocking), giving them a low octane rating.',
+        'Branched alkanes and cyclic hydrocarbons have higher octane ratings and burn more smoothly.',
+        '<strong>Isomerisation</strong> converts straight-chain alkanes into branched isomers.',
+        '<strong>Conditions:</strong> Heated with a Platinum (Pt) catalyst on a zeolite base at ~250 °C.'
+      ]
+    }
+  }, {
+    id: 'equation-isomerisation',
+    type: 'comparisonTable',
+    data: {
+      caption: 'Example of Isomerisation',
+      headers: ['Reactant', 'Product'],
+      rows: [
+        ['Pentane ($C_5H_{12}$)', '2-methylbutane or 2,2-dimethylpropane']
+      ]
+    }
+  }, {
+    id: 'h-reforming',
+    type: 'heading',
+    data: {
+      text: 'Improving Octane Rating: Reforming',
+      level: 2
+    }
+  }, {
+    id: 'p-reforming',
+    type: 'list',
+    data: {
+      style: 'unordered',
+      items: [
+        '<strong>Reforming</strong> converts straight-chain alkanes into cycloalkanes or aromatic hydrocarbons (like benzene) with the release of hydrogen gas.',
+        'This significantly increases the octane rating of the fuel.',
+        '<strong>Conditions:</strong> Heated with a Platinum (Pt) catalyst on an aluminium oxide ($Al_2O_3$) base at ~500 °C.'
+      ]
+    }
+  }, {
+    id: 'table-reforming-examples',
+    type: 'comparisonTable',
+    data: {
+      caption: 'Examples of Reforming',
+      headers: ['Reactant', 'Products'],
+      rows: [
+        ['Hexane ($C_6H_{14}$)', 'Cyclohexane ($C_6H_{12}$) + $H_2$'],
+        ['Cyclohexane ($C_6H_{12}$)', 'Benzene ($C_6H_6$) + $3H_2$'],
+        ['Hexane ($C_6H_{14}$)', 'Benzene ($C_6H_6$) + $4H_2$']
+      ]
+    }
+  }, {
+    id: 'callout-fluid-catalytic',
+    type: 'callout',
+    data: {
+      style: 'key',
+      title: 'Fluid Catalytic Cracking vs Reforming / Isomerisation Catalysts',
+      text: 'Note the use of Platinum (Pt). Isomerisation uses Pt on zeolite at 250 °C, while reforming uses Pt on aluminium oxide at 500 °C. These are vital for upgrading naphtha into high-octane petrol components.'
+    }
+  }, {
     id: 'checklist',
     type: 'checklist',
     data: {
@@ -164,6 +231,9 @@ export const note_chemistry_1_4_9 = {
         checked: false
       }, {
         text: 'I understand why cracking is economically important (excess long-chain → useful short-chain).',
+        checked: false
+      }, {
+        text: 'I can explain isomerisation and reforming, including their conditions and purpose (improving octane rating).',
         checked: false
       }]
     }
@@ -207,6 +277,14 @@ export const note_chemistry_1_4_9 = {
       id: 'cue-5',
       blockId: 'callout-tip',
       prompt: 'Is fractional distillation a physical or chemical process? How does it differ from cracking?'
+    }, {
+      id: 'cue-isomerisation',
+      blockId: 'p-octane-rating',
+      prompt: 'What are the conditions and purpose of Isomerisation in the petrochemical industry?'
+    }, {
+      id: 'cue-reforming',
+      blockId: 'p-reforming',
+      prompt: 'What are the conditions and purpose of Reforming? Give an example of a product formed from hexane.'
     }],
     summaryText: 'Crude oil separated by fractional distillation (physical). Short chains: low b.p., top of column. Long chains: high b.p., bottom. Cracking (chemical) converts long chains → short alkenes + branched alkanes. London forces explain b.p. differences.',
     ready: false
@@ -217,6 +295,6 @@ export const note_chemistry_1_4_9 = {
     detail: 'Fractional distillation and cracking of crude oil is required for Topic 4.',
     year: '2018',
     source: 'Pearson Edexcel',
-    tags: ['fractional distillation', 'crude oil', 'cracking']
+    tags: ['fractional distillation', 'crude oil', 'cracking', 'isomerisation', 'reforming', 'octane rating']
   }]
 };
