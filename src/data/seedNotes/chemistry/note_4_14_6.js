@@ -24,8 +24,8 @@ export const note_chemistry_4_14_6 = {
       type: 'callout',
       data: {
         style: 'warning',
-        title: '⚠️ End Point ≠ Equivalence Point — Learn the Difference',
-        text: '• <strong>Equivalence point</strong> — the point where acid and base have reacted in the exact stoichiometric ratio (from the balanced equation). This is a theoretical point.\n• <strong>End point</strong> — the point where the indicator changes colour. This is what we observe experimentally.\n• The end point occurs AFTER the equivalence point (one or two extra drops of titrant trigger the colour change).\n• In a good titration with a correct indicator, end point ≈ equivalence point — but they are never exactly the same.\n• Do NOT use these terms interchangeably in an exam.'
+        title: '⚠️ Equivalence Point vs End Point vs Neutral Point',
+        text: '• <strong>Equivalence point:</strong> the point where acid and base have reacted in the exact stoichiometric ratio. This is a theoretical point.\n• <strong>End point:</strong> the point where the indicator changes colour. This is what we observe experimentally, occurring just after the equivalence point.\n• <strong>Neutral point (pH 7):</strong> this is rarely the same as the equivalence point! It is only the same when a strong acid reacts with a strong base.'
       }
     },
     {
@@ -305,6 +305,34 @@ export const note_chemistry_4_14_6 = {
       }
     },
     {
+      id: 'h-complex-titrations',
+      type: 'heading',
+      data: { text: 'More Complicated Titration Curves', level: 2 }
+    },
+    {
+      id: 'list-carbonate-titration',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Sodium carbonate with HCl:</strong> Involves a basic salt reacting with a strong acid in two stages.',
+          '<strong>Stage 1:</strong> CO₃²⁻ + H⁺ → HCO₃⁻. The equivalence point is around pH 8.3. <strong>Phenolphthalein</strong> changes from pink to colourless at this exact point.',
+          '<strong>Stage 2:</strong> HCO₃⁻ + H⁺ → CO₂ + H₂O. The equivalence point is around pH 3.7. <strong>Methyl orange</strong> changes from yellow to red at this point.',
+          'If you use <strong>methyl orange from the start</strong>, you miss the first stage and only see the final complete neutralisation.',
+          'If you use <strong>phenolphthalein</strong>, you only see the first stage completed.'
+        ]
+      }
+    },
+    {
+      id: 'callout-polyprotic-pka',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Warning: Resolving Successive Equivalences',
+        text: 'In diprotic acids like ethanedioic acid, the two pKₐ values are distinct enough (pKₐ₁ = 1.25, pKₐ₂ = 4.28) that two separate equivalence points can confidently be seen on a graph. For sulfuric acid, the first dissociation is strong (completely dissociated) and the second is weak (pKₐ ≈ 1.9), which means the curve usually appears with just one single large equivalence drop (reflecting both protons released) unless observed under very specific lab conditions.'
+      }
+    },
+    {
       id: 'checklist-titration',
       type: 'checklist',
       data: {
@@ -371,9 +399,14 @@ export const note_chemistry_4_14_6 = {
         id: 'cue-6',
         blockId: 'list-diprotic',
         prompt: 'How does a diprotic acid titration curve differ from a monoprotic acid? How are the two equivalence point volumes related?'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'list-carbonate-titration',
+        prompt: 'In a titration of sodium carbonate with HCl, why are there two equivalence points, and which indicators are used for each stage?'
       }
     ],
-    summaryText: 'End point ≠ equivalence point. Strong+strong: pH=7. Weak acid+strong base: pH>7, phenolphthalein. Strong acid+weak base: pH<7, methyl orange. Weak+weak: no steep section, no indicator. HIn ⇌ H⁺ + In⁻ — range ≈ pKind ± 1. Half-equiv: [HA]=[A⁻], pH = pKa. Diprotic: 2 equivalences, 2nd = 2× 1st. Buffer region: flat plateau before equivalence in weak acid/base titrations.',
+    summaryText: 'Equivalence point (stoichiometric) ≠ End point (colour change) ≠ Neutral point (pH 7). Strong+strong: equiv pH=7. Weak acid+strong base: equiv pH>7, phenolphthalein. Strong acid+weak base: equiv pH<7, methyl orange. Weak+weak: no steep section, no indicator. HIn ⇌ H⁺ + In⁻ — range ≈ pKind ± 1. Half-equiv: [HA]=[A⁻], pH = pKa. Diprotic/Carbonates: 2 equivalences, 2nd volume = 2× 1st volume.',
     ready: false
   },
   evidence: [
