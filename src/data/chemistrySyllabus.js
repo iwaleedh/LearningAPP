@@ -241,6 +241,7 @@ export const chemistrySyllabus = {
                         'Extent of reaction from K values',
                         'Solubility products (Ksp)',
                         'Solubility product calculations',
+                        'Common ion effect in solubility',
                     ],
                 },
                 {
