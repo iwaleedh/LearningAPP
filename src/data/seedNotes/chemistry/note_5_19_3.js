@@ -103,6 +103,46 @@ export const note_chemistry_5_19_3 = {
       }
     },
     {
+      id: 'h-bonding-theory-uv',
+      type: 'heading',
+      data: { text: 'Bonding Theory & UV-Visible Absorption', level: 2 }
+    },
+    {
+      id: 'p-antibonding',
+      type: 'paragraph',
+      data: {
+        text: 'To understand why organic molecules absorb UV or visible light, we must consider molecular orbital theory. When atomic orbitals overlap to form bonds, they create both <strong>bonding orbitals</strong> (lower energy, filled with electrons) and <strong>anti-bonding orbitals</strong> (higher energy, normally empty). For carbon compounds, we consider σ (sigma) and π (pi) bonding orbitals, alongside their corresponding σ* and π* anti-bonding orbitals. There are also <strong>non-bonding (n) orbitals</strong> containing lone pairs of electrons, such as on nitrogen or oxygen atoms.'
+      }
+    },
+    {
+      id: 'callout-transitions',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '⚡ Electronic Transitions',
+        text: 'When light passes through a compound, energy is absorbed if it exactly matches the gap between a filled orbital and an empty anti-bonding orbital. The most common transitions in organic spectroscopy are:<br/><br/>• <strong>π → π* transitions:</strong> Electrons jump from a pi bonding orbital to a pi anti-bonding orbital (occurs in double bonds and aromatic rings).<br/>• <strong>n → π* transitions:</strong> Electrons jump from a non-bonding lone pair to a pi anti-bonding orbital (occurs when atoms with lone pairs are attached to a π system).<br/><br/>In simple alkenes, the π → π* energy gap is large, meaning they absorb high-energy, short-wavelength <strong>Ultraviolet (UV)</strong> light.'
+      }
+    },
+    {
+      id: 'h-conjugation-gap',
+      type: 'heading',
+      data: { text: 'Conjugation and the Energy Gap', level: 3 }
+    },
+    {
+      id: 'p-conjugation-def',
+      type: 'paragraph',
+      data: {
+        text: '<strong>Conjugation</strong> refers to a system of alternating single and double bonds. In molecules like buta-1,3-diene or benzene, the overlapping p-orbitals create a continuous delocalised π electron system over several atoms. This delocalisation can extend even further when atoms with lone pairs (like the -OH oxygen in phenol or the -NH₂ nitrogen in phenylamine) interact with the ring.'
+      }
+    },
+    {
+      id: 'p-conjugation-effect',
+      type: 'paragraph',
+      data: {
+        text: 'The key effect of extended conjugation is that it <strong>decreases the energy gap</strong> between the highest occupied bonding level (HOMO) and the lowest unoccupied anti-bonding level (LUMO). As the conjugated system gets larger:<br/>1. The energy gap decreases.<br/>2. Less energy is needed to promote an electron.<br/>3. The wavelength of light absorbed increases (because E = hc/λ).<br/><br/>When conjugation is extensive enough, the absorption shifts completely out of the UV region and into the <strong>Visible Light</strong> region.'
+      }
+    },
+    {
       id: 'h-colour-and-structure',
       type: 'heading',
       data: { text: 'Azo Compound Colour and Structure', level: 2 }
@@ -141,6 +181,8 @@ export const note_chemistry_5_19_3 = {
           { text: 'Diazotisation: phenylamine + NaNO₂ + dil HCl at 0−5°C → diazonium ion', checked: false },
           { text: 'Diazonium ions unstable above ~10°C; must be used immediately', checked: false },
           { text: 'Azo coupling: diazonium ion + phenol/amine (alkaline) → azo compound', checked: false },
+          { text: 'Extended conjugation lowers the energy gap for π → π* transitions', checked: false },
+          { text: 'Lower energy gap shifts absorption from UV into the Visible region', checked: false },
           { text: 'Azo compounds have −N=N− chromophore; intensely coloured (orange/red/yellow)', checked: false },
           { text: 'Azo dyes used in textiles, food colouring, pH indicators', checked: false }
         ]
@@ -153,7 +195,7 @@ export const note_chemistry_5_19_3 = {
       data: {
         style: 'key',
         title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Diazotisation converts ArNH₂ to ArN₂⁺ using NaNO₂/HCl below 5°C. The diazonium ion can undergo coupling with phenol or amine to form azo dyes.\n\nApply: Write the equation for diazotisation of phenylamine. Why must the temperature be kept below 5°C?\n\nAnalyze: Why are azo dyes intensely coloured? Relate to the extended conjugated system and π-electron delocalisation.\n\nEvaluate: Azo dyes are widely used in food colouring and textiles. Discuss the safety considerations of synthetic dyes vs natural alternatives.'
+        text: 'Understand: Diazotisation converts ArNH₂ to ArN₂⁺ using NaNO₂/HCl below 5°C. The diazonium ion can undergo coupling with phenol or amine to form azo dyes.\n\nApply: Write the equation for diazotisation of phenylamine. Why must the temperature be kept below 5°C?\n\nAnalyze: Why are azo dyes intensely coloured? Relate to the extended conjugated system, the lowering of the π → π* energy gap, and the resulting absorption of visible light.\n\nEvaluate: Azo dyes are widely used in food colouring and textiles. Discuss the safety considerations of synthetic dyes vs natural alternatives.'
       },
       terms: []
     },
@@ -161,7 +203,7 @@ export const note_chemistry_5_19_3 = {
       id: 'summary-diazotisation',
       type: 'summary',
       data: {
-        text: 'Diazotisation converts phenylamine into benzenediazonium chloride using NaNO₂ and dilute HCl at 0−5°C. Diazonium ions are highly unstable and must be kept cold (above ~10°C they decompose). The diazonium ion is a powerful electrophile that couples with phenols and amines in alkaline conditions to form azo compounds. Azo compounds contain the −N=N− chromophore, which is highly conjugated and intensely coloured (orange, red, or yellow). They are widely used as synthetic dyes in textiles, food colouring, and pH indicators. The coupling reaction is ortho/para-selective to electron-donating groups.'
+        text: 'Diazotisation converts phenylamine into benzenediazonium chloride using NaNO₂ and dilute HCl at 0−5°C. Diazonium ions are highly unstable and must be kept cold (above ~10°C they decompose). The diazonium ion is a powerful electrophile that couples with phenols and amines in alkaline conditions to form azo compounds. The resulting azo compound contains the −N=N− chromophore and forms a highly extended conjugated system spanning both rings. This extended conjugation lowers the energy gap for electronic transitions (e.g. π → π*), shifting light absorption from the UV region down into the visible spectrum, making them intensely coloured (orange, red, or yellow).'
       }
     }
   ],
@@ -170,10 +212,10 @@ export const note_chemistry_5_19_3 = {
     cues: [
       { id: 'cue-1', blockId: 'eq-diazotisation', prompt: 'Write the equation for diazotisation of phenylamine. Why is temperature control critical?' },
       { id: 'cue-2', blockId: 'p-coupling-1', prompt: 'Explain what azo coupling is and what the product contains.' },
-      { id: 'cue-3', blockId: 'p-coupling-2', prompt: 'Why are azo compounds brightly coloured?' },
+      { id: 'cue-3', blockId: 'p-colour-1', prompt: 'Explain in terms of bonding and conjugation why azo compounds are brightly coloured.' },
       { id: 'cue-4', blockId: 'callout-azo-dyes', prompt: 'Name two examples of azo dyes and their applications.' }
     ],
-    summaryText: 'Diazotisation: C₆H₅NH₂ + NaNO₂ + HCl (0−5°C) → C₆H₅N₂⁺Cl⁻. Diazonium ions unstable above ~10°C; use immediately. Azo coupling: diazonium + phenol/amine (alkaline) → Ar−N=N−Ar′ (azo compound, bright colour). −N=N− is conjugated chromophore. Azo dyes: textiles, food colours, pH indicators (e.g., methyl orange).',
+    summaryText: 'Diazotisation: C₆H₅NH₂ + NaNO₂ + HCl (0−5°C) → C₆H₅N₂⁺Cl⁻. Diazonium ions unstable above ~10°C. Azo coupling: diazonium + phenol/amine (alkaline) → Ar−N=N−Ar′. Extended conjugation lowers the energy gap between bonding and anti-bonding orbitals, shifting absorption into visible light. Azo dyes used in textiles, food colours, pH indicators.',
     ready: false
   },
   evidence: [
