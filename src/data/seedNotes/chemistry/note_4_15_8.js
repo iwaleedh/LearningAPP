@@ -457,7 +457,18 @@ export const note_chemistry_4_15_8 = {
       data: {
         style: 'worked',
         title: '✏️ Worked Example 4 — ¹H NMR (Low Resolution) of Butanal (CH₃CH₂CH₂CHO)',
-        text: 'Step 1: Label environments.\n  A = CH₃ (3H), B = middle CH₂ (2H), C = CH₂ adjacent to CHO (2H), D = CHO (1H)\n\nStep 2: 4 environments → 4 peaks\n\nStep 3: Determine shifts and assign peaks:\n  • D (CHO): δ ≈ 9.4–10.0 → only 1H → assign to peak at ~10 ppm ✓\n  • A (CH₃): δ ≈ 0–2 ppm (alkyl) → 3H → largest integration → peak at ~0.9 ppm\n  • B (CH₂, next to CH₃): δ ≈ 0–2 ppm (alkyl) → 2H → peak around ~1.7 ppm\n  • C (CH₂, next to CHO): slightly higher δ due to adjacent aldehyde → δ ≈ 2.4 ppm → 2H\n\nIntegration ratio: A:B:C:D = 3:2:2:1'
+        text: 'Step 1: Label environments.\n  A = CH₃ (3H), B = middle CH₂ (2H), C = CH₂ adjacent to CHO (2H), D = CHO (1H)\n\nStep 2: 4 environments → 4 peaks\n\nStep 3: Determine shifts and assign peaks:\n  • D (CHO): δ ≈ 9.4–10.0 → only 1H → assign to peak at ~10 ppm ✓\n  • A (CH₃): δ ≈ 0.1–1.9 ppm (alkyl) → 3H → largest integration relative area → peak at ~0.9 ppm\n  • B (CH₂, next to CH₃): δ ≈ 0.1–1.9 ppm (alkyl) → 2H → peak around ~1.7 ppm\n  • C (CH₂, next to CHO): slightly higher δ due to adjacent aldehyde → δ ≈ 2.4 ppm → 2H\n\nIntegration ratio (areas under peaks): A:B:C:D = 3:2:2:1'
+      }
+    },
+
+    // ── Worked Example 5: structure identification ────────────────────────
+    {
+      id: 'callout-1h-worked2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '✏️ Worked Example 5 — Identifying Isomers with Low Res NMR',
+        text: 'An organic compound is known to be either methyl ethanoate (CH₃COOCH₃), propanoic acid (CH₃CH₂COOH), or ethyl methanoate (HCOOCH₂CH₃). Its low-res ¹H NMR spectrum shows 3 peaks.\n\nCould we identify it just from the number of peaks?\n• Methyl ethanoate: Two identical-looking CH₃ groups, but they are in different environments (one attached to C=O, one to O). It only has hydrogens in these 2 environments → 2 peaks expected. (Not our compound!)\n• Propanoic acid: CH₃, CH₂, and COOH. 3 different environments → 3 peaks expected. (Could be it)\n• Ethyl methanoate: H attached to C=O, CH₂, and CH₃. 3 different environments → 3 peaks expected. (Could be it)\n\nHow do we choose between the remaining two without chemical shifts?\nLook at the relative peak areas (integration ratio):\n• Propanoic acid (CH₃CH₂COOH) would have an area ratio of 3:2:1.\n• Ethyl methanoate (HCOOCH₂CH₃) would also have an area ratio of 1:2:3.\n\nSince the integration traces match, we must rely on the chemical shift:\n• Propanoic acid has a COOH proton, which appears far downfield at δ = 11.0–12.0 ppm.\n• Ethyl methanoate has an aldehyde-like formate proton (H–C=O), appearing around δ = 8.0 ppm.\nBy checking the shift of the single-proton peak (area 1), you get your definitive answer!'
       }
     },
 
