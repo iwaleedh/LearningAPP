@@ -189,7 +189,7 @@ export const note_chemistry_4_15_8 = {
           '<strong>Number of peaks = number of different carbon environments</strong> (NOT necessarily the number of carbon atoms). This is because structural symmetry can make multiple atoms share the same exact environment.',
           'Carbons are in the same environment if they are bonded to exactly the same types of atoms/groups along the entire molecule chain. If two carbons have an identical symmetrical position, they produce a single line.',
           '<strong>Position (chemical shift δ):</strong> reveals the type of carbon environment (compare to data book table). Nearby electronegative atoms "deshield" the carbon nucleus, shifting its peak further downfield (left).',
-          '<strong>Peak height:</strong> proportional to the number of carbons in that environment — if two carbons are identical, their combined peak is taller'
+          '<strong>Peak height:</strong> Not as reliable as ¹H NMR integrations! You <em>cannot</em> draw simple, direct conclusions from peak heights in an ordinary decoupled ¹³C spectrum to count carbons.'
         ]
       }
     },
@@ -288,37 +288,37 @@ export const note_chemistry_4_15_8 = {
     {
       id: 'h-c13-environments',
       type: 'heading',
-      data: { text: 'Counting Carbon Environments', level: 3 }
+      data: { text: 'Counting Carbon Environments & Interpreting Spectra', level: 3 }
     },
     {
       id: 'callout-c13-environments',
       type: 'callout',
       data: {
         style: 'key',
-        title: '💡 When Are Two Carbons in the Same Environment?',
-        text: 'Two carbon atoms are in the SAME environment if they are connected to exactly the same atoms/groups.\n\nExamples:\n• Propan-2-ol: CH₃–CHOH–CH₃ → both CH₃ groups are identical (each bonded to CHOH on one side only) → 2 environments total\n• Propan-1-ol: CH₃–CH₂–CH₂OH → all three carbons are different → 3 environments\n• Symmetrical molecules always have fewer environments — look for a mirror plane'
+        title: '💡 The Golden Rules of ¹³C NMR',
+        text: '1. Number of peaks = Number of different carbon environments.\n2. Chemical shift (δ) = Type of environment (look up in data table).\n\n⚠️ CRITICAL WARNING: In ¹³C NMR, you CANNOT reliably read information directly from peak heights. Unlike ¹H NMR, the height of a peak is NOT strictly proportional to the number of carbons in that environment. Focus only on the number of peaks and their chemical shifts!'
       }
     },
 
-    // ── Worked Example 1: propan-1-ol ────────────────────────────────────
+    // ── Worked Example 1: isomers ────────────────────────────────────
     {
       id: 'callout-c13-worked1',
       type: 'callout',
       data: {
         style: 'worked',
-        title: '✏️ Worked Example 1 — ¹³C NMR of Propan-1-ol (CH₃CH₂CH₂OH)',
-        text: 'Step 1: Label each carbon.\n  Carbon A = CH₃ (bonded to CH₂ only)\n  Carbon B = middle CH₂ (bonded to CH₃ and CH₂OH)\n  Carbon C = CH₂OH (bonded to CH₂ and OH)\n\nStep 2: Each carbon is in a DIFFERENT environment → 3 peaks\n\nStep 3: Assign peaks using chemical shift table:\n  • Carbon C (bonded to OH): C–O type → δ ≈ 50–80 → peak at ~65 ppm ✓\n  • Carbons A and B: C–C alkane type → δ = 5–60 → peaks at ~10 ppm and ~25 ppm\n  • B is closer to the C–OH carbon → slightly higher δ than A (~25 ppm)\n  • A (furthest from OH) → lowest δ (~10 ppm)\n\nPeak ratio: 1:1:1 (all peaks same height — one carbon per environment)'
+        title: '✏️ Worked Example 1 — Distinguishing Isomers (Propanone vs Propanal)',
+        text: 'How could you tell these two isomers (C₃H₆O) apart with just a quick look at a ¹³C NMR spectrum without even checking chemical shifts?\n\n• Propanone: CH₃–CO–CH₃\nThe two carbons in the methyl groups are in exactly the same environment. Because of this symmetry, they produce only a single peak. Propanone will have 2 peaks total (one for the CH₃ groups, one for the C=O carbon).\n\n• Propanal: CH₃–CH₂–CHO\nAll three carbons are in completely different environments. It has no symmetry. Propanal will have 3 peaks.\n\nConclusion: 2 peaks = propanone, 3 peaks = propanal.'
       }
     },
 
-    // ── Worked Example 2: propan-2-ol ────────────────────────────────────
+    // ── Worked Example 2: pulling effect ────────────────────────────────────
     {
       id: 'callout-c13-worked2',
       type: 'callout',
       data: {
         style: 'worked',
-        title: '✏️ Worked Example 2 — ¹³C NMR of Propan-2-ol (CH₃CHOHCH₃)',
-        text: 'Step 1: Identify environments.\n  Carbons A = both CH₃ groups — IDENTICAL (both bonded to CHOH, nothing else)\n  Carbon B = CHOH (central carbon — bonded to two CH₃ groups and OH)\n\nStep 2: Only 2 environments → 2 peaks\n\nStep 3: Assign peaks:\n  • Carbon B (C–OH): δ ≈ 50–80 → peak at ~65 ppm\n  • Carbons A (two identical CH₃): C–C type → δ = 5–60 → peak at ~25 ppm\n\nPeak height ratio: A:B = 2:1 — peak A is TALLER because 2 carbons share that environment\n\n⚠️ KEY POINT: Peak height in ¹³C NMR is proportional to the number of carbons in that environment.'
+        title: '✏️ Worked Example 2 — The "Electron Pulling" Effect (Propan-1-ol)',
+        text: 'Propan-1-ol has the structure CH₃–CH₂–CH₂OH.\n\nStep 1: 3 different environments → 3 peaks expected.\nStep 2: Assign peaks using the chemical shift table:\n  • Carbon C (bonded to OH): C–O type → δ ≈ 50–80 (e.g., peak at ~65 ppm)\n  • Carbons A and B: C–C alkane type → δ = 5–60 (e.g., peaks at ~10 ppm and ~25 ppm)\n\nWhy are A and B different?\nThe electronegative oxygen atom pulls electrons away from nearby carbons. \n• Carbon B is directly adjacent to the C–OH group, so the electronegative pull reduces its shielding, shifting it slightly higher (downfield to ~25 ppm).\n• Carbon A (the distant CH₃) feels very little pull and stays heavily shielded at a low shift (~10 ppm).'
       }
     },
 
@@ -328,8 +328,8 @@ export const note_chemistry_4_15_8 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: '✏️ Worked Example 3 — Identifying a Compound from ¹³C NMR',
-        text: 'A compound with molecular formula C₃H₆O shows 3 peaks in ¹³C NMR:\n  • Peak 1: δ ≈ 200 ppm\n  • Peaks 2 and 3: δ ≈ 10 and 30 ppm\n\nIs it structure A (propanal, CH₃CH₂CHO) or structure B (prop-1-en-1-ol, CH₂=CHCH₂OH)?\n\nStep 1: Peak at δ > 190 ppm = C=O (aldehyde or ketone) → rules out C–O alcohol (~50–80) and C=C alkene (~120–140)\nStep 2: No peak in 120–140 range → no C=C → NOT the enol structure B\nStep 3: Three peaks all at low δ (5–60) and one at ~200 ppm → matches propanal exactly:\n  • C=O carbon (CHO) at ~200 ppm\n  • CH₂ carbon at ~30 ppm (adjacent to carbonyl)\n  • CH₃ carbon at ~10 ppm\n\nAnswer: Structure A (propanal) ✓'
+        title: '✏️ Worked Example 3 — Identifying an Unknown Ester',
+        text: 'A compound with molecular formula C₄H₈O₂ shows 3 peaks in its ¹³C NMR spectrum:\n  • Peak 1: δ ≈ 174 ppm\n  • Peak 2: δ ≈ 67 ppm\n  • Peak 3: δ ≈ 22 ppm\n\nIs it ethyl ethanoate (CH₃COOCH₂CH₃) or 1-methylethyl methanoate (HCOOCH(CH₃)₂)?\n\nStep 1: 3 peaks means 3 carbon environments. But there are 4 carbon atoms! One environment must be shared.\nStep 2: Check the shifts:\n  • ~174 ppm: Carbon-oxygen double bond in an ester/acid (COO).\n  • ~67 ppm: Carbon attached to an oxygen by a single bond (C–O).\n  • ~22 ppm: Carbon attached to other carbons (C–C alkane).\nStep 3: Analyze the structures:\n  • Ethyl ethanoate has 4 different environments! It would produce 4 peaks.\n  • 1-methylethyl methanoate (isopropyl formate) has a perfectly symmetrical CH(CH₃)₂ group. The two CH₃ groups share the exact same environment, giving a single peak for both. Total: 3 environments.\n\nAnswer: It must be 1-methylethyl methanoate.'
       }
     },
 
