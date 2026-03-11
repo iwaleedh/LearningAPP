@@ -62,6 +62,24 @@ export const note_chemistry_5_16_5 = {
       'Example: MnO₂ + HCl is not feasible under standard conditions, but increasing [HCl] to 10 mol dm⁻³ shifts equilibria and may make it feasible',
       'You are NOT expected to calculate how electrode potentials change with concentration — just understand that changing conditions can alter feasibility'
     ] } },
+    {
+      type: 'callout',
+      id: 'callout-limit-kinetics-cr2o7',
+      data: {
+        style: 'warning',
+        title: 'Kinetics Failure: Dichromate(VI) and Water',
+        text: 'Will acidified potassium dichromate(VI) oxidise water?\n  Cr₂O₇²⁻(aq) + 14H⁺(aq) + 6e⁻ ⇌ 2Cr³⁺(aq) + 7H₂O(l)    E° = +1.33 V\n  O₂(g) + 4H⁺(aq) + 4e⁻ ⇌ 2H₂O(l)                         E° = +1.23 V\n\nFeasibility analysis: The Cr₂O₇²⁻ value is more positive (+1.33), so it should shift RIGHT. The O₂/H₂O equilibrium is less positive (+1.23), so it should shift LEFT (water oxidised to O₂).\nE°cell = (+1.33) − (+1.23) = +0.10 V (Feasible!).\n\nHOWEVER: In reality, absolutely nothing happens. The activation energy is extremely high, making the reactants kinetically stable.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-limit-cond-cr2o7',
+      data: {
+        style: 'warning',
+        title: 'Non-Standard Conditions Failure: Dichromate(VI) and Chloride',
+        text: 'Will acidified potassium dichromate(VI) oxidise chloride ions to chlorine?\n  Cr₂O₇²⁻(aq) + 14H⁺(aq) + 6e⁻ ⇌ 2Cr³⁺(aq) + 7H₂O(l)    E° = +1.33 V\n  Cl₂(g) + 2e⁻ ⇌ 2Cl⁻(aq)                                          E° = +1.36 V\n\nFeasibility analysis: The Cl₂ value is more positive, meaning it should shift RIGHT to form Cl⁻. But we want to oxidise Cl⁻, requiring a shift to the LEFT, which contradicts the E° values.\nE°cell = (+1.33) − (+1.36) = −0.03 V (Not feasible).\n\nHOWEVER: If you react potassium dichromate with CONCENTRATED hydrochloric acid (~10 mol dm⁻³ instead of the standard 1 mol dm⁻³), the reaction DOES occur. The massive increase in reactant concentrations shifts the equilibria (Le Chatelier), altering the E values until the dichromate potential becomes more positive than chlorine, forcing oxidation.'
+      }
+    },
     { type: 'callout', id: 'callout-alt-method', data: { style: 'warning', title: 'Alternative Method: Reversing One Half-Equation (Avoid on Exams)', text: 'Some textbooks show: reverse one half-equation and change its sign, then ADD the two E° values.\nExample: Zn + Cu²⁺ → Zn²⁺ + Cu\n  Reverse Zn: Zn(s) → Zn²⁺ + 2e⁻  then E° = +0.76 V (sign flipped)\n  Cu²⁺ + 2e⁻ → Cu            E° = +0.34 V\n  Total = +0.76 + 0.34 = +1.10 V — same answer!\n\nHOWEVER: This is considered an imperfect science because the standard electrode potential of a substance does NOT actually change — it is a property of the half-cell. The exam-safe method is:\n→ E°cell = E°(right) − E°(left). Find right and left by checking reactants and products, NOT by changing signs.' } },
     { type: 'heading', id: 'h-disproportionation', data: { text: 'Disproportionation Reactions', level: 2 } },
     { type: 'callout', id: 'callout-disprop-def', data: { style: 'key', title: 'Definition: Disproportionation', text: 'A disproportionation reaction is one where a SINGLE species is simultaneously oxidised AND reduced in the same reaction.\n\nExample: 2Cu⁺(aq) → Cu²⁺(aq) + Cu(s)\n  Cu⁺ is oxidised (+1 → +2simultaneously\n  Cu⁺ is reduced (+1 → 0) in\n\nMethod: Apply the same 4-step systematic method — circle the SAME starting species in BOTH half-equations from the data book.' } },
@@ -97,6 +115,7 @@ export const note_chemistry_5_16_5 = {
     { id: 'cue-4', blockId: 'callout-disprop-cu', prompt: 'Does Cu⁺ disproportionate? Give E° values and the equilibrium reasoning.' },
     { id: 'cue-5', blockId: 'callout-disprop-fe', prompt: 'Does Fe²⁺ disproportionate into Fe³⁺ + Fe? Explain using equilibrium shifts and E°cell.' },
     { id: 'cue-6', blockId: 'callout-alt-method', prompt: 'What is the exam-safe method for calculating E°cell? Why should you avoid reversing signs?' },
+    { id: 'cue-7', blockId: 'callout-limit-cond-cr2o7', prompt: 'Potassium dichromate(VI) cannot oxidise chloride ions under standard conditions. Explain why it can when concentrated HCl is used.' },
   ], summaryText: '4-step method: write data book equations → circle reactants → equilibrium rule (more −ve → left, more +ve → right) → check if shifts match products. E°cell > 0 → feasible. Cu⁺ disproportionates (+0.37 V); Fe²⁺ does not (−1.21 V). Kinetics can prevent feasible reactions.', ready: false },
   evidence: [ { id: 'ev-1', title: 'Reaction feasibility and disproportionation', detail: 'E°cell criterion, limitations, disproportionation analysis.', year: '2024', source: 'chemguide.co.uk', tags: ['feasibility', 'disproportionation', 'E°cell'] } ],
 };
