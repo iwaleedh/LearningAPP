@@ -49,6 +49,26 @@ export const note_chemistry_2_10_3 = {
             terms: ['Competition', 'Aqueous', 'Ethanolic']
         },
         {
+            id: 'callout-elimination-mechanism',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Elimination Mechanism (Hydroxide as a Base)',
+                text: 'In an elimination reaction, the hydroxide ion (OH⁻) does not act as a nucleophile, but instead acts as a <strong>base</strong> by removing a hydrogen ion (H⁺) from a carbon atom <strong>adjacent</strong> to the carbon holding the halogen.<br/><br/><strong>Mechanism steps:</strong><br/>1. The OH⁻ ion uses its lone pair to form a bond with a hydrogen atom on an adjacent carbon, pulling it off as H⁺.<br/>2. The electron pair from the broken C-H bond folds in to form a C=C double bond.<br/>3. The formation of the double bond forces the halogen atom to leave as a halide ion (e.g. Br⁻), taking the bonding electrons with it.<br/><br/>The result is the formation of an <strong>alkene</strong>, water, and a halide ion.'
+            },
+            terms: ['Base', 'Elimination', 'Mechanism']
+        },
+        {
+            id: 'callout-elimination-unsymmetrical',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Elimination in Unsymmetrical Halogenoalkanes',
+                text: 'When a halogenoalkane is <strong>unsymmetrical</strong> (like 2-bromobutane), elimination can occur in more than one direction because there are <strong>different adjacent carbon atoms</strong> with hydrogen atoms that can be removed.<br/><br/><strong>Example: 2-bromobutane + ethanolic KOH</strong><br/>• Removing H from the CH₃ group at the end forms <strong>but-1-ene</strong>.<br/>• Removing H from the CH₂ group in the middle forms <strong>but-2-ene</strong>.<br/><br/>Furthermore, but-2-ene exhibits <strong>geometric isomerism</strong> (E/Z isomerism). Therefore, this reaction produces a mixture of <strong>three isomeric alkenes</strong>:<br/>1. but-1-ene<br/>2. <em>E</em>-but-2-ene (trans)<br/>3. <em>Z</em>-but-2-ene (cis)'
+            },
+            terms: ['Unsymmetrical', 'Isomeric Alkenes', 'E/Z Isomerism']
+        },
+        {
             id: 'callout-cyanide',
             type: 'callout',
             data: {
@@ -142,6 +162,8 @@ export const note_chemistry_2_10_3 = {
             { id: 'c-nh3-excess', blockId: 'callout-ammonia-products', prompt: 'If you react bromoethane with ammonia, how can you favour the production of a primary amine over secondary or tertiary amines?' },
             { id: 'c-comp1', blockId: 'callout-competition', prompt: 'Which type of halogenoalkane (primary, secondary, or tertiary) is most likely to undergo an elimination reaction when treated with hydroxide ions?' },
             { id: 'c-comp2', blockId: 'callout-competition', prompt: 'State three reaction conditions that would favour elimination over substitution when reacting a halogenoalkane with potassium hydroxide.' },
+            { id: 'c-elim-mech', blockId: 'callout-elimination-mechanism', prompt: 'In the elimination reaction of halogenoalkanes with hydroxide ions, what role does the hydroxide ion play, and what does it remove from the molecule?' },
+            { id: 'c-elim-unsym', blockId: 'callout-elimination-unsymmetrical', prompt: 'When an unsymmetrical halogenoalkane like 2-bromobutane undergoes elimination, why is a mixture of products formed, and what are the three possible alkene isomers produced?' },
             { id: 'c1', blockId: 'table-reactions', prompt: 'State the reagents and conditions to convert a halogenoalkane into a nitrile. Why is this reaction synthetically very useful?' },
             { id: 'c2', blockId: 'table-reactions', prompt: 'Heating 1-bromobutane with AQUEOUS KOH produces an alcohol. What is the product if you heat it with ETHANOLIC KOH instead, and what type of reaction is that?' },
             { id: 'c3', blockId: 'p-sn1', prompt: 'State the type of mechanism that tertiary halogenoalkanes primarily use for substitution, and outline its two main steps.' },

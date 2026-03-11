@@ -8,7 +8,7 @@ export const note_chemistry_2_10_4 = {
         {
             id: 'objective',
             type: 'objective',
-            data: { text: 'Classify alcohols as primary, secondary, or tertiary, understand their reaction with sodium, combustion, halogenation reactions, and their industrial uses.' },
+            data: { text: 'Classify alcohols as primary, secondary, or tertiary, understand their reaction with sodium, combustion, halogenation reactions, dehydration (elimination) to alkenes, and their industrial uses.' },
             terms: []
         },
         {
@@ -136,6 +136,147 @@ export const note_chemistry_2_10_4 = {
             terms: []
         },
         {
+            id: 'h-dehydration',
+            type: 'heading',
+            data: { text: 'Dehydration of Alcohols (Elimination)', level: 2 },
+            terms: []
+        },
+        {
+            id: 'callout-dehydration',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Catalytic Dehydration to Alkenes',
+                text: 'Alcohols can be <strong>dehydrated</strong> (lose a molecule of water) to form an <strong>alkene</strong>. This is an <strong>elimination reaction</strong>.<br/><br/><strong>Reagents & Conditions:</strong><br/>• Heat the alcohol with an excess of a concentrated acid catalyst.<br/>• Concentrated <strong>sulphuric acid (H₂SO₄)</strong> at around 170°C or concentrated <strong>phosphoric(V) acid (H₃PO₄)</strong> can be used.<br/><br/><strong>Example:</strong><br/>CH₃CH(OH)CH₃ → CH₃CH=CH₂ + H₂O<br/><em>(propan-2-ol → propene + water)</em>'
+            },
+            terms: ['Dehydration', 'Elimination', 'Acid Catalyst']
+        },
+        {
+            id: 'callout-dehyd-mechanism',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Mechanism: Acid-Catalysed Dehydration',
+                text: 'The mechanism for the dehydration of secondary and tertiary alcohols (like propan-2-ol) involves the following steps:<br/><br/><strong>1. Protonation:</strong> A lone pair of electrons on the alcohol oxygen picks up a hydrogen ion (H⁺) from the acid catalyst. The oxygen becomes positively charged.<br/><strong>2. Carbocation formation:</strong> The protonated alcohol loses a water molecule, leaving behind a positively charged <strong>carbocation</strong>.<br/><strong>3. Elimination:</strong> A base (such as the HSO₄⁻ ion or water) pulls off a hydrogen ion from a carbon <strong>adjacent</strong> to the carbocation. The electron pair from the broken C-H bond folds in to form the C=C double bond, producing the alkene and regenerating the H⁺ catalyst.'
+            },
+            terms: ['Protonation', 'Carbocation']
+        },
+        {
+            id: 'svg-dehydration-mechanism',
+      type: 'svg',
+      data: {
+        caption: 'Mechanism of acid-catalysed dehydration of propan-2-ol.',
+        svg: `<svg viewBox="0 0 650 480" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="14">
+  <defs>
+    <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#ef4444" />
+    </marker>
+    <style>
+      .txt { fill: #1f2937; }
+      .atom { fill: #111827; font-family: monospace; font-size: 16px; }
+      .charge { fill: #ef4444; font-weight: bold; font-size: 14px; }
+      .bond { stroke: #111827; stroke-width: 1.5; }
+      .curve { fill: none; stroke: #ef4444; stroke-width: 1.5; marker-end: url(#arrowhead); }
+      .hd { fill: #1e40af; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- ======================== STEP 1 ======================== -->
+  <text x="20" y="30" class="hd">1. Protonation of the alcohol</text>
+  
+  <text x="50" y="110" class="atom" text-anchor="start">CH&#8323;&#8212;</text>
+  <text x="100" y="110" class="atom" text-anchor="middle">CH</text>
+  <text x="115" y="110" class="atom" text-anchor="start">&#8212;CH&#8323;</text>
+  
+  <path d="M 100 94 L 100 74" class="bond" />
+  
+  <text x="100" y="70" class="atom" text-anchor="middle">O</text>
+  <text x="80" y="70" class="atom" text-anchor="end">H&#8212;</text>
+  <text x="110" y="70" class="atom" text-anchor="start">:</text>
+
+  <text x="180" y="110" class="atom" text-anchor="middle">+</text>
+  <text x="220" y="110" class="atom" text-anchor="middle" fill="#2563eb">H</text>
+  <text x="228" y="100" class="charge" text-anchor="start">+</text>
+  
+  <path d="M 115 65 Q 170 60 220 90" class="curve" />
+  
+  <text x="280" y="110" class="atom">&#8594;</text>
+
+  <text x="360" y="110" class="atom" text-anchor="start">CH&#8323;&#8212;</text>
+  <text x="410" y="110" class="atom" text-anchor="middle">CH</text>
+  <text x="425" y="110" class="atom" text-anchor="start">&#8212;CH&#8323;</text>
+  
+  <path d="M 410 94 L 410 74" class="bond" />
+  
+  <text x="410" y="70" class="atom" text-anchor="middle">O</text>
+  <text x="390" y="70" class="atom" text-anchor="end">H&#8212;</text>
+  <text x="430" y="70" class="atom" text-anchor="start">&#8212;H</text>
+  <text x="418" y="60" class="charge" text-anchor="start">+</text>
+
+  <!-- ======================== STEP 2 ======================== -->
+  <text x="20" y="180" class="hd">2. Loss of water to form a carbocation</text>
+  
+  <text x="50" y="260" class="atom" text-anchor="start">CH&#8323;&#8212;</text>
+  <text x="100" y="260" class="atom" text-anchor="middle">CH</text>
+  <text x="115" y="260" class="atom" text-anchor="start">&#8212;CH&#8323;</text>
+  
+  <path d="M 100 244 L 100 224" class="bond" />
+  
+  <text x="100" y="220" class="atom" text-anchor="middle">O</text>
+  <text x="80" y="220" class="atom" text-anchor="end">H&#8212;</text>
+  <text x="130" y="220" class="atom" text-anchor="start">&#8212;H</text>
+  <text x="108" y="210" class="charge" text-anchor="start">+</text>
+  
+  <path d="M 106 234 Q 125 225 125 210" class="curve" />
+  
+  <text x="200" y="260" class="atom">&#8594;</text>
+
+  <text x="260" y="260" class="atom" text-anchor="start">CH&#8323;&#8212;</text>
+  <text x="310" y="260" class="atom" text-anchor="middle">CH</text>
+  <text x="310" y="240" class="charge" text-anchor="middle">+</text>
+  <text x="335" y="260" class="atom" text-anchor="start">&#8212;CH&#8323;</text>
+  
+  <text x="410" y="260" class="atom" text-anchor="middle">+</text>
+  
+  <text x="460" y="260" class="atom" text-anchor="middle">H&#8322;O</text>
+
+
+  <!-- ======================== STEP 3 ======================== -->
+  <text x="20" y="330" class="hd">3. Elimination of H&#8314; to form the alkene</text>
+  
+  <text x="75" y="420" class="atom" text-anchor="middle">CH&#8322;</text>
+  <text x="94" y="420" class="atom" text-anchor="start">&#8212;</text>
+  <text x="125" y="420" class="atom" text-anchor="middle">CH</text>
+  
+  <text x="125" y="400" class="charge" text-anchor="middle">+</text>
+  <text x="150" y="420" class="atom" text-anchor="start">&#8212;CH&#8323;</text>
+
+  <path d="M 75 404 L 75 384" class="bond" />
+  <text x="75" y="380" class="atom" text-anchor="middle">H</text>
+
+  <text x="30" y="380" class="atom" text-anchor="end" fill="#047857">:B</text>
+  
+  <path d="M 35 375 Q 50 370 60 375" class="curve" />
+  <path d="M 82 394 Q 105 394 105 410" class="curve" />
+
+  <text x="240" y="420" class="atom">&#8594;</text>
+
+  <text x="300" y="420" class="atom" text-anchor="middle">CH&#8322;</text>
+  <text x="330" y="420" class="atom" text-anchor="middle">=</text>
+  <text x="360" y="420" class="atom" text-anchor="middle">CH</text>
+  <text x="380" y="420" class="atom" text-anchor="start">&#8212;CH&#8323;</text>
+  
+  <text x="460" y="420" class="atom" text-anchor="middle">+</text>
+  
+  <text x="500" y="420" class="atom" text-anchor="middle" fill="#2563eb">BH</text>
+  <text x="515" y="410" class="charge" text-anchor="start">+</text>
+  
+  <text x="545" y="415" class="txt" font-size="12" text-anchor="start">(catalyst</text>
+  <text x="545" y="430" class="txt" font-size="12" text-anchor="start"> regen.)</text>
+</svg>`
+      }
+    },
+        {
             id: 'h-uses',
             type: 'heading',
             data: { text: 'Common Uses of Alcohols', level: 2 },
@@ -169,9 +310,11 @@ export const note_chemistry_2_10_4 = {
             { id: 'c4', blockId: 'table-halogenation', prompt: 'State the reagents used to produce a bromoalkane from an alcohol.' },
             { id: 'c5', blockId: 'table-halogenation', prompt: 'How can a tertiary alcohol be converted into a chloroalkane very quickly at room temperature?' },
             { id: 'c-sodium', blockId: 'callout-sodium', prompt: 'Describe what is observed when a small piece of sodium is dropped into ethanol, and state the name of the organic product formed.' },
+            { id: 'c-dehyd', blockId: 'callout-dehydration', prompt: 'State the reagents and conditions required to dehydrate an alcohol to an alkene.' },
+            { id: 'c-dehyd-mech', blockId: 'callout-dehyd-mechanism', prompt: 'In the acid-catalysed dehydration of an alcohol, what are the three main steps of the mechanism?' },
             { id: 'c-uses', blockId: 'list-uses', prompt: 'State one use for methanol, and two different uses for ethanol. Why is methanol often added to industrial ethanol?' }
         ],
-        summaryText: 'Ethanol can be manufactured continuously by hydrating ethene (fossil-based, using steam + H₂PO₄) or via batch fermentation of sugars (renewable, anaerobic, needs purifying). Alcohols have higher boiling points than alkanes and are soluble in water (if short-chained) due to hydrogen bonding. They react with metallic sodium to form an alkoxide and hydrogen gas. They combust cleanly as fuels. They can be turned into halogenoalkanes. Chloroalkanes: use solid PCl₅ (violent, releases steamy HCl fumes), liquid PCl₃, or conc HCl for 3° alcohols. Bromoalkanes: use 50% H₂SO₄ + KBr to make HBr in situ. Iodoalkanes: use red phosphorus + iodine (to make PI₃), or KI + conc H₃PO₄ (H₂SO₄ cannot be used as it would oxidise iodide to iodine). Alcohols are widely used as fuels, solvents (ethanol in perfumes, propan-2-ol for cleaning), and industrial feedstocks (methanol).',
+        summaryText: 'Ethanol can be manufactured continuously by hydrating ethene (fossil-based, using steam + H₂PO₄) or via batch fermentation of sugars (renewable, anaerobic, needs purifying). Alcohols have higher boiling points than alkanes and are soluble in water (if short-chained) due to hydrogen bonding. They react with metallic sodium to form an alkoxide and hydrogen gas. They combust cleanly as fuels. They can be dehydrated (elimination) into alkenes using concentrated H₂SO₄ or H₃PO₄ at 170°C. They can be turned into halogenoalkanes. Chloroalkanes: use solid PCl₅ (violent, releases steamy HCl fumes), liquid PCl₃, or conc HCl for 3° alcohols. Bromoalkanes: use 50% H₂SO₄ + KBr to make HBr in situ. Iodoalkanes: use red phosphorus + iodine (to make PI₃), or KI + conc H₃PO₄ (H₂SO₄ cannot be used as it would oxidise iodide to iodine). Alcohols are widely used as fuels, solvents (ethanol in perfumes, propan-2-ol for cleaning), and industrial feedstocks (methanol).',
         ready: false
     },
     evidence: []

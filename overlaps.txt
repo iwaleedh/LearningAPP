@@ -1,0 +1,682 @@
+
+==== File: note_1_1_10.js | SVG #1 ====
+Potential Overlap!
+  1: [x:80, y:128] "Regular lattice · vibrate only" (est end: 290)
+  2: [x:250, y:128] "Close but random · flow freely"
+Potential Overlap!
+  1: [x:250, y:128] "Close but random · flow freely" (est end: 460)
+  2: [x:420, y:128] "Far apart · rapid random motion"
+
+==== File: note_1_2_2.js | SVG #2 ====
+Potential Overlap!
+  1: [x:180, y:192] "³⁵Cl-³⁷Cl" (est end: 243)
+  2: [x:192, y:192] "m/z"
+
+==== File: note_1_2_3.js | SVG #1 ====
+Potential Overlap!
+  1: [x:0, y:44] "along x-axis" (est end: 84)
+  2: [x:0, y:48] "1s"
+Potential Overlap!
+  1: [x:0, y:62] "2s" (est end: 14)
+  2: [x:0, y:61] "sphere"
+Potential Overlap!
+  1: [x:0, y:62] "py" (est end: 14)
+  2: [x:0, y:61] "sphere"
+Potential Overlap!
+  1: [x:0, y:62] "pz" (est end: 14)
+  2: [x:0, y:61] "sphere"
+Potential Overlap!
+  1: [x:0, y:62] "py" (est end: 14)
+  2: [x:0, y:62] "2s"
+Potential Overlap!
+  1: [x:0, y:62] "pz" (est end: 14)
+  2: [x:0, y:62] "2s"
+Potential Overlap!
+  1: [x:0, y:74] "along y-axis" (est end: 84)
+  2: [x:0, y:74] "larger sphere + node"
+Potential Overlap!
+  1: [x:0, y:74] "along z-axis" (est end: 84)
+  2: [x:0, y:74] "larger sphere + node"
+Potential Overlap!
+  1: [x:0, y:62] "pz" (est end: 14)
+  2: [x:0, y:62] "py"
+Potential Overlap!
+  1: [x:0, y:74] "along z-axis" (est end: 84)
+  2: [x:0, y:74] "along y-axis"
+
+==== File: note_1_2_3.js | SVG #2 ====
+Potential Overlap!
+  1: [x:24, y:170] "Energy (increasing upward)" (est end: 206)
+  2: [x:158, y:176] "4s"
+
+==== File: note_1_2_3.js | SVG #4 ====
+Potential Overlap!
+  1: [x:250, y:38] "Transition metals (Period 4+)" (est end: 453)
+  2: [x:450, y:38] "Groups 3–8"
+Potential Overlap!
+  1: [x:5, y:68] "Period 1" (est end: 61)
+  2: [x:30, y:70] "H"
+Potential Overlap!
+  1: [x:5, y:97] "Period 2" (est end: 61)
+  2: [x:30, y:99] "Li"
+Potential Overlap!
+  1: [x:250, y:99] "— no d-block in Period 2 —" (est end: 432)
+  2: [x:400, y:99] "B"
+Potential Overlap!
+  1: [x:250, y:99] "— no d-block in Period 2 —" (est end: 432)
+  2: [x:425, y:99] "C"
+Potential Overlap!
+  1: [x:5, y:126] "Period 3" (est end: 61)
+  2: [x:30, y:128] "Na"
+Potential Overlap!
+  1: [x:250, y:128] "— no d-block in Period 3 —" (est end: 432)
+  2: [x:400, y:128] "Al"
+Potential Overlap!
+  1: [x:250, y:128] "— no d-block in Period 3 —" (est end: 432)
+  2: [x:425, y:128] "Si"
+Potential Overlap!
+  1: [x:5, y:155] "Period 4" (est end: 61)
+  2: [x:30, y:157] "K"
+
+==== File: note_1_2_4.js | SVG #1 ====
+Potential Overlap!
+  1: [x:260, y:30] "Bar height = log10(IE / kJ mol-1). Big jumps reveal electron shell boundaries." (est end: 806)
+  2: [x:467, y:38] "n=1"
+
+==== File: note_1_2_7.js | SVG #1 ====
+Potential Overlap!
+  1: [x:230, y:168] "Dumbbell (2 lobes)" (est end: 356)
+  2: [x:246, y:165] "−"
+Potential Overlap!
+  1: [x:230, y:178] "pₓ, pᵧ, p_z along x/y/z axes" (est end: 426)
+  2: [x:405, y:178] "5 d orbitals per subshell"
+
+==== File: note_1_2_8.js | SVG #1 ====
+Potential Overlap!
+  1: [x:16, y:115] "IE₁ / kJ mol⁻¹" (est end: 114)
+  2: [x:55, y:122] "1000"
+
+==== File: note_1_3_3.js | SVG #2 ====
+Potential Overlap!
+  1: [x:265, y:198] "host metal" (est end: 335)
+  2: [x:330, y:198] "alloying element (different size)"
+
+==== File: note_1_3_4.js | SVG #1 ====
+Potential Overlap!
+  1: [x:220, y:28] "F" (est end: 227)
+  2: [x:220, y:27] "120°"
+Potential Overlap!
+  1: [x:370, y:28] "H" (est end: 377)
+  2: [x:370, y:27] "109.5°"
+
+==== File: note_1_3_6.js | SVG #1 ====
+Potential Overlap!
+  1: [x:240, y:138] "empty space" (est end: 317)
+  2: [x:290, y:140] "H"
+
+==== File: note_1_3_7.js | SVG #1 ====
+Potential Overlap!
+  1: [x:480, y:138] "weak London" (est end: 557)
+  2: [x:510, y:134] "C"
+
+==== File: note_1_3_7.js | SVG #2 ====
+Potential Overlap!
+  1: [x:250, y:26] "Si" (est end: 264)
+  2: [x:250, y:18] "Silicon Dioxide (SiO₂) — Giant Covalent Structure"
+Potential Overlap!
+  1: [x:250, y:26] "Si" (est end: 264)
+  2: [x:250, y:32] "Each Si bonded to 4 O atoms; each O bridges 2 Si atoms"
+
+==== File: note_1_4_9.js | SVG #1 ====
+Potential Overlap!
+  1: [x:95, y:200] "Temperature increases ↓" (est end: 256)
+  2: [x:225, y:201] "150–250 °C — jet fuel"
+
+==== File: note_2_10_4.js | SVG #1 ====
+Potential Overlap!
+  1: [x:50, y:110] "CH&#8323;&#8212;" (est end: 162)
+  2: [x:100, y:110] "CH"
+Potential Overlap!
+  1: [x:50, y:110] "CH&#8323;&#8212;" (est end: 162)
+  2: [x:115, y:110] "&#8212;CH&#8323;"
+Potential Overlap!
+  1: [x:115, y:110] "&#8212;CH&#8323;" (est end: 227)
+  2: [x:180, y:110] "+"
+Potential Overlap!
+  1: [x:115, y:110] "&#8212;CH&#8323;" (est end: 227)
+  2: [x:220, y:110] "H"
+Potential Overlap!
+  1: [x:80, y:70] "H&#8212;" (est end: 136)
+  2: [x:100, y:70] "O"
+Potential Overlap!
+  1: [x:80, y:70] "H&#8212;" (est end: 136)
+  2: [x:110, y:70] ":"
+Potential Overlap!
+  1: [x:360, y:110] "CH&#8323;&#8212;" (est end: 472)
+  2: [x:410, y:110] "CH"
+Potential Overlap!
+  1: [x:360, y:110] "CH&#8323;&#8212;" (est end: 472)
+  2: [x:425, y:110] "&#8212;CH&#8323;"
+Potential Overlap!
+  1: [x:390, y:70] "H&#8212;" (est end: 446)
+  2: [x:410, y:70] "O"
+Potential Overlap!
+  1: [x:390, y:70] "H&#8212;" (est end: 446)
+  2: [x:430, y:70] "&#8212;H"
+Potential Overlap!
+  1: [x:50, y:260] "CH&#8323;&#8212;" (est end: 162)
+  2: [x:100, y:260] "CH"
+Potential Overlap!
+  1: [x:50, y:260] "CH&#8323;&#8212;" (est end: 162)
+  2: [x:115, y:260] "&#8212;CH&#8323;"
+Potential Overlap!
+  1: [x:115, y:260] "&#8212;CH&#8323;" (est end: 227)
+  2: [x:200, y:260] "&#8594;"
+Potential Overlap!
+  1: [x:80, y:220] "H&#8212;" (est end: 136)
+  2: [x:100, y:220] "O"
+Potential Overlap!
+  1: [x:80, y:220] "H&#8212;" (est end: 136)
+  2: [x:130, y:220] "&#8212;H"
+Potential Overlap!
+  1: [x:260, y:260] "CH&#8323;&#8212;" (est end: 372)
+  2: [x:310, y:260] "CH"
+Potential Overlap!
+  1: [x:260, y:260] "CH&#8323;&#8212;" (est end: 372)
+  2: [x:335, y:260] "&#8212;CH&#8323;"
+Potential Overlap!
+  1: [x:335, y:260] "&#8212;CH&#8323;" (est end: 447)
+  2: [x:410, y:260] "+"
+Potential Overlap!
+  1: [x:75, y:420] "CH&#8322;" (est end: 138)
+  2: [x:94, y:420] "&#8212;"
+Potential Overlap!
+  1: [x:75, y:420] "CH&#8322;" (est end: 138)
+  2: [x:125, y:420] "CH"
+Potential Overlap!
+  1: [x:94, y:420] "&#8212;" (est end: 143)
+  2: [x:125, y:420] "CH"
+Potential Overlap!
+  1: [x:150, y:420] "&#8212;CH&#8323;" (est end: 262)
+  2: [x:240, y:420] "&#8594;"
+Potential Overlap!
+  1: [x:300, y:420] "CH&#8322;" (est end: 363)
+  2: [x:330, y:420] "="
+Potential Overlap!
+  1: [x:300, y:420] "CH&#8322;" (est end: 363)
+  2: [x:360, y:420] "CH"
+Potential Overlap!
+  1: [x:380, y:420] "&#8212;CH&#8323;" (est end: 492)
+  2: [x:460, y:420] "+"
+
+==== File: note_2_6_0.js | SVG #1 ====
+Potential Overlap!
+  1: [x:14, y:102] "Enthalpy (H)" (est end: 98)
+  2: [x:70, y:100] "ΔH"
+Potential Overlap!
+  1: [x:83, y:50] "Petrol + O₂" (est end: 160)
+  2: [x:104, y:43] "(very high!)"
+Potential Overlap!
+  1: [x:83, y:40] "(energetically unstable)" (est end: 251)
+  2: [x:104, y:43] "(very high!)"
+
+==== File: note_2_6_2.js | SVG #1 ====
+Potential Overlap!
+  1: [x:10, y:102] "Enthalpy H" (est end: 80)
+  2: [x:68, y:104] "ΔH"
+Potential Overlap!
+  1: [x:69, y:57] "Reactants" (est end: 132)
+  2: [x:90, y:50] "Eₐ"
+Potential Overlap!
+  1: [x:390, y:13] "Endothermic (ΔH positive)" (est end: 565)
+  2: [x:396, y:8] "Transition state"
+Potential Overlap!
+  1: [x:278, y:108] "larger)" (est end: 327)
+  2: [x:310, y:108] "ΔH"
+
+==== File: note_2_6_5.js | SVG #1 ====
+Potential Overlap!
+  1: [x:211, y:30] "\u0394H = ? (Route 1, direct)" (est end: 414)
+  2: [x:340, y:34] "Products"
+Potential Overlap!
+  1: [x:120, y:108] "\u0394H\u2082" (est end: 211)
+  2: [x:210, y:104] "Route 2 (indirect)"
+Potential Overlap!
+  1: [x:210, y:104] "Route 2 (indirect)" (est end: 336)
+  2: [x:300, y:108] "\u0394H\u2083"
+
+==== File: note_2_8_0.js | SVG #1 ====
+Potential Overlap!
+  1: [x:178, y:28] "O transferred →" (est end: 283)
+  2: [x:260, y:22] "Blast Furnace — Oxygen-Transfer Redox"
+
+==== File: note_2_8_0.js | SVG #2 ====
+Potential Overlap!
+  1: [x:240, y:51] "[O] oxidising agent →" (est end: 387)
+  2: [x:382, y:60] "CH₃CHO"
+
+==== File: note_2_8_0.js | SVG #4 ====
+Potential Overlap!
+  1: [x:132, y:80] "Oxidation Half-Equation" (est end: 293)
+  2: [x:260, y:87] "2e⁻"
+
+==== File: note_2_8_10.js | SVG #1 ====
+Potential Overlap!
+  1: [x:138, y:89] "(less reactive)" (est end: 243)
+  2: [x:223, y:86] "(acid + base)"
+Potential Overlap!
+  1: [x:223, y:86] "(acid + base)" (est end: 314)
+  2: [x:308, y:78] "Weakly"
+Potential Overlap!
+  1: [x:223, y:86] "(acid + base)" (est end: 314)
+  2: [x:308, y:89] "acidic"
+Potential Overlap!
+  1: [x:476, y:78] "Strongly acidic" (est end: 581)
+  2: [x:562, y:75] "Very strongly"
+Potential Overlap!
+  1: [x:476, y:78] "Strongly acidic" (est end: 581)
+  2: [x:562, y:86] "acidic → HClO₄"
+
+==== File: note_2_8_11.js | SVG #1 ====
+Potential Overlap!
+  1: [x:129, y:96] "slightly soluble" (est end: 241)
+  2: [x:220, y:96] "acid + base"
+Potential Overlap!
+  1: [x:220, y:82] "Complex/uncertain" (est end: 339)
+  2: [x:320, y:82] "Covalent –OH"
+Potential Overlap!
+  1: [x:320, y:96] "No Si=O bonds" (est end: 411)
+  2: [x:408, y:96] "pKₐ ≈ 2.15"
+Potential Overlap!
+  1: [x:320, y:108] "Very weak acid" (est end: 418)
+  2: [x:408, y:108] "Weak acid"
+
+==== File: note_2_8_11.js | SVG #3 ====
+Potential Overlap!
+  1: [x:78, y:250] "No charge delocalisation" (est end: 246)
+  2: [x:230, y:250] "Limited delocalisation"
+
+==== File: note_2_8_11.js | SVG #5 ====
+Potential Overlap!
+  1: [x:327, y:30] "Step 2: Is charge" (est end: 446)
+  2: [x:437, y:35] "YES"
+Potential Overlap!
+  1: [x:327, y:62] "Are there =O bonds to spread it?" (est end: 551)
+  2: [x:539, y:60] "→ STRONG acid"
+
+==== File: note_2_8_3.js | SVG #2 ====
+Potential Overlap!
+  1: [x:14, y:108] "Down group →" (est end: 98)
+  2: [x:75, y:115] "K"
+Potential Overlap!
+  1: [x:195, y:81] "Li₂O-type (limited O₂)" (est end: 349)
+  2: [x:345, y:81] "Peroxide Na₂O₂"
+Potential Overlap!
+  1: [x:62, y:179] "Simple oxide X₂O" (est end: 174)
+  2: [x:172, y:179] "Peroxide X₂O₂"
+
+==== File: note_2_8_4.js | SVG #4 ====
+Potential Overlap!
+  1: [x:115, y:160] "LOW temperature → low thermal stability" (est end: 388)
+  2: [x:365, y:160] "to decompose → high thermal stability"
+
+==== File: note_2_8_4.js | SVG #5 ====
+Potential Overlap!
+  1: [x:118, y:136] "Be has 2 EMPTY orbitals (electron deficient)" (est end: 426)
+  2: [x:362, y:135] "Dashed arrows = dative bonds"
+
+==== File: note_2_8_6.js | SVG #2 ====
+Potential Overlap!
+  1: [x:75, y:36] "½X₂(g) → X(g)" (est end: 166)
+  2: [x:150, y:43] "→"
+Potential Overlap!
+  1: [x:75, y:50] "Atomisation (+ve)" (est end: 194)
+  2: [x:150, y:43] "→"
+Potential Overlap!
+  1: [x:232, y:36] "X(g) + e⁻ → X⁻(g)" (est end: 351)
+  2: [x:310, y:43] "→"
+Potential Overlap!
+  1: [x:232, y:50] "Electron affinity (−ve)" (est end: 393)
+  2: [x:310, y:43] "→"
+Potential Overlap!
+  1: [x:232, y:50] "Electron affinity (−ve)" (est end: 393)
+  2: [x:388, y:50] "Hydration enthalpy (−ve)"
+
+==== File: note_2_8_7.js | SVG #2 ====
+Potential Overlap!
+  1: [x:318, y:155] "pure brine in →" (est end: 423)
+  2: [x:414, y:158] "~30% — no NaCl"
+
+==== File: note_2_8_9.js | SVG #1 ====
+Potential Overlap!
+  1: [x:95, y:78] "Mg²⁺ + O²⁻" (est end: 165)
+  2: [x:158, y:78] "Al³⁺ + O²⁻"
+
+==== File: note_2_8_9.js | SVG #4 ====
+Potential Overlap!
+  1: [x:330, y:28] "O" (est end: 337)
+  2: [x:330, y:20] "SO₃ (planar trigonal)"
+
+==== File: note_4_11_0.js | SVG #1 ====
+Potential Overlap!
+  1: [x:77, y:14] "First Order" (est end: 154)
+  2: [x:77, y:14] "Zero Order"
+Potential Overlap!
+  1: [x:77, y:14] "Second Order" (est end: 161)
+  2: [x:77, y:14] "Zero Order"
+Potential Overlap!
+  1: [x:89, y:57] "Rate = k" (est end: 145)
+  2: [x:95, y:60] "Rate = k[A]"
+Potential Overlap!
+  1: [x:89, y:116] "straight line" (est end: 180)
+  2: [x:89, y:116] "horizontal line"
+Potential Overlap!
+  1: [x:89, y:116] "upward curve" (est end: 173)
+  2: [x:89, y:116] "horizontal line"
+Potential Overlap!
+  1: [x:77, y:14] "Second Order" (est end: 161)
+  2: [x:77, y:14] "First Order"
+Potential Overlap!
+  1: [x:89, y:116] "upward curve" (est end: 173)
+  2: [x:89, y:116] "straight line"
+
+==== File: note_4_11_1.js | SVG #1 ====
+Potential Overlap!
+  1: [x:82, y:14] "1st Order" (est end: 145)
+  2: [x:84, y:14] "Zero Order"
+Potential Overlap!
+  1: [x:82, y:14] "Second Order" (est end: 166)
+  2: [x:84, y:14] "Zero Order"
+Potential Overlap!
+  1: [x:89, y:148] "t½" (est end: 103)
+  2: [x:95, y:153] "Time"
+Potential Overlap!
+  1: [x:14, y:83] "[Conc]" (est end: 56)
+  2: [x:30, y:83] "A₀/4"
+Potential Overlap!
+  1: [x:95, y:103] "t½₁ = t½₂ = CONSTANT" (est end: 235)
+  2: [x:95, y:99] "t½ decreases"
+Potential Overlap!
+  1: [x:95, y:99] "t½ increases" (est end: 179)
+  2: [x:95, y:99] "t½ decreases"
+Potential Overlap!
+  1: [x:95, y:116] "→ proves 1st order!" (est end: 228)
+  2: [x:95, y:113] "over time ↓"
+Potential Overlap!
+  1: [x:95, y:113] "over time ↑" (est end: 172)
+  2: [x:95, y:113] "over time ↓"
+Potential Overlap!
+  1: [x:82, y:14] "Second Order" (est end: 166)
+  2: [x:82, y:14] "1st Order"
+Potential Overlap!
+  1: [x:95, y:99] "t½ increases" (est end: 179)
+  2: [x:95, y:103] "t½₁ = t½₂ = CONSTANT"
+Potential Overlap!
+  1: [x:95, y:113] "over time ↑" (est end: 172)
+  2: [x:95, y:116] "→ proves 1st order!"
+
+==== File: note_4_11_7.js | SVG #1 ====
+Potential Overlap!
+  1: [x:90, y:175] "negative gradient (always)" (est end: 272)
+  2: [x:162, y:167] "gradient = −Eₐ / R"
+Potential Overlap!
+  1: [x:90, y:175] "negative gradient (always)" (est end: 272)
+  2: [x:162, y:183] "∴ Eₐ = −gradient × R"
+
+==== File: note_4_11_8.js | SVG #1 ====
+Potential Overlap!
+  1: [x:62, y:54] "Large reaction beaker" (est end: 209)
+  2: [x:118, y:50] "every"
+Potential Overlap!
+  1: [x:62, y:54] "Large reaction beaker" (est end: 209)
+  2: [x:118, y:62] "5 min"
+Potential Overlap!
+  1: [x:62, y:54] "Large reaction beaker" (est end: 209)
+  2: [x:190, y:51] "Withdraw 10 cm³"
+Potential Overlap!
+  1: [x:62, y:54] "Large reaction beaker" (est end: 209)
+  2: [x:190, y:63] "with pipette"
+Potential Overlap!
+  1: [x:62, y:66] "propanone + I₂ + H₂SO₄" (est end: 216)
+  2: [x:118, y:62] "5 min"
+Potential Overlap!
+  1: [x:62, y:66] "propanone + I₂ + H₂SO₄" (est end: 216)
+  2: [x:190, y:63] "with pipette"
+Potential Overlap!
+  1: [x:62, y:66] "propanone + I₂ + H₂SO₄" (est end: 216)
+  2: [x:190, y:75] "record time at 5 cm³ mark"
+Potential Overlap!
+  1: [x:190, y:75] "record time at 5 cm³ mark" (est end: 365)
+  2: [x:322, y:75] "H₂SO₄ catalyst → stops rxn"
+Potential Overlap!
+  1: [x:322, y:75] "H₂SO₄ catalyst → stops rxn" (est end: 504)
+  2: [x:466, y:75] "endpoint: blue-black → colourless"
+
+==== File: note_4_11_8.js | SVG #2 ====
+Potential Overlap!
+  1: [x:75, y:14] "Zero Order" (est end: 145)
+  2: [x:130, y:16] "Graph Shapes: 1/t vs [Reactant]"
+Potential Overlap!
+  1: [x:75, y:14] "First Order" (est end: 152)
+  2: [x:130, y:16] "Graph Shapes: 1/t vs [Reactant]"
+Potential Overlap!
+  1: [x:75, y:14] "Second Order" (est end: 159)
+  2: [x:130, y:16] "Graph Shapes: 1/t vs [Reactant]"
+Potential Overlap!
+  1: [x:75, y:14] "First Order" (est end: 152)
+  2: [x:75, y:14] "Zero Order"
+Potential Overlap!
+  1: [x:75, y:14] "Second Order" (est end: 159)
+  2: [x:75, y:14] "Zero Order"
+Potential Overlap!
+  1: [x:75, y:90] "straight line" (est end: 166)
+  2: [x:75, y:90] "flat line"
+Potential Overlap!
+  1: [x:75, y:95] "curve (quadratic)" (est end: 194)
+  2: [x:75, y:90] "flat line"
+Potential Overlap!
+  1: [x:75, y:100] "through origin" (est end: 173)
+  2: [x:75, y:100] "rate unaffected"
+Potential Overlap!
+  1: [x:75, y:95] "curve (quadratic)" (est end: 194)
+  2: [x:75, y:100] "rate unaffected"
+Potential Overlap!
+  1: [x:75, y:105] "re-plot 1/t vs [c]²" (est end: 208)
+  2: [x:75, y:100] "rate unaffected"
+Potential Overlap!
+  1: [x:75, y:110] "doubling [c] → double rate" (est end: 257)
+  2: [x:75, y:110] "by concentration"
+Potential Overlap!
+  1: [x:75, y:105] "re-plot 1/t vs [c]²" (est end: 208)
+  2: [x:75, y:110] "by concentration"
+Potential Overlap!
+  1: [x:75, y:115] "→ straight line" (est end: 180)
+  2: [x:75, y:110] "by concentration"
+Potential Overlap!
+  1: [x:75, y:14] "Second Order" (est end: 159)
+  2: [x:75, y:14] "First Order"
+Potential Overlap!
+  1: [x:75, y:95] "curve (quadratic)" (est end: 194)
+  2: [x:75, y:90] "straight line"
+Potential Overlap!
+  1: [x:75, y:95] "curve (quadratic)" (est end: 194)
+  2: [x:75, y:100] "through origin"
+Potential Overlap!
+  1: [x:75, y:105] "re-plot 1/t vs [c]²" (est end: 208)
+  2: [x:75, y:100] "through origin"
+Potential Overlap!
+  1: [x:75, y:105] "re-plot 1/t vs [c]²" (est end: 208)
+  2: [x:75, y:110] "doubling [c] → double rate"
+Potential Overlap!
+  1: [x:75, y:115] "→ straight line" (est end: 180)
+  2: [x:75, y:110] "doubling [c] → double rate"
+
+==== File: note_4_14_6.js | SVG #5 ====
+Potential Overlap!
+  1: [x:190, y:298] "Volume of NaOH added (cm³)" (est end: 372)
+  2: [x:248, y:300] "(= 2× 1st)"
+
+==== File: note_4_14_7.js | SVG #1 ====
+Potential Overlap!
+  1: [x:25, y:92] "clamp" (est end: 60)
+  2: [x:25, y:83] "boss +"
+Potential Overlap!
+  1: [x:83, y:260] "+ phenolphthalein" (est end: 202)
+  2: [x:200, y:257] "pH probe"
+
+==== File: note_4_15_2.js | SVG #1 ====
+Potential Overlap!
+  1: [x:80, y:8] "A" (est end: 87)
+  2: [x:80, y:15] "Starting (R)"
+Potential Overlap!
+  1: [x:280, y:15] "SN2 Backside Attack" (est end: 413)
+  2: [x:340, y:15] "Product (S)"
+Potential Overlap!
+  1: [x:280, y:15] "SN2 Backside Attack" (est end: 413)
+  2: [x:340, y:8] "A"
+Potential Overlap!
+  1: [x:340, y:8] "A" (est end: 347)
+  2: [x:340, y:15] "Product (S)"
+
+==== File: note_4_15_5.js | SVG #2 ====
+Potential Overlap!
+  1: [x:297, y:46] "δ+" (est end: 311)
+  2: [x:310, y:52] "O"
+Potential Overlap!
+  1: [x:253, y:68] "H-bond ①" (est end: 309)
+  2: [x:300, y:68] "H"
+
+==== File: note_4_15_6.js | SVG #2 ====
+Potential Overlap!
+  1: [x:348, y:126] "(propane-1,2,3-triol)" (est end: 495)
+  2: [x:482, y:132] "(carboxylate salts)"
+
+==== File: note_4_15_6.js | SVG #3 ====
+Potential Overlap!
+  1: [x:54, y:315] "–C(=O)–" (est end: 103)
+  2: [x:54, y:315] "O"
+Potential Overlap!
+  1: [x:54, y:315] "–C(=O)–" (est end: 103)
+  2: [x:102, y:315] "⬡"
+
+==== File: note_4_15_7.js | SVG #3 ====
+Potential Overlap!
+  1: [x:40, y:121] "(He / N\u2082)" (est end: 138)
+  2: [x:130, y:123] "(vaporise)"
+
+==== File: note_4_15_7.js | SVG #4 ====
+Potential Overlap!
+  1: [x:325, y:148] "A\u2192B\u2192C\u2192D\u2192E" (est end: 528)
+  2: [x:450, y:146] "accurate Mr"
+
+==== File: note_4_15_8.js | SVG #1 ====
+Potential Overlap!
+  1: [x:510, y:44] "δ=0" (est end: 531)
+  2: [x:510, y:53] "TMS"
+
+==== File: note_4_15_8.js | SVG #5 ====
+Potential Overlap!
+  1: [x:55, y:299] "Assemble fragments → propose structure → verify against molecular formula ✓" (est end: 580)
+  2: [x:55, y:291] "Step 5"
+
+==== File: note_5_16_0.js | SVG #1 ====
+Potential Overlap!
+  1: [x:94, y:50] "oxidation" (est end: 157)
+  2: [x:118, y:58] "e⁻"
+Potential Overlap!
+  1: [x:90, y:62] "M → M⁺ + e⁻" (est end: 167)
+  2: [x:118, y:58] "e⁻"
+Potential Overlap!
+  1: [x:88, y:155] "reduction" (est end: 151)
+  2: [x:112, y:148] "build-up"
+
+==== File: note_5_16_0.js | SVG #2 ====
+Potential Overlap!
+  1: [x:310, y:50] "= best reducer" (est end: 408)
+  2: [x:378, y:56] "Strongest reducing agents →"
+
+==== File: note_5_16_2.js | SVG #1 ====
+Potential Overlap!
+  1: [x:196, y:229] "Pt black (platinum black)" (est end: 371)
+  2: [x:200, y:231] "Temperature: 298 K"
+
+==== File: note_5_16_8.js | SVG #2 ====
+Potential Overlap!
+  1: [x:236, y:41] "H\u2082SO\u2084; filter" (est end: 397)
+  2: [x:342, y:41] "+ washings"
+Potential Overlap!
+  1: [x:342, y:27] "Volumetric flask" (est end: 454)
+  2: [x:448, y:27] "Make up"
+Potential Overlap!
+  1: [x:549, y:27] "Pipette 25 cm\u00b3" (est end: 682)
+  2: [x:643, y:27] "Permanent"
+
+==== File: note_5_16_8.js | SVG #3 ====
+Potential Overlap!
+  1: [x:44, y:26] "Brown/orange" (est end: 128)
+  2: [x:95, y:22] "+ S\u2082O\u2083\u00b2\u207b"
+Potential Overlap!
+  1: [x:44, y:40] "I\u2082 solution" (est end: 156)
+  2: [x:148, y:40] "(nearly done)"
+Potential Overlap!
+  1: [x:95, y:22] "+ S\u2082O\u2083\u00b2\u207b" (est end: 291)
+  2: [x:148, y:26] "Pale yellow"
+Potential Overlap!
+  1: [x:95, y:22] "+ S\u2082O\u2083\u00b2\u207b" (est end: 291)
+  2: [x:199, y:22] "+ starch"
+Potential Overlap!
+  1: [x:95, y:22] "+ S\u2082O\u2083\u00b2\u207b" (est end: 291)
+  2: [x:252, y:26] "Blue-black"
+Potential Overlap!
+  1: [x:148, y:26] "Pale yellow" (est end: 225)
+  2: [x:199, y:22] "+ starch"
+Potential Overlap!
+  1: [x:199, y:22] "+ starch" (est end: 255)
+  2: [x:252, y:26] "Blue-black"
+Potential Overlap!
+  1: [x:252, y:26] "Blue-black" (est end: 322)
+  2: [x:303, y:22] "+ S\u2082O\u2083\u00b2\u207b"
+Potential Overlap!
+  1: [x:303, y:22] "+ S\u2082O\u2083\u00b2\u207b" (est end: 499)
+  2: [x:356, y:26] "Colourless"
+
+==== File: note_5_17_4.js | SVG #1 ====
+Potential Overlap!
+  1: [x:270, y:182] "4 ligands · 109.5° angles" (est end: 445)
+  2: [x:410, y:182] "4 ligands · 90° · same plane"
+
+==== File: note_5_17_4.js | SVG #2 ====
+Potential Overlap!
+  1: [x:85, y:52] "identical groups adjacent (90°)" (est end: 302)
+  2: [x:255, y:52] "identical groups opposite (180°)"
+
+==== File: note_5_17_7.js | SVG #2 ====
+Potential Overlap!
+  1: [x:25, y:120] "Concentration of Reactant" (est end: 200)
+  2: [x:180, y:120] "Rapid acceleration"
+
+==== File: note_5_18_0.js | SVG #1 ====
+Potential Overlap!
+  1: [x:75, y:46] "H" (est end: 82)
+  2: [x:75, y:38] "Kekulé (incorrect)"
+Potential Overlap!
+  1: [x:88, y:178] "C=C 134 pm | C−C 154 pm" (est end: 249)
+  2: [x:170, y:185] "vs"
+Potential Overlap!
+  1: [x:255, y:58] "π above" (est end: 304)
+  2: [x:295, y:66] "H"
+Potential Overlap!
+  1: [x:255, y:116] "π below" (est end: 304)
+  2: [x:295, y:108] "H"
+
+==== File: note_5_20_5.js | SVG #1 ====
+Potential Overlap!
+  1: [x:12, y:127] "(bulb at side arm)" (est end: 138)
+  2: [x:88, y:131] "water out"
+
+==== File: note_5_20_5.js | SVG #2 ====
+Potential Overlap!
+  1: [x:133, y:170] "↑ vapour" (est end: 189)
+  2: [x:188, y:166] "condenser"
+
+Total SVG overlapping text issues found: 58
