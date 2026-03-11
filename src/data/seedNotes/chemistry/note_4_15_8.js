@@ -630,6 +630,39 @@ export const note_chemistry_4_15_8 = {
       }
     },
 
+    // ── Equivalent Hydrogen Atoms ────────────────────────────────────────
+    {
+      id: 'callout-hr-equivalent',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '💡 Equivalent Hydrogen Atoms Do Not Split Each Other',
+        text: 'Hydrogen atoms in the exact same environment (equivalent hydrogens) have NO effect on each other. They do not cause splitting.\n\nFor example, in 1,2-dichloroethane (CH₂Cl–CH₂Cl):\n• There are 4 hydrogens, but because the molecule is perfectly symmetrical, they are ALL in the exact same environment.\n• Result: The NMR spectrum shows just ONE singlet peak with no splitting at all.\n\nSplitting only occurs when protons are on adjacent carbons AND they are in DIFFERENT environments.'
+      }
+    },
+
+    // ── Alcohols and D2O Exchange ────────────────────────────────────────
+    {
+      id: 'callout-hr-oh-d2o',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '🧪 The -OH Peak in Alcohols & D₂O Exchange',
+        text: 'The -OH proton in alcohols has two very special properties in ¹H NMR:\n\n1. Lack of splitting:\nBecause the proton in the -OH group rapidly exchanges with other molecules in solution, it always appears as a SINGLET. Furthermore, it very rarely causes any splitting on the adjacent protons (e.g. the CH₂ in ethanol is a quartet entirely driven by the CH₃, ignoring the -OH).\n\n2. D₂O Exchange to identify the -OH peak:\nThe chemical shift of -OH can vary wildly (δ 0.5–5.0) depending on concentration and solvent. To definitively identify which peak belongs to the -OH group:\n• Run the ¹H NMR normally.\n• Add a few drops of heavy water (deuterium oxide, D₂O) and shake the tube.\n• The slightly acidic -OH proton exchanges with deuterium: R–OH + D₂O ⇌ R–OD + HOD.\n• Deuterium nuclei (²H) do not absorb radio waves in the ¹H NMR frequency range.\n• Result: The -OH peak DISAPPEARS from the spectrum! Giving you proof of which peak it was.'
+      }
+    },
+
+    // ── Benzene Rings ────────────────────────────────────────────────────
+    {
+      id: 'callout-hr-benzene',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Benzene Ring Protons (Multiplets)',
+        text: 'For A-Level purposes, you do not need to decipher the complex splitting patterns of benzene rings!\n\n• Chemical Shift: Protons attached directly to a benzene ring always appear in the δ = 6.0–9.0 ppm range.\n• Integration / Area: If you see a peak (or group of peaks) here, check the integration area. An area of 5 means one substituent is attached (monosubstituted: C₆H₅–R). An area of 4 indicates two substituents (C₆H₄R₂), and so on.\n• Splitting: Because of the tight overlapping, they often just show up as a messy cluster called a MULTIPLET. Don\'t try to apply n+1 splitting to the ring itself!'
+      }
+    },
+
     // ════════════════════════════════════════════════════════════════════════
     // SECTION 6 — STRUCTURE DETERMINATION FROM NMR
     // ════════════════════════════════════════════════════════════════════════
