@@ -147,7 +147,40 @@ export const note_chemistry_4_12_2 = {
       data: {
         style: 'tip',
         title: 'Predicting Entropy Change Sign',
-        text: 'Melting, boiling, dissolving, and gas expansion → ΔS > 0\nFreezing, condensation, and gas compression → ΔS < 0\nUse particle freedom and disorder as your guide: more freedom = ΔS > 0'
+        text: 'Melting, boiling, dissolving, and gas expansion → ΔS > 0\nFreezing, condensation, and gas compression → ΔS < 0\nFor reactions: count moles of GAS on each side. More gas moles in products → ΔS > 0; fewer gas moles in products → ΔS < 0.\nUse particle freedom and disorder as your guide: more freedom = ΔS > 0'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-reaction-entropy-examples',
+      data: {
+        text: 'Predicting Entropy Change from Equations',
+        level: 2
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-reaction-entropy-intro',
+      data: {
+        text: 'For reactions, the key rule is: count the moles of gas on each side. Gases have far higher entropy than liquids or solids. Producing more gas moles → ΔS positive; producing fewer gas moles → ΔS negative. Changes in solid or liquid moles have a much smaller effect.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-reaction-entropy-worked',
+      data: {
+        style: 'worked',
+        title: 'Worked Examples: Predicting Sign of ΔS',
+        text: 'Example 1: Crystalline solid dissolving in water\nCuSO₄(s) → Cu²⁺(aq) + SO₄²⁻(aq)\nOrdered crystal → dispersed ions in solution. Large increase in disorder.\nΔS: POSITIVE ↑\n\nExample 2: Steam condensing to liquid\nH₂O(g) → H₂O(l)\nGas → liquid. Particles lose freedom and become confined.\nΔS: NEGATIVE ↓\n\nExample 3: Haber process\nN₂(g) + 3H₂(g) → 2NH₃(g)\nReactant gas moles: 1 + 3 = 4 mol gas\nProduct gas moles: 2 mol gas\n4 mol gas → 2 mol gas: fewer gas particles, less disorder.\nΔS: NEGATIVE ↓\n\nExample 4: CuSO₄·5H₂O crystals forming from solution\nCu²⁺(aq) + SO₄²⁻(aq) + 5H₂O(l) → CuSO₄·5H₂O(s)\nDispersed ions + 5 mol liquid water → one mol ordered crystal.\nLarge decrease in disorder (both ions and water molecules become locked into lattice).\nΔS: NEGATIVE ↓'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-reaction-entropy-rule',
+      data: {
+        style: 'key',
+        title: 'Gas Mole Counting Rule',
+        text: 'For any reaction equation:\n\n1. Count total moles of GAS in reactants\n2. Count total moles of GAS in products\n3. If products > reactants → ΔS positive\n   If products < reactants → ΔS negative\n\nSolid and liquid state changes matter much less than gas mole changes.\n\nExtra notes:\n• Ionic solid dissolving → always large positive ΔS (dispersal of ions)\n• Formation of crystals from solution → large negative ΔS (ordering of ions + solvent)\n• Gas → liquid or solid → large negative ΔS'
       }
     },
     {

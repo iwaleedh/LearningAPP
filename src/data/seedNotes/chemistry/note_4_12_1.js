@@ -173,7 +173,16 @@ export const note_chemistry_4_12_1 = {
       data: {
         style: 'worked',
         title: 'Entropy Ordering Example: Water',
-        text: 'H₂O(s) — ice, particles fixed:   S° ≈ 48 J K⁻¹ mol⁻¹\nH₂O(l) — liquid, particles mobile:  S° ≈ 70 J K⁻¹ mol⁻¹\nH₂O(g) — steam, particles free:    S° ≈ 189 J K⁻¹ mol⁻¹\n\nGas entropy is ~4 times the solid entropy due to vastly more microstates.'
+        text: 'H₂O(s) — ice, particles fixed:   S° ≈ 48 J K⁻¹ mol⁻¹\nH₂O(l) — liquid, particles mobile:  S° ≈ 70 J K⁻¹ mol⁻¹\nH₂O(g) — steam, particles free:    S° ≈ 189 J K⁻¹ mol⁻¹\n\nNotice: the solid → liquid jump (+22) is MUCH SMALLER than the liquid → gas jump (+119).\n\nWhy? Liquid water is more ordered than a typical liquid. Hydrogen bonds between H₂O molecules keep them partially organised even in the liquid state. So the entropy gain from melting is modest. Boiling destroys the H-bonding network entirely → large disorder increase.\n\nGas entropy is ~4 times the solid entropy due to vastly more microstates.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-benzene-entropy',
+      data: {
+        style: 'key',
+        title: 'Larger Molecules Have Higher Entropy: Benzene',
+        text: 'Larger, more complex molecules have more ways to distribute vibrational and rotational energy → higher S°.\n\nC₆H₆(l)  — benzene liquid: S° = 173 J K⁻¹ mol⁻¹\nC₆H₆(g) — benzene vapour: S° = 269 J K⁻¹ mol⁻¹\n\nCompare to water:\nH₂O(l) = 70  J K⁻¹ mol⁻¹\nH₂O(g) = 189 J K⁻¹ mol⁻¹\n\nBenzene > water at each state because C₆H₆ has more atoms, more bonds, and more available rotational and vibrational modes for energy to be spread across.'
       }
     },
     {

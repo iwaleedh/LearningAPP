@@ -66,6 +66,23 @@ export const note_chemistry_4_12_8 = {
       }
     },
     {
+      type: 'equation',
+      id: 'eq-gibbs-k',
+      data: {
+        html: '5. ΔG° = −RT ln K   (R = 8.314 J K⁻¹ mol⁻¹;  ΔG° must be in joules)',
+        caption: 'Rearranges to: ln K = −ΔG° / RT  →  K = e^(−ΔG°/RT)'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-gibbs-k-summary',
+      data: {
+        style: 'key',
+        title: 'ΔG° and K: The Essential Link',
+        text: 'Large negative ΔG°  →  large positive ln K  →  K >> 1  →  products favoured (reaction nearly complete)\nLarge positive ΔG°  →  large negative ln K  →  K << 1  →  reactants favoured (barely any product)\nΔG° = 0  →  K = 1  →  equal amounts at equilibrium\n\nUnit trap: ΔG° must be in joules (J mol⁻¹) since R = 8.314 J K⁻¹ mol⁻¹.\nIf ΔG° is given in kJ mol⁻¹, multiply by 1000.\n\nCalculator steps: ln K = −ΔG°/RT → press Shift + ln (eˣ button) to find K.'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-problem-solving-guide',
       data: {
@@ -309,7 +326,7 @@ export const note_chemistry_4_12_8 = {
         prompt: 'Work through the Na₂CO₃ exam question, calculating ΔG at two temperatures and identifying the critical temperature.'
       }
     ],
-    summaryText: 'ΔG = ΔH − TΔS < 0 is spontaneous. Four sign combinations: (1) ΔH<0, ΔS>0 always spontaneous; (2) ΔH>0, ΔS<0 never spontaneous; (3) ΔH>0, ΔS>0 spontaneous above T_crit; (4) ΔH<0, ΔS<0 spontaneous below T_crit. Critical T = ΔH/ΔS. Watch units: ΔS in J K⁻¹ mol⁻¹ requires conversion to kJ K⁻¹ mol⁻¹.',
+    summaryText: 'ΔG = ΔH − TΔS < 0 is spontaneous. Four sign combinations: (1) ΔH<0, ΔS>0 always spontaneous; (2) ΔH>0, ΔS<0 never spontaneous; (3) ΔH>0, ΔS>0 spontaneous above T_crit; (4) ΔH<0, ΔS<0 spontaneous below T_crit. Critical T = ΔH/ΔS. Watch units: ΔS in J K⁻¹ mol⁻¹ requires conversion to kJ K⁻¹ mol⁻¹. ΔG° = −RT ln K: large negative ΔG° → large K (products favoured); convert ΔG° to joules.',
     ready: false
   },
   evidence: [

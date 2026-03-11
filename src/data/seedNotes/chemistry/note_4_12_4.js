@@ -216,6 +216,78 @@ export const note_chemistry_4_12_4 = {
       }
     },
     {
+      type: 'callout',
+      id: 'co-caco3-crit-temp',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: CaCO₃ Decomposition — Finding T_crit',
+        text: 'CaCO₃(s) → CaO(s) + CO₂(g)\nΔH = +178 kJ mol⁻¹    ΔS = +160.4 J K⁻¹ mol⁻¹ = +0.1604 kJ K⁻¹ mol⁻¹\n\nSigns: ΔH > 0, ΔS > 0  →  Case 3: spontaneous only above T_crit\n\nAt 293 K (room temperature):\nΔG = 178 − 293 × 0.1604 = 178 − 47.0 = +131 kJ mol⁻¹\nΔG > 0  →  NOT feasible at room temperature ✗\n\nAt 1273 K (a furnace):\nΔG = 178 − 1273 × 0.1604 = 178 − 204.2 = −26.2 kJ mol⁻¹\nΔG < 0  →  feasible at high temperature ✓\n\nFinding T_crit (where ΔG = 0):\n0 = 178 − T × 0.1604\nT = 178 ÷ 0.1604 = 1110 K  (≈ 837 °C)\n\nConclusion: CaCO₃ decomposition only becomes feasible above 1110 K.\nBelow 1110 K: CaCO₃ is stable. Above 1110 K: decomposition is spontaneous.'
+      }
+    },
+    {
+      type: 'heading',
+      id: 'h-gibbs-equilibrium',
+      data: {
+        text: 'Linking ΔG° to the Equilibrium Constant K',
+        level: 2
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-gibbs-k-intro',
+      data: {
+        text: 'Gibbs free energy under standard conditions (ΔG°) is directly connected to the equilibrium constant K of a reaction. The relationship is:'
+      }
+    },
+    {
+      type: 'equation',
+      id: 'eq-gibbs-k',
+      data: {
+        html: 'ΔG° = −RT ln K',
+        caption: 'R = 8.314 J K⁻¹ mol⁻¹  |  T in kelvin  |  ΔG° in joules (NOT kJ)'
+      }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-gibbs-k-explained',
+      data: {
+        text: 'Rearranging: ln K = −ΔG° / RT. A large negative ΔG° gives a large positive ln K, which means a large K — products are heavily favoured and the reaction goes nearly to completion. A large positive ΔG° gives a large negative ln K, which means a very small K — reactants are strongly favoured and almost no product forms.'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-gibbs-k-unit-trap',
+      data: {
+        style: 'warning',
+        title: 'Unit Trap: ΔG° Must Be in Joules',
+        text: 'R = 8.314 J K⁻¹ mol⁻¹ — R is in joules.\nTherefore ΔG° must ALSO be in joules when using ΔG° = −RT ln K.\n\nIf ΔG° is given in kJ mol⁻¹, multiply by 1000 before substituting:\n\nΔG° = −60.0 kJ mol⁻¹  →  −60 000 J mol⁻¹\n\nForgetting this gives an answer about 1000× too large or too small!'
+      }
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-gibbs-k-relationship',
+      data: {
+        caption: 'Relationship Between ΔG° and Equilibrium Constant K',
+        headers: ['ΔG° sign', 'ln K sign', 'K value', 'Reaction position'],
+        rows: [
+          ['Large negative (e.g. −100 kJ)', 'Large positive', 'K >> 1', 'Products nearly complete — forward reaction favoured'],
+          ['Small negative (e.g. −5 kJ)', 'Small positive', 'K slightly > 1', 'Slightly products-favoured'],
+          ['Zero (ΔG° = 0)', 'Zero', 'K = 1', 'Reactants and products equally present at equilibrium'],
+          ['Small positive (e.g. +5 kJ)', 'Small negative', 'K slightly < 1', 'Slightly reactants-favoured'],
+          ['Large positive (e.g. +100 kJ)', 'Large negative', 'K << 1', 'Barely any product forms — reactants almost entirely remain']
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'co-gibbs-k-worked',
+      data: {
+        style: 'worked',
+        title: 'Worked Examples: Calculating K from ΔG°',
+        text: 'Example 1: ΔG° = −60.0 kJ mol⁻¹ at 373 K\n\nStep 1 — Convert to joules: ΔG° = −60 000 J mol⁻¹\nStep 2 — Rearrange for ln K:\n  ln K = −ΔG° / RT = −(−60 000) / (8.314 × 373)\n  ln K = 60 000 / 3101 = 19.35\nStep 3 — Find K using eˣ:\n  K = e¹⁹·³⁵ = 2.53 × 10⁸\n\nVery large K → reaction goes almost to completion. ✓\n\n---\n\nExample 2: ΔG° = +60.0 kJ mol⁻¹ at 373 K\n\n  ln K = −(+60 000) / (8.314 × 373) = −19.35\n  K = e⁻¹⁹·³⁵ = 3.96 × 10⁻⁹\n\nVery small K → almost no product forms. ✓\n\nNote: On a calculator: to find K from ln K, press Shift + ln (i.e. the eˣ button), then enter the value.'
+      }
+    },
+    {
       type: 'checklist',
       id: 'cl-gibbs',
       data: {
@@ -225,7 +297,10 @@ export const note_chemistry_4_12_4 = {
           { text: 'ΔH > 0 and ΔS < 0 → never spontaneous (no T)', checked: false },
           { text: 'ΔH > 0 and ΔS > 0 → spontaneous at high T (above T_crit)', checked: false },
           { text: 'ΔH < 0 and ΔS < 0 → spontaneous at low T (below T_crit)', checked: false },
-          { text: 'Critical T = ΔH / ΔS (watch units!)', checked: false }
+          { text: 'Critical T = ΔH / ΔS (watch units!)', checked: false },
+          { text: 'ΔG° = −RT ln K links standard Gibbs energy to equilibrium constant', checked: false },
+          { text: 'For ΔG° = −RT ln K: ΔG° must be in JOULES (multiply kJ by 1000); R = 8.314 J K⁻¹ mol⁻¹', checked: false },
+          { text: 'Large negative ΔG° → large K (products favoured); large positive ΔG° → small K (reactants favoured)', checked: false }
         ]
       }
     },
@@ -297,9 +372,14 @@ export const note_chemistry_4_12_4 = {
         id: 'cue-5',
         blockId: 'h-graph',
         prompt: 'When plotting a graph of ΔG against Temperature (T), what do the y-intercept, gradient, and x-intercept represent?'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'h-gibbs-equilibrium',
+        prompt: 'State the equation linking ΔG° to K. Calculate K when ΔG° = −60.0 kJ mol⁻¹ at 373 K.'
       }
     ],
-    summaryText: 'ΔG = ΔH − TΔS < 0 is spontaneous. Four cases. T_crit = ΔH / ΔS. On a ΔG vs T graph: y-intercept is ΔH, gradient is −ΔS, and x-intercept is T_crit.',
+    summaryText: 'ΔG = ΔH − TΔS < 0 is spontaneous. Four cases. T_crit = ΔH/ΔS. On a ΔG vs T graph: y-intercept is ΔH, gradient is −ΔS, and x-intercept is T_crit. CaCO₃ decomposition: T_crit = 1110 K. ΔG° = −RT ln K: convert ΔG° to joules; large negative ΔG° → large K; large positive ΔG° → small K.',
     ready: false
   },
   evidence: [

@@ -238,6 +238,15 @@ export const note_chemistry_4_12_3 = {
       }
     },
     {
+      type: 'callout',
+      id: 'co-benzene-never-feasible',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: A Reaction That Is Never Feasible',
+        text: 'Synthesis of benzene from its elements:\n6C(s) + 3H₂(g) → C₆H₆(l)\n\nΔH = +49 kJ mol⁻¹  (endothermic)\nΔS_sys = −254 J K⁻¹ mol⁻¹  (fewer gas moles in products; ordering)\n\nStep 1 — ΔS_surroundings:\nΔS_surr = −ΔH / T = −49 000 / T\n→ Since ΔH is POSITIVE, ΔS_surr is NEGATIVE at all temperatures.\n\nStep 2 — ΔS_total:\nΔS_total = ΔS_sys + ΔS_surr = (−254) + (−49 000 / T)\n\nBoth terms are negative at every possible temperature.\nIncreasing T makes ΔS_surr less negative, but ΔS_total can never become positive.\n\nConclusion: ΔS_total < 0 at ALL temperatures → benzene synthesis is NEVER thermodynamically feasible from its elements under standard conditions.\n\nKey insight: When BOTH ΔH > 0 AND ΔS_sys < 0, there is no temperature at which the reaction can become spontaneous.'
+      }
+    },
+    {
       type: 'paragraph',
       id: 'p-spont-entropy-3',
       data: {
