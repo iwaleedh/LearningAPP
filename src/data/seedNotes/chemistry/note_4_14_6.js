@@ -206,12 +206,22 @@ export const note_chemistry_4_14_6 = {
       data: {
         headers: ['Indicator', 'pH Range', 'Colour Change', 'Suitable For'],
         rows: [
-          ['Methyl orange', '2.7–4.7', 'Red → Yellow', 'Strong acid + strong base; Strong acid + weak base'],
+          ['Methyl orange', '3.1–4.4', 'Red → Yellow', 'Strong acid + strong base; Strong acid + weak base'],
           ['Methyl red', '4.4–6.2', 'Red → Yellow', 'Strong acid + strong base; Strong acid + weak base'],
+          ['Litmus', '5.0–8.0', 'Red → Blue', 'General acid-alkali testing (range is too wide/gradual for accurate titrations)'],
           ['Phenolphthalein', '8.3–10.0', 'Colourless → Pink', 'Weak acid + strong base; Strong acid + strong base'],
           ['Universal indicator', 'Full range', 'Multiple colours', 'NEVER suitable for titrations — range too wide']
         ],
         caption: 'Indicator pH ranges — values found in data booklet; choose based on titration type'
+      }
+    },
+    {
+      id: 'callout-endpoint-detection',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: '💬 Practical Tip: Spotting the End Point',
+        text: 'Because indicator color changes happen over a range, you rarely look for the exact "50/50" midpoint.\n\n• <strong>Phenolphthalein:</strong> The 50/50 mix is just a paler pink, which is very hard to detect consistently. Instead, titrate to the <em>very first permanent trace of pink</em> (when adding alkali) or until it <em>just goes completely colourless</em> (when adding acid), which happens around pH 8.3.\n• <strong>Methyl orange:</strong> Titrate until the <em>very first trace of orange</em> appears in the solution (usually around pH 4).'
       }
     },
     {
