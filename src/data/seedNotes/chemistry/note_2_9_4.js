@@ -308,6 +308,27 @@ export const note_chemistry_2_9_4 = {
                 ]
             },
             terms: ['Esterification', 'Hydration', 'Nitration']
+        },
+        {
+            id: 'h-other-organic-catalysts',
+            type: 'heading',
+            data: { text: 'Other Catalysts in Organic Chemistry', level: 2 },
+            terms: []
+        },
+        {
+            id: 'table-other-organic-catalysts',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Further Examples of Catalysis in Organic Reactions',
+                headers: ['Reaction / Process', 'Reactants', 'Catalyst & Conditions', 'Phase / Type'],
+                rows: [
+                    ['Manufacture of epoxyethane', 'Ethene + Oxygen ($O_2$)', 'Solid silver (Ag) catalyst, 250-300 °C, < 15 atm', 'Heterogeneous (solid with gas)'],
+                    ['Halogenation of benzene', 'Benzene + $Cl_2$ / $Br_2$', 'Aluminium chloride ($AlCl_3$) or Iron (Fe) forming $FeX_3$', 'Homogeneous'],
+                    ['Friedel-Crafts alkylation', 'Benzene + Chloroalkane', 'Aluminium chloride ($AlCl_3$)', 'Homogeneous'],
+                    ['Friedel-Crafts acylation', 'Benzene + Acyl chloride', 'Aluminium chloride ($AlCl_3$)', 'Homogeneous']
+                ]
+            },
+            terms: ['Epoxyethane', 'Friedel-Crafts', 'Halogenation']
         }
     ],
     recall: {
@@ -321,7 +342,9 @@ export const note_chemistry_2_9_4 = {
             { id: 'c6', blockId: 'table-catalyst-examples', prompt: 'Define the term "heterogeneous catalyst" and name the solid catalyst used in the Haber process.' },
             { id: 'c7', blockId: 'table-ts-vs-intermediate', prompt: 'Distinguish between a transition state and a reaction intermediate in terms of stability and isolation.' },
             { id: 'c8', blockId: 'table-acid-catalysts', prompt: 'Name the catalyst and conditions used for the hydration of ethene.' },
-            { id: 'c9', blockId: 'table-acid-catalysts', prompt: 'What acid catalyst is used for the esterification of carboxylic acids and alcohols, and is it homogeneous or heterogeneous?' }
+            { id: 'c9', blockId: 'table-acid-catalysts', prompt: 'What acid catalyst is used for the esterification of carboxylic acids and alcohols, and is it homogeneous or heterogeneous?' },
+            { id: 'c10', blockId: 'table-other-organic-catalysts', prompt: 'State the catalyst, temperatures, and pressure used for the manufacture of epoxyethane.' },
+            { id: 'c11', blockId: 'table-other-organic-catalysts', prompt: 'What catalyst is typically used in the halogenation, alkylation, and acylation of benzene?' }
         ],
         summaryText: 'Catalyst: increases rate without being used up by providing an alternative reaction route with a lower activation energy. It does not change the kinetic energy of particles or the overall ΔH. On a Maxwell-Boltzmann curve, the catalyst shifts the E_a line left, exponentially increasing the proportion of molecules with E ≥ E_a, yielding a higher frequency of successful collisions. In industry, they save money by allowing faster production at lower temperatures. Examples include Iron in the Haber process and V₂O₅ in the Contact process (both heterogeneous). The energy profile shape depends on mechanism: a single transition state (unstable top of peak) vs an intermediate (temporary stable dip between peaks).',
         ready: false
