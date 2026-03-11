@@ -49,6 +49,29 @@ export const note_chemistry_2_9_3 = {
             terms: []
         },
         {
+            id: 'svg-maxwell-boltzmann',
+            type: 'svg',
+            data: {
+                caption: 'Maxwell-Boltzmann Distribution with Activation Energy',
+                svg: `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <line x1="40" y1="260" x2="380" y2="260" stroke="#333" stroke-width="2" />
+  <line x1="40" y1="260" x2="40" y2="20" stroke="#333" stroke-width="2" />
+  <text x="15" y="150" font-family="Arial" font-size="14" transform="rotate(-90 15,150)" fill="#777">Number of particles</text>
+  <text x="210" y="280" font-family="Arial" font-size="14" fill="#777">Energy</text>
+  
+  <path d="M 40 260 Q 80 50 140 150 T 360 255" stroke="var(--color-primary)" stroke-width="3" fill="none" />
+  
+  <line x1="260" y1="260" x2="260" y2="100" stroke="var(--color-text)" stroke-width="2" stroke-dasharray="4" />
+  <text x="265" y="90" font-family="Arial" font-size="14" fill="var(--color-text)">Activation Energy (Ea)</text>
+  
+  <path d="M 260 215 Q 310 240 360 255 L 360 260 L 260 260 Z" fill="rgba(8, 145, 178, 0.4)" />
+  <text x="270" y="240" font-family="Arial" font-size="12" fill="var(--color-text)">Particles with</text>
+  <text x="270" y="255" font-family="Arial" font-size="12" fill="var(--color-text)">enough energy</text>
+</svg>`
+            },
+            terms: []
+        },
+        {
             id: 'h-temperature',
             type: 'heading',
             data: { text: 'Effect of Changing Temperature', level: 2 },
@@ -60,7 +83,7 @@ export const note_chemistry_2_9_3 = {
             data: {
                 style: 'key',
                 title: 'Why temperature dramatically increases reaction rate',
-                text: 'When you increase the temperature:<br/>1. The peak of the Maxwell-Boltzmann curve moves to the <strong>right</strong> (higher energy) and becomes <strong>lower/flatter</strong>, meaning a wider spread of energies. The total area remains constant.<br/>2. There is a huge increase in the area under the curve to the right of the E_a line.<br/>3. A much larger <strong>proportion of molecules</strong> now possess energy greater than or equal to the activation energy (E ≥ E_a).<br/>4. This leads to a massive increase in the <strong>frequency of successful collisions</strong>.'
+                text: 'When you increase the temperature it alters the energy distribution of particles:\n• The peak of the Maxwell-Boltzmann curve moves to the <strong>right</strong> (higher energy) and becomes <strong>lower/flatter</strong>, meaning a wider spread of energies. The total area remains constant.\n• There is a huge increase in the area under the curve to the right of the E_a line.\n• A much larger <strong>proportion of molecules</strong> now possess energy greater than or equal to the activation energy (E ≥ E_a).\n• This leads to a massive increase in the <strong>frequency of successful collisions</strong>.'
             },
             terms: ['Area under curve', 'Proportion of molecules']
         },

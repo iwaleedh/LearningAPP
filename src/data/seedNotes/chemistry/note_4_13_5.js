@@ -140,7 +140,7 @@ export const note_chemistry_4_13_5 = {
       data: {
         style: 'key',
         title: 'Link Between Enthalpy, Entropy, and K',
-        text: 'ΔG° = ΔH° − TΔS°. At low T: ΔH° term dominates; exothermic reactions (ΔH° < 0) favour products. At high T: TΔS° term grows; reactions with ΔS° > 0 favour products. At equilibrium: ΔG° = 0, so ΔH° = TΔS°. The equation ΔG° = −RT ln K quantifies this relationship.'
+        text: 'Combining <b>ΔG° = ΔH° − TΔS°</b> and <b>ΔG° = −RT ln K</b> gives a powerful relationship:\n\n<b>−RT ln K = ΔH° − TΔS°</b>\n\nDividing by −RT gives:\n<b>ln K = −ΔH°/RT + ΔS°/R</b>\n\nThis explains Le Chatelier\'s principle mathematically:\n• <b>Exothermic reactions (ΔH° < 0):</b> The −ΔH°/RT term is positive. As T increases, this term gets smaller, so ln K gets smaller (equilibrium shifts left).\n• <b>Endothermic reactions (ΔH° > 0):</b> The −ΔH°/RT term is negative. As T increases, it becomes less negative, so ln K gets larger (equilibrium shifts right).\n• Note that ΔS°/R is roughly constant with temperature.'
       }
     },
     {

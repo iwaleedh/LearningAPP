@@ -48,8 +48,8 @@ export const note_chemistry_4_12_4 = {
       id: 'co-gibbs-sign',
       data: {
         style: 'key',
-        title: 'Gibbs Free Energy and Spontaneity',
-        text: 'ΔG < 0 → Spontaneous (reaction will occur)\nΔG = 0 → At equilibrium (no net change)\nΔG > 0 → Non-spontaneous (reaction will not occur in forward direction)\n\nNote: ΔG < 0 says a reaction CAN occur, not that it WILL occur quickly. Kinetics (activation energy) determines the rate.'
+        title: 'Gibbs Free Energy: Feasibility vs Spontaneity',
+        text: 'ΔG < 0 → Thermodynamically Feasible (reaction <i>can</i> occur)\nΔG = 0 → At equilibrium (no net change)\nΔG > 0 → Not feasible (reaction will not occur in forward direction)\n\n<b>Important Warning:</b> The word "spontaneous" can be misleading. ΔG < 0 only means a reaction is <i>feasible</i> (the energetic outcome is favourable). It says <b>nothing</b> about the rate. \n\nFor example, coal (carbon) reacting with oxygen to form CO₂ has a very negative ΔG, making it highly feasible. But a lump of coal will sit in the air forever because of an enormous <b>activation energy</b> barrier (kinetics). It is feasible, but not "spontaneous" in everyday language unless a spark is provided.'
       }
     },
     {

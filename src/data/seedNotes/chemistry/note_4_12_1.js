@@ -58,7 +58,7 @@ export const note_chemistry_4_12_1 = {
       type: 'paragraph',
       id: 'p-boltzmann-2',
       data: {
-        text: 'Consider a thought experiment: 5 gas molecules in a container divided into two equal halves. Each molecule can be in either half, giving 2⁵ = 32 total arrangements. Only 1 of these 32 has ALL molecules on the same side. The probability of finding them spontaneously all on one side is just 1/32. Now scale up to Avogadro\'s number (6.02 × 10²³) of molecules: the number of microstates is 2^(6×10²³) — astronomically large. The probability of them all being on one side is effectively zero. This is why gas expansion is irreversible: the mixed state has overwhelmingly more microstates, and therefore overwhelmingly higher entropy.'
+        text: 'Consider a simple analogy: dropping 2 coins. The chance of getting 2 heads is 1/4. Dropping 100 coins? The chance of them all landing heads is (1/2)¹⁰⁰, which is practically zero. You expect about 50 heads and 50 tails because there are vastly more ways (arrangements) to achieve a mixture than a perfectly ordered state of all heads.\n\nNow consider 5 gas molecules randomly moving in a container divided into two halves. Each molecule can be in either half, giving 2⁵ = 32 total arrangements. Only 1 of these 32 has ALL molecules on the same side. The probability of finding them spontaneously all on one side is just 1/32. Now scale up to Avogadro\'s number (6.02 × 10²³) of molecules: the number of microstates is 2^(6×10²³) — astronomically large. The probability of them all being on one side is effectively zero. This is why gas expansion is irreversible: the mixed state has overwhelmingly more microstates, and therefore overwhelmingly higher entropy.'
       }
     },
     {
@@ -144,11 +144,14 @@ export const note_chemistry_4_12_1 = {
         caption: 'Standard Molar Entropy Values at 298 K (Example)',
         headers: ['Substance', 'State', 'S° / J K⁻¹ mol⁻¹', 'Reason for Relative Value'],
         rows: [
-          ['C (diamond)', 's', '~2.4', 'Highly ordered lattice; minimal disorder'],
-          ['H₂O', 'l', '~70', 'Liquid phase; molecules loosely arranged'],
-          ['H₂O', 'g', '~189', 'Gas phase; molecules widely separated and freely moving'],
-          ['N₂', 'g', '~192', 'Diatomic gas; less complex than polyatomic'],
-          ['CO₂', 'g', '~214', 'Polyatomic gas; more rotational/vibrational modes']
+          ['C (diamond)', 's', '2.4', 'Highly ordered 3D covalent lattice; minimal disorder'],
+          ['Ca(s)', 's', '41.4', 'Metallic lattice; more complex than diamond'],
+          ['CaF₂(s)', 's', '68.9', 'Ionic lattice; more ions means more arrangements'],
+          ['CaCO₃(s)', 's', '92.9', 'Polyatomic ions increase vibrational microstates'],
+          ['H₂O(l)', 'l', '69.9', 'Liquid phase; molecules loosely arranged and able to translate'],
+          ['H₂O(g)', 'g', '188.7', 'Gas phase; molecules widely separated and freely moving'],
+          ['N₂(g)', 'g', '191.6', 'Diatomic gas; standard translational freedom'],
+          ['CO₂(g)', 'g', '213.6', 'Polyatomic gas; more rotational/vibrational modes relative to N₂']
         ]
       }
     },
