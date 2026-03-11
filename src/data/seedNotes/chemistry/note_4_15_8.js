@@ -69,6 +69,15 @@ export const note_chemistry_4_15_8 = {
         ]
       }
     },
+    {
+      id: 'callout-magnetic-theory',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'How Environment Changes the Field',
+        text: 'Electrons naturally shield the nucleus from the external magnetic field. If a highly electronegative atom (like Oxygen) pulls bonding electrons away from carbon, that carbon is <strong>deshielded</strong>. It now feels more of the external magnetic field and flips at a lower applied field strength, showing up further left (downfield) on the spectrum.'
+      }
+    },
 
     // ── NMR Spectrum concept SVG ─────────────────────────────────────────
     {
@@ -175,11 +184,11 @@ export const note_chemistry_4_15_8 = {
       data: {
         style: 'bullet',
         items: [
-          'Measures the chemical environments of <strong>carbon-13 atoms</strong> in a molecule',
+          'Measures the chemical environments of <strong>carbon-13 atoms</strong> in a molecule. (Although ~99% of carbon is ¹²C, NMR instruments still detect ¹³C accurately from immense sample sizes)',
           'Spectrum: a horizontal baseline with vertical peaks — each peak corresponds to a different carbon environment',
-          '<strong>Number of peaks = number of different carbon environments</strong> (NOT necessarily the number of carbon atoms)',
-          'Carbons are in the same environment if they are bonded to exactly the same types of atoms/groups',
-          '<strong>Position (chemical shift δ):</strong> reveals the type of carbon environment (compare to data book table)',
+          '<strong>Number of peaks = number of different carbon environments</strong> (NOT necessarily the number of carbon atoms). This is because structural symmetry can make multiple atoms share the same exact environment.',
+          'Carbons are in the same environment if they are bonded to exactly the same types of atoms/groups along the entire molecule chain. If two carbons have an identical symmetrical position, they produce a single line.',
+          '<strong>Position (chemical shift δ):</strong> reveals the type of carbon environment (compare to data book table). Nearby electronegative atoms "deshield" the carbon nucleus, shifting its peak further downfield (left).',
           '<strong>Peak height:</strong> proportional to the number of carbons in that environment — if two carbons are identical, their combined peak is taller'
         ]
       }
