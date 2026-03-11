@@ -82,6 +82,28 @@ export const note_chemistry_2_10_9 = {
                 text: 'Because we plot Transmittance (the amount of light that made it through), an <strong>absorption "peak" points downwards</strong>.<br/>A strong downward spike means that specific wavenumber of IR radiation was heavily absorbed by a specific type of bond in the sample.'
             },
             terms: []
+        },
+        {
+            id: 'h-fingerprint',
+            type: 'heading',
+            data: { text: 'The Fingerprint Region', level: 2 },
+            terms: []
+        },
+        {
+            id: 'p-fingerprint',
+            type: 'paragraph',
+            data: { text: 'The region to the right-hand side of the IR spectrum (from about 1500 cm⁻¹ to 500 cm⁻¹) usually contains a very complicated series of absorptions. These are mainly due to a variety of complex bending vibrations within the entire molecule. This area is called the <strong>fingerprint region</strong>.' },
+            terms: ['Fingerprint region']
+        },
+        {
+            id: 'callout-fingerprint-use',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Using the Fingerprint Region',
+                text: 'While the region above 1500 cm⁻¹ is used to identify specific functional groups (like an –OH or C=O bond), the fingerprint region is unique to each specific compound. Even molecules with identical functional groups (like propan-1-ol and propan-2-ol) produce completely different patterns between 1500 cm⁻¹ and 500 cm⁻¹. An unknown compound can be positively identified by comparing its fingerprint pattern to a database of known spectra.'
+            },
+            terms: []
         }
     ],
     recall: {
@@ -92,9 +114,11 @@ export const note_chemistry_2_10_9 = {
             { id: 'c3', blockId: 'callout-polarity', prompt: 'Why do molecules of nitrogen gas (N₂) not absorb infrared radiation?' },
             { id: 'c4', blockId: 'p-spectroscopy', prompt: 'What are the labels for the x-axis and y-axis on an infrared spectrum?' },
             { id: 'c5', blockId: 'callout-wavenumber-def', prompt: 'What does a larger wavenumber indicate about the energy of the vibration?' },
-            { id: 'c6', blockId: 'callout-wavenumber', prompt: 'On an IR spectrum, what does a strong downward "peak" indicate?' }
+            { id: 'c6', blockId: 'callout-wavenumber', prompt: 'On an IR spectrum, what does a strong downward "peak" indicate?' },
+            { id: 'c7', blockId: 'p-fingerprint', prompt: 'Which wavenumber range makes up the fingerprint region in an IR spectrum?' },
+            { id: 'c8', blockId: 'callout-fingerprint-use', prompt: 'How is the fingerprint region used to positively identify an exact molecule?' }
         ],
-        summaryText: 'Covalent bonds act like springs. They absorb specific frequencies of Infrared (IR) radiation, causing them to vibrate more vigorously by stretching or bending. Bending usually requires less energy than stretching. This absorption only happens if the vibration changes the molecule\'s dipole moment (e.g., in polar bonds like O-H or C=O). An IR spectrum plots % Transmittance vs Wavenumber (cm⁻¹). Higher wavenumber means higher frequency and energy. Downward peaks indicate that radiation at that frequency was strongly absorbed by a bond.',
+        summaryText: 'Covalent bonds act like springs. They absorb specific frequencies of Infrared (IR) radiation, causing them to vibrate more vigorously by stretching or bending. Bending usually requires less energy than stretching. This absorption only happens if the vibration changes the molecule\'s dipole moment. An IR spectrum plots % Transmittance vs Wavenumber (cm⁻¹). Downward peaks indicate strong absorption. The region from ~1500 to 500 cm⁻¹ is the Fingerprint Region, containing complex peaks (mostly bending). It acts as a unique signature pattern identifying the specific compound when compared to known databases, while frequencies above 1500 cm⁻¹ are used to identify particular functional groups.',
         ready: false
     },
     evidence: []
