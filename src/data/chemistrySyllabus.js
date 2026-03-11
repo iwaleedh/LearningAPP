@@ -124,6 +124,7 @@ export const chemistrySyllabus = {
                         'Solvent choice factors',
                         'Saturated vapour pressure',
                         'Phase diagrams',
+                        'Raoult\'s Law and non-volatile solutes',
                     ],
                 },
                 {
