@@ -28,6 +28,15 @@ export const note_chemistry_4_14_2 = {
       }
     },
     {
+      id: 'callout-exam-ph-def',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Exam Tip: Defining pH',
+        text: 'If asked to define pH in an exam, simply write down the expression: <strong>pH = −log₁₀[H⁺]</strong>. Never try to define it in words. Examiners often reject worded definitions if they miss subtle details (like specifying that the concentration is in mol dm⁻³). The square brackets imply the units natively.'
+      }
+    },
+    {
       id: 'p-ph-scale',
       type: 'paragraph',
       data: {
@@ -285,6 +294,11 @@ export const note_chemistry_4_14_2 = {
         id: 'cue-5',
         blockId: 'ex-strong-base-2',
         prompt: 'Calculate the pH of 0.05 mol dm⁻³ Ca(OH)₂.'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-exam-ph-def',
+        prompt: 'What is the most precise way to answer the exam question "Define pH"?'
       }
     ],
     summaryText: 'pH = −log[H⁺]. Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C. pH + pOH = 14. Strong acid: [H⁺] = concentration. Strong base: [OH⁻] = n × concentration (n = OH⁻ per formula unit). pH < 7 is acidic, pH > 7 is basic.',

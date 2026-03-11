@@ -20,6 +20,15 @@ export const note_chemistry_4_14_3 = {
       }
     },
     {
+      id: 'callout-strength-vs-conc',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Strength vs Concentration: Don\'t Confuse Them!',
+        text: 'It is very important not to confuse <strong>strong/weak</strong> with <strong>concentrated/dilute</strong>.\n\n• <strong>Strength</strong> (strong vs weak) tells you the <em>proportion</em> of acid molecules that ionise in water.\n• <strong>Concentration</strong> (concentrated vs dilute) tells you the <em>total amount</em> of the original acid dissolved per unit volume.\n\nYou can easily have a <strong>concentrated weak acid</strong> (e.g., glacial ethanoic acid at ~17 mol dm⁻³, only slightly ionised) or a <strong>dilute strong acid</strong> (e.g., 0.0001 mol dm⁻³ HCl, fully ionised).'
+      }
+    },
+    {
       id: 'tbl-comparison',
       type: 'comparisonTable',
       data: {
@@ -223,9 +232,14 @@ export const note_chemistry_4_14_3 = {
         id: 'cue-5',
         blockId: 'p-conductivity',
         prompt: 'Why does a weak acid solution conduct electricity less well than a strong acid at the same concentration?'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-strength-vs-conc',
+        prompt: 'Explain the difference between a "strong" acid and a "concentrated" acid.'
       }
     ],
-    summaryText: 'Strong acids: ~100% dissociation, lower pH. Weak acids: partial dissociation (α << 1), higher pH at same concentration. Weak acids have Ka < 1; degree of dissociation increases with dilution. Weak acid solutions have lower conductivity.',
+    summaryText: 'Strong vs Concentrated: Strength is % dissociation; concentration is moles per dm³. Strong acids: ~100% dissociation, lower pH. Weak acids: partial dissociation (α << 1), higher pH at same concentration. Weak acids have Ka < 1; degree of dissociation increases with dilution. Weak acid solutions have lower conductivity.',
     ready: false
   },
   evidence: [
