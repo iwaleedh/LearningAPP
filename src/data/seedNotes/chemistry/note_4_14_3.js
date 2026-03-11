@@ -132,12 +132,31 @@ export const note_chemistry_4_14_3 = {
       }
     },
     {
-      id: 'p-weak-base-comparison',
+      id: 'h-bases-comparison',
+      type: 'heading',
+      data: { text: 'Parallel: Strong vs Weak Bases', level: 2 }
+    },
+    {
+      id: 'p-strong-base-intro',
+      type: 'paragraph',
+      data: {
+        text: 'The concepts of strong and weak apply perfectly to bases as well. A strong base (e.g., NaOH, KOH) completely dissociates (~100%) into metal ions and hydroxide ions in solution. In contrast, weak bases only partially react to produce OH⁻ ions.'
+      }
+    },
+    {
+      id: 'p-weak-base-ammonia',
+      type: 'paragraph',
+      data: {
+        text: 'Ammonia (NH₃) is a typical weak base. It doesn\'t contain OH⁻ groups itself, but it acts as a Brønsted-Lowry base by reversibly taking a proton from water: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻. At any given time, only about 1% of the ammonia molecules have actually reacted to form hydroxide ions, meaning the equilibrium lies heavily to the left.'
+      }
+    },
+    {
+      id: 'callout-kb-pkb',
       type: 'callout',
       data: {
-        style: 'tip',
-        title: 'Weak Bases: Analogous to Weak Acids',
-        text: 'Weak bases (like NH₃) only partially accept protons: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻. A 0.1 M NH₃ solution has pH around 11 (basic, but not as basic as 0.1 M NaOH with pH = 13). The degree of ionization of weak bases is low, similar to weak acids.'
+        style: 'key',
+        title: '💡 Base Dissociation Constant (Kb) & pKb',
+        text: 'Just like Ka measures the strength of a weak acid, <strong>Kb</strong> measures the position of equilibrium for a weak base. For the reaction B + H₂O ⇌ BH⁺ + OH⁻, the constant is: <strong>Kb = [BH⁺][OH⁻] / [B]</strong>.\n\nAs with acids:\n• Larger Kb = stronger base (more OH⁻ produced)\n• pKb = −log₁₀(Kb)\n• Smaller (lower) pKb = stronger base'
       }
     },
     {
@@ -237,9 +256,19 @@ export const note_chemistry_4_14_3 = {
         id: 'cue-6',
         blockId: 'callout-strength-vs-conc',
         prompt: 'Explain the difference between a "strong" acid and a "concentrated" acid.'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'callout-kb-pkb',
+        prompt: 'What does a smaller pKb value indicate about the strength of a weak base?'
+      },
+      {
+        id: 'cue-8',
+        blockId: 'p-weak-base-ammonia',
+        prompt: 'Explain why ammonia (NH₃) acts as a weak base in water.'
       }
     ],
-    summaryText: 'Strong vs Concentrated: Strength is % dissociation; concentration is moles per dm³. Strong acids: ~100% dissociation, lower pH. Weak acids: partial dissociation (α << 1), higher pH at same concentration. Weak acids have Ka < 1; degree of dissociation increases with dilution. Weak acid solutions have lower conductivity.',
+    summaryText: 'Strong vs Concentrated: Strength is % dissociation; concentration is moles per dm³. Strong acids/bases: ~100% dissociation. Weak acids/bases: partial dissociation (α << 1). Weak acids have Ka < 1; weak bases have Kb. Lower pKa or lower pKb means stronger acid or base, respectively.',
     ready: false
   },
   evidence: [

@@ -209,6 +209,15 @@ export const note_chemistry_4_14_2 = {
       }
     },
     {
+      id: 'callout-strong-base-solubility',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: '⚠️ Solubility vs Strength (e.g. Ca(OH)₂)',
+        text: 'Some strong bases like calcium hydroxide (limewater) aren\'t very soluble in water. However, that doesn\'t stop them from being strong bases! <strong>Strength</strong> is about the <em>percentage ionisation of whatever actually dissolves</em>, NOT how much dissolves in total. Every formula unit of Ca(OH)₂ that does dissolve splits 100% into Ca²⁺ and 2 OH⁻ ions.'
+      }
+    },
+    {
       id: 'list-strong-base-steps',
       type: 'list',
       data: {
@@ -341,6 +350,11 @@ export const note_chemistry_4_14_2 = {
         id: 'cue-9',
         blockId: 'callout-le-chatelier-kw',
         prompt: 'Using Le Chatelier\'s Principle, explain why Kw increases as temperature increases.'
+      },
+      {
+        id: 'cue-10',
+        blockId: 'callout-strong-base-solubility',
+        prompt: 'Why is calcium hydroxide considered a strong base even though it is not very soluble in water?'
       }
     ],
     summaryText: 'pH = −log[H⁺]. Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C. pKw = −log₁₀(Kw). pH + pOH = 14. Autoionization of water is endothermic, so Kw increases with temperature. Strong acid: [H⁺] = concentration. Strong base: [OH⁻] = n × concentration (n = OH⁻ per formula unit). pH < 7 is acidic, pH > 7 is basic.',
