@@ -52,6 +52,24 @@ export const note_chemistry_5_17_7 = {
       }
     },
     {
+      type: 'callout',
+      id: 'callout-adsorb-vs-absorb',
+      data: {
+        style: 'warning',
+        title: 'Exam Warning — Adsorption vs Absorption',
+        text: 'Always use the term <strong>adsorb</strong> (with a "d") in heterogeneous catalysis. It means sticking to a surface. <strong>Absorption</strong> (with a "b") means being taken up fully inside the bulk structure of another substance. Also, note that heterogeneous means the catalyst is in a different <strong>phase</strong> from the reactants (phase is slightly more specific than physical state, though they usually overlap).'
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-good-catalysts',
+      data: {
+        style: 'tip',
+        title: 'What makes a good heterogeneous catalyst?',
+        text: 'A good catalyst must adsorb molecules strongly enough to weaken reactant bonds, but not so strongly that products cannot easily desorb. <strong>Silver</strong> is poor because it adsorbs too weakly. <strong>Tungsten</strong> is poor because it adsorbs too strongly (the molecules never leave). Metals like <strong>Platinum</strong> and <strong>Nickel</strong> offer the "Goldilocks" balance representing excellent catalytic properties.'
+      }
+    },
+    {
       type: 'svg',
       id: 'svg-surface-adsorption',
       data: {
@@ -172,6 +190,19 @@ export const note_chemistry_5_17_7 = {
       }
     },
     {
+      type: 'list',
+      id: 'list-hydrogenation-steps',
+      data: {
+        style: 'numbered',
+        items: [
+          'Ethene molecules are <strong>adsorbed</strong> on the surface of the nickel. The double bond between carbon atoms breaks in half, using those electrons to bond the carbon atoms directly to the nickel surface.',
+          'Hydrogen molecules ($H_2$) are also adsorbed. When they bind to the nickel, the H–H bond breaks completely, leaving individual hydrogen atoms moving freely on the metal surface.',
+          'When a hydrogen atom diffuses close to a bonded carbon atom, a C–H bond is formed, detaching that carbon from the nickel surface.',
+          'Once the second carbon atom bonds with another available hydrogen, the new ethane molecule is fully formed and <strong>desorbs</strong> (breaks away) from the catalyst.'
+        ]
+      }
+    },
+    {
       type: 'heading',
       id: 'h-catalytic-converters',
       data: { text: 'Example 4: Catalytic Converters — Pt and Rh', level: 2 }
@@ -189,6 +220,15 @@ export const note_chemistry_5_17_7 = {
         'Catalytic converters require warm-up — ineffective when engine is cold (adsorption less effective at low T)',
         'Lead (from leaded petrol) poisons the catalyst — that is why unleaded fuel must be used'
       ] }
+    },
+    {
+      type: 'callout',
+      id: 'callout-catalyst-poisoning',
+      data: {
+        style: 'warning',
+        title: 'Concept Check: Catalyst Poisoning',
+        text: '<strong>Catalyst poisoning</strong> occurs when a substance which isn\'t a part of the reaction gets very strongly, permanently adsorbed onto the active sites of the catalyst. This physically blocks the intended reactants from reaching the surface. Historically, Lead (added to older petrol / gasoline) would coat the platinum honeycomb inside converters, destroying their catalytic ability.'
+      }
     },
     {
       type: 'heading',
@@ -256,14 +296,50 @@ export const note_chemistry_5_17_7 = {
       }
     },
     {
+      type: 'equation',
+      id: 'eq-autocatalysis-manganate',
+      data: {
+        html: '2MnO<sub>4</sub><sup>−</sup> + 5C<sub>2</sub>O<sub>4</sub><sup>2−</sup> + 16H<sup>+</sup> → 2Mn<sup>2+</sup> + 10CO<sub>2</sub> + 8H<sub>2</sub>O',
+        caption: 'The oxidation of ethanedioate ions by manganate(VII) ions. The Mn²⁺ product acts as an auto-catalyst.'
+      }
+    },
+    {
       type: 'paragraph',
       id: 'p-autocatalysis-pattern',
       data: {
         text: '<strong>Autocatalytic rate pattern:</strong><br/>' +
-        '• Initial phase (t = 0 to early): Reaction is slow (little Mn²⁺ present yet)<br/>' +
-        '• Middle phase: Reaction accelerates (Mn²⁺ accumulates, catalysis increases)<br/>' +
-        '• Late phase: Reaction slows again (reactant depletion dominates)<br/>' +
-        'The overall rate profile shows a characteristic S-shaped (sigmoid) curve when plotting product concentration vs time, with a steep middle section where autocatalysis dominates.'
+        '• Initial phase (t = 0 to early): Reaction is slow (uncatalysed) because no Mn²⁺ is present yet.<br/>' +
+        '• Middle phase: Reaction accelerates (Mn²⁺ accumulates rapidly, providing alternative lower $E_a$ route).<br/>' +
+        '• Late phase: Reaction slows again (reactant concentration depletion dominates over the abundance of catalyst).'
+      }
+    },
+    {
+      type: 'svg',
+      id: 'svg-autocatalysis-curve',
+      data: {
+        caption: 'Rate curve for an autocatalytic reaction against time (S-shape).',
+        svg: `<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <!-- Grid/Axes -->
+  <line x1="50" y1="20" x2="50" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="50" y1="200" x2="380" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="25" y="120" transform="rotate(-90 25 120)" text-anchor="middle" font-size="12">Concentration of Reactant</text>
+  <text x="215" y="235" text-anchor="middle" font-size="12">Time</text>
+  <!-- Normal curve (faded/dashed) -->
+  <path d="M 50 40 Q 150 40, 360 190" fill="none" stroke="#999" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="310" y="160" fill="#999" font-size="10">Normal Reaction</text>
+  <!-- Autocatalysis curve -->
+  <path d="M 50 40 C 200 40, 150 190, 360 190" fill="none" stroke="#e91e63" stroke-width="3"/>
+  <text x="240" y="110" fill="#e91e63" font-size="12" font-weight="bold">Autocatalysis</text>
+  <!-- Labels -->
+  <text x="110" y="30" font-size="10" fill="#1976d2">Slow start</text>
+  <text x="180" y="120" font-size="10" fill="#d32f2f">Rapid acceleration</text>
+  <text x="280" y="215" font-size="10" fill="#f57c00">Reactants run out</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>`
       }
     },
     {
@@ -329,6 +405,21 @@ export const note_chemistry_5_17_7 = {
         id: 'cue-5',
         blockId: 'p-fe-s2o8',
         prompt: 'Show the Fe²⁺-catalysed mechanism for S₂O₈²⁻ + 2I⁻ reaction.'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-adsorb-vs-absorb',
+        prompt: 'What is the operational difference between the terms "adsorb" and "absorb"? Why is "adsorb" the correct term for heterogeneous catalysis?'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'callout-catalyst-poisoning',
+        prompt: 'What is catalyst poisoning? Explain using the historical example of leaded petrol in catalytic converters.'
+      },
+      {
+        id: 'cue-8',
+        blockId: 'svg-autocatalysis-curve',
+        prompt: 'Describe the shape of the concentration-time curve for an autocatalytic reaction. Why does it start slowly before rapidly accelerating?'
       }
     ],
     summaryText: 'TMs catalyse reactions because small energy change needed to alter oxidation state. HARD: Adsorption → Reaction at surface → Desorption. Haber: Fe, N₂ + 3H₂ ⇌ 2NH₃. Contact: V₂O₅ (V⁵⁺↔V⁴⁺), ~725 K, ~2 atm. Converters: Pt oxidises CO/hydrocarbons; Rh reduces NOₓ; combined: 2CO + 2NO → 2CO₂ + N₂. Homogeneous Fe²⁺: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻; then 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂. Fe³⁺ runs steps reversed. Autocatalysis: Mn²⁺ product catalyses KMnO₄ reactions.',
