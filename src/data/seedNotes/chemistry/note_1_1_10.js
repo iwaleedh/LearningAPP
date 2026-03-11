@@ -12,6 +12,66 @@ export const note_chemistry_1_1_10 = {
             terms: []
         },
         {
+            id: 'h-kt-states',
+            type: 'heading',
+            data: { text: 'Kinetic Theory: States of Matter', level: 2 },
+            terms: []
+        },
+        {
+            id: 'svg-particle-states',
+            type: 'svg',
+            data: {
+                svg: '<svg viewBox="0 0 500 175" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11"><defs><marker id="arr-g" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#7c3aed"/></marker></defs><rect x="5" y="5" width="150" height="135" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/><circle cx="29" cy="29" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="54" cy="29" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="79" cy="29" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="104" cy="29" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="129" cy="29" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="29" cy="55" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="54" cy="55" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="79" cy="55" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="104" cy="55" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="129" cy="55" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="29" cy="80" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="54" cy="80" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="79" cy="80" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="104" cy="80" r="11" fill="#3b82f6" opacity="0.85"/><circle cx="129" cy="80" r="11" fill="#3b82f6" opacity="0.85"/><text x="80" y="112" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="12">SOLID</text><text x="80" y="128" text-anchor="middle" fill="#6b7280" font-size="10">Regular lattice · vibrate only</text><rect x="175" y="5" width="150" height="135" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/><circle cx="207" cy="27" r="10" fill="#16a34a" opacity="0.8"/><circle cx="231" cy="22" r="10" fill="#16a34a" opacity="0.8"/><circle cx="255" cy="28" r="10" fill="#16a34a" opacity="0.8"/><circle cx="280" cy="24" r="10" fill="#16a34a" opacity="0.8"/><circle cx="200" cy="51" r="10" fill="#16a34a" opacity="0.8"/><circle cx="225" cy="49" r="10" fill="#16a34a" opacity="0.8"/><circle cx="250" cy="53" r="10" fill="#16a34a" opacity="0.8"/><circle cx="274" cy="47" r="10" fill="#16a34a" opacity="0.8"/><circle cx="212" cy="74" r="10" fill="#16a34a" opacity="0.8"/><circle cx="238" cy="72" r="10" fill="#16a34a" opacity="0.8"/><circle cx="262" cy="76" r="10" fill="#16a34a" opacity="0.8"/><circle cx="285" cy="68" r="10" fill="#16a34a" opacity="0.8"/><text x="250" y="112" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">LIQUID</text><text x="250" y="128" text-anchor="middle" fill="#6b7280" font-size="10">Close but random · flow freely</text><rect x="345" y="5" width="150" height="135" rx="6" fill="#fdf4ff" stroke="#d8b4fe" stroke-width="1.5"/><circle cx="375" cy="30" r="10" fill="#7c3aed" opacity="0.8"/><line x1="383" y1="22" x2="402" y2="13" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr-g)"/><circle cx="460" cy="40" r="10" fill="#7c3aed" opacity="0.8"/><line x1="452" y1="33" x2="435" y2="20" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr-g)"/><circle cx="400" cy="72" r="10" fill="#7c3aed" opacity="0.8"/><line x1="408" y1="65" x2="425" y2="55" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr-g)"/><circle cx="475" cy="78" r="10" fill="#7c3aed" opacity="0.8"/><line x1="467" y1="72" x2="456" y2="58" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr-g)"/><circle cx="358" cy="85" r="10" fill="#7c3aed" opacity="0.8"/><line x1="358" y1="75" x2="353" y2="58" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr-g)"/><text x="420" y="112" text-anchor="middle" fill="#6d28d9" font-weight="bold" font-size="12">GAS</text><text x="420" y="128" text-anchor="middle" fill="#6b7280" font-size="10">Far apart · rapid random motion</text></svg>',
+                caption: 'Particle arrangements in the three states of matter. At atmospheric pressure, gas particles are approximately 10× further apart than their own diameter.'
+            },
+            terms: []
+        },
+        {
+            id: 'list-states',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    '<strong>Solid</strong>: particles touching; held in fixed positions by strong forces (ionic, covalent, metallic, or van der Waals); may be crystalline (regular lattice) or amorphous (random); only vibrate — cannot change position',
+                    '<strong>Liquid</strong>: particles mainly touching but with some gaps allowing movement; forces still act but insufficient to maintain fixed positions; particles arranged randomly and can flow; density slightly lower than solid (exception: ice floats — solid water is less dense than liquid water)',
+                    '<strong>Gas</strong>: particles far apart (∼10× their own diameter at atmospheric pressure); attractive forces between particles entirely negligible; move continuously in random straight lines at high speed'
+                ]
+            },
+            terms: []
+        },
+        {
+            id: 'h-changes-state',
+            type: 'heading',
+            data: { text: 'Changes of State', level: 3 },
+            terms: []
+        },
+        {
+            id: 'list-changes-state',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    '<strong>Melting</strong> (solid → liquid): heat increases vibration until particles break free of fixed positions; <em>enthalpy of fusion</em> = energy to convert 1 mol solid → liquid at its melting point',
+                    '<strong>Boiling</strong> (liquid → gas): further energy until ALL intermolecular attractions break; <em>enthalpy of vaporisation</em> = energy to convert 1 mol liquid → gas; bubbles form throughout the liquid',
+                    '<strong>Evaporation</strong>: only surface particles with above-average kinetic energy escape at any temperature (unlike boiling); causes cooling as the highest-energy particles leave',
+                    '<strong>Condensation</strong> (gas → liquid) and <strong>freezing</strong> (liquid → solid): forces form → energy released',
+                    '<strong>Sublimation</strong>: solid passes directly to gas with no liquid stage (e.g. iodine, dry ice/CO₂ at atmospheric pressure)',
+                    '<strong>Key rule</strong>: breaking bonds/intermolecular forces requires energy input; forming them releases energy'
+                ]
+            },
+            terms: []
+        },
+        {
+            id: 'callout-svp',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Saturated Vapour Pressure (SVP)',
+                text: 'In a <strong>sealed container</strong>, evaporated vapour cannot escape and builds up above the liquid. Vapour molecules returning to the liquid surface cause condensation.<br/><br/>At <strong>dynamic equilibrium</strong>: rate of evaporation = rate of condensation → constant vapour pressure.<br/><br/>The pressure of the vapour at this equilibrium is the <em>saturated vapour pressure</em> (SVP). SVP increases with temperature because more particles have sufficient energy to escape.'
+            },
+            terms: []
+        },
+        {
             id: 'h-equation',
             type: 'heading',
             data: { text: 'The Ideal Gas Equation', level: 2 },
@@ -26,7 +86,7 @@ export const note_chemistry_1_1_10 = {
         {
             id: 'h-assumptions',
             type: 'heading',
-            data: { text: 'Ideal vs Real Gases', level: 2 },
+            data: { text: 'Kinetic Theory Assumptions for an Ideal Gas', level: 2 },
             terms: []
         },
         {
@@ -36,10 +96,13 @@ export const note_chemistry_1_1_10 = {
                 caption: 'Assumptions of an Ideal Gas',
                 headers: ['Assumption', 'Description'],
                 rows: [
-                    ['<strong>No intermolecular forces</strong>', 'Gas particles do not attract or repel each other.'],
-                    ['<strong>Elastic collisions</strong>', 'No kinetic energy is lost when particles collide with each other or the walls.'],
-                    ['<strong>Negligible volume</strong>', 'The volume of the particles themselves is insignificant compared to the container volume.'],
-                    ['<strong>Random motion</strong>', 'Particles move in constant, random, straight-line motion.']
+                    ['<strong>Constant random motion</strong>', 'Particles move continuously in random straight lines, changing direction only on collision.'],
+                    ['<strong>Rigid spheres</strong>', 'Gas molecules behave as perfectly hard, rigid spheres — no deformation on collision.'],
+                    ['<strong>Pressure from wall collisions</strong>', 'Gas pressure arises from the force exerted by particles colliding with the container walls.'],
+                    ['<strong>Elastic collisions</strong>', 'All collisions are perfectly elastic — no net kinetic energy is lost when particles collide with each other or the walls.'],
+                    ['<strong>Temperature ∝ average KE</strong>', 'The absolute temperature (in K) is directly proportional to the average kinetic energy of the gas molecules.'],
+                    ['<strong>No intermolecular forces</strong>', 'Gas particles exert no attractive or repulsive forces on one another (intermolecular forces are entirely negligible).'],
+                    ['<strong>Negligible molecular volume</strong>', 'The volume of the molecules is entirely negligible compared to the volume of the container.']
                 ]
             },
             terms: ['Elastic collision']
@@ -55,6 +118,45 @@ export const note_chemistry_1_1_10 = {
             terms: []
         },
         {
+            id: 'callout-z-factor',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: 'Compression Factor Z — Measuring Deviation from Ideal Behaviour',
+                text: 'The <strong>compression factor</strong> Z = pV / nRT measures how far a real gas deviates from ideal:<br/><br/>• <strong>Ideal gas</strong>: Z = 1 at all conditions.<br/>• <strong>Z &lt; 1</strong> (low temperature, moderate pressure): intermolecular <em>attractions</em> pull molecules inward as they approach the wall → they strike the wall with less force → measured pressure is <strong>lower</strong> than the ideal prediction. Effect is worst when molecules are slow (low T) and close together (moderate P).<br/>• <strong>Z &gt; 1</strong> (very high pressure): molecules occupy significant real volume → free space is <em>less</em> than the total container volume → molecules are more crowded than the model assumes → Z calculated with total V is artificially high.<br/><br/>Most ideal gas: <strong>helium</strong> (smallest atom, weakest van der Waals forces), then hydrogen. Larger or polar molecules deviate most.'
+            },
+            terms: []
+        },
+        {
+            id: 'callout-vdw',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Van der Waals Equation for Real Gases',
+                text: '<strong>(P + an²/V²)(V − nb) = nRT</strong><br/><br/>• <strong>a</strong>: pressure correction — compensates for intermolecular attractions reducing the effective pressure (an²/V² is added back to the measured pressure).<br/>• <strong>b</strong>: volume correction — nb is the volume actually occupied by the molecules; V − nb gives the true free volume available for movement.<br/>• Constants a and b are unique to each gas → no universal values; the ideal gas equation is adequate for most gases at ordinary temperatures and pressures.'
+            },
+            terms: []
+        },
+        {
+            id: 'table-real-molar-volumes',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Molar volumes of real gases at STP (0°C, 101 325 Pa) — ideal value = 22.4 dm³ mol⁻¹',
+                headers: ['Gas', 'Molar volume (dm³ mol⁻¹)', 'Note'],
+                rows: [
+                    ['He', '22.4', 'Most ideal — weakest IMF'],
+                    ['N₂', '22.4', 'Negligible deviation'],
+                    ['O₂', '22.4', 'Negligible deviation'],
+                    ['CH₄', '22.3', 'Very slight deviation'],
+                    ['CO₂', '22.3', 'Very slight (larger, more polarisable)'],
+                    ['C₂H₄', '22.2', 'Small deviation'],
+                    ['NH₃', '22.1', 'Stronger H-bonding IMF'],
+                    ['SO₂', '21.9', 'Largest — polar molecule, strong IMF']
+                ]
+            },
+            terms: []
+        },
+        {
             id: 'callout-equation',
             type: 'callout',
             data: {
@@ -63,6 +165,16 @@ export const note_chemistry_1_1_10 = {
                 text: '• <strong>p</strong> = pressure in Pascals (Pa)<br/>• <strong>V</strong> = volume in cubic metres (m³)<br/>• <strong>n</strong> = amount of substance in moles (mol)<br/>• <strong>R</strong> = the gas constant (8.31 J mol⁻¹ K⁻¹)<br/>• <strong>T</strong> = temperature in Kelvin (K)'
             },
             terms: ['Pressure', 'Volume', 'Gas constant', 'Kelvin']
+        },
+        {
+            id: 'callout-molar-volume',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Molar Volume of an Ideal Gas',
+                text: 'Using pV = nRT with n = 1 mol:<br/><br/>• At <strong>STP</strong> (standard temperature and pressure: 0°C / 273 K, 1 atm / 101 325 Pa):<br/>&nbsp;&nbsp;V = (1 × 8.31 × 273) ÷ 101 325 = <strong>22.4 dm³ mol⁻¹</strong><br/><br/>• At <strong>RTP</strong> (room temperature and pressure: ~20°C / 293 K, 1 atm):<br/>&nbsp;&nbsp;V ≈ (1 × 8.31 × 293) ÷ 101 325 ≈ <strong>24.0 dm³ mol⁻¹</strong><br/><br/>These values apply exactly only for an ideal gas; real gases show small deviations (see table above).'
+            },
+            terms: []
         },
         {
             id: 'h-conversions',
@@ -92,6 +204,25 @@ export const note_chemistry_1_1_10 = {
                 style: 'key',
                 title: 'Rearranging the Equation',
                 text: 'You must be able to confidently rearrange $pV = nRT$ for any variable:<br/>• $p = \\frac{nRT}{V}$<br/>• $V = \\frac{nRT}{p}$<br/>• $n = \\frac{pV}{RT}$<br/>• $T = \\frac{pV}{nR}$'
+            },
+            terms: []
+        },
+        {
+            id: 'h-gas-laws',
+            type: 'heading',
+            data: { text: "Boyle's Law and Charles' Law", level: 2 },
+            terms: []
+        },
+        {
+            id: 'table-gas-laws',
+            type: 'comparisonTable',
+            data: {
+                caption: "Boyle's Law and Charles' Law — both derived directly from pV = nRT",
+                headers: ['Law', 'Statement', 'Mathematical form', 'Link to pV = nRT', 'Kinetic theory explanation'],
+                rows: [
+                    ["<strong>Boyle's Law</strong>", 'At constant temperature and fixed mass: volume is inversely proportional to pressure', 'pV = constant', 'pV = nRT; n, R, T all constant → pV = constant ✓', 'Halving the volume → particles hit the walls twice as often per second → pressure doubles'],
+                    ["<strong>Charles' Law</strong>", 'At constant pressure and fixed mass: volume is directly proportional to kelvin temperature', 'V / T = constant (T in K)', 'Rearrange: V = (nR/p)T; n, R, p all constant → V ∝ T ✓', 'Heating → particles move faster → hit a moveable wall harder and more often → wall expands until pressure re-equalises with outside']
+                ]
             },
             terms: []
         },
@@ -178,15 +309,14 @@ export const note_chemistry_1_1_10 = {
         enabled: true,
         cues: [
             { id: 'c1', blockId: 'callout-equation', prompt: 'State the ideal gas equation. What are the SI units for p, V, T and n?' },
-            { id: 'c-assumptions', blockId: 'table-assumptions', prompt: 'State the four main assumptions of an ideal gas.' },
-            { id: 'c-deviations', blockId: 'callout-real-gases', prompt: 'Under what two specific conditions do real gases deviate most from ideal behaviour, and why?' },
-            { id: 'c2', blockId: 'table-conversions', prompt: 'How do you convert a temperature from °C to Kelvin?' },
-            { id: 'c3', blockId: 'table-conversions', prompt: 'How do you convert a volume from cm³ to m³ for use in the ideal gas equation?' },
-            { id: 'c4', blockId: 'table-conversions', prompt: 'How do you convert pressure from kPa to Pa?' },
-            { id: 'c-mr', blockId: 'callout-mr-calc', prompt: 'State the rearranged formula used to directly calculate the Molar Mass (Mr) of an unknown gas using p, V, T, and mass.' },
-            { id: 'c-combined', blockId: 'callout-combined', prompt: 'State the Combined Gas Law equation for a fixed amount of gas under changing conditions.' }
+            { id: 'c-assumptions', blockId: 'table-assumptions', prompt: 'State all seven kinetic theory assumptions for an ideal gas.' },
+            { id: 'c-deviations', blockId: 'callout-z-factor', prompt: 'Define the compression factor Z. Why is Z < 1 at low temperatures and Z > 1 at very high pressures?' },
+            { id: 'c-gas-laws', blockId: 'table-gas-laws', prompt: "State Boyle's Law and Charles' Law, including their mathematical forms and kinetic theory explanations." },
+            { id: 'c-molar-vol', blockId: 'callout-molar-volume', prompt: 'What is the molar volume of an ideal gas at STP and at RTP? State the values and units.' },
+            { id: 'c-mr', blockId: 'callout-mr-calc', prompt: 'State the formula used to calculate the molar mass (Mr) of an unknown gas from p, V, T, and mass data.' },
+            { id: 'c-combined', blockId: 'callout-combined', prompt: 'State the Combined Gas Law equation. What temperature unit is required?' }
         ],
-        summaryText: 'Ideal gas equation: pV = nRT with SI units (Pa, m³, K). Assumptions: no intermolecular forces, elastic collisions, negligible volume, random motion. Real gases deviate at high pressure (volume significant) and low temperature (forces significant). Molar mass calculation: M_r = (mass × RT) / pV. Combined gas law: (p₁V₁)/T₁ = (p₂V₂)/T₂ (T must be in Kelvin). Conversions: add 273 to °C to get K; multiply kPa by 10³ to get Pa; cm³ to m³ is ×10⁻⁶; dm³ to m³ is ×10⁻³.',
+        summaryText: 'Ideal gas equation: pV = nRT with SI units (Pa, m³, K). Seven KT assumptions: constant random motion; rigid spheres; pressure from wall collisions; elastic collisions; T ∝ average KE; no IMF; negligible molecular volume. Real gases: Z = pV/nRT; Z < 1 at low T (IMF reduce effective pressure); Z > 1 at very high P (molecular volume significant). Van der Waals: (P + an²/V²)(V − nb) = nRT with gas-specific a (IMF) and b (volume) constants. Molar volume: 22.4 dm³ mol⁻¹ at STP (0°C, 1 atm); 24.0 dm³ mol⁻¹ at RTP (~20°C, 1 atm). Boyle\'s Law: pV = constant at fixed T and n. Charles\' Law: V ∝ T (K) at fixed P and n. M_r = (mass × RT) / pV. Combined gas law: (p₁V₁)/T₁ = (p₂V₂)/T₂ (T must be in Kelvin). Conversions: +273 for °C→K; ×1000 for kPa→Pa; ÷1000 for dm³→m³; ÷1,000,000 for cm³→m³.',
         ready: false
     },
     evidence: []
