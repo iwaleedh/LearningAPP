@@ -425,6 +425,17 @@ export const note_chemistry_4_15_8 = {
       }
     },
 
+    // ── Callout: Reading the Integration Trace ───────────────────────────
+    {
+      id: 'callout-integration-ruler',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: '📏 Measuring the Integrator Trace',
+        text: 'In an exam, you may be given a spectrum with an integrator trace (a superimposed stepped line) instead of the integration ratios being printed directly.\n\nHow to find the ratio of hydrogen atoms:\n1. Take a ruler.\n2. Measure the vertical height gained by the trace as it crosses each peak (or cluster of peaks).\n3. Ignore any horizontal sections or small individual steps within a multiplet—just measure the total vertical shift for each group from bottom to top.\n4. Write down the heights (e.g. 0.7 cm, 1.4 cm, 2.1 cm).\n5. Divide by the smallest number to find the simplest whole number ratio (in this case 1:2:3).\n\nThis ratio is exactly the relative number of hydrogens in each environment!'
+      }
+    },
+
     // ── ¹H Chemical shift table ──────────────────────────────────────────
     {
       id: 'h-1h-shifts',
