@@ -166,6 +166,26 @@ export const note_chemistry_1_2_2 = {
       terms: []
     },
     {
+      id: 'callout-ar-boron',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Relative Abundance without Percentages (Boron)',
+        text: 'Sometimes the y-axis shows raw <strong>relative abundance</strong> instead of percentages. The method is the same, but you divide by the <em>total</em> abundance rather than 100.<br/><br/><strong>Q: Boron shows two peaks: m/z 10 (relative abundance 23) and m/z 11 (relative abundance 100). Calculate Aᵣ.</strong><br/><br/>Total abundance = 23 + 100 = 123<br/><br/>Aᵣ = (10 × 23 + 11 × 100) / 123<br/>= (230 + 1100) / 123<br/>= 1330 / 123<br/>= <strong>10.8</strong> (3 s.f.)'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-ar-zirconium',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Multiple Isotopes (Zirconium)',
+        text: '<strong>Q: A sample of Zirconium (Zr) has five isotopes with the following percentage abundances: ⁹⁰Zr (51.5%), ⁹¹Zr (11.2%), ⁹²Zr (17.1%), ⁹⁴Zr (17.4%), and ⁹⁶Zr (2.8%). Calculate its Aᵣ.</strong><br/><br/>Aᵣ is the sum of (mass × abundance) for all isotopes, divided by 100.<br/><br/>Aᵣ = [(51.5 × 90) + (11.2 × 91) + (17.1 × 92) + (17.4 × 94) + (2.8 × 96)] / 100<br/>= (4635 + 1019.2 + 1573.2 + 1635.6 + 268.8) / 100<br/>= 9131.8 / 100<br/>= <strong>91.3</strong> (3 s.f.)'
+      },
+      terms: []
+    },
+    {
       id: 'h-diatomic',
       type: 'heading',
       data: { text: 'Mass Spectra of Diatomic Elements (Cl₂, Br₂)', level: 2 },
@@ -221,10 +241,10 @@ export const note_chemistry_1_2_2 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Why Diatomic Elements Show Extra Peaks',
-        text: 'Elements like Cl and Br exist as <strong>diatomic molecules</strong> (Cl₂, Br₂). When the molecule is ionised in the mass spectrometer, the <strong>whole molecule</strong> can be detected, not just individual atoms. This means the spectrum shows peaks for:<br/>1. Individual isotopic atoms (e.g., ³⁵Cl and ³⁷Cl at m/z 35 and 37)<br/>2. Molecular ion combinations (e.g., ³⁵Cl³⁵Cl⁺, ³⁵Cl³⁷Cl⁺, ³⁷Cl³⁷Cl⁺) at higher m/z values<br/><br/>For Cl₂, the three molecular ion peaks appear at <strong>m/z = 70, 72 and 74</strong>.'
+        title: 'Why Diatomic Elements Show Extra Peaks (Fragmentation)',
+        text: 'Elements like chlorine exist as <strong>diatomic molecules</strong> (Cl₂). When Cl₂ enters the ionisation chamber, an electron is knocked off to form a <strong>molecular ion</strong> (Cl₂⁺):<br/><br/>Cl₂(g) + e⁻ → Cl₂⁺(g) + 2e⁻<br/><br/>These Cl₂⁺ ions are not completely stable. Some of them fall apart (<strong>fragmentation</strong>) to give a chlorine atom and a Cl⁺ ion:<br/><br/>Cl₂⁺(g) → Cl⁺(g) + Cl(g)<br/><br/>The neutral Cl atom gets lost in the machine, but the Cl⁺ and Cl₂⁺ ions are both accelerated and detected. This means the spectrum shows peaks for:<br/>1. <strong>Fragment ions</strong> (individual isotopic atoms, e.g., ³⁵Cl⁺ and ³⁷Cl⁺ at <em>m/z</em> 35 and 37)<br/>2. <strong>Molecular ions</strong> (unfragmented molecules, e.g., ³⁵Cl³⁵Cl⁺, ³⁵Cl³⁷Cl⁺, ³⁷Cl³⁷Cl⁺) at higher <em>m/z</em> values<br/><br/>For Cl₂, the three molecular ion peaks appear at <strong>m/z = 70, 72 and 74</strong>.'
       },
-      terms: ['Diatomic mass spectrum']
+      terms: ['Diatomic mass spectrum', 'Fragmentation']
     },
     {
       id: 'callout-cl2-peaks',
@@ -338,14 +358,15 @@ export const note_chemistry_1_2_2 = {
       { id: 'c-ei-esi', blockId: 'table-ionisation', prompt: 'Compare Electron Impact (EI) and Electrospray Ionisation (ESI). Include the equations for each.' },
       { id: 'c-tof', blockId: 'callout-tof', prompt: 'State the equation for Kinetic Energy and Velocity, and combine them to make Time (t) the subject.' },
       { id: 'c2', blockId: 'callout-mz', prompt: 'What does the m/z ratio represent in a mass spectrum? For a singly-charged ion, what does m/z equal?' },
-      { id: 'c3', blockId: 'callout-cl2-peaks', prompt: 'Explain what causes the peaks at m/z = 70, 72 and 74 in the mass spectrum of Cl₂ gas.' },
+      { id: 'c-calc-abundance', blockId: 'callout-ar-boron', prompt: 'How do you calculate Aᵣ if you are given raw relative abundances instead of percentages?' },
+      { id: 'c3', blockId: 'callout-cl2-peaks', prompt: 'Explain the fragmentation of Cl₂ in a mass spectrometer. What causes the peaks at m/z = 35, 37, 70, 72 and 74?' },
       { id: 'c4', blockId: 'callout-cl2-ratio', prompt: 'Given that ³⁵Cl = 75% and ³⁷Cl = 25%, show that the molecular ion peaks of Cl₂ are in the ratio 9:6:1.' },
       { id: 'c5', blockId: 'callout-br2-ratio', prompt: 'Explain why the Br₂ molecular ion peaks appear in a 1:2:1 ratio.' },
       { id: 'c6', blockId: 'callout-2plus', prompt: 'A ⁸¹Br ion loses two electrons. What m/z value would it show on the mass spectrum?' },
       { id: 'c7', blockId: 'callout-pq-spec1', prompt: 'Bromine has isotopes: ⁷⁹Br (47%) and ⁸¹Br (53%). (a) Calculate Aᵣ. (b) Identify the three molecular ion peaks. (c) State their peak height ratio.' },
       { id: 'c8', blockId: 'callout-high-res-intro', prompt: 'Explain how high-resolution mass spectrometry can distinguish between propane (C₃H₈) and carbon dioxide (CO₂).' }
     ],
-    summaryText: 'Mass spec stages: vaporise → ionise → accelerate → drift/deflect → detect. Ionisation: EI uses electron gun (X → X⁺ + 2e⁻) for atoms/small molecules. ESI uses high voltage needle + solvent to add H⁺ (X + H⁺ → XH⁺) for large molecules. TOF calculation: t = d × √(m / 2KE) where m is mass in kg. m/z for z=1: m/z = isotopic mass. Diatomic spectra (Cl₂): peaks at 70,72,74 in 9:6:1 ratio. (Br₂): 1:2:1 ratio. High resolution measures to 5 d.p. to distinguish molecules with the same nominal Mr.',
+    summaryText: 'Mass spec stages: vaporise → ionise → accelerate → drift/deflect → detect. Ionisation: EI (electron gun, X → X⁺ + 2e⁻). ESI (high voltage needle + solvent, X + H⁺ → XH⁺). TOF calculation: t = d × √(m / 2KE) where m is mass in kg. m/z for z=1 equals isotopic mass. Aᵣ is weighted average of isotopic masses. Diatomic spectra (Cl₂): fragmentation yields atomic ions (35, 37) and molecular unfragmented ions (70,72,74) in 9:6:1 ratio. High-res measures to 5 d.p.',
     ready: false
   },
   evidence: []
