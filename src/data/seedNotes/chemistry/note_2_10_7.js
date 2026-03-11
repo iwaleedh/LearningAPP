@@ -75,6 +75,48 @@ export const note_chemistry_2_10_7 = {
             terms: []
         },
         {
+            id: 'h-mplus2',
+            type: 'heading',
+            data: { text: 'The M+2 Peak (Halogen Isotopes)', level: 2 },
+            terms: []
+        },
+        {
+            id: 'p-mplus2',
+            type: 'paragraph',
+            data: { text: 'When a molecule contains highly abundant heavier isotopes (such as Chlorine-37 or Bromine-81), a prominent peak emerges 2 m/z units heavier than the molecular ion. This is known as the <strong>M+2 peak</strong>. The ratio of the M⁺ and M+2 peak heights can uniquely identify the presence of these halogens.' },
+            terms: ['M+2 peak', 'Isotopes', 'Halogenoalkanes']
+        },
+        {
+            id: 'callout-mplus2-chlorine',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Chlorine: The 3:1 Ratio',
+                text: 'Chlorine exists naturally as two main isotopes: ³⁵Cl (approx. 75%) and ³⁷Cl (approx. 25%).<br/><br/>If a molecule contains <strong>one chlorine atom</strong>, the mass spectrum will show two peaks in the molecular ion region separated by 2 m/z units. Because ³⁵Cl is three times more common than ³⁷Cl, the heights of the M⁺ : M+2 peaks will be in a <strong>3 : 1 ratio</strong>.'
+            },
+            terms: ['Chlorine-35', 'Chlorine-37', '3:1 ratio']
+        },
+        {
+            id: 'callout-mplus2-bromine',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Bromine: The 1:1 Ratio',
+                text: 'Bromine also exists as two main isotopes: ⁷⁹Br (approx. 50.5%) and ⁸¹Br (approx. 49.5%).<br/><br/>If a molecule contains <strong>one bromine atom</strong>, the spectrum will display two peaks in the molecular ion region separated by 2 m/z units. Because they are almost equally abundant, the M⁺ : M+2 peaks will be roughly equal in height, forming a <strong>1 : 1 ratio</strong>.'
+            },
+            terms: ['Bromine-79', 'Bromine-81', '1:1 ratio']
+        },
+        {
+            id: 'callout-mplus2-multiple',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Multiple Halogen Atoms',
+                text: 'If a compound contains <strong>two chlorine atoms</strong>, three peaks appear: M⁺, M+2, and M+4.<br/>The combinations of isotopes (³⁵Cl-³⁵Cl, ³⁵Cl-³⁷Cl, ³⁷Cl-³⁷Cl) appear in a distinctive <strong>9 : 6 : 1</strong> peak height ratio.'
+            },
+            terms: []
+        },
+        {
             id: 'h-highres',
             type: 'heading',
             data: { text: 'High Resolution Mass Spectrometry', level: 2 },
@@ -105,9 +147,11 @@ export const note_chemistry_2_10_7 = {
             { id: 'c3', blockId: 'callout-molecularion', prompt: 'What key piece of information does the m/z value of the molecular ion peak provide about an unknown compound?' },
             { id: 'c4', blockId: 'callout-m1', prompt: 'What causes the very small M+1 peak often seen on a mass spectrum of an organic compound?' },
             { id: 'c5', blockId: 'callout-mplus1-calculation', prompt: 'How can you use the M+1 peak to estimate the number of carbon atoms in a small organic molecule?' },
-            { id: 'c6', blockId: 'p-highres', prompt: 'How does high-resolution mass spectrometry help in identifying organic compounds with the same whole-number Relative Molecular Mass?' }
+            { id: 'c6', blockId: 'callout-mplus2-chlorine', prompt: 'What peak height ratio in the molecular ion region confirms the presence of a single chlorine atom in a molecule?' },
+            { id: 'c7', blockId: 'callout-mplus2-bromine', prompt: 'What peak height ratio in the molecular ion region confirms the presence of a single bromine atom in a molecule?' },
+            { id: 'c8', blockId: 'p-highres', prompt: 'How does high-resolution mass spectrometry help in identifying organic compounds with the same whole-number Relative Molecular Mass?' }
         ],
-        summaryText: 'Mass Spectrometry ionises molecules (M → M⁺• + e⁻) and measures their mass-to-charge ratio (m/z). Because z is usually +1, m/z equals the mass. The peak with the highest m/z is the M⁺ peak, giving the exact relative molecular mass (M_r). The small M+1 peak is due to the 1.1% natural abundance of Carbon-13, and its relative height to the M⁺ peak can be used to estimate the number of carbon atoms in a small molecule. High-resolution mass spectrometry measures mass to 3–4 decimal places, allowing chemists to distinguish molecular formulas that share the same whole integer mass.',
+        summaryText: 'Mass Spectrometry ionises molecules (M → M⁺• + e⁻) and measures their mass-to-charge ratio (m/z). The peak with the highest m/z is the M⁺ peak, giving the exact relative molecular mass. The small M+1 peak is due to the 1.1% natural abundance of Carbon-13. Compounds containing one chlorine atom show an M⁺ and M+2 peak in a 3:1 ratio (due to ³⁵Cl and ³⁷Cl). Compounds with one bromine atom show a 1:1 ratio (due to ⁷⁹Br and ⁸¹Br). High-resolution mass spectrometry measures mass to 3–4 decimal places, allowing chemists to distinguish molecular formulas that share the same whole integer mass.',
         ready: false
     },
     evidence: []
