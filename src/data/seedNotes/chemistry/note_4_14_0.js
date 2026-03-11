@@ -7,6 +7,32 @@ export const note_chemistry_4_14_0 = {
         text: 'Understand the Brønsted-Lowry acid-base model; define acids and bases in terms of proton transfer; identify strong and weak acids and bases; explain amphoteric substances'
       }
     },
+        {
+      id: 'h-arrhenius',
+      type: 'heading',
+      data: { text: 'The Arrhenius Theory', level: 2 }
+    },
+    {
+      id: 'list-arrhenius',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Acid</strong> = produces hydrogen ions (H⁺) in solution',
+          '<strong>Base</strong> = produces hydroxide ions (OH⁻) in solution',
+          'Neutralisation occurs because H⁺ react with OH⁻ to produce water.'
+        ]
+      }
+    },
+    {
+      id: 'callout-limit-arrhenius',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Limitations of the Arrhenius Theory',
+        text: 'The theory fails to explain gas-phase reactions and bases that do not contain hydroxide ions. For example, ammonia (NH₃) gas reacts directly with HCl gas to form solid ammonium chloride (NH₄Cl), an acid-base reaction that occurs entirely without water or hydroxide ions.'
+      }
+    },
     {
       id: 'h-brønsted-def',
       type: 'heading',
@@ -179,6 +205,38 @@ export const note_chemistry_4_14_0 = {
         text: 'An amphoteric substance has both acidic and basic properties. In acidic solution, it acts as a base. In basic solution, it acts as an acid. In pure water or with other amphoteric species, it can do both simultaneously. Water is the most important amphoteric substance in chemistry.'
       }
     },
+        {
+      id: 'h-lewis',
+      type: 'heading',
+      data: { text: 'The Lewis Theory', level: 2 }
+    },
+    {
+      id: 'list-lewis',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Lewis Acid</strong> = electron pair <strong>acceptor</strong> (must have an empty orbital)',
+          '<strong>Lewis Base</strong> = electron pair <strong>donor</strong> (must have a lone pair of electrons)'
+        ]
+      }
+    },
+    {
+      id: 'p-lewis-bl',
+      type: 'paragraph',
+      data: {
+        text: 'The Lewis theory is the most broad and general definition. Every Brønsted-Lowry base is also a Lewis base because it uses a lone pair to accept a proton. However, Lewis acids extend far beyond H⁺. Molecules with empty orbitals, like BF₃ or AlCl₃, act as Lewis acids by accepting lone pairs to form co-ordinate (dative covalent) bonds.'
+      }
+    },
+    {
+      id: 'callout-lewis-hcl',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Lewis Acids vs Brønsted Acids',
+        text: 'While the Lewis theory is incredibly powerful in organic chemistry, current A-Level syllabuses focus mainly on the Brønsted-Lowry definition. However, you must recognise that a species like BF₃ behaves as an acid (Lewis acid) even though it has no hydrogen ions to donate.'
+      }
+    },
     {
       id: 'checklist-brønsted',
       type: 'checklist',
@@ -238,9 +296,19 @@ export const note_chemistry_4_14_0 = {
         id: 'cue-5',
         blockId: 'list-ampho-examples',
         prompt: 'Give two examples of amphoteric species other than water.'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'callout-limit-arrhenius',
+        prompt: 'Why is the Arrhenius theory considered limited compared to Brønsted-Lowry? Give an example reaction.'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'list-lewis',
+        prompt: 'Define an acid and a base according to the Lewis theory.'
       }
     ],
-    summaryText: 'Acid = H⁺ donor, Base = H⁺ acceptor (Brønsted-Lowry). Strong acids: HCl, HNO₃, H₂SO₄. Strong bases: NaOH, KOH, Ca(OH)₂. Weak acids/bases partially dissociate. Amphoteric = can act as acid or base (e.g., H₂O, HCO₃⁻).',
+    summaryText: 'Arrhenius: Acid=H⁺ in solution, Base=OH⁻ in solution. Brønsted-Lowry: Acid=H⁺ donor, Base=H⁺ acceptor. Lewis: Acid=e⁻ pair acceptor, Base=e⁻ pair donor. Amphoteric species behave as both acid and base depending on the environment.',
     ready: false
   },
   evidence: [
