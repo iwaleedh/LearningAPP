@@ -9,11 +9,10 @@ export const note_chemistry_4_11_3 = {
       id: 'objective-block',
       type: 'objective',
       data: {
-        text: 'Contrast the initial rates method (e.g., iodine clock) with continuous monitoring methods.'
+        text: 'Understand the initial rates method (including clock reactions) and how to deduce the order of reaction using log-log graphs.'
       },
       terms: []
     },
-    // ── WHY INITIAL RATES? ─────────────────────────────────────────────────
     {
       id: 'h-initial',
       type: 'heading',
@@ -24,97 +23,80 @@ export const note_chemistry_4_11_3 = {
       id: 'p-why-initial',
       type: 'paragraph',
       data: {
-        text: 'As a reaction progresses, the concentration of the reactants constantly drops, which means the rate of reaction constantly slows down. To determine how the concentration of a specific reactant affects the rate, it is much easier to measure the rate accurately at the <em>exact moment the reaction begins</em> (at t=0, when the concentrations are exactly known and maximal). This is the <strong>Initial Rate</strong> method.'
+        text: 'As a reaction progresses, the concentration of the reactants constantly drops, which means the rate of reaction constantly slows down. To determine how the concentration of a specific reactant affects the rate, it is easiest to measure the rate at the <em>exact moment the reaction begins</em> (at t=0, when concentrations are exactly known). This is the <strong>Initial Rate</strong>.'
       },
       terms: ['Initial rate']
     },
-    // ── CLOCK REACTIONS ─────────────────────────────────────────────────────
     {
-      id: 'h-clock',
-      type: 'heading',
-      data: { text: 'Clock Reactions', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-clock',
-      type: 'paragraph',
-      data: {
-        text: 'A "clock reaction" is a classic way to measure the initial rate. In a clock reaction, you measure the time (t) it takes for a visually obvious change to occur (usually a sudden colour change). <br/><br/>If the amount of product needed to cause the colour change is kept very small and constant, we can make an important assumption: the initial rate is <strong>inversely proportional to the time taken</strong>.'
-      },
-      terms: []
-    },
-    {
-      id: 'eq-clock',
-      type: 'equation',
-      data: {
-        latex: '\\text{Initial Rate} \\propto \\frac{1}{t}',
-        caption: 'The fundamental mathematical assumption of a clock reaction.'
-      },
-      terms: []
-    },
-    {
-      id: 'list-iodine',
+      id: 'list-initial-process',
       type: 'list',
       data: {
-        style: 'ordered',
+        style: 'numbered',
         items: [
-          '<strong>The Iodine Clock Reaction:</strong> Iodine (I₂) is produced in the main reaction.',
-          'A small, known amount of sodium thiosulfate (Na₂S₂O₃) is added to the mixture along with starch indicator.',
-          'As soon as any I₂ is produced, the thiosulfate reacts with it instantly, turning it back into colourless I⁻.',
-          'When all the thiosulfate is finally used up, the I₂ survives. It instantly reacts with the starch, turning the solution <strong>blue-black</strong>.',
-          'The time taken for the blue-black colour to appear is recorded.'
+          'Choose one reactant to investigate and keep the concentrations of all other reactants (and total volume) constant.',
+          'Start the reaction and time how long it takes to produce a <strong>small, fixed, easily measurable amount of product</strong>.',
+          'Calculate the initial rate using the assumption that Rate is inversely proportional to time ($Rate \propto \frac{1}{t}$).',
+          'Repeat the experiment several times, changing only the concentration of the reactant you are investigating.',
+          'Plot a graph of Rate (or $1/t$) against Concentration.'
         ]
       },
-      terms: ['Sodium thiosulfate', 'Starch indicator']
-    },
-    // ── CONTINUOUS VS INITIAL ──────────────────────────────────────────────
-    {
-      id: 'h-compare',
-      type: 'heading',
-      data: { text: 'Continuous Monitoring vs. Initial Rates', level: 2 },
       terms: []
     },
     {
-      id: 'table-compare',
+      id: 'h-examples',
+      type: 'heading',
+      data: { text: 'Classic Initial Rate Experiments', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-experiments',
       type: 'comparisonTable',
       data: {
-        caption: 'Comparing Rate Investigation Methods',
-        headers: ['Feature', 'Continuous Monitoring', 'Initial Rates (Clock Reaction)'],
+        caption: 'Common Initial Rate Experiments in the Lab',
+        headers: ['Experiment', 'Method', 'What you measure'],
         rows: [
-          ['<strong>How is it done?</strong>', 'Follow one complete reaction from start to finish. Measure concentration repeatedly at regular time intervals.', 'Perform multiple separate experiments, changing the starting concentration of one reactant each time. Only measure the rate at the very start.'],
-          ['<strong>How is Order found?</strong>', 'Plot a Concentration vs Time graph. Look at the shape of the curve or examine the half-life.', 'Plot an Initial Rate vs Concentration graph. If the line is horizontal (Order 0), diagonal straight (Order 1), or a parabola (Order 2).'],
-          ['<strong>Advantage</strong>', 'Requires only one experiment to gather all the data needed.', 'Excellent for complex reactions involving multiple reactants, as you can isolate the effect of one reactant at a time.']
+          ['<strong>Thiosulfate-Acid Reaction</strong> (S₂O₃²⁻ + 2H⁺)', 'Produces a pale yellow precipitate of solid sulfur.', 'Place a flask over a piece of paper with a cross. Time how long it takes for the precipitate to completely hide the cross.'],
+          ['<strong>Iodine Clock Reaction</strong>', 'Produces I₂. A tiny amount of sodium thiosulfate and starch indicator are added.', 'The thiosulfate destroys any I₂ initially. When the thiosulfate runs out, the starch instantly turns <strong>blue-black</strong>. You time how long this takes.'],
+          ['<strong>Catalytic decomp. of H₂O₂</strong>', 'Produces O₂ gas. A weighing bottle containing the catalyst is placed upright inside the flask.', 'Shake the flask to knock over the bottle (avoids losing gas while pushing the bung in). Time how long it takes to collect exactly 5 cm³ of O₂ gas.']
         ]
+      },
+      terms: ['Clock reaction']
+    },
+    {
+      id: 'h-log-graphs',
+      type: 'heading',
+      data: { text: 'Finding Order using Log Graphs', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-log-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Plotting a Rate vs Concentration graph works well if the reaction is Order 0 (horizontal line) or Order 1 (straight diagonal line). However, if the graph is a curve, it could be Order 2, or some fractional order. To find the exact mathematical order reliably, we plot a <strong>Log-Log Graph</strong>.'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-log-math',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Deriving the Log Equation',
+        text: 'Starting with the specific rate equation for reactant A:<br><br><strong>Rate = k[A]ⁿ</strong><br><br>Taking the logarithm of both sides gives a linear equation (y = mx + c):<br><br><strong>log(Rate) = log(k) + n × log[A]</strong><br><br>If you plot <strong>log(Rate)</strong> on the y-axis against <strong>log[A]</strong> on the x-axis, you will get a straight line. The <strong>gradient (slope)</strong> of this line is exactly equal to the order of reaction, <strong>n</strong>.'
       },
       terms: []
     }
   ],
-  // ── RECALL CUES ────────────────────────────────────────────────────────
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-why-initial',
-        prompt: 'Why is it often advantageous to measure the "initial rate" rather than the average rate of a reaction?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'eq-clock',
-        prompt: 'Write the proportionality statement used to calculate the comparative initial rate in a clock reaction.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'list-iodine',
-        prompt: 'In the Iodine Clock reaction, what is the specific chemical purpose of adding a small amount of Sodium Thiosulfate?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'table-compare',
-        prompt: 'Contrast the graphing method used to deduce the order of reaction in continuous monitoring vs initial rates.'
-      }
+      { id: 'c1', blockId: 'p-why-initial', prompt: 'Why is it advantageous to measure the "initial rate" of a reaction rather than an average rate?' },
+      { id: 'c2', blockId: 'list-initial-process', prompt: 'When conducting an initial rates experiment by timing a fixed event, what simple mathematical formula is used as a substitute for initial rate?' },
+      { id: 'c3', blockId: 'table-experiments', prompt: 'In the thiosulfate-acid reaction, how is the specific endpoint of the initial rate visually determined?' },
+      { id: 'c4', blockId: 'table-experiments', prompt: 'Why is a small weighing bottle used to introduce the catalyst in the initial rate experiment for the decomposition of H₂O₂?' },
+      { id: 'c5', blockId: 'callout-log-math', prompt: 'Write the logarithmic form of the rate equation. If you plot log(Rate) against log[Concentration], what does the gradient of the graph represent?' }
     ],
-    summaryText: 'Initial rates are measured at t=0 when reactant concentrations are exactly known. Clock reactions (like the iodine clock) use a visual change to measure the time (t) taken for a small amount of product to form, assuming Initial Rate ∝ 1/t. Sodium thiosulfate delays the starch colour change until a specific amount of I₂ has formed.',
+    summaryText: 'The Initial Rates method involves measuring the time (t) taken for a small fixed amount of product to form (Rate ∝ 1/t) at the very start of a reaction. Examples include the Thiosulfate cross-disappearing reaction, the Iodine clock, and H₂O₂ decomposition using a weighing bottle. To reliably determine the exact order without guessing curve shapes, we use log graphs: plotting log(Rate) against log[Concentration] yields a straight line where the gradient equals the order of reaction (n).',
     ready: false
   },
   evidence: []

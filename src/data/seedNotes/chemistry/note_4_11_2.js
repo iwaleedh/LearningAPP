@@ -9,26 +9,67 @@ export const note_chemistry_4_11_2 = {
       id: 'objective-block',
       type: 'objective',
       data: {
-        text: 'Understand the different practical methods used to monitor the rate of a chemical reaction, including continuous monitoring and sampling.'
+        text: 'Understand the different practical methods used to monitor a chemical reaction continuously or via sampling to find the rate.'
       },
       terms: []
     },
-    // ── MONITORING RATE ────────────────────────────────────────────────────
     {
-      id: 'h-monitoring',
+      id: 'h-following-reaction',
       type: 'heading',
-      data: { text: 'How do we measure the rate of a reaction?', level: 2 },
+      data: { text: 'Following the Course of a Single Reaction', level: 2 },
       terms: []
     },
     {
-      id: 'p-intro-rates',
+      id: 'list-two-approaches',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Rather than doing multiple initial rate experiments, you can follow a single reaction from start to finish.',
+          '<strong>Method 1: Continuous Monitoring</strong> measuring a physical property that changes (e.g., gas volume, colour intensity).',
+          '<strong>Method 2: Sampling and Quenching</strong> taking physical samples at regular intervals and performing titrations.'
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'h-sampling',
+      type: 'heading',
+      data: { text: 'Sampling, Quenching, and Titration (Chemical Method)', level: 2 },
+      terms: []
+    },
+    {
+      id: 'p-sampling-intro',
       type: 'paragraph',
       data: {
-        text: 'To calculate the rate, we must measure how the concentration of a reactant or product changes over time. We cannot "see" individual molecules reacting, so we must monitor a <strong>measurable physical or chemical property</strong> that changes as the reaction progresses.'
+        text: 'For reactions like the nucleophilic substitution between bromoethane and sodium hydroxide, both reactants are used up over time. We can measure the remaining NaOH concentration using a titration with standard hydrochloric acid.'
       },
       terms: []
     },
-    // ── CONTINUOUS PHYSICAL METHODS ────────────────────────────────────────
+    {
+      id: 'list-sampling-steps',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Start the reaction with known concentrations of both reactants.',
+          'Use a pipette to take a small sample (aliquot) of the mixture at regular recorded time intervals.',
+          '<strong>Quench the sample:</strong> Stop the reaction instantly so the concentrations do not change while you are doing the titration.',
+          'Perform the titration to determine the exact concentration of the reactant at that specific time.'
+        ]
+      },
+      terms: ['Quenching']
+    },
+    {
+      id: 'callout-quenching',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'How to Quench a Reaction',
+        text: 'Reactions can be stopped (quenched) by:<br>• Plunging the sample into a large volume of <strong>ice-cold water</strong> (rapid dilution and cooling).<br>• Removing a catalyst (e.g. adding a weak alkali to neutralise an acid catalyst).<br>• <strong>Back Titration method:</strong> Adding the sample to an <em>excess</em> of standard acid to instantly use up all the NaOH, stopping the reaction. Then you titrate the remaining acid with standard NaOH to find out how much acid was used up.'
+      },
+      terms: []
+    },
     {
       id: 'h-continuous',
       type: 'heading',
@@ -36,10 +77,10 @@ export const note_chemistry_4_11_2 = {
       terms: []
     },
     {
-      id: 'p-continuous',
+      id: 'p-continuous-intro',
       type: 'paragraph',
       data: {
-        text: 'Physical methods are usually the best choice because they are "continuous." You can set up a sensor (like a gas syringe or a colorimeter) to take readings automatically without interfering with the reaction mixture.'
+        text: 'Physical methods are usually preferred as they do not require extracting samples and can be fully automated. However, raw physical data (like volume) must still be converted into concentrations before calculating the order.'
       },
       terms: []
     },
@@ -47,82 +88,57 @@ export const note_chemistry_4_11_2 = {
       id: 'table-methods',
       type: 'comparisonTable',
       data: {
-        caption: 'Common Continuous Monitoring Methods',
-        headers: ['Method', 'When to use it', 'Example Reaction'],
+        caption: 'Common Continuous Monitoring Techniques',
+        headers: ['Method', 'Application', 'Required Processing'],
         rows: [
-          ['<strong>Gas Volume</strong> (Gas Syringe)', 'When one of the products is a gas.', 'CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + <strong>CO₂(g)</strong>'],
-          ['<strong>Mass Loss</strong> (Top-pan balance)', 'When a heavy gas (like CO₂) is produced and escapes the open flask.', 'Measuring the decreasing mass of the CaCO₃ + HCl reaction flask over time.'],
-          ['<strong>Colorimetry</strong>', 'When one of the reactants or products is coloured. A colorimeter measures absorbance of light.', 'Reactions involving Iodine (<strong>I₂</strong> - brown) or Transition Metals (e.g., Manganate(VII) <strong>MnO₄⁻</strong> - deep purple).'],
-          ['<strong>pH tracking</strong> (pH meter)', 'When H⁺ or OH⁻ ions are reacting or being produced, causing a massive change in pH.', 'Iodination of propanone produces H⁺ ions, making the solution increasingly acidic.']
+          ['<strong>Gas Volume</strong> (Gas Syringe)', 'Reactions producing a gas (e.g. Catalytic decomposition of H₂O₂ to O₂).', 'Convert volume to moles of gas using the ideal gas equation (pV=nRT), then subtract from initial moles to find remaining concentration.'],
+          ['<strong>Mass Loss</strong> (Top-pan balance)', 'Reactions producing a dense gas (like CO₂) that escapes.', 'Calculate mass of gas lost, convert to moles, deduce remaining concentration.'],
+          ['<strong>Colorimetry</strong>', 'Reactions involving distinct colours (e.g. Iodine/Propanone fading from brown to colourless).', 'Requires a <strong>calibration curve</strong> to convert measured absorbance values directly into concentrations.']
         ]
       },
-      terms: ['Colorimetry']
-    },
-    // ── CHEMICAL SAMPLING (TITRATION) ──────────────────────────────────────
-    {
-      id: 'h-sampling',
-      type: 'heading',
-      data: { text: 'Sampling and Quenching (Chemical Method)', level: 2 },
-      terms: []
+      terms: ['Colorimeter', 'Calibration curve']
     },
     {
-      id: 'p-sampling',
-      type: 'paragraph',
-      data: {
-        text: 'If there is no physical property that changes cleanly, we must use a chemical method (usually a titration). Because titrations take several minutes to perform, we cannot titrate the mixture while it is still reacting! We must use the <strong>Quenching method</strong>.'
-      },
-      terms: ['Quenching']
-    },
-    {
-      id: 'list-quenching',
-      type: 'list',
-      data: {
-        style: 'ordered',
-        items: [
-          'At regular intervals (e.g. every 5 minutes), extract a small, known volume (aliquot) of the reaction mixture using a pipette.',
-          'Immediately <strong>QUENCH</strong> the sample to completely stop the reaction.',
-          'Once quenched, the concentration of the sample is "frozen in time." You can now perform a titration at your own pace to determine the concentration of the reactant/product at that exact 5-minute mark.'
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'callout-how-to-quench',
+      id: 'callout-colorimetry',
       type: 'callout',
       data: {
-        style: 'key',
-        title: 'How do you "Quench" a reaction?',
-        text: 'Quenching means stopping the reaction instantly. This is usually done by:<br/>1. Plunging the sample into a huge volume of <strong>ice-cold water</strong> (rapid cooling and dilution).<br/>2. Adding a chemical that rapidly reacts with one of the reactants, destroying it (e.g., adding sodium hydrogencarbonate to neutralise an acid catalyst).'
+        style: 'worked',
+        title: 'Using a Colorimeter',
+        text: 'A colorimeter measures the absorbance of light. A specific coloured filter is chosen (e.g. absorbing red light for blue copper(II) sulfate). To use the readings:<br>1. Make up standard solutions of known concentration.<br>2. Measure their absorbance and plot a <strong>calibration curve</strong> (Absorbance vs Concentration).<br>3. During the rate experiment, read the absorbance at regular intervals and use the curve to convert it to concentration.'
+      },
+      terms: []
+    },
+    {
+      id: 'h-processing',
+      type: 'heading',
+      data: { text: 'Deriving the Order from Continuous Data', level: 2 },
+      terms: []
+    },
+    {
+      id: 'list-processing',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Plot the calculated Concentration against Time on a graph.',
+          'Draw tangents at several different concentration points along the curve.',
+          'Calculate the slope of each tangent. The slope equals the <strong>Rate of Reaction</strong> at that specific concentration.',
+          'Plot a second graph of Rate vs Concentration. If it is a straight line through the origin, it is 1st order. If it is a curve/parabola, it is 2nd order.'
+        ]
       },
       terms: []
     }
   ],
-  // ── RECALL CUES ────────────────────────────────────────────────────────
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'table-methods',
-        prompt: 'Name three physical methods for continuously monitoring the rate of a reaction.'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'table-methods',
-        prompt: 'What piece of equipment would you use to monitor the concentration of Iodine (I₂) in a reaction mixture over time without extracting samples?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-sampling',
-        prompt: 'Define the term "Quenching" in the context of rate experiments.'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'callout-how-to-quench',
-        prompt: 'Describe two methods by which a reaction sample can be quenched.'
-      }
+      { id: 'c1', blockId: 'list-two-approaches', prompt: 'State the difference between continuous monitoring and chemical sampling.' },
+      { id: 'c2', blockId: 'list-sampling-steps', prompt: 'In a rate experiment using sampling, what is the purpose of "quenching"?' },
+      { id: 'c3', blockId: 'callout-quenching', prompt: 'Describe two methods used to quench a chemical reaction during sampling.' },
+      { id: 'c4', blockId: 'table-methods', prompt: 'If monitoring the fading color of iodine reacting with propanone, what equipment is used, and how are the readings converted to concentration?' },
+      { id: 'c5', blockId: 'list-processing', prompt: 'Once a Concentration-Time graph is plotted from a continuous monitoring experiment, how do you find the reaction rate at a specific concentration?' }
     ],
-    summaryText: 'Continuous physical methods (gas volume, mass loss, colorimetry) are preferred as they don\'t disturb the reaction. If chemical titration is required, samples must be immediately "quenched" (by ice or neutralizing a catalyst) to instantly stop the reaction before titrating.',
+    summaryText: 'You can follow a reaction via continuous physical monitoring (using gas syringes, balances, or colorimeters) or via chemical sampling (extracting aliquots, quenching them to stop the reaction, and titrating). Quenching is done via ice-cold water, neutralising catalysts, or adding excess reactants. For colorimeters, a calibration curve converts absorbance back to concentration. Finally, plotting Concentration vs Time and taking tangents gives the rates at different concentrations.',
     ready: false
   },
   evidence: []
