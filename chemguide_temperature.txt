@@ -1,0 +1,195 @@
+
+<html>
+<head>
+<title>The effect of temperature on rates of reaction</title>
+
+<meta name="description"
+content="Describes and explains the effect of changing the temperature on  how fast reactions take place." />
+<meta name="keywords"
+content="rate, reaction, kinetics, collision, activation energy, maxwell, boltzmann, boltzman, distribution, temperature" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>THE EFFECT OF TEMPERATURE ON REACTION RATES</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page describes and explains the way that changing the temperature affects the rate of a reaction.  It assumes that you are already familiar with basic ideas about the collision theory, and with the Maxwell-Boltzmann distribution of molecular energies in a gas.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#ff0000" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you haven't already read the page about <a href="introduction.html#top">collision theory</a>, you should do so before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page, or come back via the rates of reaction menu.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>The facts</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>What happens?</b></p>
+
+<p>As you increase the temperature the rate of reaction increases.  As a rough approximation, for many reactions happening at around room temperature, the rate of reaction doubles for every 10&deg;C rise in temperature.</p>
+
+<p>You have to be careful not to take this too literally.  It doesn't apply to all reactions.  Even where it is approximately true, it may be that the rate doubles every 9&deg;C or 11&deg;C or whatever.  The number of degrees needed to double the rate will also change gradually as the temperature increases.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>You will find the <a href="arrhenius.html#top">effect of temperature on rate</a> explored in a slightly more mathematical way on a separate page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Examples</b></p>
+
+<p>Some reactions are virtually instantaneous - for example, a precipitation reaction involving the coming together of ions in solution to make an insoluble solid, or the reaction between hydrogen ions from an acid and hydroxide ions from an alkali in solution.  So heating one of these won't make any noticeable difference to the rate of the reaction.</p>
+
+<p>Almost any other reaction you care to name will happen faster if you heat it - either in the lab, or in industry.</p>
+</font>
+<pre>
+
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>The explanation</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Increasing the collision frequency</b></p>
+
+<p>Particles can only react when they collide.  If you heat a substance, the particles move faster and so collide more frequently.  That will speed up the rate of reaction.</p>
+
+<p>That seems a fairly straightforward explanation until you look at the numbers!</p>
+
+<p>It turns out that the frequency of two-particle collisions in gases is proportional to the square root of the kelvin temperature.  If you increase the temperature from 293 K to 303 K (20&deg;C to 30&deg;C), you will increase the collision frequency by a factor of:</p>
+
+<p align="center"><img src="frequency.gif" width="122" height="45" /></p>
+
+<p>That's an increase of 1.7% for a 10&deg rise.  The rate of reaction will probably have doubled for that increase in temperature - in other words, an increase of about 100%.  The effect of increasing collision frequency on the rate of the reaction is <i>very</i> minor.  The important effect is quite different . . .</p>
+
+<pre>
+
+</pre>
+<p><b>The key importance of activation energy</b></p>
+
+<p>Collisions only result in a reaction if the particles collide with enough energy to get the reaction started.  This minimum energy required is called the activation energy for the reaction.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>What follows assumes you have a reasonable idea about activation energy and its relationship with the Maxwell-Boltzmann distribution.  This is covered on the introductory page about <a href="introduction.html#top">collision theory</a>.</p>
+
+<p>If you aren't confident about this, follow this link, and use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>You can mark the position of activation energy on a Maxwell-Boltzmann distribution to get a diagram like this:</p>
+
+<p align="center"><img src="mbdistrib2.gif" width="374" height="325" /></p>
+
+<p>Only those particles represented by the area to the right of the activation energy will have enough energy to react when they collide.  The great majority don't have enough energy, and will simply bounce apart.  If there are very few particles with enough energy at any time, then the reaction will be slow.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Important: &nbsp;</b>I have already commented on this on the introductory page about <a href="introduction.html#top">collision theory</a>.  It is important to realise that although the shape of this graph is constant at a given temperature, which part of it an individual particle finds itself in is constantly changing.  Some particles will gain energy in random collisions, and others will lose energy.</p>
+
+<p>Just by chance, every particle will at some time find itself with enough energy to react if it makes a successful collision.  So although at any instant there may only be relatively few particles present with enough energy, given time all the particles will react if the reacting proportions are right.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+
+<p>To speed up the reaction, you need to increase the number of the very energetic particles present at any particular instant - those with energies equal to or greater than the activation energy.  Increasing the temperature has exactly that effect - it changes the shape of the graph.</p>
+
+<p>In the next diagram, the graph labelled <b>T</b> is at the original temperature.  The graph labelled <b>T+t</b> is at a higher temperature.</p>
+
+<p align="center"><img src="mbdistrib3.gif" width="381" height="261" /></p>
+
+<p>If you now mark the position of the activation energy, you can see that although the curve hasn't moved very much overall, there has been such a large increase in the number of the very energetic particles that many more now collide with enough energy to react.</p>
+
+<p align="center"><img src="mbdistrib4.gif" width="377" height="274" /></p>
+
+<p>Remember that the area under a curve gives a count of the number of particles.  On the last diagram, the area under the higher temperature curve to the right of the activation energy looks to have at least doubled - therefore at least doubling the rate of the reaction.</p>
+<pre>
+
+</pre>
+<p><b>Summary</b></p>
+
+<p>Increasing the temperature increases reaction rates because of the disproportionately large increase in the number of high energy collisions.  It is only these collisions (possessing <i>at least</i> the activation energy for the reaction) which result in a reaction.</p>
+</font>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>You will find questions about all the factors affecting rates of reaction on the page about catalysts at the end of this sequence of pages.</p>
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl> <font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<p><a href="../basicratesmenu.html#top"><b>To the rates of reaction menu . . .</b></a></p>
+<p><a href="../../physmenu.html#top"><b>To the Physical Chemistry menu . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<div align="center"><a href="../../book.html#top"><img src="../../advert.gif" width="456" height="46" border="0" /></a></div>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2002 (last modified October 2018)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>
