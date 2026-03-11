@@ -41,10 +41,26 @@ export const note_chemistry_1_5_1 = {
         headers: ['Name', 'Description', 'Arrangement'],
         rows: [
           ['cis-but-2-ene', 'CH₃ groups on the SAME side of the double bond', 'CH₃ | H on left carbon; CH₃ | H on right carbon → both CH₃ same side'],
-          ['trans-but-2-ene', 'CH₃ groups on OPPOSITE sides of the double bond', 'Higher bp; different physical properties despite same molecular formula']
+          ['trans-but-2-ene', 'CH₃ groups on OPPOSITE sides of the double bond', 'Different physical properties despite having the same molecular formula']
         ]
       },
       terms: ['cis isomer', 'trans isomer']
+    },
+    {
+      id: 'h-properties',
+      type: 'heading',
+      data: { text: 'Physical Properties of cis/trans Isomers', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-bp-mp',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Boiling vs Melting points',
+        text: '<strong>Boiling Point:</strong> <em>Cis</em> isomers are generally polar (bond dipoles do not cancel). <em>Trans</em> isomers are usually non-polar (dipoles cancel out). Because <em>cis</em> isomers have stronger dipole-dipole intermolecular forces, they have a <strong>higher boiling point</strong>.<br/><br/><strong>Melting Point:</strong> <em>Trans</em> isomers are straighter and pack more efficiently in the solid lattice than the "U-shaped" <em>cis</em> isomers. Better packing means stronger intermolecular forces in the solid state, giving <em>trans</em> isomers a <strong>higher melting point</strong>.'
+      },
+      terms: ['Dipoles', 'Polarity', 'Packing']
     },
     {
       id: 'h-ez',
@@ -84,10 +100,11 @@ export const note_chemistry_1_5_1 = {
     cues: [
       { id: 'c1', blockId: 'callout-cause', prompt: 'State the two conditions required for a molecule to exhibit geometric isomerism.' },
       { id: 'c2', blockId: 'table-cistrans', prompt: 'Describe the difference between cis-but-2-ene and trans-but-2-ene.' },
-      { id: 'c3', blockId: 'callout-cip', prompt: 'Explain the CIP priority rules. What do E and Z mean?' },
-      { id: 'c4', blockId: 'callout-worked', prompt: 'Assign E or Z to the following: (CHCl=CBrCH₃) where the Cl and Br are on the same side.' }
+      { id: 'c3', blockId: 'callout-bp-mp', prompt: 'Explain why cis isomers generally have higher boiling points, whereas trans isomers have higher melting points.' },
+      { id: 'c4', blockId: 'callout-cip', prompt: 'Explain the CIP priority rules. What do E and Z mean?' },
+      { id: 'c5', blockId: 'callout-worked', prompt: 'Assign E or Z to the following: (CHCl=CBrCH₃) where the Cl and Br are on the same side.' }
     ],
-    summaryText: 'Geometric isomers: exist because C=C π bond prevents rotation. Condition: each C must have two different groups. cis = same-side; trans = opposite-side (for simple cases with H). E/Z uses CIP priority rules (higher atomic number = higher priority). Z = together (higher priority groups same side). E = entgegen (opposite sides).',
+    summaryText: 'Geometric isomers: exist because C=C π bond prevents rotation. Condition: each C must have two different groups. cis = same-side; trans = opposite-side (for simple cases with H). E/Z uses CIP priority rules (higher atomic number = higher priority). Z = together (higher priority groups same side). E = entgegen (opposite sides). cis isomers have higher boiling points (polar, dipole-dipole). trans isomers have higher melting points (straighter, better packing).',
     ready: false
   },
   evidence: []

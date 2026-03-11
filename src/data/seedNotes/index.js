@@ -299,6 +299,7 @@ import { note_chemistry_5_18_2 } from './chemistry/note_5_18_2.js';
 import { note_chemistry_5_18_3 } from './chemistry/note_5_18_3.js';
 import { note_chemistry_5_18_4 } from './chemistry/note_5_18_4.js';
 import { note_chemistry_5_18_5 } from './chemistry/note_5_18_5.js';
+import { note_chemistry_5_18_6 } from './chemistry/note_5_18_6.js';
 
 // WCH15 — Topic 19: Organic Nitrogen Chemistry
 import { note_chemistry_5_19_0 } from './chemistry/note_5_19_0.js';
@@ -763,6 +764,7 @@ export const seedNotes = {
     'chemistry:1:5:5': note_chemistry_1_5_5,
     'chemistry:1:5:6': note_chemistry_1_5_6,
     'chemistry:1:5:7': note_chemistry_1_5_7,
+    'chemistry:1:5:8': note_chemistry_1_5_8,
 
     // WCH11 — Topic 4: Organic Foundations & Alkanes
     'chemistry:1:4:0': note_chemistry_1_4_0,
@@ -922,6 +924,7 @@ export const seedNotes = {
     'chemistry:5:18:3': note_chemistry_5_18_3,
     'chemistry:5:18:4': note_chemistry_5_18_4,
     'chemistry:5:18:5': note_chemistry_5_18_5,
+    'chemistry:5:18:6': note_chemistry_5_18_6,
 
     // WCH15 — Topic 19: Organic Nitrogen Chemistry
     'chemistry:5:19:0': note_chemistry_5_19_0,

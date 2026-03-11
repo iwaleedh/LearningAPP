@@ -1,0 +1,84 @@
+halogenoalkanes (haloalkanes) and hydroxide ions
+REACTIONS BETWEEN HALOGENOALKANES AND HYDROXIDE IONS
+This page looks at the reactions between halogenoalkanes (haloalkanes or alkyl halides) and hydroxide ions from sodium or potassium hydroxide solution.  It covers both substitution and elimination reactions.
+To a large extent, this page simply brings together information from a number of other pages on the site.  If you want information about the mechanisms for these reactions you will find them elsewhere.  This page has links to all the other pages that you will need.
+Substitution or elimination?
+There are two different sorts of reaction that you can get depending on the conditions used and the type of halogenoalkane.  Primary, secondary and tertiary halogenoalkanes behave differently in this respect.
+Note:
+If you aren't sure what primary, secondary and tertiary halogenoalkanes are, you should read the beginning of the
+introduction to halogenoalkanes
+by following this link before you go on.
+Use the BACK button on your browser to return to this page.
+Substitution reactions
+In a substitution reaction, the halogen atom is replaced by an -OH group to give an alcohol.
+For example:
+Or, as an ionic equation:
+In the example, 2-bromopropane is converted into propan-2-ol.
+The halogenoalkane is heated under reflux with a solution of sodium or potassium hydroxide.  Heating under reflux means heating with a condenser placed vertically in the flask to prevent loss of volatile substances from the mixture.
+The solvent is usually a 50/50 mixture of ethanol and water, because everything will dissolve in that.  The halogenoalkane is insoluble in water.  If you used water alone as the solvent, the halogenoalkane and the sodium hydroxide solution wouldn't mix and the reaction could only happen where the two layers met.
+Note:
+If you want the
+mechanisms for substitution reactions
+follow this link.  Use the BACK button (or the GO menu or HISTORY file) on your browser to return to this page later if you want to.
+Elimination reactions
+Halogenoalkanes also undergo elimination reactions in the presence of sodium or potassium hydroxide.
+The 2-bromopropane has reacted to give an alkene - propene.
+Notice that a hydrogen atom has been removed from one of the end carbon atoms together with the bromine from the centre one.  In all simple elimination reactions the things being removed are on adjacent carbon atoms, and a double bond is set up between those carbons.
+The halogenoalkane is heated under reflux with a concentrated solution of sodium or potassium hydroxide in ethanol.  Propene is formed and, because this is a gas, it passes through the condenser and can be collected.
+Note:
+If you want to read about the
+mechanisms for elimination reactions
+follow this link.  Use the BACK button (or the GO menu or HISTORY file) on your browser to return to this page later if you want to.
+What decides whether you get substitution or elimination?
+The reagents you are using are the same for both substitution or elimination - the halogenoalkane and either sodium or potassium hydroxide solution.  In all cases, you will get a mixture of both reactions happening - some substitution and some elimination.  What you get
+most
+of depends on a number of factors.
+The type of halogenoalkane
+This is the most important factor.
+type of halogenoalkane
+substitution or elimination?
+primary
+mainly substitution
+secondary
+both substitution and elimination
+tertiary
+mainly elimination
+For example, whatever you do with tertiary halogenoalkanes, you will tend to get mainly the elimination reaction, whereas with primary ones you will tend to get mainly substitution.  However, you can influence things to some extent by changing the conditions.
+The solvent
+The proportion of water to ethanol in the solvent matters.
+Water encourages substitution.
+Ethanol encourages elimination.
+The temperature
+Higher temperatures encourage elimination.
+Concentration of the sodium or potassium hydroxide solution
+Higher concentrations favour elimination.
+In summary
+For a given halogenoalkane, to favour
+elimination
+rather than substitution, use:
+higher temperatures
+a concentrated solution of sodium or potassium hydroxide
+pure ethanol as the solvent
+To favour
+substitution
+rather than elimination, use:
+lower temperatures
+more dilute solutions of sodium or potassium hydroxide
+more water in  the solvent mixture
+Note:
+The
+explanations
+for these effects are well beyond the demands of UK A level syllabuses.  Some things you just have to
+know
+!
+Questions to test your understanding
+If this is the first set of questions you have done, please read the
+introductory page
+before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the reactions of halogenoalkanes with hydroxide ions
+answers
+Where would you like to go now?
+To the halogenoalkanes menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+© Jim Clark 2003 (modified October 2015)

@@ -26,6 +26,67 @@ export const note_chemistry_5_18_0 = {
       }
     },
     {
+      id: 'h-nomenclature',
+      type: 'heading',
+      data: { text: 'Naming Aromatic Compounds', level: 2 }
+    },
+    {
+      id: 'list-nomenclature',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '<strong>Substituted benzenes:</strong> Many are named using the suffix <em>-benzene</em> (e.g., chlorobenzene, nitrobenzene C₆H₅NO₂, methylbenzene C₆H₅CH₃)' },
+          { text: 'When a group is attached to a benzene ring, it replaces one hydrogen, creating a <strong>phenyl group (C₆H₅–)</strong>.' },
+          { text: '<strong>Phenyl as a prefix:</strong> Used when the functional group takes priority as the root name. E.g., phenylamine (C₆H₅NH₂), phenylethene (styrene, C₆H₅CH=CH₂), phenylethanone (ketone), phenyl ethanoate (ester).' },
+          { text: '<strong>Common names to know:</strong> phenol (C₆H₅OH), benzoic acid (benzenecarboxylic acid, C₆H₅COOH).' },
+          { text: '<strong>Numbering the ring:</strong> When multiple groups are attached, the ring is numbered from 1 to 6 to give the lowest possible numbers (e.g. 1-chloro-2-methylbenzene or 2-chloromethylbenzene). Always count in the direction that gives substituents the lowest locants.' }
+        ]
+      }
+    },
+    {
+      id: 'h-physical-props',
+      type: 'heading',
+      data: { text: 'Physical Properties of Arenes', level: 2 }
+    },
+    {
+      id: 'list-physical-props',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '<b>Boiling Points:</b> Benzene (b.p. 80°C) and methylbenzene (111°C) depend on van der Waals dispersion forces. Delocalised electrons make establishing temporary dipoles easy. Methylbenzene is larger (C₇H₈), creating stronger dispersion forces and raising b.p.' },
+          { text: '<b>Melting Points:</b> Strangely, benzene (m.p. 5.5°C) melts much higher than methylbenzene (−95°C). The highly symmetrical, planar benzene molecules pack tightly in a solid lattice. The methyl branch disrupting symmetry prevents close packing, heavily lowering m.p.' },
+          { text: '<b>Solubility:</b> Insoluble in water. Overcoming water hydrogen bonds and arene dispersion forces requires too much energy compared to the weak interactions established between water and arene molecules.' }
+        ]
+      }
+    },
+    {
+      id: 'h-manufacture',
+      type: 'heading',
+      data: { text: 'Manufacturing Arenes: Catalytic Reforming', level: 2 }
+    },
+    {
+      id: 'p-manufacture',
+      type: 'paragraph',
+      data: {
+        text: 'Benzene and methylbenzene are manufactured industrially from straight-chain alkanes extracted from crude oil (specifically the naphtha or gasoline fractions) via a process called <b>catalytic reforming</b>.'
+      }
+    },
+    {
+      id: 'list-manufacture',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '<b>Reforming process:</b> Straight-chain C₆-C₈ alkanes undergo dehydrocyclisation to form arene rings and hydrogen gas. For example, hexane yields benzene and 4 equivalents of H₂ (C₆H₁₄ → C₆H₆ + 4H₂). Heptane similarly yields methylbenzene and 4H₂.' },
+          { text: '<b>Reaction conditions:</b> 500°C and ~20 atm. The catalyst is typically a mixture of <b>platinum</b> and aluminium oxide (often called "platforming").' },
+          { text: '<b>Hydrogen feedstock:</b> Hydrogen gas is intentionally mixed with the alkane feed. While reforming produces H₂, adding it initially prevents the hydrocarbons from thermally decomposing into solid carbon, which would contaminate and poison the catalyst.' },
+          { text: '<b>Dealkylation:</b> Because benzene is more commercially valuable than methylbenzene, excess methylbenzene is often converted to benzene. It is mixed with H₂ gas over a silica/alumina catalyst (550–650°C, 30–50 atm) to strip the methyl group: C₆H₅CH₃ + H₂ → C₆H₆ + CH₄.' }
+        ]
+      }
+    },
+    {
       id: 'callout-benzene-discovery',
       type: 'callout',
       data: {
@@ -138,7 +199,7 @@ export const note_chemistry_5_18_0 = {
       id: 'p-hydrogenation-1',
       type: 'paragraph',
       data: {
-        text: 'If benzene had three C=C double bonds (Kekulé structure), we would expect ΔH ≈ −360 kJ/mol (three double bonds × ~120 kJ/mol per C=C). Cyclohexene has one C=C and ΔH = −120 kJ/mol. However, the measured enthalpy of hydrogenation of benzene to cyclohexane is only −208 kJ/mol — approximately 152 kJ/mol less exothermic than predicted. This represents the delocalisation/stabilisation energy of benzene.'
+        text: 'If benzene had three C=C double bonds (Kekulé structure), we would expect ΔH ≈ −360 kJ/mol (three double bonds × ~120 kJ/mol per C=C). Cyclohexene has one C=C and ΔH = −120 kJ/mol. If the ring had two double bonds (cyclohexa-1,3-diene), the enthalpy change is −232 kJ/mol (close to the predicted −240 kJ/mol). However, the measured enthalpy of hydrogenation of benzene to cyclohexane is only −208 kJ/mol — approximately 152 kJ/mol less exothermic than predicted for the triene. This represents the delocalisation/stabilisation energy of benzene.'
       }
     },
     {
@@ -182,17 +243,30 @@ export const note_chemistry_5_18_0 = {
       data: { text: 'The Delocalised π Electron Model', level: 2 }
     },
     {
-      id: 'p-delocalised-1',
+      id: 'p-delocalised-intro',
       type: 'paragraph',
       data: {
-        text: 'Modern bonding theory explains benzene using a delocalised π electron model. Each carbon atom is sp² hybridised, with three sp² hybrid orbitals in the plane of the ring forming σ bonds (bond angles 120°). The remaining unhybridised p orbital on each carbon points perpendicular to the ring plane.'
+        text: 'Modern bonding theory explains benzene using a delocalised π electron model, built upon orbital hybridisation:'
       }
     },
     {
-      id: 'p-delocalised-2',
+      id: 'list-orbital-model',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          '**Electron Promotion:** An electron in each carbon atom is promoted from the 2s orbital to the empty 2p orbital to provide four unpaired electrons.',
+          '**sp² Hybridisation:** The 2s electron and two of the 2p electrons hybridise to form three degenerate sp² orbitals. These arrange themselves as far apart as possible in a trigonal planar geometry (120°).',
+          '**σ Bonds:** Each carbon uses these sp² orbitals to form σ (sigma) bonds with two adjacent carbons and one hydrogen atom, creating a flat planar hexagonal framework.',
+          '**Continuous π System:** The remaining unhybridised p orbital on each carbon points perpendicular to the ring plane. Instead of overlapping with just one neighbour (as in ethene), each p orbital overlaps sideways with the p orbitals on *both* sides of it. This extensive overlap forms a continuous π electron system extending above and below the ring.'
+        ]
+      }
+    },
+    {
+      id: 'p-delocalised-conclusion',
       type: 'paragraph',
       data: {
-        text: 'Each of the 6 carbons contributes one unpaired p-orbital electron — giving 6 electrons in total. These six p orbitals overlap sideways to form a continuous π electron system that extends above and below the hexagonal ring in a donut-like shape. The electrons are not localised between specific pairs of carbons but are delocalised over all six atoms, creating equal bond character in every C−C bond and extra stability (stabilisation energy ≈ 152 kJ/mol).'
+        text: 'Because the 6 π electrons are no longer held closely between specific pairs of carbon atoms, they are said to be delocalised. This configuration creates equal bond character in every C−C bond and provides the extra thermodynamic stability known as the delocalisation energy (≈ 152 kJ/mol).'
       }
     },
     {
@@ -313,9 +387,10 @@ export const note_chemistry_5_18_0 = {
       { id: 'cue-2', blockId: 'p-isomers', prompt: 'How do the isomers of dibromobenzene disprove the Kekulé structure?' },
       { id: 'cue-3', blockId: 'eq-hydrogenation', prompt: 'What is the measured ΔH of hydrogenation for benzene? How does it compare to the Kekulé prediction and what is the stabilisation energy?' },
       { id: 'cue-4', blockId: 'p-ir-1', prompt: 'What does the IR spectrum of benzene show, and why does this disprove the Kekulé structure?' },
-      { id: 'cue-5', blockId: 'p-delocalised-2', prompt: 'Explain how the delocalised π electron model accounts for all five pieces of evidence against Kekulé.' }
+      { id: 'cue-5', blockId: 'p-delocalised-conclusion', prompt: 'Explain how the delocalised π electron model accounts for all five pieces of evidence against Kekulé.' },
+      { id: 'cue-6', blockId: 'list-orbital-model', prompt: 'Describe the orbital model of benzene, including hybridisation and the formation of the delocalised π system.' }
     ],
-    summaryText: 'Benzene is aromatic (contains benzene ring); benzene ≠ aliphatic. Five evidence points disprove Kekulé: (1) no addition with Br₂; (2) only 3 dibromobenzene isomers; (3) all C−C bonds equal at 139 pm; (4) ΔH(hydrogenation) = −208 not −360 kJ/mol; (5) no IR peak at 1650 cm⁻¹. Modern model: 6 p orbitals → delocalised π system, stabilisation energy ≈ 152 kJ/mol.',
+    summaryText: 'Benzene is aromatic (contains benzene ring); benzene ≠ aliphatic. Five evidence points disprove Kekulé: (1) no addition with Br₂; (2) only 3 dibromobenzene isomers; (3) all C−C bonds equal at 139 pm; (4) ΔH(hydrogenation) = −208 not −360 kJ/mol; (5) no IR peak at 1650 cm⁻¹. Modern model: C atoms sp² hybridised, 6 p orbitals overlap sideways → delocalised π system, stabilisation energy ≈ 152 kJ/mol.',
     ready: false
   },
   evidence: [

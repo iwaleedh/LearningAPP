@@ -62,24 +62,52 @@ export const note_chemistry_5_19_4 = {
       data: { text: 'Amide Formation from Carboxylic Acids', level: 2 }
     },
     {
-      id: 'p-carboxylic-1',
+      id: 'p-carboxylic-method',
       type: 'paragraph',
       data: {
-        text: 'Amides can also be formed by heating a carboxylic acid (R−COOH) with ammonia or an amine. However, this route is slower and less efficient than the acyl chloride route. The carboxylic acid is less electrophilic than an acyl chloride, so the reaction requires heat and is slower.'
+        text: 'The carboxylic acid is first converted into an ammonium salt, which then produces an amide on heating. The ammonium salt is formed by adding solid ammonium carbonate to an excess of the acid. For example, ammonium ethanoate is made by adding ammonium carbonate to an excess of ethanoic acid.'
       }
     },
     {
-      id: 'eq-carboxylic-amide',
+      id: 'eq-carboxylic-ammonium',
       type: 'equation',
       data: {
-        html: 'R−COOH + NH₃ → R−COO⁻NH₄⁺ (ammonium carboxylate salt, initial product)<br />(heat)<br />R−COO⁻NH₄⁺ → R−CO−NH₂ + H₂O (on further heating, amide forms)'
+        html: '2CH₃COOH + (NH₄)₂CO₃ &rarr; 2CH₃COONH₄ + H₂O + CO₂'
       }
     },
     {
-      id: 'p-carboxylic-2',
+      id: 'callout-excess-acid',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Purpose of Excess Acid',
+        text: 'When the reaction is complete, the mixture is heated to dehydrate the ammonium salt. The excess of ethanoic acid is present to prevent the dissociation of the ammonium salt before it dehydrates. Ammonium salts tend to reversibly split into ammonia and the parent acid on heating (CH₃COONH₄ &rightleftharpoons; CH₃COOH + NH₃). The excess acid shifts the equilibrium to the left, preventing ammonia gas from escaping.'
+      }
+    },
+    {
+      id: 'eq-carboxylic-dehydrate',
+      type: 'equation',
+      data: {
+        html: 'CH₃COONH₄ &rarr; CH₃CONH₂ + H₂O <br />(ammonium salt heated under reflux &rarr; amide + water)'
+      }
+    },
+    {
+      id: 'h-amide-formation-anhydrides',
+      type: 'heading',
+      data: { text: 'Amide Formation from Acid Anhydrides', level: 2 }
+    },
+    {
+      id: 'p-anhydride-amides',
       type: 'paragraph',
       data: {
-        text: 'The process is a condensation reaction: the carboxylic acid and amine combine, releasing water. The carboxylic acid first donates a proton to ammonia, forming an ammonium carboxylate salt (R−COO⁻−NH₄⁺). On further heating (150−200°C), water is eliminated and the amide forms. Heating must be sustained to drive the equilibrium towards the amide product.'
+        text: 'Acid anhydrides can also be used to prepare amides. If ethanoic anhydride is added to concentrated ammonia solution, ethanamide is formed together with ammonium ethanoate. This occurs in two stages: first, ethanamide and ethanoic acid are formed. The produced ethanoic acid then reacts with excess ammonia to form ammonium ethanoate.'
+      }
+    },
+    {
+      id: 'eq-anhydride-amide',
+      type: 'equation',
+      data: {
+        html: '(CH₃CO)₂O + 2NH₃ &rarr; CH₃CONH₂ + CH₃COO⁻NH₄⁺'
       }
     },
     {
@@ -122,6 +150,15 @@ export const note_chemistry_5_19_4 = {
         style: 'tip',
         title: 'Difference Between Acidic and Basic Hydrolysis',
         text: 'Acidic: N protonated first → water attacks C=O. Products: carboxylic acid (RCOOH) + NH₄⁺. Basic: OH⁻ attacks C=O directly → ammonia released and neutralised. Products: carboxylate ion (RCOO⁻) + NH₃ → NH₄⁺ + OH⁻ balance.'
+      }
+    },
+    {
+      id: 'callout-amide-test',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Chemical Test for an Amide',
+        text: 'Alkaline hydrolysis is used to test for amides: heat the unknown compound with sodium hydroxide (NaOH) solution. If ammonia gas (NH₃) is released (detectable by pungent smell and turning damp red litmus paper blue), it is an amide. Note: Ammonium salts also release NH₃ with NaOH, but they do so immediately in the cold, whereas amides require heating.'
       }
     },
     {
@@ -309,7 +346,8 @@ export const note_chemistry_5_19_4 = {
         items: [
           { text: 'Acyl chloride + 2NH₃ → amide + NH₄Cl (N lone pair attacks δ+ C; HCl fumes observed)', checked: false },
           { text: 'Carboxylic acid + NH₃ (heat) → ammonium salt → amide + H₂O', checked: false },
-          { text: 'Amide hydrolysis with HCl (heat): RCOOH + NH₄⁺; with NaOH: RCOO⁻ + NH₃', checked: false },
+          { text: 'Amide hydrolysis with HCl (heat): RCOOH + NH₄⁺; with NaOH (heat): RCOO⁻ + NH₃', checked: false },
+          { text: 'Test for amide: Unknown compound heated with NaOH(aq) releases NH₃ gas (pungent, turns red litmus blue).', checked: false },
           { text: 'Nylon 6,6: 1,6-diaminohexane + hexanedioic acid; “6,6” = 6C in each monomer', checked: false },
           { text: 'Kevlar: aromatic polyamide; 1,4-diaminobenzene + benzene-1,4-diacyl chloride → Kevlar + HCl', checked: false },
           { text: 'Polyamide uses: nylon = fibres/clothing; Kevlar = bulletproof vests; film = food packaging', checked: false },
@@ -340,13 +378,15 @@ export const note_chemistry_5_19_4 = {
   recall: {
     enabled: true,
     cues: [
+      { id: 'cue-0', blockId: 'callout-excess-acid', prompt: 'Why is an excess of carboxylic acid used when preparing an amide by heating an ammonium salt?' },
       { id: 'cue-1', blockId: 'list-acyl-mechanism', prompt: 'Describe the 4-step mechanism for acyl chloride + NH₃. What is the overall equation with excess NH₃?' },
+      { id: 'cue-amide-test', blockId: 'callout-amide-test', prompt: 'Describe the chemical test for an amide and explain how to distinguish it from an ammonium salt.' },
       { id: 'cue-2', blockId: 'callout-nylon-naming', prompt: 'What does the naming “nylon 6,6” tell you? What are its two monomers?' },
       { id: 'cue-3', blockId: 'list-kevlar', prompt: 'How does Kevlar differ from nylon? What is its key structural difference and what is it used for?' },
       { id: 'cue-4', blockId: 'list-poly-propenamide', prompt: 'Is poly(propenamide) addition or condensation? What part of the monomer reacts? What happens when cross-linked?' },
       { id: 'cue-5', blockId: 'list-pva-production', prompt: 'Describe the two-stage production of poly(ethenol)/PVA. Why is PVA water-soluble?' }
     ],
-    summaryText: 'Acyl chloride + 2NH₃ → amide + NH₄Cl (N lone pair attacks δ+ C; Cl leaves + HCl + excess NH₃ → NH₄Cl). Nylon 6,6: hexanedioic acid (6C) + 1,6-diaminohexane (6C) → polyamide + H₂O. Kevlar: aromatic polyamide from diaminobenzene + diacyl chloride; bulletproof vests. Poly(propenamide): addition polymer of CH₂=CH−CONH₂; amide group unchanged; cross-linked = gel. PVA (2 stages): addition polymerise ethenyl ethanoate → transesterify with MeOH → polymer with −OH; water-soluble; hospital laundry bags.',
+    summaryText: 'Acyl chloride + 2NH₃ → amide + NH₄Cl (N lone pair attacks δ+ C; Cl leaves + HCl + excess NH₃ → NH₄Cl). Amide test: Heat with NaOH(aq) → NH₃ gas released (ammonium salts release NH₃ in the cold). Nylon 6,6: hexanedioic acid (6C) + 1,6-diaminohexane (6C) → polyamide + H₂O. Kevlar: aromatic polyamide from diaminobenzene + diacyl chloride; bulletproof vests. Poly(propenamide): addition polymer of CH₂=CH−CONH₂; amide group unchanged; cross-linked = gel. PVA (2 stages): addition polymerise ethenyl ethanoate → transesterify with MeOH → polymer with −OH; water-soluble; hospital laundry bags.',
     ready: false
   },
   evidence: [

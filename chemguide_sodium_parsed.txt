@@ -1,0 +1,75 @@
+
+alcohols and sodium
+REACTING ALCOHOLS WITH SODIUM
+This page describes the reaction between alcohols and metallic sodium, and takes a very brief look at the properties of the alkoxide which is formed.  We will look at the reaction between sodium and ethanol as being typical, but you could substitute any other alcohol you wanted to - the reaction would be the same.
+The reaction between sodium and ethanol
+Details of the reaction
+If a small piece of sodium is dropped into some ethanol, it reacts steadily to give off bubbles of hydrogen gas and leaves a colourless solution of sodium ethoxide, CH
+3
+CH
+2
+ONa.  Sodium ethoxide is known as an 
+alkoxide
+.
+If the solution is evaporated carefully to dryness, the sodium ethoxide is left as a white solid.
+Although at first sight you might think this was something new and complicated, in fact it is exactly the same (apart from being a more gentle reaction) as the reaction between sodium and water - something you have probably known about for years.
+Compare the two:
+We normally, of course, write the sodium hydroxide formed as NaOH rather than HONa - but that's the only difference.
+Sodium ethoxide is just like sodium hydroxide, except that the hydrogen has been replaced by an ethyl group.  Sodium hydroxide contains OH
+-
+ ions; sodium ethoxide contains CH
+3
+CH
+2
+O
+-
+ ions.
+Note:  
+The reason that the ethoxide formula is written with the oxygen on the right unlike the hydroxide ion is simply a matter of clarity.  If you write it the other way around, it doesn't immediately look as if it comes from ethanol.  You will find the same thing happens when you write formulae for organic salts like sodium ethanoate, for example.
+Using the reaction
+There are two simple uses for this reaction:
+To dispose of small amounts of sodium safely
+If you spill some sodium on the bench, or have a small amount left over from a reaction, you can't just chuck it in the sink.  It tends to react explosively with the water - and comes flying back out at you again!
+It reacts much more gently with ethanol.  Ethanol is therefore used to dissolve small quantities of waste sodium.  The solution formed can be washed away without problems (provided you remember that sodium ethoxide is strongly alkaline - see below).
+To test for the -OH group in alcohols
+Because of the dangers involved in handling sodium, this is not the best test for an alcohol at this level.  Because sodium reacts violently with acids to produce a salt and hydrogen, you would first have to be sure that the liquid you were testing was neutral.
+You would also have to be confident that there was no trace of water present because sodium reacts with the -OH group in water even better than with the one in an alcohol.
+With those provisos, if you add a tiny piece of sodium to a neutral liquid free of water and get bubbles of hydrogen produced, then the liquid is an alcohol.
+Some simple reactions of alkoxide ions
+This is going beyond the demands of UK A level, but you might come across the first example as a part of a bit of practical work.  The second example is to reinforce  the similarity between sodium ethoxide and sodium hydroxide.
+Once again we will take the ethoxide ions in sodium ethoxide as typical.  Essentially, ethoxide (and other alkoxide) ions behave like hydroxide ions.
+Ethoxide ions are strongly basic
+If you add water to sodium ethoxide, it dissolves to give a colourless solution with a high pH - typically pH 14.  The solution is strongly alkaline.
+The reason is that the ethoxide ions remove hydrogen ions from water molecules to produce hydroxide ions.  It is these which produce the high pH.
+Ethoxide ions are good nucleophiles
+A nucleophile is something which carries a negative or partial negative charge which it uses to attack positive centres in other molecules or ions.
+Hydroxide ions are good nucleophiles, and you may have come across the reaction between a halogenoalkane (also called a haloalkane or alkyl halide) and sodium hydroxide solution.  The hydroxide ions replace the halogen atom.
+In this case, an alcohol is formed.
+Note:  
+You will find the 
+mechanism for this reaction
+ in the mechanism section of this site.
+Use the BACK button on your browser to return to this page.
+The ethoxide ion behaves in exactly the same way.  If you knew the mechanism for the hydroxide ion reaction you could work out exactly what happens in the reaction between a halogenoalkane and ethoxide ion.
+Compare this equation with the last one.
+The only difference is that where there was a hydrogen atom at the right-hand end of the product molecule, you now have an alkyl group.
+Two alkyl (or other hydrocarbon) groups bridged by an oxygen atom is called an 
+ether
+.  This particular one is 1-ethoxypropane or ethyl propyl ether.  This reaction is a good way of making ethers in the lab.
+Note:  
+There are all sorts of ways of naming ethers.  For UK A level purposes, the problem doesn't arise - you almost certainly won't have to name them.
+If you have looked at the chemistry of halogenoalkanes, you may be aware that there is a competition between substitution and elimination when they react with hydroxide ions.  Exactly the same competition occurs in their reactions with ethoxide ions.  Just as the hydroxide ion can act as either a base or a nucleophile, exactly the same is true of alkoxide ions like the  ethoxide ion.
+You could read about the reactions of 
+halogenoalkanes with hydroxide ions
+ and work out for yourself what is going to happen in the possible elimination reaction if you used sodium ethoxide rather than sodium hydroxide.  Because this is getting well beyond UK A level, I haven't given any detail for this anywhere on the site.  The whole point about understanding chemistry (and especially mechanisms!) is that you can work things out for yourself when you need to!
+Questions to test your understanding
+If this is the first set of questions you have done, please read the 
+introductory page
+ before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the reaction of alcohols with sodium
+answers
+Where would you like to go now?
+To the alcohols menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+ &copy; Jim Clark 2003 (modified October 2015)

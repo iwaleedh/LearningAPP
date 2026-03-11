@@ -169,10 +169,17 @@ export const note_chemistry_4_15_0 = {
           '2. List the four groups on each carbon',
           '3. If ALL four groups are different → chiral centre (mark with *)',
           '4. If ANY two groups are the same (including both H atoms, or two identical chains) → NOT chiral',
-          '<strong>sp² carbons</strong> (C=O, C=C) are never chiral — they only make 3 bonds and use one bond twice',
-          '<strong>In ring structures</strong>: each ring carbon usually has 2 H atoms unless specified otherwise — check the diagram carefully',
-          '<strong>Multiple chiral centres</strong>: molecule can have 2ⁿ possible stereoisomers (n = number of chiral centres)'
+          '<strong>Multiple chiral centres</strong>: A molecule can have 2ⁿ possible stereoisomers (n = number of chiral centres)'
         ]
+      }
+    },
+    {
+      id: 'callout-skeletal-rings',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Identifying chiral centres in Skeletal Diagrams and Rings',
+        text: 'In complex skeletal structures (like cholesterol) or simple rings, you can use quick elimination rules to find chiral centres fast:<br/>• <strong>Ignore double bonds:</strong> sp² carbons (C=C, C=O) are never chiral because they only bond to 3 atoms.<br/>• <strong>Ignore CH₂ and CH₃ groups:</strong> If a carbon has two or more hydrogens attached, it cannot be chiral. In skeletal rings, any vertex with only TWO lines going away from it must have 2 hidden hydrogens. Skip it!<br/>• <strong>Check junctions:</strong> Only focus on carbons that have at least 3 distinct bonds shown (meaning they have at most 1 hidden hydrogen). Compare the entire paths around the ring in both directions — if the paths are different, they count as different groups.'
       }
     },
     {
@@ -242,11 +249,11 @@ export const note_chemistry_4_15_0 = {
       },
       {
         id: 'cue-5',
-        blockId: 'list-recognition',
-        prompt: 'How do you identify a chiral centre in a ring molecule drawn without explicit H atoms?'
+        blockId: 'callout-skeletal-rings',
+        prompt: 'How do you quickly eliminate carbons that cannot be chiral centres when looking at complex skeletal ring structures like cholesterol?'
       }
     ],
-    summaryText: 'Optical isomers are a type of stereoisomer. Chiral centre = sp³ carbon bonded to exactly four different groups (marked C*). Enantiomers = non-superimposable mirror images. Polarimeter: source → polariser → sample → analyser → detector. Clockwise = +, anti-clockwise = −. Same physical/chemical properties EXCEPT rotation of plane-polarised light. L/D (amino acids), R/S (others) — awareness only.',
+    summaryText: 'Optical isomers are a type of stereoisomer. Chiral centre = sp³ carbon bonded to exactly four different groups (marked C*). Enantiomers = non-superimposable mirror images. Polarimeter: source → polariser → sample → analyser → detector. Clockwise = +, anti-clockwise = −. Same physical/chemical properties EXCEPT rotation of plane-polarised light. In skeletal rings, ignore double bonds and vertices with only two lines (as they have 2 hidden Hs).',
     ready: false
   },
   evidence: [

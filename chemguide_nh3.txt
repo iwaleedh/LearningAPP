@@ -1,0 +1,196 @@
+
+<html>
+<head>
+<title>halogenoalkanes (haloalkanes) and ammonia</title>
+
+<meta name="description"
+content="The reactions between halogenoalkanes (haloalkanes, alkyl halides) and ammonia" />
+<meta name="keywords"
+content="halogenoalkanes, haloalkanes, alkyl halides, ammonia, amines, substitution" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>REACTIONS BETWEEN HALOGENOALKANES AND AMMONIA</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page looks at the reaction between halogenoalkanes (haloalkanes or alkyl halides) and ammonia.  This is a potentially very complicated series of reactions, so it is important to know exactly what your examiners want.  You need to check your syllabus and past exam papers and mark schemes.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#ff0000" face="Helvetica, Arial" size="2">
+<p><hr /><b>Important!  &nbsp;</b>If you are working towards a UK-based exam (A level or equivalent), and don't have any of this information, then it is essential that you get it!  Find out how by going to the <a href="../../syllabuses.html#top">syllabuses</a> page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>The current page summarises the main facts about the reactions.  If you need details about the mechanisms, you will find a link below.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Reaction details and products</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>The halogenoalkane is heated with a concentrated solution of ammonia in ethanol.  The reaction is carried out in a sealed tube.  You couldn't heat this mixture under reflux, because the ammonia would simply escape up the condenser as a gas.</p>
+
+<p>We'll talk about the reaction using 1-bromoethane as a typical primary halogenoalkane.  There is no difference in the details of the reaction if you chose a secondary or tertiary halogenoalkane instead.  The equations would just look more complicated than they already are!</p>
+
+<p>You get a series of <b><i>amines</i></b> formed together with their salts.  The reactions happen one after another.</p> 
+
+<p><b>Making a primary amine</b></p>
+
+
+<p>The reaction happens in two stages.  In the first stage, a salt is formed - in this case, ethylammonium bromide.  This is just like ammonium bromide, except that one of the hydrogens in the ammonium ion is replaced by an ethyl group.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="primnh3eq1.gif" width="320" height="24" /></p>
+
+<p>There is then the possibility of a reversible reaction between this salt and excess ammonia in the mixture.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="primnh3eq2.gif" width="416" height="24" /></p>
+
+<p>The ammonia removes a hydrogen ion from the ethylammonium ion to leave a primary amine - ethylamine.</p>
+
+<p>The more ammonia there is in the mixture, the more the forward reaction is favoured.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>You will find considerable disagreement in textbooks and other sources about the exact nature of the products in this reaction.  Some of the information you'll come across is simply wrong!</p>
+
+<p>You can read the arguments about <a href="../../mechanisms/nucsub/ammoniaeq.html#top">the products of this reaction</a> by following this link.</p>
+
+<p><b>Warning! &nbsp;</b>That page is in the mechanism section of the site.  Return to the current page using the BACK button on your browser.  If you use the links at the bottom of that page, you could get seriously lost!<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Making a secondary amine</b></p>
+
+
+<p>The reaction doesn't stop at a primary amine.  The ethylamine also reacts with bromoethane - in the same two stages as before.</p>
+
+<p>In the first stage, you get a salt formed - this time, diethylammonium bromide.  Think of this as ammonium bromide with two hydrogens replaced by ethyl groups.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="secnh3eq1.gif" width="355" height="67" /></p>
+
+<p>There is again the possibility of a reversible reaction between this salt and excess ammonia in the mixture.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="secnh3eq2.gif" width="392" height="68" /></p>
+
+<p>The ammonia removes a hydrogen ion from the diethylammonium ion to leave a secondary amine - diethylamine.  A secondary amine is one which has two alkyl groups attached to the nitrogen.</p>
+
+<p><b>Making a tertiary amine</b></p>
+
+
+<p>And still it doesn't stop!  The diethylamine also reacts with bromoethane - in the same two stages as before.</p>
+
+<p>In the first stage, you get triethylammonium bromide.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="tertnh3eq1.gif" width="379" height="79" /></p>
+
+<p>There is again the possibility of a reversible reaction between this salt and excess ammonia in the mixture.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="tertnh3eq2.gif" width="418" height="80" /></p>
+
+<p>The ammonia removes a hydrogen ion from the triethylammonium ion to leave a tertiary amine - triethylamine.  A tertiary amine is one which has three alkyl groups attached to the nitrogen.</p>
+
+<p><b>Making a quaternary ammonium salt</b></p>
+
+
+<p>The final stage!  The triethylamine reacts with bromoethane to give tetraethylammonium bromide - a quaternary ammonium salt (one in which all four hydrogens have been replaced by alkyl groups).</p>
+
+<p align="center"><img src="quatnh3eq.gif" width="449" height="80" /></p>
+
+<p>This time there isn't any hydrogen left on the nitrogen to be removed.  The reaction stops here.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>This whole reaction sequence is a complete pain if you are going to have to learn it.  It is much, much easier to work it out if you need to, provided you understand the mechanisms for the reactions.</p>
+
+<p>You can explore the <a href="../../mechanisms/nucsub/ammonia.html#top">mechanisms for the various stages of the reaction</a> by following this link.  This will lead you to several pages in the mechanism section of this  site.  If all you want to do is make some sense of the above reactions, it would probably pay you to just read the parts of those pages concerned with primary halogenoalkanes like bromoethane.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>What do you actually get if you react bromoethane with ammonia?</b></p>
+
+<p>Whatever you do, you get a mixture of all of the products (including both amines and their salts) shown on this page.</p>
+
+<p>To get mainly the quaternary ammonium salt, you can use a large excess of bromoethane.  If you look at the reactions going on, each one needs additional bromoethane.  If you provide enough, then the chances are that the reaction will go to completion, given enough time.</p>
+
+<p>On the other hand, if you use a very large excess of ammonia, the chances are always greatest that a bromoethane molecule will hit an ammonia molecule rather than one of the amines being formed.  That will help to prevent the formation of secondary (etc) amines.</p>
+
+
+
+
+
+</font>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-halonh3.pdf">questions on the reactions of halogenoalkanes with ammonia</a></p>
+<p><a href="../questions/a-halonh3.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../haloalkanemenu.html#top"><b>To the halogenoalkanes menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (modified October 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

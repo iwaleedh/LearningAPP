@@ -1,0 +1,95 @@
+making halogenoalkanes (haloalkanes)
+MAKING HALOGENOALKANES (haloalkanes or alkyl halides)
+This page looks at ways of making halogenoalkanes in the lab starting from alcohols.  It covers more than enough detail for UK A level purposes, but isn't intended to be all-inclusive!
+Summarising the methods of preparation
+Halogenoalkanes can be made from the reaction between alkenes and hydrogen halides, but they are more commonly made by replacing the -OH group in an alcohol by a halogen atom.  That's the method we'll concentrate on in this page.
+Making halogenoalkanes from alcohols using hydrogen halides
+The general reaction looks like this:
+Making chloroalkanes
+It is possible to make tertiary chloroalkanes successfully from the corresponding alcohol and concentrated hydrochloric acid, but to make primary or secondary ones you really need to use a different method - the reaction rates are too slow.
+A tertiary chloroalkane can be made by shaking the corresponding alcohol with concentrated hydrochloric acid at room temperature.
+Note:
+If you don't know what primary, secondary and tertiary halogenoalkanes are, you should read the
+introduction to halogenoalkanes
+before you go on.
+Use the BACK button on your browser to return to this page.
+Making bromoalkanes
+Rather than using hydrobromic acid, you usually treat the alcohol with a mixture of sodium or potassium bromide and concentrated sulphuric acid.  This produces hydrogen bromide which reacts with the alcohol.  The mixture is warmed to distil off the bromoalkane.  You will find practical details of a reaction of this kind further down the page.
+Making iodoalkanes
+In this case the alcohol is reacted with a mixture of sodium or potassium iodide and concentrated phosphoric(V) acid, H
+3
+PO
+4
+, and the iodoalkane is distilled off.  The mixture of the iodide and phosphoric(V) acid produces hydrogen iodide which reacts with the alcohol.
+Phosphoric(V) acid is used instead of concentrated sulphuric acid because sulphuric acid oxidises iodide ions to iodine and produces hardly any hydrogen iodide.  A similar thing happens to some extent with bromide ions in the preparation of bromoalkanes, but not enough to get in the way of the main reaction.
+Note:
+If you are interested in the reactions between
+halide ions and concentrated sulphuric acid
+you could follow this link.  In the present context, all you would need to do is read the beginning of that page.
+If you choose to follow this link, use the BACK button on your browser to return to this page.
+Making halogenoalkanes from alcohols using phosphorus halides
+Making chloroalkanes
+Chloroalkanes can be made by reacting an alcohol with liquid phosphorus(III) chloride, PCl
+3
+.
+Note:
+The reason for choosing a slightly bigger alcohol as an example rather than using ethanol is that chloroethane (which would be formed with ethanol) is a gas, and the preparation would have to be handled differently.  1-chloropropane (formed in this equation) is a liquid.
+They can also be made by adding solid phosphorus(V) chloride, PCl
+5
+to an alcohol.
+This reaction is violent at room temperature, producing clouds of hydrogen chloride gas.  It isn't a good choice as a way of making halogenoalkanes, although it is used as a test for -OH groups in organic chemistry.
+There are also side reactions involving the POCl
+3
+reacting with the alcohol.
+Making bromoalkanes and iodoalkanes
+These are both made in the same general way.  Instead of using phosphorus(III) bromide or iodide, the alcohol is heated under reflux with a mixture of red phosphorus and either bromine or iodine.
+The phosphorus first reacts with the bromine or iodine to give the phosphorus(III) halide.
+These then react with the alcohol to give the corresponding halogenoalkane which can be distilled off.
+Making bromoethane in the lab
+This is a simple example of an organic preparation, and is one of the most commonly used in A level chemistry courses.
+Warning!
+The method described below is NOT complete.  It deliberately avoids mentioning quantities and doesn't cover any of the safety aspects of the preparation.  You can find full details in most organic practical books.
+Making impure bromoethane
+Concentrated sulphuric acid is added
+slowly
+with lots of shaking and cooling to some ethanol in a flask.  Care has to be taken because a great deal of heat is produced when the two are mixed, and there is a real risk of the ethanol boiling and spraying concentrated sulphuric acid around.
+Solid potassium bromide is then added to the mixture,  and the flask is connected to a condenser so that the bromoethane formed can be distilled off.
+Bromoethane has a low boiling point but is denser than water and almost insoluble in it.  To prevent it from evaporating, it is often collected under water in a flask surrounded by ice.  Sometimes it is simply collected in a tube surrounded by ice without any water.
+The reaction flask is heated gently until no more droplets of bromoethane collect.
+Purifying the bromoethane
+Impurities in the bromoethane include:
+hydrogen bromide (although most of that will dissolve in the water if you are collecting the bromoethane under water);
+bromine - from the oxidation of bromide ions by the concentrated sulphuric acid;
+sulphur dioxide - formed when concentrated sulphuric acid oxidises the bromide ions;
+unreacted ethanol;
+ethoxyethane (diethyl ether) - formed by a side reaction between the ethanol and the concentrated sulphuric acid.
+The purification sequence
+Stage 1
+If you have collected the bromoethane under water, transfer the contents of the collection flask to a separating funnel.  Otherwise, pour the impure bromoethane into the separating funnel, add some water and shake it.
+Pour off and keep the bromoethane layer.
+The water you discard will contain almost all of the hydrogen bromide, and quite a lot of any bromine, sulphur dioxide and ethanol present as impurities.
+Stage 2
+To get rid of any remaining acidic impurities (including the bromine and sulphur dioxide), return the bromoethane to the separating funnel and shake it with either sodium carbonate or sodium hydrogencarbonate solution.
+This reacts with any acids present liberating carbon dioxide and forming soluble salts.
+Separate and retain the lower bromoethane layer as before.
+Stage 3
+Now wash the bromoethane with water in a separating funnel to remove any remaining inorganic impurities (excess  sodium carbonate solution, etc).  This time, transfer the lower bromoethane layer to a dry test tube.
+Stage 4
+Add some anhydrous calcium chloride to the tube, shake well and leave to stand.  The anhydrous calcium chloride is  a drying agent and removes any remaining water.  It also absorbs ethanol, and so any remaining ethanol may be removed as well (depending on how much calcium chloride you use).
+Stage 5
+Transfer the dry bromoethane to a distillation flask and fractionally distil it, collecting what distils over at between 35 and 40°C.
+In principle, this should remove any remaining organic impurities.  In practice, though, any ethoxyethane (which is perhaps the most likely impurity left at this stage) has a boiling point very, very close to that of bromoethane.  It is unlikely that you will be able to separate the two.
+If there is any ethanol left which hadn't been absorbed by the calcium chloride, that would certainly be removed because its boiling point is much higher.
+What's left?
+In my experience with A level students, virtually nothing if you are working on a small scale!!  Every time you go through a purification stage, you inevitably lose some of what you are trying to collect.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the
+introductory page
+before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on making halogenoalkanes
+answers
+Where would you like to go now?
+To the halogenoalkanes menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+© Jim Clark 2003 (modified September 2015)

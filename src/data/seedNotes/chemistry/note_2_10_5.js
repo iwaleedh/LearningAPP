@@ -8,7 +8,7 @@ export const note_chemistry_2_10_5 = {
         {
             id: 'objective',
             type: 'objective',
-            data: { text: 'Understand the oxidation reactions of primary, secondary, and tertiary alcohols using acidified potassium dichromate(VI).' },
+            data: { text: 'Understand the oxidation reactions of primary, secondary, and tertiary alcohols using acidified potassium dichromate(VI), and use the triiodomethane (iodoform) reaction to identify the CH₃CH(OH)– group.' },
             terms: []
         },
         {
@@ -67,6 +67,36 @@ export const note_chemistry_2_10_5 = {
                 text: 'Only <strong>aldehydes</strong> can be further oxidised to carboxylic acids. Ketones cannot. Two distinct chemical tests exploit this:<br/>1. <strong>Benedict\'s/Fehling\'s Solution:</strong> Add and heat. Aldehydes turn the blue solution into a <strong>brick-red precipitate</strong>. Ketones remain blue.<br/>2. <strong>Tollens\' Reagent:</strong> Add and warm. Aldehydes create a <strong>silver mirror</strong> on the wall of the test tube. Ketones do nothing.'
             },
             terms: ['Benedict\'s solution', 'Fehling\'s solution', 'Tollens\' reagent']
+        },
+        {
+            id: 'h-iodoform',
+            type: 'heading',
+            data: { text: 'The Triiodomethane (Iodoform) Reaction', level: 2 },
+            terms: []
+        },
+        {
+            id: 'callout-iodoform',
+            type: 'callout',
+            data: {
+                style: 'key',
+                title: 'Testing for the CH₃CH(OH)– Group',
+                text: 'The triiodomethane (or iodoform) reaction is a specific test used to identify the presence of a <strong>CH₃CH(OH)–</strong> group in an alcohol.<br/><br/><strong>Reagents:</strong> Iodine (I₂) and sodium hydroxide (NaOH), warmed gently.<br/><strong>Positive Result:</strong> A <strong>pale yellow precipitate</strong> of triiodomethane (CHI₃), which has a distinct "medical" or antiseptic smell.'
+            },
+            terms: ['Triiodomethane', 'Iodoform']
+        },
+        {
+            id: 'list-iodoform-alcohols',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    '<strong>Primary alcohols:</strong> Only <strong>ethanol</strong> (CH₃CH₂OH) gives a positive result.',
+                    '<strong>Secondary alcohols:</strong> Any secondary alcohol where the -OH group is on the second carbon gives a positive result (e.g., propan-2-ol, butan-2-ol).',
+                    '<strong>Tertiary alcohols:</strong> <strong>No</strong> tertiary alcohols give a positive result.',
+                    '<strong>The Mechanism:</strong> The iodine and sodium hydroxide first act as an oxidising agent, converting the alcohol into a methyl ketone CH₃CO– (or ethanal). This carbonyl then reacts further to form CHI₃.'
+                ]
+            },
+            terms: []
         }
     ],
     recall: {
@@ -78,9 +108,11 @@ export const note_chemistry_2_10_5 = {
             { id: 'c2', blockId: 'table-oxidation', prompt: 'If you want to produce an aldehyde from a primary alcohol, what specific experimental conditions must you use, and why?' },
             { id: 'c3', blockId: 'table-oxidation', prompt: 'What is the product when a secondary alcohol is heated under reflux with acidified potassium dichromate(VI)?' },
             { id: 'c4', blockId: 'table-oxidation', prompt: 'Explain structurally why tertiary alcohols cannot be oxidised by acidified potassium dichromate(VI).' },
-            { id: 'c5', blockId: 'callout-benedicts', prompt: 'Describe a chemical test to distinguish between propanal (an aldehyde) and propanone (a ketone), stating the reagent and observations.' }
+            { id: 'c5', blockId: 'callout-benedicts', prompt: 'Describe a chemical test to distinguish between propanal (an aldehyde) and propanone (a ketone), stating the reagent and observations.' },
+            { id: 'c-iodoform-1', blockId: 'callout-iodoform', prompt: 'What specific functional group does the triiodomethane (iodoform) reaction test for in alcohols? State the reagents and positive observation.' },
+            { id: 'c-iodoform-2', blockId: 'list-iodoform-alcohols', prompt: 'Ethanol is the only primary alcohol to give a positive iodoform test. Which tyoe of secondary alcohols give a positive result?' }
         ],
-        summaryText: "Core Practical 7: Oxidation of propan-1-ol. Alcohols are oxidised using acidified potassium dichromate(VI), changing colour from ORANGE (Cr VI) to GREEN (Cr III). Primary alcohols oxidise to aldehydes (using distillation to boil it off immediately) or to carboxylic acids (heating under reflux with excess). Secondary alcohols oxidise to ketones (under reflux). Tertiary alcohols do NOT oxidise. Aldehydes can be distinguished from ketones using Benedict's (blue to brick-red ppt) or Tollens' reagent (silver mirror).",
+        summaryText: "Core Practical 7: Oxidation of propan-1-ol. Alcohols are oxidised using acidified potassium dichromate(VI), changing colour from ORANGE (Cr VI) to GREEN (Cr III). Primary alcohols oxidise to aldehydes (using distillation to boil it off immediately) or to carboxylic acids (heating under reflux with excess). Secondary alcohols oxidise to ketones (under reflux). Tertiary alcohols do NOT oxidise. Aldehydes can be distinguished from ketones using Benedict's (blue to brick-red ppt) or Tollens' reagent (silver mirror). The triiodomethane (iodoform) reaction (I₂ + NaOH) produces a pale yellow ppt of CHI₃ with ethanol and secondary alcohols with a methyl group.",
         ready: false
     },
     evidence: []

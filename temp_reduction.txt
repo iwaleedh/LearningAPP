@@ -1,0 +1,52 @@
+
+reduction of carboxylic acids
+REDUCTION OF CARBOXYLIC ACIDS
+This page looks at the reduction of carboxylic acids to primary alcohols using lithium tetrahydridoaluminate(III) (lithium aluminium hydride), LiAlH
+4
+.
+The &quot;(III)&quot; is the oxidation state of the aluminium.  Since aluminium only ever shows the +3 oxidation state in its compounds, the  &quot;(III)&quot; is actually unnecessary.  I shall leave it out for the rest of this page to make the name a bit shorter.
+Note: &nbsp;
+If you haven't come across this reducing agent before, you might find it useful to read a rather more detailed account of its use on the page about 
+reduction of aldehydes and ketones
+.  The present page isn't done in the same sort of detail as that one.
+Use the BACK button on your browser to return to this page.
+The reaction
+The reducing agent
+Lithium tetrahydridoaluminate has the structure:
+In the negative ion, one of the bonds is a co-ordinate covalent (dative covalent) bond using the lone pair on a hydride ion (H
+-
+) to form a bond with an empty orbital on the aluminium.
+Note: &nbsp;
+If you aren't happy about 
+co-ordinate covalent (dative covalent) bonding
+ you could follow this link, although it isn't important to understanding the rest of this page.
+Use the BACK button on your browser to return to this page.
+The reduction of a carboxylic acid
+The reaction happens in two stages - first to form an aldehyde and then a primary alcohol.  Because lithium tetrahydridoaluminate reacts rapidly with aldehydes, it is impossible to stop at the halfway stage.
+Equations for these reactions are usually written in a simplified form for UK A level purposes.  The &quot;[H]&quot; in the equations represents hydrogen from a reducing agent.
+Because of the impossibility of stopping at the aldehyde, there isn't much point in giving an equation for the two separate stages.  The overall reaction is:
+&quot;R&quot; is hydrogen or a hydrocarbon group.  For example, ethanoic acid will reduce to the primary alcohol, ethanol.
+Note: &nbsp;
+Follow this link if you aren't sure what a 
+primary alcohol
+ is.
+Use the BACK button on your browser to return to this page.
+Sodium tetrahydridoborate (sodium borohydride) won't work!
+If you are familiar with the reduction of aldehydes and ketones using lithium tetrahydridoaluminate, you are probably aware that sodium tetrahydridoborate is often used as a safer alternative.
+It CAN'T be used with carboxylic acids.  The sodium tetrahydridoborate isn't reactive enough to reduce carboxylic acids.
+Reaction conditions
+Lithium tetrahydridoaluminate reacts violently with water and so the reactions are carried out in solution in dry ethoxyethane (diethyl ether or just &quot;ether&quot;).  The reaction happens at room temperature.
+At the end of the reaction, the product is a complex aluminium salt.  This is converted into the alcohol by treatment with dilute sulphuric acid.
+Note: &nbsp;
+You are unlikely to need this equation for UK A level purposes, although you may need to know that you have to finish the reaction off using dilute sulphuric acid.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the 
+introductory page
+ before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the reduction of carboxylic acids
+answers
+Where would you like to go now?
+To the carboxylic acids menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+ &copy; Jim Clark 2004 (modified November 2015)

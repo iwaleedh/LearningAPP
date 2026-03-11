@@ -43,6 +43,34 @@ export const note_chemistry_5_19_0 = {
       }
     },
     {
+      id: 'h-amine-physical-props',
+      type: 'heading',
+      data: { text: 'Physical Properties of Amines', level: 2 }
+    },
+    {
+      id: 'callout-amine-bp',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Boiling Points of Amines',
+        text: 'Primary > Secondary > Tertiary (for isomers). Primary and secondary amines can form hydrogen bonds with each other (they have N−H bonds). Tertiary amines lack N−H bonds, so they cannot form intermolecular hydrogen bonds, resulting in much lower boiling points.'
+      }
+    },
+    {
+      id: 'list-amine-physical-details',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'Boiling points increase with chain length due to greater London dispersion forces' },
+          { text: 'Primary amines have slightly higher boiling points than secondary isomers because the terminal N creates a stronger permanent dipole' },
+          { text: 'Solubility: All small amines (1°, 2°, 3°) are very soluble in water because the nitrogen lone pair can form hydrogen bonds with water molecules' },
+          { text: 'Solubility decreases as hydrocarbon chain length increases (non-polar chains disrupt water\'s hydrogen bonds)' },
+          { text: 'Smell: Small amines smell like ammonia; larger amines smell fishy or of decay (e.g., trimethylamine smells like decaying flesh)' }
+        ]
+      }
+    },
+    {
       id: 'h-arylamine-names',
       type: 'heading',
       data: { text: 'Arylamine Nomenclature', level: 2 }
@@ -120,8 +148,8 @@ export const note_chemistry_5_19_0 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Why Amides Are Soluble in Water',
-        text: 'Two electronegative atoms in the amide group allow H-bonding: O of C=O acts as H-bond acceptor; N−H acts as H-bond donor. This makes short-chain amides very water-soluble. Longer chains have more London forces → less soluble despite the polar head group.'
+        title: 'Amide Hydrogen Bonding',
+        text: 'The −CONH₂ group is highly polar. Strong intermolecular hydrogen bonds give amides high melting points for their size (most are solids EXCEPT methanamide). They can also hydrogen bond with water (acting as both donor and acceptor), making short-chain amides very water-soluble.'
       }
     },
     {
@@ -172,6 +200,7 @@ export const note_chemistry_5_19_0 = {
           { text: 'Primary amine: RNH₂ (e.g., methanamine, phenylamine)', checked: false },
           { text: 'Secondary amine: R₂NH (e.g., N−methylethanamine)', checked: false },
           { text: 'Tertiary amine: R₃N (e.g., N,N−dimethylmethanamine)', checked: false },
+          { text: 'Amine properties: 1°/2° form H-bonds (higher bp); 3° cannot. Small amines are water-soluble', checked: false },
           { text: 'Amide: RCONH₂ — all solids except methanamide (liquid); soluble in water via H-bonding', checked: false },
           { text: 'Amide solubility ↓ as chain length ↑ (London forces increase)', checked: false },
           { text: 'Amino acid: H₂N−CHR−COOH (α-amino acid); named as "X-aminocarboxylic acid"', checked: false },
@@ -202,11 +231,12 @@ export const note_chemistry_5_19_0 = {
     enabled: true,
     cues: [
       { id: 'cue-1', blockId: 'p-amine-2', prompt: 'How are primary, secondary, and tertiary alkylamines named?' },
+      { id: 'cue-amine-bp', blockId: 'callout-amine-bp', prompt: 'Why do primary amines have higher boiling points than their tertiary isomers?' },
       { id: 'cue-2', blockId: 'p-arylamine-1', prompt: 'What is phenylamine, and how does arylamine naming differ from alkylamine naming?' },
       { id: 'cue-3', blockId: 'list-amide-state', prompt: 'What are the key physical properties of amides? Which is the exception to the "all solids" rule?' },
       { id: 'cue-4', blockId: 'p-amino-acid-iupac', prompt: 'How are amino acids named using IUPAC rules? Give two examples.' }
     ],
-    summaryText: 'Alkylamines: primary RNH₂, secondary R₂NH, tertiary R₃N (−amine suffix). Arylamines: N on benzene ring (phenylamine). Amides: RCONH₂ — all solids EXCEPT methanamide (liquid); water-soluble via H-bonding (O and N both electronegative). Amino acids: H₂N−CHR−COOH (α-amino acid); IUPAC = "X-amino[carboxylic acid]" e.g. 2-aminoethanoic acid (glycine).',
+    summaryText: 'Alkylamines: 1° RNH₂, 2° R₂NH, 3° R₃N (−amine). Bp: 1° > 2° > 3° (3° cannot H-bond). Small amines water-soluble. Arylamines: N on benzene. Amides: RCONH₂ — all solids EXCEPT methanamide (liquid). Amino acids: H₂N−CHR−COOH; IUPAC = "X-amino[carboxylic acid]".',
     ready: false
   },
   evidence: [

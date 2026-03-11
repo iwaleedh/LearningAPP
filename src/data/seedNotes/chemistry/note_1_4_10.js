@@ -85,6 +85,23 @@ export const note_chemistry_1_4_10 = {
       caption: 'Incomplete combustion of methane producing toxic carbon monoxide.'
     }
   }, {
+    id: 'h-combustion-trends',
+    type: 'heading',
+    data: {
+      text: 'Trends in Flammability and Combustion',
+      level: 2
+    }
+  }, {
+    id: 'list-combustion-trends',
+    type: 'list',
+    data: {
+      style: 'bullet',
+      items: [
+        '<strong>Ignition difficulty:</strong> As alkanes grow larger, they become harder to ignite. Combustion happens most efficiently when the hydrocarbon and oxygen are well mixed as gases. Larger molecules have stronger London (van der Waals) forces, meaning they do not vaporise as easily.',
+        '<strong>Flame colour:</strong> Short-chain alkanes burn with a clean blue flame (complete combustion). As the chain length increases, combustion tends to be less complete. This results in a yellow, smoky flame due to the presence of glowing, unburned carbon particles.'
+      ]
+    }
+  }, {
     id: 'h-pollutants',
     type: 'heading',
     data: {

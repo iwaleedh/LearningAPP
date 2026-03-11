@@ -293,11 +293,15 @@ export const note_chemistry_1_4_12 = {
       blockId: 'p-further',
       prompt: 'Why does chlorination of methane give a mixture of products? How can monosubstitution be favoured?'
     }, {
+      id: 'cue-cyclo-reactivity',
+      blockId: 'callout-cyclo-addition',
+      prompt: 'Why can cyclopropane react with halogens in the dark via addition, unlike typical alkanes?'
+    }, {
       id: 'cue-5',
       blockId: 'table-br-cl',
       prompt: 'Why is bromination of alkanes more selective than chlorination?'
     }],
-    summaryText: 'Initiation: Cl₂ →(UV)→ 2Cl• (homolytic). Propagation: Cl• + CH₄ → HCl + CH₃•; CH₃• + Cl₂ → CH₃Cl + Cl•. Termination: 2 radicals → stable molecule. Fish-hook arrows. Excess CH₄ → monosubstitution. Br• more selective than Cl•.',
+    summaryText: 'Initiation: Cl₂ →(UV)→ 2Cl• (homolytic). Propagation: Cl• + CH₄ → HCl + CH₃•; CH₃• + Cl₂ → CH₃Cl + Cl•. Termination: 2 radicals → stable molecule. Fish-hook arrows. Excess CH₄ → monosubstitution. Br• more selective than Cl•. Cyclopropane unusually reactive (ring strain from 60° angles) → addition in dark, breaking ring.',
     ready: false
   },
   evidence: [{

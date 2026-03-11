@@ -1,0 +1,89 @@
+
+esterification - alcohols and carboxylic acids
+ESTERIFICATION
+This page looks at esterification - mainly the reaction between alcohols and carboxylic acids to make esters.  It also looks briefly at making esters from the reactions between acyl chlorides (acid chlorides) and alcohols, and between acid anhydrides and alcohols.
+What are esters?
+Esters are derived from carboxylic acids.  A carboxylic acid contains the -COOH  group, and in an ester the hydrogen in this group is replaced by a hydrocarbon group of some kind.  We shall just be looking at cases where it is replaced by an alkyl group, but it could equally well be an aryl group (one based on a benzene ring).
+A common ester -  ethyl ethanoate
+The most commonly discussed ester is ethyl ethanoate.  In this case, the hydrogen in the -COOH group has been replaced by an ethyl group.  The formula for ethyl ethanoate is:
+Notice that the ester is named the opposite way around from the way the formula is written.  The &quot;ethanoate&quot; bit comes from ethanoic acid.  The &quot;ethyl&quot; bit comes from the ethyl group on the end.
+Note:  
+In my experience, students starting organic chemistry get more confused about writing names and formulae for esters than for almost anything else - particularly when it comes to less frequently met esters like the ones coming up next.  Take time and care to make sure you understand!
+A few more esters
+In each case, be sure that you can see how the names and  formulae relate to each other.
+Notice that the acid is named by counting up the total number of carbon atoms in the chain - 
+including the one in the  -COOH group
+.  So, for example, CH
+3
+CH
+2
+COOH is propanoic acid, and CH
+3
+CH
+2
+COO is the propanoate group.
+Note:  
+You can find more about 
+naming acids and esters
+ by following this link to a different  part of this site.
+Use the BACK button on your browser to return to this page.
+Making esters from carboxylic acids and alcohols
+The chemistry of the reaction
+Esters are produced when carboxylic acids are heated with alcohols in the presence of an acid catalyst.  The catalyst is usually concentrated sulphuric acid.  Dry hydrogen chloride gas is used in some cases, but these tend to involve aromatic esters (ones containing a benzene ring).  If you are a UK A level student you won't have to worry about these.
+The esterification reaction is both slow and reversible.  The equation for the reaction between an acid RCOOH and an alcohol R'OH (where R and R' can be the same or different) is:
+So, for example, if you were making ethyl ethanoate from ethanoic acid and ethanol, the equation would be:
+Note:  
+The 
+mechanism for the esterification reaction
+ is covered in the catalysis section of this site.  It is not required for any UK A level (or equivalent) chemistry syllabus.
+If you follow this link, use the BACK button on your browser to return to this page.
+Doing the reactions
+On a test tube scale
+Carboxylic acids and alcohols are often warmed together in the presence of a few drops of concentrated sulphuric acid in order to observe the smell of the esters formed.
+You would normally use small quantities of everything heated in a test tube stood in a hot water bath for a couple of minutes.
+Because the reactions are slow and reversible, you don't get a lot of ester produced in this time.  The smell is often masked or distorted by the smell of the carboxylic acid.  A simple way of detecting the smell of the ester is to pour the mixture into some water in a small beaker.
+Apart from the very small ones, esters are fairly insoluble in water and tend to form a thin layer on the surface.  Excess acid and alcohol both dissolve and are tucked safely away under the ester layer.
+Small esters like ethyl ethanoate smell like typical organic solvents (ethyl ethanoate is a common solvent in, for example, glues).
+As the esters get bigger, the smells tend towards artificial fruit flavouring - &quot;pear drops&quot;, for example.
+On a larger scale
+If you want to make a reasonably large sample of an ester, the method used depends to some extent on the size of the ester.  Small esters are formed faster than bigger ones.
+To make a small ester like ethyl ethanoate, you can gently heat a mixture of ethanoic acid and ethanol in the presence of concentrated sulphuric acid, and distil off the ester as soon as it is formed.
+This prevents the reverse reaction happening.  It works well because the ester has the  lowest boiling point of anything present.  The ester is the only thing in the mixture which doesn't form hydrogen bonds, and so it has the weakest intermolecular forces.
+Note:  
+Follow this link if you aren't sure about 
+hydrogen bonding
+.
+Use the BACK button on your browser to return to this page.
+Larger esters tend to form more slowly.  In these cases, it may be necessary to heat the reaction mixture under reflux for some time to produce an equilibrium mixture.  The ester can be separated from the carboxylic acid, alcohol, water and sulphuric acid in the mixture by fractional distillation.
+Note:  
+Providing full details for organic preparations (including all the steps necessary in cleaning up the product) is beyond the scope of this site. If you need this sort of detail, you should be looking at an organic practical book.
+Other ways of making esters
+Esters can also be made from the reactions between alcohols and either acyl chlorides or acid anhydrides.
+Making esters from alcohols and acyl chlorides (acid chlorides)
+If you add an acyl chloride to an alcohol, you get a vigorous (even violent) reaction at room temperature producing an ester and clouds of steamy acidic fumes of hydrogen chloride.
+For example, if you add the liquid ethanoyl chloride to ethanol, you get a burst of hydrogen chloride produced together with the liquid ester ethyl ethanoate.
+Note:  
+If you want to find out more about acyl chlorides, explore the 
+acyl chlorides menu
+ by following this link.
+Use the BACK button (or GO menu or HISTORY file) on your browser to return to this page.
+Making esters from alcohols and acid anhydrides
+The reactions of acid anhydrides are slower than the corresponding reactions with acyl chlorides, and you usually need to warm the mixture.
+Taking ethanol reacting with ethanoic anhydride as a typical reaction involving an alcohol:
+There is a slow reaction at room temperature (or faster on warming).  There is no visible change in the colourless liquids, but a mixture of ethyl ethanoate and ethanoic acid is formed.
+Note:  
+If you want to find out more about acid anhydrides, explore the 
+acid anhydrides menu
+ by following this link.
+Use the BACK button (or GO menu or HISTORY file) on your browser to return to this page.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the 
+introductory page
+ before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the esterification of alcohols
+answers
+Where would you like to go now?
+To the alcohols menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+ &copy; Jim Clark 2003 (modified October 2015)

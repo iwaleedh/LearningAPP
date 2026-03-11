@@ -343,6 +343,27 @@ export const note_chemistry_4_14_6 = {
       }
     },
     {
+      id: 'h-indicator-theory-uv',
+      type: 'heading',
+      data: { text: 'Why Indicators Change Colour: Conjugation Theory', level: 2 }
+    },
+    {
+      id: 'p-indicator-conjugation',
+      type: 'paragraph',
+      data: {
+        text: 'The colour of an indicator depends on exactly which wavelengths of light it absorbs in the visible spectrum. This absorption is driven by <strong>electronic transitions</strong> — usually starting from a π bonding orbital (or non-bonding n orbital) and jumping up to a π* anti-bonding orbital. The energy gap between these energy levels determines the wavelength of light absorbed (ΔE = hν = hc/λ).'
+      }
+    },
+    {
+      id: 'callout-methyl-orange-theory',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '💡 Conjugation in Methyl Orange',
+        text: 'In indicators like <strong>methyl orange</strong>, the entire molecule contains an extended system of delocalised electrons (a <strong>chromophore</strong>). When you add an acid, a hydrogen ion attaches to the structure. This structurally modifies the delocalised system, causing a noticeable change in the HOMO-LUMO energy gap. Because the gap changes, the molecule absorbs a different wavelength of visible light. Thus, picking up or losing a proton shifts the structural conjugation, manifesting macroscopically as a colour change.'
+      }
+    },
+    {
       id: 'checklist-titration',
       type: 'checklist',
       data: {
@@ -354,7 +375,8 @@ export const note_chemistry_4_14_6 = {
           { text: 'Can select appropriate indicators (methyl orange vs phenolphthalein) for different titrations', checked: false },
           { text: 'Understand the half-equivalence point: pH = pKa, and can find Ka from a titration curve', checked: false },
           { text: 'Know that diprotic acids give two equivalence points; 2nd volume = 2× 1st volume', checked: false },
-          { text: 'Can identify and explain the buffer region in titration curves involving weak acids/bases', checked: false }
+          { text: 'Can identify and explain the buffer region in titration curves involving weak acids/bases', checked: false },
+          { text: 'Understand that indicator colour changes are fundamentally caused by structural changes to a delocalised π electron system, shifting the absorption wavelength', checked: false }
         ]
       }
     },
@@ -365,7 +387,7 @@ export const note_chemistry_4_14_6 = {
       data: {
         style: 'key',
         title: '🧠 Deeper Understanding — Why It Matters',
-        text: 'Understand: Titration curves show pH vs volume of titrant. The steep region around the equivalence point determines appropriate indicator choice — the indicator\'s pKind must lie within this range.\n\nApply: Sketch the titration curve for weak acid + strong base. Identify the equivalence point pH and explain why it is above 7.\n\nAnalyze: Why is methyl orange unsuitable for weak acid/strong base titrations but phenolphthalein works?\n\nEvaluate: A diprotic acid like H₂SO₄ shows two equivalence points. How does this affect indicator choice?'
+        text: 'Understand: Titration curves show pH vs volume of titrant. The steep region around the equivalence point determines appropriate indicator choice — the indicator\'s pKind must lie within this range.\n\nApply: Sketch the titration curve for weak acid + strong base. Identify the equivalence point pH and explain why it is above 7.\n\nAnalyze: Why is methyl orange unsuitable for weak acid/strong base titrations but phenolphthalein works? Furthermore, relate the observed colour change physically to changes in the molecule\'s extended conjugated system.\n\nEvaluate: A diprotic acid like H₂SO₄ shows two equivalence points. How does this affect indicator choice?'
       },
       terms: []
     },
@@ -414,19 +436,24 @@ export const note_chemistry_4_14_6 = {
         id: 'cue-7',
         blockId: 'list-carbonate-titration',
         prompt: 'In a titration of sodium carbonate with HCl, why are there two equivalence points, and which indicators are used for each stage?'
+      },
+      {
+        id: 'cue-8',
+        blockId: 'callout-methyl-orange-theory',
+        prompt: 'In terms of bonding and delocalised electrons, explain why an indicator like methyl orange changes colour when it gains or loses a proton.'
       }
     ],
-    summaryText: 'Equivalence point (stoichiometric) ≠ End point (colour change) ≠ Neutral point (pH 7). Strong+strong: equiv pH=7. Weak acid+strong base: equiv pH>7, phenolphthalein. Strong acid+weak base: equiv pH<7, methyl orange. Weak+weak: no steep section, no indicator. HIn ⇌ H⁺ + In⁻ — range ≈ pKind ± 1. Half-equiv: [HA]=[A⁻], pH = pKa. Diprotic/Carbonates: 2 equivalences, 2nd volume = 2× 1st volume.',
+    summaryText: 'Equivalence point (stoichiometric) ≠ End point (colour change) ≠ Neutral point (pH 7). Strong+strong: equiv pH=7. Weak acid+strong base: equiv pH>7, phenolphthalein. Strong acid+weak base: equiv pH<7, methyl orange. Weak+weak: no steep section, no indicator. HIn ⇌ H⁺ + In⁻ — range ≈ pKind ± 1. Colour changes are caused by structural changes to the conjugated delocalised electron system (chromophore) when a proton is added/removed, shifting the energy gap and λ_{max}. Half-equiv: [HA]=[A⁻], pH = pKa. Diprotic/Carbonates: 2 equivalences, 2nd volume = 2× 1st volume.',
     ready: false
   },
   evidence: [
     {
       id: 'ev-1',
       title: 'Titration Curves and Indicator Selection',
-      detail: 'Shape depends on acid-base types; equivalence point pH varies.',
+      detail: 'Shape depends on acid-base types; equivalence point pH varies. Includes physical origin of colour via structure and conjugation.',
       year: '2023',
       source: 'A-Level Chemistry Specification (WCH14)',
-      tags: ['titration', 'titration curve', 'indicators', 'pKind', 'equivalence point']
+      tags: ['titration', 'titration curve', 'indicators', 'pKind', 'equivalence point', 'chromophore', 'conjugation']
     }
   ]
 };

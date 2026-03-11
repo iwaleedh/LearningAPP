@@ -122,27 +122,51 @@ export const note_chemistry_5_19_6 = {
     {
       id: 'h-protein-structure-primary',
       type: 'heading',
-      data: { text: 'Protein Structure: Primary, Secondary, Tertiary, Quaternary', level: 2 }
+      data: { text: 'Protein Structure: Primary, Secondary, Tertiary', level: 2 }
     },
     {
       id: 'p-structure-primary',
       type: 'paragraph',
       data: {
-        text: 'Primary structure is the linear sequence of amino acids in the polypeptide chain. It is determined by the genetic code (DNA) and specifies which amino acid goes where. The sequence is written from the N-terminal (free −NH₃⁺ group) to the C-terminal (free −COO⁻ group). Primary structure determines all higher levels of structure and function. Two proteins with different amino acid sequences will have different properties.'
+        text: 'Primary structure is the exact sequence of amino acid residues joined by peptide (covalent) bonds. By convention, it is written from the N-terminal (left, free −NH₂ group) to the C-terminal (right, free −COOH group). Some examiners also include disulfide (sulphur) bridges in the primary structure, as they are covalent bonds between cysteine residues.'
       }
     },
     {
       id: 'p-structure-secondary',
       type: 'paragraph',
       data: {
-        text: 'Secondary structure is the local organisation of the polypeptide backbone into regular shapes, stabilised by hydrogen bonding. The two main secondary structures are: (1) α-helix: the backbone coils in a right-handed spiral, with hydrogen bonds between C=O of one residue and N−H of residue 4 positions ahead. (2) β-sheet (or β-pleated sheet): the backbone stretches out in an extended conformation, with side-by-side chains linked by hydrogen bonds perpendicular to the chain direction.'
+        text: 'Secondary structure refers to regions where the protein chain is organised into regular, folded patterns stabilised by hydrogen bonding. Crucially, these hydrogen bonds act between the >C=O and >N−H groups of the peptide links in the backbone (not the side chains).'
+      }
+    },
+    {
+      id: 'list-secondary-forms',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'α-helix: The chain coils into a spiral (spring shape) with all R groups pointing outwards. Held by regular hydrogen bonds between N-H pointing up and C=O pointing down.' },
+          { text: 'β-pleated sheet: Chains lie alongside each other (often folded back in an anti-parallel fashion) in a sheet-like structure, linked by hydrogen bonds across the strands.' }
+        ]
       }
     },
     {
       id: 'p-structure-tertiary',
       type: 'paragraph',
       data: {
-        text: 'Tertiary structure is the three-dimensional (3D) shape of a single polypeptide chain. It results from interactions between side chains (R groups) far apart in the primary sequence but close in 3D space. Key interactions include: (1) Hydrogen bonds between polar side chains (−OH of serine, −NH₂ of asparagine, etc.). (2) Disulfide bonds (covalent S−S bridges) between cysteine residues. (3) Ionic interactions (salt bridges) between oppositely charged side chains (e.g., lysine −NH₃⁺ with aspartate −COO⁻). (4) Hydrophobic interactions between nonpolar side chains buried in the protein interior.'
+        text: 'Tertiary structure describes how the entire polypeptide chain (including α-helices and β-sheets) folds into a final 3D shape. This folding is dictated by interactions between the side chains (the R groups), pulling the protein into a functional conformation.'
+      }
+    },
+    {
+      id: 'list-tertiary-forces',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'Ionic interactions: Between side chains with extra acidic/basic groups (e.g., −COO⁻ from aspartic acid and −NH₃⁺ from lysine).' },
+          { text: 'Hydrogen bonds: Between polar side chains (e.g., −OH groups from serine, or −COOH/−NH₂ groups not forming zwitterions).' },
+          { text: 'Van der Waals (London) dispersion forces: Between large, non-polar hydrocarbon side chains that induce temporary dipoles.' },
+          { text: 'Disulfide bridges (sulphur bridges): Strong covalent bonds (−S−S−) forming between two cysteine residues. (Note: sometimes classified under primary structure).' }
+        ]
       }
     },
     {
@@ -177,28 +201,98 @@ export const note_chemistry_5_19_6 = {
       id: 'p-hydrolysis-1',
       type: 'paragraph',
       data: {
-        text: 'Proteins can be hydrolysed (broken down) to individual amino acids by prolonged heating with concentrated hydrochloric acid. The acid hydrolyses all peptide bonds (the −CO−NH− linkages), cleaving the polypeptide chain into its constituent amino acids. Acidic conditions protonate all the amino groups (−NH₂ → −NH₃⁺).'
+        text: 'Proteins can be hydrolysed (broken down) into their constituent amino acids. The chemistry is exactly the same as the acidic hydrolysis of amides: the carbon-nitrogen bond in the peptide (amide) link is broken by water. Because the entire reaction happens under acidic conditions, the resulting amino acids all form as positive ions (the −NH₂ groups are protonated to −NH₃⁺).'
       }
     },
     {
-      id: 'eq-protein-hydrolysis',
-      type: 'equation',
+      id: 'list-hydrolysis-methods',
+      type: 'list',
       data: {
-        html: 'Protein (large polypeptide) + H₂O + HCl (heat, 6M, 110°C, 24 h) →<br />20 amino acids (as hydrochloride salts)'
+        style: 'bullet',
+        items: [
+          { text: '<b>The old, slow method:</b> The protein is heated under reflux with 6 mol dm⁻³ hydrochloric acid (HCl) for about 24 hours at 110°C. This slowly hydrolyses all the peptide bonds.' },
+          { text: '<b>The new, fast method:</b> Small protein samples are placed in sealed tubes containing 6 mol dm⁻³ HCl under a nitrogen atmosphere. They are then placed in a microwave oven for 5–30 minutes at temperatures up to 200°C. Vaporised HCl rapidly hydrolyses the sample for analysis.' }
+        ]
       }
     },
     {
-      id: 'p-hydrolysis-2',
+      id: 'p-hydrolysis-enzymes',
       type: 'paragraph',
       data: {
-        text: 'The process is similar to amide hydrolysis: water breaks the peptide bond, and the carboxyl and amino groups of adjacent amino acids are regenerated. In acidic conditions, the amino acids are protonated (forming ammonium ions). In basic conditions, they are deprotonated. Complete hydrolysis requires extended heating (6M HCl, 110°C, 24 hours) to ensure all peptide bonds are broken.'
+        text: 'Enzymes (proteases like pepsin or trypsin) can also catalyse selective protein hydrolysis. These enzymes cleave peptide bonds at specific amino acid sequences under much milder conditions, producing defined peptide fragments which is useful for modern structural analysis.'
       }
     },
     {
-      id: 'p-hydrolysis-3',
+      id: 'h-enzymes',
+      type: 'heading',
+      data: { text: 'Proteins as Enzymes', level: 2 }
+    },
+    {
+      id: 'p-enzymes-intro',
       type: 'paragraph',
       data: {
-        text: 'Enzymes (proteases like pepsin, trypsin, chymotrypsin) can catalyse selective protein hydrolysis. These enzymes cleave peptide bonds at specific amino acid sequences, producing peptide fragments of defined size. This is more gentle than acid hydrolysis and useful for studying protein structure and function.'
+        text: 'Enzymes are predominantly globular proteins (with a rounded, 3D tertiary structure) that act as highly active and specific biological catalysts. They work by providing a reaction pathway with a lower activation energy.'
+      }
+    },
+    {
+      id: 'list-active-sites',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '<b>Active sites:</b> The tertiary folding of the protein creates highly specific cracks or hollows called active sites. These are lined with the "R" groups (side chains) of specific amino acids (which contain groups like −OH, −NH₃⁺, −COO⁻).' },
+          { text: '<b>Substrate attachment:</b> A reacting molecule (the substrate) must have the exact shape and correct complementary functional groups to attach to the active site via hydrogen bonding, ionic interactions, or van der Waals forces.' },
+          { text: '<b>Stereospecificity:</b> Because the active site is chiral, it typically only fits and catalyses the reaction of one specific enantiomer.' }
+        ]
+      }
+    },
+    {
+      id: 'callout-cofactors',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Cofactors and Coenzymes',
+        text: 'Many enzymes require non-protein components to function, called <b>cofactors</b>. If tightly bound to the protein, they are called <b>prosthetic groups</b> (e.g., the transition-metal Haem iron(III) group in catalase or the Zinc ion in carbonic anhydrase). If they attach temporarily to the active site alongside the substrate, they are called <b>coenzymes</b> (e.g., NAD⁺).'
+      }
+    },
+    {
+      id: 'h-enzyme-factors',
+      type: 'heading',
+      data: { text: 'Factors Affecting Enzyme Activity', level: 3 }
+    },
+    {
+      id: 'list-enzyme-factors',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '<b>Substrate concentration:</b> Rate increases with concentration until all active sites are saturated. At this point, the rate plateaus at a maximum velocity ($V_{max}$).' },
+          { text: '<b>Temperature:</b> Rate increases with temperature (more successful collisions) up to an optimum (typically ~40°C). Above the optimum temperature, weaker bonds (like van der Waals forces and hydrogen bonds) holding the tertiary structure break. The active site loses its specific shape, so the enzyme becomes <b>denatured</b> and rate plunges.' },
+          { text: '<b>pH:</b> Each enzyme has an optimum pH. Changing the pH alters the protonation state of amino acid side chains (e.g., protonating a carboxylate group −COO⁻ to −COOH, or deprotonating an amine −NH₃⁺ to −NH₂). This not only breaks the crucial ionic bonds stabilising the 3D tertiary structure (denaturation), but also destroys the specific ionic interactions required to bind the substrate in the active site.' }
+        ]
+      }
+    },
+    {
+      id: 'h-enzyme-inhibitors',
+      type: 'heading',
+      data: { text: 'Enzyme Inhibitors', level: 3 }
+    },
+    {
+      id: 'p-enzyme-inhibitors',
+      type: 'paragraph',
+      data: {
+        text: 'Inhibitors are substances that slow down or stop enzyme-catalysed reactions. They can be broadly classified into competitive and non-competitive inhibitors.'
+      }
+    },
+    {
+      id: 'list-enzyme-inhibitors',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: '<b>Competitive inhibitors:</b> These have a similar shape to the normal substrate and bind directly to the active site. They temporarily block the site but do not react further. Increasing the concentration of the substrate will out-compete the inhibitor and restore the reaction rate.' },
+          { text: '<b>Non-competitive inhibitors:</b> These bind to the enzyme somewhere other than the active site (often permanently, e.g., heavy metal ions like Ag⁺ or Pb²⁺ reacting with the −SH groups of cysteine residues). Their binding alters the overall tertiary folding of the enzyme, which in turn permanently changes the shape of the active site so the true substrate can no longer fit. Increasing substrate concentration has no effect.' }
+        ]
       }
     },
     {
@@ -258,7 +352,8 @@ export const note_chemistry_5_19_6 = {
           { text: 'Primary: sequence (N→C-terminal); Secondary: α-helix/β-sheet via backbone H-bonds', checked: false },
           { text: 'Tertiary: 3D shape from H-bonds, disulfide bonds (cysteine S−S), ionic interactions', checked: false },
           { text: 'Quaternary: multiple polypeptide subunits (e.g., haemoglobin = 4 subunits)', checked: false },
-          { text: 'Hydrolysis: prolonged heating with CONCENTRATED HCl → breaks peptide bonds → amino acids', checked: false },
+          { text: 'Enzymes: globular proteins with active sites; stereospecific catalysts lowering activation energy', checked: false },
+          { text: 'Hydrolysis: 6M HCl under reflux (110°C, 24h) OR microwave (sealed tube, 200°C) → breaks peptide bonds into amino acid positive ions', checked: false },
           { text: 'Chromatography: ninhydrin → purple spots → RF = spot dist/solvent dist (< 1) → compare to controls', checked: false }
         ]
       }
@@ -278,7 +373,7 @@ export const note_chemistry_5_19_6 = {
       id: 'summary-proteins',
       type: 'summary',
       data: {
-        text: 'Peptide bonds form by condensation of amino acids (−CO−NH− + H₂O). Two different amino acids give 2 possible dipeptides; three different amino acids give 6 possible tripeptides. Polypeptides are condensation polymers; proteins have large Mᵣ values (insulin: 5700, haemoglobin: 66000, ferritin: 480000). Protein structure: Primary (amino acid sequence), Secondary (α-helix/β-sheet via H-bonds), Tertiary (3D fold: H-bonds, disulfide bonds S−S, ionic interactions, hydrophobic), Quaternary (multi-subunit). Proteins are hydrolysed by prolonged heating with concentrated HCl, breaking all peptide bonds to yield individual amino acids. Amino acids identified by paper chromatography: spots developed with ninhydrin (purple colour); RF = distance by spot ÷ distance by solvent front (always < 1); compare to known control samples.'
+        text: 'Peptide bonds form by condensation of amino acids (−CO−NH− + H₂O). Two different amino acids give 2 possible dipeptides; three different amino acids give 6 possible tripeptides. Polypeptides are condensation polymers; proteins have large Mᵣ values (insulin: 5700, haemoglobin: 66000, ferritin: 480000). Protein structure: Primary (amino acid sequence), Secondary (α-helix/β-sheet via H-bonds), Tertiary (3D fold: H-bonds, disulfide bonds S−S, ionic interactions, hydrophobic), Quaternary (multi-subunit). Enzymes are globular proteins acting as specific catalysts; their active sites bind substrates via tertiary bonds. High temperatures or extreme pH denature enzymes by breaking these tertiary bonds. Proteins are hydrolysed by prolonged heating with concentrated HCl, breaking all peptide bonds to yield individual amino acids. Amino acids identified by paper chromatography: spots developed with ninhydrin (purple colour); RF = distance by spot ÷ distance by solvent front (always < 1); compare to known control samples.'
       }
     }
   ],
@@ -288,10 +383,12 @@ export const note_chemistry_5_19_6 = {
       { id: 'cue-1', blockId: 'eq-dipeptide-both', prompt: 'How many dipeptides can form from two different amino acids? Why?' },
       { id: 'cue-2', blockId: 'list-tripeptides', prompt: 'How many tripeptides can form from 3 different amino acids? What codes are used to summarise them?' },
       { id: 'cue-3', blockId: 'p-structure-tertiary', prompt: 'List the four types of interactions that stabilise tertiary structure of a protein.' },
-      { id: 'cue-4', blockId: 'p-hydrolysis-1', prompt: 'How are proteins hydrolysed in the lab? What conditions are required?' },
-      { id: 'cue-5', blockId: 'eq-rf-value', prompt: 'How do you calculate RF value in chromatography? What must it always be less than?' }
+      { id: 'cue-4', blockId: 'list-hydrolysis-methods', prompt: 'Describe the two different laboratory methods (slow vs fast) for hydrolysing a protein.' },
+      { id: 'cue-5', blockId: 'list-active-sites', prompt: 'Explain how the tertiary structure of an enzyme allows it to act as a highly specific catalyst.' },
+      { id: 'cue-6', blockId: 'list-enzyme-factors', prompt: 'Explain how extreme pH changes affect the rate of an enzyme-catalysed reaction.' },
+      { id: 'cue-7', blockId: 'eq-rf-value', prompt: 'How do you calculate RF value in chromatography? What must it always be less than?' }
     ],
-    summaryText: 'Peptide bond: −CO−NH− (condensation, loss H₂O). 2 amino acids → 2 dipeptides; 3 amino acids → 6 tripeptides. Primary: sequence. Secondary: α-helix/β-sheet. Tertiary: H-bonds, S−S bonds, ionic, hydrophobic. Quaternary: multi-subunit. Hydrolysis: concentrated HCl, prolonged heat → amino acids. Chromatography: spot + ninhydrin → purple; RF = spot/solvent front (< 1).',
+    summaryText: 'Peptide bond: −CO−NH− (condensation, loss H₂O). 2 amino acids → 2 dipeptides; 3 amino acids → 6 tripeptides. Primary: sequence. Secondary: α-helix/β-sheet. Tertiary: H-bonds, S−S bonds, ionic, hydrophobic. Quaternary: multi-subunit. Enzymes: globular proteins, active sites match specific substrates. Temperature > optimum or extreme pH denatures enzymes by breaking H-bonds/ionic bonds. Hydrolysis: 6M HCl, 110°C, 24h OR sealed microwave → amino acid positive ions. Chromatography: spot + ninhydrin → purple; RF = spot/solvent front (< 1).',
     ready: false
   },
   evidence: [

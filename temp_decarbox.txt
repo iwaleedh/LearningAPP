@@ -1,0 +1,34 @@
+
+decarboxylation of carboxylic acids and their salts
+THE DECARBOXYLATION OF CARBOXYLIC ACIDS AND THEIR SALTS
+This page looks at the formation of hydrocarbons by the decarboxylation of the salts of carboxylic acids (and of certain acids themselves) by heating them with soda lime.  It does NOT cover the decarboxylation of some acids by simply heating them.
+Decarboxylation using soda lime
+What does &quot;decarboxylation&quot; mean?
+A carboxylic acid has the formula RCOOH where R can be hydrogen or a hydrocarbon group such as an alkyl group.  The hydrocarbon group could equally well be based on a benzene ring.
+The sodium salt of a carboxylic acid will have the formula RCOONa.
+In decarboxylation, the -COOH or -COONa group is removed and replaced with a hydrogen atom.
+What is soda lime?
+Soda lime is manufactured by adding sodium hydroxide solution to solid calcium oxide (quicklime).  It is essentially a mixture of sodium hydroxide, calcium oxide and calcium hydroxide.  It comes as white granules.
+In equations, it is almost always written as if it were simply sodium hydroxide.
+It is an easier material to handle than solid sodium hydroxide.  Solid sodium hydroxide absorbs water from the atmosphere and you tend to end up with puddles of extremely concentrated (and corrosive) sodium hydroxide solution if you leave it exposed to the air.
+Soda lime has much less tendency to absorb water.
+The reaction
+The solid sodium salt of a carboxylic acid is mixed with solid soda lime, and the mixture is heated.
+For example, if you heat sodium ethanoate with soda lime, you get methane gas formed:
+This reaction can be done with certain carboxylic acids themselves.  For example, benzene can be made by heating soda lime with solid benzoic acid  (benzenecarboxylic acid), C
+6
+H
+5
+COOH.
+You can think of this as first a reaction between the acid and the soda lime to make sodium benzoate, and then a decarboxylation as in the first example.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the 
+introductory page
+ before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the decarboxylation of carboxylic acids
+answers
+Where would you like to go now?
+To the carboxylic acids menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+ &copy; Jim Clark 2004 (last modified November 2015)

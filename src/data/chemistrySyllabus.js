@@ -88,6 +88,7 @@ export const chemistrySyllabus = {
                         'Electrophilic addition mechanism',
                         'Addition polymerisation',
                         'Polymer disposal and sustainability',
+                        'Preparation of alkenes in the lab',
                     ],
                 },
             ],
@@ -324,6 +325,7 @@ export const chemistrySyllabus = {
                         'Electrophilic substitution reactions',
                         'Benzene EAS mechanisms',
                         'Phenol bromination behavior',
+                        'Aryl halides (Halogenoarenes)',
                     ],
                 },
                 {

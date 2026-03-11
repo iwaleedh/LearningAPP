@@ -80,12 +80,51 @@ export const note_chemistry_5_18_3 = {
       }
     },
     {
+      id: 'h-halogenation-methylbenzene',
+      type: 'heading',
+      data: { text: 'Halogenation of Methylbenzene', level: 3 }
+    },
+    {
+      id: 'p-halogenation-methylbenzene-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Methylbenzene can undergo two quite different substitution reactions with halogens (Cl₂ or Br₂) depending on the conditions used. The halogen can substitute into the benzene ring (electrophilic substitution) or into the methyl group side-chain (free-radical substitution).'
+      }
+    },
+    {
+      id: 'list-halogenation-methylbenzene',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '**Ring Substitution:** Occurs with a Lewis acid catalyst (AlCl₃, FeBr₃) in the dark. The methyl group activates the ring and is 2,4-directing, so substitution yields a mixture of 2-chloro and 4-chloromethylbenzene (or bromo-).',
+          '**Side-Chain Substitution:** Occurs with UV light (absence of catalyst) and boiling methylbenzene. The halogen atoms successively replace hydrogen atoms in the methyl group (e.g., yielding (chloromethyl)benzene, then (dichloromethyl)benzene, etc.) via free-radical substitution.'
+        ]
+      }
+    },
+    {
+      id: 'callout-benzene-addition',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Addition of Chlorine to Benzene',
+        text: 'Unlike methylbenzene, boiling benzene heated with Cl₂ in the presence of UV light (no catalyst) undergoes an addition reaction. All three delocalised double bonds are broken, and six chlorine atoms attach to the ring, forming 1,2,3,4,5,6-hexachlorocyclohexane. This destroys the aromaticity.'
+      }
+    },
+    {
       id: 'callout-fc-alkylation',
       type: 'callout',
       data: {
         style: 'key',
         title: 'Friedel-Crafts Alkylation',
         text: 'Benzene + haloalkane (RCl) + AlCl₃ → alkylbenzene (C₆H₅R) + HCl. Example: C₆H₆ + CH₃Cl + AlCl₃ → toluene (C₆H₅CH₃). Conditions: anhydrous, mild heat. The alkyl group (−CH₃, −C₂H₅, etc.) is electron-donating and activates the ring, so polyalkylation can occur if excess haloalkane is used.'
+      }
+    },
+    {
+      id: 'p-fc-alkylation-industrial',
+      type: 'paragraph',
+      data: {
+        text: '**Industrial Manufacture of Ethylbenzene:** Ethylbenzene is used to make styrene (for polystyrene plastics). It is formed via a variation of Friedel-Crafts alkylation: ethene gas is passed through a liquid mixture of benzene, an **AlCl₃** catalyst, and an **HCl** promoter. The reaction is done around 130–160°C under pressure.'
       }
     },
     {
@@ -112,6 +151,13 @@ export const note_chemistry_5_18_3 = {
       type: 'paragraph',
       data: {
         text: 'Unlike the alkyl group in Friedel-Crafts alkylation, the acyl group (−COR) is electron-withdrawing (due to the adjacent C=O). It deactivates the ring, preventing polyacylation. This makes Friedel-Crafts acylation more selective and useful for preparing monosubstituted products.'
+      }
+    },
+    {
+      id: 'p-acylation-methylbenzene',
+      type: 'paragraph',
+      data: {
+        text: '**Acylation of Methylbenzene:** The methyl group in methylbenzene is typically 2,4-directing. However, in Friedel-Crafts acylation, substitution happens almost exclusively at the **4-position**. The bulky acyl group suffers from steric hindrance, making it too "cluttered" and less stable to attach at the 2-position next to the methyl group.'
       }
     },
     {
@@ -170,17 +216,50 @@ export const note_chemistry_5_18_3 = {
       }
     },
     {
+      id: 'p-sulphonation-methylbenzene',
+      type: 'paragraph',
+      data: {
+        text: 'Methylbenzene is more reactive than benzene, so it reacts with fuming sulphuric acid at 0°C or concentrated sulphuric acid under reflux for 5 minutes. The methyl group is 2,4-directing. The proportion of the isomers formed depends on the temperature because **sulphonation is reversible**. At higher temperatures, the reaction favours the thermodynamically more stable 4-isomer (less steric hindrance).'
+      }
+    },
+    {
+      id: 'h-sidechain-oxidation',
+      type: 'heading',
+      data: { text: 'Side-chain Oxidation of Alkylbenzenes', level: 2 }
+    },
+    {
+      id: 'p-sidechain-oxidation',
+      type: 'paragraph',
+      data: {
+        text: 'The benzene ring is generally resistant to oxidation, but alkyl side-chains attached to the ring are relatively easily oxidised. When heated under reflux with an alkaline solution of potassium manganate(VII) (KMnO<sub class="nb-sub">4</sub>) and then acidified with dilute sulphuric acid, the entire alkyl group is oxidised down to a single carboxyl group (–COOH).'
+      }
+    },
+    {
+      id: 'callout-sidechain-oxidation',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Any Alkyl Group forms Benzoic Acid',
+        text: 'Whether the side chain is just a methyl group (toluene) or a longer chain like a propyl group, they are all oxidised back to a single ring-attached –COOH group. The product is **benzoic acid**. During the reaction, the purple colour of the MnO₄⁻ ions is replaced by a dark brown precipitate of manganese(IV) oxide (MnO₂).'
+      }
+    },
+    {
       id: 'checklist-eas-reactions',
       type: 'checklist',
       data: {
         items: [
           { text: 'Nitration: conc HNO₃ + conc H₂SO₄, 50–60°C → nitrobenzene + H₂O', checked: false },
           { text: 'Halogenation: Br₂ + AlBr₃ (or FeBr₃/Fe filings), reflux, anhydrous → bromobenzene + HBr', checked: false },
+          { text: 'Halogenation of methylbenzene: Ring substitution (AlCl₃, dark) vs Side-chain substitution (UV light, boiling)', checked: false },
           { text: 'Friedel-Crafts alkylation: RCl + AlCl₃, anhydrous → alkylbenzene (risk of polyalkylation)', checked: false },
+          { text: 'Industrial ethylbenzene: Benzene + ethene + AlCl₃ + HCl promoter (130–160°C, under pressure), used for polystyrene', checked: false },
           { text: 'Friedel-Crafts acylation: RCOCl + AlCl₃, anhydrous → aryl ketone (no polyacylation)', checked: false },
+          { text: 'Methylbenzene acylation: Produces almost entirely 4-substituted product due to steric hindrance', checked: false },
           { text: 'Sulphonation: fuming H₂SO₄, ~40°C, 20–30 min → benzene sulphonic acid + H₂O', checked: false },
+          { text: 'Methylbenzene sulphonation: Reversible, favours 4-isomer at higher temps', checked: false },
           { text: 'All Friedel-Crafts reactions require anhydrous conditions', checked: false },
-          { text: 'Benzene combustion: smoky yellow flame (usually incomplete); hydrogenation: Ni catalyst, heat, pressure', checked: false }
+          { text: 'Benzene combustion: smoky yellow flame (usually incomplete); hydrogenation: Ni catalyst, heat, pressure', checked: false },
+          { text: 'Side-chain oxidation: Alkylbenzenes + alkaline KMnO₄/reflux, then acidified → benzoic acid + MnO₂', checked: false }
         ]
       }
     },
@@ -208,11 +287,16 @@ export const note_chemistry_5_18_3 = {
     cues: [
       { id: 'cue-1', blockId: 'p-nitration-1', prompt: 'State the reagents, conditions, and product for benzene nitration. Why must temperature be kept at 50–60°C?' },
       { id: 'cue-2', blockId: 'p-halogenation-1', prompt: 'How is benzene brominated? Why is a Lewis acid catalyst needed, and what can be used instead of AlBr₃?' },
+      { id: 'cue-2b', blockId: 'list-halogenation-methylbenzene', prompt: 'How do the conditions for halogenation of methylbenzene dictate whether ring substitution or side-chain substitution occurs?' },
       { id: 'cue-3', blockId: 'callout-fc-alkylation', prompt: 'What are the reagents and conditions for Friedel-Crafts alkylation? Why can polyalkylation occur?' },
+      { id: 'cue-3b', blockId: 'p-fc-alkylation-industrial', prompt: 'What reagents and conditions are used in the industrial manufacture of ethylbenzene?' },
       { id: 'cue-4', blockId: 'p-acylation-2', prompt: 'Why does acylation give only monosubstitution while alkylation can polysubstitute?' },
-      { id: 'cue-5', blockId: 'callout-sulphonation', prompt: 'State reagents, conditions, and product for sulphonation of benzene. What is fuming sulphuric acid?' }
+      { id: 'cue-4b', blockId: 'p-acylation-methylbenzene', prompt: 'Why does the Friedel-Crafts acylation of methylbenzene virtually only produce the 4-isomer instead of a mixture of 2- and 4-isomers?' },
+      { id: 'cue-5', blockId: 'callout-sulphonation', prompt: 'State reagents, conditions, and product for sulphonation of benzene. What is fuming sulphuric acid?' },
+      { id: 'cue-5b', blockId: 'p-sulphonation-methylbenzene', prompt: 'Why does sulphonation of methylbenzene favour the 4-isomer at higher temperatures?' },
+      { id: 'cue-6', blockId: 'callout-sidechain-oxidation', prompt: 'Describe the reagents, conditions, and observation when propylbenzene is oxidised. What is the organic product?' }
     ],
-    summaryText: 'Nitration: conc HNO₃ + H₂SO₄, 50–60°C → nitrobenzene. Halogenation: Br₂ + AlBr₃/Fe filings, reflux, anhydrous → bromobenzene. FC alkylation: RCl + AlCl₃, anhydrous → alkylbenzene. FC acylation: RCOCl + AlCl₃, anhydrous → aryl ketone (monosubstitution only). Sulphonation: fuming H₂SO₄, ~40°C → benzene sulphonic acid. Combustion: smoky flame; hydrogenation: Ni, heat, pressure → cyclohexane.',
+    summaryText: 'Nitration: conc HNO₃ + H₂SO₄, 50–60°C → nitrobenzene. Halogenation: Br₂ + AlBr₃/Fe filings, reflux, anhydrous → bromobenzene. Methylbenzene: UV light/heat → side-chain substitution; Catalyst/dark → 2,4-ring substitution. FC alkylation: RCl + AlCl₃, anhydrous → alkylbenzene. FC acylation: RCOCl + AlCl₃, anhydrous → aryl ketone (monosubstitution only). Sulphonation: fuming H₂SO₄, ~40°C → benzene sulphonic acid. Combustion: smoky flame; hydrogenation: Ni, heat, pressure → cyclohexane. Alkyl side-chains: alkaline KMnO₄/reflux → benzoic acid.',
     ready: false
   },
   evidence: [

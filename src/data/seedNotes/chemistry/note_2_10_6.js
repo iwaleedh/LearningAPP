@@ -81,11 +81,30 @@ export const note_chemistry_2_10_6 = {
                 text: 'Whenever boiling a liquid (in reflux or distillation), you MUST add a few <strong>anti-bumping granules</strong>. These provide nucleation sites for small bubbles to form, preventing the liquid from "bumping" (boiling violently and splashing up into the condenser).'
             },
             terms: ['Anti-bumping granules']
+        },
+        {
+            id: 'h-case-study',
+            type: 'heading',
+            data: { text: 'Case Study: Preparing Bromoethane', level: 2 },
+            terms: []
+        },
+        {
+            id: 'callout-bromoethane',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Practical Steps: Making & Purifying Bromoethane',
+                text: '<strong>1. Reaction:</strong> Ethanol is reacted with potassium bromide and concentrated sulfuric acid. The acid is added slowly with cooling because the reaction is highly exothermic.<br/><br/><strong>2. Collection:</strong> Heat gently. Bromoethane has a low boiling point and is very volatile. It is often distilled off as it forms and collected under water in a flask surrounded by ice. This prevents evaporation and dissolves any escaping HBr gas.<br/><br/><strong>3. Impurities:</strong> The unpurified bromoethane contains HBr, Br₂ (from oxidation of bromide), SO₂, unreacted ethanol, and ethoxyethane.<br/><br/><strong>4. Purification Sequence:</strong><br/>• <strong>Water wash:</strong> Removes water-soluble impurities (HBr, ethanol, SO₂). Bromoethane is the dense lower layer (which is kept).<br/>• <strong>Sodium carbonate wash:</strong> Neutralises remaining acidic impurities (HBr, SO₂). Important to vent CO₂!<br/>• <strong>Water wash:</strong> Removes inorganic salts formed in the previous step.<br/>• <strong>Drying:</strong> Add anhydrous calcium chloride. It absorbs water and can also absorb remaining ethanol.<br/>• <strong>Redistillation:</strong> Distil and collect the sweet-smelling fraction boiling at 35–40°C.'
+            },
+            terms: ['Volatile', 'Exothermic', 'Washing', 'Anhydrous calcium chloride']
         }
     ],
     recall: {
         enabled: true,
         cues: [
+            { id: 'c-br1', blockId: 'callout-bromoethane', prompt: 'When preparing bromoethane, why is the distillate often collected under cold water?' },
+            { id: 'c-br2', blockId: 'callout-bromoethane', prompt: 'What is the purpose of washing crude bromoethane with sodium carbonate solution, and what safety precaution must be taken?' },
+            { id: 'c-br3', blockId: 'callout-bromoethane', prompt: 'Which drying agent is particularly useful for drying bromoethane because it also absorbs unreacted ethanol?' },
             { id: 'c-cp6', blockId: 'callout-cp6', prompt: 'In Core Practical 6 (preparing 2-chloro-2-methylpropane), what reagents are used and what apparatus is the initial reaction carried out in?' },
             { id: 'c1', blockId: 'table-prep', prompt: 'Why is a condenser placed vertically when heating a mixture under reflux?' },
             { id: 'c2', blockId: 'list-purification', prompt: 'What piece of glassware is used to separate an organic liquid from an aqueous layer containing dissolved impurities?' },

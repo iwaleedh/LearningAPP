@@ -16,7 +16,25 @@ export const note_chemistry_4_15_3 = {
       id: 'p-carbonyl-def',
       type: 'paragraph',
       data: {
-        text: 'The carbonyl group is a C=O double bond. It consists of a σ bond (overlap of sp² hybrid orbitals) and a π bond (overlap of p orbitals). The C=O bond is polar: the oxygen is more electronegative than carbon, so the C=Oδ⁺–δ⁻ dipole is strong. This polarity makes carbonyls susceptible to nucleophilic attack. Aldehydes have the carbonyl at the end of a chain (R–CHO), while ketones have it in the middle (R–CO–R).'
+        text: 'The carbonyl group (C=O) is present in two main classes of compounds: aldehydes (where the group is at the end of a chain, R–CHO) and ketones (where it is in the middle, R–CO–R′). The structure and characteristic reactivity of both classes are governed by the properties of the carbon–oxygen double bond.'
+      }
+    },
+    {
+      id: 'h-carbonyl-bonding',
+      type: 'heading',
+      data: { text: 'Orbital Model of the C=O Bond', level: 3 }
+    },
+    {
+      id: 'list-carbonyl-orbital',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          '**Carbon sp² Hybridisation:** Similar to ethene, the generic carbonyl carbon promotes an electron from 2s to 2p, then hybridises to form three sp² orbitals. These arrange trigonally planar (~120° apart), leaving one unhybridised perpendicular p orbital.',
+          '**Oxygen sp² Hybridisation:** The oxygen atom (1s² 2s² 2p⁴) also undergoes sp² hybridisation. It forms three sp² hybrid orbitals and one unhybridised p orbital. Crucially, two of these sp² orbitals are occupied by the oxygen\'s "lone pairs", which sit in the same plane as the σ bonds.',
+          '**σ and π Bond Formation:** A σ (sigma) bond forms via end-to-end overlap of a carbon sp² orbital with an oxygen sp² orbital. A π (pi) bond forms via sideways overlap of their parallel p orbitals.',
+          '**Bond Polarity:** Unlike the non-polar C=C bond, oxygen is significantly more electronegative than carbon. The shared electron clouds (especially the easily distorted π electrons) are pulled strongly towards oxygen, creating a permanent dipole (C<sup>δ+</sup>=O<sup>δ−</sup>). This electron deficiency makes the carbon atom highly susceptible to nucleophilic attack.'
+        ]
       }
     },
     {
@@ -180,9 +198,14 @@ export const note_chemistry_4_15_3 = {
         id: 'cue-5',
         blockId: 'p-aldehyde-vs-ketone',
         prompt: 'Why are aldehydes more reactive than ketones in nucleophilic addition?'
+      },
+      {
+        id: 'cue-6',
+        blockId: 'list-carbonyl-orbital',
+        prompt: 'Describe the orbital hybridisation in the carbonyl group and explain why the C=O bond is polar compared to a C=C bond.'
       }
     ],
-    summaryText: 'Aldehydes (R–CHO, suffix –al) and ketones (R–CO–R′, suffix –one) contain the polar C=O group. Aldehydes have carbonyl at the chain end; ketones in the middle. Both are polar, volatile, and water-soluble if small. Aldehydes are more reactive than ketones due to lower steric hindrance around the carbonyl carbon. Physical properties: higher boiling points than alkanes, lower than alcohols; can accept H-bonds but not donate.',
+    summaryText: 'Aldehydes (R–CHO, suffix –al) and ketones (R–CO–R′, suffix –one) contain the polar C=O group. Aldehydes have carbonyl at the chain end; ketones in the middle. The carbon and oxygen atoms in C=O are sp² hybridised, forming a σ and π bond framework with oxygen holding two lone pairs in its sp² orbitals. Oxygen\'s electronegativity creates a strong Cδ+ = Oδ− dipole. Both are polar, volatile, and water-soluble if small. Aldehydes are more reactive than ketones due to lower steric hindrance around the carbonyl carbon. Physical properties: higher boiling points than alkanes, lower than alcohols; can accept H-bonds but not donate.',
     ready: false
   },
   evidence: [

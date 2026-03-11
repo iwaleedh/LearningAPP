@@ -146,6 +146,15 @@ export const note_chemistry_1_4_9 = {
       title: 'Exam Tip',
       text: '• Fractional distillation is a PHYSICAL process — no new substances are made, only separated.\n• Cracking is a CHEMICAL process — covalent bonds are broken; new substances are formed.\n• Always link boiling point differences to London dispersion forces (longer chain → more electrons → stronger London forces → higher b.p.).'
     }
+  },
+  {
+    id: 'callout-cracking-mechanisms',
+    type: 'callout',
+    data: {
+      style: 'worked',
+      title: 'Cracking Intermediates & Steam Cracking',
+      text: '• **Catalytic cracking** involves an ionic intermediate. The zeolite catalyst removes a hydrogen atom along with its electrons from the alkane to form a positive **carbocation** (carbonium ion) intermediate.\n• **Thermal cracking** breaks carbon-carbon bonds homolytically, forming **free radicals** (species with an unpaired electron).\n• **Steam cracking** is an alternative method used to produce a high proportion of alkenes. The hydrocarbon feedstock (e.g. naphtha) is vaporised, mixed with steam, and heated to 800-900 °C for less than a second. The steam acts as a diluent and prevents carbon formation.'
+    }
   }, {
     id: 'h-isomerisation',
     type: 'heading',
@@ -257,7 +266,12 @@ export const note_chemistry_1_4_9 = {
   }],
   recall: {
     enabled: true,
-    cues: [{
+    cues: [
+    {
+      id: 'cue-cracking-mech',
+      blockId: 'callout-cracking-mechanisms',
+      prompt: 'What type of intermediates are involved in catalytic vs thermal cracking?'
+    },{
       id: 'cue-1',
       blockId: 'callout-key-fd',
       prompt: 'Explain the principle of fractional distillation of crude oil.'

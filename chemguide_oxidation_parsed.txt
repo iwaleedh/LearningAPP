@@ -1,0 +1,100 @@
+
+oxidation of alcohols
+OXIDATION OF ALCOHOLS
+This page looks at the oxidation of alcohols using acidified sodium or potassium dichromate(VI) solution.  This reaction is used to make aldehydes, ketones and carboxylic acids, and as a way of distinguishing between primary, secondary and tertiary alcohols.
+Important!  
+It is pointless reading this page unless you are confident  you know what primary, secondary and tertiary alcohols are.  If you aren't sure, you must read the 
+introduction to alcohols
+ before you go on.
+This page will also refer constantly to 
+aldehydes and ketones
+.  Follow this link if you haven't come across these compounds before.
+Use the BACK button on your browser to return to this page.
+Oxidising the different types of alcohols
+The oxidising agent used in these reactions is normally a solution of sodium or potassium dichromate(VI) acidified with dilute sulphuric acid.  If oxidation occurs, the orange solution containing the dichromate(VI) ions is reduced to a green solution containing chromium(III) ions.
+The electron-half-equation for this reaction is
+Note:  
+If you don't yet know about 
+electron-half-equations
+ just ignore this reference for now.  If you should already know about them, but aren't very good at handling them, you might like to have a look at this link.  It isn't particularly important for the purposes of the current page.
+If you choose to follow this link, use the BACK button on your browser to return to this page.
+Primary alcohols
+Primary alcohols can be oxidised to either aldehydes or carboxylic acids depending on the reaction conditions.  In the case of the formation of carboxylic acids, the alcohol is first oxidised to an aldehyde which is then oxidised further to the acid.
+Partial oxidation to aldehydes
+You get an aldehyde if you use an excess of the alcohol, and distil off the aldehyde as soon as it forms.
+The excess of the alcohol means that there isn't enough oxidising agent present to carry out the second stage.  Removing the aldehyde as soon as it is formed means that it doesn't hang around waiting to be oxidised anyway!
+If you used ethanol as a typical primary alcohol, you would produce the aldehyde ethanal, CH
+3
+CHO.
+The full equation for this reaction is fairly complicated, and you need to understand about electron-half-equations in order to work it out.
+In organic chemistry, simplified versions are often used which concentrate on what is happening to the organic substances.  To do that, oxygen from an oxidising agent is represented as [O].  That would produce the much simpler equation:
+It also helps in remembering what happens.  You can draw simple structures to show the relationship between the primary alcohol and the aldehyde formed.
+Important!  
+This is not intended to suggest any sort of mechanism for the reaction - it is just a way of helping you to remember what happens.
+If you are in the UK A level system (or its equivalent), it is highly likely that your examiners will accept equations involving [O].  To be sure, consult your 
+syllabus, past papers and mark schemes
+.  If you are studying a UK-based syllabus and haven't got any of these things, follow this link to find out how to get them.
+Full oxidation to carboxylic acids
+You need to use an excess of the oxidising agent and make sure that the aldehyde formed as the half-way product stays in the mixture.
+The alcohol is heated under reflux with an excess of the oxidising agent.  When the reaction is complete, the carboxylic acid is distilled off.
+The full equation for the oxidation of ethanol to ethanoic acid is:
+Note:  
+This equation is worked out in detail on the page about 
+electron-half-equations
+ mentioned above, if you are interested.
+If you choose to follow this link, use the BACK button on your browser to return to this page.
+The more usual simplified version looks like this:
+Alternatively, you could write separate equations for the two stages of the reaction - the formation of ethanal and then its subsequent oxidation.
+This is what is happening in the second stage:
+Secondary alcohols
+Secondary alcohols are oxidised to ketones - and that's it.  For example, if you heat the secondary alcohol propan-2-ol with sodium or potassium dichromate(VI) solution acidified with dilute sulphuric acid, you get propanone formed.
+Playing around with the reaction conditions makes no difference whatsoever to the product.
+Using the simple version of the equation and showing the relationship between the structures:
+If you look back at the second stage of the primary alcohol reaction, you will see that an oxygen &quot;slotted in&quot; between the carbon and the hydrogen in the aldehyde group to produce the carboxylic acid.  In this case, there is no such hydrogen - and the reaction has nowhere further to go.
+Tertiary alcohols
+Tertiary alcohols aren't oxidised by acidified sodium or potassium dichromate(VI) solution.  There is no reaction whatsoever.
+If you look at what is happening with primary and secondary alcohols, you will see that the  oxidising agent is removing the hydrogen from the -OH group, and a hydrogen from the carbon atom attached to the -OH.  Tertiary alcohols don't have a hydrogen atom attached to that carbon.
+You need to be able to remove those two particular hydrogen atoms in order to set up the carbon-oxygen double bond.
+Using these reactions as a test for the different types of alcohol
+Doing the test
+First you have to be sure that you have actually got an alcohol by testing for the -OH group.  You would need to show that it was a neutral liquid, free of water and that it reacted with solid phosphorus(V) chloride to produce a burst of acidic steamy hydrogen chloride fumes.
+Note:  
+You will find the 
+chemistry of the phosphorus(V) chloride test
+ by following this link.
+Use the BACK button on your browser to return to this page.
+You would then add a few drops of the alcohol to a test tube containing potassium dichromate(VI) solution acidified with dilute sulphuric acid. The tube would be warmed in a hot water bath.
+Results for the various kinds of alcohol
+Picking out the tertiary alcohol
+In the case of a primary or secondary alcohol, the orange solution turns green.  With a tertiary alcohol there is no colour change.
+After heating:
+Distinguishing between the primary and secondary alcohols
+You need to produce enough of the aldehyde (from oxidation of a primary alcohol) or ketone (from a secondary alcohol) to be able to test them.  There are various things which aldehydes do which ketones don't.  These include the reactions with Tollens' reagent,  Fehling's solution and Benedict's solution, and are covered on a separate page.
+Note:  
+You will find these 
+tests for aldehydes
+ by following this link.
+Use the BACK button on your browser to return to this page.
+In my experience, these tests can be a bit of a bother to carry out and the results aren't always as clear-cut as the books say.  A 
+much
+ simpler but fairly reliable test is to use 
+Schiff's reagent
+.  Schiff's reagent isn't specifically mentioned by any of the UK-based syllabuses, but I have always used it.
+Schiff's reagent is a fuchsin dye decolourised by passing sulphur dioxide through it.  In the presence of even small amounts of an aldehyde, it turns bright magenta.
+It must, however, be used absolutely cold, because ketones react with it very slowly  to give the same colour.  If you heat it, obviously the change is faster - and potentially confusing.
+While you are warming the reaction mixture in the hot water bath, you can pass any vapours produced through some Schiff's reagent.
+If the Schiff's reagent quickly becomes magenta, then you are producing an aldehyde from a primary alcohol.
+If there is no colour change in the Schiff's reagent, or only a trace of pink colour within a minute or so, then you aren't producing an aldehyde, and so haven't got a primary alcohol.
+Because of the colour change to the acidified potassium dichromate(VI) solution, you must therefore have a secondary alcohol.
+You should check the result as soon as the potassium dichromate(VI) solution turns green - if you leave it too long, the Schiff's reagent might start to change colour in the secondary alcohol case as well.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the 
+introductory page
+ before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the oxidation of alcohols
+answers
+Where would you like to go now?
+To the alcohols menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+ &copy; Jim Clark 2003 (modified October 2015)

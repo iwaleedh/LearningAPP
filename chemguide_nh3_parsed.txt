@@ -1,0 +1,59 @@
+halogenoalkanes (haloalkanes) and ammonia
+REACTIONS BETWEEN HALOGENOALKANES AND AMMONIA
+This page looks at the reaction between halogenoalkanes (haloalkanes or alkyl halides) and ammonia.  This is a potentially very complicated series of reactions, so it is important to know exactly what your examiners want.  You need to check your syllabus and past exam papers and mark schemes.
+Important!
+If you are working towards a UK-based exam (A level or equivalent), and don't have any of this information, then it is essential that you get it!  Find out how by going to the
+syllabuses
+page.
+The current page summarises the main facts about the reactions.  If you need details about the mechanisms, you will find a link below.
+Reaction details and products
+The halogenoalkane is heated with a concentrated solution of ammonia in ethanol.  The reaction is carried out in a sealed tube.  You couldn't heat this mixture under reflux, because the ammonia would simply escape up the condenser as a gas.
+We'll talk about the reaction using 1-bromoethane as a typical primary halogenoalkane.  There is no difference in the details of the reaction if you chose a secondary or tertiary halogenoalkane instead.  The equations would just look more complicated than they already are!
+You get a series of
+amines
+formed together with their salts.  The reactions happen one after another.
+Making a primary amine
+The reaction happens in two stages.  In the first stage, a salt is formed - in this case, ethylammonium bromide.  This is just like ammonium bromide, except that one of the hydrogens in the ammonium ion is replaced by an ethyl group.
+There is then the possibility of a reversible reaction between this salt and excess ammonia in the mixture.
+The ammonia removes a hydrogen ion from the ethylammonium ion to leave a primary amine - ethylamine.
+The more ammonia there is in the mixture, the more the forward reaction is favoured.
+Note:
+You will find considerable disagreement in textbooks and other sources about the exact nature of the products in this reaction.  Some of the information you'll come across is simply wrong!
+You can read the arguments about
+the products of this reaction
+by following this link.
+Warning!
+That page is in the mechanism section of the site.  Return to the current page using the BACK button on your browser.  If you use the links at the bottom of that page, you could get seriously lost!
+Making a secondary amine
+The reaction doesn't stop at a primary amine.  The ethylamine also reacts with bromoethane - in the same two stages as before.
+In the first stage, you get a salt formed - this time, diethylammonium bromide.  Think of this as ammonium bromide with two hydrogens replaced by ethyl groups.
+There is again the possibility of a reversible reaction between this salt and excess ammonia in the mixture.
+The ammonia removes a hydrogen ion from the diethylammonium ion to leave a secondary amine - diethylamine.  A secondary amine is one which has two alkyl groups attached to the nitrogen.
+Making a tertiary amine
+And still it doesn't stop!  The diethylamine also reacts with bromoethane - in the same two stages as before.
+In the first stage, you get triethylammonium bromide.
+There is again the possibility of a reversible reaction between this salt and excess ammonia in the mixture.
+The ammonia removes a hydrogen ion from the triethylammonium ion to leave a tertiary amine - triethylamine.  A tertiary amine is one which has three alkyl groups attached to the nitrogen.
+Making a quaternary ammonium salt
+The final stage!  The triethylamine reacts with bromoethane to give tetraethylammonium bromide - a quaternary ammonium salt (one in which all four hydrogens have been replaced by alkyl groups).
+This time there isn't any hydrogen left on the nitrogen to be removed.  The reaction stops here.
+Note:
+This whole reaction sequence is a complete pain if you are going to have to learn it.  It is much, much easier to work it out if you need to, provided you understand the mechanisms for the reactions.
+You can explore the
+mechanisms for the various stages of the reaction
+by following this link.  This will lead you to several pages in the mechanism section of this  site.  If all you want to do is make some sense of the above reactions, it would probably pay you to just read the parts of those pages concerned with primary halogenoalkanes like bromoethane.
+What do you actually get if you react bromoethane with ammonia?
+Whatever you do, you get a mixture of all of the products (including both amines and their salts) shown on this page.
+To get mainly the quaternary ammonium salt, you can use a large excess of bromoethane.  If you look at the reactions going on, each one needs additional bromoethane.  If you provide enough, then the chances are that the reaction will go to completion, given enough time.
+On the other hand, if you use a very large excess of ammonia, the chances are always greatest that a bromoethane molecule will hit an ammonia molecule rather than one of the amines being formed.  That will help to prevent the formation of secondary (etc) amines.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the
+introductory page
+before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the reactions of halogenoalkanes with ammonia
+answers
+Where would you like to go now?
+To the halogenoalkanes menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+© Jim Clark 2003 (modified October 2015)

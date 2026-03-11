@@ -4,7 +4,24 @@ export const note_chemistry_4_15_4 = {
       id: 'obj-carbonyl-rxn',
       type: 'objective',
       data: {
-        text: 'Understand nucleophilic addition reactions of aldehydes and ketones; reduction, cyanide addition, and tests to distinguish aldehydes from ketones.'
+        text: 'Understand the preparation of carbonyls, nucleophilic addition reactions of aldehydes and ketones; reduction, cyanide addition, and tests to distinguish them.'
+      }
+    },
+    {
+      id: 'h-prep-carbonyls',
+      type: 'heading',
+      data: { text: 'Preparation of Aldehydes and Ketones', level: 2 }
+    },
+    {
+      id: 'list-prep-carbonyls',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '**Aldehydes** are prepared by the partial oxidation of primary alcohols using acidified potassium dichromate(VI) (K₂Cr₂O₇ / H₂SO₄). The reaction mixture must be heated and the product distilled off immediately as it forms to prevent further oxidation into a carboxylic acid.',
+          '**Ketones** are prepared by the oxidation of secondary alcohols using the same acidified dichromate(VI) reagent. The mixture is heated under reflux. Because ketones cannot be easily oxidised further, prolonged heating is safe.',
+          'During the oxidation, the orange dichromate(VI) drop turns into a green solution containing Cr³⁺ ions as they are reduced.'
+        ]
       }
     },
     {
@@ -29,28 +46,37 @@ export const note_chemistry_4_15_4 = {
     {
       id: 'h-reduction-nabh4',
       type: 'heading',
-      data: { text: 'Reduction with NaBH₄', level: 2 }
+      data: { text: 'Reduction of Carbonyls', level: 2 }
     },
     {
       id: 'p-nabh4-reaction',
       type: 'paragraph',
       data: {
-        text: 'Sodium borohydride (NaBH₄) is a powerful reducing agent. It reduces aldehydes to primary alcohols and ketones to secondary alcohols. The hydride ion (H⁻) acts as a strong nucleophile, attacking the electrophilic carbonyl carbon. The reaction is rapid and occurs at room temperature, typically in aqueous or alcoholic solvents. The mechanism is nucleophilic addition: the hydride adds to the C=O, forming C–H and O⁻ (from the π electrons). Protonation then gives C–OH.'
+        text: 'Aldehydes are reduced to primary alcohols, and ketones are reduced to secondary alcohols. The most common reducing agent used in the laboratory for this is sodium borohydride / sodium tetrahydridoborate(III) (NaBH₄). NaBH₄ provides the hydride ion (H⁻) which acts as a strong nucleophile, attacking the electrophilic carbonyl carbon. The reaction is rapid and typically performed by adding solid NaBH₄ to the carbonyl compound dissolved in an alcohol (such as methanol or ethanol) at room temperature or heated under reflux.'
       }
     },
     {
       id: 'equation-nabh4',
       type: 'equation',
       data: {
-        html: 'R–CHO + NaBH<sub>4</sub> → R–CH<sub>2</sub>OH  (aldehyde → primary alcohol)<br/>R–CO–R′ + NaBH<sub>4</sub> → R–CHOH–R′  (ketone → secondary alcohol)',
-        caption: 'NaBH₄ reduction of carbonyl compounds. The hydride (H⁻) is the nucleophile; the carbonyl carbon is the electrophile.'
+        html: 'R–CHO + 2[H] → R–CH<sub>2</sub>OH  (aldehyde → primary alcohol)<br/>R–CO–R′ + 2[H] → R–CH(OH)–R′  (ketone → secondary alcohol)',
+        caption: 'Reduction equations using [H] to represent the hydrogen entering from the reducing agent.'
+      }
+    },
+    {
+      id: 'callout-reduction-complex',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Stage 2: Releasing the alcohol',
+        text: 'The initial reaction of the carbonyl compound with NaBH₄ forms a complex intermediate species. In order to release the free alcohol product from this complex, a second stage is required where water (or occasionally dilute acid/alkali depending on experimental variation) is added and the mixture is boiled.'
       }
     },
     {
       id: 'p-nabh4-advantage',
       type: 'paragraph',
       data: {
-        text: 'NaBH₄ is milder than LiAlH₄ (lithium aluminium hydride), which is extremely reactive and requires anhydrous conditions. NaBH₄ can be used in water or protic solvents without violent reaction (though excess water slows the reduction). The choice between NaBH₄ and LiAlH₄ depends on the substrate: NaBH₄ reduces aldehydes and ketones but not carboxylic acids or esters; LiAlH₄ reduces all of these (see Carboxylic Acids note).'
+        text: 'An alternative reducing agent is lithium aluminium hydride (LiAlH₄). However, LiAlH₄ is far more reactive and reacts violently with both water and alcohols. Thus, reduction with LiAlH₄ must take place in carefully dried ether (e.g. ethoxyethane). After the complex forms, cautious addition of water/acid is required to decompose any excess LiAlH₄ safely before isolating the product. Generally, NaBH₄ is preferred for aldehydes and ketones because it is much safer and easier to handle, whereas LiAlH₄ is reserved for harder-to-reduce groups like carboxylic acids or esters.'
       }
     },
     {
@@ -62,31 +88,52 @@ export const note_chemistry_4_15_4 = {
       id: 'p-hcn-intro',
       type: 'paragraph',
       data: {
-        text: 'Hydrogen cyanide (HCN) adds to aldehydes and ketones to form hydroxynitriles (also called cyanohydrins). The mechanism involves the cyanide ion (CN⁻) acting as a nucleophile — it attacks the electrophilic carbonyl carbon, forming a C–CN bond. The C=O is broken, and the π electrons form a carbocation intermediate. Protonation then gives a C–OH group. The product is R–CHOH–CN (from aldehyde) or R–COH(CN)–R′ (from ketone).'
+        text: 'Hydrogen cyanide (HCN) adds across the carbon-oxygen double bond in aldehydes and ketones to produce hydroxynitriles. Note that counting the carbon chain for nomenclature must include the carbon belonging to the -CN group (which is always carbon-1). For example, ethanal yields 2-hydroxypropanenitrile.'
       }
     },
     {
       id: 'equation-hcn',
       type: 'equation',
       data: {
-        html: 'R–CHO + HCN → R–CHOH–CN  (aldehyde → hydroxynitrile)<br/>R–CO–R′ + HCN → R–COH(CN)–R′  (ketone → hydroxynitrile)',
-        caption: 'HCN addition to carbonyls produces hydroxynitriles (cyanohydrins). CN⁻ is the nucleophile.'
+        html: 'R–CHO + HCN → R–CH(OH)CN  (aldehyde → hydroxynitrile)<br/>R–CO–R′ + HCN → R–C(OH)(CN)–R′  (ketone → hydroxynitrile)',
+        caption: 'HCN addition to carbonyls produces hydroxynitriles. CN⁻ is the initial nucleophile.'
       }
     },
     {
       id: 'p-hcn-stereo',
       type: 'paragraph',
       data: {
-        text: 'HCN addition creates a chiral centre at the original carbonyl carbon (which becomes C–OH–CN). Since the nucleophile can attack from either face of the planar C=O, the product is a racemic mixture (unless asymmetric conditions are used). This is industrially important: for example, the synthesis of mandelic acid derivatives involves HCN addition to benzaldehyde.'
+        text: 'HCN addition creates a chiral centre at the original carbonyl carbon (if not already symmetrically substituted). Since the nucleophile can attack from either face of the planar C=O, the product is an optically inactive racemic mixture. This is industrially important for synthesising alpha-hydroxy acids.'
       }
     },
     {
-      id: 'callout-hcn-caution',
+      id: 'callout-hcn-conditions',
       type: 'callout',
       data: {
-        style: 'warning',
-        title: 'HCN Safety Hazard',
-        text: 'Hydrogen cyanide (HCN) is extremely toxic and volatile. Laboratory syntheses often use potassium cyanide (KCN) + dilute acid to generate HCN in situ, reducing exposure. The CN⁻ ion itself is less toxic than HCN gas. In all cases, HCN reactions must be carried out in a fume hood with proper ventilation and safety precautions. Exposure to HCN can be fatal in small amounts.'
+        style: 'key',
+        title: 'Safety and Reaction Conditions',
+        text: 'HCN is an extremely poisonous gas. Instead of using raw HCN, the reaction is performed by mixing the carbonyl compound with an aqueous solution of sodium or potassium cyanide (KCN/NaCN), and adding dilute sulphuric acid to generate HCN in situ. The pH is carefully adjusted to about 4–5 to give the fastest reaction; this ensures enough free CN⁻ ions remain act as the nucleophile while still generating sufficient HCN to protonate the intermediate.'
+      }
+    },
+    {
+      id: 'h-nahso3-addition',
+      type: 'heading',
+      data: { text: 'Addition of Sodium Hydrogensulphite (NaHSO₃)', level: 2 }
+    },
+    {
+      id: 'p-nahso3-reaction',
+      type: 'paragraph',
+      data: {
+        text: 'Aldehydes (and methyl ketones without bulky groups) react with a saturated aqueous solution of sodium hydrogensulphite (NaHSO₃) to form a crystalline white precipitate known as a "bisulphite addition compound".'
+      }
+    },
+    {
+      id: 'callout-nahso3-purification',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Purification Application',
+        text: 'Since this addition product is a solid crystal, it can be filtered off and washed to remove impurities. The original carbonyl compound can then be easily regenerated by treating the crystals with dilute acid or dilute alkali. This makes the reaction highly useful for purifying aldehydes.'
       }
     },
     {
@@ -166,7 +213,7 @@ export const note_chemistry_4_15_4 = {
       id: 'summary-carbonyl-rxn',
       type: 'summary',
       data: {
-        text: 'Aldehydes and ketones undergo nucleophilic addition at the electrophilic C=O carbon. NaBH₄ reduces aldehydes → primary alcohols, ketones → secondary alcohols (mild conditions, aqueous solvent OK). HCN adds to form hydroxynitriles (both aldehydes and ketones; creates new chiral centres, racemic product). Tollens\' and Fehling\'s tests oxidise and detect aldehydes only (not ketones), giving characteristic colour changes: silver mirror (Tollens\') or brick-red ppt (Fehling\'s). These tests exploit the greater reactivity of aldehydes due to lower steric hindrance.'
+        text: 'Aldehydes and ketones undergo nucleophilic addition at the electrophilic C=O carbon. NaBH₄ reduces aldehydes → primary alcohols, ketones → secondary alcohols (mild conditions, aqueous solvent OK). HCN adds to form hydroxynitriles (both aldehydes and ketones; creates new chiral centres, racemic product); HCN is generated in situ from KCN and dilute acid at pH 4-5. NaHSO₃ forms crystalline addition compounds useful for purification. Tollens\' and Fehling\'s tests oxidise and detect aldehydes only (not ketones), giving characteristic colour changes: silver mirror (Tollens\') or brick-red ppt (Fehling\'s). These tests exploit the greater reactivity of aldehydes due to lower steric hindrance.'
       }
     }
   ],
@@ -174,19 +221,39 @@ export const note_chemistry_4_15_4 = {
     enabled: true,
     cues: [
       {
+        id: 'cue-prep',
+        blockId: 'list-prep-carbonyls',
+        prompt: 'Outline the reagents and conditions required to prepare aldehydes and ketones from alcohols.'
+      },
+      {
         id: 'cue-1',
         blockId: 'p-addition-mechanism',
         prompt: 'Describe the mechanism of nucleophilic addition to a carbonyl group.'
       },
       {
         id: 'cue-2',
-        blockId: 'equation-nabh4',
-        prompt: 'Write equations showing NaBH₄ reduction of an aldehyde and a ketone.'
+        blockId: 'p-nabh4-reaction',
+        prompt: 'Compare the reaction conditions of reducing a carbonyl with NaBH₄ versus LiAlH₄.'
+      },
+      {
+        id: 'cue-24dnph-test',
+        blockId: 'list-identifying-carbonyls',
+        prompt: 'Describe how 2,4-DNPH is used not just to test for carbonyls, but to identify the specific aldehyde or ketone present.'
       },
       {
         id: 'cue-3',
-        blockId: 'equation-hcn',
-        prompt: 'Write equations for HCN addition to an aldehyde and a ketone.'
+        blockId: 'callout-hcn-conditions',
+        prompt: 'How is HCN generation controlled in the laboratory for aldehyde/ketone addition, and why is the pH maintained at 4-5?'
+      },
+      {
+        id: 'cue-nahso3',
+        blockId: 'callout-nahso3-purification',
+        prompt: 'Describe how sodium hydrogensulphite (NaHSO₃) is used to purify aldehydes.'
+      },
+      {
+        id: 'cue-oxidation-eqs',
+        blockId: 'h-oxidation-equations',
+        prompt: 'Write equations for the oxidation of an aldehyde using Tollens\' reagent, Fehling\'s solution, and acidified dichromate(VI).'
       },
       {
         id: 'cue-4',
@@ -199,7 +266,7 @@ export const note_chemistry_4_15_4 = {
         prompt: 'Which chemical test would you use to distinguish an aldehyde from a ketone, and what colour change indicates the aldehyde?'
       }
     ],
-    summaryText: 'Nucleophilic addition: nucleophile attacks Cδ⁺ of C=O, π electrons → O⁻, then protonation → C–OH product. NaBH₄: aldehyde → primary alcohol, ketone → secondary alcohol (nucleophile = H⁻). HCN: both aldehydes and ketones → hydroxynitriles (racemic, creates chiral centre). Tollens\' test: aldehydes oxidised → silver mirror (Ag⁺ → Ag metal); ketones no change. Fehling\'s test: aldehydes → brick-red Cu₂O ppt; ketones no change. Aldehydes more reactive due to steric accessibility.',
+    summaryText: 'Preparation: primary alcohols distilled with acidified K₂Cr₂O₇ to form aldehydes; secondary alcohols refluxed to form ketones. Nucleophilic addition: nucleophile attacks Cδ⁺ of C=O, π electrons → O⁻, then protonation → C–OH product. NaBH₄: aldehyde → primary alcohol, ketone → secondary alcohol (nucleophile = H⁻). HCN: both aldehydes and ketones → hydroxynitriles (racemic, creates chiral centre). Tollens\' test: aldehydes oxidised → silver mirror (Ag⁺ → Ag metal); ketones no change. Fehling\'s test: aldehydes → brick-red Cu₂O ppt; ketones no change. Aldehydes more reactive due to steric accessibility.',
     ready: false
   },
   evidence: [

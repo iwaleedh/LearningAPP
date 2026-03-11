@@ -1,0 +1,198 @@
+
+ 
+ 
+ an introduction to aldehydes and ketones 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ INTRODUCING ALDEHYDES AND KETONES 
+ 
+ 
+ 
+ This page explains what aldehydes and ketones are, and looks at the way their bonding affects their reactivity. It also considers their simple physical properties such as solubility and boiling points. Details of the chemical reactions of aldehydes and ketones are described on separate pages. 
+ 
+ 
+ 
+ 
+ What are aldehydes and ketones? 
+ 
+ Aldehydes and ketones as carbonyl compounds 
+ Aldehydes and ketones are simple compounds which contain a carbonyl group - a carbon-oxygen double bond. They are simple in the sense that they don't have other reactive groups like -OH or -Cl attached directly to the carbon atom in the carbonyl group - as you might find, for example, in carboxylic acids containing -COOH. 
+ Examples of aldehydes 
+ In aldehydes, the carbonyl group has a hydrogen atom attached to it together with either 
+ 
+ a second hydrogen atom 
+ or, more commonly, a hydrocarbon group which might be an alkyl group or one containing a benzene ring. 
+ 
+ For the purposes of this section, we shall ignore those containing benzene rings. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; There is no very significant reason for this. It is just that if you are fairly new to organic chemistry you might not have come across any compounds with benzene rings in them yet. I'm just trying to avoid adding to your confusion! 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Notice that these all have exactly the same end to the molecule. All that differs is the complexity of the other group attached. 
+ When you are writing formulae for these, the aldehyde group (the carbonyl group with the hydrogen atom attached) is always written as -CHO - never as COH. That could easily be confused with an alcohol. Ethanal, for example, is written as CH 3 CHO; methanal as HCHO. 
+ The name counts the total number of carbon atoms in the longest chain - including the one in the carbonyl group. If you have side groups attached to the chain, notice that you always count from the carbon atom in the carbonyl group as being number 1. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you aren't confident about naming organic compounds , then you really ought to follow this link before you go on. 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Examples of ketones 
+ In ketones, the carbonyl group has two hydrocarbon groups attached . Again, these can be either alkyl groups or ones containing benzene rings. Again, we'll concentrated on those containing alkyl groups just to keep things simple. 
+ Notice that ketones never have a hydrogen atom attached to the carbonyl group. 
+ 
+ 
+ 
+ Propanone is normally written CH 3 COCH 3 . Notice the need for numbering in the longer ketones. In pentanone, the carbonyl group could be in the middle of the chain or next to the end - giving either pentan-3-one or pentan-2-one. 
+ 
+ 
+ 
+ 
+ Bonding and reactivity 
+ 
+ Bonding in the carbonyl group 
+ 
+ Oxygen is far more electronegative than carbon and so has a strong tendency to pull electrons in a carbon-oxygen bond towards itself. One of the two pairs of electrons that make up a carbon-oxygen double bond is even more easily pulled towards the oxygen. That makes the carbon-oxygen double bond very highly polar. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you aren't sure about electronegativity and bond polarity follow this link before you go on. 
+ If you are interested in really understanding the bonding in the carbon-oxygen double bond you could explore it in detail by following this link. You might find that following this link will take you some time, because you will probably have to explore several pages of background material as well. 
+ Use the BACK button (or HISTORY file or GO menu) on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Important reactions of the carbonyl group 
+ The slightly positive carbon atom in the carbonyl group can be attacked by nucleophiles . A nucleophile is a negatively charged ion (for example, a cyanide ion, CN - ), or a slightly negatively charged part of a molecule (for example, the lone pair on a nitrogen atom in ammonia, NH 3 ). 
+ During the reaction, the carbon-oxygen double bond gets broken. The net effect of all this is that the carbonyl group undergoes addition reactions , often followed by the loss of a water molecule. This gives a reaction known as addition-elimination or condensation . You will find examples of simple addition reactions and addition-elimination if you explore the aldehydes and ketones menu (link at the bottom of the page). 
+ Both aldehydes and ketones contain a carbonyl group. That means that their reactions are very similar in this respect. 
+ Where aldehydes and ketones differ 
+ An aldehyde differs from a ketone by having a hydrogen atom attached to the carbonyl group. This makes the aldehydes very easy to oxidise. 
+ For example, ethanal, CH 3 CHO, is very easily oxidised to either ethanoic acid, CH 3 COOH, or ethanoate ions, CH 3 COO - . 
+ Ketones don't have that hydrogen atom and are resistant to oxidation. They are only oxidised by powerful oxidising agents which have the ability to break carbon-carbon bonds. 
+ You will find the oxidation of aldehydes and ketones discussed if you follow a link from the aldehydes and ketones menu (see the bottom of this page). 
+ 
+ 
+ 
+ 
+ Physical properties 
+ 
+ Boiling points 
+ Methanal is a gas (boiling point -21&deg;C), and ethanal has a boiling point of +21&deg;C. That means that ethanal boils at close to room temperature. 
+ The other aldehydes and the ketones are liquids, with boiling points rising as the molecules get bigger. 
+ The size of the boiling point is governed by the strengths of the intermolecular forces. 
+ van der Waals dispersion forces 
+ These attractions get stronger as the molecules get longer and have more electrons. That increases the sizes of the temporary dipoles that are set up. This is why the boiling points increase as the number of carbon atoms in the chains increases - irrespective of whether you are talking about aldehydes or ketones. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you aren't happy about intermolecular forces (particularly van der Waals dispersion forces and dipole-dipole interactions) then you really ought to follow this link before you go on. 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ van der Waals dipole-dipole attractions 
+ Both aldehydes and ketones are polar molecules because of the presence of the carbon-oxygen double bond. As well as the dispersion forces, there will also be attractions between the permanent dipoles on nearby molecules. 
+ That means that the boiling points will be higher than those of similarly sized hydrocarbons - which only have dispersion forces. 
+ It is interesting to compare three similarly sized molecules. They have similar lengths, and similar (although not identical) numbers of electrons. 
+ 
+ 
+ molecule type boiling point (&deg;C) 
+ CH 3 CH 2 CH 3 alkane -42 
+ CH 3 CHO aldehyde +21 
+ CH 3 CH 2 OH alcohol +78 
+ 
+ 
+ 
+ 
+ Notice that the aldehyde (with dipole-dipole attractions as well as dispersion forces) has a boiling point higher than the similarly sized alkane which only has dispersion forces. 
+ However, the aldehyde's boiling point isn't as high as the alcohol's. In the alcohol, there is hydrogen bonding as well as the other two kinds of intermolecular attraction. 
+ Although the aldehydes and ketones are highly polar molecules, they don't have any hydrogen atoms attached directly to the oxygen, and so they can't hydrogen bond with each other. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you aren't sure about hydrogen bonding then it would be a good idea to follow this link before you go on. 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Solubility in water 
+ The small aldehydes and ketones are freely soluble in water but solubility falls with chain length. For example, methanal, ethanal and propanone - the common small aldehydes and ketones - are miscible with water in all proportions. 
+ The reason for the solubility is that although aldehydes and ketones can't hydrogen bond with themselves, they can hydrogen bond with water molecules. 
+ One of the slightly positive hydrogen atoms in a water molecule can be sufficiently attracted to one of the lone pairs on the oxygen atom of an aldehyde or ketone for a hydrogen bond to be formed. 
+ 
+ There will also, of course, be dispersion forces and dipole-dipole attractions between the aldehyde or ketone and the water molecules. 
+ Forming these attractions releases energy which helps to supply the energy needed to separate the water molecules and aldehyde or ketone molecules from each other before they can mix together. 
+ As chain lengths increase, the hydrocarbon &quot;tails&quot; of the molecules (all the hydrocarbon bits apart from the carbonyl group) start to get in the way. 
+ By forcing themselves between water molecules, they break the relatively strong hydrogen bonds between water molecules without replacing them by anything as good. This makes the process energetically less profitable, and so solubility decreases. 
+ 
+ 
+ 
+ 
+ 
+ Questions to test your understanding 
+ If this is the first set of questions you have done, please read the introductory page before you start. You will need to use the BACK BUTTON on your browser to come back here afterwards. 
+ questions on the introduction to aldehydes and ketones 
+ answers 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Where would you like to go now? 
+ To the aldehydes and ketones menu . . . 
+ To the menu of other organic compounds . . . 
+ To Main Menu . . . 
+ 
+ 
+ 
+ 
+ 
+ &copy; Jim Clark 2003 (modified November 2015) 
+ 
+ 
+ 
+ 
+ 

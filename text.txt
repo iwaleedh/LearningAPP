@@ -1,0 +1,31 @@
+        html: 'CH₃COCl + (CH₃)₂NH → CH₃CON(CH₃)₂ + HCl↑<br/><span style="font-size:0.9em;color:#6b7280">Ethanoyl chloride + dimethylamine → N,N-dimethylethanamide + HCl</span>',
+        caption: 'Acyl chloride + secondary amine → N,N-disubstituted amide. The single N–H is lost; both CH₃ groups remain on nitrogen.'
+      }
+    },
+
+    // Summary table for 4 reactions
+    {
+      id: 'table-acyl-summary',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Reaction', 'Reagent', 'Main product', 'Co-product(s)'],
+        rows: [
+          ['① + Water', 'H₂O (cold)', 'Carboxylic acid (R–COOH)', 'HCl↑ (misty fumes)'],
+          ['② + Alcohol', 'R′–OH', 'Ester (R–COO–R′)', 'HCl↑ (misty fumes)'],
+          ['③ + Ammonia', 'conc. NH₃', 'Primary amide (R–CONH₂)', 'HCl → reacts with NH₃ → NH₄Cl'],
+          ['④ + Primary amine', 'R′–NH₂', 'N-substituted amide (R–CO–NHR′)', 'HCl↑'],
+          ['④ + Secondary amine', 'R′₂NH', 'N,N-disubstituted amide (R–CO–NR′₂)', 'HCl↑'],
+          ['Tertiary amine R′₃N', '—', 'No reaction', '(no N–H to remove)']
+        ],
+        caption: 'All four acyl chloride reactions — HCl is ALWAYS produced. No mechanisms required for IAL exam. Learn reagent + product for each.'
+      }
+    },
+
+    // ════════════════════════════════════════════════════════════════════════
+    // PART 2 — ESTERS
+    // ════════════════════════════════════════════════════════════════════════
+
+    {
+      id: 'h-esters',
+      type: 'heading',
+      data: { text: 'Part 2: Esters', level: 2 }

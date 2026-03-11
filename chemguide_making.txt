@@ -1,0 +1,206 @@
+
+<html>
+<head>
+<title>making alkenes in the lab</title>
+
+<meta name="description"
+content="Lab preparations of alkenes by the dehydration of alcohols" />
+<meta name="keywords"
+content="alkenes, making, preparation, dehydration, sulphuric, phosphoric, acid, catalyst, alcohol, ethanol, cyclohexene, cyclohexanol" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>MAKING ALKENES IN THE LAB</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page looks at ways of preparing alkenes in the lab by the dehydration of alcohols.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Dehydration of alcohols using aluminium oxide as catalyst</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b>The dehydration of ethanol to give ethene</b></p>
+
+<p>This is a simple way of making gaseous alkenes like ethene.  If ethanol vapour is passed over heated aluminium oxide powder, the ethanol is essentially cracked to give ethene and water vapour.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="al2o3eqtn.gif" width="272" height="30" /></p>
+
+<p>To make a few test tubes of ethene, you can use this apparatus:</p>
+<pre>
+
+</pre>
+<p align="center"><img src="etheneprep.gif" width="363" height="148" /></p>
+
+<p>It wouldn't be too difficult to imagine scaling this up by boiling some ethanol in a flask and passing the vapour over aluminium oxide heated in a long tube.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Dehydration of alcohols using an acid catalyst</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>The acid catalysts normally used are either concentrated sulphuric acid or concentrated phosphoric(V) acid, H<sub>3</sub>PO<sub>4</sub>.</p>
+
+<p>Concentrated sulphuric acid produces messy results.  Not only is it an acid, but it is also a strong oxidising agent.  It oxidises some of the alcohol to carbon dioxide and at the same time is reduced itself to sulphur dioxide.  Both of these gases have to be removed from the alkene.</p>
+
+<p>It also reacts with the alcohol to produce a mass of carbon.  There are other side reactions as well, but these aren't required by any current UK A level (or equivalent) syllabus.</p>
+<pre>
+
+</pre>
+<p><b>The dehydration of ethanol to give ethene</b></p>
+
+<p>Ethanol is heated with an excess of concentrated sulphuric acid at a temperature of 170&deg;C.  The gases produced are passed through sodium hydroxide solution to remove the carbon dioxide and sulphur dioxide produced from side reactions.</p>
+
+<p>The ethene is collected over water.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#ff0000" face="Helvetica, Arial"size="2">
+<p><hr /><b>WARNING! &nbsp;</b>This is potentially an extremely dangerous preparation because of the close proximity of the very hot concentrated sulphuric acid and the sodium hydroxide solution.  I knew of one chemistry teacher who put several students into hospital by getting it wrong!  That was many years ago before safety was taken quite so seriously as it is now.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><img src="padding.gif" width="40" height="15" /><img src="h2so4cat.gif" width="307" height="29" /></p>
+
+<p>The concentrated sulphuric acid is a catalyst.  Write it over the arrow rather than in the equation.</p>
+
+<pre>
+
+</pre>
+<p><b>The dehydration of cyclohexanol to give cyclohexene</b></p>
+
+<p>This is a preparation commonly used at this level to illustrate the formation and purification of a liquid product.  The fact that the carbon atoms happen to be joined in a ring makes no difference whatever to the chemistry of the reaction.</p>
+
+<p>Cyclohexanol is heated with concentrated phosphoric(V) acid and the liquid cyclohexene distils off and can be collected and purified.</p>
+
+<p>Phosphoric(V) acid tends to be used in place of sulphuric acid because it is safer and produces a less messy reaction.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="h3po4cat.gif" width="352" height="115" /></p>
+
+
+
+
+<pre>
+
+</pre>
+<p><b>The dehydration of more complicated alcohols</b></p>
+
+<p>You have to be wary with more complicated alcohols in case there is the possibility of more than one alkene being formed.  Butan-2-ol is a good example of this, with no less than three different alkenes being formed when it is dehydrated.</p>
+
+<p>Butan-2-ol is just an example to illustrate the problems.  It is important that you understand it so that you can work out what will happen in similar cases.  It would be quite impossible for you to learn what happens with every single alcohol you might be presented with.</p>
+
+<p>When you dehydrate an alcohol, you remove the -OH group, and a hydrogen atom from the next carbon atom in the chain.  With molecules like butan-2-ol, there are two possibilities when that happens.</p>
+
+<p align="center"><img src="complex1.gif" width="271" height="163" /></p>
+
+<p>That leads to these products:</p>
+
+<p align="center"><img src="complex2.gif" width="344" height="136" /></p>
+
+<p>The products are but-1-ene, CH<sub>2</sub>=CHCH<sub>2</sub>CH<sub>3</sub>, and but-2-ene, CH<sub>3</sub>CH=CHCH<sub>3</sub>.</p>
+
+<p>In fact the situation is even more complicated than it looks, because
+but-2-ene exhibits geometric isomerism.  You get a mixture of two isomers formed - <i>cis</i>-but-2-ene and <i>trans</i>-but-2-ene.</p>
+
+<p align="center"><img src="cisandtrans.GIF" width="240" height="93" /></p>
+
+<p><i>Cis</i>-but-2-ene is also known as (Z)-but-2-ene; <i>trans</i>-but-2-ene is also known as (E)-but-2-ene.  For an explanation of the two ways of naming these two compounds, follow the link in the box below.</p>
+
+<p>Which isomer gets formed is just a matter of chance.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Geometric isomerism:  &nbsp;</b>Isomerism is where you can draw more than one arrangement of the atoms for a given molecular formula.  Geometric isomerism is a special case of this involving molecules which have restricted rotation around one of the bonds - in this case, a carbon-carbon double bond.  The C=C bond could only rotate if enough energy is put in to break the pi bond.  Effectively, except at high temperatures, the C=C bond is "locked".</p>
+
+<p>In the case of but-2-ene, the two CH<sub>3</sub> groups will either both be locked on one side of the C=C (to give the cis or (Z) isomer), or on opposite sides (to give the trans or (E) one).</p>
+
+<p>For a full discussion of <a href="../../basicorg/isomerism/geometric.html#top">geometric isomerism</a> follow this link.  Use the BACK button on your browser to return to this page.</p>
+
+</font>
+
+<font color="#FF0000" face="Helvetica, Arial" size="2">
+<p><b>Beware!  &nbsp;</b>It is easy to miss geometric isomers in an exam.  Always draw alkenes with the correct 120&deg; bond angles around the C=C bond as shown in the diagrams for the cis and trans isomers above.  If you take a short cut and write but-2-ene as CH<sub>3</sub>CH=CHCH<sub>3</sub>, you will almost certainly miss the fact that cis and trans forms are possible.</p>
+
+<p>This is a rich source of questions in an exam.  You could easily throw away marks if you miss these possibilities.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b><i>The overall result</i></b></p>
+
+<p>Dehydration of butan-2-ol leads to a mixture containing:</p>
+
+<ul>
+<li><p>but-1-ene</p></li>
+<li><p>cis-but-2-ene (also known as (Z)-but-2-ene)</p></li>
+<li><p>trans-but-2-ene (also known as (E)-but-2-ene)</p></li>
+</ul>
+</font>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-alkenesmaking.pdf">questions on making alkenes</a></p>
+<p><a href="../questions/a-alkenesmaking.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../alkenemenu.html#top"><b>To the alkenes menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (last modified August 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

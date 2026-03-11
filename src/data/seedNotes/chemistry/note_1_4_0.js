@@ -90,6 +90,41 @@ export const note_chemistry_1_4_0 = {
       terms: ['Empirical formula', 'Molecular formula', 'Structural formula', 'Displayed formula', 'Skeletal formula']
     },
     {
+      id: 'callout-displayed-limits',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Limitations of Displayed Formulae',
+        text: 'A displayed formula is drawn flat with 90° bond angles on paper, which bears no resemblance to the actual 3D shape of the molecule (e.g. tetrahedral with 109.5° angles). This can be misleading: drawing a CH₃ branch pointing "up", "down", or at the "end" might look like different isomers on paper, but they are often exactly the same molecule just rotated.'
+      },
+      terms: []
+    },
+    {
+      id: 'p-structural-convention',
+      type: 'paragraph',
+      data: { text: 'To avoid confusion when drawing <strong>structural formulae</strong>, the convention is to always find the longest continuous chain of carbon atoms and draw it horizontally. Any side-groups or branches are then written "hanging off" this main carbon chain.' },
+      terms: []
+    },
+    {
+      id: 'p-3d',
+      type: 'paragraph',
+      data: { text: '<strong>Drawing 3D Structures:</strong> When the exact 3D stereochemical arrangement around a carbon atom is important, conventional symbols are used to show bonds entering or leaving the 2D plane of the paper:' },
+      terms: []
+    },
+    {
+      id: 'list-3d',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Straight line:</strong> A bond in the plane of the paper/screen.',
+          '<strong>Solid wedge:</strong> A bond coming out of the paper towards you.',
+          '<strong>Hashed (dotted) wedge:</strong> A bond going into the paper away from you.'
+        ]
+      },
+      terms: []
+    },
+    {
       id: 'svg-formula',
       type: 'svg',
       data: {
@@ -167,6 +202,19 @@ export const note_chemistry_1_4_0 = {
       terms: ['Homolytic fission', 'Heterolytic fission', 'Free radical']
     },
     {
+      id: 'list-curlies',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Curly Arrows:</strong> Used to show the movement of electrons during organic reaction mechanisms.',
+          '<strong>Full-headed arrows:</strong> Show the movement of an <strong>electron pair</strong>. The arrow must start from a lone pair or a covalent bond and point to exactly where the electron pair is moving.',
+          '<strong>Half-headed (fish-hook) arrows:</strong> Show the movement of a <strong>single electron</strong>. They are used in radical mechanisms (like homolytic fission).'
+        ]
+      },
+      terms: ['Curly arrow', 'Fish-hook arrow']
+    },
+    {
       id: 'callout-electrophile',
       type: 'callout',
       data: {
@@ -199,6 +247,7 @@ export const note_chemistry_1_4_0 = {
       { id: 'c1', blockId: 'table-terms', prompt: 'Define the terms: saturated, unsaturated, functional group, and homologous series.' },
       { id: 'c2', blockId: 'callout-homologous', prompt: 'State four characteristics that all members of the same homologous series share.' },
       { id: 'c3', blockId: 'table-formula', prompt: 'Explain the difference between molecular, structural, displayed, and skeletal formulas.' },
+      { id: 'c6', blockId: 'list-3d', prompt: 'How are 3D stereochemical bond arrangements drawn on paper?' },
       { id: 'c4', blockId: 'callout-breaking', prompt: 'Distinguish between homolytic and heterolytic fission. What is formed in each case?' },
       { id: 'c5', blockId: 'callout-risk', prompt: 'Explain the difference between a hazard and a risk, and give two examples of control measures.' }
     ],

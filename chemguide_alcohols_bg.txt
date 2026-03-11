@@ -1,0 +1,312 @@
+
+<html>
+<head>
+<title>an introduction to alcohols</title>
+
+<meta name="description"
+content="Background on the alcohols, including their physical properties" />
+<meta name="keywords"
+content="alcohols, primary, secondary, tertiary, physical, properties, solubility, boiling points" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>INTRODUCING ALCOHOLS</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page explains what alcohols are, and  what the difference is between primary, secondary and tertiary alcohols.  It looks in some detail at their simple physical properties  such as solubility and boiling points.  Details of the chemical reactions of alcohols are described on separate pages.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>What are alcohols?</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Examples</b></p>
+
+<p>Alcohols are compounds in which one or more hydrogen atoms in an alkane have been replaced by an -OH group.  For the purposes of UK A level, we will only look at compounds containing one -OH group.</p>
+
+<p>For example:</p>
+
+<p align="center"><img src="ohexamples.gif" width="353" height="79"></p>
+
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you aren't confident about <a href="../../basicorg/conventions/names.html#top">naming organic compounds</a>, then you really ought to follow this link before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>The different kinds of alcohols</b></p>
+
+<p>Alcohols fall into different classes depending on how the -OH group is positioned on the chain of carbon atoms.  There are some chemical differences between the various types.</p>
+
+<p><b><i>Primary alcohols</i></b></p>
+
+<p>In a primary (1&deg;) alcohol, the carbon which carries the -OH group is only attached to one alkyl group.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>An alkyl group is a group such as methyl, CH<sub>3</sub>, or  ethyl, CH<sub>3</sub>CH<sub>2</sub>. These are groups containing chains of carbon atoms which may be branched.  Alkyl groups are  given the general symbol <b>R.</b><br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+<font color="#000000" face="Arial, Helvetica" size="3">
+
+<p>Some examples of primary alcohols include:</p> 
+<pre>
+
+</pre>
+
+<p align="center"><img src="primary.gif" width="398" height="61" /></p>
+<pre>
+
+</pre>
+<p>Notice that it doesn't matter how complicated the attached alkyl group is.  In each case there is only <b><i>one linkage</i></b> to an alkyl group from the CH<sub>2</sub> group holding the -OH group.</p>
+
+<p>There is an exception to this.  Methanol, CH<sub>3</sub>OH, is counted as a primary alcohol even though there are <b><i>no</i></b> alkyl groups attached to the carbon with the -OH group on it.</p>
+
+<p><b><i>Secondary alcohols</i></b></p>
+
+<p>In a secondary (2&deg;) alcohol, the carbon with the -OH group attached is joined directly to <b><i>two</i></b> alkyl groups, which may be the same or different.</p>
+
+<p>Examples:</p>
+
+<p align="center"><img src="secondary.gif" width="389" height="80" /></p>
+<pre>
+
+</pre>
+<p><b><i>Tertiary alcohols</i></b></p>
+
+<p>In a tertiary (3&deg;) alcohol, the carbon atom holding the -OH group is attached directly to <b><i>three</i></b> alkyl groups, which may be any combination of same or different.</p>
+
+<p>Examples:</p>
+
+<p align="center"><img src="tertiary.gif" width="262" height="96" /></p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Physical properties of alcohols</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Boiling Points</b></p>
+
+<p>The chart shows the boiling points of some simple primary alcohols  with up to 4 carbon atoms.</p>
+
+<p>They are:</p>
+
+<p align="center"><img src="primary2.gif" width="410" height="42" /></p>
+<pre>
+
+</pre>
+<p>They are compared with the equivalent alkane (methane to butane) with the same number of carbon atoms.</p>
+
+<p align="center"><img src="bptsprim.gif" width="363" height="224" /></p>
+
+<p>Notice that:</p>
+
+<ul>
+<li><p>The boiling point of an alcohol is always much higher than that of the alkane with the same number of carbon atoms.</p></li>
+
+<li><p>The boiling points of the alcohols increase as the number of carbon atoms increases.</p></li>
+</ul>
+
+<p>The patterns in boiling point reflect the patterns in intermolecular attractions.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you aren't happy about <a href="../../atoms/bonding/vdw.html#top">intermolecular forces</a> (including van der Waals dispersion forces and hydrogen bonds) then you really ought to follow this link before you go on.  The next bit won't make much sense to you if you aren't familiar with the various sorts of intermolecular forces.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b><i>Hydrogen bonding</i></b></p>
+
+<p>Hydrogen bonding occurs between molecules where you have a hydrogen atom attached to one of the very electronegative elements - fluorine, oxygen or nitrogen.</p>
+
+<p>In the case of alcohols, there are hydrogen bonds set up between the slightly positive hydrogen atoms and lone pairs on oxygens in other molecules.</p>
+
+<p align="center"><img src="rohhbond.gif" width="215" height="180" /></p>
+
+<p>The hydrogen atoms are slightly positive because the bonding electrons are pulled away from them towards the very electronegative oxygen atoms.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you want to be fussy, the diagram is slightly misleading in that it suggests that all of the lone pairs on the oxygen atoms are forming hydrogen bonds.  In an alcohol that can't happen.  Taking the alcohol as a whole, there are only half as many slightly positive hydrogen atoms as there are lone pairs.  At any one time, half of the lone pairs in the total liquid alcohol won't have hydrogen bonds from them because there aren't enough slightly positive hydrogens to go around.</p>
+
+<p>In the diagram, to show the 3-dimensional arrangement, the wedge-shaped lines show bonds coming out of the screen or paper towards you.  The dotted bonds (other than the hydrogen bonds) show bonds going back into the screen or paper away from you.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>In alkanes, the only intermolecular forces are van der Waals dispersion forces.  Hydrogen bonds are much stronger than these and therefore it takes more energy to separate alcohol molecules than it does to separate alkane molecules.</p>
+
+<p>That's the main reason that the boiling points are higher.</p>
+<pre>
+
+</pre>
+<p><b><i>The effect of van der Waals forces . . .</i></b></p>
+
+<p><i>. . . on the boiling points of the alcohols:</i></p>
+
+<p>Hydrogen bonding isn't the only intermolecular force in alcohols.  There are also van der Waals dispersion forces and dipole-dipole interactions.</p>
+
+<p>The hydrogen bonding and the dipole-dipole interactions will be much the same for all the alcohols, but the dispersion forces will increase as the alcohols get bigger.</p>
+
+<p>These attractions get stronger as the molecules get longer and have more electrons.  That increases the sizes of the temporary dipoles that are set up.</p>
+
+<p>This is why the boiling points increase as the number of carbon atoms in the chains increases.  It takes more energy to overcome the dispersion forces, and so the boiling points rise.</p>
+
+<p><i>. . . on the comparison between alkanes and alcohols:</i></p>
+
+<p>Even if there wasn't any hydrogen bonding or dipole-dipole interactions, the boiling point of the alcohol would be higher than the corresponding alkane with the same number of carbon atoms.</p>
+
+<p>Compare ethane and ethanol:</p>
+
+<p align="center"><img src="anevol.gif" width="204" height="55" /></p>
+
+<p>Ethanol is a longer molecule, and the oxygen brings with it an extra 8 electrons.  Both of these will increase the size of the van der Waals dispersion forces and so the boiling point.</p>
+
+<p>If you were doing a really fair comparison to show the effect of the hydrogen bonding on boiling point it would be better to compare ethanol with propane rather than ethane.  The length would then be much the same, and the number of electrons is exactly the same.</p>
+<pre>
+
+</pre>
+<p><b>Solubility of alcohols in water</b></p>
+
+<p>The small alcohols are completely soluble in water.  Whatever proportions you mix them in, you will get a single solution.</p>
+
+<p>However, solubility falls as the length of the hydrocarbon chain in the alcohol increases.  Once you get to four carbons and beyond, the fall in solubility is noticeable, and you may well end up with two layers in your test tube.</p>
+
+<p><b><i>The solubility of the small alcohols in water</i></b></p>
+
+<p>Consider ethanol as a typical small alcohol.  In both pure water and pure ethanol the main intermolecular attractions are hydrogen bonds.</p>
+
+<p align="center"><img src="mixture1.gif" width="376" height="156" /></p>
+
+<p>In order to mix the two, you would have to break the hydrogen bonds between the water molecules and the hydrogen bonds between the ethanol molecules.  It needs energy to do both of these things.</p>
+
+<p>However, when the molecules are mixed, new hydrogen bonds are made between water molecules and ethanol molecules.</p>
+
+<p align="center"><img src="mixture2.gif" width="379" height="236" /></p>
+
+<p>The energy released when these new hydrogen bonds are made more or less compensates for that needed to break the original ones.</p>
+
+<p>In addition, there is an increase in the disorder of the system - an increase in entropy.  That is another factor in deciding whether things happen or not.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you haven't come across entropy before, don't worry about it.  I mention it because the energy released when the new bonds are made isn't quite enough to compensate for breaking the old ones, meaning that the mixing process is endothermic.  If it weren't for the increase in entropy, the solution wouldn't be formed.</p>
+
+<p>To really understand this, you need to have studied entropy and free energy.  If you should know about this, but aren't happy about the calculations involved, you might like to have a look at chapter 11 of my <a href="../../book.html#top">chemistry calculations book</a>.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b><i>The lower solubility of bigger alcohols</i></b></p>
+
+<p>Imagine what happens when you have got, say, 5 carbon atoms in each alcohol molecule.</p>
+
+<p align="center"><img src="mixture3.gif" width="189" height="209" /></p>
+
+<p>The hydrocarbon chains are forcing their way between water molecules and so breaking hydrogen bonds between those water molecules.</p>
+
+<p>The -OH end of the alcohol molecules can form new hydrogen bonds with water molecules, but the hydrocarbon &quot;tail&quot; doesn't form hydrogen bonds</p>
+
+<p>That means that quite a lot of the original hydrogen bonds being broken aren't replaced by new ones.</p>
+
+<p>All you get in place of those original hydrogen bonds are van der Waals dispersion forces between the water and the hydrocarbon &quot;tails&quot;.  These attractions are much weaker.  That means that you don't get enough energy back to compensate for the hydrogen bonds being broken.  Even allowing for the increase in disorder, the process becomes less feasible.</p>
+
+<p>As the length of the alcohol increases, this situation just gets worse, and so the solubility falls.</p>
+</font>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-alcoholsintro.pdf">questions on the introduction to alcohols</a></p>
+<p><a href="../questions/a-alcoholsintro.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../alcoholmenu.html#top"><b>To the alcohols menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (modified October 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

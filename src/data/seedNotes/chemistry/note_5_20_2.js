@@ -20,6 +20,18 @@ export const note_chemistry_5_20_2 = {
       }
     },
     {
+      id: 'h-nitrile-background',
+      type: 'heading',
+      data: { text: 'Nitriles: Background and Properties', level: 3 }
+    },
+    {
+      id: 'p-nitrile-background',
+      type: 'paragraph',
+      data: {
+        text: 'Nitriles contain the −C≡N functional group. The carbon atom in the nitrile group is always counted as the number 1 carbon when determining the longest carbon chain (e.g., CH₃CN is ethanenitrile). Nitriles are very polar molecules with high boiling points compared to alkanes of similar size due to strong permanent dipole-dipole attractions. However, their boiling points remain lower than equivalent alcohols, which can form hydrogen bonds. Small nitriles are colourless liquids at room temperature.'
+      }
+    },
+    {
       id: 'list-nitrile-pathway',
       type: 'list',
       data: {
@@ -60,6 +72,13 @@ export const note_chemistry_5_20_2 = {
       }
     },
     {
+      id: 'p-nitrile-amine-alt',
+      type: 'paragraph',
+      data: {
+        text: 'Alternatively, nitriles can be reduced to primary amines using hydrogen gas and a metal catalyst (such as nickel or palladium) at higher temperatures and pressures. This catalytic hydrogenation is often preferred in industry because it avoids the use of expensive and hazardous LiAlH₄.'
+      }
+    },
+    {
       id: 'callout-nitrile-amine-worked',
       type: 'callout',
       data: {
@@ -85,7 +104,7 @@ export const note_chemistry_5_20_2 = {
       id: 'p-nitrile-acid',
       type: 'paragraph',
       data: {
-        text: 'Nitriles can be hydrolysed to carboxylic acids using aqueous acid (HCl or H₂SO₄) under reflux (heating). The nitrile triple bond is broken, water adds, and ammonia is released. This provides a route to carboxylic acids from alkyl halides, with +1 carbon extension. Alternatively, alkaline hydrolysis (NaOH/H₂O, heat) gives the carboxylate salt, which is then acidified.'
+        text: 'Nitriles can be hydrolysed to carboxylic acids using aqueous acid (HCl or H₂SO₄) under reflux (heating). The nitrile triple bond is broken, water adds, and ammonia is released. This provides a route to carboxylic acids from alkyl halides, with +1 carbon extension. Alternatively, alkaline hydrolysis using sodium hydroxide solution (NaOH/H₂O) under reflux produces the sodium carboxylate salt and ammonia gas. To obtain the free carboxylic acid, a strong acid like dilute hydrochloric acid must be added in a separate subsequent step.'
       }
     },
     {
@@ -186,11 +205,10 @@ export const note_chemistry_5_20_2 = {
       data: {
         style: 'bullet',
         items: [
-          { text: 'Formed by reacting a haloalkane (usually bromoalkane, RBr) with magnesium metal in DRY ETHER under reflux' },
+          { text: 'Formed by reacting a haloalkane (usually bromoalkane, RBr) with magnesium metal in DRY ETHER under reflux. Ether (ethoxyethane) is extremely flammable and volatile (boils at 34.5°C), so heating must be done carefully over a water bath.' },
           { text: 'Reaction: RBr + Mg → RMgBr (Grignard reagent)' },
-          { text: 'Dry ether is essential as the solvent — Grignard reagents react violently with water (and any protic solvent)' },
-          { text: 'The Mg−C bond in RMgBr is COVALENT (unusual — we don\'t usually think of metals forming covalent bonds with carbon)' },
-          { text: 'The δ− charge on C makes it an excellent nucleophile — it attacks electron-deficient carbonyl carbons (C=O)' }
+          { text: 'Dry ether is essential as the solvent (strictly anhydrous conditions) — Grignard reagents react violently with water to produce ALKANES (e.g. RMgBr + H₂O → RH + Mg(OH)Br). Any moisture will destroy the reagent before it can be used.' },
+          { text: 'The Mg−C bond is highly polar. Carbon is more electronegative than magnesium, pulling electrons towards itself to gain a slight negative charge (δ−). This makes the carbon atom an excellent NUCLEOPHILE.' }
         ]
       }
     },
@@ -303,7 +321,7 @@ export const note_chemistry_5_20_2 = {
           { text: 'I can write the SN2 mechanism for RBr + KCN → RCN', checked: false },
           { text: 'I know nitriles add +1 carbon to a chain', checked: false },
           { text: 'I can reduce a nitrile to primary amine using LiAlH₄ in dry ether', checked: false },
-          { text: 'I can hydrolyse a nitrile to carboxylic acid under acid conditions (reflux)', checked: false },
+          { text: 'I can hydrolyse a nitrile to carboxylic acid under acid conditions (reflux) or alkaline conditions followed by acidification', checked: false },
           { text: 'I know KMnO₄ oxidises aromatic side chains to carboxylic acids', checked: false },
           { text: 'I can form a Grignard reagent: RBr + Mg (dry ether, reflux) → RMgBr', checked: false },
           { text: 'Grignard + CO₂ + dilute acid → carboxylic acid', checked: false },
@@ -339,8 +357,9 @@ export const note_chemistry_5_20_2 = {
     enabled: true,
     cues: [
       { id: 'cue-1', blockId: 'p-nitrile-intro', prompt: 'Write the equation for forming a nitrile from a primary alkyl bromide using KCN. Why is ethanol preferred as solvent?' },
-      { id: 'cue-2', blockId: 'eq-nitrile-acid', prompt: 'How is a nitrile hydrolysed to a carboxylic acid? What are the reagents and conditions?' },
+      { id: 'cue-2', blockId: 'eq-nitrile-acid', prompt: 'Compare acidic and alkaline hydrolysis of a nitrile. What are the intermediate salts formed in each pathway before the free acid is obtained?' },
       { id: 'cue-3', blockId: 'eq-grignard-formation', prompt: 'How is a Grignard reagent formed? Write the equation and state the conditions required.' },
+      { id: 'cue-3b', blockId: 'list-grignard-formation', prompt: 'Why must Grignard reagents be prepared under strictly anhydrous conditions? What product forms if they react with water?' },
       { id: 'cue-4', blockId: 'table-grignard-products', prompt: 'What product forms when a Grignard reagent reacts with (a) CO₂, (b) methanal (HCHO), (c) an aldehyde, (d) a ketone — in each case after adding dilute acid?' },
       { id: 'cue-5', blockId: 'list-methanol-ethanol-steps', prompt: 'Outline the 4-step synthesis of ethanol from methanol, including reagents and conditions for each step.' }
     ],

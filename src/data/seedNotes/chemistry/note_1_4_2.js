@@ -56,6 +56,16 @@ export const note_chemistry_1_4_2 = {
         text: 'For C₅H₁₂ there are <strong>3 chain isomers</strong>:<br/><br/>1. <strong>Pentane:</strong> CH₃CH₂CH₂CH₂CH₃ (straight chain)<br/>2. <strong>2-Methylbutane:</strong> CH₃CH(CH₃)CH₂CH₃<br/>3. <strong>2,2-Dimethylpropane:</strong> C(CH₃)₄<br/><br/>Boiling points decrease as branching increases (less contact area → weaker London forces): pentane (36°C) > 2-methylbutane (28°C) > 2,2-dimethylpropane (10°C)'
       },
       terms: []
+    },
+    {
+      id: 'callout-drawing-tips',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Tips for Drawing Isomers in Exams',
+        text: '• <strong>Avoid duplicates:</strong> Be careful not to draw twisted or flipped versions of the same molecule. A bent chain is still the same continuous main chain! Always check the IUPAC name — if it is the same, it is the same molecule.<br/>• <strong>Combine isomer types:</strong> You aren\'t restricted to finding just chain <em>or</em> position isomers. You will often need a mixture of both. For example, breaking up a 4-carbon chain into a 3-carbon branched chain AND moving the position of a functional group.<br/>• <strong>Consider rings and unusual groups:</strong> When drawing functional group isomers, remember that rings (e.g., cycloalkanes vs alkenes) are possible, or combinations like a C=C double bond plus an -OH group (an enol) instead of a simple aldehyde or ketone.'
+      },
+      terms: []
     }
   ],
   recall: {
@@ -63,9 +73,10 @@ export const note_chemistry_1_4_2 = {
     cues: [
       { id: 'c1', blockId: 'callout-def', prompt: 'Define structural isomers.' },
       { id: 'c2', blockId: 'table-types', prompt: 'State and define the three types of structural isomerism, giving one example of each.' },
-      { id: 'c3', blockId: 'callout-example-c5h12', prompt: 'Draw and name all three structural isomers of C₅H₁₂. Explain why their boiling points differ.' }
+      { id: 'c3', blockId: 'callout-example-c5h12', prompt: 'Draw and name all three structural isomers of C₅H₁₂. Explain why their boiling points differ.' },
+      { id: 'c4', blockId: 'callout-drawing-tips', prompt: 'What are three key tips to remember when drawing structural isomers in an exam?' }
     ],
-    summaryText: 'Structural isomers = same molecular formula, different structural arrangement. Three types: chain (different branching), positional (different position of functional group), functional group (different functional group entirely). Increased branching → lower bp due to weaker London forces.',
+    summaryText: 'Structural isomers = same molecular formula, different structural arrangement. Three types: chain (different branching), positional (different position of functional group), functional group (different functional group entirely). Increased branching → lower bp due to weaker London forces. When drawing isomers, avoid twisted duplicates, combine chain and positional changes, and remember cyclic/unusual group options.',
     ready: false
   },
   evidence: []

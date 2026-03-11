@@ -1,0 +1,260 @@
+
+
+
+acyl chlorides and water, alcohols or phenol
+
+
+
+
+
+
+
+
+
+
+
+
+
+THE REACTION OF ACYL CHLORIDES WITH WATER, ALCOHOLS AND PHENOL
+
+
+
+
+This page looks at the reactions of acyl chlorides (acid chlorides) with water, alcohols and phenol.  These reactions are all considered together because their chemistry is so similar.
+
+
+
+
+
+Similarities between the reactions
+
+
+Comparing  the structures of water, ethanol and phenol
+
+Each substance contains an -OH group.  In water, this is attached to a hydrogen atom.  In an alcohol, it is attached to an alkyl group - shown in the diagrams below as &quot;R&quot;.  In phenol, it is attached to a benzene ring.  Phenol is C6H5OH.
+
+
+
+
+
+
+
+Note: &nbsp;If you aren't sure about using this symbol for a benzene ring, you could follow this link to find out all about it.  It is likely to take you some time, though, and you may have to visit several other pages as well.
+
+It isn't particularly important in the context of the current page.  All you need to know is that at each corner of the hexagon there is a carbon atom, together with a hydrogen atom apart from where the  -OH group is attached.
+
+If you choose to follow the link, use the BACK button (or the HISTORY file or GO menu) on your browser to return to this page.
+
+
+
+
+
+
+
+
+
+What happens when these react with an acyl chloride?
+
+We'll take ethanoyl chloride as typical of the acyl chlorides.  For UK A level purposes, it is the one you are most likely to be asked about anyway.
+
+Taking a general case of a reaction between ethanoyl chloride and a compound X-O-H (where X is hydrogen, or an alkyl group or a benzene ring):
+
+
+
+So . . . in each case, hydrogen chloride gas is produced - the hydrogen coming from the -OH  group, and the chlorine from the ethanoyl chloride.  Everything left over just gets joined together.
+
+
+
+
+
+Note: &nbsp;If you are interested in exploring the general mechanism for these reactions, you will find it by following this link to another part of the site dealing with nucleophilic addition-elimination reactions.
+
+Use the BACK button on your browser to return to this page.
+
+
+
+
+
+
+
+
+
+
+
+The individual reactions
+
+
+The reaction with water
+
+Modifying the general equation we've just looked at, you will see that you will get ethanoic acid produced together with hydrogen chloride gas.
+
+
+
+This is more usually (and more easily!) written as:
+
+
+
+Adding an acyl chloride to water produces the corresponding carboxylic acid together with steamy acidic fumes of hydrogen chloride.  The reaction is usually extremely vigorous at room temperature.
+
+
+
+
+
+Note: &nbsp;If you are want the mechanism for this reaction, you will find it by following this link to another part of the site dealing with nucleophilic addition-elimination reactions.
+
+Use the BACK button on your browser to return to this page.
+
+
+
+
+
+
+
+
+
+
+
+
+The reaction with alcohols
+
+We'll start by taking the general case of any alcohol reacting with ethanoyl chloride.  The equation would be:
+
+
+
+The organic product this time is an ester.  For example, with ethanol you would get the ester ethyl ethanoate:
+
+
+
+. . . or, more commonly:
+
+
+
+
+
+
+
+Note: &nbsp;There is no &quot;right&quot; way of writing these equations.  I am using the colour-coded structural versions to try to show the link between the various reactions.  You can choose whichever version you want to use.
+
+If you are want the mechanism for this reaction, you will find it by following this link to another part of the site dealing with nucleophilic addition-elimination reactions.
+
+Use the BACK button on your browser to return to this page.
+
+
+
+
+
+
+
+
+
+This is an easy way of producing an ester from an alcohol because it happens at room temperature, and is irreversible.  Making an ester from an alcohol and a carboxylic acid (the usual alternative method) needs heat, a catalyst and is reversible - so that it is difficult to get a 100% conversion.
+
+
+
+The reaction with phenols
+
+The reaction with phenol itself
+
+Phenols have an -OH group attached directly to a benzene ring.  In the substance normally called &quot;phenol&quot;, there isn't anything else attached to the ring as well.  We'll look at that first.
+
+The reaction between phenol and ethanoyl chloride isn't quite as vigorous as that between alcohols and ethanoyl chloride.  The reactivity of the -OH group is modified by the benzene ring.
+
+That apart, the reaction is just the same as with an alcohol.
+
+
+
+Or, more simply:
+
+
+
+Especially if you write the equation in this second way, it is obvious that you have just produced another ester - in this case, called phenyl ethanoate.
+
+But beware!  You may come across the structure drawn in a variety of other ways which make it look much more as if it was a derivative of phenol (which of course it is!).
+
+For example:
+
+
+
+This would tend to happen if you were concentrating on the reactions of the phenol rather than the acyl chloride.
+
+Looking at it this way, notice that the hydrogen of the phenol -OH group has been replaced by an acyl group - an alkyl group attached to a carbon-oxygen double bond.
+
+You can say that the phenol has been acylated or has undergone acylation.
+
+Because of the nature of this particular acyl group, it is also described as ethanoylation.  The hydrogen is being replaced by an ethanoyl group, CH3CO-.
+
+
+
+Using a similar reaction to make aspirin
+
+The reaction with phenol itself isn't very important, but you can make aspirin by a very similar reaction.
+
+Here is 2-hydroxybenzoic acid (also known as 2-hydroxybenzenecarboxylic acid).  The old name for this is salicylic acid.
+
+You might find it written in either of these two ways.  They are the same structure with the molecule just flipped over in space.
+
+
+
+You might also find it with the -OH group at the top and the -COOH group next door and either to the left or right of it.  Life can get very confusing!
+
+When this reacts with ethanoyl chloride, it is ethanoylated (or acylated, if you want to use the more general term) to give:
+
+
+
+You might find all sorts of other variants on drawing this as well.
+
+This molecule is aspirin.
+
+
+
+
+
+Note: &nbsp;Although you can make aspirin this way, the 2-hydroxybenzoic acid is normally ethanoylated commercially using ethanoic anhydride rather than ethanoyl chloride.  There are various reasons for this, which are explored at the bottom of the corresponding page about the reactions of acid anhydrides with oxygen compounds.
+
+Use the BACK button on your browser if you want to return to this page later.
+
+
+
+
+
+
+
+
+
+
+
+
+Questions to test your understanding
+
+If this is the first set of questions you have done, please read the introductory page before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+
+questions on the reaction of acyl chlorides with water, alcohols and phenol
+answers
+
+
+
+
+
+
+
+
+
+Where would you like to go now?
+
+To the acyl chlorides menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+
+
+
+
+
+
+
+ &copy; Jim Clark 2004 (modified December 2015)
+
+
+
+
+
+

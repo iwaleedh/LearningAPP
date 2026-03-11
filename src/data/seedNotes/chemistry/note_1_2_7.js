@@ -18,6 +18,14 @@ export const note_chemistry_1_2_7 = {
       terms: []
     },
     {
+      id: 'p-orbit-vs-orbital',
+      type: 'paragraph',
+      data: {
+        text: 'A simple view of the atom suggests electrons travel in fixed, circular paths called <strong>orbits</strong> (like planets around the sun). However, according to the <strong>Heisenberg Uncertainty Principle</strong>, it is impossible to know with certainty both where an electron is and where it is going next. Because we cannot plot an exact path, we plot a 3D probability map based on where the electron is most likely to be found—this region is called an <strong>orbital</strong>.'
+      },
+      terms: ['Heisenberg Uncertainty Principle']
+    },
+    {
       id: 'callout-def',
       type: 'callout',
       data: {
@@ -88,11 +96,21 @@ export const note_chemistry_1_2_7 = {
         headers: ['Orbital Type', 'Shape', 'Number per subshell', 'Max electrons per subshell'],
         rows: [
           ['<strong>s orbital</strong>', 'Spherical — the electron cloud is distributed equally in all directions around the nucleus.', '1', '2'],
-          ['<strong>p orbital</strong>', 'Dumbbell (figure-8) shaped — two lobes, one on each side of the nucleus. Three p orbitals are oriented along the x, y and z axes (pₓ, pᵧ, p_z).', '3', '6'],
+          ['<strong>p orbital</strong>', 'Dumbbell (figure-8) shaped — two lobes, one on each side of the nucleus. Three p orbitals are oriented along the x, y and z axes (pₓ, pᵧ, p_z) at mutual right angles.', '3', '6'],
           ['<strong>d orbital</strong>', 'More complex shapes (cloverleaf and dumbbell-with-ring). Five d orbitals per subshell.', '5', '10']
         ]
       },
       terms: ['s orbital', 'p orbital', 'd orbital']
+    },
+    {
+      id: 'callout-levels',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Principal Energy Levels (1s vs 2s vs 3s)',
+        text: 'The number before the letter (e.g., <strong>1</strong>s, <strong>2</strong>s, <strong>3</strong>s) represents the principal quantum number (or main energy level). A <strong>2s</strong> orbital has the same spherical shape as a 1s orbital, but it is <strong>larger</strong>, and its electrons spend most of their time <strong>further from the nucleus</strong>. Therefore, a 2s electron is at a higher energy level than a 1s electron.<br/><br/>Within a principal level, subshells have slightly different energies. For example, the <strong>2s orbital has a lower energy than the 2p orbitals</strong>, so 2s fills first. The three 2p orbitals (2p<sub>x</sub>, 2p<sub>y</sub>, 2p<sub>z</sub>) all have exactly the same energy (they are <em>degenerate</em>).'
+      },
+      terms: []
     },
     {
       id: 'h-notation',
@@ -106,7 +124,7 @@ export const note_chemistry_1_2_7 = {
       data: {
         style: 'key',
         title: 'Box Notation Rules',
-        text: '• Each box represents one orbital.<br/>• Arrows represent electrons: ↑ (spin up) and ↓ (spin down).<br/>• A maximum of 2 electrons per box, with opposite spins.<br/>• <strong>Hund\'s rule:</strong> Fill all boxes in a subshell singly before pairing. This minimises electron-electron repulsion.'
+        text: '• Each box represents one orbital.<br/>• Arrows represent electrons: ↑ (spin up) and ↓ (spin down). Electrons in the same orbital must have opposite spins so that they are quantum-mechanically distinct.<br/>• A maximum of 2 electrons per box, with opposite spins.<br/>• <strong>Hund\'s rule:</strong> Fill all boxes in a subshell singly before pairing. This minimises electron-electron repulsion.'
       },
       terms: ["Hund's rule"]
     },
@@ -124,12 +142,13 @@ export const note_chemistry_1_2_7 = {
   recall: {
     enabled: true,
     cues: [
+      { id: 'c0', blockId: 'p-orbit-vs-orbital', prompt: 'Why is it impossible to draw specific orbits for electrons, according to quantum mechanics?' },
       { id: 'c1', blockId: 'callout-def', prompt: 'Define the term "atomic orbital". What is the maximum number of electrons it can hold?' },
       { id: 'c2', blockId: 'table-shapes', prompt: 'Describe the shape of (a) an s orbital and (b) a p orbital.' },
       { id: 'c3', blockId: 'callout-box', prompt: 'State Hund\'s rule in your own words.' },
       { id: 'c4', blockId: 'callout-box-example', prompt: 'Draw the orbital box notation for carbon (Z = 6).' }
     ],
-    summaryText: 'Orbital = region where electron is likely to be found (max 2 electrons, opposite spins). s = sphere; p = dumbbell (3 orbitals per subshell); d = complex (5 orbitals). Hund\'s rule: half-fill before pairing. Box notation uses arrows ↑↓ to represent electrons.',
+    summaryText: 'Heisenberg Uncertainty Principle: impossible to know exact position and momentum, so we use orbitals instead of orbits. Orbital = region where electron is likely to be found (max 2 electrons, opposite spins). s = sphere; p = dumbbell (3 orbitals per subshell); d = complex (5 orbitals). Hund\'s rule: half-fill before pairing. Box notation uses arrows ↑↓ to represent electrons.',
     ready: false
   },
   evidence: []

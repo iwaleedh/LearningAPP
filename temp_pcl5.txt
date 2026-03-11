@@ -1,0 +1,53 @@
+
+converting carboxylic acids into acyl (acid) chlorides
+CONVERTING CARBOXYLIC ACIDS INTO ACYL CHLORIDES (ACID CHLORIDES)
+This page looks at ways of swapping the -OH group in the -COOH group of a carboxylic acid for a chlorine atom.  This produces useful compounds called acyl chlorides (acid chlorides).
+  It covers the use of phosphorus(V) chloride and phosphorus(III) chloride as well as sulphur dichloride oxide (thionyl chloride).
+Replacing -OH by -Cl
+Introduction
+We  are going to be looking at converting a carboxylic acid, RCOOH, into an acyl chloride, RCOCl.  Acyl chlorides are also known as acid chlorides.
+By far the most commonly used example of the conversion of a carboxylic acid into an acyl chloride is ethanoic acid to ethanoyl chloride.
+Acyl chlorides are very reactive, and can be used to make a wide range of other things.  That's why they are important.
+Note: &nbsp;
+If you are want to find out more about acyl chlorides, you can explore the 
+acyl chlorides menu
+ by following this link.
+Use the BACK button on your browser to return to this page.
+Replacing the -OH group using phosphorus(V) chloride, PCl
+5
+Phosphorus(V) chloride is a solid which reacts with carboxylic acids in the cold to give steamy acidic fumes of hydrogen chloride.   It leaves a liquid mixture of the acyl chloride and a phosphorus compound, phosphorus trichloride oxide (phosphorus oxychloride) - POCl
+3
+.
+The acyl chloride can be separated by fractional distillation.
+For example:
+Replacing the -OH group using phosphorus(III) chloride, PCl
+3
+Phosphorus(III) chloride is a liquid at room temperature.  Its reaction with a carboxylic acid is less dramatic than that of phosphorus(V) chloride because there is no hydrogen chloride produced.
+You end up with a mixture of the acyl chloride and phosphoric(III) acid  (old names:  phosphorous acid or orthophosphorous acid), H
+3
+PO
+3
+.
+For example:
+Again, the ethanoyl chloride can be separated by fractional distillation.
+Replacing the -OH group using sulphur dichloride oxide (thionyl chloride)
+Sulphur dichloride oxide (thionyl chloride) is a liquid at room temperature and has the formula SOCl
+2
+.
+Traditionally, the formula is written as shown, despite the fact that the modern 
+name
+ writes the chlorine before the oxygen (alphabetical order).
+The sulphur dichloride oxide reacts with carboxylic acids to produce an acyl chloride, and sulphur dioxide and hydrogen chloride gases are given off.
+For example:
+The separation is simplified to an extent because the by-products are both gases.  You would obviously still have to fractionally distil the mixture to separate the acyl chloride from any excess acid or sulphur dichloride oxide.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the 
+introductory page
+ before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on converting carboxylic acids to acyl chlorides
+answers
+Where would you like to go now?
+To the carboxylic acids menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+ &copy; Jim Clark 2004 (modified November 2015)

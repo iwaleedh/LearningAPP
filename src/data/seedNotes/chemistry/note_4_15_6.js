@@ -294,6 +294,33 @@ export const note_chemistry_4_15_6 = {
 
     // Summary table for 4 reactions
     {
+      id: 'h-acyl-benzene',
+      type: 'heading',
+      data: { text: 'Reaction 5: Friedel-Crafts Acylation (Benzene)', level: 3 }
+    },
+    {
+      id: 'list-acyl-benzene',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Acyl chlorides react with benzene to substitute an acyl group ($CH_3CO–$) onto the aromatic ring.',
+          '**Conditions:** Heating to around 60°C under reflux.',
+          '**Catalyst:** Aluminium chloride ($AlCl_3$).',
+          '**Observation:** Misty fumes of $HCl$ gas are given off as the reaction proceeds.'
+        ]
+      }
+    },
+    {
+      id: 'eq-acyl-benzene',
+      type: 'equation',
+      data: {
+        html: 'C<sub>6</sub>H<sub>6</sub> + CH<sub>3</sub>COCl → C<sub>6</sub>H<sub>5</sub>COCH<sub>3</sub> + HCl',
+        caption: 'Benzene + Ethanoyl chloride → Phenylethanone + Hydrogen chloride.'
+      }
+    },
+    // Summary table for 5 reactions
+    {
       id: 'table-acyl-summary',
       type: 'comparisonTable',
       data: {
@@ -304,12 +331,129 @@ export const note_chemistry_4_15_6 = {
           ['③ + Ammonia', 'conc. NH₃', 'Primary amide (R–CONH₂)', 'HCl → reacts with NH₃ → NH₄Cl'],
           ['④ + Primary amine', 'R′–NH₂', 'N-substituted amide (R–CO–NHR′)', 'HCl↑'],
           ['④ + Secondary amine', 'R′₂NH', 'N,N-disubstituted amide (R–CO–NR′₂)', 'HCl↑'],
+          ['⑤ + Benzene ($C_6H_6$)', 'Heat (60°C), $AlCl_3$', 'Ketone (Acylation)', '$HCl$'],
           ['Tertiary amine R′₃N', '—', 'No reaction', '(no N–H to remove)']
         ],
-        caption: 'All four acyl chloride reactions — HCl is ALWAYS produced. No mechanisms required for IAL exam. Learn reagent + product for each.'
+        caption: 'All five acyl chloride reactions — HCl is ALWAYS produced. No mechanisms required for IAL exam. Learn reagent + product for each.'
       }
     },
 
+    // ════════════════════════════════════════════════════════════════════════
+    // PART 1.5 — ACID ANHYDRIDES
+    // ════════════════════════════════════════════════════════════════════════
+    {
+      id: 'h-acid-anhydrides',
+      type: 'heading',
+      data: { text: 'Acid Anhydrides', level: 2 }
+    },
+    {
+      id: 'list-anhydride-physical',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '**Structure:** Formed by dehydrating two carboxylic acid molecules. Functional group: –CO–O–CO–',
+          '**Naming:** Name the parent acid, but replace "acid" with "anhydride" (e.g. ethanoic anhydride).',
+          '**Appearance:** Colourless liquid smelling strongly of vinegar (due to reacting with water vapour in the air to produce ethanoic acid).',
+          '**Boiling point:** Ethanoic anhydride boils at 140°C. It is polar but **cannot** form hydrogen bonds to itself. Therefore, its boiling point is lower than a similarly sized carboxylic acid.',
+          '**Reactivity:** Think of them as modified acyl chlorides. The "–O–CO–CH₃" part behaves just like the "–Cl" leaving group. Instead of HCl, they eliminate **carboxylic acid** as a byproduct (e.g., ethanoic acid).'
+        ]
+      }
+    },
+    {
+      id: 'h-anhydride-reactions',
+      type: 'heading',
+      data: { text: 'Reactions of Acid Anhydrides with –OH Compounds', level: 3 }
+    },
+    {
+      id: 'p-anhydride-reactions-intro',
+      type: 'paragraph',
+      data: {
+        text: 'The reactions of acid anhydrides with compounds containing an –OH group (water, alcohols, phenols) are very similar to those of acyl chlorides. However, the reactions are <strong>slower</strong>, less violently reactive, and produce <strong>ethanoic acid</strong> as the second product rather than toxic hydrogen chloride gas.'
+      }
+    },
+    {
+      id: 'list-anhydride-water',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Reaction with Water:</strong> Happens slowly at room temperature (faster on gentle warming). Unlike the acyl chloride reaction, there is no dramatic fuming.',
+          '<strong>Product:</strong> Two molecules of carboxylic acid.',
+          '<strong>Example:</strong> Ethanoic anhydride + Water → Ethanoic acid<br/>$(CH_3CO)_2O + H_2O \\rightarrow 2CH_3COOH$'
+        ]
+      }
+    },
+    {
+      id: 'list-anhydride-alcohols',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Reaction with Alcohols:</strong> Needs gentle heating for a reasonable rate.',
+          '<strong>Product:</strong> An ester and ethanoic acid (as the byproduct). No catalyst is needed, unlike the reversible reaction between a normal acid and an alcohol.',
+          '<strong>Example:</strong> Ethanoic anhydride + Ethanol → Ethyl ethanoate + Ethanoic acid<br/>$(CH_3CO)_2O + CH_3CH_2OH \\rightarrow CH_3COOCH_2CH_3 + CH_3COOH$'
+        ]
+      }
+    },
+    {
+      id: 'list-anhydride-phenols',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Reaction with Phenols:</strong> Phenols ($C_6H_5OH$) also react to form esters, known as phenyl esters.',
+          '<strong>Reaction type:</strong> Acylation (specifically, ethanoylation when ethanoic anhydride is used). The hydrogen of the phenol –OH group is replaced by an ethanoyl group ($CH_3CO–$).',
+          '<strong>Example:</strong> Ethanoic anhydride + Phenol → Phenyl ethanoate + Ethanoic acid<br/>$(CH_3CO)_2O + C_6H_5OH \\rightarrow CH_3COOC_6H_5 + CH_3COOH$'
+        ]
+      }
+    },
+    {
+      id: 'callout-aspirin',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Industrial Synthesis of Aspirin',
+        text: 'Aspirin is manufactured by reacting <strong>2-hydroxybenzoic acid</strong> (salicylic acid) with <strong>ethanoic anhydride</strong> at 90°C.<br/><br/><strong>Why use ethanoic anhydride instead of ethanoyl chloride?</strong><br/>• <strong>Cheaper:</strong> Ethanoic anhydride costs less.<br/>• <strong>Safer:</strong> It is less corrosive and reacts slower with water.<br/>• <strong>No toxic fumes:</strong> It produces ethanoic acid rather than dangerous, corrosive hydrogen chloride fumes.'
+      },
+      terms: ['Aspirin']
+    },
+    {
+      id: 'h-anhydride-nitrogen',
+      type: 'heading',
+      data: { text: 'Reactions of Acid Anhydrides with Nitrogen Compounds', level: 3 }
+    },
+    {
+      id: 'p-anhydride-nitrogen-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Acid anhydrides react with ammonia and primary amines in a similar manner to acyl chlorides. The nitrogen lone pair acts as a nucleophile, resulting in an acylation reaction. The key difference is that <strong>ethanoic acid</strong> (which then forms an ethanoate salt) is produced instead of hydrogen chloride.'
+      }
+    },
+    {
+      id: 'list-anhydride-ammonia',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Reaction with Ammonia:</strong> Produces a primary amide and an ammonium salt.',
+          '<strong>Mechanism:</strong> Two stages. First, the anhydride reacts with ammonia to form the amide and a carboxylic acid. Then, the formed acid reacts with excess ammonia to form an ammonium salt.',
+          '<strong>Example:</strong> Ethanoic anhydride + Ammonia &rarr; Ethanamide + Ammonium ethanoate<br/>$(CH_3CO)_2O + 2NH_3 \rightarrow CH_3CONH_2 + CH_3COO^–NH_4^+$'
+        ]
+      }
+    },
+    {
+      id: 'list-anhydride-amines',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Reaction with Primary Amines:</strong> Produces an N-substituted amide and an alkylammonium salt.',
+          '<strong>Example:</strong> Ethanoic anhydride + Methylamine ($CH_3NH_2$) &rarr; N-methylethanamide + Methylammonium ethanoate<br/>$(CH_3CO)_2O + 2CH_3NH_2 \rightarrow CH_3CONHCH_3 + CH_3COO^–CH_3NH_3^+$',
+          '<strong>Reaction with Phenylamine (Aniline):</strong> Produces N-phenylethanamide and phenylammonium ethanoate. This is highly useful in industry for acylation (ethanoylation) of aromatic amines without toxic HCl side-products.'
+        ]
+      }
+    },
     // ════════════════════════════════════════════════════════════════════════
     // PART 2 — ESTERS
     // ════════════════════════════════════════════════════════════════════════
@@ -375,22 +519,22 @@ export const note_chemistry_4_15_6 = {
         style: 'bullet',
         items: [
           'Colourless liquids with relatively low melting and boiling points',
-          'Lower boiling points than equivalent carboxylic acids — esters CANNOT form hydrogen bonds with each other (no O–H group)',
-          'Insoluble in water: every H atom in an ester is bonded to a carbon (not O, N, or F) → cannot act as H-bond donor → no H-bonding with water → insoluble',
-          'They CAN accept H-bonds from water (via the C=O oxygen) but this is insufficient for dissolving',
-          'Very pleasant, distinctive smells — used in flavourings, perfumes',
+          'Lower boiling points than equivalent carboxylic acids — esters CANNOT form hydrogen bonds with each other (no O–H group), so they only have dipole-dipole and London dispersion forces',
+          'Short-chain esters (e.g., methyl ethanoate) ARE fairly soluble in water — the lone pairs on the ester oxygens can accept hydrogen bonds from water molecules',
+          'Solubility rapidly decreases as the carbon chain lengthens — the large non-polar hydrocarbon parts force themselves between water molecules, breaking water-water H-bonds without replacing them',
+          'Very pleasant, distinctive fruity smells — used in artificial flavourings and perfumes',
           'Pentyl methanoate smells of pears; methyl butanoate smells of apples (not required to memorise)',
-          'Also used as solvents, in biofuels, and as anaesthetics'
+          'Also used as solvents (e.g., ethyl ethanoate in nail polish remover) and plasticisers'
         ]
       }
     },
     {
-      id: 'callout-ester-insoluble',
+      id: 'callout-fats-oils',
       type: 'callout',
       data: {
-        style: 'warning',
-        title: 'Why Esters Are Insoluble in Water',
-        text: 'For H-bonding to occur, H must be covalently bonded to O, N, or F (electronegative atoms).\n\nIn esters, every H atom is attached to a carbon → no H is ever on O, N, or F → cannot donate H-bonds to water → INSOLUBLE.\n\nCompare: alcohols (R–OH) and carboxylic acids (R–COOH) DO have H on O → they DO hydrogen bond with water → MORE soluble.'
+        style: 'key',
+        title: 'Fats and Oils (Large Esters)',
+        text: 'Animal and vegetable fats and oils are large, complex esters called triglycerides (triesters of glycerol / propane-1,2,3-triol).\n\n• **Fats** are usually solid at room temp. Their hydrocarbon chains are mostly saturated (no C=C double bonds), allowing the molecules to pack closely together ⇒ stronger London dispersion forces ⇒ higher melting point.\n• **Oils** are usually liquid at room temp. Their chains are unsaturated (contain one or more cis C=C double bonds) which creates kinks in the chain. This prevents close, tidy packing ⇒ weaker London dispersion forces ⇒ lower melting point.'
       }
     },
 
@@ -699,6 +843,8 @@ export const note_chemistry_4_15_6 = {
   recall: {
     enabled: true,
     cues: [
+        { id: 'cue-oil-fat', blockId: 'callout-fats-oils', prompt: 'Why do saturated fats generally have higher melting points than unsaturated oils?' },
+
       {
         id: 'cue-1',
         blockId: 'table-acyl-summary',
@@ -708,6 +854,16 @@ export const note_chemistry_4_15_6 = {
         id: 'cue-2',
         blockId: 'callout-amide-naming',
         prompt: 'Explain how to name an N-substituted amide. Why does the "N" appear in the name, and why do tertiary amines not react with acyl chlorides?'
+      },
+      {
+        id: 'cue-2.5',
+        blockId: 'list-anhydride-amines',
+        prompt: 'What are the products of the reaction between ethanoic anhydride and a primary amine (like methylamine or phenylamine)?'
+      },
+      {
+        id: 'cue-2.5',
+        blockId: 'list-anhydride-amines',
+        prompt: 'What are the products of the reaction between ethanoic anhydride and a primary amine (like methylamine or phenylamine)?'
       },
       {
         id: 'cue-3',

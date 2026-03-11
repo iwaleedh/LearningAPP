@@ -16,28 +16,35 @@ export const note_chemistry_5_19_2 = {
       id: 'p-haloalkane-1',
       type: 'paragraph',
       data: {
-        text: 'Alkylamines can be prepared by heating a haloalkane (R−X) with a large excess of ammonia in a sealed tube under pressure. A sealed container is essential because ammonia is a gas at room temperature — it would escape from an open vessel. An alternative is to use concentrated aqueous ammonia (which provides a high concentration in solution without needing to seal the container). The ammonia acts as both a nucleophile and a base. The reaction involves SN2 nucleophilic substitution: the lone pair on ammonia attacks the carbon bonded to the halogen, displacing the halide as a leaving group and forming a C−N bond.'
+        text: 'Alkylamines can be prepared by heating a haloalkane with a concentrated solution of ammonia in ethanol. The reaction must be carried out in a sealed tube. Heating under reflux is not possible because the ammonia gas would escape up the condenser. The ammonia acts as a nucleophile, replacing the halogen via nucleophilic substitution.'
+      }
+    },
+    {
+      id: 'p-haloalkane-salt',
+      type: 'paragraph',
+      data: {
+        text: 'The reaction happens in stages. First, an alkylammonium salt is formed. Then, a reversible reaction occurs between this salt and the excess ammonia in the mixture, where ammonia removes a hydrogen ion to leave the primary amine.'
       }
     },
     {
       id: 'eq-haloalkane-ammonia',
       type: 'equation',
       data: {
-        html: 'R−X + NH₃ → R−NH₂ + HX (in sealed tube, heat, excess NH₃)<br />Example: CH₃Cl + NH₃ → CH₃NH₂ + HCl'
+        html: 'Step 1: CH₃CH₂Br + NH₃ → CH₃CH₂NH₃⁺Br⁻ (ethylammonium bromide)<br />Step 2: CH₃CH₂NH₃⁺Br⁻ + NH₃ ⇌ CH₃CH₂NH₂ + NH₄⁺Br⁻'
       }
     },
     {
       id: 'p-haloalkane-2',
       type: 'paragraph',
       data: {
-        text: 'A critical problem with this method is that the primary amine product (R−NH₂) is also a nucleophile and a base. It can react further with unreacted haloalkane to form a secondary amine (R₂NH). The secondary amine can then react again to form a tertiary amine (R₃N). Finally, excess haloalkane can quaternise the tertiary amine to give a quaternary ammonium salt (R₄N⁺X⁻).'
+        text: 'A critical problem with this method is that the primary amine product (R−NH₂) also contains an active lone pair of electrons on the very electronegative nitrogen atom, meaning it is still a nucleophile. It can react further with unreacted haloalkane to form a secondary amine (R₂NH) and its salt. The secondary amine can then react again to form a tertiary amine (R₃N) and its salt. Finally, excess haloalkane can quaternise the tertiary amine to give a quaternary ammonium salt (R₄N⁺X⁻).'
       }
     },
     {
       id: 'eq-multiple-substitution',
       type: 'equation',
       data: {
-        html: 'R−NH₂ + R−X → R₂NH + HX (secondary amine forms)<br />R₂NH + R−X → R₃N + HX (tertiary amine forms)<br />R₃N + R−X → [R₄N]⁺X⁻ (quaternary ammonium salt)'
+        html: 'Step 1 (Salt): CH₃CH₂NH₂ + CH₃CH₂Br → (CH₃CH₂)₂NH₂⁺Br⁻<br />Step 2 (Free amine): (CH₃CH₂)₂NH₂⁺Br⁻ + NH₃ ⇌ (CH₃CH₂)₂NH + NH₄⁺Br⁻<br /><br />This repeats to form a tertiary amine, and then eventually tetraethylammonium bromide (a 4° ammonium salt).'
       }
     },
     {
@@ -45,8 +52,8 @@ export const note_chemistry_5_19_2 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Excess Ammonia Solution',
-        text: 'To favour primary amine formation, use a LARGE EXCESS of ammonia. This ensures most R−X collides with NH₃ rather than with the primary amine product, shifting the distribution towards RNH₂. Even so, some secondary and tertiary amines form, making separation necessary.'
+        title: 'Controlling the Product Mixture',
+        text: '• To favour the PRIMARY amine: use a very large excess of ammonia. This ensures the haloalkane is more likely to collide with ammonia than with a formed amine.<br />• To favour the QUATERNARY ammonium salt: use a large excess of the haloalkane, allowing the substitution to run to completion.'
       }
     },
     {
@@ -79,7 +86,7 @@ export const note_chemistry_5_19_2 = {
       id: 'p-nitrile-2',
       type: 'paragraph',
       data: {
-        text: 'The reduction can be carried out with hydrogen gas and a nickel or platinum catalyst at moderate pressure and temperature. Alternatively, a strong reducing agent like lithium aluminium hydride (LiAlH₄) in DRY ETHER can be used. Dry ether (e.g., diethyl ether or dry THF) is essential because LiAlH₄ reacts VIOLENTLY with water and any protic solvent — using a wet or protic solvent would destroy the LiAlH₄ and cause a dangerous reaction. The LiAlH₄ method is faster but requires strict anhydrous conditions and careful handling.'
+        text: 'The reduction can be carried out with hydrogen gas and a metal catalyst (commonly palladium, platinum, or nickel) at a raised temperature and pressure. Alternatively, a strong reducing agent like lithium aluminium hydride (LiAlH₄) dissolved in ethoxyethane (dry ether) can be used, followed by treatment with a dilute acid to liberate the amine. Note: NaBH₄ is not a strong enough reducing agent to reduce nitriles.'
       }
     },
     {
@@ -133,31 +140,81 @@ export const note_chemistry_5_19_2 = {
         text: 'Reduction in acidic HCl forms phenylammonium salt (white solid, ionic). Add NaOH to deprotonate and liberate free phenylamine base (oily liquid, less dense, floats on water). Extract with organic solvent (ether or hexane) to isolate pure phenylamine.'
       }
     },
+      {
+        id: 'summary-preparation-phenylamine',
+        type: 'summary',
+        data: {
+          text: 'Phenylamine is prepared by nitrating benzene to form nitrobenzene, then reducing nitrobenzene with tin and hydrochloric acid under reflux. The product is phenylammonium chloride, which is deprotonated by sodium hydroxide to liberate phenylamine. Extraction and purification are complex and hazardous.'
+        }
+      },
     {
-      id: 'h-comparison-methods',
+      id: 'h-diazonium-prep',
       type: 'heading',
-      data: { text: 'Comparison of Amine Synthesis Routes', level: 2 }
+      data: { text: 'Preparation of Diazonium Salts from Phenylamine', level: 2 }
     },
     {
-      id: 'p-comparison',
+      id: 'p-diazonium-overview',
       type: 'paragraph',
       data: {
-        text: 'Route 1 (haloalkane + NH₃): Gives mixture of 1°/2°/3° amines; requires separation; suitable for industrial large-scale synthesis. Route 2 (nitrile reduction): Gives pure primary amine; cleaner method; requires prior nitrile synthesis. Route 3 (nitrobenzene reduction): Gives phenylamine; suited for aromatic amines; simple two-reagent process. Each method has advantages and is chosen based on the desired product and scale.'
+        text: 'Diazonium salts are formed by reacting phenylamine (aniline) with nitrous acid (HNO₂) at temperatures below 5°C. Nitrous acid is unstable and must be generated in situ by mixing sodium nitrite (NaNO₂) with hydrochloric acid. The reaction is highly temperature-sensitive: below 5°C, diazonium salts form; above 5°C, phenol and nitrogen gas are produced instead.'
       }
     },
     {
-      id: 'checklist-prep-routes',
-      type: 'checklist',
+      id: 'list-diazonium-steps',
+      type: 'list',
       data: {
+        style: 'numbered',
         items: [
-          { text: 'Haloalkane + excess NH₃ (sealed tube, heat) → mixture of amines', checked: false },
-          { text: 'Nitrile + H₂ (Ni catalyst) or LiAlH₄ → pure primary amine', checked: false },
-          { text: 'Nitrobenzene + Sn + conc HCl, then NaOH → phenylamine', checked: false },
-          { text: 'Iron + dil HCl alternative to tin for nitrobenzene reduction', checked: false },
-          { text: 'Nitrile reduction gives cleanest product (single amine, no mixture)', checked: false }
+          'Dissolve phenylamine in excess hydrochloric acid (forms phenylammonium chloride).',
+          'Cool both phenylammonium chloride solution and sodium nitrite solution in ice (≤5°C).',
+          'Add sodium nitrite solution slowly to phenylammonium chloride, keeping temperature below 5°C.',
+          'Nitrous acid forms in situ and reacts with phenylamine to produce benzenediazonium chloride (C₆H₅N₂⁺Cl⁻).',
+          'Diazonium salts are unstable and must be used immediately; they decompose or explode if isolated as solids.'
         ]
       }
     },
+    {
+      id: 'eq-diazonium-prep',
+      type: 'equation',
+      data: {
+        html: 'C₆H₅NH₂ + NaNO₂ + 2HCl → C₆H₅N₂⁺Cl⁻ + NaCl + 2H₂O<br />'
+          + 'Ionic: C₆H₅NH₂ + HNO₂ + HCl → C₆H₅N₂⁺Cl⁻ + 2H₂O'
+      }
+    },
+    {
+      id: 'callout-diazonium-temp',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Temperature Control is Critical',
+        text: '• If temperature rises above 5°C, diazonium salt decomposes to phenol and nitrogen gas.\n• Always use an ice bath and add reagents slowly.\n• Diazonium salts are explosive as solids; never isolate them.'
+      }
+    },
+    {
+      id: 'svg-diazonium-mechanism',
+      type: 'svg',
+      data: {
+        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine + HNO₂ (in situ) + HCl</text><text x="10" y="40" font-size="14" fill="#333">↓ ≤5°C</text><text x="10" y="60" font-size="14" fill="#333">→ Benzenediazonium chloride (C₆H₅N₂⁺Cl⁻)</text></svg>',
+        caption: 'Stepwise mechanism: phenylamine reacts with nitrous acid (generated in situ from NaNO₂ + HCl) at low temperature to form benzenediazonium chloride.'
+      }
+    },
+    {
+      id: 'callout-diazonium-vs-alkylamine',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Comparison: Phenylamine vs Alkylamines',
+        text: '• Both react with nitrous acid, but alkylamines (aliphatic) are converted to alcohols and nitrogen gas at room temperature.\n• Aromatic amines (phenylamine) form stable diazonium salts only at low temperature.\n• Exam tip: Always specify temperature and in situ generation of HNO₂.'
+      }
+    },
+    {
+      id: 'summary-diazonium-prep',
+      type: 'summary',
+      data: {
+        text: 'Diazonium salts are prepared by reacting phenylamine with nitrous acid (generated in situ from sodium nitrite and hydrochloric acid) at temperatures below 5°C. The product, benzenediazonium chloride, is highly unstable and must be used immediately. Temperature control and safety precautions are essential.'
+      }
+    },
+    // ...existing code...
     // ── BLOOM'S TAXONOMY ─────────────────────────────────────────────────
     {
       id: 'bloom-understand',
@@ -181,11 +238,11 @@ export const note_chemistry_5_19_2 = {
     enabled: true,
     cues: [
       { id: 'cue-1', blockId: 'p-haloalkane-1', prompt: 'Describe the preparation of alkylamines from haloalkanes and ammonia.' },
-      { id: 'cue-2', blockId: 'p-haloalkane-2', prompt: 'Why does haloalkane + ammonia give a mixture of products, and how can this be minimised?' },
-      { id: 'cue-3', blockId: 'eq-nitrile-reduction', prompt: 'How are primary amines prepared from nitriles? What are the reducing agents?' },
+      { id: 'cue-2', blockId: 'callout-excess-ammonia', prompt: 'How can you favour the formation of a primary amine vs a quaternary ammonium salt when reacting a haloalkane with ammonia?' },
+      { id: 'cue-3', blockId: 'p-nitrile-2', prompt: 'How are primary amines prepared from nitriles? Can NaBH₄ be used?' },
       { id: 'cue-4', blockId: 'eq-nitrobenzene-reduction', prompt: 'Describe the two-step process for reducing nitrobenzene to phenylamine.' }
     ],
-    summaryText: 'Haloalkane + excess NH₃ (sealed tube, heat) → mixture of 1°/2°/3°/quaternary amines. Nitrile + H₂ (Ni) or LiAlH₄ → pure primary amine. Nitrobenzene + Sn + conc HCl → phenylammonium salt, then NaOH → free phenylamine (oil). Iron alternative to tin. Nitrile reduction cleanest for primary amines.',
+    summaryText: 'Haloalkane + excess NH₃ in ethanol (sealed tube, heat) → mixes (excess NH₃ favors 1°, excess R−X favors 4° salt). Steps form alkylammonium salt then free amine. Nitrile + H₂ (Pd/Pt/Ni) or LiAlH₄ in dry ether + dilute acid → 1° amine (NaBH₄ too weak). Nitrobenzene + Sn/conc HCl → phenylammonium salt, then NaOH → free phenylamine.',
     ready: false
   },
   evidence: [

@@ -1,0 +1,236 @@
+
+<html>
+<head>
+<title>halogenoalkanes (haloalkanes) and hydroxide ions</title>
+
+<meta name="description"
+content="The reactions between halogenoalkanes (haloalkanes, alkyl halides) and sodium or potassium hydroxide solution" />
+<meta name="keywords"
+content="halogenoalkanes, haloalkanes, alkyl halides, hydroxide, substitution, elimination" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>REACTIONS BETWEEN HALOGENOALKANES AND HYDROXIDE IONS</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page looks at the reactions between halogenoalkanes (haloalkanes or alkyl halides) and hydroxide ions from sodium or potassium hydroxide solution.  It covers both substitution and elimination reactions.</p>
+
+<p>To a large extent, this page simply brings together information from a number of other pages on the site.  If you want information about the mechanisms for these reactions you will find them elsewhere.  This page has links to all the other pages that you will need.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Substitution or elimination?</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>There are two different sorts of reaction that you can get depending on the conditions used and the type of halogenoalkane.  Primary, secondary and tertiary halogenoalkanes behave differently in this respect.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>If you aren't sure what primary, secondary and tertiary halogenoalkanes are, you should read the beginning of the <a href="background.html#top">introduction to halogenoalkanes</a> by following this link before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b>Substitution reactions</b></p>
+
+<p>In a substitution reaction, the halogen atom is replaced by an -OH group to give an alcohol.</p>
+
+<p>For example:</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="substprop.gif" width="328" height="42" /></p>
+
+<p>Or, as an ionic equation:</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="substprop2.gif" width="317" height="39" /></p>
+
+
+<p>In the example, 2-bromopropane is converted into propan-2-ol.</p>
+
+<p>The halogenoalkane is heated under reflux with a solution of sodium or potassium hydroxide.  Heating under reflux means heating with a condenser placed vertically in the flask to prevent loss of volatile substances from the mixture.</p>
+
+<p>The solvent is usually a 50/50 mixture of ethanol and water, because everything will dissolve in that.  The halogenoalkane is insoluble in water.  If you used water alone as the solvent, the halogenoalkane and the sodium hydroxide solution wouldn't mix and the reaction could only happen where the two layers met.</p>
+
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>If you want the <a href="../../mechanisms/nucsub/hydroxide.html#top">mechanisms for substitution reactions</a> follow this link.  Use the BACK button (or the GO menu or HISTORY file) on your browser to return to this page later if you want to.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Elimination reactions</b></p>
+
+<p>Halogenoalkanes also undergo elimination reactions in the presence of sodium or potassium hydroxide.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="elimprop.gif" width="380" height="42" /></p>
+
+<p>The 2-bromopropane has reacted to give an alkene - propene.</p>
+
+<p>Notice that a hydrogen atom has been removed from one of the end carbon atoms together with the bromine from the centre one.  In all simple elimination reactions the things being removed are on adjacent carbon atoms, and a double bond is set up between those carbons.</p>
+
+<p>The halogenoalkane is heated under reflux with a concentrated solution of sodium or potassium hydroxide in ethanol.  Propene is formed and, because this is a gas, it passes through the condenser and can be collected.</p>
+
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>If you want to read about the <a href="../../mechanisms/elim/elim.html#top">mechanisms for elimination reactions</a> follow this link.  Use the BACK button (or the GO menu or HISTORY file) on your browser to return to this page later if you want to.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>What decides whether you get substitution or elimination?</p></b>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>The reagents you are using are the same for both substitution or elimination - the halogenoalkane and either sodium or potassium hydroxide solution.  In all cases, you will get a mixture of both reactions happening - some substitution and some elimination.  What you get <i>most</i> of depends on a number of factors.</p>
+
+<p><b><i>The type of halogenoalkane</i></b></p>
+
+<p>This is the most important factor.</p>
+</font>
+
+<center>
+<table  align="center" border="1" cellpadding="5">
+
+<tr><td><font color="#000000" face="Helvetica, Arial"size="3"><b><i>type of halogenoalkane</i></b></td></font><td><font color="#000000" face="Helvetica, Arial"size="3"><b><i>substitution or elimination?</i></b></td></font></tr>
+
+<tr><td><font color="#000000" face="Helvetica, Arial"size="3">primary</td></font><td><font color="#000000" face="Helvetica, Arial"size="3">mainly substitution</td></font></tr>
+
+<tr><td><font color="#000000" face="Helvetica, Arial"size="3">secondary</td></font><td><font color="#000000" face="Helvetica, Arial"size="3">both substitution and elimination</td></font></tr>
+
+<tr><td><font color="#000000" face="Helvetica, Arial"size="3">tertiary</td></font><td><font color="#000000" face="Helvetica, Arial"size="3">mainly elimination</td></font></tr>
+</table>
+</center>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>For example, whatever you do with tertiary halogenoalkanes, you will tend to get mainly the elimination reaction, whereas with primary ones you will tend to get mainly substitution.  However, you can influence things to some extent by changing the conditions.</p>
+
+<p><b><i>The solvent</i></b></p>
+
+<p>The proportion of water to ethanol in the solvent matters.</p>
+
+<ul>
+<li><p>Water encourages substitution.</p></li>
+<li><p>Ethanol encourages elimination.</p></li>
+</ul>
+
+<p><b><i>The temperature</i></b></p>
+
+<p>Higher temperatures encourage elimination.</p>
+
+<p><b><i>Concentration of the sodium or potassium hydroxide solution</i></b></p>
+
+<p>Higher concentrations favour elimination.</p>
+
+<p><b><i>In summary</i></b></p>
+
+<p>For a given halogenoalkane, to favour <i>elimination</i> rather than substitution, use:</p>
+
+<ul>
+<li><p>higher temperatures</p></li>
+<li><p>a concentrated solution of sodium or potassium hydroxide</p></li>
+
+<li><p>pure ethanol as the solvent</p></li>
+</ul>
+
+<p>To favour <i>substitution</i> rather than elimination, use:</p>
+
+<ul>
+<li><p>lower temperatures</p></li>
+<li><p>more dilute solutions of sodium or potassium hydroxide</p></li>
+<li><p>more water in  the solvent mixture</p></li>
+</ul>
+
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>The <i>explanations</i> for these effects are well beyond the demands of UK A level syllabuses.  Some things you just have to <i>know</i>!<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-halohydroxide.pdf">questions on the reactions of halogenoalkanes with hydroxide ions</a></p>
+<p><a href="../questions/a-halohydroxide.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../haloalkanemenu.html#top"><b>To the halogenoalkanes menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (modified October 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

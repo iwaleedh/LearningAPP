@@ -48,11 +48,13 @@ export const note_chemistry_1_4_1 = {
       data: {
         style: 'ordered',
         items: [
-          '<strong>Find the longest continuous carbon chain</strong> — this gives the parent name (e.g. pentane for 5 carbons).',
-          '<strong>Number the chain</strong> from the end closest to a branch or substituent, to give the substituents the <em>lowest possible numbers</em>.',
+          '<strong>Find the longest continuous carbon chain</strong> — this gives the parent name (e.g. pentane for 5 carbons). Be careful: the longest chain is not always drawn horizontally!',
+          '<strong>Identify the principal functional group</strong> (like -OH, or C=C) as this determines the ending (suffix) of the name.',
+          '<strong>Number the chain</strong> from the end that gives the principal functional group the lowest number. If only alkyl/halogen substituents are present, number from the end closest to a branch to give substituents the <em>lowest possible numbers</em>.',
           '<strong>Name substituents</strong> using alkyl groups: methyl (–CH₃), ethyl (–C₂H₅), propyl (–C₃H₇), etc. Halogen substituents: fluoro-, chloro-, bromo-, iodo-.',
           '<strong>Use multipliers</strong> if the same substituent appears more than once: di-, tri-, tetra-.',
-          '<strong>Write in alphabetical order</strong> (ignoring di-, tri- etc.) then end with the base alkane name.'
+          '<strong>Write in alphabetical order</strong> (ignoring di-, tri- etc., but not iso- / cyclo-) then end with the base alkane name.',
+          '<strong>Punctuation rules:</strong> Numbers are separated from numbers by commas (e.g., 2,2-dimethyl...). Numbers are separated from letters by hyphens (e.g., 2-methyl...). There are no spaces in the main part of the name.'
         ]
       },
       terms: ['IUPAC nomenclature', 'Alkyl group', 'Substituent']
@@ -73,9 +75,10 @@ export const note_chemistry_1_4_1 = {
     cues: [
       { id: 'c1', blockId: 'table-prefix', prompt: 'State the IUPAC prefix for chains of 1, 2, 3, 4, 5, and 6 carbon atoms.' },
       { id: 'c2', blockId: 'list-rules', prompt: 'Explain how you decide from which end to number the carbon chain.' },
-      { id: 'c3', blockId: 'callout-examples', prompt: 'Name the following compound: CH₃CH(CH₃)CH(CH₃)CH₂CH₃' }
+      { id: 'c3', blockId: 'callout-examples', prompt: 'Name the following compound: CH₃CH(CH₃)CH(CH₃)CH₂CH₃' },
+      { id: 'c4', blockId: 'list-rules', prompt: 'What are the IUPAC rules for using commas and hyphens in chemical names?' }
     ],
-    summaryText: 'Prefixes: meth(1), eth(2), prop(3), but(4), pent(5), hex(6). Number from end closest to branch. Name substituents: methyl, ethyl, chloro, bromo etc. Use di/tri for multiples. Alphabetical order. Suffix: -ane (alkane), -ene (alkene), -ol (alcohol).',
+    summaryText: 'Prefixes: meth(1), eth(2), prop(3), but(4), pent(5), hex(6). Longest chain might not be horizontal. Number to give lowest numbers (lowest for principal functional group first, then substituents). Use di/tri for multiples. Alphabetical order. Suffix: -ane (alkane), -ene (alkene), -ol (alcohol). Commas separate numbers; hyphens separate numbers and letters.',
     ready: false
   },
   evidence: []

@@ -1,0 +1,74 @@
+uses of halogenoalkanes
+USES OF HALOGENOALKANES
+This page looks at some of the uses of halogenoalkanes (haloalkanes or alkyl halides) as required by UK A level syllabuses.
+CFCs and their replacements
+What are CFCs?
+CFCs are chlorofluorocarbons - compounds containing carbon with chlorine and fluorine atoms attached.  Two common CFCs are:
+CFC-11
+CCl
+3
+F
+CFC-12
+CCl
+2
+F
+2
+How to work out the formula from the CFC number:
+You add 90 to the CFC number to give a new number.  For example, CFC-11 generates the number 101 (11+90)
+The first digit of the new number tells you how many carbon atoms there are.  The second number tells you the number of hydrogens, and the third the number of fluorines.  You calculate the number of chlorines from the formula Cl = 2(C+1)-H-F.
+Uses of CFCs
+CFCs are non-flammable and not very toxic.  They therefore had a large number of uses.
+They were used as refrigerants, propellants for aerosols, for generating foamed plastics like expanded polystyrene or polyurethane foam, and as solvents for dry cleaning and for general degreasing purposes.
+Unfortunately, CFCs are largely responsible for destroying the ozone layer.  In the high atmosphere, the carbon-chlorine bonds break to give chlorine free radicals.  It is these radicals which destroy ozone.  CFCs are now being replaced by less environmentally harmful compounds.
+Note:
+You will find the mechanism for the depletion of ozone by the chlorine radicals produced from CFCs on the
+introduction to catalysis
+page in the physical chemistry section of this site.
+Use the BACK button on your browser to return to this page.
+CFCs can also cause global warming.  One molecule of CFC-11, for example, has a global warming potential about 5000 times greater than a molecule of carbon dioxide.
+On the other hand, there is far more carbon dioxide in the atmosphere than CFCs, so global warming isn't the major problem associated with them.
+Replacements for CFCs
+These are still mainly halogenoalkanes, although simple alkanes such as butane can be used for some applications (for example, as aerosol propellants).
+Hydrochlorofluorocarbons, HCFCs
+These are carbon compounds which contain hydrogen as well as halogen atoms.  For example:
+HCFC-22
+CHClF
+2
+The formula can be worked out from the number in the name in exactly the same way as for CFCs.
+These have a shorter life in the atmosphere than CFCs, and much of them is destroyed in the low atmosphere and so doesn't reach the ozone layer.  HCFC-22 has only about one-twentieth of the effect on the ozone layer as a typical CFC.
+Hydrofluorocarbons, HFCs
+These are compounds containing only hydrogen and fluorine attached to carbon.  For example:
+HFC-134a
+CH
+2
+F-CF
+3
+Because these HCFCs don't contain any chlorine, they have zero effect on the ozone layer.  HFC-134a is now widely used in refrigerants, for blowing foamed plastics and as a propellant in aerosols.
+Hydrocarbons
+Again, these have no effect on the ozone layer, but they do have a down-side.  They are highly flammable and are involved in environmental problems such as the formation of photochemical smog.
+Other uses of organic halogeno compounds
+In making plastics
+Strictly speaking, the compounds we are talking about here are halogenoalkenes, not halogenoalkanes, but one of the UK A level syllabuses includes them in this section.
+Chloroethene, CH
+2
+=CHCl,  is used to make poly(chloroethene) - usually known as PVC.
+Tetrafluoroethene, CF
+2
+=CF
+2
+, is used to make poly(tetrafluoroethene) - PTFE.
+Note:
+These are both discussed in detail on the page about
+polymerisation of alkenes
+.
+Use the BACK button on your browser to return to this page.
+Lab uses of halogenoalkanes
+If you refer to the halogenoalkanes menu (see below), you will find that they react with lots of things leading to a wide range of different organic products.
+Halogenoalkanes are therefore useful in the lab as intermediates in making other organic chemicals.
+Questions to test your understanding
+I am not giving any questions on this topic.  Find out what (if anything) your examiners ask in their exams, and what they expect you to say - then learn that!  Don't waste time learning detail that you don't need.
+Where would you like to go now?
+To the halogenoalkanes menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+© Jim Clark 2003 (modified October 2015)

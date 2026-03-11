@@ -1,0 +1,93 @@
+manufacture of alcohols
+THE MANUFACTURE OF ALCOHOLS
+This page looks at the manufacture of alcohols by the direct hydration of alkenes, concentrating mainly on the hydration of ethene to make ethanol.  It then compares that method with making ethanol by fermentation.
+Manufacturing alcohols from alkenes
+The manufacture of ethanol from ethene
+Ethanol is manufactured by reacting ethene with steam.  The catalyst used is solid silicon dioxide coated with phosphoric(V) acid.  The reaction is reversible.
+Only 5% of the ethene is converted into ethanol at each pass through the reactor.  By removing the ethanol from the equilibrium mixture and recycling the ethene, it is possible to achieve an overall 95% conversion.
+A flow scheme for the reaction looks like this:
+Note:
+This is a bit of a simplification!  When the gases from the reactor are cooled, then excess steam will condense as well as the ethanol.  The ethanol will have to be separated from the water by fractional distillation.
+All the sources I have looked at gloss over this, so I don't have any details.  I assume it is a normal fractional distillation of an ethanol-water mixture.
+If you are interested in the
+reasons for the conditions
+used in this reaction, you will find them in the equilibrium section of this site by following this link.
+If you are interested in the
+mechanism for the hydration of ethene
+, follow this link to the catalysis section.
+Because these pages are (somewhat illogically!) in different parts of the site, use the BACK button (or HISTORY file or GO menu) on your browser to return to this page later.
+The manufacture of other alcohols from alkenes
+Some - but not all - other alcohols can be made by similar reactions.  The catalyst used and the reaction conditions will vary from alcohol to alcohol.  The only set of conditions you are going to need for UK A  level purposes are those given above for manufacturing ethanol.
+The reason that there is a problem with some alcohols is well illustrated with trying to make an alcohol from propene, CH
+3
+CH=CH
+2
+.
+In principle, there are two different alcohols which might be formed:
+You might expect to get either propan-1-ol or propan-2-ol depending on which way around the water adds to the double bond.  In practice what you get is propan-2-ol.
+If you add a molecule H-X across a carbon-carbon double bond, the hydrogen nearly always gets attached to the carbon with the most hydrogens on it already - in this case the CH
+2
+rather than the CH.
+Note:
+The reason for this is dealt with in detail in the mechanism section of this site on a page about
+addition to unsymmetrical alkenes
+.
+If you choose to follow this link, use the BACK button on your browser to return to this page.
+The effect of this is that there are bound to be some alcohols which it is impossible to make by reacting alkenes with steam because the addition would be the wrong way around.
+Making ethanol by fermentation
+This method
+only
+applies to ethanol.  You can't make any other alcohol this way.
+The process
+The starting material for the process varies widely, but will normally be some form of starchy plant material such as maize (US: corn), wheat, barley or potatoes.
+Starch is a complex carbohydrate, and other carbohydrates can also be used - for example, in the lab sucrose (sugar) is normally used to produce ethanol.  Industrially, this wouldn't make sense.  It would be silly to refine sugar if all you were going to use it for was fermentation.  There is no reason why you shouldn't start from the original sugar cane, though.
+The first step is to break complex carbohydrates into simpler ones.
+For example, if you were starting from starch in grains like wheat or barley, the grain is heated with hot water to extract the starch and then warmed with malt.  Malt is germinated barley which contains enzymes which break the starch into a simpler carbohydrate called maltose, C
+12
+H
+22
+O
+11
+.
+Maltose has the same molecular formula as sucrose but contains two glucose units joined together, whereas sucrose contains one glucose and one fructose unit.
+Yeast is then added and the mixture is kept warm (say 35°C) for perhaps several days until fermentation is complete.  Air is kept out of the mixture to prevent oxidation of the ethanol produced to ethanoic acid (vinegar).
+Enzymes in the yeast first convert carbohydrates like maltose or sucrose into even simpler ones like glucose and fructose, both C
+6
+H
+12
+O
+6
+, and then convert these in turn into ethanol and carbon dioxide.
+You can show these changes as simple chemical equations, but the biochemistry of the reactions is much, much more complicated than this suggests.
+Yeast is killed by ethanol concentrations in excess of about 15%, and that limits the purity of the ethanol that can be produced.  The ethanol is separated from the mixture by fractional distillation to give 96% pure ethanol.
+For theoretical reasons, it is impossible to remove the last 4% of water by fractional distillation.
+Note:
+If you are interested in this, you will find it explored in detail on a page about
+non-ideal mixtures of liquids
+.  Unless you already know about phase equilibria, you will probably find this very hard going!
+A comparison of fermentation with the direct hydration of ethene
+Fermentation
+Hydration of ethene
+Type of process
+A batch process.  Everything is put into a container and then left until fermentation is complete.  That batch is then cleared out and a new reaction set up.  This is inefficient.
+A continuous flow process.  A stream of reactants is passed continuously over a catalyst.  This is a more efficient way of doing things.
+Rate of reaction
+Very slow.
+Very rapid.
+Reaction conditions
+Uses gentle temperatures and atmospheric pressure.
+Uses high temperatures and pressures, needing lots of energy input.
+Use of resources
+Uses renewable resources based on plant material.
+Uses finite resources based on crude oil.
+Questions to test your understanding
+If this is the first set of questions you have done, please read the
+introductory page
+before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the manufacture of alcohols
+answers
+Where would you like to go now?
+To the alcohols menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+© Jim Clark 2003 (last updated October 2015)

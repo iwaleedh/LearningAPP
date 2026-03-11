@@ -1,0 +1,84 @@
+dehydration of alcohols
+THE DEHYDRATION OF ALCOHOLS
+This page (a simple duplicate of a page in the section on alkenes!) looks at the dehydration of alcohols in the lab to make alkenes - for example, dehydrating ethanol to make ethene.
+Dehydration of alcohols using aluminium oxide as catalyst
+The dehydration of ethanol to give ethene
+This is a simple way of making gaseous alkenes like ethene.  If ethanol vapour is passed over heated aluminium oxide powder, the ethanol is essentially cracked to give ethene and water vapour.
+To make a few test tubes of ethene, you can use this apparatus:
+It wouldn't be too difficult to imagine scaling this up by boiling some ethanol in a flask and passing the vapour over aluminium oxide heated in a long tube.
+Dehydration of alcohols using an acid catalyst
+The acid catalysts normally used are either concentrated sulphuric acid or concentrated phosphoric(V) acid, H
+3
+PO
+4
+.
+Concentrated sulphuric acid produces messy results.  Not only is it an acid, but it is also a strong oxidising agent.  It oxidises some of the alcohol to carbon dioxide and at the same time is reduced itself to sulphur dioxide.  Both of these gases have to be removed from the alkene.
+It also reacts with the alcohol to produce a mass of carbon.  There are other side reactions as well, but these aren't required by any current UK A level (or equivalent) syllabus.
+The dehydration of ethanol to give ethene
+Ethanol is heated with an excess of concentrated sulphuric acid at a temperature of 170°C.  The gases produced are passed through sodium hydroxide solution to remove the carbon dioxide and sulphur dioxide produced from side reactions.
+The ethene is collected over water.
+WARNING!
+This is potentially an extremely dangerous preparation because of the close proximity of the very hot concentrated sulphuric acid and the sodium hydroxide solution.  I knew of one chemistry teacher who put several students into hospital by getting it wrong!  That was many years ago before safety was taken quite so seriously as it is now.
+The concentrated sulphuric acid is a catalyst.  Write it over the arrow rather than in the equation.
+The dehydration of cyclohexanol to give cyclohexene
+This is a preparation commonly used at this level to illustrate the formation and purification of a liquid product.  The fact that the carbon atoms happen to be joined in a ring makes no difference whatever to the chemistry of the reaction.
+Cyclohexanol is heated with concentrated phosphoric(V) acid and the liquid cyclohexene distils off and can be collected and purified.
+Phosphoric(V) acid tends to be used in place of sulphuric acid because it is safer and produces a less messy reaction.  Phosphoric(V) acid isn't a strong oxidising agent.
+The dehydration of more complicated alcohols
+You have to be wary with more complicated alcohols in case there is the possibility of more than one alkene being formed.  Butan-2-ol is a good example of this, with no less than three different alkenes being formed when it is dehydrated.
+Butan-2-ol is just an example to illustrate the problems.  It is important that you understand it so that you can work out what will happen in similar cases.  It would be quite impossible for you to learn what happens with every single alcohol you might be presented with.
+When you dehydrate an alcohol, you remove the -OH group, and a hydrogen atom from the next carbon atom in the chain.  With molecules like butan-2-ol, there are two possibilities when that happens.
+That leads to these products:
+The products are but-1-ene, CH
+2
+=CHCH
+2
+CH
+3
+, and but-2-ene, CH
+3
+CH=CHCH
+3
+.
+In fact the situation is even more complicated than it looks, because
+but-2-ene exhibits geometric isomerism.  You get a mixture of two isomers formed -
+cis
+-but-2-ene and
+trans
+-but-2-ene.
+Cis
+-but-2-ene is also known as (Z)-but-2-ene;
+trans
+-but-2-ene is also known as (E)-but-2-ene.  For an explanation of the two ways of naming these two compounds, follow the link in the box below.
+Which isomer gets formed is just a matter of chance.
+Geometric isomerism:
+Isomerism is where you can draw more than one arrangement of the atoms for a given molecular formula.  Geometric isomerism is a special case of this involving molecules which have restricted rotation around one of the bonds - in this case, a carbon-carbon double bond.  The C=C bond could only rotate if enough energy is put in to break the pi bond.  Effectively, except at high temperatures, the C=C bond is "locked".
+In the case of but-2-ene, the two CH
+3
+groups will either both be locked on one side of the C=C (to give the cis or (Z) isomer), or on opposite sides (to give the trans or (E) one).
+For a full discussion of
+geometric isomerism
+follow this link.  Use the BACK button on your browser to return to this page.
+Beware!
+It is easy to miss geometric isomers in an exam.  Always draw alkenes with the correct 120° bond angles around the C=C bond as shown in the diagrams for the cis and trans isomers above.  If you take a short cut and write but-2-ene as CH
+3
+CH=CHCH
+3
+, you will almost certainly miss the fact that cis and trans forms are possible.
+This is a rich source of questions in an exam.  You could easily throw away marks if you miss these possibilities.
+The overall result
+Dehydration of butan-2-ol leads to a mixture containing:
+but-1-ene
+cis-but-2-ene (also known as (Z)-but-2-ene)
+trans-but-2-ene (also known as (E)-but-2-ene)
+Questions to test your understanding
+If this is the first set of questions you have done, please read the
+introductory page
+before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+questions on the dehydration of alcohols
+answers
+Where would you like to go now?
+To the alcohols menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+© Jim Clark 2003 (last October 2015)

@@ -1,0 +1,207 @@
+
+<html>
+<head>
+<title>manufacture of alcohols</title>
+
+<meta name="description"
+content="The manufacture of ethanol from ethene and by fermentation, with a brief comment about other alcohols" />
+<meta name="keywords"
+content="alcohols, alcohol, ethanol, manufacture, ethene, catalysis, catalyst, fermentation" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>THE MANUFACTURE OF ALCOHOLS</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page looks at the manufacture of alcohols by the direct hydration of alkenes, concentrating mainly on the hydration of ethene to make ethanol.  It then compares that method with making ethanol by fermentation.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Manufacturing alcohols from alkenes</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b>The manufacture of ethanol from ethene</b></p>
+
+<p>Ethanol is manufactured by reacting ethene with steam.  The catalyst used is solid silicon dioxide coated with phosphoric(V) acid.  The reaction is reversible.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="hydrateeq.gif" width="318" height="31" /></p>
+
+<p>Only 5% of the ethene is converted into ethanol at each pass through the reactor.  By removing the ethanol from the equilibrium mixture and recycling the ethene, it is possible to achieve an overall 95% conversion.</p>
+
+<p>A flow scheme for the reaction looks like this:</p>
+<pre>
+
+</pre>
+
+<p align="center"><img src="ethanolflow.gif" width="440" height="261" /></p>
+
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>This is a bit of a simplification!  When the gases from the reactor are cooled, then excess steam will condense as well as the ethanol.  The ethanol will have to be separated from the water by fractional distillation.</p>
+
+<p>All the sources I have looked at gloss over this, so I don't have any details.  I assume it is a normal fractional distillation of an ethanol-water mixture.</p>
+
+<p>If you are interested in the <a href="../../physical/equilibria/ethanol.html#top">reasons for the conditions</a> used in this reaction, you will find them in the equilibrium section of this site by following this link.</p>
+
+<p>If you are interested in the <a href="../../physical/catalysis/hydrate.html#top">mechanism for the hydration of ethene</a>, follow this link to the catalysis section.</p>
+
+<p>Because these pages are (somewhat illogically!) in different parts of the site, use the BACK button (or HISTORY file or GO menu) on your browser to return to this page later.<br />
+<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b>The manufacture of other alcohols from alkenes</b></p>
+
+<p>Some - but not all - other alcohols can be made by similar reactions.  The catalyst used and the reaction conditions will vary from alcohol to alcohol.  The only set of conditions you are going to need for UK A  level purposes are those given above for manufacturing ethanol.</p>
+
+<p>The reason that there is a problem with some alcohols is well illustrated with trying to make an alcohol from propene, CH<sub>3</sub>CH=CH<sub>2</sub>.</p>
+
+<p>In principle, there are two different alcohols which might be formed:</p>
+
+<p align="center"><img src="propenehydr.gif" width="293" height="202" /></p>
+
+<p>You might expect to get either propan-1-ol or propan-2-ol depending on which way around the water adds to the double bond.  In practice what you get is propan-2-ol.</p>
+
+<p>If you add a molecule H-X across a carbon-carbon double bond, the hydrogen nearly always gets attached to the carbon with the most hydrogens on it already - in this case the CH<sub>2</sub> rather than the CH.
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>The reason for this is dealt with in detail in the mechanism section of this site on a page about <a href="../../mechanisms/eladd/unsymprob.html#top">addition to unsymmetrical alkenes</a>.</p>
+
+<p>If you choose to follow this link, use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>The effect of this is that there are bound to be some alcohols which it is impossible to make by reacting alkenes with steam because the addition would be the wrong way around.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Making ethanol by fermentation</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>This method <i>only</i> applies to ethanol.  You can't make any other alcohol this way.</p>
+
+<p><b>The process</b></p>
+
+<p>The starting material for the process varies widely, but will normally be some form of starchy plant material such as maize (US: corn), wheat, barley or potatoes.</p>
+
+<p>Starch is a complex carbohydrate, and other carbohydrates can also be used - for example, in the lab sucrose (sugar) is normally used to produce ethanol.  Industrially, this wouldn't make sense.  It would be silly to refine sugar if all you were going to use it for was fermentation.  There is no reason why you shouldn't start from the original sugar cane, though.</p>
+
+<p>The first step is to break complex carbohydrates into simpler ones.</p>
+
+<p>For example, if you were starting from starch in grains like wheat or barley, the grain is heated with hot water to extract the starch and then warmed with malt.  Malt is germinated barley which contains enzymes which break the starch into a simpler carbohydrate called maltose, C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>.</p>
+
+<p>Maltose has the same molecular formula as sucrose but contains two glucose units joined together, whereas sucrose contains one glucose and one fructose unit.</p>
+
+<p>Yeast is then added and the mixture is kept warm (say 35&deg;C) for perhaps several days until fermentation is complete.  Air is kept out of the mixture to prevent oxidation of the ethanol produced to ethanoic acid (vinegar).</p>
+
+<p>Enzymes in the yeast first convert carbohydrates like maltose or sucrose into even simpler ones like glucose and fructose, both C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>, and then convert these in turn into ethanol and carbon dioxide.</p>
+
+<p>You can show these changes as simple chemical equations, but the biochemistry of the reactions is much, much more complicated than this suggests.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="fermenteq1.gif" width="265" height="15" /></p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="fermenteq2.gif" width="277" height="15" /></p>
+
+<p>Yeast is killed by ethanol concentrations in excess of about 15%, and that limits the purity of the ethanol that can be produced.  The ethanol is separated from the mixture by fractional distillation to give 96% pure ethanol.</p>
+
+<p>For theoretical reasons, it is impossible to remove the last 4% of water by fractional distillation.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you are interested in this, you will find it explored in detail on a page about <a href="../../physical/phaseeqia/nonideal.html">non-ideal mixtures of liquids</a>.  Unless you already know about phase equilibria, you will probably find this very hard going!<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b>A comparison of fermentation with the direct hydration of ethene</b></p>
+</font>
+
+<table align="center" cellpadding="6" border="1">
+<tr><th>&nbsp;</th><th><font color="#000000" face="Helvetica, Arial" size="3">Fermentation</font></th><th><font color="#000000" face="Helvetica, Arial" size="3">Hydration of ethene</font></th></tr>
+
+<tr valign="top"><td><font color="#000000" face="Helvetica, Arial" size="3"><b>Type of process</b></font></td><td><font color="#000000" face="Helvetica, Arial" size="3">A batch process.  Everything is put into a container and then left until fermentation is complete.  That batch is then cleared out and a new reaction set up.  This is inefficient.</font></td><td><font color="#000000" face="Helvetica, Arial" size="3">A continuous flow process.  A stream of reactants is passed continuously over a catalyst.  This is a more efficient way of doing things.</font></td></tr>
+
+<tr valign="top"><td><font color="#000000" face="Helvetica, Arial" size="3"><b>Rate of reaction</b></font></td><td><font color="#000000" face="Helvetica, Arial" size="3">Very slow.</font></td><td><font color="#000000" face="Helvetica, Arial" size="3">Very rapid.</font></td></tr>
+
+<tr valign="top"><td><font color="#000000" face="Helvetica, Arial" size="3"><b>Reaction conditions</b></font></td><td><font color="#000000" face="Helvetica, Arial" size="3">Uses gentle temperatures and atmospheric pressure.</font></td><td><font color="#000000" face="Helvetica, Arial" size="3">Uses high temperatures and pressures, needing lots of energy input.</font></td></tr>
+
+<tr valign="top"><td><font color="#000000" face="Helvetica, Arial" size="3"><b>Use of resources</b></font></td><td><font color="#000000" face="Helvetica, Arial" size="3">Uses renewable resources based on plant material.</font></td><td><font color="#000000" face="Helvetica, Arial" size="3">Uses finite resources based on crude oil.</font></td></tr>
+</table>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-alcoholsmanuf.pdf">questions on the manufacture of alcohols</a></p>
+<p><a href="../questions/a-alcoholsmanuf.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../alcoholmenu.html#top"><b>To the alcohols menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (last updated October 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

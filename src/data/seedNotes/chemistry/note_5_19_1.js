@@ -397,6 +397,55 @@ export const note_chemistry_5_19_1 = {
       }
     },
     {
+      id: 'h-bromine-reaction',
+      type: 'heading',
+      data: { text: 'Reaction of Phenylamine with Bromine Water', level: 2 }
+    },
+    {
+      id: 'p-bromine-activation',
+      type: 'paragraph',
+      data: {
+        text: 'The −NH₂ group in phenylamine strongly activates the benzene ring, making it much more reactive towards electrophilic substitution. The nitrogen lone pair delocalises into the ring, increasing electron density and making the ring attractive to electrophiles (like Br₂).'
+      }
+    },
+    {
+      id: 'svg-phenylamine-deloc-bromine',
+      type: 'svg',
+      data: {
+        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine: N lone pair delocalises</text><text x="10" y="40" font-size="14" fill="#333">→ Ring activation for Br₂</text></svg>',
+        caption: 'Delocalisation of N lone pair into benzene ring activates ring for bromine substitution.'
+      }
+    },
+    {
+      id: 'callout-bromine-directing',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: '2,4,6-Directing Effect of −NH₂',
+        text: 'The −NH₂ group directs incoming substituents to the 2-, 4-, and 6-positions. This results in multiple substitution when bromine water is added.'
+      }
+    },
+    {
+      id: 'list-bromine-reaction',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Add bromine water (Br₂(aq)) to phenylamine in the cold, no catalyst needed.',
+          'Bromine water is decolourised and a white precipitate forms.',
+          'Product: 2,4,6-tribromophenylamine (white solid).',
+          'Multiple substitution occurs at all activated positions.'
+        ]
+      }
+    },
+    {
+      id: 'eq-bromine-reaction',
+      type: 'equation',
+      data: {
+        html: 'C₆H₅NH₂ + 3Br₂(aq) → C₆H₂Br₃NH₂ + 3HBr<br />Product: 2,4,6-tribromophenylamine (white precipitate)'
+      }
+    },
+    {
       id: 'checklist-basicity',
       type: 'checklist',
       data: {

@@ -1,0 +1,212 @@
+
+
+
+an introduction to acyl chlorides (acid chlorides)
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTRODUCING ACYL CHLORIDES (acid chlorides)
+
+
+
+
+This page explains what acyl chlorides are and looks at their simple physical properties such as boiling points.  It introduces their chemical reactivity in a general way, but details of specific reactions are given on separate pages - see the acyl chlorides menu (link at the bottom of the page).
+
+
+
+
+
+What are acyl chlorides?
+
+
+Acyl chlorides as &quot;acid derivatives&quot;
+
+A carboxylic acid such as ethanoic acid has the structure:
+
+
+
+There are a number of related compounds in which the -OH group in the acid is replaced by something else.  Compounds like this are described as acid derivatives.
+
+Acyl chlorides (also known as acid chlorides) are one example of an acid derivative.  In this case, the -OH group has been replaced by a chlorine atom.
+
+
+
+
+
+The acyl group
+
+The acyl group is a hydrocarbon group attached to a carbon-oxygen double bond:
+
+
+
+For UK A level purposes, the &quot;R&quot; group is normally restricted to an alkyl group.  It could, however, equally well be a group based on a benzene ring.
+
+
+
+Naming acyl chlorides
+
+The easiest way of thinking about the names is to see the relationship with the corresponding carboxylic acid:
+
+
+
+
+
+carboxylic acid nameacyl chloride nameacyl chloride formula
+
+ethanoic acidethanoyl chlorideCH3COCl
+
+propanoic acidpropanoyl chlorideCH3CH2COCl
+
+butanoic acidbutanoyl chlorideCH3CH2CH2COCl
+
+
+
+
+
+
+If you have something substituted into the hydrocarbon chain, the carbon in the -COCl group counts as the number 1 carbon.
+
+For example, 2-methylbutanoyl chloride is:
+
+
+
+
+
+
+
+Note: &nbsp;Hardly anyone ever mentions methanoyl chloride, HCOCl - derived from methanoic acid.  That is because methanoyl chloride is very unstable, decomposing to give carbon monoxide and HCl.
+
+
+
+
+
+
+
+
+
+
+
+
+Physical properties of acyl chlorides
+
+
+Appearance
+
+An acyl chloride like ethanoyl chloride is a colourless fuming liquid.  The strong smell of ethanoyl chloride is a mixture of the smell of vinegar (ethanoic acid) and the acrid  smell of hydrogen chloride gas.
+
+The smell and the fumes are because ethanoyl chloride reacts with water vapour in the air.  The reaction with water is given in detail on another page.  (Find it from the acyl chlorides menu - link at the bottom of this page.)
+
+
+
+Solubility in water
+
+Acyl chlorides can't be said to dissolve in water because they react (often violently) with it.  The strong reaction means that it is impossible to get a simple aqueous solution of an acyl chloride.
+
+
+
+Boiling points
+
+Taking ethanoyl chloride as typical:
+
+Ethanoyl chloride boils at 51&deg;C.  It is a polar molecule, and so has dipole-dipole attractions between its molecules as well as van der Waals dispersion forces.
+
+However, it doesn't form hydrogen bonds.  Its boiling point is therefore higher than, say, an alkane of similar size (which has no permanent dipoles), but not as high as a similarly sized alcohol (which forms hydrogen bonds in addition to everything else.)
+
+
+
+
+
+Note: &nbsp;If you aren't happy about intermolecular forces (including van der Waals dispersion forces and hydrogen bonds) then you really ought to follow this link before you go on.
+
+Use the BACK button on your browser to return to this page.
+
+
+
+
+
+
+
+
+
+
+
+
+Reactivity of acyl chlorides
+
+
+Substitution of the chlorine atom by other groups
+
+Acyl chlorides are extremely reactive, and in their reactions the chlorine atom is replaced by other things.
+
+In each case, in the first instance, hydrogen chloride gas is produced as steamy acidic fumes.  However, in some cases the hydrogen chloride goes on to react with one of the substances in the reaction mixture.
+
+Taking ethanoyl chloride as typical, the initial reaction is of this kind:
+
+
+
+The reactions involve things like water, alcohols and phenols, or ammonia and amines.  All of these particular cases contain a very electronegative element with an active lone pair of electrons - either oxygen or nitrogen.
+
+
+
+
+
+Note: &nbsp;You can find details of all these reactions from the acyl chlorides menu (link below).
+
+If you are interested in exploring the general mechanism for these reactions, you will find it by following this link to another part of the site dealing with nucleophilic addition-elimination reactions.  If you want mechanisms for specific reactions you could explore other pages from the nucleophilic addition-elimination menu as well - but read the general mechanism first.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questions to test your understanding
+
+If this is the first set of questions you have done, please read the introductory page before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+
+questions on the introduction to acyl chlorides
+answers
+
+
+
+
+
+
+
+
+
+Where would you like to go now?
+
+To the acyl chlorides menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+
+
+
+
+
+
+
+ &copy; Jim Clark 2004 (modified December 2015)
+
+
+
+
+
+

@@ -6,7 +6,7 @@ export const note_chemistry_4_15_5 = {
       id: 'obj-carboxylic',
       type: 'objective',
       data: {
-        text: 'Know the nomenclature, displayed/skeletal formulae, and physical properties of carboxylic acids. Understand preparation methods and master the four key reactions: reduction, neutralisation, halogenation, and esterification (IAL Unit 4, Topic 15c).'
+        text: 'Know the nomenclature, displayed/skeletal formulae, and physical properties of carboxylic acids. Understand preparation methods and master the key reactions: reduction, neutralisation, halogenation, esterification, and decarboxylation (IAL Unit 4, Topic 15c).'
       }
     },
 
@@ -119,6 +119,59 @@ export const note_chemistry_4_15_5 = {
   <text x="494" y="104" font-size="11" fill="#7c3aed">delocalised bond</text>
 </svg>`,
         caption: 'Loss of H⁺ from RCOOH gives the carboxylate ion (RCOO⁻). The negative charge delocalises equally over both C–O bonds (dashed lines), making the anion far more stable than an alkoxide (RO⁻) — this is why carboxylic acids are stronger acids than alcohols.'
+      }
+    },
+
+    // ── Relative Acidity & Inductive Effects ─────────────────────────────────
+    {
+      id: 'h-relative-acidity',
+      type: 'heading',
+      data: { text: 'Relative Acidity & Inductive Effects', level: 2 }
+    },
+    {
+      id: 'list-acidity-comparison',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Carboxylic Acids vs Phenols vs Alcohols:</strong> Acid strength depends on the stability of the anion formed after losing H⁺.',
+          '<strong>Alcohols</strong> (e.g. ethanol) are very weak acids (pKₐ ~16). The ethoxide ion (CH₃CH₂O⁻) has the negative charge localised entirely on one oxygen atom, attracting H⁺ back immediately.',
+          '<strong>Phenols</strong> are stronger acids than alcohols (pKₐ ~10). In the phenoxide ion, the oxygen lone pair partially delocalises into the benzene ring, spreading out the negative charge over the ring, making the ion slightly more stable.',
+          '<strong>Carboxylic acids</strong> are stronger still (pKₐ ~4–5). The negative charge in the carboxylate ion is perfectly delocalised evenly across two highly electronegative oxygen atoms, making the ion very stable.'
+        ]
+      }
+    },
+    {
+      id: 'h-inductive',
+      type: 'heading',
+      data: { text: 'Inductive Effects in Carboxylic Acids', level: 3 }
+    },
+    {
+      id: 'list-inductive-effects',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Alkyl groups (+I effect):</strong> Alkyl groups are electron-donating (pushing electrons away). They increase the negative charge density on the carboxylate ion, making it less stable.',
+          'Therefore, ethanoic acid is a weaker acid than methanoic acid.',
+          '<strong>Electronegative atoms (–I effect):</strong> Atoms like halogens (e.g. chlorine) withdraw electrons from the carboxylate group.',
+          'This pulls negative charge away from the –COO⁻ group, spreading it out further and stabilising the ion. This makes the acid significantly stronger.'
+        ]
+      }
+    },
+    {
+      id: 'table-inductive-pka',
+      type: 'comparisonTable',
+      data: {
+        headers: ['Acid', 'Formula', 'pKₐ'],
+        rows: [
+          ['Methanoic acid', 'HCOOH', '3.75'],
+          ['Ethanoic acid', 'CH₃COOH', '4.76'],
+          ['Chloroethanoic acid', 'CH₂ClCOOH', '2.86'],
+          ['Dichloroethanoic acid', 'CHCl₂COOH', '1.29'],
+          ['Trichloroethanoic acid', 'CCl₃COOH', '0.65']
+        ],
+        caption: 'Smaller pKₐ means stronger acid. Adding electron-withdrawing chlorine atoms significantly increases acid strength.'
       }
     },
 
@@ -260,8 +313,9 @@ export const note_chemistry_4_15_5 = {
       data: {
         style: 'bullet',
         items: [
-          'Oxidising agent: acidified potassium dichromate(VI) = K₂Cr₂O₇ + conc. H₂SO₄ (abbreviated as [O] in equations)',
-          'Conditions: REFLUX (condenser is vertical) — ensures full/complete oxidation to carboxylic acid',
+          'Oxidising agent: acidified potassium dichromate(VI) = K₂Cr₂O₇ + dilute H₂SO₄ (abbreviated as [O] in equations)',
+          'Conditions: HEAT UNDER REFLUX with an excess of oxidising agent to ensure oxidation goes completely to the carboxylic acid',
+          'Safety Warning: The early stages of reacting a primary alcohol can be highly vigorous. Reagents must be thoroughly mixed before heating to prevent the mixture from suddenly boiling and spurting out of the condenser',
           'Key distinction: distillation = stop at aldehyde; reflux = go all the way to carboxylic acid',
           'Primary alcohol → carboxylic acid requires 2 mol [O] (two-step: alcohol → aldehyde → acid)',
           'Aldehyde → carboxylic acid requires 1 mol [O] (one-step)',
@@ -280,7 +334,7 @@ export const note_chemistry_4_15_5 = {
       id: 'p-nitrile-intro',
       type: 'paragraph',
       data: {
-        text: 'A nitrile contains the –C≡N group. The carbon in –CN counts as part of the carbon chain (e.g. propanenitrile CH₃CH₂C≡N has 3 carbons). Nitriles are hydrolysed under reflux with dilute acid or aqueous alkali.'
+        text: 'A nitrile contains the –C≡N group. The carbon in –CN counts as part of the carbon chain (e.g. propanenitrile CH₃CH₂C≡N has 3 carbons).\n\n**Synthesis Role**: Nitriles are vital in organic synthesis because they increase the carbon chain length by one. They are formed by reacting halogenoalkanes with cyanide ions, or aldehydes/ketones with hydrogen cyanide. Nitriles are hydrolysed under reflux with dilute acid or aqueous alkali to form carboxylic acids.'
       }
     },
     {
@@ -309,7 +363,7 @@ export const note_chemistry_4_15_5 = {
     {
       id: 'h-reactions',
       type: 'heading',
-      data: { text: 'Four Key Reactions of Carboxylic Acids', level: 2 }
+      data: { text: 'Key Reactions of Carboxylic Acids', level: 2 }
     },
     {
       id: 'callout-no-mechanism',
@@ -317,7 +371,7 @@ export const note_chemistry_4_15_5 = {
       data: {
         style: 'tip',
         title: 'IAL Exam Note — No Mechanisms Required',
-        text: 'For all four key reactions below, you only need to know:\n• Reagents\n• Conditions\n• Products\n\nMechanisms are NOT required for any of these four reactions in the IAL Unit 4 exam.'
+        text: 'For all the key reactions below, you only need to know:\n• Reagents\n• Conditions\n• Products\n\nMechanisms are NOT required for any of these reactions in the IAL Unit 4 exam.'
       }
     },
 
@@ -333,11 +387,12 @@ export const note_chemistry_4_15_5 = {
       data: {
         style: 'bullet',
         items: [
-          'Reagent: lithium aluminium hydride (LiAlH₄)',
-          'Conditions: dry ether (anhydrous) — water must be excluded to prevent LiAlH₄ decomposing',
-          'Product: primary alcohol (R–CH₂OH)',
-          'Adds 4 H atoms in total to the carboxyl group (2 to carbonyl C, 2 to the two oxygens)',
-          'The aldehyde (RCHO) is an intermediate but CANNOT be isolated — it is more easily reduced than the carboxylic acid and immediately converts to the primary alcohol'
+          '**Reagent:** Lithium tetrahydridoaluminate(III) ($LiAlH_4$).',
+          '**Conditions:** Room temperature in dry ethoxyethane (dry ether). $LiAlH_4$ reacts violently with water, so moisture must be excluded.',
+          '**Product:** Primary alcohol (R–CH₂OH).',
+          'The reaction happens in two stages (intermediate aldehyde), but because $LiAlH_4$ reacts very rapidly with aldehydes, it is impossible to stop at the halfway stage.',
+          'At the end of the reaction, the product is an aluminium complex. Dilute sulphuric acid is added to release the primary alcohol from the complex.',
+          '**Crucial Exam Note:** Sodium tetrahydridoborate ($NaBH_4$) CANNOT be used. It is safer than $LiAlH_4$, but not reactive enough to reduce carboxylic acids.'
         ]
       }
     },
@@ -359,11 +414,18 @@ export const note_chemistry_4_15_5 = {
       }
     },
 
-    // Reaction 2: Neutralisation
+    // Reaction 2: Neutralisation / Acid Reactions
     {
       id: 'h-neutralisation',
       type: 'heading',
-      data: { text: 'Reaction 2 — Neutralisation', level: 3 }
+      data: { text: 'Reaction 2 — Reactions as Weak Acids (Neutralisation & Salts)', level: 3 }
+    },
+    {
+      id: 'p-acid-behaviour',
+      type: 'paragraph',
+      data: {
+        text: 'Carboxylic acids act as typical weak acids (typical pH ~2–3). They donate a proton to form a carboxylate ion (RCOO⁻). They undergo standard acid reactions but generally slower than strong acids like HCl.'
+      }
     },
     {
       id: 'list-neutralisation',
@@ -371,13 +433,22 @@ export const note_chemistry_4_15_5 = {
       data: {
         style: 'bullet',
         items: [
-          'Carboxylic acids are weak acids — fully neutralised by aqueous alkali (strong base)',
-          'Reagent: NaOH(aq) or KOH(aq)',
-          'Products: carboxylate salt + water',
-          'Carboxylate salt formula convention: metal comes SECOND — e.g. sodium ethanoate = CH₃COONa (not NaCH₃COO)',
-          'General formula of sodium carboxylate salts: RCOONa',
-          'Salts are ionic, water-soluble, and form the basis of buffer solutions (Topic 14)'
+          '**With Metal Hydroxides:** Neutralised by aqueous alkali (e.g. NaOH) to form a carboxylate salt and water.',
+          '**With Reactive Metals:** Reacts with metals like magnesium to form a salt and hydrogen gas (e.g. Mg + 2CH₃COOH → (CH₃COO)₂Mg + H₂).',
+          '**With Carbonates / Hydrogencarbonates:** Forms salt, carbon dioxide gas, and water. Adding solid Na₂CO₃ produces immediate diagnostic fizzing (effervescence) of CO₂.',
+          '**With Ammonia / Amines:** Donates a proton to the nitrogen lone pair, forming an ammonium salt (e.g. ammonium ethanoate) or alkylammonium salt (e.g. methylammonium ethanoate).',
+          'Carboxylate salt formula convention: the metal/cation is written SECOND — e.g. sodium ethanoate = CH₃COONa (not NaCH₃COO).',
+          'General formula of sodium carboxylate salts: RCOONa. These salts are ionic, water-soluble, and form the basis of buffer solutions (Topic 14).'
         ]
+      }
+    },
+    {
+      id: 'callout-carbonate-test',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Diagnostic Test for Carboxylic Acids',
+        text: 'The reaction with sodium carbonate (Na₂CO₃) or sodium hydrogencarbonate (NaHCO₃) is the standard test for a carboxylic acid. It causes **effervescence (fizzing) of CO₂ gas**. Phenols are also acidic but are too weak to react with carbonates.'
       }
     },
     {
@@ -401,15 +472,14 @@ export const note_chemistry_4_15_5 = {
       data: {
         style: 'bullet',
         items: [
-          'Reagent: phosphorus pentachloride (PCl₅)',
-          'Conditions: anhydrous (dry) — no water present',
-          'The –OH of the carboxyl group is replaced by –Cl',
-          'Products: acyl chloride (R–COCl) + phosphorus trichloride oxide (POCl₃) + hydrogen chloride gas (HCl↑)',
-          'Observation: misty white fumes of HCl produced — confirms HCl is a product',
-          'POCl₃ and HCl are ALWAYS co-products regardless of which carboxylic acid is used',
-          'Acyl chloride functional group: –COCl (carbonyl + Cl on same carbon)',
-          'Acyl chloride naming: suffix –oyl chloride (e.g. propanoyl chloride, ethanoyl chloride)',
-          'General formula: R–CO–Cl'
+          'The –OH of the carboxyl group is replaced by –Cl to form an **acyl chloride** (R–COCl).',
+          '**Reagent 1 (PCl₅):** Solid phosphorus(V) chloride reacts in the cold. Produces liquid $POCl_3$ and steamy acidic fumes of $HCl$ gas.',
+          'The acyl chloride can be separated from $POCl_3$ by fractional distillation.',
+          '**Reagent 2 (PCl₃):** Liquid phosphorus(III) chloride requires heat. Less dramatic than $PCl_5$ because no $HCl$ is produced. Produces $H_3PO_3$ (phosphoric(III) acid) as by-product.',
+          '**Reagent 3 (SOCl₂):** Liquid sulphur dichloride oxide (thionyl chloride). Produces $SO_2$ and $HCl$ gases. Separation is simplified since by-products are gases, but fractional distillation is still needed to separate the acyl chloride from excess reagents.',
+          'All reactions must be kept anhydrous because acyl chlorides vigorously react with water.',
+          'Acyl chloride functional group: –COCl (carbonyl + Cl on same carbon).',
+          'Acyl chloride naming: suffix –oyl chloride (e.g. propanoyl chloride, ethanoyl chloride).'
         ]
       }
     },
@@ -419,6 +489,14 @@ export const note_chemistry_4_15_5 = {
       data: {
         html: 'CH₃CH₂COOH + PCl₅ → CH₃CH₂COCl + POCl₃ + HCl↑',
         caption: 'Propanoic acid + PCl₅ (anhydrous) → propanoyl chloride + POCl₃ + HCl (misty fumes). Only the carboxylic acid and acyl chloride change between examples — POCl₃ and HCl are always formed.'
+      }
+    },
+    {
+      id: 'equation-halogenation-socl2',
+      type: 'equation',
+      data: {
+        html: 'CH₃COOH + SOCl₂ → CH₃COCl + SO₂ + HCl',
+        caption: 'Ethanoic acid + thionyl chloride → ethanoyl chloride + sulphur dioxide + hydrogen chloride. Easier to separate because the by-products are gases.'
       }
     },
     {
@@ -445,12 +523,13 @@ export const note_chemistry_4_15_5 = {
         items: [
           'Reagents: carboxylic acid + alcohol',
           'Catalyst: concentrated sulfuric acid (conc. H₂SO₄)',
-          'Conditions: heat (equilibrium reaction — also called a condensation reaction since water is lost)',
+          'Conditions: heat (reaction is slow and reversible — also called condensation as water is lost)',
           'Products: ester + water',
-          'The –OH is lost from the carboxylic acid and –H is lost from the alcohol –OH → join to form H₂O',
-          'Ester general formula: R–COO–R′ (R from the acid, R′ from the alcohol)',
-          'Naming: [alcohol-derived part]-yl + [acid-derived part]-oate',
-          'Esters are used as solvents, flavourings, perfumes, and to make polyesters (plastics, clothing)'
+          'Mechanism feature: The –OH is lost from the carboxylic acid and the –H is lost from the alcohol oxygen. They join to form H₂O.',
+          'Small Scale/Testing: Add everything to a test tube, warm in a water bath, and pour into a small beaker of water. The insoluble ester forms a thin layer on the surface while unreacted acid and alcohol dissolve below. The ester emits a sweet "artificial fruit" or "pear drops" smell.',
+          'Large Scale (Small Esters): Gently heat and **distil off the ester** as soon as it forms. Since the ester cannot form H-bonds with itself, it has the lowest boiling point in the mixture. Removing it prevents the reverse reaction.',
+          'Large Scale (Large Esters): For slowly-forming large esters, heat under reflux to establish equilibrium, then isolate via fractional distillation.',
+          'Esters are used as solvents, flavourings, perfumes, and to make polyesters (plastics).'
         ]
       }
     },
@@ -466,17 +545,55 @@ export const note_chemistry_4_15_5 = {
       id: 'callout-ester-naming',
       type: 'callout',
       data: {
-        style: 'tip',
-        title: 'How to Name Esters',
-        text: 'Ester name = [alcohol part] + [acid part]\n\n• Alcohol → drop "-ol", add "-yl" prefix → ethanol = ethyl–\n• Acid → drop "-ic acid", add "-ate" suffix → propanoic acid = –propanoate\n\nExamples:\n• Ethanol + ethanoic acid → ethyl ethanoate (CH₃COOC₂H₅)\n• Methanol + propanoic acid → methyl propanoate\n• Ethanol + methanoic acid → ethyl methanoate\n\nIn R–COO–R′: the R group comes from the acid; the R′ group comes from the alcohol.'
+        style: 'worked',
+        title: '✏️ How to Name and Draw Esters',
+        text: 'Ester name = [alcohol part] + [acid part]\n\n• Alcohol → drop "-ol", add "-yl" prefix → ethanol = ethyl–\n• Acid → drop "-ic acid", add "-ate" suffix → ethanoic acid = –ethanoate\n\n**Warning**: Esters are named the *opposite* way around from how their formula is written!\n\n**Formula:** In R–COO–R′, the left side (R–COO–) comes from the acid. The right side (–R′) comes from the alcohol.\n• Ethanol + ethanoic acid → ethyl ethanoate (CH₃COOCH₂CH₃)\n• Methanol + propanoic acid → methyl propanoate (CH₃CH₂COOCH₃)\n• Ethanol + methanoic acid → ethyl methanoate (HCOOCH₂CH₃)'
       }
     },
 
-    // Summary table of all 4 reactions
+    // Reaction 5: Decarboxylation
+    {
+      id: 'h-decarboxylation',
+      type: 'heading',
+      data: { text: 'Reaction 5 — Decarboxylation (using Soda Lime)', level: 3 }
+    },
+    {
+      id: 'list-decarboxylation',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '**What is decarboxylation?** The –COOH or –COONa group is removed and replaced with a hydrogen atom, effectively shortening the carbon chain by losing CO₂.',
+          '**Reagent:** Solid soda lime. (Soda lime is a mixture of sodium hydroxide and calcium oxide; it comes as white granules and is easier/safer to handle than solid NaOH).',
+          'In equations, soda lime is almost always written simply as sodium hydroxide (NaOH).',
+          '**Conditions:** The solid sodium salt of the carboxylic acid is mixed with solid soda lime and **heated** strongly.',
+          '**Product:** An alkane (or a benzene ring if using benzoic acid) + sodium carbonate (Na₂CO₃).'
+        ]
+      }
+    },
+    {
+      id: 'equation-decarbox',
+      type: 'equation',
+      data: {
+        html: 'CH<sub>3</sub>COONa(s) + NaOH(s) → CH<sub>4</sub>(g) + Na<sub>2</sub>CO<sub>3</sub>(s)',
+        caption: 'Sodium ethanoate + soda lime (treated as NaOH) → methane + sodium carbonate. This is a step-down reaction.'
+      }
+    },
+    {
+      id: 'callout-benzoic-decarbox',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Decarboxylating Acids directly',
+        text: 'This reaction can also be done directly with certain solid carboxylic acids instead of their salts. For example, solid benzoic acid (C₆H₅COOH) heated with soda lime will produce benzene (C₆H₆).'
+      }
+    },
+
+    // Summary table of all reactions
     {
       id: 'h-summary-reactions',
       type: 'heading',
-      data: { text: 'Summary: Four Key Reactions', level: 2 }
+      data: { text: 'Summary: Key Reactions', level: 2 }
     },
     {
       id: 'table-four-reactions',
@@ -487,9 +604,10 @@ export const note_chemistry_4_15_5 = {
           ['① Reduction', 'LiAlH₄', 'Dry ether, anhydrous', 'Primary alcohol (R–CH₂OH) + H₂O'],
           ['② Neutralisation', 'NaOH(aq)', 'Aqueous, room temperature', 'Carboxylate salt (RCOONa) + H₂O'],
           ['③ Halogenation', 'PCl₅', 'Anhydrous', 'Acyl chloride (RCOCl) + POCl₃ + HCl↑ (misty fumes)'],
-          ['④ Esterification', 'Alcohol + conc. H₂SO₄ (cat.)', 'Heat, equilibrium (⇌)', 'Ester (RCOOR′) + H₂O']
+          ['④ Esterification', 'Alcohol + conc. H₂SO₄ (cat.)', 'Heat, equilibrium (⇌)', 'Ester (RCOOR′) + H₂O'],
+          ['⑤ Decarboxylation', 'Soda lime (NaOH/CaO)', 'Heat with solid sodium salt', 'Alkane (R–H) + Na₂CO₃']
         ],
-        caption: 'Four key reactions of carboxylic acids — IAL Unit 4. No mechanisms required; know reagents, conditions, and products only.'
+        caption: 'Key reactions of carboxylic acids — IAL Unit 4. No mechanisms required; know reagents, conditions, and products only.'
       }
     },
 
@@ -527,7 +645,7 @@ export const note_chemistry_4_15_5 = {
       {
         id: 'cue-1',
         blockId: 'svg-carboxylate',
-        prompt: 'Why are carboxylic acids stronger acids than alcohols? Describe what happens to the negative charge when H⁺ is lost from RCOOH.'
+        prompt: 'How does resonance stabilisation in the carboxylate ion make carboxylic acids stronger acids than alcohols?'
       },
       {
         id: 'cue-2',
@@ -553,9 +671,19 @@ export const note_chemistry_4_15_5 = {
         id: 'cue-6',
         blockId: 'table-four-reactions',
         prompt: 'From memory, state the reagents and conditions for all four key reactions of carboxylic acids.'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'list-acidity-comparison',
+        prompt: 'Compare and explain the relative acidities of ethanol, phenol, and ethanoic acid in terms of anion stability.'
+      },
+      {
+        id: 'cue-8',
+        blockId: 'list-inductive-effects',
+        prompt: 'Explain how alkyl groups and halogen atoms affect the acidity of a carboxylic acid.'
       }
     ],
-    summaryText: 'Carboxylic acids (R–COOH) are weak acids — carboxylate ion (RCOO⁻) is resonance-stabilised (charge over both C–O bonds). Highest BP of all series (3 IMFs); short-chain acids very soluble (2 H-bonds with water). Preparations: K₂Cr₂O₇/H₂SO₄ reflux from 1° alcohol/aldehyde; acidic nitrile hydrolysis (1 step) or alkaline (2 steps). Four reactions: ① LiAlH₄/dry ether → primary alcohol (cannot stop at aldehyde); ② NaOH → carboxylate salt + H₂O; ③ PCl₅/anhydrous → acyl chloride + POCl₃ + HCl (misty fumes); ④ alcohol/conc. H₂SO₄/heat → ester + H₂O (reversible).',
+    summaryText: 'Carboxylic acids (R–COOH) are weak acids — carboxylate ion (RCOO⁻) is resonance-stabilised (charge over both C–O bonds). Acidity order: Carboxylic Acids > Phenols > Alcohols. Electron-withdrawing halogens increase acid strength, alkyl groups decrease it. Highest BP of all series (3 IMFs); short-chain acids very soluble (2 H-bonds with water). Preparations: K₂Cr₂O₇/H₂SO₄ reflux from 1° alcohol/aldehyde; acidic nitrile hydrolysis (1 step) or alkaline (2 steps). Four reactions: ① LiAlH₄/dry ether → primary alcohol (cannot stop at aldehyde); ② NaOH → carboxylate salt + H₂O; ③ PCl₅/anhydrous → acyl chloride + POCl₃ + HCl (misty fumes); ④ alcohol/conc. H₂SO₄/heat → ester + H₂O (reversible).',
     ready: false
   },
   evidence: [

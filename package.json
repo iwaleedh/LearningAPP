@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "chart.js": "^4.5.1",
+    "cheerio": "^1.2.0",
     "convex": "^1.32.0",
     "katex": "^0.16.33",
     "lucide-react": "^0.575.0",

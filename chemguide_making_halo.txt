@@ -1,0 +1,279 @@
+
+<html>
+<head>
+<title>making halogenoalkanes (haloalkanes)</title>
+
+<meta name="description"
+content="Lab preparations of halogenoalkanes" />
+<meta name="keywords"
+content="halogenoalkanes, haloalkanes, alkyl halides, preparation, making" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>MAKING HALOGENOALKANES (haloalkanes or alkyl halides)</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This page looks at ways of making halogenoalkanes in the lab starting from alcohols.  It covers more than enough detail for UK A level purposes, but isn't intended to be all-inclusive!</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Summarising the methods of preparation</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>Halogenoalkanes can be made from the reaction between alkenes and hydrogen halides, but they are more commonly made by replacing the -OH group in an alcohol by a halogen atom.  That's the method we'll concentrate on in this page.</p>
+<pre>
+
+</pre>
+<p><b>Making halogenoalkanes from alcohols using hydrogen halides</b></p>
+
+<p>The general reaction looks like this:</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohhxeqn.gif" width="245" height="15" /></p>
+
+<p><b><i>Making chloroalkanes</i></b></p>
+
+<p>It is possible to make tertiary chloroalkanes successfully from the corresponding alcohol and concentrated hydrochloric acid, but to make primary or secondary ones you really need to use a different method - the reaction rates are too slow.</p>
+
+<p>A tertiary chloroalkane can be made by shaking the corresponding alcohol with concentrated hydrochloric acid at room temperature.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohhcleqn.gif" width="328" height="64" /></p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you don't know what primary, secondary and tertiary halogenoalkanes are, you should read the <a href="background.html#top">introduction to halogenoalkanes</a> before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b><i>Making bromoalkanes</i></b></p>
+
+<p>Rather than using hydrobromic acid, you usually treat the alcohol with a mixture of sodium or potassium bromide and concentrated sulphuric acid.  This produces hydrogen bromide which reacts with the alcohol.  The mixture is warmed to distil off the bromoalkane.  You will find practical details of a reaction of this kind further down the page.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohhbreqn.gif" width="355" height="15" /></p>
+
+<p><b><i>Making iodoalkanes</i></b></p>
+
+<p>In this case the alcohol is reacted with a mixture of sodium or potassium iodide and concentrated phosphoric(V) acid, H<sub>3</sub>PO<sub>4</sub>, and the iodoalkane is distilled off.  The mixture of the iodide and phosphoric(V) acid produces hydrogen iodide which reacts with the alcohol.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohhieqn.gif" width="346" height="15" /></p>
+
+<p>Phosphoric(V) acid is used instead of concentrated sulphuric acid because sulphuric acid oxidises iodide ions to iodine and produces hardly any hydrogen iodide.  A similar thing happens to some extent with bromide ions in the preparation of bromoalkanes, but not enough to get in the way of the main reaction.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you are interested in the reactions between <a href="../../inorganic/group7/halideions.html#top">halide ions and concentrated sulphuric acid</a> you could follow this link.  In the present context, all you would need to do is read the beginning of that page.</p>
+
+<p>If you choose to follow this link, use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<pre>
+
+</pre>
+<p><b>Making halogenoalkanes from alcohols using phosphorus halides</b></p>
+
+<p><b><i>Making chloroalkanes</i></b></p>
+
+<p>Chloroalkanes can be made by reacting an alcohol with liquid phosphorus(III) chloride, PCl<sub>3</sub>.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohpcl3eqn.gif" width="403" height="15" /></p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>The reason for choosing a slightly bigger alcohol as an example rather than using ethanol is that chloroethane (which would be formed with ethanol) is a gas, and the preparation would have to be handled differently.  1-chloropropane (formed in this equation) is a liquid.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>They can also be made by adding solid phosphorus(V) chloride, PCl<sub>5</sub> to an alcohol.</p>
+
+<p>This reaction is violent at room temperature, producing clouds of hydrogen chloride gas.  It isn't a good choice as a way of making halogenoalkanes, although it is used as a test for -OH groups in organic chemistry.</p>
+
+<p><img src="padding.gif" width="30" height="15" /><img src="rohpcl5eqn.gif" width="427" height="15" /></p>
+
+<p>There are also side reactions involving the POCl<sub>3</sub> reacting with the alcohol.</p>
+
+<p><b><i>Making bromoalkanes and iodoalkanes</i></b></p>
+
+<p>These are both made in the same general way.  Instead of using phosphorus(III) bromide or iodide, the alcohol is heated under reflux with a mixture of red phosphorus and either bromine or iodine.</p>
+
+<p>The phosphorus first reacts with the bromine or iodine to give the phosphorus(III) halide.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="pbr3eqn.gif" width="211" height="15" /></p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="pi3eqn.gif" width="202" height="15" /></p>
+
+<p>These then react with the alcohol to give the corresponding halogenoalkane which can be distilled off.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohpbr3eqn.gif" width="374" height="15" /></p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohpi3eqn.gif" width="365" height="15" /></p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Making bromoethane in the lab</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>This is a simple example of an organic preparation, and is one of the most commonly used in A level chemistry courses.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#ff0000" face="Helvetica, Arial"size="2">
+<p><hr /><b>Warning! &nbsp;</b>The method described below is NOT complete.  It deliberately avoids mentioning quantities and doesn't cover any of the safety aspects of the preparation.  You can find full details in most organic practical books.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p><b>Making impure bromoethane</b></p>
+
+<p>Concentrated sulphuric acid is added <i>slowly</i> with lots of shaking and cooling to some ethanol in a flask.  Care has to be taken because a great deal of heat is produced when the two are mixed, and there is a real risk of the ethanol boiling and spraying concentrated sulphuric acid around.</p>
+
+<p>Solid potassium bromide is then added to the mixture,  and the flask is connected to a condenser so that the bromoethane formed can be distilled off.</p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="hbreqn.gif" width="309" height="15" /></p>
+
+<p><img src="padding.gif" width="40" height="15" /><img src="rohhbreqn.gif" width="355" height="15" /></p>
+
+<p>Bromoethane has a low boiling point but is denser than water and almost insoluble in it.  To prevent it from evaporating, it is often collected under water in a flask surrounded by ice.  Sometimes it is simply collected in a tube surrounded by ice without any water.</p>
+
+<p>The reaction flask is heated gently until no more droplets of bromoethane collect.</p>
+
+<p><b>Purifying the bromoethane</b></p>
+
+<p>Impurities in the bromoethane include:</p>
+
+<ul>
+<li><p>hydrogen bromide (although most of that will dissolve in the water if you are collecting the bromoethane under water);</p></li>
+
+<li><p>bromine - from the oxidation of bromide ions by the concentrated sulphuric acid;</li></p>
+
+<li><p>sulphur dioxide - formed when concentrated sulphuric acid oxidises the bromide ions;</li></p>
+
+<li><p>unreacted ethanol;</li></p>
+
+<li><p>ethoxyethane (diethyl ether) - formed by a side reaction between the ethanol and the concentrated sulphuric acid.</li></p>
+</ul>
+
+<p><b><i>The purification sequence</i></b></p>
+
+<p><i>Stage 1</i></p>
+
+<p>If you have collected the bromoethane under water, transfer the contents of the collection flask to a separating funnel.  Otherwise, pour the impure bromoethane into the separating funnel, add some water and shake it.</p>
+
+<p>Pour off and keep the bromoethane layer.</p>
+
+<p align="center"><img src="purify1.gif" width="231" height="264" /></p>
+
+<p>The water you discard will contain almost all of the hydrogen bromide, and quite a lot of any bromine, sulphur dioxide and ethanol present as impurities.</p>
+
+<p><i>Stage 2</i></p>
+
+<p>To get rid of any remaining acidic impurities (including the bromine and sulphur dioxide), return the bromoethane to the separating funnel and shake it with either sodium carbonate or sodium hydrogencarbonate solution.</p>
+
+<p>This reacts with any acids present liberating carbon dioxide and forming soluble salts.</p>
+
+<p>Separate and retain the lower bromoethane layer as before.</p>
+
+<p><i>Stage 3</i></p>
+
+<p>Now wash the bromoethane with water in a separating funnel to remove any remaining inorganic impurities (excess  sodium carbonate solution, etc).  This time, transfer the lower bromoethane layer to a dry test tube.</p>
+
+<p><i>Stage 4</i></p>
+
+<p>Add some anhydrous calcium chloride to the tube, shake well and leave to stand.  The anhydrous calcium chloride is  a drying agent and removes any remaining water.  It also absorbs ethanol, and so any remaining ethanol may be removed as well (depending on how much calcium chloride you use).</p>
+
+<p><i>Stage 5</i></p>
+
+<p>Transfer the dry bromoethane to a distillation flask and fractionally distil it, collecting what distils over at between 35 and 40&deg;C.</p>
+
+<p>In principle, this should remove any remaining organic impurities.  In practice, though, any ethoxyethane (which is perhaps the most likely impurity left at this stage) has a boiling point very, very close to that of bromoethane.  It is unlikely that you will be able to separate the two.</p>
+
+<p>If there is any ethanol left which hadn't been absorbed by the calcium chloride, that would certainly be removed because its boiling point is much higher.</p>
+
+<p><i>What's left?</i></p>
+
+<p>In my experience with A level students, virtually nothing if you are working on a small scale!!  Every time you go through a purification stage, you inevitably lose some of what you are trying to collect.</p>
+</font>
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-halomaking.pdf">questions on making halogenoalkanes</a></p>
+<p><a href="../questions/a-halomaking.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../haloalkanemenu.html#top"><b>To the halogenoalkanes menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (modified September 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>

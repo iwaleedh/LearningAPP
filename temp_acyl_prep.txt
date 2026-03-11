@@ -1,0 +1,130 @@
+
+
+
+preparation of acyl chlorides (acid chlorides)
+
+
+
+
+
+
+
+
+
+
+
+
+
+MAKING ACYL CHLORIDES (ACID CHLORIDES)
+
+
+
+
+This page looks at ways of swapping the -OH group in the -COOH group of a carboxylic acid for a chlorine atom to make acyl chlorides (acid chlorides), and is a very slightly modified version of a page in the section on reactions of carboxylic acids.
+
+It covers the use of phosphorus(V) chloride, phosphorus(III) chloride and sulphur dichloride oxide (thionyl chloride).
+
+
+
+
+
+Replacing the -OH in a carboxylic acid by -Cl
+
+
+We'll take the conversion of ethanoic acid to ethanoyl chloride as typical.
+
+
+
+
+
+Note: &nbsp;If you haven't   already done  so, it would  probably pay you to have a quick look at the beginning of the introduction to acyl chlorides  before you go on.
+
+Use the BACK button on your browser to return to this page.
+
+
+
+
+
+
+
+
+
+Replacing the -OH group using phosphorus(V) chloride, PCl5
+
+Phosphorus(V) chloride is a solid which reacts with carboxylic acids in the cold to give steamy acidic fumes of hydrogen chloride.   It leaves a liquid mixture of the acyl chloride and a phosphorus compound, phosphorus trichloride oxide (phosphorus oxychloride) - POCl3.
+
+The acyl chloride can be separated by fractional distillation.
+
+For example:
+
+
+
+
+
+Replacing the -OH group using phosphorus(III) chloride, PCl3
+
+Phosphorus(III) chloride is a liquid at room temperature.  Its reaction with a carboxylic acid is less dramatic than that of phosphorus(V) chloride because there is no hydrogen chloride produced.
+
+You end up with a mixture of the acyl chloride and phosphoric(III) acid  (old names:  phosphorous acid or orthophosphorous acid), H3PO3.
+
+For example:
+
+
+
+Again, the ethanoyl chloride can be separated by fractional distillation.
+
+
+
+Replacing the -OH group using sulphur dichloride oxide (thionyl chloride)
+
+Sulphur dichloride oxide (thionyl chloride) is a liquid at room temperature and has the formula SOCl2. 
+
+Traditionally, the formula is written as shown, despite the fact that the modern name writes the chlorine before the oxygen (alphabetical order).
+
+The sulphur dichloride oxide reacts with carboxylic acids to produce an acyl chloride, and sulphur dioxide and hydrogen chloride gases are given off.
+
+For example:
+
+
+
+The separation is simplified to an extent because the by-products are both gases.  You would obviously still have to fractionally distil the mixture to separate the acyl chloride from any excess acid or sulphur dichloride oxide.
+
+
+
+
+
+
+Questions to test your understanding
+
+If this is the first set of questions you have done, please read the introductory page before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.
+
+questions on the preparation of acyl chlorides
+answers
+
+
+
+
+
+
+
+
+
+Where would you like to go now?
+
+To the acyl chlorides menu . . .
+To the menu of other organic compounds . . .
+To Main Menu . . .
+
+
+
+
+
+
+
+ &copy; Jim Clark 2004 (modified December 2015)
+
+
+
+
+
+

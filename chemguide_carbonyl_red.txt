@@ -1,0 +1,168 @@
+
+ 
+ 
+ reduction of aldehydes and ketones 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ REDUCTION OF ALDEHYDES AND KETONES 
+ 
+ 
+ 
+ This page looks at the reduction of aldehydes and ketones by two similar reducing agents - lithium tetrahydridoaluminate(III) (also known as lithium aluminium hydride) and sodium tetrahydridoborate(III) (sodium borohydride). 
+ 
+ 
+ 
+ 
+ Background to the reactions 
+ 
+ The reducing agents 
+ Despite the fearsome names, the structures of the two reducing agents are very simple. In each case, there are four hydrogens (&quot;tetrahydido&quot;) around either aluminium or boron in a negative ion (shown by the &quot;ate&quot; ending). 
+ The &quot;(III)&quot; shows the oxidation state of the aluminium or boron, and is often left out because these elements only ever show the +3 oxidation state in their compounds. To make the names shorter, that's what I shall do for the rest of this page. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; It isn't important as far as the current page is concerned, but if you want to understand more about oxidation states (oxidation numbers) , you will find them explained if you follow this link. 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The formulae of the two compounds are LiAlH 4 and NaBH 4 . 
+ Their structures are: 
+ 
+ In each of the negative ions, one of the bonds is a co-ordinate covalent (dative covalent) bond using the lone pair on a hydride ion (H - ) to form a bond with an empty orbital on the aluminium or boron. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; Follow this link if you aren't happy about co-ordinate covalent (dative covalent) bonding . 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The overall reactions 
+ The reduction of an aldehyde 
+ You get exactly the same organic product whether you use lithium tetrahydridoaluminate or sodium tetrahydridoborate. 
+ For example, with ethanal you get ethanol: 
+ 
+ Notice that this is a simplified equation - perfectly acceptable to UK A level examiners. [H] means "hydrogen from a reducing agent". 
+ In general terms, reduction of an aldehyde leads to a primary alcohol . 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you aren't sure about types of alcohol it is essential to follow this link before you go on. You only need to read the beginning of that page. 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The reduction of a ketone 
+ Again the product is the same whichever of the two reducing agents you use. 
+ For example, with propanone you get propan-2-ol: 
+ 
+ Reduction of a ketone leads to a secondary alcohol . 
+ 
+ 
+ 
+ 
+ Reaction details 
+ 
+ Using lithium tetrahydridoaluminate (lithium aluminium hydride) 
+ Lithium tetrahydridoaluminate is much more reactive than sodium tetrahydridoborate. It reacts violently with water and alcohols, and so any reaction must exclude these common solvents. 
+ The reactions are usually carried out in solution in a carefully dried ether such as ethoxyethane (diethyl ether). The reaction happens at room temperature, and takes place in two separate stages. 
+ In the first stage, a salt is formed containing a complex aluminium ion. The following equations show what happens if you start with a general aldehyde or ketone. R and R' can be any combination of hydrogen or alkyl groups. 
+ 
+ The product is then treated with a dilute acid (such as dilute sulphuric acid or dilute hydrochloric acid) to release the alcohol from the complex ion. 
+ 
+ The alcohol formed can be recovered from the mixture by fractional distillation. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; You can see why UK A level examiners are happy with the equations showing H in square brackets! 
+ On the other hand, you may well be expected to know that the reaction is done initially in solution in ethoxyethane followed by treatment with acid. 
+ The practical details above are simplified to what you are likely to need in a theory exam. In practice, there is an additional step for safety reasons. In particular, if you added dilute acid to the reaction without first removing any excess of LiAlH 4 , there is an explosion risk because of the violent reaction between the excess LiAlH 4 and water in the dilute acid. 
+ Some un-dried ethoxyethane is added first before you add the acid. (Remember that the initial reaction is carried out in carefully dried ethoxyethane.) Traces of water in this react with the excess LiAlH 4 . Because there are only traces present, the reaction is controllable. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Using sodium tetrahydridoborate (sodium borohydride) 
+ Sodium tetrahydridoborate is a more gentle (and therefore safer) reagent than lithium tetrahydridoaluminate. It can be used in solution in alcohols or even solution in water - provided the solution is alkaline. 
+ I have a problem over describing the reaction conditions, because it seems to be used in so many different ways. Practical details found from various university sites vary widely, and don't necessarily agree with what theoretical sources say! 
+ In what follows, I am choosing one out of many different methods. I have chosen this one largely because I think I understand what is going on! 
+ Solid sodium tetrahydridoborate is added to a solution of the aldehyde or ketone in an alcohol such as methanol, ethanol or propan-2-ol. Depending on which recipe you read, it is either heated under reflux or left for some time around room temperature. This almost certainly varies depending on the nature of the aldehyde or ketone. 
+ At the end of this time, a complex similar to the previous one is formed. 
+ 
+ In the second stage of the reaction, water is added and the mixture is boiled to release the alcohol from the complex. 
+ 
+ Again, the alcohol formed can be recovered from the mixture by fractional distillation. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; Experimental variants on this use sodium hydroxide solution or dilute acids instead of water in the second stage. Another variation treats the original aldehyde or ketone with the sodium tetrahydridoborate dissolved in sodium hydroxide solution, adding acid at the end to destroy excess sodium tetrahydridoborate. Unfortunately, none of the experimental sources I have looked at explain what is happening in the second stage in any detail. 
+ The complication doesn't actually stop here! The boron complex formed at the end of the first stage is almost certainly more complicated than this. At least a part of the organic bits attached to the boron will probably come from whatever alcohol molecules are used as the solvent for the reaction. 
+ I have included this detail (even though UK A level students don't need it) because I object to giving simplifications that you might have to completely unlearn in the future if you do a Chemistry degree. 
+ You will find a simplified (for UK A level purposes) mechanism for the reaction by following this link. This mechanism is simplified to the point of being wrong, so if you are working outside of the UK A level system, don't bother to look at it! 
+ This will take you to another part of the site. Use the BACK button on your browser to return to this page if you want to continue to explore aldehyde and ketone reactions. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Questions to test your understanding 
+ If this is the first set of questions you have done, please read the introductory page before you start. You will need to use the BACK BUTTON on your browser to come back here afterwards. 
+ questions on the reduction of aldehydes and ketones 
+ answers 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Where would you like to go now? 
+ To the aldehydes and ketones menu . . . 
+ To the menu of other organic compounds . . . 
+ To Main Menu . . . 
+ 
+ 
+ 
+ 
+ 
+ &copy; Jim Clark 2004 (last modified November 2015) 
+ 
+ 
+ 
+ 
+ 

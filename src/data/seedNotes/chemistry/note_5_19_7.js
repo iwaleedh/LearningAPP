@@ -162,8 +162,25 @@ export const note_chemistry_5_19_7 = {
         text: 'Amines, amides, and amino acids do not react with Na₂CO₃ under these conditions. Amines are bases and do not have an acidic −COOH group. Amides lack a −COOH. Amino acids have a −COO⁻ in their zwitterion form at neutral pH, but the acid is not strong enough to react vigorously with Na₂CO₃.'
       }
     },
+    {      id: 'h-test-5-naoh',
+      type: 'heading',
+      data: { text: 'Test 5: NaOH and Heat (Detection of Amides)', level: 2 }
+    },
     {
-      id: 'h-interpretation-table',
+      id: 'p-test-5-desc',
+      type: 'paragraph',
+      data: {
+        text: 'Boil a small amount of the sample with sodium hydroxide (NaOH) solution. Hold a piece of damp red litmus paper near the mouth of the boiling tube. If simple amides are present, alkaline hydrolysis will occur, releasing ammonia gas (NH₃). The pungent gas turns the red litmus paper blue. Note: Ammonium salts naturally give off NH₃ when mixed with NaOH in the cold, whereas amides require heating.'
+      }
+    },
+    {
+      id: 'eq-amide-hydrolysis-test',
+      type: 'equation',
+      data: {
+        html: 'RCONH₂ + NaOH &rarr; RCOONa + NH₃(g) <br />(Requires heat)'
+      }
+    },
+    {      id: 'h-interpretation-table',
       type: 'heading',
       data: { text: 'Summary: Test Interpretation and Identification', level: 2 }
     },
@@ -171,12 +188,12 @@ export const note_chemistry_5_19_7 = {
       id: 'table-tests',
       type: 'comparisonTable',
       data: {
-        headers: ['Functional Group', 'Litmus', 'HCl (solubility)', 'Ninhydrin', 'Na₂CO₃'],
+        headers: ['Functional Group', 'Litmus', 'HCl (solubility)', 'Ninhydrin', 'Na₂CO₃', 'NaOH (heat)'],
         rows: [
-          ['Amine (RNH₂)', 'Blue (basic)', 'Dissolves if oily', 'Yellow/weak colour', 'No reaction'],
-          ['Amide (RCONH₂)', 'No change', 'No change', 'No colour', 'No reaction'],
-          ['Amino acid (H₂N−CHR−COOH)', 'Weakly blue', 'pH-dependent', 'Blue/purple (Ruhemann\'s)', 'No vigorous reaction'],
-          ['Carboxylic acid (RCOOH)', 'No change', 'No change', 'No colour', 'Effervescence, CO₂ gas']
+          ['Amine (RNH₂)', 'Blue (basic)', 'Dissolves if oily', 'Yellow/weak colour', 'No reaction', '—'],
+          ['Amide (RCONH₂)', 'No change', 'No change', 'No colour', 'No reaction', 'NH₃ gas released (turns damp red litmus blue)'],
+          ['Amino acid (H₂N−CHR−COOH)', 'Weakly blue', 'pH-dependent', 'Blue/purple (Ruhemann\'s)', 'No vigorous reaction', '—'],
+          ['Carboxylic acid (RCOOH)', 'No change', 'No change', 'No colour', 'Effervescence, CO₂ gas', '—']
         ],
         caption: 'Functional Group Test Results'
       }

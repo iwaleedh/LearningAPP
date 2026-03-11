@@ -50,6 +50,24 @@ export const note_chemistry_5_19_5 = {
       }
     },
     {
+      id: 'h-physical-properties',
+      type: 'heading',
+      data: { text: 'Physical Properties of Amino Acids', level: 2 }
+    },
+    {
+      id: 'list-physical-properties',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'Melting points: Surprisingly high for their size (typically 200–300 °C, often decomposing before melting).' },
+          { text: 'Reason: They exist as zwitterions in the solid lattice. Strong ionic attractions between the zwitterions take far more energy to break than the expected weaker hydrogen bonds.' },
+          { text: 'Solubility in water: Generally soluble. Strong attractions between polar water molecules and zwitterions provide enough energy to pull the ionic lattice apart.' },
+          { text: 'Solubility in organic solvents: Insoluble in non-polar solvents (e.g., hydrocarbons) because there is no strong attraction to pull the ionic lattice apart.' }
+        ]
+      }
+    },
+    {
       id: 'h-ph-effects',
       type: 'heading',
       data: { text: 'Amino Acid Charge Variation with pH', level: 2 }
@@ -87,6 +105,15 @@ export const note_chemistry_5_19_5 = {
       type: 'equation',
       data: {
         html: 'Low pH (< 2): ⁺H₃N−CHR−COOH (charge = +1)<br />Neutral pH (≈ 7): ⁺H₃N−CHR−COO⁻ (charge = 0, zwitterion)<br />High pH (> 10): H₂N−CHR−COO⁻ (charge = −1)'
+      }
+    },
+    {
+      id: 'callout-deprotonation-sequence',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Shifting pH from Acidic to Alkaline',
+        text: 'If you start with the fully protonated form at low pH (⁺H₃N−CHR−COOH) and slowly add alkali:\n1. The −COOH group is more acidic, so it loses its proton first, forming the zwitterion (⁺H₃N−CHR−COO⁻).\n2. Upon further addition of alkali, the −NH₃⁺ group loses its proton, forming the negatively charged ion (H₂N−CHR−COO⁻).'
       }
     },
     {
@@ -146,6 +173,18 @@ export const note_chemistry_5_19_5 = {
       }
     },
     {
+      id: 'list-electrophoresis-practical',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'A simple electrophoresis setup uses moistened filter paper on a microscope slide with a crocodile clip at each end attached to a battery.' },
+          { text: 'A drop of amino acid solution is placed in the centre of the paper, and the electric field is applied.' },
+          { text: 'Because amino acids are colourless, their final position is revealed by spraying the paper with ninhydrin solution and heating gently to produce coloured spots.' }
+        ]
+      }
+    },
+    {
       id: 'h-side-chain-effects',
       type: 'heading',
       data: { text: 'Effect of Side Chains on Charge and pI', level: 2 }
@@ -196,7 +235,8 @@ export const note_chemistry_5_19_5 = {
           { text: 'Each amino acid has two enantiomers (non-superimposable mirror images)' },
           { text: 'Dextrorotatory (D or +): rotates polarised light clockwise' },
           { text: 'Laevorotatory (L or −): rotates polarised light anticlockwise' },
-          { text: 'If equal amounts of both enantiomers are present → racemic mixture → no net rotation of polarised light' }
+          { text: 'If equal amounts of both enantiomers are present → racemic mixture → no net rotation of polarised light' },
+          { text: 'All naturally occurring amino acids exist in the L-configuration, though they can be either (+) or (-). Biological systems and enzymes usually only work with one enantiomer because only its spatial arrangement fits properly into active sites.' }
         ]
       }
     },

@@ -4,7 +4,7 @@ export const note_chemistry_5_19_3 = {
       id: 'obj-diazotisation',
       type: 'objective',
       data: {
-        text: 'Explain diazotisation of phenylamine to form benzenediazonium ions; understand temperature control and stability; describe azo coupling to form azo compounds and azo dyes; explain uses of azo compounds'
+        text: 'Explain diazotisation of phenylamine to form benzenediazonium ions; understand temperature control and stability; describe reactions of aliphatic amines with nitrous acid; describe azo coupling to form azo compounds and azo dyes; explain uses of azo compounds'
       }
     },
     {
@@ -40,6 +40,46 @@ export const note_chemistry_5_19_3 = {
         style: 'warning',
         title: 'Temperature Control is Vital',
         text: 'Diazonium ions are UNSTABLE above ~5°C (NOT ~10°C). If the temperature rises above 5°C during diazotisation, the diazonium ion decomposes — the product of decomposition is PHENOL (C₆H₅OH) + N₂ gas. This is why ice is always used: to keep the solution as close to 0°C as possible. Once formed, the diazonium ion should be used immediately in a coupling reaction and NOT stored.'
+      }
+    },
+    {
+      id: 'h-aliphatic-nitrous',
+      type: 'heading',
+      data: { text: 'Reactions of Aliphatic Amines with Nitrous Acid', level: 2 }
+    },
+    {
+      id: 'p-aliphatic-nitrous-1',
+      type: 'paragraph',
+      data: {
+        text: 'While aromatic amines like phenylamine form relatively stable diazonium ions below 5°C, aliphatic amines behave quite differently. Nitrous acid (HNO₂) is unstable and weak, so it is always prepared in situ using sodium nitrite (NaNO₂) and hydrochloric acid.'
+      }
+    },
+    {
+      id: 'p-aliphatic-nitrous-2',
+      type: 'paragraph',
+      data: {
+        text: 'This reaction historically served as a test to distinguish between primary, secondary, and tertiary aliphatic amines due to their starkly different observations:'
+      }
+    },
+    {
+      id: 'list-aliphatic-nitrous',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          { text: 'Primary aliphatic amines: React to form a highly unstable diazonium ion that immediately decomposes, releasing a burst of colourless, odourless nitrogen gas (N₂) and leaving a complex mixture of organic products (principally alcohols).' },
+          { text: 'Secondary aliphatic amines: React to produce a yellow oil known as a nitrosamine (Note: these are powerful carcinogens, so this practical test is heavily restricted).' },
+          { text: 'Tertiary aliphatic amines: Simply form a colourless soluble salt solution (e.g., an alkylammonium ion) with the acid, with no gas or visual change.' }
+        ]
+      }
+    },
+    {
+      id: 'callout-aliphatic-nitrous',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Comparing Aromatic vs Aliphatic',
+        text: 'Aromatic primary amine (Phenylamine) + HNO₂ (0−5°C) → Stable diazonium ion (no gas evolved while kept cold).<br /><br />Aliphatic primary amine + HNO₂ → Unstable diazonium ion → Immediate fizzing/effervescence of N₂ gas.'
       }
     },
     {
@@ -93,6 +133,121 @@ export const note_chemistry_5_19_3 = {
         text: 'Azo compounds are used as synthetic dyes for textiles (fabrics), inks, and food colouring. Examples: Methyl orange (acid-base indicator), Sunset yellow (food dye), Congo red (pH indicator). The −N=N− chromophore absorbs visible light, giving bright colours. Large-scale industrial synthesis uses the same diazotisation/coupling sequence.\n\nMethyl orange structure: dimethylaminobenzene−N=N−benzenesulfonate; the two benzene rings connected by the N=N group form the conjugated system. The diazonium ion from aniline couples with N,N-dimethylaniline.\n\nCoupling with phenol → para-hydroxyazobenzene → YELLOW azo dye. The specific yellow colour is characteristic of the 4-hydroxyphenyl azo product.'
       }
     },
+        {
+          id: 'h-diazonium-substitution',
+          type: 'heading',
+          data: { text: 'Substitution Reactions of Diazonium Ions', level: 2 }
+        },
+        {
+          id: 'list-diazonium-substitution',
+          type: 'list',
+          data: {
+            style: 'numbered',
+            items: [
+              'Warming benzenediazonium chloride solution causes substitution by −OH: phenol is formed and N₂ gas is released.',
+              'Adding potassium iodide (KI) to cold benzenediazonium chloride solution substitutes −N₂⁺ with iodine: iodobenzene is formed and N₂ gas is released.',
+              'Both reactions are useful for introducing groups (−OH, −I) onto benzene rings that are otherwise difficult to attach.'
+            ]
+          }
+        },
+        {
+          id: 'eq-diazonium-substitution',
+          type: 'equation',
+          data: {
+            html: 'C₆H₅N₂⁺Cl⁻ + H₂O (warm) → C₆H₅OH + N₂ + HCl<br />C₆H₅N₂⁺Cl⁻ + KI (cold) → C₆H₅I + N₂ + KCl'
+          }
+        },
+        {
+          id: 'svg-diazonium-substitution',
+          type: 'svg',
+          data: {
+            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Diazonium ion (C₆H₅N₂⁺) + H₂O (warm)</text><text x="10" y="40" font-size="14" fill="#333">→ Phenol + N₂</text><text x="10" y="60" font-size="14" fill="#333">Diazonium ion + KI (cold) → Iodobenzene + N₂</text></svg>',
+            caption: 'Substitution reactions: −N₂⁺ replaced by −OH (warm) or −I (cold), releasing nitrogen gas.'
+          }
+        },
+        {
+          id: 'h-diazonium-coupling',
+          type: 'heading',
+          data: { text: 'Coupling Reactions: Formation of Azo Dyes', level: 2 }
+        },
+        {
+          id: 'list-diazonium-coupling',
+          type: 'list',
+          data: {
+            style: 'numbered',
+            items: [
+              'Phenol (as sodium phenoxide, in NaOH) couples with benzenediazonium chloride (cold) to form an orange azo compound.',
+              'Naphthalen-2-ol (2-naphthol, in NaOH) couples with benzenediazonium chloride (cold) to form an intense orange-red azo compound.',
+              'Phenylamine (aniline, cold) couples with benzenediazonium chloride to form a yellow azo compound (aniline yellow).',
+              'Azo compounds are intensely coloured and used as dyes (azo dyes).'
+            ]
+          }
+        },
+        {
+          id: 'eq-diazonium-coupling',
+          type: 'equation',
+          data: {
+            html: 'C₆H₅N₂⁺Cl⁻ + C₆H₅O⁻ (phenoxide, cold, NaOH) → C₆H₅−N=N−C₆H₄−OH (azo dye, orange)<br />C₆H₅N₂⁺Cl⁻ + C₁₀H₇O⁻ (naphthoxide, cold, NaOH) → C₆H₅−N=N−C₁₀H₆−OH (azo dye, red)<br />C₆H₅N₂⁺Cl⁻ + C₆H₅NH₂ (aniline, cold) → C₆H₅−N=N−C₆H₄−NH₂ (azo dye, yellow)'
+          }
+        },
+        {
+          id: 'svg-diazonium-coupling',
+          type: 'svg',
+          data: {
+            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Diazonium ion + phenoxide (NaOH, cold)</text><text x="10" y="40" font-size="14" fill="#333">→ Orange azo dye</text><text x="10" y="60" font-size="14" fill="#333">Diazonium ion + naphthoxide → Red azo dye</text></svg>',
+            caption: 'Coupling reactions: diazonium ion forms azo dyes with phenol, naphthol, or aniline under cold, alkaline conditions.'
+          }
+        },
+        {
+          id: 'callout-azo-dye-uses',
+          type: 'callout',
+          data: {
+            style: 'tip',
+            title: 'Azo Dyes — Uses and Colour',
+            text: 'Azo compounds (−N=N− bridge) are highly conjugated and absorb visible light, giving intense colours (orange, red, yellow). Over half of modern dyes are azo dyes. The exact colour depends on substituents and conjugation.'
+          }
+        },
+        {
+          id: 'h-methyl-orange-indicator',
+          type: 'heading',
+          data: { text: 'Azo Dye Indicator: Methyl Orange', level: 2 }
+        },
+        {
+          id: 'list-methyl-orange',
+          type: 'list',
+          data: {
+            style: 'bullet',
+            items: [
+              'Methyl orange is an azo dye indicator.',
+              'Red in acidic solution (pH < 3.1), yellow in alkaline (pH > 4.4), orange in between.',
+              'Colour change is due to protonation/deprotonation affecting electron delocalisation.'
+            ]
+          }
+        },
+        {
+          id: 'svg-methyl-orange-colours',
+          type: 'svg',
+          data: {
+            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Methyl orange: red (acid), orange (mid), yellow (alkali)</text></svg>',
+            caption: 'Methyl orange colour changes: red in acid, yellow in alkali, orange in between.'
+          }
+        },
+        {
+          id: 'callout-diazonium-exam-tips',
+          type: 'callout',
+          data: {
+            style: 'tip',
+            title: 'Exam Tips: Diazonium Reactions',
+            text: '• Always specify temperature (cold for coupling, warm for −OH substitution).\n• Use alkaline conditions for coupling with phenol/naphthol.\n• Azo dyes are intensely coloured due to conjugation.\n• Methyl orange is an azo dye indicator: red in acid, yellow in alkali.'
+          }
+        },
+        {
+          id: 'summary-diazonium-reactions',
+          type: 'summary',
+          data: {
+            text: 'Diazonium ions undergo substitution (−OH, −I) and coupling reactions to form azo dyes. Coupling requires cold, alkaline conditions. Azo dyes are used as indicators (e.g., methyl orange) and industrial dyes. Colour arises from electron delocalisation.'
+          }
+        },
     {
       id: 'callout-azo-stability-exam',
       type: 'callout',
@@ -203,7 +358,7 @@ export const note_chemistry_5_19_3 = {
       id: 'summary-diazotisation',
       type: 'summary',
       data: {
-        text: 'Diazotisation converts phenylamine into benzenediazonium chloride using NaNO₂ and dilute HCl at 0−5°C. Diazonium ions are highly unstable and must be kept cold (above ~10°C they decompose). The diazonium ion is a powerful electrophile that couples with phenols and amines in alkaline conditions to form azo compounds. The resulting azo compound contains the −N=N− chromophore and forms a highly extended conjugated system spanning both rings. This extended conjugation lowers the energy gap for electronic transitions (e.g. π → π*), shifting light absorption from the UV region down into the visible spectrum, making them intensely coloured (orange, red, or yellow).'
+        text: 'Diazotisation converts phenylamine into benzenediazonium chloride using NaNO₂ and dilute HCl at 0−5°C. Diazonium ions are highly unstable and must be kept cold. The diazonium ion is a powerful electrophile that couples with phenols and amines in alkaline conditions to form azo compounds. The resulting azo compound contains the −N=N− chromophore and forms a highly extended conjugated system spanning both rings, absorbing visible light to produce intense colours. In contrast, aliphatic primary amines react with nitrous acid to form highly unstable diazonium ions that instantly decompose, releasing quantitative amounts of N₂ gas. Secondary aliphatic amines form a yellow carcinogenic nitrosamine oil. Tertiary aliphatic amines just form a dissolved colourless salt.'
       }
     }
   ],
@@ -213,9 +368,9 @@ export const note_chemistry_5_19_3 = {
       { id: 'cue-1', blockId: 'eq-diazotisation', prompt: 'Write the equation for diazotisation of phenylamine. Why is temperature control critical?' },
       { id: 'cue-2', blockId: 'p-coupling-1', prompt: 'Explain what azo coupling is and what the product contains.' },
       { id: 'cue-3', blockId: 'p-colour-1', prompt: 'Explain in terms of bonding and conjugation why azo compounds are brightly coloured.' },
-      { id: 'cue-4', blockId: 'callout-azo-dyes', prompt: 'Name two examples of azo dyes and their applications.' }
+      { id: 'cue-4', blockId: 'callout-aliphatic-nitrous', prompt: 'How do the reactions of primary aromatic and primary aliphatic amines with nitrous acid distinctly differ?' }
     ],
-    summaryText: 'Diazotisation: C₆H₅NH₂ + NaNO₂ + HCl (0−5°C) → C₆H₅N₂⁺Cl⁻. Diazonium ions unstable above ~10°C. Azo coupling: diazonium + phenol/amine (alkaline) → Ar−N=N−Ar′. Extended conjugation lowers the energy gap between bonding and anti-bonding orbitals, shifting absorption into visible light. Azo dyes used in textiles, food colours, pH indicators.',
+    summaryText: 'Diazotisation: C₆H₅NH₂ + NaNO₂ + HCl (0−5°C) → C₆H₅N₂⁺Cl⁻. Azo coupling: diazonium + phenol/amine (alkaline) → Ar−N=N−Ar′ (coloured due to extended conjugation). Aliphatic primary amines with nitrous acid produce an instant burst of N₂ gas; secondary give a yellow oil; tertiary give a colourless solution.',
     ready: false
   },
   evidence: [

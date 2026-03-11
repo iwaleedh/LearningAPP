@@ -1,95 +1,115 @@
-/**
- * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 7
- * "Core Practical 3: distillation and thin-layer chromatography"
- * Source: Pearson Edexcel IAL Chemistry — Core Practical 3
- */
 export const note_chemistry_1_4_7 = {
   blocks: [
     {
-      id: 'objective',
+      id: 'obj',
       type: 'objective',
-      data: { text: 'Describe Core Practical 3: distillation of a product mixture to separate organic liquids. Understand the use of thin-layer chromatography (TLC) to monitor reactions and identify products.' },
-      terms: []
+      data: {
+        text: 'Understand the formulae and structures of alkanes and cycloalkanes. Relate their physical properties and reactivity to their bonding and structure.',
+      }
     },
     {
-      id: 'h-distillation',
+      id: 'h-alkanes',
       type: 'heading',
-      data: { text: 'Distillation in Organic Chemistry', level: 2 },
-      terms: []
+      data: { text: 'Alkanes', level: 2 }
     },
     {
-      id: 'p-distillation',
+      id: 'p-alkanes',
       type: 'paragraph',
-      data: { text: '<strong>Distillation</strong> is used to separate a liquid product from a reaction mixture based on differences in boiling points. The mixture is heated; the more volatile (lower boiling point) component evaporates first and is collected in a condenser.' },
-      terms: ['Distillation', 'Simple distillation']
-    },
-    {
-      id: 'list-distillation-steps',
-      type: 'list',
       data: {
-        style: 'ordered',
-        items: [
-          'Set up a round-bottom flask with a thermometer (bulb at the side arm junction), condenser, and collection flask.',
-          'Add the reaction mixture and heat gently. Anti-bumping granules prevent sudden violent boiling.',
-          'Collect fractions at the appropriate boiling point range (read from thermometer).',
-          'Re-distil if further purification is needed.'
-        ]
-      },
-      terms: []
+        text: 'Alkanes are saturated hydrocarbons containing only carbon-carbon single bonds and carbon-hydrogen bonds. The first four straight-chain alkanes are methane, ethane, propane, and butane, which are all gases at room temperature.'
+      }
     },
     {
-      id: 'h-tlc',
+      id: 'callout-alkane-formula',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'General Formula for Alkanes',
+        html: 'Straight-chain and branched alkanes fit the general formula <strong>C<sub>n</sub>H<sub>2n+2</sub></strong>.'
+      }
+    },
+    {
+      id: 'h-cycloalkanes',
       type: 'heading',
-      data: { text: 'Thin-Layer Chromatography (TLC)', level: 2 },
-      terms: []
+      data: { text: 'Cycloalkanes', level: 2 }
     },
     {
-      id: 'callout-tlc',
+      id: 'p-cycloalkanes',
+      type: 'paragraph',
+      data: {
+        text: 'Cycloalkanes also contain only C-C and C-H single bonds, but the carbon atoms are joined in a continuous ring. The smallest possible cycloalkane is cyclopropane (C<sub>3</sub>H<sub>6</sub>). To form the ring, two hydrogen atoms are lost compared to the straight chain.'
+      }
+    },
+    {
+      id: 'callout-cyclo-formula',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'What is TLC?',
-        text: '<strong>Thin-layer chromatography (TLC)</strong> separates mixtures of compounds based on their different affinities for a stationary phase (silica gel on aluminium foil) relative to a mobile phase (solvent). Components travel different distances → different Rf values.<br/><br/>Used to: monitor reaction progress, check purity of a product, identify compounds by comparison to known standards.'
-      },
-      terms: ['TLC', 'Rf value', 'Stationary phase', 'Mobile phase']
+        title: 'Formula and Shape of Cycloalkanes',
+        html: 'The general formula for a cycloalkane is <strong>C<sub>n</sub>H<sub>2n</sub></strong>.<br/><br/>Cycloalkanes (from cyclopentane upwards) are not flat; they exist as "puckered" rings. For example, cyclohexane rapidly flips between "chair" and "boat" conformations to minimise strain.'
+      }
     },
     {
-      id: 'callout-rf',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Rf value',
-        text: 'Rf = distance travelled by spot ÷ distance travelled by solvent front<br/><br/>Rf values range from 0 to 1. Each compound has a characteristic Rf in a given solvent/plate system — used for identification by comparison to known standards.'
-      },
-      terms: ['Rf value']
+      id: 'h-boiling',
+      type: 'heading',
+      data: { text: 'Physical Properties: Boiling Points', level: 2 }
     },
     {
-      id: 'list-tlc-method',
+      id: 'list-boiling',
       type: 'list',
       data: {
-        style: 'ordered',
+        style: 'bullet',
         items: [
-          'Draw a pencil baseline on a TLC plate. Spot the sample(s) and reference compounds using a capillary tube.',
-          'Place the plate in a tank with a small amount of solvent (mobile phase). Cover to saturate with solvent vapour.',
-          'Allow the solvent to rise to near the top of the plate. Mark the solvent front immediately.',
-          'Visualise the spots: use UV light (for UV-active compounds) or iodine vapour (stains organic molecules brown).',
-          'Calculate Rf values for each spot.'
+          '<strong>Chain Length:</strong> Alkanes are non-polar, so the only intermolecular forces are London (Van der Waals) dispersion forces. As molecules get larger, they have more electrons, leading to stronger London forces and higher boiling points.',
+          '<strong>Branching:</strong> Branched isomers have lower boiling points than straight-chain isomers. Branching makes molecules shorter and fatter, preventing them from packing as closely together and reducing the strength of London forces.',
+          '<strong>Cycloalkanes:</strong> Cycloalkanes have boiling points about 10-20 K higher than their corresponding straight-chain alkanes because the ring structures allow molecules to pack more closely and increase intermolecular contact.'
         ]
-      },
-      terms: []
+      }
+    },
+    {
+      id: 'h-reactivity',
+      type: 'heading',
+      data: { text: 'Chemical Reactivity', level: 2 }
+    },
+    {
+      id: 'list-reactivity',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Alkanes have strong, almost non-polar C-C and C-H bonds. Because they lack areas of significant positive or negative charge, they do not attract ions or polar reagents, making them generally unreactive.',
+          'Their main reactions are combustion (burning), free radical substitution with halogens (under UV light), and cracking.',
+          '<strong>Exception for small cycloalkanes:</strong> Cyclopropane is unusually reactive. The ring forces the C-C-C bond angle to 60° (instead of the normal 109.5°). This causes severe repulsion between the bonding electron pairs, making the ring bonds weaker and easier to break.'
+        ]
+      }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'p-distillation', prompt: 'Explain how simple distillation separates two liquids of different boiling points.' },
-      { id: 'c2', blockId: 'callout-rf', prompt: 'Define Rf value and write the formula for calculating it.' },
-      { id: 'c3', blockId: 'callout-tlc', prompt: 'State two uses of TLC in organic chemistry.' },
-      { id: 'c4', blockId: 'list-tlc-method', prompt: 'Describe how you would visualise spots on a TLC plate that contain compounds invisible to the naked eye.' }
+      {
+        id: 'cue-1',
+        blockId: 'callout-cyclo-formula',
+        prompt: 'State the general formulae for open-chain alkanes and cycloalkanes.'
+      },
+      {
+        id: 'cue-2',
+        blockId: 'list-boiling',
+        prompt: 'Explain why branched alkanes typically have lower boiling points than their straight-chain isomers.'
+      },
+      {
+        id: 'cue-3',
+        blockId: 'list-reactivity',
+        prompt: 'Why are alkanes generally very unreactive to polar reagents?'
+      },
+      {
+        id: 'cue-4',
+        blockId: 'list-reactivity',
+        prompt: 'Explain why cyclopropane is much more reactive than larger cycloalkanes or straight-chain alkanes.'
+      }
     ],
-    summaryText: 'Distillation: separates liquids by bp difference (more volatile evaporates first, collected in condenser). TLC: separates compounds based on affinity for silica (stationary phase) vs solvent (mobile phase). Rf = spot distance / solvent front distance. Spots visualised by UV or iodine vapour. Rf used for identification.',
+    summaryText: 'Alkanes (CnH2n+2) and cycloalkanes (CnH2n) are saturated, non-polar hydrocarbons. Boiling points increase with size due to stronger London forces, but decrease with branching (less surface contact). Cycloalkanes pack better and have higher bps. Alkanes are unreactive because C-C/C-H bonds are strong and non-polar. Small rings like cyclopropane are highly reactive due to 60 degree bond angle ring strain.',
     ready: false
   },
   evidence: []
 };
-export default note_chemistry_1_4_7;

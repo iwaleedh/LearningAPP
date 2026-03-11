@@ -1,0 +1,154 @@
+
+ 
+ 
+ addition to aldehydes and ketones 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ SIMPLE ADDITION TO ALDEHYDES AND KETONES 
+ 
+ 
+ 
+ This page looks at the addition of hydrogen cyanide and sodium hydrogensulphite (sodium bisulphite) to aldehydes and ketones. 
+ 
+ 
+ 
+ 
+ Addition of hydrogen cyanide to aldehydes and ketones 
+ 
+ The reactions 
+ Hydrogen cyanide adds across the carbon-oxygen double bond in aldehydes and ketones to produce compounds known as hydroxynitriles. These used to be known as cyanohydrins. 
+ For example, with ethanal (an aldehyde) you get 2-hydroxypropanenitrile: 
+ 
+ With propanone (a ketone) you get 2-hydroxy-2-methylpropanenitrile: 
+ 
+ 
+ 
+ 
+ 
+ Note: &nbsp; When you are naming these compounds, don't forget that the longest carbon chain has to include the carbon in the -CN group. The carbon with the nitrogen attached is always counted as the number 1 carbon in the chain. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The reaction isn't normally done using hydrogen cyanide itself, because this is an extremely poisonous gas. Instead, the aldehyde or ketone is mixed with a solution of sodium or potassium cyanide in water to which a little sulphuric acid has been added. The pH of the solution is adjusted to about 4 - 5, because this gives the fastest reaction. The reaction happens at room temperature. 
+ The solution will contain hydrogen cyanide (from the reaction between the sodium or potassium cyanide and the sulphuric acid), but still contains some free cyanide ions. This is important for the mechanism. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you want the mechanism for this reaction , you will find it explained if you follow this link. 
+ Use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Uses of the reaction 
+ The product molecules contain two functional groups: 
+ 
+ the -OH group which behaves like a simple alcohol and can be replaced by other things like chlorine, which can in turn be replaced to give, for example, an -NH 2 group; 
+ the -CN group which is easily converted into a carboxylic acid group -COOH. 
+ 
+ For example, starting from a hydroxynitrile made from an aldehyde, you can quite easily produce relatively complicated molecules like 2-amino acids - the amino acids which are used to construct proteins. 
+ 
+ 
+ 
+ 
+ 
+ Note: &nbsp; The first step is the replacement of -OH in an alcohol by chlorine . 
+ The second step is the reaction between a halogenoalkane and ammonia . 
+ The final step is hydrolysis of a nitrile . 
+ Use the BACK button on your browser to return to this page if you follow any of these links. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Addition of sodium hydrogensulphite to aldehydes and ketones 
+ 
+ Sodium hydrogensulphite used to be known as sodium bisulphite, and you might well still come across it in organic textbooks under this name - or using the bisulfite spelling. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you are a UK A level student, you probably won't need this reaction. Check your syllabus before you bother to read on. If you haven't got a syllabus, you ought to have! Follow this link to find out how to get one. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The reactions 
+ This reaction only works well for aldehydes. In the case of ketones, one of the hydrocarbon groups attached to the carbonyl group needs to be a methyl group. Bulky groups attached to the carbonyl group get in the way of the reaction happening. 
+ The aldehyde or ketone is shaken with a saturated solution of sodium hydrogensulphite in water. Where the product is formed, it separates as white crystals. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; In the case of methanal and ethanal, the product is reasonably soluble. If you start with aqueous solutions of methanal or ethanal, there may be enough water present that the product doesn't actually form crystals. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ In the case of ethanal, the equation is: 
+ 
+ . . . and with propanone, the equation is: 
+ 
+ These compounds are rarely named systematically, and are usually known as &quot;hydrogensulphite (or bisulphite) addition compounds&quot;. 
+ 
+ 
+ Uses of the reaction 
+ The reaction is usually used during the purification of aldehydes (and any ketones that it works for). The addition compound can be split easily to regenerate the aldehyde or ketone by treating it with either dilute acid or dilute alkali. 
+ If you have an impure aldehyde, for example, you could shake it with a saturated solution of sodium hydrogensulphite to produce the crystals. These crystals could easily be filtered and washed to remove any other impurities. Addition of dilute acid, for example, would then regenerate the original aldehyde. 
+ It would, of course, still need to be separated from the excess acid and assorted inorganic products of the reaction - but that is beyond the scope of this page! 
+ 
+ 
+ 
+ 
+ 
+ Questions to test your understanding 
+ If this is the first set of questions you have done, please read the introductory page before you start. You will need to use the BACK BUTTON on your browser to come back here afterwards. 
+ questions on simple addition reactions of aldehydes and ketones 
+ answers 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Where would you like to go now? 
+ To the aldehydes and ketones menu . . . 
+ To the menu of other organic compounds . . . 
+ To Main Menu . . . 
+ 
+ 
+ 
+ 
+ 
+ &copy; Jim Clark 2004 (modified November 2015) 
+ 
+ 
+ 
+ 
+ 

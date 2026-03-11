@@ -1,0 +1,119 @@
+
+ 
+ 
+ making aldehydes and ketones 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ MAKING ALDEHYDES AND KETONES 
+ 
+ 
+ 
+ This page explains how aldehydes and ketones are made in the lab by the oxidation of primary and secondary alcohols. 
+ 
+ 
+ 
+ 
+ Oxidising alcohols to make aldehydes and ketones 
+ 
+ General 
+ The oxidising agent used in these reactions is normally a solution of sodium or potassium dichromate(VI) acidified with dilute sulphuric acid. If oxidation occurs, the orange solution containing the dichromate(VI) ions is reduced to a green solution containing chromium(III) ions. 
+ The net effect is that an oxygen atom from the oxidising agent removes a hydrogen from the -OH group of the alcohol and one from the carbon to which it is attached. 
+ 
+ [O] is often used to represent oxygen coming from an oxidising agent. 
+ R and R' are alkyl groups or hydrogen. They could also be groups containing a benzene ring, but I'm ignoring these to keep things simple. 
+ If at least one of these groups is a hydrogen atom, then you will get an aldehyde. If they are both alkyl groups then you get a ketone. 
+ If you now think about where they are coming from, you will get an aldehyde if your starting molecule looks like this: 
+ 
+ In other words, if you start from a primary alcohol, you will get an aldehyde. 
+ You will get a ketone if your starting molecule looks like this: 
+ 
+ . . . where R and R' are both alkyl groups. 
+ Secondary alcohols oxidise to give ketones. 
+ 
+ 
+ Making aldehydes 
+ Aldehydes are made by oxidising primary alcohols. There is, however, a problem. 
+ The aldehyde produced can be oxidised further to a carboxylic acid by the acidified potassium dichromate(VI) solution used as the oxidising agent. In order to stop at the aldehyde, you have to prevent this from happening. 
+ 
+ 
+ 
+ 
+ Note: &nbsp; This further oxidation is explained in more detail on the page about oxidation of alcohols . 
+ If you choose to follow this link (not important for the purposes of the present page), use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ To stop the oxidation at the aldehyde, you . . . 
+ 
+ use an excess of the alcohol. That means that there isn't enough oxidising agent present to carry out the second stage and oxidise the aldehyde formed to a carboxylic acid. 
+ distil off the aldehyde as soon as it forms. Removing the aldehyde as soon as it is formed means that it doesn't stay in the mixture to be oxidised further. 
+ 
+ 
+ 
+ If you used ethanol as a typical primary alcohol, you would produce the aldehyde ethanal, CH 3 CHO. 
+ The full equation for this reaction is fairly complicated, and you need to understand about electron-half-equations in order to work it out. 
+ 
+ 
+ 
+ 
+ 
+ Note: &nbsp; If you should know about electron-half-equations but aren't happy about them, you could follow this link. This particular equation isn't worked out on that page, but there should be enough information there to enable you to do it if you wanted to. 
+ If you choose to follow this link, use the BACK button on your browser to return to this page. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ In organic chemistry, simplified versions are often used which concentrate on what is happening to the organic substances. To do that, oxygen from an oxidising agent is represented as [O]. That would produce the much simpler equation: 
+ 
+ 
+ 
+ Secondary alcohols 
+ Secondary alcohols are oxidised to ketones. There is no further reaction which might complicate things. For example, if you heat the secondary alcohol propan-2-ol with sodium or potassium dichromate(VI) solution acidified with dilute sulphuric acid, you get propanone formed. 
+ Playing around with the reaction conditions makes no difference whatsoever to the product. 
+ Using the simple version of the equation: 
+ 
+ 
+ 
+ 
+ 
+ 
+ Questions to test your understanding 
+ If this is the first set of questions you have done, please read the introductory page before you start. You will need to use the BACK BUTTON on your browser to come back here afterwards. 
+ questions on making aldehydes and ketones 
+ answers 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Where would you like to go now? 
+ To the aldehydes and ketones menu . . . 
+ To the menu of other organic compounds . . . 
+ To Main Menu . . . 
+ 
+ 
+ 
+ 
+ 
+ &copy; Jim Clark 2003 (modified November 2015) 
+ 
+ 
+ 
+ 
+ 

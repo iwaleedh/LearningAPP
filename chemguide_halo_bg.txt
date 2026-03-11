@@ -1,0 +1,398 @@
+
+<html>
+<head>
+<title>an introduction to halogenoalkanes (haloalkanes)</title>
+
+<meta name="description"
+content="Background on the halogenoalkanes, including their physical properties" />
+<meta name="keywords"
+content="halogenoalkanes, haloalkanes, alkyl halides, primary, secondary, tertiary, physical, properties" />
+
+</head>
+
+<body bgcolor="#ffffcc" link="blue" vlink="teal" alink="red">
+<a name="top"></a>
+<center>
+<table align="center" border="0" width="480" cellspacing="10">
+
+<tr>
+<td colspan="2"><font color="#000000" size="5" face="Helvetica, Arial">
+<p><b>INTRODUCING HALOGENOALKANES (haloalkanes or alkyl halides)</b></p></font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="3">
+<p>Halogenoalkanes are also known as haloalkanes or alkyl halides.  This page explains what they are and discusses their physical properties.  It also takes an initial look at their chemical reactivity.  Details of the chemical reactions of halogenoalkanes are described on separate pages.</p>
+
+<p>Fluoroalkanes are so unreactive that we shall mostly just ignore them apart from pointing out why they are so unreactive.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>What are halogenoalkanes?</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Examples</b></p>
+
+<p>Halogenoalkanes are compounds in which one or more hydrogen atoms in an alkane have been replaced by halogen atoms (fluorine, chlorine, bromine or iodine).  For the purposes of UK A level, we will only look at compounds containing one halogen atom.</p>
+
+<p>For example:</p>
+
+<p align="center"><img src="examples.gif" width="372" height="79"></p>
+
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you aren't confident about <a href="../../basicorg/conventions/names.html#top">naming organic compounds</a>, then you really ought to follow this link before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>The different kinds of halogenoalkanes</b></p>
+
+<p>Halogenoalkanes fall into different classes depending on how the halogen atom is positioned on the chain of carbon atoms.  There are some chemical differences between the various types.</p>
+
+<p><b><i>Primary halogenoalkanes</i></b></p>
+
+<p>In a primary (1&deg;) halogenoalkane, the carbon which carries the halogen atom is only attached to one other alkyl group.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial" size="2">
+<p><hr /><b>Note:  &nbsp;</b>An alkyl group is a group such as methyl, CH<sub>3</sub>, or  ethyl, CH<sub>3</sub>CH<sub>2</sub>. These are groups containing chains of carbon atoms which may be branched.  Alkyl groups are  given the general symbol <b>R.</b><br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+<font color="#000000" face="Arial, Helvetica" size="3">
+
+<p>Some examples of primary halogenoalkanes include:</p> 
+
+<p align="center"><img src="primary.gif" width="342" height="44" /></p>
+
+<p>Notice that it doesn't matter how complicated the attached alkyl group is.  In each case there is only <b><i>one linkage</i></b> to an alkyl group from the CH<sub>2</sub> group holding the halogen.</p>
+
+<p>There is an exception to this.  CH<sub>3</sub>Br and the other methyl halides are often counted as primary halogenoalkanes even though there are <b><i>no</i></b> alkyl groups attached to the carbon with the halogen on it.</p>
+
+<p><b><i>Secondary halogenoalkanes</i></b></p>
+
+<p>In a secondary (2&deg;) halogenoalkane, the carbon with the halogen attached is joined directly to <b><i>two</i></b> other alkyl groups, which may be the same or different.</p>
+
+<p>Examples:</p>
+
+<p align="center"><img src="secondary.gif" width="254" height="42" /></p>
+
+<p><b><i>Tertiary halogenoalkanes</i></b></p>
+
+<p>In a tertiary (3&deg;) halogenoalkane, the carbon atom holding the halogen is attached directly to <b><i>three</i></b> alkyl groups, which may be any combination of same or different.</p>
+
+<p>Examples:</p>
+
+<p align="center"><img src="tertiary.gif" width="227" height="68" /></p>
+
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Physical properties of halogenoalkanes</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>Boiling Points</b></p>
+
+<p>The chart shows the boiling points of some simple halogenoalkanes.</p>
+
+<p align="center"><img src="bpts1.gif" width="459" height="249" /></p>
+
+<p>Notice that three of these have boiling points below room temperature (taken as being about 20&deg;C).  These will be gases at room temperature.  All the others you are likely to come across are liquids.</p>
+
+<p>Remember:</p>
+
+<ul>
+<li><p>the only methyl halide which is a liquid is iodomethane;</p></li>
+
+<li><p>chloroethane is a gas.</p></li>
+</ul>
+<pre>
+
+</pre>
+<p>The patterns in boiling point reflect the patterns in intermolecular attractions.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you aren't happy about <a href="../../atoms/bonding/vdw.html#top">intermolecular forces</a> (particularly van der Waals dispersion forces and dipole-dipole interactions) then you really ought to follow this link before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b><i>van der Waals dispersion forces</i></b></p>
+
+<p>These attractions get stronger as the molecules get longer and have more electrons.  That increases the sizes of the temporary dipoles that are set up.</p>
+
+<p>This is why the boiling points increase as the number of carbon atoms in the chains increases.  Look at the chart for a particular type of halide (a chloride, for example).  Dispersion forces get stronger as you go from 1 to 2 to 3 carbons in the chain.  It takes more energy to overcome them, and so the boiling points rise.</p>
+
+<p>The increase in boiling point as you go from a chloride to a bromide to an iodide (for a given number of carbon atoms) is also because of the increase in number of electrons leading to larger dispersion forces.  There are lots more electrons in, for example, iodomethane than there are in chloromethane - count them!</p>
+
+<p><b><i>van der Waals dipole-dipole attractions</i></b></p>
+
+<p>The carbon-halogen bonds (apart from the carbon-iodine bond) are polar, because the electron pair is pulled closer to the halogen atom than the carbon.  This is because (apart from iodine) the  halogens are more electronegative than carbon.</p>
+
+<p>The electronegativity values are:</p>
+
+</font>
+
+<table align="center" cellpadding="5" border="0">
+
+<tr><td><font color="#ff0000" face="Helvetica, Arial" size="3">C</td></font><td><font color="#ff0000" face="Helvetica, Arial" size="3">2.5</font></td><td><img src="padding.gif" width="10" height="10" /></td><td><font color="#000000" face="Helvetica, Arial" size="3">F</td></font><td><font color="#000000" face="Helvetica, Arial" size="3">4.0</font></td></tr>
+
+<tr><td></td><td></td><td></td><td><font color="#000000" face="Helvetica, Arial" size="3">Cl</td></font><td><font color="#000000" face="Helvetica, Arial" size="3">3.0</font></td></tr>
+
+<tr><td></td><td></td><td></td><td><font color="#000000" face="Helvetica, Arial" size="3">Br</td></font><td><font color="#000000" face="Helvetica, Arial" size="3">2.8</font></td></tr>
+
+<tr><td></td><td></td><td></td><td><font color="#000000" face="Helvetica, Arial" size="3">I</td></font><td><font color="#000000" face="Helvetica, Arial" size="3">2.5</font></td></tr>
+
+</table>
+
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you don't understand about <a href="../../atoms/bonding/electroneg.html#top">electronegativity and polar bonds</a> then you should follow this link before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>This means that in addition to the dispersion forces there will be forces due to the attractions between the permanent dipoles (except in the iodide case).</p>
+
+<p>The size of those dipole-dipole attractions will fall as the bonds get less polar (as you go from chloride to bromide to iodide, for example).  Nevertheless, the boiling points rise!  This shows that the effect of the permanent dipole-dipole attractions is much less important than that of the temporary dipoles which cause the dispersion forces.</p>
+
+<p>The large increase in number of electrons by the time you get to the iodide completely outweighs the loss of any permanent dipoles in the molecules.</p>
+<pre>
+
+</pre>
+<p><b><i>Boiling points of some isomers</i></b></p>
+
+<p align="center"><img src="bpts2.gif" width="406" height="90" /></p>
+
+<p>The examples show that the boiling points fall as the isomers go from a primary to a secondary to a tertiary halogenoalkane.  This is a simple result of the fall in the effectiveness of the dispersion forces.</p>
+
+<p>The temporary dipoles are greatest for the longest molecule.  The attractions are also stronger if the molecules can lie closely together.  The tertiary halogenoalkane is very short and fat, and won't have much close contact with its neighbours.</p>
+<pre>
+
+</pre>
+<p><b>Solubility of halogenoalkanes</b></p>
+
+<p><b><i>Solubility in water</i></b></p>
+
+<p>The halogenoalkanes are at best only very slightly soluble in water.</p>
+
+<p>In order for a halogenoalkane to dissolve in water you have to break attractions between the halogenoalkane molecules (van der Waals dispersion and dipole-dipole interactions) and break the hydrogen bonds between water molecules.  Both of these cost energy.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>If you aren't sure about <a href="../../atoms/bonding/hbond.html#top">hydrogen bonds</a>, then you should follow this link before you go on.</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>Energy is released when new attractions are set up between the halogenoalkane and the water molecules.  These will only be dispersion forces and dipole-dipole interactions.  These aren't as strong as the original hydrogen bonds in the water, and so not as much energy is released as was used to separate the water molecules.</p>
+
+<p>The energetics of the change are sufficiently &quot;unprofitable&quot; that very little dissolves.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>To be  accurate, you also have to consider entropy changes when things dissolve.  If you don't yet know about entropy, don't worry about it!<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b><i>Solubility in organic solvents</i></b></p>
+
+
+<p>Halogenoalkanes tend to dissolve in organic solvents because the new intermolecular attractions have much the same strength as the ones being broken in the separate  halogenoalkane and solvent.</p>
+</font>
+<pre>
+
+</pre>
+<font color="#000000" face="Helvetica, Arial"size="4">
+<p><b>Chemical reactivity of halogenoalkanes</b></p></font>
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p><b>The importance of bond strengths</b></p>
+
+<p>The pattern in strengths of the four carbon-halogen bonds are:</p>
+
+<p align="center"><img src="bondenth.gif" width="245" height="190" /></p>
+
+<p>Notice that bond strength falls as you go from C-F to C-I, and notice how much stronger the carbon-fluorine bond is than the rest.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>You will find almost as many different values for bond strengths (or bond enthalpies or bond energies) as  there are different sources!  Don't worry about this - the pattern is always the same.  This is why you have got a chart here rather than actual numbers.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>In order for anything to react with the halogenoalkanes, the carbon-halogen bond has got to be broken.  Because that gets easier as you go from fluoride to chloride to bromide to iodide, the compounds get more reactive in that order.</p>
+
+<p>Iodoalkanes are the most reactive and fluoroalkanes are the least.  In fact, fluoroalkanes are so unreactive that we shall pretty well ignore them completely from now on in this section!</p>
+<pre>
+
+</pre>
+<p><b>The influence of bond polarity</b></p>
+
+<p>Of the four halogens, fluorine is the most electronegative and iodine the least.  That means that the electron pair in the carbon-fluorine bond will be dragged most towards the halogen end.</p>
+
+<p>Looking at the methyl halides as simple examples:</p>
+
+<p align="center"><img src="polarity.gif" width="444" height="103" /></p>
+
+<p>The electronegativities of carbon and iodine are equal and so there will be no separation of charge on the bond.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>In the diagram, "<img src="delta.gif" width="8" height="13" align="absmiddle" />" (read as "delta") means "slightly" - so <img src="delta.gif" width="8" height="13" align="absmiddle" />+ means "slightly positive".  The larger the symbols, the more positive or negative the atoms are intended to be.</p>
+
+<p>If this isn't reasonably familiar to you, then you ought to have read the page about <a href="../../atoms/bonding/electroneg.html#top">electronegativity and polar bonds</a> mentioned above!</p>
+
+<p>Use the BACK button on your browser to return to this page.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<font color="#000000" face="Helvetica, Arial"size="3">
+
+<p>One of the important set of reactions of halogenoalkanes involves replacing the halogen by something else - <b><i>substitution reactions</i></b>.  These reactions involve either:</p>
+
+<ul>
+<li><p>the carbon-halogen bond breaking to give positive and negative ions.  The ion with the positively charged carbon atom then reacts with something either fully or slightly negatively charged.</p></li>
+
+<li><p>something either fully or negatively charged attracted to the slightly positive carbon atom and pushing off the halogen atom.</p></li>
+</ul>
+
+<p>You might have thought that either of these would be more effective in the case of the carbon-fluorine bond with the quite large amounts of positive and negative charge already present.  But that's not so - quite the opposite is true!</p>
+
+<p>The thing that governs the reactivity is the strength of the bonds which have to be broken.  If is difficult to break a carbon-fluorine bond, but easy to break a carbon-iodine one.</p>
+</font>
+</td></tr>
+
+<tr><td width="90"></td>
+<td><font color="#006600" face="Helvetica, Arial"size="2">
+<p><hr /><b>Note: &nbsp;</b>You will find all of this discussed in detail in the mechanism section of this site under <a href="../../mechanisms/nucsub/whatis.html#top">nucleophilic substitution reactions</a>.  This link will take you to the most relevant page, but you may also want to explore the rest of the nucleophilic substitution menu.</p>
+
+<p>Use the BACK button (or HISTORY file or GO menu) on your browser if you want to return to this page later.<br />
+</font>
+<hr /><br />
+</p>
+</td></tr>
+
+<tr>
+<td colspan="2">
+
+<pre>
+
+</pre>
+<table align="center" width="100%" cellpadding="5" border="1">
+<tr><td bgcolor="#ccffcc"><font color="#000000" face="Helvetica, Arial" size="2">
+<p><b>Questions to test your understanding</b></p>
+
+<p>If this is the first set of questions you have done, please read the <a href="../../questions.html">introductory page</a> before you start.  You will need to use the BACK BUTTON on your browser to come back here afterwards.</p>
+
+<p><a href="../questions/q-halointro.pdf">questions on the introduction to halogenoalkanes</a></p>
+<p><a href="../questions/a-halointro.pdf">answers</a></p>
+
+</font>
+</td></tr>
+</table>
+<pre>
+
+</pre>
+<dl>
+<font color="#006600" face="Arial, Helvetica "size="3">
+<dt><p><b>Where would you like to go now?</b></p></dt>
+
+<dd><p><a href="../haloalkanemenu.html#top"><b>To the halogenoalkanes menu . . .</b></a></p>
+<p><a href="../../orgpropsmenu.html#top"><b>To the menu of other organic compounds . . .</b></a></p>
+<p><a href="../../index.html#top"><b>To Main Menu . . .</b></a></p></dd>
+</dl>
+</font>
+<pre>
+
+</pre>
+<hr />
+
+<p><font color="#000000" size="2" face="Helvetica, Arial"> &copy; Jim Clark 2003 (modified September 2015)</font></p>
+</td>
+</tr>
+
+</table></center>
+</BODY>
+</HTML>
