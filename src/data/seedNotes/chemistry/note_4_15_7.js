@@ -82,8 +82,26 @@ export const note_chemistry_4_15_7 = {
         text: 'The stationary phase is NOT the paper itself \u2014 it is the water trapped within the fibres of the paper. The paper simply holds this water in place. This is a very common exam trap.\nMobile phase = the solvent (water or organic solvent such as ethanol) that travels up the paper.'
       }
     },
+    {      id: 'h-paper-mechanism',
+      type: 'heading',
+      data: { text: 'Mechanism & Two-Way Paper Chromatography', level: 3 }
+    },
     {
-      id: 'h-tlc',
+      id: 'list-paper-mechanism',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Partition Chromatography:</strong> When using a non-polar solvent, separation occurs via partition. The stationary phase (water bound to cellulose) is polar, and the mobile phase is non-polar.',
+          'Polar molecules distribute more into the stationary water layer, moving slowly (low Rf).',
+          'Non-polar molecules distribute more into the moving non-polar solvent, travelling further up the paper (high Rf).',
+          '<strong>Two-Way Chromatography:</strong> Used for complex mixtures (e.g., amino acids) where spots have very similar Rf values and overlap.',
+          '<strong>Method:</strong> Run the chromatogram normally in one solvent. Let it dry completely, rotate the paper 90°, and run it again in a completely different solvent.',
+          '<strong>Result:</strong> Spots that previously overlapped will now separate because they are unlikely to have identical Rf values in two different solvents.'
+        ]
+      }
+    },
+    {      id: 'h-tlc',
       type: 'heading',
       data: { text: 'Thin-Layer Chromatography (TLC)', level: 2 }
     },
@@ -501,7 +519,7 @@ export const note_chemistry_4_15_7 = {
       id: 'summary-chrom',
       type: 'summary',
       data: {
-        text: 'Chromatography separates mixtures by differential attraction to stationary (fixed) and mobile (moving) phases. Paper: stationary = water in cellulose fibres; Rf = dist(spot)/dist(front) \u2014 no units, always < 1, solvent-dependent; baseline in pencil; solvent below baseline. TLC: same as paper but silica/alumina on glass plate. Column: silica in burette-like tube; gravity-driven; collect fractions. HPLC: high pressure forces liquid mobile phase through fine-particle silica; UV detector; retention time identifies compound; depends on solvent, pressure, temperature. GC: inert carrier gas (He/N\u2082); coiled column in heated oven; samples vaporised; weaker attraction to stationary phase = shorter retention time. HRMS: accurate Mr to 4 d.p. distinguishes compounds with same nominal mass \u2014 H=1.0078, C=12.0000, N=14.0031, O=15.9949. GC-MS: GC separates \u2192 each component enters MS individually \u2192 fragmentation pattern + database match = confirmed ID; used in anti-doping, forensics, pharmaceuticals.'
+        text: 'Chromatography separates by differential attraction to stationary vs mobile phases. Paper: stationary = water in cellulose fibres; separates via partition (if non-polar solvent); two-way chromatography rotates paper 90° for overlapping spots. Rf = dist(spot)/dist(front) (no units, <1). TLC: silica/alumina plate; adsorption. Column: silica in tube; gravity-driven; collect fractions. HPLC: high pressure forces liquid through fine silica; UV detector. GC: inert carrier gas (He/N₂); coiled column in heated oven. GC-MS: GC separates → components enter MS individually → fragmentation pattern database match = confirmed ID.'
       }
     }
   ],
@@ -513,6 +531,11 @@ export const note_chemistry_4_15_7 = {
         id: 'cue-1',
         blockId: 'callout-stationary-paper',
         prompt: 'What is the stationary phase in paper chromatography? Why is this an exam trap, and what is the mobile phase?'
+      },
+      {
+        id: 'cue-paper-twoway',
+        blockId: 'list-paper-mechanism',
+        prompt: 'Describe how two-way paper chromatography works and why it is useful for complex mixtures like amino acids.'
       },
       { id: 'cue-tlc',
         blockId: 'list-tlc-adsorption',
