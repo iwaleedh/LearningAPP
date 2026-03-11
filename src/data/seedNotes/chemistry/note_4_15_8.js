@@ -74,8 +74,8 @@ export const note_chemistry_4_15_8 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'How Environment Changes the Field',
-        text: 'Electrons naturally shield the nucleus from the external magnetic field. If a highly electronegative atom (like Oxygen) pulls bonding electrons away from carbon, that carbon is <strong>deshielded</strong>. It now feels more of the external magnetic field and flips at a lower applied field strength, showing up further left (downfield) on the spectrum.'
+        title: 'The Magnetic Resonance Condition Physics',
+        text: 'Atomic nuclei (like ¹H and ¹³C) behave like tiny bar magnets. In an external magnetic field, they normally align with the field (low energy state) but can "flip" to oppose the field (high energy state) if hit with exactly the right radio wave frequency. This flip is called the <strong>resonance condition</strong>.\n\nElectrons naturally shield the nucleus from the external magnetic field. If a highly electronegative atom (like Oxygen) pulls bonding electrons away from carbon or hydrogen, that nucleus is <strong>deshielded</strong>. It now feels more of the external magnetic field and reaches resonance at a lower applied field strength, showing up further left (downfield) on the spectrum.'
       }
     },
 
@@ -141,7 +141,7 @@ export const note_chemistry_4_15_8 = {
     {
       id: 'h-solvent-tms',
       type: 'heading',
-      data: { text: 'Solvent (CDCl₃) and Reference Standard (TMS)', level: 3 }
+      data: { text: 'Solvents and the Reference Standard (TMS)', level: 3 }
     },
     {
       id: 'list-solvent-tms',
@@ -150,13 +150,13 @@ export const note_chemistry_4_15_8 = {
         style: 'bullet',
         items: [
           '<strong>Sample preparation:</strong> compound is dissolved in a solvent before NMR analysis',
-          '<strong>Problem with ordinary solvents:</strong> water, ethanol, hexane etc. all contain C and H — these would give signals that interfere with the spectrum',
-          '<strong>Solution:</strong> use <strong>CDCl₃</strong> (deuterated chloroform) — the D (deuterium) is a heavy isotope of hydrogen (mass number 2 instead of 1) and does NOT give a ¹H NMR signal',
-          'The small CDCl₃ carbon signal is distinctive and is automatically removed by the NMR spectrometer',
-          '<strong>Reference standard = TMS</strong> (tetramethylsilane, Si(CH₃)₄ — silicon bonded to four methyl groups)',
-          'All C and H atoms in TMS are <em>identical</em> → gives one very strong, sharp signal at <strong>δ = 0 ppm</strong>',
-          'TMS is chemically unreactive, so it does not react with the sample',
-          'All other signals in the sample are measured relative to TMS — this is why we call it <strong>chemical shift</strong>'
+          '<strong>Problem with ordinary solvents:</strong> water, ethanol, hexane etc. all contain hydrogen (¹H) — these would produce massive, confusing peaks in the spectrum',
+          '<strong>Solution 1 (Deuterated Solvents):</strong> use <strong>CDCl₃</strong> (deuterated chloroform) — the D (deuterium) is a heavy isotope of hydrogen (mass number 2) with different magnetic properties, so it does NOT give a peak in the ¹H NMR area',
+          '<strong>Solution 2 (No Hydrogen Solvents):</strong> use <strong>CCl₄</strong> (tetrachloromethane), which contains no hydrogen at all',
+          'The small CDCl₃ carbon signal in ¹³C NMR is distinctive and automatically removed by the spectrometer',
+          '<strong>Reference standard:</strong> TMS (tetramethylsilane, Si(CH₃)₄)',
+          'All C and H atoms in TMS are <em>identical</em> → gives one very strong, sharp signal at <strong>exactly δ = 0 ppm</strong>',
+          'All other signals in the sample are measured relative to TMS — this is the <strong>chemical shift</strong>'
         ]
       }
     },
@@ -166,7 +166,7 @@ export const note_chemistry_4_15_8 = {
       data: {
         style: 'key',
         title: '💡 Why TMS is the Perfect Reference',
-        text: 'Si(CH₃)₄ has:\n• 12 identical protons + 4 identical carbons → ONE strong signal for each spectrum type\n• Signal at δ = 0 → all sample peaks appear at higher δ (positive values)\n• Chemically inert → no interference with sample\n• Low boiling point → easily removed after experiment'
+        text: 'Si(CH₃)₄ has:\n• 12 identical protons + 4 identical carbons → ONE strong signal for each spectrum type\n• Silicon is less electronegative than Carbon → electrons are pushed closer to the hydrogen nuclei → maximum shielding. It requires the highest magnetic field to reach resonance, so its peak is pushed to the extreme right at δ = 0.\n• Chemically inert → no interference with sample\n• Low boiling point → sample easily recovered by evaporating TMS'
       }
     },
 
@@ -369,7 +369,7 @@ export const note_chemistry_4_15_8 = {
           'Spectrum: horizontal baseline with vertical peaks — each peak = one proton environment',
           '<strong>Number of peaks = number of different proton environments</strong> (NOT the number of H atoms)',
           '<strong>Position (δ) = chemical shift</strong> — indicates what the proton is attached to (compare to data book table)',
-          '<strong>Peak AREA = relative number of hydrogen atoms</strong> in that environment (NOT peak height, unlike ¹³C NMR)',
+          '<strong>Peak AREA = relative number of hydrogen atoms</strong> in that environment. (It is NOT peak height! The ratio of the areas under the peaks gives important information about the numbers of hydrogen atoms in each environment.)',
           '<strong>Integration trace:</strong> a stepped line overlaid on the spectrum — the height of each step is proportional to the number of H atoms; steps are measured and compared to give the ratio',
           'e.g. steps of heights 2:1:2:3 → ratio of H atoms in each environment is 2:1:2:3'
         ]
