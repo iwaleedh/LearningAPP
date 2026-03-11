@@ -232,6 +232,40 @@ export const note_chemistry_5_17_7 = {
     },
     {
       type: 'heading',
+      id: 'h-nitric-acid-manufacture',
+      data: { text: 'Example 5: Manufacture of Nitric Acid from Ammonia — Pt/Rh Catalyst', level: 2 }
+    },
+    {
+      type: 'paragraph',
+      id: 'p-nitric-acid-intro',
+      data: {
+        text: 'The manufacture of nitric acid from ammonia (the Ostwald Process) relies on heterogeneous catalysis involving a <strong>platinum-rhodium</strong> catalyst, typically shaped into large sheets of metal gauze to maximise surface area and minimise cost.'
+      }
+    },
+    {
+      type: 'list',
+      id: 'list-nitric-acid-steps',
+      data: {
+        style: 'numbered',
+        items: [
+          '<strong>Oxidation of Ammonia</strong>: Ammonia (from the Haber process) is oxidised by oxygen in the air at around 900°C over the Pt/Rh catalyst. The reaction is highly exothermic, so the high temperature is maintained by the heat evolved.',
+          'The equation is: <code>4NH₃(g) + 5O₂(g) ⇌ 4NO(g) + 6H₂O(g)</code>',
+          'The resulting nitrogen monoxide (NO) is cooled, and then further oxidised (without a catalyst) in excess air: <code>2NO(g) + O₂(g) → 2NO₂(g)</code>',
+          'The nitrogen dioxide (NO₂) is then absorbed in water (with excess air) to form concentrated nitric acid: <code>4NO₂(g) + 2H₂O(l) + O₂(g) → 4HNO₃(aq)</code>'
+        ]
+      }
+    },
+    {
+      type: 'callout',
+      id: 'callout-catalyst-reversible',
+      data: {
+        style: 'tip',
+        title: 'Reversible Reactions and Catalysts',
+        text: 'Notice that both the Haber Process and the first step of nitric acid manufacture are reversible reactions (⇌). It is important to remember that the catalyst makes absolutely <strong>no difference to the equilibrium position</strong>. It simply speeds up both the forward and reverse reactions by the exact same amount.'
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-homogeneous-catalysis',
       data: { text: 'Homogeneous Catalysis', level: 2 }
     },
@@ -352,6 +386,7 @@ export const note_chemistry_5_17_7 = {
           { text: 'Haber process: Fe catalyst, N₂ + 3H₂ ⇌ 2NH₃', checked: false },
           { text: 'Contact process: V₂O₅ catalyst, ~725 K, ~2 atm; V⁵⁺ ↔ V⁴⁺ cycle', checked: false },
           { text: 'Catalytic converter: Pt (oxidises CO/hydrocarbons) + Rh (reduces NOₓ); 2CO + 2NO → 2CO₂ + N₂', checked: false },
+          { text: 'Nitric acid manufacture: ~900°C over Pt/Rh gauze; 4NH₃ + 5O₂ ⇌ 4NO + 6H₂O', checked: false },
           { text: 'Fe²⁺ catalyses S₂O₈²⁻/I⁻: Step 1: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻; Step 2: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂', checked: false },
           { text: 'Fe³⁺ catalyses S₂O₈²⁻/I⁻ via same steps in reverse order — both are valid', checked: false },
           { text: 'Autocatalysis: Mn²⁺ product accelerates KMnO₄ + ethanedioate reaction; S-shaped rate curve', checked: false },
@@ -402,6 +437,16 @@ export const note_chemistry_5_17_7 = {
         prompt: 'Explain how V₂O₅ catalyses the oxidation of SO₂ to SO₃.'
       },
       {
+        id: 'cue-nitric',
+        blockId: 'list-nitric-acid-steps',
+        prompt: 'Write the primary catalytic equation for the manufacture of nitric acid from ammonia. What catalyst is used?'
+      },
+      {
+        id: 'cue-reversible',
+        blockId: 'callout-catalyst-reversible',
+        prompt: 'What effect does a catalyst have on the equilibrium position of a reversible reaction (e.g. Haber process)?'
+      },
+      {
         id: 'cue-5',
         blockId: 'p-fe-s2o8',
         prompt: 'Show the Fe²⁺-catalysed mechanism for S₂O₈²⁻ + 2I⁻ reaction.'
@@ -422,14 +467,14 @@ export const note_chemistry_5_17_7 = {
         prompt: 'Describe the shape of the concentration-time curve for an autocatalytic reaction. Why does it start slowly before rapidly accelerating?'
       }
     ],
-    summaryText: 'TMs catalyse reactions because small energy change needed to alter oxidation state. HARD: Adsorption → Reaction at surface → Desorption. Haber: Fe, N₂ + 3H₂ ⇌ 2NH₃. Contact: V₂O₅ (V⁵⁺↔V⁴⁺), ~725 K, ~2 atm. Converters: Pt oxidises CO/hydrocarbons; Rh reduces NOₓ; combined: 2CO + 2NO → 2CO₂ + N₂. Homogeneous Fe²⁺: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻; then 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂. Fe³⁺ runs steps reversed. Autocatalysis: Mn²⁺ product catalyses KMnO₄ reactions.',
+    summaryText: 'TMs catalyse reactions because small energy change needed to alter oxidation state. HARD: Adsorption → Reaction at surface → Desorption. Haber: Fe, N₂ + 3H₂ ⇌ 2NH₃. Contact: V₂O₅, ~725 K, ~2 atm. Nitric Acid: Pt/Rh, 4NH₃ + 5O₂ ⇌ 4NO + 6H₂O. Catalysts speed up forward/reverse reactions equally. Converters: Pt/Rh; 2CO + 2NO → 2CO₂ + N₂. Homogeneous Fe²⁺: 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻; 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂. Autocatalysis: Mn²⁺ product catalyses KMnO₄ reactions.',
     ready: false
   },
   evidence: [
     {
       id: 'ev-1',
       title: 'Industrial Catalysis by Transition Metals',
-      detail: 'The Haber process, Contact process, and catalytic converters are industrial-scale applications of transition metal catalysis, essential to modern society. Over 90% of industrial chemical processes employ catalysts.',
+      detail: 'The Haber process, Contact process, Nitric Acid manufacture, and catalytic converters are industrial-scale applications of transition metal catalysis.',
       year: '2023',
       source: 'Industrial Chemistry and A-Level Chemistry',
       tags: ['catalysis', 'haber', 'contact-process', 'homogeneous', 'heterogeneous']
