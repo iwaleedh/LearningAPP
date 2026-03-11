@@ -83,6 +83,15 @@ export const note_chemistry_4_13_0 = {
       }
     },
     {
+      id: 'ex-homo-3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Example: Esterification Reaction (All Liquids)',
+        text: 'CH₃COOH(l) + CH₃CH₂OH(l) ⇌ CH₃COOCH₂CH₃(l) + H₂O(l)\n\nKc = ([CH₃COOCH₂CH₃] × [H₂O]) / ([CH₃COOH] × [CH₃CH₂OH]). All species are liquids, so they interact in a homogeneous mixture. Everything is included in the Kc expression. Since there are equal moles of liquid on both sides (Δn = 0), Kc has no units.'
+      }
+    },
+    {
       id: 'h-heterogeneous',
       type: 'heading',
       data: { text: 'Heterogeneous Equilibria', level: 2 }
@@ -215,6 +224,11 @@ export const note_chemistry_4_13_0 = {
         id: 'cue-4',
         blockId: 'ex-hetero-1',
         prompt: 'Write the Kc expression for CaCO₃(s) ⇌ CaO(s) + CO₂(g).'
+      },
+      {
+        id: 'cue-ester',
+        blockId: 'ex-homo-3',
+        prompt: 'Write the Kc expression for the esterification of ethanoic acid and ethanol. Does it have units?'
       },
       {
         id: 'cue-5',
