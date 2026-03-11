@@ -64,19 +64,27 @@ export const note_chemistry_1_2_2 = {
       terms: []
     },
     {
+      id: 'p-mass-spec-intro',
+      type: 'paragraph',
+      data: {
+        text: 'A traditional <strong>magnetic sector</strong> mass spectrometer operates under a high vacuum (to prevent ions colliding with air molecules) and sorts ions by their mass-to-charge (<em>m/z</em>) ratio. The key physical stages are:'
+      },
+      terms: ['Vacuum']
+    },
+    {
       id: 'list-stages',
       type: 'list',
       data: {
         style: 'ordered',
         items: [
-          '<strong>Vaporisation:</strong> The sample is vaporised to produce gaseous atoms or molecules.',
-          '<strong>Ionisation:</strong> The sample is ionised to form positive ions (so they can be accelerated and detected).',
-          '<strong>Acceleration:</strong> The positive ions are accelerated through an electric field (high voltage) so they all have the same kinetic energy.',
-          '<strong>Flight Tube (Deflection/Drift):</strong> Ions travel through a vacuum. Lighter ions move faster and reach the detector first.',
-          '<strong>Detection:</strong> Ions strike a detector and gain an electron, which produces a small electric current. The size of the current is proportional to the abundance of the isotope.'
+          '<strong>Vaporisation:</strong> The sample is introduced and heated to produce gaseous atoms or molecules.',
+          '<strong>Ionisation (Electron Gun):</strong> The gas is bombarded by a stream of high-energy electrons from an electron gun. This knocks one or more electrons off the sample atoms to form positive ions (predominantly 1+ ions). Ions must be positive so they can be accelerated and deflected.',
+          '<strong>Acceleration:</strong> The positive ions are pulled through a series of negatively charged acceleration plates (using a high voltage) to form a tightly focused, fast-moving beam.',
+          '<strong>Deflection (Magnetic Field):</strong> The ion beam passes through a varying magnetic field. The field deflects the ions based on their <em>m/z</em> ratio. Lighter ions (smaller mass) and more highly charged ions (e.g. 2+) are deflected more. By slowly varying the magnetic field strength, ions of different <em>m/z</em> values are systematically steered toward the detector.',
+          '<strong>Detection (Electron Exchange):</strong> When the focused beam of positive ions strikes the metal detector plate, each ion gains an electron to neutralise its charge. This removal of electrons from the plate creates a measurable electric current in the connecting wire. The size of the current is directly proportional to the abundance of that specific <em>m/z</em> isotope.'
         ]
       },
-      terms: ['Mass spectrometer', 'Ionisation']
+      terms: ['Mass spectrometer', 'Ionisation', 'Detection']
     },
     {
       id: 'h-ionisation-methods',
@@ -266,7 +274,7 @@ export const note_chemistry_1_2_2 = {
       data: {
         style: 'key',
         title: '2+ Ions and the m/z Value',
-        text: 'If an atom loses <strong>two</strong> electrons during ionisation, it forms an M²⁺ ion with charge z = 2.<br/><br/>m/z = mass / charge = mass / 2<br/><br/><strong>Example:</strong> ⁷⁹Br²⁺ → m/z = 79/2 = <strong>39.5</strong><br/>Compare ⁷⁹Br⁺ → m/z = 79/1 = 79<br/><br/>The 2+ ion appears at <em>half the m/z value</em> of the equivalent 1+ ion. On the spectrum it would appear as a peak at a fractional (non-integer) m/z value, which is a tell-tale sign of a doubly charged ion.'
+        text: 'If an atom loses <strong>two</strong> electrons during ionisation, it forms an M²⁺ ion with charge <em>z</em> = 2.<br/><br/><em>m/z</em> = mass / charge = mass / 2<br/><br/><strong>Example:</strong> ⁷⁹Br²⁺ → <em>m/z</em> = 79/2 = <strong>39.5</strong><br/>Compare ⁷⁹Br⁺ → <em>m/z</em> = 79/1 = 79<br/><br/>Because their <em>m/z</em> is halved, 2+ ions are <strong>deflected twice as much</strong> by the magnetic field as their 1+ counterparts.<br/><br/>The 2+ ion appears at <em>half the m/z value</em> of the equivalent 1+ ion. On the spectrum, it would appear as a peak at a fractional (non-integer) <em>m/z</em> value, which is a tell-tale sign of a doubly charged ion.'
       },
       terms: []
     },
