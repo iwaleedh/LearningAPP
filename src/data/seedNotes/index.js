@@ -337,6 +337,7 @@ import { note_chemistry_4_13_3 } from './chemistry/note_4_13_3.js';
 import { note_chemistry_4_13_4 } from './chemistry/note_4_13_4.js';
 import { note_chemistry_4_13_5 } from './chemistry/note_4_13_5.js';
 import { note_chemistry_4_13_6 } from './chemistry/note_4_13_6.js';
+import { note_chemistry_4_13_7 } from './chemistry/note_4_13_7.js';
 
 // WCH14 — Topic 14: Acid-Base Equilibria
 import { note_chemistry_4_14_0 } from './chemistry/note_4_14_0.js';
@@ -857,6 +858,7 @@ export const seedNotes = {
     'chemistry:4:13:4': note_chemistry_4_13_4,
     'chemistry:4:13:5': note_chemistry_4_13_5,
     'chemistry:4:13:6': note_chemistry_4_13_6,
+    'chemistry:4:13:7': note_chemistry_4_13_7,
 
     // WCH14 — Topic 14: Acid-Base Equilibria
     'chemistry:4:14:0': note_chemistry_4_14_0,

@@ -239,6 +239,7 @@ export const chemistrySyllabus = {
                         'Temperature effects on K',
                         'Equilibrium and entropy links',
                         'Extent of reaction from K values',
+                        'Solubility products (Ksp)',
                     ],
                 },
                 {
