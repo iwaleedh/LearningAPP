@@ -49,11 +49,30 @@ export const note_chemistry_2_10_7 = {
             id: 'callout-m1',
             type: 'callout',
             data: {
-                style: 'worked',
+                style: 'key',
                 title: 'The M+1 Peak',
                 text: 'You will often see a tiny peak exactly 1 unit to the right of the main molecular ion (M⁺) peak. This is the <strong>M+1 peak</strong>. It exists because about 1.1% of all naturally occurring carbon atoms are the heavier <strong>Carbon-13 (¹³C)</strong> isotope instead of Carbon-12.'
             },
             terms: ['M+1 peak', 'Carbon-13']
+        },
+        {
+            id: 'eq-carbon-atoms',
+            type: 'equation',
+            data: {
+                html: 'n = <span class="nb-frac"><span class="nb-num">100</span><span class="nb-den">1.1</span></span> × <span class="nb-frac"><span class="nb-num">height of M+1 peak</span><span class="nb-den">height of M⁺ peak</span></span>',
+                caption: 'Estimating the number of carbon atoms (n) in an organic molecule'
+            },
+            terms: []
+        },
+        {
+            id: 'callout-mplus1-calculation',
+            type: 'callout',
+            data: {
+                style: 'worked',
+                title: 'Estimating Carbon Atoms from M+1',
+                text: 'Because each carbon atom has an approx. 1.1% chance of being ¹³C, the height of the M+1 peak grows proportionally with the number of carbon atoms. By measuring the relative heights of the M+1 and M⁺ peaks, you can use the formula above to predict the number of carbon atoms.<br/><br/><em>Note: This approximation is reliable for small molecules (up to ~3-5 carbons), but the simple 1.1% ratio breaks down for larger molecules due to compounding statistical factors.</em>'
+            },
+            terms: []
         },
         {
             id: 'h-highres',
@@ -85,9 +104,10 @@ export const note_chemistry_2_10_7 = {
             { id: 'c2', blockId: 'callout-molecularion', prompt: 'Write the equation for the formation of the molecular ion (M⁺) when a molecule M is bombarded by high-energy electrons.' },
             { id: 'c3', blockId: 'callout-molecularion', prompt: 'What key piece of information does the m/z value of the molecular ion peak provide about an unknown compound?' },
             { id: 'c4', blockId: 'callout-m1', prompt: 'What causes the very small M+1 peak often seen on a mass spectrum of an organic compound?' },
-            { id: 'c5', blockId: 'p-highres', prompt: 'How does high-resolution mass spectrometry help in identifying organic compounds with the same whole-number Relative Molecular Mass?' }
+            { id: 'c5', blockId: 'callout-mplus1-calculation', prompt: 'How can you use the M+1 peak to estimate the number of carbon atoms in a small organic molecule?' },
+            { id: 'c6', blockId: 'p-highres', prompt: 'How does high-resolution mass spectrometry help in identifying organic compounds with the same whole-number Relative Molecular Mass?' }
         ],
-        summaryText: 'Mass Spectrometry ionises molecules (M → M⁺• + e⁻) and measures their mass-to-charge ratio (m/z). Because z is usually +1, m/z equals the mass. The peak with the highest m/z is the molecular ion (M⁺) peak, which gives the exact relative molecular mass (M_r) of the compound. The small M+1 peak is due to the 1.1% natural abundance of Carbon-13. The molecule also breaks apart to form smaller detected fragment ions. High-resolution mass spectrometry measures mass to 3–4 decimal places, allowing chemists to distinguish molecular formulas that share the same whole integer mass.',
+        summaryText: 'Mass Spectrometry ionises molecules (M → M⁺• + e⁻) and measures their mass-to-charge ratio (m/z). Because z is usually +1, m/z equals the mass. The peak with the highest m/z is the M⁺ peak, giving the exact relative molecular mass (M_r). The small M+1 peak is due to the 1.1% natural abundance of Carbon-13, and its relative height to the M⁺ peak can be used to estimate the number of carbon atoms in a small molecule. High-resolution mass spectrometry measures mass to 3–4 decimal places, allowing chemists to distinguish molecular formulas that share the same whole integer mass.',
         ready: false
     },
     evidence: []
