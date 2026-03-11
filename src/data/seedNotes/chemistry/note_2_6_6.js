@@ -39,7 +39,7 @@ export const note_chemistry_2_6_6 = {
             data: {
                 style: 'key',
                 title: 'Bond Enthalpy vs Mean Bond Enthalpy',
-                text: '<strong>Standard Bond Enthalpy:</strong> The energy required to break one mole of a specific covalent bond in the gaseous state.<br/><br/><strong>Mean Bond Enthalpy:</strong> Because the exact energy to break a bond (like C–H) varies depending on the specific molecule it is in (its chemical environment), we use an average value. Therefore, mean bond enthalpy is the average energy required to break one mole of a specific covalent bond in the gas phase, averaged across many different compounds.'
+                text: '<strong>Bond Dissociation Enthalpy:</strong> The energy required to break <em>one mole</em> of a specific covalent bond in a <em>specific molecule</em> in the gaseous state. For example, H–Cl(g) → H(g) + Cl(g): bond dissociation enthalpy = +432 kJ mol⁻¹.<br/><br/><strong>Why we need Mean Bond Enthalpies:</strong><br/>Consider methane (CH₄). It has four C–H bonds, but each one requires a slightly different energy to break, because each successive removal of a hydrogen atom changes the electronic environment:<br/>• CH₄ → CH₃ + H: requires a different energy than CH₃ → CH₂ + H, and so on<br/>• Total energy to break all 4 C–H bonds in methane = +1662 kJ<br/>• Mean C–H bond enthalpy = 1662 ÷ 4 = <strong>415.5 kJ mol⁻¹</strong><br/><br/>Mean bond enthalpies are also averaged across many <em>different</em> molecules containing that same bond type (e.g. C–H in methane vs ethane vs chloromethane). This is why they are averages, and why calculations using them give only approximate results.<br/><br/><strong>Critical rule: Bond enthalpies only apply to gas-phase species.</strong> All substances must be gaseous for bond enthalpy values to be valid.'
             },
             terms: ['Bond enthalpy', 'Mean bond enthalpy']
         },
@@ -47,6 +47,34 @@ export const note_chemistry_2_6_6 = {
             id: 'p-approx',
             type: 'paragraph',
             data: { text: 'Calculations using mean bond enthalpies are always <strong>approximate</strong>. This is because:<br/>1. The actual strength of a bond (like C–H) depends slightly on the specific molecule it is in, whereas tables only provide an average value.<br/>2. Bond enthalpies apply strictly to gases. If a substance in the reaction is a liquid or solid, the calculation will be inaccurate because it ignores the latent heat of vaporization or fusion.' },
+            terms: []
+        },
+        {
+            id: 'callout-liquid-correction',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: 'Liquid Products/Reactants: Must Add ΔHvap',
+                text: 'Bond enthalpies are only valid for <strong>gaseous</strong> species. If a reaction produces or uses a <strong>liquid</strong> (e.g. H₂O(l) from combustion), you cannot directly apply bond enthalpy values — you must first account for the <strong>enthalpy of vaporisation</strong> (ΔHvap).<br/><br/>For water: ΔHvap(H₂O) = +41 kJ mol⁻¹ (liquid → gas)<br/><br/><strong>Method for CH₄ combustion (product is liquid H₂O):</strong><br/>CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)<br/><br/>Step 1: Work out ΔH as if products were gaseous: break C–H and O=O; make C=O and O–H bonds<br/>Step 2: Add the energy needed to condense H₂O from gas to liquid: −(2 × 41) = −82 kJ mol⁻¹<br/>Step 3: Overall ΔH ≈ −900 kJ mol⁻¹ (experimental value = −890; ~1% error from using mean bond enthalpies)'
+            },
+            terms: []
+        },
+        {
+            id: 'table-bond-values',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Common Mean Bond Enthalpies (kJ mol⁻¹) — all positive (energy needed to break one mole of bond)',
+                headers: ['Bond', 'Mean BDE (kJ mol⁻¹)', 'Bond', 'Mean BDE (kJ mol⁻¹)'],
+                rows: [
+                    ['C–H', '413', 'H–H', '436'],
+                    ['C–C', '347', 'O–H', '464'],
+                    ['C=C', '614', 'O=O', '498'],
+                    ['C≡C', '839', 'N≡N', '945'],
+                    ['C–O', '358', 'H–Cl', '432'],
+                    ['C=O (in CO₂)', '805', 'Cl–Cl', '243'],
+                    ['C–Cl', '340', 'C–N', '286']
+                ]
+            },
             terms: []
         },
         {

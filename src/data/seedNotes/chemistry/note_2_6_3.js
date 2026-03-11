@@ -39,7 +39,7 @@ export const note_chemistry_2_6_3 = {
             data: {
                 style: 'key',
                 title: 'Standard Enthalpy of Formation (ΔfH⦵)',
-                text: 'The enthalpy change when <strong>one mole of a compound</strong> is formed from its <strong>elements</strong>, under standard conditions, with all reactants and products in their standard states.<br/><br/><strong>Crucial rule:</strong> The enthalpy of formation of an element in its standard state is ZERO.<br/><br/>Equation example (formation of ethanol):<br/>2C(s, graphite) + 3H₂(g) + ½O₂(g) → C₂H₅OH(l)<br/>Notice that ½O₂ is used because the equation MUST produce exactly 1 mole of the compound.'
+                text: 'The enthalpy change when <strong>one mole of a compound</strong> is formed from its <strong>elements</strong>, under standard conditions, with all reactants and products in their standard states.<br/><br/><strong>Key point:</strong> The standard enthalpy of formation of any element in its standard state is defined as zero — this is a definition, not merely a convention.<br/><br/>Equation example (formation of ethanol):<br/>2C(s, graphite) + 3H₂(g) + ½O₂(g) → C₂H₅OH(l)<br/>Fractional coefficients are allowed because the equation MUST produce exactly 1 mole of the compound.<br/><br/><strong>ΔfH⦵ can be positive</strong> — for example, benzene: 6C(s) + 3H₂(g) → C₆H₆(l)    ΔfH⦵ = +49 kJ mol⁻¹<br/>This means benzene is less thermodynamically stable than its elements. The value can still be defined even though benzene cannot be made directly from carbon and hydrogen.'
             },
             terms: ['Standard enthalpy of formation']
         },
@@ -71,7 +71,7 @@ export const note_chemistry_2_6_3 = {
             data: {
                 style: 'key',
                 title: 'Standard Enthalpy of Neutralization (ΔneutH⦵)',
-                text: 'The enthalpy change when an acid and an alkali react to form <strong>one mole of water</strong>, under standard conditions.<br/><br/>Equation example:<br/>H⁺(aq) + OH⁻(aq) → H₂O(l)   ΔneutH⦵ = –57 kJ mol⁻¹<br/>(This value is mostly constant for all strong acids reacting with strong alkalis.)'
+                text: 'The enthalpy change when an acid and an alkali react to form <strong>one mole of water</strong>, under standard conditions. Always negative.<br/><br/>Equation example:<br/>H⁺(aq) + OH⁻(aq) → H₂O(l)   ΔneutH⦵ ≈ −57 kJ mol⁻¹<br/><br/><strong>Why strong acid + strong alkali ≈ −57 kJ mol⁻¹ every time:</strong> Strong acids and alkalis are fully dissociated in solution. Regardless of which strong acid or alkali is used, the actual reaction is always:<br/>H⁺(aq) + OH⁻(aq) → H₂O(l)<br/>The spectator ions (e.g. Na⁺, Cl⁻) take no part in the reaction, so the enthalpy is approximately the same for all strong acid/base combinations.<br/><br/><strong>Why weak acids or weak alkalis give a less negative value:</strong><br/>A weak acid or base is only partially ionised in solution. Before neutralisation can occur, energy is needed to ionise the weak species first. This extra energy requirement makes the overall reaction less exothermic.<br/>• NaOH + ethanoic acid (weak acid): ΔH ≈ −56 kJ mol⁻¹<br/>• HCN + KOH (very weak acid): ΔH ≈ −12 kJ mol⁻¹'
             },
             terms: ['Standard enthalpy of neutralization']
         },
