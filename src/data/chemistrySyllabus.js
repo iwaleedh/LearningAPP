@@ -123,6 +123,7 @@ export const chemistrySyllabus = {
                         'Forces vs physical properties',
                         'Solvent choice factors',
                         'Saturated vapour pressure',
+                        'Phase diagrams',
                     ],
                 },
                 {
