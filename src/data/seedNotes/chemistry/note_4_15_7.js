@@ -235,10 +235,24 @@ export const note_chemistry_4_15_7 = {
       data: {
         style: 'bullet',
         items: [
-          'Retention time = time from injection to detection of a separated component at the UV detector',
+          'Retention time = time from injection to detection of a separated component at the UV detector (peak maximum)',
           'Each compound has a characteristic retention time under fixed conditions',
-          'Retention time depends on: (1) nature/polarity of solvent, (2) pressure, (3) temperature of column',
-          'Shorter retention time = more attracted to mobile phase; longer = more attracted to stationary phase'
+          'Retention time depends on: (1) nature/polarity of solvent, (2) pressure/flow rate, (3) nature/particle size of stationary phase, (4) temperature of column',
+          'Shorter retention time = more attracted to mobile phase (elutes faster); longer = more attracted to stationary phase'
+        ]
+      }
+    },
+    {
+      id: 'table-hplc-phases',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Normal Phase vs Reversed Phase HPLC',
+        headers: ['Feature', 'Normal Phase HPLC', 'Reversed Phase HPLC (Most Common)'],
+        rows: [
+          ['Stationary Phase', 'Polar (tiny silica particles)', 'Non-polar (silica modified with long C8 or C18 hydrocarbon chains)'],
+          ['Mobile Phase (Solvent)', 'Non-polar (e.g., hexane)', 'Polar (e.g., methanol/water mixture)'],
+          ['Fastest Eluting (Short Retention Time)', 'Non-polar compounds (spend more time in the non-polar solvent)', 'Polar compounds (spend more time in the polar solvent)'],
+          ['Slowest Eluting (Long Retention Time)', 'Polar compounds (adsorb strongly to polar silica)', 'Non-polar compounds (attracted to C8/C18 chains via van der Waals forces, partition out of polar solvent)']
         ]
       }
     },
@@ -247,8 +261,8 @@ export const note_chemistry_4_15_7 = {
       type: 'callout',
       data: {
         style: 'key',
-        title: '\ud83d\udca1 Why HPLC > Column Chromatography',
-        text: '\u2460 High pressure replaces gravity \u2192 faster flow\n\u2461 Much smaller stationary-phase particles \u2192 greater surface area \u2192 better separation\n\u2462 UV detector gives quantitative data (peak area \u221d concentration)\n\u2463 Fully automated \u2192 reproducible and precise results'
+        title: 'Why HPLC > Column Chromatography',
+        text: '① High pressure replaces gravity \u2192 faster flow\n② Much smaller stationary-phase particles \u2192 greater surface area \u2192 better separation\n③ UV detector gives quantitative data (amount of UV light absorbed depends on concentration passing through)\n④ Fully automated \u2192 reproducible and precise results\n\n*Note on UV Solvents: The mobile phase (e.g. methanol/water) also absorbs UV, but only below certain wavelengths (< 205 nm). By setting the UV detector above this (e.g. 254 nm), the solvent is "invisible" to the detector, allowing you to measure just the target compounds.*'
       }
     },
     {
@@ -510,6 +524,11 @@ export const note_chemistry_4_15_7 = {
         id: 'cue-3',
         blockId: 'list-hplc-setup',
         prompt: 'Describe the sequential flow of an HPLC system and explain why high pressure gives better separation than column chromatography.'
+      },
+      {
+        id: 'cue-hplc-phases',
+        blockId: 'table-hplc-phases',
+        prompt: 'Compare Normal Phase and Reversed Phase HPLC in terms of the polarity of the stationary phase, the solvent, and which types of compounds elute fastest.'
       },
       {
         id: 'cue-4',
