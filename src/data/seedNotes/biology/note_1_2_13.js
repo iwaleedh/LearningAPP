@@ -35,14 +35,22 @@ export const note_biology_1_2_13 = {
       data: {
         style: 'numbered',
         items: [
-          '<strong>RNA polymerase</strong> binds to the promoter region of the DNA at the start of the gene.',
-          'RNA polymerase unwinds a section of the DNA double helix (breaks H-bonds) and moves along the <strong>template strand</strong> (antisense strand) in the 3′\u21925′ direction.',
-          'Free RNA nucleotides pair with complementary bases on the template strand: A pairs with U (uracil, not thymine); T pairs with A; C pairs with G.',
-          'RNA polymerase catalyses the formation of phosphodiester bonds between the RNA nucleotides, building a strand of <strong>pre-mRNA</strong> (5′\u21923′).',
-          'The DNA strands re-pair behind RNA polymerase. The pre-mRNA strand detaches when RNA polymerase reaches a terminator sequence.',
-          '<strong>RNA processing</strong>: the pre-mRNA contains non-coding sequences called <strong>introns</strong> as well as coding sequences called <strong>exons</strong>. The introns are removed (spliced out) and the exons join together to form the mature <strong>mRNA</strong>.',
-          'The mature mRNA leaves the nucleus through a <strong>nuclear pore</strong> and moves to ribosomes in the cytoplasm.',
+          'Part of a DNA molecule unwinds and the hydrogen bonds between complementary base pairs break, exposing the gene to be transcribed.',
+          '<strong>RNA polymerase</strong> moves along the <strong>antisense (template) strand</strong> in the 3′\u21925′ direction.',
+          'Free <strong>activated RNA nucleotides</strong> pair up, via hydrogen bonds, with their complementary bases on the exposed DNA strand (A pairs with U; T pairs with A; C pairs with G).',
+          'The sugar-phosphate groups of these RNA nucleotides are bonded together in a reaction catalysed by <strong>RNA polymerase</strong> to form the sugar-phosphate backbone of the mRNA molecule.',
+          'When the mRNA is complete, the hydrogen bonds between the mRNA and DNA break, and the double-stranded DNA molecule reforms.',
+          'The single-stranded <strong>mRNA molecule</strong> then leaves the nucleus via a pore in the nuclear envelope and attaches to a ribosome.',
         ],
+      },
+    },
+    {
+      id: 'callout-sense-antisense',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Antisense and Sense Strands',
+        text: '<strong>Antisense strand</strong> (template / transcribed strand) \u2014 the strand that the RNA nucleotides pair with to produce mRNA.\n<strong>Sense strand</strong> (coding / non-template strand) \u2014 the strand that is NOT transcribed. Because the mRNA is built complementary to the antisense strand, the mRNA sequence is <strong>identical to the sense strand</strong> (except that mRNA contains Uracil instead of Thymine).',
       },
     },
     {
@@ -61,7 +69,17 @@ export const note_biology_1_2_13 = {
     {
       id: 'p-translation',
       type: 'paragraph',
-      data: { text: 'Translation is the process by which the mRNA sequence is decoded to produce a specific sequence of amino acids (a polypeptide). It occurs at ribosomes, which may be free in the cytoplasm or attached to the rough endoplasmic reticulum.' },
+      data: { text: 'Translation occurs in the cytoplasm. After leaving the nucleus via a nuclear pore, the mRNA molecule attaches to a ribosome.' },
+    },
+    {
+      id: 'h-trna',
+      type: 'heading',
+      data: { text: 'Role of tRNA', level: 3 },
+    },
+    {
+      id: 'p-trna',
+      type: 'paragraph',
+      data: { text: 'In the cytoplasm there are free molecules of tRNA (transfer RNA). tRNA is a single-stranded molecule of RNA that folds into a clover-like structure. It has a triplet of unpaired bases at one end known as the <strong>anticodon</strong>, and a region at the other end where a specific amino acid can attach. There are about 20 different tRNA molecules, each with a specific anticodon and amino acid binding site.' },
     },
     {
       id: 'list-translation',
@@ -69,12 +87,12 @@ export const note_biology_1_2_13 = {
       data: {
         style: 'numbered',
         items: [
-          'The mature mRNA attaches to a <strong>ribosome</strong>. The ribosome holds the mRNA and the tRNAs in position.',
-          'A <strong>tRNA</strong> molecule with the complementary <strong>anticodon</strong> binds to the first <strong>codon</strong> (sequence of 3 bases) on the mRNA at the P-site. Each tRNA carries a specific amino acid attached to its 3\'\u2212end.',
-          'A second tRNA with a complementary anticodon binds to the next codon at the A-site of the ribosome.',
-          'A <strong>peptide bond</strong> forms between the two amino acids (catalysed by rRNA in the ribosome \u2014 it acts as a <strong>ribozyme</strong>).',
-          'The ribosome moves along the mRNA one codon at a time (5′\u21923′). The first tRNA leaves; the polypeptide chain grows by one amino acid.',
-          'This continues until a <strong>stop codon</strong> is reached on the mRNA (UAA, UAG, or UGA). No tRNA has a complementary anticodon \u2014 the ribosome detaches and the completed polypeptide is released.',
+          'tRNA molecules bind with their specific amino acids in the cytoplasm and bring them to the mRNA molecule on the ribosome.',
+          'The triplet of bases (anticodon) on each tRNA molecule pairs with its complementary triplet on the mRNA molecule called the <strong>codon</strong>.',
+          'Near the beginning of the mRNA is a triplet of bases called the <strong>start codon (AUG)</strong>. This acts as a signal to start off translation (AUG codes for methionine).',
+          'Two tRNA molecules fit onto the ribosome at any one time, bringing the amino acids they are carrying side by side.',
+          'A <strong>peptide bond</strong> is then formed via a condensation reaction between the two amino acids.',
+          'This continuous process of moving along the mRNA and adding amino acids continues until a <strong>stop codon</strong> is reached. This signals translation to stop, releasing the complete polypeptide chain.',
         ],
       },
     },
@@ -117,18 +135,18 @@ export const note_biology_1_2_13 = {
       data: {
         items: [
           { text: 'Describe the role of RNA polymerase in transcription', checked: false },
-          { text: 'Explain why uracil is used in mRNA instead of thymine', checked: false },
-          { text: 'Describe how mRNA is processed between transcription and translation (splicing introns)', checked: false },
-          { text: 'Describe the role of tRNA in translation, including anticodon-codon binding', checked: false },
-          { text: 'Explain how a ribosome moves along mRNA and builds a polypeptide', checked: false },
-          { text: 'State what causes translation to stop', checked: false },
+          { text: 'Explain the difference between the antisense (template) and sense strands', checked: false },
+          { text: 'Describe the role of tRNA in translation, including its structure (anticodon and amino acid binding site)', checked: false },
+          { text: 'Explain how tRNA anticodons pair with mRNA codons at the ribosome', checked: false },
+          { text: 'Describe how a peptide bond forms via a condensation reaction', checked: false },
+          { text: 'State the importance of start and stop codons in translation', checked: false },
         ],
       },
     },
     {
       id: 'summary-tt',
       type: 'summary',
-      data: { text: 'Transcription (nucleus): RNA polymerase reads DNA template strand 3′\u21925′, builds complementary pre-mRNA (A\u2192U, T\u2192A, C\u2192G, G\u2192C). Introns spliced out \u2192 mature mRNA leaves via nuclear pores. Translation (ribosomes): ribosome attaches to mRNA; tRNA anticodon pairs with mRNA codon; tRNA delivers specific amino acid; peptide bond forms between adjacent amino acids; ribosome moves one codon along; continues until stop codon (UAA/UAG/UGA) \u2192 polypeptide released. RNA polymerase links nucleotides; ribosome (rRNA) catalyses peptide bonds.' },
+      data: { text: 'Transcription (nucleus): DNA unwinds. RNA polymerase reads the antisense (template) strand 3′\u21925′ and builds a complementary mRNA by joining free activated RNA nucleotides via phosphodiester bonds (A\u2192U, T\u2192A, C\u2192G, G\u2192C). The mRNA then leaves via nuclear pores. Translation (cytoplasm): A ribosome attaches to the mRNA. tRNA molecules bring specific amino acids to the ribosome. The tRNA anticodon pairs with the mRNA codon. A peptide bond forms via condensation reaction. The process continues until a stop codon is reached, releasing the complete polypeptide.' },
     },
   ],
   recall: {
@@ -136,14 +154,14 @@ export const note_biology_1_2_13 = {
     cues: [
       { id: 'cue-1', blockId: 'callout-central-dogma', prompt: 'Summarise the central dogma. Where do transcription and translation each occur?' },
       { id: 'cue-2', blockId: 'h-transcription', prompt: 'Describe the role of RNA polymerase in transcription. Which DNA strand is used as the template?' },
-      { id: 'cue-3', blockId: 'list-transcription', prompt: 'What happens to pre-mRNA before it leaves the nucleus? What is the difference between introns and exons?' },
-      { id: 'cue-4', blockId: 'h-translation', prompt: 'Describe how a tRNA molecule delivers an amino acid during translation. What is an anticodon?' },
-      { id: 'cue-5', blockId: 'list-translation', prompt: 'What happens when a ribosome reaches a stop codon? Name the three stop codons.' },
+      { id: 'cue-3', blockId: 'callout-sense-antisense', prompt: 'What is the difference between the antisense and sense strands of DNA?' },
+      { id: 'cue-4', blockId: 'h-translation', prompt: 'Describe the structure of a tRNA molecule and how it binds to mRNA.' },
+      { id: 'cue-5', blockId: 'list-translation', prompt: 'What is the role of a start codon and stop codon? What reaction forms peptide bonds?' },
     ],
-    summaryText: 'Transcription: RNA polymerase \u2192 reads DNA template strand \u2192 builds pre-mRNA \u2192 splice introns \u2192 mature mRNA leaves nucleus. Translation: ribosome + mRNA + tRNA; tRNA anticodon pairs with mRNA codon; tRNA brings amino acid; peptide bond forms; ribosome moves along; stop codon (UAA/UAG/UGA) \u2192 polypeptide released.',
+    summaryText: 'Transcription: RNA polymerase reads DNA antisense strand \u2192 binds free activated RNA nucleotides (A-U, C-G) \u2192 mRNA leaves nucleus. Translation: ribosome + mRNA + tRNA \u2192 tRNA anticodon pairs with mRNA codon \u2192 tRNA brings specific amino acid \u2192 peptide bond forms via condensation \u2192 ribosome moves along \u2192 stop codon releases polypeptide.',
     ready: false,
   },
   evidence: [
-    { id: 'ev-1', title: 'Transcription and translation', detail: 'RNA polymerase, pre-mRNA processing (intron splicing), tRNA anticodon-codon binding, ribosome movement, and stop codons all described in AQA A Level Biology Student Book 1, Chapter 4.', year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 4, pp74-77', tags: ['transcription', 'translation', 'protein-synthesis'] },
+    { id: 'ev-1', title: 'Transcription and translation', detail: 'RNA polymerase, sense/antisense strands, tRNA anticodon-codon binding, ribosome translation, and peptide bond formation described in Edexcel IAL Biology Notes.', year: '2026', source: 'Save My Exams IAL Biology', tags: ['transcription', 'translation', 'protein-synthesis'] },
   ],
 };

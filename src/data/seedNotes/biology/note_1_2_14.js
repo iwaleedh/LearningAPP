@@ -22,9 +22,9 @@ export const note_biology_1_2_14 = {
         style: 'bullet',
         items: [
           '<strong>Triplet:</strong> each codon consists of 3 consecutive bases. There are 4<sup>3</sup> = 64 possible codons, more than enough to code for 20 amino acids + stop signals.',
-          '<strong>Degenerate (redundant):</strong> most amino acids are encoded by more than one codon. E.g. leucine has 6 codons; methionine and tryptophan each have only 1. The degeneracy is usually in the 3rd base position (the \u201cwobble position\u201d).',
-          '<strong>Non-overlapping:</strong> each base is read in only one codon. The ribosome reads sequential non-overlapping triplets (moves 3 bases at a time, not 1 or 2).',
-          '<strong>Universal:</strong> virtually all organisms use the same codons for the same amino acids \u2014 from bacteria to human cells. This is strong evidence for a common ancestor of all life.',
+          '<strong>Degenerate (redundant):</strong> most amino acids are encoded by more than one codon (e.g. leucine has 6 codons). The <strong>degenerate nature of the genetic code can limit the effect of mutations</strong> (as a substitution might still code for the same amino acid).',
+          '<strong>Non-overlapping:</strong> each base is read in only one codon. The adjacent codons do not overlap; no single base can take part in the formation of more than one codon. The ribosome reads sequential triplets.',
+          '<strong>Universal:</strong> almost every organism uses the same codons for the same amino acids. This is why <strong>genetic engineering</strong> (the transfer of genes from one species to another) is possible.',
         ],
       },
     },
@@ -40,6 +40,15 @@ export const note_biology_1_2_14 = {
         style: 'key',
         title: 'Special Codons to Memorise',
         text: '<strong>Start codon:</strong> AUG \u2014 codes for methionine (Met); marks the start of the coding sequence. Every polypeptide begins with methionine (sometimes removed later).\n\n<strong>Stop codons:</strong> UAA, UAG, UGA \u2014 do not code for any amino acid. No tRNA has a matching anticodon; the ribosome detaches and the polypeptide is released.',
+      },
+    },
+    {
+      id: 'callout-tip-codons',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip',
+        text: 'You will not be required to memorise specific codons and the amino acids for which they code. The start (AUG) and stop (UAA, UAG, UGA) codons are the only ones worth knowing generally.',
       },
     },
     {

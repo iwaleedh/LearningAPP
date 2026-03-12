@@ -36,9 +36,10 @@ export const note_biology_1_2_12 = {
         style: 'numbered',
         items: [
           '<strong>Unwinding:</strong> The enzyme <strong>DNA helicase</strong> moves along the DNA molecule, breaking the hydrogen bonds between complementary base pairs. This unwinds the double helix, forming a Y-shaped <strong>replication fork</strong> with two exposed single-stranded template strands.',
-          '<strong>Base pairing:</strong> Free DNA nucleotides (present in the nucleus, with A, T, C, or G bases) move to the exposed template strands and form hydrogen bonds with their complementary bases by <strong>complementary base pairing</strong> (A with T, C with G).',
-          '<strong>Phosphodiester bond formation:</strong> <strong>DNA polymerase</strong> catalyses the formation of phosphodiester bonds between adjacent nucleotides on the new strand, joining them into a continuous chain. DNA polymerase can only add nucleotides to the 3′\u2212OH end of a growing strand (reads template 3′\u21925′, builds new strand 5′\u21923′).',
-          '<strong>Result:</strong> Two new identical DNA double helices are formed, each consisting of one old (template) strand and one new strand.',
+          '<strong>Activation of nucleotides:</strong> In the nucleus, there are free nucleotides containing three phosphate groups, known as <strong>nucleoside triphosphates</strong> or <strong>activated nucleotides</strong>.',
+          '<strong>Base pairing:</strong> The bases of the free activated nucleoside triphosphates align and pair with their complementary bases on each of the exposed template strands (A with T, C with G) via hydrogen bonds.',
+          '<strong>Phosphodiester bond formation:</strong> <strong>DNA polymerase</strong> catalyses condensation reactions between the deoxyribose sugar and phosphate groups of adjacent nucleotides. It cleaves (breaks off) the two extra phosphates and uses the <strong>energy released</strong> to create the <strong>phosphodiester bonds</strong> (reads template 3′\u21925′, builds new strand 5′\u21923′).',
+          '<strong>Result:</strong> Two new identical DNA double helices are formed, each consisting of one original (template) strand and one newly synthesised strand.',
         ],
       },
     },
@@ -56,13 +57,13 @@ export const note_biology_1_2_12 = {
       data: {
         style: 'key',
         title: 'Key Enzymes',
-        text: '<strong>DNA helicase</strong> \u2014 unwinds the double helix by breaking hydrogen bonds between base pairs. Creates the replication fork.\n<strong>DNA polymerase</strong> \u2014 joins free nucleotides together by forming phosphodiester bonds along the template strand. Works in the 5′\u21923′ direction only.',
+        text: '<strong>DNA helicase</strong> \u2014 unwinds the double helix by breaking hydrogen bonds between base pairs. Creates the replication fork.\n<strong>DNA polymerase</strong> \u2014 joins nucleotides together by catalysing condensation reactions to form phosphodiester bonds (5′\u21923′ direction).\n<strong>DNA ligase</strong> \u2014 joins the short lagging strand segments (Okazaki fragments) together by forming phosphodiester bonds to create a continuous sugar-phosphate backbone.',
       },
     },
     {
       id: 'h-leading-lagging',
       type: 'heading',
-      data: { text: 'Continuous and Discontinuous Synthesis', level: 2 },
+      data: { text: 'Continuous vs Discontinuous Synthesis (Leading & Lagging Strands)', level: 2 },
     },
     {
       id: 'list-leading-lagging',
@@ -70,10 +71,10 @@ export const note_biology_1_2_12 = {
       data: {
         style: 'bullet',
         items: [
-          'Because DNA polymerase can only add nucleotides in the 5′\u21923′ direction, the two new strands are made differently.',
-          '<strong>Leading strand</strong>: synthesised continuously in the same direction as the unwinding replication fork (5′\u21923′ towards the fork).',
-          '<strong>Lagging strand</strong>: synthesised discontinuously in short fragments (Okazaki fragments) in the opposite direction, each starting from a new RNA primer. Fragments are later joined together.',
-          'Both strands end up as complete complementary copies of their respective template strands.',
+          'DNA polymerase can only build the new strand in one direction (5′ to 3′ direction).',
+          '<strong>Leading strand</strong>: DNA polymerase attaches to the 3′ end of the original strand and moves <em>towards</em> the replication fork. It is synthesised <strong>continuously</strong>.',
+          '<strong>Lagging strand</strong>: DNA polymerase moves <em>away from</em> the replication fork (from 5′ to 3′). It is synthesised <strong>discontinuously</strong> in short segments called Okazaki fragments.',
+          'The enzyme <strong>DNA ligase</strong> is required to join these fragments together by catalysing phosphodiester bonds, completing the new strand.',
         ],
       },
     },
@@ -116,8 +117,9 @@ export const note_biology_1_2_12 = {
       data: {
         items: [
           { text: 'Explain what semi-conservative replication means', checked: false },
-          { text: 'Describe the role of DNA helicase in replication', checked: false },
-          { text: 'Describe the role of DNA polymerase in replication', checked: false },
+          { text: 'Describe the role of DNA helicase in unwinding DNA', checked: false },
+          { text: 'Explain the role of free activated nucleotides in base pairing', checked: false },
+          { text: 'Describe the role of DNA polymerase and DNA ligase in forming phosphodiester bonds', checked: false },
           { text: 'Explain why one strand is made continuously and the other discontinuously', checked: false },
           { text: 'Describe the Meselson-Stahl experiment and explain how the results support semi-conservative replication', checked: false },
         ],
@@ -126,19 +128,19 @@ export const note_biology_1_2_12 = {
     {
       id: 'summary-replication',
       type: 'summary',
-      data: { text: 'Semi-conservative DNA replication: DNA helicase unwinds the helix (breaks H-bonds at replication fork). Free nucleotides pair with complementary bases on each template strand. DNA polymerase forms phosphodiester bonds (5′\u21923′ direction only): leading strand synthesised continuously; lagging strand discontinuously (Okazaki fragments). Two identical daughter molecules, each with one original and one new strand. Meselson-Stahl (1958): <sup>15</sup>N/<sup>14</sup>N experiment showed ALL hybrid DNA after 1st generation and 50% hybrid / 50% light after 2nd generation \u2014 confirmed semi-conservative.' },
+      data: { text: 'Semi-conservative DNA replication: DNA helicase unwinds the double helix (breaks H-bonds). Free activated nucleoside triphosphates pair with complementary bases on each template strand. DNA polymerase cleaves two phosphates to release energy, synthesising a new strand via phosphodiester bonds (5′\u21923′ direction). The leading strand is synthesised continuously; the lagging strand is synthesised discontinuously as Okazaki fragments, which are joined by DNA ligase. The Meselson-Stahl experiment (\u00b9\u2075N/\u00b9\u2074N labelling) proved this by showing hybrid DNA after one generation and 50% hybrid/50% light after two generations.' },
     },
   ],
   recall: {
     enabled: true,
     cues: [
       { id: 'cue-1', blockId: 'h-semi', prompt: 'What does semi-conservative mean in the context of DNA replication?' },
-      { id: 'cue-2', blockId: 'list-stages', prompt: 'Name two enzymes involved in DNA replication and describe the role of each.' },
+      { id: 'cue-2', blockId: 'list-stages', prompt: 'Name the major enzymes involved in DNA replication and describe the role of each (helicase, polymerase, ligase).' },
       { id: 'cue-3', blockId: 'list-leading-lagging', prompt: 'Why is one new strand synthesised continuously and the other discontinuously?' },
       { id: 'cue-4', blockId: 'h-meselson', prompt: 'Describe the Meselson-Stahl experiment. What did the results after one and two generations show?' },
       { id: 'cue-5', blockId: 'callout-meselson-tip', prompt: 'How did Meselson and Stahl rule out conservative replication?' },
     ],
-    summaryText: 'Semi-conservative: each daughter DNA = 1 old + 1 new strand. Stages: 1. DNA helicase unwinds (breaks H-bonds) \u2192 2. Free nucleotides pair by complementary base pairing \u2192 3. DNA polymerase forms phosphodiester bonds (5\u21923\ direction). Leading strand: continuous; lagging strand: discontinuous (Okazaki fragments). Meselson-Stahl: \u00b9\u2075N/\u00b9\u2074N labels; after 1 generation: all hybrid; after 2: half hybrid + half light \u2192 confirms semi-conservative.',
+    summaryText: 'Semi-conservative: each daughter DNA = 1 old + 1 new strand. Stages: 1. DNA helicase unwinds \u2192 2. Free activated nucleotides base pair \u2192 3. DNA polymerase creates phosphodiester bonds (5\u21923\ direction). Leading strand: continuous. Lagging strand: discontinuous (DNA ligase joins Okazaki fragments). Meselson-Stahl: \u00b9\u2075N/\u00b9\u2074N labels; after 1 generation = all hybrid; after 2 = half hybrid + half light \u2192 confirms semi-conservative.',
     ready: false,
   },
   evidence: [
