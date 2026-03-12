@@ -9,6 +9,27 @@ export const note_biology_2_3_3 = {
     },
     {
       type: 'heading',
+      id: 'h-gene-locus',
+      data: { text: 'Gene Locus and Linkage', level: 2 },
+    },
+    {
+      type: 'paragraph',
+      id: 'p-gene-locus',
+      data: {
+        text: 'A gene is a length of DNA that codes for a single polypeptide. The specific position of a gene on a chromosome is known as its locus (plural: loci). Each gene occupies a specific locus, ensuring the gene for a particular characteristic is always found at the same position. Different alleles of a gene (different nucleotide sequences) occupy the same locus.',
+      },
+    },
+    {
+      type: 'callout',
+      id: 'callout-linkage',
+      data: {
+        title: 'Gene Linkage',
+        text: 'Gene loci are linked if they are on the same chromosome:\\n- **Autosomal linkage:** Genes located on the same autosome (chromosomes 1-22 in humans). As they are on the same chromosome, they tend to be inherited together.\\n- **Sex linkage:** Genes located on the same sex chromosome (X or Y).',
+        style: 'key',
+      },
+    },
+    {
+      type: 'heading',
       id: 'h-meiosis-overview',
       data: { text: 'Meiosis and Reduction Division', level: 2 },
     },
@@ -150,6 +171,11 @@ export const note_biology_2_3_3 = {
   recall: {
     enabled: true,
     cues: [
+      {
+        id: 'cue-0',
+        blockId: 'p-gene-locus',
+        prompt: 'What is a gene locus and what does it mean if genes are linked?'
+      },
       {
         id: 'cue-1',
         blockId: 'p-prophase-i',

@@ -9,6 +9,25 @@ export const note_biology_2_3_4 = {
     },
     {
       type: 'heading',
+      id: 'h-mamm-gametes',
+      data: { text: 'Gamete Specialisation', level: 2 },
+    },
+    {
+      type: 'comparisonTable',
+      id: 'table-gametes',
+      data: {
+        caption: 'Specialised features of mammalian sperm and egg cells.',
+        headers: ['Feature', 'Sperm Cell', 'Egg Cell (Ovum)'],
+        rows: [
+          ['Size / Mobility', 'Small and highly motile (flagellum)', 'Large and non-motile'],
+          ['Nucleus', 'Haploid, highly condensed DNA', 'Haploid (completes meiosis upon fertilisation)'],
+          ['Energy', 'Midpiece packed with mitochondria for ATP (swimming)', 'Large cytoplasm with lipid droplets (energy for early divisions)'],
+          ['Special structures', 'Acrosome (contains hydrolytic enzymes)', 'Zona pellucida (jelly layer), Cortical granules (prevent polyspermy)'],
+        ]
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-mamm-fert',
       data: { text: 'Mammalian Fertilisation', level: 2 },
     },
