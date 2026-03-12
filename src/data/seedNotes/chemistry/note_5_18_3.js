@@ -20,6 +20,16 @@ export const note_chemistry_5_18_3 = {
       }
     },
     {
+      id: 'callout-why-sub-not-add',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Why Substitution — Not Addition?',
+        text: 'Alkenes react with electrophiles by <strong>addition</strong> (e.g. ethene + HBr → bromoethane: the &#x3c0; bond breaks, two new &#x3c3; bonds form). Benzene has &#x3c0; electrons too — so why does it prefer <strong>substitution</strong>?<br/><br/>&#x2022; Benzene possesses a <strong>delocalised &#x3c0; electron system</strong> spanning all 6 carbons. This gives benzene extra thermodynamic stability (~150 kJ mol&#x207b;&#xb9; more stable than a hypothetical localised cyclohexatriene).<br/>&#x2022; <strong>Addition would permanently destroy the delocalisation</strong> in the product — a very large energy cost. Benzene&#x2019;s aromatic stability would be lost.<br/>&#x2022; <strong>Substitution temporarily disrupts the ring</strong> in the arenium ion intermediate, but <strong>fully restores it</strong> when the proton leaves. Aromatic stability is recovered in the product.<br/>&#x2022; The driving force for EAS is therefore the <strong>restoration of full delocalisation</strong>: the proton loss step is fast and thermodynamically very favourable.'
+      },
+      terms: ['Electrophilic aromatic substitution', 'Aromatic stability', 'Delocalisation energy']
+    },
+    {
       id: 'table-eas',
       type: 'comparisonTable',
       data: {

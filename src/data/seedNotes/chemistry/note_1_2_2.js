@@ -204,7 +204,7 @@ export const note_chemistry_1_2_2 = {
   <!-- Y-axis label -->
   <text x="12" y="90" text-anchor="middle" fill="#64748b" font-size="10" transform="rotate(-90,12,90)">Relative intensity</text>
   <!-- X-axis label -->
-  <text x="192" y="192" text-anchor="middle" fill="#64748b" font-size="10">m/z</text>
+  <text x="192" y="206" text-anchor="middle" fill="#64748b" font-size="10">m/z</text>
 
   <!-- Y ticks -->
   <line x1="40" y1="165" x2="45" y2="165" stroke="#94a3b8"/>

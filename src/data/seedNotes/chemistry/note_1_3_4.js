@@ -78,7 +78,7 @@ export const note_chemistry_1_3_4 = {
   <text x="220" y="74" text-anchor="middle" fill="#1e40af" font-size="10">B</text>
   <line x1="220" y1="56" x2="220" y2="36" stroke="#334155" stroke-width="2"/>
   <circle cx="220" cy="24" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="220" y="28" text-anchor="middle" fill="#166534" font-size="10">F</text>
+  <text x="220" y="42" text-anchor="middle" fill="#166534" font-size="10">F</text>
   <line x1="208" y1="77" x2="190" y2="93" stroke="#334155" stroke-width="2"/>
   <circle cx="181" cy="100" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
   <text x="181" y="104" text-anchor="middle" fill="#166534" font-size="10">F</text>
@@ -94,7 +94,7 @@ export const note_chemistry_1_3_4 = {
   <text x="370" y="74" text-anchor="middle" fill="#1e40af" font-size="10">C</text>
   <line x1="370" y1="56" x2="370" y2="36" stroke="#334155" stroke-width="2"/>
   <circle cx="370" cy="24" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
-  <text x="370" y="28" text-anchor="middle" fill="#334155" font-size="10">H</text>
+  <text x="370" y="42" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <line x1="358" y1="63" x2="335" y2="50" stroke="#334155" stroke-width="2"/>
   <circle cx="325" cy="44" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
   <text x="325" y="48" text-anchor="middle" fill="#334155" font-size="10">H</text>

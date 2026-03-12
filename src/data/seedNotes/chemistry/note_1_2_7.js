@@ -63,7 +63,7 @@ export const note_chemistry_1_2_7 = {
   <!-- axis line -->
   <line x1="230" y1="5" x2="230" y2="165" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
   <text x="246" y="18" fill="#64748b" font-size="9">+</text>
-  <text x="246" y="165" fill="#64748b" font-size="9">−</text>
+  <text x="246" y="179" fill="#64748b" font-size="9">−</text>
   <text x="230" y="155" text-anchor="middle" fill="#15803d" font-size="12" font-weight="bold">p orbital</text>
   <text x="230" y="168" text-anchor="middle" fill="#64748b" font-size="10">Dumbbell (2 lobes)</text>
 

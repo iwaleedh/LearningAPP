@@ -16,7 +16,7 @@ export const note_chemistry_5_16_2 = {
   <path d="M75,110 L75,275 L325,275 L325,110" fill="none" stroke="#64748b" stroke-width="2.5" rx="4"/>
   <rect x="76" y="165" width="248" height="109" fill="#dbeafe" opacity="0.75"/>
   <text x="200" y="215" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="12">H⁺(aq) — 1 mol dm⁻³</text>
-  <text x="200" y="231" text-anchor="middle" fill="#2563eb" font-size="11">Temperature: 298 K</text>
+  <text x="200" y="245" text-anchor="middle" fill="#2563eb" font-size="11">Temperature: 298 K</text>
   <rect x="148" y="108" width="24" height="115" fill="#9ca3af" stroke="#374151" stroke-width="1.5" rx="3"/>
   <text x="185" y="135" fill="#374151" font-size="10">Pt wire electrode</text>
   <line x1="182" y1="132" x2="174" y2="140" stroke="#374151" stroke-width="1"/>

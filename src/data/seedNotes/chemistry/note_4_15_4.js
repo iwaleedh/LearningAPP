@@ -80,6 +80,69 @@ export const note_chemistry_4_15_4 = {
       }
     },
     {
+      id: 'svg-nabh4-mechanism',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 650 320" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="14">
+  <defs>
+    <marker id="ah-bh4" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto"><polygon points="0 0, 6 2, 0 4" fill="#ef4444"/></marker>
+    <marker id="sa-bh4" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1e40af"/></marker>
+  </defs>
+  <text x="325" y="17" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Reduction of Ethanal by NaBH&#8324; &#8212; Simplified 2-Step Mechanism (A-level)</text>
+  <rect x="8" y="26" width="634" height="130" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="18" y="43" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 1: H&#8315; (hydride ion, from BH&#8324;&#8315;) attacks the &#948;&#8314; carbon of the C=O bond</text>
+  <circle cx="25" cy="91" r="2.5" fill="#111827"/>
+  <circle cx="25" cy="98" r="2.5" fill="#111827"/>
+  <text x="54" y="97" text-anchor="middle" fill="#111827" font-size="16">:H&#8315;</text>
+  <text x="54" y="113" text-anchor="middle" fill="#6b7280" font-size="11">nucleophile</text>
+  <text x="94" y="97" text-anchor="middle" fill="#374151" font-size="18">+</text>
+  <text x="145" y="97" text-anchor="start" fill="#111827" font-size="16">CH&#8323;</text>
+  <text x="173" y="97" text-anchor="start" fill="#111827" font-size="16">&#8211;CH</text>
+  <text x="180" y="80" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8314;</text>
+  <text x="204" y="97" text-anchor="start" fill="#111827" font-size="16">=O</text>
+  <text x="218" y="80" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8315;</text>
+  <text x="190" y="114" text-anchor="middle" fill="#6b7280" font-size="11">ethanal</text>
+  <path d="M 38 91 Q 98 68 152 90" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-bh4)"/>
+  <text x="258" y="80" text-anchor="middle" fill="#6b7280" font-size="11">Step 1</text>
+  <path d="M 244 93 L 290 93" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
+  <text x="396" y="92" text-anchor="middle" fill="#111827" font-size="15">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
+  <rect x="306" y="72" width="176" height="36" rx="4" fill="none" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="1.2"/>
+  <text x="484" y="71" text-anchor="start" fill="#ef4444" font-weight="bold" font-size="12">[&#8722;]</text>
+  <text x="394" y="122" text-anchor="middle" fill="#6b7280" font-size="11">negatively charged tetrahedral intermediate</text>
+  <rect x="8" y="165" width="634" height="148" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+  <text x="18" y="182" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 2a (add acid): O&#8315; picks up H&#8314; from H&#8314;(aq) &#8212; OR &#8212; Step 2b (add water): O&#8315; takes H&#8314; from H&#8322;O</text>
+  <rect x="14" y="192" width="300" height="112" rx="4" fill="#fff" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="164" y="209" text-anchor="middle" fill="#065f46" font-weight="600" font-size="12">Step 2a &#8212; acid workup</text>
+  <text x="100" y="244" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
+  <text x="190" y="244" text-anchor="middle" fill="#374151" font-size="16">+</text>
+  <text x="232" y="244" text-anchor="middle" fill="#111827" font-size="14">H&#8314;(aq)</text>
+  <path d="M 246 240 L 286 260" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
+  <text x="164" y="273" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;CH&#8322;OH</text>
+  <text x="164" y="291" text-anchor="middle" fill="#6b7280" font-size="11">ethanol (primary alcohol)</text>
+  <rect x="330" y="192" width="306" height="112" rx="4" fill="#fff" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="483" y="209" text-anchor="middle" fill="#065f46" font-weight="600" font-size="12">Step 2b &#8212; water workup</text>
+  <text x="405" y="244" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
+  <text x="497" y="244" text-anchor="middle" fill="#374151" font-size="16">+</text>
+  <text x="540" y="244" text-anchor="middle" fill="#111827" font-size="14">H&#8322;O</text>
+  <path d="M 551 240 L 591 260" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
+  <text x="483" y="273" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;CH&#8322;OH + OH&#8315;</text>
+  <text x="483" y="291" text-anchor="middle" fill="#6b7280" font-size="11">ethanol + hydroxide ion</text>
+</svg>`,
+        caption: 'Simplified A-level mechanism (H⁻ represents BH4⁻). Step 1: hydride ion lone pair attacks δ⁺ carbon → π electrons shift to O → negatively charged tetrahedral intermediate. Step 2: O⁻ picks up H⁺ from the acidic workup solution (H⁺(aq)) or from water. Both routes give the same primary alcohol product. The same mechanism applies to ketones (→ secondary alcohol).'
+      },
+      terms: ['Nucleophilic addition', 'Hydride ion', 'H⁻', 'NaBH4', 'BH4⁻', 'Intermediate', 'Aldehyde', 'Ketone', 'Primary alcohol', 'Secondary alcohol']
+    },
+    {
+      id: 'callout-nabh4-simplification',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'A-Level Simplification: H⁻ is NOT the Real Nucleophile',
+        text: 'The mechanism shown above uses <strong>H⁻ (hydride ion)</strong> as the nucleophile. This is a deliberate A-level simplification agreed by UK exam boards (notably AQA).<br/><br/><strong>The real situation:</strong> The actual nucleophile is the <strong>BH4⁻ ion</strong>. The full mechanism involves a hydride transfer from boron to carbonyl carbon, forming a series of boron-containing intermediates. These involve relatively complicated boron chemistry that is beyond A-level syllabus scope.<br/><br/><strong>Exam rule:</strong> Write H⁻ (not BH4⁻) in the simplified mechanism; draw the lone pair on H⁻ above the symbol. This is the expected, mark-scoring version. Never write H⁻ without its lone pair — the lone pair is essential to show nucleophilic attack.<br/><br/><em>Chemguide: "The BH4⁻ ion is essentially a source of hydride ions, H⁻. The simplification used is to write H⁻ instead of BH4⁻."</em>'
+      },
+      terms: ['H⁻', 'BH4⁻', 'NaBH4', 'A-level simplification', 'Nucleophile', 'Lone pair']
+    },
+    {
       id: 'h-hcn-addition',
       type: 'heading',
       data: { text: 'Addition of Hydrogen Cyanide (HCN)', level: 2 }
@@ -114,6 +177,66 @@ export const note_chemistry_4_15_4 = {
         title: 'Safety and Reaction Conditions',
         text: 'HCN is an extremely poisonous gas. Instead of using raw HCN, the reaction is performed by mixing the carbonyl compound with an aqueous solution of sodium or potassium cyanide (KCN/NaCN), and adding dilute sulphuric acid to generate HCN in situ. The pH is carefully adjusted to about 4–5 to give the fastest reaction; this ensures enough free CN⁻ ions remain act as the nucleophile while still generating sufficient HCN to protonate the intermediate.'
       }
+    },
+    {
+      id: 'svg-hcn-mechanism',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 650 312" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="14">
+  <defs>
+    <marker id="ah-hcn" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto"><polygon points="0 0, 6 2, 0 4" fill="#ef4444"/></marker>
+    <marker id="sa-hcn" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1e40af"/></marker>
+  </defs>
+  <text x="325" y="17" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Nucleophilic Addition of HCN to Propanone &#8212; 2-Step Mechanism</text>
+  <rect x="8" y="25" width="634" height="130" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <text x="18" y="42" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 1: CN&#8315; (nucleophile) attacks the &#948;&#8314; carbon of the C=O bond</text>
+  <circle cx="24" cy="87" r="2.5" fill="#111827"/>
+  <circle cx="24" cy="94" r="2.5" fill="#111827"/>
+  <text x="64" y="96" text-anchor="middle" fill="#111827" font-size="16">:CN&#8315;</text>
+  <text x="64" y="112" text-anchor="middle" fill="#6b7280" font-size="11">nucleophile</text>
+  <text x="108" y="96" text-anchor="middle" fill="#374151" font-size="18">+</text>
+  <text x="150" y="96" text-anchor="start" fill="#111827" font-size="16">(CH&#8323;)&#8322;C</text>
+  <text x="196" y="79" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8314;</text>
+  <text x="210" y="96" text-anchor="start" fill="#111827" font-size="16">=O</text>
+  <text x="224" y="79" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8315;</text>
+  <text x="190" y="113" text-anchor="middle" fill="#6b7280" font-size="11">propanone</text>
+  <path d="M 38 87 Q 108 64 145 88" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-hcn)"/>
+  <text x="258" y="79" text-anchor="middle" fill="#6b7280" font-size="11">Step 1</text>
+  <path d="M 244 92 L 290 92" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-hcn)"/>
+  <text x="396" y="91" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
+  <rect x="304" y="71" width="174" height="36" rx="4" fill="none" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="1.2"/>
+  <text x="480" y="70" text-anchor="start" fill="#ef4444" font-weight="bold" font-size="12">[&#8722;]</text>
+  <text x="390" y="121" text-anchor="middle" fill="#6b7280" font-size="11">negatively charged tetrahedral intermediate</text>
+  <rect x="8" y="165" width="634" height="140" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+  <text x="18" y="182" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 2: O&#8315; picks up H&#8314; from HCN (H&#8322;O or H&#8323;O&#8314; also work &#8212; one equation is enough)</text>
+  <text x="100" y="228" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
+  <text x="196" y="228" text-anchor="middle" fill="#374151" font-size="18">+</text>
+  <text x="242" y="228" text-anchor="middle" fill="#111827" font-size="15">H&#8211;CN</text>
+  <text x="100" y="245" text-anchor="middle" fill="#6b7280" font-size="11">intermediate</text>
+  <text x="242" y="245" text-anchor="middle" fill="#6b7280" font-size="11">proton donor</text>
+  <path d="M 174 225 Q 202 209 222 225" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-hcn)"/>
+  <text x="278" y="217" text-anchor="middle" fill="#6b7280" font-size="11">Step 2</text>
+  <path d="M 264 228 L 308 228" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-hcn)"/>
+  <text x="432" y="216" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;OH</text>
+  <text x="432" y="232" text-anchor="middle" fill="#6b7280" font-size="11">2-hydroxy-2-methylpropanenitrile</text>
+  <text x="432" y="252" text-anchor="middle" fill="#374151" font-size="18">+</text>
+  <text x="432" y="272" text-anchor="middle" fill="#111827" font-size="15">CN&#8315;</text>
+  <text x="432" y="288" text-anchor="middle" fill="#6b7280" font-size="11">CN&#8315; regenerated &#8212; acts as catalyst</text>
+  <text x="432" y="303" text-anchor="middle" fill="#6b7280" font-size="11">(cycles back to Step 1)</text>
+</svg>`,
+        caption: 'Step 1: CN⁻ lone pair attacks the δ⁺ carbon of the C=O bond — π electrons shift onto O, giving a negatively charged tetrahedral intermediate. Step 2: O⁻ picks up H⁺ from HCN (or water/H₃O⁺), releasing CN⁻ which is regenerated and cycles back as catalyst. The nucleophile is CN⁻, not HCN itself.'
+      },
+      terms: ['Nucleophilic addition', 'CN⁻', 'Intermediate anion', 'HCN', 'Hydroxynitrile', 'Catalyst', 'Lone pair']
+    },
+    {
+      id: 'callout-hcn-racemic-rule',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'When Does HCN Addition Give a Racemic Mixture?',
+        text: 'HCN addition creates a <strong>new chiral centre</strong> at the original C=O carbon when four <em>different</em> groups become attached. Since C=O is <strong>planar</strong>, CN⁻ attacks from either face with equal probability → equal amounts of both enantiomers → <strong>racemic mixture</strong>.<br/><br/><strong>Rule: only a racemic mixture when all 4 groups on the central carbon are different.</strong><br/><br/>✓ <strong>All aldehydes → racemic</strong> — product always has H, OH, CN, and R (all four different groups)<br/>&nbsp;&nbsp;e.g. ethanal → 2-hydroxypropanenitrile: central C has CH₃, H, OH, CN<br/>✓ <strong>Unsymmetrical ketones → racemic</strong> — different R groups each side + OH + CN = 4 different groups<br/>✗ <strong>Symmetrical ketones → NOT chiral</strong> — e.g. propanone: both groups are –CH₃; central C has CH₃, CH₃, OH, CN — two groups identical → no chiral centre → single (optically inactive) product<br/><br/><em>Chemguide: "What matters is that the product molecule must have four different groups attached to the carbon which was originally part of the carbon-oxygen double bond."</em>'
+      },
+      terms: ['Racemic mixture', 'Chiral centre', 'Optical isomerism', 'Enantiomers', 'Planar C=O', 'Face attack']
     },
     {
       id: 'h-nahso3-addition',
@@ -236,6 +359,11 @@ export const note_chemistry_4_15_4 = {
         prompt: 'Compare the reaction conditions of reducing a carbonyl with NaBH₄ versus LiAlH₄.'
       },
       {
+        id: 'cue-nabh4-mechanism',
+        blockId: 'svg-nabh4-mechanism',
+        prompt: 'Explain the 2-step simplified mechanism for NaBH4 reduction of ethanal. Why is H⁻ used in the A-level mechanism instead of BH4⁻? What must you always show on H⁻? What are the two ways to complete the reaction in Step 2? What do aldehyde and ketone give as products?'
+      },
+      {
         id: 'cue-24dnph-test',
         blockId: 'list-identifying-carbonyls',
         prompt: 'Describe how 2,4-DNPH is used not just to test for carbonyls, but to identify the specific aldehyde or ketone present.'
@@ -244,6 +372,11 @@ export const note_chemistry_4_15_4 = {
         id: 'cue-3',
         blockId: 'callout-hcn-conditions',
         prompt: 'How is HCN generation controlled in the laboratory for aldehyde/ketone addition, and why is the pH maintained at 4-5?'
+      },
+      {
+        id: 'cue-hcn-mechanism',
+        blockId: 'svg-hcn-mechanism',
+        prompt: 'Explain the 2-step nucleophilic addition mechanism for HCN adding to propanone. What species is the actual nucleophile (CN⁻ or HCN)? Describe each step with electron flow. Why is CN⁻ considered a catalyst? Which compounds give a racemic mixture and which do not — and why?'
       },
       {
         id: 'cue-nahso3',
@@ -266,7 +399,7 @@ export const note_chemistry_4_15_4 = {
         prompt: 'Which chemical test would you use to distinguish an aldehyde from a ketone, and what colour change indicates the aldehyde?'
       }
     ],
-    summaryText: 'Preparation: primary alcohols distilled with acidified K₂Cr₂O₇ to form aldehydes; secondary alcohols refluxed to form ketones. Nucleophilic addition: nucleophile attacks Cδ⁺ of C=O, π electrons → O⁻, then protonation → C–OH product. NaBH₄: aldehyde → primary alcohol, ketone → secondary alcohol (nucleophile = H⁻). HCN: both aldehydes and ketones → hydroxynitriles (racemic, creates chiral centre). Tollens\' test: aldehydes oxidised → silver mirror (Ag⁺ → Ag metal); ketones no change. Fehling\'s test: aldehydes → brick-red Cu₂O ppt; ketones no change. Aldehydes more reactive due to steric accessibility.',
+    summaryText: 'Preparation: primary alcohols distilled with acidified K₂Cr₂O₇ to form aldehydes; secondary alcohols refluxed to form ketones. Nucleophilic addition: nucleophile attacks Cδ⁺ of C=O, π electrons → O⁻, then protonation → C–OH product. NaBH₄ reduction (2-step, A-level simplified): Step 1 — H⁻ (lone pair must be shown; represents BH4⁻, the real nucleophile) attacks δ⁺ C of C=O → negatively charged tetrahedral intermediate (O⁻); Step 2 — O⁻ picks up H⁺ from H⁺(aq) [acid workup] or H₂O [water workup] → alcohol. Aldehyde → primary alcohol (e.g. ethanal → ethanol); ketone → secondary alcohol (e.g. propanone → propan-2-ol). H⁻ simplification is accepted at A-level (real nucleophile is BH4⁻). HCN (both aldehydes + ketones → hydroxynitriles): Step 1 — CN⁻ lone pair attacks δ⁺ C of C=O → negatively charged tetrahedral intermediate (O⁻); Step 2 — O⁻ picks up H⁺ from HCN → hydroxynitrile + CN⁻ (catalyst regenerated). In practice: KCN/NaCN + dilute H₂SO₄, pH 4-5 (raw HCN too dangerous). Naming: CN carbon = C-1 (ethanal → 2-hydroxypropanenitrile). RACEMIC MIXTURE: all aldehydes → racemic; unsymmetrical ketones → racemic; SYMMETRICAL ketones (e.g. propanone — both groups CH₃) → NOT chiral → single product. Tollens\' test: aldehydes oxidised → silver mirror (Ag⁺ → Ag metal); ketones no change. Fehling\'s test: aldehydes → brick-red Cu₂O ppt; ketones no change. Aldehydes more reactive due to steric accessibility.',
     ready: false
   },
   evidence: [
@@ -277,6 +410,22 @@ export const note_chemistry_4_15_4 = {
       year: '2023',
       source: 'Applied Organic Chemistry',
       tags: ['carbonyl reactions', 'oxidation', 'tests', 'applications']
+    },
+    {
+      id: 'ev-2',
+      title: 'Nucleophilic addition of HCN — mechanism, conditions, racemic mixture, naming rule',
+      detail: 'HCN adds across C=O of aldehydes and ketones → hydroxynitriles. 2-step mechanism: Step 1 — CN⁻ (nucleophile; lone pair on C) attacks δ⁺ C of C=O → π electrons shift to O → negatively charged tetrahedral intermediate (O carries −ve charge). Step 2 — O⁻ picks up H⁺ from HCN (or H₂O/H₃O⁺) → hydroxynitrile + CN⁻ regenerated (catalyst). NOT done with raw HCN (extremely toxic gas) — use KCN or NaCN + dilute H₂SO₄; pH 4-5 for fastest reaction. Naming: CN carbon is C-1 of chain (ethanal→2-hydroxypropanenitrile; propanone→2-hydroxy-2-methylpropanenitrile). Racemic mixture: C=O is planar → CN⁻ attacks from above or below equally → equal enantiomers → racemic. Condition: 4 different groups on central C. All aldehydes → racemic. Unsymmetrical ketones → racemic. Symmetrical ketones (e.g. propanone, both groups CH₃) → NOT chiral → single product.',
+      year: '2024',
+      source: 'chemguide.co.uk/mechanisms/nucadd/hcn.html',
+      tags: ['nucleophilic addition', 'HCN', 'hydroxynitrile', 'CN⁻', 'mechanism', 'racemic mixture', 'optical isomerism', 'chiral centre', 'KCN', 'pH 4-5', '2-hydroxypropanenitrile', 'propanone', 'ethanal', 'catalyst']
+    },
+    {
+      id: 'ev-3',
+      title: 'Reduction of aldehydes/ketones by NaBH4 — simplified 2-step mechanism, H⁻ simplification, conditions',
+      detail: 'NaBH4 (sodium tetrahydridoborate, formula NaBH4) reduces aldehydes → primary alcohols; ketones → secondary alcohols. BH4⁻ ion is the reducing agent. A-level simplified mechanism: treat BH4⁻ as source of H⁻ (hydride ion) to avoid complex boron intermediates. Step 1: H⁻ lone pair attacks δ⁺ C of C=O → π electrons shift to O → negatively charged tetrahedral intermediate (O⁻). Step 2a (acid workup): O⁻ picks up H⁺ from H⁺(aq) → product alcohol. Step 2b (water workup): O⁻ takes H⁺ from H2O → product alcohol + OH⁻. Reaction conditions: (i) alkaline aqueous solution (NaOH added) → add dilute acid (e.g. H2SO4) as workup; or (ii) alcohol solvent (methanol/ethanol/propan-2-ol) → add water and boil as workup. Must show lone pair on H⁻ in mechanism. H⁻ is the simplified A-level nucleophile (real nucleophile is BH4⁻). Equations use [H] shorthand for 2[H] added to C=O. Aldehyde example: ethanal + 2[H] → ethanol. Ketone example: propanone + 2[H] → propan-2-ol.',
+      year: '2024',
+      source: 'chemguide.co.uk/mechanisms/nucadd/reduce.html',
+      tags: ['NaBH4', 'reduction', 'hydride', 'H⁻', 'BH4⁻', 'nucleophilic addition', 'mechanism', 'ethanal', 'ethanol', 'propanone', 'propan-2-ol', 'primary alcohol', 'secondary alcohol', 'A-level simplification', 'acid workup', 'water workup', 'lone pair']
     }
   ]
 };

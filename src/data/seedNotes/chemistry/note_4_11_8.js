@@ -322,7 +322,7 @@ export const note_chemistry_4_11_8 = {
   <!-- ZERO ORDER panel -->
   <g transform='translate(10,25)'>
     <rect x='0' y='0' width='150' height='150' rx='6' fill='#f0fdf4' stroke='#16a34a' stroke-width='1.2'/>
-    <text x='75' y='14' font-size='10' font-weight='bold' fill='#14532d' text-anchor='middle'>Zero Order</text>
+    <text x='75' y="28" font-size='10' font-weight='bold' fill='#14532d' text-anchor='middle'>Zero Order</text>
     <!-- axes -->
     <line x1='18' y1='125' x2='18' y2='25' stroke='#374151' stroke-width='1.2'/>
     <line x1='18' y1='125' x2='138' y2='125' stroke='#374151' stroke-width='1.2'/>
@@ -330,14 +330,14 @@ export const note_chemistry_4_11_8 = {
     <text x='78' y='141' font-size='8' fill='#374151' text-anchor='middle'>[reactant]</text>
     <!-- flat horizontal line -->
     <line x1='22' y1='75' x2='134' y2='75' stroke='#16a34a' stroke-width='2'/>
-    <text x='75' y='90' font-size='8' fill='#16a34a' text-anchor='middle'>flat line</text>
+    <text x='75' y="104" font-size='8' fill='#16a34a' text-anchor='middle'>flat line</text>
     <text x='75' y='100' font-size='8' fill='#374151' text-anchor='middle'>rate unaffected</text>
-    <text x='75' y='110' font-size='8' fill='#374151' text-anchor='middle'>by concentration</text>
+    <text x='75' y="124" font-size='8' fill='#374151' text-anchor='middle'>by concentration</text>
   </g>
   <!-- FIRST ORDER panel -->
   <g transform='translate(185,25)'>
     <rect x='0' y='0' width='150' height='150' rx='6' fill='#eff6ff' stroke='#2563eb' stroke-width='1.2'/>
-    <text x='75' y='14' font-size='10' font-weight='bold' fill='#1e3a8a' text-anchor='middle'>First Order</text>
+    <text x='75' y="28" font-size='10' font-weight='bold' fill='#1e3a8a' text-anchor='middle'>First Order</text>
     <!-- axes -->
     <line x1='18' y1='125' x2='18' y2='25' stroke='#374151' stroke-width='1.2'/>
     <line x1='18' y1='125' x2='138' y2='125' stroke='#374151' stroke-width='1.2'/>
@@ -346,7 +346,7 @@ export const note_chemistry_4_11_8 = {
     <!-- straight line through origin -->
     <line x1='22' y1='120' x2='134' y2='30' stroke='#2563eb' stroke-width='2'/>
     <text x='75' y='90' font-size='8' fill='#2563eb' text-anchor='middle'>straight line</text>
-    <text x='75' y='100' font-size='8' fill='#374151' text-anchor='middle'>through origin</text>
+    <text x='75' y="114" font-size='8' fill='#374151' text-anchor='middle'>through origin</text>
     <text x='75' y='110' font-size='8' fill='#374151' text-anchor='middle'>doubling [c] → double rate</text>
   </g>
   <!-- SECOND ORDER panel -->
