@@ -16,13 +16,13 @@ export const note_biology_1_1_6 = {
       id: 'p-vessel-intro',
       type: 'paragraph',
       data: {
-        text: 'The circulatory system contains three main categories of blood vessel: arteries (carry blood away from the heart at high pressure), veins (return blood to the heart at low pressure), and capillaries (site of exchange between blood and tissues). All blood vessels except capillaries have walls composed of three tunics (layers).',
+        text: 'The body contains several types of blood vessel forming a continuous network. Arteries transport blood away from the heart — usually at high pressure — to the tissues. Arterioles are smaller branches of arteries that carry blood into capillaries. Veins transport blood back to the heart at low pressure. Venules carry blood from capillaries to veins. Capillaries are microscopic vessels that carry blood directly to cells and are the site of exchange. Blood flows through the lumen; the size of the lumen varies with vessel type.',
       },
     },
     {
       id: 'h-wall-layers',
       type: 'heading',
-      data: { text: 'The Three Tunicae of Blood Vessel Walls', level: 2 },
+      data: { text: 'The Three Tunics of Blood Vessel Walls', level: 2 },
     },
     {
       id: 'list-tunicae',
@@ -115,6 +115,70 @@ export const note_biology_1_1_6 = {
           ['Blood flow direction', 'Away from heart', 'Toward heart', 'From arteriole to venule'],
           ['Function', 'Transport at high pressure', 'Return at low pressure', 'Exchange of materials'],
         ],
+      },
+    },
+    {
+      id: 'svg-artery-vein-crosssection',
+      type: 'svg',
+      data: {
+        caption: 'Cross-section comparison of an artery (left) and a vein (right), showing tunica layers and relative lumen sizes',
+        svg: `<svg viewBox="0 0 540 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="12">
+  <defs>
+    <style>.txt{fill:#1f2937;} .dim{fill:#6b7280;} .lbl{fill:#374151;font-size:11px;}</style>
+  </defs>
+  <!-- ARTERY (left) -->
+  <!-- Tunica adventitia (outermost) -->
+  <circle cx="140" cy="130" r="90" fill="#fde8d0" stroke="#9a3412" stroke-width="1.5"/>
+  <!-- Tunica media -->
+  <circle cx="140" cy="130" r="68" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <!-- Tunica intima -->
+  <circle cx="140" cy="130" r="46" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+  <!-- Lumen (narrow) -->
+  <circle cx="140" cy="130" r="28" fill="#bfdbfe"/>
+  <!-- ARTERY labels -->
+  <text x="140" y="134" text-anchor="middle" fill="#1d4ed8" font-size="10" font-weight="bold">Lumen</text>
+  <line x1="168" y1="130" x2="195" y2="115" stroke="#b91c1c" stroke-width="1"/>
+  <text x="198" y="112" fill="#b91c1c" font-size="10">Tunica intima</text>
+  <line x1="175" y1="110" x2="200" y2="92" stroke="#dc2626" stroke-width="1"/>
+  <text x="203" y="89" fill="#dc2626" font-size="10">Tunica media</text>
+  <text x="203" y="101" fill="#dc2626" font-size="10">(thick — muscle +</text>
+  <text x="203" y="113" fill="#dc2626" font-size="10">elastic fibres)</text>
+  <line x1="180" y1="90" x2="200" y2="72" stroke="#9a3412" stroke-width="1"/>
+  <text x="203" y="69" fill="#9a3412" font-size="10">Tunica adventitia</text>
+  <text x="140" y="248" text-anchor="middle" fill="#1f2937" font-weight="bold" font-size="13">ARTERY</text>
+  <text x="140" y="263" text-anchor="middle" class="dim" font-size="10">Narrow lumen · Thick media</text>
+  <!-- VEIN (right) -->
+  <!-- Tunica adventitia -->
+  <circle cx="400" cy="130" r="88" fill="#e0e7ff" stroke="#3730a3" stroke-width="1.5"/>
+  <!-- Tunica media (thin) -->
+  <circle cx="400" cy="130" r="70" fill="#c7d2fe" stroke="#4f46e5" stroke-width="1.5"/>
+  <!-- Tunica intima -->
+  <circle cx="400" cy="130" r="60" fill="#ddd6fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <!-- Lumen (wide) -->
+  <circle cx="400" cy="130" r="55" fill="#bfdbfe"/>
+  <!-- Valve symbol inside vein -->
+  <path d="M 375,110 L 400,130 L 425,110" stroke="#1d4ed8" stroke-width="1.5" fill="none"/>
+  <text x="400" y="145" text-anchor="middle" fill="#1d4ed8" font-size="9">valve</text>
+  <!-- VEIN labels -->
+  <line x1="430" y1="130" x2="455" y2="115" stroke="#7c3aed" stroke-width="1"/>
+  <text x="458" y="112" fill="#7c3aed" font-size="10">Tunica intima</text>
+  <line x1="445" y1="115" x2="455" y2="96" stroke="#4f46e5" stroke-width="1"/>
+  <text x="458" y="93" fill="#4f46e5" font-size="10">Tunica media</text>
+  <text x="458" y="105" fill="#4f46e5" font-size="10">(thin)</text>
+  <line x1="455" y1="80" x2="458" y2="74" stroke="#3730a3" stroke-width="1"/>
+  <text x="458" y="71" fill="#3730a3" font-size="10">Tunica adventitia</text>
+  <text x="400" y="248" text-anchor="middle" fill="#1f2937" font-weight="bold" font-size="13">VEIN</text>
+  <text x="400" y="263" text-anchor="middle" class="dim" font-size="10">Wide lumen · Thin media · Valve</text>
+</svg>`,
+      },
+    },
+    {
+      id: 'callout-tip-vessel-exam',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Structure–Function Pairing',
+        text: 'For "explain" questions, always pair a structural feature with how it helps the vessel function. For example: "Capillary walls are one cell thick, which enables quick diffusion due to the short diffusion distance." Remember: muscle tissue contracts (active narrowing) and elastic tissue recoils (passive, to smooth out pressure fluctuations). Capillary walls are one cell thick — they do NOT have cell walls.',
       },
     },
     {
