@@ -1,196 +1,233 @@
 export const note_biology_1_1_4 = {
   blocks: [
     {
-      id: 'obj-cardiac',
+      id: 'obj-mol-tests',
       type: 'objective',
       data: {
-        text: 'Understand the cardiac cycle, pressure changes, valve function, and factors determining cardiac output and tissue fluid formation.'
-      }
+        text: 'Describe and explain the biochemical tests used to identify carbohydrates (reducing sugars, starch), proteins and lipids in food and solution samples. Understand the principle and expected results of each test.',
+      },
     },
     {
-      id: 'h-cardiac-cycle',
+      id: 'h-reducing-sugar',
       type: 'heading',
-      data: {
-        text: 'Cardiac Cycle: Systole and Diastole',
-        level: 2
-      }
+      data: { text: "Benedict's Test for Reducing Sugars", level: 2 },
     },
     {
-      id: 'p-atrial-systole',
+      id: 'p-benedicts-principle',
       type: 'paragraph',
       data: {
-        text: 'The cardiac cycle begins with atrial systole (atrial contraction). The sinoatrial (SA) node depolarises, causing both atria to contract simultaneously, pushing blood into the relaxed ventricles. During this phase, ventricular pressure remains low, the atrioventricular valves (tricuspid and mitral) are open, and semilunar valves (aortic and pulmonary) are closed. Atrial systole lasts approximately 0.1 seconds and contributes about 25% of ventricular filling; the remaining 75% occurs passively during ventricular diastole. After atrial systole, the SA node\'s signal terminates, atrial muscles relax, and the atrioventricular valves remain open briefly as blood continues to flow into the ventricles.'
-      }
+        text: "Reducing sugars are sugars that can donate electrons (act as reducing agents). All monosaccharides (glucose, fructose, galactose) and some disaccharides (maltose, lactose) are reducing sugars. Sucrose is a non-reducing sugar. Benedict's reagent is an alkaline solution of copper(II) sulfate (blue). Reducing sugars reduce Cu²⁺ ions to Cu⁺ ions, forming an insoluble precipitate.",
+      },
     },
     {
-      id: 'p-ventricular-systole',
-      type: 'paragraph',
-      data: {
-        text: 'Ventricular systole (ventricular contraction) follows atrial systole. The ventricles contract, raising ventricular pressure rapidly. When ventricular pressure exceeds atrial pressure, the atrioventricular valves snap shut, preventing backflow. This closure produces the first heart sound ("lub"). As ventricular pressure continues to rise and exceeds aortic/pulmonary artery pressure, the semilunar valves open, and blood is ejected into the aorta and pulmonary artery. The amount of blood ejected per beat is the stroke volume (typically 70 mL). Ventricular systole lasts approximately 0.3 seconds. When the ventricles begin to relax, ventricular pressure falls below aortic/pulmonary artery pressure, and the semilunar valves close, producing the second heart sound ("dub").'
-      }
-    },
-    {
-      id: 'p-diastole',
-      type: 'paragraph',
-      data: {
-        text: 'Diastole is the relaxation phase of the entire heart. All chambers relax, ventricular pressure drops, and the atrioventricular valves reopen as atrial pressure exceeds ventricular pressure. Blood flows from the atria into the ventricles, and the coronary arteries dilate (unlike during systole when they are compressed), allowing blood to perfuse the heart muscle. Diastole lasts approximately 0.5 seconds. The cycle then repeats. The pressure changes during the cardiac cycle can be visualised on graphs showing atrial, ventricular, and aortic pressure over time.'
-      }
-    },
-    {
-      id: 'eq-cardiac-output',
-      type: 'equation',
-      data: {
-        html: 'Cardiac output (CO) = Stroke volume (SV) × Heart rate (HR)<br/>CO (mL min<sup>−1</sup>) = SV (mL) × HR (beats min<sup>−1</sup>)',
-        caption: 'Cardiac output calculation'
-      }
-    },
-    {
-      id: 'h-cardiac-output',
-      type: 'heading',
-      data: {
-        text: 'Cardiac Output and Heart Rate Control',
-        level: 2
-      }
-    },
-    {
-      id: 'p-co-def',
-      type: 'paragraph',
-      data: {
-        text: 'Cardiac output (CO) is the volume of blood pumped by the heart per minute. At rest, the heart rate is approximately 70 beats per minute, and stroke volume is approximately 70 mL, giving a cardiac output of about 5000 mL min⁻¹ (5 L min⁻¹)—roughly the total blood volume, meaning all blood circulates once per minute. During exercise, cardiac output can increase to 35 L min⁻¹ or more in trained athletes, achieved by increases in both heart rate (up to 180–200 bpm) and stroke volume. The sympathetic nervous system increases heart rate via noradrenaline and adrenaline, while the parasympathetic system (vagus nerve) decreases it via acetylcholine. Heart rate is also influenced by hormones (adrenaline, thyroxine), body temperature, emotions, and physical fitness.'
-      }
-    },
-    {
-      id: 'p-starling',
-      type: 'paragraph',
-      data: {
-        text: 'Starling\'s law (the Frank-Starling mechanism) states that cardiac muscle contraction is proportional to the length of muscle fibres before contraction, up to an optimal length. During diastole, as ventricular volume increases with incoming blood, the ventricular wall stretches. This stretching increases the overlap of thick and thin filaments in myocardial sarcomeres, enhancing the force of contraction during the subsequent systole. Therefore, increased venous return (end-diastolic volume) increases stroke volume automatically, without neural or hormonal intervention. This ensures that the left and right ventricles pump equal volumes despite being on separate circuits: if venous return to the right heart increases, right ventricular stroke volume increases, sending more blood to the lungs, increasing left atrial filling and left ventricular stroke volume in response.'
-      }
-    },
-    {
-      id: 'table-pressure-changes',
+      id: 'table-benedicts',
       type: 'comparisonTable',
       data: {
-        headers: ['Phase', 'Atrial Pressure', 'Ventricular Pressure', 'Aortic Pressure', 'AV Valve', 'SL Valve'],
+        caption: "Benedict's test procedure and results",
+        headers: ['Step', 'Detail'],
         rows: [
-          ['Atrial systole', 'High (contracting)', 'Low (relaxed)', 'Steady (~80 mmHg)', 'Open', 'Closed'],
-          ['Ventricular systole', 'Low (relaxed)', 'Rising then high', 'Rising (peak ~120 mmHg)', 'Closed', 'Open then closed'],
-          ['Diastole', 'Rising (filling)', 'Low (relaxing)', 'Falling (~80 mmHg)', 'Opening', 'Closed']
+          ['Reagent', "Benedict's reagent (copper sulfate + sodium carbonate + sodium citrate — alkaline blue solution)"],
+          ['Procedure', 'Add sample to Benedict\'s reagent; heat in a water bath at ~80°C for 2-3 minutes'],
+          ['Positive result', 'Colour change from BLUE → GREEN → YELLOW → ORANGE → BRICK RED precipitate (Cu₂O) depending on sugar concentration'],
+          ['Negative result', 'Solution remains blue — no reducing sugar present'],
+          ['Quantitative use', 'Greater brick-red precipitate = higher reducing sugar concentration; can be quantified by filtering and weighing precipitate'],
         ],
-        caption: 'Pressure changes during the cardiac cycle (AV = atrioventricular, SL = semilunar)'
-      }
+      },
     },
     {
-      id: 'h-tissue-fluid',
-      type: 'heading',
-      data: {
-        text: 'Tissue Fluid Formation and Reabsorption',
-        level: 2
-      }
-    },
-    {
-      id: 'p-tissue-fluid-form',
-      type: 'paragraph',
-      data: {
-        text: 'Tissue fluid is the fluid bathing cells, formed from blood plasma. At the arteriole end of capillaries, hydrostatic pressure (blood pressure inside the capillary) is high (~40 mmHg) compared to oncotic pressure (osmotic pressure due to plasma proteins, ~25 mmHg). The net outward force (filtration) is 40 − 25 = 15 mmHg, forcing water and small solutes (glucose, amino acids, ions, urea) out through the permeable capillary wall. Large molecules (proteins, red blood cells) remain in the blood. The filtrate becomes tissue fluid, bathing the cells. Cells take up oxygen and glucose and release CO₂ and waste products into the tissue fluid.'
-      }
-    },
-    {
-      id: 'p-tissue-fluid-reabs',
-      type: 'paragraph',
-      data: {
-        text: 'At the venule end of capillaries, hydrostatic pressure falls (~15 mmHg) due to blood loss and vessel diameter increase, while oncotic pressure remains high (~25 mmHg). The net force now favours reabsorption inward (15 mmHg inward), returning water and waste products to the blood. However, not all tissue fluid is reabsorbed; approximately 10% drains into lymphatic capillaries as lymph, which eventually returns to the bloodstream via the thoracic duct. If hydrostatic pressure is too high (e.g. during prolonged standing or venous obstruction), or if plasma protein concentration is too low (malnutrition, liver disease, nephrotic syndrome), tissue fluid accumulates in tissues, causing oedema (swelling). Lymphatic vessel dysfunction or removal (e.g. after cancer surgery) also causes lymphoedema.'
-      }
-    },
-    {
-      id: 'callout-worked-cardiac-cycle',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Tracing a Complete Cardiac Cycle',
-        text: 'Begin: Both atria contract (atrial systole, 0.1s). Blood pushed into relaxed ventricles. Then: Both ventricles contract (ventricular systole, 0.3s). AV valves close (1st sound "lub"). Pressure rises, SL valves open, blood ejected into aorta/pulmonary artery. Finally: All relax (diastole, 0.5s). SL valves close (2nd sound "dub"). AV valves open. Blood refills ventricles. Cycle repeats (~0.8s total at 75 bpm).'
-      }
-    },
-    {
-      id: 'callout-tip-starling',
+      id: 'callout-tip-non-reducing',
       type: 'callout',
       data: {
         style: 'tip',
-        title: 'Starling\'s Law Exam Tip',
-        text: 'Remember: more blood in (venous return) = more stretch on ventricle = stronger contraction = larger stroke volume. Automatic adjustment. This is how the right and left hearts stay balanced despite being separate pumps.'
+        title: 'Testing for Non-Reducing Sugars (e.g. Sucrose)',
+        text: 'Step 1: Test the original sample with Benedict\'s — if negative (stays blue), sucrose may be present. Step 2: Hydrolyse a new sample by boiling with dilute hydrochloric acid (to break glycosidic bonds: sucrose → glucose + fructose). Step 3: Neutralise with sodium hydrogencarbonate. Step 4: Repeat Benedict\'s test. Positive result NOW → non-reducing sugar was present in original sample.',
+      },
+    },
+    {
+      id: 'h-starch',
+      type: 'heading',
+      data: { text: 'Iodine Test for Starch', level: 2 },
+    },
+    {
+      id: 'p-iodine-principle',
+      type: 'paragraph',
+      data: {
+        text: 'Iodine (dissolved as iodine–potassium iodide solution, I₂/KI) is orange-brown in colour. Starch molecules have a coiled helix structure; iodine molecules fit into the centre of the amylose helix, forming a starch–iodine complex that absorbs light at ~620 nm, appearing blue-black.',
+      },
+    },
+    {
+      id: 'table-iodine',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Iodine test procedure and results',
+        headers: ['Step', 'Detail'],
+        rows: [
+          ['Reagent', 'Iodine dissolved in potassium iodide solution (I₂/KI) — orange-brown colour'],
+          ['Procedure', 'Add a few drops to the sample (can be done at room temperature)'],
+          ['Positive result', 'BLUE-BLACK colour — starch present'],
+          ['Negative result', 'Solution remains orange-brown — no starch'],
+          ['Important note', 'Iodine test is not suitable for hot or strongly reducing conditions (false negatives); test at room temperature on solid or solution samples'],
+        ],
+      },
+    },
+    {
+      id: 'h-protein',
+      type: 'heading',
+      data: { text: 'Biuret Test for Proteins', level: 2 },
+    },
+    {
+      id: 'p-biuret-principle',
+      type: 'paragraph',
+      data: {
+        text: 'The Biuret test detects peptide bonds (–CO–NH–) in proteins. In alkaline conditions, copper(II) ions (Cu²⁺) form coordination complexes with nitrogen atoms of two or more peptide bonds, producing a purple/violet colour. The test detects dipeptides and larger polypeptides, but NOT individual amino acids (which have only one peptide bond... actually free amino acids have NO peptide bonds, so Biuret only detects bonds in chains of 2+ amino acids).',
+      },
+    },
+    {
+      id: 'table-biuret',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Biuret test procedure and results',
+        headers: ['Step', 'Detail'],
+        rows: [
+          ['Reagents', 'Step 1: Add sodium hydroxide (NaOH) solution to make alkaline. Step 2: Add a few drops of copper sulfate (CuSO₄) solution'],
+          ['Procedure', 'Mix gently and observe colour change (no heating needed)'],
+          ['Positive result', 'PURPLE / VIOLET colour — peptide bonds (protein) present'],
+          ['Negative result', 'Solution remains BLUE (colour of dilute copper sulfate) — no protein'],
+          ['Important note', 'Also detects dipeptides; does NOT detect free amino acids'],
+        ],
+      },
+    },
+    {
+      id: 'h-lipid',
+      type: 'heading',
+      data: { text: 'Emulsion Test for Lipids', level: 2 },
+    },
+    {
+      id: 'p-emulsion-principle',
+      type: 'paragraph',
+      data: {
+        text: 'Lipids are non-polar and do not dissolve in water, but dissolve in non-polar solvents like ethanol. The emulsion test exploits this: lipids dissolve in ethanol but when water is added, the lipid comes out of solution as tiny droplets — an emulsion — which scatter light and appear milky white.',
+      },
+    },
+    {
+      id: 'table-emulsion',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Emulsion test (ethanol test) procedure and results',
+        headers: ['Step', 'Detail'],
+        rows: [
+          ['Reagents', 'Absolute ethanol (and water)'],
+          ['Procedure', 'Step 1: Add excess ethanol to the sample and shake vigorously — lipid dissolves in ethanol. Step 2: Pour the ethanol extract into water in a separate tube'],
+          ['Positive result', 'MILKY WHITE EMULSION / CLOUDINESS — lipid present (droplets scatter light)'],
+          ['Negative result', 'Clear solution — no lipid'],
+          ['Important note', 'Ethanol negative control: adding pure ethanol to water produces no cloudiness'],
+        ],
+      },
+    },
+    {
+      id: 'table-all-tests-summary',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Summary of all four food tests',
+        headers: ['Test', 'Tests for', 'Reagent(s)', 'Positive result', 'Control (negative result)'],
+        rows: [
+          ["Benedict's", 'Reducing sugars (glucose, fructose, maltose, lactose)', "Benedict's reagent + heating", 'Brick-red precipitate', 'Blue (no change)'],
+          ['Iodine (I₂/KI)', 'Starch', 'I₂/KI solution', 'Blue-black', 'Orange-brown (no change)'],
+          ['Biuret', 'Proteins (peptide bonds)', 'NaOH + CuSO₄', 'Purple / violet', 'Blue'],
+          ['Emulsion', 'Lipids', 'Ethanol then water', 'Milky white emulsion', 'Clear'],
+        ],
+      },
+    },
+    {
+      id: 'callout-we-food-test',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Identifying Molecules in a Food Sample',
+        text: 'A student tests a food sample and finds: Benedict\'s = blue (negative), Iodine = blue-black (positive), Biuret = purple (positive), Emulsion = cloudy white (positive).\n\nConclusions:\n• No reducing sugars present\n• Starch present\n• Protein present\n• Lipid present\n\nThe student then acid-hydrolyses the sample and repeats Benedict\'s test → brick red → non-reducing sugars (sucrose) were also present.',
+      },
+    },
+    {
+      id: 'callout-key-controls',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Controls in Food Tests',
+        text: 'Always run a negative control (distilled water) alongside the test sample to confirm reagent is working. A positive control (known glucose for Benedict\'s, known starch for iodine, etc.) confirms the test reagent can give a positive result. Controls allow you to identify false positives/negatives due to reagent or technique errors.',
+      },
+    },
+    {
+      id: 'h-semiquant',
+      type: 'heading',
+      data: {
+        text: 'Semi-quantitative Food Tests and Colorimetry',
+        level: 2
       }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
+      id: 'p-semiquant-principle',
+      type: 'paragraph',
       data: {
-        understand: 'The atrioventricular valves must close before the semilunar valves open because of the pressure sequence: as the ventricle begins to contract, ventricular pressure rises above atrial pressure, forcing the AV valves shut. Only after ventricular pressure exceeds aortic/pulmonary artery pressure do the semilunar valves open.',
-        apply: 'Using a pressure-volume diagram, identify the phase where the left ventricle is filling (diastole) and the phase where it is ejecting blood (systole). What is the significance of the dicrotic notch on the aortic pressure trace?',
-        analyze: 'Compare the pressure changes in the left and right ventricles during the cardiac cycle. Why does the left ventricle generate much higher pressure despite having the same stroke volume?',
-        evaluate: 'Evaluate the use of ECG and echocardiography as tools for diagnosing heart conditions. Which provides more information about mechanical function, and which about electrical conduction?'
-      },
-      terms: []
+        text: 'The qualitative food tests above only give a yes/no result. Semi-quantitative tests allow an estimate of concentration by comparing the colour intensity of a test sample against a calibration curve. A colorimeter measures the absorbance of light through a solution. For Benedict\'s test, the precipitate turns orange/brick-red — a blue filter is used in the colorimeter (blue light is absorbed strongly by orange solutions). Higher absorbance = more precipitate = higher reducing sugar concentration. A calibration curve (absorbance vs known glucose concentration) is plotted first, then the unknown sample\'s absorbance is used to read off its concentration.'
+      }
     },
     {
-      id: 'checklist-cardiac',
+      id: 'callout-worked-serial-dilution',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Serial Dilution Procedure',
+        text: 'To prepare a range of known glucose concentrations for a calibration curve:\n1. Prepare a stock solution of known concentration (e.g. 1% glucose).\n2. Take 5 cm³ of stock + 5 cm³ distilled water → 0.5% solution (1:2 dilution).\n3. Take 5 cm³ of this + 5 cm³ distilled water → 0.25% (1:4 dilution).\n4. Repeat to give a range: 1.0%, 0.5%, 0.25%, 0.125% + 0% (distilled water as blank).\n5. Add equal volumes of Benedict\'s to each tube; heat all in a water bath at 80 °C for 5 minutes.\n6. Cool, then use the colorimeter (blue filter) to measure absorbance of each tube.\n7. Plot absorbance (y-axis) vs glucose concentration (x-axis) → calibration curve.\n8. Measure the unknown sample in the same way; use the graph to read off its concentration.'
+      }
+    },
+    {
+      id: 'callout-tip-colorimeter',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Colorimeter Filter Rule',
+        text: 'Choose the COMPLEMENTARY colour filter to the solution. The orange/brick-red Benedict\'s precipitate is best measured with a BLUE filter (blue is the complement of orange) because the blue light is absorbed most strongly by the orange product. The more precipitate, the greater the absorbance. This is also called selecting the filter of maximum absorption.'
+      }
+    },
+    {
+      id: 'checklist-mol-tests',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Atrial systole lasts ~0.1s and contributes ~25% of ventricular filling', checked: false },
-          { text: 'Ventricular systole lasts ~0.3s; AV valves close ("lub"), then SL valves open and blood is ejected', checked: false },
-          { text: 'Diastole lasts ~0.5s; all chambers relax, SL valves close ("dub"), AV valves open', checked: false },
-          { text: 'Cardiac output = stroke volume × heart rate; at rest ~5 L min⁻¹', checked: false },
-          { text: 'Starling\'s law: increased venous return increases stroke volume via increased sarcomere stretch', checked: false }
-        ]
-      }
+          { text: "State the reagent and expected positive/negative result for Benedict's test", checked: false },
+          { text: 'Explain the principle of why reducing sugars give a colour change with copper salts', checked: false },
+          { text: 'Describe how to test for a non-reducing sugar (include hydrolysis step)', checked: false },
+          { text: 'State the reagent and expected result for the iodine-starch test', checked: false },
+          { text: 'State the reagents and expected result for the Biuret test', checked: false },
+          { text: 'Describe the emulsion test for lipids including both steps', checked: false },
+          { text: 'Explain why a control is necessary in each food test', checked: false },
+          { text: 'Describe how to carry out a serial dilution to make a concentration range', checked: false },
+          { text: 'Explain the principle of colorimetry and why a blue filter is used for Benedict\'s precipitate', checked: false },
+          { text: 'Describe how to use a calibration curve to estimate an unknown sugar concentration', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-cardiac',
+      id: 'summary-mol-tests',
       type: 'summary',
       data: {
-        text: 'The cardiac cycle has three phases: atrial systole (0.1s), ventricular systole (0.3s), and diastole (0.5s). Valves open/close passively due to pressure differences, producing heart sounds. Cardiac output (mL min⁻¹) = stroke volume × heart rate. Starling\'s law ensures left and right ventricles pump equal volumes. At capillaries, high hydrostatic pressure at arteriole end filters tissue fluid; low pressure at venule end reabsorbs it. Oedema results from high hydrostatic pressure or low oncotic pressure.'
-      }
-    }
+        text: "Four key food tests: (1) Benedict's (Cu²⁺, heat) → brick-red precipitate for reducing sugars; non-reducing sugars need HCl hydrolysis first. (2) Iodine/KI → blue-black for starch (I₂ enters amylose helix). (3) Biuret (NaOH + CuSO₄) → purple for proteins (Cu²⁺ complexes with peptide bonds). (4) Emulsion (ethanol then water) → milky white cloudiness for lipids. Always use positive and negative controls.",
+      },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-atrial-systole',
-        prompt: 'Describe atrial systole. What percentage of ventricular filling does it contribute?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-ventricular-systole',
-        prompt: 'Outline ventricular systole. When do the valve sounds occur and why?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-diastole',
-        prompt: 'What happens during diastole? Why do coronary arteries dilate during this phase?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-starling',
-        prompt: 'Explain Starling\'s law. How does it ensure balanced output between left and right ventricles?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-tissue-fluid-form',
-        prompt: 'Describe tissue fluid formation at the arteriole end of capillaries. What forces are involved?'
-      }
+      { id: 'cue-1', blockId: 'table-benedicts', prompt: "What reagent and conditions are used in Benedict's test? What is the positive result and what does it indicate?" },
+      { id: 'cue-2', blockId: 'callout-tip-non-reducing', prompt: 'How would you modify the Benedict\'s test to detect a non-reducing sugar like sucrose? Why is the extra step needed?' },
+      { id: 'cue-3', blockId: 'table-biuret', prompt: 'Describe the Biuret test: reagents, procedure, positive result, and what the test detects at the molecular level.' },
+      { id: 'cue-4', blockId: 'table-emulsion', prompt: 'Describe the emulsion test for lipids. Why does adding ethanol extract to water produce a milky result if lipid is present?' },
+      { id: 'cue-5', blockId: 'callout-key-controls', prompt: 'Why are controls needed in food tests? What are positive and negative controls used for?' },
     ],
-    summaryText: 'Atrial systole (0.1s): atria contract, push blood into ventricles. Ventricular systole (0.3s): ventricles contract, AV valves close (lub), SL valves open, blood ejected. Diastole (0.5s): all relax, SL valves close (dub), AV valves open. CO = SV × HR (~5 L/min rest). Starling\'s law: increased stretch increases contraction force. Tissue fluid: arteriole end filtration (hydrostatic pressure high), venule end reabsorption (osmotic pressure high).',
-    ready: false
+    summaryText: "Benedict's: Cu²⁺, heat → brick-red = reducing sugars. Iodine: blue-black = starch. Biuret: NaOH + CuSO₄ → purple = protein (peptide bonds). Emulsion: ethanol→water → milky white = lipids. Non-reducing sugar test: acid hydrolysis → neutralise → Benedict's. Always run controls!",
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Cardiac Cycle and Tissue Fluid Exchange',
-      detail: 'Comprehensive explanation of pressure changes, valve timing, and Starling\'s law.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['cardiac-cycle', 'systole', 'diastole', 'cardiac-output', 'tissue-fluid', 'starling-law']
-    }
-  ]
+    { id: 'ev-1', title: "Benedict's test for reducing sugars", detail: "Stanley Benedict developed his reagent in 1908 as an improvement on Fehling's solution. The copper reduction test is still widely used in clinical and biochemistry laboratories to detect glycosuria (glucose in urine) in diabetic screening.", year: '1908', source: 'Benedict SR, J Biol Chem', tags: ['food tests', 'biochemistry'] },
+  ],
 };

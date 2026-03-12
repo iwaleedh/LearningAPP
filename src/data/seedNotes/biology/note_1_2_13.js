@@ -1,197 +1,149 @@
 export const note_biology_1_2_13 = {
   blocks: [
     {
-      id: 'obj-membrane-perm',
+      id: 'obj-tt',
       type: 'objective',
-      data: {
-        text: 'Understand membrane permeability changes with temperature, protein denaturation, and practical analysis of membrane integrity using beetroot tissue.'
-      }
+      data: { text: 'Describe the processes of transcription and translation, including the roles of RNA polymerase, mRNA codons, tRNA anticodons, and ribosomes in protein synthesis.' },
     },
     {
-      id: 'h-membrane-perm-theory',
+      id: 'h-overview',
       type: 'heading',
-      data: {
-        text: 'Membrane Permeability and Temperature',
-        level: 2
-      }
+      data: { text: 'Overview: Gene \u2192 Protein', level: 2 },
     },
     {
-      id: 'p-permeability-temp',
+      id: 'p-overview',
       type: 'paragraph',
-      data: {
-        text: 'Membrane permeability is the ease with which molecules cross the cell membrane. It depends on several factors: membrane composition (lipid saturation, cholesterol content), temperature, and presence of transport proteins. Temperature affects permeability dramatically. At low temperatures (0–20°C), the phospholipid bilayer is relatively rigid; membrane proteins are less active. Permeability to small molecules (including leakage of small ions and dyes) is low. As temperature increases (20–40°C), the bilayer becomes more fluid; lipids and proteins move laterally; membranes become more permeable. This is reversible: cooling restores rigidity and reduces permeability. However, above ~40°C (optimal temperature for most human enzymes ~37°C), denaturation begins. Proteins unfold; hydrogen bonds and weak interactions stabilising their structure break. Membrane proteins lose function. Phospholipid bilayer integrity is compromised. Permeability increases dramatically as the membrane becomes increasingly leaky. Above ~50°C, denaturation becomes irreversible; the cell dies.'
-      }
+      data: { text: 'Protein synthesis involves two stages: <strong>transcription</strong> (in the nucleus) and <strong>translation</strong> (at ribosomes in the cytoplasm). The DNA sequence of a gene is first copied into a mobile mRNA molecule, which then acts as a template for building a polypeptide chain.' },
     },
     {
-      id: 'p-protein-denaturation',
-      type: 'paragraph',
-      data: {
-        text: 'Protein denaturation is the loss of protein tertiary and quaternary structure, resulting in loss of function. High temperature causes thermal denaturation: energy input breaks hydrogen bonds and weak interactions, causing the protein to unfold. The polypeptide backbone remains intact (primary structure unchanged), but the 3D shape is lost and the active site is destroyed. Other denaturants include extreme pH (H⁺ or OH⁻ ions disrupt ionic interactions), detergents (dissolve lipids, disrupting hydrophobic interactions), and reducing agents (break disulphide bonds). For membrane integrity, thermal denaturation is most relevant. Membrane proteins denature at high temperature, losing function; the lipid bilayer becomes less organised; permeability increases. Cells attempt to maintain membrane fluidity by adjusting lipid composition: increasing unsaturated fats in cold, decreasing in heat.'
-      }
-    },
-    {
-      id: 'h-beetroot-practical',
-      type: 'heading',
-      data: {
-        text: 'Core Practical 3: Membrane Permeability Using Beetroot',
-        level: 2
-      }
-    },
-    {
-      id: 'p-beetroot-principle',
-      type: 'paragraph',
-      data: {
-        text: 'Beetroot contains anthocyanin pigments in its vacuoles. These pigments are red/purple when intracellular (vacuolar), but if the cell membrane becomes damaged (increased permeability), anthocyanins leak out of the cell into the surrounding liquid, turning it red/purple. This colour change is easily measured spectrophotometrically using a colorimeter or spectrophotometer. The intensity of colour (absorbance at ~540 nm) is proportional to the amount of leaked pigment, which reflects the extent of membrane damage. This makes beetroot a perfect model organism for studying membrane permeability: the pigment leakage is visible, quantifiable, and directly indicates loss of membrane integrity.'
-      }
-    },
-    {
-      id: 'p-beetroot-procedure',
-      type: 'paragraph',
-      data: {
-        text: 'Procedure: (1) Cut beetroot tissue into uniform discs or cubes (~5 mm) using a cork borer or knife. (2) Rinse thoroughly with distilled water to remove surface pigment (cells may have been cut). (3) Prepare water baths at set temperatures (e.g. 20°C, 30°C, 40°C, 50°C, 60°C, 70°C). (4) Place discs in test tubes containing distilled water. Immerse tubes in water baths for a fixed time (~5 minutes at each temperature to allow pigment leakage). (5) Remove discs; measure the absorbance of the liquid using a colorimeter (wavelength 540 nm, red light). (6) Plot absorbance (y-axis) vs temperature (x-axis). (7) Repeat with multiple discs at each temperature; calculate mean absorbance and standard deviation. Controls: (a) negative control—distilled water at room temperature (no leakage expected, low absorbance). (b) Positive control—beetroot disc boiled (all membranes destroyed, maximum absorbance). (c) Blank—distilled water in colorimeter (set absorbance = 0).'
-      }
-    },
-    {
-      id: 'h-results-interpretation',
-      type: 'heading',
-      data: {
-        text: 'Results and Interpretation',
-        level: 2
-      }
-    },
-    {
-      id: 'p-results',
-      type: 'paragraph',
-      data: {
-        text: 'Typical results: absorbance increases gradually from 20°C to ~40°C (linear increase), reflecting increased membrane fluidity and slight permeability increase. From 40°C to 50°C, absorbance increases more steeply (exponential increase), indicating accelerated protein denaturation and rapid membrane permeability increase. Above 50°C, absorbance plateaus (maximum or near-maximum), indicating complete cell death. The steepest part of the curve (~40–50°C) represents the transition from reversible to irreversible denaturation. This matches the known optimal temperature for human enzymes (~37°C) and lethal temperature ranges for most cells. The curve is typically sigmoid (S-shaped) or exponential, not linear.'
-      }
-    },
-    {
-      id: 'p-interpretation',
-      type: 'paragraph',
-      data: {
-        text: 'Interpretation: (1) Low-temperature region (0–40°C): gradual absorbance increase reflects increased membrane fluidity. Permeability change is modest and reversible. (2) Transition region (40–50°C): steep absorbance increase indicates rapid membrane denaturation. Protein loss of function accelerates. (3) High-temperature region (>50°C): absorbance plateaus. Cells are completely dead; all membranes are damaged. The data demonstrate that: (a) temperature critically affects membrane permeability; (b) the effect is not linear—a critical temperature range (~40–50°C) marks a sharp transition; (c) protein denaturation drives the permeability change (supported by knowing proteins are the main heat-sensitive membrane component).'
-      }
-    },
-    {
-      id: 'h-sources-of-error',
-      type: 'heading',
-      data: {
-        text: 'Sources of Error and Improvements',
-        level: 2
-      }
-    },
-    {
-      id: 'p-errors',
-      type: 'paragraph',
-      data: {
-        text: 'Systematic errors: (1) Beetroot discs may be damaged during cutting, causing immediate pigment leakage independent of temperature. Improvement: use a cork borer for uniform cuts; handle carefully. (2) Initial rinse may be incomplete, leaving surface pigment. Improvement: rinse thoroughly until water is clear. (3) Unequal heating: test tubes may not reach set temperature uniformly, or temperature may drift during the 5-minute incubation. Improvement: use a thermometer to verify each tube\'s temperature; use insulated water baths or thermostatic heaters. (4) Variable incubation time: some discs left longer than others. Improvement: use a timer; remove all discs simultaneously. (5) Colorimeter reading errors: air bubbles in cuvettes, inconsistent cuvette position. Improvement: check for bubbles; wipe cuvettes; use cuvette holders. (6) Beetroot variety varies: some varieties have higher anthocyanin content. Improvement: use consistent beetroot source and variety.'
-      }
-    },
-    {
-      id: 'p-improvements',
-      type: 'paragraph',
-      data: {
-        text: 'Improvements: (1) Use multiple discs per temperature (n ≥ 3) to obtain mean and standard deviation. (2) Test more temperature points (e.g. every 5°C) to resolve the transition region better. (3) Use a temperature probe in one test tube to confirm actual temperature. (4) Standardise disc size and mass (weigh discs). (5) Repeat the experiment on different days to assess reproducibility. (6) Use absorbance vs time plot for each temperature to confirm pigment leakage reaches a plateau (equilibrium) before reading. (7) Calculate Q10 (change in rate per 10°C) in the linear region to quantify the temperature effect.'
-      }
-    },
-    {
-      id: 'table-errors',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Error', 'Cause', 'Effect', 'Minimisation'],
-        rows: [
-          ['Damaged discs', 'Cutting causes cell damage', 'High baseline pigment leakage', 'Use cork borer; careful handling'],
-          ['Surface pigment', 'Incomplete rinse', 'Overestimate absorbance at low temp', 'Thorough rinsing until clear'],
-          ['Temperature variation', 'Unequal heating or drift', 'Inconsistent absorbance readings', 'Verify temperature with thermometer'],
-          ['Variable incubation time', 'Asynchronous disc removal', 'Inconsistent pigment leakage', 'Use timer; remove all simultaneously'],
-          ['Colorimeter error', 'Air bubbles, cuvette position', 'Incorrect absorbance reading', 'Check bubbles; standardise positioning'],
-          ['Beetroot variability', 'Different anthocyanin content', 'Experiment-to-experiment variation', 'Use consistent beetroot type/source']
-        ],
-        caption: 'Sources of error in beetroot permeability practical'
-      }
-    },
-    {
-      id: 'callout-worked-data',
+      id: 'callout-central-dogma',
       type: 'callout',
       data: {
-        style: 'worked',
-        title: 'Analysing Beetroot Data',
-        text: 'Example data: 20°C (A=0.05), 30°C (A=0.08), 40°C (A=0.15), 50°C (A=0.45), 60°C (A=0.72), 70°C (A=0.75). Plot these on a graph. Observe: linear increase 20–40°C (ΔA ~0.01 per °C). Steep increase 40–50°C (ΔA ~0.30 per °C; 30× faster!). Plateau 50–70°C (ΔA ~0.03 per °C; rate slowing). Conclusion: membrane denaturation accelerates 40–50°C; critical transition region. Above 50°C, maximum damage reached.'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why does increasing temperature above ~40°C cause a sudden increase in membrane permeability in beetroot cells? Explain: at moderate temperatures H-bonds in membrane proteins are disrupted, but above ~40°C the lipid bilayer becomes too fluid and integral proteins denature, creating gaps and allowing anthocyanin to leak out rapidly.',
-        apply: 'A student measures absorbance of the solution containing beetroot-released anthocyanin at temperatures 20, 30, 40, 50, 60°C. At 40°C absorbance = 0.15; at 50°C = 0.45; at 60°C = 0.80. Calculate the Q₁₀ for membrane permeability between 40–60°C and explain what this tells you about the process.',
-        analyze: 'Compare the effect of temperature and ethanol concentration on membrane permeability. Both increase permeability, but via different mechanisms — explain each mechanism and predict which would cause more permanent damage to the membrane.',
-        evaluate: 'Evaluate the beetroot practical as a model for understanding membrane permeability. Consider what it does well (demonstrates temperature effect, quantitative, safe) and what it cannot tell us (cannot distinguish protein denaturation from lipid fluidisation, anthocyanin may not represent all membrane transport).',
+        style: 'key',
+        title: 'Central Dogma',
+        text: 'DNA \u2192 (Transcription) \u2192 mRNA \u2192 (Translation) \u2192 Protein\n\nDNA stays in the nucleus as the master copy. mRNA is a temporary messenger that carries the code out to the ribosomes.',
       },
-      terms: [],
     },
     {
-      id: 'checklist-permeability',
+      id: 'h-transcription',
+      type: 'heading',
+      data: { text: 'Transcription (in the Nucleus)', level: 2 },
+    },
+    {
+      id: 'list-transcription',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          '<strong>RNA polymerase</strong> binds to the promoter region of the DNA at the start of the gene.',
+          'RNA polymerase unwinds a section of the DNA double helix (breaks H-bonds) and moves along the <strong>template strand</strong> (antisense strand) in the 3′\u21925′ direction.',
+          'Free RNA nucleotides pair with complementary bases on the template strand: A pairs with U (uracil, not thymine); T pairs with A; C pairs with G.',
+          'RNA polymerase catalyses the formation of phosphodiester bonds between the RNA nucleotides, building a strand of <strong>pre-mRNA</strong> (5′\u21923′).',
+          'The DNA strands re-pair behind RNA polymerase. The pre-mRNA strand detaches when RNA polymerase reaches a terminator sequence.',
+          '<strong>RNA processing</strong>: the pre-mRNA contains non-coding sequences called <strong>introns</strong> as well as coding sequences called <strong>exons</strong>. The introns are removed (spliced out) and the exons join together to form the mature <strong>mRNA</strong>.',
+          'The mature mRNA leaves the nucleus through a <strong>nuclear pore</strong> and moves to ribosomes in the cytoplasm.',
+        ],
+      },
+    },
+    {
+      id: 'svg-transcription',
+      type: 'svg',
+      data: {
+        caption: 'Transcription: RNA polymerase reads the template DNA strand and builds a complementary mRNA strand. Introns are spliced out to give mature mRNA.',
+        svg: '<svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11"><rect width="560" height="220" fill="#f8f9ff" rx="8"/><text x="280" y="18" fill="#555" font-size="11" text-anchor="middle">NUCLEUS</text><rect x="10" y="22" width="540" height="150" rx="8" fill="#e8f4f8" opacity="0.6"/><text x="50" y="50" fill="#3498db" font-size="10">Coding strand (5′\u21923′)</text><text x="50" y="80" fill="#c0392b" font-size="10">Template strand (3′\u21925′)</text><g font-size="10" text-anchor="middle"><rect x="120" y="38" width="20" height="15" rx="2" fill="#3498db"/><text x="130" y="49" fill="white">A</text><rect x="145" y="38" width="20" height="15" rx="2" fill="#27ae60"/><text x="155" y="49" fill="white">T</text><rect x="170" y="38" width="20" height="15" rx="2" fill="#e74c3c"/><text x="180" y="49" fill="white">G</text><rect x="195" y="38" width="20" height="15" rx="2" fill="#f39c12"/><text x="205" y="49" fill="white">C</text><rect x="220" y="38" width="20" height="15" rx="2" fill="#3498db"/><text x="230" y="49" fill="white">A</text><rect x="245" y="38" width="20" height="15" rx="2" fill="#f39c12"/><text x="255" y="49" fill="white">C</text><rect x="120" y="67" width="20" height="15" rx="2" fill="#f39c12"/><text x="130" y="78" fill="white">T</text><rect x="145" y="67" width="20" height="15" rx="2" fill="#e74c3c"/><text x="155" y="78" fill="white">A</text><rect x="170" y="67" width="20" height="15" rx="2" fill="#27ae60"/><text x="180" y="78" fill="white">C</text><rect x="195" y="67" width="20" height="15" rx="2" fill="#3498db"/><text x="205" y="78" fill="white">G</text><rect x="220" y="67" width="20" height="15" rx="2" fill="#f39c12"/><text x="230" y="78" fill="white">T</text><rect x="245" y="67" width="20" height="15" rx="2" fill="#27ae60"/><text x="255" y="78" fill="white">G</text></g><ellipse cx="310" cy="74" rx="28" ry="20" fill="#9b59b6" opacity="0.9"/><text x="310" y="71" fill="white" font-size="9" text-anchor="middle">RNA</text><text x="310" y="82" fill="white" font-size="9" text-anchor="middle">polymerase</text><g font-size="10" text-anchor="middle"><rect x="345" y="95" width="20" height="15" rx="2" fill="#e74c3c" opacity="0.9"/><text x="355" y="106" fill="white">U</text><rect x="370" y="95" width="20" height="15" rx="2" fill="#f39c12" opacity="0.9"/><text x="380" y="106" fill="white">A</text><rect x="395" y="95" width="20" height="15" rx="2" fill="#3498db" opacity="0.9"/><text x="405" y="106" fill="white">C</text><rect x="420" y="95" width="20" height="15" rx="2" fill="#27ae60" opacity="0.9"/><text x="430" y="106" fill="white">G</text><rect x="445" y="95" width="20" height="15" rx="2" fill="#e74c3c" opacity="0.9"/><text x="455" y="106" fill="white">U</text></g><text x="400" y="125" fill="#c0392b" font-size="10" text-anchor="middle">pre-mRNA being built (5′\u21923′)</text><text x="280" y="180" fill="#666" font-size="10" text-anchor="middle">Introns removed \u21d2 mature mRNA leaves through nuclear pore \u21d2 cytoplasm</text><line x1="280" y1="172" x2="280" y2="180" stroke="#666" stroke-width="1"/></svg>',
+      },
+    },
+    {
+      id: 'h-translation',
+      type: 'heading',
+      data: { text: 'Translation (at Ribosomes)', level: 2 },
+    },
+    {
+      id: 'p-translation',
+      type: 'paragraph',
+      data: { text: 'Translation is the process by which the mRNA sequence is decoded to produce a specific sequence of amino acids (a polypeptide). It occurs at ribosomes, which may be free in the cytoplasm or attached to the rough endoplasmic reticulum.' },
+    },
+    {
+      id: 'list-translation',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'The mature mRNA attaches to a <strong>ribosome</strong>. The ribosome holds the mRNA and the tRNAs in position.',
+          'A <strong>tRNA</strong> molecule with the complementary <strong>anticodon</strong> binds to the first <strong>codon</strong> (sequence of 3 bases) on the mRNA at the P-site. Each tRNA carries a specific amino acid attached to its 3\'\u2212end.',
+          'A second tRNA with a complementary anticodon binds to the next codon at the A-site of the ribosome.',
+          'A <strong>peptide bond</strong> forms between the two amino acids (catalysed by rRNA in the ribosome \u2014 it acts as a <strong>ribozyme</strong>).',
+          'The ribosome moves along the mRNA one codon at a time (5′\u21923′). The first tRNA leaves; the polypeptide chain grows by one amino acid.',
+          'This continues until a <strong>stop codon</strong> is reached on the mRNA (UAA, UAG, or UGA). No tRNA has a complementary anticodon \u2014 the ribosome detaches and the completed polypeptide is released.',
+        ],
+      },
+    },
+    {
+      id: 'svg-translation',
+      type: 'svg',
+      data: {
+        caption: 'Translation: ribosome reads mRNA codons; tRNAs bring amino acids; peptide bonds form; polypeptide chain grows.',
+        svg: '<svg viewBox="0 0 560 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11"><rect width="560" height="230" fill="#f8f9ff" rx="8"/><rect x="60" y="100" width="440" height="25" rx="4" fill="#f5cba7"/><text x="280" y="116" fill="#922b21" font-size="10" text-anchor="middle">mRNA: 5′...AUG-UUC-GGA-CCU-UAA...3′</text><g font-size="10" text-anchor="middle"><rect x="145" y="90" width="40" height="55" rx="6" fill="#aed6f1" stroke="#2980b9" stroke-width="1.5"/><text x="165" y="105" fill="#1a5276">tRNA</text><text x="165" y="118" fill="#1a5276">U-A-C</text><text x="165" y="130" fill="#1a5276">anticodon</text><rect x="148" y="50" width="34" height="18" rx="3" fill="#27ae60"/><text x="165" y="62" fill="white">Met</text><line x1="165" y1="68" x2="165" y2="90" stroke="#27ae60" stroke-width="1.5"/><rect x="225" y="90" width="40" height="55" rx="6" fill="#a9dfbf" stroke="#1e8449" stroke-width="1.5"/><text x="245" y="105" fill="#1a5276">tRNA</text><text x="245" y="118" fill="#1a5276">A-A-G</text><text x="245" y="130" fill="#1a5276">anticodon</text><rect x="228" y="50" width="34" height="18" rx="3" fill="#e74c3c"/><text x="245" y="62" fill="white">Phe</text><line x1="245" y1="68" x2="245" y2="90" stroke="#e74c3c" stroke-width="1.5"/><line x1="190" y1="59" x2="228" y2="59" stroke="#666" stroke-width="1.5" stroke-dasharray="3,2"/><text x="210" y="56" fill="#666" font-size="9">peptide bond forming</text></g><rect x="130" y="88" width="165" height="80" rx="12" fill="none" stroke="#8e44ad" stroke-width="2.5" stroke-dasharray="6,3"/><text x="212" y="185" fill="#8e44ad" font-size="10" text-anchor="middle">Ribosome</text><text x="212" y="197" fill="#666" font-size="9" text-anchor="middle">(reads 5′\u21923′)</text><text x="430" y="170" fill="#c0392b" font-size="10" text-anchor="middle">Stop codon (UAA)</text><text x="430" y="182" fill="#c0392b" font-size="10" text-anchor="middle">\u2192 polypeptide released</text><text x="430" y="116" fill="#888" font-size="9" text-anchor="middle">Next codon (GGA)</text></svg>',
+      },
+    },
+    {
+      id: 'table-tt-compare',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Summary comparison of transcription and translation.',
+        headers: ['Feature', 'Transcription', 'Translation'],
+        rows: [
+          ['Location', 'Nucleus', 'Ribosomes (cytoplasm or RER)'],
+          ['Template', 'DNA template strand', 'mRNA codons'],
+          ['Product', 'Pre-mRNA \u2192 mature mRNA', 'Polypeptide (protein)'],
+          ['Key enzyme/molecule', 'RNA polymerase', 'Ribosome (rRNA + ribosomal proteins)'],
+          ['Monomer units', 'RNA nucleotides', 'Amino acids (carried by tRNA)'],
+          ['Bond formed', 'Phosphodiester bonds', 'Peptide bonds'],
+        ],
+      },
+    },
+    {
+      id: 'callout-vocab',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Key Vocabulary',
+        text: '<strong>Codon</strong> \u2014 a sequence of 3 consecutive bases on mRNA that encodes one amino acid.\n<strong>Anticodon</strong> \u2014 a sequence of 3 bases on tRNA that is complementary to an mRNA codon.\n<strong>Template strand</strong> \u2014 the DNA strand read by RNA polymerase (3′\u21925′).\n<strong>Coding strand</strong> \u2014 the non-template DNA strand; has the same sequence as the mRNA (with T instead of U).',
+      },
+    },
+    {
+      id: 'checklist-tt',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Membrane permeability increases with temperature due to increased fluidity and protein denaturation', checked: false },
-          { text: 'Below 40°C: reversible increase in permeability (fluidity); above 40°C: irreversible (denaturation)', checked: false },
-          { text: 'Beetroot anthocyanin pigments leak out when cell membranes are damaged', checked: false },
-          { text: 'Colorimeter (absorbance ~540 nm) quantifies leaked pigment; indicates membrane permeability', checked: false },
-          { text: 'Graph typically shows sigmoid/exponential curve with steep transition 40–50°C', checked: false }
-        ]
-      }
+          { text: 'Describe the role of RNA polymerase in transcription', checked: false },
+          { text: 'Explain why uracil is used in mRNA instead of thymine', checked: false },
+          { text: 'Describe how mRNA is processed between transcription and translation (splicing introns)', checked: false },
+          { text: 'Describe the role of tRNA in translation, including anticodon-codon binding', checked: false },
+          { text: 'Explain how a ribosome moves along mRNA and builds a polypeptide', checked: false },
+          { text: 'State what causes translation to stop', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-permeability',
+      id: 'summary-tt',
       type: 'summary',
-      data: {
-        text: 'Membrane permeability increases gradually with temperature (20–40°C) due to increased lipid fluidity. Above 40°C, protein denaturation accelerates, dramatically increasing permeability. Above ~50°C, cell death/maximum damage. Beetroot practical uses anthocyanin leakage (measured by colorimeter, absorbance 540 nm) as an indicator of membrane damage. Results show sigmoid curve: gradual increase to 40°C, steep 40–50°C transition, plateau >50°C. Errors include disc damage, incomplete rinsing, temperature variation, timing inconsistency. Multiple replicates and temperature points improve reliability.'
-      }
-    }
+      data: { text: 'Transcription (nucleus): RNA polymerase reads DNA template strand 3′\u21925′, builds complementary pre-mRNA (A\u2192U, T\u2192A, C\u2192G, G\u2192C). Introns spliced out \u2192 mature mRNA leaves via nuclear pores. Translation (ribosomes): ribosome attaches to mRNA; tRNA anticodon pairs with mRNA codon; tRNA delivers specific amino acid; peptide bond forms between adjacent amino acids; ribosome moves one codon along; continues until stop codon (UAA/UAG/UGA) \u2192 polypeptide released. RNA polymerase links nucleotides; ribosome (rRNA) catalyses peptide bonds.' },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-permeability-temp',
-        prompt: 'Explain how temperature affects membrane permeability. Describe reversible vs irreversible changes.'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-protein-denaturation',
-        prompt: 'What is protein denaturation? How does high temperature cause it?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-beetroot-principle',
-        prompt: 'Why is beetroot suitable for studying membrane permeability? What does anthocyanin leakage indicate?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-beetroot-procedure',
-        prompt: 'Describe the beetroot permeability practical procedure. What is the control?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-results',
-        prompt: 'What pattern do you expect in the absorbance vs temperature graph? Why?'
-      }
+      { id: 'cue-1', blockId: 'callout-central-dogma', prompt: 'Summarise the central dogma. Where do transcription and translation each occur?' },
+      { id: 'cue-2', blockId: 'h-transcription', prompt: 'Describe the role of RNA polymerase in transcription. Which DNA strand is used as the template?' },
+      { id: 'cue-3', blockId: 'list-transcription', prompt: 'What happens to pre-mRNA before it leaves the nucleus? What is the difference between introns and exons?' },
+      { id: 'cue-4', blockId: 'h-translation', prompt: 'Describe how a tRNA molecule delivers an amino acid during translation. What is an anticodon?' },
+      { id: 'cue-5', blockId: 'list-translation', prompt: 'What happens when a ribosome reaches a stop codon? Name the three stop codons.' },
     ],
-    summaryText: 'Temperature increases permeability: <40°C gradual (fluidity), >40°C rapid (denaturation). Reversible <40°C; irreversible >40°C. Beetroot anthocyanins (vacuolar) leak when membrane damaged, turning solution red. Colorimeter measures absorbance (~540 nm) = pigment leakage = permeability. Procedure: discs in water at various temps (20–70°C), measure colour. Graph: sigmoid (gradual 20–40°C, steep 40–50°C, plateau >50°C). Errors: disc damage, incomplete rinse, temperature variation, timing. Improvements: multiple discs, frequent temps, verify temperature, standardise.',
-    ready: false
+    summaryText: 'Transcription: RNA polymerase \u2192 reads DNA template strand \u2192 builds pre-mRNA \u2192 splice introns \u2192 mature mRNA leaves nucleus. Translation: ribosome + mRNA + tRNA; tRNA anticodon pairs with mRNA codon; tRNA brings amino acid; peptide bond forms; ribosome moves along; stop codon (UAA/UAG/UGA) \u2192 polypeptide released.',
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Core Practical 3: Membrane Permeability and Temperature',
-      detail: 'Experimental investigation of how temperature affects cell membrane integrity using beetroot tissue.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['practical', 'membrane-permeability', 'temperature', 'beetroot', 'anthocyanin', 'denaturation']
-    }
-  ]
+    { id: 'ev-1', title: 'Transcription and translation', detail: 'RNA polymerase, pre-mRNA processing (intron splicing), tRNA anticodon-codon binding, ribosome movement, and stop codons all described in AQA A Level Biology Student Book 1, Chapter 4.', year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 4, pp74-77', tags: ['transcription', 'translation', 'protein-synthesis'] },
+  ],
 };

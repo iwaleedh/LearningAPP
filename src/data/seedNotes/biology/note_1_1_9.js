@@ -1,184 +1,162 @@
 export const note_biology_1_1_9 = {
   blocks: [
     {
-      id: 'obj-cvd-treat',
+      id: 'obj-cvd-risk',
       type: 'objective',
       data: {
-        text: 'Understand CVD treatments including lifestyle modifications, pharmacological interventions, surgical procedures, and transplantation, with consideration of ethical implications.'
+        text: 'Understand modifiable and non-modifiable risk factors for cardiovascular disease, and the role of antioxidants in protecting against CVD.'
       }
     },
     {
-      id: 'h-lifestyle',
+      id: 'h-modifiable-risk',
       type: 'heading',
       data: {
-        text: 'Lifestyle Interventions',
+        text: 'Modifiable Risk Factors for CVD',
         level: 2
       }
     },
     {
-      id: 'p-lifestyle-diet',
+      id: 'p-smoking',
       type: 'paragraph',
       data: {
-        text: 'Lifestyle modifications are the foundation of CVD treatment and prevention. Dietary changes include reducing saturated fat (<7% of calories), increasing unsaturated fats (olive oil, fish, nuts), reducing salt intake (<6g/day), increasing fibre (soluble fibre from oats, beans), and increasing fruit and vegetable intake (≥5 portions daily). The Mediterranean diet (high unsaturated fats, vegetables, fish, moderate wine, minimal processed foods) has strong evidence for CVD risk reduction and improved outcomes after MI. Weight loss of 5–10% in obese patients reduces blood pressure, improves lipid profile, and improves insulin sensitivity. Smoking cessation is paramount; CVD risk falls by ~50% within 1 year and approaches that of never-smokers within 10 years.'
+        text: 'Smoking is a major modifiable risk factor for CVD. Cigarette smoke contains over 7000 chemicals, many of which are harmful. Carbon monoxide (CO) binds to haemoglobin with an affinity ~200 times higher than oxygen, forming carboxyhaemoglobin (COHb). This reduces the oxygen-carrying capacity of blood, causing chronic hypoxia even in smokers at rest. Nicotine acts as a stimulant, increasing heart rate and blood pressure acutely and promoting vasoconstriction via sympathetic nervous system activation. Over time, nicotine contributes to hypertension. Smoking also increases oxidative stress, promoting LDL oxidation and atherosclerosis. Additionally, smoking damages the endothelium, impairs vasodilation (via reduced nitric oxide availability), and increases blood viscosity, raising CVD risk.'
       }
     },
     {
-      id: 'p-lifestyle-exercise',
+      id: 'p-diet',
       type: 'paragraph',
       data: {
-        text: 'Regular aerobic exercise (at least 150 minutes per week of moderate intensity, or 75 minutes of vigorous intensity) is crucial. Exercise raises HDL, lowers LDL and triglycerides, lowers blood pressure, improves insulin sensitivity, reduces obesity, reduces inflammation, improves endothelial function, and increases coronary collateralisation (development of additional blood vessels that can bypass stenotic arteries). Resistance training is also beneficial, improving strength and metabolic health. Exercise also has psychological benefits: it reduces stress, anxiety, and depression, all CVD risk factors. Cardiac rehabilitation programs combining supervised exercise, education, and psychological support improve outcomes after MI and reduce mortality by ~25%.'
+        text: 'Diet plays a crucial role in CVD risk. A diet high in saturated fat and cholesterol raises blood LDL cholesterol levels, promoting atherosclerosis. Trans fats (found in processed foods) are particularly harmful, raising LDL and lowering HDL. In contrast, a diet rich in unsaturated fats (olive oil, fish, nuts) raises HDL and can lower LDL and triglycerides. High salt intake increases blood volume and raises blood pressure, increasing CVD risk. Excessive sugar consumption contributes to obesity, diabetes, and elevated triglycerides. A diet rich in fruit and vegetables provides antioxidants (vitamins C, E, β-carotene) and fibre, both protective. The Mediterranean diet (high in unsaturated fats, vegetables, fish, and low in saturated fat) is associated with lower CVD mortality.'
       }
     },
     {
-      id: 'p-lifestyle-other',
+      id: 'p-hypertension',
       type: 'paragraph',
       data: {
-        text: 'Stress reduction is important; chronic stress raises cortisol and increases thrombosis risk. Stress management techniques (meditation, yoga, counselling) are beneficial. Alcohol moderation (no more than 2 units per day for men, 1 unit for women) is recommended; excessive alcohol raises blood pressure and triglycerides. Sleep quality matters; inadequate sleep increases CVD risk. Combined lifestyle modification addressing diet, exercise, smoking, stress, and sleep can lower CVD risk by >50%, rivalling or exceeding drug therapy in some patients.'
+        text: 'Hypertension (elevated blood pressure) is a major risk factor for atherosclerosis, MI, and stroke. High blood pressure causes shear stress on the arterial endothelium, promoting damage and initiating atherosclerosis. It also increases the workload on the left ventricle, causing left ventricular hypertrophy (thickening). Chronic hypertension reduces the elasticity of arterial walls (arteriosclerosis), further raising blood pressure. Risk factors for hypertension include high salt intake, obesity, excessive alcohol, stress, and genetic predisposition. Management involves reducing salt intake, weight loss, regular exercise, stress reduction, and medications (ACE inhibitors, β-blockers, calcium channel blockers).'
       }
     },
     {
-      id: 'h-pharmacological',
-      type: 'heading',
-      data: {
-        text: 'Pharmacological Treatments',
-        level: 2
-      }
-    },
-    {
-      id: 'p-statins-drugs',
+      id: 'p-obesity-diabetes',
       type: 'paragraph',
       data: {
-        text: 'Statins (covered previously) are first-line agents for lowering LDL in patients with high cholesterol or established CVD. They reduce MI and stroke risk by ~30% over 2 years. Other lipid-lowering agents include ezetimibe (inhibits intestinal cholesterol absorption, further lowers LDL), PCSK9 inhibitors (monoclonal antibodies that increase LDL receptor expression, lower LDL by ~50%), and fibrates (increase HDL and lower triglycerides, useful in hypertriglyceridaemia).'
+        text: 'Obesity (BMI > 30) is associated with multiple CVD risk factors: elevated blood pressure, higher cholesterol, insulin resistance, and systemic inflammation. Excess adipose tissue produces inflammatory cytokines (IL-6, TNF-α) that promote atherosclerosis. Type 2 diabetes is both a consequence of obesity and an independent CVD risk factor. High blood glucose damages the endothelium via glycation of proteins, promotes LDL oxidation, and increases thrombosis risk. Diabetic patients have accelerated atherosclerosis and are at high risk of MI and stroke. Tight glycaemic control reduces CVD complications.'
       }
     },
     {
-      id: 'p-anticoagulants',
+      id: 'p-sedentary',
       type: 'paragraph',
       data: {
-        text: 'Anticoagulants reduce thrombosis risk. Warfarin is a vitamin K antagonist that inhibits clotting factors II, VII, IX, and X. It is used in atrial fibrillation (a-fib) to prevent stroke and in patients with venous thrombosis. Direct oral anticoagulants (DOACs: apixaban, rivaroxaban, dabigatran) directly inhibit factor Xa or thrombin, with quicker onset and no dietary interaction. Aspirin irreversibly inhibits platelet cyclooxygenase, preventing thromboxane A₂ synthesis and platelet aggregation. Low-dose aspirin (75–100 mg daily) is used for secondary prevention (after MI or stroke) and in some high-risk individuals for primary prevention. Antiplatelet agents reduce MI and stroke risk by inhibiting thrombosis.'
+        text: 'Physical inactivity (sedentary lifestyle) increases CVD risk independently of other factors. Regular exercise has multiple protective effects: it increases HDL and lowers triglycerides, reduces blood pressure, improves insulin sensitivity, reduces obesity, and promotes endothelial function. Exercise training also improves cardiac output and coronary collateralisation (development of additional blood vessels), providing a buffer against coronary stenosis. The recommended minimum is 150 minutes of moderate-intensity aerobic exercise per week. Even light activity (walking) is beneficial; sedentary time accumulation increases CVD risk regardless of exercise amount.'
       }
     },
     {
-      id: 'p-antihypertensives',
-      type: 'paragraph',
-      data: {
-        text: 'Antihypertensive drugs lower blood pressure, reducing MI, stroke, and heart failure risk. ACE inhibitors (e.g. lisinopril) block angiotensin II synthesis, reducing vasoconstriction and aldosterone, lowering blood pressure and reducing cardiac workload. Angiotensin II receptor blockers (ARBs: losartan) block angiotensin II receptors with similar effects. β-blockers (e.g. bisoprolol) reduce heart rate and contractility via beta-adrenergic antagonism, lowering blood pressure and myocardial oxygen demand. Calcium channel blockers (e.g. amlodipine) cause vasodilation by blocking L-type calcium channels. Diuretics (e.g. furosemide) reduce blood volume. Combination therapy (e.g. ACE inhibitor + calcium channel blocker) is often used to achieve target blood pressure (<140/90 mmHg for most, <130/80 mmHg for high-risk patients).'
-      }
-    },
-    {
-      id: 'table-drugs',
+      id: 'table-modifiable',
       type: 'comparisonTable',
       data: {
-        headers: ['Drug Class', 'Example', 'Mechanism', 'CVD Benefit', 'Target Condition'],
+        headers: ['Risk Factor', 'Mechanism', 'CVD Risk Change', 'Intervention'],
         rows: [
-          ['Statin', 'Atorvastatin', 'Inhibit HMG-CoA reductase', 'Lower LDL ~30%, reduce MI/stroke', 'High LDL'],
-          ['Anticoagulant', 'Warfarin, Apixaban', 'Inhibit clotting factors', 'Reduce stroke in a-fib', 'Thrombosis risk'],
-          ['Antiplatelet', 'Aspirin', 'Inhibit platelet aggregation', 'Reduce MI/stroke recurrence', 'Secondary prevention'],
-          ['ACE inhibitor', 'Lisinopril', 'Block angiotensin II', 'Lower BP, reduce LV workload', 'Hypertension'],
-          ['β-blocker', 'Bisoprolol', 'Reduce HR and contractility', 'Lower BP, ↓ myocardial O₂ demand', 'Hypertension, post-MI'],
-          ['Calcium channel blocker', 'Amlodipine', 'Cause vasodilation', 'Lower BP, improve coronary flow', 'Hypertension, angina']
+          ['Smoking', 'CO reduces O₂ capacity; nicotine → hypertension; oxidative stress; endothelial damage', 'Greatly increased', 'Cessation; nicotine replacement'],
+          ['High sat. fat diet', 'Raises LDL; promotes atherosclerosis', 'Greatly increased', 'Reduce saturated fat; increase fibre'],
+          ['Hypertension', 'Endothelial damage; LV hypertrophy; arteriosclerosis', 'Greatly increased', 'Reduce salt; exercise; medication'],
+          ['Obesity', 'Hypertension; dyslipidaemia; inflammation; insulin resistance', 'Increased', 'Weight loss; exercise; diet'],
+          ['Diabetes', 'Endothelial damage; LDL oxidation; thrombosis', 'Greatly increased', 'Glycaemic control; metformin'],
+          ['Sedentary', 'No protective effects of exercise; dyslipidaemia; hypertension', 'Increased', 'Regular aerobic exercise']
         ],
-        caption: 'Major drug classes for CVD treatment'
+        caption: 'Modifiable CVD risk factors and interventions'
       }
     },
     {
-      id: 'h-surgical',
+      id: 'h-non-modifiable',
       type: 'heading',
       data: {
-        text: 'Surgical and Interventional Treatments',
+        text: 'Non-Modifiable Risk Factors',
         level: 2
       }
     },
     {
-      id: 'p-angioplasty',
+      id: 'p-non-modifiable',
       type: 'paragraph',
       data: {
-        text: 'Coronary angioplasty (percutaneous coronary intervention, PCI) is a catheter-based procedure for opening narrowed coronary arteries. A catheter is advanced through the femoral or radial artery into the aorta and into the coronary artery. A balloon is inflated across the stenotic lesion, compressing the plaque and widening the lumen. In modern practice, a metallic stent (expandable mesh tube) is placed to scaffold the vessel open and prevent restenosis (re-narrowing). Drug-eluting stents (DES) release antiproliferative agents that reduce neointimal hyperplasia and restenosis risk further. PCI rapidly restores blood flow in acute MI, reducing myocardial damage. Success rates exceed 95% for suitable lesions, with low procedural mortality (~0.1%). Complications include stent thrombosis (if antiplatelet therapy is stopped prematurely), re-stenosis (5–15% at 6 months even with DES), and vessel perforation.'
+        text: 'Non-modifiable risk factors include age, sex, and genetic predisposition. CVD risk increases with age in both men and women, but men develop CVD 10–15 years earlier on average. Oestrogen has protective effects in premenopausal women; after menopause, CVD risk rises. Genetic factors determine baseline lipid levels, blood pressure, and atherosclerosis susceptibility. Familial hypercholesterolaemia (FH), caused by mutations in the LDL receptor gene, results in extremely high LDL levels and premature atherosclerosis (MI in childhood if homozygous). Family history of premature CVD (male relative with MI before age 55, female before age 65) is a strong risk factor. These factors cannot be changed, but awareness allows preventive measures (medication, lifestyle optimisation) in high-risk individuals.'
       }
     },
     {
-      id: 'p-bypass',
-      type: 'paragraph',
-      data: {
-        text: 'Coronary artery bypass grafting (CABG) is surgical revascularisation where a vein (saphenous vein) or artery (internal mammary artery, radial artery) is grafted to bypass the stenotic coronary artery. The graft is anastomosed (connected) distally to a healthy portion of the artery beyond the stenosis. Multiple grafts (single, double, triple vessel CABG) can be placed in one operation. CABG is preferred for left main coronary stenosis, three-vessel disease, or when PCI is not feasible (very long lesions, total occlusions, severe calcification). Operative mortality is ~1–2% but higher in elderly, diabetic, or unstable patients. Long-term survival is excellent; 80–90% of vein grafts remain patent at 10 years, though arterial grafts (internal mammary) last longer (>95% at 10 years). CABG offers superior long-term outcomes compared to PCI in multivessel disease.'
-      }
-    },
-    {
-      id: 'p-valve-transplant',
-      type: 'paragraph',
-      data: {
-        text: 'Artificial heart valve replacement is necessary when native valves are damaged by endocarditis, rheumatic disease, degenerative calcification, or other conditions. Mechanical valves (bileaflet design) are durable (>25 years) but require lifelong anticoagulation (warfarin), increasing bleeding risk. Bioprosthetic valves (porcine or bovine pericardium) avoid anticoagulation but degenerate (10–15 year durability), requiring reoperation. Ross procedure (pulmonary autograft) uses the patient\'s own pulmonary valve to replace the aortic valve; excellent long-term outcomes but requires pulmonary valve replacement with a prosthesis. Heart transplantation is the definitive treatment for end-stage heart failure refractory to medical and surgical therapy. However, donor scarcity limits transplantation; median survival is ~10 years, limited by chronic rejection. Artificial heart devices (left ventricular assist devices, LVAD) can sustain life awaiting transplant or as destination therapy.'
-      }
-    },
-    {
-      id: 'h-ethical',
+      id: 'h-antioxidants',
       type: 'heading',
       data: {
-        text: 'Ethical Considerations',
+        text: 'Antioxidants and CVD Protection',
         level: 2
       }
     },
     {
-      id: 'p-ethical-access',
+      id: 'p-antioxidants-def',
       type: 'paragraph',
       data: {
-        text: 'Ethical challenges in CVD treatment include access and equity. Expensive treatments (PCSK9 inhibitors, transplantation, LVAD) are not available to all populations, creating disparities. Some argue that resources should prioritise prevention (diet, exercise, smoking cessation programs) over expensive interventions in wealthy individuals. Statins are widely available and cost-effective but remain underused in low-income countries. Shared decision-making is ethically important: patients should understand risks/benefits of procedures (e.g. stent restenosis, bypass graft failure) and choose based on their values.'
+        text: 'Antioxidants are molecules that neutralise free radicals—highly reactive species with unpaired electrons (e.g. O₂⁻, OH•, H₂O₂). Free radicals are produced during normal metabolism, especially in mitochondria during aerobic respiration, and by inflammation. They damage cellular components: lipids (lipid peroxidation), proteins (oxidative modification), and DNA (mutations). In atherosclerosis, free radicals promote LDL oxidation, the critical first step in plaque formation. Antioxidants prevent or slow free radical reactions by donating an electron, becoming slightly more stable themselves but less reactive. Key dietary antioxidants include vitamin C (ascorbic acid), vitamin E (tocopherol), β-carotene (provitamin A), and flavonoids (in berries, tea, red wine).'
       }
     },
     {
-      id: 'p-ethical-lifestyle',
+      id: 'p-antioxidants-mechanisms',
       type: 'paragraph',
       data: {
-        text: 'Ethical issues also arise regarding lifestyle modifications. Some argue that patients with modifiable risk factors (smoking, obesity, poor diet) should receive less aggressive treatment until they improve these factors, citing fairness and resource allocation. However, others argue this is coercive and discriminatory, especially given the role of social determinants (poverty, education, food access) in lifestyle factors. Paternalism vs autonomy is another tension: should doctors limit treatment to patients who "comply" with lifestyle advice, or should patients autonomously choose their risk level? Modern ethics emphasises shared decision-making, harm reduction (helping patients reduce CVD risk incrementally rather than expecting perfection), and addressing social determinants of health.'
+        text: 'Vitamin C (present in citrus, berries, peppers) is a water-soluble antioxidant that operates in aqueous environments (plasma, cytoplasm). It directly scavenges free radicals and regenerates vitamin E. Vitamin E (in nuts, seeds, vegetable oils) is a fat-soluble antioxidant that operates in lipid environments (cell membranes, lipoproteins). It prevents lipid peroxidation and is particularly important for protecting LDL from oxidation. β-carotene (in orange/red vegetables) is a precursor to vitamin A and acts as an antioxidant, particularly against singlet oxygen. Flavonoids (in berries, tea, dark chocolate) have potent antioxidant and anti-inflammatory effects, reduce platelet aggregation, and improve endothelial function. Enzyme-based antioxidant defences include superoxide dismutase (SOD), catalase, and glutathione peroxidase, which catalyse breakdown of free radicals.'
       }
     },
     {
-      id: 'callout-worked-pci-vs-cabg',
+      id: 'p-antioxidants-cvd',
+      type: 'paragraph',
+      data: {
+        text: 'The antioxidant hypothesis proposed that dietary antioxidants reduce CVD risk by preventing LDL oxidation and atherosclerosis. Observational studies showed inverse correlations between antioxidant intake and CVD. However, large randomised controlled trials (e.g. HOPE for vitamin E, SELECT for vitamin E and selenium) found that supplementation did not reduce CVD events in primary or secondary prevention, contradicting the hypothesis. The reasons are complex: antioxidant supplements may lack the co-nutrients and bioactivity of whole foods, or excessive antioxidants might inhibit beneficial reactive oxygen species signalling. Current evidence supports consuming antioxidants through diet (fruits, vegetables, nuts, whole grains, olive oil) rather than supplements. The Mediterranean diet\'s CVD benefit likely involves antioxidants plus anti-inflammatory, lipid-lowering, and antiplatelet effects of whole foods.'
+      }
+    },
+    {
+      id: 'callout-key-antioxidants',
       type: 'callout',
       data: {
-        style: 'worked',
-        title: 'PCI vs CABG: Which to Choose?',
-        text: 'PCI (stent): quick, catheter-based, low operative mortality, good for single vessel or acute MI. Restenosis risk 5–15%. CABG (bypass): surgical, requires general anaesthetic, higher operative mortality (~2%), excellent long-term patency. Preferred for left main, three-vessel disease. Multivessel disease: CABG has better long-term outcomes; PCI is less invasive initially.'
+        style: 'key',
+        title: 'Antioxidants Neutralise Free Radicals',
+        text: 'Free radicals: unpaired electrons, damage lipids/proteins/DNA, promote LDL oxidation and atherosclerosis. Antioxidants donate electrons to free radicals, neutralising them. Dietary sources (vitamin C, E, β-carotene, flavonoids) are protective; supplements unclear benefit.'
       }
     },
     {
-      id: 'callout-tip-anticoagulation',
+      id: 'callout-tip-salt',
       type: 'callout',
       data: {
         style: 'tip',
-        title: 'Anticoagulation after Stent Placement',
-        text: 'After PCI + stent: must take dual antiplatelet therapy (DAPT): aspirin 75 mg daily PLUS clopidogrel/ticagrelor for 12 months (or longer). Stopping early risks stent thrombosis, usually fatal. Never stop without cardiologist approval!'
+        title: 'Salt and Hypertension',
+        text: 'High salt intake → increased blood volume → increased blood pressure. Reducing salt from 10g/day (typical Western diet) to <6g/day can lower BP by ~5 mmHg. This modest reduction, applied to populations, prevents many strokes and MIs. Most salt comes from processed foods, not table salt.'
       }
     },
     {
       id: 'deeper',
       type: 'deeper',
       data: {
-        understand: 'ACE inhibitors lower blood pressure by blocking the conversion of angiotensin I to angiotensin II via the angiotensin-converting enzyme (ACE). Since angiotensin II is a potent vasoconstrictor and stimulates aldosterone secretion (which increases blood volume), blocking ACE reduces vasoconstriction and sodium/water retention, thereby lowering blood pressure.',
-        apply: 'A bypass graft uses a 20 cm length of saphenous vein. If the graft has an internal diameter of 4 mm vs the blocked coronary artery\'s original 3 mm, how much does blood flow increase (using Poiseuille\'s law: flow ∝ r⁴)?',
-        analyze: 'Compare angioplasty with stent insertion versus coronary artery bypass grafting (CABG). Consider procedural risk, recovery time, long-term patency, and which patients benefit most from each.',
-        evaluate: 'Evaluate the ethical considerations of heart transplantation as a treatment for end-stage heart failure. Consider organ availability, immunosuppression burden, quality of life, and allocation justice.'
+        understand: 'Carbon monoxide (CO) from cigarette smoke increases CVD risk by binding to haemoglobin with an affinity ~200 times higher than oxygen, forming carboxyhaemoglobin (COHb). This reduces the oxygen-carrying capacity of blood, causing chronic hypoxia (low blood oxygen) even in smokers at rest, forcing the heart to work harder to deliver oxygen to tissues.',
+        apply: 'A study shows that smokers have a 2.5× higher risk of CVD than non-smokers. If the baseline risk for non-smokers is 4% over 10 years, calculate the absolute risk for smokers and the number needed to harm (NNH).',
+        analyze: 'Compare the mechanisms by which smoking, high salt intake, and obesity each independently increase blood pressure and CVD risk.',
+        evaluate: 'Evaluate whether lifestyle interventions or pharmacological treatments (e.g. statins, antihypertensives) are more effective at reducing CVD risk at the population level. Consider compliance, cost, side effects, and efficacy.'
       },
       terms: []
     },
     {
-      id: 'checklist-cvd-treat',
+      id: 'checklist-cvd-risk',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Lifestyle: diet (Mediterranean), exercise (150 min/week), smoking cessation, stress reduction', checked: false },
-          { text: 'Statins lower LDL; anticoagulants (warfarin, DOAC) prevent thrombosis; aspirin reduces recurrence', checked: false },
-          { text: 'Antihypertensives: ACE inhibitors, ARBs, β-blockers, calcium channel blockers lower BP', checked: false },
-          { text: 'PCI + stent: quick, low operative mortality, but 5–15% restenosis risk', checked: false },
-          { text: 'CABG: superior long-term outcomes for multivessel disease; requires surgery', checked: false }
+          { text: 'Smoking: CO reduces O₂ capacity; nicotine increases BP; oxidative stress damages endothelium', checked: false },
+          { text: 'High saturated fat diet raises LDL; promotes atherosclerosis', checked: false },
+          { text: 'Hypertension damages endothelium and causes LV hypertrophy', checked: false },
+          { text: 'Obesity and diabetes increase inflammation, dyslipidaemia, and thrombosis risk', checked: false },
+          { text: 'Antioxidants prevent LDL oxidation; dietary sources more beneficial than supplements', checked: false }
         ]
       }
     },
     {
-      id: 'summary-cvd-treat',
+      id: 'summary-cvd-risk',
       type: 'summary',
       data: {
-        text: 'CVD treatment combines lifestyle (diet, exercise, smoking cessation, stress reduction) and pharmacotherapy (statins, anticoagulants, antiplatelets, antihypertensives). PCI with stent is minimally invasive for acute MI and single-vessel disease but has restenosis risk. CABG offers superior long-term patency for multivessel disease. Valve replacement (mechanical vs bioprosthetic) and heart transplantation are for advanced valve disease and end-stage heart failure. Ethical considerations: equity of access, shared decision-making, addressing social determinants of health, harm reduction approach to lifestyle modification.'
+        text: 'Modifiable CVD risk factors: smoking (CO, nicotine, oxidative stress), high saturated fat diet (raises LDL), hypertension (endothelial damage), obesity (inflammation), diabetes (endothelial damage), and sedentary lifestyle. Non-modifiable: age, sex, genetics. Antioxidants (vitamin C, E, β-carotene, flavonoids) prevent LDL oxidation but supplementation lacks evidence; dietary sources recommended. Mediterranean diet combines antioxidants, anti-inflammatory effects, and lipid benefits.'
       }
     }
   ],
@@ -187,41 +165,41 @@ export const note_biology_1_1_9 = {
     cues: [
       {
         id: 'cue-1',
-        blockId: 'p-lifestyle-diet',
-        prompt: 'What dietary changes reduce CVD risk? Describe the Mediterranean diet.'
+        blockId: 'p-smoking',
+        prompt: 'Explain three ways smoking increases CVD risk. What is the role of carbon monoxide?'
       },
       {
         id: 'cue-2',
-        blockId: 'p-lifestyle-exercise',
-        prompt: 'How does regular exercise reduce CVD risk? Quantify the recommended exercise.'
+        blockId: 'p-diet',
+        prompt: 'How do saturated fats, trans fats, and unsaturated fats affect CVD risk?'
       },
       {
         id: 'cue-3',
-        blockId: 'p-antihypertensives',
-        prompt: 'Name four classes of antihypertensive drugs and explain how each lowers blood pressure.'
+        blockId: 'p-hypertension',
+        prompt: 'Why is hypertension a major CVD risk factor? What causes it?'
       },
       {
         id: 'cue-4',
-        blockId: 'p-angioplasty',
-        prompt: 'Explain PCI and stent placement. What is restenosis and how do drug-eluting stents reduce it?'
+        blockId: 'p-antioxidants-def',
+        prompt: 'What are free radicals? How do antioxidants neutralise them?'
       },
       {
         id: 'cue-5',
-        blockId: 'p-bypass',
-        prompt: 'What is CABG? When is it preferred over PCI? What are graft patency rates?'
+        blockId: 'p-antioxidants-cvd',
+        prompt: 'What does the evidence say about antioxidant supplementation for CVD prevention?'
       }
     ],
-    summaryText: 'Lifestyle: Mediterranean diet, 150 min/week aerobic exercise, smoking cessation, stress reduction, weight loss. Drugs: statins (↓LDL), anticoagulants (warfarin/DOAC, prevent stroke in a-fib), aspirin (secondary prevention), antihypertensives (ACE-I, ARB, β-block, CCB). PCI + stent: minimally invasive, quick, restenosis 5–15%. CABG: surgical bypass, better long-term patency, preferred for multivessel disease. Valve replacement (mechanical vs bio). Ethical: equity of access, shared decision-making, harm reduction.',
+    summaryText: 'Modifiable risk factors: smoking (CO↓O₂, nicotine↑BP, oxidative stress); high sat. fat (↑LDL); hypertension (endothelial damage); obesity (inflammation); diabetes (glycation); sedentary (no exercise benefits). Non-modifiable: age, sex, genetics. Antioxidants (vit C/E, β-carotene, flavonoids) prevent LDL oxidation; dietary sources superior to supplements. Free radicals: unpaired electrons, damage biomolecules. Mediterranean diet: antioxidants + anti-inflammatory + lipid benefits.',
     ready: false
   },
   evidence: [
     {
       id: 'ev-1',
-      title: 'CVD Treatment and Intervention Strategies',
-      detail: 'Comprehensive overview of lifestyle, pharmacological, and surgical interventions for CVD.',
+      title: 'CVD Risk Factors and Antioxidant Defence',
+      detail: 'Overview of modifiable and non-modifiable risk factors, and evidence for antioxidant protection.',
       year: '2024',
       source: 'A-Level Biology Specification (WBI11)',
-      tags: ['cvd-treatment', 'lifestyle', 'statins', 'anticoagulants', 'pci', 'cabg', 'ethics']
+      tags: ['cvd', 'risk-factors', 'smoking', 'hypertension', 'diet', 'antioxidants', 'free-radicals']
     }
   ]
 };

@@ -1,206 +1,179 @@
 export const note_biology_1_1_6 = {
   blocks: [
     {
-      id: 'obj-atherosclerosis',
+      id: 'obj-blood-vessels',
       type: 'objective',
       data: {
-        text: 'Understand the pathophysiology of atherosclerosis and the blood clotting cascade, including formation of plaques and the mechanism of thrombosis.'
-      }
+        text: 'Describe the structure of arteries, veins and capillaries and relate their structure to their function. Understand how the structure of each vessel type is adapted to the pressures and flow requirements they experience.',
+      },
     },
     {
-      id: 'h-atherosclerosis',
+      id: 'h-vessel-overview',
       type: 'heading',
-      data: {
-        text: 'Atherosclerosis: From LDL to Arterial Blockage',
-        level: 2
-      }
+      data: { text: 'Overview of Blood Vessel Types', level: 2 },
     },
     {
-      id: 'p-atherosclerosis-ldl',
+      id: 'p-vessel-intro',
       type: 'paragraph',
       data: {
-        text: 'Atherosclerosis is a chronic inflammatory disease of arteries characterised by the accumulation of lipid deposits (plaques) in the arterial wall. The process begins with oxidation of low-density lipoprotein (LDL) particles in the blood. LDL transports cholesterol from the liver to tissues. In the presence of oxidative stress (from smoking, high blood pressure, diabetes), LDL becomes oxidised, forming oxidised LDL (oxLDL). The arterial endothelium, sensing oxLDL, becomes dysfunctional and expresses adhesion molecules. These molecules recruit circulating monocytes and lymphocytes to adhere to the endothelium and migrate into the subendothelial space.'
-      }
+        text: 'The circulatory system contains three main categories of blood vessel: arteries (carry blood away from the heart at high pressure), veins (return blood to the heart at low pressure), and capillaries (site of exchange between blood and tissues). All blood vessels except capillaries have walls composed of three tunics (layers).',
+      },
     },
     {
-      id: 'p-atherosclerosis-foam',
+      id: 'h-wall-layers',
+      type: 'heading',
+      data: { text: 'The Three Tunicae of Blood Vessel Walls', level: 2 },
+    },
+    {
+      id: 'list-tunicae',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Tunica intima (innermost) — thin layer of smooth endothelium (one cell thick); reduces friction; in capillaries, this is the only layer',
+          'Tunica media (middle) — circular layer of smooth muscle and elastic fibres; controls vessel diameter by vasoconstriction/vasodilation',
+          'Tunica adventitia (outermost) — fibrous connective tissue; anchors the vessel to surrounding tissues; provides strength',
+        ],
+      },
+    },
+    {
+      id: 'h-arteries',
+      type: 'heading',
+      data: { text: 'Arteries', level: 2 },
+    },
+    {
+      id: 'p-arteries',
       type: 'paragraph',
       data: {
-        text: 'Once in the arterial wall, monocytes differentiate into macrophages. Macrophages engulf oxLDL via scavenger receptors, becoming "foam cells"—swollen cells full of lipid droplets. Foam cells secrete cytokines that recruit more immune cells and promote a chronic inflammatory state. Accumulation of foam cells forms a fatty streak, a visible yellow patch on the arterial intima. If the causative factors (high LDL, smoking, hypertension) persist, the plaque progresses. Smooth muscle cells migrate from the media into the intima, proliferate, and produce extracellular matrix proteins (collagen, elastin). Over time, a complex atherosclerotic plaque develops with a lipid-rich necrotic core covered by a fibrous cap of smooth muscle and collagen.'
-      }
+        text: 'Arteries carry blood at high pressure away from the heart. Their defining feature is a thick tunica media containing abundant elastic fibres. This elastic tissue stretches when the ventricles contract (systole), then recoils when the ventricles relax (diastole), maintaining continuous blood flow and smoothing out the pulsatile pressure from the heartbeat. The smooth muscle layer allows vasoconstriction and vasodilation to regulate blood distribution to different organs. The narrow lumen and thick walls keep blood pressure high during transport.',
+      },
     },
     {
-      id: 'p-atherosclerosis-progression',
-      type: 'paragraph',
-      data: {
-        text: 'As the plaque grows, it encroaches on the arterial lumen, narrowing the vessel. A significant stenosis (>70% diameter reduction) can reduce blood flow and oxygen delivery to downstream tissues, causing angina pectoris (chest pain during exertion) if in a coronary artery, or claudication (leg pain during walking) if in a leg artery. The fibrous cap is unstable and can rupture if strained by blood pressure or inflammatory factors. Rupture exposes the lipid-rich, thrombogenic interior to the circulating blood. This triggers the blood clotting cascade, forming a thrombus (blood clot) on top of the plaque. The clot can occlude the remaining lumen, causing acute myocardial infarction (MI) if in a coronary artery or stroke if in a cerebral artery.'
-      }
-    },
-    {
-      id: 'callout-key-atherosclerosis',
+      id: 'callout-key-arteries',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Atherosclerosis Stages',
-        text: 'LDL oxidation → endothelial dysfunction → monocyte recruitment → foam cells → fatty streak → fibrous plaque → stenosis/angina → plaque rupture → thrombosis → MI/stroke.'
-      }
+        title: 'Arterial Adaptations',
+        text: '• Thick tunica media with elastic fibres → stretches during systole, recoils during diastole → maintains pressure between heartbeats (windkessel effect)\n• Smooth muscle → vasoconstriction/vasodilation → controls blood flow distribution\n• Narrow lumen → maintains high pressure for long-distance transport\n• Thick walls → withstand high blood pressure without rupture',
+      },
     },
     {
-      id: 'h-clotting',
+      id: 'h-veins',
       type: 'heading',
-      data: {
-        text: 'Blood Clotting Cascade',
-        level: 2
-      }
+      data: { text: 'Veins', level: 2 },
     },
     {
-      id: 'p-clotting-initial',
+      id: 'p-veins',
       type: 'paragraph',
       data: {
-        text: 'When a blood vessel is damaged, or when atherosclerotic plaque ruptures, tissue damage exposes tissue factor (TF) and phospholipids to the circulating blood. Blood clotting is a cascade of proteolytic reactions. The extrinsic pathway begins: tissue factor combines with circulating clotting factor VII, forming the TF:VII complex. This activates factor X to Xa. Factor Xa, along with its cofactor V, activates prothrombin (factor II) to thrombin (factor IIa). Thrombin is the central enzyme of coagulation and catalyses multiple steps: it converts fibrinogen (a large soluble plasma protein) to fibrin monomers, which polymerise to form fibrin strands; it activates factor XIII (fibrin-stabilising factor), cross-linking fibrin strands; and it promotes platelet aggregation.'
-      }
+        text: 'Veins return blood to the heart at low pressure. They have a wider lumen than arteries, thinner walls (less elastic and smooth muscle tissue), and contain semilunar valves. The thin walls and wide lumen offer little resistance to blood flow at low pressure. Valves prevent backflow, particularly in the legs where blood must travel against gravity. Venous return depends on the skeletal muscle pump (contracting muscles squeeze veins), the respiratory pump (breathing creates pressure changes that draw blood toward the heart), and the low pressure at the right atrium.',
+      },
     },
     {
-      id: 'p-clotting-platelets',
+      id: 'callout-key-veins',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Venous Adaptations',
+        text: '• Wide lumen → low resistance to flow at low pressure\n• Thin walls → less muscular (low pressure, less recoil needed)\n• Semilunar pocket valves → prevent backflow, especially against gravity in limbs\n• Large volume capacity → veins hold ~70% of total blood volume at rest (blood reservoir)',
+      },
+    },
+    {
+      id: 'h-capillaries',
+      type: 'heading',
+      data: { text: 'Capillaries', level: 2 },
+    },
+    {
+      id: 'p-capillaries',
       type: 'paragraph',
       data: {
-        text: 'Platelets (thrombocytes) are small, anucleate cell fragments derived from megakaryocytes. When a vessel is injured, platelets adhere to the exposed collagen in the vessel wall via von Willebrand factor (vWF), a glycoprotein that bridges platelet surface receptors to collagen. This adhesion activates platelets, triggering shape change, release of granule contents (including ADP, serotonin, and thromboxane A₂), and exposure of phosphatidylserine on the platelet surface. Activated platelets recruit additional platelets, forming a platelet plug. Thrombin further amplifies this platelet aggregation via protease-activated receptors (PARs) on the platelet surface. The growing platelet plug is stabilised by fibrin strands, forming a clot. In normal circumstances, clotting is localised to the injury site by natural anticoagulants (antithrombin, protein C, protein S).'
-      }
+        text: 'Capillaries are the site of exchange between blood and tissue cells. They have walls consisting of just a single layer of endothelial cells (tunica intima only), with a basement membrane. This very thin wall provides a short diffusion distance for gases, nutrients, and waste products. The diameter of capillaries is approximately 7–10 µm — barely enough for one red blood cell to pass through at a time. The huge number of capillaries gives a very large total surface area for exchange. Blood flow is slow through capillaries, maximising time for exchange.',
+      },
     },
     {
-      id: 'p-clotting-cascade-seq',
-      type: 'paragraph',
+      id: 'callout-key-capillaries',
+      type: 'callout',
       data: {
-        text: 'The complete sequence is: (1) Vessel or plaque injury exposes TF. (2) TF + Factor VII activate Factor X. (3) Factor Xa + Factor V activate Prothrombin → Thrombin. (4) Thrombin converts Fibrinogen → Fibrin monomers. (5) Fibrin polymerises into a loose network. (6) Thrombin activates Factor XIII. (7) Factor XIII cross-links fibrin (stabilisation). (8) Thrombin activates platelets, promoting aggregation and sealing of the clot. (9) Coagulation factors are inhibited by natural anticoagulants, preventing excessive clotting. The entire cascade amplifies rapidly: a small initial signal generates large amounts of thrombin via feedback activation. This is an example of a biological amplification cascade.'
-      }
+        style: 'key',
+        title: 'Capillary Adaptations',
+        text: '• Wall = single endothelium layer only → minimal diffusion distance\n• Very small diameter (~8 µm) → large total surface area; slows blood flow\n• Gaps between endothelial cells (fenestrations) → allows fluid and small molecules to pass into tissues\n• Basement membrane → selective barrier',
+      },
     },
     {
-      id: 'eq-clotting',
-      type: 'equation',
-      data: {
-        html: 'Tissue Factor + Factor VII → Factor X → Factor Xa + Factor V → Factor II (Prothrombin) → Factor IIa (Thrombin)<br/>Thrombin: Fibrinogen → Fibrin (polymerised, cross-linked)',
-        caption: 'Simplified clotting cascade pathway'
-      }
-    },
-    {
-      id: 'table-clotting-factors',
+      id: 'table-vessel-comparison',
       type: 'comparisonTable',
       data: {
-        headers: ['Stage', 'Key Players', 'Event', 'Result'],
+        caption: 'Structural and functional comparison of blood vessels',
+        headers: ['Feature', 'Artery', 'Vein', 'Capillary'],
         rows: [
-          ['Initiation', 'TF, Factor VII, Factor X', 'Tissue damage exposes TF; extrinsic pathway activated', 'Factor X activated to Xa'],
-          ['Amplification', 'Factor V, Prothrombin', 'Factor Xa + V catalyse prothrombin activation', 'Thrombin (IIa) produced'],
-          ['Coagulation', 'Thrombin, Fibrinogen, Factor XIII', 'Thrombin cleaves fibrinogen; stabilises fibrin', 'Fibrin mesh forms clot'],
-          ['Platelet plug', 'Platelets, vWF, ADP, Thrombin', 'Platelets adhere to collagen; aggregate; trapped in fibrin', 'Mechanical plug seals vessel']
+          ['Lumen diameter', 'Narrow (relative to wall)', 'Wide (relative to wall)', 'Very narrow (~8 µm)'],
+          ['Wall thickness', 'Very thick', 'Thin', 'One cell thick'],
+          ['Tunica media', 'Thick — elastic fibres + smooth muscle', 'Thin — some smooth muscle', 'Absent'],
+          ['Elastic fibres', 'Abundant', 'Few', 'None'],
+          ['Semilunar valves', 'None (except aortic/pulmonary)', 'Present — prevents backflow', 'None'],
+          ['Blood pressure', 'High (~120/80 mmHg in aorta)', 'Low (~5–10 mmHg)', 'Medium (~30 mmHg in arterioles → ~10 mmHg in venules)'],
+          ['Blood flow direction', 'Away from heart', 'Toward heart', 'From arteriole to venule'],
+          ['Function', 'Transport at high pressure', 'Return at low pressure', 'Exchange of materials'],
         ],
-        caption: 'Stages of blood clotting'
-      }
+      },
     },
     {
-      id: 'h-thrombosis-risk',
+      id: 'h-arterioles',
       type: 'heading',
-      data: {
-        text: 'Thrombosis in Atherosclerosis',
-        level: 2
-      }
+      data: { text: 'Arterioles: The Control Valves', level: 2 },
     },
     {
-      id: 'p-thrombosis-risk',
+      id: 'p-arterioles',
       type: 'paragraph',
       data: {
-        text: 'Virchow\'s triad describes three risk factors for pathological thrombosis (formation of a clot that obstructs blood flow): (1) vessel wall damage (endothelial injury), (2) blood flow abnormality (stasis or turbulence), and (3) blood composition abnormality (hypercoagulability). In atherosclerosis, all three are present: the plaque rupture damages the endothelium, stenosis causes turbulent flow and stasis, and inflammation increases procoagulant factors (tissue factor, phospholipids). The resulting thrombus can be partly dislodged and travel downstream as an embolus, becoming lodged in smaller vessels and causing acute ischaemia. Sudden coronary thrombosis causes MI; cerebral thrombosis causes stroke; mesenteric thrombosis causes bowel infarction.'
-      }
+        text: 'Arterioles are small branches of arteries that lead into capillary beds. They have relatively more smooth muscle in their walls than arteries, allowing fine control of blood flow into capillaries. Vasoconstriction of arterioles reduces blood flow to a capillary bed; vasodilation increases it. This allows the body to redistribute blood to active tissues (e.g. muscles during exercise) and away from resting tissues. Arterioles are sometimes called "resistance vessels" because they contribute most to total peripheral resistance, which determines blood pressure.',
+      },
     },
     {
-      id: 'callout-worked-clotting',
+      id: 'callout-we-blood-vessels',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Tracing the Clotting Cascade',
-        text: 'Vessel ruptures → TF exposed → TF+Factor VII activate Factor X → Factor X becomes Xa → Xa+Factor V activate Prothrombin → Prothrombin becomes Thrombin → Thrombin converts Fibrinogen to Fibrin monomer → Fibrin polymerises → Thrombin activates Factor XIII → XIII cross-links fibrin = stable clot. Meanwhile: Platelets adhere to collagen via vWF → activate → aggregate → trapped in fibrin = platelet plug.'
-      }
-    },
-    {
-      id: 'callout-tip-thrombosis',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Virchow\'s Triad Exam Tip',
-        text: 'Virchow\'s Triad = (1) Vessel damage, (2) Flow abnormality, (3) Blood composition change. For atherosclerosis: (1) plaque rupture, (2) stenosis/turbulence, (3) inflammation raises coagulation factors. Remember these three factors for thrombosis questions.'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Atherosclerosis preferentially occurs at arterial branch points because blood flow becomes turbulent at bifurcations, creating regions of low shear stress. Turbulent flow and low shear stress damage the endothelium (the protective inner lining of arteries), initiating the inflammatory response that leads to LDL oxidation and plaque formation.',
-        apply: 'A patient has an arterial plaque that reduces the lumen diameter by 50%. Using Poiseuille\'s law (flow ∝ r⁴), calculate the reduction in blood flow rate through that vessel.',
-        analyze: 'Compare the roles of LDL, macrophages, and smooth muscle cells in the progression of atherosclerosis from fatty streak to fibrous plaque.',
-        evaluate: 'Evaluate whether thrombosis is purely harmful or whether the clotting cascade represents an essential survival mechanism that is merely dysregulated in cardiovascular disease.'
+        title: 'Worked Example: Identifying a Blood Vessel from a Micrograph',
+        text: 'A blood vessel has: very thick walls; narrow lumen; abundant elastic tissue in the wall; no valves visible.\n\nIdentification: ARTERY\n\nReasoning: Thick walls and abundant elastic tissue indicate it must withstand/smooth out high pressure from the heart. Narrow lumen relative to wall thickness is characteristic of arteries. No valves are needed because pressure is high enough to prevent backflow.',
       },
-      terms: []
     },
     {
-      id: 'checklist-atherosclerosis',
+      id: 'checklist-blood-vessels',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Atherosclerosis begins with LDL oxidation and endothelial dysfunction', checked: false },
-          { text: 'Macrophage ingestion of oxLDL creates foam cells and fatty streaks', checked: false },
-          { text: 'Fibrous plaque growth causes stenosis, leading to angina or claudication', checked: false },
-          { text: 'Plaque rupture exposes TF, triggering the clotting cascade', checked: false },
-          { text: 'Thrombin converts fibrinogen to fibrin and promotes platelet aggregation, forming a clot', checked: false }
-        ]
-      }
+          { text: 'Name the three layers (tunicae) of artery and vein walls', checked: false },
+          { text: 'Explain how the elastic fibres in arteries maintain blood pressure between heartbeats', checked: false },
+          { text: 'Explain why veins need valves but arteries generally do not', checked: false },
+          { text: 'Describe the wall structure of a capillary and explain why it is adapted for exchange', checked: false },
+          { text: 'Compare relative wall thickness, lumen size, and pressure in arteries, veins, and capillaries', checked: false },
+          { text: 'Explain how arterioles regulate blood distribution to tissues', checked: false },
+          { text: 'From a micrograph description, identify whether a vessel is artery, vein, or capillary', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-atherosclerosis',
+      id: 'summary-blood-vessels',
       type: 'summary',
       data: {
-        text: 'Atherosclerosis involves LDL oxidation, endothelial dysfunction, foam cell accumulation, and fibrous plaque formation, progressively narrowing arteries. Plaque rupture exposes tissue factor, triggering the coagulation cascade: TF + Factor VII → Factor X → Prothrombin → Thrombin. Thrombin converts fibrinogen to fibrin and activates platelets. The resulting thrombus can occlude the artery, causing MI or stroke. Virchow\'s triad (vessel damage, flow abnormality, hypercoagulability) predisposes to pathological thrombosis.'
-      }
-    }
+        text: 'Blood vessels all have three tunics (intima, media, adventitia) except capillaries (one endothelial cell thick only). Arteries: thick elastic media → withstand and smooth high-pressure pulsatile flow; narrow lumen; smooth muscle for vasoconstriction/vasodilation. Veins: thin walls; wide lumen; pocket valves prevent backflow; return blood at low pressure with help of skeletal muscle pump. Capillaries: single endothelial layer → minimal diffusion distance; slow flow; large surface area → site of exchange. Arterioles have proportionally high smooth muscle → fine control of blood flow to tissues (peripheral resistance).',
+      },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-atherosclerosis-ldl',
-        prompt: 'Describe the initial steps of atherosclerosis. What is the role of LDL oxidation and oxLDL?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-atherosclerosis-foam',
-        prompt: 'What are foam cells and how do they form? How do fatty streaks develop?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-atherosclerosis-progression',
-        prompt: 'What happens when atherosclerotic plaque ruptures? Why does this lead to thrombosis?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-clotting-cascade-seq',
-        prompt: 'Outline the complete clotting cascade from TF activation to fibrin stabilisation.'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-clotting-platelets',
-        prompt: 'Describe platelet adhesion, activation, and aggregation. What role does thrombin play?'
-      }
+      { id: 'cue-1', blockId: 'list-tunicae', prompt: 'Name the three layers (tunicae) of blood vessel walls and state the function of each.' },
+      { id: 'cue-2', blockId: 'p-arteries', prompt: 'How do elastic fibres in arteries allow them to maintain blood pressure between heartbeats?' },
+      { id: 'cue-3', blockId: 'p-veins', prompt: 'Why do veins need valves? Describe two mechanisms that assist venous return.' },
+      { id: 'cue-4', blockId: 'p-capillaries', prompt: 'Describe the wall structure of a capillary and explain how it is adapted for efficient exchange.' },
+      { id: 'cue-5', blockId: 'table-vessel-comparison', prompt: 'Compare any artery and vein in terms of: lumen size, wall thickness, elastic fibres, valves, and blood pressure.' },
     ],
-    summaryText: 'Atherosclerosis: LDL oxidation → endothelial dysfunction → monocyte adhesion → macrophage foam cells → fatty streak → fibrous plaque (stenosis) → rupture. Clotting cascade: TF+VII activate X → Xa+V activate Prothrombin → Thrombin → converts Fibrinogen to Fibrin (polymerised, cross-linked). Platelets adhere (vWF to collagen), activate, aggregate, trapped in fibrin. Thrombus can embolise → MI/stroke. Virchow\'s triad: vessel damage, flow abnormality, hypercoagulability.',
-    ready: false
+    summaryText: 'Arteries: thick elastic walls, narrow lumen, high pressure, no valves (except exit). Veins: thin walls, wide lumen, low pressure, pocket valves. Capillaries: one cell thick, tiny diameter, site of exchange. Three tunicae: intima (endothelium), media (muscle+elastic), adventitia (fibrous). Arterioles = resistance vessels, control blood distribution.',
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Atherosclerosis and Blood Clotting',
-      detail: 'Pathophysiology of plaque formation and the molecular cascade of coagulation.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['atherosclerosis', 'ldl', 'foam-cells', 'clotting-cascade', 'thrombin', 'fibrin', 'platelets']
-    }
-  ]
+    { id: 'ev-1', title: 'Blood vessel wall stress', detail: 'Laplace\'s law: wall tension = pressure × radius. Large vessels like the aorta experience enormous wall stress despite the elastic wall compensating. This explains why aneurysms (focal dilations) grow progressively — larger radius → greater wall tension → more dilation.', year: '2005', source: 'Nichols WW, Vascular Physiology', tags: ['blood vessels', 'pressure'] },
+  ],
 };

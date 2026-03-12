@@ -1,198 +1,132 @@
 export const note_biology_1_2_5 = {
   blocks: [
     {
-      id: 'obj-enzyme',
+      id: 'obj-active',
       type: 'objective',
-      data: {
-        text: 'Understand enzyme kinetics, substrate concentration effects, factors influencing enzyme rate, inhibition types, and the Michaelis-Menten equation.'
-      }
+      data: { text: 'Describe active transport and endocytosis/exocytosis as mechanisms for moving substances across cell membranes against a concentration gradient, and explain the energy requirement.' },
     },
     {
-      id: 'h-enzyme-models',
+      id: 'h-active',
       type: 'heading',
-      data: {
-        text: 'Lock and Key vs Induced Fit Models',
-        level: 2
-      }
+      data: { text: 'Active Transport', level: 2 },
     },
     {
-      id: 'p-lock-key',
+      id: 'p-active',
       type: 'paragraph',
-      data: {
-        text: 'The lock and key model (Emil Fischer, 1890) proposes that the enzyme active site is a rigid structure complementary to the substrate. The substrate fits into the active site like a key into a lock. Binding is specific: only substrates with the correct shape bind. Upon binding, the enzyme-substrate complex (ES) is formed. Catalysis occurs, converting substrate to product, and the product is released. The model explains substrate specificity but suggests enzymes are static and don\'t change shape. The induced fit model (Daniel Koshland, 1958) is more accurate: the enzyme active site is flexible. Substrate binding induces conformational changes in both the enzyme and substrate, properly positioning catalytic residues and stabilising the transition state. The enzyme "molds" around the substrate, optimising catalysis. This model explains why enzymes are such efficient catalysts: they don\'t just bind substrates; they distort them toward the transition state, lowering activation energy dramatically. Most modern enzymes follow the induced fit model.'
-      }
+      data: { text: 'Active transport is the movement of molecules or ions across a cell membrane <strong>against</strong> their concentration gradient (from low to high concentration). Unlike diffusion, active transport requires energy in the form of ATP.' },
     },
     {
-      id: 'h-michaelis-menten',
-      type: 'heading',
+      id: 'list-active',
+      type: 'list',
       data: {
-        text: 'Substrate Concentration and Michaelis-Menten Kinetics',
-        level: 2
-      }
-    },
-    {
-      id: 'p-mm-kinetics',
-      type: 'paragraph',
-      data: {
-        text: 'Michaelis-Menten kinetics describes how enzyme velocity varies with substrate concentration. At very low [substrate], the enzyme is unsaturated; most enzyme molecules lack substrate. Increasing [substrate] increases velocity linearly because more enzyme molecules are bound. As [substrate] increases, velocity plateaus—all enzyme active sites are occupied (saturation). Further [substrate] increase doesn\'t increase velocity; the reaction is limited by enzyme amount and the rate constant kcat (turnover number, molecules per second per enzyme molecule). The hyperbolic curve (substrate concentration vs velocity) is characteristic. Key parameters: Vmax = maximum velocity when enzyme is fully saturated; Km (Michaelis constant) = [substrate] at which velocity = Vmax/2. Km is inversely related to affinity: low Km indicates high affinity (enzyme binds substrate readily); high Km indicates low affinity. The Michaelis-Menten equation is: v = (Vmax × [S]) / (Km + [S]), where v = velocity, [S] = substrate concentration. A Lineweaver-Burk plot (1/v vs 1/[S]) is linear and useful for determining Vmax and Km from experimental data.'
-      }
-    },
-    {
-      id: 'eq-mm-equation',
-      type: 'equation',
-      data: {
-        html: 'v = <span class="nb-frac"><span class="nb-num">V<sub>max</sub> × [S]</span><span class="nb-den">K<sub>m</sub> + [S]</span></span><br/>where v = reaction velocity, V<sub>max</sub> = maximum velocity, K<sub>m</sub> = Michaelis constant, [S] = substrate concentration'
-      }
-    },
-    {
-      id: 'h-enzyme-factors',
-      type: 'heading',
-      data: {
-        text: 'Factors Affecting Enzyme Rate',
-        level: 2
-      }
-    },
-    {
-      id: 'p-temperature',
-      type: 'paragraph',
-      data: {
-        text: 'Temperature affects enzyme rate via two opposing mechanisms. Increasing temperature increases molecular kinetic energy, causing more frequent enzyme-substrate collisions and faster reaction rate. The Q10 coefficient quantifies this: Q10 = (reaction rate at T+10°C) / (reaction rate at T). For most enzymes, Q10 ≈ 2, meaning the rate doubles for every 10°C increase (in the physiological range, ~5–40°C). However, high temperature denatures enzymes: hydrogen bonds and weak interactions stabilising tertiary structure break, unfolding the protein and destroying the active site. The enzyme loses function permanently above its optimal temperature (typically 37°C for human enzymes, 50–80°C for thermophilic organisms). The bell-shaped curve (temperature vs rate) reflects these opposing effects: rate increases with temperature until denaturation begins, then falls sharply.'
-      }
-    },
-    {
-      id: 'p-ph',
-      type: 'paragraph',
-      data: {
-        text: 'pH affects enzyme catalytic efficiency and stability. Most enzymes have an optimal pH where they function maximally (e.g. pepsin pH 2, trypsin pH 8). pH changes alter the ionisation state of amino acid side chains: histidine (pKa ~6), lysine (pKa ~10.5), and aspartate (pKa ~3.9) become protonated or deprotonated at different pH. These ionisation changes affect: (1) Active site residues: a catalytic histidine must be protonated to function; changing pH alters its ionisation, reducing activity. (2) Substrate binding: charged substrate interactions with charged active site residues depend on ionisation state. (3) Enzyme stability: extreme pH denatures the protein by disrupting ionic bonds and salt bridges. Enzymes are most active at their optimal pH; moving away from optimum reduces activity, following a bell-shaped curve.'
-      }
-    },
-    {
-      id: 'p-enzyme-concentration',
-      type: 'paragraph',
-      data: {
-        text: 'At constant substrate concentration, reaction rate is directly proportional to enzyme concentration, provided substrate is not limiting. Doubling enzyme amount doubles the rate (linear relationship). This assumes the reaction is not substrate-limited (saturation). In cells, enzyme concentration is regulated via gene expression (transcription, translation) and post-translational modification (phosphorylation, ubiquitination for degradation). Hormonal signals (e.g. insulin, glucagon) regulate enzyme expression in response to metabolic needs. This regulation allows cells to adjust reaction rates without changing pathway topology.'
-      }
-    },
-    {
-      id: 'h-inhibition',
-      type: 'heading',
-      data: {
-        text: 'Competitive and Non-Competitive Inhibition',
-        level: 2
-      }
-    },
-    {
-      id: 'p-competitive',
-      type: 'paragraph',
-      data: {
-        text: 'Competitive inhibition occurs when an inhibitor molecule resembles the substrate and competes for binding to the active site. The inhibitor is not a substrate but occupies the binding site, preventing substrate access. Classic example: statins competitively inhibit HMG-CoA reductase by resembling HMG-CoA (the natural substrate). Increasing [substrate] can overcome competitive inhibition because substrate outcompetes inhibitor for the limited enzyme active sites. The kinetic effect: Km appears to increase (requires higher [substrate] to reach Vmax/2), while Vmax remains unchanged. On a Lineweaver-Burk plot, competitive inhibition shows increased slope and x-intercept but the same y-intercept. Competitive inhibition is reversible if the inhibitor-enzyme interaction is weak.'
-      }
-    },
-    {
-      id: 'p-noncompetitive',
-      type: 'paragraph',
-      data: {
-        text: 'Non-competitive inhibition occurs when the inhibitor binds to an allosteric site (not the active site), distinct from where substrate binds. The inhibitor does not directly block substrate access but changes enzyme conformation, reducing catalytic efficiency. Non-competitive inhibitors cannot be overcome by increasing [substrate] because they bind independently of substrate presence. The kinetic effect: Vmax decreases (fewer enzyme molecules are catalytically active), while Km remains unchanged. On a Lineweaver-Burk plot, non-competitive inhibition shows the same slope but different intercepts. Heavy metal ions (Pb²⁺, Hg²⁺) often bind to cysteine residues in allosteric sites, causing non-competitive inhibition and toxicity. Non-competitive inhibition is also often reversible but cannot be overcome by substrate.'
-      }
-    },
-    {
-      id: 'table-inhibition',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Feature', 'Competitive', 'Non-Competitive'],
-        rows: [
-          ['Binding site', 'Active site (competes with substrate)', 'Allosteric site (not active site)'],
-          ['Effect of ↑[substrate]', 'Overcome inhibition; rate increases', 'No effect; inhibition persists'],
-          ['Vmax', 'Unchanged', 'Decreased'],
-          ['Km', 'Increased (higher Km)', 'Unchanged'],
-          ['Mechanism', 'Substrate and inhibitor mutually exclusive', 'Inhibitor reduces enzyme efficiency'],
-          ['Reversibility', 'Reversible (low affinity inhibitor)', 'Usually reversible'],
-          ['Example', 'Statin vs HMG-CoA reductase', 'Heavy metals (Pb²⁺, Hg²⁺) on cysteines']
+        style: 'bullet',
+        items: [
+          'Movement is <strong>against the concentration gradient</strong> \u2014 from low to high concentration.',
+          'Energy required: <strong>ATP</strong> (from respiration). ATP is hydrolysed to ADP and inorganic phosphate (Pi) to drive the process.',
+          'Requires specific <strong>carrier proteins</strong> (pumps) in the membrane. These are similar to the carrier proteins used in facilitated diffusion but require ATP to function.',
+          'The carrier protein binds the molecule or ion, phosphorylation by ATP causes a conformational change, and the molecule/ion is released on the other side of the membrane.',
+          'Cells with high rates of active transport contain many <strong>mitochondria</strong> \u2014 needed to generate ATP by aerobic respiration.',
         ],
-        caption: 'Competitive vs non-competitive inhibition'
-      }
+      },
     },
     {
-      id: 'callout-worked-kinetics',
+      id: 'callout-active-key',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Active Transport vs Facilitated Diffusion',
+        text: 'Both use carrier proteins in the membrane.\nFacilitated diffusion: down concentration gradient; no ATP needed.\nActive transport: against concentration gradient; ATP required.\n\nIf you inhibit respiration (stopping ATP production), active transport stops, but facilitated diffusion continues.',
+      },
+    },
+    {
+      id: 'svg-active',
+      type: 'svg',
+      data: {
+        caption: 'Active transport: carrier protein (pump) uses ATP energy to move a molecule against its concentration gradient.',
+        svg: '<svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12"><rect width="500" height="220" fill="#f8f9ff" rx="8"/><rect x="0" y="80" width="500" height="60" fill="#dbeafe" opacity="0.35"/><text x="250" y="18" fill="#888" font-size="11" text-anchor="middle">LOW concentration (inside)</text><text x="250" y="210" fill="#888" font-size="11" text-anchor="middle">HIGH concentration (outside)</text><g fill="#6c8ebf"><circle cx="30" cy="80" r="9"/><circle cx="60" cy="80" r="9"/><circle cx="90" cy="80" r="9"/><circle cx="120" cy="80" r="9"/><circle cx="150" cy="80" r="9"/><circle cx="210" cy="80" r="9"/><circle cx="240" cy="80" r="9"/><circle cx="270" cy="80" r="9"/><circle cx="330" cy="80" r="9"/><circle cx="360" cy="80" r="9"/><circle cx="390" cy="80" r="9"/><circle cx="420" cy="80" r="9"/><circle cx="450" cy="80" r="9"/><circle cx="480" cy="80" r="9"/><circle cx="30" cy="140" r="9"/><circle cx="60" cy="140" r="9"/><circle cx="90" cy="140" r="9"/><circle cx="120" cy="140" r="9"/><circle cx="150" cy="140" r="9"/><circle cx="210" cy="140" r="9"/><circle cx="240" cy="140" r="9"/><circle cx="270" cy="140" r="9"/><circle cx="330" cy="140" r="9"/><circle cx="360" cy="140" r="9"/><circle cx="390" cy="140" r="9"/><circle cx="420" cy="140" r="9"/><circle cx="450" cy="140" r="9"/><circle cx="480" cy="140" r="9"/></g><ellipse cx="300" cy="110" rx="35" ry="38" fill="#e67e22" opacity="0.9"/><text x="300" y="106" fill="white" font-size="10" text-anchor="middle">Carrier</text><text x="300" y="118" fill="white" font-size="10" text-anchor="middle">protein</text><text x="300" y="130" fill="white" font-size="10" text-anchor="middle">(pump)</text><circle cx="300" cy="33" r="11" fill="#3498db"/><text x="314" y="36" fill="#3498db" font-size="10">Ion / molecule</text><line x1="300" y1="44" x2="300" y2="72" stroke="#3498db" stroke-width="2"/><polygon points="300,72 295,62 305,62" fill="#3498db"/><rect x="168" y="28" width="52" height="22" rx="5" fill="#e74c3c"/><text x="194" y="42" fill="white" font-size="10" text-anchor="middle">ATP</text><line x1="220" y1="39" x2="265" y2="85" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/><text x="240" y="75" fill="#e74c3c" font-size="10">energy</text></svg>',
+      },
+    },
+    {
+      id: 'h-examples',
+      type: 'heading',
+      data: { text: 'Examples of Active Transport', level: 2 },
+    },
+    {
+      id: 'list-examples',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Plant root hair cells</strong> absorbing mineral ions (e.g. nitrate, phosphate) from soil water. Mineral ion concentration in soil is very low, so active transport is needed to absorb ions against the gradient. Root hair cells have many mitochondria.',
+          '<strong>Intestinal epithelial cells</strong> absorbing glucose from the small intestine (after most glucose has been absorbed by diffusion, active transport picks up the remainder against the gradient). These cells also have many mitochondria and microvilli (to increase surface area).',
+          '<strong>Sodium-potassium pump (Na\u207a/K\u207a pump)</strong> in nerve and muscle cells \u2014 pumps 3 Na\u207a out and 2 K\u207a in per ATP molecule, maintaining resting membrane potential.',
+          '<strong>Reabsorption in kidney tubules</strong> \u2014 glucose and amino acids are actively transported back into the blood from the tubule filtrate.',
+        ],
+      },
+    },
+    {
+      id: 'h-endo',
+      type: 'heading',
+      data: { text: 'Endocytosis and Exocytosis', level: 2 },
+    },
+    {
+      id: 'p-endo',
+      type: 'paragraph',
+      data: { text: 'Some substances are too large to be moved by carrier proteins. Instead, the cell membrane itself engulfs them (endocytosis) or releases them (exocytosis). Both processes require ATP.' },
+    },
+    {
+      id: 'list-endo',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Endocytosis</strong> \u2014 the cell-surface membrane folds inward around a particle or droplet, pinching off to form a vesicle inside the cell. Two types: <em>phagocytosis</em> (large particles, e.g. bacteria engulfed by white blood cells) and <em>pinocytosis</em> (small droplets of fluid).',
+          '<strong>Exocytosis</strong> \u2014 a vesicle moves to the cell-surface membrane, fuses with it, and releases its contents outside the cell. Used to secrete hormones (e.g. insulin), neurotransmitters, and digestive enzymes.',
+          'Both processes involve vesicle formation/fusion and require energy from ATP.',
+        ],
+      },
+    },
+    {
+      id: 'callout-worked',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Interpreting Enzyme Kinetics',
-        text: 'If substrate concentration increases but reaction rate doesn\'t change, enzyme is saturated (substrate-limited). If enzyme concentration increases and rate increases proportionally, substrate is not limiting. If inhibitor is added and increasing substrate increases rate → competitive. If increasing substrate has no effect → non-competitive. Understanding these principles lets you design efficient experiments and troubleshoot enzyme reactions.'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why does enzyme denaturation above the optimum temperature cause a rapid, irreversible loss of activity? Explain how increased thermal energy breaks the non-covalent bonds (H-bonds, ionic bonds) maintaining tertiary structure, distorting the active site.',
-        apply: 'An enzyme has a Km of 2 mmol/L and Vmax of 100 μmol/min. Using the Michaelis-Menten equation v = Vmax[S]/(Km+[S]), calculate the reaction rate when [S] = 2 mmol/L, 6 mmol/L, and 20 mmol/L. Plot these points and describe the curve shape.',
-        analyze: 'Compare competitive and non-competitive inhibition in terms of effect on Km, Vmax, mechanism of inhibition, and reversibility. Give one biological example of each type and explain its physiological significance.',
-        evaluate: 'Evaluate the induced fit model of enzyme action compared to the lock-and-key model. What experimental evidence (e.g. X-ray crystallography, NMR studies) supports induced fit, and in what situations does the lock-and-key model still provide a useful approximation?',
+        title: 'Worked Example: Root Hair Cells',
+        text: 'Soil water contains nitrate ions at a concentration of 0.1 mmol dm\u207b\u00b3. Inside the root hair cell, the nitrate concentration is 2.5 mmol dm\u207b\u00b3.\n\nCan nitrate enter by diffusion? No \u2014 the concentration inside (2.5) is much higher than outside (0.1). The ion would have to move against the concentration gradient.\n\nHow does nitrate enter? By active transport, using carrier proteins and ATP generated by mitochondria in the root hair cell.',
       },
-      terms: [],
     },
     {
-      id: 'checklist-enzyme',
+      id: 'checklist-active',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Induced fit: enzyme active site is flexible; substrate binding induces conformational change', checked: false },
-          { text: 'Michaelis-Menten: v = (Vmax × [S]) / (Km + [S]); describes substrate concentration effect', checked: false },
-          { text: 'Km = [substrate] at Vmax/2; inverse measure of affinity', checked: false },
-          { text: 'Temperature: Q10 ≈ 2; optimal ~37°C for human enzymes; heat denatures above optimum', checked: false },
-          { text: 'Competitive inhibition: overcomes by ↑[substrate]; non-competitive cannot be overcome', checked: false }
-        ]
-      }
+          { text: 'Describe active transport and explain why it requires ATP', checked: false },
+          { text: 'Compare active transport with facilitated diffusion (both use carrier proteins; only active needs ATP)', checked: false },
+          { text: 'Explain why cells with high rates of active transport have many mitochondria', checked: false },
+          { text: 'Give two examples of active transport in biology', checked: false },
+          { text: 'Describe endocytosis and exocytosis and state what they are used for', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-enzyme',
+      id: 'summary-active',
       type: 'summary',
-      data: {
-        text: 'Induced fit model: enzyme active site is flexible; substrate binding induces conformational changes, lowering Ea dramatically. Michaelis-Menten kinetics: velocity increases with [substrate] hyperbolically, saturating at Vmax. Km indicates affinity (low Km = high affinity). Temperature increases rate (Q10 ~2) until denaturation. pH affects ionisation and activity (bell-shaped curve around optimum). Enzyme concentration is directly proportional to rate (when substrate non-limiting). Competitive inhibition (active site): overcome by ↑[substrate], ↑Km. Non-competitive inhibition (allosteric): cannot overcome, ↓Vmax.'
-      }
-    }
+      data: { text: 'Active transport moves molecules/ions against their concentration gradient (low \u2192 high), using ATP energy and specific carrier proteins (pumps). Cells with high active transport rates have many mitochondria (ATP source). Examples: root hair cells absorbing mineral ions; intestinal cells absorbing glucose; Na\u207a/K\u207a pump in nerve cells. Endocytosis (phagocytosis/pinocytosis) engulfs large molecules by membrane folding; exocytosis secretes molecules via vesicle fusion with the membrane. Both require ATP.' },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-lock-key',
-        prompt: 'Compare lock and key and induced fit models. Why is induced fit more accurate?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-mm-kinetics',
-        prompt: 'Explain Michaelis-Menten kinetics. What is Km and what does it indicate?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-temperature',
-        prompt: 'How does temperature affect enzyme rate? What is Q10?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-competitive',
-        prompt: 'Explain competitive inhibition. Can it be overcome and how?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-noncompetitive',
-        prompt: 'Explain non-competitive inhibition. How does it differ from competitive?'
-      }
+      { id: 'cue-1', blockId: 'h-active', prompt: 'Define active transport. How does it differ from facilitated diffusion?' },
+      { id: 'cue-2', blockId: 'list-active', prompt: 'Why do cells with high rates of active transport contain many mitochondria?' },
+      { id: 'cue-3', blockId: 'list-examples', prompt: 'Give two biological examples of active transport and explain why diffusion is not sufficient in each case.' },
+      { id: 'cue-4', blockId: 'h-endo', prompt: 'What is the difference between endocytosis and exocytosis? Give an example of each.' },
+      { id: 'cue-5', blockId: 'callout-active-key', prompt: 'You add a respiratory inhibitor to a cell. Which transport processes are affected, and which are not? Explain.' },
     ],
-    summaryText: 'Induced fit: enzyme active site flexible; substrate binding causes conformational change, lowers Ea. Michaelis-Menten: v = (Vmax × [S]) / (Km + [S]); hyperbolic curve. Km = [S] at Vmax/2 (affinity indicator). Temperature: Q10 ~2 (double per 10°C); optimal ~37°C; denatures above. pH: bell curve around optimal; ionisation affects catalysis. Competitive inhibition (active site): ↑Km, Vmax unchanged, overcome by ↑[S]. Non-competitive (allosteric): ↓Vmax, Km unchanged, cannot overcome by ↑[S].',
-    ready: false
+    summaryText: 'Active transport: against concentration gradient; requires ATP; uses carrier protein pumps. Both active and facilitated use carrier proteins \u2014 only active needs ATP. Many mitochondria = lots of active transport. Examples: root hair cells (mineral ions), intestinal cells (glucose), Na\u207a/K\u207a pump. Endocytosis (phagocytosis \u2014 large particles; pinocytosis \u2014 droplets) and exocytosis (secretion via vesicles) both use ATP.',
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Enzyme Kinetics and Regulation',
-      detail: 'Michaelis-Menten equation, substrate kinetics, factors affecting rate, and inhibition types.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['enzyme', 'kinetics', 'michaelis-menten', 'substrate', 'temperature', 'ph', 'inhibition']
-    }
-  ]
+    { id: 'ev-1', title: 'Active transport in intestinal and root cells', detail: 'AQA textbook describes active transport mechanisms in root hair cells and intestinal epithelial cells, emphasising the need for many mitochondria.', year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 3, p58', tags: ['active-transport', 'membrane-transport'] },
+  ],
 };

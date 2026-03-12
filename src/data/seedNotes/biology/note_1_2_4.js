@@ -1,219 +1,156 @@
 export const note_biology_1_2_4 = {
   blocks: [
     {
-      id: 'obj-protein',
+      id: 'obj-diffusion',
       type: 'objective',
-      data: {
-        text: 'Understand amino acid structure, peptide bond formation, and the four levels of protein structure determining function.'
-      }
+      data: { text: 'Describe simple diffusion, facilitated diffusion, and osmosis; explain how the rate of diffusion is affected by concentration gradient, surface area, and membrane thickness.' },
     },
     {
-      id: 'h-amino-acids',
+      id: 'h-diffusion',
       type: 'heading',
-      data: {
-        text: 'Amino Acid Structure',
-        level: 2
-      }
+      data: { text: 'Simple Diffusion', level: 2 },
     },
     {
-      id: 'p-amino-acid-general',
+      id: 'p-diffusion',
       type: 'paragraph',
-      data: {
-        text: 'Amino acids are organic molecules that serve as building blocks for proteins. All amino acids have the same basic structure: a central carbon atom (α-carbon) bonded to four groups: an amino group (−NH₂), a carboxyl group (−COOH), a hydrogen atom (−H), and a variable side chain (R group). The R group differs among the 20 common amino acids, determining the amino acid\'s identity and properties. Some R groups are nonpolar and hydrophobic (leucine, isoleucine, valine, phenylalanine, alanine), making these amino acids hydrophobic and favouring burial in protein interiors. Others are polar and uncharged (serine, threonine, asparagine, glutamine), or polar and charged—negatively (aspartate, glutamate) or positively (lysine, arginine, histidine). Charged amino acids are hydrophilic and often located on protein surfaces. Proline is unique: its R group is a ring attached to the backbone nitrogen, restricting flexibility. Cysteine contains a thiol group (−SH) capable of forming disulphide bonds with other cysteines. Glycine has only a hydrogen R group, making it the smallest and most flexible.'
-      }
+      data: { text: 'Diffusion is the net movement of molecules or ions from a region of higher concentration to a region of lower concentration (down a concentration gradient). It is a passive process: no energy (ATP) is needed. The driving force is the random kinetic energy of particles.' },
     },
     {
-      id: 'table-amino-acids',
-      type: 'comparisonTable',
+      id: 'list-diffusion',
+      type: 'list',
       data: {
-        headers: ['Category', 'Examples', 'R Group Property', 'Location in Protein'],
-        rows: [
-          ['Nonpolar (hydrophobic)', 'Leucine, isoleucine, valine, phenylalanine, alanine, methionine', 'Hydrocarbon chains', 'Protein interior (hydrophobic core)'],
-          ['Polar uncharged', 'Serine, threonine, asparagine, glutamine', 'Hydroxyl or amide groups', 'Surface, flexible regions'],
-          ['Charged negative', 'Aspartate (Asp), glutamate (Glu)', 'Carboxyl group (−COO⁻)', 'Surface, salt bridges'],
-          ['Charged positive', 'Lysine (Lys), arginine (Arg), histidine (His)', 'Amino or guanidinium groups', 'Surface, salt bridges'],
-          ['Special', 'Cysteine (disulphide bonds), proline (rigidity)', 'Thiol (−SH) or ring', 'Variable']
+        style: 'bullet',
+        items: [
+          '<strong>Simple diffusion</strong> — molecules pass directly through the phospholipid bilayer without any protein assistance.',
+          'Only <strong>small, non-polar</strong> molecules can do this (examples: O\u2082, CO\u2082, ethanol, steroid hormones).',
+          'Large molecules, ions, and polar molecules cannot cross the hydrophobic lipid bilayer directly.',
+          'Rate increases with a steeper concentration gradient, a larger surface area, or a thinner membrane.',
         ],
-        caption: 'Amino acid categories and locations in proteins'
-      }
+      },
     },
     {
-      id: 'h-peptide-bond',
-      type: 'heading',
-      data: {
-        text: 'Peptide Bond Formation',
-        level: 2
-      }
-    },
-    {
-      id: 'p-peptide-bond',
-      type: 'paragraph',
-      data: {
-        text: 'A peptide bond is a covalent bond formed between the carboxyl group (−COOH) of one amino acid and the amino group (−NH₂) of an adjacent amino acid via a condensation reaction (release of water). The resulting bond is −CO−NH− (carbonyl−nitrogen). Chains of amino acids linked by peptide bonds are called polypeptides. The chain has directionality: the N-terminus (free amino group) and C-terminus (free carboxyl group). By convention, sequences are written from N-terminus to C-terminus. A dipeptide contains two amino acids (one peptide bond); a tripeptide has three; and so on. Proteins are large polypeptides, typically 100–1000 amino acids, though some are longer or shorter. The order of amino acids in the polypeptide chain is the primary structure, determined entirely by genetic information (DNA sequence). Breaking a peptide bond requires hydrolysis (addition of water), catalysed by proteases (protease enzymes). Peptide bonds are strong and stable; proteins can persist for years or longer.'
-      }
-    },
-    {
-      id: 'eq-peptide-bond',
-      type: 'equation',
-      data: {
-        html: 'Amino acid 1 (−COOH) + Amino acid 2 (−NH₂) → Dipeptide (−CO−NH−) + H₂O<br/>(Condensation reaction; reversible by hydrolysis)'
-      }
-    },
-    {
-      id: 'h-primary-structure',
-      type: 'heading',
-      data: {
-        text: 'Primary Structure',
-        level: 2
-      }
-    },
-    {
-      id: 'p-primary-structure',
-      type: 'paragraph',
-      data: {
-        text: 'Primary structure is the linear sequence of amino acids in a polypeptide chain, linked by peptide bonds. It is determined by the DNA template through transcription and translation. Each protein has a unique primary structure; even a single amino acid substitution can alter function dramatically (e.g. sickle cell anaemia: glutamic acid → valine at position 6 of β-globin). The primary structure is the foundation for all higher levels of structure. Although primary structure appears linear and simple, it dictates the spatial arrangement of atoms and thus the overall protein shape and function. Primary structure is determined experimentally by protein sequencing (original Edman degradation; now DNA sequencing of the gene is faster). The Human Genome Project identified ~20,000 genes, each encoding a protein with unique primary structure.'
-      }
-    },
-    {
-      id: 'h-secondary-structure',
-      type: 'heading',
-      data: {
-        text: 'Secondary Structure: α-Helix and β-Pleated Sheet',
-        level: 2
-      }
-    },
-    {
-      id: 'p-secondary-structure',
-      type: 'paragraph',
-      data: {
-        text: 'Secondary structure refers to regular, repeating structural patterns in localised regions of polypeptide chains, stabilised by hydrogen bonds between the backbone carbonyl oxygen (−C=O) and amide hydrogen (−N−H) atoms. Two major secondary structures exist. (1) α-Helix: the polypeptide backbone spirals in a right-handed helix, with 3.6 amino acids per turn. Hydrogen bonds form between the carbonyl of amino acid n and the amide of amino acid n+4. This regularly spaced bonding creates a spring-like structure. The side chains (R groups) project outward. (2) β-Pleated Sheet: the polypeptide backbone is extended, with adjacent strands (from same or different parts of the protein) arranged side-by-side. Hydrogen bonds form between the carbonyl oxygen of one strand and the amide hydrogen of the adjacent strand. The structure looks like a corrugated sheet, with side chains alternating above and below. β-Sheets can be parallel (N→C direction same) or antiparallel (opposite directions). Many proteins contain both α-helices and β-sheets in different regions, along with irregular loops and turns. Secondary structure is predicted from primary sequence and determined experimentally by circular dichroism spectroscopy or X-ray crystallography.'
-      }
-    },
-    {
-      id: 'h-tertiary-structure',
-      type: 'heading',
-      data: {
-        text: 'Tertiary Structure',
-        level: 2
-      }
-    },
-    {
-      id: 'p-tertiary-structure',
-      type: 'paragraph',
-      data: {
-        text: 'Tertiary structure is the overall 3D shape of a polypeptide chain, determined by interactions between side chains (R groups). These interactions include: (1) Disulphide bonds (−S−S−): covalent bonds between cysteine residues, strongest interactions, often stabilising proteins secreted outside cells (extracellular proteins). (2) Ionic bonds (salt bridges): electrostatic attractions between positively charged (Lys, Arg, His) and negatively charged (Asp, Glu) amino acids. (3) Hydrogen bonds: between polar side chains (e.g. Ser −OH and Asp −COOH). (4) Hydrophobic interactions: nonpolar amino acids cluster in the protein interior, away from water; hydrophilic amino acids prefer the surface. These are collectively weak interactions, but numerous and collectively important. Hydrogen bonds and ionic bonds are readily broken by heat, pH change, or detergents, causing protein denaturation (loss of shape). Disulphide bonds are covalent and resist denaturation. Tertiary structure is what gives proteins their unique shape and creates active sites (for enzymes), binding pockets (for receptors), and specific functions. X-ray crystallography and cryo-electron microscopy determine tertiary structure at atomic resolution.'
-      }
-    },
-    {
-      id: 'h-quaternary-structure',
-      type: 'heading',
-      data: {
-        text: 'Quaternary Structure',
-        level: 2
-      }
-    },
-    {
-      id: 'p-quaternary-structure',
-      type: 'paragraph',
-      data: {
-        text: 'Quaternary structure is the arrangement of multiple polypeptide subunits in proteins that contain more than one subunit. Examples: haemoglobin (four subunits: 2α, 2β), antibodies (four subunits: 2 light, 2 heavy), collagen (three polypeptide chains in triple helix). Subunits are held together by the same non-covalent interactions that stabilise tertiary structure: hydrogen bonds, ionic bonds, and hydrophobic interactions. Quaternary structure enables cooperativity (as seen in haemoglobin) and functional specialisation (different subunits perform different functions). Not all proteins have quaternary structure; single-chain proteins (monomeric) only have primary, secondary, and tertiary structure. Quaternary structure is determined by X-ray crystallography, cryo-EM, or other physical methods.'
-      }
-    },
-    {
-      id: 'table-protein-structure',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Level', 'Definition', 'Held by', 'Determined by', 'Example', 'Effects of Denaturation'],
-        rows: [
-          ['Primary', 'Sequence of amino acids', 'Peptide bonds (covalent)', 'DNA, ribosome', 'Insulin (51 aa)', 'Not reversible (bonds must break)'],
-          ['Secondary', 'α-helix, β-sheet regions', 'Hydrogen bonds (backbone)', 'Primary sequence, physics', 'Collagen triple helix', 'Reversible (H-bonds break)'],
-          ['Tertiary', '3D shape of polypeptide', 'Disulphide, H-bonds, ionic, hydrophobic', 'Primary sequence, environment', 'Lysozyme enzyme', 'Often reversible (except S−S bonds)'],
-          ['Quaternary', 'Multi-subunit arrangement', 'H-bonds, ionic, hydrophobic', 'Primary sequences, assembly', 'Haemoglobin (4 subunits)', 'Subunits may dissociate (reversible)']
-        ],
-        caption: 'Four levels of protein structure'
-      }
-    },
-    {
-      id: 'callout-worked-sickle-cell',
+      id: 'callout-ficks',
       type: 'callout',
       data: {
-        style: 'worked',
-        title: 'Sickle Cell: Primary Structure Mutation',
-        text: 'Normal β-globin: amino acid 6 = Glu (glutamic acid, negative charge, hydrophilic). Sickle cell β-globin: position 6 = Val (valine, nonpolar, hydrophobic). This single change (one nucleotide mutation in DNA) causes valine to cluster and polymerise, distorting the haemoglobin structure into a sickle shape. Result: misshapen RBCs, blockages, pain, organ damage. One amino acid = life-threatening disease.'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why does the tertiary structure of a globular protein determine its function? Explain how the specific 3D arrangement of amino acid R groups creates an active site with precise shape, charge distribution, and hydrophobicity — essential for substrate binding.',
-        apply: 'Haemoglobin has a quaternary structure of four polypeptide subunits. If a point mutation changes one glutamate (charged) to valine (hydrophobic) in the β-globin chain, predict the structural and functional consequences. (This is the sickle cell mutation.)',
-        analyze: 'Compare fibrous proteins (collagen, keratin) and globular proteins (haemoglobin, enzymes) in terms of structure, solubility, and function. Explain why fibrous proteins are insoluble and structural while globular proteins are soluble and functional.',
-        evaluate: 'Evaluate the statement: \'Primary structure determines all higher levels of protein structure.\' Consider protein folding (Anfinsen\'s experiment with ribonuclease), the role of chaperone proteins, and cases where the same sequence folds differently (prions).',
+        style: 'key',
+        title: "Fick\u2019s Law",
+        text: 'Rate of diffusion \u221d (surface area \u00d7 concentration difference) \u00f7 thickness of exchange surface\n\nHigher surface area \u2192 faster diffusion\nHigher concentration gradient \u2192 faster diffusion\nThicker membrane \u2192 slower diffusion',
       },
-      terms: [],
     },
     {
-      id: 'checklist-protein-structure',
+      id: 'h-facilitated',
+      type: 'heading',
+      data: { text: 'Facilitated Diffusion', level: 2 },
+    },
+    {
+      id: 'p-facilitated',
+      type: 'paragraph',
+      data: { text: 'Facilitated diffusion allows large, polar, or charged molecules to cross the membrane that cannot pass directly through the lipid bilayer. It is still passive (no ATP required) and movement is always down the concentration gradient.' },
+    },
+    {
+      id: 'list-facilitated',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Channel proteins</strong> \u2014 form water-filled pores through the membrane. Ion channels are highly specific (e.g. only Na\u207a or only K\u207a pass through). Many channels have gates that open and close in response to signals.',
+          '<strong>Carrier proteins</strong> \u2014 have a specific binding site for a particular molecule (e.g. glucose). On binding, the protein changes shape to carry the molecule across the membrane, then releases it on the other side.',
+          'Different cells have different carrier and channel proteins \u2014 this determines which substances each cell can take up.',
+          '<strong>Rate plateaus</strong> at high concentrations once all protein channels/carriers are occupied (unlike simple diffusion, which continues to increase linearly).',
+        ],
+      },
+    },
+    {
+      id: 'svg-transport',
+      type: 'svg',
+      data: {
+        caption: 'Channel proteins (ions) and carrier proteins (glucose) in facilitated diffusion. Both move molecules down the concentration gradient without ATP.',
+        svg: '<svg viewBox="0 0 580 240" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12"><rect width="580" height="240" fill="#f8f9ff" rx="8"/><rect x="0" y="88" width="580" height="64" fill="#dbeafe" opacity="0.35" rx="0"/><text x="290" y="20" fill="#888" font-size="11" text-anchor="middle">Outside cell (HIGH concentration)</text><text x="290" y="228" fill="#888" font-size="11" text-anchor="middle">Inside cell (LOW concentration)</text><g fill="#6c8ebf"><circle cx="30" cy="88" r="9"/><circle cx="58" cy="88" r="9"/><circle cx="86" cy="88" r="9"/><circle cx="114" cy="88" r="9"/><circle cx="142" cy="88" r="9"/><circle cx="200" cy="88" r="9"/><circle cx="228" cy="88" r="9"/><circle cx="256" cy="88" r="9"/><circle cx="284" cy="88" r="9"/><circle cx="340" cy="88" r="9"/><circle cx="368" cy="88" r="9"/><circle cx="396" cy="88" r="9"/><circle cx="424" cy="88" r="9"/><circle cx="452" cy="88" r="9"/><circle cx="510" cy="88" r="9"/><circle cx="538" cy="88" r="9"/><circle cx="566" cy="88" r="9"/><circle cx="30" cy="152" r="9"/><circle cx="58" cy="152" r="9"/><circle cx="86" cy="152" r="9"/><circle cx="114" cy="152" r="9"/><circle cx="142" cy="152" r="9"/><circle cx="200" cy="152" r="9"/><circle cx="228" cy="152" r="9"/><circle cx="256" cy="152" r="9"/><circle cx="284" cy="152" r="9"/><circle cx="340" cy="152" r="9"/><circle cx="368" cy="152" r="9"/><circle cx="396" cy="152" r="9"/><circle cx="424" cy="152" r="9"/><circle cx="452" cy="152" r="9"/><circle cx="510" cy="152" r="9"/><circle cx="538" cy="152" r="9"/><circle cx="566" cy="152" r="9"/></g><rect x="155" y="76" width="32" height="88" rx="10" fill="#e67e22" opacity="0.9"/><ellipse cx="171" cy="120" rx="8" ry="20" fill="#f39c12"/><text x="171" y="178" fill="#c0392b" font-size="10" text-anchor="middle">Channel</text><text x="171" y="190" fill="#c0392b" font-size="10" text-anchor="middle">protein</text><circle cx="171" cy="60" r="9" fill="#3498db"/><text x="185" y="64" fill="#3498db" font-size="10">Ion</text><line x1="171" y1="69" x2="171" y2="76" stroke="#3498db" stroke-width="2" marker-end="url(#a)"/><ellipse cx="420" cy="120" rx="26" ry="38" fill="#9b59b6" opacity="0.9"/><ellipse cx="420" cy="108" rx="13" ry="12" fill="#d7bde2" opacity="0.9"/><text x="420" y="178" fill="#7d3c98" font-size="10" text-anchor="middle">Carrier</text><text x="420" y="190" fill="#7d3c98" font-size="10" text-anchor="middle">protein</text><polygon points="420,28 433,46 427,68 413,68 407,46" fill="#27ae60" opacity="0.85"/><text x="420" y="52" fill="white" font-size="10" text-anchor="middle">Glu</text><line x1="420" y1="68" x2="420" y2="82" stroke="#27ae60" stroke-width="2"/></svg>',
+      },
+    },
+    {
+      id: 'h-osmosis',
+      type: 'heading',
+      data: { text: 'Osmosis', level: 2 },
+    },
+    {
+      id: 'p-osmosis',
+      type: 'paragraph',
+      data: { text: 'Osmosis is the net movement of water molecules from a region of higher water potential to a region of lower water potential, through a selectively permeable membrane. It is a passive process.' },
+    },
+    {
+      id: 'list-osmosis',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Water potential (\u03c8)</strong> \u2014 a measure of the tendency of water molecules to move. Measured in kPa. Pure water has the highest water potential: \u03c8 = 0 kPa.',
+          'Adding solutes lowers water potential (makes it more negative). Water moves from high \u03c8 (dilute) to low \u03c8 (concentrated).',
+          'A <strong>selectively permeable membrane</strong> allows water through but not (or far fewer) solute molecules.',
+          '<strong>Plant cell in dilute solution</strong> \u2014 water enters by osmosis \u2192 cell swells and becomes <strong>turgid</strong>. The rigid cell wall prevents bursting; it exerts a pressure that stops further water entry.',
+          '<strong>Plant cell in concentrated solution</strong> \u2014 water leaves by osmosis \u2192 cell shrinks \u2192 <strong>plasmolysis</strong> (membrane pulls away from wall).',
+          '<strong>Animal cell in distilled water</strong> \u2014 water enters by osmosis \u2192 cell bursts (<strong>lysis</strong>). No cell wall to resist the pressure.',
+          '<strong>Animal cell in concentrated solution</strong> \u2014 water leaves \u2192 cell shrinks and becomes <strong>crenated</strong>.',
+        ],
+      },
+    },
+    {
+      id: 'table-compare',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Summary comparison of the three types of passive membrane transport.',
+        headers: ['Feature', 'Simple diffusion', 'Facilitated diffusion', 'Osmosis'],
+        rows: [
+          ['Substance moved', 'Small non-polar molecules', 'Large/polar/charged molecules; ions', 'Water only'],
+          ['Direction', 'Down conc. gradient', 'Down conc. gradient', 'Down water potential gradient'],
+          ['Protein needed?', 'No', 'Yes (channel or carrier)', 'No (or aquaporins)'],
+          ['ATP required?', 'No', 'No', 'No'],
+          ['Rate limited by?', 'Concentration gradient + surface area', 'Number of proteins available', 'Water potential gradient'],
+        ],
+      },
+    },
+    {
+      id: 'callout-mistake',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Common Mistake',
+        text: 'Do not describe osmosis as movement "from dilute to concentrated". Always use the term water potential: "from a region of higher water potential to a region of lower water potential". Dilute solutions have higher water potential; concentrated solutions have lower (more negative) water potential.',
+      },
+    },
+    {
+      id: 'checklist-diff',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Amino acids: −NH₂, −COOH, −H, R group on central carbon', checked: false },
-          { text: 'Peptide bonds form via condensation between −COOH and −NH₂', checked: false },
-          { text: 'Primary structure: linear sequence of amino acids (DNA → ribosome)', checked: false },
-          { text: 'Secondary structure: α-helix and β-pleated sheet (H-bonds between backbone)', checked: false },
-          { text: 'Tertiary structure: 3D shape (disulphide, ionic, H-bonds, hydrophobic)', checked: false }
-        ]
-      }
+          { text: "Define diffusion and state three factors that affect its rate (Fick’s Law)", checked: false },
+          { text: 'Distinguish simple diffusion from facilitated diffusion', checked: false },
+          { text: 'Describe how channel proteins and carrier proteins work', checked: false },
+          { text: 'Explain why facilitated diffusion rate plateaus at high substrate concentration', checked: false },
+          { text: 'Define osmosis using the term water potential', checked: false },
+          { text: 'Predict what happens to plant and animal cells in different solutions', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-protein-structure',
+      id: 'summary-diff',
       type: 'summary',
-      data: {
-        text: 'Amino acids have −NH₂, −COOH, and variable R groups. Peptide bonds link them (condensation). Primary structure is the amino acid sequence (determined by DNA). Secondary structure (α-helix, β-sheet) is stabilised by hydrogen bonds between backbone atoms. Tertiary structure is the 3D fold stabilised by disulphide bonds, ionic bonds, hydrogen bonds, and hydrophobic interactions. Quaternary structure is multi-subunit arrangement. Structure determines function: mutations in primary sequence (like sickle cell) can cause disease.'
-      }
-    }
+      data: { text: 'Simple diffusion: small non-polar molecules (O\u2082, CO\u2082) pass directly through the lipid bilayer down a concentration gradient \u2014 passive, no proteins, rate \u221d (surface area \u00d7 conc. difference) \u00f7 thickness. Facilitated diffusion: large/polar/ions use channel proteins (ions; gated) or carrier proteins (glucose; shape-change); still passive and down gradient; rate saturates. Osmosis: net movement of water from higher to lower water potential (\u03c8) through selectively permeable membrane \u2014 passive. Plant cells: turgid in dilute, plasmolysed in concentrated. Animal cells: lyse in distilled water, crenate in concentrated solution.' },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-amino-acid-general',
-        prompt: 'Describe amino acid structure. How do R groups differ and where do hydrophobic amino acids locate?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-peptide-bond',
-        prompt: 'How does a peptide bond form? What is the N-terminus and C-terminus?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-secondary-structure',
-        prompt: 'Describe α-helix and β-pleated sheet. How are they stabilised?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-tertiary-structure',
-        prompt: 'List four types of interactions that stabilise tertiary structure.'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-quaternary-structure',
-        prompt: 'What is quaternary structure? Give an example of a multi-subunit protein.'
-      }
+      { id: 'cue-1', blockId: 'callout-ficks', prompt: 'State Fick\u2019s Law and name three factors that affect the rate of diffusion.' },
+      { id: 'cue-2', blockId: 'h-facilitated', prompt: 'What is the difference between channel proteins and carrier proteins in facilitated diffusion?' },
+      { id: 'cue-3', blockId: 'list-facilitated', prompt: 'Why does the rate of facilitated diffusion plateau at high substrate concentrations, unlike simple diffusion?' },
+      { id: 'cue-4', blockId: 'h-osmosis', prompt: "Define osmosis using the term 'water potential'." },
+      { id: 'cue-5', blockId: 'list-osmosis', prompt: 'What happens to a plant cell and an animal cell when placed in distilled water? Why do they differ?' },
     ],
-    summaryText: 'Amino acids: central C with −NH₂, −COOH, −H, R group. R groups vary: nonpolar (hydrophobic, interior), polar, charged. Peptide bonds: −COOH + −NH₂ → −CO−NH− + H₂O. Primary: amino acid sequence. Secondary: α-helix (H-bonds backbone, 3.6 aa/turn), β-sheet (H-bonds between strands). Tertiary: 3D shape via disulphide, ionic, H-bonds, hydrophobic. Quaternary: multi-subunit (haemoglobin 4 units). Mutation in primary → disease (sickle cell).',
-    ready: false
+    summaryText: "Fick’s Law: rate \u221d (SA \u00d7 conc. difference) \u00f7 thickness. Simple diffusion: small non-polar through bilayer, no proteins. Facilitated diffusion: channel proteins (ions) or carrier proteins (glucose) \u2014 passive, down gradient, rate saturates. Osmosis: water from higher \u03c8 to lower \u03c8 through selectively permeable membrane. Plant cells: turgid (dilute) or plasmolysed (concentrated). Animal cells: lyse (water) or crenate (concentrated).",
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Protein Structure: Four Levels',
-      detail: 'Amino acid structure, peptide bonds, and primary through quaternary protein organization.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['protein', 'amino-acids', 'peptide-bonds', 'primary-structure', 'secondary-structure', 'tertiary-structure', 'quaternary-structure']
-    }
-  ]
+    { id: 'ev-1', title: 'AQA diffusion and facilitated diffusion', detail: "Channel proteins and carrier proteins in facilitated diffusion; Fick’s Law factors described in Chapter 3 of AQA A Level Biology Student Book 1.", year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 3, pp53-56', tags: ['diffusion', 'osmosis', 'membrane-transport'] },
+  ],
 };

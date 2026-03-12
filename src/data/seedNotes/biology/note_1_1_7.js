@@ -1,205 +1,214 @@
 export const note_biology_1_1_7 = {
   blocks: [
     {
-      id: 'obj-cvd-risk',
+      id: 'obj-blood-tissue-fluid',
       type: 'objective',
       data: {
-        text: 'Understand modifiable and non-modifiable risk factors for cardiovascular disease, and the role of antioxidants in protecting against CVD.'
-      }
+        text: 'Describe the composition of blood (plasma, red blood cells, white blood cells, platelets). Explain how tissue fluid is formed from blood at the arterial end of capillaries and reabsorbed at the venous end. Describe the role of the lymphatic system in returning excess tissue fluid to the blood.',
+      },
     },
     {
-      id: 'h-modifiable-risk',
+      id: 'h-blood-composition',
       type: 'heading',
-      data: {
-        text: 'Modifiable Risk Factors for CVD',
-        level: 2
-      }
+      data: { text: 'Composition of Blood', level: 2 },
     },
     {
-      id: 'p-smoking',
-      type: 'paragraph',
-      data: {
-        text: 'Smoking is a major modifiable risk factor for CVD. Cigarette smoke contains over 7000 chemicals, many of which are harmful. Carbon monoxide (CO) binds to haemoglobin with an affinity ~200 times higher than oxygen, forming carboxyhaemoglobin (COHb). This reduces the oxygen-carrying capacity of blood, causing chronic hypoxia even in smokers at rest. Nicotine acts as a stimulant, increasing heart rate and blood pressure acutely and promoting vasoconstriction via sympathetic nervous system activation. Over time, nicotine contributes to hypertension. Smoking also increases oxidative stress, promoting LDL oxidation and atherosclerosis. Additionally, smoking damages the endothelium, impairs vasodilation (via reduced nitric oxide availability), and increases blood viscosity, raising CVD risk.'
-      }
-    },
-    {
-      id: 'p-diet',
-      type: 'paragraph',
-      data: {
-        text: 'Diet plays a crucial role in CVD risk. A diet high in saturated fat and cholesterol raises blood LDL cholesterol levels, promoting atherosclerosis. Trans fats (found in processed foods) are particularly harmful, raising LDL and lowering HDL. In contrast, a diet rich in unsaturated fats (olive oil, fish, nuts) raises HDL and can lower LDL and triglycerides. High salt intake increases blood volume and raises blood pressure, increasing CVD risk. Excessive sugar consumption contributes to obesity, diabetes, and elevated triglycerides. A diet rich in fruit and vegetables provides antioxidants (vitamins C, E, β-carotene) and fibre, both protective. The Mediterranean diet (high in unsaturated fats, vegetables, fish, and low in saturated fat) is associated with lower CVD mortality.'
-      }
-    },
-    {
-      id: 'p-hypertension',
-      type: 'paragraph',
-      data: {
-        text: 'Hypertension (elevated blood pressure) is a major risk factor for atherosclerosis, MI, and stroke. High blood pressure causes shear stress on the arterial endothelium, promoting damage and initiating atherosclerosis. It also increases the workload on the left ventricle, causing left ventricular hypertrophy (thickening). Chronic hypertension reduces the elasticity of arterial walls (arteriosclerosis), further raising blood pressure. Risk factors for hypertension include high salt intake, obesity, excessive alcohol, stress, and genetic predisposition. Management involves reducing salt intake, weight loss, regular exercise, stress reduction, and medications (ACE inhibitors, β-blockers, calcium channel blockers).'
-      }
-    },
-    {
-      id: 'p-obesity-diabetes',
-      type: 'paragraph',
-      data: {
-        text: 'Obesity (BMI > 30) is associated with multiple CVD risk factors: elevated blood pressure, higher cholesterol, insulin resistance, and systemic inflammation. Excess adipose tissue produces inflammatory cytokines (IL-6, TNF-α) that promote atherosclerosis. Type 2 diabetes is both a consequence of obesity and an independent CVD risk factor. High blood glucose damages the endothelium via glycation of proteins, promotes LDL oxidation, and increases thrombosis risk. Diabetic patients have accelerated atherosclerosis and are at high risk of MI and stroke. Tight glycaemic control reduces CVD complications.'
-      }
-    },
-    {
-      id: 'p-sedentary',
-      type: 'paragraph',
-      data: {
-        text: 'Physical inactivity (sedentary lifestyle) increases CVD risk independently of other factors. Regular exercise has multiple protective effects: it increases HDL and lowers triglycerides, reduces blood pressure, improves insulin sensitivity, reduces obesity, and promotes endothelial function. Exercise training also improves cardiac output and coronary collateralisation (development of additional blood vessels), providing a buffer against coronary stenosis. The recommended minimum is 150 minutes of moderate-intensity aerobic exercise per week. Even light activity (walking) is beneficial; sedentary time accumulation increases CVD risk regardless of exercise amount.'
-      }
-    },
-    {
-      id: 'table-modifiable',
+      id: 'table-blood-components',
       type: 'comparisonTable',
       data: {
-        headers: ['Risk Factor', 'Mechanism', 'CVD Risk Change', 'Intervention'],
+        caption: 'Components of blood and their functions',
+        headers: ['Component', '% of blood', 'Structure', 'Main function(s)'],
         rows: [
-          ['Smoking', 'CO reduces O₂ capacity; nicotine → hypertension; oxidative stress; endothelial damage', 'Greatly increased', 'Cessation; nicotine replacement'],
-          ['High sat. fat diet', 'Raises LDL; promotes atherosclerosis', 'Greatly increased', 'Reduce saturated fat; increase fibre'],
-          ['Hypertension', 'Endothelial damage; LV hypertrophy; arteriosclerosis', 'Greatly increased', 'Reduce salt; exercise; medication'],
-          ['Obesity', 'Hypertension; dyslipidaemia; inflammation; insulin resistance', 'Increased', 'Weight loss; exercise; diet'],
-          ['Diabetes', 'Endothelial damage; LDL oxidation; thrombosis', 'Greatly increased', 'Glycaemic control; metformin'],
-          ['Sedentary', 'No protective effects of exercise; dyslipidaemia; hypertension', 'Increased', 'Regular aerobic exercise']
+          ['Plasma', '~55%', 'Straw-coloured liquid; mostly water (~90%) with dissolved substances', 'Transport: glucose, amino acids, fatty acids, hormones, CO₂, urea, proteins, ions; temperature regulation; osmotic balance'],
+          ['Red blood cells (erythrocytes)', '~44%', 'Biconcave disc; no nucleus; contains haemoglobin', 'Transport O₂ (via haemoglobin); also carry CO₂ as HCO₃⁻'],
+          ['White blood cells (leucocytes)', '<1%', 'Nucleated cells; include neutrophils, lymphocytes, monocytes', 'Immune defence: phagocytosis (neutrophils), antibody production (B lymphocytes), cell-mediated immunity (T lymphocytes)'],
+          ['Platelets (thrombocytes)', '<1%', 'Small cell fragments; no nucleus; derived from megakaryocytes', 'Blood clotting (haemostasis); form platelet plug at wound sites'],
         ],
-        caption: 'Modifiable CVD risk factors and interventions'
-      }
+      },
     },
     {
-      id: 'h-non-modifiable',
-      type: 'heading',
-      data: {
-        text: 'Non-Modifiable Risk Factors',
-        level: 2
-      }
-    },
-    {
-      id: 'p-non-modifiable',
-      type: 'paragraph',
-      data: {
-        text: 'Non-modifiable risk factors include age, sex, and genetic predisposition. CVD risk increases with age in both men and women, but men develop CVD 10–15 years earlier on average. Oestrogen has protective effects in premenopausal women; after menopause, CVD risk rises. Genetic factors determine baseline lipid levels, blood pressure, and atherosclerosis susceptibility. Familial hypercholesterolaemia (FH), caused by mutations in the LDL receptor gene, results in extremely high LDL levels and premature atherosclerosis (MI in childhood if homozygous). Family history of premature CVD (male relative with MI before age 55, female before age 65) is a strong risk factor. These factors cannot be changed, but awareness allows preventive measures (medication, lifestyle optimisation) in high-risk individuals.'
-      }
-    },
-    {
-      id: 'h-antioxidants',
-      type: 'heading',
-      data: {
-        text: 'Antioxidants and CVD Protection',
-        level: 2
-      }
-    },
-    {
-      id: 'p-antioxidants-def',
-      type: 'paragraph',
-      data: {
-        text: 'Antioxidants are molecules that neutralise free radicals—highly reactive species with unpaired electrons (e.g. O₂⁻, OH•, H₂O₂). Free radicals are produced during normal metabolism, especially in mitochondria during aerobic respiration, and by inflammation. They damage cellular components: lipids (lipid peroxidation), proteins (oxidative modification), and DNA (mutations). In atherosclerosis, free radicals promote LDL oxidation, the critical first step in plaque formation. Antioxidants prevent or slow free radical reactions by donating an electron, becoming slightly more stable themselves but less reactive. Key dietary antioxidants include vitamin C (ascorbic acid), vitamin E (tocopherol), β-carotene (provitamin A), and flavonoids (in berries, tea, red wine).'
-      }
-    },
-    {
-      id: 'p-antioxidants-mechanisms',
-      type: 'paragraph',
-      data: {
-        text: 'Vitamin C (present in citrus, berries, peppers) is a water-soluble antioxidant that operates in aqueous environments (plasma, cytoplasm). It directly scavenges free radicals and regenerates vitamin E. Vitamin E (in nuts, seeds, vegetable oils) is a fat-soluble antioxidant that operates in lipid environments (cell membranes, lipoproteins). It prevents lipid peroxidation and is particularly important for protecting LDL from oxidation. β-carotene (in orange/red vegetables) is a precursor to vitamin A and acts as an antioxidant, particularly against singlet oxygen. Flavonoids (in berries, tea, dark chocolate) have potent antioxidant and anti-inflammatory effects, reduce platelet aggregation, and improve endothelial function. Enzyme-based antioxidant defences include superoxide dismutase (SOD), catalase, and glutathione peroxidase, which catalyse breakdown of free radicals.'
-      }
-    },
-    {
-      id: 'p-antioxidants-cvd',
-      type: 'paragraph',
-      data: {
-        text: 'The antioxidant hypothesis proposed that dietary antioxidants reduce CVD risk by preventing LDL oxidation and atherosclerosis. Observational studies showed inverse correlations between antioxidant intake and CVD. However, large randomised controlled trials (e.g. HOPE for vitamin E, SELECT for vitamin E and selenium) found that supplementation did not reduce CVD events in primary or secondary prevention, contradicting the hypothesis. The reasons are complex: antioxidant supplements may lack the co-nutrients and bioactivity of whole foods, or excessive antioxidants might inhibit beneficial reactive oxygen species signalling. Current evidence supports consuming antioxidants through diet (fruits, vegetables, nuts, whole grains, olive oil) rather than supplements. The Mediterranean diet\'s CVD benefit likely involves antioxidants plus anti-inflammatory, lipid-lowering, and antiplatelet effects of whole foods.'
-      }
-    },
-    {
-      id: 'callout-key-antioxidants',
+      id: 'callout-key-rbc',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Antioxidants Neutralise Free Radicals',
-        text: 'Free radicals: unpaired electrons, damage lipids/proteins/DNA, promote LDL oxidation and atherosclerosis. Antioxidants donate electrons to free radicals, neutralising them. Dietary sources (vitamin C, E, β-carotene, flavonoids) are protective; supplements unclear benefit.'
-      }
+        title: 'Red Blood Cell Adaptations',
+        text: 'Biconcave disc shape → large surface area relative to volume → efficient O₂ diffusion. No nucleus → more space for haemoglobin. Flexible → can squeeze through narrow capillaries. Haemoglobin (4 globin chains + 4 haem groups) reversibly binds O₂: Hb + 4O₂ ⇌ HbO₂₄ (oxyhaemoglobin). High O₂ in lungs → binding; low O₂ in tissues → release.',
+      },
     },
     {
-      id: 'callout-tip-salt',
+      id: 'h-plasma',
+      type: 'heading',
+      data: { text: 'Blood Plasma', level: 2 },
+    },
+    {
+      id: 'list-plasma-contents',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Water (~90%) — solvent; transports substances; involved in temperature regulation',
+          'Plasma proteins: albumin (osmotic regulation, transport), globulins (antibodies, transport), fibrinogen (blood clotting)',
+          'Nutrients: glucose, amino acids, fatty acids, glycerol, vitamins',
+          'Hormones: insulin, glucagon, thyroxine, oestrogen, etc.',
+          'Waste products: urea (from amino acid catabolism), CO₂',
+          'Ions: Na⁺, K⁺, Ca²⁺, Cl⁻, HCO₃⁻ — osmotic balance, pH buffering, nerve/muscle function',
+        ],
+      },
+    },
+    {
+      id: 'h-tissue-fluid',
+      type: 'heading',
+      data: { text: 'Formation and Reabsorption of Tissue Fluid', level: 2 },
+    },
+    {
+      id: 'p-tissue-fluid-intro',
+      type: 'paragraph',
+      data: {
+        text: 'Tissue fluid (interstitial fluid) is the fluid that bathes the cells of the body\'s tissues. It allows exchange of materials between blood and cells without direct contact. It forms from blood plasma leaking out of capillaries and is distinct from blood because it lacks large plasma proteins (which cannot pass through capillary walls) and red blood cells.',
+      },
+    },
+    {
+      id: 'p-tissue-fluid-formation',
+      type: 'paragraph',
+      data: {
+        text: 'At the arterial end of a capillary, blood pressure (hydrostatic pressure) is high (~35 mmHg). This outward pressure overcomes the inward osmotic force from plasma proteins (oncotic pressure ~25 mmHg). Therefore net outward pressure ≈ +10 mmHg, forcing plasma filtrate out of the capillary into the surrounding tissue spaces, forming tissue fluid. This filtrate contains water, glucose, amino acids, O₂, ions — but NOT plasma proteins (too large to cross the capillary wall) and NOT red blood cells.',
+      },
+    },
+    {
+      id: 'p-tissue-fluid-reabsorption',
+      type: 'paragraph',
+      data: {
+        text: 'At the venous end of the capillary, blood pressure has fallen (~15 mmHg) as fluid has left. However, the oncotic pressure from plasma proteins remains unchanged (~25 mmHg). Net inward pressure ≈ −10 mmHg, so fluid is reabsorbed back into the capillary, carrying CO₂, urea, and other waste products from the tissue cells. About 90% of tissue fluid is reabsorbed this way. The remaining ~10% enters the lymphatic capillaries.',
+      },
+    },
+    {
+      id: 'svg-tissue-fluid',
+      type: 'svg',
+      data: {
+        caption: 'Formation and reabsorption of tissue fluid at a capillary — pressure gradients',
+        svg: `<svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif" font-size="10">
+  <rect width="440" height="220" fill="#f8f9ff" rx="8"/>
+  <!-- Capillary tube -->
+  <rect x="50" y="85" width="340" height="50" rx="6" fill="#ffd0d0" stroke="#c04040" stroke-width="2"/>
+  <text x="220" y="115" text-anchor="middle" fill="#8b0000" font-weight="bold">Blood capillary</text>
+  <!-- Arterial end label -->
+  <text x="80" y="75" text-anchor="middle" fill="#2040a0" font-size="9" font-weight="bold">Arterial end</text>
+  <text x="80" y="86" text-anchor="middle" fill="#2040a0" font-size="9">High pressure</text>
+  <text x="80" y="96" text-anchor="middle" fill="#2040a0" font-size="9">~35 mmHg</text>
+  <!-- Venous end label -->
+  <text x="360" y="75" text-anchor="middle" fill="#2040a0" font-size="9" font-weight="bold">Venous end</text>
+  <text x="360" y="86" text-anchor="middle" fill="#2040a0" font-size="9">Low pressure</text>
+  <text x="360" y="96" text-anchor="middle" fill="#2040a0" font-size="9">~15 mmHg</text>
+  <!-- Arrows: filtration (out) at arterial end -->
+  <line x1="100" y1="135" x2="100" y2="165" stroke="#2a9040" stroke-width="2" marker-end="url(#arr-down)"/>
+  <line x1="120" y1="135" x2="120" y2="165" stroke="#2a9040" stroke-width="2" marker-end="url(#arr-down)"/>
+  <text x="110" y="180" text-anchor="middle" fill="#2a9040" font-size="9">Filtration</text>
+  <text x="110" y="190" text-anchor="middle" fill="#2a9040" font-size="9">(fluid out)</text>
+  <!-- Arrows: reabsorption (in) at venous end -->
+  <line x1="320" y1="165" x2="320" y2="135" stroke="#c04020" stroke-width="2" marker-end="url(#arr-up)"/>
+  <line x1="340" y1="165" x2="340" y2="135" stroke="#c04020" stroke-width="2" marker-end="url(#arr-up)"/>
+  <text x="330" y="180" text-anchor="middle" fill="#c04020" font-size="9">Reabsorption</text>
+  <text x="330" y="190" text-anchor="middle" fill="#c04020" font-size="9">(fluid in)</text>
+  <!-- Tissue space -->
+  <rect x="50" y="150" width="340" height="55" rx="6" fill="#e8f8e8" stroke="#5a9a6a" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="220" y="185" text-anchor="middle" fill="#2c5a3a" font-size="10">Tissue fluid (interstitial space)</text>
+  <text x="220" y="198" text-anchor="middle" fill="#2c5a3a" font-size="9">Contains: water, glucose, O₂, amino acids, ions — NO plasma proteins, NO RBCs</text>
+  <!-- Lymph arrow (10% not reabsorbed) -->
+  <line x1="200" y1="200" x2="200" y2="215" stroke="#6a4090" stroke-width="1.5" marker-end="url(#arr-purple)"/>
+  <text x="230" y="215" text-anchor="start" fill="#6a4090" font-size="9">→ 10% drains to lymphatic capillaries</text>
+  <defs>
+    <marker id="arr-down" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2a9040"/>
+    </marker>
+    <marker id="arr-up" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c04020"/>
+    </marker>
+    <marker id="arr-purple" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#6a4090"/>
+    </marker>
+  </defs>
+</svg>`,
+      },
+    },
+    {
+      id: 'callout-key-pressure',
       type: 'callout',
       data: {
-        style: 'tip',
-        title: 'Salt and Hypertension',
-        text: 'High salt intake → increased blood volume → increased blood pressure. Reducing salt from 10g/day (typical Western diet) to <6g/day can lower BP by ~5 mmHg. This modest reduction, applied to populations, prevents many strokes and MIs. Most salt comes from processed foods, not table salt.'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Carbon monoxide (CO) from cigarette smoke increases CVD risk by binding to haemoglobin with an affinity ~200 times higher than oxygen, forming carboxyhaemoglobin (COHb). This reduces the oxygen-carrying capacity of blood, causing chronic hypoxia (low blood oxygen) even in smokers at rest, forcing the heart to work harder to deliver oxygen to tissues.',
-        apply: 'A study shows that smokers have a 2.5× higher risk of CVD than non-smokers. If the baseline risk for non-smokers is 4% over 10 years, calculate the absolute risk for smokers and the number needed to harm (NNH).',
-        analyze: 'Compare the mechanisms by which smoking, high salt intake, and obesity each independently increase blood pressure and CVD risk.',
-        evaluate: 'Evaluate whether lifestyle interventions or pharmacological treatments (e.g. statins, antihypertensives) are more effective at reducing CVD risk at the population level. Consider compliance, cost, side effects, and efficacy.'
+        style: 'key',
+        title: 'Two Opposing Pressures in Capillary Exchange',
+        text: 'Hydrostatic pressure (blood pressure) — pushes fluid OUT of the capillary. Oncotic pressure (osmotic pressure from plasma proteins) — pulls fluid IN to the capillary. At arterial end: hydrostatic (35) > oncotic (25) → net outward → filtration. At venous end: hydrostatic (15) < oncotic (25) → net inward → reabsorption.',
       },
-      terms: []
     },
     {
-      id: 'checklist-cvd-risk',
+      id: 'h-lymphatic',
+      type: 'heading',
+      data: { text: 'The Lymphatic System', level: 2 },
+    },
+    {
+      id: 'p-lymph',
+      type: 'paragraph',
+      data: {
+        text: 'The ~10% of tissue fluid not reabsorbed by capillaries drains into blind-ended lymphatic capillaries that permeate the tissues. This fluid is then called lymph. Lymph is similar in composition to tissue fluid — low protein, no RBCs. The lymphatic capillaries join into larger lymphatic vessels, which eventually drain into the subclavian veins (returning lymph to the bloodstream). Lymph nodes along the lymphatic vessels contain immune cells and filter pathogens from the lymph.',
+      },
+    },
+    {
+      id: 'list-lymphatic-functions',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Returns excess tissue fluid to the blood (prevents oedema — tissue swelling)',
+          'Returns plasma proteins that have leaked out of capillaries back to the bloodstream',
+          'Absorbs dietary fat (as chylomicrons) from the small intestine lacteals',
+          'Immune surveillance — lymph nodes filter lymph and trigger immune responses',
+        ],
+      },
+    },
+    {
+      id: 'callout-warning-oedema',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Oedema — When Tissue Fluid Accumulates',
+        text: 'If lymphatic drainage is blocked (e.g. by parasites, surgery) or if capillary hydrostatic pressure rises (e.g. heart failure), or if plasma protein concentration falls (e.g. liver disease, malnutrition), tissue fluid accumulates → oedema (swelling). Oedema in the lungs (pulmonary oedema) is particularly dangerous as it impairs gas exchange.',
+      },
+    },
+    {
+      id: 'checklist-blood-tissue',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Smoking: CO reduces O₂ capacity; nicotine increases BP; oxidative stress damages endothelium', checked: false },
-          { text: 'High saturated fat diet raises LDL; promotes atherosclerosis', checked: false },
-          { text: 'Hypertension damages endothelium and causes LV hypertrophy', checked: false },
-          { text: 'Obesity and diabetes increase inflammation, dyslipidaemia, and thrombosis risk', checked: false },
-          { text: 'Antioxidants prevent LDL oxidation; dietary sources more beneficial than supplements', checked: false }
-        ]
-      }
+          { text: 'List the four main components of blood and the function of each', checked: false },
+          { text: 'State what plasma contains (proteins, nutrients, hormones, waste)', checked: false },
+          { text: 'Explain why tissue fluid does NOT contain large plasma proteins or red blood cells', checked: false },
+          { text: 'Explain tissue fluid FORMATION: which pressure dominates at the arterial end and why?', checked: false },
+          { text: 'Explain tissue fluid REABSORPTION: which pressure dominates at the venous end and why?', checked: false },
+          { text: 'State what happens to the ~10% of tissue fluid that is not reabsorbed', checked: false },
+          { text: 'Describe the functions of the lymphatic system beyond returning tissue fluid', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-cvd-risk',
+      id: 'summary-blood-tissue-fluid',
       type: 'summary',
       data: {
-        text: 'Modifiable CVD risk factors: smoking (CO, nicotine, oxidative stress), high saturated fat diet (raises LDL), hypertension (endothelial damage), obesity (inflammation), diabetes (endothelial damage), and sedentary lifestyle. Non-modifiable: age, sex, genetics. Antioxidants (vitamin C, E, β-carotene, flavonoids) prevent LDL oxidation but supplementation lacks evidence; dietary sources recommended. Mediterranean diet combines antioxidants, anti-inflammatory effects, and lipid benefits.'
-      }
-    }
+        text: 'Blood = plasma (55%) + RBCs (44%) + WBCs + platelets (<1%). Plasma contains water, proteins (albumin, globulins, fibrinogen), glucose, amino acids, hormones, CO₂, urea. Tissue fluid forms at arterial end of capillary: hydrostatic pressure (35 mmHg) > oncotic pressure (25 mmHg) → net outward → filtration. Reabsorbed at venous end: hydrostatic (15 mmHg) < oncotic (25 mmHg) → net inward. ~10% drains into lymphatic capillaries as lymph; returned to blood via subclavian veins. If lymphatic flow blocked → oedema.',
+      },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-smoking',
-        prompt: 'Explain three ways smoking increases CVD risk. What is the role of carbon monoxide?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-diet',
-        prompt: 'How do saturated fats, trans fats, and unsaturated fats affect CVD risk?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-hypertension',
-        prompt: 'Why is hypertension a major CVD risk factor? What causes it?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-antioxidants-def',
-        prompt: 'What are free radicals? How do antioxidants neutralise them?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-antioxidants-cvd',
-        prompt: 'What does the evidence say about antioxidant supplementation for CVD prevention?'
-      }
+      { id: 'cue-1', blockId: 'table-blood-components', prompt: 'Name the four components of blood and give the main function of each.' },
+      { id: 'cue-2', blockId: 'p-tissue-fluid-formation', prompt: 'Explain why tissue fluid is formed at the arterial end of a capillary. Which two pressures are involved?' },
+      { id: 'cue-3', blockId: 'p-tissue-fluid-reabsorption', prompt: 'Explain why tissue fluid is reabsorbed at the venous end of a capillary.' },
+      { id: 'cue-4', blockId: 'callout-key-pressure', prompt: 'What is the difference between hydrostatic pressure and oncotic pressure? How do they change along the length of a capillary?' },
+      { id: 'cue-5', blockId: 'h-lymphatic', prompt: 'What is lymph? What role does the lymphatic system play? What happens if lymphatic drainage is blocked?' },
     ],
-    summaryText: 'Modifiable risk factors: smoking (CO↓O₂, nicotine↑BP, oxidative stress); high sat. fat (↑LDL); hypertension (endothelial damage); obesity (inflammation); diabetes (glycation); sedentary (no exercise benefits). Non-modifiable: age, sex, genetics. Antioxidants (vit C/E, β-carotene, flavonoids) prevent LDL oxidation; dietary sources superior to supplements. Free radicals: unpaired electrons, damage biomolecules. Mediterranean diet: antioxidants + anti-inflammatory + lipid benefits.',
-    ready: false
+    summaryText: 'Plasma: 55% of blood; contains proteins, glucose, CO₂, hormones. RBCs: 44%, biconcave, haemoglobin. Tissue fluid: formed at arterial end (blood pressure > osmotic pressure), reabsorbed at venous end, 10% → lymph. Oncotic pressure from plasma proteins opposes filtration but assists reabsorption. Lymph returns to bloodstream via subclavian veins.',
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'CVD Risk Factors and Antioxidant Defence',
-      detail: 'Overview of modifiable and non-modifiable risk factors, and evidence for antioxidant protection.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['cvd', 'risk-factors', 'smoking', 'hypertension', 'diet', 'antioxidants', 'free-radicals']
-    }
-  ]
+    { id: 'ev-1', title: 'Starling principle of microvascular fluid exchange', detail: 'Ernest Starling (1896) first described the balance between hydrostatic and osmotic (oncotic) pressures determining capillary fluid exchange. This principle (Starling forces) is the foundation of understanding oedema formation and treatment.', year: '1896', source: 'Starling EH, J Physiol', tags: ['tissue fluid', 'capillaries'] },
+  ],
 };

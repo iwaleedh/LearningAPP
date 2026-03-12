@@ -39,6 +39,14 @@ export const note_biology_1_1_0 = {
       }
     },
     {
+      id: 'svg-water-dipole',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="13"><defs><style>.lbl{fill:#1f2937;font-size:12px;}.delta{fill:#6366f1;font-size:13px;font-weight:bold;}.muted{fill:#6b7280;font-size:10px;}</style></defs><text x="160" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e1b4b">Water Molecule — Dipole Structure</text><!-- Oxygen atom --><circle cx="160" cy="110" r="22" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text x="160" y="115" text-anchor="middle" class="lbl" font-weight="bold">O</text><!-- Hydrogen atoms --><circle cx="85" cy="72" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/><text x="85" y="77" text-anchor="middle" class="lbl">H</text><circle cx="235" cy="72" r="14" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/><text x="235" y="77" text-anchor="middle" class="lbl">H</text><!-- Bonds --><line x1="97" y1="81" x2="140" y2="100" stroke="#374151" stroke-width="2"/><line x1="223" y1="81" x2="180" y2="100" stroke="#374151" stroke-width="2"/><!-- Bond angle arc --><path d="M 115 102 A 35 35 0 0 1 205 102" fill="none" stroke="#6b7280" stroke-width="1" stroke-dasharray="3 2"/><text x="160" y="148" text-anchor="middle" class="muted">104.5°</text><!-- Delta charges --><text x="70" y="60" text-anchor="middle" class="delta">δ+</text><text x="250" y="60" text-anchor="middle" class="delta">δ+</text><text x="160" y="145" text-anchor="middle" fill="#dc2626" font-size="13" font-weight="bold">δ−</text><!-- Lone pairs (dots) --><circle cx="145" cy="90" r="2.5" fill="#dc2626"/><circle cx="152" cy="87" r="2.5" fill="#dc2626"/><circle cx="168" cy="87" r="2.5" fill="#dc2626"/><circle cx="175" cy="90" r="2.5" fill="#dc2626"/><text x="160" y="185" text-anchor="middle" class="muted" font-style="italic">Bond angle: 104.5° — lone pairs push bonds closer together</text></svg>',
+        caption: 'Water molecule: bent shape with 104.5° H–O–H angle; oxygen carries δ− charge, hydrogen atoms carry δ+ charge'
+      }
+    },
+    {
       id: 'h-thermal',
       type: 'heading',
       data: {
@@ -87,7 +95,7 @@ export const note_biology_1_1_0 = {
       id: 'p-cohesion',
       type: 'paragraph',
       data: {
-        text: 'Water exhibits cohesion due to hydrogen bonding between molecules, causing water molecules to stick together. This creates surface tension at water-air interfaces and allows water to form droplets. Cohesion enables capillary action in plant xylem vessels, where water is pulled up against gravity to transport minerals. Hydrogen bonding also makes water a reactant in many biochemical reactions, including photosynthesis (light-dependent reactions), aerobic respiration, and hydrolysis reactions.'
+        text: 'Cohesion refers to hydrogen bonds between water molecules, causing water to stick to itself. This creates surface tension — the tendency of the water surface to resist rupture — allowing small insects to walk on pond surfaces. Adhesion refers to hydrogen bonds between water molecules and other polar surfaces (e.g. cellulose walls of xylem vessels). Together, cohesion and adhesion enable capillary rise: water is pulled upward through narrow xylem vessels against gravity, driven by the evaporation (transpiration) from leaves. This cohesion-tension mechanism transports water and dissolved minerals from roots to leaves. Water\'s hydrogen bonding also makes it a reactant in key metabolic reactions: condensation (joining monomers, releasing H₂O), hydrolysis (breaking polymers, using H₂O), and photosynthesis (splitting H₂O in the light-dependent reactions to release O₂).'
       }
     },
     {

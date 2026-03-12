@@ -23,6 +23,7 @@ import { note_biology_1_1_8 } from './biology/note_1_1_8.js';
 import { note_biology_1_1_9 } from './biology/note_1_1_9.js';
 import { note_biology_1_1_10 } from './biology/note_1_1_10.js';
 import { note_biology_1_1_11 } from './biology/note_1_1_11.js';
+import { note_biology_1_1_12 } from './biology/note_1_1_12.js';
 
 // WBI12 — Topic 3: Cell Structure, Reproduction & Development
 import { note_biology_2_3_0 } from './biology/note_2_3_0.js';
@@ -162,6 +163,10 @@ import { note_biology_1_2_11 } from './biology/note_1_2_11.js';
 import { note_biology_1_2_12 } from './biology/note_1_2_12.js';
 import { note_biology_1_2_13 } from './biology/note_1_2_13.js';
 import { note_biology_1_2_14 } from './biology/note_1_2_14.js';
+import { note_biology_1_2_15 } from './biology/note_1_2_15.js';
+import { note_biology_1_2_16 } from './biology/note_1_2_16.js';
+import { note_biology_1_2_17 } from './biology/note_1_2_17.js';
+import { note_biology_1_2_18 } from './biology/note_1_2_18.js';
 
 // WCH13 — Topic 3A: Practical Skills I
 import { note_chemistry_3_3A_0 } from './chemistry/note_3_3A_0.js';
@@ -623,6 +628,7 @@ export const seedNotes = {
     'biology:1:1:9': note_biology_1_1_9,
     'biology:1:1:10': note_biology_1_1_10,
     'biology:1:1:11': note_biology_1_1_11,
+    'biology:1:1:12': note_biology_1_1_12,
 
     // WBI12 — Topic 3: Cell Structure, Reproduction & Development
     'biology:2:3:0': note_biology_2_3_0,
@@ -762,6 +768,10 @@ export const seedNotes = {
     'biology:1:2:12': note_biology_1_2_12,
     'biology:1:2:13': note_biology_1_2_13,
     'biology:1:2:14': note_biology_1_2_14,
+    'biology:1:2:15': note_biology_1_2_15,
+    'biology:1:2:16': note_biology_1_2_16,
+    'biology:1:2:17': note_biology_1_2_17,
+    'biology:1:2:18': note_biology_1_2_18,
 
     // WCH11 — Topic 5: Alkenes
     'chemistry:1:5:0': note_chemistry_1_5_0,

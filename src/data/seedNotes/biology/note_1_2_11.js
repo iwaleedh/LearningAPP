@@ -1,190 +1,181 @@
 export const note_biology_1_2_11 = {
   blocks: [
     {
-      id: 'obj-cf',
+      id: 'obj-dna',
       type: 'objective',
-      data: {
-        text: 'Understand cystic fibrosis genetics, CFTR protein function, phenotype, and treatment options.'
-      }
+      data: { text: 'Describe the structure of DNA and RNA, including the nucleotide monomers, base pairing, and the differences between DNA, mRNA, and tRNA.' },
     },
     {
-      id: 'h-cf-genetics',
+      id: 'h-nucleotide',
       type: 'heading',
-      data: {
-        text: 'Cystic Fibrosis: Autosomal Recessive Inheritance',
-        level: 2
-      }
+      data: { text: 'DNA Nucleotide Structure', level: 2 },
     },
     {
-      id: 'p-cf-gene',
+      id: 'p-nucleotide',
       type: 'paragraph',
-      data: {
-        text: 'Cystic fibrosis (CF) is caused by mutations in the CFTR gene (cystic fibrosis transmembrane conductance regulator) located on chromosome 7. Over 1000 mutations have been identified. The most common is ΔF508 (deletion of phenylalanine at position 508), accounting for ~70% of CF alleles globally. CF is autosomal recessive: an individual must inherit two mutant alleles (one from each parent) to have CF disease. Heterozygous carriers (one mutant allele) are phenotypically normal. CF has a carrier frequency of ~1 in 25 in Caucasians; ~1 in 2500 are affected. Consanguineous relationships (related parents) increase CF risk because both parents are more likely to carry the same recessive allele.'
-      }
+      data: { text: 'DNA (deoxyribonucleic acid) is a polynucleotide \u2014 a polymer made of nucleotide monomers joined by phosphodiester bonds.' },
     },
     {
-      id: 'h-cftr-protein',
+      id: 'list-nucleotide',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Each DNA <strong>nucleotide</strong> consists of three components: a <strong>deoxyribose</strong> (5-carbon sugar) + a <strong>phosphate</strong> group + one of four nitrogenous <strong>bases</strong>.',
+          'The four bases in DNA: <strong>adenine (A)</strong>, <strong>thymine (T)</strong>, <strong>cytosine (C)</strong>, <strong>guanine (G)</strong>.',
+          'Purines (double ring): adenine and guanine.',
+          'Pyrimidines (single ring): cytosine and thymine (in DNA) or uracil (in RNA; replaces thymine).',
+          'Adjacent nucleotides in the same strand are joined by <strong>phosphodiester bonds</strong> (condensation reaction between the phosphate of one nucleotide and the 3\'\u2013OH of the next sugar).',
+        ],
+      },
+    },
+    {
+      id: 'h-double-helix',
       type: 'heading',
-      data: {
-        text: 'CFTR Protein and Chloride Channel Function',
-        level: 2
-      }
+      data: { text: 'Double Helix Structure', level: 2 },
     },
     {
-      id: 'p-cftr-function',
-      type: 'paragraph',
+      id: 'list-double-helix',
+      type: 'list',
       data: {
-        text: 'The CFTR protein is a chloride (Cl⁻) ion channel in epithelial cell membranes. It is an ABC transporter protein that actively transports Cl⁻ from the cytoplasm into the lumen of ducts in various organs: lungs (airways), pancreas, small intestine, sweat glands, and reproductive tract. In normal individuals, CFTR-mediated Cl⁻ secretion is followed passively by water and sodium via osmosis, producing a thin, watery secretion. The ΔF508 mutation causes CFTR protein misfolding; the mutant protein is recognised by cellular quality control (unfolded protein response) and is degraded before reaching the cell membrane. Some mutant CFTR protein may reach the membrane but is non-functional (defective chloride transport). As a result, Cl⁻ secretion is severely reduced or absent.'
-      }
+        style: 'bullet',
+        items: [
+          'DNA consists of <strong>two polynucleotide strands</strong> wound around each other in a <strong>double helix</strong>.',
+          'The two strands are held together by <strong>hydrogen bonds</strong> between complementary bases: A pairs with T (2 hydrogen bonds); C pairs with G (3 hydrogen bonds).',
+          'Base pairing is <strong>complementary and specific</strong> \u2014 only A-T and C-G pairs form.',
+          'The two strands are <strong>antiparallel</strong>: one runs 5′\u21923′ (left to right) and the other runs 3′\u21925′ (right to left).',
+          '<strong>Chargaff’s rule</strong>: in any DNA molecule, %A = %T and %C = %G (because A always pairs with T, and C with G).',
+          'The double helix model was proposed by <strong>Watson and Crick (1953)</strong>, using X-ray crystallography data from Franklin and Wilkins.',
+        ],
+      },
     },
     {
-      id: 'h-cf-phenotype',
+      id: 'svg-dna',
+      type: 'svg',
+      data: {
+        caption: 'Simplified DNA double helix showing antiparallel strands, complementary base pairing (A-T, C-G), and hydrogen bonds.',
+        svg: '<svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12"><rect width="500" height="260" fill="#f8f9ff" rx="8"/><text x="40" y="20" fill="#888" font-size="10">5′</text><text x="40" y="248" fill="#888" font-size="10">3′</text><text x="440" y="20" fill="#888" font-size="10">3′</text><text x="440" y="248" fill="#888" font-size="10">5′</text><g stroke="#3498db" stroke-width="3" fill="none"><path d="M60,30 Q80,50 60,70 Q40,90 60,110 Q80,130 60,150 Q40,170 60,190 Q80,210 60,230"/><path d="M440,30 Q420,50 440,70 Q460,90 440,110 Q420,130 440,150 Q460,170 440,190 Q420,210 440,230"/></g><g font-size="11" text-anchor="middle"><rect x="80" y="38" width="30" height="18" rx="4" fill="#e74c3c"/><text x="95" y="51" fill="white">A</text><rect x="380" y="38" width="30" height="18" rx="4" fill="#f39c12"/><text x="395" y="51" fill="white">T</text><line x1="110" y1="47" x2="380" y2="47" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><text x="245" y="44" fill="#7f8c8d" font-size="9">2 H-bonds</text><rect x="80" y="70" width="30" height="18" rx="4" fill="#27ae60"/><text x="95" y="83" fill="white">C</text><rect x="380" y="70" width="30" height="18" rx="4" fill="#8e44ad"/><text x="395" y="83" fill="white">G</text><line x1="110" y1="79" x2="380" y2="79" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><text x="245" y="76" fill="#7f8c8d" font-size="9">3 H-bonds</text><rect x="76" y="100" width="30" height="18" rx="4" fill="#f39c12"/><text x="91" y="113" fill="white">T</text><rect x="384" y="100" width="30" height="18" rx="4" fill="#e74c3c"/><text x="399" y="113" fill="white">A</text><line x1="106" y1="109" x2="384" y2="109" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><rect x="78" y="130" width="30" height="18" rx="4" fill="#8e44ad"/><text x="93" y="143" fill="white">G</text><rect x="382" y="130" width="30" height="18" rx="4" fill="#27ae60"/><text x="397" y="143" fill="white">C</text><line x1="108" y1="139" x2="382" y2="139" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><rect x="78" y="160" width="30" height="18" rx="4" fill="#e74c3c"/><text x="93" y="173" fill="white">A</text><rect x="382" y="160" width="30" height="18" rx="4" fill="#f39c12"/><text x="397" y="173" fill="white">T</text><line x1="108" y1="169" x2="382" y2="169" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><rect x="78" y="190" width="30" height="18" rx="4" fill="#27ae60"/><text x="93" y="203" fill="white">C</text><rect x="382" y="190" width="30" height="18" rx="4" fill="#8e44ad"/><text x="397" y="203" fill="white">G</text><line x1="108" y1="199" x2="382" y2="199" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/></g><text x="250" y="245" fill="#666" font-size="10" text-anchor="middle">Complementary base pairing: A-T (2 H-bonds) and C-G (3 H-bonds)</text></svg>',
+      },
+    },
+    {
+      id: 'h-rna',
       type: 'heading',
-      data: {
-        text: 'CF Phenotype: Multiple Organ Systems',
-        level: 2
-      }
+      data: { text: 'RNA Structure', level: 2 },
     },
     {
-      id: 'p-lungs-cf',
+      id: 'p-rna',
       type: 'paragraph',
-      data: {
-        text: 'The lungs are severely affected in CF. Without CFTR-mediated Cl⁻ and water secretion, airway secretions become thick, sticky, and dehydrated. Thick mucus accumulates in bronchi and bronchioles, obstructing airflow. The ciliated epithelium cannot clear this mucus effectively; bacteria colonise the airway. Chronic Pseudomonas aeruginosa and Staphylococcus aureus infections cause progressive inflammation and tissue damage (bronchiectasis). Inflammation destroys the bronchial walls, widening airways (bronchiectasis), trapping infection. Recurrent infections and inflammation lead to progressive lung damage, respiratory failure, and early death (median survival historically ~30 years; now ~50+ years with modern treatment). CF is the leading genetic cause of death in children in developed countries.'
-      }
+      data: { text: 'RNA (ribonucleic acid) is also a polynucleotide, but differs from DNA in several ways.' },
     },
     {
-      id: 'p-pancreas-cf',
-      type: 'paragraph',
+      id: 'list-rna-diff',
+      type: 'list',
       data: {
-        text: 'The pancreas is also severely affected. The pancreas secretes digestive enzymes (amylase, lipase, proteases) via ducts into the small intestine. In CF, thick secretions block the pancreatic ducts, preventing enzyme secretion. Enzymes accumulate in the pancreas, causing autodigestion and inflammation (pancreatitis). Over time, pancreatic tissue is destroyed (pancreatic insufficiency), and enzyme production decreases. Result: malabsorption of fats and proteins, steatorrhoea (fatty stools), nutritional deficiencies, and failure to thrive. CF-related diabetes can also develop if the remaining islet cells are destroyed. Treatment includes pancreatic enzyme replacement (taken with meals) and high-calorie diet.'
-      }
+        style: 'bullet',
+        items: [
+          'RNA nucleotides contain <strong>ribose</strong> sugar (not deoxyribose \u2014 ribose has an extra \u2013OH group at the 2\'\u2212carbon).',
+          'RNA contains <strong>uracil (U)</strong> instead of thymine (T). Uracil pairs with adenine (A-U, 2 H-bonds).',
+          'Most RNA molecules are <strong>single-stranded</strong> (not double-stranded like DNA).',
+          'RNA molecules are generally much shorter than DNA.',
+        ],
+      },
     },
     {
-      id: 'p-other-organs',
-      type: 'paragraph',
-      data: {
-        text: 'Other organs affected by CF: sweat glands (excessive sodium loss in sweat, leading to high sweat electrolytes—diagnostic sweat chloride test ≥60 mmol/L confirms CF), small intestine (thick secretions, meconium ileus in newborns—intestinal obstruction), and reproductive tract (males with CF typically infertile due to absent vas deferens [CBAVD], a developmental defect; females have reduced fertility due to thick cervical mucus). Liver involvement (biliary cirrhosis) occurs in 5–10% of CF patients.'
-      }
-    },
-    {
-      id: 'h-cf-treatment',
+      id: 'h-rna-types',
       type: 'heading',
-      data: {
-        text: 'CF Treatment and Management',
-        level: 2
-      }
+      data: { text: 'Types of RNA', level: 2 },
     },
     {
-      id: 'p-symptomatic-treatment',
-      type: 'paragraph',
-      data: {
-        text: 'CF treatment is multifaceted and largely symptomatic (managing consequences rather than curing the genetic defect). Respiratory management: (1) Physiotherapy: chest percussion and vibration mobilise mucus for expectoration. Airway clearance techniques (autogenic drainage) clear secretions. (2) Mucolytics: DNase (deoxyribonuclease) degrades DNA in sputum (released from dead white blood cells), reducing viscosity. (3) Bronchodilators: albuterol relaxes bronchial muscle, improving airflow and clearance. (4) Antibiotics: chronic anti-Pseudomonas therapy (inhaled tobramycin, fluoroquinolones) controls airway infection. (5) Lung transplantation: for end-stage lung disease; improves lifespan but limited by donor availability and requires lifelong immunosuppression.'
-      }
-    },
-    {
-      id: 'p-nutritional-genetic',
-      type: 'paragraph',
-      data: {
-        text: 'Nutritional management: pancreatic enzyme replacement therapy (PERT) with meals provides amylase, lipase, and proteases to aid digestion. Fat-soluble vitamins (A, D, E, K) supplementation compensates for malabsorption. High-calorie diet maintains weight and growth. Gene therapy is emerging: CFTR corrector molecules (VX-661, VX-770) help mutant CFTR fold correctly and reach the cell membrane, restoring partial chloride transport. Ivacaftor (VX-770) is approved for specific mutations; other agents are in development. Gene therapy (introducing normal CFTR cDNA into airway epithelium via viral or non-viral vectors) is being tested. While not yet curative, these therapies offer hope for improving CFTR function and disease progression.'
-      }
-    },
-    {
-      id: 'table-cf-organs',
+      id: 'table-rna-types',
       type: 'comparisonTable',
       data: {
-        headers: ['Organ System', 'CFTR Defect', 'Consequence', 'Treatment'],
+        caption: 'The three main types of RNA and their roles.',
+        headers: ['Type', 'Structure', 'Location', 'Function'],
         rows: [
-          ['Lungs', 'Reduced Cl⁻ secretion → thick mucus', 'Airway obstruction, infection, inflammation, bronchiectasis', 'Physiotherapy, DNase, bronchodilators, antibiotics'],
-          ['Pancreas', 'Blocked enzyme ducts → autodigestion', 'Pancreatic insufficiency, malabsorption, malnutrition', 'Pancreatic enzyme replacement (PERT), high-calorie diet'],
-          ['Sweat glands', 'Reduced Cl⁻ secretion', 'Excessive salt loss, high sweat Cl⁻', 'Sweat test diagnostic (≥60 mmol/L)'],
-          ['Small intestine', 'Thick secretions', 'Meconium ileus (newborns), intestinal obstruction', 'Surgical intervention if severe'],
-          ['Reproductive tract (male)', 'Absence of vas deferens (CBAVD)', 'Infertility', 'Assisted reproductive technology (ICSI)'],
-          ['Reproductive tract (female)', 'Thick cervical mucus', 'Reduced fertility', 'Fertility management']
+          ['mRNA (messenger RNA)', 'Single-stranded; linear', 'Nucleus \u2192 cytoplasm / ribosomes', 'Carries genetic code from DNA to ribosome for translation into protein'],
+          ['tRNA (transfer RNA)', 'Single-stranded; folded into cloverleaf shape with anticodon loop', 'Cytoplasm / ribosomes', 'Brings specific amino acids to the ribosome during translation; anticodon pairs with mRNA codon'],
+          ['rRNA (ribosomal RNA)', 'Complex 3D structure; combined with proteins', 'Ribosomes', 'Structural and catalytic component of ribosomes; catalyses peptide bond formation'],
         ],
-        caption: 'CF affects multiple organs; CFTR defects and treatments'
-      }
+      },
     },
     {
-      id: 'callout-worked-cf-genetics',
+      id: 'table-dna-rna-compare',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Comparison of DNA, mRNA and tRNA.',
+        headers: ['Feature', 'DNA', 'mRNA', 'tRNA'],
+        rows: [
+          ['Sugar', 'Deoxyribose', 'Ribose', 'Ribose'],
+          ['Strands', 'Double (double helix)', 'Single', 'Single (folded)'],
+          ['Bases', 'A, T, C, G', 'A, U, C, G', 'A, U, C, G'],
+          ['Length', 'Very long', 'Long (variable)', 'Short (around 80 nucleotides)'],
+          ['Location', 'Nucleus (also mitochondria)', 'Nucleus \u2192 cytoplasm', 'Cytoplasm'],
+          ['Function', 'Stores genetic information', 'Carries code from DNA to ribosome', 'Brings amino acids to ribosome'],
+        ],
+      },
+    },
+    {
+      id: 'h-prok-euk',
+      type: 'heading',
+      data: { text: 'Prokaryotic vs Eukaryotic DNA', level: 2 },
+    },
+    {
+      id: 'table-prok-euk',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Key differences in DNA structure between prokaryotic and eukaryotic cells.',
+        headers: ['Feature', 'Prokaryotic', 'Eukaryotic'],
+        rows: [
+          ['Shape', 'Circular', 'Linear (multiple chromosomes)'],
+          ['Location', 'In cytoplasm (no nucleus)', 'In nucleus (nuclear envelope)'],
+          ['Associated proteins (histones)?', 'No', 'Yes (DNA wound around histone proteins)'],
+          ['Additional DNA', 'Plasmids (small circular DNA)', 'Mitochondria / chloroplast DNA'],
+          ['Size', 'Smaller', 'Much larger'],
+        ],
+      },
+    },
+    {
+      id: 'callout-chargaff',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'CF Inheritance and Risk',
-        text: 'Autosomal recessive: CF^CF (disease), CF^cf (carrier), cf^cf (normal). Two carrier parents (CF^cf × CF^cf): 25% disease (CF^CF), 50% carrier (CF^cf), 25% normal (cf^cf). One carrier, one normal: all children normal or carrier, no disease. Genetic counselling: affected individual has CF^CF; all children of CF^CF with normal partner are carriers (CF^cf).'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why does a defective CFTR protein cause thick mucus in the lungs? Explain the mechanism: CFTR is a chloride ion channel; without it, Cl⁻ cannot leave the cell → water follows by osmosis → mucus becomes dehydrated and viscous, impairing mucociliary clearance.',
-        apply: 'The commonest CF mutation (ΔF508) deletes phenylalanine at position 508, causing the CFTR protein to misfold and be degraded by the proteasome before reaching the membrane. Explain why this is a loss-of-function mutation and predict how the drug ivacaftor (a CFTR potentiator) might differ in mechanism from lumacaftor (a CFTR corrector).',
-        analyze: 'Compare the phenotypic effects of CF in the lungs, pancreas, and reproductive system. Explain how the same molecular defect (loss of CFTR) produces such different manifestations in different organs.',
-        evaluate: 'Evaluate the prospects and limitations of gene therapy for cystic fibrosis. Consider delivery vectors (viral vs liposome), expression duration, immune response, and why CF gene therapy has proved harder than anticipated despite 30 years of research.',
+        title: 'Worked Example: Chargaff’s Rule',
+        text: 'A DNA sample contains 22% thymine (T).\n\nStep 1: Since A pairs with T, %A = %T = 22%.\nStep 2: %A + %T = 22% + 22% = 44%.\nStep 3: %C + %G = 100% \u2212 44% = 56%.\nStep 4: Since C pairs with G, %C = %G = 56% \u00f7 2 = 28%.\n\nAnswer: A = 22%, T = 22%, C = 28%, G = 28%.',
       },
-      terms: [],
     },
     {
-      id: 'checklist-cf',
+      id: 'checklist-dna',
       type: 'checklist',
       data: {
         items: [
-          { text: 'CF autosomal recessive; CFTR gene on chromosome 7; >1000 mutations (ΔF508 most common)', checked: false },
-          { text: 'CFTR is Cl⁻ ion channel; mutant CFTR misfolded, degraded, non-functional', checked: false },
-          { text: 'Lungs: thick mucus, airway obstruction, Pseudomonas infection, bronchiectasis', checked: false },
-          { text: 'Pancreas: blocked ducts, enzyme deficiency, malabsorption, malnutrition', checked: false },
-          { text: 'Treatment: physiotherapy, DNase, antibiotics, PERT, gene therapy (emerging)', checked: false }
-        ]
-      }
+          { text: 'Describe the three components of a DNA nucleotide', checked: false },
+          { text: 'Explain complementary base pairing and the number of H-bonds for A-T and C-G', checked: false },
+          { text: 'Explain what antiparallel means and apply Chargaff’s rule', checked: false },
+          { text: 'List three differences between DNA and RNA', checked: false },
+          { text: 'Describe the structure and function of mRNA, tRNA, and rRNA', checked: false },
+          { text: 'Compare prokaryotic and eukaryotic DNA (circular/linear, histones, plasmids)', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-cf',
+      id: 'summary-dna',
       type: 'summary',
-      data: {
-        text: 'Cystic fibrosis is autosomal recessive (CFTR gene, chromosome 7; ΔF508 ~70%). Mutant CFTR protein is misfolded and non-functional; Cl⁻ secretion fails. Lungs: thick mucus, obstruction, Pseudomonas infection, bronchiectasis. Pancreas: enzyme insufficiency, malabsorption. Sweat glands: high electrolyte loss (diagnostic sweat test ≥60 mmol/L). Treatment: airway clearance (physiotherapy, DNase), antibiotics, pancreatic enzyme replacement, high-calorie diet. Gene therapy (CFTR correctors/potentiators) emerging. Median survival now ~50+ years with modern treatment.'
-      }
-    }
+      data: { text: 'DNA nucleotides = deoxyribose + phosphate + base (A/T/C/G). Two antiparallel strands joined by H-bonds: A=T (2) and C\u2261G (3), forming a double helix. Chargaff’s rule: %A = %T; %C = %G. RNA differs: ribose sugar, uracil instead of thymine, usually single-stranded. mRNA carries code from DNA to ribosome; tRNA brings amino acids (has anticodon loop); rRNA forms ribosome. Prokaryotic DNA: circular, no histones, plasmids; Eukaryotic: linear chromosomes, wound around histones, in nucleus.' },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-cf-gene',
-        prompt: 'Describe CF genetics. What is the ΔF508 mutation and why is it common?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-cftr-function',
-        prompt: 'Explain CFTR protein function. How does ΔF508 mutation affect CFTR?'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-lungs-cf',
-        prompt: 'Describe CF lung disease. Why does infection occur and what is bronchiectasis?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-pancreas-cf',
-        prompt: 'Explain pancreatic involvement in CF. How does enzyme insufficiency develop?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-symptomatic-treatment',
-        prompt: 'List five treatments for CF respiratory disease.'
-      }
+      { id: 'cue-1', blockId: 'list-nucleotide', prompt: 'Name the three components of a DNA nucleotide. Name the four DNA bases.' },
+      { id: 'cue-2', blockId: 'list-double-helix', prompt: 'Explain what antiparallel means. How many hydrogen bonds join A-T and C-G base pairs?' },
+      { id: 'cue-3', blockId: 'callout-chargaff', prompt: 'State Chargaff’s rule. If a DNA sample is 18% guanine, what are the percentages of the other three bases?' },
+      { id: 'cue-4', blockId: 'list-rna-diff', prompt: 'Give three structural differences between DNA and RNA.' },
+      { id: 'cue-5', blockId: 'table-rna-types', prompt: 'Describe the structure and function of mRNA and tRNA.' },
     ],
-    summaryText: 'CF: autosomal recessive; CFTR gene chromosome 7; ΔF508 deletion ~70%. CFTR mutant protein misfolded, degraded, non-functional chloride channel. Lungs: ↓Cl⁻, ↓water secretion → thick mucus, obstruction, Pseudomonas infection, bronchiectasis, progressive damage. Pancreas: blocked ducts → enzyme deficiency, malabsorption, malnutrition. Sweat glands: high electrolyte (sweat test ≥60 mmol/L diagnostic). Treatment: airway clearance, DNase, antibiotics, PERT, high-calorie. Gene therapy emerging (CFTR correctors). Median survival ~50+ years.',
-    ready: false
+    summaryText: 'DNA nucleotide: deoxyribose + phosphate + base (A/T/C/G). Double helix: 2 antiparallel strands, A=T (2 H-bonds), C\u2261G (3 H-bonds). Chargaff: %A=%T, %C=%G. RNA: ribose, uracil, single-stranded. mRNA: carries code to ribosome. tRNA: brings amino acids, has anticodon. rRNA: forms ribosomes. Prokaryotic: circular DNA, no histones, plasmids. Eukaryotic: linear chromosomes, histones, in nucleus.',
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Cystic Fibrosis: Genetics and Pathophysiology',
-      detail: 'CF genetics, CFTR protein function, organ system effects, and current treatment strategies.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['cystic-fibrosis', 'cftr', 'autosomal-recessive', 'gene-therapy', 'pancreatic-insufficiency']
-    }
-  ]
+    { id: 'ev-1', title: 'DNA structure and Watson-Crick model', detail: 'DNA nucleotide structure, complementary base pairing, and the double helix model described in AQA A Level Biology Student Book 1, Chapter 4.', year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 4, pp65-72', tags: ['DNA', 'RNA', 'molecular-biology'] },
+  ],
 };

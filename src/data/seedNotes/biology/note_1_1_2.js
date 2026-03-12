@@ -26,8 +26,8 @@ export const note_biology_1_1_2 = {
       id: 'eq-ester-bond',
       type: 'equation',
       data: {
-        html: 'Glycerol + 3 Fatty Acids → Triglyceride + 3 H₂O (via ester bond formation)',
-        caption: 'Condensation reaction forming a triglyceride'
+        html: 'Glycerol + 3 Fatty Acids → Triglyceride + 3 H₂O (esterification — a condensation reaction)',
+        caption: 'Esterification: three condensation reactions join glycerol to three fatty acids, forming three ester bonds and releasing three water molecules'
       }
     },
     {
@@ -118,6 +118,31 @@ export const note_biology_1_1_2 = {
         style: 'tip',
         title: 'Remembering Saturated vs Unsaturated',
         text: 'Saturated = full of H atoms, straight chain, solid. Unsaturated = missing some H atoms (double bonds instead), kinked chain, liquid oil. The kinks prevent packing and keep it fluid.'
+      }
+    },
+    {
+      id: 'h-lipid-functions',
+      type: 'heading',
+      data: {
+        text: 'Roles and Functions of Lipids',
+        level: 2
+      }
+    },
+    {
+      id: 'list-lipid-functions',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Energy storage — triglycerides contain ~37 kJ g⁻¹, approximately double the energy density of carbohydrates (~17 kJ g⁻¹); also release metabolic water on oxidation',
+          'Thermal insulation — subcutaneous fat layer under skin reduces heat loss; important in marine mammals and newborns',
+          'Buoyancy — fat is less dense than water; provides buoyancy in aquatic animals',
+          'Physical protection — fat pads around organs (kidneys, eyes) absorb mechanical shocks',
+          'Waterproofing — waxes (esters of fatty acids + long-chain alcohols) waterproof leaves, feathers, and insect cuticles',
+          'Cell membrane structure — phospholipid bilayer forms the basic structure of all cell membranes; controls entry/exit of substances',
+          'Hormone production — cholesterol is the precursor for all steroid hormones (testosterone, oestrogen, progesterone, cortisol, aldosterone)',
+          'Myelination — myelin sheath around neurones contains lipid (sphingomyelin + cholesterol), insulating the axon and enabling saltatory conduction'
+        ]
       }
     },
     {

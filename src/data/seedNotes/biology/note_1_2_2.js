@@ -1,212 +1,266 @@
 export const note_biology_1_2_2 = {
   blocks: [
     {
-      id: 'obj-osmosis',
+      id: 'obj-lung-disease',
       type: 'objective',
       data: {
-        text: 'Understand water potential, osmosis, and the effects of osmotic pressure on plant and animal cells.'
-      }
+        text: 'Describe the effects of smoking on the gas exchange system and lungs. Explain the scientific evidence linking smoking to lung cancer and disease. Understand the difference between correlation and causation in health studies.',
+      },
     },
     {
-      id: 'h-water-potential',
+      id: 'h-smoke-components',
       type: 'heading',
-      data: {
-        text: 'Water Potential (Ψ)',
-        level: 2
-      }
+      data: { text: 'Harmful Components of Tobacco Smoke', level: 2 },
     },
     {
-      id: 'p-water-potential-def',
+      id: 'p-smoke-intro',
       type: 'paragraph',
       data: {
-        text: 'Water potential (Ψ, Greek letter psi) is the measure of the tendency of water molecules to move (diffuse) from one place to another. It has units of pressure (kPa or MPa). Pure distilled water has a water potential of zero (0 kPa) by definition. When solutes dissolve in water, they reduce the water potential, making it negative. The more concentrated the solution, the more negative (lower) the water potential. Water moves by osmosis from regions of high (less negative) water potential to regions of low (more negative) water potential. This movement is driven by the tendency to equalise solute concentration and water potential across a membrane.'
-      }
+        text: 'Tobacco smoke is a complex mixture of over 4000 organic compounds. Different components cause different kinds of damage to the gas exchange system and to the rest of the body.',
+      },
     },
     {
-      id: 'p-water-potential-equation',
-      type: 'paragraph',
+      id: 'table-smoke-components',
+      type: 'comparisonTable',
       data: {
-        text: 'Water potential is calculated as: Ψ (water potential) = Ψs (solute potential) + Ψp (pressure potential). Solute potential (Ψs, also called osmotic potential) is always negative (or zero for pure water) and is determined by solute concentration. The more dissolved solutes, the more negative Ψs becomes. Pressure potential (Ψp) represents the physical pressure exerted on the solution. In plant cells with a rigid cell wall, when water enters and the cell becomes turgid, the cell wall exerts an inward pressure (wall pressure). This pressure potential is positive in turgid plant cells. In animal cells without a rigid cell wall, pressure potential is normally zero. The equation shows that: pure water (Ψs = 0, Ψp = 0) has Ψ = 0; a dilute solution (slightly negative Ψs, Ψp ≈ 0) has Ψ slightly negative; a concentrated solution (very negative Ψs, Ψp ≈ 0) has Ψ very negative.'
-      }
+        caption: 'Key harmful components of tobacco smoke and their effects',
+        headers: ['Component', 'Nature', 'Effect on body'],
+        rows: [
+          ['Nicotine', 'Addictive stimulant drug', 'Stimulates release of adrenaline; raises heart rate and blood pressure; highly addictive — makes it very difficult to quit smoking'],
+          ['Carbon monoxide (CO)', 'Toxic gas', 'Binds to haemoglobin with much greater affinity than O₂ → forms carboxyhaemoglobin → reduces blood\'s O₂-carrying capacity; deprives tissues of oxygen'],
+          ['Tar', 'Sticky mixture of 4000+ organic compounds; ≥60 known carcinogens', 'Accumulates in lungs; carcinogens cause DNA mutations leading to uncontrolled cell division (cancer); also coats and disables cilia in airways'],
+          ['Particulates / irritants', 'Dust and particles in smoke', 'Irritate the lining of airways; trigger excess mucus production; cause chronic cough'],
+        ],
+      },
     },
     {
-      id: 'eq-water-potential',
-      type: 'equation',
-      data: {
-        html: 'Ψ (water potential) = Ψ<sub>s</sub> (solute potential) + Ψ<sub>p</sub> (pressure potential)<br/>Units: kPa or MPa'
-      }
-    },
-    {
-      id: 'h-osmosis',
+      id: 'h-airways-damage',
       type: 'heading',
-      data: {
-        text: 'Osmosis',
-        level: 2
-      }
+      data: { text: 'Damage to the Airways', level: 2 },
     },
     {
-      id: 'p-osmosis-def',
+      id: 'p-cilia-damage',
       type: 'paragraph',
       data: {
-        text: 'Osmosis is the movement of water molecules across a partially permeable membrane from a region of high water potential (or low solute concentration) to a region of low water potential (or high solute concentration). It is a form of passive transport—no energy (ATP) is required. The driving force is the tendency to dilute solute concentrations on both sides of the membrane until they are equal. From a water potential perspective: water moves from high Ψ to low Ψ. A key point: osmosis moves water, not solutes. The membrane is permeable to water (and small molecules) but not to dissolved salts or large molecules like proteins or starch. If a membrane were permeable to all substances, osmosis would not occur (solutes would diffuse out, eliminating the concentration gradient). The rate of osmosis depends on the magnitude of the water potential difference (gradient) and the surface area of the membrane.'
-      }
+        text: 'The airways are normally lined with ciliated epithelium and goblet cells. Cilia beat rhythmically to sweep mucus (trapped with bacteria and dust) upward toward the throat where it is swallowed. Tobacco smoke damages and eventually destroys these cilia.',
+      },
     },
     {
-      id: 'callout-key-osmosis',
+      id: 'list-airway-damage-sequence',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Smoke irritates goblet cells → excess mucus is secreted',
+          'Tar in smoke paralyses and then destroys cilia → mucus cannot be swept out',
+          'Mucus accumulates in the airways, trapping bacteria and dust',
+          'Bacteria multiply → repeated lung infections (chronic bronchitis)',
+          'Persistent cough as the body tries to expel the mucus (smoker\'s cough)',
+        ],
+      },
+    },
+    {
+      id: 'callout-bronchitis',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Osmosis Definition',
-        text: 'Movement of water across a partially permeable membrane from high Ψ to low Ψ (or high [water] to low [water]). Driven by solute concentration difference. Requires selectively permeable membrane. No energy needed (passive). Water moves, not solutes.'
-      }
+        title: 'Chronic Bronchitis',
+        text: 'Long-term inflammation and infection of the bronchi and bronchioles caused by bacteria being trapped in the mucus that smokers cannot clear. Symptoms: persistent cough, excess mucus (sputum), breathlessness. The airways become narrowed and inflamed, increasing airway resistance.',
+      },
     },
     {
-      id: 'h-plant-cells',
+      id: 'h-emphysema',
       type: 'heading',
-      data: {
-        text: 'Osmosis in Plant Cells',
-        level: 2
-      }
+      data: { text: 'Emphysema', level: 2 },
     },
     {
-      id: 'p-turgidity',
+      id: 'p-emphysema',
       type: 'paragraph',
       data: {
-        text: 'Plant cells have a rigid cell wall that surrounds the cell membrane. When a plant cell is placed in hypotonic solution (low solute concentration, high water potential), water enters the cell by osmosis. The cell membrane remains pressed against the cell wall as water fills the vacuole. This state is called turgidity; the cell is turgid. The cell wall prevents over-expansion, exerting an inward pressure (wall pressure) equal and opposite to the turgor pressure (outward pressure of the cell contents). In a turgid cell, the pressure potential is positive (typically +0.5 to +1.0 MPa), and the cell is rigid and maintains its shape. Turgidity is essential for plant structure: herbaceous plants rely on turgor to maintain upright posture; without turgor, plants wilt.'
-      }
+        text: 'Emphysema is a progressive lung disease caused by the destruction of alveolar walls. The immune response to irritants in tobacco smoke releases enzymes (proteases) that break down the elastic and protein fibres in alveolar walls.',
+      },
     },
     {
-      id: 'p-plasmolysis',
-      type: 'paragraph',
+      id: 'list-emphysema-effects',
+      type: 'list',
       data: {
-        text: 'When a plant cell is placed in hypertonic solution (high solute concentration, low water potential), the cell sap has higher water potential than the surrounding solution. Water leaves the cell by osmosis, moving into the external solution. The protoplast (cell membrane, cytoplasm, nucleus, organelles) shrinks away from the cell wall, a process called plasmolysis. In plasmolysis, the cell becomes flaccid; the wall pressure falls to zero or negative (tension), and the cell wilts. If the external solution is very concentrated, the plasmolysed cell may not recover even if returned to water (cytoplasm is damaged). If the external solution is moderately hypertonic, the plasmolysed cell is called incipient plasmolysis (just beginning to shrink). If the cell is returned to hypotonic solution before plasmolysis becomes irreversible, water re-enters and the cell becomes turgid again (deplasmolysis). Plasmolysis is used experimentally to demonstrate that the cell membrane is selectively permeable (water leaves) while the cell wall is freely permeable (solute remains inside).'
-      }
-    },
-    {
-      id: 'h-animal-cells',
-      type: 'heading',
-      data: {
-        text: 'Osmosis in Animal Cells',
-        level: 2
-      }
-    },
-    {
-      id: 'p-animal-cells-iso',
-      type: 'paragraph',
-      data: {
-        text: 'Animal cells lack a rigid cell wall and are therefore vulnerable to osmotic damage. In isotonic solution (equal solute concentration inside and outside), water potential is equal on both sides; no net water movement occurs. The cell volume remains constant. Most body fluids are isotonic with cells: blood plasma, tissue fluid, and cerebrospinal fluid are carefully maintained at physiological osmolarity (~0.3 osmol/L or ~0.3 M glucose equivalent). When an animal cell is placed in hypotonic solution (low solute concentration), water enters the cell by osmosis faster than it leaves. The cell swells and may burst, a process called lysis or cytolysis. Red blood cells in hypotonic solution undergo haemolysis (burst), releasing haemoglobin and cell contents. This is why intravenous fluids must be isotonic; hypotonic fluids would cause haemolysis.'
-      }
-    },
-    {
-      id: 'p-animal-cells-hyper',
-      type: 'paragraph',
-      data: {
-        text: 'When an animal cell is placed in hypertonic solution (high solute concentration), water leaves the cell by osmosis. The cell shrinks and becomes crenated (spiky, with irregular edges). This is called crenation. Red blood cells in hypertonic solution shrink to a spiky crenated form. Severe dehydration (loss of water due to hypertonic conditions, like excessive sweating without water intake) can cause crenation of blood cells and cellular dysfunction. The body maintains homeostasis by regulating blood osmolarity, ensuring cells are in an isotonic environment. Kidneys excrete excess water or solutes to maintain constant blood osmolarity (~285–295 mOsmol/kg). Derangements in osmolarity (hypernatraemia = high sodium, hyponatraemia = low sodium) cause cellular malfunction: hyponatraemia can cause cerebral oedema (swelling) and seizures; hypernatraemia can cause cell shrinkage.'
-      }
-    },
-    {
-      id: 'table-osmotic-effects',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Solution Type', 'Solute Conc.', 'Water Potential', 'Plant Cell Effect', 'Animal Cell Effect'],
-        rows: [
-          ['Hypertonic', 'High (>cell)', 'Low (<cell)', 'Plasmolysis (shrinks, wall-induced)', 'Crenation (shrinks, spiky)'],
-          ['Isotonic', 'Equal (=cell)', 'Equal (=cell)', 'No change (normal)', 'No change (normal)'],
-          ['Hypotonic', 'Low (<cell)', 'High (>cell)', 'Turgidity (swells, rigid)', 'Lysis/haemolysis (bursts)']
+        style: 'bullet',
+        items: [
+          'Alveolar walls are destroyed and merge into larger air spaces',
+          'Total surface area for gas exchange is greatly reduced',
+          'Diffusion distance may increase as walls thicken with inflammation',
+          'Concentration gradient is less well maintained (air movement less efficient)',
+          'Severe breathlessness, especially during exercise',
+          'Condition is irreversible — dead lung tissue cannot be regenerated',
         ],
-        caption: 'Osmotic effects on plant and animal cells'
-      }
+      },
     },
     {
-      id: 'callout-worked-plasmolysis',
+      id: 'svg-emphysema',
+      type: 'svg',
+      data: {
+        caption: 'Comparison of healthy alveoli and emphysematous alveoli showing reduction in surface area',
+        svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif" font-size="11">
+  <rect width="440" height="200" fill="#f8f9ff" rx="8"/>
+  <!-- HEALTHY side -->
+  <text x="110" y="18" text-anchor="middle" fill="#2c5a3a" font-weight="bold">Healthy Alveoli</text>
+  <!-- many small alveoli -->
+  <circle cx="60" cy="55" r="22" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="104" cy="50" r="20" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="145" cy="55" r="22" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="62" cy="98" r="20" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="104" cy="94" r="22" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="147" cy="98" r="20" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="60" cy="142" r="21" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="104" cy="140" r="20" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <circle cx="146" cy="142" r="21" fill="#c8e6c9" stroke="#5a9a6a" stroke-width="1.5"/>
+  <text x="110" y="185" text-anchor="middle" fill="#2c5a3a" font-size="10">Large total surface area</text>
+  <!-- Divider -->
+  <line x1="220" y1="10" x2="220" y2="190" stroke="#ccc" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- EMPHYSEMA side -->
+  <text x="330" y="18" text-anchor="middle" fill="#b03020" font-weight="bold">Emphysematous Alveoli</text>
+  <!-- few large merged spaces -->
+  <circle cx="290" cy="75" r="52" fill="#ffe0d0" stroke="#b03020" stroke-width="1.5"/>
+  <circle cx="370" cy="80" r="50" fill="#ffe0d0" stroke="#b03020" stroke-width="1.5"/>
+  <circle cx="330" cy="148" r="35" fill="#ffe0d0" stroke="#b03020" stroke-width="1.5"/>
+  <text x="330" y="185" text-anchor="middle" fill="#b03020" font-size="10">Reduced total surface area</text>
+</svg>`,
+      },
+    },
+    {
+      id: 'h-lung-cancer',
+      type: 'heading',
+      data: { text: 'Lung Cancer', level: 2 },
+    },
+    {
+      id: 'p-lung-cancer',
+      type: 'paragraph',
+      data: {
+        text: 'Lung cancer is caused by mutations in cell DNA. Carcinogens in tar enter cells lining the airways and alveoli and cause mutations in genes controlling the cell cycle. Cells begin to divide uncontrollably, forming a tumour. Cancerous (malignant) tumours can invade surrounding tissue and spread via the blood or lymph to other organs (metastasis).',
+      },
+    },
+    {
+      id: 'list-cancer-sequence',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Carcinogens in tar absorbed by cells of the airway lining',
+          'Carcinogens alter the base sequence of DNA, particularly in genes controlling cell division (tumour suppressor genes or proto-oncogenes)',
+          'Mutations accumulate over years → cells no longer respond to normal growth control signals',
+          'Uncontrolled cell division → tumour forms in the lung or bronchus',
+          'Metastasis: cells may break away and spread to lymph nodes or other organs',
+        ],
+      },
+    },
+    {
+      id: 'callout-co',
       type: 'callout',
       data: {
-        style: 'worked',
-        title: 'Observing Plasmolysis in a Plant Cell',
-        text: 'Procedure: Place a thin section of onion epidermal cell on a slide. Add concentrated salt solution (hypertonic). Observe under microscope: protoplast shrinks away from cell wall (plasmolysis). Add water dropwise; protoplast gradually returns to contact cell wall (deplasmolysis). Conclusion: cell membrane is selectively permeable (water leaves, solutes stay), cell wall is permeable (solution penetrates outside membrane).'
-      }
+        style: 'warning',
+        title: 'Carbon Monoxide and Oxygen Transport',
+        text: 'CO binds irreversibly to the haem group of haemoglobin with an affinity ~240 times greater than O₂, forming carboxyhaemoglobin (HbCO). This reduces the blood\'s O₂-carrying capacity — tissues receive less oxygen. In pregnant women who smoke, the fetus also receives less oxygen, restricting foetal growth.',
+      },
     },
     {
-      id: 'callout-tip-blood',
+      id: 'h-evidence',
+      type: 'heading',
+      data: { text: 'Evidence Linking Smoking to Lung Cancer: Doll and Hill', level: 2 },
+    },
+    {
+      id: 'p-doll-hill',
+      type: 'paragraph',
+      data: {
+        text: 'In 1951, Richard Doll and Austin Bradford Hill set up a landmark prospective study to investigate whether smoking caused lung cancer. They recruited over 34,000 British doctors and monitored their smoking habits and health for 50 years (the study ended in 2001). Doctors were chosen because they were considered reliable at recording their own smoking habits and were tracked via the General Medical Council register.',
+      },
+    },
+    {
+      id: 'list-doll-hill-findings',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Smokers had a significantly higher death rate from lung cancer than non-smokers',
+          'The risk of dying from lung cancer increased with the number of cigarettes smoked per day',
+          'Doctors who stopped smoking reduced their risk compared to those who continued',
+          'Survival curves showed non-smokers lived significantly longer on average than cigarette smokers',
+          'By the end of the study, evidence was considered causal — smoking causes lung cancer',
+        ],
+      },
+    },
+    {
+      id: 'h-study-types',
+      type: 'heading',
+      data: { text: 'Types of Study and Statistical Concepts', level: 2 },
+    },
+    {
+      id: 'table-studies',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Prospective vs retrospective studies',
+        headers: ['Type', 'Method', 'Advantages', 'Disadvantages'],
+        rows: [
+          ['Prospective', 'Select healthy subjects → monitor over years → record who develops disease', 'Can track changes in habits over time; can record wider range of variables', 'Takes a very long time to get results; expensive; subjects may drop out'],
+          ['Retrospective', 'Look back at records of people who already have the disease', 'Faster — results available immediately; cheaper', 'Relies on recalled data (less accurate); harder to control for confounding variables'],
+        ],
+      },
+    },
+    {
+      id: 'callout-correlation',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Correlation vs Causation',
+        text: 'A correlation is an association between two variables (e.g. number of cigarettes smoked and incidence of lung cancer both increase together — a positive correlation). A correlation does NOT by itself prove causation. For example, there could be a correlation between baldness and wearing hats, but that does not mean hats cause baldness. For causation to be established, the mechanism must be explained (e.g. carcinogens in tar cause DNA mutations) AND alternative explanations must be ruled out.',
+      },
+    },
+    {
+      id: 'callout-stat-sig',
       type: 'callout',
       data: {
         style: 'tip',
-        title: 'Why Blood Must Be Isotonic',
-        text: 'If IV fluid is hypotonic: water enters RBC → haemolysis (burst) → death. If hypertonic: water leaves RBC → crenation → death. Must be isotonic (0.9% saline or 5% glucose) to keep RBCs in normal shape. This is why hospitals use specific IV fluids!'
-      }
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why is water potential always negative or zero in biological solutions, never positive? Explain how solute particles reduce the free energy of water molecules and why pure water at atmospheric pressure is defined as ψ = 0.',
-        apply: 'A plant cell has a solute potential of −800 kPa and a pressure potential of +300 kPa. Calculate its water potential. If it is placed in a solution with ψ = −600 kPa, which direction will water move, and will the cell become more or less turgid?',
-        analyze: 'Compare the response of a plant cell and an animal cell to being placed in a hypertonic solution. Explain why plant cells undergo plasmolysis while animal cells undergo crenation, and why plant cells do not lyse in hypotonic solution.',
-        evaluate: 'Evaluate the importance of turgor pressure in plant support. Is it more or less important than sclerenchyma fibres and lignified xylem in maintaining plant rigidity? Consider herbaceous vs woody plants.',
+        title: 'Statistical Significance',
+        text: 'For a result to be accepted as real (not due to chance), it must be statistically significant. This means the probability that the result occurred by chance is very low (typically p < 0.05, i.e. less than 5% probability it is a coincidence). The larger and more carefully controlled the study, the more likely a genuine result will be statistically significant.',
       },
-      terms: [],
     },
     {
-      id: 'checklist-osmosis',
+      id: 'checklist-lung-disease',
       type: 'checklist',
       data: {
         items: [
-          { text: 'Water potential Ψ = Ψs + Ψp; water moves from high to low Ψ', checked: false },
-          { text: 'Osmosis: water movement across partially permeable membrane, no ATP required', checked: false },
-          { text: 'Plant cells hypertonic → turgid (positive Ψp); hypertonic → plasmolysis (Ψp ≤ 0)', checked: false },
-          { text: 'Animal cells isotonic → stable; hypotonic → lysis; hypertonic → crenation', checked: false },
-          { text: 'Body maintains blood osmolarity ~285–295 mOsmol/kg for cell homeostasis', checked: false }
-        ]
-      }
+          { text: 'Name the three main harmful components of tobacco smoke and link each to a specific harm', checked: false },
+          { text: 'Describe how tar damages cilia, leading to mucus accumulation and chronic bronchitis', checked: false },
+          { text: 'Explain how emphysema reduces gas exchange efficiency using Fick\'s Law', checked: false },
+          { text: 'Describe the sequence of events from carcinogen exposure to lung cancer', checked: false },
+          { text: 'Explain why CO reduces blood O₂-carrying capacity', checked: false },
+          { text: 'Describe the design and main findings of the Doll and Hill study', checked: false },
+          { text: 'Distinguish between a prospective and a retrospective study', checked: false },
+          { text: 'Explain the difference between correlation and causation with an example', checked: false },
+        ],
+      },
     },
     {
-      id: 'summary-osmosis',
+      id: 'summary-lung-disease',
       type: 'summary',
       data: {
-        text: 'Water potential (Ψ = Ψs + Ψp) quantifies water\'s tendency to move. Osmosis is water movement from high to low Ψ across partially permeable membranes. Plant cells: hypotonic → turgid (Ψp > 0, rigid); hypertonic → plasmolysis (Ψp ≤ 0, wilted). Animal cells: isotonic → normal; hypotonic → lysis (burst); hypertonic → crenation (shrink). Physiological osmolarity ~0.3 M. Blood osmolarity maintained at ~285–295 mOsmol/kg by kidneys.'
-      }
-    }
+        text: 'Tobacco smoke contains nicotine (addictive), carbon monoxide (binds Hb, reduces O₂ transport), and tar (60+ carcinogens in 4000+ compounds). Tar paralyses cilia → mucus accumulates → chronic bronchitis. Carcinogens in tar cause DNA mutations → uncontrolled cell division → lung cancer. Immune response to irritants destroys alveolar walls → emphysema → reduced surface area for gas exchange (irreversible). Doll and Hill\'s 50-year prospective study of 34,000 doctors provided strong evidence that smoking causes lung cancer. Correlation ≠ causation; causation requires a known mechanism (DNA mutations by carcinogens) and ruling out confounders.',
+      },
+    },
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-water-potential-def',
-        prompt: 'Define water potential. What is the Ψ of pure water and why?'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-water-potential-equation',
-        prompt: 'State the water potential equation. Explain Ψs and Ψp.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-osmosis-def',
-        prompt: 'Define osmosis. Why does it require a partially permeable membrane?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-turgidity',
-        prompt: 'Describe turgidity in plant cells. Why is it important?'
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-animal-cells-iso',
-        prompt: 'Explain the effects of hypotonic, isotonic, and hypertonic solutions on red blood cells.'
-      }
+      { id: 'cue-1', blockId: 'table-smoke-components', prompt: 'Name three harmful components of tobacco smoke and state one specific effect of each on the body.' },
+      { id: 'cue-2', blockId: 'list-airway-damage-sequence', prompt: 'Describe the sequence of events by which smoking leads to chronic bronchitis, starting with the effect of tar on cilia.' },
+      { id: 'cue-3', blockId: 'p-emphysema', prompt: 'Explain how emphysema reduces the rate of gas exchange. Refer to Fick\'s Law in your answer.' },
+      { id: 'cue-4', blockId: 'p-doll-hill', prompt: 'Describe the design of the Doll and Hill study and state two of its main findings.' },
+      { id: 'cue-5', blockId: 'callout-correlation', prompt: 'What is the difference between a correlation and a causal relationship? Give an example of each.' },
     ],
-    summaryText: 'Water potential Ψ = Ψs (solute) + Ψp (pressure). Pure water Ψ = 0. Osmosis: water moves high Ψ → low Ψ across partially permeable membrane. Plant cells hypertonic → turgid (Ψp +0.5–+1.0 MPa, rigid); hypertonic → plasmolysis (Ψp ≤ 0, wilts). Animal cells isotonic → normal; hypotonic → lysis; hypertonic → crenation. Blood osmolarity 285–295 mOsmol/kg (isotonic with cells).',
-    ready: false
+    summaryText: 'Tobacco smoke harms: CO reduces O₂ transport by binding Hb; tar destroys cilia → mucus build-up → chronic bronchitis; carcinogens mutate DNA → lung cancer; irritants → emphysema (alveolar wall destruction, reduced SA). Doll and Hill (1951–2001): 34,000 doctors, prospective study, showed smoking causes lung cancer. Correlation ≠ causation — need mechanism and controlled study.',
+    ready: false,
   },
   evidence: [
-    {
-      id: 'ev-1',
-      title: 'Water Potential and Osmosis',
-      detail: 'Water potential equation, osmosis definition, and effects on plant and animal cells.',
-      year: '2024',
-      source: 'A-Level Biology Specification (WBI11)',
-      tags: ['water-potential', 'osmosis', 'solute-potential', 'pressure-potential', 'turgidity', 'plasmolysis']
-    }
-  ]
+    { id: 'ev-1', title: 'Doll and Hill (1951-2001)', detail: 'Prospective cohort study of 34,000 British doctors over 50 years. Provided definitive evidence that cigarette smoking causes lung cancer and reduces life expectancy. Doctors who stopped smoking reduced their risk.', year: '2004', source: 'Doll R, Peto R, et al. BMJ', tags: ['epidemiology', 'lung cancer', 'smoking'] },
+    { id: 'ev-2', title: 'WHO global cancer statistics', detail: 'Lung cancer is the leading cause of cancer death worldwide; approximately 85% of cases are attributable to tobacco smoking. Most cases are small-cell or non-small-cell lung carcinoma originating in bronchial epithelium.', year: '2020', source: 'WHO IARC Global Cancer Observatory', tags: ['lung cancer', 'global health'] },
+  ],
 };
