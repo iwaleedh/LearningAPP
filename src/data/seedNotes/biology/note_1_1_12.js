@@ -30,6 +30,61 @@ export const note_biology_1_1_12 = {
       }
     },
     {
+      id: 'callout-warning-dcpip-risk',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Risk Assessment: DCPIP Solution',
+        text: 'DCPIP is an irritant.\n• Wear safety goggles at ALL times during this practical\n• Avoid skin contact with DCPIP — rinse with water immediately if contact occurs\n• Do not pipette by mouth\n• Dispose of DCPIP solution appropriately (dilute before disposal down the sink)'
+      }
+    },
+    {
+      id: 'h-cp2-edexcel-method',
+      type: 'heading',
+      data: { text: 'Edexcel Core Practical 2: Drop Method', level: 2 }
+    },
+    {
+      id: 'p-cp2-overview',
+      type: 'paragraph',
+      data: {
+        text: 'The Edexcel Core Practical 2 uses a simple drop method rather than a formal burette titration. A fixed volume of DCPIP (1 cm³) is placed in a test tube and vitamin C solution is added drop by drop using a plastic syringe or graduated pipette. The volume of vitamin C required to decolourise the DCPIP is recorded. Higher concentration solutions require a smaller volume — the calibration curve therefore shows an inverse (negative) relationship between vitamin C concentration and volume required.'
+      }
+    },
+    {
+      id: 'list-cp2-method',
+      type: 'list',
+      data: {
+        style: 'numbered',
+        items: [
+          'Prepare a stock vitamin C solution (e.g. 1 mg cm⁻³) and make serial dilutions to give a range of known concentrations (e.g. 0.25, 0.5, 0.75, 1.0 mg cm⁻³)',
+          'Pipette exactly 1 cm³ of 1% DCPIP solution into a test tube for each concentration tested',
+          'Using a plastic syringe or graduated pipette, add the first vitamin C concentration drop by drop to the DCPIP, swirling gently after each drop',
+          'Record the total volume (cm³) of vitamin C solution added when the DCPIP turns from blue to colourless (the endpoint)',
+          'Repeat steps 2–4 for each vitamin C concentration; repeat each at least three times, discard anomalies, and calculate the mean volume',
+          'Test unknown samples (e.g. fresh orange juice, commercial juice) using the same method; read their vitamin C concentration from the calibration curve',
+          'Plot a calibration curve: vitamin C concentration (x-axis) vs. volume to decolourise (y-axis) — expect a negative gradient (inverse relationship)'
+        ]
+      }
+    },
+    {
+      id: 'callout-tip-inverse-curve',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Understanding the Inverse Calibration Curve',
+        text: 'HIGHER concentration → SMALLER volume needed to decolourise the same amount of DCPIP (more vitamin C molecules per cm³ → fewer drops required to reduce all the DCPIP). The calibration curve has a NEGATIVE gradient. To use it for an unknown sample: find the volume for your sample on the y-axis, read across to the curve, then read down to the x-axis to get the concentration.'
+      }
+    },
+    {
+      id: 'callout-tip-controls-cp2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Control Variables in Core Practical 2',
+        text: 'To ensure fair and reliable results:\n• Same volume of DCPIP (1 cm³) for every trial\n• Same drop size — use the same syringe throughout and maintain a consistent drop rate\n• Same temperature — vitamin C oxidises faster at higher temperatures\n• Swirl consistently after each drop\n• Work quickly — vitamin C in solution oxidises when exposed to air, reducing effective concentration over time\n• Use freshly prepared DCPIP — DCPIP itself can be reduced (bleached) by light or air, giving inaccurate results'
+      }
+    },
+    {
       id: 'h-dcpip-titration',
       type: 'heading',
       data: {
@@ -167,11 +222,12 @@ export const note_biology_1_1_12 = {
       type: 'checklist',
       data: {
         items: [
-          { text: 'Vitamin C is a reducing agent that decolourises blue DCPIP to colourless', checked: false },
-          { text: 'Titration procedure: DCPIP in flask, vitamin C from burette, stop at endpoint (colourless)', checked: false },
-          { text: 'Repeat titrations ≥3 times; average only concordant readings', checked: false },
-          { text: 'Calibration curve relates DCPIP volume to vitamin C concentration', checked: false },
-          { text: 'Sources of error: DCPIP oxidation, sample oxidation, parallax, sample heterogeneity', checked: false }
+          { text: 'Vitamin C (reducing agent) decolourises blue DCPIP (oxidising agent) to colourless — vitamin C → dehydroascorbic acid', checked: false },
+          { text: 'Edexcel CP2 drop method: serial dilutions → add drops to 1 cm³ DCPIP → record volume to decolourise → repeat ≥3 times → plot calibration curve', checked: false },
+          { text: 'Calibration curve: INVERSE relationship — higher [vitamin C] → smaller volume needed to decolourise DCPIP (negative gradient)', checked: false },
+          { text: 'DCPIP is an IRRITANT — always wear safety goggles; avoid skin contact; rinse with water immediately if contact occurs', checked: false },
+          { text: 'Control variables: same DCPIP volume (1 cm³), same drop rate, same temperature, freshly prepared reagents, work quickly to prevent vitamin C oxidation', checked: false },
+          { text: 'Sources of error: DCPIP oxidation (use fresh, protect from light), sample oxidation (analyse quickly), variation in drop size', checked: false }
         ]
       }
     },

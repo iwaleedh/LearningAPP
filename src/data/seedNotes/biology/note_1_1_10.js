@@ -126,6 +126,24 @@ export const note_biology_1_1_10 = {
       },
     },
     {
+      id: 'callout-we-finnish',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Study Data: Finnish Study on Vitamin C and CVD (1984–1992)',
+        text: 'A longitudinal study of 1,605 Finnish men followed from 1984–1992 monitored vitamin C levels and cardiovascular outcomes.\n\nKey finding:\n• Men with LOW vitamin C levels: 13.2% had a heart attack\n• Men with NORMAL vitamin C levels: 3.8% had a heart attack\n\nDescribe: Men with low vitamin C had a higher rate of heart attacks (13.2%) compared to those with normal levels (3.8%).\n\nConclude: The data suggests an inverse correlation between vitamin C levels and heart attack risk — men with low vitamin C were approximately 3.5× more likely to have a heart attack.\n\nEvaluate:\n• Correlation only — cannot prove that vitamin C deficiency directly causes heart attacks\n• Confounders: low-vitamin C men may also smoke more, exercise less, or eat a generally poor diet\n• Study population restricted to Finnish men — may not generalise to women or other ethnicities\n• Longitudinal design is a strength — identifies associations over time rather than at a single point'
+      }
+    },
+    {
+      id: 'callout-warning-conflicting',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Conflicting Evidence: Antioxidant Supplements and CVD',
+        text: 'A 2016 meta-analysis (combining data from multiple clinical trials) found NO clear relationship between vitamin C supplementation and reduced CVD risk. Some evidence suggests high-dose antioxidant supplements may even be harmful.\n\nWhy might supplements fail when dietary antioxidants appear protective?\n• Supplements provide a single isolated compound; whole foods contain hundreds of interacting phytochemicals and cofactors\n• The complex beneficial interactions in fruit and vegetables cannot be replicated by an isolated supplement\n• Excessive antioxidants may interfere with beneficial reactive oxygen species (ROS) signalling in cells\n• Observational studies showing benefit likely reflect a generally healthy diet overall (not just antioxidants)\n\nExam note: When asked about antioxidants and CVD, always state that the evidence is CONFLICTING and that all available evidence must be considered before drawing firm conclusions.'
+      }
+    },
+    {
       id: 'h-balance',
       type: 'heading',
       data: { text: 'Balance Between Free Radicals and Antioxidants', level: 2 },
@@ -149,6 +167,8 @@ export const note_biology_1_1_10 = {
           { text: 'Define antioxidant and explain how it neutralises free radicals', checked: false },
           { text: 'Name three dietary antioxidants and their food sources', checked: false },
           { text: 'Explain the epidemiological evidence linking antioxidant diet and CVD', checked: false },
+          { text: 'Finnish study: 1,605 men (1984–1992); 13.2% low vitamin C vs 3.8% normal vitamin C had heart attacks — inverse correlation (evaluate: correlation only, confounders)', checked: false },
+          { text: '2016 meta-analysis: NO clear link between vitamin C supplements and CVD reduction — evidence is CONFLICTING; whole foods ≠ isolated supplements', checked: false },
         ],
       },
     },
@@ -167,9 +187,10 @@ export const note_biology_1_1_10 = {
       { id: 'cue-2', blockId: 'table-radical-damage', prompt: 'Explain how free radicals cause damage to (a) lipids, (b) DNA, and (c) LDL cholesterol.' },
       { id: 'cue-3', blockId: 'callout-key-ldl-oxidation', prompt: 'Explain the link between free radicals, LDL oxidation, and atherosclerosis.' },
       { id: 'cue-4', blockId: 'table-antioxidants', prompt: 'Name two dietary antioxidants and explain how each protects cells from free radical damage.' },
-      { id: 'cue-5', blockId: 'p-diet-antioxidants', prompt: 'What is the evidence that dietary antioxidants reduce CVD risk? Why might antioxidant supplements be less effective than whole foods?' },
+      { id: 'cue-5', blockId: 'callout-we-finnish', prompt: 'Describe the Finnish study on vitamin C and CVD. What were the specific findings and what are the limitations of this evidence?' },
+      { id: 'cue-6', blockId: 'callout-warning-conflicting', prompt: 'Why does the evidence on antioxidants and CVD conflict between observational studies and clinical trials of supplements? What does the 2016 meta-analysis show?' },
     ],
-    summaryText: 'Free radicals = unpaired electrons → highly reactive. Sources: respiration, smoking, UV. Damage: lipid peroxidation, DNA mutation, protein oxidation, LDL oxidation → atherosclerosis. Antioxidants (vit C, E, carotene, SOD, catalase) donate electrons → neutralise radicals. High-antioxidant diet (fruit + veg) correlates with lower CVD risk; mechanism = prevent oxLDL formation.',
+    summaryText: 'Free radicals = unpaired electrons → highly reactive. Sources: respiration, smoking, UV. Damage: lipid peroxidation, DNA mutation, protein oxidation, LDL oxidation → atherosclerosis. Antioxidants (vit C, E, carotene, SOD, catalase) donate electrons → neutralise radicals. Finnish study: 1,605 men; low vitamin C → 13.2% heart attack vs 3.8% (correlation only — confounders possible). 2016 meta-analysis: supplements show no clear CVD benefit. Evidence is CONFLICTING — whole foods protective but supplements are not; all evidence must be considered.',
     ready: false,
   },
   evidence: [

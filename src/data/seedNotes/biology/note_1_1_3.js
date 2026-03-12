@@ -148,6 +148,22 @@ export const note_biology_1_1_3 = {
       }
     },
     {
+      id: 'p-ldl-hdl-ratio',
+      type: 'paragraph',
+      data: {
+        text: 'A healthy LDL:HDL ratio is approximately 3:1 (three units of LDL to one unit of HDL). A ratio greater than 5:1 significantly increases the risk of heart disease. Clinicians monitor both the absolute values of LDL and HDL and the ratio between them when assessing cardiovascular risk. Statins and dietary changes (reducing saturated fat, increasing unsaturated fat and fibre) both help to lower LDL and improve the ratio.'
+      }
+    },
+    {
+      id: 'callout-we-cholesterol-study',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Interpreting Cholesterol Study Data',
+        text: 'Study: 300 men aged 40–80 monitored for 30 weeks; CVD event rates compared between those with high LDL and those with high HDL.\n\nData:\n• High LDL group: ~28% experienced a CVD event\n• High HDL group: ~18% experienced a CVD event\n• Standard deviations for both groups overlap\n\nDescribe: The CVD event rate was higher in the high-LDL group (~28%) than the high-HDL group (~18%).\n\nConclude: The data suggests a positive association between high LDL and CVD event rate compared to high HDL.\n\nEvaluate — limitations:\n• Overlapping standard deviations → the difference is NOT statistically significant; could be due to chance\n• Small sample (300 men only) — insufficient statistical power to detect a reliable difference\n• Only men aged 40–80 — cannot generalise findings to women or other age groups\n• Short duration (30 weeks) — atherosclerosis develops over years; this study may be too brief to show true lipoprotein effects\n• Confounding variables (diet, exercise, medication, smoking status) not stated as controlled'
+      }
+    },
+    {
       id: 'table-diet-effects',
       type: 'comparisonTable',
       data: {
@@ -202,7 +218,9 @@ export const note_biology_1_1_3 = {
           { text: 'Explain LDL function: transports cholesterol from liver to tissues; high LDL raises CVD risk', checked: false },
           { text: 'Explain HDL function: reverse cholesterol transport (tissues → liver); high HDL lowers CVD risk', checked: false },
           { text: 'Distinguish LDL from HDL: size, density, protein content, direction of transport', checked: false },
-          { text: 'Explain how saturated fats and trans fats raise LDL; unsaturated fats raise HDL', checked: false }
+          { text: 'Explain how saturated fats and trans fats raise LDL; unsaturated fats raise HDL', checked: false },
+          { text: 'Healthy LDL:HDL ratio ≈ 3:1; a ratio >5:1 significantly increases heart disease risk', checked: false },
+          { text: 'Evaluate study data: overlapping standard deviations → difference not statistically significant; comment on sample size, duration, and confounders', checked: false }
         ]
       }
     },
@@ -244,11 +262,16 @@ export const note_biology_1_1_3 = {
       },
       {
         id: 'cue-6',
-        blockId: 'table-diet-effects',
-        prompt: 'Why is the LDL:HDL ratio a more useful CVD risk indicator than total cholesterol alone?'
+        blockId: 'p-ldl-hdl-ratio',
+        prompt: 'What is a healthy LDL:HDL ratio? At what ratio does heart disease risk significantly increase?'
+      },
+      {
+        id: 'cue-7',
+        blockId: 'callout-we-cholesterol-study',
+        prompt: 'A study of 300 men shows ~28% CVD events (high-LDL group) vs ~18% (high-HDL group) with overlapping standard deviations. What conclusions can you draw and what are the key limitations?'
       }
     ],
-    summaryText: 'Cholesterol: 4 fused steroid rings, essential for membrane fluidity, steroid hormone synthesis, vitamin D, bile acids. LDL: large, low density, carries cholesterol liver→tissues ("bad" — high LDL → atherosclerosis). HDL: small, high density, carries cholesterol tissues→liver ("good" — clears artery walls). Diet: saturated/trans fats raise LDL; unsaturated fats lower LDL, raise HDL. Statins: inhibit HMG-CoA reductase → reduce LDL. CVD risk assessed by LDL:HDL ratio.',
+    summaryText: 'Cholesterol: 4 fused steroid rings, essential for membrane fluidity, steroid hormone synthesis, vitamin D, bile acids. LDL: large, low density, carries cholesterol liver→tissues ("bad" — high LDL → atherosclerosis). HDL: small, high density, carries cholesterol tissues→liver ("good" — clears artery walls). Healthy LDL:HDL ratio ≈3:1; >5:1 significantly increases CVD risk. Diet: saturated/trans fats raise LDL; unsaturated fats lower LDL, raise HDL. Statins: inhibit HMG-CoA reductase → reduce LDL. Evaluate study data: overlapping standard deviations → not statistically significant.',
     ready: false
   },
   evidence: [
