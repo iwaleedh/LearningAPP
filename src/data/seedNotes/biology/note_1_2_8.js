@@ -196,7 +196,44 @@ export const note_biology_1_2_8 = {
       data: {
         style: 'key',
         title: 'Haemoglobin — Example of Quaternary Structure',
-        text: 'Haemoglobin is the red oxygen-carrying pigment in blood. It has a quaternary structure consisting of four polypeptide chains: two α-chains and two β-chains, each folded independently into a globular tertiary shape. Each chain contains a haem prosthetic group with an Fe²⁺ ion that binds one O₂ molecule (four O₂ per haemoglobin molecule). The four chains interact cooperatively — binding of one O₂ increases the affinity for subsequent O₂ molecules (the basis of the sigmoidal O₂ dissociation curve).',
+        text: 'Haemoglobin is the red oxygen-carrying pigment in blood. It has a quaternary structure consisting of four polypeptide chains: two α-chains and two β-chains, each folded independently into a globular tertiary shape. Each chain contains a haem prosthetic group with an Fe²⁺ ion that binds one O₂ molecule (four O₂ per haemoglobin molecule). Hydrophilic R groups on each subunit face outwards, maintaining solubility in blood plasma. The four chains interact cooperatively — binding of one O₂ alters the quaternary structure, increasing affinity for subsequent O₂ molecules (the basis of the sigmoidal O₂ dissociation curve). If the amino acid sequence of any subunit changes, the properties of haemoglobin change — for example, in sickle cell anaemia a single amino acid substitution in the β-chain causes molecules to polymerise under low oxygen conditions.',
+      },
+    },
+
+    // ── Collagen ─────────────────────────────────────────────────────────────────
+    {
+      id: 'h-collagen',
+      type: 'heading',
+      data: { text: 'Collagen — Structure of a Fibrous Protein', level: 2 },
+    },
+    {
+      id: 'p-collagen',
+      type: 'paragraph',
+      data: {
+        text: 'Collagen is the most common structural protein in vertebrates. It provides structural support to connective tissues (tendons, ligaments, skin, bone matrix). Collagen fibres are positioned so that they are aligned with the forces applied to the tissue they support.',
+      },
+    },
+    {
+      id: 'list-collagen',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Almost every third amino acid is glycine — glycine is the smallest amino acid (R group = −H), so it fits into the tightly packed centre of the triple helix without steric clashes',
+          'High proportions of proline and hydroxyproline are also present; their R groups repel each other, adding rigidity and stability to the helical structure',
+          'Three polypeptide chains wind together to form a right-handed triple helix (each individual chain first coils into a left-handed helix before winding with the others) — this assembly occurs inside the lumen of the rough endoplasmic reticulum',
+          'Covalent cross-linkages form between adjacent collagen fibrils outside the cell, greatly increasing the tensile strength of collagen fibres',
+          'Collagen is insoluble in water — the collagen molecules are too large and long to dissolve, which suits its structural role',
+        ],
+      },
+    },
+    {
+      id: 'callout-collagen-key',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Collagen — Exam Key Points',
+        text: 'Every 3rd amino acid = glycine (smallest, fits triple helix centre). Triple helix = 3 polypeptide chains wound together (forms in ER lumen). High proline/hydroxyproline content → rigidity. Covalent cross-linkages between fibrils → tensile strength. Insoluble in water. Collagen is the most abundant structural protein in vertebrates.',
       },
     },
 
@@ -238,10 +275,11 @@ export const note_biology_1_2_8 = {
       data: {
         items: [
           { text: 'Describe secondary structure: α-helix (backbone H-bonds, spiral) and β-pleated sheet (parallel chain H-bonds)', checked: false },
-          { text: 'List the three bond types maintaining tertiary structure: H-bonds (weak, many), ionic bonds (pH-sensitive), disulfide bridges (covalent, strongest)', checked: false },
+          { text: 'List the bond types maintaining tertiary structure: H-bonds (weak, many), ionic bonds (pH-sensitive), disulfide bridges (covalent, strongest), hydrophobic interactions', checked: false },
           { text: 'Explain denaturation: H-bonds and ionic bonds broken by heat/pH change; peptide bonds (primary structure) are intact', checked: false },
           { text: 'Define quaternary structure as two or more polypeptide chains held together', checked: false },
-          { text: 'Name haemoglobin as a quaternary protein with 4 chains (2α + 2β)', checked: false },
+          { text: 'Name haemoglobin as a quaternary protein with 4 chains (2α + 2β); describe hydrophilic R groups facing outwards + cooperative O₂ binding', checked: false },
+          { text: 'Describe collagen: every 3rd = glycine; triple helix; proline/hydroxyproline stability; covalent cross-linkages; insoluble', checked: false },
           { text: 'Compare fibrous (structural, insoluble, e.g. collagen) with globular (soluble, biochemical roles, e.g. enzymes)', checked: false },
         ],
       },
@@ -250,7 +288,7 @@ export const note_biology_1_2_8 = {
       id: 'summary-protein-structure',
       type: 'summary',
       data: {
-        text: "Secondary structure (α-helix and β-pleated sheet) forms from hydrogen bonds along the polypeptide backbone. Tertiary structure is the overall 3D fold, maintained by H-bonds, ionic bonds, and disulfide bridges between R-groups — its shape determines the protein's function. Quaternary structure involves two or more polypeptide chains held together (e.g. haemoglobin, 4 chains). Denaturation disrupts secondary and tertiary structure (H-bonds and ionic bonds) without breaking peptide bonds. Fibrous proteins (e.g. collagen) are structural and insoluble; globular proteins (e.g. enzymes, haemoglobin) are soluble and carry out biochemical roles.",
+        text: "Secondary structure (α-helix and β-pleated sheet) forms from hydrogen bonds along the polypeptide backbone. Tertiary structure is the overall 3D fold, maintained by H-bonds, ionic bonds, disulfide bridges, and hydrophobic interactions between R-groups — its shape determines function. Quaternary structure involves two or more polypeptide chains (e.g. haemoglobin: 2α + 2β chains, haem groups, cooperative O₂ binding, hydrophilic R groups face outwards). Collagen: most abundant vertebrate structural protein; every 3rd amino acid = glycine; triple helix; high proline content; covalent cross-linkages; insoluble. Denaturation disrupts H-bonds and ionic bonds without breaking peptide bonds. Fibrous proteins (e.g. collagen) are structural and insoluble; globular proteins (e.g. enzymes, haemoglobin) are soluble and carry out biochemical roles.",
       },
     },
   ],

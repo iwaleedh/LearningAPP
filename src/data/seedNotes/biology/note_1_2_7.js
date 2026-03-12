@@ -265,7 +265,7 @@ export const note_biology_1_2_7 = {
       id: 'p-primary',
       type: 'paragraph',
       data: {
-        text: "The sequence of amino acids in a polypeptide chain is the protein's primary structure. This sequence is encoded in the gene for that polypeptide and is the same in all molecules of a particular protein. Changing even a single amino acid can alter the protein's three-dimensional shape and prevent it from carrying out its normal function.",
+        text: "The primary structure of a protein is the specific sequence of amino acids in its polypeptide chain. It is encoded in the gene for that polypeptide and is the same in all molecules of a particular protein. The sequence, type and number of amino acids in the polypeptide chain determines the protein's three-dimensional shape, and therefore its function. Changing even a single amino acid can alter the protein's shape and prevent it from carrying out its normal function.",
       },
     },
     {

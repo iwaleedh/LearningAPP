@@ -8,12 +8,12 @@ export const note_biology_1_2_11 = {
     {
       id: 'h-nucleotide',
       type: 'heading',
-      data: { text: 'DNA Nucleotide Structure', level: 2 },
+      data: { text: 'Nucleotide Structure', level: 2 },
     },
     {
       id: 'p-nucleotide',
       type: 'paragraph',
-      data: { text: 'DNA (deoxyribonucleic acid) is a polynucleotide \u2014 a polymer made of nucleotide monomers joined by phosphodiester bonds.' },
+      data: { text: 'DNA (deoxyribonucleic acid) and RNA (ribonucleic acid) are both polynucleotides — polymers made of nucleotide monomers joined by phosphodiester bonds.' },
     },
     {
       id: 'list-nucleotide',
@@ -21,11 +21,26 @@ export const note_biology_1_2_11 = {
       data: {
         style: 'bullet',
         items: [
-          'Each DNA <strong>nucleotide</strong> consists of three components: a <strong>deoxyribose</strong> (5-carbon sugar) + a <strong>phosphate</strong> group + one of four nitrogenous <strong>bases</strong>.',
-          'The four bases in DNA: <strong>adenine (A)</strong>, <strong>thymine (T)</strong>, <strong>cytosine (C)</strong>, <strong>guanine (G)</strong>.',
-          'Purines (double ring): adenine and guanine.',
-          'Pyrimidines (single ring): cytosine and thymine (in DNA) or uracil (in RNA; replaces thymine).',
-          'Adjacent nucleotides in the same strand are joined by <strong>phosphodiester bonds</strong> (condensation reaction between the phosphate of one nucleotide and the 3\'\u2013OH of the next sugar).',
+          'Each <strong>nucleotide</strong> consists of three components: a <strong>pentose sugar</strong> (5-carbon) + a <strong>phosphate</strong> group + one nitrogenous <strong>base</strong>.',
+          '<strong>DNA nucleotide</strong>: deoxyribose sugar (H at the 2′ carbon) + phosphate + one of four bases: <strong>adenine (A)</strong>, <strong>thymine (T)</strong>, <strong>cytosine (C)</strong>, <strong>guanine (G)</strong>.',
+          '<strong>RNA nucleotide</strong>: ribose sugar (−OH at the 2′ carbon) + phosphate + one of four bases: <strong>A, C, G</strong>, and <strong>uracil (U)</strong> instead of thymine.',
+          '<strong>Purines</strong> (double ring): adenine (A) and guanine (G) — present in both DNA and RNA.',
+          '<strong>Pyrimidines</strong> (single ring): cytosine (C), thymine (T, DNA only), uracil (U, RNA only).',
+          'Adjacent nucleotides in the same strand are joined by <strong>phosphodiester bonds</strong> — formed by condensation between the phosphate group of one nucleotide and the 3′−OH of the next sugar; each phosphodiester bond consists of two ester bonds and one phosphate group, linking the 5′ carbon of one sugar to the 3′ carbon of the next.',
+        ],
+      },
+    },
+    {
+      id: 'table-dna-rna-nucleotide',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Comparison of DNA and RNA nucleotides',
+        headers: ['Feature', 'DNA nucleotide', 'RNA nucleotide'],
+        rows: [
+          ['Sugar', 'Deoxyribose (H at 2′ carbon)', 'Ribose (−OH at 2′ carbon)'],
+          ['Bases', 'A, T, C, G', 'A, U, C, G (uracil instead of thymine)'],
+          ['Strand', 'Forms double-stranded DNA', 'Remains/acts as single strand'],
+          ['Role of molecule', 'Long-term genetic storage', 'Transport/functional molecule (shorter molecular lifespan)'],
         ],
       },
     },
@@ -141,6 +156,15 @@ export const note_biology_1_2_11 = {
         style: 'worked',
         title: 'Worked Example: Chargaff’s Rule',
         text: 'A DNA sample contains 22% thymine (T).\n\nStep 1: Since A pairs with T, %A = %T = 22%.\nStep 2: %A + %T = 22% + 22% = 44%.\nStep 3: %C + %G = 100% \u2212 44% = 56%.\nStep 4: Since C pairs with G, %C = %G = 56% \u00f7 2 = 28%.\n\nAnswer: A = 22%, T = 22%, C = 28%, G = 28%.',
+      },
+    },
+    {
+      id: 'callout-bonds-tip',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Examiner Tip — Bond Types in DNA',
+        text: 'Phosphodiester bonds join nucleotides together within the same strand (the sugar-phosphate backbone) — these are covalent bonds formed by condensation. Hydrogen bonds join the complementary bases of the two strands to each other: A paired with T (2 hydrogen bonds) and G paired with C (3 hydrogen bonds). Do not confuse these two bond types.',
       },
     },
     {

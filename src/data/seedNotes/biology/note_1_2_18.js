@@ -98,6 +98,24 @@ export const note_biology_1_2_18 = {
       },
     },
     {
+      id: 'callout-specific-values',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Specific Values to Know',
+        text: 'Optimum temperature: most human/mammalian enzymes have an optimum of approximately 35–40°C (body temperature ~37°C). Above the optimum, denaturation occurs rapidly.\n\nOptimum pH examples:\n• Pepsin (stomach protease): pH 2\n• Urease: pH 7\n• Trypsin (pancreatic protease): pH 8\n\nEach enzyme has its own specific optimum pH because its active site R groups are ionised appropriately at that pH.',
+      },
+    },
+    {
+      id: 'callout-initial-rate',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Calculating Initial Rate of Reaction',
+        text: 'The initial rate is the fastest rate, measured from the steepest part of the graph at time = 0 (before substrate is depleted).\n\nMethod: draw a tangent to the curve at t = 0, then calculate:\n\n  Rate = rise ÷ run\n\nExample: if a tangent rises 70 cm³ over 3.5 s:\n  Rate = 70 ÷ 3.5 = 20 cm³ s⁻¹\n\nUsing initial rates prevents the confounding effect of substrate depletion as the reaction proceeds.',
+      },
+    },
+    {
       id: 'h-variables-cp4',
       type: 'heading',
       data: { text: 'Variables Table (Substrate Concentration Investigation)', level: 2 },
@@ -125,7 +143,7 @@ export const note_biology_1_2_18 = {
       data: {
         style: 'tip',
         title: 'Exam Tips — CP4',
-        text: '• "How would you measure the initial rate?" — Use the gradient of the graph in the first 10–30 s (before substrate is used up); draw a tangent to the curve at t=0.\n• "Why use a buffer?" — Buffer maintains constant pH; without it, H₂O₂ decomposition may alter pH, which would also affect enzyme activity and confound results.\n• "Why is the rate at Vmax constant even if you add more substrate?" — All enzyme active sites are already occupied (rate-limiting step is enzyme-substrate complex turnover, not collision frequency).\n• "Why are results repeated?" — To check for anomalies and improve reliability of the mean.',
+        text: '• "How would you measure the initial rate?" — Use the gradient of the graph in the first 10–30 s (before substrate is used up); draw a tangent to the curve at t=0.\n• "Why use a buffer?" — Buffer maintains constant pH; without it, H₂O₂ decomposition may alter pH, which would also affect enzyme activity and confound results.\n• "Why is the rate at Vmax constant even if you add more substrate?" — All enzyme active sites are already occupied (rate-limiting step is enzyme-substrate complex turnover, not collision frequency).\n• "Why are results repeated?" — To check for anomalies and improve reliability of the mean.\n• "How do you prevent substrate being a limiting factor?" — Provide an abundance (excess) of substrate when investigating the effect of enzyme concentration, pH, or temperature.',
       },
     },
     {
