@@ -71,6 +71,15 @@ export const note_biology_2_3_1 = {
       },
     },
     {
+      type: 'callout',
+      id: 'callout-protein-secretion',
+      data: {
+        title: 'Pathway of Protein Secretion',
+        text: 'The production of extracellular enzymes and proteins follows a specific sequence:\n1. **Nucleus:** Transcription of the DNA code produces mRNA.\n2. **Ribosomes (on RER):** Translation of mRNA to produce proteins.\n3. **RER:** Proteins pass into the lumen where they are folded and processed, then pinched off in vesicles.\n4. **Golgi apparatus:** Receives vesicles at the cis face, modifies proteins, and repackages them into vesicles at the trans face.\n5. **Cell surface membrane:** Secretory vesicles fuse with the membrane, releasing proteins via exocytosis.',
+        style: 'key',
+      },
+    },
+    {
       type: 'heading',
       id: 'h-ribosomes-lyso',
       data: { text: 'Ribosomes, Lysosomes, and Other Organelles', level: 3 },

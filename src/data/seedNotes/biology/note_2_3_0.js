@@ -9,6 +9,40 @@ export const note_biology_2_3_0 = {
     },
     {
       type: 'heading',
+      id: 'h-cell-theory',
+      data: { text: 'Cell Theory and the Cell as a Unit of Life', level: 2 },
+    },
+    {
+      type: 'paragraph',
+      id: 'p-cell-theory',
+      data: {
+        text: 'Until microscopes became powerful enough to view individual cells, no-one knew for certain what living organisms were made from. Robert Hooke was the first to use the term \'cell\'. Later, Matthias Schleiden and Theodor Schwann studied animal and plant cells, leading to the idea that all living organisms are made of cells.',
+      },
+    },
+    {
+      type: 'callout',
+      id: 'callout-cell-theory',
+      data: {
+        title: 'Cell Theory',
+        text: 'The cell theory is a universally accepted unifying concept in biology consisting of three main ideas: (1) All living organisms are made up of one or more cells. (2) Cells are the basic functional unit in living organisms. (3) New cells are produced from pre-existing cells.',
+        style: 'key',
+      },
+    },
+    {
+      type: 'list',
+      id: 'list-common-features',
+      data: {
+        style: 'bullet',
+        items: [
+          'The cells of all living organisms share common features: a cell surface membrane, cytoplasm, DNA, and ribosomes.',
+          'Prokaryotic cells have no internal membranes and smaller (70S) ribosomes.',
+          'Eukaryotic cells have several internal membrane-bound organelles and larger (80S) ribosomes.',
+          'Cell ultrastructure refers to the detailed internal structures of these cells visible under a microscope.',
+        ],
+      },
+    },
+    {
+      type: 'heading',
       id: 'h-hierarchy',
       data: { text: 'Hierarchical Organisation of Life', level: 2 },
     },
@@ -149,6 +183,11 @@ export const note_biology_2_3_0 = {
     enabled: true,
     cues: [
       {
+        id: 'cue-0',
+        blockId: 'callout-cell-theory',
+        prompt: 'What are the three main ideas of the cell theory?'
+      },
+      {
         id: 'cue-1',
         blockId: 'h-hierarchy',
         prompt: 'What is the hierarchical order of biological organisation, and what is an emergent property?',
@@ -169,7 +208,7 @@ export const note_biology_2_3_0 = {
         prompt: 'What is a stem cell, and how does differential gene expression lead to cellular differentiation?',
       },
     ],
-    summaryText: 'Biological organisation proceeds from cells to tissues (groups of similar cells with same function) to organs (tissues integrated into structures) to organ systems (organs coordinating major functions) to organisms. Emergent properties appear at each level: epithelial tissues enable diffusion; organs enable integrated gas exchange; organ systems enable homeostatic control. Stem cells differentiate through differential gene expression into specialised cell types.',
+    summaryText: 'Cell Theory states living things consist of cells, which are the basic unit of life arising from pre-existing cells. Biological organisation proceeds from cells to tissues (groups of similar cells with same function) to organs (tissues integrated into structures) to organ systems (organs coordinating major functions) to organisms. Emergent properties appear at each level: epithelial tissues enable diffusion; organs enable integrated gas exchange; organ systems enable homeostatic control. Stem cells differentiate through differential gene expression into specialised cell types.',
     ready: false,
   },
   evidence: [
