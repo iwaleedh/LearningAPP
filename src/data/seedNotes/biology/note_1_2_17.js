@@ -85,6 +85,15 @@ export const note_biology_1_2_17 = {
       },
     },
     {
+      id: 'callout-limitations',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Limitations and Solutions',
+        text: '\u2022 Cuvettes may vary in glass thickness \u2192 biased absorbance readings \u2192 solution: use the same cuvette for all samples (rinse with distilled water between measurements)\n\u2022 Beetroot pieces may not be identical in size \u2192 variation in surface area and betalain content \u2192 solution: measure and cut carefully with scalpel and ruler; repeat to get a mean\n\u2022 Different regions of the same beetroot may have different betalain concentrations \u2192 systematic variation \u2192 solution: use pieces from the same region; repeat with different parts and calculate mean\n\u2022 Water bath temperature may fluctuate \u2192 imprecise control of IV \u2192 solution: use a calibrated thermometer; allow time for equilibration before adding beetroot',
+      },
+    },
+    {
       id: 'h-risk',
       type: 'heading',
       data: { text: 'Risk Assessment', level: 2 },
@@ -108,8 +117,18 @@ export const note_biology_1_2_17 = {
       data: {
         style: 'tip',
         title: 'Exam Tips — CP3',
-        text: '• "Explain why the cubes must be washed before the experiment" — Answer: to remove betalain from cells cut on the surface during preparation; if not washed, the initial solution would already be red, making it impossible to detect changes due to temperature.\n• "Why use a colorimeter rather than comparing colours by eye?" — Answer: colorimeter gives objective numerical data; human eye cannot reliably distinguish similar shades of red; allows quantitative comparison.\n• "Why must all cubes be the same size?" — Answer: same surface area to volume ratio → same diffusion pathway length → same rate of diffusion under standard conditions.',
+        text: '• "Explain why the cubes must be washed before the experiment" — Answer: to remove betalain from cells cut on the surface during preparation; if not washed, the initial solution would already be red, making it impossible to detect changes due to temperature.\n• "Why use a colorimeter rather than comparing colours by eye?" — Answer: colorimeter gives objective numerical data; human eye cannot reliably distinguish similar shades of red; allows quantitative comparison.\n• "How should the colorimeter be calibrated before use?" — Answer: zero (blank) the colorimeter using a cuvette of distilled water set to 0 absorbance before measuring any samples; this ensures all readings reflect only the betalain in solution, not background from the water or cuvette.\n• "Why must all cubes be the same size?" — Answer: same surface area to volume ratio → same diffusion pathway length → same rate of diffusion under standard conditions.',
       },
+    },
+    {
+      id: 'h-alcohol-variation',
+      type: 'heading',
+      data: { text: 'Variation: Effect of Alcohol Concentration', level: 2 },
+    },
+    {
+      id: 'p-alcohol-variation',
+      type: 'paragraph',
+      data: { text: 'The experiment can be adapted to investigate the effect of alcohol (ethanol) concentration on membrane permeability. Ethanol is a non-polar solvent that dissolves the phospholipid bilayer: as concentration increases, lipids are progressively dissolved, disrupting membrane structure and increasing permeability. More betalain leaks out, giving higher absorbance readings. Expected result: as ethanol concentration increases, membrane permeability increases and absorbance increases. Method is otherwise identical — prepare a range of ethanol concentrations (e.g. 0, 10, 20, 30, 40% v/v), keep temperature constant (e.g. 25°C), incubate for the same time, and measure absorbance at 530 nm.' },
     },
     {
       id: 'checklist-cp3',

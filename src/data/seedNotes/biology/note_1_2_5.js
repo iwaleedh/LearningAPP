@@ -39,6 +39,15 @@ export const note_biology_1_2_5 = {
       },
     },
     {
+      id: 'callout-tip-carrier',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Carrier Proteins, Not Channel Proteins',
+        text: 'Active transport uses CARRIER proteins \u2014 NOT channel proteins. Carrier proteins change shape (conformational change) when ATP is hydrolysed, using this energy to move molecules against their concentration gradient. Channel proteins are passive pores that only allow diffusion DOWN a gradient and cannot use ATP. Writing \u201cchannel proteins\u201d for active transport is a common error that loses marks.',
+      },
+    },
+    {
       id: 'svg-active',
       type: 'svg',
       data: {
@@ -61,6 +70,7 @@ export const note_biology_1_2_5 = {
           '<strong>Intestinal epithelial cells</strong> absorbing glucose from the small intestine (after most glucose has been absorbed by diffusion, active transport picks up the remainder against the gradient). These cells also have many mitochondria and microvilli (to increase surface area).',
           '<strong>Sodium-potassium pump (Na\u207a/K\u207a pump)</strong> in nerve and muscle cells \u2014 pumps 3 Na\u207a out and 2 K\u207a in per ATP molecule, maintaining resting membrane potential.',
           '<strong>Reabsorption in kidney tubules</strong> \u2014 glucose and amino acids are actively transported back into the blood from the tubule filtrate.',
+          '<strong>Phloem loading</strong> \u2014 sucrose produced by photosynthesis in leaf mesophyll cells is actively transported into phloem sieve tubes against a concentration gradient, for distribution throughout the plant. Companion cells (packed with mitochondria) supply the ATP required.',
         ],
       },
     },
@@ -81,7 +91,7 @@ export const note_biology_1_2_5 = {
         style: 'bullet',
         items: [
           '<strong>Endocytosis</strong> \u2014 the cell-surface membrane folds inward around a particle or droplet, pinching off to form a vesicle inside the cell. Two types: <em>phagocytosis</em> (large particles, e.g. bacteria engulfed by white blood cells) and <em>pinocytosis</em> (small droplets of fluid).',
-          '<strong>Exocytosis</strong> \u2014 a vesicle moves to the cell-surface membrane, fuses with it, and releases its contents outside the cell. Used to secrete hormones (e.g. insulin), neurotransmitters, and digestive enzymes.',
+          '<strong>Exocytosis</strong> \u2014 the Golgi apparatus packages secreted substances (hormones, enzymes, lipids) into secretory vesicles. These vesicles travel to and fuse with the cell-surface membrane, releasing their contents to the outside of the cell. Examples: secretion of insulin (from pancreatic \u03b2 cells), digestive enzymes (from pancreatic acinar cells), and mucus. Exocytosis is an active process requiring ATP.',
           'Both processes involve vesicle formation/fusion and require energy from ATP.',
         ],
       },

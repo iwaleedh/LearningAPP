@@ -88,7 +88,16 @@ export const note_biology_1_2_1 = {
       data: {
         style: 'key',
         title: 'Cartilage in Airways',
-        text: 'The trachea and bronchi have rings or sections of cartilage in their walls to prevent them collapsing when air pressure drops during inhalation. Smaller bronchioles lack cartilage — their walls contain only smooth muscle and elastic fibres, allowing them to contract and relax to regulate airflow.',
+        text: 'The trachea has C-shaped rings of cartilage in its walls. The C-shape (open at the back) is important: it keeps the trachea open during inhalation when air pressure drops, while the gap at the back allows the oesophagus (directly behind the trachea) to expand when swallowing food. The bronchi have cartilage in rings and plates. The smallest bronchioles lack cartilage entirely \u2014 their walls contain only smooth muscle and elastic fibres, allowing them to dilate and constrict to regulate airflow to different parts of the lung. The very smallest bronchioles have elastic fibres only.',
+      },
+    },
+    {
+      id: 'callout-cilia-mucus',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Cilia and Mucus \u2014 Keeping Airways Clear',
+        text: 'Goblet cells in the epithelium of the trachea and bronchi secrete mucus, which traps dust particles, bacteria, and other pathogens before they reach the alveoli. Cilia on the lining cells beat rhythmically to waft the mucus upwards along the airway towards the throat, where it is swallowed or expelled. This mucociliary escalator is a key first line of defence against respiratory infection. Cigarette smoke paralyses cilia, causing mucus to accumulate in the airways.',
       },
     },
     {

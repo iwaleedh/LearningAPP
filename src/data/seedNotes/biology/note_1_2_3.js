@@ -6,6 +6,24 @@ export const note_biology_1_2_3 = {
       data: { text: 'Describe the fluid mosaic model of membrane structure, including the roles of phospholipids, intrinsic and extrinsic proteins, glycoproteins, glycolipids, and cholesterol.' },
     },
     {
+      id: 'h-phospholipid',
+      type: 'heading',
+      data: { text: 'Phospholipid Structure', level: 2 },
+    },
+    {
+      id: 'p-phospholipid',
+      type: 'paragraph',
+      data: { text: 'A phospholipid has three parts: a glycerol backbone, a phosphate group (forming the hydrophilic head), and two fatty acid tails. The phosphate head is polar and hydrophilic (water-loving) — it interacts readily with water. The fatty acid tails are non-polar and hydrophobic (water-hating) — they are repelled by water. On a water surface, phospholipids form a monolayer: heads pointing into the water, tails projecting outward into air. In the cell membrane they form a bilayer: two layers arranged tail-to-tail, so all hydrophilic heads face the aqueous environments on either side (cytoplasm + extracellular fluid) and all hydrophobic tails are hidden in the non-aqueous interior. This self-assembly into a bilayer is the structural basis of all cell membranes.' },
+    },
+    {
+      id: 'svg-phospholipid',
+      type: 'svg',
+      data: {
+        caption: 'A single phospholipid molecule: hydrophilic phosphate head and glycerol backbone (top), and two hydrophobic fatty acid tails (below).',
+        svg: '<svg viewBox="0 0 300 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11"><rect width="300" height="230" fill="#f8f9ff" rx="8"/><text x="150" y="16" fill="#1f2937" font-size="12" font-weight="bold" text-anchor="middle">Phospholipid Molecule</text><circle cx="150" cy="55" r="25" fill="#6366f1"/><text x="150" y="51" fill="white" font-size="9" font-weight="bold" text-anchor="middle">Phosphate</text><text x="150" y="63" fill="white" font-size="9" text-anchor="middle">head</text><rect x="128" y="80" width="44" height="12" rx="3" fill="#8b5cf6"/><text x="150" y="90" fill="white" font-size="9" text-anchor="middle">Glycerol</text><line x1="138" y1="92" x2="112" y2="185" stroke="#d97706" stroke-width="7" stroke-linecap="round"/><line x1="162" y1="92" x2="188" y2="185" stroke="#d97706" stroke-width="7" stroke-linecap="round"/><text x="150" y="210" fill="#b45309" font-size="10" font-weight="bold" text-anchor="middle">Fatty acid tails (x2)</text><text x="184" y="57" fill="#6366f1" font-size="9" text-anchor="start">Hydrophilic</text><text x="184" y="69" fill="#6366f1" font-size="9" text-anchor="start">(water-loving)</text><text x="184" y="140" fill="#d97706" font-size="9" text-anchor="start">Hydrophobic</text><text x="184" y="152" fill="#d97706" font-size="9" text-anchor="start">(water-hating)</text></svg>',
+      },
+    },
+    {
       id: 'h-model',
       type: 'heading',
       data: { text: 'The Fluid Mosaic Model', level: 2 },
@@ -81,16 +99,50 @@ export const note_biology_1_2_3 = {
       },
     },
     {
+      id: 'h-models-history',
+      type: 'heading',
+      data: { text: 'Development of Membrane Models', level: 2 },
+    },
+    {
+      id: 'p-models-intro',
+      type: 'paragraph',
+      data: { text: 'The fluid mosaic model was not the first description of membrane structure. Earlier models were developed using the evidence available at the time; each was revised when new experimental techniques — especially electron microscopy — produced evidence that did not fit the existing model. This is a classic example of how scientific understanding develops.' },
+    },
+    {
+      id: 'table-models',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Evolution of membrane models driven by new experimental evidence.',
+        headers: ['Scientists (era)', 'Model proposed', 'Supporting evidence', 'Why it was revised / Problem'],
+        rows: [
+          ['Gorter & Grendel (1920s)', 'Phospholipid bilayer — lipids form two layers', 'Extracted lipids from red blood cell membranes; the lipid layer covered twice the surface area of the RBCs, showing lipids must be two molecules thick', 'Could not explain how lipid-insoluble substances crossed the membrane; did not account for the role of proteins'],
+          ['Davson & Danielli (1930s)', '"Protein–lipid–protein sandwich" — bilayer coated on both outer surfaces by protein layers', 'Electron micrographs showed two dark outer lines with a lighter central band — consistent with protein layers on either side of a lipid core', 'Freeze-etch electron microscopy revealed globular proteins distributed throughout the interior of the bilayer, not just on the surface; biochemical analysis showed membrane proteins have hydrophobic regions that must be buried inside the bilayer'],
+          ['Singer & Nicolson (1970s)', 'Fluid mosaic model — proteins are embedded at various depths in a fluid phospholipid bilayer', 'Freeze-etch EM showed proteins extending into the centre of the bilayer; biochemical evidence showed proteins can diffuse laterally within the membrane', 'Still the accepted model today'],
+        ],
+      },
+    },
+    {
+      id: 'callout-tip-models',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Why Models Change',
+        text: 'You do not need to memorise specific dates or scientists\' names. The key principle is: scientific models are revised when new evidence cannot be explained by the existing model. The Davson–Danielli model was replaced because freeze-etch electron microscopy showed globular proteins embedded throughout the bilayer interior — not just coating the surface as the sandwich model predicted. New technology → new evidence → model revised.',
+      },
+    },
+    {
       id: 'checklist-fmm',
       type: 'checklist',
       data: {
         items: [
+          { text: 'Name the three components of a phospholipid and state which is hydrophilic and which is hydrophobic', checked: false },
           { text: 'Describe the arrangement of phospholipids in the bilayer and explain why the tails face inward', checked: false },
           { text: 'Distinguish between intrinsic and extrinsic proteins and give a function for each', checked: false },
           { text: 'Explain the roles of glycoproteins and glycolipids in cell recognition', checked: false },
           { text: 'Describe how cholesterol stabilises membrane fluidity at both high and low temperatures', checked: false },
           { text: 'State which molecules can pass directly through the bilayer and which require proteins', checked: false },
           { text: 'Explain what "fluid" and "mosaic" mean in the fluid mosaic model', checked: false },
+          { text: 'Explain why the Davson–Danielli model was revised and what evidence led to the fluid mosaic model', checked: false },
         ],
       },
     },
@@ -103,13 +155,14 @@ export const note_biology_1_2_3 = {
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'callout-names', prompt: 'What does "fluid" mean in the fluid mosaic model? What does "mosaic" mean?' },
-      { id: 'cue-2', blockId: 'list-components', prompt: 'Name the six main components of the cell-surface membrane and a function for each.' },
-      { id: 'cue-3', blockId: 'table-permeability', prompt: 'Which small molecules can pass directly through the phospholipid bilayer? What route do ions take?' },
-      { id: 'cue-4', blockId: 'h-components', prompt: 'What is the difference between intrinsic and extrinsic membrane proteins?' },
+      { id: 'cue-1', blockId: 'p-phospholipid', prompt: 'Name the three parts of a phospholipid molecule. Which part is hydrophilic and which is hydrophobic?' },
+      { id: 'cue-2', blockId: 'callout-names', prompt: 'What does "fluid" mean in the fluid mosaic model? What does "mosaic" mean?' },
+      { id: 'cue-3', blockId: 'list-components', prompt: 'Name the six main components of the cell-surface membrane and a function for each.' },
+      { id: 'cue-4', blockId: 'table-permeability', prompt: 'Which small molecules can pass directly through the phospholipid bilayer? What route do ions take?' },
       { id: 'cue-5', blockId: 'list-components', prompt: 'Describe two roles of cholesterol in the cell-surface membrane.' },
+      { id: 'cue-6', blockId: 'table-models', prompt: 'Explain why the Davson–Danielli sandwich model was replaced by the fluid mosaic model. What experimental evidence triggered the change?' },
     ],
-    summaryText: 'Fluid mosaic model (Singer & Nicolson 1972): phospholipid bilayer \u2014 hydrophilic heads out, hydrophobic tails in. Fluid = lipids/proteins move laterally. Mosaic = proteins distributed throughout. Intrinsic = span bilayer (channels + carriers). Extrinsic = surface only (enzymes, receptors). Glycoproteins/glycolipids = cell recognition. Cholesterol = stabilises fluidity (prevents too fluid at high temp; too rigid at low temp). Small non-polar (O\u2082, CO\u2082) pass freely; ions/large molecules need protein channels/carriers.',
+    summaryText: 'Phospholipid structure: glycerol + phosphate head (hydrophilic, polar) + 2 fatty acid tails (hydrophobic, non-polar). Bilayer = tails hidden inside, heads face aqueous environments on both sides. Fluid mosaic model (Singer & Nicolson, 1972): fluid = phospholipids + proteins move laterally; mosaic = proteins scattered throughout. Intrinsic proteins span bilayer (channels + carriers); extrinsic on surface only (enzymes, receptors). Glycoproteins/glycolipids on outer surface = cell recognition. Cholesterol = stabilises fluidity. Model history: Gorter & Grendel (1920s) \u2192 bilayer; Davson & Danielli (1930s) \u2192 sandwich (proteins on surface); Singer & Nicolson (1970s) \u2192 fluid mosaic (proteins embedded throughout \u2014 freeze-etch EM evidence). Small non-polar (O\u2082, CO\u2082) cross freely; ions/large polar need protein channels/carriers.',
     ready: false,
   },
   evidence: [

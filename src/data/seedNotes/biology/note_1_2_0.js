@@ -31,6 +31,34 @@ export const note_biology_1_2_0 = {
       }
     },
     {
+      id: 'callout-we-ficks',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Applying Fick\'s Law',
+        text: 'A section of alveolar epithelium is 1.5 \u03bcm thick with a surface area of 3 \u03bcm\u00b2. O\u2082 concentration in the alveolus = 1.8\u00d710\u207b\u00b9\u2076 mol/L; in the blood = 7.5\u00d710\u207b\u00b9\u2077 mol/L. Permeability constant P = 0.012 molecule s\u207b\u00b9.\n\nRate = P \u00d7 A \u00d7 (C\u2081 \u2212 C\u2082) \u00f7 T\nConc. difference = 1.8\u00d710\u207b\u00b9\u2076 \u2212 7.5\u00d710\u207b\u00b9\u2077 = 1.05\u00d710\u207b\u00b9\u2076 mol/L\nRate = 0.012 \u00d7 3 \u00d7 (1.05\u00d710\u207b\u00b9\u2076 \u00f7 1.5)\nRate = 0.012 \u00d7 3 \u00d7 7\u00d710\u207b\u00b9\u2077\nRate = 2.52\u00d710\u207b\u00b9\u2078 molecules \u03bcm\u207b\u00b2 s\u207b\u00b9',
+      },
+    },
+    {
+      id: 'h-sav',
+      type: 'heading',
+      data: { text: 'Surface Area to Volume Ratio (SA:V)', level: 2 },
+    },
+    {
+      id: 'p-sav',
+      type: 'paragraph',
+      data: { text: 'As an organism increases in size, its volume increases faster than its surface area. This means larger organisms have a smaller surface area to volume ratio (SA:V ratio). For a single-celled organism, the SA:V ratio is large \u2014 every region of the cell is close to the surface, so diffusion alone is fast enough to supply oxygen and remove CO\u2082. As organisms become multicellular and larger, the SA:V ratio decreases: cells deep inside are too far from the surface for diffusion to supply them quickly. This is why multicellular organisms have evolved specialised gas exchange surfaces \u2014 such as alveoli in mammals, gills in fish, and spongy mesophyll in plant leaves \u2014 to maintain efficient gas exchange despite a small SA:V ratio.' },
+    },
+    {
+      id: 'callout-tip-sav',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Surface Area vs SA:V Ratio',
+        text: '"Surface area" and "SA:V ratio" are NOT the same thing. A larger organism has a greater absolute surface area than a smaller organism \u2014 but a much smaller SA:V ratio (because volume increases faster than surface area with increasing size). Exam questions commonly ask about SA:V ratio: the answer is that larger organisms have a SMALLER SA:V ratio, which is why they need specialised gas exchange systems.',
+      },
+    },
+    {
       id: 'h-adaptations',
       type: 'heading',
       data: {

@@ -24,7 +24,7 @@ export const note_biology_1_2_4 = {
           '<strong>Simple diffusion</strong> — molecules pass directly through the phospholipid bilayer without any protein assistance.',
           'Only <strong>small, non-polar</strong> molecules can do this (examples: O\u2082, CO\u2082, ethanol, steroid hormones).',
           'Large molecules, ions, and polar molecules cannot cross the hydrophobic lipid bilayer directly.',
-          'Rate increases with a steeper concentration gradient, a larger surface area, or a thinner membrane.',
+          'Rate increases with a steeper concentration gradient, a higher temperature, a larger surface area, or a thinner membrane.',
         ],
       },
     },
@@ -34,7 +34,21 @@ export const note_biology_1_2_4 = {
       data: {
         style: 'key',
         title: "Fick\u2019s Law",
-        text: 'Rate of diffusion \u221d (surface area \u00d7 concentration difference) \u00f7 thickness of exchange surface\n\nHigher surface area \u2192 faster diffusion\nHigher concentration gradient \u2192 faster diffusion\nThicker membrane \u2192 slower diffusion',
+        text: 'Rate of diffusion \u221d (surface area \u00d7 concentration difference) \u00f7 thickness of exchange surface\n\nHigher surface area \u2192 faster diffusion\nHigher concentration gradient \u2192 faster diffusion\nThicker membrane \u2192 slower diffusion\nHigher temperature \u2192 faster diffusion (increased kinetic energy)',
+      },
+    },
+    {
+      id: 'table-rate-factors',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Factors affecting the rate of diffusion across a membrane.',
+        headers: ['Factor', 'Effect on rate', 'Explanation'],
+        rows: [
+          ['Concentration gradient', 'Steeper \u2192 faster', 'More molecules on the high-concentration side at any moment \u2192 more cross per unit time; continues until equilibrium'],
+          ['Temperature', 'Higher \u2192 faster', 'Molecules have greater kinetic energy \u2192 move faster and collide with membrane more frequently \u2192 more cross per second'],
+          ['Surface area', 'Greater \u2192 faster', 'More membrane area available \u2192 more molecules can cross simultaneously (increased by folds: microvilli, cristae)'],
+          ['Properties of molecule', 'Small, non-polar \u2192 fastest', 'Small uncharged non-polar molecules (O\u2082, CO\u2082) dissolve in the hydrophobic tails and pass freely; large, polar, or charged molecules require channel or carrier proteins'],
+        ],
       },
     },
     {

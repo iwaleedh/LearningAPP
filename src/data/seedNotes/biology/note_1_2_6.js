@@ -25,6 +25,15 @@ export const note_biology_1_2_6 = {
       },
     },
     {
+      id: 'callout-free-water',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Free Water Molecules',
+        text: 'Water potential is a measure of the number of FREE water molecules. In pure water, all molecules are free to move \u2014 giving the maximum water potential (\u03c8 = 0 kPa). When a solute is dissolved, water molecules cluster around the solute ions or molecules to form hydration shells. These bound water molecules are no longer free to move and do not contribute to water potential. The more solute added \u2192 more bound water molecules \u2192 fewer free water molecules \u2192 lower (more negative) water potential. This is why dissolving a solute always lowers the water potential of a solution.',
+      },
+    },
+    {
       id: 'h-components',
       type: 'heading',
       data: { text: 'Components of Water Potential', level: 2 },
