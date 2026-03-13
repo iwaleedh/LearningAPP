@@ -58,40 +58,27 @@ export const note_biology_2_4_6 = {
     {
       type: 'heading',
       id: 'h-drug-testing',
-      data: { text: 'Testing Antimicrobial Efficacy: In Vitro Methods', level: 2 },
+      data: { text: 'Development of Drugs & Drug Testing', level: 2 },
     },
     {
       type: 'paragraph',
-      id: 'p-disk-diffusion',
+      id: 'p-withering',
       data: {
-        text: 'The disk diffusion method (also called the Kirby-Bauer method) is a standard in vitro (outside living organism) technique for testing antimicrobial activity. Procedure: (1) Prepare a bacterial culture (e.g. E. coli, Staphylococcus aureus) and spread uniformly on an agar plate (nutrient agar or Mueller-Hinton agar). (2) Cut sterile filter paper disks (~6 mm diameter) and soak them in the plant extract (or antibiotic solution). (3) Place the disks on the agar surface, pressing gently to ensure contact. (4) Incubate the plate at 25°C (or 37°C for human pathogens) for 24–48 hours. (5) Examine the plate for zones of inhibition (clear rings around the disk where bacteria have not grown, indicating antimicrobial activity). (6) Measure the diameter of each zone (mm). Larger zones indicate greater antimicrobial potency.',
+        text: 'Historically, drug testing was less rigorous. William Withering developed digitalis (from foxgloves) to treat dropsy using a trial-and-error "digitalis soup". He tested on a small group, adjusting the dose based on side effects. Modern drug testing is much safer and more strictly controlled.',
       },
     },
     {
-      type: 'paragraph',
-      id: 'p-zone-interpretation',
+      type: 'list',
+      id: 'list-clinical-trials',
       data: {
-        text: 'Zone diameter interpretation: a zone <6 mm (no inhibition) indicates the extract is inactive or weakly active. A zone 6–10 mm indicates weak activity. A zone 10–20 mm indicates moderate activity. A zone >20 mm indicates strong activity. These thresholds vary with the bacteria tested and the antibiotic standard. Controls are essential: (1) Positive control—a disk with a known antibiotic (e.g. penicillin) should produce a substantial zone, confirming the bacteria are susceptible and the method is working. (2) Negative control—a disk with sterile water or plain solvent should produce no zone, confirming the solvent itself has no antimicrobial effect. Only zones around the test extract (beyond negative control) are attributed to the extract.',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-in-vivo-testing',
-      data: { text: 'In Vivo and Clinical Testing', level: 2 },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-animal-models',
-      data: {
-        text: 'In vivo testing involves living organisms. Animal models (e.g. mice, rats) are used to test efficacy and toxicity. A candidate drug (plant extract or pure compound) is administered orally, intravenously, or topically, and effects are monitored: Does it cure the infection? What is the minimum effective dose? What are toxic effects (side effects, organ damage)? Does it harm beneficial microbiota? Animal testing is essential before human trials but raises ethical concerns (pain, death, replacement alternatives). The 3Rs principle guides ethical animal testing: Replace (use alternatives like in vitro, computer models), Reduce (minimise numbers), Refine (minimise suffering).',
-      },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-clinical-trials',
-      data: {
-        text: 'Clinical trials in humans proceed through phases: Phase I (safety, dose range, ~20–100 healthy volunteers), Phase II (efficacy, side effects, ~100–300 patient volunteers with the condition), Phase III (efficacy confirmation, comparison to standard treatment, ~1000–3000 patients, often randomised and blinded), Phase IV (long-term monitoring post-approval). The gold standard is a double-blind, placebo-controlled trial: neither patients nor doctors know who receives the drug versus placebo, eliminating bias. For antimicrobial drugs, clinical trials demonstrate whether the plant extract (or derived drug) actually treats the infection in humans, with acceptable side effects and cost.',
-      },
+        style: 'numbered',
+        items: [
+          '**Pre-clinical testing**: Tests on cultured cells, tissues, and animals to assess toxicity, safety, and potential efficacy before human use.',
+          '**Phase I Clinical Trials**: Conducted on a small group of healthy human volunteers (often male). The primary goal is to test for safety, side effects, and determine a safe dosage.',
+          '**Phase II Clinical Trials**: Tested on a larger group of patients who have the disease. Efficacy and optimal dosage are evaluated. This phase often introduces **placebos**: an inactive substance visually identical to the drug. This checks if the drug works better than the psychological placebo effect.',
+          '**Phase III Clinical Trials**: A large-scale trial involving hundreds or thousands of patients. It compares the new drug to existing standard treatments or placebos. These are typically **double-blind trials**: neither the patients nor the doctors know who is receiving the drug and who receives the placebo, reducing bias in reporting and treating symptoms.'
+        ],
+      }
     },
     {
       type: 'callout',

@@ -1,185 +1,307 @@
-/**
- * WBI15 — Topic 7.3: Krebs Cycle (Citric Acid Cycle)
- * Acetyl-CoA entry, intermediates, CO₂ & reducing power, ATP
- */
-
 export const note_biology_5_7_3 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand the Krebs cycle (citric acid cycle) as an 8-step cycle in the mitochondrial matrix, including acetyl-CoA entry, intermediate regeneration, and the production of CO₂, NADH, FADH₂, and ATP per turn.',
-      },
+        "id": "obj_3",
+        "type": "objective",
+        "data": {
+            "text": "Understand the Krebs cycle, intermediates, and production of ATP, reduced NAD, and reduced FAD."
+        }
     },
     {
-      id: 'h-krebs',
-      type: 'heading',
-      data: { text: 'The Krebs Cycle (Citric Acid Cycle)', level: 2 },
+        "id": "h_3_1",
+        "type": "heading",
+        "data": {
+            "text": "The Krebs Cycle",
+            "level": 3
+        }
     },
     {
-      id: 'p-overview',
-      type: 'paragraph',
-      data: {
-        text: 'The Krebs cycle (also called the citric acid cycle or TCA cycle) is a central metabolic pathway in the mitochondrial matrix. It accepts acetyl groups from Acetyl-CoA and oxidises them completely to CO₂, transferring the electrons to NAD⁺ and FAD. The cycle also generates one ATP per turn via substrate-level phosphorylation. It occurs once per Acetyl-CoA, so twice per glucose.',
-      },
+        "id": "p_3_2",
+        "type": "paragraph",
+        "data": {
+            "text": "The Krebs cycle (sometimes called the citric acid cycle) consists of a\u00a0series of enzyme-"
+        }
     },
     {
-      id: 'h-cycle',
-      type: 'heading',
-      data: { text: 'The Eight Steps of the Krebs Cycle', level: 3 },
+        "id": "h_3_3",
+        "type": "heading",
+        "data": {
+            "text": "controlled reactions",
+            "level": 3
+        }
     },
     {
-      id: 'list-cycle',
-      type: 'list',
-      data: {
-        style: 'numbered',
-        items: [
-          'Acetyl-CoA (2C) + Oxaloacetate (4C) → Citrate (6C) [citrate synthase]',
-          'Citrate → Isocitrate [aconitase]',
-          'Isocitrate → α-Ketoglutarate (5C) + CO₂ + NADH [isocitrate dehydrogenase]',
-          'α-Ketoglutarate → Succinyl-CoA (4C) + CO₂ + NADH [α-ketoglutarate dehydrogenase]',
-          'Succinyl-CoA → Succinate + ATP [succinyl-CoA synthetase, substrate-level phosphorylation]',
-          'Succinate → Fumarate + FADH₂ [succinate dehydrogenase]',
-          'Fumarate → Malate [fumarase]',
-          'Malate → Oxaloacetate + NADH [malate dehydrogenase]',
-        ],
-      },
+        "id": "p_3_4",
+        "type": "paragraph",
+        "data": {
+            "text": "2 carbon (2C) Acetyl CoA\u00a0enters the circular pathway from the\u00a0link reaction\u00a0in glucose"
+        }
     },
     {
-      id: 'p-regenerate',
-      type: 'paragraph',
-      data: {
-        text: 'The cycle is called a "cycle" because oxaloacetate (4C) is regenerated at the end, allowing it to condense with another Acetyl-CoA and repeat. This is crucial for the cycle to continue; without oxaloacetate regeneration, the cycle would stop.',
-      },
+        "id": "h_3_5",
+        "type": "heading",
+        "data": {
+            "text": "metabolism",
+            "level": 3
+        }
     },
     {
-      id: 'h-peryield',
-      type: 'heading',
-      data: { text: 'Products Per Turn and Per Glucose', level: 3 },
+        "id": "h_3_6",
+        "type": "heading",
+        "data": {
+            "text": "Acetyl CoA formed from\u00a0fatty acids\u00a0(after the breakdown of lipids)\u00a0and\u00a0amino",
+            "level": 3
+        }
     },
     {
-      id: 'table-yield',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Product', 'Per Turn (1 Acetyl-CoA)', 'Per Glucose (2 Acetyl-CoA)'],
-        rows: [
-          ['CO₂ released', '2', '4'],
-          ['NADH produced', '3', '6'],
-          ['FADH₂ produced', '1', '2'],
-          ['ATP (substrate-level)', '1', '2'],
-        ],
-        caption: 'Krebs cycle outputs per turn and per glucose',
-      },
+        "id": "h_3_7",
+        "type": "heading",
+        "data": {
+            "text": "acids\u00a0enters directly into the Krebs Cycle from other metabolic pathways",
+            "level": 3
+        }
     },
     {
-      id: 'p-nadh',
-      type: 'paragraph',
-      data: {
-        text: 'The three NADH molecules produced per turn come from three separate dehydrogenase reactions: isocitrate dehydrogenase (step 3), α-ketoglutarate dehydrogenase (step 4), and malate dehydrogenase (step 8). These NADH molecules are the primary products of the cycle that will be oxidised in the electron transport chain to generate most of the ATP.',
-      },
+        "id": "p_3_8",
+        "type": "paragraph",
+        "data": {
+            "text": "4 carbon (4C)\u00a0oxaloacetate\u00a0accepts the\u00a02C acetyl\u00a0fragment from acetyl CoA to form"
+        }
     },
     {
-      id: 'p-fadh',
-      type: 'paragraph',
-      data: {
-        text: 'The FADH₂ is produced in step 6 by succinate dehydrogenase (also called Complex II of the electron transport chain). This is the only redox reaction that produces FADH₂ instead of NADH; it reflects the lower redox potential of the FAD/FADH₂ couple compared to NAD⁺/NADH.',
-      },
+        "id": "h_3_9",
+        "type": "heading",
+        "data": {
+            "text": "the 6 carbon (6C)citrate",
+            "level": 3
+        }
     },
     {
-      id: 'h-regulation',
-      type: 'heading',
-      data: { text: 'Regulation of the Krebs Cycle', level: 3 },
+        "id": "h_3_10",
+        "type": "heading",
+        "data": {
+            "text": "Coenzyme A is released in this reaction to be reused in the next link reaction2",
+            "level": 3
+        }
     },
     {
-      id: 'p-regulation',
-      type: 'paragraph',
-      data: {
-        text: 'The Krebs cycle is regulated at three key points: (1) entry via acetyl-CoA availability (controlled by pyruvate dehydrogenase); (2) isocitrate dehydrogenase, which is inhibited by ATP and NADH (high energy signals); (3) α-ketoglutarate dehydrogenase, also inhibited by ATP and NADH. These feedback inhibitions ensure the cycle slows when energy is abundant and speeds up when energy is needed.',
-      },
+        "id": "p_3_11",
+        "type": "paragraph",
+        "data": {
+            "text": "Citrate is then converted back to oxaloacetate\u00a0through a series of oxidation-reduction"
+        }
     },
     {
-      id: 'callout-key-enzymes',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Key Enzymes: Isocitrate & α-Ketoglutarate Dehydrogenases',
-        text: 'Isocitrate dehydrogenase and α-ketoglutarate dehydrogenase are the main regulatory points of the Krebs cycle. Both are inhibited by ATP and NADH (signals of plenty) and activated by ADP (signal of need). This is classic allosteric feedback regulation.',
-      },
+        "id": "h_3_12",
+        "type": "heading",
+        "data": {
+            "text": "(redox) reactions",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'The Krebs cycle is an 8-step cycle in the mitochondrial matrix that completely oxidises the 2-carbon acetyl group from Acetyl-CoA to 2 CO₂. The cycle regenerates oxaloacetate (4C) and produces 3 NADH, 1 FADH₂, and 1 ATP per turn. These reducing equivalents are the major source of ATP via the electron transport chain.',
-        apply: 'Per glucose, how many NADH and FADH₂ molecules are produced in glycolysis, link reaction, and Krebs cycle combined? (Answer: 10 NADH, 2 FADH₂)',
-        analyze: 'Compare the roles of isocitrate dehydrogenase and α-ketoglutarate dehydrogenase. Why are these two enzymes chosen as regulatory points rather than other steps?',
-        evaluate: 'The Krebs cycle produces only 2 ATP directly per glucose (via substrate-level phosphorylation). Why is the cycle still considered the main ATP-producing stage of respiration?',
-      },
-      terms: [],
+        "id": "h_3_13",
+        "type": "heading",
+        "data": {
+            "text": "The Krebs Cycle uses acetyl CoA from the link reaction and the regeneration of",
+            "level": 3
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Name the eight intermediates of the Krebs cycle in order', checked: false },
-          { text: 'State the products of the Krebs cycle per turn and per glucose', checked: false },
-          { text: 'Identify isocitrate dehydrogenase and α-ketoglutarate dehydrogenase as regulatory enzymes', checked: false },
-          { text: 'Explain why oxaloacetate regeneration is essential', checked: false },
-          { text: 'Describe the three NADH-producing steps of the cycle', checked: false },
-        ],
-      },
+        "id": "h_3_14",
+        "type": "heading",
+        "data": {
+            "text": "oxaloacetate to produce reduced NAD, reduced FAD and ATP",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'The Krebs cycle oxidises acetyl groups to CO₂ in eight steps in the mitochondrial matrix. Per turn: 2 CO₂, 3 NADH, 1 FADH₂, 1 ATP. Per glucose: 4 CO₂, 6 NADH, 2 FADH₂, 2 ATP. Oxaloacetate is regenerated each turn, allowing the cycle to repeat. The cycle is regulated at isocitrate dehydrogenase and α-ketoglutarate dehydrogenase via feedback inhibition by ATP and NADH.',
-      },
+        "id": "h_3_15",
+        "type": "heading",
+        "data": {
+            "text": "Regeneration of oxaloacetate",
+            "level": 3
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'table-yield',
-        prompt: 'What are the products of one turn of the Krebs cycle? What is the total output per glucose?',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'list-cycle',
-        prompt: 'Name the eight steps of the Krebs cycle and the enzyme catalysing each.',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-nadh',
-        prompt: 'Which three enzymes of the Krebs cycle produce NADH? Where do they occur in the cycle?',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'callout-key-enzymes',
-        prompt: 'Identify the two main regulatory enzymes of the Krebs cycle and how they are regulated.',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-regenerate',
-        prompt: 'Why is the regeneration of oxaloacetate at the end of the cycle essential?',
-      },
-    ],
-    summaryText:
-      'Krebs cycle: 8-step cycle in mitochondrial matrix, oxidises Acetyl-CoA → 2 CO₂. Per turn: 3 NADH, 1 FADH₂, 1 ATP. Per glucose: 6 NADH, 2 FADH₂, 2 ATP. Oxaloacetate regenerated each turn. Key regulatory enzymes: isocitrate dehydrogenase and α-ketoglutarate dehydrogenase (inhibited by ATP, NADH).',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Central role in metabolism',
-      detail: 'Krebs cycle intermediates serve as precursors for amino acid and other biosynthetic pathways',
-      year: '—',
-      source: 'Biochemistry',
-      tags: ['central metabolism'],
+        "id": "p_3_16",
+        "type": "paragraph",
+        "data": {
+            "text": "Oxaloacetate is regenerated in the Krebs cycle through a series of\u00a0redox reactions"
+        }
     },
-  ],
+    {
+        "id": "h_3_17",
+        "type": "heading",
+        "data": {
+            "text": "Decarboxylation\u00a0of citrate",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_18",
+        "type": "heading",
+        "data": {
+            "text": "Releasing\u00a02 CO \u00a0as waste gas",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_19",
+        "type": "heading",
+        "data": {
+            "text": "Oxidation\u00a0(dehydrogenation) of citrate",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_20",
+        "type": "heading",
+        "data": {
+            "text": "Releasing H atoms that\u00a0reduce coenzymes NAD and FAD",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_21",
+        "type": "heading",
+        "data": {
+            "text": "These will be used during oxidative phosphorylation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_22",
+        "type": "heading",
+        "data": {
+            "text": "3 NAD and 1 FAD \u2192 \u00a03NADH + H\u00a0and 1 FADH",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_23",
+        "type": "heading",
+        "data": {
+            "text": "Substrate linked phosphorylation",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_3_24",
+        "type": "paragraph",
+        "data": {
+            "text": "A phosphate is transferred from one of the intermediates to ADP, forming\u00a01 ATP\u00a0to"
+        }
+    },
+    {
+        "id": "h_3_25",
+        "type": "heading",
+        "data": {
+            "text": "supply energy",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_26",
+        "type": "heading",
+        "data": {
+            "text": "Because\u00a0two acetyl-CoA molecules\u00a0are produced from each glucose molecule,\u00a0two",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_27",
+        "type": "heading",
+        "data": {
+            "text": "cycles are required per glucose\u00a0molecule",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_28",
+        "type": "heading",
+        "data": {
+            "text": "Therefore, at the end of two cycles, the\u00a0products are:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_29",
+        "type": "heading",
+        "data": {
+            "text": "Two ATP",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_30",
+        "type": "heading",
+        "data": {
+            "text": "2",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_31",
+        "type": "heading",
+        "data": {
+            "text": "Six NADH (reduced NAD)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_32",
+        "type": "heading",
+        "data": {
+            "text": "Two FADH (reduced FAD)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_33",
+        "type": "heading",
+        "data": {
+            "text": "Four CO2",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_34",
+        "type": "heading",
+        "data": {
+            "text": "2",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_3_35",
+        "type": "heading",
+        "data": {
+            "text": "Examiner Tips and Tricks",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_3_36",
+        "type": "paragraph",
+        "data": {
+            "text": "The Krebs cycle is often referred to as cyclical or circular. This is because the acceptor molecule oxaloacetate is regenerated throughout the reaction so that it can start all over again by adding another acetyl CoA."
+        }
+    },
+    {
+        "id": "h_3_37",
+        "type": "heading",
+        "data": {
+            "text": "You may be asked to name the important molecules in the Krebs cycle like",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_3_38",
+        "type": "paragraph",
+        "data": {
+            "text": "oxaloacetate and citrate. It is also worth noting how the number of carbon atoms in the substrate molecule"
+        }
+    }
+]
 };

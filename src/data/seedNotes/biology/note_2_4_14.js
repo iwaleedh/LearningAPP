@@ -32,7 +32,7 @@ export const note_biology_2_4_14 = {
         items: [
           'Fresh tissue preparation: obtain fresh stem or root samples; cut sections by hand with a clean, sharp razor blade or use a microtome (mechanical cutting device for uniform thickness). Hand-cut sections are often adequate for light microscopy, but microtome sections are thinner and more uniform',
           'Fixation and softening: soak sections in 50% ethanol or water for ~5 minutes to soften tissue and remove air',
-          'Staining: place sections in stain solution (phloroglucinol, safranin, or toluidine blue) for 5–10 minutes. Phloroglucinol stains lignin (xylem, sclerenchyma) bright red/magenta; safranin stains lignin red/orange; toluidine blue stains nuclei and cell walls pale blue',
+          'Staining: place sections in stain solution (phloroglucinol, safranin, or toluidine blue O) for 5–10 minutes. Phloroglucinol stains lignin (xylem, sclerenchyma) bright red/magenta; safranin stains lignin red/orange; toluidine blue O (TBO) stains xylem and sclerenchyma fibres blue-green, and phloem and other soft tissues pinkish purple',
           'Rinsing: wash sections gently with distilled water to remove excess stain',
           'Mounting: place section on a glass slide with a drop of distilled water or mounting medium (glycerol or resin); carefully lower a coverslip to avoid air bubbles and cell damage',
           'Observation: examine under light microscope, starting at low magnification (×4 or ×10) to locate tissues, then switching to higher magnification (×40) for detail',
@@ -119,7 +119,7 @@ export const note_biology_2_4_14 = {
       type: 'summary',
       id: 'sum-prac-7',
       data: {
-        text: 'Core Practical 7: cut thin plant tissue sections (hand or microtome), soak in water/ethanol, stain with phloroglucinol (lignin→red, identifies xylem/sclerenchyma) or safranin/toluidine blue, rinse, mount with coverslip, observe ×40. Identify: epidermis (outer, thin), cortex (parenchyma, layers), vascular bundles (xylem inner/red, phloem outer/light), pith (parenchyma, centre). Root similar but no pith. Measure using eyepiece graticule (calibrated against stage micrometer at each magnification). Calculate actual size = graticule reading × calibration. Errors: uneven thickness (use microtome), over-staining (dilute), air bubbles (careful mounting), incomplete staining (longer time), tissue damage (sharp blade, gentle). Improvements: use microtome, multiple measurements, compare with EM images.',
+        text: 'Core Practical 7: cut thin plant tissue sections (hand or microtome), soak in water/ethanol, stain with phloroglucinol (lignin→red, identifies xylem/sclerenchyma) or safranin or toluidine blue O (TBO: xylem/sclerenchyma→blue-green, phloem→pinkish purple), rinse, mount with coverslip, observe ×40. Identify: epidermis (outer, thin), cortex (parenchyma, layers), vascular bundles (xylem inner/red, phloem outer/light), pith (parenchyma, centre). Root similar but no pith. Measure using eyepiece graticule (calibrated against stage micrometer at each magnification). Calculate actual size = graticule reading × calibration. Errors: uneven thickness (use microtome), over-staining (dilute), air bubbles (careful mounting), incomplete staining (longer time), tissue damage (sharp blade, gentle). Improvements: use microtome, multiple measurements, compare with EM images.',
       },
     },
   ],

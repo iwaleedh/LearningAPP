@@ -71,7 +71,7 @@ export const note_biology_2_4_0 = {
       type: 'paragraph',
       id: 'p-plasmo-def',
       data: {
-        text: 'Plasmodesmata (singular: plasmodesma) are microscopic tunnels through plant cell walls, connecting the cytoplasm of adjacent cells. Each plasmodesma is lined by the plasma membrane of both cells and contains a central rod called the desmotubule (derived from the smooth ER). Plasmodesmata allow direct cytoplasmic continuity, enabling transport of ions, sugars, amino acids, and even proteins and RNA between cells, without molecules entering the apoplast (the non-living space outside the plasma membrane, consisting of cell walls and intercellular spaces). This cytoplasmic continuity is called the symplast. Plasmodesmata are especially abundant in metabolically active tissues (phloem, growing meristems) and during development.',
+        text: 'Plasmodesmata (singular: plasmodesma) are microscopic tunnels through plant cell walls, connecting the cytoplasm of adjacent cells. Each plasmodesma is lined by the plasma membrane of both cells and contains a central rod called the desmotubule (derived from the smooth ER). Plasmodesmata allow direct cytoplasmic continuity, enabling transport of ions, sugars, amino acids, and even proteins and RNA between cells, without molecules entering the apoplast. This interconnected system of cytoplasm between plant cells is known as the symplast. Pits are very thin regions of the cell wall formed due to the absence of secondary thickening where plasmodesmata are present. The pits in adjacent plant cells are lined up in pairs, allowing for the transport of substances between cells (e.g. lateral flow of water in xylem).',
       },
     },
     {

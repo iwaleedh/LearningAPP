@@ -1,3 +1,12 @@
+import { note_biology_4_5_15 } from './biology/note_4_5_15.js';
+import { note_biology_4_5_17 } from './biology/note_4_5_17.js';
+import { note_biology_4_5_18 } from './biology/note_4_5_18.js';
+import { note_biology_4_5_21 } from './biology/note_4_5_21.js';
+import { note_biology_4_5_22 } from './biology/note_4_5_22.js';
+import { note_biology_4_5_23 } from './biology/note_4_5_23.js';
+import { note_biology_4_5_24 } from './biology/note_4_5_24.js';
+import { note_biology_4_5_25 } from './biology/note_4_5_25.js';
+import { note_biology_4_5_26 } from './biology/note_4_5_26.js';
 /**
  * Seed Notes Index
  * Pre-populated note content for first-time note creation.
@@ -82,6 +91,12 @@ import { note_biology_4_5_8 } from './biology/note_4_5_8.js';
 import { note_biology_4_5_9 } from './biology/note_4_5_9.js';
 import { note_biology_4_5_10 } from './biology/note_4_5_10.js';
 import { note_biology_4_5_11 } from './biology/note_4_5_11.js';
+import { note_biology_4_5_12 } from './biology/note_4_5_12.js';
+import { note_biology_4_5_13 } from './biology/note_4_5_13.js';
+import { note_biology_4_5_14 } from './biology/note_4_5_14.js';
+import { note_biology_4_5_16 } from './biology/note_4_5_16.js';
+import { note_biology_4_5_19 } from './biology/note_4_5_19.js';
+import { note_biology_4_5_20 } from './biology/note_4_5_20.js';
 
 // WBI14 — Topic 6: Microbiology, Immunity & Forensics
 import { note_biology_4_6_0 } from './biology/note_4_6_0.js';
@@ -122,6 +137,9 @@ import { note_biology_5_7_15 } from './biology/note_5_7_15.js';
 import { note_biology_5_7_16 } from './biology/note_5_7_16.js';
 import { note_biology_5_7_17 } from './biology/note_5_7_17.js';
 import { note_biology_5_7_18 } from './biology/note_5_7_18.js';
+import { note_biology_5_7_19 } from './biology/note_5_7_19.js';
+import { note_biology_5_7_20 } from './biology/note_5_7_20.js';
+import { note_biology_5_7_21 } from './biology/note_5_7_21.js';
 import { note_biology_5_8_0 } from './biology/note_5_8_0.js';
 import { note_biology_5_8_1 } from './biology/note_5_8_1.js';
 import { note_biology_5_8_2 } from './biology/note_5_8_2.js';
@@ -687,6 +705,12 @@ export const seedNotes = {
     'biology:4:5:9': note_biology_4_5_9,
     'biology:4:5:10': note_biology_4_5_10,
     'biology:4:5:11': note_biology_4_5_11,
+    'biology:4:5:12': note_biology_4_5_12,
+    'biology:4:5:13': note_biology_4_5_13,
+    'biology:4:5:14': note_biology_4_5_14,
+    'biology:4:5:16': note_biology_4_5_16,
+    'biology:4:5:19': note_biology_4_5_19,
+    'biology:4:5:20': note_biology_4_5_20,
 
     // WBI14 — Topic 6: Microbiology, Immunity & Forensics
     'biology:4:6:0': note_biology_4_6_0,
@@ -727,6 +751,9 @@ export const seedNotes = {
     'biology:5:7:16': note_biology_5_7_16,
     'biology:5:7:17': note_biology_5_7_17,
     'biology:5:7:18': note_biology_5_7_18,
+    'biology:5:7:19': note_biology_5_7_19,
+    'biology:5:7:20': note_biology_5_7_20,
+    'biology:5:7:21': note_biology_5_7_21,
 
     // WBI16 — Topic 6A: Practical Skills II
     'biology:5:8:0': note_biology_5_8_0,

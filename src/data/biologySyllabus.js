@@ -127,48 +127,59 @@ export const biologySyllabus = {
             title: 'Energy, Environment, Microbiology and Immunity',
             topics: [
                 {
-                    id: 5,
+                                                                                                                        id: 5,
                     title: 'Topic 5: On the Wild Side',
                     subtopics: [
-                        'ATP structure',
-                        'Photosynthesis overview',
-                        'Light-dependent reactions',
-                        'Calvin cycle',
-                        'Absorption and action spectra',
-                        'Limiting factors in photosynthesis',
-                        'Ecosystems and food webs',
-                        'Energy transfer and trophic efficiency',
-                        'GPP and NPP',
-                        'Carbon cycle',
-                        'Succession',
-                        'Climate change evidence',
-                        'Climate change mitigation',
-                        'Population dynamics',
-                        'Core Practical 10: photosynthesis rate',
-                        'Core Practical 11: habitat ecology survey',
-                        'Core Practical 12: temperature and development',
+                        'Photosynthesis Overview', // 0
+                        'Light-Dependent Reactions', // 1
+                        'Calvin Cycle (Light-Independent)', // 2
+                        'Limiting Factors in Photosynthesis', // 3
+                        'Chromatography & Spectra', // 4
+                        'Gross and Net Photosynthesis', // 5
+                        'Core Practical 10: Photosynthesis Rate', // 6
+                        'Chromatography of Pigments (Method)', // 7
+                        'ATP Structure & Function', // 8
+                        'Cyclic vs Non-Cyclic Photophosphorylation', // 9
+                        'RuBisCO & Carbon Fixation', // 10
+                        'Leaf Adaptations for Photosynthesis', // 11
+                        'Ecosystems and food webs', // 12
+                        'Energy transfer and trophic efficiency', // 13
+                        'GPP and NPP', // 14
+                        'Carbon cycle', // 15
+                        'Succession', // 16
+                        'Climate change evidence', // 17
+                        'Predicting climate change & Effects', // 18
+                        'Population dynamics', // 19
+                        'Core Practical 11: habitat ecology survey', // 20
+                        'Temperature and Enzyme Reactions', // 21
+                        'Core Practical 12: temperature and development', // 22
+                        'Evolution and Natural Selection', // 23
+                        'Isolation and Speciation', // 24
+                        'Contentious Environmental Issues', // 25
+                        'Conservation and Sustainability' // 26
                     ],
                 },
                 {
-                    id: 6,
+                                                            id: 6,
                     title: 'Topic 6: Immunity, Infection and Forensics',
                     subtopics: [
-                        'Bacteria structure',
-                        'Virus structure and replication',
-                        'Bacterial growth curve',
-                        'Aseptic technique',
-                        'Pathogen mechanisms',
-                        'Non-specific immune response',
-                        'B cells and antibodies',
-                        'T cells',
-                        'Vaccination and immunity',
-                        'Antibiotic types',
-                        'Antibiotic resistance',
-                        'Decomposition',
-                        'Forensic time-of-death',
-                        'PCR and gel electrophoresis',
-                        'Core Practical 13: microbial growth rate',
-                        'Core Practical 14: antibiotic sensitivity',
+                        'Culturing Microorganisms', // 0
+                        'Measuring the Growth of Microorganisms', // 1
+                        'The Bacterial Growth Curve', // 2
+                        'Core Practical 13: Rate of Growth of Microorganisms', // 3
+                        'Comparison of Bacterial & Viral Structure', // 4
+                        'Tuberculosis & HIV', // 5
+                        'Pathogens: Routes of Entry', // 6
+                        'Non-Specific Immune Responses', // 7
+                        'Specific Immune Responses', // 8
+                        'Lymphocytes: Types & Roles', // 9
+                        'Developing Immunity', // 10
+                        'Antibiotics & Antibiotic Resistance', // 11
+                        'Infection Control & HCAIs', // 12
+                        'Core Practical 14: Antibiotic Sensitivity', // 13
+                        'Decomposition', // 14
+                        'Forensic Time of Death', // 15
+                        'PCR and DNA Profiling', // 16
                     ],
                 },
             ],
@@ -193,11 +204,14 @@ export const biologySyllabus = {
                         'Muscle ultrastructure',
                         'Sliding filament theory',
                         'Slow and fast twitch fibres',
+                        'Cardiac output and control of heart rate',
+                        'Control of ventilation rate',
+                        'The role of adrenaline',
                         'Homeostasis and negative feedback',
                         'Kidney structure',
                         'Ultrafiltration and reabsorption',
                         'Loop of Henle and ADH',
-                        'Blood glucose control',
+                        'Control of gene expression',
                         'Core Practical 15: yeast respiration',
                         'Core Practical 16: respirometer',
                         'Core Practical 17: exercise physiology',
@@ -222,6 +236,7 @@ export const biologySyllabus = {
                         'GM organism risks',
                         'Microarrays and bioinformatics',
                         'Core Practical 18: amylase in germination',
+                        'Nervous vs hormonal coordination',
                     ],
                 },
             ],

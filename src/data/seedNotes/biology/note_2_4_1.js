@@ -23,7 +23,7 @@ export const note_biology_2_4_1 = {
       type: 'paragraph',
       id: 'p-cellulose-function',
       data: {
-        text: 'Cellulose functions as the primary structural component of plant cell walls. The tensile strength of cellulose allows cell walls to resist the mechanical stresses of plant growth and environmental forces (wind, rain). Cellulose microfibrils form a network, often oriented in different directions in different wall layers, providing reinforcement in all directions. The cell wall\'s rigidity depends on cellulose; plants deficient in cellulose synthesis are dwarfed and weak. Cellulose is also the most abundant organic compound on Earth: estimates suggest ~50% of plant dry mass is cellulose, and forests represent a vast carbon reservoir in cellulose.',
+        text: 'Cellulose functions as the primary structural component of plant cell walls. The high tensile strength of cellulose allows it to be stretched without breaking, which makes it possible for cell walls to withstand turgor pressure as well as the mechanical stresses of plant growth and environmental forces (wind, rain). Cellulose microfibrils and other molecules (e.g. lignin) form a network (matrix), often oriented in different directions in different wall layers, providing reinforcement in all directions. The cell wall\'s rigidity depends on cellulose; plants deficient in cellulose synthesis are dwarfed and weak. Cellulose is also the most abundant organic compound on Earth: estimates suggest ~50% of plant dry mass is cellulose, and forests represent a vast carbon reservoir in cellulose.',
       },
     },
     {

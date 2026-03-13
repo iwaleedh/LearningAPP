@@ -1,189 +1,396 @@
-/**
- * WBI15 — Topic 7.5: Anaerobic Respiration
- * Fermentation, lactate & ethanol, NAD⁺ regeneration, EPOC
- */
-
 export const note_biology_5_7_5 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand anaerobic respiration in the absence of oxygen, including lactate fermentation in animals and alcoholic fermentation in yeast/plants, the regeneration of NAD⁺, ATP yield, and oxygen debt.',
-      },
+        "id": "obj_5",
+        "type": "objective",
+        "data": {
+            "text": "Understand anaerobic respiration, lactate production in animals, and ethanol in plants/yeast."
+        }
     },
     {
-      id: 'h-anaerobic',
-      type: 'heading',
-      data: { text: 'Anaerobic Respiration: Life Without Oxygen', level: 2 },
+        "id": "h_5_1",
+        "type": "heading",
+        "data": {
+            "text": "Anaerobic Respiration",
+            "level": 3
+        }
     },
     {
-      id: 'p-overview',
-      type: 'paragraph',
-      data: {
-        text: 'When oxygen is unavailable (anoxic conditions), the electron transport chain cannot operate because oxygen is the final electron acceptor. This halts NAD⁺ regeneration from NADH, which would quickly deplete the NAD⁺ pool and stop glycolysis. To maintain ATP production, cells use fermentation pathways: they regenerate NAD⁺ by reducing pyruvate, allowing glycolysis to continue at the expense of accumulating lactate or ethanol.',
-      },
+        "id": "h_5_2",
+        "type": "heading",
+        "data": {
+            "text": "Anaerobic Respiration",
+            "level": 3
+        }
     },
     {
-      id: 'h-lactate',
-      type: 'heading',
-      data: { text: 'Lactate Fermentation (Animals)', level: 3 },
+        "id": "h_5_3",
+        "type": "heading",
+        "data": {
+            "text": "Sometimes cells experience conditions with\u00a0little or no oxygen",
+            "level": 3
+        }
     },
     {
-      id: 'p-lactate',
-      type: 'paragraph',
-      data: {
-        text: 'In animal cells, pyruvate is reduced to lactate by the enzyme lactate dehydrogenase (LDH). This reaction regenerates NAD⁺ from NADH, allowing glycolysis to continue and producing net 2 ATP per glucose (from glycolysis only, as the Krebs cycle and oxidative phosphorylation are inactive).',
-      },
+        "id": "h_5_4",
+        "type": "heading",
+        "data": {
+            "text": "There are several consequences when there is not enough oxygen available for",
+            "level": 3
+        }
     },
     {
-      id: 'eq-lactate',
-      type: 'equation',
-      data: {
-        html: 'Pyruvate + NADH + H<sup>+</sup> → Lactate + NAD<sup>+</sup> (catalysed by lactate dehydrogenase)',
-        caption: 'Lactate fermentation reaction',
-      },
+        "id": "h_5_5",
+        "type": "heading",
+        "data": {
+            "text": "respiration:",
+            "level": 3
+        }
     },
     {
-      id: 'p-lactate-fate',
-      type: 'paragraph',
-      data: {
-        text: 'Lactate accumulates in anaerobic cells and diffuses into the bloodstream. It is transported to the liver, where it is converted back to pyruvate and then glucose via gluconeogenesis (Cori cycle). During recovery, the lactate is oxidised back to pyruvate and fed into the Krebs cycle, generating ATP to "repay" the oxygen debt.',
-      },
+        "id": "p_5_6",
+        "type": "paragraph",
+        "data": {
+            "text": "There is\u00a0no final acceptor\u00a0(oxygen)\u00a0of electrons\u00a0from the electron transport chain"
+        }
     },
     {
-      id: 'h-ethanol',
-      type: 'heading',
-      data: { text: 'Alcoholic Fermentation (Yeast & Plants)', level: 3 },
+        "id": "h_5_7",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0electron transport chain stops\u00a0functioning",
+            "level": 3
+        }
     },
     {
-      id: 'p-ethanol',
-      type: 'paragraph',
-      data: {
-        text: 'In yeast and plants, pyruvate is converted to ethanol and CO₂ via two enzymes: (1) pyruvate decarboxylase removes CO₂ to form acetaldehyde; (2) alcohol dehydrogenase reduces acetaldehyde to ethanol using NADH, regenerating NAD⁺. Like lactate fermentation, this yields net 2 ATP per glucose.',
-      },
+        "id": "h_5_8",
+        "type": "heading",
+        "data": {
+            "text": "No more ATP\u00a0is produced\u00a0via oxidative phosphorylation",
+            "level": 3
+        }
     },
     {
-      id: 'eq-ethanol',
-      type: 'equation',
-      data: {
-        html: 'Pyruvate → Acetaldehyde + CO<sub>2</sub> (pyruvate decarboxylase) → Ethanol (alcohol dehydrogenase)',
-        caption: 'Alcoholic fermentation pathway',
-      },
+        "id": "h_5_9",
+        "type": "heading",
+        "data": {
+            "text": "Reduced NAD and FAD\u00a0aren\u2019t oxidised\u00a0by an electron carrier",
+            "level": 3
+        }
     },
     {
-      id: 'callout-compare',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Lactate vs Ethanol Fermentation',
-        text: 'Both pathways regenerate NAD⁺ and yield 2 ATP per glucose. Key difference: lactate can be recovered and oxidised later (reversible); ethanol is toxic and excreted (irreversible in animals). Yeast use ethanol as a signalling molecule; plants tolerate it during root flooding.',
-      },
+        "id": "h_5_10",
+        "type": "heading",
+        "data": {
+            "text": "No oxidised NAD and FAD are available for\u00a0dehydrogenation\u00a0in the Krebs cycle",
+            "level": 3
+        }
     },
     {
-      id: 'h-oxygen-debt',
-      type: 'heading',
-      data: { text: 'Oxygen Debt and EPOC', level: 3 },
+        "id": "h_5_11",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0Krebs cycle stops",
+            "level": 3
+        }
     },
     {
-      id: 'p-debt',
-      type: 'paragraph',
-      data: {
-        text: 'During intense anaerobic exercise (e.g., sprinting), cells accumulate lactate and incur an "oxygen debt." After exercise, the athlete must breathe heavily to repay this debt: the elevated oxygen consumption after exercise (excess post-exercise oxygen consumption, EPOC, or "recovery oxygen consumption") is used to: (1) oxidise lactate back to pyruvate and CO₂ (via the Krebs cycle); (2) convert pyruvate to glucose (gluconeogenesis); (3) replenish phosphocreatine stores; (4) restore normal body temperature and cardiac function.',
-      },
+        "id": "h_5_12",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0link reaction also stops",
+            "level": 3
+        }
     },
     {
-      id: 'p-epoc-time',
-      type: 'paragraph',
-      data: {
-        text: 'EPOC typically lasts 15–60 minutes after exercise, depending on exercise intensity and duration. The ATP cost of converting lactate back to glucose is substantial (it is a "debt" that must be repaid), which is why recovery takes time.',
-      },
+        "id": "p_5_13",
+        "type": "paragraph",
+        "data": {
+            "text": "However, there is still a way for cells to produce some ATP in low oxygen conditions"
+        }
     },
     {
-      id: 'h-yeast',
-      type: 'heading',
-      data: { text: 'Anaerobic Respiration in Yeast: Industrial Applications', level: 3 },
+        "id": "h_5_14",
+        "type": "heading",
+        "data": {
+            "text": "through\u00a0anaerobic respiration",
+            "level": 3
+        }
     },
     {
-      id: 'p-yeast',
-      type: 'paragraph',
-      data: {
-        text: 'Yeast (Saccharomyces cerevisiae) naturally ferments glucose to ethanol under anaerobic conditions. This is the basis of beer, wine, and spirit production. Yeast can survive indefinitely on anaerobic fermentation, making it ideal for industrial fermentation. The ethanol product inhibits growth at high concentrations (typically >15%), limiting fermentation efficiency.',
-      },
+        "id": "h_5_15",
+        "type": "heading",
+        "data": {
+            "text": "Anaerobic pathways",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Anaerobic respiration (fermentation) regenerates NAD⁺ from NADH by reducing pyruvate without oxidising it further. In animals, pyruvate → lactate; in yeast, pyruvate → ethanol + CO₂. Both yield only 2 ATP (from glycolysis), far less than aerobic respiration (~30 ATP).',
-        apply: 'A sprinter runs a 400 m race in 50 seconds at maximum intensity, relying on anaerobic metabolism. Calculate the lactate produced (assume 100 g muscle tissue, initial glucose 5 mM). If lactate is 10 mM/L of blood at recovery, estimate blood volume of this athlete.',
-        analyze: 'Why can yeast survive indefinitely on fermentation whilst animals cannot? What limits anaerobic survival?',
-        evaluate: 'Discuss why lactate is sometimes called a "waste product" but is actually valuable. How does the Cori cycle change this interpretation?',
-      },
-      terms: [],
+        "id": "p_5_16",
+        "type": "paragraph",
+        "data": {
+            "text": "Some cells are able to\u00a0oxidise the reduced NAD\u00a0produced during glycolysis so it can be"
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Write the equation for lactate fermentation', checked: false },
-          { text: 'Write the equations for alcoholic fermentation', checked: false },
-          { text: 'Explain why NAD⁺ regeneration is essential for anaerobic glycolysis', checked: false },
-          { text: 'Describe the Cori cycle and oxygen debt', checked: false },
-          { text: 'Compare ATP yield of anaerobic vs aerobic respiration', checked: false },
-        ],
-      },
+        "id": "h_5_17",
+        "type": "heading",
+        "data": {
+            "text": "used for further hydrogen transport",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Anaerobic respiration (fermentation) occurs when O₂ is unavailable. Animals: pyruvate → lactate (LDH); yeast/plants: pyruvate → ethanol + CO₂. Both regenerate NAD⁺ allowing glycolysis to continue, yielding 2 ATP per glucose. Lactate accumulates during exercise; after exercise, EPOC repays oxygen debt by oxidising lactate via Krebs cycle. Much less efficient than aerobic respiration (~30 ATP).',
-      },
+        "id": "p_5_18",
+        "type": "paragraph",
+        "data": {
+            "text": "This means that\u00a0glycolysis can continue\u00a0and\u00a0small amounts of ATP\u00a0are still produced"
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'eq-lactate',
-        prompt: 'Write the equation for lactate fermentation and state the role of lactate dehydrogenase.',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'eq-ethanol',
-        prompt: 'Write the equations for alcoholic fermentation. Which organisms use this pathway?',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-lactate',
-        prompt: 'Why must pyruvate be reduced to lactate in anaerobic conditions? What is the biological purpose?',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-debt',
-        prompt: 'What is oxygen debt (EPOC)? Describe what happens to lactate during recovery after intense exercise.',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'callout-compare',
-        prompt: 'Compare lactate and ethanol fermentation. Which is reversible and why?',
-      },
-    ],
-    summaryText:
-      'Anaerobic respiration: pyruvate → lactate (animals, LDH) or ethanol + CO₂ (yeast). Regenerates NAD⁺ from NADH, allowing glycolysis to continue. Yields 2 ATP per glucose (much less than ~30 from aerobic). Lactate accumulates, causing "oxygen debt." EPOC: elevated O₂ consumption after exercise to oxidise lactate and repay debt.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Lactate as signalling molecule',
-      detail: 'Lactate is now recognised as a signalling molecule and can be oxidised in other tissues',
-      year: '2010s',
-      source: 'Recent biochemistry',
-      tags: ['signalling'],
+        "id": "h_5_19",
+        "type": "heading",
+        "data": {
+            "text": "Different cells use different pathways to achieve this",
+            "level": 3
+        }
     },
-  ],
+    {
+        "id": "h_5_20",
+        "type": "heading",
+        "data": {
+            "text": "Yeast and microorganisms use\u00a0ethanol fermentation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_21",
+        "type": "heading",
+        "data": {
+            "text": "Other microorganisms and mammalian muscle cells use\u00a0lactate fermentation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_22",
+        "type": "heading",
+        "data": {
+            "text": "Lactate fermentation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_23",
+        "type": "heading",
+        "data": {
+            "text": "In this pathway reduced NAD transfers hydrogen to pyruvate to form lactate",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_24",
+        "type": "heading",
+        "data": {
+            "text": "NAD\u00a0can now be\u00a0reused in glycolysis",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_25",
+        "type": "heading",
+        "data": {
+            "text": "Pyruvate is reduced\u00a0to lactate by enzyme lactate dehydrogenase",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_26",
+        "type": "heading",
+        "data": {
+            "text": "Pyruvate is the hydrogen acceptor",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_27",
+        "type": "heading",
+        "data": {
+            "text": "The final product lactate can be further metabolised",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_28",
+        "type": "heading",
+        "data": {
+            "text": "The pathway of lactate fermentation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_29",
+        "type": "heading",
+        "data": {
+            "text": "Processing Lactate",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_30",
+        "type": "heading",
+        "data": {
+            "text": "Lactate (lactic acid) can build up in the cells after a period of time",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_31",
+        "type": "heading",
+        "data": {
+            "text": "After lactate is produced two things can happen:",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_5_32",
+        "type": "paragraph",
+        "data": {
+            "text": "It can be\u00a0oxidised back to pyruvate\u00a0which is then channelled into the Krebs cycle for"
+        }
+    },
+    {
+        "id": "h_5_33",
+        "type": "heading",
+        "data": {
+            "text": "ATP production",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_5_34",
+        "type": "paragraph",
+        "data": {
+            "text": "It can be\u00a0converted into glucose\u00a0by the liver cells\u00a0for use during respiration or for"
+        }
+    },
+    {
+        "id": "h_5_35",
+        "type": "heading",
+        "data": {
+            "text": "storage (in the form of glycogen)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_36",
+        "type": "heading",
+        "data": {
+            "text": "The oxidation of lactate back to pyruvate needs extra oxygen",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_37",
+        "type": "heading",
+        "data": {
+            "text": "This extra oxygen is referred to as an\u00a0oxygen debt",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_38",
+        "type": "heading",
+        "data": {
+            "text": "It explains why animals\u00a0breathe deeper and faster after exercise",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_39",
+        "type": "heading",
+        "data": {
+            "text": "Ethanol fermentation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_40",
+        "type": "heading",
+        "data": {
+            "text": "In this pathway reduced NAD transfers its hydrogens to ethanal to form ethanol",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_41",
+        "type": "heading",
+        "data": {
+            "text": "In the first step of the pathway\u00a0pyruvate is decarboxylated\u00a0to ethanal",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_42",
+        "type": "heading",
+        "data": {
+            "text": "Producing\u00a0CO",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_43",
+        "type": "heading",
+        "data": {
+            "text": "Then\u00a0ethanal is reduced\u00a0to ethanol by the enzyme alcohol dehydrogenase",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_44",
+        "type": "heading",
+        "data": {
+            "text": "Ethanal is the hydrogen acceptor",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_45",
+        "type": "heading",
+        "data": {
+            "text": "Ethanol cannot be further metabolised; it is a waste product",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_46",
+        "type": "heading",
+        "data": {
+            "text": "Ethanol fermentation occurs in yeast and plant cells",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_47",
+        "type": "heading",
+        "data": {
+            "text": "The pathway of ethanol fermentation",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_5_48",
+        "type": "heading",
+        "data": {
+            "text": "Examiner Tips and Tricks",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_5_49",
+        "type": "paragraph",
+        "data": {
+            "text": "Note that ethanol fermentation is a two-step process (lactate fermentation is a one- step process). Carbon dioxide is also produced alongside the waste ethanol. This"
+        }
+    }
+]
 };

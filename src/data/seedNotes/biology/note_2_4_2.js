@@ -9,6 +9,18 @@ export const note_biology_2_4_2 = {
     },
     {
       type: 'heading',
+      id: 'h-stems-function',
+      data: { text: 'Plant Stems: Support and Transport', level: 2 },
+    },
+    {
+      type: 'paragraph',
+      id: 'p-stems-function',
+      data: {
+        text: 'Plant stems have two main functions: support and transport. They provide support by ensuring leaves are positioned to receive maximum sunlight for photosynthesis, and support flowers in a way that attracts pollinators. Stems must be strong yet flexible to withstand environmental forces (wind and rain). They also provide a transport route for water and mineral ions from the roots to the leaves via xylem, and move products of photosynthesis from where they are made to where they are needed via phloem. Sclerenchyma fibres are associated with these vascular bundles, providing additional structural support to the stem.',
+      },
+    },
+    {
+      type: 'heading',
       id: 'h-xylem',
       data: { text: 'Xylem: Water and Mineral Transport', level: 2 },
     },
@@ -54,7 +66,7 @@ export const note_biology_2_4_2 = {
       type: 'paragraph',
       id: 'p-sclerenchyma-structure',
       data: {
-        text: 'Sclerenchyma is a mechanical support tissue composed of dead cells with thick, lignified secondary walls and minimal cell lumens (internal space). Two types: sclerenchyma fibres (elongated, often found associated with vascular bundles) and sclereids (shorter, isodiametric, found in seed coats, fruit walls, leaves of some plants). Both are dead at maturity, their walls heavily lignified, providing exceptional rigidity and strength. The thick walls resist compression and bending; the dead state means no metabolic cost for maintenance.',
+        text: 'Sclerenchyma is a mechanical support tissue composed of dead cells with thick, lignified secondary walls and minimal cell lumens. Two types: sclerenchyma fibres (elongated, often found associated with vascular bundles) and sclereids (shorter, isodiametric). Sclerenchyma fibres consist of bundles of dead cells forming long, hollow tubes, but crucially they retain their end walls. Both are dead at maturity, their walls heavily lignified, providing exceptional rigidity to allow the plant to bear the load of its own mass. They have more cellulose in their walls compared to other plant cells. The thick walls resist compression and bending. Their great strength is often exploited by humans in making rope and fabrics (e.g., cotton and hemp); this strength is due to the arrangement of cellulose microfibrils in a mesh-like pattern and secondary thickening (a thick secondary cell wall developing which often contains lignin).',
       },
     },
     {

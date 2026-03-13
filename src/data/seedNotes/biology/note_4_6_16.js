@@ -1,298 +1,106 @@
 export const note_biology_4_6_16 = {
   blocks: [
     {
-      id: 'obj',
+      id: 'obj-1',
       type: 'objective',
-      data: {
-        text: 'Understand Core Practical 14: antibiotic sensitivity testing using the disk diffusion (Kirby-Bauer) method, measurement of zones of inhibition, and interpretation of results using clinical breakpoints.'
-      },
-      terms: []
+      data: { text: 'Understand the principles of Polymerase Chain Reaction (PCR), gel electrophoresis, and DNA profiling for paternity and forensic science.' }
     },
     {
-      id: 'h-intro',
+      id: 'h-pcr',
       type: 'heading',
-      data: { text: 'Core Practical 14: Antibiotic Sensitivity Testing', level: 2 },
-      terms: []
+      data: { text: 'Polymerase Chain Reaction (PCR)', level: 2 }
     },
     {
-      id: 'p-intro',
+      id: 'p-pcr',
       type: 'paragraph',
+      data: { text: 'PCR is an *in vitro* method of rapid DNA amplification. It creates billions of identical copies of a specific DNA fragment from a very small initial sample (e.g. from a crime scene).' }
+    },
+    {
+      id: 'list-pcr-req',
+      type: 'list',
       data: {
-        text: 'This core practical introduces the disk diffusion (Kirby-Bauer) method, the standard technique for testing bacterial susceptibility to antibiotics. It demonstrates how antibiotic resistance is detected and forms the basis for clinical antibiotic selection in patient care.'
-      },
-      terms: []
+        style: 'bullet',
+        items: [
+          '**DNA Sample:** The target fragment to be amplified.',
+          '**Primers:** Short sequences of single-stranded DNA complementary to the 3’ ends of the target sequence. They define the region to be amplified.',
+          '**Taq Polymerase:** The DNA polymerase enzyme used to construct new strands. It is sourced from extremophile bacteria so it does not denature at high temperatures.',
+          '**Free Nucleotides:** Building blocks for the new strands.',
+          '**Buffer Solution:** To provide the optimum pH.'
+        ]
+      }
     },
     {
-      id: 'h-kirby-bauer-method',
+      id: 'h-pcr-stages',
       type: 'heading',
-      data: { text: 'Kirby-Bauer (Disk Diffusion) Method', level: 2 },
-      terms: []
+      data: { text: 'Stages of a PCR Cycle', level: 3 }
     },
     {
-      id: 'p-kirby-bauer-1',
-      type: 'paragraph',
-      data: {
-        text: 'The Kirby-Bauer method (also called disk diffusion or disk sensitivity method) tests bacterial susceptibility to antibiotics. Paper disks impregnated with antibiotics are placed on a bacterial lawn (standardised suspension of bacteria on agar). Antibiotic diffuses from the disk into the agar. If the bacterium is susceptible, the antibiotic kills bacteria, creating a clear zone (halo) around the disk. If resistant, bacteria grow right up to the disk (no zone).'
-      },
-      terms: []
-    },
-    {
-      id: 'h-procedure',
-      type: 'heading',
-      data: { text: 'Practical Procedure', level: 2 },
-      terms: []
-    },
-    {
-      id: 'list-procedure',
+      id: 'list-stages',
       type: 'list',
       data: {
         style: 'numbered',
         items: [
-          'Prepare test organism: Grow the bacterium to be tested on nutrient agar (overnight culture). Using a sterile loop, suspend a few colonies in sterile saline or peptone water. Adjust turbidity to a standard (McFarland standard 0.5, which equals ~1.5 × 10⁸ CFU/mL).',
-          'Prepare Mueller-Hinton agar plate: Pour ~15 mL sterile Mueller-Hinton agar into a Petri dish; allow to solidify. Mueller-Hinton is preferred because pH, divalent cation concentration, and thickness are standardised for reliable results.',
-          'Inoculate plate: Using a sterile cotton swab, dip into the bacterial suspension and squeeze against the tube wall to remove excess. Swab the entire agar surface in three directions (streaking pattern) to create a uniform bacterial lawn. Avoid standing water or dry patches.',
-          'Apply antibiotic disks: Using sterile tweezers or a disk dispenser, place antibiotic disks onto the inoculated plate. Space disks evenly (usually ≥2.4 cm apart) to prevent diffusion zones from overlapping. Common antibiotics: ampicillin, penicillin, tetracycline, erythromycin, chloramphenicol, streptomycin, gentamicin, cephalosporins. Press each disk gently to ensure contact with agar.',
-          'Incubate: Incubate at 35–37degreesC (NOT 25degreesC like standard plate cultures, as different organism optimal growth temperatures may affect results; standardisation uses 35–37degreesC) for 18–24 hours. Place plates inverted (lid down) to prevent condensation.',
-          'Measure zones: After incubation, measure the diameter of each clear zone (including the disk) using a ruler or callipers. Measure from the edge of the disk to the edge of the clear zone (most distant measurable inhibition). Report in millimetres.',
-          'Interpret results: Compare zone diameters to standardised breakpoints (provided by CLSI—Clinical and Laboratory Standards Institute, or EUCAST—European Committee on Antimicrobial Susceptibility Testing) to classify bacteria as Susceptible (S), Intermediate (I), or Resistant (R).'
+          '**Denaturation (95°C):** The high temperature breaks the hydrogen bonds holding the double-stranded DNA together, creating single strands.',
+          '**Annealing (50–60°C):** The temperature is lowered, allowing primers to anneal (bind) to the ends of the single DNA strands.',
+          '**Elongation (72°C):** The temperature is raised to the optimum for *Taq* polymerase, which builds the complementary DNA strands. Because the amount of DNA doubles every cycle, millions of copies are made rapidly.'
         ]
-      },
-      terms: []
+      }
     },
     {
-      id: 'h-zone-measurement',
+      id: 'h-gel',
       type: 'heading',
-      data: { text: 'Measurement and Interpretation', level: 2 },
-      terms: []
+      data: { text: 'Gel Electrophoresis', level: 2 }
     },
     {
-      id: 'p-zone-measurement-1',
+      id: 'p-gel',
       type: 'paragraph',
-      data: {
-        text: 'Zone diameters are compared to CLSI breakpoints (tabulated reference values) to determine susceptibility. Breakpoints vary by antibiotic and organism.'
-      },
-      terms: []
+      data: { text: 'Once the DNA has been amplified via PCR, it is treated with restriction endonuclease enzymes that cut the DNA at specific sites. The fragments are then separated using gel electrophoresis.' }
     },
     {
-      id: 'list-zone-interpretation',
+      id: 'list-gel',
       type: 'list',
       data: {
         style: 'bullet',
         items: [
-          'Susceptible (S): Zone diameter ≥ breakpoint value. The bacterium is inhibited at clinically achievable antibiotic concentrations; the antibiotic is likely to work therapeutically.',
-          'Intermediate (I): Zone diameter between lower and upper breakpoints. Uncertain clinical outcome; antibiotic may or may not work depending on infection site and dose.',
-          'Resistant (R): Zone diameter < lower breakpoint. The bacterium is not inhibited by clinically achievable concentrations; the antibiotic will not work.',
-          'Example (ampicillin vs E. coli, CLSI breakpoints): S ≥17 mm, R ≤13 mm. A zone of 15 mm = Intermediate; a zone of 20 mm = Susceptible; a zone of 12 mm = Resistant.'
+          'DNA fragments are inserted into wells at one end of an agarose gel plate.',
+          'An electric current is applied. Because DNA molecules have a **negatively charged phosphate group**, they are drawn toward the positive anode.',
+          'The fragments are separated by **length/mass**. Small fragments travel quickly through the gel pores and move further, while large fragments move slowly and stay closer to the wells.',
+          'A DNA standard (with fragments of known lengths) is loaded into the first well for comparison.'
         ]
-      },
-      terms: []
+      }
     },
     {
-      id: 'tbl-example-breakpoints',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Antibiotic', 'Organism', 'Susceptible (mm)', 'Intermediate (mm)', 'Resistant (mm)'],
-        rows: [
-          ['Ampicillin', 'E. coli', '≥17', '14–16', '≤13'],
-          ['Penicillin G', 'S. aureus', '≥29', '—', '≤28'],
-          ['Tetracycline', 'E. coli', '≥19', '15–18', '≤14'],
-          ['Gentamicin', 'E. coli', '≥20', '16–19', '≤15'],
-          ['Chloramphenicol', 'E. coli', '≥18', '13–17', '≤12']
-        ],
-        caption: 'Example CLSI breakpoints for common antibiotics (zone diameter in mm)'
-      },
-      terms: []
-    },
-    {
-      id: 'h-aseptic-technique-emphasis',
+      id: 'h-profiling',
       type: 'heading',
-      data: { text: 'Aseptic Technique Throughout', level: 2 },
-      terms: []
+      data: { text: 'Analysing DNA Profiles', level: 2 }
     },
     {
-      id: 'p-aseptic-emphasis',
+      id: 'p-profiling',
       type: 'paragraph',
-      data: {
-        text: 'Aseptic technique is critical to prevent contamination of plates. Contamination makes results uninterpretable. Key practices:'
-      },
-      terms: []
+      data: { text: 'Every person (excluding identical twins) has a unique DNA sequence. Restriction endonucleases cut DNA between specific, non-coding repeated sequences called Variable Number Tandem Repeats (VNTRs).' }
     },
     {
-      id: 'list-aseptic-practice',
+      id: 'list-profiling',
       type: 'list',
       data: {
         style: 'bullet',
         items: [
-          'Flame loop: Use a sterile inoculation loop; flame it to redness in a Bunsen burner before and after use to sterilise.',
-          'Work near flame: Work within ~15 cm of the Bunsen burner flame to reduce contaminating air currents.',
-          'Swab sterility: Use sterile cotton swabs provided by the supplier; do not reuse swabs.',
-          'Disk sterility: Keep antibiotic disks in their sealed container; open only briefly when retrieving disks.',
-          'Avoid touching agar surface: Ensure swabs, loops, and hands do not touch the agar surface after inoculation.',
-          'Close plates promptly: Minimise exposure time of open plates to the air.'
+          'Because different individuals possess different numbers of VNTRs, their DNA is cut into different length fragments.',
+          'This produces a unique pattern of bands when separated by gel electrophoresis. This unique pattern is a **DNA profile**.',
+          '**Forensics:** DNA from a crime scene is compared against suspect profiles. An exact band match identifies the individual.',
+          '**Paternity:** A child inherits half their DNA from each parent. Therefore, any band present in the child\'s profile must match a band in either the biological mother\'s or the biological father\'s profile.',
+          '**Captive Breeding:** Zoologists profile animals to select mates with the most genetic variation, preventing inbreeding and maintaining a diverse gene pool.'
         ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-factors-affecting-results',
-      type: 'heading',
-      data: { text: 'Factors Affecting Zone Size', level: 2 },
-      terms: []
-    },
-    {
-      id: 'list-factors',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Inoculum standardisation: Inoculum size (bacterial density) must match the McFarland standard (0.5). Too dense → smaller zones (more bacteria survive antibiotic); too dilute → larger zones (fewer bacteria competing with diffusion). This is why standardisation is critical.',
-          'Medium type: Mueller-Hinton agar is required; other media (e.g. nutrient agar, blood agar) have different diffusion properties and give unreliable results.',
-          'Medium thickness: Agar thickness should be ~4 mm (standard depth). Thicker agar → smaller zones; thinner agar → larger zones.',
-          'pH: Agar pH should be 7.0 ± 0.1. pH affects antibiotic charge and diffusion; pH <6.5 or >8.0 gives unreliable results.',
-          'Incubation temperature: 35–37degreesC is standard. Different temperatures affect antibiotic diffusion and bacterial growth rate.',
-          'Incubation time: 18–24 hours is standard. <18 hours may give false resistance (zone not yet fully developed); >24 hours may show zone diffusion artifacts.'
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-quality-control',
-      type: 'heading',
-      data: { text: 'Quality Control Organisms', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-quality-control-1',
-      type: 'paragraph',
-      data: {
-        text: 'Standardised quality control organisms (reference strains) are tested in parallel with unknown isolates to ensure the method is working correctly. Example control organisms:'
-      },
-      terms: []
-    },
-    {
-      id: 'list-quality-control',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'E. coli ATCC 25922: Gram-negative, susceptible to most antibiotics. Expected zone sizes for each antibiotic are tabulated (CLSI/EUCAST). If observed zones fall outside expected ranges, the method failed.',
-          'S. aureus ATCC 25923: Gram-positive, used for penicillins, macrolides, etc.',
-          'P. aeruginosa ATCC 27853: Gram-negative, naturally resistant to many antibiotics; used for testing agents effective against Pseudomonas.'
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-limitations',
-      type: 'heading',
-      data: { text: 'Limitations of Disk Diffusion Method', level: 2 },
-      terms: []
-    },
-    {
-      id: 'list-limitations',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Semiquantitative: Zone size is an indirect measure of MIC (minimum inhibitory concentration). Exact MIC requires broth microdilution or E-test method.',
-          'Organism-specific: Different organisms have different diffusion kinetics and growth rates. Breakpoints are organism-specific; same zone diameter means different things for different bacteria.',
-          'Slow turnaround: 18–24 hours incubation time. Faster methods (MALDI-TOF, molecular testing) are available but more expensive.',
-          'Requires cultured bacteria: Cannot directly test specimens; must isolate and culture pure organism first.',
-          'Anaerobes: Method is designed for aerobes; anaerobes require special media and conditions.'
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-result-recording',
-      type: 'heading',
-      data: { text: 'Recording and Reporting Results', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-result-recording-1',
-      type: 'paragraph',
-      data: {
-        text: 'Results should be clearly recorded and interpreted according to clinical standards.'
-      },
-      terms: []
-    },
-    {
-      id: 'list-recording',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Record zone diameter: Measure zone for each antibiotic disk to nearest 1 mm.',
-          'Compare to breakpoints: Use standardised tables (CLSI or EUCAST) to classify as S, I, or R.',
-          'Report profile: Typically report as a sensitivity profile (e.g. "Ampicillin: S; Tetracycline: R; Gentamicin: S; Erythromycin: I").',
-          'Clinical interpretation: Clinicians use this to select appropriate antibiotics for treatment. Resistance patterns help identify organism type (e.g. MRSA resistant to beta-lactams but sensitive to vancomycin).',
-          'Surveillance data: Population-level resistance trends are tracked; increasing resistance prompts antibiotic stewardship interventions.'
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'callout-clinical-context',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Clinical Application',
-        text: 'Sensitivity testing guides empiric antibiotic therapy. In severe infections (bloodstream, meningitis), broad-spectrum antibiotics are started immediately, then narrowed based on culture and sensitivity results. This reduces mortality and limits resistance development. Sensitivity results must be interpreted alongside infection site (e.g. CNS penetration, lung penetration, tissue levels).'
-      },
-      terms: []
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Disk diffusion method: standardised inoculum (McFarland 0.5) on Mueller-Hinton agar → antibiotic disks applied → incubate 35–37degreesC/18–24h → measure clear zone diameter → compare to CLSI breakpoints (S/I/R). Zone size reflects antibiotic diffusion and bacterial growth inhibition. Smaller zones = more resistance. Quality control organisms (E. coli ATCC 25922, S. aureus ATCC 25923) verify method validity. Breakpoints are organism- and antibiotic-specific.',
-        apply: 'E. coli test shows zone diameters: ampicillin 12 mm, tetracycline 20 mm, gentamicin 22 mm. Using CLSI breakpoints, classify each as S/I/R. (Ampicillin ≤13 mm = R; Tetracycline ≥19 mm = S; Gentamicin ≥20 mm = S)',
-        analyze: 'Why is inoculum standardisation (McFarland 0.5) critical for accurate results? What happens if inoculum is too dense or too dilute?',
-        evaluate: 'A student\'s control organism (E. coli ATCC 25922) shows zone sizes outside expected ranges. What factors could cause this? How would you troubleshoot?'
-      },
-      terms: []
-    },
-    {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'I can prepare a standardised bacterial inoculum using McFarland standard', checked: false },
-          { text: 'I understand why Mueller-Hinton agar is required for this method', checked: false },
-          { text: 'I can correctly inoculate a plate with a bacterial swab', checked: false },
-          { text: 'I can properly apply and place antibiotic disks on the plate', checked: false },
-          { text: 'I can measure zone diameters accurately', checked: false },
-          { text: 'I can interpret zone diameters using CLSI breakpoints', checked: false },
-          { text: 'I can classify results as Susceptible, Intermediate, or Resistant', checked: false },
-          { text: 'I understand why quality control organisms are used', checked: false },
-          { text: 'I can explain factors affecting zone size (inoculum, medium, pH, temperature)', checked: false }
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Core Practical 14: Prepare standardised bacterial inoculum (McFarland 0.5 = ~1.5 × 10⁸ CFU/mL). Inoculate Mueller-Hinton agar plate using sterile swab (streaking pattern). Apply antibiotic disks (evenly spaced ≥2.4 cm apart). Incubate 35–37degreesC/18–24h (inverted). Measure zone diameter (clear halo including disk edge). Compare to CLSI breakpoints: Susceptible (S, large zone), Intermediate (I, medium zone), Resistant (R, no zone or small zone). Use quality control organisms (E. coli ATCC 25922, S. aureus ATCC 25923) to verify method. Key factors: inoculum standardisation, Mueller-Hinton medium, pH 7.0, incubation temperature/time.'
-      },
-      terms: []
+      }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'h-kirby-bauer-method', prompt: 'Describe the principle of the Kirby-Bauer disk diffusion method.' },
-      { id: 'cue-2', blockId: 'list-procedure', prompt: 'List the seven main steps of the disk diffusion procedure.' },
-      { id: 'cue-3', blockId: 'list-zone-interpretation', prompt: 'Explain the three zone size classifications (S, I, R) and their clinical meaning.' },
-      { id: 'cue-4', blockId: 'list-factors', prompt: 'Name four factors affecting zone size and why each matters.' },
-      { id: 'cue-5', blockId: 'list-quality-control', prompt: 'What are quality control organisms and why are they used?' }
+      { id: 'cue-1', prompt: 'Why is Taq polymerase used in PCR instead of human DNA polymerase?' },
+      { id: 'cue-2', prompt: 'In gel electrophoresis, why do DNA molecules migrate towards the anode?' },
+      { id: 'cue-3', prompt: 'What are VNTRs and how do they create unique DNA profiles?' }
     ],
-    summaryText: 'Disk diffusion (Kirby-Bauer): inoculum McFarland 0.5 → Mueller-Hinton agar streaked → antibiotic disks placed (≥2.4 cm apart) → incubate 35–37degreesC/18–24h (inverted) → measure zone diameter (mm). Classify by CLSI breakpoints: Susceptible (large zone, clinically effective), Intermediate (uncertain), Resistant (no zone or small, clinically ineffective). Key standardisation: McFarland 0.5 inoculum, Mueller-Hinton pH 7.0, temperature 35–37degreesC, 18–24h incubation. QC organisms: E. coli ATCC 25922, S. aureus ATCC 25923 verify method validity.',
-    ready: false
-  },
-  evidence: [
-    { id: 'ev-1', title: 'Disk Diffusion Susceptibility Testing', detail: 'CLSI Performance Standards for Antimicrobial Susceptibility Testing (M100). Clinical and Laboratory Standards Institute', year: '2023', source: 'CLSI', tags: ['antibiotic susceptibility', 'disk diffusion', 'Kirby-Bauer', 'MIC', 'breakpoints'] }
-  ]
+    summaryText: 'Taq polymerase is extracted from thermophilic bacteria, meaning its optimal temperature is high and it will not denature during the 95°C denaturation stage of PCR. DNA migrates toward the positive anode during electrophoresis because DNA is negatively charged due to its phosphate groups. VNTRs (Variable Number Tandem Repeats) are repeated non-coding sequences; because individuals inherit vastly different repeat amounts, restriction enzymes cut the DNA into completely unique fragment lengths.'
+  }
 };

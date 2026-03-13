@@ -42,6 +42,24 @@ export const note_biology_2_4_16 = {
     },
     {
       type: 'heading',
+      id: 'h-bacterial-growth',
+      data: { text: 'Bacterial Growth Conditions', level: 2 },
+    },
+    {
+      type: 'list',
+      id: 'list-growth-conditions',
+      data: {
+        style: 'bullet',
+        items: [
+          '**Nutrients**: A nutrient medium (agar or broth) provides carbon compounds for respiration, nitrogen for proteins, and essential vitamins/minerals.',
+          '**Temperature**: Affects enzyme activity. School labs incubate at 25°C to discourage the growth of human pathogens (which thrive at 37°C), though bacteria reproduce faster at optimum temperatures.',
+          '**pH**: Most bacteria prefer slightly alkaline conditions, whereas fungi prefer slightly acidic environments. Buffers can prevent pH changes during growth.',
+          '**Oxygen**: Obligate aerobes require oxygen for respiration, while obligate anaerobes can only grow in its absence.'
+        ]
+      }
+    },
+    {
+      type: 'heading',
       id: 'h-aseptic',
       data: { text: 'Aseptic Technique', level: 2 },
     },

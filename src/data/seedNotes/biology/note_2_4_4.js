@@ -76,10 +76,17 @@ export const note_biology_2_4_4 = {
       data: { text: 'Plant Fibres and Sustainability', level: 2 },
     },
     {
-      type: 'paragraph',
-      id: 'p-sustainability',
+      type: 'list',
+      id: 'list-sustainability',
       data: {
-        text: 'Plant fibres offer environmental advantages: (1) Renewable—flax, hemp, cotton are annual or perennial crops, regrown yearly. (2) Biodegradable—cellulose and lignin are broken down by soil microorganisms; plant fibre products decompose in months to years, unlike synthetic fibres (100+ years). (3) Lower carbon footprint—plant growth sequesters CO₂; production requires less energy than petroleum extraction and synthesis. (4) Soil benefits—many fibre crops (especially legumes like beans) fix nitrogen, improving soil fertility. However, plant fibre production has challenges: pesticide use (cotton), water demands (all crops), land use (competing with food crops), and processing (retting can cause water pollution). Sustainable approaches include organic farming (reduced pesticides), crop rotation, and improved processing technologies (enzymatic retting replaces chemical processes).',
+        style: 'bullet',
+        items: [
+          'Sustainability means using resources to meet current needs without depleting them for future generations (using renewable resources rather than finite fossil fuels).',
+          'Using plant fibres to make ropes and fabrics is more sustainable, biodegradable, and often cheaper to process than oil-based plastics (though plant fibres may not be as strong).',
+          'Plant fibres are biodegradable because they can be broken down by microbes, unlike most oil-based plastics, which minimises environmental pollution.',
+          'Starch and cellulose can be used to make bioplastics; this replaces traditional oil-based plastics and decreases plastic pollution.',
+          'Starch can also be used as a renewable resource to produce bioethanol, a more sustainable biofuel alternative to oil-derived vehicle fuels.'
+        ],
       },
     },
     {
@@ -176,7 +183,7 @@ export const note_biology_2_4_4 = {
       },
       {
         id: 'cue-4',
-        blockId: 'p-sustainability',
+        blockId: 'list-sustainability',
         prompt: 'Discuss the environmental advantages and challenges of plant fibre production.',
       },
     ],

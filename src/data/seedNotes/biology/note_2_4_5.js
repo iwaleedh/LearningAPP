@@ -22,20 +22,34 @@ export const note_biology_2_4_5 = {
     {
       type: 'heading',
       id: 'h-mineral-functions',
-      data: { text: 'Roles of Key Mineral Ions', level: 2 },
+      data: { text: 'Roles of Water and Key Mineral Ions', level: 2 },
+    },
+    {
+      type: 'paragraph',
+      id: 'p-water',
+      data: {
+        text: 'Water is an important component required for photosynthesis. It provides a transport medium for minerals, maintains turgidity in plant cells through pressure in cell vacuoles, and regulates temperature to ensure that enzymes can function at their optimum rate.',
+      },
     },
     {
       type: 'paragraph',
       id: 'p-nitrogen',
       data: {
-        text: 'Nitrate (NO₃⁻) is the primary nitrogen source for plants. Nitrogen is essential for: (1) Protein synthesis—nitrogen is a component of amino acids; without adequate nitrogen, protein production is limited, stunting growth. (2) Nucleic acid synthesis—nitrogen is in DNA and RNA; deficiency impairs cell division and gene expression. (3) Chlorophyll synthesis—nitrogen is in the chlorophyll porphyrin ring; deficiency reduces photosynthetic capacity. Nitrate-deficient plants show stunted growth and yellowing leaves (chlorosis, though not in a distinct vein pattern like magnesium deficiency). Nitrogen is often the limiting nutrient in wild ecosystems and in agriculture (hence nitrogen fertilisers are heavily used).',
+        text: 'Nitrate (NO₃⁻) is the primary nitrogen source for plants. Without nitrate ions, the plant would be unable to synthesise DNA, proteins and chlorophyll. Enzymes are important proteins for which nitrate ions are needed. These molecules are essential for plant growth, as well as the production of fruit and seeds. Nitrate-deficient plants show stunted growth and yellowing leaves.',
       },
     },
     {
       type: 'paragraph',
       id: 'p-magnesium',
       data: {
-        text: 'Magnesium (Mg²⁺) is the central atom in chlorophyll molecules; it coordinates the porphyrin ring, enabling light absorption and electron transfer. Magnesium also acts as a cofactor for many enzymes (e.g. kinases, ATPases). Magnesium deficiency causes chlorosis (yellowing) primarily in older leaves (magnesium is mobile, translocated to younger, growing tissues). The yellowing follows a characteristic pattern: veins remain green while interveinal tissue (between veins) turns yellow; this is called interveinal chlorosis, pathognomonic (distinctive) of magnesium deficiency. Photosynthesis is severely impaired, and growth is stunted.',
+        text: 'Magnesium (Mg²⁺) is an important requirement for the production of chlorophyll, acting as the central atom in chlorophyll molecules. This provides the green colour of stems and leaves and is essential for photosynthesis. Magnesium also acts as a cofactor for many enzymes. Magnesium deficiency causes chlorosis (yellowing) primarily in older leaves in a characteristic pattern: veins remain green while interveinal tissue turns yellow.',
+      },
+    },
+    {
+      type: 'paragraph',
+      id: 'p-calcium',
+      data: {
+        text: 'Calcium ions (Ca²⁺) form important cell wall components (e.g. calcium pectate in the middle lamella, which holds plant cells together). Plants require calcium ions for proper growth. A deficiency in calcium leads to stunted growth, necrotic leaf margins, and poor root development.',
       },
     },
     {

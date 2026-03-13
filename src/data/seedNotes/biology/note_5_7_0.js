@@ -1,193 +1,445 @@
-/**
- * WBI15 — Topic 7.0: Aerobic Respiration Overview
- * Overall equation, stages, ATP yield
- */
-
 export const note_biology_5_7_0 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand the overall aerobic respiration equation, the four key stages, theoretical ATP yields, and how eukaryotic yields differ from prokaryotic due to membrane structure.',
-      },
+        "id": "obj_0",
+        "type": "objective",
+        "data": {
+            "text": "Understand the overview of aerobic respiration, the four stages, and the role of coenzymes."
+        }
     },
     {
-      id: 'h-overview',
-      type: 'heading',
-      data: { text: 'Aerobic Respiration Overview', level: 2 },
+        "id": "h_0_1",
+        "type": "heading",
+        "data": {
+            "text": "Overview of Respiration",
+            "level": 3
+        }
     },
     {
-      id: 'p-def',
-      type: 'paragraph',
-      data: {
-        text: 'Aerobic respiration is the controlled oxidation of glucose (or other organic substrates) in the presence of oxygen, releasing energy that is conserved in ATP molecules. This process is highly efficient, yielding much more ATP per glucose than anaerobic pathways.',
-      },
+        "id": "h_0_2",
+        "type": "heading",
+        "data": {
+            "text": "Overview of Respiration",
+            "level": 3
+        }
     },
     {
-      id: 'h-eq',
-      type: 'heading',
-      data: { text: 'Overall Equation', level: 3 },
+        "id": "h_0_3",
+        "type": "heading",
+        "data": {
+            "text": "Glucose\u00a0is the main respiratory substrate used by cells",
+            "level": 3
+        }
     },
     {
-      id: 'eq-main',
-      type: 'equation',
-      data: {
-        html: 'C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> → 6CO<sub>2</sub> + 6H<sub>2</sub>O + Energy (ΔG° = −30.5 kJ/mol ATP)',
-        caption: 'Overall aerobic respiration of glucose',
-      },
+        "id": "p_0_4",
+        "type": "paragraph",
+        "data": {
+            "text": "Aerobic respiration is the process of breaking down a respiratory substrate in order"
+        }
     },
     {
-      id: 'p-energy',
-      type: 'paragraph',
-      data: {
-        text: 'The free energy change (ΔG°) is −30.5 kJ per mole of glucose. However, not all of this energy is captured as ATP; some is lost as heat during the process. Approximately 38% of the total energy is captured as ATP under theoretical conditions.',
-      },
+        "id": "h_0_5",
+        "type": "heading",
+        "data": {
+            "text": "to\u00a0produce ATP using oxygen",
+            "level": 3
+        }
     },
     {
-      id: 'h-stages',
-      type: 'heading',
-      data: { text: 'Four Stages of Aerobic Respiration', level: 3 },
+        "id": "h_0_6",
+        "type": "heading",
+        "data": {
+            "text": "The equation for aerobic respiration:",
+            "level": 3
+        }
     },
     {
-      id: 'table-stages',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Stage', 'Location', 'Input', 'Output', 'Key Feature'],
-        rows: [
-          [
-            'Glycolysis',
-            'Cytoplasm',
-            'Glucose (1)',
-            '2 Pyruvate, 2 ATP, 2 NADH',
-            'Glucose split into 2 × 3C units',
-          ],
-          [
-            'Link Reaction',
-            'Mitochondrial matrix',
-            'Pyruvate (2)',
-            '2 Acetyl-CoA, 2 CO₂, 2 NADH',
-            'Pyruvate decarboxylated, oxidised',
-          ],
-          [
-            'Krebs Cycle',
-            'Mitochondrial matrix',
-            'Acetyl-CoA (2)',
-            '4 CO₂, 6 NADH, 2 FADH₂, 2 ATP',
-            'Complete oxidation of acetyl groups',
-          ],
-          [
-            'Oxidative Phosphorylation',
-            'Inner mitochondrial membrane',
-            'NADH (10), FADH₂ (2)',
-            '~30 ATP (eukaryotes) or ~38 ATP (prokaryotes)',
-            'Electron transport chain, chemiosmosis',
-          ],
-        ],
-        caption: 'Stages of aerobic respiration and their outputs',
-      },
+        "id": "h_0_7",
+        "type": "heading",
+        "data": {
+            "text": "glucose + oxygen \u2192 \u00a0 carbon dioxide + water + energy",
+            "level": 3
+        }
     },
     {
-      id: 'h-yield',
-      type: 'heading',
-      data: { text: 'ATP Yield and Efficiency', level: 3 },
+        "id": "h_0_8",
+        "type": "heading",
+        "data": {
+            "text": "CH 0\u00a0+ 6 O\u00a0\u2192\u00a0 6 CO\u00a0+ 6 H0 + 2870kJ",
+            "level": 3
+        }
     },
     {
-      id: 'p-prokaryote',
-      type: 'paragraph',
-      data: {
-        text: 'In prokaryotes with no internal membrane compartments, the theoretical maximum ATP yield is approximately 38 ATP per glucose molecule: 2 ATP from glycolysis + 2 ATP from the Krebs cycle (substrate-level) + ~34 ATP from oxidative phosphorylation (at 2.5 ATP/NADH and 1.5 ATP/FADH₂).',
-      },
+        "id": "h_0_9",
+        "type": "heading",
+        "data": {
+            "text": "The energy that is released during the process is used to phosphorylate (add a",
+            "level": 3
+        }
     },
     {
-      id: 'p-eukaryote',
-      type: 'paragraph',
-      data: {
-        text: 'In eukaryotes, the actual yield is lower, approximately 30 ATP per glucose. This is because: (1) NADH molecules produced in the cytoplasm during glycolysis cannot directly enter the mitochondrial matrix, so they must be shuttled across the outer membrane, costing 1 ATP per NADH (the glycerol-3-phosphate shuttle); (2) the inner mitochondrial membrane is slightly permeable to protons, causing some leakage of the proton gradient (proton leak). This leakage dissipates the electrochemical gradient without producing ATP.',
-      },
+        "id": "h_0_10",
+        "type": "heading",
+        "data": {
+            "text": "phosphate) ADP to form ATP",
+            "level": 3
+        }
     },
     {
-      id: 'callout-leak',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Proton Leak & Real-World Efficiency',
-        text: 'The ~30 ATP figure is more realistic than 38 ATP. In real cells, additional energy losses occur due to proton leak, allowing some protons to return to the matrix without passing through ATP synthase. This is actually beneficial during thermoregulation (see thermogenesis in brown adipose tissue).',
-      },
+        "id": "h_0_11",
+        "type": "heading",
+        "data": {
+            "text": "ATP provides energy for other biological processes in cells",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Aerobic respiration involves controlled, stepwise oxidation of glucose across four coupled stages. The majority of ATP is made in the final stage via chemiosmosis, where the electron transport chain oxidises electron carriers (NADH, FADH₂) and uses the energy to pump protons across the inner mitochondrial membrane.',
-        apply: 'If 1 glucose yields ~30 ATP in eukaryotes, and each ATP hydrolysis releases ~30.5 kJ/mol, calculate the total energy captured. Compare this to the ΔG° of −2,880 kJ/mol for glucose oxidation. What percentage is captured?',
-        analyze: 'Compare the location and inputs/outputs of glycolysis vs the Krebs cycle. Why does glycolysis occur in the cytoplasm whilst the Krebs cycle requires the mitochondrial matrix?',
-        evaluate: 'Evaluate the statement: "Aerobic respiration is much more efficient than anaerobic respiration because it yields more ATP." What other factors (time, substrate availability, evolutionary context) might make this statement incomplete?',
-      },
-      terms: [],
+        "id": "p_0_12",
+        "type": "paragraph",
+        "data": {
+            "text": "The process of aerobic respiration using glucose can be split into four stages which"
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Write out the overall equation for aerobic respiration', checked: false },
-          { text: 'State the location of each of the four stages', checked: false },
-          { text: 'Explain why eukaryotic ATP yield (~30) is lower than prokaryotic (~38)', checked: false },
-          { text: 'Calculate ATP yield from NADH, FADH₂ and substrate-level phosphorylation', checked: false },
-          { text: 'Describe the concept of proton leak and its significance', checked: false },
-        ],
-      },
+        "id": "h_0_13",
+        "type": "heading",
+        "data": {
+            "text": "each occurs at a particular location in a eukaryotic cell:",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Aerobic respiration oxidises glucose to CO₂ and H₂O across four coupled stages (glycolysis, link reaction, Krebs cycle, oxidative phosphorylation) in the presence of O₂. The overall ΔG° is −30.5 kJ/mol, yielding approximately 30–38 ATP per glucose (lower in eukaryotes due to proton leak and shuttle costs). This represents ~32–40% energy capture efficiency.',
-      },
+        "id": "h_0_14",
+        "type": "heading",
+        "data": {
+            "text": "Glycolysis takes place in the cell cytoplasm",
+            "level": 3
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'eq-main',
-        prompt: 'Write the overall equation for aerobic respiration and state the ΔG° value.',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'table-stages',
-        prompt: 'Name the four stages of aerobic respiration and state where each occurs.',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-prokaryote',
-        prompt: 'Why is the ATP yield approximately 38 ATP in prokaryotes but ~30 ATP in eukaryotes?',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'callout-leak',
-        prompt: 'What is proton leak and how does it reduce ATP yield in real cells?',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'h-yield',
-        prompt: 'What is the theoretical maximum ATP yield per glucose, and what percentage of total energy does this represent?',
-      },
-    ],
-    summaryText:
-      'Aerobic respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O (ΔG° = −30.5 kJ/mol). Four stages: glycolysis (cytoplasm, 2 ATP net), link reaction (matrix), Krebs cycle (matrix, 2 ATP), oxidative phosphorylation (inner membrane, ~26–34 ATP). Yield ~30 ATP eukaryotes vs ~38 prokaryotes due to proton leak and shuttle costs.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Glucose oxidation energy',
-      detail: 'Glucose contains ~2,880 kJ/mol available energy; ~32–40% captured as ATP',
-      year: '—',
-      source: 'Biochemistry texts',
-      tags: ['energetics'],
+        "id": "h_0_15",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0Link reaction takes place in the matrix of the mitochondria",
+            "level": 3
+        }
     },
-  ],
+    {
+        "id": "h_0_16",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0Krebs cycle takes place in the matrix of the mitochondria",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_17",
+        "type": "heading",
+        "data": {
+            "text": "Oxidative phosphorylation occurs at the inner membrane of the mitochondria",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_18",
+        "type": "heading",
+        "data": {
+            "text": "These chemical reactions are controlled by\u00a0intracellular enzymes\u00a0that catalyses",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_19",
+        "type": "heading",
+        "data": {
+            "text": "reactions within the cell",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_20",
+        "type": "heading",
+        "data": {
+            "text": "Ensuring that the energy trapped within the chemical bonds of the glucose",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_21",
+        "type": "heading",
+        "data": {
+            "text": "molecule is\u00a0released gradually\u00a0and not all at once",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_0_22",
+        "type": "paragraph",
+        "data": {
+            "text": "A sudden release of such a large amount of energy would result in an increase in body"
+        }
+    },
+    {
+        "id": "h_0_23",
+        "type": "heading",
+        "data": {
+            "text": "temperature to levels that would denature\u00a0enzymes",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_0_24",
+        "type": "paragraph",
+        "data": {
+            "text": "The enzyme that catalyses these reactions the\u00a0slowest\u00a0will determine the\u00a0overall rate of"
+        }
+    },
+    {
+        "id": "h_0_25",
+        "type": "heading",
+        "data": {
+            "text": "aerobic respiration",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_26",
+        "type": "heading",
+        "data": {
+            "text": "Several coenzymes\u00a0are required during respiration to\u00a0transfer\u00a0various molecules",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_27",
+        "type": "heading",
+        "data": {
+            "text": "involved in the process",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_28",
+        "type": "heading",
+        "data": {
+            "text": "NAD\u00a0and\u00a0FAD\u00a0are the coenzymes responsible for\u00a0transferring hydrogen\u00a0between",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_29",
+        "type": "heading",
+        "data": {
+            "text": "molecules",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_30",
+        "type": "heading",
+        "data": {
+            "text": "Depending on whether they give or take hydrogen, they are able to reduce\u00a0or",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_31",
+        "type": "heading",
+        "data": {
+            "text": "oxidise\u00a0a molecule",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_0_32",
+        "type": "paragraph",
+        "data": {
+            "text": "Coenzyme A\u00a0is responsible for the\u00a0transfer of acetate\u00a0(also known as acetic acid) Although glucose is the main fuel for respiration, organisms can also break down other"
+        }
+    },
+    {
+        "id": "h_0_33",
+        "type": "heading",
+        "data": {
+            "text": "molecules (such as fatty acids or amino acids) to be respired",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_34",
+        "type": "heading",
+        "data": {
+            "text": "Structure of mitochondria",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_35",
+        "type": "heading",
+        "data": {
+            "text": "Mitochondria have two phospholipid membranes",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_36",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0outer membrane\u00a0is:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_37",
+        "type": "heading",
+        "data": {
+            "text": "Smooth",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_38",
+        "type": "heading",
+        "data": {
+            "text": "Permeable to several small molecules",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_39",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0inner membrane\u00a0is:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_40",
+        "type": "heading",
+        "data": {
+            "text": "Folded (cristae)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_41",
+        "type": "heading",
+        "data": {
+            "text": "Less permeable",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_42",
+        "type": "heading",
+        "data": {
+            "text": "The site of the\u00a0electron transport chain\u00a0(used in oxidative phosphorylation)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_43",
+        "type": "heading",
+        "data": {
+            "text": "Location of\u00a0ATP synthase enzymes\u00a0(used in oxidative phosphorylation)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_44",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0intermembrane space:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_45",
+        "type": "heading",
+        "data": {
+            "text": "Has a low pH due to the\u00a0high concentration of protons",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_46",
+        "type": "heading",
+        "data": {
+            "text": "The concentration gradient across the inner membrane is formed during oxidative",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_47",
+        "type": "heading",
+        "data": {
+            "text": "phosphorylation and is\u00a0essential for ATP synthesis",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_48",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0matrix:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_49",
+        "type": "heading",
+        "data": {
+            "text": "Is an aqueous solution within the inner membranes of the mitochondrion",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_50",
+        "type": "heading",
+        "data": {
+            "text": "Contains ribosomes, enzymes and circular mitochondrial DNA necessary for",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_51",
+        "type": "heading",
+        "data": {
+            "text": "mitochondria to function",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_52",
+        "type": "heading",
+        "data": {
+            "text": "The structure of a mitochondrion",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_0_53",
+        "type": "heading",
+        "data": {
+            "text": "Examiner Tips and Tricks",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_0_54",
+        "type": "paragraph",
+        "data": {
+            "text": "It\u2019s important to know the exact locations of each stage. It is not enough to say the"
+        }
+    },
+    {
+        "id": "h_0_55",
+        "type": "heading",
+        "data": {
+            "text": "Krebs cycle takes place in the mitochondria, you need to say it takes place in",
+            "level": 3
+        }
+    }
+]
 };

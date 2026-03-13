@@ -1,176 +1,315 @@
-/**
- * WBI15 — Topic 7.2: Link Reaction and Acetyl CoA
- * Pyruvate dehydrogenase, CoA carrier, CO₂ & NADH production
- */
-
 export const note_biology_5_7_2 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand the link reaction: the conversion of pyruvate to acetyl CoA catalysed by pyruvate dehydrogenase complex, the role of CoA as a carrier, and the products produced per glucose molecule.',
-      },
+        "id": "obj_2",
+        "type": "objective",
+        "data": {
+            "text": "Understand the link reaction, oxidative decarboxylation, and the role of coenzyme A."
+        }
     },
     {
-      id: 'h-link',
-      type: 'heading',
-      data: { text: 'The Link Reaction: Pyruvate → Acetyl CoA', level: 2 },
+        "id": "h_2_1",
+        "type": "heading",
+        "data": {
+            "text": "Link Reaction & Krebs Cycle",
+            "level": 3
+        }
     },
     {
-      id: 'p-overview',
-      type: 'paragraph',
-      data: {
-        text: 'The link reaction (also called the transition reaction) occurs in the mitochondrial matrix and bridges glycolysis to the Krebs cycle. Each pyruvate molecule (3-carbon) is oxidatively decarboxylated by the pyruvate dehydrogenase complex to form acetyl CoA (2-carbon acetyl group) and CO₂. Electrons released in this oxidation are transferred to NAD⁺, forming NADH.',
-      },
+        "id": "h_2_2",
+        "type": "heading",
+        "data": {
+            "text": "Link Reaction & Krebs Cycle",
+            "level": 3
+        }
     },
     {
-      id: 'h-equation',
-      type: 'heading',
-      data: { text: 'Link Reaction Equation', level: 3 },
+        "id": "h_2_3",
+        "type": "heading",
+        "data": {
+            "text": "The Link reaction",
+            "level": 3
+        }
     },
     {
-      id: 'eq-link',
-      type: 'equation',
-      data: {
-        html: 'Pyruvate (3C) + CoA + NAD<sup>+</sup> → Acetyl CoA (2C) + CO<sub>2</sub> + NADH + H<sup>+</sup>',
-        caption: 'Single link reaction (one pyruvate)',
-      },
+        "id": "h_2_4",
+        "type": "heading",
+        "data": {
+            "text": "The end product of glycolysis is\u00a0pyruvate",
+            "level": 3
+        }
     },
     {
-      id: 'p-twice',
-      type: 'paragraph',
-      data: {
-        text: 'Since one glucose molecule produces two pyruvate molecules in glycolysis, the link reaction occurs twice per glucose molecule. Per glucose: 2 CO₂ released, 2 NADH produced, 2 Acetyl CoA formed.',
-      },
+        "id": "p_2_5",
+        "type": "paragraph",
+        "data": {
+            "text": "Pyruvate contains a substantial amount of chemical energy that can be further utilised in"
+        }
     },
     {
-      id: 'h-enzyme',
-      type: 'heading',
-      data: { text: 'The Pyruvate Dehydrogenase Complex', level: 3 },
+        "id": "h_2_6",
+        "type": "heading",
+        "data": {
+            "text": "respiration to produce more ATP",
+            "level": 3
+        }
     },
     {
-      id: 'p-complex',
-      type: 'paragraph',
-      data: {
-        text: 'Pyruvate dehydrogenase is a large, multi-enzyme complex located in the inner mitochondrial matrix. It contains three sub-enzymes (E1, E2, E3) and requires several cofactors: thiamine pyrophosphate (TPP), lipoic acid, FAD, NAD⁺, and Coenzyme A. The complexity of this enzyme reflects the importance of the reaction and allows for sophisticated regulation.',
-      },
+        "id": "p_2_7",
+        "type": "paragraph",
+        "data": {
+            "text": "The enzymes and coenzymes that are required for the link reaction are found in the"
+        }
     },
     {
-      id: 'callout-complex',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Multi-Enzyme Complex',
-        text: 'The pyruvate dehydrogenase complex is one of the largest protein complexes in the cell, similar in size to the ribosome. This organization allows the three sub-enzymes to work in close proximity, passing intermediates directly between them without releasing them to the solution (substrate channelling). This increases efficiency and prevents loss of reactive intermediates.',
-      },
+        "id": "h_2_8",
+        "type": "heading",
+        "data": {
+            "text": "mitochondrial matrix",
+            "level": 3
+        }
     },
     {
-      id: 'h-coa',
-      type: 'heading',
-      data: { text: 'Coenzyme A (CoA) as a Carrier', level: 3 },
+        "id": "h_2_9",
+        "type": "heading",
+        "data": {
+            "text": "When\u00a0oxygen is available\u00a0pyruvate will\u00a0enter the mitochondrial",
+            "level": 3
+        }
     },
     {
-      id: 'p-coa-role',
-      type: 'paragraph',
-      data: {
-        text: 'Coenzyme A is a large, complex molecule derived from the vitamin pantothenic acid (vitamin B₅). The acetyl group produced by pyruvate dehydrogenase is attached to CoA via a thioester bond to form Acetyl-CoA. This high-energy bond makes Acetyl-CoA a "central hub" of metabolism: it can feed into the Krebs cycle for energy production, or be used for biosynthesis of fatty acids, cholesterol, and amino acids. The CoA moiety keeps the acetyl group activated and prevents it from diffusing away.',
-      },
+        "id": "h_2_10",
+        "type": "heading",
+        "data": {
+            "text": "matrix\u00a0and\u00a0aerobic\u00a0respiration will continue",
+            "level": 3
+        }
     },
     {
-      id: 'callout-hub',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Acetyl-CoA: The Central Hub',
-        text: 'Acetyl-CoA is not only a product of pyruvate oxidation but also a key starting point for many biosynthetic pathways. If energy is abundant, cells reduce Acetyl-CoA entry into the Krebs cycle and instead use it for fatty acid and cholesterol synthesis. If energy is needed, Acetyl-CoA is oxidised in the Krebs cycle.',
-      },
+        "id": "p_2_11",
+        "type": "paragraph",
+        "data": {
+            "text": "Pyruvate moves across the double membrane of the mitochondria via\u00a0active transport"
+        }
     },
     {
-      id: 'h-irreversible',
-      type: 'heading',
-      data: { text: 'Irreversibility of the Link Reaction', level: 3 },
+        "id": "h_2_12",
+        "type": "heading",
+        "data": {
+            "text": "It requires a transport protein and a small amount of ATP",
+            "level": 3
+        }
     },
     {
-      id: 'p-irreversible',
-      type: 'paragraph',
-      data: {
-        text: 'The link reaction is essentially irreversible under physiological conditions (ΔG° is highly negative). This has important implications: (1) once pyruvate is converted to Acetyl-CoA, the carbon atoms cannot be reformed into glucose (gluconeogenesis can regenerate glucose from oxaloacetate, not Acetyl-CoA); (2) the reaction is a committed step in carbohydrate catabolism; (3) regulation of this step directly controls the rate of glucose oxidation.',
-      },
+        "id": "h_2_13",
+        "type": "heading",
+        "data": {
+            "text": "Once in the mitochondrial matrix\u00a0pyruvate\u00a0takes part in the\u00a0link reaction",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'The link reaction is catalysed by pyruvate dehydrogenase, a complex multi-enzyme machine in the mitochondrial matrix. Pyruvate is oxidatively decarboxylated to Acetyl-CoA, with CO₂ release and NADH production. The reaction occurs twice per glucose and is irreversible, committing the carbon atoms to oxidation.',
-        apply: 'If pyruvate dehydrogenase is inhibited, describe what would happen to: (a) NAD⁺ regeneration; (b) pyruvate accumulation; (c) Krebs cycle activity; (d) ATP production.',
-        analyze: 'Why is the link reaction located in the mitochondrial matrix and not the cytoplasm? What would be the consequence if it occurred in the cytoplasm?',
-        evaluate: 'The link reaction is irreversible, meaning Acetyl-CoA cannot be converted back to pyruvate. What does this tell you about the metabolic fate of carbohydrate carbon atoms after this step?',
-      },
-      terms: [],
+        "id": "h_2_14",
+        "type": "heading",
+        "data": {
+            "text": "Pyruvate enters the mitochondrial matrix from the cytosol (cytoplasm) by active",
+            "level": 3
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Write the equation for the link reaction and state inputs and outputs', checked: false },
-          { text: 'Identify pyruvate dehydrogenase and describe its structure', checked: false },
-          { text: 'Explain the role of CoA in the link reaction and as a metabolic hub', checked: false },
-          { text: 'State how many times the link reaction occurs per glucose', checked: false },
-          { text: 'Explain why the link reaction is irreversible and its consequences', checked: false },
-        ],
-      },
+        "id": "h_2_15",
+        "type": "heading",
+        "data": {
+            "text": "transport",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'The link reaction converts pyruvate → Acetyl-CoA in the mitochondrial matrix, catalysed by pyruvate dehydrogenase complex. Per pyruvate: 1 Acetyl-CoA, 1 CO₂, 1 NADH. Per glucose: 2 Acetyl-CoA, 2 CO₂, 2 NADH. CoA acts as a high-energy carrier. The reaction is irreversible and is tightly regulated by energy status. Acetyl-CoA is a central metabolic hub feeding into catabolism and biosynthesis.',
-      },
+        "id": "h_2_16",
+        "type": "heading",
+        "data": {
+            "text": "The link reaction takes place in the matrix of the mitochondria",
+            "level": 3
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'eq-link',
-        prompt: 'Write the equation for the link reaction and state the cofactors required.',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-twice',
-        prompt: 'How many times does the link reaction occur per glucose molecule? What is the total output?',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-complex',
-        prompt: 'Describe the pyruvate dehydrogenase complex and explain why it is such a large, multi-enzyme structure.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-coa-role',
-        prompt: 'What is CoA and why is the acetyl group attached to CoA rather than released as free acetate?',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-irreversible',
-        prompt: 'Why is the link reaction irreversible, and what does this mean for gluconeogenesis?',
-      },
-    ],
-    summaryText:
-      'Link reaction: pyruvate → Acetyl-CoA in mitochondrial matrix (pyruvate dehydrogenase complex). Per pyruvate: 1 Acetyl-CoA, 1 CO₂, 1 NADH. Per glucose (2×): 2 Acetyl-CoA, 2 CO₂, 2 NADH. CoA is a high-energy carrier from vitamin B₅. Irreversible step. Acetyl-CoA is central metabolic hub for oxidation and biosynthesis.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Pyruvate dehydrogenase regulation',
-      detail: 'Regulated by phosphorylation (inhibitory, via kinase) and dephosphorylation (activating, via phosphatase)',
-      year: '—',
-      source: 'Biochemistry',
-      tags: ['regulation'],
+        "id": "p_2_17",
+        "type": "paragraph",
+        "data": {
+            "text": "It is referred to as the link reaction because it\u00a0linksglycolysis\u00a0to the\u00a0Krebs cycle"
+        }
     },
-  ],
+    {
+        "id": "h_2_18",
+        "type": "heading",
+        "data": {
+            "text": "The steps are:",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_2_19",
+        "type": "paragraph",
+        "data": {
+            "text": "Pyruvate is oxidised\u00a0(hydrogen is removed)\u00a0by enzymes to produce\u00a0acetate,"
+        }
+    },
+    {
+        "id": "h_2_20",
+        "type": "heading",
+        "data": {
+            "text": "CHCO(O)\u00a0(also known as acetic acid)",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_2_21",
+        "type": "paragraph",
+        "data": {
+            "text": "Pyruvate is also\u00a0decarboxylated\u00a0(carbon is removed) in the form of\u00a0carbon dioxide"
+        }
+    },
+    {
+        "id": "h_2_22",
+        "type": "heading",
+        "data": {
+            "text": "Reduction of NAD\u00a0to NADH or reduce NAD by collecting hydrogen from pyruvate",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_23",
+        "type": "heading",
+        "data": {
+            "text": "Acetate combines with coenzyme A\u00a0to form\u00a0acetyl coenzyme A (acetyl CoA)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_24",
+        "type": "heading",
+        "data": {
+            "text": "No ATP is produced\u00a0during the link reaction",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_25",
+        "type": "heading",
+        "data": {
+            "text": "It produces:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_26",
+        "type": "heading",
+        "data": {
+            "text": "Acetyl coA",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_27",
+        "type": "heading",
+        "data": {
+            "text": "Carbon dioxide (CO )",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_28",
+        "type": "heading",
+        "data": {
+            "text": "Reduced NAD (NADH)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_29",
+        "type": "heading",
+        "data": {
+            "text": "pyruvate + NAD + CoA \u2192  acetyl CoA + carbon dioxide + reduced NAD",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_30",
+        "type": "heading",
+        "data": {
+            "text": "The link reaction occurs in the mitochondrial matrix. It dehydrogenates and",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_2_31",
+        "type": "paragraph",
+        "data": {
+            "text": "decarboxylates the three-carbon pyruvate to produce the two-carbon acetyl CoA that"
+        }
+    },
+    {
+        "id": "h_2_32",
+        "type": "heading",
+        "data": {
+            "text": "can enter the Krebs Cycle",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_33",
+        "type": "heading",
+        "data": {
+            "text": "Every\u00a0molecule of glucose\u00a0produces\u00a0two pyruvate molecules",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_2_34",
+        "type": "paragraph",
+        "data": {
+            "text": "The link reaction and the Krebs cycle will therefore\u00a0occur twice\u00a0for every molecule of"
+        }
+    },
+    {
+        "id": "h_2_35",
+        "type": "heading",
+        "data": {
+            "text": "glucose",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_36",
+        "type": "heading",
+        "data": {
+            "text": "Thus, each molecule of glucose will produce:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_37",
+        "type": "heading",
+        "data": {
+            "text": "Two\u00a0molecules of\u00a0acetyl CoA",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_38",
+        "type": "heading",
+        "data": {
+            "text": "Two\u00a0molecules of\u00a0CO",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_2_39",
+        "type": "heading",
+        "data": {
+            "text": "Two\u00a0molecules of\u00a0reduced NAD",
+            "level": 3
+        }
+    }
+]
 };
