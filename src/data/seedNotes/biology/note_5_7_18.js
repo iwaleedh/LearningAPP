@@ -1,267 +1,439 @@
-/**
- * WBI15 — Topic 7.18: Integration of Homeostatic Systems
- * Interactions between thermoregulation, osmoregulation, glucose regulation
- */
-
 export const note_biology_5_7_18 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand how thermoregulation, osmoregulation, and blood glucose regulation are integrated via nervous and endocrine systems to maintain homeostasis during rest, exercise, and stress.',
-      },
+        "id": "obj_18",
+        "type": "objective",
+        "data": {
+            "text": "Understand the control of gene expression, transcription factors, and the role of hormones like peptide and steroid hormones."
+        }
     },
     {
-      id: 'h-integration',
-      type: 'heading',
-      data: { text: 'Integration of Homeostatic Systems', level: 2 },
+        "id": "h_18_1",
+        "type": "heading",
+        "data": {
+            "text": "Control of Gene Expression",
+            "level": 3
+        }
     },
     {
-      id: 'p-overview',
-      type: 'paragraph',
-      data: {
-        text: 'The body maintains multiple physiological variables (temperature, osmolarity, glucose, pH, blood pressure) simultaneously via overlapping negative feedback loops. These systems are not isolated; rather, they interact and are coordinated by the central nervous system (hypothalamus) and endocrine system. During exercise, stress, or extreme environments, all systems respond in a coordinated manner.',
-      },
+        "id": "h_18_2",
+        "type": "heading",
+        "data": {
+            "text": "Control of Gene Expression",
+            "level": 3
+        }
     },
     {
-      id: 'h-exercise',
-      type: 'heading',
-      data: { text: 'Homeostasis During Exercise', level: 3 },
+        "id": "h_18_3",
+        "type": "heading",
+        "data": {
+            "text": "Hormones can alter the events inside a cell by influencing\u00a0gene expression",
+            "level": 3
+        }
     },
     {
-      id: 'p-exercise-overview',
-      type: 'paragraph',
-      data: {
-        text: 'During intense exercise, multiple homeostatic challenges occur simultaneously: (1) muscles consume ATP and generate heat; (2) metabolic rate increases 10–20 fold; (3) CO₂ and lactate accumulate; (4) blood glucose falls (muscles consume glucose); (5) dehydration occurs (water loss via sweat). The body coordinates responses across multiple systems.',
-      },
+        "id": "h_18_4",
+        "type": "heading",
+        "data": {
+            "text": "Eukaryotes use\u00a0transcription factors\u00a0to control gene expression",
+            "level": 3
+        }
     },
     {
-      id: 'h-respiration-exercise',
-      type: 'heading',
-      data: { text: 'Respiratory Response', level: 4 },
+        "id": "p_18_5",
+        "type": "paragraph",
+        "data": {
+            "text": "A transcription factor is a protein that\u00a0controls the transcriptionof genes\u00a0by binding"
+        }
     },
     {
-      id: 'p-respiration-exercise',
-      type: 'paragraph',
-      data: {
-        text: 'As exercise begins, CO₂ production increases. Chemoreceptors in the carotid body and aortic arch detect elevated arterial CO₂ and decreased O₂. They send signals to the respiratory centre in the medulla, increasing ventilation rate. Increased ventilation removes excess CO₂ and increases O₂ uptake. This response is rapid (seconds), preventing acidosis (pH drop) from lactate accumulation.',
-      },
+        "id": "h_18_6",
+        "type": "heading",
+        "data": {
+            "text": "to a specific region of DNA",
+            "level": 3
+        }
     },
     {
-      id: 'p-respiration-mechanism',
-      type: 'paragraph',
-      data: {
-        text: 'The ventilation increase during exercise is partly chemoreceptor-driven (CO₂, O₂, H⁺) and partly central command (feed-forward from motor cortex to respiratory centres). This dual control ensures ventilation increases before CO₂ accumulates significantly.',
-      },
+        "id": "h_18_7",
+        "type": "heading",
+        "data": {
+            "text": "It is estimated that ~10 % of human genes code for transcription factors",
+            "level": 3
+        }
     },
     {
-      id: 'h-glucose-exercise',
-      type: 'heading',
-      data: { text: 'Blood Glucose Response', level: 4 },
+        "id": "h_18_8",
+        "type": "heading",
+        "data": {
+            "text": "There are\u00a0several types of transcription factors\u00a0that have varying effects on",
+            "level": 3
+        }
     },
     {
-      id: 'p-glucose-exercise',
-      type: 'paragraph',
-      data: {
-        text: 'During exercise, muscles consume glucose at rates far exceeding baseline. Blood glucose would fall dangerously if not maintained. Two hormones prevent hypoglycaemia: (1) glucagon: released by alpha cells when blood glucose starts to fall; promotes glycogenolysis and gluconeogenesis in liver; (2) epinephrine (adrenaline): released by adrenal medulla in response to sympathetic activation; promotes lipolysis and glycogenolysis.',
-      },
+        "id": "h_18_9",
+        "type": "heading",
+        "data": {
+            "text": "gene expression",
+            "level": 3
+        }
     },
     {
-      id: 'list-glucose-exercise',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Early exercise (<10 min): hepatic glycogenolysis supplies glucose; insulin levels fall (sympathetic inhibition)',
-          'Prolonged exercise (>30 min): hepatic gluconeogenesis (from lactate, amino acids) becomes important; glucagon levels rise; cortisol rises (hypothalamic-pituitary-adrenal axis activated)',
-          'Post-exercise: glucose consumption declines; insulin levels rise (parasympathetic recovery); liver glycogen is replenished',
-        ],
-      },
+        "id": "h_18_10",
+        "type": "heading",
+        "data": {
+            "text": "E.g. transcription factors that increase\u00a0the rate at which a gene is",
+            "level": 3
+        }
     },
     {
-      id: 'h-temperature-exercise',
-      type: 'heading',
-      data: { text: 'Thermoregulation During Exercise', level: 4 },
+        "id": "h_18_11",
+        "type": "heading",
+        "data": {
+            "text": "expressed are known as\u00a0activators, while those that\u00a0decrease\u00a0gene",
+            "level": 3
+        }
     },
     {
-      id: 'p-temperature-exercise',
-      type: 'paragraph',
-      data: {
-        text: 'Exercise generates tremendous metabolic heat. Core body temperature can rise to 38–39°C during intense exercise. To prevent hyperthermia, multiple cooling mechanisms activate: (1) sweating: water evaporation from skin causes maximum cooling (~6 mL sweat per minute); (2) vasodilation: skin blood vessels dilate, increasing skin blood flow from ~10% to ~50% of cardiac output; (3) increased ventilation: breathing rate rises, some evaporative cooling from lungs; (4) postural changes: adopting horizontal position reduces metabolic rate.',
-      },
+        "id": "h_18_12",
+        "type": "heading",
+        "data": {
+            "text": "expression are known as\u00a0repressors",
+            "level": 3
+        }
     },
     {
-      id: 'callout-heat-loss',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Heat Loss During Exercise',
-        text: 'Sweating is the most important cooling mechanism. One litre of sweat evaporation removes ~2.4 MJ (2400 kJ) of heat. During marathon running, athletes can lose 1–2 L sweat per hour. This cooling capacity is vital; without sweating, core temperature would reach lethal levels (>42°C) within 15 minutes.',
-      },
+        "id": "p_18_13",
+        "type": "paragraph",
+        "data": {
+            "text": "Transcription factors ensure that genes are being expressed in the correct cells,"
+        }
     },
     {
-      id: 'h-osmoregulation-exercise',
-      type: 'heading',
-      data: { text: 'Osmoregulation & Fluid Balance During Exercise', level: 4 },
+        "id": "h_18_14",
+        "type": "heading",
+        "data": {
+            "text": "at the correct time and to the right level",
+            "level": 3
+        }
     },
     {
-      id: 'p-osmoregulation-exercise',
-      type: 'paragraph',
-      data: {
-        text: 'Sweating causes water and salt loss, which threatens both osmolarity and blood volume. The body responds: (1) ADH release increases (triggered by rising osmolarity and falling blood volume); collecting duct becomes more water-permeable, reducing urine volume (water conserved); (2) aldosterone increases (via RAAS activation by lower blood pressure); promotes Na⁺ reabsorption and water retention; (3) thirst mechanism activated (osmoreceptors in hypothalamus sense high osmolarity); athlete drinks to replace fluids.',
-      },
+        "id": "h_18_15",
+        "type": "heading",
+        "data": {
+            "text": "Transcription factors allow organisms to\u00a0respond to their environment",
+            "level": 3
+        }
     },
     {
-      id: 'p-hyponatraemia',
-      type: 'paragraph',
-      data: {
-        text: 'A danger in endurance sports: athletes may drink excessive pure water (hypotonic fluid) without adequate electrolytes, leading to hyponatraemia (low blood Na⁺). This can cause cerebral oedema and seizures. Sports drink formulations (with glucose and electrolytes) prevent this by maintaining osmolarity.',
-      },
+        "id": "h_18_16",
+        "type": "heading",
+        "data": {
+            "text": "Some\u00a0hormones achieve their effect by acting upon transcription factors",
+            "level": 3
+        }
     },
     {
-      id: 'h-stress-response',
-      type: 'heading',
-      data: { text: 'Integration: Acute Stress Response ("Fight or Flight")', level: 3 },
+        "id": "h_18_17",
+        "type": "heading",
+        "data": {
+            "text": "Effect of hormones inside cells",
+            "level": 3
+        }
     },
     {
-      id: 'p-stress-overview',
-      type: 'paragraph',
-      data: {
-        text: 'During acute stress (threat, fear), the sympathetic nervous system is activated, triggering the "fight or flight" response. Multiple homeostatic systems shift to support immediate physical action. The response involves both rapid nervous signalling and slower hormonal changes.',
-      },
+        "id": "p_18_18",
+        "type": "paragraph",
+        "data": {
+            "text": "Hormones that can\u00a0cross the cell surface membrane, e.g. steroid hormones and thyroid hormones, are able to\u00a0enter the nucleus\u00a0and\u00a0bind to transcription factors\u00a0that are"
+        }
     },
     {
-      id: 'table-stress-response',
-      type: 'comparisonTable',
-      data: {
-        headers: ['System', 'Response', 'Mechanism', 'Benefit'],
-        rows: [
-          [
-            'Cardiovascular',
-            'Heart rate ↑, blood pressure ↑',
-            'Sympathetic activation (noradrenaline)',
-            'Deliver oxygen & glucose to muscles',
-          ],
-          [
-            'Respiratory',
-            'Ventilation rate ↑',
-            'Sympathetic + chemoreceptors',
-            'Increase O₂ uptake, remove CO₂',
-          ],
-          [
-            'Blood glucose',
-            'Glucose ↑ (hyperglycaemia)',
-            'Epinephrine + glucagon ↑; insulin ↓',
-            'Fuel for muscle action',
-          ],
-          [
-            'Muscle',
-            'Blood flow ↑ (redirected from GI)',
-            'Sympathetic vasoconstriction GI; vasodilation muscle',
-            'Power output for fight/flight',
-          ],
-          [
-            'Thermoregulation',
-            'Heat production ↑; initial vasoconstriction',
-            'Sympathetic activation; shivering in some',
-            'Preparedness for action',
-          ],
-          [
-            'Urination/defecation',
-            'Often inhibited (or involuntary loss in extreme fear)',
-            'Sympathetic suppression of parasympathetic tone',
-            'Conserve energy, lightweight',
-          ],
-        ],
-        caption: 'Acute stress response: integration of multiple homeostatic systems',
-      },
+        "id": "h_18_19",
+        "type": "heading",
+        "data": {
+            "text": "present there",
+            "level": 3
+        }
     },
     {
-      id: 'h-hpa-axis',
-      type: 'heading',
-      data: { text: 'Chronic Stress: Hypothalamic-Pituitary-Adrenal (HPA) Axis', level: 3 },
+        "id": "h_18_20",
+        "type": "heading",
+        "data": {
+            "text": "Steroid hormones are lipid soluble, allowing them to pass between the",
+            "level": 3
+        }
     },
     {
-      id: 'p-hpa-axis',
-      type: 'paragraph',
-      data: {
-        text: 'If stress is prolonged, a slower hormonal cascade occurs: (1) hypothalamus releases corticotropin-releasing hormone (CRH); (2) anterior pituitary releases adrenocorticotropic hormone (ACTH); (3) adrenal cortex releases cortisol. Cortisol increases glucose production (gluconeogenesis), suppresses immune function, and promotes fat and protein catabolism. This prepares the body for sustained stress but, if chronic, causes adverse effects (immunosuppression, muscle wasting, osteoporosis).',
-      },
+        "id": "h_18_21",
+        "type": "heading",
+        "data": {
+            "text": "phospholipids of the cell surface membrane",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'During exercise, CO₂ rises → ventilation increases (chemoreceptor reflex). Blood glucose falls → glucagon and epinephrine released → hepatic glucose production. Metabolic heat generated → sweating and vasodilation activate (thermoregulation). Dehydration → ADH and aldosterone rise → water retention. All systems coordinate via hypothalamus and sympathetic nervous system.',
-        apply: 'An athlete runs a marathon (intense exercise, 2+ hours). Predict and explain: (a) blood glucose changes; (b) core temperature dynamics; (c) fluid balance response; (d) ventilation; (e) post-exercise recovery.',
-        analyze: 'Why is the "fight or flight" response adaptive in acute stress but harmful if chronic? Discuss the long-term health consequences of chronic HPA axis activation.',
-        evaluate: 'Integration of homeostatic systems during exercise is remarkable. What evolutionary pressures favoured this coordination? How does it relate to ancestral survival challenges?',
-      },
-      terms: [],
+        "id": "h_18_22",
+        "type": "heading",
+        "data": {
+            "text": "An example of this is the\u00a0hormonal regulation of body temperature",
+            "level": 3
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Describe the respiratory response during exercise and its triggers', checked: false },
-          { text: 'Explain how blood glucose is maintained during prolonged exercise', checked: false },
-          { text: 'Describe the thermoregulatory response to exercise', checked: false },
-          { text: 'Explain how osmoregulation responds to dehydration from sweating', checked: false },
-          { text: 'Describe the acute stress response and the HPA axis', checked: false },
-        ],
-      },
+        "id": "h_18_23",
+        "type": "heading",
+        "data": {
+            "text": "At normal body temperature a transcription factor known as the\u00a0thyroid hormone",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Exercise integration: (1) CO₂ rises → chemoreceptors detect → ventilation increases; (2) glucose consumed → glucagon/epinephrine released → hepatic glucose production; (3) heat generated → sweating/vasodilation activate; (4) dehydration → ADH/aldosterone rise → water retained. Stress: sympathetic activation (fight/flight) → HR ↑, BP ↑, glucose ↑, blood redirected to muscles. Chronic stress: HPA axis activated → cortisol rises → long-term metabolic changes. All systems coordinate via hypothalamus.',
-      },
+        "id": "h_18_24",
+        "type": "heading",
+        "data": {
+            "text": "receptor\u00a0binds to a section of DNA at the start of a gene",
+            "level": 3
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-respiration-exercise',
-        prompt: 'Describe how chemoreceptors detect CO₂ rise during exercise and trigger ventilation increase.',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'list-glucose-exercise',
-        prompt: 'Explain how blood glucose is maintained during early and prolonged exercise. Which hormones are involved?',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-temperature-exercise',
-        prompt: 'Describe the thermoregulatory mechanisms activated during intense exercise.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-osmoregulation-exercise',
-        prompt: 'How does ADH and aldosterone respond to dehydration from sweating?',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'table-stress-response',
-        prompt: 'Describe the acute stress ("fight or flight") response and explain why each change is adaptive.',
-      },
-    ],
-    summaryText:
-      'Exercise: CO₂ rises → ventilation increases (chemoreceptor reflex); glucose consumed → glucagon + epinephrine released → hepatic glycogenolysis/gluconeogenesis. Heat generated → sweating (max cooling) + vasodilation. Dehydration → ADH/aldosterone rise → water/Na⁺ retained. Stress: sympathetic activation → HR ↑, BP ↑, glucose ↑, blood redirected muscle (fight/flight). Chronic: HPA axis → cortisol released → sustained metabolic changes.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Cannon stress response',
-      detail: 'Walter Cannon described "fight or flight"; physiological basis of acute stress response',
-      year: '1915',
-      source: 'History of physiology',
-      tags: ['stress'],
+        "id": "h_18_25",
+        "type": "heading",
+        "data": {
+            "text": "This gene codes for a\u00a0protein that increases\u00a0the metabolic rate, generating",
+            "level": 3
+        }
     },
-  ],
+    {
+        "id": "h_18_26",
+        "type": "heading",
+        "data": {
+            "text": "more heat and therefore increasing body temperature",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_27",
+        "type": "paragraph",
+        "data": {
+            "text": "As long as the thyroid hormone receptor is\u00a0bound\u00a0to the region of DNA at the start of"
+        }
+    },
+    {
+        "id": "h_18_28",
+        "type": "heading",
+        "data": {
+            "text": "the gene, the gene will not be expressed; it can be said to be switched off",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_29",
+        "type": "paragraph",
+        "data": {
+            "text": "In reality it is more likely that expression of the gene will be reduced rather than"
+        }
+    },
+    {
+        "id": "h_18_30",
+        "type": "heading",
+        "data": {
+            "text": "switched off entirely",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_31",
+        "type": "heading",
+        "data": {
+            "text": "However,\u00a0in cold temperatures\u00a0the body will release the\u00a0hormone",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_32",
+        "type": "heading",
+        "data": {
+            "text": "thyroxine\u00a0which\u00a0binds\u00a0to the thyroid hormone receptor",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_33",
+        "type": "heading",
+        "data": {
+            "text": "Once the hormone and the receptor are bound together the thyroid hormone",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_34",
+        "type": "heading",
+        "data": {
+            "text": "be switched on and its rate of expression will increase",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_35",
+        "type": "paragraph",
+        "data": {
+            "text": "The protein which\u00a0increases the metabolic rate is produced in larger quantities,"
+        }
+    },
+    {
+        "id": "h_18_36",
+        "type": "heading",
+        "data": {
+            "text": "leading to an increase in body temperature",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_37",
+        "type": "paragraph",
+        "data": {
+            "text": "The hormone thyroxine acts as a transcription factor by binding to the thyroid hormone receptor; this switches on the gene, allowing it to be transcribed by RNA polymerase"
+        }
+    },
+    {
+        "id": "h_18_38",
+        "type": "heading",
+        "data": {
+            "text": "Effect of hormones from outside cells",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_39",
+        "type": "paragraph",
+        "data": {
+            "text": "Hormones that\u00a0cannot cross\u00a0the cell membrane, e.g. protein and peptide hormones,"
+        }
+    },
+    {
+        "id": "h_18_40",
+        "type": "heading",
+        "data": {
+            "text": "bind to\u00a0receptors in the cell surface membrane",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_41",
+        "type": "heading",
+        "data": {
+            "text": "Examples of such hormones include",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_42",
+        "type": "heading",
+        "data": {
+            "text": "Adrenaline",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_43",
+        "type": "heading",
+        "data": {
+            "text": "Insulin",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_44",
+        "type": "heading",
+        "data": {
+            "text": "Glucagon",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_45",
+        "type": "heading",
+        "data": {
+            "text": "ADH",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_46",
+        "type": "paragraph",
+        "data": {
+            "text": "The binding of these hormones to cell surface membrane receptors initiates a process"
+        }
+    },
+    {
+        "id": "h_18_47",
+        "type": "heading",
+        "data": {
+            "text": "that activates messenger molecules\u00a0in the cytoplasm of the cell known as second",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_48",
+        "type": "heading",
+        "data": {
+            "text": "messengers",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_18_49",
+        "type": "heading",
+        "data": {
+            "text": "A common second messenger molecule is cyclic AMP (cAMP), formed from ATP",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_50",
+        "type": "paragraph",
+        "data": {
+            "text": "The activated second messenger molecules\u00a0activate enzymes\u00a0called\u00a0protein kinases Active protein kinase enzymes trigger a chain of reactions, known as a cascade,\u00a0inside"
+        }
+    },
+    {
+        "id": "h_18_51",
+        "type": "heading",
+        "data": {
+            "text": "the cell",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_52",
+        "type": "paragraph",
+        "data": {
+            "text": "The cascade may result in changes to the activity of transcription factors which may"
+        }
+    },
+    {
+        "id": "h_18_53",
+        "type": "heading",
+        "data": {
+            "text": "then affect gene expression in the cell",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_18_54",
+        "type": "paragraph",
+        "data": {
+            "text": "Adrenaline acts by binding to a receptor on cell surface membranes; this activates the second messenger cAMP, leading to a cascade of reactions that affects the activity of"
+        }
+    },
+    {
+        "id": "h_18_55",
+        "type": "heading",
+        "data": {
+            "text": "the cell, e.g. by influencing transcription factors",
+            "level": 3
+        }
+    }
+]
 };

@@ -1,0 +1,411 @@
+Edexcel International A
+Level (IAL) Biology
+Plant Hormones
+Contents
+Effects of Plant Hormones
+Core Practical 18: Amylase in Germinating Cereal Grains
+Nervous & Hormonal CoordinationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Effects of Plant Hormones
+Effects of Plant Hormones
+Just like animals, the survival of plants is dependent on their ability to respond to
+changes in their environment; this maximises their survival chances e.g.
+Growing towards light maximises the rate of photosynthesis and therefore glucose
+production
+Producing harmful or foul-tasting chemicals in response to being eaten by a
+herbivore reduces the likelihood of being eaten
+Producing flowers at the right time of year increases the chances of reproducing
+successfully
+Plants can respond to several types of stimuli e.g.
+Light
+Gravity
+Physical objects
+Herbivory
+Water
+Physical touch
+Unlike many animals, plants do not possess a nervous system; the responses of plants
+rely on chemical substances that are released or altered in response to a stimulus
+Phytochrome
+Phytochromes are plant pigments that react to different types of light, leading to
+different plant responses
+Phytochrome pigments exist in two forms
+P is the inactive form of phytochrome, it absorbs light from the red part of the
+spectrum (wavelength 660 nm)
+P is the active form of phytochrome, it absorbs light from the far red part of the
+spectrum (wavelength 730 nm)
+Absorption of different wavelengths of light causes a reversibleconversion between
+the P and P  forms of phytochrome
+When P absorbs red light (660 nm) it is converted into P
+When P  absorbs far red light (730 nm) it is converted back into P
+In the absence of red light, the unstable P  gradually converts back into P
+Phytochrome and germinationR
+FR
+R FR
+R FR
+FR R
+FR RYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Early observations of light exposure and seed germination showed that seeds exposed
+to red light would germinate, while seeds exposed to far-red light would not.
+It is now thought that phytochrome is responsible for these observations
+Exposure to even a short burst of red light converts P into P , triggering
+germination in seeds
+Far-red light causes P  to be converted back into P, reversing the effects of any
+red light exposure and preventing germination
+Phytochrome and Flowering
+Flowering in plants is controlled by the stimulus of night length
+Nights are shorter during the spring and summer and longer in the autumn and winter
+Some plants flower when nights are short and some flower when nights are long
+When the nights reach a certain length, genes that control flowering may be switched
+on or off, leading to the activation or inhibition of flowering
+Genes that are switched on are expressed, leading to production of the
+polypeptides for which they code, while genes that are switched off are not
+expressed, so the polypeptides for which they code are not produced
+The length of night can be detected by a plant because it determines the quantities of
+different forms of a pigment called phytochrome in the leaf
+During the day levels of P rise
+Sunlight contains more wavelengths at 660 nm than 730 so the conversion from
+P to P  occurs more rapidly in the daytime than the conversion from P to P
+During the night levels of P rise
+Red light wavelengths are not available in the darkness and P converts slowly back
+to PR FR
+FR R
+FR
+R FR FR  R
+R 
+FR 
+R
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+P is converted to P  in a reversible reaction which controls flowering
+E.g. long day plants
+Long day plants flower when the nights are short e.g. in summer
+When nights are short, the day length is longer, hence the term 'long day plants'
+In long day plants high levels of the active form of phytochrome activate flowering
+Flowering occurs due to the following process
+Days are long so Pis converted to P at a greater rate than P is converted to
+P
+The active form of phytochrome, P , is present at high levels
+High levels of P activate flowering 
+P activates expression of genes that stimulate flowering
+It is thought that P  acts as a transcription factor
+The active gene is transcribed and translated 
+The resulting protein causes flowers to be produced rather than stems and
+leaves
+Phytochrome and transcription
+Evidence suggests that in addition to their role in germination and flowering,
+phytochromes are also involved in plant responses to light and gravity
+Phytochromes are thought to influence gene expression in plants by acting as
+transcription factors
+P is converted into P  in the presence of red light
+P  can move into the nucleus via the nuclear pores
+P binds to a protein in the nucleus known as phytochrome-interacting factor 3
+(PIF3)
+Once bound to P , PIF3 can initiate transcription
+It is thought that P  and PIF3 together are able to activate various different genes and
+so control many different aspects of plant growth and development
+Growth factors
+Plants can respond to stimuli in various ways, including by altering their growth
+E.g. a seedling will bend and grow towards the light because there is more growth
+on the shaded side than on the illuminated side
+This type of directionalgrowth response is referred to as a tropism
+Phototropism is a growth response to lightR FR
+R  FR  FR 
+R
+FR
+FR 
+FR 
+FR
+R FR
+FR
+FR
+FR
+FRYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Geotropism is a growth response to gravity
+The response to gravity is also known as gravitropism
+Tropisms can be positive or negative
+Positive tropisms involve growth towards a stimulus
+E.g. positive phototropism is a growth response towards light
+Negative tropisms involve growth away from a stimulus
+E.g. negative geotropism is a growth responseaway from gravity i.e. upwards
+The growth responses of plants rely on chemical substances that are released in
+response to a stimulus
+These chemical growth factors act in a similar way to the hormones that are found in
+animals
+Plant growth factors are sometimes referred to as plant hormones as they
+are chemical messengers
+Growth factors are produced in the growing parts of a plant before moving from the
+growing regions to other tissues where they regulate cell growth in response to a
+directional stimulus
+E.g. auxin is a growth factor that stimulates cell elongation in plant
+shoots and inhibits growth in cells in plant roots
+Other examples of plant hormones along with some of their regulatory roles include
+Gibberellins
+Stem elongation
+Flowering
+Seed germination
+Cytokinins
+Cell growth and division
+Abscisicacid (ABA) 
+Leaf loss
+Seed dormancy
+Ethene
+Fruit ripening
+Flowering
+Indoleacetic acid
+Indoleacetic acid, or IAA, is a type of auxinYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Auxins are a group of plant growth factors that influence many aspects of plant
+growth, e.g.
+Apical dominance; the suppression of the growth of side shoots by auxins in
+the growing shoot tip
+Promoting the growth of roots at low concentrations and inhibiting the growth
+of roots at high concentrations
+Phototropism in shoots
+It is thought that IAA brings about plant responses such as phototropism by altering the
+transcriptionof genes inside plant cells
+Altering the expression of genes that code for proteins involved with cell growth can
+affect the growth of a plant
+IAA is produced by cells in the growing parts of a plant before it is redistributed to other
+plant tissues
+IAA can be transported from cell to cell by diffusion and active transport 
+Transport of IAA over longer distances occurs in the phloem
+The redistribution of IAA is affected by environmental stimuli such as light and gravity,
+leading to an uneven distribution of IAA in different parts of the plant
+This brings about uneven plant growth
+IAA in plant shoots
+Light affects the growth of plant shoots in a response known as phototropism
+The concentration of IAA determines the rate of cell elongation within the stem
+A higher concentration of IAA causes an increase in the rate of cell elongation by
+increasing the stretching ability of cell walls
+If the concentration of IAA is not uniform across the stem then uneven cell
+growth can occur
+When light shines on a stem from one side, IAA is transported from the illuminated side
+of a shoot to the shaded side
+An IAA gradient is established, with more on the shaded side and less on the
+illuminated side
+The higher concentration of auxin on the shaded side of the shoot causes a faster rate of
+cell elongation, and the shoot bends towards the source of lightYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+IAA stimulates cell elongation in shoots
+IAA in roots
+Roots respond to gravity in a response known as geotropism
+In roots, IAA concentration also affects cell elongation, but high concentrations of IAA
+result in a lower rate of cell elongation
+Note that this is the opposite effect to that of IAA on shoot cells
+IAA is transported towards the lower side of plant roots
+The resulting high concentration of auxin at the lower side of the root inhibits cell
+elongation
+As a result, the lower side grows at a slower rate than the upper side of the root,
+causing the root to bend downwards
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+IAA inhibits cell elongation in shoots. Note that you do not need to know about the role
+played by amyloplasts in detecting the direction of gravity
+Gibberellins
+Gibberellins are a type of plant growth regulator involved in controlling seed
+germination,stem elongation, flowering, and fruit development
+When a barley seed is shed from the parent plant, it is in a state of dormancy, containing
+very little water and being metabolically inactive
+This allows the seed to survive harsh conditions until the conditions are right for
+successful germination, e.g. the seed can survive a cold winter until temperatures
+rise again in spring
+The barley seed contains
+An embryo
+This will grow into the new plant when the seed germinates
+An endosperm
+This is a starch-containing energy store surrounding the embryo
+An aleurone layer
+This is a protein-rich layer on the outer edge of the endosperm
+When the conditions are right the barley seed starts to absorb water to begin the
+process of germination
+This stimulates the embryo to produce gibberellins
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+Gibberellin molecules diffuse to the aleurone layer and stimulate the cells there
+to synthesise amylase
+In barley seeds it has been shown that gibberellin does this by causing an increase in
+the transcription of genes coding for amylase
+The amylase hydrolyses starch molecules in the endosperm, producing
+soluble maltose molecules
+The maltose is converted to glucose and transported to the embryo
+This glucose can be respired by the embryo, providing the embryo with
+the energy needed for growth
+Gibberellins in barley seeds cause the synthesis of amylase enzymes which break down
+starch stores in the endosperm
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Core Practical 18: Amylase in Germinating Cereal Grains
+Amylase in Germinating Cereal Grains
+Cereal grains such as barley contain
+An embryo
+This will grow into the new plant when the seed germinates
+An endosperm
+This is a starch-containing energy store surrounding the embryo
+An aleurone layer
+This is a protein-rich layer on the outer edge of the endosperm
+Barley seeds are shed from the parent plant in a state of dormancy, but when conditions
+are right for germination the starch in the endosperm is broken down into first maltose
+and then glucose, which provides a source of energy for the developing embryo
+The breakdown of the endosperm is stimulated by production of the plant growth factor
+gibberellin in the seed embryo, which initiates the production of amylase in the
+aleurone layer
+Amylase breaks down amylose in starch into maltose
+The effect of gibberellin concentration on the production of amylase in germinating
+barley seeds can be investigated using a technique called a starch agar assay
+As part of this process, cereal grains need to be cut in half to remove the embryo
+part of the seed; the embryo in a germinating seed would normally produce
+gibberellin, so removing it allows the investigator to control the amount of
+gibberellin the grain is exposed to
+The embryo is found in the more pointed end of the seed, so this section must
+be discarded during the investigationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+Cutting the grain in half allows the part of the seed containing the embryo to be removed
+and discarded; this removes the part of the seed that produces gibberellin, allowing the
+investigator to control the gibberellin exposure of the remaining part of the grain
+Apparatus
+Measuring cylinders and pipettes
+Marker pen
+Cereal grains e.g. barley
+3 % sodium hypochlorite solution
+Filter cloth e.g. muslin
+Distilled water
+Beakers
+Scalpel
+Forceps
+Cutting tile
+1 g dm  gibberellic acid solution
+Petri dishes containing starch agar gel
+Sticky tape
+Iodine
+Large beaker for waste iodine solution
+Ruler
+Method
+-3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+1. Use measuring cylinders and pipettes to make up several gibberellic acid solutions at
+different concentrations; place these in labelled beakers
+2. Remove any outer husks from cereal grains
+This allows the shape of the grain to be seen clearly, helping to identify the half of the
+grain that contains the embryo in step 3
+3. Cut seeds horizontally using a scalpel on a cutting tile and discard the seed half
+containing the embryo
+This prevents any gibberellin produced by the embryo from influencing the results
+4. Place grain halves into sodium hypochlorite solution for 5 minutes
+This sterilises the grains
+5. Wash the seeds with distilled water, draining the water through a filter cloth; this should
+be repeated several times to remove all of the sodium hypochlorite solution
+The sodium hypochlorite solution will smell of chlorine, so washing should be
+repeated until thissmell is no longer present
+6. Use forceps to place the grain halves into gibberellin solutions at different
+concentrations, cover lightly and leave for 12−48 hours
+Covering prevents contamination, but doing so lightly ensures that the covers are
+not air tight so that oxygen can enter
+7. Place several grain halves from one gibberellin concentration onto a sterile starch agar
+petri dish and label dish with relevant gibberellin concentration; place seeds with cut
+half facing downwards
+8. Lightly tape the lid onto the petri dish with 2−4 small pieces of sticky tape and leave for
+24−48 hours
+Any amylase being produced inside the seed will diffuse out of the cut seed and
+into the starch agar, digesting the starch and leaving areas of agar around the seed
+in which no starch is present
+9. Repeat steps 7−8 for seeds at all gibberellin concentrations
+10. Pour iodine solution onto the surface of each petri dish, ensuring that it covers the entire
+surface of the agar and that the lid of each dish is only raised enough to allow iodine to
+be poured
+Only lifting the lid slightly will prevent contamination of the agar with any other
+potential sources of starch
+11. Leave for a few minutes until the starch in the agar becomes stained with the iodine, and
+then pour excess iodine into a waste container
+Areas of the agar containing starch will stain blue-black
+12. Measure the diameter of the clear zone around each cereal grain, recording the results
+for each gibberellin concentration in a table
+The larger the clear area, the more amylase was produced by the cereal grainYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+If several grains were used at each concentration then an average can be calculated
+13. Plot a graph of gibberellin concentration against diameter of clear agar area
+The diameter of the clear zone around each cereal grain indicates the amount of amylase
+released; the larger the clear zone, the more amylase has been produced by the grain
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+Nervous & Hormonal Coordination
+Nervous & Hormonal Coordination
+Both plants and animals must respond to changes in their external and internal
+environments in order to survive
+They need to
+Find favourable external conditions e.g. avoiding locations that are too hot or
+cold
+Find food
+Avoid harm e.g. from predators or high blood glucose
+While plants use chemical signals to co-ordinate responses to stimuli, animals bring
+about coordination by both nervous and hormonal control
+Changes in the environment, or stimuli (singular stimulus) are detected by specialised
+receptor cells
+Receptor cells are located in the sense organs e.g. the nose and eyes
+Receptor cells can also be found inside the body e.g. pressure receptors in the
+blood vessels
+Receptor cells send signals via either the nervous system or the hormonal system to the
+body's co-ordination centres in the brain or spinal cord
+Signals are then sent on to the parts of the body which respond, known as the effectors
+Effectors can be either muscles or glands e.g.
+An arm muscle would respond to a hot surface by contracting to move the hand
+away
+The pancreas responds to high blood sugar by secreting insulinYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+Receptors are cells that detect stimuli in the internal and external environment
+The nervous system
+The human nervous system consists of
+Central nervous system (CNS) – the brain and spinal cord
+Peripheral nervous system (PNS) – all of the nerves in the body
+The nervous system allows detection of stimuli in our surroundings and the coordination
+of the body's responses to the stimuli
+Information is sent through the nervous system in the form of electrical impulses that
+pass along nerve cells known as neurones
+A bundle of neurones is known as a nerve
+There are different types of neuronesincluding sensory neurones, relay neurones,
+and motor neurones
+The nerves connect the receptors in the sense organs with the CNS, and connect the
+CNS with effectors
+The CNS acts as a central coordinating centre for the impulses that come in from,
+and are sent out to, any part of the body
+Nerve impulses pass through the nervous system along the following pathway
+stimulus →  receptor →  sensory neurone →  CNS → motor neurone → effector
+An example of this nerve pathway in action might be
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+hot surface →  pain receptor in skin of hand →  sensory neurone → CNS →  motor
+neurone →  arm muscle
+The muscle in the arm responds by contracting to move the hand away from the hot
+surfaceYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+The nervous system allows the detection of stimuli and the co-ordination of appropriate
+responses
+The hormonal system
+Hormones are chemical substances produced by endocrine glands and carried by
+the blood
+Endocrine glands are ductless and secrete hormones directly into the blood
+Hormones are sometimes known as chemical messengers
+Hormones transmit information from one part of an organism to another and bring
+about change by altering the activity of one or more specific target organs
+Hormones can leave the blood and bind to specific receptors on the cell surface
+membranes of target organs
+Hormones are slower in action than nerve impulses and are therefore used to control
+functions that do not need instant responses
+Endocrine glands that produces hormones in animals are known collectively as the
+endocrine system
+Endocrine glands can be stimulated to secrete hormones by the action of another
+hormone or by the arrival of a nerve impulse
+The pathway of hormone action is as follows
+stimulus →  receptor →  hormone → effector
+An example of this pathway in action might be
+high blood sugar →  cells in the pancreas →  insulin →  liver cells 
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+The liver cells respond to insulin by converting glucose into glycogen
+Hormones are secreted into the blood by the endocrine glands 
+Comparison of Nervous and Hormonal control Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19

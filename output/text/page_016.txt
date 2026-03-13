@@ -1,0 +1,45 @@
+= lf the orderis altered, the resulting three-dimensional shape changes
+» l|fthetertiary structure of the protein is altered in any way, the shape of the active site
+will change and the substrate will no longer fit the active site
+
+= This means that an enzyme-substrate complex will not be able to form and the
+product(s) will not be produced: the enzyme will not be able to carry out its function
+
+SUBSTRATE |S
+SPECIFIC TO
+
+(( \) ENZYME 1
+
+ENZYME 4
+
+IS COMPLEMENTARY
+IN SHAPE TO THE
+SUBSTRATE ;
+
+WILL CATALYSE
+
+A REACTION.
+
+ENZYME 2
+IS NOT ABLE TO BIND
+e TO THIS SUBSTRATE;
+THEY ARE NOT
+COMPLEMENTARY.
+
+save my exams
+
+An example of enzyme specificity
+
+The lock-and-key hypothesis
+
+=» Inthe 1890's the first model of enzyme activity was described by Emil Fischer:
+
+=» Hesuggested that both enzymes and substrates were rigid
+structures that locked into each other very precisely, much like a key going into a
+lock
+
+= Thisis known as the ‘lock-and-key hypothesis’
+
+Your notes
+
+4 SaveMyExams © 2026 Save My Exams, Ltd. | Get more and ace your exams at savemyexams.com 16

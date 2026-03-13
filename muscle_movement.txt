@@ -1,0 +1,653 @@
+Edexcel International A
+Level (IAL) Biology
+Muscular Movement
+Contents
+The Musculoskeletal System
+The Muscle Fibre
+The Process of Skeletal Muscle Contraction
+The Role of Muscle in the Cardiac Cycle
+Calculation of Cardiac Output
+The Role of Adrenaline
+Core Practical 17: The Effects of ExerciseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+The Musculoskeletal System
+The Musculoskeletal System
+The effective movement of the human body requires both muscle and
+an incompressible skeleton
+This is because muscles will only produce effective movement if they pull on a
+structure that does not shorten or bend - bone
+There are over 600 skeletal muscles in the human body
+Muscles are effectors, stimulated by nerve impulses from motor neurones
+The muscular system is complex, with multiple muscles crossing over each other in
+multiple directions
+Lengths of strong connective tissue called tendons, connect muscles to bones
+They are flexible but do not stretch when a muscle is contracting and pulling on a
+bone
+There are a few muscles with very long tendons and also a few that are directly
+attached to the bone
+Ligaments are also lengths of strong connective tissue but they connect bones to
+other bones, which keep the skeleton intact
+Antagonistic muscle action
+Muscles are only capable of contracting or pulling, they cannot push
+As a result of this limitation muscles generally operate in pairs
+A muscle pulls in one direction at a joint and the other muscle pulls in the opposite
+direction
+This is described as antagonistic muscle action
+An example of this can be seen in the biceps and triceps of the arm
+To raise the lower arm
+The bicep contracts and the tricep relaxes
+As the bone can't be stretched the arm flexes around the joint
+A muscle that bends a joint during contraction is known as a flexor (the bicep in this
+case)
+This brings the tricep into its full length so that it can contract again
+To lower the lower arm
+The tricep contracts and bicep relaxes
+As the bone can't be stretched the arm flexes around the jointYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+A muscle that straightens a joint during contraction is known as an extensor (the
+tricep in this case)
+Antagonistic muscle action: the two muscles work together by pulling in opposite
+directions
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+The Muscle Fibre
+Muscle Fibre: Structure
+Skeletal muscle makes up the muscles in the body that are attached to the skeleton
+Skeletal muscle is made up of muscle fibres
+A muscle fibre is a highly specialised cell-like unit:
+Each muscle fibre:
+Contains an organised arrangement of contractile proteins in the cytoplasm
+Is surrounded by a cell surface membrane
+Contains many nuclei (multi-nucleated) – this is why muscle fibres are not
+usually referred to as cells
+The different parts of a muscle fibre have different names to the equivalent parts of a
+normal cell:
+Cell surface membrane = sarcolemma
+Cytoplasm = sarcoplasm
+Endoplasmic reticulum = sarcoplasmic reticulum (SR)
+The sarcolemma has many deep tube-like projections that fold in from its outer surface:
+These are known as transverse system tubules or T-tubules
+These run close to the SR and help spread electrical impulses throughout muscle
+fibre
+The sarcoplasm contains mitochondria and myofibrils
+The mitochondria carry out aerobic respiration to generate the ATP required for
+muscle contraction
+Myofibrils are bundles of actin and myosin filaments, which slide past each other
+during muscle contraction
+The membranes of the SR contain protein pumps that transport calcium ions into the
+lumen of the SR
+Calcium ions are needed for the contraction of muscleYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+The ultrastructure of skeletal muscle and of a section of muscle fibre
+Myofibrils
+Myofibrils are located in the sarcoplasm
+Each myofibril is made up of two types of protein filament:
+Thick filaments made of myosin
+Thin filaments made of actin
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+These two types of filaments are arranged in a particular order, creating different types
+of bands and lines
+Myofibrils Parts & Descriptions Table
+ Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+The structure of a myofibril
+Fast & Slow Twitch Muscle Fibres
+There are two types of muscle fibres found in muscles
+Fasttwitch fibres
+Slowtwitch fibres
+Human muscles are made up of both types of muscle fibres
+Some muscles have higher proportions of a particular fibre type due to their different
+properties
+Fast twitch muscle fibres
+Fast twitch muscle fibres contract rapidly
+The myosin heads bind and unbind from the actin-binding sites five times faster than
+slow twitch muscle fibres
+Their rapid contraction-relaxation cycle means they need large amounts of calcium
+ions present to stimulate contraction
+They rely on anaerobicrespiration for ATP supply
+They are suited to short bursts of high-intensity activity as they fatigue quickly due to
+the lactate produced from anaerobic respiration
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+These muscle fibres are often found in high proportions in the limbs of animals that flee a
+predator or hunt prey at high speeds
+For example, the wings of a robin and legs of a cheetah
+There are high proportions of fast twitch muscle fibres in human eyelids
+They contract in short bursts and do not need to sustain the rapid movement
+Fast twitch muscle fibres have fewer capillaries
+Blood containing glucose and oxygen flow through the capillaries
+This means they have quite a slow supply of oxygen and glucose for aerobic
+respiration
+Low amounts of myoglobin are present in fast twitch muscle fibres
+Myoglobin is a red pigment molecule that is similar to haemoglobin
+Myoglobin functions as a store of oxygen in muscles and increases the rate of
+oxygen absorption from the capillaries
+Due to this fast twitch muscle fibres appear paler in colour than slow muscle fibres
+Slow twitch muscle fibres
+Slow twitch muscle fibres contract more slowly and are suited to sustained
+activities like walking and perching
+They rely on aerobic respiration for ATP
+They fatigue less quickly due to less lactate production, making them ideal
+for endurance
+These muscle fibres are often found in high proportions in the limbs of animals that
+migrate or stalk prey over long distances
+For example, the wings of geese and legs of wolves
+Human back muscles have a high proportion of slow twitch muscle fibres
+These muscles have to contract for long periods of time in order to keep the
+skeleton erect when standing or sitting
+Slow twitch muscle fibres have a denser network of capillaries
+Blood containing glucose and oxygen flows through the capillaries
+This means they have a short diffusion distance and a good supply of oxygen and
+glucose for aerobic respiration
+High amounts of myoglobin, haemoglobin and mitochondria are present in slow twitch
+muscle fibres
+This increases the rate of oxygen supply, oxygen absorption and aerobic respiration
+Due to the high amounts of red pigment, slow twitch muscle fibres appear a dark red
+Fast Twitch & Slow Twitch Muscle Fibres TableYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+The Process of Skeletal Muscle Contraction
+The Sliding Filament Theory
+Structure of thick & thin filaments in a myofibril
+The thick filaments within a myofibril are made up of myosin molecules
+These are fibrous protein molecules with a globular head
+The fibrous part of the myosin molecule anchors the molecule into the thick
+filament
+In the thick filament, many myosin molecules lie next to each other with
+their globular heads all pointing away from the M line
+The thin filaments within a myofibril are made up of actin molecules
+These are globular protein molecules
+Many actin molecules link together to form a chain
+Two actin chains twist together to form one thin filament
+A fibrous protein known as tropomyosin is twisted around the two actin chains
+Another protein known as troponin is attached to the actin chains at regular intervals
+How muscles contract - the sliding filament theory
+Muscles cause movement by contracting
+During muscle contraction, sarcomeres within myofibrils shorten as the Z discs are
+pulled closer together
+It is not the filaments that contract as the myosin and actin molecules remain the same
+length
+Myosin and actin filaments slide over one another
+This is known as the sliding filament theory of muscle contraction and occurs via the
+following process:
+An action potential arrives at the neuromuscular junction (a specialised synapse
+between a motor neuron nerve terminal and its muscle fibre) 
+Calcium ions are released from the sarcoplasmic reticulum (SR)
+Calcium ions bind to troponin molecules, stimulating them to change shape
+This causes troponin and tropomyosin proteins to change position on the actin
+(thin) filaments
+Myosin binding sites are exposed on the actin moleculesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+The globular heads of the myosin molecules bind with these sites, forming cross-
+bridges between the two types of filaments
+Myosin heads bend, pulling the actin filaments towards the centre of the
+sarcomere and causing the muscle to contract a very small distance; this
+bending of the myosin heads is known as the power stroke
+ATP plays an important role in this process
+The binding of ATP to the myosin heads produces a change in shape of the
+myosin heads that allows them to detach from the actin filaments
+The enzyme ATPase hydrolyses ATP into ADP and inorganic phosphate which
+causes the myosin heads to move back to their original positions, this is known
+as the recovery stroke
+The myosin heads are then able to bind to new binding sites on the actin
+filaments, closer to the Z disc
+The binding of the myosin heads to their new binding site causes the release of
+ADP and phosphate and results in a new power stroke
+The myosin heads move again, pulling the actin filaments even closer to the centre
+of the sarcomere, causing the sarcomere to shorten once more and pulling the Z
+discs closer together
+ATP binds to the myosin heads once more in order for them to detach again
+As long as troponin and tropomyosin are not blocking the myosin-binding sites and
+the muscle has a supply of ATP, this process repeats until the muscle is fully
+contracted
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+The sliding filament theory of muscle contraction
+Once muscle stimulation stops, calcium ions leave their binding sites on troponin
+molecules
+They are actively transported back to the SR
+Without calcium ions bound to them, the troponin molecules return to their original
+shape
+This pulls the tropomyosin molecules in a position that blocks the actin-myosin
+binding sites
+Since no cross bridges can form between actin and myosin, no muscle contraction can
+occur
+The sarcomere will lengthen again as actin filaments slide back to their relaxed position
+Examiner Tips and Tricks
+There is a lot to remember here so take some time to go through it and ensure you
+understand the order of events. 
+Because muscles require a source of ATP for myosin heads to detach (and the muscle
+to stop contracting) this explains rigor mortis (stiffening of the joints and muscles of a
+body a few hours after death) as there is no ATP after death to detach the myosin
+heads, the muscles remain contracted!Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+The Role of Muscle in the Cardiac Cycle
+The Role of Muscle in the Cardiac Cycle
+The cells making up cardiac muscle are myogenic, which means they contract without
+any external stimulus
+This intrinsic rhythm means the heart beats at around 60 times per minute
+The sinoatrial node (SAN) is a group of cells in the wall of the right atrium
+The SAN initiates a wave of depolarisation that causes the atria to contract
+There is a region of non-conducting tissue which prevents the depolarisation spreading
+straight to the ventricles
+Instead, the depolarisation is carried to the atrioventricular node (AVN)
+This is a region of conducting tissue between atria and ventricles
+After a slight delay, the AVN is stimulated and passes the stimulation along the bundle of
+His
+This delay means that the ventricles contract after the atria
+The bundle of His is a collection of conducting tissue in the septum (middle) of the heart
+The bundle of His divides into two conducting fibres which carry the impulse to
+the Purkynefibres
+Purkyne fibres are also known as Purkinje fibres
+Purkyne fibres spread around the ventricles and initiate the depolarisation of the
+ventricles from the apex (bottom) of the heart
+This makes the ventricles contractfrom the bottom upward and blood is forced out of
+the ventricles into the pulmonary artery and aorta
+Stages in the Cardiac Cycle TableYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+The wave of depolarisation spreads across the heart in a co-ordinated manner
+Examiner Tips and TricksYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+The Use of ECGs
+Electrocardiography can be used to monitor and investigate the electrical activity of the
+heart
+Electrodes that are capable of detecting electric signals are placed on the skin
+These electrodes produce an electrocardiogram (ECG)
+An ECG shows a number of distinctive electrical waves produced by the activity of
+the heart
+A healthy heart produces a distinctive shape in an ECG
+The ECG of a healthy heart
+The P wave
+Caused by the depolarisation of the atria, which results in atrial contraction (systole)
+The QRS complex
+Caused by the depolarisation of the ventricles, which results in ventricular
+contraction (systole)
+This is the largest wave because the ventricles have the largest muscle mass
+The T wave
+Caused by the repolarisation of the ventricles, which results in ventricular relaxation
+(diastole)
+The U wave
+Scientists are still uncertain of the cause of the U wave, some think it is caused by the
+repolarisation of the Purkyne fibresRemember that the heart is myogenic, which means that the heart will generate a
+heartbeat by itself and without any other stimulation. Instead, the electrical activity of
+the heart regulates the heart rate. Be aware that you may sometimes see an
+alternative spelling of "Purkyne" as "Purkinje" they mean the exact same thing!
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+The bigger the wave, the greater the electrical activity passing through the heart, which
+results in a stronger contraction
+Using ECGs to diagnose heart problems
+If someone has a suspected heart problem a doctor will often use an ECG as a
+diagnostic tool
+Some heart problems produce certain shapes or waves in an ECG which allow for a
+diagnosis
+Tachycardia
+When the heart beats too fast it is tachycardic
+An individual with a resting heart rate of over 100 bpm is said to have tachycardia
+Bradycardia
+When the heart beats too slow it is bradycardic
+An individual with a resting heart rate below 60 bpm is said to have bradycardia
+A lot of fit individuals or athletes tend to have lower heart rates and it is usually not
+dangerous
+Ectopic heartbeat
+This condition is caused by an early heartbeat followed by a pause
+This could be due to an earlier contraction of either the atria or ventricles
+It is common in the population and usually requires no treatment unless very severe
+Fibrillation
+An irregular heartbeat will disrupt the rhythm of the heart
+The atria or ventricles stop contracting properly
+Severe cases of fibrillation can be very dangerous, even fatalYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Each of these ECGs shows different faulty heartbeats. The speed or rhythm/regularity of
+the heartbeat is very important
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+Calculation of Cardiac Output
+Calculation of Cardiac Output
+Cardiac output (CO) is the term used to describe the volume of blood that is pumped by
+the heart (the left and right ventricle) per unit of time
+An average adult has a cardiac output of roughly 4.7 litres of blood per minute when
+at rest
+Individuals who are fitter often have higher cardiac outputs due to having thicker and
+stronger ventricular muscles in their hearts
+Cardiac output increases when an individual is exercising
+This is so that the blood supply can match the increased metabolic demands of the
+cells
+The CO of an individual can be calculated using their heart rate and stroke volume
+Heart rate is the number of times a heart beats per minute
+This can also be described as the number of cardiac cycles per minute
+Stroke volume is the volume of blood pumped out of the left ventricle during one
+cardiac cycle
+Graph showing the changes in the volume of the left ventricle within one cardiac cycle;
+this is the stroke volume
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+Calculating cardiac output
+Cardiac output is found by multiplying the heart rate by the stroke volume:
+Cardiac output = heart rate x stroke volume
+The equation can be rearranged to find the heart rate and stroke volume if required:
+Heart rate = cardiac output ÷ stroke volume
+Stroke volume = cardiac output ÷ heart rate
+Cardiac output is measured in cm  min
+Heart rate is measured in beats per min (bpm)
+Stroke volume is measured in cm3 -1
+3
+Worked Example
+A woman took 0.833 seconds to complete a single cardiac cycle. The stroke volume
+of her heart was measured at 75 cm . Calculate the cardiac output. Give your answer
+in dm .
+Answer:
+Step 1: Find the heart rate
+One cardiac cycle (atrial systole, ventricular systole and diastole) takes 0.833
+seconds
+To find the number of cardiac cycles completed in a minute, divide 60 (seconds) by
+the time taken for one cycle, 0.833 seconds
+Heart rate = 60 ÷ 0.833
+= 72 bpm
+Step 2: Insert relevant figures into the equation
+Cardiac output = heart rate x stroke volume
+Cardiac output = 72 x 75 = 5 400 cm
+Step 3: Convert to dm
+1 000 cm  = 1 dm
+Cardiac output = 5 400 ÷ 1 000 =
+5.40 dm3
+3
+3
+3
+3 3
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Effects of Variability of Cardiac Output
+During exercise, muscle contraction occurs more frequently, requiring more energy
+The rate of aerobic respiration increases to meet the increase in energy demand
+This means that cells require more oxygen to be delivered to them, while producing
+more carbon dioxide as a waste product of respiration
+The body will accommodate this by making the following changes:
+Increase the rate and depth of breathing which will increase the amount of oxygen
+entering the lungs and bloodstream, while getting rid of more carbon dioxide
+Increase the heart rate which will transport the oxygen (and glucose) to the muscles
+much faster, while removing the additional carbon dioxide produced due to the
+increased rate of respiration
+Control of the breathing rate
+Breathing rate is controlled by the ventilation centres (also called respiratory centres) in
+the medulla oblongata
+This is one of the three regions that make up the brainstem, it transfers nerve
+messages from the brain to the spinal cord
+The inspiratory centre controls the movement of air into the lungs (inhalation)
+The expiratory centre controls the movement of air out of the lungs (exhalation)
+The inspiratory centre in the medulla oblongata has the following effect on breathing:Worked Example
+An athlete runs a 10 km race, after which his heart rate was measured at 110 bpm and
+his cardiac output was determined to be 9,800 cm .
+Calculate the stroke volume after the race.
+Answer:
+Stroke volume = cardiac output ÷ heart rate
+Stroke volume = 9,800 ÷ 110
+Stroke volume = 89.1 cm3
+3
+Examiner Tips and Tricks
+1 dm is equal to 1000 cm . It can be useful to convert all the figures found in the first
+question into the same units before starting your working out, that way you are less
+likely to make any mistakes! 3  3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+It sends nerve impulses along motor neurons to the intercostalmuscles of the ribs
+and diaphragm muscles
+These muscles will contract and cause the volume of the chest to increase
+This lowers the air pressure in the lungs to slightly below atmospheric pressure
+An impulse is also sent to the expiratory centre to inhibit its action
+Due to the difference in pressure between the lungs and outside air, air will flow
+into the lungs
+Stretch receptors in the lungs are stimulated as they inflate with air
+Nerve impulses are sent back to the medulla oblongata which will inhibit the inspiratory
+centre
+The expiratory centre is no longer inhibited and will bring about the following changes:
+It sends nerve impulses to the intercostal and diaphragm muscles
+These muscles will relax and cause the volume of the chest to decrease
+This increases the air pressure in the lungs to slightly above atmospheric
+pressure
+Due to the higher pressure in the lungs, air will flow out of the lungs
+As the lungs deflate, the stretch receptors become inactive which means that the
+inspiratory centre is no longer inhibited and the next breathing cycle can beginYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+The process of breathing in (inhalation)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+The process of breathing out (exhalation)
+Effect of exercise
+The extra carbon dioxide that is produced due to the increase in the rate of
+respiration during exercise dissolves in the blood to form carbonic acid
+This quickly dissociates into hydrogen ions (H) and hydrogencarbonate ions (HCO )
+The increase in the concentration of H ions will decrease the pH of the blood (it
+becomes more acidic)
+The decrease in pH is detected by receptors sensitive to changes in the chemical
+composition of blood
+These are called chemoreceptors and they are located in several places
+In the ventilation centre of the medulla oblongata
+They are also present as clusters of cells in the aorta (aortic bodies) and the carotid
+arteries (carotid bodies)
++3−
++Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Once they are stimulated a nerve impulse is sent to the medulla oblongata
+The medulla oblongata will then send more frequent nerve impulses to the intercostal
+and diaphragm muscles to increase the rate and strength of contractions
+This increases the breathing rate and depth
+This results in more oxygen entering the lungs (and bloodstream), while more carbon
+dioxide can be exhaled and thus be removed from the bloodstream
+The decrease in carbon dioxide levels will result in the blood pH returning back to
+normal, which leads to the breathing rate returning to normal
+The volume of air that moves in and out of the lungs during a set time period (e.g. a
+minute) is known as the ventilation rate
+The ventilation rate increases during exercise due to the increase in breathing rate and
+depth
+Control of the heart rate
+The cardiovascular control centre in the medulla oblongata unconsciously controls the
+heart rate by controlling the rate at which the sinoatrial node (SAN) generates electrical
+impulses
+These electrical impulses cause the atria to contract and therefore determines the
+rhythm of a heartbeat
+Changes in the internal environment of the body (e.g. blood pressure, oxygen levels) can
+result in a change in the heart rate
+These changes act as stimuli which is detected by baroreceptors and chemoreceptors
+Baroreceptors are found in the aortic and carotid bodies and they are stimulated
+by high and low blood pressure
+Chemoreceptors are found in the medulla oblongata, as well as in
+the aortic and carotid bodies
+They are stimulated by changes in the levels of carbon dioxide and oxygen in the
+blood, as well as blood pH
+Once stimulated, these receptors will send electrical impulses to the medulla
+oblongata
+The cardiovascular control centre in the medulla oblongata will respond by sending
+impulses to the SAN along sympathetic or parasympathetic neurones
+Each of these neurones release different neurotransmitters which will affect the SAN in
+a different way
+Sympathetic neurones will increase the rate at which the SAN generates electrical
+impulses, thus speeding up the heart rate
+These neurones form part of the sympathetic nervous system which prepares
+the body for action ('fight or flight' response) and increases the heart
+rate during exerciseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+Parasympathetic neurones will decrease the rate at which the SAN fires,
+thus slowing down the heart rate
+These neurones form part of the parasympathetic nervous
+system which calms the body down after action ('rest and digest' response)
+and decreases the heart rate after exercise
+Nervous control of the heart rate by the cardioregulatory centre (also known as the
+cardiovascular control centre). Sympathetic neurones (indicated in red) will speed up the
+heart rate while parasympathetic neurones (indicated in blue) will slow the heart rate
+down
+Changes in heart rate
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+The heart will respond in different way depending on the stimulus that it receives
+High blood pressure
+Detected by baroreceptors which send impulses to cardiovascular control centre
+It sends impulses along parasympathetic neurones which secrete the
+neurotransmitter acetylcholine
+Acetylcholine binds to receptors on SAN causing it to fire less frequently
+Heart rate slows down and blood pressure decreases back to normal
+Low blood pressure
+Detected by baroreceptors which send impulses to cardiovascular control centre
+It sends impulses along sympathetic neurones which secrete the
+neurotransmitter noradrenaline
+Noradrenaline binds to receptors on SAN causing it to fire more frequently
+Heart rate speeds up and blood pressure increases back to normal
+High blood O / Low CO / high pH levels
+Detected by chemoreceptors which send impulses to cardiovascular control
+centre
+It sends impulses along parasympathetic neurones which secrete the
+neurotransmitter acetylcholine
+Acetylcholine binds to receptors on SAN causing it to fire less frequently
+Heart rate slows down and O  / CO  and pH levels return to normal
+Low blood O / High CO / low pH levels (during exercise)
+Detected by chemoreceptors which send impulses to cardiovascular control
+centre
+It sends impulses along sympathetic neurones which secrete the
+neurotransmitter noradrenaline
+Noradrenaline binds to receptors on SAN causing it to fire more frequently
+Heart rate speeds up and O  / CO  and pH levels return to normal2 2
+2 2
+2 2
+2 2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+The Role of Adrenaline
+The Fight or Flight Response
+During situations that creates stress, fear or excitement, the neurones of the
+sympathetic nervous system will stimulate the adrenal medulla (of the adrenal gland) to
+secrete adrenaline
+Adrenaline is a hormone that will prepare your body for reacting to a stressful
+situation
+This reaction is often called the "fight or flight" response
+It is the effects of adrenaline that lead to the typical symptoms we experience
+during stressful situations such as increased heart rate, dry mouth, increased
+sweating etc.
+The adrenal medulla is responsible for releasing the hormone adrenaline into the
+bloodstream to prepare the body for the "fight or flight" response
+Since adrenaline is a hormone, it is transported around the body in the bloodstream
+It will bind to receptors on its target organs
+One of the targets of adrenaline is the SAN, leading to an increase in the frequency of
+excitations
+This in turn, will increase the heart rate to supply blood to the muscle cells at a faster
+rate
+More blood means more oxygen and glucose that reaches the muscle cells, which in
+turn, increases the rate of aerobic respiration
+This releases more energy that will be used during the response to the stressful or
+dangerous situation
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+Adrenaline will also stimulate the cardiovascular control centre in the medulla
+oblongata
+This increases the impulses travelling along the sympathetic neurones affecting the
+heart, further speeding up the heart rate
+Blood vessels to less important organs (such as the digestive system and skin) constrict
+so that more blood can be diverted to organs that will be involved in the "fight or flight"
+response
+Note that blood flow to the brain remains constant, regardless of whether the body
+is in a state of stress or relaxation
+The brain is one of the most important organs in the body and needs a constant
+blood supply in order to function properly
+The changes experienced by the body during the "fight or flight" response are
+controlled by a combination of nervous and hormonal responsesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+Core Practical 17: The Effects of Exercise
+The Effects of Exercise
+Measuring breathing
+There are four main ways that breathing can be scientifically measured. These include:
+Tidal volume - this is the volume of air that is breathed in or out during normal
+breathing (at rest)
+Breathing rate - this is the number of breaths taken in one minute (one breath =
+taking air in and breathing it back out again)
+Oxygen consumption - this is the volume of oxygen used up by someone in a given
+time
+Respiratory minute ventilation - this is the volumeof air that can be
+breathed in or out in a minute and can be calculated by means of the following
+formula:
+Respiratory minute ventilation = tidal volume x breathing rate (breaths per minute)
+Spirometers
+The breathing measurements described above can all be taken using a piece of
+apparatus known as a spirometer
+The person (subject) being examined breathes in and out through the spirometer
+Carbon dioxide is absorbed from the exhaled air by soda lime in order to stop the
+concentration of carbon dioxide in the rebreathed air from getting too high, as this can
+cause respiratory distress
+As the subject breathes through the spirometer, a trace is drawn on a rotating drum of
+paper or a graph is formed digitally, which can be viewed on a computer
+From this trace, the subject's respiratory minute ventilation, tidal volume and breathing
+rate can all be calculatedYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+Spirometers are used to measure different aspects of breathing. There are different types
+of spirometers
+Investigating the effects of exercise
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+Exercise can cause an increase in breathing rate and tidal volume, including an increase
+in oxygen consumption and ventilation rates.
+Apparatus
+Spirometer
+Treadmill
+Stopwatch
+Method
+1. A person at rest will breathe into the spirometer for one minute
+2. Record the results
+3. The person will then exercise for two minutes while the spirometer chamber is refilled
+with oxygen
+4. After they stop exercising, they will immediately breathe into the spirometer for one
+minute
+5. Record the results
+6. Compare the recordings taken before and after exercise
+Analysing data from a spirometer
+The results from a spirometer (either in the form of a trace drawn on graph paper or a
+digital graph created by a computer) can be used to calculate respiratory minute
+ventilation, tidal volume and breathing rate
+A small amount of air, known as the residual volume, is always retained in the lungs
+The following readings and calculations can be made:
+To calculate the breathing rate, count the number of peaks on the trace in a minute
+Tidal volume can be determined by calculating the average difference in the volume
+of gas between each peak and trough
+Oxygen consumption can also be calculated using a spirometer
+Carbon dioxide is removed from the exhaled air, meaning that the total volume
+of air available in the spirometer gradually decreases, as oxygen is extracted
+from it by the subject's breathing
+This change in volume is used as a measure of oxygen consumptionYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31
+The changes in the volume of air present in the lungs are shown here. Note the vital
+capacity; this is the maximum volume of air that can be breathed in or out in one breath
+Worked Example
+From the spirometer data in the image above, calculate the breathing rate during the
+first minute and then calculate the breathing rate during the second minute.
+Answer:
+Step 1: Count the number of breaths in the first 60 seconds
+One breath is shown by the trace going up and then down, so there are 12 breaths in
+the first 60 seconds.
+Step 2: Give appropriate units
+Breathing rate should be given in breaths min ⁻ ¹ (breaths per minute), so the breathing
+rate during the first minute
+= 12 breaths min ⁻ ¹
+Step 3: Count the number of breaths in the second 60 seconds
+There are 14 breaths in the second 60 seconds
+Step 4:Give appropriate units
+The breathing rate during the second minute = 14 breaths min ⁻ ¹Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 32
+Worked Example
+Calculate the tidal volume during rest and the peak tidal volume during exercise.
+Answer:
+Step 1: For the 'at rest' phase of the trace, measure the difference between the top
+and bottom of the trace in terms of the volume of air in the lungs
+During rest, the tidal volume = 3 dm³ - 2.6 dm³
+= 0.4 dm³
+Step 2: At the peak tidal volume during exercise, measure the difference between
+the top and bottom of the trace in terms of the volume of air in the lungs
+The peak tidal volume during exercise occurs right at the end of the exercise period
+(at around 100 seconds):
+= 4.1 dm³ - 2.3 dm³
+= 1.8 dm³
+Worked Example
+Calculate the respiratory minute ventilation during the first minute.
+Answer:
+Step 1: Use the formula
+Respiratory minute ventilation = tidal volume x breathing rate
+Step 2: Substitute the values calculated from the first minute
+Respiratory minute ventilation = 0.4 x 12
+= 4.8 dm  min3 -1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 33

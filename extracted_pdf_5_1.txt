@@ -1,0 +1,640 @@
+--- Page 1 ---
+Edexcel International A
+Level (IAL) Biology
+Photosynthesis
+Contents
+Photosynthesis: Overview
+The Role of ATP in Photosynthesis
+Photosynthesis: Light-Dependent Stage
+Photosynthesis: Light-Independent Stage
+Chloroplasts
+Absorption & Action Spectra
+Separation of Photosynthetic Pigments with Chromatography
+Core Practical 10: Rate of PhotosynthesisYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+--- Page 2 ---
+Photosynthesis: Overview
+Photosynthesis: Overview
+Photosynthesis is a series of chemical reactions that occurs in producers such as plants
+and algae
+Producers are also known as autotrophs; organisms that make their own organic
+compounds
+Photosynthesis converts light energy into chemical energy which is then stored in the
+biomass of producers
+The light energy is used to split strong bonds in water molecules (HO), releasing
+hydrogen and oxygen
+Oxygen is released into the atmosphere as a waste product
+Hydrogen is combined with carbon dioxide to produce glucose
+Chemical energy is stored within the bonds in glucose molecules; glucose can
+therefore function as a fuel for respiration
+It can be said that hydrogen is stored in glucose molecules2
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+--- Page 3 ---
+Photosynthesis requires energy from light to split water molecules. The resulting
+hydrogen combines with carbon dioxide and is stored in glucose, which fuels respiration.
+Oxygen is released as a waste product.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+--- Page 4 ---
+The Role of ATP in Photosynthesis
+ATP as an Energy Carrier in
+Photosynthesis
+All organisms require a constant supply of energy to maintain their cells and stay alive
+This energy is required e.g.
+For building new molecules from the products of digestion during anabolic
+reactions
+To move substances across cell membranes in active transport or to move
+substances within cells
+For muscle contraction 
+In the conduction of nerve impulses
+In all known forms of life the molecule adenosine triphosphate, or ATP, is used to
+transfer and supply energy within cells
+ATP is therefore known as the universal energy currency
+ATP diffuses within cells to where it is needed
+ATP is atype of nucleic acid and is structurally very similar to the nucleotides that make
+up DNA and RNA
+It is a phosphorylated nucleotide
+A nucleotide consists of a nitrogenous base, a sugar, and a single phosphate
+group
+ATP contains three phosphate groups, hence triphosphateYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+--- Page 5 ---
+ATP contains adenine, a ribose sugar, and three phosphates molecules. Removal of one
+phosphate creates ADP, and removal of two phosphates creates AMP.
+ATP is produced by the addition of inorganic phosphate (P), a type of phosphate
+group, to adenosine diphosphate, or ADP
+ADP + P→ ATP 
+ADP contains two phosphate groups, hence diphosphate
+ATP can be produced when the passage of electrons along a series of proteins known as
+the electron transport chain releases energy for the phosphorylation of ADP
+This process occurs in the mitochondria during respiration and in chloroplasts
+during photosynthesis 
+In photosynthesis the energy originally gained by the electrons in this process
+comes from light, so this method of ATP production is known as
+photophosphorylation
+Photo = light
+The hydrolysis, or breakdown, of ATP releases an inorganic phosphate as well as a small
+amount of energy which can be used by the cell
+ATP →  ADP + P
+The removal of a phosphate group is known as dephosphorylation
+The hydrolysis of ATP is catalysed by the enzyme ATPase
+i
+i 
+i Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+--- Page 6 ---
+The ADP and inorganic phosphate produced by the hydrolysis of ATP can be recycled to
+make more ATP
+ADP + P→ ATP 
+ATP is formed during respiration and can be hydrolysed to release energy for processes
+such as active transport, muscle contraction, and building new molecules (anabolic
+reactions). ATP can then be regenerated from ADP and phosphate.i 
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+--- Page 7 ---
+Photosynthesis: Light-Dependent Stage
+Photosynthesis: Light-Dependent Stage
+Photosynthesis takes place in two distinct stages
+The light-dependent reactions, which rely on light directly
+The light-independent reactions, which do not use light directly, though do rely on
+the products of the light-dependent reactions
+Both these sets of reactions take place within the chloroplast
+The light-dependent reactions take place across the thylakoid membrane
+The light-independent reactions take place in the stroma
+Light energy in the light-dependent reactions enables the splitting of water molecules in
+a reaction known as photolysis
+Photolysis of one molecule of water, or HO, produces
+2 hydrogen ions (2H), also known as protons
+2 electrons (2e)
+One atom of oxygen (O)
+The hydrogen ions and electrons are used during the light-dependent reactions
+while the oxygen is given off as a waste product
+During the light-dependent reactions light energy is converted into chemical energy in
+the form of ATP and reduced NADP
+NADP is a type of molecule called a coenzyme; its role is to transfer hydrogen from
+one molecule to another
+When NADP gains hydrogen it is reduced, and can be known as either reduced
+NADP or NADPH
+Remember that
+Reduction is gain of electrons, gain of hydrogen, or loss of oxygen
+Oxidation is loss of electrons, loss of hydrogen, or gain of oxygen
+Reduced NADP can reduce other molecules by giving away hydrogen
+NADP can oxidise other molecules by receiving hydrogen
+The useful products of the light-dependent reactions, ATP and NADPH, are
+transferred to the light-independent reactions within the chloroplast2
++
+-Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+--- Page 8 ---
+The products of the light-dependent reaction are ATP, NADPH, and oxygen. Oxygen is
+given off as a waste product while ATP and NADPH pass to the light-independent
+reactions. The ADP and NADP produced during the light-independent reaction can pass
+back to the light-dependent reactions to allow more ATP and NADPH to be produced.
+Production of ATP and NADPH
+ATP and NADPH are produced during the light-dependent reactions as a result of a
+series of events that occur on the thylakoid membrane known as photophosphorylation
+Photo = light
+Phosphorylation = the addition of phosphate; in this case to ADP to form ATP
+Two types of photophosphorylation take place
+Non-cyclic photophosphorylation
+This produces both ATP and NADPH
+Cyclic photophosphorylation
+This produces ATP only
+Both cyclic and non-cyclic photophosphorylation involve
+A series of membrane proteins which together make up the electron transport
+chain
+Electrons pass from one protein to another along the electron transport chain,
+releasing energy as they do so
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+--- Page 9 ---
+Chemiosmosis
+The energy released as electrons pass down the electron transport chain is
+used to produce ATP
+Non-cyclic photophosphorylation
+Light energy hits photosystem II in the thylakoid membrane 
+It is slightly confusing that photosystem II comes first in this sequence; the numbers
+simply reflect the order in which the photosystems were discovered
+Two electrons gain energy and are said to be excited to a higher energy level
+The excited electrons leave the photosystem and pass to the first protein in the electron
+transport chain
+As the excited electrons leave photosystem II they are replaced by electrons from
+the photolysis of water
+The electrons pass down the chain of electron carriers known as an electron transport
+chain
+Energy is released as the electrons pass down the electron transport chain which
+enables chemiosmosis to occur
+H   ions are pumped from a low concentration in the stroma to a high concentration
+in the thylakoid space, generating a concentration gradient across the thylakoid
+membrane 
+H   ions diffuse back across the thylakoid membrane into the stroma via ATP
+synthase enzymes embedded in the membrane
+The movement of H   ions causes the ATP synthase enzyme to catalyse the
+production of ATP
+At the end of the electron transport chain the electrons from photosystem II are passed
+to photosystem I
+Light energy also hits photosystem I, exciting another pair of electrons which leave the
+photosystem
+The excited electrons from photosystem I also pass along an electron transport chain
+These electrons combine with hydrogen ions from the photolysis of water and
+the coenzyme NADP to form reduced NADP
+H + 2e + NADP → NADPH
+The reduced NADP and the ATP pass to the light-independent reactions+
++
++
++ - +Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+--- Page 10 ---
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+--- Page 11 ---
+Non-cyclic photophosphorylation involves photosystems I and II and produces both ATP
+and NADPH
+Cyclic photophosphorylation
+Light hits photosystem I 
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+--- Page 12 ---
+Electrons are excited to a higher energy level and leave the photosystem
+The excited electrons pass along the electron transportchain, releasing energy as they
+do so
+The energy released as the electrons pass down the electron transport chain provides
+energy to drive the process of chemiosmosis
+H   ions are pumped from a low concentration in the stroma to a high concentration
+in the thylakoid space, generating a concentration gradient across the thylakoid
+membrane 
+H   ions diffuse back across the thylakoid membrane into the stroma via ATP
+synthase enzymes embedded in the membrane
+The movement of H   ions cause the ATP synthase enzyme to catalyse the
+production of ATP
+At the end of the electron transport chain the electrons rejoin photosystem I in a
+complete cycle; hence the term cyclic photophosphorylation
+The ATP produced enters the light-independent reaction
+Cyclic photophosphorylation involves Photosystem I and produces ATP+
++
++
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+--- Page 13 ---
+Photosynthesis: Light-Independent Stage
+Fixation of Carbon from Carbon Dioxide
+The light-independentreactions of photosynthesis are sometimes referred to as
+the Calvin cycle
+The reactions eventually allow for the production of complex organic molecules such as
+Starch for storage
+Sucrose for transport
+Cellulose for making cell walls
+The light-independent reactions do not require energy from light but do require ATP and
+reduced NADP from the light-dependent reactions
+There are three main steps within the light-independent reactions
+1. Carbon dioxide is combined with ribulose bisphosphate (RuBP), a 5−carbon (5C)
+compound; this yields two molecules of glycerate 3−phosphate (GP), a 3−carbon
+(3C) compound
+2. GP is reduced to glyceraldehyde 3−phosphate (GALP), another 3C compound,in a
+reaction involving reduced NADP and ATP
+3. RuBP isregenerated from GALP in reactions that use ATP
+Carbon dioxide and RuBP are combined
+Carbon dioxide combines with a 5C sugar known as RuBP in a reaction catalysed by the
+enzyme rubisco
+The resulting 6−carbon (6C) compound is unstable and splits in two
+This results in two molecules of a 3C compound known as glycerate 3−phosphate (GP)
+The carbon dioxide has been ‘fixed’, meaning thatit has been removed from the external
+environment and become part of a molecule inside the plant cell
+Reduction of glycerate 3-phosphate
+Energy from ATP and hydrogen from reduced NADP, both produced during the light-
+dependent reactions, are used to reduce the two 3C molecules of GP to two 3C
+molecules known as GALP
+Some of the carbons in GALP go towards the production of useful organic molecules
+such as glucose, while the rest remain in the Calvin cycle to allow the regeneration of
+RuBP
+Two molecules of GALP contain six carbon atoms, five of which are needed to
+regenerate RuBP; this means that for every turn through the Calvin cycle only one
+sixth of a molecule of glucose is producedYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+--- Page 14 ---
+Glucose is a 6−carbon molecule, so six turns of the Calvin cycle are required to
+produce one molecule of glucose
+Regeneration of ribulose bisphosphate
+Five sixthsof the GALP molecules are used to regenerate RuBP
+This process requires ATP
+The Calvin cycle produces glucose and other important biological molecules
+Products of the light-independent stage
+Intermediate molecules of the Calvin cycle, such as glyceraldehyde 3−phosphate
+(GALP), are used to produce variousother biological molecules needed by plants, such
+as:
+Hexose sugars e.g. glucose
+Glucose can enter the respiration reactions during which ATP is produced
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+--- Page 15 ---
+Hexose sugars can be converted into other hexose sugars e.g. glucose can be
+converted to sucrose for transport in the phloem
+Hexose sugars can be joined to make polysaccharides such
+as starch and cellulose
+Glycerol can be used for building lipid molecules such as triglycerides and
+phospholipids
+Fatty acids which form the tails of lipid molecules such as triglycerides and
+phospholipids
+Nucleic acids form the basis of DNA and RNA
+Phosphates from the soil are combined with the molecules of the Calvin cycle
+to produce nucleic acids
+Acetyl coenzyme A is important coenzyme in respiration 
+Amino acids which can be used in protein synthesis for building polypeptides
+Nitrates from the soil need to be combined with the molecules of the Calvin
+cycle for amino acids to be produced
+Many of the molecules produced are used to build new plant biomass; these molecules
+are passed on to consumers when plant tissue is eaten
+The products of photosynthesis include amino acids, polysaccarides, lipids and nucleic
+acids
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+--- Page 16 ---
+Chloroplasts
+Chloroplasts: Structure & Function
+Chloroplasts are the organelles in plant cells where photosynthesis occurs
+Each chloroplast is surrounded by a double-membrane known as the chloroplast
+envelope
+Each of the envelope membranes is a phospholipid bilayer
+Chloroplasts are filled with a cytoplasm-like fluid known as the stroma
+The stroma contains enzymes and sugars, as well as ribosomes and chloroplast
+DNA
+If the chloroplast has been photosynthesising there may be starch grains or lipid
+droplets in the stroma
+A separate system of membranes is found in the stroma
+This membrane system consists of a series of flattened fluid-filled sacs known
+as thylakoids, each surrounded by a thylakoid membrane
+Thylakoids stack up to form structures known as grana (singular granum)
+Grana are connected by membranous channels called lamellae (singular lamella),
+which ensure the stacks of sacs are connected but distanced from each other
+Several components that are essential for photosynthesis are embedded in the
+thylakoid membranes, including:
+ATP synthase enzymes
+Proteins called photosystems that contain photosynthetic pigments such as
+chlorophyll a, chlorophyll b, and carotene
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+--- Page 17 ---
+Chloroplasts are the site of photosynthesis
+Chloroplast structure is related to function
+Chloroplast envelope
+The double membrane encloses the chloroplast, keeping all of the components
+needed for photosynthesis close to each other
+The transport proteins present in the inner membrane controlthe flow of molecules
+between the stroma and cytoplasm
+Stroma
+The gel-like fluid contains enzymes that catalyse the reactions of photosynthesis
+DNA
+The chloroplast DNA contains genes that code for some of the proteins used in
+photosynthesis
+Ribosomes
+Ribosomes enable the translation of proteins coded by the chloroplast DNA
+Thylakoid membrane
+There is a space between the two thylakoid membranes known as the thylakoid
+space, in which conditions can differ from the stroma e.g. a proton gradient can be
+established between the thylakoid space and the stroma
+The space has a very small volume so a proton gradient can develop very quickly
+Grana
+The grana create a large surface area, maximising the number of photosystems and
+allowing maximum light absorption
+Grana also provide more membrane area for proteins such as electron carriers and
+ATP synthase enzymes, which together enable the production of ATP
+Photosystems
+There are two types of photosystems; photosystem I and photosystem II,
+containing different combinations of photosynthetic pigments such as chlorophyll
+a, chlorophyll b, and carotene
+Each photosystem absorbs light of a different wavelength, maximising light
+absorption e.g. photosystem I absorbs light at a wavelength of 700 nm while
+photosystem II absorbs light at a wavelength of 680 nmYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+--- Page 18 ---
+Absorption & Action Spectra
+Absorption & Action Spectra
+Chloroplasts contain several different photosynthetic pigments within photosystems
+embedded in the thylakoid membranes
+Different pigments absorb light of different wavelengths
+Chlorophylls absorb wavelengths in the blue-violet and red regions of the light
+spectrum, reflecting green light and appearing green in colour
+Carotenoids absorb wavelengths of light mainly in the blue-violet region of the
+spectrum, reflecting yellow and orange light
+Carotenoids often remain in leaves after the breakdown of chlorophyll in the
+autumn, giving some leaves their yellow, orange, and red autumn colours
+Examples of Photosynthetic pigments Table
+Pigment group Name of pigment Colour of pigment
+Chlorophylls Chlorophyll a Blue-green
+Chlorophyll b Yellow-green
+Carotenoids β Carotene Orange
+Xanthophyll Yellow
+The amount of light at different wavelengths absorbed by a particular pigment gives
+that pigment's absorption spectrum (plural spectra)
+Because each type of pigment absorbs light at different wavelengths the
+absorption spectrum of each pigment is differentYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+--- Page 19 ---
+Different photosynthetic pigments absorb light of different wavelengths, giving different
+absorption spectra
+A plant's rate of photosynthesis varies depending on the wavelengths of light available
+The changing rate of photosynthesis at different wavelengths is known as an action
+spectrum
+Action spectra are very closely correlated to the absorption spectra of the different
+pigments
+Having several different pigments with different absorption spectra allows plants to
+photosynthesise under a wider variety of light wavelengths; this extends the
+action spectra of plants and maximises rates of photosynthesis
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+--- Page 20 ---
+Plant action spectra are closely related to the absorption spectra of the different
+photosynthetic pigments
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+--- Page 21 ---
+Separation of Photosynthetic Pigments with
+Chromatography
+Separation of Photosynthetic Pigments
+with Chromatography
+Chloroplasts contain several different photosynthetic pigments within photosystems
+embedded in their thylakoid membranes
+Photosynthetic pigments absorb different wavelengths of light, so are different in
+colour
+The colour of a pigment is due to the wavelengths of light reflected by that pigment,
+e.g. chlorophylls absorb light at the red and blue ends of the visible spectrum and
+reflect light in the green part of the spectrum, so appear as green pigments
+Chromatography can be used to separate and identify chloroplast pigments that have
+been extracted from a leaf
+Chromatography
+Chromatography is a technique that is used to separate mixtures
+Different components within a mixture travel through materials at different speeds
+due to their size or charge
+This causes different components to separate
+An Rvalue can be calculated for each component of the mixture on the basis of its
+rate of movement
+Two of the most common techniques for separating photosynthetic pigments are
+Paper chromatography
+The mixture of pigments is passed through paper made of cellulose
+Thin-layer chromatography (TLC) 
+The mixture of pigments is passed through a thin layer of an adsorbent, e.g.
+silica gel
+The pigments travel faster than through paper, so they separate more distinctly
+Apparatus
+Leaf sample
+Dropping pipette
+Acetone
+Pestle and mortar
+Filter paper or TLC paperf Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+--- Page 22 ---
+Pencil
+Ruler
+Capillary tube
+Beaker or boiling tube
+Chromatography solvent
+Method
+1. Draw a straight line in pencil approximately 1cm above the bottom of the paper being
+used, and use the pencil to draw a dot in the middle of the line; this marks where you will
+place the leaf sample
+Do not use a pen as the ink will separate into pigments within the experiment and
+obscure the results
+2. Cut a section of leaf and place it in a mortar
+It is important to choose a healthy leaf that has been in direct sunlight so you can be
+sure it contains many active photosystems
+3. Add 20 drops of acetone and use the pestle to grind up the leaf sample and release the
+pigments
+Acetone is an organic solvent and therefore fats, such as the phospholipid
+membranes in plant cells, dissolve in it
+Acetone and mechanical pressure are used to break down the cell, chloroplast and
+thylakoid membranes to release the pigments
+4. Extract some of the pigment using a capillary tube and spot it onto the dot in the centre
+of the pencil line you have drawn
+5. Suspend the paper over a beaker containing a small amount of chromatography solvent;
+the end of the paper closest to the pigment extract needs to touch the chromatography
+solvent, but the level of the solvent should be below the pencil line at this stage
+The solvent will move up the paper
+The pigment mixture will be dissolved in the solvent and carried with the solvent as it
+moves
+6. Leave the paper suspended in the solvent until the solvent has almost reached the top of
+the paper
+7. Remove the paper from the solvent and draw a pencil line marking the level of the
+solvent on the paper
+The solvent may continue moving after the paper is removed from it, so it is
+important to draw a pencil line immediately
+The pigments should have separated out and there should be different spots on the
+paper at different heights above the pencil line; these are the separate pigments
+8. Calculate the R value for each pigment spot fYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+--- Page 23 ---
+R value = distance travelled by pigment ÷ distance travelled by the solvent
+Always measure to the centre of each spot of pigment
+Results
+Chromatography can be used to separate and identify chloroplast pigments that have
+been extracted from a leaf as each pigment will have a unique R value
+The R value is a measure of how far a dissolved pigment travel 
+Larger, less soluble molecules will travel more slowly and therefore have a smaller
+R value
+Smaller, more soluble molecules will travel faster and therefore have a larger
+R value
+Although specific R values depend on the solvent that is being used, in general
+Carotenoids have the highest R values, usually close to 1
+Chlorophyll b has a much lower R value
+Chlorophyll a has an R value somewhere between those of carotenoids and
+chlorophyll bf
+f
+f
+f
+f
+f
+f
+f
+f
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+--- Page 24 ---
+Chromatography can be used to separate photosynthetic pigments, which can then be
+identified by their R values. 
+ fYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+--- Page 25 ---
+Core Practical 10: Rate of Photosynthesis
+Rate of Photosynthesis
+For photosynthesis to occur the following are required
+The presence of photosynthetic pigments
+A supply of carbon dioxide
+A supply of water
+Light energy
+A suitabletemperature
+If there is a shortage of any of these factors, photosynthesis cannot occur at
+its maximum possible rate
+The main external factors that affect the rate of photosynthesis are
+Light intensity and wavelength
+Carbon dioxide concentration
+Temperature
+These are known as limiting factors of photosynthesis
+If any one of these factors is below the optimum level for the plant, its rate of
+photosynthesis will be reduced, even if the other two factors are at the optimum level
+Note that although a lack of water can reduce the rate of photosynthesis, water
+shortages usually affect other processes in the plant before affecting
+photosynthesis and water is therefore not one of the main limiting factors
+Light intensity
+The rate of photosynthesis increases as light intensity increases
+The greater the light intensity, the more energy supplied to the plant and
+therefore the faster the light-dependent stage of photosynthesis can occur
+This produces more ATP and reduced NADP for the Calvin cycle, which can then
+also occur at a greater rate
+During this stage, light intensity is said to be a limiting factor of photosynthesis
+At some point, if light intensity continues to increase, the relationship above will no
+longer apply and the rate of photosynthesis will reach a plateau
+At this point light intensity is no longer a limiting factor of photosynthesis; another
+factor is limiting the rate 
+E.g. temperature being too low or too high, or not enough carbon dioxideYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+--- Page 26 ---
+Light intensity can be a limiting factor for photosynthesis
+Carbon dioxide concentration
+The rate of photosynthesis increases as carbon dioxide concentration increases
+Carbon dioxide is one of the raw materials required for photosynthesis
+It is required for the light-independent stage of photosynthesis; CO  is combined
+with the five-carbon compound ribulose bisphosphate (RuBP) during carbon
+fixation
+This means the more carbon dioxide that is present, the faster this step of the Calvin
+cycle can occur and the faster the overall rate of photosynthesis
+This trend will continue until some other factor, e.g. temperature or light intensity,
+prevents the rate from increasing further
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+--- Page 27 ---
+Carbon dioxide concentration can be a limiting factor for photosynthesis
+Temperature
+As temperature increases the rate of photosynthesis increases up to a point, after
+which the rate decreases
+This is because many of the reactions of photosynthesis are catalysed by enzymes
+At low temperatures enzyme-catalysed reactions occur slowly due to a lack of
+kinetic energy and therefore few collisions between enzyme and substrate
+molecules
+At high temperatures enzymes denature
+The Calvin cycle is affected by temperature, e.g. rubisco catalyses the reaction
+between CO  and the five-carbon compound ribulose bisphosphate
+As long as there is enough light to produce ATP and NADPH in the light-dependent
+reaction, increasing temperature up to an optimum temperature will increase the
+rate of the light-independent reactions and therefore the rate of photosynthesis
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+--- Page 28 ---
+Temperature can be a limiting factor for photosynthesis
+Investigating the rate of photosynthesis
+Investigations to determine the effects of light intensity, light wavelength, carbon
+dioxide concentration, and temperature on the rate of photosynthesis can be carried
+out using aquatic plants such as Elodea or Cabomba 
+Aquatic plants are especially useful for investigating the rate of photosynthesis
+because the waste oxygen gas produced can be easily collected and measured
+underwater
+The effect of these limiting factors on the rate of photosynthesis can be investigated in
+the following ways
+Light intensity
+Change the distance of a light source from a plant
+Light wavelength
+Change a colour filter placed over a light source illuminating a plant
+Carbon dioxide concentration
+Add different quantities of sodium hydrogencarbonate (NaHCO ) to the water
+surrounding a plant; this dissolves to produce CO
+Temperature
+Place boiling tubes containing submerged plants in water baths of different
+temperatures
+3
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+--- Page 29 ---
+Whilst changing one of these factors during an investigation, ensure that other factors
+remain constant
+E.g. when investigating the effect of light intensity on the rate of photosynthesis, a
+glass tank should be placed in between the lamp and the boiling tube containing the
+pondweed to absorb heat from the lamp; this prevents the solution surrounding the
+plant from changing temperature
+Investigating the effect of light intensity on the rate of
+photosynthesis
+Apparatus
+Distilled water
+Boiling tube
+Beaker
+Lamp
+Aquatic plant, algae or algal beads
+Metre ruler
+Sodium hydrogen carbonate solution
+Thermometer
+Boiling tube bung and delivery tube
+Measuring syringe
+Method
+1. Optional: ensure the water is well aerated before use by bubbling air through it
+This will ensure that any oxygen gas given off by the plant during the investigation
+forms bubbles instead of dissolving
+2. Ensure the plant has been well illuminated before use
+This will ensure that the plant contains all the enzymes required for photosynthesis
+and that any changes of rate are due to changes in light intensity
+3. Set up the apparatus in a darkened room with a 10 cm distance between the lamp and
+the boiling tube
+This means that no external light sources will affect the rate of photosynthesis
+4. Cut the stem of the pondweed cleanly just before placing into the boiling tube
+This enables bubbles of oxygen to form from the cut plant stem
+5. Submerge the sample of pondweed in sodium hydrogen carbonate solution
+This ensures that the pondweed has a controlled supply of carbon dioxideYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+--- Page 30 ---
+6. Measure the volume of gas collected in the gas syringe over a set period of time, e.g. 1
+minute; repeat this measurement e.g. 3 times
+7. Change the independent variable by moving the light source 10 cm further away from
+the plant and repeat step 6
+8. Repeat step 7 several more times, moving the lamp 10 cm further away from the plant
+each time
+9. Record the results in a table and plot a graph of volume of oxygen produced per minute
+against the distance from the lamp 
+The effect of light intensity on the rate of photosynthesis can be investigated by
+measuring the volume of oxygen produced as a lamp is moved further away from an
+aquatic plant
+Results
+The closer the lamp, the higher the light intensity, therefore the volume of oxygen
+produced should increase as the light intensity is increased
+At a point the volume of oxygen produced will stop increasing even if the light is moved
+closer
+This is the point at which light intensity stops being the limiting factor and, e.g.
+temperature or concentration of carbon dioxide becomes limiting
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30

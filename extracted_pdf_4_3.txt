@@ -1,0 +1,218 @@
+Edexcel International A
+Level (IAL) Biology
+Plants & Bacterial Growth
+Contents
+Bacterial Growth Conditions
+Plant Products with Antimicrobial Properties
+Core Practical 9: Antimicrobial Properties of Plants
+Development of Drugs & Drug TestingYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+--- Page ---
+Bacterial Growth Conditions
+How Bacterial Growth Can Affect Plants
+Bacteria are microscopic prokaryotes (meaning their cells do not contain a nucleus or
+membrane-bound organelles)
+Some may cause disease in both plants and animals
+Bacteria are often used in studies to test the antimicrobial properties of substances
+Antimicrobial means that the substance will either killmicrobes (i.e. bacteria)
+or prevent their growth
+In order to perform these investigations, it is important to create an environment with all
+the conditions necessary for bacterial growth to occur
+Bacteria require the following conditions to survive and reproduce:
+They require nutrients, which provide them with the materials needed
+to grow and respire
+Those that respire aerobically will need a sufficient supply of oxygen
+The temperature and pH of the environment must not be too high or too low to
+allow enzymes that control metabolic processes to function optimallyYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+--- Page ---
+Plant Products with Antimicrobial Properties
+Plant Products with Antimicrobial
+Properties
+Plants are susceptible to attack by micro-organisms, such as bacteria and fungi
+This can cause damage to the plant and may even kill them
+Plants have developed a range of chemical defences against these microbes
+These may include antiseptic compounds and antibiotics
+Antimicrobial chemicals from plants can be exploited by humans to develop new drugs
+to treat bacterial and fungal diseases
+It is possible to produce a plant extract containing these antimicrobial chemicals to test
+its effect on the growth of bacteria
+Other therapeutic drugs sourced from plants
+Plants may also produce a variety of other compounds that can treat a range of
+ailments in humans, from pain killers to cancer drugs
+Scientists were able to extract the active ingredient from willow bark, used by
+people for pain relief over the centuries, which led to the development of modern-
+day aspirin
+Quinine is a drug sourced from the cinchona tree, used to treat and prevent malaria
+An advantage of extracting and purifying active plant compounds is the ability to
+produce medication that contains a known concentration of the active ingredient
+This ensures a reliable dosage of medication
+Analysing the chemical structure of the active ingredients enables scientists to create
+synthetic versions of the compound in a laboratory
+This reduces the need to remove large amounts of plant material from the
+environment 
+Modifications can be made in the laboratory to make the active ingredient more
+effective
+The development of therapeutic drugs from plant products has enabled humans to be
+more successful at treating diseasesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+--- Page ---
+Core Practical 9: Antimicrobial Properties of Plants
+Antimicrobial Properties of Plants
+Certain plant species have the ability to kill or prevent the growth of micro-organisms
+These antimicrobial properties can be incorporated into the development of new drugs
+Apparatus
+Broth containing bacterial culture and nutrients
+Agar plate
+Pipette
+Plastic spreader
+Plant tissue
+Pestle and mortar
+Ethanol
+Funnel 
+Glass beaker
+Filter paper
+Forceps
+Stopwatch
+Incubator
+Method
+1. Prior to this practical, bacteria would have been grown in a mixture of distilled water and
+nutrients, along with a specific bacterial culture
+This mixture is called a broth
+2. Transfer some of the bacteria from the broth onto an agar plate (which is a petri dish
+filled with agar jelly that will serve as a growth medium for the bacteria) using a sterile
+pipette
+3. Make sure the bacteria is evenly spreadout by using a sterile plastic spreader
+Open the lid of the of the agar plate as little as possible when doing this to avoid
+contaminating the plate with other fungi or bacteria present in the surrounding air
+Place the lidback on top of the agar plate immediately afterward to prevent
+contamination
+4. To prepare the plant extracts, plant tissue must be dried and ground finelyYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+--- Page ---
+5. This should be soaked in ethanol to extract the antimicrobial substances, after which it
+should be filtered
+6. Equal sized discs cut from sterile absorbent paper should be dipped in the plant extract
+using sterile forceps
+7. Leave the discs in the extract for the same amount of time to ensure that they absorb a
+similar amount of the plant extract
+The disc that will serve as the control will only be dipped in ethanol
+8. Space the discs out evenly on the agar plate, before taping the lid on, inverting the plate
+and incubating it at 25°C
+This temperature will ensure good bacterial growth without stimulating the growth
+of human pathogens
+9. Incubate for 24 to 48 hoursYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+--- Page ---
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+--- Page ---
+The same method as that shown above can be used to investigate the antimicrobial
+properties of plants. Just remember that the paper discs are soaked in different plant
+extracts (instead of different antiseptics) and the control disc should be soaked in
+ethanol (instead of sterile water)
+Analysis
+The area around each disc where bacteria cannot grow is known as the clear zone
+The larger the clear zone, the more effective the antimicrobial properties of that plant
+extract was
+The size of the clear zone can be determined by measuring the diameter or
+by calculating the area (area = π r)
+Repeat the experiment at least three times and calculate the mean of the results
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+--- Page ---
+Record the diameter of each clear zone to the nearest whole mm, and remember to
+calculate the area using the radius (taken as half the value of the mean diameter of each
+zone)
+Aseptic techniques
+These techniques are important to use in order to prevent the bacterial cultures on the
+agar plate from being contaminated by other micro-organisms or human pathogens
+from outside
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+--- Page ---
+Contamination will have a negative impact on the growth of the bacteria under
+investigation
+When doing the investigation above, use the following aseptic techniques:
+Keep windows and doors closed to prevent air movement
+Disinfect surfaces and utensils regularly to prevent contamination
+Ensure that you use sterile equipment and discard afterwards (especially plastic
+instruments)
+Work near a Bunsen flame when transferring bacteria to ensure that microbes in the
+air are drawn away by rising hot air
+For the same reason as above, hold the flame close to the neck of the glass
+container of the broth every time it's opened or closed 
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+--- Page ---
+To prepare an uncontaminated culture of micro-organisms, this procedure can be
+followed
+Aseptic Techniques Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+--- Page ---
+Examiner Tips and Tricks
+It is vital that one of the paper discs placed on the bacterial agar plate is not soaked in
+plant extract but in ethanol instead. This is to ensure that any differences in bacterial
+growth observed can be attributed to the antimicrobial properties of the plantYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+--- Page ---
+extracts used and not some other factor (such as the paper discs themselves or the
+presence of ethanol, for example)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+--- Page ---
+Development of Drugs & Drug Testing
+Development of Drugs & Drug Testing
+Whenever new drugs are developed, they first need to be tested for effectiveness and
+side-effects, before they can be sold to the general public
+These are known as clinical trials and are crucial to avoid exposing the public to drugs
+that may pose a risk to their health
+Drug testing has not always been this scientific or regulated in the past
+Digitalis soup
+William Withering was an English scientist from the 1700s
+He is best known for his work on using digitalis as a treatment for swelling caused by
+heart failure (known as dropsy)
+Withering treated his patients with an extract made from foxgloves, which contains the
+drug digitalis
+Foxglove is poisonous to humans, so he made different versions of his remedy
+containing different concentrations of digitalis
+These versions were called his digitalis soup
+He experimented on his patients to find the most effective concentration of digitalis
+that would treat dropsy without poisoning the patient
+Modern methods of drug testing
+Modern drug testing protocols are much more rigorous than those of the past
+The first step is modelling the potential effects of the drug, using computers
+Next, the drug will be tested on human tissues in a laboratory, before being tested
+on animals
+Should the drug pass these steps without causing any major problems, then it will
+continue to the clinical trial stage where human test subjects will take it
+There are three phases of testing during clinical trials:
+Phase 1 involves a small group of healthy individuals to determine how the body will
+react to the drug, the side effects of the drug and the correct dosage that should be
+taken
+Phase 2 will be done on a larger group of patients (non-healthy individuals who
+require the drug) to determine the effectiveness of the drug
+Phase 3 involves comparing the drug to existing drugs to see if it works any better. A
+large number of patients are split into two groups, each of which receives either the
+new drug or the existing oneYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+--- Page ---
+Placebos
+Placebos are typically done during phase 2 of a clinical trial
+Patients are split into two groups - one will receive the drug and the other group will be
+given a placebo, which looks exactly like the drug but contains no active ingredients
+The patients are not told which group they are in
+This provides a way for scientists to determine whether the drug actually works
+Certain patients display what is known as the placebo effect
+This is where a patient will show improvements in their health due to the belief that
+they are receiving the drug
+Double blind studies
+These happen during phase 2 and 3 of clinical trials
+Double blind means that neither the patient nor the doctor knows which patient is
+receiving the drug or the placebo
+This reduces the effect that the attitude of either doctor or patient may have on the
+results
+For example, in some cases, a doctor may believe a patient is improving more if they
+know the patient is receiving the drugYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14

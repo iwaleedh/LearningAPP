@@ -1,0 +1,59 @@
+Examiner Tips and Tricks y
+
+Familiarise yourself with the difference between the four structural levels found in Your notes
+proteins, noting which bonds are found at which level. Remember that the hydrogen
+
+bonds in tertiary structures are between the R groups whereas in secondary
+
+structures the hydrogen bonds form between the amino and carboxyl groups.
+
+Globular & Fibrous Proteins
+
+Globular proteins: Structure
+=» Globular proteins are
+= Compact
+= Roughly spherical (circular) in shape
+
+=» Globular proteins form a spherical shape when folding into their tertiary structure
+because:
+
+= Theirnon-polar hydrophobic R groups are orientated towards the centre of the
+protein away from the aqueous surroundings
+
+= Their polar hydrophilic R groups orientate themselves on the outside of the protein
+
+= The folding of the protein due to the interactions between the R groups results in
+globular proteins having specific shapes
+
+=» Some globular proteins are conjugated protein that contain a prosthetic group
+
+Globular proteins: Function
+
+= The orientation of their R groups enables globular proteins to be (generally) soluble in
+water as the water molecules can surround the polar hydrophilic R groups
+
+= The solubility of globular proteins in water means they play
+important physiological roles as they can be easily transported around organisms and
+be involved in metabolic reactions
+
+=» For example, enzymes can catalyse specific reactions and immunoglobulins can
+respond to specific antigens
+
+Haemoglobin
+
+=» Haemoglobin is a globular protein which is an oxygen-carrying pigment found in vast
+quantities inred blood cells
+
+= |thas a quaternary structure as there are four polypeptide chains
+
+= These chains or subunits are globin proteins (two a-globins and two B-globins) and
+each subunit has a prosthetic haem group
+
+= The four globin subunits are held together by disulphide bonds
+
+= Theirhydrophobic R groups are facing inwards (helping preserve the three-
+dimensional spherical shape)
+
+4 SaveMyExams © 2026 Save My Exams, Ltd. | Get more and ace your exams at savemyexams.com
+
+9

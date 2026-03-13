@@ -1,0 +1,580 @@
+Edexcel International A
+Level (IAL) Biology
+The Internal Environment
+Contents
+Negative & Positive Feedback
+Homeostasis
+The Kidney: Structure
+Urea as a Waste Product
+Selective Reabsorption in the Kidney
+Hormones in Osmoregulation
+Control of Gene ExpressionYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Negative & Positive Feedback
+Negative & Positive Feedback
+Negative feedback
+The majority of homeostatic control mechanisms in organisms use negative
+feedback to maintain homeostatic balance, i.e. to keep certain physiological factors,
+such as internal temperature or blood glucose concentration, within certain limits
+Negative feedback control loops involve
+A receptor detects a stimulus that is involved with a physiological factor
+E.g. a change in temperature or blood glucose level
+A coordination system transfers information between different parts of the body
+This could be the nervous system or the hormonal system
+An effector carries out a response
+Effectors are muscles or glands
+The outcome of a negative feedback loop is
+If there is an increase in the factor the body responds to make the factor decrease
+If there is a decrease in the factor the body responds to make the factor increase
+Negative feedback systems work by reversing a change in the body to bring it back
+within normal limits, e.g.
+If body temperature rises a negative feedback system will act to lower body
+temperature, bringing it back to normal
+If blood glucose levels drop a negative feedback system will act to raise blood
+glucose, bringing it back to normalYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Negative feedback loops involve the monitoring of physiological factors and act to
+reverse any changes, keeping the factors within normal limits. Information can be
+transferred via nerve signals, as shown here, or by hormonal signals.
+Positive feedback
+In positive feedback loops the original stimulus produces a response that causes the
+factor to deviate even more from the normal range
+They enhance the effect of the original stimulus
+An example of this is the dilation of the cervix during labour
+The cervix stretches as baby pushes against it
+Stretch receptors in the cervix are stimulated and send impulses to the brain
+The pituitary gland is stimulated to release oxytocin which increases the intensity of
+uterine contractions
+This pushes the baby further down the birth canal and stretches the cervix even
+further
+Positive feedback loops are useful to quickly activate a process, e.g. blood clotting to
+close up a wound
+When the body is injured, platelets become activated
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+They release chemicals which will activate more platelets, which in turn, will release
+chemicals that will activate even more platelets etc.
+This ensures that the wound is quickly closed up by a blood clot before too much
+blood is lost or too many pathogens enter the bloodstream
+The body will revert to negative feedback mechanisms once the blood clot has
+formed
+Positive feedback may also kick in when homeostatic mechanisms break down
+E.g. during prolonged exposure to extreme cold hypothermia can occur; body
+temperature drops, resulting in decreased metabolism which in turn causes body
+temperature to drop further
+Since these mechanisms do not maintain a constant internal environment, they are not
+involved in homeostasis
+Negative Feedback in Maintaining
+Conditions
+The control of negative feedback
+Negative feedback loops help maintain a normal range or balance within an organism
+They reduce the initial effect of the stimulus
+Receptors detect any deviations in a factor from the normal range; this results in
+a corrective mechanism to return the factor back to its normal range
+In negative feedback loop there are usually two corrective mechanisms
+One for when the factor becomes too low
+One for when the factor becomes too high
+The corrective mechanisms may involve the nervous system or the endocrine system
+The magnitude of the correction required to bring a factor back within its normal range is
+monitored and regulated by negative feedback
+As the factor gets closer to its normal value the level of correction reducesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Two corrective mechanisms are involved in the negative feedback loop
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Homeostasis
+Homeostasis
+In order to function properly and efficiently organisms have different control systems
+that ensure their internal conditions are kept relatively constant
+Physiological control systems maintain the internal environment within restricted limits
+through a process known as homeostasis
+This keeps the internal environment of the body fluctuating around a specific normal
+level
+This is known as a state of dynamic equilibrium
+Sensory cells known as receptors can detect information about the conditions inside
+and outside the body
+The importance of homeostasis
+Temperature
+Homeostasis is critically important for organisms as it ensures the maintenance of
+optimal conditions for enzymeaction and cell function
+For example, an increase in body temperature above 40 °C would cause enzymes to
+denature
+This is due to an increase in kinetic energy which would result in the breakage
+of hydrogen bonds holding the enzyme in a specific 3D shape
+The active site will change shape and will no longer be complementary to the
+substrate molecule
+An enzyme-substrate complex cannot form and the enzyme cannot catalyse
+that reaction anymore, leading to less efficient metabolic reactions
+Blood glucose
+Cells also need a constant supply of energy in the form of ATP to work efficiently
+Glucose is respired to supply this ATP, meaning that the body needs to carefully monitor
+and control blood glucose concentrations
+Cells in the pancreas monitor blood glucose concentrations
+Water
+Water is another essential requirement for cells to function optimally; it makes up the
+cell cytoplasm and it takes part in metabolic reactions
+It is therefore crucial for the amount of water in the blood to remain constant
+Water is lost during excretion of waste products, e.g. urine, and in sweatYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+The kidneys are responsible for regulating the amount of water in the blood
+Control mechanisms for maintaining body temperature
+Maintenance of a constant internal body temperature is known as thermoregulation
+This process involves both cooling and warmingmechanisms depending on whether
+there is an increase or decrease in body temperature
+Cooling mechanisms
+Vasodilation of the blood vessels that supply skin capillaries
+Heat exchange during both warming and cooling occurs at the body's surface as
+this is where the blood comes into close proximity to the environment
+The warmer the environment, the less heat is lost from the blood at the body's
+surface
+One way to increase heat loss is to supply the capillaries in the skin with a greater
+volume of blood, which then loses heat to the environment via radiation
+Arterioles have muscles in their walls that can relax or contract to allow more or
+less blood to flow through them
+During vasodilation these muscles relax, causing the arterioles near the skin to
+dilate and allowing more blood to flow through skin capillaries
+This is why pale-skinned people go red when they are hot
+Sweating
+Sweat is secreted by sweat glands
+This cools the skin by evaporation; heat energy from the body converts liquid water
+into water vapour
+Sweating is less effective as a cooling mechanism in humid environments; sweat
+evaporates more slowly due to a reduced concentration gradient between the
+sweat and the surrounding air
+Flattening of hairs
+The hair erector pili muscles in the skin relax, causing hairs to lie flat
+These muscles can be described as effectors, as they respond to a change in
+body temperature
+This stops them from forming an insulating layer of trapped air and allows air to
+circulate over skin; heat can therefore leave by radiationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+Changes in the skin help to increase heat loss when body temperature rises
+Warming mechanisms
+Vasoconstriction of blood vessels that supply skin capillaries
+One way to decrease heat loss is to supply the capillaries in the skin with a smaller
+volume of blood, minimising the loss of heat to the environment by radiation
+During vasoconstriction the muscles in the arteriole walls contract, causing the
+arterioles near the skin to constrict and allowing less blood to flow through skin
+capillaries
+Instead, the blood is diverted through shunt vessels, which are deeper in the skin
+and therefore do not lose heat to the environment
+Vasoconstriction is not, strictly speaking, a 'warming' mechanism as it does not raise
+the temperature of the blood but instead reduces heat loss from the blood as it
+flows through the skin
+Boosting metabolic rate
+Most of the metabolic reactions in the body are exothermic and this provides
+warmth to the body
+In cold environments the hormone thyroxine, released from the thyroid gland,
+increases the basal metabolic rate (BMR), increasing heat production in the body
+Adrenaline may also be released to speed up the metabolic rate and release more
+heat
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+Shivering
+This is a reflex action in response to a decrease in core body temperature
+This means it is a nervous mechanism, not a hormonal one
+In this case muscles are the effectors and they contract in a rapid and regular
+manner
+The metabolic reactions required to power this shivering generate sufficient heat to
+warm the blood and raise the core body temperature
+Erection of hairs
+The hair erector pili muscles in the skin contract, causing hairs to stand on end
+This forms an insulating layer over the skin's surface by trapping air between the
+hairs and stops heat from being lost by radiation
+Note that, like vasoconstriction, this is a heat retention mechanism rather than a
+warming mechanism
+Less sweating
+The sweat glands will secrete less sweat when it is cold
+This will reduce the amount of heat lost through the evaporation of sweat
+This is a heat retention mechanism rather than a warming mechanism
+Changes in the skin reduce heat loss when the body cools
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+The role of the hypothalamus in thermoregulation
+The hypothalamus is an area of the brain that is responsible for controlling many
+functions in the body, including
+Hormones
+Sleep
+Growth
+Body temperature
+Blood pressure
+Mammals detect external temperatures via thermoreceptors found in the skin and
+mucous membranes
+There are receptors for both heat and cold
+These communicate with the hypothalamus along sensory neurons
+The hypothalamus will send impulses along motor neurons to effectors to bring
+about a physiological response to changing external temperatures
+The hypothalamus also helps to regulate body temperature by monitoring the
+temperature of the blood flowing through it and initiatinghomeostatic
+responses when it gets too high or too low
+The regulation of body temperature involves communication between thermoreceptors,
+the hypothalamus and effectors to respond to change
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+Examiner Tips and Tricks
+Note that vasoconstriction and vasodilation occur in the arterioles that supply the
+skin capillaries, not the skin capillaries themselves; capillary walls are only one cell
+thick and do not contain any muscle fibres capable of contracting or relaxing.
+Be careful with your use of language; muscles contract, arterioles constrict.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+The Kidney: Structure
+The Kidney: Structure
+Humans have two kidneys
+The kidneys are responsible for carrying out two very important functions
+As an osmoregulatory organ they regulate the water content of the blood
+This is essential for maintaining blood pressure and to prevent cell damage
+occurring due to osmosis
+As an excretory organ they enable the excretion of the toxic waste products of
+metabolism, such as urea, and substances in excess of requirements, such as salts
+The kidneys are located above the bladder. They are supplied with blood by the renal
+artery and connect to the bladder via the ureter.
+The Function of the Kidneys & their Associated Structures Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+The gross structure of the kidney
+The kidney itself is surrounded by an outer layer known as the fibrous capsule
+Beneath the fibrous capsule, the kidney has three main regions
+The cortex
+The medulla
+The renal pelvis
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+The kidney has three main regions; the cortex, the medulla, and the renal pelvis.
+The microscopic structure of the kidney
+Each kidney contains thousands of tiny tubes, or tubules, known as nephrons
+Nephrons are the functional unit of the kidney and are responsible for the formation of
+urine
+Different parts of the nephron are found in different regions of the kidney
+The cortex
+Location of the glomerulus, Bowman’s capsule, proximal convoluted tubule,
+and distal convoluted tubule
+The medulla
+Location of the loop of Henle and collecting duct
+The renal pelvis
+All kidney nephrons drain into this structure, which connects to the ureter
+There are two types of nephrons in the kidney
+Cortical nephrons
+These occur mainly in the renal cortex and have a short loop of Henle that
+barely enters the medulla
+They make up about 85% of the nephrons in a human kidney
+Juxtamedullary nephrons
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+They have long loops of Henle that span across the entire medulla
+Very efficient at conserving water in the body
+The nephron spans the three regions of the kidney.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+There is also a network of blood vessels associated with each nephron
+Within the Bowman’s capsule of each nephron is a structure known as the glomerulus
+Each glomerulus is supplied with blood by an afferent arteriole which carries blood
+from the renal artery
+The afferent arteriole splits into a ball of capillaries that forms the glomerulus itself
+The capillaries of the glomerulus rejoin to form the efferent arteriole
+Blood flows from the glomerulus into a network of capillaries that run closely alongside
+the rest of the nephron and eventually into the renal vein
+The afferent arteriole supplies the capillaries of the glomerulus, which rejoin to form the
+efferent arteriole.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Urea as a Waste Product
+Urea as a Waste Product
+Formation of urea
+The body cannot store excess protein or amino acids
+Liver cells, or hepatocytes, are responsible for removing the amino group from excess
+amino acids in a process called deamination
+During deamination the amino group (-NH) of an amino acid is removed, together with
+an extra hydrogen atom
+These combine to form ammonia (NH)
+amino acids →  ammonia + keto acid
+The remaining keto acid may enter the Krebs cycle to be respired, be converted
+to glucose, or converted to glycogen / fat for storage
+This means that the amino acids within the protein will not be wasted but can
+function as a useful source of energy
+Due to its toxicity ammonia is quickly converted into less toxic urea
+This happens in a series of steps known as the ornithine cycle, which can be
+summarised as
+ammonia + carbon dioxide →  urea + water
+Urea forms part of urine and can be excreted by the kidneys
+Urea is filtered out of the bloodstream into the Bowman's capsule of the nephron by the
+process of ultrafiltration
+During the process of deamination the amino group (-NH) is removed from the amino
+acid and converted into ammonia (NH)
+Ultrafiltration
+Within the Bowman’s capsule of each kidney nephron is a structure known as
+the glomerulus; these two structures together carry out the process of ultrafiltration2
+3
+2
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+The blood in the glomerulus is at high pressure
+The afferent arteriole that enters the glomerulus is wider than the efferent arteriole
+that leaves it, increasing the blood pressure as the blood flows through the
+glomerulus
+This high pressure forces small molecules in the blood out of the capillaries of the
+glomerulus and into the Bowman’s capsule
+The resulting fluid in the Bowman's capsule is called the glomerular filtrate
+Large molecules such as proteins remain in the blood and do not pass into the filtrateYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+During the process of ultrafiltration small molecules are forced out of the capillaries into
+the Bowman's capsule
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+The structures within the glomerulus and Bowman's capsule are especially well adapted
+for ultrafiltration
+The blood in the glomerular capillaries is separated from the lumen of the Bowman’s
+capsule by two cell layers with a basement membrane in between them
+The first cell layer is the endotheliumof the capillary; gaps between the cells allow
+fluid to pass through
+The next layer is the mesh-like basement membrane
+The second cell layer is the epitheliumof the Bowman’s capsule; gaps between the
+cellsallow the passage of small molecules
+As blood passes through the glomerular capillaries the gaps between the cells and
+the mesh-like basement membrane allow substances dissolved in the blood plasma
+to pass into the Bowman’s capsule
+The substances that pass into the Bowman’s capsule make up the glomerular
+filtrate
+The main substances that form the glomerular filtrate are
+Amino acids
+Water
+Glucose
+Urea
+Salts (Na and Cl ions)
+Red and white blood cells and platelets remain in the blood as they are too large to
+pass between the cells
+The basement membrane stops large protein molecules from getting through+ -Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+Selective Reabsorption in the Kidney
+Selective Reabsorption in the Kidney
+The nephron is the functional unit of the kidney and is responsible for the formation of
+urine
+The process of urine formation in the kidneys occurs in two stages
+Ultrafiltration
+Selective reabsorption
+Ultrafiltration involves filtering small molecules from the blood at high pressure
+This occurs between the glomerulus and the bowman's capsule
+Selective reabsorption allows the kidney to reabsorb useful small molecules into the
+blood
+Selective reabsorption
+Many of the substances that pass into the glomerular filtrate are useful to the body
+These substances are therefore reabsorbed into the blood as the filtrate passes along
+the nephron
+This process is known as selective reabsorption since not all substances are
+reabsorbed
+Reabsorbed substances include water, salts, glucose, and amino acids
+Most of this reabsorption occurs in the proximal convoluted tubule
+Note that while water and salts are reabsorbed in the proximal convoluted tubule,
+the loop of Henle and collecting duct are also involved in the reabsorption of these
+substancesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+Selective reabsorption of useful substances occurs in the proximal convoluted tubule,
+the loop of Henle and the collecting duct
+The lining of the proximal convoluted tubule is composed of a single layer of epithelial
+cells which are adapted to carry out reabsorption in several ways
+Microvilli
+Microvilli are tiny finger-like projections on the surface of epithelial cells which
+increase the surface area for diffusion
+Co-transporter proteins
+Many mitochondria
+Tightly packed cells
+Adaptations for Selective Reabsorption Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+Molecules reabsorbed from the Proximal Convoluted Tubule
+Sodium ions (Na) are transported from the proximal convoluted tubule into the
+surrounding tissues by active transport
+The positively charged sodium ions creates an electrical gradient, causing chloride
+ions (Cl) to follow by diffusion
+Sugars and amino acids are transported into the surrounding tissues by co-transporter
+proteins which also transport sodium ions
+The movement of ions, sugars, and amino acids into the surrounding tissues lowers the
+water potential of the tissues, so water leaves the proximal convoluted tubule by
+osmosis
+Urea moves out of the proximal convoluted tubule from a high to a low concentration
+by diffusion
+All of the substances that leave the proximal convoluted tubule for the surrounding
+tissues eventually make their way into nearby capillaries down their concentration
+gradients
++
+-Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Sodium, amino acids, and glucose are reabsorbed from the proximal convoluted tubule
+by an active process that involves co-transporter proteins.
+The role of the loop of Henle
+Many animals deal with the excretion of the toxic waste product urea by dissolving it in
+water and excreting it
+While this method of excretion works well, it brings with it the problem of water loss
+The role of the loop of Henle is to enable the production of urine that is more
+concentrated than the blood, and to therefore conserve water
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+Note that it is also possible to produce urine that is less concentrated than the
+blood; this is important when water intake is high to prevent blood becoming too
+dilute
+The loop of Henle achieves this by the use of a countercurrent multiplier system
+Countercurrent refers to the opposite directions of filtrate flow in the descending
+and ascending limbs of the loop of Henle
+Multiplier refers to the steep concentration gradient that the loop of Henle is able to
+generate across the medulla
+The process in the loop of Henle
+Sodium and chloride ions move out of the filtrate in the ascending limb of the loop of
+Henle into the surrounding medulla region, lowering its water potential
+The movement of ions occurs by both diffusion and active transport
+Diffusion takes place in the first part of the ascending limb
+Active transport occurs in the second part of the ascending limb 
+The ascending limb of the loop of Henle is impermeable to water, so water is unable
+to leave the loop here by osmosis
+The water potential in the ascending limb increases as it rises back into the cortex
+due to the removal of solutes and retention of water
+The neighbouring descending limb is permeable to water, so water moves out of the
+descending limb by osmosis due to the low water potential in the medulla created by
+the ascending limb
+The descending limb has few transport proteins in the membranes of its cells, so has
+low permeability to ions
+The water potential of the filtrate decreases as the descending limb moves
+down into the medulla due to the loss of water and retention of ions
+The water and ions that leave the loop of Henle for the medulla make their way into the
+nearby capillary networkYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+The loop of Henle acts as a countercurrent multiplier, maximising the reabsorption of
+water by creating a steep water potential gradient across the medulla
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+Hormones in Osmoregulation
+Hormones in Osmoregulation
+The control of the water potential of body fluids is known as osmoregulation
+Osmoregulation is a key part of homeostasis
+Specialised sensory receptors, known as osmoreceptors, monitor the water potential
+of the blood
+These osmoreceptors are found in an area of the brain known as the hypothalamus
+If the osmoreceptors detect a decrease in the water potential of the blood, nerve
+impulses are sent along sensory neurones to the posterior pituitary gland, located just
+below the hypothalamus
+These nerve impulses stimulate the posterior pituitary gland to release antidiuretic
+hormone (ADH)
+ADH molecules enter the blood and travel throughout the body
+ADH causes the kidneys to reabsorb more water
+This reduces the loss of water in the urine
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+When osmoreceptors detect a decrease in blood water potential, nerve impulses
+stimulate the release of ADH at the posterior pituitary gland. This ADH then travels in the
+blood to the kidneys, causing them to increase water reabsorption
+The effect of ADH on the kidneys
+Low blood water content
+Blood water content might drop as a result of reduced water intake, sweating,
+or diarrhoea
+Low blood water content can also be referred to as high blood solute
+concentration, or low blood water potential
+If blood water content gets too low it can lead to dehydration
+A reduction of blood water content is detected by the hypothalamus in the brain
+The hypothalamus causes the pituitary gland to secrete ADH into the blood
+The target cells of ADH are in the distal convoluted tubule and collecting duct in the
+kidneys
+ADH increases the permeability of the walls of the distal convoluted
+tubule and collecting duct in the kidneys to water
+The permeability of the walls of the distal convoluted tubule and collecting duct are
+increased by increasing the number of channel proteins called aquaporins in the
+cell surface membranes of the cells lining the nephron lumen; this occurs in the
+following way
+Collecting duct cells contain vesicles, the membranes of which contain
+many aquaporins
+ADH molecules bind to receptor proteins, activating a signalling cascade that
+causes the vesicles to move to and fusewith the luminal membranes of the
+collecting duct cells
+This increases the permeability of the membrane to water
+More water is reabsorbed into the blood via the distal convoluted tubule and collecting
+duct
+The reabsorption of water leaves a concentrated filtrate that passes through the
+collecting duct and into the renal pelvis
+This remaining filtrate is the urine; from the renal pelvis it passes along the ureter to
+the bladder
+The blood water content increases and a small quantity of concentrated urine is
+producedYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+ADH increases the permeability of the walls of the collecting duct to water by increasing
+the number of aquaporins in the cell surface membranes of the collecting duct cells.
+High blood water content
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+Blood water content might increase due to increased water intake or loss of salts during
+sweating
+High blood water content can also be referred to as low blood solute
+concentration, or high blood water potential
+If blood water content gets too high it can lead to overhydration
+High blood water content is detected by the hypothalamus
+The hypothalamus no longer stimulates the pituitary gland to release ADH and ADH
+levels in the blood drop
+The distal convoluted tubule and collecting duct walls become less permeable to
+water
+Fewer aquaporins are present
+Less water is reabsorbed from these regions of the nephron into the blood, and the
+water instead passes down the collecting duct into the renal pelvis along with the rest of
+the filtrate
+Blood water content decreases and a large quantity of dilute urine is producedYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+Control of Gene Expression
+Control of Gene Expression
+Hormones can alter the events inside a cell by influencing gene expression
+Eukaryotes use transcription factors to control gene expression
+A transcription factor is a protein that controls the transcriptionof genes by binding
+to a specific region of DNA
+It is estimated that ~10 % of human genes code for transcription factors
+There are several types of transcription factors that have varying effects on
+gene expression
+E.g. transcription factors that increase the rate at which a gene is
+expressed are known as activators, while those that decrease gene
+expression are known as repressors
+Transcription factors ensure that genes are being expressed in the correct cells,
+at the correct time and to the right level
+Transcription factors allow organisms to respond to their environment
+Some hormones achieve their effect by acting upon transcription factors
+Effect of hormones inside cells
+Hormones that can cross the cell surface membrane, e.g. steroid hormones and thyroid
+hormones, are able to enter the nucleus and bind to transcription factors that are
+present there
+Steroid hormones are lipid soluble, allowing them to pass between the
+phospholipids of the cell surface membrane
+An example of this is the hormonal regulation of body temperature
+At normal body temperature a transcription factor known as the thyroid hormone
+receptor binds to a section of DNA at the start of a gene 
+This gene codes for a protein that increases the metabolic rate, generating
+more heat and therefore increasing body temperature
+As long as the thyroid hormone receptor is bound to the region of DNA at the start of
+the gene, the gene will not be expressed; it can be said to be switched off
+In reality it is more likely that expression of the gene will be reduced rather than
+switched off entirely
+However, in cold temperatures the body will release the hormone
+thyroxine which binds to the thyroid hormone receptor
+Once the hormone and the receptor are bound together the thyroid hormone
+receptor allows RNA polymerase to bind to the start of the gene; the gene is said toYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31
+be switched on and its rate of expression will increase
+The protein which increases the metabolic rate is produced in larger quantities,
+leading to an increase in body temperature
+The hormone thyroxine acts as a transcription factor by binding to the thyroid hormone
+receptor; this switches on the gene, allowing it to be transcribed by RNA polymerase
+Effect of hormones from outside cells
+Hormones that cannot cross the cell membrane, e.g. protein and peptide hormones,
+bind to receptors in the cell surface membrane
+Examples of such hormones include
+Adrenaline
+Insulin
+Glucagon
+ADH
+The binding of these hormones to cell surface membrane receptors initiates a process
+that activates messenger molecules in the cytoplasm of the cell known as second
+messengers
+A common second messenger molecule is cyclic AMP (cAMP), formed from ATP
+The activated second messenger molecules activate enzymes called protein kinases
+Active protein kinase enzymes trigger a chain of reactions, known as a cascade, inside
+the cell
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 32
+The cascade may result in changes to the activity of transcription factors which may
+then affect gene expression in the cell
+Adrenaline acts by binding to a receptor on cell surface membranes; this activates the
+second messenger cAMP, leading to a cascade of reactions that affects the activity of
+the cell, e.g. by influencing transcription factors
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 33

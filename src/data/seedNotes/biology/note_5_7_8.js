@@ -1,200 +1,621 @@
-/**
- * WBI15 — Topic 7.8: Muscle Structure and Contraction
- * Sarcomere, myofilaments, sliding filament theory, triad
- */
-
 export const note_biology_5_7_8 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand skeletal muscle structure from gross anatomy to sarcomere level, including the sliding filament mechanism, and the role of the triad in excitation-contraction coupling.',
-      },
+        "id": "obj_8",
+        "type": "objective",
+        "data": {
+            "text": "Understand the structure of muscle fibres, myofibrils, sarcomeres, actin, and myosin."
+        }
     },
     {
-      id: 'h-structure',
-      type: 'heading',
-      data: { text: 'Skeletal Muscle Structure: Hierarchical Organisation', level: 2 },
+        "id": "h_8_1",
+        "type": "heading",
+        "data": {
+            "text": "The Musculoskeletal System",
+            "level": 3
+        }
     },
     {
-      id: 'list-hierarchy',
-      type: 'list',
-      data: {
-        style: 'numbered',
-        items: [
-          'Muscle (gross level): entire organ (e.g., biceps)',
-          'Fascicle: bundle of muscle fibres, surrounded by perimysium',
-          'Muscle fibre (cell): syncytium (multinucleate), surrounded by sarcolemma',
-          'Myofibril: contractile unit within fibre, consists of sarcomeres',
-          'Sarcomere: functional unit of contraction, between Z lines',
-        ],
-      },
+        "id": "h_8_2",
+        "type": "heading",
+        "data": {
+            "text": "The Musculoskeletal System",
+            "level": 3
+        }
     },
     {
-      id: 'h-sarcomere',
-      type: 'heading',
-      data: { text: 'The Sarcomere: Contractile Unit', level: 3 },
+        "id": "h_8_3",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0effective movement\u00a0of the human body requires both\u00a0muscle\u00a0and",
+            "level": 3
+        }
     },
     {
-      id: 'p-sarcomere',
-      type: 'paragraph',
-      data: {
-        text: 'A sarcomere is the contractile unit of the myofibril, bounded by Z lines (or Z discs) at each end. Within each sarcomere are thick and thin myofilaments arranged in a highly organised lattice. The sarcomere changes length during contraction, but the individual filaments do not change length (sliding filament theory).',
-      },
+        "id": "h_8_4",
+        "type": "heading",
+        "data": {
+            "text": "an\u00a0incompressible skeleton",
+            "level": 3
+        }
     },
     {
-      id: 'h-regions',
-      type: 'heading',
-      data: { text: 'Sarcomere Regions', level: 3 },
+        "id": "h_8_5",
+        "type": "heading",
+        "data": {
+            "text": "This is because muscles will only produce effective movement if they\u00a0pull on a",
+            "level": 3
+        }
     },
     {
-      id: 'table-regions',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Region', 'Description', 'Composition'],
-        rows: [
-          ['A band', 'Dark, anisotropic band; full length of thick filament', 'Myosin thick filaments + overlapping actin thin filaments'],
-          ['I band', 'Light, isotropic band; between thick filaments', 'Actin thin filaments only (no myosin)'],
-          ['H zone', 'Central region of A band', 'Myosin thick filaments only (no actin overlap)'],
-          ['Z line', 'Boundary of sarcomere', 'Protein lattice anchoring actin filaments'],
-          ['M line', 'Centre of H zone', 'Proteins anchoring myosin filaments'],
-        ],
-        caption: 'Sarcomere regions and their composition',
-      },
+        "id": "h_8_6",
+        "type": "heading",
+        "data": {
+            "text": "structure\u00a0that does not shorten or bend - bone",
+            "level": 3
+        }
     },
     {
-      id: 'h-filaments',
-      type: 'heading',
-      data: { text: 'Thick and Thin Filaments', level: 3 },
+        "id": "h_8_7",
+        "type": "heading",
+        "data": {
+            "text": "There are over 600 skeletal muscles in the human body",
+            "level": 3
+        }
     },
     {
-      id: 'p-thick',
-      type: 'paragraph',
-      data: {
-        text: 'Thick filaments (~15 nm diameter) are composed of myosin protein. Each myosin molecule has a globular head and a long tail. Myosin heads form cross-bridges with actin and have ATPase activity (hydrolyse ATP). Many myosin molecules are arranged parallel to form the thick filament.',
-      },
+        "id": "h_8_8",
+        "type": "heading",
+        "data": {
+            "text": "Muscles are\u00a0effectors, stimulated by nerve impulses from motor neurones",
+            "level": 3
+        }
     },
     {
-      id: 'p-thin',
-      type: 'paragraph',
-      data: {
-        text: 'Thin filaments (~7 nm diameter) are composed primarily of actin protein, arranged as a double helix. Associated with actin are regulatory proteins: tropomyosin and troponin. In the relaxed state, tropomyosin blocks the myosin-binding sites on actin. When Ca²⁺ binds to troponin, tropomyosin shifts, exposing the binding sites.',
-      },
+        "id": "p_8_9",
+        "type": "paragraph",
+        "data": {
+            "text": "The muscular system is complex, with multiple muscles crossing over each other in"
+        }
     },
     {
-      id: 'h-sliding',
-      type: 'heading',
-      data: { text: 'Sliding Filament Theory', level: 3 },
+        "id": "h_8_10",
+        "type": "heading",
+        "data": {
+            "text": "multiple directions",
+            "level": 3
+        }
     },
     {
-      id: 'p-sliding',
-      type: 'paragraph',
-      data: {
-        text: 'The sliding filament theory (Huxley, 1954) states that muscle contraction occurs by thick and thin filaments sliding past each other. The filaments themselves do NOT change length; rather, the overlapping region increases, causing the sarcomere to shorten. During contraction: Z lines move towards the M line, the I band and H zone decrease in length, the A band length remains constant.',
-      },
+        "id": "h_8_11",
+        "type": "heading",
+        "data": {
+            "text": "Lengths of\u00a0strong connective tissue\u00a0called\u00a0tendons, connect muscles to bones",
+            "level": 3
+        }
     },
     {
-      id: 'callout-sliding',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Key Evidence for Sliding Filament Theory',
-        text: 'Electron microscopy shows: (1) thick and thin filaments do not change length during contraction; (2) overlap region increases; (3) I and H bands decrease in size whilst A band stays constant. This proves filaments slide, not shorten.',
-      },
+        "id": "p_8_12",
+        "type": "paragraph",
+        "data": {
+            "text": "They are flexible but do not stretch when a muscle is contracting and pulling on a"
+        }
     },
     {
-      id: 'h-triad',
-      type: 'heading',
-      data: { text: 'The Triad: Excitation-Contraction Coupling', level: 3 },
+        "id": "h_8_13",
+        "type": "heading",
+        "data": {
+            "text": "bone",
+            "level": 3
+        }
     },
     {
-      id: 'p-triad',
-      type: 'paragraph',
-      data: {
-        text: 'The triad is a specialised structure at the junction between the T-tubule and the sarcoplasmic reticulum (SR). It consists of: (1) a T-tubule (invagination of sarcolemma); (2) two SR cisternae (terminal sacs flanking the T-tubule). This structure allows rapid communication between the surface action potential and deep intracellular SR, enabling synchronised Ca²⁺ release throughout the fibre.',
-      },
+        "id": "h_8_14",
+        "type": "heading",
+        "data": {
+            "text": "There are a few muscles with very long tendons and also a few that are directly",
+            "level": 3
+        }
     },
     {
-      id: 'p-excitation',
-      type: 'paragraph',
-      data: {
-        text: 'When an action potential travels along the T-tubule, it triggers mechanical coupling (not chemical) at the triad: voltage sensors in the T-tubule communicate with ryanodine receptors in the SR, causing the SR to release Ca²⁺ into the sarcoplasm. This Ca²⁺ binds to troponin on thin filaments, initiating the power stroke.',
-      },
+        "id": "h_8_15",
+        "type": "heading",
+        "data": {
+            "text": "attached to the bone",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Muscle is organised hierarchically: muscle → fascicle → fibre → myofibril → sarcomere. The sarcomere contains thick (myosin) and thin (actin) filaments arranged in A, I, H zones. Contraction: filaments slide past each other (filament lengths unchanged) via cross-bridges. The triad (T-tubule + SR cisternae) enables rapid Ca²⁺ release for fast, synchronised contraction.',
-        apply: 'In a relaxed muscle, the H zone is 1.5 μm wide. During maximal contraction, actin filaments from both Z lines meet at the M line, eliminating the H zone. If thick filaments are 1.5 μm long, calculate the maximum sarcomere length.',
-        analyze: 'Compare the roles of thick and thin filaments. Why are both essential for contraction?',
-        evaluate: 'The triad represents specialisation for rapid contraction. How would muscle function differ without triads (hypothetically)?',
-      },
-      terms: [],
+        "id": "p_8_16",
+        "type": "paragraph",
+        "data": {
+            "text": "Ligaments\u00a0are also lengths of\u00a0strong connective tissue\u00a0but they\u00a0connect bones to"
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Draw and label a sarcomere showing Z lines, A band, I band, H zone, and M line', checked: false },
-          { text: 'Describe the composition and roles of thick and thin filaments', checked: false },
-          { text: 'Explain the sliding filament theory and evidence supporting it', checked: false },
-          { text: 'Describe the structure and function of the triad', checked: false },
-          { text: 'Explain how I and H band lengths change during contraction', checked: false },
-        ],
-      },
+        "id": "h_8_17",
+        "type": "heading",
+        "data": {
+            "text": "other bones, which keep the skeleton intact",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Skeletal muscle: fascicles → fibres → myofibrils → sarcomeres. Sarcomere bounded by Z lines; contains thick filaments (myosin) in A band and thin filaments (actin + tropomyosin + troponin). Contraction: thick and thin filaments slide past each other (filament lengths unchanged). I and H bands shorten; A band unchanged. Triad (T-tubule + SR cisternae) enables rapid, synchronised Ca²⁺ release for excitation-contraction coupling.',
-      },
+        "id": "h_8_18",
+        "type": "heading",
+        "data": {
+            "text": "Antagonistic muscle action",
+            "level": 3
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'table-regions',
-        prompt: 'Name the regions of a sarcomere (A band, I band, H zone, Z line, M line) and describe what is in each.',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-thick',
-        prompt: 'Describe the structure and composition of thick filaments.',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'p-thin',
-        prompt: 'Describe thin filaments and the roles of tropomyosin and troponin.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-sliding',
-        prompt: 'State the sliding filament theory. What changes length during contraction and what does not?',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-triad',
-        prompt: 'Describe the triad and explain how it functions in excitation-contraction coupling.',
-      },
-    ],
-    summaryText:
-      'Sarcomere: contractile unit between Z lines. Contains thick filaments (myosin, in A band) and thin filaments (actin + tropomyosin + troponin, in I band). A band contains both; H zone is myosin-only; M line anchors myosin. Sliding filament theory: filaments slide past each other (lengths unchanged) → sarcomere shortens. Triad (T-tubule + 2 SR cisternae) enables rapid Ca²⁺ release.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Sliding filament theory',
-      detail: 'Proposed by Huxley & Huxley (1954); confirmed by electron microscopy',
-      year: '1954',
-      source: 'History of muscle physiology',
-      tags: ['history'],
+        "id": "h_8_19",
+        "type": "heading",
+        "data": {
+            "text": "Muscles are only capable of\u00a0contracting\u00a0or\u00a0pulling,\u00a0they\u00a0cannot push",
+            "level": 3
+        }
     },
-  ],
+    {
+        "id": "h_8_20",
+        "type": "heading",
+        "data": {
+            "text": "As a result of this limitation muscles generally operate in\u00a0pairs",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_21",
+        "type": "paragraph",
+        "data": {
+            "text": "A muscle pulls in one direction\u00a0at a joint\u00a0and the other muscle\u00a0pulls in the opposite"
+        }
+    },
+    {
+        "id": "h_8_22",
+        "type": "heading",
+        "data": {
+            "text": "direction",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_23",
+        "type": "heading",
+        "data": {
+            "text": "This is described as\u00a0antagonistic\u00a0muscle action",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_24",
+        "type": "heading",
+        "data": {
+            "text": "An example of this can be seen in the biceps and triceps of the arm",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_25",
+        "type": "heading",
+        "data": {
+            "text": "To raise the lower arm",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_26",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0bicep contracts\u00a0and the\u00a0tricep relaxes",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_27",
+        "type": "heading",
+        "data": {
+            "text": "As the bone can't be stretched the arm\u00a0flexes around the joint",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_28",
+        "type": "paragraph",
+        "data": {
+            "text": "A muscle that bends a joint during contraction is known as a\u00a0flexor\u00a0(the bicep in this"
+        }
+    },
+    {
+        "id": "h_8_29",
+        "type": "heading",
+        "data": {
+            "text": "case)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_30",
+        "type": "heading",
+        "data": {
+            "text": "This brings the tricep into its full length so that it can contract again",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_31",
+        "type": "heading",
+        "data": {
+            "text": "To lower the lower arm",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_32",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0tricep contracts\u00a0and\u00a0bicep relaxes",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_33",
+        "type": "paragraph",
+        "data": {
+            "text": "A muscle that straightens a joint during contraction is known as an\u00a0extensor\u00a0(the"
+        }
+    },
+    {
+        "id": "h_8_34",
+        "type": "heading",
+        "data": {
+            "text": "tricep in this case)",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_35",
+        "type": "paragraph",
+        "data": {
+            "text": "Antagonistic muscle action: the two muscles work together by pulling in opposite"
+        }
+    },
+    {
+        "id": "h_8_36",
+        "type": "heading",
+        "data": {
+            "text": "directions",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_37",
+        "type": "heading",
+        "data": {
+            "text": "The Muscle Fibre",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_38",
+        "type": "heading",
+        "data": {
+            "text": "Muscle Fibre: Structure",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_39",
+        "type": "paragraph",
+        "data": {
+            "text": "Skeletal muscle\u00a0makes up the muscles in the body that are attached to the skeleton"
+        }
+    },
+    {
+        "id": "h_8_40",
+        "type": "heading",
+        "data": {
+            "text": "Skeletal muscle is made up of\u00a0muscle fibres",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_41",
+        "type": "heading",
+        "data": {
+            "text": "A muscle fibre is a\u00a0highly specialised\u00a0cell-like\u00a0unit:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_42",
+        "type": "heading",
+        "data": {
+            "text": "Each muscle fibre:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_43",
+        "type": "heading",
+        "data": {
+            "text": "Contains an organised arrangement of\u00a0contractile proteins in the cytoplasm",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_44",
+        "type": "heading",
+        "data": {
+            "text": "Is surrounded by a\u00a0cell surface membrane",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_45",
+        "type": "heading",
+        "data": {
+            "text": "Contains\u00a0many nuclei\u00a0(multi-nucleated)\u00a0\u2013 this is why muscle fibres are not",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_46",
+        "type": "heading",
+        "data": {
+            "text": "usually referred to as cells",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_47",
+        "type": "paragraph",
+        "data": {
+            "text": "The different parts of a muscle fibre have different names to the equivalent parts of a"
+        }
+    },
+    {
+        "id": "h_8_48",
+        "type": "heading",
+        "data": {
+            "text": "normal cell:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_49",
+        "type": "heading",
+        "data": {
+            "text": "Cell surface membrane =\u00a0sarcolemma",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_50",
+        "type": "heading",
+        "data": {
+            "text": "Cytoplasm =\u00a0sarcoplasm",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_51",
+        "type": "heading",
+        "data": {
+            "text": "Endoplasmic reticulum =\u00a0sarcoplasmic reticulum (SR)",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_52",
+        "type": "paragraph",
+        "data": {
+            "text": "The sarcolemma has many deep tube-like projections that fold in from its outer surface:"
+        }
+    },
+    {
+        "id": "h_8_53",
+        "type": "heading",
+        "data": {
+            "text": "These are known as transverse system tubules or\u00a0T-tubules",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_54",
+        "type": "heading",
+        "data": {
+            "text": "These run\u00a0close to the SR\u00a0and help spread electrical impulses throughout muscle",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_55",
+        "type": "heading",
+        "data": {
+            "text": "fibre",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_56",
+        "type": "heading",
+        "data": {
+            "text": "The sarcoplasm contains\u00a0mitochondria\u00a0and\u00a0myofibrils",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_57",
+        "type": "heading",
+        "data": {
+            "text": "The mitochondria carry out aerobic respiration to generate the ATP\u00a0required for",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_58",
+        "type": "heading",
+        "data": {
+            "text": "muscle contraction",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_59",
+        "type": "paragraph",
+        "data": {
+            "text": "Myofibrils are\u00a0bundles of actin and myosin filaments, which slide past each other"
+        }
+    },
+    {
+        "id": "h_8_60",
+        "type": "heading",
+        "data": {
+            "text": "during muscle contraction",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_61",
+        "type": "paragraph",
+        "data": {
+            "text": "The membranes of the SR contain\u00a0protein pumps\u00a0that transport\u00a0calcium ions\u00a0into the"
+        }
+    },
+    {
+        "id": "h_8_62",
+        "type": "heading",
+        "data": {
+            "text": "lumen of the SR",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_63",
+        "type": "heading",
+        "data": {
+            "text": "The ultrastructure of skeletal muscle and of a section of muscle fibre",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_64",
+        "type": "heading",
+        "data": {
+            "text": "Myofibrils",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_65",
+        "type": "heading",
+        "data": {
+            "text": "Myofibrils are located in the\u00a0sarcoplasm",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_66",
+        "type": "heading",
+        "data": {
+            "text": "Each myofibril is made up of\u00a0two types of protein filament:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_67",
+        "type": "heading",
+        "data": {
+            "text": "Thick\u00a0filaments made of\u00a0myosin",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_68",
+        "type": "heading",
+        "data": {
+            "text": "Thin\u00a0filaments made of\u00a0actin",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_69",
+        "type": "paragraph",
+        "data": {
+            "text": "These two types of filaments are arranged in a particular order, creating different types"
+        }
+    },
+    {
+        "id": "h_8_70",
+        "type": "heading",
+        "data": {
+            "text": "of\u00a0bands\u00a0and\u00a0lines",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_71",
+        "type": "heading",
+        "data": {
+            "text": "The structure of a myofibril",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_72",
+        "type": "heading",
+        "data": {
+            "text": "Fast & Slow Twitch Muscle Fibres",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_73",
+        "type": "heading",
+        "data": {
+            "text": "There are two types of muscle fibres found in muscles",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_74",
+        "type": "heading",
+        "data": {
+            "text": "Fasttwitch\u00a0fibres",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_75",
+        "type": "heading",
+        "data": {
+            "text": "Slowtwitch\u00a0fibres",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_8_76",
+        "type": "heading",
+        "data": {
+            "text": "Human muscles are made up of both types of muscle fibres",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_8_77",
+        "type": "paragraph",
+        "data": {
+            "text": "Some muscles have higher proportions of a particular fibre type due to their different"
+        }
+    },
+    {
+        "id": "h_8_78",
+        "type": "heading",
+        "data": {
+            "text": "properties",
+            "level": 3
+        }
+    }
+]
 };

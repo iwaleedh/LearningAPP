@@ -1,0 +1,49 @@
+= Atthis point all active sites are occupied and increasing the substrate 4
+concentration will not affect the rate of the reaction
+=» Substrate concentration will decrease over time (if no new substrate is added) Your notes
+
+=» The rate of reaction will therefore decrease over time
+
+= This means the initial rate of reaction will be fastest throughout the reaction
+
+ACTIVE SITES SATURATED
+AND NO FURTHER ADDITION
+
+OF SUBSTRATE WILL ALTER
+
+THE RATE OF REACTION
+POINT OF ACTIVE
+SITE SATURATION
+
+REACTION RATE FOLLOWS
+eTHIS PATTERN WHEN THE
+AMOUNT OF ENZYME IS FIXED
+
+RATE OF
+REACTION
+
+SUBSTRATE CONCENTRATION
+
+The effect of substrate concentration on the rate of an enzyme controlled reaction
+
+Practical: Investigating the rate of enzyme reactions
+=» The progress of enzyme-catalysed reactions can be investigated by:
+=» Measuring the rate of formation of a product
+=» Measuring the rate of disappearance of a substrate
+
+= There are many enzymes that can be used in this practical; some common examples are
+catalase, amylase and protease
+
+= The initial rate of reaction can be calculated to determine the effect of changing enzyme
+or substrate concentrations
+
+# The initial rate of reactionis at the start of the reaction
+
+=» Youcan calculate the initial rate of reaction using a graph of results showing
+volume of product/substrate against time
+
+=» Draw atangentto the graph through the origin
+
+= Calculate the gradient of the tangent - this is the initial rate of reaction
+
+4 SaveMyExams © 2026 Save My Exams, Ltd. | Get more and ace your exams at savemyexams.com 26

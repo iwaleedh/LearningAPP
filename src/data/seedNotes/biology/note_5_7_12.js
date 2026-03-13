@@ -1,213 +1,443 @@
-/**
- * WBI15 — Topic 7.12: Thermoregulation in Ectotherms and Endotherms
- * Metabolic heat, vasoconstriction/dilation, shivering, sweating, brown adipose tissue
- */
-
 export const note_biology_5_7_12 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand thermoregulation in endotherms (mammals, birds) and ectotherms (reptiles, fish), including physiological and behavioural mechanisms, metabolic costs, and brown adipose tissue.',
-      },
+        "id": "obj_12",
+        "type": "objective",
+        "data": {
+            "text": "Describe the control of ventilation rate by the medullary centers and chemoreceptors."
+        }
     },
     {
-      id: 'h-thermoregulation',
-      type: 'heading',
-      data: { text: 'Thermoregulation: Controlling Body Temperature', level: 2 },
+        "id": "h_12_1",
+        "type": "heading",
+        "data": {
+            "text": "Control of the breathing rate",
+            "level": 3
+        }
     },
     {
-      id: 'p-overview',
-      type: 'paragraph',
-      data: {
-        text: 'Body temperature is maintained by balancing heat production (metabolism, muscle contraction) and heat loss (radiation, conduction, convection, evaporation). Two strategies evolved: endothermy (internal heat production, mammals/birds) and ectothermy (environmental heat acquisition, reptiles/fish).',
-      },
+        "id": "p_12_2",
+        "type": "paragraph",
+        "data": {
+            "text": "Breathing rate is controlled by the\u00a0ventilation centres\u00a0(also called respiratory centres) in"
+        }
     },
     {
-      id: 'h-endotherms',
-      type: 'heading',
-      data: { text: 'Endothermy: Internal Heat Production', level: 3 },
+        "id": "h_12_3",
+        "type": "heading",
+        "data": {
+            "text": "the\u00a0medulla oblongata",
+            "level": 3
+        }
     },
     {
-      id: 'p-endotherms',
-      type: 'paragraph',
-      data: {
-        text: 'Endotherms (mammals, birds, some fish) generate heat internally via metabolic rate and maintain a constant body temperature (~37°C in humans) independent of environment. This allows activity in cold climates but requires high food intake to fuel metabolism.',
-      },
+        "id": "h_12_4",
+        "type": "heading",
+        "data": {
+            "text": "This is one of the three regions that make up the brainstem, it transfers nerve",
+            "level": 3
+        }
     },
     {
-      id: 'h-warming-mechanisms',
-      type: 'heading',
-      data: { text: 'Warming Mechanisms in Endotherms', level: 3 },
+        "id": "h_12_5",
+        "type": "heading",
+        "data": {
+            "text": "messages from the brain to the spinal cord",
+            "level": 3
+        }
     },
     {
-      id: 'list-warming',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Shivering thermogenesis: involuntary muscle contractions generate heat via ATP hydrolysis; rapid and effective but metabolically expensive',
-          'Non-shivering thermogenesis: brown adipose tissue (BAT) produces heat via uncoupling protein (UCP, thermogenin) in mitochondria',
-          'Vasoconstriction: blood vessels in skin narrow, reducing heat loss to environment',
-          'Piloerection: hair/fur stands up (vestigial in humans, functional in mammals) to trap air layer for insulation',
-        ],
-      },
+        "id": "h_12_6",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0inspiratory centre\u00a0controls the movement of air into the lungs (inhalation)",
+            "level": 3
+        }
     },
     {
-      id: 'h-cooling-mechanisms',
-      type: 'heading',
-      data: { text: 'Cooling Mechanisms in Endotherms', level: 3 },
+        "id": "p_12_7",
+        "type": "paragraph",
+        "data": {
+            "text": "The\u00a0expiratory centre\u00a0controls the movement of air out of the lungs (exhalation) The\u00a0inspiratory centre\u00a0in the medulla oblongata has the following effect on breathing:Worked Example An athlete runs a 10 km race, after which his heart rate was measured at 110 bpm and his cardiac output was determined to be 9,800 cm . Calculate the stroke volume after the race."
+        }
     },
     {
-      id: 'list-cooling',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Sweating: sweat gland secretion; evaporation of water causes heat loss (latent heat of vaporisation ~2.4 kJ/mL)',
-          'Vasodilation: blood vessels in skin dilate, increasing blood flow to surface for heat radiation',
-          'Panting: rapid breathing increases evaporative cooling from respiratory tract (in animals without sweat glands)',
-          'Behavioural: seeking shade, reducing activity, entering water',
-        ],
-      },
+        "id": "h_12_8",
+        "type": "heading",
+        "data": {
+            "text": "Answer:",
+            "level": 3
+        }
     },
     {
-      id: 'h-bat',
-      type: 'heading',
-      data: { text: 'Brown Adipose Tissue (BAT) and Thermogenin', level: 3 },
+        "id": "h_12_9",
+        "type": "heading",
+        "data": {
+            "text": "Stroke volume = cardiac output \u00f7 heart rate",
+            "level": 3
+        }
     },
     {
-      id: 'p-bat-overview',
-      type: 'paragraph',
-      data: {
-        text: 'Brown adipose tissue (BAT) is specialised fat tissue that produces heat rather than storing energy. BAT is rich in mitochondria and is abundant in newborns and small mammals. Heat production occurs via thermogenin (uncoupling protein, UCP1), which allows protons to leak across the inner mitochondrial membrane without driving ATP synthase.',
-      },
+        "id": "h_12_10",
+        "type": "heading",
+        "data": {
+            "text": "Stroke volume = 9,800 \u00f7 110",
+            "level": 3
+        }
     },
     {
-      id: 'p-bat-mechanism',
-      type: 'paragraph',
-      data: {
-        text: 'In normal mitochondria, protons pumped by the ETC create a proton gradient that drives ATP synthesis. In BAT, UCP1 provides a "short circuit," allowing protons to return to the matrix without producing ATP. The energy from the electrochemical gradient is released as heat instead. This process is called non-shivering thermogenesis and is particularly important in newborns who cannot shiver.',
-      },
+        "id": "h_12_11",
+        "type": "heading",
+        "data": {
+            "text": "Stroke volume =\u00a089.1 cm3",
+            "level": 3
+        }
     },
     {
-      id: 'callout-bat',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Brown vs White Adipose Tissue',
-        text: 'White adipose: stores energy as triglycerides; few mitochondria; pale colour. Brown adipose: generates heat; many mitochondria (with UCP1); dark colour due to high myoglobin. Newborns rely heavily on BAT for thermoregulation, especially in cold environments.',
-      },
+        "id": "h_12_12",
+        "type": "heading",
+        "data": {
+            "text": "3",
+            "level": 3
+        }
     },
     {
-      id: 'h-ectotherms',
-      type: 'heading',
-      data: { text: 'Ectothermy: Environmental Heat Dependence', level: 3 },
+        "id": "h_12_13",
+        "type": "heading",
+        "data": {
+            "text": "Examiner Tips and Tricks",
+            "level": 3
+        }
     },
     {
-      id: 'p-ectotherms',
-      type: 'paragraph',
-      data: {
-        text: 'Ectotherms (reptiles, amphibians, fish, invertebrates) cannot produce sufficient metabolic heat and depend on environmental heat to raise body temperature. Their metabolic rate varies with environmental temperature (Q10 effect). Ectothermy has low metabolic cost but limits activity in cold climates.',
-      },
+        "id": "p_12_14",
+        "type": "paragraph",
+        "data": {
+            "text": "1 dm is equal to 1000 cm . It can be useful to convert all the figures found in the first question into the\u00a0same units before starting your working out, that way you are less It sends\u00a0nerve impulses\u00a0along motor neurons to the\u00a0intercostalmuscles\u00a0of the ribs"
+        }
     },
     {
-      id: 'p-ecto-behaviour',
-      type: 'paragraph',
-      data: {
-        text: 'Ectotherms regulate temperature behaviourally: basking in sun to warm up, retreating to shade or burrows to cool down, entering water for temperature buffering. This is called behavioural thermoregulation and is the only thermoregulatory mechanism available to ectotherms.',
-      },
+        "id": "h_12_15",
+        "type": "heading",
+        "data": {
+            "text": "and\u00a0diaphragm muscles",
+            "level": 3
+        }
     },
     {
-      id: 'table-compare',
-      type: 'comparisonTable',
-      data: {
-        headers: ['Aspect', 'Endotherms (Mammals, Birds)', 'Ectotherms (Reptiles, Fish)'],
-        rows: [
-          ['Heat source', 'Metabolic (internal)', 'Environmental'],
-          ['Body temperature', 'Constant (~37°C)', 'Variable, matches environment'],
-          ['Metabolic cost', 'High (food demand)', 'Low'],
-          ['Activity in cold', 'Possible', 'Restricted'],
-          ['Regulatory mechanisms', 'Physiological + behavioural', 'Behavioural only'],
-          ['Examples', 'Humans, dogs, owls', 'Snakes, crocodiles, fish'],
-        ],
-        caption: 'Comparison of endothermy and ectothermy',
-      },
+        "id": "h_12_16",
+        "type": "heading",
+        "data": {
+            "text": "These muscles will\u00a0contract\u00a0and cause the\u00a0volume of the chest to increase",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Endotherms generate internal heat (shivering, BAT) and maintain constant temperature via feedback control. Ectotherms rely on environmental heat and behavioural regulation. Thermoregulation is a trade-off: endotherms pay high metabolic cost but gain independence; ectotherms have low cost but limited cold tolerance.',
-        apply: 'A human in a 5°C environment must maintain 37°C. Describe the physiological responses (shivering, vasoconstriction, BAT activation) and calculate the metabolic cost relative to resting rate.',
-        analyze: 'Why do reptiles (ectotherms) bask on rocks in the morning? Explain the bioenergetic logic.',
-        evaluate: 'Discuss the evolutionary trade-offs between endothermy and ectothermy. In what environments would each strategy be advantageous?',
-      },
-      terms: [],
+        "id": "p_12_17",
+        "type": "paragraph",
+        "data": {
+            "text": "This\u00a0lowers the air pressure in the lungs\u00a0to slightly below atmospheric pressure"
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Define endothermy and ectothermy', checked: false },
-          { text: 'Describe physiological warming mechanisms in endotherms', checked: false },
-          { text: 'Describe physiological cooling mechanisms in endotherms', checked: false },
-          { text: 'Explain brown adipose tissue and thermogenin function', checked: false },
-          { text: 'Compare metabolic costs and ecological niches of endo- and ectotherms', checked: false },
-        ],
-      },
+        "id": "h_12_18",
+        "type": "heading",
+        "data": {
+            "text": "An\u00a0impulse\u00a0is also sent to the\u00a0expiratory centre\u00a0to\u00a0inhibit\u00a0its action",
+            "level": 3
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Endotherms (mammals, birds): constant body temperature (~37°C) via metabolic heat (shivering, BAT/UCP1). Warming: shivering, vasoconstriction, piloerection; cooling: sweating, vasodilation. BAT: high mitochondria, UCP1 allows proton leak → heat. Ectotherms (reptiles, fish): variable temperature, behavioural regulation (basking, burrowing). Endothermy: high cost, cold-tolerant; ectothermy: low cost, temperature-dependent.',
-      },
+        "id": "p_12_19",
+        "type": "paragraph",
+        "data": {
+            "text": "Due to the difference in pressure between the lungs and outside air,\u00a0air will flow"
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-overview',
-        prompt: 'Define endothermy and ectothermy. What are the evolutionary trade-offs?',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'list-warming',
-        prompt: 'Describe four warming mechanisms in endotherms.',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'list-cooling',
-        prompt: 'Describe four cooling mechanisms in endotherms.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-bat-mechanism',
-        prompt: 'Explain how brown adipose tissue generates heat via UCP1 (thermogenin).',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-ecto-behaviour',
-        prompt: 'Describe how ectotherms regulate body temperature behaviourally.',
-      },
-    ],
-    summaryText:
-      'Endotherms: constant T (~37°C) via metabolism. Warming: shivering, vasoconstriction, piloerection, BAT. Cooling: sweating, vasodilation, panting. BAT: high mitochondria, UCP1 (thermogenin) allows proton leak → heat instead of ATP. Ectotherms: variable T, behavioural regulation (basking, burrowing). Trade-off: endothermy high cost, ectothermy low cost.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'UCP1 discovery',
-      detail: 'Thermogenin discovered in brown adipose tissue; recombinant studies confirmed proton leak mechanism',
-      year: '1970s–1980s',
-      source: 'Bioenergetics',
-      tags: ['thermogenesis'],
+        "id": "h_12_20",
+        "type": "heading",
+        "data": {
+            "text": "into\u00a0the lungs",
+            "level": 3
+        }
     },
-  ],
+    {
+        "id": "h_12_21",
+        "type": "heading",
+        "data": {
+            "text": "Stretch receptors\u00a0in the lungs are stimulated as they inflate with air",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_22",
+        "type": "paragraph",
+        "data": {
+            "text": "Nerve impulses are sent back to the medulla oblongata which will\u00a0inhibit the inspiratory"
+        }
+    },
+    {
+        "id": "h_12_23",
+        "type": "heading",
+        "data": {
+            "text": "centre",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_24",
+        "type": "paragraph",
+        "data": {
+            "text": "The\u00a0expiratory centre\u00a0is no longer inhibited and will bring about the following changes:"
+        }
+    },
+    {
+        "id": "h_12_25",
+        "type": "heading",
+        "data": {
+            "text": "It sends\u00a0nerve impulses\u00a0to the\u00a0intercostal\u00a0and\u00a0diaphragm muscles",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_26",
+        "type": "heading",
+        "data": {
+            "text": "These muscles will\u00a0relax\u00a0and cause the\u00a0volume of the chest to decrease",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_27",
+        "type": "heading",
+        "data": {
+            "text": "This\u00a0increases the air pressure\u00a0in the lungs to slightly above atmospheric",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_28",
+        "type": "heading",
+        "data": {
+            "text": "pressure",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_29",
+        "type": "heading",
+        "data": {
+            "text": "Due to the higher pressure in the lungs,\u00a0air will flow out\u00a0of the lungs",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_30",
+        "type": "paragraph",
+        "data": {
+            "text": "As the lungs\u00a0deflate, the\u00a0stretch receptors become inactive\u00a0which means that the"
+        }
+    },
+    {
+        "id": "h_12_31",
+        "type": "heading",
+        "data": {
+            "text": "The process of breathing in (inhalation)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_32",
+        "type": "heading",
+        "data": {
+            "text": "The process of breathing out (exhalation)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_33",
+        "type": "heading",
+        "data": {
+            "text": "Effect of exercise",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_34",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0extra carbon dioxide\u00a0that is produced\u00a0due to the increase in the rate of",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_35",
+        "type": "heading",
+        "data": {
+            "text": "respiration\u00a0during exercise dissolves in the blood to form\u00a0carbonic acid",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_36",
+        "type": "paragraph",
+        "data": {
+            "text": "This quickly\u00a0dissociates into hydrogen ions\u00a0(H) and hydrogencarbonate ions (HCO ) The increase in the concentration of H\u00a0ions will\u00a0decrease the pH of the blood\u00a0(it"
+        }
+    },
+    {
+        "id": "h_12_37",
+        "type": "heading",
+        "data": {
+            "text": "becomes more acidic)",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_38",
+        "type": "paragraph",
+        "data": {
+            "text": "The decrease in pH is\u00a0detected by receptors\u00a0sensitive to changes in the chemical"
+        }
+    },
+    {
+        "id": "h_12_39",
+        "type": "heading",
+        "data": {
+            "text": "composition of blood",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_40",
+        "type": "heading",
+        "data": {
+            "text": "These are called\u00a0chemoreceptors\u00a0and they are located in several places",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_41",
+        "type": "heading",
+        "data": {
+            "text": "In the ventilation centre of the\u00a0medulla oblongata",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_42",
+        "type": "paragraph",
+        "data": {
+            "text": "They are also present as clusters of cells in the aorta (aortic bodies) and the carotid"
+        }
+    },
+    {
+        "id": "h_12_43",
+        "type": "heading",
+        "data": {
+            "text": "arteries (carotid bodies)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_44",
+        "type": "heading",
+        "data": {
+            "text": "+3\u2212",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_45",
+        "type": "heading",
+        "data": {
+            "text": "Once they are stimulated a\u00a0nerve impulse\u00a0is sent to the\u00a0medulla oblongata",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_46",
+        "type": "paragraph",
+        "data": {
+            "text": "The medulla oblongata will then send\u00a0more frequent nerve impulses\u00a0to the intercostal"
+        }
+    },
+    {
+        "id": "h_12_47",
+        "type": "heading",
+        "data": {
+            "text": "and diaphragm muscles to increase the rate and strength of contractions",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_12_48",
+        "type": "heading",
+        "data": {
+            "text": "This\u00a0increases\u00a0the breathing rate and depth",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_49",
+        "type": "paragraph",
+        "data": {
+            "text": "This results in\u00a0more oxygen\u00a0entering the lungs (and bloodstream), while\u00a0more carbon"
+        }
+    },
+    {
+        "id": "h_12_50",
+        "type": "heading",
+        "data": {
+            "text": "dioxide\u00a0can be exhaled and thus be removed from the bloodstream",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_51",
+        "type": "paragraph",
+        "data": {
+            "text": "The\u00a0decrease in carbon dioxide\u00a0levels will result in the\u00a0blood pH returning back to"
+        }
+    },
+    {
+        "id": "h_12_52",
+        "type": "heading",
+        "data": {
+            "text": "normal, which leads to the breathing rate returning to normal",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_53",
+        "type": "paragraph",
+        "data": {
+            "text": "The volume of air that moves in and out of the lungs during a set time period (e.g. a"
+        }
+    },
+    {
+        "id": "h_12_54",
+        "type": "heading",
+        "data": {
+            "text": "minute) is known as the\u00a0ventilation rate",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_12_55",
+        "type": "paragraph",
+        "data": {
+            "text": "The ventilation rate\u00a0increases during exercise\u00a0due to the increase in breathing rate and"
+        }
+    },
+    {
+        "id": "h_12_56",
+        "type": "heading",
+        "data": {
+            "text": "depth",
+            "level": 3
+        }
+    }
+]
 };

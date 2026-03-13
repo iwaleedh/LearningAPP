@@ -1,0 +1,53 @@
+Core Practical 4: Investigating the Rate of Enzyme o
+Reactions Your notes
+
+Investigating the Rate of Enzyme
+Reactions
+
+Temperature
+
+=» Enzymes have a specific optimum temperature - the temperature at which they
+catalyse areaction at the maximum rate
+
+=» Lower temperatures either prevent reactions from proceeding or slow them down:
+=» Molecules move relatively slow
+
+=» Lower frequency of successful collisions between substrate molecules and active
+site of enzyme
+
+= Less frequent enzyme-substrate complex formation
+
+=» Substrate and enzyme collide withless energy, making it less likely for bonds to be
+formed or broken (stopping the reaction from occurring)
+
+=» Higher temperatures speed up reactions:
+=» Molecules move more quickly
+
+= Higher frequency successful collisions between substrate molecules and active
+site of enzyme
+
+=» More frequent enzyme-substrate complex formation
+
+=» Substrate and enzyme collide with more energy, making it more likely for bonds to
+be formed or broken (allowing the reaction to occur)
+
+=» However, as temperatures continue to increase, the rate at which an enzyme catalyses a
+reaction drops sharply, as the enzyme begins to denature:
+
+=» Bonds (eg. hydrogen bonds) holding the enzyme molecule in its precise shape start
+to break
+
+= This causes the tertiary structure of the protein (ie. the enzyme) to change
+
+= This permanently damages the active site, preventing the substrate from binding
+=» Denaturation has occurred if the substrate can no longer bind
+
+=» Very fewhuman enzymes can function at temperatures above 50°C
+
+= This is because humans maintain a body temperature of about 37°C, therefore
+even temperatures exceeding 40°C will cause the denaturation of enzymes
+
+=» High temperatures causes the hydrogen bonds between amino acids to break,
+changing the conformation of the enzyme
+
+4 SaveMyExams © 2026 Save My Exams, Ltd. | Get more and ace your exams at savemyexams.com 22

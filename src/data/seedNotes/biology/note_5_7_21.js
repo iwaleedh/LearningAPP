@@ -1,127 +1,646 @@
 export const note_biology_5_7_21 = {
-  "blocks": [
+  blocks: [
     {
-      "id": "obj-1",
-      "type": "objective",
-      "data": {
-        "text": "Core Practical 17: Investigate the effects of exercise on tidal volume, breathing rate, respiratory minute ventilation, and oxygen consumption using spirometer data."
-      }
+        "id": "obj_21",
+        "type": "objective",
+        "data": {
+            "text": "Investigate the effects of exercise on tidal volume, breathing rate, and oxygen consumption."
+        }
     },
     {
-      "id": "h-spirometer",
-      "type": "heading",
-      "data": {
-        "text": "Measuring Breathing with a Spirometer",
-        "level": 2
-      }
+        "id": "h_21_1",
+        "type": "heading",
+        "data": {
+            "text": "Core Practical 17: The Effects of Exercise",
+            "level": 3
+        }
     },
     {
-      "id": "p-spiro",
-      "type": "paragraph",
-      "data": {
-        "text": "A **spirometer** is an apparatus used to measure different aspects of lung volumes and breathing rates. The subject breathes in and out through the spirometer. A chamber of oxygen moves up and down as they breathe, drawing a trace on a rotating kymograph or a digital computer."
-      }
+        "id": "h_21_2",
+        "type": "heading",
+        "data": {
+            "text": "The Effects of Exercise",
+            "level": 3
+        }
     },
     {
-      "id": "p-sodalime",
-      "type": "paragraph",
-      "data": {
-        "text": "**Soda lime** is used within the set-up to absorb the carbon dioxide exhaled by the subject. This prevents the CO\u2082 concentration in the rebreathed air from becoming dangerously high."
-      }
+        "id": "h_21_3",
+        "type": "heading",
+        "data": {
+            "text": "Measuring breathing",
+            "level": 3
+        }
     },
     {
-      "id": "table-defs",
-      "type": "comparisonTable",
-      "data": {
-        "caption": "Key Respiratory Definitions",
-        "headers": [
-          "Term",
-          "Definition",
-          "How to calculate from trace"
-        ],
-        "rows": [
-          [
-            "**Breathing Rate**",
-            "Number of breaths taken in one minute.",
-            "Count the number of peaks (breaths) present in a 60-second window."
-          ],
-          [
-            "**Tidal Volume**",
-            "Volume of air breathed in/out during normal resting breathing.",
-            "Calculate the vertical distance (volume) between the peak and trough of a single resting breath."
-          ],
-          [
-            "**Respiratory Minute Ventilation**",
-            "Total volume of air breathed in/out in one minute.",
-            "Tidal Volume $\\times$ Breathing Rate."
-          ],
-          [
-            "**Oxygen Consumption**",
-            "Volume of oxygen used up by the subject per minute.",
-            "Measure the drop in the overall baseline of the trace over a minute (since $CO_2$ is absorbed, the volume loss is pure $O_2$ consumed)."
-          ]
-        ]
-      }
+        "id": "p_21_4",
+        "type": "paragraph",
+        "data": {
+            "text": "There are\u00a0four\u00a0main ways that breathing can be\u00a0scientifically measured. These include: Tidal volume\u00a0- this is the\u00a0volume of air that is breathed in or out\u00a0during\u00a0normal"
+        }
     },
     {
-      "id": "h-investigate",
-      "type": "heading",
-      "data": {
-        "text": "Investigating Exercise",
-        "level": 2
-      }
+        "id": "h_21_5",
+        "type": "heading",
+        "data": {
+            "text": "breathing\u00a0(at rest)",
+            "level": 3
+        }
     },
     {
-      "id": "list-method",
-      "type": "list",
-      "data": {
-        "style": "numbered",
-        "items": [
-          "A person at rest breathes into the spirometer for one minute. The resting trace is recorded.",
-          "The person is disconnected from the spirometer and exercises (e.g. on a treadmill) for a set time (e.g. 2 minutes).",
-          "Meanwhile, the spirometer chamber is refilled with pure oxygen.",
-          "Immediately after exercise stops, the person connects back to the spirometer and breathes into it for another minute.",
-          "The pre-exercise and post-exercise traces are compared: breathing rate and tidal volume will both be visibly higher on the post-exercise trace."
-        ]
-      }
+        "id": "p_21_6",
+        "type": "paragraph",
+        "data": {
+            "text": "Breathing rate\u00a0- this is the\u00a0number of breaths taken in one minute\u00a0(one breath ="
+        }
     },
     {
-      "id": "callout-trace",
-      "type": "callout",
-      "data": {
-        "style": "warning",
-        "title": "Analysing Oxygen Consumption",
-        "text": "Because soda lime absorbs the exhaled $CO_2$, the total volume of gas inside the spirometer steadily falls over time. This creates a downward-sloping trace. The gradient of this slope (Volume fallen $\\div$ Time) gives the rate of **oxygen consumption**."
-      }
+        "id": "h_21_7",
+        "type": "heading",
+        "data": {
+            "text": "taking air in and breathing it back out again)",
+            "level": 3
+        }
     },
     {
-      "id": "summary-cp17",
-      "type": "summary",
-      "data": {
-        "text": "A spirometer trace accurately reveals tidal volume (depth of a breath) and breathing rate (frequency of breaths). Multiplying these yields the respiratory minute ventilation. Exercise increases the metabolic demand for ATP, driving up oxygen consumption and requiring a greater minute ventilation to clear accumulating carbon dioxide."
-      }
+        "id": "h_21_8",
+        "type": "heading",
+        "data": {
+            "text": "Oxygen consumption\u00a0- this is the\u00a0volume of oxygen\u00a0used up by someone\u00a0in a given",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_9",
+        "type": "heading",
+        "data": {
+            "text": "time",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_10",
+        "type": "heading",
+        "data": {
+            "text": "Respiratory minute ventilation\u00a0- this is the\u00a0volumeof air\u00a0that can be",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_11",
+        "type": "heading",
+        "data": {
+            "text": "breathed\u00a0in\u00a0or\u00a0out\u00a0in a minute and can be calculated by means of the following",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_12",
+        "type": "heading",
+        "data": {
+            "text": "formula:",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_13",
+        "type": "paragraph",
+        "data": {
+            "text": "Respiratory minute ventilation = tidal volume x breathing rate\u00a0(breaths per minute)"
+        }
+    },
+    {
+        "id": "h_21_14",
+        "type": "heading",
+        "data": {
+            "text": "Spirometers",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_15",
+        "type": "heading",
+        "data": {
+            "text": "The breathing measurements described above can all be taken using a piece of",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_16",
+        "type": "heading",
+        "data": {
+            "text": "apparatus known as a\u00a0spirometer",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_17",
+        "type": "heading",
+        "data": {
+            "text": "The person (subject) being examined breathes in and out\u00a0through\u00a0the spirometer",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_18",
+        "type": "paragraph",
+        "data": {
+            "text": "Carbon dioxide\u00a0is\u00a0absorbed\u00a0from the\u00a0exhaled air\u00a0by soda lime in order to stop the concentration of carbon dioxide in the rebreathed air from getting too high, as this can"
+        }
+    },
+    {
+        "id": "h_21_19",
+        "type": "heading",
+        "data": {
+            "text": "cause respiratory distress",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_20",
+        "type": "paragraph",
+        "data": {
+            "text": "As the subject breathes through the spirometer, a\u00a0trace\u00a0is drawn on a rotating drum of"
+        }
+    },
+    {
+        "id": "h_21_21",
+        "type": "heading",
+        "data": {
+            "text": "paper or a\u00a0graph\u00a0is formed digitally, which can be viewed on a computer",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_22",
+        "type": "paragraph",
+        "data": {
+            "text": "From this trace, the subject's\u00a0respiratory minute ventilation,\u00a0tidal volume\u00a0and\u00a0breathing Spirometers are used to measure different aspects of breathing. There are different types"
+        }
+    },
+    {
+        "id": "h_21_23",
+        "type": "heading",
+        "data": {
+            "text": "of spirometers",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_24",
+        "type": "heading",
+        "data": {
+            "text": "Investigating the effects of exercise",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_25",
+        "type": "paragraph",
+        "data": {
+            "text": "Exercise can cause an increase in breathing rate and tidal volume, including an increase in oxygen consumption and ventilation rates."
+        }
+    },
+    {
+        "id": "h_21_26",
+        "type": "heading",
+        "data": {
+            "text": "Apparatus",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_27",
+        "type": "heading",
+        "data": {
+            "text": "Spirometer",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_28",
+        "type": "heading",
+        "data": {
+            "text": "Treadmill",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_29",
+        "type": "heading",
+        "data": {
+            "text": "Stopwatch",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_30",
+        "type": "heading",
+        "data": {
+            "text": "Method",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_31",
+        "type": "heading",
+        "data": {
+            "text": "1. A person at rest will breathe into the spirometer for one minute",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_32",
+        "type": "heading",
+        "data": {
+            "text": "2. Record the results",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_33",
+        "type": "paragraph",
+        "data": {
+            "text": "3. The person will then exercise for two minutes while the spirometer chamber is refilled"
+        }
+    },
+    {
+        "id": "h_21_34",
+        "type": "heading",
+        "data": {
+            "text": "with oxygen",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_35",
+        "type": "paragraph",
+        "data": {
+            "text": "4. After they stop exercising, they will immediately breathe into the spirometer for one"
+        }
+    },
+    {
+        "id": "h_21_36",
+        "type": "heading",
+        "data": {
+            "text": "minute",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_37",
+        "type": "heading",
+        "data": {
+            "text": "5. Record the results",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_38",
+        "type": "heading",
+        "data": {
+            "text": "6. Compare the recordings taken before and after exercise",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_39",
+        "type": "heading",
+        "data": {
+            "text": "Analysing data from a spirometer",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_40",
+        "type": "paragraph",
+        "data": {
+            "text": "The results from a spirometer (either in the form of a trace drawn on graph paper or a digital graph created by a computer) can be used to\u00a0calculate respiratory minute"
+        }
+    },
+    {
+        "id": "h_21_41",
+        "type": "heading",
+        "data": {
+            "text": "ventilation, tidal volume and breathing rate",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_42",
+        "type": "paragraph",
+        "data": {
+            "text": "A small amount of air, known as the\u00a0residual volume, is always retained in the lungs"
+        }
+    },
+    {
+        "id": "h_21_43",
+        "type": "heading",
+        "data": {
+            "text": "The following readings and calculations can be made:",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_44",
+        "type": "paragraph",
+        "data": {
+            "text": "To calculate the\u00a0breathing rate,\u00a0count the number of peaks on the trace in a minute Tidal volume\u00a0can be determined by calculating the average difference in the volume"
+        }
+    },
+    {
+        "id": "h_21_45",
+        "type": "heading",
+        "data": {
+            "text": "of gas between each peak and trough",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_46",
+        "type": "heading",
+        "data": {
+            "text": "Oxygen consumption\u00a0can also be calculated using a spirometer",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_47",
+        "type": "heading",
+        "data": {
+            "text": "Carbon dioxide is removed from the exhaled air, meaning that the total volume",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_48",
+        "type": "heading",
+        "data": {
+            "text": "of air available in the spirometer gradually\u00a0decreases, as oxygen is extracted",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_49",
+        "type": "heading",
+        "data": {
+            "text": "from it by the subject's breathing",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_50",
+        "type": "paragraph",
+        "data": {
+            "text": "The changes in the volume of air present in the lungs are shown here. Note the vital capacity; this is the maximum volume of air that can be breathed in or out in one breath"
+        }
+    },
+    {
+        "id": "h_21_51",
+        "type": "heading",
+        "data": {
+            "text": "Worked Example",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_52",
+        "type": "paragraph",
+        "data": {
+            "text": "From the spirometer data in the image above, calculate the breathing rate during the first minute and then calculate the breathing rate during the second minute."
+        }
+    },
+    {
+        "id": "h_21_53",
+        "type": "heading",
+        "data": {
+            "text": "Answer:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_54",
+        "type": "heading",
+        "data": {
+            "text": "Step 1: Count the number of breaths in the first 60 seconds",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_55",
+        "type": "paragraph",
+        "data": {
+            "text": "One breath is shown by the trace going up and then down, so there are 12 breaths in the first 60 seconds."
+        }
+    },
+    {
+        "id": "h_21_56",
+        "type": "heading",
+        "data": {
+            "text": "Step 2: Give appropriate units",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_57",
+        "type": "paragraph",
+        "data": {
+            "text": "Breathing rate should be given in breaths min \u207b \u00b9 (breaths per minute), so the breathing"
+        }
+    },
+    {
+        "id": "h_21_58",
+        "type": "heading",
+        "data": {
+            "text": "rate during the first minute",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_59",
+        "type": "heading",
+        "data": {
+            "text": "= 12 breaths min \u207b \u00b9",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_60",
+        "type": "heading",
+        "data": {
+            "text": "Step 3: Count the number of breaths in the second 60 seconds",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_61",
+        "type": "heading",
+        "data": {
+            "text": "There are 14 breaths in the second 60 seconds",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_62",
+        "type": "heading",
+        "data": {
+            "text": "Step 4:Give appropriate units",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_63",
+        "type": "heading",
+        "data": {
+            "text": "Worked Example",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_64",
+        "type": "paragraph",
+        "data": {
+            "text": "Calculate the tidal volume during rest and the peak tidal volume during exercise."
+        }
+    },
+    {
+        "id": "h_21_65",
+        "type": "heading",
+        "data": {
+            "text": "Answer:",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_66",
+        "type": "paragraph",
+        "data": {
+            "text": "Step 1: For the 'at rest' phase of the trace, measure the difference between the top"
+        }
+    },
+    {
+        "id": "h_21_67",
+        "type": "heading",
+        "data": {
+            "text": "and bottom of the trace in terms of the volume of air in the lungs",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_68",
+        "type": "heading",
+        "data": {
+            "text": "During rest, the tidal volume = 3 dm\u00b3 - 2.6 dm\u00b3",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_69",
+        "type": "heading",
+        "data": {
+            "text": "= 0.4 dm\u00b3",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_70",
+        "type": "paragraph",
+        "data": {
+            "text": "Step 2: At the peak tidal volume during exercise, measure the difference between"
+        }
+    },
+    {
+        "id": "h_21_71",
+        "type": "heading",
+        "data": {
+            "text": "the top and bottom of the trace in terms of the volume of air in the lungs",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_72",
+        "type": "paragraph",
+        "data": {
+            "text": "The peak tidal volume during exercise occurs right at the end of the exercise period"
+        }
+    },
+    {
+        "id": "h_21_73",
+        "type": "heading",
+        "data": {
+            "text": "(at around 100 seconds):",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_74",
+        "type": "heading",
+        "data": {
+            "text": "= 4.1 dm\u00b3 - 2.3 dm\u00b3",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_75",
+        "type": "heading",
+        "data": {
+            "text": "=\u00a01.8 dm\u00b3",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_76",
+        "type": "heading",
+        "data": {
+            "text": "Worked Example",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_21_77",
+        "type": "paragraph",
+        "data": {
+            "text": "Calculate the respiratory minute ventilation during the first minute."
+        }
+    },
+    {
+        "id": "h_21_78",
+        "type": "heading",
+        "data": {
+            "text": "Answer:",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_79",
+        "type": "heading",
+        "data": {
+            "text": "Step 1: Use the formula",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_80",
+        "type": "heading",
+        "data": {
+            "text": "Respiratory minute ventilation = tidal volume x breathing rate",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_81",
+        "type": "heading",
+        "data": {
+            "text": "Step 2: Substitute the values calculated from the first minute",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_21_82",
+        "type": "heading",
+        "data": {
+            "text": "Respiratory minute ventilation = 0.4 x 12",
+            "level": 3
+        }
     }
-  ],
-  "recall": {
-    "enabled": true,
-    "cues": [
-      {
-        "id": "c1",
-        "blockId": "p-sodalime",
-        "prompt": "Why is soda lime used in a spirometer?"
-      },
-      {
-        "id": "c2",
-        "blockId": "table-defs",
-        "prompt": "State the formula for respiratory minute ventilation."
-      },
-      {
-        "id": "c3",
-        "blockId": "callout-trace",
-        "prompt": "How is oxygen consumption calculated from a spirometer trace containing soda lime?"
-      }
-    ],
-    "summaryText": "Soda lime absorbs exhaled CO\u2082, making the overall loss in spirometer volume exactly equal to the oxygen consumed. Tidal volume multiplied by breathing rate gives the minute ventilation, which spikes markedly after exercise to restore blood pH and oxygenate tissues.",
-    "ready": true
-  }
+]
 };

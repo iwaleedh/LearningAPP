@@ -1,185 +1,518 @@
-/**
- * WBI15 — Topic 7.9: Sliding Filament Mechanism
- * Neuromuscular junction, Ca²⁺, troponin, power stroke, rigor mortis
- */
-
 export const note_biology_5_7_9 = {
   blocks: [
     {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand the sliding filament mechanism at the molecular level, including acetylcholine signalling at the neuromuscular junction, calcium-induced tropomyosin movement, cross-bridge cycling, and ATP\'s role.',
-      },
+        "id": "obj_9",
+        "type": "objective",
+        "data": {
+            "text": "Understand the sliding filament theory of muscle contraction including the roles of calcium, troponin, tropomyosin, and ATP."
+        }
     },
     {
-      id: 'h-nmj',
-      type: 'heading',
-      data: { text: 'The Neuromuscular Junction (NMJ)', level: 2 },
+        "id": "h_9_1",
+        "type": "heading",
+        "data": {
+            "text": "The Process of Skeletal Muscle Contraction",
+            "level": 3
+        }
     },
     {
-      id: 'p-nmj-overview',
-      type: 'paragraph',
-      data: {
-        text: 'The neuromuscular junction is the synapse between a motor neuron and a skeletal muscle fibre. When an action potential reaches the motor neuron terminal, voltage-gated Ca²⁺ channels open, Ca²⁺ enters, and acetylcholine (ACh) vesicles fuse with the presynaptic membrane, releasing ACh into the synaptic cleft.',
-      },
+        "id": "h_9_2",
+        "type": "heading",
+        "data": {
+            "text": "The Sliding Filament Theory",
+            "level": 3
+        }
     },
     {
-      id: 'p-ach-binding',
-      type: 'paragraph',
-      data: {
-        text: 'ACh diffuses across the synaptic cleft and binds to nicotinic acetylcholine receptors on the muscle fibre sarcolemma. These are ligand-gated ion channels; ACh binding opens them, allowing Na⁺ to enter. This depolarisation of the sarcolemma generates an end-plate potential (EPP). If the EPP reaches threshold, an action potential is triggered and propagates along the sarcolemma and down the T-tubules.',
-      },
+        "id": "h_9_3",
+        "type": "heading",
+        "data": {
+            "text": "Structure of thick & thin filaments in a myofibril",
+            "level": 3
+        }
     },
     {
-      id: 'h-calcium',
-      type: 'heading',
-      data: { text: 'Calcium Release and Troponin-Tropomyosin Interaction', level: 3 },
+        "id": "h_9_4",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0thick filaments\u00a0within a myofibril are made up of\u00a0myosin molecules",
+            "level": 3
+        }
     },
     {
-      id: 'p-calcium-sr',
-      type: 'paragraph',
-      data: {
-        text: 'The action potential travelling down the T-tubule activates ryanodine receptors (mechanical coupling) in the sarcoplasmic reticulum membrane, triggering Ca²⁺ release into the sarcoplasm. Calcium concentration rises from ~100 nM (rest) to ~10 μM (active).',
-      },
+        "id": "h_9_5",
+        "type": "heading",
+        "data": {
+            "text": "These are\u00a0fibrous protein molecules\u00a0with a\u00a0globular head",
+            "level": 3
+        }
     },
     {
-      id: 'p-troponin',
-      type: 'paragraph',
-      data: {
-        text: 'Ca²⁺ binds to troponin C (the regulatory subunit of the troponin complex on thin filaments). Troponin has three subunits: C (Ca²⁺-binding), I (inhibitory), and T (tropomyosin-binding). When Ca²⁺ binds to troponin C, it causes a conformational change in troponin, which pulls tropomyosin aside and exposes myosin-binding sites on actin.',
-      },
+        "id": "h_9_6",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0fibrous part\u00a0of the myosin molecule\u00a0anchors\u00a0the molecule into the thick",
+            "level": 3
+        }
     },
     {
-      id: 'callout-troponin',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Troponin: The Ca²⁺-Sensitive Switch',
-        text: 'Troponin C acts as a "switch" for muscle contraction. In the relaxed state (low Ca²⁺), troponin does not bind Ca²⁺, tropomyosin blocks actin, and no contraction occurs. When Ca²⁺ rises, troponin C binds Ca²⁺, tropomyosin moves, actin sites are exposed, and cross-bridge cycling begins.',
-      },
+        "id": "h_9_7",
+        "type": "heading",
+        "data": {
+            "text": "filament",
+            "level": 3
+        }
     },
     {
-      id: 'h-crossbridge',
-      type: 'heading',
-      data: { text: 'Cross-Bridge Cycling: The Power Stroke', level: 3 },
+        "id": "h_9_8",
+        "type": "heading",
+        "data": {
+            "text": "In the thick filament, many myosin molecules lie next to each other with",
+            "level": 3
+        }
     },
     {
-      id: 'list-cycle',
-      type: 'list',
-      data: {
-        style: 'numbered',
-        items: [
-          'Rigor state: Myosin head is bonded to actin (rigor bond), no nucleotide bound. This is the "stuck" state after contraction.',
-          'ATP binding: ATP binds to myosin head, breaking the rigor bond. Myosin detaches from actin.',
-          'ATP hydrolysis: Myosin ATPase hydrolyses ATP → ADP + Pi, re-energising the myosin head. The head returns to its cocked position.',
-          'Reattachment: The re-energised myosin head binds to the exposed myosin-binding site on actin (weak binding).',
-          'Power stroke: Pi is released, causing a conformational change in myosin that pulls the actin filament towards the M line (force generation). ADP is released during or after the power stroke.',
-          'Return to rigor: Myosin is now in a rigor bond again, ready for another ATP to trigger the cycle.',
-        ],
-      },
+        "id": "h_9_9",
+        "type": "heading",
+        "data": {
+            "text": "their\u00a0globular heads all pointing away from the M line",
+            "level": 3
+        }
     },
     {
-      id: 'p-ratchet',
-      type: 'paragraph',
-      data: {
-        text: 'This cycle repeats dozens of times per second, creating a ratchet-like mechanism: each ATP hydrolysis provides energy for one power stroke (~5 nm movement of actin). The sarcomere shortens progressively as many myosin cross-bridges fire in coordination.',
-      },
+        "id": "h_9_10",
+        "type": "heading",
+        "data": {
+            "text": "The\u00a0thin filaments\u00a0within a myofibril are made up of\u00a0actin molecules",
+            "level": 3
+        }
     },
     {
-      id: 'h-rigor',
-      type: 'heading',
-      data: { text: 'Rigor Mortis: The Ultimate Power Stroke', level: 3 },
+        "id": "h_9_11",
+        "type": "heading",
+        "data": {
+            "text": "These are\u00a0globular protein molecules",
+            "level": 3
+        }
     },
     {
-      id: 'p-rigor',
-      type: 'paragraph',
-      data: {
-        text: 'Rigor mortis (Latin: "stiffness of death") is the post-mortem rigidity that occurs after death. When a person dies, aerobic respiration stops immediately, so ATP production ceases. Existing ATP is rapidly depleted. Without ATP, myosin heads cannot detach from actin (ATP is required for detachment; see step 2 above). All muscles become locked in a maximal contraction (rigor state). The body becomes rigid for 12–48 hours until muscle proteins begin to degrade and rigor resolves.',
-      },
+        "id": "h_9_12",
+        "type": "heading",
+        "data": {
+            "text": "Many actin molecules link together to form a\u00a0chain",
+            "level": 3
+        }
     },
     {
-      id: 'callout-rigor',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Why Rigor Mortis Requires ATP for Relaxation',
-        text: 'ATP binds to myosin to break the rigor bond (step 2). Without ATP, myosin cannot release from actin, and contraction is irreversible. This demonstrates that muscle relaxation is an active process requiring energy, not a passive process. Rigor mortis proves that the living state requires continuous ATP production.',
-      },
+        "id": "h_9_13",
+        "type": "heading",
+        "data": {
+            "text": "Two\u00a0actin chains\u00a0twist\u00a0together to form one\u00a0thin filament",
+            "level": 3
+        }
     },
     {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Sliding filament mechanism: (1) ACh released at NMJ → action potential on sarcolemma; (2) AP travels down T-tubule → Ca²⁺ released from SR; (3) Ca²⁺ binds troponin → tropomyosin moves → actin sites exposed; (4) cross-bridge cycling (ATP-dependent) pulls actin towards M line; (5) relaxation when Ca²⁺ removed → troponin releases Ca²⁺ → tropomyosin blocks actin.',
-        apply: 'A single myosin head can generate a power stroke of ~5 nm. A sarcomere is ~2.5 μm. How many myosin heads must fire (in sequence across the population) to shorten a sarcomere by 50%? (Answer: ~250 heads)',
-        analyze: 'Compare the roles of ATP in muscle contraction (energising the power stroke) versus relaxation (breaking rigor bonds). Why is ATP essential for both processes?',
-        evaluate: 'Rigor mortis proves that muscle contraction requires ATP. What does this tell us about the evolutionary priorities of muscle tissue? Why not make contraction irreversible to save ATP?',
-      },
-      terms: [],
+        "id": "h_9_14",
+        "type": "heading",
+        "data": {
+            "text": "A\u00a0fibrous\u00a0protein known as\u00a0tropomyosin\u00a0is twisted around the two actin chains",
+            "level": 3
+        }
     },
     {
-      id: 'checklist',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Describe ACh release at the neuromuscular junction and its effect', checked: false },
-          { text: 'Explain how Ca²⁺ causes tropomyosin to move and expose actin sites', checked: false },
-          { text: 'Describe the six steps of cross-bridge cycling', checked: false },
-          { text: 'Explain the roles of ATP in detachment and re-energisation', checked: false },
-          { text: 'Define rigor mortis and explain why it occurs', checked: false },
-        ],
-      },
+        "id": "p_9_15",
+        "type": "paragraph",
+        "data": {
+            "text": "Another protein known as\u00a0troponin\u00a0is attached to the actin chains at regular intervals"
+        }
     },
     {
-      id: 'summary',
-      type: 'summary',
-      data: {
-        text: 'Sliding filament mechanism: ACh at NMJ → depolarisation → action potential → Ca²⁺ release from SR. Ca²⁺ binds troponin → tropomyosin moves → actin sites exposed. Cross-bridge cycling: myosin head hydrolyses ATP, re-energises, binds actin, power stroke (~5 nm), repeats. ATP required for both force generation and relaxation (detachment). Rigor mortis: after death, ATP depleted → myosin cannot detach → permanent contraction.',
-      },
+        "id": "h_9_16",
+        "type": "heading",
+        "data": {
+            "text": "How muscles contract - the sliding filament theory",
+            "level": 3
+        }
     },
-  ],
-  recall: {
-    enabled: true,
-    cues: [
-      {
-        id: 'cue-1',
-        blockId: 'p-nmj-overview',
-        prompt: 'Describe the events at the neuromuscular junction from motor neuron AP to muscle fibre depolarisation.',
-      },
-      {
-        id: 'cue-2',
-        blockId: 'p-troponin',
-        prompt: 'Explain how Ca²⁺ causes tropomyosin to move and expose myosin-binding sites on actin.',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'list-cycle',
-        prompt: 'Describe the six steps of cross-bridge cycling in order.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-ratchet',
-        prompt: 'What is the power stroke and how much does it move the actin filament?',
-      },
-      {
-        id: 'cue-5',
-        blockId: 'p-rigor',
-        prompt: 'What is rigor mortis and why does it occur? Why is ATP essential for relaxation?',
-      },
-    ],
-    summaryText:
-      'NMJ: ACh released → acetylcholine receptors open → Na⁺ enters → depolarisation → AP down T-tubule → Ca²⁺ released from SR. Ca²⁺ binds troponin C → troponin pulls tropomyosin aside → actin sites exposed. Cross-bridge cycling: (1) ATP binds, myosin detaches (rigor broken); (2) ATP hydrolysis re-energises; (3) reattachment; (4) power stroke (~5 nm); (5) repeat. Rigor mortis: ATP depleted → myosin stuck → irreversible contraction.',
-    ready: false,
-  },
-  evidence: [
     {
-      id: 'ev-1',
-      title: 'Structural basis of troponin regulation',
-      detail: 'X-ray crystallography revealed conformational changes in troponin upon Ca²⁺ binding',
-      year: '1990s',
-      source: 'Structural biology',
-      tags: ['structure'],
+        "id": "h_9_17",
+        "type": "heading",
+        "data": {
+            "text": "Muscles cause movement by\u00a0contracting",
+            "level": 3
+        }
     },
-  ],
+    {
+        "id": "p_9_18",
+        "type": "paragraph",
+        "data": {
+            "text": "During muscle contraction,\u00a0sarcomeres\u00a0within myofibrils\u00a0shorten\u00a0as the\u00a0Z discs are"
+        }
+    },
+    {
+        "id": "h_9_19",
+        "type": "heading",
+        "data": {
+            "text": "pulled closer together",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_20",
+        "type": "paragraph",
+        "data": {
+            "text": "It is\u00a0not\u00a0the filaments that contract as the myosin and actin molecules remain the\u00a0same"
+        }
+    },
+    {
+        "id": "h_9_21",
+        "type": "heading",
+        "data": {
+            "text": "length",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_22",
+        "type": "heading",
+        "data": {
+            "text": "Myosin and actin filaments\u00a0slide over one another",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_23",
+        "type": "paragraph",
+        "data": {
+            "text": "This is known as the\u00a0sliding filament theory of muscle contraction\u00a0and occurs via the"
+        }
+    },
+    {
+        "id": "h_9_24",
+        "type": "heading",
+        "data": {
+            "text": "following process:",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_25",
+        "type": "paragraph",
+        "data": {
+            "text": "An\u00a0action potential arrives\u00a0at the\u00a0neuromuscular junction\u00a0(a specialised synapse"
+        }
+    },
+    {
+        "id": "h_9_26",
+        "type": "heading",
+        "data": {
+            "text": "between a motor neuron nerve terminal and its muscle fibre)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_27",
+        "type": "heading",
+        "data": {
+            "text": "Calcium ions\u00a0are\u00a0released\u00a0from the\u00a0sarcoplasmic reticulum\u00a0(SR)",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_28",
+        "type": "heading",
+        "data": {
+            "text": "Calcium ions\u00a0bind to troponin molecules, stimulating them to\u00a0change shape",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_29",
+        "type": "heading",
+        "data": {
+            "text": "This causes\u00a0troponin\u00a0and\u00a0tropomyosin\u00a0proteins to\u00a0change position\u00a0on the\u00a0actin",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_30",
+        "type": "heading",
+        "data": {
+            "text": "(thin) filaments",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_31",
+        "type": "paragraph",
+        "data": {
+            "text": "The\u00a0globular heads of the myosin molecules bind\u00a0with these sites, forming\u00a0cross-"
+        }
+    },
+    {
+        "id": "h_9_32",
+        "type": "heading",
+        "data": {
+            "text": "bridges\u00a0between the two types of filaments",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_33",
+        "type": "heading",
+        "data": {
+            "text": "Myosin heads bend,\u00a0pulling the actin filaments towards the centre of the",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_34",
+        "type": "heading",
+        "data": {
+            "text": "sarcomere\u00a0and causing the muscle to contract a very small distance; this",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_35",
+        "type": "heading",
+        "data": {
+            "text": "bending of the myosin heads is known as the power stroke",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_36",
+        "type": "heading",
+        "data": {
+            "text": "ATP plays an important role in this process",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_37",
+        "type": "heading",
+        "data": {
+            "text": "The binding of ATP to\u00a0the myosin heads produces a change in shape of the",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_38",
+        "type": "heading",
+        "data": {
+            "text": "myosin heads that allows them to\u00a0detach\u00a0from the actin filaments",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_39",
+        "type": "heading",
+        "data": {
+            "text": "The enzyme\u00a0ATPase\u00a0hydrolyses ATP into ADP and inorganic phosphate which",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_40",
+        "type": "heading",
+        "data": {
+            "text": "causes the myosin heads to move back to their\u00a0original positions,\u00a0this is known",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_41",
+        "type": "heading",
+        "data": {
+            "text": "as the\u00a0recovery stroke",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_42",
+        "type": "heading",
+        "data": {
+            "text": "The myosin heads are then able to bind to\u00a0new binding sites\u00a0on the actin",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_43",
+        "type": "heading",
+        "data": {
+            "text": "filaments,\u00a0closer to the Z disc",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_44",
+        "type": "heading",
+        "data": {
+            "text": "The binding of the myosin heads to their new binding site causes the release of",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_45",
+        "type": "heading",
+        "data": {
+            "text": "ADP and phosphate and results in a new power stroke",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_46",
+        "type": "paragraph",
+        "data": {
+            "text": "The myosin heads move again, pulling the actin filaments\u00a0even closer to the centre"
+        }
+    },
+    {
+        "id": "h_9_47",
+        "type": "heading",
+        "data": {
+            "text": "of the sarcomere, causing the sarcomere to\u00a0shorten\u00a0once more and pulling the Z",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_48",
+        "type": "heading",
+        "data": {
+            "text": "discs closer together",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_49",
+        "type": "heading",
+        "data": {
+            "text": "ATP binds to the myosin heads once more in order for them to\u00a0detach\u00a0again",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_50",
+        "type": "paragraph",
+        "data": {
+            "text": "As long as troponin and tropomyosin are not blocking the myosin-binding sites and"
+        }
+    },
+    {
+        "id": "h_9_51",
+        "type": "heading",
+        "data": {
+            "text": "the muscle has a supply of ATP, this process\u00a0repeats\u00a0until the muscle is\u00a0fully",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_52",
+        "type": "heading",
+        "data": {
+            "text": "contracted",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_53",
+        "type": "heading",
+        "data": {
+            "text": "The sliding filament theory of muscle contraction",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_54",
+        "type": "paragraph",
+        "data": {
+            "text": "Once muscle stimulation stops,\u00a0calcium ions leave\u00a0their binding sites on troponin"
+        }
+    },
+    {
+        "id": "h_9_55",
+        "type": "heading",
+        "data": {
+            "text": "molecules",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_56",
+        "type": "heading",
+        "data": {
+            "text": "They are\u00a0actively transported\u00a0back to the SR",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_57",
+        "type": "paragraph",
+        "data": {
+            "text": "Without calcium ions bound to them, the\u00a0troponin molecules return\u00a0to their original"
+        }
+    },
+    {
+        "id": "h_9_58",
+        "type": "heading",
+        "data": {
+            "text": "shape",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_59",
+        "type": "heading",
+        "data": {
+            "text": "This pulls the\u00a0tropomyosin\u00a0molecules in a position that\u00a0blocks the actin-myosin",
+            "level": 3
+        }
+    },
+    {
+        "id": "h_9_60",
+        "type": "heading",
+        "data": {
+            "text": "binding sites",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_61",
+        "type": "paragraph",
+        "data": {
+            "text": "Since\u00a0no cross bridges\u00a0can form between actin and myosin,\u00a0no muscle contraction\u00a0can"
+        }
+    },
+    {
+        "id": "h_9_62",
+        "type": "heading",
+        "data": {
+            "text": "occur",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_63",
+        "type": "paragraph",
+        "data": {
+            "text": "The\u00a0sarcomere will lengthen\u00a0again as actin filaments slide back to their relaxed position"
+        }
+    },
+    {
+        "id": "h_9_64",
+        "type": "heading",
+        "data": {
+            "text": "Examiner Tips and Tricks",
+            "level": 3
+        }
+    },
+    {
+        "id": "p_9_65",
+        "type": "paragraph",
+        "data": {
+            "text": "There is a lot to remember here so take some time to go through it and ensure you understand the order of events. Because muscles require a source of ATP for myosin heads to detach (and the muscle to stop contracting) this explains rigor mortis (stiffening of the joints and muscles of a body a few hours after death) as there is no ATP after death to detach the myosin"
+        }
+    }
+]
 };
