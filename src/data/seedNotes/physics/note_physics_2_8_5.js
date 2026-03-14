@@ -13,6 +13,14 @@ export const note_physics_2_8_5 = {
     { id: 'para-10', type: 'paragraph', data: { text: "R = resistance of the circuit (the ‘load resistor') r = internal resistance ε = e.m.f." } },
     { id: 'para-11', type: 'paragraph', data: { text: "V = 'lost volts' V= voltage across the load (sometimes also called V, the terminal voltage)r R T Examiner Tips and Tricks" } },
 
+      {
+      "id": "svg-ldr-graph",
+      "type": "svg",
+      "data": {
+        "caption": "Resistance against Light Intensity for an LDR",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"><path d=\"M50 250 L50 50 M50 250 L350 250\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\"/><text x=\"220\" y=\"280\" font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\">Light Intensity (Lux)</text><text x=\"30\" y=\"150\" font-family=\"Arial\" font-size=\"18\" fill=\"#1e293b\" transform=\"rotate(-90 30,150)\">Resistance (\u03a9)</text><path d=\"M70 60 Q 100 220 320 230\" fill=\"none\" stroke=\"#eab308\" stroke-width=\"4\"/><rect x=\"200\" y=\"50\" width=\"160\" height=\"90\" rx=\"8\" fill=\"#fdfde8\" stroke=\"#fef08a\" stroke-width=\"2\"/><text x=\"280\" y=\"75\" font-family=\"Arial\" font-size=\"14\" fill=\"#ca8a04\" text-anchor=\"middle\">LDR (Light Dependent Resistor)</text><text x=\"280\" y=\"95\" font-family=\"Arial\" font-size=\"12\" fill=\"#a16207\" text-anchor=\"middle\">Dark = High R (M\u03a9)</text><text x=\"280\" y=\"115\" font-family=\"Arial\" font-size=\"12\" fill=\"#854d0e\" text-anchor=\"middle\">Light = Low R (\u03a9)</text></svg>"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Resistance & Illumination' }], summaryText: '', ready: true },
   evidence: [],
