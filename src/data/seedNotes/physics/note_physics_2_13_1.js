@@ -13,6 +13,22 @@ export const note_physics_2_13_1 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Snell's law relates the angle of incidence to the angle of refraction, it is given by: n sin θ = n sin θ Where: n = the refractive index of material 1" } },
     { id: 'para-11', type: 'paragraph', data: { text: "n = the refractive index of material 2 θ = the angle of incidence of the ray in material 1 (°) θ = the angle of refraction of the ray in material 2 (°) –1" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <line x1="50" y1="100" x2="60" y2="100" stroke="#a78bfa" stroke-width="20"/>
+  <line x1="70" y1="100" x2="100" y2="100" stroke="#a78bfa" stroke-width="20"/>
+  <line x1="120" y1="100" x2="180" y2="100" stroke="#a78bfa" stroke-width="20"/>
+  <line x1="210" y1="100" x2="240" y2="100" stroke="#a78bfa" stroke-width="20"/>
+  <line x1="260" y1="100" x2="270" y2="100" stroke="#a78bfa" stroke-width="20"/>
+  <text x="200" y="160" fill="#f8fafc" font-size="16" text-anchor="middle">Longitudinal Wave (Compressions)</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Refraction & Refractive Index' }], summaryText: '', ready: true },
   evidence: [],

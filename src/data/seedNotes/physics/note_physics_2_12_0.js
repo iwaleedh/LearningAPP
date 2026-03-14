@@ -11,6 +11,20 @@ export const note_physics_2_12_0 = {
     { id: 'para-8', type: 'paragraph', data: { text: "Monochromatic light consists of light waves of a single frequency Laser light is an example of a coherent light source Filament lamps produce incoherent light waves Examiner Tips and Tricks" } },
     { id: 'para-9', type: 'paragraph', data: { text: "It can sometimes be tricky to identify whether constructive or destructive interference is taking place. If two waves meet at the same point on each wave e.g." } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <rect x="150" y="50" width="100" height="100" fill="#f43f5e" rx="10"/>
+  <path d="M120 100 L140 100" stroke="#f8fafc" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M280 100 L260 100" stroke="#f8fafc" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="200" y="180" fill="#f8fafc" font-size="16" text-anchor="middle">Compressive Stress</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Interference & Superposition of Waves' }], summaryText: '', ready: true },
   evidence: [],

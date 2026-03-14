@@ -13,6 +13,20 @@ export const note_physics_2_11_5 = {
     { id: 'para-10', type: 'paragraph', data: { text: "A = 0.1 m (ii) Calculate the frequency of the wave Step 1: Identify the period T of the wave on the graph The period is defined as the time taken for one complete oscillation to occur" } },
     { id: 'para-11', type: 'paragraph', data: { text: "The period must be converted from milliseconds (ms) into seconds (s) T = 1 × 10  s Step 2: Write down the relationship between the frequency f and the period T f = 1" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <text x="200" y="60" fill="#f8fafc" font-size="24" text-anchor="middle" font-style="italic">F = 6πηrv</text>
+  <rect x="50" y="80" width="300" height="80" fill="#334155" rx="8"/>
+  <text x="200" y="115" fill="#a7f3d0" font-size="16" text-anchor="middle">Stokes' Law</text>
+  <text x="200" y="140" fill="#cbd5e1" font-size="14" text-anchor="middle">Viscous drag on a small sphere</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 6: Investigating the Speed of Sound' }], summaryText: '', ready: true },
   evidence: [],

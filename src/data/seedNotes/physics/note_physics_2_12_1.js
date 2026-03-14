@@ -13,6 +13,22 @@ export const note_physics_2_12_1 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Hence: Destructive interference occurs at point P Constructive interference occurs at point P 2" } },
     { id: 'para-11', type: 'paragraph', data: { text: "1 1 1 2 1 1 2" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <line x1="50" y1="160" x2="350" y2="160" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="50" y1="40" x2="50" y2="160" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M50 160 L200 60 Q 250 50 350 100" fill="none" stroke="#a78bfa" stroke-width="4"/>
+  <text x="200" y="40" fill="#f8fafc" font-size="18" text-anchor="middle" font-weight="bold">Force-Extension Graph</text>
+  <circle cx="200" cy="60" r="5" fill="#facc15"/>
+  <text x="200" y="80" fill="#facc15" font-size="12" text-anchor="middle">Limit of Proportionality</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Phase & Path Difference' }], summaryText: '', ready: true },
   evidence: [],

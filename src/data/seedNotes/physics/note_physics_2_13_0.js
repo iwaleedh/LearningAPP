@@ -13,6 +13,19 @@ export const note_physics_2_13_0 = {
     { id: 'para-10', type: 'paragraph', data: { text: "The intensity of wave Q is I. What is the intensity of wave P? Answer: 0 The key concept with intensity is that it has an inverse square relationship with" } },
     { id: 'para-11', type: 'paragraph', data: { text: "distance (not a linear one). This means the energy of a wave decreases very rapidly" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <path d="M50 100 Q 100 20 150 100 T 250 100 T 350 100" fill="none" stroke="#22d3ee" stroke-width="4"/>
+  <line x1="50" y1="100" x2="350" y2="100" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5"/>
+  <text x="200" y="180" fill="#f8fafc" font-size="16" text-anchor="middle">Transverse Wave</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Equation for the Intensity of Radiation' }], summaryText: '', ready: true },
   evidence: [],

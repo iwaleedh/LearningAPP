@@ -13,6 +13,19 @@ export const note_physics_2_13_2 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Therefore, the angle of incidence (and reflection) is 90° – 25° = 65° Step 2: Draw the refracted angle at the glass-air boundary At the glass-air boundary, the light ray refracts away from the normal Due to the reflection, the light rays are symmetrical to the other side" } },
     { id: 'para-11', type: 'paragraph', data: { text: "b) Calculate the critical angle for the ray at the glass-liquid boundary: Step 1: Recall Snell's Law and rearrange to make critical angle the subject n sin θ = n sin θ sin ( )C =n2" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <path d="M50 100 Q 150 20 250 100 T 450 100" fill="none" stroke="#fdba74" stroke-width="3"/>
+  <path d="M50 100 Q 150 180 250 100 T 450 100" fill="none" stroke="#2dd4bf" stroke-width="3"/>
+  <text x="200" y="40" fill="#f8fafc" font-size="16" text-anchor="middle">Superposition &amp; Interference</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Critical Angle' }], summaryText: '', ready: true },
   evidence: [],

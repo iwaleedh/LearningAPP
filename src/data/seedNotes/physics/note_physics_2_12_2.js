@@ -13,6 +13,20 @@ export const note_physics_2_12_2 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Stationary wave in an air column In order to produce a stationary wave, there must be a minima (node) at one end and a maxima (antinode) at the end with the loudspeaker Nodes and Antinodes" } },
     { id: 'para-11', type: 'paragraph', data: { text: "A stationary wave is made up nodes and antinodes Nodes are where there is no vibration Antinodes are where the vibrations are at their maximum amplitude The nodes and antinodes do not move along the string. Nodes are fixed and antinodes" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <path d="M50 20 L350 20" stroke="#94a3b8" stroke-width="10"/>
+  <path d="M200 25 L200 120" stroke="#818cf8" stroke-width="8" stroke-dasharray="10,5"/>
+  <rect x="180" y="120" width="40" height="40" fill="#e879f9" rx="4"/>
+  <text x="200" y="180" fill="#f8fafc" font-size="16" text-anchor="middle">Hooke's Law: F = kΔx</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Stationary Waves' }], summaryText: '', ready: true },
   evidence: [],

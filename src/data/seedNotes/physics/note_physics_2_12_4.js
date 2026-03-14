@@ -13,6 +13,20 @@ export const note_physics_2_12_4 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Phase & Path Difference Phase & Path Difference Waves are said to be coherent if they have: The same frequency" } },
     { id: 'para-11', type: 'paragraph', data: { text: "A constant phase difference Phase Difference Two points on a wave, or on different waves, are in phase when they are the same point in their wave cycle" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <path d="M50 160 L150 50 Q 200 20 350 140" fill="none" stroke="#fb7185" stroke-width="4"/>
+  <text x="200" y="40" fill="#f8fafc" font-size="18" text-anchor="middle">Stress-Strain Curve</text>
+  <circle cx="150" cy="50" r="5" fill="#4ade80"/>
+  <text x="140" y="70" fill="#4ade80" font-size="12">Yield Point</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 7: Investigating Stationary Waves' }], summaryText: '', ready: true },
   evidence: [],

@@ -13,6 +13,19 @@ export const note_physics_2_13_12 = {
     { id: 'para-10', type: 'paragraph', data: { text: "The intensity of wave Q is I. What is the intensity of wave P? Answer: 0 The key concept with intensity is that it has an inverse square relationship with" } },
     { id: 'para-11', type: 'paragraph', data: { text: "distance (not a linear one). This means the energy of a wave decreases very rapidly Refraction & Refractive Index Refraction & Refractive Index Refraction occurs when light passes a boundary between two different transparent" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <rect x="80" y="40" width="240" height="120" fill="#1e293b" rx="8" stroke="#f472b6" stroke-width="2"/>
+  <text x="200" y="90" fill="#f8fafc" font-size="18" text-anchor="middle">Power of a Lens</text>
+  <text x="200" y="120" fill="#fbbf24" font-size="20" text-anchor="middle" font-weight="bold">P = 1 / f</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Plane Polarisation' }], summaryText: '', ready: true },
   evidence: [],

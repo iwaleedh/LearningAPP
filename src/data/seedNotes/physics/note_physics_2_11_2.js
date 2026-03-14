@@ -11,6 +11,20 @@ export const note_physics_2_11_2 = {
     { id: 'para-8', type: 'paragraph', data: { text: "Be careful with graphs of waves and don't assume a sinusoidal-shaped graph represents a transverse wave. Longitudinal waves can also look sinusoidal when plotted on a graph - make sure you read the question and look for whether the wave travels parallel (longitudinal) or perpendicular (transverse) to the direction of travel to" } },
     { id: 'para-9', type: 'paragraph', data: { text: "Transverse Waves" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <rect x="100" y="50" width="200" height="100" fill="#334155" rx="8"/>
+  <line x1="100" y1="50" x2="300" y2="50" stroke="#fbbf24" stroke-width="6"/>
+  <line x1="100" y1="150" x2="300" y2="150" stroke="#f87171" stroke-width="6"/>
+  <text x="200" y="105" fill="#f8fafc" font-size="18" text-anchor="middle">Viscosity &amp; Fluid Layers</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Longitudinal Waves' }], summaryText: '', ready: true },
   evidence: [],

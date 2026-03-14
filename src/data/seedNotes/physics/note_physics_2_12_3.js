@@ -13,6 +13,20 @@ export const note_physics_2_12_3 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Mass, m = 3.2 g = 3.2 × 10  kg Length of string, L = 90 cm = 0.90 m Mass per unit length, μ = m L=3 .2 ×10−3" } },
     { id: 'para-11', type: 'paragraph', data: { text: "0 .9 = 3.56 × 10  kg m Step 2: Write the equation for speed on a string and calculate v = f λ = f × 2LANDf = 1 2LT" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <rect x="50" y="50" width="300" height="100" fill="#1e293b" rx="8" stroke="#38bdf8" stroke-width="2"/>
+  <text x="200" y="80" fill="#f8fafc" font-size="16" text-anchor="middle">Stress (σ) = F / A</text>
+  <text x="200" y="110" fill="#f8fafc" font-size="16" text-anchor="middle">Strain (ε) = Δx / x</text>
+  <text x="200" y="140" fill="#fbbf24" font-size="18" text-anchor="middle" font-weight="bold">Young Modulus (E) = σ / ε</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Wave Speed on a Stretched String' }], summaryText: '', ready: true },
   evidence: [],

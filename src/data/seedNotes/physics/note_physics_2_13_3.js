@@ -8,6 +8,19 @@ export const note_physics_2_13_3 = {
     { id: 'para-5', type: 'paragraph', data: { text: "1 1 2 Examiner Tips and Tricks If asked to name the phenomena make sure you give the whole name - Total Internal" } },
     { id: 'para-6', type: 'paragraph', data: { text: "Reflection. Remember: Total Internal Reflection occurs when going from a more dense to a less dense material and ALL of the light is reflected. If asked to explain what is meant by the critical angle, you can draw the diagram above (showing the" } },
 
+  
+    {
+      id: "svg-diagram-auto",
+      type: "svg",
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
+  <rect x="50" y="50" width="300" height="100" fill="#334155" rx="8"/>
+  <text x="200" y="90" fill="#f8fafc" font-size="20" text-anchor="middle" font-style="italic">v = fλ</text>
+  <text x="200" y="130" fill="#94a3b8" font-size="14" text-anchor="middle">Wave Equation</text>
+</svg>`,
+        caption: "Physics Diagram"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Total Internal Reflection' }], summaryText: '', ready: true },
   evidence: [],
