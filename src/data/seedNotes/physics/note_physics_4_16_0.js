@@ -13,6 +13,46 @@ export const note_physics_4_16_0 = {
     { id: 'para-10', type: 'paragraph', data: { text: "However, hailstones have a larger mass and tend to bounce back off the umbrella, creating a greater change in momentum Therefore, the impulse on an umbrella is greater in hail than in rain This means that more force is required to hold an umbrella upright in hail compared" } },
     { id: 'para-11', type: 'paragraph', data: { text: "to rain Since hailstones bounce back off an umbrella, compared to water droplets from rain, there is a greater impulse on an umbrella in hail than in rain Worked Example" } },
 
+  
+    {
+      id: 'svg-physics_4_16_0-0',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <path d="M 50 150 L 350 150" stroke="#334155" stroke-width="2"/>
+  <rect x="100" y="110" width="40" height="40" fill="#3b82f6" rx="4"/>
+  <path d="M 150 130 L 220 130" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="185" y="120" font-family="Arial" font-size="14" fill="#ef4444" text-anchor="middle">Force (F)</text>
+  <text x="120" y="100" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Mass (m)</text>
+  <text x="200" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Impulse = F Δt</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ef4444" />
+    </marker>
+  </defs>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 16_0'
+      }
+    },
+    {
+      id: 'svg-physics_4_16_0-1',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
+  <path d="M 50 180 L 350 180" stroke="#334155" stroke-width="2"/>
+  <path d="M 50 180 L 50 50" stroke="#334155" stroke-width="2"/>
+  <path d="M 100 180 Q 150 60 200 60 T 300 180" stroke="#3b82f6" stroke-width="3" fill="none"/>
+  <path d="M 100 180 Q 150 60 200 60 T 300 180" fill="#3b82f6" opacity="0.2"/>
+  <text x="200" y="200" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Time (t)</text>
+  <text x="30" y="115" font-family="Arial" font-size="14" fill="#334155" transform="rotate(-90 30 115)" text-anchor="middle">Force (F)</text>
+  <text x="200" y="130" font-family="Arial" font-size="14" fill="#1e293b" text-anchor="middle">Area = Impulse</text>
+  <text x="200" y="150" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">= Change in Momentum (Δp)</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 16_0'
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Impulse' }], summaryText: '', ready: true },
   evidence: [],

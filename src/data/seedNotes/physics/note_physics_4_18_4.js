@@ -13,6 +13,37 @@ export const note_physics_4_18_4 = {
     { id: 'para-10', type: 'paragraph', data: { text: "As r increases, V against r follows a 1/r relation for a positive charge and -1/r relation for a negative charge The gradient of the graph at any particular point is the value of E at that point The graph has a shallow increase (or decrease) as r increases" } },
     { id: 'para-11', type: 'paragraph', data: { text: "The electric potential changes according to the charge creating the potential as the distance r increases from the centre: If the charge is positive, the potential decreases with distance If the charge is negative, the potential increases with distance" } },
 
+  
+    {
+      id: 'svg-physics_4_18_4-0',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Electric Potential (V)</text>
+  <text x="200" y="60" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Work done per unit positive charge</text>
+  <text x="200" y="80" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">moving from infinity to a point</text>
+  <rect x="120" y="110" width="160" height="60" fill="#fef08a" rx="8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="200" y="145" font-family="Arial" font-size="20" fill="#b45309" font-weight="bold" text-anchor="middle">V = W / Q</text>
+  <text x="200" y="190" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Units: Volts (V) or J C⁻¹</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 18_4'
+      }
+    },
+    {
+      id: 'svg-physics_4_18_4-1',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="80" y="70" width="240" height="60" fill="#ecfdf5" rx="8" stroke="#10b981" stroke-width="2"/>
+  <text x="200" y="105" font-family="Arial" font-size="20" fill="#047857" font-weight="bold" text-anchor="middle">E = - dV / dr</text>
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Potential Gradient</text>
+  <text x="200" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Relationship between E and V</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 18_4'
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Field & Potential' }], summaryText: '', ready: true },
   evidence: [],

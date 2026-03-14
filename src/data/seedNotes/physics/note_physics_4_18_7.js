@@ -13,6 +13,46 @@ export const note_physics_4_18_7 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Towards a negative charge This direction is also denoted by the direction of the electric field Electric field lines are directed away from a positive point charge and towards a negative point charge" } },
     { id: 'para-11', type: 'paragraph', data: { text: "–1 Worked Example A charged particle is in an electric field with electric field strength 3.5 × 10 N C where it experiences a force of 0.3 N." } },
 
+  
+    {
+      id: 'svg-physics_4_18_7-0',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <circle cx="200" cy="100" r="15" fill="#ef4444"/>
+  <circle cx="200" cy="100" r="40" fill="none" stroke="#10b981" stroke-dasharray="4,4"/>
+  <circle cx="200" cy="100" r="70" fill="none" stroke="#10b981" stroke-dasharray="4,4"/>
+  <path d="M 200 40 L 200 10" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 200 160 L 200 190" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 140 100 L 110 100" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <path d="M 260 100 L 290 100" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <text x="200" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Equipotential Surfaces (Radial)</text>
+  <text x="200" y="180" font-family="Arial" font-size="12" fill="#10b981" text-anchor="middle">Dashed = Equipotentials (V is constant)</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 18_7'
+      }
+    },
+    {
+      id: 'svg-physics_4_18_7-1',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="80" y="60" width="240" height="80" fill="none" stroke="#334155" stroke-width="2"/>
+  <path d="M 140 60 L 140 140" stroke="#10b981" stroke-dasharray="4,4" stroke-width="2"/>
+  <path d="M 200 60 L 200 140" stroke="#10b981" stroke-dasharray="4,4" stroke-width="2"/>
+  <path d="M 260 60 L 260 140" stroke="#10b981" stroke-dasharray="4,4" stroke-width="2"/>
+  <path d="M 80 100 L 320 100" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  <text x="140" y="50" font-family="Arial" font-size="12" fill="#10b981" text-anchor="middle">50V</text>
+  <text x="200" y="50" font-family="Arial" font-size="12" fill="#10b981" text-anchor="middle">100V</text>
+  <text x="260" y="50" font-family="Arial" font-size="12" fill="#10b981" text-anchor="middle">150V</text>
+  <text x="200" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Equipotential Surfaces (Uniform)</text>
+  <text x="200" y="180" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">Always perpendicular to Field Lines</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 18_7'
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Representing Radial & Uniform Electric Fields' }], summaryText: '', ready: true },
   evidence: [],

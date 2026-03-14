@@ -13,6 +13,43 @@ export const note_physics_4_17_0 = {
     { id: 'para-10', type: 'paragraph', data: { text: "Angular Displacement The angular displacement Δ θ is the ratio of: Angular displacement describes the changeinangle, in radians, of a body as it moves in a circle" } },
     { id: 'para-11', type: 'paragraph', data: { text: "This angle is measured with respect to the centre of orbitIt is extremely common for students to get the wrong answer (and lose marks) because their calculator is in the wrong mode when using trigonometric functions - make sure this doesn't happen to you! When the angle is equal to one radian, the length of the arc ( Δs) is equal to the radius (r) of" } },
 
+  
+    {
+      id: 'svg-physics_4_17_0-0',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <circle cx="150" cy="100" r="80" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 150 100 L 230 100 A 80 80 0 0 0 206 43 Z" fill="#bae6fd" opacity="0.5" stroke="#3b82f6"/>
+  <line x1="150" y1="100" x2="230" y2="100" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="150" y1="100" x2="206" y2="43" stroke="#3b82f6" stroke-width="2"/>
+  <text x="180" y="90" font-family="Arial" font-size="16" fill="#1e293b">θ</text>
+  <text x="190" y="125" font-family="Arial" font-size="14" fill="#3b82f6">r</text>
+  <text x="235" y="70" font-family="Arial" font-size="14" fill="#ef4444">s = rθ</text>
+  <text x="280" y="60" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">1 Radian</text>
+  <text x="280" y="80" font-family="Arial" font-size="12" fill="#475569">when arc length s = r</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 17_0'
+      }
+    },
+    {
+      id: 'svg-physics_4_17_0-1',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Degrees to Radians</text>
+  <rect x="60" y="60" width="120" height="40" fill="#e0e7ff" rx="4"/>
+  <rect x="220" y="60" width="120" height="40" fill="#fef08a" rx="4"/>
+  <text x="120" y="85" font-family="Arial" font-size="14" fill="#1e293b" text-anchor="middle">360°</text>
+  <text x="280" y="85" font-family="Arial" font-size="14" fill="#1e293b" text-anchor="middle">2π radians</text>
+  <path d="M 190 80 L 210 80" stroke="#334155" stroke-width="2"/>
+  <text x="200" y="140" font-family="Arial" font-size="14" fill="#047857" font-weight="bold" text-anchor="middle">Radians = Degrees × (π / 180)</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 17_0'
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Radians & Angular Displacement' }], summaryText: '', ready: true },
   evidence: [],

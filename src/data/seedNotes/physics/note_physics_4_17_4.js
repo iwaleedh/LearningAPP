@@ -13,6 +13,39 @@ export const note_physics_4_17_4 = {
     { id: 'para-10', type: 'paragraph', data: { text: "This angle is measured with respect to the centre of orbitIt is extremely common for students to get the wrong answer (and lose marks) because their calculator is in the wrong mode when using trigonometric functions - make sure this doesn't happen to you! When the angle is equal to one radian, the length of the arc ( Δs) is equal to the radius (r) of" } },
     { id: 'para-11', type: 'paragraph', data: { text: "the circle Examiner Tips and Tricks Since the equation for angular displacement gives the angle in radians, make sure Angular Velocity" } },
 
+  
+    {
+      id: 'svg-physics_4_17_4-0',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Centripetal Force (F = ma)</text>
+  <rect x="60" y="80" width="280" height="70" fill="#fef2f2" rx="8" stroke="#ef4444" stroke-width="2"/>
+  <text x="200" y="115" font-family="Arial" font-size="20" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = mv² / r</text>
+  <text x="200" y="140" font-family="Arial" font-size="20" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = mrω²</text>
+  <text x="200" y="180" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Required resultant force to maintain circular motion</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 17_4'
+      }
+    },
+    {
+      id: 'svg-physics_4_17_4-1',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
+  <circle cx="200" cy="110" r="70" fill="none" stroke="#94a3b8" stroke-dasharray="4,4"/>
+  <circle cx="200" cy="110" r="20" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="200" cy="40" r="8" fill="#3b82f6"/>
+  <path d="M 200 40 L 200 75" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="220" y="65" font-family="Arial" font-size="14" fill="#ef4444">Gravity (F_g)</text>
+  <text x="200" y="205" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Orbiting Planet</text>
+  <text x="200" y="115" font-family="Arial" font-size="12" fill="#b45309" text-anchor="middle">Star</text>
+</svg>`,
+        caption: 'Diagram illustrating concepts of 17_4'
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Centripetal Force' }], summaryText: '', ready: true },
   evidence: [],
