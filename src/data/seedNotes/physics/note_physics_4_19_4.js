@@ -12,6 +12,22 @@ export const note_physics_4_19_4 = {
     { id: 'para-9', type: 'paragraph', data: { text: "The charge Q is not the charge of the capacitor itself, it is the charge stored on the plates This capacitance equation shows that an object's capacitance is the ratio of the charge stored by the capacitor to the potential difference between the plates" } },
     { id: 'para-10', type: 'paragraph', data: { text: "Worked Example A parallel plate capacitor has a capacitance of 1 nF and is connected to a voltage supply of 0.3 kV." } },
     { id: 'para-11', type: 'paragraph', data: { text: "Calculate the charge on the plates." } },
+    {
+      id: 'svg-parallel-capacitors',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="75" x2="100" y2="75" stroke="#000" stroke-width="2"/><line x1="100" y1="40" x2="100" y2="110" stroke="#000" stroke-width="2"/><line x1="100" y1="40" x2="140" y2="40" stroke="#000" stroke-width="2"/><line x1="100" y1="110" x2="140" y2="110" stroke="#000" stroke-width="2"/><line x1="140" y1="20" x2="140" y2="60" stroke="#3B82F6" stroke-width="4"/><line x1="160" y1="20" x2="160" y2="60" stroke="#EF4444" stroke-width="4"/><line x1="140" y1="90" x2="140" y2="130" stroke="#3B82F6" stroke-width="4"/><line x1="160" y1="90" x2="160" y2="130" stroke="#EF4444" stroke-width="4"/><line x1="160" y1="40" x2="200" y2="40" stroke="#000" stroke-width="2"/><line x1="160" y1="110" x2="200" y2="110" stroke="#000" stroke-width="2"/><line x1="200" y1="40" x2="200" y2="110" stroke="#000" stroke-width="2"/><line x1="200" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2"/><text x="150" y="15" font-family="Arial" font-size="14" text-anchor="middle">C&#8321;</text><text x="150" y="145" font-family="Arial" font-size="14" text-anchor="middle">C&#8322;</text><text x="150" y="75" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">C_total = C&#8321; + C&#8322;</text></svg>',
+        caption: 'Capacitors in Parallel'
+      }
+    },
+    {
+      id: 'svg-series-capacitors',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="75" x2="100" y2="75" stroke="#000" stroke-width="2"/><line x1="100" y1="55" x2="100" y2="95" stroke="#3B82F6" stroke-width="4"/><line x1="120" y1="55" x2="120" y2="95" stroke="#EF4444" stroke-width="4"/><line x1="120" y1="75" x2="180" y2="75" stroke="#000" stroke-width="2"/><line x1="180" y1="55" x2="180" y2="95" stroke="#3B82F6" stroke-width="4"/><line x1="200" y1="55" x2="200" y2="95" stroke="#EF4444" stroke-width="4"/><line x1="200" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2"/><text x="110" y="45" font-family="Arial" font-size="14" text-anchor="middle">C&#8321;</text><text x="190" y="45" font-family="Arial" font-size="14" text-anchor="middle">C&#8322;</text><text x="150" y="130" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">1/C_total = 1/C&#8321; + 1/C&#8322;</text></svg>',
+        caption: 'Capacitors in Series'
+      }
+    }
 
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Exponential Discharge in a Capacitor' }], summaryText: '', ready: true },

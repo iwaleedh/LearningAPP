@@ -12,6 +12,22 @@ export const note_physics_4_19_1 = {
     { id: 'para-9', type: 'paragraph', data: { text: "also be calculated by the following equation: W =1 2CV2 By substituting the potential difference V, the energy stored can also be defined in" } },
     { id: 'para-10', type: 'paragraph', data: { text: "terms of just the charge stored Q and the capacitance, C: W =Q2 2C Worked Example" } },
     { id: 'para-11', type: 'paragraph', data: { text: "Calculate the change in the energy stored in a capacitor of capacitance 1500 μ F when the potential difference across the capacitor changes from 10 V to 30 V." } },
+    {
+      id: 'svg-energy-capacitor',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><polyline points="50,150 50,30 50,150 250,150" fill="none" stroke="#000" stroke-width="2"/><line x1="50" y1="150" x2="200" y2="50" stroke="#3B82F6" stroke-width="3"/><text x="25" y="90" font-family="Arial" font-size="14" transform="rotate(-90 25,90)">V (Volts)</text><text x="150" y="170" font-family="Arial" font-size="14">Q (Coulombs)</text><polygon points="50,150 200,150 200,50" fill="#93C5FD" fill-opacity="0.5"/><text x="140" y="125" font-family="Arial" font-size="14" fill="#1E3A8A">Area = Energy (W)</text></svg>',
+        caption: 'Energy Stored in a Capacitor'
+      }
+    },
+    {
+      id: 'svg-energy-formulae',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 350 150" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="150" fill="#F8FAFC" rx="10"/><text x="175" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1E3A8A">Energy Stored (W)</text><text x="175" y="75" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 Q V</text><text x="175" y="105" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 C V&sup2;</text><text x="175" y="135" font-family="Arial" font-size="18" text-anchor="middle" fill="#333">W = 1/2 Q&sup2; / C</text></svg>',
+        caption: 'Energy Formulas'
+      }
+    }
 
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Energy Stored by a Capacitor' }], summaryText: '', ready: true },

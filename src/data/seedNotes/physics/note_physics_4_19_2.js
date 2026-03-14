@@ -12,6 +12,22 @@ export const note_physics_4_19_2 = {
     { id: 'para-9', type: 'paragraph', data: { text: "The initial value of the current starts on the y axis and decreases exponentially The initial value of the p.d and charge starts at 0 up to a maximum value Discharging Curves Capacitors are discharged through a resistor with no power supply present" } },
     { id: 'para-10', type: 'paragraph', data: { text: "The electrons now flow back from the negative plate to the positive terminal of the power supply until there is no potential difference across the capacitor plates Charging and discharging is commonly achieved by moving a switch that connects the capacitor between a power supply and a resistor" } },
     { id: 'para-11', type: 'paragraph', data: { text: "The capacitor charges when connected to terminal P and discharges when connected to terminal Q At the start of discharge, the current is large (but in the opposite direction to when it was charging) and gradually falls to zero" } },
+    {
+      id: 'svg-charging-graph',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><polyline points="40,160 40,40 40,160 260,160" fill="none" stroke="#000" stroke-width="2"/><path d="M 40 160 Q 100 80 240 60" fill="none" stroke="#10B981" stroke-width="3"/><line x1="40" y1="60" x2="260" y2="60" stroke="#9CA3AF" stroke-dasharray="4"/><text x="20" y="100" font-family="Arial" font-size="14" transform="rotate(-90 20,100)">V or Q</text><text x="150" y="180" font-family="Arial" font-size="14">Time (t)</text><text x="250" y="50" font-family="Arial" font-size="12" fill="#4B5563">V_max</text></svg>',
+        caption: 'Charging a Capacitor'
+      }
+    },
+    {
+      id: 'svg-discharging-graph',
+      type: 'svg',
+      data: {
+        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><polyline points="40,160 40,40 40,160 260,160" fill="none" stroke="#000" stroke-width="2"/><path d="M 40 60 Q 100 140 240 155" fill="none" stroke="#EF4444" stroke-width="3"/><text x="20" y="100" font-family="Arial" font-size="14" transform="rotate(-90 20,100)">V, Q or I</text><text x="150" y="180" font-family="Arial" font-size="14">Time (t)</text></svg>',
+        caption: 'Discharging a Capacitor'
+      }
+    }
 
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Charge & Discharge Curves' }], summaryText: '', ready: true },
