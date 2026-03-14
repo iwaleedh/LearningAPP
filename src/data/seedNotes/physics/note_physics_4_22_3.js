@@ -1,0 +1,20 @@
+export const note_physics_4_22_3 = {
+  blocks: [
+    { id: 'obj-1', type: 'objective', data: { text: "Understand Particle Accelerators & Detectors" } },
+    { id: 'head-1', type: 'heading', data: { text: "Particle Accelerators & Detectors", level: 2 } },
+    { id: 'para-2', type: 'paragraph', data: { text: "Particle Accelerators & Detectors Particle Accelerators & Detectors Linear Accelerators A linear accelerator (LINAC) is a type of particle accelerator that accelerates ions" } },
+    { id: 'para-3', type: 'paragraph', data: { text: "(charged particles) to very high speeds in straight lines LINACs use electric fields within and between metallic tubes which act as oppositely charged electrodes The high-energy ions produced are used in collider experiments" } },
+    { id: 'para-4', type: 'paragraph', data: { text: "These experiments enable the internal structure of atoms and subatomic particles to be investigated LINACs are comprised of a series of hollow cylindrical tubes Linacs accelerate ions through progressively longer tubes, connected to an alternating" } },
+    { id: 'para-5', type: 'paragraph', data: { text: "power supply. This ensures they are always accelerating from one tube to the next An AC powersupply is connected across each tube to ensure ions are always accelerated from one to the next The ions will be attracted to the midpoint of a tube" } },
+    { id: 'para-6', type: 'paragraph', data: { text: "At this point, the AC supply will switch such that the ions are repelled to the exit, and attracted to the next tube This process continues in a straight line all the way to the end of the accelerator The frequency of the AC supply is fixed" } },
+    { id: 'para-7', type: 'paragraph', data: { text: "This means the polarity (positive or negative charge) of each tube switches at a constant rate Therefore, each tube must be built successively longer This is because the ions are speedingup" } },
+    { id: 'para-8', type: 'paragraph', data: { text: "Hence, this ensures ions spend the same amount of time under acceleration in each tube Cyclotrons A cyclotron is a type of particle accelerator that accelerates ions from a central entry" } },
+    { id: 'para-9', type: 'paragraph', data: { text: "point around a spiral path They are used for medical research such as: Producing medical isotopes (tracers) Creating high-energy beams of radiation for radiotherapy" } },
+    { id: 'para-10', type: 'paragraph', data: { text: "Cyclotrons are comprised of: Two hollow semicircular electrodes called 'dees' A uniform magnetic field applied perpendicular to the electrodes An AC power supply applied across each dee, which creates an electric field in the" } },
+    { id: 'para-11', type: 'paragraph', data: { text: "gap between them A cyclotron uses magnetic fields and electric fields to accelerate charged particles, like protons. The magnetic fields keep protons in a circular path, and the electric field increases their speed" } },
+
+  ],
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Particle Accelerators & Detectors' }], summaryText: '', ready: true },
+  evidence: [],
+  mentions: []
+};

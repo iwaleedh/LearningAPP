@@ -1,6 +1,6 @@
 export const physicsSyllabus = {
     qualification: 'Pearson Edexcel International A Level Physics (YPH11)',
-    source: 'IAL_Physics_Iss3.pdf (Issue 3, July 2021)',
+    source: 'Generated from Save My Exams PDFs',
     units: [
         {
             id: 1,
@@ -8,8 +8,8 @@ export const physicsSyllabus = {
             title: 'Mechanics and Materials',
             topics: [
                 {
-                    id: 0,
-                    title: 'Working as a Physicist',
+                    id: '1',
+                    title: "working as a physicist",
                     subtopics: [
                         'SI Units',
                         'Practical Skills',
@@ -18,41 +18,78 @@ export const physicsSyllabus = {
                         'Scientific Communication',
                         'Applications of Science',
                         'The Scientific Community',
-                        'Science & Society'
-                    ],
+                        'Science & Society',
+                    ]
                 },
                 {
-                    id: 1,
-                    title: 'Mechanics',
+                    id: '2',
+                    title: "Motion",
                     subtopics: [
-                        'SUVAT equations in 1D motion',
-                        'Displacement, velocity and acceleration graphs',
-                        'Vectors and resolution',
-                        'Projectile motion components',
-                        'Free-body diagrams and Newton\'s laws',
-                        'Momentum and impulse',
-                        'Moments and equilibrium',
-                        'Work, kinetic and potential energy',
-                        'Power and efficiency',
-                        'Core Practical 1: free-fall acceleration',
-                    ],
+                        'Equations of Motion',
+                        'Motion Graphs',
+                        'Properties of Motion Graphs',
+                        'Scalars & Vectors',
+                        'Resolving Vectors',
+                        'Finding the Resultant Vector',
+                        'Projectiles',
+                        'Forces as Vectors',
+                    ]
                 },
                 {
-                    id: 2,
-                    title: 'Materials',
+                    id: '3',
+                    title: "Forces & Momentum",
                     subtopics: [
-                        'Density and upthrust',
-                        'Viscosity and Stokes\' Law',
-                        'Hooke\'s Law and stiffness',
-                        'Stress, strain and Young modulus',
-                        'Force-extension and stress-strain curves',
-                        'Elastic and plastic behaviour',
-                        'Elastic strain energy',
-                        'Core Practical 2: liquid viscosity',
-                        'Core Practical 3: Young modulus',
-                    ],
+                        'Force & Acceleration',
+                        'Mass, Weight & Gravitational Field Strength',
+                        'Core Practical 1: Investigating the Acceleration of Freefall',
+                        'Newtons Third Law of Motion',
+                        'Momentum',
+                        'Conservation of Linear Momentum',
+                    ]
                 },
-            ],
+                {
+                    id: '4',
+                    title: "Moments",
+                    subtopics: [
+                        'Moments',
+                        'Centre of Gravity & The Principle of Moments',
+                    ]
+                },
+                {
+                    id: '5',
+                    title: "Work,Energy & Power",
+                    subtopics: [
+                        'Work',
+                        'Kinetic Energy',
+                        'Gravitational Potential Energy',
+                        'The Principle of Conservation of Energy',
+                        'Power',
+                        'Efficiency',
+                    ]
+                },
+                {
+                    id: '9',
+                    title: "Density,Upthrust & Viscous Drag",
+                    subtopics: [
+                        'Density',
+                        'Upthrust',
+                        'Viscous Drag',
+                        'Core Practical 4: Investigating Viscosity',
+                    ]
+                },
+                {
+                    id: '10',
+                    title: "Stretching Materials",
+                    subtopics: [
+                        'Hookes Law',
+                        'Stress, Strain & The Young Modulus',
+                        'Force-Extension Graphs',
+                        'Stress-Strain Graphs',
+                        'Core Practical 5: Investigating Young Modulus',
+                        'Elastic Strain Energy',
+                    ]
+                },
+            ]
         },
         {
             id: 2,
@@ -60,41 +97,112 @@ export const physicsSyllabus = {
             title: 'Waves and Electricity',
             topics: [
                 {
-                    id: 3,
-                    title: 'Waves and Particle Nature of Light',
+                    id: '6',
+                    title: "Current,Potential Difference, Resistance & Power",
                     subtopics: [
-                        'Wave terms and wave equation',
-                        'Longitudinal and transverse waves',
-                        'Standing waves, nodes and antinodes',
-                        'Wavefronts, superposition and interference',
-                        'Wave speed on stretched strings',
-                        'Intensity of radiation',
-                        'Refraction and refractive index',
-                        'Critical angle and total internal reflection',
-                        'Diffraction and polarisation',
-                        'Photoelectric effect and photons',
-                        'Core Practical 4: speed of sound',
-                        'Core Practical 5: vibrating string',
-                        'Core Practical 6: refractive index',
-                    ],
+                        'Electric Current',
+                        'Potential Difference',
+                        'Ohms Law',
+                        'Charge Conservation in Circuits',
+                        'Energy Conservation in Circuits',
+                        'Resistance in Series & Parallel',
+                        'Electrical Power',
+                        'Current-Potential Difference Graphs',
+                    ]
                 },
                 {
-                    id: 4,
-                    title: 'Electricity',
+                    id: '7',
+                    title: "Resistance,Resistivity & Potential Dividers",
                     subtopics: [
-                        'Current, charge and potential difference',
-                        'Resistance and resistivity',
-                        'I-V characteristics of components',
-                        'Series and parallel circuits',
-                        'Kirchhoff\'s laws',
-                        'Potential dividers and sensors',
-                        'EMF, internal resistance and terminal pd',
-                        'Power and energy in circuits',
-                        'Core Practical 7: component characteristics',
-                        'Core Practical 8: cell emf and internal resistance',
-                    ],
+                        'Electrical Resistivity',
+                        'Core Practical 2: Investigating Resistivity',
+                        'Current & Drift Velocity',
+                        'Potential Difference & Conductor Length',
+                        'Potential Dividers',
+                        'Potential Dividers & Variable Resistance',
+                    ]
                 },
-            ],
+                {
+                    id: '8',
+                    title: "E.M.F & Modelling Resistance",
+                    subtopics: [
+                        'Electromotive Force',
+                        'Internal Resistance',
+                        'E.M.F. vs. Terminal Potential Difference',
+                        'Core Practical 3: Investigating E.M.F. & Internal Resistance',
+                        'Resistance & Temperature',
+                        'Resistance & Illumination',
+                    ]
+                },
+                {
+                    id: '11',
+                    title: "Transverse & Longitudinal Waves",
+                    subtopics: [
+                        'Properties of Waves',
+                        'The Wave Equation',
+                        'Longitudinal Waves',
+                        'Transverse Waves',
+                        'Representing Waves on Graphs',
+                        'Core Practical 6: Investigating the Speed of Sound',
+                    ]
+                },
+                {
+                    id: '12',
+                    title: "Interference & Stationary Waves",
+                    subtopics: [
+                        'Interference & Superposition of Waves',
+                        'Phase & Path Difference',
+                        'Stationary Waves',
+                        'Wave Speed on a Stretched String',
+                        'Core Practical 7: Investigating Stationary Waves',
+                    ]
+                },
+                {
+                    id: '13',
+                    title: "Refraction,Reflection & Polarisation",
+                    subtopics: [
+                        'Equation for the Intensity of Radiation',
+                        'Refraction & Refractive Index',
+                        'Critical Angle',
+                        'Total Internal Reflection',
+                        'Measuring Refractive Index',
+                        'Converging & Diverging Lenses',
+                        'Using Ray Diagrams',
+                        'Power of a Lens',
+                        'Thin Lenses in Combination',
+                        'Real & Virtual Images',
+                        'The Lens Equation',
+                        'Magnification',
+                        'Plane Polarisation',
+                    ]
+                },
+                {
+                    id: '14',
+                    title: "Waves,Electrons & Photons",
+                    subtopics: [
+                        'Diffraction',
+                        'The Diffraction Grating Equation',
+                        'Core Practical 8: Investigating Diffraction Gratings',
+                        'The Wave Nature of Electrons',
+                        'The de Broglie Equation',
+                        'Transmission & Reflection of Waves',
+                        'Pulse-Echo Technique',
+                        'Wave-Particle Duality',
+                        'Energy of a Photon',
+                    ]
+                },
+                {
+                    id: '15',
+                    title: "The Photoelectric Effect & Atomic Spectra",
+                    subtopics: [
+                        'The Photoelectric Effect',
+                        'The Photoelectric Equation',
+                        'The Electronvolt',
+                        'The Particle Nature of EM Radiation',
+                        'Atomic Line Spectra',
+                    ]
+                },
+            ]
         },
         {
             id: 3,
@@ -103,17 +211,11 @@ export const physicsSyllabus = {
             topics: [
                 {
                     id: '3A',
-                    title: 'Practical Skills I',
+                    title: "Practical Skills I",
                     subtopics: [
-                        'IAS practical methods from Units 1 and 2',
-                        'Experiment planning and apparatus selection',
-                        'Range, resolution and calibration choices',
-                        'Implementation and measurement quality',
-                        'Processing and graphical analysis',
-                        'Uncertainty and systematic error control',
-                    ],
+                    ]
                 },
-            ],
+            ]
         },
         {
             id: 4,
@@ -121,47 +223,101 @@ export const physicsSyllabus = {
             title: 'Further Mechanics, Fields and Particles',
             topics: [
                 {
-                    id: 5,
-                    title: 'Further Mechanics',
+                    id: '16',
+                    title: "Momentum & Impulse",
                     subtopics: [
-                        'Impulse and momentum change',
-                        '2D momentum conservation',
-                        'Elastic and inelastic collisions',
-                        'Angular displacement and angular velocity',
-                        'Centripetal acceleration and force',
-                        'Core Practical 9: force and momentum',
-                        'Core Practical 10: collision analysis',
-                    ],
+                        'Impulse',
+                        'Core Practical 9: Investigating Impulse',
+                        'Applying Conservation of Linear Momentum',
+                        'Core Practical 10: Investigating Collisions using ICT',
+                        'Elastic & Inelastic Collisions',
+                        'Energy-Momentum Relation',
+                    ]
                 },
                 {
-                    id: 6,
-                    title: 'Electric and Magnetic Fields',
+                    id: '17',
+                    title: "Circular Motion",
                     subtopics: [
-                        'Electric field strength and potential',
-                        'Coulomb\'s Law and radial fields',
-                        'Capacitance and stored energy',
-                        'Capacitor charge and discharge',
-                        'Exponential decay in RC circuits',
-                        'Magnetic flux, flux linkage and forces',
-                        'Electromagnetic induction',
-                        'Faraday and Lenz laws',
-                        'Core Practical 11: Capacitor Charge-Discharge',
-                    ],
+                        'Radians & Angular Displacement',
+                        'Angular Velocity',
+                        'Centripetal Acceleration',
+                        'Maintaining Circular Motion',
+                        'Centripetal Force',
+                    ]
                 },
                 {
-                    id: 7,
-                    title: 'Nuclear and Particle Physics',
+                    id: '18',
+                    title: "Electric Fields",
                     subtopics: [
-                        'Nuclear model and alpha scattering',
-                        'Particle acceleration and detection',
-                        'Momentum in magnetic fields',
-                        'Conservation laws in particle interactions',
-                        'Mass-energy equivalence',
-                        'Quark-lepton particle classification',
-                        'Antiparticles and pair processes',
-                    ],
+                        'Defining an Electric Field',
+                        'Electric Field Strength',
+                        'Electric Force between Two Charges',
+                        'Electric Field due to a Point Charge',
+                        'Electric Field & Potential',
+                        'Electric Field between Parallel Plates',
+                        'Electric Potential for a Radial Field',
+                        'Representing Radial & Uniform Electric Fields',
+                    ]
                 },
-            ],
+                {
+                    id: '19',
+                    title: "Capacitance",
+                    subtopics: [
+                        'Capacitance',
+                        'Energy Stored by a Capacitor',
+                        'Charge & Discharge Curves',
+                        'Core Practical 11: Investigating Capacitor Charge & Discharge',
+                        'Exponential Discharge in a Capacitor',
+                    ]
+                },
+                {
+                    id: '20',
+                    title: "Magnetic Fields",
+                    subtopics: [
+                        'Magnetic Flux Density, Flux & Flux Linkage',
+                        'Magnetic Force on a Charged Particle',
+                        'Magnetic Force on a Current-Carrying Conductor',
+                    ]
+                },
+                {
+                    id: '21',
+                    title: "Electromagnetic Induction &  Alternating Currents",
+                    subtopics: [
+                        'Induced E.M.F in a Moving Coil',
+                        'Induced E.M.F between Linked Coils',
+                        'Lenzs Law',
+                        'Faradays Law',
+                        'Alternating Currents & Potential Differences',
+                        'Root-Mean-Square Current & Potential Difference',
+                    ]
+                },
+                {
+                    id: '22',
+                    title: "Exploringthe Structureof Matter",
+                    subtopics: [
+                        'Nucleon & Proton Number',
+                        'The Nuclear Model of the Atom',
+                        'Thermionic Emission',
+                        'Particle Accelerators & Detectors',
+                        'Radius of a Charged Particle in a Magnetic Field',
+                        'Interpreting Particle Tracks',
+                        'High Energy Particle Collisions',
+                        'Annihilation of Matter & Antimatter',
+                        'Unit Conversions for Energy & Mass',
+                        'Relativistic Situations',
+                    ]
+                },
+                {
+                    id: '23',
+                    title: "Particle Interactions & Conservation",
+                    subtopics: [
+                        'The Standard Model',
+                        'Antimatter',
+                        'Conservation Laws in Particle Physics',
+                        'Particle Interaction Equations',
+                    ]
+                },
+            ]
         },
         {
             id: 5,
@@ -169,58 +325,114 @@ export const physicsSyllabus = {
             title: 'Thermodynamics, Radiation, Oscillations and Cosmology',
             topics: [
                 {
-                    id: 8,
-                    title: 'Thermodynamics',
+                    id: '24',
+                    title: "Thermal Energy Transfer",
                     subtopics: [
-                        'Specific heat and latent heat',
-                        'Internal energy and absolute zero',
-                        'Ideal gas equation',
-                        'Molecular kinetic theory',
-                        'Core Practical 12: thermistor calibration',
-                        'Core Practical 13: latent heat',
-                        'Core Practical 14: gas pressure-volume relation',
-                    ],
+                        'Specific Heat Capacity & Latent Heat',
+                        'Core Practical 12: Calibrating a Thermistor',
+                        'Core Practical 13: Investigating Specific Latent Heat',
+                    ]
                 },
                 {
-                    id: 9,
-                    title: 'Nuclear Decay',
+                    id: '25',
+                    title: "Kinetic Theory & Ideal Gases",
                     subtopics: [
-                        'Binding energy and mass defect',
-                        'Fusion and fission processes',
-                        'Background radiation handling',
-                        'Alpha, beta and gamma properties',
-                        'Nuclear equations and decay laws',
-                        'Half-life determination',
-                        'Core Practical 15: gamma absorption',
-                    ],
+                        'Internal Energy',
+                        'Temperature & Absolute Zero',
+                        'Kinetic Theory of Gases Equation',
+                        'Ideal Gas Equation',
+                        'Core Practical 14: Investigating Gas Pressure & Volume',
+                        'Average Molecular Kinetic Energy',
+                    ]
                 },
                 {
-                    id: 10,
-                    title: 'Oscillations',
+                    id: '26',
+                    title: "Black Body Radiation",
                     subtopics: [
-                        'Simple harmonic motion conditions',
-                        'SHM equations and period relations',
-                        'Displacement and velocity graphs',
-                        'Resonance in oscillating systems',
-                        'Damping and forced oscillations',
-                        'Core Practical 16: resonant mass determination',
-                    ],
+                        'Black Body Radiation',
+                        'Stefan-Boltzmann Law',
+                        'Wien’s Law',
+                    ]
                 },
                 {
-                    id: 11,
-                    title: 'Astrophysics and Cosmology',
+                    id: '27',
+                    title: "Astronomy",
                     subtopics: [
-                        'Gravitational field and potential',
-                        'Orbital motion under gravity',
-                        'Black-body radiation laws',
-                        'Luminosity, intensity and distance',
-                        'Parallax and standard candles',
-                        'Hertzsprung-Russell diagram',
-                        'Redshift, Hubble relation and expansion',
-                        'Universe age and fate evidence',
-                    ],
+                        'Inverse Square Law of Flux',
+                        'Parallax',
+                        'Standard Candles',
+                        'The Hertzsprung-Russell Diagram',
+                        'The Life Cycle of Stars',
+                    ]
                 },
-            ],
+                {
+                    id: '28',
+                    title: "Cosmology",
+                    subtopics: [
+                        'Doppler Shift',
+                        'Equations for Cosmology',
+                        'Cosmology',
+                    ]
+                },
+                {
+                    id: '29',
+                    title: "Nuclear Fusion & Fission",
+                    subtopics: [
+                        'Nuclear Binding Energy & Mass Deficit',
+                        'Atomic Mass Unit',
+                        'Binding Energy per Nucleon Graph',
+                        'Nuclear Fusion',
+                    ]
+                },
+                {
+                    id: '30',
+                    title: "Radioactivity Decay",
+                    subtopics: [
+                        'Background Radiation',
+                        'Alpha, Beta & Gamma Radiation',
+                        'Nuclear Decay Equations',
+                        'Core Practical 15: Investigating Gamma Radiation Absorption',
+                        'The Random Nature of Nuclear Decay',
+                        'Equations for Nuclear Physics',
+                    ]
+                },
+                {
+                    id: '31',
+                    title: "Gravitational Fields",
+                    subtopics: [
+                        'Gravitational Fields',
+                        'Gravitational Field Strength',
+                        'Newton’s Law of Universal Gravitation',
+                        'Gravitational Field due to a Point Mass',
+                        'Gravitational Potential for a Radial Field',
+                        'Comparing Electric & Gravitational Fields',
+                        'Orbital Motion',
+                    ]
+                },
+                {
+                    id: '32',
+                    title: "Simple Harmonic Motion",
+                    subtopics: [
+                        'Conditions for Simple Harmonic Motion',
+                        'Equations for Simple Harmonic Motion',
+                        'Period of Simple Harmonic Oscillators',
+                        'Displacement-Time Graph for an Oscillator',
+                        'Velocity-Time Graph for an Oscillator',
+                    ]
+                },
+                {
+                    id: '33',
+                    title: "Resonance",
+                    subtopics: [
+                        'Resonance',
+                        'Core Practical 16: Investigating Resonance',
+                        'Damped & Undamped Oscillating Systems',
+                        'Free & Forced Oscillations',
+                        'Resonance Graphs',
+                        'Damping & Plastic Deformation',
+                    ]
+                },
+            ]
         },
         {
             id: 6,
@@ -229,21 +441,15 @@ export const physicsSyllabus = {
             topics: [
                 {
                     id: '6A',
-                    title: 'Practical Skills II',
+                    title: "Practical Skills II",
                     subtopics: [
-                        'IA2 practical methods from Units 4 and 5',
-                        'Advanced experiment planning',
-                        'Implementation and measurement critique',
-                        'Data analysis and logarithmic graphs',
-                        'Accuracy, precision and sensitivity',
-                        'Compounded uncertainty evaluation',
-                    ],
+                    ]
                 },
-            ],
+            ]
         },
-    ],
+    ]
 };
 
 export function getPhysicsUnitById(unitId) {
-    return physicsSyllabus.units.find((unit) => unit.id === unitId);
+    return physicsSyllabus.units.find((unit) => String(unit.id) === String(unitId));
 }
