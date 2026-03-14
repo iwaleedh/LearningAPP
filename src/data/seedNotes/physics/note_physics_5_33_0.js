@@ -12,7 +12,22 @@ export const note_physics_5_33_0 = {
     { id: 'para-9', type: 'paragraph', data: { text: "equal to the natural frequency of the oscillator Examples include: An organ pipe, where air resonates down an air column setting up a stationary wave in the pipe" } },
     { id: 'para-10', type: 'paragraph', data: { text: "Glass smashing from a high pitched sound wave at the right frequency A radio tuned so that the electric circuit resonates at the same frequency as the specific broadcast Standing waves forming inside an organ pipe from resonance" } },
     { id: 'para-11', type: 'paragraph', data: { text: "Core Practical 16: Investigating Resonance Core Practical 16: Investigating Resonance Aim of the Experiment" } },
-
+    {
+      "id": "svg-free-forced",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 400 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><rect x=\"50\" y=\"50\" width=\"100\" height=\"100\" fill=\"#E2E8F0\" stroke=\"#64748B\"/><text x=\"100\" y=\"100\" text-anchor=\"middle\" fill=\"#334155\">Free</text><text x=\"100\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" fill=\"#64748B\">Natural freq.</text><rect x=\"250\" y=\"50\" width=\"100\" height=\"100\" fill=\"#E2E8F0\" stroke=\"#64748B\"/><text x=\"300\" y=\"100\" text-anchor=\"middle\" fill=\"#334155\">Forced</text><text x=\"300\" y=\"120\" text-anchor=\"middle\" font-size=\"12\" fill=\"#64748B\">Driving freq.</text><path d=\"M 200 100 L 230 100\" stroke=\"#EF4444\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/></svg>",
+        "caption": "Free vs Forced Vibrations"
+      }
+    },
+    {
+      "id": "svg-natural-frequency",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"24\" fill=\"#334155\" font-style=\"italic\">f₀</text><text x=\"150\" y=\"120\" text-anchor=\"middle\" fill=\"#64748B\">Frequency of unforced oscillation</text></svg>",
+        "caption": "Natural Frequency"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Resonance' }], summaryText: '', ready: true },
   evidence: [],

@@ -12,7 +12,22 @@ export const note_physics_5_30_2 = {
     { id: 'para-9', type: 'paragraph', data: { text: "Notice that the mass number and atomic number of the unstable nuclei remains the same during the decay Gamma decay equation An example of Barium decay through the release of a gamma ray" } },
     { id: 'para-10', type: 'paragraph', data: { text: "Worked Example Part (a) Answer: C Part (b)" } },
     { id: 'para-11', type: 'paragraph', data: { text: "Core Practical 15: Investigating Gamma Radiation Absorption Core Practical 15: Investigating Gamma Radiation Absorption" } },
-
+    {
+      "id": "svg-activity-formula",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"24\" fill=\"#334155\" font-style=\"italic\">A = λN</text><text x=\"150\" y=\"120\" text-anchor=\"middle\" fill=\"#64748B\">Activity = Decay Constant × Number</text></svg>",
+        "caption": "Activity and Constant"
+      }
+    },
+    {
+      "id": "svg-decay-eq",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"24\" fill=\"#1E40AF\" font-style=\"italic\">N = N₀e<tspan dy=\" -10\" font-size=\"16\">-λt</tspan></text></svg>",
+        "caption": "Decay Equation"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Nuclear Decay Equations' }], summaryText: '', ready: true },
   evidence: [],

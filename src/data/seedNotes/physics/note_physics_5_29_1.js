@@ -9,7 +9,22 @@ export const note_physics_5_29_1 = {
     { id: 'para-6', type: 'paragraph', data: { text: "However, note that the actual mass is slightly lower than the expected mass, due to mass-energy equivalence a.m.u might be quoted in kg or MeV since mass and energy are equivalent via ΔE =Δmc2" } },
     { id: 'para-7', type: 'paragraph', data: { text: "MeV is a unit of energy whilst kg is a unit of mass−27 Worked Example Estimate the mass of the nucleus of the element copernicium-285 in kg. Give your answer to 2 decimal places." } },
     { id: 'para-8', type: 'paragraph', data: { text: "Answer:" } },
-
+    {
+      "id": "svg-fission-process",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 400 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"50\" cy=\"100\" r=\"5\" fill=\"#60A5FA\"/><path d=\"M 60 100 L 130 100\" stroke=\"#94A3B8\" stroke-dasharray=\"4,4\"/><circle cx=\"150\" cy=\"100\" r=\"30\" fill=\"#F87171\"/><text x=\"150\" y=\"100\" text-anchor=\"middle\" fill=\"white\" font-size=\"12\">U-235</text><path d=\"M 180 90 L 250 50\" stroke=\"#F59E0B\" stroke-width=\"2\"/><path d=\"M 180 110 L 250 150\" stroke=\"#F59E0B\" stroke-width=\"2\"/><circle cx=\"270\" cy=\"40\" r=\"20\" fill=\"#34D399\"/><circle cx=\"270\" cy=\"160\" r=\"15\" fill=\"#A78BFA\"/></svg>",
+        "caption": "Nuclear Fission Process"
+      }
+    },
+    {
+      "id": "svg-chain-reaction",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"50\" cy=\"100\" r=\"15\" fill=\"#F87171\"/><path d=\"M 60 90 L 100 50\" stroke=\"#94A3B8\"/><path d=\"M 60 110 L 100 150\" stroke=\"#94A3B8\"/><circle cx=\"120\" cy=\"40\" r=\"15\" fill=\"#F87171\"/><circle cx=\"120\" cy=\"160\" r=\"15\" fill=\"#F87171\"/></svg>",
+        "caption": "Chain Reaction"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Atomic Mass Unit' }], summaryText: '', ready: true },
   evidence: [],

@@ -11,7 +11,22 @@ export const note_physics_5_31_2 = {
     { id: 'para-8', type: 'paragraph', data: { text: "Calculate the mass of the Earth." } },
     { id: 'para-9', type: 'paragraph', data: { text: "(Radius of the Earth = 6400 km) Answer: Examiner Tips and Tricks A common mistake in exams is to forget to add together the distance from the" } },
     { id: 'para-10', type: 'paragraph', data: { text: "surface of the planet and its radius to obtain the value of r. The distance r is measured between the centre of each mass, which is from the centre of the planet to the centre Another common mistake is forgetting that the distance between masses m and m is squared. Remember this whenever you use Newton's Law of Universal Gravitation! 1 2" } },
-
+    {
+      "id": "svg-grav-field-strength",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"24\" fill=\"#334155\" font-style=\"italic\">g = F / m</text><text x=\"150\" y=\"120\" text-anchor=\"middle\" fill=\"#64748B\">Field Strength = Force per Unit Mass</text></svg>",
+        "caption": "Gravitational Field Strength"
+      }
+    },
+    {
+      "id": "svg-surface-gravity",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"150\" cy=\"150\" r=\"80\" fill=\"#94A3B8\" opacity=\"0.5\"/><circle cx=\"150\" cy=\"70\" r=\"5\" fill=\"#EF4444\"/><path d=\"M 150 70 L 150 150\" stroke=\"#334155\" stroke-dasharray=\"2,2\"/><text x=\"160\" y=\"110\" fill=\"#334155\">R</text><text x=\"150\" y=\"160\" text-anchor=\"middle\" fill=\"#1E293B\">Planet M</text></svg>",
+        "caption": "Surface Gravity"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Newton’s Law of Universal Gravitation' }], summaryText: '', ready: true },
   evidence: [],

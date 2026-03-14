@@ -12,7 +12,22 @@ export const note_physics_5_31_6 = {
     { id: 'para-9', type: 'paragraph', data: { text: "The Earth's gravitational field is responsible for the weight of all objects on Earth The Earth's gravitational field produces an attractive force F, which is equal and opposite to the attractive force produced by the person's gravitational field The gravitational field strengthg at a point is defined as force F per unit mass m of an" } },
     { id: 'para-10', type: 'paragraph', data: { text: "object at that point: Where: g = gravitational field strength (N kg ) F = force due to gravity, or weight (N)" } },
     { id: 'para-11', type: 'paragraph', data: { text: "m = mass (kg) This equation shows that: The larger the mass of an object, the greater its pull on another mass On planets with a large value of g, the gravitational force per unit mass is greater" } },
-
+    {
+      "id": "svg-escape-velocity",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 400 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"100\" cy=\"100\" r=\"50\" fill=\"#64748B\"/><path d=\"M 100 50 Q 150 -50 350 20\" stroke=\"#3B82F6\" fill=\"none\" stroke-width=\"2\" stroke-dasharray=\"4,4\"/><path d=\"M 100 50 Q 200 -20 350 100\" stroke=\"#10B981\" fill=\"none\" stroke-width=\"2\"/><text x=\"360\" y=\"100\" fill=\"#10B981\">v = v<tspan dy=\"5\" font-size=\"10\">esc</tspan></text></svg>",
+        "caption": "Escape Velocity Concept"
+      }
+    },
+    {
+      "id": "svg-energy-escape",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"20\" fill=\"#334155\" font-style=\"italic\">½mv² = GMm/r</text><text x=\"150\" y=\"120\" text-anchor=\"middle\" fill=\"#64748B\">Kinetic Energy = Gravitational Potential Energy</text></svg>",
+        "caption": "Energy for Escape"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Orbital Motion' }], summaryText: '', ready: true },
   evidence: [],

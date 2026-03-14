@@ -12,7 +12,22 @@ export const note_physics_5_31_4 = {
     { id: 'para-9', type: 'paragraph', data: { text: "Vgrav= −GM r Where: V  = gravitational potential (J kg )–1" } },
     { id: 'para-10', type: 'paragraph', data: { text: "grav G = Newton's gravitational constant M = mass of the body producing the gravitational field (kg) r = distance from the centre of the mass to the point mass (m)" } },
     { id: 'para-11', type: 'paragraph', data: { text: "This means that the gravitational potential is negative on the surface of a mass (such as a planet), and increases with distance from that mass (becomes less negative) Work has to be done against the gravitational pull of the planet to take a unit mass away from the planet" } },
-
+    {
+      "id": "svg-grav-pe",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"24\" fill=\"#334155\" font-style=\"italic\">E<tspan dy=\"5\" font-size=\"14\">p</tspan><tspan dy=\"-5\"> = mV</tspan></text><text x=\"150\" y=\"120\" text-anchor=\"middle\" fill=\"#64748B\">GPE = mass × potential</text></svg>",
+        "caption": "Gravitational Potential Energy"
+      }
+    },
+    {
+      "id": "svg-work-done-gravity",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"150\" cy=\"100\" r=\"50\" fill=\"#E2E8F0\"/><circle cx=\"150\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#94A3B8\" stroke-dasharray=\"4,4\"/><circle cx=\"200\" cy=\"100\" r=\"10\" fill=\"#3B82F6\"/><circle cx=\"230\" cy=\"100\" r=\"10\" fill=\"#3B82F6\" opacity=\"0.5\"/><path d=\"M 200 80 L 230 80\" stroke=\"#EF4444\" marker-end=\"url(#arrow)\"/><text x=\"215\" y=\"70\" text-anchor=\"middle\" fill=\"#EF4444\">ΔW</text></svg>",
+        "caption": "Work Done in Gravitational Field"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Gravitational Potential for a Radial Field' }], summaryText: '', ready: true },
   evidence: [],

@@ -12,7 +12,22 @@ export const note_physics_5_33_5 = {
     { id: 'para-9', type: 'paragraph', data: { text: "equal to the natural frequency of the oscillator Examples include: An organ pipe, where air resonates down an air column setting up a stationary wave in the pipe" } },
     { id: 'para-10', type: 'paragraph', data: { text: "Glass smashing from a high pitched sound wave at the right frequency A radio tuned so that the electric circuit resonates at the same frequency as the specific broadcast Standing waves forming inside an organ pipe from resonance" } },
     { id: 'para-11', type: 'paragraph', data: { text: "Core Practical 16: Investigating Resonance Core Practical 16: Investigating Resonance Aim of the Experiment" } },
-
+    {
+      "id": "svg-useful-resonance",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><rect x=\"50\" y=\"50\" width=\"80\" height=\"80\" rx=\"10\" fill=\"#BBF7D0\"/><text x=\"90\" y=\"95\" text-anchor=\"middle\" fill=\"#166534\">MRI/NMR</text><rect x=\"170\" y=\"50\" width=\"80\" height=\"80\" rx=\"10\" fill=\"#BBF7D0\"/><text x=\"210\" y=\"95\" text-anchor=\"middle\" fill=\"#166534\">Clocks</text></svg>",
+        "caption": "Useful Resonance"
+      }
+    },
+    {
+      "id": "svg-destructive-resonance",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><rect x=\"50\" y=\"50\" width=\"80\" height=\"80\" rx=\"10\" fill=\"#FECDD3\"/><text x=\"90\" y=\"95\" text-anchor=\"middle\" fill=\"#9F1239\">Bridges</text><rect x=\"170\" y=\"50\" width=\"80\" height=\"80\" rx=\"10\" fill=\"#FECDD3\"/><text x=\"210\" y=\"95\" text-anchor=\"middle\" fill=\"#9F1239\">Engines</text></svg>",
+        "caption": "Destructive Resonance"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Damping & Plastic Deformation' }], summaryText: '', ready: true },
   evidence: [],

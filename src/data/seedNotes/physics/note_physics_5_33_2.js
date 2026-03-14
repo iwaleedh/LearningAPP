@@ -12,7 +12,22 @@ export const note_physics_5_33_2 = {
     { id: 'para-9', type: 'paragraph', data: { text: "possible Resonance Effects Resonance occurs for any forced oscillation where the frequency of the driving force is equal to the natural frequency of the oscillator" } },
     { id: 'para-10', type: 'paragraph', data: { text: "Examples include: An organ pipe, where air resonates down an air column setting up a stationary wave in the pipe Glass smashing from a high pitched sound wave at the right frequency" } },
     { id: 'para-11', type: 'paragraph', data: { text: "A radio tuned so that the electric circuit resonates at the same frequency as the specific broadcast Standing waves forming inside an organ pipe from resonance Core Practical 16: Investigating Resonance" } },
-
+    {
+      "id": "svg-resonance-examples",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 400 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"100\" cy=\"100\" r=\"40\" fill=\"#E0F2FE\" stroke=\"#38BDF8\"/><text x=\"100\" y=\"105\" text-anchor=\"middle\" fill=\"#0369A1\">Swing</text><circle cx=\"200\" cy=\"100\" r=\"40\" fill=\"#FEF08A\" stroke=\"#EAB308\"/><text x=\"200\" y=\"105\" text-anchor=\"middle\" fill=\"#A16207\">Radio</text><circle cx=\"300\" cy=\"100\" r=\"40\" fill=\"#FECDD3\" stroke=\"#F43F5E\"/><text x=\"300\" y=\"105\" text-anchor=\"middle\" fill=\"#BE123C\">Microwave</text></svg>",
+        "caption": "Everyday Resonance"
+      }
+    },
+    {
+      "id": "svg-bridge-resonance",
+      "type": "svg",
+      "data": {
+        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><path d=\"M 50 100 Q 150 50 250 100\" fill=\"none\" stroke=\"#64748B\" stroke-width=\"4\"/><path d=\"M 50 100 Q 150 150 250 100\" fill=\"none\" stroke=\"#94A3B8\" stroke-width=\"4\" stroke-dasharray=\"4,4\"/><text x=\"150\" y=\"40\" text-anchor=\"middle\" fill=\"#EF4444\">Wind force matches f₀</text></svg>",
+        "caption": "Bridge Oscillations"
+      }
+    },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Damped & Undamped Oscillating Systems' }], summaryText: '', ready: true },
   evidence: [],
