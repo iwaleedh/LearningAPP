@@ -131,7 +131,7 @@ export const physicsSyllabus = {
                         'Magnetic flux, flux linkage and forces',
                         'Electromagnetic induction',
                         'Faraday and Lenz laws',
-                        'Core Practical 11: capacitor charge-discharge',
+                        'Core Practical 11: Capacitor Charge-Discharge',
                     ],
                 },
                 {

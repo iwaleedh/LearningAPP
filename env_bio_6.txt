@@ -1,0 +1,528 @@
+Edexcel International A
+Level (IAL) Biology
+Microbiology
+Contents
+Culturing Microorganisms
+Measuring the Growth of Microorganisms
+The Bacterial Growth Curve
+Core Practical 13: Rate of Growth of Microorganisms
+Comparison of Bacterial & Viral StructureYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Culturing Microorganisms
+Culturing Microorganisms
+Most microorganisms are only visible using a microscope
+For microbe investigations it is therefore necessary to culture microorganisms
+This grows enough microorganisms to make measurements during investigations
+E.g. bacteria reproduce by cloning themselves, so when they are grown on agar gel
+they form a colony of identical individuals that is visible to the naked eye
+Microorganisms must be provided with everything they need to grow such as
+Nutrients
+Oxygen
+Note that anaerobic microorganisms would require the absence of oxygen
+Optimum pH
+Favourable temperature
+Microorganisms should be cultured with great care
+There is always the risk that a mutationcould lead to the formation of
+pathogenic strains
+Pathogenic bacteria from the environment could contaminate the bacterial culture
+being investigated
+Remember to
+Follow health and safety precautions
+Ensure that all equipment are sterilised before culturing the bacteria
+Sterilising involves killing microorganisms, e.g. by heating to a high temperature
+or the use of antimicrobial chemicals
+Keep the culture in the laboratory 
+Seal cultures in a plastic bag and sterilise at high temperature and pressure before
+disposal
+Culturing steps
+Obtain a supply of the type of microorganism to be cultured
+Provide them with the correct type of nutrients to facilitate growth
+A nutrient growth medium (plural media) containing carbon, nitrogen, and minerals
+is typically usedYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+The medium could be in the form of a liquid culture or a solid nutrient agar, a type of
+gel extracted from seaweed
+Ensure that the nutrient medium is kept under sterile conditions until use
+By adjusting the type of nutrients in the medium, conditions will be created for the
+optimal growth of a certain type of microorganism; this is known as a selective medium
+Selective media can be used to identify mutant strains of microorganisms or those
+that are resistant to antibiotics
+They are also useful for identifying genetically modified microorganisms
+Microorganisms are introduced to a growth medium using inoculation with a sterilised
+inoculation loop 
+Inoculation can be used to transfer microorganisms between media, e.g.
+From agar gel into a liquid culture flask
+From a liquid culture flask onto agar gel
+The new medium should besealed or covered to avoid contamination from
+microorganisms in the air; if growing aerobic microorganisms any seal or cover should
+not be airtight 
+Flasks can be sealed with a sterile cotton wool stopper 
+Petri dishes can be covered with a lid
+Label the medium clearly and incubate at around 20 °C to prevent the growth of
+pathogenic microorganisms
+Microorganisms that are pathogenic to humans will grow best at around 37 °C 
+In a hospital or research laboratory a higher temperature might be used to obtain
+faster results
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+A metal inoculating loop can be used to transfer microorganisms from a liquid broth
+medium onto an agar gel medium. A Bunsen burned enables sterilisation of the loop
+between uses.
+Growing a single type of microorganism
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+In order to grow a single type of microorganism, or a pure culture, the specific
+microorganism must be isolated
+This can be done by using knowledge about the needs of the microorganism to be
+cultured or those of microorganisms that may contaminate the culture
+Examples include
+Growing the culture under either aerobic or anaerobic conditions to reduce the
+variety of microorganisms in the culture
+Using a selective medium that is tailored to the specific requirements of the desired
+microorganism
+Indicator media can provide a colour change to distinguish desired colonies from
+the rest
+Being able to isolate pathogenic microorganisms is useful in the diagnosis and
+treatment of diseasesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Measuring the Growth of Microorganisms
+Measuring the Growth of Microorganisms
+Bacteria and most other microorganisms are too small to count with the naked eye
+There are a variety of methods that can be used to count microorganisms and it is
+important to be able to make an appropriate choice when conducting investigations
+These methods include
+Cell counts
+Dilution plating
+Measuring area and mass
+Optical methods
+Cell counts
+A microscope and haemocytometer can be used to count single-celled
+microorganisms
+A haemocytometer is a microscope slide with a rectangular chamber that is marked
+with grid lines
+The chamber can hold a standard volume of 0.1 mm
+Haemocytometers were originally used to count blood cells
+Haemo = blood
+Counting cells using a haemocytometer involves the following
+A nutrient broth is diluted with an equal volume of trypan blue
+This is a dye that will stain dead cells blue
+It enables the investigator to only count the living cells
+The chamber of the haemocytometer is filled with the stained nutrient broth
+The number of living cells in the four corner squares of the grid are counted
+Each corner square consists of 16 smaller squares
+Consistency needs to be used when deciding whether to count cells that are on
+the lines that border the corner squares
+E.g. Counting cells on the top and right-hand borders and ignoring cells on
+the bottom and left-hand borders
+The mean number of cells from the four corner squares can be calculated
+The haemocytometer is calibrated to allow the calculation of the number of cells in a
+known volume of broth3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+Because the haemocytometer chamber can hold exactly 0.1 mm of liquid, it is
+possible to estimate of the cell count in 1 ml of nutrient broth using the following
+calculation
+No. of cells per ml nutrient broth = mean cell count x dilution factor x 10
+Multiplying by the dilution factor enables calculation of the bacterial cell count in the
+original broth rather than the diluted broth
+The multiplication by 10 enables calculation of the bacterial cell count in 1 ml rather
+than in 0.1 mm
+1 ml = 1 cm
+1 cm  = 0.1 mm  x 10 000
+10 000 = 1 x 10
+E.g. in a scenario where a nutrient broth is diluted by a factor of 100 and the four corner
+grid squares contain 20, 14, 19, and 16 cells
+This gives a mean cell count of 17.25
+No. cells per ml nutrient broth = 17.25 x 100 x 10 = 17 250 000 3 
+4
+4
+3
+3
+3 3
+4
+4
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+The living cells in the corner squares of a haemocytometer grid can be counted to
+determine the number of microorganisms in a standard volume of nutrient broth
+Dilution plating
+This method can be used to determine the total viable cell count in a nutrient broth
+The nutrient broth is transferred to agar where the bacteria use nutrients in the agar
+gel to reproduce
+A single cell that lands on agar reproduces by cloning itself, resulting in a mass of
+identical cells known as a colony
+Each microbial colony that grows on agar gel originated with one viable
+microorganism, so can be counted as one viable cell
+Individual microbial colonies can be difficult to identify on an agar plate as they tend to
+form one large mass
+This problem can be overcome by diluting the original cultures before transferring the
+samples to agar; this reduces the number of cells in the original sample so that individual
+colonies are visible on an agar plate
+This is why the technique is known as dilution plating
+To calculate the total viable cell count, the number of colonies are multiplied by the
+dilution factor
+A mean can be determined if more than one plate is used
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+Dilution plating can provide a way to determine the total viable cell count of a microbial
+culture
+Area and mass of fungi
+Fungi do not always live as single-celled organisms, but can form a mass of elongated
+cells known as a fungal mycelium (plural mycelia); this means that the methods
+described above can be unsuitable for measuring the growth of some fungi
+Measuring the diameter of individual areas of the mycelium can be used to determine
+the growth of fungi
+Petri dishes of agar are inoculated with fungal spores and incubated at a suitable
+temperature
+The resulting areas of fungal mycelia are then measured
+This can be used to compare growth rates in different conditions, e.g. at different
+temperatures
+The larger the mean diameter, the greater the growth of the fungi
+Testing the dry mass of fungi is another effective way to measure fungal growth
+A liquid nutrient broth is inoculated with fungal spores
+Samples of the nutrient broth are removed at set time intervals
+The fungal mycelia are removed by filtering or centrifugation
+The material is dried in an oven overnight and its mass measured
+The higher the mass, the more fungal growth has occurred
+Optical methods
+Turbidimetry is a specialised form of colorimetry that can be used as an alternative
+method to measure the number of cells in a sample
+Turbidity is a measure of how cloudy a solution is 
+More turbid = more cloudy
+Less turbid = less cloudy
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Colorimetry uses a machine called a colorimeter to shine a beam of light at a sample
+and measure the amount of light that is either transmitted through or absorbed by
+the sample
+The higher the number of cells the more turbid the solution becomes
+More turbid solutions will absorb more light and allow less light through; this can be
+measured by a colorimeter
+This provides an indirect measure of the number of microorganisms present
+A calibration curve can be constructed by measuring the turbidity of a series of control
+cultures while also counting the cells in each culture using a haemocytometer; the
+results are plotted in a graph of turbidity against cell count
+This curve can then be used to estimate the cell count of unknown samples by
+measuring their turbidity and then reading their cell count from the graph
+A colorimeter can be used to determine the turbidity of a solution containing
+microorganisms. The solution containing bacteria is placed into a container called a
+cuvette and the amount of light that can pass through, or is absorbed by, the solution can
+be measured.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+The Bacterial Growth Curve
+The Bacterial Growth Curve
+Bacteria divide using the process of binary fission during which one cell will divide into
+two identical cells
+The process is as follows
+The single, circular DNA molecule undergoes DNA replication
+Any plasmids present undergo DNA replication
+The parent cell divides into two cells, with the cytoplasm roughly halved between
+the two daughter cells
+The two daughter cells each contain a single copy of the circular DNA molecule and
+a variable number of plasmidsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+The process of binary fission produces two identical daughter cells
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+Bacterial growth curve
+The growth of a bacterial population follows a specific pattern over time; this is known as
+a growth curve
+There are 4 phases in the population growth curve of a microorganism population
+Lag phase
+The population size increases slowly as the microorganism population adjusts
+to its new environment and gradually starts to reproduce
+Exponential phase
+With high availability of nutrients and plenty of space, the population moves into
+exponential growth; this means that the population doubles with each division
+This phase is also known as the log phase
+Stationary phase
+The population reaches its maximum as it is limited by its environment, e.g. a
+lack of resources and toxic waste products.
+During this phase the number of microorganisms dying equals the number
+being produced by binary fission and the growth curve levels off
+Death phase
+Due to lack of nutrients and a build up of toxic waste build up, death rate
+exceeds rate of reproduction and the population starts to decline
+This phase is also known as the decline phase
+There are four phases in the standard growth curve of a microorganism
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+Using logarithms in growth curves
+During the exponential growth phase bacterial colonies can grow at rapid rates with
+very large numbers of bacteria produced within hours
+Dealing with experimental data relating to large numbers of bacteria can be difficult
+when using traditional linear scales
+There can be a wide range of numbers reaching from single figures into millions
+This makes it hard to work out a suitable scale for the axes of graphs
+Logarithmic scales can be very useful when investigating bacteria or other
+microorganisms
+The numbers in a logarithmic scale represents logarithms, or powers, of a base
+number
+If using a log  scale, in which the base number is 10, the numbers on the y-axis
+represent a power of 10, e.g. 1=10(10), 2=10 (100), 3=10 (1000) etc.
+Logarithmic scales allow for a wide range of values to be displayed on a single graph
+For example, if yeast cells were grown in culture over several hours the number of cells
+would increase very rapidly from the original number of cells present
+The results from such an experiment are shown in the graph below using a log scale
+The number of yeast cells present at each time interval was converted to a logarithm
+before being plotted on the graph
+This can be done using a log function on a calculator
+The log scale is easily identifiable as there are not equal intervals between the
+numbers on the y-axis
+The wide range of cell numbers fit easily onto the same scale10
+1 2 3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+When a log  scale is used, the scale increases by a factor of 10 each time; this allows
+large increases in numbers to be shown on a single graph
+Exponential growth rate constants
+To calculate the number of bacteria in a population the following formula can be used
+Nt=N0x2kt
+Where
+N = the number of organisms at time t
+N  = the number of organisms at time 0
+k = the exponential growth rate constant
+t = the time for which the colony has been growing
+To use this equation the exponential growth rate constant k must be calculated
+10
+Examiner Tips and Tricks
+You won’t be expected to convert values into logarithms or create a log scale graph in
+the exam. Instead you might be asked to interpret results that use logarithmic scales
+or explain the benefit of using one! Remember that graphs with a logarithmic scale
+have uneven intervals between values on one or more axes.
+t
+0Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+This refers to the number of times the population doubles in a given time period
+The following formula can be used to calculate the exponential growth rate constant
+k =log10Nt−log10N0
+log102xt
+Worked Example
+A bacterial colony started with 2 individuals and after 3 hours of growing there were
+926 bacteria in the colony.
+1. Calculate the exponential growth rate constant of this colony
+2. Calculate the number of bacteria in the colony after 5 hours
+Answer:
+Step 1: Calculate the exponential growth rate constant
+k =log10Nt−log10N0
+log102xt
+k =log10 (926 ) −log10 (2 )
+log102x3
+k =2 .67
+0 .30x3
+k =3
+Step 2: Calculate the number of bacteria after 5 hours
+Nt =N0x2kt
+Nt=2x2(3 ) (5 )
+Nt=2x215
+Nt=65536Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Core Practical 13: Rate of Growth of Microorganisms
+Rate of Growth of Microorganisms
+There are several ways to investigate the growth of microorganisms
+In this example the change in turbidity of a yeast solution will be used as a measure of
+the growth of microorganisms in a liquid culture over time
+Turbidity = cloudiness of a solution
+Apparatus
+Cloths and antimicrobial solution
+Conical flask
+Glucose solution 
+Dried baker's yeast
+Bunsen burner
+Cotton wool
+Magnetic stirrer
+Aluminium foil
+Colorimeter
+Dropper pipette
+Cuvettes
+Optional
+Microscope
+Microscope slides with cover slips and graph paper photocopied on to acetate OR
+a haemocytometer
+Method
+1. Use antimicrobial solution to sterilise the work area
+2. Place 250 cm  glucose solution into a conical flask
+This solution will be the liquid culture medium
+3. Inoculate the glucose solution with 1.25 g dried yeast using aseptic techniques
+Work next to a Bunsen flame to ensure that microorganisms in the air are drawn
+away from the nutrient broth
+4. Seal the flask using a cotton wool stopper immediately after inoculation is complete to
+prevent contamination3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+5. Swirl to mix the yeast with the glucose solution and place on a magnetic stirrer
+6. While stirring continuously, loosely cover the stopper with aluminium foil and incubate
+the flask at 20 °C
+7. Fill a cuvette with plain glucose solution and use this as a blank to calibrate the
+colorimeter
+This ensures that the colorimeter is reset to zero before each measurement is taken
+8. Transfer about 3 cm  of the yeast suspension into a cuvette using a dropping pipette
+9. Use the colorimeter to measure the absorbance and record this in a suitable table
+against time
+10. Repeat steps 7−9 at intervals over a 12 hour period
+E.g. this could involve taking samples every 30 minutes for the first two hours and
+then every 2−3 hours after this
+11. Plot a graph of absorbance against time
+The temperature or concentration of the glucose solution can be changed and the
+experiment repeated to investigate the effect these changes would have on the growth
+of the yeast
+Optional extension to practical
+Turbidity measurements are useful as the turbidity of the medium is mainly a measure
+of the number of living cells in suspension; however, the measurement can be affected
+by the presence of dead cells and other suspended particles, so other methods of cell
+counting can be used to back up the turbidity findings, e.g.
+Use a haemocytometer to estimate the number of yeast cells in the glucose
+solution
+Calculate the area of the microscope's field of view using graph paper copied on to
+acetate, and use the number of cells in the field of view to estimate the number of
+cells in the glucose solution
+If using the area of the microscope's field of view the following steps can be used to
+estimate the number of cells in the growth medium
+Count thenumber of squares of acetate graph papervisible when using the x4
+objective lens and use this to calculate the area of the field of view under a x40
+objective lens; this will be 0.01 of the area of the x4 objective lens
+Stain the yeast suspension with methylene blue and place one drop of the
+suspension on a microscope slide
+View under the x40 objective lens and count the number of yeast cells in the field of
+view
+Calculate the volume of this drop by measuring the volume of 10 drops and dividing
+by 10
+To calculate the volume under the field of view when using the x40 objective lens,
+use the following formula3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+volume = (area of field of view of x40 objective lens ÷ area of cover slip) x volume of one
+drop
+To calculate the number of yeast cells in 1 mm  of medium the following formula can be
+used
+number of cells per mm  = average cell count in field of view ÷ volume of field of view
+Note that if many cells overlap when viewed under x40 objective lens a serial dilution of
+the yeast suspension will be required
+Safety
+Eye protection should be worn
+Care should be taken around Bunsen burners
+Aseptic techniques should be used when transferring microorganisms
+Cultures should be incubated at a safe temperature for school laboratory work; 20 °C
+and not 37 °C
+Work spaces and hands should be thoroughly disinfected at the end of the experiment
+Cultures should be safely destroyed at the end of the experiment3
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Comparison of Bacterial & Viral Structure
+Comparison of Bacterial & Viral Structure
+Bacteria
+Bacteria are single-celled prokaryotes
+Prokaryotic cells are much smaller than eukaryotic cells 
+They also differ from eukaryotic cells in having
+A cytoplasm that lacks membrane-bound organelles
+Ribosomes that are smaller (70 S) than those found in eukaryotic cells (80 S)
+No nucleus, instead having a single circular bacterial chromosome that is free in
+the cytoplasm and is not associated with proteins
+A cell wall that contains the glycoprotein murein
+Murein is sometimes known as peptidoglycan
+In addition, many prokaryotic cells also have the following structures
+Loops of DNA known as plasmids
+Capsules
+This is sometimes called the slime capsule
+It helps to protectbacteria from drying out and from attack by cells of the
+immune system of the host organism
+Flagella (singular flagellum)
+ Long, tail-like structures that rotate, enabling the prokaryote to move
+Some prokaryotes have more than one
+Pili (singular pilus)
+Thread-like structureson the surface of some bacteria that enable the bacteria
+to attach to other cells or surfaces
+Involved in gene transfer during sexual reproduction
+A cell membrane that contains folds known as mesosomes; these infolded regions
+can be the site of respiration
+Some bacteria are disease-causing, or pathogenic, but not all bacteria cause harm to
+other organismsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+Prokaryotic cells have a peptidoglycan cell wall, no membrane-bound organelles, a
+circular chromosome, and 70S ribosomes
+Viruses
+Viruses are non-cellular infectious particles
+They are relatively simple in structure, and much smaller than prokaryotic cells
+Structurally they have
+A nucleic acid core
+Their genomes are either DNA or RNA, and can be single or double-stranded
+A protein coat called a ‘capsid’ made of repeating units known as capsomeres
+They do not possess a plasma membrane, cytoplasm, or ribosomes
+Some viruses have an outer layer called an envelope formed from the membrane-
+phospholipids of the cell they were made in
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+The fact that lipid envelopes are formed from the membrane of a viral host cell
+means that very few plant viruses have lipid envelopes
+Some contain proteins inside the capsid which perform a variety of functions
+E.g. HIV contains the enzyme reverse transcriptase which converts its RNA into DNA
+once it has infected a cell
+Viruses also contain attachment proteins, also known as virus attachment
+particles, that stick out from the capsid or envelope
+These enable the virus to attach itself to a host cell
+Viruses can only reproduce by infecting living cells and using the protein-building
+machinery of their host cells to produce new viral particles
+Viruses are classified on the basis of the genetic material they contain and how they
+replicate
+They can be classified into the following categories
+DNA viruses
+RNA viruses
+Retroviruses
+HIV contains RNA as its genetic material. It is surrounded by a protein capsid, as well as
+having an outer lipid envelope and attachment proteins
+DNA viruses
+They contain DNA as genetic material
+Viral DNA acts as a direct template for producing new viral DNA and mRNA for the
+synthesis of viral proteins
+Examples: smallpox, adenoviruses, and bacteriophages
+Bacteriophages are viruses that infect bacteria, such as the λ (lambda) phage
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+Bacteriophage viruses, such as the λ  phage, are examples of DNA viruses
+RNA viruses
+They contain RNA as genetic material
+Most have a single strand of RNA
+They do not produce DNA at all
+Mutations are more likely to occur in RNA viruses than DNA viruses
+Examples: tobacco mosaic virus (TMV), ebola virus
+Retroviruses
+Special type of RNA virus that does produce DNA
+They contain a single strand of RNA surrounded by a protein capsid and lipid envelope
+Viral RNA controls the production of an enzyme called reverse transcriptase
+This enzyme catalyses production of viral DNA from the single strand of RNA 
+The new viral DNA is incorporated into the host DNA using integrase enzymeswhere
+it acts as a template to produce viral proteins and RNA
+Example: HIV (Human Immunodeficiency Virus)
+Lytic & Latency
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Viruses can only reproduce within a host cell as they lack the cellular machinery to do so
+on their own
+They can enter a host cell in a variety of different ways
+Bacteriophages inject their genetic material into bacteria
+Some animal viruses enter the cell via endocytosis by fusing their viral envelope with
+the host cell surface membrane
+Plant viruses will often use a vector such as an insect to breach the cell wall
+Once inside the host cell one of the following pathways can occur
+Lysogenic
+Lytic
+Lysogenic pathway
+Some viruses will not immediately cause disease once they infect a host cell
+Viral DNA known as a provirus is inserted into the host DNA, but a viral gene coding for a
+repressor protein prevents the viral DNA from being transcribed and translated
+Every time the host DNA copies itself, the inserted viral DNA will also be copied
+This is called latency and the time during which it occurs is known as a period of
+lysogeny
+Viruses in a lysogenic state may become activated and enter the lytic pathway
+Activation may occur as a result of, e.g. host cell damage or low nutrient levels inside
+a cell
+Lytic pathway
+The viral genetic material is transcribed and translated to produce new viral
+components
+These components are assembled into mature viruses that accumulates inside the host
+cell
+Eventually the host cell bursts which releases large numbers of viruses, each of which
+can infect a new host cell
+Cell bursting is known as cell lysis
+This typically results in diseaseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+The life cycle of the λ  bacteriophage includes a lysogenic and a lytic pathway
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25

@@ -1,72 +1,59 @@
 export const note_biology_4_5_20 = {
-  noteId: 'biology:4:5:20',
   blocks: [
     {
-      type: 'objective',
-      id: 'obj-cp11',
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Carry out a study on the ecology of a habitat, using quadrats and transects." }
+    },
+    {
+      id: "h-sampling",
+      type: "heading",
+      data: { text: "Core Practical 11: Habitat Ecology Survey", level: 2 }
+    },
+    {
+      id: "p-intro",
+      type: "paragraph",
+      data: { text: "It is impossible to count every organism, so we take samples. Samples must be random to avoid bias and large enough to be representative." }
+    },
+    {
+      id: "list-random",
+      type: "list",
       data: {
-        text: 'Understand Core Practical 11: Investigate the distribution and abundance of organisms in a habitat using quadrats and transects.',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-cp11-intro',
-      data: { text: 'Core Practical 11: Quadrat & Transect Study', level: 2 },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-cp11',
-      data: {
-        text: 'Ecologists use sampling to estimate population sizes and distribution without having to count every individual. Sampling must be representative to avoid bias.',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-quadrats',
-      data: { text: 'Random Sampling with Quadrats', level: 3 },
-    },
-    {
-      type: 'list',
-      id: 'list-quadrats',
-      data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          'Used for estimating abundance in a visually uniform habitat.',
-          'A grid is laid out over the area using measuring tapes. Coordinates are generated using a random number generator to remove human bias.',
-          'A frame quadrat (e.g. 0.5m x 0.5m) is placed at the coordinates.',
-          'Estimations: count individual plants, or use percentage cover if individuals are hard to distinguish (e.g. moss or grass).',
-          'Repeat many times to calculate a reliable mean abundance per square metre.'
-        ],
-      },
+          "Random Sampling (Quadrats): Used for uniform areas. Lay out a grid using measuring tapes. Generate random coordinates using a random number generator. Place the quadrat at those coordinates.",
+          "Percentage Cover: Estimate the percentage of the quadrat visually covered by a plant species. Good for grass/moss.",
+          "Frequency: If a species is found in 15 out of 30 quadrats, its frequency is 50%."
+        ]
+      }
     },
     {
-      type: 'heading',
-      id: 'h-transects',
-      data: { text: 'Systematic Sampling with Transects', level: 3 },
-    },
-    {
-      type: 'list',
-      id: 'list-transects',
+      id: "list-systematic",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          'Used to measure how distribution changes along an environmental gradient (e.g. moving away from the shore, or from light into forest shade).',
-          'A measuring tape (transect line) is laid across the habitat.',
-          'In a **Line Transect**, organisms touching the line at regular intervals are recorded.',
-          'In a **Belt Transect**, quadrats are placed at regular intervals (e.g. every 2 metres) continuously or interrupted, to give both distribution and abundance data.'
-        ],
-      },
+          "Systematic Sampling (Transects): Used to look at how species distribution changes across a gradient (e.g., from shore to woodland).",
+          "Line transect: A tape measure laid along the gradient, recording species touching the line.",
+          "Belt transect: Placing a quadrat along the tape at regular intervals (e.g., every 2m) to record species abundance and abiotic factors (like light meter reading) simultaneously."
+        ]
+      }
+    },
+    {
+      id: "callout-stats",
+      type: "callout",
+      data: { style: "key", title: "Statistical Analysis", text: "Spearman's Rank Correlation Coefficient can be used to statistically check if there is a significant correlation between a species' abundance (from the belt transect) and an abiotic factor (like distance or light)." }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'list-quadrats', prompt: 'How is bias avoided when choosing quadrat locations?' },
-      { id: 'cue-2', blockId: 'list-transects', prompt: 'When would a systematic belt transect be more appropriate than random quadrat sampling?' }
+      { id: "cue-1", blockId: "list-random", prompt: "How do you ensure quadrat sampling is random and unbiased?" },
+      { id: "cue-2", blockId: "list-systematic", prompt: "When is a belt transect used instead of random quadrats?" },
+      { id: "cue-3", blockId: "callout-stats", prompt: "Which statistical test determines correlation between abundance and an abiotic factor?" }
     ],
-    summaryText: 'Quadrats placed at random coordinates estimate uniform abundance, while belt transects measure changing distribution along an environmental gradient.',
-    ready: true,
+    summaryText: "Ecology surveys use random quadrats for uniform areas (coordinates via random number generator) and belt transects for environmental gradients. Data often includes percentage cover and is analyzed using Spearman's rank for correlations.",
+    ready: true
   },
-  evidence: [],
-  mentions: [],
+  evidence: []
 };

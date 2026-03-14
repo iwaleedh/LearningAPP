@@ -1,0 +1,1097 @@
+Edexcel International A
+Level (IAL) Biology
+Reproduction & Inheritance
+Contents
+Gene Locus
+Meiosis & Variation
+Mammalian Gametes
+Fertilisation: Mammals
+Fertilisation: Flowering Plants
+The Cell Cycle & Mitosis
+Core Practical 6: Observing the Stages of Mitosis
+Calculation of Mitotic Index
+Stem Cells & Cell Potency
+Cell Specialisation
+Post-Transcriptional Changes to mRNA
+Gene Interaction & Epigenetics
+Polygenic Inheritance & Continuous VariationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Gene Locus
+Gene Loci
+Every chromosome consists of a long DNA molecule that contains several hundred or
+even thousands of different genes coding for different proteins
+A length of DNA that codes for a single polypeptide or protein is called a gene
+The position of a gene on a chromosome is known as its locus (plural: loci)
+Through experiments and genetic mapping techniques, scientists have been able to
+work out the specific physical locations of the genes on different chromosomes
+Each gene occupies a specific locus so that the gene for a particular characteristic
+is always found at the same position on a particular chromosome
+Each gene can exist in two or more different forms called alleles
+Different alleles of a gene have slightly different nucleotide sequences but they still
+occupy the same position (locus) on the chromosome
+Five different genes found at five different loci
+Gene Linkage
+Gene loci are said to be linked if they are on the same chromosome
+Loci (singular: locus) refers to the specific linear positions on the chromosome that
+genes occupy
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Linked genes located on human chromosomes 1 to 22 (i.e. any chromosome that is not a
+sex chromosome, known as autosomes) are said to be examples of autosomal linkage
+If genes are located on the same sex chromosome, they are said to be sex-linked
+Autosomal linkage
+As its name implies, autosomal linkage only occurs on the autosomes (any chromosome
+that isn’t a sex chromosome)
+Two or more genes on the same autosome do not assort independently during meiosis
+Instead, these genes are linked and they stay together in the original parental
+combination
+These linked genes are passed on to offspring all together (through the gametes)
+Sex linkage
+There are two sex chromosomes: X and Y
+Females have two copies of the X chromosome (XX), whereas males have one X
+chromosome and one shorter Y chromosome (XY)
+Some genes are only present on one sex chromosome and not the other
+As the inheritance of these genes is dependent on the sex of the individual they are
+known as sex-linked genes
+Most often sex-linked genes are found on the longer X chromosome
+If the gene is on the X chromosome, males (XY) will only have one copy of the gene,
+whereas females (XX) will have two
+Because males only have one X chromosome, they are much more likely to show
+sex-linked recessive conditions (such as red-green colour blindness and
+haemophilia)
+Females, having two copies of the X chromosome, are likely to inherit one dominant
+allele that maskstheeffect of the recessive allele
+A female with one recessive allele masked in this way is known as a carrier; she
+doesn’t have the disease, but she has a 50% chance of passing it on to her offspring
+If that offspring is a male, he will have the disease
+The presence of sex linkage can be identified using pedigree diagrams and Punnett
+squares
+When a gene is sex-linked the phenotypes are not spread evenly across the sexes
+In the case of a gene that causes a sex-linked disease, one sex will be
+disproportionately affected
+The results of a cross between a normal male and a female who is a carrier for colour
+blindness are shown below. In this cross, there is a 25% chance of producing a male
+who is colourblind, a 25% chance of producing a female carrier, a 25% chance of
+producing a normal female and a 25% chance of producing a normal maleYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+Punnett square showing the inheritance of colourblindness, an X-linked condition
+Working in the USA in the early 20th century, a scientist called Thomas Hunt Morgan bred
+fruit flies (Drosophila melanogaster) over successive generations
+In his cross-breeding experiments, he came across red-eyed wild types and white-eyed
+mutants
+He realised there was a distinct sex bias in the phenotypic distribution of the offspring:
+All-female offspring of a red-eyed male were red-eyed while all male offspring of a
+white-eyed female were also white-eyed
+Morgan hypothesised that this occurred because the gene for eye colour was located
+on a sex chromosome (i.e. it was X-linked)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Sex linkage in Drosophila. A cross between a homozygous white-eyed female and a male
+with red eyes gives all white-eyed males and red-eyed female offspring
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Meiosis & Variation
+Independent Assortment
+Meiosis gives rise to cells that are genetically different from each other and is the type
+of cell division used to produce gametes (sex cells)
+During meiosis, the nucleus of the original 'parent' cell undergoes two rounds of
+division. These are:
+Meiosis I
+Meiosis II
+Meiosis I
+The nucleus of the original 'parent' cell is diploid (2n) i.e. it contains two sets of
+chromosomes
+Before meiosis I, these chromosomes replicate
+During meiosis I, the homologous pairs of chromosomes are split up, to produce two
+haploid (n) nuclei
+At this point, each chromosome still consists of two chromatids
+Note that the chromosome number halves (from 2n to n) in the first division of meiosis
+(meiosis I), not the second division (meiosis II)
+Meiosis II
+During meiosis II, the chromatids that make up each chromosome separate to produce
+fourhaploid (n) nuclei
+At this point, each chromosome now consists of a single chromatidYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+During meiosis, one diploid nucleus divides by meiosis to produce four haploid nuclei
+Having genetically different offspring can be advantageous for natural selection
+Meiosis has several mechanisms that increase the genetic diversity of gametes
+produced. The two main mechanisms are:
+Independent assortment
+Crossing over
+Both independent assortment and crossing over result in different combinations of
+alleles in gametes
+Independent assortment
+Independent assortment is the production of different combinations of alleles in
+daughter cells due to the random alignment of homologous pairs along the equator of
+the spindle during metaphase I of meiosis I
+The different combinations of chromosomes in daughter cells generate an increase in
+the genetic variation between gametes
+In meiosis I, homologous chromosomes pair up and are pulled towards the equator of
+the spindle
+Each pair can be arranged with either chromosome on top, this is completely
+random
+The orientation of one homologous pair is independent/unaffected by the
+orientation of any other pair
+The homologous chromosomes are then separated and pulled apart to different poles
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+The combination of alleles that end up in each daughter cell depends on how the pairs
+of homologous chromosomes were lined up
+To work out the number of different possible chromosome combinations the formula 2
+can be used, where n corresponds to the number of chromosomes in a haploid cell
+For humans, this is 2  which calculates as 8,324,608 different combinations
+Independent assortment of homologous chromosomes leads to different genetic
+combinations in daughter cellsn
+23
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+Crossing Over
+Crossing over is the process by which non-sister chromatids exchange alleles
+Process:
+During prophase I of meiosis I homologous chromosomes pair up and are in very
+close proximity to each other
+The paired chromosomes are known as bivalents
+The non-sister chromatids can cross over and get entangled
+These crossing points are called chiasmata
+The entanglement places stress on the DNA molecules
+As a result of this, a section of chromatid from one chromosome may break and
+rejoin with the chromatid from the other chromosome
+This swapping of alleles is significant as it can result in a new combination of alleles on
+the two chromosomes
+There is usually at least one, if not more, chiasmata present in each bivalent during
+meiosis
+Crossing over is more likely to occur further down the chromosome away from the
+centromere
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Crossing over of non-sister chromatids leads to the exchange of genetic material
+Examiner Tips and Tricks
+Several sources of genetic variation have been outlined above. It is also worth
+remembering that genetic variation can occur on an even smaller scale than
+chromosomes. Mutations can occur within genes. A random mutation that takes
+place during DNA replication can lead to the production of new alleles and increased
+genetic variation.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+Mammalian Gametes
+Gamete Specialisation
+Gametes
+Gametes are the sex cells of an organism
+For example, the sperm and egg (ovum) cells in humans
+Gametes fuse during fertilisation to form a zygote
+Fertilisation is the fusion of the nuclei from a male gamete (sperm cell) and a female
+gamete (egg cell)
+These sex cells are formed during meiosis and only have one copy of each
+chromosome, so they are haploid cells
+For humans, that means the sperm and egg cells contain 23 single chromosomes in
+their nucleus
+Sexual reproduction involves the fusing of two gametes to form a zygote that contains
+DNA from both parents
+Mammalian gametes are specialised for their functions
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+Mammalian gametes have adaptations to increase the chances of fertilisation and
+successful development of an embryo
+Sperm cells:
+Have a flagellum (tail) that allows them to swim towards the egg cell
+Contain many mitochondria that provide energy for movement of the flagellum
+(swimming)
+An acrosome that contains digestive enzymes to break down the protective
+glycoprotein layer (a jelly-like coating known as the zona pellucida) surrounding the
+egg cell - sperm cells must penetrate this layer in order to fertilise the egg
+Egg cells:
+Are much larger than sperm cells as most of their internal space contains food to
+nourish a growing embryo
+Have follicle cells that form a protective coating
+Have a jelly-like glycoprotein layer, known as the zona pellucida, that forms an
+impenetrable barrier after fertilisation by a sperm cell has occurred, to prevent
+other sperm nuclei from entering the egg
+These features are summarised in the diagrams and tables below 
+Structure of a mammalian sperm cell
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+Structure of a mammalian egg cell
+Adaptations of Mammalian Gametes Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+Fertilisation: Mammals
+Fertilisation in Mammals
+During sexual intercourse, semen is ejaculated high up into the vagina of the female,
+near the cervix
+The sperm cells then follow a chemical trail released by the egg cell and travel up
+through the cervix to reach the uterus (the womb)
+The sperm cells then travel into the oviduct containing the egg cell
+If a sperm cell meets the egg cell in the oviduct, fertilisation can occur
+This is most likely to occur 1−2 days after the female has ovulated (i.e. released an
+egg cell from one of her ovaries into an oviduct)
+Fertilisation is the fusion of the nuclei from a male gamete (sperm cell) and a female
+gamete (egg cell)
+During fertilisation, the head of a sperm cell releases enzymes that digest a path
+through the protective outer layer of the egg cell (the zona pellucida), allowing the
+sperm to pass through the egg cell membrane
+This process is known as the acrosome reaction
+Once this occurs, the egg cell immediately releases the contents of vesicles known
+as cortical granules into the space between the egg cell membrane and the zona
+pellucida
+The chemicals contained within the cortical granules cause the zona pellucida to
+rapidly thicken and harden, preventing any more sperm cells from entering,
+ensuring only one sperm cell can fertilise the egg cell
+This process is known as the cortical reaction
+The nucleus of the sperm cell then enters the egg and fuses with the nucleus of the egg
+cell
+When the male and female gamete nuclei fuse, they become a zygote (fertilised egg
+cell)
+This zygote contains the full 46 chromosomes (23 pairs of chromosomes), half of which
+came from the father and half from the mother
+The zygote divides by mitosis to form two new cells, which then continue to divide like
+this until an embryo is formed after a few days
+Cell division continues and eventually many of the new cells produced become
+specialised to perform particular functions and form all the body tissues of the offspringYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+The process of fertilisation in mammals
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+Fertilisation: Flowering Plants
+Fertilisation in Flowering Plants
+Sexual reproduction in flowering plants requires the transfer of pollen between male
+and female parts of flowers
+The development of flowers occurs in the reproductive stage of the plant life cycle
+Flowers contain all the necessary organs and tissues required for sexual reproduction
+by pollination
+Key structures of the flower include
+The anther - where pollen is produced
+The stigma - part of the female reproductive organ which receives the pollen
+The ovary - where the female gametes are located
+Flowers usually contain both male and female reproductive parts
+The male reproductive parts produce pollen
+The transferal of pollen from the anther to the stigma is known as pollination
+Double fertilisation
+After pollination has occurred, the pollen grain begins to 'grow' or 'germinate' and a
+pollen tube grows from the pollen grain down the style to the ovary of the plant
+As the pollen tube grows towards the ovary, two haploid male nuclei move down the
+tube
+These are known as the pollen tube nucleus and the generative nucleus
+At some point, as it travels down the pollen tube, the generative nucleus divides by
+mitosis to form a further two haploid male nuclei
+These are the male gametes
+The two haploid male nuclei travel down the pollen tube towards the female ovule
+As the pollen tube reaches the ovule, the pollen tube nucleus breaks down and the two
+haploid male nuclei pass into the ovule so that fertilisation can occur
+In fact, a process known as double fertilisation occurs:
+One haploid male nucleus fuses with the nucleus of the egg cell to form a diploid
+zygote
+The other haploid male nucleus fuses with two polar nuclei present in the ovule to
+form a triploid endosperm nucleus, which will form the endosperm (the food supply
+for the embryo plant when it begins to germinate)Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+The process of double fertilisation in plants, in which one male nucleus fuses with the two
+polar nuclei to form the triploid endosperm nucleus and the other fuses with the egg cell
+to form the diploid zygote
+Examiner Tips and Tricks
+Students often get confused between pollination and fertilisation in plants, but they
+are not the same thing. Think of pollination as the plant’s equivalent to sexual
+intercourse in mammals – after sexual intercourse, the male sex cells (sperm) have
+been deposited into the female. But, for fertilisation to occur, the nucleus of a male
+sperm cell has to fuse with the nucleus of a female sex cell (egg) and the sperm has to
+travel to find the egg before this happens. It’s exactly the same in plants!Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+The Cell Cycle & Mitosis
+The Cell Cycle
+Mitosis is part of a precisely controlled process known as the cell cycle
+The cell cycle is the regulated sequence of events that occurs between one cell
+division and the next
+The cell cycle has three phases:
+Interphase
+Nuclear division (mitosis)
+Cell division (cytokinesis)
+The length of the cell cycle is very variable depending on environmental conditions, the
+cell type and the organism
+For example, onion root tip cells divide once every 20 hours (roughly) but human
+intestine epithelial cells divide once every 10 hours (roughly)
+The movement from one phase to another is triggered by chemical signals called cyclins
+The stages of the cell cycle
+Interphase
+During Interphase the cell increases in mass and size and carries out its normal cellular
+functions, e.g. synthesising proteins and replicating its DNA ready for mitosis
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Interphase consists of three phases:
+G phase
+S phase
+G phase
+It is at some point during the G phase that a signal is received telling the cell
+to divide again
+The DNA in the nucleus replicates (resulting in each chromosome consisting of two
+identical sister chromatids)
+This phase of the interphase stage of the cell cycle is called the S phase – S stands
+for synthesis (of DNA)
+The S phase is relatively short
+The gap between the previous cell division and the S phase is called the G phase –
+G stands for gap
+Cells make the RNA, enzymes and other proteins required for growth, as well as
+replicating organelles during the G phase
+Between the S phase and next cell division event the G phase occurs
+During the G phase, the cell continues to grow and the new DNA that has been
+synthesised is checked and any errors are usually repaired
+Other preparations for cell division are made (e.g. production of tubulin protein,
+which is used to make microtubules for the mitotic spindle)
+Interphase = G + S + G
+Nuclear division (mitosis)
+Follows interphase
+Referred to as the M phase – M stands for mitosis
+Cell growth stops during the M phase
+During mitosis, the two identical sister chromatids of each chromosome separates
+from each other and move to opposite poles of the cell
+This ensures that each new nucleus that forms will contain the exact same genetic
+information as the original nucleus
+Cytokinesis
+Follows M phase
+Once the nucleus has divided into two genetically identical nuclei, the whole cell
+divides and one nucleus moves into each cell to create two genetically identical
+daughter cells
+In animal cells, cytokinesis involves constriction of the cytoplasm between the two
+nuclei and in plant cells a new cell wall is formed1
+2
+1
+1
+1
+2
+2
+1 2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+Mitosis
+Mitosis is the process of nuclear division by which two genetically identical daughter
+nuclei are produced that are also genetically identical to the parent cell nucleus (they
+have the same number of chromosomes as the parent cell)
+Although mitosis is, in reality, one continuous process, it can be divided into four main
+stages
+These stages are:
+Prophase
+Metaphase
+Anaphase
+Telophase
+Most organisms contain many chromosomes in the nuclei of their cells (eg. humans have
+46) but the diagrams below show mitosis of an animal cell with only four chromosomes,
+for the sake of simplicity
+The different colours of the chromosomes are just to show that half are from the female
+parent and half from the male parent
+Prophase
+Chromosomes condense and are now visible when stained
+The chromosomes consist of two identical chromatids called sister chromatids (each
+containing one DNA molecule) that are joined together at the centromere
+The two centrosomes (replicated in the G phase just before prophase) move
+towards opposite poles (opposite ends of the nucleus)
+Spindle fibres (protein microtubules) begin to emerge from the centrosomes (which
+consist of two centrioles in animal cells)
+The nuclear envelope (nuclear membrane) breaks down into small vesiclesExaminer Tips and Tricks
+Make sure you know the order of the phases of the cell cycle but also what specifically
+occurs during the different phases. Don’t forget, interphase is itself made up of three
+distinct stages (G, S and G) and you need to know what happens during each of
+these.
+For example, an exam question might ask you to identify the stage of the cell cycle
+during which a cell would be producing the most mRNA molecules and explain why.
+The correct answer would be the G phase, as this is when protein synthesis is
+occurring and the production of mRNA occurs during transcription (the first part of
+protein synthesis).1 2
+1
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+Prophase stage of mitosis where chromosomes condense into visible structures
+Metaphase
+Centrosomes reach opposite poles
+Spindle fibres (protein microtubules) continue to extend from centrosomes
+Chromosomes line up at the equator of the spindle (also known as the metaphase plate)
+so they are equidistant to the two centrosome poles
+Spindle fibres (protein microtubules) reach the chromosomes and attach to the
+centromeres
+Each sister chromatid is attached to a spindle fibre originating from opposite poles
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+Metaphase, where chromosomes line up along the equator of the cell
+Anaphase
+The sister chromatids separate at the centromere (the centromere divides in two)
+Spindle fibres (protein microtubules) begin to shorten
+The separated sister chromatids (now called chromosomes) are pulled to opposite
+poles by the spindle fibres (protein microtubules)
+Anaphase, where chromosomes are pulled to the poles of the cell
+Telophase
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Chromosomes arrive at opposite poles and begin to decondense
+Nuclear envelopes (nuclear membranes) begin to reform around each set of
+chromosomes
+The spindle fibres break down
+Telophase, where the nuclei reform and the cell begins to split into two
+The significance of mitosis
+The process of mitosis is of great biological significance and is fundamental to many
+biological processes, including:
+The growth of multicellular organisms
+The replacement of cells and repair of tissues
+Asexual reproduction
+Growth of multicellular organisms
+The two daughter cells produced are genetically identical to one another (clones) and
+have the same number of chromosomes as the parent cell
+This enables unicellular zygotes (as the zygote divides by mitosis) to grow into
+multicellular organisms
+Growth may occur across the whole body of the organism or be confined to certain
+regions, such as in the meristems (growing points) of plants
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+Replacement of cells & repair of tissues
+Damaged tissues can be repaired by mitosis followed by cell division
+As cells are constantly dying they need to be continually replaced by genetically
+identical cells
+In humans, for example, cell replacement occurs particularly rapidly in the skin and the
+lining of the gut
+Some animals can regenerate body parts, for example, zebrafish can regenerate fins and
+axolotls regenerate legs and their tail amongst other parts
+Asexual reproduction
+Asexual reproduction is the production of new individuals of a species by a single parent
+organism – the offspring are genetically identical to the parent
+For unicellular organisms such as Amoeba, cell division results in the reproduction of a
+genetically identical offspring
+For multicellular organisms (as seen with many plant species) new individuals grow from
+the parent organism (by cell division) and then detach (‘bud off’) from the parent in
+different ways. Some examples of these are budding in Hydra and yeast and runners
+from strawberries
+Examiner Tips and Tricks
+Make sure you learn the four stages of mitosis. Cytokinesis is often mistaken as a
+stage of mitosis, but remember this is a separate part of the cell cycle. 
+The acronym PMAT can be helpful to remind you what happens during each stage of
+mitosis:
+P = Prophase, where the cell Prepares to divides
+M = Metaphase, where the chromosomes align along the Middle
+A = Anaphase, where the chromosomes move Away from each other
+T = Telophase, where Two nuclei reform
+The chromosome number is important too; after interphase but before the parent cell
+undergoes mitosis, the human parent cell nucleus actually contains 92 DNA
+molecules! This is because during interphase (S phase), the 46 DNA molecules in the
+parent cell have replicated to form sister chromatids. As human cells have a diploid
+number of 46 this replication results in 92 molecules. This ensures the two daughter
+cells will be diploid (have 46 chromosomes each) when mitosis occurs. Remember to
+read the questions carefully as only human diploid cells have 46 chromosomes so if
+the question refers to another organism, its diploid number will be different.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+Core Practical 6: Observing the Stages of Mitosis
+Observing the Stages of Mitosis
+Growth in plants occurs in specific regions called meristems
+The root tip meristem can be used to study mitosis
+The root tip meristem can be found just behind the protective root cap
+In the root tip meristem, there is a zone of cell division that contains cells
+undergoing mitosis
+Pre-prepared slides of root tips can be studied or temporary slides can be prepared
+using the squash technique (root tips are stained and then gently squashed, spreading
+the cells out into a thin sheet and allowing individual cells undergoing mitosis to be
+clearly seen)
+A micrograph of a stained root tip, nuclei are clearly visible
+Apparatus
+Roots of onion or garlic
+Microscope slide
+Cover slip
+1 M hydrochloric acid
+Stain (acetic orcein, toluidine blue for example)
+Paper towel
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+Scalpel blade
+Cutting tile
+Water bath at 60C
+Boiling tube
+Optical microscope
+Method
+1. Garlic or onion (Allium cepa) root tips are most commonly used (the bulbs can be
+encouraged to grow roots by suspending them over water for a week or two)
+2. Prepare a boiling tube of 1M hydrochloric acid and place in a water bath at 60C for 10
+minutes
+3. Remove the tips of the roots (about 1cm) and place in the warmed hydrochloric acid for
+5 minutes
+4. Rinse the tips well in cold water using a pipette and blot dry with a paper towel 
+5. Cut approximately 2mm off the tip and place onto a microscope slide
+6. Add a drop of a suitable stain (eg. warm, acetic orcein, which stains chromosomes a
+deep purple)
+7. The stained root tip is gently squashed on a glass slide using a blunt instrument (eg. the
+handle of a mounting needle or a cover slip using your fist to gently apply pressure in a
+rolling motion)
+8. View the slide under the microscope
+9. Cells undergoing mitosis (similar to those in the images below) can be seen and drawn
+10. Annotations can then be added to these drawings to show the different stages of
+mitosis
+Results
+You should be able to observe cells in different stages of mitosis from the stained
+meristem o
+oYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+Micrograph of cells from a meristem showing cells in prophase (P)
+Micrograph of cells undergoing metaphase (M) and anaphase (A)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+Calculation of Mitotic Index
+Calculation of Mitotic Index
+How to calculate mitotic index
+The mitotic index is the proportion of cells (in a group of cells or a sample of tissue) that
+are undergoing mitosis
+The mitotic index can be calculated using the formula below:
+Mitotic index formula
+mitotic index = number of cells with visible chromosomes ÷ total number of cells
+You can multiply the answer by 100 if you need to give the mitotic index as a percentage
+Worked Example
+A student who wanted to observe mitosis prepared a sample of cells. They counted
+a total of 42 cells in their sample, 32 of which had visible chromosomes. Calculate
+the mitotic index for this sample of cells (give your answer to 2 decimal places).
+Answer:
+Mitotic index = number of cells with visible chromosomes ÷ total number of cells
+Mitotic index = 32 ÷ 42
+Mitotic index = 0.76
+Worked Example
+The table below shows the number of cells in different stages of mitosis in a sample
+from a garlic root tip. Calculate the mitotic index for this tissue (give your answer to 2
+decimal places).Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+Mitotic index = number of cells with visible chromosomes ÷ total number of cells
+Mitotic index = (prophase + metaphase + anaphase + telophase) ÷ total number of
+cells
+Mitotic index = (14 + 5 + 3 + 6) ÷ (36 + 14 + 5 + 3 + 6)
+Mitotic index = 28 ÷ 64
+Mitotic index = 0.44
+Worked Example
+The micrograph below shows a sample of cells from an onion root tip. Calculate the
+mitotic index for this tissue (give your answer to 2 decimal places).
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+The cells undergoing mitosis have been identified in green
+Number of cells with visible chromosomes (green) = 20
+Total number of cells (green + red) = 20 + 55 = 75
+Mitotic index = number of cells with visible chromosomes ÷ total number of cells
+Mitotic index = 20 ÷ 75
+Mitotic index = 0.27
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31
+Stem Cells & Cell Potency
+Stem Cells
+A stem cell is a cell that can divide (by mitosis) an unlimited number of times
+Each new cell (produced when a stem cell divides) has the potential to remain a stem cell
+or to develop into a specialised cell such as a blood cell or a muscle cell (by a process
+known as differentiation)
+This ability of stem cells to differentiate into more specialised cell types is known as
+potency
+There are three main types of potency:
+Totipotency – totipotent stem cells are embryonic stem cells that can differentiate
+into any cell type found in an embryo, as well as extra-embryonic cells (the cells
+that make up the placenta and umbilical cord)
+Pluripotency – pluripotent stem cells are embryonic stem cells that can
+differentiate into any cell type found in an embryo but are not able to differentiate
+into cells forming the placenta and umbilical cord
+Multipotency – multipotent stem cells are adult stem cells that have lost some of
+the potency associated with embryonic stem cells and are no longer pluripotent
+Totipotent cells
+Totipotent cells can divide and produce any type of body cell
+Totipotent cells exist for a limited time in early mammalian embryos
+The zygote formed when a sperm cell fertilises an egg cell is totipotent
+The embryonic cells up to the 16−cell stage of human embryo development (around the
+fourth day after fertilisation) are also totipotent
+These cells are still in the form of a solid ball of cells known as a morula
+Initially, the totipotent cells in the embryo are unspecialised
+During development, totipotent cells begin to translate only part of their DNA, which
+results in cell specialisation
+There are no totipotent cells present in the later stages of development as cells lose
+their ability to differentiate into any cell type
+Pluripotent cells
+By around the fifth dayafter fertilization, the embryonic cells have divided further and
+formed a structure known as a blastocyst, which has an outer layer of cells and an inner
+mass of cells (that are located inside the outer layer)
+The outer layer of cells will later form the placentaYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 32
+The inner mass cells are no longer totipotent (they have lost some of their ability to
+differentiate)
+They can still differentiate into any cell type found in an embryo but are not able to
+differentiate into cells forming the placenta and umbilical cord
+These cells are known as pluripotent embryonic stem cells
+Multipotent cells
+Stem cells are also found in some adult tissues but they are much less potent than
+embryonic stem cells (i.e. they can only specialise into certain types of cells)
+For example, intestinal stem cells specialise into intestinal epithelial cells to replace
+those that are constantly being lost
+This form of potency is known as multipotency – multipotent stem cells are adult stem
+cells that have lost some of the potency associated with embryonic stem cells and are
+no longer pluripotent
+Plants also contain stem cell in areas of growth, such as their shoots and roots
+Stem cells can be totipotent, pluripotent or multipotent
+Use of Stem Cells in Medicine
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 33
+As stem cells have the ability to differentiate into other specialised cell types, they are
+very valuable in medical research and treatments as they have the potential to replace
+damaged tissues and cells (that result from certain diseases)
+For example, many stem cell therapies already exist, including the treatment for
+leukaemia (bone marrow cancer), in which the existing stem cells in the bone
+marrow are killed, before being replaced using a bone marrow stem cell transplant,
+which will eventually replace all the bone marrow cells
+Other stem cell therapies are being researched, including therapies that replace
+damaged nerve tissue to treat spinal cord injuries and therapies that replace
+damaged heart tissue to treat heart disease and tissue damage caused by heart
+attacks
+There are two sources of human stem cells for use in medicine and research:
+Embryonic stem cells
+Adult stem cells
+Use of embryonic stem cells
+Due to their ability to differentiate into almost any cell type, embryonic stem cells have
+huge potential in the therapeutic treatment of many diseases
+For many countries, such as the USA and some countries within the EU, the use of
+embryonic stem cells is banned, even for research
+In other countries, such as the UK, the use of embryonic stem cells is allowed for
+research but is verytightly regulated
+Embryonic stem cells can be one of two potencies:
+Totipotent if taken in the first 3−4 days after fertilisation
+Pluripotent if taken on day 5
+The embryos used for research are often the waste (fertilised) embryos from in vitro
+fertilisation (IVF) treatment
+This means these embryos have the potential to develop into human beings
+This is why many people have ethical objections to using them in research or
+medicine
+Use of adult stem cells
+Adult stem cells can divide (by mitosis) an unlimited number of times but they are only
+able to produce a limited range of cell types
+A small number of adult stem cells are found in certain tissues within the body such as:
+Bone marrow - used to produce different types of blood cell
+Brain - used to produce different types of neural and glial cells
+These small numbers of stem cells remain to produce new cells for the essential
+processes of growth, cell replacement and tissue repairYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 34
+Research is being carried out on stem cell therapy, which is the introduction of adult
+stem cells into damaged tissue to treat diseases (e.g. leukaemia) and injuries (e.g. skin
+burns)
+The use of adult stem cells is less controversial than embryonic stem cells because the
+donor is able to give permission
+For example, many people donate bone marrow to help treat leukaemia patients
+However, if adult stem cells are being donated from one person to another they need to
+be a close match in terms of blood type and other body antigens
+Otherwise, there is a chance that the cells used are rejected by the patient's
+immune system (the cells in the stem cell transplant are recognised as being
+foreign and are attacked by the patient's immune system)
+Ideally, the patient's own adult stem cells are used to treat them, as there is a much
+lower chance of rejection
+Sources of Human Stem Cells Table
+Evaluating the use of stem cells in medicine
+The use of stem cells that are collected from embryos created via IVF is ethically
+questionable as this results in a viable embryo (an embryo that could become a foetus if
+implanted in a uterus) being destroyed
+Although their use raises fewer ethical questions, the disadvantage of only using adult
+stem cells is that, unlike embryonic stem cells, they are unable to differentiate into all of
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 35
+the specialised cell types (some of which may be required to treat certain diseases)
+This means that society has to use all the available scientific knowledge to make
+decisions about the use of stem cells (especially embryonic stem cells) in medical
+therapies, considering all the argumentsfor and against their use
+Official regulatory authorities are required to help society make these decisions. They
+do this by comparing the benefits and ethical issues of stem cell research and making
+decisions on the extent to which stem cells can be used. These regulatory authorities
+carry out the following tasks:
+Reviewing proposals for scientific research that uses stem cells and deciding if this
+research should be allowed to go ahead
+Licensing and monitoring of research centres that are involved in stem cell
+research
+Providing guidelines and codes of practice for stem cell researchers to ensure they
+are working to the same high standards
+Monitoring developments in scientific research into stem cell therapies
+Providing governments and other professional bodies with correct, up-to-date
+advice and information on stem cell research, which in turn helps society to
+understand how stem cells are being used and why this work is important
+Evaluating the Use of Stem Cells Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 36
+Cell Specialisation
+Differential Gene Expression
+Stem cells become specialised through differential gene expression
+This means that only certain genes in the DNA of the stem cell are activated and get
+expressed
+Every nucleus within the stem cells of a multicellular organism contains the same genes,
+that is, all stem cells within an organism have an identical genome
+Despite the stem cells having the same genome, they are able to specialise into a
+diverse range of cell types because during differentiation certain genes are expressed
+('switched' on)
+Controlling gene expression is the key to development as stem cells differentiate due to
+the different genes being expressed
+This differentiation occurs via the following basic steps:
+Under certain conditions, some genes in a stem cell are activated, whilst others are
+inactivated
+mRNA is transcribed from active genes only
+This mRNA is then translated to form proteins
+These proteins are responsible for modifying the cell (e.g. they help to determine
+the structure of the cell and the processes that occur within the cell)
+As these proteins continue to modify the cell, the cell becomes increasingly
+specialised
+The process of specialisation is irreversible (once differentiation has occurred, the
+cell remains in its specialised form)Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 37
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 38
+Differential gene expression results in the differentiation of stem cells
+Transcription factors control the expression of genes
+Eukaryotes use transcription factors to control gene expression
+A transcription factor is a protein that controls the transcription of genes by binding to a
+specific region of DNA
+They ensure that genes are being expressed in the correct cells, at the correct time and
+to the right level
+It is estimated that ~10% of human genes code for transcription factors
+There are several types of transcription factors that have varying effects on gene
+expression
+This is still a relatively young area of research and scientists are working hard to
+understand how all the different transcription factors function
+Transcription factors allow organisms to respond to their environment
+Some hormones achieve their effect via transcription factors
+Transcription factors that increase the rate of transcription are known as activators
+Activators work by helping RNA polymerase to bind to the DNA at the start of a
+gene and to begin transcription of that gene
+Transcription factors that decrease the rate of transcription are known as repressors
+Repressors work by stopping RNA polymerase from binding to the DNA at the start
+of a gene, inhibiting transcription of that gene
+Some transcription factors bind to the promoter region of a gene
+This binding can either allow or prevent the transcription of the gene from taking
+place
+Transcription factors interact with RNA polymerase, either by assisting RNA
+polymerase binding to the gene (to stimulate expression of the gene) or by
+preventing it from binding (to inhibit gene expression)
+Therefore, the presence of a transcription factor will either increase or decrease the
+rate of transcription of a geneYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 39
+In the example above, the transcription factor is an activator as it stimulates the
+transcription of the gene. Transcription factors, known as repressors, can also inhibit the
+transcription of genes
+Operons
+In prokaryotes, control of gene expression often requires the binding of transcription
+factors to operons
+An operon is a section of DNA that includes:
+A cluster of structural genes that are transcribed together (these code for useful
+proteins e.g. enzymes)
+Control elements, including a promoter region (a DNA sequence that RNA
+polymerase initially binds to) and an operator region (where transcription factors
+bind)
+Some operons may include regulatory genes that code for activators or repressors
+The lac operon
+Structural genes in prokaryotes can form an operon: a group or a cluster of genes that
+are controlled by the same promoter
+The lac operon found in some bacteria is one of the most well-known of these
+The lac operon controls the production of the enzyme lactase (also called β -
+galactosidase) and two other structural proteins
+Lactase breaks down the substrate lactose so that it can be used as an energy source in
+the bacterial cell
+It is known as an inducible enzyme (this means it is only synthesized when lactose is
+present)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 40
+This helps the bacteria avoid wasting energy and materials
+Structure of the lac operon
+The components of the lac operon are found in the following order:
+Promoter for structural genes
+Operator
+Structural gene lacZ that codes for lactase
+Structural gene lacY that codes for permease (allows lactose into the cell)
+Structural gene lacA that codes for transacetylase
+Located to the left (upstream) of the lac operon on the bacterium's DNA there is also the:
+Promoter for regulatory gene
+Regulatory gene lacI that codes for the lac repressor protein
+The lac repressor protein has two binding sites that allow it to bind to the operator in the
+lac operon and also to lactose (the effector molecule)
+When it binds to the operator it prevents the transcription of the structural genes
+as RNA polymerase cannot attach to the promoter
+When it binds to lactose the shape of the repressor protein distorts and the
+repressor protein can no longer bind to the operator
+The components of the lac operon along with the upstream regulatory gene and its
+associated promoter
+When lactose is absent
+The following processes take place when lactose is absent in the medium that the
+bacterium is growing in:
+The regulatory gene is transcribed and translated to producelac repressor protein
+The lac repressor protein binds to the operator region upstream of lacZ
+Due to the presence of the repressor protein RNA polymerase is unable to bind to
+the promoter region
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 41
+Transcription of the structural genes does not take place
+No lactase enzyme is synthesized
+The repressor protein binds to the operator region of the lac operon and prevents
+transcription of the structural gene
+When lactose is present
+The following processes take place when lactose is present in the medium that the
+bacterium is growing in:
+There is an uptake of lactose by the bacterium
+The lactose binds to the second binding site on the repressor protein, distorting its
+shape so that the repressor protein cannot bind to the operator region
+RNA polymerase is then able to bind to the promoter region and transcription
+takes place
+The mRNA from all three structural genes is translated
+The enzyme lactase is produced and lactose can be broken down and used for
+energy by the bacterium
+The binding of lactose to the repressor protein frees up the operator region of the lac
+operon so RNA polymerase can bind and begin transcription of the structural genes
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 42
+Post-Transcriptional Changes to mRNA
+One Gene Can Code for More Than One
+Protein
+Gene expression can be regulated after an mRNA transcript has been produced
+In eukaryotes, transcription and translation occur in separate parts of the cell, allowing
+for significant post-transcriptional modification to occur
+Post-transcriptional modification mechanisms include
+Splicing
+Alternative splicing
+Splicing
+Polypeptides are made during the process of protein synthesis, during which the DNA
+base code is transcribed and translated
+The DNA code within eukaryotic cells contains many non-coding sections
+Non-coding DNA can be found within genes; these sections are called introns,
+whilstsections of coding DNA are called exons
+During transcription, eukaryotic cells transcribe both introns and exons to produce pre-
+mRNA molecules
+Before the pre-mRNA exits the nucleus, a process called splicing occurs
+The non-coding intron sections are removed
+The coding exon sections are joined together
+The resulting mRNA molecule contains only the coding sequences of the gene
+Since these modifications are made after transcription occurred, they are called post-
+transcriptional modificationsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 43
+Pre-mRNA is spliced before it exits the nucleus
+Alternative splicing
+The exons (coding regions) of genes can be spliced in many different ways to produce
+different mature mRNA molecules through alternative splicing
+A particular exon may or may not be incorporated into the final mature mRNA
+Polypeptides translated from alternatively spliced mRNAs may differ in their amino acid
+sequence, structure and function
+This means that a single eukaryotic gene can code for multiple proteins
+This is part of the reason why the proteome is much bigger than the genome
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 44
+Alternative splicing of a gene can produce more than one type of protein
+Examiner Tips and Tricks
+It is important you learn the terms pre-mRNA and mRNA, their location and whether
+they include introns as well as exons. A handy way to distinguish between introns and
+exons is to remember that EXons are EXpressed.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 45
+Gene Interaction & Epigenetics
+Influences on Phenotype
+The observable characteristics of an organism are its phenotype
+Phenotypic variation is the difference in phenotypes between organisms of the same
+species
+In some cases, phenotypic variation is explained by genetic factors
+For example, the four different blood groups observed in human populations are
+due to different individuals within the population having two of three possible alleles
+for the single ABO gene
+In other cases, phenotypic variation is explained by environmental factors
+For example, clones of plants with exactly the same genetic information (DNA) will
+grow to different heights when grown in different environmental conditions
+Phenotypic variation can also be explained by a combination of genetic and
+environmental factors
+For example, the recessive allele that causes sickle cell anaemia has a high
+frequency in populations where malaria is prevalent due to heterozygous individuals
+being resistant to malaria
+The complete phenotype of an organism is determined by the expression of its
+genotype and the interaction of the environment with this:
+Phenotype = Genotype + Environment
+Genetic variation
+Organisms of the same species will have very similar genotypes, but two individuals
+(even twins) will have differences between their DNA base sequences
+Considering the size of genomes, these differences are small between individuals of the
+same species
+The small differences in DNA base sequences between individual organisms within a
+species population is called genetic variation
+Genetic variation is transferred from one generation to the next and it generates
+phenotypic variation within a species population
+Genes can have varying effects on an organism's phenotype:
+Some characteristics (i.e. the phenotype) are controlled by a single gene - these
+characteristics are known as monogenic
+These characteristics usually show discontinuous variation (e.g. blood group)
+Other characteristics are controlled by several genes - these characteristics are
+known as polygenicYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 46
+These characteristics usually show continuous variation (e.g. height, mass, skin
+colour)
+Specifically, the different alleles an organism has at a single gene locus can determine
+the phenotype:
+Remember - diploid organisms will inherit two alleles of each gene, these alleles
+can be the same or different
+For example, the F8 gene that codes for the blood-clotting protein Factor VIII. The
+different alleles at the F8 gene locus dictate whether or not normal Factor VIII is
+produced and whether the individual has the condition haemophilia
+Environmental factors
+The environment that an organism lives in can also have an impact on its phenotype
+Different environments around the globe experience very different conditions, including
+(amongst many factors):
+Length of sunlight hours (which may be seasonal)
+Supply of nutrients (food)
+Availability of water
+Temperature range
+Oxygen levels
+Changes in the factors above can affect how organisms grow and develop
+For example, plants with a tall genotype growing in an environment that is depleted
+in minerals, sunlight and water will not be able to grow to their full potential size
+determined by genetics (their phenotype is being affected by their environment)
+Variation in phenotype caused solely by environmental pressures or factors cannot be
+inherited by an organism's offspring (only alterations to the genetic component of
+gametes will ever be inherited)
+Examples of how the environment can affect phenotypic
+variation
+Diet in animals:
+The fruit fly (Drosophila melanogaster) is normally grey but there is a genetic mutant
+that is yellow (a genotypic characteristic that is expressed regardless of the
+environment)
+If the larvae of normal grey flies are given a diet of silver salts, they develop the
+yellow colour regardless of their genotype
+This means that flies that should be grey (according to their genes) can become
+yellow due to an environmental factor (their diet)
+Growing conditions for plants:
+Plants that are grown in the dark or that cannot access enough magnesium become
+yellow even though, genetically, they should be greenYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 47
+This condition is known as chlorosis and occurs because the synthesis of
+chlorophyll is slowed down or stops completely
+Plants that are grown in the dark may also develop long stems with small, curled
+leaves even though, genetically, they should develop normally
+This is known as etiolation
+Epigenetic Modification
+An organism’s internal or external environment can influence gene expression patterns
+The levels of regulatory proteins or transcription factors can be affected in
+response to environmental stimuli such as light, and chemicals including drugs and
+hormones
+For example, enzymes are activated in response to ultraviolet radiation and increase
+the expression of melanin-producing genes (and therefore production of melanin),
+leading to skin pigmentation
+Epigenetics is the control of gene expression by factors other than an individual’s DNA
+sequence
+Epigenetics involves the switching-on and switching-off of genes, but without
+changing the actual genetic code
+In eukaryotic cells, nuclear DNA is wrapped around proteins called histones to form
+chromatin
+Chromatin can be chemically modified in different ways to alter gene expression,
+including:
+Methylation of DNA (chemical addition of -CH groups)
+Histone modification via acetylation of amino acid tails
+Such modifications are called epigenetic tags and collectively, all the epigenetic tags in
+an organism is called the epigenome
+The epigenome can undergo changes due to environmental factors
+Smoking, stress, exercise and diet can cause epigenetic changes
+Internal signalling from the body's own cells can also cause modifications to occur
+Epigenetic modification is independent (i.e. DNA methylation or histone modification in
+one area is not linked to modification in another)Examiner Tips and Tricks
+Some questions in the exam may ask you to explain why the variation in phenotype
+due to genetics is inherited but the variation in phenotype due to environmental
+factors is not. This is because genetic variation directly affects the DNA of the
+gametes but variation in phenotype caused by the environment does not.
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 48
+The chemical modification of histones and DNA controls how tightly the DNA is wound
+around them as the intermolecular bonding between the histones and DNA changes
+If the DNA is wound more tightly in a certain area, the genes on this section of DNA
+are 'switched off' as the gene and promoter regions are more hidden from
+transcription factors and RNA polymerase
+The modification of histones is reversible and therefore can be different in different cell
+types and can vary with age
+DNA is coiled around histone proteins to make chromatin
+DNA methylation causes the inactivation of genes
+One method of epigenetic control involves the methylation of DNA
+Methyl groups (-CH) can be directly added to DNA to change the activity of a gene
+DNA methylation commonly involves the direct addition of a methyl group to cytosine
+bases which can influence gene expression
+Methylation of DNA suppresses the transcription of the affected gene by inhibiting the
+binding of transcription factors and enzymes needed for transcription (e.g. RNA
+polymerase)
+Cells use this mechanism to lock genes in the ‘off’ position
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 49
+The gene is said to be repressed or inactivated
+DNA methylation can be affected by many environmental, lifestyle or age-related
+factors
+Acetylation of histones affects gene expression
+Acetyl groups (-COCH) can be added to lysine amino acids on histone proteins
+Lysine has a positively charged R group, this forms ionic bonds with the negatively
+charged phosphate backbone of DNA
+This helps DNA to coil tightly around the histone protein core
+Adding acetyl groups (acetylation) to lysine residues removes the positive ion and
+therefore removes a bond between the histone protein and the DNA, this causes the
+DNA to be less tightly wrapped
+When the DNA is less tightly wrapped, RNA polymerase and transcription factors
+can bindmore easily and therefore gene expression can occur
+The gene is said to be activated
+Removal of acetyl groups (deacetylation) returns lysine to its positively charged state
+which has a stronger attraction to the DNA molecule and therefore inhibits transcription
+and once again stops the gene from being expressed
+Acetylation of histones causes chromatin to become less condensed, allowing genes to
+be transcribed
+Epigenetic changes can be passed on following cell division
+Like the genome, the epigenome is heritable (i.e. when a cell divides and replicates,
+epigenetic changes affecting the expression of genes in the DNA of that cell may be
+passed on to daughter cells)
+For example, during gamete production, DNA in the parent cell usually undergoes
+de-methylation (the methyl groups are removed) but often methyl groups are not
+removed and therefore are present in the DNA on the sperm or egg cells3
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 50
+One potential explanation for why this occurs is that if an epigenetic change occurs
+in response to an environmental factor, it may be beneficial for this epigenetic
+change to also occur in daughter cells (or gametes, for example) so that they are
+also better adapted for the environmental factor (in the same way the parent cell
+was)
+Mounting evidence demonstrates that modifications to the epigenome in one
+generation can be passed on to the next generation at the cellular or whole
+organism level
+Examiner Tips and Tricks
+Epigenetics can be distinguished from mutations, both of which lead to changes in
+the expression of genes - whilst mutations affect the genetic code itself, by altering
+nucleotide sequences, epigenetic changes only affect the way the code is read.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 51
+Polygenic Inheritance & Continuous Variation
+Polygenic Inheritance
+Genes can have varying effects on an organism's phenotype:
+Some characteristics (i.e. the phenotype) are controlled by a single gene - these
+characteristics are known as monogenic
+These characteristics usually show discontinuous variation (e.g. blood group)
+Inheritance of these characteristics is known as monogenic inheritance
+Other characteristics are controlled by several genes - these characteristics are
+known as polygenic
+These characteristics usually show continuous variation (e.g. height, mass, skin
+colour)
+Inheritance of these characteristics is known as polygenic inheritance
+Continuous Variation
+Some phenotypes of individuals within a population show continuous variation
+The phenotypes do not fall into discrete categories (unlike in discontinuous variation)
+Instead, for these features, a range of values exists between two extremes, within
+which the phenotype will fall
+For example, the mass or height of a human is an example of continuous variation
+The lack of categories and the presence of a range of values can be used to identify
+continuous variation when it is presented in a table or graphYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 52
+Graph showing population variation in height: an example of continuous variation with
+quantitative differences
+Causes of continuous variation
+Some phenotypes are affected by multiple different genes or by multiple alleles for the
+same gene at many different loci (polygenic inheritance) as well as the environment
+Phenotype = genotype + environment
+This often gives rise to phenotypes that show continuous variation
+At the genetic level:
+Different alleles at a single locus have a small effect on the phenotype
+Different genes can have the same effect on the phenotype and these add
+together to have an additive effect
+If a large number of genes have a combined effect on the phenotype they are
+known as polygenes
+The additive effect of genes
+The height of a plant is controlled by two unlinked genes H / h and T / t
+The two genes have an additive effect
+The recessive alleles h and t contribute xcm to the height of the plant
+The dominant alleles H and T contribute 2xcm to the height of the plant
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 53
+The following genotypes will have the following phenotypes:
+h h t t :  x + x + x + x = 4x cm
+H H T T : 2x + 2x + 2x +2x = 8x cm
+H h T t : 2x + x + 2x + x = 6x cm
+H H T t : 2x + 2x + 2x + x = 7x cm
+H h T T : 2x + x + 2x + 2x = 7x cm
+h h T t : x + x + 2x + x = 5x cm
+H h t t : 2x + x + x + x = 5x cm
+Examiner Tips and Tricks
+Be careful when answering questions that involve polygenes or genes with an additive
+effect. It is not a given that each gene will have the same effect on the phenotype as in
+the example above so make sure to double check the information you have been
+given in the question.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 54

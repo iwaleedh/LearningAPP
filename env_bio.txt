@@ -1,0 +1,891 @@
+Edexcel International A
+Level (IAL) Biology
+Environmental Biology
+Contents
+Evidence for Climate Change
+Anthropogenic Climate Change
+Carbon Cycle & Environmental Management
+Models for Predicting Climate Change
+How Climate Change Affects Species
+The Effect of Temperature on Enzyme Reactions
+Core Practical 12: Effect of Temperature on Development
+Mutation, Natural Selection & Evolution
+Isolation & Speciation
+Contentious Issues in Environmental Science
+Examples of Sustainable ConservationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Evidence for Climate Change
+Evidence for Climate Change
+The term climate refers to the weather conditions in a region over a long period of
+time i.e. several decades
+When the weather conditions in a region change significantly over a long period of time,
+this is climate change
+The term climate change is most often used today to refer to global warming that is
+occurring as a result of human activities
+Scientists have long hypothesised that 
+Climate change in the form of global warming is currently taking place
+Human activities that increase the concentrations of greenhouse gases in the
+atmosphere are responsible for climate change
+Several different types of evidence can be used to support these hypotheses
+Records of atmospheric carbon dioxide levels
+Records of average global temperatures
+Records of changing plant communities gained from sampling of pollen grains
+preserved in peat over time
+Records of tree growth gained by analysing the rings in the trunks of trees; known
+as dendrochronology
+Atmospheric carbon dioxide 
+Atmospheric carbon dioxide levels have fluctuated throughout Earth's history due to
+events such as volcanic eruptions and the weathering of limestone rocks
+Scientists know this from having analysed the gas composition of bubbles formed
+in ancient ice cores
+Ice is deposited as water freezes over time, so the deeper into the ice you go,
+the older it is
+Since the industrial revolution, however, atmospheric carbon dioxide levels have risen
+to their highest in Earth's history
+Prior to the industrial revolution, the highest atmospheric carbon dioxide
+concentration was around 300 parts per million (ppm), and it is currently above 400
+ppmYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Atmospheric carbon dioxide levels have fluctuated throughout earth's history, but recent
+increases have been faster and greater than ever before
+Data show a correlation between changing atmospheric carbon dioxide levels and
+temperature over thousands of years
+Note that carbon dioxide in the atmosphere is not thought to be the only factor
+affecting climate; it is known that events such as solar winds and sun spots can
+affect the climate on Earth, but scientists think that the effects of such events are
+small in comparison to that of atmospheric carbon dioxide
+Correlation does not equal causation, but together with what scientists know
+about carbon dioxide as a greenhouse gas, this is strong evidence that carbon dioxide
+released by human activities since the industrial revolution is causing increasing
+global temperatures
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+There is a correlation between atmospheric carbon dioxide concentrations and average
+antarctic temperatures over time
+Average global temperatures
+Thermometers can be used to measure air temperature, and thermometer records from
+different places around the world over extended periods of time can be put together to
+show average global temperature change over time
+Records from the mid-1800s show an overall trend of increasing average global
+temperatures
+There are some short time periods within this window during which temperatures
+have declined, but the overall trend is upwards
+The time period since the mid-1800s corresponds with the time during which humans
+have been burning fossil fuels and therefore releasing carbon dioxide into the
+atmosphere
+Average global temperature records show some temperature fluctuations but an overall
+trend of increasing temperatures over time
+Pollen grains preserved in peat bogs
+Under waterlogged and acidic conditions partly decomposed dead plant matter
+accumulates and becomes compacted under its own weight over time; this
+compacted, partially decomposed plant matter forms peat
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+The place where peat accumulates is known as a peat bog, or peatland
+Peat builds up in layers, meaning that layers of peat at the top of a bog are recently
+formed and the peat become older as you dig down into a bog
+Peat cores can be taken from a bog and the layers can be analysed to assess the pollen
+grains that have become trapped in the peat
+Pollen grains from peat samples can be observed under a microscope, and because the
+pollen grains of each plant species are unique to that plant, the plant species that were
+growing around the bog at different points in time can be identified
+Different plant species grow under different climatic conditions, so the plants present
+at different times can be used a measure of the climate at that time
+E.g. an increase in the number of plant species that grow better in warmer climates
+combined with a decrease in the number of plant species that grow better in cooler
+climates indicates a gradual warming of the climate
+Dendrochronology
+Tree trunks grow in diameter each growing season as they produce more vascular tissue
+This vascular tissue grows in a ring around the outside of the trunk
+Light coloured rings are produced by fast growth during warmer spring and summer
+months and dark coloured rings form as a result of slow autumn growth, meaning that
+one light ring and one dark ring together represent a full year's growth in a tree
+Trees grow faster when conditions are warmer, so the rings that form during warm years
+are wider than the rings that form during cool years
+Analysis of the width of tree rings can provide a measure of climate during each year of
+growth
+Taking cores from the trunks of older trees can provide samples that go back over
+hundreds of yearsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Dendrochronology uses the growth in a tree trunk each year as a measure of climate
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+Anthropogenic Climate Change
+Anthropogenic Climate Change
+When radiation from the sun hits the earth, it is radiated back from the earth's surface 
+A greenhouse gas is a gas that absorbs this re-radiated radiation, trapping it in the
+earth's atmosphere so that it is not lost to space
+Greenhouse gases in the atmosphere have a similar effect to the glass in
+a greenhouse, hence the term greenhouse gas, and their effect being known as
+the greenhouse effect
+The greenhouse effect is important to ensure that Earth is warm enough for life; if it were
+not for the insulating effect of greenhouse gases, Earth would see similar
+dramatic temperature fluctuations to its neighbouring planets
+Temperatures on Mars range between 20°C and −153°C
+There are many greenhouse gases including
+Carbon dioxide
+Methane
+It is thought that increasing levels of carbon dioxide and methane are entering the
+atmosphere as a result of human activities, leading to increased rates of atmospheric
+warming
+The atmospheric warming, and therefore the changing climate, for which humans
+are thought to be responsible is known as anthropogenic climate changeYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+Greenhouse gases absorb radiation re-emitted from the earth's surface, trapping it in the
+atmosphere
+Carbon Dioxide
+Atmospheric carbon dioxide levels have fluctuated throughout Earth's history due to
+events such as volcanic eruptions and the weathering of limestone rocks
+Since the industrial revolution, however, atmospheric carbon dioxide levels have risen
+to their highest in Earth's history
+The industrial revolution began in the late 1700s when the combustion of fossil fuels to
+power factories, transport, and homes became commonplace
+Fossil fuel combustion releases carbon dioxide
+A clear correlation can be seen between increasing levels of carbon dioxide since the
+industrial revolution and increasing global temperatures, providing evidence for the
+role of human activities in causing global warming
+Note that a correlation alone is not enough to prove causation, but this evidence
+can be taken alongside what we know about greenhouse gases and other evidence
+to provide a growing body of proof
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+In addition to the burning of fossil fuels, carbon dioxide is also released into the
+atmosphere when natural stores of carbon are damaged or destroyed by human
+activities
+These carbon stores are known as carbon sinks
+Carbon sinks include trees, soils, peat bogs, and the oceans
+Deforestation, soil degradation, peat harvesting, and ocean warming all
+contribute to the addition of carbon dioxide to the atmosphere
+Methane
+Methane (CH) is a simple hydrocarbon
+It is present as a gas in the atmosphere, and underground, and is the main component
+of natural gas fossil fuel
+Methane can be produced by naturally occurring processes in some types of bacteria,
+but levels have risen significantly in the last 150 years due to human activities
+Methane can be produced by several human activities
+Methane is released from the guts of ruminant mammals such as cattle
+While this is clearly not a direct human activity(!) the intensive farming of such
+animals has greatly increased their contribution to atmospheric methane
+Landfill sites release methane when organic matter such as food waste
+decomposes
+Extraction of fossil fuels from underground releases methane
+Anaerobic bacteria in waterlogged rice paddy fields release methane
+In addition to the list above, the warming of the poles that results from global warming
+also leads to the release of methane from natural stores such as permafrost
+Permafrost is ground that remains frozen all year round4Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Atmospheric concentrations of both carbon dioxide and methane have increased since
+the industrial revolution due to human activities.  Note that ppm = parts per million and
+ppb = parts per billion.
+Worked Example
+The graph below shows changes in average global temperatures and atmospheric
+carbon dioxide concentrations since the year 1000; describe the data and explain
+what can be concluded from the graph
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+Answer:
+Descriptions of data must include any trends, as well as any sections of data that
+don’t fit with the trend
+Descriptions of data should also include numbers to support the
+description
+Be careful that any conclusions reached are taken directly from the data
+and do not go beyond what the data show
+Step 1: Describe the data
+Atmospheric carbon dioxide levels and average global temperatures have both
+increased since the year 1000
+Atmospheric carbon dioxide concentration has increased from around 280 ppm to
+around 380 ppm
+Average global temperatures have increased from around 13.8 °C to around 14.4 °C
+Average global temperatures have fluctuated, showing periods of decrease e.g.
+during the 1400s and periods of increase e.g. during the early 1700s
+Atmospheric carbon dioxide levels and average global temperatures were both
+reasonably constant between the years 1000 and the mid-1800s/1900, and then
+both show a steep increase between 1900 and 2000
+Step 2: State what can be concluded
+There is a correlation between atmospheric carbon dioxide concentration and
+average global temperature
+Both atmospheric carbon dioxide concentration and average global temperature
+increase from the industrial revolution onward
+Average global temperatures fluctuate at times when atmospheric carbon dioxide
+concentrations are relatively constant
+Note that you cannot conclude a causal relationship from this data alone; in fact
+the fluctuations in temperature when carbon dioxide levels are constant suggest
+that there are other factors involved
+Examiner Tips and Tricks
+Note that the greenhouse effect, global warming and climate change are terms that
+are often used interchangeably, but in fact they have slightly different meanings:
+Global warming refers to the rise in global temperatures mainly due to the
+increasing concentrations of greenhouse gases in the atmosphere.
+Climate change refers to the increasing changes in the measures of climate over
+a long period of time – including precipitation, temperature, and wind patterns.
+These are often a consequence of global warming.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+The greenhouse effect is a naturally occurring event, constantly occurring due to
+the atmosphere and sunlight.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+Carbon Cycle & Environmental Management
+The Carbon Cycle
+The atmospheric carbon dioxide that contributes to the greenhouse effect is part of the
+global carbon cycle
+The term carbon cycle refers to the many processes by which carbon is transferred and
+stored, e.g. 
+Carbon is found in the biomass of living organisms e.g.
+in carbohydrates and proteins
+Carbon is transferred when one organism consumes and digests another
+Carbon is found in the atmosphere as carbon dioxide and in the oceans as
+e.g. hydrogen carbonate ions
+The carbon cycle
+The following events occur during the carbon cycle
+Carbon is present in the atmosphere in the form of carbon dioxide
+Carbon dioxide is removed from the atmosphere by producers during
+photosynthesis
+Producers incorporate carbon into their biomass in the form of carbohydrates
+and other biological molecules
+Carbon is transferred to and between consumers as a result of feeding
+Carbon is transferred back into the atmosphere by both plants and animals as a
+result of respiration
+Respiration releases carbon dioxide as a product
+Carbon dioxide can also be removed from the atmosphere by dissolving in the
+oceans
+Dissolved carbon can be taken in by marine plants when they photosynthesise or
+by other marine organisms as they build calcium carbonate exoskeletons
+When living organisms die their tissues are broken down by decomposers such as
+bacteria and fungi
+When these organisms respire, they too release carbon dioxide back into the
+atmosphere
+Any living tissue that is not fully decomposed can go towards the formation of peat
+or fossil fuels over millions of years; carbon can be stored in these sinks for long
+periods
+The combustion of peat and fossil fuels releases carbon dioxide back into the
+atmosphereYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+The combustion of biomass such as wood also returns carbon to the
+atmosphere
+The carbon cycle includes the locations in which carbon is stored, shown here as 'carbon
+pools', and the processes by which it is transferred, shown here as 'carbon fluxes'
+Carbon Cycle & Environmental
+Management
+A good understanding of the carbon cycle is essential in the fight against global
+warming
+It is possible to see the points at which carbon enters the atmosphere; reducing the
+carbon transfer at these points will prevent further increases in atmospheric carbon
+dioxide e.g.
+Reducing the combustion of fossil fuels
+Reducing the combustion of biomass
+Reducing disturbance of carbon pools such as soils and peat bogs
+We can also see the points at which carbon is removed from the atmosphere;
+increasing the transfers here could help to reduce the greenhouse effect e.g.
+Increasing rates of photosynthesis by planting trees
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+Models for Predicting Climate Change
+Models for Predicting Climate Change
+It is possible to use existing data relating to global warming to make predictions about
+global temperatures in the future
+Using data in this way is known as extrapolating from data
+Extrapolated data can be used to produce models that show how the climate may
+change in the future
+Global warming predictions can be used to
+Plan for the future e.g.
+Building flood defences
+Funding scientific research into climate change technologies
+Encourage people to change their activities e.g.
+Reduce the burning of fossil fuels
+Increase the use of renewable energy sources such as solar and wind energy
+Reduce meat consumption
+The Intergovernmental Panel on Climate Change, or IPCC, is a group of climate scientists
+around the world that has used existing data to extrapolate how global temperatures
+might change in the futureunder different human activity scenarios e.g.
+If humans manage to immediately begin reducing fossil fuel use, global temperature
+change could be limited to around 2°C hotter than pre-industrial times
+If humans do nothing to change their fossil fuel use, global temperature increase
+may exceed 4°C
+The IPCC data can be added to other computer models on climate change to see how
+different parts of the world might be affected under the different scenariosYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+Future predictions of temperature change can be modelled on a range of scenarios
+Limitations of Climate Change Prediction
+Models
+There are limitations to models based on extrapolated data
+The IPCC has produced models based on several emissions scenarios, and we do
+not know which of these scenarios is most likely
+I.e. we don't know how successful humans will be at cutting greenhouse gas
+emissions
+We do not know whether future technologies will be successful at removing
+greenhouse gases from the atmosphere e.g. carbon capture technologies may or
+may not be effective 
+It is unknown exactly how atmospheric gas concentrations might affect global
+temperatures
+Global climate patterns are complex and therefore predictions are difficult
+It is possible that a certain tipping point in global temperatures could lead to a
+sudden acceleration in global warming e.g. permafrost melting may cause a
+sudden increase in atmospheric methane
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Permafrost is ground that is frozen all year round
+We don't know exactly how factors other than human activities may affect climate
+in the future e.g. a volcanic eruption could increase ash in the atmosphere,
+reflecting radiation back into space and cooling the earthYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+How Climate Change Affects Species
+How Climate Change Affects Species
+Greenhouse gases absorb infrared radiation emitted by the earth, causing the
+atmosphere to warm
+The higher the concentration of greenhouse gases in the atmosphere, the more
+infrared radiation is absorbed, and the warmer the atmosphere will become
+Increased atmospheric warming has had, and will have, multiple impacts on climate
+patterns, e.g.
+Weather events becoming more extreme e.g. hotter, longer, heatwaves, and more
+violent storms
+Changes to ocean currents leading to altered local climates e.g. the Gulf stream
+that currently brings warm water to the west coast of the UK might change direction,
+causing parts of the UK's climate to cool
+Warmer air can hold more moisture, leading to changes in patterns of rainfall; more,
+heavier rainfall in some places could lead to reduced rainfall in other locations
+Evidence for some of these changes in climate patterns can already be seen in many
+parts of the world
+Warming climates cause animals to move towards the poles or to higher altitudes
+A concern is that these species may not be able to compete with, or may even
+out-compete, the species already present in these habitats, with either result
+leading to decreased biodiversity
+Some species, such as plant species, may not be able to move or change their
+distribution fast enough to adapt to changing temperatures and may become
+extinct as a result
+Water availability in some habitats is changing
+Changes to rainfall patterns can be devastating to species that rely on seasonal
+rains for their survival e.g. some desert plants rely on rains that may come only
+once a year and climate change may mean that such seasonal events occur less
+frequently or stop altogether
+Some species may no longer be able to survive in their habitat due to a lack of
+rainfall; such species may migrate to a new habitat or may become extinct
+Seasonal cycles are changing e.g.
+Plant species are producing flowers earlier in the year
+Animals are producing young earlier in the year
+Bird migratory patterns may lose their synchronisation with their habitats,
+leading to a change in migration patternsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+E.g. earlier plant growth leads to alterations in invertebrate life cycles,
+meaning that when a bird species arrives for its summer migration their
+usual food source is not available
+Polar ice and glaciers are retreating; it is thought that there may soon be no summer
+ice in the arctic if rates of warming there continue
+The loss of glacier ice from mountain ranges may affect the water supplies of
+many people and surrounding wildlife
+Sea levels have been rising faster in recent years, putting many more people and
+animals at risk of being flooded out of their homes
+Sea levels are rising due to the expansion of warmer water and due to melting
+polar iceYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+The Effect of Temperature on Enzyme Reactions
+The Effect of Temperature on Enzyme
+Reactions
+Changing air temperature can have a significant impact on the metabolism of living
+organisms due to the effect of temperature on enzyme activity
+Enzymes have a specific optimum temperature
+This is the temperature at which they catalyse a reaction at the maximum rate
+Lower temperatures either prevent reactions from proceeding or slow them down
+Molecules move relatively slowly as they have less kinetic energy
+Less kinetic energy results in a lower frequency of successful collisions between
+substrate molecules and the active sites of the enzymes which leads to less
+frequent enzyme-substrate complex formation
+Substrates and enzymes also collide with less energy, making it less likely for bonds
+to be formed or broken 
+Higher temperatures cause reactions to speed up
+Molecules move morequickly as they have more kinetic energy
+Increased kinetic energy results in a higherfrequency of successful
+collisions between substrate molecules and the active sites of the enzymes which
+leads to more frequent enzyme-substrate complex formation
+Substrates and enzymes also collide with more energy, making it more likely for
+bonds to be formed or broken 
+Denaturation
+If temperatures continue to increase past a certain point, the rate at which an enzyme
+catalyses a reaction drops sharply as the enzymes begin to denature
+The increased kinetic energy and vibration of an enzyme puts a strain on its bonds,
+eventually causing the weaker hydrogen and ionic bonds that hold the enzyme
+molecule in its precise shape to start to break
+The breaking of bonds causes the tertiary structure of the enzyme to change
+The active site is permanently damaged and its shape is no longer complementary
+to the substrate, preventing the substrate from binding
+Denaturation has occurred if the substrate can no longer bindYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+At high temperatures enzymes can denature
+The rate of an enzyme catalysed reaction is affected by temperature. Note that 35 °C is
+not the optimum temperature for all enzyme-controlled reactions.
+Calculating the temperature coefficient
+The temperature coefficient, represented by Q , calculates the increase in rate of
+reaction when the temperature is increased by 10 °C
+Q can be calculated using the following equation
+10
+10 Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+Q = rate at higher temperature ÷ rate at lower temperature
+A Q  value of 2 indicates that the reaction rate doubles with an increase in temperature
+of 10 °C, while a value of 3 indicates that it trebles with every 10 °C increase
+Enzyme activity and living organisms
+Changes to enzyme activity that result from changing global temperatures can affect
+living organisms
+Some chemical reactions take place faster at higher temperatures
+Photosynthesis is essential for converting carbon dioxide into carbohydrates, the
+process which produces food for producers and other organisms higher up the
+food chain; it relies on the function of proteins in the electron transport chain and
+that of enzymes such as rubisco
+E.g. blue-green algae, also known as cyanobacteria, photosynthesise at a
+higher rate in warmer water due to increased enzyme activity; this increases the
+formation of potentially harmful algal blooms
+Some chemical reactions are slowed down at higher temperatures 
+At high temperatures plants carry out a reaction called photorespiration at a faster
+rate; this reaction uses the enzyme rubisco and so slows down photosynthesis
+This can reduce crop yields as temperatures rise
+Some fish eggs have been shown to develop more slowly at higher temperatures10 
+10
+Worked Example
+In an enzyme catalysed reaction the rate of reaction can measured by recording the
+volume of product produced per unit time at different temperatures.
+At 30 °C 3.5 cm  s of product was recorded and at 40 °C 6.8 cm  s was recorded.
+Calculate Q  for this reaction.
+Answer:
+Step 1: Write out the relevant equation
+Q = rate at higher temperature ÷  rate at lower temperature
+Step 2: Substitute numbers into the equation
+Q  = 6.8 ÷ 3.5
+Step 3: Complete calculation
+Q  = 1.94
+This value is close to 2, indicating that the rate of reaction has almost doubled3 -1 3 -1 
+10
+10 
+10
+10Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+Many species' successful egg development is dependent on temperature, with
+impacts such as
+Extreme temperature fluctuations can reduce hatching rates in some
+invertebrates
+The sex of the young inside the egg of some species is determined by temperature, so
+increasing temperatures can affect the sex ratios in a species
+E.g. in alligators
+Species may have to change their distribution in response to changing temperatures in
+order to survive
+Species may migrate to higher altitudes or further from the equator to find cooler
+temperaturesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Core Practical 12: Effect of Temperature on Development
+Effect of Temperature on Development
+Evidence from the natural world indicates that global warming affects the
+development of living organisms
+It is possible to investigate the effect of temperature change on development in the
+laboratory
+This enables the elimination of other factors that might influence development e.g.
+light intensity or food availability
+It is possible to investigate the effect of temperature on
+Seedling growth rate
+Rate of hatching in brine shrimps
+Temperature and seedling growth rate
+1. Plant seeds of the same plant variety in several pots or trays of compost
+Ensure that all seeds are kept in identical conditions at this stage
+2. Allow the seeds to germinate and produce some initial days of growth
+3. Measure the initial height of every seedling
+4. Place each pot or tray into an incubator at a different temperature for the same amount
+of time e.g. 5 days
+During this time ensure that all factors other than temperature are kept the same
+e.g. soil moisture, soil pH, light intensity
+5. After the allotted time remove the seedlings from the incubators andrecord the final
+heightof every seedling
+6. Use the measurements and the following formula to calculate the average growth rate of
+seedlings in each incubator per day
+average growth rate = average change in seedling height for incubator ÷  days of
+incubationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+Seedling growth rate increases as temperature increases up to 25 °C, after which growth
+rate decreases.  This could be due to cellular enzymes denaturing at high temperatures.
+Temperature and brine shrimp hatching
+1. Place an equal number, e.g. 40, of brine shrimp eggs into a series of water baths at
+different temperatures
+Water baths should contain non-chlorinated water with 2 g of salt added per 100
+cm
+A magnifying lens may be needed to count the eggs
+A wet piece of paper can be used to pick up and transfer the eggs to the water bath
+Ensure that all factors other than temperature are kept the same between water
+baths e.g. age of shrimp eggs, water pH, water volume, dissolved oxygen
+concentration
+2. Observe and record the number of brine shrimps that hatch at set time intervals e.g.
+every 12 hours
+A bright lamp can be used to illuminate the water bath and count the hatchlings
+3. Use the number of eggs hatched to calculate the hatching rate per hour 
+hatching rate = number of hatched shrimp eggs ÷  hours in water bath
+Note that brine shrimps are living organisms and so welfare considerations should be
+taken into account when using them for experimental purposes
+Hatched shrimps should be returned to a suitable environment that replicates their
+natural habitat at the end of the experiment
+Any handling and transfer of hatched shrimps should be carried out gently and
+quickly
+Dangerously high temperatures should not be used
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+Any bright lamp used for observation should be switched off when not in use
+Shrimp hatch rate increases as temperature increases up to a temperature of  25 °C, after
+which hatch rate decreases
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+Mutation, Natural Selection & Evolution
+Mutation, Natural Selection & Evolution
+Speciesdo not stay the same over time; the species that we see around us today have
+developed over millions of years
+This process of species change is known as evolution
+Evolution can be defined as changes in the heritable characteristics of organisms over
+generations
+Heritable characteristics are those that can be inherited by, or passed on to, the
+next generation
+Changes in characteristics that are not inherited, e.g. a plant having its leaves
+eaten, do not lead to evolution
+Heritable characteristics are determined by the alleles of genes that are present in
+an individual
+Alleles may change as a result of random mutation, causing them to become more
+or less advantageous
+Heritable characteristics that are advantageous are more likely to be passed on to
+offspring, leading to a gradual change in a species over time
+This is the process of natural selection 
+Natural Selection
+Natural selection can be defined as the process by which organisms that are better
+adapted to their environment survive, reproduce, and pass on their advantageous
+alleles, causing advantageous characteristics to increase in frequency within a
+population
+Natural selection involves the following stages
+Variation exists between individuals in a population
+Natural selection can only take place if variation is present
+Variation results from small differences in DNA base sequences between
+individual organisms within a population
+Sources of variation include
+Mutation
+Meiosis
+Random fertilisation during sexual reproduction
+In any habitat there are environmental factors that affect survival chances
+E.g. predation, competition for food, and diseaseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+Environmental factors that influence survival chances are said to act
+as selection pressures
+In any population, due to the variation present, some individuals will
+have characteristics that make them better adapted for survival in the face of any
+selection pressures
+This is sometimes described as 'survival of the fittest'
+Individuals that are well adapted and survive into adulthood are more likely to find a
+mate and reproduce, producing many offspring
+Individuals that are less well adapted do not survive long into adulthood are
+likely to reproduce less often than those that survive for longer, so
+producing fewer offspring
+These individuals may not reach adulthood and so do not get the chance to
+reproduce at all
+This means that they are more likely to pass on the alleles that code for
+these advantageous characteristics to their offspring
+Note that non-heritable characteristics are not passed on to offspring
+Non-heritable characteristics are those acquired during the lifetime of an
+organism e.g. gaining weight after eating lots of nuts and berries in autumn,
+or being injured by a predator
+The number of individuals in a population with a particular favourable characteristic
+will increase over time; the characteristic is said to increase in frequency
+Eventually this favourable characteristic will become the most common of its kind in
+the population; the population can be said to have adapted to its environment by
+the process of natural selection
+While favourable characteristics increase in frequency by natural
+selection, unfavourable characteristics decrease in frequency by the same
+process
+Individuals with unfavourable characteristics are less likely to survive,
+reproduce, and pass on the alleles for their characteristics, so unfavourable
+characteristics are eventually lost from the population
+An example of natural selection in rabbits
+Variation in fur colour exists within a rabbit population
+One allele code for brown fur and another for white fur
+Rabbits have natural predators, such as foxes, which act as a selection pressure
+The brown rabbits are more likely tosurvive and reproduce due to having more
+effective camouflage
+When the brown rabbits reproduce, they pass on their alleles to their offspring
+The frequency of brown fur alleles in the population will increaseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+Over many generations, the frequency of brown fur will increase and the frequency of
+white fur will decrease
+Selection pressures acting on a rabbit population for one generation; predation by foxes
+causes the frequency of brown fur in rabbits to increase and the frequency of white fur in
+rabbits to decrease
+Examiner Tips and Tricks
+Remember that evolution occurs as a result of natural selection, a process that acts
+on randomly occurring variation; it does not occur as a direct, purposeful response
+to an environment. Avoid any statements that imply that evolution occurs 'so that' an
+organism can survive in its environment. Instead, it is correct to say that evolution
+occurs by natural selection as a result of randomvariation in populations.
+You should be able to apply the process of natural selection to any scenario that you
+are presented with in an exam, as with the rabbit example above. Remember the
+following essential stages
+1. Variation is present in a population
+2. Selection pressures affect a population
+3. Those with advantageous alleles are more likely to survive and reproduce
+4. Advantageous alleles are passed to offspring
+5. Advantageous alleles become more frequent in the populationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+Isolation & Speciation
+Isolation & Speciation
+The theory of evolution states that speciesdo not stay the same, but change over time;
+this can lead to the process of speciation
+Speciation can be defined as the development of new species from pre-existing
+species over time
+In order for speciation to occur two populations of the same species must be isolated
+from each other in some way
+When this happens, there can no longer be an exchange of genes between the two
+populations
+The exchange of genes is sometimes known as gene flow
+Isolation of populations may occur as a result of
+Geographical isolation
+This leads to a type of speciation known as allopatric speciation
+Random mutations that prevent them from interbreeding with each other
+This leads to a type of speciation known as sympatric speciation
+Populations that are isolated from each other may face different selection pressures in
+their environment e.g. different predators or sources of food
+The different environmental conditions for the two populations might mean
+that different alleles are advantageous, so different alleles are more likely to be passed
+on and become more frequent in each population; this is the process of natural
+selection
+The allele frequencies in the two populations change over time
+Note that a process known as genetic drift can also affect allele frequencies
+Over time the two populations may begin to differ physiologically, behaviourally and
+morphologically to such an extent that they can no longer interbreed to produce fertile
+offspring; speciation has occurred
+Allopatric speciation
+Allopatric speciation occurs as a result of geographical isolation
+It is the most common type of speciation
+Allopatric speciation occurs when populations of a species become separated from
+each other by geographicalbarriers
+The barrier could be natural e.g. a body of water or a mountain range
+It can also be man-made e.g. a motorwayYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+This creates two populations of the same species between which no gene flow is taking
+place
+Allele frequencies in the gene pools of the two populations may change in different
+ways due to 
+Different selection pressures acting on them
+The accumulation of random changes resulting from genetic drift
+Changing allele frequencies will lead to changes in the phenotypes of the two
+populations
+If enough allele frequency differences arise between the two populations, then they will
+eventually no longer be able to breed with each other and produce fertile offspring,
+and can be said to be separate species
+E.g. allopatric speciation in trees
+A population of trees exists in a mountainous habitat
+A new mountain range forms that divides the species into two populations
+The geographical barrier prevents the two populations from interbreeding so there is no
+gene flow between them
+The two populations experience different environments, so
+different alleles become advantageous
+Different alleles are therefore more likely to be passed on in each population
+Different alleles become more frequent in each population
+Over thousands of years the divided populations form two distinct species that can no
+longer interbreed to produce fertile offspring
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31
+The geographical barrier of a mountain range can lead to allopatric speciation in trees
+Sympatric speciation
+Sympatric speciation takes place with no geographical barrier
+Isolation instead occurs when random changes in the alleles and
+therefore phenotypes of some individuals in a population prevent them from
+successfully breeding with other individuals in the population
+Examples of phenotype changes that can lead to isolation include
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 32
+Seasonalchanges
+Some individuals in a population may develop
+different mating or flowering seasons to the rest of the population i.e
+their reproductive timings no longer match up
+Mechanical changes
+Some individuals in a population may develop changes in their genitalia that
+prevent them from mating successfully with individuals of the opposite sex i.e.
+their reproductive body parts no longer match up
+Behavioural changes
+Some individuals in a population may develop changes in their courtship
+behaviours meaning they can no longer attract individuals of the opposite sex
+for mating i.e. their methods of attracting a mate are no longer effective
+The populations may still live in the same habitat but they are isolated from each other in
+the sense that they do not interbreed
+The lack of gene flow between the two populations means that allele frequencies in the
+gene pools of the two populations may change in different ways 
+Changing allele frequencies will lead to changes in the phenotypes of the two
+populations
+If enough allele frequency differences arise between the two populations, then they will
+eventually no longer be able to breed with each other and produce fertile offspring,
+and can be said to be separate species
+E.g. sympatric speciation in fruit flies
+A population of fruit flies exists in a laboratory
+A random allele change resulting from mutation divides the species into two
+populations
+The allele changes leads to a change in phenotype e.g. food preference
+The difference in phenotype prevents the two populations from interbreeding so there
+is no gene flow between them
+Different alleles are therefore passed on in each population
+This could be due to difference in selection pressure e.g. certain enzymes are
+advantageous for the digestion of different foods or due to genetic drift; the
+random passing on of different alleles
+Different alleles become more frequent in each population
+Over time the divided populations form two distinct species that can no longer
+interbreed to produce fertile offspringYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 33
+Isolation mechanisms other than geographical isolation can also lead to speciation
+Examiner Tips and Tricks
+Note that you need to be able to apply the principles of natural selection to the
+process of speciation; the difference here is that natural selection will be acting
+differently on two isolated populations;
+1. Variation is present
+2. Selection pressures act on a population
+These may be different between two isolated populations
+3. Advantageous alleles provide some individuals with increase survival and
+reproduction chances
+Advantageous alleles may be different between two isolated populations
+4. Advantageous alleles are passed on
+5. Allele frequencies change
+Different advantageous alleles will accumulate in the two isolated
+populations until they become so different that they can no longer
+interbreedYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 34
+Contentious Issues in Environmental Science
+Contentious Issues in Environmental
+Science
+It can be said that there is a consensus, i.e. everyone agrees, among the scientific
+community that
+Increasing concentrations of greenhouse gases cause global warming
+Human activities are the direct cause of increasing greenhouse gas concentrations
+Despite this there are some individuals, even among the scientific community, who do
+not believe that the correlation seen between humans burning fossil fuels and global
+warming is a causal relationship
+These individuals claim that global warming is caused by factors other than
+human activities
+Evaluating the data
+It is important to evaluate any statement that is made about the causes of climate
+change in the light of scientific evidence
+Consider how good the evidence is
+Does a statement address all of the evidence, or only part of it?
+E.g. there may be some years when global temperatures go down, but
+there is strong evidence for an overall upward trend
+Is the data reliable?
+Does the data come from several independent studies i.e. is there plenty of
+evidence?
+Does statistical analysis show that findings are statistically significant?
+Find out whether the statement comes from a trustworthy, unbiased source e.g.
+An individual working for an oil company or a particular government is likely to
+be biased because they have a financial or political interest in the outcome of a
+study 
+Several countries wrote to the United Nations in 2021 to ask that urgent
+recommendations against burning fossil fuels were toned down; all of
+these countries had economies that depended on the use of fossil fuels
+An individual who campaigns passionately for conservation may be biased
+because they strongly believe that humans are causing climate change and
+they have an emotional stake in the outcome of a study
+An individual who works for a renewable energy company may be biased
+because they are of the opinion that their technologies are better than fossilYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 35
+fuel technologies as well as having a financial interest in the outcome of a study
+Evaluating Claims that Human Activities are not the Cause of Cimate Change Table
+When claims are made about the causes of climate change, it is important to evaluate
+these claims while bearing the following factors in mind
+There is a great deal of scientific evidence that has been tested and checked by
+other scientists that supports the hypothesis that humans burning fossil fuels
+causes climate change; this increases the likelihood that further claims of this
+nature are correct
+Climate is highly complex, so scientists need to be careful not to state that one
+factor alone has led to a specific event
+Climate can be affected by any number of factors in any given year; it is
+important to look at all of the data
+Climate and weather experts in the media are often asked about whether
+one particular extreme weather event is due to climate change; they always
+say that it is wrong to draw conclusions from one event, while also
+pointing to that event's place in a trend of increasingly extreme weather
+Climate change is not expected to be linear in effect; scientists expect that
+there may be a tipping point beyond which changes happen faster
+This makes it very difficult to make predictions about exact future climate
+conditions
+People may have a personal interest; some are especially passionate about the
+environment, while others depend financially on fossil fuels
+It is important that we are aware of the personal biases of those making claims
+about the causes of climate change
+If predictions about global warming are correct, then the potential impacts on the future
+of Earth are huge
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 36
+As scientists, it is our responsibility to be aware of the important factors surrounding this
+debate so that we can help other to assess evidence thoroughly
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 37
+Examples of Sustainable Conservation
+Examples of Sustainable Conservation
+Sustainability is about making use of the world's resources in ways that do not damage
+the environment and that can be maintained for future generations.
+The use of extrapolation to model climate change shows that the consequences of
+global warming could be extremely serious for humans and global biodiversity if we
+continue with current human activities
+If we want to be sustainable and limit the consequences of global warming it is essential
+that we act quickly to reduce carbon emissions and increase the rate at which carbon
+is removed from the atmosphere
+Our knowledge of the carbon cycle tells us that we can do these things in several ways
+Reducing carbon emissions
+Carbon emissions can be reduced by limiting the rate at which fossil fuels are burned
+This is challenging as so many of our daily activities depend on the burning of fossil
+fuels to release energy
+Transport of people and goods
+Electricity generation
+Food production
+Two current ways of reducing carbon emissions are
+Burning biofuels instead of fossil fuels
+The use of other renewable energy resources
+Biofuels
+These fuels are made from recently living plant biomass such as sugar cane
+Biofuels can be burned in the same way as fossil fuels, releasing carbon dioxide as they
+burn
+Arguments in support of biofuel use include 
+Biofuels are often cheaper than oil
+It is argued that biofuels are 'carbon neutral' meaning that they only release carbon
+that was recently removed from the atmosphere when the plants were alive
+They do not release carbon that has been stored away for millions of years as
+with fossil fuels
+Biofuels are a renewable source of energy, i.e. they can be regrown quickly 
+There are several arguments against the use of biofuelsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 38
+They do still release carbon dioxide into the atmosphere
+The vast amounts of land required to grow biofuels could otherwise have been
+used for food production
+Creating land for biofuel growth often involves the loss of other types of habitats
+e.g. rainforest; this is bad for biodiversity
+Cutting down mature trees to create land for biofuel growth reduces the removal of
+carbon from the atmosphere by photosynthesis
+Other renewable sources
+For example wind, solar, geothermal, and tidal energy
+Arguments in favour of such renewable resources include 
+These kinds of technologies are advancing quickly and are becoming cheaper and
+more efficient to use
+No carbon dioxide is released when these technologies are used to generate
+electricity
+The current disadvantage of such renewable resources is that no single source is
+perfect e.g.
+Geothermal energy can only be used when there is volcanic activity close to the
+earth's surface
+Solar energy depends on sunshine hours
+Wind energy depends on wind speeds and some conservationists are concerned
+about the impact of wind turbines on birds and bats
+Some are also concerned about the visual impact of wind turbines on the
+landscape
+Tidal energy can only be generated near the coast
+Comparing Energy Resources TableYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 39
+Increasing carbon removal
+There is much excitement over the future potential of new carbon capture technologies,
+but the reality is that the technology to remove vast quantities of carbon from the
+atmosphere and store it away does not yet exist
+We need to rely on existing methods of carbon removal, and the main existing
+mechanism is photosynthesis
+Humans can increase the global rates of photosynthesis by
+Stopping the destruction of forests by deforestation
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 40
+Planting trees, also known as reforestation
+If trees are allowed to grow to maturity, they can store huge amounts of carbon
+in their biomass
+Some countries around the world have shown that it is possible to restore lost
+areas of forest by carrying out reforestation, e.g. Costa Rica now plants seven
+times more trees than it cuts down
+This kind of achievement requires huge government inputs in the form of
+benefits to landowners Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 41

@@ -1,117 +1,43 @@
 export const note_biology_4_6_15 = {
   blocks: [
     {
-      id: 'obj-1',
-      type: 'objective',
-      data: { text: 'Understand how succession, forensic entomology, body temperature (algor mortis), and muscle contraction (rigor mortis) are used to estimate the time of death.' }
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Understand how to determine the time of death of a mammal by evaluating body temperature, rigor mortis, decomposition, and forensic entomology." }
     },
     {
-      id: 'h-succession',
-      type: 'heading',
-      data: { text: 'Stage of Succession', level: 2 }
+      id: "h-tod",
+      type: "heading",
+      data: { text: "Estimating Time of Death", level: 2 }
     },
     {
-      id: 'p-succession',
-      type: 'paragraph',
-      data: { text: 'In forensics, succession refers to the predictable sequence in which different types of organisms colonise a dead body. Unlike ecological succession (where early pioneer species are replaced), on a dead body, all arriving species tend to remain as decomposition progresses.' }
-    },
-    {
-      id: 'list-succession',
-      type: 'list',
+      id: "list-factors",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "numbered",
         items: [
-          '**Bacteria:** Found immediately after TOD.',
-          '**Flies:** Tissue decomposition creates ideal moist conditions for flies to lay eggs and for larvae (maggots) to hatch.',
-          '**Beetles:** As soft tissue is consumed by fly larvae, conditions become favourable for beetles.',
-          '**Drying out:** Over time, the tissue dries out. Flies leave because they prefer moisture, but beetles remain capable of decomposing dry tissue.'
+          "Body Temperature (Algor mortis): Mammals maintain a 37°C internal temperature. After death, metabolic reactions stop producing heat, and the body cools to the ambient environmental temperature following a predictable sigmoid cooling curve (usually complete within 24 hours).",
+          "Muscle Contraction (Rigor mortis): After death, ATP production stops. Calcium ions leak into muscle fibres, causing myosin and actin to bind irreversibly. The muscles stiffen. This begins ~3 hours after death, peaks at 12 hours, and fades around 36 hours as enzymes break down the muscle proteins.",
+          "Extent of Decomposition: Hours after death, cells begin to break themselves down (autolysis). Bacteria from the gut invade the tissues, producing gases (putrefaction) leading to bloating and skin discoloration (greenish hue).",
+          "Forensic Entomology: The study of insects on the corpse. Different species colonize the body at different stages (succession). Blowflies arrive first to lay eggs. By analyzing the life-cycle stage of the maggots present, and knowing the ambient temperature's effect on their growth rate, an accurate minimum time since death can be estimated."
         ]
       }
     },
     {
-      id: 'h-entomology',
-      type: 'heading',
-      data: { text: 'Forensic Entomology', level: 2 }
-    },
-    {
-      id: 'p-entomology',
-      type: 'paragraph',
-      data: { text: 'Forensic entomology is the study of insect colonies on a dead body. By identifying the different species present and understanding their life cycles, scientists can accurately estimate the TOD.' }
-    },
-    {
-      id: 'list-entomology',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Flies arrive within hours; beetles colonise later.',
-          'The **stage of life cycle** acts as a biological clock. For example, blowfly eggs take about 24 hours to hatch. If blowfly larvae are present, the person died more than 24 hours ago.',
-          'The progression of insect life cycles can be affected by drugs in the body, humidity, oxygen availability, and temperature.'
-        ]
-      }
-    },
-    {
-      id: 'h-algor',
-      type: 'heading',
-      data: { text: 'Body Temperature (Algor Mortis)', level: 2 }
-    },
-    {
-      id: 'p-algor',
-      type: 'paragraph',
-      data: { text: 'Living humans maintain a body temperature of roughly 37°C. After death, metabolic reactions that produce heat cease. The body slowly cools until it matches the surrounding ambient temperature—a process known as **algor mortis**.' }
-    },
-    {
-      id: 'list-algor',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'The core body temperature generally decreases by **1.5 to 2.0°C per hour**.',
-          'The exact rate of cooling is affected by the starting temperature, air temperature, the body\'s surface area to volume ratio, the presence of clothing, and percentage body fat.'
-        ]
-      }
-    },
-    {
-      id: 'h-rigor',
-      type: 'heading',
-      data: { text: 'Muscle Contraction (Rigor Mortis)', level: 2 }
-    },
-    {
-      id: 'p-rigor',
-      type: 'paragraph',
-      data: { text: 'About 4–6 hours after death, muscles begin to contract and stiffen. This is known as **rigor mortis** and occurs due to chemical changes at the cellular level:' }
-    },
-    {
-      id: 'list-rigor',
-      type: 'list',
-      data: {
-        style: 'numbered',
-        items: [
-          'Muscle cells run out of oxygen and start to respire anaerobically, producing **lactic acid**.',
-          'The accumulation of lactic acid decreases the pH inside muscle cells, which denatures the enzymes responsible for producing ATP.',
-          'Without ATP, myosin heads cannot detach from the actin filaments, locking the muscle in a contracted, stiff state.',
-          'Rigor mortis progresses systematically: starting in the small muscles of the head, and finishing in the large lower-body muscles.',
-          'It is fully established around 12–18 hours, but wears off after 24–36 hours as muscle proteins physically degrade.'
-        ]
-      }
-    },
-    {
-      id: 'callout-tod',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Estimates Only',
-        text: 'Time of death can never be pinpointed with 100% accuracy. Because so many external variables (temperature, clothing, location) affect everything from decomposition and algor mortis to insect development, forensic estimates must combine all evidence to deduce the most reliable timeframe.'
-      }
+      id: "callout-combine",
+      type: "callout",
+      data: { style: "warning", title: "Combining Evidence", text: "No single method provides an exact time. Forensic scientists must combine evidence from cooling curves, stiffness, insect life cycles, and take ambient conditions (e.g., clothing, body size, outside temperature) into account." }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', prompt: 'In forensic succession, what causes flies to be replaced primarily by beetles over time?' },
-      { id: 'cue-2', prompt: 'What is the characteristic cooling rate of a human body during algor mortis?' },
-      { id: 'cue-3', prompt: 'Describe the biochemical cause of rigor mortis.' }
+      { id: "cue-1", blockId: "list-factors", prompt: "What causes rigor mortis?" },
+      { id: "cue-2", blockId: "list-factors", prompt: "Why does algor mortis eventually stop?" },
+      { id: "cue-3", blockId: "list-factors", prompt: "Explain how forensic entomology is used to estimate time of death." }
     ],
-    summaryText: 'Flies require a moisture-rich environment and leave as the dead tissue dries out; beetles remain because they can decompose dry tissue. During algor mortis, a body typically cools at a rate of 1.5–2.0°C per hour. Rigor mortis is caused by anaerobic respiration producing lactic acid, which drops pH and denatures ATP-producing enzymes; without ATP, myosin heads cannot detach from actin filaments, locking muscles in a stiffened state.'
-  }
+    summaryText: "Time of death is estimated combining multiple physical metrics. Algor mortis (cooling to ambient temp), Rigor mortis (stiffening due to ATP lack), Decomposition (autolysis and putrefaction), and Forensic entomology (analyzing maggot life cycles and insect succession).",
+    ready: true
+  },
+  evidence: []
 };

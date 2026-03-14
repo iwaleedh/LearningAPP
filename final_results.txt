@@ -1,0 +1,33 @@
+Analyzing PDFs...
+1.1 BiologicalMolecules.pdf: 5/5 headers found (100.0%)
+1.2. TheCirculatorySystem.pdf: 6/6 headers found (100.0%)
+1.3 Diet & Health.pdf: 9/9 headers found (100.0%)
+2.1 GasExchange,CellMembranes& Transport.pdf: 5/5 headers found (100.0%)
+2.2 Proteins.pdf: 4/4 headers found (100.0%)
+2.3 DNA Replication.pdf: 4/4 headers found (100.0%)
+2.4 Inheritance.pdf: 5/5 headers found (100.0%)
+3.1 CellStructure&Organisation.pdf: 8/8 headers found (100.0%)
+3.2 Reproduction&Inheritance.pdf: 13/13 headers found (100.0%)
+4.1 PlantStructure&Function.pdf: 6/6 headers found (100.0%)
+4.2 Plants&Conservation.pdf: 3/3 headers found (100.0%)
+4.3 Plants&Bacterial Growth.pdf: 4/4 headers found (100.0%)
+4.4 Classification&Biodiversity.pdf: 8/8 headers found (100.0%)
+5.1 Photosynthesis.pdf: 8/8 headers found (100.0%)
+5.2 Ecosystems.pdf: 6/6 headers found (100.0%)
+5.3 EnvironmentalBiology.pdf: 11/11 headers found (100.0%)
+6.1 EnvironmentalBiology.pdf: 5/5 headers found (100.0%)
+6.2 Immunity.pdf: 7/7 headers found (100.0%)
+6.3 Antibiotics.pdf: 3/3 headers found (100.0%)
+6.4 Decomposition&Decay.pdf: 1/1 headers found (100.0%)
+6.5 Forensics.pdf: 4/4 headers found (100.0%)
+7.1 Respiration.pdf: 8/8 headers found (100.0%)
+7.2 MuscularMovement.pdf: 7/7 headers found (100.0%)
+7.3 TheInternalEnvironment.pdf: 7/7 headers found (100.0%)
+8.1 TheNervousSystem.pdf: 10/10 headers found (100.0%)
+8.2 PlantHormones.pdf: 3/3 headers found (100.0%)
+8.3 TheBrain.pdf: 3/3 headers found (100.0%)
+8.4 GeneTechnology.pdf: 6/6 headers found (100.0%)
+
+--- RESULTS ---
+Potentially unintegrated PDFs:
+None! All PDFs appear to be integrated.

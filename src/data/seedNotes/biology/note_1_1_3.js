@@ -231,6 +231,23 @@ export const note_biology_1_1_3 = {
         text: 'Cholesterol is a steroid lipid (4 fused rings, −OH group, hydrocarbon tail) essential for membrane fluidity and as a precursor for steroid hormones, vitamin D, and bile acids. In blood, cholesterol is carried by lipoproteins: LDL (high lipid, low protein, "bad") delivers cholesterol from liver to tissues; HDL (high protein, low lipid, "good") returns excess cholesterol from tissues to the liver. A high LDL:HDL ratio increases CVD risk. Saturated and trans fats raise LDL; unsaturated fats and statins lower LDL. CVD risk is best assessed using the LDL:HDL ratio rather than total cholesterol alone.'
       }
     }
+  ,
+    {
+        "id": "svg-diag-1-1-3-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 300 130' xmlns='http://www.w3.org/2000/svg'><polygon points='50,70 70,40 100,40 120,70 100,100 70,100' fill='#f7fafc' stroke='#4a5568' stroke-width='2'/><polygon points='120,70 150,40 180,40 200,70 180,100 150,100' fill='#f7fafc' stroke='#4a5568' stroke-width='2'/><polygon points='200,70 230,40 260,40 280,70 260,100 230,100' fill='#f7fafc' stroke='#4a5568' stroke-width='2'/><polygon points='280,70 300,50 320,70 300,90' fill='#f7fafc' stroke='#4a5568' stroke-width='2'/><text x='15' y='75' font-weight='bold' fill='#c53030'>HO-</text><text x='110' y='125' font-size='12' font-style='italic'>Four Hydrocarbon Rings</text></svg>",
+            "caption": "Cholesterol Ring Structure"
+        }
+    },
+    {
+        "id": "svg-diag-1-1-3-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 300 140' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='60' r='45' fill='#fff5f5' stroke='#c53030' stroke-width='3'/><circle cx='80' cy='60' r='35' fill='#fed7d7'/><text x='62' y='65' font-weight='bold' font-size='14' fill='#742a2a'>LDL</text><text x='40' y='125' font-size='11'>More Cholesterol</text><circle cx='220' cy='60' r='35' fill='#f0fff4' stroke='#2f855a' stroke-width='3'/><circle cx='220' cy='60' r='20' fill='#c6f6d5'/><text x='202' y='65' font-weight='bold' font-size='14' fill='#22543d'>HDL</text><text x='190' y='115' font-size='11'>More Protein</text></svg>",
+            "caption": "Lipoproteins (LDL vs HDL)"
+        }
+    }
   ],
   recall: {
     enabled: true,

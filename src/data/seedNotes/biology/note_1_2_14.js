@@ -1,150 +1,88 @@
 export const note_biology_1_2_14 = {
-  blocks: [
+  "blocks": [
     {
-      id: 'obj-code',
-      type: 'objective',
-      data: { text: 'Describe the properties of the genetic code (triplet, degenerate, non-overlapping, universal) and explain how substitution and frameshift mutations affect protein structure and function.' },
+      "id": "obj-15",
+      "type": "objective",
+      "data": {
+        "text": "Understand the nature of the genetic code and the effects of mutations."
+      }
     },
     {
-      id: 'h-genetic-code',
-      type: 'heading',
-      data: { text: 'Properties of the Genetic Code', level: 2 },
+      "id": "h-code",
+      "type": "heading",
+      "data": {
+        "text": "The Genetic Code",
+        "level": 2
+      }
     },
     {
-      id: 'p-genetic-code',
-      type: 'paragraph',
-      data: { text: 'The <strong>genetic code</strong> is the set of rules by which DNA (via mRNA) encodes the amino acid sequence of a protein. A sequence of 3 bases on mRNA \u2014 a <strong>codon</strong> \u2014 specifies one amino acid. The code has four key properties.' },
+      "id": "list-code",
+      "type": "list",
+      "data": {
+        "style": "bullet",
+        "items": [
+          "Triplet: Three bases (one codon) code for one amino acid.",
+          "Non-overlapping: Each base is read only once in its specific codon.",
+          "Degenerate: More than one codon can code for the same amino acid (there are 64 codons but only 20 amino acids)."
+        ]
+      }
     },
     {
-      id: 'list-code-properties',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '<strong>Triplet:</strong> each codon consists of 3 consecutive bases. There are 4<sup>3</sup> = 64 possible codons, more than enough to code for 20 amino acids + stop signals.',
-          '<strong>Degenerate (redundant):</strong> most amino acids are encoded by more than one codon (e.g. leucine has 6 codons). The <strong>degenerate nature of the genetic code can limit the effect of mutations</strong> (as a substitution might still code for the same amino acid).',
-          '<strong>Non-overlapping:</strong> each base is read in only one codon. The adjacent codons do not overlap; no single base can take part in the formation of more than one codon. The ribosome reads sequential triplets.',
-          '<strong>Universal:</strong> almost every organism uses the same codons for the same amino acids. This is why <strong>genetic engineering</strong> (the transfer of genes from one species to another) is possible.',
-        ],
-      },
+      "id": "h-mutations",
+      "type": "heading",
+      "data": {
+        "text": "Gene Mutations",
+        "level": 2
+      }
     },
     {
-      id: 'h-special-codons',
-      type: 'heading',
-      data: { text: 'Start and Stop Codons', level: 2 },
+      "id": "p-mut",
+      "type": "paragraph",
+      "data": {
+        "text": "A mutation is a random change in the DNA base sequence. Types include substitution, insertion, and deletion."
+      }
     },
     {
-      id: 'callout-codons',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Special Codons to Memorise',
-        text: '<strong>Start codon:</strong> AUG \u2014 codes for methionine (Met); marks the start of the coding sequence. Every polypeptide begins with methionine (sometimes removed later).\n\n<strong>Stop codons:</strong> UAA, UAG, UGA \u2014 do not code for any amino acid. No tRNA has a matching anticodon; the ribosome detaches and the polypeptide is released.',
-      },
+      "id": "p-effect",
+      "type": "paragraph",
+      "data": {
+        "text": "Insertions and deletions cause a \"frameshift\", altering all subsequent codons. This drastically changes the amino acid sequence, leading to non-functional proteins. Due to the degenerate nature of the code, a substitution mutation might code for the same amino acid (a silent mutation) and have no effect."
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-1-2-14-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='40' width='60' height='30' fill='#ebf8ff' stroke='#3182ce'/><text x='65' y='60' font-weight='bold'>A U G</text><rect x='120' y='40' width='60' height='30' fill='#e6fffa' stroke='#38a169'/><text x='135' y='60' font-weight='bold'>C C G</text><rect x='180' y='40' width='60' height='30' fill='#fff5f5' stroke='#e53e3e'/><text x='195' y='60' font-weight='bold'>U A A</text><text x='65' y='90' font-size='10'>Codon 1</text><text x='135' y='90' font-size='10'>Codon 2</text><text x='195' y='90' font-size='10'>Codon 3</text><text x='55' y='20' font-size='10'>(Non-Overlapping & Degenerate)</text></svg>",
+            "caption": "The Triplet Code"
+        }
     },
     {
-      id: 'callout-tip-codons',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Exam Tip',
-        text: 'You will not be required to memorise specific codons and the amino acids for which they code. The start (AUG) and stop (UAA, UAG, UGA) codons are the only ones worth knowing generally.',
-      },
-    },
-    {
-      id: 'h-codon-table',
-      type: 'heading',
-      data: { text: 'Example Codons', level: 3 },
-    },
-    {
-      id: 'table-codons',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Selected mRNA codons and their amino acids, illustrating degeneracy.',
-        headers: ['mRNA Codon(s)', 'Amino Acid', 'Notes'],
-        rows: [
-          ['AUG', 'Methionine (Met)', 'Start codon \u2014 unique; only one codon'],
-          ['UUU, UUC', 'Phenylalanine (Phe)', '2 codons \u2014 differ only at 3rd base'],
-          ['UUA, UUG, CUU, CUC, CUA, CUG', 'Leucine (Leu)', '6 codons \u2014 highly degenerate'],
-          ['GGU, GGC, GGA, GGG', 'Glycine (Gly)', '4 codons \u2014 any 3rd base works'],
-          ['UAA, UAG, UGA', 'STOP \u2014 no amino acid', 'Signal end of polypeptide'],
-        ],
-      },
-    },
-    {
-      id: 'h-mutations',
-      type: 'heading',
-      data: { text: 'Gene Mutations', level: 2 },
-    },
-    {
-      id: 'p-mutations',
-      type: 'paragraph',
-      data: { text: 'A <strong>gene mutation</strong> is a change in the base sequence of DNA. Mutations can arise spontaneously during DNA replication or be induced by mutagens (e.g. UV radiation, chemicals). The two main types affecting the reading of codons are substitutions and frameshifts.' },
-    },
-    {
-      id: 'table-mutations',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Substitution vs insertion/deletion (frameshift) mutations.',
-        headers: ['Feature', 'Substitution', 'Insertion / Deletion (Frameshift)'],
-        rows: [
-          ['What changes', 'One base replaced by another', 'One (or more) bases added or removed'],
-          ['Effect on codons', 'Only the codon containing the substituted base changes', 'All codons downstream of the mutation shift \u2014 completely different amino acid sequence'],
-          ['Effect on protein', 'May change one amino acid (missense) or no amino acid (silent, due to degeneracy)', 'Usually produces a non-functional protein \u2014 many amino acids altered'],
-          ['Severity', 'Generally less severe \u2014 often silent or minor change', 'Usually severe \u2014 major disruption to protein function'],
-          ['Example', 'Sickle-cell anaemia: GAG\u2192GUG in \u03b2-globin gene \u21921 amino acid change (Glu\u2192Val)', 'Addition of 1 base shifts reading frame; different amino acids coded from that point onwards'],
-        ],
-      },
-    },
-    {
-      id: 'callout-sickle-cell',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Worked Example: Sickle-Cell Anaemia (Substitution)',
-        text: 'Normal \u03b2-globin codon: <strong>GAG</strong> \u2192 Glutamic acid (Glu) \u2014 hydrophilic amino acid\n\nMutant \u03b2-globin codon: <strong>GUG</strong> \u2192 Valine (Val) \u2014 hydrophobic amino acid\n\nEffect: the hydrophobic valine causes HbS molecules to stick together under low O\u2082 conditions \u2192 haemoglobin polymerises \u2192 red blood cell distorts into sickle shape \u2192 blocked capillaries, reduced O\u2082 supply.',
-      },
-    },
-    {
-      id: 'callout-frameshift',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Frameshift Mutations are Usually Catastrophic',
-        text: 'Original:   AUG-UUC-GGA-CCU-UAA\n             Met-Phe-Gly-Pro-stop\n\nInsert one base (X) after base 3:\n            AUG-XUU-CGG-ACC-UUA-A...\n             Met-?  - different codons all the way through\n\nAll downstream codons shift \u2192 completely different (usually nonsense) protein.',
-      },
-    },
-    {
-      id: 'checklist-code',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'State and explain the four properties of the genetic code (triplet, degenerate, non-overlapping, universal)', checked: false },
-          { text: 'Identify the start codon and the three stop codons', checked: false },
-          { text: 'Explain why a substitution mutation may be silent', checked: false },
-          { text: 'Explain why a frameshift mutation is usually more severe than a substitution', checked: false },
-          { text: 'Describe the molecular basis of sickle-cell anaemia as an example of a substitution mutation', checked: false },
-        ],
-      },
-    },
-    {
-      id: 'summary-code',
-      type: 'summary',
-      data: { text: 'The genetic code is: <strong>triplet</strong> (3 bases = 1 codon = 1 amino acid); <strong>degenerate</strong> (multiple codons per amino acid, especially 3rd base \u201cwobble\u201d); <strong>non-overlapping</strong> (each base belongs to one codon only); <strong>universal</strong> (same codons in almost all organisms). Start codon: AUG (Met). Stop codons: UAA, UAG, UGA. Substitution \u2192 may be silent (degeneracy) or change one amino acid; frameshift (insertion/deletion) \u2192 shifts all downstream codons \u2192 usually non-functional protein.' },
-    },
+        "id": "svg-diag-1-2-14-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 400 150' xmlns='http://www.w3.org/2000/svg'><text x='20' y='40' font-size='12'>Normal: ... A T G / G G C / A A A ...</text><polyline points='110,50 110,70 140,70' fill='none' stroke='#e53e3e' stroke-width='2' marker-end='url(#arrow)'/><text x='150' y='75' font-size='10' fill='#c53030'>Deletion of 'T'</text><text x='20' y='110' font-size='12'>Mutant: ... A G G / G C A / A A ...</text><text x='20' y='140' font-size='10' font-weight='bold'>Effect: Entire reading frame shifts downstream!</text></svg>",
+            "caption": "Frameshift Mutation"
+        }
+    }
   ],
-  recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'list-code-properties', prompt: 'State and explain the four properties of the genetic code.' },
-      { id: 'cue-2', blockId: 'callout-codons', prompt: 'What are the start codon and the three stop codons? What happens when a ribosome reaches a stop codon?' },
-      { id: 'cue-3', blockId: 'table-mutations', prompt: 'Compare substitution and frameshift mutations. Why is a frameshift usually more severe?' },
-      { id: 'cue-4', blockId: 'callout-sickle-cell', prompt: 'Explain at the molecular level how a single base substitution causes sickle-cell anaemia.' },
+  "recall": {
+    "enabled": true,
+    "cues": [
+      {
+        "id": "cue-1",
+        "blockId": "list-code",
+        "prompt": "What does \"degenerate genetic code\" mean?"
+      },
+      {
+        "id": "cue-2",
+        "blockId": "p-effect",
+        "prompt": "Why are deletion mutations usually more severe than substitution mutations?"
+      }
     ],
-    summaryText: '4 properties: triplet, degenerate, non-overlapping, universal. Start codon = AUG; stop codons = UAA/UAG/UGA. Substitution \u2192 1 codon changes (may be silent due to degeneracy). Frameshift (insertion/deletion) \u2192 all downstream codons shift \u2192 usually non-functional protein. Sickle cell: GAG\u2192GUG \u2192 Glu\u2192Val \u2192 HbS stickiness.',
-    ready: false,
+    "summaryText": "The genetic code is triplet, non-overlapping, and degenerate. Mutations alter the base sequence; insertions/deletions cause frameshifts that severely alter the resulting protein.",
+    "ready": true
   },
-  evidence: [
-    { id: 'ev-1', title: 'Genetic code and mutations', detail: 'Properties of the genetic code, codon table, stop/start codons, and mutation types (substitution and frameshift) covered in AQA A Level Biology Student Book 1, Chapter 4.', year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 4, pp78-79', tags: ['genetic-code', 'mutations', 'substitution', 'frameshift'] },
-  ],
+  "evidence": []
 };

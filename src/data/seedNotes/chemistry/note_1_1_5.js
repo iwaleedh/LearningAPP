@@ -36,7 +36,7 @@ export const note_chemistry_1_1_5 = {
       data: {
         style: 'key',
         title: 'Molecular Formula Multiplier',
-        text: 'The molecular formula is always a simple multiple of the empirical formula.<br/><br/><strong>Molecular Formula = (Empirical Formula) × n</strong><br/><br/>To find the multiplier $n$, use:<br/><br/><strong>$n$ = Molecular $M_r \\div$ Empirical Formula Mass</strong>'
+        text: 'The molecular formula is always a simple multiple of the empirical formula.<br/><br/><strong>Molecular Formula = (Empirical Formula) × n</strong><br/><br/>To find the multiplier <em>n</em>, use:<br/><br/><strong><em>n</em> = Molecular Mᵣ ÷ Empirical Formula Mass</strong>'
       },
       terms: []
     },
@@ -57,9 +57,18 @@ export const note_chemistry_1_1_5 = {
       terms: []
     },
     {
-      id: 'p-water-cryst-def',
-      type: 'paragraph',
-      data: { text: '<strong>Water of crystallisation</strong> refers to water molecules that are trapped within the framework of an ionic crystal lattice during the crystallisation process. They are held by electrostatic attractions between the ions and water molecules.<br/><br/>The formula is written with a dot (·) representing a fixed mole ratio. For example, <strong>CuSO₄·5H₂O</strong> means there are exactly 5 moles of water for every 1 mole of copper(II) sulfate.' },
+      id: 'list-water-cryst-def',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Water of crystallisation</strong> refers to water molecules trapped within the ionic crystal lattice during crystallisation.',
+          'Water molecules are held by electrostatic attractions between the ions and the water dipoles.',
+          'The formula is written with a <strong>centred dot (·)</strong> representing a fixed mole ratio — e.g. <strong>CuSO₄·5H₂O</strong> means exactly 5 mol H₂O per 1 mol CuSO₄.',
+          'Removing water of crystallisation by heating gives the <strong>anhydrous</strong> form of the salt.',
+          'The ratio of moles of salt to moles of water is always a fixed whole number.'
+        ]
+      },
       terms: ['Water of crystallisation']
     },
     {
@@ -81,7 +90,7 @@ export const note_chemistry_1_1_5 = {
       data: {
         style: 'tip',
         title: 'Reversible Hydration',
-        text: 'Heating a hydrated salt drives off the water to leave an anhydrous salt (e.g. Blue CuSO₄ $\\rightarrow$ White CuSO₄). Adding water back reverses the process exactly. This distinct colour change is often used as a <strong>chemical test for the presence of water</strong>.'
+        text: 'Heating a hydrated salt drives off the water to leave an anhydrous salt (e.g. Blue CuSO₄ → White CuSO₄). Adding water back reverses the process exactly. This distinct colour change is often used as a <strong>chemical test for the presence of water</strong>.'
       },
       terms: []
     },
@@ -95,7 +104,7 @@ export const note_chemistry_1_1_5 = {
             id: 'list-steps',
             type: 'list',
             data: {
-                style: 'ordered',
+                style: 'numbered',
                 items: [
                     'Divide the mass (or % composition) of each element by its relative atomic mass (Aᵣ). This gives the <em>relative number of moles</em> of each element.',
                     'Divide all values by the <strong>smallest value</strong> to get the simplest ratio.',
@@ -112,9 +121,10 @@ export const note_chemistry_1_1_5 = {
             caption: 'Handling Non-Whole Number Ratios',
             headers: ['Ratio Ends In', 'Multiply ALL by', 'Example'],
             rows: [
-              ['<strong>.5</strong> (e.g. 1.5)', '<strong>× 2</strong>', '1.5 $\\rightarrow$ 3'],
-              ['<strong>.33</strong> (e.g. 1.33)', '<strong>× 3</strong>', '1.33 $\\rightarrow$ 4'],
-              ['<strong>.25</strong> (e.g. 1.25)', '<strong>× 4</strong>', '1.25 $\\rightarrow$ 5']
+              ['<strong>.5</strong> (e.g. 1.5)', '<strong>× 2</strong>', '1.5 → 3'],
+              ['<strong>.33</strong> (e.g. 1.33)', '<strong>× 3</strong>', '1.33 → 4'],
+              ['<strong>.67</strong> (e.g. 1.67)', '<strong>× 3</strong>', '1.67 → 5'],
+              ['<strong>.25</strong> (e.g. 1.25)', '<strong>× 4</strong>', '1.25 → 5']
             ]
           },
           terms: []
@@ -203,7 +213,7 @@ export const note_chemistry_1_1_5 = {
       data: {
         style: 'key',
         title: 'Experimental Method & Calculations',
-        text: '<strong>Aim:</strong> Find the value of <em>x</em> in a hydrated salt formula (e.g. Na₂CO₃·<em>x</em>H₂O).<br/><br/><strong>Procedure:</strong><br/>1. Weigh an empty evaporating basin ($m_1$).<br/>2. Add hydrated crystals and weigh basin + crystals ($m_2$).<br/>3. Heat the basin gently to drive off the water.<br/>4. Cool in a desiccator and re-weigh.<br/>5. <strong>Heat to Constant Mass:</strong> Reheat, cool, and re-weigh repeatedly until the mass stops changing ($m_3$). This guarantees ALL water has been driven off.<br/><br/><strong>Mass Calculations:</strong><br/>• Mass of anhydrous salt = $m_3 - m_1$<br/>• Mass of water lost = $m_2 - m_3$'
+        text: '<strong>Aim:</strong> Find the value of <em>x</em> in a hydrated salt formula (e.g. Na₂CO₃·<em>x</em>H₂O).<br/><br/><strong>Procedure:</strong><br/>1. Weigh an empty evaporating basin (m<sub>1</sub>).<br/>2. Add hydrated crystals and weigh basin + crystals (m<sub>2</sub>).<br/>3. Heat the basin gently to drive off the water.<br/>4. Cool in a desiccator and re-weigh.<br/>5. <strong>Heat to Constant Mass:</strong> Reheat, cool, and re-weigh repeatedly until the mass stops changing (m<sub>3</sub>). This guarantees ALL water has been driven off.<br/><br/><strong>Mass Calculations:</strong><br/>• Mass of anhydrous salt = m<sub>3</sub> − m<sub>1</sub><br/>• Mass of water lost = m<sub>2</sub> − m<sub>3</sub>'
       },
       terms: ['Constant mass']
     },
@@ -213,7 +223,7 @@ export const note_chemistry_1_1_5 = {
       data: {
         style: 'worked',
         title: 'Worked Example: Finding x',
-        text: '<strong>Q: 2.50 g of hydrated sodium carbonate (Na₂CO₃·xH₂O) is heated to constant mass. 0.93 g of anhydrous sodium carbonate remains. Find x.</strong><br/><br/><strong>Step 1: Find Masses</strong><br/>Mass of anhydrous Na₂CO₃ = 0.93 g<br/>Mass of water lost = 2.50 − 0.93 = 1.57 g<br/><br/><strong>Step 2: Find Moles</strong> (Divide by Mr)<br/>Moles Na₂CO₃ = 0.93 / 106.0 = 0.00877 mol<br/>Moles H₂O = 1.57 / 18.0 = 0.0872 mol<br/><br/><strong>Step 3: Mole Ratio</strong> (Divide by smallest)<br/>Na₂CO₃: 0.00877 / 0.00877 = 1<br/>H₂O: 0.0872 / 0.00877 = 9.94 $\\approx$ 10<br/><br/>Formula = <strong>Na₂CO₃·10H₂O</strong> ($x = 10$)'
+        text: '<strong>Q: 2.50 g of hydrated sodium carbonate (Na₂CO₃·xH₂O) is heated to constant mass. 0.93 g of anhydrous sodium carbonate remains. Find x.</strong><br/><br/><strong>Step 1: Find Masses</strong><br/>Mass of anhydrous Na₂CO₃ = 0.93 g<br/>Mass of water lost = 2.50 − 0.93 = 1.57 g<br/><br/><strong>Step 2: Find Moles</strong> (Divide by Mr)<br/>Moles Na₂CO₃ = 0.93 / 106.0 = 0.00877 mol<br/>Moles H₂O = 1.57 / 18.0 = 0.0872 mol<br/><br/><strong>Step 3: Mole Ratio</strong> (Divide by smallest)<br/>Na₂CO₃: 0.00877 / 0.00877 = 1<br/>H₂O: 0.0872 / 0.00877 = 9.94 ≈ 10<br/><br/>Formula = <strong>Na₂CO₃·10H₂O</strong> (x = 10)'
       },
       terms: []
     },
@@ -300,14 +310,14 @@ export const note_chemistry_1_1_5 = {
         { id: 'c-water3', blockId: 'table-water-errors', prompt: 'A student does a water of crystallisation experiment but doesn\'t heat it long enough. What effect will this have on the calculated value of x, and why?' },
         { id: 'c-water4', blockId: 'table-water-errors', prompt: 'During a water of crystallisation experiment, the salt is overheated and decomposes. Will the calculated value of x be too high or too low?' },
         { id: 'c2', blockId: 'list-steps', prompt: 'Describe the method for calculating an empirical formula from percentage composition data.' },
-        { id: 'c3', blockId: 'callout-mol', prompt: 'A compound has empirical formula CH₂O and Mᵣ = 180. What is the molecular formula?' },
+        { id: 'c3', blockId: 'callout-multiplier', prompt: 'A compound has empirical formula CH₂O and Mᵣ = 180. What is the molecular formula?' },
         { id: 'c4', blockId: 'callout-combustion-def', prompt: 'State the formula for finding the mass of carbon from a combustion analysis experiment that produces a known mass of CO₂.' },
         { id: 'c5', blockId: 'callout-pq1', prompt: '0.920 g of compound X burns to give 1.760 g CO₂ and 0.720 g H₂O. Find the empirical formula of X (contains C, H, O only).' },
         { id: 'c6', blockId: 'callout-pq3', prompt: 'A hydrocarbon is 85.7% C and 14.3% H, with Mᵣ = 42. Determine its molecular formula, showing all steps.' },
         { id: 'c7', blockId: 'callout-pq4', prompt: '3.00 g of hydrated copper(II) sulfate leaves 1.92 g of solid after heating. Calculate x. (CuSO₄ Mr = 159.6, H₂O Mr = 18.0)' }
       ],
       summaryText: 'Empirical = simplest ratio; Molecular = actual atoms. Methods: (1) Masses — divide by Aᵣ, divide by smallest; (2) % — treat as 100g. Water of crystallisation is treated identically — find moles of anhydrous salt and moles of water lost, then find ratio. Heat to constant mass ensures ALL water is lost. Not heating enough = x too low. Spilling/decomposing = x too high. Molecular formula = empirical × (Mᵣ ÷ empirical Mᵣ).',
-      ready: false
+      ready: true
     },
     evidence: []
 };

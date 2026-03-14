@@ -1,0 +1,579 @@
+Edexcel International A
+Level (IAL) Biology
+Respiration
+Contents
+Overview of Respiration
+Glycolysis
+Link Reaction & Krebs Cycle
+The Electron Transport Chain
+Anaerobic Respiration
+Respiratory Quotient
+Core Practical 15: Investigation of Respiration in Yeast
+Core Practical 16: Respirometer to Calculate RQYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Overview of Respiration
+Overview of Respiration
+Glucose is the main respiratory substrate used by cells
+Aerobic respiration is the process of breaking down a respiratory substrate in order
+to produce ATP using oxygen
+The equation for aerobic respiration:
+glucose + oxygen →   carbon dioxide + water + energy
+CH 0 + 6 O →  6 CO + 6 H0 + 2870kJ
+The energy that is released during the process is used to phosphorylate (add a
+phosphate) ADP to form ATP
+ATP provides energy for other biological processes in cells
+The process of aerobic respiration using glucose can be split into four stages which
+each occurs at a particular location in a eukaryotic cell:
+Glycolysis takes place in the cell cytoplasm
+The Link reaction takes place in the matrix of the mitochondria
+The Krebs cycle takes place in the matrix of the mitochondria
+Oxidative phosphorylation occurs at the inner membrane of the mitochondria
+These chemical reactions are controlled by intracellular enzymes that catalyses
+reactions within the cell
+Ensuring that the energy trapped within the chemical bonds of the glucose
+molecule is released gradually and not all at once
+A sudden release of such a large amount of energy would result in an increase in body
+temperature to levels that would denature enzymes
+The enzyme that catalyses these reactions the slowest will determine the overall rate of
+aerobic respiration
+Several coenzymes are required during respiration to transfer various molecules
+involved in the process
+NAD and FAD are the coenzymes responsible for transferring hydrogen between
+molecules
+Depending on whether they give or take hydrogen, they are able to reduce or
+oxidise a molecule
+Coenzyme A is responsible for the transfer of acetate (also known as acetic acid)
+from one molecule to another6126 2 2 2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Although glucose is the main fuel for respiration, organisms can also break down other
+molecules (such as fatty acids or amino acids) to be respired
+Four Stages of Respiration Table
+Structure of mitochondria
+Mitochondria have two phospholipid membranes
+The outer membrane is:
+Smooth
+Permeable to several small molecules
+The inner membrane is:
+Folded (cristae)
+Less permeable
+The site of the electron transport chain (used in oxidative phosphorylation)
+Location of ATP synthase enzymes (used in oxidative phosphorylation)
+The intermembrane space:
+Has a low pH due to the high concentration of protons
+The concentration gradient across the inner membrane is formed during oxidative
+phosphorylation and is essential for ATP synthesis
+The matrix:
+Is an aqueous solution within the inner membranes of the mitochondrion
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+Contains ribosomes, enzymes and circular mitochondrial DNA necessary for
+mitochondria to function
+The structure of a mitochondrion
+Examiner Tips and Tricks
+It’s important to know the exact locations of each stage. It is not enough to say the
+Krebs cycle takes place in the mitochondria, you need to say it takes place in
+the matrix of the mitochondria.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Glycolysis
+Glycolysis
+Glycolysis is the first stage of respiration
+It does not require oxygen to take place and is therefore the first step for both aerobic
+and anaerobic respiration
+Glucose is only partially oxidised during glycolysis
+It takes place in the cytoplasm of the cell and involves:
+Trapping glucose in the cell by phosphorylating the molecule
+Oxidising triose phosphate (by losing hydrogen)
+It results in the production of
+2 Pyruvate (3C) molecules which moves into the matrix of mitochondria to be used
+during the link reaction
+Net gain 2 ATP
+2 reduced NAD, which will be used during a later stage called oxidative
+phosphorylation
+Under anaerobic conditions, glycolysis produces lactic acid or lactate instead of
+pyruvate
+Steps of glycolysis
+Phosphorylation of glucose (a hexose sugar)
+Two molecules of ATP are required to provide the two phosphates needed for the
+phosphorylation of glucose
+This produces
+Two molecules of triose phosphate
+Two molecules of ADP
+Oxidation of triose phosphate
+After triose phosphate loses hydrogen, it forms two molecules of pyruvate
+The hydrogen ions are collected by NAD which reduces the coenzyme
+This forms two reduced NAD or NADH
+Even though a total of four ATP molecules were produced during glycolysis, two of
+them were used to phosphorylate glucose
+There was therefore a net gain of two ATP moleculesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+The process of glycolysis
+Examiner Tips and Tricks
+It may seem strange that ATP is used and also produced during glycolysis. At the start
+ATP is used to make glucose more reactive (it is usually very stable) and to lower the
+activation energy of the reaction. Since 2 ATP are used and 4 are produced during the
+process, there is a net gain of 2 ATP per glucose molecule.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+Link Reaction & Krebs Cycle
+Link Reaction & Krebs Cycle
+The Link reaction
+The end product of glycolysis is pyruvate
+Pyruvate contains a substantial amount of chemical energy that can be further utilised in
+respiration to produce more ATP
+The enzymes and coenzymes that are required for the link reaction are found in the
+mitochondrial matrix
+When oxygen is available pyruvate will enter the mitochondrial
+matrix and aerobic respiration will continue
+Pyruvate moves across the double membrane of the mitochondria via active transport
+It requires a transport protein and a small amount of ATP
+Once in the mitochondrial matrix pyruvate takes part in the link reaction
+Pyruvate enters the mitochondrial matrix from the cytosol (cytoplasm) by active
+transport
+The link reaction takes place in the matrix of the mitochondria
+It is referred to as the link reaction because it linksglycolysis to the Krebs cycle
+The steps are:
+Pyruvate is oxidised (hydrogen is removed) by enzymes to produce acetate,
+CHCO(O) (also known as acetic acid)
+Pyruvate is also decarboxylated (carbon is removed) in the form of carbon dioxide
+Reduction of NAD to NADH or reduce NAD by collecting hydrogen from pyruvate
+Acetate combines with coenzyme A to form acetyl coenzyme A (acetyl CoA)
+No ATP is produced during the link reaction
+3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+It produces:
+Acetyl coA
+Carbon dioxide (CO )
+Reduced NAD (NADH)
+pyruvate + NAD + CoA →  acetyl CoA + carbon dioxide + reduced NAD
+The link reaction occurs in the mitochondrial matrix. It dehydrogenates and
+decarboxylates the three-carbon pyruvate to produce the two-carbon acetyl CoA that
+can enter the Krebs Cycle
+Every molecule of glucose produces two pyruvate molecules
+The link reaction and the Krebs cycle will therefore occur twice for every molecule of
+glucose
+Thus, each molecule of glucose will produce:
+Two molecules of acetyl CoA
+Two molecules of CO
+Two molecules of reduced NAD
+The Krebs Cycle
+The Krebs cycle (sometimes called the citric acid cycle) consists of a series of enzyme-
+controlled reactions
+2 carbon (2C) Acetyl CoA enters the circular pathway from the link reaction in glucose
+metabolism
+Acetyl CoA formed from fatty acids (after the breakdown of lipids) and amino
+acids enters directly into the Krebs Cycle from other metabolic pathways
+4 carbon (4C) oxaloacetate accepts the 2C acetyl fragment from acetyl CoA to form
+the 6 carbon (6C)citrate
+Coenzyme A is released in this reaction to be reused in the next link reaction2
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+Citrate is then converted back to oxaloacetate through a series of oxidation-reduction
+(redox) reactions
+The Krebs Cycle uses acetyl CoA from the link reaction and the regeneration of
+oxaloacetate to produce reduced NAD, reduced FAD and ATP
+Regeneration of oxaloacetate
+Oxaloacetate is regenerated in the Krebs cycle through a series of redox reactions
+Decarboxylation of citrate
+Releasing 2 CO  as waste gas
+Oxidation (dehydrogenation) of citrate
+Releasing H atoms that reduce coenzymes NAD and FAD
+These will be used during oxidative phosphorylation
+3 NAD and 1 FAD →  3NADH + H and 1 FADH
+Substrate linked phosphorylation
+A phosphate is transferred from one of the intermediates to ADP, forming 1 ATP to
+supply energy
+Because two acetyl-CoA molecules are produced from each glucose molecule, two
+cycles are required per glucose molecule
+Therefore, at the end of two cycles, the products are:
+Two ATP
+2
++2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Six NADH (reduced NAD)
+Two FADH (reduced FAD)
+Four CO2 
+2
+Examiner Tips and Tricks
+The Krebs cycle is often referred to as cyclical or circular. This is because the acceptor
+molecule oxaloacetate is regenerated throughout the reaction so that it can start all
+over again by adding another acetyl CoA.
+You may be asked to name the important molecules in the Krebs cycle like
+oxaloacetate and citrate.
+It is also worth noting how the number of carbon atoms in the substrate molecule
+changes as the cycle progresses.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+The Electron Transport Chain
+The Electron Transport Chain
+Oxidative phosphorylation is the last stage of aerobic respiration
+It takes place at the inner mitochondrial membrane
+It results in the production of many molecules of ATP and the production of water
+from oxygen
+The current model for oxidative phosphorylation is the chemiosmotic theory
+The model states that energy from electrons is passed through a chain of proteins
+in the membrane, known as the electron transport chain
+This energy is used to pump protons (hydrogen ions) against their concentration
+gradient into the intermembrane space
+The protons are then allowed to flow by facilitated diffusion through a channel
+enzyme called ATP synthase into the matrix
+The energy of the protons flowing down their concentration gradient is harnessed (a
+bit like water flowing through a hydroelectric damn) resulting in the phosphorylation
+of ADP into ATP by ATP synthase
+Outline of oxidative phosphorylation
+Hydrogen atoms are donated by reduced NAD (NADH) and reduced FAD (FADH) from
+the Krebs Cycle
+Hydrogen atoms split into protons (H ions) and electrons
+The high energy electrons enter the electron transport chain and release energy as they
+move through the electron transport chain
+The energy released is used to transport protons across the inner mitochondrial
+membrane from the matrix into the intermembrane space
+A concentration gradient of protons is established between the intermembrane space
+and the matrix
+The protons return to the matrix via facilitated diffusion through the channel enzyme
+ATP synthase
+The movement of protons down their concentration gradient provides energy for ATP
+synthesis
+Oxygen acts as the 'final electron acceptor' and combines with protons and electrons
+at the end of the electron transport chain to form water
+The electron transport chain
+The electron transport chain is made up of a series of membrane proteins/ electron
+carriers2
++Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+They are positioned close together which allows the electrons to pass from carrier to
+carrier
+The inner membrane of the mitochondria is impermeable to hydrogen ions so these
+electron carriers are required to pump the protons across the membrane to establish
+the concentration gradient
+Oxidative phosphorylation via the chemiosmotic theory occurs on the inner
+mitochondrial membrane and requires NADH and FADH from the Krebs Cycle. It
+produces water and many molecules of ATP
+Oxidative phosphorylation uses energy from reduced NAD and FAD to produce ATP
+3 ATP molecules for every reduced NAD molecule
+2 ATP molecules for every reduced FAD molecule
+For every molecule of glucose a total of 38 ATP molecules can be produced during
+aerobic respiration
+Number of ATP Molecules Produced During Aerobic Respiration per Glucose Molecule
+Table
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+Examiner Tips and Tricks
+Examiners often ask why oxygen is so important for aerobic respiration. Oxygen acts
+as the final electron acceptor. Without oxygen the electron transport chain cannot
+continue as the electrons have nowhere to go. Without oxygen accepting the
+electrons (and hydrogen ions) the reduced coenzymes NADH and FADH cannot be
+oxidised to regenerate NAD and FAD, so they can’t be used in further hydrogen
+transport.
+It is important to use the correct terminology when describing hydrogen; ensure you
+understand when to use "hydrogen" and when to use "hydrogen ions/protons". 2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+Anaerobic Respiration
+Anaerobic Respiration
+Sometimes cells experience conditions with little or no oxygen
+There are several consequences when there is not enough oxygen available for
+respiration:
+There is no final acceptor (oxygen) of electrons from the electron transport chain
+The electron transport chain stops functioning
+No more ATP is produced via oxidative phosphorylation
+Reduced NAD and FAD aren’t oxidised by an electron carrier
+No oxidised NAD and FAD are available for dehydrogenation in the Krebs cycle
+The Krebs cycle stops
+The link reaction also stops
+However, there is still a way for cells to produce some ATP in low oxygen conditions
+through anaerobic respiration
+Anaerobic pathways
+Some cells are able to oxidise the reduced NAD produced during glycolysis so it can be
+used for further hydrogen transport
+This means that glycolysis can continue and small amounts of ATP are still produced
+Different cells use different pathways to achieve this
+Yeast and microorganisms use ethanol fermentation
+Other microorganisms and mammalian muscle cells use lactate fermentation
+Lactate fermentation
+In this pathway reduced NAD transfers hydrogen to pyruvate to form lactate
+NAD can now be reused in glycolysis
+Pyruvate is reduced to lactate by enzyme lactate dehydrogenase
+Pyruvate is the hydrogen acceptor
+The final product lactate can be further metabolised
+A small amount of ATP is produced Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+The pathway of lactate fermentation
+Processing Lactate
+Lactate (lactic acid) can build up in the cells after a period of time
+After lactate is produced two things can happen:
+It can be oxidised back to pyruvate which is then channelled into the Krebs cycle for
+ATP production
+It can be converted into glucose by the liver cells for use during respiration or for
+storage (in the form of glycogen)
+The oxidation of lactate back to pyruvate needs extra oxygen
+This extra oxygen is referred to as an oxygen debt
+It explains why animals breathe deeper and faster after exercise
+Ethanol fermentation
+In this pathway reduced NAD transfers its hydrogens to ethanal to form ethanol
+In the first step of the pathway pyruvate is decarboxylated to ethanal
+Producing CO
+Then ethanal is reduced to ethanol by the enzyme alcohol dehydrogenase
+Ethanal is the hydrogen acceptor
+Ethanol cannot be further metabolised; it is a waste product
+Ethanol fermentation occurs in yeast and plant cells
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+The pathway of ethanol fermentation
+Examiner Tips and Tricks
+Note that ethanol fermentation is a two-step process (lactate fermentation is a one-
+step process). Carbon dioxide is also produced alongside the waste ethanol. This
+waste ethanol is what makes yeast vital in producing alcoholic drinks like beer!Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Respiratory Quotient
+Respiratory Quotient
+The respiratory quotient (RQ) is the ratio of carbon dioxide molecules produced to
+oxygen molecules taken in during respiration
+RQ = CO ÷ O
+The formula for the Respiratory Quotient
+RQ values of different respiratory substrates
+Carbohydrates, lipids and proteins have different typical RQ values
+This is because of the number of carbon-hydrogen bonds differs in each type of
+biological molecule
+More carbon-hydrogen bonds means that more hydrogen atoms can be used to
+create a proton gradient
+More hydrogens means that more ATP molecules can be produced
+More oxygen is therefore required to breakdown the molecule (in the last step of
+oxidative phosphorylation to form water)
+When glucose is aerobically respired equal amounts of carbon dioxide are produced to
+oxygen taken in, meaning it has an RQ value of 1
+During the breakdown of glucose, six molecules of oxygen is used and six molecules of
+carbon dioxide is produced. This results in an RQ value of 1 (6CO  ÷ 6O )
+RQ Values For Different Respiratory Substrates Table2 2
+2 2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+Some questions may ask you to suggest what substrate is being respired during an
+experiment based on the RQ value – so make yourself familiar with the values in the table
+Calculating RQ values
+The respiratory quotient is calculated from respiration equations
+It involves comparing the ratios of carbon dioxide given out to oxygen taken in
+The formula for this is:
+Equation to calculate the RQ value of a respiratory substrate
+For aerobic respiration the RQ will typically be less than 1 since oxygen is being used to
+break down the substrate 
+Should the RQ of an organism be greater than 1, it may indicate that anaerobic
+respiration is occurring, since very little to no oxygen is used
+If you know the molecular formula of the substrate being aerobically respired then you
+can create a balanced equation to calculate the RQ value
+In a balanced equation the number before the chemical formula can be taken as
+the number of molecules/moles of that compound
+This is because the same number of molecules of any gas take up the same volume
+e.g. 12 molecules of carbon dioxide take up the same volume as 12 molecules of
+oxygen
+Glucose has a simple 1:1 ratio and RQ value of 1 but other substrates have more complex
+ratios leading to different RQ values
+Worked ExampleYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+Linoleic acid (a fatty acid found in nuts) has the molecular formula C H O . Calculate
+the RQ value of this lipid.
+Answer:
+Step 1: Write down the respiration equation
+C H O  + O  → CO  + HO
+Step 2: Balance the equation
+C H O  + 25O  → 18CO  + 16HO
+Step 3: Use the RQ formula
+RQ = CO  ÷ O
+RQ = 18 ÷ 25
+RQ = 0.7218 32 2
+18 32 2 2 2 2
+18 32 2 2 2 2
+2 2
+Worked Example
+During ethanol fermentation in lettuce roots, glucose is partially broken down. This
+process is represented by the following equation:
+glucose →  ethanol + carbon dioxide
+Calculate the RQ value.
+Answer:
+Step 1: Write down the respiration equation
+CH O  → CHOH + CO
+Step 2: Balance the equation
+CH O  → 2CHOH + 2CO
+Step 3: Use the RQ formula
+RQ = CO  ÷ O
+RQ = 2 ÷ 0
+RQ = ∞  (infinity)6 12 6 2 5 2
+6 12 6 2 5 2
+2 2
+Examiner Tips and TricksYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Make sure the respiration equation you are working with is fully balanced before you
+start doing any calculations to find out the RQ value.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+Core Practical 15: Investigation of Respiration in Yeast
+Investigation of Respiration in Yeast
+A redox indicator is a substance that changes colour when it is reduced or oxidised
+DCPIP and methylene blue are redox indicators
+They are used to investigate the effects of temperature and substrate
+concentration on the rate of anaerobic respiration in yeast
+These dyes can be added to a suspension of living yeast cells as they don’t damage
+cells
+Yeast can respire both aerobically and anaerobically, in this experiment it is their rate of
+anaerobic respiration that is being investigated
+Mechanism
+Dehydrogenation happens regularly throughout the different stages of aerobic
+respiration
+The hydrogens that are removed from substrate molecules are transferred to the final
+stage of aerobic respiration, oxidative phosphorylation, via the hydrogen carriers NAD
+and FAD
+The enzyme dehydrogenase catalyses the production of reduced NAD in glycolysis
+When DCPIP or methylene blue are present they take up hydrogens from the organic
+compounds and get reduced instead of NAD
+Both redox indicators undergo the same colour change when they are reduced
+Blue →  colourless
+The faster the rate of respiration, the faster the rate of hydrogen release and the faster
+the dyes get reduced and change colour
+This means that the rate of colour change can correspond to the
+rate dehydrogenase would be working at and therefore, the rate of respiration in
+yeast
+The rate of respiration is inversely proportional to the time taken
+Rate of respiration (sec ) = 1 ÷ time (sec)
+Apparatus
+Yeast
+Glucose solution
+Test tubes
+Stopwatch-1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+DCPIP
+Method - Temperature
+1. Add a set volume of yeast suspension to test tubes containing a certain concentration
+of glucose
+2. Put the test tube in a temperature-controlled water bath and leave for 5 minutes to
+ensure the water temperature is correct and not continuing to increase or decrease
+3. Add a set volume of DCPIP to the test tube and start the stopwatch immediately
+4. Stop the stopwatch when the solution becomes colourless or lose all blue colour
+This is subjective and therefore the same person should be assigned this task for all
+repeat experiments
+5. Record the time taken for a colour change to occur once the dye is added
+Repeat across a range of temperatures. For example, 30C, 35C, 40C, 45C
+6. The effect of substrate concentration can be investigated by adding different
+concentrations of a substrate to the suspension of yeast cells and recording the time
+taken for a colour change to occur once the dye is added
+For example, 0.1% glucose, 0.5% glucose, 1.0% glucose
+Methylene blue or DCPIP is added to a solution of anaerobically respiring yeast cells in a
+glucose solution. The rate at which the solution turns from blue to colourless gives the
+rate of dehydrogenase activity
+Controlling other variableso o o o
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+It is important when investigating one variable to ensure that the other variables in the
+experiment are being controlled
+Volume of dye added: if there is more dye molecules present then the time taken
+for the colour change to occur will be longer
+Volume of yeast suspension: when more yeast cells are present the rate of
+respiration will be inflated
+Type of substrate: yeast cells will respire different substrates at different rates
+Concentration of substrate: if there is limited substrate in one tube then the
+respiration of those yeast cells will be limited
+Temperature: an increase or decrease in temperature can affect the rate of
+respiration due to energy demands and kinetic energy changes. The temperature of
+the dye being added also needs to be considered
+pH: a buffer solution can be used to control the pH level to ensure that no enzymes
+are denatured
+Interpretation of results
+A graph should be plotted of temperature against time
+As the temperature increases, the rate of respiration also increases so the time taken for
+the solution to go colourless reduces
+This means hydrogens are released by the reactions more quickly, hence the DCPIP
+accepts electrons/hydrogens more quickly until all molecules of DCPIP are
+reduced. This means that it will take less time to turn from blue to colourless
+At extreme high temperatures, the enzyme may denature and meaning the colour
+change may not occur
+Examiner Tips and Tricks
+Although the DCPIP and methylene blue undergo a colour change from blue to
+colourless it is important to remember that the yeast suspension in the test tube may
+have a slight colour (usually yellow). That means when the dye changes to colourless
+there may still be an overall yellow colour in the test tube. If this is the case it can be
+useful to have a control tube containing the same yeast suspension but with no dye
+added, then you can tell when the dye has completely changed colour.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Core Practical 16: Respirometer to Calculate RQ
+Using a Respirometer to Calculate RQ
+Respirometers are used to measure and investigate the rate of oxygen
+consumption during respiration in organisms
+They can also be used to calculate respiratory quotients
+The experiments usually involve organisms such as seeds or invertebrates
+Apparatus
+Respirometer
+Glass beads
+Germinating seeds
+These will be actively respiring and consuming oxygen
+Test tubes
+Soda-lime pellets (or potassium hydroxide)
+To absorb the carbon dioxide produced
+ StopwatchYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+A respirometer set up to measure the rate of respiration
+Method
+1. Measure oxygen consumption: set up the respirometer and run the experiment with
+both tubes for a set amount of time (e.g. 30 minutes)
+2. As the seeds consume oxygen, the volume of air in the test tube will
+decrease (CO  produced during respiration is absorbed by soda lime or KOH) 
+3. This reduces the pressure in the capillary tube and manometer fluid will move
+towards the test tube containing the seeds
+4. Measure the distance moved by the liquid in a given time
+5. Use this measurement to calculate the change in gas volume within a given
+time, x cm min
+6. Reset the apparatus: allow air to re-enter the tubes via the screw cap and reset the
+manometer fluid using the syringe
+7. Run the experiment again: remove the soda-lime from both tubes and use the
+manometer reading to calculate the change in gas volume in a given time, y cm min
+2
+3  -1
+3  -1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+Equation for calculating change in gas volume
+The volume of oxygen consumed (cm  min) can be worked out using the diameter of
+the capillary tube r (cm) and the distance moved by the manometer fluid h (cm) in a
+minute using the formula:
+πrh
+Calculations
+x tells us the volume of oxygen consumed by respiration within a given time
+y tells us the volume of oxygen consumed by respiration within a given time minus the
+volume of carbon dioxide produced within a given time
+y may be a positive or negative value depending on the direction that the
+manometer fluid moves (up = positive value, down = negative value)
+The two measurements x and y can be used to calculate the RQ
+Equation to calculate RQ values using a respirometer3 -1
+2
+Worked Example
+During a respirometer experiment using blow fly larvae, the volume of oxygen
+consumed was 2.9 cm min. The soda lime was removed from both test tubes and
+the experiment was repeated. The change in gas volume was -0.8 cm min.
+Calculate the RQ value for the blow fly larvae.
+Answer:
+x = 2.9 cm min
+y = -0.8 cm min
+Step 1: Write down equation
+RQ =x +y
+x
+Step 2: Substitute values3 -1
+3 -1
+3 -1
+3 -1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+Interpretation of results
+Respirometers can be used in experiments to investigate how different factors affect
+the RQ of organisms over time
+E.g. temperature – using a series of water baths
+When an RQ value changes it means the substrate being respired has changed
+Some cells may also be using a mixture of substrates in respiration e.g. An RQ value of
+0.85 suggests both carbohydrates and lipids are being used
+This is because the RQ of glucose is 1 and the RQ of lipids is 0.7
+Under normal cell conditions the order substrates are used in respiration:
+carbohydrates, lipids then proteins
+The RQ can also give an indication of under or overfeeding:
+An RQ value of more than 1 suggests excessive carbohydrate/calorie intake
+An RQ value of less than 0.7 suggests underfeedingRQ =2 .9 −0 .8
+2 .9
+Step 3: Calculate RQ
+RQ =0.72
+Examiner Tips and Tricks
+There are several ways you can manage variables and increase the reliability of results
+in respirometer experiments:
+Use a controlled water bath to keep the temperature constant
+Have a control tube with an equal volume of inert material to the volume of the
+organisms to compensate for changes in atmospheric pressure
+Repeat the experiment multiple times and use an averageYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27

@@ -1,0 +1,373 @@
+Edexcel International A
+Level (IAL) Biology
+Gene Technology
+Contents
+Drug Production from Genetically Modified Organisms
+Recombinant DNA
+Transfer of Recombinant DNA into Other Cells
+Identification of Active Genes
+Bioinformatics
+Risks & Benefits of Using GMOsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+
+Drug Production from Genetically Modified Organisms
+Drug Production from Genetically
+Modified Organisms
+Genetic engineering is a technique used to deliberately modify a specific characteristic
+of an organism
+The technique involves removing a gene that codes for a desired characteristic
+from one organism and transferring the gene into another organism where
+the desired gene is then expressed
+The genetically engineered organism is said to contain recombinant DNA and will be a
+genetically modified organism (GMO)
+Micro-organisms, plants and animals have been genetically engineered to produce
+proteins used in medicine
+Genetically modified micro-organisms
+Restriction enzymes are used to remove the gene coding for a desired protein from an
+organism's genome
+The protein coded for here will be responsible for the characteristic desired in the
+GMO e.g. the ability to produce insulin
+Many copies of the gene are made using the polymerase chain reaction, or PCR
+The enzyme DNA polymerase is used to join free nucleotides into new strands of
+DNA that are complementary to the original strand
+These copies are inserted into small loops of DNA called plasmids, which then transfer
+the copies into micro-organisms
+The plasmids are said to be DNA vectors
+The enzyme DNA ligase catalyses the joining of the desired gene to the plasmid
+vector
+The genetically modified micro-organisms are grown in large fermenters containing
+nutrients, enabling them to multiply and produce large quantities of the new protein
+The protein can be isolated and purified before being packaged and distributed
+Human insulin and human blood clotting factors are examples of medicinal
+proteins produced by genetically modified bacteriaYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+
+The human insulin gene can be inserted into bacterial plasmid vectors which are then
+transferred into bacterial cells
+Genetically modified plants
+A similar process can be used to insert desired genes from other organisms into plant
+cells
+After the gene is inserted into a plasmid and then transferred to a bacterial cell, the
+bacteria can be used to infect plant cells; the bacterium acts as a vector for
+introducing the gene into the plant DNA
+Note that this isn't the only method of introducing new genes into plant cells
+Another method involves a 'gene gun'; tiny pellets are coated with the desired
+DNA and then fired into the plant cells
+The gene is transferred from the bacterial cell into the plant cell nucleus, after which
+the plant cell is stimulated to multiply and grow into an adult plant
+Each cell of the plant contains a copy of the gene coding for the desired protein
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+
+The protein can now be purified from the plant tissues, or the plant can be eaten to
+deliver the drug
+Human insulin and a cholera vaccine are examples of drugs produced by modified
+plants
+Genetically modified animals
+The gene that codes for the desired protein is injected into the nucleus of a zygote
+The zygote is implanted into the uterus of a surrogate animal where it develops into an
+adult animal
+Every cell of this genetically modified animal will contain a copy of the gene coding
+for the desired protein
+The protein can be purified from e.g. the milk of the animal
+Human blood clotting proteins can be produced from the milk of genetically
+modified animalsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+
+Recombinant DNA
+Recombinant DNA
+The genetic code is the basis for storing instructions that, alongside environmental
+influences, dictate the characteristics of organisms
+The genetic code is universal, meaning that almost every organism uses the same four
+nitrogenous bases A, T, C, and G 
+The universal nature of the genetic code means that the samecodonscode for the
+same amino acids in all living things; genetic information is therefore transferable
+between species
+The mechanisms of transcription and translation are also universal which means that
+the transferred DNA can be translated within cells of another species
+Scientists can artificially change an organism's DNA by combining lengths of
+nucleotides from different sources; typically the nucleotides are from different species
+The altered DNA, with the introduced nucleotides, is called recombinant DNA 
+If an organism contains nucleotide sequences from a different species it is known as
+a transgenic organism or a genetically modified organism (GMO)
+Transferring genes from bacteria into the DNA of maize plants creates recombinant DNA
+Producing a transgenic organism involves the following process
+Identification of the desired gene
+This gene will code for a desired characteristic, e.g.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+
+Pest resistance genes in crops 
+The human insulin gene 
+Isolation of the desired gene by, e.g.
+Using an enzyme called reverse transcriptase to convert a desired length of
+mRNA back into DNA; DNA produced in this way is known as complementary
+DNA, or cDNA
+Cutting the gene from its location on a chromosome using enzymes
+called restriction endonucleases
+Designing and building synthetic DNA sequences in a lab
+Multiplication of the gene, i.e. producing many copies, or clones; this can be carried
+out using the polymerase chain reaction (PCR)
+PCR machines known as thermocyclers use free nucleotides, DNA polymerase,
+and DNA primers to produce many identical copies of a desired gene
+Transfer of the desired gene into another organism's DNA using a vector, e.g. DNA
+plasmids, viruses, or fatty envelopes known as liposomes
+Once another organism has taken up the vector it is said to be transformed
+Identification of the cells that contain the new gene by using a marker gene
+alongside the desired gene; this means that any cells that take up the desired gene
+will take up the marker gene as well e.g.
+Antibiotic resistance; transformed cells will survive if treated with a specific
+antibiotic
+Fluorescence; transformed bacterial cells will fluoresce under UV light
+Once the transformed cells have been identified they can be cloned, ensuring that all
+new cells contain copies of the desired gene
+In the case of bacteria this can be carried out in a large container known as a
+fermenterYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+
+DNA can be transferred from one organism to another to produce recombinant DNA; this
+process involves identification, isolation, multiplication, and transfer of the desired gene,
+followed by identification and cloning of the transformed organisms
+Isolating the desired gene using restriction endonucleases
+Restriction endonucleases are enzymes that cut DNA
+They are sometimes referred to as restriction enzymes 
+There are many different restriction endonucleases, each of which binds to a specific
+sequence of bases known as a restriction site on DNA, e.g. the restriction endonuclease
+HindIII will always bind to the base sequence AAGCTT
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+
+Restriction endonucleases separate DNA at restriction sites by cutting the sugar-
+phosphate backbone in an uneven way; this leaves exposed single-stranded
+sequences of bases known as 'sticky ends'
+Sticky ends result in one strand of the DNA fragment being longer than the other
+strand
+The sticky ends make it easier to insert the desired gene into another organism's DNA
+or into vector DNA as they can easily form hydrogen bonds with complementary base
+sequences that have been cut with the samerestriction endonucleases
+Restriction enzymes produce a jagged cut at a restriction site, leaving 'sticky ends'
+Inserting the desired gene into a vector using DNA ligase
+Once the desired gene has been cut from DNA using the relevant restriction
+endonuclease, it can then be transferred into the DNA of a vector, e.g.
+A DNA plasmid
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+
+A vector organism such as a virus or bacterium
+The DNA of the vector will be cut using the same restriction endonuclease as the
+desired gene, leaving complementary sticky ends
+The enzyme DNA ligase is used to catalyse the formation of phosphodiester bonds
+between the sugar-phosphate backbone of the desired gene and that of the vector
+DNA
+If this is carried out using a plasmid, the plasmid will be known as a recombinant
+plasmid
+DNA ligase is used to join the isolated gene to the vector DNA
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+
+Transfer of Recombinant DNA into Other Cells
+Transfer of Recombinant DNA into Other
+Cells
+Sections of DNA can be transferred from one organism's DNA to that of another,
+creating recombinant DNA
+In order to create recombinant DNA, desired genes, such as the gene for human insulin,
+need to be transferred into new types of cell; there are several different ways of doing
+this, e.g.
+Vectors, e.g.
+DNA plasmids
+Viruses
+Liposomes
+Gene guns
+Microinjection
+Once a section of DNA has been transferred into a new cell it needs to be incorporated
+into the cell's genetic material in order to be transcribed and translated; the success
+rate for transferred genes entering the nucleus of a eukaryotic cell is currently very low
+The problem of transferred genes not reaching the nucleus is a barrier to the
+success of gene therapy
+Gene therapy is a medical technique that involves inserting non-mutated genes
+into the cells of individuals with genetic disorders
+Plasmid vectors
+Plasmids are small, circular rings of double-stranded DNA that can be found in some
+bacterial cells, as well as some other cell types
+To insert the desired gene into the circular DNA of a plasmid, it is cut open using a
+restriction endonuclease
+DNA ligase is then used to join the desired gene to the plasmid DNA; this creates a
+recombinant plasmid
+The recombinant plasmid DNA can then be transferred into other cells, usually bacteria,
+by a process called transformation
+Only a small proportion of bacteria will become transformed and therefore marker
+genes such as antibiotic resistance are used to identify them
+Scientists can modify or design bacterial plasmids so that they contain one or
+more marker genes, e.g. genes for antibiotic resistance
+Transformation can occur byYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+
+Bathing the plasmids and bacteria in an ice-cold calcium chloride solution and then
+briefly incubating at 40°C; this makes the bacterial outer membrane permeable
+Electroporation; the bacteria are given a small electrical shock, making the
+membrane porous
+Plasmid vectors can be used to transform bacterial cells
+Viral vectors
+Viruses reproduce by inserting their DNA into the cells of other organisms, making
+them ideal vectors for the process of creating transformed cells
+Viruses exist that infect animal cells, plant cells, and bacterial cells, so viral vectors can
+be used to transform many cell types
+Viruses used as vectors need to be non-harmful to the cells being transformed
+Viruses are useful for ensuring that transferred DNA reaches the nucleus of cells, but
+despite being harmless they can sometimes initiate an immune response
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+
+Viruses can be used as vectors in the process of gene therapy, which can be used to
+treat genetic diseases such as cystic fibrosis in humans
+Viral vectors can be used to insert genes into human cells
+Liposome vectors
+Liposomes are small, spherical vesicles, surrounded by a phospholipid bilayer 
+Liposomes can be used as vectors because they can fuse with the cell surface
+membranes of host cells
+These vesicles can also be used in gene therapy to carry non-mutated genes into host
+cells 
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+
+Liposomes can enter cells by fusing with the cell surface membrane. Note that you do not
+need to know the term endosymbiosis here
+Gene guns
+The fragments of DNA containing the desired gene can be used to coat tiny pellets of
+gold or tungsten which are then fired at high speed into the cells that are to be
+transformed
+Cells that avoid damage are able to incorporate the new DNA into their genome
+Microinjection
+A fine glass micropipette is used to transfer DNA into a cell
+This is a common laboratory technique for transferring genetic material into animal cells
+for the creation of transgenic animalsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+
+Identification of Active Genes
+Identification of Active Genes
+Microarrays are laboratory tools used to identifyactive genes
+Active genes are genes that are expressed; mRNA is transcribed from them and the
+resulting mRNA strand is translated into a polypeptide
+Microarrays can be used to identify active genes in thousands of gene samples at a time
+Microarrays are used for
+Medical diagnosis and treatment, e.g. identification of harmful mutations
+Biotechnology, e.g. identifying genes for the process of producing recombinant
+DNA
+Forensic analysis, e.g. in criminal investigations
+A microarray consists of a small piece of glass, plastic or silicon that has DNA
+probes attached to many spots, called gene spots, in a grid pattern
+DNA probes are short, single stranded lengths of DNA linked to an easily identifiable
+label such as a fluorescence protein or a radioactive tag; these single stranded
+probes bind to any complementary sequences present in a DNA sample, indicating
+their presence by fluorescing or under an x-ray
+There can be 10 000 or more spots per cm
+When producing a microarray, scientists compare experimental samples of genetic
+material with a known reference sample, e.g. a genetic sample taken from an individual
+known to have a particular disease mutation
+When a microarray is used to analyse genomes
+Samples of genetic material, known as chips, are collected from
+A reference source, e.g. an individual known to have a particular genetic
+mutation; this provides a control sample for comparison
+An unknown source, e.g. a patient to be diagnosed
+Note that many unknown samples can be simultaneously compared to a
+single reference sample
+Collecting mRNA rather than DNA at this stage enables active genes to be
+identified; only active genes will be undergoing the process of transcription into
+mRNA
+Enzymes called reverse transcriptase enzymes are used to convert the mRNA back
+into DNA; the DNA produced in this way is known as complementary DNA, or cDNA
+The cDNA samples are labelled, e.g. using fluorescence labels2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+
+The reference samples are labelled with a different label to the unknown
+experimental samples
+Usually the reference samples fluoresce green while the unknown
+samples fluoresce red
+Once the reference and unknown samples are mixed together, they are then
+allowed to hybridise with the probes on the microarray
+After a set period of time any DNA that did not hybridise with the probes is
+washed off
+The microarray is then examined using ultraviolet light which causes the tags to
+fluoresce, or scanned; colours are detected by the computer and the information is
+analysed
+The fluorescence colour detected indicates where hybridisation has occurred, as
+the DNA fragment is complementary to the probe
+If reference (green) and unknown (red) samples both hybridise in equal
+proportions then the overall colour detected will be yellow; this shows that the
+gene in question is being expressed in equal quantities in the reference
+individual and the individual from whom the unknown sample was taken
+If reference samples hybridise more than the unknown samples then the overall
+colour detected will be green; this shows that the gene is being expressed
+more in the reference individual than in the individual providing the unknown
+sample
+If unknown samples hybridise more than the reference samples then the overall
+colour detected will be red; this shows that the gene is being expressed more
+in the individual providing the unknown sample than in the reference individual
+Note that a lack of fluorescence indicates that the gene in question is not being
+expressed at allYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+
+Microarrays can be used to identify active genes
+Microarrays can be used to test for expression of genes that increase the risk of certain
+cancers
+E.g. High levels of expression of genes that code for receptors that bind to the
+hormone oestrogen can be a factor in the progression of some cancers; if doctors
+know that these genes are being expressed at high levels then drugs that block
+oestrogen receptors are likely to be an effective treatment
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+
+Bioinformatics
+Bioinformatics
+New DNA technologies such as microarrays and sequencing generate enormous
+quantities of data, e.g. 
+Genome sequences
+Information on gene expression
+The amino acid sequence and functions of proteins
+To analyse all of this data scientists use bioinformatics
+Bioinformatics is an interdisciplinary science that incorporates biology with computer
+technology and statistics in order to collect, organise, store, and analyse biological
+data
+Large databases are created containing information such as gene sequences and
+amino acid sequences of proteins
+The databases are available online and can perform analysis of the data selected
+Multiple scientific research groups around the world can contribute to central
+databases; other groups can then analyse the research and raise queries
+There are a number of different applications of bioinformatics, e.g.
+Gene function can be studied and compared across different species
+The DNA sequences of different species can be compared and evolutionary
+relationships can be established
+New drug candidates can be identified quickly by scanning libraries of molecules
+Drug candidates can be tested safely; the impacts of different molecules on cells
+can be simulated using computer models
+Data from microarrays and gene sequencing can be analysed to develop
+personalised medical treatments for individuals
+New types of genetic testing can be developed to enable identification of genetic
+disease
+Desired genes for the production of recombinant DNA can be identified, as well as
+determining where it is best to insert new desired genes into the genome of a
+genetically modified organism
+This is useful for the development of new gene therapiesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+
+Bioinformatics enables the effective storage and analysis of biological data. Note that
+you do not need to know about BLAST analysis
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+
+Risks & Benefits of Using GMOs
+Risks & Benefits of Using GMOs
+While GMOs can be used for medical benefit, there is still much concern about the
+potential impacts of changing the genes of organisms, as well as the ethics of
+genetically modifying animals
+These concerns are often amplified when the GMOs are crop plants destined for
+human consumption
+Risks and Benefits of Genetic Engineering Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21

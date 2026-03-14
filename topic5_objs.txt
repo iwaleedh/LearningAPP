@@ -1,0 +1,27 @@
+note_4_5_0.js: Understand the overall equation and overview of photosynthesis, including the structure of chloroplasts.
+note_4_5_1.js: Understand the stages of the light-dependent reactions, including photoionisation, photolysis, and photophosphorylation.
+note_4_5_2.js: Understand the Calvin cycle (light-independent reactions) and how carbon dioxide is converted into organic substances.
+note_4_5_3.js: Understand the concept of limiting factors in photosynthesis and how light intensity, CO₂ concentration, and temperature affect the rate.
+note_4_5_4.js: Understand photosynthetic pigments, chromatography, and absorption/action spectra.
+note_4_5_5.js: Understand the difference between gross primary productivity (GPP) and net primary productivity (NPP) in relation to photosynthesis.
+note_4_5_6.js: Investigate the rate of photosynthesis using aquatic plants and understand Core Practical 10.
+note_4_5_7.js: Understand how to carry out chromatography to separate photosynthetic pigments.
+note_4_5_8.js: Understand the structure of ATP (Adenosine Triphosphate) and its role as the universal energy currency in cells.
+note_4_5_9.js: Differentiate between cyclic and non-cyclic photophosphorylation in the light-dependent reactions.
+note_4_5_10.js: Examine the specific properties of RuBisCO and its role in carbon fixation.
+note_4_5_11.js: Describe how the structure of a leaf is adapted for efficient photosynthesis.
+note_4_5_12.js: Understand ecosystems, food chains, webs, and trophic levels.
+note_4_5_13.js: Understand energy transfer between trophic levels and how to calculate trophic efficiency.
+note_4_5_14.js: Calculate Net Primary Productivity (NPP) from Gross Primary Productivity (GPP) and plant respiration (R).
+note_4_5_15.js: Understand the carbon cycle, including photosynthesis, respiration, decomposition, and combustion.
+note_4_5_16.js: Describe and explain primary and secondary succession.
+note_4_5_17.js: Evaluate the evidence for climate change and global warming.
+note_4_5_18.js: Understand the causes of climate change, data extrapolation, and the effects on plants and animals.
+note_4_5_19.js: Understand population dynamics, what factors determine population size, and predator-prey relationships.
+note_4_5_20.js: Carry out a study on the ecology of a habitat, using quadrats and transects.
+note_4_5_21.js: Understand the effect of temperature on the rate of enzyme activity and relate it to Q10.
+note_4_5_22.js: Investigate the effect of temperature on the development of organisms (e.g., seedling growth rate or hatching of brine shrimp).
+note_4_5_23.js: Understand the process of evolution via natural selection and how it leads to adaptation.
+note_4_5_24.js: Understand how isolation leads to speciation (allopatric and sympatric).
+note_4_5_25.js: Evaluate the contentious nature of evaluating data and communicating findings about climate change.
+note_4_5_26.js: Understand the concept of sustainability and conservation, and ways we can manage resources for the future.

@@ -113,10 +113,18 @@ export const note_chemistry_1_1_2 = {
       terms: []
     },
     {
-      id: 'p-balancing',
-      type: 'paragraph',
-      data: { text: 'Most equations are balanced using whole-number <strong>coefficients</strong>. Fractions or decimals are also acceptable, especially in organic chemistry. Remember: the number of atoms of each element and the total charge must be the same on both sides.' },
-      terms: ['Coefficient']
+      id: 'list-balancing',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Equations are balanced using whole-number <strong>coefficients</strong> placed in front of formulae — formulae themselves must never be altered.',
+          'Fractional coefficients (e.g. ½) are acceptable in thermochemical and combustion equations.',
+          'The number of atoms of <strong>each element</strong> must be equal on both sides.',
+          'The total <strong>charge</strong> must also be equal on both sides — critical for ionic and half equations.',
+          'A useful balancing order: metals → non-metals → oxygen → hydrogen.'
+        ]
+      }
     },
     {
       id: 'callout-balance-worked',
@@ -129,30 +137,62 @@ export const note_chemistry_1_1_2 = {
       terms: []
     },
     {
+      id: 'callout-arrows',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Arrow Types in Equations',
+        text: '• <strong>→</strong> (single-headed arrow) — used for <em>irreversible reactions</em> that go to completion.<br/>• <strong>⇌</strong> (double-headed / reversible arrow) — used for <em>equilibrium reactions</em>, where products can reform reactants.<br/>• Use → in both half equations and ionic equations.<br/>• Never use ⇌ unless the context explicitly involves a reversible equilibrium.'
+      }
+    },
+    {
       id: 'h-ionic',
       type: 'heading',
       data: { text: 'Writing Ionic Equations', level: 2 },
       terms: []
     },
     {
-      id: 'p-ionic',
-      type: 'paragraph',
-      data: { text: 'Ionic equations show only the species that change — <strong>spectator ions</strong> (those present on both sides unchanged) are cancelled out.' },
-      terms: ['Spectator ion', 'Ionic equation']
+      id: 'list-ionic-intro',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'An <strong>ionic equation</strong> shows only the species that actually change in a reaction.',
+          '<strong>Spectator ions</strong> are ions that appear unchanged on both sides — they take no part in the reaction and are cancelled out.',
+          'A <strong>full ionic equation</strong> shows all dissolved species (including spectators) as separate ions.',
+          'The <strong>simplest ionic equation</strong> (net ionic equation) has all spectator ions removed.'
+        ]
+      }
     },
     {
       id: 'list-ionic-steps',
       type: 'list',
       data: {
-        style: 'ordered',
+        style: 'numbered',
         items: [
-          'Write the full balanced equation with state symbols.',
-          'Replace formulae of any soluble ionic compounds with their separate ions.',
-          'Delete (cancel) any ions that appear identically on both sides (spectator ions).',
-          'What remains is the simplest ionic equation.'
+          'Write the full, balanced equation with correct state symbols.',
+          'Split any soluble ionic compounds labelled (aq), and any strong acids and strong alkalis in (aq), into their separate ions.',
+          'Cancel any ions that appear identically and unchanged on both sides — these are <strong>spectator ions</strong>.',
+          'What remains is the <strong>simplest ionic equation</strong>. Check charge is balanced on both sides.'
         ]
-      },
-      terms: []
+      }
+    },
+    {
+      id: 'callout-split-rules',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Rule: When to Split Compounds into Ions',
+        text: '<strong>Split into ions (aq solution only):</strong><br/>• Soluble ionic salts: NaCl(aq) → Na⁺(aq) + Cl⁻(aq)<br/>• Strong acids: HCl(aq) → H⁺(aq) + Cl⁻(aq); H₂SO₄(aq) → 2H⁺(aq) + SO₄²⁻(aq)<br/>• Strong alkalis: NaOH(aq) → Na⁺(aq) + OH⁻(aq)<br/><br/><strong>Do NOT split:</strong><br/>• Solids (s): CaCO₃(s), Cu(s) — keep as complete formula<br/>• Water: H₂O(l) — always written as H₂O(l), never as ions<br/>• Gases (g): CO₂(g), H₂(g) — keep as formula<br/>• Weak acids: CH₃COOH(aq) — mostly un-ionised in solution'
+      }
+    },
+    {
+      id: 'svg-ionic-steps',
+      type: 'svg',
+      data: {
+        caption: 'Four-step process for writing a simplest ionic equation',
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" width="760" height="180"><rect x="10" y="20" width="155" height="80" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="1.5"/><text x="88" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#7c3aed" font-weight="bold">STEP 1</text><text x="88" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#4c1d95">Full equation</text><text x="88" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">Balance atoms &amp;</text><text x="88" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">add state symbols</text><line x1="165" y1="60" x2="197" y2="60" stroke="#6d28d9" stroke-width="2"/><polygon points="197,55 205,60 197,65" fill="#6d28d9"/><rect x="205" y="20" width="155" height="80" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/><text x="282" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1d40af" font-weight="bold">STEP 2</text><text x="282" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1e3a8a">Expand ionic</text><text x="282" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">Split (aq) ionic</text><text x="282" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">compounds into ions</text><line x1="360" y1="60" x2="392" y2="60" stroke="#6d28d9" stroke-width="2"/><polygon points="392,55 400,60 392,65" fill="#6d28d9"/><rect x="400" y="20" width="155" height="80" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/><text x="477" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#92400e" font-weight="bold">STEP 3</text><text x="477" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#78350f">Cancel spectators</text><text x="477" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">Remove ions on</text><text x="477" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">both sides unchanged</text><line x1="555" y1="60" x2="587" y2="60" stroke="#6d28d9" stroke-width="2"/><polygon points="587,55 595,60 587,65" fill="#6d28d9"/><rect x="595" y="20" width="155" height="80" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="672" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#065f46" font-weight="bold">STEP 4</text><text x="672" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#064e3b">Simplest ionic eq.</text><text x="672" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">Check charge</text><text x="672" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">balanced both sides</text><text x="380" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1e40af" font-weight="bold">e.g. NaOH(aq) + HNO&#x2083;(aq) &#x2192; NaNO&#x2083;(aq) + H&#x2082;O(l) simplifies to: H&#x207A;(aq) + OH&#x207B;(aq) &#x2192; H&#x2082;O(l)</text><text x="380" y="165" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#374151">Na&#x207A; and NO&#x2083;&#x207B; are spectator ions and cancel out</text></svg>'
+      }
     },
     {
       id: 'callout-ionic-w1',
@@ -183,21 +223,78 @@ export const note_chemistry_1_1_2 = {
         text: 'Full: CO₂(g) + Ca(OH)₂(aq) → CaCO₃(s) + H₂O(l)<br/><br/>Expanded: CO₂(g) + Ca²⁺(aq) + 2OH⁻(aq) → CaCO₃(s) + H₂O(l)<br/><br/>No ions appear identically on both sides, so this <strong>IS already the simplest ionic equation</strong>.<br/>(CO₂ and H₂O are molecules, not ions — their formulae are not split.)'
       },
       terms: []
+    },
+    {
+      id: 'h-half-eq',
+      type: 'heading',
+      data: { text: 'Half Equations', level: 2 }
+    },
+    {
+      id: 'list-half-eq',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'A <strong>half equation</strong> shows one half of a redox reaction — either the <em>oxidation</em> or <em>reduction</em> step — including the electrons transferred.',
+          '<strong>Oxidation half equation</strong> — electrons appear on the <em>right</em> (electrons are lost). OIL — Oxidation Is Loss.',
+          '<strong>Reduction half equation</strong> — electrons appear on the <em>left</em> (electrons are gained). RIG — Reduction Is Gain.',
+          'Balance atoms first, then balance charge by adding electrons (e⁻) to the appropriate side.',
+          'To combine two half equations: multiply each by a factor so the number of electrons cancels exactly (electrons lost = electrons gained), then add them together.'
+        ]
+      }
+    },
+    {
+      id: 'callout-half-eq-w1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 1: Mg reacting with Cl₂',
+        text: '<strong>Oxidation (Mg loses 2e⁻):</strong><br/>Mg(s) → Mg²⁺(aq) + 2e⁻<br/><br/><strong>Reduction (Cl₂ gains 2e⁻):</strong><br/>Cl₂(g) + 2e⁻ → 2Cl⁻(aq)<br/><br/><strong>Combined (2e⁻ cancel directly):</strong><br/>Mg(s) + Cl₂(g) → Mg²⁺(aq) + 2Cl⁻(aq)'
+      }
+    },
+    {
+      id: 'callout-half-eq-w2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 2: Fe displacing Cu²⁺',
+        text: '<strong>Oxidation (Fe loses 2e⁻):</strong><br/>Fe(s) → Fe²⁺(aq) + 2e⁻<br/><br/><strong>Reduction (Cu²⁺ gains 2e⁻):</strong><br/>Cu²⁺(aq) + 2e⁻ → Cu(s)<br/><br/><strong>Combined (2e⁻ cancel — no scaling needed):</strong><br/>Fe(s) + Cu²⁺(aq) → Fe²⁺(aq) + Cu(s)'
+      }
+    },
+    {
+      id: 'callout-half-eq-w3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example 3: Al³⁺ and Cu²⁺ (unequal electrons — scale up)',
+        text: '<strong>Oxidation (Al loses 3e⁻):</strong><br/>Al(s) → Al³⁺(aq) + 3e⁻<br/><br/><strong>Reduction (Cu²⁺ gains 2e⁻):</strong><br/>Cu²⁺(aq) + 2e⁻ → Cu(s)<br/><br/><strong>Scale to cancel electrons (LCM of 2 and 3 = 6):</strong><br/>×2: 2Al(s) → 2Al³⁺(aq) + 6e⁻<br/>×3: 3Cu²⁺(aq) + 6e⁻ → 3Cu(s)<br/><br/><strong>Combined (6e⁻ cancel):</strong><br/>2Al(s) + 3Cu²⁺(aq) → 2Al³⁺(aq) + 3Cu(s)'
+      }
+    },
+    {
+      id: 'callout-half-eq-tip',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Half Equation Exam Tips',
+        text: '• Always check that <strong>charge is balanced</strong> on both sides of each half equation.<br/>• If electron counts differ (e.g. 3e⁻ vs 2e⁻), multiply each half equation by the LCM factor (e.g. ×2 and ×3 to give 6e⁻ cancelling).<br/>• State symbols are required in half equations in exam answers.<br/>• <strong>e⁻ must never appear in the final combined ionic equation</strong> — they must cancel completely.'
+      }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'table-states', prompt: 'What do the state symbols (s), (l), (g) and (aq) mean?' },
-      { id: 'c2', blockId: 'list-ionic-steps', prompt: 'Describe the three steps for deriving a simplest ionic equation from a full equation.' },
+      { id: 'c1', blockId: 'table-states', prompt: 'What do the four state symbols (s), (l), (g) and (aq) mean?' },
+      { id: 'c2', blockId: 'list-ionic-steps', prompt: 'Describe the four steps for deriving a simplest ionic equation from a full equation.' },
       { id: 'c3', blockId: 'callout-ionic-w2', prompt: 'Write the simplest ionic equation for: Pb(NO₃)₂(aq) + Na₂SO₄(aq) → PbSO₄(s) + 2NaNO₃(aq).' },
-      { id: 'c4', blockId: 'callout-state-warning', prompt: 'A student writes H₂O(aq) in an equation. Explain the error.' },
+      { id: 'c4', blockId: 'callout-split-rules', prompt: 'State three types of substance you must NOT split into ions when writing ionic equations, and explain why.' },
       { id: 'c5', blockId: 'table-lab-acids', prompt: 'State the names and formulae of the four common lab acids.' },
       { id: 'c6', blockId: 'table-acid-reactions', prompt: 'What products form when an acid reacts with (a) a metal, (b) a carbonate?' },
-      { id: 'c7', blockId: 'callout-carbonate-hco3', prompt: 'Write the ionic equations for carbonate and hydrogencarbonate reacting with acid. What is the key difference?' }
+      { id: 'c7', blockId: 'callout-carbonate-hco3', prompt: 'Write the ionic equations for carbonate and hydrogencarbonate reacting with acid. What is the key difference?' },
+      { id: 'c8', blockId: 'callout-half-eq-w1', prompt: 'Write the oxidation and reduction half equations for Mg reacting with Cl₂, then combine them.' },
+      { id: 'c9', blockId: 'callout-half-eq-w3', prompt: 'Write the half equations for Al and Cu²⁺ reacting, and explain why you need to scale them before combining.' }
     ],
-    summaryText: 'Four lab acids: HCl, H₂SO₄, HNO₃, H₃PO₄. Acid+Metal → salt+H₂ (squeaky pop). Acid+Metal oxide/hydroxide → salt+H₂O. Acid+Alkali → salt+H₂O (ionic: H⁺+OH⁻→H₂O). Acid+Carbonate/HCO₃⁻ → salt+H₂O+CO₂ (turns limewater cloudy). State symbols: (s) solid, (l) liquid, (g) gas, (aq) aqueous. Balance equations with coefficients. Ionic equations: expand ionic compounds, then cancel spectator ions (those on both sides unchanged). Molecules like CO₂ and H₂O are NOT split into ions.',
-    ready: false
+    summaryText: 'Four lab acids: HCl, H₂SO₄, HNO₃, H₃PO₄. Acid+Metal → salt+H₂ (squeaky pop). Acid+Metal oxide/hydroxide → salt+H₂O. Acid+Alkali → salt+H₂O (ionic: H⁺+OH⁻→H₂O). Acid+Carbonate/HCO₃⁻ → salt+H₂O+CO₂ (turns limewater cloudy). State symbols: (s)(l)(g)(aq). → irreversible; ⇌ equilibrium. Ionic equations: expand (aq) ionic compounds, cancel spectator ions. Never split solids, liquids, gases, weak acids or water. Half equations: OIL (oxidation — e⁻ on right); RIG (reduction — e⁻ on left). Combine by making e⁻ counts equal (LCM), then cancel. Final equation must have no e⁻.',
+    ready: true
   },
   evidence: []
 };

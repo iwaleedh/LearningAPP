@@ -1,0 +1,660 @@
+Edexcel International A
+Level (IAL) Biology
+Gas Exchange, Cell Membranes &
+Transport
+Contents
+Properties of Gas Exchange Surfaces
+Cell Membranes
+Core Practical 3: Investigating Membrane Structure & Permeability
+Osmosis
+Diffusion, Facilitated Diffusion & Active TransportYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+
+Properties of Gas Exchange Surfaces
+Properties of Gas Exchange Surfaces
+All organisms need to exchange gases with their environment, e.g.
+Aerobic respiration requires oxygen and produces carbon dioxide as a waste
+product
+Photosynthesis requires carbon dioxide and produces oxygen as a waste product
+The process of gas exchange occurs by diffusion
+The surface over which this gas exchange takes place is known as an exchange surface;
+exchange surfaces have specific properties that enable efficient exchange to take
+place
+Surface area to volume ratio
+The surface area of an organism refers to the total area of the organism that is exposed
+to the external environment
+The volume refers to the total internal volume of the organism, or total amount of space
+inside the organism
+The surface area of an organism in relation to its volume is referred to as an organism's
+surface area : volume ratio (SA:V ratio)
+As the overall size of the organism increases, the surface area becomes smaller in
+comparison to the organism's volume, and the organism's surface area : volume
+ratiodecreases
+This is because volume increases much more rapidly than surface area as size
+increases
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+
+Single-celled organisms have a high SA:V ratio which allows the exchange of
+substances to occur by simple diffusion
+The large surface area allows for maximum absorption of nutrients and gases and
+removal of waste products
+The small volume within the cell means the diffusion distance to all organelles is
+short
+As organisms increase in size their SA:V ratio decreases
+There is less surface area for the absorption of nutrients and gases and removal of
+waste products in relation to the volume, and therefore requirements, of the
+organism
+The greater volume results in a longer diffusion distanceto the cells and tissues of
+the organism
+Large multicellular organisms have evolved adaptations to facilitate the exchange of
+substances with their environment
+The gas exchange systems of multicellular organisms are adapted to increase the
+surface area available for the exchange of gases e.g.
+Alveoli increase the surface area of mammalian lungs
+Fish gills have structures called lamellae which provide a very large surface area
+Leaves have a spongy mesophyll layer within which a large area of leaf cell
+surface is exposed to the air
+Note that the problem of internal diffusion distance is a separate, though connected,
+issue solved by the presence of a mass transport system such as a circulatory system
+Diffusion pathway
+The diffusion pathway, or distance, across an exchange surface is very short
+The surface often contains only one layer of epithelial cells
+The cells can also be flattened in shape to further reduce the distance across them
+This means that substances have a very short diffusion pathway
+Concentration gradient
+This is the difference in concentration of the exchange substances on either side of the
+exchange surface, e.g. between the air inside the alveoli and the blood
+A greater difference in concentration means a greater rate of diffusion as the gas
+molecules move across the exchange surface
+The continued movement of exchange substances away from the exchange surface
+mean that a concentration gradient is maintained
+This is achieved by e.g.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+
+The alveoli have a good blood supply; this constantly removes oxygen from the
+capillary side of the exchange surface and supplies carbon dioxide
+The ventilation system in mammals ensures constant inhalation and exhalation;
+this supplies oxygen and removes carbon dioxide from the alveoli side of the
+exchange surface
+Fick's Law of Diffusion
+Fick's Law relates the rate of diffusion to the concentration gradient, the diffusion
+distance and the surface area
+This relationship can be represented by the following equation, where  ∝  means
+"proportional to"
+rate of diffusion  ∝ (surface area x concentration difference)÷ thickness of membrane
+Proportionality means the rate of diffusion will double if
+The surface area or concentration difference doubles
+The diffusion pathway halves
+Fick's Law can be written as an equation which can be used to calculate the rate of
+diffusion
+Rate = P x A x ((C - C)÷ T)
+Where
+P = A permeability constant that is a quantitative measure of the rate at which a
+particular molecule can cross a particular membrane
+A = surface area
+C - C = the difference in concentration between two areas
+T = thickness of the exchange surfaceExaminer Tips and Tricks
+Be careful when discussing surface area; the phrases 'surface area' and 'surface area :
+volume ratio' cannot be used interchangeably. Larger organisms have a larger surface
+area than smaller ones (an elephant clearly has a larger surface area than a bacterial
+cell), but it is the surface area : volume ratio that gets smaller as body size increases.
+1 2
+1 2
+Worked Example
+A sample of alveolar epithelium tissue from a mammal is 1.5  μm thick and has a
+surface area of 3  μm . The concentration of oxygen in the alveolus is 1.8 x 10  mol  μ2 -16Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+
+The Lung & Gas Exchange
+The lungs of air-breathing animals provide an ideal exchange surface for the diffusion of
+gases 
+The lungs are located in the thorax, or chest cavity
+Some animals rely entirely on their lungs for gas exchange, while amphibians use
+lungs alongside gas exchange across the skin
+The role of lungs is to maximise gas exchange while minimising the loss of water across
+the exchange surface
+Mammals have very efficient gas exchange structures in their lungsm  and the concentration of oxygen in the blood is 7.5 x 10  mol  μm . The
+permeability constant for oxygen across alveolar epithelium is 0.012 molecule s.
+Calculate the rate of diffusion across the section of alveolar epithelium.
+Answer:
+Step 1: Substitute numbers into the equation
+Rate = P x A x ((C - C)÷  T)
+Rate = 0.012 x 3 x ((1.8 x 10 - 7.5 x 10 )÷ 1.5)
+Step 2: Complete the calculation
+Rate = 0.012 x 3 x (1.05 x 10÷ 1.5)
+Rate = 0.012 x 3 x 7 x 10
+Rate = 2.52 x 10  molecules  μm  s-3 -17 -3
+-1
+1 2
+-16  -17
+-16 
+-17
+-18 -2 -1
+Examiner Tips and Tricks
+You will be given the equation for Fick's Law in your exam, but it is important you
+understand what it means and how to interpret it.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+
+The lungs are located in the thorax, and enable efficient gas exchange
+Trachea
+The trachea is the tube that allows air to travel to the lungs
+It contains c-shaped rings of cartilage that ensure that the tube remains open at all
+times and does not collapse
+The c-shape prevents any friction from rubbing with the oesophagus located
+close behind, as well as providing increased flexibility when food is being
+swallowed
+There is a layer of mucus covering the lining of the trachea that helps to trap dust
+and pathogens, preventing them from entering the lungs where they could cause
+infection
+Tiny hairs called cilia are also found on the lining of the airways, where they waft
+mucus towards the top of the trachea, removing any trapped particles and
+pathogens from the airways
+Bronchi
+Bronchi (singular bronchus) have a similar structure to the trachea but they
+have thinner walls and a smaller diameter
+Cartilage provides support for the bronchi in the form of rings and plates
+Bronchioles
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+
+Bronchioles are narrow, self-supporting tubes with thin walls
+There is a large number of bronchioles present in the gas exchange system
+Each one varies in size, getting smaller as they get closer to the alveoli
+The larger bronchioles possess elastic fibres and smooth muscle that enable
+adjustment of the size of the airway to increase or decrease airflow
+The smallest bronchioles do not have any smooth muscle but they do have
+elastic fibres
+Alveoli
+Groups of alveoli are located at the ends of the bronchioles
+The alveolar wall consists of a single layer of flattened, or squamous, epithelium
+The squamous epithelium forms the alveolar wall and is very thin and
+permeable for the easy diffusion of gases 
+The alveoli are surrounded by elastic fibres, allowing them to stretch during
+inhalation
+Alveoli are surrounded by an extensive capillary network
+Carbon dioxide diffuses out of the capillaries and into the alveoli to be
+exhaled, while oxygen diffuses from the alveoli and into the capillaries to be
+carried around the body
+A layer of moisture lines the alveoli, facilitating the diffusion of gases
+Oxygen and carbon dioxide are able to dissolve in the layer of moisture, so
+exchange occurs in solution rather than with the air inside the alveoliYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+
+Human alveoli are adapted for efficient gas exchange
+Examiner Tips and Tricks
+When describing the features of the alveoli, be careful to refer to the alveolar
+epithelium as the 'wall of the alveoli' or the 'alveolar wall', and not as a 'cell wall'; cell
+walls are only found in plants!Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+
+Cell Membranes
+Phospholipid Membrane Structure
+Membranes are vital structures found in all cells
+The cell surface membrane creates an enclosed space separating the internal cell
+environment from the external environment, and intracellular membranes form
+compartments within the cell such as the nucleus, mitochondria, and endoplasmic
+reticulum
+Membranes do not only separate different areas but also control the exchange of
+substances from one side of a membrane to the other, as well as acting as an interface
+for communication
+Membranes are partially permeable
+Substances can cross membranes by diffusion and active transport
+Membranes contain receptor proteins, e.g. for binding to hormones, and antigens
+Phospholipids
+Cellular membranes are formed from a double layer, or bilayer, of phospholipids
+Phospholipids consist of
+A molecule of glycerol
+A phosphate group, which forms the phosphate head
+Two fatty acid tails, making up the lipid tail
+Phospholipids contain two distinct regions: a polar head and two non-polar tails
+The phosphate head of a phospholipid is polar, meaning that it can interact with
+polar water molecules; the head is therefore described as being hydrophilic
+Hydro = water
+Philic = loving
+The lipid tail is non-polar, meaning that it cannot interact with polar molecules; the
+tail is therefore described as hydrophobic
+Hydro = water
+Phobic = hatingYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+
+Phospholipids can be visually represented in different ways. In the image above the left-
+hand diagram shows a simple representation of the phosphate head and lipid tails, while
+the central diagram shows the chemical structure of each region; the separate glycerol
+and phosphate group can be seen, as well as the ester bonds that join the components
+together. The right-hand diagram shows a diagrammatic representation of the chemical
+structure
+If phospholipids are spread over the surface of water, they form a single layer with the
+hydrophilic phosphate heads in the water and the hydrophobic fatty acid tails sticking
+up away from the water
+This is called a phospholipid monolayer
+Alternatively, two-layered structures may form in sheets; these are called phospholipid
+bilayers
+Phospholipid bilayers form the basic structure of the cell membrane
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+
+Phospholipids can form monolayers and bilayers
+Structure of membranes
+The phospholipid bilayers that make up cell membranes also contain non-lipid
+components
+Proteins are involved with cell transport and communication
+The proteins can either be intrinsic or extrinsic
+Intrinsic proteins can also be referred to as integral
+Extrinsic proteins can also be referred to as peripheral
+Intrinsic proteins are embedded in the membrane with their precise
+arrangement determined by their hydrophilic and hydrophobic regions
+Extrinsic proteins are found on the outer or inner surface of the membrane
+Cholesterol can be found between the phospholipids, where it regulates
+membrane fluidity
+Cholesterol increases the fluidity of the membrane at low temperatures,
+stopping it from becoming too rigid
+This occurs because cholesterol stops the phospholipid tails packing too
+closely together
+Interaction between cholesterol and phospholipid tails also stabilises the cell
+membrane at higher temperatures by stopping the membrane from becoming
+too fluid
+Cholesterol molecules bind to the hydrophobic tails of phospholipids,
+stabilising them and causing phospholipids to pack more closely together
+Cholesterol increases the mechanical strength and stability of membranes;
+without it membranes would break down and cells would burst
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+
+Glycolipids and glycoproteins are present on the surface of the cell, where they aid
+cell-to-cell communication
+Glycoproteins are proteins with carbohydrate attached, while glycolipids are
+lipids with carbohydrate attached
+The glycolipids and glycoproteins bind with substances at the cell’s surface,
+e.g. hormones
+Some glycolipids and glycoproteins act as cell markers or antigens for cell-to-
+cell recognition
+E.g. the ABO blood group antigens are glycolipids and glycoproteins that
+differ slightly in their carbohydrate chains
+The phospholipid bilayer with its additional components is often described as a 'fluid
+mosaic'
+The scattered pattern produced by the components within the phospholipid bilayer
+looks somewhat like a mosaic when viewed from above
+The mosaic of phospholipids and proteinscan move around within the bilayer by
+diffusion, hence the mosaic is said to be 'fluid'
+The phospholipids mainly move sideways, within their own layer
+The many different types of proteins interspersed throughout the bilayer move
+about within it, although some may be fixed in position
+Note that the fluid mosaic model is one model of membrane structure; other
+models have been considered and rejected as knowledge of membrane structure
+has advanced
+The membrane is partially permeable
+Small, non-polar molecules can pass through the gaps between the phospholipids
+Large, polar molecules must pass through specialised membrane proteins called
+channel proteins and carrier proteinsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+
+The distribution of the proteins within the membrane gives a mosaic appearance and the
+structure of proteins determines their position in the membrane
+The Fluid Mosaic Model
+Scientists use models to represent real world ideas, organisms, processes, and systems
+that cannot be easily investigated
+Over time, as technological developments have been made, the models used to
+represent the structure of cell membranes have changed
+The fluid mosaic model of cell membrane structure was first proposed in 1972 by Singer
+and Nicolson
+The model has evolved over time, and is thought to best account for the structure and
+functions of cell membranes as scientists currently understand them
+Models can change on the basis of new discoveries; if scientists found a new
+feature of cell membranes that didn't fit with the fluid mosaic model, the model
+would be altered, or a new model introduced
+Examiner Tips and Tricks
+In an exam it is good practice to always refer to the cell membrane that surrounds the
+cell as either the cell surface membrane or the plasma membrane; this distinguishes
+it from all of a cell's internal membranesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+
+Evolving cell membrane models have included the following 
+The Gorter and Grendel model of the 1920s showed that the phospholipids in the
+membrane of cells were arranged into a bilayer
+Evidence for this model
+The number of phospholipids extracted from red blood cell membranes
+was double the area of the plasma membrane if it was arranged as a
+monolayer
+Problems with this model
+Their model did not explain the location of proteins or how molecules that
+were insoluble in lipids moved into and out of the cell
+Davson and Danielli's model of the membrane from the 1930s suggested that
+the proteins were arranged in layersabove and below the phospholipid bilayer
+Evidence for this model
+Membranes were effective at controlling the movement of substances in
+and out of cells
+Electron micrographs showed the membrane had two dark lines with a
+lighter band between
+In electron micrographs, proteins appear darker than phospholipids
+Problems with this model
+Freeze etched electron micrographs of the centre of the membrane
+showed globular structures scattered throughout
+Improvements in technology used to analyse the proteins in the
+membranes showed that proteins were globular, varied in size and had
+parts that were hydrophobic
+Singer and Nicolson proposed the fluid mosaic model in the 1970s; the
+model stated that membranes were fluid and that the globular proteins were both
+peripheral and integral
+Evidence for this model
+Analysis of freeze-etched electron micrographs showed
+proteins extending into the centre of membranes
+Biochemical analysis of the plasma membrane components showed that
+membrane proteins are free to move within the bilayerYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+
+Models of cell membrane structure have evolved over time
+Examiner Tips and Tricks
+You do not need to recall the names of the scientists or dates for different models of
+membrane structure, but it is important to understand that models of membrane
+structure are interpretations of data which can change when scientific advances
+enable new discoveries.
+Remember that models represent real-life structures and processes. Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+
+Core Practical 3: Investigating Membrane Structure &
+Permeability
+Investigating Membrane Structure &
+Permeability
+The permeability of cell membranes is affected by several factors such as
+Temperature
+pH
+The effect of such factors on membrane structure and permeability can be investigated
+using beetroot
+Beetroot cells contain a dark purple-red pigment
+The higher the permeability of the beetroot cell membrane, the more of this
+pigment leaks out of the cell
+The amount of pigment in a sample can be measured using a piece of equipment known
+as a colorimeter
+A colorimeter is a machine that passes light through a coloured liquid sample and
+measures how much of that light is absorbed by or transmitted through the sample
+This gives an indication of how much of the colour is present in the solution, e.g.
+more absorbance or less transmission both indicate a darker coloured solution
+A colour filter is used in the light path to ensure that the correct wavelength of light is
+used to measure the optical density of the specific pigment in the solution, e.g. the
+beetroot pigment called betalain
+The colorimeter must be zeroed before each colorimeter is used; this can be done
+using distilled water in a small container called a cuvette
+This process is known as calibrating the colorimeter
+Investigating the effect of temperature on membrane
+permeability
+Apparatus
+Scalpel
+Cork borer 
+Cutting board
+Ruler
+Digital balance
+Test tubesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+
+Measuring cylinder
+Water baths
+Digital stopwatch
+Pipettes
+Colorimeter and cuvettes
+Method
+1. Using a cork borer and scalpel, cut five equal-sized sections of beetroot
+The pieces must have the same dimensions so that they all have equal surface areas
+and volumes, as these factors could affect the rate at which the pigment leaks out
+A cork borer enables cores of equal diameter to be cut, which can then be cut to
+the same length
+2. Rinse the beetroot pieces
+To remove any pigment released during cutting
+3. Add the beetroot pieces to five different test tubes, each containing the same volume
+of water, e.g. 5 cm
+4. Put each test tube in a water bath at a different temperature, e.g. 10 ℃ , 20 ℃ , 30 ℃ , 40
+℃, and 50 ℃ , for the same length of time
+The time should be long enough to allow the pigment to diffuse into the water, e.g.
+around 30 minutes
+5. Remove the beetroot pieces, leaving just the coloured liquid in the five test tubes
+6. Use pipettes to transfer samples of the coloured liquid to colorimeter cuvettes
+Cuvettes are small cuboid containers that hold the liquid to be measured in a
+colorimeter
+A different pipette should be used for each sample to avoid the transfer of pigment
+molecules between samples
+7. Use a colorimeter to measure how much light is absorbed as it passes through each of
+the five samples of coloured liquid
+The higher the absorbance, the morepigment must have been released due to
+a greater membrane permeability
+Results
+The general pattern you would expect to see is that as temperature increases,
+membrane permeability also increases
+As temperature increases, the phospholipids within the cell membrane move more
+because they have more kineticenergy; increased movement means the
+phospholipids are not as tightly packed together, increasing the permeability of
+the membrane3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+
+Temperature affects the 3D shape of proteins; at high temperatures membrane
+proteinsdenature, increasing the permeability of the membrane
+The volume of water inside the cells expands, putting pressure on the membrane
+and damaging membrane components; this can increase membrane permeability
+If experimenting with temperatures below 0 ℃ , membrane permeability may be
+increased once the cells have thawed again
+Ice crystals that form can pierce the cell membrane, making it highly permeable
+Both high and very low temperatures can increase membrane permeability
+Limitations
+Cuvettes may differ in thickness; a thicker cuvette will absorb slightly more light than a
+thinner cuvette
+Solution: use the same cuvette for every reading, or repeat the investigation many
+times and find a mean
+Note that scratched cuvettes can have the same impact on absorbance as thicker
+cuvettes
+The beetroot pieces may not be identical in size and shape, meaning some test tubes
+could contain slightly more beetroot tissue than others
+Solution: cut the discs as accurately as possible using a scalpel and ruler,
+and repeat each investigation several times to find a mean
+Some parts of beetroot tissue have more pigment in their cells than others
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+
+Solution: conduct several repeats, using different parts of the beetroot and find
+a mean
+Variations
+The impact of alcohol on membrane permeability could also be investigated
+The expected trend is
+As alcohol concentration increases the permeability of the membrane increases
+This is because alcohol dissolves lipids in the cell surface membrane so the
+membrane loses its structure and the beetroot pigment can leak outYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+
+Osmosis
+Osmosis
+All cells are surrounded by a cell surface membrane which is partially permeable
+Water can move in and out of cells across the cell surface membrane by a process
+called osmosis
+Osmosis is the net movement of water molecules from a region of higher water
+potential to a region of lower water potential through a partially permeable
+membrane
+Water potential is a measure of the number of free water molecules present in a
+solution; higher water potential = more free water molecules
+Water molecules will move from an area of more free water molecules to an area of
+fewer free water molecules
+Water molecules are considered 'free' when they are not surrounding
+substances in a solution; when a substance dissolves it becomes surrounded
+by water molecules; such water molecules are no longer free and cannot move
+through a membrane readily
+During osmosis water is moving down its concentration gradient, so it is a specialised
+form of diffusion
+Cell membranes are partially permeable, allowing small molecules like water through but
+not larger molecules such as solutes
+Although water molecules are polar, they can still pass through the bilayer because
+of their small size.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+
+Osmosis is the movement of water molecules from an area of high water potential to an
+area of low water potential through a partially permeable membrane
+Osmosis is the movement of water molecules down their concentration gradient. Note
+that 'water potential' is a term used to describe the number of free water molecules
+present
+Osmosis is important because it constantly affects the cells of living organisms
+Cell cytoplasm consists of water and dissolved substances, meaning that it has a
+water potential of its own
+Cells lose or take on water depending on the water potential of their surroundings in
+comparison to their cytoplasm
+When cells are placed in pure water, which has the highest possible water potential,
+water moves into the cells by osmosis and the cells swell
+In animal cells this could lead to cell bursting
+In plant cells the cell wall prevents bursting
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+
+When cells are placed into a solution that has a lower water potential than their
+cytoplasm, e.g. a concentrated glucose solution, water moves out of the cells by
+osmosis and the cells shrink
+In animal cells the entire cell shrivels
+In plant cells the vacuole and cytoplasm shrink but the cell wall maintains the overall
+shape of the cell
+When cells are placed into solution they are affected by osmosis. A cell placed in pure
+water will take on water as water moves into the cell by osmosis from an area of high water
+potential to an area of low water potential. In plant cells this causes the cell to swell, but
+the cell wall prevents the cell from bursting
+Osmosis in Plant and Animal Cells Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+
+Diffusion, Facilitated Diffusion & Active Transport
+Diffusion & Facilitated Diffusion
+Diffusion is a type of transport that can occur across a cell membrane
+Note that diffusion can also happen within a cellular compartment; the presence of
+a membrane is not essential
+It can be defined as the net movement of a substance from a region of its higher
+concentration to a region of its lower concentration
+Netmovement refers to the overall direction of movement; in reality molecules in a
+liquid or gas move in all directions, but most molecules move from a high to a low
+concentration
+The molecules of a liquid or a gas move randomly due to the kinetic energy of
+the molecules or ions
+The molecules or ions move down a concentration gradient
+Diffusion is a passive process meaning that it does not require energy in order to occur
+Diffusion can be described as passive transport
+Diffusion will continue until the concentration of a substance on each side of a
+membrane has become equal; this is known as equilibrium
+Some molecules are able to diffuse directly between the phospholipids of a membrane;
+this can be described as simple diffusion
+Molecules that can move by simple diffusion tend to be small and non-polar
+Small molecules can fit between the phospholipids
+Non-polar molecules are able to interact with the non-polar tails of the
+phospholipidsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+
+Diffusion can occur across a cell surface membrane. The image above shows the
+progression of glucose diffusion; on the left of the diagram there is a steep concentration
+gradient, and by the end of the process on the right of the diagram the glucose
+concentration has reached equilibrium
+The rate at which a substance diffuses across a membrane depends on several factors
+Concentration gradient
+Temperature
+Surface area
+Properties of substance involved
+Factors Affecting Diffusion Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+
+Facilitated diffusion
+Some substances cannot diffuse directly through the phospholipid bilayer of cell
+membranes, e.g.
+Large,polarmolecules such as glucose and amino acids
+Ions such as sodium ions (Na) and chloride ions (Cl)
+These substances can only cross the phospholipid bilayer with the help of transport
+proteins; this form of diffusion is known as facilitated diffusion
+There are two types of transport protein that enable facilitated diffusion
++ -Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+
+Channel proteins
+Carrier proteins
+They are highly specific, meaning that they only allow one type of molecule or ion to
+pass through
+Channel proteins
+Channel proteins are pores that extend through the membrane from one side to the
+other
+They allow charged substances, e.g. ions, to diffuse through the cell membrane
+The diffusion of these ions does not occur freely; most channel proteins are ‘gated’,
+meaning that part of the channel protein on the inside surface of the membrane can
+move in order to close or open the pore
+This allows the channel protein to control the exchange of ions
+Channel proteins are pores in the cell membrane; they can open and close
+Carrier proteins
+Unlike channel proteins which have a fixed shape, carrier proteins can switch between
+two shapes
+This causes the binding site of the carrier protein to be open to one side of the
+membrane first, and then open to the other side of the membrane when the carrier
+protein switches shape
+The direction of movement of molecules diffusing across the membrane depends on
+their relative concentration on each side of the membrane
+Net diffusion of molecules or ions into or out of a cell via carrier proteins will
+occur down a concentration gradient
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+
+Carrier proteins change shape to transport molecules from one side of a membrane to the
+other
+Active Transport
+Active transport is the movement of molecules and ions through a cell membrane from
+a region of lower concentration to a region of higher concentration
+Active transport requires energy in the form of ATP from respiration to move
+substances against theirconcentration gradient; hence this is an active process
+Active transport requires carrier proteins
+Each carrier protein is specific to a particular type of molecule or ion
+Energy is required to allow the carrier protein to change shape; this transfers the
+molecules or ions across the cell membrane
+The energy required is provided by ATP (adenosine triphosphate) produced during
+respiration
+The ATP is hydrolysed to release energy
+Examiner Tips and Tricks
+Remember that the movement of molecules from high concentration to low
+concentration is diffusion. If this movement requires the aid of a protein, for example
+because the molecule is charged and cannot pass directly through the phospholipid
+bilayer, this is facilitated diffusion.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+
+Active transport moves substances across a membrane from low to high concentration.
+Note that ATP is required for carrier proteins to change shape
+Examples of active transport include
+Reabsorption of useful molecules and ions into the blood after filtration into the
+kidney tubules
+Absorption of some products of digestion from the digestive tract into the blood
+Loading sugar from the photosynthesising cells of leaves into the phloem tissue for
+transport around the plant
+Loading inorganic ions from the soil into root hair cells
+Endocytosis & Exocytosis
+Endocytosis
+Some molecules are too large to travel via membrane proteins, e.g.
+Proteins
+Lipids
+Some carbohydrates
+Examiner Tips and Tricks
+Be careful not to get carrier proteins and channel proteins confused when answering
+questions on active transport. Active transport requires carrier
+proteins (transmembrane transport proteins that undergo conformational
+change) not channel proteins.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+
+In such cases a cell can surround a substance with a section of the cell surface
+membrane
+The membrane engulfs the substance and pinches off inside the cell to form
+a temporary vacuole with the ingested substance contained inside
+This is endocytosis
+Phagocytosis is an example of endocytosis
+Endocytosis is an active process and requires a source of energy
+Phagocytosis is an example of endocytosis; the cell surface membrane extends around a
+pathogen, engulfing it and enclosing it within a temporary vacuole inside the cell
+Exocytosis
+Some substances produced by the cell need to be secreted, such as hormones, some
+enzymes, and lipids
+Vesicles containing the substance pinch off from sacs of the Golgi apparatus 
+These vesicles are moved toward the cell surface and fuse with the cell surface
+membrane to be released outside the cell
+This is exocytosis
+Exocytosis is an active process and requires a source of energy
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+
+Exocytosis allows the bulk secretion of substances from cells
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31

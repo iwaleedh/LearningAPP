@@ -1,0 +1,6 @@
+text = open('circ.txt').read()
+start = text.find("\nThe Cardiac Cycle\n", 1000)
+end = text.find("\nThe Role of Haemoglobin\n", start)
+sec = text[start:end].strip()
+print(repr(sec[:100]))
+print(len(sec))

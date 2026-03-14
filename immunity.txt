@@ -1,0 +1,520 @@
+Edexcel International A
+Level (IAL) Biology
+Immunity
+Contents
+Tuberculosis & HIV
+Pathogens: Routes of Entry
+Non-Specific Immune Responses
+Specific Immune Responses
+Lymphocytes: Types & Roles
+Developing Immunity
+Pathogens vs Hosts: An Evolutionary RaceYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Tuberculosis & HIV
+Tuberculosis
+A disease is an illness or disorder of the body or mind that leads to poor health
+Each disease is associated with a set of signs and symptoms
+Infectious diseases are caused by pathogens and are transmissible, meaning that they
+can be spread between individuals within a population
+Pathogens may include certain species of bacteria, some fungi and all viruses
+Note that not all viruses are pathogenic to humans!
+An example of a pathogen is the bacteria Mycobacterium tuberculosis which causes
+the disease tuberculosis, also known as TB
+Transmission of TB
+When infected people with the active form of TB cough or sneeze, the Mycobacterium
+tuberculosis bacteria enter the air in tiny droplets of liquid released from the lungs
+TB is transmitted when uninfected people inhale these droplets
+TB spreads more quickly among people living in overcrowded conditions
+Once inside the lungs, TB bacteria are engulfed by phagocytes
+The bacteria may be able to survive and reproduce while inside phagocytes
+Individuals with a healthy immune system will not develop TB at this stage
+This is known as the primary infection
+Over time the infected phagocytes will become encased in structures
+called tubercles in the lungs where the bacteria will remain dormant
+It is possible for the bacteria to become activated and overpower the immune
+system at a later stage, such as during an HIV infection when the immune system
+is compromised; the person will then develop TB
+This is known as the active phase of TB
+The length of time between infection and developing the disease can vary from a
+few weeks to a few years
+The first symptoms of TB will include developing a fever, fatigue, coughing and lung
+inflammation
+If left untreated the bacteria will cause extensive damage to the lungs which can result in
+death due to respiratory failure
+TB may also spread to other parts of the body where it can lead to organ failure if not
+treated promptlyYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+HIV
+Transmission of HIV
+HIV is the human immunodeficiency virus
+Be careful not to refer to it as the HIV virus, as that would mean that you would be
+using the word 'virus' twice!
+HIV contains RNA and is a retrovirus
+HIV can be transmitted in body fluids in the following ways
+Sexual intercourse
+Blood donation
+Sharing of needles used by intravenous drug users
+From mother to child across the placenta
+Mixing of blood between mother and child during birth
+From mother to child through breast milk
+Replication of HIV
+When the virus enters the bloodstream it infects helper T cells, a type of white blood
+cell that is normally responsible for activating antibody-producing B cells
+It enters the helper T cells by attaching to a receptor molecule on the host cell
+membrane
+The capsid enters the helper T cell and releases the RNA it contains
+The viral RNA is used as a template by reverse transcriptase enzymes to produce
+a complementary strand of DNA
+Once this single-stranded DNA molecule is turned into a double-stranded
+molecule it can be successfully inserted into the host DNA
+From here it uses the host cell's enzymes to produce more viral components which
+are assembled to form new viruses
+These bud from the host cell and enter the blood, where they can infect other
+helper T cells and repeat the process
+At this stage, the individual is HIV positive and may experience flu-like symptoms
+This is known as the acute HIV syndrome stage
+After the initial infection period, during which HIV replication is rapid, the replication rate
+drops and the individual enters the asymptomatic or chronic stage
+During this period the person will not show any symptoms, often for years
+Gradually the virus reduces the number of helper T cells in the immune systemYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+B cells are no longer activated
+No antibodies are produced
+The patient begins to suffer from HIV-related symptoms and are now in the
+symptomatic disease stage of the infection
+The lack of T helper cells decreases the body’s ability to fight off infections, eventually
+leading to the final stage of an HIV infection, which is known as advancedAIDS (Acquired
+immune deficiency syndrome)
+HIV attaches to helper T cells (also called CD4 T-lymphocytes) and uses their cell
+machinery to replicate. This leads to decreased lymphocyte numbers which then affects
+the body's ability to respond to infection. Note that HIV should not be referred to as the
+'HIV virus' as it is here.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Symptoms of AIDS
+Immediately after infection with HIV a patient often suffers mild flu-like symptoms
+These symptoms pass and for a period of time infected people might not know
+they are infected
+After several months or years, the viral DNA replicated by the HIV particles becomes
+active
+Virus particles gradually destroy and reduce the number of helper T cells present in a
+host
+This is detrimental as helper T cells play an important role in the specific immune
+response
+They stimulate B cells, the production of antibodies and increased rates of
+phagocytosis
+As a patient can no longer produce antibodies against pathogens, they are
+immunocompromised and unable to fight off infections
+They begin to suffer from diseases that would usually cause very minor issues in healthy
+individuals
+These diseases are described as opportunistic
+Tuberculosis (TB) is a common example
+An HIV infection will progress to AIDS when
+An individual starts suffering from constant opportunistic infections
+The helper T cell count drops below a critical level
+The length of time that it takes for an HIV infection to progress to AIDS can vary between
+individuals but the disease will follow a standard sequence of symptoms
+Initially an AIDS sufferer will only have mild infections of the mucous membranes
+due to the low helper T numbers
+Over time, however, infections will become more severe e.g. diarrhoea, TB 
+During the final stages of AIDS a person will suffer from a range of more serious
+opportunistic infections
+It is these opportunistic diseases that cause an individual with advanced AIDS to die
+Several factors affect how quickly HIV will progress into AIDS and how long a person
+with AIDS will survive
+The number of existing infections
+The strain of HIV the person is infected with
+Their age
+Access to healthcareYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Examiner Tips and Tricks
+Try not to confuse the terms HIV and AIDS. Many people use them interchangeably
+when they actually mean different things.
+HIV is a virus
+AIDS is the disease caused by HIVYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+Pathogens: Routes of Entry
+Pathogens: Routes of Entry
+In order for a pathogen to cause disease it must enter the body of the host
+Body openings, e.g. the mouth, eyes, and urinary tract, provide easy access for
+pathogens to enter
+Pathogens may enter directly into the bloodstream through breaks in the skin
+Pathogens may be transmitted in a variety of ways
+Vectors
+These are living organisms that carry pathogens and transmit them between hosts
+Insects, such as flies and mosquitoes, are common vectors for diseases like malaria and
+yellow fever
+Inhalation
+Droplets from the respiratory tract will be suspended in the air when an infected person
+coughs, sneezes or talks
+These droplets contain pathogens that can be inhaled by healthy people
+The airways provide an entry point into the respiratory system of a new host and another
+infection occurs, e.g. flu, measles, tuberculosis
+Ingestion
+Pathogens can enter through the digestive system when we ingest contaminated food
+or drink
+This is especially probable if food is undercooked, as heat destroys most of the
+pathogens 
+These pathogens can make their way through the lining of the gut and cause disease
+(e.g. cholera, Salmonella poisoning)
+Indirect contact
+Inanimate objects can contain large numbers of pathogens that may be transferred
+between hosts
+An infected individual may touch or cough on an object which is later touched by a
+healthy individual who transfers the pathogens to their mouth or nose by touching
+their face
+Examples include bedding, towels, and surfaces
+Direct contactYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+Pathogens that spread this way will require some part of the host, e.g. skin, body fluids,
+to come into direct contact with a healthy individual
+Pathogens that spread by this route can then pass through the mucous membranes and
+enter the bloodstream, e.g.
+When shaking hands with another person who then puts their hand to their nose or
+mouth
+During sexual transmission
+Examples include HIV, ebola, syphilis
+Inoculation
+This typically occurs when a pathogen enters the body through broken skin, providing it
+with a direct route into the bloodstream
+Transmission could be through sexual contact, sharing needles during drug use, or bites
+or scratches from infected animals
+Examples include hepatitis B, HIV, tetanus, and rabies
+Barriers to Pathogenic Entry
+Skin
+The skin provides a physical barrier against infection
+If the skin is damaged it leaves the exposed tissue beneath vulnerable to pathogens
+The blood clotting mechanism of the body plays an important role in preventing
+pathogen entry in the case of damage to the skin
+Blood clotting takes time, however, so a few pathogens may still enter before a clot
+forms
+Microorganisms of the gut and skin
+Collectively these harmless microorganisms are known as the gut or skinflora
+They compete with pathogens for resources, thereby limiting their numbers and
+therefore their ability to infect the body
+Stomach acid
+The hydrochloric acid that makes up a large part of the gastric juices in the stomach
+creates an acidic environment that is unfavourable to many pathogens present on food
+and drink
+Sometimes a few of these pathogens may survive and make their way to the intestines
+where they infect the gut wall cells and cause disease
+Lysozyme
+Secretions of the mucosal surfaces, e.g. tears, saliva, and mucus, contains an enzyme
+called lysozymeYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+This enzyme will damage bacterial cell walls, causing them to burst, or lyse
+The body has various barriers that prevent the entry of pathogens
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Non-Specific Immune Responses
+Non-specific Immune Responses
+There are two types of immune response in the body once a pathogen enters
+Non-specific
+This response is the same, regardless of the pathogen that invades the body
+Specific
+This is a response specific to a particular pathogen
+The immune system is able to recognise specific pathogens due to the
+presence of antigens on their cell surface 
+Antigens are molecules such as proteins or glycoproteins located on the
+surface of cells; their role is to act as an ID tag, identifying a cell as being
+'self' or 'non-self'
+Pathogens have non-self antigens, so the immune system recognises
+them as not belonging to the body
+When a pathogen invades tissue the non-specific immune response begins
+immediately; this includes
+Inflammation
+Interferons
+Phagocytosis
+Inflammation
+The surrounding area of a wound can sometimes become swollen, warm and painful to
+touch; this is inflammation
+Body cells called mast cells respond to tissue damage by secreting the
+molecule histamine
+Histamine is a chemical signalling molecule that enables cell signalling, or
+communication between cells
+Histamine stimulates the following responses
+Vasodilation increases blood flow through capillaries
+Capillary walls become 'leaky', or more permeable, allowing fluid to enter the
+tissues and creating swelling
+Some plasma proteins leave the blood when the capillaries become more
+permeable
+Phagocytes leave the blood and enter the tissue to engulf foreign particlesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+Cells release cytokines, another cell signalling molecule that triggers an immune
+response in the infected area
+Interferons
+Cells infected by viruses produce anti-viral proteins called interferons
+Interferons prevent viruses from spreading to uninfected cells
+They inhibit the production of viral proteins, preventing the virus from replicating
+They activate white blood cells involved with the specific immune response to
+destroy infected cells
+They increase the non-specific immune response e.g. by promoting inflammation
+Phagocytosis
+Phagocytes are a type of white blood cell responsible for removing dead cells and
+invasive microorganisms; they do this by engulfing and digesting them
+The process of engulfing and digesting is known as phagocytosis
+Phagocytes travel throughout the body and can leave the blood by squeezing through
+capillary walls
+During an infection they are released in large numbers
+Mode of action
+Chemicals released by pathogens, as well as chemicals released by the body cells
+under attack, e.g. histamine, attract phagocytes to the site where the pathogens
+are located 
+They move towards pathogens and recognisethe antigens on the surface of the
+pathogen as being non-self
+The cell surface membrane of a phagocyte extends out and around the
+pathogen, engulfing it and trapping the pathogen within a phagocytic vacuole
+This part of the process is known as endocytosis
+Enzymes are released into the phagocytic vacuole when lysosomesfuse with it
+These digestive enzymes, which includes lysozyme, digestthe pathogen
+After digesting the pathogen, the phagocyte will present the antigens of the
+pathogen on its cell surface membrane
+The phagocyte becomes what is known as an antigen presenting cell
+The presentation of antigens initiates the specific immune responseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+Phagocytes engulf pathogens in the process of phagocytosis, enclosing them in a
+phagocytic vacuole. Lysosomes fuse with the vacuole, releasing enzymes which digest
+the pathogen
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+Specific Immune Responses
+Specific Immune Responses
+Antigens
+Every cell in the human body has markers on its cell surface membrane that identify it
+Microorganisms such as bacteria and viruses also have their own unique markers
+These markers are called antigens and they allow cell-to-cell recognition
+Antigens are found on cell surface membranes, bacterial cell walls, or the surfaces
+of viruses
+Some glycolipids and glycoproteins on the outside of cell surface membranes act
+as antigens
+Antigens can be either self antigens or non-self antigens
+Antigens produced by the organism's own body cells are known as self antigens
+Self antigens do not stimulate an immune response
+Antigens not produced by the organism’s own body cells are known as non-self
+antigens
+Non-self antigens stimulate an immune response
+E.g. the antigens found on pathogenic bacteria and viruses, or on the surface of
+a transplanted organ
+After pathogens are engulfed by phagocytosis, phagocytes transfer the antigens of the
+digested pathogen to their cell surface membrane, becoming antigen presenting cells
+Antigen presenting cells such as macrophages activate the specific immune
+response
+This occurs when the white blood cells of the specific immune response, known
+as lymphocytes, bind to the presented antigens with specific receptors on
+their cell surface membranes
+Note that macrophages are a type of phagocytic white blood cell
+Antibody structure
+Antibodies are secreted by specialised white blood cell known as plasma cells
+Antibodies are Y-shaped molecules sometimes known as immunoglobulins
+Antibodies consist of four polypeptide chains;two ‘heavy’ chains attached
+by disulfide bonds to two ‘light’ chains
+'Heavy' chains are long while 'light' chains are short
+Each polypeptide chain has a constant region and variable regionYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+The constant regionsdo not vary within a class of antibody
+There are 5 classes of mammalian antibodies, each with different roles
+The amino acid sequences in the variable region are different for each antibody
+The variable region is where the antibody binds to an antigen to form
+an antigen-antibody complex
+At the end of the variable region is a site called the antigen binding site
+The antigen binding sites vary greatly, giving the antibody its specificity for
+binding to antigens
+The ‘hinge’ region, where the disulfide bonds join the heavy chains, gives flexibility to
+the antibody molecule, allowing the antigen binding site to be placed at different angles
+when binding to antigens
+This region is not present in all classes of antibodies
+Antibodies can be either membrane-bound or secreted directly into the blood
+Membrane-bound antibodies are attached to the surface of lymphocytes
+The membrane-bound antibodies have an extra section of polypeptide chain
+within their heavy chains which forms the attachment to lymphocytes
+Antibodies are Y-shaped molecules consisting of four polypeptide chains. Note that the
+term epitope here refers to the part of the antigen that is recognised by the immune
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+system; the variable regions of the antibody are complementary to the epitope of the
+antigen, allowing them to bind
+Antibody function
+Antibodies bind to specific antigens that trigger the specific immune response
+Antibodies function to disable pathogens in several ways
+Pathogens enter host cells by binding to them using receptors on their surface;
+antibodies can bind to these receptors, preventing pathogens from infecting host
+cells
+Antibodies can act as anti-toxins by binding to toxins produced by pathogens, e.g.
+the bacteria that cause diphtheria and tetanus; this neutralises the toxins
+Antibodies cause pathogens to clump together, a process known as agglutination;
+this reduces the chance that the pathogens will spread through the body and makes
+it possible for phagocytes to engulf a number of pathogens at one time
+Antibodies cause agglutination, which makes it difficult for the pathogens to infect host
+cells. This also makes it easier for the phagocytes to engulf the trapped pathogens
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+Lymphocytes: Types & Roles
+Lymphocytes: Types & Roles
+There are two types of lymphocyte that play a particular role in the specific immune
+response
+T cells
+B cells
+Note that lymphocytes are a type of white blood cell
+T cells
+T cells, sometimes known as T lymphocytes, are produced in the bone marrow and finish
+maturing in the thymus, which is where the T in their name comes from
+Mature T cells have specific cell surface receptors called T cell receptors
+These receptors have a similar structure to antibodies and are each specific to a
+particular type of antigenYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Mature T cells have many different types of receptor on the cell surface membrane; these
+receptors will bind to different antigens on antigen presenting cells
+T cells are activated when they encounter and bind to their specific antigen on the
+surface of an antigen presenting cell 
+This antigen-presenting cell might be a macrophage, an infected body cell, or
+the pathogen itself
+These activated T cells dividebymitosis to increase in number
+Dividing by mitosis produces genetically identical cells, or clones, so all of the
+daughter cells will have the same type of T cell receptor on their surface 
+There are three main types of T cell
+T helper cells
+Release chemical signalling molecules that help to activate B cells
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+Release chemical signalling molecules that help to activate T killer cells
+Release chemicals called cytokines, that label pathogens and infected cells
+for phagocytosis
+T killer cells
+Bind to and destroy infected cells displaying the relevant specific antigen
+T memory cells
+Remain in the blood and enable a faster specific immune response if the same
+pathogen is encountered again in the future
+B cells
+B cells, also known as B lymphocytes, are a second type of white blood cell in the
+specific immune response
+B cells remain in the bone marrow as they mature, hence the B in their name
+B cells have many specific receptors on their cell surface membrane
+The receptors are in fact antibodies, and are known as antibody receptors
+Each B cell has a different type of antibody receptor, meaning that each B cell
+can bind to a different type of antigenYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+Mature B cells each have different types of antibody receptors on their cell surface
+membrane
+If the corresponding antigen enters the body, B cells with the correct cell surface
+antibodies will be able to recognise it and bind to it 
+When the B cell binds to an antigen it forms an antigen-antibody complex
+The binding of the B cell to its specific antigen, along with the cell signalling molecules
+produced by T helper cells, activates the B cell
+Once activated the B cells divide repeatedly by mitosis, producing many clones of the
+original activated B cell
+There are two main types of B cell
+Effector cells, which differentiate into plasmacells
+Plasma cells produce specific antibodies to combat non-self antigens
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Memory cells
+Remain in the blood to allow a faster immune response to the same pathogen in
+the future
+During a primary immune response B cells divide by mitosis to form plasma cells and
+memory cells. Note that a primary response occurs the first time an individual comes into
+contact with a particular pathogen
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+Developing Immunity
+Developing Immunity
+Developing immunity
+The immune system is activated when a new antigen is encountered
+This launches a primary immune response consisting of a non-specific immune
+response followed by a specific immune response
+The primary response occurs the first time an antigen is encountered by the immune
+system
+Since it is the first time the immune system has encountered the antigen, the numbers of
+T and B cells with the correct membrane receptors present in the blood will be low
+It will take time for the correct T and B cells to be activated and to divide and
+differentiate into different cell types
+It can take several days before plasma cells develop and are able to start producing
+antibodies against an antigen
+This is the reason why an infected person will experience symptoms of the disease
+the first time they contract it
+Both T and B cells produce memory cells during the primary response, which will remain
+in the blood after an infection is over
+The presence of memory cells means that a person is said to be immune to the
+pathogen
+Should the immune system encounter the same antigen again in the future it will launch a
+secondary immune response which will be much faster and stronger than the primary
+response
+Memory cells are present in larger quantities than the mature lymphocytes at the
+start of the primary response, so the correct memory cells are able to detect an
+antigen, activate, divide by mitosis, and differentiate much more quickly
+Antibodies are produced more quickly and in larger quantities in a secondary
+response
+This will often eliminate the pathogen before the infected person can show symptomsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+The secondary response is much larger and faster than the primary response due to the
+presence of memory cells in the blood
+Active immunity
+Active immunity is acquired when an antigen enters the body triggering a specific
+immune response
+Active immunity can be 
+Natural; acquired through exposure to pathogens
+Artificial; acquiredthrough vaccination
+In both cases the body produces memory cells, giving the person long-term immunity
+Passive immunity
+Passive immunity is acquired without an immune response; antibodies are gained from
+another source, not produced by the infected person
+Passive immunity can be
+Natural
+Foetuses receive antibodies across the placenta from their mothers
+Babies receive antibodies in breast milk
+Artificial
+People can be given an injection / transfusion of antibodies e.g. the tetanus
+antitoxin
+The antibodies will have been collected from people or animals whose immune
+system had been triggered by a vaccination to produce antibodies
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+As the person’s immune system has not been activated, there are no memory cells that
+can enable antibody production in a secondary response; if a person is reinfected they
+would need another infusion of antibodies
+Comparing Active & Passive Immunity Table
+Vaccines
+A vaccine contains antigens that are intentionally put into the body to induce artificial
+active immunity
+Vaccines can contain dead or weakened pathogens, less harmful strains of a
+pathogen, antigens alone, or a piece of genetic material that codes for the antigens
+Vaccines are administered either by injection or by mouth
+Vaccinations produce long-term immunity as they cause memory cells to be created.
+The immune system recognises the antigen when re-encountered and produces
+antibodies in a faster, stronger secondary response
+This is the main reason why vaccinated individuals typically do not show symptoms
+of the diseases they were vaccinated against
+Antigenic variation can mean that vaccinations need to be constantly modified to keep
+up with the changes to a pathogen's antigens
+Antigenic changes are the result of mutation
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Pathogens vs Hosts: An Evolutionary Race
+Pathogens vs Hosts: An Evolutionary
+Race
+Vertebrates have evolved over millions of years to have immune systems that are
+capable of dealing with a wide range of different pathogens
+Pathogens, however, have also evolved and have developed different ways of
+evading their host's immune system
+This battle between host and pathogen is known as an evolutionary race; each organism
+develops new ways in which to have an advantage over the other
+This evolutionary race is sometimes referred to as an evolutionary arms race
+Evasion mechanisms developed by pathogens serve as support for this theory
+HIV evasion mechanisms
+The virus kills helper T cells after it infects them which reduces the number of cells that
+could detect the presence of the virus and activate the production of antibodies
+HIV shows antigenic variability due to the high mutation rate in the genes coding for
+antigen proteins
+This forms new strains of the virus which each require a new primary immune
+response
+Memory cells for one strain will not recognise the antigens of another strain
+The virus prevents infected cells from presenting their antigens on the cell surface
+membrane, making it very difficult for the relevant white blood cells to recognise and
+destroy the infected cells
+Mycobacterium tuberculosis evasion mechanisms
+Once engulfed by phagocytes in the lungs the bacteria produce substances that will
+prevent alysosome from fusing with the phagocytic vacuole
+This prevents the bacteria from being broken down by digestive enzymes, leaving
+them to multiply within the phagocyte
+As with HIV the bacteria can disrupt antigen presentation in infected phagocytes,
+making it difficult for the immune system to recognise and destroy these cellsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24

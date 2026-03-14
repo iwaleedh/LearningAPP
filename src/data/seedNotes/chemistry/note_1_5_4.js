@@ -8,8 +8,52 @@ export const note_chemistry_1_5_4 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Apply Markovnikov\'s rule to predict the major product of addition reactions to asymmetric alkenes. Explain the rule in terms of carbocation stability.' },
+      data: { text: 'Apply Markovnikov\'s rule to predict the major product of addition reactions to asymmetric alkenes. Use bromine water as a test for the C=C double bond. Explain Markovnikov\'s rule in terms of carbocation stability.' },
       terms: []
+    },
+    {
+      id: 'h-bromine-test',
+      type: 'heading',
+      data: { text: 'Testing for C=C Double Bonds with Bromine Water', level: 2 }
+    },
+    {
+      id: 'list-bromine-test',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Reagent: bromine water (Br₂(aq)) — orange/brown solution.',
+          'Procedure: add a few drops of bromine water to the unknown compound and shake.',
+          'Positive result (alkene present): bromine water decolorises — orange/brown → colourless.',
+          'Negative result (saturated compound, e.g. alkane): bromine water remains orange — no C=C present.',
+          'The reaction is electrophilic addition: Br₂ adds across the C=C bond to give a dibromoalkane.',
+          'Always perform in the dark (absence of UV light) — UV causes free-radical substitution with alkanes, which also decolorises bromine, giving a false positive.',
+          'Alternative reagent: anhydrous bromine in an organic solvent (Br₂ in CCl₄ or hexane) — orange → colourless still confirms C=C.',
+          'This test distinguishes alkenes (unsaturated) from alkanes and other saturated compounds.'
+        ]
+      }
+    },
+    {
+      id: 'callout-bromine-rxn',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Bromine Addition — the Chemistry',
+        text: 'General equation: C=C + Br₂ → C(Br)–C(Br) (a <strong>vicinal dibromoalkane</strong>)<br/><br/><strong>Example:</strong> CH₂=CH₂ + Br₂ → BrCH₂–CH₂Br (1,2-dibromoethane)<br/><br/><strong>Mechanism:</strong> The electron-rich π bond induces a dipole in the approaching Br–Br molecule (<sup>δ+</sup>Br–Br<sup>δ−</sup>). The π electrons attack the δ+ Br electrophilically. Br₂ adds across the double bond, and the two Br atoms end up on adjacent carbons (anti addition — from opposite faces).<br/><br/>Because Br₂ is <strong>symmetrical</strong>, no major/minor product distinction applies — both carbons receive a Br atom.'
+      }
+    },
+    {
+      id: 'table-bromine-test',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Bromine water test results summary',
+        headers: ['Compound', 'Observation with Br₂(aq) in dark', 'Conclusion'],
+        rows: [
+          ['Alkene (C=C present)', 'Orange → colourless', 'C=C double bond present; electrophilic addition occurred'],
+          ['Alkane / saturated compound', 'Remains orange (no change)', 'No C=C; Br₂ cannot react at room temperature in the dark'],
+          ['Alkane in UV light (invalid test)', 'May slowly decolorise', 'Free-radical substitution — NOT a test for C=C; must test in dark']
+        ]
+      }
     },
     {
       id: 'h-markov',
@@ -38,6 +82,22 @@ export const note_chemistry_1_5_4 = {
       type: 'paragraph',
       data: { text: 'The major product of unsymmetrical additions is formed via the more stable carbocation intermediate. Alkyl groups are <strong>electron-donating</strong>, which means they reduce the positive charge on the carbon they are attached to. The more you can spread the charge around, the more stable the ion becomes.' },
       terms: ['Carbocation stability']
+    },
+    {
+      id: 'list-carbocation-stability',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'A carbocation is a carbon species with only three bonds and a full positive charge (C⁺); it is a planar, sp²-hybridised intermediate.',
+          'Carbocations are classified by the number of carbon–carbon bonds to the positive carbon: primary (1°) — one C–C bond; secondary (2°) — two C–C bonds; tertiary (3°) — three C–C bonds.',
+          'Stability order: 3° > 2° > 1° > CH₃⁺ (methyl) — more alkyl groups attached to C⁺ gives greater stability.',
+          'Alkyl groups donate electron density towards the positive carbon (positive inductive effect / hyperconjugation), dispersing the charge over more atoms and lowering the energy of the ion.',
+          'A more stable carbocation has a lower activation energy of formation — it forms faster and therefore determines which product predominates.',
+          'Tertiary carbocations are most commonly encountered in reactions of branched alkenes; secondary carbocations are the norm for linear alkenes (e.g. propene, but-1-ene).',
+          'The empty p orbital on C⁺ is the site attacked by nucleophiles (e.g. X⁻) in the second step of electrophilic addition.'
+        ]
+      }
     },
     {
       id: 'callout-induct-vs-hyper',
@@ -360,11 +420,41 @@ export const note_chemistry_1_5_4 = {
         text: 'When asked why a specific product is the major product of addition of HX to an unsymmetrical alkene, <strong>never just quote Markovnikov\'s Rule</strong> — most mark schemes award no marks for the rule alone.<br/><br/><strong>Model answer structure (5 marks):</strong><br/>1. State that H⁺ can add to C1 or C2, producing two possible carbocation intermediates.<br/>2. Identify which intermediate is <strong>secondary</strong> (or tertiary) and which is <strong>primary</strong>.<br/>3. State: "A secondary carbocation is more stable than a primary carbocation because alkyl groups donate electron density via the positive inductive effect, dispersing the positive charge over more atoms."<br/>4. State: "The more stable (secondary) intermediate is lower in energy, so it has a lower activation energy and forms faster."<br/>5. Conclude: "Therefore the product formed via the secondary carbocation is the major product."'
       },
       terms: ['Regioselectivity', 'Positive inductive effect']
+    },
+    {
+      id: 'checklist-markov',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'Describe the bromine water test for C=C: add Br₂(aq) in the dark — orange → colourless = C=C present', checked: false },
+          { text: 'State why the test must be done in the dark (UV causes radical substitution with alkanes — false positive)', checked: false },
+          { text: 'Write the equation for bromine addition across a C=C bond to form a dibromoalkane', checked: false },
+          { text: 'State Markovnikov\'s rule: H adds to the carbon with more H atoms; X adds to the more substituted carbon', checked: false },
+          { text: 'Explain why the major product forms via the more stable carbocation intermediate', checked: false },
+          { text: 'Classify a carbocation as 1°, 2° or 3° by counting C–C bonds to the positive carbon', checked: false },
+          { text: 'State the stability order: 3° > 2° > 1° carbocations', checked: false },
+          { text: 'Explain how alkyl groups stabilise carbocations (electron donation disperses positive charge)', checked: false },
+          { text: 'State that BOTH major and minor products always form (never say "only one product")', checked: false },
+          { text: 'Predict the major product of propene + HBr → 2-bromopropane (via secondary carbocation on C2)', checked: false },
+          { text: 'Predict the major product of but-1-ene + HBr → 2-bromobutane (via secondary carbocation on C2)', checked: false },
+          { text: 'Predict the major product of propene + H₂SO₄ → isopropyl hydrogensulphate (same Markovnikov logic)', checked: false },
+          { text: 'State that Markovnikov\'s rule does NOT apply to symmetrical reagents (e.g. Br₂) — both C get the same group', checked: false }
+        ]
+      }
+    },
+    {
+      id: 'summary-markov',
+      type: 'summary',
+      data: {
+        text: 'The bromine water test (orange → colourless in the dark) confirms a C=C double bond by electrophilic addition of Br₂ to form a dibromoalkane. For asymmetrical alkenes reacting with HX, Markovnikov\'s rule predicts the major product: H⁺ adds to the carbon with more H atoms, forming the more stable secondary (or tertiary) carbocation intermediate. Stability order 3° > 2° > 1° — more alkyl groups disperse positive charge and lower activation energy. Both major and minor products always form; never state only one product is possible.'
+      }
     }
   ],
   recall: {
     enabled: true,
     cues: [
+      { id: 'c0', blockId: 'list-bromine-test', prompt: 'Describe the bromine water test for C=C. What observation indicates an alkene is present? Why must the test be done in the dark?' },
+      { id: 'c0b', blockId: 'table-bromine-test', prompt: 'What is the observation when bromine water is added to an alkane? To an alkene? What does each result tell you?' },
       { id: 'c1', blockId: 'callout-markov', prompt: 'State Markovnikov\'s rule in your own words. Use propene + HBr as an example.' },
       { id: 'c2', blockId: 'table-stab', prompt: 'State the order of stability of carbocations from most to least stable.' },
       { id: 'c-svg-carb', blockId: 'svg-carb-types', prompt: 'Draw the structural formula of a primary, secondary and tertiary carbocation. How do you classify a carbocation as 1°, 2° or 3°?' },
@@ -376,7 +466,7 @@ export const note_chemistry_1_5_4 = {
       { id: 'c5', blockId: 'callout-sym-reagents', prompt: 'Does Markovnikov\'s rule apply to the addition of bromine to propene? Explain why.' },
       { id: 'c-but1ene', blockId: 'callout-but1ene-worked', prompt: 'But-1-ene reacts with HBr. Identify C1 and C2, state which carbocation is secondary and which is primary, and explain why 2-bromobutane is the major product.' }
     ],
-    summaryText: 'Markovnikov\'s rule: H adds to the carbon with more H attached (X adds to the more substituted C). Two competing pathways always operate: Path B (H to the more H-bearing C → secondary carb) gives the major product; Path A (H to the other C → primary carb) gives the minor product — both products form, but in very different amounts. For propene + HBr: major = 2-bromopropane (via 2° carb on C2), minor = 1-bromopropane (via 1° carb on C1). For but-1-ene + HBr: major = 2-bromobutane (H to C1 → 2° carb on C2). Stability order: tertiary > secondary > primary. Alkyl groups stabilise via +I effect / hyperconjugation. Major product forms via more stable carbocation (lower activation energy).',
+    summaryText: 'Bromine water test (orange → colourless in dark) confirms C=C by electrophilic addition. Markovnikov\'s rule: H adds to C with more H; X adds to more substituted C. Two competing pathways always operate: Path B (→ secondary carbocation) gives the major product; Path A (→ primary carbocation) gives the minor product — both form. Stability order: 3° > 2° > 1°. More alkyl groups disperse positive charge via +I effect / hyperconjugation → lower activation energy → major product. For propene + HBr: major = 2-bromopropane. For but-1-ene + HBr: major = 2-bromobutane.',
     ready: true
   },
   evidence: [

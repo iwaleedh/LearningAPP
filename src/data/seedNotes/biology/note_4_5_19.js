@@ -1,52 +1,52 @@
 export const note_biology_4_5_19 = {
-  noteId: 'biology:4:5:19',
   blocks: [
     {
-      type: 'objective',
-      id: 'obj-pop-dynamics',
-      data: {
-        text: 'Understand the biotic and abiotic factors that affect population size and distribution, and interpret predator-prey cycles.',
-      },
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Understand population dynamics, what factors determine population size, and predator-prey relationships." }
     },
     {
-      type: 'heading',
-      id: 'h-pop-factors',
-      data: { text: 'Factors Affecting Populations', level: 2 },
+      id: "h-pop",
+      type: "heading",
+      data: { text: "Factors Determining Population Size", level: 2 }
     },
     {
-      type: 'list',
-      id: 'list-abiotic',
+      id: "list-abiotic",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          '**Abiotic Factors**: Non-living environmental conditions. Examples include light intensity, temperature, water availability, soil pH, and oxygen concentration.',
-          '**Tolerance Limits**: Species have an optimal range for each abiotic factor. Extreme fluctuations cause physiological stress or death, restricting distribution.'
-        ],
-      },
+          "Abiotic factors: Non-living components such as light intensity, temperature, pH, water availability, and oxygen. Ideal abiotic factors require less energy for survival, leaving more energy for growth and reproduction, increasing population size."
+        ]
+      }
     },
     {
-      type: 'list',
-      id: 'list-biotic',
+      id: "list-biotic",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          '**Biotic Factors**: Living interactions affecting populations.',
-          '**Interspecific Competition**: Competition between different species for the same resources (food, light, space).',
-          '**Intraspecific Competition**: Competition between individuals of the same species. Often density-dependent (intense when population is high).',
-          '**Predation**: Predators limit prey populations, and prey numbers limit predator populations, often producing oscillating cycles.'
-        ],
-      },
+          "Interspecific competition: Competition between different species for the same resources. It leaves both populations smaller than if they were alone. The competitive exclusion principle states two species occupying identical niches cannot coexist.",
+          "Intraspecific competition: Competition within the same species for resources like food, mates, and territory. This causes population size to fluctuate around the carrying capacity.",
+          "Predation: The consumption of one organism by another."
+        ]
+      }
+    },
+    {
+      id: "callout-predator",
+      type: "callout",
+      data: { style: "key", title: "Predator-Prey Cycles", text: "Prey population rises → More food for predators → Predator population rises → Predators eat more prey → Prey population falls → Less food for predators → Predator population falls → Cycle repeats." }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', blockId: 'list-abiotic', prompt: 'Give three examples of abiotic factors.' },
-      { id: 'cue-2', blockId: 'list-biotic', prompt: 'What is the difference between interspecific and intraspecific competition?' }
+      { id: "cue-1", blockId: "list-abiotic", prompt: "Give three examples of abiotic factors that affect population size." },
+      { id: "cue-2", blockId: "list-biotic", prompt: "What is the difference between interspecific and intraspecific competition?" },
+      { id: "cue-3", blockId: "callout-predator", prompt: "Explain a typical predator-prey population cycle." }
     ],
-    summaryText: 'Populations are regulated by both abiotic factors (like temperature and light) and biotic factors (like competition, predation, and disease).',
-    ready: true,
+    summaryText: "Population size is regulated by abiotic factors (temperature, water) and biotic factors (competition, predation). Intraspecific competition is within a species, while interspecific is between different species. Predator-prey models oscillate rhythmically.",
+    ready: true
   },
-  evidence: [],
-  mentions: [],
+  evidence: []
 };

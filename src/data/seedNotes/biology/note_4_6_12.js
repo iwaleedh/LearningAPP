@@ -1,93 +1,67 @@
 export const note_biology_4_6_12 = {
   blocks: [
     {
-      id: 'obj-1',
-      type: 'objective',
-      data: { text: 'Understand the significance of Hospital Acquired Infections (HCAIs) and the protocols used to control their spread.' }
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Understand the codes of practice regarding antibiotic prescription and preventing hospital-acquired infections (HCAIs)." }
     },
     {
-      id: 'h-hcai',
-      type: 'heading',
-      data: { text: 'Hospital Acquired Infections (HCAIs)', level: 2 }
+      id: "h-prescription",
+      type: "heading",
+      data: { text: "Antibiotic Prescription Codes of Practice", level: 2 }
     },
     {
-      id: 'p-hcai',
-      type: 'paragraph',
-      data: { text: 'Hospital acquired infections (HCAIs) are infections that patients contract while receiving treatment in a medical facility. They are especially dangerous for the following reasons:' }
+      id: "p-intro",
+      type: "paragraph",
+      data: { text: "To slow the spread of antibiotic resistance, doctors follow strict guidelines when prescribing antibiotics." }
     },
     {
-      id: 'list-risk-factors',
-      type: 'list',
+      id: "list-prescribe",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          'Many patients are older or have weakened immune systems.',
-          'Surgical procedures or wounds provide direct entry points for pathogens.',
-          'Hospitals frequently use antibiotics, creating a selection pressure that favours highly resistant bacterial strains, such as MRSA.'
+          "Only prescribe when necessary: Do not give antibiotics for minor or viral infections.",
+          "Narrow-spectrum: Use specific, narrow-spectrum antibiotics based on a lab culture, rather than broad-spectrum antibiotics.",
+          "Complete the course: Patients must finish the full course to ensure all bacteria (even the slightly resistant ones) are killed.",
+          "Rotate antibiotics: Different antibiotics should be rotated to prevent a single resistance allele from becoming dominant.",
+          "Restrict agricultural use: Stop the prophylactic use of antibiotics in healthy farm livestock."
         ]
       }
     },
     {
-      id: 'h-transmission',
-      type: 'heading',
-      data: { text: 'Transmission and Contamination', level: 3 }
+      id: "h-hcai",
+      type: "heading",
+      data: { text: "Hospital Acquired Infections (HCAIs)", level: 2 }
     },
     {
-      id: 'p-transmission',
-      type: 'paragraph',
-      data: { text: 'Staff and visitors can inadvertently transmit pathogens by:' }
+      id: "p-hcai",
+      type: "paragraph",
+      data: { text: "HCAIs (like MRSA or C. difficile) are caught by patients while in a hospital. Hospitals are hotspots because many patients have weakened immune systems and are surrounded by diverse pathogenic flora/antibiotics." }
     },
     {
-      id: 'list-transmission',
-      type: 'list',
+      id: "list-prevention",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          'Not practicing adequate hand hygiene before touching patients or sterile surfaces.',
-          'Sneezing or coughing, releasing infectious aerosols into the environment.',
-          'Leaving contaminated medical equipment, bedding, or surfaces unsterilised.'
+          "Hand-washing: Strict hand hygiene regimens for staff between every patient using alcohol gel or soap.",
+          "Isolation: Placing infected patients in isolated wards to stop transmission.",
+          "Sterilization: Deep cleaning of wards, beds, and equipment.",
+          "Screening: Swabbing new patients for MRSA before they enter wards."
         ]
-      }
-    },
-    {
-      id: 'h-prevention',
-      type: 'heading',
-      data: { text: 'Infection Control Practices', level: 2 }
-    },
-    {
-      id: 'p-prevention',
-      type: 'paragraph',
-      data: { text: 'Stringent protocols are required to prevent the spread of MRSA and other HCAIs:' }
-    },
-    {
-      id: 'list-protocols',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '**Hand hygiene:** Staff must wash hands thoroughly between patient interactions and use alcohol-based hand gels.',
-          '**Clothing:** Specific dress codes are often enforced, banning items like long ties or watches which can trail over patients or surfaces.',
-          '**Isolation:** Patients testing positive for MRSA are isolated in specific wards, and visitors are heavily monitored or restricted.',
-          '**Sterilisation:** All bedding, surfaces, and non-disposable equipment must be actively disinfected to clear environmental reservoirs of the pathogen.'
-        ]
-      }
-    },
-    {
-      id: 'callout-mrsa',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Screening for MRSA',
-        text: 'New patients may be comprehensively screened for resistant bacteria upon admission. Doing this can ensure they are kept in isolation to control outbreaks before the patient begins exhibiting symptoms.'
       }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', prompt: 'Give three reasons why HCAIs are more prevalent in hospitals.' },
-      { id: 'cue-2', prompt: 'List three protocols used to control the spread of MRSA on hospital wards.' }
+      { id: "cue-1", blockId: "list-prescribe", prompt: "Why is it important for patients to finish their entire course of antibiotics?" },
+      { id: "cue-2", blockId: "list-prescribe", prompt: "Why should broad-spectrum antibiotics be avoided if a narrow-spectrum alternative exists?" },
+      { id: "cue-3", blockId: "list-prevention", prompt: "List three strategies hospitals use to prevent the spread of MRSA." }
     ],
-    summaryText: 'HCAIs are more common because patients often have weakened immune systems, possess open wounds/incisions for entry points, and the high antibiotic use creates a heavy selection pressure for resistant strains. Spread is controlled by strict hand washing between patients, isolating infected individuals, rigorous sterilisation of equipment and bedding, and restricting clothing items like ties or watches.'
-  }
+    summaryText: "Antibiotic resistance is slowed by avoiding viral prescriptions, using narrow-spectrum drugs, finishing the course, and restricting agricultural use. Hospital infections (HCAIs) are combated via strict hand-washing, isolating infected patients, and screening new arrivals.",
+    ready: true
+  },
+  evidence: []
 };

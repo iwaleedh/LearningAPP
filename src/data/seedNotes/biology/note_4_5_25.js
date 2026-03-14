@@ -1,82 +1,58 @@
 export const note_biology_4_5_25 = {
   blocks: [
     {
-      id: 'obj-25',
-      type: 'objective',
-      data: { text: 'Evaluate statements about climate change, understanding the causes of contentiousness, data reliability, and potential biases.' }
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Evaluate the contentious nature of evaluating data and communicating findings about climate change." }
     },
     {
-      id: 'h-contentious-intro',
-      type: 'heading',
-      data: { text: 'Scientific Consensus and Contention', level: 2 }
+      id: "h-data",
+      type: "heading",
+      data: { text: "Contentious Environmental Issues", level: 2 }
     },
     {
-      id: 'p-consensus',
-      type: 'paragraph',
-      data: { text: 'There is a strong consensus among the scientific community that increasing greenhouse gas concentrations cause global warming, and that human activities are the direct cause of these increases. Despite this, some individuals claim the correlation is not a causal relationship, suggesting global warming is just a natural cycle.' }
+      id: "p-intro",
+      type: "paragraph",
+      data: { text: "Data regarding climate change is often debated. Scientists rely on publishing findings in peer-reviewed scientific journals and presenting at scientific conferences to validate their work." }
     },
     {
-      id: 'h-evaluating-data',
-      type: 'heading',
-      data: { text: 'Evaluating the Data', level: 3 }
-    },
-    {
-      id: 'p-eval-data',
-      type: 'paragraph',
-      data: { text: 'When evaluating statements about climate change, consider how good the evidence is:' }
-    },
-    {
-      id: 'list-evaluating',
-      type: 'list',
+      id: "list-validation",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          '**Completeness:** Does the statement address all the evidence, or just part of it? (E.g. temperatures may drop in one specific year, but the long-term trend is strongly upward).',
-          '**Reliability:** Does the data come from several independent studies? Is there plenty of evidence?',
-          '**Statistical Significance:** Has proper statistical analysis been performed to show the findings are not just due to chance?'
+          "Peer Review: Before research is published, independent experts in the same field critically evaluate the data, methods, and conclusions to ensure it is robust, valid, and not biased.",
+          "Conferences: Let scientists present new data to their peers for instant debate and critique."
         ]
       }
     },
     {
-      id: 'h-bias',
-      type: 'heading',
-      data: { text: 'Identifying Bias', level: 3 }
+      id: "h-reasons",
+      type: "heading",
+      data: { text: "Why Climate Change is Contentious", level: 3 }
     },
     {
-      id: 'p-bias',
-      type: 'paragraph',
-      data: { text: 'It is vital to find out whether a statement comes from a trustworthy, unbiased source. Bias can arise from financial, political, or emotional interests:' }
-    },
-    {
-      id: 'list-bias-sources',
-      type: 'list',
+      id: "list-reasons",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          '**Financial/Political interests:** Individuals working for oil companies or governments whose economies depend on fossil fuels may be biased to lower the perceived threat of climate change.',
-          '**Green energy interests:** Individuals working for renewable energy companies might be biased because a move away from fossil fuels financially benefits their technologies.',
-          '**Emotional stakes:** Conservation campaigners may be biased because they passionately believe humans are causing climate change and have an emotional stake in the outcome of studies.'
+          "Lack of absolute certainty: Historical data (e.g., ice cores) are estimates, and extrapolation models cannot account for every future variable.",
+          "Economic interests: Industries like fossil fuels and aviation stand to lose money from strict climate regulations, so they may fund biased research or lobby governments to play down the risk.",
+          "Political agendas: Governments might minimize the threat of climate change to win votes, avoid expensive infrastructure changes, or protect domestic jobs in polluting sectors.",
+          "Complexity: Ecosystems are incredibly complex, and establishing a direct 100% causal link between one country's emissions and a specific weather event is incredibly difficult."
         ]
-      }
-    },
-    {
-      id: 'callout-complexity',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Climate Complexity',
-        text: 'Climate is highly complex. Scientists must be careful not to attribute one specific extreme weather event solely to climate change. Instead, they point out its place within a broader trend of increasingly extreme weather. Also, climate change is not expected to be purely linear; tipping points can cause sudden, faster changes.'
       }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', prompt: 'What does the general scientific consensus state about global warming?' },
-      { id: 'cue-2', prompt: 'Name three factors you should consider when evaluating climate change evidence.' },
-      { id: 'cue-3', prompt: 'Why might an oil company employee or a conservationist show bias in presenting climate data?' },
-      { id: 'cue-4', prompt: 'Why is it difficult to make exact predictions about future climate conditions?' }
+      { id: "cue-1", blockId: "list-validation", prompt: "Explain the role of peer review in validating scientific data." },
+      { id: "cue-2", blockId: "list-reasons", prompt: "State two reasons why conclusions on climate change data are often contentious." }
     ],
-    summaryText: 'The consensus is that human activities increase greenhouse gases, directly causing global warming. Evaluate completeness, reliability (independent studies), and statistical significance. Oil workers have financial interests to downplay effects, while conservationists have emotional stakes. Complexity and "tipping points" make precise predictions very difficult.'
-  }
+    summaryText: "Scientific claims are validated via peer review and conferences. However, climate change conclusions remain contentious due to predictive uncertainty, economic lobbying from fossil fuel industries, and political agendas protecting jobs.",
+    ready: true
+  },
+  evidence: []
 };

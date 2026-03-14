@@ -1,0 +1,604 @@
+Edexcel International A
+Level (IAL) Biology
+Cell Structure & Organisation
+Contents
+Cell Theory
+Levels of Organisation of Cells
+Eukaryotic Cells
+The Rough Endoplasmic Reticulum & Golgi
+Prokaryotic Cells
+Electron Microscopy of Animal Cells
+Microscopy: Magnification & Resolution
+Core Practical 5: Light MicroscopyYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Cell Theory
+The Cell as a Unit of Life
+Until microscopes became powerful enough to view individual cells, no-one knew for
+certain what living organisms were made from
+A scientist called Robert Hooke is thought to be the first person to view cells, using the
+term 'cell' to describe these newly discovered structures
+Matthias Schleiden and Theodor Schwann were two other scientists who studied animal
+and plant cells
+In 1837 they came up with the idea that all living organisms are made of cells
+This idea is known as ‘cell theory’
+The cell theory is a unifying concept in biology, meaning that it is universally
+accepted
+Cell theory includes three main ideas
+All living organisms are made up of one or more cells
+Cells are the basic functional unit in living organisms
+New cells are produced from pre-existing cells
+The cells of all living organisms share some common features
+Cell surface membrane
+Cytoplasm
+DNA
+Ribosomes
+Beyond these common features different cell types contain different structural
+elements and combinations of organelles, e.g.
+Prokaryotic cells have no internal membranes and smaller ribosomes
+Eukaryotic cells have several internal membrane-bound organelles and larger
+ribosomes
+When examined under a microscope it is possible to see the ultrastructure of different
+cell types
+Cell ultrastructure refers to the internal structures of the cellYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Levels of Organisation of Cells
+Multicellular Cell Organisation
+Cell theory states that cells are the basic functional unit of all living organisms
+Cells can become specialised for specific functions, e.g.
+Epithelial cells in the small intestine are specialised to absorb food efficiently
+Red blood cells are specialised to transport oxygen
+Xylem cells in plants are specialised to allow the transport of water around a plant
+In multicellular organisms specialised cells of the same type group together to
+form tissues
+A tissue is a group of cells that work together to perform aparticular function, e.g.
+Epithelial cells group together to form epithelial tissue the function of which, in
+the small intestine, is to absorb food
+Muscle cells group together to form muscle tissue, the function of which is to
+contract in order to move parts of the body
+Different tissues can group together to form organs
+An organ is a group of tissues working together to perform a particular function,
+e.g.
+Many different tissues, including cardiac muscle tissue, blood vessel tissues
+and connective tissue, group together to form the heart, enabling it to function
+to pump blood around the body
+Tissues including palisade mesophyll, spongy mesophyll, and vascular tissue,
+group together in plants to form leaves, enabling them to perform
+photosynthesis effectively
+Different organs work together to form organ systems
+An organ system is a group of organs working together to perform a particular
+function, e.g.
+The heart and blood vessels work together to form the circulatory system, the
+job of which is to allow blood to circulate around the body
+The stomach, pancreas, small intestine, and large intestine work together to
+form the digestive system, the job of which is to digest food and absorb
+nutrients
+Levels of Organisation TableYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+Examples of Specialised Cells and their Associated Tissues, Organs and Organ Systems
+Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Eukaryotic Cells
+Organelle Structures
+Cells can be divided into two broad types; eukaryotic and prokaryotic cells
+Eukaryotic cells have a more complex ultrastructure than prokaryotic cells
+The term ultrastructure refers to the internal structure of cells
+Eukaryotic cells are larger than prokaryotic cells
+Eukaryotic cells range in diameter from around 10−100 μ m
+Prokaryotic cells range in diameter from around 0.1−5 μ m
+The cytoplasm of eukaryotic cells is divided up into membrane-bound compartments
+called organelles
+Animal and plant cells are both types of eukaryotic cells that share key structures such
+as
+Membrane-bound organelles, including a nucleus
+Larger ribosomes known as 80S ribosomes
+Key differences between animal and plant cells include
+Animal cells contain centrioles and some have microvilli while plant cells do not
+Microvilli are folded regions of the cell surface membrane that increase cell
+surface area for absorption, e.g. in the small intestine
+Plant cells have a cellulose cell wall, large permanent vacuoles, and chloroplasts
+while animal cells do notYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+Animal cells are a type of eukaryotic cell
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+Plant cells are eukaryotic cells that have a cellulose cell wall, permanent vacuole, and
+chroroplasts
+Organelle Functions
+Cell surface membrane
+All cells are surrounded by a cell surface membrane which controls the exchange of
+materials between the internal cell environment and the external environment
+The membrane is described as being partially permeable, meaning that some
+substances can pass through the membrane while others cannot
+Cell membrane is formed from a phospholipid bilayer spanning a diameter of around 10
+nm
+Many organelles inside cells are surrounded by cell membrane, so when referring to the
+outer membrane of a cell it is always a good idea to refer to it as the cell surface
+membrane
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+The cell surface membrane can also be referred to as the plasma membrane
+The cell surface membrane surrounds the cell, separating it from its external environment
+Nucleus
+Present in all eukaryotic cells, the nucleus is relatively large and separated from the
+cytoplasm by a double membrane called the nuclear envelope, which has many pores
+Nuclear pores are important channels for allowing mRNA and ribosomes to travel
+out of the nucleus, as well as allowing enzymes, e.g. DNA polymerases, and
+signalling molecules to travel in
+The nucleus contains chromatin, the material from which chromosomes are made
+Chromosomes are made of sections of linear DNA tightly wound around proteins
+called histones
+Usually, at least one or more darkly stained regions of the nucleus can be observed
+under a microscope; these regions are individually termed nucleolus (plural nucleoli) and
+are the sites of ribosome production
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+The nucleus of a eukaryotic cell is surrounded by the nuclear envelope and contains
+chromatin as well as a region called the nucleolus. Note that the nucleus is shown here
+surrounded by another organelle; the endoplasmic reticulum
+Mitochondria
+The site of aerobicrespiration within eukaryotic cells, mitochondria (singular
+mitochondrion) are just visible with a light microscope
+Mitochondria are surrounded by a double-membrane with the inner membrane folded
+to form structures called cristae
+The matrix of mitochondria contains enzymes needed for aerobic
+respiration, producing ATP
+Small circular pieces of DNA, known asmitochondrial DNA, and ribosomes are also
+found in the matrix
+These are needed for replication of mitochondria before cell division
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Mitochondria are the site of aerobic respiration in eukaryotic cells
+Ribosomes
+Ribosomes can be found as free organelles in the cytoplasm of all cells or as part of
+the rough endoplasmic reticulum in eukaryotic cells
+They are not surrounded by a membrane
+Each ribosome is a complex of ribosomal RNA (rRNA) and proteins
+80s ribosomes are found in eukaryotic cells
+70s ribosomes are found in prokaryotes, mitochondria, and chloroplasts
+Ribosomes are the site of translation
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+Ribosomes are formed in the nucleolus and are composed of almost equal amounts of
+RNA and protein
+Endoplasmic reticulum
+There are two types of endoplasmic reticulum; rough and smooth
+Rough Endoplasmic Reticulum (RER)
+RER is formed from folds of membrane continuous with the nuclear envelope
+The surface of RER is covered in ribosomes
+The role of the RER is to process proteins made on theribosomes
+Smooth Endoplasmic Reticulum (SER)
+SER is also formed from folds of membrane but its function is distinct from the RER,
+being involved in the production, processing and storage of lipids,
+carbohydrates and steroids
+SER does not have ribosomes on its surface 
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+The RER and SER are visible under the electron microscope; the presence or absence of
+ribosomes helps to distinguish between them
+Golgi apparatus
+The Golgi apparatus consists of flattened sacs of membrane similar in appearance to
+the smooth endoplasmic reticulum
+The Golgi apparatus is sometimes known as the Golgi body
+The Golgi can be distinguished from the SER by its regular, stacked appearance; it
+can be described as looking like a wifi symbol!
+The role of the Golgi apparatus is to modify proteins and lipids before packaging them
+into Golgi vesicles
+The vesicles then transport the proteins and lipids to their required destination
+Proteins that go through the Golgi apparatus can be
+Exported from the cell, e.g. hormones such as insulin
+Put into lysosomes, e.g. hydrolytic enzymes
+Delivered to other membrane-bound organelles
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+The Golgi apparatus; the cis face lies near the rough endoplasmic reticulum, while the
+trans face lies near the cell membrane
+Lysosomes
+Lysosomes are specialist forms of vesicle which contain hydrolytic enzymes
+The role of lysosomes is to break down waste materials such as worn-out organelles,
+Lysosomes are used extensively by cells of the immune system and in programmed
+cell death, known as apoptosis
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+Lysosomes contain digestive enzymes
+Centrioles
+Centrioles are made of hollow fibres knows as microtubules
+Microtubules are filaments of protein that can be used to move substances around
+inside a cell, as well as to support the shape of a cell from the inside
+Two centrioles at right angles to each other form a centrosome which organises the
+spindle fibres during cell division
+Centrioles are not found in plants and fungi
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+Centrioles are structures formed from microtubules; they are involved with the process
+of nuclear division in animal cells
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+The Rough Endoplasmic Reticulum & Golgi
+Formation of Extracellular Enzymes
+In cells, many organelles are involved in the production and secretion of proteins
+Organelles are specialised parts of a cell that carry out a particular function
+Some organelles are membrane-bound, meaning that they are surrounded by
+membrane
+The organelles involved in protein synthesis include
+Nucleus
+Transcription of the DNA code occurs here
+Ribosomes
+Free ribosomes and those on the RER produce proteins in the process of
+translation
+Rough endoplasmic reticulum (RER)
+Golgi apparatus
+Cell surface membrane
+Proteins formed within the cell are secreted here
+Rough endoplasmic reticulum
+Ribosomes on the RER produce proteins that can be secreted out of the cell or become
+attached to the cell surface membrane
+Proteins that have been passed into the lumen of the rough endoplasmic reticulum are
+folded and processed here
+The term lumen refers to the inside space of the RER
+Note that free ribosomes found within the cytoplasm make proteins that stay within the
+cytoplasm rather than being moved to another organelle or being exported from the cell
+Golgi apparatus 
+Processed proteins from the RER are transported to the Golgi apparatus in vesicles
+which fuse with the Golgi apparatus, releasing the proteins into the Golgi
+The Golgi apparatus modifies the proteins, preparing them for secretion
+Proteins that go through the Golgi apparatus are usually
+Exported, e.g. extracellular enzymes
+The term extracellular refers to 'outside the cell'
+Put into lysosomes, e.g. hydrolytic enzymesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Delivered to other membrane-bound organelles
+The modified proteins then leave the Golgi apparatus in vesicles
+The RER and Golgi apparatus are involved with producing, packaging and transporting
+proteins in a cell. This process can be used to produce and export extracellular enzymes.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+Prokaryotic Cells
+Cell Components: Structures
+Animal and plant cells are types of eukaryoticcells, whereas bacteria are a type
+of prokaryote
+Prokaryotic cells are much smaller than eukaryotic cells 
+They also differ from eukaryotic cells in having
+A cytoplasm that lacks membrane-bound organelles
+Ribosomes that are smaller (70 S) than those found in eukaryotic cells (80 S)
+No nucleus, instead having a single circular bacterial chromosome that is free in
+the cytoplasm and is not associated with proteins
+A cell wall that contains the glycoprotein murein
+Murein is sometimes known as peptidoglycan
+In addition, many prokaryotic cells also have the following structures
+Loops of DNA known as plasmids
+Capsules
+Flagella (singular flagellum)
+Pili (singular pilus)
+A cell membrane that contains folds known as mesosomesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+Bacteria are prokaryotic cells
+Prokaryotes vs eukaryotes
+There are a number of important structural and physiological differences between
+prokaryotic and eukaryotic cells
+These differences affect their metabolic processes and how they reproduce
+Comparison of Prokaryotic and Eukaryotic Cells Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Cell Components: Functions
+The ultrastructure of prokaryotic cells includes several features that are not found in
+eukaryotic cells, e.g.
+Plasmids
+Capsule
+Flagella
+Pili
+Mesosomes
+Circular DNA
+Examiner Tips and Tricks
+You will need to know all the differences between prokaryotic and eukaryotic cells;
+remember that not all of the structures mentioned here are present in all prokaryotic
+cells
+Remember that size is not a structural feature so if you are asked for a structural
+difference between a prokaryotic and eukaryotic cell don't include size in your
+answer.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+Ribosomes
+Some of these features are found in all prokaryotes, while some are only present in some
+Additional Prokaryotic Structures Table
+Examiner Tips and Tricks
+Note that the specification does not include the role of mesosomes in prokaryotic
+cells.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+Electron Microscopy of Animal Cells
+Electron Microscopy of Animal Cells
+Organelles under the electron microscope
+There are two types of electron microscope
+Transmission electron microscopes (TEMs)
+Scanning electron microscopes (SEMs)
+Transmission Electron Microscopes 
+TEMs use electromagnets to focus a beam of electrons
+This beam of electrons is transmitted through a thin specimen
+Denser parts of the specimen absorb more electrons; these denser parts appear
+darker on the final image, producing contrast between different parts of the object
+being observed
+The internal structures within cells, or even within organelles can be seen as a 2D
+image
+The resolution of these images is very high
+Scanning Electron Microscopes
+SEMs scan a beam of electrons across a specimen
+This beam bounces off the surface of the specimen and the electrons are
+detected, forming an image
+This means SEMs can produce 3D images that show the surface of specimens
+Since they scan the outside surface it means that the specimen viewed does not
+have to be thin
+The images they form are of a lower resolution than TEMsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+A stained TEM microscope of the nucleus. It is clear this is a TEM micrograph as the image
+is 2D and in high resolution; the inside of the nucleus would not be clear to view at low
+resolution.
+A stained TEM micrograph of a mitochondrion. It is clear this is a TEM micrograph as the
+image is 2D and in high resolution; the inside of a mitochondrion would not be clear to
+view at low resolution.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+A SEM of a spiracle (part of an insect). You can tell this is a SEM micrograph as the image is
+3D.
+Cell organelles can be identified in a micrograph produced using a TEM
+Examiner Tips and TricksYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+You need to be able to recognise organelles from electron microscope images; cells
+in real life are not always as easy to observe as cells in diagrams, so be sure to get
+practice at looking at electron micrographs of cells
+Generally, if you can see internal structures the image would have been taken with a
+TEM and if the image appears 3D then an SEM would have been used.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+Microscopy: Magnification & Resolution
+Magnification & Resolution
+Magnification
+Magnification is how many times bigger the image of a specimen observed is in
+comparison to the actual, real-life size of the specimen
+A light microscope has two types of lens
+An eyepiece lens which often has a magnification of x10
+A series of, usually 3, objective lenses, each with a different magnification
+To calculate the total magnification, the magnification of the eyepiece lens and the
+objective lens are multiplied together
+total magnification = eyepiece lens magnification x objective lens magnification
+Resolution
+Resolution, or resolving power, is the ability to distinguish between two separate points
+If two separate points cannot be resolved, they will be observed as one point and
+the image will be unclear
+The resolution of a microscope limits the magnification that it is capable of; there is no
+point in magnifying an image at low resolution as this will just result in a big blur rather
+than a small blur!
+The resolution of a light microscope is limited by the wavelength of light; the
+wavelength of light is too long to allow for high resolution
+E.g. the phospholipid bilayer structure of the cell membrane cannot be observed
+under a light microscope
+The width of the phospholipid bilayer is about 10 nm
+The maximum resolution of a light microscope is 200 nm 
+Any points that are separated by a distance less than 200 nm cannot be
+resolved by a light microscope and therefore will not be distinguishable as
+separate points on an image
+Electron microscopes have a much higher resolution, and therefore magnification, than
+a light microscope as electrons have a much smaller wavelength than visible lightYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+The resolving power of an electron microscope is much greater than that of the light
+microscope due to the smaller wavelength of electrons
+Comparing electron & light microscopes
+Light microscopes are used for specimens larger than 200 nm
+Light microscopes shine light through the specimen
+The specimens can be living, and therefore can be moving, or dead
+Light microscopes are useful for looking at whole cells, small plant and animal
+organisms, and tissues within organs such as in leaves or skin
+Electron microscopes, both scanning and transmission, are used for specimens larger
+than 0.5 nm
+Electron microscopes fire a beam of electrons at the specimen
+The electrons are picked up by an electromagnetic lens which then shows the image
+Electron microscopy requires the specimen to be dead; this can provide a snapshot
+in time of what is occurring in a cell, e.g. DNA can be seen replicating and
+chromosome position within the stages of mitosis are visible
+Electron microscopes are useful for looking at organelles, viruses, and DNA, as well
+as looking at whole cells in more detail
+Light v Electron Microscope Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+Staining Specimens
+Specimens to be viewed under a microscope sometimes need to be stained, as the
+cytoplasm and other cell structures may be transparent or difficult to distinguish
+Note that most of the colours seen inimages taken using a light microscope are the
+result of added stains
+Chloroplasts are the exception to this; they show up green, which is their natural
+colour
+The type of stain used is dependent on what type of specimen is being prepared and
+what the researcher wants to observe within the specimen
+Different molecules absorb different dyes depending on their chemical nature
+Specimens or sections are sometimes stained with multiple dyes to ensure that several
+different tissues within the specimen show up; this is known as differential staining
+Some common stains include
+Haemotoxylin
+Stains plant and animal cell nuclei purple, brown or blue
+Methylene blue
+Stains animal cell nuclei blue
+Acetocarmine
+Stains chromosomes in dividing nuclei of plant and animal cells
+Iodine
+Stains starch-containing material in plant cells blue-black
+Toluidine blue 
+Stains tissues that contain DNA and RNA blue
+Phloroglucinol
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+Stains a chemical called lignin found in some plant cells red/pink
+Toluidine blue and phloroglucinol have been used to stain this tissue specimen taken from
+a leaf
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+Core Practical 5: Light Microscopy
+Microscope Images
+Many biological structures are too small to be seen by the naked eye
+Optical, or light, microscopes are an invaluable tool for scientists as they allow for
+tissues, cells and organelles to be seen and studied
+Light is directed through a thin layer of biological material that is supported on a
+glass slide
+This light is focused through several lenses so that an image is visible through the
+eyepiece
+The magnifying power of the microscope can be increased by rotating the higher
+power objective lens into place
+Preparation of microscope slides
+The key components of an optical microscope are
+The eyepiece lens
+The objective lenses
+The stage
+The light source
+The coarse and fine focus
+Other tools that may be used
+Forceps
+Scissors
+Scalpel
+Coverslip
+Slides
+Pipette
+Staining solutionYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+The components of an optical microscope
+Method
+Preparing a slide using a liquid specimen
+Add a few drops of the sample to the slide using a pipette
+Cover the liquid / smear with a coverslip and gently press down to remove air
+bubbles
+Wear gloves to ensure there is no cross-contamination of foreign cells
+Methods of preparing a microscope slide using a solid specimen
+Take care when using sharp objects and wear gloves to prevent the stain from dying
+your skin
+Use scissors or a scalpel to cut a small sample of the tissue
+Use forceps to peel away or cut a very thin layer of cells from the tissue sample to
+be placed on the slide 
+The tissue needs to be thin so that the light from the microscope can pass
+through
+Apply a stain to make cells more visible
+Gently place a coverslip on top and press down to remove any air bubbles
+Some tissue samples need to be treated with chemicals to kill cells or make the tissue
+rigid
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31
+This involves fixing the specimen using the preservative formaldehyde, dehydrating
+it using a series of ethanol solutions, impregnating it with paraffin or resin for
+support and then cutting thin slices from the specimen
+The paraffin is removed from the slices and a stain is applied before the specimen is
+mounted and a coverslip is applied
+Slide Preparation Table
+Using a microscope
+When using an optical microscope always start with the low power objective lens
+It is easier to find what you are looking for in the field of view
+This helps to prevent damage to the lens or coverslip in case the stage has been
+raised too high
+Preventing the dehydration of tissue
+The thin layers of material placed on slides can dry up rapidly
+Adding a drop of water to the specimen beneath the coverslip can prevent the cells
+from being damaged by dehydration
+Unclear or blurry images
+Switch to the lower power objective lens and try using the coarse focus to get a
+clearer image
+Consider whether the specimen sample is thin enough for light to pass through to
+see the structures clearly
+There could be cross-contamination with foreign cells or bodies
+Limitations
+The size of cells or structures of tissues may appear inconsistent in different specimen
+slides
+Cell structures are 3D and the different tissue samples will have been cut at
+different planes resulting in this inconsistencies when viewed on a 2D slide
+Optical microscopes do not have the same magnification power as other types of
+microscopes and so there are some structures that cannot be seen
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 32
+The treatment of specimens when preparing slides could alter the structure of cells
+Drawing cells
+To record the observations seen under the microscope, or from photomicrographs
+taken, a labelled biological drawing is often made
+Biological drawings are line drawings that show specific features that have been
+observed when the specimen was viewed
+There are a number of rules or conventions that are followed when making a biological
+drawing
+The drawing must have a title
+The magnification under which the observations shown by the drawing are made
+must be recorded
+A sharp pencil should be used 
+Drawings should be on plain white paper
+Lines should be clear, singlelines with no sketching
+No shading
+The drawing should take up as much of the space on the page as possible
+Well-defined structures should be drawn
+The drawing should be made with proper proportions
+Label lines should not cross or have arrowheads and should connect directly to the
+part of the drawing being labelled
+Label lines should ideally be kept to one side of the drawing in parallel to the top of
+the page, and should be drawn with a ruler
+Only visible structures should be drawn; not structures that the viewer thinks they
+should be able to see!
+Drawings of cells are typically made when visualizing cells at a higher magnification
+powerYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 33
+An example of a cellular drawing taken from a high-power image of phloem tissue
+Plan drawings that show the arrangement of cells within a tissue or organ are typically
+made using samples viewed under lower magnifications
+Individual cells are never drawn in a plan diagram
+An example of a tissue plan diagram drawn from a low-power image of a transverse
+section of a root. Note that there is no cell detail present.
+Measurements of Microscopic Images
+Magnification is how many times bigger the image of a specimen observed is in
+comparison to the actual, real-life size of the specimen
+A light microscope has two types of lens:
+An eyepiece lens, which often has a magnification of x10
+A series of (usually 3) objective lenses, each with a different magnification
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 34
+To calculate the total magnification, the magnification of the eyepiece lens and
+the objective lens are multiplied together:
+total magnification = eyepiece lens magnification x objective lens magnification
+The magnification (M) of an object can also be calculated if both the size of the image (I),
+and the actual size of the specimen (A), is known
+magnification = image size ÷  actual size
+Remember to ensure that the image size (I) and the actual size (A) of the specimen have
+the same units before doing the calculation
+The equation for calculating magnification can be rearranged to calculate either actual
+size, image size, or magnification.
+Worked Example
+An image of an animal cell is 30 mm in diameter and it has been magnified by a factor
+of  x3000.
+What is the actual diameter of the cell?
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 35
+Using an eyepiece graticule & stage micrometer
+A graticule is a small disc that has an engraved ruler
+It can be placed into the eyepiece of a microscope to act as a ruler in the field of view, so
+is sometimes known as an eyepiece graticule
+As an eyepiece graticule has no fixed units it must be calibrated for the objective lens
+that is in use
+The graticule in the eyepiece remains the same size when the magnification of the
+microscope is altered, so recalibration is needed at each viewing magnification
+Calibration of the eyepiece graticule is done a microscope slide with an engraved scale
+known as a stage micrometer
+By using the eyepiece graticule and the stage micrometer together, the size of each
+graticule unit can be calculated
+After this is known the graticule can be used as a ruler to measure objects in the field
+of view
+The stage micrometer scale is used to find out how many micrometers each eyepiece
+graticule unit represents
+Worked Example
+Calculate the size of the units of the eyepiece graticule in the image below.
+Note that the large divisions in the top half of the image show the stage micrometer
+and that each stage micrometer division is 1 mm across. Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 36
+Answer:
+Step 1: Observe the number of eyepiece unit divisions per micrometer unit
+In the image, the stage micrometer has three lines
+Each micrometer division has 40 eyepiece graticule divisions within it
+Step 2: Calculate the size of each eyepiece graticule unit
+40 graticule divisions = 1 mm (1000 µm)
+1 graticule unit = 1000 ÷ 40 = 25 µm
+An object that spanned five eyepiece graticule units could therefore be
+measured as follows
+5 x 25 µm = 125 µm
+Examiner Tips and Tricks
+The biggest pitfall with these kinds of calculations is forgetting to convert the units so
+that they match before embarking on a calculation. E.g. if image size is measured in
+mm but the actual size of an object is given in µm then both need to be converted into
+µm before using the equation triangle above.
+To convert a measurement from mm into µm the measurement must be multiplied by
+1000 (there are 1000 µm in 1 mm).Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 37

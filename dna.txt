@@ -1,0 +1,313 @@
+Edexcel International A
+Level (IAL) Biology
+DNA & Gene Expression
+Contents
+DNA Replication
+The Nature of the Genetic Code
+How Bases Code for a Polypeptide Chain
+Transcription & TranslationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+
+DNA Replication
+DNA Replication
+Before a (parent) cell divides, it needs to copy the DNA contained within it
+Doubling the DNA ensures that the two new (daughter) cells produced will both
+receive full copies of the parental DNA
+The DNA is copied via a process known as semi-conservative replication (semi = half)
+The process is called this because in each new DNA molecule produced, one of the
+polynucleotide DNA strands (half of the new DNA molecule) is from the original
+DNA molecule being copied
+The other polynucleotide DNA strand (the other half of the new DNA molecule) has to
+be newly created by the cell
+Therefore, the new DNA molecule has conserved half of the original DNA and then
+used this to create a new strand
+The importance of retaining one original DNA strand
+It ensures there is genetic continuity between generations of cells
+In other words, it ensures that the new cells produced during cell division inherit all their
+genes from their parent cells
+This is important because cells in our body are replaced regularly and therefore we need
+the new cells to be able to do the same role as the old ones
+Replication of DNA and cell division also occurs during growthYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+
+Semi conservative replication of DNA
+Semi-conservative replication
+DNA replication occurs in preparation for mitosis, the number of DNA molecules in the
+parent cell must be doubled before mitosis takes place
+DNA replication occurs during the S phase of the cell cycle (which occurs
+during interphase, when a cell is not dividing)
+The enzyme helicaseunwinds the DNA double helix by breaking the hydrogen
+bonds between the base pairs on the two antiparallel polynucleotide DNA strands to
+form two single polynucleotide DNA strands
+Each of these single polynucleotide DNA strands acts as a template for the formation of
+a new strand made from free nucleotides that are attracted to the exposed DNA bases
+by base pairing
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+
+The new nucleotides are then joined together by the enzymeDNA polymerase
+The original strand and the new strand join together through hydrogen bonding between
+base pairs to form the new DNA molecule
+This method of replicating DNA is known as semi-conservative replication because half
+of the original DNA molecule is kept (conserved) in each of the two new DNA molecules
+DNA Polymerase
+In the nucleus, there are free nucleotides which contain three phosphate groups
+These nucleotides are known as nucleoside triphosphates or ‘activated
+nucleotides’
+The extra phosphates activate the nucleotides, enabling them to take part in DNA
+replication
+The bases of the free nucleoside triphosphates align with their complementary
+bases on each of the template DNA strands
+The enzyme DNA polymerasesynthesises new DNA strands from the two template
+strands
+It does this by catalysing condensation reactions between the deoxyribose sugar and
+phosphate groups of adjacent nucleotides within the new strands, creating the sugar-
+phosphate backbone of the new DNA strands
+DNA polymerase cleaves (breaks off) the two extra phosphates and uses the energy
+released to create the phosphodiester bonds (between adjacent nucleotides)
+Hydrogen bonds then form between the complementary base pairs of the template
+and new DNA strandsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+
+Nucleotides are bonded together by DNA polymerase to create the new complementary
+DNA strands
+Leading & lagging strands
+DNA polymerasecan only build the new strand in one direction (5’ to 3’ direction)
+As DNA is ‘unzipped’ from the 3’ towards the 5’ end, DNA polymerase will attach to the 3’
+end of the original strand and move towards the replication fork (the point at which the
+DNA molecule is splitting into two template strands)
+This means the DNA polymerase enzyme can synthesise the leading strand continuously
+This template strand that the DNA polymerase attaches to is known as the leading
+strand
+The other template strand created during DNA replication is known as the lagging strand
+On this strand, DNA polymerase moves away from the replication fork (from the 5’ end
+to the 3’ end)
+This means the DNA polymerase enzyme can only synthesise the lagging DNA strand
+in short segments (called Okazaki fragments)
+A second enzyme known as DNA ligase is needed to join these lagging strand segments
+together to form a continuous complementary DNA strand
+DNA ligase does this by catalysing the formation of phosphodiester bonds between the
+segments to create a continuous sugar-phosphate backboneYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+
+The synthesis of the complimentary strand occurs differently on the leading and lagging
+strands of DNA
+Evidence for Semi-Conservative
+Replication
+Scientists were unsure if DNA replication was conservative or semi-conservative
+Two scientists called Matthew Meselson and Franklin Stahl, showed that DNA
+replication was semi-conservative by experimenting with isotopes of nitrogen
+Meselson and Stahl's Experiment
+Bacteria were grown in a broth containing the heavy(N) nitrogen isotope
+DNA contains nitrogen in its bases
+15Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+
+As the bacteria replicated, they used nitrogen from the broth to make new DNA
+nucleotides
+After some time, the culture of bacteria had DNA containing only heavy
+(N) nitrogen
+A sample of DNA from the N culture of bacteria was extracted and spun in a centrifuge
+This showed that the DNA containing the heavy nitrogen settled near the bottom of
+the centrifuge tube
+The bacteria containing only N DNA were then taken out of the N broth and added to a
+broth containing only the lighter N nitrogen. The bacteria were left for enough time
+for one round of DNA replication to occur before their DNA was extracted and spun in a
+centrifuge
+If conservative DNA replication had occurred, the original template DNA molecules
+would only contain the heavier nitrogen and would settle at the bottom of the tube,
+whilst the new DNA molecules would only contain the lighter nitrogen and would
+settle at the top of the tube
+If semi-conservative replication had occurred, all the DNA molecules would now
+contain both the heavy N and light N nitrogen and would therefore settle in
+the middle of the tube (one strand of each DNA molecule would be from the original
+DNA containing the heavier nitrogen and the other (new) strand would be made
+using only the lighter nitrogen)
+Meselson and Stahl confirmed that the bacterial DNA had undergone semi-
+conservative replication.
+The DNA from this second round of centrifugation settled in the middle of the tube,
+showing that each DNA molecule contained a mixture of the heavier and lighter
+nitrogen isotopes
+If more rounds of replication were allowed to take place, the ratio of N:N would
+go from 1:1 after the first round of replication, to 3:1 after the second and 7:1 after the
+third15
+15
+15 15
+14
+15 14
+1514Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+
+Meselson and Stahl's experiment that showed bacterial DNA replicated via semi-
+conservative DNA replication
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+
+The Nature of the Genetic Code
+The Nature of the Genetic Code
+The triplet code
+The sequence of DNA nucleotide bases found within a gene is determined by
+a triplet (three-letter) code
+Each sequence of three bases (i.e. each triplet of bases) in a gene codes for one amino
+acid
+These triplets codes for different amino acids – there are 20 different amino acids that
+cells use to make up different proteins
+For example:
+CAG codes for the amino acid valine
+TTC codes for the amino acid lysine
+GAC codes for the amino acid leucine
+CCG codes for the amino acid glycine
+Some of these triplets of bases code for start (AUG – methionine) and stop signals
+These start and stop signals tell the cell where individual genes start and stop
+As a result, the cell reads the DNA correctly and produces the correct sequences of
+amino acids (and therefore the correct protein molecules) that it requires to function
+properly
+The genetic code is non-overlapping
+The non-overlapping nature of the genetic code means that each base is only read
+once
+The adjacent codons do not overlap
+A non-overlapping code means that the same letter is not used for two different
+codons; in other words, no single base can take part in the formation of more than one
+codon
+The genetic code is degenerate
+There are four bases, so there are 64 different codons (triplets) possible (4= 64), yet
+there are only 20 amino acids that commonly occur in biological proteins
+This is why the code is said to be degenerate: multiple codons can code for the
+same amino acids
+The degenerate nature of the genetic code can limit the effect of mutations3 Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+
+The mRNA codons and their amino acids, showing the degenerate nature of the genetic
+code
+The genetic code is universal
+The genetic code is also universal, meaning that almost every organism uses the same
+code (there are a few rare and minor exceptions)
+The same triplet codes code for the same amino acids in all living things (meaning that
+genetic information is transferable between species)
+The universal nature of the genetic code is why genetic engineering (the transfer of
+genes from one species to another) is possible
+Examiner Tips and Tricks
+You will not be required to memorise specific codons and the amino acids for which
+they code.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+
+How Bases Code for a Polypeptide Chain
+Crick's Central Dogma
+A gene is a sequence of nucleotides that forms part of a DNA molecule (one DNA
+molecule contains many genes)
+This sequence of nucleotides (the gene) codes for the production of a specific
+polypeptide (protein)
+Protein molecules are made up of a series of amino acids bonded together
+The shape and behaviour of a protein molecule depends on the exact sequence of
+these amino acids (the initial sequence of amino acids is known as the primary
+structure of the protein molecule)
+The genes in DNA molecules, therefore, control protein structure (and as a result,
+protein function) as they determine the exact sequence in which the amino acids join
+together when proteins are synthesised in a cell
+A gene is a sequence of nucleotides that codes for the production of a specific protein
+molecule (polypeptide)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+
+Transcription & Translation
+Transcription
+A gene is a sequence of nucleotide bases in a DNA molecule that codes for the
+production of a specific sequence of amino acids, that in turn make up a specific
+polypeptide (protein)
+This process of protein synthesis occurs in two stages:
+Transcription – DNA is transcribed and an mRNA (messenger RNA)molecule is
+produced
+Translation – mRNA is translated and an amino acid sequence is produced
+mRNA is a single-stranded molecule made up of many RNA nucleotides joined
+together
+The role of mRNA is to carry the information encoded in the DNA from the
+nucleus to the site of translation on ribosomes
+The process of transcription
+This stage of protein synthesis occurs in the nucleus of the cell
+Part of a DNA molecule unwinds and the hydrogen bonds between the complementary
+base pairs break
+This exposes the gene to be transcribed (the gene from which a particular polypeptide
+will be produced)
+A complimentary copy of the code from the gene is made by building a single-
+stranded nucleic acid molecule known as mRNA
+This reaction is catalysed by RNA polymerase
+Free activated RNA nucleotides pair up, via hydrogen bonds, with
+their complementary bases on the exposed strand of the ‘unzipped’ DNA molecule
+The sugar-phosphate groups of these RNA nucleotides are then bonded together in a
+reaction catalysed by the enzyme RNA polymerase to form the sugar-phosphate
+backbone of the mRNA molecule
+When the gene has been transcribed and the mRNA molecule is complete, the hydrogen
+bonds between the mRNA and DNA strands break and the double-stranded DNA
+molecule reforms
+The mRNA molecule then leaves the nucleus via a pore in the nuclear envelopeYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+
+The transcription stage of protein synthesis - DNA is transcribed and an mRNA molecule is
+produced
+Anti-sense and sense strands
+In the transcription stage of protein synthesis, free RNA nucleotides pair up with the
+exposed bases on the DNA molecule
+RNA nucleotides only pair with the bases on one strand of the DNA molecule
+This strand of the DNA molecule is known as the antisense or template strand (or
+the transcribed strand) and it is used to produce the mRNA molecule
+The other strand is known as the sense or coding strand (or the non-
+template or non-transcribed strand)
+RNA polymerase moves along the template strand in the 3' to 5' direction
+This means that the mRNA molecule grows in the 5' to 3' direction
+Because the mRNA is formed by complementary pairing with the DNA template strand,
+the mRNA molecule contains the exact same sequence of nucleotides as the
+DNA coding strand (although the mRNA will contain uracil instead of thymine)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+
+The antisense strand of DNA is the one that is transcribed into mRNA
+Translation
+Translation occurs in the cytoplasm of the cell
+After leaving the nucleus via a nuclear pore, the mRNA molecule attaches to a ribosome
+In the cytoplasm there are free molecules of tRNA (transfer RNA)
+tRNA is a single stranded molecule of RNA that folds into a clover-like structure
+tRNA molecules have a triplet of unpaired bases at one end, known as
+the anticodon, and a region at the other end where a specific amino acid can attach
+There are about 20 different tRNA molecules, each with a specific
+anticodon and specific amino acid binding site
+Examiner Tips and Tricks
+Be careful – DNA polymerase is the enzyme involved in DNA
+replication; RNA polymerase is the enzyme involved in transcription – don’t get these
+confused.
+Note the use of sense and anti-sense strands in transcription can be replaced with
+non-transcribed and transcribed/template strands respectively.
+The mRNA strand will have the same base sequence as the sense
+strand except on RNA the base Uracil replaces Thymine from the DNA strand.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+
+The tRNA molecules bind with their specific amino acids (also in the cytoplasm) and
+bring them to the mRNA molecule on the ribosome
+The triplet of bases (anticodon) on each tRNA molecule pairs with a complementary
+triplet on the mRNA molecule called the codon
+Near the beginning of the mRNA is a triplet of bases called the start codon (AUG)
+This is a signal to start off translation 
+AUG codes for an amino acid called methionine
+Two tRNA molecules fit onto the ribosome at any one time, bringing the amino acid
+they are each carrying side by side
+A peptide bond is then formed, via a condensation reaction, between the two amino
+acids
+This process continues until a ‘stop’ codon on the mRNA molecule is reached – this acts
+as a signal for translation to stop and at this point the amino acid chain coded for by the
+mRNA molecule is complete
+The amino acid chain then forms the finalpolypeptideYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+
+The process of translation
+Examiner Tips and Tricks
+Make sure you learn both stages of protein synthesis fully. Don’t forget – transcription
+occurs in the nucleus but translation occurs in the cytoplasm! Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19

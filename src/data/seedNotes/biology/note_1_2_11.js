@@ -1,205 +1,95 @@
 export const note_biology_1_2_11 = {
-  blocks: [
+  "blocks": [
     {
-      id: 'obj-dna',
-      type: 'objective',
-      data: { text: 'Describe the structure of DNA and RNA, including the nucleotide monomers, base pairing, and the differences between DNA, mRNA, and tRNA.' },
+      "id": "obj-12",
+      "type": "objective",
+      "data": {
+        "text": "Describe the structure of DNA and RNA, including mononucleotides and polynucleotides."
+      }
     },
     {
-      id: 'h-nucleotide',
-      type: 'heading',
-      data: { text: 'Nucleotide Structure', level: 2 },
+      "id": "h-structure",
+      "type": "heading",
+      "data": {
+        "text": "Nucleotide Structure",
+        "level": 2
+      }
     },
     {
-      id: 'p-nucleotide',
-      type: 'paragraph',
-      data: { text: 'DNA (deoxyribonucleic acid) and RNA (ribonucleic acid) are both polynucleotides — polymers made of nucleotide monomers joined by phosphodiester bonds.' },
+      "id": "p-nuc",
+      "type": "paragraph",
+      "data": {
+        "text": "Both DNA and RNA are polymers made of mononucleotide monomers. A mononucleotide consists of three parts joined by condensation reactions: a pentose sugar, a phosphate group, and a nitrogenous base."
+      }
     },
     {
-      id: 'list-nucleotide',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Each <strong>nucleotide</strong> consists of three components: a <strong>pentose sugar</strong> (5-carbon) + a <strong>phosphate</strong> group + one nitrogenous <strong>base</strong>.',
-          '<strong>DNA nucleotide</strong>: deoxyribose sugar (H at the 2′ carbon) + phosphate + one of four bases: <strong>adenine (A)</strong>, <strong>thymine (T)</strong>, <strong>cytosine (C)</strong>, <strong>guanine (G)</strong>.',
-          '<strong>RNA nucleotide</strong>: ribose sugar (−OH at the 2′ carbon) + phosphate + one of four bases: <strong>A, C, G</strong>, and <strong>uracil (U)</strong> instead of thymine.',
-          '<strong>Purines</strong> (double ring): adenine (A) and guanine (G) — present in both DNA and RNA.',
-          '<strong>Pyrimidines</strong> (single ring): cytosine (C), thymine (T, DNA only), uracil (U, RNA only).',
-          'Adjacent nucleotides in the same strand are joined by <strong>phosphodiester bonds</strong> — formed by condensation between the phosphate group of one nucleotide and the 3′−OH of the next sugar; each phosphodiester bond consists of two ester bonds and one phosphate group, linking the 5′ carbon of one sugar to the 3′ carbon of the next.',
-        ],
-      },
+      "id": "h-dna-rna",
+      "type": "heading",
+      "data": {
+        "text": "DNA vs RNA",
+        "level": 3
+      }
     },
     {
-      id: 'table-dna-rna-nucleotide',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Comparison of DNA and RNA nucleotides',
-        headers: ['Feature', 'DNA nucleotide', 'RNA nucleotide'],
-        rows: [
-          ['Sugar', 'Deoxyribose (H at 2′ carbon)', 'Ribose (−OH at 2′ carbon)'],
-          ['Bases', 'A, T, C, G', 'A, U, C, G (uracil instead of thymine)'],
-          ['Strand', 'Forms double-stranded DNA', 'Remains/acts as single strand'],
-          ['Role of molecule', 'Long-term genetic storage', 'Transport/functional molecule (shorter molecular lifespan)'],
-        ],
-      },
+      "id": "list-dna-rna",
+      "type": "list",
+      "data": {
+        "style": "bullet",
+        "items": [
+          "DNA: Pentose sugar is deoxyribose. Bases are Adenine (A), Thymine (T), Cytosine (C), Guanine (G). It is double-stranded.",
+          "RNA: Pentose sugar is ribose. Bases are Adenine (A), Uracil (U), Cytosine (C), Guanine (G). It is single-stranded."
+        ]
+      }
     },
     {
-      id: 'h-double-helix',
-      type: 'heading',
-      data: { text: 'Double Helix Structure', level: 2 },
+      "id": "h-bonds",
+      "type": "heading",
+      "data": {
+        "text": "Phosphodiester Bonds",
+        "level": 2
+      }
     },
     {
-      id: 'list-double-helix',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'DNA consists of <strong>two polynucleotide strands</strong> wound around each other in a <strong>double helix</strong>.',
-          'The two strands are held together by <strong>hydrogen bonds</strong> between complementary bases: A pairs with T (2 hydrogen bonds); C pairs with G (3 hydrogen bonds).',
-          'Base pairing is <strong>complementary and specific</strong> \u2014 only A-T and C-G pairs form.',
-          'The two strands are <strong>antiparallel</strong>: one runs 5′\u21923′ (left to right) and the other runs 3′\u21925′ (right to left).',
-          '<strong>Chargaff’s rule</strong>: in any DNA molecule, %A = %T and %C = %G (because A always pairs with T, and C with G).',
-          'The double helix model was proposed by <strong>Watson and Crick (1953)</strong>, using X-ray crystallography data from Franklin and Wilkins.',
-        ],
-      },
+      "id": "p-bonds",
+      "type": "paragraph",
+      "data": {
+        "text": "Nucleotides join via condensation reactions between the phosphate of one and the sugar of another, forming a strong phosphodiester bond to create a sugar-phosphate backbone."
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-1-2-11-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='70' cy='50' r='20' fill='#fbd38d' stroke='#dd6b20'/><text x='45' y='90' font-size='10'>Phosphate</text><polygon points='110,40 140,40 150,70 125,90 100,70' fill='#ebf8ff' stroke='#3182ce'/><text x='105' y='110' font-size='10'>Pentose Sugar</text><rect x='170' y='30' width='60' height='30' fill='#fed7d7' stroke='#e53e3e'/><text x='175' y='80' font-size='10'>Nitrogenous Base</text><line x1='90' y1='50' x2='105' y2='50' stroke='#333' stroke-width='2'/><line x1='145' y1='45' x2='170' y2='45' stroke='#333' stroke-width='2'/></svg>",
+            "caption": "Nucleotide Structure"
+        }
     },
     {
-      id: 'svg-dna',
-      type: 'svg',
-      data: {
-        caption: 'Simplified DNA double helix showing antiparallel strands, complementary base pairing (A-T, C-G), and hydrogen bonds.',
-        svg: '<svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12"><rect width="500" height="260" fill="#f8f9ff" rx="8"/><text x="40" y="20" fill="#888" font-size="10">5′</text><text x="40" y="248" fill="#888" font-size="10">3′</text><text x="440" y="20" fill="#888" font-size="10">3′</text><text x="440" y="248" fill="#888" font-size="10">5′</text><g stroke="#3498db" stroke-width="3" fill="none"><path d="M60,30 Q80,50 60,70 Q40,90 60,110 Q80,130 60,150 Q40,170 60,190 Q80,210 60,230"/><path d="M440,30 Q420,50 440,70 Q460,90 440,110 Q420,130 440,150 Q460,170 440,190 Q420,210 440,230"/></g><g font-size="11" text-anchor="middle"><rect x="80" y="38" width="30" height="18" rx="4" fill="#e74c3c"/><text x="95" y="51" fill="white">A</text><rect x="380" y="38" width="30" height="18" rx="4" fill="#f39c12"/><text x="395" y="51" fill="white">T</text><line x1="110" y1="47" x2="380" y2="47" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><text x="245" y="44" fill="#7f8c8d" font-size="9">2 H-bonds</text><rect x="80" y="70" width="30" height="18" rx="4" fill="#27ae60"/><text x="95" y="83" fill="white">C</text><rect x="380" y="70" width="30" height="18" rx="4" fill="#8e44ad"/><text x="395" y="83" fill="white">G</text><line x1="110" y1="79" x2="380" y2="79" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><text x="245" y="76" fill="#7f8c8d" font-size="9">3 H-bonds</text><rect x="76" y="100" width="30" height="18" rx="4" fill="#f39c12"/><text x="91" y="113" fill="white">T</text><rect x="384" y="100" width="30" height="18" rx="4" fill="#e74c3c"/><text x="399" y="113" fill="white">A</text><line x1="106" y1="109" x2="384" y2="109" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><rect x="78" y="130" width="30" height="18" rx="4" fill="#8e44ad"/><text x="93" y="143" fill="white">G</text><rect x="382" y="130" width="30" height="18" rx="4" fill="#27ae60"/><text x="397" y="143" fill="white">C</text><line x1="108" y1="139" x2="382" y2="139" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><rect x="78" y="160" width="30" height="18" rx="4" fill="#e74c3c"/><text x="93" y="173" fill="white">A</text><rect x="382" y="160" width="30" height="18" rx="4" fill="#f39c12"/><text x="397" y="173" fill="white">T</text><line x1="108" y1="169" x2="382" y2="169" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/><rect x="78" y="190" width="30" height="18" rx="4" fill="#27ae60"/><text x="93" y="203" fill="white">C</text><rect x="382" y="190" width="30" height="18" rx="4" fill="#8e44ad"/><text x="397" y="203" fill="white">G</text><line x1="108" y1="199" x2="382" y2="199" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,3"/></g><text x="250" y="245" fill="#666" font-size="10" text-anchor="middle">Complementary base pairing: A-T (2 H-bonds) and C-G (3 H-bonds)</text></svg>',
-      },
-    },
-    {
-      id: 'h-rna',
-      type: 'heading',
-      data: { text: 'RNA Structure', level: 2 },
-    },
-    {
-      id: 'p-rna',
-      type: 'paragraph',
-      data: { text: 'RNA (ribonucleic acid) is also a polynucleotide, but differs from DNA in several ways.' },
-    },
-    {
-      id: 'list-rna-diff',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'RNA nucleotides contain <strong>ribose</strong> sugar (not deoxyribose \u2014 ribose has an extra \u2013OH group at the 2\'\u2212carbon).',
-          'RNA contains <strong>uracil (U)</strong> instead of thymine (T). Uracil pairs with adenine (A-U, 2 H-bonds).',
-          'Most RNA molecules are <strong>single-stranded</strong> (not double-stranded like DNA).',
-          'RNA molecules are generally much shorter than DNA.',
-        ],
-      },
-    },
-    {
-      id: 'h-rna-types',
-      type: 'heading',
-      data: { text: 'Types of RNA', level: 2 },
-    },
-    {
-      id: 'table-rna-types',
-      type: 'comparisonTable',
-      data: {
-        caption: 'The three main types of RNA and their roles.',
-        headers: ['Type', 'Structure', 'Location', 'Function'],
-        rows: [
-          ['mRNA (messenger RNA)', 'Single-stranded; linear', 'Nucleus \u2192 cytoplasm / ribosomes', 'Carries genetic code from DNA to ribosome for translation into protein'],
-          ['tRNA (transfer RNA)', 'Single-stranded; folded into cloverleaf shape with anticodon loop', 'Cytoplasm / ribosomes', 'Brings specific amino acids to the ribosome during translation; anticodon pairs with mRNA codon'],
-          ['rRNA (ribosomal RNA)', 'Complex 3D structure; combined with proteins', 'Ribosomes', 'Structural and catalytic component of ribosomes; catalyses peptide bond formation'],
-        ],
-      },
-    },
-    {
-      id: 'table-dna-rna-compare',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Comparison of DNA, mRNA and tRNA.',
-        headers: ['Feature', 'DNA', 'mRNA', 'tRNA'],
-        rows: [
-          ['Sugar', 'Deoxyribose', 'Ribose', 'Ribose'],
-          ['Strands', 'Double (double helix)', 'Single', 'Single (folded)'],
-          ['Bases', 'A, T, C, G', 'A, U, C, G', 'A, U, C, G'],
-          ['Length', 'Very long', 'Long (variable)', 'Short (around 80 nucleotides)'],
-          ['Location', 'Nucleus (also mitochondria)', 'Nucleus \u2192 cytoplasm', 'Cytoplasm'],
-          ['Function', 'Stores genetic information', 'Carries code from DNA to ribosome', 'Brings amino acids to ribosome'],
-        ],
-      },
-    },
-    {
-      id: 'h-prok-euk',
-      type: 'heading',
-      data: { text: 'Prokaryotic vs Eukaryotic DNA', level: 2 },
-    },
-    {
-      id: 'table-prok-euk',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Key differences in DNA structure between prokaryotic and eukaryotic cells.',
-        headers: ['Feature', 'Prokaryotic', 'Eukaryotic'],
-        rows: [
-          ['Shape', 'Circular', 'Linear (multiple chromosomes)'],
-          ['Location', 'In cytoplasm (no nucleus)', 'In nucleus (nuclear envelope)'],
-          ['Associated proteins (histones)?', 'No', 'Yes (DNA wound around histone proteins)'],
-          ['Additional DNA', 'Plasmids (small circular DNA)', 'Mitochondria / chloroplast DNA'],
-          ['Size', 'Smaller', 'Much larger'],
-        ],
-      },
-    },
-    {
-      id: 'callout-chargaff',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Worked Example: Chargaff’s Rule',
-        text: 'A DNA sample contains 22% thymine (T).\n\nStep 1: Since A pairs with T, %A = %T = 22%.\nStep 2: %A + %T = 22% + 22% = 44%.\nStep 3: %C + %G = 100% \u2212 44% = 56%.\nStep 4: Since C pairs with G, %C = %G = 56% \u00f7 2 = 28%.\n\nAnswer: A = 22%, T = 22%, C = 28%, G = 28%.',
-      },
-    },
-    {
-      id: 'callout-bonds-tip',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Examiner Tip — Bond Types in DNA',
-        text: 'Phosphodiester bonds join nucleotides together within the same strand (the sugar-phosphate backbone) — these are covalent bonds formed by condensation. Hydrogen bonds join the complementary bases of the two strands to each other: A paired with T (2 hydrogen bonds) and G paired with C (3 hydrogen bonds). Do not confuse these two bond types.',
-      },
-    },
-    {
-      id: 'checklist-dna',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Describe the three components of a DNA nucleotide', checked: false },
-          { text: 'Explain complementary base pairing and the number of H-bonds for A-T and C-G', checked: false },
-          { text: 'Explain what antiparallel means and apply Chargaff’s rule', checked: false },
-          { text: 'List three differences between DNA and RNA', checked: false },
-          { text: 'Describe the structure and function of mRNA, tRNA, and rRNA', checked: false },
-          { text: 'Compare prokaryotic and eukaryotic DNA (circular/linear, histones, plasmids)', checked: false },
-        ],
-      },
-    },
-    {
-      id: 'summary-dna',
-      type: 'summary',
-      data: { text: 'DNA nucleotides = deoxyribose + phosphate + base (A/T/C/G). Two antiparallel strands joined by H-bonds: A=T (2) and C\u2261G (3), forming a double helix. Chargaff’s rule: %A = %T; %C = %G. RNA differs: ribose sugar, uracil instead of thymine, usually single-stranded. mRNA carries code from DNA to ribosome; tRNA brings amino acids (has anticodon loop); rRNA forms ribosome. Prokaryotic DNA: circular, no histones, plasmids; Eukaryotic: linear chromosomes, wound around histones, in nucleus.' },
-    },
+        "id": "svg-diag-1-2-11-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,20 C100,20 100,130 150,130 C200,130 200,20 250,20' fill='none' stroke='#2b6cb0' stroke-width='4'/><path d='M50,130 C100,130 100,20 150,20 C200,20 200,130 250,130' fill='none' stroke='#2b6cb0' stroke-width='4'/><line x1='65' y1='40' x2='65' y2='110' stroke='#e53e3e' stroke-width='3'/><line x1='120' y1='75' x2='120' y2='75' stroke='#e53e3e' stroke-width='3'/><line x1='210' y1='40' x2='210' y2='110' stroke='#e53e3e' stroke-width='3'/><text x='270' y='50' font-size='10'>A-T (2 H-bonds)</text><text x='270' y='70' font-size='10'>C-G (3 H-bonds)</text></svg>",
+            "caption": "DNA Double Helix & Pairing"
+        }
+    }
   ],
-  recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'list-nucleotide', prompt: 'Name the three components of a DNA nucleotide. Name the four DNA bases.' },
-      { id: 'cue-2', blockId: 'list-double-helix', prompt: 'Explain what antiparallel means. How many hydrogen bonds join A-T and C-G base pairs?' },
-      { id: 'cue-3', blockId: 'callout-chargaff', prompt: 'State Chargaff’s rule. If a DNA sample is 18% guanine, what are the percentages of the other three bases?' },
-      { id: 'cue-4', blockId: 'list-rna-diff', prompt: 'Give three structural differences between DNA and RNA.' },
-      { id: 'cue-5', blockId: 'table-rna-types', prompt: 'Describe the structure and function of mRNA and tRNA.' },
+  "recall": {
+    "enabled": true,
+    "cues": [
+      {
+        "id": "cue-1",
+        "blockId": "p-nuc",
+        "prompt": "What are the three components of a mononucleotide?"
+      },
+      {
+        "id": "cue-2",
+        "blockId": "list-dna-rna",
+        "prompt": "State two differences between DNA and RNA nucleotides."
+      }
     ],
-    summaryText: 'DNA nucleotide: deoxyribose + phosphate + base (A/T/C/G). Double helix: 2 antiparallel strands, A=T (2 H-bonds), C\u2261G (3 H-bonds). Chargaff: %A=%T, %C=%G. RNA: ribose, uracil, single-stranded. mRNA: carries code to ribosome. tRNA: brings amino acids, has anticodon. rRNA: forms ribosomes. Prokaryotic: circular DNA, no histones, plasmids. Eukaryotic: linear chromosomes, histones, in nucleus.',
-    ready: false,
+    "summaryText": "Nucleotides consist of a pentose sugar, phosphate, and base. DNA has deoxyribose and Thymine; RNA has ribose and Uracil. They polymerize via phosphodiester bonds.",
+    "ready": true
   },
-  evidence: [
-    { id: 'ev-1', title: 'DNA structure and Watson-Crick model', detail: 'DNA nucleotide structure, complementary base pairing, and the double helix model described in AQA A Level Biology Student Book 1, Chapter 4.', year: '2023', source: 'AQA A Level Biology Student Book 1, Chapter 4, pp65-72', tags: ['DNA', 'RNA', 'molecular-biology'] },
-  ],
+  "evidence": []
 };

@@ -1,95 +1,50 @@
 export const note_biology_4_5_26 = {
   blocks: [
     {
-      id: 'obj-26',
-      type: 'objective',
-      data: { text: 'Understand how sustainable conservation and alternative energy resources can combat climate change.' }
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Understand the concept of sustainability and conservation, and ways we can manage resources for the future." }
     },
     {
-      id: 'h-sustainability',
-      type: 'heading',
-      data: { text: 'Sustainability', level: 2 }
+      id: "h-sustainability",
+      type: "heading",
+      data: { text: "Sustainability", level: 2 }
     },
     {
-      id: 'p-sustainability',
-      type: 'paragraph',
-      data: { text: 'Sustainability is about making use of the world\'s resources in ways that do not damage the environment and that can be maintained for future generations. To limit global warming, it is essential to act quickly to reduce carbon emissions and increase the rate at which carbon is removed from the atmosphere.' }
+      id: "p-sustainability",
+      type: "paragraph",
+      data: { text: "Sustainability means meeting the needs of the current generation without compromising the ability of future generations to meet their own needs. It requires balancing ecological, social, and economic demands." }
     },
     {
-      id: 'h-reducing-emissions',
-      type: 'heading',
-      data: { text: 'Reducing Carbon Emissions', level: 2 }
+      id: "h-conservation",
+      type: "heading",
+      data: { text: "Conservation vs Preservation", level: 2 }
     },
     {
-      id: 'p-reducing',
-      type: 'paragraph',
-      data: { text: 'Limiting fossil fuel combustion is challenging because modern transport, electricity generation, and food production heavily depend on it. Two main ways to reduce fossil fuel use are biofuels and other renewable energy resources.' }
-    },
-    {
-      id: 'h-biofuels',
-      type: 'heading',
-      data: { text: 'Biofuels', level: 3 }
-    },
-    {
-      id: 'p-biofuels',
-      type: 'paragraph',
-      data: { text: 'Biofuels are made from recently living plant biomass (e.g. sugar cane). They burn like fossil fuels and release CO₂.' }
-    },
-    {
-      id: 'list-biofuels-pros',
-      type: 'list',
+      id: "list-conservation",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          '**Pros:** Often cheaper than oil; renewable (they can be regrown quickly); argued to be "carbon neutral" because they only release carbon that was recently removed from the atmosphere, not ancient stored carbon.'
+          "Conservation: Active management and maintenance of ecosystems to maximize biodiversity. It often involves human intervention (e.g., grazing sheep to maintain a plagioclimax, controlled burning) to allow local communities to sustainably use resources.",
+          "Preservation: Protecting habitats in their completely natural state by totally banning human interference (cordoning off a virgin forest)."
         ]
       }
     },
     {
-      id: 'list-biofuels-cons',
-      type: 'list',
+      id: "h-management",
+      type: "heading",
+      data: { text: "Managing Resources sustainably", level: 3 }
+    },
+    {
+      id: "list-management",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "numbered",
         items: [
-          '**Cons:** They still release CO₂ into the atmosphere; require vast amounts of land that could be used for food production; clearing land (e.g. rainforests) for biofuel crops destroys habitats and reduces overall photosynthesis capacity.'
-        ]
-      }
-    },
-    {
-      id: 'h-renewables',
-      type: 'heading',
-      data: { text: 'Other Renewable Sources', level: 3 }
-    },
-    {
-      id: 'list-renewables',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '**Wind, Solar, Geothermal, and Tidal.**',
-          '**Pros:** Technologies are advancing quickly, becoming cheaper and more efficient. They release no CO₂ when generating electricity.',
-          '**Cons:** Geothermal requires volcanic activity; solar depends on sunshine hours; wind depends on wind speeds, has a visual impact, and turbines can harm birds and bats; tidal works only near coasts.'
-        ]
-      }
-    },
-    {
-      id: 'h-increasing-removal',
-      type: 'heading',
-      data: { text: 'Increasing Carbon Removal', level: 2 }
-    },
-    {
-      id: 'p-removal',
-      type: 'paragraph',
-      data: { text: 'While new carbon capture technologies are exciting, they are not yet capable of removing vast quantities of carbon reliably. We must rely on existing methods, primarily photosynthesis.' }
-    },
-    {
-      id: 'list-removal-strategies',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '**Stopping Deforestation:** Preventing the destruction of forests preserves their carbon storage and photosynthetic capacity.',
-          '**Reforestation:** Planting trees allows them to grow to maturity and store huge amounts of carbon in their biomass. This requires significant government support and benefits for landowners (e.g. Costa Rica plants seven times more trees than it cuts down).'
+          "Coppicing: Cutting tree trunks down to their base. New shoots rapidly grow from the stool. This provides a continuous supply of wood without killing the trees.",
+          "Fishing Quotas: Setting limits on the number and size of fish caught to ensure breeding populations are protected.",
+          "Reforestation: Replanting trees whenever trees are felled."
         ]
       }
     }
@@ -97,12 +52,12 @@ export const note_biology_4_5_26 = {
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', prompt: 'Define sustainability.' },
-      { id: 'cue-2', prompt: 'Why are biofuels often considered "carbon neutral"?' },
-      { id: 'cue-3', prompt: 'What are two disadvantages of growing crops for biofuels?' },
-      { id: 'cue-4', prompt: 'Identify one disadvantage for wind energy and one for geothermal energy.' },
-      { id: 'cue-5', prompt: 'What is currently the most reliable mechanism for removing large amounts of carbon from the atmosphere?' }
+      { id: "cue-1", blockId: "p-sustainability", prompt: "Define sustainability." },
+      { id: "cue-2", blockId: "list-conservation", prompt: "What is the difference between conservation and preservation?" },
+      { id: "cue-3", blockId: "list-management", prompt: "How does coppicing act as a sustainable resource management method?" }
     ],
-    summaryText: 'Sustainability means using resources without damaging the environment or limiting future generations. Biofuels are "carbon neutral" because they only release recently absorbed CO₂. Disadvantages: they take up agricultural land and can lead to deforestation/habitat loss. Wind energy fluctuates and affects wildlife; geothermal requires volcanic geography. Photosynthesis (via reforestation and halting deforestation) remains the best carbon removal method.'
-  }
+    summaryText: "Sustainability meets current needs without harming future generations. Conservation actively manages ecosystems (e.g., coppicing, fishing quotas) to maintain biodiversity while allowing resource use, whereas preservation bans all human interference.",
+    ready: true
+  },
+  evidence: []
 };

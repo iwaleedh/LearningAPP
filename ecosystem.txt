@@ -1,0 +1,579 @@
+Edexcel International A
+Level (IAL) Biology
+Ecosystems
+Contents
+Ecological Productivity
+Energy & Biomass Transfers
+Ecology: Key Terms
+Factors Affecting Populations
+Niche
+Core Practical 11: Quadrat & Transect Study
+Ecological SuccessionYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+Ecological Productivity
+Ecological Productivity
+During photosynthesis organisms such as plants convert light energy into chemical
+energy stored in biological molecules
+Organisms that do this are known as producers 
+The rate at which producers convert light energy into chemical energy is known as
+primary productivity
+Gross primary productivity, or GPP, can be defined as the rateat which chemical
+energy isconverted into carbohydrates during photosynthesis
+Net primary productivity, or NPP, is the GPP minus plant respiratory losses
+Of the total energy stored in glucose during photosynthesis, 90 % will be released
+from glucose to create ATP for the plant during respiration
+90 % of the energy originally converted by the plant will therefore not be stored as
+new plant biomass and will not be available to be passed on to herbivores, also
+known as primary consumers
+The NPP can therefore be defined as the rate at which energy is stored in plant biomass
+NPP is important because it represents the energy that is available to organisms
+at higher trophic levels in the ecosystem, such as primary consumers and
+decomposers
+Net primary productivity can be calculated using the equation
+NPP = GPP - R
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+Net primary productivity, or NPP, is the rate at which energy is stored in plant biomass and
+made available to primary consumers.
+Calculation of Ecological Productivity
+Net primary productivity can be calculated using the equation
+NPP = GPP - R
+Where
+NPP = net primary productivity; the rate at which light energy is storedin plant
+biomass
+GPP = gross primary productivity; the rate at which light energy is converted into
+carbohydrates during photosynthesis
+R = respiratory losses; the carbohydrates used up by the plant that are not stored in
+plant biomass
+NPP is expressed in units ofenergy per unit area or volumeper unit time e.g.
+Using area: J m  yr (joules per square metre per year)
+Using volume: J m  yr (joules per cubic metre per year)
+Volume would be used when calculating NPP in aquatic habitats–2 -1
+–3 -1
+Worked Example
+The grass in a meadow habitat converts light energy into carbohydrates at a rate of
+17 500 kJ m  yr. The grass releases 14 000 kJ m  yr of that energy during
+respiration. Calculate the net primary productivity of the grass in the meadow habitat.
+Answer:
+Step 1: Work out which numbers correspond to which parts of the equation
+The meadow grass converts 17 500 kJ m  yr into carbohydrates; this is its GPP
+The meadow grass releases 14 000 kJ m  yr of that energy in respiration; this is R
+Step 2: Substitute numbers into the equation 
+NPP = GPP - R
+NPP = 17 500 - 14 000
+Step 3: Complete calculation
+17 500 - 14 000 = 3 500
+NPP = 3 500 kJ m  yr-2 -1 -2 -1
+-2 -1
+-2 -1
+-2 -1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+Examiner Tips and Tricks
+The worked example above uses the equation in its basic form, but you may also be
+expected to rearrange the equation e.g. to calculate GPP or R
+If a question provides you with the NPP and R and asks you to calculate GPP, you
+will need to use the equation
+GPP = NPP + R
+If a question provides you with the NPP and the GPP and asks you to calculate R,
+you will need to use the equation
+R = GPP - NPPYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+Energy & Biomass Transfers
+Energy & Biomass Transfer Calculations
+Transfer of energy through a food chain
+During photosynthesis organisms such as plants convert light energy into chemical
+energy stored in biological molecules
+Organisms that do this are known as producers 
+The chemical energy stored in plant biomass is passed to primary consumers when the
+plant is ingested
+Primary consumers are animals that eat plant material; they can be herbivores or
+omnivores
+The primary consumer digests the plant tissues and uses the stored chemical energy
+either to fuel respiration or to build up biomass; this latter means that the stored
+chemical energy is transferred to the tissues of the primary consumer
+When the primary consumer is ingested by a secondary consumer the stored chemical
+energy passes to the secondary consumer, and so on up the food chain
+When an organism dies, the chemical energy stored in its tissues passes
+to decomposers such as bacteria and fungi
+In a food chain the arrows represent the transfer of energy from one trophic level to the
+next by the process of feeding
+The term trophiclevel refers to the stage in a food chain
+The light energy converted into chemical energy by producers is passed up the food chain
+by the process of feeding
+Energy losses in a food chain
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+The transfer of energy in a food chain is not 100 % efficient; energy is lost to the
+environment at every trophic level
+A large proportion of the sun's energy is not available to producers for building biomass
+Light passes through leaves or is reflected away
+Light hits non-photosynthetic parts of the plant e.g. bark or flowers
+Light is a mixture of wavelengths and only certain wavelengths are absorbed in
+photosynthesis
+Plants release energy during respiration, some of which is lost to the environment in
+the form of heat
+When a consumer ingests another organism, not all the chemical energy in the
+consumer's food is transferred to the consumer's biomass
+Only around 10 % of the energy is available to the consumer to store in their tissues
+This is because around 90 % of the energy is lost to the environment
+Around 90 % of the energy is lost to the environment because
+Not every part of the food organism iseaten, e.g. the roots and woody parts of
+plants or the bones of animals, meaning that the stored energy in these uneaten
+tissues is lost to the environment
+Consumers are not abletodigest all of the food they ingest, e.g. cellulose in plants
+or the fur of animals, so some is egested as faeces; the chemical energy in this
+undigested food is also lost to the environment
+Energy is lost to the environment in the form of heat when consumers respire
+Energy is lost to the environment when organisms excrete the waste products of
+metabolism e.g. urea in urine
+The energy that is left after these losses is available to the consumer to fuel their life
+functions, including being stored in biomass during growth
+The rate at which energy is converted into biomass in the body of a consumer is
+known as net productivity
+Note that this is slightly different to the rate at which energy is converted into
+biomass in producers, which is known as net primary productivity
+The energy losses at each trophic level act to limit the maximum length of food chains;
+organisms at higher trophic levels need to consume more food to gain enough energy to
+surviveYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+Energy is lost to the environment at every trophic level of a food chain
+Calculating the efficiency of energy transfer
+The efficiency of energy transfer in a food chain can be calculated using the following
+equation
+Energy efficiency = (net productivity ÷  energy received)  × 100
+Note that net productivity can be calculated by subtracting energy losses from energy
+received
+Efficiency of energy transfer is given as a percentage 
+Worked Example
+A wheat farmer decides to use biological control against insect pests that are eating
+her wheat crop. The farmer introduces a species of toad. By eating the insect pests
+the toads ingest 10 000 kJ m  yr of energy. The toads lose 7 000 kJ m  yr of this
+energy as heat from respiration and 2 000 kJ m  yrof energy in faeces and urine.
+Calculate the efficiency of energy transfer from the insects to the toads.
+Answer:
+Step 1: Calculate the net productivity of the toads
+Toad energy received= 10 000 kJ m  yr
+Toad energy losses = 7 000 + 2 000 = 9 000 kJ m  yr
+Toad net productivity = 10 000 - 9 000 = 1 000-2 -1 -2 -1
+-2 -1 
+-2 -1
+-2 -1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+Calculating the efficiency of biomass transfer
+It is also possible to calculate the efficiency of biomass transfer from one trophic level
+to the next in a food chain
+In order to calculate this scientists need to know the biomass of the organisms
+concerned
+Dry biomass is used, as the amount of water stored in tissues can vary
+Dry biomass can be measured by drying a sampleof the organism in an oven at a
+low heat and weighing the sample at regular intervals until the mass becomes
+constant; this will be the dry biomass
+The organism needs to be dead for this process to be carried out, so an
+estimate is often used
+Depending on the transfer being studied, it may then be necessary to multiply up
+the sample to take into account the size of the area or number of organisms being
+studied
+The efficiency of biomass transfer can be calculated using the following equation
+Efficiency of biomass transfer = (biomass transferred ÷  biomass intake) ×  100
+Biomass transferred refers to biomass that has passed to the higher trophic level
+while biomass intake refers to biomass of the lower trophic level that has been
+consumed
+Efficiency of biomass transfer is given as a percentage Toad net productivity = 1 000 kJ m  yr
+Step 2: Substitute values into the equation
+Energy efficiency = (net productivity ÷  energy received) x 100
+Energy efficiency = (1 000 ÷ 10 000)  ×  100
+Step 3: Complete calculation
+Energy efficiency = (1 000 ÷ 10 000)  ×  100 
+Energy efficiency = 10 %-2 -1
+Worked Example
+A blackberry bush with a dry mass of 35 kg is fed upon by aphids with a collective dry
+mass of 4.1 kg. Calculate the percentage efficiency of biomass transfer in this step of
+the food chain.
+Answer:
+Step 1: Ensure both units are the sameYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+In this case, both are expressed in kg so the units do not need to be converted
+Step 2: Substitute the values into the equation
+Efficiency of biomass transfer = (biomass transferred ÷  biomass intake) ×  100
+Efficiency of biomass transfer = (4.1 ÷  35)  ×  100
+Step 3: Complete calculation
+Efficiency of biomass transfer = (4.1 ÷  35) ×  100
+Efficiency of biomass transfer = 11.7 %
+Examiner Tips and Tricks
+It is worth bearing in mind that the biomass of an organism is effectively a measure of
+how much chemical energy is stored within it, so a calculation of the efficiency of
+biomass transfer essentially provides the same information as a calculation of the
+efficiency of energy transfer.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+Ecology: Key Terms
+Ecology: Key Terms
+Habitat
+Species are adapted, or well-suited, to life in a particular habitat
+A habitat can be defined as the place where an organism lives
+A habitat can be large, e.g. a desert, or small, e.g. an individual tree
+Small habitats are sometimes referred to as microhabitats
+Some species are habitat specialists, meaning that they can only survive in a very
+specific type of habitat, while others are generalists and can survive in a range of
+habitats
+Generalists are more likely to be able to invade and take over a new habitat;
+such species are known as invasive species 
+Humans sometime release new species into a habitat, either accidentally or
+on purpose; these species can disrupt the normal species interactions in a
+habitat and cause serious problems
+Population
+When a species is found in a habitat, that habitat is said to support a population
+A population can be defined as all of the individuals of one species living in a habitat
+The size of a population can be measured; this is the abundance of a species in a
+habitat
+The exact location of a population within a habitat is a species' distribution within
+that habitat
+Community
+Species do not exist by themselves in their own isolated environment;
+they interact with other species, forming communities
+A community can be defined as multiple populations living and interacting in the same
+area
+For example, a garden pond community is made up of populations of fish, frogs,
+newts, pond snails, damselflies and dragonflies and their larvae, pondweed, water
+lilies, and all other populations living in the pond
+Ecosystem
+Communities interact with the non-living components of the habitat they live in,
+forming ecosystemsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+An ecosystem can be defined as a community and its interactions with the non-living
+parts of its habitat
+There is aflow of energywithin an ecosystem and nutrients within it are recycled
+There are both biotic and abiotic components within an ecosystem
+Ecosystems vary greatly in size and scale
+A small pond in a back garden and the open ocean could both be described as
+ecosystems
+Ecosystems vary in complexity
+A desert is a relatively simple ecosystem
+A tropical rainforest is a very complex ecosystem
+No ecosystem is completely self-contained as organisms from one ecosystem can
+often move to another
+E.g. birds and aquatic animals are able to migrate long distances to feed from
+multiple ecosystems
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+Individual members of a species together in a habitat form a population, populations
+interact within a community, and communities interact with each other and with non-
+living components of their habitat to form an ecosystem. Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+Factors Affecting Populations
+Factors Affecting Populations
+The abundance and distribution of a species within a habitat are determined by a
+combination of biotic and abiotic factors
+Biotic factors are living factors that influence populations within their community; biotic
+factors come about as a result of the activity of other organisms e.g.
+Predation
+Food availability
+Intraspecific competition, arising when individuals of the same species compete for
+resources
+Interspecific competition, arising when individuals of different species compete for
+resources
+Cooperation between organisms
+Parasitism
+Disease
+The Impact of Biotic Factors on a Community TableYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+Abiotic factors are non-living factors that influence populations within their community
+e.g.
+Light intensity and wavelength
+Temperature
+Turbidity, or cloudiness, of water
+Humidity
+Soil or water pH
+Soil or water salinity
+Soil composition
+Oxygen or Carbon dioxide concentration
+The impact of Abiotic Factors on a Community Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+Niche
+The Concept of Ecological Niche
+The place where a species lives is known as its habitat
+Species will occupy a specific niche within a habitat
+The term niche can be defined as the role of a species within its habitat
+The role of a species includes
+What it eats
+Which other species depend on it for food
+What time of day a species is active
+Exactly where in a habitat a species lives
+Exactly where in a habitat a species feeds
+No two species can fill the same niche within a habitat; if this ever happens the two
+species will be in direct competition with each other for resources, and one of the two
+species will out-compete the other, causing it to die out in that particular habitat
+It can sometimes seem as though species are occupying the same niche, but there
+will still be subtle differences in their role; e.g. they might feed at different times of
+day, or have different food sources
+The niche filled by a species determines its abundance within a habitat
+The term abundance can be defined as the number of individuals of a particular
+species living in a habitat
+If two species occupy a similar niche within a habitat they will be competing with
+each other, so their populations will be smaller, and their abundance will therefore
+be lower
+The niche filled by a species determines its distribution
+The term distribution can be defined as where a species lives
+Species can only survive in habitats to which they are well adapted; if they are not
+well suited to a habitat's biotic and abiotic factors then they will move to a more
+suitable habitat and their distribution will changeYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+Feeding location is an example of a feature that may differ between niches.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+Core Practical 11: Quadrat & Transect Study
+Quadrat & Transect Study
+Finding out about the abundance and distribution of species can be achieved by
+counting all of the organisms present in a habitat
+This is possible for areas that are very small or where the species are very large
+For larger and more complex habitats it is not possibleto find, identify, and count every
+organism that is present
+When this is the case sampling can be used to make an estimate for the total species
+numbers
+Sampling
+Sampling is a method of investigating the abundance and distribution of species and
+populations
+There are two different types of sampling
+Random
+Systematic
+In random sampling the positions of the sampling points are selected at random
+This method avoids bias by the person that is carrying out the sampling
+Bias can affect the results e.g.
+A student might choose to carry out samples in a particular location because it
+looks interesting, and this might give the impression that the habitat contains
+more species than it really does
+In systematic sampling the positions of the sampling points are located at fixed
+intervals throughout the sampling site
+This avoids accidentally missing out sections of habitat due to chance
+Systematic sampling allows researchers to investigate the effect of the presence
+of certain environmental features on species distribution e.g. by taking samples
+along a line that extends away from an environmental feature such as a river
+A line of this type is known as a transect
+When a sampling area is reasonably uniform then random sampling is the best choice
+Random sample sites can be selected by
+Laying out a grid over the area to be studied
+Generating random number co-ordinatesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+Placing sample sites in the grid squares that match the random number co-
+ordinates
+Random sampling involves selecting sample sites at random while systematic sampling
+involves placing sample sites at regular intervals.
+Determining distribution and abundance
+The distribution and abundance of a species in an area can be assessed using different
+practical methods:
+Frame and point quadrats
+Line and belt transects
+Frame quadrats
+A frame quadrat is a square frame that is placed within the area to be studied to provide
+a sample
+Quadrats are used to study the distribution of sessileorganisms
+Quadrats can be different sizes depending on the species being studied
+A 1 m² quadrat can be used to study small organisms such as herbaceous plants
+in a grassland or limpets on a rocky shore
+A 400 m² quadrat can be used to study large organisms such as trees
+Quadrats like this will usually be marked out with string rather than a frame!
+Frame quadrats can be placed in a habitat randomly, e.g. using random co-ordinates, or
+systematically, e.g. along a transect
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+A frame quadrat can be used to measure abundance and distribution
+Scientists can record different types of data from a frame quadrat depending on the
+aim of a study and the species involved
+Presence or absence of a species
+Species frequency; how many individuals are in the quadrat
+Species abundance; measured on a scale called the ACFOR scale on which species
+are recorded as being abundant, common, frequent, occasional, rare, or none
+Percentage cover; the percentage of the quadrat covered by a species
+Quadrats can be divided up into smaller squares to allow percentage cover to
+be assessed more easily
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+Abundance in a frame quadrat can be assessed by measuring percentage cover
+Point quadrats
+A point quadrat is a vertical frame with holes across the top through which pins are
+lowered
+This is useful in areas with dense plant cover as the ground may be difficult to study
+using a frame quadrat 
+Point quadrats can be placed in a habitat randomly, e.g. using random co-
+ordinates, or systematically, e.g. along a transect
+When a lowered pin touches a species, that species is recorded as being present
+If several species are touching the pin then all of those species are recorded
+Point quadrats can be used to measure abundance in the following ways
+The number of individuals of a species present
+Each individual that touches a pin is recorded 
+Percentage cover of a species
+The number of pins touched by a species is divided by the total number of pins
+used
+Most point quadrats have ten pins, so if all the pins are used then a species
+touching one pin counts as 10 percent cover
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+Point quadrats can be used to measure the the number of individuals of a species or
+percentage cover
+Transects
+Transects are lines laid out across a site that can be used to measure abundance and
+distribution across a habitat
+Transects are useful for determining how species abundance and distribution
+might change along a gradient e.g. at increasing distances from a field margin or
+perpendicular to the water's edge on a rocky shore
+To carry out a transect, a tape measure is laid out along the gradient of interest, and
+samples are taken along the line
+There are different ways of carrying out transect studies
+Continuous line transect
+Every species touching the tape measure is recorded
+Interrupted line transect
+Species touching the line at regular intervals, e.g. every metre, are recorded
+Continuous belt transect
+Frame quadrats are placed end-to-end along the line 
+Interrupted belt transect
+Frame or point quadrats are placed at regular intervals, e.g. every metre, along
+the line
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+Interrupted line and belt transects can be used to measure abundance and distribution of
+species along a line across a habitat
+Measuring abiotic factors
+The distribution and abundance of species in a habitat are affected by abiotic factors
+When investigating the impact of an abiotic factors on species abundance and
+distribution it is important to measure the relevant abiotic factors at the sample sites
+It is only necessary to record relevant abiotic factors
+A study may only be interested in one particular abiotic factor
+Some abiotic factors may not be relevant in certain habitats e.g. water turbidity
+(cloudiness) will not be relevant in a woodland habitat
+Abiotic factors can be measured using specialised equipment and techniques
+Measuring Abiotic Factors Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+Representing results
+The results of an investigation into the distribution and abundance of organisms can be
+represented visually using a type of graph known as a kite diagram
+Kite diagrams can show both distribution and abundance
+The distribution of a species along a transect can be shown by its position along a
+central horizontal line in each section of a kite diagram
+Each section represents a different species 
+The distance along the transect is given on the x-axis, to which the horizontal
+line is parallel
+The abundance of a species can be shown by the width of the 'kite' around the
+central horizontal line
+The shape is referred to as a kite because it extends an equal distance on each
+side of the central horizontal line
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+Additional sections can be added to a kite diagram to show the changes in abiotic
+factors at different points along a transect e.g. the height above sea level or the pH of
+soil
+Kite diagrams can be used to provide a visual representation of both abundance and
+distribution of species, as well as changes to abiotic factors such as elevation
+Examiner Tips and Tricks
+You could be asked to describe or design an investigation that could be used to
+measure the effect of a specific abiotic factor on species abundance or distribution,
+so make sure that you know the circumstances in which each sampling technique
+would be used, and how to use it.
+Remember that when describing a practical you should always consider:
+How you will change the independent variable
+In this context you might be measuring a change in the independent variable,
+or abiotic factor, rather than causing the change yourself
+Note that this might not be relevant if you have just been asked to measure
+the abundance of a species in one habitatYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+How you will measure the dependent variable
+How you will ensure that your results are valid
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+Ecological Succession
+Ecological Succession
+Ecosystems are dynamic, meaning that they are constantly changing
+The process of ecosystem change over time is known as succession
+During succession, the biotic and abiotic conditions change 
+Primarysuccession is the process that occurs when newly formed or newly
+exposed land is inhabited by an increasing number of species
+Newly formed land can be created by e.g.
+The magma from erupting volcanoes cooling and forming new rock surfaces or
+new rocky islands in the sea
+Newly exposed land can form by e.g.
+A landslide that exposes bare rock
+A glacier that retreats to reveal bare rock
+The arrival of organisms on bare land is known as colonisation, and the bare land is said
+to be colonised
+Primary succession occurs in a series of stages
+Primary succession can occur on any type of bare land, including sand dunes at the
+edge of the ocean, and on exposed rock
+Primary succession on bare rock involves the following stages
+Seeds and spores that are carried by the wind land on exposed rock and begin to
+grow
+The first species to colonise the new land, often mosses and lichens, are known
+as pioneer species
+Pioneer species can germinate easily and withstand harsh conditions such as
+low nutrient and water availability 
+As pioneer species die and decompose, the dead organic matter forms soil
+Seeds of small plants and grasses land on this soil and begin to grow
+The plants at this early stage of succession are adapted to survive in shallow,
+nutrient-poor soils
+The roots of these small plants form a network that helps to hold the soil in
+place and prevent it from being washed away
+As these small plants die and decompose, the soil becomes deeper and
+more nutrient-richYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+Larger plants and shrubs, as well as small trees can now begin to grow
+These larger plants and small trees also require more water, which can be
+stored in deeper soils
+Over time the soil becomes sufficiently deep, contains enough nutrients, and can
+hold enough water to support the growth of large trees
+The final species to colonise the new land become the dominant species of the
+now complex ecosystem
+The final community formed, containing all the different plant and animal species
+that have now colonised the land, is known as the climax community
+The type of climax community that forms depends on the location of the
+original bare land; in the tropics the climax community would be a rain forest,
+while in temperate regions it might be deciduous woodland
+A climax community is not always the most biodiverse stage of succession, but
+it is a stable community
+Primary succession is the process of ecosystem change over time, beginning with newly
+formed or newly exposed land
+Succession changes the biotic and abiotic conditions
+At each stage in succession the newly arriving species change the local environment so
+that it becomes more suitable for other species that have not yet colonised the new
+land e.g.
+Pioneer species such as lichens help to slowly break apart the top surface of bare
+rock; this fragmented rock, along with the dead organic matter left behind when the
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+lichens die and are broken down, forms a basic soil
+Species such as grasses grow roots that stabilise the soil, enabling it to hold more
+moisture and nutrients
+Often the new colonising species then change the environment in such a way that it
+becomes less suitable for the previous species e.g.
+Lichens cannot grow on soil so they disappear from the ecosystem once soil begins
+to form; the new species change the environment in such a way that it becomes less
+suitable for the lichens
+Pioneer species may not be found in a climax community as they will be out-
+competed for light and other resources by the species that arrive during the
+later stages of succession
+Pioneer species are well adapted for harsh conditions but are often poor
+competitors
+As soil deepens and trees are able to grow, they may block out the light to shrubs
+and other smaller plant, out-competing them and causing them to die
+Secondary succession
+There is also a type of succession called secondary succession which takes place on
+previously occupied land e.g. after a wild fire or deforestation
+Secondary succession is very similar to primary succession except that soil is
+already present so the process begins at a later stage
+Humans can prevent succession
+Human activities often prevent or interrupt the process of succession
+This stops a climax community from developing e.g.
+Regular mowing prevents woody plants from establishing themselves in a lawn
+The grazing activity of livestock such as sheep and cattle prevent new plants from
+establishing
+Climax communities that develop as a result of human intervention are known as a
+plagioclimax; these communities are stable but would not have occurred without
+human intervention, e.g. heathland 
+Examiner Tips and Tricks
+You could be presented with an example of succession other than the one provided
+here e.g. succession on a sand dune. As long as you understand the principles of the
+stages of succession you should be able to apply your knowledge to any example
+that an exam question might throw at you.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30

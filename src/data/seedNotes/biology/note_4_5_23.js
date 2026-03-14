@@ -1,72 +1,60 @@
 export const note_biology_4_5_23 = {
   blocks: [
     {
-      id: 'obj-23',
-      type: 'objective',
-      data: { text: 'Understand the roles of mutation, natural selection, and evolution in the development of species.' }
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Understand the process of evolution via natural selection and how it leads to adaptation." }
     },
     {
-      id: 'h-evolution-intro',
-      type: 'heading',
-      data: { text: 'Evolution and Heritable Characteristics', level: 2 }
+      id: "h-natural-selection",
+      type: "heading",
+      data: { text: "Evolution via Natural Selection", level: 2 }
     },
     {
-      id: 'p-evolution-def',
-      type: 'paragraph',
-      data: { text: 'Evolution can be defined as changes in the heritable characteristics of organisms over generations. Heritable characteristics are determined by the alleles of genes present in an individual and can be passed on to the next generation.' }
+      id: "p-intro",
+      type: "paragraph",
+      data: { text: "Evolution is the change in allele frequencies in a population over time. The primary mechanism driving this is natural selection." }
     },
     {
-      id: 'h-natural-selection',
-      type: 'heading',
-      data: { text: 'Natural Selection', level: 2 }
-    },
-    {
-      id: 'p-ns-intro',
-      type: 'paragraph',
-      data: { text: 'Natural selection is the process by which organisms that are better adapted to their environment survive, reproduce, and pass on their advantageous alleles, causing these advantageous characteristics to increase in frequency within a population.' }
-    },
-    {
-      id: 'list-ns-stages',
-      type: 'list',
+      id: "list-steps",
+      type: "list",
       data: {
-        style: 'numbered',
+        style: "numbered",
         items: [
-          '**Variation:** Exists between individuals in a population. It results from small differences in DNA base sequences due to random mutation, meiosis, and random fertilisation.',
-          '**Selection Pressures:** Environmental factors (like predation, competition for food, disease) act as selection pressures that affect survival chances.',
-          '**Survival of the Fittest:** Individuals with characteristics that make them better adapted are more likely to survive into adulthood and reproduce.',
-          '**Inheritance:** These well-adapted individuals are more likely to pass on their advantageous alleles to their offspring.',
-          '**Frequency Increase:** Over generations, the favourable characteristic becomes the most common of its kind in the population, meaning the population has adapted to its environment.'
+          "Mutation: Random mutations introduce new alleles into a population, creating genetic variation.",
+          "Selection Pressure: An environmental factor (e.g., disease, predator, climate change) creates a struggle for survival.",
+          "Advantageous Allele: Individuals possessing the advantageous allele are better adapted, and are more likely to survive and reproduce.",
+          "Inheritance: They pass the advantageous allele onto their offspring.",
+          "Increasing Frequency: Over many generations, the frequency of the advantageous allele increases in the population."
         ]
       }
     },
     {
-      id: 'callout-evolution-tip',
-      type: 'callout',
+      id: "h-adaptation",
+      type: "heading",
+      data: { text: "Types of Adaptation", level: 3 }
+    },
+    {
+      id: "list-adaptations",
+      type: "list",
       data: {
-        style: 'warning',
-        title: 'Examiner Tip: Evolution is not purposeful',
-        text: 'Evolution does not occur as a direct, purposeful response to an environment. Avoid stating that evolution happens "so that" an organism can survive. Instead, say it occurs by natural selection acting on randomly occurring variation.'
+        style: "bullet",
+        items: [
+          "Anatomical: Structural features of an organism's body (e.g., whales having a thick layer of blubber).",
+          "Physiological: Processes inside the body (e.g., some bacteria producing antibiotics or hibernation lowering metabolism).",
+          "Behavioural: Ways an organism acts (e.g., possums playing dead or birds migrating)."
+        ]
       }
-    },
-    {
-      id: 'h-rabbit-example',
-      type: 'heading',
-      data: { text: 'Example: Natural Selection in Rabbits', level: 3 }
-    },
-    {
-      id: 'p-rabbit-example',
-      type: 'paragraph',
-      data: { text: 'If variation in fur colour (brown vs. white alleles) exists within a rabbit population, predators like foxes act as a selection pressure. Brown rabbits are more likely to survive and reproduce due to better camouflage. Over many generations, the frequency of brown fur alleles increases, while white fur alleles decrease.' }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', prompt: 'Define evolution.' },
-      { id: 'cue-2', prompt: 'Name three sources of genetic variation.' },
-      { id: 'cue-3', prompt: 'What is a selection pressure?' },
-      { id: 'cue-4', prompt: 'Summarise the five essential stages of natural selection.' }
+      { id: "cue-1", blockId: "list-steps", prompt: "Outline the five main steps of natural selection." },
+      { id: "cue-2", blockId: "list-adaptations", prompt: "Identify the three types of adaptations and give one example of each." }
     ],
-    summaryText: 'Evolution is the change in heritable characteristics over generations. Sources of variation: mutation, meiosis, random fertilisation. Selection pressures are environmental factors (e.g. predation) that affect survival. The 5 stages: Variation exists, selection pressures act, best-adapted survive/reproduce, advantageous alleles are passed on, and allele frequency increases.'
-  }
+    summaryText: "Mutations create variation. Selection pressures mean those with advantageous alleles survive, reproduce, and pass on the alleles. Over generations, creating anatomical, physiological, or behavioural adaptations.",
+    ready: true
+  },
+  evidence: []
 };

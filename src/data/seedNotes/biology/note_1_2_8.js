@@ -1,340 +1,82 @@
 export const note_biology_1_2_8 = {
-  blocks: [
+  "blocks": [
     {
-      id: 'obj-protein-structure',
-      type: 'objective',
-      data: {
-        text: 'Understand the secondary, tertiary and quaternary levels of protein structure, the bonds that maintain each level, the meaning of denaturation, and the distinction between fibrous and globular proteins.',
-      },
-    },
-
-    // ── Secondary structure ──────────────────────────────────────────────────────
-    {
-      id: 'h-secondary',
-      type: 'heading',
-      data: { text: 'Secondary Structure', level: 2 },
+      "id": "obj-9",
+      "type": "objective",
+      "data": {
+        "text": "Explain the secondary, tertiary, and quaternary levels of protein structure."
+      }
     },
     {
-      id: 'p-secondary',
-      type: 'paragraph',
-      data: {
-        text: 'After its primary structure (amino acid sequence) is established, parts of the polypeptide chain fold into regular, repeating patterns — this is the secondary structure. Both types of secondary structure are maintained entirely by hydrogen bonds forming between backbone groups (C=O and N−H), not between R-groups.',
-      },
+      "id": "h-structure",
+      "type": "heading",
+      "data": {
+        "text": "Levels of Protein Structure",
+        "level": 2
+      }
     },
     {
-      id: 'list-secondary',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'α-helix: the polypeptide backbone coils into a right-handed spiral; hydrogen bonds form between the C=O of one amino acid and the N−H group four residues along the chain — stabilising the helical shape',
-          'β-pleated sheet: two or more regions of the chain run parallel (or antiparallel) to each other and are linked by hydrogen bonds between backbone groups; the sheet is slightly pleated (not flat)',
-          'Some regions adopt neither structure and form random coils',
-          'The amino acid sequence determines which secondary structure forms: certain sequences favour the α-helix, others favour β-sheet',
-        ],
-      },
+      "id": "list-levels",
+      "type": "list",
+      "data": {
+        "style": "numbered",
+        "items": [
+          "Primary: The specific sequence of amino acids in a polypeptide chain, determined by genes.",
+          "Secondary: Hydrogen bonds form between the oxygen of the carboxyl group and hydrogen of the amine group, causing the chain to fold into an alpha-helix or fold into a beta-pleated sheet.",
+          "Tertiary: Further folding into a complex, specific 3D shape. Maintained by bonds between the R-groups: Hydrogen bonds, weak van der Waals forces, Ionic bonds, and strong covalent Disulfide bridges (between cysteine R-groups).",
+          "Quaternary: A protein consisting of more than one polypeptide chain joined together (e.g., Haemoglobin has 4 chains). May include non-protein prosthetic groups."
+        ]
+      }
     },
     {
-      id: 'svg-secondary',
-      type: 'svg',
-      data: {
-        caption: 'Secondary structure: α-helix (left) and β-pleated sheet (right). Both are maintained by hydrogen bonds (blue dashed lines).',
-        svg: `<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="12">
-  <defs>
-    <style>
-      .lbl{fill:#1f2937}
-      .dim{fill:#6b7280}
-      .hbond{stroke:#3b82f6;stroke-width:1.5;stroke-dasharray:5,3;fill:none}
-      .chain{stroke:#6366f1;stroke-width:3;fill:none}
-      .chain2{stroke:#16a34a;stroke-width:3;fill:none}
-    </style>
-  </defs>
-  <line x1="300" y1="20" x2="300" y2="305" stroke="#e5e7eb" stroke-width="1.5"/>
-
-  <!-- α-HELIX -->
-  <text x="150" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e40af">α-Helix</text>
-  <path d="M 150 40 C 200 58, 200 78, 150 98 C 100 118, 100 138, 150 158 C 200 178, 200 198, 150 218 C 100 238, 100 258, 150 278" class="chain"/>
-  <line x1="150" y1="40"  x2="150" y2="98"  class="hbond"/>
-  <line x1="150" y1="98"  x2="150" y2="158" class="hbond"/>
-  <line x1="150" y1="158" x2="150" y2="218" class="hbond"/>
-  <line x1="150" y1="218" x2="150" y2="278" class="hbond"/>
-  <text x="224" y="76"  class="dim" font-size="10">H-bonds stabilise</text>
-  <text x="224" y="88"  class="dim" font-size="10">the spiral</text>
-  <line x1="222" y1="80" x2="178" y2="92" stroke="#9ca3af" stroke-width="1"/>
-  <text x="150" y="300" text-anchor="middle" class="lbl" font-size="11">polypeptide coils into a spiral</text>
-
-  <!-- β-PLEATED SHEET -->
-  <text x="450" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#166534">β-Pleated Sheet</text>
-  <polyline points="330,50 355,72 380,50 405,72 430,50 455,72 475,50" class="chain"/>
-  <polyline points="330,132 355,154 380,132 405,154 430,132 455,154 475,132" class="chain2"/>
-  <polyline points="330,214 355,236 380,214 405,236 430,214 455,236 475,214" class="chain"/>
-  <line x1="355" y1="72"  x2="355" y2="132" class="hbond"/>
-  <line x1="380" y1="50"  x2="380" y2="132" class="hbond"/>
-  <line x1="405" y1="72"  x2="405" y2="132" class="hbond"/>
-  <line x1="430" y1="50"  x2="430" y2="132" class="hbond"/>
-  <line x1="355" y1="154" x2="355" y2="214" class="hbond"/>
-  <line x1="380" y1="132" x2="380" y2="214" class="hbond"/>
-  <line x1="405" y1="154" x2="405" y2="214" class="hbond"/>
-  <text x="490" y="99"  class="dim" font-size="10">H-bonds</text>
-  <text x="490" y="111" class="dim" font-size="10">between</text>
-  <text x="490" y="123" class="dim" font-size="10">strands</text>
-  <line x1="487" y1="106" x2="462" y2="106" stroke="#9ca3af" stroke-width="1"/>
-  <text x="403" y="268" text-anchor="middle" class="lbl" font-size="11">parallel chains linked by H-bonds</text>
-</svg>`,
-      },
-    },
-
-    // ── Tertiary structure ───────────────────────────────────────────────────────
-    {
-      id: 'h-tertiary',
-      type: 'heading',
-      data: { text: 'Tertiary Structure', level: 2 },
+      "id": "h-globular",
+      "type": "heading",
+      "data": {
+        "text": "Globular vs Fibrous Proteins",
+        "level": 2
+      }
     },
     {
-      id: 'p-tertiary',
-      type: 'paragraph',
-      data: {
-        text: 'The twisted and folded polypeptide chain folds further to give the whole molecule a complex three-dimensional (globular) shape — this is the tertiary structure. Tertiary structure is determined by the amino acid sequence: all molecules of a particular protein fold in the same way under the same conditions. It is directly linked to the protein\'s function (e.g. the shape of an enzyme\'s active site, the oxygen-binding pocket of haemoglobin).',
-      },
+      "id": "p-globular",
+      "type": "paragraph",
+      "data": {
+        "text": "Globular proteins (e.g., enzymes, haemoglobin) are spherical, compact, and soluble in water because hydrophobic R-groups face inward and hydrophilic ones outward. Fibrous proteins (e.g., collagen, keratin) form long, insoluble, strong structural strands."
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-1-2-8-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M40,20 Q60,130 80,20 T120,20 T160,20' fill='none' stroke='#9f7aea' stroke-width='5'/><text x='70' y='140' font-size='12'>α-Helix</text><polyline points='220,100 240,30 260,100 280,30 300,100' fill='none' stroke='#f6ad55' stroke-width='5'/><text x='220' y='140' font-size='12'>β-Pleated Sheet</text><text x='110' y='15' font-size='10' fill='#718096'>(Hydrogen Bonds)</text></svg>",
+            "caption": "Secondary Structure"
+        }
     },
     {
-      id: 'list-tertiary-bonds',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Hydrogen bonds — form between R-groups of various amino acids; individually weak but there are many, collectively making a significant contribution to stability',
-          'Ionic bonds — form between amino acids with oppositely charged R-groups (e.g. −NH₃⁺ and −COO⁻); not strong, easily disrupted by changes in pH which alter R-group charges',
-          'Disulfide bridges — covalent S−S bonds forming between the −SH groups of two cysteine residues; much stronger than H-bonds and ionic bonds, most resistant to denaturation',
-          'Hydrophobic interactions — non-polar R-groups cluster in the protein interior, away from water; not true bonds but collectively stabilise the folded structure',
-        ],
-      },
-    },
-    {
-      id: 'svg-tertiary-bonds',
-      type: 'svg',
-      data: {
-        caption: 'Schematic of a folded polypeptide showing the three types of bond that maintain tertiary structure.',
-        svg: `<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="12">
-  <defs>
-    <style>
-      .lbl{fill:#1f2937}
-      .dim{fill:#6b7280;font-size:10px}
-      .hb{stroke:#3b82f6;stroke-width:1.5;stroke-dasharray:5,3;fill:none}
-      .ib{stroke:#d97706;stroke-width:2;fill:none}
-      .ds{stroke:#ca8a04;stroke-width:3;fill:none}
-      .chain{stroke:#6366f1;stroke-width:2.5;fill:none}
-    </style>
-  </defs>
-  <!-- Folded chain (S-curve) -->
-  <path d="M 55 80 Q 140 38, 198 88 Q 258 140, 198 198 Q 138 258, 218 268 Q 298 278, 360 238 Q 422 198, 402 138 Q 382 80, 462 58" class="chain"/>
-  <!-- Hydrogen bond -->
-  <circle cx="150" cy="68" r="7" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="170" cy="104" r="7" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <line x1="150" y1="68" x2="170" y2="104" class="hb"/>
-  <text x="98" y="56"  text-anchor="middle" class="dim">H-bond</text>
-  <text x="98" y="68"  text-anchor="middle" class="dim">(weak, many)</text>
-  <line x1="118" y1="60" x2="146" y2="72" stroke="#9ca3af" stroke-width="1"/>
-  <!-- Ionic bond -->
-  <circle cx="260" cy="112" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-  <text x="260" y="116" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#92400e">+</text>
-  <circle cx="298" cy="132" r="9" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-  <text x="298" y="136" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#92400e">−</text>
-  <line x1="269" y1="112" x2="289" y2="130" class="ib"/>
-  <text x="345" y="96"  text-anchor="middle" class="dim">Ionic bond</text>
-  <text x="345" y="108" text-anchor="middle" class="dim">(+/− R-groups)</text>
-  <line x1="320" y1="101" x2="286" y2="118" stroke="#9ca3af" stroke-width="1"/>
-  <!-- Disulfide bridge -->
-  <circle cx="208" cy="196" r="9" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
-  <text x="208" y="200" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" fill="#713f12">S</text>
-  <circle cx="244" cy="220" r="9" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
-  <text x="244" y="224" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" fill="#713f12">S</text>
-  <line x1="217" y1="196" x2="235" y2="218" class="ds"/>
-  <text x="128" y="218" text-anchor="middle" class="dim">Disulfide bridge</text>
-  <text x="128" y="230" text-anchor="middle" class="dim">(S−S, covalent,</text>
-  <text x="128" y="242" text-anchor="middle" class="dim">strongest)</text>
-  <line x1="166" y1="230" x2="196" y2="210" stroke="#9ca3af" stroke-width="1"/>
-  <!-- Legend -->
-  <rect x="10" y="266" width="500" height="26" rx="5" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="22" y1="279" x2="48" y2="279" class="hb"/>
-  <text x="52" y="283" class="dim">H-bond</text>
-  <line x1="110" y1="279" x2="136" y2="279" class="ib"/>
-  <text x="140" y="283" class="dim">Ionic bond</text>
-  <line x1="206" y1="279" x2="232" y2="279" class="ds"/>
-  <text x="236" y="283" class="dim">Disulfide bridge</text>
-  <path d="M 330 279 Q 345 273, 360 279 Q 375 285, 390 279" class="chain"/>
-  <text x="395" y="283" class="dim">Polypeptide chain</text>
-</svg>`,
-      },
-    },
-    {
-      id: 'callout-denaturation',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Denaturation',
-        text: 'Denaturation disrupts the bonds maintaining secondary and tertiary structure, causing the protein to unfold and lose its 3D shape. High temperature provides kinetic energy that breaks hydrogen bonds and ionic bonds. Extreme pH disrupts ionic bonds by altering R-group charges. Denaturation does NOT break peptide bonds — the primary structure (amino acid sequence) is preserved but the protein loses biological activity because its active/binding site shape is destroyed.',
-      },
-    },
-
-    // ── Quaternary structure ─────────────────────────────────────────────────────
-    {
-      id: 'h-quaternary',
-      type: 'heading',
-      data: { text: 'Quaternary Structure', level: 2 },
-    },
-    {
-      id: 'p-quaternary',
-      type: 'paragraph',
-      data: {
-        text: 'Some proteins consist of two or more polypeptide chains held together. Such proteins are described as having a quaternary structure. The chains are held together by the same types of bond that maintain tertiary structure (hydrogen bonds, ionic bonds, disulfide bridges). Not all proteins have quaternary structure — only those with more than one polypeptide chain.',
-      },
-    },
-    {
-      id: 'callout-haemoglobin',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Haemoglobin — Example of Quaternary Structure',
-        text: 'Haemoglobin is the red oxygen-carrying pigment in blood. It has a quaternary structure consisting of four polypeptide chains: two α-chains and two β-chains, each folded independently into a globular tertiary shape. Each chain contains a haem prosthetic group with an Fe²⁺ ion that binds one O₂ molecule (four O₂ per haemoglobin molecule). Hydrophilic R groups on each subunit face outwards, maintaining solubility in blood plasma. The four chains interact cooperatively — binding of one O₂ alters the quaternary structure, increasing affinity for subsequent O₂ molecules (the basis of the sigmoidal O₂ dissociation curve). If the amino acid sequence of any subunit changes, the properties of haemoglobin change — for example, in sickle cell anaemia a single amino acid substitution in the β-chain causes molecules to polymerise under low oxygen conditions.',
-      },
-    },
-
-    // ── Collagen ─────────────────────────────────────────────────────────────────
-    {
-      id: 'h-collagen',
-      type: 'heading',
-      data: { text: 'Collagen — Structure of a Fibrous Protein', level: 2 },
-    },
-    {
-      id: 'p-collagen',
-      type: 'paragraph',
-      data: {
-        text: 'Collagen is the most common structural protein in vertebrates. It provides structural support to connective tissues (tendons, ligaments, skin, bone matrix). Collagen fibres are positioned so that they are aligned with the forces applied to the tissue they support.',
-      },
-    },
-    {
-      id: 'list-collagen',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Almost every third amino acid is glycine — glycine is the smallest amino acid (R group = −H), so it fits into the tightly packed centre of the triple helix without steric clashes',
-          'High proportions of proline and hydroxyproline are also present; their R groups repel each other, adding rigidity and stability to the helical structure',
-          'Three polypeptide chains wind together to form a right-handed triple helix (each individual chain first coils into a left-handed helix before winding with the others) — this assembly occurs inside the lumen of the rough endoplasmic reticulum',
-          'Covalent cross-linkages form between adjacent collagen fibrils outside the cell, greatly increasing the tensile strength of collagen fibres',
-          'Collagen is insoluble in water — the collagen molecules are too large and long to dissolve, which suits its structural role',
-        ],
-      },
-    },
-    {
-      id: 'callout-collagen-key',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Collagen — Exam Key Points',
-        text: 'Every 3rd amino acid = glycine (smallest, fits triple helix centre). Triple helix = 3 polypeptide chains wound together (forms in ER lumen). High proline/hydroxyproline content → rigidity. Covalent cross-linkages between fibrils → tensile strength. Insoluble in water. Collagen is the most abundant structural protein in vertebrates.',
-      },
-    },
-
-    // ── Fibrous vs Globular ──────────────────────────────────────────────────────
-    {
-      id: 'h-fib-glob',
-      type: 'heading',
-      data: { text: 'Fibrous vs Globular Proteins', level: 2 },
-    },
-    {
-      id: 'table-fib-glob',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Comparison of fibrous and globular proteins',
-        headers: ['Feature', 'Fibrous proteins', 'Globular proteins'],
-        rows: [
-          ['Shape', 'Long, thin, rope-like fibres', 'Compact, roughly spherical'],
-          ['Solubility', 'Insoluble in water', 'Soluble in water'],
-          ['Tertiary structure', 'Regular, repetitive folding', 'Complex, irregular 3D folding'],
-          ['Function', 'Structural support', 'Biochemical / metabolic roles'],
-          ['Examples', 'Keratin (hair, nails), collagen (tendons), fibrin (blood clots)', 'Enzymes, haemoglobin, antibodies, insulin'],
-        ],
-      },
-    },
-    {
-      id: 'callout-tip-exam',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Exam Technique — Protein Structure Questions',
-        text: 'When explaining denaturation: state which bonds are broken (H-bonds and ionic bonds by heat/pH; disulfide bridges only by reducing agents) and why the protein loses function (the active/binding site shape changes). When asked to compare fibrous and globular proteins, always include: shape, solubility, and a named example of each. For quaternary structure, always state that it involves two or more polypeptide chains and name haemoglobin.',
-      },
-    },
-
-    // ── Checklist + Summary ──────────────────────────────────────────────────────
-    {
-      id: 'checklist-protein-structure',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Describe secondary structure: α-helix (backbone H-bonds, spiral) and β-pleated sheet (parallel chain H-bonds)', checked: false },
-          { text: 'List the bond types maintaining tertiary structure: H-bonds (weak, many), ionic bonds (pH-sensitive), disulfide bridges (covalent, strongest), hydrophobic interactions', checked: false },
-          { text: 'Explain denaturation: H-bonds and ionic bonds broken by heat/pH change; peptide bonds (primary structure) are intact', checked: false },
-          { text: 'Define quaternary structure as two or more polypeptide chains held together', checked: false },
-          { text: 'Name haemoglobin as a quaternary protein with 4 chains (2α + 2β); describe hydrophilic R groups facing outwards + cooperative O₂ binding', checked: false },
-          { text: 'Describe collagen: every 3rd = glycine; triple helix; proline/hydroxyproline stability; covalent cross-linkages; insoluble', checked: false },
-          { text: 'Compare fibrous (structural, insoluble, e.g. collagen) with globular (soluble, biochemical roles, e.g. enzymes)', checked: false },
-        ],
-      },
-    },
-    {
-      id: 'summary-protein-structure',
-      type: 'summary',
-      data: {
-        text: "Secondary structure (α-helix and β-pleated sheet) forms from hydrogen bonds along the polypeptide backbone. Tertiary structure is the overall 3D fold, maintained by H-bonds, ionic bonds, disulfide bridges, and hydrophobic interactions between R-groups — its shape determines function. Quaternary structure involves two or more polypeptide chains (e.g. haemoglobin: 2α + 2β chains, haem groups, cooperative O₂ binding, hydrophilic R groups face outwards). Collagen: most abundant vertebrate structural protein; every 3rd amino acid = glycine; triple helix; high proline content; covalent cross-linkages; insoluble. Denaturation disrupts H-bonds and ionic bonds without breaking peptide bonds. Fibrous proteins (e.g. collagen) are structural and insoluble; globular proteins (e.g. enzymes, haemoglobin) are soluble and carry out biochemical roles.",
-      },
-    },
+        "id": "svg-diag-1-2-8-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,100 Q80,20 150,70 T250,50' fill='none' stroke='#4a5568' stroke-width='4'/><line x1='80' y1='50' x2='120' y2='80' stroke='#e53e3e' stroke-width='4'/><text x='65' y='45' font-size='10' fill='#c53030'>Disulfide Bridge</text><line x1='160' y1='80' x2='190' y2='60' stroke='#3182ce' stroke-width='2' stroke-dasharray='4'/><text x='160' y='100' font-size='10' fill='#2b6cb0'>Ionic Bond</text><line x1='210' y1='55' x2='230' y2='90' stroke='#38a169' stroke-width='2' stroke-dasharray='2'/><text x='200' y='110' font-size='10' fill='#2f855a'>Hydrogen Bond</text></svg>",
+            "caption": "Tertiary Structure Bonds"
+        }
+    }
   ],
-
-  recall: {
-    enabled: true,
-    cues: [
+  "recall": {
+    "enabled": true,
+    "cues": [
       {
-        id: 'cue-ps-1',
-        blockId: 'list-secondary',
-        prompt: 'What are the two types of secondary structure, and what type of bond maintains each one?',
+        "id": "cue-1",
+        "blockId": "list-levels",
+        "prompt": "Name the four types of bonds/forces that hold the tertiary 3D structure together."
       },
       {
-        id: 'cue-ps-2',
-        blockId: 'list-tertiary-bonds',
-        prompt: 'List the three types of bond that maintain tertiary structure, from weakest to strongest.',
-      },
-      {
-        id: 'cue-ps-3',
-        blockId: 'callout-denaturation',
-        prompt: 'What happens during denaturation? Which bonds are broken and which are preserved?',
-      },
-      {
-        id: 'cue-ps-4',
-        blockId: 'h-quaternary',
-        prompt: 'Define quaternary structure and give a named example of a protein that has it.',
-      },
-      {
-        id: 'cue-ps-5',
-        blockId: 'table-fib-glob',
-        prompt: 'Compare fibrous and globular proteins in terms of shape, solubility, function, and a named example of each.',
-      },
+        "id": "cue-2",
+        "blockId": "p-globular",
+        "prompt": "Explain why globular proteins are soluble in water."
+      }
     ],
-    summaryText:
-      'Secondary = H-bonds along backbone → α-helix or β-sheet. Tertiary = 3D fold (H-bonds + ionic bonds + disulfide bridges between R-groups). Quaternary = 2+ chains (e.g. haemoglobin). Denaturation breaks H-bonds/ionic bonds, not peptide bonds.',
-    ready: false,
+    "summaryText": "Protein structure progresses from primary sequence to secondary (alpha/beta shapes), to specific complex 3D tertiary shapes held by various R-group bonds, and sometimes quaternary structures of multiple chains.",
+    "ready": true
   },
-
-  evidence: [
-    {
-      id: 'ev-1',
-      title: 'AQA A Level Biology Student Book 1',
-      detail: 'Pages 20–21: secondary, tertiary and quaternary protein structure; fibrous vs globular',
-      year: '2016',
-      source: 'AQA Biology Student Book 1, Chapter 1 — Biological Molecules',
-      tags: ['secondary structure', 'tertiary structure', 'quaternary structure', 'denaturation', 'haemoglobin', 'fibrous', 'globular'],
-    },
-  ],
+  "evidence": []
 };

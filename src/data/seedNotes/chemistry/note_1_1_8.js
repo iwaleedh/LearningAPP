@@ -28,6 +28,51 @@ export const note_chemistry_1_1_8 = {
       terms: []
     },
     {
+      id: 'svg-cp1-apparatus',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 285" font-family="Arial,sans-serif"><text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Core Practical 1 &#8212; Gas Syringe Apparatus</text><rect x="98" y="78" width="8" height="185" fill="#888"/><rect x="72" y="258" width="62" height="9" rx="2" fill="#888"/><rect x="106" y="108" width="83" height="8" fill="#888"/><rect x="182" y="105" width="13" height="15" rx="2" fill="#666"/><rect x="192" y="87" width="28" height="64" rx="2" fill="#d6eeff" stroke="#2a6db5" stroke-width="2"/><polygon points="192,147 152,255 260,255 220,147" fill="#d6eeff" stroke="#2a6db5" stroke-width="2"/><line x1="149" y1="257" x2="263" y2="257" stroke="#2a6db5" stroke-width="2"/><polygon points="163,218 192,150 220,150 249,218" fill="#aed6f1"/><polygon points="189,83 223,83 220,97 192,97" fill="#8B4513" stroke="#5a2d0c" stroke-width="1.5"/><path d="M220,89 L272,89 L272,126" stroke="#2a6db5" stroke-width="3" fill="none"/><rect x="272" y="118" width="178" height="34" rx="5" fill="#f2f9ff" stroke="#2a6db5" stroke-width="2"/><rect x="388" y="120" width="10" height="30" fill="#a0c4e8" stroke="#2a6db5" stroke-width="1.5"/><rect x="396" y="108" width="14" height="54" rx="3" fill="#87a9c8" stroke="#2a6db5" stroke-width="1.5"/><line x1="296" y1="118" x2="296" y2="124" stroke="#2a6db5" stroke-width="1"/><line x1="313" y1="118" x2="313" y2="124" stroke="#2a6db5" stroke-width="1"/><line x1="330" y1="118" x2="330" y2="124" stroke="#2a6db5" stroke-width="1"/><line x1="347" y1="118" x2="347" y2="124" stroke="#2a6db5" stroke-width="1"/><line x1="364" y1="118" x2="364" y2="124" stroke="#2a6db5" stroke-width="1"/><line x1="381" y1="118" x2="381" y2="124" stroke="#2a6db5" stroke-width="1"/><line x1="205" y1="215" x2="135" y2="268" stroke="#555" stroke-width="1" stroke-dasharray="4,2"/><text x="12" y="270" font-size="11" fill="#333">Mg ribbon</text><text x="12" y="282" font-size="11" fill="#333">+ excess HCl(aq)</text><line x1="205" y1="88" x2="178" y2="63" stroke="#555" stroke-width="1" stroke-dasharray="4,2"/><text x="80" y="60" font-size="11" fill="#333">rubber bung</text><text x="252" y="83" font-size="11" fill="#c0392b" font-weight="bold">H&#x2082;(g)</text><text x="355" y="112" text-anchor="middle" font-size="11" fill="#333">gas syringe</text><text x="335" y="162" text-anchor="middle" font-size="10" fill="#555">graduated scale (cm&#xB3;)</text><line x1="410" y1="135" x2="452" y2="135" stroke="#555" stroke-width="1" stroke-dasharray="4,2"/><text x="454" y="139" font-size="11" fill="#333">plunger</text><text x="91" y="202" text-anchor="middle" font-size="9" fill="#888">retort</text><text x="91" y="213" text-anchor="middle" font-size="9" fill="#888">stand</text></svg>',
+        caption: 'Gas syringe apparatus for Core Practical 1. The plunger is pushed out by the H₂ produced. Read the volume from the graduated scale at eye level once the reaction is complete and the syringe has cooled to room temperature.'
+      }
+    },
+    {
+      id: 'h-safety',
+      type: 'heading',
+      data: { text: 'Safety Precautions', level: 2 }
+    },
+    {
+      id: 'list-safety',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Goggles and a lab coat</strong> must be worn throughout — HCl(aq) is corrosive and can cause burns.',
+          '<strong>Dilute HCl</strong> (typically 2 mol dm⁻³) is used rather than concentrated HCl to reduce hazard.',
+          'Mg ribbon is <strong>flammable</strong> — keep away from flames; store in a sealed container.',
+          'Work in a <strong>well-ventilated area</strong> — H₂ gas is flammable and builds up in poorly ventilated spaces.',
+          'Handle glass apparatus carefully; ensure all joints and the bung are secure before starting the reaction.'
+        ]
+      }
+    },
+    {
+      id: 'h-variables',
+      type: 'heading',
+      data: { text: 'Variables', level: 2 }
+    },
+    {
+      id: 'list-variables',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Independent variable:</strong> Mass of Mg ribbon used.',
+          '<strong>Dependent variable:</strong> Volume of H₂ gas produced (cm³), read from gas syringe.',
+          '<strong>Control variables:</strong> Concentration and volume of HCl kept constant (always in large excess); room temperature recorded and kept constant; same gas syringe used throughout.',
+          'HCl is always in <strong>excess</strong> to ensure all the Mg reacts — so that moles of Mg = moles of H₂ produced (1:1 mole ratio from equation).'
+        ]
+      }
+    },
+    {
       id: 'h-method',
       type: 'heading',
       data: { text: 'Method', level: 2 },
@@ -37,7 +82,7 @@ export const note_chemistry_1_1_8 = {
       id: 'list-method',
       type: 'list',
       data: {
-        style: 'ordered',
+        style: 'numbered',
         items: [
           'Weigh a strip of magnesium ribbon accurately (to ±0.001 g). Remove any oxide layer by polishing with sandpaper.',
           'Set up a conical flask fitted with a bung and a delivery tube connected to a gas syringe (or inverted measuring cylinder over water).',
@@ -54,8 +99,8 @@ export const note_chemistry_1_1_8 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Calculation',
-        text: 'n(Mg) = mass / 24.3 (Aᵣ of Mg)<br/>n(H₂) = n(Mg) [1:1 ratio from equation]<br/>Molar volume = volume of H₂ / n(H₂)<br/><br/>Expected value at r.t.p.: <strong>≈ 24,000 cm³ mol⁻¹</strong> (24 dm³ mol⁻¹)'
+        title: 'Calculation — Worked Example',
+        text: '<strong>A student uses 0.0486 g of Mg and collects 47.5 cm³ of H₂ at r.t.p. Calculate the molar volume of H₂.</strong><br/><br/>Equation: Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)<br/><br/><strong>Step 1 — Find n(Mg):</strong><br/>n(Mg) = mass / Aᵣ = 0.0486 / 24.3 = 2.00 × 10⁻³ mol<br/><br/><strong>Step 2 — Find n(H₂):</strong><br/>Mole ratio Mg : H₂ = 1 : 1, so n(H₂) = 2.00 × 10⁻³ mol<br/><br/><strong>Step 3 — Calculate molar volume:</strong><br/>Molar volume = V / n = 47.5 / (2.00 × 10⁻³) = <strong>23 750 cm³ mol⁻¹ ≈ 24 000 cm³ mol⁻¹</strong><br/><br/><em>Expected value at r.t.p.: 24 000 cm³ mol⁻¹ (24 dm³ mol⁻¹).<br/>A result slightly below 24 000 indicates some gas was lost before the flask was sealed.</em>'
       },
       terms: []
     },
@@ -86,24 +131,44 @@ export const note_chemistry_1_1_8 = {
           ['Oxide layer on Mg ribbon (MgO)', 'Less Mg reacts → volume too low', 'Polish ribbon with sandpaper immediately before weighing'],
           ['Gas syringe sticks (friction)', 'Volume reading inaccurate', 'Check syringe moves freely; lubricate if needed'],
           ['Room temperature differs from r.t.p.', 'Volume differs from expected 24 dm³ mol⁻¹', 'Record T and P; use ideal gas law PV = nRT to correct'],
-          ['HCl not in excess', 'Not all Mg reacts → volume too low', 'Use a large excess of HCl (ensure all Mg dissolves)']
+          ['HCl not in excess', 'Not all Mg reacts → volume too low', 'Use a large excess of HCl (ensure all Mg dissolves)'],
+          ['Parallax error when reading syringe', 'Volume reading inaccurate (too high or too low)', 'Read the gas syringe at eye level, keeping the line of sight perpendicular to the scale'],
+          ['Volume recorded before gas cools to room temperature', 'Hot gas occupies a greater volume → molar volume calculated is too high', 'Wait until the syringe/flask has cooled to room temperature before recording the volume']
         ]
       },
       terms: []
+    },
+    {
+      id: 'checklist-cp1',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'I can state the equation for Core Practical 1: Mg + 2HCl → MgCl₂ + H₂', checked: false },
+          { text: 'I can describe the apparatus: conical flask, rubber bung, delivery tube, gas syringe', checked: false },
+          { text: 'I know why Mg ribbon must be polished with sandpaper (to remove the MgO oxide layer)', checked: false },
+          { text: 'I can calculate n(Mg) from mass and Aᵣ, then apply 1:1 ratio to find n(H₂)', checked: false },
+          { text: 'I can calculate the molar volume from V(H₂) / n(H₂)', checked: false },
+          { text: 'I can state and explain at least 4 sources of error and their improvements', checked: false },
+          { text: 'I can explain why HCl must be in excess', checked: false },
+          { text: 'I understand the alternative method: CaCO₃ + ethanoic acid with the thread suspension technique', checked: false }
+        ]
+      }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'callout-aim', prompt: 'Write the equation for Core Practical 1 and state what the aim of the experiment is.' },
+      { id: 'c1', blockId: 'callout-aim', prompt: 'Write the balanced equation for Core Practical 1 and state the aim.' },
       { id: 'c2', blockId: 'list-method', prompt: 'Why must the Mg ribbon be polished with sandpaper before use?' },
-      { id: 'c3', blockId: 'table-errors', prompt: 'State two sources of error in CP1 that would cause the measured volume to be too low, and how to minimise each.' },
-      { id: 'c4', blockId: 'callout-calc', prompt: 'What is the expected molar volume of H₂ at r.t.p.?' },
-      { id: 'c5', blockId: 'callout-alt-method', prompt: 'In the alternative CP1 method using CaCO₃, why is a weak acid (like ethanoic acid) preferred over a strong acid?' },
-      { id: 'c6', blockId: 'callout-alt-method', prompt: 'How can you completely eliminate the "gas escape before sealing" error using a thread?' }
+      { id: 'c-safety', blockId: 'list-safety', prompt: 'State two safety precautions needed for Core Practical 1 and give a reason for each.' },
+      { id: 'c-vars', blockId: 'list-variables', prompt: 'State the independent, dependent, and one control variable in Core Practical 1.' },
+      { id: 'c3', blockId: 'table-errors', prompt: 'State two sources of error in CP1 that cause the measured volume to be too low, and one that causes it to be too high.' },
+      { id: 'c4', blockId: 'callout-calc', prompt: '0.0486 g of Mg is used and 47.5 cm³ of H₂ is collected at r.t.p. Calculate the molar volume of H₂. Show all steps.' },
+      { id: 'c5', blockId: 'callout-alt-method', prompt: 'In the alternative CP1 method using CaCO₃, why is a weak acid preferred and how does the thread technique work?' },
+      { id: 'c6', blockId: 'table-errors', prompt: 'Explain how reading the gas syringe before the gas has cooled affects the calculated molar volume and why.' }
     ],
-    summaryText: 'CP1: Mg + 2HCl → MgCl₂ + H₂. Weigh Mg, collect H₂ in gas syringe. Molar volume = V(H₂)/n(Mg) ≈ 24,000 cm³ mol⁻¹. Alternative: CaCO₃ + ethanoic acid (weak acid = slower reaction). Suspend solid on thread to prevent gas loss. Key errors: gas escape before sealing, oxide layer on Mg, gas syringe friction, HCl not in excess.',
-    ready: false
+    summaryText: 'CP1: Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g). Weigh Mg, seal flask, collect H₂ in gas syringe. n(Mg) = mass ÷ 24.3; mole ratio 1:1; molar volume = V ÷ n ≈ 24 000 cm³ mol⁻¹. Safety: goggles, dilute HCl, ventilation. Independent variable: mass Mg; dependent: volume H₂; control: HCl always in excess. Errors causing V too low: gas escape before sealing, oxide layer on Mg, HCl not in excess. Errors causing V too high: gas still warm when volume recorded. Parallax error: read syringe at eye level. Alternative: CaCO₃ + ethanoic acid (slow reaction = easier to seal); suspend solid on thread to prevent gas loss.',
+    ready: true
   },
   evidence: []
 };

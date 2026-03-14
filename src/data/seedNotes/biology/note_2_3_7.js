@@ -1,204 +1,106 @@
 export const note_biology_2_3_7 = {
-  blocks: [
+  "blocks": [
     {
-      type: 'objective',
-      id: 'obj-stem-cells',
-      data: {
-        text: 'Understand stem cell types (totipotent, pluripotent, multipotent, unipotent), compare embryonic and adult stem cells, and evaluate therapeutic applications and ethical issues.',
-      },
+      "id": "obj-1",
+      "type": "objective",
+      "data": {
+        "text": "Understand the definition, types, and potential uses of stem cells."
+      }
     },
     {
-      type: 'heading',
-      id: 'h-stem-types',
-      data: { text: 'Stem Cell Classification by Potency', level: 2 },
+      "id": "h-stem",
+      "type": "heading",
+      "data": {
+        "text": "Stem Cells",
+        "level": 2
+      }
     },
     {
-      type: 'paragraph',
-      id: 'p-potency-def',
-      data: {
-        text: 'Potency refers to the range of cell types a stem cell can differentiate into. Stem cells are classified on a spectrum from totipotent (most versatile) to unipotent (most limited).',
-      },
+      "id": "p-stem",
+      "type": "paragraph",
+      "data": {
+        "text": "A stem cell is an undifferentiated cell capable of continuously dividing (by mitosis) and differentiating into specialised cell types."
+      }
     },
     {
-      type: 'list',
-      id: 'list-potency',
-      data: {
-        style: 'bullet',
-        items: [
-          'Totipotent: can differentiate into any cell type, including extraembryonic tissues (placenta, umbilical cord). Example: fertilised egg (zygote), early blastomeres (up to 8-cell stage)',
-          'Pluripotent: can differentiate into most cell types but not extraembryonic tissues. Examples: inner cell mass of blastocyst (embryonic stem cells, ESCs), induced pluripotent stem cells (iPSCs)',
-          'Multipotent: can differentiate into a limited range of cell types; restricted to a particular lineage. Examples: haematopoietic (blood) stem cells in bone marrow (produce all blood cell types), neural stem cells in brain (produce neurons and glia), mesenchymal stem cells (produce bone, cartilage, fat)',
-          'Unipotent: can only differentiate into one cell type; technically just self-renewing. Examples: spermatogonial stem cells (produce only sperm), some cell types in skin epidermis',
-        ],
-      },
+      "id": "h-types",
+      "type": "heading",
+      "data": {
+        "text": "Types of Stem Cells",
+        "level": 3
+      }
     },
     {
-      type: 'heading',
-      id: 'h-embryonic-vs-adult',
-      data: { text: 'Embryonic versus Adult Stem Cells', level: 2 },
+      "id": "list-types",
+      "type": "list",
+      "data": {
+        "style": "bullet",
+        "items": [
+          "Totipotent: Can differentiate into ANY cell type, including extra-embryonic tissues (like the placenta). Found in early mammalian embryos (first few divisions).",
+          "Pluripotent: Can differentiate into ALMOST ANY cell type within the embryo, but not extra-embryonic tissues. Found in the inner cell mass of the blastocyst.",
+          "Multipotent: Can differentiate into a LIMITED number of cell types (e.g., haematopoietic stem cells in adult bone marrow can form all types of blood cells). Found in adult tissues.",
+          "Unipotent: Can only differentiate into ONE type of cell (e.g., epidermal stem cells dividing to replace skin cells)."
+        ]
+      }
     },
     {
-      type: 'comparisonTable',
-      id: 'table-stem-compare',
-      data: {
-        headers: ['Feature', 'Embryonic Stem Cells (ESCs)', 'Adult Stem Cells (ASCs)'],
-        rows: [
-          ['Potency', 'Pluripotent; can form most cell types', 'Multipotent; limited to specific lineages'],
-          ['Source', 'Inner cell mass of blastocyst (5–6 days)', 'Bone marrow, fat, skin, neural tissue, etc.'],
-          ['Abundance', 'Rare; only ~100–150 cells in blastocyst', 'More abundant in certain tissues'],
-          ['Proliferation rate', 'Very high; double every 24–48 hours', 'Lower; slower division'],
-          ['Telomere length', 'Long telomeres; high telomerase activity', 'Shorter telomeres; limited divisions (Hayflick limit)'],
-          ['Genetic stability', 'Can accumulate mutations after prolonged culture', 'Generally more stable'],
-          ['Therapeutic potential', 'High; can produce many cell types', 'Lower; limited lineage options'],
-          ['Ethical issues', 'Controversial; involves embryo destruction', 'Less controversial; use adult tissues'],
-        ],
-        caption: 'Comparison of embryonic and adult stem cells.',
-      },
+      "id": "h-uses",
+      "type": "heading",
+      "data": {
+        "text": "Uses in Medicine",
+        "level": 2
+      }
     },
     {
-      type: 'heading',
-      id: 'h-ipsc',
-      data: { text: 'Induced Pluripotent Stem Cells (iPSCs)', level: 2 },
+      "id": "p-uses",
+      "type": "paragraph",
+      "data": {
+        "text": "Stem cells can be used to treat diseases caused by faulty cells. For example, bone marrow transplants (multipotent) treat leukaemia. Pluripotent stem cells hold the potential to treat Parkinson's disease, replace damaged pancreatic beta cells in Type 1 Diabetes, or grow new organs."
+      }
     },
     {
-      type: 'paragraph',
-      id: 'p-ipsc-def',
-      data: {
-        text: 'Induced pluripotent stem cells (iPSCs) are adult cells (e.g. skin fibroblasts) that have been reprogrammed to a pluripotent state through forced expression of four transcription factors: OCT4, SOX2, KLF4, and c-MYC (Yamanaka factors, named after Shinya Yamanaka who discovered the technique in 2006). By introducing these factors (via viral vectors or other methods), the epigenetic landscape of the adult cell is rewritten, switching off adult-specific genes and switching on pluripotency genes. iPSCs are functionally similar to embryonic stem cells but are derived from adult tissues, avoiding ethical concerns.',
-      },
+      "id": "callout-ethics",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Ethical Considerations",
+        "text": "Obtaining pluripotent stem cells traditionally involves extracting them from a blastocyst, destroying the embryo. This raises ethical questions regarding when life begins and whether an embryo has rights."
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-2-3-7-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='90' height='30' fill='#fed7d7' rx='5'/><text x='35' y='40' font-size='10'>Totipotent</text><text x='30' y='60' font-size='8' fill='#c53030'>(All cells + Placenta)</text><path d='M65,65 L65,90' stroke='#333' marker-end='url(#arrow)'/><rect x='130' y='80' width='90' height='30' fill='#fefcbf' rx='5'/><text x='145' y='100' font-size='10'>Pluripotent</text><text x='135' y='120' font-size='8' fill='#b7791f'>(All body cells / Embryo)</text><path d='M110,35 L160,35 L160,70' fill='none' stroke='#333' marker-end='url(#arrow)'/><rect x='240' y='80' width='90' height='30' fill='#c6f6d5' rx='5'/><text x='250' y='100' font-size='10'>Multipotent</text><text x='245' y='120' font-size='8' fill='#2f855a'>(Specific tissues e.g. blood)</text><path d='M220,95 L235,95' stroke='#333' marker-end='url(#arrow)'/></svg>",
+            "caption": "Stem Cell Potency Hierarchy"
+        }
     },
     {
-      type: 'paragraph',
-      id: 'p-ipsc-advantages',
-      data: {
-        text: 'iPSCs offer significant advantages: (1) No ethical issues—derived from patient tissue, not embryos. (2) Patient-specific: iPSCs from a patient\'s own cells can be differentiated into any needed tissue, avoiding immune rejection. (3) Disease modelling: iPSCs from patients with genetic diseases can be differentiated into affected cell types (e.g. neurons from Parkinson\'s patients) to study disease mechanisms and test drugs. (4) Regenerative medicine: can theoretically produce replacement tissues for damaged organs. However, iPSCs have limitations: (1) reprogramming is inefficient (~0.1–1% of starting cells), (2) risk of forming teratomas (tumours containing multiple tissue types) if undifferentiated iPSCs are transplanted, (3) potential for genetic instability during reprogramming.',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-therapeutic-uses',
-      data: { text: 'Therapeutic Applications of Stem Cells', level: 2 },
-    },
-    {
-      type: 'list',
-      id: 'list-therapy',
-      data: {
-        style: 'bullet',
-        items: [
-          'Leukaemia and other blood cancers: bone marrow transplantation (haematopoietic stem cell transplant) replaces cancerous blood-forming cells with healthy donor cells; donor HSCs repopulate the bone marrow and restore normal blood cell production',
-          'Parkinson\'s disease: neural stem cells or ESC-derived dopaminergic neurons transplanted into the substantia nigra (brain region affected in Parkinson\'s) can replace lost neurons and restore dopamine production; clinical trials are ongoing',
-          'Type 1 diabetes: pancreatic stem cells or ESC-derived beta cells can be transplanted to replace destroyed islet cells and restore insulin production; aims to eliminate insulin dependency',
-          'Myocardial infarction (heart attack): cardiac stem cells or ESC-derived cardiomyocytes transplanted into infarcted regions can regenerate cardiac tissue, improve contractility, and reduce scar formation',
-          'Spinal cord injury: neural stem cells can differentiate into neurons and oligodendrocytes to promote nerve regeneration and restore function; clinical trials are underway',
-          'Burn and wound healing: stem cells (bone marrow-derived or adipose-derived) secrete growth factors that promote healing and can differentiate into skin cells; applied topically or injected into wounds',
-          'Liver disease: hepatic stem cells or ESC-derived hepatocytes can replace liver tissue damaged by cirrhosis or hepatitis; potential for reducing transplant waiting lists',
-        ],
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-ethical-issues',
-      data: { text: 'Ethical Issues in Stem Cell Research', level: 2 },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-embryo-issue',
-      data: {
-        text: 'Embryonic stem cell research raises profound ethical questions: (1) Moral status of the embryo—does a blastocyst (5–6 days old, ~100 cells) merit protection as a potential human? (2) Consent—whose permission is needed (egg donor, sperm donor, both)? (3) Commodification—should embryos and gametes be bought and sold? (4) Religious and philosophical perspectives differ significantly on when personhood begins. Some countries permit ESC research with strict regulations (e.g. use of "spare" IVF embryos only); others prohibit it entirely.',
-      },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-adult-ethical',
-      data: {
-        text: 'Adult stem cell research and iPSC research are less ethically contentious but have their own concerns: (1) Informed consent—are donors fully informed about research uses? (2) Commercial use—should profits from stem cell therapies benefit the donor? (3) Access and equity—will therapies be affordable to all or only wealthy populations? (4) Safety and efficacy—untested stem cell therapies marketed directly to patients (direct-to-consumer) raise safety concerns.',
-      },
-    },
-    {
-      type: 'callout',
-      id: 'callout-key-ethical',
-      data: {
-        style: 'key',
-        title: 'Balancing Benefit and Ethics',
-        text: 'Stem cell research offers genuine therapeutic hope for devastating diseases, but must be conducted within ethical frameworks. Many countries now favour iPSC research and adult stem cell research as ethically preferable to embryonic stem cell research, while maintaining high standards for patient safety, informed consent, and equitable access to therapies.',
-      },
-    },
-    {
-      type: 'callout',
-      id: 'callout-tip-potency',
-      data: {
-        style: 'tip',
-        title: 'Remembering Potency',
-        text: 'Think of potency as flexibility: Totipotent = total flexibility (any cell type, including placenta). Pluripotent = plural (many) cell types. Multipotent = multi (several) cell types within a lineage. Unipotent = uni (one) cell type. This mnemonic helps recall which stem cells can differentiate into what.',
-      },
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why can embryonic stem cells differentiate into any cell type while adult stem cells are more restricted? Embryonic stem cells (ESCs) are pluripotent because virtually all genes are accessible (euchromatin). As differentiation proceeds, genes are progressively silenced by epigenetic mechanisms (DNA methylation, histone modification), restricting the developmental potential.',
-        apply: 'A patient with Type 1 diabetes has lost all their insulin-producing beta cells. A researcher proposes transplanting iPSC-derived beta cells. Outline the steps needed: from patient skin cell → iPSC → beta cell → transplantation. Identify the main technical and immunological challenges at each step.',
-        analyze: 'Compare embryonic stem cells (ESCs), adult stem cells (ASCs), and induced pluripotent stem cells (iPSCs) in terms of potency, source, ethical issues, risk of immune rejection, and current clinical applications.',
-        evaluate: 'Evaluate whether the ethical concerns surrounding embryonic stem cell research are resolved by the development of iPSC technology. Consider whether iPSCs are truly equivalent to ESCs, the remaining ethical issues with iPSCs, and the argument that all research that benefits patients is ethically justified.',
-      },
-      terms: [],
-    },
-    {
-      type: 'checklist',
-      id: 'check-stem',
-      data: {
-        items: [
-          { text: 'Can define and distinguish totipotent, pluripotent, multipotent, and unipotent cells', checked: false },
-          { text: 'Know embryonic stem cells are from blastocyst inner cell mass; adult stem cells from various tissues', checked: false },
-          { text: 'Understand iPSCs are adult cells reprogrammed with Yamanaka factors', checked: false },
-          { text: 'Can list therapeutic uses: leukaemia (bone marrow), Parkinson\'s (neural cells), diabetes (pancreatic cells)', checked: false },
-          { text: 'Appreciate ethical issues with embryonic stem cells vs. less controversial adult/iPSC approaches', checked: false },
-        ],
-      },
-    },
-    {
-      type: 'summary',
-      id: 'sum-stem',
-      data: {
-        text: 'Stem cells classified by potency: totipotent (zygote, 8-cell stage, any cell type), pluripotent (ESCs, iPSCs, most cell types), multipotent (bone marrow, neural, mesenchymal; limited lineages), unipotent (one cell type only). ESCs from blastocyst inner cell mass are pluripotent but raise ethical concerns about embryo destruction. Adult stem cells (ASCs) from bone marrow, fat, etc. are multipotent, less controversial, but limited in scope. iPSCs (adult cells reprogrammed with OCT4, SOX2, KLF4, c-MYC) are pluripotent, patient-specific, ethically preferable, but have reprogramming inefficiency and teratoma risk. Therapeutic uses: leukaemia (HSC transplant), Parkinson\'s (neural cells), diabetes (beta cells), cardiac repair, spinal injury, wound healing. Ethical issues: embryo status, consent, access, safety.',
-      },
-    },
+        "id": "svg-diag-2-3-7-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='50' r='20' fill='#fbd38d'/><circle cx='70' cy='45' r='5' fill='#ed8936'/><circle cx='85' cy='55' r='5' fill='#ed8936'/><circle cx='75' cy='55' r='5' fill='#ed8936'/><text x='50' y='90' font-size='12' fill='#dd6b20'>Blastocyst</text><text x='50' y='105' font-size='10'>(Embryonic/Pluripotent)</text><path d='M200,30 Q220,10 240,30 L240,70 Q220,90 200,70 Z' fill='#e2e8f0'/><rect x='215' y='30' width='10' height='50' fill='#fc8181'/><text x='190' y='105' font-size='12' fill='#c53030'>Bone Marrow</text><text x='190' y='120' font-size='10'>(Adult/Multipotent)</text></svg>",
+            "caption": "Sources of Stem Cells"
+        }
+    }
   ],
-  recall: {
-    enabled: true,
-    cues: [
+  "recall": {
+    "enabled": true,
+    "cues": [
       {
-        id: 'cue-1',
-        blockId: 'list-potency',
-        prompt: 'Define totipotent, pluripotent, multipotent, and unipotent, with examples of each.',
+        "id": "cue-1",
+        "blockId": "list-types",
+        "prompt": "What is the main difference between totipotent and pluripotent stem cells?"
       },
       {
-        id: 'cue-2',
-        blockId: 'p-ipsc-def',
-        prompt: 'What are induced pluripotent stem cells, and how are they created?',
-      },
-      {
-        id: 'cue-3',
-        blockId: 'list-therapy',
-        prompt: 'Give three examples of diseases being treated with stem cell therapy and explain the approach.',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'p-embryo-issue',
-        prompt: 'What are the main ethical concerns with embryonic stem cell research?',
-      },
+        "id": "cue-2",
+        "blockId": "callout-ethics",
+        "prompt": "Why is the use of embryonic stem cells ethically controversial?"
+      }
     ],
-    summaryText: 'Potency spectrum: totipotent (any cell, including extraembryonic; zygote), pluripotent (most cell types, not extraembryonic; ESC, iPSC), multipotent (limited lineage; bone marrow HSC), unipotent (one cell type). ESCs from blastocyst are pluripotent, high proliferation, ethical concerns (embryo destruction). ASCs (bone marrow, fat, neural) are multipotent, slower division, less controversial. iPSCs: adult cells reprogrammed with Yamanaka factors (OCT4, SOX2, KLF4, c-MYC); pluripotent, patient-specific, ethically preferable, but low reprogramming efficiency (~0.1–1%), teratoma risk. Therapies: leukaemia (HSC transplant restores blood production), Parkinson\'s (dopaminergic neurons), diabetes (insulin-producing beta cells), cardiac repair, spinal cord injury (neural regeneration). Ethical: embryo status, consent, commodification, access equity.',
-    ready: false,
+    "summaryText": "Stem cells are undifferentiated and can be totipotent, pluripotent, multipotent, or unipotent. They have immense medical potential but embryonic stem cell use is debated because extracting them destroys blastocysts.",
+    "ready": true
   },
-  evidence: [
-    {
-      id: 'ev-1',
-      title: 'Induced Pluripotent Stem Cells: Reprogramming Adult Cells',
-      detail: 'Yamanaka\'s 2006 discovery that four transcription factors (OCT4, SOX2, KLF4, c-MYC) can reprogram adult fibroblasts to pluripotency transformed regenerative medicine by enabling patient-specific, ethically preferable stem cell generation.',
-      year: '2024',
-      source: 'A-Level Biology Specification',
-      tags: ['stem cells', 'iPSC', 'regenerative medicine'],
-    },
-  ],
+  "evidence": []
 };

@@ -41,9 +41,20 @@ export const note_chemistry_1_1_9 = {
       terms: []
     },
     {
-      id: 'p-displacement',
-      type: 'paragraph',
-      data: { text: 'In a displacement reaction, a more reactive element displaces a less reactive element from its compound. These are <strong>redox reactions</strong>: electrons transfer from the reactive metal to the metal ion in solution, or between halogens.' },
+      id: 'list-displacement',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'A more reactive element displaces a less reactive element from its compound.',
+          'These are <strong>redox reactions</strong> — electrons transfer from the reactive metal (oxidised) to the metal ion (reduced).',
+          'Metal displacement in solution occurs spontaneously at room temperature when the reactivity difference is sufficient.',
+          'Solid-state displacement (e.g. thermite) requires external heating to initiate because solids cannot mix at a molecular level at room temperature.',
+          'Halogen displacement: a more reactive halogen displaces a less reactive halide ion from its aqueous salt solution.',
+          'Reactivity of metals (most reactive at top): K > Na > Ca > Mg > Al > Zn > Fe > Cu > Ag > Au.',
+          'Reactivity of halogens: F₂ > Cl₂ > Br₂ > I₂ (reactivity decreases down Group 7).'
+        ]
+      },
       terms: ['Displacement reaction']
     },
     {
@@ -75,6 +86,31 @@ export const note_chemistry_1_1_9 = {
         text: 'A more reactive halogen will displace a less reactive halogen from its halide solution. Reactivity decreases down Group 7 (F₂ > Cl₂ > Br₂ > I₂).<br/><br/>Example: Chlorine gas passed through potassium bromide solution.<br/><strong>Equation:</strong> Cl₂(g) + 2KBr(aq) → 2KCl(aq) + Br₂(aq)<br/><strong>Ionic:</strong> Cl₂(g) + 2Br⁻(aq) → 2Cl⁻(aq) + Br₂(aq)<br/><em>Observation: Colourless solution turns orange/brown due to the formation of aqueous bromine.</em>'
       },
       terms: ['Halogen displacement']
+    },
+    {
+      id: 'table-halogen-disp',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Halogen displacement — which reactions occur (✓) or do not (✗)',
+        headers: ['Halogen Added', 'KF(aq)', 'KCl(aq)', 'KBr(aq)', 'KI(aq)'],
+        rows: [
+          ['F₂', '✗ (F₂ itself not used in school lab)', '✓ → Cl⁻ + F₂ product', '✓ → Br₂ formed', '✓ → I₂ formed'],
+          ['Cl₂', 'N/A', '✗ (same element)', '✓ → orange-brown Br₂', '✓ → dark brown I₂'],
+          ['Br₂', 'N/A', 'N/A', '✗ (same element)', '✓ → dark brown I₂'],
+          ['I₂', 'N/A', 'N/A', 'N/A', '✗ (same element)']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-halogen-obs',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Colour Changes in Halogen Displacement Reactions',
+        text: 'Colour observations (aqueous layer; organic solvent layer colours noted in brackets):<br/><br/>• <strong>Cl₂ into KBr(aq):</strong> colourless → orange-brown (Br₂ produced in aqueous layer)<br/>• <strong>Cl₂ into KI(aq):</strong> colourless → dark brown (I₂ produced); violet/purple in organic solvent layer<br/>• <strong>Br₂ into KI(aq):</strong> orange-brown solution → darker brown (I₂ produced)<br/><br/>Ionic equations:<br/>• Cl₂(g) + 2Br⁻(aq) → 2Cl⁻(aq) + Br₂(aq)<br/>• Cl₂(g) + 2I⁻(aq) → 2Cl⁻(aq) + I₂(aq)<br/>• Br₂(aq) + 2I⁻(aq) → 2Br⁻(aq) + I₂(aq)<br/><br/><em>In each case the more reactive halogen is reduced (gains electrons); the halide ion is oxidised (loses electrons).</em>'
+      },
+      terms: []
     },
     {
       id: 'callout-displacement',
@@ -137,6 +173,29 @@ export const note_chemistry_1_1_9 = {
       terms: []
     },
     {
+      id: 'h-gastests',
+      type: 'heading',
+      data: { text: 'Gas Tests', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-gastests',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Tests for common gases produced in reactions',
+        headers: ['Gas', 'Test Method', 'Positive Result'],
+        rows: [
+          ['H₂ (hydrogen)', 'Hold a lit splint at the mouth of the test tube', 'Burns with a squeaky pop'],
+          ['O₂ (oxygen)', 'Insert a glowing splint into the test tube', 'Glowing splint relights'],
+          ['CO₂ (carbon dioxide)', 'Bubble the gas through Ca(OH)₂(aq) — limewater', 'Limewater turns milky/cloudy; white precipitate of CaCO₃ forms'],
+          ['Cl₂ (chlorine)', 'Hold damp blue litmus paper at the mouth of the tube', 'Litmus paper is bleached — turns white/colourless; yellow-green colour visible'],
+          ['NH₃ (ammonia)', 'Hold damp red litmus paper at the mouth of the tube', 'Litmus paper turns blue; sharp, pungent smell'],
+          ['SO₂ (sulfur dioxide)', 'Bubble through acidified KMnO₄(aq) in fume hood', 'Purple KMnO₄ solution decolourises; sharp, choking smell']
+        ]
+      },
+      terms: []
+    },
+    {
       id: 'h-precip',
       type: 'heading',
       data: { text: 'Precipitation Reactions', level: 2 },
@@ -158,6 +217,16 @@ export const note_chemistry_1_1_9 = {
         ]
       },
       terms: ['Precipitation reaction']
+    },
+    {
+      id: 'callout-carbonate-test',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Testing for Carbonate Ions (CO₃²⁻)',
+        text: '<strong>Method:</strong><br/>1. Add dilute HCl (or other dilute acid) to the sample.<br/>2. Effervescence — bubbles of CO₂ gas are produced.<br/>3. Bubble the gas through Ca(OH)₂(aq) (limewater).<br/>4. Limewater turns <strong>milky/cloudy</strong> — confirms CO₂ and therefore carbonate ions.<br/><br/><strong>Ionic equation (acid + carbonate):</strong> CO₃²⁻(aq) + 2H⁺(aq) → H₂O(l) + CO₂(g)<br/><strong>Limewater precipitation equation:</strong> Ca²⁺(aq) + CO₃²⁻(aq) → CaCO₃(s)<br/><br/><em>Note: Sulfite ions (SO₃²⁻) also produce a gas with acid, but SO₂ does not turn limewater milky — use the limewater test to distinguish CO₂ from SO₂.</em>'
+      },
+      terms: ['Carbonate']
     },
     {
       id: 'h-halide-ammonia',
@@ -188,6 +257,39 @@ export const note_chemistry_1_1_9 = {
         style: 'key',
         title: 'Testing for Sulfate Ions (SO₄²⁻)',
         text: '<strong>Method:</strong><br/>1. Acidify the test solution with dilute HCl (this removes carbonate and sulfite ions which would give false positives).<br/>2. Add barium chloride solution, BaCl₂(aq).<br/>3. If a <strong>white precipitate</strong> of barium sulfate (BaSO₄) forms, sulfate ions are present.<br/>4. The BaSO₄ precipitate is insoluble in dilute HCl — this confirms sulfate (unlike BaCO₃ or BaSO₃ which dissolve).<br/><br/><strong>Ionic equation:</strong> Ba²⁺(aq) + SO₄²⁻(aq) → BaSO₄(s)'
+      },
+      terms: []
+    },
+    {
+      id: 'h-naoh-tests',
+      type: 'heading',
+      data: { text: 'Identifying Metal Ions with NaOH', level: 2 },
+      terms: []
+    },
+    {
+      id: 'table-naoh',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Metal ion identification by adding NaOH(aq) to a solution',
+        headers: ['Metal Ion', 'Observation', 'Precipitate Colour', 'Ionic Equation'],
+        rows: [
+          ['Fe²⁺ (iron(II))', 'Green gelatinous precipitate; turns rust-brown on standing in air (atmospheric oxidation to Fe(OH)₃)', 'Green → rust-brown', 'Fe²⁺(aq) + 2OH⁻(aq) → Fe(OH)₂(s)'],
+          ['Fe³⁺ (iron(III))', 'Rust-brown (reddish-brown) gelatinous precipitate', 'Rust-brown', 'Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)'],
+          ['Cu²⁺ (copper(II))', 'Pale blue gelatinous precipitate', 'Pale blue', 'Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)'],
+          ['Al³⁺ (aluminium)', 'White gelatinous precipitate; <em>dissolves in excess NaOH</em> → amphoteric behaviour', 'White (dissolves in excess)', 'Al³⁺(aq) + 3OH⁻(aq) → Al(OH)₃(s)'],
+          ['Mg²⁺ (magnesium)', 'White gelatinous precipitate; does <em>not</em> dissolve in excess NaOH', 'White (persists in excess)', 'Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s)'],
+          ['Ca²⁺ (calcium)', 'Slight white precipitate (sparingly soluble at low concentration)', 'White (slight)', 'Ca²⁺(aq) + 2OH⁻(aq) → Ca(OH)₂(s)']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-naoh-tip',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Distinguishing White Precipitates with Excess NaOH',
+        text: '<strong>Al³⁺ vs Mg²⁺/Ca²⁺:</strong><br/>• Al(OH)₃ — white precipitate — <em>dissolves in excess NaOH</em>, forming the tetrahydroxoaluminate ion: Al(OH)₃(s) + OH⁻(aq) → [Al(OH)₄]⁻(aq). This is because Al(OH)₃ is <strong>amphoteric</strong> (reacts with both acids and bases).<br/>• Mg(OH)₂ and Ca(OH)₂ — white precipitates that do <em>not</em> dissolve in excess NaOH.<br/><br/><em>Exam tip: The solubility test with excess NaOH is the key distinction — always add excess and check if the white precipitate dissolves.</em>'
       },
       terms: []
     },
@@ -286,6 +388,28 @@ export const note_chemistry_1_1_9 = {
         text: '<strong>Question:</strong> 1.270 g of copper is added to excess silver nitrate solution. 4.13 g of silver forms. Write the ionic equation for this reaction.<br/><br/><strong>Step 1 — Identify silver is always Ag⁺ (charge +1):</strong> options showing Ag²⁺ are immediately incorrect.<br/><br/><strong>Step 2 — Calculate moles:</strong><br/>n(Cu) = 1.270 ÷ 63.5 = <strong>0.0200 mol</strong><br/>n(Ag) = 4.13 ÷ 107.9 = <strong>0.0383 mol ≈ 0.0400 mol</strong><br/><br/><strong>Step 3 — Find mole ratio:</strong><br/>n(Ag) : n(Cu) = 0.040 : 0.020 = <strong>2 : 1</strong><br/><br/><strong>Answer — Correct ionic equation:</strong><br/>Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s)<br/><br/><em>Cu is oxidised (0 → +2); Ag⁺ is reduced (+1 → 0). Two moles of silver form per mole of copper.</em>'
       },
       terms: []
+    },
+    {
+      id: 'checklist-1-1-9',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'State the observation AND write both the full AND ionic equation for acid + metal, acid + carbonate, acid + alkali, and acid + metal oxide reactions', checked: false },
+          { text: 'Give the test and positive result for H₂ (squeaky pop), O₂ (relights splint), CO₂ (limewater milky), Cl₂ (bleaches litmus), and NH₃ (turns red litmus blue)', checked: false },
+          { text: 'Write the ionic equation for each metal displacement worked example and state which species is oxidised and which is reduced', checked: false },
+          { text: 'Determine whether a halogen displacement occurs using the reactivity trend F₂ > Cl₂ > Br₂ > I₂; state the colour change expected', checked: false },
+          { text: 'Describe the sulfate test (BaCl₂/HCl → white BaSO₄) and each halide test (AgNO₃/HNO₃ → white/cream/yellow precipitate; use dilute/concentrated NH₃ to distinguish)', checked: false },
+          { text: 'Name the flame colour for Li⁺ (crimson), Na⁺ (yellow), K⁺ (lilac), Ca²⁺ (orange-red), Sr²⁺ (crimson), Ba²⁺ (apple green), Cu²⁺ (blue-green)', checked: false },
+          { text: 'Predict the colour of metal hydroxide precipitate with NaOH: Fe²⁺ green, Fe³⁺ rust-brown, Cu²⁺ pale blue, Al³⁺/Mg²⁺/Ca²⁺ white — and state that Al(OH)₃ dissolves in excess NaOH', checked: false },
+          { text: 'Write equations for thermal decomposition of Group 1 nitrates (→ nitrite + O₂) and Group 2/Li nitrates (→ oxide + NO₂ + O₂)', checked: false }
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      data: { text: 'Acid reactions follow predictable patterns: metal → H₂ (squeaky pop); carbonate/hydrogencarbonate → CO₂ (limewater milky); alkali → no visible change, H⁺ + OH⁻ → H₂O. Gas tests: H₂ = squeaky pop, O₂ = relights splint, CO₂ = limewater milky, Cl₂ = bleaches litmus, NH₃ = turns red litmus blue. Displacement is redox — more reactive displaces less reactive; halogen trend F₂>Cl₂>Br₂>I₂, Cl₂+2Br⁻→2Cl⁻+Br₂ (orange-brown). Ion tests: BaCl₂/HCl → white BaSO₄ (SO₄²⁻); AgNO₃/HNO₃ → AgCl white/AgBr cream/AgI yellow (halides, distinguish with NH₃ solubility); yellow PbI₂. Flame tests: Na=yellow, K=lilac, Ca=orange-red, Ba=green, Li/Sr=crimson, Cu²⁺=blue-green. NaOH precipitate colours: Fe²⁺=green, Fe³⁺=rust-brown, Cu²⁺=pale blue, Al³⁺/Mg²⁺/Ca²⁺=white (Al³⁺ dissolves in excess). Nitrate decomposition: Group 1 (not Li) → nitrite+O₂; Li and Group 2 → oxide+NO₂+O₂.' }
     }
   ],
   recall: {
@@ -302,10 +426,12 @@ export const note_chemistry_1_1_9 = {
       { id: 'c9', blockId: 'table-flame', prompt: 'What flame colour is given by potassium ions? What colour is sodium, and what is the main complication when both might be present?' },
       { id: 'c10', blockId: 'callout-nitrate', prompt: 'What gas is produced when a Group 1 nitrate (not Li) is heated? Write the equation for the thermal decomposition of KNO₃.' },
       { id: 'c11', blockId: 'callout-cu-ag', prompt: 'A copper wire is placed in silver nitrate solution. State the two observations with explanations, and write the ionic equation.' },
-      { id: 'c12', blockId: 'callout-pp-2017', prompt: '1.270 g Cu reacts with excess AgNO₃ giving 4.13 g Ag. Calculate the mole ratio and write the ionic equation.' }
+      { id: 'c12', blockId: 'callout-pp-2017', prompt: '1.270 g Cu reacts with excess AgNO₃ giving 4.13 g Ag. Calculate the mole ratio and write the ionic equation.' },
+      { id: 'c13', blockId: 'table-gastests', prompt: 'Give the test and positive result for: (a) hydrogen gas, (b) oxygen gas, (c) carbon dioxide gas.' },
+      { id: 'c14', blockId: 'table-naoh', prompt: 'NaOH(aq) is added to unknown solution X and a green precipitate forms. Slowly the precipitate turns rust-brown. Identify the ion present and write both ionic equations (formation and oxidation).' }
     ],
-    summaryText: 'Acid+Metal → H₂ (squeaky pop). Acid+Alkali → H⁺+OH⁻→H₂O. Acid+Carbonate → CO₂ (turns limewater cloudy). Displacement is redox (e.g. Mg replacing Cu, Cu wire in AgNO₃: colourless→blue, Ag deposit; Thermite reaction with Al and Fe₂O₃; Cl₂ displacing Br⁻). Precipitates: BaSO₄ (white, via BaCl₂+HCl) for SO₄²⁻; AgCl/AgBr/AgI (white/cream/yellow) for halides — distinguish with dilute/concentrated NH₃. Yellow PbI₂ from lead(II) and iodide. Flame tests: Li/Sr=crimson, Na=yellow, K=lilac, Ca=orange-red, Ba=green. Group 1 nitrates → nitrite + O₂; Group 2 → oxide + NO₂ + O₂. Cu+2Ag⁺→Cu²⁺+2Ag (2:1 mole ratio).',
-    ready: false
+    summaryText: 'Acid+Metal → H₂ (squeaky pop); Acid+Alkali → H⁺+OH⁻→H₂O; Acid+Carbonate → CO₂ (limewater milky). Gas tests: H₂=squeaky pop, O₂=relights splint, CO₂=limewater milky, Cl₂=bleaches litmus, NH₃=turns red litmus blue. Displacement is redox — more reactive displaces less reactive. Halogen reactivity F₂>Cl₂>Br₂>I₂: Cl₂+2Br⁻→2Cl⁻+Br₂ (orange-brown); Cl₂+2I⁻→2Cl⁻+I₂ (dark brown); Br₂+2I⁻→2Br⁻+I₂. Metal displacement: Mg+Cu²⁺→Cu+Mg²⁺ (blue→colourless, brown solid); Cu+2Ag⁺→Cu²⁺+2Ag (colourless→blue, Ag deposit; 2:1 mole ratio). Precipitation: BaSO₄ white (BaCl₂/HCl) for SO₄²⁻; AgCl/AgBr/AgI white/cream/yellow for halides (distinguish with NH₃: AgCl dissolves in dilute, AgBr only in conc, AgI insoluble); yellow PbI₂. Flame tests: Na=yellow, K=lilac, Ca=orange-red, Ba=apple green, Li/Sr=crimson, Cu²⁺=blue-green. NaOH tests: Fe²⁺=green ppt→rust-brown on standing; Fe³⁺=rust-brown; Cu²⁺=pale blue; Al³⁺=white (dissolves in excess NaOH); Mg²⁺=white (persists). Group 1 (not Li) nitrates → nitrite+O₂; Li and Group 2 → oxide+NO₂+O₂.',
+    ready: true
   },
   evidence: []
 };

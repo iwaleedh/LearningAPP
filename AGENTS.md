@@ -547,18 +547,18 @@ All 12 subtopic seed notes are complete:
 
 | File | Subtopic | Content |
 |------|----------|---------|
-| `note_1_3_0.js` | Evidence for ionic species | Electrolysis, conductivity table, brittleness, solubility, X-ray crystallography |
-| `note_1_3_1.js` | Ion formation & electron transfer | Ionic bond definition, ion charge from group, NaCl/MgO/CaCl₂ electron transfer worked examples |
-| `note_1_3_2.js` | Dot-and-cross ionic diagrams | Rules for ionic diagrams, NaCl SVG, MgO and CaCl₂ worked descriptions, common mistakes |
-| `note_1_3_3.js` | Giant ionic lattice structure | NaCl lattice SVG, high mp, conductivity, brittleness, solubility all explained |
-| `note_1_3_4.js` | Ionic size, charge & strength | Coulomb's law, charge effect table, radius effect table, isoelectronic series, NaCl vs MgO |
-| `note_1_3_5.js` | Ionic polarisation effects | Polarising power, polarisability, Fajans' rules table, AlCl₃/AgI worked examples, SVG diagram |
-| `note_1_3_6.js` | Covalent bonding & diagrams | Covalent bond definition, single/double/triple bond table, dot-and-cross SVG (H₂/Cl₂/H₂O/CO₂), dative bonds |
-| `note_1_3_7.js` | Giant covalent structures | Diamond, graphite (SVG), SiO₂ — structure and properties; comparison table |
-| `note_1_3_8.js` | Electronegativity & bond polarity | EN trends, ΔEN → bond type table, dipole moments, CO₂ vs H₂O SVG, polar molecule rules |
-| `note_1_3_9.js` | Electron-pair repulsion shapes | VSEPR rules, full shapes table, CH₄/NH₃/H₂O SVG, lone pair effects, shape vs electron geometry |
-| `note_1_3_10.js` | Metallic bonding model | M⁺ lattice + electron sea SVG, bond strength factors, Na/Mg/Al melting point table |
-| `note_1_3_11.js` | Metal property interpretation | Conductivity, thermal conductivity, malleability SVG, high mp, contrast with ionic compounds |
+| `note_1_3_0.js` | Evidence for ionic species; ionic bonding and dot-and-cross diagrams | Evidence for ionic species, ion formation, dot and cross rules |
+| `note_1_3_1.js` | Ionic lattice structure and physical properties | Giant ionic lattice, melting point, conductivity |
+| `note_1_3_2.js` | Covalent bonding and dot-and-cross diagrams | Covalent bonds, dot and cross diagrams |
+| `note_1_3_3.js` | Metallic bonding and properties of metals | Metallic lattice, sea of electrons, properties |
+| `note_1_3_4.js` | Shapes of molecules — VSEPR theory | Electron-pair repulsion theory, molecule shapes |
+| `note_1_3_5.js` | Bond polarity and electronegativity | Electronegativity, bond polarity, dipole moments |
+| `note_1_3_6.js` | Simple molecular substances and their properties | Properties of simple molecules |
+| `note_1_3_7.js` | Giant covalent substances (macromolecular structures) | Diamond, graphite, silicon dioxide |
+| `note_1_3_8.js` | Bond length and bond strength | Bond lengths, bond enthalpies |
+| `note_1_3_9.js` | Comparing types of structure | Summary and comparison of covalent, ionic, and metallic |
+| `note_1_3_10.js` | Intermolecular forces | London forces, dipole-dipole, hydrogen bonding |
+| `note_1_3_11.js` | Core Practical 2: enthalpy change by calorimetry | Practical details and enthalpy changes |
 
 **PDF source:** `public/notes/chemistry/wch11-1.pdf`
 

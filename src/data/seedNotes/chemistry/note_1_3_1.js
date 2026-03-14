@@ -18,9 +18,20 @@ export const note_chemistry_1_3_1 = {
       terms: []
     },
     {
-      id: 'p-lattice',
-      type: 'paragraph',
-      data: { text: 'Ionic compounds do NOT consist of individual molecules. Instead, they form a <strong>giant ionic lattice</strong> — a regular, repeating three-dimensional array of alternating cations and anions. Each ion is surrounded by ions of the opposite charge. The lattice is held together by the strong electrostatic attraction between all the oppositely charged ions acting simultaneously.' },
+      id: 'list-lattice',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Ionic compounds do <strong>NOT</strong> form discrete molecules — they form a <strong>giant ionic lattice</strong>',
+          'The lattice is a regular, repeating 3D arrangement of alternating cations and anions that extends throughout the solid in all directions',
+          'Each ion is surrounded by ions of <em>opposite</em> charge on all sides — the ionic bond is non-directional',
+          'The lattice is held together by <strong>strong, non-directional electrostatic forces</strong> between every adjacent oppositely charged ion pair, acting simultaneously in three dimensions',
+          'The lattice is overall <strong>electrically neutral</strong> — total positive charge exactly equals total negative charge',
+          'The chemical formula (e.g. NaCl) is the <strong>empirical formula</strong> of the lattice — simplest whole-number ratio of cation to anion, not a molecular formula',
+          'The lattice extends effectively to infinity — there is no defined "molecule" of NaCl'
+        ]
+      },
       terms: ['Giant ionic lattice']
     },
     {
@@ -119,15 +130,42 @@ export const note_chemistry_1_3_1 = {
       terms: ['Co-ordination number']
     },
     {
+      id: 'list-nacl-facts',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Co-ordination number = the number of nearest-neighbour ions of <em>opposite</em> charge directly surrounding a given ion',
+          'In NaCl: r(Na⁺) = 102 pm, r(Cl⁻) = 181 pm — radius ratio = 102 ÷ 181 ≈ 56% → 6:6 co-ordination',
+          'The NaCl lattice is called the <strong>rock salt structure</strong> — adopted by most 1:1 ionic compounds with radius ratio ≈ 41–73%',
+          'Other compounds with the rock salt structure: KCl (ratio ≈ 73%), MgO (ratio ≈ 59%), LiF (ratio ≈ 53%), CaO (ratio ≈ 55%)',
+          'The unit cell (smallest repeating unit) of NaCl contains <strong>4 Na⁺ and 4 Cl⁻</strong> ions — confirming the 1:1 empirical formula',
+          'Na⁺ and Cl⁻ are arranged in a face-centred cubic (FCC) arrangement where each ion type fills the octahedral holes of the other sub-lattice'
+        ]
+      },
+      terms: []
+    },
+    {
       id: 'h-cscl',
       type: 'heading',
       data: { text: 'Caesium Chloride (CsCl) — 8:8 Co-ordination', level: 2 },
       terms: []
     },
     {
-      id: 'p-cscl',
-      type: 'paragraph',
-      data: { text: 'CsCl has a <strong>different structure</strong> to NaCl even though both compounds have formula 1:1. The Cs⁺ ion is much larger than Na⁺ (about 93% the size of Cl⁻), so 8 Cl⁻ ions can surround each Cs⁺ without touching each other. This gives a more stable arrangement with more ion contacts and greater lattice energy.' },
+      id: 'list-cscl',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'CsCl has a <strong>different structure</strong> to NaCl despite both having a 1:1 ion ratio',
+          'r(Cs⁺) = 167 pm, r(Cl⁻) = 181 pm → radius ratio = 167 ÷ 181 ≈ 92% → 8:8 co-ordination',
+          'Each Cs⁺ sits at the <em>centre</em> of a cube with 8 Cl⁻ at the 8 corners — body-centred cubic (BCC) arrangement',
+          'Each Cl⁻ is in turn surrounded by 8 Cs⁺ by symmetry — the 1:1 empirical formula is maintained throughout',
+          'More ion contacts (8 vs 6) → more simultaneous electrostatic attractions → higher lattice energy than the equivalent 6:6 structure',
+          'The caesium chloride structure type is adopted when the radius ratio exceeds ≈ 73%',
+          'At high temperature (≈ 469 °C), CsCl can undergo a phase transition to the NaCl-type structure'
+        ]
+      },
       terms: []
     },
     {
@@ -228,7 +266,24 @@ export const note_chemistry_1_3_1 = {
           ['<strong>Electrical conductivity — solid: NO</strong>', 'Ions are locked in fixed positions in the rigid lattice and cannot move — no charge carriers.'],
           ['<strong>Electrical conductivity — molten or in solution: YES</strong>', 'Ions are free to move. In molten NaCl: Na⁺ migrates to cathode (Na⁺ + e⁻ → Na), Cl⁻ migrates to anode (2Cl⁻ → Cl₂ + 2e⁻). This is electrolysis — a chemical change, not just physical conduction.'],
           ['<strong>Soluble in polar solvents (e.g. water)</strong>', 'Water molecules hydrate the ions: positive ions attract the lone pairs on O; negative ions form hydrogen bonds with H. This breaks the lattice if the overall energy released by hydration exceeds the lattice energy.'],
-          ['<strong>Insoluble in organic solvents</strong>', 'Organic solvents (e.g. hexane) are non-polar. Their weak van der Waals attractions to ions cannot overcome the strong ionic lattice energy. The ions are not hydrated and remain locked in the lattice.']
+          ['<strong>Insoluble in organic solvents</strong>', 'Organic solvents (e.g. hexane) are non-polar. Their weak van der Waals attractions to ions cannot overcome the strong ionic lattice energy. The ions are not hydrated and remain locked in the lattice.'],
+          ['<strong>Hard (but brittle)</strong>', 'Ions are tightly locked in fixed lattice positions — great resistance to surface compression (hardness). However, once a shear force displaces a layer by one lattice spacing, like-charge repulsion causes sudden fracture (brittleness). Hardness and brittleness coexist in ionic crystals.']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'table-mp-compare',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Melting points of ionic compounds — effect of ion charge and ion size on lattice energy',
+        headers: ['Compound', 'Charges', 'Ion sizes', 'Melting point (°C)', 'Trend explained'],
+        rows: [
+          ['NaCl', '1⁺ / 1⁻', 'Na⁺ = 102 pm, Cl⁻ = 181 pm', '801', 'Reference compound'],
+          ['KCl', '1⁺ / 1⁻', 'K⁺ = 138 pm (larger than Na⁺)', '770', 'Larger K⁺ → longer interionic distance → weaker force → slightly lower mp than NaCl'],
+          ['LiF', '1⁺ / 1⁻', 'Li⁺ = 76 pm, F⁻ = 133 pm (both smaller)', '845', 'Smaller ions → shorter distance → stronger force → higher mp than NaCl'],
+          ['MgO', '2⁺ / 2⁻', 'Mg²⁺ = 72 pm, O²⁻ = 140 pm', '2852', 'Doubly charged ions → charge product 4× larger → far higher lattice energy → much higher mp'],
+          ['CaO', '2⁺ / 2⁻', 'Ca²⁺ = 100 pm (larger than Mg²⁺)', '2613', 'Same 2+/2− charges but larger Ca²⁺ → slightly lower mp than MgO']
         ]
       },
       terms: []
@@ -263,38 +318,46 @@ export const note_chemistry_1_3_1 = {
   <text x="160" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
   <circle cx="200" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
   <text x="200" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <text x="120" y="150" text-anchor="middle" fill="#059669" font-size="10">+ and − alternate → attract → stable</text>
+  <!-- Vertical attraction lines: opposite charges directly above/below in BEFORE diagram -->
+  <line x1="40" y1="64" x2="40" y2="84" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="80" y1="66" x2="80" y2="86" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="120" y1="64" x2="120" y2="84" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="160" y1="66" x2="160" y2="86" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="200" y1="64" x2="200" y2="84" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="120" y="150" text-anchor="middle" fill="#059669" font-size="10">+/− pairs attract → stable</text>
 
   <!-- ARROW -->
   <text x="260" y="75" text-anchor="middle" fill="#dc2626" font-size="24">→</text>
-  <text x="260" y="92" text-anchor="middle" fill="#dc2626" font-size="10">stress</text>
+  <text x="260" y="91" text-anchor="middle" fill="#dc2626" font-size="9">layer</text>
+  <text x="260" y="102" text-anchor="middle" fill="#dc2626" font-size="9">shifts</text>
 
-  <!-- AFTER (right) -->
+  <!-- AFTER: Row 1 shifted one full lattice spacing (40 px) to the right → like charges now align directly above each other -->
   <text x="390" y="18" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="12">After layer shift</text>
-  <!-- Row 1 (shifted right by one position) -->
-  <circle cx="310" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="310" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="350" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="350" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="390" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="390" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="430" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="430" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="470" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="470" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <!-- Row 2 (shifted right) -->
-  <circle cx="330" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="330" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="370" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="370" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="410" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="410" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="450" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="450" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <!-- Repulsion arrows -->
-  <line x1="310" y1="64" x2="330" y2="85" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <line x1="350" y1="66" x2="370" y2="85" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <line x1="390" y1="64" x2="410" y2="85" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- Row 2 (UNCHANGED): Cl−(300), Na+(340), Cl−(380), Na+(420) at y=100 -->
+  <circle cx="300" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="300" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="340" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="340" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="380" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="380" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="420" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="420" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <!-- Row 1 (SHIFTED +40 px): Na+(340), Cl−(380), Na+(420), Cl−(460) at y=50 -->
+  <circle cx="340" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="340" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="380" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="380" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <circle cx="420" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="420" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
+  <circle cx="460" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="460" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
+  <!-- Red repulsion lines between SAME charges now directly above each other -->
+  <line x1="340" y1="64" x2="340" y2="86" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="352" y="78" fill="#dc2626" font-size="8" font-weight="bold">+/+</text>
+  <line x1="380" y1="66" x2="380" y2="84" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="392" y="78" fill="#dc2626" font-size="8" font-weight="bold">−/−</text>
+  <line x1="420" y1="64" x2="420" y2="86" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="432" y="78" fill="#dc2626" font-size="8" font-weight="bold">+/+</text>
   <text x="390" y="150" text-anchor="middle" fill="#dc2626" font-size="10">like charges align → repel → crystal shatters</text>
 </svg>`
       },
@@ -422,22 +485,56 @@ export const note_chemistry_1_3_1 = {
   <text x="425" y="338" text-anchor="middle" fill="#9a3412" font-size="9">(oxidation)</text>
 </svg>`
       }
+    },
+    {
+      id: 'checklist-lattice',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'Describe the giant ionic lattice as a regular, repeating 3D array of alternating cations and anions', checked: false },
+          { text: 'State that the formula of an ionic compound is an empirical formula (simplest whole-number ion ratio, not a molecular formula)', checked: false },
+          { text: 'Give the co-ordination number of Na⁺ and Cl⁻ in NaCl (= 6:6) and justify using the radius ratio (≈56%)', checked: false },
+          { text: 'Name the NaCl lattice type (rock salt structure) and list two other compounds with this structure', checked: false },
+          { text: 'Give the co-ordination number in CsCl (= 8:8) and explain why Cs⁺ can accommodate 8 Cl⁻ (radius ratio ≈92%)', checked: false },
+          { text: 'State the radius ratio rule: >73% → 8:8; 41–73% → 6:6 co-ordination', checked: false },
+          { text: 'Explain high melting points using the ionic lattice model (strong, non-directional electrostatic forces throughout)', checked: false },
+          { text: 'Explain why MgO has a much higher mp than NaCl (2+ / 2− ions vs 1+ / 1− → higher charge product → higher lattice energy)', checked: false },
+          { text: 'Explain BRITTLENESS: layer shift → like-charge alignment → repulsion → fracture along cleavage plane', checked: false },
+          { text: 'State that ionic compounds are also HARD (ions locked in rigid, fixed lattice positions)', checked: false },
+          { text: 'Explain why solid ionic compounds do NOT conduct electricity (ions fixed — no mobile charge carriers)', checked: false },
+          { text: 'Explain why molten or dissolved ionic compounds DO conduct (ions free to move → electrolysis)', checked: false },
+          { text: 'Explain solubility in polar solvents: δ⁻ O of water attracts cations; δ⁺ H attracts anions — ion hydration', checked: false },
+          { text: 'Define electrolysis and electrolyte — state the PANC mnemonic', checked: false },
+          { text: 'Apply OIL RIG: cations → cathode (reduced); anions → anode (oxidised)', checked: false },
+          { text: 'Write half-equations: molten PbBr₂ — Pb²⁺ + 2e⁻ → Pb (cathode); 2Br⁻ → Br₂ + 2e⁻ (anode)', checked: false },
+          { text: 'Write half-equations: molten NaCl — Na⁺ + e⁻ → Na (cathode); 2Cl⁻ → Cl₂ + 2e⁻ (anode)', checked: false }
+        ]
+      }
+    },
+    {
+      id: 'summary-lattice',
+      type: 'summary',
+      data: {
+        text: 'A giant ionic lattice is a regular 3D array of alternating cations and anions held by strong, non-directional electrostatic forces; extends to infinity; empirical formula only (no molecules). NaCl (rock salt structure): 6:6 co-ordination (Na⁺/Cl⁻ radius ratio ≈ 56%). CsCl: 8:8 co-ordination (Cs⁺/Cl⁻ ratio ≈ 92%, body-centred cube). Higher charge or smaller ions → higher lattice energy → higher mp (MgO 2852 °C >> NaCl 801 °C). Ionic compounds are hard + brittle (layer shift → like-charge repulsion → fracture); non-conducting as solids (ions fixed); conducting when molten/dissolved (ions mobile). PANC: Positive Anode Negative Cathode. OIL RIG. PbBr₂: Pb²⁺ + 2e⁻ → Pb (cathode); 2Br⁻ → Br₂ + 2e⁻ (anode). NaCl: Na⁺ + e⁻ → Na (cathode); 2Cl⁻ → Cl₂ + 2e⁻ (anode). Soluble in polar solvents (ion hydration); insoluble in organic solvents (VdW too weak).'
+      }
     }
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'p-lattice', prompt: 'Describe the structure of a giant ionic lattice.' },
-      { id: 'c2', blockId: 'callout-nacl-structure', prompt: 'Explain why NaCl is 6:6 co-ordinated and not 8:8.' },
-      { id: 'c3', blockId: 'callout-radius-ratio', prompt: 'Explain why CsCl has 8:8 co-ordination but NaCl has 6:6 co-ordination. Reference the radius ratio in your answer.' },
-      { id: 'c4', blockId: 'table-props', prompt: 'Explain why ionic compounds are brittle but also why they can conduct electricity when melted.' },
-      { id: 'c5', blockId: 'table-props', prompt: 'Why does solid NaCl not conduct electricity but molten NaCl does? Name the products formed at each electrode.' },
-      { id: 'c6', blockId: 'table-props', prompt: 'Why are ionic compounds insoluble in organic solvents like hexane?' },
-      { id: 'c7', blockId: 'list-electrolysis-defs', prompt: 'Define electrolysis and electrolyte. State the PANC mnemonic and explain what happens at the anode and cathode.' },
-      { id: 'c8', blockId: 'callout-we-pbbr2', prompt: 'Write the half-equations for the electrolysis of molten PbBr₂. State the observations at each electrode and link each electrode to OIL RIG.' }
+      { id: 'c1', blockId: 'list-lattice', prompt: 'Describe the structure of a giant ionic lattice and explain what the empirical formula of an ionic compound represents.' },
+      { id: 'c2', blockId: 'callout-nacl-structure', prompt: 'Explain why NaCl is 6:6 co-ordinated and not 8:8, using the radius ratio concept.' },
+      { id: 'c3', blockId: 'callout-radius-ratio', prompt: 'Explain why CsCl has 8:8 co-ordination but NaCl has 6:6. Give the radius ratios for both compounds.' },
+      { id: 'c4', blockId: 'table-props', prompt: 'Explain why ionic compounds are hard and brittle — and why these two properties can coexist.' },
+      { id: 'c5', blockId: 'table-mp-compare', prompt: 'MgO melts at 2852 °C; NaCl melts at 801 °C. Explain this difference using the ionic lattice model.' },
+      { id: 'c6', blockId: 'table-props', prompt: 'Why are ionic compounds insoluble in hexane but soluble in water? Use particle-level explanations.' },
+      { id: 'c7', blockId: 'list-electrolysis-defs', prompt: 'Define electrolysis and electrolyte. State the PANC mnemonic and explain what happens at each electrode.' },
+      { id: 'c8', blockId: 'callout-we-pbbr2', prompt: 'Write the half-equations for the electrolysis of molten PbBr₂ and state the observation at each electrode.' },
+      { id: 'c9', blockId: 'list-nacl-facts', prompt: 'State the Na⁺/Cl⁻ radius ratio, name the NaCl structure type, and give two other compounds with the same structure.' },
+      { id: 'c10', blockId: 'list-cscl', prompt: 'Describe the arrangement of ions in CsCl and explain why it differs from the NaCl structure using the radius ratio.' }
     ],
-    summaryText: 'Giant ionic lattice = 3D array of alternating + and − ions held by strong electrostatic forces. NaCl: 6:6 co-ordination; CsCl: 8:8 (larger Cs⁺). High mp/bp (strong forces). Brittle (layer shift → like charges repel → shatters). Conducts when molten via electrolysis. PANC: Positive Anode, Negative Cathode. Electrons carry current in wires; ions carry current in the electrolyte. PbBr₂ molten — Cathode: Pb²⁺ + 2e⁻ → Pb (reduction, OIL RIG: Reduction Is Gain); Anode: 2Br⁻ → Br₂ + 2e⁻ (oxidation, OIL RIG: Oxidation Is Loss). NaCl molten — Cathode: Na⁺ + e⁻ → Na; Anode: 2Cl⁻ → Cl₂ + 2e⁻. Insoluble in organic solvents (weak VdW cannot overcome lattice energy).',
-    ready: false
+    summaryText: 'Giant ionic lattice = regular 3D array of alternating cations and anions; non-directional electrostatic forces; extends to infinity; empirical formula only (no molecules). NaCl: rock salt structure, 6:6 co-ordination (Na⁺/Cl⁻ radius ratio ≈ 56%). CsCl: 8:8 co-ordination (Cs⁺/Cl⁻ ratio ≈ 92%, body-centred cube arrangement). Higher charge or smaller ions → higher lattice energy → higher mp (MgO 2852 °C > NaCl 801 °C). Hard + brittle (layer shift → like-charge repulsion → fracture); non-conducting solid (ions fixed); conducting when molten/dissolved (ions mobile). PANC: Positive Anode Negative Cathode. OIL RIG. PbBr₂: Pb²⁺ + 2e⁻ → Pb (cathode); 2Br⁻ → Br₂ + 2e⁻ (anode). NaCl: Na⁺ + e⁻ → Na (cathode); 2Cl⁻ → Cl₂ + 2e⁻ (anode). Soluble in polar solvents (ion hydration); insoluble in organic solvents (VdW too weak).',
+    ready: true
   },
   evidence: []
 };

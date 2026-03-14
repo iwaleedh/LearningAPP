@@ -1,202 +1,92 @@
 export const note_biology_2_3_5 = {
-  blocks: [
+  "blocks": [
     {
-      type: 'objective',
-      id: 'obj-mitosis',
-      data: {
-        text: 'Describe the stages of the cell cycle and mitosis, explain the role of checkpoint control, and understand why mitosis is essential for growth and repair.',
-      },
+      "id": "obj-6",
+      "type": "objective",
+      "data": {
+        "text": "Explain the role of meiosis in producing genetic variation."
+      }
     },
     {
-      type: 'heading',
-      id: 'h-cell-cycle',
-      data: { text: 'The Cell Cycle: Interphase', level: 2 },
+      "id": "h-meiosis",
+      "type": "heading",
+      "data": {
+        "text": "Meiosis",
+        "level": 2
+      }
     },
     {
-      type: 'paragraph',
-      id: 'p-interphase',
-      data: {
-        text: 'The cell cycle consists of interphase (cell growth and DNA replication) and M phase (mitosis and cytokinesis). Interphase accounts for approximately 90% of the cell cycle in fast-dividing cells. Interphase is divided into three stages: G1 phase (Gap 1), S phase (synthesis), and G2 phase (Gap 2).',
-      },
+      "id": "p-meiosis",
+      "type": "paragraph",
+      "data": {
+        "text": "Meiosis is a type of cell division that produces four genetically different haploid gametes (sperm, egg) from one diploid parent cell. It involves two division stages: Meiosis I and Meiosis II."
+      }
     },
     {
-      type: 'list',
-      id: 'list-interphase',
-      data: {
-        style: 'bullet',
-        items: [
-          'G1 phase: cell grows and increases in size; cytoplasm accumulates, organelles are synthesised, nucleotides and amino acids are produced; cell performs normal functions; G1/S checkpoint checks cell size, DNA damage, and growth signals',
-          'S phase (synthesis): DNA replication occurs; each chromosome is duplicated into two sister chromatids joined at the centromere; histone proteins are synthesised; centrioles are duplicated',
-          'G2 phase: cell continues to grow; proteins for mitosis are synthesised (tubulins for spindle, condensins for chromosome condensation); G2/M checkpoint checks DNA integrity and readiness for mitosis',
-        ],
-      },
+      "id": "p-variation",
+      "type": "paragraph",
+      "data": {
+        "text": "Meiosis is critical for maintaining the correct chromosome number upon fertilization (diploid state restored) and creating genetic variation."
+      }
     },
     {
-      type: 'paragraph',
-      id: 'p-g0-phase',
-      data: {
-        text: 'Some cells exit the cell cycle and enter G0 phase (Gap 0), a quiescent state. In G0, cells cease dividing, remain metabolically active, and perform specialised functions. Neurons and cardiac muscle cells are permanently in G0 and do not divide. Other cells (e.g. liver cells) can re-enter the cell cycle if stimulated by growth factors or injury.',
-      },
+      "id": "h-variation",
+      "type": "heading",
+      "data": {
+        "text": "Sources of Genetic Variation",
+        "level": 3
+      }
     },
     {
-      type: 'heading',
-      id: 'h-mitosis',
-      data: { text: 'Mitosis: Nuclear Division', level: 2 },
+      "id": "list-cross",
+      "type": "list",
+      "data": {
+        "style": "numbered",
+        "items": [
+          "Crossing Over (Prophase I): Homologous chromosomes pair up to form bivalents. Chromatids twist around each other at points called chiasmata. Equal lengths of non-sister chromatids break and rejoin, exchanging alleles and creating new combinations of alleles.",
+          "Independent Assortment (Metaphase I): Homologous chromosome pairs line up along the equator randomly. The paternal and maternal chromosomes of each pair can face either pole. This means any combination of maternal/paternal chromosomes can end up in the daughter cells."
+        ]
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-2-3-5-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,30 L50,110 M60,30 L60,110' stroke='#3182ce' stroke-width='6' stroke-linecap='round'/><path d='M80,30 L80,110 M90,30 L90,110' stroke='#e53e3e' stroke-width='6' stroke-linecap='round'/><text x='40' y='130' font-size='10'>Homologous Pair</text><path d='M180,30 L180,70 L190,90 L190,110' stroke='#3182ce' stroke-width='6' fill='none'/><path d='M190,30 L190,70 L180,90 L180,110' stroke='#e53e3e' stroke-width='6' fill='none'/><text x='150' y='130' font-size='10'>Chiasmata (Crossing Over)</text><path d='M260,30 L260,60 L260,110' stroke='#3182ce' stroke-width='6'/><path d='M270,30 L270,70' stroke='#3182ce' stroke-width='6'/><path d='M270,70 L270,110' stroke='#e53e3e' stroke-width='6'/><path d='M290,30 L290,70' stroke='#e53e3e' stroke-width='6'/><path d='M290,70 L290,110' stroke='#3182ce' stroke-width='6'/><path d='M300,30 L300,110' stroke='#e53e3e' stroke-width='6'/><text x='250' y='130' font-size='10' fill='#805ad5'>Recombinant Chromatids</text></svg>",
+            "caption": "Meiosis: Crossing Over"
+        }
     },
     {
-      type: 'paragraph',
-      id: 'p-prophase',
-      data: {
-        text: 'Prophase: Chromosomes condense from chromatin, becoming visible under a light microscope. Each chromosome consists of two sister chromatids joined at the centromere. Centrioles move to opposite poles of the cell, forming the mitotic spindle (composed of microtubules: polar microtubules organised by kinetochores, and astral microtubules extending to the cell periphery). The nuclear envelope breaks down, and chromosomes become accessible to spindle microtubules. Spindle checkpoint proteins monitor kinetochore-microtubule attachments.',
-      },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-metaphase',
-      data: {
-        text: 'Metaphase: Chromosomes align at the cell equator (metaphase plate). Kinetochores of sister chromatids are attached to microtubules from opposite poles. The spindle checkpoint (SAC: spindle assembly checkpoint) ensures all chromosomes are correctly attached before anaphase proceeds. Any unattached kinetochore signals a halt to the cycle until attachment is achieved. This checkpoint prevents aneuploidy (incorrect chromosome number).',
-      },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-anaphase',
-      data: {
-        text: 'Anaphase: Sister chromatids separate at the centromere. Separated chromatids (now called chromosomes) are pulled toward opposite poles by microtubules shortening at the kinetochore. Simultaneously, polar microtubules push against each other, forcing the poles apart and elongating the cell. The cell becomes increasingly elongated.',
-      },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-telophase',
-      data: {
-        text: 'Telophase: Nuclear envelopes reform around each set of chromosomes. Chromosomes begin to decondense back into chromatin. Spindle microtubules disappear. The cell is now binucleate (two nuclei). Telophase overlaps with cytokinesis, the physical division of cytoplasm.',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-cytokinesis',
-      data: { text: 'Cytokinesis: Cell Division', level: 3 },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-cytokinesis',
-      data: {
-        text: 'Cytokinesis divides the cytoplasm into two daughter cells. In animal cells, a cleavage furrow forms at the cell equator, deepening until the cell pinches in two. The furrow is created by a contractile ring composed of actin and myosin filaments that contracts, pulling the plasma membrane inward. In plant cells, cytokinesis differs: a cell plate (new cell wall) forms at the cell equator by deposition of cellulose and pectin from Golgi-derived vesicles. The cell plate grows outward until it fuses with the existing cell membrane, completely separating the two daughter cells.',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-duration',
-      data: { text: 'Duration of Mitotic Stages', level: 2 },
-    },
-    {
-      type: 'paragraph',
-      id: 'p-duration',
-      data: {
-        text: 'The duration of mitotic stages varies with cell type and species. In mammalian cells undergoing rapid division (e.g. bone marrow cells), Prophase lasts ~8–10 minutes, Metaphase ~2–3 minutes, Anaphase ~3–4 minutes, and Telophase ~3–4 minutes. The entire M phase (mitosis + cytokinesis) lasts approximately 20–40 minutes. Interphase is much longer, lasting 12–24 hours depending on cell type. The relative proportions of time spent in each mitotic stage can be calculated from a micrograph using the mitotic index (see next subtopic).',
-      },
-    },
-    {
-      type: 'heading',
-      id: 'h-importance',
-      data: { text: 'Importance of Mitosis', level: 2 },
-    },
-    {
-      type: 'list',
-      id: 'list-importance',
-      data: {
-        style: 'bullet',
-        items: [
-          'Growth: organisms increase in cell number, enabling increase in body size and mass',
-          'Repair: damaged or dead cells are replaced; skin cells shed continuously and are replaced; liver cells can regenerate after partial removal',
-          'Asexual reproduction: some organisms (bacteria, yeast, some plants) reproduce asexually, producing genetically identical offspring via mitosis',
-          'Replacement: in animals, red blood cells (lifespan ~120 days) and intestinal epithelial cells (lifespan ~4–5 days) are continuously replaced via mitosis in bone marrow and intestinal crypts',
-        ],
-      },
-    },
-    {
-      type: 'callout',
-      id: 'callout-key-checkpoint',
-      data: {
-        style: 'key',
-        title: 'Cell Cycle Checkpoints',
-        text: 'Checkpoints (G1/S, G2/M, spindle) are control mechanisms that halt the cycle if conditions are unfavourable. The spindle checkpoint ensures all chromosomes are attached before anaphase, preventing aneuploidy. p53 protein ("guardian of the genome") detects DNA damage and triggers either cycle arrest for repair or apoptosis (programmed cell death) if damage is irreparable. Loss of checkpoint control leads to uncontrolled division and cancer.',
-      },
-    },
-    {
-      type: 'callout',
-      id: 'callout-worked-mitosis',
-      data: {
-        style: 'worked',
-        title: 'Identifying Mitotic Stages in a Micrograph',
-        text: 'Given a micrograph of 100 cells: count cells in each stage. Example: 6 in Prophase, 2 in Metaphase, 2 in Anaphase, 2 in Telophase. Total dividing: 12 cells. Proportions: Prophase 50%, Metaphase 17%, Anaphase 17%, Telophase 17%. Prophase is longest (most time spent); anaphase and telophase are shortest.',
-      },
-    },
-    {
-      id: 'deeper',
-      type: 'deeper',
-      data: {
-        understand: 'Why must DNA replication occur in S phase before mitosis begins? If a cell divided without replicating its DNA, each daughter cell would receive only half the genetic information, rendering them non-functional. The cell cycle checkpoints (G1, G2, and spindle assembly checkpoint) ensure replication is complete and accurate before division.',
-        apply: 'A student counts cells in an onion root tip: 80% in interphase, 10% prophase, 5% metaphase, 3% anaphase, 2% telophase. If the total cell cycle is 24 hours, calculate the duration of each phase. What does the long interphase tell you about cell division rates in this tissue?',
-        analyze: 'Compare the events of prophase, metaphase, anaphase, and telophase in detail. Explain how spindle fibres, centromeres, and the nuclear envelope each contribute to the precise separation of chromatids.',
-        evaluate: 'Evaluate the importance of the G2 checkpoint in preventing cancer. What types of damage does it detect? How do tumour suppressor genes (e.g. p53, BRCA1) contribute to this checkpoint, and why does their loss lead to uncontrolled division?',
-      },
-      terms: [],
-    },
-    {
-      type: 'checklist',
-      id: 'check-mitosis',
-      data: {
-        items: [
-          { text: 'Can describe G1, S, and G2 phases of interphase', checked: false },
-          { text: 'Know mitotic stages: Prophase (chromosomes condense, spindle forms), Metaphase (align at equator), Anaphase (chromatids separate), Telophase (nuclear envelopes reform)', checked: false },
-          { text: 'Understand cytokinesis differs in animal (cleavage furrow) and plant (cell plate) cells', checked: false },
-          { text: 'Can list reasons mitosis is important: growth, repair, replacement, asexual reproduction', checked: false },
-        ],
-      },
-    },
-    {
-      type: 'summary',
-      id: 'sum-mitosis',
-      data: {
-        text: 'Cell cycle: Interphase (G1: growth; S: DNA replication to 2n→4n; G2: preparation) followed by M phase (mitosis + cytokinesis). Mitosis: Prophase (chromosomes condense, spindle forms), Metaphase (chromosomes align, spindle checkpoint), Anaphase (sister chromatids separate), Telophase (nuclear envelopes reform). Cytokinesis: cleavage furrow in animal cells, cell plate in plant cells. Mitosis produces two identical daughter cells and is essential for growth, repair, replacement, and asexual reproduction. Checkpoints (G1/S, G2/M, spindle) ensure accurate division.',
-      },
-    },
+        "id": "svg-diag-2-3-5-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='120' height='100' fill='#edf2f7' rx='5'/><line x1='50' y1='30' x2='50' y2='60' stroke='#e53e3e' stroke-width='4'/><line x1='70' y1='30' x2='70' y2='60' stroke='#e53e3e' stroke-width='4'/><line x1='50' y1='80' x2='50' y2='100' stroke='#3182ce' stroke-width='4'/><line x1='70' y1='80' x2='70' y2='100' stroke='#3182ce' stroke-width='4'/><text x='40' y='140' font-size='10'>Option 1 (Red/Red, Blue/Blue)</text><rect x='180' y='20' width='120' height='100' fill='#edf2f7' rx='5'/><line x1='210' y1='30' x2='210' y2='60' stroke='#e53e3e' stroke-width='4'/><line x1='230' y1='30' x2='230' y2='60' stroke='#3182ce' stroke-width='4'/><line x1='210' y1='80' x2='210' y2='100' stroke='#3182ce' stroke-width='4'/><line x1='230' y1='80' x2='230' y2='100' stroke='#e53e3e' stroke-width='4'/><text x='180' y='140' font-size='10'>Option 2 (Red/Blue, Blue/Red)</text></svg>",
+            "caption": "Independent Assortment"
+        }
+    }
   ],
-  recall: {
-    enabled: true,
-    cues: [
+  "recall": {
+    "enabled": true,
+    "cues": [
       {
-        id: 'cue-1',
-        blockId: 'list-interphase',
-        prompt: 'Describe G1, S, and G2 phases, and explain what happens at the G1/S and G2/M checkpoints.',
+        "id": "cue-1",
+        "blockId": "p-meiosis",
+        "prompt": "What is the end product of meiosis?"
       },
       {
-        id: 'cue-2',
-        blockId: 'p-metaphase',
-        prompt: 'What is the spindle checkpoint, and why is it important for preventing aneuploidy?',
+        "id": "cue-2",
+        "blockId": "list-cross",
+        "prompt": "Explain how crossing over generates genetic variation."
       },
       {
-        id: 'cue-3',
-        blockId: 'p-cytokinesis',
-        prompt: 'How does cytokinesis differ between animal and plant cells?',
-      },
-      {
-        id: 'cue-4',
-        blockId: 'list-importance',
-        prompt: 'List four reasons why mitosis is essential to living organisms.',
-      },
+        "id": "cue-3",
+        "blockId": "list-cross",
+        "prompt": "During which phase of meiosis does independent assortment occur?"
+      }
     ],
-    summaryText: 'Interphase: G1 (growth, checkpoint screens cell size and damage), S (DNA replication: 2n → 4n), G2 (preparation, checkpoint checks DNA integrity). Mitosis: Prophase (chromosomes condense, spindle forms), Metaphase (chromosomes align, spindle checkpoint ensures attachments), Anaphase (sister chromatids separate), Telophase (nuclear envelopes reform). Cytokinesis: animal cells use contractile ring forming cleavage furrow; plant cells form cell plate via Golgi vesicles. Mitosis is essential for growth, repair, replacement of worn cells, and asexual reproduction.',
-    ready: false,
+    "summaryText": "Meiosis involves two divisions to produce four haploid gametes. It creates genetic variation through crossing over (exchange of alleles between homologous chromosomes) and independent assortment (random alignment of chromosome pairs).",
+    "ready": true
   },
-  evidence: [
-    {
-      id: 'ev-1',
-      title: 'Mitotic Checkpoint Control and Cancer Prevention',
-      detail: 'Loss of checkpoint control (e.g. p53 mutations) leads to uncontrolled mitosis and cancer; understanding checkpoints is key to developing cancer therapies targeting cell cycle regulation.',
-      year: '2024',
-      source: 'A-Level Biology Specification',
-      tags: ['mitosis', 'cell cycle', 'cancer biology'],
-    },
-  ],
+  "evidence": []
 };

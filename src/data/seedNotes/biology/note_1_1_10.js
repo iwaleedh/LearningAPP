@@ -1,199 +1,88 @@
 export const note_biology_1_1_10 = {
-  blocks: [
+  "blocks": [
     {
-      id: 'obj-antioxidants',
-      type: 'objective',
-      data: {
-        text: 'Describe the nature of free radicals and reactive oxygen species (ROS). Explain how antioxidants neutralise free radicals and protect cells from oxidative damage. Understand the link between antioxidants, CVD, and diet.',
-      },
-    },
-    {
-      id: 'h-free-radicals',
-      type: 'heading',
-      data: { text: 'Free Radicals and Reactive Oxygen Species', level: 2 },
-    },
-    {
-      id: 'p-free-radicals',
-      type: 'paragraph',
-      data: {
-        text: 'A free radical is an atom or molecule with one or more unpaired electrons in its outermost shell. This makes it highly reactive — it seeks to gain (or donate) an electron by reacting with other molecules. Reactive oxygen species (ROS) are a family of free radicals and related compounds derived from oxygen. They are produced as natural by-products of aerobic respiration in mitochondria, and also from immune responses, UV radiation, tobacco smoke, and air pollution.',
-      },
-    },
-    {
-      id: 'list-ros-sources',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Normal aerobic metabolism — electrons "leak" from the electron transport chain in mitochondria and combine with O₂ → superoxide (O₂•⁻) and hydrogen peroxide (H₂O₂)',
-          'Tobacco smoke — contains high concentrations of free radicals',
-          'UV radiation — causes DNA damage and generates ROS in skin cells',
-          'Ionising radiation — splits water molecules, generating hydroxyl radicals (•OH)',
-          'Immune cell activation — neutrophils deliberately produce ROS to kill bacteria ("oxidative burst")',
-        ],
-      },
-    },
-    {
-      id: 'h-oxidative-damage',
-      type: 'heading',
-      data: { text: 'Oxidative Damage to Cells', level: 2 },
-    },
-    {
-      id: 'p-oxidative-damage',
-      type: 'paragraph',
-      data: {
-        text: 'When free radicals react with macromolecules in cells, they cause oxidative damage. This contributes to ageing, cancer, and CVD.',
-      },
-    },
-    {
-      id: 'table-radical-damage',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Targets of free radical damage and consequences',
-        headers: ['Target molecule', 'Damage caused', 'Consequence'],
-        rows: [
-          ['Lipids (unsaturated fatty acids in membranes)', 'Lipid peroxidation — chain reaction oxidising membrane phospholipid tails', 'Membrane disruption; cell damage; LDL oxidation → atherosclerosis'],
-          ['Proteins (enzymes, structural proteins)', 'Oxidation of amino acid side-chains; cross-linking', 'Loss of enzyme activity; structural damage; clumping of proteins (e.g. cataracts)'],
-          ['DNA', 'Base oxidation (e.g. G → 8-oxoguanine); strand breaks', 'Mutations → cancer; mitochondrial dysfunction'],
-          ['LDL cholesterol', 'Oxidation of lipid in LDL particle (oxLDL)', 'OxLDL taken up by macrophages → foam cells → atherosclerotic plaques'],
-        ],
-      },
-    },
-    {
-      id: 'callout-key-ldl-oxidation',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Free Radicals, LDL, and CVD',
-        text: 'Free radicals oxidise LDL particles in blood plasma → oxidised LDL (oxLDL). OxLDL is taken up by macrophages (via scavenger receptors, not normal LDL receptors) → forms foam cells → accumulates in artery walls. This is key in the progression from healthy artery → fatty streak → atherosclerotic plaque. Antioxidants prevent LDL oxidation and therefore may reduce CVD risk.',
-      },
-    },
-    {
-      id: 'h-antioxidants',
-      type: 'heading',
-      data: { text: 'Antioxidants', level: 2 },
-    },
-    {
-      id: 'p-antioxidants',
-      type: 'paragraph',
-      data: {
-        text: 'Antioxidants are molecules that can donate electrons to free radicals, neutralising them without themselves becoming dangerously reactive. By "scavenging" free radicals, antioxidants break the chain reaction of oxidative damage. Antioxidants are found both inside cells (enzymatic) and in foods (dietary).',
-      },
-    },
-    {
-      id: 'table-antioxidants',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Key antioxidants and their sources',
-        headers: ['Antioxidant', 'Type', 'Sources', 'Mechanism'],
-        rows: [
-          ['Vitamin C (ascorbic acid)', 'Water-soluble dietary antioxidant', 'Citrus fruits, peppers, broccoli, kiwi', 'Donates electrons to free radicals in cytoplasm and plasma; directly reduces ROS; also regenerates vitamin E'],
-          ['Vitamin E (tocopherol)', 'Fat-soluble dietary antioxidant', 'Nuts, seeds, vegetable oils, green vegetables', 'Protects cell membranes from lipid peroxidation; intercalates into phospholipid bilayer; stops radical chain reactions'],
-          ['Beta-carotene (provitamin A)', 'Fat-soluble dietary antioxidant', 'Carrots, tomatoes, sweet potato, green leafy veg', 'Quenches singlet oxygen free radicals in membranes'],
-          ['Superoxide dismutase (SOD)', 'Enzymatic antioxidant (endogenous)', 'Produced by cells — not dietary', 'Converts superoxide (O₂•⁻) → H₂O₂; works in cytoplasm and mitochondria'],
-          ['Catalase, Glutathione peroxidase', 'Enzymatic antioxidants (endogenous)', 'Produced by cells', 'Converts H₂O₂ → water + oxygen; prevents hydroxyl radical formation from H₂O₂'],
-        ],
-      },
-    },
-    {
-      id: 'callout-worked-antioxidant',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'How Vitamin C Neutralises a Free Radical',
-        text: 'Free radical (R•) has unpaired electron → attacks lipid membrane to steal electron → chain reaction continues.\n\nVitamin C (ascorbate) donates an electron to R•:\n  R• + ascorbate → R-H + ascorbyl radical•\n\nThe ascorbyl radical• is stable (unpaired electron delocalised) and does not cause further damage. Vitamin C is then "used up" (oxidised to dehydroascorbate) but can be regenerated by glutathione or vitamin E.',
-      },
-    },
-    {
-      id: 'h-diet-antioxidants',
-      type: 'heading',
-      data: { text: 'Diet, Antioxidants, and CVD', level: 2 },
-    },
-    {
-      id: 'p-diet-antioxidants',
-      type: 'paragraph',
-      data: {
-        text: 'Diets rich in fruits and vegetables (which contain vitamins C and E, carotenoids, and polyphenols) are associated with lower rates of CVD and some cancers. Epidemiological studies show an inverse correlation between antioxidant intake and CVD mortality. The likely mechanism is that antioxidants prevent LDL oxidation, reducing foam cell formation and atherosclerosis. Additionally, antioxidant vitamins help protect the endothelial lining of arteries from free radical damage, reducing the initiation of plaque formation.',
-      },
-    },
-    {
-      id: 'callout-tip-study-design',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Correlation vs. Causation in Antioxidant Research',
-        text: 'Observational studies show people eating more antioxidants have less CVD. However, some large clinical trials of antioxidant supplements FAILED to reduce CVD mortality. This suggests: (1) the beneficial effects may come from WHOLE FOODS (multiple compounds working together), not isolated supplements; or (2) antioxidants are a marker of a generally healthy diet, not the direct cause. This is an important lesson about correlation vs. causation.',
-      },
-    },
-    {
-      id: 'callout-we-finnish',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Study Data: Finnish Study on Vitamin C and CVD (1984–1992)',
-        text: 'A longitudinal study of 1,605 Finnish men followed from 1984–1992 monitored vitamin C levels and cardiovascular outcomes.\n\nKey finding:\n• Men with LOW vitamin C levels: 13.2% had a heart attack\n• Men with NORMAL vitamin C levels: 3.8% had a heart attack\n\nDescribe: Men with low vitamin C had a higher rate of heart attacks (13.2%) compared to those with normal levels (3.8%).\n\nConclude: The data suggests an inverse correlation between vitamin C levels and heart attack risk — men with low vitamin C were approximately 3.5× more likely to have a heart attack.\n\nEvaluate:\n• Correlation only — cannot prove that vitamin C deficiency directly causes heart attacks\n• Confounders: low-vitamin C men may also smoke more, exercise less, or eat a generally poor diet\n• Study population restricted to Finnish men — may not generalise to women or other ethnicities\n• Longitudinal design is a strength — identifies associations over time rather than at a single point'
+      "id": "obj-anti",
+      "type": "objective",
+      "data": {
+        "text": "Evaluate the role of antioxidants in reducing the risk of cardiovascular disease."
       }
     },
     {
-      id: 'callout-warning-conflicting',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Conflicting Evidence: Antioxidant Supplements and CVD',
-        text: 'A 2016 meta-analysis (combining data from multiple clinical trials) found NO clear relationship between vitamin C supplementation and reduced CVD risk. Some evidence suggests high-dose antioxidant supplements may even be harmful.\n\nWhy might supplements fail when dietary antioxidants appear protective?\n• Supplements provide a single isolated compound; whole foods contain hundreds of interacting phytochemicals and cofactors\n• The complex beneficial interactions in fruit and vegetables cannot be replicated by an isolated supplement\n• Excessive antioxidants may interfere with beneficial reactive oxygen species (ROS) signalling in cells\n• Observational studies showing benefit likely reflect a generally healthy diet overall (not just antioxidants)\n\nExam note: When asked about antioxidants and CVD, always state that the evidence is CONFLICTING and that all available evidence must be considered before drawing firm conclusions.'
+      "id": "h-radicals",
+      "type": "heading",
+      "data": {
+        "text": "Free Radicals and Oxidative Stress",
+        "level": 2
       }
     },
     {
-      id: 'h-balance',
-      type: 'heading',
-      data: { text: 'Balance Between Free Radicals and Antioxidants', level: 2 },
+      "id": "p-radicals",
+      "type": "paragraph",
+      "data": {
+        "text": "A free radical is an atom or molecule with an unpaired electron. Because they are missing an electron, they are highly reactive and will steal electrons from other molecules in the body, a process called oxidation. This can cause widespread cellular damage (oxidative stress)."
+      }
     },
     {
-      id: 'p-oxidative-stress',
-      type: 'paragraph',
-      data: {
-        text: 'In healthy cells, production of free radicals and antioxidant defences are in balance. When free radical production exceeds antioxidant capacity, oxidative stress occurs. Factors increasing oxidative stress: smoking, pollution, prolonged intense exercise, high-fat diet, ageing, disease states. Lifestyle factors that reduce oxidative stress: eating antioxidant-rich foods (fruit and vegetables), not smoking, moderate exercise, maintaining a healthy weight.',
-      },
+      "id": "p-cvd-link",
+      "type": "paragraph",
+      "data": {
+        "text": "In the context of CVD, free radicals can oxidise Low-Density Lipoproteins (LDLs). Oxidised LDLs are more likely to be taken up by white blood cells (macrophages) in the artery wall, accelerating the formation of atheromas (plaques) and triggering atherosclerosis."
+      }
     },
     {
-      id: 'checklist-antioxidants',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Define a free radical and explain what makes it reactive', checked: false },
-          { text: 'Name three sources of free radicals inside the body', checked: false },
-          { text: 'Explain how free radicals damage lipids, proteins, and DNA', checked: false },
-          { text: 'Explain how LDL oxidation by free radicals contributes to atherosclerosis', checked: false },
-          { text: 'Define antioxidant and explain how it neutralises free radicals', checked: false },
-          { text: 'Name three dietary antioxidants and their food sources', checked: false },
-          { text: 'Explain the epidemiological evidence linking antioxidant diet and CVD', checked: false },
-          { text: 'Finnish study: 1,605 men (1984–1992); 13.2% low vitamin C vs 3.8% normal vitamin C had heart attacks — inverse correlation (evaluate: correlation only, confounders)', checked: false },
-          { text: '2016 meta-analysis: NO clear link between vitamin C supplements and CVD reduction — evidence is CONFLICTING; whole foods ≠ isolated supplements', checked: false },
-        ],
-      },
+      "id": "h-antioxidants",
+      "type": "heading",
+      "data": {
+        "text": "Role of Antioxidants",
+        "level": 2
+      }
     },
     {
-      id: 'summary-antioxidants',
-      type: 'summary',
-      data: {
-        text: 'Free radicals (unpaired electrons) are produced during aerobic respiration, by smoking, UV, and radiation. They damage lipids (membrane peroxidation → oxLDL → foam cells → atherosclerosis), proteins (enzyme inactivation), and DNA (mutations → cancer). Antioxidants donate electrons to neutralise radicals: vitamin C (water-soluble, regenerates vitamin E), vitamin E (fat-soluble, protects membranes), beta-carotene (quenches singlet O₂), enzymatic antioxidants (SOD, catalase convert superoxide/H₂O₂ to harmless products). Diet rich in fruit and vegetables reduces CVD risk, partly by preventing LDL oxidation. Smoking increases free radical load and depletes antioxidants.',
-      },
+      "id": "p-antioxidants",
+      "type": "paragraph",
+      "data": {
+        "text": "Antioxidants (such as Vitamin C and Vitamin E) are molecules that can neutralise free radicals. They do this by donating an electron to the free radical without becoming unstable themselves. By neutralising free radicals, antioxidants prevent the oxidation of LDL cholesterol, thereby slowing or preventing the endothelial damage that leads to atherosclerosis."
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-1-1-10-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='15' fill='#ed8936'/><text x='43' y='55' font-size='14' font-weight='bold' fill='white'>R•</text><circle cx='110' cy='50' r='15' fill='#63b3ed'/><text x='102' y='55' font-size='14' fill='white'>M</text><text x='75' y='55' font-weight='bold'>→</text><circle cx='180' cy='50' r='15' fill='#48bb78'/><text x='172' y='55' font-size='14' fill='white'>R</text><text x='210' y='55' font-weight='bold'>+</text><circle cx='250' cy='50' r='15' fill='#ed8936'/><text x='240' y='55' font-size='14' font-weight='bold' fill='white'>M•</text><text x='280' y='55' font-size='10'>(New Radical)</text></svg>",
+            "caption": "Free Radical Chain Reaction"
+        }
     },
+    {
+        "id": "svg-diag-1-1-10-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='50' r='20' fill='#38a169'/><text x='45' y='55' fill='white' font-size='10'>Vit C</text><circle cx='140' cy='50' r='15' fill='#ed8936'/><text x='132' y='55' font-weight='bold' fill='white'>R•</text><text x='95' y='55' font-weight='bold'>→</text><circle cx='220' cy='50' r='20' fill='#d69e2e'/><text x='202' y='55' fill='white' font-size='10'>Stable</text><circle cx='280' cy='50' r='15' fill='#48bb78'/><text x='272' y='55' fill='white'>R</text><text x='160' y='25' font-size='10' fill='#2b6cb0'>Donates electron</text><path d='M80,40 Q130,10 140,35' fill='none' stroke='#2b6cb0' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/></svg>",
+            "caption": "Antioxidant Protection"
+        }
+    }
   ],
-  recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'p-free-radicals', prompt: 'What is a free radical? Why are free radicals chemically reactive?' },
-      { id: 'cue-2', blockId: 'table-radical-damage', prompt: 'Explain how free radicals cause damage to (a) lipids, (b) DNA, and (c) LDL cholesterol.' },
-      { id: 'cue-3', blockId: 'callout-key-ldl-oxidation', prompt: 'Explain the link between free radicals, LDL oxidation, and atherosclerosis.' },
-      { id: 'cue-4', blockId: 'table-antioxidants', prompt: 'Name two dietary antioxidants and explain how each protects cells from free radical damage.' },
-      { id: 'cue-5', blockId: 'callout-we-finnish', prompt: 'Describe the Finnish study on vitamin C and CVD. What were the specific findings and what are the limitations of this evidence?' },
-      { id: 'cue-6', blockId: 'callout-warning-conflicting', prompt: 'Why does the evidence on antioxidants and CVD conflict between observational studies and clinical trials of supplements? What does the 2016 meta-analysis show?' },
+  "recall": {
+    "enabled": true,
+    "cues": [
+      {
+        "id": "cue-1",
+        "blockId": "p-radicals",
+        "prompt": "What is a free radical and why is it dangerous?"
+      },
+      {
+        "id": "cue-2",
+        "blockId": "p-cvd-link",
+        "prompt": "How do free radicals contribute to atherosclerosis?"
+      },
+      {
+        "id": "cue-3",
+        "blockId": "p-antioxidants",
+        "prompt": "How do antioxidants neutralise free radicals?"
+      }
     ],
-    summaryText: 'Free radicals = unpaired electrons → highly reactive. Sources: respiration, smoking, UV. Damage: lipid peroxidation, DNA mutation, protein oxidation, LDL oxidation → atherosclerosis. Antioxidants (vit C, E, carotene, SOD, catalase) donate electrons → neutralise radicals. Finnish study: 1,605 men; low vitamin C → 13.2% heart attack vs 3.8% (correlation only — confounders possible). 2016 meta-analysis: supplements show no clear CVD benefit. Evidence is CONFLICTING — whole foods protective but supplements are not; all evidence must be considered.',
-    ready: false,
+    "summaryText": "Free radicals are highly reactive molecules that oxidise LDLs, accelerating atheroma formation in arteries. Antioxidants like Vitamin C prevent this damage by safely donating electrons to neutralise the free radicals.",
+    "ready": true
   },
-  evidence: [
-    { id: 'ev-1', title: 'HOPE trial — Vitamin E and CVD', detail: 'The Heart Outcomes Prevention Evaluation (HOPE) trial (2000, n=9541) found that vitamin E supplementation did not significantly reduce CVD outcomes. This contrasts with observational studies, suggesting dietary antioxidants work through complex mechanisms or the beneficial component in food is not isolated vitamin E.', year: '2000', source: 'Yusuf S et al., NEJM', tags: ['antioxidants', 'CVD', 'clinical trial'] },
-  ],
+  "evidence": []
 };

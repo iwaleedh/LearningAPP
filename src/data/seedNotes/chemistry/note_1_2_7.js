@@ -1,140 +1,288 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 2 · Subtopic 7
- * "Atomic orbitals (s, p, d)"
- * Source: Pearson Edexcel IAL Chemistry — Section 2A.3
+ * "Electronic configuration and periodicity"
+ * Source: Pearson Edexcel IAL Chemistry — Section 2A.3 / 2A.5
  */
 export const note_chemistry_1_2_7 = {
   blocks: [
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Know the shapes of s, p and d atomic orbitals. Understand orbital notation for electron configurations using boxes.' },
+      data: { text: 'Write full and abbreviated electronic configurations for atoms and ions. Apply the 4s/3d ordering rule correctly. Recognise Cr and Cu anomalies. Identify s-, p-, d- and f-block elements from configuration.' },
       terms: []
     },
     {
-      id: 'h-orbital',
+      id: 'h-full-config',
       type: 'heading',
-      data: { text: 'What is an Atomic Orbital?', level: 2 },
+      data: { text: 'Full Electronic Configuration', level: 2 },
       terms: []
     },
     {
-      id: 'p-orbit-vs-orbital',
-      type: 'paragraph',
+      id: 'list-full-config',
+      type: 'list',
       data: {
-        text: 'A simple view of the atom suggests electrons travel in fixed, circular paths called <strong>orbits</strong> (like planets around the sun). However, according to the <strong>Heisenberg Uncertainty Principle</strong>, it is impossible to know with certainty both where an electron is and where it is going next. Because we cannot plot an exact path, we plot a 3D probability map based on where the electron is most likely to be found—this region is called an <strong>orbital</strong>.'
-      },
-      terms: ['Heisenberg Uncertainty Principle']
-    },
-    {
-      id: 'callout-def',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Definition: Atomic Orbital',
-        text: 'An <strong>atomic orbital</strong> is a region of space around the nucleus where there is a high <strong>probability</strong> of finding an electron. Each orbital can hold a maximum of <strong>2 electrons</strong> (with opposite spins — Pauli exclusion principle).'
-      },
-      terms: ['Atomic orbital', 'Pauli exclusion principle']
-    },
-    {
-      id: 'h-shapes',
-      type: 'heading',
-      data: { text: 'Shapes of Orbitals', level: 2 },
-      terms: []
-    },
-    {
-      id: 'svg-orbitals',
-      type: 'svg',
-      data: {
-        caption: 'Figure: Shapes of s, p and d atomic orbitals',
-        svg: `<svg viewBox="0 0 540 180" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
-  <!-- s orbital: sphere -->
-  <ellipse cx="80" cy="85" rx="50" ry="50" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2" opacity="0.85"/>
-  <text x="80" y="90" text-anchor="middle" fill="#1e40af" font-weight="bold">s</text>
-  <text x="80" y="155" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="bold">s orbital</text>
-  <text x="80" y="168" text-anchor="middle" fill="#64748b" font-size="10">Sphere</text>
-
-  <!-- p orbital: two lobes -->
-  <!-- top lobe -->
-  <ellipse cx="230" cy="45" rx="22" ry="38" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5" opacity="0.85"/>
-  <!-- bottom lobe -->
-  <ellipse cx="230" cy="125" rx="22" ry="38" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5" opacity="0.6"/>
-  <!-- nucleus dot -->
-  <circle cx="230" cy="85" r="4" fill="#15803d"/>
-  <!-- axis line -->
-  <line x1="230" y1="5" x2="230" y2="165" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="246" y="18" fill="#64748b" font-size="9">+</text>
-  <text x="246" y="179" fill="#64748b" font-size="9">−</text>
-  <text x="230" y="155" text-anchor="middle" fill="#15803d" font-size="12" font-weight="bold">p orbital</text>
-  <text x="230" y="168" text-anchor="middle" fill="#64748b" font-size="10">Dumbbell (2 lobes)</text>
-
-  <!-- Three p orbitals label -->
-  <text x="230" y="178" text-anchor="middle" fill="#64748b" font-size="9">pₓ, pᵧ, p_z along x/y/z axes</text>
-
-  <!-- d orbital: 4 lobes (representative d_xy) -->
-  <!-- lobe top-right -->
-  <ellipse cx="405" cy="55" rx="30" ry="18" fill="#fde68a" stroke="#d97706" stroke-width="1.5" opacity="0.85" transform="rotate(45,405,55)"/>
-  <!-- lobe bottom-left -->
-  <ellipse cx="405" cy="115" rx="30" ry="18" fill="#fde68a" stroke="#d97706" stroke-width="1.5" opacity="0.85" transform="rotate(45,405,115)"/>
-  <!-- lobe top-left -->
-  <ellipse cx="355" cy="55" rx="30" ry="18" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" opacity="0.7" transform="rotate(-45,355,55)"/>
-  <!-- lobe bottom-right -->
-  <ellipse cx="455" cy="115" rx="30" ry="18" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" opacity="0.7" transform="rotate(-45,455,115)"/>
-  <!-- nucleus -->
-  <circle cx="405" cy="85" r="4" fill="#92400e"/>
-  <text x="405" y="155" text-anchor="middle" fill="#92400e" font-size="12" font-weight="bold">d orbital</text>
-  <text x="405" y="168" text-anchor="middle" fill="#64748b" font-size="10">4-lobed (cloverleaf)</text>
-  <text x="405" y="178" text-anchor="middle" fill="#64748b" font-size="9">5 d orbitals per subshell</text>
-</svg>`
-      },
-      terms: []
-    },
-    {
-      id: 'table-shapes',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Shapes and properties of s, p and d orbitals',
-        headers: ['Orbital Type', 'Shape', 'Number per subshell', 'Max electrons per subshell'],
-        rows: [
-          ['<strong>s orbital</strong>', 'Spherical — the electron cloud is distributed equally in all directions around the nucleus.', '1', '2'],
-          ['<strong>p orbital</strong>', 'Dumbbell (figure-8) shaped — two lobes, one on each side of the nucleus. Three p orbitals are oriented along the x, y and z axes (pₓ, pᵧ, p_z) at mutual right angles.', '3', '6'],
-          ['<strong>d orbital</strong>', 'More complex shapes (cloverleaf and dumbbell-with-ring). Five d orbitals per subshell.', '5', '10']
+        style: 'bullet',
+        items: [
+          'Electronic configuration shows the distribution of electrons across sub-shells',
+          'Written as a series of sub-shell labels with superscripts for electron count: e.g. 1s² 2s² 2p⁶',
+          'Filling order (Aufbau): 1s → 2s → 2p → 3s → 3p → <strong>4s → 3d</strong> → 4p → 5s → 4d → 5p …',
+          '4s is filled <em>before</em> 3d for neutral atoms because 4s is at a lower energy than 3d in neutral atoms',
+          'After 3d begins filling, 3d and 4s energies become similar in magnitude',
+          'Total electrons in a neutral atom = atomic number Z'
         ]
       },
-      terms: ['s orbital', 'p orbital', 'd orbital']
+      terms: []
     },
     {
-      id: 'callout-levels',
-      type: 'callout',
+      id: 'table-full-configs',
+      type: 'comparisonTable',
       data: {
-        style: 'key',
-        title: 'Principal Energy Levels (1s vs 2s vs 3s)',
-        text: 'The number before the letter (e.g., <strong>1</strong>s, <strong>2</strong>s, <strong>3</strong>s) represents the principal quantum number (or main energy level). A <strong>2s</strong> orbital has the same spherical shape as a 1s orbital, but it is <strong>larger</strong>, and its electrons spend most of their time <strong>further from the nucleus</strong>. Therefore, a 2s electron is at a higher energy level than a 1s electron.<br/><br/>Within a principal level, subshells have slightly different energies. For example, the <strong>2s orbital has a lower energy than the 2p orbitals</strong>, so 2s fills first. The three 2p orbitals (2p<sub>x</sub>, 2p<sub>y</sub>, 2p<sub>z</sub>) all have exactly the same energy (they are <em>degenerate</em>).'
+        caption: 'Full electronic configurations for selected elements (Periods 1–4)',
+        headers: ['Element', 'Z', 'Full configuration'],
+        rows: [
+          ['H', '1', '1s¹'],
+          ['He', '2', '1s²'],
+          ['Li', '3', '1s² 2s¹'],
+          ['C', '6', '1s² 2s² 2p²'],
+          ['Ne', '10', '1s² 2s² 2p⁶'],
+          ['Na', '11', '1s² 2s² 2p⁶ 3s¹'],
+          ['Mg', '12', '1s² 2s² 2p⁶ 3s²'],
+          ['Al', '13', '1s² 2s² 2p⁶ 3s² 3p¹'],
+          ['P', '15', '1s² 2s² 2p⁶ 3s² 3p³'],
+          ['Cl', '17', '1s² 2s² 2p⁶ 3s² 3p⁵'],
+          ['Ar', '18', '1s² 2s² 2p⁶ 3s² 3p⁶'],
+          ['K', '19', '1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹'],
+          ['Ca', '20', '1s² 2s² 2p⁶ 3s² 3p⁶ 4s²'],
+          ['Sc', '21', '1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹ 4s²'],
+          ['Fe', '26', '1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²'],
+          ['Zn', '30', '1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹⁰ 4s²']
+        ]
       },
       terms: []
     },
     {
-      id: 'h-notation',
+      id: 'h-abbreviated',
       type: 'heading',
-      data: { text: 'Box (Orbital) Notation', level: 2 },
+      data: { text: 'Abbreviated (Noble Gas Core) Notation', level: 2 },
       terms: []
     },
     {
-      id: 'callout-box',
+      id: 'list-abbreviated',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Replace the inner electron core with the symbol of the preceding noble gas in square brackets',
+          'Then write the remaining outer sub-shells as normal',
+          'Saves writing long inner-core configurations; focuses attention on the outer (valence) electrons',
+          'Examples:<br/>&nbsp;&nbsp;&nbsp;Na: [Ne] 3s¹&nbsp;&nbsp;&nbsp;(Ne = 1s² 2s² 2p⁶)<br/>&nbsp;&nbsp;&nbsp;Fe: [Ar] 3d⁶ 4s²&nbsp;&nbsp;&nbsp;(Ar = 1s² 2s² 2p⁶ 3s² 3p⁶)<br/>&nbsp;&nbsp;&nbsp;Cu: [Ar] 3d¹⁰ 4s¹&nbsp;&nbsp;&nbsp;(anomaly — see below)',
+          'Always check which noble gas immediately precedes the element in the periodic table'
+        ]
+      },
+      terms: ['Abbreviated electronic configuration']
+    },
+    {
+      id: 'h-anomalies',
+      type: 'heading',
+      data: { text: 'Anomalous Configurations: Cr and Cu', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-anomalies',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: 'Cr (Z=24) and Cu (Z=29) — Must Memorise',
+        text: '<strong>Expected vs actual configurations:</strong><br/><br/><strong>Chromium (Cr, Z=24):</strong><br/>Expected: [Ar] 3d⁴ 4s²<br/>Actual: <strong>[Ar] 3d⁵ 4s¹</strong><br/>Reason: the half-filled 3d sub-shell (3d⁵) gives extra stability from exchange energy — five electrons each in separate 3d orbitals with parallel spins. Promoting one 4s electron to complete the half-filled 3d sub-shell is energetically favourable.<br/><br/><strong>Copper (Cu, Z=29):</strong><br/>Expected: [Ar] 3d⁹ 4s²<br/>Actual: <strong>[Ar] 3d¹⁰ 4s¹</strong><br/>Reason: the fully-filled 3d sub-shell (3d¹⁰) is also particularly stable (no unpaired electrons remaining in 3d). One 4s electron is promoted to fully fill the 3d sub-shell.<br/><br/><em>Edexcel exam note: You are expected to know and recall these two anomalous configurations. Always write them as [Ar] 3d⁵ 4s¹ (Cr) and [Ar] 3d¹⁰ 4s¹ (Cu). Writing the expected (wrong) configuration will lose marks.</em>'
+      },
+      terms: ['Chromium', 'Copper']
+    },
+    {
+      id: 'h-ions',
+      type: 'heading',
+      data: { text: 'Electronic Configurations of Ions', level: 2 },
+      terms: []
+    },
+    {
+      id: 'list-ion-rules',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Main-group cations:</strong> Remove electrons from the outermost shell first (highest n), then highest sub-shell energy<br/>Example: Na → Na⁺: remove 3s¹ → configuration [Ne] i.e. 1s² 2s² 2p⁶<br/>Example: Mg → Mg²⁺: remove both 3s² → configuration [Ne]<br/>Example: Al → Al³⁺: remove 3s² 3p¹ → configuration [Ne]',
+          '<strong>Main-group anions:</strong> Add electrons to the outermost sub-shell<br/>Example: Cl → Cl⁻: add one to 3p⁵ → 3p⁶ → configuration [Ar]<br/>Example: O → O²⁻: add two to 2p⁴ → 2p⁶ → configuration [Ne]',
+          '<strong>Transition metal ions:</strong> <em>Remove 4s electrons before 3d electrons</em> — even though 4s filled first in the neutral atom, 4s is at a higher energy than 3d in the ion<br/>Rule: once the ion forms, 3d orbitals drop below 4s → always lose 4s first',
+          '<strong>Fe (Z=26): [Ar] 3d⁶ 4s²</strong><br/>→ Fe²⁺: remove both 4s electrons → [Ar] 3d⁶<br/>→ Fe³⁺: remove both 4s and one 3d → [Ar] 3d⁵',
+          '<strong>Cu (Z=29): [Ar] 3d¹⁰ 4s¹</strong><br/>→ Cu⁺: remove 4s¹ → [Ar] 3d¹⁰<br/>→ Cu²⁺: remove 4s¹ then one 3d → [Ar] 3d⁹',
+          '<strong>Mn (Z=25): [Ar] 3d⁵ 4s²</strong><br/>→ Mn²⁺: remove both 4s → [Ar] 3d⁵',
+          'Key rule for all transition metal ions: <strong>4s out first</strong>, regardless of filling order'
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'table-ion-configs',
+      type: 'comparisonTable',
+      data: {
+        caption: 'Electronic configurations of key ions — note 4s is always removed before 3d for transition metals',
+        headers: ['Ion', 'Atom config (abbreviated)', 'Electrons removed', 'Ion configuration'],
+        rows: [
+          ['Na⁺', '[Ne] 3s¹', '3s¹', '[Ne] = 1s² 2s² 2p⁶'],
+          ['Mg²⁺', '[Ne] 3s²', '3s²', '[Ne] = 1s² 2s² 2p⁶'],
+          ['Al³⁺', '[Ne] 3s² 3p¹', '3s² + 3p¹', '[Ne] = 1s² 2s² 2p⁶'],
+          ['Cl⁻', '[Ne] 3s² 3p⁵', '+1 to 3p', '[Ar] = 1s² 2s² 2p⁶ 3s² 3p⁶'],
+          ['O²⁻', '1s² 2s² 2p⁴', '+2 to 2p', '[Ne] = 1s² 2s² 2p⁶'],
+          ['Fe²⁺', '[Ar] 3d⁶ 4s²', 'both 4s', '[Ar] 3d⁶'],
+          ['Fe³⁺', '[Ar] 3d⁶ 4s²', 'both 4s + one 3d', '[Ar] 3d⁵'],
+          ['Cu⁺', '[Ar] 3d¹⁰ 4s¹', '4s¹', '[Ar] 3d¹⁰'],
+          ['Cu²⁺', '[Ar] 3d¹⁰ 4s¹', '4s¹ + one 3d', '[Ar] 3d⁹'],
+          ['Mn²⁺', '[Ar] 3d⁵ 4s²', 'both 4s', '[Ar] 3d⁵'],
+          ['Zn²⁺', '[Ar] 3d¹⁰ 4s²', 'both 4s', '[Ar] 3d¹⁰']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'callout-4s-3d-rule',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Box Notation Rules',
-        text: '• Each box represents one orbital.<br/>• Arrows represent electrons: ↑ (spin up) and ↓ (spin down). Electrons in the same orbital must have opposite spins so that they are quantum-mechanically distinct.<br/>• A maximum of 2 electrons per box, with opposite spins.<br/>• <strong>Hund\'s rule:</strong> Fill all boxes in a subshell singly before pairing. This minimises electron-electron repulsion.'
+        title: 'The 4s / 3d Energy Crossover — Key Explanation',
+        text: '<strong>Why 4s fills before 3d but is removed before 3d from ions:</strong><br/><br/>• In <em>neutral atoms</em> (K, Ca, then the d-block): the 4s sub-shell has a lower energy than 3d, so Aufbau fills 4s first<br/>• When electrons are removed to form an <em>ion</em>, the increased nuclear charge (relative to electron count) stabilises the 3d sub-shell more than the 4s — 3d drops below 4s in energy<br/>• The 4s orbital is now the highest-energy occupied orbital → it is the first to be ionised<br/>• This is why Fe²⁺ is [Ar] 3d⁶ and NOT [Ar] 3d⁴ 4s²<br/><br/><em>Common exam mistake: writing Fe²⁺ as [Ar] 3d⁴ 4s² (removing 3d electrons instead of 4s). Always remove 4s first for transition metal ions.</em>'
       },
-      terms: ["Hund's rule"]
+      terms: []
     },
     {
-      id: 'callout-box-example',
+      id: 'h-blocks',
+      type: 'heading',
+      data: { text: 'The s, p, d and f Blocks', level: 2 },
+      terms: []
+    },
+    {
+      id: 'list-blocks',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'The periodic table is divided into four blocks based on which sub-shell the <strong>highest-energy (last-added) electron</strong> occupies',
+          '<strong>s-block (Groups 1 and 2):</strong> Outermost electron fills an s sub-shell; includes H, He (1s¹/1s²), Li, Be, Na, Mg, K, Ca, and all alkali/alkaline earth metals',
+          '<strong>p-block (Groups 13–18):</strong> Outermost electron fills a p sub-shell; includes B, C, N, O, F, Ne (Period 2), Al, Si, P, S, Cl, Ar (Period 3), and the noble gases',
+          '<strong>d-block (Groups 3–12):</strong> Outermost electron fills a d sub-shell; includes the transition metals (Sc–Zn in Period 4); note: Zn ([Ar] 3d¹⁰ 4s²) is d-block but not a true transition metal (its ion has a full 3d sub-shell)',
+          '<strong>f-block (Lanthanides and Actinides):</strong> Outermost electron fills an f sub-shell; situated between Groups 3 and 4 in the long-form periodic table',
+          'Identifying the block: write the abbreviated config; the <em>last sub-shell label</em> (s, p, d or f) determines the block'
+        ]
+      },
+      terms: ['s-block', 'p-block', 'd-block', 'f-block']
+    },
+    {
+      id: 'table-blocks',
+      type: 'comparisonTable',
+      data: {
+        caption: 's, p, d and f blocks of the periodic table — groups and examples',
+        headers: ['Block', 'Groups', 'Sub-shell filling', 'Examples'],
+        rows: [
+          ['s', '1 and 2; also H and He', 'ns¹ or ns²', 'Li, Na, K, Ca, Mg'],
+          ['p', '13–18', 'np¹ to np⁶', 'B, C, N, O, F, Ne; Al, Si, P, S, Cl, Ar'],
+          ['d', '3–12', '(n−1)d¹ to (n−1)d¹⁰', 'Sc, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn'],
+          ['f', 'Lanthanides (4f) + Actinides (5f)', '(n−2)f¹ to (n−2)f¹⁴', 'Ce–Lu (lanthanides); Th–Lr (actinides)']
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'h-periodicity',
+      type: 'heading',
+      data: { text: 'Electronic Configuration and Periodicity', level: 2 },
+      terms: []
+    },
+    {
+      id: 'list-periodicity',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Same group = same outer electron configuration → similar chemical properties:</strong> All Group 1 elements end in ns¹; all Group 2 end in ns²; all Group 17 (halogens) end in np⁵',
+          '<strong>Period number = highest principal quantum number (n):</strong> Period 2 elements have outer electrons in n=2; Period 3 elements have outer electrons in n=3',
+          '<strong>Group number relates to outer electrons:</strong> Groups 1–2 → 1 or 2 s-electrons; Groups 13–18 → 1–6 p-electrons (1–6 outer electrons including s)',
+          'Repeating pattern of outer configs across periods = <strong>periodicity</strong> — same shaped curve for IE₁, atomic radius etc. repeats every period',
+          'Transition metals (d-block) add electrons to inner 3d sub-shell whilst outer 4s remains → similar properties across Period 4 d-block',
+          'Electronic configuration fully explains: ionisation energies trends, reactivity trends (Group 1/2/7), formation of ions, oxidation states'
+        ]
+      },
+      terms: ['Periodicity']
+    },
+    {
+      id: 'callout-group-configs',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: 'Group Outer Electron Configurations',
+        text: 'The outer electron configuration is identical for elements in the same group (only the principal quantum number n changes):<br/><br/>Group 1: ns¹ → Li (2s¹), Na (3s¹), K (4s¹)<br/>Group 2: ns² → Be (2s²), Mg (3s²), Ca (4s²)<br/>Group 7 (halogens): ns² np⁵ → F (2s²2p⁵), Cl (3s²3p⁵), Br (4s²4p⁵)<br/>Group 0 (noble gases): ns² np⁶ (except He: 1s²)<br/><br/>This identical outer config is why elements in the same group show similar reactivity and form ions with the same charge under normal conditions.'
+      },
+      terms: []
+    },
+    {
+      id: 'h-practice',
+      type: 'heading',
+      data: { text: 'Practice Questions', level: 2 },
+      terms: []
+    },
+    {
+      id: 'callout-pq1',
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Box notation examples',
-        text: '<strong>Nitrogen (N, Z=7): 1s² 2s² 2p³</strong><br/>1s: [↑↓] | 2s: [↑↓] | 2p: [↑][↑][↑]<br/><br/><strong>Oxygen (O, Z=8): 1s² 2s² 2p⁴</strong><br/>1s: [↑↓] | 2s: [↑↓] | 2p: [↑↓][↑][↑]<br/>(one orbital in 2p is paired, the other two remain singly filled)'
+        title: 'Practice Q1: Write Configurations for Fe, Fe²⁺, Fe³⁺',
+        text: '<strong>Question:</strong> Write the full and abbreviated electronic configurations for (a) Fe (Z=26), (b) Fe²⁺ and (c) Fe³⁺. Justify which electrons are removed first.<br/><br/><strong>(a) Fe:</strong><br/>Full: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²<br/>Abbreviated: [Ar] 3d⁶ 4s²<br/><br/><strong>(b) Fe²⁺:</strong> Remove 2 electrons. In the ion, 4s is above 3d in energy → remove <em>both 4s electrons first</em>.<br/>Fe²⁺: [Ar] 3d⁶ &nbsp;&nbsp;(NOT [Ar] 3d⁴ 4s²)<br/><br/><strong>(c) Fe³⁺:</strong> Remove 3 electrons total → both 4s and one 3d.<br/>Fe³⁺: [Ar] 3d⁵ &nbsp;&nbsp;(half-filled 3d; extra stability)<br/><br/><em>Exam key: Always state "4s electrons are removed before 3d electrons in transition metal ions because 4s is at a higher energy in the ion".</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q2: Identify Block and Write Abbreviated Config',
+        text: '<strong>Question:</strong> For each of the following, write the abbreviated electronic configuration and identify the block: (a) Cl (Z=17) &nbsp; (b) Ca (Z=20) &nbsp; (c) Cr (Z=24) &nbsp; (d) Br (Z=35)<br/><br/><strong>(a) Cl:</strong> [Ne] 3s² 3p⁵ → outermost sub-shell is 3p → <strong>p-block</strong><br/><br/><strong>(b) Ca:</strong> [Ar] 4s² → outermost sub-shell is 4s → <strong>s-block</strong><br/><br/><strong>(c) Cr:</strong> [Ar] 3d⁵ 4s¹ (anomaly!) → outermost sub-shell 4s fills, last added is 3d → <strong>d-block</strong><br/><br/><strong>(d) Br (Z=35):</strong> [Ar] 3d¹⁰ 4s² 4p⁵ → outermost sub-shell is 4p → <strong>p-block</strong>'
+      },
+      terms: []
+    },
+    {
+      id: 'callout-pq3',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Practice Q3: Anomalous Configurations',
+        text: '<strong>Question:</strong> (a) Give the electronic configuration of Cr (Z=24). (b) Why does Cr not follow the expected pattern? (c) Give the configuration of Cu (Z=29) and explain the anomaly.<br/><br/><strong>(a) Cr: [Ar] 3d⁵ 4s¹</strong><br/><br/><strong>(b)</strong> One electron from the expected 4s² is promoted to 3d to achieve a half-filled 3d⁵ sub-shell. This provides extra stability due to exchange energy — five electrons in separate 3d orbitals with parallel spins is a lower energy arrangement than 3d⁴ 4s².<br/><br/><strong>(c) Cu: [Ar] 3d¹⁰ 4s¹</strong><br/>A 4s electron is promoted into 3d to achieve a <em>completely filled</em> 3d¹⁰ sub-shell, which also gives extra stability. This means Cu has only one 4s electron, not two.<br/><br/><em>In exams: you must quote the actual configuration, not the expected one. Saying "extra stability of half-filled/fully-filled d sub-shell" gains the explanation mark.</em>'
+      },
+      terms: []
+    },
+    {
+      id: 'checklist-1-2-7',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'Write full electronic configurations for any element in Periods 1–4', checked: false },
+          { text: 'Write abbreviated (noble gas core) configurations', checked: false },
+          { text: 'State the correct filling order including 4s before 3d', checked: false },
+          { text: 'State and explain the Cr anomaly: [Ar] 3d⁵ 4s¹ (half-filled 3d stability)', checked: false },
+          { text: 'State and explain the Cu anomaly: [Ar] 3d¹⁰ 4s¹ (filled 3d stability)', checked: false },
+          { text: 'Write configurations for main-group ions (remove/add outermost electrons)', checked: false },
+          { text: 'Write configurations for transition metal ions — remove 4s BEFORE 3d', checked: false },
+          { text: 'Write Fe²⁺ as [Ar] 3d⁶, NOT [Ar] 3d⁴ 4s²', checked: false },
+          { text: 'Write Fe³⁺ as [Ar] 3d⁵', checked: false },
+          { text: 'Explain the 4s/3d energy crossover: 4s lower in neutral atom, 3d lower in ion', checked: false },
+          { text: 'Identify s, p, d, f blocks from configuration or periodic table position', checked: false },
+          { text: 'Link same outer configuration to same group → similar chemistry', checked: false }
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      data: {
+        text: "Electronic configuration: electrons fill sub-shells in Aufbau order (1s → 2s → 2p → 3s → 3p → 4s → 3d …). Abbreviated notation uses [noble gas] shorthand. Anomalies: Cr = [Ar] 3d⁵ 4s¹ (half-filled 3d stability); Cu = [Ar] 3d¹⁰ 4s¹ (fully-filled 3d stability). Ions: main-group remove/gain outermost electrons. Transition metal ions: 4s removed before 3d (4s is higher energy in ion). Fe²⁺ = [Ar] 3d⁶; Fe³⁺ = [Ar] 3d⁵. Blocks: s-block = Groups 1–2 (last e⁻ in ns); p-block = Groups 13–18 (last e⁻ in np); d-block = Groups 3–12 (last e⁻ in (n−1)d); f-block = lanthanides/actinides. Periodicity: same outer config within a group → same properties; repeating outer config pattern across periods = periodic trends."
       },
       terms: []
     }
@@ -142,14 +290,16 @@ export const note_chemistry_1_2_7 = {
   recall: {
     enabled: true,
     cues: [
-      { id: 'c0', blockId: 'p-orbit-vs-orbital', prompt: 'Why is it impossible to draw specific orbits for electrons, according to quantum mechanics?' },
-      { id: 'c1', blockId: 'callout-def', prompt: 'Define the term "atomic orbital". What is the maximum number of electrons it can hold?' },
-      { id: 'c2', blockId: 'table-shapes', prompt: 'Describe the shape of (a) an s orbital and (b) a p orbital.' },
-      { id: 'c3', blockId: 'callout-box', prompt: 'State Hund\'s rule in your own words.' },
-      { id: 'c4', blockId: 'callout-box-example', prompt: 'Draw the orbital box notation for carbon (Z = 6).' }
+      { id: 'c1', blockId: 'list-full-config', prompt: 'State the correct Aufbau filling order. Why does 4s fill before 3d in neutral atoms?' },
+      { id: 'c2', blockId: 'callout-anomalies', prompt: 'Give the electronic configurations of Cr and Cu. Why are they anomalous? What makes Cr and Cu configurations stable?' },
+      { id: 'c3', blockId: 'callout-4s-3d-rule', prompt: 'Explain why 4s electrons are removed before 3d electrons when forming transition metal ions, even though 4s fills first.' },
+      { id: 'c4', blockId: 'table-ion-configs', prompt: 'Write the electronic configurations of Fe²⁺ and Fe³⁺. How many 3d electrons does each have?' },
+      { id: 'c5', blockId: 'table-blocks', prompt: 'Define s, p, d and f blocks. Give the group numbers and two examples for each block.' },
+      { id: 'c6', blockId: 'callout-group-configs', prompt: "Give the outer electron configurations for Groups 1, 2, 7 and 0. Explain why elements in the same group have similar chemistry." },
+      { id: 'c7', blockId: 'list-abbreviated', prompt: 'Write the abbreviated electronic configuration for Cl (Z=17), Fe (Z=26) and Br (Z=35). Identify the block for each.' }
     ],
-    summaryText: 'Heisenberg Uncertainty Principle: impossible to know exact position and momentum, so we use orbitals instead of orbits. Orbital = region where electron is likely to be found (max 2 electrons, opposite spins). s = sphere; p = dumbbell (3 orbitals per subshell); d = complex (5 orbitals). Hund\'s rule: half-fill before pairing. Box notation uses arrows ↑↓ to represent electrons.',
-    ready: false
+    summaryText: "Full config: 1s²2s²2p⁶3s²3p⁶4s²3d … (4s before 3d for neutral atoms). Abbreviated: [noble gas] then outer sub-shells. Anomalies: Cr = [Ar] 3d⁵ 4s¹; Cu = [Ar] 3d¹⁰ 4s¹ (extra stability of half-filled / fully-filled d sub-shell). Ions: remove 4s first from transition metals. Fe²⁺ = [Ar] 3d⁶; Fe³⁺ = [Ar] 3d⁵; Cu²⁺ = [Ar] 3d⁹. Blocks: s (Grps 1–2), p (Grps 13–18), d (Grps 3–12), f (lanthanides/actinides). Same group = same outer config = similar chemistry.",
+    ready: true
   },
   evidence: []
 };

@@ -1,83 +1,52 @@
 export const note_biology_4_6_0 = {
   blocks: [
     {
-      id: 'obj-1',
-      type: 'objective',
-      data: { text: 'Understand the principles of culturing microorganisms, including the use of growth media, inoculation, and isolation of pure cultures.' }
+      id: "obj-1",
+      type: "objective",
+      data: { text: "Understand how to culture microorganisms and the aseptic techniques required." }
     },
     {
-      id: 'h-culturing',
-      type: 'heading',
-      data: { text: 'Culturing Microorganisms', level: 2 }
+      id: "h-culturing",
+      type: "heading",
+      data: { text: "Culturing Microorganisms", level: 2 }
     },
     {
-      id: 'p-culturing-intro',
-      type: 'paragraph',
-      data: { text: 'Most microorganisms are only visible using a microscope. To investigate them, it is necessary to culture (grow) them. For example, bacteria reproduce by cloning themselves; when grown on an agar gel, they form a colony of identical individuals visible to the naked eye.' }
+      id: "p-culture",
+      type: "paragraph",
+      data: { text: "To study microorganisms like bacteria and fungi, they must be grown (cultured) in a lab. They require a culture medium containing carbohydrates for energy, nitrogen for protein synthesis, plus essential minerals and vitamins." }
     },
     {
-      id: 'h-requirements',
-      type: 'heading',
-      data: { text: 'Growth Requirements', level: 3 }
-    },
-    {
-      id: 'list-requirements',
-      type: 'list',
+      id: "list-media",
+      type: "list",
       data: {
-        style: 'bullet',
+        style: "bullet",
         items: [
-          '**Nutrients:** Carbon, nitrogen, and minerals provided in a nutrient growth medium.',
-          '**Oxygen:** For aerobic microorganisms (anaerobic microorganisms require the absence of oxygen).',
-          '**Optimum pH** and **favourable temperature**.'
+          "Nutrient Broth: A liquid medium used to grow large volumes of bacteria.",
+          "Agar Plates: A solid medium made by adding agar to nutrient broth and pouring it into Petri dishes. Used to grow visible colonies."
         ]
       }
     },
     {
-      id: 'callout-safety',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Health and Safety Precautions',
-        text: 'Culturing carries the risk of mutations forming pathogenic strains, or atmospheric pathogenic bacteria contaminating the culture. Always:\n- Sterilise all equipment before use (high heat or antimicrobial chemicals).\n- Keep cultures sealed safely in the lab.\n- Seal cultures in plastic bags and sterilise at high temperature and pressure before disposal.'
-      }
+      id: "h-aseptic",
+      type: "heading",
+      data: { text: "Aseptic Techniques", level: 2 }
     },
     {
-      id: 'h-steps',
-      type: 'heading',
-      data: { text: 'Culturing Steps', level: 2 }
+      id: "p-aseptic",
+      type: "paragraph",
+      data: { text: "Aseptic technique involves practices that prevent the contamination of the culture by unwanted environmental microbes, and protect the experimenter from potential pathogens." }
     },
     {
-      id: 'list-steps',
-      type: 'list',
+      id: "list-aseptic",
+      type: "list",
       data: {
-        style: 'numbered',
+        style: "bullet",
         items: [
-          '**Prepare Medium:** Use a liquid culture (broth) or solid nutrient agar (a gel extracted from seaweed) containing carbon, nitrogen, and minerals. Keep it sterile before use.',
-          '**Inoculation:** Introduce the microorganisms using a sterilised metal inoculation loop (sterilised in a Bunsen burner flame between uses). This transfers them between media (e.g. broth to agar).',
-          '**Sealing:** Cover the new medium to prevent airborne contamination. For aerobic organisms, the seal (like a cotton wool stopper or petri lid) **must not be airtight**.',
-          '**Incubation:** Label clearly and incubate at around $20^\circ C$ in schools to prevent growing human pathogens. Pathogens grow best near $37^\circ C$ (human body temperature), which might be used in hospitals for faster diagnostic results.'
-        ]
-      }
-    },
-    {
-      id: 'h-pure-cultures',
-      type: 'heading',
-      data: { text: 'Growing a Pure Culture', level: 2 }
-    },
-    {
-      id: 'p-pure-cultures',
-      type: 'paragraph',
-      data: { text: 'A pure culture contains only one type of microorganism. To achieve this, the specific microorganism must be isolated by tailoring conditions to its specific needs:' }
-    },
-    {
-      id: 'list-isolation',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '**Aerobic/Anaerobic Conditions:** Grow the culture in the appropriate oxygen environment to suppress unwanted microbes.',
-          '**Selective Media:** Adjust the nutrients to create conditions for the optimal growth of only a certain type of microorganism (e.g. to identify antibiotic-resistant strains or genetically modified organisms).',
-          '**Indicator Media:** Add substances that cause a colour change to help distinguish the desired colonies from the rest.'
+          "Work near a Bunsen burner flame: Convection currents lift microbes away from the working area.",
+          "Sterilise equipment: Pass innoculating loops through a roaring blue flame until glowing red hot.",
+          "Minimise exposure: Keep lids on Petri dishes as much as possible; hold lids at an angle when inoculating.",
+          "Flaming the neck: Pass the neck of broth bottles through the flame when opening and closing to prevent airborne microbes from settling.",
+          "Taping the dish: Tape the Petri dish cross-wise (not fully sealed, to prevent the growth of dangerous anaerobic bacteria)."
         ]
       }
     }
@@ -85,11 +54,12 @@ export const note_biology_4_6_0 = {
   recall: {
     enabled: true,
     cues: [
-      { id: 'cue-1', prompt: 'Why are school incubators usually set to $20^\circ C$ max?' },
-      { id: 'cue-2', prompt: 'What is a selective medium?' },
-      { id: 'cue-3', prompt: 'Why should the seal on an aerobic culture not be airtight?' },
-      { id: 'cue-4', prompt: 'How is an inoculating loop sterilised between uses?' }
+      { id: "cue-1", blockId: "p-culture", prompt: "What basic nutrients must a culture medium contain?" },
+      { id: "cue-2", blockId: "list-aseptic", prompt: "Why should you work near a Bunsen burner when culturing bacteria?" },
+      { id: "cue-3", blockId: "list-aseptic", prompt: "Why must a Petri dish not be fully sealed with tape?" }
     ],
-    summaryText: 'Incubating at $20^\circ C$ prevents the growth of human pathogens, which prefer $37^\circ C$. Selective media contain specific nutrients tailored to allow only the desired microbe to grow. Aerobic seals should not be airtight to allow oxygen in. Inoculating loops are sterilised by passing through a Bunsen burner flame.'
-  }
+    summaryText: "Microorganisms require a nutrient-rich medium (broth or agar). Aseptic techniques (Bunsen updraft, flaming loops, partial taping) prevent contamination and the growth of dangerous anaerobic pathogens.",
+    ready: true
+  },
+  evidence: []
 };

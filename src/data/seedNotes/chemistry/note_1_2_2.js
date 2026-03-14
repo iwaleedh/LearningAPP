@@ -64,18 +64,24 @@ export const note_chemistry_1_2_2 = {
       terms: []
     },
     {
-      id: 'p-mass-spec-intro',
-      type: 'paragraph',
+      id: 'list-mass-spec-intro',
+      type: 'list',
       data: {
-        text: 'A traditional <strong>magnetic sector</strong> mass spectrometer operates under a high vacuum (to prevent ions colliding with air molecules) and sorts ions by their mass-to-charge (<em>m/z</em>) ratio. The key physical stages are:'
+        style: 'bullet',
+        items: [
+          'Operates under a <strong>high vacuum</strong> — prevents ions from colliding with air molecules and being deflected off course.',
+          'Separates ions by their <strong>mass-to-charge (m/z) ratio</strong>.',
+          'Two main instrument designs: <strong>magnetic sector</strong> (uses a magnetic field to deflect ions by m/z) and <strong>time of flight (TOF)</strong> (measures flight time down a drift tube — lighter ions arrive first).',
+          'Sample must be vaporised first; solid and liquid samples are heated to produce a gaseous beam before entering the ionisation chamber.'
+        ]
       },
-      terms: ['Vacuum']
+      terms: ['Vacuum', 'Mass spectrometer']
     },
     {
       id: 'list-stages',
       type: 'list',
       data: {
-        style: 'ordered',
+        style: 'numbered',
         items: [
           '<strong>Vaporisation:</strong> The sample is introduced and heated to produce gaseous atoms or molecules.',
           '<strong>Ionisation (Electron Gun):</strong> The gas is bombarded by a stream of high-energy electrons from an electron gun. This knocks one or more electrons off the sample atoms to form positive ions (predominantly 1+ ions). Ions must be positive so they can be accelerated and deflected.',
@@ -150,10 +156,19 @@ export const note_chemistry_1_2_2 = {
       terms: []
     },
     {
-      id: 'p-spectrum',
-      type: 'paragraph',
-      data: { text: 'Each peak on the mass spectrum of an element represents a different isotope. The position (m/z) gives the relative isotopic mass, and the <strong>height of the peak</strong> is directly proportional to the relative abundance of that isotope.' },
-      terms: []
+      id: 'list-spectrum',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'Each peak on the mass spectrum represents a different <strong>isotope</strong> of the element.',
+          'Peak position (m/z value) gives the <strong>relative isotopic mass</strong> of that isotope.',
+          'Peak height is directly proportional to the <strong>relative abundance</strong> of that isotope.',
+          '<strong>Base peak</strong> — the tallest peak on the spectrum; assigned a relative intensity of <strong>100%</strong>. All other peaks are expressed as a percentage of the base peak height.',
+          'Aᵣ is calculated as a weighted average: Σ(isotopic mass × % abundance) ÷ 100.'
+        ]
+      },
+      terms: ['Base peak', 'Relative isotopic mass']
     },
     {
       id: 'callout-ar-calc',
@@ -196,7 +211,7 @@ export const note_chemistry_1_2_2 = {
       type: 'svg',
       data: {
         caption: 'Figure 2: Mass spectrum of Cl₂ showing molecular ion peaks at m/z 70, 72, 74 (ratio 9:6:1)',
-        svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        svg: `<svg viewBox="0 0 360 215" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Axes -->
   <line x1="45" y1="10" x2="45" y2="165" stroke="#334155" stroke-width="1.5"/>
   <line x1="45" y1="165" x2="340" y2="165" stroke="#334155" stroke-width="1.5"/>
@@ -204,7 +219,7 @@ export const note_chemistry_1_2_2 = {
   <!-- Y-axis label -->
   <text x="12" y="90" text-anchor="middle" fill="#64748b" font-size="10" transform="rotate(-90,12,90)">Relative intensity</text>
   <!-- X-axis label -->
-  <text x="192" y="206" text-anchor="middle" fill="#64748b" font-size="10">m/z</text>
+  <text x="192" y="210" text-anchor="middle" fill="#64748b" font-size="10">m/z</text>
 
   <!-- Y ticks -->
   <line x1="40" y1="165" x2="45" y2="165" stroke="#94a3b8"/>
@@ -349,6 +364,32 @@ export const note_chemistry_1_2_2 = {
         text: '<strong>Q: How could high resolution mass spectrometry prove that a sample of propane gas (C₃H₈) was contaminated with carbon dioxide (CO₂)?</strong><br/><br/><strong>1. Low Resolution (1 d.p.):</strong><br/>C₃H₈ = (3×12.0) + (8×1.0) = 44.0<br/>CO₂ = 12.0 + (2×16.0) = 44.0<br/><em>They appear as the exact same single peak at m/z = 44.0!</em><br/><br/><strong>2. High Resolution (5 d.p.):</strong><br/>C₃H₈ = 3(12.00000) + 8(1.00794) = <strong>44.06352</strong><br/>CO₂ = 12.00000 + 2(15.99491) = <strong>43.98982</strong><br/><br/><strong>Conclusion:</strong> Two separate, distinct peaks will be seen at the precise m/z values, successfully distinguishing the substances.'
       },
       terms: []
+    },
+    {
+      id: 'checklist-1-2-2',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'State the five stages of a mass spectrometer in order (vaporise → ionise → accelerate → deflect/drift → detect)', checked: false },
+          { text: 'Compare EI and ESI ionisation: write the equations and state which is used for large organic molecules', checked: false },
+          { text: 'Use t = d × √(m / 2KE) to calculate the time of flight of an ion, converting molar mass to kg per atom', checked: false },
+          { text: 'Explain what m/z represents and calculate Aᵣ from % abundances and from raw relative abundances', checked: false },
+          { text: 'Identify the base peak and explain what relative intensity means', checked: false },
+          { text: 'Explain why Cl₂ shows five peaks (m/z 35, 37, 70, 72, 74) and assign species to each', checked: false },
+          { text: 'Calculate the 9:6:1 ratio for Cl₂ and the 1:2:1 ratio for Br₂ using the probability method', checked: false },
+          { text: 'Explain how a 2+ ion changes the observed m/z value and give an example', checked: false },
+          { text: 'Explain how high-resolution mass spectrometry distinguishes molecules with the same nominal mass (e.g. C₃H₈ vs CO₂)', checked: false }
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      data: {
+        text: 'Mass spectrometer stages: vaporise → ionise → accelerate → deflect/drift → detect; high vacuum throughout. EI ionisation: X(g) + e⁻ → X⁺(g) + 2e⁻. ESI: X(l) + H⁺ → XH⁺(g) (peak at mass + 1). TOF equation: t = d√(m / 2KE); lighter ions travel faster and arrive first. Each m/z peak = one isotope; peak height ∝ abundance; tallest peak = base peak (100%). Aᵣ = Σ(mass × % abundance) ÷ 100. Diatomic elements show both fragment ion peaks and molecular ion peaks: Cl₂ gives peaks at m/z 35, 37, 70, 72, 74 — molecular ions in ratio 9:6:1. Br₂ molecular ions (158, 160, 162) in ratio 1:2:1. 2+ ions appear at half the m/z of equivalent 1+ ions (fractional m/z). High-resolution mass spectrometry measures exact mass to 5 d.p., distinguishing molecules with the same nominal mass.'
+      },
+      terms: []
     }
   ],
   recall: {
@@ -367,7 +408,7 @@ export const note_chemistry_1_2_2 = {
       { id: 'c8', blockId: 'callout-high-res-intro', prompt: 'Explain how high-resolution mass spectrometry can distinguish between propane (C₃H₈) and carbon dioxide (CO₂).' }
     ],
     summaryText: 'Mass spec stages: vaporise → ionise → accelerate → drift/deflect → detect. Ionisation: EI (electron gun, X → X⁺ + 2e⁻). ESI (high voltage needle + solvent, X + H⁺ → XH⁺). TOF calculation: t = d × √(m / 2KE) where m is mass in kg. m/z for z=1 equals isotopic mass. Aᵣ is weighted average of isotopic masses. Diatomic spectra (Cl₂): fragmentation yields atomic ions (35, 37) and molecular unfragmented ions (70,72,74) in 9:6:1 ratio. High-res measures to 5 d.p.',
-    ready: false
+    ready: true
   },
   evidence: []
 };

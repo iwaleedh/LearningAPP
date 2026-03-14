@@ -1,0 +1,572 @@
+Edexcel International A
+Level (IAL) Biology
+Inheritance
+Contents
+Mutations
+Patterns of Inheritance & Sex Linkage
+Cystic Fibrosis
+Genetic Screening
+Ethical & Social Issues of Genetic ScreeningYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+
+Mutations
+Nature of Mutations
+A gene mutation is a change in the sequence of bases in a DNA molecule
+Mutations may result in an altered polypeptide; as the DNA base sequence of a gene
+determines the sequence of amino acids that make up a polypeptide, mutations in a
+gene can sometimes lead to a change in the polypeptide that the gene codes for
+Mutations occur spontaneously duringDNA replication
+There are different ways that a mutation in the DNA base sequence can occur, e.g.
+Substitution
+Insertion
+Deletion
+Substitution, insertion, and deletion mutations are all examples of point mutation;
+mutations that involve a change in the DNA base sequence at a single location
+Other types of mutation can affect entire genes or entire chromosomes
+Genes can be replicated or lost
+Chromosomes can be divided unequally during meiosis, resulting in cells with extra
+or missing chromosomes
+Substitution of nucleotides 
+A mutation that occurs when a base in the DNA sequence is randomly swapped for a
+different base
+A substitution mutation will only change the amino acid for the triplet in which the
+mutation occurs, and will have no impact on triplets located elsewhere in the gene
+Substitution mutations include
+Silent mutations
+The mutation does not alter the amino acid sequence of the polypeptide; this
+is due to the degenerate nature of the genetic code
+Missense mutations
+The mutation alters a single amino acid in the polypeptide chain, e.g. sickle cell
+anaemia is caused by a single substitution mutation changing a single amino
+acid in the haemoglobin protein
+Nonsense mutations
+The mutation creates a premature stop codon, causing the polypeptide chain
+produced to be incomplete and therefore affecting the final protein structure
+and function, e.g. cystic fibrosis can be caused by a nonsense mutationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+
+Note that a stop codon provides a signal for the cell to stop translation of
+the mRNA molecule into an amino acid sequence
+Substitution mutations involve swapping one nucleotide for another
+Insertion of nucleotides
+A mutation that occurs when a nucleotide is randomly inserted into the DNA sequence
+is known as an insertion mutation
+An insertion mutation changes the amino acid that would have been coded for by the
+original base triplet, as it creates a new, different triplet of bases
+Remember that every group of three bases in a DNA sequence codes for an amino
+acid
+An insertion mutation also has a knock-on effect on other base triplets by changing the
+triplets further on in the DNA sequence
+This means that insertion mutations cause what is known as a frameshift
+mutation; they don't only change the triplet where the insertion has occurred, but
+every triplet downstream of the insertion
+This may dramatically change the amino acid sequence produced from this gene and
+therefore the ability of the polypeptide to function
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+
+Insertion mutations occur when a new nucleotide is added into a base sequence
+Deletion of nucleotides
+A mutation that occurs when a nucleotide is randomly deleted from the DNA sequence
+Like an insertion mutation, a deletion mutation changes the triplet in which the deletion
+has occurred, and also changes every group of three bases further on in the DNA
+sequence
+This is known as a frameshift mutation
+This may dramatically change the amino acid sequence produced from this gene and
+therefore the ability of the polypeptide to function
+Effects of Mutations
+Most mutations do not alter the polypeptide or only alter it slightly so that its
+appearance or function is not changed
+This is possible because the genetic code is degenerate; the base sequence can be
+changed without necessarily altering the amino acid
+However, a small number of mutations code for a significantly altered polypeptide 
+A mutation changes the DNA base sequence
+One or many amino acids in the primary structure of a protein is altered
+Different bonds form in the secondary and tertiary structures of the protein
+The final 3D structure of the protein is altered
+Very rarely this can give rise to a protein that provides an organism with an advantage,
+e.g. resistance to an antibiotic, or the ability to digest a new type of food
+Mutations that provide an advantage can drive the process of evolution by
+causing natural selection to occur
+Individuals with an advantage are more likely to survive and reproduce
+The advantageous mutation is more likely to be passed on
+The mutation becomes more common in the population
+More often, mutations that affect polypeptide structure are likely to be harmful,
+affecting the ability of proteins to perform their function, e.g.
+In cystic fibrosis, a membrane channel protein no longer functions
+A fault in the CFTR gene leads to production of non-functional chloride
+channels,reducing the movement of water by osmosis into cell secretions
+This results in the production of thick, sticky mucus in the air passages, the
+digestive tract and the respiratory system
+In sickle-cell disease, the haemoglobin protein no longer functionsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+
+Sickle-cell disease is caused by a single substitution mutation that causes
+haemoglobin proteins to clump together
+This affects the shape of red blood cells, preventing easy blood flow and
+causing severe pain and problems with blood supply to important organs
+Sickle cell disease is caused by a single substitution mutation that changes one amino
+acid in the haemoglobin protein
+Mutations in the genes that are involved with cell division can lead to uncontrolled cell
+division and the development of tumours that can become cancerous
+Mutations that occur in the gametes, or sex cells, can be passed on to future
+generations, meaning that every cell in the body of an organism's offspring will contain
+the mutation
+Mutagens can increase the likelihood of a mutation occurring, e.g.
+Ionising radiation
+X-rays
+Some chemicals
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+
+Patterns of Inheritance & Sex Linkage
+Key Terms: Genetics
+Genes & alleles
+A chromosome is a long DNA molecule which contains many genes 
+A gene is a length of DNA that codes for a single polypeptide
+The position of a gene on a chromosome is its locus (plural loci)
+Each gene can exist in two or more different forms called alleles
+Different alleles of a gene have slightly different nucleotide sequences but they still
+occupy the same locus on the chromosome
+Different alleles arise by the process of mutation
+E.g. each allele might produce a different coat colour in mammals
+One allele might code for a black coat while the alternative allele might code for
+a chestnut coat
+When writing about genes it is conventional to use a single letter to represent a gene,
+while different alleles may be indicated by using upper and lower case letters, e.g. A and
+a
+Homozygous & heterozygous
+Every individual has two copies of each allele; one on each chromosome in a
+homologous pair
+A homologous pair of chromosomes is a pair of chromosomes that match in size
+and shape, and that contain the same genes at the same loci
+The chromosomes may not contain the same alleles of each gene
+One member of a homologous pair of chromosomes comes from one parent, while
+the other comes from the other parent
+When an individual has two identical alleles at a locus they are said to be
+homozygous, or a homozygote
+Homo = the same
+When an individual has two different alleles at a locus they are said to
+be heterozygous, or a heterozygote
+Hetero = differentYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+
+Chromosomes match up to form homologous pairs which have the same genes at the
+same loci. While the genes are the same, the alleles may be different, meaning that
+individuals can be either homozygous or heterozygous at a particular locus
+Genotype & phenotype
+The genotype of an organism refers to the alleles of a gene possessed by that individual
+E.g. An organism's genotype could be represented by the letters gg
+The genotype of an individual affects their phenotype; a phenotype is the observable
+characteristics of an organism
+E.g. every horse has two copies of a gene for coat colour in all of their cells, one on each
+homologous pair of chromosomes; the gene could be notated using the letters A and a
+A horse that has two A alleleshas the genotypeAA and is homozygous
+If the A allele codes for a black coat, then the phenotype of the horse would be
+black
+A horse that has two a alleles has the genotype aa and is also homozygous
+If the a allele codes for a chestnut coat then the phenotype of the horse would
+be chestnut
+Dominant & recessive
+Not all alleles affect the phenotype in the same way
+Some alleles are dominant; they are always expressed in the phenotype no matter
+which other allele is present
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+
+This means they are expressed in both heterozygous and homozygous individuals,
+e.g.
+A horse with the genotype AA would be said to be homozygous dominant and
+would have a black coat phenotype
+A horse with the genotype Aa would be said to be heterozygous and would still
+have a black coat phenotype, as the allele for black coat colour is dominant
+over the lower case allele
+It is possible to refer to a heterozygous individual as a carrier of the
+recessive allele; the allele doesn't show in the phenotype but could still be
+passed on to offspring
+Others are recessive; they are only expressed in the phenotype if no dominant allele is
+present
+This means that it is only expressed when present in a homozygous individual, e.g.
+A horse with the genotype aa would be said to be homozygous recessive and
+would have a chestnut coat phenotype due to the absence of the dominant
+black allele
+Codominance
+Sometimes both alleles can be expressed in the phenotype at the same time; this is
+known as codominance
+When an individual is heterozygous they will express both alleles in their phenotype
+When writing the genotype for codominance the gene is represented by a capital letter
+and the alleles are represented by different superscript letters, for example I
+An example of codominance can be seen in coat colour in cattle
+The gene for coat colour can be represented by the capital letter C
+The alleles for coat colour can be represented by letters R (red) and W (white)
+A cow that is homozygous and has a red coat has the genotype CC
+A cow that is homozygous and has a white coat has the genotype C C
+A cow that is heterozygous will have a roan coat, containing a mixture of red and
+white hairs; the genotype will be CC
+Genetic Pedigree Diagrams
+Family pedigree diagrams can be used to trace the pattern of inheritance of a specific
+trait, e.g. a genetic disorder, through generations of a family
+Pedigree diagrams can provide information such as
+Whether a trait is caused by a dominant or recessive allele
+Whether a trait is more likely to be inherited by males or females
+The genotypes of individuals in the familyA
+R R
+W W
+R WYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+
+The probability that an individual in the family will inherit a trait
+Pedigree diagrams can be used to show the pattern of inheritance of a genetic trait
+Males are indicated by the square shape and females are represented by circles
+Affected and unaffected individuals can be indicated using colour, shading, or cross-
+hatching
+Horizontal lines between males and females show that they have produced children
+Vertical lines show the relationship between parent and child
+Roman numerals may be used to indicate generations
+For each generation the eldest child is on the left and each individual is numbered
+The family pedigree above shows the following
+Both males and females are affected by the trait in question
+Every generation has affected individuals
+The eldest son in the second generation is affected
+There is one family group that has no affected parents or children
+The diagram above does not contain enough information to show
+Whether the trait is caused by a dominant or recessive allele
+The genotypes of the individuals involved
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+
+Worked Example
+The pedigree diagram below traces the inheritance of albinism through several
+generations. Albinism affects the production of the pigment melanin leading to
+lighter hair, skin and eyes.
+Using the pedigree chart, deduce and explain the following:
+1. The type of allele that causes albinism
+2. The genotype of individuals 9 and 7
+3. The possible genotypes of 10 and 11
+Answer:
+Question 1
+Albinism is caused by a recessive allele
+Person number 9 is an affected individual despite parents 6 and 7 being unaffected; 6
+and 7 must both be carriers of the recessive allele and 9 has inherited one recessive
+allele from each parent
+Question 2
+The genotype of person 9 must be homozygous recessive (aa) and the genotype of 7
+must be heterozygous (Aa)
+Person 9 is an affected individual with albinism; as this is determined by the recessive
+allele they must have two copies of the albinism allele
+Person 7 must be heterozygous as he does not have albinism but has passed on the
+recessive allele to person 9
+Question 3
+The possible genotypes of 10 and 11 are heterozygous (Aa) or homozygous
+dominant (AA)
+They are both unaffected individuals so must possess at least one dominant allele (A),
+however, it is possible that they each might have inherited a recessive allele (a) from
+one parent (both parents must have a copy of the recessive allele in order for person 9
+to have albinism)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+
+Sex Linkage
+Sex-linked genes are located on the sex chromosome
+This means the sex of an individual affects which alleles they pass on to their offspring
+through their gametes
+If the gene is on the X chromosome, males (XY), will only have one copy of the gene,
+whereas females (XX) will have two
+The X chromosome has many more genes on it than the Y chromosome, so sex-
+linkage that involves the Y chromosome is very rare
+Sex linkage is notated using a capital letter to represent the chromosome X or Y and a
+superscript letter to represent the allele
+There are three genotypes for females,e.g. for a genetic trait caused by a recessive
+allele
+XX = unaffected
+XX = carrier
+XX = affected
+Males have only twogenotypes, e.g.
+XY = unaffected
+XY = affected
+It is not possible for males to be carriers of X-linked traits, nor for them to pass such
+traits on to their sons; males only pass Y chromosomes on to their sonsExaminer Tips and Tricks
+When answering questions about pedigree charts for genetic diseases, it is always
+useful to remember which phenotype is caused by the homozygous recessive
+genotype. You can write these genotypes onto your chart and it will give you a good
+starting point for working out the possible genotypes of the rest of the individuals in
+the chart.
+A A
+A a
+a a
+A
+a
+Worked Example
+Red-green colour blindness is a well known sex-linked trait in which individuals find it
+difficult to distinguish between the colours red and green. It is controlled by is a
+gene found on the X chromosome; the dominant B allele codes for normal vision and
+the recessiveb allele results in red-green colour blindness.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+
+Use a genetic diagram to show how two parents with normal vision can have offspring
+with red-green colour blindness.
+Answer:
+Step 1: Work out the genotypes of the parents
+Both parents have normal vision so each must have a copy of the dominant B allele
+The father only has one copy of the X chromosome, so his genotype must be XY
+The question tells us that the parents must be able to have a child with colour
+blindness, so this allele must come from the mother; she must therefore have a copy
+of the b allele and her genotype must be XX
+Step 2: Work out which gametes the parents can produce
+The genotype XY will produce gametes containing either X or Y
+The genotype XXwill produce gametes containing either X or X
+Step 3: Use the gametes to complete a Punnett square and then indicate which
+offspring will be affected
+X Y
+X XX XY
+X X XY
+The individual with genotype XY will be affected by red-green colour blindness; they
+only have only copy of the X chromosome and it contains the colour blindness alleleB
+B b
+B B
+B b  B b
+B
+B B B B
+b B b
+b
+Examiner Tips and Tricks
+Note that in the worked example above the letter B has been chosen to represent
+colour blindness rather than the letter C. It can often be a good idea to choose letters
+for which there is a clear difference between the upper and lower case; this avoids
+losing marks in exams because examiners can't tell the difference between, e.g. C
+and c, or S and sYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+
+Cystic Fibrosis
+Cystic Fibrosis
+Genes can affect the phenotype of an organism
+A gene codes for a single polypeptide
+The polypeptide can affect the phenotype, e.g. it could form part of an enzyme or a
+membrane transport protein
+Genetic disorders are often caused by a mutation in a gene that results in a differently-
+functioning or non-functioning protein that alters the phenotype of the individual
+Cystic fibrosis
+Cystic fibrosis is a genetic disorder of cell membranes caused by a recessive alleleof
+the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) gene located on
+chromosome 7
+This gene codes for the production of chloride ion channels required for secretion
+of sweat, mucus and digestive juices
+A mutation in the CFTR gene leads to production of non-functional chloride
+channels
+This reduces the movement of water by osmosis into the secretions
+The result is that the body produces large amounts of thick, sticky mucus in the air
+passages, the digestive tract and the reproductive system
+Because cystic fibrosis is determined by a recessive allele, this means
+People who are heterozygous won’t be affected by the disorder but are carriers
+People must be homozygous recessive in order to have the disorder
+If both parentsare carriers the chance of them producing a child with cystic fibrosis
+is 1 in 4, or 25 %
+If only one of the parents is a carrier with the other parent being homozygous
+dominant, there is no chance of producing a child with cystic fibrosis, as the
+recessive allele will always be masked by the dominant alleleYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+
+Cystic fibrosis is a genetic disorder caused by a recessive allele
+The respiratory system
+Mucus in the respiratory system is a necessary part of keeping the lungs healthy
+It prevents infection by trapping microorganisms
+This mucus is moved out of the respiratory tract by cilia 
+In people with cystic fibrosis, due to the faulty chloride ion channels, the cilia are unable
+to move as the mucus is so thick and sticky
+This means microorganisms are not efficiently removed from the lungs and lung
+infections occur more frequently
+Mucus builds up in the lungs and can block airways which limits gas exchange
+The surface area for gas exchange is reduced which can cause breathing
+difficulties
+Physiotherapy can support people with cystic fibrosis to loosen the mucus in the
+airways and improve gas exchange
+The digestive system
+Thick mucus in the digestive system can cause issues because
+The tube to the pancreas can become blocked, preventing digestive enzymes from
+entering the small intestine
+Digestion of some food may be reduced and therefore key nutrients may not
+be made available for absorption
+The mucus can cause cysts to grow in the pancreas which inhibit the production of
+enzymes, further reducing digestion of key nutrients
+The lining of the intestines is also coated in thick mucus, inhibiting the absorption
+of nutrients into the blood
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+
+The reproductive system
+Mucus is normally secreted in the reproductive system to prevent infection and regulate
+the progress of sperm through the reproductive tract after sexual intercourse
+The mucus in people with cystic fibrosis can cause issues in both men and women
+In men the tubes of the testes can become blocked, preventing sperm from
+reaching the penis
+In women thickened cervical mucus can prevent sperm reaching the oviduct to
+fertilise an eggYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+
+Genetic Screening
+Uses of Genetic Screening
+Some circumstances, e.g. in a pregnancy where there is a family history of a genetic
+disorder, may require individuals to determine if they have a particular allele present in
+their genome
+This can be determined by genetic screening
+There are three main uses of genetic screening
+Identifying individuals who carry an allele at a gene locus for a particular disorder
+The screening of embryos prior to implantation during fertility treatment; this is
+PreimplantationGenetic Diagnosis (PGD)
+Testing a foetus before birth; this is prenatal testing
+Identification of carriers
+Carrier testing is offered to individuals with a history of genetic disorders in their family
+It can show whether people who have no symptoms carry the allele for particular
+disorders, such as cystic fibrosis
+Cell samples can be extracted from, e.g. blood or saliva, before being tested for the
+presence of specific alleles
+Couples can be tested prior to having children to determine the probability of future
+children inheriting the disorder
+Some of the benefits of carrying out genetic screening at this stage include
+Families can make informed decisions before having children
+Women can decide whether to have prenatal testing during pregnancy
+Preimplantation Genetic Diagnosis (PGD)
+IVF, or in vitro fertilisation is a type of fertility treatment during which fertilisation is
+carried out in the lab; embryos produced in this way can be implanted into the uterus
+where they develop into a foetus
+Sometimes a couple might choose to have a child by IVF if they know that they are at
+increased risk of certain genetic disorders, as it allows them to screen any embryos
+produced using PGD
+PGD involves analysis of the DNA of an embryo prior to implanting it into the uterus
+The sample of DNA to be analysed can be obtained by taking cell samples
+fromembryos produced during IVF
+Benefits of PGD include
+Evidence suggests that the process does not harm the embryo in any wayYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+
+Reduces the chances of having a baby with a genetic disorder
+It avoids abortion as it is carried out before implantation of the embryo
+It is worth noting that some people believe that an embryo is as worthy of
+human status as a foetus or a baby, so the discarding of affected embryos
+after PGD is not ethically straightforward for everyone
+Prenatal testing
+Prenatal testing is offered to pregnant women with a family history of genetic disorders
+It involves testing the foetus for genetic diseases during the course of a pregnancy
+The DNA can be obtained by chorionic villus sampling or amniocentesis in the uterus
+Chorionic villus sampling
+This involves removing and testing a small sample of cells from the placenta using a
+fine needle
+The cells contain foetal DNA which can be analysed for genetic disorders, allowing
+parents to make informed decisions about the pregnancy and foetus
+Advantages of this process include
+It is carried out at around 11−14 weeks of pregnancy, so any problems can be
+picked up early on
+A relatively large tissue sample can be collected, providing plenty of cells to
+analyse
+Results are available rapidly
+Potential implications of chorionic villus sampling that should be considered
+include 
+The process has a  1−2 % risk of miscarriage
+The process cannot pick up any disorders that are caused by alleles of genes
+located on the paternal X chromosome, as this chromosome is inactive in the
+placental cells sampled
+Amniocentesis
+This involves removing and testing a small sample of cells from amniotic fluid using
+a fine needle
+The amniotic fluid is the fluid that surrounds the foetus within the uterus
+The fluid contains foetal cells which contain DNA to be analysed
+Potential implications of amniocentesis that should be considered include
+It is carried out at around 15−20 weeks of pregnancy; this is relatively late in the
+pregnancy, making decisions about abortion more difficult for some parents
+The procedure has a 1 % risk of miscarriage
+It takes 2−3 weeks for results to be availableYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+
+Benefits of prenatal testing include
+The tests allow parents to make informed decisions about the progress of a
+pregnancy
+Results can help parents prepare for the future care of the child, including medical
+treatment
+Implications of Prenatal Genetic
+Screening
+Prenatal genetic screening involves analysis of the DNA of a foetus taken from the
+uterus during pregnancy
+Examples of prenatal screening methods include chorionic villus sampling and
+amniocentesis
+Both forms of prenatal screening come with associated risks and potential ethical
+dilemmas, so it is important that parents considering this type of screening have thought
+about the implications
+Positive implications
+Prenatal screening can provide advance notice of the birth of a child with a
+genetic disorder, giving time for parents to be educated and to make
+decisions about medical treatments
+The risk of harm to the foetus during prenatal screening are low; around 1−2 %
+for both methods
+Some parents may feel able to make the decision to end a pregnancy on
+discovering that a foetus has a life-limiting or potentially fatal diagnosis
+Some parents may choose to continue with a pregnancy after receiving a fatal
+diagnosis, but they have time to process the results and grieve before the birth
+of a child who may not survive for long outside the uterus
+Genetic counsellors are available to help parents think through the results of
+prenatal testing
+Negative implications
+Both methods of prenatal screening bring a small risk of miscarriage
+Amniocentesis provides results relatively late in pregnancy, making decisions
+about termination of a pregnancy very difficult for some parents
+Prenatal screening is not 100 % accurate
+False positive results may lead to the termination of a healthy pregnancy
+False negative results may give false expectations for the health of a foetus
+Parents may experience pressure from society or their medical team to abort a
+foetus with a genetic disorderYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+
+Some parents may believe that a foetus has human status even very early on
+during a pregnancy, meaning that they would not consider abortion to be an
+option even after early testing Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+
+Ethical & Social Issues of Genetic Screening
+Ethical & Social Issues of Genetic
+Screening
+Some circumstances, e.g. in a pregnancy where there is a family history of a genetic
+disorder, may require individuals to determine if they have a particular allele present in
+their genome; this can be determined by genetic screening
+As genetic screening can leave future parents with many questions, genetic
+counsellors are available to help
+Counsellors can be seen before screening has occurred; they may discuss the
+following with the prospective parents
+The probability of the couple having a child with a genetic disorder
+Termination of the pregnancy
+Therapeutic treatments possible for the child
+Financial implications of having the child
+Effect on existing siblings
+Ethical issues
+After screening the counsellors will read the results and explain them to the future
+parents
+Each use of genetic screening brings potential concerns that should be considered;
+these concerns will differ depending on someone's religious, moral, and social
+position, e.g.
+Belief that God is in control may mean that a pregnancy will be continued no matter
+what genetic screening might show
+Belief that embryos are potential human beings from conception would mean that
+the discarding of embryos after embryo screening or the abortion of a foetus at any
+stage would be considered impossible
+Belief that abortion is only acceptable up to a certain stage of pregnancy may
+mean that screening techniques that are carried out later in pregnancy can't lead to
+termination
+Some may feel that it is unethical to bring a child into the world who will struggle
+with health issues, or who they will be unable to care for properly; this may mean
+that abortion is considered to be the most ethical option
+Processes that involve screening embryos could allow for embryos to be selected
+on the basis of factors other than genetic health, e.g. sex or intelligence; many are
+concerned about the potential future of 'designer babies'Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+
+Some cultures may have different traditions around genetic disorders, e.g. with
+abortion considered to be more acceptable by some cultures than others
+Positive screening results for non life-threatening conditions, e.g. Down syndrome,
+can lead to the abortion of foetuses that could have gone on to live full and happy
+lives; some feel that such conditions are being eradicated from society
+An embryo or unborn baby has noability to give consent or make decisions about
+its future; some believe that they are deserving of full human rights while others do
+not
+Examiner Tips and Tricks
+Make sure that you are able to give a balance of arguments from different ethical
+viewpoints; you may have personal views on some the issues covered, but you
+should avoid sticking to only one side of any argument.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21

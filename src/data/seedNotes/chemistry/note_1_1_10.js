@@ -78,9 +78,18 @@ export const note_chemistry_1_1_10 = {
             terms: []
         },
         {
-            id: 'p-equation',
-            type: 'paragraph',
-            data: { text: 'The ideal gas equation can be used for gases (or volatile liquids above their boiling temperatures) to relate pressure, volume, temperature, and moles of substance. It is crucial to use the correct SI units when applying this formula.' },
+            id: 'list-equation-intro',
+            type: 'list',
+            data: {
+                style: 'bullet',
+                items: [
+                    'The ideal gas equation <strong>pV = nRT</strong> relates pressure, volume, temperature, and amount of substance for any ideal gas.',
+                    'It applies to gases and to <em>volatile liquids</em> above their boiling temperature.',
+                    '<strong>SI units are mandatory</strong> — using non-SI units without converting will give a wrong answer.',
+                    'R = 8.31 J mol⁻¹ K⁻¹ is the universal gas constant, given on the Edexcel data sheet; do not memorise the value.',
+                    'All four variables (p, V, T, n) can be found if three are known by rearranging the equation.'
+                ]
+            },
             terms: ['Ideal gas']
         },
         {
@@ -202,26 +211,27 @@ export const note_chemistry_1_1_10 = {
             type: 'callout',
             data: {
                 style: 'key',
-                title: 'Rearranging the Equation',
-                text: 'You must be able to confidently rearrange $pV = nRT$ for any variable:<br/>• $p = \\frac{nRT}{V}$<br/>• $V = \\frac{nRT}{p}$<br/>• $n = \\frac{pV}{RT}$<br/>• $T = \\frac{pV}{nR}$'
+                title: 'Rearranging pV = nRT',
+                text: 'Rearrange <strong>pV = nRT</strong> for any variable:<br/>• p = <span class="nb-frac"><span class="nb-num">nRT</span><span class="nb-den">V</span></span><br/>• V = <span class="nb-frac"><span class="nb-num">nRT</span><span class="nb-den">p</span></span><br/>• n = <span class="nb-frac"><span class="nb-num">pV</span><span class="nb-den">RT</span></span><br/>• T = <span class="nb-frac"><span class="nb-num">pV</span><span class="nb-den">nR</span></span>'
             },
             terms: []
         },
         {
             id: 'h-gas-laws',
             type: 'heading',
-            data: { text: "Boyle's Law and Charles' Law", level: 2 },
+            data: { text: "Gas Laws: Boyle's, Charles' and Gay-Lussac's", level: 2 },
             terms: []
         },
         {
             id: 'table-gas-laws',
             type: 'comparisonTable',
             data: {
-                caption: "Boyle's Law and Charles' Law — both derived directly from pV = nRT",
+                caption: "Boyle's, Charles' and Gay-Lussac's Laws — all derived from pV = nRT",
                 headers: ['Law', 'Statement', 'Mathematical form', 'Link to pV = nRT', 'Kinetic theory explanation'],
                 rows: [
                     ["<strong>Boyle's Law</strong>", 'At constant temperature and fixed mass: volume is inversely proportional to pressure', 'pV = constant', 'pV = nRT; n, R, T all constant → pV = constant ✓', 'Halving the volume → particles hit the walls twice as often per second → pressure doubles'],
-                    ["<strong>Charles' Law</strong>", 'At constant pressure and fixed mass: volume is directly proportional to kelvin temperature', 'V / T = constant (T in K)', 'Rearrange: V = (nR/p)T; n, R, p all constant → V ∝ T ✓', 'Heating → particles move faster → hit a moveable wall harder and more often → wall expands until pressure re-equalises with outside']
+                    ["<strong>Charles' Law</strong>", 'At constant pressure and fixed mass: volume is directly proportional to kelvin temperature', 'V / T = constant (T in K)', 'Rearrange: V = (nR/p)T; n, R, p all constant → V ∝ T ✓', 'Heating → particles move faster → hit a moveable wall harder and more often → wall expands until pressure re-equalises with outside'],
+                    ["<strong>Gay-Lussac's Law</strong>", 'At constant volume and fixed mass: pressure is directly proportional to kelvin temperature', 'p / T = constant (T in K)', 'Rearrange: p = (nR/V)T; n, R, V all constant → p ∝ T ✓', 'Heating → particles move faster → collide with the fixed walls more frequently and with greater force → pressure increases']
                 ]
             },
             terms: []
@@ -238,7 +248,7 @@ export const note_chemistry_1_1_10 = {
             data: {
                 style: 'key',
                 title: 'Finding the Molar Mass of a Volatile Liquid',
-                text: 'Since $n = \\frac{mass}{M_r}$, we can substitute this into the ideal gas equation:<br/><br/>$pV = \\frac{mass \\times RT}{M_r}$<br/><br/>Rearranging for $M_r$ gives:<br/><br/><strong>$M_r = \\frac{mass \\times RT}{pV}$</strong><br/><br/><em>Method:</em> Convert all measurements to SI units (Pa, m³, K). Keep mass in grams. Plug into the equation to find $M_r$, which can then be used to identify an unknown gas.'
+                text: 'Since n = m/Mᵣ, substitute into pV = nRT:<br/><br/>pV = <span class="nb-frac"><span class="nb-num">m × RT</span><span class="nb-den">Mᵣ</span></span><br/><br/>Rearranging for Mᵣ:<br/><br/><strong>Mᵣ = <span class="nb-frac"><span class="nb-num">m × RT</span><span class="nb-den">pV</span></span></strong><br/><br/><em>Method:</em> Convert all measurements to SI units (Pa, m³, K). Keep mass in grams. This formula is used to identify unknown gases or volatile liquids from gas-phase measurements.'
             },
             terms: []
         },
@@ -254,7 +264,7 @@ export const note_chemistry_1_1_10 = {
             data: {
                 style: 'key',
                 title: 'Changing Conditions at Constant Moles',
-                text: 'When the <strong>amount of gas ($n$) stays constant</strong>, but the physical conditions (pressure, volume, temperature) change, $R$ and $n$ are both constant, leading to the Combined Gas Law:<br/><br/><strong>$\\frac{p_1 V_1}{T_1} = \\frac{p_2 V_2}{T_2}$</strong><br/><br/><em>Note on units here:</em> As long as you use the SAME units on both sides (e.g. both volumes in cm³, both pressures in kPa), you do not strictly need SI units. <strong>However, Temperature MUST still always be in Kelvin.</strong>'
+                text: 'When the <strong>amount of gas (n) stays constant</strong> but pressure, volume, and temperature change, n and R are both constant, giving the Combined Gas Law:<br/><br/><strong><span class="nb-frac"><span class="nb-num">p₁V₁</span><span class="nb-den">T₁</span></span> = <span class="nb-frac"><span class="nb-num">p₂V₂</span><span class="nb-den">T₂</span></span></strong><br/><br/>• <em>Units:</em> As long as the <strong>same units</strong> are used on both sides (e.g. both V in cm³, both p in kPa), SI units are not strictly required.<br/>• <strong>Temperature MUST always be in Kelvin</strong> — adding 273 to °C is mandatory no matter what.'
             },
             terms: ['Combined Gas Law']
         },
@@ -264,7 +274,7 @@ export const note_chemistry_1_1_10 = {
             data: {
                 style: 'warning',
                 title: 'Common Mistakes & Unit Conversion Checklist',
-                text: 'Before plugging numbers into $pV = nRT$, always verify:<br/>✓ Is $T$ in <strong>Kelvin</strong>? (Add 273 to °C. This is the #1 mistake!)<br/>✓ Is $V$ in <strong>m³</strong>? (Divide cm³ by 1,000,000; divide dm³ by 1,000)<br/>✓ Is $p$ in <strong>Pa</strong>? (Multiply kPa by 1,000)'
+                text: 'Before substituting into <strong>pV = nRT</strong>, always verify:<br/>✓ Is <strong>T</strong> in <strong>Kelvin</strong>? (Add 273 to °C — most common error)<br/>✓ Is <strong>V</strong> in <strong>m³</strong>? (cm³ ÷ 10⁶; dm³ ÷ 10³)<br/>✓ Is <strong>p</strong> in <strong>Pa</strong>? (kPa × 10³)<br/>✓ Have you used R = 8.31 J mol⁻¹ K⁻¹ (NOT 8.314 or other values)?'
             },
             terms: []
         },
@@ -280,7 +290,7 @@ export const note_chemistry_1_1_10 = {
             data: {
                 style: 'worked',
                 title: 'Practice Q1: Basic Calculation',
-                text: '<strong>Question:</strong> Find the volume in cm³ of 0.50 mol of CO₂ gas at 100 kPa and 25°C.<br/><br/><strong>Step 1 (Convert units):</strong><br/>p = 100 × 10³ = 100,000 Pa<br/>T = 25 + 273 = 298 K<br/>n = 0.50 mol<br/><br/><strong>Step 2 (Calculate):</strong><br/>$V = \\frac{nRT}{p}$<br/>$V = \\frac{0.50 \\times 8.31 \\times 298}{100000} = 0.01238$ m³<br/><br/><strong>Step 3 (Convert back to cm³):</strong><br/>V in cm³ = 0.01238 × 1,000,000 = <strong>12,380 cm³</strong>'
+                text: '<strong>Question:</strong> Find the volume in cm³ of 0.50 mol of CO₂ gas at 100 kPa and 25°C.<br/><br/><strong>Step 1 — Convert units:</strong><br/>p = 100 × 10³ = 100,000 Pa<br/>T = 25 + 273 = 298 K<br/>n = 0.50 mol<br/><br/><strong>Step 2 — Calculate:</strong><br/>V = <span class="nb-frac"><span class="nb-num">nRT</span><span class="nb-den">p</span></span> = <span class="nb-frac"><span class="nb-num">0.50 × 8.31 × 298</span><span class="nb-den">100,000</span></span> = 0.01238 m³<br/><br/><strong>Step 3 — Convert back to cm³:</strong><br/>V = 0.01238 × 10⁶ = <strong>12,380 cm³</strong>'
             },
             terms: []
         },
@@ -290,7 +300,7 @@ export const note_chemistry_1_1_10 = {
             data: {
                 style: 'worked',
                 title: 'Practice Q2: Molar Mass Calculation',
-                text: '<strong>Question:</strong> 0.200 g of an unknown gas occupies 80.0 cm³ at 100 kPa and 298 K. Calculate its $M_r$.<br/><br/><strong>Step 1 (Convert units):</strong><br/>$p$ = 100,000 Pa<br/>$V$ = 80.0 cm³ = $80.0 \\times 10^{-6}$ = 0.000080 m³<br/>$T$ = 298 K<br/>$mass$ = 0.200 g<br/><br/><strong>Step 2 (Calculate Moles):</strong><br/>$n = \\frac{pV}{RT} = \\frac{100,000 \\times 0.000080}{8.31 \\times 298} = \\frac{8.00}{2476.38} = 0.00323$ mol<br/><br/><strong>Step 3 (Calculate Mr):</strong><br/>$M_r = \\frac{mass}{moles} = \\frac{0.200}{0.00323} =$ <strong>$61.9$ g mol⁻¹</strong>'
+                text: '<strong>Question:</strong> 0.200 g of an unknown gas occupies 80.0 cm³ at 100 kPa and 298 K. Calculate its Mᵣ.<br/><br/><strong>Step 1 — Convert units:</strong><br/>p = 100,000 Pa<br/>V = 80.0 ÷ 10⁶ = 8.00 × 10⁻⁵ m³<br/>T = 298 K<br/>m = 0.200 g<br/><br/><strong>Step 2 — Find moles:</strong><br/>n = <span class="nb-frac"><span class="nb-num">pV</span><span class="nb-den">RT</span></span> = <span class="nb-frac"><span class="nb-num">100,000 × 8.00 × 10⁻⁵</span><span class="nb-den">8.31 × 298</span></span> = <span class="nb-frac"><span class="nb-num">8.00</span><span class="nb-den">2476.4</span></span> = 3.23 × 10⁻³ mol<br/><br/><strong>Step 3 — Find Mᵣ:</strong><br/>Mᵣ = <span class="nb-frac"><span class="nb-num">m</span><span class="nb-den">n</span></span> = <span class="nb-frac"><span class="nb-num">0.200</span><span class="nb-den">3.23 × 10⁻³</span></span> = <strong>61.9 g mol⁻¹</strong>'
             },
             terms: []
         },
@@ -300,7 +310,7 @@ export const note_chemistry_1_1_10 = {
             data: {
                 style: 'worked',
                 title: 'Practice Q3: Combined Gas Law',
-                text: '<strong>Question:</strong> A gas occupies 300 cm³ at 100 kPa and 27°C. What volume will it occupy at 150 kPa and 77°C?<br/><br/><strong>Step 1 (Convert Temperatures to K):</strong><br/>$T_1 = 27 + 273 = 300$ K<br/>$T_2 = 77 + 273 = 350$ K<br/><br/><strong>Step 2 (Apply Combined Law):</strong><br/>$\\frac{p_1 V_1}{T_1} = \\frac{p_2 V_2}{T_2}$<br/><br/>$\\frac{100 \\times 300}{300} = \\frac{150 \\times V_2}{350}$<br/><br/>$100 = \\frac{150 \\times V_2}{350}$<br/><br/>$V_2 = \\frac{100 \\times 350}{150} =$ <strong>$233$ cm³</strong>'
+                text: '<strong>Question:</strong> A gas occupies 300 cm³ at 100 kPa and 27°C. What volume will it occupy at 150 kPa and 77°C?<br/><br/><strong>Step 1 — Convert temperatures to K:</strong><br/>T₁ = 27 + 273 = 300 K<br/>T₂ = 77 + 273 = 350 K<br/><br/><strong>Step 2 — Apply Combined Gas Law:</strong><br/><span class="nb-frac"><span class="nb-num">p₁V₁</span><span class="nb-den">T₁</span></span> = <span class="nb-frac"><span class="nb-num">p₂V₂</span><span class="nb-den">T₂</span></span><br/><br/><span class="nb-frac"><span class="nb-num">100 × 300</span><span class="nb-den">300</span></span> = <span class="nb-frac"><span class="nb-num">150 × V₂</span><span class="nb-den">350</span></span><br/><br/>100 = <span class="nb-frac"><span class="nb-num">150 × V₂</span><span class="nb-den">350</span></span><br/><br/>V₂ = <span class="nb-frac"><span class="nb-num">100 × 350</span><span class="nb-den">150</span></span> = <strong>233 cm³</strong>'
             },
             terms: []
         }
@@ -312,12 +322,13 @@ export const note_chemistry_1_1_10 = {
             { id: 'c-assumptions', blockId: 'table-assumptions', prompt: 'State all seven kinetic theory assumptions for an ideal gas.' },
             { id: 'c-deviations', blockId: 'callout-z-factor', prompt: 'Define the compression factor Z. Why is Z < 1 at low temperatures and Z > 1 at very high pressures?' },
             { id: 'c-gas-laws', blockId: 'table-gas-laws', prompt: "State Boyle's Law and Charles' Law, including their mathematical forms and kinetic theory explanations." },
+            { id: 'c-gaylussac', blockId: 'table-gas-laws', prompt: "State Gay-Lussac's Law. Write its mathematical form and explain using kinetic theory why pressure increases with temperature at constant volume." },
             { id: 'c-molar-vol', blockId: 'callout-molar-volume', prompt: 'What is the molar volume of an ideal gas at STP and at RTP? State the values and units.' },
             { id: 'c-mr', blockId: 'callout-mr-calc', prompt: 'State the formula used to calculate the molar mass (Mr) of an unknown gas from p, V, T, and mass data.' },
             { id: 'c-combined', blockId: 'callout-combined', prompt: 'State the Combined Gas Law equation. What temperature unit is required?' }
         ],
-        summaryText: 'Ideal gas equation: pV = nRT with SI units (Pa, m³, K). Seven KT assumptions: constant random motion; rigid spheres; pressure from wall collisions; elastic collisions; T ∝ average KE; no IMF; negligible molecular volume. Real gases: Z = pV/nRT; Z < 1 at low T (IMF reduce effective pressure); Z > 1 at very high P (molecular volume significant). Van der Waals: (P + an²/V²)(V − nb) = nRT with gas-specific a (IMF) and b (volume) constants. Molar volume: 22.4 dm³ mol⁻¹ at STP (0°C, 1 atm); 24.0 dm³ mol⁻¹ at RTP (~20°C, 1 atm). Boyle\'s Law: pV = constant at fixed T and n. Charles\' Law: V ∝ T (K) at fixed P and n. M_r = (mass × RT) / pV. Combined gas law: (p₁V₁)/T₁ = (p₂V₂)/T₂ (T must be in Kelvin). Conversions: +273 for °C→K; ×1000 for kPa→Pa; ÷1000 for dm³→m³; ÷1,000,000 for cm³→m³.',
-        ready: false
+        summaryText: 'Ideal gas equation: pV = nRT with SI units (Pa, m³, K). Seven KT assumptions: constant random motion; rigid spheres; pressure from wall collisions; elastic collisions; T ∝ average KE; no IMF; negligible molecular volume. Real gases: Z = pV/nRT; Z < 1 at low T (IMF reduce effective pressure); Z > 1 at very high P (molecular volume significant). Van der Waals: (P + an²/V²)(V − nb) = nRT. Molar volume: 22.4 dm³ mol⁻¹ at STP (0°C, 1 atm); 24.0 dm³ mol⁻¹ at RTP (~20°C, 1 atm). Boyle\'s Law: pV = constant at fixed T and n. Charles\' Law: V ∝ T (K) at fixed p and n. Gay-Lussac\'s Law: p ∝ T (K) at fixed V and n. Mᵣ = (m × RT) / pV. Combined gas law: p₁V₁/T₁ = p₂V₂/T₂ (T must be in Kelvin). Conversions: +273 for °C→K; ×10³ for kPa→Pa; ÷10³ for dm³→m³; ÷10⁶ for cm³→m³.',
+        ready: true
     },
     evidence: []
 };

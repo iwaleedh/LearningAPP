@@ -1,167 +1,83 @@
 export const note_biology_1_2_17 = {
-  blocks: [
+  "blocks": [
     {
-      id: 'obj-cp3',
-      type: 'objective',
-      data: {
-        text: 'Describe Core Practical 3: using beetroot to investigate the effect of a named variable on membrane permeability. Explain the method, controls, and how to measure permeability. Analyse results using a colorimeter.',
-      },
+      "id": "obj-18",
+      "type": "objective",
+      "data": {
+        "text": "Understand Core Practical 3: Investigate membrane structure/permeability using beetroot."
+      }
     },
     {
-      id: 'h-principle',
-      type: 'heading',
-      data: { text: 'Principle — Beetroot and Membrane Permeability', level: 2 },
+      "id": "h-beetroot",
+      "type": "heading",
+      "data": {
+        "text": "Beetroot Cell Permeability",
+        "level": 2
+      }
     },
     {
-      id: 'p-principle',
-      type: 'paragraph',
-      data: {
-        text: 'Beetroot cells contain a red/purple pigment called betalain (betacyanin) stored in the vacuole, surrounded by the tonoplast (vacuolar membrane) and the plasma membrane. In healthy intact membranes, betalain cannot escape the cell. When membranes are damaged (by heat, organic solvents, or detergents), the phospholipid bilayer breaks down → membranes become more permeable → betalain leaks into the surrounding solution → the solution turns red/pink. The darker the colour, the more permeable the membrane has become.',
-      },
+      "id": "p-beet",
+      "type": "paragraph",
+      "data": {
+        "text": "Beetroot cells contain a dark red pigment called betalain held within the vacuole. If the cell surface and vacuole membranes are damaged, the pigment leaks out. Testing membrane permeability involves measuring how much pigment leaks under different conditions (like temperature or ethanol concentration)."
+      }
     },
     {
-      id: 'callout-key-membranes',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Why Does Temperature Affect Membrane Permeability?',
-        text: '• Low temp (<0°C): ice crystals form, puncturing membranes → leakage\n• 0–40°C: phospholipid molecules have increasing kinetic energy → bilayer more fluid. Intrinsic proteins begin to denature above ~40°C\n• Above ~45°C: proteins (carriers, channels) rapidly denature → membrane structure disrupted → large-scale leakage\n• Very high temps (>60°C): complete membrane disruption\nIncrease in temperature → increased permeability → more betalain released → deeper red colour → higher colorimeter absorbance',
-      },
+      "id": "list-method",
+      "type": "list",
+      "data": {
+        "style": "numbered",
+        "items": [
+          "Cut equal-sized cylinders of beetroot using a cork borer. Rinse them thoroughly to wash away pigment from cells damaged during cutting.",
+          "Place the cylinders into test tubes of water in water baths at different temperatures (e.g., 20°C, 30°C, 40°C, 50°C, 60°C) for a set time.",
+          "Remove the beetroot cylinders, leaving just the colored liquid.",
+          "Use a colorimeter (set to a blue/green filter) to measure the percentage transmission or absorbance of light through each liquid sample."
+        ]
+      }
     },
     {
-      id: 'h-method',
-      type: 'heading',
-      data: { text: 'Method', level: 2 },
+      "id": "callout-result",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "Expected Results",
+        "text": "As temperature increases above 40-50°C, the membrane phospholipids gain kinetic energy and spread apart. Membrane proteins denature, creating holes. This drastically increases permeability, leading to massive pigment leakage (high absorbance, low transmission)."
+      }
+    }
+  ,
+    {
+        "id": "svg-diag-1-2-17-0",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 300 160' xmlns='http://www.w3.org/2000/svg'><path d='M100,40 L100,140 C100,160 140,160 140,140 L140,40' fill='none' stroke='#4a5568' stroke-width='2'/><rect x='105' y='110' width='30' height='30' fill='#805ad5' stroke='#44337a'/><path d='M100,80 Q120,85 140,80' fill='none' stroke='#3182ce' stroke-width='1'/><text x='160' y='125' font-size='10'>Beetroot Cylinder</text><text x='160' y='90' font-size='10'>Water Bath Setup</text><text x='40' y='30' font-size='10' font-weight='bold'>Test Temp vs Permeability</text></svg>",
+            "caption": "Beetroot Practical Setup"
+        }
     },
     {
-      id: 'table-cp3-method',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Core Practical 3 method (temperature investigation)',
-        headers: ['Step', 'Action', 'Why'],
-        rows: [
-          ['1', 'Cut several 1 cm × 1 cm × 1 cm cubes of beetroot from the same beetroot (standardise size)', 'Same SA:V ratio ensures diffusion distance is constant across all cubes'],
-          ['2', 'Rinse beetroot cubes in distilled water for 10 min; replace water until it runs clear', 'Removes betalain from cut surfaces (damaged cells during cutting) which would contaminate results'],
-          ['3', 'Set up water baths at a range of temperatures (e.g. 10, 20, 30, 40, 50, 60, 70°C). Wait for temperature to stabilise', 'Controls temperature precisely'],
-          ['4', 'Place one beetroot cube in a test tube containing 5 cm³ distilled water. Immerse tube in water bath', 'Distilled water used (not buffer) to allow betalain to diffuse freely'],
-          ['5', 'Leave for 30 min at each temperature, then remove beetroot cube', 'Allows time for betalain to diffuse into solution'],
-          ['6', 'Transfer solution to cuvette; measure absorbance at 530 nm (green filter) using colorimeter', '530 nm absorbed by red/pink solutions; higher absorbance = more betalain leaked = more permeable'],
-          ['7', 'Repeat each temperature 3 times; calculate mean absorbance', 'Repeat for reliability; calculate mean to reduce effect of anomalies'],
-        ],
-      },
-    },
-    {
-      id: 'h-variables',
-      type: 'heading',
-      data: { text: 'Variables', level: 2 },
-    },
-    {
-      id: 'table-variables',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Variables in Core Practical 3',
-        headers: ['Variable type', 'Variable', 'How controlled'],
-        rows: [
-          ['Independent (IV)', 'Temperature (°C)', 'Use calibrated water baths at different set temperatures'],
-          ['Dependent (DV)', 'Absorbance of solution at 530 nm', 'Measured with colorimeter; use same green filter each time'],
-          ['Control: cube size', 'Length × width × height of beetroot', 'Cut all cubes to the same dimensions (1 cm × 1 cm × 1 cm) using a ruler'],
-          ['Control: beetroot source', 'Same beetroot for all cubes', 'All cubes from same beetroot to minimise variation in betalain concentration'],
-          ['Control: volume of water', '5 cm³ distilled water per cube', 'Measured with a pipette or syringe for each test tube'],
-          ['Control: time in water bath', '30 min for each cube', 'Use timer; start timing when tube reaches target temperature'],
-          ['Control: wavelength of light', '530 nm (green filter)', 'Set colorimeter to same wavelength each time'],
-        ],
-      },
-    },
-    {
-      id: 'h-expected-results',
-      type: 'heading',
-      data: { text: 'Expected Results and Analysis', level: 2 },
-    },
-    {
-      id: 'p-expected-results',
-      type: 'paragraph',
-      data: {
-        text: 'Expected pattern: as temperature increases from ~10°C to 40°C, absorbance increases slowly (greater membrane fluidity). A sharp increase in absorbance occurs above ~40°C as membrane proteins begin to denature. Above 60°C, maximum leakage — membranes are fully disrupted and absorbance is high and relatively constant. A graph of temperature vs. absorbance shows a sigmoidal/exponential increase with a steep region around 40–60°C.',
-      },
-    },
-    {
-      id: 'callout-limitations',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Limitations and Solutions',
-        text: '\u2022 Cuvettes may vary in glass thickness \u2192 biased absorbance readings \u2192 solution: use the same cuvette for all samples (rinse with distilled water between measurements)\n\u2022 Beetroot pieces may not be identical in size \u2192 variation in surface area and betalain content \u2192 solution: measure and cut carefully with scalpel and ruler; repeat to get a mean\n\u2022 Different regions of the same beetroot may have different betalain concentrations \u2192 systematic variation \u2192 solution: use pieces from the same region; repeat with different parts and calculate mean\n\u2022 Water bath temperature may fluctuate \u2192 imprecise control of IV \u2192 solution: use a calibrated thermometer; allow time for equilibration before adding beetroot',
-      },
-    },
-    {
-      id: 'h-risk',
-      type: 'heading',
-      data: { text: 'Risk Assessment', level: 2 },
-    },
-    {
-      id: 'table-cp3-risk',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Hazards in Core Practical 3',
-        headers: ['Hazard', 'Risk', 'Control measure'],
-        rows: [
-          ['Hot water baths (50–80°C)', 'Scalds', 'Use tongs; warn before reaching into water bath; maintain awareness of temperature'],
-          ['Scalpel/cutting tools', 'Cut injuries', 'Cut away from body; use cutting board; store scalpels safely'],
-          ['Beetroot dye', 'Stains clothing and surfaces', 'Wear lab coat and gloves; wipe spills immediately'],
-        ],
-      },
-    },
-    {
-      id: 'callout-tip-cp3',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: 'Exam Tips — CP3',
-        text: '• "Explain why the cubes must be washed before the experiment" — Answer: to remove betalain from cells cut on the surface during preparation; if not washed, the initial solution would already be red, making it impossible to detect changes due to temperature.\n• "Why use a colorimeter rather than comparing colours by eye?" — Answer: colorimeter gives objective numerical data; human eye cannot reliably distinguish similar shades of red; allows quantitative comparison.\n• "How should the colorimeter be calibrated before use?" — Answer: zero (blank) the colorimeter using a cuvette of distilled water set to 0 absorbance before measuring any samples; this ensures all readings reflect only the betalain in solution, not background from the water or cuvette.\n• "Why must all cubes be the same size?" — Answer: same surface area to volume ratio → same diffusion pathway length → same rate of diffusion under standard conditions.',
-      },
-    },
-    {
-      id: 'h-alcohol-variation',
-      type: 'heading',
-      data: { text: 'Variation: Effect of Alcohol Concentration', level: 2 },
-    },
-    {
-      id: 'p-alcohol-variation',
-      type: 'paragraph',
-      data: { text: 'The experiment can be adapted to investigate the effect of alcohol (ethanol) concentration on membrane permeability. Ethanol is a non-polar solvent that dissolves the phospholipid bilayer: as concentration increases, lipids are progressively dissolved, disrupting membrane structure and increasing permeability. More betalain leaks out, giving higher absorbance readings. Expected result: as ethanol concentration increases, membrane permeability increases and absorbance increases. Method is otherwise identical — prepare a range of ethanol concentrations (e.g. 0, 10, 20, 30, 40% v/v), keep temperature constant (e.g. 25°C), incubate for the same time, and measure absorbance at 530 nm.' },
-    },
-    {
-      id: 'checklist-cp3',
-      type: 'checklist',
-      data: {
-        items: [
-          { text: 'Explain why betalain leaks out when membranes are damaged', checked: false },
-          { text: 'Describe the full method for the beetroot temperature investigation', checked: false },
-          { text: 'Explain why the beetroot cubes must be rinsed before the experiment', checked: false },
-          { text: 'State the independent, dependent, and three controlled variables', checked: false },
-          { text: 'Explain how a colorimeter is used at 530 nm to measure membrane permeability', checked: false },
-          { text: 'Sketch the expected graph of temperature vs. absorbance and explain its shape', checked: false },
-        ],
-      },
-    },
-    {
-      id: 'summary-cp3',
-      type: 'summary',
-      data: {
-        text: 'CP3: beetroot contains betalain in vacuole. Intact membranes → pigment stays in cell. Damage (heat, solvents) → membranes become more permeable → betalain leaks → solution turns red. Method: same-size cubes, rinse first, incubate in distilled water at different temps for 30 min, measure absorbance at 530 nm (green filter, colorimeter). Expected: absorbance increases sharply above 40°C as proteins denature. Controls: cube size, volume of water, time, wavelength. Must rinse to remove betalain from cut surfaces. Colorimeter gives objective numerical data vs. eye.',
-      },
-    },
+        "id": "svg-diag-1-2-17-1",
+        "type": "svg",
+        "data": {
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><line x1='50' y1='120' x2='250' y2='120' stroke='#333' stroke-width='2'/><line x1='50' y1='120' x2='50' y2='30' stroke='#333' stroke-width='2'/><path d='M50,110 C100,100 150,90 200,30' fill='none' stroke='#c53030' stroke-width='3'/><text x='20' y='80' font-size='10' transform='rotate(270 20,80)'>Absorbance</text><text x='110' y='140' font-size='10'>Temperature (°C)</text><text x='210' y='40' font-size='10' fill='#c53030'>Membrane Denatured</text></svg>",
+            "caption": "Colorimeter Result (Permeability)"
+        }
+    }
   ],
-  recall: {
-    enabled: true,
-    cues: [
-      { id: 'cue-1', blockId: 'p-principle', prompt: 'Explain why betalain stays inside healthy beetroot cells but leaks out when heated. Name the TWO membranes it must cross.' },
-      { id: 'cue-2', blockId: 'table-cp3-method', prompt: 'Describe steps 2–3 of the beetroot experiment. Why is rinsing the cubes essential before starting the experiment?' },
-      { id: 'cue-3', blockId: 'table-variables', prompt: 'State the independent and dependent variables in this experiment. Name two controlled variables and explain how each is controlled.' },
-      { id: 'cue-4', blockId: 'p-expected-results', prompt: 'Sketch (or describe) the expected graph of temperature vs. absorbance. Explain the shape above 40°C.' },
+  "recall": {
+    "enabled": true,
+    "cues": [
+      {
+        "id": "cue-1",
+        "blockId": "list-method",
+        "prompt": "Why must you rinse the beetroot cylinders before the experiment?"
+      },
+      {
+        "id": "cue-2",
+        "blockId": "callout-result",
+        "prompt": "Why does a high temperature damage the membrane?"
+      }
     ],
-    summaryText: 'Beetroot CP: betalain in vacuole — crosses tonoplast + plasma membrane when damaged. Rinse first (remove surface betalain). 10–70°C range; 5 cm³ water; 30 min; colorimeter 530 nm. Absorbance rises sharply above 40°C (protein denaturation). Control: cube size, time, volume, wavelength. Colorimeter = objective data; eye is subjective.',
-    ready: false,
+    "summaryText": "Increased temperature denatures membrane proteins and increases phospholipid kinetic energy, damaging the membrane. This causes beetroot pigment to leak, increasing fluid absorbance in a colorimeter.",
+    "ready": true
   },
-  evidence: [],
+  "evidence": []
 };

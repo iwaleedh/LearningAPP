@@ -1,0 +1,27 @@
+
+> learningapp@0.0.0 build
+> vite build
+
+▲ [WARNING] Duplicate key "file-saver" in object literal [duplicate-object-key]
+
+    ../package.json:25:4:
+      25 │     "file-saver": "^2.0.5",
+         ╵     ~~~~~~~~~~~~
+
+  The original key "file-saver" is here:
+
+    ../package.json:20:4:
+      20 │     "file-saver": "^2.0.5",
+         ╵     ~~~~~~~~~~~~
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 1153 modules transformed.
+✗ Build failed in 741ms
+error during build:
+Could not resolve "./biology/note_2_4_15.js" from "src/data/seedNotes/index.js"
+file: /Users/ibrahimwaleed/Documents/LearningAPP/src/data/seedNotes/index.js
+    at getRollupError (file:///Users/ibrahimwaleed/Documents/LearningAPP/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///Users/ibrahimwaleed/Documents/LearningAPP/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///Users/ibrahimwaleed/Documents/LearningAPP/node_modules/rollup/dist/es/shared/node-entry.js:21710:24)
+    at file:///Users/ibrahimwaleed/Documents/LearningAPP/node_modules/rollup/dist/es/shared/node-entry.js:21670:26

@@ -1,0 +1,971 @@
+Edexcel International A
+Level (IAL) Biology
+Classification & Biodiversity
+Contents
+The Three Domains of Life
+The Variety of Life
+Biodiversity & Endemism
+Species Richness & Heterozygosity Index
+Index of Biodiversity
+Ecological Niches & Adaptations
+Hardy-Weinberg Equation
+Roles of Seed Banks & Zoos in ConservationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+
+The Three Domains of Life
+Why Classify Organisms?
+Taxonomy is the practice of biological classification
+The phylogenetic classification system enables us to arrange species into groups based
+on their evolutionary origins and evolutionaryrelationships
+By grouping organisms into taxa, it can make them easier to understand and remember
+There are several different ranks or levels within the hierarchical classification system
+used in biology
+There is no overlap between groups
+Each group is called a taxon (plural taxa)
+Multiple smaller taxa can be put in the same larger taxa
+Species is the lowest taxonomic rank in the system
+Similar species can be grouped in a genus
+Similar genera can be grouped in a family
+Similar families can be grouped into an order
+Similar orders can be grouped into a class
+Similar classes can be grouped into a phylum
+Similar phyla can be grouped into a kingdom
+Similar kingdoms can be grouped into a domain
+Domains are the highest taxonomic rank in the system
+They include the Archaea (prokaryotes), Eubacteria (prokaryotes) and Eukarya
+(eukaryotes)
+There are a few different rhymes that exist to help you remember the different ranks in
+the taxonomic classification system. You can always make up your own but the one
+below is super helpful!
+The first letters of all the different ranks below the domains can be remembered as:
+Kings Play Chess On Fancy Gold Squares
+Kingdom Phylum Class Order Family Genus SpeciesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+
+The different levels within the hierarchical classification system - the higher ranks contain
+more organisms with less similarity between them, while the lower ranks contain fewer
+organisms with more similarity between them
+Many different species with similar genotypes and phenotypes can be grouped
+together in the same genus
+They are, however, still separate species since they cannot produce fertile offspring 
+This is known as the species concept
+Early classification systems only relied on the outward appearance (phenotype) of
+organisms to classify them
+Looks can be deceiving however as many non-related organisms share similar
+phenotypes - e.g. whales and sharks
+Advances in technology, such as DNA sequencing, have made it possible
+to compare the genotypes of organisms and provide clarity on the evolutionary
+relationships between them
+Binomial system
+Binomials are the scientific names given to individual species
+It consists of the organism’s genus and species name in modern Latin
+The genus name is written first and is capitalised, while the species name comes
+second and is not capitalised
+Both parts of a binomial are italicised
+For example, the binomial for humans is Homo sapiens and the binomial for dogs is Canis
+familiaris
+Binomials are extremely useful for scientists as they allow for species to be universally
+identified - the binomial for a species is the same across the entire globe
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+
+Five kingdoms
+Organisms can be placed into one of five kingdoms
+This is based on the general features that groups of organisms within these
+kingdoms share
+Kingdom Prokaryotae (Monera)
+These are organisms that have prokaryotic cells which contain no nucleus
+They vary in size over a wide range, but are typically less than 5 μ m
+Example: Staphylococcus pneumoniae is a bacteria species that causes pneumonia
+Kingdom Protoctista
+All Protoctista are eukaryotic, and this broad group of cellular life encompasses all
+eukaryotic cells that do not belong to the other three eukaryotic kingdoms
+Members of this kingdom show great diversity in all aspects of life including structure,
+life cycle, feeding, trophic levels and modes of locomotion
+They usually live in aquatic environments
+Protoctists can exist as single-celled organisms or as a group of similar cells
+A group of Protoctista known as protozoa possess cells similar to animal cells
+Their cells have no cell wall
+Another group of Protoctista known as algae possess cells similar to plant cells
+Their cells have cellulose cell walls and chloroplasts
+Stentor roseli is a protoctist that has flagella all over its body which help it feed and move
+Kingdom Fungi
+The oldest organism in the world is thought to be a fungus aged somewhere between
+1500 - 10,000 years old
+All fungi are eukaryotic cells
+The cells of fungi:
+Possess non-cellulose cell walls (often made of the polysaccharide chitin)
+Fungi are saprotrophs:
+They obtain this energy and carbon by digesting dead/decaying
+matter extracellularly or from being parasites on living organisms
+Fungi reproduce using spores that disperse onto the ground nearby
+Fungi have a simple body form:
+They can be unicellular (like the common baker’s yeast Saccharomyces cerevisiae)Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+
+Some consist of long threads called hyphae that grow from the main fungus body
+(mycelium)
+Larger fungi possess fruiting bodies that release large numbers of spores
+Examples: moulds, yeasts, mushrooms
+Kingdom Plantae
+Plants are multicellular eukaryotic organisms
+Plant cells:
+All have cell walls composed of cellulose
+Possess large (and usually permanent) vacuoles that provide structural support
+Are able to differentiate into specialized cells to form tissues and organs
+Possess chloroplasts (containing chlorophyll) that enable photosynthesis (not all
+plant cells have chloroplasts)
+They are autotrophs
+This means they can synthesize their organic compounds and molecules for energy
+use and building biomass from inorganic compounds
+Examples: mosses, ferns, flowering plants
+Kingdom Animalia
+Animals are also multicellular eukaryotic organisms
+Animal cells:
+Are able to differentiate into many different specialised cell types that can
+form tissues and organs
+Have small temporary vacuoles (for example, lysosomes)
+Have no cell walls
+They are heterotrophs
+They have a wide range of feeding mechanisms
+Examples: molluscs, insects, fish, reptiles, birds, mammalsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+
+The four kingdoms that fall under the domain Eukarya, representing the eukaryotes
+Evidence for Taxonomy
+In the past, scientists encountered many difficulties when trying to determine the
+evolutionary relationships between species
+Using the physical features of species (such as colour/shape/size) has many limitations
+and can often lead to the wrong classification of species
+Advances in genome sequencing and immunology has allowed scientists to further
+investigate the evolutionary relationships between species
+This has led to many organisms being reclassified or changes being made to
+the classification system structure
+Scientific knowledge is constantly changing, as more technological advances are made
+One such example is the three domain classification system, which was based on new
+information obtained from molecular analysis of RNA genes in particular
+Using this new information,scientists have realised that using cell type to classify
+organisms is insufficient, and that prokaryotes could be divided into two separate
+groups (domains)
+The three domains are:
+Archaea (prokaryotes)
+Examiner Tips and Tricks
+The binomial for a species is always typed in italics or underlined when handwritten.
+The genus should always begin with a capital letter, and the species with a lower case
+letter.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+
+Bacteria (prokaryotes)
+Eukarya (eukaryotes)
+The taxonomic classification system within the three domains
+This new classification system was based on molecular phylogeny
+Phylogeny investigates the evolutionary history of different groups of organisms and
+can specify how closely related they are
+Molecular phylogeny relies on similarities or differences of molecules (such as DNA, RNA
+or proteins) between groups of organisms to determine how closely related they are
+The more similar the molecules, the more recent the common ancestor is that they
+share
+Based on the evidence that molecular phylogeny provided, it was determined that the
+organisms in the kingdom Prokaryotae would be reclassified into two separate domains
+- the Archaea and Bacteria
+The evidence suggested that archaea and bacteria are less closely related to each
+other than scientists originally thought
+Organisms from the other four kingdoms where placed in another domain - Eukaryota
+Characteristics & Features of the Three Domains Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+
+The Variety of Life
+Human Impact on Variety of Life
+Evolution by the process of natural selection has increased the variety of life on Earth
+over time
+In recent times, however, human activities have threatened many species with
+extinction
+The global human population has been growing exponentially for the last 150 years
+There are many reasons for this exponential growth, including:
+Improved technology leading to an abundance of food = increase in birth rate
+Improved medicine, hygiene and health care = decrease in death rate
+The human population is growing exponentially
+Humans use many resources from the Earth such as land (for settlements and
+agriculture), water, wood and fossil fuels
+As the human populationincreases and countries become more
+economically developed, our requirement for these natural resources also increases
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+
+This is having a harmful effect on many aspects of the environment,
+including aquatic and terrestrialecosystems, and our atmosphere and climate
+The damage to these ecosystems is negatively impacting
+the species and habitats contained within them
+This means that a conflict exists between human needs and the conservation of
+biodiversity
+The main factors affecting biodiversity today are:
+Habitat destruction
+Overexploitation
+Hunting
+Agriculture
+Climate change
+Habitat destruction
+Many human needs lead to natural environments being destroyed
+When land is cleared for agriculture, industry, energy production, housing, transport,
+leisure facilities, waste disposal and water storage, this results in:
+Habitat loss (plant and animals completely lose their habitats)
+Habitat fragmentation (habitats are divided into small areas - populations living
+within these separated habitat fragments are more likely to suffer
+from inbreeding or local extinction)
+Deforestation is one of the most damaging forms of habitat destruction, as forest
+habitats often have the highest levels of biodiversity
+Marine habitats are also being destroyed, including:
+Coral reefs (some people use dynamite as an extreme way to catch fish, which
+damages corals)
+Sea beds (fishing practices such as trawling, where nets are dragged along the sea
+bed, destroy this important habitat)
+Overexploitation
+Many of the natural resources exploited by humans are actually
+being overexploited (they are being used up faster than they can be replaced)
+For example, much deforestation is unsustainable as trees are removed but are not
+replaced by replanting. Even if they are replanted, the rate at which trees are
+being removed far exceeds the rate at which they are growing back
+Fish stocks are also being overexploited, which is also having a knock-on effect on
+organisms that feed on these fish species, such as marine mammals and seabirds
+HuntingYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+
+Hunting is another form of overexploitation, as many wild, non-farmed species of
+animals are being hunted and removed more quickly than their wild populations can
+be replenished
+An example is the hunting of animals for 'bush meat' in developing countries
+(including the hunting of primates such as monkeys and chimpanzees, as well as
+other mammal and reptile species)
+Agriculture
+After the second world war, there was a massive change in how food was produced
+There was a need to produce more food, at a quicker rate
+It was then that modern farming practices began:
+Farms became more specialised so they grew only one crop or raised one type of
+livestock (monoculture)
+There was a switch to growing cereal crops rather than vegetables
+Fields were made bigger to accommodate machinery via the removal of
+hedgerows and stonewalls
+More land was made arable by draining wetland and filling in ponds
+The use of fertilisers and pesticides massively increased
+Most of these modern farming techniques have had a major negative impact on the
+level of biodiversity present in farmed areas
+Monocultures support much lower levels of biodiversity compared to natural
+habitats or even natural grazing land (that has a large variety of plant species present
+which can support a much greater range and number of insect species and bird
+species)
+Hedgerows represent an important habitat for many insects, small mammals and
+birds, which can nest there. As hedgerows are being increasingly removed, this
+habitat and the biodiversity it supports is lost
+Fertilisers can leach into waterways, causing eutrophication, which can lead to the
+death of many aquatic invertebrate and fish species
+Pesticides (e.g. insecticides) used on crops kill insect pests but also kill many non-
+target species, including important insect pollinators like bees
+Climate change
+Human-caused climate change is causing weather patterns to change and
+the frequency of extreme weather events, such as hurricanes, typhoons, floods and
+droughts, to increase
+It is feared that climate change is now occurring too fast for many species to be able
+to adapt to these changes, which could result in many species
+becoming extinct and a major decline in biodiversityYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+
+Global warming (a result of climate change) is causing many species to move towards
+the poles or to higher altitudes
+However, these species may not be able to compete with, or may even out-
+compete, the species already present in these habitats, with either result leading
+to decreased biodiversity
+Some species (such as plant species) may not be able to move or change their
+distributions fast enough to adapt to increasing temperature and may go extinct as
+a result
+Global warming (and the human-generated CO ₂  that is the primary cause of this) is also
+threatening marine biodiversity:
+Increasing atmospheric CO ₂ is leading to more CO ₂  dissolving in
+seawater, decreasing its pH (known as ocean acidification). This is negatively
+affecting organisms that require calcium carbonate for shells (e.g. plankton and
+coral polyps)
+Increased ocean temperatures have also led to an increased frequency of coral-
+bleaching events, where the tiny organisms that live inside corals and help keep
+them alive leave due to temperature stress. Without these organisms, the corals die
+and are broken down, eventually leading to the loss of whole coral reefs and as a
+result, the loss of the huge amount of biodiversity that depends on themYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+
+Biodiversity & Endemism
+Biodiversity & Endemism
+Biodiversity can be thought of as a study of all the variation that exists within and
+between all forms of life
+Biodiversity looks at the range and variety of genes, species and habitats within a
+particular region
+It can be assessed at three different levels:
+The number and range of different ecosystems and habitats
+The number of species and their relative abundance
+The genetic variation within each species
+Biodiversity is very important for the resilience of ecosystems; in that it allows them
+to resist changes in the environment
+Ecosystem or habitat diversity
+This is the range of different ecosystems or habitats within a particular area or region
+If there is a large number of different habitats within an area, that area is likely to
+have high biodiversity
+A good example of this is a coral reef. They are very complex with lots of
+microhabitats and niches to be exploited
+If there are only one or two different habitats within an area,  that area is likely to have low
+biodiversity
+Large sandy deserts typically have very low biodiversity as the conditions are
+basically the same throughout the whole area
+Species diversity
+An ecosystem such as a tropical rainforest that has a very high number of different
+species would be described as being species-rich
+Species richness is the number of species within an ecosystem
+Species diversity includes the number of different species in an ecosystem, and also
+the abundance across the different species present 
+The greater the number of species in an ecosystem, and the greater the
+abundance of individuals from each species, the greater the speciesdiversity
+For example, an ecosystem can have a large number of different species but some
+species may be very rare (may only have a few individuals) in that particular
+ecosystem. As a result, the ecosystem does not necessarily have high species
+diversityYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+
+Ecosystems with high species diversity are usually more stable than those with lower
+species diversity as they are more resilient to environmental changes
+For example in the Pine forests of Florida, the ecosystem is dominated by one or
+two tree species. If a pathogen comes along that targets one of the two dominant
+species of trees, then the whole population could be wiped out and the ecosystem
+it is a part of could collapse
+Genetic diversity
+The genetic diversity within a species is the diversity of alleles and genes in the
+genome of species
+Although individuals of the same species will have the same genes, they will not
+necessarily have the same alleles for each gene
+Genetic diversity is measured by working out the proportion of genes that have more
+than one form (allele) and how many possible alleles each gene has
+There can be genetic differences or diversity between populations of the same species
+These differences may arise because the two populations occupy slightly different
+ranges in their habitat and so are subject to slightly different selection pressures
+that affect the allele frequencies in their populations
+Genetic diversity can also be observed withinasingle population
+Genetic diversity in a species is important as it can help the population adapt to, and
+survive, changes in the environment
+The changes could be in biotic factors such as new predators, pathogens and
+competition with other species
+Or the changes could be through abiotic factors like temperature, humidity and
+rainfall
+Genetic diversity is limited in populations that are very small or isolated
+Inbreeding in small, isolated populations leads to a high proportion of individuals
+being homozygous (e.g. AA to aa) for many genes, resulting in lower genetic
+diversity
+This can mean that genetic diseases caused by recessive alleles can become more
+common in these populations
+Endemism
+Certain species only occur in one particular area of the world - e.g. pygmy three-toed
+sloths which are only found on a small island off the coast of Panama
+These species are said to be endemic to that region and they do not naturally occur
+anywhere else
+Endemic species are particularly at risk of extinction due to their limited rangeYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+
+Species Richness & Heterozygosity Index
+Species Richness & Heterozygosity Index
+The place where an organism lives is called its habitat
+Habitats can vary in size, with some being very large (e.g. grasslands) while others are
+very small (e.g. a puddle of water that formed after heavy rain)
+Measuring the species diversity within different habitats can be useful in making
+comparisons between them or when studying how habitats change over time
+One way to determine species diversity is to measure species richness in a habitat
+Species richness is the number of species within a community
+A community is a group of populations of different species living in the same place
+at the same time that interact with each other
+Species richness is the simplest way to measure species diversity
+A community with a greater number of species will have a greater species richness score
+For example, a tropical rain forest has a very high number of different species so it
+would be described as species-rich
+Species richness can be a misleading indicator of diversity as it does not take into
+account the number of individuals of each species
+Species abundance is a measure of the relative number of individuals in the different
+species within a given area
+In the example below, Area 1 and Area 2 both contain 4 tree species
+However, Area 2 is actually dominated by one species and in fact, one of the
+species is very rare (only one individual)
+Although the two areas have exactly the same species richness, Area 1 has a higher
+species abundance (and therefore a higher overall species diversity) than Area 2
+This example illustrates the limitations of using just species richness on its own
+Conservationists often favour the use of an index of diversity as it takes into account
+species number and evennessYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+
+Area 1 and 2 have the same species richness but different species abundance. Area 1 will
+have a higher overall species diversity as it has a higher species abundance. Species
+diversity takes both richness and abundance into account.
+Measuring the different levels of biodiversity within an ecosystem can be challenging
+Finding out which species live in an ecosystem and the size of the populations requires
+the identification and cataloguing of all organisms present to build a species list
+This is possible for areas that are very small or where the species are very large like trees
+However, for larger and more complex ecosystems like rainforests, it is
+simply impossible to find, identify and count every organism that exists there
+When this is the case, different samples of the area can be taken and used to make
+an estimate for the total species numbers in the area
+Random sampling
+Some ecosystems are very complex with large numbers of different species of different
+sizes
+For the sake of logistics, randomsampling is often used to estimate
+the distribution and abundance of species
+The distribution of a species describes how it is spread throughout the ecosystem
+The abundance of a species is the number of individuals of that species
+When carrying out sampling, square frames called quadrats can be used to mark off the
+area being sampled
+Quadrats are square frames made of wood or wire
+They can be a variety of sizes eg. 0.25m  or 1m
+They are placed on the ground and the organisms within them are recorded
+2 2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+
+They can be used to measure the distribution and abundance of plants
+Using a quadrat to investigate population size or distribution
+Quadrats of different sizes can be used depending on what is being measured and what
+is most suitable in the space the samples are being made in
+Quadrats must be laid randomly in the area to avoid sampling bias
+This random sampling can be done by converting the sampling area into a grid
+format and labelling each square on the grid with a number
+Then a random number generator is used to pick the sample points
+Once the quadrat has been laid on the chosen sample point
+the abundance or percentage cover of all the differentspecies present can be
+recorded
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+
+Using a quadrat to investigate the percentage cover of two species of grass. Some
+squares may be lacking any species while other squares may have multiple species in
+them - this means that the total percentage cover may sometimes be over or under 100%
+Quadrats are suitable for sampling plants
+For many animal species, however, it is not possible to use quadrats to measure their
+distribution and abundance
+In these cases, other techniques involving other items of equipment are necessary,
+including:
+Sweeping nets: these are large, strong nets with a fine material (very small holes)
+that are used to catch flying insects and insects that live in long grass by sweeping
+the net back and forth through the grass
+Pitfall traps: these are cans or jars that are buried in the ground that are used to
+catch ground-dwelling (often nocturnal) insects and other invertebrates as they fall
+into the trap
+Kick-sampling: this technique is used to catch freshwater invertebrates living in
+streams or rivers. A net in placed on the stream-bed so that the water is flowing into
+it and the stream-bed just above the net is churned up by the scientist (using their
+foot) for a set period of time. The invertebrates are carried by the stream into the net
+Take as many samples as possible to get a more accurate indication of the entire habitat
+The results can be used to estimate the total number of individuals or species richness in
+the habitat
+It is important to use the same sampling method when gathering data to compare
+different habitats with one another
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+
+Example of how a pitfall trap can be used
+Example of how kick-sampling is done
+Measuring genetic diversity within a species
+Genetic diversity refers to the different alleles that occur within the gene pool of a
+species or a population
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+
+The greater the allele variety within a species, the higher the genetic diversity will be
+Measurements of genetic diversity is useful to investigate changes occurring in a
+population over time or when comparing two species with one another
+To measure genetic diversity two factors can be considered:
+Phenotype
+Genotype
+The phenotype of an organism refers to its observable features
+Different alleles are responsible for the variety of phenotypes that can be observed
+within a species
+Therefore, the greater the variety of phenotypes within a species, the higher the genetic
+diversity
+An organism's genotype is determined by the different alleles that are found within the
+cells
+Different alleles will have a different order of bases in the DNA molecules
+These base orders can be determined by sequencing the DNA of individuals in a species
+The higher the number of different alleles for a characteristic, the greater the genetic
+diversity within that species
+Another way to determine the genetic diversity within a species is to use the
+heterozygosity index
+Heterozygosity index
+Organisms that have two different alleles at a particular gene locus are known as
+heterozygotes
+The higher the proportion of heterozygotes in a population, the greater the genetic
+diversity of that population will be
+We can use the following formula to calculate the heterozygosity index (H):
+H =number ofheterozygotes
+number ofindividuals inthepopulation
+Worked Example
+In pea plants the gene controlling seed shape exist in two forms: Allele R codes for
+round seeds and is dominant over allele r which codes for wrinkled seeds. It is found
+that within a population of 620 pea plants, there are 350 heterozygous (Rr)
+individuals.
+Calculate the heterozygosity index for the pea plants at the locus for seed shape.
+Answer:Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+
+The formula is:
+H =number ofheterozygotes
+number ofindividuals inthepopulation
+H =350
+620
+H =0 .56
+It is possible to determine the value for H at many loci, then calculate an average
+value
+This value can then be used as an estimation of the genetic diversity of the entire
+genome of the populationYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+
+Index of Biodiversity
+Comparison of Biodiversity Indicies
+Once the abundance of different species in an area has been recorded, the results can
+be used to calculate the species diversity for that area
+Species diversity looks at the number of different species in an area but also the
+abundance across the different species
+An index of diversity is a measurement that describes the relationship between the
+number of species present and how each species contributes to the total number of
+organisms that are present in that community
+The index of diversity formula
+The formula is:
+D =N (N −1 )
+Σn (n −1 )
+Where:
+n = total no. of organisms for a single species in the community
+N = total no. of organisms in the community
+Σ = sum of
+ The larger the number obtained, the higher the level of diversity
+Calculating the index of diversity
+To calculate:
+Step 1: Calculate N(N-1) to find value A
+Step 2: Calculate n(n-1) for each species and add all these numbers together to find
+value B
+Step 3: Divide value A by value B
+Worked Example
+Samples of different insect species in a back garden were collected using sweep
+nets and identification keys. Use the data recorded to calculate the index of diversity.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+
+The total number of organisms(N) in this community would be: 7 + 34 + 6 + 21 + 12 + 37 +
+7 + 19 + 59 = 202
+The formula is:
+D =N (N −1 )
+Σn (n −1 )
+Answer:
+Step one: Calculate N(N-1) to find value A
+N(N-1) = 202(202−1)
+N(N-1)= 202(201)
+N(N-1) = 40602
+Step two: Calculate n(n-1) for each species and add all of these numbers together
+to find value B
+See table below
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+
+Step three: Divide value A by value B to calculate the index of diversity (D)
+D = 40602÷ 6884
+D = 5.90
+The higher the value of D, the greater the level of biodiversity in that area
+It is useful to compare the species diversity in different habitats by calculating
+the diversity index for each of them
+Examiner Tips and Tricks
+Even though you are not expected to memorise the formulae for calculating the
+heterozygosity index and index of diversity, you will be expected to know how to use
+them and understand what the values mean that you calculate with them.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+
+Ecological Niches & Adaptations
+Niche
+The place where a species lives within an ecosystem is its habitat
+The role that a species plays within its habitat is known as its niche, including:
+The biotic interactions of the species (e.g. the organisms it feeds on and the
+organisms that feed on it)
+The abiotic interactions (e.g. how much oxygen and carbon dioxide the species
+exchanges with the atmosphere)
+A niche can only be occupied by one species, meaning that every individual species has
+its own unique niche
+If two species try to occupy the same niche, they will compete with each other for
+the same resources
+One of the species will be more successful and out-compete the other species
+until only one species is left and the other is either forced to occupy a new, slightly
+different niche or to go extinct from the habitat or ecosystem altogether
+For example, the three North American warbler species shown below all occupy
+the same habitat (spruces and other conifer trees) but occupy slightly different
+niches as each species feeds at a different height within the trees
+This avoids competition between the three species, allowing them to co-
+exist closely with each other in the same habitat
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+
+Although it appears as though these birds share the same niche, they spend their time
+eating in different parts of spruces and other conifer trees
+Adaptations to abiotic and biotic conditions
+Adaptations are features of organisms that increase their chances
+of surviving and reproducing. These adaptations can be:
+Anatomical, which refers to structural features such as horns, claws or feathers, that
+increase an organism's chances of survival
+Behavioural, which refers to behaviours such as courtship of defensive behaviours,
+that increase an organism's chances of survival
+Physiological, which refers to processes inside the body, such as venom
+production or the ability to digest cellulose, that increase an organism's chances of
+survival
+A species must be adapted to both the biotic and abiotic factors within its habitat in
+order to use this habitat in a way no other species can (i.e. in order to occupy its unique
+niche)
+Examples of adaptations to biotic conditions could include:
+Adaptations to Biotic Factors Table
+Examples of adaptations to abiotic conditions could include:
+Adaptations to Abiotic Factors Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+
+Hardy-Weinberg Equation
+Changes in Allele Frequency
+Hardy-Weinberg Principle
+The Hardy-Weinberg principle states that if certain conditions are met, the allele
+frequencies of a gene within a population will not change from one generation to the
+next
+There are several conditions or assumptions that must be met for the Hardy-Weinberg
+principle to hold true:
+Mating must be random between individuals
+The population is infinitely large
+There is no migration, mutation or natural selection
+The Hardy-Weinberg equation allows for the calculation of allele and genotype
+frequencies within populations
+It also allows for predictions to be made about how these frequencies will change in
+future generations
+If the allele frequencies in a population change over time, then it means that migration,
+mutation or natural selection has happened
+Hardy-Weinberg calculations
+If the phenotype of a trait in a population is determined by a single gene with only two
+alleles (we will use B / b as examples throughout this section), then the population will
+consist of individuals with three possible genotypes:
+Homozygous dominant (BB)
+Heterozygous(Bb)
+Homozygous recessive (bb)
+ When using the Hardy-Weinberg equation, the frequency of a genotype is represented
+as a proportion of the population
+For example, the BB genotype could be 0.40
+Whole population = 1
+The letter p represents the frequency of the dominant allele (B)
+The letter q represents the frequency of the recessive allele (b)
+As there are only two alleles at a single gene locus for this phenotypic trait in the
+population:
+p + q = 1Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+
+The chance of an individual being homozygous dominant is p
+In this instance, the offspring would inherit dominant alleles from both parents
+( p x p = p )
+ The chance of an individual being heterozygous is 2pq
+Offspring could inherit a dominant allele from the father and a recessive allele from
+the mother ( p x q ) or offspring could inherit a dominant allele from the mother and a
+recessive allele from the father ( p x q ) = 2pq
+The chance of an individual being homozygous recessive isq
+ In this instance, the offspring would inherit recessive alleles from both parents
+( q x q= q )
+As these are all the possible genotypes of individuals in the population, the following
+equation can be constructed:
+p + q + 2pq = 12
+2
+2
+2
+2 2
+Worked Example
+In a population of birds, 10% of the individuals exhibit the recessive phenotype of
+white feathers. Calculate the frequencies of all genotypes.
+Solution:
+We will use F / f to represent dominant and recessive alleles for feather colour
+Those with the recessive phenotype must have the homozygous recessive
+genotype, ff
+Therefore q = 0.10 (as 10% of the individuals have the recessive phenotype
+and q represents this)
+To calculate the frequencies of the homozygous dominant ( p ) and heterozygous
+( 2pq ):
+Step 1: Find q
+q2= 0 .1 =0 .32
+Step 2: Find p (the frequency of the dominant allele F). If q = 0.32, and p + q = 1
+p + q = 1
+p = 1 - 0.32
+p= 0.68
+Step 3: Find p (the frequency of homozygous dominant genotype)
+0.68= 0.46
+p = 0.46
+Step 4: Find 2pq = 2 x (p) x (q)2
+2
+2
+2
+2 
+2Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+
+Reasons for Changes in Allele Frequency
+Mutations
+Organisms of the same species will have very similar genotypes, but two individuals
+(even twins) will have differences between their DNA base sequences
+Considering the size of genomes, these differences are small between individuals of the
+same species
+The small differences in DNA base sequences between individual organisms within a
+species population is called genetic variation
+Genetic variation is transferred from one generation to the next and it generates
+phenotypic variation within a species population
+The primary source of genetic variation is mutation (changes in the DNA base sequence)2 x (0.68) x (0.32)
+= 0.44
+Step 5: Check calculations by substituting the values for the three frequencies into
+the equation; they should add up to 1
+p + 2pq + q = 1
+0.46 + 0.44 + 0.10 = 1
+In summary:
+Allele frequencies:
+p = F = 0.68
+q = f = 0.32
+Genotype frequencies:
+p = FF = 0.46
+q = ff = 0.10
+2pq = Ff = 0.442 2
+2
+2
+Examiner Tips and Tricks
+When you are using Hardy-Weinberg equations, start your calculations by
+determining the proportion of individuals that display the recessive phenotype - you
+will always know the genotype for this: homozygous recessive. Remember that the
+dominant phenotype is seen in both homozygous dominant, and heterozygous
+individuals.  Also, don’t mix up the Hardy-Weinberg equations with the Hardy-
+Weinberg principle. The equations are used to estimate the allele and
+genotype frequencies in a population. The principle suggests that there is
+an equilibrium between allele frequencies and there is no change in this between
+generations.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+
+Mutation results in the generation of new alleles
+The new allele may be advantageous, disadvantageous or have no apparent effect
+on phenotype
+New alleles are not always seen in the individual that they first occur in
+They can remain hidden (not expressed) within a population for several generations
+before they contribute to phenotypic variation
+Natural selection
+Variation exists within a species population
+This means that some individuals within the population
+possess different phenotypes (due to genetic variation in the alleles they possess;
+remember members of the same species will have the same genes)
+Environmental factors affect the chance of survival of an organism; they, therefore, act
+as a selection pressure
+Selection pressures increasethechance of individuals with a specific
+phenotype surviving and reproducing over others
+The individuals with the favoured phenotypes are described as having a higher fitness
+The fitness of an organism is defined as its ability to survive and pass on its alleles to
+offspring
+Organisms with higher fitness possess adaptations that make them better suited
+to their environment
+When selection pressures act over several generations of a species, they can cause a
+change in the allele frequency and the phenotype frequency in a population
+through natural selection
+Natural selection is the process by which individuals with a fitter phenotype are
+more likely to survive and pass on their alleles to their offspring so that
+the advantageous alleles increase in frequency over time and generations
+An example of natural selection in rabbits
+Variation in fur colour exists within rabbit populations
+At a single gene locus, normal brown fur is produced by a dominant allele whereas white
+fur is produced by a recessive allele in a homozygous individual 
+Rabbits have natural predators like foxes which act as a selection pressure
+Rabbits with a white coat do not camouflage as well as rabbits with brown fur, meaning
+predators are more likely to see white rabbits when hunting
+As a result, rabbits with white fur are less likely to survive than rabbits with brown fur
+The rabbits with brown fur have a selection advantage, so they are more likely to
+survive to reproductive age and be able to pass on their alleles to their offspringYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31
+
+Over many generations, the frequency of alleles for brown fur will increase and the
+frequency of alleles for white fur will decrease
+Selective pressure acting on a rabbit population for one generation. Predation by foxes
+causes the frequency of brown fur alleles in rabbits to increase and the frequency of
+white fur alleles in rabbits to decrease
+Reproductive Isolation
+Organisms that belong to the samespecies share the same characteristics and are able
+to produce fertile offspring
+Reproductive isolation occurs when changes in the alleles and phenotypes of some
+individuals in a population prevent them from successfully breeding with other
+individuals in the population that don't have these changed alleles or phenotypes
+Examples of allele or phenotype changes that can lead to reproductive isolation include:
+Seasonalchanges - some individuals in a population may develop
+different mating or flowering seasons (becoming sexually active at different times
+of the year) to the rest of the population (i.e their reproductive timings no longer
+match up)
+Mechanical changes - some individuals in a population may develop changes in
+their genitalia that prevent them from mating successfully with individuals of the
+opposite sex (i.e. their reproductive body parts no longer match up)
+Behavioural changes - some individuals in a population may develop changes in
+their courtship behaviours, meaning they can no longer attract individuals of the
+opposite sex for mating (i.e. their methods of attracting a mate are no longer
+effective)
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 32
+
+These changes could be brought about due to geographical barriers isolating
+populations or random mutations producing new, different alleles in a population
+Speciation
+Speciation can occur when populations of a species become separated from each
+other by geographicalbarriers
+The barrier could be natural like a body of water, or a mountain range
+It can also be man-made, like a motorway
+This creates two populations of the same species who are reproductively isolated from
+each other, and as a result, no genetic exchange can occur between them
+If there are sufficient selection pressures acting to change the gene pools (and allele
+frequencies) within both populations then eventually these populations will diverge and
+form separate species 
+The changes in the alleles/genes of each population will affect
+the phenotypes present in both populations
+Random mutations within each population will also change allele frequencies in
+each
+Over time, the two populations may begin to differ physiologically, behaviourally
+and anatomically (structurally)
+This type of speciation is known as allopatric speciation
+Allopatric speciation occurring due to geographical isolation of two populations of the
+same species
+Sometimes populations of the same species live in the same geographical area but
+they become separated from each other by ecological or behavioural means
+An example of ecological separation is populations that live in different
+environments within the same area e.g. plants growing in soil with different pH levels
+may flower at different times from each other causing reproductive isolation
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 33
+
+This type of speciation that occurs without the presence of a geographical barrier is
+known as sympatric speciation
+Reproductive separation due to behavioural changes that resulted in sympatric
+speciation occurring
+Population bottlenecks
+A large population is required for the maintenance of a diverse gene pool
+Sometimes dramatic events occur (such as natural disasters or disease) that decrease
+the size of a population dramatically
+This is known as a population bottleneck
+It can lead to a significant decrease in the size of the gene pool of the population and
+will have a dramatic effect on the allele frequencies as a result thereof
+The remaining population will be more susceptible to the loss of alleles and the effects
+of mutations will be magnified in the new population
+An example is the cheetah which survived a near-extinction event in the past
+Only a few individuals remained and as a result the genetic diversity of all living
+cheetahs are very low
+This makes them very vulnerable to disease or environmental changes
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 34
+
+A population bottleneck in the past has dramatically decreased the genetic variation in
+cheetahs populations
+The Founder effect
+This refers to the loss of genetic variation if a new population is formed by a small
+number of individuals that left the main population
+Since the initial gene pool is small, it is unlikely that it will contain the genetic variation of
+the original population that the individuals came from
+Should any of these individuals carry unusual mutations in their genome, these will
+appear more frequently in the new population
+An example of this is the unusually high occurrence of Ellis-van Creveld syndrome
+(a type of dwarfism) among the Amish community in the USA
+This was the result of a few individuals that were heterozygous for the recessive
+allele that formed part of the founding Amish population
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 35
+
+The Founder effect can amplify the occurrence of genetic mutations in a population due
+to the small gene pool of the founding members
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 36
+
+Roles of Seed Banks & Zoos in Conservation
+Conservation of Endangered Species
+When species go extinct it leads to an overall decrease in biodiversity
+In recent times many species have already gone extinct, while others are endangered
+An endangered species is a species that is being threatened with extinction
+It is therefore important that these species are conserved to prevent them from going
+extinct
+Conservation of endangered species can be approached in several different ways
+Ideally a species should be kept in their natural habitat, as all the support systems they
+need to maintain life already exist there
+National parks and marine parks are examples of conservation methods that do this
+When it is not possible to do this endangered species can be captured and placed
+in captivity for conservation efforts
+Zoos and botanic gardens take part in conservation programmes
+Scientists have also come up with several methods to try and ensure the long-term
+survival of endangered species through frozen zoos and seed banks
+Conservation of species refers to protecting and managing them for future generations
+Seed banks
+A seed bank is a facility that conserves plant diversity by drying and storing seeds in a
+temperature-controlled environment
+Usually, seeds of the same species are collected from different sites to maintain
+genetic diversity
+If the plant species goes extinct then the seeds can be used to grow them again
+Seeds can only be stored for so long. After a certain period of time the stored seeds are
+grown into plants and fresh seeds for storage are taken from those plants
+The Svalbard Global Seed Vault in Norway has almost 1 million species of plant seed. It is
+located in the Arctic Circle, within ideal environmental conditions
+Many organisations send seeds from crop plants to be stored there for safekeeping
+Some plants have seeds that can not be frozen such as coffee and cocoa plants
+In order to preserve the genetic diversity of these plants successive generations
+must be grown or tissue cultures taken
+There are advantages and disadvantages of using seed banks
+Seed banks make valuable contributions to scientific researchYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 37
+
+It provides an opportunity to investigate how to successfully grow plants from
+seeds
+They provide a stock of endangered plants that could be useful to humans (e.g.
+medicinal plant species, crop plant species) taking pressure off of wild populations
+It is important to note, however, that data gathered from seed banks may not be
+representative of wild populations due to the small, genetically limited, sample size
+Seed banks also educate people about endangered species and increase interest in
+conserving these species
+For example, people can be trained to set up local seed banks, which involves the
+community
+Advantages & Disadvantages of Seed Banks Table
+Zoos
+Zoos can also contribute to the conservation of endangered animal species
+Captive breeding programmes can breed individuals of a species so their offspring can
+be released into the wild
+Zoos are an invaluable resource for scientific research
+Scientists are able to closely study animal’s genetics, behaviours and habitat
+needs
+There are some problems with zoos and their role in conservation:
+Captive breeding of small species populations can reduce genetic diversity
+Certain animal species will not breed in captivity
+Not all zoos can provide adequate habitats for animals with specific needs
+Many people question the ethics of keeping animals in captivity
+There are stories of both success and failure when it comes to zoos and conservation:
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 38
+
+The oryx is an antelope-like species that was saved from extinction and
+reintroduced into the wild in Africa thanks to zoos and captive breeding
+programmes
+Pandas have been in captive breeding programs for over 60 years and not a single
+panda has been reintroduced into the wild
+Zoos make a valuable contribution to scientific research in a variety of ways:
+They provide information about the specific needs (behavioural, physiological,
+nutritional) of different animal species, which aidsconservation efforts in the wild
+They can carry out studies that would be very difficult to do in wild populations
+Animals in zoos may not behave the same way they would in the wild, so this raises
+questions about the reliability of the data from some zoo-based studies
+Zoos contribute to educating people about endangered species by bringing them
+close to these organisms and increasing public enthusiasm for,and
+public engagement with, conservation efforts
+Advantages & Disadvantages of Zoos Table
+Reintroduction back into the wild
+Plants and animals from these facilities can be released back into their natural habitat,
+which holds certain benefits:
+This will help prevent them from going extinct in the wild
+Organisms that rely on these plants and animals for food or habitat may also benefit
+from their presence
+This contributes toward restoring lost or degraded habitats
+Reintroduction may have some negative effects too:
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 39
+
+These organisms may carry new diseases that will harm other organisms living in that
+habitat
+Reintroduced animals may lack the ability to find food or communicate effectively
+with members of their own speciesYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 40

@@ -1,0 +1,578 @@
+Edexcel International A
+Level (IAL) Biology
+Biological Molecules
+Contents
+The Importance of Water
+Saccharides
+Core Practical 1: Estimating the Concentration of Sugars & Starch
+Condensation & Hydrolysis
+Triglycerides & Ester BondsYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 1
+
+The Importance of Water
+The Importance of Water
+Water is the medium in which all metabolic reactions take place in cells and in which all
+substances are transported around the body
+Water is composed of atoms of hydrogen and oxygen
+One atom of oxygen combines with two atoms of hydrogen by sharing electrons;
+this is covalent bonding
+The sharing of the electrons is uneven between the oxygen and hydrogen atoms
+The oxygen atom attracts the electrons more strongly than the hydrogen atoms,
+resulting in a weak negatively charged region on the oxygen atom ( δ) and a weak
+positively charged region on the hydrogen atoms ( δ)
+This separation of charge due to the electrons in the covalent bonds being unevenly
+shared is called a dipole
+When a molecule has one end that is negatively charged and one end that is positively
+charged it is said to be a polar molecule
+Water is a polar molecule
+The covalent bonds of water make it a polar molecule
+Hydrogen bonds form between the positive and negatively charged regions of nearby
+water molecules as a result of the polar nature of water
+Hydrogen bonds are weak when they are few in number, so they are constantly
+breaking and reforming; this means that water molecules flow past each other in a-
++
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 2
+
+liquid state
+Hydrogen bonds contribute to the many properties water molecules have that make
+them so important to living organisms
+The polarity of water molecules allows hydrogen bonds to form between adjacent water
+molecules
+Water's dipole nature makes it good at transporting
+substances
+The polar nature of water gives water properties that make it good at transporting
+substances
+Water is cohesive
+Water is a solvent
+Cohesion and adhesion
+Hydrogen bonds between water molecules allow for strong cohesion between water
+molecules
+Cohesion is the attraction of water molecules to each other
+Water is also able to form hydrogen bonds with other molecules; this is known
+as adhesion
+The forces of cohesion and adhesion within a body of water and between water and its
+surroundings mean that water flows easily
+Water molecules pull other water molecules along due to cohesion
+Water adheres to the sides of a vessel due to adhesion
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 3
+
+Solvent
+As water is a polar molecule many ions, e.g. sodium and chloride ions, and covalently
+bonded polar substances, e.g. glucose, will dissolve in it
+Water molecules surround charged particles; the positive parts of water are
+attracted to negatively charged particles and the negative parts of water are
+attracted to positively charged particles
+The surrounded molecules break apart e.g. sodium chloride molecules break into
+sodium ions and chloride ions
+The ions surrounded by water molecules have dissolved
+This allows chemical reactions to occur within cells as the dissolved solutes are more
+chemically reactive when they are free to move about
+Metabolites can be transported efficiently in a dissolved state
+Water molecules surround charged particles due to forces of attraction between polar
+water and the charged particles. The surrounded particles are said to have dissolved
+Examiner Tips and Tricks
+Examiners will often assess how structure relates to function so it is important you
+know the structure of water and how its properties help it carry out its role, specifically
+with regards to transport.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 4
+
+Saccharides
+Types of Saccharide
+Carbohydrates are one of the main carbon-based compounds in living organisms
+All molecules in this group contain C, H and O
+Carbon atoms are key to the structure of organic compounds because
+Each carbon atom can form covalent bonds; this makes the compounds very
+stable
+Covalent bonds are so strong they require a large input of energy to break
+them
+Carbon atoms can form covalent bonds with oxygen, nitrogen and sulfur
+Carbon atoms can bond to form straight chains, branched chains, or rings
+Carbon compounds can form small, single subunits, or monomers, that bond with many
+repeating subunits to form large molecules, or polymers
+This is a process called polymerisation
+The three types of carbohydrates are:
+monosaccharides
+The monomers of carbohydrates; they can join together to make carbohydrate
+polymers
+Monosaccharides are simple carbohydrates
+Monosaccharides are sugars, e.g. triose (3C) sugars, pentose (5C) sugars and
+hexose (6C) sugars
+disaccharides
+Two monosaccharides can join together via condensation reactions to
+form disaccharides
+Examples include lactose and maltose
+polysaccharides
+Polysaccharides are carbohydrate polymers; repeated chains of many
+monosaccharides
+Starch (including amylose and amylopectin), glycogen, and cellulose are
+examples of polysaccharides
+Examiner Tips and TricksYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 5
+
+Saccharide Structure & Function
+Monosaccharides
+Monosaccharide structure
+Glucose is a well known example of a monosaccharide
+Glucose is a hexose sugar
+The six carbons that make up glucose form a ring structure
+Carbons 1−5 form a ring, while carbon 6 sticks out above the ring
+Glucose comes in two forms; alpha ( α) and beta ( β)
+The forms of glucose are almost identical; they differ only in the location of the H
+and OH groups attached to carbon 1
+Alpha glucose has the H above carbon 1 and the OH group below
+Remember = alpha has the H above
+Beta glucose has the H below carbon 1 and the OH group above
+Remember = beta has the H belowAlthough cellulose is an important polysaccharide you do not need to know about it in
+this topic.
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 6
+
+Alpha glucose (top) has the hydrogen above carbon 1 and the OH group below, while beta
+glucose (bottom) has the hydrogen below carbon 1 and the OH group above
+Monosaccharide function
+The main function of monosaccharides is to store energy within their bonds
+When the bonds are broken during respiration, energy is released
+The structure of glucose is related to its function as the main energy store for animals
+and plants 
+It is soluble so can be transported easily
+It has many covalent bonds which store energy
+Monosaccharides can combine through condensation reactions to form larger
+carbohydrates
+Some monosaccharides are used to form long, structural fibres, which can function as
+cellular support in some cell types
+Disaccharides
+Disaccharide structure
+Common examples of disaccharides include
+Maltose 
+Contains two molecules of glucose linked by a 1,4 glycosidic bond
+This means that the glycosidic bond is located between carbon 1 of one
+monosaccharide and carbon 4 of the other
+Sucrose
+Contains a molecule of glucose and a molecule of fructose linked by a 1,2
+glycosidic bond
+This means that the glycosidic bond is located between carbon 1 of one
+monosaccharide and carbon 2 of the other
+Lactose
+Contains a molecule of glucose and a molecule of galactose linked by a 1,4
+glycosidic bondYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 7
+
+Sucrose is a disaccharide formed from a molecule of glucose (left) and a molecule of
+fructose (right) joined together by a 1,2 glycosidic bond
+Disaccharide function
+The function of disaccharides is to provide the body with a quick-release source of
+energy
+Disaccharides are made up of two sugar molecules so they're easily broken down
+by enzymes in the digestive system into their respective monosaccharides and then
+absorbed into the bloodstream
+Due to the presence of a large number of hydroxyl groups, disaccharides are easily
+soluble in water
+These hydroxyl groups form hydrogen bonds with the water molecules when
+dissolved in aqueous solutions
+Just like monosaccharides they are sweet in taste
+Sucrose, also known as table sugar, is an example
+Polysaccharides
+Starch: structure
+Starch is constructed from twodifferentpolysaccharides
+Amylose
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 8
+
+Unbranched helix-shaped chain with 1,4 glycosidic bonds between α -glucose
+molecules
+A helix is a spiral shape
+The helix shape enables it to be more compact and thus more can be stored
+Amylopectin
+A branched molecule containing 1,4 glycosidic bonds between α -glucose
+molecules and 1,6 glycosidic bonds 
+The branches result in many terminal glucose molecules that can be easily
+hydrolysed for use during cellular respiration or added to for storage
+Both forms of starch are insoluble, so they do not dissolve and won't alter the water
+potential of cells
+Amylose is a helix-shaped polysaccharide found in starch, the storage polysaccharide in
+plants
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 9
+
+Amylopectin is a branched polysaccharide found in starch
+Starch: function
+Starch is the storage polysaccharide of plants; it is stored as granules in plastids
+Plastids are membrane-bound organelles that can be found in plant cells
+They have a specialised function, e.g. amyloplasts store starch grains and
+chloroplasts carry out photosynthesis
+The amylose in starch has a helical structure which makes it very compact, meaning that
+much can be stored in a small space
+The amylopectin in starch has branches that provide many terminal glucose molecules
+that can be easily hydrolysed for use during cellular respiration or added for storage
+Glycogen: structure
+Glycogen contains both 1,4 and 1,6 glycosidic bonds
+Glycogen is more branched than amylopectin
+The branching provides more terminal glucose molecules which can either be
+added to or removed by hydrolysis; this allows the quick storage or release of
+glucose to suit the demands of the cell
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 10
+
+This is essential in animal cells as animals are very metabolically active
+Glycogen is compact, which means that much can be stored in a small space
+Liver and muscles cells have a high concentration of glycogen, present as visible
+granules; this enables a high cellular respiration rate
+Glycogen is insoluble
+Glycogen is a highly branched molecule used as a storage polysaccharide in animals and
+fungi
+Glycogen: function
+Glycogen is the storage polysaccharide of animals and fungi
+Glycogen is more branched than amylopectin
+The branching provides more terminal glucose molecules which can either be
+added to or removed by hydrolysis; this allows the quick storage or release of
+glucose to suit the demands of the cell
+This is essential in animal cells as animals are very metabolically active
+Glycogen is compact which means that much can be stored in a small space
+Liver and muscles cells have a high concentration of glycogen, present as visible
+granules; this enables a high cellular respiration rate 
+Summary of Storage Polysaccharides Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 11
+
+Types of Carbohydrate Summary Table
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 12
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 13
+
+Core Practical 1: Estimating the Concentration of Sugars &
+Starch
+Concentration of Sugars
+There are a number of tests that can be carried out quickly and easily in a lab to
+determine if a sample contains a certain type of sugar
+Depending on how the tests are carried out, they can produce qualitative or semi-
+quantitative results
+Sugars can be classified as reducing or non-reducing; this classification is dependent
+on their ability to donate electrons (a reducing sugar that is able to donate electrons is
+itself oxidised)
+OILRIG in Chemistry
+Qualitative Benedict’s test: detecting the presence of
+reducing sugars
+Benedict’s reagent is a blue solution that contains copper (II) sulfate ions (CuSO  ); in the
+presence of a reducing sugar copper (I) oxide forms
+Copper (I) oxide is not soluble in water, so it forms a precipitate
+Apparatus
+Beaker
+Bunsen burner
+Tripod
+Gauze
+Test tubes
+Test tube rack
+Tongs
+Heatproof gloves
+Goggles
+Benedict's reagent
+Test sample
+Water bath
+Method
+1. Add Benedict's reagent (which is blue as it contains copper (II) sulfate ions) to a sample
+solution in a test tube4Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 14
+
+2. Heat the test tube in a water bath or beaker of water that has been brought to a boil for a
+few minutes
+3. If a reducing sugar is present, a coloured precipitate will form as copper (II) sulfate is
+reduced to copper (I) oxide which is insoluble in water
+It is important that an excess of Benedict’s solution is used so that there is more
+than enough copper (II) sulfate present to react with any sugar present
+Results and analysis
+A positive test result is a colour change somewhere along a colour scale from blue (no
+reducing sugar), through green, yellow and orange (low to medium concentration of
+reducing sugar) to brown/brick-red (a high concentration of reducing sugar)
+The Benedict's test for reducing sugars produces a colour change from blue towards red
+if a reducing sugar is present
+Testing for non-reducing sugars
+Some sugars don't react with Benedict's reagent; these are known as non-reducing
+sugars
+A few extra steps can be taken to test for non-reducing sugars using Benedict's reagent
+Method
+1. Add dilute hydrochloric acid to the sample and heat in a water bath that has been
+brought to the boil
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 15
+
+2. Neutralise the solution with sodium hydrogencarbonate
+Use a suitable indicator (such as red litmus paper) to identify when the solution has
+been neutralised, and then add a little more sodium hydrogencarbonate as the
+conditions need to be slightly alkaline for Benedict’s test to work
+3. Then carry out Benedict’s test as normal
+Add Benedict’s reagent to the sample and heat in a water bath that has been boiled
+– if a colour change occurs, a reducing sugar is present
+Results and analysis
+The addition of acid will hydrolyse any glycosidic bonds present in any carbohydrate
+molecules
+The resulting monosaccharides left will have an aldehyde or ketone functional group
+that can donate electrons to copper (II) sulfate (reducing the copper), allowing a
+precipitate to form
+Reducing & Non-reducing Sugars Table
+Semi-quantitative Benedict's test: estimating the
+concentration of reducing sugars
+Benedict’s solution can be used to carry out a semi-quantitative test on a reducing
+sugar solution to determine the concentration of reducing sugar present in the sample
+It is important that an excess of Benedict’s solution is used so that there is more than
+enough copper (II) sulfate present to react with any sugar present
+The intensity of any colour change seen relates to the concentration of reducing sugar
+present in the sample
+A positive test is indicated along a spectrum of colour from green (low
+concentration) to brick-red (high concentration of reducing sugar present)
+Additional apparatus
+Colourimeter
+Cuvettes
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 16
+
+Pencil
+Graph paper
+Water
+Pipettes
+Stopwatch
+Method
+1. Set up standard solutions with known concentrations of a reducing sugar (such as
+glucose)
+These solutions should be set up using a serial dilution of an existing stock solution
+2. Each solution is then treated in the same way
+Add the same volume of Benedict’s reagent to each sample and heat in a water
+bath that has been boiled (ideally at the same temperature each time) for a set time
+(5 minutes or so) to allow colour changes to occur
+It is important to ensure that an excess of Benedict’s solution is used
+3. The same procedure is carried out on a sample with an unknown concentration of
+reducing sugar which is then compared to the stock solution colours
+4. To avoid issues with human interpretation of colour, a colourimeter is used
+A sample of each known solution is added to cuvettes which are then inserted into a
+colourimeterto measure the absorbance or transmission of light to establish a
+range of values that form a calibration curve
+Results and analysis
+ The unknown sample can be compared against the calibration curve to estimate the
+concentration of reducing sugar present
+Colorimeter
+A colorimeter is an instrument that beams a specific wavelength (colour) of light through
+a sample and measures how much of this light is absorbed by the sample
+Colour filters are used to control the light wavelength emitted
+The colour used will be in contrast to the colour of the solution, e.g. Benedict's
+solution turns orange in the presence of sugar, so the colorimeter will assess the
+intensity of theorange colour; in order to do this a blue light filter would be used to
+shine blue light through the sample
+Blue light is absorbed by an orange solution as orange light is reflected to give
+the orange appearance
+The extent to which the blue light is absorbed will differ depending on the
+intensity of the orange colour; a solution that is orange/green will absorb less
+blue light than a solution that is brick redYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 17
+
+The absorbance value therefore provides a quantitative measure of the
+strength of the orange colour
+Colorimeters must be calibrated before taking measurements
+This is completed by placing a blank into the colorimeter and taking a reference; it
+should read 0 (that is, no light is being absorbed)
+This step should be repeated periodically whilst taking measurements to ensure that
+the absorbance is still 0
+The results can then be used to plot a calibration or standard curve
+Absorbance against the known concentrations can be used
+Unknown concentrations can then be determined from this graph
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 18
+
+A colourimeter is used to obtain quantitative data that can be plotted to create a
+calibration curve to be used to find unknown concentrations
+Serial dilutions
+Serial dilutions are created by taking a series of dilutions of a stock solution. The
+concentration decreases by the same quantity between each test tube
+They can either be ‘doubling dilutions’ (where the concentration is halved between
+each test tube) or a desired range (e.g. 0, 2, 4, 6, 8, 10 mmol dm )
+Serial dilutions are completed to create a standard to compare unknown concentrations
+against
+The comparison can be:
+Visual
+Measured through a calibration/standard curve
+Measured using a colourimeter
+They can be used when:
+Counting bacteria or yeast populations
+Determining unknown glucose, starch, protein concentrations
+-3Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 19
+
+Making serial dilutions
+Concentration of Starch
+Qualitative iodine test: detecting the presence of starch
+Iodine solution can be used to test for the presence of starch in a test sample
+Apparatus
+Test sample
+Iodine solution
+Spotting tile
+Gloves
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 20
+
+Goggles
+Method
+1. Add a few drops of orange/brown iodine solution to the test sample
+Results and analysis
+If starch is present, iodide ions in the solution interact with the centre of starch
+molecules, producing a complex with a distinctive blue-black colour
+This test is useful in experiments for showing that starch in a sample has been digested
+by enzymes
+Iodine test for the presence of starch
+Semi-quantitative iodine test: estimating the concentration
+of starch
+Iodine solution can be used to carry out a semi-quantitative test on a food sample to
+determine the concentration of starch present in the sample
+The intensity of any colour change seen relates to the concentration of starch present
+in the sample
+A positive test is indicated along a spectrum of colour from dark brown (low
+concentration) to blue-black (high concentration of starch present)
+Additional apparatus
+Colourimeter
+Cuvettes
+Pencil
+Graph paper
+Test tubes
+Test tube rack
+Water
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 21
+
+Pipettes
+Liquid food sample
+Stopwatch
+Method
+1. Set up standard solutions with known concentrations of starch
+These solutions should be set up using a serial dilution of an existing stock solution
+2. Each solution is then treated in the same way
+Add the same volume of iodine solution to each sample and allow colour changes
+to occur within a set time
+3. The same procedure is carried out on a sample with an unknown concentration of
+starch (food sample) which is then compared to the stock solution colours
+4. To avoid issues with human interpretation of colour, a colourimeter is used
+A sample of each known solution is added to cuvettes which are then inserted into a
+colourimeterto measure the absorbance or transmission of light to establish a
+range of values that form a calibration curve
+Results and analysis
+The unknown sample can be compared against the calibration curve to estimate the
+concentration of starch presentYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 22
+
+Condensation & Hydrolysis
+Condensation & Hydrolysis
+Forming a glycosidic bond: condensation reaction
+To make monosaccharides more suitable for storage they are bonded together to form
+disaccharides and polysaccharides
+Polysaccharides are insoluble so have less influence on the process of osmosis
+Disaccharides and polysaccharides are formed when two hydroxyl (OH) groups on
+different monosaccharides interact to form a strong covalent bond called a glycosidic
+bond
+The name of the glycosidic bond that forms depends on the location of the OH groups
+on the monosaccharides concerned, e.g.
+If the OH groups are located on carbon 1 of one monosaccharide and carbon 4 of
+the other, a 1,4 glycosidic bond forms
+If the OH groups are located on carbon 1 of one monosaccharide and carbon 6 of
+the other, a 1,6 glycosidic bond forms
+Every glycosidic bond results in one water molecule being released, thus glycosidic
+bonds are formed by a condensation reactionYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 23
+
+Glycosidic bonds form through condensation reactions, during which a water molecule is
+released. When two glucose molecules are joined by a glycosidic bond, the resulting
+disaccharide is maltose
+Glycosidic bonds can link monosaccharides together to form polysaccharides such as
+amylopectin, a form of starch. Amylopectin contains 1,4 and 1,6 glycosidic bonds
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 24
+
+There are many different types of monosaccharide, which join together to form
+different disaccharides, e.g.
+Two molecules of glucose join to form maltose
+Glucose joins with the monosaccharide fructose to form sucrose
+Glucose joins with the monosaccharide galactose to form lactose
+Breaking a glycosidic bond: hydrolysis reaction
+The glycosidic bond is broken when water is added in a hydrolysis reaction
+Hydro = water
+Lysis = to break
+Examples of hydrolytic reactions include the digestion of food in the alimentary tract
+and the breakdown of stored carbohydrates in muscle and liver cells for use in cellular
+respiration
+Glycosidic bonds are broken when water is added in a hydrolysis reaction
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 25
+
+Triglycerides & Ester Bonds
+Triglyceride Formation
+Lipids
+Lipids are macromolecules that contain carbon, hydrogen and oxygen atoms. Unlike
+carbohydrates, lipids contain a lower proportion of oxygen
+Lipids are non-polar and hydrophobic (insoluble in water)
+Triglycerides are a kind of lipid that forms the main component of fats and oils
+Lipids play an important role in energy yield, energy storage, insulation and hormonal
+communication
+Triglycerides
+Are non-polar, hydrophobic molecules
+The monomers are glycerol and fatty acids
+Glycerol is an alcohol (an organic molecule that contains a hydroxyl group bonded to a
+carbon atom)
+Fatty acids contain a methyl group at one end of a hydrocarbon chain known as the R
+group (chains of hydrogens bonded to carbon atoms, typically 4 to 24 carbons long) and
+at the other is a carboxyl group
+The shorthand chemical formula for a fatty acid is RCOOHYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 26
+
+The basic structure of a triglyceride
+Function of lipids
+Triglycerides are fats and oils
+Fatty acid and glycerol molecules are the components that make up triglycerides
+Fats and oils have a number of important functions in organisms: energy storage,
+insulation, buoyancy, and protection
+Forming an ester bond: condensation reaction
+Triglycerides are formed by esterification
+An ester bond forms when the hydroxyl (-OH) group of the glycerol bonds with the
+carboxyl group (-COOH) of the fatty acid
+The formation of an ester bond is a condensation reaction
+For each ester bond formed a water molecule is released
+Three fatty acids join to one glycerol molecule to form a triglyceride
+Therefore for one triglyceride to form, three water molecules are released
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 27
+
+Formation of a triglyceride from a glycerol molecule and three fatty acid molecules by the
+process of esterification
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 28
+
+Types of Fatty Acid in Lipids
+Fatty acids contain a methyl group at one end of a hydrocarbon chain known as the R
+group (chains of hydrogens bonded to carbon atoms, typically 4 to 24 carbons long) and
+at the other is a carboxyl group
+The shorthand chemical formula for a fatty acid is RCOOH
+Fatty acids can vary in two ways:
+Length of the hydrocarbon chain (R group)
+The fatty acid chain (R group) may be saturated (mainly in animal fat)
+or unsaturated (mainly vegetable oils, although there are exceptions e.g. coconut
+and palm oil)
+Saturated fatty acids contain no carbon-carbon double bonds
+The hydrocarbon chain is saturated with hydrogen atoms due to the absence of
+double bonds
+They form unbranched, linear chains 
+Unsaturated fatty acids can be mono or poly-unsaturated depending on the number of
+carbon-carbon double bonds present
+If H atoms are on the same side of the double bond they are cis-fatty acids and are
+metabolised by enzymes
+If H atoms are on opposite sides of the double bond they are trans-fatty acids and
+cannot form enzyme-substrate complexes, therefore, are not metabolised. They
+are linked with coronary heart diseaseYour notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 29
+
+Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 30
+
+Examples of different types of fatty acids with the functional groups and presence of
+double bonds highlighted
+Examiner Tips and Tricks
+Ensure you are confident with the structure of a triglyceride so you can recognise
+whether they are saturated or unsaturated.Your notes
+© 2026 Save My Exams, Ltd. Get more and ace your exams at savemyexams.com 31

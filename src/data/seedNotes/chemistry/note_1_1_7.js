@@ -32,12 +32,20 @@ export const note_chemistry_1_1_7 = {
       terms: ['Theoretical yield', 'Actual yield', 'Percentage yield']
     },
     {
+      id: 'eq-yield',
+      type: 'equation',
+      data: {
+        html: '% yield = <span class="nb-frac"><span class="nb-num">actual yield</span><span class="nb-den">theoretical yield</span></span> × 100',
+        caption: 'Actual and theoretical yield must be in the same units (g, kg or mol)'
+      }
+    },
+    {
       id: 'callout-yield-reasons',
       type: 'callout',
       data: {
         style: 'key',
         title: 'Why is the actual yield less than theoretical?',
-        text: '• The reaction is <strong>reversible</strong> and may not go to completion.<br/>• <strong>Side-reactions</strong> consume starting material to form other products.<br/>• <strong>Purification</strong> (filtration, distillation, recrystallisation) always results in some loss of product.<br/><br/><em>Exam hint: Give a specific and contextual reason (e.g., "product remained dissolved in the filtrate during filtration").</em>'
+        text: '• The reaction is <strong>reversible</strong> — equilibrium may not favour the products, so the reaction does not go to completion.<br/>• <strong>Side-reactions</strong> consume starting material to form other (unwanted) by-products.<br/>• <strong>Purification steps</strong> (filtration, distillation, recrystallisation) always result in some product loss — e.g. product remains dissolved in the filtrate.<br/>• Product is <strong>lost during transfer</strong> between containers (e.g. left on the walls of glassware).<br/>• Reaction given <strong>insufficient time</strong> to reach completion.<br/><br/><em>Exam hint: Give a specific and contextual reason — always link to the reaction conditions or method described in the question.</em>'
       },
       terms: []
     },
@@ -50,6 +58,43 @@ export const note_chemistry_1_1_7 = {
         text: '<strong>CO + 2H₂ → CH₃OH</strong><br/>A manufacturer obtains 4.07 tonnes of methanol from 4.32 tonnes of CO.<br/><br/>Theoretical yield:<br/>n(CO) = 4.32×10⁶ / 28.0 = 1.543×10⁵ mol<br/>n(CH₃OH) = 1.543×10⁵ mol (1:1 ratio)<br/>m = 1.543×10⁵ × 32.0 = 4.94×10⁶ g = <strong>4.94 tonnes (theoretical yield)</strong><br/><br/>% yield = (4.07 / 4.94) × 100 = <strong>82.4%</strong>'
       },
       terms: []
+    },
+    {
+      id: 'h-multistep',
+      type: 'heading',
+      data: { text: 'Multi-step Synthesis: Overall Yield', level: 2 }
+    },
+    {
+      id: 'list-multistep',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'In a multi-step synthesis each individual step has its own percentage yield below 100%.',
+          'The <strong>overall yield</strong> is calculated by multiplying the individual step yields together (expressed as decimals).',
+          'As the number of steps increases the overall yield decreases dramatically — even if each individual step is efficient.',
+          'Pharmaceutical synthesis often involves 10–20 steps, leading to very low overall yields (sometimes below 5%).',
+          'This is a key reason why drugs produced by multi-step synthesis are expensive to manufacture.',
+          'Maximising the yield of every step and minimising the number of steps are both important goals in synthetic chemistry.'
+        ]
+      }
+    },
+    {
+      id: 'eq-multistep',
+      type: 'equation',
+      data: {
+        html: 'Overall % yield = <span class="nb-frac"><span class="nb-num">% yield<sub>1</sub></span><span class="nb-den">100</span></span> × <span class="nb-frac"><span class="nb-num">% yield<sub>2</sub></span><span class="nb-den">100</span></span> × … × 100',
+        caption: 'Multiply all individual step yields (as decimals) together then multiply by 100'
+      }
+    },
+    {
+      id: 'callout-multistep-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Multi-step Synthesis Overall Yield',
+        text: '<strong>A pharmaceutical compound is synthesised in 3 steps with individual yields of 75%, 80% and 60%. Calculate the overall percentage yield.</strong><br/><br/>Overall % yield = (75/100) × (80/100) × (60/100) × 100<br/>= 0.75 × 0.80 × 0.60 × 100<br/>= <strong>36.0%</strong><br/><br/><em>Interpretation: Only 36% of the theoretical maximum product is obtained after all 3 steps — even though each individual step has a reasonable yield. This illustrates why multi-step pharmaceutical synthesis is costly and why reducing the number of steps is a key synthetic goal.</em>'
+      }
     },
     {
       id: 'callout-yield-warning',
@@ -76,6 +121,14 @@ export const note_chemistry_1_1_7 = {
         text: 'Atom Economy = (Molar mass of <em>desired product</em> / Sum of molar masses of <em>all products</em>) × 100<br/><br/>A 100% atom economy means ALL atoms from the reactants end up in the desired product. This is the "greenest" situation.'
       },
       terms: ['Atom economy']
+    },
+    {
+      id: 'eq-atom-economy',
+      type: 'equation',
+      data: {
+        html: '% atom economy = <span class="nb-frac"><span class="nb-num">M<sub>r</sub> of desired product</span><span class="nb-den">sum of M<sub>r</sub> of ALL products</span></span> × 100',
+        caption: 'Use the molar mass (Mᵣ) values from the balanced equation — not the masses used in the reaction'
+      }
     },
     {
       id: 'callout-atom-worked',
@@ -166,6 +219,28 @@ export const note_chemistry_1_1_7 = {
       terms: []
     },
     {
+      id: 'h-green',
+      type: 'heading',
+      data: { text: 'Green Chemistry and Sustainability', level: 2 }
+    },
+    {
+      id: 'list-green',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>Green chemistry</strong> aims to design chemical processes that reduce or eliminate hazardous substances and minimise waste at the source.',
+          '<strong>Atom economy</strong> is a core green chemistry metric — a higher atom economy means fewer atoms are wasted as unwanted by-products.',
+          'Less waste reduces costs for waste disposal and lowers environmental pollution (land, water, air).',
+          'Industrial chemists prefer <strong>addition reactions</strong> wherever possible (100% atom economy) over substitution or elimination routes.',
+          'If by-products cannot be avoided, processes are more sustainable if by-products have <strong>economic value</strong> — e.g. CaCl₂ sold as road de-icer in the Solvay process.',
+          '<strong>Catalytic processes</strong> can improve atom economy by providing alternative reaction pathways with fewer, less harmful by-products.',
+          'Reducing the number of synthetic steps lowers the overall waste generated and improves the overall yield.',
+          'Using <strong>renewable feedstocks</strong> and lower-energy reaction conditions further improves the sustainability of a synthesis.'
+        ]
+      }
+    },
+    {
       id: 'callout-industrial-worked',
       type: 'callout',
       data: {
@@ -186,10 +261,12 @@ export const note_chemistry_1_1_7 = {
       { id: 'c4', blockId: 'table-atom', prompt: 'Which type of reaction always has a 100% atom economy? Explain why.' },
       { id: 'c-ind', blockId: 'table-industrial', prompt: 'List five key factors that must be considered when evaluating the overall viability of an industrial process.' },
       { id: 'c-solvay', blockId: 'callout-solvay-combined', prompt: 'Starting from 75.0 kg CaCO₃: (a) calculate theoretical yield of Na₂CO₃, (b) find % yield if actual = 76.5 kg, (c) calculate atom economy. Equation: CaCO₃ + 2NaCl → Na₂CO₃ + CaCl₂.' },
-      { id: 'c-ethene', blockId: 'table-ethene-routes', prompt: 'Two routes to 1,2-dichloroethane: Route 1 is addition (CH₂=CH₂ + Cl₂), Route 2 is oxychlorination (adds H₂O as by-product). Which has higher atom economy and why?' }
+      { id: 'c-ethene', blockId: 'table-ethene-routes', prompt: 'Two routes to 1,2-dichloroethane: Route 1 is addition (CH₂=CH₂ + Cl₂), Route 2 is oxychlorination (adds H₂O as by-product). Which has higher atom economy and why?' },
+      { id: 'c-multistep', blockId: 'callout-multistep-worked', prompt: 'A pharmaceutical compound is made in 3 steps with yields of 75%, 80% and 60%. Calculate the overall percentage yield.' },
+      { id: 'c-green', blockId: 'list-green', prompt: 'Explain why a high atom economy is important for green chemistry and the sustainability of industrial processes.' }
     ],
-    summaryText: '% yield = (actual / theoretical) × 100. Theoretical yield is calculated via the 4-step method — never divide actual yield by starting mass. Yield < 100% due to reversible reactions, side-reactions, or purification losses. Atom economy = (Mᵣ desired product / ΣMᵣ all products) × 100. Addition = 100%. Substitution/elimination = 75–90%. Multi-step = often 20–50%. By-products can be sold to offset low atom economy. Solvay: 96.3% yield but 48.8% AE. Process selection balances Rate, Yield, Atom Economy, Cost, and Environmental impact.',
-    ready: false
+    summaryText: '% yield = (actual / theoretical) × 100. Theoretical yield is calculated via the 4-step method — never divide actual yield by starting mass. Yield < 100% due to: reversible reactions, side-reactions, purification losses, product lost on transfer, or insufficient reaction time. Multi-step yield: multiply individual yields as decimals (e.g. 0.75 × 0.80 × 0.60 × 100 = 36%). Atom economy = (Mᵣ desired product / ΣMᵣ all products) × 100. Addition = 100%; Substitution/elimination = 75–90%; Multi-step = often 20–50%. Green chemistry: high atom economy = less waste = more sustainable. By-products can be sold to offset low atom economy. Solvay: 96.3% yield but 48.8% AE. Process selection balances Rate, Yield, Atom Economy, Cost, and Environmental impact.',
+    ready: true
   },
   evidence: []
 };

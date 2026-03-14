@@ -8,7 +8,7 @@ export const note_chemistry_1_1_3 = {
     {
       id: 'objective',
       type: 'objective',
-      data: { text: 'Use chemical equations to calculate reacting masses using moles. Determine a formula or confirm an equation from experimental reacting masses.' },
+      data: { text: 'Use chemical equations to calculate reacting masses using moles. Determine a formula or confirm an equation from experimental reacting masses. Understand ppm as a measure of very small concentrations.' },
       terms: []
     },
     {
@@ -21,7 +21,7 @@ export const note_chemistry_1_1_3 = {
       id: 'list-method',
       type: 'list',
       data: {
-        style: 'ordered',
+        style: 'numbered',
         items: [
           'Calculate the <strong>molar masses (M)</strong> of the substance you are given AND the substance you need to find.',
           'Calculate the <strong>amount in moles (n)</strong> of the given substance using n = m/M.',
@@ -86,10 +86,17 @@ export const note_chemistry_1_1_3 = {
       terms: []
     },
     {
-      id: 'p-formula',
-      type: 'paragraph',
-      data: { text: 'If experimental masses are given, you can work backwards to find the mole ratio of the substances and therefore deduce the equation or formula of a compound.' },
-      terms: []
+      id: 'list-formula',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'If experimental masses of reactants and products are given, convert each to moles using n = m/M.',
+          'Divide all mole values by the <strong>smallest</strong> to get the simplest whole-number ratio.',
+          'This mole ratio gives the <strong>stoichiometric coefficients</strong> and so allows the equation (and formula) to be deduced.',
+          'This technique is the basis of the <em>empirical formula</em> method and of confirming balanced equations from lab data.'
+        ]
+      }
     },
     {
       id: 'callout-w3',
@@ -123,7 +130,7 @@ export const note_chemistry_1_1_3 = {
       data: {
         style: 'key',
         title: 'Definitions',
-        text: '<strong>Limiting reagent</strong>: the reactant that is <em>completely used up</em> first, which therefore determines the maximum amount of product. Any other reactants are present in <strong>excess</strong>.<br/><br/><strong>How to identify the limiting reagent:</strong><br/>1. Calculate the moles of each reactant from the data given.<br/>2. Find the mole ratio from the balanced equation.<br/>3. Determine which reactant would run out first by comparing what you <em>have</em> vs what you <em>need</em> from the ratio.'
+        text: '<strong>Limiting reagent</strong>: the reactant that is <em>completely used up</em> first — it determines the <strong>maximum amount of product</strong> that can form.<br/><br/><strong>Excess reagent</strong>: a reactant present in a greater amount than is needed; some remains unreacted after the reaction is complete.<br/><br/><strong>How to identify the limiting reagent:</strong><br/>• Calculate n (moles) of each reactant from the given data using n = m/M.<br/>• Use the mole ratio from the balanced equation to find how much of one reactant is needed to react with all of the other.<br/>• The reactant that would run out first (provides the <em>smaller</em> ratio quotient) is the <strong>limiting reagent</strong>.<br/>• Base all product calculations on the amount of the limiting reagent only.'
       },
       terms: ['Limiting reagent', 'Excess reagent']
     },
@@ -142,10 +149,47 @@ export const note_chemistry_1_1_3 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: 'Worked Example: S + Cl₂ → SCl₂ (Mass of product)',
-        text: '<strong>Equation:</strong> S(s) + Cl₂(g) → SCl₂(g)<br/><br/><strong>Given:</strong> 0.10 mol S and 0.394 mol Cl₂<br/><br/><strong>Step 1:</strong> Mole ratio S : Cl₂ = 1 : 4 (check balanced equation)<br/><strong>Step 2:</strong> To react all S, need: 4 × 0.10 = 0.40 mol Cl₂<br/>Available = 0.394 mol Cl₂ < 0.40 mol needed<br/>∴ <strong>Cl₂ is the limiting reagent</strong><br/><br/><strong>Mole ratio Cl₂ : SCl₂ = 1 : 1</strong><br/>n(SCl₂) = 0.394 mol<br/>m(SCl₂) = 0.394 × 135.2 = <strong>53.3 g</strong>'
+        title: 'Worked Example: N₂ + H₂ → NH₃ (Haber process — non-1:1 ratio)',
+        text: '<strong>Equation:</strong> N₂(g) + 3H₂(g) ⇌ 2NH₃(g)<br/><br/><strong>Given:</strong> 28.0 g N₂ and 8.0 g H₂<br/><br/><strong>Step 1 — Find moles of each reactant:</strong><br/>n(N₂) = 28.0 / 28.0 = 1.00 mol<br/>n(H₂) = 8.0 / 2.0 = 4.00 mol<br/><br/><strong>Step 2 — Mole ratio N₂ : H₂ = 1 : 3</strong><br/>To react all 1.00 mol N₂, need: 3 × 1.00 = 3.00 mol H₂<br/>Available = 4.00 mol H₂ → more than needed → H₂ is in <em>excess</em><br/>To react all 4.00 mol H₂, need: 4.00 ÷ 3 = 1.33 mol N₂<br/>Available = 1.00 mol N₂ → <strong>not enough → N₂ is the limiting reagent</strong><br/><br/><strong>Step 3 — Calculate mass of NH₃ formed:</strong><br/>Mole ratio N₂ : NH₃ = 1 : 2 → n(NH₃) = 2 × 1.00 = 2.00 mol<br/>M(NH₃) = 14.0 + (3 × 1.0) = 17.0 g mol⁻¹<br/>m(NH₃) = 2.00 × 17.0 = <strong>34.0 g</strong>'
       },
       terms: []
+    },
+    {
+      id: 'h-ppm',
+      type: 'heading',
+      data: { text: 'Parts Per Million (ppm)', level: 2 }
+    },
+    {
+      id: 'list-ppm',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>ppm</strong> is used to express very low concentrations, such as pollutants in water or trace gases in the atmosphere.',
+          '<strong>By mass (solution):</strong> ppm = mass of solute (mg) per 1 kg of solution — equivalently, ppm = (mass solute ÷ mass solution) × 10⁶.',
+          '<strong>By volume (gas):</strong> ppm = volume of gas ÷ total volume × 10⁶ — e.g. CO₂ at ~420 ppm in the atmosphere.',
+          '1 ppm by mass ≈ 1 mg kg⁻¹ ≈ 1 µg g⁻¹.',
+          'Can also be expressed as: ppm = (n of solute ÷ n total) × 10⁶ for molar fraction (gas mixtures).',
+          'Concentrations below ~1 ppm are sometimes reported in <strong>ppb</strong> (parts per billion = × 10⁹).'
+        ]
+      }
+    },
+    {
+      id: 'eq-ppm',
+      type: 'equation',
+      data: {
+        html: 'ppm = <span class="nb-frac"><span class="nb-num">mass of solute</span><span class="nb-den">mass of solution</span></span> × 10⁶',
+        caption: 'ppm by mass — masses in the same unit (e.g. both in g, or both in mg)'
+      }
+    },
+    {
+      id: 'callout-ppm-worked',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Examples: ppm',
+        text: '<strong>Q1: A river sample contains 3.5 mg of nitrate (NO₃⁻) in 1 kg of water. Express this as ppm.</strong><br/>ppm = (3.5 × 10⁻³ g) ÷ (1000 g) × 10⁶ = <strong>3.5 ppm</strong><br/><br/><strong>Q2: An atmospheric sample is 410 ppm CO₂ by volume. What volume of CO₂ is in 1.00 dm³ of air?</strong><br/>V(CO₂) = (410 / 10⁶) × 1.00 dm³ = <strong>4.10 × 10⁻⁴ dm³</strong><br/><br/><strong>Q3: Drinking water has a limit of 50 ppm nitrate. Convert to mg dm⁻³.</strong><br/>1 ppm = 1 mg per 1 kg water ≈ 1 mg per 1 dm³ (since ρ water ≈ 1 kg dm⁻³)<br/>50 ppm ≈ <strong>50 mg dm⁻³</strong>'
+      }
     }
   ],
   recall: {
@@ -154,13 +198,14 @@ export const note_chemistry_1_1_3 = {
       { id: 'c1', blockId: 'list-method', prompt: 'List the four steps for a reacting mass calculation.' },
       { id: 'c2', blockId: 'callout-w2', prompt: 'From the equation 2NH₃ + H₂SO₄ → (NH₄)₂SO₄, what is the mole ratio of NH₃ to (NH₄)₂SO₄?' },
       { id: 'c3', blockId: 'callout-w3', prompt: 'Explain how you would distinguish CuO from Cu₂O using reacting mass data.' },
-      { id: 'c4', blockId: 'callout-limiting-def', prompt: 'Define the terms limiting reagent and excess reagent. How do you identify which reagent is limiting?' },
+      { id: 'c4', blockId: 'callout-limiting-def', prompt: 'Define limiting reagent and excess reagent. How do you identify which is limiting when two reactant quantities are given?' },
       { id: 'c5', blockId: 'callout-limiting-w1', prompt: '3.2 g of Cu reacts with 0.40 mol HNO₃. Equation: Cu + 4HNO₃ → Cu(NO₃)₂ + 2H₂O + 2NO₂. Which is the limiting reagent? Show your working.' },
       { id: 'c6', blockId: 'callout-caco3', prompt: 'Calculate the mass of CaO formed from 25.0 g of CaCO₃. (Mᵣ: CaCO₃ = 100.1, CaO = 56.1)' },
-      { id: 'c7', blockId: 'callout-methane', prompt: 'What mass of water is produced when 32.0 g of methane burns completely? (Mᵣ: CH₄ = 16.0)' }
+      { id: 'c7', blockId: 'callout-limiting-w2', prompt: '28.0 g N₂ and 8.0 g H₂ react: N₂ + 3H₂ ⇌ 2NH₃. Which is the limiting reagent? Calculate the mass of NH₃ produced.' },
+      { id: 'c8', blockId: 'callout-ppm-worked', prompt: 'A water sample contains 3.5 mg NO₃⁻ per kg of water. Express this in ppm.' }
     ],
-    summaryText: '4-step method: (1) balanced equation, (2) n = m/M of known substance, (3) apply mole ratio from coefficients, (4) m = n×M of unknown. CaCO₃ → CaO + CO₂: 25g CaCO₃ → 14g CaO (1:1 ratio). CH₄ combustion: 32g CH₄ → 72g H₂O (1:2 ratio). Can also deduce equations from experimental reacting masses by converting to moles and finding the simplest whole-number ratio. Limiting reagent = runs out first; excess = more than needed.',
-    ready: false
+    summaryText: '4-step method: (1) balanced equation, (2) n = m/M of known, (3) apply mole ratio from coefficients, (4) m = n×M of unknown. Always identify limiting reagent when two reactant quantities given — base all product calcs on it. Can deduce equations from data by finding simplest mole ratio. ppm = (mass solute / mass solution) × 10⁶ — used for trace concentrations (pollutants, atmospheric gases). 1 ppm ≈ 1 mg kg⁻¹.',
+    ready: true
   },
   evidence: []
 };

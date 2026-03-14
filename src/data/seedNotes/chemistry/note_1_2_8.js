@@ -1,7 +1,7 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 2 · Subtopic 8
- * "Electronic configurations of ions"
- * Source: Pearson Edexcel IAL Chemistry — Section 2A.3–2A.4
+ * "Periodic trends in properties"
+ * Source: Pearson Edexcel IAL Chemistry — Section 2A.3–2A.5
  */
 export const note_chemistry_1_2_8 = {
   blocks: [
@@ -205,7 +205,7 @@ export const note_chemistry_1_2_8 = {
   <line x1="60" y1="195" x2="490" y2="195" stroke="#334155" stroke-width="2"/>
   <line x1="60" y1="25" x2="60" y2="195" stroke="#334155" stroke-width="2"/>
   <text transform="rotate(-90 16 115)" x="16" y="115" text-anchor="middle" fill="#475569" font-size="10">IE₁ / kJ mol⁻¹</text>
-  <text x="55" y="198" text-anchor="end" fill="#64748b" font-size="9">400</text>
+  <text x="55" y="202" text-anchor="end" fill="#64748b" font-size="9">400</text>
   <text x="55" y="162" text-anchor="end" fill="#64748b" font-size="9">700</text>
   <text x="55" y="122" text-anchor="end" fill="#64748b" font-size="9">1000</text>
   <text x="55" y="82" text-anchor="end" fill="#64748b" font-size="9">1300</text>
@@ -214,23 +214,23 @@ export const note_chemistry_1_2_8 = {
   <line x1="60" y1="122" x2="490" y2="122" stroke="#e2e8f0" stroke-width="1"/>
   <line x1="60" y1="82" x2="490" y2="82" stroke="#e2e8f0" stroke-width="1"/>
   <line x1="60" y1="42" x2="490" y2="42" stroke="#e2e8f0" stroke-width="1"/>
-  <polyline points="80,181 135,147 190,170 245,140 300,108 355,110 410,74 465,36" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <circle cx="80" cy="181" r="5" fill="#3b82f6"/>
-  <circle cx="135" cy="147" r="5" fill="#3b82f6"/>
-  <circle cx="190" cy="170" r="6" fill="#ef4444"/>
-  <circle cx="245" cy="140" r="5" fill="#3b82f6"/>
-  <circle cx="300" cy="108" r="5" fill="#3b82f6"/>
-  <circle cx="355" cy="110" r="6" fill="#ef4444"/>
-  <circle cx="410" cy="74" r="5" fill="#3b82f6"/>
-  <circle cx="465" cy="36" r="5" fill="#3b82f6"/>
-  <text x="80" y="176" text-anchor="middle" fill="#1e40af" font-size="8">496</text>
-  <text x="135" y="141" text-anchor="middle" fill="#1e40af" font-size="8">738</text>
-  <text x="190" y="179" text-anchor="middle" fill="#dc2626" font-size="8">577</text>
-  <text x="245" y="134" text-anchor="middle" fill="#1e40af" font-size="8">786</text>
-  <text x="300" y="102" text-anchor="middle" fill="#1e40af" font-size="8">1012</text>
-  <text x="355" y="119" text-anchor="middle" fill="#dc2626" font-size="8">1000</text>
-  <text x="410" y="68" text-anchor="middle" fill="#1e40af" font-size="8">1251</text>
-  <text x="465" y="30" text-anchor="middle" fill="#1e40af" font-size="8">1521</text>
+  <polyline points="80,189 135,157 190,178 245,151 300,120 355,122 410,89 465,53" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <circle cx="80" cy="189" r="5" fill="#3b82f6"/>
+  <circle cx="135" cy="157" r="5" fill="#3b82f6"/>
+  <circle cx="190" cy="178" r="6" fill="#ef4444"/>
+  <circle cx="245" cy="151" r="5" fill="#3b82f6"/>
+  <circle cx="300" cy="120" r="5" fill="#3b82f6"/>
+  <circle cx="355" cy="122" r="6" fill="#ef4444"/>
+  <circle cx="410" cy="89" r="5" fill="#3b82f6"/>
+  <circle cx="465" cy="53" r="5" fill="#3b82f6"/>
+  <text x="80" y="183" text-anchor="middle" fill="#1e40af" font-size="8">496</text>
+  <text x="135" y="151" text-anchor="middle" fill="#1e40af" font-size="8">738</text>
+  <text x="190" y="187" text-anchor="middle" fill="#dc2626" font-size="8">577</text>
+  <text x="245" y="145" text-anchor="middle" fill="#1e40af" font-size="8">786</text>
+  <text x="300" y="114" text-anchor="middle" fill="#1e40af" font-size="8">1012</text>
+  <text x="355" y="131" text-anchor="middle" fill="#dc2626" font-size="8">1000</text>
+  <text x="410" y="83" text-anchor="middle" fill="#1e40af" font-size="8">1251</text>
+  <text x="465" y="47" text-anchor="middle" fill="#1e40af" font-size="8">1521</text>
   <text x="80" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Na</text>
   <text x="135" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Mg</text>
   <text x="190" y="212" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">Al</text>
@@ -239,8 +239,8 @@ export const note_chemistry_1_2_8 = {
   <text x="355" y="212" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">S</text>
   <text x="410" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Cl</text>
   <text x="465" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Ar</text>
-  <text x="190" y="158" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ 3p orbital</text>
-  <text x="355" y="98" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ paired e⁻</text>
+  <text x="190" y="165" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ 3p orbital</text>
+  <text x="355" y="109" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ paired e⁻</text>
   <circle cx="78" cy="228" r="4" fill="#3b82f6"/><text x="86" y="232" fill="#1e40af" font-size="9">Normal increase</text>
   <circle cx="185" cy="228" r="4" fill="#ef4444"/><text x="193" y="232" fill="#dc2626" font-size="9">Anomalous dip</text>
 </svg>`
@@ -263,7 +263,9 @@ export const note_chemistry_1_2_8 = {
           '<strong>Radius types used:</strong> metallic radius (Na, Mg, Al) and covalent radius (Si, P, S, Cl) — these are directly comparable.',
           '<strong>Argon excluded:</strong> only a van der Waals radius; not comparable to metallic/covalent radii — do not include Ar in the trend.',
           '<strong>Explanation:</strong> Bonding electrons are in 3-level orbitals throughout; screened by the same inner electrons (shells 1 and 2) — constant shielding.',
-          'Nuclear charge increases steadily (Na: 11p⁺ → Cl: 17p⁺) → bonding electrons pulled progressively closer → atomic radius decreases.'
+          'Nuclear charge increases steadily (Na: 11p⁺ → Cl: 17p⁺) → bonding electrons pulled progressively closer → atomic radius decreases.',
+          '<strong>Approximate values (Period 3):</strong> Na 186 pm → Mg 160 pm → Al 143 pm → Si 117 pm → P 110 pm → S 104 pm → Cl 99 pm (smooth decrease)',
+          '<strong>Down a group:</strong> Atomic radius <em>increases</em> — each successive period adds a new principal quantum shell; increased inner-shell shielding outweighs the extra nuclear charge → outer electrons are at greater distance from the nucleus (e.g. Group 1: Li 152 pm → Na 186 pm → K 227 pm)'
         ]
       },
       terms: ['Atomic radius', 'Metallic radius', 'Covalent radius']
@@ -285,10 +287,22 @@ export const note_chemistry_1_2_8 = {
           '<strong>Argon excluded:</strong> forms no covalent bonds → electronegativity is undefined for Ar.',
           '<strong>Explanation:</strong> Bonding electrons always in the 3-level; shielded by the same inner shells (constant shielding).',
           'Increasing nuclear charge (Na → Cl) attracts the bonding pair progressively more strongly → electronegativity increases.',
-          'Trend mirrors the inverse of atomic radius: as atoms get smaller, bonding pair is held closer → higher electronegativity.'
+          'Trend mirrors the inverse of atomic radius: as atoms get smaller, bonding pair is held closer → higher electronegativity.',
+          '<strong>Pauling values (Period 3):</strong> Na = 0.93, Mg = 1.31, Al = 1.61, Si = 1.90, P = 2.19, S = 2.58, Cl = 3.16 (Ar: undefined — forms no covalent bonds)',
+          '<strong>Down a group:</strong> Electronegativity <em>decreases</em> — outer electrons are in higher principal shells (further from nucleus, more shielded) → nucleus attracts the bonding pair progressively less strongly (e.g. Group 7: F 4.0 → Cl 3.16 → Br 2.96 → I 2.66)'
         ]
       },
       terms: ['Electronegativity', 'Pauling scale']
+    },
+    {
+      id: 'callout-group-trends',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Trends Down a Group — Summary',
+        text: '<strong>Atomic radius ↑</strong> down a group: Each successive period adds a new principal quantum shell (n increases by 1). Extra inner electrons increase shielding significantly; despite increasing nuclear charge, the outer electron is at a progressively greater distance → radius increases. Example: Group 1: Li 152 pm → Na 186 pm → K 227 pm.<br/><br/><strong>First ionisation energy ↓</strong> down a group: Outer electron is in a higher shell (further from nucleus), shielded by more inner electrons → attraction to outer electron is progressively weaker → less energy needed to remove it → IE₁ decreases. Example: Group 1: Li 520 → Na 496 → K 419 kJ mol⁻¹.<br/><br/><strong>Electronegativity ↓</strong> down a group: Bonding pairs are in higher principal shells, further from nucleus, more shielded → nucleus attracts shared electrons less strongly. Example: Group 7: F 4.0 → Cl 3.16 → Br 2.96 → I 2.66.<br/><br/><em>Key rule: Down a group, trends are OPPOSITE to across-period trends. Dominant factor: increasing principal quantum number (n) of the outer shell — greater distance from nucleus and greater shielding of outer electrons.</em>'
+      },
+      terms: []
     },
     // ── Physical Properties of Period 3 ────────────────────────────────────────
     {
@@ -374,8 +388,7 @@ export const note_chemistry_1_2_8 = {
   <!-- Y-axis label -->
   <text transform="rotate(-90 18 110)" x="18" y="110" text-anchor="middle" fill="#475569" font-size="10">Melting point (°C)</text>
 
-  <!-- Y-axis ticks (schematic: label key values) -->
-  <text x="55" y="192" text-anchor="end" fill="#64748b" font-size="9">−200</text>
+  <!-- Y-axis ticks -->
   <text x="55" y="155" text-anchor="end" fill="#64748b" font-size="9">0</text>
   <text x="55" y="120" text-anchor="end" fill="#64748b" font-size="9">500</text>
   <text x="55" y="85" text-anchor="end" fill="#64748b" font-size="9">1000</text>
@@ -390,37 +403,37 @@ export const note_chemistry_1_2_8 = {
   <circle cx="90" cy="148" r="5" fill="#3b82f6"/>
   <text x="90" y="205" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na</text>
 
-  <!-- Mg: 650°C → y ≈ 104 -->
-  <circle cx="145" cy="104" r="5" fill="#3b82f6"/>
+  <!-- Mg: 650°C → y = 110 -->
+  <circle cx="145" cy="110" r="5" fill="#3b82f6"/>
   <text x="145" y="205" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Mg</text>
 
-  <!-- Al: 660°C → y ≈ 103 -->
-  <circle cx="200" cy="103" r="5" fill="#3b82f6"/>
+  <!-- Al: 660°C → y = 109 -->
+  <circle cx="200" cy="109" r="5" fill="#3b82f6"/>
   <text x="200" y="205" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Al</text>
 
-  <!-- Si: 1414°C → y ≈ 43 -->
-  <circle cx="255" cy="43" r="5" fill="#7c3aed"/>
+  <!-- Si: 1414°C → y = 56 -->
+  <circle cx="255" cy="56" r="5" fill="#7c3aed"/>
   <text x="255" y="205" text-anchor="middle" fill="#6d28d9" font-size="10" font-weight="bold">Si</text>
-  <text x="255" y="35" text-anchor="middle" fill="#6d28d9" font-size="9">Peak!</text>
+  <text x="255" y="46" text-anchor="middle" fill="#6d28d9" font-size="9">Peak!</text>
 
-  <!-- P: 44°C → y ≈ 151 -->
-  <circle cx="310" cy="151" r="5" fill="#16a34a"/>
+  <!-- P: 44°C → y = 152 -->
+  <circle cx="310" cy="152" r="5" fill="#16a34a"/>
   <text x="310" y="205" text-anchor="middle" fill="#15803d" font-size="10" font-weight="bold">P</text>
 
-  <!-- S: 119°C → y ≈ 145 -->
-  <circle cx="365" cy="145" r="5" fill="#16a34a"/>
+  <!-- S: 119°C → y = 147 -->
+  <circle cx="365" cy="147" r="5" fill="#16a34a"/>
   <text x="365" y="205" text-anchor="middle" fill="#15803d" font-size="10" font-weight="bold">S</text>
 
-  <!-- Cl: -101°C → y ≈ 170 -->
-  <circle cx="420" cy="170" r="5" fill="#16a34a"/>
+  <!-- Cl: -101°C → y = 162 -->
+  <circle cx="420" cy="162" r="5" fill="#16a34a"/>
   <text x="420" y="205" text-anchor="middle" fill="#15803d" font-size="10" font-weight="bold">Cl</text>
 
-  <!-- Ar: -189°C → y ≈ 191 -->
-  <circle cx="475" cy="190" r="5" fill="#16a34a"/>
+  <!-- Ar: -189°C → y = 168 -->
+  <circle cx="475" cy="168" r="5" fill="#16a34a"/>
   <text x="475" y="205" text-anchor="middle" fill="#15803d" font-size="10" font-weight="bold">Ar</text>
 
   <!-- Connecting line -->
-  <polyline points="90,148 145,104 200,103 255,43 310,151 365,145 420,170 475,190" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polyline points="90,148 145,110 200,109 255,56 310,152 365,147 420,162 475,168" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="6,3"/>
 
   <!-- Legend -->
   <circle cx="80" cy="220" r="5" fill="#3b82f6"/>
@@ -442,6 +455,38 @@ export const note_chemistry_1_2_8 = {
         text: '• <strong>Na, Mg, Al</strong>: giant metallic — conduct well. Conductivity increases Na→Al (more free e⁻).<br/>• <strong>Si</strong>: giant covalent — semiconductor. Conducts slightly; conductivity <em>increases</em> with temperature (more electrons gain enough energy to delocalise — opposite to metals).<br/>• <strong>P, S, Cl, Ar</strong>: simple molecular/monatomic — no free charges → do not conduct.'
       },
       terms: []
+    },
+    {
+      id: 'checklist-1-2-8',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'Write electronic configurations for main-group cations — remove from outermost subshell first', checked: false },
+          { text: 'Write electronic configurations for anions — add electrons to outermost subshell', checked: false },
+          { text: 'Identify isoelectronic species (e.g. Na⁺, Mg²⁺, Al³⁺, F⁻, O²⁻, N³⁻ — all isoelectronic with Ne: 1s²2s²2p⁶)', checked: false },
+          { text: 'Explain why 4s electrons are removed before 3d when transition metals form cations', checked: false },
+          { text: 'State the general increase in IE₁ across Period 3 (Na→Ar) and identify the two anomalous dips', checked: false },
+          { text: 'Explain IE₁ dip at Al: 3p orbital is higher energy and more shielded by 3s² than expected', checked: false },
+          { text: 'Explain IE₁ dip at S: paired electrons in 3pₓ² repel each other, lowering IE₁ below phosphorus', checked: false },
+          { text: 'State atomic radius decreases Na→Cl; give approximate values (Na 186 pm → Cl 99 pm)', checked: false },
+          { text: 'Explain why Ar is excluded from atomic radius and electronegativity trends', checked: false },
+          { text: 'State electronegativity increases Na→Cl; quote Pauling values (Na 0.93 → Cl 3.16)', checked: false },
+          { text: 'Describe trends down a group: radius ↑, IE₁ ↓, EN ↓ — explain each using shielding and shell number', checked: false },
+          { text: 'Classify Period 3 elements: Na/Mg/Al giant metallic; Si giant covalent; P/S/Cl simple molecular; Ar monatomic', checked: false },
+          { text: 'Explain mp trend Na < Mg ≈ Al: increasing delocalized electrons per atom + smaller ionic radius', checked: false },
+          { text: 'Explain Si highest mp in Period 3: giant covalent network, millions of strong Si–Si bonds must break', checked: false },
+          { text: 'Order P₄, S₈, Cl₂, Ar by mp and explain using London forces and molecular mass', checked: false }
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      data: {
+        text: 'Electronic configs of ions: cations remove from highest-energy subshell (transition metals: 4s out before 3d); anions add to outermost subshell. Isoelectronic species share the same config (Na⁺/Mg²⁺/Al³⁺/F⁻/Ne: all 1s²2s²2p⁶). Across Period 3 — IE₁: generally increases (constant shielding, increasing nuclear charge); dip at Al (3p higher in energy than 3s); dip at S (paired 3p electrons repel). Atomic radius: decreases Na→Cl (Na 186 pm → Cl 99 pm). Electronegativity: increases Na (0.93) → Cl (3.16). Down a group: radius ↑, IE₁ ↓, EN ↓ (increasing shell number and greater shielding). Physical properties: Na/Mg/Al giant metallic (mp: Na<Mg<Al, more delocalized e⁻); Si giant covalent (highest mp 1414°C); P₄/S₈/Cl₂ simple molecular — only London forces between molecules (mp: S₈ 119°C > P₄ 44°C > Cl₂ −101°C > Ar −189°C). Si semiconductor; P/S/Cl/Ar non-conductors.'
+      },
+      terms: []
     }
   ],
   recall: {
@@ -457,7 +502,7 @@ export const note_chemistry_1_2_8 = {
       { id: 'c8', blockId: 'callout-molecular-trend', prompt: 'Arrange P₄, S₈, Cl₂ and Ar in order of increasing melting point and explain in terms of London forces.' }
     ],
     summaryText: 'Electronic configs: cations — remove from highest energy subshell (transition metals: lose 4s before 3d); anions — add to outermost subshell. IE₁ increases Na→Ar (constant screening, increasing nuclear charge); dip at Al (3p higher than 3s, extra shielding by 3s²); dip at S (3pₓ² paired electrons repel). Atomic radius decreases Na→Cl (same 3-level orbitals, constant shielding, increasing nuclear charge); Ar excluded (van der Waals radius). Electronegativity increases Na→Cl (same explanation); Ar excluded (no covalent bonds). Physical properties: Na/Mg/Al giant metallic; Si giant covalent (highest mp 1414°C); P/S/Cl/Ar simple molecular (mp: S₈>P₄>Cl₂>Ar by molecule size). Si semiconductor. P/S/Cl/Ar non-conductors.',
-    ready: false
+    ready: true
   },
   evidence: []
 };

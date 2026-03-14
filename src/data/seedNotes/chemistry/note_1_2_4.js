@@ -82,9 +82,18 @@ export const note_chemistry_1_2_4 = {
       terms: []
     },
     {
-      id: 'p-period',
-      type: 'paragraph',
-      data: { text: '<strong>General trend:</strong> IE₁ increases across a period. Nuclear charge (Z) increases, adding electrons go into the <em>same</em> shell (same shielding and similar distance), so effective nuclear charge increases → stronger attraction → higher IE₁.' },
+      id: 'list-period',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          '<strong>General trend:</strong> IE₁ increases across a period (e.g. Period 3: Na to Ar).',
+          'Nuclear charge (Z) increases by 1 for each successive element.',
+          'Additional electrons enter the <strong>same quantum shell</strong> (n = 3 in Period 3), so shielding and distance from nucleus remain approximately constant.',
+          'Effective nuclear charge (Z<sub>eff</sub>) therefore increases → stronger attraction on outer electron → harder to remove → higher IE₁.',
+          'Two anomalous dips occur: at Group 3 (Al) and Group 6 (S) — see callout below.'
+        ]
+      },
       terms: []
     },
     {
@@ -98,15 +107,33 @@ export const note_chemistry_1_2_4 = {
       terms: []
     },
     {
+      id: 'svg-period3-ie',
+      type: 'svg',
+      data: {
+        caption: 'Figure: First ionisation energies across Period 3 (kJ mol⁻¹). Orange bars = anomalous dips at Al (Dip 1, Group 3) and S (Dip 2, Group 6).',
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 240" font-family="Arial,sans-serif"><text x="215" y="16" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">First Ionisation Energies — Period 3</text><line x1="50" y1="20" x2="50" y2="178" stroke="#374151" stroke-width="1.5"/><polygon points="50,18 46,28 54,28" fill="#374151"/><line x1="50" y1="178" x2="415" y2="178" stroke="#374151" stroke-width="1.5"/><text x="14" y="99" text-anchor="middle" font-size="10" fill="#374151" transform="rotate(-90,14,99)">IE&#x2081; / kJ mol&#x207B;&#xB9;</text><line x1="45" y1="136" x2="50" y2="136" stroke="#94a3b8"/><text x="43" y="139" text-anchor="end" font-size="9" fill="#64748b">500</text><line x1="45" y1="93" x2="50" y2="93" stroke="#94a3b8"/><text x="43" y="96" text-anchor="end" font-size="9" fill="#64748b">1000</text><line x1="45" y1="50" x2="50" y2="50" stroke="#94a3b8"/><text x="43" y="53" text-anchor="end" font-size="9" fill="#64748b">1500</text><line x1="50" y1="136" x2="415" y2="136" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/><line x1="50" y1="93" x2="415" y2="93" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/><line x1="50" y1="50" x2="415" y2="50" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/><rect x="55" y="136" width="32" height="42" fill="#3b82f6" rx="2" opacity="0.85"/><text x="71" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">Na</text><text x="71" y="203" text-anchor="middle" font-size="8" fill="#64748b">496</text><rect x="98" y="115" width="32" height="63" fill="#3b82f6" rx="2" opacity="0.85"/><text x="114" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">Mg</text><text x="114" y="203" text-anchor="middle" font-size="8" fill="#64748b">738</text><rect x="141" y="129" width="32" height="49" fill="#f59e0b" rx="2" opacity="0.9"/><text x="157" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">Al</text><text x="157" y="203" text-anchor="middle" font-size="8" fill="#64748b">577</text><text x="157" y="119" text-anchor="middle" font-size="8" font-weight="bold" fill="#b45309">&#x25BC; Dip 1</text><text x="157" y="127" text-anchor="middle" font-size="7" fill="#b45309">3p above 3s</text><rect x="184" y="111" width="32" height="67" fill="#3b82f6" rx="2" opacity="0.85"/><text x="200" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">Si</text><text x="200" y="203" text-anchor="middle" font-size="8" fill="#64748b">786</text><rect x="227" y="92" width="32" height="86" fill="#3b82f6" rx="2" opacity="0.85"/><text x="243" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">P</text><text x="243" y="203" text-anchor="middle" font-size="8" fill="#64748b">1012</text><rect x="270" y="93" width="32" height="85" fill="#f59e0b" rx="2" opacity="0.9"/><text x="286" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">S</text><text x="286" y="203" text-anchor="middle" font-size="8" fill="#64748b">1000</text><text x="286" y="79" text-anchor="middle" font-size="8" font-weight="bold" fill="#b45309">&#x25BC; Dip 2</text><text x="286" y="87" text-anchor="middle" font-size="7" fill="#b45309">paired e&#x207B; repulsion</text><rect x="313" y="72" width="32" height="106" fill="#3b82f6" rx="2" opacity="0.85"/><text x="329" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">Cl</text><text x="329" y="203" text-anchor="middle" font-size="8" fill="#64748b">1251</text><rect x="356" y="49" width="32" height="129" fill="#3b82f6" rx="2" opacity="0.85"/><text x="372" y="191" text-anchor="middle" font-size="11" font-weight="bold" fill="#1f2937">Ar</text><text x="372" y="203" text-anchor="middle" font-size="8" fill="#64748b">1521</text><rect x="55" y="217" width="12" height="9" rx="2" fill="#3b82f6" opacity="0.85"/><text x="71" y="226" font-size="9" fill="#374151">General trend (increases)</text><rect x="215" y="217" width="12" height="9" rx="2" fill="#f59e0b" opacity="0.9"/><text x="231" y="226" font-size="9" fill="#374151">Anomalous dip</text></svg>'
+      },
+      terms: []
+    },
+    {
       id: 'h-trend-group',
       type: 'heading',
       data: { text: 'Trend Down a Group', level: 2 },
       terms: []
     },
     {
-      id: 'p-group',
-      type: 'paragraph',
-      data: { text: 'IE₁ <strong>decreases</strong> down a group. Going down: the outer electron is in a shell that is further from the nucleus AND there are more inner shells providing greater shielding. Both effects outweigh the increase in nuclear charge → weaker attraction → lower IE₁.' },
+      id: 'list-group',
+      type: 'list',
+      data: {
+        style: 'bullet',
+        items: [
+          'IE₁ <strong>decreases</strong> down a group (e.g. Group 1: Li → Na → K → Rb → Cs).',
+          'Each successive element has its outer electron in a <strong>higher quantum shell</strong> (n increases) → greater distance from nucleus → weaker electrostatic attraction.',
+          'More inner electron shells → greater <strong>electron-electron repulsion</strong> experienced by the outer electron.',
+          'Both increased distance and increased repulsion outweigh the increase in nuclear charge going down the group.',
+          'Result: outer electron less tightly held → lower energy needed to remove it → lower IE₁.'
+        ]
+      },
       terms: []
     },
     {
@@ -155,7 +182,7 @@ export const note_chemistry_1_2_4 = {
       id: 'svg-na-successive-ie',
       type: 'svg',
       data: {
-        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 215" font-family="Arial,sans-serif"><text x="260" y="16" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Successive Ionisation Energies of Na (Z=11)</text><text x="260" y="30" text-anchor="middle" font-size="10" fill="#6b7280">Bar height = log10(IE / kJ mol-1). Big jumps reveal electron shell boundaries.</text><line x1="50" y1="38" x2="50" y2="168" stroke="#374151" stroke-width="1.5"/><line x1="50" y1="168" x2="515" y2="168" stroke="#374151" stroke-width="1.5"/><text x="14" y="110" text-anchor="middle" font-size="9" fill="#374151" transform="rotate(-90,14,110)">log10(IE)</text><rect x="52" y="138" width="28" height="30" fill="#3b82f6" rx="2"/><rect x="95" y="100" width="28" height="68" fill="#f59e0b" rx="2"/><rect x="138" y="92" width="28" height="76" fill="#f59e0b" rx="2"/><rect x="181" y="87" width="28" height="81" fill="#f59e0b" rx="2"/><rect x="224" y="81" width="28" height="87" fill="#f59e0b" rx="2"/><rect x="267" y="77" width="28" height="91" fill="#f59e0b" rx="2"/><rect x="310" y="74" width="28" height="94" fill="#f59e0b" rx="2"/><rect x="353" y="70" width="28" height="98" fill="#f59e0b" rx="2"/><rect x="396" y="68" width="28" height="100" fill="#f59e0b" rx="2"/><rect x="439" y="40" width="28" height="128" fill="#ef4444" rx="2"/><rect x="482" y="38" width="28" height="130" fill="#ef4444" rx="2"/><text x="66" y="183" text-anchor="middle" font-size="9" fill="#374151">1</text><text x="109" y="183" text-anchor="middle" font-size="9" fill="#374151">2</text><text x="152" y="183" text-anchor="middle" font-size="9" fill="#374151">3</text><text x="195" y="183" text-anchor="middle" font-size="9" fill="#374151">4</text><text x="238" y="183" text-anchor="middle" font-size="9" fill="#374151">5</text><text x="281" y="183" text-anchor="middle" font-size="9" fill="#374151">6</text><text x="324" y="183" text-anchor="middle" font-size="9" fill="#374151">7</text><text x="367" y="183" text-anchor="middle" font-size="9" fill="#374151">8</text><text x="410" y="183" text-anchor="middle" font-size="9" fill="#374151">9</text><text x="453" y="183" text-anchor="middle" font-size="9" fill="#374151">10</text><text x="496" y="183" text-anchor="middle" font-size="9" fill="#374151">11</text><text x="283" y="196" text-anchor="middle" font-size="10" fill="#374151">Ionisation number</text><text x="66" y="55" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">n=3</text><text x="246" y="55" text-anchor="middle" font-size="9" font-weight="bold" fill="#b45309">n=2 shell (8 electrons)</text><text x="467" y="38" text-anchor="middle" font-size="9" font-weight="bold" fill="#991b1b">n=1</text><line x1="80" y1="96" x2="95" y2="96" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/><text x="87" y="90" text-anchor="middle" font-size="8" fill="#1d4ed8">jump</text><line x1="424" y1="62" x2="439" y2="62" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/><text x="431" y="56" text-anchor="middle" font-size="8" fill="#991b1b">jump</text><rect x="52" y="200" width="12" height="8" fill="#3b82f6" rx="1"/><text x="67" y="208" font-size="9" fill="#374151">n=3 (outer)</text><rect x="135" y="200" width="12" height="8" fill="#f59e0b" rx="1"/><text x="150" y="208" font-size="9" fill="#374151">n=2 shell</text><rect x="215" y="200" width="12" height="8" fill="#ef4444" rx="1"/><text x="230" y="208" font-size="9" fill="#374151">n=1 (inner)</text></svg>',
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" font-family="Arial,sans-serif"><text x="260" y="16" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">Successive Ionisation Energies of Na (Z=11)</text><text x="260" y="30" text-anchor="middle" font-size="10" fill="#6b7280">Bar height = log10(IE / kJ mol-1). Big jumps reveal electron shell boundaries.</text><line x1="50" y1="38" x2="50" y2="168" stroke="#374151" stroke-width="1.5"/><line x1="50" y1="168" x2="515" y2="168" stroke="#374151" stroke-width="1.5"/><text x="14" y="110" text-anchor="middle" font-size="9" fill="#374151" transform="rotate(-90,14,110)">log10(IE)</text><rect x="52" y="138" width="28" height="30" fill="#3b82f6" rx="2"/><rect x="95" y="100" width="28" height="68" fill="#f59e0b" rx="2"/><rect x="138" y="92" width="28" height="76" fill="#f59e0b" rx="2"/><rect x="181" y="87" width="28" height="81" fill="#f59e0b" rx="2"/><rect x="224" y="81" width="28" height="87" fill="#f59e0b" rx="2"/><rect x="267" y="77" width="28" height="91" fill="#f59e0b" rx="2"/><rect x="310" y="74" width="28" height="94" fill="#f59e0b" rx="2"/><rect x="353" y="70" width="28" height="98" fill="#f59e0b" rx="2"/><rect x="396" y="68" width="28" height="100" fill="#f59e0b" rx="2"/><rect x="439" y="40" width="28" height="128" fill="#ef4444" rx="2"/><rect x="482" y="38" width="28" height="130" fill="#ef4444" rx="2"/><text x="66" y="183" text-anchor="middle" font-size="9" fill="#374151">1</text><text x="109" y="183" text-anchor="middle" font-size="9" fill="#374151">2</text><text x="152" y="183" text-anchor="middle" font-size="9" fill="#374151">3</text><text x="195" y="183" text-anchor="middle" font-size="9" fill="#374151">4</text><text x="238" y="183" text-anchor="middle" font-size="9" fill="#374151">5</text><text x="281" y="183" text-anchor="middle" font-size="9" fill="#374151">6</text><text x="324" y="183" text-anchor="middle" font-size="9" fill="#374151">7</text><text x="367" y="183" text-anchor="middle" font-size="9" fill="#374151">8</text><text x="410" y="183" text-anchor="middle" font-size="9" fill="#374151">9</text><text x="453" y="183" text-anchor="middle" font-size="9" fill="#374151">10</text><text x="496" y="183" text-anchor="middle" font-size="9" fill="#374151">11</text><text x="283" y="196" text-anchor="middle" font-size="10" fill="#374151">Ionisation number</text><text x="66" y="55" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">n=3</text><text x="246" y="55" text-anchor="middle" font-size="9" font-weight="bold" fill="#b45309">n=2 shell (8 electrons)</text><text x="467" y="38" text-anchor="middle" font-size="9" font-weight="bold" fill="#991b1b">n=1</text><line x1="80" y1="96" x2="95" y2="96" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/><text x="87" y="90" text-anchor="middle" font-size="8" fill="#1d4ed8">jump</text><line x1="424" y1="62" x2="439" y2="62" stroke="#374151" stroke-width="1.5" stroke-dasharray="3,2"/><text x="431" y="56" text-anchor="middle" font-size="8" fill="#991b1b">jump</text><rect x="52" y="200" width="12" height="8" fill="#3b82f6" rx="1"/><text x="67" y="208" font-size="9" fill="#374151">n=3 (outer)</text><rect x="135" y="200" width="12" height="8" fill="#f59e0b" rx="1"/><text x="150" y="208" font-size="9" fill="#374151">n=2 shell</text><rect x="215" y="200" width="12" height="8" fill="#ef4444" rx="1"/><text x="230" y="208" font-size="9" fill="#374151">n=1 (inner)</text></svg>',
         caption: 'Successive IEs of Na on a log scale. Blue = n=3 shell (1 electron). Amber = n=2 shell (8 electrons). Red = n=1 shell (2 electrons). The large jumps indicate shell boundaries.'
       },
       terms: []
@@ -233,6 +260,34 @@ export const note_chemistry_1_2_4 = {
         text: '<strong>Question:</strong> Which element in Period 3 has the highest second ionisation energy? Explain your answer.<br/><br/><strong>Answer: Sodium (Na)</strong><br/><br/>Explanation:<br/>Sodium has the configuration 1s² 2s² 2p⁶ 3s¹. The 1st IE removes the 3s¹ electron. For the 2nd IE, the electron must be removed from the 2p subshell — which is in a lower (inner) quantum shell, closer to the nucleus, with less shielding from above.<br/>This means the electron is much more tightly held than for any other Period 3 element (whose 2nd electron would still come from n=3).<br/>∴ Sodium has the greatest jump from 1st to 2nd IE, giving it the <strong>highest 2nd IE in Period 3</strong>.'
       },
       terms: []
+    },
+    {
+      id: 'checklist-1-2-4',
+      type: 'checklist',
+      data: {
+        items: [
+          { text: 'Define IE₁ and write the equation for element X with all gaseous state symbols', checked: false },
+          { text: 'State the three factors affecting IE and explain the effect of each (nuclear charge, radius, electron-electron repulsion)', checked: false },
+          { text: 'Explain why IE₁ generally increases across Period 3 (Z↑, same shell, Zeff↑)', checked: false },
+          { text: 'Explain Dip 1 (Mg→Al): Al has outer electron in higher-energy 3p subshell (above 3s)', checked: false },
+          { text: 'Explain Dip 2 (P→S): S\'s 4th 3p electron must pair — extra repulsion lowers IE₁', checked: false },
+          { text: 'Explain why IE₁ decreases down Group 1 (outer electron further away, more inner shells, outweighs Z↑)', checked: false },
+          { text: 'Distinguish "electron-electron repulsion" from "shielding" — use the more precise term', checked: false },
+          { text: 'Write equations for successive IEs: nth IE starts from E^(n−1)+(g)', checked: false },
+          { text: 'Interpret successive IE data: identify shell boundaries from large jumps', checked: false },
+          { text: 'Explain why IE₁ is roughly constant across Sc→Cu (extra 3d screens extra proton)', checked: false },
+          { text: 'State which Period 3 element has the highest 2nd IE (Na) and explain why (2nd e⁻ from inner n=2 shell)', checked: false }
+        ]
+      },
+      terms: []
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      data: {
+        text: 'IE₁ = energy to remove 1 mol e⁻ from 1 mol X(g); equation: X(g) → X⁺(g) + e⁻; units kJ mol⁻¹; all state symbols required. Three factors: ↑ nuclear charge → ↑ IE; ↑ atomic radius → ↓ IE; ↑ electron-electron repulsion → ↓ IE. Across Period 3: IE₁ generally increases (Z↑, all electrons added to same n=3 shell, Zeff rises). Dip 1 (Mg→Al): Al outer e⁻ in 3p (higher energy/further than 3s of Mg). Dip 2 (P→S): S has paired 3p e⁻ — extra repulsion makes it easier to remove. Down Group 1: IE₁ decreases (outer e⁻ in higher shell = further + more inner shells shielding; both outweigh extra protons). Successive IEs always increase; large jump = shell boundary (Na: huge jump IE₁→IE₂ confirming 1 outer e⁻). Transition metals Sc→Cu: roughly constant IE₁ (extra 3d e⁻ screens extra proton). Na has highest 2nd IE in Period 3 (2nd e⁻ removed from inner n=2 shell).'
+      },
+      terms: []
     }
   ],
   recall: {
@@ -249,7 +304,7 @@ export const note_chemistry_1_2_4 = {
       { id: 'c9', blockId: 'callout-ie-reactivity', prompt: 'How does IE\u2081 relate to the reactivity of Group 1 metals? Give IE\u2081 values for Li and Cs. State one limitation of using IE\u2081 alone to explain reactivity.' }
     ],
     summaryText: 'IE\u2081: energy to remove 1 mol e\u207b from 1 mol X(g). Units: kJ mol\u207b\u00b9. Equation: X(g) \u2192 X\u207a(g) + e\u207b \u2014 state symbols REQUIRED. Three factors: nuclear charge (+IE), atomic radius (\u2212IE), electron-electron repulsion (\u2212IE). H (1310), He (2370 \u2014 highest), Li drops to 520 (outer e\u207b in n=2, shielded). Successive IEs always increase; big jumps indicate shell boundaries. Across period: generally increases; dips at Group 3 (3p above 3s) and Group 6 (pairing repulsion). Down group: decreases. IE\u2082(Al) > IE\u2082(Mg) [higher Z, same 3s orbital]. IE\u2082(Al) > IE\u2082(Si) [Al removes from 3s, Si removes from 3p \u2014 subshell effect dominates]. Transition metals: roughly constant IE\u2081 Sc\u2192Cu (extra 3d screens extra proton); rise at Zn (extra proton, same 3d\u00b9\u2070). Always lose 4s first. IE\u2081 + reactivity: lower IE\u2081 \u2192 easier M\u207a formation \u2192 lower activation energy \u2192 more reactive (Li &lt; Na &lt; K &lt; Rb &lt; Cs).',
-    ready: false
+    ready: true
   },
   evidence: []
 };
