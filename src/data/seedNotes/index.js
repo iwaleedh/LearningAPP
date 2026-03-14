@@ -1162,5 +1162,7 @@ export const seedNotes = {
 };
 
 export function getSeedNote(noteId) {
-  return seedNotes[noteId];
+  // Strip 'note:' prefix if present for backwards compatibility
+  const key = noteId.startsWith('note:') ? noteId.slice(5) : noteId;
+  return seedNotes[key];
 }
