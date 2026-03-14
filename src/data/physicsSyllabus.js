@@ -8,6 +8,20 @@ export const physicsSyllabus = {
             title: 'Mechanics and Materials',
             topics: [
                 {
+                    id: 0,
+                    title: 'Working as a Physicist',
+                    subtopics: [
+                        'SI Units',
+                        'Practical Skills',
+                        'Estimating Physical Quantities',
+                        'Limitations of Measurements',
+                        'Scientific Communication',
+                        'Applications of Science',
+                        'The Scientific Community',
+                        'Science & Society'
+                    ],
+                },
+                {
                     id: 1,
                     title: 'Mechanics',
                     subtopics: [

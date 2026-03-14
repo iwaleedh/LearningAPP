@@ -385,6 +385,14 @@ import { note_chemistry_4_14_7 } from './chemistry/note_4_14_7.js';
 
 
 // WPH11 — Topic 1: Mechanics
+import { note_physics_1_0_0 } from './physics/note_1_0_0.js';
+import { note_physics_1_0_1 } from './physics/note_1_0_1.js';
+import { note_physics_1_0_2 } from './physics/note_1_0_2.js';
+import { note_physics_1_0_3 } from './physics/note_1_0_3.js';
+import { note_physics_1_0_4 } from './physics/note_1_0_4.js';
+import { note_physics_1_0_5 } from './physics/note_1_0_5.js';
+import { note_physics_1_0_6 } from './physics/note_1_0_6.js';
+import { note_physics_1_0_7 } from './physics/note_1_0_7.js';
 import { note_physics_1_1_0 } from './physics/note_1_1_0.js';
 import { note_physics_1_1_1 } from './physics/note_1_1_1.js';
 import { note_physics_1_1_2 } from './physics/note_1_1_2.js';
@@ -997,7 +1005,15 @@ export const seedNotes = {
     'chemistry:5:20:6': note_chemistry_5_20_6,
 
     // WPH11 — Topic 1: Mechanics
-    'physics:1:1:0': note_physics_1_1_0,
+      'physics:1:0:0': note_physics_1_0_0,
+  'physics:1:0:1': note_physics_1_0_1,
+  'physics:1:0:2': note_physics_1_0_2,
+  'physics:1:0:3': note_physics_1_0_3,
+  'physics:1:0:4': note_physics_1_0_4,
+  'physics:1:0:5': note_physics_1_0_5,
+  'physics:1:0:6': note_physics_1_0_6,
+  'physics:1:0:7': note_physics_1_0_7,
+  'physics:1:1:0': note_physics_1_1_0,
     'physics:1:1:1': note_physics_1_1_1,
     'physics:1:1:2': note_physics_1_1_2,
     'physics:1:1:3': note_physics_1_1_3,
