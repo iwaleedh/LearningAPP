@@ -1,0 +1,38 @@
+Edexcel A Level Maths: Pure Revision Notes
+Particular Solutions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 23 June 2025
+Did this video help you? Yes No
+Particular solutions
+What is a particular solution?
+Help me understand
+Ensure you are familiar with GeneralSolutions first
+With extra information, the constant of integration, c, can
+be found
+This means the particularsolution (from the family of
+solutions) can be found
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+What is a boundary condition and
+an initial condition?
+A boundary condition is a piece of extra information that
+lets you find the particular solution
+For example knowing y = 4 when x = 0 in the
+preceding example
+In a model this could be a particle coming to rest after
+a certain time, ie v = 0 at time t
+Differential equations are used in modelling, experiments
+and real-life situations
+A boundary condition is often called an initialcondition
+when it gives the situation at the start of the model or
+experiment
+This is often linked to time, so t = 0
+It is possible to have two boundary conditions
+eg a particle initially at rest has velocity, v = 0 and
+acceleration, a = 0 at time, t = 0
+for a second order differential equation you need
+two boundary conditions to find the particular
+solution

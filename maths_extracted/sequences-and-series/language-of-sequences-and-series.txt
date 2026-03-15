@@ -1,0 +1,42 @@
+Edexcel A Level Maths: Pure Revision Notes
+Language of Sequences &
+Series
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+Did this video help you? Yes No
+Language of sequences &
+series
+Help me understand
+What is a sequence?
+A sequence is an ordered set of numbers with a rule for
+finding all the numbers in the sequence
+The numbers in a sequence are called terms
+Stuck on something?
+The terms of a sequence are often referred to by letters
+with a subscript Ask questions and get help with
+exactly what you're revising.
+Got it
+What is a series?
+You get a series by summing up the terms in a sequence
+We use the notation S to refer to the sum of the first n
+n
+terms in the series
+i.e. S =u + u + u + … + u
+n 1 2 3 n
+What are increasing, decreasing
+and periodic sequences?
+A sequence is increasing if u > u for all positive
+n+1 n
+integers n
+i.e. if every term is greater than the term before it
+A sequence is decreasing if u < u for all positive
+n+1 n
+integers n
+i.e. if every term is less than the term before it
+A sequence is periodic if the terms repeat in a cycle
+The order (or period) of a periodic sequence is the
+number of terms in each repeating cycle
+Examiner Tips and Tricks
+Look out for sequences defined by trigonometric functions –
+this can be a way of 'hiding' a periodic function.

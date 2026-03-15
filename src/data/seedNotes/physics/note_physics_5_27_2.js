@@ -1,61 +1,28 @@
 export const note_physics_5_27_2 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Standard Candles" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Define a standard candle; explain how Cepheid variable stars are used as standard candles to measure large distances; apply the inverse square law F = L/(4πd²) to calculate distance from luminosity and flux; describe Type Ia supernovae as standard candles" } },
     { id: 'head-1', type: 'heading', data: { text: "Standard Candles", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Standard Candles will be updated." } },,
-    {
-      "id": "svg-gen-27-1-1",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#fef9e7" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Hertzsprung-Russell (HR) Diagram</text>
-  <line x1="50" y1="170" x2="350" y2="170" stroke="#333" stroke-width="2"/>
-  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="2"/>
-  <path d="M 80 40 L 320 160" stroke="#bdc3c7" stroke-width="20" stroke-linecap="round" opacity="0.5"/>
-  <circle cx="100" cy="50" r="6" fill="#3498db"/>
-  <circle cx="150" cy="80" r="4" fill="#ecf0f1" stroke="#333"/>
-  <circle cx="200" cy="110" r="5" fill="#f1c40f"/>
-  <circle cx="250" cy="130" r="4" fill="#e67e22"/>
-  <circle cx="300" cy="150" r="3" fill="#e74c3c"/>
-  <circle cx="300" cy="50" r="12" fill="#e74c3c"/>
-  <circle cx="100" cy="150" r="2" fill="#3498db"/>
-  <text x="315" y="45" font-family="sans-serif" font-size="10" fill="#c0392b">Red Giants</text>
-  <text x="200" y="100" font-family="sans-serif" font-size="10" fill="#333">Main Sequence</text>
-  <text x="70" y="165" font-family="sans-serif" font-size="10" fill="#2980b9">White Dwarfs</text>
-  <text x="20" y="100" font-family="sans-serif" font-size="12" transform="rotate(-90 20 100)" text-anchor="middle">Luminosity</text>
-  <text x="200" y="190" font-family="sans-serif" font-size="12" text-anchor="middle">Temperature (Decreasing →)</text>
-</svg>`,
-        "caption": "Diagram demonstrating concepts in Topic 27"
-      }
-    },
-    {
-      "id": "svg-gen-27-1-2",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#eef2f5" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Parallax &amp; Distance</text>
-  <circle cx="200" cy="100" r="8" fill="#f1c40f"/>
-  <text x="200" y="85" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#333">Sun</text>
-  <ellipse cx="200" cy="100" rx="60" ry="15" fill="none" stroke="#7f8c8d" stroke-dasharray="4,4"/>
-  <circle cx="140" cy="100" r="4" fill="#3498db"/>
-  <circle cx="260" cy="100" r="4" fill="#3498db"/>
-  <circle cx="200" cy="170" r="3" fill="#e74c3c"/>
-  <line x1="140" y1="100" x2="200" y2="170" stroke="#95a5a6" stroke-width="1"/>
-  <line x1="260" y1="100" x2="200" y2="170" stroke="#95a5a6" stroke-width="1"/>
-  <line x1="200" y1="100" x2="200" y2="170" stroke="#34495e" stroke-width="1" stroke-dasharray="2,2"/>
-  <path d="M 195 160 Q 200 155 205 160" fill="none" stroke="#e74c3c" stroke-width="1"/>
-  <text x="210" y="155" font-family="sans-serif" font-size="10" fill="#e74c3c">p</text>
-  <text x="200" y="185" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#333">Nearby Star</text>
-</svg>`,
-        "caption": "Further illustration for Topic 27"
-      }
-    }
-  
-
+    { id: 'para-2', type: 'paragraph', data: { text: "When the parallax method fails for distant stars (d > ~100 pc), astronomers use objects of known luminosity to measure distance. A standard candle is any object whose intrinsic luminosity (total power output, in watts) is known or can be determined independently of distance. By measuring the apparent brightness (flux, in W m⁻²) at Earth and comparing with the known luminosity, the distance can be calculated using the inverse square law. Two key types of standard candle are Cepheid variable stars (for distances up to ~50 Mpc) and Type Ia supernovae (for cosmological distances)." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Luminosity and Flux Luminosity L (watts) is the total power radiated by a star in all directions. Flux F (W m⁻²) is the power received per unit area at the observer's location. For a source radiating isotropically, the power spreads uniformly over a sphere of radius d: F = L / (4πd²). This is the inverse square law for light. Rearranging: d = √(L / (4πF)). To use this: measure F (apparent brightness) with a photometer or CCD camera; know L (from the object being a known standard candle); calculate d." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="165" fill="#0a0a1a"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8f9fa" text-anchor="middle">Inverse Square Law: F = L / (4&#960;d&#178;)</text><circle cx="90" cy="90" r="14" fill="#fab005"/><text x="90" y="118" font-family="sans-serif" font-size="9" fill="#fab005" text-anchor="middle">Star (L W)</text><circle cx="90" cy="90" r="45" fill="none" stroke="#fab005" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/><circle cx="90" cy="90" r="80" fill="none" stroke="#fab005" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/><circle cx="200" cy="90" r="4" fill="#74c0fc"/><text x="200" y="108" font-family="sans-serif" font-size="8" fill="#74c0fc" text-anchor="middle">Observer</text><line x1="90" y1="90" x2="200" y2="90" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,2"/><text x="145" y="82" font-family="sans-serif" font-size="8" fill="#adb5bd" text-anchor="middle">d</text><text x="265" y="70" font-family="sans-serif" font-size="10" fill="#f8f9fa">F = L / (4&#960;d&#178;)</text><text x="265" y="88" font-family="sans-serif" font-size="10" fill="#adb5bd">F = flux (W m&#8722;&#178;)</text><text x="265" y="104" font-family="sans-serif" font-size="10" fill="#adb5bd">L = luminosity (W)</text><text x="265" y="120" font-family="sans-serif" font-size="10" fill="#adb5bd">d = distance (m)</text><text x="200" y="150" font-family="sans-serif" font-size="9" fill="#adb5bd" text-anchor="middle">F &#8733; 1/d&#178; &#8594; double distance &#8594; flux decreases by factor 4</text></svg>', caption: 'Inverse square law: flux F = L/(4πd²); power spreads over sphere of radius d. Measure F, know L → calculate d.' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Cepheid Variable Stars Cepheid variables are giant pulsating stars that periodically expand and contract, causing their luminosity to oscillate with a regular period ranging from 1 to 50 days. Henrietta Leavitt (1908) discovered that there is a precise period-luminosity relationship: longer period → greater luminosity. By measuring the pulsation period (from the light curve — apparent brightness vs time), the luminosity L is known. Then measuring the flux F gives the distance via d = √(L / (4πF)). Cepheids are bright enough to be seen in nearby galaxies up to ~50 Mpc away." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#0a0a1a"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8f9fa" text-anchor="middle">Cepheid Variable: Period-Luminosity Relation</text><line x1="30" y1="140" x2="370" y2="140" stroke="#adb5bd" stroke-width="1.5"/><line x1="30" y1="140" x2="30" y2="30" stroke="#adb5bd" stroke-width="1.5"/><text x="200" y="158" font-family="sans-serif" font-size="10" fill="#adb5bd" text-anchor="middle">Period (days)</text><text x="14" y="88" font-family="sans-serif" font-size="10" fill="#adb5bd" text-anchor="middle" transform="rotate(-90 14,88)">L (log)</text><path d="M 30 130 Q 100 110 200 80 Q 300 55 370 40" stroke="#fab005" stroke-width="2.5" fill="none"/><circle cx="80" cy="122" r="3" fill="#fab005"/><circle cx="130" cy="108" r="3" fill="#fab005"/><circle cx="180" cy="90" r="3" fill="#fab005"/><circle cx="240" cy="70" r="3" fill="#fab005"/><circle cx="310" cy="50" r="3" fill="#fab005"/><text x="350" y="36" font-family="sans-serif" font-size="9" fill="#fab005">L</text><line x1="180" y1="140" x2="180" y2="90" stroke="#74c0fc" stroke-width="1.5" stroke-dasharray="3,2"/><line x1="30" y1="90" x2="180" y2="90" stroke="#74c0fc" stroke-width="1.5" stroke-dasharray="3,2"/><text x="180" y="152" font-family="sans-serif" font-size="8" fill="#74c0fc" text-anchor="middle">Measure T</text><text x="50" y="90" font-family="sans-serif" font-size="8" fill="#74c0fc">&#8594; read L</text></svg>', caption: 'Cepheid period-luminosity relation: measure pulsation period → read off luminosity → then use F = L/(4πd²) to find distance.' } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Type Ia Supernovae For distances beyond ~50 Mpc (where Cepheids are too faint to resolve individually), Type Ia supernovae are used. A Type Ia supernova occurs when a white dwarf in a binary system accretes mass from its companion until it reaches a critical mass (the Chandrasekhar limit ≈ 1.44 M_Sun) and explodes. Because all Type Ia supernovae explode at the same critical mass, they all have approximately the same peak luminosity (L ≈ 4 × 10³⁶ W). Measuring the peak flux F and using d = √(L/(4πF)) gives the distance. Type Ia supernovae are visible across billions of parsecs — it was their use in 1998 that led to the discovery of the accelerating expansion of the universe." } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Worked Example A Cepheid variable in a nearby galaxy has luminosity L = 2.0 × 10³⁰ W. It appears with flux F = 1.5 × 10⁻¹⁴ W m⁻². Find the distance. d = √(L / (4πF)) = √(2.0 × 10³⁰ / (4π × 1.5 × 10⁻¹⁴)) = √(2.0 × 10³⁰ / (1.885 × 10⁻¹³)) = √(1.06 × 10⁴³) = 3.26 × 10²¹ m. Converting: 3.26 × 10²¹ / (3.09 × 10¹⁶) ≈ 105 500 pc ≈ 105 kpc ≈ 0.11 Mpc." } },
+    { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 155" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="155" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Standard Candle Method Summary</text><rect x="15" y="28" width="90" height="115" rx="5" fill="#e7f5ff" stroke="#339af0" stroke-width="2"/><text x="60" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1864ab" text-anchor="middle">Step 1</text><text x="60" y="66" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">Identify</text><text x="60" y="80" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">standard</text><text x="60" y="94" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">candle</text><text x="60" y="108" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">Know L</text><rect x="115" y="28" width="90" height="115" rx="5" fill="#fff3bf" stroke="#fab005" stroke-width="2"/><text x="160" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#e67700" text-anchor="middle">Step 2</text><text x="160" y="66" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">Measure</text><text x="160" y="80" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">apparent</text><text x="160" y="94" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">brightness</text><text x="160" y="108" font-family="sans-serif" font-size="9" fill="#e67700" text-anchor="middle">Measure F</text><rect x="215" y="28" width="90" height="115" rx="5" fill="#d3f9d8" stroke="#40c057" stroke-width="2"/><text x="260" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#2b8a3e" text-anchor="middle">Step 3</text><text x="260" y="66" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">Apply</text><text x="260" y="80" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">inverse</text><text x="260" y="94" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">square law</text><text x="260" y="108" font-family="sans-serif" font-size="9" fill="#2b8a3e" text-anchor="middle">d=&#8730;(L/4&#960;F)</text><rect x="315" y="28" width="70" height="115" rx="5" fill="#ffe3e3" stroke="#fa5252" stroke-width="2"/><text x="350" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#c92a2a" text-anchor="middle">Result</text><text x="350" y="70" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">Distance</text><text x="350" y="84" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">d in</text><text x="350" y="98" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">metres</text><text x="350" y="112" font-family="sans-serif" font-size="9" fill="#212529" text-anchor="middle">or pc</text></svg>', caption: 'Standard candle method: (1) identify candle with known L, (2) measure flux F, (3) apply d = √(L/4πF).' } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Formula', text: 'F = L / (4πd²) → d = √(L / (4πF)). F = flux (W m⁻²); L = luminosity (W); d = distance (m). Cepheid variables: measure period → know L (period-luminosity relation); measure F → calculate d. Range: up to ~50 Mpc. Type Ia supernovae: same peak L ≈ 4×10³⁶ W (Chandrasekhar limit); measure peak F → d. Range: billions of parsecs.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "State the inverse square law for flux: F = L/(4πd²), and rearrange to find distance d", checked: false },
+      { text: "Explain how Cepheid variables are used as standard candles, including the role of the period-luminosity relationship", checked: false },
+      { text: "Calculate a stellar distance given the luminosity and measured flux of a standard candle", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Standard candle: object with known luminosity L. Inverse square law: F = L/(4πd²) → d = √(L/4πF). Cepheid variables: longer pulsation period → greater L (period-luminosity relation); useful up to ~50 Mpc. Type Ia supernovae: explode at Chandrasekhar mass (~1.44 M_Sun) → same peak L ≈ 4×10³⁶ W; useful to cosmological distances. Evidence for accelerating expansion (1998) came from Type Ia supernovae." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Standard Candles' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'State the inverse square law for flux. Define luminosity and flux. How is distance found from these quantities?' },
+    { id: 'cue-2', blockId: 'para-4', prompt: 'How are Cepheid variables used as standard candles? What relationship allows the luminosity to be determined?' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'A star has luminosity 2.0×10³⁰ W and measured flux 1.5×10⁻¹⁴ W m⁻². Calculate the distance in metres.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

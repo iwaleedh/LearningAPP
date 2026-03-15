@@ -1,0 +1,51 @@
+Edexcel A Level Maths: Pure Revision Notes
+Chain Rule
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+07:15 Help me understand
+Did this video help you? Yes No
+Chain rule
+What is the chain rule?
+The chain rule is a formula that allows you to differentiate
+composite functions
+If y is a function of u, and u is a function of x, then the chain
+rule tells us that:
+dy dy du
+= ×
+dx du dx
+Note that because u is a function of x, y is also a function
+of x
+In function notation, if y=f(g(x)) then the chain rule can
+be written as:
+dy
+=f'(g(x))g'(x)
+dx
+This allows us to differentiate more complicated expressions:
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+What are the special cases of the
+chain rule?
+It allows us to differentiate a function raised to a power:
+d
+((f(x)n)=n(f(x))n−1f'(x)
+dx
+It allows us to differentiate functions that are not given in
+the form y= f(x):
+dy 1
+=
+dx dx
+dy
+There is a useful case which is used to integrate certain
+functions:
+d f'(x)
+(ln(f(x))=
+dx f(x)
+Examiner Tips and Tricks
+The chain rule formulae are not in the exam formulae
+booklet – you have to know them.
+When using the chain rule be sure to keep your functions
+straight (ie which function is y and which is u, or which is f
+and which is g).

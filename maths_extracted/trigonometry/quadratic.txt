@@ -1,0 +1,40 @@
+Edexcel A Level Maths: Pure Revision Notes
+Quadratic Trigonometric
+Equations
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 16 February 2026
+Did this video help you? Yes No
+Quadratic trigonometric
+equations
+Help me understand
+How do I solve quadratic
+trigonometric equations?
+If an equation involves sin2θ or cos2θ then it is a quadratic
+trigonometric equation
+These can be solved by factorising and/or using
+trigonometric identities (see Trigonometry – Simple
+Identities)
+As a quadratic can result in two solutions, you will need to
+consider whether each solution exists and then find all
+solutions within a given interval for each
+You may be asked to use degrees or radians to solve
+trigonometric equations
+Make sure your calculator is in the correct mode
+Remember common angles
+90° is ½π radians Stuck on something?
+180° is π radians Ask questions and get help with
+270° is 3π/2 radians
+exactly what you're revising.
+360° is 2π radians
+Got it
+Examiner Tips and Tricks
+Sketch the appropriate sin, cos, tan graph to ensure you
+find ALL solutions within the given interval, and be super-
+careful if you get a negative solution but have a positive
+interval.
+For example, for an equation, in the interval 0° ≤ x ≤ 360°,
+with solution sin x = -¼ then sin-1(-¼) = -14.5 (to 1d.p.),
+which is not between 0 and 360 – by sketching the graph
+you’ll be able to spot the two solutions will be 180 + 14.5
+and 360 - 14.5.

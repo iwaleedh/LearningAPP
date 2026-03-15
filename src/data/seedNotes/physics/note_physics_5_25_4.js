@@ -1,53 +1,29 @@
 export const note_physics_5_25_4 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Core Practical 14: Investigating Gas Pressure & Volume" } },
-    { id: 'head-1', type: 'heading', data: { text: "Core Practical 14: Investigating Gas Pressure & Volume", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Core Practical 14: Investigating Gas Pressure & Volume will be updated." } },,
-    {
-      "id": "svg-gen-25-2-1",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#f0edf6" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Ideal Gas Particles</text>
-  <rect x="100" y="40" width="200" height="120" fill="none" stroke="#2c3e50" stroke-width="3"/>
-  <circle cx="150" cy="80" r="6" fill="#e74c3c"/>
-  <line x1="150" y1="80" x2="170" y2="90" stroke="#c0392b" stroke-width="2"/>
-  <circle cx="250" cy="120" r="6" fill="#e74c3c"/>
-  <line x1="250" y1="120" x2="220" y2="100" stroke="#c0392b" stroke-width="2"/>
-  <circle cx="200" cy="60" r="6" fill="#e74c3c"/>
-  <line x1="200" y1="60" x2="180" y2="45" stroke="#c0392b" stroke-width="2"/>
-  <circle cx="120" cy="140" r="6" fill="#e74c3c"/>
-  <line x1="120" y1="140" x2="150" y2="150" stroke="#c0392b" stroke-width="2"/>
-  <circle cx="280" cy="70" r="6" fill="#e74c3c"/>
-  <line x1="280" y1="70" x2="295" y2="60" stroke="#c0392b" stroke-width="2"/>
-</svg>`,
-        "caption": "Diagram demonstrating concepts in Topic 25"
-      }
-    },
-    {
-      "id": "svg-gen-25-2-2",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#fff9f0" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Maxwell-Boltzmann Distribution</text>
-  <line x1="50" y1="170" x2="350" y2="170" stroke="#333" stroke-width="2"/>
-  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="2"/>
-  <path d="M 50 170 Q 100 40 150 100 T 300 165" fill="none" stroke="#2980b9" stroke-width="3"/>
-  <path d="M 50 170 Q 150 20 200 110 T 350 168" fill="none" stroke="#e67e22" stroke-width="3"/>
-  <text x="100" y="80" font-family="sans-serif" font-size="10" fill="#2980b9">Lower T</text>
-  <text x="220" y="100" font-family="sans-serif" font-size="10" fill="#e67e22">Higher T</text>
-  <text x="20" y="100" font-family="sans-serif" font-size="12" transform="rotate(-90 20 100)" text-anchor="middle">Number of Molecules</text>
-  <text x="200" y="190" font-family="sans-serif" font-size="12" text-anchor="middle">Kinetic Energy / Speed</text>
-</svg>`,
-        "caption": "Further illustration for Topic 25"
-      }
-    }
-  
-
+    { id: 'obj-1', type: 'objective', data: { text: "Describe the experimental procedure for Core Practical 14: investigating the relationship between the pressure and volume of a gas at constant temperature (Boyle's Law); plot p vs 1/V to verify pV = constant; identify sources of error" } },
+    { id: 'head-1', type: 'heading', data: { text: "Core Practical 14: Investigating Gas Pressure & Volume (Boyle's Law)", level: 2 } },
+    { id: 'para-2', type: 'paragraph', data: { text: "Boyle's Law states that for a fixed mass of an ideal gas at constant temperature, the pressure is inversely proportional to the volume: p ∝ 1/V, or equivalently pV = constant. This practical investigates this relationship by measuring the pressure of a trapped column of gas as its volume is changed, while keeping temperature constant. The results are used to verify the inverse proportionality by plotting p against 1/V and checking for a straight line through the origin." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Equipment A sealed column of air trapped in a calibrated tube (often a Boyle's Law apparatus with a piston and Bourdon pressure gauge, or a glass syringe with a pressure sensor). The volume is varied by compressing or expanding the piston. The pressure is read directly from the gauge or pressure sensor. Vernier callipers or the volume scale on the syringe. Oil may be used to seal the gas and provide a smooth compression. Temperature is kept constant by performing measurements quickly or by using a thermostat bath." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Boyle\'s Law Apparatus</text><rect x="100" y="50" width="200" height="80" rx="4" fill="none" stroke="#495057" stroke-width="2"/><rect x="100" y="50" width="80" height="80" fill="#e7f5ff" stroke="#339af0" stroke-width="1"/><text x="140" y="93" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">Gas (V)</text><rect x="175" y="55" width="10" height="70" fill="#868e96" stroke="#495057" stroke-width="1"/><text x="180" y="45" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Piston</text><line x1="185" y1="90" x2="250" y2="90" stroke="#495057" stroke-width="2"/><polygon points="250,90 242,85 242,95" fill="#495057"/><text x="270" y="75" font-family="sans-serif" font-size="10" fill="#495057">Pressure</text><text x="270" y="88" font-family="sans-serif" font-size="10" fill="#495057">sensor</text><text x="270" y="102" font-family="sans-serif" font-size="10" fill="#495057">or gauge</text><text x="140" y="115" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">p &#8593; as V &#8595;</text><text x="200" y="150" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Push piston in &#8594; volume decreases &#8594; pressure increases</text><text x="200" y="165" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Temperature held constant throughout</text></svg>', caption: 'Boyle\'s Law apparatus: gas compressed by piston; pressure measured by sensor/gauge; temperature kept constant.' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Procedure (1) Set up the apparatus with the gas column at maximum volume. Record the initial pressure and volume. (2) Compress the piston in small steps. At each position, wait 30 seconds for thermal equilibrium before recording p and V. (3) Record at least 8–10 different p, V pairs. (4) Repeat measurements for reliability. (5) Plot p (y-axis) against 1/V (x-axis). If Boyle's Law holds, the graph should be a straight line through the origin, confirming p ∝ 1/V." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Graph Analysis Plot 1: p vs V — should give a rectangular hyperbola (p ∝ 1/V). This is not a straight line, so it is difficult to verify proportionality directly. Plot 2: p vs 1/V — should give a straight line through the origin. The gradient of this line equals pV = constant. If the line is straight and passes through the origin, Boyle's Law is confirmed. An alternative check: calculate pV for each data point — if Boyle's Law holds, pV should be constant (within experimental error) across all values." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="165" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Boyle\'s Law: Two Graphs</text><line x1="30" y1="140" x2="182" y2="140" stroke="#212529" stroke-width="2"/><line x1="30" y1="140" x2="30" y2="30" stroke="#212529" stroke-width="2"/><text x="107" y="155" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Volume V</text><text x="14" y="88" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle" transform="rotate(-90 14,88)">p</text><path d="M 32 35 Q 45 50 65 75 Q 100 110 180 138" stroke="#fa5252" stroke-width="2.5" fill="none"/><text x="75" y="55" font-family="sans-serif" font-size="9" fill="#c92a2a">p vs V</text><text x="75" y="67" font-family="sans-serif" font-size="9" fill="#c92a2a">hyperbola</text><line x1="215" y1="140" x2="382" y2="140" stroke="#212529" stroke-width="2"/><line x1="215" y1="140" x2="215" y2="30" stroke="#212529" stroke-width="2"/><text x="299" y="155" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">1/V</text><text x="198" y="88" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle" transform="rotate(-90 198,88)">p</text><line x1="215" y1="140" x2="382" y2="32" stroke="#339af0" stroke-width="2.5"/><circle cx="245" cy="122" r="3" fill="#339af0"/><circle cx="280" cy="100" r="3" fill="#339af0"/><circle cx="320" cy="72" r="3" fill="#339af0"/><circle cx="355" cy="50" r="3" fill="#339af0"/><text x="295" y="55" font-family="sans-serif" font-size="9" fill="#1864ab">p vs 1/V</text><text x="295" y="67" font-family="sans-serif" font-size="9" fill="#1864ab">straight line</text><text x="295" y="79" font-family="sans-serif" font-size="9" fill="#1864ab">through origin</text></svg>', caption: 'Left: p vs V gives hyperbola. Right: p vs 1/V gives straight line through origin — confirms Boyle\'s Law (p ∝ 1/V).' } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Sources of Error Temperature not constant: compression heats the gas slightly — wait for thermal equilibrium before recording each reading. Gas leaking: ensure all seals are airtight. Friction in piston: can cause readings to be slightly off — compress slowly and smoothly. Reading the volume: parallax error when reading the volume scale — view at eye level. Pressure gauge calibration: the gauge has a zero error — check and correct. The presence of any moisture in the gas could cause deviations from Boyle's Law." } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Worked Example Check A gas has pressure 100 kPa and volume 200 cm³ at 20°C. Verify Boyle's Law if at the same temperature the pressure increases to 250 kPa. p₁V₁ = 100 × 10³ × 200 × 10⁻⁶ = 0.020 Pa m³. New volume: V₂ = p₁V₁ / p₂ = 0.020 / (250 × 10³) = 8.0 × 10⁻⁵ m³ = 80 cm³. The volume should be 80 cm³. If this is observed experimentally, Boyle's Law is confirmed." } },
+    { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 155" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="155" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Checking pV = constant</text><rect x="15" y="28" width="370" height="115" rx="5" fill="#fff" stroke="#dee2e6" stroke-width="1"/><text x="55" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#495057">p / kPa</text><text x="150" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#495057">V / cm&#179;</text><text x="250" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#495057">pV / kPa cm&#179;</text><text x="340" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#495057">Const?</text><line x1="20" y1="53" x2="380" y2="53" stroke="#dee2e6" stroke-width="1"/><text x="55" y="68" font-family="sans-serif" font-size="10" fill="#212529">100</text><text x="150" y="68" font-family="sans-serif" font-size="10" fill="#212529">200</text><text x="250" y="68" font-family="sans-serif" font-size="10" fill="#2b8a3e">20 000</text><text x="340" y="68" font-family="sans-serif" font-size="10" fill="#2b8a3e">&#10003;</text><text x="55" y="88" font-family="sans-serif" font-size="10" fill="#212529">150</text><text x="150" y="88" font-family="sans-serif" font-size="10" fill="#212529">133</text><text x="250" y="88" font-family="sans-serif" font-size="10" fill="#2b8a3e">19 950</text><text x="340" y="88" font-family="sans-serif" font-size="10" fill="#2b8a3e">&#10003;</text><text x="55" y="108" font-family="sans-serif" font-size="10" fill="#212529">200</text><text x="150" y="108" font-family="sans-serif" font-size="10" fill="#212529">100</text><text x="250" y="108" font-family="sans-serif" font-size="10" fill="#2b8a3e">20 000</text><text x="340" y="108" font-family="sans-serif" font-size="10" fill="#2b8a3e">&#10003;</text><text x="200" y="135" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">pV &#8776; constant &#8594; Boyle\'s Law confirmed (within experimental error)</text></svg>', caption: 'Verify pV = constant by calculating pV for each (p, V) pair — values should be equal within uncertainty.' } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Points', text: "Boyle's Law: pV = constant at constant temperature (for fixed mass of ideal gas). Verification: plot p vs 1/V → straight line through origin. Or calculate pV at each point — should be constant. Errors: temperature not constant (wait for equilibrium); gas leak (seal carefully); piston friction (compress slowly). Units: p in Pa, V in m³ → pV in Pa m³ = J." } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "State Boyle's Law and the condition under which it applies (constant temperature, fixed mass)", checked: false },
+      { text: "Describe the experimental procedure to verify Boyle's Law, including what to plot and why", checked: false },
+      { text: "Identify two sources of error in this practical and explain how each is reduced", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Boyle's Law: p ∝ 1/V at constant T → pV = constant. Experiment: vary volume of trapped gas using piston; measure pressure at each volume; wait for thermal equilibrium. Plot p vs 1/V → straight line through origin confirms Boyle's Law. Alternatively: calculate pV at each point — should be constant. Sources of error: temperature change on compression (wait for equilibrium), gas leaks, piston friction." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 14: Investigating Gas Pressure & Volume' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-2', prompt: "State Boyle's Law in words and as an equation. What conditions must hold?" },
+    { id: 'cue-2', blockId: 'para-5', prompt: "Why is a p vs 1/V graph plotted rather than a p vs V graph to verify Boyle's Law?" },
+    { id: 'cue-3', blockId: 'para-6', prompt: "Give two sources of error in the Boyle's Law practical and how each is minimised." }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

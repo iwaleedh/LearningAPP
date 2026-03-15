@@ -1,0 +1,43 @@
+Edexcel A Level Maths: Pure Revision Notes
+Integration using Partial
+Fractions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Help me understand
+Did this video help you? Yes No
+Integration using partial
+fractions
+What are partial fractions?
+This is the reverse process to adding (or subtracting)
+fractions
+The common polynomial denominator is split into
+factors
+Make sure you are familiar with the notes on Partial
+Fractions
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I integrate using partial
+fractions?
+Fractions with linear denominators can be integrated (See
+Integrating Other Functions)
+A fraction with a polynomial denominator (degree 2+) can
+be integrated by …
+… splitting using partial fractions
+… integrating each partial fraction
+STEP 1: Factorise denominator, if needed
+STEP 2: Express as partial fractions
+STEP 3: ‘Adjust’ and ‘compensate’ each term so it can be
+integrated (See Reverse Chain Rule)
+STEP 4: Integrate each term (usually involves ln) and
+simplify
+Examiner Tips and Tricks
+When there are several parts, read the whole question:
+An early part may be a “show that” involving partial
+fractions
+A later part may be to integrate the original fraction
+If you can’t do, or get stuck on, the partial fractions bit of
+the question you can still use the “show that” result to
+help with the integration.

@@ -1,0 +1,123 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+suvat in 2D
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 16 February 2026
+Did this video help you? Yes No
+suvat in 2D
+Which suvat equations can be
+written in vector form?
+For constant 2D acceleration,four of the five suvat
+formulae can be used with vectors (remember time, t, is
+not a vector)
+v =u +at
+1
+s = (u + v)t
+2
+1
+s =ut + at2
+2
+1
+s = vt − at2
+2
+The final formula v2=u2+2as can not be written in vector
+form Help me understand
+Instead you would use this formula for each Stuck on something?
+component separately (one equation using only the i
+Ask questions and get help with
+components and one equation using only the j
+exactly what you're revising.
+components)
+You may also find the following formula useful Got it
+r=r +s
+0
+r is the displacement from the origin
+r is the initial displacement from the origin
+0
+
+---
+
+s is the displacement from the starting position
+How do I use the 2D suvat
+equations?
+The skills involved are the same for suvat in 1D
+Acceleration must be constant
+If acceleration varies with time then you need to use
+calculus
+All the suvat equations connect four of the five quantities
+Knowing any three allows a fourth to be found
+Any vector quantity used within the suvat equations (s, u, v
+and a) are split into i and j- components, time is a scalar
+and is used as normal
+You can use one vector equation and solve that or
+split into two equations (one for each component)
+and solve them separately
+How can 2D suvat problems be
+made harder?
+Sometimes they won’t give you the velocity instead it
+could say “…a particle is travelling parallel to…”
+This means its velocity is a scalar multiple of that
+vector
+If the object is travelling parallel to the vector i then
+the component of velocity in the j direction must be
+zero and vice versa
+The question could ask for speeds and/or distances
+You will need to find magnitudes of relevant vectors
+Worked Example
+A drone flies parallel to the ground in a 2D-plane.
+Starting from rest, the drone flies with constant acceleration.
+After one minute, the drone's velocity is (0.6i — 1.8j) m s-1
+(a) Find the acceleration of the drone, giving your answer in
+the form (ai+bj)ms−2 .
+Answer:
+
+---
+
+(b) Find the distance of the drone from its starting point after
+one minute.
+Answer:
+Examiner Tips and Tricks
+Don’t let the 2D aspect scare you! It works very similarly to
+1D suvat.
+Always read the question carefully to see whether the
+answer should be a scalar or a vector.
+Acceleration is the awkward one where we use the same
+word for the scalar and vector. If you are asked to find the
+acceleration it should be clear from the question whether
+it wants a scalar or a vector, if in doubt write both!
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+
+---
+
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+
+---
+
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

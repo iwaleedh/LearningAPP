@@ -1,44 +1,28 @@
 export const note_physics_4_18_6 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Electric Potential for a Radial Field" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Define electric potential V at a point; apply V = kQ/r for a radial field; compare V ∝ 1/r with E ∝ 1/r²; calculate potential, potential difference, and work done moving a charge in a radial field" } },
     { id: 'head-1', type: 'heading', data: { text: "Electric Potential for a Radial Field", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Electric Potential for a Radial Field will be updated." } },
-
-  
-    {
-      id: 'svg-physics_4_18_6-0',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Radial Potential Equation</text>
-  <rect x="100" y="60" width="200" height="60" fill="#e0e7ff" rx="8" stroke="#3b82f6" stroke-width="2"/>
-  <text x="200" y="95" font-family="Arial" font-size="20" fill="#1d4ed8" font-weight="bold" text-anchor="middle">V = k Q / r</text>
-  <text x="200" y="150" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Compare with E = kQ/r²</text>
-  <text x="200" y="180" font-family="Arial" font-size="12" fill="#ef4444" text-anchor="middle">V is scalar, use SIGN of charge Q</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 18_6'
-      }
-    },
-    {
-      id: 'svg-physics_4_18_6-1',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
-  <path d="M 60 120 L 340 120" stroke="#334155" stroke-width="2"/>
-  <path d="M 200 200 L 200 40" stroke="#334155" stroke-width="2"/>
-  <path d="M 210 50 Q 230 110 330 115" fill="none" stroke="#ef4444" stroke-width="2"/>
-  <path d="M 190 190 Q 170 130 70 125" fill="none" stroke="#3b82f6" stroke-width="2"/>
-  <text x="320" y="100" font-family="Arial" font-size="12" fill="#ef4444">+Q</text>
-  <text x="80" y="150" font-family="Arial" font-size="12" fill="#3b82f6">-Q</text>
-  <text x="200" y="20" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">V vs r Graph (V ∝ 1/r)</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 18_6'
-      }
-    },
+    { id: 'para-2', type: 'paragraph', data: { text: "The electric field strength E describes the force per unit charge at a point. The electric potential V at a point describes the potential energy per unit charge at that point, relative to infinity. Both E and V are defined for any charge distribution. For a single point charge Q (or for the field outside a uniform sphere of charge), the field is radial — the same in all directions at a given distance r — and both E and V can be expressed using Coulomb's constant k = 1/(4πε₀) ≈ 8.99 × 10⁹ N m² C⁻²." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Electric Potential in a Radial Field The electric potential at distance r from a point charge Q is: V = kQ/r = Q/(4πε₀r). The sign of V follows the sign of Q: V is positive around a positive charge and negative around a negative charge. Electric potential is a scalar quantity — it has magnitude but no direction. The zero of electric potential is defined at infinity (V = 0 as r → ∞). This is analogous to gravitational potential (V_grav = −Gm/r, always negative)." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 185" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="185" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">V vs r Graph for Radial Field (V = kQ/r)</text><line x1="40" y1="155" x2="375" y2="155" stroke="#212529" stroke-width="2"/><line x1="40" y1="155" x2="40" y2="25" stroke="#212529" stroke-width="2"/><text x="208" y="172" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">Distance r from charge / m</text><text x="20" y="90" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle" transform="rotate(-90 20,90)">V / V</text><path d="M 50 28 Q 70 55 100 90 Q 150 120 220 138 Q 290 148 370 154" stroke="#fa5252" stroke-width="2.5" fill="none"/><text x="220" y="60" font-family="sans-serif" font-size="11" fill="#c92a2a">+Q: V positive,</text><text x="220" y="74" font-family="sans-serif" font-size="11" fill="#c92a2a">decreases with r</text><path d="M 50 165 Q 70 160 100 157 Q 150 155 370 154" stroke="#339af0" stroke-width="2" fill="none" stroke-dasharray="5,3"/><text x="150" y="148" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">&#8722;Q: V negative</text><text x="40" y="150" font-family="sans-serif" font-size="9" fill="#495057">0</text><line x1="40" y1="140" x2="375" y2="140" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,3"/><text x="32" y="143" font-family="sans-serif" font-size="8" fill="#868e96">V=0</text></svg>', caption: 'V vs r for radial field: V = kQ/r (hyperbola). Positive charge: V > 0, decreasing with r. Negative charge: V < 0, increasing (less negative) with r.' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Comparison: V vs E For a radial field: E = kQ/r² (force per unit charge, vector) and V = kQ/r (potential energy per unit charge, scalar). E falls off as 1/r²; V falls off as 1/r. For the same distance r from the same charge, V is r times larger than E/k in magnitude. Importantly, E and V are related by: E = −dV/dr (the electric field is minus the potential gradient). In a uniform field: E = −ΔV/Δr = V/d (the formula for parallel plates follows as a special case)." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Work Done Moving a Charge The work done moving a small positive test charge q from radius r₁ to r₂ in the field of charge Q is: W = q × ΔV = q × (V₂ − V₁) = q × kQ × (1/r₂ − 1/r₁). If V₂ > V₁ (moving towards positive charge), W > 0 (work done on the charge). If V₂ < V₁ (moving away from positive charge), W < 0 (charge loses potential energy). For a negative charge moving towards a positive charge: W < 0 (the force is attractive and does positive work, but the potential energy decreases)." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Equipotentials Around a Point Charge</text><circle cx="200" cy="95" r="15" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="200" y="100" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">+Q</text><circle cx="200" cy="95" r="35" fill="none" stroke="#339af0" stroke-width="1.5" stroke-dasharray="5,3"/><circle cx="200" cy="95" r="55" fill="none" stroke="#339af0" stroke-width="1.5" stroke-dasharray="5,3"/><circle cx="200" cy="95" r="75" fill="none" stroke="#339af0" stroke-width="1.5" stroke-dasharray="5,3"/><text x="240" y="60" font-family="sans-serif" font-size="10" fill="#1864ab">equipotentials</text><text x="240" y="73" font-family="sans-serif" font-size="10" fill="#1864ab">(V = kQ/r)</text><line x1="200" y1="95" x2="255" y2="95" stroke="#fa5252" stroke-width="1.5"/><polygon points="255,95 247,90 247,100" fill="#fa5252"/><text x="228" y="91" font-family="sans-serif" font-size="9" fill="#c92a2a">E field line</text><line x1="200" y1="95" x2="200" y2="30" stroke="#fa5252" stroke-width="1.5"/><polygon points="200,30 195,38 205,38" fill="#fa5252"/><line x1="200" y1="95" x2="145" y2="95" stroke="#fa5252" stroke-width="1.5"/><polygon points="145,95 153,90 153,100" fill="#fa5252"/><text x="200" y="160" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Equipotentials are spheres (circles in 2D); E field lines are radial</text></svg>', caption: 'Equipotential surfaces (dashed circles) are perpendicular to E field lines (radial); closer to charge → higher V' } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Worked Example 1 Find the electric potential 0.30 m from a +5.0 nC point charge. k = 8.99 × 10⁹ N m² C⁻². V = kQ/r = (8.99 × 10⁹ × 5.0 × 10⁻⁹) / 0.30 = 44.95 / 0.30 = 150 V." } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Worked Example 2 Calculate the work done moving a +2.0 μC charge from r₁ = 0.10 m to r₂ = 0.40 m from a +8.0 nC charge. V₁ = kQ/r₁ = (8.99×10⁹ × 8×10⁻⁹)/0.10 = 719 V. V₂ = kQ/r₂ = (8.99×10⁹ × 8×10⁻⁹)/0.40 = 180 V. W = q × ΔV = 2.0×10⁻⁶ × (180 − 719) = 2.0×10⁻⁶ × (−539) = −1.08×10⁻³ J = −1.08 mJ. Negative work means energy is released as the charge moves away (potential decreases)." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Formulae', text: 'V = kQ/r (electric potential at distance r; k = 8.99×10⁹ N m² C⁻²; V is a scalar). E = kQ/r² (field strength; vector). Relation: E = −dV/dr. Work done moving charge q: W = qΔV = q(V₂−V₁). Sign of V: positive for +Q, negative for −Q.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "State the formula for electric potential in a radial field and explain how it differs from the field strength formula", checked: false },
+      { text: "Calculate V at a given distance from a point charge, including sign", checked: false },
+      { text: "Calculate the work done moving a charge between two points in a radial field using W = qΔV", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "V = kQ/r (electric potential, scalar, units V). E = kQ/r² (field strength, vector, N/C or V/m). V ∝ 1/r; E ∝ 1/r². Sign: positive around +Q, negative around −Q. Equipotentials are spherical surfaces (V = const). Work done: W = qΔV = q(V₂−V₁). Zero of potential defined at infinity." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Potential for a Radial Field' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'State the formula for electric potential at distance r from a point charge Q. Is V a scalar or vector? What is V at infinity?' },
+    { id: 'cue-2', blockId: 'para-4', prompt: 'Compare V = kQ/r with E = kQ/r². Which falls off faster with distance? How are E and V related mathematically?' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'Find the electric potential 0.30 m from a +5.0 nC charge (k = 8.99×10⁹).' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

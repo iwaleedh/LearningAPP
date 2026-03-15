@@ -1,0 +1,78 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Derived Units
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 16 February 2026
+Did this video help you? Yes No
+Derived units
+What are derived units?
+Derived units for quantities such as velocity, acceleration
+and force etc. are combinations of S.I. units
+SpeedorVelocity= distance ÷ time= m/s or m s-1
+(Velocity is just speed with direction)
+Acceleration = velocity ÷ time= ms-1 /s = m/s2 or m s-
+2
+WeightorForce= mass x acceleration = kg m s-2 or N
+(N = Newtons)
+Help me understand
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+
+---
+
+Worked Example
+a) Convert the following into S.I. units
+i) 72 km h-2 ii) 50 cm per minute iii) 14 g cm-3
+Answer:
+b) A cyclist takes 15 minutes to travel 2.54 km. Calculate the
+average speed in m s-1?
+Answer:
+
+---
+
+Examiner Tips and Tricks
+Watch out for exam questions using non S.I. units such as
+feet and inches or miles per hour.
+Make sure you are confident converting between these
+derived units
+Remember speed is velocity without direction and
+weight is a force measured in Newtons, not a mass
+measured in kg.
+If you ever forget a formula, use the units it is measured in
+to figure it out
+e.g. m/s = metres ÷ seconds = distance ÷ time = velocity.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+
+---
+
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

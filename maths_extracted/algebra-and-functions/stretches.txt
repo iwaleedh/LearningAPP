@@ -1,0 +1,54 @@
+Edexcel A Level Maths: Pure Revision Notes
+Stretches
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 11 February 2026
+Did this video help you? Yes No
+Stretches
+What are graph stretches?
+When you alter a function in certain ways, the effects on
+the graph of the function can be described by
+geometrical transformations
+With a stretch all the points on the graph are moved
+towards or away from either the x or the y axis by a
+constant scale factor
+Help me understand
+Stuck on something?
+Ask questions and get help with
+What do I need to know about exactly what you're revising.
+graph stretches?
+Got it
+The graph of y = af(x) is a vertical stretch of the graph y =
+f(x) by a scale factor of a, centred on the xaxis
+The xcoordinates of points stay the same; y
+coordinates are multiplied by a
+Points onthe x axis stay where they are
+All other points move parallel to the y axis, away from
+(a> 1) or towards (0 < a < 1) the x axis
+The graph of y = f(ax) is a horizontal stretch of the graph y
+1
+= f(x) by a scale factor of , centred on they axis
+a
+The y coordinates of points stay the same; x
+1
+coordinates are multiplied by
+a
+Points on the y axis stay where they are
+All other points move parallel to the x axis, away from
+(0 < a< 1) or towards (a > 1) the y axis
+Any asymptotes of f(x) are also affected by the stretch
+(stretch them as you would stretch the function of a
+straight line)
+If an asymptote is one of the coordinate axes, or is parallel
+to the direction of the stretch, however, it will not be
+affected
+Examiner Tips and Tricks
+When you sketch a stretched graph, be sure to indicate
+the new coordinates of any points that are marked on the
+original graph.
+Try to indicate the coordinates of points where the
+stretched graph intersects the coordinate axes (if you
+don't have the equation of the original function this may
+not be possible).
+If the graph has asymptotes, don't forget to sketch the
+asymptotes of the stretched graph as well.

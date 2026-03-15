@@ -1,0 +1,215 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Connected Bodies (Ropes &
+Tow Bars)
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Did this video help you? Yes No
+Connected bodies (ropes &
+tow bars)
+What are connected
+bodies/particles?
+The phrase connectedparticles refers to situations where
+two (or more) bodies (objects) are connected in some
+way.
+Common examples include:
+a car towing a caravan or trailer
+a load being raised by a lift (3.2.3)
+Help me understand
+two bodies connected by a rope that passes over a
+pulley (3.2.4)
+Problems may involve the particles being stationary (in
+equilibrium) or in motion – in the latter case Newton’s
+LawsofMotion will be involved.
+Stuck on something?
+What are Newton’s laws of motion?
+Ask questions and get help with
+Full details of Newton’s Laws of Motion can be found in exactly what you're revising.
+3.2.1 F = ma but Newton’s Third Law of Motion (N3L) is
+Got it
+particularly relevant for the problems covered in this note
+For two bodies, the force exerted on the second
+body by the first is equal in magnitude but opposite in
+
+---
+
+direction to the force exerted on the first body by the
+second
+How are ropes modelled?
+A rope is typically used to connect two inanimate objects
+such as blocks, crates, containers, etc
+A rope would be modelled as a lightinextensiblestring
+The modelling assumption light means the rope’s
+mass is so small relative that it can be ignored
+Mathematically this means that the tension in the
+string is constant throughout its length (i.e.
+tension is equal on bothsides of the string)
+The modelling assumption inextensible means the
+rope cannot be extended/shortened in length
+Mathematically this means that both connected
+particles will have the same acceleration
+A string would only be in tension (not thrust – see tow
+bars for thrust)
+A string can go slack – for example if one particle is
+disconnected – in which case the model being used
+would no longer apply and a new scenario would
+ensue with no tension involved
+What are tow bars and how are they
+modelled?
+A towbar is a mechanism by which a car (or similar vehicle)
+can be connected to a caravan, trailer (or similar)
+A towbar is modelled as a light (inextensible) rod
+A rod can either be in tension or thrust (compression)
+For a car towing a caravan by a light rod, the rod
+would be in tension when the car is accelerating,
+thrust when it is decelerating
+What is a coupling?
+A coupling is a general term referring to the connection
+between two objects - usually a relatively complex
+
+---
+
+system, such as how two train carriages are connected -
+but for modelling purposes is simplified to a string or rod
+How do I solve problems involving
+tow bars and ropes?
+If a particle is in motion in the direction being considered,
+then Newton’sLawsofMotion apply so use “F = ma”
+(N2L)
+If a particle is not in motion in the direction being
+considered then “F = 0” can be used, although
+“F = ma” with “a = 0” will also work
+Step 1.Draw a series of diagrams,
+Label the forces and the positive direction of motion.
+Colour coding forces acting on each particle may
+help.
+Step 2. Write equations of motion, using “F = ma ” (or if no
+motion “F = 0”)
+Step 3. Solve the relevant equation(s) and answer the
+question
+Some trickier problems may lead to simultaneous
+equations
+If both particles are travelling in the samedirection the
+system can be treated as one particle (as well as separate
+particles)
+There is notension at either side of the string when
+the system is treated as one - mathematically they
+cancel each other out
+For constantacceleration the ‘suvat’ equations could be
+involved
+a m s-2 is the acceleration of the system
+m kg and m kg are the masses of the two bodies
+1 2
+m g N and m g N are the weights of the two bodies
+1 2
+T N is the tension in the string
+D N is the driving force of the system
+
+---
+
+F N and F N are the resistive forces acting on the two
+1 2
+bodies
+R N and R N are the normal reaction forces of the two
+1 2
+bodies
+* You do not necessarily need all diagrams but if in doubt
+draw all as they may help you to understand the problem
+more clearly **
+How do I find equations for
+problems involving tow bars and
+ropes?
+Form the equations as follows:
+Treating the particles as one
+Horizontally (→) D - (F
+1
++ F
+2
+) = (m
+1
++ m
+2
+)a
+There is no vertical motion so use “F = 0”
+(↑) (R + R ) - (m + m )g = 0
+1 2 1 2
+(F= ma with a =0 will lead to the same equation)
+Treating each particle separately
+Particle 1: Horizontally (→) T - F
+1
+= m
+1
+a
+Vertically(↑) R -mg = 0 (No motion)
+1 1
+Particle 2: Horizontally (→) D - T- F
+2
+= m
+2
+a
+Vertically(↑) R - m g = 0 (No motion)
+2 2
+You do not necessarily need all equations but if in doubt
+attempt all and it may help you make progress
+Worked Example
+A small plane, of mass 1250 kg, is towing a glider, of mass 300
+kg, along a runway prior to take-off and accelerates from rest
+at a constant 1.5 m s-2.
+During the take-off period the plane experiences resistive
+forces of 580 N, whilst the glider experiences resistive forces
+of 255 N.
+The plane and glider are coupled by a tow rope which is
+modelled as a light inextensible string.
+(a) Find the engine force from the plane.
+Answer:
+
+---
+
+(b) Find the tension in the tow rope.
+Answer:
+Examiner Tips and Tricks
+Sketch diagrams or add to any diagrams given in a
+question.
+If in doubt of how to start a problem, draw all diagrams
+and try writing an equation for each. This may help you
+make progress as well as picking up some marks.
+Do not dismiss an equation in a direction because there is
+no motion – use “F = 0” to write an equation for that
+direction and you may be able to find one of the
+unknowns in a problem.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+
+---
+
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+
+---
+
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

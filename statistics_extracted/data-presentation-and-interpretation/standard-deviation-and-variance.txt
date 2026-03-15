@@ -1,0 +1,177 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Standard Deviation & Variance
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 16 February 2026
+Did this video help you? Yes No
+Standard deviation &
+variance
+The variance is another measure for the spread of the
+data, it measures the variability from the mean of the data
+What is the variance and the
+standard deviation?
+The variance is a statistic that tells us how varied a set of
+data is
+Data that is more spread out will have a greater
+variance
+Data that is consistent and close together will have a
+smaller variance
+Help me understand
+The standard deviation is the square root of the variance
+The symbol for the population standard deviation is the
+lowercase Greek letter sigma, σ and for variance is sigma
+squared, σ2
+Standard deviation and variance are used Stuck on something?
+interchangeably within this course so make sure you look
+out for which one a question shows or asks for Ask questions and get help with
+exactly what you're revising.
+How are the variance and standard
+Got it
+deviation calculated?
+There is more than one formula that can be used for
+calculating the variance, and you should choose the most
+
+---
+
+useful one
+For a set of n values x ,x ,...,x ,...,x the variance is the
+1 2 i n
+sum of the squares of the deviations from the mean,
+divided by the frequency
+Σ(x−x ⎯ )2
+Variance =
+n
+This formula can be time consuming and
+therefore is rarely used in this statistics course
+A second, easier to use version of the variance is:
+Variance =
+Σx2
+− ⎯ x ⎯2
+n
+This version is easier to work with and should be used
+in most instances
+The summary statistic S =Σ(x −x)2 =Σx2−
+xx i i
+(Σx )2
+i can help derive different formulae as
+n
+shown below:
+Variance =
+σ2= Σ(x− ⎯ x ⎯ )2 = S xx = 1⎛⎜⎜Σx2− (Σx)2⎞⎟⎟= Σx2 − ⎛⎜⎜ Σx ⎞⎟⎟ 2 = Σx2 − ⎯ x ⎯2
+n n n ⎝ n ⎠ n ⎝ n ⎠ n
+An easy way to remember this is to think of it as ‘the mean
+of the squared values minus the square of the mean’
+Most calculators can be used to find summary
+statistic such as the standard deviation and variance
+fairly quickly, practice finding it on yours
+The standard deviation is the square root of the variance
+Standard deviation =
+σ =
+Σ(x− ⎯ x ⎯ )2
+=
+Σx2
+−
+⎯
+x
+⎯2
+=
+S xx
+n n n
+Make sure you know how to find these formulae in
+the formula booklet and are familiar with the
+version given
+The units for standard deviation are the same as the units
+for the data and the units for variance are the same as the
+units for the data but squared
+How are the variance and standard
+deviation calculated from a
+frequency table?
+The method for finding the variance from a frequency
+table is similar to that of the mean
+If calculating from a grouped frequency table, find
+the midpoints, x, first
+Multiply each x value by its corresponding frequency
+and use these values within the formulae
+The formulae will become
+Variance = σ2=
+Σf(x− ⎯ x ⎯ )2
+=
+Σfx2
+−
+⎛⎜⎜ Σfx ⎞⎟⎟ 2
+Σf Σf ⎝ Σf ⎠
+Standard deviation =
+σ =
+Σf(x− ⎯ x ⎯ )2
+=
+Σfx2
+−
+⎛⎜⎜ Σfx ⎞⎟⎟ 2
+Σf Σf ⎝ Σf ⎠
+Worked Example
+
+---
+
+Phoom recorded the length of time, t , it took him, in minutes,
+to answer a selection of further calculus exam questions. The
+data is summarised in the table below.
+Time (minutes) Frequency
+2 ≤t <4 1
+4 ≤t <6 4
+6 ≤t <8 7
+8 ≤t < 10 5
+10 ≤t < 12 2
+12 ≤t < 20 2
+(i) Calculate an estimate of the variance of the time taken to
+complete a question, include units with your answer.
+(ii) Write down an estimate of the standard deviation of the
+time taken to complete a question, include units with your
+answer.
+Answer:
+Examiner Tips and Tricks
+Look out for whether a question gives or asks for the
+standard deviation or variance, especially if the question
+
+---
+
+is using sigma notation.
+Choose which formula to use wisely, most of the time the
+summary statistics will be given so only one of the
+formulae will be possible. On the rare occasion that you
+are asked to calculate directly from a table think carefully
+about which version of the formula is quickest and easiest
+to use. It will almost always be the second version given in
+this revision note.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+
+---
+
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

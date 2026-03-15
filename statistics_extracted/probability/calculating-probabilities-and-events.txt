@@ -1,0 +1,295 @@
+Join now for free
+A Level Maths Edexcel Statistics Revision Note
+Calculating Probabilities &
+Events(Edexcel A Level
+Maths):Revision Note
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Exam board:
+Edexcel
+Did this video help you? Yes No
+Calculating probabilities &
+events
+What language is used in
+probability?
+The language used in probability can be confusing so here
+are some definitions of commonly misunderstood terms
+An experiment is a repeatable activity that has a result
+that can be observed or recorded; it is what is
+happening in a question
+Stuck on something?
+An outcome is the result of an experiment
+All possible outcomes can be shown in a sample Ask questions and get help with
+space – this may be a list or a table and is particularly exactly what you're revising.
+useful when it is difficult to envisage all possible
+Got it
+outcomes in your head
+e.g. The sample space below is for two fairfour-sided
+spinners whose outcomes are the product of the sides
+showing when spun.
+
+---
+
+An event is an outcome or a collection of outcomes; it is
+what we are interested in happening
+Do note how this could be more than one outcome
+e.g. For the spinners above, the event “the product
+is -2” has one outcome but the event “the product
+is negative” has 6 outcomes
+Terminology - be careful with the words 'not', 'and' and
+'or'
+A and B means both the events A and B happen at the
+same time
+(You will have seen this written as A∩B at GCSE)
+A or B means event A happens, or event B happens,
+or both happen
+(You will have seen this written as A∪B at GCSE)
+not A means the event A does not happen
+(You will have seen this written as A' at GCSE)
+Notation – the way probabilities are written is formal and
+consistent at A-level
+P(A)=0.6 “the probability of event A happening
+is 0.6”
+P(A')=0.4 “the probability of event Anot
+happening equals 0.4”
+⎯⎯⎯
+(This is sometimes written as P(A))
+P(X≤4)=0.4 “the probability of X being less than four is
+0.4”
+How do I find probabilities?
+The big difference with probability at A level is the
+Help me understand
+language and the notation used
+Recall basic results of probability
+numberofwaystoget"success"
+P("success")=
+totalnumberofoutcomes
+It is important to understand that the above only
+applies if all outcomes are equallylikely
+P(notA)=1−P(A)
+The probability of “notA” is the complement of
+the probability of “A”
+One of the easiest results in probability to
+understand, one of the hardest results to spot!
+Be aware of whether you are using theoretical
+probabilities or probabilities based on the results of
+several experiments (relativefrequency). You may have to
+compare the two and make a judgement as to whether
+there is bias in the experiment.
+e.g. The outcomes from rolling a fair dice have
+theoretical probabilities but the outcomes from a football
+match would be based on previous results between the
+two teams
+
+---
+
+Ensure you can interpret common ways of displaying data
+– from frequency tables, histograms, box plots and other
+ways to illustrate data
+See Revision Notes
+2.1.2 Frequency Tables
+2.2.1 Data Presentation
+2.2.2 Box Plots & Cumulative Frequency
+2.2.3 Histograms
+Be particularly careful when using histograms
+These use frequencydensity, not frequency
+Using parts of bars may be required due to where
+class boundaries fall so values will be estimates
+(using the proportion of the bar needed,
+sometimes called interpolation)
+Worked Example
+100 skydivers took part in an all-day charity event, with the
+altitude of the aeroplane at which they jumped from
+summarised in the histogram below.
+(a) Use the histogram to find the probability that a randomly
+chosen skydiver jumped from the aeroplane at an altitude
+(i) between 14 000 and 16 000 feet,
+(ii) between 16 000 and 20 000 feet.
+(b) Estimate the probability that a randomly chosen skydiver
+jumped from the aeroplane at an altitude between 13 000
+and 15 000 feet.
+Answer:
+
+---
+
+Examiner Tips and Tricks
+Most probability questions are in context so can be long
+and wordy; go back and re-read the question, several
+times, whenever you need to
+Try to get immersed in the context of the question to help
+understand a problem
+Did this video help you? Yes No
+Independent & mutually
+exclusive events
+
+---
+
+What are independent events?
+Independenteventsdo not affect each other
+For two independent events, the probability of one event
+happening is unaffected by the outcome of the other
+event
+e.g. The events “rolling a 6 on a dice” and “flipping heads
+on a coin” are independent - the outcome “rolling a 6”
+does not affect the probability of the outcome “heads”
+(and vice versa)
+For two independent events, A and B
+P(A ANDB)=P(A)×P(B)
+1 1 1
+e.g. P("6onadice" AND "headsonacoin")= × =
+6 2 12
+Independent events could refer to events from different
+experiments
+What are mutually exclusive
+events?
+Mutuallyexclusiveevents cannot occur simultaneously
+P(AANDB)=0
+For two mutually exclusive events, the outcome of one
+event means the other event cannot occur e.g. The
+events “rolling a 5 on a die” and “rolling a 6 on a die” are
+mutually exclusive
+For two mutuallyexclusive events, A and B
+P(A ORB)=P(A)+P(B)
+e.g. P("6onadice" OR "5onadice")=
+1
++
+1
+=
+2 ⎛⎜⎜ 1⎞⎟⎟
+6 6 6 ⎝3⎠
+Mutuallyexclusive events generally refer to events from
+the same (single trial of an) experiment
+Mutually exclusive events cannot be independent; the
+outcome of one event means the probability of the other
+event is zero
+How do I solve problems involving
+independent and mutually exclusive
+events?
+Make sure you know the statistical terms – independent
+and mutuallyexclusive
+Remember
+independence is AND and is ×
+mutualexclusivity is OR and is +
+Solving problems will require interpreting the information
+given and the application of the appropriate formula
+Information may be explained in words or by
+diagram(s)
+(including Venn diagrams – see Revision Note 3.1.2
+Venn Diagrams)
+Showing or determining whether two events are
+independent or mutually exclusive are also common
+To do this you would show the relevant formula is true
+
+---
+
+Just for fun …
+A well-known sports TV broadcaster used to advertise
+their football matches as either “Live and exclusive” or
+“Exclusively live” – can you tell the difference?
+“Live and exclusive” meant that the broadcaster was airing
+the football match live and was the only broadcaster
+allowed to air any of the match at any time. “Exclusively
+live” meant that the broadcaster was the only one airing
+the football match live, but other broadcasters would be
+able to air any of the match afterwards.
+Worked Example
+(a) Two events, Q and R are such that P(Q)=0.8 and
+P(Qand R) =0.1. Given that Q and R are independent, find
+P(R)
+(b) Two events, S and T are such that P(S) =2P(T) . Given
+that S and T are mutually exclusive and that P(SorT)=0.6
+find P(S) and P(T).
+(c) A fair five-sided spinner has sides labelled 2, 3, 5, 7, 11. Find
+the probability that the spinner lands on a number greater
+than 5.
+Answer:
+Examiner Tips and Tricks
+Try to rephrase questions in your head in terms of AND
+and/or OR ! e.g. A fair six-sided die is rolled and a fair
+
+---
+
+coin is flipped. “Find the probability of obtaining a
+prime number with heads.”
+would be
+“Find the probability of rolling a 2 OR a 3 OR a 5 AND
+heads.”
+Unlock more, it's free!
+Join the 100,000+ Students that ❤ Save
+My Exams
+the (exam) results speak for themselves:
+I would just like to say a massive thank you This website
+for putting together such a brilliant, easy ever thank y
+to use website. I really think using this questions b
+site helped me secure my top grades in the name of
+science and maths. You really did save my been more
+exams! Thank you. SAVE MY E
+Beth Fathima
+IGCSE Student A Level Stude
+Join now for free
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+View all topics
+Statistical Sampling
+1 Topic · 1 Revision Note
+Data Presentation & Interpretation
+5 Topics · 12 Revision Notes
+
+---
+
+Probability
+2 Topics · 7 Revision Notes
+Basic Probability
+Calculating Probabilities & Events
+Venn Diagrams
+Tree Diagrams
+Further Probability
+Statistical Distributions
+4 Topics · 8 Revision Notes
+Hypothesis Testing
+3 Topics · 4 Revision Notes
+Large Data Set
+1 Topic · 1 Revision Note
+More Exam Questions you might like
+Basic Probability Further Probability
+Probability Distributions Binomial Distribution
+Normal Distribution Working with Distributions
+Introduction to Hypothesis Testing
+Hypothesis Testing (Binomial Distribution)
+Hypothesis Testing (Normal Distribution) Large Data Set
+Author:Paul
+Expertise:Maths Content Creator
+Paul has taught mathematics for 20 years and has
+been an examiner for Edexcel for over a decade.
+GCSE, A level, pure, mechanics, statistics, discrete –
+if it’s in a Maths exam, Paul will know about it. Paul is a
+passionate fan of clear and colourful notes with
+fascinating diagrams.
+
+---
+
+Course Study tools All topics
+Resources Members
+Home Log in
+Learning Hub
+Teachers
+Ambassadors
+Scholarship
+Join
+Past Papers
+Solution Banks
+Sitemap
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

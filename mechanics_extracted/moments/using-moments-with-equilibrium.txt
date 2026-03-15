@@ -1,0 +1,94 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Using Moments with
+Equilibrium
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 16 February 2026
+Did this video help you? Yes No
+Using moments with
+equilibrium
+What is the resultant moment for a
+body in equilibrium?
+Help me understand
+If a rigid body is in equilibrium then:
+The resultant force is 0 N
+The resultant moment about any point is 0 N m
+The sum of the magnitudes of the clockwise moments
+equals the sum of the magnitudes of the anti-clockwise
+moments
+How do I use F = ma and moments
+to solve equilibrium problems?
+Step 1: Identify all forces and perpendicular distances
+from the pivot Stuck on something?
+Step 2: Use the fact that the resultant force is 0 N to form
+Ask questions and get help with
+an equation
+exactly what you're revising.
+Step 3: Use the fact that the resultant moment about any
+point is 0 N m to form equations
+Got it
+If there is an unknown force you can choose a pivot
+that is on the line of action of that force – this will
+mean that the moment of that force is 0 N m
+
+---
+
+Step 4: Solve the equations
+Worked Example
+A light rod AB of length 10 m is held in equilibrium by three
+forces: 50 N, T N and T N.
+1 2
+T N acts vertically upwards at A, 50 N acts vertically
+1
+downwards 6 m away from A and T N acts vertically upwards 2
+2
+m away from B as shown in the diagram.
+Find the values of T and T .
+1 2
+Answer:
+Examiner Tips and Tricks
+If you see a force diagram that involves distances then
+you can be fairly sure that moments will be involved! A
+clear diagram showing all the distances is key.
+If you pick a pivot and form a moment equation which
+involves more than one unknown, try choosing another
+pivot to form simultaneous equations.
+Pick your pivot wisely as unknown and unwanted forces
+can be eliminated from the equation by choosing the
+point to be on the line of action of a force.
+
+---
+
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+
+---
+
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

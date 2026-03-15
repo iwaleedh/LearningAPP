@@ -1,0 +1,59 @@
+Edexcel A Level Maths: Pure Revision Notes
+Differentiating Powers of x
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 10 February 2026
+Help me understand
+05:42
+Did this video help you? Yes No
+Differentiating powers of x
+How do I differentiate expressions
+with powers of x?
+Powers of x are differentiated according to the following
+formula
+d
+(xn)=nxn−1
+dx
+Where n is any real constant
+This can be written as:
+If f(x)=xn then f'(x)=nxn−1
+dy
+If y=xn then =nxn−1
+dx
+Examiner Tips and Tricks Stuck on something?
+f'(x) is usually used when a function, f(x), has been defined. Ask questions and get help with
+dy exactly what you're revising.
+is used when a graph of a function is given in the form
+dx
+Got it
+y=... They both represent the derivative of an expression.
+If the term involves a scalar multiple, then you can
+differentiate the power of x and then multiply by the scalar
+d
+(axn)=anxn−1
+dx
+Where n and a are any real constants
+Differentiating terms with positive integer powers of x is
+straightforward
+But negative and fractional powers of x can also be
+differentiated this way
+Don't forget these two special cases:
+The derivative of a linear function is a constant
+d
+(ax)=a
+dx
+Where a is any real constant
+The derivative of a constant function is zero
+d
+(a)=0
+dx
+Where a is any real constant
+These allow you to differentiate constants and linear terms
+in x
+If the expression involves a sum or difference of terms just
+differentiate one term at a time
+Examiner Tips and Tricks
+Take extra care when differentiating negative and
+fractional powers of x as mishandling negative signs and
+fractions is a common way to lose marks in these sorts of
+questions.

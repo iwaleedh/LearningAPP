@@ -1,0 +1,119 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Using Calculus in 2D
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Using calculus in 2D
+Which quantities in kinematics are
+vectors?
+It is important you understand Calculus in 1D first
+Also recall the differences between key vector and scalar
+quantities
+Displacement- from starting point
+Distance– from start/origin/another particle (all could be
+different)
+Speedand Velocity
+Help me understand
+acceleration and magnitude of
+acceleration/deceleration
+time is a scalar quantity
+How do I use calculus for 2D
+vectors?
+To differentiate a vector:
+Differentiate both (i and j) components of the vector Stuck on something?
+To integrate a vector: Ask questions and get help with
+Integrate both (i and j) components of the vector exactly what you're revising.
+There will be a constant of integration, c, which will be
+a vector made up of two values (an i-component Got it
+constant and a j-component constant)
+Find c by substituting in any known vectors, in the
+same way as you would if it were in 1D
+
+---
+
+Find the separate components of the vector c by
+equating the i-components and the j-
+components separately
+How is differentiation and
+integration related to
+displacement, velocity and
+acceleration?
+In 2D we normally use the vector r to represent
+displacement instead of s
+Just like in 1D:
+Differentiate displacement to get velocity and
+velocity to get acceleration
+Integrate acceleration to get velocity and velocity to
+get displacement
+How can 2D-vector questions be
+made harder?
+Harder problems could involve:
+using Newton’s Second Law (N2L) F = ma
+two vectors being equal requiring both i and j
+components to be equal
+exponentials, logarithms, trigonometric functions
+(not just polynomials)
+suvat equations (in vector form) would only be involved if
+acceleration is constant
+You may have to find the magnitude of the vectors
+The magnitude of the velocity is the speed
+The magnitude of the displacement is the distance
+from the starting point
+The position vector of a particle is r = r + s
+0
+r is the initial position of the particle
+0
+s is the displacement of the particle from its initial
+position
+Worked Example
+A ship moves with velocity, v m s-1, where v = (2t)i + (e0.5t)j.
+Initially the ship has position vector (3i — 4j) mfrom a fixed
+origin O.
+(a) Find an expression for the position vector of the ship after t
+seconds.
+Answer:
+
+---
+
+(b) Find the magnitude of the acceleration when t=3 .
+Answer:
+Examiner Tips and Tricks
+If the question refers to the direction that the particle is
+travelling, then you would use the velocity. If the direction
+ofmotion is asked for then it should be clear from the
+question whether they want an angle, bearing or vector
+which it is parallel to.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+
+---
+
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

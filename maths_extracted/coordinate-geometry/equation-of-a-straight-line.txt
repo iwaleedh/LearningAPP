@@ -1,0 +1,53 @@
+Edexcel A Level Maths: Pure Revision Notes
+Equation of a Straight Line
+Exam code:9MA0 Download PDF
+Help me understand
+Written by:Paul
+Updated on 16 February 2026
+Did this video help you? Yes No
+Equation of a straight line
+What is the equation of a straight
+line?
+y = mx + c is the equation for any straight line
+m is gradient given by “difference in y” ÷ “difference in x”
+or dy/dx
+c is the y-axis intercept
+Alternative form is ax + by + c = 0 where a, b and c are
+integers
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I find the equation of a
+straight line?
+Two features of a straight line are needed
+gradient, m
+a point the line passes through, (x, y)
+1 1
+The equation can then be found using y – y = m(x - x)
+1 1
+This can be rearranged into either y = mx + c or ax + by + c
+= 0
+How do I find the gradient of a
+straight line?
+There are lots of ways to find the gradient of a line
+Using twopoints on a line to find the change in y divided
+by change in x
+y −y
+2 1
+m=
+x −x
+2 1
+Using the fact that lines are parallel or perpendicular to
+another line (see Parallel and Perpendicular Gradients)
+Using Tangents and Normals - Differentiation (see
+Gradients, Tangents & Normals)
+Other ways
+Collinear lines are the same straight line so gradients
+are equal
+Angle facts and circletheorems
+eg. a radius and tangent are perpendicular
+Examiner Tips and Tricks
+Working with straight lines can involve lots of algebra, but
+sketching a diagram will always help.
+Use a sketch to check if answers seem about right.

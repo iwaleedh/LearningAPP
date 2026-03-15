@@ -1,0 +1,86 @@
+Edexcel A Level Maths: Pure Revision Notes
+Differentiation from First
+Principles
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+05:55
+Did this video help you? Yes No
+Differentiation from first
+principles
+What is the derivative or gradient
+function?
+For a curve y = f(x) there is an associated function called
+the derivative or gradient function
+Help me understand
+The derivative of f(x) is written as f'(x)
+The derivative is a formula that can be used to find the
+gradient of y = f(x) at any point, by substituting the x
+coordinate of the point into the formula
+The process of finding the derivative of a function is called
+differentiation
+We differentiate a function to find its derivative
+What is differentiation from first
+principles?
+Stuck on something?
+Differentiation from first principles uses the definition of Ask questions and get help with
+the derivative of a function f(x) exactly what you're revising.
+The definition is
+Got it
+f(x+h)−f(x)
+f'(x)=lim
+h
+h→0
+lim means the 'limit as h tends to zero'
+h→0
+f(x+h)−f(x) f(x)−f(x) 0
+Whenh=0, = = which is
+h 0 0
+undefined
+Instead we consider what happens as h gets closer
+and closer to zero
+Differentiation from first principles means using that
+definition to show what the derivative of a function is
+How do I differentiate from first
+principles?
+STEP 1
+Identify the function f(x) and substitute this into the first
+principles formula
+e.g. Show, from first principles, that the derivative of
+3×2 is 6×
+f(x)=3x2 so
+f(x+h)−f(x) 3(x+h)2−3x2
+f'(x)=lim =lim
+h h
+h→0 h→0
+STEP 2
+Expand f(x+h) in the numerator
+3(x2+2hx+h2)−3x2
+f'(x)=lim
+h
+h→0
+3x2+6hx+3h2−3x2
+f'(x)=lim
+h
+h→0
+STEP 3
+Simplify the numerator, factorise and cancel h with the
+denominator
+h(6x+3h)
+f'(x)=lim
+h
+h→0
+STEP 4
+Evaluate the remaining expression as h tends to zero
+f'(x)=lim(6x+3h)=6x
+h→0
+Ash→0,(6x+3h)→(6x+0)→6x
+∴The derivative of 3x2 is 6x
+Examiner Tips and Tricks
+Most of the time you will not use first principles to find the
+derivative of a function (there are much quicker ways!).
+However, you can be asked on the exam to demonstrate
+differentiation from first principles.
+Make sure you can use first principles differentiation to
+find the derivatives of kx, kx2 and kx3 (where k is a
+constant).

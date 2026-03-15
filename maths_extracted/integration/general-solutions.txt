@@ -1,0 +1,28 @@
+Edexcel A Level Maths: Pure Revision Notes
+General Solutions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 23 June 2025
+Help me understand
+Did this video help you? Yes No
+General solutions
+What is a differential equation?
+Any equation, involving a derivativeterm, is a differential
+equation
+Stuck on something?
+Equations involving only first derivative terms are called
+firstorderdifferentialequations Ask questions and get help with
+Equations involving second derivative terms are called exactly what you're revising.
+secondorderdifferentialequations
+Got it
+What is a general solution?
+Integration will be involved in solving the differential
+equation
+ie working back to “y = f(x)”
+A constant of integration, c is produced
+This gives an infinite number of solutions to the differential
+equation, each of the form y = g(x) + c (ie y = f(x) where
+f(x) = g(x) + c)
+These are often called a family of solutions …
+… and the solution y= g(x) + c is called the general
+solution

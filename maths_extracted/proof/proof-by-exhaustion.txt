@@ -1,0 +1,33 @@
+Edexcel A Level Maths: Pure Revision Notes
+Proof by Exhaustion
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 18 June 2025
+Did this video help you? Yes No
+Help me understand
+Proof by exhaustion
+What is proof by exhaustion?
+Proof by exhaustion is a way to show that the desired
+result works for every allowed value
+How do I prove a result by
+exhaustion?
+Using proof by exhaustion means testing every allowed
+value not just showing a few examples
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Difficulties with proof by
+exhaustion
+In many cases proof by exhaustion is not practical, or
+possible
+Proving all multiples of 4 are even can’t be shown for
+every multiple of 4
+Aim to minimise the work involved
+Proving a number is prime only requires testing
+factors up to the square root
+Examiner Tips and Tricks
+Try a simpler case if you are stuck.
+For example, if you are asked to prove that 97 is a prime
+number you could try thinking about what you would do
+for smaller primes such as 7 or 11.

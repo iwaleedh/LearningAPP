@@ -1,0 +1,44 @@
+Edexcel A Level Maths: Pure Revision Notes
+Basics of Parametric Equations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+04:17
+Did this video help you? Yes No
+Help me understand
+Basics of parametric
+equations
+What are parametric equations?
+Graphs are usually described by a Cartesianequation
+The equation involves x and y only
+Equations like this can sometimes be rearranged into the
+form, y = f(x)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+In parametricequations both x and y are dependent on a
+third variable
+This is called a parameter
+t and θ are often used as parameters
+A common example …
+x is the horizontal position of an object
+y is the vertical position of an object
+and the position of the object is dependent on time t
+x is a function of t, y is a function of t
+x = f(t)
+y = g(t)
+How do I plot parametric
+equations?
+It is still possible to plot a graph of y against x from their
+parametric equations
+Also see Parametric Equations – Sketching Graphs
+What are the parametric equations
+of a circle?
+For a circle, centre (0, 0) and radius r
+x = rcos θ
+y = rsin θ
+(Note that r is constant, this is not two parameters)
+For a circle, centre (a, b) and radius r
+x = rcos θ + a
+y = rsin θ + b

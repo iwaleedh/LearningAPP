@@ -1,0 +1,29 @@
+Edexcel A Level Maths: Pure Revision Notes
+Modelling with Straight Lines
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Did this video help you? Yes No
+Modelling with straight lines
+What is modelling with straight
+Help me understand
+lines?
+Modelling means applying the mathematics to a real-life
+situation
+The model is used to find or predict future values
+Models will often need refining to improve their accuracy
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I work with straight line
+models?
+Turn the words from the question into mathematical
+equations
+In y = mx + c constants “m” and “c” will have a meaning
+gradient “m” will be the rateofchange
+eg extension in a spring per 1 kg of mass added
+y-axis intercept “c” will be the initialvalue
+eg resting length of a spring
+The skills needed are covered in the other pages of the
+section Equation of a Straight Line

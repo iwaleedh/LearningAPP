@@ -1,0 +1,39 @@
+Edexcel A Level Maths: Pure Revision Notes
+Compound Angle Formulae
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Did this video help you? Yes No
+Help me understand
+Compound angle formulae
+What are the compound angle
+formulae?
+There are six compound angle formulae (also known as
+addition formulae), two each for sin, cos and tan:
+For sin the +/- sign on the left-hand side matches the one
+on the right-hand side
+sin(A+B)≡sinAcosB+cosAsinB
+sin(A−B)≡sinAcosB−cosAsinB
+For cos the +/- sign on the left-hand side is opposite to
+the one on the right-hand side
+cos(A+B)≡cosAcosB−sinAsinB
+cos(A−B)≡cosAcosB+sinAsinB
+For tan the +/- sign on the left-hand side matches the one
+in the numerator on the right-hand side, and is opposite
+to the one in the denominator
+Stuck on something?
+tanA+tanB Ask questions and get help with
+tan(A+B)≡
+1−tanAtanB exactly what you're revising.
+tanA−tanB
+tan(A−B)≡ Got it
+1+tanAtanB
+You can derive the tan identity by:
+sin(A+B)
+Writing tan(A+B)≡
+cos(A+B)
+Dividing the numerator and denominator by
+cosAcosB
+Examiner Tips and Tricks
+All these formulae are in the formulae booklet – you don't
+have to memorise them.

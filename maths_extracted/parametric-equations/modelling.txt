@@ -1,0 +1,29 @@
+Edexcel A Level Maths: Pure Revision Notes
+Modelling with Parametric
+Equations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+04:28
+Did this video help you? Yes No
+Modelling with parametric
+equations
+What can be modelled with
+parametric equations?
+A common use for parametric equations is motion in two
+dimensions
+x = f(t) – horizontal position, dependent on time
+y = g(t) – vertical position, dependent on time
+This is explored in vectors and projectiles
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Worked Example
+A model car, C, travels along a model track along the path of
+the curve shown in the diagram below and defined by the
+parametric equations
+x=2cost
+y=3sin2t
+where 0≤t≤2π
+x and y are measured in metres, t is measured in minutes.

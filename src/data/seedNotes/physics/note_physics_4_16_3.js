@@ -1,49 +1,27 @@
 export const note_physics_4_16_3 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Core Practical 10: Investigating Collisions using ICT" } },
-    { id: 'head-1', type: 'heading', data: { text: "Core Practical 10: Investigating Collisions using ICT", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Core Practical 10: Investigating Collisions using ICT will be updated." } },
-
-  
-    {
-      id: 'svg-physics_4_16_3-0',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
-  <rect x="40" y="150" width="320" height="15" fill="#e2e8f0" stroke="#94a3b8" />
-  <rect x="100" y="110" width="50" height="40" fill="#3b82f6"/>
-  <rect x="250" y="110" width="50" height="40" fill="#ef4444"/>
-  <rect x="90" y="90" width="30" height="15" fill="#1e293b"/> 
-  <rect x="240" y="90" width="30" height="15" fill="#1e293b"/>
-  <rect x="160" y="80" width="10" height="70" fill="#f59e0b" opacity="0.6"/>
-  <rect x="230" y="80" width="10" height="70" fill="#f59e0b" opacity="0.6"/>
-  <text x="200" y="60" font-family="Arial" font-size="12" fill="#f59e0b" text-anchor="middle">Light Gates</text>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Air Track Collisions</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 16_3'
-      }
-    },
-    {
-      id: 'svg-physics_4_16_3-1',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <path d="M 50 150 L 350 150" stroke="#334155" stroke-width="2"/>
-  <path d="M 50 150 L 50 50" stroke="#334155" stroke-width="2"/>
-  <line x1="80" y1="130" x2="80" y2="80" stroke="#3b82f6" stroke-width="10"/>
-  <line x1="160" y1="130" x2="160" y2="100" stroke="#ef4444" stroke-width="10"/>
-  <text x="80" y="170" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">Glider A</text>
-  <text x="160" y="170" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">Glider B</text>
-  <text x="30" y="100" font-family="Arial" font-size="12" fill="#334155" transform="rotate(-90 30 100)" text-anchor="middle">Momentum (kg m/s)</text>
-  <text x="200" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Data Logger Output: Σp = constant</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 16_3'
-      }
-    },
+    { id: 'obj-1', type: 'objective', data: { text: "Describe the experimental procedure for Core Practical 10; use light gates and data loggers to measure velocities; verify conservation of momentum; identify sources of error" } },
+    { id: 'head-1', type: 'heading', data: { text: "Core Practical 10: Investigating Collisions", level: 2 } },
+    { id: 'para-2', type: 'paragraph', data: { text: "Core Practical 10 uses an air track with light gates and a data logger (ICT) to investigate collisions between gliders. The air track minimises friction (air cushion eliminates contact friction), providing an approximately closed system. By measuring glider velocities before and after a collision, you can test whether momentum is conserved and compare the kinetic energies before and after to classify the collision as elastic or inelastic." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Equipment The air track: a long hollow aluminium beam with holes along its length; a pump blows compressed air through the holes, creating a cushion of air on which the gliders float. Light gates: infra-red beams that are interrupted by a card of known length attached to each glider; the data logger records the time for each interruption. A data logger or computer: calculates speed = card length / time of interruption. The gliders can have velcro pads (for perfectly inelastic — sticking — collisions) or spring bumpers (elastic collisions)." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Air Track Collision Setup</text><rect x="15" y="100" width="370" height="15" rx="3" fill="#adb5bd" stroke="#495057" stroke-width="2"/><rect x="50" y="72" width="55" height="28" rx="3" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="77" y="90" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">Glider A</text><line x1="77" y1="72" x2="77" y2="60" stroke="#212529" stroke-width="1.5"/><rect x="66" y="52" width="22" height="8" rx="1" fill="#212529"/><rect x="140" y="72" width="55" height="28" rx="3" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="167" y="90" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">Glider B</text><line x1="167" y1="72" x2="167" y2="60" stroke="#212529" stroke-width="1.5"/><rect x="156" y="52" width="22" height="8" rx="1" fill="#212529"/><rect x="85" y="38" width="8" height="35" rx="2" fill="#fab005" opacity="0.8"/><rect x="148" y="38" width="8" height="35" rx="2" fill="#fab005" opacity="0.8"/><text x="89" y="35" font-family="sans-serif" font-size="9" fill="#e67700">LG1</text><text x="152" y="35" font-family="sans-serif" font-size="9" fill="#e67700">LG2</text><rect x="240" y="72" width="55" height="28" rx="3" fill="#adb5bd" stroke="#495057" stroke-width="2"/><text x="267" y="90" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">LG3</text><rect x="245" y="38" width="8" height="35" rx="2" fill="#fab005" opacity="0.8"/><text x="249" y="35" font-family="sans-serif" font-size="9" fill="#e67700">LG3</text><line x1="50" y1="135" x2="50" y2="145" stroke="#212529" stroke-width="1.5"/><line x1="105" y1="135" x2="105" y2="145" stroke="#212529" stroke-width="1.5"/><line x1="50" y1="140" x2="105" y2="140" stroke="#212529" stroke-width="1.5"/><text x="77" y="158" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">v = card/time</text><text x="200" y="168" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Data logger records interrupt times &#8594; calculates speed for each glider</text></svg>', caption: 'Air track with light gates: LG1 records u₁ (Glider A before); LG2 records u₂ (Glider B before); LG3 records velocities after' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Procedure (1) Measure the length of the card attached to each glider using a ruler. (2) Set up three light gates: LG1 before glider A, LG2 before the collision point, LG3 after the collision point (or use LG2 to catch velocity after if gliders stick). (3) Set A moving towards B (stationary or moving). (4) Record interrupt times from the data logger and calculate velocities: v = card length / interrupt time. (5) Calculate momentum before and after: p = mv for each glider. (6) Compare total momentum before and after. (7) Also calculate KE before and after to classify the collision." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Calculating Results For each glider, v = L/t where L = card length (m) and t = interrupt time (s). Direction must be assigned by observation: if Glider A moved right and Glider B was pushed right, both have positive velocities. If a glider bounces back, it has a negative velocity. Calculate total momentum before = m_A × u_A + m_B × u_B and total momentum after = m_A × v_A + m_B × v_B. If the values agree (within experimental error, typically ±5%), momentum is conserved." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="170" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Results Table: Momentum Before and After</text><rect x="15" y="30" width="370" height="130" rx="5" fill="#fff" stroke="#adb5bd" stroke-width="1.5"/><line x1="15" y1="55" x2="385" y2="55" stroke="#adb5bd" stroke-width="1"/><line x1="15" y1="80" x2="385" y2="80" stroke="#adb5bd" stroke-width="1"/><line x1="15" y1="105" x2="385" y2="105" stroke="#adb5bd" stroke-width="1"/><line x1="15" y1="130" x2="385" y2="130" stroke="#adb5bd" stroke-width="1"/><line x1="95" y1="30" x2="95" y2="160" stroke="#adb5bd" stroke-width="1"/><line x1="175" y1="30" x2="175" y2="160" stroke="#adb5bd" stroke-width="1"/><line x1="255" y1="30" x2="255" y2="160" stroke="#adb5bd" stroke-width="1"/><line x1="320" y1="30" x2="320" y2="160" stroke="#adb5bd" stroke-width="1"/><text x="55" y="48" font-family="sans-serif" font-size="10" fill="#212529" text-anchor="middle">Quantity</text><text x="135" y="48" font-family="sans-serif" font-size="10" fill="#212529" text-anchor="middle">Glider A</text><text x="215" y="48" font-family="sans-serif" font-size="10" fill="#212529" text-anchor="middle">Glider B</text><text x="287" y="48" font-family="sans-serif" font-size="10" fill="#212529" text-anchor="middle">Total p</text><text x="352" y="48" font-family="sans-serif" font-size="10" fill="#212529" text-anchor="middle">Total KE</text><text x="55" y="70" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">Before</text><text x="135" y="70" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">m_Au_A</text><text x="215" y="70" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">m_Bu_B</text><text x="287" y="70" font-family="sans-serif" font-size="10" fill="#2b8a3e" text-anchor="middle">p_before</text><text x="352" y="70" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">KE_before</text><text x="55" y="95" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">After</text><text x="135" y="95" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">m_Av_A</text><text x="215" y="95" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">m_Bv_B</text><text x="287" y="95" font-family="sans-serif" font-size="10" fill="#2b8a3e" text-anchor="middle">p_after</text><text x="352" y="95" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">KE_after</text><text x="55" y="120" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Verification</text><text x="200" y="120" font-family="sans-serif" font-size="10" fill="#2b8a3e" text-anchor="middle">p_before &#8776; p_after</text><text x="352" y="120" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">KE loss?</text><text x="200" y="147" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">Elastic: KE conserved | Inelastic: KE lost</text></svg>', caption: 'Results table format: calculate p and KE before and after; p should be conserved; KE may be lost (inelastic) or conserved (elastic)' } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Sources of Error and Improvements Friction: even on an air track, residual friction can reduce the momentum of the gliders. Check the track is level (balance a glider on it — it should not drift). Card length measurement: use a precision ruler and take multiple readings. Timing: the data logger is more accurate than manual timing; ensure the card does not clip the gate at an angle. Glider masses: weigh on a balance before the experiment; do not assume manufacturer's stated mass. The major systematic error is that if the track is not horizontal, a component of gravity provides an external horizontal force, violating the closed system assumption." } },
+    { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'The air track minimises friction to simulate a closed system (no external horizontal force). The key check is that total momentum before ≈ total momentum after, within experimental uncertainty. To classify the collision: if KE is also conserved → elastic; if KE is lost → inelastic; if objects stick together → perfectly inelastic.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Describe the equipment used in Core Practical 10 and explain the role of the air track, light gates, and data logger", checked: false },
+      { text: "Explain how to calculate velocity from a light gate interrupt time and card length", checked: false },
+      { text: "Identify two sources of error in this experiment and suggest improvements", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Air track minimises friction → approximately closed system. Light gates measure v = card length / interrupt time. Data logger records times for each glider before and after. Calculate p = mv for each glider; compare total p before and after. KE comparison classifies collision: elastic (KE conserved) or inelastic (KE lost). Main errors: unlevelled track, friction, card length measurement." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 10: Investigating Collisions using ICT' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'What is the role of the air track in this experiment? Why is it used instead of a regular track?' },
+    { id: 'cue-2', blockId: 'para-5', prompt: 'How do you calculate the velocity of a glider from light gate data? What two quantities do you need?' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'Give two sources of error in Core Practical 10 and suggest how each is reduced.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

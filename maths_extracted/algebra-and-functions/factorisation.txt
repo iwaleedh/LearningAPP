@@ -1,0 +1,32 @@
+Edexcel A Level Maths: Pure Revision Notes
+Polynomial Factorisation
+Exam code:9MA0 Download PDF
+Help me understand
+Written by:Roger B
+Updated on 19 June 2025
+Did this video help you? Yes No
+Polynomial factorisation
+What is polynomial factorisation?
+Factorising a polynomial combines the factor theorem
+with the method of polynomial division
+The goal is to break down a polynomial as far as possible
+into a product oflinear factors
+Stuck on something?
+Ask questions and get help with
+How do I factorise a polynomial? exactly what you're revising.
+Got it
+At A level you will usually be asked to factorise a cubic –
+i.e. a polynomial where the highest power of x is 3
+To factorise a cubic polynomial f(x) follow the following
+steps:
+Step 1. Find a value p that makes f(p) = 0
+Step 2. Use polynomial division to divide f(x) by (x - p)
+Step 3. Use the result of your division to write
+f(x) = (x - p) (ax2 + bx + c)
+Step 4. If the quadratic (ax2 + bx + c) is factorisable,
+factorise it and write f(x) as a product of three linear
+factors (if the quadratic is not factorisable, then your result
+from Step 3 is the final factorisation)
+Examiner Tips and Tricks
+The method outlined above can be logically extended to
+factorise a polynomial of any degree.

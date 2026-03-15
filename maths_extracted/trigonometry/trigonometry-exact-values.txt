@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+Trigonometry Exact Values
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Did this video help you? Yes No
+Trigonometry exact values
+What are exact values in
+trigonometry?
+In trigonometry some values of sin, cos and tan are “nice”
+For example sin 30° = ½, tan 45° = 1
+We can find those associated with the angles 30°, 45° Help me understand
+and 60° using SOHCAHTOA on isosceles and equilateral
+triangles
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+sin, cos and tan values for 30°, 45° and 60° should be
+recalled easily
+Memorise either the actual values or how to work them out
+from the triangle
+sin, cos and tan for 0°, 90°, 180° should also be very
+familiar
+They can be recalled using the relevant trigonometric
+graph (see Graphs of Trigonometric Functions)
+What exact values do I need to
+know in trigonometry?
+All of the above applies to radians as well as degrees
+Here is a table of all exact values including radians (see
+Radian Measure)
+How do I find exact values of other
+angles?
+Exact sin, cos and tan values of multiples of 30°, 45°, 60°
+can also be found
+This is a combination of recalling the basic values and
+using the graph
+Examiner Tips and Tricks
+Draw the triangles for sin, cos and tan of 30°, 45° and 60°
+on the exam paper so that you can then use them as many
+times as you need throughout the paper.

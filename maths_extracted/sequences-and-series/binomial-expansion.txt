@@ -1,0 +1,49 @@
+Edexcel A Level Maths: Pure Revision Notes
+Binomial Expansion
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Help me understand
+06:54
+Did this video help you? Yes No
+Binomial expansion
+What is the binomial expansion?
+Stuck on something?
+Look at the pattern
+Start at nC , then nC, nC , etc Ask questions and get help with
+0 1 2
+Powers of a start at n and decrease by 1 exactly what you're revising.
+Powers of b start at 0 and increase by 1
+Got it
+There are shortcuts but these hide the pattern
+nC = nC = 1
+0 n
+nC = nC = n
+1 n-1
+nCr = nC
+n-r
+(b)0 = (a)0 = 1
+Use the shortcuts once familiar with the pattern
+! means factorial
+This is given in the formula booklet
+What is Pascal’s triangle?
+Pascal’s triangle is an alternative to nC
+r
+It is useful for lower values of n
+For larger n it is slow and prone to arithmetic errors
+How do I expand brackets with the
+binomial expansion?
+Use a line for each term to make things easier to read and
+follow
+Use brackets, particularly helpful when negatives involved
+Use a calculator for nC
+r
+Worked Example
+Applications of binomial
+expansion
+What are binomial expansions used
+for?
+Expanding brackets, it is usual to be asked for either …
+… the first few terms only
+or (the coefficient of) a particular term
+Solvingproblems in unknowns

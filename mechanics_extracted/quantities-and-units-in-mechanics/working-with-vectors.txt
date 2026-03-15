@@ -1,0 +1,149 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Working with Vectors
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 16 February 2026
+Did this video help you? Yes No
+Working with vectors
+Help me understand
+Vectors are used throughout mechanics to describe forces
+and motion
+How are vectors used in
+Mechanics?
+Vector questions are often embedded in a Mechanics
+context
+Vectors will most commonly represent forces,
+accelerations or velocities, they can also represent
+displacement
+Newton’s Second Law F=mais essential
+Remember that Fand a (force and acceleration) are
+vectors, while m (mass) is a scalar
+When a particle is in equilibrium, the vector sum of the
+forces on it is equal to zero
+What is vector notation?
+Stuck on something?
+There are twovectornotations used in A level
+mathematics: Ask questions and get help with
+Columnvectors: This is one number written above the exactly what you're revising.
+other enclosed in brackets,
+Got it
+e.g. The (column) vector meaning 3 units in the
+positivehorizontal (x) direction (i.e., right) and 2 units
+
+---
+
+in the negativevertical (y ) direction (i.e., down) can
+be written as:
+⎛ ⎜ 3 ⎞ ⎟
+⎜ ⎟
+⎜ ⎟
+⎝−2⎠
+i and j notation: i and j are unitvectors (they have
+magnitude 1) in the positive horizontal and positive
+vertical directions respectively
+e.g. The vector (-4i + 3j) would mean 4 units in the
+negativehorizontal (x) direction (i.e. left) and 3 units
+in the positivevertical (y) direction (i.e. up)
+As they are vectors, i and j are displayed in bold in
+textbooks and online but in handwriting they would be
+underlined (i and j)
+How do I calculate a resultant
+vector?
+Both column vectors and i, j notation can be used for
+calculating resultant vectors
+Adding vectors together gives the resultant vector
+This is the same when adding force vectors; the resultant
+force is simply the force vectors added together
+Forces in equilibrium have a resultant force equal to zero
+How do I calculate the magnitude
+and direction of a vector?
+Pythagoras is used to find the magnitude of a vector.
+Trigonometry is used to find the direction of a vector
+You may be asked for the direction as a bearing. The unit
+vectorj can be used to represent north and the unit vector
+i canbe used to represent east.
+In the case where k > 0
+If a particle is moving north then its velocity will
+have a vector of kj
+If a particle A is due south of another particle B
+then the displacement vector from B to A will
+have the form -kj
+If a particle is moving east then its velocity will
+have a vector of ki
+If a particle A is due west of another particle B
+then the displacement vector from B to A will
+have the form -ki
+
+---
+
+If the position vectors of two particles have the same j
+component, then the particle with the greater i
+component will be positioned due east of the other
+If the position vector of a particle has equal i and j
+components then it is positioned due north - east of
+the origin
+If a particle A is north – east of another particle B
+then the displacement vector from B to A will
+have equal i and j components
+What does resolving vectors mean?
+Resolving a vector means writing it in component form (as
+i and j components)
+Given the magnitude and direction of a vector you can
+work out its components using trigonometry
+(SOHCAHTOA)
+Worked Example
+Two forces F, F act on a particle P, F = -7i + 3j and F = 4i + 6j.
+1 2 1 2
+a) Find the magnitude of the resultant force R acting on the
+particle.
+Leaving your answer as a simplified surd.
+Answer:
+b) Find the bearing of the resultant force R.
+
+---
+
+Give your answer to the nearest degree.
+Answer:
+A third force F = si – tj brings the particle into equilibrium.
+3
+c) Find s and t and state the force for F in terms of i and j.
+3
+Answer:
+Examiner Tips and Tricks
+When working with vectors pay attention to accuracy,
+leaving magnitude in surd form or correct to 3 s.f.
+In your exam you can’t write in bold so should underline
+your vector notation
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+
+---
+
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

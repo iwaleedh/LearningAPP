@@ -1,51 +1,28 @@
 export const note_physics_4_18_5 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Electric Field between Parallel Plates" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Derive and apply E = V/d for the uniform electric field between parallel plates; describe the field pattern; calculate force on a charged particle in the field; describe the parabolic motion of a charged particle entering the field" } },
     { id: 'head-1', type: 'heading', data: { text: "Electric Field between Parallel Plates", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Electric Field between Parallel Plates will be updated." } },
-
-  
-    {
-      id: 'svg-physics_4_18_5-0',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Uniform Field E = V/d</text>
-  <rect x="100" y="60" width="200" height="15" fill="#ef4444"/>
-  <text x="310" y="72" font-family="Arial" font-size="14" fill="#ef4444">+V</text>
-  <rect x="100" y="150" width="200" height="15" fill="#3b82f6"/>
-  <text x="310" y="162" font-family="Arial" font-size="14" fill="#3b82f6">0V</text>
-  <path d="M 120 75 L 120 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 160 75 L 160 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 200 75 L 200 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 240 75 L 240 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 280 75 L 280 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 60 75 L 60 145" stroke="#475569" stroke-width="1" stroke-dasharray="4,4"/>
-  <text x="50" y="115" font-family="Arial" font-size="14" fill="#475569">d</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 18_5'
-      }
-    },
-    {
-      id: 'svg-physics_4_18_5-1',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
-  <rect x="100" y="50" width="200" height="10" fill="#ef4444"/>
-  <rect x="100" y="150" width="200" height="10" fill="#3b82f6"/>
-  <path d="M 40 100 Q 150 100 250 150" stroke="#1d4ed8" stroke-width="3" fill="none" marker-end="url(#arrow-blue)"/>
-  <circle cx="250" cy="150" r="5" fill="#3b82f6"/>
-  <text x="260" y="155" font-family="Arial" font-size="12" fill="#1d4ed8">Electron beam</text>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Deflection of Charged Particles</text>
-  <text x="200" y="190" font-family="Arial" font-size="12" fill="#475569" text-anchor="middle">Parabolic Path through Uniform Field</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 18_5'
-      }
-    },
+    { id: 'para-2', type: 'paragraph', data: { text: "When two parallel conducting plates are connected to a battery with potential difference V and separated by a distance d, a uniform electric field is produced between them. 'Uniform' means the field strength E is the same at every point between the plates (except near the edges where fringing occurs). This is one of the most useful configurations in physics because the field is predictable and calculable — it is used in cathode ray tubes, particle accelerators, and ink-jet printers." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Derivation of E = V/d For a uniform field, the work done moving a charge q from the negative plate to the positive plate through distance d is W = F × d = qE × d. But this work also equals the energy gained from the potential difference: W = qV. Therefore qEd = qV, giving E = V/d. The electric field strength between parallel plates equals the potential difference divided by the separation. Units: V/m (equivalent to N/C)." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 185" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="185" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Uniform Electric Field: E = V/d</text><rect x="50" y="35" width="300" height="12" rx="2" fill="#c92a2a" stroke="#c92a2a" stroke-width="2"/><text x="365" y="46" font-family="sans-serif" font-size="10" fill="#c92a2a">+V</text><rect x="50" y="140" width="300" height="12" rx="2" fill="#1864ab" stroke="#1864ab" stroke-width="2"/><text x="365" y="150" font-family="sans-serif" font-size="10" fill="#1864ab">0 V</text><line x1="100" y1="47" x2="100" y2="140" stroke="#495057" stroke-width="1.5"/><polygon points="100,140 95,130 105,130" fill="#495057"/><line x1="150" y1="47" x2="150" y2="140" stroke="#495057" stroke-width="1.5"/><polygon points="150,140 145,130 155,130" fill="#495057"/><line x1="200" y1="47" x2="200" y2="140" stroke="#495057" stroke-width="1.5"/><polygon points="200,140 195,130 205,130" fill="#495057"/><line x1="250" y1="47" x2="250" y2="140" stroke="#495057" stroke-width="1.5"/><polygon points="250,140 245,130 255,130" fill="#495057"/><line x1="300" y1="47" x2="300" y2="140" stroke="#495057" stroke-width="1.5"/><polygon points="300,140 295,130 305,130" fill="#495057"/><line x1="35" y1="47" x2="35" y2="140" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="3,3"/><line x1="38" y1="47" x2="32" y2="47" stroke="#adb5bd" stroke-width="1.5"/><line x1="38" y1="140" x2="32" y2="140" stroke="#adb5bd" stroke-width="1.5"/><text x="22" y="95" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle" transform="rotate(-90 22,95)">d</text><text x="200" y="167" font-family="sans-serif" font-size="12" font-weight="bold" fill="#212529" text-anchor="middle">E = V/d (V/m)</text><text x="200" y="180" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">Uniform field: equal spacing of field lines between plates</text></svg>', caption: 'Uniform electric field: parallel, equally-spaced field lines from + to − plate; E = V/d' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Force on a Charged Particle The electric force on a charge q in a uniform field E is: F = qE = qV/d. For a positive charge, the force is in the direction of the field (from + plate to − plate). For an electron (charge −e), the force is opposite to the field — i.e. towards the positive plate. This force is constant throughout the field region (because E is uniform), just as gravitational force is constant near Earth's surface." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Parabolic Motion of a Charged Particle A charged particle entering the region between the plates horizontally (perpendicular to the field) undergoes projectile-like motion: horizontal direction: no force → constant horizontal velocity v_x (uniform motion). Vertical direction: constant electric force F = qE → constant acceleration a = qE/m = qV/(md). This combination produces a parabolic path identical in form to gravitational projectile motion. The vertical displacement after time t is y = ½at², where a = qV/(md)." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="180" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Parabolic Path of Charged Particle in Uniform Field</text><rect x="100" y="35" width="240" height="10" rx="2" fill="#c92a2a"/><text x="355" y="45" font-family="sans-serif" font-size="9" fill="#c92a2a">+</text><rect x="100" y="140" width="240" height="10" rx="2" fill="#1864ab"/><text x="355" y="150" font-family="sans-serif" font-size="9" fill="#1864ab">&#8722;</text><line x1="130" y1="45" x2="130" y2="140" stroke="#dee2e6" stroke-width="1" stroke-dasharray="2,3"/><line x1="180" y1="45" x2="180" y2="140" stroke="#dee2e6" stroke-width="1" stroke-dasharray="2,3"/><line x1="230" y1="45" x2="230" y2="140" stroke="#dee2e6" stroke-width="1" stroke-dasharray="2,3"/><line x1="280" y1="45" x2="280" y2="140" stroke="#dee2e6" stroke-width="1" stroke-dasharray="2,3"/><circle cx="100" cy="90" r="5" fill="#fab005" stroke="#e67700" stroke-width="1.5"/><path d="M 100 90 Q 200 90 260 130" stroke="#2b8a3e" stroke-width="2.5" fill="none"/><line x1="100" y1="90" x2="135" y2="90" stroke="#2b8a3e" stroke-width="1.5"/><polygon points="135,90 127,86 127,94" fill="#2b8a3e"/><text x="100" y="82" font-family="sans-serif" font-size="10" fill="#2b8a3e">v_x (constant)</text><line x1="260" y1="120" x2="260" y2="148" stroke="#c92a2a" stroke-width="1.5"/><polygon points="260,148 255,140 265,140" fill="#c92a2a"/><text x="270" y="138" font-family="sans-serif" font-size="10" fill="#c92a2a">a = qE/m</text><text x="200" y="168" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">y = &#189;at&#178; (parabola); horizontal: x = v_x t</text></svg>', caption: 'Positive charge entering field horizontally: constant v_x, constant acceleration a = qE/m downward → parabolic path' } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Worked Example An electron (m_e = 9.11×10⁻³¹ kg, e = 1.6×10⁻¹⁹ C) enters the field between two parallel plates (separation d = 5.0 cm, voltage V = 200 V) with horizontal speed 3.0×10⁷ m/s. Find the electric field, the force, and the acceleration. E = V/d = 200/0.05 = 4000 V/m. F = eE = 1.6×10⁻¹⁹ × 4000 = 6.4×10⁻¹⁶ N (towards positive plate). a = F/m = 6.4×10⁻¹⁶ / 9.11×10⁻³¹ = 7.0×10¹⁴ m/s²." } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Applications Cathode ray tube (CRT) oscilloscopes and old television sets use pairs of deflection plates to steer the electron beam horizontally and vertically. The amount of deflection is proportional to the voltage applied to the plates — this is how the oscilloscope measures voltage. Ink-jet printers use charged ink droplets deflected by electric fields to land in precise positions. Velocity selectors in mass spectrometers use the balance between electric and magnetic forces (FE = FM → qE = qvB → v = E/B) to select particles of a specific speed." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Formula', text: 'E = V/d (uniform field between parallel plates; V = p.d., d = plate separation). Force on charge q: F = qE = qV/d. Acceleration: a = qE/m = qV/(md). Field lines are parallel and equally spaced, pointing from + to − plate.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Derive E = V/d from the definition of work done and potential difference", checked: false },
+      { text: "Calculate the electric force and acceleration on a charged particle between parallel plates", checked: false },
+      { text: "Describe and explain the parabolic path of a charged particle entering the field horizontally", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Uniform field between parallel plates: E = V/d (V/m). Field lines parallel, equally spaced from + to − plate. Force on charge q: F = qE = qV/d; acceleration a = qV/(md). Charged particle entering horizontally: constant v_x, constant a vertically → parabolic path identical to projectile motion under gravity. Applications: CRT screens, ink-jet printers, velocity selectors." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Field between Parallel Plates' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'Derive E = V/d for a uniform field between parallel plates.' },
+    { id: 'cue-2', blockId: 'para-5', prompt: 'A charged particle enters the region between parallel plates horizontally. Describe its motion and explain why the path is parabolic.' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'Plates separated by 5 cm with 200 V across them. Find E, F on an electron, and its acceleration.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

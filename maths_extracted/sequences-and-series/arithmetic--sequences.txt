@@ -1,0 +1,26 @@
+Edexcel A Level Maths: Pure Revision Notes
+Arithmetic Sequences
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Arithmetic sequences
+What do I need to know about
+arithmetic sequences?
+In an arithmetic sequence, the difference between
+consecutive terms in the sequence is constant
+That constant difference is known as the common Stuck on something?
+difference of the sequence
+Ask questions and get help with
+You need to know the nth term formula for an arithmetic
+exactly what you're revising.
+sequence
+u =a+(n−1)d
+Got it
+n
+a is the first term
+d is the common difference
+Examiner Tips and Tricks
+If you know two terms in an arithmetic sequence you can find
+a and d using simultaneous equations.

@@ -1,0 +1,23 @@
+Edexcel A Level Maths: Pure Revision Notes
+Language of Proof
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 18 June 2025
+Help me understand
+04:32
+Did this video help you? Yes No
+Language of proof
+What is proof?
+Proof is a series of logical steps which show whether a
+result is true or not for a set of specified numbers
+e.g. All integers, all even numbers etc
+Notation in proof
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+LHS and RHS are standard abbreviations for left-hand
+side and right-hand side
+Integers are used frequently in the language of proof
+The set of integers is denoted by ℤ
+Techniques for proof

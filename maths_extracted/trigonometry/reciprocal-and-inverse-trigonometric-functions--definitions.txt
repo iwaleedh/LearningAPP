@@ -1,0 +1,27 @@
+Edexcel A Level Maths: Pure Revision Notes
+Definitions of Reciprocal
+Trigonometric Functions
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Definitions of reciprocal
+trigonometric functions
+What are the reciprocal
+trigonometric functions?
+There are three reciprocal trig functions corresponding to
+the three regular trig functions
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Cotangent can also be written in terms of sine and cosine
+Examiner Tips and Tricks
+To solve equations with the reciprocal trig functions,
+convert them into the regular trig functions and solve in
+the usual way.
+Don't forget that both tan and cot can be written in terms
+of sin and cos (see the Worked Example below).
+You will sometimes see csc instead of cosec for
+cosecant.

@@ -1,0 +1,38 @@
+Edexcel A Level Maths: Pure Revision Notes
+Quadratic Graphs
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 19 June 2025
+Did this video help you? Yes No
+Quadratic graphs
+What are quadratic graphs?
+The general equation of a quadratic graph is
+y =ax2+bx+c
+Their shape is called a parabola ("U" shape)
+Positive quadratics have a value of a >0 so the
+parabola is upright∪
+Negative quadratics have a value of a<0 so the parabola Help me understand
+is upside down ∩
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I use quadratic graphs?
+You need to be able to:
+sketch a quadratic graph given an equation or information
+about the graph
+determine, from the equation, the axesintercepts
+factorise, if possible, to find the roots of the quadratic
+function
+find the coordinates of the turning point (maximum or
+minimum)
+You may have to rearrange the equation before you can find
+some of these things
+Examiner Tips and Tricks
+Your calculator may tell you the roots of a quadratic
+function and the coordinates of the turning point
+But don't rely on it – think about how many marks the
+question is worth and how much method/working you
+should show
+Remember sometimes you'll need to rearrange an
+equation into the form y =ax2+bx+c

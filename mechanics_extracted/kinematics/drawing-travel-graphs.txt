@@ -1,0 +1,106 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Drawing Travel Graphs
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Drawing travel graphs
+How do I draw a displacement-time
+graph or a velocity-time graph?
+You may be asked to draw a displacement-time graph or
+a velocity-time graph
+You will be given information about different sections of a
+journey and must draw each section and label the points
+on the axes
+Remember that time will always be on the x-axis
+Always remember to include units when you label the axis
+Use appropriate facts about the gradient and area under
+the graph to work backwards and find relevant or missing
+information
+Help me understand
+The gradient of a displacement-time graph is the
+velocity and the gradient of a velocity-time graph is
+the acceleration
+The area between a velocity-time graph and the x-
+axis is the displacement
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+
+---
+
+Worked Example
+The driver of a train, travelling at 40 m s-1 on a straight
+horizontal track, is informed of debris on the track 0.74 km
+ahead and immediately applies the brakes.
+The train decelerates uniformly for 20 seconds to a speed of
+12 m s-1
+The train then maintains this speed for another 8 seconds.
+The driver reapplies the brakes to slow down the train at a
+constant rate and bring it to a complete stop 10 m before the
+debris.
+(a) Sketch a velocity-time graph to show the motion of the
+train.
+Answer:
+(b) Find the deceleration of the train from the moment the
+brakes were first applied to the moment its speed first
+reached 12 m s-1.
+Answer:
+
+---
+
+(c) Calculate the total time from the moment the brakes were
+first applied to the moment the train came to rest.
+Answer:
+Examiner Tips and Tricks
+As in the worked example, examiners can use other
+words, such as uniformly, to mean constant.
+Be careful to spot if you are working with a displacement-
+time graph or a velocity-time graph.
+Remember that displacement and velocity can be
+negative whereas distance and speed can not be
+negative.
+Take care when a velocity-time graph is below the x-axis,
+if it has a negative gradient then it is speeding up and
+moving backwards. If it has a positive gradient below the
+x-axis then it is still moving backwards but it is slowing
+down.
+Think about the units when calculating displacement,
+velocity and acceleration.
+
+---
+
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+
+---
+
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

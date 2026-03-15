@@ -1,0 +1,47 @@
+Edexcel A Level Maths: Pure Revision Notes
+Quotient Rule
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+03:32
+Did this video help you? Yes No
+Quotient rule
+What is the quotient rule?
+The quotient rule is a formula that allows you to
+differentiate a quotient of two functions (ie one function
+divided by another)
+u
+If y= where u and vare functions ofx then the quotient
+v
+rule is:
+du dv
+v −u
+dy
+dx dx
+= Help me understand
+dx v2
+g(x)
+In function notation, if f(x)= then the quotient rule
+h(x)
+can be written as:
+h(x)g'(x)−g(x)h'(x)
+f'(x)=
+(h(x))2
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Examiner Tips and Tricks
+The quotient rule formula is in the formulae booklet – you
+don't have to memorise it.
+Be careful using the formula – because of the minus sign
+in the numerator the order of the functions is important.
+Look out for functions of the form f(x)=g(x)(h(x))−1
+You could differentiate that using a combination of
+the chain rule and the product rule (and it can be
+good practice for you to try it!)
+But it can also be seen as just a quotient rule question
+in disguise
+g(x)
+g(x)(h(x))−1=
+h(x)

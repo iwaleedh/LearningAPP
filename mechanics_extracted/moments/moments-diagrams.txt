@@ -1,0 +1,103 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Moments Diagrams
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Moments diagrams
+When an object is modelled as a particle we do not need to
+Help me understand
+consider the rotation of the object due to forces. When we
+model an object as a rigid body then we need to consider the
+rotation of the object.
+What is a moment?
+The moment of a force is the measure of its ability to
+cause a body to rotate about a specific point (usually
+called the pivot)
+The units for moments are newton metres (N m)
+A force can cause a body to rotate clockwise or anti-
+clockwise
+The moment of a force about a point is calculated by
+multiplying the magnitude of the force by the
+perpendicular distance from the line of action of the
+force to the point
+We can choose the positive direction to be
+clockwise or anti-clockwise and the negative
+direction is the opposite Stuck on something?
+A zero moment will not cause a body to rotate
+Ask questions and get help with
+The moment of a force about a point is zero if the line of exactly what you're revising.
+action of the force goes through the point
+If the force is not acting perpendicular to the distance Got it
+given you will need to use right-angled trigonometry to
+find the perpendicular distance
+
+---
+
+How do I know if a moment is
+clockwise or anti-clockwise?
+A clockwise moment will cause a body to rotate in the
+clockwise direction
+To visualise this:
+Imagine that the perpendicular line from the point to
+the force is the radius of a circle
+The direction of the force tells you which way the
+circle goes round
+What is the resultant moment?
+The resultant moment is the sum of all the moments
+acting on a body (both positive and negative)
+To find the resultant moment:
+Define the positive direction (clockwise or anti-
+clockwise)
+Add together all the moments in that direction
+Subtract all the moments in the opposite direction
+The overall value is the resultant moment
+The sign of the resultant moment indicates which
+direction the body will rotate
+Positive will be the direction chosen as positive
+Negative will be the opposite direction
+Worked Example
+Calculate the resultant moment about P of the forces
+indicated in the following diagram.
+Answer:
+
+---
+
+Examiner Tips and Tricks
+Always define a positive direction as either clockwise or
+anti-clockwise.
+It is best to state the magnitude of a moment and write its
+direction when giving a final answer.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+
+---
+
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

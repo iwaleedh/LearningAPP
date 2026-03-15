@@ -1,0 +1,59 @@
+Edexcel A Level Maths: Pure Revision Notes
+Position Vectors
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 20 June 2025
+Help me understand
+03:56
+Did this video help you? Yes No
+Position vectors
+What is a position vector?
+Position vectors describe the position of a point in
+relation to the origin
+They are different to displacement vectors which
+describe the direction and distance between any two
+points
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Distance between two points Got it
+The distance between two points is the magnitude of the
+vector between them (see Magnitude Direction)
+How do I find the magnitude of a
+displacement vector?
+You can use coordinate geometry to find magnitudes of
+displacement vectors from A to B
+From the position vectors of A and B you know their
+coordinates
+⎛ ⎜x ⎞ ⎟
+If a=O ⎯⎯⎯ A ⎯ =x i+y j= ⎜ ⎜ ⎜ ⎜ 1⎟ ⎟ ⎟ ⎟ , then point A has
+1 1 y
+⎝ 1⎠
+coordinates (x ,y )
+1 1
+⎛ ⎜x ⎞ ⎟
+If b=  O ⎯⎯⎯ B ⎯ =x i+y j= ⎜ ⎜ ⎜ ⎜ 2⎟ ⎟ ⎟ ⎟ , then point B has
+2 2 y
+⎝ 2⎠
+coordinates (x ,y )
+2 2
+The distance between two points is given by
+d = (x − x ) 2 + (y − y ) 2
+1  2 1 2
+So     A ⎯⎯⎯ B ⎯   = (x − x ) 2 + (y − y ) 2
+1 2 1 2
+For example, if points A and B have position vectors
+5i+3j and 3i−6j respectively
+then
+ 
+    A ⎯⎯⎯ B ⎯  = (5−3)2+(3−(−6))2= 85=9.22(3s.f.)
+ 
+Alternatively, you could find     A ⎯⎯⎯ B ⎯   by
+⎯⎯⎯⎯ ⎯⎯⎯⎯ ⎯⎯⎯⎯ ⎯⎯⎯⎯
+first using AB=−OA+OB to find AB in vector form
+and then calculating its magnitude directly
+See the Worked Example below
+Examiner Tips and Tricks
+Remember if asked for a position vector, you must find
+the vector all the way from the origin.
+Diagrams can help, if there isn’t one, draw one.

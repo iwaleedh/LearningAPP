@@ -1,0 +1,23 @@
+Edexcel A Level Maths: Pure Revision Notes
+Equation of a Circle
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Did this video help you? Yes No
+Help me understand
+Equation of a circle
+What is the equation of a circle?
+A circle with centre (a, b) and radius r has the equation
+(x − a)2 + (y − b)2 = r2
+You need to be able to find the centre and radius of a Stuck on something?
+circle from its equation
+Ask questions and get help with
+exactly what you're revising.
+Got it
+You need to be able to find the equation of a circle given
+its centre and radius
+Examiner Tips and Tricks
+Remember that the numbers in the brackets have the
+opposite signs to the coordinates of the centre.
+Don't forget to take the square root of the right-hand
+side of the equation when finding the radius.

@@ -1,0 +1,38 @@
+Edexcel A Level Maths: Pure Revision Notes
+Parallel & Perpendicular
+Gradients
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Did this video help you? Yes No
+Parallel & perpendicular
+gradients
+Help me understand
+What are parallel lines?
+Stuck on something?
+Parallel lines are equidistant meaning they never meet
+Ask questions and get help with
+Parallel lines have equalgradients
+exactly what you're revising.
+Got it
+What are perpendicular lines?
+Perpendicular lines meet at rightangles
+The product of their gradients is -1
+What does collinear mean?
+Collinear line segments are two line segments that are
+part of the same line
+They have equalgradients
+They may pass through, or meet at, a common point
+When they are extended, they become the same line
+Rearrange their equations into the same form and they will
+be identical
+How do I tell if lines are parallel or
+perpendicular?
+Rearrange equations into the form y = mx + c
+m is the gradient
+Examiner Tips and Tricks
+Exam questions are good at “hiding” parallel and
+perpendicular lines.
+For example a tangent and a radius are perpendicular.
+Parallel lines could be implied by phrases like “… at the
+same rate …”

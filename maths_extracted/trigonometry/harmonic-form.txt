@@ -1,0 +1,34 @@
+Edexcel A Level Maths: Pure Revision Notes
+Harmonic Form
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 19 September 2025
+Did this video help you? Yes No
+Harmonic form
+What is harmonic form?
+If a and b are positive constants, then
+a sin x + bcos x can be rewritten as R sin (x + α)
+a sin x - bcos x can be rewritten as R sin (x - α)
+a cos x + bsin x can be rewritten as R cos (x - α) Help me understand
+a cos x - bsin x can be rewritten as R cos (x + α)
+The forms with R and α are called harmonic forms
+It is the reverse of expanding the right-hand side out
+using compound angle formulae
+It can be seen as factorising
+In all four cases R > 0 and 0 < α < 90°, with:
+Stuck on something?
+Ask questions and get help with
+To find α,first divide the b expression by the a expression
+exactly what you're revising.
+The R's cancel
+Use the identity sin α / cos α = tan α Got it
+You get b / a = tanα
+Then use tan-1 (b/a) to find α
+How do I write trigonometric
+expressions in harmonic form?
+To rewrite the expression use the appropriate compound
+angle formula and equate coefficients
+Examiner Tips and Tricks
+There is more than one way to rewrite a given expression,
+and the question in the exam will tell you which form to
+use.

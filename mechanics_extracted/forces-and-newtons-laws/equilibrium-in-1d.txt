@@ -1,0 +1,91 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Equilibrium in 1D
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 25 November 2025
+Did this video help you? Yes No
+Equilibrium in 1D
+What is Newton’s first law of
+motion?
+An object at rest will stay at rest, and an object moving Help me understand
+with constant velocitywill continue to move with constant
+velocity, unless an unbalanced force acts on the object.
+What is the resultant force and an
+unbalanced force?
+The resultantforce is the sumofforces acting on a
+particle – consider it as a singleforce that achieves the
+sameresult as all the forces combined
+An unbalancedforce is a force acting on a particle that is
+not cancelled by another force acting in the opposite
+direction
+So a non-zero resultant force will be unbalanced (hence
+the wording in Newton’s First Law of Motion) and the
+particle will accelerate Stuck on something?
+What does equilibrium mean? Ask questions and get help with
+exactly what you're revising.
+A particle is in equilibrium if the resultantforce acting on
+it is zero Got it
+In other words when the sumoftheforces acting on a
+particle is zero
+
+---
+
+For example, in the horizontal direction, any forces
+acting to move the particle to the left will be
+balanced by any forces acting to move the particle to
+the right.
+There does not need to be the same number of forces
+in both directions – two forces could be acting to
+move the particle to the left but are cancelled out by
+only one force acting to move the particle to the right.
+Worked Example
+A rectangular shop sign, of mass (4× — 8) kg is held in
+equilibrium by two light inextensible strings as shown in the
+diagram below. The tensions in the two strings are (20x + 9) N
+and (10x + 11) N.
+The sign is modelled as a particle.
+Taking the acceleration due to gravity (g) as 10 m s-2, find the
+value of x.
+Answer:
+Examiner Tips and Tricks
+
+---
+
+It is unlikely you will get an exam question that only deals
+with one dimension at AS and A level. However two-
+dimensional problems can often be broken down into
+two one-dimensional problems so the principles in this
+note are important to understand.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+
+---
+
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

@@ -1,0 +1,48 @@
+Edexcel A Level Maths: Pure Revision Notes
+x = g(x) Iteration
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 23 June 2025
+Help me understand
+05:47
+Did this video help you? Yes No
+x = g(x) iteration
+What is iteration?
+When an equation cannot be solved using the usual
+analytical methods, we can still find approximate
+solutions to a certain degree of accuracy
+Iteration is one way to do this, by repeatedly using each
+answer as the new starting value for a function, we can
+achieve an ever more accurate answer
+What does x = g(x ) mean?
+n + 1 n
+Iterations are shown using the notation x = g(x )
+n + 1 n
+This is a recurrence relation where, starting with a number
+(x ), we will get an answer x which we can then reuse in
+n n + 1
+the original function
+Equations need to be rearranged into an iterative formula
+– ie. the form x = g(x)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+What are staircase diagrams and
+cobweb diagrams?
+Iterations can be shown on diagrams called staircase or
+cobweb diagrams
+These can be drawn by plotting the graphs of y = x
+against y = g(x) from your iterative formula
+Examiner Tips and Tricks
+You must show all your steps when rearranging an
+equation into an iterative formula
+Working backwards can often be helpful to figure out
+how an equation has been rearranged but you must write
+your answer as if you worked forwards
+Use ANS button on your calculator to calculate repeated
+iterations
+Keep track of your iterations using x , x … notation
+2 3
+Iteration may be part of bigger numerical methods
+questions

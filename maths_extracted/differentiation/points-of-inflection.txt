@@ -1,0 +1,31 @@
+Edexcel A Level Maths: Pure Revision Notes
+Points of Inflection
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+05:38
+Did this video help you? Yes No
+Points of inflection
+What is a point of inflection?
+At AS level you encountered points of inflection when
+discussing stationary points
+When the sign of the first derivative (ie of the gradient)
+is the same on both sides of a stationary point, then
+the stationary point is a point of inflection
+Help me understand
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+A point of inflection does not have to be a stationary point
+however Got it
+A point of inflection is any point at which a curve changes
+from being convex to being concave
+This means that a point of inflection is a point where
+the second derivative changes sign (from positive to
+negative or vice versa)
+How do I find points of inflection?
+To find the points of inflection of a curve with equation
+y = f(x):
+Examiner Tips and Tricks
+Remember – the first derivative (ie the gradient) does
+NOT have to be zero at a point of inflection!

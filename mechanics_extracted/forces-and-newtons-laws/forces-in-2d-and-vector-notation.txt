@@ -1,0 +1,127 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Forces in 2D & Vector Notation
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 25 November 2025
+Did this video help you? Yes No
+Forces in 2D & vector
+notation
+How are forces and vectors
+related?
+Forces are vectors – they have magnitude and direction.
+TheMagnitudeof a force is measured in Newtons and the
+direction of a force is an angle, usually measured in
+degrees, anti-clockwise from the horizontal Help me understand
+There are other ways to talk about direction – in particular
+Cartesiancoordinates(x, y) are used to describe the
+position of a point in two-dimensional space (plane),
+relative to a fixed origin O.
+You may see questions start with a sentence along the
+lines of “Relative to the frame of reference Oxy …” – this
+means the two-dimensional space (plane) and distances
+within it will be based on horizontal (x) and vertical (y)
+components relative to the origin O.
+What is vector notation? Stuck on something?
+Ask questions and get help with
+Bothcolumn vectors and i, j notation can be used for
+exactly what you're revising.
+calculating resultant vectors
+In both cases, a vector (force) is written with its two Got it
+components separated so the magnitude and direction
+of the vector are not directly known.
+
+---
+
+What notation is used for
+magnitude and direction?
+The magnitude of the force F N would be denoted by |F| N
+or F N – notice the use of bold and italics in particular
+Direction is an angle, usually measured in degrees anti-
+clockwise from the horizontal, θ° is usually used
+How do I find the magnitude and
+direction of a force from its
+components?
+For a force F = xi + yj N to find
+its magnitude,|F| N or F N ,use Pythagoras’ theorem
+its direction (as an angle), use a diagram and
+trigonometry
+If either (or both) components are negative then still use a
+diagram and trigonometry but
+treat x and y as positive (so |x| and |y| strictly
+speaking)
+the angle found may need adjusting depending on
+where, and which way, the direction is being
+measured from
+e.g. Find the direction at which the force F = (-8i - 6j)
+N, giving your answer as an angle measured in
+degrees anti-clockwise from the positive horizontal
+direction
+What does equilibrium mean with
+vectors?
+In two dimensions a particle is in equilibrium if the
+resultantforce acting on it in both directions is zero
+For columnvectors, a resultantforce of zero would
+⎛ ⎜0⎞
+⎟
+look like ⎜ ⎜ ⎟ ⎟
+⎝0⎠
+For vectors in i-jnotation, a resultantforce of zero
+would look like (0i + 0j) N
+
+---
+
+Both forms may be written as 0 N (called ‘the zero
+vector’)
+Worked Example
+Two forces, (3i + 8j) N and (—5i — 11j) N act on a particle.
+(i) Find the resultant force.
+(ii) Find the magnitude of the resultant force and its direction
+as an angle measured anti-clockwise from the i-direction.
+(iii) A third force is applied to the particle such that it is
+brought into equilibrium. Find the third force, giving your
+answer in the form (xi+yj)N
+Answer:
+Examiner Tips and Tricks
+Ideally you should stick to the i-,j- vector notation used in
+a question but if you prefer one over the other you can
+use a mixture within the same question. Just be careful
+your final answer is in the correct format if requested.
+Draw diagrams – including ‘mini’-diagrams of individual
+forces/vectors – this can help in understanding a problem
+and being accurate.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+
+---
+
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+
+---
+
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

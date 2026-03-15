@@ -1,0 +1,49 @@
+Edexcel A Level Maths: Pure Revision Notes
+Modelling with Differential
+Equations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 23 June 2025
+Help me understand
+Did this video help you? Yes No
+Modelling with differential
+equations
+What can be modelled with
+differential equations?
+dy
+Derivative terms like are “rates of change”
+dx
+There are many situations that involve “change”
+Temperature
+Radioactivity
+Medication
+Sales
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I set up a model with
+differential equations?
+The first task is to set up a differential equation from a
+description in words:
+Important phrases here are …
+… “rateofchange” ... reference to a derivative term
+dy
+like
+dx
+k
+… directly/inverselyproportional to ... y = kx, y =
+x
+… formulate ... means to write as an equation
+you may need to choose and define letters for
+variables
+V for volume, h for height (of a cylinder, say)
+Some differential equations may involve Connected
+Rates of Change
+Examiner Tips and Tricks
+Use a highlighter (or underline) to pick out important
+words/phrases
+Read and re-read the question several times
+Jot down bits and pieces as you go; do not expect to go
+straight from reading to writing down a differential
+equation.

@@ -1,0 +1,208 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Hypothesis Testing for the
+Population Mean of a Normal
+Distribution
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 26 November 2025
+Did this video help you? Yes No
+Normal hypothesis testing
+How do I do a hypothesis test with a
+normal distribution?
+The population parameter being tested will be the
+population mean, in a normally distributed random
+variable N(μ,σ2)
+The population mean is tested by looking at the mean
+of a sample taken from the population
+The sample mean is denoted ⎯ x ⎯
+For a random variable X∼N(μ,σ2) the distribution of
+⎯⎯ σ2
+the sample mean would be X∼N(μ, )
+n
+A hypothesis test is used when the value of the assumed
+Help me understand
+population mean is questioned
+The null hypothesis, H 0 and alternative hypothesis, H 1 will Stuck on something?
+always be given in terms of µ
+Ask questions and get help with
+Make sure you clearly define µ before writing the
+exactly what you're revising.
+hypotheses, if it has not been defined in the question
+The null hypothesis will always be H : µ = ...
+0 Got it
+The alternative hypothesis will depend on if it is a one-
+tailed or two-tailed test
+A one-tailed test would test to see if the value of µ
+has either increased or decreased
+
+---
+
+The alternative hypothesis, H will be H : µ > ...
+1 1
+or H : µ < ...
+1
+A two-tailed test would test to see if the value of µ has
+changed
+The alternative hypothesis, H will be H : µ ≠ ..
+1 1
+To carry out a hypothesis test with the normal distribution,
+⎯⎯⎯
+the test statistic will be the sample mean, X
+Remember that the variance of the sample mean
+distribution will be the variance of the population
+distribution divided by n
+the mean of the sample mean distribution will be the
+same as the mean of the population distribution
+The normal distribution will be used to calculate the
+probability of the observed value of the test statistic
+taking the observed value or a more extreme value
+The hypothesis test can be carried out by
+either calculating the probability of the test statistic
+taking the observed or a more extreme value (p –
+value) and comparing this with the significance level
+or by finding the critical region and seeing whether
+the observed value of the test statistic lies within it
+Finding the critical region can be more useful for
+considering more than one observed value or for
+further testing
+How do I find the critical value?
+The critical value(s) will be the boundary of the critical
+region
+The probability of the observed value being within the
+critical region, given a true null hypothesis will be the
+same as the significance level
+For an α% significance level:
+In a one-tailed test the critical region will consist of α
+% in the tail that is being tested for
+In a two-tailed test the critical region will consist of
+α
+% in each tail
+2
+To find the critical value(s) find the distribution of the
+sample means, assuming H is true, and use the inverse
+0
+normal function on your calculator
+For a two-tailed test you will need to find both critical
+values, one at each end of the distribution
+How can I use the standard normal
+distribution Z to perform a
+hypothesis test?
+You could use the standard normal distribution:
+⎯⎯
+x−μ
+Find the z-value for your sample mean using z=
+σ
+n
+Find the critical value(s) for the Z distribution using the
+percentage points table
+If the z-value is further away from 0 than the critical
+value then reject H
+0
+You could use the standard normal distribution as an
+alternative method for finding the critical value(s) is to use
+the standard normal distribution:
+
+---
+
+Step 1. Find the distribution of the sample means,
+assuming H is true
+0
+⎯
+x−μ
+Step 2. Use the coding Z= to standardise to Z
+σ
+n
+Step 3. Use percentage points table to find the z -
+value for which the probability of Z being equal to or
+more extreme than the value is equal to the
+significance level
+Step 4. Equate this value to your expression found in
+step 2
+Step 5. Solve to find the corresponding value of ⎯ x ⎯
+If using this method for a two-tailed test be aware of the
+following:
+The symmetry of the normal distribution means that
+the z - values will have the same absolute value
+You can solve the equation for both the positive and
+negative z – value to find the two critical values
+Check that the two critical values are the same
+distance from the mean
+How do I lay out the hypothesis
+test?
+Following these steps will help when carrying out a
+hypothesis test for the mean of a normal distribution:
+Step 1. Define the distribution of the population mean
+usually X∼N(μ,σ2)
+Step 2. Write the null and alternative hypotheses clearly
+using the form
+H 0 : μ = ...
+H 1 : μ ... ...
+Step 3. Assuming the null hypothesis to be true, define
+⎯⎯ σ2
+the test statistic, usually X∼N(μ, )
+n
+Step 4. Calculate either the critical value(s) or the p –
+value (probability of the observed value)for the test
+Step 5. Compare the observed value of the test statistic
+with the critical value(s) or the p - value with the
+significance level
+Step 6. Decide whether there is enough evidence to
+reject H or whether it has to be accepted
+0
+Step 7. Write a conclusion in context
+Alternatively, if you have used the standard normal
+distribution method then in steps 4 and 5 you could
+compare the z – value corresponding to the observed
+value with the z – value corresponding to the critical value
+Worked Example
+The time, X minutes, that it takes Amelea to complete a
+1000−piece puzzle can be modelled using X∼N(204,81).
+Amelea gets prescribed a new pair of glasses and claims that
+the time it takes her to complete a 1000−piece puzzle has
+decreased. Wearing her new glasses, Amelea completes 12
+separate 1000−piece puzzle and calculates her mean time on
+these puzzles to be 201 minutes. Use these 12 puzzles as a
+
+---
+
+sample to test, at the 5% level of significance, whether there
+is evidence to support Amelea’s claim. You may assume the
+variance is unchanged.
+Answer:
+Examiner Tips and Tricks
+Use a diagram to help, especially if looking for the critical
+value and comparing this with an observed value of a test
+statistic
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+
+---
+
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

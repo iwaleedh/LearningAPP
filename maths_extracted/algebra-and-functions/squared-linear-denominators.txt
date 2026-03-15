@@ -1,0 +1,36 @@
+Edexcel A Level Maths: Pure Revision Notes
+Partial Fractions with Squared
+Linear Denominators
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 19 June 2025
+Did this video help you? Yes No
+Partial fractions with
+squared linear
+denominators
+What are partial fractions with
+squared linear denominators?
+Stuck on something?
+In partial fractions the common denominator is split into
+parts (factors) Ask questions and get help with
+This is the reverse process to adding (or subtracting) exactly what you're revising.
+fractions
+Help me understand
+In harder questions there is a repeated factor, this is a Got it
+squaredlinearfactor
+A linearfactor is of the form (ax + b)
+It is possible b = 0 so a linear factor could be of the form
+ax (eg 4×)
+A squared linear factor is of the form (ax + b)2
+With b = 0 this would be of the form (ax)2 (x2 would be
+too!)
+How do I find partial fractions with
+squared linear denominators?
+STEP 1 Factorise the denominator (Sometimes the
+numerator can be factorised too)
+STEP 2 Split the fraction into a sum with a squaredlinear
+denominator and any other single linear denominators
+STEP 3 Multiply by the denominator to get rid of fractions
+STEP 4 Substitute values of x to find A, B, etc (or use
+comparing coefficients)
+STEP 5 Write the original as partial fractions

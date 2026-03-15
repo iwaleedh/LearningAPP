@@ -1,49 +1,28 @@
 export const note_physics_4_16_4 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Elastic & Inelastic Collisions" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Distinguish between elastic and inelastic collisions; apply conservation of momentum and kinetic energy to elastic collisions; calculate kinetic energy lost in inelastic collisions" } },
     { id: 'head-1', type: 'heading', data: { text: "Elastic & Inelastic Collisions", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Elastic & Inelastic Collisions will be updated." } },
-
-  
-    {
-      id: 'svg-physics_4_16_4-0',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <rect x="20" y="20" width="360" height="70" fill="#ecfdf5" rx="8" stroke="#10b981" stroke-width="2"/>
-  <text x="200" y="45" font-family="Arial" font-size="16" font-weight="bold" fill="#059669" text-anchor="middle">Elastic Collision</text>
-  <text x="200" y="65" font-family="Arial" font-size="14" fill="#047857" text-anchor="middle">Kinetic Energy is CONSERVED</text>
-  <text x="200" y="82" font-family="Arial" font-size="14" fill="#047857" text-anchor="middle">Σ½mu² = Σ½mv²</text>
-  
-  <rect x="20" y="110" width="360" height="70" fill="#fef2f2" rx="8" stroke="#ef4444" stroke-width="2"/>
-  <text x="200" y="135" font-family="Arial" font-size="16" font-weight="bold" fill="#b91c1c" text-anchor="middle">Inelastic Collision</text>
-  <text x="200" y="155" font-family="Arial" font-size="14" fill="#991b1b" text-anchor="middle">Kinetic Energy is NOT conserved</text>
-  <text x="200" y="172" font-family="Arial" font-size="14" fill="#991b1b" text-anchor="middle">(Lost to heat, sound, deformation)</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 16_4'
-      }
-    },
-    {
-      id: 'svg-physics_4_16_4-1',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <path d="M 50 100 Q 100 50 150 100 T 250 100 T 350 100" stroke="#3b82f6" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
-  <circle cx="50" cy="180" r="15" fill="#3b82f6"/>
-  <circle cx="150" cy="180" r="15" fill="#3b82f6"/>
-  <circle cx="250" cy="180" r="15" fill="#3b82f6"/>
-  <path d="M 50 180 L 150 180" stroke="#334155" stroke-width="2" opacity="0.3"/>
-  <path d="M 150 180 L 250 180" stroke="#334155" stroke-width="2" opacity="0.3"/>
-  <text x="200" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Bouncing Ball (Inelastic)</text>
-  <text x="200" y="200" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Height decreases with each bounce (KE lost)</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 16_4'
-      }
-    },
+    { id: 'para-2', type: 'paragraph', data: { text: "In all collisions, total momentum is conserved (provided there is no external net force). However, kinetic energy is not always conserved. The distinction between elastic and inelastic collisions depends on what happens to the total kinetic energy during the interaction. This distinction has important consequences: for elastic collisions, both momentum and KE conservation give us two equations for two unknowns; for inelastic collisions, we have only momentum conservation to work with." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Elastic Collisions In an elastic collision, both total momentum and total kinetic energy are conserved. No kinetic energy is lost to internal energy (heat, sound, or deformation). True elastic collisions occur between atomic or subatomic particles (e.g. gas molecules) or between very hard objects with no permanent deformation. In practice, collisions between smooth billiard balls or between gliders with spring bumpers approximate elastic behaviour. The key equations are: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂ (momentum) and ½m₁u₁² + ½m₂u₂² = ½m₁v₁² + ½m₂v₂² (kinetic energy)." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Elastic vs Inelastic Collision Summary</text><rect x="15" y="28" width="180" height="135" rx="5" fill="#d3f9d8" stroke="#40c057" stroke-width="2"/><text x="105" y="48" font-family="sans-serif" font-size="11" font-weight="bold" fill="#2b8a3e" text-anchor="middle">ELASTIC</text><text x="105" y="66" font-family="sans-serif" font-size="11" fill="#2b8a3e" text-anchor="middle">Momentum conserved &#10003;</text><text x="105" y="82" font-family="sans-serif" font-size="11" fill="#2b8a3e" text-anchor="middle">Kinetic Energy conserved &#10003;</text><text x="105" y="100" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Objects separate after collision</text><text x="105" y="116" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">No permanent deformation</text><text x="105" y="132" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Examples: molecules, billiards</text><text x="105" y="148" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">(spring bumpers on air track)</text><rect x="205" y="28" width="180" height="135" rx="5" fill="#ffe3e3" stroke="#fa5252" stroke-width="2"/><text x="295" y="48" font-family="sans-serif" font-size="11" font-weight="bold" fill="#c92a2a" text-anchor="middle">INELASTIC</text><text x="295" y="66" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">Momentum conserved &#10003;</text><text x="295" y="82" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">Kinetic Energy NOT conserved &#10007;</text><text x="295" y="100" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">KE lost to heat/sound/deformation</text><text x="295" y="116" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Perfectly inelastic: objects stick</text><text x="295" y="132" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Examples: car crash, clay ball</text><text x="295" y="148" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">(velcro bumpers on air track)</text></svg>', caption: 'Elastic: KE conserved (no energy lost). Inelastic: KE is not conserved (some converted to heat/sound/deformation).' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Perfectly Inelastic Collisions A perfectly inelastic collision is the most extreme case of inelastic collision: the objects stick together and move with a common velocity after the collision. This is when the maximum kinetic energy is lost (consistent with momentum conservation). The equation becomes: m₁u₁ + m₂u₂ = (m₁ + m₂)v. The KE lost = KE_before − KE_after. This energy goes into deforming the objects (crumpling, heating them up) and producing sound." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Worked Example — Elastic Collision A 1.0 kg ball moving at 4.0 m/s collides elastically with a stationary 3.0 kg ball. Using both conservation equations: Momentum: 1.0 × 4.0 = 1.0 × v₁ + 3.0 × v₂ → v₁ + 3v₂ = 4. KE: ½ × 1.0 × 4² = ½ × 1.0 × v₁² + ½ × 3.0 × v₂² → v₁² + 3v₂² = 16. Solving simultaneously (from momentum: v₁ = 4 − 3v₂, substituting into energy): (4−3v₂)² + 3v₂² = 16 → 16 − 24v₂ + 9v₂² + 3v₂² = 16 → 12v₂² − 24v₂ = 0 → 12v₂(v₂ − 2) = 0. So v₂ = 2.0 m/s and v₁ = 4 − 6 = −2.0 m/s (ball 1 bounces back)." } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Worked Example — Inelastic Collision A 2.0 kg trolley at 5.0 m/s collides with a stationary 3.0 kg trolley and they stick together. Find the common velocity and the KE lost. v = (m₁u₁ + m₂u₂)/(m₁+m₂) = (2.0 × 5.0 + 0)/(5.0) = 2.0 m/s. KE before = ½ × 2.0 × 5² = 25 J. KE after = ½ × 5.0 × 2² = 10 J. KE lost = 25 − 10 = 15 J. This energy is dissipated as heat, sound, and deformation during the collision." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Special Case: Equal Mass Elastic Collision</text><text x="100" y="42" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">BEFORE</text><circle cx="70" cy="75" r="20" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="70" y="80" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">m</text><line x1="90" y1="75" x2="115" y2="75" stroke="#1864ab" stroke-width="2"/><polygon points="115,75 107,70 107,80" fill="#1864ab"/><circle cx="140" cy="75" r="20" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="140" y="80" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">m</text><text x="70" y="107" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">u = +v</text><text x="140" y="107" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">at rest</text><text x="300" y="42" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">AFTER</text><circle cx="265" cy="75" r="20" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="265" y="80" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">m</text><text x="265" y="107" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">v = 0!</text><circle cx="340" cy="75" r="20" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="340" y="80" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">m</text><line x1="360" y1="75" x2="385" y2="75" stroke="#c92a2a" stroke-width="2"/><polygon points="385,75 377,70 377,80" fill="#c92a2a"/><text x="340" y="107" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">v = u</text><text x="200" y="135" font-family="sans-serif" font-size="11" fill="#2b8a3e" text-anchor="middle">Equal mass elastic: first ball stops, second ball moves at first ball&#39;s speed</text><text x="200" y="152" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">(This is exactly what Newton&#39;s cradle demonstrates)</text></svg>', caption: 'Equal-mass elastic collision: stationary ball takes all the velocity; moving ball stops. Demonstrated by Newton\'s cradle.' } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Newton's Cradle — A Special Case In Newton's cradle (a series of equal-mass balls), when one ball is pulled back and released, it collides elastically with the line, and exactly one ball flies out the other side — not two balls moving at half the speed. This is because only one combination of post-collision velocities satisfies both momentum and KE conservation simultaneously. Two balls at half the speed would conserve momentum but not KE. This is a beautiful demonstration that elastic collisions obey two simultaneous constraints." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Distinction', text: 'All collisions: momentum conserved. Elastic: KE also conserved → two equations, two unknowns. Inelastic: KE is NOT conserved → only momentum equation. KE lost = KE_before − KE_after (goes to heat/sound/deformation). Perfectly inelastic: objects stick → (m₁+m₂)v = m₁u₁ + m₂u₂.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "State the conditions for an elastic collision and write the two conservation equations", checked: false },
+      { text: "Calculate the KE lost in a perfectly inelastic collision and state where this energy goes", checked: false },
+      { text: "Solve for post-collision velocities in an elastic collision using simultaneous equations from momentum and KE conservation", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "All collisions: Σp conserved. Elastic: Σ(½mv²) also conserved; KE lost = 0. Inelastic: KE not conserved; KE loss = ΔKE → heat/sound/deformation. Perfectly inelastic: objects stick together. Equal-mass elastic: moving ball stops, stationary ball takes all velocity (Newton's cradle)." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Elastic & Inelastic Collisions' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'What is the difference between an elastic and an inelastic collision? What is conserved in each?' },
+    { id: 'cue-2', blockId: 'para-6', prompt: 'A 2 kg trolley at 5 m/s sticks to a stationary 3 kg trolley. Find the common velocity and KE lost.' },
+    { id: 'cue-3', blockId: 'para-7', prompt: 'Why in Newton\'s cradle does one ball fly out when one ball hits, rather than two balls moving at half the speed?' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

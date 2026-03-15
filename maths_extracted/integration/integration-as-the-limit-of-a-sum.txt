@@ -1,0 +1,49 @@
+Edexcel A Level Maths: Pure Revision Notes
+Integration as the limit of a sum
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 23 June 2025
+Help me understand
+03:30
+Did this video help you? Yes No
+Integration as the limit of a
+sum
+How do I represent the area under a
+curve using rectangles?
+Definite integration allows us to find the area under a curve
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+An estimate for the area under the curve is the sum of the
+Got it
+rectangular areas
+If the number of rectangles increases and their width
+decreases, the estimate is more accurate
+The sum of the rectangle areas will have a limit, however
+small they get
+The sum will become closer and closer to the area
+under the curve
+This is called the limit of the sum
+Why is integration seen as the limit
+of a sum?
+The width of a rectangle can be considered as a small
+increase along the x-axis
+This is denoted by δx
+The height (length) will be the y-coordinate at x – ie f(x)
+1 1
+(rather than f(x+δx))
+1
+If we use four of these small rectangles between a and b
+we get
+As more rectangles are used …
+… δx gets smaller and smaller, ie δx → 0
+… n, the number of rectangles, gets bigger and
+bigger, ie n → ∞
+… the sum of the area of the rectangles becomes
+closer to the area under the curve
+This is the meaning of integration as the limit of a sum
+How do I convert the limit of a sum
+into a definite integral?
+STEP 1 Recognise the notation
+STEP 2 Convert to a definite integral
+STEP 3 Find the value of the integral

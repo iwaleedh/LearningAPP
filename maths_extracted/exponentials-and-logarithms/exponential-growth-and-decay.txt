@@ -1,0 +1,32 @@
+Help me understand
+Edexcel A Level Maths: Pure Revision Notes
+Exponential Growth & Decay
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Did this video help you? Yes No
+Exponential growth &
+decay
+What is exponential growth?
+y = Aekt is exponential growth
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+What is exponential decay? Got it
+y = Ae-kt is exponential decay
+k > 0 so plus or minus sign in equation immediately
+indicates growth or decay
+A is the starting value or initial value, when t = 0
+t is often used, rather than x, as many models are time-
+dependent
+How do I write a^x in terms of e^x?
+Using e makes the maths easier
+With the proper choice of k, all exponential functions of
+the form ax can be written in the form ekx
+ax = ekx
+How are e and ln x inverses of each
+x
+other?
+ln is the inverse of e
+The graph of y = lnx is the reflection of the graph of y = ex
+in the line y = x

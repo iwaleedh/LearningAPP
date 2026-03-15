@@ -1,0 +1,35 @@
+Edexcel A Level Maths: Pure Revision Notes
+Expanding Brackets
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 11 February 2026
+Help me understand
+Did this video help you? Yes No
+Expanding brackets
+How do I expand brackets?
+To expand brackets, the rule is that each term in one set of
+brackets must be multiplied by each term in the other set
+of brackets
+Stuck on something?
+Ask questions and get help with
+'FOIL' is a special case of this, when each set of brackets
+exactly what you're revising.
+contains two terms you can multiply in order
+e.g. to multiply out or expand these brackets (2× + 3)(x
+Got it
+- 5)
+First (2× + 3)(x - 5) gives 2×2
+Outside (2× + 3)(x - 5) gives -10×
+Inside (2× + 3)(x - 5) gives +3×
+Last (2× + 3)(x - 5) gives -15
+(2× + 3)(x - 5) = 2×2 -10× +3× -15 = 2×2 -7× -15
+If you spot something like (a + b)2 or (a + b)3 just write the
+brackets out twice or three times respectively
+e.g. (3× + 2)2 = (3× +2)(3×+2) = 9×2 + 6× + 6× + 4 = 9×2 +
+12× + 4
+If you are trying to expand something like (a + b)nfor
+powers of n greater than 2 or 3, use the binomial
+expansion
+If you have to expand more than two sets of brackets, just
+expand them two at a time
+Worked Example

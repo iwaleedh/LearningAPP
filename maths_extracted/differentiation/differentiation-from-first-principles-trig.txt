@@ -1,0 +1,64 @@
+Edexcel A Level Maths: Pure Revision Notes
+Differentiation of
+Trigonometric Functions from
+First Principles
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+06:50
+Did this video help you? Yes No
+Differentiation of
+trigonometric functions
+from first principles
+How do I find derivatives of
+trigonometric functions from first
+principles?
+Recall that for a function f(x) the definition of the
+derivative from first principles (see First Principles
+Differentiation) is:
+f(x+h)−f(x)
+f'(x) = lim
+h
+h→0
+The derivatives of the trigonometric functions depend on
+Stuck on something?
+the following small angle approximations
+When θ is small (i.e. close to zero) and measured in Ask questions and get help with
+radians then exactly what you're revising.
+Got it
+sinθ ≈ θ
+1
+cosθ ≈ 1− θ2
+2
+tanθ ≈ θ
+The small angle approximations allow us to produce the
+following intermediate limit results:
+Help me understand
+And those intermediate results allow us to find the
+derivatives of sin and cos
+How do I find derivatives of other
+trigonometric functions?
+The derivative of tan is given by the following formula:
+The easiest way to derive this is to use the quotient rule
+and the derivatives of sin and cos
+But it can also be derived from first principles using the
+small angle approximation for tan (see the Worked
+Example)
+The general formulae for the derivatives of the
+trigonometric functions are:
+These formulae follow from combining the derivatives of
+the three basic functions with the chain rule, but they are
+worth knowing on their own
+Examiner Tips and Tricks
+Remember that when doing calculus with trigonometric
+functions you have to measure angles in radians.
+The formula for the derivative of tan x is included in the
+exam formulae booklet.
+The derivatives of sin x and cos x are NOT included in the
+formula booklet – you have to know them.
+The small angle approximations for cos x, sin x and tan x
+are included in the exam formulae booklet – you don't
+have to memorise them.
+Be sure to read first principle differentiation exam
+questions clearly – they will state any results you can treat
+as 'givens' in your answer.

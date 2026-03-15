@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+Problem Solving using Vectors
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 20 June 2025
+06:12
+Did this video help you? Yes No
+Problem solving using
+vectors
+How are vectors used for problem
+solving?
+Help me understand
+Vectors can be used to prove two lines are parallel (see
+Vector Addition)
+They can also be used to show points are collinear (lie on
+the same straight line)
+Vectors can be used to find missing vertices of a given
+shape
+You will need a good understanding of how to divide a line
+segment into a given ratio
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+When do I use trigonometry in
+vector problems?
+When problem-solving with vectors, trigonometry can
+help us:
+convert between component form and
+magnitude/direction form (see Magnitude Direction)
+find the angle between two vectors using Cosine
+Rule (see Non-Right-Angled Triangles)
+find the area of a triangle using a variation of Area
+Formula (see Non-Right-Angled Triangles)
+Examiner Tips and Tricks
+Think of vectors like a journey from one place to another –
+you may have to take a detour eg. A to B might be A to O
+then O to B.
+Diagrams can help, if there isn’t one, draw one. For a given
+diagram labelling all known vectors and quantities will
+help.

@@ -1,0 +1,46 @@
+Edexcel A Level Maths: Pure Revision Notes
+Fundamental Theorem of
+Calculus
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 23 June 2025
+03:40
+Help me understand
+Did this video help you? Yes No
+Fundamental theorem of
+calculus
+What is the fundamental theorem of
+calculus?
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+The Fundamental Theorem of Calculus states that
+integration is the inverse process of differentiation
+This form of the Theorem relates to Indefinite
+Integration
+An alternative version of the Fundamental Theorem of
+Calculus involves Definite Integration
+What is a constant of integration?
+When differentiating y, constant terms ‘disappear’
+dy
+for constants y = c, =0
+dx
+graphs of constants are horizontal lines and so have
+⎛ ⎜dy ⎞ ⎟
+gradient ⎜ ⎟of 0
+⎝dx ⎠
+dy
+Integrating , to get y, cannot determine the constant
+dx
+To acknowledge this constant, “+ c” is used
+c is called the constantofintegration
+What notation is used in
+integration?
+∫
+is the sign for integration
+If it has more than one term the function to be integrated
+(called the integrand) should be in brackets
+“Integrate” -– “all of (…)” -– “with respect to x”
+dx means integrate with respect to x, any other letter is
+treated like a number (ie like a constant)

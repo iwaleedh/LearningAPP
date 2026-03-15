@@ -1,0 +1,122 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Data Presentation
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 25 November 2025
+Did this video help you? Yes No
+Data presentation
+What graphs and diagrams should I
+be familiar with?
+You will be expected to be able to use a variety of graphs
+such as:
+Box plots
+Can be used with ungrouped data of a single
+variable
+Shows the range, interquartile range and quartiles
+clearly
+Very useful for comparing data patterns quickly
+Cumulative frequency graphs
+Can be used with continuous grouped data of a Help me understand
+single variable
+Shows the running total of the frequencies that
+fall below the upper bound of each class
+Histograms
+Can be used with continuous grouped data of a Stuck on something?
+single variable
+Ask questions and get help with
+Can be used with varying group sizes
+exactly what you're revising.
+Shows the frequencies of the group, represented
+by the area of each bar
+Got it
+Frequency polygon
+Displays the shape of continuous grouped data
+
+---
+
+Created by joining the midpoints at the top of
+each bar of a histogram
+Scatter diagrams
+Can be used with ungrouped bivariate data (data
+for two variables)
+Shows the pattern of the relationship between
+the variables
+You will not be expected to draw the graphs from scratch
+but you may be asked to add to a graph
+You should make sure you know how to draw them
+anyway as it will help strengthen your understanding
+of the graphs
+Prior knowledge of some other ‘unfamiliar’ diagrams such
+as interpreting a stem and leaf diagram is expected
+Review statistical diagrams from GCSE and make sure
+you remember how to use them
+If there is an unfamiliar diagram in your exam, you will
+be able to work out how to read it by looking at the
+scales and labels carefully
+What should I look out for when
+interpreting graphs?
+Look carefully at the context of the information given in
+the graph
+Check the scales on both axes carefully, including units
+Sometimes the numbers will be abbreviated to fit on
+the scale, for example if a population is given in
+millions then the number 60 will represent 60 000
+000
+Look carefully at the labels and units to determine
+how a value should be read
+If there is more than one graph represented on the same
+set of axes take extra care to ensure you are reading from
+the correct one
+Beware of misleading graphs, the scales on the axes, units
+and representation can be manipulated to make a graph
+look more/less convincing
+Worked Example
+A student is collecting information on his friends’ interests and
+believes that his friends who only have dogs spend more time
+outside than his friends who only have cats. He has surveyed
+20 friends with only cats and 20 friends with only dogs and
+has written down the total amount of time, rounded to the
+nearest hour, each of them spent outside last week. Describe,
+with a reason, which diagram would be best for the student to
+use to display the data.
+Answer:
+
+---
+
+Examiner Tips and Tricks
+Take the time needed when working with diagrams, they
+are usually ‘easy marks’ questions but it is common for
+students to rush them and make silly mistakes.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+
+---
+
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

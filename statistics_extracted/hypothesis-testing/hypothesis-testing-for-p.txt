@@ -1,0 +1,158 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Hypothesis Testing for the
+Population Proportion of a
+Binomial Distribution
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 16 February 2026
+Did this video help you? Yes No
+Binomial hypothesis testing
+How do I carry out a hypothesis test
+using a binomial distribution?
+The population parameter being tested will be the
+probability, p in a binomial distribution B(n , p)
+A hypothesis test is used when the assumed probability is
+questioned
+The null hypothesis, H and alternative hypothesis, H will
+0 1
+always be given in terms of p
+Make sure you clearly define p before writing the
+hypotheses
+The null hypothesis will always be H : p = ... Help me understand
+0
+The alternative hypothesis will depend on if it is a one-
+tailed or two-tailed test
+A one-tailed test would test to see if the value of p
+has either increased or decreased Stuck on something?
+The alternative hypothesis, H will be H : p > ...
+1 1 Ask questions and get help with
+or H : p < ...
+1 exactly what you're revising.
+A two-tailed test would test to see if the value of p
+Got it
+has changed
+The alternative hypothesis, H will be H : p ≠ ...
+1 1
+
+---
+
+To carry out a hypothesis test with the binomial
+distribution, the test statistic will be the number of
+successes in a defined number of trials
+When defining the test statistic, remember that the value
+of p is being tested, so this should be written as p in the
+original definition, followed by the null hypothesis stating
+the assumed value of p
+The binomial distribution will be used to calculate the
+probability of the test statistic taking the observed value
+or a more extreme value
+The hypothesis test can be carried out by
+either calculating the probability of the test statistic
+taking the observed or a more extreme value (p –
+value) and comparing this with the significance level
+or by finding the critical region and seeing whether
+the observed value of the test statistic lies within it
+Finding the critical region can be more useful for
+considering more than one observed value or for
+further testing
+How do I find the critical value?
+The critical value will be the first value to fall within the
+critical region
+The binomial distribution is a discrete distributionso
+the probability of the observed value being within the
+critical region, given a true null hypothesis may be less
+than the significance level
+This is the actual significance level and is the
+probability of incorrectly rejecting the null hypothesis
+For a one-tailed test use the tables of the binomial
+distribution or your calculator to find the first value for
+which the probability of that or a more extreme value is
+less than the given significance level
+Check that the next value would cause this probability
+to be greater than the significance level
+For H 1 : p < ...if P(X≤c)≤α% and P(X≤c+1)>α%
+then c is the critical value
+For H 1 : p > ... if P(X≥c)≤α% and P(X≥c−1)>α%
+then c is the critical value
+For a two-tailed test you will need to find both critical
+values, one at each end of the distribution
+Use the tables of the binomial distribution or your
+calculator to find the first value for which the
+probability of that or a more extreme value is less
+than half of the given significance level in both the
+upper and lower tails
+Often one of the critical regions will be much bigger
+than the other
+How do I lay out the hypothesis
+test?
+Step 1. Define the probability, p
+Step 2. Write the null and alternative hypotheses clearly
+using the form
+H : p = ...
+0
+H : p = ...
+1
+Step 3. Define the test statistic, usually X∼B(n,p) where n
+is a defined number of trials and p is the population
+
+---
+
+parameter to be tested
+Step 4. Calculate either the critical value(s) or the p –
+value for the test
+Step 5. Compare the observed value of the test statistic
+with the critical value(s) or the p - value with the
+significance level
+Step 6. Decide whether there is enough evidence to
+reject H or whether it has to be accepted
+0
+Step 7.Write a conclusion in context
+Worked Example
+Jacques, a breadmaker, claims that more than 80% of people
+that shop in a particular supermarket buy his brand of bread.
+Jacques takes a random sample of 100 customers that have
+purchased bread and asks them which brand of bread they
+have purchased. He records that 86 of them had purchased
+his brand of bread. Test, at the 10% level of significance,
+whether Jacques’ claim is justified.
+Answer:
+Examiner Tips and Tricks
+Make sure you are careful with the inequalities when
+finding critical values from the binomial tables or from
+
+---
+
+your calculator.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+
+---
+
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

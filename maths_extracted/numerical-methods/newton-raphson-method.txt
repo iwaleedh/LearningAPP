@@ -1,0 +1,47 @@
+Edexcel A Level Maths: Pure Revision Notes
+Newton-Raphson Method
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 16 February 2026
+05:43
+Did this video help you? Yes No
+Newton-Raphson method
+What is the Newton-Raphson
+method?
+The Newton-Raphson method finds roots of equations in
+the form f(x) = 0
+It can be used to find approximate solutions when an
+equation cannot be solved using the usual analytical
+methods
+It works by finding the x-intercept of tangents to f(x) to
+get closer and closer to a root
+Help me understand
+Stuck on something?
+How do I use the Newton-Raphson Ask questions and get help with
+exactly what you're revising.
+method?
+Got it
+After using differentiation to find f’(x) the formula uses
+iteration to come to an ever more accurate solution
+Can the Newton-Raphson method
+fail?
+The Newton-Raphson method can fail when:
+the starting value x is too far away from the root leading
+0
+to a divergent sequence or a different root
+the tangentgradient is too small, where f’(x) close to 0
+leading to a divergent sequence or one which converges
+very slowly
+the tangent is horizontal, where f’(x) = 0 so the tangent will
+never meet the x-axis
+the equation cannot be differentiated (or is awkward and
+time-consuming to do)
+Examiner Tips and Tricks
+The formula for the Newton-Raphson method is given in
+the formula booklet.
+Use ANS button on your calculator to calculate repeated
+iterations.
+Keep track of your iterations using x , x … notation.
+2 3
+Newton-Raphson questions may be part of bigger
+numerical methods questions.

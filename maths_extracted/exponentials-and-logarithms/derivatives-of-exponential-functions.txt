@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+Derivatives of Exponential
+Functions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Help me understand
+Did this video help you? Yes No
+Derivatives of exponential
+functions
+What is the derivative of e?
+x
+y = ex has the particular property that
+dy
+=ex
+dx
+i.e. for every real number x, the gradient of y = ex is also
+equal to ex (see Derivatives of Exponential Functions)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+e ≈ 2.718 (see "e")
+Recall that the derivative is the gradient function for a
+curve (see First Principles Differentiation)
+What is the derivative of y = e and
+kx
+y=e- ?
+kx
+The derivative of y = ekx is
+dy
+=kekx
+dx
+The derivative of y = e-kx is
+dy
+=−ke−kx
+dx
+Examiner Tips and Tricks
+Remember that (like π) e is a number.
+Exam questions can ask for answers to be given as exact
+values in terms of e (see the Worked Example below).

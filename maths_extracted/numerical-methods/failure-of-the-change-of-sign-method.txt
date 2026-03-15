@@ -1,0 +1,29 @@
+Edexcel A Level Maths: Pure Revision Notes
+Failure of the Change of Sign
+Method
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 16 February 2026
+03:58
+Did this video help you? Yes No
+Failure of the change of sign
+method
+Help me understand
+When can the change of sign
+method fail?
+There are certain circumstances where a change of sign
+fails to appropriately reflect the number or existence of
+roots
+If the interval is too large there may be more than one root
+within it
+An even number of roots mean roots are missed
+entirely as a sign change is not identified
+An odd number of roots ( > 1 ) may mean not all roots
+are identified
+In a discontinuous funciton, a sign change may occur
+which is not caused by a root but by an asymptote
+If a function touches the x-axis but does not pass Stuck on something?
+through it there would be a root but no sign change
+Ask questions and get help with
+exactly what you're revising.
+Got it

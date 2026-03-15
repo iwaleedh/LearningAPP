@@ -1,0 +1,33 @@
+Edexcel A Level Maths: Pure Revision Notes
+Separation of Variables
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Help me understand
+Did this video help you? Yes No
+Separation of variables
+What does it mean for a differential
+equation to be separable?
+Many differential equations used in modelling have two
+variables involved (ie x and y)
+If there is a product of functions in different variables, the
+differential equation is separable
+ie dy/dx = f(x) × g(y)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Differential equations of the form dy/dx=g(y) should be
+thought of as dy/dx=1 × g(y)
+where f(x) = 1
+How do I solve a differential
+equation using separation of
+variables?
+STEP 1: Separate all y terms on one side and all x terms on
+the other side
+STEP 2: Integrate both sides
+STEP 3: Include one “overall” constant of integration
+STEP 4: Use the initial or boundary condition to find the
+particular solution
+STEP 5: Write the particular solution in sensible, or
+required, format

@@ -1,0 +1,61 @@
+Edexcel A Level Maths: Pure Revision Notes
+Quadratic Inequalities
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 11 February 2026
+Help me understand
+Did this video help you? Yes No
+Quadratic inequalities
+What are quadratic inequalities?
+Similar to quadratic equations, quadratic inequalities just
+mean there is a range of values that satisfy the solution
+Sketching a quadratic graph is essential
+Can involve the discriminant or applications in mechanics
+and statistics
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I solve quadratic
+inequalities?
+STEP 1: Rearrange the inequality into quadratic form with a
+positive squared term
+ax2 + bx + c > 0 (>, <, ≤ or ≥)
+STEP 2: Find the roots of the quadratic equation
+Solveax2 + bx + c = 0 to get x andx wherex < x
+1 2 1 2
+STEP 3: Sketch a graph of the quadratic and label the
+roots
+As the squared term is positive it will be "U" shaped
+STEP 4: Identify the region that satisfies the inequality
+For ax2 + bx + c > 0 you want the region above the x-
+axis
+The solution is x < x orx > x
+1 2
+For ax2 + bx + c < 0 you want the region below the x-
+axis
+The solution is x >x andx < x
+1 2
+This is more commonly written as x < x < x
+1 2
+avoid multiplying or dividing by a negative number
+if unavoidable, “flip” the inequality sign so < → >, ≥ → ≤,
+etc
+avoid multiplying or dividing by a variable (x) that
+could be negative
+(multiplying or dividing by x2 guarantees positivity
+(unless x could be 0) but this can create extra, invalid
+solutions)
+do rearrange to make the x2 term positiveBe careful:
+How do I solve quadratic
+inequalities on a calculator?
+Be aware of unconventional ways calculators can display
+an answer
+eg 8 > x > 2 rather than 2 < x < 8
+Examiner Tips and Tricks
+A calculator can be super-efficient but some marks are
+for method.
+Use your judgement:
+is it a “show that” or “prove” question?
+how many marks?
+how long is the question?

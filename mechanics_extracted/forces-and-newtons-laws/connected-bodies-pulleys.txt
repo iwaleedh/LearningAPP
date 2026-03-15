@@ -1,0 +1,108 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Connected Bodies (Pulleys)
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Did this video help you? Yes No
+Connected bodies (pulleys)
+What is a pulley?
+A pulley is a wheel like device that rotates as a string
+passes over it allowing motion of any particles attached to Help me understand
+the string
+Pulleys allow a (inextensible) string to change its
+orientation
+In A level mathematical models, pulleys will always be
+smooth and light, so there is no friction involved at the
+pulley and its mass is negligible
+A peg is similar to a pulley but is a fixed point that a particle
+can be suspended from (like a nail in a wall)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I solve pulley questions?
+
+---
+
+In all pulley questions the particles are moving in different
+directions so are considered separately rather than the
+system being treated as one
+If a particle is in motion in the direction being considered
+then Newton’sLawsofMotion apply so use “F = ma”
+(N2L)
+For constant acceleration the ‘suvat’ equations could be
+involved
+Step 1. Draw a series of diagrams
+Label the forces and the positive direction of motion
+for each particle.
+Colour coding forces acting on each particle may
+help
+Step 2. Write equations of motion, using “F = ma”
+Equations 1 and 2: Treating each particle separately
+(↑) T - mg = ma
+1 1
+(↓) m g - T = m a
+2 2
+Step 3. Solve the relevant equation(s) and answer the
+question
+Some trickier problems may lead to simultaneous
+equations
+Worked Example
+A block of mass 25 kg lies on a smooth horizontal table. A light,
+inextensible string passes over a smooth pulley attached to
+the edge of the table. The string connects the 25 kg block to
+another, of mass 60 kg, that hangs freely as shown in the
+diagram below.
+The system is released from rest.
+
+---
+
+Find the tension, T N , in the string and the acceleration, a m s-2
+,of the system.
+Answer:
+Examiner Tips and Tricks
+Sketch a diagram or add to a diagram given in a question.
+All pulleys are smooth and light; in many questions the
+pulley itself can be ignored.
+In pulley questions the particles will be moving in different
+directions - so each particle needs to be considered
+separately.
+
+---
+
+If one particle is on a horizontal surface (such as a desk or
+table) then the weight only need be considered if friction
+is involved (since F = μR and R is related to weight).
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+
+---
+
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

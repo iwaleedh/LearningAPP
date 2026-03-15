@@ -1,0 +1,133 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+F = ma & Vector Notation
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Did this video help you? Yes No
+F = ma & vector notation
+How is F = ma used with vectors?
+The resultantforce (F) and acceleration (a) are vectors
+For forces and motion in twodimensions,F N and a m s-2
+will be made up of two components – a horizontal (x-)
+component and a vertical (y-) component
+Displacement, velocity and weightare also vector
+quantities Help me understand
+Time and mass are scalar quantities
+Vectors appear in bold(non-italic) font in textbooks, on
+exam papers, etc(i.e. F, a) but in handwriting should be
+underlined (i.e. F, a)
+What notation is used for forces as
+vectors?
+All vectors are written either as columnvectors or in i-j
+format
+As a column vector F = ma would look like Stuck on something?
+⎛ ⎜F ⎞ ⎟ ⎛ ⎜a ⎞ ⎟ Ask questions and get help with
+⎜ ⎜ ⎜ ⎜ x ⎟ ⎟ ⎟ ⎟ =m ⎜ ⎜ ⎜ ⎜ x ⎟ ⎟ ⎟ ⎟ exactly what you're revising.
+F a
+⎝ y ⎠ ⎝ y ⎠
+Got it
+In i-j notation F = ma would look like
+F i+F j=m(a i+a j)
+x y x y
+
+---
+
+When do I use F= ma in vector form?
+If vectors/2D are being used this will be clear from the
+information given in the question – any vector quantities
+will be given as a columnvector or written in i-jnotation
+Remember F = mais used when motion is involved –
+equations may come from ‘suvat’ (if the acceleration is
+constant), or using N2L directly; look for (resultant) force,
+mass and acceleration being involved
+Use F= ma(N2L in 1D) or an appropriate ‘suvat’ (in 1D)
+equation to set up and solve separate equations for both
+the horizontal ( x-) and vertical (y -) components.
+How is weight represented as a
+vector?
+Weight is a force, so it is a vector quantity
+W = mg N where g m s-2is the acceleration due to
+gravity
+Weight always acts verticallydownwards so it only acts in
+the j-direction
+W=−mgjN (g≈ 9.8 m s-2 )
+Treating the two dimensions separately means weight
+only needs to be considered when looking at the vertical
+(y -) direction
+Most 2D/vector problems are based on a bird’s-eye view
+– the two dimensions being left/right and
+forwards/backwards, so the up/down (third) dimension
+where weight would apply, is often not involved
+A Force, F, acting on a snooker ball
+How do I apply F = ma in problems
+involving vectors?
+Step 1. If necessary, draw a diagram and label all forces
+acting on the particle(s)
+label the i and j directions and any other useful
+information.
+If a diagram is given, add any missing information to it.
+Step 2. Taking each dimension/component at a time use F
+= ma
+If there is more than one particle involved you may
+have to do this for each
+
+---
+
+Step 3. Solve the equations for each component and put
+the final answers back into vector notation
+In some harder problems simultaneous equations
+may arise
+Worked Example
+A yacht of mass 3.5 tonnes is sailing with constant
+acceleration (0.8i + 0.3j) ms-2.
+The force from the engine of the yacht is D N. The yacht
+experiences a force from water resistance of (—14i — 19j) N.
+Find the force D N acting on the yacht.
+Answer:
+Examiner Tips and Tricks
+If not given in the question, draw a diagram; label all
+forces and the positive direction for both components.
+Add to a diagram if given one, do not assume it is
+complete.
+Write a list of the quantities that are given in a question
+and another list of those you are asked to find. This will
+help you decide which equation(s) to use.
+A third list of the quantities you are not concerned with
+can help as these may be used to find intermediate
+results.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+
+---
+
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+
+---
+
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

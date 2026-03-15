@@ -1,0 +1,33 @@
+Edexcel A Level Maths: Pure Revision Notes
+Simple Trigonometric
+Identities
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Simple trigonometric
+identities
+What is a trigonometric identity?
+Trigonometric identities are statements that are true for all
+values of x or theta (θ)
+They are used to help simplify trig equations before
+solving them
+The first two identities you must know are:
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Where do trigonometric identities
+come from?
+Although you don’t need to know the proof for these
+identities it is important to understand where they come
+from
+How do I use trigonometric
+identities?
+Examiner Tips and Tricks
+You’ll need to remember these identities as they aren’t in
+the formula booklet.
+If asked to show one thing is identical (≡) another look at
+what parts are missing – for example, if tan x has gone it
+must have been substituted.

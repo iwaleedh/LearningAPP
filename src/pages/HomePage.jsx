@@ -17,7 +17,7 @@ const subjects = [
     { id: 'chemistry', name: 'Chemistry', chapters: 12, color: '#6366f1', emoji: '⚗️' },
     { id: 'biology', name: 'Biology', chapters: 10, color: '#10b981', emoji: '🧬' },
     { id: 'physics', name: 'Physics', chapters: 14, color: '#f59e0b', emoji: '⚡' },
-    { id: 'math', name: 'Mathematics', chapters: 16, color: '#ef4444', emoji: '📐' },
+    { id: 'mathematics', name: 'Mathematics', chapters: 16, color: '#ef4444', emoji: '📐' },
     { id: 'business', name: 'Business', chapters: 20, color: '#0ea5e9', emoji: '💼' },
     { id: 'economics', name: 'Economics', chapters: 23, color: '#14b8a6', emoji: '📊' },
     { id: 'accounting', name: 'Accounting', chapters: 15, color: '#f97316', emoji: '📒' },

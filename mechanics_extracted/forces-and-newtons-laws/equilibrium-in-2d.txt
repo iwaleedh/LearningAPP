@@ -1,0 +1,97 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Equilibrium in 2D
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+Did this video help you? Yes No
+Equilibrium in 2D Help me understand
+How do I model particles in two
+dimensions?
+In twodimensions, a particle may be considered as
+existing and being able to move around two-dimensional
+space rather than in a single straight line (1D)
+This 2D space is called a plane – so you may see the
+0×y plane mentioned
+The directions of the two dimensions are chosen so that
+they are perpendicular to each other
+The two directions are usually
+horizontal and vertical, or
+parallel and perpendicular to an inclined plane
+What is the resultant force and an
+unbalanced force in 2D?
+The resultantforce in 2D is the sumofforces acting on a
+Stuck on something?
+particle but this will now need to be considered in two
+parts – one for each direction Ask questions and get help with
+An unbalancedforce is a force acting on a particle where exactly what you're revising.
+one or both parts are not cancelled by another force
+acting in the opposite direction Got it
+So a non-zero resultant force will be non-zero in at least
+one of the two dimensions, is therefore unbalanced and
+the particle will accelerate
+
+---
+
+What does equilibrium in 2D mean?
+In two dimensions a particle is in equilibrium if the
+resultantforce acting on it is zero
+For example, if the two dimensions involved are the
+horizontal and vertical directions, a particle will be in
+equilibrium if any forces acting left are balanced by
+any forces acting rightand any forces acting up are
+balanced by any forces acting down
+When a particle has several forces (at least 3 – have a think
+as to why!) acting on it – and it is in equilibrium – the forces
+can be drawn “nose-to-tail” such that they form a polygon
+Worked Example
+A particle of mass 2 kg is suspended in the air by three strings,
+one vertical and two horizontal. The particle is in equilibrium
+and the magnitudes of the tensions in the strings are
+illustrated in the diagram below.
+(a) Write down the resultant forces acting on the particle in
+both the horizontal and vertical directions.
+Answer:
+(b) Find the value of F.
+
+---
+
+Answer:
+Examiner Tips and Tricks
+F is often used for resultantforce in equations.
+net
+Sketching diagrams, or adding to any given in a question,
+can help you to understand a problem and pick up some
+marks.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+
+---
+
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

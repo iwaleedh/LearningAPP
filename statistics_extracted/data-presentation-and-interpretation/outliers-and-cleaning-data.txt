@@ -1,0 +1,143 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Outliers & Cleaning Data
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 25 November 2025
+Did this video help you? Yes No
+Outliers
+What are outliers?
+Outliers are extreme data values that do not fit with the
+general pattern of the data
+They can come from one or two extreme events or from
+mistakes in the data collection
+Outliers will affect some statistics that are calculated from
+the data
+They can have a big effect on the mean, but not on the
+median or usually the mode
+The range will be completely changed by a single
+Help me understand
+outlier, but the interquartile range will not be affected
+When calculating the mean or the range it is important
+to decide whether the outlier(s) should be included in
+the calculations
+The question will tell you whether to include the
+outliers or not
+You may have to decide which value is the outlier
+to be removed
+In general outliers are included if they are a valid Stuck on something?
+piece of data and excluded if it is likely that they
+Ask questions and get help with
+are erroneous
+exactly what you're revising.
+How are outliers calculated?
+Got it
+Most of the time within this syllabus the outliers will be a
+particular distance either side of the interquartile range
+
+---
+
+The most common way to calculate an outlier will be
+using the formulae:
+A value that is less than Q −k(interquartile range)
+1
+A value that is greater than Q +k(interquartile
+3
+range)
+k is a constant that will be given to you in the
+exam, commonly k=1.5
+Outliers could also be situated a number of standard
+deviations away from the mean
+The most common way to calculate an outlier will be
+using the formulae
+A value that is less than ⎯ x ⎯ −kσ
+A value that is greater than x ⎯ +kσ
+k is a constant that will be given to you in the
+exam, commonly k=2
+How are outliers represented on
+box plots?
+On a box plot an outlier is represented as a cross either
+side of the maximum or minimum value
+If the maximum or minimum value is discovered to be an
+outlier, the new maximum or minimum value will need to
+be found for the box plot
+If the data value just above the minimum or just below
+the maximum is known, this will become the new value
+If the data value is not known, the new minimum or
+maximum will become the outlier boundary
+Did this video help you? Yes No
+Cleaning data
+When should data be cleaned?
+The cause of the outlier should be examined by looking
+into the context of the data
+For example:
+a test score of over 100% would most likely be a data
+collection error
+a single salary that is much higher than the others
+would likely be for the CEO of the company
+
+---
+
+If an outlier is determined to be from an error in data
+collection it should be removed from the data.
+Removing the incorrect data value(s) is called
+cleaning the data
+It is important to consider very carefully whether you
+should remove the data value or not
+If the data value is not an error it should not be
+removed from the data
+If a data value is removed from the data set before
+calculations are carried out, a justification for the removal
+of the outlier must be made
+Cleaning data also involves removing missing data and
+errors
+Worked Example
+The ages, in years, of a number of children attending a
+birthday party are given below:
+2, 7, 5, 4, 8, 4, 6, 5, 5, 29, 2, 5, 13,
+An outlier is defined as an observation that falls more than
+1.5× the interquartile range above the upper quartile or
+below the lower quartile
+(i) Identify any outliers within the data set.
+(ii) Clean the data by deciding which values should be
+removed, justify your answer.
+Answer:
+Examiner Tips and Tricks
+Read the question carefully to determine which type of
+outlier you should be finding and to make sure you are
+using the correct method.
+
+---
+
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+
+---
+
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

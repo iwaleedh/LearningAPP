@@ -1,0 +1,38 @@
+Edexcel A Level Maths: Pure Revision Notes
+Second Order Derivatives
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+03:31 Help me understand
+Did this video help you? Yes No
+Second order derivatives
+What is the second order derivative
+of a function?
+If you differentiate the derivative of a function (ie
+differentiate the function a second time) you get the
+second order derivative of the function
+For a function y = f(x), there are two forms of notation for
+the second derivative (or second order derivative)
+d2y
+f''(x) or
+dx2
+Note the positions of the power of 2's in the second
+version
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+The second order derivative can also be referred to simply
+as the second derivative
+Similarly, the 'regular' derivative can also be referred
+to as either the first order derivative or the first
+derivative
+The second order derivative gives the rate of change of
+the gradient function (ie of the first derivative) – this will be
+important for identifying the nature of stationary points
+Examiner Tips and Tricks
+When finding second derivatives be especially careful
+with functions that have negative or fractional powers of
+x (see Worked Example below).
+Mistakes made with fractions or negative signs can build
+up as you calculate the derivative more than once.

@@ -1,0 +1,53 @@
+Edexcel A Level Maths: Pure Revision Notes
+Eliminating the Parameter of
+Parametric Equations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+03:08
+Did this video help you? Yes No
+Eliminating the parameter
+of parametric equations Help me understand
+What does eliminating the
+parameter mean?
+Stuck on something?
+In parametric equations, x = f(t) and y = g(t)
+There is still a connection directly linking x and y Ask questions and get help with
+This will be the Cartesian equation of the graph exactly what you're revising.
+How do I find the Cartesian
+Got it
+equation from parametric
+equations?
+STEP 1
+Rearrange one of the equations to make t the subject
+Either t = p(x) or t = q(y)
+STEP 2
+Substitute into the other equation
+STEP 3
+Rearrange into the desired (Cartesian) form
+How can I eliminate the parameter
+using trigonometric identities?
+STEP 1
+Rearrange both equations into the forms “cos t = …” and
+“sin t = …”
+STEP 2
+Square both sides of both equations
+STEP 3
+Add the equations together
+STEP 4
+The trig identity “sin2 x + cos2 x ≡ 1” eliminates t
+STEP 5
+Rearrange into desired (Cartesian) form
+This technique is seen in Trigonometric Identities
+Examiner Tips and Tricks
+When choosing which equation to rearrange, aim for “as
+simple as possible”:
+Linear equations are simpler than quadratics
+eg Rearrange x = 2t + 3
+or
+y = 3t2 +3t -4 ?
+Single exponential terms are quite easy to deal with
+eg x = et → t = ln x
+Trig identities may be needed and remember squared terms
+are good!
+eg sin2 x + cos2 x ≡ 1

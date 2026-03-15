@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+Partial Fractions with Linear
+Denominators
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 12 February 2026 Help me understand
+Did this video help you? Yes No
+Partial fractions with linear
+denominators
+What are partial fractions?
+This is the reverse process to adding (or subtracting)
+Stuck on something?
+fractions
+When adding fractions a common denominator is
+Ask questions and get help with
+required
+exactly what you're revising.
+In partial fractions the common denominator is split into
+parts (factors) Got it
+Partial fractions are used in binomialexpansions (see
+Multiple GBEs) and integration (see Integration by Partial
+Fractions)
+What are linear denominators?
+A linearfactor is of the form (ax + b)
+A non-lineardenominator may be written as the product
+of linear factors
+If the denominator can be factorised
+How do I find partial fractions?
+STEP 1 Factorise the polynomial in the denominator
+(Sometimes the numerator can be factorised too)
+STEP 2 Split the fraction into a sum with single linear
+denominators
+STEP 3 Multiply by the denominator to get rid of fractions
+STEP 4 Substitute values of x to find A, B, etc
+(An alternative method is comparing coefficients)
+STEP 5 Write the original as partial fractions
+How do I compare coefficients?
+The quantity of each term must be equal on both sides
+“The number of x2 on the LHS” = “The number of x2 on the
+RHS”
+“The number of …” is called the coefficient of x2

@@ -1,0 +1,95 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Scalars & Vectors
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 6 January 2026
+Did this video help you? Yes No
+Scalars & vectors
+Mechanics uses a variety of different scalar and vector
+quantities.
+What are scalars?
+Help me understand
+Scalars are quantities without direction, they only have a
+size (magnitude)
+e.g. a speed of 7 m/s, a distance of 5 m, a time of 15 s
+or a mass of 12 kg
+Scalars can only be positive- you can’t have a negative
+distance or speed!
+What are vectors?
+Vectors are quantities which also have a direction, this is
+what makes them more than just a scalar
+e.g. two objects with velocities of 7 m/s and -7 m/s
+are travelling at the same speed but in opposite
+directions
+Stuck on something?
+Vector quantities can have positive or negative
+Ask questions and get help with
+components
+exactly what you're revising.
+Some examples of vector quantities you may come
+across are displacement, velocity, acceleration,
+Got it
+force/weight, momentum
+Displacement is the distance moved in a given
+direction from a starting point
+
+---
+
+Velocity is a speed in a given direction (displacement
+over time)
+Acceleration is the change in velocity over time
+Vector quantities of displacement, velocity and
+acceleration
+Worked Example
+State whether each of the following is a scalar or a vector
+quantity.
+a) A speed boat travels at 3m/s on a bearing of 052o
+b) A garden is 1.7 m wide
+c) A car accelerates at 5.4 ms-2
+d) A film lasts 2 hours 17 minutes
+e) An athlete runs at an average speed of 10.44 ms-1
+f) A ball rolls forwards 60 cm before stopping
+Answer:
+Examiner Tips and Tricks
+Make sure you fully understand the definitions of all the
+words in this section so that you can be clear about what
+your exam question is asking of you
+Vectors appear in bold (non-italic) font in textbooks, on
+exam papers, etc (i.e. F, α ) but in handwriting should be
+underlined (i.e.F , α)
+
+---
+
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+
+---
+
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

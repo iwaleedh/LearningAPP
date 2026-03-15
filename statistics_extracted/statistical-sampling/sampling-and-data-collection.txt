@@ -1,0 +1,248 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Sampling & Data Collection
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 16 February 2026
+Did this video help you? Yes No
+Types of data
+What are the different types of
+data?
+Qualitative data is data that is usually given in words not
+numbers to describe something
+For example: the colour of a teacher's car
+Quantitative data is data that is given using numbers
+which counts or measures something
+For example: the number of pets that a student has
+Discrete data is quantitative data that needs to be
+counted
+Discrete data can only take specific values from a set
+of (usually finite) values
+For example: the number of times a coin is flipped
+until a tails is obtained
+Continuous data is quantitative data that needs to be
+measured
+Stuck on something?
+Continuous data can take any value within a range of
+infinite values Ask questions and get help with
+For example: the height of a student exactly what you're revising.
+Age can be discrete or continuous depending on the Got it
+context or how it is defined
+If you mean how many years old a person is then this is
+discrete
+
+---
+
+If you mean how long a person has been alive then this
+is continuous
+What other key words do I need to
+know?
+The population refers to the whole set of things which you
+are interested in Help me understand
+For example: if a vet wanted to know how long a
+typical French bulldog slept for in a day then the
+population would be all the French bulldogs in the
+world
+A sample refers to a subset of the population which is
+used to collect data from
+For example: the vet might take a sample of French
+bulldogs from different cities and record how long
+they sleep in a day
+A sampling frame is a list of all members of the population
+For example: a list of employees’ names within a
+company
+A population parameter is a numerical value which
+describes a characteristic of the population
+These are usually unknown
+For example: the mean height of all 16−year-olds in
+the UK
+A sample statistic is a value computed using data from
+the sample
+These are used to estimate population parameters
+For example: the mean height of 200 16−year-olds
+from randomly selected cities in the UK
+Did this video help you? Yes No
+Sampling techniques
+What are the differences between a
+census and sampling?
+A census collects data about all the members of a
+population
+
+---
+
+For example: the Government in England does a
+national census every 10 years to collect data about
+every person living in England at the time
+The main advantage of a census is that it gives fully
+accurate results
+The disadvantages of a census are:
+It is time consuming and expensive to carry out
+It can destroy or use up all the members of a
+population when they are consumables (imagine a
+company testing every single firework)
+Sampling is used to collect data from a subset of the
+population
+The advantages of sampling are:
+It is quicker and cheaper than a census
+It leads to less data needing to be analysed
+The disadvantages of sampling are:
+It might not represent the population accurately
+It could introduce bias
+What sampling techniques do I
+need to know?
+Simple random sampling: if a sample of size n is taken
+then every group of n members from the population has
+an equal probability of being selected for the sample
+Simple random sampling is carried out by uniquely
+numbering every member of a population and
+randomly selecting ndifferent numbers using a
+random number generator or a form of lottery (where
+numbers are selected randomly)
+Systematic sampling: a sample is formed by choosing
+members of a population at regular intervals using a list
+To carry this out you would calculate the size of the
+sizeof population (N)
+interval k= and choose a
+sizeof sample(n)
+starting point between 1 and k then select every kth
+member after the first one
+Stratified sampling: the population is divided into disjoint
+groups (called strata) and then a random sample is taken
+from each group (stratum)
+The proportion of a sample that belongs to a stratum
+is equal to the proportion of the population that
+belongs to the stratum
+The number of members sampled from a stratum
+size of sample (n)
+= x number of members
+size of population (N)
+in the stratum
+The population could be split by age ranges, gender,
+etc
+Quota sampling: the population is split into groups (like
+stratified sampling) and members of the population are
+selected until each quota is filled
+If a member does not want to be included then
+another member is chosen instead
+The members do not have to be selected randomly
+Opportunity (convenience) sampling: a sample is
+formed using available members of the population who fit
+the criteria
+
+---
+
+Did this video help you? Yes No
+Sampling critique
+When should each sampling
+technique be used or avoided?
+Simple random sampling: this should be used when you
+want a random sample to avoid bias
+Useful when you have a small population or want a
+small sample (such as children in a class)
+This can not be used if it is not possible to number or
+list all the members of the population (such as fish in a
+lake)
+Systematic sampling: this should be used when you want
+a random sample from a large population
+Useful when there is a natural order (such as a list of
+names or a conveyor belt of items)
+In order for the sample to be random the sampling
+frame needs to be random
+This can not be used if it is not possible to number or
+list all the members of the population (such as
+penguins in Antarctica)
+Stratified sampling: this should be used when the
+population can be split into obvious groups of members
+(where members within a group have a common
+characteristic)
+Useful when there are very different groups of
+members within a population
+The sample will be representative of the population
+structure
+The members selected from each stratum are chosen
+randomly
+This can not be used if the population can not be split
+into groups or if the groups overlap
+Quota sampling: this should be used when a small sample
+is needed to be representative of the population
+structure
+Useful when collecting data by asking people who
+walk past you in a public place or when a sampling
+frame is not available
+
+---
+
+This can introduce bias as some members of the
+population might choose not to be included in the
+sample
+Opportunity (convenience) sampling: this should be
+used when a sample is needed quickly
+Useful when a list of the population is not possible
+This is unlikely to be representative of the population
+structure
+What are the main criticisms of
+sampling techniques?
+Most sampling techniques can be improved by taking a
+larger sample
+Sampling can introduce bias - so you want to minimise the
+bias within a sample
+To minimise bias the sample should be random
+A sample only gives information about those members
+Different samples may lead to different conclusions
+about the population
+Worked Example
+Mike is a biologist studying mice in an open enclosure. He has
+access to approximately 540 field mice and 260 harvest
+mice. Mike wants to sample 10 mice and he wants the
+proportions of the two types of mice in his sample to reflect
+their respective proportions of the population.
+(a) Calculate the number of field mice and harvest mice that
+Mike should include in his sample.
+(b) Given that Mike does not have a list of all mice in the
+enclosure, state the name of this sampling method.
+(c) Suggest one way in which Mike could improve his sampling
+method.
+Answer:
+Examiner Tips and Tricks
+
+---
+
+Use common sense when answering questions on this
+topic. The best way to get a deeper understanding of
+sampling is to read real articles in the news and think
+about the sampling methods that have been used.
+Stratified and quota sampling seem similar, but the main
+difference is stratified involves randomly selecting the
+members within each stratum.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+
+---
+
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

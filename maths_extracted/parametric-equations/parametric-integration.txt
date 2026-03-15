@@ -1,0 +1,21 @@
+Edexcel A Level Maths: Pure Revision Notes
+Parametric Integration
+Exam code:9MA0 Download PDF
+Help me understand
+Written by:Paul
+Updated on 20 June 2025
+06:10
+Did this video help you? Yes No
+Parametric integration
+How does integration work with
+parametric equations?
+Integration is used to find the area under a curve where the
+curve has been defined by parametric equations
+x = f(t)
+y = g(t)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+The key point is to ensure the limits of the integral are
+changed to the parameter

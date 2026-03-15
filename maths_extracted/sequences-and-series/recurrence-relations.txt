@@ -1,0 +1,29 @@
+Edexcel A Level Maths: Pure Revision Notes
+Recurrence Relations
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Did this video help you? Yes No
+Recurrence relations
+Help me understand
+What is a recurrence relation?
+A recurrence relation describes each term in a sequence
+as a function of the previous term – ie u = f(u )
+n+1 n
+Along with the first term of the sequence, this allows you
+to generate the sequence term by term
+Stuck on something?
+Both arithmetic sequences and geometric sequences Ask questions and get help with
+can be defined using recurrence relations exactly what you're revising.
+Arithmetic can be defined by u =u +d,u =a
+n+1 n 1 Got it
+Geometric can be defined by u =u ×r,u =a
+n+1 n 1
+However, you can also define sequences that are neither
+arithmetic nor geometric
+Examiner Tips and Tricks
+For arithmetic or geometric sequences defined by
+recurrence relations, you can sum the terms using the
+arithmetic series and geometric series formulae.
+To sum up the terms of other sequences, you may have to
+think about the series and find a clever trick.

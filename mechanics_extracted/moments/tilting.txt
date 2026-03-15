@@ -1,0 +1,84 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Tilting
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Help me understand
+Tilting
+What does it mean if a rod is on the
+point of tilting?
+A rod will tilt (rotate) about a pivot if the resultant moment
+about that pivot is non-zero
+Examples of tilting:
+A person walking a plank on a ship will get to a certain
+distance before the plank tilts
+Children playing on a seesaw
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+How do I solve problems involving a Got it
+rod on the point of tilting?
+
+---
+
+If a rod is on the point of tilting about a pivot (at a support)
+then the reaction forces at the other supports are zero
+The rod is still in equilibrium at the point of tilting
+Taking moments about the pivot is the key step as it
+allows you to ignore the reaction force
+The question might not use the phrase “tilting”
+It could ask you how far along a plank that it is safe to
+walk (it is safe as long as the plank does not tilt)
+It could ask you to find the maximum mass that could
+be hung from a rod that would keep it horizontal (as
+soon as it begins to tilt it is no longer horizontal)
+Worked Example
+A uniform rod AB of mass 9 kg and length 5 m rests on two
+supports at two points C and D as shown in the diagram
+below.
+A mass of 6 kg is placed at B and a mass of m kg is placed at A.
+Given that the rod is on the point of tilting about C, find the
+value of m.
+Answer:
+Examiner Tips and Tricks
+Remember to use common sense! If a rod was supported
+by two supports and a mass was placed on the rod in
+between these supports then the rod would never tilt (in
+real-life it might break though).
+Teacher only
+
+---
+
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+
+---
+
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

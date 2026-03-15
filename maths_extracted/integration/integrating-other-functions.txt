@@ -1,0 +1,44 @@
+Edexcel A Level Maths: Pure Revision Notes
+Integrating Other Functions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 11 February 2026
+Help me understand
+04:24
+Did this video help you? Yes No
+Integrating other functions
+Is integration the reverse of
+differentiation?
+Yes, but remember “+c”, the constant of integration …
+… unless finding a definite integral
+Recognising common results helps to make integration
+easier (See Differentiating Other Functions)
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+How do I integrate e and e ?
+x kx Got it
+The gradient of ekx is kekx
+ie y = ekx, dy/dx = kekx
+The reverse applies when integrating
+This is an example of reverse chain rule
+How do I integrate 1/x?
+1
+Remember =x−1
+x
+The method for integrating powers does not apply if
+the power is -1
+How do I integrate sin x and cos x?
+Note the minus in the integral of sin x
+How do I integrate tan x?
+The integral of tan x is ln|sec x| + c
+Examiner Tips and Tricks
+Make sure you have a copy of the formula booklet during
+revision but don't try to remember everything in the
+formula booklet.
+However, do be familiar with the layout of the formula
+booklet – you’ll be able to locate quickly whatever you are
+after, and you do not want to be searching every line of
+every page!
+For formulae you think you have remembered, use the
+booklet to double-check.

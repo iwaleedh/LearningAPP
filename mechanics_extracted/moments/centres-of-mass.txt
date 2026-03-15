@@ -1,0 +1,106 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Centres of Mass
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Uniform rods & laminae
+What is the centre of mass of an
+object?
+The centre of mass of an object is the point at which the
+weight of the object may be considered to act
+For a uniform object the centre of mass is at the centre of
+the object where the lines of symmetry intersect
+For a uniform rod this will be at its midpoint
+For a uniform rectangular lamina this will be where Help me understand
+the diagonals intersect
+For a non-uniform object the centre of mass is not
+necessarily at the centre of the object
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Where is the centre of mass of a
+Got it
+uniform rod?
+
+---
+
+If you are told that a rod is uniform then you can draw the
+weight at the midpoint of the rod
+If a rod lies on a support or peg then there will be a normal
+reaction force which acts perpendicular to the rod at that
+point
+If the rod is suspended by strings or cables then there will
+be tensions in the strings which keep the rod in place
+Worked Example
+A uniform rod AB of mass 20 kg and length 1.4 m rests in
+equilibrium on two supports at points C and D. AC = 0.3 m and
+BD = 0.1 m.
+Find the magnitudes of the normal reaction forces at C and D.
+Answer:
+Examiner Tips and Tricks
+If there are two supports with unknown reaction forces
+then choosing the pivot to be at one of the supports will
+help to find the force at the other support. The same
+method works with strings too.
+
+---
+
+Did this video help you? Yes No
+Non-uniform rods
+How do I find the centre of mass of a
+non-uniform rod in equilibrium?
+Step 1: Label the weight of the rod at a random point on
+the rod
+Step 2: Call the perpendicular distance between the pivot
+and the weight x
+Or any letter of your choice
+Step 3: Form a moment equation using the fact that the
+rod is in equilibrium
+Step 4: Solve the equation to find x
+Worked Example
+A non-uniform rod AB of mass 10 kg and length 4 m is
+suspended by two strings at points A and C with AC = 2.5 m.
+When the tension in the string at A is 3g N the rod hangs
+horizontally in equilibrium as shown in the diagram.
+Find the distance of the centre of mass of the rod from B.
+Answer:
+
+---
+
+Examiner Tips and Tricks
+Make sure you read carefully which distance you are
+asked to find.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+
+---
+
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

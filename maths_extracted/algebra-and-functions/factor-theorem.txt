@@ -1,0 +1,72 @@
+Join now for free
+Sign up now. It’s free!
+A Level Maths Edexcel Pure Revision Notes A
+Factor Theorem(Edexcel A
+Sign up with Google
+Level Maths):Revision Note
+or
+Full name
+Exam code:9MA0 Download PDF
+Jane Doe
+Email
+Written by:Roger B
+user@example.com
+Updated on 19 June 2025
+Password
+Exam board:
+••••••••
+Edexcel
+Sign up
+Already have an account? Log in
+By signing up you agree to ourTerms andPrivacy Policy
+Did this video help you? Yes No
+Factor theorem
+What is the factor theorem?
+The factor theorem is a very useful result about
+polynomials
+A polynomial is an algebraic expression consisting of a
+finite number of terms, with non-negative integer indices
+only
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+At A level you will most frequently use the factor theorem
+as a way to simplify the process of factorising polynomials
+Sign up now. It’s free!
+or
+Full name
+What do I need to know about the
+Email
+factor theorem?
+ForP aa spsowlyonrdomial f(x) the factor theorem states that:
+If f(p) = 0, then (x - p) is a factor of f(x)
+AND
+If (x - p) is a factor of f(x), then f(p) = 0
+By signing up you agree to ourTerms andPrivacy Policy
+Examiner Tips and Tricks
+In an exam, the values of p you need to find that make f(p)
+= 0 are going to be integers close to zero.
+Try p = 1 and -1 first, then 2 and -2, then 3 and -3
+It is very unlikely that you'll have to go beyond that.
+Worked Example
+Help me understand
+Sign up now. It’s free!
+or
+Full name
+Email
+Password
+By signing up you agree to ourTerms andPrivacy Policy
+Unlock more, it's free!
+Join the 100,000+ Students that ❤ Save
+My Exams
+the (exam) results speak for themselves:
+I would just like to say a massive thank you This website
+for putting together such a brilliant, easy ever thank y
+to use website. I really think using this questions b
+site helped me secure my top grades in the name of
+science and maths. You really did save my been more
+exams! Thank you. SAVE MY E
+Beth Fathima
+IGCSE Student A Level Stude
+Join now for free

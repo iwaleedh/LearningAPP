@@ -1,0 +1,31 @@
+Edexcel A Level Maths: Pure Revision Notes
+Transformations of
+Trigonometric Functions
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 16 February 2026
+Help me understand
+Did this video help you? Yes No
+Transformations of
+trigonometric functions
+What are transformations of
+trigonometric functions?
+You should already have a good idea about translating,
+stretching and reflecting basic functions (see
+Transformations of Functions)
+The basic principles are exactly the same for transforming
+any trigonometric graph
+y = n cos x gives a vertical stretch or squash
+y = sin nx gives a horizontal stretch or squash
+y = tan (x + c) gives a horizontal translation
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Examiner Tips and Tricks
+Always sketch with a pencil and draw a smooth curve.
+When you sketch the transformation of a graph, be sure
+to indicate the new coordinates of any points that are
+marked on the original graph.
+Try to indicate the coordinates of points where the new
+graph intersects the axes.

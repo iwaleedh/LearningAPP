@@ -1,25 +1,27 @@
 export const note_physics_2_13_7 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Power of a Lens" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Define lens power in dioptres; apply P = 1/f; explain the sign convention for converging and diverging lenses; calculate power from focal length and vice versa" } },
     { id: 'head-1', type: 'heading', data: { text: "Power of a Lens", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Power of a Lens will be updated." } },
-
-  
-    {
-      id: "svg-diagram-auto",
-      type: "svg",
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
-  <circle cx="200" cy="100" r="80" fill="none" stroke="#f43f5e" stroke-width="3"/>
-  <circle cx="210" cy="100" r="60" fill="none" stroke="#f43f5e" stroke-width="3"/>
-  <circle cx="230" cy="100" r="40" fill="none" stroke="#f43f5e" stroke-width="3"/>
-  <text x="200" y="195" fill="#f8fafc" font-size="16" text-anchor="middle">Doppler Effect</text>
-</svg>`,
-        caption: "Physics Diagram"
-      }
-    }
+    { id: 'para-2', type: 'paragraph', data: { text: "The power of a lens is a measure of how strongly it refracts (bends) light. A lens with a short focal length bends light through a larger angle than a lens with a long focal length; it is therefore described as more powerful. Rather than using focal length directly, opticians and physicists use the power P defined as the reciprocal of the focal length: P = 1/f. This definition makes combining lenses straightforward, as the powers simply add." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Definition and Unit The power of a lens is defined as P = 1/f, where f is the focal length in metres. The unit of power is the dioptre (D): 1 D = 1 m⁻¹. A lens with focal length 0.50 m has a power of 2.0 D. A lens with focal length 0.25 m has a power of 4.0 D. The shorter the focal length, the higher the power — the two quantities are inversely proportional." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Power of a Lens: P = 1/f</text><rect x="15" y="30" width="180" height="130" rx="6" fill="#e7f5ff" stroke="#339af0" stroke-width="2"/><text x="105" y="52" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1864ab" text-anchor="middle">Converging Lens</text><text x="105" y="72" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">f = +0.25 m</text><text x="105" y="90" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1864ab" text-anchor="middle">P = +4.0 D</text><text x="105" y="108" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">Positive power</text><text x="105" y="126" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">Converges light</text><text x="105" y="144" font-family="sans-serif" font-size="11" fill="#868e96" text-anchor="middle">e.g. reading glasses</text><rect x="205" y="30" width="180" height="130" rx="6" fill="#fff3bf" stroke="#fab005" stroke-width="2"/><text x="295" y="52" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e67700" text-anchor="middle">Diverging Lens</text><text x="295" y="72" font-family="sans-serif" font-size="11" fill="#e67700" text-anchor="middle">f = &#8722;0.50 m</text><text x="295" y="90" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e67700" text-anchor="middle">P = &#8722;2.0 D</text><text x="295" y="108" font-family="sans-serif" font-size="11" fill="#e67700" text-anchor="middle">Negative power</text><text x="295" y="126" font-family="sans-serif" font-size="11" fill="#e67700" text-anchor="middle">Diverges light</text><text x="295" y="144" font-family="sans-serif" font-size="11" fill="#868e96" text-anchor="middle">e.g. myopia glasses</text></svg>', caption: 'Converging lenses have positive power (f > 0); diverging lenses have negative power (f < 0)' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Sign Convention The sign of the power follows the sign of the focal length: converging lenses have a positive focal length and therefore positive power (P > 0); diverging lenses have a negative focal length and therefore negative power (P < 0). The magnitude of P tells you how strongly the lens bends light; the sign tells you whether it converges or diverges. A power of +10 D represents a very strong converging lens (f = 0.10 m); a power of −1 D represents a weakly diverging lens (f = −1.0 m)." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "The Dioptre in Optometry Opticians describe spectacle and contact lens prescriptions in dioptres. A prescription of +2.5 D means a converging lens (f = 1/2.5 = 0.40 m), used to correct far-sightedness (hypermetropia), where the eye cannot focus nearby objects. A prescription of −3.0 D means a diverging lens (f = 1/(−3.0) = −0.33 m), used to correct near-sightedness (myopia). The dioptre notation is compact and makes prescription arithmetic straightforward." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="160" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Focal Length vs Power Relationship</text><line x1="40" y1="130" x2="370" y2="130" stroke="#212529" stroke-width="2"/><line x1="40" y1="130" x2="40" y2="30" stroke="#212529" stroke-width="2"/><text x="205" y="147" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">Focal length f / m</text><text x="18" y="80" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle" transform="rotate(-90 18,80)">Power P / D</text><path d="M 50 32 Q 70 48 100 65 Q 150 90 200 105 Q 250 117 300 123 Q 340 127 365 130" stroke="#339af0" stroke-width="2.5" fill="none"/><text x="160" y="56" font-family="sans-serif" font-size="11" fill="#1864ab">P = 1/f</text><text x="160" y="70" font-family="sans-serif" font-size="11" fill="#1864ab">(converging, f &gt; 0)</text><text x="75" y="40" font-family="sans-serif" font-size="10" fill="#868e96">Short f = high P</text></svg>', caption: 'P = 1/f: shorter focal length gives higher power; relationship is hyperbolic (1/f curve)' } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Worked Examples (1) Find the power of a converging lens with focal length 40 cm: f = 0.40 m. P = 1/0.40 = +2.5 D. (2) Find the focal length of a lens with power −4.0 D: f = 1/P = 1/(−4.0) = −0.25 m (i.e. 25 cm, diverging). (3) An eye has a near point of 1.0 m instead of the standard 25 cm. What power of lens is needed? The lens must form a virtual image at 1.0 m of an object at 0.25 m. Using 1/f = 1/v − 1/u with real-is-positive sign convention: 1/f = 1/(−1.0) − 1/(−0.25) = −1 + 4 = +3.0 D." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Formula', text: 'P = 1/f, where f is in metres and P is in dioptres (D = m⁻¹). Converging lens: f > 0, P > 0. Diverging lens: f < 0, P < 0. Short focal length = high power = strong lens. For lenses in contact: P_total = P₁ + P₂.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "State the definition of lens power and its unit, and explain what a dioptre is", checked: false },
+      { text: "Apply P = 1/f to calculate power from focal length and focal length from power, applying the correct sign", checked: false },
+      { text: "Explain what a positive and a negative power prescription means in the context of correcting vision", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Power P = 1/f (f in metres, P in dioptres D). Converging lens: f > 0, P > 0. Diverging lens: f < 0, P < 0. Higher power = shorter focal length = stronger bending. Optician prescriptions are in dioptres: positive for hypermetropia (far-sighted), negative for myopia (near-sighted). Lenses in contact: P_total = P₁ + P₂." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Power of a Lens' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'Define lens power. What is its unit? What is the power of a lens with focal length 50 cm?' },
+    { id: 'cue-2', blockId: 'para-4', prompt: 'What is the sign of the power for a converging lens? For a diverging lens? Why?' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'A lens has a power of −2.5 D. What type of lens is it and what is its focal length?' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

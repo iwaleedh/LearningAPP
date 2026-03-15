@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+"e"
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Did this video help you? Yes No
+"e"
+What is the number "e" in maths?
+Help me understand
+e is an irrational number, sometimes called Euler's number
+e ≈ 2.718
+How do I sketch y = e?
+x
+The exponential function is y = ex
+As with other exponential graphs y = ex
+passes through (0, 1)
+has the x-axis as an asymptote
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+What is the special property of "e"?
+y = ex has the particular property that
+dy
+=ex
+dx
+ie for every real number x, the gradient of y = ex is also
+equal to ex (see Derivatives of Exponential Functions)
+How do I sketch y = e ?
+-x
+y = e-x is a reflection in the y-axis of y = ex
+They are of the form y = f(x) and y = f(-x) (see
+Transformations of Functions - Reflections)
+What is exponential growth and
+decay?
+y = Aekx (k > 0) is exponential growth
+y = Ae-kx (k > 0) is exponential decay
+A is the initial value
+k is a (usually positive) constant
+“-“ is used in the equation making clear whether it is
+growth or decay

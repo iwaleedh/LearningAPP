@@ -1,0 +1,40 @@
+Edexcel A Level Maths: Pure Revision Notes
+Arithmetic Series
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+05:17
+Did this video help you? Yes No
+Arithmetic series
+How do I find the sum of an
+arithmetic series?
+An arithmetic series is the sum of the terms of an
+arithmetic sequence
+Help me understand
+The following formulae will let you find the sum of the first n
+terms of an arithmetic series:
+n n
+S = (2a+(n−1)d) or S = (a+l)
+n 2 n 2
+a is the first term
+d is the common difference
+l is the last term Stuck on something?
+You can use whichever formula is more convenient for a Ask questions and get help with
+given question exactly what you're revising.
+The a and the d in those formulae are exactly the same as
+the ones used with arithmetic sequences Got it
+How do I prove the arithmetic series
+formula?
+Learn this proof of the arithmetic series formula – you can
+be asked to give it on the exam:
+Write the terms out once in order
+Write the terms out again in reverse order
+Add the two sums together
+The terms will pair up to give the same sum
+2a+(n−1)d
+There will be n of these terms
+Divide by two as two of the sums have been added
+together
+Examiner Tips and Tricks
+The arithmetic series formulae are in the formulae booklet –
+you don't need to memorise them.

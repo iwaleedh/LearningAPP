@@ -1,0 +1,28 @@
+Edexcel A Level Maths: Pure Revision Notes
+Disproof by Counter Example
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 18 June 2025
+Did this video help you? Yes No
+Disproof by counter
+example
+What is disproof by counter
+example?
+Disproof by counter examples involves finding a value that
+does not work for the given statement
+That value is called a counterexample
+How do I disprove a result?
+You only need to find one value that does “not work”
+Numbers that have unusual results are often helpful to try
+Stuck on something?
+Help me understand
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Look carefully to see what types of number the result is
+claimed for – it may just be integers rather than real
+numbers
+Irrational numbers can be unusual
+Think about areas of maths where unusual things happen –
+such as in trigonometry where there are several angles
+with the same sine value

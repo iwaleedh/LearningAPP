@@ -1,0 +1,112 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Deriving the suvat Formulas
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Deriving the suvat
+Help me understand
+equations
+What does suvat stand for?
+suvat is an acronym for the five quantities used when
+modellingmotion in a straight-line with constant
+acceleration
+s – displacement (from the starting point)
+u – initial velocity
+v – final velocity
+a – acceleration
+t – time
+All except time are vector quantities and can be negative
+time is a scalar quantity
+What are the suvat equations for
+constant acceleration?
+The five suvat equations for motion in a straight line are: Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+
+---
+
+v =u +at
+v2 =u2 +2as
+1
+s = (u + v)t
+2
+1
+s =ut + at2
+2
+1
+s = vt − at2
+2
+The equations can only be used when the motion has
+constantacceleration
+All equations connect four of the five quantities
+Knowing any three allows a fourth to be found
+The equations are provided in the exam
+How do I derive the suvat
+equations?
+The four equations that involve time can be derived from a
+velocity-time graph
+The velocity-time graph will be a straight line as the
+acceleration is constant
+The fifth equation can be found by choosing any two
+of the equations and eliminating the t variable (see the
+worked example)
+Two of the equations can also be derived using calculus
+Velocity is found by integrating acceleration
+Displacement is found by integrating velocity
+
+---
+
+Worked Example
+Use the constant acceleration equations
+1
+s= (u+v)t and v=u+at
+2
+to show that
+v2=u2+2as.
+Answer:
+Examiner Tips and Tricks
+If you are asked to derive one of the formulae then the
+question will likely give you a hint as to which method to
+use. They may provide a velocity-time graph. Make sure
+you show each step and state any reasons such as the
+gradient of the graph being the acceleration.
+If the question does not ask you to derive the formulae,
+then you can use them freely without proof.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+
+---
+
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+
+---
+
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

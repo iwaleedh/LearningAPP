@@ -1,0 +1,39 @@
+Edexcel A Level Maths: Pure Revision Notes
+Bisection of Chords
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Bisection of chords
+How can I find the equation of a
+perpendicular bisector?
+The perpendicular bisector of a line segment:
+is perpendicular to the line segment
+goes through the midpoint of the line segment
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+The midpoint and gradient of the line segment between
+points (x, y) and (x , y ) are given by the formulae
+1 1 2 2
+The gradient of the perpendicular bisector is therefore
+The equation of the perpendicular bisector is the equation
+of the line with that gradient through the line segment's
+midpoint (see Equation of a Straight Line)
+How can I use perpendicular
+bisectors to find the equation of a
+circle?
+A chord of a circle is a straight line segment between any
+two points on the circle
+The perpendicular bisector of a chord always goes
+through the centre of the circle
+If you know three points on a circle, draw any two chords
+between them – the perpendicular bisectors of the
+chords will meet at the centre of the circle
+Now that you know the centre of the circle and a point on
+the circle you can write the equation of the circle
+Examiner Tips and Tricks
+To find the point of intersection of two straight lines, set
+the equations of the lines equal to each other and solve.

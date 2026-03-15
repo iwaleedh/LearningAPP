@@ -1,0 +1,120 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Horizontal & Vertical
+Components of Projectiles
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 25 November 2025
+Did this video help you? Yes No
+Horizontal & vertical
+components
+Help me understand
+What is a projectile?
+A projectile is a particle moving freely, under gravity, in a
+two-dimensional plane
+Examples of projectile motion include
+Sports such as basketball, javelin, archery, etc
+Computer games such as Angry Birds
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+
+---
+
+What modelling assumptions are
+made with projectiles?
+The modelling assumptions with projectiles are
+No air resistance, no horizontal forces
+The projectile moves freely under gravity (no other
+vertical forces)
+Ignore spin and the rotation of the projectile
+Motion is symmetrical along the path of a parabola
+What is the acceleration of a
+projectile?
+As it is 2D there will be a horizontal component to
+acceleration (a )and a vertical component (a )
+x y
+There will be no horizontal acceleration (a = 0)
+x
+No forces are acting horizontally
+Horizontal speed is constant
+There will be constant vertical acceleration (due to gravity,
+a = ± g)
+y
+a may be positive or negative depending on which
+y
+direction is taken as positive
+The acceleration can be written as 2D vector
+⎛ ⎜ 0 ⎞ ⎟
+a=0i −gj = ⎜ ⎜ ⎟ ⎟ms−2
+⎝−g⎠
+What is the initial velocity of a
+projectile?
+As it is 2D there will be a horizontal component to the initial
+velocity(u ) and a vertical component (u )
+x y
+A projectile is launched with initial speedU m s-1 at an
+angle θ to the horizontal
+If it is projected below the horizontal then θ would be
+negative
+Its initial velocity, u m s-1, is a vector with:
+horizontal component, u
+x
+= U cosθ
+vertical component, u
+y
+= U sinθ
+The initial velocity can have a positive or negative vertical
+component as an object can be projected upwards or
+downwards
+Worked Example
+A projectile is launched at an angle of 25° to the horizontal
+with speed 5 m s-1 .
+
+---
+
+Find the initial velocity, u m s-1 , of the projectile.
+Answer:
+Examiner Tips and Tricks
+Sometimes they may give you the initial velocity as a
+vector already. To find the initial speed you would find the
+magnitude of the initial velocity and to find the angle of
+projection you could sketch a diagram and use
+trigonometry.
+The horizontal speed is always constant so there will never
+be a point during the motion when the speed of the
+object is zero. Its minimum speed will be at its maximum
+height when its vertical velocity is instantaneously zero.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+
+---
+
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

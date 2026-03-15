@@ -1,0 +1,40 @@
+Edexcel A Level Maths: Pure Revision Notes
+Integrating f'(x)/f(x)
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 23 June 2025
+04:51
+Help me understand
+Did this video help you? Yes No
+Integrating f'(x)/f(x)
+How do I integrate 1/x?
+The technique for integrating fractions depends on the
+type of fraction
+For polynomialdenominators see Integration using Partial
+Fractions
+dy 1
+If = then y = ln |x| + c – see Integrating Other
+dx x
+Functions
+The type of fraction dealt with here is a specific case of
+Reverse Chain Rule
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I integrate f'(x)/f(x)?
+“The top is ‘almost’ the derivative of the bottom”
+'almost' here meaning 'a multiple of' (see below)
+The integral will involve ln |f(x)| - ie ln of the bottom
+Due to reverse chain rule
+How do I adjust a fraction into the
+form f'(x)/f(x)?
+There may be coefficients to ‘adjust’ and ‘compensate’
+for
+Examiner Tips and Tricks
+If you're unsure if the fraction is of the form f’(x)/f(x),
+differentiate the denominator.
+Compare this to the numerator but you can ignore any
+coefficients.
+If the coefficients do not match then ‘adjust’ and
+‘compensate’ for them.

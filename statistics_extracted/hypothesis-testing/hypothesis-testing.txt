@@ -1,0 +1,271 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Hypothesis Testing
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 16 February 2026
+Did this video help you? Yes No
+Language of hypothesis
+testing
+What is a hypothesis test?
+A hypothesis test uses a sample of data in an experiment
+to test a statement made about the value of a population
+parameter
+A hypothesis test is used when the value of the assumed
+population parameter is questioned
+The hypothesis test will look at which outcomes are
+unlikely to occur if the assumed population parameter is
+true
+The probability found will be compared against a given
+significance level to determine whether there is evidence
+to believe that the assumed population parameter is not
+true
+What are the key terms used in
+statistical hypothesis testing?
+Stuck on something?
+Every hypothesis test must begin with a clear null
+Ask questions and get help with
+hypothesis (what we believe to already be true) and
+exactly what you're revising.
+alternative hypothesis (how we believe the data pattern
+or probability distribution might have changed) Got it
+A hypothesis is an assumption that is made about a
+particular population parameter
+
+---
+
+A population parameter is a numerical characteristic
+which helps define a population
+One example of a population parameter is the
+probability, p of an event occurring
+Another example is the mean of a population
+Help me understand
+The null hypothesis is denoted H and sets out the
+0
+assumed population parameter given that no change
+has happened
+The alternative hypothesis is denoted H and sets out
+1
+how we think the population parameter could have
+changed
+When a hypothesis test is carried out, the null
+hypothesis is assumed to be true and this assumption
+will either be accepted or rejected
+A hypothesis test could be a one-tailed test or a two-
+tailed test
+The null hypothesis will always be H : θ = ...
+0
+The alternate hypothesis will depend on if it is a one-tailed
+or two-tailed test
+A one-tailed test would test to see if the population
+parameter, θ, has either increased or decreased
+The alternative hypothesis, H will be H : θ > ...
+1 1
+or H : θ < ...
+1
+A two-tailed test would test to see if the population
+parameter, θ , has changed
+The alternative hypothesis, H will be H : θ ≠ ...
+1 1
+It is important to read the wording of the question
+carefully to decide whether your hypothesis test
+should be one-tailed or two-tailed
+To carry out a hypothesis test an experiment will be carried
+out on a sample of data, the result of this experiment will
+be the test statistic
+A sample of data is a subset of data taken from the
+population
+The test statistic is a numerical value calculated from
+the data
+The test statistic is sometimes also referred to as
+the observed value
+A hypothesis test will always be carried out at an
+appropriate significance level
+The significance level sets the smallest probability
+that an event could have occurred by chance.
+Any probability smaller than the significance level
+would suggest that the event is unlikely to have
+happened by chance
+The significance level must be set before the
+hypothesis test is carried out
+The significance level will usually be 1%, 5% or 10%,
+however it may vary
+Worked Example
+A hypothesis test is carried out at the 5% level of significance
+to test if a normal coin is fair or not.
+
+---
+
+(i) Describe what the population parameter could be for the
+hypothesis test.
+(ii) State whether the hypothesis test should be a one-tailed
+test or a two-tailed test, give a reason for your answer.
+(iii) Clearly defining your population parameter, state suitable
+null and alternative hypotheses for the test.
+Answer:
+Examiner Tips and Tricks
+Make sure you read the question carefully to determine
+whether the test you are carrying out is for a one-tailed or
+a two-tailed test and use the level of significance
+accordingly.
+Did this video help you? Yes No
+
+---
+
+Critical regions & p-values
+How do we decide whether to
+reject or accept the null
+hypothesis?
+The null hypothesis would be rejected if the p - value is
+less than the significance level or if the test statistic falls
+within the critical region
+The p - value is the probability of a value being at
+least as extreme as the test statistic, assuming that
+the null hypothesis is true
+If the test is looking for a decrease then extreme
+values are smaller than the test statistic, so find
+the probability of less than or equal to the test
+statistic
+If the test is looking for an increase then extreme
+values are bigger than the test statistic, so find
+the probability of greater than or equal to the test
+statistic
+In a two-tailed test the p - value is double this
+probability
+Though for a two-tailed test it is common to half
+the significance level and compare this with the
+probability (rather than doubling the probability)
+The critical region is the range of values of the test
+statistic which will lead to the null hypothesis being
+rejected
+If the test statistic falls within the critical region, the
+null hypothesis would be rejected
+The critical value is the boundary of the critical region
+It is the least extreme value that would lead to the
+rejection of the null hypothesis
+The critical value is determined by the significance
+level
+In a two-tailed test the significance level is halved
+and both the upper and the lower tails are tested
+For discrete distributions the critical value is the first
+value that falls within the critical region and so the
+probability of the observed value falling within the
+critical region may be lower than the given
+significance level
+This probability will be known as the actual
+significance level
+The actual significance level is the probability of
+incorrectly rejecting the null hypothesis
+Finding the critical region will be different for a two-
+tailed test than it is for a one-tailed test
+For an α% significance level
+In a one-tailed test the critical region will consist
+of α% in the tail that is being tested for
+In a two-tailed test the critical region will consist
+α
+of % in each tail
+2
+
+---
+
+Worked Example
+For the following situations, state at the 1% and 5%
+significance levels whether the null hypothesis should be
+rejected or not.
+(i) A p–value of 0.0429 is calculated in a one-tailed hypothesis
+test.
+(ii) Assuming the null hypothesis is true, the probability of a
+value being at least as extreme as the test statistic in a two-
+tailed hypothesis test is 0.00705.
+Answer:
+Did this video help you? Yes No
+Conclusions of hypothesis
+testing
+How is a hypothesis test carried
+out?
+There are a number of ways that a hypothesis test can be
+carried out for different models, however the following
+steps should form the base for your test:
+Step 1. Define the test statistic and population parameter
+Step 2. Write the null and alternative hypotheses clearly
+
+---
+
+Step 3. Calculate the critical value(s) or the p - value for
+the test
+Step 4. Compare the observed value of the test statistic
+with the critical value(s) or the p - value with the
+significance level
+Step 5. Decide whether there is enough evidence to
+reject H or whether it has to be accepted
+0
+Step 6. Write a conclusion in context
+How should a conclusion be written
+for a hypothesis test?
+Your conclusion must be written in the context of the
+question
+Use the wording in the question to help you write your
+conclusion
+If rejecting the null hypothesis your conclusion should
+state that there is sufficientevidence to suggest the
+alternative hypothesis is true at this level of
+significance
+If accepting the null hypothesis your conclusion
+should state that there is not enough evidence to
+suggest the alternative hypothesis is true at this level
+of significance
+Your conclusion mustnot be definitive
+There is a chance that the test has led to an incorrect
+conclusion
+The outcome is dependent on the sample, a different
+sample might lead to a different outcome
+The conclusion of a two-tailed test can state if there is
+evidence of a change
+You should not state whether this change is an
+increase or decrease
+Worked Example
+A teacher carried out a hypothesis test at the 10%
+significance level to test if her students perform better in
+exams after using a new revision technique. The p – value for
+her test statistic is 0.09142. Write a conclusion for her
+hypothesis test.
+Answer:
+
+---
+
+Examiner Tips and Tricks
+It is best to use the exact wording from the question when
+writing your conclusion for the hypothesis test, do not be
+afraid to sound repetitive.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+
+---
+
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

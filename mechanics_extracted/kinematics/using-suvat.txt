@@ -1,0 +1,130 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Using suvat with Projectiles
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 19 January 2026
+Did this video help you? Yes No
+Using suvat with projectiles
+How do I use the suvat equations in Help me understand
+projectile problems?
+For projectile motion with acceleration a m s-2 and initial
+velocity u m s-1
+a = 0, a = ±g (depending on which direction is
+x y
+positive)
+u = U cosθ, u = U sinθ
+x y
+Stuck on something?
+Acceleration is constant so the suvat equations apply
+Ask questions and get help with
+Projectile motion is 2D so s, u, v and a are vectors exactly what you're revising.
+1D suvat formulae can be applied to the directions
+separately Got it
+(Note the formula v2 = u2 + 2as still applies in 1D)
+
+---
+
+Remember that acceleration is different for each
+direction
+a = 0 so the suvat formulae reduce to horizontally
+x
+How do I solve problems involving
+the maximum height?
+Projectile motion follows a symmetrical curve (a
+parabola)
+Therefore there will be a maximumheight that the
+projectile reaches
+At the maximum height
+Horizontal velocity, v m s-1, will be the same as the
+x
+initial horizontal velocity u
+x
+Vertical velocity, v m s-1 will be instantaneously zero
+y
+If the projectile launches and lands at the same
+height then the horizontal distance to the maximum
+height is half of the range of the projectile
+Time t is the parameter that will be the same for both the
+horizontal and vertical components
+How can projectiles questions be
+made harder?
+You will need all your skills from your previous work with
+suvat
+Speed is the magnitude of velocity and can be found
+by using Pythagoras’ Theorem
+A good understanding of the relationship between
+distance and displacement
+Simultaneous equations
+Finding the point of intersection of two projectiles
+Sometimes the launch and landing points will be at
+different heights such as if a stone is thrown from the top
+of a cliff into the sea
+Think carefully about the vertical displacement from
+the start to the end
+You might get asked to use the model of a projectile to
+decide whether an object passes over a certain height
+Find the time taken to travel the horizontal distance
+and use this to find the maximum vertical height of the
+projectile
+Worked Example
+
+---
+
+A stone is thrown from the top of a building which is 8 m tall.
+The stone is projected with speed 7 m s-1 at an angle of 60° to
+the horizontal. The stone is modelled as a particle and air
+resistance is ignored.
+(a) Find the maximum height above the ground that the stone
+reaches.
+Answer:
+(b) Find the time taken for the stone to hit the ground.
+Answer:
+(c) Find the horizontal distance from the building to the point
+where the stone lands.
+Answer:
+Examiner Tips and Tricks
+
+---
+
+Always draw a diagram and add to it as you work through
+the question. Make it clear which direction you are using
+as positive.
+Questions could ask you to find the speed at an instant,
+to do this remember to first find both components of the
+velocity and then find the magnitude of the velocity.
+Not all projectiles are projected upwards, for example a
+cannonball fired from the turret of a castle aimed at an
+enemy on the ground!
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+
+---
+
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

@@ -1,0 +1,34 @@
+Edexcel A Level Maths: Pure Revision Notes
+Connected Rates of Change
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+07:02
+Did this video help you? Yes No
+Help me understand
+Connected rates of change
+What are connected rates of
+change?
+In situations involving more than two variables you can use
+the chain rule to connect multiple rates of change into a
+single equation
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Equations involving derivatives (i.e. rates of changes) are
+known as differential equations
+These can be solved using methods of integration
+(see Differential Equations)
+However setting up the equation from the information
+given can involve the chain rule and connected rates
+of change
+Note from the examples above that you will often need to
+differentiate a formula to get one of the rates of change
+you need
+Examiner Tips and Tricks
+These problems can involve a lot of letters – be sure to
+keep track of what they all refer to.
+Be especially sure that you are clear about which letters
+are variables and which are constants – these behave
+very differently when differentiation is involved!

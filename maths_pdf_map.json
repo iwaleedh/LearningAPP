@@ -1,0 +1,896 @@
+{
+    "proof-by-contradiction": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Proof/proof-by-contradiction.pdf",
+        "new_pdf_path": "public/notes/mathematics/proof/proof-by-contradiction.pdf",
+        "extracted_txt": "maths_extracted/proof/proof-by-contradiction.txt",
+        "topic": "Proof"
+    },
+    "disproof-by-counter-example": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Proof/disproof-by-counter-example.pdf",
+        "new_pdf_path": "public/notes/mathematics/proof/disproof-by-counter-example.pdf",
+        "extracted_txt": "maths_extracted/proof/disproof-by-counter-example.txt",
+        "topic": "Proof"
+    },
+    "proof-by-exhaustion": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Proof/proof-by-exhaustion.pdf",
+        "new_pdf_path": "public/notes/mathematics/proof/proof-by-exhaustion.pdf",
+        "extracted_txt": "maths_extracted/proof/proof-by-exhaustion.txt",
+        "topic": "Proof"
+    },
+    "proof-by-deduction": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Proof/proof-by-deduction.pdf",
+        "new_pdf_path": "public/notes/mathematics/proof/proof-by-deduction.pdf",
+        "extracted_txt": "maths_extracted/proof/proof-by-deduction.txt",
+        "topic": "Proof"
+    },
+    "language-of-proof": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Proof/language-of-proof.pdf",
+        "new_pdf_path": "public/notes/mathematics/proof/language-of-proof.pdf",
+        "extracted_txt": "maths_extracted/proof/language-of-proof.txt",
+        "topic": "Proof"
+    },
+    "exponential-growth-and-decay": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/exponential-growth-and-decay.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/exponential-growth-and-decay.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/exponential-growth-and-decay.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "exponential-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/exponential-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/exponential-functions.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/exponential-functions.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "modelling": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/modelling.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/modelling.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/modelling.txt",
+        "topic": "Sequences & Series"
+    },
+    "logarithmic-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/logarithmic-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/logarithmic-functions.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/logarithmic-functions.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "derivatives-of-exponential-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/derivatives-of-exponential-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/derivatives-of-exponential-functions.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/derivatives-of-exponential-functions.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "laws-of-logarithms": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/laws-of-logarithms.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/laws-of-logarithms.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/laws-of-logarithms.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "exponential-equations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/exponential-equations.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/exponential-equations.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/exponential-equations.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "logarithmic-graphs": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/logarithmic-graphs.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/logarithmic-graphs.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/logarithmic-graphs.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "e": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Exponentials & Logarithms/e.pdf",
+        "new_pdf_path": "public/notes/mathematics/exponentials-and-logarithms/e.pdf",
+        "extracted_txt": "maths_extracted/exponentials-and-logarithms/e.txt",
+        "topic": "Exponentials & Logarithms"
+    },
+    "compound-angle-formulae": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/compound-angle-formulae.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/compound-angle-formulae.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/compound-angle-formulae.txt",
+        "topic": "Trigonometry"
+    },
+    "simple-identities": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/simple-identities.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/simple-identities.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/simple-identities.txt",
+        "topic": "Trigonometry"
+    },
+    "reciprocal-and-inverse-trigonometric-functions--definitions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/reciprocal-and-inverse-trigonometric-functions--definitions.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/reciprocal-and-inverse-trigonometric-functions--definitions.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/reciprocal-and-inverse-trigonometric-functions--definitions.txt",
+        "topic": "Trigonometry"
+    },
+    "transformations-of-trigonometric-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/transformations-of-trigonometric-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/transformations-of-trigonometric-functions.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/transformations-of-trigonometric-functions.txt",
+        "topic": "Trigonometry"
+    },
+    "right-angled-triangles": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/right-angled-triangles.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/right-angled-triangles.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/right-angled-triangles.txt",
+        "topic": "Trigonometry"
+    },
+    "basic--definitions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/basic--definitions.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/basic--definitions.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/basic--definitions.txt",
+        "topic": "Trigonometry"
+    },
+    "radian-measure": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/radian-measure.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/radian-measure.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/radian-measure.txt",
+        "topic": "Trigonometry"
+    },
+    "small-angle-approximations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/small-angle-approximations.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/small-angle-approximations.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/small-angle-approximations.txt",
+        "topic": "Trigonometry"
+    },
+    "strategy-for-further-trigonometric-equations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/strategy-for-further-trigonometric-equations.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/strategy-for-further-trigonometric-equations.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/strategy-for-further-trigonometric-equations.txt",
+        "topic": "Trigonometry"
+    },
+    "strategy-for-trigonometric-equations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/strategy-for-trigonometric-equations.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/strategy-for-trigonometric-equations.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/strategy-for-trigonometric-equations.txt",
+        "topic": "Trigonometry"
+    },
+    "graphs-of-trigonometric-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/graphs-of-trigonometric-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/graphs-of-trigonometric-functions.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/graphs-of-trigonometric-functions.txt",
+        "topic": "Trigonometry"
+    },
+    "double-angle-formulae": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/double-angle-formulae.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/double-angle-formulae.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/double-angle-formulae.txt",
+        "topic": "Trigonometry"
+    },
+    "non-right-angled-triangles": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/non-right-angled-triangles.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/non-right-angled-triangles.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/non-right-angled-triangles.txt",
+        "topic": "Trigonometry"
+    },
+    "harmonic-form": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/harmonic-form.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/harmonic-form.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/harmonic-form.txt",
+        "topic": "Trigonometry"
+    },
+    "graphs": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/graphs.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/graphs.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/graphs.txt",
+        "topic": "Trigonometry"
+    },
+    "trigonometry-exact-values": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/trigonometry-exact-values.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/trigonometry-exact-values.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/trigonometry-exact-values.txt",
+        "topic": "Trigonometry"
+    },
+    "quadratic": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/quadratic.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/quadratic.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/quadratic.txt",
+        "topic": "Trigonometry"
+    },
+    "trigonometry-further-identities": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/trigonometry-further-identities.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/trigonometry-further-identities.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/trigonometry-further-identities.txt",
+        "topic": "Trigonometry"
+    },
+    "trigonometric-proof": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/trigonometric-proof.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/trigonometric-proof.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/trigonometric-proof.txt",
+        "topic": "Trigonometry"
+    },
+    "linear": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/linear.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/linear.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/linear.txt",
+        "topic": "Algebra & Functions"
+    },
+    "inverse-trig-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Trigonometry/inverse-trig-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/trigonometry/inverse-trig-functions.pdf",
+        "extracted_txt": "maths_extracted/trigonometry/inverse-trig-functions.txt",
+        "topic": "Trigonometry"
+    },
+    "equation-of-a-straight-line": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/equation-of-a-straight-line.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/equation-of-a-straight-line.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/equation-of-a-straight-line.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "bisection-of-chords": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/bisection-of-chords.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/bisection-of-chords.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/bisection-of-chords.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "basic-coordinate-geometry": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/basic-coordinate-geometry.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/basic-coordinate-geometry.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/basic-coordinate-geometry.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "equation-of-a-circle": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/equation-of-a-circle.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/equation-of-a-circle.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/equation-of-a-circle.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "modelling-with-straight-lines": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/modelling-with-straight-lines.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/modelling-with-straight-lines.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/modelling-with-straight-lines.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "parallel-and-perpendicular-gradients": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/parallel-and-perpendicular-gradients.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/parallel-and-perpendicular-gradients.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/parallel-and-perpendicular-gradients.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "finding-the-centre-and-radius": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/finding-the-centre-and-radius.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/finding-the-centre-and-radius.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/finding-the-centre-and-radius.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "angle-in-a-semicircle": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/angle-in-a-semicircle.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/angle-in-a-semicircle.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/angle-in-a-semicircle.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "radius-and-tangent": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Coordinate Geometry/radius-and-tangent.pdf",
+        "new_pdf_path": "public/notes/mathematics/coordinate-geometry/radius-and-tangent.pdf",
+        "extracted_txt": "maths_extracted/coordinate-geometry/radius-and-tangent.txt",
+        "topic": "Coordinate Geometry"
+    },
+    "integrating-fxfx": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integrating-fxfx.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integrating-fxfx.pdf",
+        "extracted_txt": "maths_extracted/integration/integrating-fxfx.txt",
+        "topic": "Integration"
+    },
+    "integration-by-parts": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integration-by-parts.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integration-by-parts.pdf",
+        "extracted_txt": "maths_extracted/integration/integration-by-parts.txt",
+        "topic": "Integration"
+    },
+    "particular-solutions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/particular-solutions.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/particular-solutions.pdf",
+        "extracted_txt": "maths_extracted/integration/particular-solutions.txt",
+        "topic": "Integration"
+    },
+    "fundamental-theorem-of-calculus": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/fundamental-theorem-of-calculus.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/fundamental-theorem-of-calculus.pdf",
+        "extracted_txt": "maths_extracted/integration/fundamental-theorem-of-calculus.txt",
+        "topic": "Integration"
+    },
+    "general-solutions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/general-solutions.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/general-solutions.pdf",
+        "extracted_txt": "maths_extracted/integration/general-solutions.txt",
+        "topic": "Integration"
+    },
+    "integrating-powers-of-x": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integrating-powers-of-x.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integrating-powers-of-x.pdf",
+        "extracted_txt": "maths_extracted/integration/integrating-powers-of-x.txt",
+        "topic": "Integration"
+    },
+    "integration-using-partial-fractions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integration-using-partial-fractions.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integration-using-partial-fractions.pdf",
+        "extracted_txt": "maths_extracted/integration/integration-using-partial-fractions.txt",
+        "topic": "Integration"
+    },
+    "definite-integration": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/definite-integration.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/definite-integration.pdf",
+        "extracted_txt": "maths_extracted/integration/definite-integration.txt",
+        "topic": "Integration"
+    },
+    "integrating-other-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integrating-other-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integrating-other-functions.pdf",
+        "extracted_txt": "maths_extracted/integration/integrating-other-functions.txt",
+        "topic": "Integration"
+    },
+    "separation-of-variables": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/separation-of-variables.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/separation-of-variables.pdf",
+        "extracted_txt": "maths_extracted/integration/separation-of-variables.txt",
+        "topic": "Integration"
+    },
+    "harder-substitution": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/harder-substitution.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/harder-substitution.pdf",
+        "extracted_txt": "maths_extracted/integration/harder-substitution.txt",
+        "topic": "Integration"
+    },
+    "area-between-a-curve-and-a-line": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/area-between-a-curve-and-a-line.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/area-between-a-curve-and-a-line.pdf",
+        "extracted_txt": "maths_extracted/integration/area-between-a-curve-and-a-line.txt",
+        "topic": "Integration"
+    },
+    "reverse-chain-rule": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/reverse-chain-rule.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/reverse-chain-rule.pdf",
+        "extracted_txt": "maths_extracted/integration/reverse-chain-rule.txt",
+        "topic": "Integration"
+    },
+    "integration-as-the-limit-of-a-sum": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integration-as-the-limit-of-a-sum.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integration-as-the-limit-of-a-sum.pdf",
+        "extracted_txt": "maths_extracted/integration/integration-as-the-limit-of-a-sum.txt",
+        "topic": "Integration"
+    },
+    "solving-and-interpreting-differential-equations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/solving-and-interpreting-differential-equations.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/solving-and-interpreting-differential-equations.pdf",
+        "extracted_txt": "maths_extracted/integration/solving-and-interpreting-differential-equations.txt",
+        "topic": "Integration"
+    },
+    "integrating-with-trigonometric-identities": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integrating-with-trigonometric-identities.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integrating-with-trigonometric-identities.pdf",
+        "extracted_txt": "maths_extracted/integration/integrating-with-trigonometric-identities.txt",
+        "topic": "Integration"
+    },
+    "integration-decision-making": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integration-decision-making.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integration-decision-making.pdf",
+        "extracted_txt": "maths_extracted/integration/integration-decision-making.txt",
+        "topic": "Integration"
+    },
+    "integration-by-substitution": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/integration-by-substitution.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/integration-by-substitution.pdf",
+        "extracted_txt": "maths_extracted/integration/integration-by-substitution.txt",
+        "topic": "Integration"
+    },
+    "area-between-2-curves": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/area-between-2-curves.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/area-between-2-curves.pdf",
+        "extracted_txt": "maths_extracted/integration/area-between-2-curves.txt",
+        "topic": "Integration"
+    },
+    "area-under-a-curve": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Integration/area-under-a-curve.pdf",
+        "new_pdf_path": "public/notes/mathematics/integration/area-under-a-curve.pdf",
+        "extracted_txt": "maths_extracted/integration/area-under-a-curve.txt",
+        "topic": "Integration"
+    },
+    "vector-addition": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/vector-addition.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/vector-addition.pdf",
+        "extracted_txt": "maths_extracted/vectors/vector-addition.txt",
+        "topic": "Vectors"
+    },
+    "basic-vectors": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/basic-vectors.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/basic-vectors.pdf",
+        "extracted_txt": "maths_extracted/vectors/basic-vectors.txt",
+        "topic": "Vectors"
+    },
+    "position-vectors": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/position-vectors.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/position-vectors.pdf",
+        "extracted_txt": "maths_extracted/vectors/position-vectors.txt",
+        "topic": "Vectors"
+    },
+    "problem-solving-using-vectors": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/problem-solving-using-vectors.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/problem-solving-using-vectors.pdf",
+        "extracted_txt": "maths_extracted/vectors/problem-solving-using-vectors.txt",
+        "topic": "Vectors"
+    },
+    "vectors-in-3-dimensions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/vectors-in-3-dimensions.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/vectors-in-3-dimensions.pdf",
+        "extracted_txt": "maths_extracted/vectors/vectors-in-3-dimensions.txt",
+        "topic": "Vectors"
+    },
+    "magnitude-and-direction": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/magnitude-and-direction.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/magnitude-and-direction.pdf",
+        "extracted_txt": "maths_extracted/vectors/magnitude-and-direction.txt",
+        "topic": "Vectors"
+    },
+    "problem-solving-using-3d-vectors": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Vectors/problem-solving-using-3d-vectors.pdf",
+        "new_pdf_path": "public/notes/mathematics/vectors/problem-solving-using-3d-vectors.pdf",
+        "extracted_txt": "maths_extracted/vectors/problem-solving-using-3d-vectors.txt",
+        "topic": "Vectors"
+    },
+    "numerical-methods-in-context": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Numerical Methods/numerical-methods-in-context.pdf",
+        "new_pdf_path": "public/notes/mathematics/numerical-methods/numerical-methods-in-context.pdf",
+        "extracted_txt": "maths_extracted/numerical-methods/numerical-methods-in-context.txt",
+        "topic": "Numerical Methods"
+    },
+    "x-gx-iteration": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Numerical Methods/x-gx-iteration.pdf",
+        "new_pdf_path": "public/notes/mathematics/numerical-methods/x-gx-iteration.pdf",
+        "extracted_txt": "maths_extracted/numerical-methods/x-gx-iteration.txt",
+        "topic": "Numerical Methods"
+    },
+    "change-of-sign-method": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Numerical Methods/change-of-sign-method.pdf",
+        "new_pdf_path": "public/notes/mathematics/numerical-methods/change-of-sign-method.pdf",
+        "extracted_txt": "maths_extracted/numerical-methods/change-of-sign-method.txt",
+        "topic": "Numerical Methods"
+    },
+    "newton-raphson-method": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Numerical Methods/newton-raphson-method.pdf",
+        "new_pdf_path": "public/notes/mathematics/numerical-methods/newton-raphson-method.pdf",
+        "extracted_txt": "maths_extracted/numerical-methods/newton-raphson-method.txt",
+        "topic": "Numerical Methods"
+    },
+    "trapezium-rule-numerical-integration": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Numerical Methods/trapezium-rule-numerical-integration.pdf",
+        "new_pdf_path": "public/notes/mathematics/numerical-methods/trapezium-rule-numerical-integration.pdf",
+        "extracted_txt": "maths_extracted/numerical-methods/trapezium-rule-numerical-integration.txt",
+        "topic": "Numerical Methods"
+    },
+    "failure-of-the-change-of-sign-method": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Numerical Methods/failure-of-the-change-of-sign-method.pdf",
+        "new_pdf_path": "public/notes/mathematics/numerical-methods/failure-of-the-change-of-sign-method.pdf",
+        "extracted_txt": "maths_extracted/numerical-methods/failure-of-the-change-of-sign-method.txt",
+        "topic": "Numerical Methods"
+    },
+    "inequalities-on-graphs": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/inequalities-on-graphs.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/inequalities-on-graphs.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/inequalities-on-graphs.txt",
+        "topic": "Algebra & Functions"
+    },
+    "further-modelling-with-functions--modelling": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/further-modelling-with-functions--modelling.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/further-modelling-with-functions--modelling.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/further-modelling-with-functions--modelling.txt",
+        "topic": "Algebra & Functions"
+    },
+    "substitution": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/substitution.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/substitution.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/substitution.txt",
+        "topic": "Algebra & Functions"
+    },
+    "rationalising-the-denominator": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/rationalising-the-denominator.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/rationalising-the-denominator.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/rationalising-the-denominator.txt",
+        "topic": "Algebra & Functions"
+    },
+    "modelling-with-functions--modelling": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/modelling-with-functions--modelling.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/modelling-with-functions--modelling.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/modelling-with-functions--modelling.txt",
+        "topic": "Algebra & Functions"
+    },
+    "manipulating-surds": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/manipulating-surds.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/manipulating-surds.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/manipulating-surds.txt",
+        "topic": "Algebra & Functions"
+    },
+    "elimination": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/elimination.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/elimination.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/elimination.txt",
+        "topic": "Algebra & Functions"
+    },
+    "stretches": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/stretches.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/stretches.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/stretches.txt",
+        "topic": "Algebra & Functions"
+    },
+    "inverse-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/inverse-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/inverse-functions.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/inverse-functions.txt",
+        "topic": "Algebra & Functions"
+    },
+    "modulus-functions-solving-equations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/modulus-functions-solving-equations.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/modulus-functions-solving-equations.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/modulus-functions-solving-equations.txt",
+        "topic": "Algebra & Functions"
+    },
+    "improper-algebraic-fractions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/improper-algebraic-fractions.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/improper-algebraic-fractions.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/improper-algebraic-fractions.txt",
+        "topic": "Algebra & Functions"
+    },
+    "squared-linear-denominators": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/squared-linear-denominators.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/squared-linear-denominators.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/squared-linear-denominators.txt",
+        "topic": "Algebra & Functions"
+    },
+    "linear-denominators": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/linear-denominators.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/linear-denominators.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/linear-denominators.txt",
+        "topic": "Algebra & Functions"
+    },
+    "solving-quadratic-equations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/solving-quadratic-equations.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/solving-quadratic-equations.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/solving-quadratic-equations.txt",
+        "topic": "Algebra & Functions"
+    },
+    "modulus-functions-sketching-graphs": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/modulus-functions-sketching-graphs.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/modulus-functions-sketching-graphs.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/modulus-functions-sketching-graphs.txt",
+        "topic": "Algebra & Functions"
+    },
+    "completing-the-square": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/completing-the-square.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/completing-the-square.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/completing-the-square.txt",
+        "topic": "Algebra & Functions"
+    },
+    "sketching-polynomials": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/sketching-polynomials.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/sketching-polynomials.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/sketching-polynomials.txt",
+        "topic": "Algebra & Functions"
+    },
+    "hidden-quadratics": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/hidden-quadratics.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/hidden-quadratics.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/hidden-quadratics.txt",
+        "topic": "Algebra & Functions"
+    },
+    "rational-expressions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/rational-expressions.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/rational-expressions.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/rational-expressions.txt",
+        "topic": "Algebra & Functions"
+    },
+    "factorisation": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/factorisation.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/factorisation.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/factorisation.txt",
+        "topic": "Algebra & Functions"
+    },
+    "translations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/translations.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/translations.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/translations.txt",
+        "topic": "Algebra & Functions"
+    },
+    "inequalities--quadratic": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/inequalities--quadratic.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/inequalities--quadratic.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/inequalities--quadratic.txt",
+        "topic": "Algebra & Functions"
+    },
+    "reciprocal-graphs-sketching": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/reciprocal-graphs-sketching.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/reciprocal-graphs-sketching.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/reciprocal-graphs-sketching.txt",
+        "topic": "Algebra & Functions"
+    },
+    "simultaneous-equations--quadratic": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/simultaneous-equations--quadratic.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/simultaneous-equations--quadratic.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/simultaneous-equations--quadratic.txt",
+        "topic": "Algebra & Functions"
+    },
+    "combinations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/combinations.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/combinations.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/combinations.txt",
+        "topic": "Algebra & Functions"
+    },
+    "quadratic-graphs": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/quadratic-graphs.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/quadratic-graphs.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/quadratic-graphs.txt",
+        "topic": "Algebra & Functions"
+    },
+    "reflections": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/reflections.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/reflections.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/reflections.txt",
+        "topic": "Algebra & Functions"
+    },
+    "language-of-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/language-of-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/language-of-functions.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/language-of-functions.txt",
+        "topic": "Algebra & Functions"
+    },
+    "expanding-brackets": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/expanding-brackets.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/expanding-brackets.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/expanding-brackets.txt",
+        "topic": "Algebra & Functions"
+    },
+    "proportional-relationships": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/proportional-relationships.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/proportional-relationships.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/proportional-relationships.txt",
+        "topic": "Algebra & Functions"
+    },
+    "polynomial-division": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/polynomial-division.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/polynomial-division.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/polynomial-division.txt",
+        "topic": "Algebra & Functions"
+    },
+    "solving-equations-graphically": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/solving-equations-graphically.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/solving-equations-graphically.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/solving-equations-graphically.txt",
+        "topic": "Algebra & Functions"
+    },
+    "composite-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/composite-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/composite-functions.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/composite-functions.txt",
+        "topic": "Algebra & Functions"
+    },
+    "laws-of-indices": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/laws-of-indices.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/laws-of-indices.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/laws-of-indices.txt",
+        "topic": "Algebra & Functions"
+    },
+    "discriminants": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/discriminants.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/discriminants.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/discriminants.txt",
+        "topic": "Algebra & Functions"
+    },
+    "factor-theorem": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Algebra & Functions/factor-theorem.pdf",
+        "new_pdf_path": "public/notes/mathematics/algebra-and-functions/factor-theorem.pdf",
+        "extracted_txt": "maths_extracted/algebra-and-functions/factor-theorem.txt",
+        "topic": "Algebra & Functions"
+    },
+    "eliminating-the-parameter": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Parametric Equations/eliminating-the-parameter.pdf",
+        "new_pdf_path": "public/notes/mathematics/parametric-equations/eliminating-the-parameter.pdf",
+        "extracted_txt": "maths_extracted/parametric-equations/eliminating-the-parameter.txt",
+        "topic": "Parametric Equations"
+    },
+    "parametric-integration": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Parametric Equations/parametric-integration.pdf",
+        "new_pdf_path": "public/notes/mathematics/parametric-equations/parametric-integration.pdf",
+        "extracted_txt": "maths_extracted/parametric-equations/parametric-integration.txt",
+        "topic": "Parametric Equations"
+    },
+    "sketching-graphs": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Parametric Equations/sketching-graphs.pdf",
+        "new_pdf_path": "public/notes/mathematics/parametric-equations/sketching-graphs.pdf",
+        "extracted_txt": "maths_extracted/parametric-equations/sketching-graphs.txt",
+        "topic": "Parametric Equations"
+    },
+    "parametric-differentiation": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Parametric Equations/parametric-differentiation.pdf",
+        "new_pdf_path": "public/notes/mathematics/parametric-equations/parametric-differentiation.pdf",
+        "extracted_txt": "maths_extracted/parametric-equations/parametric-differentiation.txt",
+        "topic": "Parametric Equations"
+    },
+    "basics": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Parametric Equations/basics.pdf",
+        "new_pdf_path": "public/notes/mathematics/parametric-equations/basics.pdf",
+        "extracted_txt": "maths_extracted/parametric-equations/basics.txt",
+        "topic": "Parametric Equations"
+    },
+    "definition-of-gradient": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/definition-of-gradient.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/definition-of-gradient.pdf",
+        "extracted_txt": "maths_extracted/differentiation/definition-of-gradient.txt",
+        "topic": "Differentiation"
+    },
+    "connected-rates-of-change": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/connected-rates-of-change.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/connected-rates-of-change.pdf",
+        "extracted_txt": "maths_extracted/differentiation/connected-rates-of-change.txt",
+        "topic": "Differentiation"
+    },
+    "differentiating-reciprocal-and-inverse-trig-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/differentiating-reciprocal-and-inverse-trig-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/differentiating-reciprocal-and-inverse-trig-functions.pdf",
+        "extracted_txt": "maths_extracted/differentiation/differentiating-reciprocal-and-inverse-trig-functions.txt",
+        "topic": "Differentiation"
+    },
+    "increasing-and-decreasing-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/increasing-and-decreasing-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/increasing-and-decreasing-functions.pdf",
+        "extracted_txt": "maths_extracted/differentiation/increasing-and-decreasing-functions.txt",
+        "topic": "Differentiation"
+    },
+    "points-of-inflection": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/points-of-inflection.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/points-of-inflection.pdf",
+        "extracted_txt": "maths_extracted/differentiation/points-of-inflection.txt",
+        "topic": "Differentiation"
+    },
+    "modelling-with-differentiation-optimisation": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/modelling-with-differentiation-optimisation.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/modelling-with-differentiation-optimisation.pdf",
+        "extracted_txt": "maths_extracted/differentiation/modelling-with-differentiation-optimisation.txt",
+        "topic": "Differentiation"
+    },
+    "stationary-points-and-turning-points": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/stationary-points-and-turning-points.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/stationary-points-and-turning-points.pdf",
+        "extracted_txt": "maths_extracted/differentiation/stationary-points-and-turning-points.txt",
+        "topic": "Differentiation"
+    },
+    "differentiation-from-first-principles": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/differentiation-from-first-principles.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/differentiation-from-first-principles.pdf",
+        "extracted_txt": "maths_extracted/differentiation/differentiation-from-first-principles.txt",
+        "topic": "Differentiation"
+    },
+    "product-rule": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/product-rule.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/product-rule.pdf",
+        "extracted_txt": "maths_extracted/differentiation/product-rule.txt",
+        "topic": "Differentiation"
+    },
+    "differentiation-from-first-principles-trig": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/differentiation-from-first-principles-trig.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/differentiation-from-first-principles-trig.pdf",
+        "extracted_txt": "maths_extracted/differentiation/differentiation-from-first-principles-trig.txt",
+        "topic": "Differentiation"
+    },
+    "concave-and-convex-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/concave-and-convex-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/concave-and-convex-functions.pdf",
+        "extracted_txt": "maths_extracted/differentiation/concave-and-convex-functions.txt",
+        "topic": "Differentiation"
+    },
+    "differentiating-other-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/differentiating-other-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/differentiating-other-functions.pdf",
+        "extracted_txt": "maths_extracted/differentiation/differentiating-other-functions.txt",
+        "topic": "Differentiation"
+    },
+    "differentiating-powers-of-x": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/differentiating-powers-of-x.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/differentiating-powers-of-x.pdf",
+        "extracted_txt": "maths_extracted/differentiation/differentiating-powers-of-x.txt",
+        "topic": "Differentiation"
+    },
+    "chain-rule": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/chain-rule.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/chain-rule.pdf",
+        "extracted_txt": "maths_extracted/differentiation/chain-rule.txt",
+        "topic": "Differentiation"
+    },
+    "implicit-differentiation": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/implicit-differentiation.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/implicit-differentiation.pdf",
+        "extracted_txt": "maths_extracted/differentiation/implicit-differentiation.txt",
+        "topic": "Differentiation"
+    },
+    "sketching-gradient-functions": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/sketching-gradient-functions.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/sketching-gradient-functions.pdf",
+        "extracted_txt": "maths_extracted/differentiation/sketching-gradient-functions.txt",
+        "topic": "Differentiation"
+    },
+    "second-order-derivatives": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/second-order-derivatives.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/second-order-derivatives.pdf",
+        "extracted_txt": "maths_extracted/differentiation/second-order-derivatives.txt",
+        "topic": "Differentiation"
+    },
+    "quotient-rule": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/quotient-rule.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/quotient-rule.pdf",
+        "extracted_txt": "maths_extracted/differentiation/quotient-rule.txt",
+        "topic": "Differentiation"
+    },
+    "gradients-tangents-and-normals": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Differentiation/gradients-tangents-and-normals.pdf",
+        "new_pdf_path": "public/notes/mathematics/differentiation/gradients-tangents-and-normals.pdf",
+        "extracted_txt": "maths_extracted/differentiation/gradients-tangents-and-normals.txt",
+        "topic": "Differentiation"
+    },
+    "subtleties": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/subtleties.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/subtleties.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/subtleties.txt",
+        "topic": "Sequences & Series"
+    },
+    "approximating-values": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/approximating-values.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/approximating-values.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/approximating-values.txt",
+        "topic": "Sequences & Series"
+    },
+    "geometric--sequences": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/geometric--sequences.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/geometric--sequences.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/geometric--sequences.txt",
+        "topic": "Sequences & Series"
+    },
+    "binomial-expansion": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/binomial-expansion.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/binomial-expansion.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/binomial-expansion.txt",
+        "topic": "Sequences & Series"
+    },
+    "arithmetic--series": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/arithmetic--series.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/arithmetic--series.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/arithmetic--series.txt",
+        "topic": "Sequences & Series"
+    },
+    "general-binomial-expansion": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/general-binomial-expansion.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/general-binomial-expansion.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/general-binomial-expansion.txt",
+        "topic": "Sequences & Series"
+    },
+    "multiple": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/multiple.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/multiple.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/multiple.txt",
+        "topic": "Sequences & Series"
+    },
+    "language-of-sequences-and-series": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/language-of-sequences-and-series.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/language-of-sequences-and-series.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/language-of-sequences-and-series.txt",
+        "topic": "Sequences & Series"
+    },
+    "geometric--series": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/geometric--series.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/geometric--series.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/geometric--series.txt",
+        "topic": "Sequences & Series"
+    },
+    "arithmetic--sequences": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/arithmetic--sequences.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/arithmetic--sequences.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/arithmetic--sequences.txt",
+        "topic": "Sequences & Series"
+    },
+    "sigma-notation": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/sigma-notation.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/sigma-notation.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/sigma-notation.txt",
+        "topic": "Sequences & Series"
+    },
+    "recurrence-relations": {
+        "original_path": "public/notes/Edexcel A Level Maths Pure/Sequences & Series/recurrence-relations.pdf",
+        "new_pdf_path": "public/notes/mathematics/sequences-and-series/recurrence-relations.pdf",
+        "extracted_txt": "maths_extracted/sequences-and-series/recurrence-relations.txt",
+        "topic": "Sequences & Series"
+    }
+}

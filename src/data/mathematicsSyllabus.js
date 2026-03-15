@@ -4,534 +4,310 @@ export const mathematicsSyllabus = {
     notes: 'Includes compulsory pure units and IAL Mathematics optional route units.',
     units: [
         {
-            id: 1,
-            code: 'WMA11',
-            title: 'Pure Mathematics 1',
-            topics: [
+            "id": 1,
+            "code": "WMA11",
+            "title": "Pure Mathematics 1",
+            "topics": [
                 {
-                    id: 1,
-                    title: 'Algebra & Functions',
-                    subtopics: [
-                        'Indices and surds',
-                        'Quadratics and discriminant',
-                        'Completing the square',
-                        'Simultaneous equations',
-                        'Linear and quadratic inequalities',
-                        'Polynomial expansion and factorisation',
-                        'Graph sketching and intersections',
-                        'Function transformations',
-                    ],
+                    "id": 1,
+                    "title": "Algebra & Functions",
+                    "subtopics": [
+                        "Laws of indices", "Manipulating surds", "Rationalising the denominator",
+                        "Expanding brackets", "Factorisation", "Solving quadratic equations",
+                        "Discriminants", "Completing the square", "Hidden quadratics",
+                        "Quadratic graphs", "Simultaneous equations (quadratic)", "Elimination",
+                        "Substitution", "Linear", "Inequalities (quadratic)", "Inequalities on graphs",
+                        "Sketching polynomials", "Proportional relationships", "Translations",
+                        "Reflections", "Stretches", "Solving equations graphically",
+                        "Reciprocal graphs sketching"
+                    ]
                 },
                 {
-                    id: 2,
-                    title: 'Coordinate Geometry',
-                    subtopics: [
-                        'Straight-line equations',
-                        'Gradient conditions for parallel/perpendicular lines',
-                    ],
+                    "id": 2,
+                    "title": "Coordinate Geometry",
+                    "subtopics": [
+                        "Basic coordinate geometry", "Equation of a straight line",
+                        "Parallel and perpendicular gradients", "Modelling with straight lines"
+                    ]
                 },
                 {
-                    id: 3,
-                    title: 'Trigonometry',
-                    subtopics: [
-                        'Sine and cosine rules',
-                        'Area of a triangle',
-                        'Radian measure and sectors',
-                        'Trigonometric graphs and periodicity',
-                    ],
+                    "id": 3,
+                    "title": "Trigonometry",
+                    "subtopics": [
+                        "Basic definitions", "Right angled triangles", "Trigonometry exact values",
+                        "Non right angled triangles", "Radian measure", "Graphs of trigonometric functions",
+                        "Transformations of trigonometric functions"
+                    ]
                 },
                 {
-                    id: 4,
-                    title: 'Differentiation',
-                    subtopics: [
-                        'Derivative as gradient and rate',
-                        'Power-rule differentiation',
-                        'Tangents and normals',
-                    ],
+                    "id": 4,
+                    "title": "Differentiation",
+                    "subtopics": [
+                        "Definition of gradient", "Differentiation from first principles",
+                        "Differentiating powers of x", "Gradients, tangents and normals"
+                    ]
                 },
                 {
-                    id: 5,
-                    title: 'Integration',
-                    subtopics: [
-                        'Indefinite integration basics',
-                        'Power-rule integration',
-                        'Curve equation from derivative data',
-                    ],
-                },
-            ],
+                    "id": 5,
+                    "title": "Integration",
+                    "subtopics": ["Integrating powers of x"]
+                }
+            ]
         },
         {
-            id: 2,
-            code: 'WMA12',
-            title: 'Pure Mathematics 2',
-            topics: [
+            "id": 2,
+            "code": "WMA12",
+            "title": "Pure Mathematics 2",
+            "topics": [
                 {
-                    id: 1,
-                    title: 'Proof',
-                    subtopics: [
-                        'Logical proof structure',
-                        'Proof by exhaustion',
-                        'Disproof by counterexample',
-                    ],
+                    "id": 1,
+                    "title": "Proof",
+                    "subtopics": [
+                        "Language of proof", "Proof by deduction", "Proof by exhaustion", "Disproof by counter example"
+                    ]
                 },
                 {
-                    id: 2,
-                    title: 'Algebra & Functions',
-                    subtopics: [
-                        'Algebraic division',
-                        'Factor and remainder theorems',
-                    ],
+                    "id": 2,
+                    "title": "Algebra & Functions",
+                    "subtopics": ["Rational expressions", "Polynomial division", "Factor theorem"]
                 },
                 {
-                    id: 3,
-                    title: 'Coordinate Geometry',
-                    subtopics: [
-                        'Circle equation and properties',
-                        'Tangents, chords and radii geometry',
-                    ],
+                    "id": 3,
+                    "title": "Coordinate Geometry",
+                    "subtopics": [
+                        "Equation of a circle", "Finding the centre and radius",
+                        "Angle in a semicircle", "Bisection of chords", "Radius and tangent"
+                    ]
                 },
                 {
-                    id: 4,
-                    title: 'Sequences & Series',
-                    subtopics: [
-                        'Sequence definitions and recurrences',
-                        'Arithmetic sequences and sums',
-                        'Geometric sequences and sums',
-                        'Convergent infinite geometric series',
-                        'Binomial expansion for positive integers',
-                    ],
+                    "id": 4,
+                    "title": "Sequences & Series",
+                    "subtopics": [
+                        "Language of sequences and series", "Recurrence relations", "Arithmetic sequences",
+                        "Arithmetic series", "Geometric sequences", "Geometric series", "Sigma notation",
+                        "Binomial expansion", "Approximating values"
+                    ]
                 },
                 {
-                    id: 5,
-                    title: 'Exponentials & Logarithms',
-                    subtopics: [
-                        'Exponential functions and graphs',
-                        'Logarithm laws',
-                        'Exponential and log equation solving',
-                    ],
+                    "id": 5,
+                    "title": "Exponentials & Logarithms",
+                    "subtopics": [
+                        "Exponential functions", "e", "Logarithmic functions", "Laws of logarithms",
+                        "Exponential equations", "Exponential growth and decay", "Modelling"
+                    ]
                 },
                 {
-                    id: 6,
-                    title: 'Trigonometry',
-                    subtopics: [
-                        'Trig identities',
-                        'Trigonometric equation solving',
-                    ],
+                    "id": 6,
+                    "title": "Trigonometry",
+                    "subtopics": ["Simple identities", "Linear", "Quadratic", "Strategy for trigonometric equations"]
                 },
                 {
-                    id: 7,
-                    title: 'Differentiation',
-                    subtopics: [
-                        'Stationary points and curve behaviour',
-                        'Maxima and minima in context',
-                    ],
+                    "id": 7,
+                    "title": "Differentiation",
+                    "subtopics": [
+                        "Increasing and decreasing functions", "Stationary points and turning points",
+                        "Second order derivatives", "Concave and convex functions", "Points of inflection",
+                        "Sketching gradient functions", "Modelling with differentiation (optimisation)"
+                    ]
                 },
                 {
-                    id: 8,
-                    title: 'Integration',
-                    subtopics: [
-                        'Definite integrals',
-                        'Area under and between curves',
-                        'Trapezium-rule approximation',
-                    ],
-                },
-            ],
+                    "id": 8,
+                    "title": "Integration",
+                    "subtopics": [
+                        "Definite integration", "Fundamental theorem of calculus", "Area under a curve",
+                        "Area between 2 curves", "Area between a curve and a line", "Trapezium rule numerical integration"
+                    ]
+                }
+            ]
         },
         {
-            id: 3,
-            code: 'WMA13',
-            title: 'Pure Mathematics 3',
-            topics: [
+            "id": 3,
+            "code": "WMA13",
+            "title": "Pure Mathematics 3",
+            "topics": [
                 {
-                    id: 1,
-                    title: 'Algebra & Functions',
-                    subtopics: [
-                        'Rational expressions and algebraic division',
-                        'Functions, domains and ranges',
-                        'Composite and inverse functions',
-                        'Modulus functions and inequalities',
-                        'Combined graph transformations',
-                    ],
+                    "id": 1,
+                    "title": "Algebra & Functions",
+                    "subtopics": [
+                        "Language of functions", "Composite functions", "Inverse functions",
+                        "Modelling with functions", "Modulus functions sketching graphs",
+                        "Modulus functions solving equations", "Further modelling with functions"
+                    ]
                 },
                 {
-                    id: 2,
-                    title: 'Trigonometry',
-                    subtopics: [
-                        'sec, cosec and cot functions',
-                        'Inverse trig functions and domains',
-                        'Double-angle and compound-angle formulae',
-                        'R-form trigonometric expressions',
-                    ],
+                    "id": 2,
+                    "title": "Trigonometry",
+                    "subtopics": [
+                        "Reciprocal and inverse trigonometric functions definitions", "Inverse trig functions",
+                        "Small angle approximations", "Compound angle formulae", "Double angle formulae",
+                        "Trigonometry further identities", "Harmonic form", "Strategy for further trigonometric equations",
+                        "Trigonometric proof", "Graphs", "Modelling"
+                    ]
                 },
                 {
-                    id: 3,
-                    title: 'Exponentials & Logarithms',
-                    subtopics: [
-                        'Exponential and log graphs',
-                        'Natural logarithms as inverse functions',
-                        'Logarithmic plotting for model fitting',
-                    ],
+                    "id": 3,
+                    "title": "Exponentials & Logarithms",
+                    "subtopics": ["Derivatives of exponential functions", "Logarithmic graphs"]
                 },
                 {
-                    id: 4,
-                    title: 'Differentiation',
-                    subtopics: [
-                        'Derivative of trig, exp and log functions',
-                        'Product, quotient and chain rules',
-                        'Parametric differentiation',
-                        'Exponential growth and decay models',
-                    ],
+                    "id": 4,
+                    "title": "Differentiation",
+                    "subtopics": [
+                        "Differentiating other functions", "Differentiation from first principles trig",
+                        "Chain rule", "Product rule", "Quotient rule",
+                        "Differentiating reciprocal and inverse trig functions",
+                        "Parametric differentiation", "Connected rates of change"
+                    ]
                 },
                 {
-                    id: 5,
-                    title: 'Integration',
-                    subtopics: [
-                        'Integrals of trig, exp and reciprocal forms',
-                        'Integration by recognition and substitution forms',
-                        'Trig identities in integration',
-                    ],
+                    "id": 5,
+                    "title": "Integration",
+                    "subtopics": [
+                        "Integrating other functions", "Reverse chain rule", "Integrating f(x)f'(x)",
+                        "Integrating with trigonometric identities", "Integration by substitution"
+                    ]
                 },
                 {
-                    id: 6,
-                    title: 'Numerical Methods',
-                    subtopics: [
-                        'Root location by sign change',
-                        'Iterative solution of equations',
-                    ],
-                },
-            ],
+                    "id": 6,
+                    "title": "Numerical Methods",
+                    "subtopics": [
+                        "Change of sign method", "Failure of the change of sign method",
+                        "x = g(x) iteration", "Newton Raphson method", "Numerical methods in context"
+                    ]
+                }
+            ]
         },
         {
-            id: 4,
-            code: 'WMA14',
-            title: 'Pure Mathematics 4',
-            topics: [
+            "id": 4,
+            "code": "WMA14",
+            "title": "Pure Mathematics 4",
+            "topics": [
                 {
-                    id: 1,
-                    title: 'Proof',
-                    subtopics: [
-                        'Mathematical argument and proof structure',
-                        'Proof by deduction and contradiction',
-                    ],
+                    "id": 1,
+                    "title": "Proof",
+                    "subtopics": ["Proof by contradiction"]
                 },
                 {
-                    id: 2,
-                    title: 'Algebra & Functions',
-                    subtopics: [
-                        'Polynomial and rational functions',
-                        'Partial fractions',
-                        'Function composition and inverses',
-                    ],
+                    "id": 2,
+                    "title": "Algebra & Functions",
+                    "subtopics": [
+                        "Linear denominators", "Squared linear denominators",
+                        "Improper algebraic fractions", "Combinations"
+                    ]
                 },
                 {
-                    id: 3,
-                    title: 'Coordinate Geometry',
-                    subtopics: [
-                        'Parametric equations',
-                        'Implicit curves and tangents',
-                    ],
+                    "id": 3,
+                    "title": "Coordinate Geometry",
+                    "subtopics": [
+                        "Basics", "Sketching graphs", "Eliminating the parameter", "Modelling"
+                    ]
                 },
                 {
-                    id: 4,
-                    title: 'Binomial Expansion',
-                    subtopics: [
-                        'Generalised binomial series',
-                        'Valid ranges and approximation use',
-                    ],
+                    "id": 4,
+                    "title": "Binomial Expansion",
+                    "subtopics": ["General binomial expansion", "Multiple", "Subtleties", "Modelling"]
                 },
                 {
-                    id: 5,
-                    title: 'Differentiation',
-                    subtopics: [
-                        'Differentiation of inverse and composite forms',
-                        'Rates of change and optimisation',
-                    ],
+                    "id": 5,
+                    "title": "Differentiation",
+                    "subtopics": ["Implicit differentiation"]
                 },
                 {
-                    id: 6,
-                    title: 'Integration',
-                    subtopics: [
-                        'Integration by parts',
-                        'Integration using partial fractions',
-                        'Differential equation setup and solutions',
-                    ],
+                    "id": 6,
+                    "title": "Integration",
+                    "subtopics": [
+                        "Integration by parts", "Harder substitution", "Integration using partial fractions",
+                        "Separation of variables", "Solving and interpreting differential equations",
+                        "General solutions", "Particular solutions", "Modelling", "Integration decision making",
+                        "Integration as the limit of a sum", "Parametric integration"
+                    ]
                 },
                 {
-                    id: 7,
-                    title: 'Vectors',
-                    subtopics: [
-                        'Vector algebra in 2D and 3D',
-                        'Lines, intersections and geometry applications',
-                    ],
-                },
-            ],
+                    "id": 7,
+                    "title": "Vectors",
+                    "subtopics": [
+                        "Basic vectors", "Vector addition", "Magnitude and direction", "Position vectors",
+                        "Vectors in 3 dimensions", "Problem solving using vectors", "Problem solving using 3D vectors"
+                    ]
+                }
+            ]
         },
         {
-            id: 5,
-            code: 'WME01',
-            title: 'Mechanics 1 (Optional)',
-            topics: [
+            "id": 5,
+            "code": "WME01",
+            "title": "Mechanics 1 (Optional)",
+            "topics": [
                 {
-                    id: 1,
-                    title: 'Mathematical Models in Mechanics',
-                    subtopics: [
-                        'Particle and rigid-body assumptions',
-                        'Idealised mechanics modelling terms',
-                    ],
+                    "id": 1,
+                    "title": "Mathematical Models in Mechanics",
+                    "subtopics": ["Particle and rigid-body assumptions", "Idealised mechanics modelling terms", "Types of force"]
                 },
                 {
-                    id: 2,
-                    title: 'Vectors in Mechanics',
-                    subtopics: [
-                        'Vector magnitude and direction',
-                        'Resolving vectors into components',
-                        'Vector displacement and velocity',
-                        'Vector acceleration and force',
-                    ],
+                    "id": 2,
+                    "title": "Vectors in Mechanics",
+                    "subtopics": [
+                        "Vector magnitude and direction", "Resolving vectors into components",
+                        "Vector displacement and velocity", "Vector acceleration and force"
+                    ]
                 },
                 {
-                    id: 3,
-                    title: 'Kinematics in a Straight Line',
-                    subtopics: [
-                        'Constant-acceleration motion models',
-                        'Kinematics graphs and interpretation',
-                    ],
+                    "id": 3,
+                    "title": "Kinematics in a Straight Line",
+                    "subtopics": ["Constant-acceleration motion models", "Kinematics graphs and interpretation", "Acceleration under gravity", "Using calculus in kinematics (1D)", "Using calculus in kinematics (2D)", "Projectile components", "Projectile equations and trajectories"]
                 },
                 {
-                    id: 4,
-                    title: 'Dynamics of a Particle',
-                    subtopics: [
-                        'Newton\'s laws in scalar and vector form',
-                        'Connected particle systems',
-                        'Momentum and impulse principles',
-                        'Friction and inclined planes',
-                    ],
+                    "id": 4,
+                    "title": "Dynamics of a Particle Moving in a Straight Line",
+                    "subtopics": ["Newton’s laws and equations of motion", "Friction and inclined planes", "Connected particles and pulleys"]
                 },
                 {
-                    id: 5,
-                    title: 'Statics of a Particle',
-                    subtopics: [
-                        'Force resolution in equilibrium',
-                        'Normal reaction, tension and friction limits',
-                    ],
+                    "id": 5,
+                    "title": "Statics of a Particle",
+                    "subtopics": ["Forces in equilibrium", "Limiting equilibrium and friction"]
                 },
                 {
-                    id: 6,
-                    title: 'Moments',
-                    subtopics: [
-                        'Moment of a force',
-                        'Parallel force equilibrium',
-                    ],
-                },
-            ],
+                    "id": 6,
+                    "title": "Moments",
+                    "subtopics": ["Moments and taking moments", "Rigid rods and uniform rods", "Ladders and hinges", "Tilting"]
+                }
+            ]
         },
         {
-            id: 6,
-            code: 'WME02',
-            title: 'Mechanics 2 (Optional)',
-            topics: [
+            "id": 6,
+            "code": "WST01",
+            "title": "Statistics 1 (Optional)",
+            "topics": [
                 {
-                    id: 1,
-                    title: 'Kinematics in Line and Plane',
-                    subtopics: [
-                        'Vertical and projectile motion',
-                        'Variable acceleration methods',
-                        'Vector differentiation and integration',
-                    ],
+                    "id": 1,
+                    "title": "Data Presentation and Interpretation",
+                    "subtopics": ["Sampling and Large Data Set", "Basic Statistical Measures", "Data Presentation", "Outliers and Interpreting Data", "Standard Deviation and Variance", "Data Coding"]
                 },
                 {
-                    id: 2,
-                    title: 'Centres of Mass',
-                    subtopics: [
-                        'Discrete and continuous mass distributions',
-                        'Composite lamina centres',
-                        'Lamina equilibrium problems',
-                    ],
+                    "id": 2,
+                    "title": "Probability",
+                    "subtopics": ["Calculating Probabilities and Events", "Venn Diagrams and Sets", "Tree Diagrams", "Probability Formulae"]
                 },
                 {
-                    id: 3,
-                    title: 'Work, Energy and Power',
-                    subtopics: [
-                        'Kinetic and potential energy',
-                        'Work-energy principle',
-                        'Mechanical energy conservation',
-                    ],
+                    "id": 3,
+                    "title": "Statistical Distributions",
+                    "subtopics": ["Discrete Probability Distributions", "The Binomial Distribution"]
                 },
                 {
-                    id: 4,
-                    title: 'Collisions',
-                    subtopics: [
-                        'Vector momentum conservation',
-                        'Coefficient of restitution',
-                        'Successive direct impacts',
-                    ],
+                    "id": 4,
+                    "title": "The Normal Distribution",
+                    "subtopics": ["The Normal Distribution", "Standard Normal Distribution", "Normal Approximation of Binomial"]
                 },
                 {
-                    id: 5,
-                    title: 'Statics of Rigid Bodies',
-                    subtopics: [
-                        'Moments with non-parallel forces',
-                        'Ladder and rod equilibrium models',
-                    ],
-                },
-            ],
-        },
-        {
-            id: 7,
-            code: 'WST01',
-            title: 'Statistics 1 (Optional)',
-            topics: [
-                {
-                    id: 1,
-                    title: 'Statistical Modelling',
-                    subtopics: [
-                        'Model assumptions and limitations',
-                    ],
+                    "id": 5,
+                    "title": "Correlation and Regression",
+                    "subtopics": ["Correlation and Regression", "PMCC and Non-Linear Regression"]
                 },
                 {
-                    id: 2,
-                    title: 'Data Representation & Summary',
-                    subtopics: [
-                        'Histograms, box plots and stem-leaf plots',
-                        'Measures of location',
-                        'Measures of dispersion',
-                        'Skewness and outliers',
-                    ],
-                },
-                {
-                    id: 3,
-                    title: 'Probability',
-                    subtopics: [
-                        'Sample spaces and events',
-                        'Conditional probability',
-                        'Independent events',
-                        'Tree and Venn diagram methods',
-                    ],
-                },
-                {
-                    id: 4,
-                    title: 'Correlation & Regression',
-                    subtopics: [
-                        'Scatter diagrams and least squares lines',
-                        'Explanatory vs response variables',
-                        'Product moment correlation coefficient',
-                        'Interpolation vs extrapolation risk',
-                    ],
-                },
-                {
-                    id: 5,
-                    title: 'Discrete Random Variables',
-                    subtopics: [
-                        'Probability and cumulative functions',
-                        'Expectation and variance',
-                        'Linear transformations of variables',
-                        'Discrete uniform distribution',
-                    ],
-                },
-                {
-                    id: 6,
-                    title: 'Normal Distribution',
-                    subtopics: [
-                        'Normal model parameters and shape',
-                        'Standardisation and table use',
-                    ],
-                },
-            ],
-        },
-        {
-            id: 8,
-            code: 'WST02',
-            title: 'Statistics 2 (Optional)',
-            topics: [
-                {
-                    id: 1,
-                    title: 'Binomial & Poisson Distributions',
-                    subtopics: [
-                        'Model assumptions and appropriateness',
-                        'Mean and variance results',
-                        'Poisson approximation to binomial',
-                        'Additive property of Poisson processes',
-                    ],
-                },
-                {
-                    id: 2,
-                    title: 'Continuous Random Variables',
-                    subtopics: [
-                        'Density and cumulative functions',
-                        'Mean, variance and quantiles',
-                        'Relationship between f(x) and F(x)',
-                    ],
-                },
-                {
-                    id: 3,
-                    title: 'Continuous Distributions',
-                    subtopics: [
-                        'Continuous uniform distribution',
-                        'Normal approximation with continuity correction',
-                    ],
-                },
-                {
-                    id: 4,
-                    title: 'Sampling & Hypothesis Testing',
-                    subtopics: [
-                        'Population, census and sample concepts',
-                        'Test statistics and critical regions',
-                        'One-tailed and two-tailed tests',
-                        'Binomial and Poisson parameter tests',
-                    ],
-                },
-            ],
-        },
-        {
-            id: 9,
-            code: 'WDM11',
-            title: 'Decision Mathematics 1 (Optional)',
-            topics: [
-                {
-                    id: 1,
-                    title: 'Algorithms',
-                    subtopics: [
-                        'Algorithm design and complexity',
-                        'Sorting and ordering procedures',
-                    ],
-                },
-                {
-                    id: 2,
-                    title: 'Graph Algorithms I',
-                    subtopics: [
-                        'Shortest path methods',
-                        'Route inspection basics',
-                    ],
-                },
-                {
-                    id: 3,
-                    title: 'Graph Algorithms II',
-                    subtopics: [
-                        'Spanning tree algorithms',
-                        'Network optimisation principles',
-                    ],
-                },
-                {
-                    id: 4,
-                    title: 'Critical Path Analysis',
-                    subtopics: [
-                        'Activity networks and timing',
-                        'Critical activities and float',
-                    ],
-                },
-                {
-                    id: 5,
-                    title: 'Linear Programming',
-                    subtopics: [
-                        'Constraint formulation',
-                        'Graphical optimisation methods',
-                    ],
-                },
-            ],
-        },
-    ],
+                    "id": 6,
+                    "title": "Hypothesis Testing",
+                    "subtopics": ["Hypothesis Testing for Proportion", "Hypothesis Testing for Mean", "Hypothesis Testing for Correlation"]
+                }
+            ]
+        }
+    ]
 };
-
-export function getMathematicsUnitById(unitId) {
-    return mathematicsSyllabus.units.find((unit) => unit.id === unitId);
-}

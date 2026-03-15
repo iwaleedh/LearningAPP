@@ -1,0 +1,51 @@
+Edexcel A Level Maths: Pure Revision Notes
+Geometric Series
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Did this video help you? Yes No
+Geometric series
+Help me understand
+How do I find the sum of a
+geometric series?
+A geometric series is the sum of the terms of a geometric
+sequence
+The following formulae will let you find the sum of the first n
+terms of a geometric series:
+a(1−rn) a(rn−1)
+S = or S =
+n 1−r n r−1
+a is the first term
+Stuck on something?
+r is the common ratio
+Ask questions and get help with
+The one on the left is more convenient if r < 1, the one on
+exactly what you're revising.
+the right is more convenient if r > 1
+The a and the r in those formulae are exactly the same as Got it
+the ones used with geometric sequences
+How do I prove the geometric series
+formula?
+Learn this proof of the geometric series formula – you can
+be asked to give it in the exam:
+Write out the sum once
+Write out the sum again but multiply each term by r
+Subtract the second sum from the first
+All the terms except two should cancel out
+Factorise and rearrange to make S the subject
+What is the sum to infinity of a
+geometric series?
+If (and only if!) |r| < 1, then the geometric seriesconverges
+to a finite value given by the formula
+a
+S =
+∞ 1−r
+S is known as the sum to infinity
+∞
+If |r| ≥ 1 the geometric series is divergent and the sum to
+infinity does not exist
+Examiner Tips and Tricks
+The geometric series formulae are in the formulae
+booklet – you don't need to memorise them
+You will sometimes need to use logarithms to answer
+geometric series questions (see Exponential Equations)

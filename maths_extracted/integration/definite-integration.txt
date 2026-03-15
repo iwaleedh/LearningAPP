@@ -1,0 +1,65 @@
+Edexcel A Level Maths: Pure Revision Notes
+Definite Integration
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 6 January 2026
+03:29
+Did this video help you? Yes No
+Help me understand
+Definite integration
+What is definite integration?
+DefiniteIntegration occurs in an alternative version of the
+Fundamental Theorem of Calculus
+This version of the Theorem is the one referred to by most
+AS/A level textbooks/websites
+a and b are called limits
+a is the lower limit
+b is the upper limit Stuck on something?
+f’(x) is the derivative of f(x) Ask questions and get help with
+exactly what you're revising.
+Why is there no constant of
+integration in definite integration? Got it
+“+c” would appear in both f(a) and f(b)
+Since we then calculate f(b) – f(a) they cancel each
+other out
+There would be a “+c” from f(b) and a –“+c” from f(a)
+So “+c” is not included with definite integration
+How do I find the value of a definite
+integral?
+STEP 1: If not given a name, call the integral
+This saves you having to rewrite the whole integral
+every time!
+STEP 2: If necessary rewrite the integral into a more easily
+integrable form
+Not all functions can be integrated directly
+STEP 3: Integrate without applying the limits
+Notation: use square brackets [ ] with limits placed
+after the end bracket
+STEP 4: Substitute the limits into the function and
+calculate the answer
+How do I find a definite integral on
+my calculator?
+Advanced scientific calculators can work out the values of
+definite integrals
+The button will look similar to:
+(Note how the calculator did not return the exact value
+⎛ ⎜1256⎞
+⎟
+⎜ ⎟ of the integral)
+⎝ 3 ⎠
+Examiner Tips and Tricks
+Look out for questions that ask you to find an indefinite
+integral in one part (so “+c” needed), then in a later part
+use the same integral as a definite integral (where “+c” is
+not needed).
+Worked Example
+Find the value of
+∫4
+3x(x2−2)dx
+2
+Start by expanding the brackets inside the integral
+Integrate as usual (here it's a 'powers of ' integration)
+Write the answer in square brackets with the integration limits
+outside
+Now substitute 4 into that function
+And subtract from it the function with 2 substituted in

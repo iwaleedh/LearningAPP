@@ -1,0 +1,46 @@
+Edexcel A Level Maths: Pure Revision Notes
+Area between 2 curves
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 16 February 2026
+02:57
+Did this video help you? Yes No
+Area between 2 curves
+What is the area between two
+curves?
+Ensure you are familiar with …
+Area under a curve
+Area between a line and a curve
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+In general find the definite integral of “upper curve” –
+“lower curve” Got it
+However this does depend on …
+… the area being found
+… if the curves intersect (and cross over) Help me understand
+The area may have to be split into separate integrals
+The points at which curves intersect may need to be
+calculated
+How do I find the area between two
+curves?
+STEP 1
+Find the intersections of the curves if needed
+STEP 2
+Form the integral …
+… using the intersections as limits
+… “upper curve” – “lower curve” …
+… and find the value of the integral
+STEP 3
+Repeat STEP 2 if more than one area needed
+STEP 4
+Add areas together
+Examiner Tips and Tricks
+If no diagram is provided sketch one, even if the curves
+are not accurate.
+Add information to any given diagram as you work
+through a question.
+Maximise use of your calculator to save time and maintain
+accuracy:
+Solving equations, especially cubic equations
+Finding definite integrals

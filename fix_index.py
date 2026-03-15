@@ -1,21 +1,34 @@
 import re
 
-with open('src/data/seedNotes/index.js', 'r') as f:
-    text = f.read()
+with open("src/data/seedNotes/index.js", "r") as f:
+    lines = f.readlines()
 
-# Replace the specific old import block
-text = re.sub(
-    r"import \{ note_biology_5_7_0 \} from \'\./biology/note_5_7_0\.js\';.*?import \{ note_biology_5_7_18 \} from \'\./biology/note_5_7_18\.js\';",
-    "\n".join([f"import {{ note_biology_5_7_{i} }} from './biology/note_5_7_{i}.js';" for i in range(22)]),
-    text, flags=re.DOTALL
-)
+new_lines = []
+imported = set()
 
-text = re.sub(
-    r"    \'biology:5:7:0\': note_biology_5_7_0,.*?    \'biology:5:7:18\': note_biology_5_7_18,",
-    "\n".join([f"    'biology:5:7:{i}': note_biology_5_7_{i}," for i in range(22)]),
-    text, flags=re.DOTALL
-)
+in_map = False
+map_lines = []
 
-with open('src/data/seedNotes/index.js', 'w') as f:
-    f.write(text)
+for line in lines:
+    if line.startswith("import "):
+        if line not in imported:
+            imported.add(line)
+            new_lines.append(line)
+    elif line.startswith("export const seedNotes = {"):
+        in_map = True
+        map_lines.append(line)
+    elif in_map:
+        if line.strip().startswith("'"):
+            key = line.split(":")[0].strip("'")
+            # Only add if we haven't already
+            if key not in imported:
+                imported.add(key)
+                map_lines.append(line)
+        else:
+            map_lines.append(line)
+    else:
+        new_lines.append(line)
+
+with open("src/data/seedNotes/index.js", "w") as f:
+    f.writelines(new_lines + map_lines)
 

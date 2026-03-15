@@ -1,0 +1,39 @@
+Edexcel A Level Maths: Pure Revision Notes
+Approximating Values using
+the Binomial Expansion
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Approximating values using
+the binomial expansion
+What is the general binomial
+expansion?
+The generalbinomialexpansion, as given in the formula
+booklet, is
+If n ∈ ℕ then the expansion is finite (see Binomial
+Expansion)
+Stuck on something?
+Otherwise the expansion is infinitely long
+It is only valid for |x| < 1 (-1 < x < 1) Ask questions and get help with
+Only the first few terms of an expansion are usually exactly what you're revising.
+needed
+Got it
+How do I use a binomial expansion
+to approximate a value?
+Ignoring higher powers of x leads to an approximation
+The more terms the closer the approximation is to the true
+value
+For most purposes, squared or cubed terms are accurate
+enough
+STEP 1 Compare the value you are approximating to (a + bx)n
+STEP 2 Solve the appropriate equation to find the value of x
+STEP 3 Substitute this value of x into the expansion to find the
+approximation
+Examiner Tips and Tricks
+You can get a good idea if your approximation is correct
+by working out the “real” answer using your calculator.
+Sometimes it helps to factorise out a number before
+approximating
+710=10 7.1

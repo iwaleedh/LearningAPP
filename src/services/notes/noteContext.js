@@ -27,7 +27,8 @@ export function parseQualificationCode(qualification = '') {
 }
 
 export function resolveNoteContext({ subject, unitId, topicId, subtopicIndex }, syllabus) {
-    const normalizedSubject = String(subject || 'chemistry').toLowerCase();
+    let normalizedSubject = String(subject || 'chemistry').toLowerCase();
+    if (normalizedSubject === 'math') normalizedSubject = 'mathematics';
     const unit = syllabus?.units?.find((item) => String(item.id) === String(unitId));
     const topic = unit?.topics?.find((item) => String(item.id) === String(topicId));
     const index = Number(subtopicIndex);

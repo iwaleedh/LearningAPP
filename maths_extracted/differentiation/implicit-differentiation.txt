@@ -1,0 +1,31 @@
+Edexcel A Level Maths: Pure Revision Notes
+Implicit Differentiation
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Implicit differentiation
+What is implicit differentiation?
+An equation connecting x and y is not always easy to write
+explicitly in the form y= f(x) or x = f(y)
+However you can still differentiate such an equation
+implicitly using the chain rule:
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Combining this with the product rule gives us:
+These two special cases are especially useful:
+When x and y are connected in an equation you can
+differentiate both sides with respect to x and rearrange to
+find a formula (usually in terms of xand y ) for dy/dx
+Note that dy/dx is a single algebraic object
+When rearranging do not treat dy/dx as a fraction
+Especially do not try to separate dy and dx and treat
+them as algebraic objects on their own!
+Examiner Tips and Tricks
+When using implicit differentiation you will not always be
+able to write dy/dx simply as a function of x.
+However, this does not stop you from answering
+questions involving the derivative.

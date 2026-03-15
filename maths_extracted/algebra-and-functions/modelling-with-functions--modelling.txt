@@ -1,0 +1,48 @@
+Edexcel A Level Maths: Pure Revision Notes
+Modelling with Functions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 19 June 2025
+Did this video help you? Yes No
+Modelling with functions
+Help me understand
+What is a mathematical model?
+A mathematicalmodel simplifies a real-world situation so
+it can be described using mathematics which can then be
+used to make predictions
+The path a stone will take if thrown from the top of a
+cliff
+The number of toys a factory can produce in a day
+Assumptions about the situation are made in order to
+simplify the mathematics
+Air resistance on the stone can be ignored
+The machines/people at the factory produce toys at a
+constant rate
+Models can be refined (improved) if further information is
+available or the model is compared to real-world data
+The mass of the stone needs to be considered
+30−minutes downtime per day is allowed for machine
+repairs/maintenance
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I use mathematical
+models?
+There will be no one-size-fits-all step-by-step guide to
+solving modelling questions
+A combination of skills and problem-solving skills will be
+needed
+Examiner Tips and Tricks
+Read – and re-read – the question carefully.Try to “get
+involved” in the context of the question – however boring
+it may be!
+Imagine what happens to a stone as you throw it from
+a cliff
+What would it be like to manage a toy factory?
+Draw a diagram – sketch a graph of the function being
+used as the model.
+If you are completely stuck try “doing something” with
+the maths. For example, if there’s a quadratic function –
+sketch it, factorise it, solve it. Or if there’s a polynomial –
+use factor theorem and algebraic division to factorise it.

@@ -1,0 +1,210 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Basic Statistical Measures
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 25 November 2025
+Did this video help you? Yes No
+Mean, mode and median
+What are the mean, mode and
+median?
+Mean, mode and median are measures of location
+A measure of location gives information about where
+data is in the number system
+Mean, mode and median are measures of central
+tendency
+They describe where the centre of the data is
+They are all types of averages
+In Statistics it is important to be specific about which
+average you are referring to
+How are the mean, mode and
+median calculated?
+You should already be familiar with finding the mean,
+median and mode from raw, ungrouped data Help me understand
+Stuck on something?
+The mode is the value that occurs most often in a data set
+In a frequency table the group or class that occurs Ask questions and get help with
+most often will be referred to as the modal class exactly what you're revising.
+A data set with more than one mode is bimodal
+Got it
+The median is the middle value when the data is in order of
+size
+If there are two values in the middle of the data set,
+the median is the midpoint of the two values
+
+---
+
+If finding median from a frequency table find the
+cumulative frequency first and find the group or class
+where the middle value will lie
+You may have to use linear interpolation when finding
+the median from a grouped frequency table
+The mean is the sum of all the values divided by the
+number of values in the data set
+What are summary statistics and
+their notation?
+Summary statistics are information that summarises a set
+of data values
+For n items in a data set:
+The sum of the data is represented by
+n
+∑x =x +x +...+x
+i 1 2 n
+i=1
+This is usually written ∑x and reads as ‘sigma x’
+The mean of the data is represented by
+x +x +...+x
+⎯⎯ 1 2 n Σx
+x= =
+n n
+This reads as ‘x bar’
+You will come across more summary statistics later in the
+course
+How do we choose the best
+measure of central tendency?
+It is often better to use one of the averages over the
+others, depending on the data set
+It’s a good idea to be aware of the advantages and
+disadvantages of the use of each average
+The mean uses all of the data values, this is good for a
+large data set where all of the values are close together,
+but also means that the mean can be affected by extreme
+values
+The median is not affected by very high or low values so is
+a good average to use in data sets with extreme values
+The mode is very useful in a lot of practical situations,
+however often there may be more than one mode, no
+mode or even a mode that is nowhere near the middle of
+the data set
+Worked Example
+For the data set given below, find the mode, median and
+mean.
+23 19 14 28 27 19
+Answer:
+
+---
+
+Did this video help you? Yes No
+Quartiles & range
+What are quartiles and percentiles?
+Quartiles and percentiles are measures of location
+Quartilesdivide a populationor data setinto four equal
+sections
+The lower quartile, Q, splits the lowest 25% from the
+1
+highest 75%
+The median, Q , is the value that is 50% of the way
+2
+through the data
+The upper quartile, Q , splits the lowest 75% from the
+3
+highest 25%
+Percentiles divide the data into 100 parts
+The 70th percentile lies seven-tenths of the way
+through the data
+70% of the data is below it and 30% is above it
+How are quartiles calculated?
+For a data set of size, n,
+To find the lower quartile, calculate n
+4
+n
+If is an integer then the lower quartile is the
+4
+midpoint of the corresponding value and the one
+above it
+n
+If is not an integer then the lower quartile is the
+4
+value corresponding to the next integer up
+
+---
+
+3n
+To find the upper quartile, calculate
+4
+3n
+If is an integer then the upper quartile is the
+4
+midpoint of the corresponding value and the one
+above it
+3n
+If is not an integer then the upper quartile is
+4
+the value corresponding to the next integer up
+You can also use your calculator to find the quartiles, make
+sure you know how to put your calculator into STAT mode,
+enter the data and find the values of Q, Q and Q
+1 2 3
+You could be expected to be able to do this in the
+exam
+What are the range and interquartile
+range?
+The range and interquartile range are both measures of
+spread
+A measure of spread gives information about how spread
+out the data set is
+The range is the difference between the largest and
+smallest values in the data set
+All data points in the set will be included in the range,
+including extreme values
+The interquartile range is the difference between the
+upper quartile and the lower quartile
+Only the middle 50% of the data is included in the
+interquartile range
+It is not affected by extreme values
+The units for range and interquartile range are the same as
+the units for the original data
+What is the interpercentile range?
+Sometimes an interpercentile range could be asked for
+this is the difference between two given percentiles
+For example, the 20th to 80th interpercentile
+range would be the difference between the 80th
+percentile and the 20th percentile
+The units for the percentiles and interpercentile range are
+the same as the units for the original data
+Worked Example
+Find the range and interquartile range for the data set given
+below
+43 29 70 31 84 56 17
+Answer:
+
+---
+
+Examiner Tips and Tricks
+Be aware of the difference between averages and ranges,
+especially when answering contextual questions asking you
+to describe or compare data. Remember, averages give an
+indication of where the data are whilst range gives an
+indication of how varied the data are.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+
+---
+
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

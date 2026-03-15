@@ -1,0 +1,109 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Velocity-Time Graphs
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 16 February 2026
+Did this video help you? Yes No
+Velocity-time graphs
+Help me understand
+What is a velocity-time graph?
+Velocity- time graphs show the velocityof an object as it
+moves in a straight line
+They show velocity (on the vertical axis) against time (on
+the horizontal axis)
+Velocity-time graphs can go below the horizontal axis
+whereas speed-time graphs can not
+What are the key features of a
+velocity-time graph?
+The gradient of the graph equals the accelerationof an
+object
+A straight line shows that the object is accelerating at a
+constant rate
+A horizontal line shows that the object is moving at a
+constant velocity
+The area between the graph and the x-axis tells us the
+Stuck on something?
+change indisplacementof the object
+Graph above the x-axis means the object is moving Ask questions and get help with
+forwards exactly what you're revising.
+Graph below the x-axis means the object is moving
+backwards Got it
+The total displacement of the object from its starting
+point is the sum of the areas above the x-axis minus the
+sum of the areas below the x-axis
+
+---
+
+The total distance travelled by the object is the sum of all
+the areas
+If the graph touches the x-axis then the object is
+stationaryat that time
+If the graph is above the x-axis then the object has
+positive velocity and is travelling forwards
+If the graph is below the x-axis then the object has
+negative velocity and is travelling backwards
+Worked Example
+The motion of a bird travelling in a straight line is tracked for 60
+seconds.
+This information is displayed in the velocity-time graph below.
+(a) Calculate the acceleration of the bird at 20 seconds.
+Answer:
+
+---
+
+(b) Calculate the distance travelled in the first 28 seconds.
+Answer:
+(c) Calculate the displacement of the bird from its starting
+point after 60 seconds.
+Answer:
+Examiner Tips and Tricks
+Be careful to spot if you are working with a distance-time
+graph or a velocity-time graph.
+Be careful to spot if you are working with a speed-time
+graph or a velocity-time graph.
+Check where the graph starts from on the y-axis, the
+velocity does not have to start at 0. For example, the
+scenario could be a car driving at a constant speed and
+the driver sees a hazard.
+Be extra vigilant when working with negative gradients or
+with graphs under the x-axis, it is easy to make mistakes
+with these.
+Speed is a scalar so it can not be negative whereas
+velocity can be.
+Make sure your units are consistent.
+
+---
+
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+
+---
+
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

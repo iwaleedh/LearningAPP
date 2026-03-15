@@ -1,0 +1,26 @@
+Edexcel A Level Maths: Pure Revision Notes
+Exponential Equations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Exponential equations
+What are exponential equations?
+An equation where the unknown is a power
+In simple cases the solutions can be “spotted”
+How do I solve exponential Stuck on something?
+equations? Ask questions and get help with
+exactly what you're revising.
+Laws of Indices are often needed to rewrite equations
+Laws of Logarithms are used to solve exponential Got it
+equations
+ln (log ) is often used
+e
+Answers are often written in terms of ln
+How do I solve hidden quadratic
+exponential equations?
+Look out for “hidden” squared terms, these are hidden
+quadratics which will need to be solved
+4x = (22)x = 22× = (2x)2
+e2× = (e2)x = (ex)2

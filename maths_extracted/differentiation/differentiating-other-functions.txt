@@ -1,0 +1,65 @@
+Edexcel A Level Maths: Pure Revision Notes
+Differentiating Other
+Functions
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+09:43
+Help me understand
+Did this video help you? Yes No
+Differentiating other
+functions
+How do I differentiate common
+functions?
+These are the common results
+d
+(xn)=nxn−1
+dx
+d
+(ex)=ex
+dx
+d
+(ax)=axlna for a>0
+dx
+d 1
+(lnx)=
+dx x
+d
+(sinx)=cosx
+dx
+d
+(cosx)=−sinx
+dx Stuck on something?
+d
+(tanx)=sec2x Ask questions and get help with
+dx
+exactly what you're revising.
+d
+(cotx)=−cosec2x
+dx
+Got it
+d
+(secx)=secxtanx
+dx
+d
+(cosecx)=−cosecxcotx
+dx
+How do I differentiate e , a, ln(kx)
+kx x
+and a ?
+kx
+And for akx:
+This last formula can be derived from Formula 3 by using
+the chain rule
+Examiner Tips and Tricks
+The formulae for some of these derivatives are not given
+in the formulae booklet – you need to know them.
+The formulae for ekx and ln x are the ones you absolutely
+do need to know.
+The other formulae can be derived from those two as
+1
+shown above, and remember – the derivative of ln kx is
+x
+k
+, NOT !
+x

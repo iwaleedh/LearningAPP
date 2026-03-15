@@ -1,0 +1,51 @@
+Edexcel A Level Maths: Pure Revision Notes
+Graphs of Reciprocal
+Trigonometric Functions
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Graphs of reciprocal
+trigonometric functions
+How do I sketch the graph of y = sec
+x?
+The graph of y = secx looks like this:
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+y-axis is a line of symmetry
+has period (ie repeats every) 360° or 2π radians
+vertical asymptotes wherever cos x= 0
+domain is all xexceptodd multiples of 90° (90°, -90°,
+270°, -270°, etc.)
+the domain in radians is all xexcept odd multiples of π/2
+(π/2, - π/2, 3π/2, -3π/2, etc.)
+range is y ≤ -1 or y ≥ 1
+How do I sketch the graph of y =
+cosec x?
+The graph of y = cosec x looks like this:
+has period (ie repeats every) 360° or 2π radians
+vertical asymptotes wherever sin x= 0
+domain is all xexcept multiples of 180° (0°, 180°, -180°,
+360°, -360°, etc.)
+the domain in radians is all xexcept multiples of π (0, π, -
+π, 2π, -2π, etc.)
+range is y ≤ -1 or y ≥ 1
+How do I sketch the graph of y = cot
+x?
+The graph of y = cot x looks like this:
+has period (ie repeats every) 180° or π radians
+vertical asymptotes wherever tan x= 0
+domain is all xexcept multiples of 180° (0°, 180°, -180°,
+360°, -360°, etc.)
+the domain in radians is all xexcept multiples of π (0, π, -
+π, 2π, -2π, etc.)
+range is y ∈ ℝ (ie cot can take any real number value)
+Examiner Tips and Tricks
+Make sure you know the shapes of the graphs for cos, sin
+and tan.
+The shapes of the reciprocal trig function graphs follow
+from those graphs plus the definitions sec = 1/cos,
+cosec = 1/sin and cot = 1/tan

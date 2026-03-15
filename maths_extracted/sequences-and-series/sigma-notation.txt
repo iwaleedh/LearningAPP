@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+Sigma Notation
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Help me understand
+Did this video help you? Yes No
+Sigma notation
+What is sigma notation?
+The symbol Σ is the capital Greek letter sigma – that's why
+it's called 'sigma notation'!
+'Σ' stands for 'sum' – the expression to the right of the Σ
+tells you what is being summed, and the limits above and
+below tell you which terms you are summing
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Be careful – the limits don't have to start with 1!
+4 11 Got it
+For example: ∑(2r+1) or ∑(2r−13)
+r=0 r=7
+How do I use sigma notation?
+Sigma notation can be used to represent both arithmetic
+series and geometric series
+Arithmetic will have the form A+Br
+Geometric will have the form A×Br
+Writing out the first few terms will help you
+To work out such a sum use the arithmetic and geometric
+series formulae
+As long as the expressions being summed are the same
+you can add and subtract in sigma notation
+For example:
+6 11 11
+∑(4r+7)+∑(4r+7)=∑(4r+7)
+r=1 r=7 r=1
+100 50 100
+∑(7×2r)−∑(7×2r)= ∑(7×2r)
+r=1 r=1 r=51
+Examiner Tips and Tricks
+Be careful when more than one letter appears in a sigma
+notation question.

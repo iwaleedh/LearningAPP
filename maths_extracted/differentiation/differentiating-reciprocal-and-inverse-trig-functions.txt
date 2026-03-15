@@ -1,0 +1,60 @@
+Edexcel A Level Maths: Pure Revision Notes
+Differentiating Reciprocal and
+Inverse Trig Functions
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+Help me understand
+09:44
+Did this video help you? Yes No
+Differentiating reciprocal
+and inverse trig functions
+How do I differentiate reciprocal
+trigonometric functions?
+The formulae for the derivatives of the reciprocal
+trigonometric functions are:
+d
+(secx)=secxtanx
+dx
+d
+(cosecx)=−cosecxcotx
+dx
+d
+2
+(cotx)=−cosec x
+dx
+You can derive the derivatives for sec, cosec, and cot
+using the chain rule and the derivatives of the basic
+Stuck on something?
+trigonometric functions
+Ask questions and get help with
+exactly what you're revising.
+Got it
+How do I differentiate inverse
+trigonometric functions?
+The formulae for the derivatives of the inverse
+trigonometric functions are:
+d 1
+(arcsinx)=
+dx 1−x2
+d 1
+(arccosx)=−
+dx 2
+1−x
+d 1
+(arctanx)=
+dx 2
+1+x
+You can derive the derivatives of arcsin, arccos, and
+arctan using the reciprocal form of the chain rule and the
+derivatives of the basic trigonometric functions
+Examiner Tips and Tricks
+The formulae for the derivatives of sec x, cosec x, and cot
+x are in the formulae booklet – you don't need to
+memorise them
+However, you should know how to derive the
+derivatives of sec, cosec, and cot using the chain rule
+The formulae for the derivatives of arcsin, arccos, and
+arctan are not in the formulae booklet
+You should know how to derive those derivatives
+using the reciprocal form of the chain rule

@@ -1,0 +1,44 @@
+Edexcel A Level Maths: Pure Revision Notes
+Small Angle Approximations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 17 October 2025
+Did this video help you? Yes No
+Small angle approximations
+What is a small angle
+approximation?
+When an angle measured in radians is very small, you can
+approximate the value using small angle approximations
+These only apply when angles are measured in radians
+They can be applied to positive and negative small angles
+What is the small angle
+approximation of sin θ?
+sin θ ≈ θ
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Help me understaGndot it
+What is the small angle
+approximation of cos θ?
+1
+cos θ ≈ 1 - θ2
+2
+y = cos θ (near zero) is similar to a “negative quadratic”
+(parabola)
+What is the small angle
+approximation of tan θ?
+tan θ ≈ θ
+How do I use small angle
+approximations?
+Replace sin θ, cos θ or tan θ with the appropriate
+approximation
+Given angles are often 2θ, 3θ, …
+Replace “θ” in the approximation by 2θ, 3θ, …
+Binomial expansion (see GBE) may be involved in more
+awkward expressions
+Examiner Tips and Tricks
+Small angle approximations are given in the formula
+booklet.
+They can be used in proofs – particularly differentiation
+from first principles (see First Principles Differentiation -
+Trigonometry).

@@ -1,54 +1,28 @@
 export const note_physics_4_16_2 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Applying Conservation of Linear Momentum" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Apply conservation of linear momentum to collisions and explosions in one and two dimensions; set up and solve momentum equations; distinguish between momentum conservation and energy conservation" } },
     { id: 'head-1', type: 'heading', data: { text: "Applying Conservation of Linear Momentum", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Applying Conservation of Linear Momentum will be updated." } },
-
-  
-    {
-      id: 'svg-physics_4_16_2-0',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Before Collision</text>
-  <circle cx="120" cy="100" r="25" fill="#3b82f6"/>
-  <circle cx="280" cy="100" r="25" fill="#ef4444"/>
-  <path d="M 155 100 L 205 100" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 245 100 L 215 100" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <text x="120" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">A</text>
-  <text x="280" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">B</text>
-  <text x="120" y="145" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">m₁ = 2kg, u₁ = 3m/s</text>
-  <text x="280" y="145" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">m₂ = 3kg, u₂ = -1m/s</text>
-  <defs>
-    <marker id="arrow-dark" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
-    </marker>
-  </defs>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 16_2'
-      }
-    },
-    {
-      id: 'svg-physics_4_16_2-1',
-      type: 'svg',
-      data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">After Collision</text>
-  <circle cx="180" cy="100" r="25" fill="#3b82f6"/>
-  <circle cx="220" cy="100" r="25" fill="#ef4444"/>
-  <path d="M 255 100 L 305 100" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <text x="180" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">A</text>
-  <text x="220" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">B</text>
-  <text x="200" y="150" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">v = ? (Stuck together)</text>
-  <text x="200" y="180" font-family="Arial" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">m₁u₁ + m₂u₂ = (m₁ + m₂)v</text>
-</svg>`,
-        caption: 'Diagram illustrating concepts of 16_2'
-      }
-    },
+    { id: 'para-2', type: 'paragraph', data: { text: "The law of conservation of linear momentum states that the total momentum of a closed system (no external net force) remains constant. This applies to all interactions — collisions, explosions, and any event where objects interact with each other via internal forces. The key equation for a two-body collision is: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂, where u denotes velocity before and v denotes velocity after." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Setting Up the Equation Always choose a positive direction first and stick to it. Velocities in the opposite direction are assigned a negative sign. Write down the total momentum before and set it equal to the total momentum after. For each object: momentum = mass × velocity (p = mv). If the problem involves two unknowns (v₁ and v₂), you need a second equation — either energy conservation (for elastic collisions) or the coefficient of restitution condition." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 185" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="185" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Collision: Before and After</text><text x="100" y="45" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">BEFORE</text><circle cx="70" cy="75" r="22" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="70" y="80" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">m&#8321;</text><line x1="92" y1="75" x2="120" y2="75" stroke="#1864ab" stroke-width="2"/><polygon points="120,75 112,70 112,80" fill="#1864ab"/><circle cx="155" cy="75" r="18" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="155" y="80" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">m&#8322;</text><line x1="148" y1="75" x2="127" y2="75" stroke="#c92a2a" stroke-width="2"/><polygon points="127,75 135,70 135,80" fill="#c92a2a"/><text x="70" y="110" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">u&#8321; = +3 m/s</text><text x="155" y="110" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">u&#8322; = &#8722;1 m/s</text><text x="300" y="45" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">AFTER (stuck together)</text><circle cx="280" cy="75" r="30" fill="#7950f2" stroke="#5f3dc4" stroke-width="2"/><text x="280" y="80" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">m&#8321;+m&#8322;</text><line x1="310" y1="75" x2="345" y2="75" stroke="#5f3dc4" stroke-width="2"/><polygon points="345,75 337,70 337,80" fill="#5f3dc4"/><text x="310" y="110" font-family="sans-serif" font-size="10" fill="#5f3dc4" text-anchor="middle">v = ?</text><text x="200" y="145" font-family="sans-serif" font-size="11" fill="#212529" text-anchor="middle">m&#8321;u&#8321; + m&#8322;u&#8322; = (m&#8321;+m&#8322;)v</text><text x="200" y="162" font-family="sans-serif" font-size="11" fill="#212529" text-anchor="middle">2&#215;3 + 3&#215;(&#8722;1) = 5v &#8594; v = +0.6 m/s</text></svg>', caption: 'Perfectly inelastic collision: m₁u₁ + m₂u₂ = (m₁+m₂)v. Objects stick together, sharing the total momentum.' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Worked Example — Perfectly Inelastic Collision A 2.0 kg trolley moving at +3.0 m/s collides and sticks with a stationary 3.0 kg trolley. Find the velocity after. Total momentum before = 2.0 × 3.0 + 3.0 × 0 = 6.0 kg m/s. Total momentum after = (2.0 + 3.0) × v = 5.0v. Setting equal: 5.0v = 6.0, so v = 1.2 m/s in the positive direction. Total KE before = ½ × 2.0 × 3² = 9.0 J. Total KE after = ½ × 5.0 × 1.2² = 3.6 J. KE lost = 5.4 J (converted to heat/sound/deformation)." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Worked Example — Explosion (Recoil) A stationary 60 kg astronaut pushes a 0.50 kg tool away at +12 m/s. Find the astronaut's recoil velocity. Total momentum before = 0 (both stationary). After: 60 × v + 0.50 × 12 = 0. 60v = −6.0. v = −0.10 m/s. The astronaut recoils at 0.10 m/s in the opposite direction. This is an explosion: the internal force is equal and opposite (Newton's 3rd Law) so total external momentum is conserved at zero." } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Two-Dimensional Collisions When a collision occurs in two dimensions (e.g. a glancing blow on a billiard table), momentum is conserved independently in the x and y directions. Resolve all velocities into components: p_x(before) = p_x(after) and p_y(before) = p_y(after). This gives two simultaneous equations. Use Pythagoras to find the resultant velocity from its components, and use tan θ = v_y/v_x to find the angle." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="180" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Explosion: Total Momentum = 0 Throughout</text><rect x="170" y="55" width="60" height="55" rx="5" fill="#495057" stroke="#212529" stroke-width="2"/><text x="200" y="88" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">at rest</text><text x="200" y="128" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">p_total = 0</text><line x1="170" y1="82" x2="50" y2="82" stroke="#339af0" stroke-width="2.5"/><polygon points="50,82 62,76 62,88" fill="#339af0"/><text x="110" y="75" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">fragment A</text><line x1="230" y1="82" x2="355" y2="82" stroke="#fa5252" stroke-width="2.5"/><polygon points="355,82 343,76 343,88" fill="#fa5252"/><text x="295" y="75" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">fragment B</text><text x="200" y="155" font-family="sans-serif" font-size="11" fill="#212529" text-anchor="middle">p_A + p_B = 0 &#8594; m_A v_A = &#8722;m_B v_B</text><text x="200" y="170" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">Fragments move in opposite directions with equal and opposite momenta</text></svg>', caption: 'Explosion from rest: total momentum remains zero; fragments fly apart with equal and opposite momenta' } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Common Sign Convention Errors The most common mistake is forgetting to assign negative velocities for objects moving in the negative direction. If a 3 kg ball moving at 2 m/s to the right strikes a 2 kg ball moving at 4 m/s to the left, take rightward as positive. Momentum before = 3 × 2 + 2 × (−4) = 6 − 8 = −2 kg m/s. This tells us the net momentum is 2 kg m/s to the left. Always label the positive direction on your diagram before starting." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Principle', text: 'Conservation of momentum: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂ (for any collision or explosion with no external forces). Choose +ve direction; give opposite velocities negative signs. For 2D: apply conservation separately in x and y. For an explosion from rest: total momentum = 0 throughout.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Apply the momentum conservation equation to a collision, correctly assigning signs to velocities", checked: false },
+      { text: "Solve for an unknown velocity after a perfectly inelastic collision (objects stick together)", checked: false },
+      { text: "Apply conservation of momentum to an explosion from rest and find the recoil velocity", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Conservation of momentum: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂ for any closed system. Choose positive direction and give opposite motions negative velocities. Perfectly inelastic: objects stick → (m₁+m₂)v. Explosion from rest: total p = 0 so m_Av_A = −m_Bv_B. 2D collisions: conserve p_x and p_y independently." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Applying Conservation of Linear Momentum' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-2', prompt: 'State the conservation of momentum equation for a two-body collision. What does "closed system" mean here?' },
+    { id: 'cue-2', blockId: 'para-4', prompt: 'A 2 kg trolley at 3 m/s collides and sticks to a stationary 3 kg trolley. What is their common velocity after?' },
+    { id: 'cue-3', blockId: 'para-5', prompt: 'A stationary 60 kg astronaut pushes a 0.5 kg tool at +12 m/s. What is the astronaut\'s recoil velocity?' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

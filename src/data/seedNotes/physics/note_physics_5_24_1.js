@@ -1,46 +1,28 @@
 export const note_physics_5_24_1 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Core Practical 12: Calibrating a Thermistor" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Describe the experimental procedure for Core Practical 12: calibrating a thermistor using a temperature-resistance relationship; plot R vs T and V_out vs T calibration curves; use the calibration to measure unknown temperatures" } },
     { id: 'head-1', type: 'heading', data: { text: "Core Practical 12: Calibrating a Thermistor", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Core Practical 12: Calibrating a Thermistor will be updated." } },,
-    {
-      "id": "svg-gen-24-1-1",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#f0f4f8" rx="10"/>
-  <rect x="150" y="50" width="100" height="100" fill="#a0c4ff" rx="5" stroke="#4a90e2" stroke-width="2"/>
-  <text x="200" y="40" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Specific Heat Capacity</text>
-  <rect x="130" y="70" width="20" height="80" fill="#ff6b6b"/>
-  <text x="140" y="170" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#333">Heater</text>
-  <rect x="250" y="30" width="10" height="120" fill="#e0e0e0" stroke="#333"/>
-  <rect x="250" y="80" width="10" height="70" fill="#ff4757"/>
-  <text x="255" y="20" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#333">Thermometer</text>
-</svg>`,
-        "caption": "Diagram demonstrating concepts in Topic 24"
-      }
-    },
-    {
-      "id": "svg-gen-24-1-2",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#f8f9fa" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Temperature-Time Graph (Latent Heat)</text>
-  <line x1="50" y1="170" x2="350" y2="170" stroke="#333" stroke-width="2"/>
-  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="2"/>
-  <polyline points="50,150 120,90 200,90 280,40" fill="none" stroke="#e84393" stroke-width="3"/>
-  <text x="160" y="80" font-family="sans-serif" font-size="12" fill="#e84393">Phase Change</text>
-  <text x="20" y="100" font-family="sans-serif" font-size="12" transform="rotate(-90 20 100)" text-anchor="middle">Temperature</text>
-  <text x="200" y="190" font-family="sans-serif" font-size="12" text-anchor="middle">Energy Supplied / Time</text>
-</svg>`,
-        "caption": "Further illustration for Topic 24"
-      }
-    }
-  
-
+    { id: 'para-2', type: 'paragraph', data: { text: "A thermistor is a temperature-dependent resistor. An NTC (Negative Temperature Coefficient) thermistor has a resistance that decreases as temperature increases — the decrease is non-linear (exponential-like). To use a thermistor as a thermometer, it must first be calibrated: you measure its resistance (or output voltage) at a range of known temperatures, plot a calibration curve, and then use the curve to find unknown temperatures by reading off from the calibrated scale." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Theory: NTC Thermistor in a Potential Divider The thermistor is typically used in a potential divider circuit with a fixed resistor R₁ and a supply voltage V_in. The output voltage V_out is measured across the thermistor: V_out = V_in × R_T / (R₁ + R_T), where R_T is the thermistor resistance at temperature T. As T increases, R_T decreases, so V_out decreases (if the thermistor is the lower resistor in the divider). The non-linear relationship between R_T and T means the V_out vs T graph is a curve, not a straight line." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Thermistor Potential Divider Circuit</text><line x1="80" y1="35" x2="80" y2="140" stroke="#212529" stroke-width="2"/><line x1="320" y1="35" x2="320" y2="140" stroke="#212529" stroke-width="2"/><line x1="80" y1="35" x2="320" y2="35" stroke="#212529" stroke-width="2"/><line x1="80" y1="140" x2="320" y2="140" stroke="#212529" stroke-width="2"/><rect x="70" y="55" width="20" height="30" rx="3" fill="#fab005"/><text x="58" y="72" font-family="sans-serif" font-size="9" fill="#e67700" text-anchor="middle">V_in</text><rect x="290" y="55" width="20" height="28" rx="3" fill="#dee2e6" stroke="#495057"/><text x="300" y="70" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">R&#8321;</text><circle cx="300" cy="95" r="8" fill="#fa5252" stroke="#c92a2a" stroke-width="1.5"/><text x="300" y="99" font-family="sans-serif" font-size="8" fill="#fff" text-anchor="middle">NTC</text><line x1="300" y1="83" x2="300" y2="140" stroke="#212529" stroke-width="2"/><line x1="200" y1="140" x2="200" y2="155" stroke="#339af0" stroke-width="1.5" stroke-dasharray="3,2"/><line x1="300" y1="103" x2="300" y2="120" stroke="#212529" stroke-width="2"/><line x1="265" y1="120" x2="335" y2="120" stroke="#339af0" stroke-width="1.5"/><text x="350" y="124" font-family="sans-serif" font-size="9" fill="#1864ab">V_out</text><text x="200" y="160" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">V_out = V_in &#215; R_T / (R&#8321; + R_T)</text></svg>', caption: 'Potential divider with NTC thermistor: as T increases, R_T decreases, V_out decreases (thermistor as lower resistor).' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "Equipment Thermistor (NTC type, e.g. 10 kΩ at 25°C). Fixed resistor R₁ (matched to mid-range thermistor resistance — e.g. 10 kΩ). 6 V power supply. Voltmeter (or data logger). Water bath or hot plate with temperature controller. Calibrated mercury thermometer or digital thermometer (used as the reference standard). Beaker of water. Ice." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Procedure (1) Set up the potential divider circuit with the thermistor and R₁. (2) Prepare a water bath at 0°C (iced water) and at a range of temperatures up to 80–100°C. (3) At each temperature: allow the thermistor and reference thermometer to reach thermal equilibrium; record the temperature θ (from reference thermometer) and the output voltage V_out. (4) Repeat at intervals of ~5–10°C across the full range. (5) Also directly measure thermistor resistance R_T using an ohmmeter at each temperature (disconnect from circuit). (6) Plot two calibration graphs: R_T vs θ and V_out vs θ." } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Thermistor Calibration Curves</text><line x1="30" y1="145" x2="185" y2="145" stroke="#212529" stroke-width="2"/><line x1="30" y1="145" x2="30" y2="28" stroke="#212529" stroke-width="2"/><text x="108" y="160" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Temperature / &#176;C</text><text x="14" y="88" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle" transform="rotate(-90 14,88)">R_T / k&#937;</text><path d="M 30 32 Q 60 38 100 75 Q 140 110 185 140" stroke="#fa5252" stroke-width="2.5" fill="none"/><text x="40" y="46" font-family="sans-serif" font-size="9" fill="#c92a2a">R_T vs T</text><text x="40" y="58" font-family="sans-serif" font-size="9" fill="#c92a2a">(exponential</text><text x="40" y="70" font-family="sans-serif" font-size="9" fill="#c92a2a">decay)</text><line x1="215" y1="145" x2="380" y2="145" stroke="#212529" stroke-width="2"/><line x1="215" y1="145" x2="215" y2="28" stroke="#212529" stroke-width="2"/><text x="298" y="160" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Temperature / &#176;C</text><text x="198" y="88" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle" transform="rotate(-90 198,88)">V_out / V</text><path d="M 215 32 Q 245 38 280 72 Q 320 110 380 140" stroke="#339af0" stroke-width="2.5" fill="none"/><text x="225" y="46" font-family="sans-serif" font-size="9" fill="#1864ab">V_out vs T</text><text x="225" y="58" font-family="sans-serif" font-size="9" fill="#1864ab">(curve, not</text><text x="225" y="70" font-family="sans-serif" font-size="9" fill="#1864ab">straight line)</text></svg>', caption: 'Calibration curves: R_T vs T (exponential decay) and V_out vs T (derived curve). Used to read off unknown temperatures.' } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Using the Calibration Curve To measure an unknown temperature: (1) Place the thermistor in the unknown environment. (2) Measure V_out (or R_T). (3) Read the corresponding temperature from the calibration curve (V_out vs θ or R_T vs θ). The curve acts as the conversion scale from an electrical quantity to temperature. Since the curve is non-linear, the precision of the thermometer is not uniform — it is better in regions where the curve is steeper (larger change in V_out per degree change in T)." } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Sources of Error and Improving the Experiment Self-heating: current through the thermistor causes it to heat up slightly (power = I²R_T) — use a high-impedance voltmeter and low supply voltage to minimise this. Thermal equilibrium: allow sufficient time for the thermistor to reach the temperature of the water bath before recording. Reference thermometer accuracy: the calibration is only as accurate as the reference thermometer used to define the temperatures. Poor contact: the thermistor must be fully submerged. Repeatability: take repeat readings at each temperature and average them." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Points', text: 'NTC thermistor: resistance decreases as temperature increases (non-linear). Circuit: potential divider — V_out = V_in × R_T/(R₁ + R_T). Calibration: plot R_T vs T and V_out vs T. Non-linear curve → read off temperature from graph. Errors: self-heating (use low current); thermal equilibrium (wait for steady reading); reference thermometer accuracy.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Describe the potential divider circuit used to calibrate a thermistor and explain how V_out changes with temperature", checked: false },
+      { text: "Outline the procedure for obtaining a calibration curve for a thermistor, including how to control variables", checked: false },
+      { text: "Explain how to use the calibration curve to measure an unknown temperature, and identify two sources of error", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "NTC thermistor: R_T decreases non-linearly with rising T. Potential divider: V_out = V_in × R_T/(R₁+R_T) — V_out decreases as T rises. Calibration: measure V_out and R_T at known temperatures (reference thermometer) across full range; plot V_out vs T and R_T vs T. Use curve to read off unknown T from measured V_out. Errors: self-heating (low current), thermal equilibrium lag, reference accuracy." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 12: Calibrating a Thermistor' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'In a potential divider with an NTC thermistor as the lower resistor, what happens to V_out as temperature increases? Explain using the potential divider formula.' },
+    { id: 'cue-2', blockId: 'para-5', prompt: 'Outline the procedure for calibrating a thermistor. What two graphs should you plot?' },
+    { id: 'cue-3', blockId: 'para-7', prompt: 'Give two sources of error in this practical and state how each is reduced.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

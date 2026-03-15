@@ -1,0 +1,41 @@
+Edexcel A Level Maths: Pure Revision Notes
+Sketching Graphs of
+Parametric Equations
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+04:45
+Did this video help you? Yes No
+Sketching graphs of
+Help me understand
+parametric equations
+How do I sketch a graph from
+parametric equations?
+Plotting a graph is covered in Parametric Equations -
+Basics
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Still find the key features of a graph …
+… the y-axis intercept
+… the x-axis intercept(s)
+… asymptotes
+… location of (and if required coordinates of)
+stationary points (see Parametric Differentiation)
+Sketch these points and join up accordingly
+Examiner Tips and Tricks
+Not all curves defined parametrically lead to familiar
+shaped graphs and it may be worth plotting a few extra
+points by calculating them.
+Your calculator may be able to produce a table of values
+quickly, however, remember you are sketching and not
+plotting.
+It may be easier to find the Cartesian equation first and
+draw the graph from that – this will depend on the
+question.
+It is only a definite strategy if you cannot make progress
+otherwise.
+If you are given the sketch of a graph it is usually only for
+reference and can be used to check answers for axes
+intercepts, etc.

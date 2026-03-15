@@ -1,0 +1,32 @@
+Edexcel A Level Maths: Pure Revision Notes
+Solving Hidden Quadratics
+using Substitutions
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 19 June 2025
+Help me understand
+Did this video help you? Yes No
+Solving hidden quadratics
+using substitutions
+What are hidden quadratic
+equations?
+Hidden quadratic equations are quadratics written in
+terms of a functionf(x)
+A normal quadratic appears in the form ax2+bx+c=0
+Whereas a hidden quadratic appears in the form
+⎡ ⎤ ⎡ ⎤
+a⎢ ⎣f(x)⎥ ⎦2+b⎢ ⎣f(x)⎥ ⎦+c=0
+This might look complicated but it simply means x has
+been replaced by f(x)
+e.g. sin2x+2sinx−3=0 is just the hidden quadratic of
+x2+2x−3=0 where f(x) =sinx
+How do I solve hidden quadratic
+equations?
+Stuck on something?
+First rearrange the function into the form Ask questions and get help with
+⎡ ⎤ ⎡ ⎤
+a⎢ ⎣f(x)⎥ ⎦2+b⎢ ⎣f(x)⎥ ⎦+c=0 exactly what you're revising.
+Replacing the function and solving the 'normal' quadratic
+first Got it
+Then substitute the function back into the solutions to
+solve the original quadratic

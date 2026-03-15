@@ -1,0 +1,22 @@
+Edexcel A Level Maths: Pure Revision Notes
+Geometric Sequences
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+Help me understand
+Did this video help you? Yes No
+Geometric sequences
+What do I need to know about
+geometric sequences?
+In a geometric sequence, there is a common ratio
+between consecutive terms in the sequence
+You need to know the nth term formula for a geometric Stuck on something?
+sequence
+Ask questions and get help with
+u =arn−1
+n exactly what you're revising.
+a is the first term
+r is the common ratio Got it
+Examiner Tips and Tricks
+If you know two terms in a geometric sequence you can find a
+and r using simultaneous equations.

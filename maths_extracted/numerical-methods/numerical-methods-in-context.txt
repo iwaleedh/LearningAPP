@@ -1,0 +1,31 @@
+Edexcel A Level Maths: Pure Revision Notes
+Numerical Methods in Context
+Exam code:9MA0 Download PDF
+Written by:Lucy Kirkham
+Updated on 16 February 2026
+04:23 Help me understand
+Did this video help you? Yes No
+Numerical methods in
+context
+How can numerical methods be
+used in context?
+Numerical methods can be used to model a variety of
+situations, from the motion of planets across the solar
+system to the depreciation in a car's value or the
+fluctuation in crime rates over time
+Numerical methods can be used to find solutions for
+questions when analytical methods may not always work
+or even be possible
+It is important to understand how each method can be
+applied to different contexts and the different aspects of
+a question you may be asked about
+Questions in context will often ask for an interpretation or
+criticism of certain parts of the problem
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Examiner Tips and Tricks
+Exam questions will often tell you which method to use
+But beware... numerical methods questions can often
+combine multiple methods in one large question

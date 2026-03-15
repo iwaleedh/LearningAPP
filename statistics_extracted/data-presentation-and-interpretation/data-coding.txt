@@ -1,0 +1,145 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Data Coding
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 26 November 2025
+Did this video help you? Yes No
+Coding data
+Sometimes data needs to be coded for further use with
+calculations. This is particularly useful with data that deals with
+very small or very large numbers, or with data that needs to be
+classified for research purposes.
+What is coding?
+Help me understand
+Coding is a way of simplifying data to make it easier to
+work with
+The coding must be carried out on all values within the
+data set and will normally be done using a given formula
+Coding can be carried out in a number of ways:
+Adding or subtracting a constant to each data value
+Multiplying or dividing each data value by a constant
+A combination of both of the above
+How are statistical calculations
+carried out with coded data?
+If you know the mean or standard deviation of the original Stuck on something?
+data it is possible to find the mean or standard deviation
+Ask questions and get help with
+of the coded data and vice versa
+exactly what you're revising.
+It is important to remember what the mean and standard
+deviation actually tell us about the data to understand
+Got it
+how coding calculations work
+The mean is a measure of location, changing the data
+set in any way will cause the mean to change in the
+same way
+
+---
+
+The standard deviation is a measure of spread,
+adding or subtracting a constant to every value within
+the data set will not change the standard deviation of
+the data set
+Multiplying or dividing every value within the data
+set by a constant will changethe standard
+deviation by the modulus of the constant
+If the data were coded by multiplying or dividing
+by a negative, the standard deviation will change
+by the equivalent positive value
+Anytime calculations are carried out on data that has been
+coded,
+The original mean can be found by solving the
+equation to reverse the coding
+For example, if the data, x, was coded using the
+formula
+y=ax+b
+Then the mean of the coded data, ⎯ y ⎯ would be
+y⎯⎯=ax⎯⎯+b
+⎯⎯
+The original mean, ⎯ x ⎯ , will be ⎯ x ⎯ = y −b
+a
+The original standard deviation
+Will be the same as the coded standard deviation if
+the data was coded by adding or subtracting a
+constant only
+Can be found by reversing the coding if the data was
+coded by multiplying or dividing by a constant only
+If the data was coded by a combination of both then
+only the multiplying or dividing will need to be
+reversed to find the original standard deviation
+For example, if the data, was coded using the formula
+y =ax+b
+Then the standard deviation of the coded data, σ would be
+y
+ 
+σ =  a σ
+y x
+The original standard deviation,σ , will be
+x
+σ
+y
+σ x =   a   
+Worked Example
+The shoulder height, h, of a group of Asian elephants living in a
+nature reserve are summarised in the table below.
+Height, cm Frequency, f
+200 ≤h <220 2
+220 ≤h <240 5
+240 ≤h <260 8
+
+---
+
+260 ≤h <280 8
+280 ≤h <300 5
+300 ≤h <320 2
+h−250
+(i) Code the data using the formula x =
+20
+(ii) Use the coded data to find an estimate for the mean and
+standard deviation, you may use the summary statistics
+Σxf = 15,Σx2f = 59,Σf=30.
+Answer:
+Examiner Tips and Tricks
+Be careful when using the formulae for the mean and
+standard deviation with coded summary statistics, you
+must make sure that you use the summary statistics
+consistently throughout. For example, if you use the sum
+of the coded data squared in the formula for the standard
+
+---
+
+deviation, you must subtract the square of the coded
+mean.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+
+---
+
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

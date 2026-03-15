@@ -1,29 +1,27 @@
 export const note_physics_2_7_3 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Potential Difference & Conductor Length" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Explain how potential difference varies along a uniform resistive wire; apply the potentiometer principle; describe how a potential divider wire is used experimentally" } },
     { id: 'head-1', type: 'heading', data: { text: "Potential Difference & Conductor Length", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Potential Difference & Conductor Length will be updated." } },
-
-      {
-      id: "svg-ca147b0c",
-      type: "svg",
-      data: {
-        caption: "Power Dissipation in a Resistor",
-        svg: "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\">   <rect width=\"300\" height=\"200\" fill=\"#fffbeb\" rx=\"10\"/>   <rect x=\"100\" y=\"80\" width=\"100\" height=\"40\" fill=\"#fbbf24\" stroke=\"#d97706\" stroke-width=\"2\" rx=\"5\"/>   <path d=\"M 50 100 L 100 100\" stroke=\"#d97706\" stroke-width=\"3\"/>   <path d=\"M 200 100 L 250 100\" stroke=\"#d97706\" stroke-width=\"3\"/>      <circle cx=\"150\" cy=\"50\" r=\"15\" fill=\"#fff\" stroke=\"#d97706\" stroke-width=\"2\"/>   <text x=\"150\" y=\"55\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#d97706\" text-anchor=\"middle\" font-weight=\"bold\">I</text>      <text x=\"150\" y=\"105\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#92400e\" text-anchor=\"middle\" font-weight=\"bold\">Heat</text>   <path d=\"M 120 70 Q 130 50 140 70\" stroke=\"#ef4444\" stroke-width=\"2\" fill=\"none\"/>   <path d=\"M 160 70 Q 170 50 180 70\" stroke=\"#ef4444\" stroke-width=\"2\" fill=\"none\"/>   <path d=\"M 120 130 Q 130 150 140 130\" stroke=\"#ef4444\" stroke-width=\"2\" fill=\"none\"/>   <path d=\"M 160 130 Q 170 150 180 130\" stroke=\"#ef4444\" stroke-width=\"2\" fill=\"none\"/>      <text x=\"150\" y=\"170\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#b45309\" text-anchor=\"middle\" font-weight=\"bold\">P = I²R = V²/R = VI</text> </svg>"
-      }
-    },
-    {
-      id: "svg-0ac93d2d",
-      type: "svg",
-      data: {
-        caption: "Energy Transfer (W = VIt)",
-        svg: "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\">   <rect width=\"300\" height=\"200\" fill=\"#faf5ff\" rx=\"10\"/>   <circle cx=\"100\" cy=\"100\" r=\"40\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"3\"/>   <circle cx=\"100\" cy=\"100\" r=\"30\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>   <text x=\"100\" y=\"105\" font-family=\"sans-serif\" font-size=\"20\" fill=\"#6b21a8\" text-anchor=\"middle\" font-weight=\"bold\">W</text>      <path d=\"M 160 100 L 220 100\" stroke=\"#9333ea\" stroke-width=\"2\" stroke-dasharray=\"5\"/>   <polygon points=\"220,95 230,100 220,105\" fill=\"#9333ea\"/>      <text x=\"260\" y=\"85\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#6b21a8\" font-weight=\"bold\">V</text>   <text x=\"260\" y=\"105\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#6b21a8\" font-weight=\"bold\">I</text>   <text x=\"260\" y=\"125\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#6b21a8\" font-weight=\"bold\">t</text>   <text x=\"150\" y=\"40\" font-family=\"sans-serif\" font-size=\"16\" fill=\"#581c87\" text-anchor=\"middle\" font-weight=\"bold\">Energy Transferred</text> </svg>"
-      }
-    },
-
-
+    { id: 'para-2', type: 'paragraph', data: { text: "For a uniform conductor of resistivity ρ, length L, and cross-sectional area A, the resistance is R = ρL/A. Since R is proportional to L (for uniform cross-section), the potential difference across any section of the conductor is proportional to its length. This is the principle behind the potentiometer (or potential divider wire), a fundamental experimental tool in physics." } },
+    { id: 'para-3', type: 'paragraph', data: { text: "Voltage Gradient Along a Uniform Wire When a steady current I flows through a long uniform resistance wire connected to a battery, there is a constant potential gradient (voltage per unit length) along the wire: V/L = IR/L = I(ρ/A) = constant. This means the potential drops uniformly from one end to the other. The potential at any point a distance x from one end is: V(x) = V_total × (x/L), where V_total is the total PD across the wire." } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Potential Divider Wire: Linear Voltage Drop</text><rect x="30" y="55" width="340" height="25" rx="4" fill="#adb5bd" stroke="#495057" stroke-width="2"/><text x="30" y="43" font-family="sans-serif" font-size="11" fill="#1864ab">0 V</text><text x="365" y="43" font-family="sans-serif" font-size="11" fill="#1864ab">E (V)</text><line x1="30" y1="67" x2="370" y2="67" stroke="#339af0" stroke-width="1.5" stroke-dasharray="3,3"/><text x="200" y="43" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">&#9660; V increases uniformly &#9654;</text><circle cx="200" cy="67" r="6" fill="#fa5252"/><line x1="200" y1="73" x2="200" y2="110" stroke="#fa5252" stroke-width="2"/><text x="215" y="100" font-family="sans-serif" font-size="11" fill="#c92a2a">V(x) = E&#183;x/L</text><text x="200" y="130" font-family="sans-serif" font-size="12" font-weight="bold" fill="#495057" text-anchor="middle">Potential gradient = E/L (V/m)</text><text x="200" y="150" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">At any point x from the zero end: V = (E/L) x</text><text x="200" y="167" font-family="sans-serif" font-size="11" fill="#868e96" text-anchor="middle">Uniform wire: same resistance per metre everywhere</text></svg>', caption: 'Uniform resistance wire: potential increases linearly from 0 at one end to E at the other; V(x) = E·x/L' } },
+    { id: 'para-4', type: 'paragraph', data: { text: "The Potentiometer A potentiometer consists of a long uniform resistance wire (typically 1 m of nichrome or constantan) connected across a battery. A second circuit (containing the component to be tested) is connected between one end of the wire and a sliding contact (jockey). By moving the jockey along the wire, the output voltage can be varied continuously from 0 to E (the battery e.m.f.) with no current flowing in the output circuit at balance. This makes it more accurate than a voltage divider with fixed resistors because it does not load the circuit being tested." } },
+    { id: 'para-5', type: 'paragraph', data: { text: "Using a Potentiometer to Compare E.M.F.s In the null-deflection potentiometer experiment: a galvanometer (or sensitive microammeter) is connected between the jockey and the component being tested. The jockey is moved until the galvanometer reads zero — this is the balance point. At balance, no current flows, so there is no internal resistance drop in the cell under test. The length to balance (L_balance) is proportional to the e.m.f. of the cell: ε ∝ L. This allows accurate comparison of e.m.f.s without drawing any current." } },
+    { id: 'para-6', type: 'paragraph', data: { text: "Worked Example A 1.0 m potentiometer wire is connected to a 2.0 V cell. The balance length for an unknown cell is found to be 65 cm. What is the unknown e.m.f.? The potential gradient = 2.0/1.0 = 2.0 V/m. At balance: ε_unknown = potential gradient × balance length = 2.0 × 0.65 = 1.3 V." } },
+    { id: 'para-7', type: 'paragraph', data: { text: "Connection to Resistivity Since R = ρL/A, a longer conductor has higher resistance. In the context of the potential divider wire, doubling the length doubles the resistance, halves the current (for the same applied voltage), but the voltage per unit length (potential gradient) remains the same. This is why the potentiometer provides a stable, uniform potential gradient as long as the wire is uniform and the driving current is constant." } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Principle', text: 'For a uniform resistance wire with constant current: potential gradient = V/L = constant. At any point x from the zero end: V(x) = (V_total/L) × x. The potentiometer uses this to provide a smoothly varying output voltage.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Explain why the PD varies linearly along a uniform resistance wire", checked: false },
+      { text: "Calculate the potential at any point along a potentiometer wire", checked: false },
+      { text: "Describe how a potentiometer is used to compare e.m.f.s using the null-deflection method", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "For a uniform resistive wire, R ∝ L, so PD drops linearly along it: V(x) = E·x/L. Potential gradient = E/L (V/m) is constant. The potentiometer uses a long uniform wire as a continuously variable potential divider. Balance point (null deflection) occurs when output PD equals the e.m.f. being measured. ε ∝ L_balance." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Potential Difference & Conductor Length' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'Why does potential vary linearly along a uniform resistance wire? What is the potential gradient formula?' },
+    { id: 'cue-2', blockId: 'para-5', prompt: 'Describe the null-deflection method for comparing e.m.f.s using a potentiometer.' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'A 1 m wire is driven by 2.0 V. Balance length for an unknown cell is 65 cm. Find its e.m.f.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

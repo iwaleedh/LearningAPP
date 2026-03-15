@@ -1,0 +1,34 @@
+Edexcel A Level Maths: Pure Revision Notes
+Modelling with Sequences &
+Series
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 20 June 2025
+Did this video help you? Yes No
+Modelling with sequences
+& series
+How do I model with sequences and
+series?
+Many real-life situations can be modelled using
+sequences and series
+Help me understand
+If a quantity is changing repeatedly by having a fixed
+amount added to or subtracted from it then the use of
+arithmetic sequences and arithmetic series is
+appropriate
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+If a quantity is changing repeatedly by a fixed percentage,
+or by being multiplied repeatedly by a fixed amount, then
+the use of geometric sequences and geometric series is
+appropriate
+Examiner Tips and Tricks
+Remember, an exam question won't always tell you to use
+sequence and series methods, so you've got to be able
+to spot 'hidden' sequence and series questions.
+To help you do this, be suspicious of questions about
+savings accounts, salaries, sales commissions, profits
+and the like – these are often sequence and series
+questions in disguise!

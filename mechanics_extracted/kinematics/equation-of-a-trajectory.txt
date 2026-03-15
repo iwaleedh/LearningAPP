@@ -1,0 +1,91 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Equation of a Trajectory
+Exam code:9MA0 Download PDF
+Written by:Dan Finlay
+Updated on 26 November 2025
+Did this video help you? Yes No
+Equation of a trajectory
+What is the trajectory of a
+projectile?
+The trajectory of a projectile is the path it follows during
+its motion
+The modelling assumptions mean it is symmetrical
+It follows a path called a parabola
+So far, motion has been described using the suvat
+formulae and we have produced parametric equations
+with time as the parameter
+A Cartesian equation links the horizontal (x) and vertical (y)
+components of the displacement y = f(x)
+Help me understand
+How do I find the equation for the
+trajectory of a projectile?
+U is the initial speed of the projectile at an angle of θ° to
+the horizontal
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+
+---
+
+Worked Example
+A particle is projected from a point on horizontal ground at a
+speed of V m s-1 at an angle α° to the horizontal. The trajectory
+of the particle is given by the equation
+gx2
+y = xtanα−
+2V2cos2α
+where y is the vertical height of the particle and x is the
+horizontal distance travelled by the particle.
+(a) State two assumptions that have been made.
+(b) In the case when V = 16 m s-1 and α = 70° find, to three
+significant figures, the height of the particle after it has
+travelled 12 m horizontally.
+Answer:
+
+---
+
+Examiner Tips and Tricks
+The steps are always the same so the only way the questions
+can be made difficult is for them to use confusing letters. They
+could use similar letters to suvat including capital letters.
+Alternatively, they could use unusual letters like a, instead of θ,
+for angles.
+Make sure you show enough working out to convince the
+examiner that you know the steps especially if it is a "show
+that" question.
+Sometimes you might have to use trigonometric
+identities from pure maths.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+
+---
+
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

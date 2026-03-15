@@ -1,0 +1,199 @@
+Edexcel A Level Maths: Statistics Revision Notes
+Hypothesis Testing for
+Correlation
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 16 February 2026
+Did this video help you? Yes No
+Hypothesis testing for
+correlation
+You should be familiar with using a hypothesis test to
+determine bias within probability problems. It is also possible
+to use a hypothesis test to determine whether a given product
+moment correlation coefficient calculated from a sample
+could be representative of the same relationship existing
+within the whole population. For full information on
+hypothesis testing, see the revision notes from section 5.1.1
+Hypothesis Testing
+Why use a hypothesis test for
+correlation?
+In most cases it is too difficult to get the value of the
+PMCC for a whole population
+This would involve having data on each individual
+within the whole population Stuck on something?
+It is very rare that a statistician would have the time or
+Ask questions and get help with
+resources to collect all of that data
+exactly what you're revising.
+The PMCC for the whole population can instead be
+estimated using information from a sample taken from the Got it
+population
+The PMCC for a whole population is denoted ρ
+(pronounced rho)
+
+---
+
+The PMCC for a sample taken from the population is
+Help me understand
+denoted r
+A hypothesis test would be conducted using the value
+of r to determine whether the population can be said
+to have positive, negative or zero correlation
+How do I use the table of critical
+values for correlation coefficients?
+The table of critical values is found near the end of the
+Mathematical Formulae and Statistical Tables booklet you
+will have in your exam
+It displays the minimum values that need to be reached by
+a value of r in order for the test to be significant
+Find the significant value by looking at the value that is in
+both the row of the number in the sample, n, and in the
+column for the significance level of the test
+Values are given for sample sizes of 4≤n≤30 and then
+40, 50, 60, 70, 80, 90 and 100
+Values are given for significance levels of 10% (0.1),
+5% (0.05), 2.5% (0.025), 1% (0.01) and 0.5% (0.005)
+The table gives values for one - tailed tests only
+To find the significant values for two - tailed tests
+halve the significance level first and then carry out the
+test as if doing a one-tailed test
+The table gives values for positive values of r only
+To find the significant values if you are testing for
+negative correlation look for the corresponding
+positive value of r and change the sign to a negative
+A two-tailed test will have two critical values (both the
+same value but one positive and one negative)
+How do I lay out a hypothesis test
+for correlation?
+Most of the time the hypothesis test will be carried out by
+using a critical value
+You won't be expected to calculate p-values but you
+might be given a p-value
+Step 1. Write the null and alternative hypotheses clearly
+The hypothesis test could either be a one-tailed test
+or a two-tailed test
+The null hypothesis will always be H:ρ=0
+0
+The alternative hypothesis will depend on if it is a one-
+tailed or two-tailed test
+A one-tailed test would test to see if the
+population PMCC, ρ, is either positive or
+negative
+The alternative hypothesis, H will be
+1
+H :ρ>0 or H :ρ<0
+1 1
+A two-tailed test would test to see if the
+population PMCC, ρ , is not equal to zero
+(meaning there is some form of linear correlation)
+The alternative hypothesis, H will be
+1
+H :ρ≠0
+1
+Step 2. Find the critical value for the test
+The critical value will be determined by both the
+significance level of the test and the sample size, n
+For a positive value of r :
+
+---
+
+The greater the sample size, the lower r
+needs to be to determine that ρ is also
+positive
+The greater the significance level the lower r
+needs to be to determine that ρ is also
+positive
+The critical value for can be found by using the table
+of critical values given in the Mathematical Formulae
+and Statistical Tables booklet
+Make sure you know how to find this and are
+familiar with using it before your exam
+Step 3. Compare the value ofrcalculated from the
+sample with the critical value
+If r is in the critical region the test is significant and the
+null hypothesis should be rejected
+It will be in the critical region if
+r > criticalvalue 
+If r is not in the critical region the null hypothesis
+should be accepted and the alternative hypothesis
+should be rejected
+Step 4. Write a conclusion in context
+Use the wording in the question to help you write your
+conclusion
+If rejecting the null hypothesis your conclusion should
+state that there is sufficientevidence to suggest the
+alternative hypothesis is true at this level of
+significance
+If accepting the null hypothesis your conclusion
+should state that there is not enough evidence to
+suggest the alternative hypothesis is true at this level
+of significance
+Occasionally the hypothesis test will be carried out by
+comparing a p - value with the significance level instead
+You will not be expected to calculate the p - value, it
+will be given in the question
+Steps 1 and 4 will be the same, however you should
+compare the p - value with the significance level in
+step 3 (there is no step 2)
+If the p - value is less than the significance level
+the test is significant and the null hypothesis
+should be rejected
+If the p - value is greater than the significance
+level the null hypothesis should be accepted and
+the alternative hypothesis should be rejected
+Worked Example
+A student believes that there is a positive correlation between
+the number of hours spent studying for a test and the
+percentage scored on it.
+The student takes a random sample of 10 of his friends and
+records the amount of revision they did and percentage they
+score in the test.
+The student calculates the product moment correlation
+coefficient for these data as r=0.668.
+
+---
+
+Carry out a hypothesis test at the 5% level of significance to
+test whether the student’s claim is justified.
+Answer:
+Examiner Tips and Tricks
+Make sure you read the question carefully to determine
+whether the test you are carrying out is for a one-tailed or
+a two-tailed test and use the level of significance
+accordingly. A test is only one-tailed if you are told to test
+for positive or negative correlation. If the question says
+test for correlation, then it is a two-tailed test, even if you
+think the correlation would be positive.
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+
+---
+
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.

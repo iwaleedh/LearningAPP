@@ -1,0 +1,117 @@
+Edexcel A Level Maths: Pure Revision Notes
+Laws of Logarithms
+Exam code:9MA0 Download PDF
+Written by:Paul
+Updated on 20 June 2025
+Did this video help you? Yes No
+Laws of logarithms
+What are the laws of logarithms?
+Help me understand
+There are many laws or rules of indices, for example
+am x an = am+n
+(am)n = amn
+There are equivalent laws of logarithms (for a > 0)
+log xy=log x+log y
+a a a
+⎛ ⎜x ⎞ ⎟
+log ⎜ ⎟=log x−log y
+a⎝y ⎠ a a
+log
+a
+xk=klog
+a
+x
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+There are also some particular results these lead to
+log a=1
+a
+log ax=x
+a
+log x
+a a =x
+log 1=0
+a
+⎛ ⎜1⎞
+⎟
+log ⎜ ⎟=−log x
+a⎝x ⎠ a
+Two of these were seen in the notes Logarithmic
+Functions
+Beware …
+… log (x + y) ≠ log x + log y
+Results apply to ln too
+lnx ≡log x
+e
+In particular elnx=x and ln(ex)=x
+How do I use the laws of
+logarithms?
+Laws of logarithms can be used to …
+… simplify expressions
+… solve logarithmic equations
+… solve exponential equations
+Examiner Tips and Tricks
+Remember to check whether your solutions are valid
+log (x+k) is only defined if x > -k
+You will lose marks if you forget to reject invalid
+solutions
+Worked Example
+Did this video help you? Yes No
+"ln"
+What is ln x?
+ln is a function that stands for natural logarithm
+It is a logarithm where the base is the constant "e"
+lnx≡log x
+e
+It is important to remember that ln is a function and
+not a number
+What are properties of ln x?
+Using the definition of a logarithm you can see
+ln1=0
+lne=1
+lnex=x
+lnx is only defined for positive x
+As ln is a logarithm you can use the laws of logarithms
+lna+lnb=ln(ab)
+⎛ ⎜a⎞
+⎟
+lna−lnb=ln⎜ ⎟
+⎝b ⎠
+nlna=ln(an)
+How are e and ln x inverses of each
+x
+other?
+The functions ex and lnx are inverses of each other
+If ef(x)=g(x) then f(x)=lng(x)
+If lnf(x)=g(x) then f(x)=eg(x)
+If your equation involves "e" then try to get all the "e" terms
+on one side
+If "e" terms are multiplied, you can add the powers
+ex×ey=ex+y
+You can then apply ln to both sides of the
+equation
+If "e" terms are added, try transforming the equation
+with a substitution
+For example: If y=ex then e4x=y4
+You can then solve the resulting equation (usually
+a quadratic)
+Once you solve for y then solve for x using the
+substitution formula
+If your equation involves "ln", try to combine all "ln" terms
+together
+Use the laws of logarithms to combine terms into a
+single term
+If you have lnf(x)=lng(x) then solve f(x)=g(x)
+If you have lnf(x)=k then solve f(x)=ek
+Worked Example
+Examiner Tips and Tricks
+Always simplify your answer if you can
+1
+for example, ln25= ln 25=ln5
+2
+you wouldn't leave your final answer as 25 so don't
+1
+leave your final answer as ln25
+2

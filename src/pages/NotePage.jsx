@@ -269,7 +269,7 @@ export default function NotePage() {
     const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);
     const activeId = useActiveHeading(scrollRef, toc);
 
-    const pdfUrl = `/notes/${context.subject}/${context.unitCode?.toLowerCase()}-1.pdf`;
+    const pdfUrl = seedNote?.pdfPath || `/notes/${context.subject}/${context.unitCode?.toLowerCase()}-1.pdf`;
 
     const scrollToBlock = useCallback((blockId) => {
         const el = scrollRef.current;

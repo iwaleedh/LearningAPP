@@ -1,0 +1,37 @@
+Edexcel A Level Maths: Pure Revision Notes
+Product Rule
+Exam code:9MA0 Download PDF
+Written by:Roger B
+Updated on 16 February 2026
+03:17
+Did this video help you? Yes No
+Product rule
+What is the product rule?
+The product rule is a formula that allows you to
+differentiate a product of two functions
+If y=u×vwhere u and vare functions ofx then the
+Help me understand
+product rule is:
+dy dv du
+=u +v
+dx dx dx
+In function notation, if f(x)=g(x)×h(x) then the
+product rule can be written as:
+f'(x)=g(x)h'(x)+h(x)g'(x)
+The easiest way to remember the product rule is, for
+y=u×vwhere u and vare functions ofx:
+y' = uv' + vu'
+Stuck on something?
+Ask questions and get help with
+exactly what you're revising.
+Got it
+Examiner Tips and Tricks
+The product rule formulae are NOT in the formulae
+booklet – you need to know them.
+Don't confuse the product of two functions with a
+compositefunction:
+The product of two functions is two functions
+multiplied together
+A composite function is a function of a function
+To differentiate composite functions you need to use the
+chain rule

@@ -1,0 +1,96 @@
+Edexcel A Level Maths: Mechanics Revision Notes
+Coefficient of Friction & F = ma
+Exam code:9MA0 Download PDF
+Written by:Amber
+Updated on 25 November 2025
+Did this video help you? Yes No
+Coefficient of friction & F =
+ma
+How do I use F = ma in problems Help me understand
+involving friction?
+The coefficient of friction combined with F = ma allows
+you to determine an object's motion where friction is
+involved in a problem
+For problems where the surface is horizontal:
+Step 1. If necessary, resolve any angled forces into vertical
+and horizontal components
+Step 2. Calculate the normal reaction force
+Be careful – if there are vertical forces other than
+gravity these will affect the value of R
+with a horizontal surface R will always be directed
+vertically upwards
+the magnitude of R will be such as to make the total
+vertical force on the object zero
+Step 3. Calculate F = μRand find the resultant(total Stuck on something?
+MAX
+force) of all the horizontal forces on the object
+Ask questions and get help with
+Remember – if the resultant of the other horizontal
+exactly what you're revising.
+forces is less than or equal to F then friction will
+MAX
+exactly balance those forces out and the object will
+Got it
+remain stationary
+Step 4. Use F = ma to determine the acceleration of the
+object
+
+---
+
+For non-horizontal surfaces see the notes on inclined
+planes
+Worked Example
+A wooden block of mass 2 kg is at rest on a rough horizontal
+floor, where the coefficient of friction between the block and
+the floor is 0.6. A constant force of 15 N is applied to the block
+at an angle of 30o to the horizontal, as shown in the diagram
+below.
+Find the acceleration of the block.
+Answer:
+Examiner Tips and Tricks
+Always draw a force diagram and label it clearly.Look out
+for the words smooth and rough in mechanics problems
+involving an object moving (or potentially moving) along a
+surface:
+If the surface is described as smooth then you can
+ignore friction in the problem (ie μ= 0)
+If the surface is described as rough than you need to
+include the force of friction in solving the problem
+Be aware of whether the question is on a horizontal
+surface or an inclined plane.
+
+---
+
+Teacher only
+New! Exclusive Teacher-
+Only Questions
+Fresh, expert-written questions
+Students can’t access them
+Fair accurate tests - built fast
+Explore in Test Builder
+Test yourself
+Was this revision note helpful? Yes No
+Previous Next
+Course Study tools All topics
+Resources Dashboard
+Learning Hub Overview
+Scholarship Brand ambassador
+Join Profile
+Past Papers Subscription
+Solution Banks Settings
+Sitemap Log out
+Company Subjects
+About us Biology
+Exam Specificity Chemistry
+Content Quality Physics
+Promotions Maths
+Jobs Geography
+Terms English Literature
+
+---
+
+Privacy Psychology
+Cookie Policy All Subjects
+Help and Support
+© Copyright 2015−2026 Save My Exams Ltd. All Rights Reserved.
+Neither IBO nor College Board were involved in the production of, and do not endorse, the resources created by Save My Exams.
