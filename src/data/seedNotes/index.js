@@ -1273,6 +1273,115 @@ import { note_cpe_4_10_1 } from './cpe/note_cpe_4_10_1.js';
 import { note_cpe_4_10_2 } from './cpe/note_cpe_4_10_2.js';
 import { note_cpe_4_10_3 } from './cpe/note_cpe_4_10_3.js';
 
+// --- O-Level Chemistry imports ---
+import { note_olevel_chemistry_1_1_0 } from './olevel_chemistry/note_olevel_chemistry_1_1_0.js';
+import { note_olevel_chemistry_1_1_1 } from './olevel_chemistry/note_olevel_chemistry_1_1_1.js';
+import { note_olevel_chemistry_1_1_2 } from './olevel_chemistry/note_olevel_chemistry_1_1_2.js';
+import { note_olevel_chemistry_1_1_3 } from './olevel_chemistry/note_olevel_chemistry_1_1_3.js';
+import { note_olevel_chemistry_2_2_0 } from './olevel_chemistry/note_olevel_chemistry_2_2_0.js';
+import { note_olevel_chemistry_2_2_1 } from './olevel_chemistry/note_olevel_chemistry_2_2_1.js';
+import { note_olevel_chemistry_2_2_2 } from './olevel_chemistry/note_olevel_chemistry_2_2_2.js';
+import { note_olevel_chemistry_2_2_3 } from './olevel_chemistry/note_olevel_chemistry_2_2_3.js';
+import { note_olevel_chemistry_2_2_4 } from './olevel_chemistry/note_olevel_chemistry_2_2_4.js';
+import { note_olevel_chemistry_2_2_5 } from './olevel_chemistry/note_olevel_chemistry_2_2_5.js';
+import { note_olevel_chemistry_2_2_6 } from './olevel_chemistry/note_olevel_chemistry_2_2_6.js';
+import { note_olevel_chemistry_2_2_7 } from './olevel_chemistry/note_olevel_chemistry_2_2_7.js';
+import { note_olevel_chemistry_2_2_8 } from './olevel_chemistry/note_olevel_chemistry_2_2_8.js';
+import { note_olevel_chemistry_2_2_9 } from './olevel_chemistry/note_olevel_chemistry_2_2_9.js';
+import { note_olevel_chemistry_2_2_10 } from './olevel_chemistry/note_olevel_chemistry_2_2_10.js';
+import { note_olevel_chemistry_2_2_11 } from './olevel_chemistry/note_olevel_chemistry_2_2_11.js';
+import { note_olevel_chemistry_2_2_12 } from './olevel_chemistry/note_olevel_chemistry_2_2_12.js';
+import { note_olevel_chemistry_3_3_0 } from './olevel_chemistry/note_olevel_chemistry_3_3_0.js';
+import { note_olevel_chemistry_3_3_1 } from './olevel_chemistry/note_olevel_chemistry_3_3_1.js';
+import { note_olevel_chemistry_3_3_2 } from './olevel_chemistry/note_olevel_chemistry_3_3_2.js';
+import { note_olevel_chemistry_3_3_3 } from './olevel_chemistry/note_olevel_chemistry_3_3_3.js';
+import { note_olevel_chemistry_3_3_4 } from './olevel_chemistry/note_olevel_chemistry_3_3_4.js';
+import { note_olevel_chemistry_3_3_5 } from './olevel_chemistry/note_olevel_chemistry_3_3_5.js';
+import { note_olevel_chemistry_3_3_6 } from './olevel_chemistry/note_olevel_chemistry_3_3_6.js';
+import { note_olevel_chemistry_3_3_7 } from './olevel_chemistry/note_olevel_chemistry_3_3_7.js';
+import { note_olevel_chemistry_3_3_8 } from './olevel_chemistry/note_olevel_chemistry_3_3_8.js';
+import { note_olevel_chemistry_3_3_9 } from './olevel_chemistry/note_olevel_chemistry_3_3_9.js';
+import { note_olevel_chemistry_3_3_10 } from './olevel_chemistry/note_olevel_chemistry_3_3_10.js';
+import { note_olevel_chemistry_4_4_0 } from './olevel_chemistry/note_olevel_chemistry_4_4_0.js';
+import { note_olevel_chemistry_4_4_1 } from './olevel_chemistry/note_olevel_chemistry_4_4_1.js';
+import { note_olevel_chemistry_4_4_2 } from './olevel_chemistry/note_olevel_chemistry_4_4_2.js';
+import { note_olevel_chemistry_4_4_3 } from './olevel_chemistry/note_olevel_chemistry_4_4_3.js';
+import { note_olevel_chemistry_4_4_4 } from './olevel_chemistry/note_olevel_chemistry_4_4_4.js';
+import { note_olevel_chemistry_4_4_5 } from './olevel_chemistry/note_olevel_chemistry_4_4_5.js';
+import { note_olevel_chemistry_4_4_6 } from './olevel_chemistry/note_olevel_chemistry_4_4_6.js';
+import { note_olevel_chemistry_5_5_0 } from './olevel_chemistry/note_olevel_chemistry_5_5_0.js';
+import { note_olevel_chemistry_5_5_1 } from './olevel_chemistry/note_olevel_chemistry_5_5_1.js';
+import { note_olevel_chemistry_5_5_2 } from './olevel_chemistry/note_olevel_chemistry_5_5_2.js';
+import { note_olevel_chemistry_6_6_0 } from './olevel_chemistry/note_olevel_chemistry_6_6_0.js';
+import { note_olevel_chemistry_6_6_1 } from './olevel_chemistry/note_olevel_chemistry_6_6_1.js';
+import { note_olevel_chemistry_6_6_2 } from './olevel_chemistry/note_olevel_chemistry_6_6_2.js';
+import { note_olevel_chemistry_6_6_3 } from './olevel_chemistry/note_olevel_chemistry_6_6_3.js';
+import { note_olevel_chemistry_6_6_4 } from './olevel_chemistry/note_olevel_chemistry_6_6_4.js';
+import { note_olevel_chemistry_6_6_5 } from './olevel_chemistry/note_olevel_chemistry_6_6_5.js';
+import { note_olevel_chemistry_6_6_6 } from './olevel_chemistry/note_olevel_chemistry_6_6_6.js';
+import { note_olevel_chemistry_6_6_7 } from './olevel_chemistry/note_olevel_chemistry_6_6_7.js';
+import { note_olevel_chemistry_6_6_8 } from './olevel_chemistry/note_olevel_chemistry_6_6_8.js';
+import { note_olevel_chemistry_6_6_9 } from './olevel_chemistry/note_olevel_chemistry_6_6_9.js';
+import { note_olevel_chemistry_6_6_10 } from './olevel_chemistry/note_olevel_chemistry_6_6_10.js';
+import { note_olevel_chemistry_6_6_11 } from './olevel_chemistry/note_olevel_chemistry_6_6_11.js';
+import { note_olevel_chemistry_7_7_0 } from './olevel_chemistry/note_olevel_chemistry_7_7_0.js';
+import { note_olevel_chemistry_7_7_1 } from './olevel_chemistry/note_olevel_chemistry_7_7_1.js';
+import { note_olevel_chemistry_7_7_2 } from './olevel_chemistry/note_olevel_chemistry_7_7_2.js';
+import { note_olevel_chemistry_7_7_3 } from './olevel_chemistry/note_olevel_chemistry_7_7_3.js';
+import { note_olevel_chemistry_7_7_4 } from './olevel_chemistry/note_olevel_chemistry_7_7_4.js';
+import { note_olevel_chemistry_7_7_5 } from './olevel_chemistry/note_olevel_chemistry_7_7_5.js';
+import { note_olevel_chemistry_7_7_6 } from './olevel_chemistry/note_olevel_chemistry_7_7_6.js';
+import { note_olevel_chemistry_7_7_7 } from './olevel_chemistry/note_olevel_chemistry_7_7_7.js';
+import { note_olevel_chemistry_8_8_0 } from './olevel_chemistry/note_olevel_chemistry_8_8_0.js';
+import { note_olevel_chemistry_8_8_1 } from './olevel_chemistry/note_olevel_chemistry_8_8_1.js';
+import { note_olevel_chemistry_8_8_2 } from './olevel_chemistry/note_olevel_chemistry_8_8_2.js';
+import { note_olevel_chemistry_8_8_3 } from './olevel_chemistry/note_olevel_chemistry_8_8_3.js';
+import { note_olevel_chemistry_8_8_4 } from './olevel_chemistry/note_olevel_chemistry_8_8_4.js';
+import { note_olevel_chemistry_8_8_5 } from './olevel_chemistry/note_olevel_chemistry_8_8_5.js';
+import { note_olevel_chemistry_8_8_6 } from './olevel_chemistry/note_olevel_chemistry_8_8_6.js';
+import { note_olevel_chemistry_9_9_0 } from './olevel_chemistry/note_olevel_chemistry_9_9_0.js';
+import { note_olevel_chemistry_9_9_1 } from './olevel_chemistry/note_olevel_chemistry_9_9_1.js';
+import { note_olevel_chemistry_9_9_2 } from './olevel_chemistry/note_olevel_chemistry_9_9_2.js';
+import { note_olevel_chemistry_9_9_3 } from './olevel_chemistry/note_olevel_chemistry_9_9_3.js';
+import { note_olevel_chemistry_9_9_4 } from './olevel_chemistry/note_olevel_chemistry_9_9_4.js';
+import { note_olevel_chemistry_9_9_5 } from './olevel_chemistry/note_olevel_chemistry_9_9_5.js';
+import { note_olevel_chemistry_9_9_6 } from './olevel_chemistry/note_olevel_chemistry_9_9_6.js';
+import { note_olevel_chemistry_9_9_7 } from './olevel_chemistry/note_olevel_chemistry_9_9_7.js';
+import { note_olevel_chemistry_9_9_8 } from './olevel_chemistry/note_olevel_chemistry_9_9_8.js';
+import { note_olevel_chemistry_9_9_9 } from './olevel_chemistry/note_olevel_chemistry_9_9_9.js';
+import { note_olevel_chemistry_10_10_0 } from './olevel_chemistry/note_olevel_chemistry_10_10_0.js';
+import { note_olevel_chemistry_10_10_1 } from './olevel_chemistry/note_olevel_chemistry_10_10_1.js';
+import { note_olevel_chemistry_10_10_2 } from './olevel_chemistry/note_olevel_chemistry_10_10_2.js';
+import { note_olevel_chemistry_10_10_3 } from './olevel_chemistry/note_olevel_chemistry_10_10_3.js';
+import { note_olevel_chemistry_10_10_4 } from './olevel_chemistry/note_olevel_chemistry_10_10_4.js';
+import { note_olevel_chemistry_10_10_5 } from './olevel_chemistry/note_olevel_chemistry_10_10_5.js';
+import { note_olevel_chemistry_10_10_6 } from './olevel_chemistry/note_olevel_chemistry_10_10_6.js';
+import { note_olevel_chemistry_10_10_7 } from './olevel_chemistry/note_olevel_chemistry_10_10_7.js';
+import { note_olevel_chemistry_11_11_0 } from './olevel_chemistry/note_olevel_chemistry_11_11_0.js';
+import { note_olevel_chemistry_11_11_1 } from './olevel_chemistry/note_olevel_chemistry_11_11_1.js';
+import { note_olevel_chemistry_11_11_2 } from './olevel_chemistry/note_olevel_chemistry_11_11_2.js';
+import { note_olevel_chemistry_11_11_3 } from './olevel_chemistry/note_olevel_chemistry_11_11_3.js';
+import { note_olevel_chemistry_11_11_4 } from './olevel_chemistry/note_olevel_chemistry_11_11_4.js';
+import { note_olevel_chemistry_11_11_5 } from './olevel_chemistry/note_olevel_chemistry_11_11_5.js';
+import { note_olevel_chemistry_11_11_6 } from './olevel_chemistry/note_olevel_chemistry_11_11_6.js';
+import { note_olevel_chemistry_11_11_7 } from './olevel_chemistry/note_olevel_chemistry_11_11_7.js';
+import { note_olevel_chemistry_11_11_8 } from './olevel_chemistry/note_olevel_chemistry_11_11_8.js';
+import { note_olevel_chemistry_11_11_9 } from './olevel_chemistry/note_olevel_chemistry_11_11_9.js';
+import { note_olevel_chemistry_11_11_10 } from './olevel_chemistry/note_olevel_chemistry_11_11_10.js';
+import { note_olevel_chemistry_11_11_11 } from './olevel_chemistry/note_olevel_chemistry_11_11_11.js';
+import { note_olevel_chemistry_11_11_12 } from './olevel_chemistry/note_olevel_chemistry_11_11_12.js';
+import { note_olevel_chemistry_11_11_13 } from './olevel_chemistry/note_olevel_chemistry_11_11_13.js';
+import { note_olevel_chemistry_11_11_14 } from './olevel_chemistry/note_olevel_chemistry_11_11_14.js';
+import { note_olevel_chemistry_12_12_0 } from './olevel_chemistry/note_olevel_chemistry_12_12_0.js';
+import { note_olevel_chemistry_12_12_1 } from './olevel_chemistry/note_olevel_chemistry_12_12_1.js';
+import { note_olevel_chemistry_12_12_2 } from './olevel_chemistry/note_olevel_chemistry_12_12_2.js';
+import { note_olevel_chemistry_12_12_3 } from './olevel_chemistry/note_olevel_chemistry_12_12_3.js';
+import { note_olevel_chemistry_12_12_4 } from './olevel_chemistry/note_olevel_chemistry_12_12_4.js';
+import { note_olevel_chemistry_12_12_5 } from './olevel_chemistry/note_olevel_chemistry_12_12_5.js';
+import { note_olevel_chemistry_12_12_6 } from './olevel_chemistry/note_olevel_chemistry_12_12_6.js';
+import { note_olevel_chemistry_12_12_7 } from './olevel_chemistry/note_olevel_chemistry_12_12_7.js';
+import { note_olevel_chemistry_12_12_8 } from './olevel_chemistry/note_olevel_chemistry_12_12_8.js';
+
 export const seedNotes = {
   // --- Business Map ---
   'business:1:1:0': note_business_1_1_0,
@@ -2597,6 +2706,114 @@ export const seedNotes = {
     'cpe:4:10:1': note_cpe_4_10_1,
     'cpe:4:10:2': note_cpe_4_10_2,
     'cpe:4:10:3': note_cpe_4_10_3,
+  // --- O-Level Chemistry Map ---
+  'olevel_chemistry:1:1:0': note_olevel_chemistry_1_1_0,
+  'olevel_chemistry:1:1:1': note_olevel_chemistry_1_1_1,
+  'olevel_chemistry:1:1:2': note_olevel_chemistry_1_1_2,
+  'olevel_chemistry:1:1:3': note_olevel_chemistry_1_1_3,
+  'olevel_chemistry:2:2:0': note_olevel_chemistry_2_2_0,
+  'olevel_chemistry:2:2:1': note_olevel_chemistry_2_2_1,
+  'olevel_chemistry:2:2:2': note_olevel_chemistry_2_2_2,
+  'olevel_chemistry:2:2:3': note_olevel_chemistry_2_2_3,
+  'olevel_chemistry:2:2:4': note_olevel_chemistry_2_2_4,
+  'olevel_chemistry:2:2:5': note_olevel_chemistry_2_2_5,
+  'olevel_chemistry:2:2:6': note_olevel_chemistry_2_2_6,
+  'olevel_chemistry:2:2:7': note_olevel_chemistry_2_2_7,
+  'olevel_chemistry:2:2:8': note_olevel_chemistry_2_2_8,
+  'olevel_chemistry:2:2:9': note_olevel_chemistry_2_2_9,
+  'olevel_chemistry:2:2:10': note_olevel_chemistry_2_2_10,
+  'olevel_chemistry:2:2:11': note_olevel_chemistry_2_2_11,
+  'olevel_chemistry:2:2:12': note_olevel_chemistry_2_2_12,
+  'olevel_chemistry:3:3:0': note_olevel_chemistry_3_3_0,
+  'olevel_chemistry:3:3:1': note_olevel_chemistry_3_3_1,
+  'olevel_chemistry:3:3:2': note_olevel_chemistry_3_3_2,
+  'olevel_chemistry:3:3:3': note_olevel_chemistry_3_3_3,
+  'olevel_chemistry:3:3:4': note_olevel_chemistry_3_3_4,
+  'olevel_chemistry:3:3:5': note_olevel_chemistry_3_3_5,
+  'olevel_chemistry:3:3:6': note_olevel_chemistry_3_3_6,
+  'olevel_chemistry:3:3:7': note_olevel_chemistry_3_3_7,
+  'olevel_chemistry:3:3:8': note_olevel_chemistry_3_3_8,
+  'olevel_chemistry:3:3:9': note_olevel_chemistry_3_3_9,
+  'olevel_chemistry:3:3:10': note_olevel_chemistry_3_3_10,
+  'olevel_chemistry:4:4:0': note_olevel_chemistry_4_4_0,
+  'olevel_chemistry:4:4:1': note_olevel_chemistry_4_4_1,
+  'olevel_chemistry:4:4:2': note_olevel_chemistry_4_4_2,
+  'olevel_chemistry:4:4:3': note_olevel_chemistry_4_4_3,
+  'olevel_chemistry:4:4:4': note_olevel_chemistry_4_4_4,
+  'olevel_chemistry:4:4:5': note_olevel_chemistry_4_4_5,
+  'olevel_chemistry:4:4:6': note_olevel_chemistry_4_4_6,
+  'olevel_chemistry:5:5:0': note_olevel_chemistry_5_5_0,
+  'olevel_chemistry:5:5:1': note_olevel_chemistry_5_5_1,
+  'olevel_chemistry:5:5:2': note_olevel_chemistry_5_5_2,
+  'olevel_chemistry:6:6:0': note_olevel_chemistry_6_6_0,
+  'olevel_chemistry:6:6:1': note_olevel_chemistry_6_6_1,
+  'olevel_chemistry:6:6:2': note_olevel_chemistry_6_6_2,
+  'olevel_chemistry:6:6:3': note_olevel_chemistry_6_6_3,
+  'olevel_chemistry:6:6:4': note_olevel_chemistry_6_6_4,
+  'olevel_chemistry:6:6:5': note_olevel_chemistry_6_6_5,
+  'olevel_chemistry:6:6:6': note_olevel_chemistry_6_6_6,
+  'olevel_chemistry:6:6:7': note_olevel_chemistry_6_6_7,
+  'olevel_chemistry:6:6:8': note_olevel_chemistry_6_6_8,
+  'olevel_chemistry:6:6:9': note_olevel_chemistry_6_6_9,
+  'olevel_chemistry:6:6:10': note_olevel_chemistry_6_6_10,
+  'olevel_chemistry:6:6:11': note_olevel_chemistry_6_6_11,
+  'olevel_chemistry:7:7:0': note_olevel_chemistry_7_7_0,
+  'olevel_chemistry:7:7:1': note_olevel_chemistry_7_7_1,
+  'olevel_chemistry:7:7:2': note_olevel_chemistry_7_7_2,
+  'olevel_chemistry:7:7:3': note_olevel_chemistry_7_7_3,
+  'olevel_chemistry:7:7:4': note_olevel_chemistry_7_7_4,
+  'olevel_chemistry:7:7:5': note_olevel_chemistry_7_7_5,
+  'olevel_chemistry:7:7:6': note_olevel_chemistry_7_7_6,
+  'olevel_chemistry:7:7:7': note_olevel_chemistry_7_7_7,
+  'olevel_chemistry:8:8:0': note_olevel_chemistry_8_8_0,
+  'olevel_chemistry:8:8:1': note_olevel_chemistry_8_8_1,
+  'olevel_chemistry:8:8:2': note_olevel_chemistry_8_8_2,
+  'olevel_chemistry:8:8:3': note_olevel_chemistry_8_8_3,
+  'olevel_chemistry:8:8:4': note_olevel_chemistry_8_8_4,
+  'olevel_chemistry:8:8:5': note_olevel_chemistry_8_8_5,
+  'olevel_chemistry:8:8:6': note_olevel_chemistry_8_8_6,
+  'olevel_chemistry:9:9:0': note_olevel_chemistry_9_9_0,
+  'olevel_chemistry:9:9:1': note_olevel_chemistry_9_9_1,
+  'olevel_chemistry:9:9:2': note_olevel_chemistry_9_9_2,
+  'olevel_chemistry:9:9:3': note_olevel_chemistry_9_9_3,
+  'olevel_chemistry:9:9:4': note_olevel_chemistry_9_9_4,
+  'olevel_chemistry:9:9:5': note_olevel_chemistry_9_9_5,
+  'olevel_chemistry:9:9:6': note_olevel_chemistry_9_9_6,
+  'olevel_chemistry:9:9:7': note_olevel_chemistry_9_9_7,
+  'olevel_chemistry:9:9:8': note_olevel_chemistry_9_9_8,
+  'olevel_chemistry:9:9:9': note_olevel_chemistry_9_9_9,
+  'olevel_chemistry:10:10:0': note_olevel_chemistry_10_10_0,
+  'olevel_chemistry:10:10:1': note_olevel_chemistry_10_10_1,
+  'olevel_chemistry:10:10:2': note_olevel_chemistry_10_10_2,
+  'olevel_chemistry:10:10:3': note_olevel_chemistry_10_10_3,
+  'olevel_chemistry:10:10:4': note_olevel_chemistry_10_10_4,
+  'olevel_chemistry:10:10:5': note_olevel_chemistry_10_10_5,
+  'olevel_chemistry:10:10:6': note_olevel_chemistry_10_10_6,
+  'olevel_chemistry:10:10:7': note_olevel_chemistry_10_10_7,
+  'olevel_chemistry:11:11:0': note_olevel_chemistry_11_11_0,
+  'olevel_chemistry:11:11:1': note_olevel_chemistry_11_11_1,
+  'olevel_chemistry:11:11:2': note_olevel_chemistry_11_11_2,
+  'olevel_chemistry:11:11:3': note_olevel_chemistry_11_11_3,
+  'olevel_chemistry:11:11:4': note_olevel_chemistry_11_11_4,
+  'olevel_chemistry:11:11:5': note_olevel_chemistry_11_11_5,
+  'olevel_chemistry:11:11:6': note_olevel_chemistry_11_11_6,
+  'olevel_chemistry:11:11:7': note_olevel_chemistry_11_11_7,
+  'olevel_chemistry:11:11:8': note_olevel_chemistry_11_11_8,
+  'olevel_chemistry:11:11:9': note_olevel_chemistry_11_11_9,
+  'olevel_chemistry:11:11:10': note_olevel_chemistry_11_11_10,
+  'olevel_chemistry:11:11:11': note_olevel_chemistry_11_11_11,
+  'olevel_chemistry:11:11:12': note_olevel_chemistry_11_11_12,
+  'olevel_chemistry:11:11:13': note_olevel_chemistry_11_11_13,
+  'olevel_chemistry:11:11:14': note_olevel_chemistry_11_11_14,
+  'olevel_chemistry:12:12:0': note_olevel_chemistry_12_12_0,
+  'olevel_chemistry:12:12:1': note_olevel_chemistry_12_12_1,
+  'olevel_chemistry:12:12:2': note_olevel_chemistry_12_12_2,
+  'olevel_chemistry:12:12:3': note_olevel_chemistry_12_12_3,
+  'olevel_chemistry:12:12:4': note_olevel_chemistry_12_12_4,
+  'olevel_chemistry:12:12:5': note_olevel_chemistry_12_12_5,
+  'olevel_chemistry:12:12:6': note_olevel_chemistry_12_12_6,
+  'olevel_chemistry:12:12:7': note_olevel_chemistry_12_12_7,
+  'olevel_chemistry:12:12:8': note_olevel_chemistry_12_12_8,
 };
 
 export function getSeedNote(noteId) {
