@@ -21,6 +21,106 @@ export const note_olevel_chemistry_6_6_2 = {
       }
     },
     {
+      id: 'svg-collisions',
+      type: 'svg',
+      data: {
+        caption: 'Collision theory: Unsuccessful vs. Successful collisions.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+  
+  <line x1="300" y1="20" x2="300" y2="220" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="8,8" />
+
+  <!-- Defs -->
+  <defs>
+    <radialGradient id="grad-blue" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </radialGradient>
+    <radialGradient id="grad-red" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fca5a5" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </radialGradient>
+    <marker id="arrow" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-bounce" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <!-- LEFT: Unsuccessful Collision -->
+  <text x="150" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Unsuccessful Collision</text>
+  <text x="150" y="50" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="middle">E &lt; Eₐ (Not enough energy)</text>
+  
+  <!-- Particles approaching slowly -->
+  <circle cx="80" cy="110" r="14" fill="url(#grad-blue)" />
+  <circle cx="106" cy="110" r="14" fill="url(#grad-blue)" />
+  <line x1="80" y1="110" x2="106" y2="110" stroke="#000" stroke-width="2"/>
+  <path d="M 60 110 L 40 110" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <circle cx="220" cy="110" r="14" fill="url(#grad-red)" />
+  <circle cx="246" cy="110" r="14" fill="url(#grad-red)" />
+  <line x1="220" y1="110" x2="246" y2="110" stroke="#000" stroke-width="2"/>
+  <path d="M 266 110 L 286 110" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Boom/Impact lines -->
+  <path d="M 140 90 L 145 100 M 150 80 L 155 95 M 165 95 L 175 80 M 175 100 L 185 90 M 140 120 L 150 115" stroke="#ef4444" stroke-width="1.5" />
+  
+  <!-- Bouncing away -->
+  <g transform="translate(0, 40)">
+    <!-- Intact Blue -->
+    <circle cx="90" cy="140" r="14" fill="url(#grad-blue)" />
+    <circle cx="116" cy="140" r="14" fill="url(#grad-blue)" />
+    <line x1="90" y1="140" x2="116" y2="140" stroke="#000" stroke-width="2"/>
+    <path d="M 130 140 Q 150 145 140 160" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrow-bounce)"/>
+    
+    <!-- Intact Red -->
+    <circle cx="200" cy="140" r="14" fill="url(#grad-red)" />
+    <circle cx="226" cy="140" r="14" fill="url(#grad-red)" />
+    <line x1="200" y1="140" x2="226" y2="140" stroke="#000" stroke-width="2"/>
+    <path d="M 186 140 Q 166 145 176 160" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrow-bounce)"/>
+  </g>
+  <text x="150" y="215" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Particles bounce off intact.</text>
+
+
+  <!-- RIGHT: Successful Collision -->
+  <text x="450" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Successful Collision</text>
+  <text x="450" y="50" font-family="var(--font-sans)" font-size="12" fill="var(--color-success)" text-anchor="middle">E ≥ Eₐ (Sufficient energy)</text>
+  
+  <!-- Particles approaching FAST -->
+  <circle cx="360" cy="110" r="14" fill="url(#grad-blue)" />
+  <circle cx="386" cy="110" r="14" fill="url(#grad-blue)" />
+  <line x1="360" y1="110" x2="386" y2="110" stroke="#000" stroke-width="2"/>
+  <path d="M 330 110 L 310 110 M 340 100 L 320 100 M 340 120 L 320 120" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <circle cx="514" cy="110" r="14" fill="url(#grad-red)" />
+  <circle cx="540" cy="110" r="14" fill="url(#grad-red)" />
+  <line x1="514" y1="110" x2="540" y2="110" stroke="#000" stroke-width="2"/>
+  <path d="M 570 110 L 590 110 M 560 100 L 580 100 M 560 120 L 580 120" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Heavy Boom lines -->
+  <path d="M 430 80 L 440 100 M 450 70 L 450 90 M 470 80 L 460 100 M 420 110 L 440 110 M 480 110 L 460 110 M 430 140 L 440 120 M 470 140 L 460 120" stroke="#f59e0b" stroke-width="3" />
+  
+  <!-- Products formed -->
+  <g transform="translate(0, 40)">
+    <!-- Mixed Molecule 1 -->
+    <circle cx="390" cy="140" r="14" fill="url(#grad-blue)" />
+    <circle cx="416" cy="140" r="14" fill="url(#grad-red)" />
+    <line x1="390" y1="140" x2="416" y2="140" stroke="#000" stroke-width="2"/>
+    <path d="M 380 140 L 360 150" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- Mixed Molecule 2 -->
+    <circle cx="484" cy="140" r="14" fill="url(#grad-blue)" />
+    <circle cx="510" cy="140" r="14" fill="url(#grad-red)" />
+    <line x1="484" y1="140" x2="510" y2="140" stroke="#000" stroke-width="2"/>
+    <path d="M 520 140 L 540 150" stroke="#10b981" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  <text x="450" y="215" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Bonds break and new bonds form.</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Activation Energy', level: 2 }

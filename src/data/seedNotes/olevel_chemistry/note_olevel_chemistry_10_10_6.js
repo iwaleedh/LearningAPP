@@ -12,6 +12,76 @@ export const note_olevel_chemistry_10_10_6 = {
       data: { text: 'Acid Rain', level: 2 }
     },
     {
+      id: 'svg-acid-rain',
+      type: 'svg',
+      data: {
+        caption: 'Formation and effects of acid rain on the environment.',
+        svg: `<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Factories / Cars -->
+  <rect x="50" y="200" width="60" height="40" fill="#94a3b8" />
+  <rect x="70" y="150" width="10" height="50" fill="#64748b" /> <!-- chimney -->
+  <rect x="90" y="160" width="10" height="40" fill="#64748b" /> <!-- chimney -->
+
+  <path d="M 120 220 L 160 220 L 150 200 L 130 200 Z" fill="#ef4444" /> <!-- car -->
+  <circle cx="130" cy="230" r="10" fill="#1e293b" />
+  <circle cx="150" cy="230" r="10" fill="#1e293b" />
+  
+  <text x="100" y="255" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fossil Fuels &</text>
+  <text x="100" y="270" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Vehicle Exhausts</text>
+
+  <!-- Emissions -->
+  <path d="M 75 140 Q 90 90, 150 80" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="4,2" marker-end="url(#arrow-gas)"/>
+  <path d="M 165 215 Q 200 180, 200 120" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="4,2" marker-end="url(#arrow-gas)"/>
+  <text x="160" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#334155">SO₂, NOₓ</text>
+
+  <!-- Cloud -->
+  <path d="M 200 80 Q 220 50, 260 60 Q 300 30, 340 50 Q 380 40, 400 70 Q 430 90, 400 110 Q 370 140, 310 120 Q 240 130, 200 100 Z" fill="#9ca3af" />
+  <text x="300" y="90" font-family="var(--font-sans)" font-size="12" fill="#fff" text-anchor="middle">React with H₂O & O₂</text>
+  <text x="300" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">H₂SO₄ & HNO₃</text>
+
+  <!-- Rain -->
+  <g stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,4">
+    <line x1="240" y1="120" x2="220" y2="160" />
+    <line x1="280" y1="125" x2="260" y2="165" />
+    <line x1="320" y1="120" x2="300" y2="160" />
+    <line x1="360" y1="110" x2="340" y2="150" />
+  </g>
+  <text x="250" y="150" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#2563eb" transform="rotate(-63 250,150)">Acid Rain (pH < 5)</text>
+
+  <!-- Effects: Trees -->
+  <path d="M 240 240 L 250 180 L 260 240 Z" fill="#84cc16" opacity="0.4"/> <!-- dead/dying tree -->
+  <path d="M 230 200 L 250 180 L 270 200" fill="none" stroke="#65a30d" stroke-width="3"/>
+  <text x="250" y="260" font-family="var(--font-sans)" font-size="10" fill="#65a30d" text-anchor="middle">Damages</text>
+  <text x="250" y="272" font-family="var(--font-sans)" font-size="10" fill="#65a30d" text-anchor="middle">trees & soil</text>
+
+  <!-- Effects: Lakes -->
+  <path d="M 300 240 Q 340 250, 380 240 L 380 280 L 300 280 Z" fill="#93c5fd" opacity="0.6"/>
+  <!-- Dead Fish -->
+  <path d="M 330 255 C 340 250, 350 250, 360 255 L 370 250 L 370 260 Z" fill="#9ca3af" transform="scale(1, -1) translate(0, -510)"/>
+  <text x="345" y="255" font-family="var(--font-sans)" font-size="8" font-weight="bold" fill="#111827">XX</text>
+  <text x="340" y="295" font-family="var(--font-sans)" font-size="10" fill="#1d4ed8" text-anchor="middle">Kills aquatic life</text>
+
+  <!-- Effects: Limestone -->
+  <rect x="420" y="160" width="40" height="80" fill="#fde047" stroke="#ca8a04" stroke-width="3" stroke-dasharray="4,2"/>
+  <path d="M 400 160 L 440 120 L 480 160 Z" fill="#fef08a" stroke="#ca8a04" stroke-width="3"/>
+  <text x="440" y="260" font-family="var(--font-sans)" font-size="10" fill="#ca8a04" text-anchor="middle">Corrodes limestone,</text>
+  <text x="440" y="272" font-family="var(--font-sans)" font-size="10" fill="#ca8a04" text-anchor="middle">marble (CaCO₃)</text>
+
+  <!-- Soil line -->
+  <line x1="0" y1="240" x2="600" y2="240" stroke="#65a30d" stroke-width="2" />
+
+  <defs>
+    <marker id="arrow-gas" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-causes',
       type: 'callout',
       data: {

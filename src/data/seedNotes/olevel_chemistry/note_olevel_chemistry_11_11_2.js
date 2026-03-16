@@ -35,6 +35,53 @@ export const note_olevel_chemistry_11_11_2 = {
       }
     },
     {
+      id: 'svg-bromine-test',
+      type: 'svg',
+      data: {
+        caption: 'Bromine Water Test Result',
+        svg: `<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Alkane Test Tube -->
+  <!-- Outline -->
+  <path d="M 120 70 L 120 180 Q 120 200, 140 200 Q 160 200, 160 180 L 160 70" fill="none" stroke="#64748b" stroke-width="3"/>
+  <!-- Liquid Liquid -->
+  <path d="M 122 130 L 158 130 L 158 180 Q 158 198, 140 198 Q 122 198, 122 180 Z" fill="#f97316" opacity="0.8"/>
+  <rect x="122" y="100" width="36" height="30" fill="none"/>
+  
+  <text x="140" y="225" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Alkane</text>
+  <text x="140" y="240" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(Saturated)</text>
+
+  <!-- Alkane Drop -->
+  <path d="M 140 50 Q 135 60, 140 65 Q 145 60, 140 50" fill="#f97316"/>
+  <text x="140" y="40" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#ea580c" text-anchor="middle">Bromine Water</text>
+
+  <!-- Alkane annotation -->
+  <path d="M 170 160 L 220 160" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="230" y="155" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ea580c">Remains Orange</text>
+  <text x="230" y="170" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)">(No reaction)</text>
+
+  <!-- Alkene Test Tube -->
+  <!-- Outline -->
+  <path d="M 340 70 L 340 180 Q 340 200, 360 200 Q 380 200, 380 180 L 380 70" fill="none" stroke="#64748b" stroke-width="3"/>
+  <!-- Liquid Liquid -->
+  <path d="M 342 130 L 378 130 L 378 180 Q 378 198, 360 198 Q 342 198, 342 180 Z" fill="#e2e8f0" opacity="0.6"/>
+  
+  <text x="360" y="225" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Alkene</text>
+  <text x="360" y="240" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(Unsaturated)</text>
+
+  <!-- Alkene Drop -->
+  <path d="M 360 50 Q 355 60, 360 65 Q 365 60, 360 50" fill="#f97316"/>
+  <text x="360" y="40" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#ea580c" text-anchor="middle">Bromine Water</text>
+
+  <!-- Alkene annotation -->
+  <path d="M 390 160 L 440 160" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="450" y="155" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#64748b">Decolourises</text>
+  <text x="450" y="170" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)">(Addition reaction)</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

@@ -42,6 +42,82 @@ export const note_olevel_chemistry_2_2_9 = {
       }
     },
     {
+      id: 'svg-imf',
+      type: 'svg',
+      data: {
+        caption: 'Boiling water breaks weak intermolecular forces, separating H₂O molecules from each other. Strong covalent bonds within the molecules do NOT break.',
+        svg: `<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Liquid state (left) -->
+  <g transform="translate(100, 120)">
+    <text x="0" y="-80" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">Liquid (Close together)</text>
+    
+    <!-- Molecules -->
+    <g id="h2o" transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+    </g>
+    <g transform="translate(-40, 40) rotate(45)">
+      <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+    </g>
+    <g transform="translate(40, -40) rotate(-60)">
+      <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+    </g>
+
+    <!-- Intermolecular Forces -->
+    <path d="M 5 -10 L 25 -30" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+    <path d="M -15 0 L -30 20" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+    
+    <!-- Labels -->
+    <text x="-60" y="-30" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Weak intermolecular</text>
+    <text x="-60" y="-15" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">forces</text>
+    <path d="M -60 -10 L -20 10" stroke="var(--color-text-tertiary)" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Process -->
+  <g transform="translate(300, 120)">
+    <path d="M -30 0 L 30 0 L 20 -10 M 30 0 L 20 10" stroke="var(--color-text-tertiary)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="25" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#ef4444">Heat (Boiling)</text>
+  </g>
+
+  <!-- Gas state (right) -->
+  <g transform="translate(500, 120)">
+    <text x="0" y="-80" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">Gas (Far apart)</text>
+    
+    <!-- Molecules -->
+    <g transform="translate(-40, -40) rotate(15)">
+      <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+    </g>
+    <g transform="translate(40, -10) rotate(-120)">
+      <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+    </g>
+    <g transform="translate(-20, 50) rotate(80)">
+      <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+    </g>
+
+    <!-- Labels -->
+    <text x="50" y="45" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#ef4444">Broken</text>
+    <text x="50" y="60" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">intermolecular</text>
+    <text x="50" y="75" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">forces</text>
+    
+    <!-- Label holding atom -->
+    <path d="M -50 -70 L -40 -50" stroke="var(--color-text-tertiary)" stroke-width="1.5" fill="none"/>
+    <text x="-50" y="-80" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Covalent bonds remain!</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip1',
       type: 'callout',
       data: {

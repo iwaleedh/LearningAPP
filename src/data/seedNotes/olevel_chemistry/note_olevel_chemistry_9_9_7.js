@@ -12,6 +12,77 @@ export const note_olevel_chemistry_9_9_7 = {
       data: { text: 'Extraction of Metals', level: 2 }
     },
     {
+      id: 'svg-extraction-methods',
+      type: 'svg',
+      data: {
+        caption: 'The link between a metal\'s position in the reactivity series and its method of extraction.',
+        svg: `<svg viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Reactivity Arrow Left -->
+  <defs>
+    <linearGradient id="react-grad-extract" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <marker id="arrow-up-react" markerWidth="6" markerHeight="6" refX="3" refY="1" orient="auto">
+      <path d="M 1 5 L 3 1 L 5 5 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="40" width="20" height="260" fill="url(#react-grad-extract)" />
+  <path d="M 50 40 L 50 25" stroke="#ef4444" stroke-width="4" marker-end="url(#arrow-up-react)" />
+  <text x="25" y="170" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" transform="rotate(-90 25,170)" text-anchor="middle">Reactivity</text>
+
+  <!-- Metals Column -->
+  <g font-family="var(--font-sans)" font-size="13" font-weight="bold">
+    <!-- Electrolysis Group -->
+    <text x="80" y="60" fill="#ef4444">Potassium (K)</text>
+    <text x="80" y="80" fill="#ef4444">Sodium (Na)</text>
+    <text x="80" y="100" fill="#ef4444">Calcium (Ca)</text>
+    <text x="80" y="120" fill="#ef4444">Magnesium (Mg)</text>
+    <text x="80" y="140" fill="#ef4444">Aluminium (Al)</text>
+
+    <!-- Carbon line -->
+    <text x="80" y="165" fill="#71717a" font-style="italic">Carbon (C)</text>
+    <line x1="80" y1="170" x2="450" y2="170" stroke="#71717a" stroke-width="2" stroke-dasharray="6,4" />
+
+    <!-- Reduction Group -->
+    <text x="80" y="190" fill="#ca8a04">Zinc (Zn)</text>
+    <text x="80" y="210" fill="#ca8a04">Iron (Fe)</text>
+    <text x="80" y="230" fill="#ca8a04">Lead (Pb)</text>
+    <text x="80" y="250" fill="#ca8a04">Copper (Cu)</text>
+
+    <!-- Native Group -->
+    <text x="80" y="280" fill="#3b82f6">Silver (Ag)</text>
+    <text x="80" y="300" fill="#3b82f6">Gold (Au)</text>
+  </g>
+
+  <!-- Method Brackets and Boxes -->
+  <!-- Electrolysis Box -->
+  <path d="M 200 50 L 220 50 L 220 145 L 200 145" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <rect x="230" y="70" width="230" height="55" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="2" />
+  <text x="345" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">Electrolysis</text>
+  <text x="345" y="110" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="middle">Of molten ore (compounds are</text>
+  <text x="345" y="123" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="middle">too stable for carbon reduction)</text>
+
+  <!-- Carbon Reduction Box -->
+  <path d="M 200 180 L 220 180 L 220 255 L 200 255" fill="none" stroke="#ca8a04" stroke-width="2"/>
+  <rect x="230" y="190" width="230" height="55" rx="6" fill="#fefce8" stroke="#ca8a04" stroke-width="2" />
+  <text x="345" y="210" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">Reduction with Carbon</text>
+  <text x="345" y="230" font-family="var(--font-sans)" font-size="12" fill="#ca8a04" text-anchor="middle">Heated with carbon/coke</text>
+  <text x="345" y="243" font-family="var(--font-sans)" font-size="12" fill="#ca8a04" text-anchor="middle">in a furnace</text>
+
+  <!-- Native Box -->
+  <path d="M 200 270 L 220 270 L 220 305 L 200 305" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="230" y="275" width="230" height="30" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+  <text x="345" y="295" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Found Native (Uncombined)</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-key',
       type: 'callout',
       data: {

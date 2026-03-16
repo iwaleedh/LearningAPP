@@ -30,6 +30,44 @@ export const note_olevel_chemistry_6_6_11 = {
       }
     },
     {
+      id: 'svg-combining',
+      type: 'svg',
+      data: {
+        caption: 'Step-by-step combining of half-equations: balancing the electrons so they cancel out.',
+        svg: `<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <text x="20" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)">Example: Magnesium and Silver ions</text>
+
+  <!-- Step 1 -->
+  <text x="20" y="60" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)">1. Write half equations</text>
+  <text x="40" y="80" font-family="var(--font-mono)" font-size="12" fill="#ef4444">Oxidation: Mg → Mg²⁺ + 2e⁻</text>
+  <text x="40" y="100" font-family="var(--font-mono)" font-size="12" fill="#3b82f6">Reduction: Ag⁺ + e⁻ → Ag</text>
+  
+  <text x="250" y="90" font-family="var(--font-sans)" font-size="10" fill="#64748b">← Produces 2 electrons</text>
+  <text x="250" y="100" font-family="var(--font-sans)" font-size="10" fill="#64748b">← Only needs 1 electron!</text>
+
+  <!-- Step 2 -->
+  <text x="20" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)">2. Multiply to balance electrons</text>
+  <path d="M 35 140 L 35 170" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <text x="40" y="150" font-family="var(--font-mono)" font-size="12" fill="#ef4444">Mg → Mg²⁺ + 2e⁻</text>
+  <text x="230" y="150" font-family="var(--font-sans)" font-size="10" fill="#f59e0b">(× 1)</text>
+
+  <text x="40" y="170" font-family="var(--font-mono)" font-size="12" fill="#3b82f6">2Ag⁺ + 2e⁻ → 2Ag</text>
+  <text x="230" y="170" font-family="var(--font-sans)" font-size="10" fill="#f59e0b" font-weight="bold">(× 2)</text>
+
+  <!-- Step 3 -->
+  <text x="20" y="200" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)">3. Add together (cancel e⁻)</text>
+  <line x1="40" y1="210" x2="280" y2="210" stroke="var(--color-text)" stroke-width="1"/>
+  <text x="40" y="225" font-family="var(--font-mono)" font-size="14" font-weight="bold" fill="#10b981">Mg + 2Ag⁺ → Mg²⁺ + 2Ag</text>
+
+  <path d="M 120 138 L 140 152" fill="none" stroke="#ef4444" stroke-width="1.5" />
+  <path d="M 105 158 L 125 172" fill="none" stroke="#ef4444" stroke-width="1.5" />
+  <text x="300" y="223" font-family="var(--font-sans)" font-size="10" fill="#64748b">Electrons are balanced and removed!</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-test',
       type: 'callout',
       data: {

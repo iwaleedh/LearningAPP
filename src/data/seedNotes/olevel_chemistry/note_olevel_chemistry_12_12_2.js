@@ -21,6 +21,80 @@ export const note_olevel_chemistry_12_12_2 = {
       }
     },
     {
+      id: 'svg-titration-setup',
+      type: 'svg',
+      data: {
+        caption: 'Standard titration setup showing a burette held by a retort stand over a conical flask resting on a white tile.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 400">
+    <defs>
+        <style>
+            .glass { fill: rgba(99, 102, 241, 0.1); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }
+            .liquid-blue { fill: rgba(52, 152, 219, 0.3); }
+            .liquid-pink { fill: rgba(231, 76, 60, 0.3); }
+            .stand { fill: var(--color-text-secondary); stroke: var(--color-text); stroke-width: 1.5; }
+            .tile { fill: var(--color-surface); stroke: var(--color-border); stroke-width: 2; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .line { stroke: var(--color-text); stroke-width: 1; fill: none; }
+        </style>
+    </defs>
+
+    <!-- Retort Stand -->
+    <rect x="50" y="360" width="100" height="10" class="stand"/> <!-- Base -->
+    <rect x="95" y="50" width="8" height="310" class="stand"/> <!-- Rod -->
+    
+    <!-- Clamp -->
+    <rect x="103" y="150" width="30" height="6" class="stand"/>
+    <path d="M 133 145 C 145 145, 145 160, 133 160 Z" class="stand"/> <!-- Grip -->
+    
+    <!-- Burette -->
+    <g transform="translate(150, 60)">
+        <path d="M -8 0 L -8 200 L -2 215 L -2 225 L 2 225 L 2 215 L 8 200 L 8 0 Z" class="glass"/>
+        <path d="M -8 60 L -8 200 L -2 215 L 2 215 L 8 200 L 8 60 Z" class="liquid-blue"/>
+        <!-- Tap -->
+        <rect x="-6" y="218" width="12" height="4" fill="var(--color-text)"/>
+        <rect x="6" y="216" width="10" height="8" rx="2" fill="var(--color-text-secondary)"/>
+        
+        <!-- Markings -->
+        <line x1="-8" y1="20" x2="-2" y2="20" class="line"/>
+        <line x1="-8" y1="40" x2="-2" y2="40" class="line"/>
+        <line x1="-8" y1="60" x2="0" y2="60" class="line"/> <!-- liquid level -->
+        <line x1="-8" y1="80" x2="-2" y2="80" class="line"/>
+        <line x1="-8" y1="100" x2="-2" y2="100" class="line"/>
+    </g>
+
+    <!-- White Tile -->
+    <rect x="110" y="350" width="110" height="8" rx="2" class="tile"/>
+    
+    <!-- Conical Flask -->
+    <g transform="translate(150, 270)">
+        <!-- Inside liquid -->
+        <path d="M -25 78 L 25 78 C 30 78, 35 73, 35 68 L 15 20 L -15 20 L -35 68 C -35 73, -30 78, -25 78 Z" class="liquid-pink"/>
+        <!-- Flask outline -->
+        <path d="M -10 0 L 10 0 L 10 20 L 35 68 C 40 78, 32 80, 25 80 L -25 80 C -32 80, -40 78, -35 68 L -10 20 Z" class="glass"/>
+    </g>
+
+    <!-- Labels with pointer lines -->
+    <!-- Burette -->
+    <text x="210" y="100" class="label">Burette containing</text>
+    <text x="210" y="115" class="label">acid or alkali</text>
+    <line x1="205" y1="105" x2="160" y2="105" class="line" stroke-dasharray="2,2"/>
+    
+    <!-- Tap -->
+    <text x="210" y="280" class="label">Tap</text>
+    <line x1="205" y1="275" x2="175" y2="275" class="line" stroke-dasharray="2,2"/>
+    
+    <!-- Conical Flask -->
+    <text x="210" y="325" class="label">Conical flask with</text>
+    <text x="210" y="340" class="label">sample &amp; indicator</text>
+    <line x1="205" y1="325" x2="190" y2="325" class="line" stroke-dasharray="2,2"/>
+    
+    <!-- White Tile -->
+    <text x="235" y="360" class="label">White tile</text>
+    <line x1="230" y1="355" x2="220" y2="355" class="line" stroke-dasharray="2,2"/>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Indicators', level: 2 }

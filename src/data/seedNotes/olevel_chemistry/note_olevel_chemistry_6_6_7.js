@@ -21,6 +21,60 @@ export const note_olevel_chemistry_6_6_7 = {
       }
     },
     {
+      id: 'svg-equilibrium-graphs',
+      type: 'svg',
+      data: {
+        caption: 'Rates and Concentrations toward Equilibrium over time. The forward rate drops as reactants are used up, and reverse rate increases as products form, until they are equal. Concentrations eventually become constant (level off).',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <line x1="300" y1="20" x2="300" y2="220" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="8,8" />
+
+  <!-- LEFT: Rate vs Time -->
+  <!-- Axes -->
+  <line x1="40" y1="200" x2="280" y2="200" stroke="var(--color-text)" stroke-width="2"/>
+  <line x1="40" y1="200" x2="40" y2="40" stroke="var(--color-text)" stroke-width="2"/>
+  <text x="160" y="230" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Time</text>
+  <text x="20" y="120" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle" transform="rotate(-90 20 120)">Rate</text>
+  <text x="160" y="20" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Rate of Reaction</text>
+
+  <!-- Eq line -->
+  <line x1="180" y1="40" x2="180" y2="200" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="180" y="32" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">Equilibrium reached</text>
+
+  <!-- Forward Rate drops -->
+  <path d="M 40 50 Q 80 120 180 120 L 280 120" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+  <text x="110" y="85" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">Forward Rate</text>
+
+  <!-- Reverse Rate increases -->
+  <path d="M 40 200 Q 100 120 180 120 L 280 120" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="120" y="160" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#3b82f6" text-anchor="middle">Reverse Rate</text>
+
+
+  <!-- RIGHT: Conc vs Time -->
+  <!-- Axes -->
+  <line x1="340" y1="200" x2="580" y2="200" stroke="var(--color-text)" stroke-width="2"/>
+  <line x1="340" y1="200" x2="340" y2="40" stroke="var(--color-text)" stroke-width="2"/>
+  <text x="460" y="230" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Time</text>
+  <text x="320" y="120" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle" transform="rotate(-90 320 120)">Concentration</text>
+  <text x="460" y="20" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Concentration Profiles</text>
+
+  <!-- Eq line -->
+  <line x1="480" y1="40" x2="480" y2="200" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="480" y="32" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">Equilibrium reached</text>
+
+  <!-- Reactant Conc drops -->
+  <path d="M 340 50 Q 400 140 480 140 L 580 140" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <text x="410" y="105" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#10b981" text-anchor="middle">Reactants</text>
+
+  <!-- Product Conc increases -->
+  <path d="M 340 200 Q 400 70 480 70 L 580 70" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="410" y="145" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">Products</text>
+  <text x="480" y="215" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">Constant, not equal</text>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Le Chatelier\'s Principle', level: 2 }

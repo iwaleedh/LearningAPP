@@ -35,6 +35,46 @@ export const note_olevel_chemistry_3_3_0 = {
       }
     },
     {
+      id: 'svg-crossover',
+      type: 'svg',
+      data: {
+        caption: 'The cross-over method for writing chemical formulae.',
+        svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(150, 40)">
+    <!-- Text Labels -->
+    <text x="-40" y="0" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Al</text>
+    <text x="-15" y="-10" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">3+</text>
+    
+    <text x="140" y="0" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="var(--color-text)" text-anchor="middle">O</text>
+    <text x="165" y="-10" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-error)" text-anchor="middle">2-</text>
+
+    <!-- Cross arrows -->
+    <!-- From Al 3+ to O subscript -->
+    <path d="M-15,10 Q60,60 160,80" stroke="var(--color-primary)" stroke-width="3" fill="none" stroke-dasharray="6,4">
+      <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="160,80 150,75 155,85" fill="var(--color-primary)"/>
+
+    <!-- From O 2- to Al subscript -->
+    <path d="M165,10 Q60,60 -15,80" stroke="var(--color-error)" stroke-width="3" fill="none" stroke-dasharray="6,4">
+      <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <polygon points="-15,80 -5,85 -10,75" fill="var(--color-error)"/>
+
+    <!-- Result -->
+    <text x="-40" y="110" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Al</text>
+    <text x="-20" y="120" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-error)" text-anchor="middle">2</text>
+    
+    <text x="140" y="110" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">O</text>
+    <text x="165" y="120" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">3</text>
+    
+    <!-- Title -->
+    <text x="50" y="160" font-family="var(--font-sans)" font-size="16" fill="var(--color-text-secondary)" text-anchor="middle">Cross the numerical values of the charges</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-common',
       type: 'comparisonTable',
       data: {

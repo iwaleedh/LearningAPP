@@ -45,6 +45,83 @@ export const note_olevel_chemistry_11_11_10 = {
       }
     },
     {
+      id: 'svg-esterification',
+      type: 'svg',
+      data: {
+        caption: 'Formation of Ethyl Ethanoate from Ethanoic Acid and Ethanol',
+        svg: `<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Ethanoic Acid -->
+  <g transform="translate(40, 50)">
+    <text x="30" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">Ethanoic Acid</text>
+    
+    <text x="0" y="30" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">CH<tspan dy="6" font-size="12">3</tspan><tspan dy="-6">—</tspan>C</text>
+    
+    <path d="M 45 10 L 55 -5" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <path d="M 52 15 L 62 0" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <text x="65" y="0" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">O</text>
+
+    <!-- The OH that leaves -->
+    <path d="M 52 18 L 65 30" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <rect x="65" y="15" width="30" height="25" fill="#fecaca" rx="4"/>
+    <text x="70" y="32" font-family="var(--font-mono)" font-size="18" fill="#dc2626">OH</text>
+  </g>
+
+  <!-- Plus -->
+  <text x="160" y="80" font-family="var(--font-mono)" font-size="24" fill="var(--color-text)">+</text>
+
+  <!-- Ethanol -->
+  <g transform="translate(190, 50)">
+    <text x="45" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Ethanol</text>
+    
+    <!-- The H that leaves -->
+    <rect x="0" y="15" width="20" height="25" fill="#bfdbfe" rx="4"/>
+    <text x="5" y="32" font-family="var(--font-mono)" font-size="18" fill="#2563eb">H</text>
+
+    <text x="20" y="30" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">O<tspan>—</tspan>CH<tspan dy="6" font-size="12">2</tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="12">3</tspan></text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 330 75 L 380 75" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 380 82 L 330 82" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-rev)"/>
+  <text x="355" y="65" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">conc. H₂SO₄</text>
+
+  <!-- Ethyl Ethanoate -->
+  <g transform="translate(410, 50)">
+    <text x="55" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">Ethyl Ethanoate</text>
+    
+    <text x="0" y="30" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">CH<tspan dy="6" font-size="12">3</tspan><tspan dy="-6">—</tspan>C</text>
+    
+    <!-- double bond O -->
+    <path d="M 45 10 L 55 -5" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <path d="M 52 15 L 62 0" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <text x="65" y="0" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">O</text>
+
+    <!-- Ester linkage -->
+    <path d="M 52 18 L 65 30" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <text x="70" y="32" font-family="var(--font-mono)" font-size="18" fill="#10b981">O<tspan>—</tspan>CH<tspan dy="6" font-size="12">2</tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="12">3</tspan></text>
+  </g>
+
+  <!-- Water -->
+  <text x="430" y="140" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">+ H₂O</text>
+
+  <!-- Highlight box for condensation -->
+  <path d="M 105 50 Q 140 30, 200 50" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="155" y="25" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">forms water</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="var(--color-text)"/>
+    </marker>
+    <marker id="arrow-rev" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 5 1 L 1 3 L 5 5 Z" fill="var(--color-text)"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Esters: –COO– linkage, fruity smell, volatile. Made by esterification (acid + alcohol ⇌ ester + H₂O, conc. H₂SO₄ catalyst, heat). Named: [alcohol prefix]-yl [acid prefix]-anoate. Uses: perfumes, flavourings, solvents, plasticisers, biodiesel.' }

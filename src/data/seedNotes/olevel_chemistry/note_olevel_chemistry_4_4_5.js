@@ -35,6 +35,59 @@ export const note_olevel_chemistry_4_4_5 = {
       }
     },
     {
+      id: 'svg-electroplating',
+      type: 'svg',
+      data: {
+        caption: 'General setup for electroplating. The object to be plated is the cathode, the pure plating metal is the anode, and the electrolyte is a solution containing ions of the plating metal.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+    <defs>
+        <style>
+            .beaker { fill: none; stroke: var(--color-text); stroke-width: 3; stroke-linejoin: round; }
+            .solution { fill: rgba(99, 102, 241, 0.2); }
+            .anode { fill: #e67e22; stroke: var(--color-text); stroke-width: 2; }
+            .cathode { fill: #95a5a6; stroke: var(--color-text); stroke-width: 2; }
+            .wire { stroke: var(--color-text); stroke-width: 2; fill: none; }
+            .label { font-family: var(--font-sans); font-size: 13px; fill: var(--color-text); }
+            .label-bold { font-family: var(--font-sans); font-size: 13px; font-weight: bold; fill: var(--color-text); }
+        </style>
+    </defs>
+    <!-- Beaker and Solution -->
+    <path d="M 120 180 L 120 120 L 280 120 L 280 180" class="beaker" transform="translate(0, 40)"/>
+    <path d="M 120 140 L 120 220 L 280 220 L 280 140 Z" class="solution"/>
+    
+    <!-- Electrodes -->
+    <rect x="140" y="100" width="20" height="100" class="anode"/>
+    <!-- Spoon shape for cathode -->
+    <path d="M 235 100 C 235 130 235 150 230 160 C 215 175 225 195 240 195 C 255 195 265 175 250 160 C 245 150 245 130 245 100 Z" class="cathode"/>
+    
+    <text x="110" y="150" class="label-bold" text-anchor="end">Anode (+)</text>
+    <text x="110" y="170" class="label" text-anchor="end">(plating metal)</text>
+    
+    <text x="290" y="150" class="label-bold" text-anchor="start">Cathode (−)</text>
+    <text x="290" y="170" class="label" text-anchor="start">(object to plate)</text>
+    
+    <text x="200" y="210" class="label" text-anchor="middle">Electrolyte Solution</text>
+    
+    <!-- Wiring and Battery -->
+    <line x1="150" y1="100" x2="150" y2="50" class="wire"/>
+    <line x1="150" y1="50" x2="185" y2="50" class="wire"/>
+    
+    <line x1="240" y1="100" x2="240" y2="50" class="wire"/>
+    <line x1="240" y1="50" x2="215" y2="50" class="wire"/>
+    
+    <!-- Battery -->
+    <line x1="185" y1="35" x2="185" y2="65" class="wire" stroke-width="4"/>
+    <line x1="195" y1="42" x2="195" y2="58" class="wire" stroke-width="2"/>
+    <line x1="195" y1="50" x2="205" y2="50" class="wire"/>
+    <line x1="205" y1="35" x2="205" y2="65" class="wire" stroke-width="4"/>
+    <line x1="215" y1="42" x2="215" y2="58" class="wire" stroke-width="2"/>
+    
+    <text x="175" y="45" class="label-bold">+</text>
+    <text x="225" y="45" class="label-bold">−</text>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-examples',
       type: 'comparisonTable',
       data: {

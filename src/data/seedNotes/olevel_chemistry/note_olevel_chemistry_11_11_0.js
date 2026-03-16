@@ -35,6 +35,90 @@ export const note_olevel_chemistry_11_11_0 = {
       }
     },
     {
+      id: 'svg-displayed-formulas',
+      type: 'svg',
+      data: {
+        caption: 'Displayed formulae for ethanol (left) and ethanoic acid (right), showing all bonds correctly.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180">
+    <defs>
+        <style>
+            .atom { font-family: var(--font-sans); font-size: 18px; fill: var(--color-text); text-anchor: middle; dominant-baseline: central; }
+            .bond { stroke: var(--color-text); stroke-width: 2; fill: none; }
+            .label { font-family: var(--font-sans); font-size: 14px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+        </style>
+    </defs>
+
+    <!-- Ethanol C2H5OH -->
+    <g transform="translate(100, 30)">
+        <text x="50" y="110" class="label">Ethanol (CH₃CH₂OH)</text>
+        
+        <!-- Carbons and Oxygen -->
+        <text x="0" y="50" class="atom">C</text>
+        <text x="50" y="50" class="atom">C</text>
+        <text x="100" y="50" class="atom">O</text>
+        
+        <!-- Bonds between backbone -->
+        <line x1="12" y1="50" x2="38" y2="50" class="bond"/>
+        <line x1="62" y1="50" x2="88" y2="50" class="bond"/>
+        
+        <!-- Hydrogens for C1 -->
+        <text x="0" y="10" class="atom">H</text>
+        <line x1="0" y1="20" x2="0" y2="38" class="bond"/>
+        
+        <text x="0" y="90" class="atom">H</text>
+        <line x1="0" y1="62" x2="0" y2="80" class="bond"/>
+        
+        <text x="-40" y="50" class="atom">H</text>
+        <line x1="-12" y1="50" x2="-30" y2="50" class="bond"/>
+        
+        <!-- Hydrogens for C2 -->
+        <text x="50" y="10" class="atom">H</text>
+        <line x1="50" y1="20" x2="50" y2="38" class="bond"/>
+        
+        <text x="50" y="90" class="atom">H</text>
+        <line x1="50" y1="62" x2="50" y2="80" class="bond"/>
+        
+        <!-- Hydrogen for O -->
+        <text x="140" y="50" class="atom">H</text>
+        <line x1="112" y1="50" x2="130" y2="50" class="bond"/>
+    </g>
+
+    <!-- Ethanoic Acid CH3COOH -->
+    <g transform="translate(350, 30)">
+        <text x="50" y="110" class="label">Ethanoic acid (CH₃COOH)</text>
+        
+        <!-- Carbons and Oxygen -->
+        <text x="0" y="50" class="atom">C</text>
+        <text x="50" y="50" class="atom">C</text>
+        <text x="100" y="50" class="atom">O</text>
+        <text x="50" y="10" class="atom">O</text>
+        
+        <!-- Bonds between backbone -->
+        <line x1="12" y1="50" x2="38" y2="50" class="bond"/>
+        <line x1="62" y1="50" x2="88" y2="50" class="bond"/>
+        
+        <!-- Double bond to O -->
+        <line x1="46" y1="20" x2="46" y2="38" class="bond"/>
+        <line x1="54" y1="20" x2="54" y2="38" class="bond"/>
+        
+        <!-- Hydrogens for C1 -->
+        <text x="0" y="10" class="atom">H</text>
+        <line x1="0" y1="20" x2="0" y2="38" class="bond"/>
+        
+        <text x="0" y="90" class="atom">H</text>
+        <line x1="0" y1="62" x2="0" y2="80" class="bond"/>
+        
+        <text x="-40" y="50" class="atom">H</text>
+        <line x1="-12" y1="50" x2="-30" y2="50" class="bond"/>
+        
+        <!-- Hydrogen for OH -->
+        <text x="140" y="50" class="atom">H</text>
+        <line x1="112" y1="50" x2="130" y2="50" class="bond"/>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

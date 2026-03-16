@@ -12,6 +12,100 @@ export const note_olevel_chemistry_11_11_13 = {
       data: { text: 'Types of Plastic', level: 2 }
     },
     {
+      id: 'svg-thermo-vs-thermoset',
+      type: 'svg',
+      data: {
+        caption: 'Structure of thermosoftening plastics (left) compared to thermosetting plastics with cross-links (right).',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <defs>
+        <style>
+            .chain { fill: none; stroke: var(--color-primary); stroke-width: 8; stroke-linecap: round; }
+            .chain-shadow { fill: none; stroke: var(--color-primary-dark); stroke-width: 10; stroke-linecap: round; opacity: 0.3; }
+            .imf { stroke: var(--color-text); stroke-width: 2; stroke-dasharray: 5,5; }
+            .crosslink { stroke: #e74c3c; stroke-width: 6; stroke-linecap: round; }
+            .label { font-family: var(--font-sans); font-size: 16px; fill: var(--color-text); font-weight: bold; text-anchor: middle; }
+            .desc { font-family: var(--font-sans); font-size: 12px; fill: var(--color-text-secondary); text-anchor: middle; }
+        </style>
+    </defs>
+
+    <!-- Thermosoftening plastic -->
+    <g transform="translate(150, 100)">
+        <text x="0" y="-80" class="label">Thermosoftening Plastic</text>
+        <text x="0" y="-60" class="desc">(Thermoplastic)</text>
+        
+        <!-- Polymer chain 1 -->
+        <path d="M-80,-30 Q-40,-40 0,-30 T80,-30" class="chain-shadow"/>
+        <path d="M-80,-30 Q-40,-40 0,-30 T80,-30" class="chain"/>
+        
+        <!-- Polymer chain 2 -->
+        <path d="M-80,0 Q-40,10 0,0 T80,0" class="chain-shadow"/>
+        <path d="M-80,0 Q-40,10 0,0 T80,0" class="chain"/>
+
+        <!-- Polymer chain 3 -->
+        <path d="M-80,30 Q-40,20 0,30 T80,30" class="chain-shadow"/>
+        <path d="M-80,30 Q-40,20 0,30 T80,30" class="chain"/>
+
+        <!-- Weak intermolecular forces -->
+        <line x1="-50" y1="-32" x2="-50" y2="2" class="imf"/>
+        <line x1="20" y1="-28" x2="20" y2="-2" class="imf"/>
+        <line x1="-20" y1="5" x2="-20" y2="25" class="imf"/>
+        <line x1="50" y1="-5" x2="50" y2="25" class="imf"/>
+
+        <path d="M100,0 L120,0" stroke="var(--color-text-secondary)" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="130" y="0" class="desc" text-anchor="start">Weak</text>
+        <text x="130" y="15" class="desc" text-anchor="start">forces</text>
+        <text x="130" y="30" class="desc" text-anchor="start">(can slide)</text>
+    </g>
+
+    <!-- Thermosetting plastic -->
+    <g transform="translate(450, 100)">
+        <text x="0" y="-80" class="label">Thermosetting Plastic</text>
+        
+        <!-- Polymer chain 1 -->
+        <path d="M-80,-30 Q-40,-20 0,-30 T80,-30" class="chain-shadow"/>
+        <path d="M-80,-30 Q-40,-20 0,-30 T80,-30" class="chain"/>
+        
+        <!-- Polymer chain 2 -->
+        <path d="M-80,0 Q-40,0 0,0 T80,0" class="chain-shadow"/>
+        <path d="M-80,0 Q-40,0 0,0 T80,0" class="chain"/>
+
+        <!-- Polymer chain 3 -->
+        <path d="M-80,30 Q-40,40 0,30 T80,30" class="chain-shadow"/>
+        <path d="M-80,30 Q-40,40 0,30 T80,30" class="chain"/>
+
+        <!-- Strong covalent cross-links -->
+        <line x1="-50" y1="-28" x2="-50" y2="-1" class="crosslink"/>
+        <line x1="-10" y1="-29" x2="-10" y2="0" class="crosslink"/>
+        <line x1="30" y1="-30" x2="30" y2="-1" class="crosslink"/>
+        <line x1="60" y1="-30" x2="60" y2="2" class="crosslink"/>
+
+        <line x1="-60" y1="1" x2="-60" y2="33" class="crosslink"/>
+        <line x1="-20" y1="0" x2="-20" y2="32" class="crosslink"/>
+        <line x1="20" y1="0" x2="20" y2="31" class="crosslink"/>
+        <line x1="70" y1="-1" x2="70" y2="30" class="crosslink"/>
+
+        <path d="M100,0 L120,0" stroke="var(--color-text-secondary)" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="130" y="0" class="desc" text-anchor="start" fill="#e74c3c" font-weight="bold">Strong covalent</text>
+        <text x="130" y="15" class="desc" text-anchor="start" fill="#e74c3c" font-weight="bold">cross-links</text>
+        <text x="130" y="30" class="desc" text-anchor="start">(rigid 3D network)</text>
+    </g>
+
+    <!-- Heating Arrow -->
+    <g transform="translate(150, 180)">
+        <path d="M-30,0 L30,0" stroke="#e67e22" stroke-width="3" marker-end="url(#arrow-heat)"/>
+        <text x="0" y="-10" fill="#e67e22" font-family="var(--font-sans)" font-size="12px" text-anchor="middle" font-weight="bold">HEAT</text>
+        <text x="60" y="4" class="desc" fill="var(--color-text)" font-weight="bold">Melts / Softens</text>
+    </g>
+    
+    <g transform="translate(450, 180)">
+        <path d="M-30,0 L30,0" stroke="#e67e22" stroke-width="3" marker-end="url(#arrow-heat)"/>
+        <text x="0" y="-10" fill="#e67e22" font-family="var(--font-sans)" font-size="12px" text-anchor="middle" font-weight="bold">HEAT</text>
+        <text x="60" y="4" class="desc" fill="var(--color-text)" font-weight="bold">Chars (Does NOT melt)</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-types',
       type: 'comparisonTable',
       data: {

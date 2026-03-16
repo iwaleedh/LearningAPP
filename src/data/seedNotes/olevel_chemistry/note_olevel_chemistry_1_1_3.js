@@ -35,6 +35,89 @@ export const note_olevel_chemistry_1_1_3 = {
       }
     },
     {
+      id: 'svg-nh3-hcl',
+      type: 'svg',
+      data: {
+        caption: 'Diffusion of ammonia and hydrogen chloride gases in a glass tube',
+        svg: `<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glass tube gradient -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="20%" stop-color="#ffffff" />
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(40, 50)">
+    <!-- Main glass tube -->
+    <rect x="100" y="40" width="520" height="60" rx="3" fill="url(#glass)" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)" />
+    
+    <!-- Left Cotton Wool (Ammonia) -->
+    <path d="M 105,45 Q 120,40 130,55 Q 140,50 145,65 Q 150,80 135,90 Q 120,95 105,85 Q 95,70 105,45 Z" fill="#e2e8f0" stroke="#94a3b8" />
+    <!-- Label -->
+    <text x="80" y="30" text-anchor="middle" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">Ammonia (NH₃)</text>
+    <text x="80" y="115" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Cotton wool</text>
+    <text x="80" y="130" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="var(--color-text-secondary)">soaked in conc. NH₃</text>
+    <text x="80" y="150" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="var(--color-text-secondary)">Mr = 17 (Lighter, faster)</text>
+
+    <!-- Right Cotton Wool (HCl) -->
+    <path d="M 615,45 Q 600,40 590,55 Q 580,50 575,65 Q 570,80 585,90 Q 600,95 615,85 Q 625,70 615,45 Z" fill="#e2e8f0" stroke="#94a3b8" />
+    <!-- Label -->
+    <text x="640" y="30" text-anchor="middle" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444">Hydrochloric Acid (HCl)</text>
+    <text x="640" y="115" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Cotton wool</text>
+    <text x="640" y="130" text-anchor="middle" font-family="var(--font-sans)" font-size="11" fill="var(--color-text-secondary)">soaked in conc. HCl</text>
+    <text x="640" y="150" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="var(--color-text-secondary)">Mr = 36.5 (Heavier, slower)</text>
+
+    <!-- End stoppers (Bungs) -->
+    <rect x="80" y="38" width="20" height="64" rx="2" fill="#64748b" />
+    <rect x="70" y="30" width="10" height="80" rx="2" fill="#475569" />
+    
+    <rect x="620" y="38" width="20" height="64" rx="2" fill="#64748b" />
+    <rect x="640" y="30" width="10" height="80" rx="2" fill="#475569" />
+
+    <!-- Diffusion Arrows -->
+    <!-- NH3 arrows -->
+    <!-- Long blue arrow for NH3 -->
+    <path d="M 160,70 L 410,70" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,4" />
+    <!-- Arrowhead -->
+    <polygon points="410,70 400,65 400,75" fill="#3b82f6" />
+    
+    <!-- HCl arrows -->
+    <!-- Shorter red arrow for HCl -->
+    <path d="M 560,70 L 450,70" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" />
+    <!-- Arrowhead -->
+    <polygon points="450,70 460,65 460,75" fill="#ef4444" />
+
+    <!-- White Ring string (NH4Cl) -->
+    <ellipse cx="430" cy="70" rx="10" ry="25" fill="#f8fafc" stroke="#94a3b8" />
+    <g fill="#e2e8f0">
+      <circle cx="430" cy="50" r="4" />
+      <circle cx="428" cy="62" r="5" />
+      <circle cx="432" cy="75" r="4" />
+      <circle cx="429" cy="85" r="5" />
+    </g>
+
+    <!-- White Ring Label -->
+    <path d="M 430,95 L 430,120 M 430,45 L 430,20" fill="none" stroke="var(--color-text-secondary)" stroke-dasharray="2,2" />
+    <text x="430" y="140" text-anchor="middle" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)">White ring of NH₄Cl</text>
+    <text x="430" y="10" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="var(--color-text-secondary)">(Closer to HCl end)</text>
+    
+    <!-- Distance markers -->
+    <path d="M 130,170 L 130,180 L 430,180 L 430,170" fill="none" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="280" y="195" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="#3b82f6">NH₃ travels further</text>
+
+    <path d="M 430,170 L 430,180 L 590,180 L 590,170" fill="none" stroke="#ef4444" stroke-width="1.5" />
+    <text x="510" y="195" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="#ef4444">HCl travels less</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-bromine',
       type: 'callout',
       data: {

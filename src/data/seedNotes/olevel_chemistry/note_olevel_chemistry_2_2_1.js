@@ -25,6 +25,106 @@ export const note_olevel_chemistry_2_2_1 = {
       }
     },
     {
+      id: 'svg-atom-structure',
+      type: 'svg',
+      data: {
+        caption: 'Simplified structure of an atom (Lithium-7 shown as an example)',
+        svg: `<svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Grid/background can be omitted for clean look -->
+  <defs>
+    <radialGradient id="proton-grad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </radialGradient>
+    <radialGradient id="neutron-grad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </radialGradient>
+    <radialGradient id="electron-grad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(300, 175)">
+    <!-- Electron Shells -->
+    <circle cx="0" cy="0" r="60" fill="none" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="8,4" />
+    <circle cx="0" cy="0" r="120" fill="none" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="8,4" />
+
+    <!-- Electrons (Lithium: 2, 1) -->
+    <!-- Shell 1 -->
+    <g transform="rotate(45)">
+      <circle cx="0" cy="-60" r="8" fill="url(#electron-grad)" filter="url(#glow)" />
+      <text x="0" y="-57" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">-</text>
+    </g>
+    <g transform="rotate(225)">
+      <circle cx="0" cy="-60" r="8" fill="url(#electron-grad)" filter="url(#glow)" />
+      <text x="0" y="-57" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">-</text>
+    </g>
+
+    <!-- Shell 2 -->
+    <g transform="rotate(0)">
+      <circle cx="0" cy="-120" r="8" fill="url(#electron-grad)" filter="url(#glow)" />
+      <text x="0" y="-117" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">-</text>
+    </g>
+
+    <!-- Nucleus (Lithium-7: 3 protons, 4 neutrons) -->
+    <!-- Neutrons -->
+    <circle cx="-8" cy="-8" r="10" fill="url(#neutron-grad)" />
+    <circle cx="10" cy="-5" r="10" fill="url(#neutron-grad)" />
+    <circle cx="-5" cy="12" r="10" fill="url(#neutron-grad)" />
+    <circle cx="12" cy="10" r="10" fill="url(#neutron-grad)" />
+    
+    <!-- Protons -->
+    <circle cx="0" cy="-15" r="10" fill="url(#proton-grad)" />
+    <text x="0" y="-11" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">+</text>
+    
+    <circle cx="-12" cy="0" r="10" fill="url(#proton-grad)" />
+    <text x="-12" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">+</text>
+    
+    <circle cx="8" cy="5" r="10" fill="url(#proton-grad)" />
+    <text x="8" y="9" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">+</text>
+
+    <!-- Labels -->
+    <!-- Nucleus Label -->
+    <path d="M 15,-15 L 80,-40 L 120,-40" fill="none" stroke="var(--color-text-secondary)" stroke-width="1.5" />
+    <text x="125" y="-45" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)">Nucleus</text>
+    <text x="125" y="-30" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Contains protons</text>
+    <text x="125" y="-16" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">&amp; neutrons</text>
+    
+    <!-- Shell Label -->
+    <path d="M -60,0 L -120,-20 L -130,-20" fill="none" stroke="var(--color-text-secondary)" stroke-width="1.5" />
+    <text x="-135" y="-25" text-anchor="end" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)">Electron Shell</text>
+    <text x="-135" y="-10" text-anchor="end" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">(Energy level)</text>
+
+    <!-- Electron Label -->
+    <path d="M -85,-85 L -100,-110 L -130,-110" fill="none" stroke="var(--color-text-secondary)" stroke-width="1.5" />
+    <text x="-135" y="-115" text-anchor="end" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">Electron (e⁻)</text>
+    <text x="-135" y="-100" text-anchor="end" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Charge: -1</text>
+    
+    <!-- Proton/Neutron legend -->
+    <g transform="translate(-250, 100)">
+      <rect x="0" y="0" width="140" height="60" rx="4" fill="var(--color-surface)" stroke="var(--color-border)" />
+      
+      <circle cx="20" cy="20" r="8" fill="url(#proton-grad)" />
+      <text x="20" y="24" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">+</text>
+      <text x="40" y="24" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Proton (p)</text>
+      
+      <circle cx="20" cy="40" r="8" fill="url(#neutron-grad)" />
+      <text x="40" y="44" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Neutron (n)</text>
+    </g>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Atomic Number and Mass Number', level: 2 }

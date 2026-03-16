@@ -35,6 +35,52 @@ export const note_olevel_chemistry_6_6_4 = {
       }
     },
     {
+      id: 'svg-rate-graph',
+      type: 'svg',
+      data: {
+        caption: 'A typical rate graph showing volume of gas collected against time. The gradient represents the rate of reaction. A steeper curve indicates a faster reaction.',
+        svg: `<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Axes -->
+  <line x1="60" y1="250" x2="460" y2="250" stroke="var(--color-text)" stroke-width="2"/>
+  <line x1="60" y1="250" x2="60" y2="40" stroke="var(--color-text)" stroke-width="2"/>
+  
+  <text x="260" y="290" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)" text-anchor="middle">Time / s</text>
+  <text x="20" y="145" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)" text-anchor="middle" transform="rotate(-90 20 145)">Volume of Gas / cm³</text>
+  
+  <!-- Dashed Max Volume Line -->
+  <line x1="60" y1="80" x2="440" y2="80" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="440" y="70" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="end">Final volume (reaction complete)</text>
+
+  <!-- Curve: Fast (e.g. high temp / conc / surface area) -->
+  <path d="M 60 250 Q 80 100 160 80 L 440 80" fill="none" stroke="var(--color-primary)" stroke-width="3"/>
+  <text x="140" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">Fast Rate</text>
+  
+  <!-- Curve: Slow (e.g. low temp / conc / large chips) -->
+  <path d="M 60 250 Q 150 180 250 100 Q 300 80 340 80 L 440 80" fill="none" stroke="#10b981" stroke-width="3"/>
+  <text x="290" y="125" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#10b981" text-anchor="middle">Slow Rate</text>
+
+  <!-- Explanatory Labels on Slow Curve -->
+  <!-- Start -->
+  <circle cx="90" cy="225" r="4" fill="#ef4444" />
+  <text x="105" y="228" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Steepest = Fastest rate at start</text>
+  <!-- Middle -->
+  <circle cx="190" cy="144" r="4" fill="#ef4444" />
+  <text x="205" y="147" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Curve flattens = Rate decreasing</text>
+  <!-- End -->
+  <circle cx="370" cy="80" r="4" fill="#ef4444" />
+  <text x="370" y="60" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Flat = Reaction stopped</text>
+
+  <!-- Tangent Example -->
+  <line x1="140" y1="184" x2="240" y2="104" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="210" y="100" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">Tangent gives</text>
+  <text x="210" y="112" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">rate at specific time</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-fairtest',
       type: 'callout',
       data: {

@@ -49,6 +49,75 @@ export const note_olevel_chemistry_12_12_6 = {
       }
     },
     {
+      id: 'svg-halide-ppts',
+      type: 'svg',
+      data: {
+        caption: 'Colours of silver halide precipitates: AgCl (white), AgBr (cream), AgI (yellow).',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+    <defs>
+        <style>
+            .tube { fill: rgba(149, 165, 166, 0.1); stroke: var(--color-text); stroke-width: 2; stroke-linecap: round; }
+            .liquid { fill: rgba(52, 152, 219, 0.2); }
+            .ppt-cl { fill: #fdfdfd; stroke: #bdc3c7; stroke-dasharray: 2,2; }
+            .ppt-br { fill: #f1c40f; opacity: 0.5; stroke: #f39c12; stroke-dasharray: 2,2; }
+            .ppt-i { fill: #f39c12; opacity: 0.8; stroke: #e67e22; stroke-dasharray: 2,2; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); text-anchor: middle; }
+            .label-bold { font-family: var(--font-sans); font-size: 16px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+        </style>
+    </defs>
+
+    <!-- Tube 1: Chloride -->
+    <g transform="translate(100, 20)">
+        <path d="M -20,0 L -20,100 A 20,20 0 0,0 20,100 L 20,0" class="tube"/>
+        <!-- Liquid -->
+        <path d="M -18,40 L 18,40 L 18,90 A 18,18 0 0,1 -18,90 Z" class="liquid"/>
+        <!-- Precipitate -->
+        <path d="M -16,80 Q 0,75 16,85 A 16,16 0 0,1 -16,85 Z" class="ppt-cl"/>
+        <circle cx="-5" cy="90" r="3" fill="#fdfdfd"/>
+        <circle cx="5" cy="95" r="4" fill="#fdfdfd"/>
+        <circle cx="10" cy="85" r="2" fill="#fdfdfd"/>
+        
+        <text x="0" y="140" class="label-bold">Chloride (Cl⁻)</text>
+        <text x="0" y="160" class="label">White ppt</text>
+        <text x="0" y="175" class="label">(AgCl)</text>
+    </g>
+
+    <!-- Tube 2: Bromide -->
+    <g transform="translate(250, 20)">
+        <path d="M -20,0 L -20,100 A 20,20 0 0,0 20,100 L 20,0" class="tube"/>
+        <!-- Liquid -->
+        <path d="M -18,40 L 18,40 L 18,90 A 18,18 0 0,1 -18,90 Z" class="liquid"/>
+        <!-- Precipitate -->
+        <path d="M -16,80 Q 0,75 16,85 A 16,16 0 0,1 -16,85 Z" class="ppt-br"/>
+        <circle cx="-5" cy="90" r="3" fill="#f1c40f" opacity="0.6"/>
+        <circle cx="5" cy="95" r="4" fill="#f1c40f" opacity="0.6"/>
+        <circle cx="10" cy="85" r="2" fill="#f1c40f" opacity="0.6"/>
+        
+        <text x="0" y="140" class="label-bold">Bromide (Br⁻)</text>
+        <text x="0" y="160" class="label">Cream ppt</text>
+        <text x="0" y="175" class="label">(AgBr)</text>
+    </g>
+
+    <!-- Tube 3: Iodide -->
+    <g transform="translate(400, 20)">
+        <path d="M -20,0 L -20,100 A 20,20 0 0,0 20,100 L 20,0" class="tube"/>
+        <!-- Liquid -->
+        <path d="M -18,40 L 18,40 L 18,90 A 18,18 0 0,1 -18,90 Z" class="liquid"/>
+        <!-- Precipitate -->
+        <path d="M -16,80 Q 0,75 16,85 A 16,16 0 0,1 -16,85 Z" class="ppt-i"/>
+        <circle cx="-5" cy="90" r="3" fill="#f39c12"/>
+        <circle cx="5" cy="95" r="4" fill="#f39c12"/>
+        <circle cx="10" cy="85" r="2" fill="#f39c12"/>
+        
+        <text x="0" y="140" class="label-bold">Iodide (I⁻)</text>
+        <text x="0" y="160" class="label">Yellow ppt</text>
+        <text x="0" y="175" class="label">(AgI)</text>
+    </g>
+
+</svg>`
+      }
+    },
+    {
       id: 'tbl-halides',
       type: 'comparisonTable',
       data: {

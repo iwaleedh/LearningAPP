@@ -21,6 +21,79 @@ export const note_olevel_chemistry_11_11_1 = {
       }
     },
     {
+      id: 'svg-homologous',
+      type: 'svg',
+      data: {
+        caption: 'Successive members of the alkane homologous series differ by a CH₂ unit.',
+        svg: `<svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Methane -->
+  <g transform="translate(60, 50)">
+    <circle cx="20" cy="20" r="12" fill="#1e293b" />
+    <circle cx="20" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="20" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="-5" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="45" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <text x="20" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Methane</text>
+    <text x="20" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">CH₄</text>
+  </g>
+
+  <!-- Plus CH2 -->
+  <path d="M 140 70 L 190 70" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="165" y="60" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">+ CH₂</text>
+
+  <!-- Ethane -->
+  <g transform="translate(210, 50)">
+    <circle cx="20" cy="20" r="12" fill="#1e293b" />
+    <circle cx="45" cy="20" r="12" fill="#1e293b" />
+    
+    <circle cx="20" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="20" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="-5" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+
+    <circle cx="45" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="45" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="70" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+
+    <text x="32" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Ethane</text>
+    <text x="32" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">C₂H₆</text>
+  </g>
+
+  <!-- Plus CH2 -->
+  <path d="M 310 70 L 360 70" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="335" y="60" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">+ CH₂</text>
+
+  <!-- Propane -->
+  <g transform="translate(380, 50)">
+    <circle cx="10" cy="20" r="12" fill="#1e293b" />
+    <circle cx="35" cy="20" r="12" fill="#1e293b" />
+    <circle cx="60" cy="20" r="12" fill="#1e293b" />
+    
+    <circle cx="10" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="10" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="-15" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+
+    <circle cx="35" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="35" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+
+    <circle cx="60" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="60" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="85" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+
+    <text x="35" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Propane</text>
+    <text x="35" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">C₃H₈</text>
+  </g>
+
+  <defs>
+    <marker id="arrow-blue" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-series',
       type: 'comparisonTable',
       data: {

@@ -44,6 +44,70 @@ export const note_olevel_chemistry_6_6_8 = {
       }
     },
     {
+      id: 'svg-haber-process',
+      type: 'svg',
+      data: {
+        caption: 'Simplified flow diagram of the Haber Process.',
+        svg: `<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Input Gases -->
+  <path d="M 20 80 L 80 80" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <text x="10" y="70" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="start">N₂ + 3H₂</text>
+
+  <!-- Compressor -->
+  <rect x="90" y="50" width="80" height="60" rx="4" fill="var(--color-bg-secondary)" stroke="var(--color-border)" stroke-width="2"/>
+  <text x="130" y="85" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Compressor</text>
+  
+  <path d="M 170 80 L 230 80" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <text x="200" y="70" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">200 atm</text>
+
+  <!-- Reactor (Catalyst Beds) -->
+  <rect x="240" y="30" width="100" height="140" rx="20" fill="var(--color-bg-secondary)" stroke="var(--color-border)" stroke-width="2"/>
+  <text x="290" y="20" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Reactor</text>
+  <text x="290" y="160" font-family="var(--font-sans)" font-size="10" fill="#ef4444" text-anchor="middle">450°C</text>
+  
+  <!-- Catalyst layers -->
+  <rect x="250" y="50" width="80" height="15" fill="#94a3b8" />
+  <rect x="250" y="80" width="80" height="15" fill="#94a3b8" />
+  <rect x="250" y="110" width="80" height="15" fill="#94a3b8" />
+  <text x="290" y="100" font-family="var(--font-sans)" font-size="10" fill="#f8fafc" text-anchor="middle">Iron Catalyst</text>
+
+  <path d="M 340 120 L 400 120" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <text x="370" y="110" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">N₂, H₂, NH₃</text>
+
+  <!-- Condenser / cooler -->
+  <rect x="410" y="80" width="80" height="100" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="450" y="135" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Cooling</text>
+
+  <!-- Liquid ammonia out -->
+  <path d="M 450 180 L 450 230" fill="none" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-head-blue)" />
+  <text x="460" y="215" font-family="var(--font-sans)" font-size="12" fill="#0284c7" text-anchor="start">Liquid NH₃</text>
+  <circle cx="450" cy="200" r="3" fill="#0ea5e9"/>
+  <circle cx="450" cy="210" r="3" fill="#0ea5e9"/>
+
+  <!-- Unreacted gas recycle -->
+  <path d="M 450 80 L 450 40 L 130 40 L 130 50" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow-head-orange)" />
+  <text x="290" y="32" font-family="var(--font-sans)" font-size="10" fill="#d97706" text-anchor="middle">Unreacted N₂ and H₂ recycled</text>
+
+
+  <!-- Markers -->
+  <defs>
+    <marker id="arrow-head" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="var(--color-text)"/>
+    </marker>
+    <marker id="arrow-head-blue" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#0ea5e9"/>
+    </marker>
+    <marker id="arrow-head-orange" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-use',
       type: 'callout',
       data: {

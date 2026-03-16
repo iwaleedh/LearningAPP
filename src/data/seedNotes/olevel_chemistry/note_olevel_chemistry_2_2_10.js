@@ -35,6 +35,47 @@ export const note_olevel_chemistry_2_2_10 = {
       }
     },
     {
+      id: 'svg-diamond',
+      type: 'svg',
+      data: {
+        caption: 'Diagram showing the tetrahedral network of carbon atoms in diamond.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180">
+    <defs>
+        <style>
+            .carbon { fill: var(--color-text); }
+            .bond { stroke: var(--color-text-tertiary); stroke-width: 3; stroke-linecap: round; }
+        </style>
+    </defs>
+    <g transform="translate(40, -10)">
+        <!-- Back bonds -->
+        <line x1="100" y1="100" x2="130" y2="70" class="bond"/>
+        <line x1="130" y1="70" x2="170" y2="70" class="bond"/>
+        <line x1="130" y1="70" x2="130" y2="30" class="bond"/>
+        <!-- Nodes -->
+        <line x1="100" y1="100" x2="100" y2="40" class="bond"/>
+        <line x1="100" y1="100" x2="60" y2="130" class="bond"/>
+        <line x1="100" y1="100" x2="140" y2="130" class="bond"/>
+        <line x1="140" y1="130" x2="140" y2="170" class="bond"/>
+        <line x1="140" y1="130" x2="180" y2="100" class="bond"/>
+        <line x1="60" y1="130" x2="60" y2="170" class="bond"/>
+        <line x1="60" y1="130" x2="20" y2="100" class="bond"/>
+        
+        <circle cx="100" cy="40" r="6" class="carbon"/>
+        <circle cx="100" cy="100" r="6" class="carbon"/>
+        <circle cx="60" cy="130" r="6" class="carbon"/>
+        <circle cx="140" cy="130" r="6" class="carbon"/>
+        <circle cx="130" cy="70" r="6" class="carbon"/>
+        <circle cx="170" cy="70" r="6" class="carbon"/>
+        <circle cx="130" cy="30" r="6" class="carbon"/>
+        <circle cx="140" cy="170" r="6" class="carbon"/>
+        <circle cx="180" cy="100" r="6" class="carbon"/>
+        <circle cx="60" cy="170" r="6" class="carbon"/>
+        <circle cx="20" cy="100" r="6" class="carbon"/>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-3',
       type: 'heading',
       data: { text: 'Graphite', level: 2 }
@@ -46,6 +87,60 @@ export const note_olevel_chemistry_2_2_10 = {
         style: 'key',
         title: 'Graphite Structure and Properties',
         text: '<strong>Structure:</strong> Each carbon atom is bonded to <strong>3 other carbon atoms</strong> in a hexagonal layer (sheet). The layers are held together by weak intermolecular forces (van der Waals forces). The 4th outer electron from each C is delocalised and can move between layers.<br/><br/><strong>Properties explained:</strong><br/>• <strong>Conducts electricity</strong> — delocalised electrons free to move along layers<br/>• <strong>Slippery/soft lubricant</strong> — layers can slide over each other (weak forces between layers)<br/>• <strong>Very high melting point</strong> — strong covalent bonds within layers require lots of energy to break<br/>• <strong>Grey/black</strong> and opaque<br/><br/><strong>Uses:</strong> Electrodes, dry lubricant, pencil lead (with clay).'
+      }
+    },
+    {
+      id: 'svg-graphite',
+      type: 'svg',
+      data: {
+        caption: 'Diagram showing the 2D layered structure of graphite. The layers are held together by weak intermolecular forces.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+    <defs>
+        <style>
+            .carbon { fill: var(--color-text); }
+            .bond { stroke: var(--color-text-tertiary); stroke-width: 2.5; stroke-linecap: round; }
+            .intermolecular { stroke: var(--color-primary); stroke-width: 2; stroke-dasharray: 4,4; fill: none; }
+        </style>
+    </defs>
+    <!-- Top Layer -->
+    <g transform="translate(60, 30)">
+        <polygon points="40,0 80,0 100,34.6 80,69.2 40,69.2 20,34.6" class="intermolecular" style="stroke:var(--color-text-tertiary); stroke-dasharray: none; fill: none;"/>
+        <polygon points="100,34.6 140,34.6 160,69.2 140,103.8 100,103.8 80,69.2" class="intermolecular" style="stroke:var(--color-text-tertiary); stroke-dasharray: none; fill: none;"/>
+        <circle cx="40" cy="0" r="5" class="carbon"/>
+        <circle cx="80" cy="0" r="5" class="carbon"/>
+        <circle cx="100" cy="34.6" r="5" class="carbon"/>
+        <circle cx="80" cy="69.2" r="5" class="carbon"/>
+        <circle cx="40" cy="69.2" r="5" class="carbon"/>
+        <circle cx="20" cy="34.6" r="5" class="carbon"/>
+        <circle cx="140" cy="34.6" r="5" class="carbon"/>
+        <circle cx="160" cy="69.2" r="5" class="carbon"/>
+        <circle cx="140" cy="103.8" r="5" class="carbon"/>
+        <circle cx="100" cy="103.8" r="5" class="carbon"/>
+    </g>
+    <!-- Weak forces -->
+    <line x1="100" y1="30" x2="100" y2="100" class="intermolecular"/>
+    <line x1="140" y1="30" x2="140" y2="100" class="intermolecular"/>
+    <line x1="80" y1="64.6" x2="80" y2="134.6" class="intermolecular"/>
+    <line x1="160" y1="64.6" x2="160" y2="134.6" class="intermolecular"/>
+    <line x1="200" y1="64.6" x2="200" y2="134.6" class="intermolecular"/>
+    <line x1="140" y1="99.2" x2="140" y2="169.2" class="intermolecular"/>
+    
+    <!-- Bottom Layer -->
+    <g transform="translate(60, 100)">
+        <polygon points="40,0 80,0 100,34.6 80,69.2 40,69.2 20,34.6" class="intermolecular" style="stroke:var(--color-text-tertiary); stroke-dasharray: none; fill: none;"/>
+        <polygon points="100,34.6 140,34.6 160,69.2 140,103.8 100,103.8 80,69.2" class="intermolecular" style="stroke:var(--color-text-tertiary); stroke-dasharray: none; fill: none;"/>
+        <circle cx="40" cy="0" r="5" class="carbon"/>
+        <circle cx="80" cy="0" r="5" class="carbon"/>
+        <circle cx="100" cy="34.6" r="5" class="carbon"/>
+        <circle cx="80" cy="69.2" r="5" class="carbon"/>
+        <circle cx="40" cy="69.2" r="5" class="carbon"/>
+        <circle cx="20" cy="34.6" r="5" class="carbon"/>
+        <circle cx="140" cy="34.6" r="5" class="carbon"/>
+        <circle cx="160" cy="69.2" r="5" class="carbon"/>
+        <circle cx="140" cy="103.8" r="5" class="carbon"/>
+        <circle cx="100" cy="103.8" r="5" class="carbon"/>
+    </g>
+</svg>`
       }
     },
     {

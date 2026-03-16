@@ -35,6 +35,114 @@ export const note_olevel_chemistry_9_9_5 = {
       }
     },
     {
+      id: 'svg-rusting-tubes',
+      type: 'svg',
+      data: {
+        caption: 'The three-tube experiment to investigate the conditions for rusting.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <defs>
+        <style>
+            .glass { fill: rgba(99, 102, 241, 0.05); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }
+            .water { fill: rgba(52, 152, 219, 0.3); }
+            .oil { fill: rgba(241, 196, 15, 0.5); }
+            .nail { fill: #7f8c8d; stroke: #2c3e50; stroke-width: 1.5; }
+            .rust { fill: #e67e22; stroke: #d35400; stroke-width: 1; }
+            .stopper { fill: #e67e22; }
+            .desiccant { fill: #bdc3c7; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .title { font-family: var(--font-sans); font-size: 16px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+            .line { stroke: var(--color-text); stroke-width: 1; fill: none; stroke-dasharray: 2,2; }
+        </style>
+    </defs>
+
+    <!-- Tube A: Air & Water (Rusting) -->
+    <g transform="translate(50, 20)">
+        <text x="35" y="-5" class="title">Tube A</text>
+        <!-- Test Tube -->
+        <path d="M 15 0 L 15 150 C 15 165, 55 165, 55 150 L 55 0 M 10 0 L 60 0" class="glass"/>
+        <!-- Water -->
+        <path d="M 15 80 L 15 150 C 15 165, 55 165, 55 150 L 55 80 Z" class="water"/>
+        <!-- Nail with Rust -->
+        <rect x="32" y="50" width="6" height="80" rx="3" class="nail"/>
+        <path d="M 31 52 L 39 52 L 35 45 Z" class="nail"/> <!-- head -->
+        <!-- Rust patches -->
+        <circle cx="32" cy="90" r="3" class="rust"/>
+        <circle cx="38" cy="110" r="4" class="rust"/>
+        <circle cx="35" cy="125" r="3" class="rust"/>
+        
+        <text x="35" y="195" class="label" text-anchor="middle">Air + Water</text>
+        <text x="35" y="215" class="label" text-anchor="middle" fill="#e74c3c" font-weight="bold">RUSTS ✓</text>
+    </g>
+    
+    <line x1="85" y1="120" x2="35" y2="120" class="line"/>
+    <text x="10" y="115" class="label" text-anchor="middle">Water</text>
+
+    <!-- Tube B: Air, No Water (Dry) -->
+    <g transform="translate(250, 20)">
+        <text x="35" y="-5" class="title">Tube B</text>
+        <!-- Stopper -->
+        <path d="M 10 -15 L 60 -15 L 55 5 L 15 5 Z" class="stopper"/>
+        <!-- Test Tube -->
+        <path d="M 15 0 L 15 150 C 15 165, 55 165, 55 150 L 55 0 M 10 0 L 60 0" class="glass"/>
+        
+        <!-- Calcium Chloride Beads -->
+        <circle cx="25" cy="140" r="4" class="desiccant"/>
+        <circle cx="35" cy="145" r="5" class="desiccant"/>
+        <circle cx="45" cy="138" r="4" class="desiccant"/>
+        <circle cx="30" cy="150" r="4" class="desiccant"/>
+        <circle cx="40" cy="152" r="4" class="desiccant"/>
+        <circle cx="25" cy="155" r="3" class="desiccant"/>
+        <circle cx="45" cy="155" r="3" class="desiccant"/>
+        
+        <!-- Cotton Wool layer -->
+        <path d="M 15 130 Q 35 120 55 130 Q 35 140 15 130 Z" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+        
+        <!-- CLEAN Nail -->
+        <rect x="32" y="40" width="6" height="80" rx="3" class="nail"/>
+        <path d="M 31 42 L 39 42 L 35 35 Z" class="nail"/> <!-- head -->
+        
+        <text x="35" y="195" class="label" text-anchor="middle">Air only (Dry)</text>
+        <text x="35" y="215" class="label" text-anchor="middle">No rust ✗</text>
+    </g>
+    
+    <line x1="315" y1="165" x2="335" y2="165" class="line"/>
+    <text x="340" y="160" class="label">Anhydrous</text>
+    <text x="340" y="175" class="label">calcium choride</text>
+    <text x="340" y="190" class="label">(drying agent)</text>
+
+    <!-- Tube C: Water, No Air (Boiled) -->
+    <g transform="translate(450, 20)">
+        <text x="35" y="-5" class="title">Tube C</text>
+        <!-- Stopper -->
+        <path d="M 10 -15 L 60 -15 L 55 5 L 15 5 Z" class="stopper"/>
+        <!-- Test Tube -->
+        <path d="M 15 0 L 15 150 C 15 165, 55 165, 55 150 L 55 0 M 10 0 L 60 0" class="glass"/>
+        
+        <!-- Boiled Water -->
+        <path d="M 15 60 L 15 150 C 15 165, 55 165, 55 150 L 55 60 Z" class="water"/>
+        
+        <!-- Oil Layer -->
+        <path d="M 15 50 L 15 60 L 55 60 L 55 50 Z" class="oil"/>
+        
+        <!-- CLEAN Nail -->
+        <rect x="32" y="65" width="6" height="80" rx="3" class="nail"/>
+        <path d="M 31 67 L 39 67 L 35 60 Z" class="nail"/> <!-- head -->
+        
+        <text x="35" y="195" class="label" text-anchor="middle">Water only</text>
+        <text x="35" y="215" class="label" text-anchor="middle">No rust ✗</text>
+    </g>
+    
+    <line x1="515" y1="75" x2="535" y2="75" class="line"/>
+    <text x="540" y="70" class="label">Layer</text>
+    <text x="540" y="85" class="label">of oil</text>
+    
+    <line x1="515" y1="120" x2="535" y2="120" class="line"/>
+    <text x="540" y="115" class="label">Boiled</text>
+    <text x="540" y="130" class="label">water</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-ferroxyl',
       type: 'callout',
       data: {

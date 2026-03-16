@@ -26,6 +26,63 @@ export const note_olevel_chemistry_6_6_6 = {
       data: { text: 'Key Examples', level: 2 }
     },
     {
+      id: 'svg-ammonium-chloride',
+      type: 'svg',
+      data: {
+        caption: 'Reversible Reaction of Ammonium Chloride: On heating (forward), solid breaks into ammonia and hydrogen chloride gases. On cooling near the mouth (reverse), gases recombine into solid.',
+        svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Test tube -->
+  <path d="M 230 20 L 230 160 A 20 20 0 0 0 270 160 L 270 20" fill="none" stroke="var(--color-text)" stroke-width="3" />
+  <ellipse cx="250" cy="20" rx="20" ry="5" fill="none" stroke="var(--color-text)" stroke-width="3" />
+
+  <!-- Solid bottom (NH4Cl) -->
+  <path d="M 233 150 Q 250 145 267 150 L 267 160 A 17 20 0 0 1 233 160 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+  <text x="250" y="157" font-family="var(--font-sans)" font-size="10" fill="#475569" text-anchor="middle">NH₄Cl</text>
+
+  <!-- Heat -->
+  <path d="M 245 190 Q 250 180 255 190 T 260 185 T 250 175 T 240 185 T 245 190 Z" fill="#ef4444"/>
+  <text x="250" y="198" font-family="var(--font-sans)" font-size="10" fill="#ef4444" text-anchor="middle">Heat</text>
+
+  <!-- Gas rising -->
+  <path d="M 240 140 Q 245 120 240 100" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrow-up)"/>
+  <path d="M 260 140 Q 255 120 260 100" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrow-up)"/>
+  
+  <!-- Solid top (NH4Cl) forming on cool walls -->
+  <rect x="230" y="50" width="4" height="30" fill="#e2e8f0"/>
+  <rect x="266" y="50" width="4" height="30" fill="#e2e8f0"/>
+  <text x="285" y="65" font-family="var(--font-sans)" font-size="10" fill="#475569" text-anchor="start">White deposit</text>
+  <text x="285" y="77" font-family="var(--font-sans)" font-size="10" fill="#475569" text-anchor="start">of NH₄Cl forms</text>
+  <path d="M 280 65 L 272 65" fill="none" stroke="#475569" stroke-width="1"/>
+
+  <text x="110" y="60" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Reverse (Cooling)</text>
+  <text x="110" y="75" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">NH₃(g) + HCl(g) → NH₄Cl(s)</text>
+  
+  <text x="110" y="145" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Forward (Heating)</text>
+  <text x="110" y="160" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">NH₄Cl(s) → NH₃(g) + HCl(g)</text>
+
+  <!-- Markers -->
+  <defs>
+    <marker id="arrow-up" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <circle cx="215" cy="110" r="3" fill="#22c55e" />
+  <text x="195" y="113" font-family="var(--font-sans)" font-size="10" fill="#22c55e" text-anchor="end">NH₃</text>
+  <circle cx="285" cy="110" r="3" fill="#3b82f6" />
+  <text x="305" y="113" font-family="var(--font-sans)" font-size="10" fill="#3b82f6" text-anchor="start">HCl</text>
+
+  <rect x="350" y="40" width="130" height="60" rx="5" fill="var(--color-bg-secondary)" stroke="var(--color-border)"/>
+  <text x="360" y="55" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="start">Equations:</text>
+  <text x="360" y="70" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="start">Heat: solid → gas</text>
+  <text x="360" y="85" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="start">Cool: gas → solid</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'tbl-examples',
       type: 'comparisonTable',
       data: {

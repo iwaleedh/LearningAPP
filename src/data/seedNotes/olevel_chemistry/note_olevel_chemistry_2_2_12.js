@@ -21,6 +21,138 @@ export const note_olevel_chemistry_2_2_12 = {
       }
     },
     {
+      id: 'svg-metallic-bonding',
+      type: 'svg',
+      data: {
+        caption: 'The metallic lattice: A regular arrangement of positive ions surrounded by a sea of delocalised electrons.',
+        svg: `<svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Positive Ion Gradient -->
+    <radialGradient id="metal-ion" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </radialGradient>
+    <!-- Delocalised Electron -->
+    <radialGradient id="deloc-e" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#d97706" />
+    </radialGradient>
+  </defs>
+
+  <!-- Left: Metallic Lattice structure -->
+  <g transform="translate(100, 40)">
+    <text x="60" y="-20" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">Sea of Delocalised Electrons</text>
+    
+    <!-- Background glow representing the "sea" -->
+    <rect x="-30" y="-10" width="180" height="140" fill="#e0f2fe" rx="10"/>
+
+    <!-- Ions Row 1 -->
+    <circle cx="0" cy="18" r="16" fill="url(#metal-ion)"/>
+    <text x="0" y="23" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="40" cy="18" r="16" fill="url(#metal-ion)"/>
+    <text x="40" y="23" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="80" cy="18" r="16" fill="url(#metal-ion)"/>
+    <text x="80" y="23" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="120" cy="18" r="16" fill="url(#metal-ion)"/>
+    <text x="120" y="23" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+
+    <!-- Ions Row 2 -->
+    <circle cx="0" cy="60" r="16" fill="url(#metal-ion)"/>
+    <text x="0" y="65" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="40" cy="60" r="16" fill="url(#metal-ion)"/>
+    <text x="40" y="65" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="80" cy="60" r="16" fill="url(#metal-ion)"/>
+    <text x="80" y="65" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="120" cy="60" r="16" fill="url(#metal-ion)"/>
+    <text x="120" y="65" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+
+    <!-- Ions Row 3 -->
+    <circle cx="0" cy="102" r="16" fill="url(#metal-ion)"/>
+    <text x="0" y="107" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="40" cy="102" r="16" fill="url(#metal-ion)"/>
+    <text x="40" y="107" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="80" cy="102" r="16" fill="url(#metal-ion)"/>
+    <text x="80" y="107" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    
+    <circle cx="120" cy="102" r="16" fill="url(#metal-ion)"/>
+    <text x="120" y="107" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+
+    <!-- Delocalised Electrons -->
+    <circle cx="-15" cy="40" r="4" fill="url(#deloc-e)"/>
+    <circle cx="20" cy="0" r="4" fill="url(#deloc-e)"/>
+    <circle cx="20" cy="40" r="4" fill="url(#deloc-e)"/>
+    <circle cx="60" cy="40" r="4" fill="url(#deloc-e)"/>
+    <circle cx="100" cy="40" r="4" fill="url(#deloc-e)"/>
+    <circle cx="135" cy="40" r="4" fill="url(#deloc-e)"/>
+    
+    <circle cx="-15" cy="80" r="4" fill="url(#deloc-e)"/>
+    <circle cx="20" cy="80" r="4" fill="url(#deloc-e)"/>
+    <circle cx="60" cy="80" r="4" fill="url(#deloc-e)"/>
+    <circle cx="100" cy="80" r="4" fill="url(#deloc-e)"/>
+    <circle cx="135" cy="80" r="4" fill="url(#deloc-e)"/>
+
+    <circle cx="60" cy="120" r="4" fill="url(#deloc-e)"/>
+    <circle cx="20" cy="120" r="4" fill="url(#deloc-e)"/>
+
+    <!-- Legends labels -->
+    <circle cx="-40" cy="155" r="8" fill="url(#metal-ion)"/>
+    <text x="-25" y="160" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Metal cation</text>
+    <circle cx="60" cy="155" r="4" fill="url(#deloc-e)"/>
+    <text x="70" y="160" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">e⁻ (delocalised)</text>
+  </g>
+
+  <!-- Right: Malleability -->
+  <g transform="translate(400, 40)">
+    <text x="60" y="-20" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">Malleability</text>
+    <text x="60" y="-5" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Layers slide, bonds remain</text>
+    
+    <rect x="-30" y="5" width="180" height="110" fill="#e0f2fe" rx="10"/>
+
+    <!-- Top layer pushed right -->
+    <path d="M-50 20 L-20 20 L-30 10 M-20 20 L-30 30" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <g transform="translate(20, 0)">
+      <circle cx="0" cy="25" r="16" fill="url(#metal-ion)"/>
+      <text x="0" y="30" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+      
+      <circle cx="40" cy="25" r="16" fill="url(#metal-ion)"/>
+      <text x="40" y="30" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+      
+      <circle cx="80" cy="25" r="16" fill="url(#metal-ion)"/>
+      <text x="80" y="30" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+      
+      <circle cx="120" cy="25" r="16" fill="url(#metal-ion)"/>
+      <text x="120" y="30" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    </g>
+
+    <!-- Bottom two layers stay put -->
+    <circle cx="0" cy="65" r="16" fill="url(#metal-ion)"/>
+    <text x="0" y="70" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    <circle cx="40" cy="65" r="16" fill="url(#metal-ion)"/>
+    <text x="40" y="70" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    <circle cx="80" cy="65" r="16" fill="url(#metal-ion)"/>
+    <text x="80" y="70" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+    <circle cx="120" cy="65" r="16" fill="url(#metal-ion)"/>
+    <text x="120" y="70" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="#fff">+</text>
+
+    <!-- Random electrons shifting to adapt -->
+    <circle cx="10" cy="45" r="4" fill="url(#deloc-e)"/>
+    <circle cx="50" cy="45" r="4" fill="url(#deloc-e)"/>
+    <circle cx="90" cy="45" r="4" fill="url(#deloc-e)"/>
+    <circle cx="130" cy="45" r="4" fill="url(#deloc-e)"/>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Properties of Metals Explained', level: 2 }

@@ -54,6 +54,100 @@ export const note_olevel_chemistry_5_5_0 = {
       }
     },
     {
+      id: 'svg-energy-profiles',
+      type: 'svg',
+      data: {
+        caption: 'Energy profile diagrams for exothermic (left) and endothermic (right) reactions.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <defs>
+        <style>
+            .axis { stroke: var(--color-text); stroke-width: 2; fill: none; }
+            .curve { stroke: var(--color-primary); stroke-width: 3; fill: none; }
+            .level { stroke: var(--color-text); stroke-width: 2; }
+            .text { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .text-sm { font-family: var(--font-sans); font-size: 12px; fill: var(--color-text); }
+            .arrow { stroke: var(--color-text-secondary); stroke-width: 1.5; fill: none; }
+            .dash { stroke: var(--color-text-secondary); stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+        </style>
+        <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="var(--color-text-secondary)"/>
+        </marker>
+        <marker id="arrowhead-start" markerWidth="6" markerHeight="4" refX="0" refY="2" orient="auto">
+            <polygon points="6 0, 0 2, 6 4" fill="var(--color-text-secondary)"/>
+        </marker>
+    </defs>
+
+    <!-- Exothermic Graph (Left) -->
+    <g transform="translate(30, 20)">
+        <line x1="20" y1="200" x2="270" y2="200" class="axis"/> <!-- x-axis -->
+        <line x1="20" y1="20" x2="20" y2="200" class="axis"/> <!-- y-axis -->
+        
+        <text x="145" y="225" class="text" text-anchor="middle">Reaction progress</text>
+        <text x="-110" y="5" class="text" transform="rotate(-90)" text-anchor="middle">Energy</text>
+        
+        <text x="145" y="10" class="text" text-anchor="middle" font-weight="bold">Exothermic</text>
+        
+        <!-- Reactants / Products Levels -->
+        <line x1="30" y1="80" x2="90" y2="80" class="level"/>
+        <text x="60" y="75" class="text-sm" text-anchor="middle">Reactants</text>
+        
+        <line x1="180" y1="160" x2="240" y2="160" class="level"/>
+        <text x="210" y="175" class="text-sm" text-anchor="middle">Products</text>
+        
+        <!-- Curve -->
+        <path d="M 90 80 C 130 80, 110 40, 140 40 C 170 40, 150 160, 180 160" class="curve"/>
+        
+        <!-- Dash lines -->
+        <line x1="90" y1="80" x2="160" y2="80" class="dash"/>
+        <line x1="140" y1="40" x2="160" y2="40" class="dash"/>
+        <line x1="180" y1="160" x2="130" y2="160" class="dash"/>
+        
+        <!-- Ea Arrow -->
+        <line x1="105" y1="80" x2="105" y2="42" class="arrow" marker-end="url(#arrowhead)"/>
+        <text x="110" y="65" class="text-sm">Eₐ</text>
+        
+        <!-- dH Arrow -->
+        <line x1="145" y1="80" x2="145" y2="158" class="arrow" marker-end="url(#arrowhead)"/>
+        <text x="150" y="125" class="text-sm">ΔH (–)</text>
+    </g>
+
+    <!-- Endothermic Graph (Right) -->
+    <g transform="translate(320, 20)">
+        <line x1="20" y1="200" x2="270" y2="200" class="axis"/> <!-- x-axis -->
+        <line x1="20" y1="20" x2="20" y2="200" class="axis"/> <!-- y-axis -->
+        
+        <text x="145" y="225" class="text" text-anchor="middle">Reaction progress</text>
+        <text x="-110" y="5" class="text" transform="rotate(-90)" text-anchor="middle">Energy</text>
+        
+        <text x="145" y="10" class="text" text-anchor="middle" font-weight="bold">Endothermic</text>
+        
+        <!-- Reactants / Products Levels -->
+        <line x1="30" y1="160" x2="90" y2="160" class="level"/>
+        <text x="60" y="175" class="text-sm" text-anchor="middle">Reactants</text>
+        
+        <line x1="180" y1="80" x2="240" y2="80" class="level"/>
+        <text x="210" y="75" class="text-sm" text-anchor="middle">Products</text>
+        
+        <!-- Curve -->
+        <path d="M 90 160 C 130 160, 110 30, 140 30 C 170 30, 150 80, 180 80" class="curve"/>
+        
+        <!-- Dash lines -->
+        <line x1="90" y1="160" x2="160" y2="160" class="dash"/>
+        <line x1="140" y1="30" x2="160" y2="30" class="dash"/>
+        <line x1="180" y1="80" x2="130" y2="80" class="dash"/>
+        
+        <!-- Ea Arrow -->
+        <line x1="105" y1="160" x2="105" y2="32" class="arrow" marker-end="url(#arrowhead)"/>
+        <text x="110" y="105" class="text-sm">Eₐ</text>
+        
+        <!-- dH Arrow -->
+        <line x1="145" y1="160" x2="145" y2="82" class="arrow" marker-end="url(#arrowhead)"/>
+        <text x="150" y="125" class="text-sm">ΔH (+)</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

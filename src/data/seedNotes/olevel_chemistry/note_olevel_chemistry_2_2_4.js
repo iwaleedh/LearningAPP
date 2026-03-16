@@ -65,6 +65,54 @@ export const note_olevel_chemistry_2_2_4 = {
       }
     },
     {
+      id: 'svg-nacl-ionic',
+      type: 'svg',
+      data: {
+        caption: 'Dot-and-cross diagram for sodium chloride (NaCl). The sodium atom transfers its outer electron to the chlorine atom.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">
+    <defs>
+        <style>
+            .nucleus { font-weight: bold; font-family: var(--font-sans); font-size: 16px; text-anchor: middle; dominant-baseline: middle; fill: var(--color-text); }
+            .electron-dot { fill: #e74c3c; }
+            .electron-cross { stroke: #3498db; stroke-width: 2; stroke-linecap: round; }
+            .shell { fill: none; stroke: var(--color-text-tertiary); stroke-width: 1.5; stroke-dasharray: 4,4; }
+            .bracket { fill: none; stroke: var(--color-text); stroke-width: 2; }
+            .charge { font-weight: bold; font-family: var(--font-sans); font-size: 16px; fill: var(--color-text); }
+        </style>
+    </defs>
+    <!-- Na+ Ion -->
+    <text x="100" y="75" class="nucleus">Na</text>
+    <circle cx="100" cy="75" r="45" class="shell"/>
+    <circle cx="100" cy="30" r="4" class="electron-dot"/>
+    <circle cx="100" cy="120" r="4" class="electron-dot"/>
+    <circle cx="55" cy="75" r="4" class="electron-dot"/>
+    <circle cx="145" cy="75" r="4" class="electron-dot"/>
+    <circle cx="68" cy="43" r="4" class="electron-dot"/>
+    <circle cx="132" cy="107" r="4" class="electron-dot"/>
+    <circle cx="132" cy="43" r="4" class="electron-dot"/>
+    <circle cx="68" cy="107" r="4" class="electron-dot"/>
+    <path d="M 45 20 L 40 20 L 40 130 L 45 130" class="bracket"/>
+    <path d="M 155 20 L 160 20 L 160 130 L 155 130" class="bracket"/>
+    <text x="165" y="25" class="charge">+</text>
+
+    <!-- Cl- Ion -->
+    <text x="280" y="75" class="nucleus">Cl</text>
+    <circle cx="280" cy="75" r="45" class="shell"/>
+    <circle cx="235" cy="75" r="4" class="electron-dot"/>
+    <path d="M 276 26 L 284 34 M 284 26 L 276 34" class="electron-cross"/>
+    <path d="M 276 116 L 284 124 M 284 116 L 276 124" class="electron-cross"/>
+    <path d="M 321 71 L 329 79 M 329 71 L 321 79" class="electron-cross"/>
+    <path d="M 244 39 L 252 47 M 252 39 L 244 47" class="electron-cross"/>
+    <path d="M 308 103 L 316 111 M 316 103 L 308 111" class="electron-cross"/>
+    <path d="M 308 39 L 316 47 M 316 39 L 308 47" class="electron-cross"/>
+    <path d="M 244 103 L 252 111 M 252 103 L 244 111" class="electron-cross"/>
+    <path d="M 225 20 L 220 20 L 220 130 L 225 130" class="bracket"/>
+    <path d="M 335 20 L 340 20 L 340 130 L 335 130" class="bracket"/>
+    <text x="345" y="25" class="charge">−</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip1',
       type: 'callout',
       data: {

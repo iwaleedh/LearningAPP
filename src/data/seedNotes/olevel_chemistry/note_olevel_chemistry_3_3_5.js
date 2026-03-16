@@ -21,6 +21,43 @@ export const note_olevel_chemistry_3_3_5 = {
       }
     },
     {
+      id: 'svg-mole-triangle',
+      type: 'svg',
+      data: {
+        caption: 'The formula triangle. Cover the one you want to find: side-by-side means multiply, top-and-bottom means divide.',
+        svg: `<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(200, 30)">
+    <!-- Triangle Base -->
+    <polygon points="0,0 -120,160 120,160" fill="#e0f2fe" stroke="var(--color-primary)" stroke-width="4" stroke-linejoin="round"/>
+    
+    <!-- Divider lines -->
+    <line x1="-60" y1="80" x2="60" y2="80" stroke="var(--color-primary)" stroke-width="4"/>
+    <line x1="0" y1="80" x2="0" y2="160" stroke="var(--color-primary)" stroke-width="4"/>
+
+    <!-- Labels -->
+    <!-- Top: Mass (m) -->
+    <text x="0" y="55" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">m</text>
+    <text x="0" y="70" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(g)</text>
+
+    <!-- Bottom Left: moles (n) -->
+    <text x="-50" y="130" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">n</text>
+    <text x="-50" y="145" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
+
+    <!-- Bottom Right: Molar mass (M) -->
+    <text x="50" y="130" font-family="var(--font-sans)" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">M</text>
+    <text x="50" y="145" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(g/mol)</text>
+
+    <!-- Operators -->
+    <text x="0" y="130" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">×</text>
+    <!-- division sign top left -->
+    <text x="-30" y="85" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">÷</text>
+    <!-- division sign top right -->
+    <text x="30" y="85" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">÷</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-worked1',
       type: 'callout',
       data: {

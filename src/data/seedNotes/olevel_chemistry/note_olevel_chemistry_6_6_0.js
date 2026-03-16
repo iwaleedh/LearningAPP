@@ -45,6 +45,71 @@ export const note_olevel_chemistry_6_6_0 = {
       }
     },
     {
+      id: 'svg-physical-chemical',
+      type: 'svg',
+      data: {
+        caption: 'Physical changes (like melting ice) are easily reversed and form no new substances. Chemical changes (like burning magnesium) are difficult to reverse and form new substances (MgO).',
+        svg: `<svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="var(--color-surface)" rx="8" />
+  
+  <line x1="300" y1="20" x2="300" y2="200" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <!-- Left Side: Physical Change -->
+  <text x="150" y="40" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Physical Change</text>
+  <text x="150" y="60" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Melting Ice</text>
+
+  <!-- Ice Cube -->
+  <rect x="70" y="90" width="40" height="40" fill="#bae6fd" stroke="#0284c7" stroke-width="2" rx="4"/>
+  <text x="90" y="115" font-family="var(--font-sans)" font-size="20" fill="#0284c7" text-anchor="middle">🧊</text>
+  <text x="90" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">H₂O (s)</text>
+
+  <!-- Reversible Arrow -->
+  <path d="M 125 105 L 165 105" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#arrow-fwd)"/>
+  <path d="M 165 115 L 125 115" stroke="var(--color-primary)" stroke-width="2" marker-end="url(#arrow-back)"/>
+  
+  <!-- Water Puddle -->
+  <path d="M 180 125 Q 190 115 200 125 Q 220 120 230 125 Q 240 135 220 135 L 185 135 Z" fill="#38bdf8" />
+  <text x="205" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">H₂O (l)</text>
+  
+  <text x="150" y="180" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="var(--color-success)" text-anchor="middle">Reversible • Same Molecule</text>
+
+  <!-- Right Side: Chemical Change -->
+  <text x="450" y="40" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Chemical Change</text>
+  <text x="450" y="60" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Burning Magnesium</text>
+
+  <!-- Mg Ribbon -->
+  <rect x="360" y="105" width="40" height="8" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+  <text x="380" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Mg + O₂</text>
+
+  <!-- Irreversible Arrow -->
+  <path d="M 415 110 L 465 110" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-fwd-red)"/>
+  
+  <!-- Fire / Glowing MgO -->
+  <circle cx="510" cy="100" r="16" fill="#fef08a" />
+  <circle cx="510" cy="100" r="10" fill="#fde047" />
+  <path d="M 495 115 Q 510 90 525 115" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+  <text x="510" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">MgO</text>
+  <text x="510" y="145" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">(White Ash)</text>
+
+  <text x="450" y="180" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="#ef4444" text-anchor="middle">Irreversible • New Substance</text>
+
+  <!-- Marker Defs -->
+  <defs>
+    <marker id="arrow-fwd" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="var(--color-primary)"/>
+    </marker>
+    <marker id="arrow-back" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="6 0, 0 2, 6 4" fill="var(--color-primary)"/>
+    </marker>
+    <marker id="arrow-fwd-red" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#ef4444"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

@@ -21,6 +21,101 @@ export const note_olevel_chemistry_2_2_2 = {
       }
     },
     {
+      id: 'svg-shell-filling',
+      type: 'svg',
+      data: {
+        caption: 'Electron shell filling examples: Helium (2), Oxygen (2,6), and Sodium (2,8,1)',
+        svg: `<svg viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Electron point -->
+    <radialGradient id="elec" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </radialGradient>
+    <!-- Nucleus -->
+    <radialGradient id="nuc" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </radialGradient>
+  </defs>
+
+  <!-- Helium (2) -->
+  <g transform="translate(150, 120)">
+    <!-- Symbol -->
+    <circle cx="0" cy="0" r="14" fill="url(#nuc)" />
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">He</text>
+    
+    <!-- Shell 1 -->
+    <circle cx="0" cy="0" r="40" fill="none" stroke="var(--color-border)" stroke-width="2" />
+    <!-- 2 electrons -->
+    <circle cx="0" cy="-40" r="6" fill="url(#elec)" />
+    <circle cx="0" cy="40" r="6" fill="url(#elec)" />
+
+    <text x="0" y="90" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="var(--color-text)">Helium</text>
+    <text x="0" y="110" text-anchor="middle" font-family="var(--font-sans)" font-size="14" fill="var(--color-text-secondary)">Config: 2</text>
+  </g>
+
+  <!-- Oxygen (2,6) -->
+  <g transform="translate(400, 120)">
+    <!-- Symbol -->
+    <circle cx="0" cy="0" r="14" fill="url(#nuc)" />
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">O</text>
+    
+    <!-- Shell 1 -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="var(--color-border)" stroke-width="2" />
+    <!-- 2 electrons -->
+    <circle cx="0" cy="-30" r="6" fill="url(#elec)" />
+    <circle cx="0" cy="30" r="6" fill="url(#elec)" />
+
+    <!-- Shell 2 -->
+    <circle cx="0" cy="0" r="60" fill="none" stroke="var(--color-border)" stroke-width="2" />
+    <!-- 6 electrons -->
+    <circle cx="0" cy="-60" r="6" fill="url(#elec)" />
+    <circle cx="0" cy="60" r="6" fill="url(#elec)" />
+    <circle cx="60" cy="0" r="6" fill="url(#elec)" />
+    <circle cx="-60" cy="0" r="6" fill="url(#elec)" />
+    <circle cx="42.4" cy="-42.4" r="6" fill="url(#elec)" />
+    <circle cx="-42.4" cy="42.4" r="6" fill="url(#elec)" />
+
+    <text x="0" y="90" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="var(--color-text)">Oxygen</text>
+    <text x="0" y="110" text-anchor="middle" font-family="var(--font-sans)" font-size="14" fill="var(--color-text-secondary)">Config: 2, 6</text>
+  </g>
+
+  <!-- Sodium (2,8,1) -->
+  <g transform="translate(670, 120)">
+    <!-- Symbol -->
+    <circle cx="0" cy="0" r="14" fill="url(#nuc)" />
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">Na</text>
+    
+    <!-- Shell 1 -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="var(--color-border)" stroke-width="2" />
+    <circle cx="0" cy="-25" r="6" fill="url(#elec)" />
+    <circle cx="0" cy="25" r="6" fill="url(#elec)" />
+
+    <!-- Shell 2 -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="var(--color-border)" stroke-width="2" />
+    <!-- 8 electrons -->
+    <circle cx="0" cy="-50" r="6" fill="url(#elec)" />
+    <circle cx="0" cy="50" r="6" fill="url(#elec)" />
+    <circle cx="50" cy="0" r="6" fill="url(#elec)" />
+    <circle cx="-50" cy="0" r="6" fill="url(#elec)" />
+    <circle cx="35.3" cy="-35.3" r="6" fill="url(#elec)" />
+    <circle cx="-35.3" cy="-35.3" r="6" fill="url(#elec)" />
+    <circle cx="35.3" cy="35.3" r="6" fill="url(#elec)" />
+    <circle cx="-35.3" cy="35.3" r="6" fill="url(#elec)" />
+
+    <!-- Shell 3 -->
+    <circle cx="0" cy="0" r="75" fill="none" stroke="var(--color-border)" stroke-width="2" />
+    <!-- 1 electron -->
+    <circle cx="0" cy="-75" r="6" fill="url(#elec)" />
+
+    <text x="0" y="95" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="var(--color-text)">Sodium</text>
+    <text x="0" y="115" text-anchor="middle" font-family="var(--font-sans)" font-size="14" fill="var(--color-text-secondary)">Config: 2, 8, 1</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Electronic Configurations of Elements 1–20', level: 2 }

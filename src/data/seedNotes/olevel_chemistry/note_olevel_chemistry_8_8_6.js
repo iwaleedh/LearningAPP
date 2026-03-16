@@ -30,6 +30,65 @@ export const note_olevel_chemistry_8_8_6 = {
       }
     },
     {
+      id: 'svg-noble',
+      type: 'svg',
+      data: {
+        caption: 'Noble gases are unreactive due to their full outer electron shells. Their inertness makes them useful safely in daily applications.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Helium Atom -->
+  <text x="120" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Helium (He)</text>
+  <circle cx="120" cy="110" r="10" fill="#fca5a5" />
+  <text x="120" y="114" font-family="var(--font-sans)" font-size="10" fill="#7f1d1d" text-anchor="middle">2p</text>
+  
+  <circle cx="120" cy="110" r="35" fill="none" stroke="var(--color-text)" stroke-width="1.5"/>
+  <circle cx="120" cy="75" r="4" fill="#3b82f6"/>
+  <circle cx="120" cy="145" r="4" fill="#3b82f6"/>
+  
+  <text x="120" y="180" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Full outer shell</text>
+  <text x="120" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">(2 electrons)</text>
+
+  <!-- Helium Balloon -->
+  <path d="M 220 80 Q 240 20 260 80 Q 260 110 240 130 Q 220 110 220 80 Z" fill="#fca5a5"/>
+  <path d="M 238 130 L 242 130 L 244 140 L 236 140 Z" fill="#94a3b8"/>
+  <path d="M 240 140 Q 245 160 235 180" fill="none" stroke="var(--color-text)" stroke-width="1"/>
+  <text x="240" y="215" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">He Balloon</text>
+
+  <!-- Neon Atom -->
+  <text x="400" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Neon (Ne)</text>
+  <circle cx="400" cy="110" r="12" fill="#fca5a5" />
+  <text x="400" y="114" font-family="var(--font-sans)" font-size="10" fill="#7f1d1d" text-anchor="middle">10p</text>
+
+  <circle cx="400" cy="110" r="25" fill="none" stroke="var(--color-text)" stroke-width="1.5"/>
+  <circle cx="400" cy="85" r="4" fill="#3b82f6"/>
+  <circle cx="400" cy="135" r="4" fill="#3b82f6"/>
+
+  <circle cx="400" cy="110" r="50" fill="none" stroke="var(--color-text)" stroke-width="1.5"/>
+  <circle cx="400" cy="60" r="4" fill="#3b82f6"/>
+  <circle cx="400" cy="160" r="4" fill="#3b82f6"/>
+  <circle cx="450" cy="110" r="4" fill="#3b82f6"/>
+  <circle cx="350" cy="110" r="4" fill="#3b82f6"/>
+  <circle cx="435" cy="75" r="4" fill="#3b82f6"/>
+  <circle cx="365" cy="145" r="4" fill="#3b82f6"/>
+  <circle cx="365" cy="75" r="4" fill="#3b82f6"/>
+  <circle cx="435" cy="145" r="4" fill="#3b82f6"/>
+
+  <text x="400" y="180" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Full outer shell</text>
+  <text x="400" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">(8 electrons)</text>
+
+  <!-- Light bulb (Argon) -->
+  <path d="M 520 80 Q 550 80 550 110 Q 550 140 535 150 L 535 170 L 505 170 L 505 150 Q 490 140 490 110 Q 490 80 520 80 Z" fill="#fef08a" stroke="#d97706" stroke-width="2"/>
+  <path d="M 505 170 L 535 170 L 530 190 L 510 190 Z" fill="#94a3b8"/>
+  <path d="M 510 170 L 515 110 M 530 170 L 525 110" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M 515 110 Q 520 90 525 110" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  <text x="520" y="125" font-family="var(--font-sans)" font-size="10" fill="#92400e" text-anchor="middle">Ar</text>
+  <text x="520" y="215" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Ar Bulb</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'tbl-uses',
       type: 'comparisonTable',
       data: {

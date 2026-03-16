@@ -30,6 +30,60 @@ export const note_olevel_chemistry_7_7_7 = {
       }
     },
     {
+      id: 'svg-heating-hydrated',
+      type: 'svg',
+      data: {
+        caption: 'Heating hydrated copper(II) sulfate removes water of crystallisation, turning blue crystals into white powder.',
+        svg: `<svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Before Heating (Blue Crystals) -->
+  <text x="120" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Hydrated CuSO₄·5H₂O</text>
+  
+  <path d="M 80 150 L 160 150 L 150 170 L 90 170 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M 80 150 C 120 160 160 150 160 150" fill="none" stroke="#64748b" stroke-width="1"/>
+  
+  <polygon points="100,140 110,145 105,155 95,150" fill="#3b82f6"/>
+  <polygon points="120,135 135,135 130,150 115,145" fill="#2563eb"/>
+  <polygon points="140,140 150,145 145,155 135,150" fill="#60a5fa"/>
+  <polygon points="110,145 125,148 120,158 105,155" fill="#1d4ed8"/>
+  <text x="120" y="195" font-family="var(--font-sans)" font-size="12" fill="#2563eb" text-anchor="middle">Blue crystals</text>
+
+  <!-- Heat Arrow -->
+  <path d="M 190 140 L 260 140" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-head-red)" />
+  <text x="225" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">HEAT</text>
+  <path d="M 260 160 L 190 160" fill="none" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrow-head-blue)" />
+  <text x="225" y="180" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">+ H₂O</text>
+
+  <!-- After Heating (White Powder) -->
+  <text x="380" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Anhydrous CuSO₄</text>
+
+  <path d="M 340 150 L 420 150 L 410 170 L 350 170 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M 340 150 C 380 160 420 150 420 150" fill="none" stroke="#64748b" stroke-width="1"/>
+
+  <path d="M 350 150 Q 380 135 410 150 L 410 153 Q 380 140 350 153 Z" fill="#f8fafc"/>
+  <circle cx="360" cy="148" r="1.5" fill="#e2e8f0"/>
+  <circle cx="380" cy="142" r="1" fill="#e2e8f0"/>
+  <circle cx="400" cy="147" r="1.5" fill="#e2e8f0"/>
+  <text x="380" y="195" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">White powder</text>
+
+  <!-- Water vapor -->
+  <path d="M 360 120 Q 370 100 365 80" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+  <path d="M 390 125 Q 400 90 390 60" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="380" y="60" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">H₂O(g) escapes</text>
+
+  <defs>
+    <marker id="arrow-head-red" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrow-head-blue" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-worked',
       type: 'callout',
       data: {

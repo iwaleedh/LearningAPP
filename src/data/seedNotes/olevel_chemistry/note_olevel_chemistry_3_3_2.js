@@ -72,6 +72,79 @@ export const note_olevel_chemistry_3_3_2 = {
       }
     },
     {
+      id: 'svg-balancing-scale',
+      type: 'svg',
+      data: {
+        caption: 'Visualising a balanced equation: Conservation of mass means the number of atoms of each element is equal on both sides.',
+        svg: `<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for molecules -->
+    <radialGradient id="h-atom" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </radialGradient>
+    <radialGradient id="o-atom" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fca5a5" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </radialGradient>
+  </defs>
+
+  <!-- Left Side: Reactants -->
+  <g transform="translate(100, 100)">
+    <!-- 2H2 -->
+    <g transform="translate(-50, -20)">
+      <circle cx="-10" cy="0" r="10" fill="url(#h-atom)"/>
+      <circle cx="10" cy="0" r="10" fill="url(#h-atom)"/>
+      <text x="0" y="25" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">H₂</text>
+    </g>
+    <g transform="translate(-10, -50)">
+      <circle cx="-10" cy="0" r="10" fill="url(#h-atom)"/>
+      <circle cx="10" cy="0" r="10" fill="url(#h-atom)"/>
+      <text x="0" y="25" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">H₂</text>
+    </g>
+    
+    <!-- Plus sign -->
+    <text x="40" y="-10" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="var(--color-text)" text-anchor="middle">+</text>
+
+    <!-- O2 -->
+    <g transform="translate(90, -30)">
+      <circle cx="-12" cy="0" r="14" fill="url(#o-atom)"/>
+      <circle cx="12" cy="0" r="14" fill="url(#o-atom)"/>
+      <text x="0" y="30" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">O₂</text>
+    </g>
+  </g>
+
+  <!-- Yield Arrow -->
+  <path d="M 280 80 L 320 80" stroke="var(--color-text)" stroke-width="4"/>
+  <polygon points="320,70 335,80 320,90" fill="var(--color-text)"/>
+
+  <!-- Right Side: Products -->
+  <g transform="translate(420, 100)">
+    <!-- 2 H2O -->
+    <g transform="translate(-40, -40)">
+      <circle cx="0" cy="0" r="14" fill="url(#o-atom)"/>
+      <circle cx="-12" cy="10" r="10" fill="url(#h-atom)"/>
+      <circle cx="12" cy="10" r="10" fill="url(#h-atom)"/>
+      <text x="0" y="35" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">H₂O</text>
+    </g>
+    <g transform="translate(40, -10)">
+      <circle cx="0" cy="0" r="14" fill="url(#o-atom)"/>
+      <circle cx="-12" cy="10" r="10" fill="url(#h-atom)"/>
+      <circle cx="12" cy="10" r="10" fill="url(#h-atom)"/>
+      <text x="0" y="35" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">H₂O</text>
+    </g>
+  </g>
+
+  <!-- Scale/Balance (visual indicator) -->
+  <line x1="50" y1="160" x2="550" y2="160" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="300,160 290,180 310,180" fill="#f59e0b"/>
+  
+  <text x="150" y="190" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Reactants: 4 H, 2 O</text>
+  <text x="450" y="190" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Products: 4 H, 2 O</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

@@ -36,6 +36,82 @@ export const note_olevel_chemistry_6_6_1 = {
       }
     },
     {
+      id: 'svg-measuring-rates',
+      type: 'svg',
+      data: {
+        caption: 'Methods for measuring the rate of reaction. Left: Collecting gas using a gas syringe. Right: Measuring mass loss of a gas on a balance.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+  
+  <line x1="300" y1="20" x2="300" y2="220" stroke="var(--color-border)" stroke-width="2" stroke-dasharray="8,8" />
+
+  <!-- LEFT: Gas Syringe Method -->
+  <text x="150" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Method 1: Gas Collection</text>
+  
+  <!-- Conical Flask -->
+  <path d="M 60 180 L 110 180 L 95 120 L 95 90 L 75 90 L 75 120 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <!-- Liquid / Reaction mixture -->
+  <path d="M 65 180 L 105 180 L 97 140 L 73 140 Z" fill="#bae6fd" opacity="0.6"/>
+  <!-- Marble chips (dots) -->
+  <circle cx="75" cy="170" r="3" fill="#475569" />
+  <circle cx="85" cy="175" r="4" fill="#475569" />
+  <circle cx="95" cy="168" r="3" fill="#475569" />
+  
+  <!-- Bung / Delivery tube -->
+  <rect x="75" y="80" width="20" height="10" fill="#334155" />
+  <path d="M 85 80 L 85 60 L 160 60 L 160 95 L 180 95" fill="none" stroke="#94a3b8" stroke-width="4"/>
+  
+  <!-- Gas Syringe -->
+  <rect x="180" y="80" width="80" height="30" fill="none" stroke="#64748b" stroke-width="2"/>
+  <!-- Plunger -->
+  <rect x="220" y="82" width="60" height="26" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+  <line x1="280" y1="82" x2="280" y2="108" stroke="#000" stroke-width="2"/>
+  <rect x="280" y="90" width="10" height="10" fill="#475569"/>
+  <!-- Graduations -->
+  <line x1="190" y1="80" x2="190" y2="85" stroke="#64748b" stroke-width="1"/><line x1="200" y1="80" x2="200" y2="85" stroke="#64748b" stroke-width="1"/><line x1="210" y1="80" x2="210" y2="85" stroke="#64748b" stroke-width="1"/><line x1="220" y1="80" x2="220" y2="85" stroke="#64748b" stroke-width="1"/><line x1="230" y1="80" x2="230" y2="85" stroke="#64748b" stroke-width="1"/>
+  
+  <text x="220" y="130" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary-dark)" text-anchor="middle">Read Gas Vol.</text>
+  <text x="85" y="200" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Acid + Marble</text>
+
+
+  <!-- RIGHT: Mass Loss Method -->
+  <text x="450" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Method 2: Mass Loss</text>
+  
+  <!-- Scale / Balance -->
+  <rect x="400" y="160" width="100" height="30" fill="#94a3b8" rx="4"/>
+  <rect x="420" y="155" width="60" height="5" fill="#cbd5e1" />
+  <rect x="430" y="170" width="40" height="15" fill="#fff" rx="2"/>
+  <text x="450" y="182" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="red" text-anchor="middle">45.2 g</text>
+  
+  <!-- Conical Flask -->
+  <path d="M 425 155 L 475 155 L 460 95 L 460 65 L 440 65 L 440 95 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <!-- Liquid -->
+  <path d="M 430 155 L 470 155 L 462 115 L 438 115 Z" fill="#bae6fd" opacity="0.6"/>
+  
+  <!-- Cotton Wool Bung -->
+  <path d="M 435 60 Q 445 50 450 60 Q 460 55 465 65 L 435 65 Z" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="450" y="47" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">Cotton wool</text>
+  <text x="450" y="55" font-family="var(--font-sans)" font-size="9" fill="#94a3b8" text-anchor="middle">(lets gas out</text>
+  <text x="450" y="63" font-family="var(--font-sans)" font-size="9" fill="#94a3b8" text-anchor="middle">keeps spray in)</text>
+
+  <!-- Bubbles & Gas escaping -->
+  <circle cx="445" cy="145" r="2" fill="#fff" />
+  <circle cx="455" cy="135" r="2.5" fill="#fff" />
+  <circle cx="450" cy="125" r="2" fill="#fff" />
+  
+  <path d="M 440 40 Q 430 30 435 20 M 460 40 Q 470 30 465 20 M 450 40 Q 450 30 450 15" stroke="var(--color-primary-50)" stroke-width="2" fill="none" opacity="0.8"/>
+  <text x="500" y="30" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary)" font-style="italic">Gas CO₂ escapes</text>
+  
+  <!-- Stop-clock -->
+  <circle cx="360" cy="70" r="16" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <line x1="360" y1="70" x2="368" y2="62" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="360" y1="54" x2="360" y2="50" stroke="#475569" stroke-width="2"/>
+  <text x="360" y="100" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">Stopwatch</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-catalyst',
       type: 'callout',
       data: {

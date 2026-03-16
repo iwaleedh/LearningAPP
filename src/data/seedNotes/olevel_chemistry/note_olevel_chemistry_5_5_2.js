@@ -56,6 +56,80 @@ export const note_olevel_chemistry_5_5_2 = {
       }
     },
     {
+      id: 'svg-bond-energy',
+      type: 'svg',
+      data: {
+        caption: 'Visualisation of H₂ + Cl₂ → 2HCl in terms of bond breaking (endothermic) and bond forming (exothermic).',
+        svg: `<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad-h" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fdba74" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </radialGradient>
+    <radialGradient id="grad-cl" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </radialGradient>
+    <marker id="arrow" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="var(--color-primary)"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Step 1: Reactants -->
+  <!-- H2 Molecule -->
+  <circle cx="80" cy="80" r="14" fill="url(#grad-h)"/>
+  <circle cx="106" cy="80" r="14" fill="url(#grad-h)"/>
+  <line x1="80" y1="80" x2="106" y2="80" stroke="#000" stroke-width="2"/>
+  <text x="93" y="115" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">H₂ (436 kJ)</text>
+
+  <!-- Plus -->
+  <text x="140" y="86" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-text)" text-anchor="middle">+</text>
+
+  <!-- Cl2 Molecule -->
+  <circle cx="170" cy="80" r="18" fill="url(#grad-cl)"/>
+  <circle cx="204" cy="80" r="18" fill="url(#grad-cl)"/>
+  <line x1="170" y1="80" x2="204" y2="80" stroke="#000" stroke-width="2"/>
+  <text x="187" y="115" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Cl₂ (242 kJ)</text>
+
+  <!-- Breaking Energy Arrow -->
+  <path d="M 140 140 C 140 170, 260 170, 260 140" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="200" y="180" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">+ 678 kJ (Absorbed)</text>
+
+  <!-- Step 2: Separate Atoms (Intermediate) -->
+  <circle cx="290" cy="60" r="14" fill="url(#grad-h)"/>
+  <circle cx="290" cy="100" r="14" fill="url(#grad-h)"/>
+  <circle cx="330" cy="50" r="18" fill="url(#grad-cl)"/>
+  <circle cx="330" cy="110" r="18" fill="url(#grad-cl)"/>
+  
+  <text x="310" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#64748b" text-anchor="middle">Isolated Atoms</text>
+
+  <!-- Forming Energy Arrow -->
+  <path d="M 360 140 C 360 170, 480 170, 480 140" stroke="#0ea5e9" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="420" y="180" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#0ea5e9" text-anchor="middle">- 864 kJ (Released)</text>
+
+  <!-- Step 3: Products (HCl) -->
+  <!-- HCl 1 -->
+  <circle cx="480" cy="60" r="14" fill="url(#grad-h)"/>
+  <circle cx="510" cy="60" r="18" fill="url(#grad-cl)"/>
+  <line x1="480" y1="60" x2="510" y2="60" stroke="#000" stroke-width="2"/>
+  
+  <!-- HCl 2 -->
+  <circle cx="480" cy="100" r="14" fill="url(#grad-h)"/>
+  <circle cx="510" cy="100" r="18" fill="url(#grad-cl)"/>
+  <line x1="480" y1="100" x2="510" y2="100" stroke="#000" stroke-width="2"/>
+
+  <text x="495" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">2 x HCl (432 kJ each)</text>
+  
+  <!-- Top Overall delta H -->
+  <path d="M 140 30 C 140 5, 480 5, 480 30" stroke="#8b5cf6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="310" y="15" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Net ΔH = -186 kJ (Exothermic)</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-worked1',
       type: 'callout',
       data: {

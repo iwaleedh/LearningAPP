@@ -30,6 +30,99 @@ export const note_olevel_chemistry_11_11_6 = {
       }
     },
     {
+      id: 'svg-bromine-addition',
+      type: 'svg',
+      data: {
+        caption: 'Addition reaction of ethene with bromine water, forming 1,2-dibromoethane (colourless).',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+    <defs>
+        <style>
+            .bond { stroke: var(--color-text); stroke-width: 2; }
+            .double-bond { stroke: var(--color-text); stroke-width: 2; }
+            .atom-c { font-family: var(--font-sans); font-size: 20px; fill: var(--color-text); text-anchor: middle; dominant-baseline: middle; }
+            .atom-h { font-family: var(--font-sans); font-size: 20px; fill: #7f8c8d; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
+            .atom-br { font-family: var(--font-sans); font-size: 20px; fill: #d35400; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
+            .operator { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: var(--color-text); text-anchor: middle; dominant-baseline: middle; }
+            .text-label { font-family: var(--font-sans); font-size: 14px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+            .color-box { stroke: var(--color-text); stroke-width: 1; }
+        </style>
+    </defs>
+
+    <!-- Ethene -->
+    <g transform="translate(100, 100)">
+        <text x="-25" y="0" class="atom-c">C</text>
+        <text x="25" y="0" class="atom-c">C</text>
+        
+        <!-- Double bond -->
+        <line x1="-12" y1="-4" x2="12" y2="-4" class="double-bond"/>
+        <line x1="-12" y1="4" x2="12" y2="4" class="double-bond"/>
+        
+        <!-- H atoms -->
+        <text x="-50" y="-30" class="atom-h">H</text>
+        <text x="-50" y="30" class="atom-h">H</text>
+        <text x="50" y="-30" class="atom-h">H</text>
+        <text x="50" y="30" class="atom-h">H</text>
+        
+        <!-- C-H bonds -->
+        <line x1="-32" y1="-10" x2="-42" y2="-20" class="bond"/>
+        <line x1="-32" y1="10" x2="-42" y2="20" class="bond"/>
+        <line x1="32" y1="-10" x2="42" y2="-20" class="bond"/>
+        <line x1="32" y1="10" x2="42" y2="20" class="bond"/>
+
+        <text y="70" class="text-label">Ethene (colourless)</text>
+    </g>
+
+    <!-- Plus -->
+    <text x="200" y="100" class="operator">+</text>
+
+    <!-- Bromine -->
+    <g transform="translate(270, 100)">
+        <text x="-20" y="0" class="atom-br">Br</text>
+        <text x="20" y="0" class="atom-br">Br</text>
+        <line x1="-5" y1="0" x2="5" y2="0" class="bond"/>
+        <text y="70" class="text-label" fill="#d35400">Bromine (orange)</text>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(340, 100)">
+        <line x1="0" y1="0" x2="40" y2="0" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)"/>
+        <polygon points="40,-5 40,5 50,0" fill="var(--color-text)"/>
+        <text x="25" y="-15" class="text-label" font-size="12">Addition</text>
+    </g>
+
+    <!-- 1,2-dibromoethane -->
+    <g transform="translate(480, 100)">
+        <text x="-25" y="0" class="atom-c">C</text>
+        <text x="25" y="0" class="atom-c">C</text>
+        
+        <!-- Single C-C bond -->
+        <line x1="-12" y1="0" x2="12" y2="0" class="bond"/>
+        
+        <!-- H atoms -->
+        <text x="-50" y="-30" class="atom-h">H</text>
+        <text x="-50" y="30" class="atom-h">H</text>
+        <text x="50" y="-30" class="atom-h">H</text>
+        <text x="50" y="30" class="atom-h">H</text>
+        
+        <line x1="-32" y1="-10" x2="-42" y2="-20" class="bond"/>
+        <line x1="-32" y1="10" x2="-42" y2="20" class="bond"/>
+        <line x1="32" y1="-10" x2="42" y2="-20" class="bond"/>
+        <line x1="32" y1="10" x2="42" y2="20" class="bond"/>
+
+        <!-- Br atoms top/bottom -->
+        <text x="-25" y="-40" class="atom-br">Br</text>
+        <text x="25" y="-40" class="atom-br">Br</text>
+        
+        <line x1="-25" y1="-15" x2="-25" y2="-25" class="bond"/>
+        <line x1="25" y1="-15" x2="25" y2="-25" class="bond"/>
+
+        <text y="70" class="text-label">1,2-dibromoethane</text>
+        <text y="90" class="text-label">(colourless)</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-uses',
       type: 'callout',
       data: {

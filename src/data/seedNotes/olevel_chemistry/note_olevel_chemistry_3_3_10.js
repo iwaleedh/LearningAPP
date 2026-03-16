@@ -30,6 +30,49 @@ export const note_olevel_chemistry_3_3_10 = {
       }
     },
     {
+      id: 'svg-percent-yield',
+      type: 'svg',
+      data: {
+        caption: 'Visualising Percentage Yield: Comparing what you actually got with the theoretical maximum.',
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="actual" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <pattern id="lost" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#fca5a5" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <g transform="translate(100, 20)">
+    <!-- Container representing 100% Theoretical Yield -->
+    <rect x="0" y="0" width="100" height="150" fill="none" stroke="var(--color-primary)" stroke-width="3" rx="4"/>
+    
+    <!-- Actual Yield Fill (e.g., 80%) -->
+    <rect x="0" y="30" width="100" height="120" fill="url(#actual)" rx="4"/>
+    
+    <!-- Lost product Fill -->
+    <rect x="0" y="0" width="100" height="30" fill="url(#lost)" fill-opacity="0.4" rx="4"/>
+    
+    <!-- Labels -->
+    <text x="-10" y="15" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="end">Lost</text>
+    <path d="M-5,10 L0,10" stroke="#ef4444" stroke-width="1"/>
+    
+    <text x="-10" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="end">Actual Yield</text>
+    <path d="M-5,85 L0,85" stroke="#3b82f6" stroke-width="1"/>
+    
+    <text x="50" y="95" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">80%</text>
+
+    <!-- Overall label right side -->
+    <path d="M105,0 L115,0 M110,0 L110,150 M115,150 L105,150" stroke="var(--color-text-secondary)" stroke-width="2" fill="none"/>
+    <text x="125" y="70" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)">Theoretical Yield</text>
+    <text x="125" y="85" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">(Maximum possible = 100%)</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-worked1',
       type: 'callout',
       data: {

@@ -8,6 +8,9 @@ import { economicsSyllabus } from './economicsSyllabus.js';
 import { mathematicsSyllabus } from './mathematicsSyllabus.js';
 import { physicsSyllabus } from './physicsSyllabus.js';
 import { oLevelBiologySyllabus } from './oLevelBiologySyllabus.js';
+import { oLevelChemistrySyllabus } from './oLevelChemistrySyllabus.js';
+import { oLevelPhysicsSyllabus } from './oLevelPhysicsSyllabus.js';
+import { oLevelBusinessSyllabus } from './oLevelBusinessSyllabus.js';
 
 export const syllabusesBySubject = {
     // A Level
@@ -23,6 +26,9 @@ export const syllabusesBySubject = {
     cpe: cpeSyllabus,
     // O Level / IGCSE
     olevel_biology: oLevelBiologySyllabus,
+    olevel_chemistry: oLevelChemistrySyllabus,
+    olevel_physics: oLevelPhysicsSyllabus,
+    olevel_business: oLevelBusinessSyllabus,
 };
 
 export function getSyllabusBySubject(subject) {
@@ -44,6 +50,9 @@ export function getSubjectLabel(subject) {
         cae: 'CAE (C1 Advanced)',
         cpe: 'CPE (C2 Proficiency)',
         olevel_biology: 'IGCSE Biology (0610)',
+        olevel_chemistry: 'IGCSE Chemistry (0620)',
+        olevel_physics: 'IGCSE Physics (0625)',
+        olevel_business: 'IGCSE Business (0450)',
     };
     return labels[key] || (key.charAt(0).toUpperCase() + key.slice(1));
 }

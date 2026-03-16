@@ -31,6 +31,88 @@ export const note_olevel_chemistry_2_2_8 = {
       data: { text: 'Molecular vs Empirical Formula', level: 2 }
     },
     {
+      id: 'svg-ethane-formulas',
+      type: 'svg',
+      data: {
+        caption: 'Visualizing formula types using Ethane',
+        svg: `<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: var(--font-sans); font-weight: bold; font-size: 14px; fill: var(--color-text-secondary); text-anchor: middle; }
+      .val { font-family: 'Courier New', monospace; font-weight: bold; font-size: 20px; fill: var(--color-text); text-anchor: middle; }
+      .atom-c { font-family: var(--font-sans); font-weight: bold; font-size: 16px; fill: #475569; text-anchor: middle; dominant-baseline: central; }
+      .atom-h { font-family: var(--font-sans); font-weight: bold; font-size: 14px; fill: #0ea5e9; text-anchor: middle; dominant-baseline: central; }
+      .bond { stroke: var(--color-text-tertiary); stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Empirical -->
+  <g transform="translate(100, 100)">
+    <text x="0" y="-60" class="title">Empirical</text>
+    <text x="0" y="-40" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-tertiary)" text-anchor="middle">Simplest ratio</text>
+    <text x="0" y="10" class="val">CH<tspan dy="6" font-size="14">3</tspan></text>
+  </g>
+
+  <!-- Molecular -->
+  <g transform="translate(250, 100)">
+    <text x="0" y="-60" class="title">Molecular</text>
+    <text x="0" y="-40" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-tertiary)" text-anchor="middle">Actual counts</text>
+    <text x="0" y="10" class="val">C<tspan dy="6" font-size="14">2</tspan><tspan dy="-6">H</tspan><tspan dy="6" font-size="14">6</tspan></text>
+  </g>
+
+  <!-- Structural -->
+  <g transform="translate(400, 100)">
+    <text x="0" y="-60" class="title">Structural</text>
+    <text x="0" y="-40" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-tertiary)" text-anchor="middle">Simplified bonding</text>
+    <text x="0" y="10" class="val">CH<tspan dy="6" font-size="14">3</tspan><tspan dy="-6">CH</tspan><tspan dy="6" font-size="14">3</tspan></text>
+  </g>
+
+  <!-- Displayed -->
+  <g transform="translate(530, 100)">
+    <text x="0" y="-60" class="title">Displayed</text>
+    <text x="0" y="-40" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-tertiary)" text-anchor="middle">All atoms &amp; bonds</text>
+    
+    <g transform="scale(0.8)">
+      <!-- Bonds -->
+      <line x1="-20" y1="0" x2="20" y2="0" class="bond" />
+      <line x1="-20" y1="0" x2="-20" y2="-30" class="bond" />
+      <line x1="-20" y1="0" x2="-20" y2="30" class="bond" />
+      <line x1="-20" y1="0" x2="-50" y2="0" class="bond" />
+      
+      <line x1="20" y1="0" x2="20" y2="-30" class="bond" />
+      <line x1="20" y1="0" x2="20" y2="30" class="bond" />
+      <line x1="20" y1="0" x2="50" y2="0" class="bond" />
+
+      <!-- Atoms with backgrounds to cover bonds -->
+      <circle cx="-20" cy="0" r="10" fill="var(--color-surface)"/>
+      <text x="-20" y="0" class="atom-c">C</text>
+      
+      <circle cx="20" cy="0" r="10" fill="var(--color-surface)"/>
+      <text x="20" y="0" class="atom-c">C</text>
+      
+      <circle cx="-20" cy="-30" r="8" fill="var(--color-surface)"/>
+      <text x="-20" y="-30" class="atom-h">H</text>
+      
+      <circle cx="-20" cy="30" r="8" fill="var(--color-surface)"/>
+      <text x="-20" y="30" class="atom-h">H</text>
+      
+      <circle cx="-50" cy="0" r="8" fill="var(--color-surface)"/>
+      <text x="-50" y="0" class="atom-h">H</text>
+      
+      <circle cx="20" cy="-30" r="8" fill="var(--color-surface)"/>
+      <text x="20" y="-30" class="atom-h">H</text>
+      
+      <circle cx="20" cy="30" r="8" fill="var(--color-surface)"/>
+      <text x="20" y="30" class="atom-h">H</text>
+      
+      <circle cx="50" cy="0" r="8" fill="var(--color-surface)"/>
+      <text x="50" y="0" class="atom-h">H</text>
+    </g>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-compare',
       type: 'callout',
       data: {

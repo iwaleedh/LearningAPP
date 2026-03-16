@@ -54,6 +54,59 @@ export const note_olevel_chemistry_8_8_1 = {
       }
     },
     {
+      id: 'svg-periodic-trends',
+      type: 'svg',
+      data: {
+        caption: 'Summary of periodic trends in atomic radius, ionisation energy (IE), and electronegativity.',
+        svg: `<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Periodic Table outline -->
+  <path d="M 120 60 L 160 60 L 160 90 L 400 90 L 400 60 L 460 60 L 460 220 L 120 220 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="120" y="40" width="20" height="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="440" y="40" width="20" height="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Across a Period -->
+  <path d="M 180 30 L 380 30" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-head-blue)" />
+  <text x="280" y="20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Across a Period</text>
+  
+  <text x="280" y="110" font-family="var(--font-sans)" font-size="12" fill="#1d4ed8" text-anchor="middle">Atomic Radius ↓</text>
+  <text x="280" y="130" font-family="var(--font-sans)" font-size="12" fill="#1d4ed8" text-anchor="middle">Ionisation Energy ↑</text>
+  <text x="280" y="150" font-family="var(--font-sans)" font-size="12" fill="#1d4ed8" text-anchor="middle">Electronegativity ↑</text>
+
+  <!-- Atoms across -->
+  <circle cx="200" cy="70" r="12" fill="#93c5fd"/>
+  <circle cx="250" cy="70" r="10" fill="#93c5fd"/>
+  <circle cx="300" cy="70" r="8" fill="#93c5fd"/>
+  <circle cx="350" cy="70" r="6" fill="#93c5fd"/>
+
+  <!-- Down a Group -->
+  <path d="M 80 80 L 80 180" fill="none" stroke="#ea580c" stroke-width="3" marker-end="url(#arrow-head-orange)" />
+  <text x="50" y="130" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#c2410c" text-anchor="middle" transform="rotate(-90 50 130)">Down a Group</text>
+
+  <!-- Atoms down -->
+  <circle cx="140" cy="110" r="8" fill="#fdba74"/>
+  <circle cx="140" cy="140" r="11" fill="#fdba74"/>
+  <circle cx="140" cy="180" r="15" fill="#fdba74"/>
+
+  <!-- Text for down -->
+  <text x="500" y="110" font-family="var(--font-sans)" font-size="12" fill="#c2410c" text-anchor="middle">Atomic Radius ↑</text>
+  <text x="500" y="130" font-family="var(--font-sans)" font-size="12" fill="#c2410c" text-anchor="middle">Ionisation Energy ↓</text>
+  <text x="500" y="150" font-family="var(--font-sans)" font-size="12" fill="#c2410c" text-anchor="middle">Electronegativity ↓</text>
+  <path d="M 470 125 L 420 125" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="4,4" />
+
+  <defs>
+    <marker id="arrow-head-blue" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-head-orange" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ea580c"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Across a period: atomic radius decreases; IE and electronegativity increase. Down a group: atomic radius increases; IE and electronegativity decrease. Key ideas: nuclear charge, shielding, and distance from nucleus determine these trends.' }

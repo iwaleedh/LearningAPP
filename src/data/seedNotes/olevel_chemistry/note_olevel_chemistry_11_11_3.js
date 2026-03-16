@@ -44,6 +44,62 @@ export const note_olevel_chemistry_11_11_3 = {
       }
     },
     {
+      id: 'svg-naming',
+      type: 'svg',
+      data: {
+        caption: 'Numbering carbon chains to give the lowest possible number to the functional group.',
+        svg: `<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- But-1-ene -->
+  <g transform="translate(50, 40)">
+    <text x="0" y="0" font-family="var(--font-mono)" font-size="20" fill="var(--color-text)">CH<tspan dy="6" font-size="14">2</tspan><tspan dy="-6">=</tspan>CH<tspan dy="6" font-size="14"></tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="14">2</tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="14">3</tspan></text>
+    
+    <!-- Numbers -->
+    <text x="12" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444">1</text>
+    <text x="50" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444">2</text>
+    <text x="100" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444">3</text>
+    <text x="150" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444">4</text>
+
+    <!-- Label -->
+    <text x="75" y="60" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle">But-1-ene</text>
+  </g>
+
+  <!-- But-2-ene -->
+  <g transform="translate(350, 40)">
+    <text x="0" y="0" font-family="var(--font-mono)" font-size="20" fill="var(--color-text)">CH<tspan dy="6" font-size="14">3</tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="14"></tspan><tspan dy="-6">=</tspan>CH<tspan dy="6" font-size="14"></tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="14">3</tspan></text>
+    
+    <!-- Numbers -->
+    <text x="12" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">1</text>
+    <text x="60" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">2</text>
+    <text x="100" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">3</text>
+    <text x="150" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">4</text>
+
+    <!-- Label -->
+    <text x="75" y="60" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#2563eb" text-anchor="middle">But-2-ene</text>
+  </g>
+
+  <!-- Propan-2-ol -->
+  <g transform="translate(200, 140)">
+    <text x="0" y="0" font-family="var(--font-mono)" font-size="20" fill="var(--color-text)">CH<tspan dy="6" font-size="14">3</tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="14"></tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="14">3</tspan></text>
+    
+    <!-- Branch OH -->
+    <path d="M 68 8 L 68 25" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+    <text x="68" y="42" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)" text-anchor="middle">OH</text>
+    
+    <!-- Numbers -->
+    <text x="12" y="-20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#10b981">1</text>
+    <text x="60" y="-20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#10b981">2</text>
+    <text x="110" y="-20" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#10b981">3</text>
+
+    <!-- Label -->
+    <text x="210" y="5" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#059669">Propan-2-ol</text>
+  </g>
+
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Prefix = chain length (meth/eth/prop/but). Suffix = family (-ane, -ene, -ol, -oic acid). For 3+ C, add position number of functional group (e.g. but-2-ene, propan-2-ol). Number from end that gives lowest position.' }

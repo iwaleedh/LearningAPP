@@ -12,6 +12,57 @@ export const note_olevel_chemistry_10_10_0 = {
       data: { text: 'Testing for Water', level: 2 }
     },
     {
+      id: 'svg-water-tests',
+      type: 'svg',
+      data: {
+        caption: 'Chemical tests for the presence of water: anhydrous copper(II) sulfate and cobalt(II) chloride paper.',
+        svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Copper Sulfate Test -->
+  <!-- Before -->
+  <rect x="50" y="40" width="80" height="40" rx="4" fill="#f4f4f5" stroke="#a1a1aa" stroke-width="2"/>
+  <text x="90" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#52525b" text-anchor="middle">White</text>
+  <text x="90" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Anhydrous</text>
+  <text x="90" y="110" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">CuSO₄</text>
+
+  <!-- Arrow -->
+  <text x="160" y="55" font-family="var(--font-sans)" font-size="12" fill="#3b82f6" text-anchor="middle">+ Water</text>
+  <path d="M 140 60 L 180 60" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrow-head-blue)"/>
+
+  <!-- After -->
+  <rect x="190" y="40" width="80" height="40" rx="4" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+  <text x="230" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Blue</text>
+  <text x="230" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Hydrated</text>
+  <text x="230" y="110" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">CuSO₄·5H₂O</text>
+
+  <!-- Cobalt Chloride Test -->
+  <!-- Before -->
+  <rect x="290" y="120" width="60" height="60" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
+  <text x="320" y="155" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Blue</text>
+  <text x="320" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">CoCl₂ paper</text>
+
+  <!-- Arrow -->
+  <text x="385" y="145" font-family="var(--font-sans)" font-size="12" fill="#ec4899" text-anchor="middle">+ Water</text>
+  <path d="M 360 150 L 410 150" stroke="#ec4899" stroke-width="3" marker-end="url(#arrow-head-pink)"/>
+
+  <!-- After -->
+  <rect x="420" y="120" width="60" height="60" fill="#f472b6" stroke="#db2777" stroke-width="2"/>
+  <text x="450" y="155" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Pink</text>
+  <text x="450" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Hydrated paper</text>
+
+  <defs>
+    <marker id="arrow-head-blue" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrow-head-pink" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ec4899"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-tests',
       type: 'callout',
       data: {

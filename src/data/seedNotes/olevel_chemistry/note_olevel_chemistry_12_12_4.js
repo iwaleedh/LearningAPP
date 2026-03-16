@@ -30,6 +30,78 @@ export const note_olevel_chemistry_12_12_4 = {
       }
     },
     {
+      id: 'svg-rf-calc',
+      type: 'svg',
+      data: {
+        caption: 'Measuring distances on a chromatogram to calculate the Rf value.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+    <defs>
+        <style>
+            .paper { fill: #fdfdfd; stroke: var(--color-border); stroke-width: 2; }
+            .line-base { stroke: #7f8c8d; stroke-width: 2; stroke-dasharray: 4,4; }
+            .line-solvent { stroke: var(--color-primary); stroke-width: 2; stroke-dasharray: 6,4; }
+            .spot { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; }
+            .dim-line { stroke: var(--color-text); stroke-width: 1.5; marker-start: url(#arrow-rev); marker-end: url(#arrow); }
+            .dim-ext { stroke: var(--color-text-secondary); stroke-width: 1; stroke-dasharray: 2,2; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .label-title { font-family: var(--font-sans); font-size: 16px; font-weight: bold; fill: var(--color-text); }
+            .calc-text { font-family: var(--font-sans); font-size: 16px; fill: var(--color-text); }
+            .calc-hl { fill: var(--color-primary); font-weight: bold; }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="var(--color-text)"/>
+        </marker>
+        <marker id="arrow-rev" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M10,0 L0,5 L10,10 Z" fill="var(--color-text)"/>
+        </marker>
+    </defs>
+
+    <!-- Chromatography Paper -->
+    <rect x="50" y="30" width="160" height="280" class="paper"/>
+    
+    <!-- Baseline (Pencil line) -->
+    <line x1="50" y1="270" x2="210" y2="270" class="line-base"/>
+    <text x="130" y="290" class="label" text-anchor="middle" fill="#7f8c8d">Pencil baseline</text>
+
+    <!-- Solvent Front -->
+    <line x1="50" y1="70" x2="210" y2="70" class="line-solvent"/>
+    <text x="130" y="60" class="label" text-anchor="middle" fill="var(--color-primary)">Solvent front</text>
+
+    <!-- Spot -->
+    <circle cx="130" cy="150" r="10" class="spot"/>
+    <text x="150" y="155" class="label" fill="#8e44ad" font-weight="bold">Spot</text>
+
+    <!-- Distance Measurements -->
+    <!-- Spot distance (a) -->
+    <line x1="130" y1="150" x2="240" y2="150" class="dim-ext"/>
+    <line x1="210" y1="270" x2="240" y2="270" class="dim-ext"/>
+    <line x1="230" y1="270" x2="230" y2="150" class="dim-line"/>
+    <rect x="220" y="200" width="20" height="20" fill="var(--color-surface)"/>
+    <text x="230" y="215" class="label-title" text-anchor="middle">a</text>
+
+    <!-- Solvent distance (b) -->
+    <line x1="210" y1="70" x2="280" y2="70" class="dim-ext"/>
+    <line x1="240" y1="270" x2="280" y2="270" class="dim-ext"/>
+    <line x1="270" y1="270" x2="270" y2="70" class="dim-line"/>
+    <rect x="260" y="160" width="20" height="20" fill="var(--color-surface)"/>
+    <text x="270" y="175" class="label-title" text-anchor="middle">b</text>
+
+    <!-- Formula Box -->
+    <g transform="translate(310, 130)">
+        <rect x="0" y="0" width="180" height="100" rx="8" ry="8" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+        <text x="90" y="30" class="label-title" text-anchor="middle">Calculation</text>
+        
+        <text x="30" y="65" class="calc-text" font-weight="bold">R<tspan dy="5" font-size="12">f</tspan><tspan dy="-5"> =</tspan></text>
+        
+        <text x="120" y="55" class="calc-text calc-hl" text-anchor="middle">a</text>
+        <line x1="80" y1="65" x2="160" y2="65" stroke="var(--color-text)" stroke-width="2"/>
+        <text x="120" y="85" class="calc-text calc-hl" text-anchor="middle">b</text>
+    </g>
+
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Locating Agents for Colourless Spots', level: 2 }

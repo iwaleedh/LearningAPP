@@ -30,6 +30,70 @@ export const note_olevel_chemistry_8_8_2 = {
       }
     },
     {
+      id: 'svg-alkali-water',
+      type: 'svg',
+      data: {
+        caption: 'Reactions of Lithium, Sodium, and Potassium with water. Reactivity increases down the group (Li < Na < K).',
+        svg: `<svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Trough 1: Lithium -->
+  <text x="100" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Lithium (Li)</text>
+  <path d="M 50 100 L 50 160 Q 50 170 60 170 L 140 170 Q 150 170 150 160 L 150 100" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 50 120 L 150 120 L 150 160 Q 150 168 140 168 L 60 168 Q 50 168 50 160 Z" fill="#e0f2fe"/>
+  <!-- Li piece (floats) -->
+  <rect x="90" y="115" width="10" height="8" fill="#94a3b8"/>
+  <circle cx="100" cy="110" r="2" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="95" cy="105" r="2" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="108" cy="108" r="2" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <text x="100" y="185" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Gentle fizzing</text>
+  <text x="100" y="200" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Moves slowly</text>
+
+  <!-- Trough 2: Sodium -->
+  <text x="300" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Sodium (Na)</text>
+  <path d="M 250 100 L 250 160 Q 250 170 260 170 L 340 170 Q 350 170 350 160 L 350 100" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 250 120 L 350 120 L 350 160 Q 350 168 340 168 L 260 168 Q 250 168 250 160 Z" fill="#bae6fd"/>
+  <!-- Na piece melts into a ball -->
+  <circle cx="280" cy="116" r="6" fill="#94a3b8"/>
+  <!-- Trail / rapid bubbles -->
+  <path d="M 320 116 Q 300 125 285 116" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2,2"/>
+  <circle cx="275" cy="100" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="285" cy="105" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="270" cy="108" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="290" cy="98" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <text x="300" y="185" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Melts into a ball</text>
+  <text x="300" y="200" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Vigorous fizzing, moves quickly</text>
+
+  <!-- Trough 3: Potassium -->
+  <text x="500" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Potassium (K)</text>
+  <path d="M 450 100 L 450 160 Q 450 170 460 170 L 540 170 Q 550 170 550 160 L 550 100" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 450 120 L 550 120 L 550 160 Q 550 168 540 168 L 460 168 Q 450 168 450 160 Z" fill="#7dd3fc"/>
+  <!-- K piece on fire -->
+  <circle cx="500" cy="116" r="5" fill="#94a3b8"/>
+  <!-- Lilac flame -->
+  <path d="M 490 115 Q 500 80 510 115 Z" fill="#d946ef" opacity="0.8"/>
+  <path d="M 495 115 Q 500 90 505 115 Z" fill="#fbcfe8" opacity="0.9"/>
+  <!-- Sparks/smoke -->
+  <circle cx="485" cy="100" r="1.5" fill="#d946ef"/>
+  <circle cx="515" cy="105" r="1.5" fill="#d946ef"/>
+  <circle cx="505" cy="90" r="1.5" fill="#d946ef"/>
+  
+  <text x="500" y="185" font-family="var(--font-sans)" font-size="12" fill="#d946ef" font-weight="bold" text-anchor="middle">Catches fire immediately</text>
+  <text x="500" y="200" font-family="var(--font-sans)" font-size="12" fill="#d946ef" text-anchor="middle">Burns with a lilac flame</text>
+
+  <!-- Reactivity Arrow -->
+  <path d="M 80 215 L 520 215" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-head-right)" />
+  <text x="300" y="210" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">REACTIVITY INCREASES</text>
+
+  <defs>
+    <marker id="arrow-head-right" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-trend',
       type: 'callout',
       data: {

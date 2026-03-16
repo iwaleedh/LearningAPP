@@ -1,0 +1,47 @@
+export const note_olevel_physics_5_1_2 = {
+  pdfPath: '/notes/olevel/CIE IGCSE Physics/5 Nuclear Physics/5-1-3-isotopes.pdf',
+  blocks: [
+    { id: 'obj-1', type: 'objective', data: { text: 'Define isotopes; explain why isotopes have the same chemical but different physical properties; describe examples and uses of radioactive isotopes.' } },
+    { id: 'h-def', type: 'heading', data: { text: 'What are Isotopes?', level: 2 } },
+    { id: 'call-key-iso', type: 'callout', data: { style: 'key', title: 'Definition: Isotopes', text: 'Isotopes are atoms of the same element that have the same proton number Z but different mass numbers A — they have the same number of protons but different numbers of neutrons.' } },
+    { id: 'para-iso', type: 'paragraph', data: { text: 'Because isotopes of the same element have the same proton number, they have the same number of electrons arranged in the same way. Chemical behaviour is determined by electrons, so <strong>isotopes have identical chemical properties</strong>. However, their different mass numbers mean they have different masses, leading to <strong>different physical properties</strong> such as density and rate of diffusion.' } },
+    { id: 'h-examples', type: 'heading', data: { text: 'Examples of Isotopes', level: 2 } },
+    { id: 'tbl-isotopes', type: 'comparisonTable', data: { caption: 'Isotopes of hydrogen and carbon', headers: ['Nuclide', 'Common Name', 'Protons (Z)', 'Neutrons (N)', 'Mass no. (A)', 'Radioactive?'], rows: [
+      ['¹H', 'Protium', '1', '0', '1', 'No'],
+      ['²H', 'Deuterium', '1', '1', '2', 'No'],
+      ['³H', 'Tritium', '1', '2', '3', 'Yes'],
+      ['¹²C', 'Carbon-12', '6', '6', '12', 'No'],
+      ['¹³C', 'Carbon-13', '6', '7', '13', 'No (rare, stable)'],
+      ['¹⁴C', 'Carbon-14', '6', '8', '14', 'Yes (t½ = 5730 yr)'],
+    ]}},
+    { id: 'h-properties', type: 'heading', data: { text: 'Same Chemical, Different Physical Properties', level: 2 } },
+    { id: 'list-props', type: 'list', data: { style: 'bullet', items: [
+      { text: '<strong>Same chemical properties:</strong> same number/arrangement of electrons → same bonding, same reactions, same compounds formed.' },
+      { text: '<strong>Different physical properties:</strong> different mass → different density, melting/boiling point, and rate of diffusion.' },
+      { text: 'Example: heavy water (D₂O) contains deuterium instead of protium. It is slightly denser and has a higher boiling point than ordinary water H₂O.' },
+    ]}},
+    { id: 'h-uses', type: 'heading', data: { text: 'Uses of Radioactive Isotopes', level: 2 } },
+    { id: 'tbl-uses', type: 'comparisonTable', data: { caption: 'Applications of specific radioactive isotopes', headers: ['Isotope', 'Application', 'Why suitable'], rows: [
+      ['Carbon-14 (t½ = 5730 yr)', 'Archaeological carbon dating', 'Fixed initial ratio in organisms; decays at known rate after death'],
+      ['Technetium-99m (t½ = 6 h)', 'Medical γ-camera imaging', 'Gamma emitter detectable outside body; short t½ minimises dose'],
+      ['Iodine-131 (t½ = 8 days)', 'Thyroid treatment/imaging', 'Iodine selectively absorbed by thyroid; γ/β emitter'],
+      ['Cobalt-60 (t½ = 5.3 yr)', 'Radiotherapy; sterilisation', 'Intense γ rays kill tumour cells/pathogens'],
+      ['Americium-241', 'Smoke detector', 'Alpha particles ionise air; smoke disrupts ion current and triggers alarm'],
+    ]}},
+    { id: 'call-worked', type: 'callout', data: { style: 'worked', title: 'Worked Example: Carbon-14 Dating', text: 'A wood sample has 25% of the C-14 activity of a living tree. t½ of C-14 = 5730 years. How old is the sample?\n\n100% → 50% (1 t½) → 25% (2 t½)\n\nAge = 2 × 5730 = 11 460 years' } },
+    { id: 'call-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: "When asked why isotopes have the same chemical properties, you must say 'same number of electrons' or 'same electron arrangement'. Simply saying 'same element' is not enough for marks." } },
+    { id: 'sum-1', type: 'summary', data: { text: 'Isotopes: same Z (protons), different N (neutrons) and A. Same chemical properties (electrons identical), different physical properties (different mass). Radioactive isotopes used in medicine, archaeology and industry.' } },
+  ],
+  recall: {
+    enabled: true, ready: true,
+    summaryText: 'Isotopes: same proton number, different neutron number. Same chemistry (electrons), different physics (mass).',
+    cues: [
+      { id: 'cue-1', blockId: 'call-key-iso', prompt: 'Define isotopes.', answer: 'Atoms of the same element with the same proton number (Z) but different numbers of neutrons (different A).' },
+      { id: 'cue-2', blockId: 'para-iso', prompt: 'Why do isotopes have the same chemical properties?', answer: 'They have the same number and arrangement of electrons, so they react and bond in the same way.' },
+      { id: 'cue-3', blockId: 'tbl-isotopes', prompt: 'How many protons and neutrons does Carbon-14 have?', answer: '6 protons (Z = 6) and 8 neutrons (N = 14 − 6 = 8).' },
+      { id: 'cue-4', blockId: 'tbl-uses', prompt: 'Why is technetium-99m used for medical imaging rather than an alpha emitter?', answer: 'It emits gamma rays (detectable outside the body) and has a short half-life (6 h) to minimise radiation dose to the patient.' },
+      { id: 'cue-5', blockId: 'call-worked', prompt: 'A C-14 sample is at 25% activity. If t½ = 5730 yr, how old is it?', answer: '2 half-lives have passed (100→50→25%). Age = 2 × 5730 = 11 460 years.' },
+    ],
+  },
+  evidence: [], mentions: [],
+};

@@ -43,6 +43,58 @@ export const note_olevel_chemistry_8_8_4 = {
       }
     },
     {
+      id: 'svg-halogen-displacement',
+      type: 'svg',
+      data: {
+        caption: 'Halogen displacement observed using a cyclohexane layer to clearly see the coloured halogen product.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Test Tube 1 -->
+  <text x="150" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Cl₂(aq) added to KBr(aq)</text>
+  
+  <path d="M 120 70 L 120 180 A 30 30 0 0 0 180 180 L 180 70" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <ellipse cx="150" cy="70" rx="30" ry="8" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+
+  <!-- Water layer -->
+  <path d="M 121 140 Q 150 145 179 140 L 179 180 A 29 29 0 0 1 121 180 Z" fill="#fef08a" opacity="0.6"/>
+  <text x="150" y="170" font-family="var(--font-sans)" font-size="12" fill="#854d0e" text-anchor="middle">Aqueous layer</text>
+  
+  <!-- Cyclohexane layer (Orange for Br2) -->
+  <path d="M 121 100 Q 150 105 179 100 L 179 140 Q 150 145 121 140 Z" fill="#fdba74"/>
+  <text x="150" y="125" font-family="var(--font-sans)" font-size="12" fill="#9a3412" text-anchor="middle">Orange: Br₂</text>
+
+  <text x="150" y="215" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂</text>
+
+  <!-- Test Tube 2 -->
+  <text x="450" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Cl₂(aq) added to KI(aq)</text>
+  
+  <path d="M 420 70 L 420 180 A 30 30 0 0 0 480 180 L 480 70" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <ellipse cx="450" cy="70" rx="30" ry="8" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+
+  <!-- Water layer -->
+  <path d="M 421 140 Q 450 145 479 140 L 479 180 A 29 29 0 0 1 421 180 Z" fill="#fca5a5" opacity="0.3"/>
+  <text x="450" y="170" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">Aqueous layer</text>
+  
+  <!-- Cyclohexane layer (Purple for I2) -->
+  <path d="M 421 100 Q 450 105 479 100 L 479 140 Q 450 145 421 140 Z" fill="#c084fc"/>
+  <text x="450" y="125" font-family="var(--font-sans)" font-size="12" fill="#4c1d95" text-anchor="middle">Purple: I₂</text>
+
+  <text x="450" y="215" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Cl₂ + 2I⁻ → 2Cl⁻ + I₂</text>
+
+  <!-- Labels -->
+  <path d="M 40 120 L 110 120" fill="none" stroke="var(--color-text)" stroke-width="1.5" marker-end="url(#tip)"/>
+  <text x="50" y="115" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)">Cyclohexane layer</text>
+
+  <defs>
+    <marker id="tip" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="var(--color-text)"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-ionic',
       type: 'callout',
       data: {

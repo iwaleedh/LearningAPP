@@ -35,6 +35,55 @@ export const note_olevel_chemistry_3_3_6 = {
       }
     },
     {
+      id: 'svg-stoichiometry-map',
+      type: 'svg',
+      data: {
+        caption: 'The stoichiometry map: Mass A → Moles A → Moles B → Mass B',
+        svg: `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="var(--color-primary)"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(50, 60)">
+    <!-- Box 1: Mass of A -->
+    <rect x="0" y="0" width="100" height="60" rx="8" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+    <text x="50" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Mass of A</text>
+    <text x="50" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(grams)</text>
+
+    <!-- Arrow 1 -->
+    <path d="M100 30 L160 30" stroke="var(--color-primary)" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="130" y="20" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary)" text-anchor="middle">÷ Mᵣ(A)</text>
+
+    <!-- Box 2: Moles of A -->
+    <rect x="170" y="0" width="100" height="60" rx="8" fill="#e0f2fe" stroke="var(--color-primary)" stroke-width="2"/>
+    <text x="220" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Moles of A</text>
+    <text x="220" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
+
+    <!-- Arrow 2 -->
+    <path d="M270 30 L330 30" stroke="var(--color-primary)" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="300" y="10" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary)" text-anchor="middle">× ratio</text>
+    <text x="300" y="25" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">(from Eq.)</text>
+
+    <!-- Box 3: Moles of B -->
+    <rect x="340" y="0" width="100" height="60" rx="8" fill="#fce7f3" stroke="#0284c7" stroke-width="2"/>
+    <text x="390" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Moles of B</text>
+    <text x="390" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
+
+    <!-- Arrow 3 -->
+    <path d="M440 30 L500 30" stroke="var(--color-primary)" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="470" y="20" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary)" text-anchor="middle">× Mᵣ(B)</text>
+
+    <!-- Box 4: Mass of B -->
+    <rect x="510" y="0" width="100" height="60" rx="8" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+    <text x="560" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Mass of B</text>
+    <text x="560" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(grams)</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-worked1',
       type: 'callout',
       data: {

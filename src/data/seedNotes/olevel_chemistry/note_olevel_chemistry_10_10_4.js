@@ -42,6 +42,92 @@ export const note_olevel_chemistry_10_10_4 = {
       }
     },
     {
+      id: 'svg-oxygen-experiment',
+      type: 'svg',
+      data: {
+        caption: 'Passing a known volume of air over heated copper to determine the percentage of oxygen.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 250">
+    <defs>
+        <style>
+            .glass { fill: rgba(99, 102, 241, 0.05); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }
+            .plunger { fill: rgba(149, 165, 166, 0.4); stroke: var(--color-text); stroke-width: 1.5; }
+            .rubber { fill: #2c3e50; stroke: #1a252f; }
+            .copper { fill: #d35400; stroke: #a04000; stroke-width: 2; }
+            .heat { stroke: #e74c3c; stroke-width: 2; fill: none; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); text-anchor: middle; }
+            .title { font-family: var(--font-sans); font-size: 15px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+            .arrow { stroke: var(--color-primary); stroke-width: 2; fill: none; }
+            .line-mark { stroke: var(--color-text); stroke-width: 1; fill: none; }
+        </style>
+    </defs>
+
+    <!-- Left Syringe -->
+    <g transform="translate(10, 60)">
+        <!-- Plunger -->
+        <rect x="0" y="10" width="80" height="40" class="plunger"/>
+        <line x1="80" y1="10" x2="80" y2="50" stroke="var(--color-text)" stroke-width="2"/>
+        <rect x="0" y="0" width="10" height="60" class="plunger"/>
+        <!-- Barrel -->
+        <path d="M 40 0 L 150 0 L 150 20 L 170 20 L 170 40 L 150 40 L 150 60 L 40 60 Z" class="glass"/>
+        <!-- Markings -->
+        <line x1="50" y1="0" x2="50" y2="10" class="line-mark"/>
+        <line x1="70" y1="0" x2="70" y2="10" class="line-mark"/>
+        <line x1="90" y1="0" x2="90" y2="10" class="line-mark"/>
+        <line x1="110" y1="0" x2="110" y2="10" class="line-mark"/>
+        <line x1="130" y1="0" x2="130" y2="10" class="line-mark"/>
+        <text x="130" y="25" class="label" font-size="11">cm³</text>
+        
+        <text x="75" y="-20" class="title">100 cm³ of Air</text>
+        <path d="M 50 30 L 130 30 M 125 25 L 130 30 L 125 35" class="arrow"/> <!-- Push arrow -->
+    </g>
+
+    <!-- Hard Glass Tube -->
+    <g transform="translate(180, 75)">
+        <path d="M 15 5 L 255 5 L 255 25 L 15 25" class="glass"/>
+        <!-- Rubber Bungholes -->
+        <path d="M -5 0 L 15 5 L 15 25 L -5 30 Z" class="rubber"/>
+        <path d="M 275 0 L 255 5 L 255 25 L 275 30 Z" class="rubber"/>
+        
+        <!-- Copper Turnings -->
+        <path d="M 80 10 Q 100 5 120 15 Q 140 20 160 10 Q 180 5 190 15 Q 160 25 120 25 Q 90 20 80 10 Z" class="copper" fill="#d35400"/>
+        <circle cx="100" cy="20" r="3" class="copper"/>
+        <circle cx="140" cy="12" r="4" class="copper"/>
+        <circle cx="170" cy="20" r="3" class="copper"/>
+
+        <!-- Heat source -->
+        <path d="M 120 70 Q 130 60 135 70 T 150 70" class="heat"/>
+        <path d="M 110 75 Q 125 65 130 75 T 160 75" class="heat"/>
+        <text x="135" y="100" class="label" font-weight="bold" fill="#e74c3c">HEAT</text>
+        
+        <text x="135" y="-20" class="label">Copper turnings</text>
+        <line x1="135" y1="-15" x2="135" y2="5" stroke-dasharray="2,2" class="line-mark"/>
+    </g>
+
+    <!-- Right Syringe (empty initially) -->
+    <g transform="translate(460, 60)">
+        <!-- Barrel -->
+        <path d="M 140 0 L 30 0 L 30 20 L 10 20 L 10 40 L 30 40 L 30 60 L 140 60 Z" class="glass"/>
+        <!-- Markings -->
+        <line x1="50" y1="0" x2="50" y2="10" class="line-mark"/>
+        <line x1="70" y1="0" x2="70" y2="10" class="line-mark"/>
+        <line x1="90" y1="0" x2="90" y2="10" class="line-mark"/>
+        <line x1="110" y1="0" x2="110" y2="10" class="line-mark"/>
+        <line x1="130" y1="0" x2="130" y2="10" class="line-mark"/>
+        <text x="50" y="25" class="label" font-size="11">cm³</text>
+        <!-- Plunger (Fully in) -->
+        <rect x="135" y="10" width="40" height="40" class="plunger"/>
+        <line x1="135" y1="10" x2="135" y2="50" stroke="var(--color-text)" stroke-width="2"/>
+        <rect x="175" y="0" width="10" height="60" class="plunger"/>
+        
+        <text x="90" y="-20" class="title">Empty Syringe</text>
+    </g>
+
+    <text x="325" y="210" class="title">Process</text>
+    <text x="325" y="230" class="label">Air is passed forwards and backwards over heated copper until volume stops decreasing.</text>
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

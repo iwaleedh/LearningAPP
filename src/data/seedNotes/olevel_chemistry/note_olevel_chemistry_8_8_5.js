@@ -47,6 +47,49 @@ export const note_olevel_chemistry_8_8_5 = {
       }
     },
     {
+      id: 'svg-transition-colours',
+      type: 'svg',
+      data: {
+        caption: 'Common coloured solutions of transition metal ions. Note how iron can exist in two different oxidation states with different colours.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Test Tubes -->
+  <!-- Tube 1: Cu2+ -->
+  <path d="M 120 60 L 120 160 A 15 15 0 0 0 150 160 L 150 60" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <ellipse cx="135" cy="60" rx="15" ry="4" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 121 110 Q 135 115 149 110 L 149 160 A 14 14 0 0 1 121 160 Z" fill="#3b82f6" opacity="0.8"/>
+  <text x="135" y="195" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Cu²⁺</text>
+  <text x="135" y="215" font-family="var(--font-sans)" font-size="12" fill="#2563eb" text-anchor="middle">Blue</text>
+
+  <!-- Tube 2: Fe2+ -->
+  <path d="M 220 60 L 220 160 A 15 15 0 0 0 250 160 L 250 60" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <ellipse cx="235" cy="60" rx="15" ry="4" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 221 110 Q 235 115 249 110 L 249 160 A 14 14 0 0 1 221 160 Z" fill="#bbf7d0" opacity="0.8"/>
+  <text x="235" y="195" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fe²⁺</text>
+  <text x="235" y="215" font-family="var(--font-sans)" font-size="12" fill="#166534" text-anchor="middle">Pale Green</text>
+
+  <!-- Tube 3: Fe3+ -->
+  <path d="M 320 60 L 320 160 A 15 15 0 0 0 350 160 L 350 60" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <ellipse cx="335" cy="60" rx="15" ry="4" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 321 110 Q 335 115 349 110 L 349 160 A 14 14 0 0 1 321 160 Z" fill="#fcd34d" opacity="0.8"/>
+  <text x="335" y="195" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fe³⁺</text>
+  <text x="335" y="215" font-family="var(--font-sans)" font-size="12" fill="#b45309" text-anchor="middle">Yellow-Brown</text>
+
+  <!-- Tube 4: MnO4- -->
+  <path d="M 420 60 L 420 160 A 15 15 0 0 0 450 160 L 450 60" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <ellipse cx="435" cy="60" rx="15" ry="4" fill="none" stroke="var(--color-text)" stroke-width="2"/>
+  <path d="M 421 110 Q 435 115 449 110 L 449 160 A 14 14 0 0 1 421 160 Z" fill="#a855f7" opacity="0.8"/>
+  <text x="435" y="195" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">MnO₄⁻</text>
+  <text x="435" y="215" font-family="var(--font-sans)" font-size="12" fill="#7e22ce" text-anchor="middle">Purple</text>
+
+  <!-- Variable Oxidation States Bracket -->
+  <path d="M 235 45 L 235 35 L 335 35 L 335 45" fill="none" stroke="var(--color-text)" stroke-width="1.5"/>
+  <text x="285" y="25" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="var(--color-text)" text-anchor="middle">Variable oxidation states (+2 / +3)</text>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Transition elements: high melting points, high density, hard, low reactivity with water. Variable oxidation states (e.g. Fe²⁺/Fe³⁺). Coloured compounds. Act as catalysts. Contrast with alkali metals: soft, light, extremely reactive with water.' }

@@ -21,6 +21,78 @@ export const note_olevel_chemistry_3_3_8 = {
       }
     },
     {
+      id: 'svg-titration-setup',
+      type: 'svg',
+      data: {
+        caption: 'A standard titration setup: Using a burette to accurately add an acid to a base until the indicator changes colour.',
+        svg: `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.8"/>
+      <stop offset="20%" stop-color="#f8fafc" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#e2e8f0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="acid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fca5a5" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#fee2e2" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#fca5a5" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#e0f2fe" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(150, 20)">
+    <!-- Burette outline -->
+    <path d="M 40 10 L 40 220 L 45 230 L 45 260 L 55 260 L 55 230 L 60 220 L 60 10 Z" fill="url(#glass)" stroke="var(--color-border)" stroke-width="2"/>
+    <!-- Burette tap -->
+    <rect x="35" y="240" width="30" height="8" rx="2" fill="var(--color-text-secondary)"/>
+    <circle cx="50" cy="244" r="6" fill="#333"/>
+    
+    <!-- Acid liquid in burette -->
+    <path d="M 42 60 L 42 220 L 47 230 L 47 240 L 53 240 L 53 230 L 58 220 L 58 60 Z" fill="url(#acid)"/>
+    <!-- Meniscus -->
+    <ellipse cx="50" cy="60" rx="8" ry="3" fill="#ef4444" fill-opacity="0.6" stroke="#b91c1c" stroke-width="1"/>
+    
+    <!-- Scale markings -->
+    <line x1="40" y1="30" x2="48" y2="30" stroke="var(--color-border)" stroke-width="1"/>
+    <line x1="40" y1="50" x2="45" y2="50" stroke="var(--color-border)" stroke-width="1"/>
+    <line x1="40" y1="70" x2="48" y2="70" stroke="var(--color-border)" stroke-width="1"/>
+    <line x1="40" y1="90" x2="45" y2="90" stroke="var(--color-border)" stroke-width="1"/>
+    <line x1="40" y1="110" x2="48" y2="110" stroke="var(--color-border)" stroke-width="1"/>
+
+    <!-- Labels for Burette -->
+    <text x="100" y="65" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)">Burette (Acid)</text>
+    <path d="M 90 60 L 65 60" stroke="var(--color-text-secondary)" stroke-width="1" fill="none"/>
+    
+    <text x="100" y="245" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)">Tap / Stopcock</text>
+    <path d="M 90 240 L 70 240" stroke="var(--color-text-secondary)" stroke-width="1" fill="none"/>
+
+    <!-- Drops falling -->
+    <circle cx="50" cy="275" r="3" fill="#fca5a5"/>
+    <circle cx="50" cy="290" r="3" fill="#fca5a5"/>
+
+    <!-- Conical Flask -->
+    <g transform="translate(0, 310)">
+      <path d="M 40 -10 L 60 -10 L 60 10 L 90 60 L 10 60 L 40 10 Z" fill="url(#glass)" stroke="var(--color-border)" stroke-width="2"/>
+      
+      <!-- Base liquid in flask -->
+      <path d="M 22 40 L 78 40 L 88 58 L 12 58 Z" fill="url(#base)"/>
+      <ellipse cx="50" cy="40" rx="28" ry="4" fill="#0284c7" fill-opacity="0.4" stroke="#0369a1" stroke-width="1"/>
+    </g>
+
+    <!-- Label for Flask -->
+    <text x="-80" y="360" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)">Conical Flask</text>
+    <text x="-80" y="375" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">(Alkali + Indicator)</text>
+    <path d="M -5 355 L 20 355" stroke="var(--color-text-secondary)" stroke-width="1" fill="none"/>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Calculation Method', level: 2 }

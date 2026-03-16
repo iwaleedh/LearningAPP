@@ -48,6 +48,86 @@ export const note_olevel_chemistry_6_6_9 = {
       }
     },
     {
+      id: 'svg-contact-process',
+      type: 'svg',
+      data: {
+        caption: 'Flow diagram of the Contact Process manufacturing stages.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Burner: S + O2 -> SO2 -->
+  <rect x="40" y="40" width="80" height="150" fill="var(--color-bg-secondary)" stroke="var(--color-border)" stroke-width="2"/>
+  <text x="80" y="30" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Burner</text>
+  
+  <path d="M 10 70 L 40 70" fill="none" stroke="var(--color-text)" stroke-dasharray="4,2" marker-end="url(#arrow-head)" />
+  <text x="5" y="65" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)">Air (O₂)</text>
+  
+  <path d="M 10 160 L 40 160" fill="none" stroke="var(--color-text)" marker-end="url(#arrow-head)" />
+  <text x="5" y="155" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)">Sulfur(s)</text>
+
+  <text x="80" y="110" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">S + O₂</text>
+  <text x="80" y="125" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">↓</text>
+  <text x="80" y="140" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">SO₂</text>
+
+  <!-- Flow to converter -->
+  <path d="M 120 115 L 220 115" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-orange)" />
+  <text x="170" y="105" font-family="var(--font-sans)" font-size="10" fill="#d97706" text-anchor="middle">SO₂ + Air</text>
+
+  <!-- Converter: 2SO2 + O2 <-> 2SO3 -->
+  <rect x="220" y="40" width="100" height="150" rx="10" fill="var(--color-bg-secondary)" stroke="var(--color-border)" stroke-width="2"/>
+  <text x="270" y="30" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Converter</text>
+
+  <rect x="230" y="60" width="80" height="15" fill="#94a3b8" />
+  <rect x="230" y="110" width="80" height="15" fill="#94a3b8" />
+  <rect x="230" y="160" width="80" height="15" fill="#94a3b8" />
+  <text x="270" y="100" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">V₂O₅ catalyst</text>
+  <text x="270" y="150" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">450 °C, 1 atm</text>
+
+  <!-- Flow to absorber -->
+  <path d="M 320 115 L 420 115" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow-red)" />
+  <text x="370" y="105" font-family="var(--font-sans)" font-size="10" fill="#b91c1c" text-anchor="middle">SO₃ gas</text>
+
+  <!-- Absorber -->
+  <rect x="420" y="40" width="100" height="150" fill="var(--color-bg-secondary)" stroke="var(--color-border)" stroke-width="2"/>
+  <text x="470" y="30" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Absorption Tower</text>
+  
+  <path d="M 470 10 L 470 40" fill="none" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow-green)" />
+  <text x="490" y="25" font-family="var(--font-sans)" font-size="10" fill="#16a34a">Conc. H₂SO₄</text>
+  
+  <!-- Droplets inside absorber -->
+  <circle cx="450" cy="60" r="2" fill="#22c55e" />
+  <circle cx="470" cy="80" r="2" fill="#22c55e" />
+  <circle cx="490" cy="120" r="2" fill="#22c55e" />
+  <circle cx="450" cy="140" r="2" fill="#22c55e" />
+  
+  <!-- Final Oleum -> acid out -->
+  <path d="M 470 190 L 470 230" fill="none" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-blue)" />
+  <text x="480" y="215" font-family="var(--font-sans)" font-size="10" fill="#0284c7">Oleum (H₂S₂O₇)</text>
+  <text x="480" y="230" font-family="var(--font-sans)" font-size="10" fill="#0284c7">(Add H₂O → H₂SO₄)</text>
+
+
+  <!-- Markers -->
+  <defs>
+    <marker id="arrow-head" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="var(--color-text)"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#0ea5e9"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-uses',
       type: 'callout',
       data: {

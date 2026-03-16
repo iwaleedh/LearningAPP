@@ -26,6 +26,34 @@ export const note_olevel_chemistry_3_3_3 = {
       data: { text: 'Relative Molecular Mass / Formula Mass (Mᵣ)', level: 2 }
     },
     {
+      id: 'svg-mr-calc',
+      type: 'svg',
+      data: {
+        caption: 'Calculating Mᵣ for water (H₂O)',
+        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-lg mx-auto">
+  <rect width="400" height="200" fill="var(--color-surface)" rx="8"/>
+  <text x="200" y="50" font-family="sans-serif" font-size="24" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">H₂O</text>
+  
+  <text x="130" y="90" font-family="sans-serif" font-size="16" fill="var(--color-text)" text-anchor="middle">2 × Hydrogen</text>
+  <text x="270" y="90" font-family="sans-serif" font-size="16" fill="var(--color-text)" text-anchor="middle">1 × Oxygen</text>
+  
+  <path d="M 180 60 L 140 75" stroke="var(--color-border)" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 220 60 L 260 75" stroke="var(--color-border)" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="130" y="120" font-family="sans-serif" font-size="14" fill="var(--color-text-secondary)" text-anchor="middle">2 × 1.0 = 2.0</text>
+  <text x="270" y="120" font-family="sans-serif" font-size="14" fill="var(--color-text-secondary)" text-anchor="middle">1 × 16.0 = 16.0</text>
+  
+  <text x="200" y="160" font-family="sans-serif" font-size="20" font-weight="bold" fill="var(--color-success)" text-anchor="middle">Mᵣ = 2.0 + 16.0 = 18.0</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M 0 0 L 6 3 L 0 6 z" fill="var(--color-border)"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-mr',
       type: 'callout',
       data: {

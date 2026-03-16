@@ -62,6 +62,93 @@ export const note_olevel_chemistry_2_2_6 = {
       }
     },
     {
+      id: 'svg-brittleness',
+      type: 'svg',
+      data: {
+        caption: 'Why ionic compounds are brittle: striking the crystal shifts layers, causing ions of the same charge to align and repel, breaking the crystal.',
+        svg: `<svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="po" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </radialGradient>
+    <radialGradient id="ne" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Before strike -->
+  <g transform="translate(80, 50)">
+    <text x="60" y="-30" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">Before Strike</text>
+    <text x="60" y="-12" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Alternating charges attract</text>
+    
+    <!-- Top Layer -->
+    <circle cx="0" cy="0" r="14" fill="url(#po)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <circle cx="40" cy="0" r="14" fill="url(#ne)"/>
+    <text x="40" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <circle cx="80" cy="0" r="14" fill="url(#po)"/>
+    <text x="80" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <circle cx="120" cy="0" r="14" fill="url(#ne)"/>
+    <text x="120" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+
+    <!-- Bottom Layer -->
+    <circle cx="0" cy="40" r="14" fill="url(#ne)"/>
+    <text x="0" y="43" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <circle cx="40" cy="40" r="14" fill="url(#po)"/>
+    <text x="40" y="44" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <circle cx="80" cy="40" r="14" fill="url(#ne)"/>
+    <text x="80" y="43" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <circle cx="120" cy="40" r="14" fill="url(#po)"/>
+    <text x="120" y="44" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+
+    <!-- Force Hammer -->
+    <path d="M-60 -10 L-20 -10 L-20 10 L-60 10 Z" fill="#64748b"/>
+    <path d="M-40 -20 L-20 -20 L-10 0 L-20 20 L-40 20 Z" fill="#94a3b8"/>
+    <text x="-35" y="4" fill="#fff" font-weight="bold" font-family="var(--font-sans)">Hit</text>
+    <path d="M-15 0 L-5 0 L-10 -5 M-5 0 L-10 5" stroke="#000" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 250 70 L 290 70 L 280 60 M 290 70 L 280 80" stroke="var(--color-text-tertiary)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- After strike -->
+  <g transform="translate(380, 50)">
+    <text x="60" y="-30" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="var(--color-text)">After Strike</text>
+    <text x="60" y="-12" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)">Like charges align, layers repel</text>
+    
+    <!-- Top Layer (Shifted Right by 40) -->
+    <g transform="translate(40, 0)">
+      <circle cx="0" cy="0" r="14" fill="url(#po)"/>
+      <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+      <circle cx="40" cy="0" r="14" fill="url(#ne)"/>
+      <text x="40" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+      <circle cx="80" cy="0" r="14" fill="url(#po)"/>
+      <text x="80" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    </g>
+
+    <!-- Bottom Layer (Stays) -->
+    <!-- Removed one for alignment visualization -->
+    <circle cx="40" cy="50" r="14" fill="url(#po)"/>
+    <text x="40" y="54" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <circle cx="80" cy="50" r="14" fill="url(#ne)"/>
+    <text x="80" y="53" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <circle cx="120" cy="50" r="14" fill="url(#po)"/>
+    <text x="120" y="54" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+
+    <!-- Repulsion lines -->
+    <path d="M 40 18 L 40 32 M 35 22 L 40 18 L 45 22 M 35 28 L 40 32 L 45 28" stroke="#ef4444" stroke-width="2" fill="none"/>
+    <path d="M 80 18 L 80 32 M 75 22 L 80 18 L 85 22 M 75 28 L 80 32 L 85 28" stroke="#ef4444" stroke-width="2" fill="none"/>
+    <path d="M 120 18 L 120 32 M 115 22 L 120 18 L 125 22 M 115 28 L 120 32 L 125 28" stroke="#ef4444" stroke-width="2" fill="none"/>
+
+    <!-- Break marker -->
+    <path d="M 20 25 L 30 15 L 25 35 L 35 25" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Ionic compounds are solid with high melting points (strong lattice forces), brittle, and conduct electricity only when molten or dissolved. Higher ion charges mean stronger forces and higher melting points — MgO (2852°C) is much higher than NaCl (801°C).' }

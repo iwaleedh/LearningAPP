@@ -50,6 +50,54 @@ export const note_olevel_chemistry_7_7_2 = {
       }
     },
     {
+      id: 'svg-strong-weak',
+      type: 'svg',
+      data: {
+        caption: 'Strong vs Weak Acid at the molecular level: Strong acid fully ionises, generating many H⁺ ions. Weak acid mostly stays as molecules (HA) with very few H⁺ ions.',
+        svg: `<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- LEFT BEAKER: Strong Acid -->
+  <path d="M 60 70 L 60 180 A 10 10 0 0 0 70 190 L 170 190 A 10 10 0 0 0 180 180 L 180 70" fill="none" stroke="var(--color-text)" stroke-width="3" />
+  <ellipse cx="120" cy="70" rx="60" ry="10" fill="none" stroke="var(--color-text)" stroke-width="2" />
+  
+  <path d="M 62 120 Q 90 125 120 120 T 178 120 L 178 180 A 8 8 0 0 1 170 188 L 70 188 A 8 8 0 0 1 62 180 Z" fill="#fee2e2" />
+  <text x="120" y="40" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">Strong Acid (HCl)</text>
+  <text x="120" y="55" font-family="var(--font-sans)" font-size="10" fill="#b91c1c" text-anchor="middle">Fully ionised (100%)</text>
+
+  <!-- Ions in strong acid -->
+  <circle cx="80" cy="140" r="8" fill="#ef4444" /> <text x="80" y="143" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">H⁺</text>
+  <circle cx="100" cy="160" r="10" fill="#94a3b8" /> <text x="100" y="163" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">Cl⁻</text>
+  
+  <circle cx="140" cy="130" r="8" fill="#ef4444" /> <text x="140" y="133" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">H⁺</text>
+  <circle cx="160" cy="150" r="10" fill="#94a3b8" /> <text x="160" y="153" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">Cl⁻</text>
+  
+  <circle cx="130" cy="170" r="8" fill="#ef4444" /> <text x="130" y="173" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">H⁺</text>
+  <circle cx="90" cy="135" r="10" fill="#94a3b8" /> <text x="90" y="138" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">Cl⁻</text>
+  
+
+  <!-- RIGHT BEAKER: Weak Acid -->
+  <path d="M 320 70 L 320 180 A 10 10 0 0 0 330 190 L 430 190 A 10 10 0 0 0 440 180 L 440 70" fill="none" stroke="var(--color-text)" stroke-width="3" />
+  <ellipse cx="380" cy="70" rx="60" ry="10" fill="none" stroke="var(--color-text)" stroke-width="2" />
+  
+  <path d="M 322 120 Q 350 125 380 120 T 438 120 L 438 180 A 8 8 0 0 1 430 188 L 330 188 A 8 8 0 0 1 322 180 Z" fill="#ffedd5" />
+  <text x="380" y="40" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#f59e0b" text-anchor="middle">Weak Acid (Ethanoic)</text>
+  <text x="380" y="55" font-family="var(--font-sans)" font-size="10" fill="#b45309" text-anchor="middle">Partially ionised (~1%)</text>
+
+  <!-- Particles in weak acid -->
+  <circle cx="350" cy="140" r="8" fill="#ef4444" /> <text x="350" y="143" font-family="var(--font-sans)" font-size="8" fill="#fff" text-anchor="middle">H⁺</text>
+  <circle cx="370" cy="160" r="12" fill="#fcd34d" /> <text x="370" y="163" font-family="var(--font-sans)" font-size="8" fill="#b45309" text-anchor="middle">A⁻</text>
+  
+  <!-- Intact molecules HA -->
+  <ellipse cx="410" cy="140" rx="14" ry="8" fill="#fed7aa" /> <text x="410" y="143" font-family="var(--font-sans)" font-size="8" fill="#9a3412" text-anchor="middle">HA</text>
+  <ellipse cx="380" cy="130" rx="14" ry="8" fill="#fed7aa" /> <text x="380" y="133" font-family="var(--font-sans)" font-size="8" fill="#9a3412" text-anchor="middle">HA</text>
+  <ellipse cx="400" cy="170" rx="14" ry="8" fill="#fed7aa" /> <text x="400" y="173" font-family="var(--font-sans)" font-size="8" fill="#9a3412" text-anchor="middle">HA</text>
+  <ellipse cx="340" cy="170" rx="14" ry="8" fill="#fed7aa" /> <text x="340" y="173" font-family="var(--font-sans)" font-size="8" fill="#9a3412" text-anchor="middle">HA</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

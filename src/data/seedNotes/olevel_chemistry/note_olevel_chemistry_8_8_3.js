@@ -35,6 +35,67 @@ export const note_olevel_chemistry_8_8_3 = {
       }
     },
     {
+      id: 'svg-halogens',
+      type: 'svg',
+      data: {
+        caption: 'Physical states and colours of the Halogens at room temperature. Note the trend from gas to solid and lighter to darker colour down the group.',
+        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Set of 4 gas jars / flasks -->
+
+  <!-- Fluorine (F2) -->
+  <text x="100" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fluorine (F₂)</text>
+  <rect x="75" y="60" width="50" height="120" rx="4" fill="#fef9c3" opacity="0.4" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="70" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
+  <text x="100" y="100" font-family="var(--font-sans)" font-size="12" fill="#854d0e" opacity="0.6" text-anchor="middle">Pale</text>
+  <text x="100" y="115" font-family="var(--font-sans)" font-size="12" fill="#854d0e" opacity="0.6" text-anchor="middle">yellow</text>
+  <text x="100" y="130" font-family="var(--font-sans)" font-size="12" fill="#854d0e" opacity="0.6" text-anchor="middle">gas</text>
+
+  <!-- Chlorine (Cl2) -->
+  <text x="230" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Chlorine (Cl₂)</text>
+  <rect x="205" y="60" width="50" height="120" rx="4" fill="#86efac" opacity="0.6" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="200" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
+  <text x="230" y="100" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">Yellow-</text>
+  <text x="230" y="115" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">green</text>
+  <text x="230" y="130" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">gas</text>
+
+  <!-- Bromine (Br2) -->
+  <text x="360" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Bromine (Br₂)</text>
+  <rect x="335" y="60" width="50" height="120" rx="4" fill="#fdba74" opacity="0.5" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="335" y="130" width="50" height="50" rx="4" fill="#c2410c"/> <!-- liquid -->
+  <rect x="330" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
+  <text x="360" y="100" font-family="var(--font-sans)" font-size="12" fill="#9a3412" text-anchor="middle">Red-brown</text>
+  <text x="360" y="115" font-family="var(--font-sans)" font-size="12" fill="#9a3412" text-anchor="middle">vapour</text>
+  <text x="360" y="155" font-family="var(--font-sans)" font-size="12" fill="#fff" text-anchor="middle">Liquid</text>
+
+  <!-- Iodine (I2) -->
+  <text x="490" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Iodine (I₂)</text>
+  <rect x="465" y="60" width="50" height="120" rx="4" fill="#d8b4fe" opacity="0.4" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="460" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
+  <!-- Solid crystals at bottom -->
+  <polygon points="475,175 480,165 490,170 485,180" fill="#334155"/>
+  <polygon points="490,175 495,160 505,165 500,180" fill="#1e293b"/>
+  <polygon points="480,178 485,168 500,175 495,180" fill="#0f172a"/>
+  
+  <text x="490" y="100" font-family="var(--font-sans)" font-size="12" fill="#6b21a8" text-anchor="middle">Violet</text>
+  <text x="490" y="115" font-family="var(--font-sans)" font-size="12" fill="#6b21a8" text-anchor="middle">vapour</text>
+  <text x="490" y="150" font-family="var(--font-sans)" font-size="12" fill="#334155" text-anchor="middle">Grey-black</text>
+  <text x="490" y="165" font-family="var(--font-sans)" font-size="12" fill="#334155" text-anchor="middle">solid</text>
+
+  <!-- Down group arrow -->
+  <path d="M 60 215 L 540 215" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <text x="300" y="210" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">MELTING POINT &amp; BOILING POINT INCREASE</text>
+
+  <defs>
+    <marker id="arrow-head" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="var(--color-text)"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-reactions',
       type: 'callout',
       data: {

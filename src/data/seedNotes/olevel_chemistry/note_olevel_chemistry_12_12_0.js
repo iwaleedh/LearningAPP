@@ -26,6 +26,78 @@ export const note_olevel_chemistry_12_12_0 = {
       }
     },
     {
+      id: 'svg-measuring-apparatus',
+      type: 'svg',
+      data: {
+        caption: 'Apparatus used for measuring liquid volume: Measuring cylinder, Volumetric pipette, and Burette.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <defs>
+        <style>
+            .glass { fill: rgba(99, 102, 241, 0.1); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }
+            .mark { stroke: var(--color-text); stroke-width: 1.5; }
+            .liquid { fill: rgba(16, 185, 129, 0.2); }
+            .label { font-family: var(--font-sans); font-size: 14px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+        </style>
+    </defs>
+    
+    <!-- Measuring Cylinder -->
+    <g transform="translate(100, 30)">
+        <polygon points="-20,220 20,220 15,210 -15,210" fill="var(--color-text-secondary)"/> <!-- Base -->
+        <path d="M -15 20 L -15 210 L 15 210 L 15 20" class="glass"/>
+        <path d="M -20 20 L -15 20" class="glass"/> <!-- spout -->
+        
+        <!-- Liquid -->
+        <path d="M -15 150 C 0 155, 15 150, 15 150 L 15 209 L -15 209 Z" class="liquid"/>
+        
+        <!-- Graduations -->
+        <line x1="-15" y1="50" x2="-5" y2="50" class="mark"/>
+        <line x1="-15" y1="80" x2="-5" y2="80" class="mark"/>
+        <line x1="-15" y1="110" x2="-5" y2="110" class="mark"/>
+        <line x1="-15" y1="140" x2="-5" y2="140" class="mark"/>
+        <line x1="-15" y1="170" x2="-5" y2="170" class="mark"/>
+        
+        <text x="0" y="245" class="label">Measuring</text>
+        <text x="0" y="260" class="label">cylinder</text>
+    </g>
+
+    <!-- Volumetric Pipette -->
+    <g transform="translate(250, 30)">
+        <path d="M -4 20 L -4 90 C -15 100, -20 110, -20 120 C -20 130, -15 140, -4 150 L -4 210 L -2 220 L 2 220 L 4 210 L 4 150 C 15 140, 20 130, 20 120 C 20 110, 15 100, 4 90 L 4 20 Z" class="glass"/>
+        
+        <!-- Liquid -->
+        <path d="M -4 60 C 0 65, 4 60, 4 60 L 4 90 C 15 100, 20 110, 20 120 C 20 130, 15 140, 4 150 L 4 210 L -4 210 L -4 150 C -15 140, -20 130, -20 120 C -20 110, -15 100, -4 90 Z" class="liquid"/>
+        
+        <!-- Mark -->
+        <line x1="-10" y1="50" x2="10" y2="50" class="mark"/>
+        
+        <text x="0" y="245" class="label">Volumetric</text>
+        <text x="0" y="260" class="label">pipette</text>
+    </g>
+
+    <!-- Burette -->
+    <g transform="translate(400, 30)">
+        <path d="M -8 10 L -8 180 L -2 195 L -2 200 L 2 200 L 2 195 L 8 180 L 8 10 Z" class="glass"/>
+        <!-- Tap -->
+        <rect x="-6" y="198" width="12" height="4" fill="var(--color-text)"/>
+        <!-- Tap handle -->
+        <rect x="6" y="196" width="10" height="8" rx="2" fill="var(--color-text-secondary)"/>
+        
+        <!-- Liquid -->
+        <path d="M -8 50 C 0 55, 8 50, 8 50 L 8 180 L -8 180 Z" class="liquid"/>
+        
+        <!-- Graduations -->
+        <line x1="-8" y1="30" x2="0" y2="30" class="mark"/> <text x="-15" y="34" font-size="10" fill="var(--color-text)">0</text>
+        <line x1="-8" y1="60" x2="0" y2="60" class="mark"/> <text x="-18" y="64" font-size="10" fill="var(--color-text)">10</text>
+        <line x1="-8" y1="90" x2="0" y2="90" class="mark"/> <text x="-18" y="94" font-size="10" fill="var(--color-text)">20</text>
+        <line x1="-8" y1="120" x2="0" y2="120" class="mark"/> <text x="-18" y="124" font-size="10" fill="var(--color-text)">30</text>
+        <line x1="-8" y1="150" x2="0" y2="150" class="mark"/> <text x="-18" y="154" font-size="10" fill="var(--color-text)">40</text>
+        
+        <text x="0" y="245" class="label">Burette</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-meniscus',
       type: 'callout',
       data: {

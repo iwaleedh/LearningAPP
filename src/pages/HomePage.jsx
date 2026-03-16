@@ -27,6 +27,9 @@ const aLevelSubjects = [
 
 const oLevelSubjects = [
     { id: 'olevel_biology', name: 'IGCSE Biology', chapters: 21, color: '#10b981', emoji: '🔬' },
+    { id: 'olevel_chemistry', name: 'IGCSE Chemistry', chapters: 12, color: '#8b5cf6', emoji: '🧪' },
+    { id: 'olevel_physics', name: 'IGCSE Physics', chapters: 22, color: '#3b82f6', emoji: '⚡' },
+    { id: 'olevel_business', name: 'IGCSE Business', chapters: 6, color: '#f59e0b', emoji: '💼' },
 ];
 
 export default function HomePage() {

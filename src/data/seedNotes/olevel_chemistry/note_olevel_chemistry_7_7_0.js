@@ -21,6 +21,66 @@ export const note_olevel_chemistry_7_7_0 = {
       }
     },
     {
+      id: 'svg-ph-scale',
+      type: 'svg',
+      data: {
+        caption: 'The pH scale showing acidity, neutrality, and alkalinity, with typical Universal Indicator colours.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120">
+    <defs>
+        <linearGradient id="phGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#ff0000"/>
+            <stop offset="14%" stop-color="#ff4500"/>
+            <stop offset="28%" stop-color="#ffa500"/>
+            <stop offset="42%" stop-color="#ffff00"/>
+            <stop offset="50%" stop-color="#006400"/>
+            <stop offset="64%" stop-color="#008080"/>
+            <stop offset="78%" stop-color="#0000ff"/>
+            <stop offset="92%" stop-color="#4b0082"/>
+            <stop offset="100%" stop-color="#800080"/>
+        </linearGradient>
+    </defs>
+    
+    <style>
+        .num { font-family: var(--font-mono); font-size: 16px; fill: var(--color-text); text-anchor: middle; }
+        .tick { stroke: var(--color-text); stroke-width: 1.5; }
+        .group { font-family: var(--font-sans); font-size: 14px; font-weight: bold; text-anchor: middle; fill: var(--color-text); }
+        .arrow { stroke: var(--color-text); stroke-width: 2; fill: none; }
+    </style>
+    
+    <rect x="20" y="40" width="560" height="25" rx="4" fill="url(#phGrad)"/>
+    
+    <!-- Ticks and Numbers -->
+    <g transform="translate(0, 40)">
+        <g transform="translate(20, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">0</text></g>
+        <g transform="translate(60, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">1</text></g>
+        <g transform="translate(100, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">2</text></g>
+        <g transform="translate(140, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">3</text></g>
+        <g transform="translate(180, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">4</text></g>
+        <g transform="translate(220, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">5</text></g>
+        <g transform="translate(260, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">6</text></g>
+        <g transform="translate(300, 0)"><line y1="0" y2="-12" class="tick" stroke-width="2"/><text y="-16" class="num" font-weight="bold">7</text></g>
+        <g transform="translate(340, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">8</text></g>
+        <g transform="translate(380, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">9</text></g>
+        <g transform="translate(420, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">10</text></g>
+        <g transform="translate(460, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">11</text></g>
+        <g transform="translate(500, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">12</text></g>
+        <g transform="translate(540, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">13</text></g>
+        <g transform="translate(580, 0)"><line y1="0" y2="-8" class="tick"/><text y="-12" class="num">14</text></g>
+    </g>
+
+    <!-- Group Labels and Arrows -->
+    <text x="140" y="95" class="group">Increasingly Acidic</text>
+    <path d="M 240 90 L 40 90 M 40 90 L 50 85 M 40 90 L 50 95" class="arrow"/>
+    
+    <text x="300" y="95" class="group">Neutral</text>
+    <line x1="300" y1="70" x2="300" y2="80" class="tick"/>
+    
+    <text x="460" y="95" class="group">Increasingly Alkaline</text>
+    <path d="M 360 90 L 560 90 M 560 90 L 550 85 M 560 90 L 550 95" class="arrow"/>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-indicators',
       type: 'comparisonTable',
       data: {

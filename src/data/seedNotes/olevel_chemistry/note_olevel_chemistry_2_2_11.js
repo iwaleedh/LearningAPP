@@ -21,6 +21,74 @@ export const note_olevel_chemistry_2_2_11 = {
       }
     },
     {
+      id: 'svg-sio2-structure',
+      type: 'svg',
+      data: {
+        caption: 'Structure of Silicon(IV) oxide. Grey atoms = Silicon, Red atoms = Oxygen.',
+        svg: `<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Silicon Atom (grey) -->
+    <radialGradient id="si-atom" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </radialGradient>
+    <!-- Oxygen Atom (red) -->
+    <radialGradient id="o-atom" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f87171" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(120, 30)">
+    <!-- Bonds (Draw first so they go behind atoms) -->
+    <!-- Central Si to its 4 Oxygens -->
+    <line x1="60" y1="80" x2="60" y2="40" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="60" y1="80" x2="20" y2="110" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="60" y1="80" x2="100" y2="110" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="60" y1="80" x2="60" y2="140" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Extending the network from Oxygens to next Silicon -->
+    <!-- Top Oxygen -->
+    <line x1="60" y1="40" x2="100" y2="10" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="60" y1="40" x2="20" y2="10" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Left Oxygen -->
+    <line x1="20" y1="110" x2="-20" y2="80" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="20" y1="110" x2="-10" y2="150" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Right Oxygen -->
+    <line x1="100" y1="110" x2="140" y2="80" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="100" y1="110" x2="130" y2="150" stroke="var(--color-text-tertiary)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Atoms -->
+    <!-- Outer/Connecting Silicons -->
+    <circle cx="100" cy="10" r="10" fill="url(#si-atom)"/>
+    <circle cx="20" cy="10" r="10" fill="url(#si-atom)"/>
+    <circle cx="-20" cy="80" r="10" fill="url(#si-atom)"/>
+    <circle cx="-10" cy="150" r="10" fill="url(#si-atom)"/>
+    <circle cx="140" cy="80" r="10" fill="url(#si-atom)"/>
+    <circle cx="130" cy="150" r="10" fill="url(#si-atom)"/>
+
+    <!-- The 4 Oxygens -->
+    <circle cx="60" cy="40" r="8" fill="url(#o-atom)"/>
+    <circle cx="20" cy="110" r="8" fill="url(#o-atom)"/>
+    <circle cx="100" cy="110" r="8" fill="url(#o-atom)"/>
+    <circle cx="60" cy="140" r="8" fill="url(#o-atom)"/>
+
+    <!-- Central Silicon -->
+    <circle cx="60" cy="80" r="10" fill="url(#si-atom)"/>
+
+    <!-- Legend -->
+    <circle cx="-60" cy="180" r="10" fill="url(#si-atom)"/>
+    <text x="-40" y="185" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)">Silicon (bonded to 4 O)</text>
+    
+    <circle cx="-60" cy="205" r="8" fill="url(#o-atom)"/>
+    <text x="-40" y="210" font-family="var(--font-sans)" font-size="14" fill="var(--color-text)">Oxygen (bonded to 2 Si)</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-props',
       type: 'comparisonTable',
       data: {

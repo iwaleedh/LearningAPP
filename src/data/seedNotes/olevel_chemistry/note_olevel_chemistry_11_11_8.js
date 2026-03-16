@@ -44,6 +44,84 @@ export const note_olevel_chemistry_11_11_8 = {
       }
     },
     {
+      id: 'svg-fermentation',
+      type: 'svg',
+      data: {
+        caption: 'Experimental setup for the fermentation of glucose to produce ethanol and carbon dioxide.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <defs>
+        <style>
+            .glass { fill: rgba(255,255,255,0.1); stroke: var(--color-text); stroke-width: 2; stroke-linejoin: round; }
+            .liquid-ferment { fill: rgba(241, 196, 15, 0.2); }
+            .liquid-limewater { fill: rgba(236, 240, 241, 0.4); }
+            .bung { fill: #7f8c8d; stroke: var(--color-text); stroke-width: 2; }
+            .tube { fill: none; stroke: var(--color-text); stroke-width: 4; stroke-linejoin: round; }
+            .bubble { fill: none; stroke: var(--color-text); stroke-width: 1.5; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .line-pointer { stroke: var(--color-text); stroke-width: 1; stroke-dasharray: 4,4; }
+        </style>
+    </defs>
+
+    <!-- Conical Flask (Fermentation mixture) -->
+    <g transform="translate(100, 150)">
+        <!-- Liquid -->
+        <path d="M-40,80 L40,80 L25,0 L-25,0 Z" class="liquid-ferment" />
+        
+        <!-- Flask -->
+        <path d="M-15,-60 L15,-60 L15,-20 L50,80 A10,10 0 0,1 40,90 L-40,90 A10,10 0 0,1 -50,80 L-15,-20 Z" class="glass" />
+        
+        <!-- Bung -->
+        <polygon points="-16,-60 16,-60 12,-40 -12,-40" class="bung" />
+        
+        <!-- Yeast particles (dots in liquid) -->
+        <circle cx="-10" cy="40" r="2" fill="var(--color-text)"/>
+        <circle cx="20" cy="50" r="2" fill="var(--color-text)"/>
+        <circle cx="-20" cy="65" r="2" fill="var(--color-text)"/>
+        <circle cx="10" cy="70" r="2" fill="var(--color-text)"/>
+        <circle cx="5" cy="30" r="2" fill="var(--color-text)"/>
+        <circle cx="-30" cy="80" r="2" fill="var(--color-text)"/>
+
+        <!-- CO2 bubbles in flask -->
+        <circle cx="0" cy="20" r="4" class="bubble"/>
+        <circle cx="-10" cy="10" r="3" class="bubble"/>
+        <circle cx="5" cy="0" r="5" class="bubble"/>
+    </g>
+
+    <!-- Delivery Tube -->
+    <path d="M100,100 L100,70 A10,10 0 0,1 110,60 L310,60 A10,10 0 0,1 320,70 L320,230" class="tube" />
+
+    <!-- Test Tube (Limewater) -->
+    <g transform="translate(320, 150)">
+        <!-- Liquid -->
+        <rect x="-15" y="40" width="30" height="50" class="liquid-limewater"/>
+        <!-- Tube -->
+        <path d="M-17,-20 L-17,80 A17,17 0 0,0 17,80 L17,-20" class="glass"/>
+        <!-- CO2 bubbles in limewater -->
+        <circle cx="0" cy="80" r="3" class="bubble"/>
+        <circle cx="-5" cy="70" r="4" class="bubble"/>
+        <circle cx="5" cy="60" r="3" class="bubble"/>
+        <circle cx="0" cy="50" r="4" class="bubble"/>
+    </g>
+
+    <!-- Labels and pointers -->
+    <text x="50" y="270" class="label" text-anchor="middle">Glucose solution</text>
+    <text x="50" y="285" class="label" text-anchor="middle">+ yeast</text>
+    <line x1="50" y1="255" x2="80" y2="200" class="line-pointer"/>
+
+    <text x="210" y="45" class="label">CO₂ gas bubbles through delivery tube</text>
+
+    <text x="400" y="190" class="label">Limewater</text>
+    <text x="400" y="210" class="label">(Turns milky if</text>
+    <text x="400" y="230" class="label">CO₂ is present)</text>
+    <line x1="395" y1="190" x2="340" y2="210" class="line-pointer"/>
+
+    <!-- Oil layer option (optional, but good to ensure anaerobic) -->
+    <text x="10" y="110" class="label" text-anchor="end">Air excluded</text>
+    <text x="10" y="125" class="label" text-anchor="end">(anaerobic)</text>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Alcohols (CₙH₂ₙ₊₁OH): –OH functional group. Combustion → CO₂ + H₂O. Oxidation → carboxylic acid. Dehydration (H₂SO₄) → alkene + H₂O. Fermentation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (yeast, ~30°C, anaerobic).' }

@@ -52,6 +52,87 @@ export const note_olevel_chemistry_12_12_7 = {
       }
     },
     {
+      id: 'svg-flame-tests',
+      type: 'svg',
+      data: {
+        caption: 'Characteristic flame test colours for metal cations.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+    <defs>
+        <style>
+            .burner { fill: #7f8c8d; stroke: var(--color-text); stroke-width: 2; }
+            .flame-core { fill: rgba(255,255,255,0.8); }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); text-anchor: middle; font-weight: bold; }
+            .desc { font-family: var(--font-sans); font-size: 12px; fill: var(--color-text-secondary); text-anchor: middle; }
+            
+            /* Flame Colors */
+            .flame-li { fill: #e84393; opacity: 0.8; } /* Crimson */
+            .flame-na { fill: #f39c12; opacity: 0.8; } /* Yellow/Orange */
+            .flame-k { fill: #9b59b6; opacity: 0.8; }  /* Lilac */
+            .flame-ca { fill: #e74c3c; opacity: 0.8; } /* Brick Red */
+            .flame-cu { fill: #1abc9c; opacity: 0.8; } /* Blue-Green */
+        </style>
+    </defs>
+
+    <!-- Lithium -->
+    <g transform="translate(60, 100)">
+        <path d="M-10,20 L10,20 L15,40 L-15,40 Z" class="burner"/>
+        
+        <!-- Flame -->
+        <path d="M0,20 Q-20,0 0,-40 Q20,0 0,20 Z" class="flame-li"/>
+        <path d="M0,15 Q-10,0 0,-25 Q10,0 0,15 Z" class="flame-core"/>
+
+        <text x="0" y="65" class="label">Lithium (Li⁺)</text>
+        <text x="0" y="80" class="desc">Crimson</text>
+    </g>
+
+    <!-- Sodium -->
+    <g transform="translate(180, 100)">
+        <path d="M-10,20 L10,20 L15,40 L-15,40 Z" class="burner"/>
+        
+        <path d="M0,20 Q-30,-5 0,-50 Q30,-5 0,20 Z" class="flame-na"/>
+        <path d="M0,15 Q-15,0 0,-30 Q15,0 0,15 Z" class="flame-core"/>
+
+        <text x="0" y="65" class="label">Sodium (Na⁺)</text>
+        <text x="0" y="80" class="desc">Yellow/Orange</text>
+    </g>
+
+    <!-- Potassium -->
+    <g transform="translate(300, 100)">
+        <path d="M-10,20 L10,20 L15,40 L-15,40 Z" class="burner"/>
+        
+        <path d="M0,20 Q-20,0 0,-40 Q20,0 0,20 Z" class="flame-k"/>
+        <path d="M0,15 Q-10,0 0,-25 Q10,0 0,15 Z" class="flame-core"/>
+
+        <text x="0" y="65" class="label">Potassium (K⁺)</text>
+        <text x="0" y="80" class="desc">Lilac</text>
+    </g>
+
+    <!-- Calcium -->
+    <g transform="translate(420, 100)">
+        <path d="M-10,20 L10,20 L15,40 L-15,40 Z" class="burner"/>
+        
+        <path d="M0,20 Q-25,-5 0,-45 Q25,-5 0,20 Z" class="flame-ca"/>
+        <path d="M0,15 Q-15,0 0,-30 Q15,0 0,15 Z" class="flame-core"/>
+
+        <text x="0" y="65" class="label">Calcium (Ca²⁺)</text>
+        <text x="0" y="80" class="desc">Brick Red</text>
+    </g>
+
+    <!-- Copper -->
+    <g transform="translate(540, 100)">
+        <path d="M-10,20 L10,20 L15,40 L-15,40 Z" class="burner"/>
+        
+        <path d="M0,20 Q-20,0 0,-40 Q20,0 0,20 Z" class="flame-cu"/>
+        <path d="M0,15 Q-10,0 0,-25 Q10,0 0,15 Z" class="flame-core"/>
+
+        <text x="0" y="65" class="label">Copper (Cu²⁺)</text>
+        <text x="0" y="80" class="desc">Blue-Green</text>
+    </g>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-tips',
       type: 'callout',
       data: {

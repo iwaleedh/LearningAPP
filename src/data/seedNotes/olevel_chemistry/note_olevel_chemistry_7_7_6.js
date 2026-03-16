@@ -48,6 +48,50 @@ export const note_olevel_chemistry_7_7_6 = {
       }
     },
     {
+      id: 'svg-precipitate-predict',
+      type: 'svg',
+      data: {
+        caption: 'Visualizing the formation of a precipitate: Ca²⁺ and CO₃²⁻ cross over to form solid CaCO₃.',
+        svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <text x="120" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Solution 1 (CaCl₂)</text>
+  <text x="380" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Solution 2 (Na₂CO₃)</text>
+
+  <!-- Ions in solution 1 -->
+  <circle cx="100" cy="70" r="16" fill="#bfdbfe" />
+  <text x="100" y="74" font-family="var(--font-sans)" font-size="12" fill="#1e3a8a" text-anchor="middle">Ca²⁺</text>
+  <circle cx="140" cy="70" r="14" fill="#fecaca" />
+  <text x="140" y="74" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">Cl¯</text>
+
+  <!-- Ions in solution 2 -->
+  <circle cx="360" cy="70" r="14" fill="#a7f3d0" />
+  <text x="360" y="74" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">Na⁺</text>
+  <circle cx="400" cy="70" r="18" fill="#fde68a" />
+  <text x="400" y="74" font-family="var(--font-sans)" font-size="12" fill="#78350f" text-anchor="middle">CO₃²¯</text>
+
+  <!-- Arrows crossing to products -->
+  <path d="M 110 90 Q 200 130 230 140" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+  <path d="M 390 90 Q 300 130 270 140" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
+
+  <path d="M 150 85 Q 250 110 350 85" fill="none" stroke="#94a3b8" stroke-dasharray="4,2" stroke-width="2" />
+
+  <!-- Products -->
+  <text x="250" y="140" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Insoluble</text>
+  <rect x="210" y="150" width="80" height="30" rx="4" fill="#fef08a" stroke="#d97706" />
+  <text x="250" y="170" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#78350f" text-anchor="middle">CaCO₃(s)</text>
+
+  <text x="250" y="80" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Soluble Spectator Ions</text>
+
+  <defs>
+    <marker id="arrow-head" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="var(--color-text)"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'All nitrates, all Na/K/NH₄ salts soluble. Insoluble: BaSO₄, AgCl, AgBr, AgI, PbCl₂, PbI₂, most carbonates, most hydroxides (not NaOH/KOH). Use solubility rules to identify which ions form precipitates when solutions are mixed.' }

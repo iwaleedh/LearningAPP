@@ -12,6 +12,60 @@ export const note_olevel_chemistry_7_7_3 = {
       data: { text: 'Types of Oxides', level: 2 }
     },
     {
+      id: 'svg-oxides-trend',
+      type: 'svg',
+      data: {
+        caption: 'General trend of oxides across the Periodic Table. Metals form basic oxides, non-metals form acidic oxides, and elements near the boundary often form amphoteric oxides.',
+        svg: `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <text x="300" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Period 3 Oxides Trend</text>
+
+  <!-- Boxes for elements -->
+  <g font-family="var(--font-sans)" font-size="12" text-anchor="middle">
+    <!-- Na, Mg -->
+    <rect x="50" y="60" width="60" height="40" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="80" y="85" fill="#1e3a8a" font-weight="bold">Na₂O</text>
+    
+    <rect x="120" y="60" width="60" height="40" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="150" y="85" fill="#1e3a8a" font-weight="bold">MgO</text>
+
+    <!-- Al -->
+    <rect x="190" y="60" width="60" height="40" rx="4" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    <text x="220" y="85" fill="#581c87" font-weight="bold">Al₂O₃</text>
+
+    <!-- Si, P, S, Cl -->
+    <rect x="260" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="290" y="85" fill="#7f1d1d" font-weight="bold">SiO₂</text>
+
+    <rect x="330" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="360" y="85" fill="#7f1d1d" font-weight="bold">P₄O₁₀</text>
+
+    <rect x="400" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="430" y="85" fill="#7f1d1d" font-weight="bold">SO₃/SO₂</text>
+
+    <rect x="470" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="500" y="85" fill="#7f1d1d" font-weight="bold">Cl₂O₇</text>
+  </g>
+
+  <!-- Labels -->
+  <text x="115" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">Basic Oxides</text>
+  <text x="115" y="145" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Metals, react with acids)</text>
+
+  <text x="220" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#a855f7" text-anchor="middle">Amphoteric</text>
+  <text x="220" y="145" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Reacts with both)</text>
+
+  <text x="395" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">Acidic Oxides</text>
+  <text x="395" y="145" font-family="var(--font-sans)" font-size="10" fill="#64748b" text-anchor="middle">(Non-metals, react with alkalis)</text>
+  
+  <!-- Underlines -->
+  <path d="M 50 110 L 180 110 L 180 115" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M 190 110 L 250 110 L 250 115" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <path d="M 260 110 L 530 110 L 530 115" fill="none" stroke="#ef4444" stroke-width="2"/>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-oxides',
       type: 'comparisonTable',
       data: {

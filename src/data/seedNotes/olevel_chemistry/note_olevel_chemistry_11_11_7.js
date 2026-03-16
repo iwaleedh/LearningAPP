@@ -44,6 +44,97 @@ export const note_olevel_chemistry_11_11_7 = {
       }
     },
     {
+      id: 'svg-hydration',
+      type: 'svg',
+      data: {
+        caption: 'Addition of steam (hydration) to ethene to form ethanol.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+    <defs>
+        <style>
+            .bond { stroke: var(--color-text); stroke-width: 2; }
+            .double-bond { stroke: var(--color-text); stroke-width: 2; }
+            .atom-c { font-family: var(--font-sans); font-size: 20px; fill: var(--color-text); text-anchor: middle; dominant-baseline: middle; }
+            .atom-h { font-family: var(--font-sans); font-size: 20px; fill: #7f8c8d; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
+            .atom-o { font-family: var(--font-sans); font-size: 20px; fill: #e74c3c; text-anchor: middle; dominant-baseline: middle; font-weight: bold; }
+            .operator { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: var(--color-text); text-anchor: middle; dominant-baseline: middle; }
+            .cond-text { font-family: var(--font-sans); font-size: 13px; font-weight: bold; fill: #2980b9; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <!-- Ethene -->
+    <g transform="translate(100, 100)">
+        <text x="-25" y="0" class="atom-c">C</text>
+        <text x="25" y="0" class="atom-c">C</text>
+        
+        <line x1="-12" y1="-4" x2="12" y2="-4" class="double-bond"/>
+        <line x1="-12" y1="4" x2="12" y2="4" class="double-bond"/>
+        
+        <text x="-50" y="-30" class="atom-h">H</text>
+        <text x="-50" y="30" class="atom-h">H</text>
+        <text x="50" y="-30" class="atom-h">H</text>
+        <text x="50" y="30" class="atom-h">H</text>
+        
+        <line x1="-32" y1="-10" x2="-42" y2="-20" class="bond"/>
+        <line x1="-32" y1="10" x2="-42" y2="20" class="bond"/>
+        <line x1="32" y1="-10" x2="42" y2="-20" class="bond"/>
+        <line x1="32" y1="10" x2="42" y2="20" class="bond"/>
+        
+        <text y="70" class="cond-text" fill="var(--color-text)">Ethene</text>
+    </g>
+
+    <text x="190" y="100" class="operator">+</text>
+
+    <!-- Steam (H-OH) -->
+    <g transform="translate(250, 100)">
+        <text x="-25" y="0" class="atom-h">H</text>
+        <text x="10" y="0" class="atom-o">O</text>
+        <text x="35" y="0" class="atom-h">H</text>
+        <line x1="-10" y1="0" x2="-3" y2="0" class="bond"/>
+        <line x1="22" y1="0" x2="25" y2="0" class="bond"/>
+        <text x="5" y="70" class="cond-text" fill="var(--color-text)">Steam</text>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(330, 100)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)"/>
+        <polygon points="60,-5 60,5 70,0" fill="var(--color-text)"/>
+        <text x="35" y="-30" class="cond-text">300°C, 60 atm</text>
+        <text x="35" y="-12" class="cond-text">H₃PO₄ cat.</text>
+    </g>
+
+    <!-- Ethanol -->
+    <g transform="translate(480, 100)">
+        <text x="-25" y="0" class="atom-c">C</text>
+        <text x="25" y="0" class="atom-c">C</text>
+        
+        <line x1="-12" y1="0" x2="12" y2="0" class="bond"/>
+        
+        <!-- H atoms left C -->
+        <text x="-50" y="-30" class="atom-h">H</text>
+        <text x="-50" y="30" class="atom-h">H</text>
+        <text x="-25" y="40" class="atom-h">H</text>
+        <line x1="-32" y1="-10" x2="-42" y2="-20" class="bond"/>
+        <line x1="-32" y1="10" x2="-42" y2="20" class="bond"/>
+        <line x1="-25" y1="15" x2="-25" y2="25" class="bond"/>
+        
+        <!-- H atoms right C -->
+        <text x="50" y="-30" class="atom-h">H</text>
+        <text x="50" y="30" class="atom-h">H</text>
+        <line x1="32" y1="-10" x2="42" y2="-20" class="bond"/>
+        <line x1="32" y1="10" x2="42" y2="20" class="bond"/>
+
+        <!-- OH group bottom right -->
+        <text x="25" y="40" class="atom-o">O</text>
+        <text x="25" y="70" class="atom-h">H</text>
+        <line x1="25" y1="15" x2="25" y2="25" class="bond"/>
+        <line x1="25" y1="45" x2="25" y2="55" class="bond"/>
+
+        <text y="100" class="cond-text" fill="var(--color-text)">Ethanol</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Addition reactions open the C=C double bond. With H₂ (Ni catalyst) → alkane. With Br₂ → dibromoalkane. With HBr → bromoalkane. With H₂O (steam, H₃PO₄, 300°C) → alcohol. Hydration of ethene = industrial route to ethanol.' }

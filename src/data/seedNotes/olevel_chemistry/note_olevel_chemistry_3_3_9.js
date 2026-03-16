@@ -12,6 +12,38 @@ export const note_olevel_chemistry_3_3_9 = {
       data: { text: 'Empirical vs Molecular Formula', level: 2 }
     },
     {
+      id: 'svg-formula',
+      type: 'svg',
+      data: {
+        caption: 'Empirical (simplest ratio) vs Molecular (actual) formula for Ethene (C₂H₄)',
+        svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-xl mx-auto">
+  <rect width="500" height="200" fill="var(--color-surface)" rx="8"/>
+  
+  <!-- Empirical -->
+  <rect x="50" y="40" width="160" height="120" fill="white" fill-opacity="0.05" stroke="var(--color-primary)" stroke-width="2" rx="8"/>
+  <text x="130" y="70" font-family="sans-serif" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">Empirical Formula</text>
+  <text x="130" y="110" font-family="sans-serif" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">CH₂</text>
+  <text x="130" y="140" font-family="sans-serif" font-size="14" fill="var(--color-text-secondary)" text-anchor="middle">Ratio 1:2</text>
+  
+  <!-- Multiplier -->
+  <path d="M 220 100 L 280 100" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="250" y="90" font-family="sans-serif" font-size="16" font-weight="bold" fill="var(--color-success)" text-anchor="middle">× 2 (n)</text>
+  
+  <!-- Molecular -->
+  <rect x="290" y="40" width="160" height="120" fill="var(--color-primary)" fill-opacity="0.1" stroke="var(--color-primary)" stroke-width="2" rx="8"/>
+  <text x="370" y="70" font-family="sans-serif" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">Molecular Formula</text>
+  <text x="370" y="110" font-family="sans-serif" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">C₂H₄</text>
+  <text x="370" y="140" font-family="sans-serif" font-size="14" fill="var(--color-text-secondary)" text-anchor="middle">Actual number</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M 0 0 L 6 3 L 0 6 z" fill="var(--color-text)"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-diff',
       type: 'callout',
       data: {

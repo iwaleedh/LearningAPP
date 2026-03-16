@@ -21,6 +21,90 @@ export const note_olevel_chemistry_4_4_4 = {
       }
     },
     {
+      id: 'svg-electrode-surface',
+      type: 'svg',
+      data: {
+        caption: 'Microscopic view of half-equations: Reduction happening at the cathode and Oxidation at the anode.',
+        svg: `<svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cathode" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="anode" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fca5a5"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <radialGradient id="electron" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="var(--color-surface)"/>
+
+  <!-- Left: Cathode Reduction -->
+  <rect x="20" y="40" width="80" height="200" fill="url(#cathode)"/>
+  <text x="60" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">Cathode (-) Reduction</text>
+
+  <!-- Cathode Solution Side -->
+  <rect x="100" y="40" width="130" height="200" fill="#e0f2fe" opacity="0.6"/>
+  <!-- Cu2+ ion approaching -->
+  <circle cx="200" cy="180" r="16" fill="#3b82f6"/>
+  <text x="200" y="186" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Cu²⁺</text>
+  <path d="M 180 180 L 140 180" stroke="#0284c7" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+  
+  <!-- e- appearing -->
+  <circle cx="95" cy="110" r="8" fill="url(#electron)"/>
+  <text x="95" y="113" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#000" text-anchor="middle">e⁻</text>
+  <circle cx="95" cy="130" r="8" fill="url(#electron)"/>
+  <text x="95" y="133" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#000" text-anchor="middle">e⁻</text>
+
+  <path d="M 105 120 L 135 140" stroke="#ca8a04" stroke-width="2" fill="none" stroke-dasharray="2,2"/>
+  
+  <!-- Cu neutral atom deposited -->
+  <circle cx="120" cy="150" r="16" fill="#d97706"/>
+  <text x="120" y="156" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Cu</text>
+
+  <text x="115" y="260" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#0369a1" text-anchor="middle">Cu²⁺ + 2e⁻ → Cu</text>
+
+
+  <!-- Right: Anode Oxidation -->
+  <rect x="270" y="40" width="130" height="200" fill="#fee2e2" opacity="0.6"/>
+  <rect x="400" y="40" width="80" height="200" fill="url(#anode)"/>
+  <text x="440" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">Anode (+) Oxidation</text>
+
+  <!-- Cl- ions approaching -->
+  <circle cx="300" cy="100" r="14" fill="#10b981"/>
+  <text x="300" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Cl⁻</text>
+  <circle cx="300" cy="140" r="14" fill="#10b981"/>
+  <text x="300" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Cl⁻</text>
+  
+  <path d="M 320 120 L 360 120" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+
+  <!-- Molecule formed and e- left behind -->
+  <g transform="translate(370, 120)">
+    <circle cx="0" cy="-8" r="12" fill="#047857"/>
+    <circle cx="0" cy="8" r="12" fill="#047857"/>
+    <text x="0" y="4" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Cl₂</text>
+  </g>
+
+  <!-- Electrons going into Anode -->
+  <path d="M 390 120 L 415 160" stroke="#ca8a04" stroke-width="2" fill="none" stroke-dasharray="2,2"/>
+  <circle cx="410" cy="170" r="8" fill="url(#electron)"/>
+  <text x="410" y="173" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#000" text-anchor="middle">e⁻</text>
+  <circle cx="425" cy="170" r="8" fill="url(#electron)"/>
+  <text x="425" y="173" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#000" text-anchor="middle">e⁻</text>
+
+  <text x="385" y="260" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#b91c1c" text-anchor="middle">2Cl⁻ → Cl₂ + 2e⁻</text>
+
+  <!-- Divider line -->
+  <line x1="250" y1="20" x2="250" y2="280" stroke="var(--color-border-light)" stroke-width="2" stroke-dasharray="6,6"/>
+
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Common Half Equations', level: 2 }

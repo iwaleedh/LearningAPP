@@ -53,6 +53,99 @@ export const note_olevel_chemistry_8_8_0 = {
       }
     },
     {
+      id: 'svg-periodic-outline',
+      type: 'svg',
+      data: {
+        caption: 'Outline of the Periodic Table showing the division between metals and non-metals.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280">
+    <defs>
+        <style>
+            .metal { fill: rgba(52, 152, 219, 0.3); stroke: var(--color-text); stroke-width: 1.5; }
+            .non-metal { fill: rgba(46, 204, 113, 0.3); stroke: var(--color-text); stroke-width: 1.5; }
+            .metalloid { fill: rgba(241, 196, 15, 0.5); stroke: var(--color-text); stroke-width: 1.5; }
+            .group-label { font-family: var(--font-sans); font-size: 13px; font-weight: bold; fill: var(--color-text); text-anchor: middle; }
+            .legend { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .line-stair { stroke: #c0392b; stroke-width: 3; fill: none; stroke-linejoin: miter; }
+        </style>
+    </defs>
+
+    <!-- Base Grid Scale: each block is 25x25 -->
+    <g transform="translate(50, 40)">
+        
+        <!-- Group 1 -->
+        <rect x="0" y="0" width="25" height="175" class="metal"/>
+        <line x1="0" y1="25" x2="25" y2="25" stroke="var(--color-text)" stroke-width="1.5"/>
+        <!-- Group 2 -->
+        <rect x="25" y="25" width="25" height="150" class="metal"/>
+        
+        <!-- Transition Metals block -->
+        <rect x="50" y="75" width="250" height="100" class="metal"/>
+        
+        <!-- p-block outline (Groups 3-0) -->
+        <rect x="300" y="25" width="150" height="150" fill="none" stroke="none" />
+
+        <!-- Draw individual p-block columns -->
+        <!-- Group 3 -->
+        <rect x="300" y="25" width="25" height="150" class="metal"/>
+        <!-- Group 4 -->
+        <rect x="325" y="25" width="25" height="150" class="metal"/>
+        <!-- Group 5 -->
+        <rect x="350" y="25" width="25" height="150" class="metal"/>
+        <!-- Group 6 -->
+        <rect x="375" y="25" width="25" height="150" class="metal"/>
+        <!-- Group 7 -->
+        <rect x="400" y="25" width="25" height="150" class="non-metal"/>
+        <!-- Group 0 -->
+        <rect x="425" y="0" width="25" height="175" class="non-metal"/>
+        
+        <!-- Add the Non-metal and Metalloid sections manually over the p-block -->
+        <!-- Gr 3: B -->
+        <rect x="300" y="25" width="25" height="25" class="metalloid"/>
+        <!-- Gr 4: C, Si -->
+        <rect x="325" y="25" width="25" height="25" class="non-metal"/>
+        <rect x="325" y="50" width="25" height="25" class="metalloid"/>
+        <!-- Gr 5: N, P, As -->
+        <rect x="350" y="25" width="25" height="50" class="non-metal"/>
+        <rect x="350" y="75" width="25" height="50" class="metalloid"/>
+        <!-- Gr 6: O, S, Se -->
+        <rect x="375" y="25" width="25" height="75" class="non-metal"/>
+        <rect x="375" y="100" width="25" height="50" class="metalloid"/>
+        
+        <!-- Staircase line -->
+        <polyline points="300,25 300,50 325,50 325,75 350,75 350,125 375,125 375,150 400,150 400,175 425,175" class="line-stair"/>
+
+        <!-- Labels -->
+        <text x="12.5" y="-10" class="group-label">I</text>
+        <text x="37.5" y="-10" class="group-label">II</text>
+        <!-- Transition metals text -->
+        <text x="175" y="130" class="group-label">Transition Elements</text>
+        
+        <text x="312.5" y="-10" class="group-label">III</text>
+        <text x="337.5" y="-10" class="group-label">IV</text>
+        <text x="362.5" y="-10" class="group-label">V</text>
+        <text x="387.5" y="-10" class="group-label">VI</text>
+        <text x="412.5" y="-10" class="group-label">VII</text>
+        <text x="437.5" y="-10" class="group-label">0</text>
+    </g>
+
+    <!-- Legend -->
+    <g transform="translate(100, 240)">
+        <rect x="0" y="0" width="20" height="20" class="metal"/>
+        <text x="30" y="15" class="legend">Metals</text>
+        
+        <rect x="120" y="0" width="20" height="20" class="metalloid"/>
+        <text x="150" y="15" class="legend">Metalloids</text>
+        
+        <rect x="250" y="0" width="20" height="20" class="non-metal"/>
+        <text x="280" y="15" class="legend">Non-Metals</text>
+        
+        <line x1="380" y1="10" x2="410" y2="10" class="line-stair" stroke-width="4"/>
+        <text x="420" y="15" class="legend">Staircase</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Periodic table: elements ordered by atomic number. Same group = same outer electrons = similar properties. Same period = same number of shells. Metals on left; non-metals on right. Group 0: full outer shell, noble gases. Group 1: 1 outer e⁻ (alkali metals). Group 7: 7 outer e⁻ (halogens).' }

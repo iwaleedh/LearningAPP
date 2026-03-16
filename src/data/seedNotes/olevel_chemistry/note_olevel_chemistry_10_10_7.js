@@ -21,6 +21,90 @@ export const note_olevel_chemistry_10_10_7 = {
       }
     },
     {
+      id: 'svg-carbon-cycle',
+      type: 'svg',
+      data: {
+        caption: 'The Carbon Cycle, showing how photosynthesis removes CO₂ while respiration, combustion, and decomposition add it back.',
+        svg: `<svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Atmosphere -->
+  <rect x="200" y="20" width="200" height="60" rx="30" fill="#bae6fd" stroke="#3b82f6" stroke-width="2"/>
+  <text x="300" y="47" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">CO₂ in Atmosphere</text>
+
+  <!-- Plants Box -->
+  <rect x="50" y="160" width="140" height="50" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="120" y="185" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Carbon in Plants</text>
+  <text x="120" y="200" font-family="var(--font-sans)" font-size="10" fill="#166534" text-anchor="middle">(Glucose & tissues)</text>
+
+  <!-- Animals Box -->
+  <rect x="250" y="160" width="140" height="50" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="320" y="190" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="middle">Carbon in Animals</text>
+
+  <!-- Fossil Fuels Box -->
+  <rect x="420" y="260" width="140" height="50" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="490" y="285" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Fossil Fuels</text>
+  <text x="490" y="300" font-family="var(--font-sans)" font-size="10" fill="#1e293b" text-anchor="middle">(Coal, Oil, Gas)</text>
+
+  <!-- Dead Matter Box -->
+  <rect x="150" y="260" width="140" height="50" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+  <text x="220" y="290" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#4b5563" text-anchor="middle">Dead Matter & Waste</text>
+
+  <!-- ARROWS -->
+  <!-- Photosynthesis (Removes CO2) -->
+  <path d="M 230 80 Q 120 100, 120 155" fill="none" stroke="#22c55e" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="140" y="120" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#166534">Photosynthesis</text>
+  <text x="140" y="132" font-family="var(--font-sans)" font-size="10" fill="#166534">(Reduces CO₂)</text>
+
+  <!-- Plant Respiration -->
+  <path d="M 140 160 Q 180 120, 240 80" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <text x="190" y="145" font-family="var(--font-sans)" font-size="10" fill="#dc2626">Respiration</text>
+
+  <!-- Feeding -->
+  <path d="M 190 185 L 245 185" fill="none" stroke="#f97316" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <text x="217" y="180" font-family="var(--font-sans)" font-size="10" fill="#c2410c" text-anchor="middle">Feeding</text>
+
+  <!-- Animal Respiration -->
+  <path d="M 320 160 L 320 85" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="330" y="125" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#dc2626">Respiration</text>
+
+  <!-- Death / Waste -->
+  <path d="M 90 210 Q 90 285, 145 285" fill="none" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow-grey)"/>
+  <path d="M 320 210 Q 320 285, 295 285" fill="none" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow-grey)"/>
+  <text x="110" y="240" font-family="var(--font-sans)" font-size="10" fill="#4b5563">Death / Excretion</text>
+
+  <!-- Decomposition -->
+  <path d="M 220 260 Q 240 220, 260 85" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-red)"/>
+  <text x="250" y="235" font-family="var(--font-sans)" font-size="10" fill="#dc2626">Decomposition</text>
+  <text x="250" y="245" font-family="var(--font-sans)" font-size="10" fill="#dc2626">(Bacteria)</text>
+
+  <!-- Fossilization -->
+  <path d="M 195 310 Q 195 340, 310 340 T 490 315" fill="none" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow-grey)"/>
+  <text x="340" y="335" font-family="var(--font-sans)" font-size="10" fill="#4b5563">High pressure, millions of years</text>
+
+  <!-- Combustion -->
+  <path d="M 490 260 Q 490 120, 405 60" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <rect x="460" y="150" width="80" height="20" fill="rgba(255,255,255,0.8)" />
+  <text x="500" y="164" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">Combustion</text>
+
+  <defs>
+    <marker id="arrow-green" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#f97316"/>
+    </marker>
+    <marker id="arrow-grey" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>`
+      }
+    },
+    {
       id: 'call-cycle',
       type: 'callout',
       data: {

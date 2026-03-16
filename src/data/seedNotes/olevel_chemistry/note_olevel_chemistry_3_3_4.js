@@ -21,6 +21,31 @@ export const note_olevel_chemistry_3_3_4 = {
       }
     },
     {
+      id: 'svg-mole-analogy',
+      type: 'svg',
+      data: {
+        caption: 'The mole is just a very large quantity word, like a "dozen".',
+        svg: `<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(50, 40)">
+    <!-- 1 Pair -->
+    <rect x="0" y="0" width="100" height="80" rx="8" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+    <text x="50" y="30" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">1 Pair</text>
+    <text x="50" y="60" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-text)" text-anchor="middle">= 2</text>
+    
+    <!-- 1 Dozen -->
+    <rect x="150" y="0" width="100" height="80" rx="8" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+    <text x="200" y="30" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">1 Dozen</text>
+    <text x="200" y="60" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-text)" text-anchor="middle">= 12</text>
+
+    <!-- 1 Mole -->
+    <rect x="300" y="0" width="150" height="80" rx="8" fill="#e0e7ff" stroke="var(--color-primary)" stroke-width="3"/>
+    <text x="375" y="30" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">1 Mole</text>
+    <text x="375" y="60" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-text)" text-anchor="middle">= 6.02 × 10²³</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Molar Mass', level: 2 }

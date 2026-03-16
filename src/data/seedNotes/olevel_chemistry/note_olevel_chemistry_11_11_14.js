@@ -21,6 +21,66 @@ export const note_olevel_chemistry_11_11_14 = {
       }
     },
     {
+      id: 'svg-amino-acid',
+      type: 'svg',
+      data: {
+        caption: 'General structure of An amino acid showing the amino group and carboxylic acid group attached to the central alpha carbon.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+    <defs>
+        <style>
+            .bond { stroke: var(--color-text); stroke-width: 2; stroke-linecap: round; }
+            .double-bond { stroke: var(--color-text); stroke-width: 2; stroke-linecap: round; }
+            .atom-c { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: var(--color-text); text-anchor: middle; dominant-baseline: middle; }
+            .atom-n { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: #3498db; text-anchor: end; dominant-baseline: middle; }
+            .atom-o { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: #e74c3c; text-anchor: start; dominant-baseline: middle; }
+            .atom-h { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: var(--color-text-secondary); text-anchor: middle; dominant-baseline: middle; }
+            .atom-r { font-family: var(--font-sans); font-size: 24px; font-weight: bold; fill: #2ecc71; text-anchor: middle; dominant-baseline: middle; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text-secondary); text-anchor: middle; }
+            .group-box { fill: none; stroke-dasharray: 4,4; stroke-width: 2; rx: 10; ry: 10; }
+        </style>
+    </defs>
+
+    <g transform="translate(250, 100)">
+        <!-- Central Carbon -->
+        <text x="0" y="0" class="atom-c">C</text>
+        
+        <!-- Hydrogen (top) -->
+        <line x1="0" y1="-20" x2="0" y2="-40" class="bond"/>
+        <text x="0" y="-55" class="atom-h">H</text>
+
+        <!-- R group (bottom) -->
+        <line x1="0" y1="20" x2="0" y2="40" class="bond"/>
+        <text x="0" y="55" class="atom-r">R</text>
+
+        <!-- Amino Group (left) -->
+        <line x1="-20" y1="0" x2="-40" y2="0" class="bond"/>
+        <text x="-50" y="0" class="atom-n">H₂N</text>
+
+        <!-- Carboxylic Acid Group (right) -->
+        <line x1="20" y1="0" x2="40" y2="0" class="bond"/>
+        <text x="50" y="0" class="atom-c">C</text>
+        
+        <line x1="70" y1="0" x2="90" y2="0" class="bond"/>
+        <text x="100" y="0" class="atom-o">OH</text>
+        
+        <line x1="55" y1="-20" x2="55" y2="-40" class="double-bond"/>
+        <line x1="65" y1="-20" x2="65" y2="-40" class="double-bond"/>
+        <text x="60" y="-55" class="atom-o">O</text>
+
+        <!-- Highlight Boxes & Labels -->
+        <rect x="-105" y="-20" width="60" height="40" class="group-box" stroke="#3498db" fill="rgba(52, 152, 219, 0.1)"/>
+        <text x="-75" y="40" class="label" fill="#3498db" font-weight="bold">Amino group</text>
+        
+        <rect x="35" y="-70" width="105" height="90" class="group-box" stroke="#e74c3c" fill="rgba(231, 76, 60, 0.1)"/>
+        <text x="87" y="40" class="label" fill="#e74c3c" font-weight="bold">Carboxylic acid group</text>
+
+        <rect x="-15" y="40" width="30" height="30" class="group-box" stroke="#2ecc71" fill="rgba(46, 204, 113, 0.1)"/>
+        <text x="0" y="90" class="label" fill="#2ecc71" font-weight="bold">Variable side chain</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'h-2',
       type: 'heading',
       data: { text: 'Condensation Polymerisation — Forming Peptide Bonds', level: 2 }
@@ -32,6 +92,114 @@ export const note_olevel_chemistry_11_11_14 = {
         style: 'key',
         title: 'Peptide Bond Formation',
         text: 'Proteins are formed by <strong>condensation polymerisation</strong> of amino acids.<br/><br/>Each time two amino acids join:<br/>• The –NH₂ of one reacts with the –COOH of another<br/>• A <strong>peptide bond (–CO–NH–)</strong> forms<br/>• One molecule of <strong>water (H₂O)</strong> is released per bond<br/><br/>A long chain of amino acids joined by peptide bonds = <strong>polypeptide / protein</strong>.<br/>There are 20 different amino acids; their sequence determines the protein\'s properties.'
+      }
+    },
+    {
+      id: 'svg-peptide-bond',
+      type: 'svg',
+      data: {
+        caption: 'Formation of a peptide bond between two amino acids via condensation reaction, releasing a water molecule.',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240">
+    <defs>
+        <style>
+            .bond { stroke: var(--color-text); stroke-width: 2; stroke-linecap: round; }
+            .double-bond { stroke: var(--color-text); stroke-width: 2; stroke-linecap: round; }
+            .box { fill: rgba(149, 165, 166, 0.2); stroke: var(--color-text); stroke-width: 2; }
+            .atom-text { font-family: var(--font-sans); font-size: 20px; fill: var(--color-text); text-anchor: middle; dominant-baseline: middle; }
+            .water-group { fill: #e74c3c; font-weight: bold; }
+            .highlight { fill: none; stroke: rgba(52, 152, 219, 0.3); stroke-width: 30; stroke-linecap: round; stroke-linejoin: round; }
+            .label { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); text-anchor: middle; }
+        </style>
+    </defs>
+
+    <!-- Amino acid 1 -->
+    <g transform="translate(150, 70)">
+        <text x="-40" y="0" class="atom-text">H₂N</text>
+        <line x1="-15" y1="0" x2="0" y2="0" class="bond"/>
+        
+        <rect x="0" y="-15" width="30" height="30" class="box"/>
+        
+        <line x1="30" y1="0" x2="50" y2="0" class="bond"/>
+        <text x="60" y="0" class="atom-text">C</text>
+        <line x1="55" y1="-15" x2="55" y2="-25" class="double-bond"/>
+        <line x1="65" y1="-15" x2="65" y2="-25" class="double-bond"/>
+        <text x="60" y="-35" class="atom-text" fill="#e74c3c">O</text>
+        
+        <line x1="70" y1="0" x2="80" y2="0" class="bond" stroke="#e74c3c"/>
+        <text x="95" y="0" class="atom-text water-group">OH</text>
+        
+        <!-- Dashed circle for water -->
+        <ellipse cx="120" cy="0" rx="35" ry="20" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,4"/>
+    </g>
+
+    <text x="280" y="70" class="atom-text">+</text>
+
+    <!-- Amino acid 2 -->
+    <g transform="translate(320, 70)">
+        <text x="-15" y="0" class="atom-text">N</text>
+        <text x="-15" y="25" class="atom-text">H</text>
+        <line x1="-15" y1="10" x2="-15" y2="15" class="bond"/>
+        
+        <line x1="-30" y1="0" x2="-25" y2="0" class="bond" stroke="#e74c3c"/>
+        <text x="-45" y="0" class="atom-text water-group">H</text>
+        
+        <line x1="-5" y1="0" x2="10" y2="0" class="bond"/>
+        <rect x="10" y="-15" width="30" height="30" class="box"/>
+        
+        <line x1="40" y1="0" x2="60" y2="0" class="bond"/>
+        <text x="70" y="0" class="atom-text">C</text>
+        <line x1="65" y1="-15" x2="65" y2="-25" class="double-bond"/>
+        <line x1="75" y1="-15" x2="75" y2="-25" class="double-bond"/>
+        <text x="70" y="-35" class="atom-text" fill="#e74c3c">O</text>
+        
+        <line x1="80" y1="0" x2="95" y2="0" class="bond"/>
+        <text x="110" y="0" class="atom-text">OH</text>
+    </g>
+    
+    <text x="270" y="100" class="label" fill="#e74c3c">H₂O removed</text>
+    
+    <!-- Arrow -->
+    <path d="M 280 120 L 280 150" stroke="#e67e22" stroke-width="3" marker-end="url(#arrow-heat)"/>
+
+    <!-- Dipeptide -->
+    <g transform="translate(180, 200)">
+        <text x="-40" y="0" class="atom-text">H₂N</text>
+        <line x1="-15" y1="0" x2="0" y2="0" class="bond"/>
+        
+        <rect x="0" y="-15" width="30" height="30" class="box"/>
+        
+        <line x1="30" y1="0" x2="50" y2="0" class="bond"/>
+        <text x="60" y="0" class="atom-text">C</text>
+        <line x1="55" y1="-15" x2="55" y2="-25" class="double-bond"/>
+        <line x1="65" y1="-15" x2="65" y2="-25" class="double-bond"/>
+        <text x="60" y="-35" class="atom-text">O</text>
+        
+        <!-- Highlight -->
+        <line x1="40" y1="0" x2="110" y2="0" class="highlight"/>
+        <text x="75" y="-55" class="label" fill="#3498db" font-weight="bold">Peptide bond (–CONH–)</text>
+        <line x1="75" y1="-45" x2="75" y2="-15" stroke="#3498db" stroke-width="1.5" marker-end="url(#arrow)"/>
+        
+        <line x1="70" y1="0" x2="80" y2="0" class="bond"/>
+        
+        <text x="90" y="0" class="atom-text">N</text>
+        <text x="90" y="25" class="atom-text">H</text>
+        <line x1="90" y1="10" x2="90" y2="15" class="bond"/>
+        
+        <line x1="100" y1="0" x2="120" y2="0" class="bond"/>
+        <rect x="120" y="-15" width="30" height="30" class="box"/>
+        
+        <line x1="150" y1="0" x2="170" y2="0" class="bond"/>
+        <text x="180" y="0" class="atom-text">C</text>
+        <line x1="175" y1="-15" x2="175" y2="-25" class="double-bond"/>
+        <line x1="185" y1="-15" x2="185" y2="-25" class="double-bond"/>
+        <text x="180" y="-35" class="atom-text" fill="#e74c3c">O</text>
+        
+        <line x1="190" y1="0" x2="205" y2="0" class="bond"/>
+        <text x="220" y="0" class="atom-text">OH</text>
+    </g>
+
+    <text x="450" y="200" class="atom-text">+  H₂O</text>
+</svg>`
       }
     },
     {

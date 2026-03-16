@@ -12,6 +12,70 @@ export const note_olevel_chemistry_9_9_3 = {
       data: { text: 'The Reactivity Series', level: 2 }
     },
     {
+      id: 'svg-reactivity-series',
+      type: 'svg',
+      data: {
+        caption: 'The Reactivity Series of metals, showing reaction tendencies with water and acids.',
+        svg: `<svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Title -->
+  <text x="50" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)">Reactivity Series</text>
+
+  <!-- Reactivity Arrow -->
+  <defs>
+    <linearGradient id="reactivity-grad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <marker id="arrow-up" markerWidth="6" markerHeight="6" refX="3" refY="1" orient="auto">
+      <path d="M 1 5 L 3 1 L 5 5 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect x="50" y="50" width="20" height="300" fill="url(#reactivity-grad)" />
+  <path d="M 60 50 L 60 40" stroke="#ef4444" stroke-width="4" marker-end="url(#arrow-up)" />
+  <text x="35" y="200" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" transform="rotate(-90 35,200)" text-anchor="middle">Increasing Reactivity</text>
+
+  <!-- Elements List -->
+  <g font-family="var(--font-sans)" font-size="13" font-weight="bold" transform="translate(80, 0)">
+    <text y="65" fill="#ef4444">Potassium (K)</text>
+    <text y="85" fill="#ea580c">Sodium (Na)</text>
+    <text y="105" fill="#ea580c">Calcium (Ca)</text>
+    <text y="125" fill="#d97706">Magnesium (Mg)</text>
+    <text y="145" fill="#d97706">Aluminium (Al)</text>
+    
+    <text y="165" fill="#71717a" font-style="italic">Carbon (C) - Non-metal</text>
+
+    <text y="185" fill="#ca8a04">Zinc (Zn)</text>
+    <text y="205" fill="#ca8a04">Iron (Fe)</text>
+    <text y="225" fill="#ca8a04">Lead (Pb)</text>
+    
+    <text y="245" fill="#71717a" font-style="italic">Hydrogen (H) - Non-metal</text>
+
+    <text y="265" fill="#3b82f6">Copper (Cu)</text>
+    <text y="285" fill="#3b82f6">Silver (Ag)</text>
+    <text y="305" fill="#2563eb">Gold (Au)</text>
+  </g>
+
+  <!-- Brackets & Labels -->
+  <!-- React with cold water -->
+  <path d="M 230 55 L 240 55 L 240 105 L 230 105" fill="none" stroke="var(--color-text-secondary)" stroke-width="2" />
+  <text x="250" y="85" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">React with cold water</text>
+
+  <!-- React with acids -->
+  <path d="M 235 55 L 400 55 L 400 225 L 235 225" fill="none" stroke="#ca8a04" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="410" y="145" font-family="var(--font-sans)" font-size="12" fill="#ca8a04">React with dilute acid</text>
+
+  <!-- React with oxygen -->
+  <path d="M 370 260 L 380 260 L 380 305 L 370 305" fill="none" stroke="#3b82f6" stroke-width="2" />
+  <text x="390" y="285" font-family="var(--font-sans)" font-size="12" fill="#3b82f6">Do not react with acid</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-series',
       type: 'callout',
       data: {

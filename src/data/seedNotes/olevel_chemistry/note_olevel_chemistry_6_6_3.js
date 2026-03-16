@@ -48,6 +48,60 @@ export const note_olevel_chemistry_6_6_3 = {
       }
     },
     {
+      id: 'svg-maxwell-boltzmann',
+      type: 'svg',
+      data: {
+        caption: 'Maxwell-Boltzmann distribution curve showing the effect of a catalyst. The activation energy lowers (shifts left), dramatically increasing the number of particles with enough energy to react (shaded area).',
+        svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250">
+    <defs>
+        <style>
+            .axis { stroke: var(--color-text); stroke-width: 2; fill: none; }
+            .curve { stroke: var(--color-primary); stroke-width: 3; fill: none; }
+            .ea-line { stroke: var(--color-text); stroke-width: 2; stroke-dasharray: 5,5; }
+            .ea-line-cat { stroke: var(--color-success); stroke-width: 2; stroke-dasharray: 5,5; }
+            .fill-original { fill: rgba(99, 102, 241, 0.5); }
+            .fill-catalyst { fill: rgba(16, 185, 129, 0.3); }
+            .text { font-family: var(--font-sans); font-size: 14px; fill: var(--color-text); }
+            .text-sm { font-family: var(--font-sans); font-size: 12px; fill: var(--color-text); }
+        </style>
+    </defs>
+    
+    <g transform="translate(60, 20)">
+        <!-- Axes -->
+        <line x1="0" y1="180" x2="400" y2="180" class="axis"/>
+        <line x1="0" y1="0" x2="0" y2="180" class="axis"/>
+        
+        <text x="200" y="215" class="text" text-anchor="middle">Energy</text>
+        <text x="-90" y="-30" class="text" transform="rotate(-90)" text-anchor="middle">Number of particles</text>
+        
+        <!-- Areas under curve (drawn before curve) -->
+        <path d="M 280 180 L 280 43 C 320 28, 360 15, 390 5 L 390 180 Z" class="fill-original"/>
+        <path d="M 220 180 L 220 81 C 250 58, 280 43, 300 34 L 300 180 Z" class="fill-catalyst"/>
+        
+        <!-- Curve -->
+        <!-- Starts at 0,0, rises to peak, tails off -->
+        <!-- M 0 180 C 30 180, 50 20, 100 20 C 150 20, 220 180, 400 180 roughly-->
+        <path d="M 0 180 C 30 180, 40 20, 90 20 C 150 20, 200 100, 400 5" class="curve"/>
+        
+        <!-- Uncatalyzed Ea -->
+        <line x1="280" y1="180" x2="280" y2="43" class="ea-line"/>
+        <text x="280" y="195" class="text-sm" text-anchor="middle">Eₐ</text>
+        
+        <!-- Catalyzed Ea -->
+        <line x1="220" y1="180" x2="220" y2="81" class="ea-line-cat"/>
+        <text x="220" y="195" class="text-sm" text-anchor="middle">Eₐ (cat)</text>
+        
+        <!-- Labels -->
+        <circle cx="280" cy="110" r="3" fill="var(--color-primary)"/>
+        <text x="290" y="115" class="text-sm">Particles able to react</text>
+        
+        <circle cx="230" cy="140" r="3" fill="var(--color-success)"/>
+        <text x="240" y="145" class="text-sm">Extra particles able to react</text>
+    </g>
+</svg>`
+      }
+    },
+    {
       id: 'call-worked',
       type: 'callout',
       data: {

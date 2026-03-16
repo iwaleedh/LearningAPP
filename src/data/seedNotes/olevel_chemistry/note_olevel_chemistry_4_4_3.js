@@ -47,6 +47,78 @@ export const note_olevel_chemistry_4_4_3 = {
       }
     },
     {
+      id: 'svg-cuso4-inert',
+      type: 'svg',
+      data: {
+        caption: 'Electrolysis of aqueous CuSO₄ with inert (graphite) electrodes. Copper metal coats the cathode, and oxygen gas is evolved at the anode.',
+        svg: `<svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Liquid Gradient (Blue for CuSO4) -->
+    <linearGradient id="cuso4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Copper coating gradient -->
+    <linearGradient id="copper" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ca8a04" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="var(--color-surface)"/>
+
+  <!-- Battery & Circuit -->
+  <rect x="210" y="40" width="80" height="30" rx="4" fill="#1e293b" />
+  <text x="250" y="60" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Power Supply</text>
+  <text x="220" y="34" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">+</text>
+  <text x="280" y="34" font-family="var(--font-sans)" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="middle">-</text>
+
+  <path d="M 210 55 L 160 55 L 160 120" stroke="var(--color-border)" stroke-width="3" fill="none" />
+  <path d="M 290 55 L 340 55 L 340 120" stroke="var(--color-border)" stroke-width="3" fill="none" />
+
+  <!-- Beaker -->
+  <path d="M 100 150 L 100 300 A 20 20 0 0 0 120 320 L 380 320 A 20 20 0 0 0 400 300 L 400 150" fill="none" stroke="var(--color-border)" stroke-width="4"/>
+  
+  <!-- CuSO4 Solution -->
+  <path d="M 103 180 L 103 298 A 18 18 0 0 0 120 317 L 380 317 A 18 18 0 0 0 397 298 L 397 180 Z" fill="url(#cuso4)"/>
+  <text x="250" y="300" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#0c4a6e" text-anchor="middle">Aqueous CuSO₄ (blue)</text>
+
+  <!-- Graphite Electrodes -->
+  <!-- Anode (Left) -->
+  <rect x="150" y="120" width="20" height="150" fill="#334155"/>
+  <text x="110" y="110" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">Anode (+)</text>
+
+  <!-- Cathode (Right) -->
+  <rect x="330" y="120" width="20" height="150" fill="#334155"/>
+  <!-- Copper coating on cathode -->
+  <path d="M 326 210 L 326 270 C 326 274 354 274 354 270 L 354 210 M 326 215 C 315 220 315 265 326 268 M 354 215 C 365 220 365 265 354 268" fill="url(#copper)" stroke="#9a3412" stroke-width="1.5" stroke-linejoin="round"/>
+  
+  <text x="390" y="110" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">Cathode (-)</text>
+
+  <!-- Observations -->
+  <!-- Oxygen Bubbles at Anode -->
+  <circle cx="160" cy="250" r="4" fill="#fff" opacity="0.8"/>
+  <circle cx="152" cy="235" r="5" fill="#fff" opacity="0.8"/>
+  <circle cx="168" cy="220" r="4" fill="#fff" opacity="0.8"/>
+  <circle cx="156" cy="205" r="6" fill="#fff" opacity="0.8"/>
+  <circle cx="162" cy="190" r="5" fill="#fff" opacity="0.8"/>
+  <circle cx="150" cy="175" r="7" fill="#fff" opacity="0.8"/>
+
+  <line x1="80" y1="200" x2="140" y2="200" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="75" y="195" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="end">Oxygen gas (O₂)</text>
+  <text x="75" y="210" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="end">4OH⁻ → O₂ + 2H₂O + 4e⁻</text>
+
+  <!-- Copper deposit at Cathode -->
+  <line x1="360" y1="240" x2="420" y2="240" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="425" y="235" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#b45309" text-anchor="start">Pink/orange copper</text>
+  <text x="425" y="250" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="start">Cu²⁺ + 2e⁻ → Cu</text>
+
+</svg>`
+      }
+    },
+    {
       id: 'call-tip',
       type: 'callout',
       data: {

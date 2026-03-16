@@ -1,0 +1,43 @@
+export const note_olevel_physics_6_2_0 = {
+  pdfPath: '/notes/olevel/CIE IGCSE Physics/6 Space Physics/6-2-1-big-bang.pdf',
+  blocks: [
+    { id: 'obj-1', type: 'objective', data: { text: 'Describe the Big Bang theory; explain the evidence that supports it; outline the timeline of the early universe.' } },
+    { id: 'h-theory', type: 'heading', data: { text: 'The Big Bang Theory', level: 2 } },
+    { id: 'call-def', type: 'callout', data: { style: 'key', title: 'The Big Bang Theory', text: 'The Big Bang theory states that the universe began approximately 13.8 billion years ago from an extremely hot, dense single point (a singularity). Since then, space itself has been expanding in all directions.' } },
+    { id: 'para-theory', type: 'paragraph', data: { text: 'The Big Bang was not an explosion <em>into</em> space — it was an expansion <em>of</em> space. All matter, energy, space, and even time itself originated from this single event. There was no "before" the Big Bang; time itself started at that moment. The universe has been expanding, and gradually cooling, ever since.' } },
+    { id: 'h-timeline', type: 'heading', data: { text: 'Timeline of the Universe', level: 2 } },
+    { id: 'tbl-timeline', type: 'comparisonTable', data: { caption: 'Key events in the history of the universe', headers: ['Time after Big Bang', 'Event'], rows: [
+      ['10⁻⁴³ s (Planck time)', 'Physics as we know it cannot describe this era'],
+      ['10⁻³² s', 'Rapid exponential expansion (cosmic inflation)'],
+      ['10⁻⁶ s', 'Quarks combine to form protons and neutrons'],
+      ['3 min', 'Nucleosynthesis: hydrogen and helium nuclei form'],
+      ['380,000 yr', 'Universe cools enough for electrons to bind: first atoms form; universe becomes transparent (CMB released)'],
+      ['~200 million yr', 'First stars form (reionisation)'],
+      ['~1 billion yr', 'First galaxies form'],
+      ['9.2 billion yr', 'Solar system forms'],
+      ['13.8 billion yr', 'Today'],
+    ]}},
+    { id: 'h-evidence', type: 'heading', data: { text: 'Evidence for the Big Bang', level: 2 } },
+    { id: 'list-evidence', type: 'list', data: { style: 'numbered', items: [
+      { text: '<strong>Expanding universe / redshift:</strong> Hubble (1929) showed that distant galaxies are moving away from us; the further the galaxy, the faster it recedes. Going backwards in time, all galaxies trace back to a single origin.' },
+      { text: '<strong>Cosmic Microwave Background Radiation (CMBR):</strong> A uniform "afterglow" of radiation in the microwave range fills the universe in all directions. This was predicted by the Big Bang model and accidentally discovered by Penzias and Wilson in 1965.' },
+      { text: '<strong>Abundance of light elements:</strong> The Big Bang predicts that ~75% hydrogen and ~25% helium (by mass) should have been produced in the first few minutes (Big Bang nucleosynthesis). Astronomical observations match this prediction remarkably well.' },
+    ]}},
+    { id: 'h-singularity', type: 'heading', data: { text: 'The Singularity and Our Limitations', level: 2 } },
+    { id: 'para-sing', type: 'paragraph', data: { text: 'At the instant of the Big Bang, temperatures and densities were infinite (a mathematical singularity). At such extremes, Einstein\'s general relativity breaks down and a unified theory of quantum gravity (not yet fully developed) would be needed to describe what happened. The Big Bang theory is therefore an excellent description of everything <em>after</em> the Planck time, not necessarily the instant of creation itself.' } },
+    { id: 'call-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Three key pieces of evidence for the Big Bang: (1) redshift / expanding universe, (2) CMBR, (3) hydrogen:helium ratio matching Big Bang nucleosynthesis. Know all three and be able to explain each briefly.' } },
+    { id: 'sum-1', type: 'summary', data: { text: "The Big Bang theory: universe began 13.8 billion years ago from a single hot dense point. Evidence: galaxy redshift (expanding universe), CMBR (leftover radiation), and 75:25 H:He ratio. Space itself has been expanding — it wasn't an explosion into pre-existing space." } },
+  ],
+  recall: {
+    enabled: true, ready: true,
+    summaryText: 'Big Bang: universe began 13.8 Gyr ago from hot dense singularity. Evidence: redshift, CMBR, H:He abundance.',
+    cues: [
+      { id: 'cue-1', blockId: 'call-def', prompt: 'State what the Big Bang theory proposes.', answer: 'The universe began ~13.8 billion years ago from an extremely hot, dense singularity. Space has been expanding ever since.' },
+      { id: 'cue-2', blockId: 'list-evidence', prompt: 'Give three pieces of evidence for the Big Bang.', answer: '(1) Galaxy redshift / expanding universe. (2) Cosmic Microwave Background Radiation (CMBR). (3) Observed abundance of hydrogen (~75%) and helium (~25%) matches Big Bang nucleosynthesis predictions.' },
+      { id: 'cue-3', blockId: 'list-evidence', prompt: 'What is the CMBR and why does it support the Big Bang?', answer: 'The Cosmic Microwave Background Radiation is uniform low-energy microwave radiation filling the universe in all directions — a predicted "afterglow" of the hot early universe, exactly as the Big Bang model predicts.' },
+      { id: 'cue-4', blockId: 'tbl-timeline', prompt: 'When did the first atoms form, and why was the universe opaque before that?', answer: 'At ~380,000 years: electrons combined with nuclei to form neutral atoms. Before this, free electrons scattered photons, making the universe opaque like a dense fog.' },
+      { id: 'cue-5', blockId: 'para-theory', prompt: 'Was the Big Bang an explosion into existing space? Explain.', answer: "No — it was an expansion of space itself. All space, time, matter and energy originated in the Big Bang. There was no space for it to expand 'into'." },
+    ],
+  },
+  evidence: [], mentions: [],
+};

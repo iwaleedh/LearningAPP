@@ -46,6 +46,52 @@ export const note_olevel_chemistry_9_9_6 = {
       }
     },
     {
+      id: 'svg-sacrificial',
+      type: 'svg',
+      data: {
+        caption: 'Sacrificial protection of a steel ship hull using blocks of a more reactive metal (zinc or magnesium).',
+        svg: `<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--color-surface)" />
+
+  <!-- Water -->
+  <path d="M 0 100 Q 125 110, 250 100 T 500 100 L 500 240 L 0 240 Z" fill="#93c5fd" opacity="0.3" />
+  <text x="450" y="210" font-family="var(--font-sans)" font-size="12" fill="#3b82f6" font-style="italic">Seawater</text>
+
+  <!-- Ship Hull -->
+  <path d="M 50 20 L 50 160 C 50 190, 80 220, 150 220 L 400 220 C 470 220, 480 160, 480 80 L 480 20 Z" fill="#94a3b8" stroke="#475569" stroke-width="4"/>
+  <text x="265" y="60" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">Steel Ship Hull (Iron)</text>
+
+  <!-- Sacrificial Blocks -->
+  <rect x="120" y="160" width="30" height="15" fill="#facc15" stroke="#ca8a04" stroke-width="2" rx="2" />
+  <rect x="235" y="180" width="30" height="15" fill="#facc15" stroke="#ca8a04" stroke-width="2" rx="2" />
+  <rect x="350" y="160" width="30" height="15" fill="#facc15" stroke="#ca8a04" stroke-width="2" rx="2" />
+  
+  <!-- Labels -->
+  <path d="M 250 180 L 250 125 L 300 125" fill="none" stroke="var(--color-text)" stroke-width="1.5" />
+  <text x="305" y="129" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)">Zinc or Magnesium block</text>
+
+  <rect x="160" y="25" width="220" height="40" fill="rgba(255,255,255,0.8)" rx="4" />
+  <text x="270" y="40" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="middle">More reactive metal oxidises first:</text>
+  <text x="270" y="55" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">Mg → Mg²⁺ + 2e⁻</text>
+  
+  <text x="145" y="200" font-family="var(--font-sans)" font-size="10" fill="#ca8a04">e⁻</text>
+  <text x="260" y="215" font-family="var(--font-sans)" font-size="10" fill="#ca8a04">e⁻</text>
+  <text x="340" y="200" font-family="var(--font-sans)" font-size="10" fill="#ca8a04">e⁻</text>
+  
+  <path d="M 135 155 L 140 145" stroke="#ca8a04" stroke-width="1.5" marker-end="url(#arrow-head)" />
+  <path d="M 250 175 L 255 165" stroke="#ca8a04" stroke-width="1.5" marker-end="url(#arrow-head)" />
+  <path d="M 365 155 L 360 145" stroke="#ca8a04" stroke-width="1.5" marker-end="url(#arrow-head)" />
+
+  <defs>
+    <marker id="arrow-head" markerWidth="6" markerHeight="6" refX="2" refY="3" orient="auto">
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ca8a04"/>
+    </marker>
+  </defs>
+
+</svg>`
+      }
+    },
+    {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Rust prevention: physical barriers (paint, oil, electroplating) exclude O₂/H₂O. Galvanising (Zn coat) protects as both barrier and sacrificial metal. Sacrificial protection uses a more reactive metal (Mg, Zn) attached to iron — it corrodes instead. Stainless steel is self-protecting via Cr₂O₃ layer.' }

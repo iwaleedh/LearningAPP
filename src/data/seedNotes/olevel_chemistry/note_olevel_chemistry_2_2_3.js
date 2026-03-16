@@ -26,6 +26,58 @@ export const note_olevel_chemistry_2_2_3 = {
       data: { text: 'Examples of Isotopes', level: 2 }
     },
     {
+      id: 'svg-isotopes-carbon',
+      type: 'svg',
+      data: {
+        caption: 'Isotopes of Carbon: C-12 has 6 neutrons, C-14 has 8 neutrons. Both have 6 protons and 6 electrons.',
+        svg: `<svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- C-12 -->
+  <g transform="translate(150, 140)">
+    <!-- Nucleus -->
+    <circle cx="0" cy="0" r="25" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <text x="0" y="-4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444">6p⁺</text>
+    <text x="0" y="10" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#64748b">6n⁰</text>
+    
+    <!-- Shells -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="-50" r="5" fill="#3b82f6"/>
+    <circle cx="0" cy="50" r="5" fill="#3b82f6"/>
+
+    <circle cx="0" cy="0" r="80" fill="none" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="-80" r="5" fill="#3b82f6"/>
+    <circle cx="80" cy="0" r="5" fill="#3b82f6"/>
+    <circle cx="0" cy="80" r="5" fill="#3b82f6"/>
+    <circle cx="-80" cy="0" r="5" fill="#3b82f6"/>
+
+    <text x="0" y="115" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="var(--color-text)">Carbon-12</text>
+    <text x="0" y="135" text-anchor="middle" font-family="var(--font-sans)" font-size="14" fill="var(--color-text-secondary)">¹²C (98.9%)</text>
+  </g>
+
+  <!-- C-14 -->
+  <g transform="translate(450, 140)">
+    <!-- Nucleus -->
+    <circle cx="0" cy="0" r="25" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <text x="0" y="-4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444">6p⁺</text>
+    <text x="0" y="10" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#64748b">8n⁰</text>
+    
+    <!-- Shells -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="-50" r="5" fill="#3b82f6"/>
+    <circle cx="0" cy="50" r="5" fill="#3b82f6"/>
+
+    <circle cx="0" cy="0" r="80" fill="none" stroke="var(--color-border)" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="-80" r="5" fill="#3b82f6"/>
+    <circle cx="80" cy="0" r="5" fill="#3b82f6"/>
+    <circle cx="0" cy="80" r="5" fill="#3b82f6"/>
+    <circle cx="-80" cy="0" r="5" fill="#3b82f6"/>
+
+    <text x="0" y="115" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="var(--color-text)">Carbon-14</text>
+    <text x="0" y="135" text-anchor="middle" font-family="var(--font-sans)" font-size="14" fill="var(--color-text-secondary)">¹⁴C (~0.01%)</text>
+  </g>
+</svg>`
+      }
+    },
+    {
       id: 'tbl-isotopes',
       type: 'comparisonTable',
       data: {

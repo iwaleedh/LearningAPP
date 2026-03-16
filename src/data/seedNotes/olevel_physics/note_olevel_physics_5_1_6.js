@@ -1,0 +1,45 @@
+export const note_olevel_physics_5_1_6 = {
+  pdfPath: '/notes/olevel/CIE IGCSE Physics/5 Nuclear Physics/5-1-7-radiation-applications.pdf',
+  blocks: [
+    { id: 'obj-1', type: 'objective', data: { text: 'Describe and explain medical, industrial, and archaeological applications of radioactive isotopes; justify the choice of radiation type for each application.' } },
+    { id: 'h-medical', type: 'heading', data: { text: 'Medical Applications', level: 2 } },
+    { id: 'para-medical', type: 'paragraph', data: { text: 'Radioactive isotopes are widely used in medicine for diagnosis and therapy. The choice of isotope depends on the type of radiation emitted, the half-life, and where the isotope accumulates in the body.' } },
+    { id: 'list-medical', type: 'list', data: { style: 'bullet', items: [
+      { text: '<strong>Gamma Camera / Medical Imaging:</strong> Technetium-99m (t½ = 6 h) emits gamma rays detectable through the body. Injected into a patient, it concentrates in specific organs, and the gamma emission is detected externally to produce a scan image.' },
+      { text: '<strong>Radiotherapy:</strong> Cobalt-60 beams of gamma rays are aimed at a tumour from multiple angles to destroy cancer cells while minimising damage to surrounding healthy tissue.' },
+      { text: '<strong>Sterilisation:</strong> Instruments and food are exposed to gamma rays which kill bacteria and other pathogens without leaving radioactive residue.' },
+      { text: '<strong>Thyroid treatment:</strong> Iodine-131 is swallowed; it is selectively absorbed by the thyroid gland. Its beta/gamma emissions destroy overactive thyroid tissue.' },
+    ]}},
+    { id: 'h-industrial', type: 'heading', data: { text: 'Industrial Applications', level: 2 } },
+    { id: 'list-industrial', type: 'list', data: { style: 'bullet', items: [
+      { text: '<strong>Thickness gauge:</strong> A beta source is placed on one side of sheet material (paper, metal foil). A detector on the other side measures transmission. If the sheet is too thick, fewer beta particles pass through — the production machinery adjusts automatically.' },
+      { text: '<strong>Leak detection / flow tracing:</strong> A radioactive tracer is added to a fluid in a pipe. A detector above ground identifies where radiation escapes, pinpointing a leak or measuring flow rate.' },
+      { text: '<strong>Smoke detector:</strong> Americium-241 emits alpha particles that ionise air between two plates, creating a small electric current. When smoke enters, it absorbs the alpha particles, reducing the current and triggering the alarm.' },
+    ]}},
+    { id: 'h-dating', type: 'heading', data: { text: 'Archaeological Dating — Carbon-14', level: 2 } },
+    { id: 'para-c14', type: 'paragraph', data: { text: 'All living organisms continuously absorb carbon-14 (from atmospheric CO₂) at a constant rate. When an organism dies, it stops absorbing carbon, and the carbon-14 already present decays with a half-life of <strong>5730 years</strong>. By measuring the current C-14 activity of a sample and comparing it to the activity of a living organism, scientists calculate how many half-lives have passed and therefore the age of the sample.' } },
+    { id: 'call-worked', type: 'callout', data: { style: 'worked', title: 'Worked Example: Carbon Dating', text: 'A bone fragment has 12.5% of the C-14 activity of a living bone. t½ = 5730 yr.\n\n100% → 50% → 25% → 12.5%  (3 half-lives)\n\nAge = 3 × 5730 = 17 190 years' } },
+    { id: 'tbl-applications', type: 'comparisonTable', data: { caption: 'Summary: radiation type, application, and justification', headers: ['Application', 'Radiation type used', 'Why this type?'], rows: [
+      ['Medical imaging (γ-camera)', 'Gamma (γ)', 'Penetrates body; detected outside; short t½ reduces dose'],
+      ['Radiotherapy', 'Gamma (γ)', 'Penetrates to tumour; kills cells'],
+      ['Sterilisation', 'Gamma (γ)', 'Penetrates packaging; kills pathogens; leaves no residue'],
+      ['Thickness gauge', 'Beta (β)', 'Moderate penetration; absorbed in proportion to sheet thickness'],
+      ['Smoke detector', 'Alpha (α)', 'Strongly ionises air; easily absorbed by smoke particles'],
+      ['Carbon dating', 'Beta (β) from C-14', 'Known half-life; predictable decay over timescale of interest'],
+    ]}},
+    { id: 'call-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'For any application, always justify the choice: why alpha/beta/gamma? why this half-life? Answers such as "gamma penetrates tissue so it can be detected outside the body" score more marks than vague statements.' } },
+    { id: 'sum-1', type: 'summary', data: { text: 'Gamma used for medical imaging (penetrates body), sterilisation, and radiotherapy. Beta used for thickness gauges (absorbed proportionally). Alpha used in smoke detectors (ionises air). Carbon-14 (t½ = 5730 yr) used for archaeological dating up to ~50 000 years.' } },
+  ],
+  recall: {
+    enabled: true, ready: true,
+    summaryText: 'γ: medical imaging, radiotherapy, sterilisation. β: thickness gauge. α: smoke detector. C-14: archaeological dating.',
+    cues: [
+      { id: 'cue-1', blockId: 'list-medical', prompt: 'Why is technetium-99m (t½ = 6 h) a good choice for medical imaging?', answer: 'It emits gamma rays that penetrate the body and can be detected externally; the short half-life minimises radiation dose to the patient.' },
+      { id: 'cue-2', blockId: 'list-industrial', prompt: 'How does a beta-source thickness gauge work?', answer: 'A beta source and detector are on opposite sides of the material. Fewer beta particles pass through if the sheet is too thick, allowing automatic correction.' },
+      { id: 'cue-3', blockId: 'list-industrial', prompt: 'How does an alpha-source smoke detector work?', answer: 'Alpha particles ionise air creating a current. Smoke absorbs alpha particles, reducing the current and triggering the alarm.' },
+      { id: 'cue-4', blockId: 'para-c14', prompt: 'Explain the principle behind carbon-14 dating.', answer: 'Living organisms absorb C-14 at a constant rate; after death it decays (t½ = 5730 yr). Measuring remaining C-14 activity reveals how many half-lives have passed, giving the age.' },
+      { id: 'cue-5', blockId: 'call-worked', prompt: 'A bone sample has 12.5% of normal C-14 activity. How old is it?', answer: '3 half-lives: 100→50→25→12.5%. Age = 3 × 5730 = 17 190 years.' },
+    ],
+  },
+  evidence: [], mentions: [],
+};
