@@ -1,5 +1,5 @@
 export const mathematicsSyllabus = {
-    qualification: 'Pearson Edexcel International A Level Mathematics (YMA01)',
+    qualification: 'AL Mathematics',
     source: 'international-a-level-maths-spec.pdf (Issue 3, April 2019)',
     notes: 'Includes compulsory pure units and IAL Mathematics optional route units.',
     units: [

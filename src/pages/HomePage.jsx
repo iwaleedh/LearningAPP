@@ -13,14 +13,20 @@ const quickStats = [
     { label: 'Study Streak', value: '0 days', icon: Flame, color: 'var(--color-error)' },
 ];
 
-const subjects = [
-    { id: 'chemistry', name: 'Chemistry', chapters: 12, color: '#6366f1', emoji: '⚗️' },
-    { id: 'biology', name: 'Biology', chapters: 10, color: '#10b981', emoji: '🧬' },
-    { id: 'physics', name: 'Physics', chapters: 14, color: '#f59e0b', emoji: '⚡' },
-    { id: 'mathematics', name: 'Mathematics', chapters: 16, color: '#ef4444', emoji: '📐' },
-    { id: 'business', name: 'Business', chapters: 20, color: '#0ea5e9', emoji: '💼' },
-    { id: 'economics', name: 'Economics', chapters: 23, color: '#14b8a6', emoji: '📊' },
-    { id: 'accounting', name: 'Accounting', chapters: 15, color: '#f97316', emoji: '📒' },
+const aLevelSubjects = [
+    { id: 'chemistry', name: 'AL Chemistry', chapters: 12, color: '#6366f1', emoji: '⚗️' },
+    { id: 'biology', name: 'AL Biology', chapters: 10, color: '#10b981', emoji: '🧬' },
+    { id: 'physics', name: 'AL Physics', chapters: 14, color: '#f59e0b', emoji: '⚡' },
+    { id: 'mathematics', name: 'AL Mathematics', chapters: 16, color: '#ef4444', emoji: '📐' },
+    { id: 'business', name: 'AL Business', chapters: 20, color: '#0ea5e9', emoji: '💼' },
+    { id: 'economics', name: 'AL Economics', chapters: 23, color: '#14b8a6', emoji: '📊' },
+    { id: 'accounting', name: 'AL Accounting', chapters: 15, color: '#f97316', emoji: '📒' },
+    { id: 'cae', name: 'CAE (C1 Advanced)', chapters: 10, color: '#6366f1', emoji: '🇬🇧' },
+    { id: 'cpe', name: 'CPE (C2 Proficiency)', chapters: 10, color: '#0ea5e9', emoji: '🎓' },
+];
+
+const oLevelSubjects = [
+    { id: 'olevel_biology', name: 'IGCSE Biology', chapters: 21, color: '#10b981', emoji: '🔬' },
 ];
 
 export default function HomePage() {
@@ -72,15 +78,40 @@ export default function HomePage() {
                 })}
             </div>
 
-            {/* Subjects */}
+            {/* A Level Subjects */}
             <div className="section-header">
-                <h2>Subjects</h2>
+                <h2>A Level</h2>
                 <Link to="/chapters" className="btn btn-ghost">
                     View All <ArrowRight size={16} />
                 </Link>
             </div>
             <div className="subjects-grid">
-                {subjects.map((subject, i) => (
+                {aLevelSubjects.map((subject, i) => (
+                    <Link
+                        key={subject.id}
+                        to={`/chapters?subject=${subject.id}`}
+                        className="subject-card card card-hover animate-fade-in"
+                        style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                        <div className="subject-emoji">{subject.emoji}</div>
+                        <h3>{subject.name}</h3>
+                        <p>{subject.chapters} Chapters</p>
+                        <div className="subject-progress">
+                            <div className="progress-bar">
+                                <div className="progress-bar-fill" style={{ width: '0%' }} />
+                            </div>
+                            <span className="progress-text">0% Complete</span>
+                        </div>
+                    </Link>
+                ))}
+            </div>
+
+            {/* O Level / IGCSE Subjects */}
+            <div className="section-header" style={{ marginTop: 'var(--space-8)' }}>
+                <h2>O Level / IGCSE</h2>
+            </div>
+            <div className="subjects-grid">
+                {oLevelSubjects.map((subject, i) => (
                     <Link
                         key={subject.id}
                         to={`/chapters?subject=${subject.id}`}

@@ -1,5 +1,5 @@
 export const chemistrySyllabus = {
-    qualification: 'Pearson Edexcel International A Level Chemistry (YCH11)',
+    qualification: 'AL Chemistry',
     source: 'International-A-Level-Chemistry-Spec.pdf',
     units: [
         {

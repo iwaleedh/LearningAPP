@@ -1,5 +1,5 @@
 export const physicsSyllabus = {
-    qualification: 'Pearson Edexcel International A Level Physics (YPH11)',
+    qualification: 'AL Physics',
     source: 'Generated from Save My Exams PDFs',
     units: [
         {

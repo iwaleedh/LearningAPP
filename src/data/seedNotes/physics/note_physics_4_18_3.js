@@ -1,56 +1,44 @@
 export const note_physics_4_18_3 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Electric Field due to a Point Charge" } },
-    { id: 'head-1', type: 'heading', data: { text: "Electric Field due to a Point Charge", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Electric Field due to a Point Charge Electric Field due to a Point Charge The electric field strength describes how strong or weak an electric field is at that point A point charge produces a radial field" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "A charge sphere also acts like a point charge The electric field strength E at a distance r due to a point charge Q in free space is defined by: Where:" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "Q = the point charge producing the radial electric field (C) r = distance from the centre of the charge (m) ε = permittivity of free space (F m ) This equation shows:" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "Electric field strength in a radial field is not constant As the distance from the charge r increases, E decreases by a factor of 1/r This is an inverse square law relationship with distance This means the field strength E decreases by a factor of four when the distance r is" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "doubled Note: this equation is only for the field strength around a point charge since it produces a radial field 0-1" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "Positive and negative point charges and the direction of the electric field lines The electric field strength is a vector Its direction is the same as the electric field lines If the charge is negative, the E field strength is negative and points towards the centre of the charge" } },
-    { id: 'para-8', type: 'paragraph', data: { text: "If the charge is positive, the E field strength is positive and points away from the centre of the charge This equation is analogous to the gravitational field strength around a point mass The only difference is, gravitational field lines are always towards the mass, whilst" } },
-    { id: 'para-9', type: 'paragraph', data: { text: "electric field lines can be towards or away from the point charge The graph of E against r for a charge is: The electric field strength E has a 1/r relationship The key features of this graph are:" } },
-    { id: 'para-10', type: 'paragraph', data: { text: "The values for E are all positive As r increases, E against r follows a 1/r relation (inverse square law) The area under this graph is the change in electric potential ΔV The graph has a steep decline as r increases2" } },
-    { id: 'para-11', type: 'paragraph', data: { text: "Worked Example Calculate the strength of the electric field at a distance of 2 m away from an electron, and state its direction." } },
-
-  
+    { id: 'obj-1', type: 'objective', terms: [], data: { text: "Understand <strong>Electric Field</strong> due to a Point Charge" } },
+    { id: 'head-1', type: 'heading', terms: [], data: { text: "<strong>Electric Field</strong> due to a Point Charge", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Electric field</strong> due to a point charge</strong> — the <strong>electric field</strong> strength describes how strong or weak an <strong>electric field</strong> is at that point. A point charge produces a <strong>radial field</strong> — the field lines radiate outward (positive charge) or inward (negative charge) from the centre equally in all directions." }] } },
+    { id: 'callout-1', type: 'callout', terms: [], data: { style: 'key', title: '<strong>Electric Field</strong> of a Point Charge', text: 'E = kQ / r² = Q / (4πε₀r²)<br/>Q = the point charge producing the radial <strong>electric field</strong> (C)<br/>r = distance from the centre of the charge (m)<br/>ε₀ = permittivity of free space = 8.85 × 10⁻¹² F m⁻¹<br/>k = 8.99 × 10⁹ N m² C⁻²' } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "A charged sphere also acts like a <strong>point charge</strong> at its centre. The <strong>electric field</strong> strength E at a distance r due to a point charge Q in free space is defined by E = kQ/r². This equation applies only outside the sphere — inside a uniformly charged sphere, the field is zero." }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "Q = the point charge producing the radial <strong>electric field</strong> (C), r = distance from the centre of the charge (m), ε₀ = <strong>permittivity of free space</strong> (F m⁻¹). This equation shows that the <strong>electric field</strong> in a radial field is not constant." }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Electric field</strong> strength</strong> in a radial field is not constant. As the distance from the charge r increases, E decreases by a factor of 1/r². This is an <strong>inverse square law</strong> relationship with distance. This means the field strength E decreases by a factor of four when the distance r is doubled." }] } },
+    { id: 'callout-2', type: 'callout', terms: [], data: { style: 'warning', title: 'Inverse Square Law: Common Error', text: 'Students often confuse the 1/r² relationship with 1/r. For field strength E ∝ 1/r² — if distance doubles, E drops to 1/4. For <strong>electric potential</strong> V ∝ 1/r — if distance doubles, V drops to 1/2. These are different!' } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "Note: this equation is only for the field strength around a <strong>point charge</strong> since it produces a radial field. For a uniform field between parallel plates, use E = V/d instead." }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [{ text: "Positive and negative point charges and the <strong>direction of the <strong>electric field</strong> lines</strong> — the <strong>electric field</strong> strength is a vector. Its direction is the same as the <strong>electric field</strong> lines. If the charge is negative, the E field strength is negative and points towards the centre of the charge." }] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [{ text: "If the charge is positive, the E field strength is positive and points away from the centre of the charge. This equation is analogous to the <strong>gravitational field strength</strong> around a point mass: g = GM/r². The only difference is, gravitational field lines are always towards the mass, whilst <strong>electric field</strong> lines can be towards or away from the point charge." }] } },
+    { id: 'callout-3', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Field of an Electron', text: 'Calculate the <strong>electric field</strong> strength 2 m from an electron (Q = −1.6 × 10⁻¹⁹ C).<br/>E = kQ / r²<br/>E = (8.99 × 10⁹ × 1.6 × 10⁻¹⁹) / (2)²<br/>E = 1.438 × 10⁻⁹ / 4<br/>E = 3.6 × 10⁻¹⁰ N C⁻¹<br/>Direction: towards the electron (since charge is negative).' } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [{ text: "The graph of E against r for a charge follows a <strong>1/r² relationship</strong>. The key features of this graph are: the values for E are all positive (plotting magnitude), as r increases, E against r follows a 1/r² relation (inverse square law), and the area under this graph is the <strong>change in <strong>electric potential</strong> ΔV</strong>." }] } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "The graph has a steep decline as r increases. As r → 0, E → ∞ (approaching the point charge). As r → ∞, E → 0. The <strong>area under the E-r graph</strong> between two points gives the change in <strong>electric potential</strong>, analogous to how the area under a force-distance graph gives work done." }] } },
+    { id: 'para-11', type: 'list', data: { style: 'bullet', items: [{ text: "Worked Example: Calculate the strength of the <strong>electric field</strong> at a distance of 2 m away from an electron, and state its direction." }] } },
+    { id: 'callout-4', type: 'callout', terms: [], data: { style: 'tip', title: 'Real-World Context: Photocopiers', text: 'In a photocopier (xerography), a charged drum creates an <strong>electric field</strong>. Toner particles (charged powder) are attracted to specific areas of the drum where charge has been neutralised by light, following the same Coulomb field principles. The toner then transfers to paper to create the printed image.' } },
     {
       id: 'svg-physics_4_18_3-0',
       type: 'svg',
+      terms: [],
       data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <rect x="80" y="40" width="240" height="60" fill="#e0e7ff" rx="8" stroke="#3b82f6" stroke-width="2"/>
-  <text x="200" y="75" font-family="Arial" font-size="20" fill="#1d4ed8" font-weight="bold" text-anchor="middle">E = k Q / r²</text>
-  <path d="M 60 180 L 200 180" stroke="#334155" stroke-width="2"/>
-  <path d="M 60 180 L 60 120" stroke="#334155" stroke-width="2"/>
-  <path d="M 70 120 Q 90 170 190 175" stroke="#ef4444" stroke-width="2" fill="none"/>
-  <text x="200" y="195" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">Distance r</text>
-  <text x="40" y="150" font-family="Arial" font-size="12" fill="#334155" transform="rotate(-90 40 150)" text-anchor="middle">E field</text>
-  <text x="260" y="150" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">Inverse square graph</text>
-</svg>`,
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">\n  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>\n  <rect x="80" y="40" width="240" height="60" fill="#e0e7ff" rx="8" stroke="#3b82f6" stroke-width="2"/>\n  <text x="200" y="75" font-family="Arial" font-size="20" fill="#1d4ed8" font-weight="bold" text-anchor="middle">E = k Q / r&#178;</text>\n  <path d="M 60 180 L 200 180" stroke="#334155" stroke-width="2"/>\n  <path d="M 60 180 L 60 120" stroke="#334155" stroke-width="2"/>\n  <path d="M 70 120 Q 90 170 190 175" stroke="#ef4444" stroke-width="2" fill="none"/>\n  <text x="200" y="195" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">Distance r</text>\n  <text x="40" y="150" font-family="Arial" font-size="12" fill="#334155" transform="rotate(-90 40 150)" text-anchor="middle">E field</text>\n  <text x="260" y="150" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">Inverse square graph</text>\n</svg>',
         caption: 'Diagram illustrating concepts of 18_3'
       }
     },
     {
       id: 'svg-physics_4_18_3-1',
       type: 'svg',
+      terms: [],
       data: {
-        svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
-  <circle cx="200" cy="110" r="15" fill="#ef4444"/>
-  <text x="200" y="115" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">+</text>
-  <circle cx="200" cy="110" r="50" fill="none" stroke="#94a3b8" stroke-dasharray="4,4"/>
-  <circle cx="200" cy="110" r="80" fill="none" stroke="#94a3b8" stroke-dasharray="4,4"/>
-  <text x="220" y="100" font-family="Arial" font-size="12" fill="#1d4ed8">Strong Field</text>
-  <text x="285" y="100" font-family="Arial" font-size="12" fill="#1d4ed8">Weaker Field</text>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Radial Field lines further apart = Weaker</text>
-</svg>`,
+        svg: '<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">\n  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>\n  <circle cx="200" cy="110" r="15" fill="#ef4444"/>\n  <text x="200" y="115" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">+</text>\n  <circle cx="200" cy="110" r="50" fill="none" stroke="#94a3b8" stroke-dasharray="4,4"/>\n  <circle cx="200" cy="110" r="80" fill="none" stroke="#94a3b8" stroke-dasharray="4,4"/>\n  <text x="220" y="100" font-family="Arial" font-size="12" fill="#1d4ed8">Strong Field</text>\n  <text x="285" y="100" font-family="Arial" font-size="12" fill="#1d4ed8">Weaker Field</text>\n  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Radial Field lines further apart = Weaker</text>\n</svg>',
         caption: 'Diagram illustrating concepts of 18_3'
       }
     },
+    { id: 'enr-worked-2', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Field Strength Near a Proton', text: 'Calculate the <strong>electric field</strong> strength at a distance of 0.50 nm from a proton (Q = +1.6 × 10⁻¹⁹ C). State the direction.<br/>r = 0.50 nm = 5.0 × 10⁻¹⁰ m<br/>E = kQ / r²<br/>E = (8.99 × 10⁹ × 1.6 × 10⁻¹⁹) / (5.0 × 10⁻¹⁰)²<br/>Numerator: 8.99 × 10⁹ × 1.6 × 10⁻¹⁹ = 1.438 × 10⁻⁹<br/>Denominator: (5.0)² × 10⁻²⁰ = 25 × 10⁻²⁰ = 2.5 × 10⁻¹⁹<br/>E = 1.438 × 10⁻⁹ / 2.5 × 10⁻¹⁹ ≈ 5.8 × 10⁹ N C⁻¹<br/>Direction: radially outward from the proton (positive charge → field points away).' } },
+    { id: 'enr-worked-millikan', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Millikan Oil Drop Experiment', text: 'An oil drop of mass m = 1.0 × 10⁻¹⁵ kg is held stationary between parallel plates separated by d = 5 mm with voltage V = 800 V.<br/><br/>Step 1 — <strong>Electric field</strong>: E = V/d = 800 / 0.005 = 1.60 × 10⁵ V m⁻¹<br/><br/>Step 2 — Equilibrium (electric force = weight): qE = mg<br/>q = mg / E = (1.0 × 10⁻¹⁵ × 9.81) / (1.60 × 10⁵) = 9.81 × 10⁻¹⁵ / 1.60 × 10⁵ ≈ 6.1 × 10⁻²⁰ C ≈ 0.38e (measurement uncertainty)<br/><br/>Step 3 — For a drop with q = 3.2 × 10⁻¹⁹ C (= 2e): equilibrium requires V = (mg/q) × d = (9.81 × 10⁻¹⁵ / 3.2 × 10⁻¹⁹) × 0.005 ≈ 0.15 V.<br/><br/>Conclusion: Millikan measured hundreds of drops. Every charge was a whole-number multiple of 1.6 × 10⁻¹⁹ C — direct experimental evidence that electric charge is quantised.' } },
+    { id: 'enr-tip-2', type: 'callout', terms: [], data: { style: 'tip', title: 'Exam Tip: Radial vs Uniform Field Formulae', text: 'For a uniform field (parallel plates): use E = V/d, where V is the <strong>potential difference</strong> and d is the plate separation.<br/>For a radial field (point charge): use E = kQ/r².<br/>Never mix the two formulae — identify the field type first.<br/>Also: for a radial field, the area under an E–r graph gives the change in potential ΔV; the gradient of a V–r graph gives −E.' } },
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Field due to a Point Charge' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Electric Field</strong> due to a Point Charge' }], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

@@ -1,10 +1,10 @@
 export const economicsSyllabus = {
-    qualification: 'Pearson Edexcel International A Level Economics (YEC11)',
+    qualification: 'AL Economics',
     source: 'International-A-Level-Economics-spec.pdf (Issue 2, June 2018)',
     units: [
         {
             id: 1,
-            code: 'WEC11',
+            code: 'YEC11',
             title: 'Markets in action',
             topics: [
                 {
@@ -100,7 +100,7 @@ export const economicsSyllabus = {
         },
         {
             id: 2,
-            code: 'WEC12',
+            code: 'YEC12',
             title: 'Macroeconomic performance and policy',
             topics: [
                 {
@@ -203,7 +203,7 @@ export const economicsSyllabus = {
         },
         {
             id: 3,
-            code: 'WEC13',
+            code: 'YEC13',
             title: 'Business behaviour',
             topics: [
                 {
@@ -294,7 +294,7 @@ export const economicsSyllabus = {
         },
         {
             id: 4,
-            code: 'WEC14',
+            code: 'YEC14',
             title: 'Developments in the global economy',
             topics: [
                 {

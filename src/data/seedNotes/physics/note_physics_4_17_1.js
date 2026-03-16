@@ -1,17 +1,17 @@
 export const note_physics_4_17_1 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Angular Velocity" } },
-    { id: 'head-1', type: 'heading', data: { text: "Angular Velocity", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Angular Velocity Angular Velocity The angular velocity ω of a body in circular motion is defined as: The rate of change of angular displacement" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "In other words, angular velocity is the angle swept out by an object in circular motion, per second Angular velocity is a vector quantity and is measured in rad s Since it is a vector, it has a magnitude (angular speed) and direction" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "Angular velocity is calculated using: ω =Δθ Δt Where:" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "Δ θ = change in angular displacement (radians) Δt = time interval (s) It is related to linear speed, v by the equation v = ωr" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "Where: v = linear speed, v (m s) ω = angular speed (rad s) r = radius of orbit (m)–1" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "-1 -1 When an object is in uniform circular motion, velocity constantly changes direction, but the speed stays the same" } },
-    { id: 'para-8', type: 'paragraph', data: { text: "Taking the angular displacement of a complete orbit or revolution as 2 π  radians, the angular velocity ω an be calculated using the equation: Where: T = the time period (s)" } },
-    { id: 'para-9', type: 'paragraph', data: { text: "f = frequency (Hz) This equation shows that: The greater the rotation angle θ in a given amount of time T, the greater the angular velocity ω" } },
-    { id: 'para-10', type: 'paragraph', data: { text: "An object travelling with the same linear velocity, but further from the centre of orbit (larger r) moves with a smaller angular velocity (smaller ω) Worked Example A bird flies in a horizontal circle with an angular speed of 5.25 rad s of radius 650 m." } },
-    { id: 'para-11', type: 'paragraph', data: { text: "Calculate: a) The linear speed of the bird b) The frequency of the bird Examiner Tips and Tricks" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Understand <strong>Angular Velocity</strong>" } },
+    { id: 'head-1', type: 'heading', data: { text: "<strong>Angular Velocity</strong>", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Angular Velocity</strong> <strong>Angular Velocity</strong> The <strong>angular velocity</strong> ω of a body in circular motion is defined as: The rate of change of angular displacement" }] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "In other words, <strong>angular velocity</strong> is the angle swept out by an object in circular motion, per second <strong>Angular velocity</strong> is a vector quantity and is measured in rad s Since it is a vector, it has a magnitude (angular speed) and direction" }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Angular velocity</strong> is calculated using: ω =Δθ Δt Where:" }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "Δ θ = change in angular displacement (radians) Δt = time interval (s) It is related to linear speed, v by the equation v = ωr" }] } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "Where: v = linear speed, v (m s) ω = angular speed (rad s) r = radius of orbit (m)–1" }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [{ text: "-1 -1 When an object is in uniform circular motion, velocity constantly changes direction, but the speed stays the same" }] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [{ text: "Taking the angular displacement of a complete orbit or revolution as 2 π  radians, the <strong>angular velocity</strong> ω an be calculated using the equation: Where: T = the time period (s)" }] } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [{ text: "f = frequency (Hz) This equation shows that: The greater the rotation angle θ in a given amount of time T, the greater the <strong>angular velocity</strong> ω" }] } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "An object travelling with the same linear velocity, but further from the centre of orbit (larger r) moves with a smaller <strong>angular velocity</strong> (smaller ω) Worked Example A bird flies in a horizontal circle with an angular speed of 5.25 rad s of radius 650 m." }] } },
+    { id: 'para-11', type: 'list', data: { style: 'bullet', items: [{ text: "Calculate: a) The linear speed of the bird b) The frequency of the bird Examiner Tips and Tricks" }] } },
 
   
     {
@@ -48,8 +48,56 @@ export const note_physics_4_17_1 = {
         caption: 'Diagram illustrating concepts of 17_1'
       }
     },
+    {
+      id: 'enr-svg-centripetal',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="480" height="260" fill="#f8fafc" rx="8"/>
+  <circle cx="220" cy="120" r="90" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="220" cy="120" r="5" fill="#1e293b"/>
+  <text x="226" y="125" font-family="Arial" font-size="12" fill="#1e293b">centre</text>
+  <circle cx="284" cy="56" r="11" fill="#6366f1"/>
+  <text x="298" y="52" font-family="Arial" font-size="12" fill="#6366f1" font-weight="bold">m</text>
+  <line x1="284" y1="56" x2="344" y2="84" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrowG)"/>
+  <text x="346" y="82" font-family="Arial" font-size="12" fill="#10b981" font-weight="bold">v (tangential)</text>
+  <line x1="284" y1="56" x2="237" y2="95" stroke="#ef4444" stroke-width="2.5" marker-end="url(#arrowR)"/>
+  <text x="165" y="40" font-family="Arial" font-size="12" fill="#ef4444" font-weight="bold">a = v²/r (toward centre)</text>
+  <rect x="10" y="218" width="460" height="32" fill="#fef3c7" rx="6" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="240" y="239" font-family="Arial" font-size="12" fill="#92400e" font-weight="bold" text-anchor="middle">F = mv²/r = mω²r   |   a = v²/r = ω²r   (toward centre)</text>
+  <text x="20" y="210" font-family="Arial" font-size="11" fill="#f59e0b" font-weight="bold">Centripetal force always points toward centre</text>
+</svg>`,
+        caption: 'Centripetal acceleration: a=v²/r=ω²r. Directed toward centre'
+      }
+    },
+    {
+      id: 'enr-worked-orbit',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: ISS Orbit',
+        text: 'ISS orbit: r = 6.78 × 10⁶ m (400 km altitude + Earth radius 6380 km). Speed v = 7660 m/s.\n\na = v²/r = 7660² / 6.78×10⁶ = 8.66 m/s²\n\nThis <strong>centripetal acceleration</strong> is provided by gravity (g = 8.66 m/s² at that altitude). Astronauts feel weightless because they are in freefall — both them and the station accelerate toward Earth at the same rate.'
+      }
+    },
+    {
+      id: 'enr-tip-centripetal',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Centripetal Force',
+        text: '<strong>Centripetal force</strong> is NOT a new force — it is the resultant of existing forces (gravity, tension, friction, normal reaction, etc.) directed toward the centre.\n\na = v²/r = ω²r.  F = mv²/r = mω²r.\n\nAt top of loop: mg + N = mv²/r.\nAt bottom: N − mg = mv²/r.\nNet force always points toward centre of circular path.'
+      }
+    },
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Angular Velocity' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Angular Velocity</strong>' }], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

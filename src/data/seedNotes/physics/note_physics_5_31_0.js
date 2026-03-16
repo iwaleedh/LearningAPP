@@ -1,31 +1,65 @@
 export const note_physics_5_31_0 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Gravitational Fields" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Define gravitational field and gravitational field strength g; apply g = GM/r² for a radial field and g = constant near Earth's surface; draw and interpret field line diagrams; relate g to gravitational potential V_g = −GM/r; describe how g varies with distance from Earth's centre" } },
     { id: 'head-1', type: 'heading', data: { text: "Gravitational Fields", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Gravitational Fields Gravitational Fields Generally, a force field is a region of space in which an object will experience a force A gravitational field, therefore, is a region of space in which any object with mass" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "experiences a gravitational force The Sun, for example, creates a gravitational field around it The Earth, which has mass, experiences the gravitational force due to the Sun This gravitational force keeps the Earth in orbit around the Sun" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "Additional effects of the Moon and Sun's gravitational fields can be seen on Earth, such as the cause of tides Direction of a Gravitational Field The direction of a gravitational field can be represented as a vector, the direction of" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "which must be determined by inspection The direction of the vector shows the direction of the gravitational force that would be exerted on a mass if it was placed at that position in the field These vectors are known as field lines (or 'lines of force'), which are represented by" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "arrows Therefore, gravitational field lines also show the direction of acceleration of a mass placed in the field Gravitational field lines are therefore directed toward the centre of mass of a body" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "This is because the gravitational force is attractive Therefore, masses always attract each other via the gravitational force The gravitational field around a point mass will be radial in shape and the field lines will The direction of the gravitational field is shown by the vector field lines" } },
-    {
-      "id": "svg-grav-field-lines",
-      "type": "svg",
-      "data": {
-        "svg": "<svg viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><circle cx=\"150\" cy=\"150\" r=\"30\" fill=\"#64748B\"/><path d=\"M 150 50 L 150 110\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/><path d=\"M 150 250 L 150 190\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/><path d=\"M 50 150 L 110 150\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/><path d=\"M 250 150 L 190 150\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/></svg>",
-        "caption": "Radial Gravitational Field"
-      }
-    },
-    {
-      "id": "svg-uniform-grav-field",
-      "type": "svg",
-      "data": {
-        "svg": "<svg viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><line x1=\"50\" y1=\"150\" x2=\"250\" y2=\"150\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M 100 50 L 100 130\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/><path d=\"M 150 50 L 150 130\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/><path d=\"M 200 50 L 200 130\" stroke=\"#94A3B8\" marker-end=\"url(#arrow)\"/></svg>",
-        "caption": "Uniform Gravitational Field"
-      }
-    },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [
+      { text: "A gravitational field is a region of space in which any object with mass experiences a gravitational force." },
+      { text: "The concept of a field was introduced by Faraday and later formalised by Newton to explain action-at-a-distance — how the Sun can exert a force on the Earth across 150 million km of apparently empty space." },
+      { text: "Every massive object creates a gravitational field around it; the strength of that field decreases with distance." },
+      { text: "Any other mass placed in the field experiences a gravitational force directed toward the source mass." }
+    ] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [
+      { text: "Gravitational Field Strength The gravitational field strength g at a point in a gravitational field is defined as the gravitational force per unit mass at that point: g = F/m (unit: N kg⁻¹, equivalent to m s⁻²)" },
+      { text: "It is a vector quantity directed toward the source mass." },
+      { text: "Near Earth's surface, g ≈ 9.81 N kg⁻¹ and is approximately uniform." },
+      { text: "At greater distances from Earth, g decreases." },
+      { text: "For a spherical mass M with uniform density, the gravitational field strength at distance r from the centre is given by Newton's law of gravitation: g = GM/r², where G = 6.67 × 10⁻¹¹ N m² kg⁻² is the universal gravitational constant." }
+    ] } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="170" fill="#f8f9fa"/><text x="200" y="16" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Gravitational Field Lines: Earth</text><rect x="15" y="28" width="178" height="130" rx="5" fill="#e7f5ff" stroke="#339af0" stroke-width="2"/><text x="104" y="44" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1864ab" text-anchor="middle">Radial Field (distant)</text><circle cx="104" cy="93" r="20" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="104" y="97" font-family="sans-serif" font-size="9" fill="#fff" text-anchor="middle">Earth</text><line x1="104" y1="73" x2="104" y2="44" stroke="#212529" stroke-width="1.5"/><polygon points="104,73 100,65 108,65" fill="#212529"/><line x1="104" y1="113" x2="104" y2="142" stroke="#212529" stroke-width="1.5"/><polygon points="104,113 100,121 108,121" fill="#212529"/><line x1="84" y1="93" x2="55" y2="93" stroke="#212529" stroke-width="1.5"/><polygon points="84,93 76,89 76,97" fill="#212529"/><line x1="124" y1="93" x2="153" y2="93" stroke="#212529" stroke-width="1.5"/><polygon points="124,93 132,89 132,97" fill="#212529"/><line x1="90" y1="79" x2="68" y2="57" stroke="#212529" stroke-width="1.5"/><polygon points="90,79 82,75 86,83" fill="#212529"/><line x1="118" y1="107" x2="140" y2="129" stroke="#212529" stroke-width="1.5"/><polygon points="118,107 126,111 122,103" fill="#212529"/><line x1="90" y1="107" x2="68" y2="129" stroke="#212529" stroke-width="1.5"/><polygon points="90,107 82,103 86,111" fill="#212529"/><line x1="118" y1="79" x2="140" y2="57" stroke="#212529" stroke-width="1.5"/><polygon points="118,79 126,83 122,75" fill="#212529"/><text x="104" y="150" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">Radial field lines: all toward centre</text><rect x="207" y="28" width="178" height="130" rx="5" fill="#fff3bf" stroke="#fab005" stroke-width="2"/><text x="296" y="44" font-family="sans-serif" font-size="10" font-weight="bold" fill="#e67700" text-anchor="middle">Uniform Field (near surface)</text><rect x="217" y="128" width="158" height="12" rx="3" fill="#339af0"/><text x="296" y="138" font-family="sans-serif" font-size="8" fill="#fff" text-anchor="middle">Earth\'s surface</text><line x1="245" y1="50" x2="245" y2="120" stroke="#212529" stroke-width="1.5"/><polygon points="245,120 241,112 249,112" fill="#212529"/><line x1="275" y1="50" x2="275" y2="120" stroke="#212529" stroke-width="1.5"/><polygon points="275,120 271,112 279,112" fill="#212529"/><line x1="305" y1="50" x2="305" y2="120" stroke="#212529" stroke-width="1.5"/><polygon points="305,120 301,112 309,112" fill="#212529"/><line x1="345" y1="50" x2="345" y2="120" stroke="#212529" stroke-width="1.5"/><polygon points="345,120 341,112 349,112" fill="#212529"/><text x="296" y="150" font-family="sans-serif" font-size="9" fill="#e67700" text-anchor="middle">Uniform: parallel field lines (g &#8776; const.)</text></svg>', caption: 'Radial field (distant): lines converge at centre, spacing increases with distance (g decreases). Uniform field (near surface): parallel lines, equal spacing (g ≈ 9.81 N kg⁻¹).' } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [
+      { text: "Newton's Law of Gravitation The gravitational force between two point masses M and m separated by distance r is: F = GMm/r² (attractive)" },
+      { text: "The gravitational field strength at distance r from M follows from F = mg: g = F/m = GM/r²" },
+      { text: "This is an inverse square law — doubling the distance reduces g by a factor of 4." },
+      { text: "The field is always directed toward M (gravity is always attractive)" },
+      { text: "At Earth's surface (r = R_E ≈ 6.37 × 10⁶ m): g = GM_E/R_E² = (6.67 × 10⁻¹¹ × 5.97 × 10²⁴) / (6.37 × 10⁶)² = 9.82 N kg⁻¹ ≈ 9.81 N kg⁻¹. ✓." }
+    ] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [
+      { text: "Gravitational Potential The gravitational potential V_g at a point is defined as the work done per unit mass to move a small test mass from infinity to that point: V_g = −GM/r (unit: J kg⁻¹)" },
+      { text: "The negative sign arises because gravity is attractive — work must be done against gravity to move a mass away from M, so potential increases (becomes less negative) as r increases." },
+      { text: "V_g = 0 at r = ∞ (reference level)" },
+      { text: "Near a mass M, V_g is negative." },
+      { text: "The relationship between field strength and potential: g = −dV_g/dr (field is the negative gradient of potential)" },
+      { text: "Equipotential surfaces (where V_g is constant) are perpendicular to field lines." }
+    ] } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="165" fill="#f8f9fa"/><text x="200" y="16" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">g and V_g vs Distance r from Earth\'s Centre</text><line x1="30" y1="130" x2="375" y2="130" stroke="#212529" stroke-width="2"/><line x1="30" y1="130" x2="30" y2="20" stroke="#212529" stroke-width="2"/><text x="202" y="148" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Distance r from centre</text><line x1="110" y1="20" x2="110" y2="130" stroke="#adb5bd" stroke-width="1" stroke-dasharray="3,2"/><text x="110" y="143" font-family="sans-serif" font-size="8" fill="#868e96" text-anchor="middle">R_E</text><path d="M 30 125 Q 50 40 110 28 Q 140 24 160 30 Q 210 42 260 60 Q 310 78 375 100" stroke="#fa5252" stroke-width="2" fill="none"/><text x="55" y="45" font-family="sans-serif" font-size="8" fill="#c92a2a">g inside</text><text x="55" y="56" font-family="sans-serif" font-size="8" fill="#c92a2a">(&#8733; r)</text><path d="M 110 28 Q 150 35 200 50 Q 260 68 320 88 Q 345 98 375 108" stroke="#339af0" stroke-width="2.5" fill="none"/><text x="250" y="48" font-family="sans-serif" font-size="8" fill="#1864ab">g &#8733; 1/r&#178;</text><text x="250" y="58" font-family="sans-serif" font-size="8" fill="#1864ab">(outside)</text><text x="200" y="160" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Inside Earth: g &#8733; r (increases). At surface: max. Outside: g &#8733; 1/r&#178; (decreases)</text></svg>', caption: 'g vs r: inside Earth g ∝ r (increases to surface); outside Earth g ∝ 1/r² (inverse square). Maximum at surface.' } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [
+      { text: "Variation of g with Distance Inside the Earth, treating Earth as uniform density: g ∝ r (increases linearly from zero at centre to g_surface at the surface)" },
+      { text: "At the surface: g = GM_E/R_E² ≈ 9.81 N kg⁻¹." },
+      { text: "Outside the Earth: g = GM_E/r² (inverse square law; decreases with distance)" },
+      { text: "At altitude h above the surface (r = R_E + h): g = GM_E/(R_E + h)²" },
+      { text: "For example, at the International Space Station (h ≈ 400 km): g = 9.81 × (6370/6770)² ≈ 8.68 N kg⁻¹ — still significant (astronauts are in free fall, not weightless)." }
+    ] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
+      { text: "Worked Example Calculate the gravitational field strength at the Moon's surface." },
+      { text: "Given: M_Moon = 7.35 × 10²² kg, R_Moon = 1.74 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m² kg⁻². g = GM/R² = (6.67 × 10⁻¹¹ × 7.35 × 10²²) / (1.74 × 10⁶)² = 4.90 × 10¹² / 3.03 × 10¹² = 1.62 N kg⁻¹." },
+      { text: "This is about one-sixth of Earth's surface value, confirming that objects weigh six times less on the Moon." }
+    ] } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Equations', text: 'Gravitational field strength: g = F/m = GM/r² (N kg⁻¹). Newton\'s law: F = GMm/r². Gravitational potential: V_g = −GM/r (J kg⁻¹; always −ve; = 0 at ∞). Relation: g = −dV_g/dr. Field lines: radially inward; closer spacing = stronger field. Surface: g = GM/R². Inside: g ∝ r. Outside: g ∝ 1/r².' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Define gravitational field strength and write the equation g = GM/r², explaining the inverse square dependence on distance", checked: false },
+      { text: "Describe how g varies with distance from Earth's centre, both inside and outside the Earth", checked: false },
+      { text: "Define gravitational potential V_g, explain why it is always negative, and state the relationship between g and V_g", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Gravitational field: region where mass experiences force. g = F/m = GM/r² (N kg⁻¹). Newton: F = GMm/r². Radial field: lines toward centre, closer near M. Uniform near surface: g ≈ 9.81 N kg⁻¹. Inside Earth: g ∝ r. Outside: g ∝ 1/r² (inverse square). Potential: V_g = −GM/r (always −ve, = 0 at ∞). g = −dV_g/dr. Equipotentials ⊥ field lines." } },
+    { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="12" font-weight="bold" fill="#212529" text-anchor="middle">Gravitational Potential V_g vs Distance r</text><line x1="40" y1="65" x2="385" y2="65" stroke="#868e96" stroke-width="1.5" stroke-dasharray="4,3"/><line x1="40" y1="25" x2="40" y2="188" stroke="#212529" stroke-width="1.5"/><path d="M 60 185 Q 100 147 150 108 Q 200 85 260 73 Q 310 67 385 64" stroke="#9c36b5" stroke-width="2.5" fill="none"/><text x="200" y="198" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">V_g = −GM/r (purple): always negative, approaching V = 0 reference (dashed) as r → ∞</text></svg>', caption: 'Gravitational potential V_g is always negative, becoming less negative as r increases toward infinity. The negative slope dV_g/dr at any point equals −g.' } },
+    { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Gravitational Potential at Earth\'s Surface', text: 'Calculate V_g at Earth\'s surface. Given: M_E = 5.97 × 10²⁴ kg, R_E = 6.37 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m² kg⁻². V_g = −GM/R = −(6.67 × 10⁻¹¹ × 5.97 × 10²⁴) / (6.37 × 10⁶) = −6.25 × 10⁷ J kg⁻¹. This means 6.25 × 10⁷ J of work per kilogram must be done against gravity to move a mass from Earth\'s surface to infinity (the escape energy per unit mass).' } },
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Signs and the g–V_g Relationship', text: 'g = −dV_g/dr means g equals the negative slope of the V_g vs r graph — a steep curve means a strong field. Since V_g is always negative, "higher" potential means less negative (further from mass). When comparing two points, −4 × 10⁷ J kg⁻¹ is a higher (less negative) potential than −6 × 10⁷ J kg⁻¹, so less energy is needed to escape from the first location.' } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Gravitational Fields' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'Define gravitational field strength. Write the formula for g due to a spherical mass M at distance r. What are its units?' },
+    { id: 'cue-2', blockId: 'para-6', prompt: 'Describe how g varies with distance both inside and outside a uniform density Earth. Sketch a g vs r graph.' },
+    { id: 'cue-3', blockId: 'para-5', prompt: 'Define gravitational potential V_g. Why is it always negative? Write the relationship between g and V_g.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

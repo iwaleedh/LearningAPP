@@ -1,26 +1,58 @@
 export const note_physics_5_32_2 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Period of Simple Harmonic Oscillators" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Derive and apply the period formulae T = 2π√(m/k) for a mass-spring system and T = 2π√(l/g) for a simple pendulum; explain the isochronous property; investigate factors that affect the period experimentally" } },
     { id: 'head-1', type: 'heading', data: { text: "Period of Simple Harmonic Oscillators", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Notes for Period of Simple Harmonic Oscillators will be updated." } },
-    {
-      "id": "svg-shm-energy",
-      "type": "svg",
-      "data": {
-        "svg": "<svg viewBox=\"0 0 400 250\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><line x1=\"50\" y1=\"200\" x2=\"350\" y2=\"200\" stroke=\"#64748B\"/><line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"200\" stroke=\"#64748B\" stroke-dasharray=\"2,2\"/><path d=\"M 100 50 Q 200 250 300 50\" fill=\"none\" stroke=\"#3B82F6\" stroke-width=\"2\"/><path d=\"M 100 200 Q 200 0 300 200\" fill=\"none\" stroke=\"#EF4444\" stroke-width=\"2\"/><line x1=\"100\" y1=\"50\" x2=\"300\" y2=\"50\" stroke=\"#10B981\" stroke-width=\"2\"/><text x=\"310\" y=\"50\" fill=\"#10B981\">Total E</text></svg>",
-        "caption": "Energy in SHM"
-      }
-    },
-    {
-      "id": "svg-spring-mass",
-      "type": "svg",
-      "data": {
-        "svg": "<svg viewBox=\"0 0 200 300\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><line x1=\"50\" y1=\"50\" x2=\"150\" y2=\"50\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M 100 50 L 100 70 L 80 80 L 120 100 L 80 120 L 120 140 L 80 160 L 100 170 C 100 170 100 180 100 180\" fill=\"none\" stroke=\"#64748B\" stroke-width=\"2\"/><rect x=\"80\" y=\"180\" width=\"40\" height=\"40\" fill=\"#F59E0B\"/><text x=\"60\" y=\"200\" fill=\"#EF4444\">m</text></svg>",
-        "caption": "Mass-Spring System"
-      }
-    },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [
+      { text: "A simple harmonic oscillator is any system in which the restoring force is proportional to the displacement from equilibrium and directed towards it: F = −kx." },
+      { text: "The resulting motion has a period T that is independent of amplitude — this is the isochronous property." },
+      { text: "Two important examples studied at A-Level are the mass-spring system and the simple pendulum." },
+      { text: "Both have period formulae that can be derived from F = ma and the SHM condition." }
+    ] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [
+      { text: "Mass-Spring System For a mass m on a spring of spring constant k, Hooke's Law gives the restoring force: F = −kx." },
+      { text: "Applying Newton's second law: ma = −kx → a = −(k/m)x." },
+      { text: "Comparing with the SHM definition a = −ω²x: ω² = k/m → ω = √(k/m)" },
+      { text: "Since T = 2π/ω: T = 2π√(m/k)" },
+      { text: "The period increases with mass (more inertia) and decreases with spring constant (stiffer spring pulls harder)" },
+      { text: "The period does not depend on amplitude — the oscillator is isochronous." }
+    ] } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Mass-Spring and Pendulum Systems</text><line x1="40" y1="30" x2="130" y2="30" stroke="#212529" stroke-width="3"/><path d="M 85 30 L 85 45 L 75 50 L 95 60 L 75 70 L 95 80 L 75 90 L 85 95" stroke="#495057" stroke-width="2" fill="none"/><rect x="70" y="95" width="30" height="30" rx="3" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="85" y="115" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">m</text><line x1="30" y1="130" x2="140" y2="130" stroke="#adb5bd" stroke-width="1" stroke-dasharray="3,2"/><text x="85" y="145" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Equilibrium</text><text x="85" y="160" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">T = 2&#960;&#8730;(m/k)</text><line x1="270" y1="25" x2="330" y2="25" stroke="#212529" stroke-width="3"/><line x1="300" y1="25" x2="265" y2="110" stroke="#495057" stroke-width="2"/><circle cx="265" cy="115" r="12" fill="#fa5252" stroke="#c92a2a" stroke-width="1.5"/><line x1="300" y1="25" x2="300" y2="125" stroke="#adb5bd" stroke-width="1" stroke-dasharray="3,2"/><text x="305" y="68" font-family="sans-serif" font-size="9" fill="#495057">l</text><path d="M 295 65 Q 300 60 305 65" fill="none" stroke="#fab005" stroke-width="1.5"/><text x="318" y="60" font-family="sans-serif" font-size="9" fill="#e67700">&#952;</text><text x="300" y="148" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">For small &#952;</text><text x="300" y="162" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">T = 2&#960;&#8730;(l/g)</text></svg>', caption: 'Mass-spring: T = 2π√(m/k). Simple pendulum: T = 2π√(l/g) for small angles θ < 15°. Both are isochronous.' } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "Simple Pendulum For a pendulum of length l and small angular displacement θ (< ~15°), the restoring force component is: F = −mg sinθ ≈ −mgθ = −mg(x/l) = −(mg/l)x (for small angles, sinθ ≈ θ in radians). Comparing with F = −kx: effective k = mg/l. Substituting into T = 2π√(m/k): T = 2π√(m/(mg/l)) = 2π√(l/g). The period depends only on length l and gravitational field strength g — it does not depend on the mass of the bob or on the amplitude (for small angles). This is why pendulums were used in clocks." }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [
+      { text: "Worked Examples Example 1 (mass-spring): A 0.50 kg mass is attached to a spring of spring constant 80 N m⁻¹." },
+      { text: "Find the period." },
+      { text: "T = 2π√(m/k) = 2π√(0.50/80) = 2π√(6.25 × 10⁻³) = 2π × 0.0791 = 0.497 s ≈ 0.50 s." },
+      { text: "Example 2 (pendulum): A pendulum has length 0.25 m." },
+      { text: "Find its period (g = 9.81 m s⁻²)" },
+      { text: "T = 2π√(l/g) = 2π√(0.25/9.81) = 2π√(0.02549) = 2π × 0.1597 = 1.003 s ≈ 1.0 s." },
+      { text: "A 1 s period pendulum requires a length of about 25 cm — this is the length of a clock pendulum that ticks once per second." }
+    ] } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Isochronous Property: T Independent of Amplitude</text><line x1="30" y1="120" x2="185" y2="120" stroke="#212529" stroke-width="2"/><line x1="30" y1="120" x2="30" y2="30" stroke="#212529" stroke-width="2"/><text x="107" y="138" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Time t</text><text x="14" y="75" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle" transform="rotate(-90 14,75)">x</text><path d="M 30 75 Q 47 40 65 75 Q 83 110 100 75 Q 118 40 135 75 Q 153 110 170 75 Q 180 50 185 60" stroke="#339af0" stroke-width="2.5" fill="none"/><line x1="215" y1="120" x2="375" y2="120" stroke="#212529" stroke-width="2"/><line x1="215" y1="120" x2="215" y2="30" stroke="#212529" stroke-width="2"/><text x="295" y="138" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Time t</text><path d="M 215 75 Q 232 50 250 75 Q 267 100 285 75 Q 302 50 320 75 Q 337 100 355 75 Q 368 60 375 65" stroke="#fa5252" stroke-width="2.5" fill="none"/><text x="107" y="155" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">Large amplitude</text><text x="295" y="155" font-family="sans-serif" font-size="9" fill="#c92a2a" text-anchor="middle">Small amplitude</text><text x="200" y="170" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">Both oscillations have the same period T &#8212; isochronous</text></svg>', caption: 'Isochronous: period T is the same regardless of amplitude (for small angles / Hooke\'s Law regime). Larger amplitude → same T.' } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "Investigating T for a Pendulum: Experimental Method Measure the period by timing 20–30 complete oscillations and dividing (to reduce timing error). Plot T² vs l — Boyle's from T = 2π√(l/g): T² = 4π²l/g, so a graph of T² vs l is a straight line through the origin with gradient 4π²/g. From the gradient: g = 4π²/gradient. Sources of error: measure l to centre of bob (not bottom), not to point of support; use a fiducial marker; keep amplitude small (< 15°) for SHM condition to hold; use a motion sensor or light gate for precise timing." }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
+      { text: "Factors Affecting the Period Mass-spring system: T depends on mass m and spring constant k; NOT on amplitude (isochronous) and NOT on g." },
+      { text: "Simple pendulum: T depends on l and g; NOT on mass of bob and NOT on amplitude (for small angles)" },
+      { text: "If you want to increase T of a pendulum: lengthen the string." },
+      { text: "If you want to increase T of a mass-spring: increase mass or use a softer spring." },
+      { text: "On the Moon (g ≈ 1.6 m s⁻²), the pendulum period is longer (T ∝ 1/√g), but the mass-spring period is unchanged (T = 2π√(m/k) has no g dependence)." }
+    ] } },
+    { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 155" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="155" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">T&#178; vs l Graph for Simple Pendulum</text><line x1="40" y1="130" x2="375" y2="130" stroke="#212529" stroke-width="2"/><line x1="40" y1="130" x2="40" y2="28" stroke="#212529" stroke-width="2"/><text x="208" y="145" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Length l / m</text><text x="22" y="80" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle" transform="rotate(-90 22,80)">T&#178; / s&#178;</text><line x1="40" y1="130" x2="375" y2="32" stroke="#339af0" stroke-width="2.5"/><circle cx="90" cy="115" r="4" fill="#339af0"/><circle cx="150" cy="96" r="4" fill="#339af0"/><circle cx="220" cy="74" r="4" fill="#339af0"/><circle cx="300" cy="50" r="4" fill="#339af0"/><text x="310" y="48" font-family="sans-serif" font-size="9" fill="#1864ab">gradient = 4&#960;&#178;/g</text><text x="200" y="148" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">g = 4&#960;&#178; / gradient &#8192; straight line through origin confirms T = 2&#960;&#8730;(l/g)</text></svg>', caption: 'T² vs l: straight line through origin; gradient = 4π²/g → g = 4π²/gradient. Used to measure g precisely.' } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Formulae', text: 'Mass-spring: T = 2π√(m/k). T increases with m; T decreases with k; T independent of amplitude and g. Simple pendulum: T = 2π√(l/g). T increases with l; T decreases with g; T independent of mass and amplitude (small angles). Both are isochronous. Plot T² vs l to find g: gradient = 4π²/g.' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Derive T = 2π√(m/k) for a mass-spring system by equating the spring force to ma and comparing with a = −ω²x", checked: false },
+      { text: "State the factors that affect (and do not affect) the period of a mass-spring system and a simple pendulum", checked: false },
+      { text: "Describe how to measure g using a simple pendulum, including what graph to plot and how to extract g from it", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "SHM: F = −kx → a = −ω²x where ω = √(k/m). T = 2π/ω. Mass-spring: T = 2π√(m/k); depends on m and k; NOT on A or g. Simple pendulum: T = 2π√(l/g); depends on l and g; NOT on mass or A (small angles). Both isochronous. Measure g: plot T² vs l → gradient = 4π²/g → g = 4π²/gradient." } },
+    { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#f8f9fa"/><text x="200" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Factors Affecting Period T</text><text font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle"><tspan x="100" y="55" font-weight="bold">Mass-Spring</tspan><tspan x="100" dy="20">&#8593; m &#8594; T longer</tspan><tspan x="100" dy="17">&#8593; k &#8594; T shorter</tspan><tspan x="100" dy="17">A, g: no effect</tspan></text><line x1="200" y1="38" x2="200" y2="175" stroke="#ced4da" stroke-width="1.5"/><text font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle"><tspan x="300" y="55" font-weight="bold">Simple Pendulum</tspan><tspan x="300" dy="20">&#8593; l &#8594; T longer</tspan><tspan x="300" dy="17">&#8593; g &#8594; T shorter</tspan><tspan x="300" dy="17">mass, A: no effect</tspan></text><text x="200" y="192" font-family="sans-serif" font-size="9" fill="#868e96" text-anchor="middle">Both isochronous &#8212; amplitude does not change T</text></svg>', caption: 'Factors that do and do not affect T for each oscillator.' } },
+    { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked: Pendulum Period on the Moon vs Earth', text: 'A pendulum of length 0.80 m on Earth (g = 9.81 m s⁻²): T = 2π√(0.80/9.81) = 1.80 s. On the Moon (g = 1.63 m s⁻²): T = 2π√(0.80/1.63) = 4.40 s. The pendulum is ×2.4 slower on the Moon. A mass-spring system is unaffected by g: same T on Earth or Moon.' } },
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Which Formula Changes on the Moon?', text: 'T = 2π√(m/k) for mass-spring; T = 2π√(l/g) for pendulum. Classic exam trap: "pendulum taken to the Moon" → lower g → longer T. But a mass-spring system on the Moon has the same T (no g in formula). Doubling l multiplies T by √2 ≈ 1.41; doubling m also multiplies mass-spring T by √2.' } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Period of Simple Harmonic Oscillators' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-3', prompt: 'Derive T = 2π√(m/k) for a mass-spring system. Start from F = −kx and compare with the SHM equation a = −ω²x.' },
+    { id: 'cue-2', blockId: 'para-4', prompt: 'Derive T = 2π√(l/g) for a simple pendulum. What approximation is needed? What does this make the pendulum independent of?' },
+    { id: 'cue-3', blockId: 'para-6', prompt: 'How do you measure g using a simple pendulum? What graph do you plot, and how do you extract g from it?' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

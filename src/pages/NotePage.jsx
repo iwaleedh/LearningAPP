@@ -291,7 +291,6 @@ export default function NotePage() {
                 {/* Left: breadcrumbs */}
                 <div className="note-toolbar-left">
                     <span className="badge">{getSubjectLabel(context.subject)}</span>
-                    <span className="badge">{context.qualificationCode}</span>
                     <span className="badge">{context.unitCode}</span>
                     <h2 className="note-toolbar-title">{context.subtopicTitle}</h2>
                 </div>

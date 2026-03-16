@@ -1,5 +1,5 @@
 export const accountingSyllabus = {
-    qualification: 'Pearson Edexcel International A Level Accounting (YAC11)',
+    qualification: 'AL Accounting',
     source: 'pearson-edexcel-ial-accounting-specification.pdf (Issue 2, September 2018)',
     units: [
         {

@@ -163,8 +163,244 @@ import { note_biology_4_5_24 } from './biology/note_4_5_24.js';
 import { note_biology_4_5_25 } from './biology/note_4_5_25.js';
 import { note_biology_4_5_26 } from './biology/note_4_5_26.js';
 import { note_accounting_1_1_0 } from './accounting/note_1_1_0.js';
-import { note_business_1_1_0 } from './business/note_1_1_0.js';
-import { note_economics_1_1_0 } from './economics/note_1_1_0.js';
+import { note_economics_1_1_0 } from './economics/note_economics_1_1_0.js';
+import { note_economics_1_1_1 } from './economics/note_economics_1_1_1.js';
+import { note_economics_1_1_2 } from './economics/note_economics_1_1_2.js';
+import { note_economics_1_1_3 } from './economics/note_economics_1_1_3.js';
+import { note_economics_1_1_4 } from './economics/note_economics_1_1_4.js';
+import { note_economics_1_1_5 } from './economics/note_economics_1_1_5.js';
+import { note_economics_1_1_6 } from './economics/note_economics_1_1_6.js';
+import { note_economics_1_1_7 } from './economics/note_economics_1_1_7.js';
+import { note_economics_1_1_8 } from './economics/note_economics_1_1_8.js';
+import { note_economics_1_1_9 } from './economics/note_economics_1_1_9.js';
+import { note_economics_1_1_10 } from './economics/note_economics_1_1_10.js';
+import { note_economics_1_1_11 } from './economics/note_economics_1_1_11.js';
+import { note_economics_1_2_0 } from './economics/note_economics_1_2_0.js';
+import { note_economics_1_2_1 } from './economics/note_economics_1_2_1.js';
+import { note_economics_1_2_2 } from './economics/note_economics_1_2_2.js';
+import { note_economics_1_2_3 } from './economics/note_economics_1_2_3.js';
+import { note_economics_1_2_4 } from './economics/note_economics_1_2_4.js';
+import { note_economics_1_2_5 } from './economics/note_economics_1_2_5.js';
+import { note_economics_1_2_6 } from './economics/note_economics_1_2_6.js';
+import { note_economics_1_2_7 } from './economics/note_economics_1_2_7.js';
+import { note_economics_1_2_8 } from './economics/note_economics_1_2_8.js';
+import { note_economics_1_2_9 } from './economics/note_economics_1_2_9.js';
+import { note_economics_1_3_0 } from './economics/note_economics_1_3_0.js';
+import { note_economics_1_3_1 } from './economics/note_economics_1_3_1.js';
+import { note_economics_1_3_2 } from './economics/note_economics_1_3_2.js';
+import { note_economics_1_3_3 } from './economics/note_economics_1_3_3.js';
+import { note_economics_1_3_4 } from './economics/note_economics_1_3_4.js';
+import { note_economics_1_3_5 } from './economics/note_economics_1_3_5.js';
+import { note_economics_1_4_0 } from './economics/note_economics_1_4_0.js';
+import { note_economics_1_4_1 } from './economics/note_economics_1_4_1.js';
+import { note_economics_1_4_2 } from './economics/note_economics_1_4_2.js';
+import { note_economics_1_4_3 } from './economics/note_economics_1_4_3.js';
+import { note_economics_1_4_4 } from './economics/note_economics_1_4_4.js';
+import { note_economics_1_4_5 } from './economics/note_economics_1_4_5.js';
+import { note_economics_1_5_0 } from './economics/note_economics_1_5_0.js';
+import { note_economics_1_5_1 } from './economics/note_economics_1_5_1.js';
+import { note_economics_1_5_2 } from './economics/note_economics_1_5_2.js';
+import { note_economics_1_5_3 } from './economics/note_economics_1_5_3.js';
+import { note_economics_1_5_4 } from './economics/note_economics_1_5_4.js';
+import { note_economics_1_5_5 } from './economics/note_economics_1_5_5.js';
+import { note_economics_1_5_6 } from './economics/note_economics_1_5_6.js';
+import { note_economics_1_5_7 } from './economics/note_economics_1_5_7.js';
+import { note_economics_1_5_8 } from './economics/note_economics_1_5_8.js';
+import { note_economics_1_5_9 } from './economics/note_economics_1_5_9.js';
+import { note_economics_1_6_0 } from './economics/note_economics_1_6_0.js';
+import { note_economics_1_6_1 } from './economics/note_economics_1_6_1.js';
+import { note_economics_1_6_2 } from './economics/note_economics_1_6_2.js';
+import { note_economics_1_6_3 } from './economics/note_economics_1_6_3.js';
+import { note_economics_1_6_4 } from './economics/note_economics_1_6_4.js';
+import { note_economics_1_6_5 } from './economics/note_economics_1_6_5.js';
+import { note_economics_1_6_6 } from './economics/note_economics_1_6_6.js';
+import { note_economics_1_6_7 } from './economics/note_economics_1_6_7.js';
+import { note_economics_1_6_8 } from './economics/note_economics_1_6_8.js';
+import { note_economics_2_7_0 } from './economics/note_economics_2_7_0.js';
+import { note_economics_2_7_1 } from './economics/note_economics_2_7_1.js';
+import { note_economics_2_7_2 } from './economics/note_economics_2_7_2.js';
+import { note_economics_2_7_3 } from './economics/note_economics_2_7_3.js';
+import { note_economics_2_7_4 } from './economics/note_economics_2_7_4.js';
+import { note_economics_2_7_5 } from './economics/note_economics_2_7_5.js';
+import { note_economics_2_7_6 } from './economics/note_economics_2_7_6.js';
+import { note_economics_2_7_7 } from './economics/note_economics_2_7_7.js';
+import { note_economics_2_7_8 } from './economics/note_economics_2_7_8.js';
+import { note_economics_2_7_9 } from './economics/note_economics_2_7_9.js';
+import { note_economics_2_7_10 } from './economics/note_economics_2_7_10.js';
+import { note_economics_2_7_11 } from './economics/note_economics_2_7_11.js';
+import { note_economics_2_7_12 } from './economics/note_economics_2_7_12.js';
+import { note_economics_2_7_13 } from './economics/note_economics_2_7_13.js';
+import { note_economics_2_7_14 } from './economics/note_economics_2_7_14.js';
+import { note_economics_2_8_0 } from './economics/note_economics_2_8_0.js';
+import { note_economics_2_8_1 } from './economics/note_economics_2_8_1.js';
+import { note_economics_2_8_2 } from './economics/note_economics_2_8_2.js';
+import { note_economics_2_8_3 } from './economics/note_economics_2_8_3.js';
+import { note_economics_2_8_4 } from './economics/note_economics_2_8_4.js';
+import { note_economics_2_8_5 } from './economics/note_economics_2_8_5.js';
+import { note_economics_2_8_6 } from './economics/note_economics_2_8_6.js';
+import { note_economics_2_8_7 } from './economics/note_economics_2_8_7.js';
+import { note_economics_2_8_8 } from './economics/note_economics_2_8_8.js';
+import { note_economics_2_9_0 } from './economics/note_economics_2_9_0.js';
+import { note_economics_2_9_1 } from './economics/note_economics_2_9_1.js';
+import { note_economics_2_9_2 } from './economics/note_economics_2_9_2.js';
+import { note_economics_2_9_3 } from './economics/note_economics_2_9_3.js';
+import { note_economics_2_9_4 } from './economics/note_economics_2_9_4.js';
+import { note_economics_2_10_0 } from './economics/note_economics_2_10_0.js';
+import { note_economics_2_10_1 } from './economics/note_economics_2_10_1.js';
+import { note_economics_2_10_2 } from './economics/note_economics_2_10_2.js';
+import { note_economics_2_10_3 } from './economics/note_economics_2_10_3.js';
+import { note_economics_2_10_4 } from './economics/note_economics_2_10_4.js';
+import { note_economics_2_10_5 } from './economics/note_economics_2_10_5.js';
+import { note_economics_2_10_6 } from './economics/note_economics_2_10_6.js';
+import { note_economics_2_10_7 } from './economics/note_economics_2_10_7.js';
+import { note_economics_2_11_0 } from './economics/note_economics_2_11_0.js';
+import { note_economics_2_11_1 } from './economics/note_economics_2_11_1.js';
+import { note_economics_2_11_2 } from './economics/note_economics_2_11_2.js';
+import { note_economics_2_11_3 } from './economics/note_economics_2_11_3.js';
+import { note_economics_2_11_4 } from './economics/note_economics_2_11_4.js';
+import { note_economics_2_11_5 } from './economics/note_economics_2_11_5.js';
+import { note_economics_2_11_6 } from './economics/note_economics_2_11_6.js';
+import { note_economics_2_11_7 } from './economics/note_economics_2_11_7.js';
+import { note_economics_2_11_8 } from './economics/note_economics_2_11_8.js';
+import { note_economics_2_11_9 } from './economics/note_economics_2_11_9.js';
+import { note_economics_2_12_0 } from './economics/note_economics_2_12_0.js';
+import { note_economics_2_12_1 } from './economics/note_economics_2_12_1.js';
+import { note_economics_2_12_2 } from './economics/note_economics_2_12_2.js';
+import { note_economics_2_12_3 } from './economics/note_economics_2_12_3.js';
+import { note_economics_2_12_4 } from './economics/note_economics_2_12_4.js';
+import { note_economics_2_12_5 } from './economics/note_economics_2_12_5.js';
+import { note_economics_2_12_6 } from './economics/note_economics_2_12_6.js';
+import { note_economics_2_12_7 } from './economics/note_economics_2_12_7.js';
+import { note_economics_2_12_8 } from './economics/note_economics_2_12_8.js';
+import { note_economics_2_12_9 } from './economics/note_economics_2_12_9.js';
+import { note_economics_2_12_10 } from './economics/note_economics_2_12_10.js';
+import { note_economics_2_12_11 } from './economics/note_economics_2_12_11.js';
+import { note_economics_2_12_12 } from './economics/note_economics_2_12_12.js';
+import { note_economics_3_13_0 } from './economics/note_economics_3_13_0.js';
+import { note_economics_3_13_1 } from './economics/note_economics_3_13_1.js';
+import { note_economics_3_13_2 } from './economics/note_economics_3_13_2.js';
+import { note_economics_3_13_3 } from './economics/note_economics_3_13_3.js';
+import { note_economics_3_13_4 } from './economics/note_economics_3_13_4.js';
+import { note_economics_3_13_5 } from './economics/note_economics_3_13_5.js';
+import { note_economics_3_13_6 } from './economics/note_economics_3_13_6.js';
+import { note_economics_3_13_7 } from './economics/note_economics_3_13_7.js';
+import { note_economics_3_13_8 } from './economics/note_economics_3_13_8.js';
+import { note_economics_3_13_9 } from './economics/note_economics_3_13_9.js';
+import { note_economics_3_13_10 } from './economics/note_economics_3_13_10.js';
+import { note_economics_3_14_0 } from './economics/note_economics_3_14_0.js';
+import { note_economics_3_14_1 } from './economics/note_economics_3_14_1.js';
+import { note_economics_3_14_2 } from './economics/note_economics_3_14_2.js';
+import { note_economics_3_14_3 } from './economics/note_economics_3_14_3.js';
+import { note_economics_3_14_4 } from './economics/note_economics_3_14_4.js';
+import { note_economics_3_14_5 } from './economics/note_economics_3_14_5.js';
+import { note_economics_3_14_6 } from './economics/note_economics_3_14_6.js';
+import { note_economics_3_14_7 } from './economics/note_economics_3_14_7.js';
+import { note_economics_3_14_8 } from './economics/note_economics_3_14_8.js';
+import { note_economics_3_14_9 } from './economics/note_economics_3_14_9.js';
+import { note_economics_3_15_0 } from './economics/note_economics_3_15_0.js';
+import { note_economics_3_15_1 } from './economics/note_economics_3_15_1.js';
+import { note_economics_3_15_2 } from './economics/note_economics_3_15_2.js';
+import { note_economics_3_15_3 } from './economics/note_economics_3_15_3.js';
+import { note_economics_3_15_4 } from './economics/note_economics_3_15_4.js';
+import { note_economics_3_15_5 } from './economics/note_economics_3_15_5.js';
+import { note_economics_3_15_6 } from './economics/note_economics_3_15_6.js';
+import { note_economics_3_15_7 } from './economics/note_economics_3_15_7.js';
+import { note_economics_3_15_8 } from './economics/note_economics_3_15_8.js';
+import { note_economics_3_15_9 } from './economics/note_economics_3_15_9.js';
+import { note_economics_3_15_10 } from './economics/note_economics_3_15_10.js';
+import { note_economics_3_15_11 } from './economics/note_economics_3_15_11.js';
+import { note_economics_3_15_12 } from './economics/note_economics_3_15_12.js';
+import { note_economics_3_16_0 } from './economics/note_economics_3_16_0.js';
+import { note_economics_3_16_1 } from './economics/note_economics_3_16_1.js';
+import { note_economics_3_16_2 } from './economics/note_economics_3_16_2.js';
+import { note_economics_3_16_3 } from './economics/note_economics_3_16_3.js';
+import { note_economics_3_16_4 } from './economics/note_economics_3_16_4.js';
+import { note_economics_3_16_5 } from './economics/note_economics_3_16_5.js';
+import { note_economics_3_16_6 } from './economics/note_economics_3_16_6.js';
+import { note_economics_3_16_7 } from './economics/note_economics_3_16_7.js';
+import { note_economics_3_16_8 } from './economics/note_economics_3_16_8.js';
+import { note_economics_3_16_9 } from './economics/note_economics_3_16_9.js';
+import { note_economics_3_17_0 } from './economics/note_economics_3_17_0.js';
+import { note_economics_3_17_1 } from './economics/note_economics_3_17_1.js';
+import { note_economics_3_17_2 } from './economics/note_economics_3_17_2.js';
+import { note_economics_3_17_3 } from './economics/note_economics_3_17_3.js';
+import { note_economics_3_17_4 } from './economics/note_economics_3_17_4.js';
+import { note_economics_3_17_5 } from './economics/note_economics_3_17_5.js';
+import { note_economics_3_17_6 } from './economics/note_economics_3_17_6.js';
+import { note_economics_3_17_7 } from './economics/note_economics_3_17_7.js';
+import { note_economics_3_17_8 } from './economics/note_economics_3_17_8.js';
+import { note_economics_3_17_9 } from './economics/note_economics_3_17_9.js';
+import { note_economics_4_18_0 } from './economics/note_economics_4_18_0.js';
+import { note_economics_4_18_1 } from './economics/note_economics_4_18_1.js';
+import { note_economics_4_18_2 } from './economics/note_economics_4_18_2.js';
+import { note_economics_4_18_3 } from './economics/note_economics_4_18_3.js';
+import { note_economics_4_18_4 } from './economics/note_economics_4_18_4.js';
+import { note_economics_4_18_5 } from './economics/note_economics_4_18_5.js';
+import { note_economics_4_18_6 } from './economics/note_economics_4_18_6.js';
+import { note_economics_4_18_7 } from './economics/note_economics_4_18_7.js';
+import { note_economics_4_18_8 } from './economics/note_economics_4_18_8.js';
+import { note_economics_4_19_0 } from './economics/note_economics_4_19_0.js';
+import { note_economics_4_19_1 } from './economics/note_economics_4_19_1.js';
+import { note_economics_4_19_2 } from './economics/note_economics_4_19_2.js';
+import { note_economics_4_19_3 } from './economics/note_economics_4_19_3.js';
+import { note_economics_4_19_4 } from './economics/note_economics_4_19_4.js';
+import { note_economics_4_19_5 } from './economics/note_economics_4_19_5.js';
+import { note_economics_4_19_6 } from './economics/note_economics_4_19_6.js';
+import { note_economics_4_19_7 } from './economics/note_economics_4_19_7.js';
+import { note_economics_4_19_8 } from './economics/note_economics_4_19_8.js';
+import { note_economics_4_19_9 } from './economics/note_economics_4_19_9.js';
+import { note_economics_4_19_10 } from './economics/note_economics_4_19_10.js';
+import { note_economics_4_19_11 } from './economics/note_economics_4_19_11.js';
+import { note_economics_4_20_0 } from './economics/note_economics_4_20_0.js';
+import { note_economics_4_20_1 } from './economics/note_economics_4_20_1.js';
+import { note_economics_4_20_2 } from './economics/note_economics_4_20_2.js';
+import { note_economics_4_20_3 } from './economics/note_economics_4_20_3.js';
+import { note_economics_4_20_4 } from './economics/note_economics_4_20_4.js';
+import { note_economics_4_20_5 } from './economics/note_economics_4_20_5.js';
+import { note_economics_4_20_6 } from './economics/note_economics_4_20_6.js';
+import { note_economics_4_20_7 } from './economics/note_economics_4_20_7.js';
+import { note_economics_4_20_8 } from './economics/note_economics_4_20_8.js';
+import { note_economics_4_20_9 } from './economics/note_economics_4_20_9.js';
+import { note_economics_4_20_10 } from './economics/note_economics_4_20_10.js';
+import { note_economics_4_20_11 } from './economics/note_economics_4_20_11.js';
+import { note_economics_4_20_12 } from './economics/note_economics_4_20_12.js';
+import { note_economics_4_21_0 } from './economics/note_economics_4_21_0.js';
+import { note_economics_4_21_1 } from './economics/note_economics_4_21_1.js';
+import { note_economics_4_21_2 } from './economics/note_economics_4_21_2.js';
+import { note_economics_4_21_3 } from './economics/note_economics_4_21_3.js';
+import { note_economics_4_21_4 } from './economics/note_economics_4_21_4.js';
+import { note_economics_4_21_5 } from './economics/note_economics_4_21_5.js';
+import { note_economics_4_21_6 } from './economics/note_economics_4_21_6.js';
+import { note_economics_4_21_7 } from './economics/note_economics_4_21_7.js';
+import { note_economics_4_21_8 } from './economics/note_economics_4_21_8.js';
+import { note_economics_4_21_9 } from './economics/note_economics_4_21_9.js';
+import { note_economics_4_22_0 } from './economics/note_economics_4_22_0.js';
+import { note_economics_4_22_1 } from './economics/note_economics_4_22_1.js';
+import { note_economics_4_22_2 } from './economics/note_economics_4_22_2.js';
+import { note_economics_4_22_3 } from './economics/note_economics_4_22_3.js';
+import { note_economics_4_22_4 } from './economics/note_economics_4_22_4.js';
+import { note_economics_4_22_5 } from './economics/note_economics_4_22_5.js';
+import { note_economics_4_22_6 } from './economics/note_economics_4_22_6.js';
+import { note_economics_4_22_7 } from './economics/note_economics_4_22_7.js';
+import { note_economics_4_22_8 } from './economics/note_economics_4_22_8.js';
+import { note_economics_4_22_9 } from './economics/note_economics_4_22_9.js';
+import { note_economics_4_22_10 } from './economics/note_economics_4_22_10.js';
+import { note_economics_4_22_11 } from './economics/note_economics_4_22_11.js';
+import { note_economics_4_22_12 } from './economics/note_economics_4_22_12.js';
+import { note_economics_4_22_13 } from './economics/note_economics_4_22_13.js';
+import { note_economics_4_23_0 } from './economics/note_economics_4_23_0.js';
+import { note_economics_4_23_1 } from './economics/note_economics_4_23_1.js';
+import { note_economics_4_23_2 } from './economics/note_economics_4_23_2.js';
+import { note_economics_4_23_3 } from './economics/note_economics_4_23_3.js';
+import { note_economics_4_23_4 } from './economics/note_economics_4_23_4.js';
+import { note_economics_4_23_5 } from './economics/note_economics_4_23_5.js';
+import { note_economics_4_23_6 } from './economics/note_economics_4_23_6.js';
+import { note_economics_4_23_7 } from './economics/note_economics_4_23_7.js';
+import { note_economics_4_23_8 } from './economics/note_economics_4_23_8.js';
+import { note_economics_4_23_9 } from './economics/note_economics_4_23_9.js';
+import { note_economics_4_23_10 } from './economics/note_economics_4_23_10.js';
+import { note_economics_4_23_11 } from './economics/note_economics_4_23_11.js';
+import { note_economics_4_23_12 } from './economics/note_economics_4_23_12.js';
 import { note_biology_1_1_0 } from './biology/note_1_1_0.js';
 import { note_biology_1_1_1 } from './biology/note_1_1_1.js';
 import { note_biology_1_1_2 } from './biology/note_1_1_2.js';
@@ -760,7 +996,480 @@ import { note_mathematics_6_6_0 } from './mathematics/note_6_6_0.js';
 import { note_mathematics_6_6_1 } from './mathematics/note_6_6_1.js';
 import { note_mathematics_6_6_2 } from './mathematics/note_6_6_2.js';
 
+
+// --- Business Imports ---
+import { note_business_1_1_0 } from './business/note_1_1_0.js';
+import { note_business_1_1_1 } from './business/note_1_1_1.js';
+import { note_business_1_1_2 } from './business/note_1_1_2.js';
+import { note_business_1_1_3 } from './business/note_1_1_3.js';
+import { note_business_1_1_4 } from './business/note_1_1_4.js';
+import { note_business_1_1_5 } from './business/note_1_1_5.js';
+import { note_business_1_1_6 } from './business/note_1_1_6.js';
+import { note_business_1_1_7 } from './business/note_1_1_7.js';
+import { note_business_1_1_8 } from './business/note_1_1_8.js';
+import { note_business_1_1_9 } from './business/note_1_1_9.js';
+import { note_business_1_1_10 } from './business/note_1_1_10.js';
+import { note_business_1_1_11 } from './business/note_1_1_11.js';
+import { note_business_1_2_0 } from './business/note_1_2_0.js';
+import { note_business_1_2_1 } from './business/note_1_2_1.js';
+import { note_business_1_2_2 } from './business/note_1_2_2.js';
+import { note_business_1_2_3 } from './business/note_1_2_3.js';
+import { note_business_1_2_4 } from './business/note_1_2_4.js';
+import { note_business_1_2_5 } from './business/note_1_2_5.js';
+import { note_business_1_2_6 } from './business/note_1_2_6.js';
+import { note_business_1_2_7 } from './business/note_1_2_7.js';
+import { note_business_1_2_8 } from './business/note_1_2_8.js';
+import { note_business_1_3_0 } from './business/note_1_3_0.js';
+import { note_business_1_3_1 } from './business/note_1_3_1.js';
+import { note_business_1_3_2 } from './business/note_1_3_2.js';
+import { note_business_1_3_3 } from './business/note_1_3_3.js';
+import { note_business_1_3_4 } from './business/note_1_3_4.js';
+import { note_business_1_3_5 } from './business/note_1_3_5.js';
+import { note_business_1_3_6 } from './business/note_1_3_6.js';
+import { note_business_1_3_7 } from './business/note_1_3_7.js';
+import { note_business_1_3_8 } from './business/note_1_3_8.js';
+import { note_business_1_3_9 } from './business/note_1_3_9.js';
+import { note_business_1_3_10 } from './business/note_1_3_10.js';
+import { note_business_1_3_11 } from './business/note_1_3_11.js';
+import { note_business_1_4_0 } from './business/note_1_4_0.js';
+import { note_business_1_4_1 } from './business/note_1_4_1.js';
+import { note_business_1_4_2 } from './business/note_1_4_2.js';
+import { note_business_1_4_3 } from './business/note_1_4_3.js';
+import { note_business_1_4_4 } from './business/note_1_4_4.js';
+import { note_business_1_4_5 } from './business/note_1_4_5.js';
+import { note_business_1_4_6 } from './business/note_1_4_6.js';
+import { note_business_1_4_7 } from './business/note_1_4_7.js';
+import { note_business_1_4_8 } from './business/note_1_4_8.js';
+import { note_business_1_4_9 } from './business/note_1_4_9.js';
+import { note_business_1_4_10 } from './business/note_1_4_10.js';
+import { note_business_1_4_11 } from './business/note_1_4_11.js';
+import { note_business_1_5_0 } from './business/note_1_5_0.js';
+import { note_business_1_5_1 } from './business/note_1_5_1.js';
+import { note_business_1_5_2 } from './business/note_1_5_2.js';
+import { note_business_1_5_3 } from './business/note_1_5_3.js';
+import { note_business_1_5_4 } from './business/note_1_5_4.js';
+import { note_business_1_5_5 } from './business/note_1_5_5.js';
+import { note_business_1_5_6 } from './business/note_1_5_6.js';
+import { note_business_1_5_7 } from './business/note_1_5_7.js';
+import { note_business_2_6_0 } from './business/note_2_6_0.js';
+import { note_business_2_6_1 } from './business/note_2_6_1.js';
+import { note_business_2_6_2 } from './business/note_2_6_2.js';
+import { note_business_2_6_3 } from './business/note_2_6_3.js';
+import { note_business_2_6_4 } from './business/note_2_6_4.js';
+import { note_business_2_6_5 } from './business/note_2_6_5.js';
+import { note_business_2_6_6 } from './business/note_2_6_6.js';
+import { note_business_2_6_7 } from './business/note_2_6_7.js';
+import { note_business_2_6_8 } from './business/note_2_6_8.js';
+import { note_business_2_7_0 } from './business/note_2_7_0.js';
+import { note_business_2_7_1 } from './business/note_2_7_1.js';
+import { note_business_2_7_2 } from './business/note_2_7_2.js';
+import { note_business_2_7_3 } from './business/note_2_7_3.js';
+import { note_business_2_7_4 } from './business/note_2_7_4.js';
+import { note_business_2_7_5 } from './business/note_2_7_5.js';
+import { note_business_2_7_6 } from './business/note_2_7_6.js';
+import { note_business_2_7_7 } from './business/note_2_7_7.js';
+import { note_business_2_7_8 } from './business/note_2_7_8.js';
+import { note_business_2_7_9 } from './business/note_2_7_9.js';
+import { note_business_2_7_10 } from './business/note_2_7_10.js';
+import { note_business_2_8_0 } from './business/note_2_8_0.js';
+import { note_business_2_8_1 } from './business/note_2_8_1.js';
+import { note_business_2_8_2 } from './business/note_2_8_2.js';
+import { note_business_2_8_3 } from './business/note_2_8_3.js';
+import { note_business_2_8_4 } from './business/note_2_8_4.js';
+import { note_business_2_8_5 } from './business/note_2_8_5.js';
+import { note_business_2_8_6 } from './business/note_2_8_6.js';
+import { note_business_2_8_7 } from './business/note_2_8_7.js';
+import { note_business_2_9_0 } from './business/note_2_9_0.js';
+import { note_business_2_9_1 } from './business/note_2_9_1.js';
+import { note_business_2_9_2 } from './business/note_2_9_2.js';
+import { note_business_2_9_3 } from './business/note_2_9_3.js';
+import { note_business_2_9_4 } from './business/note_2_9_4.js';
+import { note_business_2_9_5 } from './business/note_2_9_5.js';
+import { note_business_2_9_6 } from './business/note_2_9_6.js';
+import { note_business_2_9_7 } from './business/note_2_9_7.js';
+import { note_business_2_9_8 } from './business/note_2_9_8.js';
+import { note_business_2_9_9 } from './business/note_2_9_9.js';
+import { note_business_2_10_0 } from './business/note_2_10_0.js';
+import { note_business_2_10_1 } from './business/note_2_10_1.js';
+import { note_business_2_10_2 } from './business/note_2_10_2.js';
+import { note_business_2_10_3 } from './business/note_2_10_3.js';
+import { note_business_2_10_4 } from './business/note_2_10_4.js';
+import { note_business_2_10_5 } from './business/note_2_10_5.js';
+import { note_business_2_10_6 } from './business/note_2_10_6.js';
+import { note_business_2_10_7 } from './business/note_2_10_7.js';
+import { note_business_2_10_8 } from './business/note_2_10_8.js';
+import { note_business_2_10_9 } from './business/note_2_10_9.js';
+import { note_business_2_10_10 } from './business/note_2_10_10.js';
+import { note_business_2_10_11 } from './business/note_2_10_11.js';
+import { note_business_2_10_12 } from './business/note_2_10_12.js';
+import { note_business_3_11_0 } from './business/note_3_11_0.js';
+import { note_business_3_11_1 } from './business/note_3_11_1.js';
+import { note_business_3_11_2 } from './business/note_3_11_2.js';
+import { note_business_3_11_3 } from './business/note_3_11_3.js';
+import { note_business_3_11_4 } from './business/note_3_11_4.js';
+import { note_business_3_11_5 } from './business/note_3_11_5.js';
+import { note_business_3_11_6 } from './business/note_3_11_6.js';
+import { note_business_3_11_7 } from './business/note_3_11_7.js';
+import { note_business_3_11_8 } from './business/note_3_11_8.js';
+import { note_business_3_11_9 } from './business/note_3_11_9.js';
+import { note_business_3_12_0 } from './business/note_3_12_0.js';
+import { note_business_3_12_1 } from './business/note_3_12_1.js';
+import { note_business_3_12_2 } from './business/note_3_12_2.js';
+import { note_business_3_12_3 } from './business/note_3_12_3.js';
+import { note_business_3_12_4 } from './business/note_3_12_4.js';
+import { note_business_3_12_5 } from './business/note_3_12_5.js';
+import { note_business_3_12_6 } from './business/note_3_12_6.js';
+import { note_business_3_12_7 } from './business/note_3_12_7.js';
+import { note_business_3_13_0 } from './business/note_3_13_0.js';
+import { note_business_3_13_1 } from './business/note_3_13_1.js';
+import { note_business_3_13_2 } from './business/note_3_13_2.js';
+import { note_business_3_13_3 } from './business/note_3_13_3.js';
+import { note_business_3_13_4 } from './business/note_3_13_4.js';
+import { note_business_3_13_5 } from './business/note_3_13_5.js';
+import { note_business_3_13_6 } from './business/note_3_13_6.js';
+import { note_business_3_13_7 } from './business/note_3_13_7.js';
+import { note_business_3_13_8 } from './business/note_3_13_8.js';
+import { note_business_3_13_9 } from './business/note_3_13_9.js';
+import { note_business_3_13_10 } from './business/note_3_13_10.js';
+import { note_business_3_14_0 } from './business/note_3_14_0.js';
+import { note_business_3_14_1 } from './business/note_3_14_1.js';
+import { note_business_3_14_2 } from './business/note_3_14_2.js';
+import { note_business_3_14_3 } from './business/note_3_14_3.js';
+import { note_business_3_14_4 } from './business/note_3_14_4.js';
+import { note_business_3_14_5 } from './business/note_3_14_5.js';
+import { note_business_3_14_6 } from './business/note_3_14_6.js';
+import { note_business_3_14_7 } from './business/note_3_14_7.js';
+import { note_business_3_15_0 } from './business/note_3_15_0.js';
+import { note_business_3_15_1 } from './business/note_3_15_1.js';
+import { note_business_3_15_2 } from './business/note_3_15_2.js';
+import { note_business_3_15_3 } from './business/note_3_15_3.js';
+import { note_business_3_15_4 } from './business/note_3_15_4.js';
+import { note_business_3_15_5 } from './business/note_3_15_5.js';
+import { note_business_3_15_6 } from './business/note_3_15_6.js';
+import { note_business_3_15_7 } from './business/note_3_15_7.js';
+import { note_business_3_16_0 } from './business/note_3_16_0.js';
+import { note_business_3_16_1 } from './business/note_3_16_1.js';
+import { note_business_3_16_2 } from './business/note_3_16_2.js';
+import { note_business_3_16_3 } from './business/note_3_16_3.js';
+import { note_business_3_16_4 } from './business/note_3_16_4.js';
+import { note_business_3_16_5 } from './business/note_3_16_5.js';
+import { note_business_3_16_6 } from './business/note_3_16_6.js';
+import { note_business_3_16_7 } from './business/note_3_16_7.js';
+import { note_business_4_17_0 } from './business/note_4_17_0.js';
+import { note_business_4_17_1 } from './business/note_4_17_1.js';
+import { note_business_4_17_2 } from './business/note_4_17_2.js';
+import { note_business_4_17_3 } from './business/note_4_17_3.js';
+import { note_business_4_17_4 } from './business/note_4_17_4.js';
+import { note_business_4_17_5 } from './business/note_4_17_5.js';
+import { note_business_4_17_6 } from './business/note_4_17_6.js';
+import { note_business_4_17_7 } from './business/note_4_17_7.js';
+import { note_business_4_17_8 } from './business/note_4_17_8.js';
+import { note_business_4_17_9 } from './business/note_4_17_9.js';
+import { note_business_4_18_0 } from './business/note_4_18_0.js';
+import { note_business_4_18_1 } from './business/note_4_18_1.js';
+import { note_business_4_18_2 } from './business/note_4_18_2.js';
+import { note_business_4_18_3 } from './business/note_4_18_3.js';
+import { note_business_4_18_4 } from './business/note_4_18_4.js';
+import { note_business_4_18_5 } from './business/note_4_18_5.js';
+import { note_business_4_18_6 } from './business/note_4_18_6.js';
+import { note_business_4_18_7 } from './business/note_4_18_7.js';
+import { note_business_4_18_8 } from './business/note_4_18_8.js';
+import { note_business_4_19_0 } from './business/note_4_19_0.js';
+import { note_business_4_19_1 } from './business/note_4_19_1.js';
+import { note_business_4_19_2 } from './business/note_4_19_2.js';
+import { note_business_4_19_3 } from './business/note_4_19_3.js';
+import { note_business_4_19_4 } from './business/note_4_19_4.js';
+import { note_business_4_19_5 } from './business/note_4_19_5.js';
+import { note_business_4_19_6 } from './business/note_4_19_6.js';
+import { note_business_4_19_7 } from './business/note_4_19_7.js';
+import { note_business_4_20_0 } from './business/note_4_20_0.js';
+import { note_business_4_20_1 } from './business/note_4_20_1.js';
+import { note_business_4_20_2 } from './business/note_4_20_2.js';
+import { note_business_4_20_3 } from './business/note_4_20_3.js';
+import { note_business_4_20_4 } from './business/note_4_20_4.js';
+import { note_business_4_20_5 } from './business/note_4_20_5.js';
+import { note_business_4_20_6 } from './business/note_4_20_6.js';
+import { note_business_4_20_7 } from './business/note_4_20_7.js';
+import { note_business_4_20_8 } from './business/note_4_20_8.js';
+import { note_business_4_20_9 } from './business/note_4_20_9.js';
+import { note_cae_1_1_0 } from './cae/note_cae_1_1_0.js';
+import { note_cae_1_1_1 } from './cae/note_cae_1_1_1.js';
+import { note_cae_1_1_2 } from './cae/note_cae_1_1_2.js';
+import { note_cae_1_1_3 } from './cae/note_cae_1_1_3.js';
+import { note_cae_1_2_0 } from './cae/note_cae_1_2_0.js';
+import { note_cae_1_2_1 } from './cae/note_cae_1_2_1.js';
+import { note_cae_1_2_2 } from './cae/note_cae_1_2_2.js';
+import { note_cae_1_2_3 } from './cae/note_cae_1_2_3.js';
+import { note_cae_1_3_0 } from './cae/note_cae_1_3_0.js';
+import { note_cae_1_3_1 } from './cae/note_cae_1_3_1.js';
+import { note_cae_1_3_2 } from './cae/note_cae_1_3_2.js';
+import { note_cae_1_3_3 } from './cae/note_cae_1_3_3.js';
+import { note_cae_1_3_4 } from './cae/note_cae_1_3_4.js';
+import { note_cae_1_3_5 } from './cae/note_cae_1_3_5.js';
+import { note_cae_2_4_0 } from './cae/note_cae_2_4_0.js';
+import { note_cae_2_4_1 } from './cae/note_cae_2_4_1.js';
+import { note_cae_2_4_2 } from './cae/note_cae_2_4_2.js';
+import { note_cae_2_5_0 } from './cae/note_cae_2_5_0.js';
+import { note_cae_2_5_1 } from './cae/note_cae_2_5_1.js';
+import { note_cae_2_5_2 } from './cae/note_cae_2_5_2.js';
+import { note_cae_2_5_3 } from './cae/note_cae_2_5_3.js';
+import { note_cae_2_6_0 } from './cae/note_cae_2_6_0.js';
+import { note_cae_2_6_1 } from './cae/note_cae_2_6_1.js';
+import { note_cae_2_6_2 } from './cae/note_cae_2_6_2.js';
+import { note_cae_2_6_3 } from './cae/note_cae_2_6_3.js';
+import { note_cae_3_7_0 } from './cae/note_cae_3_7_0.js';
+import { note_cae_3_7_1 } from './cae/note_cae_3_7_1.js';
+import { note_cae_3_7_2 } from './cae/note_cae_3_7_2.js';
+import { note_cae_3_7_3 } from './cae/note_cae_3_7_3.js';
+import { note_cae_3_8_0 } from './cae/note_cae_3_8_0.js';
+import { note_cae_3_8_1 } from './cae/note_cae_3_8_1.js';
+import { note_cae_3_8_2 } from './cae/note_cae_3_8_2.js';
+import { note_cae_3_8_3 } from './cae/note_cae_3_8_3.js';
+import { note_cae_4_9_0 } from './cae/note_cae_4_9_0.js';
+import { note_cae_4_9_1 } from './cae/note_cae_4_9_1.js';
+import { note_cae_4_9_2 } from './cae/note_cae_4_9_2.js';
+import { note_cae_4_9_3 } from './cae/note_cae_4_9_3.js';
+import { note_cae_4_10_0 } from './cae/note_cae_4_10_0.js';
+import { note_cae_4_10_1 } from './cae/note_cae_4_10_1.js';
+import { note_cae_4_10_2 } from './cae/note_cae_4_10_2.js';
+import { note_cae_4_10_3 } from './cae/note_cae_4_10_3.js';
+import { note_cpe_1_1_0 } from './cpe/note_cpe_1_1_0.js';
+import { note_cpe_1_1_1 } from './cpe/note_cpe_1_1_1.js';
+import { note_cpe_1_1_2 } from './cpe/note_cpe_1_1_2.js';
+import { note_cpe_1_1_3 } from './cpe/note_cpe_1_1_3.js';
+import { note_cpe_1_2_0 } from './cpe/note_cpe_1_2_0.js';
+import { note_cpe_1_2_1 } from './cpe/note_cpe_1_2_1.js';
+import { note_cpe_1_2_2 } from './cpe/note_cpe_1_2_2.js';
+import { note_cpe_1_3_0 } from './cpe/note_cpe_1_3_0.js';
+import { note_cpe_1_3_1 } from './cpe/note_cpe_1_3_1.js';
+import { note_cpe_1_3_2 } from './cpe/note_cpe_1_3_2.js';
+import { note_cpe_1_3_3 } from './cpe/note_cpe_1_3_3.js';
+import { note_cpe_1_3_4 } from './cpe/note_cpe_1_3_4.js';
+import { note_cpe_1_3_5 } from './cpe/note_cpe_1_3_5.js';
+import { note_cpe_2_4_0 } from './cpe/note_cpe_2_4_0.js';
+import { note_cpe_2_4_1 } from './cpe/note_cpe_2_4_1.js';
+import { note_cpe_2_4_2 } from './cpe/note_cpe_2_4_2.js';
+import { note_cpe_2_5_0 } from './cpe/note_cpe_2_5_0.js';
+import { note_cpe_2_5_1 } from './cpe/note_cpe_2_5_1.js';
+import { note_cpe_2_5_2 } from './cpe/note_cpe_2_5_2.js';
+import { note_cpe_2_5_3 } from './cpe/note_cpe_2_5_3.js';
+import { note_cpe_2_6_0 } from './cpe/note_cpe_2_6_0.js';
+import { note_cpe_2_6_1 } from './cpe/note_cpe_2_6_1.js';
+import { note_cpe_2_6_2 } from './cpe/note_cpe_2_6_2.js';
+import { note_cpe_2_6_3 } from './cpe/note_cpe_2_6_3.js';
+import { note_cpe_3_7_0 } from './cpe/note_cpe_3_7_0.js';
+import { note_cpe_3_7_1 } from './cpe/note_cpe_3_7_1.js';
+import { note_cpe_3_7_2 } from './cpe/note_cpe_3_7_2.js';
+import { note_cpe_3_7_3 } from './cpe/note_cpe_3_7_3.js';
+import { note_cpe_3_8_0 } from './cpe/note_cpe_3_8_0.js';
+import { note_cpe_3_8_1 } from './cpe/note_cpe_3_8_1.js';
+import { note_cpe_3_8_2 } from './cpe/note_cpe_3_8_2.js';
+import { note_cpe_3_8_3 } from './cpe/note_cpe_3_8_3.js';
+import { note_cpe_4_9_0 } from './cpe/note_cpe_4_9_0.js';
+import { note_cpe_4_9_1 } from './cpe/note_cpe_4_9_1.js';
+import { note_cpe_4_9_2 } from './cpe/note_cpe_4_9_2.js';
+import { note_cpe_4_10_0 } from './cpe/note_cpe_4_10_0.js';
+import { note_cpe_4_10_1 } from './cpe/note_cpe_4_10_1.js';
+import { note_cpe_4_10_2 } from './cpe/note_cpe_4_10_2.js';
+import { note_cpe_4_10_3 } from './cpe/note_cpe_4_10_3.js';
+
 export const seedNotes = {
+  // --- Business Map ---
+  'business:1:1:0': note_business_1_1_0,
+  'business:1:1:1': note_business_1_1_1,
+  'business:1:1:2': note_business_1_1_2,
+  'business:1:1:3': note_business_1_1_3,
+  'business:1:1:4': note_business_1_1_4,
+  'business:1:1:5': note_business_1_1_5,
+  'business:1:1:6': note_business_1_1_6,
+  'business:1:1:7': note_business_1_1_7,
+  'business:1:1:8': note_business_1_1_8,
+  'business:1:1:9': note_business_1_1_9,
+  'business:1:1:10': note_business_1_1_10,
+  'business:1:1:11': note_business_1_1_11,
+  'business:1:2:0': note_business_1_2_0,
+  'business:1:2:1': note_business_1_2_1,
+  'business:1:2:2': note_business_1_2_2,
+  'business:1:2:3': note_business_1_2_3,
+  'business:1:2:4': note_business_1_2_4,
+  'business:1:2:5': note_business_1_2_5,
+  'business:1:2:6': note_business_1_2_6,
+  'business:1:2:7': note_business_1_2_7,
+  'business:1:2:8': note_business_1_2_8,
+  'business:1:3:0': note_business_1_3_0,
+  'business:1:3:1': note_business_1_3_1,
+  'business:1:3:2': note_business_1_3_2,
+  'business:1:3:3': note_business_1_3_3,
+  'business:1:3:4': note_business_1_3_4,
+  'business:1:3:5': note_business_1_3_5,
+  'business:1:3:6': note_business_1_3_6,
+  'business:1:3:7': note_business_1_3_7,
+  'business:1:3:8': note_business_1_3_8,
+  'business:1:3:9': note_business_1_3_9,
+  'business:1:3:10': note_business_1_3_10,
+  'business:1:3:11': note_business_1_3_11,
+  'business:1:4:0': note_business_1_4_0,
+  'business:1:4:1': note_business_1_4_1,
+  'business:1:4:2': note_business_1_4_2,
+  'business:1:4:3': note_business_1_4_3,
+  'business:1:4:4': note_business_1_4_4,
+  'business:1:4:5': note_business_1_4_5,
+  'business:1:4:6': note_business_1_4_6,
+  'business:1:4:7': note_business_1_4_7,
+  'business:1:4:8': note_business_1_4_8,
+  'business:1:4:9': note_business_1_4_9,
+  'business:1:4:10': note_business_1_4_10,
+  'business:1:4:11': note_business_1_4_11,
+  'business:1:5:0': note_business_1_5_0,
+  'business:1:5:1': note_business_1_5_1,
+  'business:1:5:2': note_business_1_5_2,
+  'business:1:5:3': note_business_1_5_3,
+  'business:1:5:4': note_business_1_5_4,
+  'business:1:5:5': note_business_1_5_5,
+  'business:1:5:6': note_business_1_5_6,
+  'business:1:5:7': note_business_1_5_7,
+  'business:2:6:0': note_business_2_6_0,
+  'business:2:6:1': note_business_2_6_1,
+  'business:2:6:2': note_business_2_6_2,
+  'business:2:6:3': note_business_2_6_3,
+  'business:2:6:4': note_business_2_6_4,
+  'business:2:6:5': note_business_2_6_5,
+  'business:2:6:6': note_business_2_6_6,
+  'business:2:6:7': note_business_2_6_7,
+  'business:2:6:8': note_business_2_6_8,
+  'business:2:7:0': note_business_2_7_0,
+  'business:2:7:1': note_business_2_7_1,
+  'business:2:7:2': note_business_2_7_2,
+  'business:2:7:3': note_business_2_7_3,
+  'business:2:7:4': note_business_2_7_4,
+  'business:2:7:5': note_business_2_7_5,
+  'business:2:7:6': note_business_2_7_6,
+  'business:2:7:7': note_business_2_7_7,
+  'business:2:7:8': note_business_2_7_8,
+  'business:2:7:9': note_business_2_7_9,
+  'business:2:7:10': note_business_2_7_10,
+  'business:2:8:0': note_business_2_8_0,
+  'business:2:8:1': note_business_2_8_1,
+  'business:2:8:2': note_business_2_8_2,
+  'business:2:8:3': note_business_2_8_3,
+  'business:2:8:4': note_business_2_8_4,
+  'business:2:8:5': note_business_2_8_5,
+  'business:2:8:6': note_business_2_8_6,
+  'business:2:8:7': note_business_2_8_7,
+  'business:2:9:0': note_business_2_9_0,
+  'business:2:9:1': note_business_2_9_1,
+  'business:2:9:2': note_business_2_9_2,
+  'business:2:9:3': note_business_2_9_3,
+  'business:2:9:4': note_business_2_9_4,
+  'business:2:9:5': note_business_2_9_5,
+  'business:2:9:6': note_business_2_9_6,
+  'business:2:9:7': note_business_2_9_7,
+  'business:2:9:8': note_business_2_9_8,
+  'business:2:9:9': note_business_2_9_9,
+  'business:2:10:0': note_business_2_10_0,
+  'business:2:10:1': note_business_2_10_1,
+  'business:2:10:2': note_business_2_10_2,
+  'business:2:10:3': note_business_2_10_3,
+  'business:2:10:4': note_business_2_10_4,
+  'business:2:10:5': note_business_2_10_5,
+  'business:2:10:6': note_business_2_10_6,
+  'business:2:10:7': note_business_2_10_7,
+  'business:2:10:8': note_business_2_10_8,
+  'business:2:10:9': note_business_2_10_9,
+  'business:2:10:10': note_business_2_10_10,
+  'business:2:10:11': note_business_2_10_11,
+  'business:2:10:12': note_business_2_10_12,
+  'business:3:11:0': note_business_3_11_0,
+  'business:3:11:1': note_business_3_11_1,
+  'business:3:11:2': note_business_3_11_2,
+  'business:3:11:3': note_business_3_11_3,
+  'business:3:11:4': note_business_3_11_4,
+  'business:3:11:5': note_business_3_11_5,
+  'business:3:11:6': note_business_3_11_6,
+  'business:3:11:7': note_business_3_11_7,
+  'business:3:11:8': note_business_3_11_8,
+  'business:3:11:9': note_business_3_11_9,
+  'business:3:12:0': note_business_3_12_0,
+  'business:3:12:1': note_business_3_12_1,
+  'business:3:12:2': note_business_3_12_2,
+  'business:3:12:3': note_business_3_12_3,
+  'business:3:12:4': note_business_3_12_4,
+  'business:3:12:5': note_business_3_12_5,
+  'business:3:12:6': note_business_3_12_6,
+  'business:3:12:7': note_business_3_12_7,
+  'business:3:13:0': note_business_3_13_0,
+  'business:3:13:1': note_business_3_13_1,
+  'business:3:13:2': note_business_3_13_2,
+  'business:3:13:3': note_business_3_13_3,
+  'business:3:13:4': note_business_3_13_4,
+  'business:3:13:5': note_business_3_13_5,
+  'business:3:13:6': note_business_3_13_6,
+  'business:3:13:7': note_business_3_13_7,
+  'business:3:13:8': note_business_3_13_8,
+  'business:3:13:9': note_business_3_13_9,
+  'business:3:13:10': note_business_3_13_10,
+  'business:3:14:0': note_business_3_14_0,
+  'business:3:14:1': note_business_3_14_1,
+  'business:3:14:2': note_business_3_14_2,
+  'business:3:14:3': note_business_3_14_3,
+  'business:3:14:4': note_business_3_14_4,
+  'business:3:14:5': note_business_3_14_5,
+  'business:3:14:6': note_business_3_14_6,
+  'business:3:14:7': note_business_3_14_7,
+  'business:3:15:0': note_business_3_15_0,
+  'business:3:15:1': note_business_3_15_1,
+  'business:3:15:2': note_business_3_15_2,
+  'business:3:15:3': note_business_3_15_3,
+  'business:3:15:4': note_business_3_15_4,
+  'business:3:15:5': note_business_3_15_5,
+  'business:3:15:6': note_business_3_15_6,
+  'business:3:15:7': note_business_3_15_7,
+  'business:3:16:0': note_business_3_16_0,
+  'business:3:16:1': note_business_3_16_1,
+  'business:3:16:2': note_business_3_16_2,
+  'business:3:16:3': note_business_3_16_3,
+  'business:3:16:4': note_business_3_16_4,
+  'business:3:16:5': note_business_3_16_5,
+  'business:3:16:6': note_business_3_16_6,
+  'business:3:16:7': note_business_3_16_7,
+  'business:4:17:0': note_business_4_17_0,
+  'business:4:17:1': note_business_4_17_1,
+  'business:4:17:2': note_business_4_17_2,
+  'business:4:17:3': note_business_4_17_3,
+  'business:4:17:4': note_business_4_17_4,
+  'business:4:17:5': note_business_4_17_5,
+  'business:4:17:6': note_business_4_17_6,
+  'business:4:17:7': note_business_4_17_7,
+  'business:4:17:8': note_business_4_17_8,
+  'business:4:17:9': note_business_4_17_9,
+  'business:4:18:0': note_business_4_18_0,
+  'business:4:18:1': note_business_4_18_1,
+  'business:4:18:2': note_business_4_18_2,
+  'business:4:18:3': note_business_4_18_3,
+  'business:4:18:4': note_business_4_18_4,
+  'business:4:18:5': note_business_4_18_5,
+  'business:4:18:6': note_business_4_18_6,
+  'business:4:18:7': note_business_4_18_7,
+  'business:4:18:8': note_business_4_18_8,
+  'business:4:19:0': note_business_4_19_0,
+  'business:4:19:1': note_business_4_19_1,
+  'business:4:19:2': note_business_4_19_2,
+  'business:4:19:3': note_business_4_19_3,
+  'business:4:19:4': note_business_4_19_4,
+  'business:4:19:5': note_business_4_19_5,
+  'business:4:19:6': note_business_4_19_6,
+  'business:4:19:7': note_business_4_19_7,
+  'business:4:20:0': note_business_4_20_0,
+  'business:4:20:1': note_business_4_20_1,
+  'business:4:20:2': note_business_4_20_2,
+  'business:4:20:3': note_business_4_20_3,
+  'business:4:20:4': note_business_4_20_4,
+  'business:4:20:5': note_business_4_20_5,
+  'business:4:20:6': note_business_4_20_6,
+  'business:4:20:7': note_business_4_20_7,
+  'business:4:20:8': note_business_4_20_8,
+  'business:4:20:9': note_business_4_20_9,
+
     'mathematics:1:1:0': note_mathematics_1_1_0,
     'mathematics:1:1:1': note_mathematics_1_1_1,
     'mathematics:1:1:2': note_mathematics_1_1_2,
@@ -963,8 +1672,244 @@ export const seedNotes = {
     // WCH16
     // Scaffolded Notes
     'accounting:1:1:0': note_accounting_1_1_0,
-    'business:1:1:0': note_business_1_1_0,
     'economics:1:1:0': note_economics_1_1_0,
+    'economics:1:1:1': note_economics_1_1_1,
+    'economics:1:1:2': note_economics_1_1_2,
+    'economics:1:1:3': note_economics_1_1_3,
+    'economics:1:1:4': note_economics_1_1_4,
+    'economics:1:1:5': note_economics_1_1_5,
+    'economics:1:1:6': note_economics_1_1_6,
+    'economics:1:1:7': note_economics_1_1_7,
+    'economics:1:1:8': note_economics_1_1_8,
+    'economics:1:1:9': note_economics_1_1_9,
+    'economics:1:1:10': note_economics_1_1_10,
+    'economics:1:1:11': note_economics_1_1_11,
+    'economics:1:2:0': note_economics_1_2_0,
+    'economics:1:2:1': note_economics_1_2_1,
+    'economics:1:2:2': note_economics_1_2_2,
+    'economics:1:2:3': note_economics_1_2_3,
+    'economics:1:2:4': note_economics_1_2_4,
+    'economics:1:2:5': note_economics_1_2_5,
+    'economics:1:2:6': note_economics_1_2_6,
+    'economics:1:2:7': note_economics_1_2_7,
+    'economics:1:2:8': note_economics_1_2_8,
+    'economics:1:2:9': note_economics_1_2_9,
+    'economics:1:3:0': note_economics_1_3_0,
+    'economics:1:3:1': note_economics_1_3_1,
+    'economics:1:3:2': note_economics_1_3_2,
+    'economics:1:3:3': note_economics_1_3_3,
+    'economics:1:3:4': note_economics_1_3_4,
+    'economics:1:3:5': note_economics_1_3_5,
+    'economics:1:4:0': note_economics_1_4_0,
+    'economics:1:4:1': note_economics_1_4_1,
+    'economics:1:4:2': note_economics_1_4_2,
+    'economics:1:4:3': note_economics_1_4_3,
+    'economics:1:4:4': note_economics_1_4_4,
+    'economics:1:4:5': note_economics_1_4_5,
+    'economics:1:5:0': note_economics_1_5_0,
+    'economics:1:5:1': note_economics_1_5_1,
+    'economics:1:5:2': note_economics_1_5_2,
+    'economics:1:5:3': note_economics_1_5_3,
+    'economics:1:5:4': note_economics_1_5_4,
+    'economics:1:5:5': note_economics_1_5_5,
+    'economics:1:5:6': note_economics_1_5_6,
+    'economics:1:5:7': note_economics_1_5_7,
+    'economics:1:5:8': note_economics_1_5_8,
+    'economics:1:5:9': note_economics_1_5_9,
+    'economics:1:6:0': note_economics_1_6_0,
+    'economics:1:6:1': note_economics_1_6_1,
+    'economics:1:6:2': note_economics_1_6_2,
+    'economics:1:6:3': note_economics_1_6_3,
+    'economics:1:6:4': note_economics_1_6_4,
+    'economics:1:6:5': note_economics_1_6_5,
+    'economics:1:6:6': note_economics_1_6_6,
+    'economics:1:6:7': note_economics_1_6_7,
+    'economics:1:6:8': note_economics_1_6_8,
+    'economics:2:7:0': note_economics_2_7_0,
+    'economics:2:7:1': note_economics_2_7_1,
+    'economics:2:7:2': note_economics_2_7_2,
+    'economics:2:7:3': note_economics_2_7_3,
+    'economics:2:7:4': note_economics_2_7_4,
+    'economics:2:7:5': note_economics_2_7_5,
+    'economics:2:7:6': note_economics_2_7_6,
+    'economics:2:7:7': note_economics_2_7_7,
+    'economics:2:7:8': note_economics_2_7_8,
+    'economics:2:7:9': note_economics_2_7_9,
+    'economics:2:7:10': note_economics_2_7_10,
+    'economics:2:7:11': note_economics_2_7_11,
+    'economics:2:7:12': note_economics_2_7_12,
+    'economics:2:7:13': note_economics_2_7_13,
+    'economics:2:7:14': note_economics_2_7_14,
+    'economics:2:8:0': note_economics_2_8_0,
+    'economics:2:8:1': note_economics_2_8_1,
+    'economics:2:8:2': note_economics_2_8_2,
+    'economics:2:8:3': note_economics_2_8_3,
+    'economics:2:8:4': note_economics_2_8_4,
+    'economics:2:8:5': note_economics_2_8_5,
+    'economics:2:8:6': note_economics_2_8_6,
+    'economics:2:8:7': note_economics_2_8_7,
+    'economics:2:8:8': note_economics_2_8_8,
+    'economics:2:9:0': note_economics_2_9_0,
+    'economics:2:9:1': note_economics_2_9_1,
+    'economics:2:9:2': note_economics_2_9_2,
+    'economics:2:9:3': note_economics_2_9_3,
+    'economics:2:9:4': note_economics_2_9_4,
+    'economics:2:10:0': note_economics_2_10_0,
+    'economics:2:10:1': note_economics_2_10_1,
+    'economics:2:10:2': note_economics_2_10_2,
+    'economics:2:10:3': note_economics_2_10_3,
+    'economics:2:10:4': note_economics_2_10_4,
+    'economics:2:10:5': note_economics_2_10_5,
+    'economics:2:10:6': note_economics_2_10_6,
+    'economics:2:10:7': note_economics_2_10_7,
+    'economics:2:11:0': note_economics_2_11_0,
+    'economics:2:11:1': note_economics_2_11_1,
+    'economics:2:11:2': note_economics_2_11_2,
+    'economics:2:11:3': note_economics_2_11_3,
+    'economics:2:11:4': note_economics_2_11_4,
+    'economics:2:11:5': note_economics_2_11_5,
+    'economics:2:11:6': note_economics_2_11_6,
+    'economics:2:11:7': note_economics_2_11_7,
+    'economics:2:11:8': note_economics_2_11_8,
+    'economics:2:11:9': note_economics_2_11_9,
+    'economics:2:12:0': note_economics_2_12_0,
+    'economics:2:12:1': note_economics_2_12_1,
+    'economics:2:12:2': note_economics_2_12_2,
+    'economics:2:12:3': note_economics_2_12_3,
+    'economics:2:12:4': note_economics_2_12_4,
+    'economics:2:12:5': note_economics_2_12_5,
+    'economics:2:12:6': note_economics_2_12_6,
+    'economics:2:12:7': note_economics_2_12_7,
+    'economics:2:12:8': note_economics_2_12_8,
+    'economics:2:12:9': note_economics_2_12_9,
+    'economics:2:12:10': note_economics_2_12_10,
+    'economics:2:12:11': note_economics_2_12_11,
+    'economics:2:12:12': note_economics_2_12_12,
+    'economics:3:13:0': note_economics_3_13_0,
+    'economics:3:13:1': note_economics_3_13_1,
+    'economics:3:13:2': note_economics_3_13_2,
+    'economics:3:13:3': note_economics_3_13_3,
+    'economics:3:13:4': note_economics_3_13_4,
+    'economics:3:13:5': note_economics_3_13_5,
+    'economics:3:13:6': note_economics_3_13_6,
+    'economics:3:13:7': note_economics_3_13_7,
+    'economics:3:13:8': note_economics_3_13_8,
+    'economics:3:13:9': note_economics_3_13_9,
+    'economics:3:13:10': note_economics_3_13_10,
+    'economics:3:14:0': note_economics_3_14_0,
+    'economics:3:14:1': note_economics_3_14_1,
+    'economics:3:14:2': note_economics_3_14_2,
+    'economics:3:14:3': note_economics_3_14_3,
+    'economics:3:14:4': note_economics_3_14_4,
+    'economics:3:14:5': note_economics_3_14_5,
+    'economics:3:14:6': note_economics_3_14_6,
+    'economics:3:14:7': note_economics_3_14_7,
+    'economics:3:14:8': note_economics_3_14_8,
+    'economics:3:14:9': note_economics_3_14_9,
+    'economics:3:15:0': note_economics_3_15_0,
+    'economics:3:15:1': note_economics_3_15_1,
+    'economics:3:15:2': note_economics_3_15_2,
+    'economics:3:15:3': note_economics_3_15_3,
+    'economics:3:15:4': note_economics_3_15_4,
+    'economics:3:15:5': note_economics_3_15_5,
+    'economics:3:15:6': note_economics_3_15_6,
+    'economics:3:15:7': note_economics_3_15_7,
+    'economics:3:15:8': note_economics_3_15_8,
+    'economics:3:15:9': note_economics_3_15_9,
+    'economics:3:15:10': note_economics_3_15_10,
+    'economics:3:15:11': note_economics_3_15_11,
+    'economics:3:15:12': note_economics_3_15_12,
+    'economics:3:16:0': note_economics_3_16_0,
+    'economics:3:16:1': note_economics_3_16_1,
+    'economics:3:16:2': note_economics_3_16_2,
+    'economics:3:16:3': note_economics_3_16_3,
+    'economics:3:16:4': note_economics_3_16_4,
+    'economics:3:16:5': note_economics_3_16_5,
+    'economics:3:16:6': note_economics_3_16_6,
+    'economics:3:16:7': note_economics_3_16_7,
+    'economics:3:16:8': note_economics_3_16_8,
+    'economics:3:16:9': note_economics_3_16_9,
+    'economics:3:17:0': note_economics_3_17_0,
+    'economics:3:17:1': note_economics_3_17_1,
+    'economics:3:17:2': note_economics_3_17_2,
+    'economics:3:17:3': note_economics_3_17_3,
+    'economics:3:17:4': note_economics_3_17_4,
+    'economics:3:17:5': note_economics_3_17_5,
+    'economics:3:17:6': note_economics_3_17_6,
+    'economics:3:17:7': note_economics_3_17_7,
+    'economics:3:17:8': note_economics_3_17_8,
+    'economics:3:17:9': note_economics_3_17_9,
+    'economics:4:18:0': note_economics_4_18_0,
+    'economics:4:18:1': note_economics_4_18_1,
+    'economics:4:18:2': note_economics_4_18_2,
+    'economics:4:18:3': note_economics_4_18_3,
+    'economics:4:18:4': note_economics_4_18_4,
+    'economics:4:18:5': note_economics_4_18_5,
+    'economics:4:18:6': note_economics_4_18_6,
+    'economics:4:18:7': note_economics_4_18_7,
+    'economics:4:18:8': note_economics_4_18_8,
+    'economics:4:19:0': note_economics_4_19_0,
+    'economics:4:19:1': note_economics_4_19_1,
+    'economics:4:19:2': note_economics_4_19_2,
+    'economics:4:19:3': note_economics_4_19_3,
+    'economics:4:19:4': note_economics_4_19_4,
+    'economics:4:19:5': note_economics_4_19_5,
+    'economics:4:19:6': note_economics_4_19_6,
+    'economics:4:19:7': note_economics_4_19_7,
+    'economics:4:19:8': note_economics_4_19_8,
+    'economics:4:19:9': note_economics_4_19_9,
+    'economics:4:19:10': note_economics_4_19_10,
+    'economics:4:19:11': note_economics_4_19_11,
+    'economics:4:20:0': note_economics_4_20_0,
+    'economics:4:20:1': note_economics_4_20_1,
+    'economics:4:20:2': note_economics_4_20_2,
+    'economics:4:20:3': note_economics_4_20_3,
+    'economics:4:20:4': note_economics_4_20_4,
+    'economics:4:20:5': note_economics_4_20_5,
+    'economics:4:20:6': note_economics_4_20_6,
+    'economics:4:20:7': note_economics_4_20_7,
+    'economics:4:20:8': note_economics_4_20_8,
+    'economics:4:20:9': note_economics_4_20_9,
+    'economics:4:20:10': note_economics_4_20_10,
+    'economics:4:20:11': note_economics_4_20_11,
+    'economics:4:20:12': note_economics_4_20_12,
+    'economics:4:21:0': note_economics_4_21_0,
+    'economics:4:21:1': note_economics_4_21_1,
+    'economics:4:21:2': note_economics_4_21_2,
+    'economics:4:21:3': note_economics_4_21_3,
+    'economics:4:21:4': note_economics_4_21_4,
+    'economics:4:21:5': note_economics_4_21_5,
+    'economics:4:21:6': note_economics_4_21_6,
+    'economics:4:21:7': note_economics_4_21_7,
+    'economics:4:21:8': note_economics_4_21_8,
+    'economics:4:21:9': note_economics_4_21_9,
+    'economics:4:22:0': note_economics_4_22_0,
+    'economics:4:22:1': note_economics_4_22_1,
+    'economics:4:22:2': note_economics_4_22_2,
+    'economics:4:22:3': note_economics_4_22_3,
+    'economics:4:22:4': note_economics_4_22_4,
+    'economics:4:22:5': note_economics_4_22_5,
+    'economics:4:22:6': note_economics_4_22_6,
+    'economics:4:22:7': note_economics_4_22_7,
+    'economics:4:22:8': note_economics_4_22_8,
+    'economics:4:22:9': note_economics_4_22_9,
+    'economics:4:22:10': note_economics_4_22_10,
+    'economics:4:22:11': note_economics_4_22_11,
+    'economics:4:22:12': note_economics_4_22_12,
+    'economics:4:22:13': note_economics_4_22_13,
+    'economics:4:23:0': note_economics_4_23_0,
+    'economics:4:23:1': note_economics_4_23_1,
+    'economics:4:23:2': note_economics_4_23_2,
+    'economics:4:23:3': note_economics_4_23_3,
+    'economics:4:23:4': note_economics_4_23_4,
+    'economics:4:23:5': note_economics_4_23_5,
+    'economics:4:23:6': note_economics_4_23_6,
+    'economics:4:23:7': note_economics_4_23_7,
+    'economics:4:23:8': note_economics_4_23_8,
+    'economics:4:23:9': note_economics_4_23_9,
+    'economics:4:23:10': note_economics_4_23_10,
+    'economics:4:23:11': note_economics_4_23_11,
+    'economics:4:23:12': note_economics_4_23_12,
     // WBI11 — Topic 1: Molecules, Transport & Health
     'biology:1:1:0': note_biology_1_1_0,
     'biology:1:1:1': note_biology_1_1_1,
@@ -1572,6 +2517,86 @@ export const seedNotes = {
     'physics:5:33:3': note_physics_5_33_3,
     'physics:5:33:4': note_physics_5_33_4,
     'physics:5:33:5': note_physics_5_33_5,
+    'cae:1:1:0': note_cae_1_1_0,
+    'cae:1:1:1': note_cae_1_1_1,
+    'cae:1:1:2': note_cae_1_1_2,
+    'cae:1:1:3': note_cae_1_1_3,
+    'cae:1:2:0': note_cae_1_2_0,
+    'cae:1:2:1': note_cae_1_2_1,
+    'cae:1:2:2': note_cae_1_2_2,
+    'cae:1:2:3': note_cae_1_2_3,
+    'cae:1:3:0': note_cae_1_3_0,
+    'cae:1:3:1': note_cae_1_3_1,
+    'cae:1:3:2': note_cae_1_3_2,
+    'cae:1:3:3': note_cae_1_3_3,
+    'cae:1:3:4': note_cae_1_3_4,
+    'cae:1:3:5': note_cae_1_3_5,
+    'cae:2:4:0': note_cae_2_4_0,
+    'cae:2:4:1': note_cae_2_4_1,
+    'cae:2:4:2': note_cae_2_4_2,
+    'cae:2:5:0': note_cae_2_5_0,
+    'cae:2:5:1': note_cae_2_5_1,
+    'cae:2:5:2': note_cae_2_5_2,
+    'cae:2:5:3': note_cae_2_5_3,
+    'cae:2:6:0': note_cae_2_6_0,
+    'cae:2:6:1': note_cae_2_6_1,
+    'cae:2:6:2': note_cae_2_6_2,
+    'cae:2:6:3': note_cae_2_6_3,
+    'cae:3:7:0': note_cae_3_7_0,
+    'cae:3:7:1': note_cae_3_7_1,
+    'cae:3:7:2': note_cae_3_7_2,
+    'cae:3:7:3': note_cae_3_7_3,
+    'cae:3:8:0': note_cae_3_8_0,
+    'cae:3:8:1': note_cae_3_8_1,
+    'cae:3:8:2': note_cae_3_8_2,
+    'cae:3:8:3': note_cae_3_8_3,
+    'cae:4:9:0': note_cae_4_9_0,
+    'cae:4:9:1': note_cae_4_9_1,
+    'cae:4:9:2': note_cae_4_9_2,
+    'cae:4:9:3': note_cae_4_9_3,
+    'cae:4:10:0': note_cae_4_10_0,
+    'cae:4:10:1': note_cae_4_10_1,
+    'cae:4:10:2': note_cae_4_10_2,
+    'cae:4:10:3': note_cae_4_10_3,
+    'cpe:1:1:0': note_cpe_1_1_0,
+    'cpe:1:1:1': note_cpe_1_1_1,
+    'cpe:1:1:2': note_cpe_1_1_2,
+    'cpe:1:1:3': note_cpe_1_1_3,
+    'cpe:1:2:0': note_cpe_1_2_0,
+    'cpe:1:2:1': note_cpe_1_2_1,
+    'cpe:1:2:2': note_cpe_1_2_2,
+    'cpe:1:3:0': note_cpe_1_3_0,
+    'cpe:1:3:1': note_cpe_1_3_1,
+    'cpe:1:3:2': note_cpe_1_3_2,
+    'cpe:1:3:3': note_cpe_1_3_3,
+    'cpe:1:3:4': note_cpe_1_3_4,
+    'cpe:1:3:5': note_cpe_1_3_5,
+    'cpe:2:4:0': note_cpe_2_4_0,
+    'cpe:2:4:1': note_cpe_2_4_1,
+    'cpe:2:4:2': note_cpe_2_4_2,
+    'cpe:2:5:0': note_cpe_2_5_0,
+    'cpe:2:5:1': note_cpe_2_5_1,
+    'cpe:2:5:2': note_cpe_2_5_2,
+    'cpe:2:5:3': note_cpe_2_5_3,
+    'cpe:2:6:0': note_cpe_2_6_0,
+    'cpe:2:6:1': note_cpe_2_6_1,
+    'cpe:2:6:2': note_cpe_2_6_2,
+    'cpe:2:6:3': note_cpe_2_6_3,
+    'cpe:3:7:0': note_cpe_3_7_0,
+    'cpe:3:7:1': note_cpe_3_7_1,
+    'cpe:3:7:2': note_cpe_3_7_2,
+    'cpe:3:7:3': note_cpe_3_7_3,
+    'cpe:3:8:0': note_cpe_3_8_0,
+    'cpe:3:8:1': note_cpe_3_8_1,
+    'cpe:3:8:2': note_cpe_3_8_2,
+    'cpe:3:8:3': note_cpe_3_8_3,
+    'cpe:4:9:0': note_cpe_4_9_0,
+    'cpe:4:9:1': note_cpe_4_9_1,
+    'cpe:4:9:2': note_cpe_4_9_2,
+    'cpe:4:10:0': note_cpe_4_10_0,
+    'cpe:4:10:1': note_cpe_4_10_1,
+    'cpe:4:10:2': note_cpe_4_10_2,
+    'cpe:4:10:3': note_cpe_4_10_3,
 };
 
 export function getSeedNote(noteId) {

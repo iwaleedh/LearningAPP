@@ -2,67 +2,25 @@ export const note_physics_5_27_0 = {
   blocks: [
     { id: 'obj-1', type: 'objective', data: { text: "Understand Inverse Square Law of Flux" } },
     { id: 'head-1', type: 'heading', data: { text: "Inverse Square Law of Flux", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Inverse Square Law of Flux Inverse Square Law of Flux The moment the light leaves the surface of the star, it begins to spread out uniformly through a spherical shell" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "Light sources which are further away appear fainter because the emitted light has been spread over a greater area The surface area of a sphere is equal to 4 π r The radius r of this sphere is equal to the distance d between the star and the Earth" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "Therefore the radiation received at Earth has been spread over an area of 4 π d The inverse square law of flux can therefore be calculated using: F =L 4 πd2" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "Where: F = radiant flux intensity, or observed intensity on Earth (W m ) L = luminosity of the source (W) d = distance between the star and the Earth (m)" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "This equation assumes: The power from the star radiates uniformly through space No radiation is absorbed between the star and the Earth This equation tells us:" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "For a given star, the luminosity is constant The radiant flux follows an inverse square law The greater the radiant flux (larger F) measured, the closer the star is to the Earth (smaller d)2" } },
-    { id: 'para-8', type: 'paragraph', data: { text: "2 Inverse square law; when the light is twice as far away, it has spread over four times the area, hence the intensity is four times smaller Worked Example" } },
-    { id: 'para-9', type: 'paragraph', data: { text: "A star has a luminosity that is known to be 4.8 × 10  W. A scientist observing this star finds that the radiant flux intensity of light received on Earth from the star is 2.6 nW m . Determine the distance of the star from Earth." } },
-    { id: 'para-10', type: 'paragraph', data: { text: "Answer: Step 1: Write down the known quantities Luminosity, L = 4.8 × 10  W Radiant flux intensity, F = 2.6 nW m  = 2.6 × 10  W m" } },
-    { id: 'para-11', type: 'paragraph', data: { text: "Step 2: Write down the inverse square law of flux F =L 4 πd2 Step 3: Rearrange for distance d, and calculate" } },,
-    {
-      "id": "svg-gen-27-4-1",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#fef9e7" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Hertzsprung-Russell (HR) Diagram</text>
-  <line x1="50" y1="170" x2="350" y2="170" stroke="#333" stroke-width="2"/>
-  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="2"/>
-  <path d="M 80 40 L 320 160" stroke="#bdc3c7" stroke-width="20" stroke-linecap="round" opacity="0.5"/>
-  <circle cx="100" cy="50" r="6" fill="#3498db"/>
-  <circle cx="150" cy="80" r="4" fill="#ecf0f1" stroke="#333"/>
-  <circle cx="200" cy="110" r="5" fill="#f1c40f"/>
-  <circle cx="250" cy="130" r="4" fill="#e67e22"/>
-  <circle cx="300" cy="150" r="3" fill="#e74c3c"/>
-  <circle cx="300" cy="50" r="12" fill="#e74c3c"/>
-  <circle cx="100" cy="150" r="2" fill="#3498db"/>
-  <text x="315" y="45" font-family="sans-serif" font-size="10" fill="#c0392b">Red Giants</text>
-  <text x="200" y="100" font-family="sans-serif" font-size="10" fill="#333">Main Sequence</text>
-  <text x="70" y="165" font-family="sans-serif" font-size="10" fill="#2980b9">White Dwarfs</text>
-  <text x="20" y="100" font-family="sans-serif" font-size="12" transform="rotate(-90 20 100)" text-anchor="middle">Luminosity</text>
-  <text x="200" y="190" font-family="sans-serif" font-size="12" text-anchor="middle">Temperature (Decreasing →)</text>
-</svg>`,
-        "caption": "Diagram demonstrating concepts in Topic 27"
-      }
-    },
-    {
-      "id": "svg-gen-27-4-2",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#eef2f5" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Parallax &amp; Distance</text>
-  <circle cx="200" cy="100" r="8" fill="#f1c40f"/>
-  <text x="200" y="85" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#333">Sun</text>
-  <ellipse cx="200" cy="100" rx="60" ry="15" fill="none" stroke="#7f8c8d" stroke-dasharray="4,4"/>
-  <circle cx="140" cy="100" r="4" fill="#3498db"/>
-  <circle cx="260" cy="100" r="4" fill="#3498db"/>
-  <circle cx="200" cy="170" r="3" fill="#e74c3c"/>
-  <line x1="140" y1="100" x2="200" y2="170" stroke="#95a5a6" stroke-width="1"/>
-  <line x1="260" y1="100" x2="200" y2="170" stroke="#95a5a6" stroke-width="1"/>
-  <line x1="200" y1="100" x2="200" y2="170" stroke="#34495e" stroke-width="1" stroke-dasharray="2,2"/>
-  <path d="M 195 160 Q 200 155 205 160" fill="none" stroke="#e74c3c" stroke-width="1"/>
-  <text x="210" y="155" font-family="sans-serif" font-size="10" fill="#e74c3c">p</text>
-  <text x="200" y="185" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#333">Nearby Star</text>
-</svg>`,
-        "caption": "Further illustration for Topic 27"
-      }
-    }
-  
-
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "Inverse Square Law of Flux Inverse Square Law of Flux The moment the light leaves the surface of the star, it begins to spread out uniformly through a spherical shell" }] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "Light sources which are further away appear fainter because the emitted light has been spread over a greater area The surface area of a sphere is equal to 4 π r The radius r of this sphere is equal to the distance d between the star and the Earth" }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "Therefore the radiation received at Earth has been spread over an area of 4 π d The inverse square law of flux can therefore be calculated using: F =L 4 πd2" }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "Where: F = radiant flux intensity, or observed intensity on Earth (W m ) L = <strong>luminosity</strong> of the source (W) d = distance between the star and the Earth (m)" }] } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "This equation assumes: The power from the star radiates uniformly through space No radiation is absorbed between the star and the Earth This equation tells us:" }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [{ text: "For a given star, the <strong>luminosity</strong> is constant The radiant flux follows an inverse square law The greater the radiant flux (larger F) measured, the closer the star is to the Earth (smaller d)2" }] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [{ text: "2 Inverse square law; when the light is twice as far away, it has spread over four times the area, hence the intensity is four times smaller Worked Example" }] } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [
+      { text: "A star has a <strong>luminosity</strong> that is known to be 4.8 × 10  W." },
+      { text: "A scientist observing this star finds that the radiant flux intensity of light received on Earth from the star is 2.6 nW m." },
+      { text: "Determine the distance of the star from Earth." }
+    ] } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "Answer: Step 1: Write down the known quantities <strong>Luminosity</strong>, L = 4.8 × 10  W Radiant flux intensity, F = 2.6 nW m  = 2.6 × 10  W m" }] } },
+    { id: 'para-11', type: 'list', data: { style: 'bullet', items: [{ text: "Step 2: Write down the inverse square law of flux F =L 4 πd2 Step 3: Rearrange for distance d, and calculate" }] } },,
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox=\'0 0 400 180\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'400\' height=\'180\' fill=\'#0d1b2a\' rx=\'8\'/><text x=\'200\' y=\'18\' font-family=\'sans-serif\' font-size=\'13\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'#ecf0f1\'>Inverse Square Law of Flux: F = L / 4&#960;d&#178;</text><circle cx=\'75\' cy=\'95\' r=\'18\' fill=\'#f9e79f\' stroke=\'#f39c12\' stroke-width=\'2\'/><text x=\'75\' y=\'92\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#7d6608\'>Star</text><text x=\'75\' y=\'103\' font-family=\'sans-serif\' font-size=\'8\' text-anchor=\'middle\' fill=\'#7d6608\'>L (W)</text><line x1=\'93\' y1=\'95\' x2=\'180\' y2=\'95\' stroke=\'#f39c12\' stroke-width=\'1.5\' stroke-dasharray=\'4,2\'/><line x1=\'93\' y1=\'95\' x2=\'180\' y2=\'60\' stroke=\'#f39c12\' stroke-width=\'1\' stroke-dasharray=\'3,2\'/><line x1=\'93\' y1=\'95\' x2=\'180\' y2=\'130\' stroke=\'#f39c12\' stroke-width=\'1\' stroke-dasharray=\'3,2\'/><rect x=\'180\' y=\'55\' width=\'12\' height=\'80\' fill=\'#aed6f1\' fill-opacity=\'0.5\' stroke=\'#2980b9\' stroke-width=\'1.5\'/><text x=\'186\' y=\'50\' font-family=\'sans-serif\' font-size=\'8\' text-anchor=\'middle\' fill=\'#2980b9\'>Area A&#8321;</text><text x=\'120\' y=\'88\' font-family=\'sans-serif\' font-size=\'8\' text-anchor=\'middle\' fill=\'#ecf0f1\'>d</text><line x1=\'93\' y1=\'95\' x2=\'310\' y2=\'95\' stroke=\'#e74c3c\' stroke-width=\'1.5\' stroke-dasharray=\'4,2\'/><line x1=\'93\' y1=\'95\' x2=\'310\' y2=\'30\' stroke=\'#e74c3c\' stroke-width=\'1\' stroke-dasharray=\'3,2\'/><line x1=\'93\' y1=\'95\' x2=\'310\' y2=\'160\' stroke=\'#e74c3c\' stroke-width=\'1\' stroke-dasharray=\'3,2\'/><rect x=\'310\' y=\'25\' width=\'18\' height=\'140\' fill=\'#fadbd8\' fill-opacity=\'0.5\' stroke=\'#e74c3c\' stroke-width=\'1.5\'/><text x=\'319\' y=\'20\' font-family=\'sans-serif\' font-size=\'8\' text-anchor=\'middle\' fill=\'#e74c3c\'>Area A&#8322;</text><text x=\'200\' y=\'92\' font-family=\'sans-serif\' font-size=\'8\' text-anchor=\'middle\' fill=\'#ecf0f1\'>2d</text><text x=\'65\' y=\'160\' font-family=\'sans-serif\' font-size=\'9\' fill=\'#ecf0f1\'>F&#8321; &#8594; 4&#215;F&#8322;</text><text x=\'175\' y=\'160\' font-family=\'sans-serif\' font-size=\'9\' fill=\'#2980b9\'>at d: F=L/4&#960;d&#178;</text><text x=\'305\' y=\'170\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'end\' fill=\'#e74c3c\'>at 2d: F=L/16&#960;d&#178;</text></svg>', caption: 'Inverse square law of flux: light spreads over 4× the area when distance doubles, so intensity drops to ¼' }, terms: [] },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox=\'0 0 400 180\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'400\' height=\'180\' fill=\'#f8f9fa\' rx=\'8\'/><text x=\'200\' y=\'18\' font-family=\'sans-serif\' font-size=\'13\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'#333\'>Flux vs Distance Graph: F &#8733; 1/d&#178;</text><line x1=\'55\' y1=\'150\' x2=\'375\' y2=\'150\' stroke=\'#333\' stroke-width=\'2\'/><line x1=\'55\' y1=\'150\' x2=\'55\' y2=\'20\' stroke=\'#333\' stroke-width=\'2\'/><text x=\'215\' y=\'167\' font-family=\'sans-serif\' font-size=\'10\' text-anchor=\'middle\' fill=\'#555\'>Distance d (m)</text><text x=\'18\' y=\'90\' font-family=\'sans-serif\' font-size=\'10\' text-anchor=\'middle\' fill=\'#555\' transform=\'rotate(-90 18 90)\'>Flux F (W m&#8315;&#178;)</text><path d=\'M 65 25 C 75 30 90 48 115 75 C 145 108 185 133 240 145 C 290 151 350 152 375 152\' fill=\'none\' stroke=\'#e74c3c\' stroke-width=\'2.5\'/><text x=\'335\' y=\'148\' font-family=\'sans-serif\' font-size=\'9\' fill=\'#c0392b\'>F &#8733; 1/d&#178;</text><line x1=\'115\' y1=\'75\' x2=\'115\' y2=\'150\' stroke=\'#2980b9\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><line x1=\'55\' y1=\'75\' x2=\'115\' y2=\'75\' stroke=\'#2980b9\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><text x=\'115\' y=\'158\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#2980b9\'>d</text><text x=\'40\' y=\'78\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'end\' fill=\'#2980b9\'>F</text><line x1=\'185\' y1=\'133\' x2=\'185\' y2=\'150\' stroke=\'#27ae60\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><line x1=\'55\' y1=\'133\' x2=\'185\' y2=\'133\' stroke=\'#27ae60\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><text x=\'185\' y=\'158\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#27ae60\'>2d</text><text x=\'40\' y=\'136\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'end\' fill=\'#27ae60\'>F/4</text><text x=\'200\' y=\'65\' font-family=\'sans-serif\' font-size=\'10\' text-anchor=\'middle\' fill=\'#555\'>F = L / 4&#960;d&#178;</text></svg>', caption: 'Radiant flux F decreases with the square of distance from a star — plotting F vs 1/d² gives a straight line through the origin' }, terms: [] },
+    { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox=\'0 0 400 200\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'400\' height=\'200\' fill=\'#0d1b2a\' rx=\'8\'/><circle cx=\'60\' cy=\'100\' r=\'16\' fill=\'#f9e79f\' stroke=\'#f39c12\' stroke-width=\'2\'/><path d=\'M 82 56 A 110 110 0 0 1 82 144\' fill=\'none\' stroke=\'#aed6f1\' stroke-width=\'2\' stroke-dasharray=\'5,3\'/><path d=\'M 82 22 A 145 145 0 0 1 82 178\' fill=\'none\' stroke=\'#e74c3c\' stroke-width=\'2\' stroke-dasharray=\'5,3\'/><text x=\'200\' y=\'95\' font-family=\'sans-serif\' font-size=\'12\' text-anchor=\'middle\' fill=\'#aed6f1\'>d &#8594; flux F</text><text x=\'200\' y=\'115\' font-family=\'sans-serif\' font-size=\'12\' text-anchor=\'middle\' fill=\'#e74c3c\'>2d &#8594; flux F/4</text></svg>', caption: 'Flux spreads over 4× the area at double the distance, so F drops to ¼' } },
+    { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Finding Star Distance', text: 'Given: L = 4.8 × 10²⁶ W, F = 2.6 × 10⁻⁹ W m⁻²<br>Rearrange F = L / 4πd² → d² = L / 4πF<br>d² = 4.8×10²⁶ / (4π × 2.6×10⁻⁹) = 1.47 × 10³⁴ m²<br>d = √(1.47 × 10³⁴) ≈ <strong>1.21 × 10¹⁷ m</strong>' } },
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Comparing Flux at Two Distances', text: 'Use the ratio form: F₁/F₂ = d₂²/d₁² — no need to know L.<br>Doubling d → F drops to ¼; tripling d → F drops to 1/9.<br>A graph of F against 1/d² gives a straight line through the origin if the inverse square law holds.' } },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Inverse Square Law of Flux' }], summaryText: '', ready: true },
   evidence: [],

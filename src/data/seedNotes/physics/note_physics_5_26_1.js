@@ -1,58 +1,32 @@
 export const note_physics_5_26_1 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Stefan-Boltzmann Law" } },
-    { id: 'head-1', type: 'heading', data: { text: "Stefan-Boltzmann Law", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Stefan-Boltzmann Law Stefan-Boltzmann Law An objects luminosity depends on two factors: Its surface temperature" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "Its surface area The relationship between these is known as the Stefan-Boltzmann Law, which states: The total energy emitted by a black body per unit area per second is proportional to the fourth power of the absolute temperature of the body" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "So, L ∝ AT The Stefan-Boltzmann Law equation is: L = σ AT Where:" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "L = luminosity of the star (W) A = surface area of the star σ = the Stefan-Boltzmann constant T = surface temperature of the star (K)" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "The surface area of a star (or other spherical object) can be calculated using: A =4 π r Where: r = radius of the star4" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "4 2 Worked Example A camel has a body temperature of 40°C and a surface area of 16 m . The peak" } },
-    { id: 'para-8', type: 'paragraph', data: { text: "wavelength of the emitted spectrum from the camel is λ  = 8.6 × 10  m. Calculate the total power radiated by the camel." } },
-    { id: 'para-9', type: 'paragraph', data: { text: "Answer: Step 1: List the known quantities Surface area, A = 16 m Temperature (in K), T = 40 + 273 = 313 K" } },
-    { id: 'para-10', type: 'paragraph', data: { text: "Stefan-Boltzmann constant, σ = 5.67 × 10  W m  K Step 2: Write down the Stefan-Boltzmann equation2 max–6 2" } },
-    { id: 'para-11', type: 'paragraph', data: { text: "L = σAT Step 3: Substitute in the values L = (5.67 × 10 ) × 16 × 313 = 8707 W Step 4: Write the answer to correct significant figures and include units" } },,
-    {
-      "id": "svg-gen-26-2-1",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#e8f4f8" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Black Body Radiation Curve</text>
-  <line x1="50" y1="170" x2="350" y2="170" stroke="#333" stroke-width="2"/>
-  <line x1="50" y1="170" x2="50" y2="30" stroke="#333" stroke-width="2"/>
-  <path d="M 50 170 Q 80 20 150 120 T 350 165" fill="none" stroke="#8e44ad" stroke-width="3"/>
-  <path d="M 50 170 Q 120 50 180 140 T 350 168" fill="none" stroke="#c0392b" stroke-width="3"/>
-  <text x="120" y="50" font-family="sans-serif" font-size="10" fill="#8e44ad">6000 K</text>
-  <text x="180" y="110" font-family="sans-serif" font-size="10" fill="#c0392b">4000 K</text>
-  <text x="20" y="100" font-family="sans-serif" font-size="12" transform="rotate(-90 20 100)" text-anchor="middle">Intensity</text>
-  <text x="200" y="190" font-family="sans-serif" font-size="12" text-anchor="middle">Wavelength (λ)</text>
-</svg>`,
-        "caption": "Diagram demonstrating concepts in Topic 26"
-      }
-    },
-    {
-      "id": "svg-gen-26-2-2",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#1a1a2e" rx="10"/>
-  <text x="200" y="25" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#fff">Luminosity &amp; Stefan-Boltzmann</text>
-  <circle cx="200" cy="110" r="40" fill="#f1c40f">
-    <animate attributeName="r" values="38;42;38" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="200" cy="110" r="50" fill="none" stroke="#f39c12" stroke-width="2" stroke-dasharray="5,5"/>
-  <circle cx="200" cy="110" r="70" fill="none" stroke="#e67e22" stroke-width="1" stroke-dasharray="2,8"/>
-  <text x="200" y="115" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333">Star</text>
-  <text x="50" y="180" font-family="sans-serif" font-size="14" fill="#fff">L = σ A T⁴</text>
-</svg>`,
-        "caption": "Further illustration for Topic 26"
-      }
-    }
+    { id: 'obj-1', type: 'objective', data: { text: "Understand <strong>Stefan-Boltzmann Law</strong>" } },
+    { id: 'head-1', type: 'heading', data: { text: "<strong>Stefan-Boltzmann Law</strong>", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Stefan-Boltzmann Law</strong> <strong>Stefan-Boltzmann Law</strong> An objects <strong>luminosity</strong> depends on two factors: Its surface temperature" }] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "Its surface area The relationship between these is known as the <strong>Stefan-Boltzmann Law</strong>, which states: The total energy emitted by a black body per unit area per second is proportional to the fourth power of the absolute temperature of the body" }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "So, L ∝ AT The <strong>Stefan-Boltzmann Law</strong> equation is: L = σ AT Where:" }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "L = <strong>luminosity</strong> of the star (W) A = surface area of the star σ = the Stefan-Boltzmann constant T = surface temperature of the star (K)" }] } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "The surface area of a star (or other spherical object) can be calculated using: A =4 π r Where: r = radius of the star4" }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
+      { text: "4 2 Worked Example A camel has a body temperature of 40°C and a surface area of 16 m." },
+      { text: "The peak." }
+    ] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [
+      { text: "wavelength of the emitted spectrum from the camel is λ  = 8.6 × 10  m." },
+      { text: "Calculate the total power radiated by the camel." }
+    ] } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [{ text: "Answer: Step 1: List the known quantities Surface area, A = 16 m Temperature (in K), T = 40 + 273 = 313 K" }] } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "Stefan-Boltzmann constant, σ = 5.67 × 10  W m  K Step 2: Write down the Stefan-Boltzmann equation2 max–6 2" }] } },
+    { id: 'para-11', type: 'list', data: { style: 'bullet', items: [{ text: "L = σAT Step 3: Substitute in the values L = (5.67 × 10 ) × 16 × 313 = 8707 W Step 4: Write the answer to correct significant figures and include units" }] } },,
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox=\'0 0 400 180\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'400\' height=\'180\' fill=\'#f8f9fa\' rx=\'8\'/><text x=\'200\' y=\'18\' font-family=\'sans-serif\' font-size=\'13\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'#333\'><strong>Stefan-Boltzmann Law</strong>: L = &#963;AT&#8308;</text><circle cx=\'130\' cy=\'95\' r=\'45\' fill=\'#f9e79f\' stroke=\'#f39c12\' stroke-width=\'2\'/><text x=\'130\' y=\'90\' font-family=\'sans-serif\' font-size=\'11\' text-anchor=\'middle\' fill=\'#7d6608\' font-weight=\'bold\'>Star</text><text x=\'130\' y=\'106\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#7d6608\'>radius r</text><line x1=\'130\' y1=\'95\' x2=\'175\' y2=\'95\' stroke=\'#555\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><text x=\'152\' y=\'89\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#555\'>r</text><line x1=\'175\' y1=\'50\' x2=\'195\' y2=\'35\' stroke=\'#e74c3c\' stroke-width=\'2\'/><line x1=\'175\' y1=\'95\' x2=\'200\' y2=\'95\' stroke=\'#e74c3c\' stroke-width=\'2\'/><line x1=\'175\' y1=\'140\' x2=\'195\' y2=\'155\' stroke=\'#e74c3c\' stroke-width=\'2\'/><polygon points=\'195,30 200,35 193,38\' fill=\'#e74c3c\'/><polygon points=\'198,90 203,95 198,100\' fill=\'#e74c3c\'/><polygon points=\'193,152 198,157 191,158\' fill=\'#e74c3c\'/><text x=\'215\' y=\'62\' font-family=\'sans-serif\' font-size=\'9\' fill=\'#c0392b\'>radiated</text><text x=\'215\' y=\'74\' font-family=\'sans-serif\' font-size=\'9\' fill=\'#c0392b\'>power</text><rect x=\'240\' y=\'30\' width=\'150\' height=\'120\' fill=\'#eaf3fb\' stroke=\'#2980b9\' stroke-width=\'1.5\' rx=\'5\'/><text x=\'315\' y=\'52\' font-family=\'sans-serif\' font-size=\'12\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'#1a5276\'>L = &#963;AT&#8308;</text><text x=\'315\' y=\'75\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#555\'>A = 4&#960;r&#178; (sphere)</text><text x=\'315\' y=\'92\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#555\'>&#963; = 5.67&#215;10&#8315;&#8312; W m&#8315;&#178; K&#8315;&#8308;</text><text x=\'315\' y=\'112\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#888\'>L &#8733; T&#8308; (double T</text><text x=\'315\' y=\'126\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#888\'>&#8594; 16&#215; power)</text><text x=\'315\' y=\'143\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#888\'>L &#8733; r&#178; (double r</text></svg>', caption: '<strong>Stefan-Boltzmann Law</strong>: total power radiated L = σAT⁴ — <strong>luminosity</strong> scales as the fourth power of temperature' }, terms: [] },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox=\'0 0 400 180\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'400\' height=\'180\' fill=\'#f8f9fa\' rx=\'8\'/><text x=\'200\' y=\'18\' font-family=\'sans-serif\' font-size=\'13\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'#333\'><strong>Luminosity</strong> vs Temperature (Stefan-Boltzmann)</text><line x1=\'55\' y1=\'150\' x2=\'375\' y2=\'150\' stroke=\'#333\' stroke-width=\'2\'/><line x1=\'55\' y1=\'150\' x2=\'55\' y2=\'20\' stroke=\'#333\' stroke-width=\'2\'/><text x=\'215\' y=\'167\' font-family=\'sans-serif\' font-size=\'10\' text-anchor=\'middle\' fill=\'#555\'>Surface Temperature T (K)</text><text x=\'18\' y=\'90\' font-family=\'sans-serif\' font-size=\'10\' text-anchor=\'middle\' fill=\'#555\' transform=\'rotate(-90 18 90)\'><strong>Luminosity</strong> L (W)</text><path d=\'M 55 150 C 80 149 120 145 165 130 C 210 112 250 80 300 35\' fill=\'none\' stroke=\'#e74c3c\' stroke-width=\'2.5\'/><text x=\'305\' y=\'30\' font-family=\'sans-serif\' font-size=\'9\' fill=\'#c0392b\'>L &#8733; T&#8308;</text><line x1=\'165\' y1=\'130\' x2=\'165\' y2=\'150\' stroke=\'#2980b9\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><line x1=\'55\' y1=\'130\' x2=\'165\' y2=\'130\' stroke=\'#2980b9\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><text x=\'165\' y=\'158\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#2980b9\'>T</text><text x=\'40\' y=\'133\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'end\' fill=\'#2980b9\'>L</text><line x1=\'248\' y1=\'82\' x2=\'248\' y2=\'150\' stroke=\'#27ae60\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><line x1=\'55\' y1=\'82\' x2=\'248\' y2=\'82\' stroke=\'#27ae60\' stroke-width=\'1.5\' stroke-dasharray=\'3,2\'/><text x=\'248\' y=\'158\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#27ae60\'>2T</text><text x=\'40\' y=\'85\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'end\' fill=\'#27ae60\'>16L</text><text x=\'200\' y=\'100\' font-family=\'sans-serif\' font-size=\'9\' text-anchor=\'middle\' fill=\'#888\'>(doubling T &#8594; 16&#215; L)</text></svg>', caption: '<strong>Luminosity</strong> vs temperature: the steep T⁴ relationship means small temperature increases cause large <strong>luminosity</strong> changes' }, terms: [] },
+    { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox=\'0 0 400 200\' xmlns=\'http://www.w3.org/2000/svg\'><rect width=\'400\' height=\'200\' fill=\'#f8f9fa\' rx=\'8\'/><circle cx=\'100\' cy=\'115\' r=\'30\' fill=\'#f9e79f\' stroke=\'#f39c12\' stroke-width=\'2\'/><circle cx=\'290\' cy=\'115\' r=\'55\' fill=\'#fde3a7\' stroke=\'#e67e22\' stroke-width=\'2.5\'/><text x=\'100\' y=\'162\' font-family=\'sans-serif\' font-size=\'11\' text-anchor=\'middle\' fill=\'#7d6608\'>T &#8594; L</text><text x=\'290\' y=\'183\' font-family=\'sans-serif\' font-size=\'11\' text-anchor=\'middle\' fill=\'#7d6608\'>2T &#8594; 16L</text><text x=\'200\' y=\'22\' font-family=\'sans-serif\' font-size=\'12\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'#333\'>L = &#963;AT&#8308; — doubling T gives 16&#215; <strong>luminosity</strong></text></svg>', caption: 'Two stars: doubling surface temperature T increases <strong>luminosity</strong> L by a factor of 2⁴ = 16' } },
+    { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Star <strong>Luminosity</strong>', text: 'A star has radius r = 7.0 × 10⁸ m and surface temperature T = 5800 K. Find its <strong>luminosity</strong>.<br><br><strong>Step 1:</strong> A = 4πr² = 4π(7.0 × 10⁸)² ≈ 6.16 × 10¹⁸ m²<br><strong>Step 2:</strong> L = σAT⁴ = (5.67 × 10⁻⁸)(6.16 × 10¹⁸)(5800)⁴ ≈ <strong>3.9 × 10²⁶ W</strong>' } },
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always convert temperature to Kelvin before substituting into L = σAT⁴. Use A = 4πr² for a spherical star. Since L ∝ T⁴, doubling T multiplies L by 2⁴ = 16 — a favourite comparison question in exams.' } }
   
 
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Stefan-Boltzmann Law' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Stefan-Boltzmann Law</strong>' }], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

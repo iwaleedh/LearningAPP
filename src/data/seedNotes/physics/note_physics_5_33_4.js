@@ -1,30 +1,61 @@
 export const note_physics_5_33_4 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Resonance Graphs" } },
-    { id: 'head-1', type: 'heading', data: { text: "Resonance Graphs", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Resonance Graphs Resonance Graphs A graph of driving frequency f against amplitude A of oscillations is called a resonance curve. It has the following key features:" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "When f < f, the amplitude of oscillations increases At the peak where f = f, the amplitude is at its maximum. This is resonance When f > f, the amplitude of oscillations starts to decrease The maximum amplitude of the oscillations occurs when the driving frequency is equal to" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "the natural frequency of the oscillator Damping & Resonance Damping reduces the amplitude of resonance vibrations The height and shape of the resonance curve will therefore change slightly depending" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "on the degree of damping Note: the natural frequency fof the oscillator will remain the same As the degree of damping is increased, the resonance graph is altered in the following ways:" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "The amplitude of resonance vibrations decrease, meaning the peak of the curve lowers The resonance peak broadens0 0" } },
-    {
-      "id": "svg-energy-transfer",
-      "type": "svg",
-      "data": {
-        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><rect x=\"50\" y=\"50\" width=\"200\" height=\"20\" fill=\"#E2E8F0\"/><rect x=\"50\" y=\"50\" width=\"150\" height=\"20\" fill=\"#10B981\"/><text x=\"150\" y=\"40\" text-anchor=\"middle\" fill=\"#334155\">Maximum Energy Transfer</text></svg>",
-        "caption": "Energy Transfer in Resonance"
-      }
-    },
-    {
-      "id": "svg-q-factor",
-      "type": "svg",
-      "data": {
-        "svg": "<svg viewBox=\"0 0 300 150\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-full h-auto\"><text x=\"150\" y=\"80\" text-anchor=\"middle\" font-size=\"20\" fill=\"#334155\" font-style=\"italic\">Q = f₀ / Δf</text><text x=\"150\" y=\"120\" text-anchor=\"middle\" fill=\"#64748B\">Sharpness of resonance</text></svg>",
-        "caption": "Q Factor Concept"
-      }
-    },
+    { id: 'obj-1', type: 'objective', data: { text: "Sketch and interpret resonance curves (amplitude vs driving frequency); describe the effect of damping on peak height, width, and resonant frequency; define bandwidth and Q-factor; apply Q = f₀/Δf; give examples of high-Q and low-Q oscillating systems" } },
+    { id: 'head-1', type: 'heading', data: { text: "Resonance Curves and Q-Factor", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [
+      { text: "When a driven oscillator is forced at its natural frequency f₀, the amplitude reaches a maximum — this is resonance." },
+      { text: "A resonance curve is a graph of steady-state amplitude against driving frequency f_d." },
+      { text: "It shows how strongly the system responds at each driving frequency." },
+      { text: "The shape of the resonance curve depends critically on the amount of damping in the system." },
+      { text: "Understanding resonance curves is important for engineering design: some systems (radio tuners, musical instruments) need sharp resonance peaks, while others (vehicle suspensions, buildings) need broad, flat responses to avoid dangerous oscillation amplitudes." }
+    ] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "Features of the Resonance Curve For a lightly damped system, the resonance curve has these key features: (1) Below f₀ (f_d < f₀): amplitude rises gradually as f_d increases. (2) At f₀: amplitude reaches its maximum value A_max. The phase difference between the driving force and the displacement is π/2 (90°). (3) Above f₀ (f_d > f₀): amplitude decreases, eventually approaching zero at very high frequencies. (4) The resonant frequency (peak of the curve) coincides closely with the natural frequency f₀ for lightly damped systems. (5) The curve is not symmetric — it rises more steeply on the low-frequency side than it falls on the high-frequency side." }] } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 175" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="175" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Resonance Curves: Effect of Damping</text><line x1="30" y1="150" x2="375" y2="150" stroke="#212529" stroke-width="2"/><line x1="30" y1="150" x2="30" y2="25" stroke="#212529" stroke-width="2"/><text x="205" y="165" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Driving frequency f_d</text><text x="14" y="90" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle" transform="rotate(-90 14,90)">Amplitude</text><line x1="200" y1="150" x2="200" y2="20" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,2"/><text x="200" y="170" font-family="sans-serif" font-size="9" fill="#868e96" text-anchor="middle">f&#8320;</text><path d="M 30 148 Q 100 145 160 130 Q 185 110 200 32 Q 215 110 240 130 Q 290 145 375 148" stroke="#fa5252" stroke-width="2.5" fill="none"/><text x="357" y="144" font-family="sans-serif" font-size="8" fill="#c92a2a">Light</text><path d="M 30 148 Q 100 140 160 122 Q 180 108 200 72 Q 220 108 250 122 Q 310 140 375 148" stroke="#339af0" stroke-width="2" fill="none"/><text x="357" y="133" font-family="sans-serif" font-size="8" fill="#1864ab">Medium</text><path d="M 30 147 Q 120 138 165 118 Q 185 110 200 98 Q 220 110 250 118 Q 320 138 375 147" stroke="#40c057" stroke-width="2" fill="none"/><text x="357" y="122" font-family="sans-serif" font-size="8" fill="#2b8a3e">Heavy</text><line x1="200" y1="32" x2="360" y2="32" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,2"/><text x="365" y="35" font-family="sans-serif" font-size="8" fill="#c92a2a">A_max</text></svg>', caption: 'Resonance curves at different damping levels. Light damping: tall, narrow peak at f₀. Heavier damping: lower, broader peak; resonant frequency shifts slightly below f₀.' } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [
+      { text: "Effect of Increasing Damping on the Resonance Curve As damping increases, three things change: (1) The peak amplitude A_max decreases — more energy is lost per cycle to the damping mechanism." },
+      { text: "(2) The peak broadens — the curve becomes wider, meaning the system responds significantly over a wider range of driving frequencies." },
+      { text: "(3) The resonant frequency (position of the peak) shifts slightly below the natural frequency f₀." },
+      { text: "For light damping, this shift is negligible; for heavy damping, the peak moves noticeably to lower frequencies." },
+      { text: "With critical or overdamping, no resonance peak exists at all — the system barely oscillates and the amplitude simply decreases monotonically with frequency." }
+    ] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [
+      { text: "Bandwidth and Q-Factor The bandwidth Δf (or bandwidth B) of a resonance curve is defined as the width of the peak at an amplitude equal to A_max/√2 (the 'half-power' points, where the power delivered to the oscillator is half the maximum)" },
+      { text: "The Q-factor (quality factor) is a dimensionless measure of the sharpness of resonance: Q = f₀/Δf." },
+      { text: "A high Q-factor means a sharp, narrow resonance peak (light damping, selective frequency response)" },
+      { text: "A low Q-factor means a broad peak (heavy damping, responds over a wide frequency range)" },
+      { text: "Typical values: radio tuner circuits Q ≈ 50–200; quartz oscillator Q ≈ 10⁵; pendulum Q ≈ 1000; car suspension Q ≈ 1–2." }
+    ] } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="165" fill="#f8f9fa"/><text x="200" y="16" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Bandwidth &#916;f and Q-Factor</text><line x1="30" y1="140" x2="375" y2="140" stroke="#212529" stroke-width="2"/><line x1="30" y1="140" x2="30" y2="28" stroke="#212529" stroke-width="2"/><text x="202" y="155" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Frequency f</text><path d="M 30 138 Q 100 132 155 118 Q 175 108 200 40 Q 225 108 245 118 Q 290 132 375 138" stroke="#339af0" stroke-width="2.5" fill="none"/><line x1="200" y1="140" x2="200" y2="25" stroke="#adb5bd" stroke-width="1" stroke-dasharray="3,2"/><text x="200" y="158" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">f&#8320;</text><line x1="30" y1="68" x2="375" y2="68" stroke="#fa5252" stroke-width="1.5" stroke-dasharray="3,2"/><text x="8" y="71" font-family="sans-serif" font-size="8" fill="#c92a2a">A_max/&#8730;2</text><circle cx="163" cy="68" r="4" fill="#fa5252"/><circle cx="237" cy="68" r="4" fill="#fa5252"/><line x1="163" y1="68" x2="163" y2="140" stroke="#fa5252" stroke-width="1" stroke-dasharray="2,2"/><line x1="237" y1="68" x2="237" y2="140" stroke="#fa5252" stroke-width="1" stroke-dasharray="2,2"/><line x1="163" y1="128" x2="237" y2="128" stroke="#2f9e44" stroke-width="2"/><line x1="163" y1="122" x2="163" y2="134" stroke="#2f9e44" stroke-width="2"/><line x1="237" y1="122" x2="237" y2="134" stroke="#2f9e44" stroke-width="2"/><text x="200" y="125" font-family="sans-serif" font-size="9" fill="#2f9e44" text-anchor="middle">&#916;f (bandwidth)</text><text x="280" y="45" font-family="sans-serif" font-size="10" fill="#1864ab">Q = f&#8320;/&#916;f</text><text x="280" y="58" font-family="sans-serif" font-size="9" fill="#1864ab">High Q = sharp peak</text><text x="280" y="70" font-family="sans-serif" font-size="9" fill="#1864ab">Low Q = broad peak</text></svg>', caption: 'Bandwidth Δf measured at A_max/√2 (half-power points). Q = f₀/Δf: high Q = sharp resonance (light damping); low Q = broad resonance (heavy damping).' } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [
+      { text: "Worked Example A mechanical oscillator has natural frequency f₀ = 50 Hz." },
+      { text: "Its resonance curve shows the amplitude equals A_max/√2 at f = 47 Hz and f = 53 Hz." },
+      { text: "Find the bandwidth and Q-factor." },
+      { text: "Bandwidth: Δf = 53 − 47 = 6 Hz." },
+      { text: "Q = f₀/Δf = 50/6 = 8.3." },
+      { text: "This is a moderately damped system — the peak is not very sharp." },
+      { text: "A radio tuner at f₀ = 100 MHz with bandwidth Δf = 2 MHz would have Q = 50 — much sharper selectivity." }
+    ] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
+      { text: "High-Q vs Low-Q Systems: Applications High Q (sharp resonance) is desirable when: Frequency selectivity is needed — radio receivers, where Q determines how well one station can be isolated from adjacent stations; musical strings and organ pipes (designed for efficient resonance at specific frequencies); atomic clocks (Q > 10¹⁰, extreme frequency stability)" },
+      { text: "Low Q (broad resonance) is desirable when: A system must absorb energy over a wide frequency range without building up dangerous amplitudes — car shock absorbers (Q ≈ 1) prevent resonance with road bumps; earthquake dampers in buildings; noise-cancelling systems." },
+      { text: "Engineers balance Q when designing any oscillating system." }
+    ] } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Points', text: 'Resonance curve: amplitude vs f_d; peak at f_d ≈ f₀. Increasing damping: (1) A_max decreases; (2) peak broadens; (3) peak shifts slightly below f₀. Bandwidth Δf: width at A_max/√2. Q-factor: Q = f₀/Δf. High Q: sharp peak, lightly damped (radio, crystal oscillators). Low Q: broad peak, heavily damped (shock absorbers, building dampers).' } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Sketch resonance curves for light, medium, and heavy damping on the same axes, labelling f₀, A_max, and describing how each curve differs", checked: false },
+      { text: "Define bandwidth and Q-factor, and calculate Q given f₀ and the half-power frequencies", checked: false },
+      { text: "Give one example each of a high-Q and a low-Q system, explaining why the level of damping is appropriate in each case", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "Resonance curve: amplitude vs driving frequency f_d; peak at f₀ (resonant frequency). Light damping: tall narrow peak at f₀. Heavy damping: low broad peak; peak shifts slightly below f₀. Bandwidth Δf: width at A_max/√2 (half-power). Q = f₀/Δf: high Q = sharp, selective (radio, crystals); low Q = broad, stable amplitude (shock absorbers, buildings). Critical/overdamping: no peak, amplitude decreases monotonically." } },
+    { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#f8f9fa"/><text x="200" y="20" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">High-Q vs Low-Q Resonance Comparison</text><path d="M 40 185 Q 155 180 190 172 Q 196 145 200 42 Q 204 145 210 172 Q 245 180 360 185" stroke="#c92a2a" stroke-width="2.5" fill="none"/><path d="M 40 183 Q 115 170 170 150 Q 190 136 200 108 Q 210 136 230 150 Q 285 170 360 183" stroke="#1864ab" stroke-width="2.5" fill="none"/><text x="220" y="40" font-family="sans-serif" font-size="11" fill="#c92a2a">High Q — narrow peak (light damping)</text><text x="220" y="106" font-family="sans-serif" font-size="11" fill="#1864ab">Low Q — broad peak (heavy damping)</text></svg>', caption: 'High-Q: tall, sharp peak — precise frequency selectivity. Low-Q: short, wide peak — broad frequency response. Both peaks are centred near f₀.' } },
+    { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Calculating Q-Factor', text: 'A radio tuner resonates at f₀ = 900 kHz. Its amplitude equals A_max/√2 at 895 kHz and 905 kHz.<br>Step 1 — Bandwidth: Δf = 905 − 895 = 10 kHz.<br>Step 2 — Q-factor: Q = f₀/Δf = 900/10 = 90.<br>A Q of 90 indicates sharp selectivity — the tuner isolates stations 10 kHz apart with ease.' } },
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Half-Power Points', text: 'Bandwidth is measured at A_max/√2 ≈ 0.707 A_max — not A_max/2. The label "half-power" comes from power ∝ A²: at A_max/√2, power = (A_max/√2)² = A_max²/2.<br>High Q → narrow Δf → sharp selectivity (radio, quartz). Low Q → wide Δf → stable response (shock absorbers). Examiners often set Q = f₀/Δf calculations using given half-power frequencies.' } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Resonance Graphs' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-4', prompt: 'What three changes occur to the resonance curve when damping is increased? Sketch the curves for light and heavy damping.' },
+    { id: 'cue-2', blockId: 'para-5', prompt: 'Define bandwidth and Q-factor. What does a high Q-factor tell you about the damping of the system?' },
+    { id: 'cue-3', blockId: 'para-7', prompt: 'Give one example of a system where high Q is desirable and one where low Q is desirable. Explain why in each case.' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

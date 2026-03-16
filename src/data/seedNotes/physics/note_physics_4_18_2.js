@@ -1,53 +1,50 @@
 export const note_physics_4_18_2 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Electric Force between Two Charges" } },
-    { id: 'head-1', type: 'heading', data: { text: "Electric Force between Two Charges", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Electric Force between Two Charges Electric Force between Two Charges All charged particles produce an electric field around them This field exerts a force on any other charged particle within range" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "The electrostatic force between two charges is defined by Coulomb's Law Recall that the charge of a uniform spherical conductor can be considered as a point charge at its centre Coulomb's Law states that:" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "The electrostatic force between two point charges is proportional to the product of the charges and inversely proportional to the square of their separation The force F between two charges as expressed by Coulomb's Law is given by the equation:" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "The electrostatic force between two charges is defined by Coulomb's Law Where: F = electrostatic force between two charges (N) Q and Q  = two point charges (C)" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "ε = permittivity of free space r = distance between the centre of the charges (m) The 1/r relation is called the inverse square law This means that when the separation of two charges doubles, the electrostatic force" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "between them reduces to (½) = ¼ of its original size ε is a physical constant used to show the capability of a vacuum to permit electric fields If Q and Q  are oppositely charged, then the electrostatic force F is negativeE E" } },
-    { id: 'para-8', type: 'paragraph', data: { text: "1 2 0 2 2" } },
-    { id: 'para-9', type: 'paragraph', data: { text: "0 This can be interpreted as an attractive force betweenQ and Q If Q and Q  are the same charge, then the electrostatic force F is positive This can be interpreted as a repulsive force betweenQ and Q1 2" } },
-    { id: 'para-10', type: 'paragraph', data: { text: "1 2 E 1 2 Worked Example An alpha particle is situated 2.0 mm away from a gold nucleus in a vacuum. Assuming" } },
-    { id: 'para-11', type: 'paragraph', data: { text: "they are point charges, calculate the magnitude of the force acting on each of the charges." } },
-
-  
+    { id: 'obj-1', type: 'objective', terms: [], data: { text: "Understand Electric Force between Two Charges" } },
+    { id: 'head-1', type: 'heading', terms: [], data: { text: "Electric Force between Two Charges", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Electric Force between Two Charges</strong> — all charged particles produce an <strong>electric field</strong> around them. This field exerts a force on any other charged particle within range. The force between two charges can be either attractive (opposite charges) or repulsive (like charges)." }] } },
+    { id: 'callout-1', type: 'callout', terms: [], data: { style: 'key', title: "Coulomb's Law", text: "The electrostatic force between two point charges is proportional to the product of their charges and inversely proportional to the square of their separation:<br/>F = kQ₁Q₂ / r²<br/>where k = 1/(4πε₀) ≈ 8.99 × 10⁹ N m² C⁻²<br/>This is known as the inverse square law." } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "The electrostatic force between two charges is defined by <strong>Coulomb's Law</strong>. Recall that the charge of a uniform spherical conductor can be considered as a <strong>point charge</strong> at its centre. Coulomb's Law states that the electrostatic force between two point charges is proportional to the product of the charges and inversely proportional to the square of their separation." }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "The <strong>force F</strong> between two charges as expressed by Coulomb's Law is given by the equation F = kQ₁Q₂/r². The force follows an <strong>inverse square law</strong> — doubling the separation reduces the force to one quarter of its original value. This is analogous to Newton's law of gravitation but acts on charges rather than masses." }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "The electrostatic force between two charges: Where F = electrostatic force between two charges (N), Q₁ and Q₂ = two point charges (C), ε₀ = <strong>permittivity of free space</strong>, r = distance between the centre of the charges (m)." }] } },
+    { id: 'callout-2', type: 'callout', terms: [], data: { style: 'tip', title: 'Sign Convention for Coulomb Force', text: 'If Q₁ and Q₂ are oppositely charged, the electrostatic force F is negative — this is an attractive force pulling the charges together.<br/>If Q₁ and Q₂ are the same sign, the force F is positive — this is a repulsive force pushing the charges apart.' } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "ε₀ is the <strong>permittivity of free space</strong> (ε₀ = 8.85 × 10⁻¹² F m⁻¹). It represents the capability of a vacuum to permit electric fields. The larger ε₀ is, the more the medium can 'accommodate' the <strong>electric field</strong>, reducing the force between charges. In a material medium, ε₀ is replaced by ε = ε₀εᵣ where εᵣ is the relative permittivity." }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [{ text: "The <strong>1/r²</strong> relation is called the inverse square law. This means that when the separation of two charges doubles, the electrostatic force between them reduces to (½)² = ¼ of its original size. This is the same mathematical relationship as Newton's law of gravitation." }] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [{ text: "1 2 0 2 2" }] } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [{ text: "This can be interpreted as an <strong>attractive force</strong> between Q₁ and Q₂ if they are opposite. If Q₁ and Q₂ are the same charge, then the electrostatic force F is positive, which can be interpreted as a <strong>repulsive force</strong> between Q₁ and Q₂." }] } },
+    { id: 'callout-3', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Alpha Particle and Gold Nucleus', text: 'An alpha particle (charge +2e = 3.2 × 10⁻¹⁹ C) is 2.0 mm from a gold nucleus (charge +79e = 1.26 × 10⁻¹⁷ C).<br/>F = kQ₁Q₂ / r²<br/>F = (8.99 × 10⁹ × 3.2 × 10⁻¹⁹ × 1.26 × 10⁻¹⁷) / (2.0 × 10⁻³)²<br/>F = (8.99 × 10⁹ × 4.03 × 10⁻³⁶) / (4.0 × 10⁻⁶)<br/>F ≈ 9.1 × 10⁻²¹ N (repulsive)' } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "An alpha particle is situated 2.0 mm away from a gold nucleus in a vacuum. Assuming they are <strong>point charges</strong>, calculate the magnitude of the force acting on each of the charges. (By Newton's third law, both charges experience equal and opposite forces.)" }] } },
+    { id: 'para-11', type: 'list', data: { style: 'bullet', items: [{ text: "They are point charges, calculate the magnitude of the force acting on each of the charges." }] } },
+    { id: 'callout-4', type: 'callout', terms: [], data: { style: 'tip', title: 'Real-World Example: Nuclear Scattering', text: "In Rutherford's gold foil experiment, alpha particles were fired at gold atoms. Coulomb repulsion between the positive alpha particle and positive nucleus caused the alpha particles to scatter — including some bouncing almost straight back. This led to the discovery of the dense, positively charged atomic nucleus." } },
     {
       id: 'svg-physics_4_18_2-0',
       type: 'svg',
+      terms: [],
       data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Coulomb's Law</text>
-  <rect x="80" y="70" width="240" height="60" fill="#fef2f2" rx="8" stroke="#ef4444" stroke-width="2"/>
-  <text x="200" y="105" font-family="Arial" font-size="20" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = k Q₁Q₂ / r²</text>
-  <text x="200" y="160" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">k = 1 / (4πε₀)</text>
-  <text x="200" y="180" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Inverse Square Law</text>
-</svg>`,
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">\n  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>\n  <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Coulomb\'s Law</text>\n  <rect x="80" y="70" width="240" height="60" fill="#fef2f2" rx="8" stroke="#ef4444" stroke-width="2"/>\n  <text x="200" y="105" font-family="Arial" font-size="20" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = k Q&#8321;Q&#8322; / r&#178;</text>\n  <text x="200" y="160" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">k = 1 / (4&#960;&#949;&#8320;)</text>\n  <text x="200" y="180" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Inverse Square Law</text>\n</svg>',
         caption: 'Diagram illustrating concepts of 18_2'
       }
     },
     {
       id: 'svg-physics_4_18_2-1',
       type: 'svg',
+      terms: [],
       data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <circle cx="100" cy="100" r="20" fill="#ef4444"/>
-  <circle cx="300" cy="100" r="20" fill="#ef4444"/>
-  <text x="100" y="105" font-family="Arial" font-size="18" fill="white" font-weight="bold" text-anchor="middle">+</text>
-  <text x="300" y="105" font-family="Arial" font-size="18" fill="white" font-weight="bold" text-anchor="middle">+</text>
-  <path d="M 70 100 L 30 100" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow-dark)"/>
-  <path d="M 330 100 L 370 100" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow-dark)"/>
-  <path d="M 130 120 L 270 120" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2"/>
-  <text x="200" y="140" font-family="Arial" font-size="14" fill="#475569" text-anchor="middle">Distance r</text>
-  <text x="200" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Repulsion between Like Charges</text>
-</svg>`,
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">\n  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>\n  <circle cx="100" cy="100" r="20" fill="#ef4444"/>\n  <circle cx="300" cy="100" r="20" fill="#ef4444"/>\n  <text x="100" y="105" font-family="Arial" font-size="18" fill="white" font-weight="bold" text-anchor="middle">+</text>\n  <text x="300" y="105" font-family="Arial" font-size="18" fill="white" font-weight="bold" text-anchor="middle">+</text>\n  <path d="M 70 100 L 30 100" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow-dark)"/>\n  <path d="M 330 100 L 370 100" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow-dark)"/>\n  <path d="M 130 120 L 270 120" stroke="#94a3b8" stroke-dasharray="4,4" stroke-width="2"/>\n  <text x="200" y="140" font-family="Arial" font-size="14" fill="#475569" text-anchor="middle">Distance r</text>\n  <text x="200" y="40" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Repulsion between Like Charges</text>\n</svg>',
         caption: 'Diagram illustrating concepts of 18_2'
       }
     },
+    {
+      id: 'enr-svg-1',
+      type: 'svg',
+      terms: [],
+      data: {
+        svg: '<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">  <rect x="0" y="0" width="500" height="240" fill="#f8fafc" rx="8"/>  <text x="250" y="22" font-family="Arial" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Coulomb Force: Repulsion vs Attraction</text>  <line x1="250" y1="35" x2="250" y2="175" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>  <circle cx="110" cy="95" r="18" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>  <text x="110" y="101" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">+</text>  <circle cx="185" cy="95" r="18" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>  <text x="185" y="101" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">+</text>  <line x1="89" y1="95" x2="55" y2="95" stroke="#dc2626" stroke-width="2.5"/>  <polygon points="55,91 43,95 55,99" fill="#dc2626"/>  <line x1="207" y1="95" x2="241" y2="95" stroke="#dc2626" stroke-width="2.5"/>  <polygon points="241,91 253,95 241,99" fill="#dc2626"/>  <text x="148" y="77" font-family="Arial" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">REPULSION</text>  <text x="148" y="125" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Same sign</text>  <circle cx="315" cy="95" r="18" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>  <text x="315" y="101" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">+</text>  <circle cx="390" cy="95" r="18" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>  <text x="390" y="101" font-family="Arial" font-size="16" fill="white" font-weight="bold" text-anchor="middle">&#8722;</text>  <line x1="333" y1="95" x2="367" y2="95" stroke="#7c3aed" stroke-width="2.5"/>  <polygon points="367,91 379,95 367,99" fill="#7c3aed"/>  <line x1="372" y1="95" x2="338" y2="95" stroke="#7c3aed" stroke-width="2.5"/>  <polygon points="338,91 326,95 338,99" fill="#7c3aed"/>  <text x="353" y="77" font-family="Arial" font-size="11" fill="#7c3aed" font-weight="bold" text-anchor="middle">ATTRACTION</text>  <text x="353" y="125" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Opposite sign</text>  <rect x="130" y="145" width="240" height="28" fill="#fef2f2" rx="6" stroke="#fca5a5" stroke-width="1.5"/>  <text x="250" y="164" font-family="Arial" font-size="14" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = kQ&#8321;Q&#8322; / r&#178;</text>  <text x="250" y="200" font-family="Arial" font-size="11" fill="#475569" text-anchor="middle">Double r &#8594; Force reduces to &#188; (Inverse Square Law)</text>  <text x="250" y="220" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">k &#8776; 8.99 &#215; 10&#8313; N m&#178; C&#8315;&#178;</text></svg>',
+        caption: 'Coulomb force: repulsion between like charges and attraction between opposite charges'
+      }
+    },
+    { id: 'enr-worked-1', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Coulomb Force Between Two Protons', text: 'Two protons are separated by 7.4 × 10⁻¹¹ m. Calculate the magnitude of the electrostatic force between them.<br/>Given: Q₁ = Q₂ = +1.6 × 10⁻¹⁹ C, r = 7.4 × 10⁻¹¹ m, k = 8.99 × 10⁹ N m² C⁻²<br/>F = kQ₁Q₂ / r²<br/>F = (8.99 × 10⁹ × (1.6 × 10⁻¹⁹)²) / (7.4 × 10⁻¹¹)²<br/>Numerator: 8.99 × 10⁹ × 2.56 × 10⁻³⁸ = 2.30 × 10⁻²⁸<br/>Denominator: (7.4)² × 10⁻²² = 5.476 × 10⁻²¹<br/>F = 2.30 × 10⁻²⁸ / 5.476 × 10⁻²¹ ≈ 4.2 × 10⁻⁸ N (repulsive, both charges positive)' } },
+    { id: 'enr-tip-1', type: 'callout', terms: [], data: { style: 'tip', title: 'Exam Tip: Applying Coulomb\'s Law', text: 'k = 1/(4πε₀) ≈ 8.99 × 10⁹ N m² C⁻² is given in the data booklet — no need to memorise.<br/>Use SI units: charges in Coulombs (C), distances in metres (m).<br/>If asked for the magnitude of force, ignore the sign.<br/>Inverse square law: doubling r → force becomes ¼; tripling r → force becomes 1/9.<br/>Treat uniform spherical conductors as point charges located at their centres.' } },
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Force between Two Charges' }], summaryText: '', ready: true },
   evidence: [],

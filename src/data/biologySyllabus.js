@@ -1,5 +1,5 @@
 export const biologySyllabus = {
-    qualification: 'Pearson Edexcel International A Level Biology (YBI11)',
+    qualification: 'AL Biology',
     source: 'International-A-Level-Biology-Spec.pdf',
     units: [
         {

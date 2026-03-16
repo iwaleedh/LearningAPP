@@ -1,17 +1,21 @@
 export const note_physics_4_16_1 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Core Practical 9: Investigating Impulse" } },
-    { id: 'head-1', type: 'heading', data: { text: "Core Practical 9: Investigating Impulse", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Core Practical 9: Investigating Impulse Core Practical 9: Investigating Impulse Aims of the Experiment To determine the change in momentum of a trolley due to a force acting on it" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "This is known as the impulse Variables Independent variable = accelerating mass, m Dependent variable = time taken to pass between two light gates, t" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "Control variables Overall mass of the system (trolley + accelerating masses) Tilt angle of the ramp Trolley and ramp used" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "Size of interrupter card Equipment List Apparatus Purpose Dynamics trolley Momentum change of the trolley is being investigated" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "Ramp, slightly tilted For the trolley to travel down Bench pulley To pull trolley using the suspended masses String To connect the suspended mass and the trolley over the pulley" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "5 slotted masses (10 g) and hangerTo create the force to accelerate the trolley Light gates and computer or dataloggerTo measure the time taken and velocity of the trolley" } },
-    { id: 'para-8', type: 'paragraph', data: { text: "passing through it Balance To measure the masses Resolution of measuring equipment Balance = 0.01 g" } },
-    { id: 'para-9', type: 'paragraph', data: { text: "Method 1. Measure the total mass, M, of the trolley and the five 10 g masses using the balance 2. Set up the equipment: Secure the bench pulley to one end of the runway allowing one end to project over the" } },
-    { id: 'para-10', type: 'paragraph', data: { text: "end of the bench Tilt the ramp slightly This is to compensate for friction Place the mass hanger (without the masses on them) on the floor and move the trolley" } },
-    { id: 'para-11', type: 'paragraph', data: { text: "backwards until the string becomes tight, with the mass on the floor Place the light gates at either end of the ramp There should be enough space on the ramp to allow the trolley to clear the light gate at the bottom before hitting the pulley" } },
+    { id: 'obj-1', type: 'objective', data: { text: "Understand Core Practical 9: Investigating <strong>Impulse</strong>" } },
+    { id: 'head-1', type: 'heading', data: { text: "Core Practical 9: Investigating <strong>Impulse</strong>", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "Core Practical 9: Investigating <strong>Impulse</strong> Core Practical 9: Investigating <strong>Impulse</strong> Aims of the Experiment To determine the change in <strong>momentum</strong> of a trolley due to a force acting on it" }] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "This is known as the <strong>impulse</strong> Variables Independent variable = accelerating mass, m Dependent variable = time taken to pass between two light gates, t" }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "Control variables Overall mass of the system (trolley + accelerating masses) Tilt angle of the ramp Trolley and ramp used" }] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "Size of interrupter card Equipment List Apparatus Purpose Dynamics trolley <strong>Momentum</strong> change of the trolley is being investigated" }] } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "Ramp, slightly tilted For the trolley to travel down Bench pulley To pull trolley using the suspended masses String To connect the suspended mass and the trolley over the pulley" }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [{ text: "5 slotted masses (10 g) and hangerTo create the force to accelerate the trolley Light gates and computer or dataloggerTo measure the time taken and velocity of the trolley" }] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [{ text: "passing through it Balance To measure the masses Resolution of measuring equipment Balance = 0.01 g" }] } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [
+      { text: "Method 1." },
+      { text: "Measure the total mass, M, of the trolley and the five 10 g masses using the balance 2." },
+      { text: "Set up the equipment: Secure the bench pulley to one end of the runway allowing one end to project over the." }
+    ] } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "end of the bench Tilt the ramp slightly This is to compensate for friction Place the mass hanger (without the masses on them) on the floor and move the trolley" }] } },
+    { id: 'para-11', type: 'list', data: { style: 'bullet', items: [{ text: "backwards until the string becomes tight, with the mass on the floor Place the light gates at either end of the ramp There should be enough space on the ramp to allow the trolley to clear the light gate at the bottom before hitting the pulley" }] } },
 
   
     {
@@ -55,8 +59,52 @@ export const note_physics_4_16_1 = {
         caption: 'Diagram illustrating concepts of 16_1'
       }
     },
+    {
+      id: 'enr-worked-impulse',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: 'Worked Example: Impulse from Hanging Mass',
+        text: 'A trolley (M = 0.50 kg) starts from rest and is pulled by a hanging mass (m = 0.050 kg).<br/>Net force: F = mg = 0.050 × 9.81 ≈ 0.49 N (friction compensated by ramp tilt).<br/>Trolley reaches v = 0.98 m/s in t = 1.0 s.<br/><br/><strong>Impulse</strong>: I = FΔt = 0.49 × 1.0 = <strong>0.49 N s</strong><br/>Change in <strong>momentum</strong>: Δp = MΔv = 0.50 × (0.98 − 0) = <strong>0.49 kg m s<sup>−1</sup></strong><br/><br/>I = Δp ✓  Confirms the <strong>impulse</strong>–<strong>momentum</strong> theorem; data from light gates and known masses verify this experimentally.'
+      }
+    },
+    {
+      id: 'enr-svg-ft',
+      type: 'svg',
+      data: {
+        svg: `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="480" height="260" fill="#f8fafc" rx="8"/>
+  <line x1="60" y1="205" x2="425" y2="205" stroke="#334155" stroke-width="2"/>
+  <line x1="60" y1="205" x2="60" y2="40" stroke="#334155" stroke-width="2"/>
+  <text x="245" y="232" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">Time (s)</text>
+  <text x="20" y="130" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle" transform="rotate(-90 20 130)">Force F (N)</text>
+  <line x1="142" y1="205" x2="142" y2="211" stroke="#334155" stroke-width="1.5"/>
+  <line x1="312" y1="205" x2="312" y2="211" stroke="#334155" stroke-width="1.5"/>
+  <text x="142" y="224" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">t₁</text>
+  <text x="312" y="224" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">t₂</text>
+  <rect x="142" y="95" width="170" height="110" fill="#6366f1" opacity="0.18"/>
+  <polyline points="60,205 142,205 142,95 312,95 312,205 425,205" fill="none" stroke="#6366f1" stroke-width="3"/>
+  <text x="227" y="147" font-family="Arial" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">Impulse</text>
+  <text x="227" y="166" font-family="Arial" font-size="12" fill="#4338ca" text-anchor="middle">= F × Δt = Δp</text>
+  <line x1="65" y1="95" x2="133" y2="95" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="58" y="99" font-family="Arial" font-size="12" fill="#64748b" text-anchor="end">F</text>
+  <rect x="118" y="14" width="218" height="32" fill="#ede9fe" rx="6" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="227" y="35" font-family="Arial" font-size="11" fill="#4338ca" text-anchor="middle">Impulse = area under F–t graph = Δp</text>
+</svg>`,
+        caption: 'Impulse equals the area under a force–time graph'
+      }
+    },
+    {
+      id: 'enr-tip-impulse',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: 'Exam Tip: Impulse and F–t Graphs',
+        text: '<strong>Impulse</strong> = FΔt = Δp (change in <strong>momentum</strong>). Units: N s = kg m s<sup>−1</sup>. Area under F–t graph = <strong>impulse</strong>. If F varies with time: use area (count squares or integrate).<br/><br/>"Explain why crumple zones reduce force" — same Δp, longer Δt → smaller F = Δp / Δt.'
+      }
+    },
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 9: Investigating Impulse' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 9: Investigating <strong>Impulse</strong>' }], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

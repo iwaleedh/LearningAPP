@@ -1,63 +1,66 @@
 export const note_physics_5_28_1 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Equations for Cosmology" } },
-    { id: 'head-1', type: 'heading', data: { text: "Equations for Cosmology", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Equations for" } },,
-    {
-      "id": "svg-gen-28-1-1",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#192a56" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#fff">Hubble's Law &amp; Expansion</text>
-  <circle cx="50" cy="100" r="4" fill="#f1c40f"/>
-  <circle cx="150" cy="70" r="4" fill="#3498db"/>
-  <line x1="155" y1="70" x2="190" y2="70" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
-  <circle cx="130" cy="140" r="4" fill="#9b59b6"/>
-  <line x1="135" y1="140" x2="160" y2="140" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
-  <circle cx="280" cy="100" r="4" fill="#2ecc71"/>
-  <line x1="285" y1="100" x2="350" y2="100" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="50" y="115" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#fff">Observer</text>
-  <text x="280" y="90" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#fff">v = H₀ d</text>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
-      <polygon points="0 0, 5 2.5, 0 5" fill="#e74c3c"/>
-    </marker>
-  </defs>
-</svg>`,
-        "caption": "Diagram demonstrating concepts in Topic 28"
-      }
-    },
-    {
-      "id": "svg-gen-28-1-2",
-      "type": "svg",
-      "data": {
-        "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="200" fill="#2d3436" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#fff">Redshift (Doppler Effect for Light)</text>
-  <rect x="50" y="60" width="300" height="30" fill="#fff" rx="5"/>
-  <line x1="100" y1="60" x2="100" y2="90" stroke="#000" stroke-width="2"/>
-  <line x1="120" y1="60" x2="120" y2="90" stroke="#000" stroke-width="2"/>
-  <line x1="200" y1="60" x2="200" y2="90" stroke="#000" stroke-width="2"/>
-  <text x="360" y="80" font-family="sans-serif" font-size="12" fill="#fff">Lab</text>
-  
-  <rect x="50" y="120" width="300" height="30" fill="#fff" rx="5"/>
-  <line x1="120" y1="120" x2="120" y2="150" stroke="#e74c3c" stroke-width="2"/>
-  <line x1="140" y1="120" x2="140" y2="150" stroke="#e74c3c" stroke-width="2"/>
-  <line x1="220" y1="120" x2="220" y2="150" stroke="#e74c3c" stroke-width="2"/>
-  <text x="360" y="140" font-family="sans-serif" font-size="12" fill="#fff">Galaxy</text>
-  
-  <line x1="100" y1="95" x2="115" y2="115" stroke="#fff" stroke-width="1" stroke-dasharray="2,2"/>
-  <text x="160" y="50" font-family="sans-serif" font-size="10" fill="#7f8c8d">Blue</text>
-  <text x="300" y="50" font-family="sans-serif" font-size="10" fill="#e74c3c">Red</text>
-</svg>`,
-        "caption": "Further illustration for Topic 28"
-      }
-    }
-  
-
+    { id: 'obj-1', type: 'objective', data: { text: "Apply <strong>Hubble's Law</strong> v = H₀d to relate recession velocity to distance; use <strong>redshift</strong> z = Δλ/λ = v/c to find recession velocity; estimate the age of the universe as t ≈ 1/H₀; describe what the <strong>cosmic microwave background</strong> radiation is and its significance" } },
+    { id: 'head-1', type: 'heading', data: { text: "Cosmological Equations: <strong>Hubble's Law</strong> & the Age of the Universe", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [
+      { text: "In 1929, Edwin Hubble discovered that almost all galaxies are moving away from us, and that the further away a galaxy is, the faster it is receding." },
+      { text: "This was established by measuring the <strong>redshift</strong> of spectral lines from distant galaxies." },
+      { text: "The observation that the universe is expanding implies it was once much smaller — the <strong>Big Bang</strong> model of the origin of the universe." },
+      { text: "Two key equations link the recession of galaxies to their distance and allow us to estimate the age of the universe." }
+    ] } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [
+      { text: "<strong>Redshift</strong> The recession of a galaxy stretches the wavelength of the light it emits, shifting all spectral lines towards longer (redder) wavelengths — this is cosmological <strong>redshift</strong>." },
+      { text: "The <strong>redshift</strong> parameter z is defined as: z = Δλ / λ = (λ_obs − λ_rest) / λ_rest." },
+      { text: "For recession speeds much less than c (v ≪ c), the recession velocity is related to <strong>redshift</strong> by: z = v / c, so v = zc." },
+      { text: "A <strong>redshift</strong> z = 0.1 means the galaxy is receding at v = 0.1c = 3 × 10⁷ m s⁻¹." },
+      { text: "(For relativistic speeds, this formula is only approximate; the full relativistic formula must be used.)" }
+    ] } },
+    { id: 'svg-101', type: 'svg', data: { svg: '<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="165" fill="#0a0a1a"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8f9fa" text-anchor="middle"><strong>Redshift</strong>: Spectral Lines Shifted to Longer Wavelengths</text><rect x="20" y="38" width="340" height="38" rx="3" fill="#dee2e6"/><line x1="90" y1="38" x2="90" y2="76" stroke="#4c6ef5" stroke-width="3"/><line x1="160" y1="38" x2="160" y2="76" stroke="#339af0" stroke-width="3"/><line x1="230" y1="38" x2="230" y2="76" stroke="#40c057" stroke-width="3"/><line x1="300" y1="38" x2="300" y2="76" stroke="#fa5252" stroke-width="3"/><text x="185" y="33" font-family="sans-serif" font-size="9" fill="#adb5bd" text-anchor="middle">Laboratory spectrum (rest wavelengths &#955;)</text><rect x="20" y="95" width="340" height="38" rx="3" fill="#dee2e6"/><line x1="110" y1="95" x2="110" y2="133" stroke="#4c6ef5" stroke-width="3"/><line x1="186" y1="95" x2="186" y2="133" stroke="#339af0" stroke-width="3"/><line x1="261" y1="95" x2="261" y2="133" stroke="#40c057" stroke-width="3"/><line x1="335" y1="95" x2="335" y2="133" stroke="#fa5252" stroke-width="3"/><text x="185" y="148" font-family="sans-serif" font-size="9" fill="#adb5bd" text-anchor="middle">Galaxy spectrum: all lines shifted right (&#8594; red) by &#916;&#955;</text><text x="200" y="162" font-family="sans-serif" font-size="9" fill="#ffd43b" text-anchor="middle">z = &#916;&#955;/&#955; = v/c (for v &#8810; c)</text></svg>', caption: '<strong>Redshift</strong>: all spectral lines shift to longer wavelengths (Δλ > 0). <strong>Redshift</strong> z = Δλ/λ = v/c gives recession velocity.' } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [
+      { text: "<strong>Hubble's Law</strong> Hubble found that recession velocity v is proportional to the distance d of the galaxy: v = H₀d." },
+      { text: "H₀ is the Hubble constant." },
+      { text: "Its value is approximately H₀ ≈ 2.2 × 10⁻¹⁸ s⁻¹ (corresponding to about 67–70 km s⁻¹ Mpc⁻¹, with some ongoing uncertainty called the Hubble tension)" },
+      { text: "Units: H₀ is measured in s⁻¹ (SI) or km s⁻¹ Mpc⁻¹." },
+      { text: "Combining with <strong>redshift</strong>: z = v/c and v = H₀d → z = H₀d/c → d = zc/H₀." },
+      { text: "This allows distance to be calculated from <strong>redshift</strong> alone." }
+    ] } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [
+      { text: "Estimating the Age of the Universe <strong>Hubble's Law</strong> implies the universe is expanding uniformly." },
+      { text: "Running the expansion backwards, all matter was at the same point at time t = 0." },
+      { text: "If a galaxy is at distance d moving at speed v = H₀d, it would have taken time t = d/v = d/(H₀d) = 1/H₀ to travel from the origin to its current position (assuming constant speed)" },
+      { text: "This gives the Hubble time: t₀ = 1/H₀ ≈ 1 / (2.2 × 10⁻¹⁸) ≈ 4.5 × 10¹⁷ s ≈ 14 billion years." },
+      { text: "This is a rough estimate of the age of the universe (in reality, the expansion rate has changed over time due to gravity and <strong>dark energy</strong>)." }
+    ] } },
+    { id: 'svg-102', type: 'svg', data: { svg: '<svg viewBox="0 0 400 165" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="165" fill="#0a0a1a"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8f9fa" text-anchor="middle">Hubble\'s Law: v = H&#8320;d</text><line x1="40" y1="140" x2="370" y2="140" stroke="#adb5bd" stroke-width="1.5"/><line x1="40" y1="140" x2="40" y2="25" stroke="#adb5bd" stroke-width="1.5"/><text x="205" y="156" font-family="sans-serif" font-size="10" fill="#adb5bd" text-anchor="middle">Distance d</text><text x="22" y="85" font-family="sans-serif" font-size="10" fill="#adb5bd" text-anchor="middle" transform="rotate(-90 22,85)">Recession speed v</text><line x1="40" y1="140" x2="365" y2="28" stroke="#74c0fc" stroke-width="2.5"/><circle cx="85" cy="118" r="4" fill="#ffd43b"/><circle cx="140" cy="96" r="4" fill="#ffd43b"/><circle cx="200" cy="72" r="4" fill="#ffd43b"/><circle cx="260" cy="48" r="4" fill="#ffd43b"/><circle cx="318" cy="28" r="4" fill="#ffd43b"/><text x="310" y="50" font-family="sans-serif" font-size="9" fill="#74c0fc">gradient = H&#8320;</text><text x="200" y="155" font-family="sans-serif" font-size="10" fill="#adb5bd" text-anchor="middle">Straight line through origin confirms v = H&#8320;d</text></svg>', caption: 'Hubble\'s Law: v vs d gives a straight line through origin; gradient = H₀ (the Hubble constant). More distant → faster recession.' } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [
+      { text: "Worked Examples Example 1: A galaxy has a <strong>redshift</strong> z = 0.05." },
+      { text: "Find its recession velocity and distance. v = zc = 0.05 × 3.0 × 10⁸ = 1.5 × 10⁷ m s⁻¹. d = v / H₀ = 1.5 × 10⁷ / (2.2 × 10⁻¹⁸) = 6.8 × 10²⁴ m." },
+      { text: "Converting: 6.8 × 10²⁴ / (3.09 × 10¹⁶) ≈ 2.2 × 10⁸ pc = 220 Mpc." },
+      { text: "Example 2: Estimate the age of the universe using H₀ = 2.2 × 10⁻¹⁸ s⁻¹. t₀ = 1/H₀ = 1 / (2.2 × 10⁻¹⁸) = 4.55 × 10¹⁷ s = 4.55 × 10¹⁷ / (3.15 × 10⁷) ≈ 1.4 × 10¹⁰ years ≈ 14 billion years." }
+    ] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [
+      { text: "<strong>Cosmic Microwave Background</strong> Radiation The <strong>Big Bang</strong> model predicts that the early universe was extremely hot and dense, filled with a plasma of radiation and matter." },
+      { text: "As the universe expanded and cooled (~380 000 years after the <strong>Big Bang</strong>), protons and electrons combined into neutral hydrogen atoms and photons could travel freely for the first time — this event is called recombination." },
+      { text: "The radiation released at that moment has since been redshifted by the expansion to microwave wavelengths (peak wavelength ~1.9 mm, corresponding to T ≈ 2.7 K)" },
+      { text: "This <strong>cosmic microwave background</strong> (CMB) radiation was discovered in 1965 by Penzias and Wilson and is strong evidence for the <strong>Big Bang</strong>." }
+    ] } },
+    { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 155" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="155" fill="#f8f9fa"/><text x="200" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Key Cosmological Equations</text><rect x="15" y="28" width="370" height="115" rx="5" fill="#fff" stroke="#dee2e6" stroke-width="1"/><text x="55" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#495057">Equation</text><text x="220" y="48" font-family="sans-serif" font-size="10" font-weight="bold" fill="#495057">What it means</text><line x1="20" y1="53" x2="380" y2="53" stroke="#dee2e6" stroke-width="1"/><text x="55" y="68" font-family="sans-serif" font-size="10" fill="#1864ab">v = H&#8320;d</text><text x="220" y="68" font-family="sans-serif" font-size="10" fill="#212529">Recession speed &#8733; distance (Hubble)</text><text x="55" y="86" font-family="sans-serif" font-size="10" fill="#1864ab">z = &#916;&#955;/&#955;</text><text x="220" y="86" font-family="sans-serif" font-size="10" fill="#212529"><strong>Redshift</strong> parameter (dimensionless)</text><text x="55" y="104" font-family="sans-serif" font-size="10" fill="#1864ab">v = zc</text><text x="220" y="104" font-family="sans-serif" font-size="10" fill="#212529">Recession velocity from <strong>redshift</strong> (v &#8810; c)</text><text x="55" y="122" font-family="sans-serif" font-size="10" fill="#1864ab">t&#8320; = 1/H&#8320;</text><text x="220" y="122" font-family="sans-serif" font-size="10" fill="#212529">Estimate of age of universe</text><text x="55" y="135" font-family="sans-serif" font-size="8" fill="#868e96">H&#8320; &#8776; 2.2&#215;10&#8722;&#185;&#8312; s&#8722;&#185; &#8594; t&#8320; &#8776; 14 billion years</text></svg>', caption: 'Summary of cosmological equations: Hubble\'s Law, <strong>redshift</strong>, recession velocity, and age of universe estimate.' } },
+    { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Key Equations', text: "<strong>Hubble's Law</strong>: v = H₀d. <strong>Redshift</strong>: z = Δλ/λ. Recession velocity: v = zc (for v ≪ c). Distance from <strong>redshift</strong>: d = zc/H₀. Age of universe: t₀ = 1/H₀ ≈ 14 billion years (using H₀ ≈ 2.2×10⁻¹⁸ s⁻¹). CMB: T ≈ 2.7 K, evidence for <strong>Big Bang</strong>." } },
+    { id: 'checklist-1', type: 'checklist', data: { items: [
+      { text: "Apply v = H₀d and z = v/c to calculate recession velocity and distance for a galaxy with known <strong>redshift</strong>", checked: false },
+      { text: "Estimate the age of the universe using t₀ = 1/H₀ with H₀ in SI units", checked: false },
+      { text: "Describe what the <strong>cosmic microwave background</strong> radiation is and explain why it is evidence for the <strong>Big Bang</strong>", checked: false }
+    ]}},
+    { id: 'summary-1', type: 'summary', data: { text: "<strong>Hubble's Law</strong>: v = H₀d (recession velocity ∝ distance). <strong>Redshift</strong>: z = Δλ/λ; v = zc (v ≪ c). Distance: d = v/H₀ = zc/H₀. H₀ ≈ 2.2×10⁻¹⁸ s⁻¹ ≈ 67 km s⁻¹ Mpc⁻¹. Age of universe: t₀ = 1/H₀ ≈ 4.5×10¹⁷ s ≈ 14 Gyr. CMB: T ≈ 2.7 K microwave radiation, discovered 1965, evidence for <strong>Big Bang</strong> (remnant radiation from recombination at 380 000 years)." } },
+    { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="240" fill="#0a0a1a"/><text x="250" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8f9fa" text-anchor="middle">CMB Formation Timeline</text><line x1="40" y1="125" x2="470" y2="125" stroke="#495057" stroke-width="2"/><circle cx="55" cy="125" r="7" fill="#ff6b6b"/><text x="55" y="108" font-family="sans-serif" font-size="9" fill="#ff6b6b" text-anchor="middle"><strong>Big Bang</strong></text><text x="55" y="145" font-family="sans-serif" font-size="8" fill="#868e96" text-anchor="middle">t = 0</text><circle cx="200" cy="125" r="7" fill="#ffd43b"/><line x1="200" y1="132" x2="200" y2="183" stroke="#ffd43b" stroke-width="1" stroke-dasharray="3,2"/><text x="200" y="194" font-family="sans-serif" font-size="9" fill="#ffd43b" text-anchor="middle">Recombination</text><text x="200" y="206" font-family="sans-serif" font-size="8" fill="#adb5bd" text-anchor="middle">380 000 yr  T&#8776;3000 K</text><text x="200" y="80" font-family="sans-serif" font-size="8" fill="#74c0fc" text-anchor="middle">CMB photons emitted here</text><line x1="200" y1="85" x2="200" y2="115" stroke="#74c0fc" stroke-width="1.5"/><text x="340" y="80" font-family="sans-serif" font-size="9" fill="#a9e34b" text-anchor="middle">Universe expands</text><text x="340" y="92" font-family="sans-serif" font-size="9" fill="#a9e34b" text-anchor="middle">wavelength stretched</text><circle cx="460" cy="125" r="7" fill="#74c0fc"/><line x1="460" y1="132" x2="460" y2="183" stroke="#74c0fc" stroke-width="1" stroke-dasharray="3,2"/><text x="460" y="194" font-family="sans-serif" font-size="9" fill="#74c0fc" text-anchor="middle">Today</text><text x="460" y="206" font-family="sans-serif" font-size="8" fill="#adb5bd" text-anchor="middle">t&#8776;14 Gyr  T&#8776;2.7 K</text><text x="250" y="232" font-family="sans-serif" font-size="9" fill="#868e96" text-anchor="middle">CMB wavelength stretched &#215;1100 as universe expanded: T fell from 3000 K to 2.7 K</text></svg>', caption: 'CMB formation timeline: photons released at recombination (380 000 yr, T ≈ 3000 K) redshifted to T ≈ 2.7 K microwaves observed today.' } },
+    { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Full <strong>Redshift</strong> to Distance Chain', text: "The hydrogen-alpha line (rest wavelength 656 nm) is observed at 689 nm in a distant galaxy. Use H₀ = 2.2 × 10⁻¹⁸ s⁻¹. (a) <strong>Redshift</strong>: z = Δλ/λ = (689 − 656)/656 = 33/656 = 0.0503. (b) Recession velocity: v = zc = 0.0503 × 3.0 × 10⁸ = 1.51 × 10⁷ m s⁻¹ (≈5% of c — non-relativistic formula valid since v ≪ c). (c) Distance: d = v/H₀ = 1.51 × 10⁷ / (2.2 × 10⁻¹⁸) = 6.86 × 10²⁴ m ≈ 220 Mpc. Final answers: z = 0.050, v = 1.5 × 10⁷ m s⁻¹, d ≈ 6.9 × 10²⁴ m." } },
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tips: Cosmological Calculations', text: "• Always use H₀ in SI units (s⁻¹) for d or t₀: H₀ ≈ 2.2 × 10⁻¹⁸ s⁻¹. Converting from km s⁻¹ Mpc⁻¹ is a common error source. • t₀ = 1/H₀ is only an estimate of the universe's age — it assumes constant expansion rate, which is not exactly true. • z is dimensionless — never attach units to it in an answer. • v = zc applies only when v ≪ c (non-relativistic); for z ≳ 0.3 a relativistic formula is needed (not required at A-level). • Three linked forms: v = H₀d, v = zc, d = zc/H₀ — know how to derive each from the others." } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Equations for Cosmology' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [
+    { id: 'cue-1', blockId: 'para-4', prompt: "State <strong>Hubble's Law</strong>. Define the Hubble constant and give its approximate value in SI units." },
+    { id: 'cue-2', blockId: 'para-5', prompt: 'Derive the Hubble time t₀ = 1/H₀. What assumption does this estimate rely on?' },
+    { id: 'cue-3', blockId: 'para-7', prompt: 'What is the <strong>cosmic microwave background</strong> radiation? What is its temperature, and what is its significance for cosmology?' }
+  ], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

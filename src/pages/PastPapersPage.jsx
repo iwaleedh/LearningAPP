@@ -17,31 +17,31 @@ import './Pages.css';
 // Subject configuration
 const subjects = [
     {
-        id: 'chemistry', name: 'Chemistry', icon: Beaker, color: '#10b981',
+        id: 'chemistry', name: 'AL Chemistry', icon: Beaker, color: '#10b981',
         papers: chemistryPastPapers, years: availableYears, units: availableUnits
     },
     {
-        id: 'physics', name: 'Physics', icon: Atom, color: '#8b5cf6',
+        id: 'physics', name: 'AL Physics', icon: Atom, color: '#8b5cf6',
         papers: physicsPastPapers, years: physicsAvailableYears, units: physicsAvailableUnits
     },
     {
-        id: 'biology', name: 'Biology', icon: Dna, color: '#3b82f6',
+        id: 'biology', name: 'AL Biology', icon: Dna, color: '#3b82f6',
         papers: biologyPastPapers, years: biologyAvailableYears, units: biologyAvailableUnits
     },
     {
-        id: 'mathematics', name: 'Maths', icon: Calculator, color: '#f59e0b',
+        id: 'mathematics', name: 'AL Mathematics', icon: Calculator, color: '#f59e0b',
         papers: mathematicsPastPapers, years: mathsAvailableYears, units: mathsAvailableUnits
     },
     {
-        id: 'business', name: 'Business', icon: FileText, color: '#ec4899',
+        id: 'business', name: 'AL Business', icon: FileText, color: '#ec4899',
         papers: businessPastPapers, years: businessAvailableYears, units: businessAvailableUnits
     },
     {
-        id: 'economics', name: 'Economics', icon: BarChart3, color: '#14b8a6',
+        id: 'economics', name: 'AL Economics', icon: BarChart3, color: '#14b8a6',
         papers: economicsPastPapers, years: economicsAvailableYears, units: economicsAvailableUnits
     },
     {
-        id: 'accounting', name: 'Accounting', icon: FileQuestion, color: '#f97316',
+        id: 'accounting', name: 'AL Accounting', icon: FileQuestion, color: '#f97316',
         papers: accountingPastPapers, years: accountingAvailableYears, units: accountingAvailableUnits
     },
     {

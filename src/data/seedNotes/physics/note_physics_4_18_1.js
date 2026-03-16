@@ -1,53 +1,43 @@
 export const note_physics_4_18_1 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Electric Field Strength" } },
-    { id: 'head-1', type: 'heading', data: { text: "Electric Field Strength", level: 2 } },
-    { id: 'para-2', type: 'paragraph', data: { text: "Electric Field Strength Electric Field Strength The electric field strength at a point is defined as: The force per unit charge acting on a positive test charge at that point" } },
-    { id: 'para-3', type: 'paragraph', data: { text: "The electric field strength can be calculated using the equation: Where: E = electric field strength (N C ) F = electrostatic force on the charge (N)" } },
-    { id: 'para-4', type: 'paragraph', data: { text: "Q = charge (C) It is important to use a positive test charge in this definition, as this determines the direction of the electric field Recall, the electric field strength is a vector quantity, it is always directed:" } },
-    { id: 'para-5', type: 'paragraph', data: { text: "Away from a positive charge Towards a negative charge This direction is also denoted by the direction of the electric field Electric field lines are directed away from a positive point charge and towards a negative" } },
-    { id: 'para-6', type: 'paragraph', data: { text: "point charge –1 Worked Example A charged particle is in an electric field with electric field strength 3.5 × 10 N C" } },
-    { id: 'para-7', type: 'paragraph', data: { text: "where it experiences a force of 0.3 N." } },
-    { id: 'para-8', type: 'paragraph', data: { text: "Calculate the charge of the particle." } },
-    { id: 'para-9', type: 'paragraph', data: { text: "Answer:4 -1 Examiner Tips and Tricks While the defining equation for electric field strength, E = F / Q is defined for a positive test charge, it is still useable for negative charges in an electric field. You will find that," } },
-    { id: 'para-10', type: 'paragraph', data: { text: "if you substitute a negative charge in for Q, the electric field strength E is also negative. This simply means that the vector representing the field points in the opposite direction than it would for a positive charge, as you should expect." } },
-
-  
+    { id: 'obj-1', type: 'objective', terms: [], data: { text: "Understand <strong>Electric Field</strong> Strength" } },
+    { id: 'head-1', type: 'heading', terms: [], data: { text: "<strong>Electric Field</strong> Strength", level: 2 } },
+    { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Electric field</strong> strength</strong> at a point is defined as the <strong>force per unit charge</strong> acting on a positive test charge at that point. It describes how strongly the <strong>electric field</strong> would push or pull on a charge placed at that location. A stronger field means greater force on the same charge." }] } },
+    { id: 'callout-1', type: 'callout', terms: [], data: { style: 'key', title: 'Definition: <strong>Electric Field</strong> Strength', text: 'E = F / Q<br/>E = <strong>electric field</strong> strength (N C⁻¹ or V m⁻¹)<br/>F = electrostatic force on the charge (N)<br/>Q = charge (C)<br/>Note: E is a vector quantity — it has both magnitude and direction.' } },
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "The <strong>electric field</strong> strength</strong> can be calculated using the equation E = F/Q. Where: E = <strong>electric field</strong> strength (N C⁻¹), F = electrostatic force on the charge (N), Q = charge (C). This equation gives the force experienced per coulomb of charge placed at that point in the field." }] } },
+    { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "Q = charge (C). It is important to use a <strong>positive test charge</strong> in this definition, as this determines the direction of the <strong>electric field</strong>. Recall, the <strong>electric field</strong> strength is a <strong>vector quantity</strong>, it is always directed: away from a positive charge, and towards a negative charge." }] } },
+    { id: 'callout-2', type: 'callout', terms: [], data: { style: 'warning', title: 'Using E = F/Q for Negative Charges', text: 'While E = F/Q is defined for a positive test charge, it is still useable for negative charges. If you substitute a negative charge in for Q, the <strong>electric field</strong> strength E is also negative — this simply means the force vector points in the opposite direction, as expected for a negative charge.' } },
+    { id: 'para-5', type: 'list', data: { style: 'bullet', items: [{ text: "This direction is also denoted by the direction of the <strong>electric field</strong> lines</strong>. <strong>Electric field</strong> lines are directed away from a positive point charge and towards a negative point charge. The spacing of field lines indicates the relative strength: closely spaced lines indicate a stronger field." }] } },
+    { id: 'para-6', type: 'list', data: { style: 'bullet', items: [{ text: "A charged particle is in an <strong>electric field</strong> with <strong>electric field</strong> strength</strong> 3.5 × 10 N C⁻¹ where it experiences a force of 0.3 N." }] } },
+    { id: 'para-7', type: 'list', data: { style: 'bullet', items: [{ text: "Where it experiences a force of 0.3 N." }] } },
+    { id: 'para-8', type: 'list', data: { style: 'bullet', items: [{ text: "Calculate the charge of the particle." }] } },
+    { id: 'callout-3', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Finding Charge', text: 'Given: E = 3.5 × 10 N C⁻¹, F = 0.3 N<br/>Using E = F/Q → Q = F/E<br/>Q = 0.3 / 35 = 8.57 × 10⁻³ C<br/>The charge on the particle is approximately 8.6 mC.' } },
+    { id: 'para-9', type: 'list', data: { style: 'bullet', items: [{ text: "Answer: Q = F/E. <strong>Examiner Tips and Tricks</strong> — while the defining equation for <strong>electric field</strong> strength, E = F/Q is defined for a positive test charge, it is still useable for negative charges in an <strong>electric field</strong>. You will find that, if you substitute a negative charge in for Q, the <strong>electric field</strong> strength E is also negative</strong>." }] } },
+    { id: 'para-10', type: 'list', data: { style: 'bullet', items: [{ text: "This simply means that the <strong>vector</strong> representing the field points in the opposite direction than it would for a positive charge, as you should expect." }] } },
+    { id: 'callout-4', type: 'callout', terms: [], data: { style: 'tip', title: 'Real-World Context: Van de Graaff Generator', text: 'A Van de Graaff generator builds up charge on a metal dome, creating strong electric fields around it. The field strength near the dome can be large enough to ionise air and cause sparks. This is the same principle behind lightning rods, which provide a safe path for charge to discharge through a strong <strong>electric field</strong>.' } },
     {
       id: 'svg-physics_4_18_1-0',
       type: 'svg',
+      terms: [],
       data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Electric Field Strength (E)</text>
-  <rect x="100" y="70" width="200" height="60" fill="#ecfdf5" rx="8" stroke="#10b981" stroke-width="2"/>
-  <text x="200" y="105" font-family="Arial" font-size="20" fill="#047857" font-weight="bold" text-anchor="middle">E = F / Q</text>
-  <text x="200" y="160" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Force per unit positive charge</text>
-  <text x="200" y="180" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Units: N C⁻¹ or V m⁻¹</text>
-</svg>`,
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">\n  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>\n  <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Electric Field Strength (E)</text>\n  <rect x="100" y="70" width="200" height="60" fill="#ecfdf5" rx="8" stroke="#10b981" stroke-width="2"/>\n  <text x="200" y="105" font-family="Arial" font-size="20" fill="#047857" font-weight="bold" text-anchor="middle">E = F / Q</text>\n  <text x="200" y="160" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Force per unit positive charge</text>\n  <text x="200" y="180" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Units: N C⁻¹ or V m⁻¹</text>\n</svg>',
         caption: 'Diagram illustrating concepts of 18_1'
       }
     },
     {
       id: 'svg-physics_4_18_1-1',
       type: 'svg',
+      terms: [],
       data: {
-        svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
-  <rect x="50" y="50" width="300" height="10" fill="#ef4444"/>
-  <rect x="50" y="140" width="300" height="10" fill="#3b82f6"/>
-  <path d="M 200 65 L 200 130" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 120 65 L 120 130" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <path d="M 280 65 L 280 130" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
-  <circle cx="200" cy="95" r="8" fill="#ef4444"/>
-  <text x="220" y="100" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">+q</text>
-  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Uniform Electric Field (E is constant)</text>
-</svg>`,
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">\n  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>\n  <rect x="50" y="50" width="300" height="10" fill="#ef4444"/>\n  <rect x="50" y="140" width="300" height="10" fill="#3b82f6"/>\n  <path d="M 200 65 L 200 130" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>\n  <path d="M 120 65 L 120 130" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>\n  <path d="M 280 65 L 280 130" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>\n  <circle cx="200" cy="95" r="8" fill="#ef4444"/>\n  <text x="220" y="100" font-family="Arial" font-size="14" fill="#ef4444" font-weight="bold">+q</text>\n  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Uniform Electric Field (E is constant)</text>\n</svg>',
         caption: 'Diagram illustrating concepts of 18_1'
       }
     },
+    { id: 'enr-svg-1', type: 'svg', terms: [], data: { svg: '<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="240" fill="#f8f9fa"/><text x="250" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Force on a Test Charge in an Electric Field</text><rect x="10" y="28" width="230" height="200" rx="6" fill="#fff3bf" stroke="#fab005" stroke-width="2"/><text x="125" y="48" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e67700" text-anchor="middle">Positive Test Charge</text><line x1="25" y1="110" x2="215" y2="110" stroke="#868e96" stroke-width="1.5" stroke-dasharray="5,3"/><polygon points="215,110 207,106 207,114" fill="#868e96"/><text x="115" y="104" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">E</text><circle cx="125" cy="148" r="18" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="125" y="153" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">+q</text><line x1="143" y1="148" x2="200" y2="148" stroke="#c92a2a" stroke-width="2.5"/><polygon points="200,148 192,144 192,152" fill="#c92a2a"/><text x="175" y="141" font-family="sans-serif" font-size="10" font-weight="bold" fill="#c92a2a" text-anchor="middle">F</text><text x="125" y="190" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Force parallel to E</text><text x="125" y="207" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e67700" text-anchor="middle">F = QE (&#8594; same dir.)</text><rect x="260" y="28" width="230" height="200" rx="6" fill="#e7f5ff" stroke="#339af0" stroke-width="2"/><text x="375" y="48" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1864ab" text-anchor="middle">Negative Test Charge</text><line x1="275" y1="110" x2="465" y2="110" stroke="#868e96" stroke-width="1.5" stroke-dasharray="5,3"/><polygon points="465,110 457,106 457,114" fill="#868e96"/><text x="365" y="104" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">E</text><circle cx="375" cy="148" r="18" fill="#4dabf7" stroke="#1864ab" stroke-width="2"/><text x="375" y="153" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">&#8722;q</text><line x1="357" y1="148" x2="300" y2="148" stroke="#1864ab" stroke-width="2.5"/><polygon points="300,148 308,144 308,152" fill="#1864ab"/><text x="325" y="141" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1864ab" text-anchor="middle">F</text><text x="375" y="190" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Force anti-parallel to E</text><text x="375" y="207" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1864ab" text-anchor="middle">F = &#8722;QE (&#8592; opposite)</text></svg>', caption: 'Force direction: positive test charge — force in same direction as E; negative test charge — force opposite to E.' } },
+    { id: 'enr-worked-1', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Force on an Electron in an <strong>Electric Field</strong>', text: 'An electron (Q = 1.6×10⁻¹⁹ C) is placed in a uniform <strong>electric field</strong> of strength E = 8.0×10³ N C⁻¹.<br/>F = QE = 1.6×10⁻¹⁹ × 8.0×10³<br/>= 1.28×10⁻¹⁵ N<br/>Direction: since the electron is negatively charged, the force acts OPPOSITE to the field direction — the electron accelerates towards the positive plate.' } },
+    { id: 'enr-tip-1', type: 'callout', terms: [], data: { style: 'tip', title: 'Exam Tip: E = F/Q — Key Points to Remember', text: 'E is a vector — its direction is the direction of force on a positive test charge.<br/>N C⁻¹ = V m⁻¹ (both are valid units for <strong>electric field</strong> strength).<br/>Positive charge: force in same direction as E.<br/>Negative charge: force in opposite direction to E.<br/>Rearrange E = F/Q as: F = QE or Q = F/E.<br/>The test charge must be small so it does not disturb the field.' } }
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Field Strength' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Electric Field</strong> Strength' }], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };
