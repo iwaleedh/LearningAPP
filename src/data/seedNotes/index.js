@@ -1672,6 +1672,323 @@ import { note_olevel_physics_6_2_3 } from './olevel_physics/note_olevel_physics_
 import { note_olevel_physics_6_2_4 } from './olevel_physics/note_olevel_physics_6_2_4.js';
 import { note_olevel_physics_6_2_5 } from './olevel_physics/note_olevel_physics_6_2_5.js';
 import { note_olevel_physics_6_2_6 } from './olevel_physics/note_olevel_physics_6_2_6.js';
+import { note_olevel_maths_core_5_1_0 } from './olevel_maths_core/note_olevel_maths_core_5_1_0.js';
+import { note_olevel_maths_core_5_1_1 } from './olevel_maths_core/note_olevel_maths_core_5_1_1.js';
+import { note_olevel_maths_core_5_1_2 } from './olevel_maths_core/note_olevel_maths_core_5_1_2.js';
+import { note_olevel_maths_core_5_1_3 } from './olevel_maths_core/note_olevel_maths_core_5_1_3.js';
+import { note_olevel_maths_core_5_2_0 } from './olevel_maths_core/note_olevel_maths_core_5_2_0.js';
+import { note_olevel_maths_core_5_2_1 } from './olevel_maths_core/note_olevel_maths_core_5_2_1.js';
+import { note_olevel_maths_core_5_3_0 } from './olevel_maths_core/note_olevel_maths_core_5_3_0.js';
+import { note_olevel_maths_core_5_3_1 } from './olevel_maths_core/note_olevel_maths_core_5_3_1.js';
+import { note_olevel_maths_core_5_3_2 } from './olevel_maths_core/note_olevel_maths_core_5_3_2.js';
+import { note_olevel_maths_core_5_4_0 } from './olevel_maths_core/note_olevel_maths_core_5_4_0.js';
+import { note_olevel_maths_core_5_4_1 } from './olevel_maths_core/note_olevel_maths_core_5_4_1.js';
+import { note_olevel_maths_core_5_4_2 } from './olevel_maths_core/note_olevel_maths_core_5_4_2.js';
+import { note_olevel_maths_core_6_1_0 } from './olevel_maths_core/note_olevel_maths_core_6_1_0.js';
+import { note_olevel_maths_core_6_2_0 } from './olevel_maths_core/note_olevel_maths_core_6_2_0.js';
+import { note_olevel_maths_core_6_2_1 } from './olevel_maths_core/note_olevel_maths_core_6_2_1.js';
+import { note_olevel_maths_core_7_1_0 } from './olevel_maths_core/note_olevel_maths_core_7_1_0.js';
+import { note_olevel_maths_core_7_1_1 } from './olevel_maths_core/note_olevel_maths_core_7_1_1.js';
+import { note_olevel_maths_core_7_1_2 } from './olevel_maths_core/note_olevel_maths_core_7_1_2.js';
+import { note_olevel_maths_core_7_1_3 } from './olevel_maths_core/note_olevel_maths_core_7_1_3.js';
+import { note_olevel_maths_core_8_1_0 } from './olevel_maths_core/note_olevel_maths_core_8_1_0.js';
+import { note_olevel_maths_core_8_1_1 } from './olevel_maths_core/note_olevel_maths_core_8_1_1.js';
+import { note_olevel_maths_core_8_2_0 } from './olevel_maths_core/note_olevel_maths_core_8_2_0.js';
+import { note_olevel_maths_core_8_2_1 } from './olevel_maths_core/note_olevel_maths_core_8_2_1.js';
+import { note_olevel_maths_core_8_2_2 } from './olevel_maths_core/note_olevel_maths_core_8_2_2.js';
+import { note_olevel_maths_core_8_2_3 } from './olevel_maths_core/note_olevel_maths_core_8_2_3.js';
+import { note_olevel_maths_core_8_2_4 } from './olevel_maths_core/note_olevel_maths_core_8_2_4.js';
+import { note_olevel_maths_core_9_1_0 } from './olevel_maths_core/note_olevel_maths_core_9_1_0.js';
+import { note_olevel_maths_core_9_1_1 } from './olevel_maths_core/note_olevel_maths_core_9_1_1.js';
+import { note_olevel_maths_core_9_2_0 } from './olevel_maths_core/note_olevel_maths_core_9_2_0.js';
+import { note_olevel_maths_core_9_2_1 } from './olevel_maths_core/note_olevel_maths_core_9_2_1.js';
+import { note_olevel_maths_core_9_2_2 } from './olevel_maths_core/note_olevel_maths_core_9_2_2.js';
+import { note_olevel_maths_core_9_2_3 } from './olevel_maths_core/note_olevel_maths_core_9_2_3.js';
+import { note_olevel_maths_core_9_2_4 } from './olevel_maths_core/note_olevel_maths_core_9_2_4.js';
+import { note_olevel_maths_core_9_3_0 } from './olevel_maths_core/note_olevel_maths_core_9_3_0.js';
+import { note_olevel_maths_core_9_3_1 } from './olevel_maths_core/note_olevel_maths_core_9_3_1.js';
+import { note_olevel_maths_core_9_3_2 } from './olevel_maths_core/note_olevel_maths_core_9_3_2.js';
+import { note_olevel_maths_core_9_3_3 } from './olevel_maths_core/note_olevel_maths_core_9_3_3.js';
+import { note_olevel_maths_core_9_3_4 } from './olevel_maths_core/note_olevel_maths_core_9_3_4.js';
+import { note_olevel_maths_core_9_4_0 } from './olevel_maths_core/note_olevel_maths_core_9_4_0.js';
+import { note_olevel_maths_core_9_4_1 } from './olevel_maths_core/note_olevel_maths_core_9_4_1.js';
+import { note_olevel_maths_core_9_5_0 } from './olevel_maths_core/note_olevel_maths_core_9_5_0.js';
+import { note_olevel_maths_core_9_5_1 } from './olevel_maths_core/note_olevel_maths_core_9_5_1.js';
+import { note_olevel_maths_core_1_10_0 } from './olevel_maths_core/note_olevel_maths_core_1_10_0.js';
+import { note_olevel_maths_core_1_11_0 } from './olevel_maths_core/note_olevel_maths_core_1_11_0.js';
+import { note_olevel_maths_core_1_11_1 } from './olevel_maths_core/note_olevel_maths_core_1_11_1.js';
+import { note_olevel_maths_core_1_11_2 } from './olevel_maths_core/note_olevel_maths_core_1_11_2.js';
+import { note_olevel_maths_core_1_11_3 } from './olevel_maths_core/note_olevel_maths_core_1_11_3.js';
+import { note_olevel_maths_core_1_11_4 } from './olevel_maths_core/note_olevel_maths_core_1_11_4.js';
+import { note_olevel_maths_core_1_12_0 } from './olevel_maths_core/note_olevel_maths_core_1_12_0.js';
+import { note_olevel_maths_core_1_12_1 } from './olevel_maths_core/note_olevel_maths_core_1_12_1.js';
+import { note_olevel_maths_core_1_13_0 } from './olevel_maths_core/note_olevel_maths_core_1_13_0.js';
+import { note_olevel_maths_core_1_13_1 } from './olevel_maths_core/note_olevel_maths_core_1_13_1.js';
+import { note_olevel_maths_core_1_14_0 } from './olevel_maths_core/note_olevel_maths_core_1_14_0.js';
+import { note_olevel_maths_core_1_1_0 } from './olevel_maths_core/note_olevel_maths_core_1_1_0.js';
+import { note_olevel_maths_core_1_1_1 } from './olevel_maths_core/note_olevel_maths_core_1_1_1.js';
+import { note_olevel_maths_core_1_1_2 } from './olevel_maths_core/note_olevel_maths_core_1_1_2.js';
+import { note_olevel_maths_core_1_1_3 } from './olevel_maths_core/note_olevel_maths_core_1_1_3.js';
+import { note_olevel_maths_core_1_2_0 } from './olevel_maths_core/note_olevel_maths_core_1_2_0.js';
+import { note_olevel_maths_core_1_2_1 } from './olevel_maths_core/note_olevel_maths_core_1_2_1.js';
+import { note_olevel_maths_core_1_2_2 } from './olevel_maths_core/note_olevel_maths_core_1_2_2.js';
+import { note_olevel_maths_core_1_2_3 } from './olevel_maths_core/note_olevel_maths_core_1_2_3.js';
+import { note_olevel_maths_core_1_3_0 } from './olevel_maths_core/note_olevel_maths_core_1_3_0.js';
+import { note_olevel_maths_core_1_3_1 } from './olevel_maths_core/note_olevel_maths_core_1_3_1.js';
+import { note_olevel_maths_core_1_3_2 } from './olevel_maths_core/note_olevel_maths_core_1_3_2.js';
+import { note_olevel_maths_core_1_3_3 } from './olevel_maths_core/note_olevel_maths_core_1_3_3.js';
+import { note_olevel_maths_core_1_4_0 } from './olevel_maths_core/note_olevel_maths_core_1_4_0.js';
+import { note_olevel_maths_core_1_4_1 } from './olevel_maths_core/note_olevel_maths_core_1_4_1.js';
+import { note_olevel_maths_core_1_4_2 } from './olevel_maths_core/note_olevel_maths_core_1_4_2.js';
+import { note_olevel_maths_core_1_4_3 } from './olevel_maths_core/note_olevel_maths_core_1_4_3.js';
+import { note_olevel_maths_core_1_4_4 } from './olevel_maths_core/note_olevel_maths_core_1_4_4.js';
+import { note_olevel_maths_core_1_4_5 } from './olevel_maths_core/note_olevel_maths_core_1_4_5.js';
+import { note_olevel_maths_core_1_5_0 } from './olevel_maths_core/note_olevel_maths_core_1_5_0.js';
+import { note_olevel_maths_core_1_5_1 } from './olevel_maths_core/note_olevel_maths_core_1_5_1.js';
+import { note_olevel_maths_core_1_5_2 } from './olevel_maths_core/note_olevel_maths_core_1_5_2.js';
+import { note_olevel_maths_core_1_5_3 } from './olevel_maths_core/note_olevel_maths_core_1_5_3.js';
+import { note_olevel_maths_core_1_5_4 } from './olevel_maths_core/note_olevel_maths_core_1_5_4.js';
+import { note_olevel_maths_core_1_6_0 } from './olevel_maths_core/note_olevel_maths_core_1_6_0.js';
+import { note_olevel_maths_core_1_6_1 } from './olevel_maths_core/note_olevel_maths_core_1_6_1.js';
+import { note_olevel_maths_core_1_7_0 } from './olevel_maths_core/note_olevel_maths_core_1_7_0.js';
+import { note_olevel_maths_core_1_7_1 } from './olevel_maths_core/note_olevel_maths_core_1_7_1.js';
+import { note_olevel_maths_core_1_7_2 } from './olevel_maths_core/note_olevel_maths_core_1_7_2.js';
+import { note_olevel_maths_core_1_8_0 } from './olevel_maths_core/note_olevel_maths_core_1_8_0.js';
+import { note_olevel_maths_core_1_8_1 } from './olevel_maths_core/note_olevel_maths_core_1_8_1.js';
+import { note_olevel_maths_core_1_8_2 } from './olevel_maths_core/note_olevel_maths_core_1_8_2.js';
+import { note_olevel_maths_core_1_8_3 } from './olevel_maths_core/note_olevel_maths_core_1_8_3.js';
+import { note_olevel_maths_core_1_9_0 } from './olevel_maths_core/note_olevel_maths_core_1_9_0.js';
+import { note_olevel_maths_core_1_9_1 } from './olevel_maths_core/note_olevel_maths_core_1_9_1.js';
+import { note_olevel_maths_core_1_9_2 } from './olevel_maths_core/note_olevel_maths_core_1_9_2.js';
+import { note_olevel_maths_core_1_9_3 } from './olevel_maths_core/note_olevel_maths_core_1_9_3.js';
+import { note_olevel_maths_core_2_10_0 } from './olevel_maths_core/note_olevel_maths_core_2_10_0.js';
+import { note_olevel_maths_core_2_10_1 } from './olevel_maths_core/note_olevel_maths_core_2_10_1.js';
+import { note_olevel_maths_core_2_11_0 } from './olevel_maths_core/note_olevel_maths_core_2_11_0.js';
+import { note_olevel_maths_core_2_11_1 } from './olevel_maths_core/note_olevel_maths_core_2_11_1.js';
+import { note_olevel_maths_core_2_11_2 } from './olevel_maths_core/note_olevel_maths_core_2_11_2.js';
+import { note_olevel_maths_core_2_11_3 } from './olevel_maths_core/note_olevel_maths_core_2_11_3.js';
+import { note_olevel_maths_core_2_1_0 } from './olevel_maths_core/note_olevel_maths_core_2_1_0.js';
+import { note_olevel_maths_core_2_1_1 } from './olevel_maths_core/note_olevel_maths_core_2_1_1.js';
+import { note_olevel_maths_core_2_2_0 } from './olevel_maths_core/note_olevel_maths_core_2_2_0.js';
+import { note_olevel_maths_core_2_2_1 } from './olevel_maths_core/note_olevel_maths_core_2_2_1.js';
+import { note_olevel_maths_core_2_3_0 } from './olevel_maths_core/note_olevel_maths_core_2_3_0.js';
+import { note_olevel_maths_core_2_3_1 } from './olevel_maths_core/note_olevel_maths_core_2_3_1.js';
+import { note_olevel_maths_core_2_4_0 } from './olevel_maths_core/note_olevel_maths_core_2_4_0.js';
+import { note_olevel_maths_core_2_4_1 } from './olevel_maths_core/note_olevel_maths_core_2_4_1.js';
+import { note_olevel_maths_core_2_5_0 } from './olevel_maths_core/note_olevel_maths_core_2_5_0.js';
+import { note_olevel_maths_core_2_6_0 } from './olevel_maths_core/note_olevel_maths_core_2_6_0.js';
+import { note_olevel_maths_core_2_6_1 } from './olevel_maths_core/note_olevel_maths_core_2_6_1.js';
+import { note_olevel_maths_core_2_6_2 } from './olevel_maths_core/note_olevel_maths_core_2_6_2.js';
+import { note_olevel_maths_core_2_7_0 } from './olevel_maths_core/note_olevel_maths_core_2_7_0.js';
+import { note_olevel_maths_core_2_7_1 } from './olevel_maths_core/note_olevel_maths_core_2_7_1.js';
+import { note_olevel_maths_core_2_8_0 } from './olevel_maths_core/note_olevel_maths_core_2_8_0.js';
+import { note_olevel_maths_core_2_8_1 } from './olevel_maths_core/note_olevel_maths_core_2_8_1.js';
+import { note_olevel_maths_core_2_9_0 } from './olevel_maths_core/note_olevel_maths_core_2_9_0.js';
+import { note_olevel_maths_core_3_1_0 } from './olevel_maths_core/note_olevel_maths_core_3_1_0.js';
+import { note_olevel_maths_core_3_1_1 } from './olevel_maths_core/note_olevel_maths_core_3_1_1.js';
+import { note_olevel_maths_core_3_1_2 } from './olevel_maths_core/note_olevel_maths_core_3_1_2.js';
+import { note_olevel_maths_core_3_1_3 } from './olevel_maths_core/note_olevel_maths_core_3_1_3.js';
+import { note_olevel_maths_core_3_2_0 } from './olevel_maths_core/note_olevel_maths_core_3_2_0.js';
+import { note_olevel_maths_core_3_2_1 } from './olevel_maths_core/note_olevel_maths_core_3_2_1.js';
+import { note_olevel_maths_core_3_2_2 } from './olevel_maths_core/note_olevel_maths_core_3_2_2.js';
+import { note_olevel_maths_core_3_3_0 } from './olevel_maths_core/note_olevel_maths_core_3_3_0.js';
+import { note_olevel_maths_core_3_3_1 } from './olevel_maths_core/note_olevel_maths_core_3_3_1.js';
+import { note_olevel_maths_core_3_3_2 } from './olevel_maths_core/note_olevel_maths_core_3_3_2.js';
+import { note_olevel_maths_core_3_3_3 } from './olevel_maths_core/note_olevel_maths_core_3_3_3.js';
+import { note_olevel_maths_core_4_1_0 } from './olevel_maths_core/note_olevel_maths_core_4_1_0.js';
+import { note_olevel_maths_core_4_1_1 } from './olevel_maths_core/note_olevel_maths_core_4_1_1.js';
+import { note_olevel_maths_core_4_2_0 } from './olevel_maths_core/note_olevel_maths_core_4_2_0.js';
+import { note_olevel_maths_core_4_2_1 } from './olevel_maths_core/note_olevel_maths_core_4_2_1.js';
+import { note_olevel_maths_core_4_2_2 } from './olevel_maths_core/note_olevel_maths_core_4_2_2.js';
+import { note_olevel_maths_core_4_2_3 } from './olevel_maths_core/note_olevel_maths_core_4_2_3.js';
+import { note_olevel_maths_core_4_3_0 } from './olevel_maths_core/note_olevel_maths_core_4_3_0.js';
+import { note_olevel_maths_core_4_3_1 } from './olevel_maths_core/note_olevel_maths_core_4_3_1.js';
+import { note_olevel_maths_core_4_4_0 } from './olevel_maths_core/note_olevel_maths_core_4_4_0.js';
+import { note_olevel_maths_core_4_4_1 } from './olevel_maths_core/note_olevel_maths_core_4_4_1.js';
+import { note_olevel_maths_core_4_5_0 } from './olevel_maths_core/note_olevel_maths_core_4_5_0.js';
+import { note_olevel_maths_core_4_5_1 } from './olevel_maths_core/note_olevel_maths_core_4_5_1.js';
+import { note_olevel_maths_core_4_5_2 } from './olevel_maths_core/note_olevel_maths_core_4_5_2.js';
+import { note_olevel_maths_core_4_5_3 } from './olevel_maths_core/note_olevel_maths_core_4_5_3.js';
+import { note_olevel_maths_core_4_6_0 } from './olevel_maths_core/note_olevel_maths_core_4_6_0.js';
+// --- O-Level Maths Extended Imports ---
+import { note_olevel_maths_extended_1_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_1_0.js';
+import { note_olevel_maths_extended_1_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_1_1.js';
+import { note_olevel_maths_extended_1_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_1_2.js';
+import { note_olevel_maths_extended_1_1_3 } from './olevel_maths_extended/note_olevel_maths_extended_1_1_3.js';
+import { note_olevel_maths_extended_1_1_4 } from './olevel_maths_extended/note_olevel_maths_extended_1_1_4.js';
+import { note_olevel_maths_extended_1_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_2_0.js';
+import { note_olevel_maths_extended_1_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_2_1.js';
+import { note_olevel_maths_extended_1_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_2_2.js';
+import { note_olevel_maths_extended_1_2_3 } from './olevel_maths_extended/note_olevel_maths_extended_1_2_3.js';
+import { note_olevel_maths_extended_1_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_3_0.js';
+import { note_olevel_maths_extended_1_3_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_3_1.js';
+import { note_olevel_maths_extended_1_3_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_3_2.js';
+import { note_olevel_maths_extended_1_3_3 } from './olevel_maths_extended/note_olevel_maths_extended_1_3_3.js';
+import { note_olevel_maths_extended_1_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_4_0.js';
+import { note_olevel_maths_extended_1_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_4_1.js';
+import { note_olevel_maths_extended_1_4_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_4_2.js';
+import { note_olevel_maths_extended_1_4_3 } from './olevel_maths_extended/note_olevel_maths_extended_1_4_3.js';
+import { note_olevel_maths_extended_1_4_4 } from './olevel_maths_extended/note_olevel_maths_extended_1_4_4.js';
+import { note_olevel_maths_extended_1_5_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_5_0.js';
+import { note_olevel_maths_extended_1_5_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_5_1.js';
+import { note_olevel_maths_extended_1_5_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_5_2.js';
+import { note_olevel_maths_extended_1_6_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_6_0.js';
+import { note_olevel_maths_extended_1_7_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_7_0.js';
+import { note_olevel_maths_extended_1_7_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_7_1.js';
+import { note_olevel_maths_extended_1_8_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_8_0.js';
+import { note_olevel_maths_extended_1_8_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_8_1.js';
+import { note_olevel_maths_extended_1_8_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_8_2.js';
+import { note_olevel_maths_extended_1_8_3 } from './olevel_maths_extended/note_olevel_maths_extended_1_8_3.js';
+import { note_olevel_maths_extended_1_9_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_9_0.js';
+import { note_olevel_maths_extended_1_9_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_9_1.js';
+import { note_olevel_maths_extended_1_9_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_9_2.js';
+import { note_olevel_maths_extended_1_10_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_10_0.js';
+import { note_olevel_maths_extended_1_10_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_10_1.js';
+import { note_olevel_maths_extended_1_10_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_10_2.js';
+import { note_olevel_maths_extended_1_10_3 } from './olevel_maths_extended/note_olevel_maths_extended_1_10_3.js';
+import { note_olevel_maths_extended_1_10_4 } from './olevel_maths_extended/note_olevel_maths_extended_1_10_4.js';
+import { note_olevel_maths_extended_1_11_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_11_0.js';
+import { note_olevel_maths_extended_1_11_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_11_1.js';
+import { note_olevel_maths_extended_1_12_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_12_0.js';
+import { note_olevel_maths_extended_1_12_1 } from './olevel_maths_extended/note_olevel_maths_extended_1_12_1.js';
+import { note_olevel_maths_extended_1_12_2 } from './olevel_maths_extended/note_olevel_maths_extended_1_12_2.js';
+import { note_olevel_maths_extended_1_13_0 } from './olevel_maths_extended/note_olevel_maths_extended_1_13_0.js';
+import { note_olevel_maths_extended_2_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_1_0.js';
+import { note_olevel_maths_extended_2_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_1_1.js';
+import { note_olevel_maths_extended_2_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_1_2.js';
+import { note_olevel_maths_extended_2_1_3 } from './olevel_maths_extended/note_olevel_maths_extended_2_1_3.js';
+import { note_olevel_maths_extended_2_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_2_0.js';
+import { note_olevel_maths_extended_2_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_0.js';
+import { note_olevel_maths_extended_2_3_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_1.js';
+import { note_olevel_maths_extended_2_3_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_2.js';
+import { note_olevel_maths_extended_2_3_3 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_3.js';
+import { note_olevel_maths_extended_2_3_4 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_4.js';
+import { note_olevel_maths_extended_2_3_5 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_5.js';
+import { note_olevel_maths_extended_2_3_6 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_6.js';
+import { note_olevel_maths_extended_2_3_7 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_7.js';
+import { note_olevel_maths_extended_2_3_8 } from './olevel_maths_extended/note_olevel_maths_extended_2_3_8.js';
+import { note_olevel_maths_extended_2_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_4_0.js';
+import { note_olevel_maths_extended_2_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_4_1.js';
+import { note_olevel_maths_extended_2_5_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_5_0.js';
+import { note_olevel_maths_extended_2_5_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_5_1.js';
+import { note_olevel_maths_extended_2_5_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_5_2.js';
+import { note_olevel_maths_extended_2_6_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_6_0.js';
+import { note_olevel_maths_extended_2_6_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_6_1.js';
+import { note_olevel_maths_extended_2_7_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_7_0.js';
+import { note_olevel_maths_extended_2_7_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_7_1.js';
+import { note_olevel_maths_extended_2_8_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_8_0.js';
+import { note_olevel_maths_extended_2_8_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_8_1.js';
+import { note_olevel_maths_extended_2_8_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_8_2.js';
+import { note_olevel_maths_extended_2_8_3 } from './olevel_maths_extended/note_olevel_maths_extended_2_8_3.js';
+import { note_olevel_maths_extended_2_9_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_9_0.js';
+import { note_olevel_maths_extended_2_9_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_9_1.js';
+import { note_olevel_maths_extended_2_9_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_9_2.js';
+import { note_olevel_maths_extended_2_10_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_10_0.js';
+import { note_olevel_maths_extended_2_10_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_10_1.js';
+import { note_olevel_maths_extended_2_10_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_10_2.js';
+import { note_olevel_maths_extended_2_10_3 } from './olevel_maths_extended/note_olevel_maths_extended_2_10_3.js';
+import { note_olevel_maths_extended_2_11_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_11_0.js';
+import { note_olevel_maths_extended_2_11_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_11_1.js';
+import { note_olevel_maths_extended_2_11_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_11_2.js';
+import { note_olevel_maths_extended_2_11_3 } from './olevel_maths_extended/note_olevel_maths_extended_2_11_3.js';
+import { note_olevel_maths_extended_2_12_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_12_0.js';
+import { note_olevel_maths_extended_2_12_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_12_1.js';
+import { note_olevel_maths_extended_2_12_2 } from './olevel_maths_extended/note_olevel_maths_extended_2_12_2.js';
+import { note_olevel_maths_extended_2_13_0 } from './olevel_maths_extended/note_olevel_maths_extended_2_13_0.js';
+import { note_olevel_maths_extended_2_13_1 } from './olevel_maths_extended/note_olevel_maths_extended_2_13_1.js';
+import { note_olevel_maths_extended_3_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_3_1_0.js';
+import { note_olevel_maths_extended_3_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_3_1_1.js';
+import { note_olevel_maths_extended_3_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_3_1_2.js';
+import { note_olevel_maths_extended_3_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_3_2_0.js';
+import { note_olevel_maths_extended_3_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_3_2_1.js';
+import { note_olevel_maths_extended_3_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_3_2_2.js';
+import { note_olevel_maths_extended_3_2_3 } from './olevel_maths_extended/note_olevel_maths_extended_3_2_3.js';
+import { note_olevel_maths_extended_3_2_4 } from './olevel_maths_extended/note_olevel_maths_extended_3_2_4.js';
+import { note_olevel_maths_extended_3_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_3_3_0.js';
+import { note_olevel_maths_extended_3_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_3_4_0.js';
+import { note_olevel_maths_extended_3_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_3_4_1.js';
+import { note_olevel_maths_extended_3_4_2 } from './olevel_maths_extended/note_olevel_maths_extended_3_4_2.js';
+import { note_olevel_maths_extended_3_4_3 } from './olevel_maths_extended/note_olevel_maths_extended_3_4_3.js';
+import { note_olevel_maths_extended_3_5_0 } from './olevel_maths_extended/note_olevel_maths_extended_3_5_0.js';
+import { note_olevel_maths_extended_3_5_1 } from './olevel_maths_extended/note_olevel_maths_extended_3_5_1.js';
+import { note_olevel_maths_extended_3_6_0 } from './olevel_maths_extended/note_olevel_maths_extended_3_6_0.js';
+import { note_olevel_maths_extended_3_6_1 } from './olevel_maths_extended/note_olevel_maths_extended_3_6_1.js';
+import { note_olevel_maths_extended_3_6_2 } from './olevel_maths_extended/note_olevel_maths_extended_3_6_2.js';
+import { note_olevel_maths_extended_4_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_4_1_0.js';
+import { note_olevel_maths_extended_4_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_4_1_1.js';
+import { note_olevel_maths_extended_4_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_4_2_0.js';
+import { note_olevel_maths_extended_4_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_4_2_1.js';
+import { note_olevel_maths_extended_4_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_4_2_2.js';
+import { note_olevel_maths_extended_4_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_4_3_0.js';
+import { note_olevel_maths_extended_4_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_4_4_0.js';
+import { note_olevel_maths_extended_4_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_4_4_1.js';
+import { note_olevel_maths_extended_4_4_2 } from './olevel_maths_extended/note_olevel_maths_extended_4_4_2.js';
+import { note_olevel_maths_extended_4_5_0 } from './olevel_maths_extended/note_olevel_maths_extended_4_5_0.js';
+import { note_olevel_maths_extended_4_5_1 } from './olevel_maths_extended/note_olevel_maths_extended_4_5_1.js';
+import { note_olevel_maths_extended_4_5_2 } from './olevel_maths_extended/note_olevel_maths_extended_4_5_2.js';
+import { note_olevel_maths_extended_4_5_3 } from './olevel_maths_extended/note_olevel_maths_extended_4_5_3.js';
+import { note_olevel_maths_extended_4_5_4 } from './olevel_maths_extended/note_olevel_maths_extended_4_5_4.js';
+import { note_olevel_maths_extended_4_5_5 } from './olevel_maths_extended/note_olevel_maths_extended_4_5_5.js';
+import { note_olevel_maths_extended_5_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_5_1_0.js';
+import { note_olevel_maths_extended_5_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_5_1_1.js';
+import { note_olevel_maths_extended_5_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_5_1_2.js';
+import { note_olevel_maths_extended_5_1_3 } from './olevel_maths_extended/note_olevel_maths_extended_5_1_3.js';
+import { note_olevel_maths_extended_5_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_5_2_0.js';
+import { note_olevel_maths_extended_5_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_5_2_1.js';
+import { note_olevel_maths_extended_5_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_5_3_0.js';
+import { note_olevel_maths_extended_5_3_1 } from './olevel_maths_extended/note_olevel_maths_extended_5_3_1.js';
+import { note_olevel_maths_extended_5_3_2 } from './olevel_maths_extended/note_olevel_maths_extended_5_3_2.js';
+import { note_olevel_maths_extended_5_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_5_4_0.js';
+import { note_olevel_maths_extended_5_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_5_4_1.js';
+import { note_olevel_maths_extended_5_4_2 } from './olevel_maths_extended/note_olevel_maths_extended_5_4_2.js';
+import { note_olevel_maths_extended_5_4_3 } from './olevel_maths_extended/note_olevel_maths_extended_5_4_3.js';
+import { note_olevel_maths_extended_6_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_6_1_0.js';
+import { note_olevel_maths_extended_6_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_6_1_1.js';
+import { note_olevel_maths_extended_6_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_6_1_2.js';
+import { note_olevel_maths_extended_6_1_3 } from './olevel_maths_extended/note_olevel_maths_extended_6_1_3.js';
+import { note_olevel_maths_extended_6_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_6_2_0.js';
+import { note_olevel_maths_extended_6_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_6_2_1.js';
+import { note_olevel_maths_extended_6_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_6_2_2.js';
+import { note_olevel_maths_extended_6_2_3 } from './olevel_maths_extended/note_olevel_maths_extended_6_2_3.js';
+import { note_olevel_maths_extended_6_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_6_3_0.js';
+import { note_olevel_maths_extended_6_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_6_4_0.js';
+import { note_olevel_maths_extended_6_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_6_4_1.js';
+import { note_olevel_maths_extended_6_4_2 } from './olevel_maths_extended/note_olevel_maths_extended_6_4_2.js';
+import { note_olevel_maths_extended_7_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_7_1_0.js';
+import { note_olevel_maths_extended_7_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_7_1_1.js';
+import { note_olevel_maths_extended_7_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_7_1_2.js';
+import { note_olevel_maths_extended_7_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_7_2_0.js';
+import { note_olevel_maths_extended_7_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_7_2_1.js';
+import { note_olevel_maths_extended_7_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_7_2_2.js';
+import { note_olevel_maths_extended_7_2_3 } from './olevel_maths_extended/note_olevel_maths_extended_7_2_3.js';
+import { note_olevel_maths_extended_8_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_8_1_0.js';
+import { note_olevel_maths_extended_8_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_8_1_1.js';
+import { note_olevel_maths_extended_8_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_8_2_0.js';
+import { note_olevel_maths_extended_8_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_8_2_1.js';
+import { note_olevel_maths_extended_8_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_8_2_2.js';
+import { note_olevel_maths_extended_8_2_3 } from './olevel_maths_extended/note_olevel_maths_extended_8_2_3.js';
+import { note_olevel_maths_extended_8_2_4 } from './olevel_maths_extended/note_olevel_maths_extended_8_2_4.js';
+import { note_olevel_maths_extended_8_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_8_3_0.js';
+import { note_olevel_maths_extended_8_3_1 } from './olevel_maths_extended/note_olevel_maths_extended_8_3_1.js';
+import { note_olevel_maths_extended_9_1_0 } from './olevel_maths_extended/note_olevel_maths_extended_9_1_0.js';
+import { note_olevel_maths_extended_9_1_1 } from './olevel_maths_extended/note_olevel_maths_extended_9_1_1.js';
+import { note_olevel_maths_extended_9_1_2 } from './olevel_maths_extended/note_olevel_maths_extended_9_1_2.js';
+import { note_olevel_maths_extended_9_1_3 } from './olevel_maths_extended/note_olevel_maths_extended_9_1_3.js';
+import { note_olevel_maths_extended_9_1_4 } from './olevel_maths_extended/note_olevel_maths_extended_9_1_4.js';
+import { note_olevel_maths_extended_9_1_5 } from './olevel_maths_extended/note_olevel_maths_extended_9_1_5.js';
+import { note_olevel_maths_extended_9_2_0 } from './olevel_maths_extended/note_olevel_maths_extended_9_2_0.js';
+import { note_olevel_maths_extended_9_2_1 } from './olevel_maths_extended/note_olevel_maths_extended_9_2_1.js';
+import { note_olevel_maths_extended_9_2_2 } from './olevel_maths_extended/note_olevel_maths_extended_9_2_2.js';
+import { note_olevel_maths_extended_9_2_3 } from './olevel_maths_extended/note_olevel_maths_extended_9_2_3.js';
+import { note_olevel_maths_extended_9_2_4 } from './olevel_maths_extended/note_olevel_maths_extended_9_2_4.js';
+import { note_olevel_maths_extended_9_2_5 } from './olevel_maths_extended/note_olevel_maths_extended_9_2_5.js';
+import { note_olevel_maths_extended_9_3_0 } from './olevel_maths_extended/note_olevel_maths_extended_9_3_0.js';
+import { note_olevel_maths_extended_9_3_1 } from './olevel_maths_extended/note_olevel_maths_extended_9_3_1.js';
+import { note_olevel_maths_extended_9_3_2 } from './olevel_maths_extended/note_olevel_maths_extended_9_3_2.js';
+import { note_olevel_maths_extended_9_4_0 } from './olevel_maths_extended/note_olevel_maths_extended_9_4_0.js';
+import { note_olevel_maths_extended_9_4_1 } from './olevel_maths_extended/note_olevel_maths_extended_9_4_1.js';
+import { note_olevel_maths_extended_9_4_2 } from './olevel_maths_extended/note_olevel_maths_extended_9_4_2.js';
+import { note_olevel_maths_extended_9_5_0 } from './olevel_maths_extended/note_olevel_maths_extended_9_5_0.js';
 export const seedNotes = {
   // --- Business Map ---
   'business:1:1:0': note_business_1_1_0,
@@ -3396,6 +3713,323 @@ export const seedNotes = {
   'olevel_physics:6:2:4': note_olevel_physics_6_2_4,
   'olevel_physics:6:2:5': note_olevel_physics_6_2_5,
   'olevel_physics:6:2:6': note_olevel_physics_6_2_6,
+  'olevel_maths_core:5:1:0': note_olevel_maths_core_5_1_0,
+  'olevel_maths_core:5:1:1': note_olevel_maths_core_5_1_1,
+  'olevel_maths_core:5:1:2': note_olevel_maths_core_5_1_2,
+  'olevel_maths_core:5:1:3': note_olevel_maths_core_5_1_3,
+  'olevel_maths_core:5:2:0': note_olevel_maths_core_5_2_0,
+  'olevel_maths_core:5:2:1': note_olevel_maths_core_5_2_1,
+  'olevel_maths_core:5:3:0': note_olevel_maths_core_5_3_0,
+  'olevel_maths_core:5:3:1': note_olevel_maths_core_5_3_1,
+  'olevel_maths_core:5:3:2': note_olevel_maths_core_5_3_2,
+  'olevel_maths_core:5:4:0': note_olevel_maths_core_5_4_0,
+  'olevel_maths_core:5:4:1': note_olevel_maths_core_5_4_1,
+  'olevel_maths_core:5:4:2': note_olevel_maths_core_5_4_2,
+  'olevel_maths_core:6:1:0': note_olevel_maths_core_6_1_0,
+  'olevel_maths_core:6:2:0': note_olevel_maths_core_6_2_0,
+  'olevel_maths_core:6:2:1': note_olevel_maths_core_6_2_1,
+  'olevel_maths_core:7:1:0': note_olevel_maths_core_7_1_0,
+  'olevel_maths_core:7:1:1': note_olevel_maths_core_7_1_1,
+  'olevel_maths_core:7:1:2': note_olevel_maths_core_7_1_2,
+  'olevel_maths_core:7:1:3': note_olevel_maths_core_7_1_3,
+  'olevel_maths_core:8:1:0': note_olevel_maths_core_8_1_0,
+  'olevel_maths_core:8:1:1': note_olevel_maths_core_8_1_1,
+  'olevel_maths_core:8:2:0': note_olevel_maths_core_8_2_0,
+  'olevel_maths_core:8:2:1': note_olevel_maths_core_8_2_1,
+  'olevel_maths_core:8:2:2': note_olevel_maths_core_8_2_2,
+  'olevel_maths_core:8:2:3': note_olevel_maths_core_8_2_3,
+  'olevel_maths_core:8:2:4': note_olevel_maths_core_8_2_4,
+  'olevel_maths_core:9:1:0': note_olevel_maths_core_9_1_0,
+  'olevel_maths_core:9:1:1': note_olevel_maths_core_9_1_1,
+  'olevel_maths_core:9:2:0': note_olevel_maths_core_9_2_0,
+  'olevel_maths_core:9:2:1': note_olevel_maths_core_9_2_1,
+  'olevel_maths_core:9:2:2': note_olevel_maths_core_9_2_2,
+  'olevel_maths_core:9:2:3': note_olevel_maths_core_9_2_3,
+  'olevel_maths_core:9:2:4': note_olevel_maths_core_9_2_4,
+  'olevel_maths_core:9:3:0': note_olevel_maths_core_9_3_0,
+  'olevel_maths_core:9:3:1': note_olevel_maths_core_9_3_1,
+  'olevel_maths_core:9:3:2': note_olevel_maths_core_9_3_2,
+  'olevel_maths_core:9:3:3': note_olevel_maths_core_9_3_3,
+  'olevel_maths_core:9:3:4': note_olevel_maths_core_9_3_4,
+  'olevel_maths_core:9:4:0': note_olevel_maths_core_9_4_0,
+  'olevel_maths_core:9:4:1': note_olevel_maths_core_9_4_1,
+  'olevel_maths_core:9:5:0': note_olevel_maths_core_9_5_0,
+  'olevel_maths_core:9:5:1': note_olevel_maths_core_9_5_1,
+  'olevel_maths_core:1:10:0': note_olevel_maths_core_1_10_0,
+  'olevel_maths_core:1:11:0': note_olevel_maths_core_1_11_0,
+  'olevel_maths_core:1:11:1': note_olevel_maths_core_1_11_1,
+  'olevel_maths_core:1:11:2': note_olevel_maths_core_1_11_2,
+  'olevel_maths_core:1:11:3': note_olevel_maths_core_1_11_3,
+  'olevel_maths_core:1:11:4': note_olevel_maths_core_1_11_4,
+  'olevel_maths_core:1:12:0': note_olevel_maths_core_1_12_0,
+  'olevel_maths_core:1:12:1': note_olevel_maths_core_1_12_1,
+  'olevel_maths_core:1:13:0': note_olevel_maths_core_1_13_0,
+  'olevel_maths_core:1:13:1': note_olevel_maths_core_1_13_1,
+  'olevel_maths_core:1:14:0': note_olevel_maths_core_1_14_0,
+  'olevel_maths_core:1:1:0': note_olevel_maths_core_1_1_0,
+  'olevel_maths_core:1:1:1': note_olevel_maths_core_1_1_1,
+  'olevel_maths_core:1:1:2': note_olevel_maths_core_1_1_2,
+  'olevel_maths_core:1:1:3': note_olevel_maths_core_1_1_3,
+  'olevel_maths_core:1:2:0': note_olevel_maths_core_1_2_0,
+  'olevel_maths_core:1:2:1': note_olevel_maths_core_1_2_1,
+  'olevel_maths_core:1:2:2': note_olevel_maths_core_1_2_2,
+  'olevel_maths_core:1:2:3': note_olevel_maths_core_1_2_3,
+  'olevel_maths_core:1:3:0': note_olevel_maths_core_1_3_0,
+  'olevel_maths_core:1:3:1': note_olevel_maths_core_1_3_1,
+  'olevel_maths_core:1:3:2': note_olevel_maths_core_1_3_2,
+  'olevel_maths_core:1:3:3': note_olevel_maths_core_1_3_3,
+  'olevel_maths_core:1:4:0': note_olevel_maths_core_1_4_0,
+  'olevel_maths_core:1:4:1': note_olevel_maths_core_1_4_1,
+  'olevel_maths_core:1:4:2': note_olevel_maths_core_1_4_2,
+  'olevel_maths_core:1:4:3': note_olevel_maths_core_1_4_3,
+  'olevel_maths_core:1:4:4': note_olevel_maths_core_1_4_4,
+  'olevel_maths_core:1:4:5': note_olevel_maths_core_1_4_5,
+  'olevel_maths_core:1:5:0': note_olevel_maths_core_1_5_0,
+  'olevel_maths_core:1:5:1': note_olevel_maths_core_1_5_1,
+  'olevel_maths_core:1:5:2': note_olevel_maths_core_1_5_2,
+  'olevel_maths_core:1:5:3': note_olevel_maths_core_1_5_3,
+  'olevel_maths_core:1:5:4': note_olevel_maths_core_1_5_4,
+  'olevel_maths_core:1:6:0': note_olevel_maths_core_1_6_0,
+  'olevel_maths_core:1:6:1': note_olevel_maths_core_1_6_1,
+  'olevel_maths_core:1:7:0': note_olevel_maths_core_1_7_0,
+  'olevel_maths_core:1:7:1': note_olevel_maths_core_1_7_1,
+  'olevel_maths_core:1:7:2': note_olevel_maths_core_1_7_2,
+  'olevel_maths_core:1:8:0': note_olevel_maths_core_1_8_0,
+  'olevel_maths_core:1:8:1': note_olevel_maths_core_1_8_1,
+  'olevel_maths_core:1:8:2': note_olevel_maths_core_1_8_2,
+  'olevel_maths_core:1:8:3': note_olevel_maths_core_1_8_3,
+  'olevel_maths_core:1:9:0': note_olevel_maths_core_1_9_0,
+  'olevel_maths_core:1:9:1': note_olevel_maths_core_1_9_1,
+  'olevel_maths_core:1:9:2': note_olevel_maths_core_1_9_2,
+  'olevel_maths_core:1:9:3': note_olevel_maths_core_1_9_3,
+  'olevel_maths_core:2:10:0': note_olevel_maths_core_2_10_0,
+  'olevel_maths_core:2:10:1': note_olevel_maths_core_2_10_1,
+  'olevel_maths_core:2:11:0': note_olevel_maths_core_2_11_0,
+  'olevel_maths_core:2:11:1': note_olevel_maths_core_2_11_1,
+  'olevel_maths_core:2:11:2': note_olevel_maths_core_2_11_2,
+  'olevel_maths_core:2:11:3': note_olevel_maths_core_2_11_3,
+  'olevel_maths_core:2:1:0': note_olevel_maths_core_2_1_0,
+  'olevel_maths_core:2:1:1': note_olevel_maths_core_2_1_1,
+  'olevel_maths_core:2:2:0': note_olevel_maths_core_2_2_0,
+  'olevel_maths_core:2:2:1': note_olevel_maths_core_2_2_1,
+  'olevel_maths_core:2:3:0': note_olevel_maths_core_2_3_0,
+  'olevel_maths_core:2:3:1': note_olevel_maths_core_2_3_1,
+  'olevel_maths_core:2:4:0': note_olevel_maths_core_2_4_0,
+  'olevel_maths_core:2:4:1': note_olevel_maths_core_2_4_1,
+  'olevel_maths_core:2:5:0': note_olevel_maths_core_2_5_0,
+  'olevel_maths_core:2:6:0': note_olevel_maths_core_2_6_0,
+  'olevel_maths_core:2:6:1': note_olevel_maths_core_2_6_1,
+  'olevel_maths_core:2:6:2': note_olevel_maths_core_2_6_2,
+  'olevel_maths_core:2:7:0': note_olevel_maths_core_2_7_0,
+  'olevel_maths_core:2:7:1': note_olevel_maths_core_2_7_1,
+  'olevel_maths_core:2:8:0': note_olevel_maths_core_2_8_0,
+  'olevel_maths_core:2:8:1': note_olevel_maths_core_2_8_1,
+  'olevel_maths_core:2:9:0': note_olevel_maths_core_2_9_0,
+  'olevel_maths_core:3:1:0': note_olevel_maths_core_3_1_0,
+  'olevel_maths_core:3:1:1': note_olevel_maths_core_3_1_1,
+  'olevel_maths_core:3:1:2': note_olevel_maths_core_3_1_2,
+  'olevel_maths_core:3:1:3': note_olevel_maths_core_3_1_3,
+  'olevel_maths_core:3:2:0': note_olevel_maths_core_3_2_0,
+  'olevel_maths_core:3:2:1': note_olevel_maths_core_3_2_1,
+  'olevel_maths_core:3:2:2': note_olevel_maths_core_3_2_2,
+  'olevel_maths_core:3:3:0': note_olevel_maths_core_3_3_0,
+  'olevel_maths_core:3:3:1': note_olevel_maths_core_3_3_1,
+  'olevel_maths_core:3:3:2': note_olevel_maths_core_3_3_2,
+  'olevel_maths_core:3:3:3': note_olevel_maths_core_3_3_3,
+  'olevel_maths_core:4:1:0': note_olevel_maths_core_4_1_0,
+  'olevel_maths_core:4:1:1': note_olevel_maths_core_4_1_1,
+  'olevel_maths_core:4:2:0': note_olevel_maths_core_4_2_0,
+  'olevel_maths_core:4:2:1': note_olevel_maths_core_4_2_1,
+  'olevel_maths_core:4:2:2': note_olevel_maths_core_4_2_2,
+  'olevel_maths_core:4:2:3': note_olevel_maths_core_4_2_3,
+  'olevel_maths_core:4:3:0': note_olevel_maths_core_4_3_0,
+  'olevel_maths_core:4:3:1': note_olevel_maths_core_4_3_1,
+  'olevel_maths_core:4:4:0': note_olevel_maths_core_4_4_0,
+  'olevel_maths_core:4:4:1': note_olevel_maths_core_4_4_1,
+  'olevel_maths_core:4:5:0': note_olevel_maths_core_4_5_0,
+  'olevel_maths_core:4:5:1': note_olevel_maths_core_4_5_1,
+  'olevel_maths_core:4:5:2': note_olevel_maths_core_4_5_2,
+  'olevel_maths_core:4:5:3': note_olevel_maths_core_4_5_3,
+  'olevel_maths_core:4:6:0': note_olevel_maths_core_4_6_0,
+  // --- O-Level Maths Extended Map ---
+  'olevel_maths_extended:1:1:0': note_olevel_maths_extended_1_1_0,
+  'olevel_maths_extended:1:1:1': note_olevel_maths_extended_1_1_1,
+  'olevel_maths_extended:1:1:2': note_olevel_maths_extended_1_1_2,
+  'olevel_maths_extended:1:1:3': note_olevel_maths_extended_1_1_3,
+  'olevel_maths_extended:1:1:4': note_olevel_maths_extended_1_1_4,
+  'olevel_maths_extended:1:2:0': note_olevel_maths_extended_1_2_0,
+  'olevel_maths_extended:1:2:1': note_olevel_maths_extended_1_2_1,
+  'olevel_maths_extended:1:2:2': note_olevel_maths_extended_1_2_2,
+  'olevel_maths_extended:1:2:3': note_olevel_maths_extended_1_2_3,
+  'olevel_maths_extended:1:3:0': note_olevel_maths_extended_1_3_0,
+  'olevel_maths_extended:1:3:1': note_olevel_maths_extended_1_3_1,
+  'olevel_maths_extended:1:3:2': note_olevel_maths_extended_1_3_2,
+  'olevel_maths_extended:1:3:3': note_olevel_maths_extended_1_3_3,
+  'olevel_maths_extended:1:4:0': note_olevel_maths_extended_1_4_0,
+  'olevel_maths_extended:1:4:1': note_olevel_maths_extended_1_4_1,
+  'olevel_maths_extended:1:4:2': note_olevel_maths_extended_1_4_2,
+  'olevel_maths_extended:1:4:3': note_olevel_maths_extended_1_4_3,
+  'olevel_maths_extended:1:4:4': note_olevel_maths_extended_1_4_4,
+  'olevel_maths_extended:1:5:0': note_olevel_maths_extended_1_5_0,
+  'olevel_maths_extended:1:5:1': note_olevel_maths_extended_1_5_1,
+  'olevel_maths_extended:1:5:2': note_olevel_maths_extended_1_5_2,
+  'olevel_maths_extended:1:6:0': note_olevel_maths_extended_1_6_0,
+  'olevel_maths_extended:1:7:0': note_olevel_maths_extended_1_7_0,
+  'olevel_maths_extended:1:7:1': note_olevel_maths_extended_1_7_1,
+  'olevel_maths_extended:1:8:0': note_olevel_maths_extended_1_8_0,
+  'olevel_maths_extended:1:8:1': note_olevel_maths_extended_1_8_1,
+  'olevel_maths_extended:1:8:2': note_olevel_maths_extended_1_8_2,
+  'olevel_maths_extended:1:8:3': note_olevel_maths_extended_1_8_3,
+  'olevel_maths_extended:1:9:0': note_olevel_maths_extended_1_9_0,
+  'olevel_maths_extended:1:9:1': note_olevel_maths_extended_1_9_1,
+  'olevel_maths_extended:1:9:2': note_olevel_maths_extended_1_9_2,
+  'olevel_maths_extended:1:10:0': note_olevel_maths_extended_1_10_0,
+  'olevel_maths_extended:1:10:1': note_olevel_maths_extended_1_10_1,
+  'olevel_maths_extended:1:10:2': note_olevel_maths_extended_1_10_2,
+  'olevel_maths_extended:1:10:3': note_olevel_maths_extended_1_10_3,
+  'olevel_maths_extended:1:10:4': note_olevel_maths_extended_1_10_4,
+  'olevel_maths_extended:1:11:0': note_olevel_maths_extended_1_11_0,
+  'olevel_maths_extended:1:11:1': note_olevel_maths_extended_1_11_1,
+  'olevel_maths_extended:1:12:0': note_olevel_maths_extended_1_12_0,
+  'olevel_maths_extended:1:12:1': note_olevel_maths_extended_1_12_1,
+  'olevel_maths_extended:1:12:2': note_olevel_maths_extended_1_12_2,
+  'olevel_maths_extended:1:13:0': note_olevel_maths_extended_1_13_0,
+  'olevel_maths_extended:2:1:0': note_olevel_maths_extended_2_1_0,
+  'olevel_maths_extended:2:1:1': note_olevel_maths_extended_2_1_1,
+  'olevel_maths_extended:2:1:2': note_olevel_maths_extended_2_1_2,
+  'olevel_maths_extended:2:1:3': note_olevel_maths_extended_2_1_3,
+  'olevel_maths_extended:2:2:0': note_olevel_maths_extended_2_2_0,
+  'olevel_maths_extended:2:3:0': note_olevel_maths_extended_2_3_0,
+  'olevel_maths_extended:2:3:1': note_olevel_maths_extended_2_3_1,
+  'olevel_maths_extended:2:3:2': note_olevel_maths_extended_2_3_2,
+  'olevel_maths_extended:2:3:3': note_olevel_maths_extended_2_3_3,
+  'olevel_maths_extended:2:3:4': note_olevel_maths_extended_2_3_4,
+  'olevel_maths_extended:2:3:5': note_olevel_maths_extended_2_3_5,
+  'olevel_maths_extended:2:3:6': note_olevel_maths_extended_2_3_6,
+  'olevel_maths_extended:2:3:7': note_olevel_maths_extended_2_3_7,
+  'olevel_maths_extended:2:3:8': note_olevel_maths_extended_2_3_8,
+  'olevel_maths_extended:2:4:0': note_olevel_maths_extended_2_4_0,
+  'olevel_maths_extended:2:4:1': note_olevel_maths_extended_2_4_1,
+  'olevel_maths_extended:2:5:0': note_olevel_maths_extended_2_5_0,
+  'olevel_maths_extended:2:5:1': note_olevel_maths_extended_2_5_1,
+  'olevel_maths_extended:2:5:2': note_olevel_maths_extended_2_5_2,
+  'olevel_maths_extended:2:6:0': note_olevel_maths_extended_2_6_0,
+  'olevel_maths_extended:2:6:1': note_olevel_maths_extended_2_6_1,
+  'olevel_maths_extended:2:7:0': note_olevel_maths_extended_2_7_0,
+  'olevel_maths_extended:2:7:1': note_olevel_maths_extended_2_7_1,
+  'olevel_maths_extended:2:8:0': note_olevel_maths_extended_2_8_0,
+  'olevel_maths_extended:2:8:1': note_olevel_maths_extended_2_8_1,
+  'olevel_maths_extended:2:8:2': note_olevel_maths_extended_2_8_2,
+  'olevel_maths_extended:2:8:3': note_olevel_maths_extended_2_8_3,
+  'olevel_maths_extended:2:9:0': note_olevel_maths_extended_2_9_0,
+  'olevel_maths_extended:2:9:1': note_olevel_maths_extended_2_9_1,
+  'olevel_maths_extended:2:9:2': note_olevel_maths_extended_2_9_2,
+  'olevel_maths_extended:2:10:0': note_olevel_maths_extended_2_10_0,
+  'olevel_maths_extended:2:10:1': note_olevel_maths_extended_2_10_1,
+  'olevel_maths_extended:2:10:2': note_olevel_maths_extended_2_10_2,
+  'olevel_maths_extended:2:10:3': note_olevel_maths_extended_2_10_3,
+  'olevel_maths_extended:2:11:0': note_olevel_maths_extended_2_11_0,
+  'olevel_maths_extended:2:11:1': note_olevel_maths_extended_2_11_1,
+  'olevel_maths_extended:2:11:2': note_olevel_maths_extended_2_11_2,
+  'olevel_maths_extended:2:11:3': note_olevel_maths_extended_2_11_3,
+  'olevel_maths_extended:2:12:0': note_olevel_maths_extended_2_12_0,
+  'olevel_maths_extended:2:12:1': note_olevel_maths_extended_2_12_1,
+  'olevel_maths_extended:2:12:2': note_olevel_maths_extended_2_12_2,
+  'olevel_maths_extended:2:13:0': note_olevel_maths_extended_2_13_0,
+  'olevel_maths_extended:2:13:1': note_olevel_maths_extended_2_13_1,
+  'olevel_maths_extended:3:1:0': note_olevel_maths_extended_3_1_0,
+  'olevel_maths_extended:3:1:1': note_olevel_maths_extended_3_1_1,
+  'olevel_maths_extended:3:1:2': note_olevel_maths_extended_3_1_2,
+  'olevel_maths_extended:3:2:0': note_olevel_maths_extended_3_2_0,
+  'olevel_maths_extended:3:2:1': note_olevel_maths_extended_3_2_1,
+  'olevel_maths_extended:3:2:2': note_olevel_maths_extended_3_2_2,
+  'olevel_maths_extended:3:2:3': note_olevel_maths_extended_3_2_3,
+  'olevel_maths_extended:3:2:4': note_olevel_maths_extended_3_2_4,
+  'olevel_maths_extended:3:3:0': note_olevel_maths_extended_3_3_0,
+  'olevel_maths_extended:3:4:0': note_olevel_maths_extended_3_4_0,
+  'olevel_maths_extended:3:4:1': note_olevel_maths_extended_3_4_1,
+  'olevel_maths_extended:3:4:2': note_olevel_maths_extended_3_4_2,
+  'olevel_maths_extended:3:4:3': note_olevel_maths_extended_3_4_3,
+  'olevel_maths_extended:3:5:0': note_olevel_maths_extended_3_5_0,
+  'olevel_maths_extended:3:5:1': note_olevel_maths_extended_3_5_1,
+  'olevel_maths_extended:3:6:0': note_olevel_maths_extended_3_6_0,
+  'olevel_maths_extended:3:6:1': note_olevel_maths_extended_3_6_1,
+  'olevel_maths_extended:3:6:2': note_olevel_maths_extended_3_6_2,
+  'olevel_maths_extended:4:1:0': note_olevel_maths_extended_4_1_0,
+  'olevel_maths_extended:4:1:1': note_olevel_maths_extended_4_1_1,
+  'olevel_maths_extended:4:2:0': note_olevel_maths_extended_4_2_0,
+  'olevel_maths_extended:4:2:1': note_olevel_maths_extended_4_2_1,
+  'olevel_maths_extended:4:2:2': note_olevel_maths_extended_4_2_2,
+  'olevel_maths_extended:4:3:0': note_olevel_maths_extended_4_3_0,
+  'olevel_maths_extended:4:4:0': note_olevel_maths_extended_4_4_0,
+  'olevel_maths_extended:4:4:1': note_olevel_maths_extended_4_4_1,
+  'olevel_maths_extended:4:4:2': note_olevel_maths_extended_4_4_2,
+  'olevel_maths_extended:4:5:0': note_olevel_maths_extended_4_5_0,
+  'olevel_maths_extended:4:5:1': note_olevel_maths_extended_4_5_1,
+  'olevel_maths_extended:4:5:2': note_olevel_maths_extended_4_5_2,
+  'olevel_maths_extended:4:5:3': note_olevel_maths_extended_4_5_3,
+  'olevel_maths_extended:4:5:4': note_olevel_maths_extended_4_5_4,
+  'olevel_maths_extended:4:5:5': note_olevel_maths_extended_4_5_5,
+  'olevel_maths_extended:5:1:0': note_olevel_maths_extended_5_1_0,
+  'olevel_maths_extended:5:1:1': note_olevel_maths_extended_5_1_1,
+  'olevel_maths_extended:5:1:2': note_olevel_maths_extended_5_1_2,
+  'olevel_maths_extended:5:1:3': note_olevel_maths_extended_5_1_3,
+  'olevel_maths_extended:5:2:0': note_olevel_maths_extended_5_2_0,
+  'olevel_maths_extended:5:2:1': note_olevel_maths_extended_5_2_1,
+  'olevel_maths_extended:5:3:0': note_olevel_maths_extended_5_3_0,
+  'olevel_maths_extended:5:3:1': note_olevel_maths_extended_5_3_1,
+  'olevel_maths_extended:5:3:2': note_olevel_maths_extended_5_3_2,
+  'olevel_maths_extended:5:4:0': note_olevel_maths_extended_5_4_0,
+  'olevel_maths_extended:5:4:1': note_olevel_maths_extended_5_4_1,
+  'olevel_maths_extended:5:4:2': note_olevel_maths_extended_5_4_2,
+  'olevel_maths_extended:5:4:3': note_olevel_maths_extended_5_4_3,
+  'olevel_maths_extended:6:1:0': note_olevel_maths_extended_6_1_0,
+  'olevel_maths_extended:6:1:1': note_olevel_maths_extended_6_1_1,
+  'olevel_maths_extended:6:1:2': note_olevel_maths_extended_6_1_2,
+  'olevel_maths_extended:6:1:3': note_olevel_maths_extended_6_1_3,
+  'olevel_maths_extended:6:2:0': note_olevel_maths_extended_6_2_0,
+  'olevel_maths_extended:6:2:1': note_olevel_maths_extended_6_2_1,
+  'olevel_maths_extended:6:2:2': note_olevel_maths_extended_6_2_2,
+  'olevel_maths_extended:6:2:3': note_olevel_maths_extended_6_2_3,
+  'olevel_maths_extended:6:3:0': note_olevel_maths_extended_6_3_0,
+  'olevel_maths_extended:6:4:0': note_olevel_maths_extended_6_4_0,
+  'olevel_maths_extended:6:4:1': note_olevel_maths_extended_6_4_1,
+  'olevel_maths_extended:6:4:2': note_olevel_maths_extended_6_4_2,
+  'olevel_maths_extended:7:1:0': note_olevel_maths_extended_7_1_0,
+  'olevel_maths_extended:7:1:1': note_olevel_maths_extended_7_1_1,
+  'olevel_maths_extended:7:1:2': note_olevel_maths_extended_7_1_2,
+  'olevel_maths_extended:7:2:0': note_olevel_maths_extended_7_2_0,
+  'olevel_maths_extended:7:2:1': note_olevel_maths_extended_7_2_1,
+  'olevel_maths_extended:7:2:2': note_olevel_maths_extended_7_2_2,
+  'olevel_maths_extended:7:2:3': note_olevel_maths_extended_7_2_3,
+  'olevel_maths_extended:8:1:0': note_olevel_maths_extended_8_1_0,
+  'olevel_maths_extended:8:1:1': note_olevel_maths_extended_8_1_1,
+  'olevel_maths_extended:8:2:0': note_olevel_maths_extended_8_2_0,
+  'olevel_maths_extended:8:2:1': note_olevel_maths_extended_8_2_1,
+  'olevel_maths_extended:8:2:2': note_olevel_maths_extended_8_2_2,
+  'olevel_maths_extended:8:2:3': note_olevel_maths_extended_8_2_3,
+  'olevel_maths_extended:8:2:4': note_olevel_maths_extended_8_2_4,
+  'olevel_maths_extended:8:3:0': note_olevel_maths_extended_8_3_0,
+  'olevel_maths_extended:8:3:1': note_olevel_maths_extended_8_3_1,
+  'olevel_maths_extended:9:1:0': note_olevel_maths_extended_9_1_0,
+  'olevel_maths_extended:9:1:1': note_olevel_maths_extended_9_1_1,
+  'olevel_maths_extended:9:1:2': note_olevel_maths_extended_9_1_2,
+  'olevel_maths_extended:9:1:3': note_olevel_maths_extended_9_1_3,
+  'olevel_maths_extended:9:1:4': note_olevel_maths_extended_9_1_4,
+  'olevel_maths_extended:9:1:5': note_olevel_maths_extended_9_1_5,
+  'olevel_maths_extended:9:2:0': note_olevel_maths_extended_9_2_0,
+  'olevel_maths_extended:9:2:1': note_olevel_maths_extended_9_2_1,
+  'olevel_maths_extended:9:2:2': note_olevel_maths_extended_9_2_2,
+  'olevel_maths_extended:9:2:3': note_olevel_maths_extended_9_2_3,
+  'olevel_maths_extended:9:2:4': note_olevel_maths_extended_9_2_4,
+  'olevel_maths_extended:9:2:5': note_olevel_maths_extended_9_2_5,
+  'olevel_maths_extended:9:3:0': note_olevel_maths_extended_9_3_0,
+  'olevel_maths_extended:9:3:1': note_olevel_maths_extended_9_3_1,
+  'olevel_maths_extended:9:3:2': note_olevel_maths_extended_9_3_2,
+  'olevel_maths_extended:9:4:0': note_olevel_maths_extended_9_4_0,
+  'olevel_maths_extended:9:4:1': note_olevel_maths_extended_9_4_1,
+  'olevel_maths_extended:9:4:2': note_olevel_maths_extended_9_4_2,
+  'olevel_maths_extended:9:5:0': note_olevel_maths_extended_9_5_0,
 };
 export function getSeedNote(noteId) {
   // Strip 'note:' prefix if present for backwards compatibility

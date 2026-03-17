@@ -333,7 +333,19 @@
     text-overflow: ellipsis;
 }
 
-/* Unit content panel */
+/* Unit section (stacked layout) */
+.chapter-unit-section {
+    margin-bottom: var(--space-12);
+    padding-bottom: var(--space-8);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.chapter-unit-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Unit content panel (kept for compatibility) */
 .chapter-unit-content {
     animation: fadeIn 0.18s ease-out;
 }

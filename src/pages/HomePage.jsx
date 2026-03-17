@@ -30,6 +30,8 @@ const oLevelSubjects = [
     { id: 'olevel_chemistry', name: 'IGCSE Chemistry', chapters: 12, color: '#8b5cf6', emoji: '🧪' },
     { id: 'olevel_physics', name: 'IGCSE Physics', chapters: 22, color: '#3b82f6', emoji: '⚡' },
     { id: 'olevel_business', name: 'IGCSE Business', chapters: 6, color: '#f59e0b', emoji: '💼' },
+    { id: 'olevel_maths_core', name: 'IGCSE Maths Core', chapters: 9, color: '#ef4444', emoji: '📐' },
+    { id: 'olevel_maths_extended', name: 'IGCSE Maths Extended', chapters: 9, color: '#e11d48', emoji: '🧮' },
 ];
 
 export default function HomePage() {

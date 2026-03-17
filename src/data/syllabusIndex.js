@@ -11,6 +11,8 @@ import { oLevelBiologySyllabus } from './oLevelBiologySyllabus.js';
 import { oLevelChemistrySyllabus } from './oLevelChemistrySyllabus.js';
 import { oLevelPhysicsSyllabus } from './oLevelPhysicsSyllabus.js';
 import { oLevelBusinessSyllabus } from './oLevelBusinessSyllabus.js';
+import { oLevelMathsCoreSyllabus } from './oLevelMathsCoreSyllabus.js';
+import { oLevelMathsExtendedSyllabus } from './oLevelMathsExtendedSyllabus.js';
 
 export const syllabusesBySubject = {
     // A Level
@@ -29,6 +31,8 @@ export const syllabusesBySubject = {
     olevel_chemistry: oLevelChemistrySyllabus,
     olevel_physics: oLevelPhysicsSyllabus,
     olevel_business: oLevelBusinessSyllabus,
+    olevel_maths_core: oLevelMathsCoreSyllabus,
+    olevel_maths_extended: oLevelMathsExtendedSyllabus,
 };
 
 export function getSyllabusBySubject(subject) {
@@ -53,6 +57,8 @@ export function getSubjectLabel(subject) {
         olevel_chemistry: 'IGCSE Chemistry (0620)',
         olevel_physics: 'IGCSE Physics (0625)',
         olevel_business: 'IGCSE Business (0450)',
+        olevel_maths_core: 'IGCSE Mathematics Core (0580)',
+        olevel_maths_extended: 'IGCSE Mathematics Extended (0580)',
     };
     return labels[key] || (key.charAt(0).toUpperCase() + key.slice(1));
 }

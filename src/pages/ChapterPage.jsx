@@ -59,25 +59,14 @@ export default function ChapterPage() {
     const syllabus = useMemo(() => getSyllabusBySubject(subject), [subject]);
     const subjectLabel = useMemo(() => getSubjectLabel(subject), [subject]);
 
-    // Active unit — default to first unit
-    const [activeUnitId, setActiveUnitId] = useState(syllabus.units[0]?.id ?? 1);
-
-    // When syllabus changes (subject switch), reset to first unit
-    const activeUnit = useMemo(() => {
-        const found = syllabus.units.find((u) => String(u.id) === String(activeUnitId));
-        return found ?? syllabus.units[0];
-    }, [activeUnitId, syllabus]);
-
-    // Recompute totals for the active unit
-    const totalTopics = activeUnit?.topics?.length ?? 0;
-    const totalSubtopics = useMemo(
-        () => (activeUnit?.topics ?? []).reduce((sum, t) => sum + t.subtopics.length, 0),
-        [activeUnit]
+    const totalTopics = useMemo(
+        () => syllabus.units.reduce((sum, u) => sum + u.topics.length, 0),
+        [syllabus]
     );
-
-    const handleUnitTab = (unitId) => {
-        setActiveUnitId(unitId);
-    };
+    const totalSubtopics = useMemo(
+        () => syllabus.units.reduce((sum, u) => sum + u.topics.reduce((s, t) => s + t.subtopics.length, 0), 0),
+        [syllabus]
+    );
 
     return (
         <div className="chapter-page animate-fade-in">
@@ -88,56 +77,42 @@ export default function ChapterPage() {
                     <h1 className="chapter-page-title">📗 {subjectLabel}</h1>
                     <p className="chapter-page-qual">{syllabus.qualification}</p>
                 </div>
-            </div>
-
-            {/* ── Unit tabs ── */}
-            <div className="chapter-tabs-wrap">
-                <div className="chapter-tabs" role="tablist">
-                    {syllabus.units.map((unit) => {
-                        const isActive = String(unit.id) === String(activeUnit?.id);
-                        return (
-                            <button
-                                key={unit.id}
-                                role="tab"
-                                aria-selected={isActive}
-                                className={`chapter-tab ${isActive ? 'chapter-tab--active' : ''}`}
-                                onClick={() => handleUnitTab(unit.id)}
-                            >
-                                <span className="chapter-tab-code">{unit.code}</span>
-                                <span className="chapter-tab-title">{unit.title}</span>
-                            </button>
-                        );
-                    })}
+                <div className="chapter-meta">
+                    <span><BookOpen size={14} /> {totalTopics} topics</span>
+                    <span><ListTree size={14} /> {totalSubtopics} subtopics</span>
                 </div>
             </div>
 
-            {/* ── Unit content ── */}
-            {activeUnit && (
-                <div className="chapter-unit-content" role="tabpanel">
-                    <div className="chapter-unit-meta">
-                        <h2 className="chapter-unit-heading">
-                            Unit {activeUnit.id}: {activeUnit.title}
-                        </h2>
-                        <div className="chapter-meta">
-                            <span><BookOpen size={14} /> {totalTopics} topic{totalTopics !== 1 ? 's' : ''}</span>
-                            <span><ListTree size={14} /> {totalSubtopics} subtopics</span>
-                            <span>Source: {syllabus.source}</span>
+            {/* ── All units stacked ── */}
+            {syllabus.units.map((unit) => {
+                const unitSubtopics = unit.topics.reduce((s, t) => s + t.subtopics.length, 0);
+                return (
+                    <div key={unit.id} className="chapter-unit-section">
+                        <div className="chapter-unit-meta">
+                            <h2 className="chapter-unit-heading">
+                                Unit {unit.id}: {unit.title}
+                            </h2>
+                            <div className="chapter-meta">
+                                <span><BookOpen size={14} /> {unit.topics.length} topic{unit.topics.length !== 1 ? 's' : ''}</span>
+                                <span><ListTree size={14} /> {unitSubtopics} subtopics</span>
+                                <span>Source: {syllabus.source}</span>
+                            </div>
+                        </div>
+
+                        <div className="chapter-topics-list">
+                            {unit.topics.map((topic) => (
+                                <TopicAccordion
+                                    key={`${unit.id}-${topic.id}`}
+                                    topic={topic}
+                                    unitId={unit.id}
+                                    subject={subject}
+                                    defaultOpen={true}
+                                />
+                            ))}
                         </div>
                     </div>
-
-                    <div className="chapter-topics-list">
-                        {activeUnit.topics.map((topic, i) => (
-                            <TopicAccordion
-                                key={`${activeUnit.id}-${topic.id}`}
-                                topic={topic}
-                                unitId={activeUnit.id}
-                                subject={subject}
-                                defaultOpen={i === 0}
-                            />
-                        ))}
-                    </div>
-                </div>
-            )}
+                );
+            })}
         </div>
     );
 }
