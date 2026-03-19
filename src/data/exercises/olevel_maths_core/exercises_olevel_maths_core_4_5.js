@@ -151,7 +151,7 @@ export const exercises_olevel_maths_core_4_5 = {
     },
     {
       id: 'dd-9',
-      stem: 'Sort the information you need vs don't need to find OM (perpendicular from centre to chord).',
+      stem: "Sort the information you need vs don't need to find OM (perpendicular from centre to chord).",
       categories: ['Needed', 'Not needed'],
       items: [
         { text: 'Length of the radius', category: 'Needed' },

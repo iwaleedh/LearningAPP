@@ -15,6 +15,7 @@ import { oLevelChemistryPastPapers, oLevelChemistryAvailableYears, oLevelChemist
 import { oLevelPhysicsPastPapers, oLevelPhysicsAvailableYears, oLevelPhysicsAvailableUnits } from '../data/oLevelPhysicsPastPapers';
 import { oLevelBiologyPastPapers, oLevelBiologyAvailableYears, oLevelBiologyAvailableUnits } from '../data/oLevelBiologyPastPapers';
 import { oLevelMathematicsPastPapers, oLevelMathematicsAvailableYears, oLevelMathematicsAvailableUnits } from '../data/oLevelMathematicsPastPapers';
+import { oLevelBusinessPastPapers, oLevelBusinessAvailableYears, oLevelBusinessAvailableUnits } from '../data/oLevelBusinessPastPapers';
 import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
 import './Pages.css';
 
@@ -72,6 +73,10 @@ const subjects = [
         id: 'olevel-mathematics', name: 'O Level Mathematics', icon: Calculator, color: '#d97706',
         papers: oLevelMathematicsPastPapers, years: oLevelMathematicsAvailableYears, units: oLevelMathematicsAvailableUnits, isOLevel: true
     },
+    {
+        id: 'olevel-business', name: 'O Level Business', icon: FileText, color: '#be185d',
+        papers: oLevelBusinessPastPapers, years: oLevelBusinessAvailableYears, units: oLevelBusinessAvailableUnits, isOLevel: true
+    },
 ];
 
 // Download button component
@@ -83,6 +88,14 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) {
 
     const handleDownload = () => {
         if (!url) return;
+
+        // External URLs (gceguide.cc, Cambridge Int'l) — open in new tab
+        if (url.startsWith('https://')) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+            setStatus('success');
+            setTimeout(() => setStatus(null), 2000);
+            return;
+        }
 
         const result = downloadFile(url, filename);
 
@@ -113,16 +126,16 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) {
     );
 }
 
-// View PDF button component
-function ViewPdfButton({ paper, type, label, onClick }) {
+// View PDF button component — always opens in a new browser tab
+function ViewPdfButton({ paper, type, label }) {
     const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
 
     return (
         <button
             className="btn btn-sm btn-outline"
-            onClick={() => onClick(url, label)}
+            onClick={() => url && window.open(url, '_blank', 'noopener,noreferrer')}
             disabled={!url}
-            title={!url ? 'Coming soon' : `View ${label}`}
+            title={!url ? 'Coming soon' : `Open ${label} in new tab`}
             style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -135,41 +148,8 @@ function ViewPdfButton({ paper, type, label, onClick }) {
     );
 }
 
-// PDF Viewer Modal
-function PdfViewerModal({ url, title, onClose }) {
-    if (!url) return null;
-
-    return (
-        <div className="pdf-modal-overlay" onClick={onClose}>
-            <div className="pdf-modal-content" onClick={(e) => e.stopPropagation()}>
-                <div className="pdf-modal-header">
-                    <h3>{title}</h3>
-                    <button className="btn btn-icon btn-ghost" onClick={onClose}>
-                        <X size={20} />
-                    </button>
-                </div>
-                <div className="pdf-modal-body">
-                    <iframe
-                        src={url}
-                        title={title}
-                        className="pdf-iframe"
-                    />
-                </div>
-                <div className="pdf-modal-footer">
-                    <DownloadButton
-                        paper={{ questionPaperUrl: url, year: '', month: '', unit: '' }}
-                        type="question"
-                        label="Download PDF"
-                        icon={Download}
-                    />
-                </div>
-            </div>
-        </div>
-    );
-}
-
 // Past paper card component - grouped by year/month
-function ExamSessionCard({ year, month, papers, onViewPdf, isOLevel = false }) {
+function ExamSessionCard({ year, month, papers, isOLevel = false }) {
     const [expanded, setExpanded] = useState(false);
     const [expandedPaperId, setExpandedPaperId] = useState(null);
     const navigate = useNavigate();
@@ -219,7 +199,6 @@ function ExamSessionCard({ year, month, papers, onViewPdf, isOLevel = false }) {
                                         paper={paper}
                                         type="question"
                                         label="View Question Paper"
-                                        onViewPdf={(url, label) => onViewPdf(url, `${year} ${month} ${paper.unit} - Question Paper`)}
                                     />
                                     <DownloadButton
                                         paper={paper}
@@ -232,7 +211,6 @@ function ExamSessionCard({ year, month, papers, onViewPdf, isOLevel = false }) {
                                         paper={paper}
                                         type="marking"
                                         label="View Marking Scheme"
-                                        onViewPdf={(url, label) => onViewPdf(url, `${year} ${month} ${paper.unit} - Marking Scheme`)}
                                     />
                                     <DownloadButton
                                         paper={paper}
@@ -269,7 +247,6 @@ export default function PastPapersPage() {
     const [filterUnit, setFilterUnit] = useState('all');
     const [attempts, setAttempts] = useState([]);
     const [showPerformance, setShowPerformance] = useState(false);
-    const [pdfViewer, setPdfViewer] = useState({ url: null, title: null });
 
     // Get active subject config
     const subjectConfig = subjects.find(s => s.id === activeSubject);
@@ -330,27 +307,6 @@ export default function PastPapersPage() {
     }, {});
 
     const groupedPapersArray = Object.values(groupedPapers);
-
-    const handleViewPdf = (url, title) => {
-        setPdfViewer({ url, title });
-    };
-
-    const handleClosePdf = () => {
-        setPdfViewer({ url: null, title: null });
-    };
-
-    // PDF Viewer Mode
-    if (pdfViewer.url) {
-        return (
-            <div className="animate-fade-in" style={{ maxWidth: '100%' }}>
-                <PdfViewerModal
-                    url={pdfViewer.url}
-                    title={pdfViewer.title}
-                    onClose={handleClosePdf}
-                />
-            </div>
-        );
-    }
 
     return (
         <div className="animate-fade-in" style={{ maxWidth: '1100px' }}>
@@ -461,7 +417,6 @@ export default function PastPapersPage() {
                             year={session.year}
                             month={session.month}
                             papers={session.papers}
-                            onViewPdf={handleViewPdf}
                             isOLevel={subjectConfig?.isOLevel || false}
                         />
                     ))

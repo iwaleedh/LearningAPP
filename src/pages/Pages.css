@@ -4923,3 +4923,117 @@
     .lc-import-pdf-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: var(--space-2); }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   NOTIFICATION BELL
+═══════════════════════════════════════════════════════════ */
+
+.notification-bell-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notification-btn {
+    position: relative;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 8px;
+    background: var(--color-error, #ef4444);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 320px;
+    max-height: 420px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-radius: var(--radius-lg, 12px);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+.notification-dropdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.notification-dropdown-header h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.notification-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-6) var(--space-4);
+    color: var(--color-text-secondary);
+    font-size: 13px;
+}
+
+.notification-empty span {
+    font-size: 28px;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--color-border-light, var(--color-border));
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.notification-item-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-item-body p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--color-text);
+}
+
+.notification-item-actions {
+    display: flex;
+    gap: var(--space-1);
+    flex-shrink: 0;
+}
+

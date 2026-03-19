@@ -1,0 +1,316 @@
+export const exercises_olevel_maths_core_9_3 = {
+
+  mcq: [
+    // ── Bar charts ──
+    { id: 'mcq-1', stem: 'In a bar chart, what must be true about the widths of the bars?', options: ['They increase from left to right', 'They must all be equal', 'They must match the frequency', 'They can be any width'], correctAnswer: 1, rationale: 'A key rule of bar charts is that all bars must be of equal width. The height represents the frequency, not the width.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-2', stem: 'A bar chart shows: Red = 8, Blue = 5, Green = 12, Yellow = 3. How many items are there in total?', options: ['25', '28', '20', '30'], correctAnswer: 1, rationale: '8 + 5 + 12 + 3 = 28.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-3', stem: 'Why must there be gaps between the bars in a bar chart?', options: ['To make it look neat', 'Because the data is continuous', 'Because the data is discrete or categorical', 'To save space'], correctAnswer: 2, rationale: 'Gaps between bars show that the data is discrete or categorical (separate groups), not continuous.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-4', stem: 'A bar chart shows the number of pets owned by 50 students. The bar for "Dog" reaches 18. What fraction of students own a dog?', options: ['18/100', '18/50', '18/32', '50/18'], correctAnswer: 1, rationale: 'Fraction = frequency ÷ total = 18/50 = 9/25.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-5', stem: 'In a compound (grouped) bar chart, what feature is essential?', options: ['Bars must touch', 'A key or legend', 'Only two categories', 'Bars must be horizontal'], correctAnswer: 1, rationale: 'A compound bar chart places bars side by side for comparison, so a key/legend is essential to identify each group.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-6', stem: 'A bar chart of favourite fruits has: Apple = 15, Banana = 10, Mango = 20, Orange = 5. How many more students chose Mango than Banana?', options: ['5', '10', '15', '25'], correctAnswer: 1, rationale: '20 − 10 = 10 more students.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-7', stem: 'Which axis usually shows the frequency in a vertical bar chart?', options: ['x-axis', 'y-axis', 'Both axes', 'Neither axis'], correctAnswer: 1, rationale: 'In a vertical bar chart, the y-axis (vertical) shows the frequency and the x-axis shows the categories.', topic: 'Bar charts and pie charts' },
+
+    // ── Pie charts ──
+    { id: 'mcq-8', stem: 'The total angle in a pie chart is:', options: ['180°', '270°', '360°', '90°'], correctAnswer: 2, rationale: 'A pie chart is a full circle, which is 360°.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-9', stem: 'In a survey of 60 students, 15 chose Science. What is the sector angle for Science on a pie chart?', options: ['15°', '60°', '90°', '45°'], correctAnswer: 2, rationale: 'Sector angle = (15/60) × 360° = 0.25 × 360° = 90°.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-10', stem: 'A pie chart of 40 people has a sector of 72° for "Walk". How many people walk?', options: ['8', '10', '12', '6'], correctAnswer: 0, rationale: 'Frequency = (72/360) × 40 = 0.2 × 40 = 8 people.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-11', stem: 'A pie chart is drawn for 90 students. The "Maths" sector angle is 120°. How many students chose Maths?', options: ['30', '40', '20', '60'], correctAnswer: 0, rationale: 'Frequency = (120/360) × 90 = (1/3) × 90 = 30 students.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-12', stem: 'In a survey of 50 people, 20 prefer tea. What sector angle represents tea?', options: ['100°', '120°', '144°', '160°'], correctAnswer: 2, rationale: '(20/50) × 360° = 0.4 × 360° = 144°.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-13', stem: 'After calculating all sector angles for a pie chart, what must you always check?', options: ['Each angle is less than 180°', 'The angles sum to 360°', 'The largest angle is first', 'All angles are equal'], correctAnswer: 1, rationale: 'All sector angles in a pie chart must add up to 360°.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-14', stem: 'A pie chart has sectors of 90°, 120°, 60° and one unknown angle. What is the missing angle?', options: ['80°', '90°', '100°', '70°'], correctAnswer: 1, rationale: '360° − (90° + 120° + 60°) = 360° − 270° = 90°.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-15', stem: 'Why can you NOT just use the frequency value directly as the sector angle?', options: ['Because angles must be even numbers', 'Because it only works when the total is exactly 360', 'Because frequencies are always less than 10', 'Because a protractor only goes to 180°'], correctAnswer: 1, rationale: 'Using frequency directly as the angle only works if the total frequency is 360. Otherwise you must use (frequency/total) × 360°.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-16', stem: 'In a pie chart of 80 students, the "Bus" sector is 1/4 of the circle. How many students travel by bus?', options: ['40', '20', '10', '25'], correctAnswer: 1, rationale: '1/4 of the circle = 90°. Frequency = (90/360) × 80 = 20 students.', topic: 'Bar charts and pie charts' },
+
+    // ── Pictograms ──
+    { id: 'mcq-17', stem: 'In a pictogram, what must always be included?', options: ['Gaps between symbols', 'A key showing what one symbol represents', 'Exactly 10 symbols per row', 'A title in bold'], correctAnswer: 1, rationale: 'A key is essential in a pictogram so the reader knows what each symbol represents.', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-18', stem: 'In a pictogram, the key says ★ = 6 books. A row shows ★★★½. How many books does this represent?', options: ['18', '21', '15', '24'], correctAnswer: 1, rationale: '3 full stars = 3 × 6 = 18. Half star = 3. Total = 18 + 3 = 21 books.', topic: 'Bar charts and pie charts' },
+
+    // ── Histograms ──
+    { id: 'mcq-19', stem: 'How does a histogram differ from a bar chart?', options: ['Bars are thinner', 'There are no gaps between bars', 'It must be horizontal', 'It can only show 5 categories'], correctAnswer: 1, rationale: 'In a histogram, bars touch each other because the data is continuous (grouped). In a bar chart, there are gaps because data is discrete.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-20', stem: 'A histogram is used for which type of data?', options: ['Categorical (e.g. colours)', 'Continuous grouped data (e.g. heights)', 'Individual names', 'Paired data'], correctAnswer: 1, rationale: 'Histograms display continuous grouped data such as heights, weights or times.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-21', stem: 'In a histogram showing heights of students, the class 140 ≤ h < 150 has a frequency of 12. What does the bar height represent?', options: ['The range 140 to 150', 'The number of students (12)', 'The mean height', 'The class width'], correctAnswer: 1, rationale: 'At IGCSE Core level (equal class widths), the bar height represents the frequency of that class.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-22', stem: 'In a histogram, the groups are: 0–10, 10–20, 20–30. What is the class width?', options: ['5', '10', '15', '30'], correctAnswer: 1, rationale: 'Class width = upper boundary − lower boundary = 10 − 0 = 10.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-23', stem: 'A histogram has bars with heights 5, 8, 12, 6 and 4 for five equal classes. How many data values are there in total?', options: ['30', '35', '25', '40'], correctAnswer: 1, rationale: '5 + 8 + 12 + 6 + 4 = 35.', topic: 'Histograms and line graphs' },
+
+    // ── Line graphs ──
+    { id: 'mcq-24', stem: 'A line graph is most useful for showing:', options: ['Favourite colours of students', 'How temperature changes over time', 'The mode of a data set', 'Sector angles'], correctAnswer: 1, rationale: 'Line graphs are ideal for showing trends and changes over time (time-series data).', topic: 'Histograms and line graphs' },
+    { id: 'mcq-25', stem: 'On a line graph, what do you plot on the x-axis?', options: ['Frequency', 'Time or the independent variable', 'The mean', 'Categories'], correctAnswer: 1, rationale: 'The x-axis typically shows time or the independent variable; the y-axis shows the measured quantity.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-26', stem: 'A line graph shows sales: Jan = 50, Feb = 45, Mar = 60, Apr = 70. Between which two months was the greatest increase?', options: ['Jan to Feb', 'Feb to Mar', 'Mar to Apr', 'Jan to Mar'], correctAnswer: 1, rationale: 'Feb to Mar: 60 − 45 = 15 (increase of 15). Mar to Apr: 70 − 60 = 10. The greatest single-month increase is Feb to Mar.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-27', stem: 'A line graph of temperature shows a downward slope from Monday to Wednesday. What does this tell you?', options: ['Temperature stayed the same', 'Temperature increased', 'Temperature decreased', 'No data was recorded'], correctAnswer: 2, rationale: 'A downward slope on a line graph means the values are decreasing over that interval.', topic: 'Histograms and line graphs' },
+    { id: 'mcq-28', stem: 'Why should you NOT join the points of a bar chart with a line?', options: ['Because it takes too long', 'Because bar charts show discrete data, not continuous trends', 'Because lines must be curved', 'Because the examiner will not mark it'], correctAnswer: 1, rationale: 'Joining bars with a line implies a continuous relationship. Bar charts display discrete/categorical data where intermediate values have no meaning.', topic: 'Histograms and line graphs' },
+
+    // ── Mixed / interpretation ──
+    { id: 'mcq-29', stem: 'Which diagram would be best to show how a student spends 24 hours in a day?', options: ['Bar chart', 'Pie chart', 'Histogram', 'Line graph'], correctAnswer: 1, rationale: 'A pie chart shows proportions of a whole. A full day (24 hours) is well represented by a full circle (360°).', topic: 'Bar charts and pie charts' },
+    { id: 'mcq-30', stem: 'Which diagram would be best to show how rainfall changes each month over a year?', options: ['Pie chart', 'Pictogram', 'Line graph', 'Stacked bar chart'], correctAnswer: 2, rationale: 'A line graph is best for showing trends over time, such as monthly rainfall over a year.', topic: 'Histograms and line graphs' },
+  ],
+
+  fillblank: [
+    { id: 'fb-1', stem: 'In a bar chart, the bars must have equal ___.', template: 'Bars must have equal __BLANK__', blanks: [{ answer: 'width' }], rationale: 'All bars in a bar chart must be the same width; height represents frequency.' },
+    { id: 'fb-2', stem: 'The total angle in a pie chart is ___.', template: 'Total angle = __BLANK__', blanks: [{ answer: '360°' }], rationale: 'A pie chart is a full circle, which is 360°.' },
+    { id: 'fb-3', stem: 'Sector angle = (frequency ÷ total) × ___.', template: 'Sector angle = (frequency ÷ total) × __BLANK__', blanks: [{ answer: '360°' }], rationale: 'Each sector angle is calculated by multiplying the fraction of the total by 360°.' },
+    { id: 'fb-4', stem: 'In a pictogram, half a symbol represents ___ the key value.', template: 'Half a symbol = __BLANK__ the key value', blanks: [{ answer: 'half' }], rationale: 'If one symbol = 4, then half a symbol = 2.' },
+    { id: 'fb-5', stem: 'A histogram has no ___ between the bars.', template: 'A histogram has no __BLANK__ between bars', blanks: [{ answer: 'gaps' }], rationale: 'Histogram bars touch because the data is continuous and grouped.' },
+    { id: 'fb-6', stem: 'A line graph is best for showing how data changes over ___.', template: 'Line graphs show changes over __BLANK__', blanks: [{ answer: 'time' }], rationale: 'Line graphs are designed for time-series data or showing trends.' },
+    { id: 'fb-7', stem: '80 people were surveyed. The sector angle for "Car" is 90°. Frequency = (90 ÷ 360) × 80 = ___.', template: 'Frequency = __BLANK__', blanks: [{ answer: '20' }], rationale: '(90/360) × 80 = 0.25 × 80 = 20.' },
+    { id: 'fb-8', stem: 'In a compound bar chart, a ___ is essential to identify each group.', template: 'A __BLANK__ is essential', blanks: [{ answer: 'key' }], rationale: 'A key (or legend) distinguishes the different groups shown side by side.' },
+    { id: 'fb-9', stem: 'In a survey of 60 students, 20 chose History. Sector angle = (20 ÷ 60) × 360° = ___.', template: 'Sector angle = __BLANK__', blanks: [{ answer: '120°' }], rationale: '(20/60) × 360 = (1/3) × 360 = 120°.' },
+    { id: 'fb-10', stem: 'Bar charts are used for ___ or categorical data.', template: 'Bar charts are for __BLANK__ data', blanks: [{ answer: 'discrete' }], rationale: 'Bar charts display discrete or categorical data with gaps between bars.' },
+    { id: 'fb-11', stem: 'To find a frequency from a pie chart: frequency = (angle ÷ 360°) × ___.', template: 'frequency = (angle ÷ 360°) × __BLANK__', blanks: [{ answer: 'total' }], rationale: 'The reverse formula: frequency = (angle/360) × total frequency.' },
+    { id: 'fb-12', stem: 'A downward slope on a line graph means values are ___.', template: 'Values are __BLANK__', blanks: [{ answer: 'decreasing' }], rationale: 'A downward slope indicates a decrease over that period.' },
+    { id: 'fb-13', stem: 'In a pictogram, ★ = 8 items. Three and a half stars represent ___ items.', template: '3½ stars = __BLANK__ items', blanks: [{ answer: '28' }], rationale: '3 × 8 = 24, plus half of 8 = 4. Total = 24 + 4 = 28.' },
+    { id: 'fb-14', stem: 'A histogram is used for ___ grouped data.', template: 'Histograms show __BLANK__ grouped data', blanks: [{ answer: 'continuous' }], rationale: 'Histograms represent continuous data that has been grouped into classes.' },
+    { id: 'fb-15', stem: 'When drawing a pie chart, you use a compass and a ___ to measure angles.', template: 'Use a compass and a __BLANK__', blanks: [{ answer: 'protractor' }], rationale: 'A protractor is used to measure and draw the sector angles accurately.' },
+  ],
+
+  dragdrop: [
+    {
+      id: 'dd-1',
+      stem: 'Sort each feature into the correct diagram type.',
+      categories: ['Bar chart', 'Histogram'],
+      items: [
+        { text: 'Gaps between bars', category: 'Bar chart' },
+        { text: 'No gaps between bars', category: 'Histogram' },
+        { text: 'Used for discrete data', category: 'Bar chart' },
+        { text: 'Used for continuous grouped data', category: 'Histogram' },
+        { text: 'Categories on x-axis', category: 'Bar chart' },
+        { text: 'Class intervals on x-axis', category: 'Histogram' },
+      ],
+    },
+    {
+      id: 'dd-2',
+      stem: 'Match each diagram to its best use.',
+      categories: ['Pie chart', 'Line graph', 'Bar chart', 'Pictogram'],
+      items: [
+        { text: 'Showing proportions of a whole', category: 'Pie chart' },
+        { text: 'Showing trends over time', category: 'Line graph' },
+        { text: 'Comparing frequencies of categories', category: 'Bar chart' },
+        { text: 'Using pictures to represent data', category: 'Pictogram' },
+      ],
+    },
+    {
+      id: 'dd-3',
+      stem: 'Sort these into what you need for drawing a pie chart vs. a bar chart.',
+      categories: ['Pie chart', 'Bar chart'],
+      items: [
+        { text: 'Protractor', category: 'Pie chart' },
+        { text: 'Compass', category: 'Pie chart' },
+        { text: 'Equal-width bars', category: 'Bar chart' },
+        { text: 'Sector angles summing to 360°', category: 'Pie chart' },
+        { text: 'Gaps between bars', category: 'Bar chart' },
+        { text: 'Labelled axes', category: 'Bar chart' },
+      ],
+    },
+    {
+      id: 'dd-4',
+      stem: 'Sort each statement as True or False for pictograms.',
+      categories: ['True', 'False'],
+      items: [
+        { text: 'A key is essential', category: 'True' },
+        { text: 'All symbols must be the same size', category: 'True' },
+        { text: 'Half a symbol means half the key value', category: 'True' },
+        { text: 'Symbols can be different sizes', category: 'False' },
+        { text: 'No key is needed if the picture is obvious', category: 'False' },
+      ],
+    },
+    {
+      id: 'dd-5',
+      stem: 'Classify each data set by the most suitable diagram.',
+      categories: ['Pie chart', 'Line graph', 'Histogram'],
+      items: [
+        { text: 'How 200 students travel to school', category: 'Pie chart' },
+        { text: 'Temperature each hour over a day', category: 'Line graph' },
+        { text: 'Heights of 50 plants in cm (grouped)', category: 'Histogram' },
+        { text: 'How a student spends 24 hours', category: 'Pie chart' },
+        { text: 'Monthly sales figures for a year', category: 'Line graph' },
+      ],
+    },
+    {
+      id: 'dd-6',
+      stem: 'Sort these into rules for bar charts or pie charts.',
+      categories: ['Bar chart rule', 'Pie chart rule'],
+      items: [
+        { text: 'Frequency on the y-axis', category: 'Bar chart rule' },
+        { text: 'Angles must sum to 360°', category: 'Pie chart rule' },
+        { text: 'Bars must have equal width', category: 'Bar chart rule' },
+        { text: 'Use (frequency ÷ total) × 360°', category: 'Pie chart rule' },
+        { text: 'Must include a title and labelled axes', category: 'Bar chart rule' },
+        { text: 'Drawn with compass and protractor', category: 'Pie chart rule' },
+      ],
+    },
+    {
+      id: 'dd-7',
+      stem: 'Sort these line graph features as indicating an increase or a decrease.',
+      categories: ['Increase', 'Decrease'],
+      items: [
+        { text: 'Upward slope', category: 'Increase' },
+        { text: 'Downward slope', category: 'Decrease' },
+        { text: 'Line goes from lower to higher', category: 'Increase' },
+        { text: 'Line goes from higher to lower', category: 'Decrease' },
+      ],
+    },
+    {
+      id: 'dd-8',
+      stem: 'Match each pie chart calculation to its correct answer (total = 120 people).',
+      categories: ['30 people', '40 people', '20 people', '10 people'],
+      items: [
+        { text: 'Sector angle = 90°', category: '30 people' },
+        { text: 'Sector angle = 120°', category: '40 people' },
+        { text: 'Sector angle = 60°', category: '20 people' },
+        { text: 'Sector angle = 30°', category: '10 people' },
+      ],
+    },
+    {
+      id: 'dd-9',
+      stem: 'Sort these common errors by which diagram they relate to.',
+      categories: ['Bar chart error', 'Pie chart error'],
+      items: [
+        { text: 'Using unequal bar widths', category: 'Bar chart error' },
+        { text: 'Angles not summing to 360°', category: 'Pie chart error' },
+        { text: 'Joining bars with a line', category: 'Bar chart error' },
+        { text: 'Using frequency directly as the angle', category: 'Pie chart error' },
+      ],
+    },
+    {
+      id: 'dd-10',
+      stem: 'Sort each data type by whether to use a histogram or a bar chart.',
+      categories: ['Histogram', 'Bar chart'],
+      items: [
+        { text: 'Masses of parcels (kg)', category: 'Histogram' },
+        { text: 'Favourite colours', category: 'Bar chart' },
+        { text: 'Time taken to run 100 m (seconds)', category: 'Histogram' },
+        { text: 'Number of siblings', category: 'Bar chart' },
+        { text: 'Lengths of leaves (cm)', category: 'Histogram' },
+      ],
+    },
+  ],
+
+  sequence: [
+    {
+      id: 'seq-1',
+      stem: 'Put the steps for drawing a pie chart in the correct order.',
+      steps: [
+        'Calculate each sector angle using (frequency ÷ total) × 360°',
+        'Check that all angles sum to 360°',
+        'Draw a circle with a compass and mark the centre',
+        'Use a protractor to measure and draw each sector',
+        'Label each sector and add a title',
+      ],
+    },
+    {
+      id: 'seq-2',
+      stem: 'Order the steps for drawing a bar chart.',
+      steps: [
+        'Draw and label both axes',
+        'Choose a suitable scale for the frequency axis',
+        'Draw equal-width bars with gaps between them',
+        'Plot each bar to the correct height',
+        'Add a title to the chart',
+      ],
+    },
+    {
+      id: 'seq-3',
+      stem: 'Order the steps for reading a frequency from a pie chart.',
+      steps: [
+        'Identify the sector you need',
+        'Measure the sector angle with a protractor',
+        'Use the formula: frequency = (angle ÷ 360°) × total',
+        'Calculate the answer',
+      ],
+    },
+    {
+      id: 'seq-4',
+      stem: 'Order the steps for calculating a sector angle.',
+      steps: [
+        'Find the total frequency',
+        'Divide the category frequency by the total',
+        'Multiply the result by 360°',
+        'Round to the nearest whole degree if needed',
+      ],
+    },
+    {
+      id: 'seq-5',
+      stem: 'Order the steps for drawing a line graph.',
+      steps: [
+        'Draw and label the axes (time on x-axis)',
+        'Choose suitable scales for both axes',
+        'Plot each data point accurately',
+        'Join the points with straight lines',
+        'Add a title',
+      ],
+    },
+    {
+      id: 'seq-6',
+      stem: 'Order the steps for reading a pictogram.',
+      steps: [
+        'Read the key to find what one symbol represents',
+        'Count the full symbols in the row',
+        'Multiply full symbols by the key value',
+        'Add the value of any half symbol',
+      ],
+    },
+    {
+      id: 'seq-7',
+      stem: 'Order these steps for drawing a histogram.',
+      steps: [
+        'Identify the class intervals and their frequencies',
+        'Draw and label both axes with class intervals on x-axis',
+        'Choose a suitable frequency scale',
+        'Draw bars with no gaps, each bar spanning its class interval',
+      ],
+    },
+    {
+      id: 'seq-8',
+      stem: 'Order the steps for interpreting a compound bar chart.',
+      steps: [
+        'Read the key to identify each group',
+        'Locate the category you are comparing',
+        'Read the height of each coloured bar for that category',
+        'Compare the values and state your conclusion',
+      ],
+    },
+  ],
+
+  keyword: [
+    { id: 'kw-1', stem: 'Describe two rules for drawing a correct bar chart. [2 marks]', marks: 2, keywords: ['equal width', 'gaps between bars'], modelAnswer: 'All bars must be of equal width and there must be gaps between the bars.' },
+    { id: 'kw-2', stem: 'What is the formula for calculating a sector angle in a pie chart? [2 marks]', marks: 2, keywords: ['frequency', 'total', '360'], modelAnswer: 'Sector angle = (frequency ÷ total frequency) × 360°.' },
+    { id: 'kw-3', stem: 'Explain how to find the frequency from a pie chart sector when the total is known. [2 marks]', marks: 2, keywords: ['angle', '360', 'total'], modelAnswer: 'Frequency = (sector angle ÷ 360°) × total frequency.' },
+    { id: 'kw-4', stem: 'What is the difference between a bar chart and a histogram? [2 marks]', marks: 2, keywords: ['gaps', 'continuous'], modelAnswer: 'A bar chart has gaps between bars and is for discrete data. A histogram has no gaps and is for continuous grouped data.' },
+    { id: 'kw-5', stem: 'State why a key is essential in a pictogram. [1 mark]', marks: 1, keywords: ['key', 'represents'], modelAnswer: 'The key tells the reader how many items each symbol represents, without which the pictogram cannot be read.' },
+    { id: 'kw-6', stem: 'What does half a symbol mean in a pictogram? [1 mark]', marks: 1, keywords: ['half', 'key value'], modelAnswer: 'Half a symbol represents half of the key value.' },
+    { id: 'kw-7', stem: 'Explain why a line graph is suitable for showing temperature over time. [2 marks]', marks: 2, keywords: ['trend', 'time', 'change'], modelAnswer: 'A line graph shows how values change over time, making it easy to see trends such as increases and decreases in temperature.' },
+    { id: 'kw-8', stem: 'What check must you always do after calculating pie chart angles? [1 mark]', marks: 1, keywords: ['sum', '360'], modelAnswer: 'Check that all the sector angles add up to 360°.' },
+    { id: 'kw-9', stem: 'Describe one common error students make when drawing pie charts. [2 marks]', marks: 2, keywords: ['frequency', 'angle', 'formula'], modelAnswer: 'A common error is using the frequency directly as the angle instead of calculating it with the formula (frequency ÷ total) × 360°.' },
+    { id: 'kw-10', stem: 'What type of data is a histogram used for? [1 mark]', marks: 1, keywords: ['continuous', 'grouped'], modelAnswer: 'A histogram is used for continuous grouped data.' },
+    { id: 'kw-11', stem: 'Explain what a compound bar chart shows and what it must include. [2 marks]', marks: 2, keywords: ['side by side', 'key'], modelAnswer: 'A compound bar chart shows two or more groups side by side for each category, with a key or legend to identify each group.' },
+    { id: 'kw-12', stem: 'State what an upward slope and a downward slope mean on a line graph. [2 marks]', marks: 2, keywords: ['increase', 'decrease'], modelAnswer: 'An upward slope means the values are increasing. A downward slope means the values are decreasing.' },
+  ],
+
+  flashcards: [
+    { id: 'fc-1', front: 'What is a bar chart?', back: 'A diagram that uses rectangular bars of equal width to display the frequency of each category. Bars are separated by gaps.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-2', front: 'What axis shows frequency in a vertical bar chart?', back: 'The y-axis (vertical axis).', topic: 'Bar charts and pie charts' },
+    { id: 'fc-3', front: 'Why are there gaps between bars in a bar chart?', back: 'Because the data is discrete or categorical — each bar represents a separate group.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-4', front: 'What is a compound (grouped) bar chart?', back: 'A bar chart that places two or more bars side by side for each category, allowing direct comparison between groups. A key is essential.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-5', front: 'What is a pie chart?', back: 'A circle divided into sectors. Each sector represents a category and its angle is proportional to the frequency.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-6', front: 'What is the total angle in a pie chart?', back: '360° (a full circle).', topic: 'Bar charts and pie charts' },
+    { id: 'fc-7', front: 'Formula: sector angle = ?', back: 'Sector angle = (frequency ÷ total frequency) × 360°.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-8', front: 'Formula: frequency from a pie chart = ?', back: 'Frequency = (sector angle ÷ 360°) × total frequency.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-9', front: 'What check must you do after calculating all sector angles?', back: 'Check they sum to 360°.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-10', front: 'What tools do you need to draw a pie chart?', back: 'A compass (to draw the circle) and a protractor (to measure sector angles).', topic: 'Bar charts and pie charts' },
+    { id: 'fc-11', front: 'What is a pictogram?', back: 'A diagram that uses identical symbols to represent data. A key states what each symbol represents.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-12', front: 'What does half a symbol mean in a pictogram?', back: 'Half of the key value. E.g. if ★ = 10, then half a star = 5.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-13', front: 'State two rules for drawing a pictogram.', back: '1. All symbols must be the same size. 2. A key must be included.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-14', front: 'What is a histogram?', back: 'A diagram like a bar chart but with no gaps between bars. Used for continuous grouped data.', topic: 'Histograms and line graphs' },
+    { id: 'fc-15', front: 'How does a histogram differ from a bar chart?', back: 'Histogram: no gaps, continuous data. Bar chart: gaps, discrete/categorical data.', topic: 'Histograms and line graphs' },
+    { id: 'fc-16', front: 'What goes on the x-axis of a histogram?', back: 'The class intervals (continuous scale), e.g. 0–10, 10–20, 20–30.', topic: 'Histograms and line graphs' },
+    { id: 'fc-17', front: 'What is a class interval?', back: 'A range of values that data is grouped into, e.g. 10 ≤ x < 20.', topic: 'Histograms and line graphs' },
+    { id: 'fc-18', front: 'What is a line graph?', back: 'A diagram where data points are plotted and joined with straight lines. Best for showing trends over time.', topic: 'Histograms and line graphs' },
+    { id: 'fc-19', front: 'What does an upward slope on a line graph mean?', back: 'The values are increasing over that period.', topic: 'Histograms and line graphs' },
+    { id: 'fc-20', front: 'What does a downward slope on a line graph mean?', back: 'The values are decreasing over that period.', topic: 'Histograms and line graphs' },
+    { id: 'fc-21', front: 'What usually goes on the x-axis of a line graph?', back: 'Time or the independent variable.', topic: 'Histograms and line graphs' },
+    { id: 'fc-22', front: 'Common error: using frequency directly as a pie chart angle. Why is this wrong?', back: 'It only works if the total frequency is exactly 360. You must always use (frequency ÷ total) × 360°.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-23', front: 'When should you use a pie chart instead of a bar chart?', back: 'When you want to show proportions of a whole, e.g. how 24 hours are spent.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-24', front: 'In a pie chart of 120 people, a sector is 60°. How many people does it represent?', back: '(60 ÷ 360) × 120 = 20 people.', topic: 'Bar charts and pie charts' },
+    { id: 'fc-25', front: 'What is a stacked bar chart?', back: 'A bar chart where bars for different groups are stacked on top of each other within a single bar, showing both individual and total values.', topic: 'Bar charts and pie charts' },
+  ],
+
+};
