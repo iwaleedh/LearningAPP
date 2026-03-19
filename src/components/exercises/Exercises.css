@@ -580,8 +580,8 @@
 .flashcard-exercise .flashcard-face {
     position: absolute;
     inset: 0;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: var(--radius-xl, 12px);
     display: flex;
     align-items: center;
@@ -637,8 +637,8 @@
 .fc-ex__face {
   position: absolute;
   inset: 0;
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: var(--radius-xl, 12px);
   border: 2px solid var(--color-border);
   display: flex;

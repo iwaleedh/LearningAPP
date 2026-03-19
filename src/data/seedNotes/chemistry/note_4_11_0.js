@@ -55,8 +55,8 @@ export const note_chemistry_4_11_0 = {
       data: {
         style: 'bullet',
         items: [
-          '<strong>First Order:</strong> The rate is <em>proportional</em> to the concentration. If you double [A], the rate doubles. If you quadruple [A], the rate goes up 4 times. Mathematically: Rate $\propto$ [A]¹',
-          '<strong>Second Order:</strong> The rate is proportional to the <em>square</em> of the concentration. If you double [A], the rate goes up 4 times (2²). If you triple [A], the rate increases 9 times (3²). Mathematically: Rate $\propto$ [A]²',
+          '<strong>First Order:</strong> The rate is <em>proportional</em> to the concentration. If you double [A], the rate doubles. If you quadruple [A], the rate goes up 4 times. Mathematically: Rate ∝ [A]¹',
+          '<strong>Second Order:</strong> The rate is proportional to the <em>square</em> of the concentration. If you double [A], the rate goes up 4 times (2²). If you triple [A], the rate increases 9 times (3²). Mathematically: Rate ∝ [A]²',
           '<strong>Zero Order:</strong> The concentration does not affect the rate of reaction. Mathematically, [A]⁰ = 1, so the term mathematically disappears from the rate equation.'
         ]
       },

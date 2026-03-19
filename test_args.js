@@ -1,3 +1,4 @@
+/* global process */
 import { DbConnection } from './src/spacetime/index.js';
 
 const SPACETIMEDB_URI = 'https://maincloud.spacetimedb.com';
@@ -7,7 +8,7 @@ const builder = DbConnection.builder()
     .withUri(SPACETIMEDB_URI)
     .withDatabaseName(SPACETIMEDB_MODULE);
 
-builder.onConnect((conn, identity, tokenStr) => {
+builder.onConnect((conn, identity) => {
     console.log("Connected as", identity.toHexString());
 
     // Test both formats

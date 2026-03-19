@@ -28,7 +28,6 @@
     .nb-equation-content {
         font-size: 1rem;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
     }
 
     .nb-callout {
@@ -300,8 +299,6 @@
 
 .nb-table-scroll {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    /* smooth momentum scroll on iOS */
     overscroll-behavior-x: contain;
     /* stop scroll bleeding to page */
 }
@@ -515,7 +512,6 @@
 .nb-svg-container {
     overflow-x: auto;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
     width: 100%;
 }
 

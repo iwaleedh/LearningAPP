@@ -35,9 +35,9 @@ export const note_chemistry_4_11_3 = {
         items: [
           'Choose one reactant to investigate and keep the concentrations of all other reactants (and total volume) constant.',
           'Start the reaction and time how long it takes to produce a <strong>small, fixed, easily measurable amount of product</strong>.',
-          'Calculate the initial rate using the assumption that Rate is inversely proportional to time ($Rate \propto \frac{1}{t}$).',
+          'Calculate the initial rate using the assumption that Rate is inversely proportional to time (Rate ∝ 1/t).',
           'Repeat the experiment several times, changing only the concentration of the reactant you are investigating.',
-          'Plot a graph of Rate (or $1/t$) against Concentration.'
+          'Plot a graph of Rate (or 1/t) against Concentration.'
         ]
       },
       terms: []
