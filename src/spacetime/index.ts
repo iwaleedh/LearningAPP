@@ -41,6 +41,23 @@ import RegisterUserReducer from "./register_user_reducer";
 import SaveFlashcardReducer from "./save_flashcard_reducer";
 import SaveNoteAssetReducer from "./save_note_asset_reducer";
 import UpsertNoteReducer from "./upsert_note_reducer";
+import CreateLiveSessionReducer from "./create_live_session_reducer";
+import JoinSessionReducer from "./join_session_reducer";
+import InviteToSessionReducer from "./invite_to_session_reducer";
+import RespondToInviteReducer from "./respond_to_invite_reducer";
+import AddStrokeReducer from "./add_stroke_reducer";
+import UpdateStrokeReducer from "./update_stroke_reducer";
+import DeleteStrokeReducer from "./delete_stroke_reducer";
+import EndSessionReducer from "./end_session_reducer";
+import SetTeacherRoleReducer from "./set_teacher_role_reducer";
+import CreateLiveClassReducer from "./create_live_class_reducer";
+import JoinLiveClassReducer from "./join_live_class_reducer";
+import EndLiveClassReducer from "./end_live_class_reducer";
+import SetBackgroundReducer from "./set_background_reducer";
+import UpdateCursorReducer from "./update_cursor_reducer";
+import RaiseHandReducer from "./raise_hand_reducer";
+import AcknowledgeHandRaiseReducer from "./acknowledge_hand_raise_reducer";
+import UpdateClassTimerReducer from "./update_class_timer_reducer";
 
 // Import all procedure arg schemas
 
@@ -49,6 +66,14 @@ import FlashcardRow from "./flashcard_table";
 import NoteRow from "./note_table";
 import NoteAssetRow from "./note_asset_table";
 import UserRow from "./user_table";
+import LiveSessionRow from "./live_session_table";
+import SessionParticipantRow from "./session_participant_table";
+import AnnotationStrokeRow from "./annotation_stroke_table";
+import SessionInviteRow from "./session_invite_table";
+import LiveClassSessionRow from "./live_class_session_table";
+import LiveClassCursorRow from "./live_class_cursor_table";
+import HandRaiseRow from "./hand_raise_table";
+import ClassTimerRow from "./class_timer_table";
 
 /** Type-only namespace exports for generated type groups. */
 
@@ -98,6 +123,78 @@ const tablesSchema = __schema({
       { name: 'user_identity_key', constraint: 'unique', columns: ['identity'] },
     ],
   }, UserRow),
+  live_session: __table({
+    name: 'live_session',
+    indexes: [
+      { name: 'session_id', algorithm: 'btree', columns: ['sessionId'] },
+    ],
+    constraints: [
+      { name: 'live_session_session_id_key', constraint: 'unique', columns: ['sessionId'] },
+    ],
+  }, LiveSessionRow),
+  session_participant: __table({
+    name: 'session_participant',
+    indexes: [
+      { name: 'participant_id', algorithm: 'btree', columns: ['participantId'] },
+    ],
+    constraints: [
+      { name: 'session_participant_participant_id_key', constraint: 'unique', columns: ['participantId'] },
+    ],
+  }, SessionParticipantRow),
+  annotation_stroke: __table({
+    name: 'annotation_stroke',
+    indexes: [
+      { name: 'stroke_id', algorithm: 'btree', columns: ['strokeId'] },
+    ],
+    constraints: [
+      { name: 'annotation_stroke_stroke_id_key', constraint: 'unique', columns: ['strokeId'] },
+    ],
+  }, AnnotationStrokeRow),
+  session_invite: __table({
+    name: 'session_invite',
+    indexes: [
+      { name: 'invite_id', algorithm: 'btree', columns: ['inviteId'] },
+    ],
+    constraints: [
+      { name: 'session_invite_invite_id_key', constraint: 'unique', columns: ['inviteId'] },
+    ],
+  }, SessionInviteRow),
+  live_class_session: __table({
+    name: 'live_class_session',
+    indexes: [
+      { name: 'class_id', algorithm: 'btree', columns: ['classId'] },
+    ],
+    constraints: [
+      { name: 'live_class_session_class_id_key', constraint: 'unique', columns: ['classId'] },
+    ],
+  }, LiveClassSessionRow),
+  live_class_cursor: __table({
+    name: 'live_class_cursor',
+    indexes: [
+      { name: 'cursor_id', algorithm: 'btree', columns: ['cursorId'] },
+    ],
+    constraints: [
+      { name: 'live_class_cursor_cursor_id_key', constraint: 'unique', columns: ['cursorId'] },
+    ],
+  }, LiveClassCursorRow),
+  hand_raise: __table({
+    name: 'hand_raise',
+    indexes: [
+      { name: 'raise_id', algorithm: 'btree', columns: ['raiseId'] },
+    ],
+    constraints: [
+      { name: 'hand_raise_raise_id_key', constraint: 'unique', columns: ['raiseId'] },
+    ],
+  }, HandRaiseRow),
+  class_timer: __table({
+    name: 'class_timer',
+    indexes: [
+      { name: 'class_id', algorithm: 'btree', columns: ['classId'] },
+    ],
+    constraints: [
+      { name: 'class_timer_class_id_key', constraint: 'unique', columns: ['classId'] },
+    ],
+  }, ClassTimerRow),
 });
 
 /** The schema information for all reducers in this module. This is defined the same way as the reducers would have been defined in the server, except the body of the reducer is omitted in code generation. */
@@ -109,6 +206,23 @@ const reducersSchema = __reducers(
   __reducerSchema("save_flashcard", SaveFlashcardReducer),
   __reducerSchema("save_note_asset", SaveNoteAssetReducer),
   __reducerSchema("upsert_note", UpsertNoteReducer),
+  __reducerSchema("create_live_session", CreateLiveSessionReducer),
+  __reducerSchema("join_session", JoinSessionReducer),
+  __reducerSchema("invite_to_session", InviteToSessionReducer),
+  __reducerSchema("respond_to_invite", RespondToInviteReducer),
+  __reducerSchema("add_stroke", AddStrokeReducer),
+  __reducerSchema("update_stroke", UpdateStrokeReducer),
+  __reducerSchema("delete_stroke", DeleteStrokeReducer),
+  __reducerSchema("end_session", EndSessionReducer),
+  __reducerSchema("set_teacher_role", SetTeacherRoleReducer),
+  __reducerSchema("create_live_class", CreateLiveClassReducer),
+  __reducerSchema("join_live_class", JoinLiveClassReducer),
+  __reducerSchema("end_live_class", EndLiveClassReducer),
+  __reducerSchema("set_background", SetBackgroundReducer),
+  __reducerSchema("update_cursor", UpdateCursorReducer),
+  __reducerSchema("raise_hand", RaiseHandReducer),
+  __reducerSchema("acknowledge_hand_raise", AcknowledgeHandRaiseReducer),
+  __reducerSchema("update_class_timer", UpdateClassTimerReducer),
 );
 
 /** The schema information for all procedures in this module. This is defined the same way as the procedures would have been defined in the server. */

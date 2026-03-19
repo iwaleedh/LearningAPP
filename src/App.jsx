@@ -17,6 +17,9 @@ import './App.css';
 
 const AdvancedPage = lazy(() => import('./pages/AdvancedPage'));
 const NotePage = lazy(() => import('./pages/NotePage'));
+const AnnotatePage = lazy(() => import('./pages/AnnotatePage'));
+const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
+const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -60,7 +63,10 @@ function AppContent() {
               <Route path="/mistakes" element={<MistakeBankPage />} />
               <Route path="/settings" element={<SettingsPage />} />
               <Route path="/teacher" element={<TeacherDashboard />} />
+              <Route path="/teacher/monitor" element={<TeacherMonitorPage />} />
               <Route path="/advanced" element={<AdvancedPage />} />
+              <Route path="/annotate/:paperId" element={<AnnotatePage />} />
+              <Route path="/live/:sessionId" element={<LiveClassPage />} />
             </Routes>
           </Suspense>
         </main>

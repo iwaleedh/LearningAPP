@@ -1,4 +1,5 @@
-import { Menu, Search, Bell } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
+import NotificationBell from './NotificationBell.jsx';
 import './Layout.css';
 
 export default function Header({ onMenuToggle, onSearchOpen }) {
@@ -21,10 +22,7 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
                     <kbd className="search-kbd">⌘K</kbd>
                 </button>
 
-                <button className="btn btn-icon notification-btn" title="Notifications">
-                    <Bell size={20} />
-                    <span className="notification-dot" />
-                </button>
+                <NotificationBell />
             </div>
         </header>
     );

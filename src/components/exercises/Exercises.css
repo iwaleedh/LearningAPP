@@ -1,5 +1,4 @@
-/* ============================================
-   Exercise Component Styles
+/* Exercise Component Styles
    ============================================ */
 
 /* ---- MCQ Exercise ---- */
@@ -557,3 +556,109 @@
     color: var(--color-success-dark);
     text-transform: uppercase;
 }
+/* ── Flashcard Exercise ─────────────────────────────────── */
+.flashcard-exercise {
+    max-width: 560px;
+}
+.flashcard-exercise .flashcard-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    height: 240px;
+    margin: var(--space-4) 0;
+    cursor: pointer;
+}
+.flashcard-exercise .flashcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+.flashcard-exercise .flashcard.flipped {
+    transform: rotateY(180deg);
+}
+.flashcard-exercise .flashcard-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: var(--radius-xl, 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    text-align: center;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed, 1.6);
+    border: 2px solid var(--color-border);
+}
+.flashcard-exercise .flashcard-face--front {
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-weight: 600;
+}
+.flashcard-exercise .flashcard-face--back {
+    background: var(--color-primary-50, #eef2ff);
+    color: var(--color-text);
+    transform: rotateY(180deg);
+    border-color: var(--color-primary);
+}
+.flashcard-exercise-actions {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    margin-top: var(--space-4);
+}
+.flashcard-exercise-hint {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-2);
+}
+
+/* ── Flashcard Exercise ─────────────────────────────────── */
+.fc-ex { max-width: 560px; padding: var(--space-6); }
+.fc-ex__topic { margin-bottom: var(--space-4); display: inline-block; }
+.fc-ex__scene {
+  perspective: 1000px;
+  width: 100%;
+  height: 220px;
+  cursor: pointer;
+  margin-bottom: var(--space-3);
+}
+.fc-ex__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.fc-ex__card--flipped { transform: rotateY(180deg); }
+.fc-ex__face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-xl, 12px);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  text-align: center;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+.fc-ex__face--front { background: var(--color-surface); font-weight: 600; }
+.fc-ex__face--back {
+  background: var(--color-primary-50, #eef2ff);
+  border-color: var(--color-primary);
+  transform: rotateY(180deg);
+}
+.fc-ex__hint {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  margin: 0;
+}
+.fc-ex__actions { display: flex; gap: var(--space-3); justify-content: center; margin-top: var(--space-4); }

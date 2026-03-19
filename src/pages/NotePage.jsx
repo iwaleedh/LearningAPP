@@ -211,7 +211,6 @@ function useActiveHeading(scrollRef, toc) {
 export default function NotePage() {
     const { subject, unitId, topicId, subtopicIndex } = useParams();
     const navigate = useNavigate();
-    const [view, setView] = useState('notes');       // 'notes' | 'pdf'
     const [recallOpen, setRecallOpen] = useState(false);
     const [tocOpen, setTocOpen] = useState(true);
     const [scrollPct, setScrollPct] = useState(0);
@@ -269,8 +268,6 @@ export default function NotePage() {
     const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);
     const activeId = useActiveHeading(scrollRef, toc);
 
-    const pdfUrl = seedNote?.pdfPath || `/notes/${context.subject}/${context.unitCode?.toLowerCase()}-1.pdf`;
-
     const scrollToBlock = useCallback((blockId) => {
         const el = scrollRef.current;
         if (!el) return;
@@ -297,8 +294,8 @@ export default function NotePage() {
 
                 {/* Right: actions */}
                 <div className="note-toolbar-right">
-                    {/* Mark as Read button (notes view only) */}
-                    {hasNote && view === 'notes' && (
+                    {/* Mark as Read button */}
+                    {hasNote && (
                         isRead ? (
                             <button
                                 className="btn btn-sm note-read-btn note-read-btn--done"
@@ -319,8 +316,8 @@ export default function NotePage() {
                         )
                     )}
 
-                    {/* ToC toggle (only in notes view) */}
-                    {hasNote && view === 'notes' && toc.length > 0 && (
+                    {/* ToC toggle */}
+                    {hasNote && toc.length > 0 && (
                         <button
                             className={`btn btn-sm ${tocOpen ? 'btn-primary' : 'btn-ghost'}`}
                             onClick={() => setTocOpen((v) => !v)}
@@ -331,7 +328,7 @@ export default function NotePage() {
                     )}
 
                     {/* Recall mode toggle */}
-                    {hasNote && view === 'notes' && hasCues && (
+                    {hasNote && hasCues && (
                         <button
                             className={`btn btn-sm ${recallOpen ? 'btn-primary' : 'btn-ghost'}`}
                             onClick={() => setRecallOpen((v) => !v)}
@@ -339,20 +336,6 @@ export default function NotePage() {
                         >
                             🧠 Recall
                         </button>
-                    )}
-
-                    {/* Notes / PDF toggle */}
-                    {hasNote && (
-                        <div className="note-view-toggle">
-                            <button
-                                className={`btn btn-sm ${view === 'notes' ? 'btn-primary' : 'btn-ghost'}`}
-                                onClick={() => setView('notes')}
-                            >📖 Notes</button>
-                            <button
-                                className={`btn btn-sm ${view === 'pdf' ? 'btn-primary' : 'btn-ghost'}`}
-                                onClick={() => { setView('pdf'); setRecallOpen(false); }}
-                            >📄 PDF</button>
-                        </div>
                     )}
 
                     <button
@@ -363,7 +346,7 @@ export default function NotePage() {
             </div>
 
             {/* ── Read progress bar ── */}
-            {view === 'notes' && hasNote && (
+            {hasNote && (
                 <ReadProgressBar scrollRef={scrollRef} onScrollPct={setScrollPct} />
             )}
 
@@ -402,12 +385,12 @@ export default function NotePage() {
             <div className="note-body">
 
                 {/* ToC sidebar */}
-                {view === 'notes' && hasNote && toc.length > 0 && tocOpen && (
+                {hasNote && toc.length > 0 && tocOpen && (
                     <TableOfContents toc={toc} activeId={activeId} onSelect={scrollToBlock} />
                 )}
 
                 {/* Notes scrollable area */}
-                {view === 'notes' && hasNote && (
+                {hasNote && (
                     <div className="note-scroll-area" ref={scrollRef}>
                         <NoteBlockRenderer blocks={seedNote.blocks} />
 
@@ -427,27 +410,16 @@ export default function NotePage() {
                 )}
 
                 {/* Recall panel (right column) */}
-                {view === 'notes' && hasNote && recallOpen && (
+                {hasNote && recallOpen && (
                     <RecallPanel recall={seedNote.recall} onClose={() => setRecallOpen(false)} />
                 )}
 
                 {/* No note fallback */}
-                {view === 'notes' && !hasNote && (
+                {!hasNote && (
                     <div className="note-empty">
                         <span>📝</span>
                         <p className="note-empty-title">No notes yet</p>
                         <p className="note-empty-sub">Notes for this subtopic haven't been added yet.</p>
-                    </div>
-                )}
-
-                {/* PDF viewer */}
-                {view === 'pdf' && (
-                    <div className="note-pdf-container">
-                        <iframe
-                            src={pdfUrl}
-                            style={{ width: '100%', height: '100%', border: 'none' }}
-                            title={`Source PDF: ${context.unitCode}`}
-                        />
                     </div>
                 )}
             </div>

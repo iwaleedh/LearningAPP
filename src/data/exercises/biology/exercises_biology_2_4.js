@@ -1,0 +1,926 @@
+// WBI12 — Topic 4: Biodiversity and Natural Resources
+// AL Biology — 6 exercise types, sourced from seed notes note_2_4_0 through note_2_4_17
+// 18 subtopics: plant cells, cellulose, starch/glycogen, xylem/phloem, fibres, drugs, classification, biodiversity, species richness, adaptation, speciation, Hardy-Weinberg, conservation, practicals 7-9
+
+export const exercises_biology_2_4 = {
+    subject: 'biology',
+    unitId: 2,
+    unitCode: 'WBI12',
+    unitTitle: 'Cells, Development, Biodiversity and Conservation',
+    topicId: 4,
+    topicTitle: 'Biodiversity and Natural Resources',
+
+    // ─────────────────────────────────────────────
+    // MCQ — 30 questions
+    // ─────────────────────────────────────────────
+    mcq: [
+        // Subtopic 0 — Plant cell ultrastructure
+        {
+            id: 'mcq-t4-1',
+            stem: 'Which organelle is responsible for synthesising and storing starch granules in plant cells?',
+            options: ['Chloroplast', 'Amyloplast', 'Mitochondrion', 'Ribosome'],
+            correctAnswer: 1,
+            rationale: 'Amyloplasts are small, colourless organelles specifically responsible for synthesising and storing starch granules. Chloroplasts are the site of photosynthesis, not starch synthesis. Mitochondria produce ATP via respiration. Ribosomes synthesise proteins, not carbohydrates.',
+            topic: 'Plant cell ultrastructure',
+        },
+        {
+            id: 'mcq-t4-2',
+            stem: 'What is the function of plasmodesmata in plant tissues?',
+            options: ['Synthesise cellulose for the cell wall', 'Store water in the vacuole', 'Allow continuous cytoplasm between adjacent cells for transport and communication', 'Provide structural support through lignification'],
+            correctAnswer: 2,
+            rationale: 'Plasmodesmata are narrow fluid-filled channels crossing cell walls, allowing continuous cytoplasm between adjacent cells to facilitate transport and communication. Cellulose synthesis occurs at the plasma membrane. Water storage is the function of the vacuole. Lignification provides structural support but is unrelated to plasmodesmata.',
+            topic: 'Plant cell ultrastructure',
+        },
+        // Subtopic 1 — Cellulose structure
+        {
+            id: 'mcq-t4-3',
+            stem: 'Why must alternate beta-glucose molecules be inverted (rotated 180°) in a cellulose chain?',
+            options: ['To create a branched structure', 'To allow 1,4-glycosidic bonds to form between the monomers', 'To make the molecule soluble in water', 'To enable hydrogen bonding with water molecules'],
+            correctAnswer: 1,
+            rationale: 'The hydroxyl groups on C1 and C4 of beta-glucose are positioned such that every alternate monomer must be inverted 180° to form 1,4-glycosidic bonds. This inversion produces long, straight, unbranched chains. Cellulose is insoluble regardless of orientation.',
+            topic: 'Cellulose structure',
+        },
+        {
+            id: 'mcq-t4-4',
+            stem: 'What gives cellulose microfibrils their high tensile strength?',
+            options: ['Covalent bonds between glucose molecules', 'Extensive hydrogen bonding between parallel chains', 'Branching points in the molecule', 'The presence of alpha-glucose monomers'],
+            correctAnswer: 1,
+            rationale: 'Although individual hydrogen bonds are weak, the sheer number of hydrogen bonds between adjacent parallel cellulose chains provides massive collective strength. Covalent bonds hold glucose monomers together but do not contribute to inter-chain strength. Cellulose is unbranched and made of beta-glucose.',
+            topic: 'Cellulose structure',
+        },
+        // Subtopic 2 — Starch and glycogen
+        {
+            id: 'mcq-t4-5',
+            stem: 'Which feature of glycogen makes it better suited than starch for energy storage in animals?',
+            options: ['It is unbranched and compact', 'It has more 1,6-glycosidic bonds creating more branch points for rapid hydrolysis', 'It is made of beta-glucose', 'It is insoluble in water'],
+            correctAnswer: 1,
+            rationale: 'Glycogen is more highly branched than starch due to more 1,6-glycosidic bonds. This provides many terminal ends for rapid enzyme action, releasing glucose quickly to meet higher animal metabolic demands. Both starch and glycogen are made of alpha-glucose and are insoluble.',
+            topic: 'Starch and glycogen',
+        },
+        {
+            id: 'mcq-t4-6',
+            stem: 'What is the difference between amylose and amylopectin?',
+            options: ['Amylose is branched; amylopectin is unbranched', 'Amylose has only 1,4-glycosidic bonds; amylopectin has both 1,4 and 1,6-glycosidic bonds', 'Amylose is found in animals; amylopectin is found in plants', 'Amylose is made of beta-glucose; amylopectin is made of alpha-glucose'],
+            correctAnswer: 1,
+            rationale: 'Amylose is an unbranched chain of alpha-glucose with only 1,4-glycosidic bonds, coiling into a helix. Amylopectin is branched with both 1,4 and 1,6-glycosidic bonds. Both are components of starch (plant storage) and made of alpha-glucose.',
+            topic: 'Starch and glycogen',
+        },
+        // Subtopic 3 — Xylem, phloem and sclerenchyma
+        {
+            id: 'mcq-t4-7',
+            stem: 'Which feature of xylem vessels allows them to transport water under tension without collapsing?',
+            options: ['The presence of living companion cells', 'Lignin thickening of the cell walls', 'The presence of sieve plates', 'Continuous cytoplasm through plasmodesmata'],
+            correctAnswer: 1,
+            rationale: 'Xylem vessels are dead cells with walls thickened by lignin, providing structural support to resist collapse under the negative pressure (tension) of the transpiration stream. Companion cells and sieve plates are features of phloem, not xylem.',
+            topic: 'Xylem, phloem and sclerenchyma',
+        },
+        {
+            id: 'mcq-t4-8',
+            stem: 'What is the role of companion cells in phloem tissue?',
+            options: ['To transport water upwards', 'To provide structural support', 'To produce ATP for active loading of sucrose', 'To form lignified tubes'],
+            correctAnswer: 2,
+            rationale: 'Companion cells are densely packed with mitochondria to produce ATP required for the active loading of sucrose into phloem sieve tubes at source regions. They support the sieve tube elements metabolically since sieve tubes lack nuclei and have reduced organelles.',
+            topic: 'Xylem, phloem and sclerenchyma',
+        },
+        // Subtopic 4 — Plant fibres and sustainability
+        {
+            id: 'mcq-t4-9',
+            stem: 'Why are plant fibres such as hemp and flax considered more sustainable than synthetic fibres like nylon?',
+            options: ['They are stronger than synthetic fibres', 'They are derived from renewable biomass and are biodegradable', 'They require no processing', 'They are cheaper to produce'],
+            correctAnswer: 1,
+            rationale: 'Plant fibres come from renewable plant sources and are biodegradable, unlike synthetic fibres derived from non-renewable fossil fuels. Sustainability is about renewability and environmental impact, not necessarily strength or cost.',
+            topic: 'Plant fibres and sustainability',
+        },
+        {
+            id: 'mcq-t4-10',
+            stem: 'What is the main advantage of bioplastics made from plant starch or cellulose?',
+            options: ['They are stronger than oil-based plastics', 'They are often biodegradable, reducing landfill waste', 'They are always cheaper to produce', 'They never break down'],
+            correctAnswer: 1,
+            rationale: 'Bioplastics derived from plant materials are often biodegradable, meaning they break down naturally and reduce landfill waste compared to conventional oil-based plastics. They are renewable alternatives but are not necessarily stronger or cheaper.',
+            topic: 'Plant fibres and sustainability',
+        },
+        // Subtopic 5 — Drug testing and plant compounds
+        {
+            id: 'mcq-t4-11',
+            stem: 'What is the purpose of a double-blind placebo trial in Phase III drug testing?',
+            options: ['To test the drug on animals', 'To remove psychological placebo effects and subconscious bias', 'To determine the safe dosage', 'To test on healthy volunteers'],
+            correctAnswer: 1,
+            rationale: 'In a double-blind trial, neither patients nor doctors know who receives the active drug versus placebo. This removes the placebo effect (psychological improvement) and eliminates subconscious bias in data collection and analysis.',
+            topic: 'Drug testing and plant compounds',
+        },
+        {
+            id: 'mcq-t4-12',
+            stem: 'Which phase of clinical trials tests a new drug on a small group of healthy volunteers to determine safe dosage?',
+            options: ['Pre-clinical testing', 'Phase I', 'Phase II', 'Phase III'],
+            correctAnswer: 1,
+            rationale: 'Phase I tests the drug on a small group of healthy volunteers to determine safe dosage levels and monitor side effects. Pre-clinical uses animals and cell cultures. Phase II tests on patients with the disease. Phase III is large-scale testing.',
+            topic: 'Drug testing and plant compounds',
+        },
+        // Subtopic 6 — Classification systems
+        {
+            id: 'mcq-t4-13',
+            stem: 'What is the main difference between the three-domain system and the five-kingdom system?',
+            options: ['The three-domain system includes viruses', 'The three-domain system places Archaea and Bacteria in separate domains based on molecular phylogeny', 'The five-kingdom system includes more kingdoms', 'The three-domain system does not include eukaryotes'],
+            correctAnswer: 1,
+            rationale: 'Carl Woese proposed the three-domain system based on molecular phylogeny, separating Archaea from Bacteria because Archaea are biochemically more related to eukaryotes. Both systems include eukaryotes, and neither includes viruses (not living).',
+            topic: 'Classification systems',
+        },
+        {
+            id: 'mcq-t4-14',
+            stem: 'What type of evidence is used in molecular phylogeny to determine evolutionary relationships?',
+            options: ['Physical appearance and anatomy', 'Fossil records only', 'Comparisons of DNA, RNA, and protein sequences', 'Geographical distribution'],
+            correctAnswer: 2,
+            rationale: 'Molecular phylogeny compares molecular sequences (DNA bases, RNA, or amino acid sequences in proteins like Cytochrome C) between organisms. Organisms with highly similar sequences share a more recent common ancestor.',
+            topic: 'Classification systems',
+        },
+        // Subtopic 7 — Biodiversity and endemism
+        {
+            id: 'mcq-t4-15',
+            stem: 'What does it mean if a species is described as endemic?',
+            options: ['It is found worldwide', 'It is found naturally in one specific geographical area and nowhere else', 'It is endangered', 'It is a recently discovered species'],
+            correctAnswer: 1,
+            rationale: 'A species is endemic if it is found naturally within one specific geographical area and nowhere else in the world. Endemism is about geographic restriction, not population size or discovery date.',
+            topic: 'Biodiversity and endemism',
+        },
+        {
+            id: 'mcq-t4-16',
+            stem: 'Why are endemic species particularly vulnerable to extinction?',
+            options: ['They have low genetic diversity', 'Their entire population exists in a single location that could be destroyed', 'They cannot adapt to any environment', 'They reproduce very slowly'],
+            correctAnswer: 1,
+            rationale: 'Endemic species have their entire population in a single location. If that specific habitat is threatened by deforestation, climate change, or other factors, the species has no other populations elsewhere to survive.',
+            topic: 'Biodiversity and endemism',
+        },
+        // Subtopic 8 — Species richness and index of diversity
+        {
+            id: 'mcq-t4-17',
+            stem: 'What is the limitation of using species richness alone as a measure of biodiversity?',
+            options: ['It counts too many species', 'It does not account for the population size (abundance) of each species', 'It requires DNA analysis', 'It only works for plants'],
+            correctAnswer: 1,
+            rationale: 'Species richness simply counts the number of different species present but ignores how many individuals of each species exist. A community with one dominant species and many rare ones has high richness but low true diversity.',
+            topic: 'Species richness and index of diversity',
+        },
+        {
+            id: 'mcq-t4-18',
+            stem: 'Which index accounts for both species richness and species evenness (abundance)?',
+            options: ['Species richness index', 'Simpson\'s Index of Diversity', 'Hardy-Weinberg equation', 'Molecular phylogeny index'],
+            correctAnswer: 1,
+            rationale: 'Simpson\'s Index of Diversity (D) accounts for both the number of species and their relative abundance. Higher values indicate greater diversity. Hardy-Weinberg relates to allele frequencies, not species diversity.',
+            topic: 'Species richness and index of diversity',
+        },
+        // Subtopic 9 — Adaptation and natural selection
+        {
+            id: 'mcq-t4-19',
+            stem: 'What is the biological definition of a species?',
+            options: ['Organisms that live in the same habitat', 'Organisms that look similar to each other', 'A group of organisms that can naturally interbreed to produce fertile offspring', 'Organisms with identical DNA sequences'],
+            correctAnswer: 2,
+            rationale: 'A species is defined as a group of organisms that can naturally interbreed to produce fertile offspring. Habitat, appearance, and DNA similarity are not the defining criteria.',
+            topic: 'Speciation',
+        },
+        // Subtopic 10 — Speciation
+        {
+            id: 'mcq-t4-20',
+            stem: 'Which mechanism of speciation involves polyploidy as a rapid form of reproductive isolation?',
+            options: ['Allopatric speciation', 'Sympatric speciation', 'Parapatric speciation', 'Peripatric speciation'],
+            correctAnswer: 1,
+            rationale: 'Sympatric speciation occurs without geographic isolation within the same physical environment, and polyploidy (mutation in chromosome number) in plants is a rapid form of this. Allopatric speciation requires geographic isolation.',
+            topic: 'Speciation',
+        },
+        // Subtopic 11 — Hardy-Weinberg principle
+        {
+            id: 'mcq-t4-21',
+            stem: 'In the Hardy-Weinberg equation p² + 2pq + q² = 1, what does 2pq represent?',
+            options: ['Frequency of homozygous dominant individuals', 'Frequency of homozygous recessive individuals', 'Frequency of heterozygous individuals', 'Total allele frequency in the population'],
+            correctAnswer: 2,
+            rationale: 'In the Hardy-Weinberg equation, 2pq represents the frequency of heterozygous individuals. p² is homozygous dominant. q² is homozygous recessive. The total allele frequency is p + q = 1.',
+            topic: 'Hardy-Weinberg principle',
+        },
+        {
+            id: 'mcq-t4-22',
+            stem: 'If 9% of a population has a recessive genetic disorder (q² = 0.09), what is the frequency of the recessive allele (q)?',
+            options: ['0.09', '0.30', '0.70', '0.91'],
+            correctAnswer: 1,
+            rationale: 'If q² = 0.09, then q = √0.09 = 0.30. The square root must be taken to find the allele frequency from the genotype frequency.',
+            topic: 'Hardy-Weinberg principle',
+        },
+        // Subtopic 12 — Conservation methods
+        {
+            id: 'mcq-t4-23',
+            stem: 'Why are seeds dehydrated and frozen at -20°C in seed banks?',
+            options: ['To kill any pathogens on the seeds', 'To increase the metabolic rate and speed up germination', 'To lower metabolism drastically to prevent germination and decomposition', 'To make the seeds more resistant to radiation'],
+            correctAnswer: 2,
+            rationale: 'Drying and freezing seeds lowers their metabolism drastically, preventing germination and decomposition by fungi/bacteria. This preserves viability for long periods.',
+            topic: 'Conservation methods',
+        },
+        {
+            id: 'mcq-t4-24',
+            stem: 'What is the purpose of a studbook in captive breeding programmes?',
+            options: ['To record visitor attendance at the zoo', 'To keep detailed genetic records and orchestrate breeding to maximise genetic diversity', 'To document the feeding schedules of animals', 'To track the financial costs of maintaining animals'],
+            correctAnswer: 1,
+            rationale: 'Studbooks are detailed genetic records used to orchestrate breeding between carefully selected individuals from different zoos to maximise genetic diversity and prevent inbreeding depression.',
+            topic: 'Conservation methods',
+        },
+        // Subtopic 13-14 — Core Practicals 7 & 8
+        {
+            id: 'mcq-t4-25',
+            stem: 'In Core Practical 7 (plant tissue sections), what is the purpose of using Toluidine Blue stain?',
+            options: ['To stain all tissues the same colour for visibility', 'To stain lignin blue-green while unstained tissues appear pink-purple', 'To kill any bacteria on the specimen', 'To make the specimen more flexible for sectioning'],
+            correctAnswer: 1,
+            rationale: 'Toluidine Blue stains lignin (in xylem and sclerenchyma) a deep blue-green, while unlignified tissue (phloem and parenchyma) stains pink-purple. This differential staining allows identification of tissue types.',
+            topic: 'Core Practical 7',
+        },
+        {
+            id: 'mcq-t4-26',
+            stem: 'According to the rules for biological drawings from microscope observations, which of the following is correct?',
+            options: ['Use shading to show three-dimensional structure', 'Draw continuous lines with no sketching or overlapping', 'The drawing should take up less than 25% of the page', 'Use coloured pencils to match the specimen colours'],
+            correctAnswer: 1,
+            rationale: 'Biological drawings must use continuous lines with no sketching, shading, or overlapping. They should take up at least 50% of the page. A sharp HB pencil should be used, not coloured pencils.',
+            topic: 'Core Practical 7',
+        },
+        {
+            id: 'mcq-t4-27',
+            stem: 'In the tensile strength practical (Core Practical 8), what is the purpose of retting plant stems in water?',
+            options: ['To increase the tensile strength of the fibres', 'To soften the surrounding tissue, leaving the tough vascular bundles', 'To kill any bacteria on the plant material', 'To dye the fibres a specific colour'],
+            correctAnswer: 1,
+            rationale: 'Retting involves soaking plant stems in water to soften and break down the surrounding tissue, making it easier to extract the tough vascular bundles (plant fibres).',
+            topic: 'Core Practical 8',
+        },
+        {
+            id: 'mcq-t4-28',
+            stem: 'When investigating tensile strength of plant fibres, why must the diameter of each fibre be measured?',
+            options: ['To calculate the length of the fibre', 'To calculate the pulling area for accurate strength comparison', 'To determine the age of the plant', 'To identify the species of plant'],
+            correctAnswer: 1,
+            rationale: 'The diameter must be measured using a micrometer or callipers to later calculate the cross-sectional pulling area. This allows accurate comparison of tensile strength between fibres of different thicknesses.',
+            topic: 'Core Practical 8',
+        },
+        // Subtopic 15 — Core Practical 9
+        {
+            id: 'mcq-t4-29',
+            stem: 'In Core Practical 9 (antimicrobial properties of plant extracts), why is the incubation temperature kept at 25°C rather than 37°C?',
+            options: ['25°C is the optimal temperature for all bacterial growth', 'To prevent cultivating dangerous human pathogens that grow at body temperature', 'To speed up the growth of bacteria', '25°C is room temperature and saves energy costs'],
+            correctAnswer: 1,
+            rationale: 'Incubation at 25°C (not 37°C) prevents cultivating dangerous human pathogens that grow optimally at body temperature (37°C). This is a safety precaution.',
+            topic: 'Core Practical 9',
+        },
+        {
+            id: 'mcq-t4-30',
+            stem: 'In the antimicrobial assay, why must a control disc soaked only in plain ethanol be used?',
+            options: ['To provide nutrients for bacterial growth', 'To prove the solvent (ethanol) is not what is killing the bacteria', 'To increase the zone of inhibition', 'To sterilise the agar plate'],
+            correctAnswer: 1,
+            rationale: 'A control disc with plain ethanol proves that any antimicrobial effect is due to the plant extract compounds, not the ethanol solvent itself.',
+            topic: 'Core Practical 9',
+        },
+    ],
+
+    // ─────────────────────────────────────────────
+    // FILL-BLANK — 15 questions
+    // ─────────────────────────────────────────────
+    fillblank: [
+        {
+            id: 'fb-t4-1',
+            stem: 'Complete the following:',
+            template: 'Cellulose is a polymer of __BLANK__-glucose joined by __BLANK__-glycosidic bonds.',
+            blanks: [
+                { answer: 'beta' },
+                { answer: '1,4' },
+            ],
+            rationale: 'Cellulose is made of beta-glucose monomers. Each alternate monomer is inverted 180° to allow 1,4-glycosidic bond formation.',
+        },
+        {
+            id: 'fb-t4-2',
+            stem: 'Complete the following:',
+            template: 'In cellulose, parallel chains form extensive __BLANK__ bonds between adjacent chains, bundling together to form __BLANK__.',
+            blanks: [
+                { answer: 'hydrogen' },
+                { answer: 'microfibrils' },
+            ],
+            rationale: 'Hydrogen bonds between parallel cellulose chains provide collective strength. Bundles of chains form microfibrils with high tensile strength.',
+        },
+        {
+            id: 'fb-t4-3',
+            stem: 'Complete the following:',
+            template: 'Starch consists of two molecules: __BLANK__ (unbranched, helical) and __BLANK__ (branched with 1,6-glycosidic bonds).',
+            blanks: [
+                { answer: 'amylose' },
+                { answer: 'amylopectin' },
+            ],
+            rationale: 'Amylose coils into a tight helix for compact storage. Amylopectin has branching points via 1,6-glycosidic bonds for faster hydrolysis.',
+        },
+        {
+            id: 'fb-t4-4',
+            stem: 'Complete the following:',
+            template: 'Glycogen is more highly __BLANK__ than amylopectin, providing more terminal ends for rapid __BLANK__.',
+            blanks: [
+                { answer: 'branched' },
+                { answer: 'hydrolysis' },
+            ],
+            rationale: 'Glycogen has more 1,6-glycosidic bonds creating more branch points. More terminal ends mean enzymes can release glucose more quickly.',
+        },
+        {
+            id: 'fb-t4-5',
+            stem: 'Complete the following:',
+            template: 'Sieve tube elements have no __BLANK__ and very little cytoplasm. __BLANK__ cells provide ATP for active loading.',
+            blanks: [
+                { answer: 'nucleus' },
+                { answer: 'companion' },
+            ],
+            rationale: 'Sieve tubes are living but have reduced organelles for unobstructed sap flow. Companion cells are metabolically active and support them.',
+        },
+        {
+            id: 'fb-t4-6',
+            stem: 'Complete the following:',
+            template: 'Xylem vessels are __BLANK__ cells with walls thickened by __BLANK__, which waterproofs the vessel and provides structural support.',
+            blanks: [
+                { answer: 'dead' },
+                { answer: 'lignin' },
+            ],
+            rationale: 'Xylem consists of dead cells stacked into hollow tubes. Lignin thickening prevents collapse under the tension of the transpiration stream.',
+        },
+        {
+            id: 'fb-t4-7',
+            stem: 'Complete the following:',
+            template: 'Phloem transports organic solutes via __BLANK__, powered by ATP from __BLANK__ cells which actively load sucrose.',
+            blanks: [
+                { answer: 'translocation' },
+                { answer: 'companion' },
+            ],
+            rationale: 'Phloem sieve tube elements transport assimilates up and down the plant. Companion cells provide ATP for active loading of sucrose.',
+        },
+        {
+            id: 'fb-t4-8',
+            stem: 'Complete the following:',
+            template: 'Carl Woese proposed the three-domain system based on __BLANK__ phylogeny: Bacteria, __BLANK__, and Eukaryota.',
+            blanks: [
+                { answer: 'molecular' },
+                { answer: 'Archaea' },
+            ],
+            rationale: 'Molecular phylogeny compares DNA, RNA, and protein sequences. Archaea are prokaryotes more closely related to eukaryotes than bacteria.',
+        },
+        {
+            id: 'fb-t4-9',
+            stem: 'Complete the following:',
+            template: 'A species is __BLANK__ if it is found naturally in one specific geographical area and nowhere else, making it vulnerable to __BLANK__.',
+            blanks: [
+                { answer: 'endemic' },
+                { answer: 'extinction' },
+            ],
+            rationale: 'Endemic species have restricted ranges, so habitat destruction in their single location threatens their entire population.',
+        },
+        {
+            id: 'fb-t4-10',
+            stem: 'Complete the following:',
+            template: 'In the Hardy-Weinberg equation, p + q = 1 represents __BLANK__ frequencies, while p² + 2pq + q² = 1 represents __BLANK__ frequencies.',
+            blanks: [
+                { answer: 'allele' },
+                { answer: 'genotype' },
+            ],
+            rationale: 'The first equation tracks dominant (p) and recessive (q) allele proportions. The second equation tracks homozygous dominant (p²), heterozygous (2pq), and homozygous recessive (q²) individuals.',
+        },
+        {
+            id: 'fb-t4-11',
+            stem: 'Complete the following:',
+            template: 'In the Hardy-Weinberg equation, __BLANK__ represents the frequency of heterozygous individuals (carriers).',
+            blanks: [
+                { answer: '2pq' },
+            ],
+            rationale: 'The term 2pq calculates the proportion of individuals carrying one dominant and one recessive allele in the population.',
+        },
+        {
+            id: 'fb-t4-12',
+            stem: 'Complete the following:',
+            template: 'Allopatric speciation occurs when a physical barrier divides a population, blocking __BLANK__ flow, while different __BLANK__ pressures drive divergence.',
+            blanks: [
+                { answer: 'gene' },
+                { answer: 'selection' },
+            ],
+            rationale: 'Geographic isolation prevents gene exchange. Different environments create different selection pressures, eventually leading to reproductive isolation.',
+        },
+        {
+            id: 'fb-t4-13',
+            stem: 'Complete the following:',
+            template: 'Seed banks store seeds at __BLANK__°C after drying to lower __BLANK__ and prevent germination.',
+            blanks: [
+                { answer: '-20' },
+                { answer: 'metabolism' },
+            ],
+            rationale: 'Seeds are cleaned, dried, and frozen at -20°C. This drastically reduces metabolic activity and prevents decomposition by fungi and bacteria.',
+        },
+        {
+            id: 'fb-t4-14',
+            stem: 'Complete the following:',
+            template: 'In antimicrobial testing, a clear __BLANK__ of inhibition around the disc indicates bacterial death. The area is calculated using __BLANK__.',
+            blanks: [
+                { answer: 'zone' },
+                { answer: 'πr²' },
+            ],
+            rationale: 'Plant extract-soaked discs are placed on bacterial lawns. The clear zone where bacteria died is measured by diameter, and area is calculated with πr².',
+        },
+        {
+            id: 'fb-t4-15',
+            stem: 'Complete the following:',
+            template: 'When testing antimicrobial properties, plates are incubated at __BLANK__°C (not 37°C) to prevent cultivating dangerous __BLANK__ pathogens.',
+            blanks: [
+                { answer: '25' },
+                { answer: 'human' },
+            ],
+            rationale: 'Incubation at 25°C rather than body temperature (37°C) ensures that any human pathogens that might grow cannot multiply to dangerous levels.',
+        },
+    ],
+
+    // ─────────────────────────────────────────────
+    // DRAG & DROP — 10 questions
+    // ─────────────────────────────────────────────
+    dragdrop: [
+        {
+            id: 'dd-t4-1',
+            stem: 'Sort each carbohydrate by its structure and properties.',
+            categories: ['Cellulose', 'Starch', 'Glycogen'],
+            items: [
+                { text: 'Made of beta-glucose', category: 'Cellulose' },
+                { text: 'Made of alpha-glucose', category: 'Starch' },
+                { text: 'Most highly branched', category: 'Glycogen' },
+                { text: 'Unbranched straight chains', category: 'Cellulose' },
+                { text: 'Contains amylose and amylopectin', category: 'Starch' },
+                { text: 'Found in animals and fungi', category: 'Glycogen' },
+                { text: 'Forms microfibrils', category: 'Cellulose' },
+                { text: 'Coiled helical structure', category: 'Starch' },
+            ],
+        },
+        {
+            id: 'dd-t4-2',
+            stem: 'Classify each vascular tissue feature as belonging to xylem or phloem.',
+            categories: ['Xylem', 'Phloem'],
+            items: [
+                { text: 'Dead cells', category: 'Xylem' },
+                { text: 'Living cells', category: 'Phloem' },
+                { text: 'Transports water and minerals', category: 'Xylem' },
+                { text: 'Transports sucrose and amino acids', category: 'Phloem' },
+                { text: 'Contains lignin', category: 'Xylem' },
+                { text: 'Has companion cells', category: 'Phloem' },
+                { text: 'Hollow tubes with no end walls', category: 'Xylem' },
+                { text: 'Sieve plates between cells', category: 'Phloem' },
+            ],
+        },
+        {
+            id: 'dd-t4-3',
+            stem: 'Classify each adaptation type correctly.',
+            categories: ['Anatomical', 'Physiological', 'Behavioural'],
+            items: [
+                { text: 'Thick fur or blubber', category: 'Anatomical' },
+                { text: 'Venom production', category: 'Physiological' },
+                { text: 'Migration', category: 'Behavioural' },
+                { text: 'Beak shape', category: 'Anatomical' },
+                { text: 'Producing concentrated urine', category: 'Physiological' },
+                { text: 'Courtship displays', category: 'Behavioural' },
+                { text: 'Body covering (scales, feathers)', category: 'Anatomical' },
+                { text: 'Hibernation', category: 'Behavioural' },
+            ],
+        },
+        {
+            id: 'dd-t4-4',
+            stem: 'Classify each item according to the three-domain system.',
+            categories: ['Bacteria', 'Archaea', 'Eukaryota'],
+            items: [
+                { text: 'True bacteria (prokaryotic)', category: 'Bacteria' },
+                { text: 'Extremophiles', category: 'Archaea' },
+                { text: 'Contains animals, plants, fungi', category: 'Eukaryota' },
+                { text: 'Circular DNA without histones', category: 'Bacteria' },
+                { text: 'Biochemically more related to eukaryotes than bacteria', category: 'Archaea' },
+                { text: 'Contains organisms with a true nucleus', category: 'Eukaryota' },
+                { text: 'Plasmids common', category: 'Bacteria' },
+                { text: 'Fungi', category: 'Eukaryota' },
+            ],
+        },
+        {
+            id: 'dd-t4-5',
+            stem: 'Classify each conservation strategy as in-situ or ex-situ conservation.',
+            categories: ['In-situ Conservation', 'Ex-situ Conservation'],
+            items: [
+                { text: 'Protecting species in their natural habitat', category: 'In-situ Conservation' },
+                { text: 'Seed banks storing frozen seeds at -20°C', category: 'Ex-situ Conservation' },
+                { text: 'National parks and wildlife reserves', category: 'In-situ Conservation' },
+                { text: 'Captive breeding programmes in zoos', category: 'Ex-situ Conservation' },
+                { text: 'Using studbooks to manage genetic diversity', category: 'Ex-situ Conservation' },
+                { text: 'Maintaining natural ecosystems', category: 'In-situ Conservation' },
+                { text: 'Reintroduction of zoo-bred animals to the wild', category: 'Ex-situ Conservation' },
+                { text: 'Periodic germination tests to check seed viability', category: 'Ex-situ Conservation' },
+            ],
+        },
+        {
+            id: 'dd-t4-6',
+            stem: 'Sort each adaptation example into its correct type.',
+            categories: ['Anatomical Adaptation', 'Physiological Adaptation', 'Behavioural Adaptation'],
+            items: [
+                { text: 'Thick blubber on polar bears', category: 'Anatomical Adaptation' },
+                { text: 'Snake venom production', category: 'Physiological Adaptation' },
+                { text: 'Mating dances', category: 'Behavioural Adaptation' },
+                { text: 'Specific beak shapes for feeding', category: 'Anatomical Adaptation' },
+                { text: 'Desert rats producing concentrated urine', category: 'Physiological Adaptation' },
+                { text: 'Migration', category: 'Behavioural Adaptation' },
+                { text: 'Possums hiding in burrows during the day', category: 'Behavioural Adaptation' },
+                { text: 'Internal metabolic processes', category: 'Physiological Adaptation' },
+            ],
+        },
+        {
+            id: 'dd-t4-7',
+            stem: 'Classify each speciation scenario as allopatric or sympatric speciation.',
+            categories: ['Allopatric Speciation', 'Sympatric Speciation'],
+            items: [
+                { text: 'Involves a physical geographical barrier', category: 'Allopatric Speciation' },
+                { text: 'Occurs within the same physical environment', category: 'Sympatric Speciation' },
+                { text: 'Mountain range divides a population', category: 'Allopatric Speciation' },
+                { text: 'Different mating seasons prevent interbreeding', category: 'Sympatric Speciation' },
+                { text: 'No gene flow between separated groups', category: 'Allopatric Speciation' },
+                { text: 'Polyploidy in plants', category: 'Sympatric Speciation' },
+                { text: 'Mutated mating call causes reproductive isolation', category: 'Sympatric Speciation' },
+                { text: 'Different selection pressures in different locations', category: 'Allopatric Speciation' },
+            ],
+        },
+        {
+            id: 'dd-t4-8',
+            stem: 'Sort each drug trial feature into the correct clinical trial phase.',
+            categories: ['Pre-clinical Testing', 'Phase I', 'Phase II', 'Phase III'],
+            items: [
+                { text: 'Testing on isolated human cells and live animals', category: 'Pre-clinical Testing' },
+                { text: 'Small group of healthy human volunteers', category: 'Phase I' },
+                { text: 'Small group of patients with the disease', category: 'Phase II' },
+                { text: 'Large-scale trial with hundreds or thousands of patients', category: 'Phase III' },
+                { text: 'Determines safe dosage levels', category: 'Phase I' },
+                { text: 'Monitors efficacy against safety', category: 'Phase II' },
+                { text: 'Uses double-blind placebo protocol', category: 'Phase III' },
+                { text: 'Checks for toxicity and rough efficacy', category: 'Pre-clinical Testing' },
+            ],
+        },
+        {
+            id: 'dd-t4-9',
+            stem: 'Match each description to the correct plant fibre sustainability concept.',
+            categories: ['Bioplastics', 'Biofuels', 'Plant Fibre Products'],
+            items: [
+                { text: 'Made from plant-based starch or cellulose', category: 'Bioplastics' },
+                { text: 'Bioethanol from sugar cane', category: 'Biofuels' },
+                { text: 'Using hemp or cotton instead of nylon', category: 'Plant Fibre Products' },
+                { text: 'Often biodegradable, reducing landfill waste', category: 'Bioplastics' },
+                { text: 'Potentially carbon neutral', category: 'Biofuels' },
+                { text: 'Derived from renewable biomass not fossil fuels', category: 'Plant Fibre Products' },
+                { text: 'Renewable alternative to oil-based plastics', category: 'Bioplastics' },
+                { text: 'Plants absorbed CO₂ while growing', category: 'Biofuels' },
+            ],
+        },
+        {
+            id: 'dd-t4-10',
+            stem: 'Sort each biodiversity concept into its correct category.',
+            categories: ['Species Richness', 'Heterozygosity Index', 'Endemism'],
+            items: [
+                { text: 'Measures the number of different species in a community', category: 'Species Richness' },
+                { text: 'Calculates proportion of individuals heterozygous for a gene', category: 'Heterozygosity Index' },
+                { text: 'Species found naturally in only one geographical area', category: 'Endemism' },
+                { text: 'Does not account for population sizes of each species', category: 'Species Richness' },
+                { text: 'Higher values indicate greater genetic diversity', category: 'Heterozygosity Index' },
+                { text: 'Highly vulnerable to extinction if habitat is threatened', category: 'Endemism' },
+                { text: 'Allows better adaptation to disease or environmental changes', category: 'Heterozygosity Index' },
+                { text: 'Simple count of species present', category: 'Species Richness' },
+            ],
+        },
+    ],
+
+    // ─────────────────────────────────────────────
+    // SEQUENCE — 8 questions
+    // ─────────────────────────────────────────────
+    sequence: [
+        {
+            id: 'seq-t4-1',
+            stem: 'Arrange the steps of modern clinical drug trials in the correct order:',
+            steps: [
+                'Pre-clinical testing: The drug is tested on isolated human cells/tissues in the lab and then on live animals to check for toxicity and rough efficacy',
+                'Phase I: Tested on a small group of healthy human volunteers to determine safe dosage levels, monitor side effects, and see how the body metabolises the drug',
+                'Phase II: Tested on a small group of volunteer patients who HAVE the disease/condition. Efficacy starts to be monitored against safety',
+                'Phase III: A large-scale trial involving hundreds or thousands of patients using a double-blind protocol with a placebo',
+            ],
+        },
+        {
+            id: 'seq-t4-2',
+            stem: 'Arrange the taxonomic classification hierarchy from broadest to most specific:',
+            steps: [
+                'Domain (Bacteria, Archaea, or Eukaryota)',
+                'Kingdom',
+                'Phylum',
+                'Class',
+                'Order',
+                'Family, Genus, Species',
+            ],
+        },
+        {
+            id: 'seq-t4-3',
+            stem: 'Arrange the steps of natural selection in the correct order:',
+            steps: [
+                'Random mutations create new alleles, resulting in genetic variation within a population',
+                'A change in the environment introduces a selection pressure (e.g., a new disease, predator, or climate change)',
+                'Individuals possessing advantageous alleles are better adapted and more likely to survive and reproduce',
+                'These individuals pass on their advantageous alleles to their offspring',
+                'Over many generations, the frequency of the advantageous allele increases within the population',
+            ],
+        },
+        {
+            id: 'seq-t4-4',
+            stem: 'Arrange the steps of allopatric speciation in the correct order:',
+            steps: [
+                'A physical barrier (e.g., a new mountain range, river, earthquake fault) divides a parent population into two separated sub-populations with no gene flow between them',
+                'The two halves experience completely different environments and therefore different selection pressures',
+                'Different random mutations occur in each population',
+                'Natural selection drives allele frequencies in divergent directions in both sub-populations',
+                'Over immense time, the genetics and phenotypes diverge so much that even if the barrier is removed, the two groups can no longer interbreed to produce fertile offspring',
+            ],
+        },
+        {
+            id: 'seq-t4-5',
+            stem: 'Arrange the steps for preparing and viewing a plant tissue section under a microscope (Core Practical 7):',
+            steps: [
+                'Use a scalpel or razor blade to cut extremely thin transverse slices of a plant stem against a white tile (cutting away from your body for safety)',
+                'Use tweezers to transfer the slices into a watch glass containing water to stop them from dehydrating/drying out',
+                'Select the thinnest, most transparent slice and transfer it to a glass slide',
+                'Add a drop of a suitable stain (e.g., Toluidine Blue which stains lignin blue-green and unlignified tissue pink-purple)',
+                'Place a coverslip on at an angle using a mounted needle to avoid air bubbles',
+                'View under a microscope and produce biological drawings of the vascular bundles',
+            ],
+        },
+        {
+            id: 'seq-t4-6',
+            stem: 'Arrange the steps for calculating allele frequencies using the Hardy-Weinberg equations:',
+            steps: [
+                'Identify the frequency of homozygous recessive individuals (q²) from the given data (e.g., if 16% have the recessive phenotype, then q² = 0.16)',
+                'Take the square root to find q (the frequency of the recessive allele)',
+                'Use the equation p = 1 − q to find p (the frequency of the dominant allele)',
+                'Calculate 2pq to find the frequency of heterozygous individuals (carriers)',
+            ],
+        },
+        {
+            id: 'seq-t4-7',
+            stem: 'Arrange the steps for testing the tensile strength of plant fibres (Core Practical 8):',
+            steps: [
+                'Extract plant fibres by retting them in water to soften the surrounding tissue, leaving the tough vascular bundles',
+                'Cut all fibres to the exact same length to control for the length variable',
+                'Measure the diameter of each fibre using a micrometer or callipers to later calculate pulling area',
+                'Clamp the fibre firmly between two retort stands (or suspend masses from the end of a clamped fibre)',
+                'Gradually add masses (force) 10g at a time until the fibre snaps',
+                'Record the breaking force (mass × 9.81) and repeat several times to calculate a reliable mean',
+            ],
+        },
+        {
+            id: 'seq-t4-8',
+            stem: 'Arrange the steps for testing antimicrobial properties of plant extracts using disk diffusion (Core Practical 9):',
+            steps: [
+                'Grind the plant sample with a mortar and pestle using exactly 10cm³ of ethanol as a solvent',
+                'Use a sterile pipette to evenly spread a known liquid broth culture of bacteria over an agar plate, creating a "bacterial lawn"',
+                'Soak a sterile filter paper disc in the plant extract and place it carefully onto the centre of the agar plate (also place a control disc soaked only in plain ethanol)',
+                'Tape the petri dish loosely (not completely sealed, to ensure aerobic respiration and prevent anaerobic pathogens)',
+                'Incubate at 25°C (NOT 37°C, to prevent cultivating dangerous human pathogens) for 24–48 hours',
+                'Measure the diameter of the clear "zone of inhibition" around the disc where bacteria died and calculate area using πr²',
+            ],
+        },
+    ],
+
+    // ─────────────────────────────────────────────
+    // KEYWORD CHECK — 12 questions
+    // ─────────────────────────────────────────────
+    keyword: [
+        {
+            id: 'kw-t4-1',
+            stem: 'Explain how the structure of cellulose relates to its function in plant cell walls. [5 marks]',
+            marks: 5,
+            keywords: ['beta-glucose', '1,4-glycosidic', 'inverted', 'hydrogen bonds', 'microfibrils', 'tensile strength'],
+            modelAnswer: 'Cellulose is a polymer of beta-glucose monomers joined by 1,4-glycosidic bonds formed via condensation reactions. To form these bonds, every alternate beta-glucose molecule must be inverted (rotated 180 degrees) relative to its neighbour, producing long, unbranched, straight chains. These parallel chains line up and form extensive cross-links via hydrogen bonds between adjacent chains. Although individual hydrogen bonds are weak, their sheer number provides massive collective strength. These bonded chains bundle together to form microfibrils, which provide high tensile strength to resist osmotic pressure and prevent the cell from bursting.',
+        },
+        {
+            id: 'kw-t4-2',
+            stem: 'Compare the structures of starch and glycogen and explain how their structures relate to their functions as storage molecules. [6 marks]',
+            marks: 6,
+            keywords: ['alpha-glucose', 'amylose', 'amylopectin', 'helical', 'branched', '1,6-glycosidic', 'insoluble', 'water potential'],
+            modelAnswer: 'Both starch and glycogen are polymers of alpha-glucose and serve as energy storage molecules. Starch consists of two components: amylose, which is a long unbranched chain of alpha-glucose joined by 1,4-glycosidic bonds that coils into a tight helical structure for compact storage, and amylopectin, which has both 1,4 and 1,6-glycosidic bonds creating a branched structure. Glycogen, found in animals and fungi, is similar to amylopectin but is much more frequently branched with more 1,6-glycosidic bonds. This extensive branching provides many terminal ends for rapid hydrolysis by enzymes to release glucose quickly, meeting the higher metabolic demands of animals. Both molecules are large and insoluble, meaning they do not affect the water potential of the cell and cannot diffuse out, making them ideal for storage.',
+        },
+        {
+            id: 'kw-t4-3',
+            stem: 'Describe the structure and function of xylem vessels and explain how they are adapted for their role. [5 marks]',
+            marks: 5,
+            keywords: ['dead cells', 'hollow tubes', 'lignin', 'pits', 'tensile strength', 'transpiration stream'],
+            modelAnswer: 'Xylem vessels transport water and dissolved mineral ions upwards from roots to leaves. They consist of dead cells stacked into long, continuous hollow tubes that lack end walls and cell contents, allowing unobstructed water flow. The cell walls are heavily thickened with lignin, a woody substance that waterproofs the vessel and provides immense structural support, preventing collapse under the tension of the transpiration stream. Unlignified areas called pits allow sideways movement of water between adjacent vessels. This combination of hollow tubes and lignified walls provides the tensile strength needed to withstand the negative pressure generated during transpiration.',
+        },
+        {
+            id: 'kw-t4-4',
+            stem: 'Explain how sieve tube elements and companion cells work together in phloem tissue. [5 marks]',
+            marks: 5,
+            keywords: ['sieve tube elements', 'companion cells', 'sieve plates', 'no nucleus', 'mitochondria', 'ATP', 'active loading', 'translocation'],
+            modelAnswer: 'Phloem tissue transports assimilates such as sucrose and amino acids up and down the plant via translocation. Sieve tube elements are living cells arranged end-to-end to form a tube. They lack a nucleus and have very little cytoplasm to allow unobstructed flow of sap. Their end walls are perforated to form sieve plates. Companion cells are densely packed with mitochondria to produce the ATP required for the active loading of sucrose into the phloem at source regions. The companion cells support the sieve tube elements metabolically, as the sieve tubes cannot perform many cellular functions independently due to their reduced organelle content.',
+        },
+        {
+            id: 'kw-t4-5',
+            stem: 'Describe the three-domain system of classification and explain how molecular phylogeny supports this system. [5 marks]',
+            marks: 5,
+            keywords: ['Carl Woese', 'Bacteria', 'Archaea', 'Eukaryota', 'molecular phylogeny', 'DNA sequences', 'Cytochrome C', 'evolutionary relationships'],
+            modelAnswer: 'The three-domain system was proposed by Carl Woese as a higher taxonomic rank above kingdoms. The three domains are Bacteria (true bacteria, prokaryotic), Archaea (extremophile prokaryotes that are biochemically more related to eukaryotes than bacteria), and Eukaryota (all organisms with a true nucleus including animals, plants, fungi, and protoctists). This system is based on molecular phylogeny, which examines evolutionary relationships by comparing molecular sequences such as DNA base sequences, RNA sequences, or amino acid sequences in common proteins like Cytochrome C. Organisms with highly similar molecular sequences share a more recent common ancestor, providing evidence for their evolutionary relationships that may not be apparent from physical characteristics alone.',
+        },
+        {
+            id: 'kw-t4-6',
+            stem: 'Explain what is meant by endemism and discuss why endemic species are particularly vulnerable to extinction. [4 marks]',
+            marks: 4,
+            keywords: ['endemic', 'geographical area', 'nowhere else', 'habitat', 'vulnerable', 'extinction', 'single location'],
+            modelAnswer: 'A species is described as endemic if it is found naturally within one specific geographical area and nowhere else in the world. Examples include species restricted to particular islands, mountain ranges, or other isolated habitats. Endemic species are particularly vulnerable to extinction because their entire population exists in a single location. If that specific habitat is threatened by factors such as deforestation, climate change, pollution, or invasive species, the species has no other populations elsewhere to survive. There is no reservoir population to recolonise if the local population is wiped out, making conservation of their specific habitat critical for their survival.',
+        },
+        {
+            id: 'kw-t4-7',
+            stem: 'Explain the mechanism of natural selection and how it leads to changes in allele frequencies within a population. [6 marks]',
+            marks: 6,
+            keywords: ['mutation', 'alleles', 'genetic variation', 'selection pressure', 'advantageous', 'survive', 'reproduce', 'frequency increases', 'generations'],
+            modelAnswer: 'Natural selection is the process by which populations evolve over time. Random mutations create new alleles, resulting in genetic variation within a population. When a change in the environment occurs, it introduces a selection pressure, such as a new disease, predator, or climate change. Individuals possessing advantageous alleles are better adapted to the new conditions and are more likely to survive and reproduce successfully. These individuals pass on their advantageous alleles to their offspring. Over many generations, the frequency of the advantageous allele increases within the population as those carrying it leave more offspring than those without it. This gradual change in allele frequencies results in the population becoming better adapted to its environment.',
+        },
+        {
+            id: 'kw-t4-8',
+            stem: 'A recessive genetic disorder affects 9% of a population. Use the Hardy-Weinberg principle to calculate the percentage of the population who are carriers (heterozygous) for this disorder. Show your working. [4 marks]',
+            marks: 4,
+            keywords: ['q²', 'square root', 'p + q = 1', '2pq', 'heterozygous', 'carriers', '42%'],
+            modelAnswer: 'If 9% of the population has the recessive disorder, then q² = 0.09 (the frequency of homozygous recessive individuals). Taking the square root gives q = 0.3 (the frequency of the recessive allele). Using the equation p + q = 1, we can calculate p = 1 − 0.3, so p = 0.7 (the frequency of the dominant allele). To find carriers, we calculate 2pq = 2 × 0.7 × 0.3 = 0.42. Therefore, 42% of the population are heterozygous carriers of the disorder allele.',
+        },
+        {
+            id: 'kw-t4-9',
+            stem: 'Describe the process of allopatric speciation and explain how geographical isolation leads to the formation of new species. [6 marks]',
+            marks: 6,
+            keywords: ['physical barrier', 'geographical isolation', 'no gene flow', 'different environments', 'selection pressures', 'mutations', 'allele frequencies diverge', 'interbreed', 'fertile offspring'],
+            modelAnswer: 'Allopatric speciation occurs when a physical barrier such as a mountain range, river, or earthquake fault divides a parent population into two separated sub-populations. This prevents gene flow between them. The two populations experience completely different environments and therefore different selection pressures. Different random mutations occur in each population, and natural selection drives allele frequencies in divergent directions as each population adapts to its specific environment. Over immense time periods, the genetics and phenotypes of the two populations diverge so significantly that even if the physical barrier is removed, the two groups can no longer interbreed to produce fertile offspring. At this point, they are considered two separate species.',
+        },
+        {
+            id: 'kw-t4-10',
+            stem: 'Compare in-situ and ex-situ conservation methods, giving examples and evaluating the advantages of each approach. [6 marks]',
+            marks: 6,
+            keywords: ['in-situ', 'ex-situ', 'natural habitat', 'seed banks', 'captive breeding', 'zoos', 'genetic diversity', 'reintroduction', 'studbooks'],
+            modelAnswer: 'In-situ conservation involves protecting species within their natural habitat, such as establishing national parks, wildlife reserves, or marine protected areas. This maintains the entire ecosystem and allows natural evolutionary processes to continue. Ex-situ conservation involves protecting species outside their natural habitat, including seed banks and captive breeding programmes in zoos. Seed banks store dried, frozen seeds at -20°C to preserve genetic diversity cost-effectively in a small space, protecting against extinction and disease. Zoos use studbooks to track genetic records and orchestrate breeding between individuals from different zoos to maximise genetic diversity and prevent inbreeding depression. While ex-situ methods provide insurance against extinction, in-situ conservation is generally preferred as it protects the entire ecosystem and avoids the challenges of reintroduction.',
+        },
+        {
+            id: 'kw-t4-11',
+            stem: 'Describe how you would investigate the tensile strength of plant fibres, including the variables that must be controlled. [5 marks]',
+            marks: 5,
+            keywords: ['retting', 'same length', 'diameter', 'micrometer', 'masses', 'breaking force', 'repeat', 'temperature', 'humidity', 'age'],
+            modelAnswer: 'To investigate tensile strength, first extract plant fibres from sources such as celery or stinging nettles by retting them in water to soften surrounding tissue, leaving the tough vascular bundles. Cut all fibres to the exact same length to control this variable. Measure the diameter of each fibre using a micrometer or callipers to calculate the cross-sectional area. Clamp the fibre firmly between two retort stands or suspend masses from a clamped fibre. Gradually add masses in 10g increments until the fibre snaps, then record the breaking force by multiplying mass by 9.81. Repeat several times for each fibre type to identify anomalies and calculate a reliable mean. Variables that must be controlled include temperature, humidity, fibre length, botanical source, and age of the plant.',
+        },
+        {
+            id: 'kw-t4-12',
+            stem: 'Describe how you would test plant extracts for antimicrobial properties, explaining the importance of aseptic technique and safe incubation conditions. [6 marks]',
+            marks: 6,
+            keywords: ['mortar and pestle', 'ethanol', 'bacterial lawn', 'filter paper disc', 'control disc', 'zone of inhibition', 'aseptic technique', '25°C', 'Bunsen burner', 'not sealed'],
+            modelAnswer: 'To test antimicrobial properties, grind the plant sample with a mortar and pestle using exactly 10cm³ of ethanol as a solvent. Use a sterile pipette to spread a liquid broth culture of bacteria evenly over an agar plate to create a bacterial lawn. Soak a sterile filter paper disc in the plant extract and place it on the agar. Also place a control disc soaked only in plain ethanol to prove the solvent is not killing the bacteria. Tape the petri dish loosely, not completely sealed, to ensure aerobic respiration and prevent growth of dangerous anaerobic pathogens. Incubate at 25°C, not 37°C, to prevent cultivating dangerous human pathogens. After 24 to 48 hours, measure the diameter of the clear zone of inhibition around the disc where bacteria died. Aseptic technique is essential: disinfect the bench, work near a lit Bunsen burner flame to create an updraft pulling airborne microbes away, flame instrument necks, and dispose of plates in autoclave bags.',
+        },
+    ],
+
+    // ─────────────────────────────────────────────
+    // FLASHCARDS — 25 cards
+    // ─────────────────────────────────────────────
+    flashcards: [
+        {
+            id: 'fc-t4-1',
+            front: 'Name three organelles found in plant cells but not in animal cells.',
+            back: '1. Chloroplasts (site of photosynthesis)\n2. Large permanent vacuole (stores water, maintains turgor)\n3. Cell wall (cellulose structure for support)',
+            topic: 'Plant cell ultrastructure',
+        },
+        {
+            id: 'fc-t4-2',
+            front: 'What is the function of amyloplasts?',
+            back: 'Amyloplasts are small, colourless organelles that synthesise and store starch granules in plant cells.',
+            topic: 'Plant cell ultrastructure',
+        },
+        {
+            id: 'fc-t4-3',
+            front: 'Why must alternate beta-glucose molecules be inverted in cellulose?',
+            back: 'The hydroxyl groups on C1 and C4 are positioned such that inversion allows 1,4-glycosidic bonds to form between monomers. This produces long, straight, unbranched chains.',
+            topic: 'Cellulose structure',
+        },
+        {
+            id: 'fc-t4-4',
+            front: 'How do hydrogen bonds contribute to cellulose strength?',
+            back: 'Parallel cellulose chains form extensive hydrogen bonds with adjacent chains. Although individual H-bonds are weak, their sheer number provides massive collective strength, bundling chains into strong microfibrils.',
+            topic: 'Cellulose structure',
+        },
+        {
+            id: 'fc-t4-5',
+            front: 'Compare amylose and amylopectin.',
+            back: 'Amylose: Unbranched chain of α-glucose with 1,4-glycosidic bonds; coils into tight helix.\nAmylopectin: Branched with 1,4 and 1,6-glycosidic bonds; more terminal ends for hydrolysis.',
+            topic: 'Starch and glycogen',
+        },
+        {
+            id: 'fc-t4-6',
+            front: 'Why is glycogen more branched than starch?',
+            back: 'Glycogen has more 1,6-glycosidic bonds, creating more branch points. This provides many terminal ends for rapid enzyme action, releasing glucose quickly to meet higher animal metabolic demands.',
+            topic: 'Starch and glycogen',
+        },
+        {
+            id: 'fc-t4-7',
+            front: 'How are xylem vessels adapted for water transport?',
+            back: '1. Dead cells forming continuous hollow tubes\n2. No end walls for unobstructed flow\n3. Lignin-thickened walls for waterproofing and structural support\n4. Pits for sideways water movement',
+            topic: 'Xylem, phloem and sclerenchyma',
+        },
+        {
+            id: 'fc-t4-8',
+            front: 'What is the role of companion cells in phloem?',
+            back: 'Companion cells are packed with mitochondria to produce ATP for active loading of sucrose into sieve tubes. They support sieve tube elements metabolically since sieve tubes lack nuclei.',
+            topic: 'Xylem, phloem and sclerenchyma',
+        },
+        {
+            id: 'fc-t4-9',
+            front: 'What are the three sustainability applications of plant fibres?',
+            back: '1. Bioplastics: Made from plant starch/cellulose, biodegradable\n2. Biofuels: Bioethanol from sugar cane, potentially carbon neutral\n3. Plant fibre products: Hemp/cotton instead of synthetic fibres',
+            topic: 'Plant fibres and sustainability',
+        },
+        {
+            id: 'fc-t4-10',
+            front: 'Why are biofuels considered theoretically "carbon neutral"?',
+            back: 'While burning biofuels releases CO₂, the plants absorbed CO₂ while growing. This means the net carbon released is roughly equal to what was absorbed, potentially making them carbon neutral.',
+            topic: 'Plant fibres and sustainability',
+        },
+        {
+            id: 'fc-t4-11',
+            front: 'What are the three phases of modern clinical drug trials?',
+            back: 'Phase I: Tested on small group of healthy volunteers for safe dosage and side effects.\nPhase II: Tested on small group of patients with the disease to monitor efficacy against safety.\nPhase III: Large-scale trial using double-blind protocol with placebo.',
+            topic: 'Drug testing and plant compounds',
+        },
+        {
+            id: 'fc-t4-12',
+            front: 'What is a double-blind placebo trial and why is it used?',
+            back: 'Patients are randomly split into two groups: one receives the active drug, the other receives a placebo. Neither patients nor doctors know who receives which. This removes psychological placebo effects and subconscious bias in data analysis.',
+            topic: 'Drug testing and plant compounds',
+        },
+        {
+            id: 'fc-t4-13',
+            front: 'What are the three domains of life proposed by Carl Woese?',
+            back: 'Bacteria: True bacteria (prokaryotic).\nArchaea: Extremophile prokaryotes biochemically more related to eukaryotes than bacteria.\nEukaryota: All organisms with a true nucleus (animals, plants, fungi, protoctists).',
+            topic: 'Classification systems',
+        },
+        {
+            id: 'fc-t4-14',
+            front: 'How does molecular phylogeny provide evidence for evolutionary relationships?',
+            back: 'Molecular phylogeny compares molecular sequences (DNA bases, RNA, or amino acid sequences in proteins like Cytochrome C) between organisms. Organisms sharing highly similar sequences share a more recent common ancestor.',
+            topic: 'Classification systems',
+        },
+        {
+            id: 'fc-t4-15',
+            front: 'Define the term "endemic species".',
+            back: 'A species is endemic if it is found naturally within one specific geographical area and nowhere else in the world. Endemic species are highly vulnerable to extinction if their single habitat is threatened.',
+            topic: 'Biodiversity and endemism',
+        },
+        {
+            id: 'fc-t4-16',
+            front: 'Why is species richness alone sometimes a flawed measure of biodiversity?',
+            back: 'Species richness simply measures the NUMBER of different species in a community. It does not account for the population size of each species (abundance/evenness), so a community with one dominant species and many rare ones would have high richness but low true diversity.',
+            topic: 'Species richness and index of diversity',
+        },
+        {
+            id: 'fc-t4-17',
+            front: 'What are the three types of adaptations?',
+            back: 'Anatomical: Structural features (e.g., thick blubber, beak shapes).\nPhysiological: Internal chemical/metabolic processes (e.g., snake venom, concentrated urine production).\nBehavioural: How an organism acts (e.g., migration, mating dances).',
+            topic: 'Adaptation and natural selection',
+        },
+        {
+            id: 'fc-t4-18',
+            front: 'Describe the steps of natural selection.',
+            back: '1. Random mutations create new alleles, causing genetic variation.\n2. Environmental change introduces a selection pressure.\n3. Individuals with advantageous alleles survive and reproduce more successfully.\n4. Advantageous alleles are passed to offspring.\n5. Over generations, the frequency of advantageous alleles increases.',
+            topic: 'Adaptation and natural selection',
+        },
+        {
+            id: 'fc-t4-19',
+            front: 'Give the biological definition of a species.',
+            back: 'A species is a group of organisms that can naturally interbreed to produce fertile offspring.',
+            topic: 'Speciation',
+        },
+        {
+            id: 'fc-t4-20',
+            front: 'What is the difference between allopatric and sympatric speciation?',
+            back: 'Allopatric: Speciation due to geographical isolation (physical barrier divides population, different selection pressures drive divergence).\nSympatric: Speciation without geographic isolation, within the same habitat (via behavioural, temporal, or mechanical reproductive isolation, or polyploidy).',
+            topic: 'Speciation',
+        },
+        {
+            id: 'fc-t4-21',
+            front: 'In the Hardy-Weinberg equations, what does 2pq represent?',
+            back: '2pq represents the frequency of heterozygous individuals in the population (carriers of one dominant and one recessive allele).',
+            topic: 'Hardy-Weinberg principle',
+        },
+        {
+            id: 'fc-t4-22',
+            front: 'Name three conditions required for Hardy-Weinberg equilibrium.',
+            back: 'Any three of: large population, random mating, no mutation, no natural selection (all genotypes equally fit), no migration (no gene flow).',
+            topic: 'Hardy-Weinberg principle',
+        },
+        {
+            id: 'fc-t4-23',
+            front: 'Why are seeds dehydrated and frozen in seed banks?',
+            back: 'Drying and freezing at -20°C drastically lowers metabolism to prevent germination and prevents decomposition by fungi/bacteria, allowing long-term storage.',
+            topic: 'Conservation methods',
+        },
+        {
+            id: 'fc-t4-24',
+            front: 'In Core Practical 9, why is the incubation temperature kept at 25°C rather than 37°C?',
+            back: 'Incubation at 25°C (not 37°C) prevents cultivating dangerous human pathogens, which thrive at body temperature (37°C).',
+            topic: 'Core Practical 9',
+        },
+        {
+            id: 'fc-t4-25',
+            front: 'What is the purpose of working near a lit Bunsen burner when conducting antimicrobial assays?',
+            back: 'The Bunsen burner flame creates an updraft that pulls airborne microbes away from the work area, reducing contamination risk. This is a key part of aseptic technique.',
+            topic: 'Core Practical 9',
+        },
+    ],
+};

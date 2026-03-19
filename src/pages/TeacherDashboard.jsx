@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
     LayoutDashboard, Users, AlertTriangle, Clock, Download,
     CheckCircle, XCircle, TrendingUp, TrendingDown, Filter,
-    Mail, ChevronDown, ChevronUp, BarChart3, BookOpen, Save
+    Mail, ChevronDown, ChevronUp, BarChart3, BookOpen, Save, Radio
 } from 'lucide-react';
 import { upsertNote } from '../services/notes/noteStore.js';
+import SessionStartModal from '../components/liveclass/SessionStartModal.jsx';
+import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
 import { seedNotes } from '../data/seedNotes/index.js';
 import './TeacherDashboard.css';
 
@@ -77,9 +80,11 @@ function getMasteryColor(pct) {
 
 /* ─── Component ─── */
 export default function TeacherDashboard() {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('heatmap');
     const [questionSort, setQuestionSort] = useState('successRate');
     const [sortAsc, setSortAsc] = useState(true);
+    const [showStartModal, setShowStartModal] = useState(false);
 
     const [syncStatus, setSyncStatus] = useState('');
     const handleSyncNotes = async () => {
@@ -192,6 +197,30 @@ export default function TeacherDashboard() {
         window.open(`mailto:teacher@school.edu?subject=${subject}&body=${body}`);
     };
 
+    const handleStartClass = async (title, backgroundType) => {
+        const sync = createLiveClassSync({ onSessionEnded: () => {} });
+        try {
+            const session = await sync.createClass(title, backgroundType);
+            if (session) {
+                // Serialise BigInt/Identity for navigation state (used as offline fallback)
+                const navState = {
+                    session: {
+                        classId: session.classId.toString(),
+                        title: session.title,
+                        backgroundType: session.backgroundType,
+                        status: session.status,
+                        hostIdentity: session.hostIdentity?.toHexString?.() ?? 'local',
+                    },
+                };
+                navigate(`/live/${session.classId}`, { state: navState });
+            }
+        } catch (err) {
+            console.error('[LiveClass] Failed to create session:', err);
+        } finally {
+            setShowStartModal(false);
+        }
+    };
+
     const tabs = [
         { id: 'heatmap', label: 'Topic Mastery', icon: BarChart3 },
         { id: 'questions', label: 'Question Validity', icon: AlertTriangle },
@@ -202,8 +231,23 @@ export default function TeacherDashboard() {
 
     return (
         <div className="teacher-dashboard animate-fade-in">
-            <h1>Teacher Dashboard</h1>
-            <p className="teacher-subtitle">Monitor student performance and curriculum effectiveness</p>
+            <div className="teacher-dashboard-header">
+                <div>
+                    <h1>Teacher Dashboard</h1>
+                    <p className="teacher-subtitle">Monitor student performance and curriculum effectiveness</p>
+                </div>
+                <button className="btn btn-primary lc-start-btn" onClick={() => setShowStartModal(true)}>
+                    <Radio size={16} />
+                    Start Live Class
+                </button>
+            </div>
+
+            {showStartModal && (
+                <SessionStartModal
+                    onStart={handleStartClass}
+                    onClose={() => setShowStartModal(false)}
+                />
+            )}
 
             {/* Summary Cards */}
             <div className="teacher-stats-grid">

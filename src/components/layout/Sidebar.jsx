@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, Sun, Moon, Menu, X,
-    Brain, Trophy, Search, Zap
+    Brain, Trophy, Search, Zap, Radio
 } from 'lucide-react';
 import './Layout.css';
 
@@ -75,6 +75,15 @@ export default function Sidebar({ isOpen, onToggle }) {
                     >
                         <LayoutDashboard size={18} />
                         <span>Teacher Dashboard</span>
+                    </Link>
+                    <Link
+                        to="/teacher"
+                        className={`nav-item ${location.pathname === '/teacher' || location.pathname.startsWith('/live') ? 'active' : ''}`}
+                        onClick={() => window.innerWidth < 1024 && onToggle()}
+                        title="Start or join a live class from Teacher Dashboard"
+                    >
+                        <Radio size={18} />
+                        <span>Live Class</span>
                     </Link>
 
                     <div className="nav-divider" />

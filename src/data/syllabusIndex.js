@@ -13,6 +13,7 @@ import { oLevelPhysicsSyllabus } from './oLevelPhysicsSyllabus.js';
 import { oLevelBusinessSyllabus } from './oLevelBusinessSyllabus.js';
 import { oLevelMathsCoreSyllabus } from './oLevelMathsCoreSyllabus.js';
 import { oLevelMathsExtendedSyllabus } from './oLevelMathsExtendedSyllabus.js';
+import { igcsePhysicsSyllabus } from './igcsePhysicsSyllabus.js';
 
 export const syllabusesBySubject = {
     // A Level
@@ -33,6 +34,8 @@ export const syllabusesBySubject = {
     olevel_business: oLevelBusinessSyllabus,
     olevel_maths_core: oLevelMathsCoreSyllabus,
     olevel_maths_extended: oLevelMathsExtendedSyllabus,
+    // IGCSE Physics (Edexcel)
+    'igcse-physics': igcsePhysicsSyllabus,
 };
 
 export function getSyllabusBySubject(subject) {
@@ -59,6 +62,7 @@ export function getSubjectLabel(subject) {
         olevel_business: 'IGCSE Business (0450)',
         olevel_maths_core: 'IGCSE Mathematics Core (0580)',
         olevel_maths_extended: 'IGCSE Mathematics Extended (0580)',
+        'igcse-physics': 'IGCSE Physics (0625)',
     };
     return labels[key] || (key.charAt(0).toUpperCase() + key.slice(1));
 }

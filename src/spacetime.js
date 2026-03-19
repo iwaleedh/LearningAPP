@@ -63,7 +63,14 @@ export async function initSpacetimeDB() {
                     "SELECT * FROM user",
                     "SELECT * FROM note",
                     "SELECT * FROM flashcard",
-                    "SELECT * FROM note_asset"
+                    "SELECT * FROM note_asset",
+                    "SELECT * FROM live_session WHERE status = 'active'",
+                    "SELECT * FROM session_participant",
+                    "SELECT * FROM session_invite",
+                    "SELECT * FROM live_class_session WHERE status = 'active'",
+                    "SELECT * FROM live_class_cursor",
+                    "SELECT * FROM hand_raise WHERE status = 'raised'",
+                    "SELECT * FROM class_timer"
                 ]);
         });
 
@@ -94,4 +101,100 @@ export function getCurrentIdentity() {
 
 export function getClient() {
     return client;
+}
+
+export function getActiveSessions() {
+    if (!client) return [];
+    return Array.from(client.db.live_session.iter()).filter(s => s.status === 'active');
+}
+
+export function getMyParticipantSessions() {
+    if (!client || !currentIdentity) return [];
+    const myHex = currentIdentity.toHexString();
+    return Array.from(client.db.session_participant.iter()).filter(
+        p => p.userIdentity.toHexString() === myHex
+    );
+}
+
+export function getMyPendingInvites() {
+    if (!client || !currentIdentity) return [];
+    const myHex = currentIdentity.toHexString();
+    const users = Array.from(client.db.user.iter());
+    const me = users.find(u => u.identity.toHexString() === myHex);
+    if (!me) return [];
+    return Array.from(client.db.session_invite.iter()).filter(
+        inv => inv.toUsername === me.username && inv.status === 'pending'
+    );
+}
+
+export function getAllUsers() {
+    if (!client) return [];
+    return Array.from(client.db.user.iter());
+}
+
+// ── Phase 3: Teacher role helpers ──────────────────────────────────────
+export function getMyRole() {
+    if (!client || !currentIdentity) return 'student';
+    const myHex = currentIdentity.toHexString();
+    const me = Array.from(client.db.user.iter()).find(u => u.identity.toHexString() === myHex);
+    return me?.role ?? 'student';
+}
+
+export function isTeacher() {
+    return getMyRole() === 'teacher';
+}
+
+export function setTeacherRole(teacher) {
+    if (!client) return;
+    client.reducers.setTeacherRole({ role: teacher ? 'teacher' : 'student' });
+}
+
+// ── Live Class helpers ─────────────────────────────────────────────────
+export function getActiveLiveClasses() {
+    if (!client) return [];
+    return Array.from(client.db.live_class_session.iter()).filter(c => c.status === 'active');
+}
+
+export function getLiveClassById(classId) {
+    if (!client) return null;
+    return Array.from(client.db.live_class_session.iter()).find(c => c.classId === classId) ?? null;
+}
+
+export function getMyPendingLiveClassInvites() {
+    if (!client || !currentIdentity) return [];
+    const myHex = currentIdentity.toHexString();
+    const users = Array.from(client.db.user.iter());
+    const me = users.find(u => u.identity.toHexString() === myHex);
+    if (!me) return [];
+    // Only return pending invites whose sessionId corresponds to an active live class
+    const activeClassIds = new Set(
+        Array.from(client.db.live_class_session.iter())
+            .filter(c => c.status === 'active')
+            .map(c => c.classId)
+    );
+    return Array.from(client.db.session_invite.iter()).filter(
+        inv => inv.toUsername === me.username && inv.status === 'pending' && activeClassIds.has(inv.sessionId)
+    );
+}
+
+export function getLiveClassParticipants(classId) {
+    if (!client) return [];
+    return Array.from(client.db.session_participant.iter()).filter(p => p.sessionId === classId);
+}
+
+export function getLiveClassCursors(classId) {
+    if (!client) return [];
+    return Array.from(client.db.live_class_cursor.iter()).filter(c => c.classId === classId);
+}
+
+export function getHandRaises(classId) {
+    if (!client) return [];
+    return Array.from(client.db.hand_raise.iter()).filter(
+        r => r.classId === classId && r.status === 'raised'
+    );
+}
+
+export function getClassTimer(classId) {
+    if (!client) return null;
+    return Array.from(client.db.class_timer.iter()).find(t => t.classId === classId) ?? null;
 }

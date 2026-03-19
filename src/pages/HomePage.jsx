@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, Brain, Trophy,
-    ArrowRight, Flame, Target, Clock, TrendingUp, Sparkles
+    ArrowRight, Flame, Target, Clock, TrendingUp, Sparkles, Radio
 } from 'lucide-react';
+import { getMyPendingLiveClassInvites, onSpacetimeDBReady } from '../spacetime.js';
 import './Pages.css';
 
 // Sample data (will be replaced with Convex queries)
@@ -35,8 +37,32 @@ const oLevelSubjects = [
 ];
 
 export default function HomePage() {
+    const navigate = useNavigate();
+    const [liveInvites, setLiveInvites] = useState([]);
+
+    useEffect(() => {
+        onSpacetimeDBReady(() => {
+            const invites = getMyPendingLiveClassInvites?.() ?? [];
+            setLiveInvites(invites);
+        });
+    }, []);
+
     return (
         <div className="home-page animate-fade-in">
+            {/* Live Class invite banner */}
+            {liveInvites.length > 0 && (
+                <div className="lc-invite-banner animate-fade-in">
+                    <Radio size={18} />
+                    <span>Your teacher has started a live class!</span>
+                    <button
+                        className="btn btn-primary btn-sm"
+                        onClick={() => navigate(`/live/${liveInvites[0].sessionId}`)}
+                    >
+                        Join Now
+                    </button>
+                    <button className="btn btn-ghost btn-sm" onClick={() => setLiveInvites([])}>Dismiss</button>
+                </div>
+            )}
             {/* Welcome Banner */}
             <div className="welcome-banner">
                 <div className="welcome-content">

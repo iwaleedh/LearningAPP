@@ -1,29 +1,63 @@
 // Service for handling past paper downloads and marking schemes
+import { chemistryPastPapers } from '../../data/chemistryPastPapers';
+import { physicsPastPapers } from '../../data/physicsPastPapers';
+import { biologyPastPapers } from '../../data/biologyPastPapers';
+import { mathematicsPastPapers } from '../../data/mathematicsPastPapers';
+import { businessPastPapers } from '../../data/businessPastPapers';
+import { economicsPastPapers } from '../../data/economicsPastPapers';
+import { accountingPastPapers } from '../../data/accountingPastPapers';
+import { caePastPapers } from '../../data/caePastPapers';
+import { cpePastPapers } from '../../data/cpePastPapers';
+import { oLevelChemistryPastPapers } from '../../data/oLevelChemistryPastPapers';
+import { oLevelPhysicsPastPapers } from '../../data/oLevelPhysicsPastPapers';
+import { oLevelBiologyPastPapers } from '../../data/oLevelBiologyPastPapers';
+import { oLevelMathematicsPastPapers } from '../../data/oLevelMathematicsPastPapers';
+
+let _paperMap = null;
+
+function buildPaperMap() {
+    _paperMap = new Map();
+    const allArrays = [
+        chemistryPastPapers, physicsPastPapers, biologyPastPapers,
+        mathematicsPastPapers, businessPastPapers, economicsPastPapers,
+        accountingPastPapers, caePastPapers, cpePastPapers,
+        oLevelChemistryPastPapers, oLevelPhysicsPastPapers,
+        oLevelBiologyPastPapers, oLevelMathematicsPastPapers,
+    ];
+    for (const arr of allArrays) {
+        for (const paper of arr) {
+            if (paper.id) _paperMap.set(paper.id, paper);
+        }
+    }
+}
 
 /**
- * Download a file from a URL
- * @param {string} url - The URL to download from
+ * Look up any past paper by its ID across all 13 paper arrays.
+ * Map is built lazily on first call.
+ * @param {string} paperId
+ * @returns {object|null}
+ */
+export function getPaperById(paperId) {
+    if (!_paperMap) buildPaperMap();
+    return _paperMap.get(paperId) ?? null;
+}
+
+/**
+ * Trigger a file download using a direct anchor click.
+ * Must be called synchronously within a user-gesture handler to avoid
+ * browser popup-blocker suppression.
+ * @param {string} url - The relative or absolute URL of the file
  * @param {string} filename - The filename to save as
  */
-export async function downloadFile(url, filename) {
+export function downloadFile(url, filename) {
     try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const blob = await response.blob();
-        const blobUrl = window.URL.createObjectURL(blob);
-
         const link = document.createElement('a');
-        link.href = blobUrl;
+        link.href = url;
         link.download = filename;
+        link.style.display = 'none';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-
-        window.URL.revokeObjectURL(blobUrl);
-
         return { success: true };
     } catch (error) {
         console.error('Download failed:', error);
@@ -46,6 +80,21 @@ export function generateFileName(paper, type) {
         : unit?.startsWith('WAC') ? 'accounting'
         : 'chem';
     return `${prefix}_${year}_${month?.toLowerCase()}_${unit}_${suffix}.pdf`;
+}
+
+/**
+ * Generate a filename for O-Level past paper files
+ */
+export function generateOLevelFileName(paper, type) {
+    const { year, month, code } = paper;
+    const suffix = type === 'question' ? 'qp' : 'ms';
+    // Derive subject prefix from code (0620=chemistry, 0625=physics, 0610=biology, 0580/0606=maths)
+    const prefix = code?.startsWith('0625') ? 'olevel_phys'
+        : code?.startsWith('0610') ? 'olevel_bio'
+        : code?.startsWith('0580') || code?.startsWith('0606') ? 'olevel_maths'
+        : code?.startsWith('0620') ? 'olevel_chem'
+        : 'olevel';
+    return `${prefix}_${year}_${month?.toLowerCase()}_${code}_${suffix}.pdf`;
 }
 
 /**

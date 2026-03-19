@@ -1,0 +1,78 @@
+/** Biology stencils — organelles, membranes, DNA, enzyme shapes */
+const biologyStencils = [
+  // ── Organelles ─────────────────────────────────────────────
+  {
+    id: 'bio-nucleus',
+    subject: 'biology',
+    category: 'Organelles',
+    label: 'Nucleus',
+    svg: '<svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg"><ellipse cx="35" cy="35" rx="30" ry="28" fill="none" stroke="#1f2937" stroke-width="2.5"/><ellipse cx="35" cy="35" rx="30" ry="28" fill="none" stroke="#1f2937" stroke-width="2.5" stroke-dasharray="4 3" transform="scale(0.95)" transform-origin="35 35"/><circle cx="35" cy="35" r="8" fill="none" stroke="#1f2937" stroke-width="2"/><text x="35" y="65" font-size="8" text-anchor="middle" fill="#6366f1">nucleolus</text></svg>',
+    defaultWidth: 70,
+    defaultHeight: 70,
+  },
+  {
+    id: 'bio-mitochondria',
+    subject: 'biology',
+    category: 'Organelles',
+    label: 'Mitochondria',
+    svg: '<svg viewBox="0 0 90 50" xmlns="http://www.w3.org/2000/svg"><ellipse cx="45" cy="25" rx="40" ry="20" fill="none" stroke="#1f2937" stroke-width="2.5"/><path d="M15 25 Q20 12, 30 20 Q35 28, 40 18 Q45 10, 55 22 Q60 30, 65 18 Q70 12, 75 25" fill="none" stroke="#1f2937" stroke-width="1.5"/></svg>',
+    defaultWidth: 90,
+    defaultHeight: 50,
+  },
+  {
+    id: 'bio-ribosome',
+    subject: 'biology',
+    category: 'Organelles',
+    label: 'Ribosome',
+    svg: '<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="18" r="10" fill="none" stroke="#1f2937" stroke-width="2"/><ellipse cx="15" cy="10" rx="8" ry="5" fill="none" stroke="#1f2937" stroke-width="2"/></svg>',
+    defaultWidth: 30,
+    defaultHeight: 30,
+  },
+  {
+    id: 'bio-cell-membrane',
+    subject: 'biology',
+    category: 'Membranes',
+    label: 'Cell Membrane',
+    svg: '<svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg"><g><circle cx="10" cy="10" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="28" stroke="#1f2937" stroke-width="1.5"/><circle cx="10" cy="32" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/></g><g transform="translate(18,0)"><circle cx="10" cy="10" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="28" stroke="#1f2937" stroke-width="1.5"/><circle cx="10" cy="32" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/></g><g transform="translate(36,0)"><circle cx="10" cy="10" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="28" stroke="#1f2937" stroke-width="1.5"/><circle cx="10" cy="32" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/></g><g transform="translate(54,0)"><circle cx="10" cy="10" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="28" stroke="#1f2937" stroke-width="1.5"/><circle cx="10" cy="32" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/></g><g transform="translate(72,0)"><circle cx="10" cy="10" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="28" stroke="#1f2937" stroke-width="1.5"/><circle cx="10" cy="32" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/></g><g transform="translate(90,0)"><circle cx="10" cy="10" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/><line x1="10" y1="14" x2="10" y2="28" stroke="#1f2937" stroke-width="1.5"/><circle cx="10" cy="32" r="4" fill="none" stroke="#1f2937" stroke-width="1.5"/></g></svg>',
+    defaultWidth: 120,
+    defaultHeight: 40,
+  },
+  {
+    id: 'bio-dna-helix',
+    subject: 'biology',
+    category: 'DNA',
+    label: 'DNA Double Helix',
+    svg: '<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg"><path d="M10 5 Q35 15, 10 25 Q35 35, 10 45 Q35 55, 10 65 Q35 75, 10 85 Q35 95, 10 100" fill="none" stroke="#6366f1" stroke-width="2"/><path d="M40 5 Q15 15, 40 25 Q15 35, 40 45 Q15 55, 40 65 Q15 75, 40 85 Q15 95, 40 100" fill="none" stroke="#ef4444" stroke-width="2"/><line x1="17" y1="12" x2="33" y2="12" stroke="#1f2937" stroke-width="1.5"/><line x1="12" y1="25" x2="38" y2="25" stroke="#1f2937" stroke-width="1.5"/><line x1="17" y1="37" x2="33" y2="37" stroke="#1f2937" stroke-width="1.5"/><line x1="12" y1="50" x2="38" y2="50" stroke="#1f2937" stroke-width="1.5"/><line x1="17" y1="63" x2="33" y2="63" stroke="#1f2937" stroke-width="1.5"/><line x1="12" y1="75" x2="38" y2="75" stroke="#1f2937" stroke-width="1.5"/><line x1="17" y1="88" x2="33" y2="88" stroke="#1f2937" stroke-width="1.5"/></svg>',
+    defaultWidth: 50,
+    defaultHeight: 100,
+  },
+  {
+    id: 'bio-enzyme',
+    subject: 'biology',
+    category: 'Enzymes',
+    label: 'Enzyme',
+    svg: '<svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg"><path d="M10 30 Q10 5, 40 5 Q55 5, 55 15 L50 15 Q50 25, 60 25 L60 35 Q50 35, 50 45 L55 45 Q55 55, 40 55 Q10 55, 10 30 Z" fill="none" stroke="#10b981" stroke-width="2.5"/><text x="28" y="34" font-size="10" fill="#10b981" font-weight="bold">E</text></svg>',
+    defaultWidth: 80,
+    defaultHeight: 60,
+  },
+  {
+    id: 'bio-substrate',
+    subject: 'biology',
+    category: 'Enzymes',
+    label: 'Substrate',
+    svg: '<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M5 20 L15 5 L25 5 L35 20 L25 35 L15 35 Z" fill="none" stroke="#f59e0b" stroke-width="2.5"/><text x="20" y="24" font-size="10" text-anchor="middle" fill="#f59e0b" font-weight="bold">S</text></svg>',
+    defaultWidth: 40,
+    defaultHeight: 40,
+  },
+  {
+    id: 'bio-chloroplast',
+    subject: 'biology',
+    category: 'Organelles',
+    label: 'Chloroplast',
+    svg: '<svg viewBox="0 0 90 50" xmlns="http://www.w3.org/2000/svg"><ellipse cx="45" cy="25" rx="40" ry="20" fill="none" stroke="#10b981" stroke-width="2.5"/><ellipse cx="20" cy="20" rx="8" ry="4" fill="none" stroke="#10b981" stroke-width="1.5"/><ellipse cx="35" cy="30" rx="8" ry="4" fill="none" stroke="#10b981" stroke-width="1.5"/><ellipse cx="55" cy="18" rx="8" ry="4" fill="none" stroke="#10b981" stroke-width="1.5"/><ellipse cx="65" cy="28" rx="8" ry="4" fill="none" stroke="#10b981" stroke-width="1.5"/></svg>',
+    defaultWidth: 90,
+    defaultHeight: 50,
+  },
+];
+
+export default biologyStencils;

@@ -1,0 +1,966 @@
+// AL Chemistry — Unit 1, Topic 4: Organic Foundations & Alkanes (WCH11)
+// Covers all 13 subtopics:
+//   0: Introduction to organic chemistry
+//   1: IUPAC nomenclature of alkanes and branched-chain compounds
+//   2: Structural isomerism
+//   3: Alkanes from crude oil — fractional distillation and cracking
+//   4: Alkanes as fuels — combustion
+//   5: Free radical substitution of alkanes
+//   6: Properties of alkanes
+//   7: Alkane and cycloalkane formulae
+//   8: Structural isomerism (Part 2)
+//   9: Fractional distillation and fuels
+//  10: Combustion pollutants
+//  11: Alternative fuels and carbon neutrality
+//  12: Free-radical substitution mechanism
+
+export const exercises_chemistry_1_4 = {
+
+  // ─── MCQ (~30 questions) ────────────────────────────────────────────────────
+  mcq: [
+
+    // --- Introduction to organic chemistry (subtopic 0) ---
+    {
+      id: 'mcq-t4-1',
+      stem: 'What is the correct definition of a hydrocarbon?',
+      options: [
+        'A compound containing carbon, hydrogen, and oxygen only',
+        'A compound containing only carbon and hydrogen atoms',
+        'Any organic compound that can burn in oxygen',
+        'A compound with only single C–C bonds',
+      ],
+      correctAnswer: 1,
+      rationale: 'A hydrocarbon contains only carbon and hydrogen atoms — nothing else. Compounds containing oxygen (alcohols, carboxylic acids) are not hydrocarbons. Saturated/unsaturated refers to bonding type, not the definition of a hydrocarbon.',
+      topic: 'Introduction to Organic Chemistry',
+    },
+    {
+      id: 'mcq-t4-2',
+      stem: 'Which of the following best describes a homologous series?',
+      options: [
+        'Compounds with the same molecular formula but different structures',
+        'A family of organic compounds sharing the same functional group and general formula, each differing by –CH₂–',
+        'Compounds with identical physical properties but different chemical properties',
+        'Organic compounds that all undergo the same reaction type only',
+      ],
+      correctAnswer: 1,
+      rationale: 'A homologous series is a group of organic compounds sharing the same functional group and general formula, where each consecutive member differs by one –CH₂– unit. This gives gradually changing physical properties. Option A describes structural isomers.',
+      topic: 'Introduction to Organic Chemistry',
+    },
+    {
+      id: 'mcq-t4-3',
+      stem: 'Which type of formula shows every single atom and every single covalent bond in the molecule?',
+      options: ['Empirical formula', 'Molecular formula', 'Structural formula', 'Displayed formula'],
+      correctAnswer: 3,
+      rationale: 'The displayed formula shows every atom and every bond. The empirical formula gives the simplest ratio; the molecular formula gives actual atom counts; the structural formula shows how atoms are grouped without showing all individual bonds.',
+      topic: 'Introduction to Organic Chemistry',
+    },
+
+    // --- IUPAC nomenclature (subtopic 1) ---
+    {
+      id: 'mcq-t4-4',
+      stem: 'What is the IUPAC prefix for an alkane with 5 carbon atoms in the main chain?',
+      options: ['but-', 'hex-', 'pent-', 'prop-'],
+      correctAnswer: 2,
+      rationale: 'Pent- is the prefix for 5 carbons → pentane. But- = 4 carbons (butane); hex- = 6 carbons (hexane); prop- = 3 carbons (propane). These prefixes must be memorised.',
+      topic: 'IUPAC Nomenclature',
+    },
+    {
+      id: 'mcq-t4-5',
+      stem: 'What is the correct IUPAC name for CH₃CH(CH₃)CH₂CH₃?',
+      options: ['2-methylpropane', '3-methylbutane', '2-methylbutane', 'isopentane'],
+      correctAnswer: 2,
+      rationale: 'The longest chain contains 4 carbons (parent = butane). The methyl branch is on C-2, counting from the nearest end. So the name is 2-methylbutane. "3-methylbutane" breaks the rule of giving the lowest locant. "Isopentane" is a non-IUPAC common name.',
+      topic: 'IUPAC Nomenclature',
+    },
+    {
+      id: 'mcq-t4-6',
+      stem: 'In the IUPAC name "2,3-dimethylbutane", what does "di-" indicate?',
+      options: [
+        'The compound contains two double bonds',
+        'There are two methyl substituents',
+        'The parent chain has two branches in total',
+        'There are two carbon atoms in the parent chain',
+      ],
+      correctAnswer: 1,
+      rationale: '"Di-" is a multiplier indicating two identical substituents. In 2,3-dimethylbutane, there is one methyl group on C-2 and another on C-3. Multipliers di-, tri-, tetra- are used when the same substituent appears more than once and are not counted in alphabetical ordering.',
+      topic: 'IUPAC Nomenclature',
+    },
+    {
+      id: 'mcq-t4-7',
+      stem: 'When numbering a carbon chain to name a branched alkane, from which end should you start?',
+      options: [
+        'Always from the left-hand end as drawn on paper',
+        'From the end that gives substituents the highest possible locant numbers',
+        'From the end that gives substituents the lowest possible locant numbers',
+        'From the end closest to the longest branch',
+      ],
+      correctAnswer: 2,
+      rationale: 'IUPAC rules require numbering from the end that gives substituents the lowest possible locants (position numbers). If a principal functional group is present, it receives the lowest number first, then branches. This minimises the set of numbers used.',
+      topic: 'IUPAC Nomenclature',
+    },
+
+    // --- Structural isomerism (subtopics 2 & 8) ---
+    {
+      id: 'mcq-t4-8',
+      stem: 'Which of the following correctly defines structural isomers?',
+      options: [
+        'Molecules with the same structural formula but different molecular formulae',
+        'Molecules with the same molecular formula but different structural formulae',
+        'Molecules with the same molecular formula and the same structural formula',
+        'Molecules with different molecular formulae and different structural formulae',
+      ],
+      correctAnswer: 1,
+      rationale: 'Structural isomers have the same molecular formula but different structural formulae — the atoms are connected in a different order or arrangement. They have different IUPAC names and different physical (and sometimes chemical) properties.',
+      topic: 'Structural Isomerism',
+    },
+    {
+      id: 'mcq-t4-9',
+      stem: 'Butane (CH₃CH₂CH₂CH₃) and 2-methylpropane are examples of which type of isomerism?',
+      options: ['Positional isomers', 'Functional group isomers', 'Chain isomers', 'Geometric isomers'],
+      correctAnswer: 2,
+      rationale: 'Chain isomers have the same molecular formula but different carbon chain arrangements (different branching). Both butane and 2-methylpropane have the formula C₄H₁₀ but different chain structures. Positional isomers have the same chain and functional group in a different position.',
+      topic: 'Structural Isomerism',
+    },
+    {
+      id: 'mcq-t4-10',
+      stem: 'Which type of isomerism is shown by butan-1-ol and butan-2-ol?',
+      options: ['Chain isomerism', 'Positional isomerism', 'Functional group isomerism', 'Geometric isomerism'],
+      correctAnswer: 1,
+      rationale: 'Butan-1-ol and butan-2-ol have the same 4-carbon chain and same functional group (–OH), but in different positions on the chain → positional isomers. The molecular formula is C₄H₁₀O for both. Chain isomers differ in carbon chain arrangement, not position of a functional group.',
+      topic: 'Structural Isomerism',
+    },
+    {
+      id: 'mcq-t4-11',
+      stem: 'How many structural isomers does the molecular formula C₅H₁₂ have?',
+      options: ['2', '3', '4', '5'],
+      correctAnswer: 1,
+      rationale: 'C₅H₁₂ has exactly 3 chain isomers: pentane (straight chain), 2-methylbutane (one methyl branch), and 2,2-dimethylpropane (two methyl groups on the central carbon). These are the only distinct arrangements for 5 carbons with formula CₙH₂ₙ₊₂.',
+      topic: 'Structural Isomerism',
+    },
+
+    // --- Fractional distillation & cracking (subtopics 3 & 9) ---
+    {
+      id: 'mcq-t4-12',
+      stem: 'Which crude oil fraction has the highest boiling point range?',
+      options: ['Gasoline (petrol)', 'Kerosene', 'Diesel/gas oil', 'Bitumen (residue)'],
+      correctAnswer: 3,
+      rationale: 'Bitumen/residue (>C₂₀, above 350°C) has the highest boiling point because it contains the longest hydrocarbon chains, which have the most electrons and therefore the strongest London dispersion forces. It is collected at the bottom of the fractionating column.',
+      topic: 'Fractional Distillation',
+    },
+    {
+      id: 'mcq-t4-13',
+      stem: 'What is the main economic reason for cracking large hydrocarbon molecules in the oil industry?',
+      options: [
+        'To increase the boiling point of the fuel fraction',
+        'To convert less useful long-chain fractions into more useful shorter-chain products',
+        'To remove sulfur impurities from crude oil',
+        'To increase the viscosity of diesel fuel',
+      ],
+      correctAnswer: 1,
+      rationale: 'There is greater commercial demand for short-chain fractions (petrol, kerosene) than for the large quantities of long-chain heavy oils produced by distillation. Cracking converts these cheap, less-useful molecules into high-value short-chain products. It also produces alkenes for polymer manufacture.',
+      topic: 'Cracking',
+    },
+    {
+      id: 'mcq-t4-14',
+      stem: 'Which catalyst is used in catalytic cracking?',
+      options: ['Platinum', 'Iron', 'Zeolite', 'Vanadium pentoxide'],
+      correctAnswer: 2,
+      rationale: 'Catalytic cracking uses a zeolite (aluminosilicate) catalyst at ~450°C, low pressure. Thermal cracking uses no catalyst but requires ~750°C and high pressure. Platinum is used in catalytic converters and reforming. Iron is used in the Haber process. Vanadium is used in the Contact process.',
+      topic: 'Cracking',
+    },
+    {
+      id: 'mcq-t4-15',
+      stem: 'Compared to catalytic cracking, thermal cracking produces relatively more:',
+      options: ['Branched alkanes', 'Aromatic hydrocarbons', 'Alkenes', 'Carbon dioxide'],
+      correctAnswer: 2,
+      rationale: 'Thermal cracking (high temperature, high pressure, no catalyst, free radical mechanism) produces mainly alkenes such as ethene and propene, which are important raw materials for polymer manufacture. Catalytic cracking (zeolite, ~450°C) produces more branched alkanes and aromatics with high octane ratings for petrol.',
+      topic: 'Cracking',
+    },
+
+    // --- Combustion and pollutants (subtopics 4 & 10) ---
+    {
+      id: 'mcq-t4-16',
+      stem: 'What are the only products of the complete combustion of a hydrocarbon?',
+      options: [
+        'Carbon monoxide and water',
+        'Carbon dioxide and water',
+        'Carbon, carbon monoxide, and water',
+        'Carbon dioxide only',
+      ],
+      correctAnswer: 1,
+      rationale: 'Complete combustion in excess oxygen produces only CO₂ and H₂O. Incomplete combustion (limited oxygen) also produces CO (toxic) and/or carbon soot. The presence of sufficient oxygen is the key condition for complete combustion.',
+      topic: 'Combustion',
+    },
+    {
+      id: 'mcq-t4-17',
+      stem: 'Carbon monoxide (CO) is toxic to humans because it:',
+      options: [
+        'Reacts with nitrogen in the atmosphere to produce acid rain',
+        'Binds irreversibly to haemoglobin, reducing oxygen transport in the blood',
+        'Is a major greenhouse gas that causes global warming',
+        'Dissolves in rainwater to form carbonic acid',
+      ],
+      correctAnswer: 1,
+      rationale: 'CO binds irreversibly (very strongly) to haemoglobin, forming carboxyhaemoglobin. This blocks the binding of oxygen and prevents O₂ from being transported to body tissues, which can be fatal at high concentrations. CO₂ is the main greenhouse gas; SO₂ and NOₓ cause acid rain.',
+      topic: 'Combustion Pollutants',
+    },
+    {
+      id: 'mcq-t4-18',
+      stem: 'Which two pollutants from combustion are primarily responsible for acid rain?',
+      options: ['CO and CO₂', 'SO₂ and NOₓ', 'CO and SO₂', 'CO₂ and H₂O'],
+      correctAnswer: 1,
+      rationale: 'SO₂ and NOₓ are the main causes of acid rain. SO₂ + H₂O → H₂SO₃/H₂SO₄ (sulfurous/sulfuric acid); NOₓ + H₂O → HNO₃ (nitric acid). CO contributes to smog but is not a direct acid rain precursor. CO₂ weakly forms carbonic acid but is not the primary acid rain cause.',
+      topic: 'Combustion Pollutants',
+    },
+    {
+      id: 'mcq-t4-19',
+      stem: 'What does a catalytic converter do to nitrogen oxides (NOₓ) in car exhaust?',
+      options: [
+        'Converts them to nitrogen dioxide (NO₂)',
+        'Oxidises them to nitric acid (HNO₃)',
+        'Reduces them to harmless nitrogen gas (N₂)',
+        'Converts them to carbon dioxide and water',
+      ],
+      correctAnswer: 2,
+      rationale: 'The Pt/Rh catalyst in a catalytic converter reduces NOₓ to harmless N₂ (2NOₓ → N₂ + xO₂). It also oxidises CO to CO₂ and unburned hydrocarbons to CO₂ + H₂O. This is a reduction reaction for nitrogen (its oxidation state decreases).',
+      topic: 'Combustion Pollutants',
+    },
+
+    // --- Properties of alkanes (subtopics 6 & 7) ---
+    {
+      id: 'mcq-t4-20',
+      stem: 'Why do the boiling points of straight-chain alkanes increase as the chain length increases?',
+      options: [
+        'Longer chains have stronger covalent bonds within the molecule',
+        'Longer chains form intermolecular hydrogen bonds with each other',
+        'Longer chains have more electrons → stronger London dispersion forces between molecules',
+        'Longer chains are more polar, increasing dipole–dipole intermolecular forces',
+      ],
+      correctAnswer: 2,
+      rationale: 'The only intermolecular forces in alkanes are London (dispersion) forces. Longer chains have more electrons, making them more polarisable. This increases London force strength, requiring more energy to separate molecules → higher boiling point. Alkanes are non-polar and do not form hydrogen bonds.',
+      topic: 'Properties of Alkanes',
+    },
+    {
+      id: 'mcq-t4-21',
+      stem: 'Why does 2,2-dimethylpropane have a lower boiling point than pentane, despite having the same molecular formula C₅H₁₂?',
+      options: [
+        'It has a greater relative molecular mass than pentane',
+        'Its compact spherical shape reduces intermolecular contact area, weakening London forces',
+        'It has stronger covalent bonds than straight-chain pentane',
+        'It contains fewer hydrogen atoms than pentane',
+      ],
+      correctAnswer: 1,
+      rationale: '2,2-Dimethylpropane is a more compact, spherical molecule with a smaller surface area of contact between adjacent molecules. Fewer and weaker London forces act between them compared to straight-chain pentane. Less energy is needed to separate the molecules → lower boiling point.',
+      topic: 'Properties of Alkanes',
+    },
+    {
+      id: 'mcq-t4-22',
+      stem: 'What is the general formula of the alkane homologous series?',
+      options: ['CₙH₂ₙ', 'CₙH₂ₙ₊₂', 'CₙH₂ₙ₋₂', 'CₙH₂ₙ₊₁OH'],
+      correctAnswer: 1,
+      rationale: 'Alkanes have the general formula CₙH₂ₙ₊₂. Check: methane CH₄ (n=1: 2+2=4 ✓), propane C₃H₈ (n=3: 6+2=8 ✓). CₙH₂ₙ is alkenes and cycloalkanes; CₙH₂ₙ₋₂ is alkynes; CₙH₂ₙ₊₁OH is the alcohol formula.',
+      topic: 'Alkane Formulae',
+    },
+    {
+      id: 'mcq-t4-23',
+      stem: 'Why are alkanes generally unreactive towards most common reagents?',
+      options: [
+        'The C–H and C–C bonds are highly polar, repelling incoming reagents',
+        'Alkanes contain many π bonds which are particularly stable',
+        'The C–H and C–C bonds are non-polar and strong, making them resistant to attack',
+        'Alkanes are soluble in water, meaning reagents get diluted',
+      ],
+      correctAnswer: 2,
+      rationale: 'C–H and C–C bonds in alkanes are non-polar (C and H have similar electronegativities), so polar reagents cannot attack them easily. Bond enthalpies are also high (C–H: ~413 kJ mol⁻¹; C–C: ~348 kJ mol⁻¹), requiring significant energy to break. Alkanes have no π bonds and are insoluble in water.',
+      topic: 'Properties of Alkanes',
+    },
+
+    // --- Free radical substitution (subtopics 5 & 12) ---
+    {
+      id: 'mcq-t4-24',
+      stem: 'What type of bond fission occurs during the initiation step of free radical substitution?',
+      options: ['Heterolytic fission', 'Ionic fission', 'Homolytic fission', 'Nucleophilic fission'],
+      correctAnswer: 2,
+      rationale: 'In initiation, UV light causes homolytic fission of the Cl–Cl bond. Each chlorine atom receives one electron from the shared pair, forming two chlorine free radicals (Cl•). Heterolytic fission produces ions (one atom gets both electrons). FRS uses fish-hook (half-headed) curly arrows to show single electron movement.',
+      topic: 'Free Radical Substitution',
+    },
+    {
+      id: 'mcq-t4-25',
+      stem: 'What is the correct first propagation step in the chlorination of methane?',
+      options: [
+        'CH₄ + Cl₂ → CH₃Cl + HCl',
+        'Cl₂ → 2Cl• (UV light)',
+        'Cl• + CH₄ → HCl + CH₃•',
+        'CH₃• + CH₃• → C₂H₆',
+      ],
+      correctAnswer: 2,
+      rationale: 'Propagation step 1: Cl• abstracts a hydrogen from methane (CH₄) → HCl + methyl radical (CH₃•). Option A is the overall equation. Option B is initiation. Option D is a termination step that produces the by-product ethane.',
+      topic: 'Free Radical Substitution',
+    },
+    {
+      id: 'mcq-t4-26',
+      stem: 'Which of the following is a termination step in the chlorination of methane?',
+      options: [
+        'Cl₂ → 2Cl• (UV light)',
+        'Cl• + CH₄ → HCl + CH₃•',
+        'CH₃• + Cl₂ → CH₃Cl + Cl•',
+        'CH₃• + Cl• → CH₃Cl',
+      ],
+      correctAnswer: 3,
+      rationale: 'Termination occurs when any two radicals combine, consuming both and producing no new radicals. CH₃• + Cl• → CH₃Cl is termination. Option A is initiation. Options B and C are propagation steps (they both regenerate one radical per step).',
+      topic: 'Free Radical Substitution',
+    },
+    {
+      id: 'mcq-t4-27',
+      stem: 'Why does free radical substitution of methane with excess Cl₂ produce a mixture of chlorinated products?',
+      options: [
+        'Because the reaction is reversible at high temperatures',
+        'Because further substitution continues: CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄',
+        'Because different free radicals are produced during initiation',
+        'Because high temperatures cause the carbon chain to break apart',
+      ],
+      correctAnswer: 1,
+      rationale: 'Once CH₃Cl forms, it can react further in additional propagation cycles, replacing more H atoms: CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄. With excess Cl₂, the reaction does not stop at monosubstitution. This mixture of products limits FRS as a method for making a single pure compound.',
+      topic: 'Free Radical Substitution',
+    },
+
+    // --- Alternative fuels (subtopic 11) ---
+    {
+      id: 'mcq-t4-28',
+      stem: 'What is meant by a "carbon neutral" fuel?',
+      options: [
+        'A fuel that burns without producing any gases at all',
+        'A fuel whose combustion produces absolutely no carbon dioxide',
+        'A fuel where the CO₂ released during combustion equals the CO₂ absorbed during growth of the source material',
+        'A fuel that contains no carbon atoms in its molecular structure',
+      ],
+      correctAnswer: 2,
+      rationale: 'A carbon-neutral fuel has zero net effect on atmospheric CO₂. The CO₂ released during combustion is offset by the CO₂ absorbed by plants during photosynthesis as they grew. Biofuels like bioethanol are approximately (not perfectly) carbon neutral because transport and processing also use energy.',
+      topic: 'Alternative Fuels',
+    },
+    {
+      id: 'mcq-t4-29',
+      stem: 'Which statement about hydrogen (H₂) as a fuel is correct?',
+      options: [
+        'Burning hydrogen produces only CO₂ and water',
+        'Hydrogen is easily stored as a liquid under normal room conditions',
+        'Hydrogen combustion produces only water vapour, but producing H₂ typically requires energy from fossil fuels',
+        'Hydrogen is extracted directly from crude oil by fractional distillation',
+      ],
+      correctAnswer: 2,
+      rationale: '2H₂ + O₂ → 2H₂O — combustion of hydrogen produces only water (no CO₂), which is very clean. However, producing hydrogen by electrolysis of water requires large amounts of electrical energy, which often comes from fossil fuels, undermining its environmental benefit. Storage also requires pressurised tanks (explosion risk).',
+      topic: 'Alternative Fuels',
+    },
+
+    // --- Alkane properties trend ---
+    {
+      id: 'mcq-t4-30',
+      stem: 'As the carbon chain length of straight-chain alkanes increases, which property DECREASES?',
+      options: ['Boiling point', 'Viscosity', 'Volatility', 'Molar mass'],
+      correctAnswer: 2,
+      rationale: 'Volatility (the tendency to evaporate and form vapour) decreases as chain length increases, because stronger London forces make it harder for molecules to escape the liquid phase. Boiling point, viscosity, and molar mass all increase with increasing chain length.',
+      topic: 'Properties of Alkanes',
+    },
+  ],
+
+  // ─── Fill-in-the-Blank (~15 questions) ─────────────────────────────────────
+  fillblank: [
+    {
+      id: 'fb-t4-1',
+      stem: 'Complete the sentence about the general formulae of hydrocarbons.',
+      template: 'Alkanes have the general formula __BLANK__, while cycloalkanes have the general formula __BLANK__.',
+      blanks: [{ answer: 'CnH2n+2' }, { answer: 'CnH2n' }],
+      rationale: 'Alkanes: CₙH₂ₙ₊₂ (saturated, open chain). Cycloalkanes: CₙH₂ₙ — ring closure removes two H atoms compared to the open-chain alkane, giving the same formula as alkenes but a different structure.',
+    },
+    {
+      id: 'fb-t4-2',
+      stem: 'Complete the sentence about structural isomers.',
+      template: 'Structural isomers have the same __BLANK__ formula but different __BLANK__ formulae.',
+      blanks: [{ answer: 'molecular' }, { answer: 'structural' }],
+      rationale: 'Structural isomers share the same molecular formula (same type and number of atoms) but differ in how the atoms are connected — i.e. they have different structural formulae.',
+    },
+    {
+      id: 'fb-t4-3',
+      stem: 'Complete the sentence about complete combustion.',
+      template: 'Complete combustion of a hydrocarbon in excess oxygen produces __BLANK__ and __BLANK__ only.',
+      blanks: [{ answer: 'carbon dioxide' }, { answer: 'water' }],
+      rationale: 'In excess oxygen, hydrocarbons undergo complete combustion to give CO₂ and H₂O only. Limited oxygen leads to incomplete combustion, producing CO and/or carbon soot.',
+    },
+    {
+      id: 'fb-t4-4',
+      stem: 'Complete the sentence about the initiation step of free radical substitution.',
+      template: 'In the initiation step of FRS, __BLANK__ light causes __BLANK__ fission of the Cl–Cl bond.',
+      blanks: [{ answer: 'UV' }, { answer: 'homolytic' }],
+      rationale: 'UV (ultraviolet) light provides the energy for homolytic fission of the Cl–Cl bond. Each chlorine atom receives one electron, forming two chlorine free radicals (Cl•).',
+    },
+    {
+      id: 'fb-t4-5',
+      stem: 'Complete the sentence about FRS propagation.',
+      template: 'In each FRS propagation cycle for chlorination of methane, one molecule of __BLANK__ and one molecule of __BLANK__ are consumed.',
+      blanks: [{ answer: 'methane' }, { answer: 'chlorine' }],
+      rationale: 'Each propagation cycle: Cl• + CH₄ → HCl + CH₃•; then CH₃• + Cl₂ → CH₃Cl + Cl•. Net: one CH₄ and one Cl₂ consumed per cycle, producing CH₃Cl and HCl.',
+    },
+    {
+      id: 'fb-t4-6',
+      stem: 'Complete the sentence about the effect of branching on boiling point.',
+      template: 'Branched alkanes have __BLANK__ boiling points than their straight-chain isomers because branching __BLANK__ the surface area of contact between molecules.',
+      blanks: [{ answer: 'lower' }, { answer: 'reduces' }],
+      rationale: 'Branching gives a more compact spherical shape, reducing the surface area of molecule-molecule contact and therefore the strength of London forces. Less energy is needed to separate molecules → lower boiling point.',
+    },
+    {
+      id: 'fb-t4-7',
+      stem: 'Complete the sentence about catalytic cracking conditions.',
+      template: 'Catalytic cracking uses a __BLANK__ catalyst at approximately __BLANK__ °C.',
+      blanks: [{ answer: 'zeolite' }, { answer: '450' }],
+      rationale: 'Catalytic cracking uses a zeolite (aluminosilicate) catalyst at ~450°C and low pressure. This produces mainly branched alkanes and aromatic hydrocarbons with high octane ratings.',
+    },
+    {
+      id: 'fb-t4-8',
+      stem: 'Complete the sentence about the kerosene fraction.',
+      template: 'Kerosene contains approximately __BLANK__ to __BLANK__ carbon atoms and is used mainly as __BLANK__ fuel.',
+      blanks: [{ answer: '10' }, { answer: '15' }, { answer: 'jet' }],
+      rationale: 'Kerosene (C₁₀–C₁₅, bp 150–250°C) is used primarily as aviation/jet fuel. It has lower volatility than petrol but remains fluid enough for aircraft turbine engines.',
+    },
+    {
+      id: 'fb-t4-9',
+      stem: 'Complete the sentence about the catalytic converter.',
+      template: 'A catalytic converter oxidises CO to __BLANK__ and reduces NOₓ to __BLANK__.',
+      blanks: [{ answer: 'carbon dioxide' }, { answer: 'nitrogen' }],
+      rationale: 'The Pt/Rh catalyst converts: CO + ½O₂ → CO₂ and 2NOₓ → N₂ + xO₂. This transforming toxic CO into CO₂ and converting NOₓ (acid rain precursors) to harmless N₂.',
+    },
+    {
+      id: 'fb-t4-10',
+      stem: 'Complete the sentence about carbon-neutral fuels.',
+      template: 'A biofuel is approximately carbon neutral because the CO₂ released during combustion equals the CO₂ absorbed during __BLANK__ while the plant was alive.',
+      blanks: [{ answer: 'photosynthesis' }],
+      rationale: 'During its lifetime, the plant absorbs CO₂ via photosynthesis to build its carbon-containing biomass. Burning that biomass releases approximately the same amount of CO₂, giving a near-zero net atmospheric CO₂ change.',
+    },
+    {
+      id: 'fb-t4-11',
+      stem: 'Complete the sentence about homologous series.',
+      template: 'A homologous series is a family of compounds with the same __BLANK__ group and general __BLANK__, with consecutive members differing by __BLANK__.',
+      blanks: [{ answer: 'functional' }, { answer: 'formula' }, { answer: 'CH2' }],
+      rationale: 'Key features: same functional group (→ similar chemical properties); same general formula; differ by –CH₂– per member (→ gradually changing physical properties like boiling point and solubility).',
+    },
+    {
+      id: 'fb-t4-12',
+      stem: 'Complete the sentence about naming butane.',
+      template: 'The straight-chain alkane with 4 carbon atoms is called __BLANK__ and has the molecular formula __BLANK__.',
+      blanks: [{ answer: 'butane' }, { answer: 'C4H10' }],
+      rationale: 'But- is the IUPAC prefix for 4 carbons. Using CₙH₂ₙ₊₂ with n=4: 2(4)+2 = 10 hydrogens → C₄H₁₀ (butane).',
+    },
+    {
+      id: 'fb-t4-13',
+      stem: 'Complete the sentence about thermal cracking.',
+      template: 'Thermal cracking operates at __BLANK__ temperature and __BLANK__ pressure with no catalyst, predominantly producing __BLANK__.',
+      blanks: [{ answer: 'high' }, { answer: 'high' }, { answer: 'alkenes' }],
+      rationale: 'Thermal cracking: ~750°C, high pressure, no catalyst. Free radical (homolytic) mechanism. Produces mainly short-chain alkenes (ethene, propene) plus some alkanes. Alkenes are essential raw materials for polymer manufacture.',
+    },
+    {
+      id: 'fb-t4-14',
+      stem: 'Complete the sentence about FRS termination.',
+      template: 'In FRS termination, two __BLANK__ combine together, generating __BLANK__ new radicals.',
+      blanks: [{ answer: 'radicals' }, { answer: 'no' }],
+      rationale: 'In termination, any two radicals combine. Because no new radicals form, the chain reaction stops. Examples: Cl• + Cl• → Cl₂; CH₃• + CH₃• → C₂H₆; CH₃• + Cl• → CH₃Cl.',
+    },
+    {
+      id: 'fb-t4-15',
+      stem: 'Complete the sentence about alkane solubility.',
+      template: 'Alkanes are __BLANK__ in water because they are __BLANK__ and cannot form __BLANK__ bonds with water molecules.',
+      blanks: [{ answer: 'insoluble' }, { answer: 'non-polar' }, { answer: 'hydrogen' }],
+      rationale: '"Like dissolves like": non-polar alkanes cannot dissolve in polar water. Water molecules H-bond strongly to each other; non-polar alkanes cannot break into this network. However, alkanes dissolve readily in non-polar organic solvents.',
+    },
+  ],
+
+  // ─── Drag & Drop (~10 questions) ────────────────────────────────────────────
+  dragdrop: [
+    {
+      id: 'dd-t4-1',
+      stem: 'Sort these descriptions into the correct formula type.',
+      categories: ['Shows every atom and bond', 'Shows actual atom count', 'Shows simplest ratio'],
+      items: [
+        { text: 'Displayed formula', category: 'Shows every atom and bond' },
+        { text: 'Molecular formula', category: 'Shows actual atom count' },
+        { text: 'Empirical formula', category: 'Shows simplest ratio' },
+        { text: 'C₄H₁₀ (exact number of atoms per molecule)', category: 'Shows actual atom count' },
+        { text: 'C₂H₅ (simplest whole-number ratio for butane)', category: 'Shows simplest ratio' },
+        { text: 'Full structural diagram with every C–H and C–C bond drawn', category: 'Shows every atom and bond' },
+      ],
+    },
+    {
+      id: 'dd-t4-2',
+      stem: 'Classify each compound or formula into its correct homologous series.',
+      categories: ['Alkanes', 'Alkenes', 'Alcohols', 'Cycloalkanes'],
+      items: [
+        { text: 'CₙH₂ₙ₊₂ (open chain)', category: 'Alkanes' },
+        { text: 'CₙH₂ₙ (open chain, C=C double bond)', category: 'Alkenes' },
+        { text: 'CₙH₂ₙ₊₁OH', category: 'Alcohols' },
+        { text: 'CₙH₂ₙ (ring structure, C–C only)', category: 'Cycloalkanes' },
+        { text: 'Ethane (C₂H₆)', category: 'Alkanes' },
+        { text: 'Propan-1-ol (C₃H₇OH)', category: 'Alcohols' },
+        { text: 'But-2-ene (C₄H₈, open chain)', category: 'Alkenes' },
+      ],
+    },
+    {
+      id: 'dd-t4-3',
+      stem: 'Sort these crude oil fractions by approximate carbon number.',
+      categories: ['Lightest (C₁–C₄)', 'Middle (C₅–C₁₅)', 'Heaviest (>C₁₅)'],
+      items: [
+        { text: 'LPG / gases', category: 'Lightest (C₁–C₄)' },
+        { text: 'Methane (natural gas)', category: 'Lightest (C₁–C₄)' },
+        { text: 'Gasoline (petrol)', category: 'Middle (C₅–C₁₅)' },
+        { text: 'Kerosene (jet fuel)', category: 'Middle (C₅–C₁₅)' },
+        { text: 'Naphtha (chemical feedstock)', category: 'Middle (C₅–C₁₅)' },
+        { text: 'Diesel / gas oil', category: 'Heaviest (>C₁₅)' },
+        { text: 'Bitumen / residue (road surfacing)', category: 'Heaviest (>C₁₅)' },
+      ],
+    },
+    {
+      id: 'dd-t4-4',
+      stem: 'Classify each statement as a feature of thermal cracking or catalytic cracking.',
+      categories: ['Thermal Cracking', 'Catalytic Cracking'],
+      items: [
+        { text: '~750°C, high pressure', category: 'Thermal Cracking' },
+        { text: 'No catalyst used', category: 'Thermal Cracking' },
+        { text: 'Free radical mechanism (homolytic)', category: 'Thermal Cracking' },
+        { text: 'Produces mainly alkenes (useful for polymers)', category: 'Thermal Cracking' },
+        { text: '~450°C, low pressure', category: 'Catalytic Cracking' },
+        { text: 'Zeolite (aluminosilicate) catalyst', category: 'Catalytic Cracking' },
+        { text: 'Produces branched alkanes and aromatics (high octane)', category: 'Catalytic Cracking' },
+        { text: 'Ionic (carbocation) mechanism', category: 'Catalytic Cracking' },
+      ],
+    },
+    {
+      id: 'dd-t4-5',
+      stem: 'Sort these combustion products by when they form.',
+      categories: ['Complete Combustion Only', 'Incomplete Combustion Only', 'Both'],
+      items: [
+        { text: 'Carbon dioxide (CO₂)', category: 'Complete Combustion Only' },
+        { text: 'Water (H₂O)', category: 'Both' },
+        { text: 'Carbon monoxide (CO)', category: 'Incomplete Combustion Only' },
+        { text: 'Carbon / soot particles', category: 'Incomplete Combustion Only' },
+        { text: 'Steam (H₂O vapour)', category: 'Both' },
+      ],
+    },
+    {
+      id: 'dd-t4-6',
+      stem: 'Classify each step or description into the correct stage of free radical substitution.',
+      categories: ['Initiation', 'Propagation', 'Termination'],
+      items: [
+        { text: 'Cl₂ → 2Cl• (UV light, homolytic fission)', category: 'Initiation' },
+        { text: 'Cl• + CH₄ → HCl + CH₃•', category: 'Propagation' },
+        { text: 'CH₃• + Cl₂ → CH₃Cl + Cl•', category: 'Propagation' },
+        { text: 'CH₃• + CH₃• → C₂H₆', category: 'Termination' },
+        { text: 'Cl• + Cl• → Cl₂', category: 'Termination' },
+        { text: 'CH₃• + Cl• → CH₃Cl', category: 'Termination' },
+        { text: 'Produces the first free radicals to start the chain', category: 'Initiation' },
+      ],
+    },
+    {
+      id: 'dd-t4-7',
+      stem: 'Does the property increase or decrease as the alkane chain length increases?',
+      categories: ['Increases with chain length', 'Decreases with chain length'],
+      items: [
+        { text: 'Boiling point', category: 'Increases with chain length' },
+        { text: 'Viscosity', category: 'Increases with chain length' },
+        { text: 'Relative molecular mass (Mᵣ)', category: 'Increases with chain length' },
+        { text: 'Strength of London forces', category: 'Increases with chain length' },
+        { text: 'Volatility', category: 'Decreases with chain length' },
+        { text: 'Flammability', category: 'Decreases with chain length' },
+      ],
+    },
+    {
+      id: 'dd-t4-8',
+      stem: 'Classify each compound pair by the type of structural isomerism shown.',
+      categories: ['Chain isomers', 'Positional isomers', 'Functional group isomers'],
+      items: [
+        { text: 'Butane and 2-methylpropane', category: 'Chain isomers' },
+        { text: 'Pentane and 2,2-dimethylpropane', category: 'Chain isomers' },
+        { text: 'Butan-1-ol and butan-2-ol', category: 'Positional isomers' },
+        { text: 'But-1-ene and but-2-ene', category: 'Positional isomers' },
+        { text: 'Ethanol and methoxymethane', category: 'Functional group isomers' },
+        { text: 'Propanal and propanone', category: 'Functional group isomers' },
+      ],
+    },
+    {
+      id: 'dd-t4-9',
+      stem: 'Match each combustion pollutant to its primary environmental or health effect.',
+      categories: ['Greenhouse effect / climate change', 'Toxic to blood', 'Acid rain'],
+      items: [
+        { text: 'CO₂', category: 'Greenhouse effect / climate change' },
+        { text: 'CO', category: 'Toxic to blood' },
+        { text: 'SO₂', category: 'Acid rain' },
+        { text: 'NOₓ', category: 'Acid rain' },
+        { text: 'Forms carboxyhaemoglobin', category: 'Toxic to blood' },
+        { text: 'Enhances infrared absorption in the atmosphere', category: 'Greenhouse effect / climate change' },
+      ],
+    },
+    {
+      id: 'dd-t4-10',
+      stem: 'Classify these alternative fuel facts under the correct fuel type.',
+      categories: ['Bioethanol', 'Hydrogen (H₂)', 'Natural gas'],
+      items: [
+        { text: 'Burns to produce only water vapour', category: 'Hydrogen (H₂)' },
+        { text: 'Made by fermenting sugarcane or crops', category: 'Bioethanol' },
+        { text: 'Fossil fuel — non-renewable and not carbon neutral', category: 'Natural gas' },
+        { text: 'Must be stored in pressurised tanks (explosive risk)', category: 'Hydrogen (H₂)' },
+        { text: 'Approximately carbon neutral', category: 'Bioethanol' },
+        { text: 'High energy density; easily transported via pipelines', category: 'Natural gas' },
+        { text: 'Energy to produce it often comes from fossil fuels', category: 'Hydrogen (H₂)' },
+        { text: 'Requires large land area to grow the source crop', category: 'Bioethanol' },
+      ],
+    },
+  ],
+
+  // ─── Sequence (~8 questions) ─────────────────────────────────────────────────
+  sequence: [
+    {
+      id: 'seq-t4-1',
+      stem: 'Put these IUPAC naming steps in the correct order for a branched alkane:',
+      steps: [
+        'Find the longest continuous carbon chain — this gives the parent alkane name (e.g. pentane for 5 C)',
+        'Identify any principal functional group (determines the suffix, e.g. -ol, -ene)',
+        'Number the chain from the end that gives the functional group/substituents the lowest locant numbers',
+        'Name each substituent (alkyl or halogen prefixes) with its locant number',
+        'Combine: list substituents alphabetically + parent alkane name, using hyphens and commas correctly',
+      ],
+    },
+    {
+      id: 'seq-t4-2',
+      stem: 'Put these stages of free radical substitution (chlorination of methane) in the correct order:',
+      steps: [
+        'Initiation: UV light causes homolytic fission of Cl₂ → 2Cl•',
+        'Propagation step 1: Cl• + CH₄ → HCl + CH₃•',
+        'Propagation step 2: CH₃• + Cl₂ → CH₃Cl + Cl• (regenerates Cl• to continue the cycle)',
+        'Steps 2 and 3 repeat thousands of times as a chain reaction',
+        'Termination: two radicals combine (e.g. CH₃• + Cl• → CH₃Cl) — chain ends',
+      ],
+    },
+    {
+      id: 'seq-t4-3',
+      stem: 'Arrange these crude oil fractions in order from lowest to highest boiling point:',
+      steps: [
+        'Gases / LPG (C₁–C₄, below 25°C) — collected at the top of the column',
+        'Gasoline / petrol (C₅–C₁₀, 25–60°C)',
+        'Kerosene (C₁₀–C₁₅, 150–250°C)',
+        'Diesel / gas oil (C₁₅–C₂₀, 220–350°C)',
+        'Bitumen / residue (>C₂₀, above 350°C) — does not vaporise, stays at column base',
+      ],
+    },
+    {
+      id: 'seq-t4-4',
+      stem: 'Put the steps for the laboratory cracking experiment in the correct order:',
+      steps: [
+        'Set up apparatus: clamp test tube with medicinal oil and catalyst (aluminium oxide chips), delivery tube leading to water trough',
+        'Heat the catalyst strongly with a Bunsen burner to crack the alkane vapour',
+        'Collect the alkene gas by displacement over water in an inverted gas jar',
+        'BEFORE stopping the heat, remove the delivery tube from the water (prevents suck-back shattering the tube)',
+        'Test the collected gas with bromine water — decolouration confirms an alkene is present',
+      ],
+    },
+    {
+      id: 'seq-t4-5',
+      stem: 'Arrange these successive chlorination products of methane in the order they form (starting with methane):',
+      steps: [
+        'CH₄ (methane — starting material, 4 C–H bonds)',
+        'CH₃Cl (chloromethane — first H replaced by Cl)',
+        'CH₂Cl₂ (dichloromethane — second H replaced)',
+        'CHCl₃ (trichloromethane — third H replaced)',
+        'CCl₄ (tetrachloromethane — all H atoms replaced)',
+      ],
+    },
+    {
+      id: 'seq-t4-6',
+      stem: 'Put these steps for balancing the combustion equation for octane (C₈H₁₈) in the correct order:',
+      steps: [
+        'Write the unbalanced skeleton: C₈H₁₈ + O₂ → CO₂ + H₂O',
+        'Balance carbon atoms: put 8 in front of CO₂ → 8CO₂',
+        'Balance hydrogen atoms: 18 H atoms → 9H₂O → put 9 in front of H₂O',
+        'Count oxygen atoms needed on right: (8×2) + (9×1) = 25 O atoms → need 25/2 O₂',
+        'Clear fractions by multiplying all through by 2: 2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O',
+      ],
+    },
+    {
+      id: 'seq-t4-7',
+      stem: 'Put these steps for drawing all structural isomers of a molecular formula in the correct order:',
+      steps: [
+        'Draw the straight-chain isomer (all carbons in one continuous chain)',
+        'Shorten the main chain by one carbon and place a methyl branch at every possible position',
+        'Shorten the chain further and add more branches (or two branches on one carbon) until no new structures are possible',
+        'Check each structure for duplicates by applying IUPAC naming: same IUPAC name = same molecule',
+        'Count verified unique structures and present them as the complete set of isomers',
+      ],
+    },
+    {
+      id: 'seq-t4-8',
+      stem: 'Arrange the following sequence showing how burning fossil fuels leads to the enhanced greenhouse effect:',
+      steps: [
+        'Fossil fuels are burned; CO₂ is released into the atmosphere, raising its concentration',
+        'Solar radiation (short-wave) passes through the atmosphere and reaches Earth\'s surface',
+        'Earth\'s surface absorbs solar radiation and warms up, then emits longer-wave infrared radiation',
+        'Elevated CO₂ concentration absorbs more of this infrared radiation than before (that would otherwise escape to space)',
+        'The atmosphere re-emits this absorbed energy back toward Earth, trapping heat and raising global temperatures',
+      ],
+    },
+  ],
+
+  // ─── Keyword Check (~12 questions) ─────────────────────────────────────────
+  keyword: [
+    {
+      id: 'kw-t4-1',
+      stem: 'Define the term "homologous series". [2 marks]',
+      marks: 2,
+      keywords: ['same functional group', 'general formula', 'CH₂', 'gradually changing', 'physical properties'],
+      modelAnswer: 'A homologous series is a family of organic compounds that share the same functional group and the same general formula, with each consecutive member differing by a –CH₂– unit. Members have gradually changing physical properties but similar chemical properties.',
+    },
+    {
+      id: 'kw-t4-2',
+      stem: 'Explain why hexane has a higher boiling point than butane. [3 marks]',
+      marks: 3,
+      keywords: ['London', 'dispersion forces', 'more electrons', 'polarisable', 'stronger', 'energy', 'overcome'],
+      modelAnswer: 'Hexane has a longer carbon chain and more electrons than butane. More electrons create a larger, more polarisable electron cloud, producing stronger London (dispersion) forces between adjacent hexane molecules. More energy must be supplied to overcome these stronger intermolecular forces, so hexane has a higher boiling point.',
+    },
+    {
+      id: 'kw-t4-3',
+      stem: 'Explain why 2,2-dimethylpropane has a lower boiling point than pentane, even though they share the molecular formula C₅H₁₂. [3 marks]',
+      marks: 3,
+      keywords: ['branched', 'spherical', 'surface area', 'contact', 'weaker', 'London forces', 'less energy'],
+      modelAnswer: '2,2-Dimethylpropane has a more compact, spherical shape due to its branching, which reduces the surface area of contact between adjacent molecules. This means fewer and weaker London dispersion forces act between them compared to straight-chain pentane. Less energy is therefore required to separate the molecules, resulting in a lower boiling point.',
+    },
+    {
+      id: 'kw-t4-4',
+      stem: 'Describe the initiation step in the free radical substitution of methane with chlorine, including the type of bond fission involved. [2 marks]',
+      marks: 2,
+      keywords: ['UV light', 'homolytic fission', 'Cl₂', 'chlorine radicals', 'unpaired electron'],
+      modelAnswer: 'In the initiation step, UV light provides sufficient energy to break the Cl–Cl bond by homolytic fission. Each chlorine atom receives one electron from the shared pair, forming two chlorine free radicals (Cl•), each with one unpaired electron.',
+    },
+    {
+      id: 'kw-t4-5',
+      stem: 'Explain why free radical substitution of methane with excess chlorine produces a mixture of products. [2 marks]',
+      marks: 2,
+      keywords: ['further substitution', 'CH₃Cl', 'CH₂Cl₂', 'mixture', 'H atoms'],
+      modelAnswer: 'Once chloromethane (CH₃Cl) is formed, it can undergo further free radical substitution in additional propagation cycles. Its remaining C–H bonds are replaced by more Cl atoms, producing CH₂Cl₂, CHCl₃, and CCl₄ as well as CH₃Cl. This results in a mixture of mono-, di-, tri-, and tetrachloromethane.',
+    },
+    {
+      id: 'kw-t4-6',
+      stem: 'Define the term "structural isomers". [2 marks]',
+      marks: 2,
+      keywords: ['same molecular formula', 'different structural formula', 'different arrangement', 'atoms'],
+      modelAnswer: 'Structural isomers are two or more compounds with the same molecular formula but different structural formulae — the atoms are connected in a different order or arrangement. They have different IUPAC names and different physical and sometimes chemical properties.',
+    },
+    {
+      id: 'kw-t4-7',
+      stem: 'Explain the economic importance of cracking in the oil industry. [3 marks]',
+      marks: 3,
+      keywords: ['demand', 'short-chain', 'petrol', 'long-chain', 'alkenes', 'polymers'],
+      modelAnswer: 'There is greater commercial demand for short-chain fractions such as petrol and kerosene than for the large quantities of long-chain heavy oil fractions produced by fractional distillation. Cracking converts these less-useful heavy molecules into higher-value short-chain products. Cracking also produces alkenes such as ethene, which are essential raw materials for polymer (plastic) manufacture.',
+    },
+    {
+      id: 'kw-t4-8',
+      stem: 'State two environmental problems caused by the combustion of fossil fuels and explain how each arises. [4 marks]',
+      marks: 4,
+      keywords: ['CO₂', 'greenhouse', 'global warming', 'CO', 'haemoglobin', 'SO₂', 'NOₓ', 'acid rain'],
+      modelAnswer: '1. CO₂ produced by complete combustion is a greenhouse gas; it absorbs infrared radiation, enhancing the greenhouse effect and contributing to global warming / climate change. 2. CO produced by incomplete combustion binds irreversibly to haemoglobin (forming carboxyhaemoglobin), preventing oxygen transport in the blood. (Alternatively: SO₂ or NOₓ dissolve in rainwater → sulfuric/nitric acid → acid rain, which damages ecosystems, soils, and limestone buildings.)',
+    },
+    {
+      id: 'kw-t4-9',
+      stem: 'Explain how a catalytic converter reduces atmospheric pollution from car exhaust gases. [3 marks]',
+      marks: 3,
+      keywords: ['platinum', 'catalyst', 'CO', 'oxidised', 'CO₂', 'NOₓ', 'N₂', 'reduced'],
+      modelAnswer: 'A catalytic converter contains platinum and rhodium catalysts on a large honeycomb surface area. It oxidises toxic CO to CO₂ (CO + ½O₂ → CO₂) and reduces NOₓ to harmless N₂ (2NOₓ → N₂ + xO₂). It also oxidises unburned hydrocarbons to CO₂ and H₂O, converting harmful exhaust gases to less harmful products.',
+    },
+    {
+      id: 'kw-t4-10',
+      stem: 'State what is meant by a "carbon neutral" fuel and explain why bioethanol is described as approximately carbon neutral. [3 marks]',
+      marks: 3,
+      keywords: ['zero net', 'CO₂', 'photosynthesis', 'absorbed', 'released', 'equal'],
+      modelAnswer: 'A carbon-neutral fuel results in zero net change in the amount of CO₂ in the atmosphere. Bioethanol is approximately carbon neutral because the plants (e.g. sugarcane) absorb CO₂ from the atmosphere via photosynthesis during their growth. When the bioethanol is burned, it releases roughly the same amount of CO₂ as was absorbed, giving a near-zero net change in atmospheric CO₂.',
+    },
+    {
+      id: 'kw-t4-11',
+      stem: 'State the IUPAC rules for naming a branched-chain alkane. [3 marks]',
+      marks: 3,
+      keywords: ['longest chain', 'lowest', 'substituents', 'alphabetical', 'hyphen', 'comma'],
+      modelAnswer: 'Find the longest continuous carbon chain (parent alkane name). Number the chain from the end that gives substituents the lowest possible locant numbers. Name each substituent with its locant (methyl, ethyl, chloro, etc.) and list substituents alphabetically before the parent name. Use multipliers (di-, tri-) for repeated substituents. Separate numbers from letters with hyphens; separate numbers from numbers with commas.',
+    },
+    {
+      id: 'kw-t4-12',
+      stem: 'Explain why alkanes are generally unreactive substances. [2 marks]',
+      marks: 2,
+      keywords: ['non-polar', 'strong', 'bond enthalpy', 'polar reagents', 'C–H'],
+      modelAnswer: 'Alkanes are generally unreactive because the C–H and C–C bonds are non-polar (carbon and hydrogen have similar electronegativities), so polar reagents cannot easily attack the molecule. The bonds also have high bond enthalpies (C–H: ~413 kJ mol⁻¹), requiring significant energy to break. Alkanes do react with halogens under UV light (FRS) and with oxygen (combustion).',
+    },
+  ],
+
+  // ─── Flashcards (~28 cards) ──────────────────────────────────────────────────
+  flashcards: [
+    {
+      id: 'fc-t4-1',
+      front: 'What is organic chemistry?',
+      back: 'The chemistry of carbon-containing compounds. Carbon can form four covalent bonds and bond with itself (catenation) to build long chains and rings — giving rise to millions of organic compounds.',
+      topic: 'Organic Chemistry Basics',
+    },
+    {
+      id: 'fc-t4-2',
+      front: 'Define "functional group".',
+      back: 'An atom or group of atoms that determines the characteristic reactions of an organic molecule.\nExamples: C=C (alkene), –OH (alcohol), –Br (halogenoalkane), –COOH (carboxylic acid).',
+      topic: 'Organic Chemistry Basics',
+    },
+    {
+      id: 'fc-t4-3',
+      front: 'What are the four key features of a homologous series?',
+      back: '• Same functional group → similar chemical properties\n• Differ by –CH₂– between consecutive members\n• Share the same general formula\n• Gradually changing physical properties (boiling point, solubility, viscosity)',
+      topic: 'Organic Chemistry Basics',
+    },
+    {
+      id: 'fc-t4-4',
+      front: 'What is the difference between a saturated and an unsaturated hydrocarbon?',
+      back: 'Saturated: contains only single C–C bonds (no C=C or C≡C bonds). Example: alkanes (CₙH₂ₙ₊₂).\nUnsaturated: contains one or more C=C (alkenes) or C≡C (alkynes) bonds.',
+      topic: 'Organic Chemistry Basics',
+    },
+    {
+      id: 'fc-t4-5',
+      front: 'Name the five types of formula for organic molecules.',
+      back: '1. Empirical — simplest whole-number atom ratio (e.g. C₂H₅ for butane)\n2. Molecular — actual atom count (e.g. C₄H₁₀)\n3. Structural — shows groupings without all bonds (e.g. CH₃CH₂CH₂CH₃)\n4. Displayed — shows every atom and every bond\n5. Skeletal — zig-zag carbon skeleton; C and attached H atoms not shown',
+      topic: 'Organic Chemistry Basics',
+    },
+    {
+      id: 'fc-t4-6',
+      front: 'State the IUPAC prefixes for carbon chains of 1–8 carbons.',
+      back: '1 = meth-\n2 = eth-\n3 = prop-\n4 = but-\n5 = pent-\n6 = hex-\n7 = hept-\n8 = oct-',
+      topic: 'IUPAC Nomenclature',
+    },
+    {
+      id: 'fc-t4-7',
+      front: 'What are the IUPAC rules for naming a branched-chain alkane?',
+      back: '1. Find the longest C chain (parent name)\n2. Number from the end giving lowest locants to substituents\n3. Name substituents: methyl-, ethyl-, chloro-, bromo- etc.\n4. Use di-, tri- for repeated substituents\n5. List substituents alphabetically (ignore di/tri)\n6. Separate numbers with commas; numbers from letters with hyphens',
+      topic: 'IUPAC Nomenclature',
+    },
+    {
+      id: 'fc-t4-8',
+      front: 'What are the three types of structural isomerism?',
+      back: '1. Chain isomers — same formula, different carbon chain arrangement (branching)\n2. Positional isomers — same chain and functional group, but functional group in a different position\n3. Functional group isomers — same formula, different functional group entirely',
+      topic: 'Structural Isomerism',
+    },
+    {
+      id: 'fc-t4-9',
+      front: 'Draw or name all structural isomers of C₅H₁₂.',
+      back: '3 chain isomers (all are C₅H₁₂):\n1. Pentane — straight chain (bp 36°C)\n2. 2-Methylbutane — one methyl branch at C-2 (bp 28°C)\n3. 2,2-Dimethylpropane — two methyl groups on the central carbon (bp 10°C)\nBranching → lower bp (weaker London forces due to less surface contact).',
+      topic: 'Structural Isomerism',
+    },
+    {
+      id: 'fc-t4-10',
+      front: 'What is crude oil and how is it refined?',
+      back: 'Crude oil is a complex mixture of hydrocarbons (mainly alkanes). It is refined by fractional distillation: the oil is heated and vapours rise up a fractionating column where different-length chains condense at different temperatures based on the strength of their London forces.',
+      topic: 'Fractional Distillation',
+    },
+    {
+      id: 'fc-t4-11',
+      front: 'Name five crude oil fractions and their uses.',
+      back: '1. Gases/LPG (C₁–C₄) — cooking, heating\n2. Petrol/gasoline (C₅–C₁₀) — car fuel\n3. Kerosene (C₁₀–C₁₅) — jet/aviation fuel\n4. Diesel/gas oil (C₁₅–C₂₀) — lorry and bus fuel\n5. Bitumen/residue (>C₂₀) — road surfacing, roofing',
+      topic: 'Fractional Distillation',
+    },
+    {
+      id: 'fc-t4-12',
+      front: 'Compare thermal cracking and catalytic cracking.',
+      back: 'Thermal cracking:\n• Temperature ~750°C, high pressure\n• No catalyst; free radical mechanism\n• Products: mainly alkenes (for polymer manufacture)\n\nCatalytic cracking:\n• Temperature ~450°C, low pressure\n• Zeolite catalyst; ionic mechanism\n• Products: mainly branched alkanes + aromatics (high octane for petrol)',
+      topic: 'Cracking',
+    },
+    {
+      id: 'fc-t4-13',
+      front: 'What is reforming and what catalyst does it use?',
+      back: 'Reforming converts straight-chain alkanes into branched-chain or cyclic/aromatic hydrocarbons using a platinum (Pt) catalyst and heat.\nExample: pentane → cyclopentane + H₂\nPurpose: branched and aromatic hydrocarbons have a higher octane rating and burn more smoothly in car engines (reducing "knocking").',
+      topic: 'Cracking',
+    },
+    {
+      id: 'fc-t4-14',
+      front: 'What is the key safety precaution in the laboratory cracking experiment?',
+      back: 'Remove the delivery tube from the water BEFORE turning off the burner.\nReason: if the heat is stopped first, gas inside the test tube cools and contracts (creating a partial vacuum), sucking cold water back up into the hot tube — causing it to crack or shatter ("suck-back").',
+      topic: 'Cracking',
+    },
+    {
+      id: 'fc-t4-15',
+      front: 'Write equations for complete and incomplete combustion of methane.',
+      back: 'Complete (excess O₂):\nCH₄ + 2O₂ → CO₂ + 2H₂O\n\nIncomplete (limited O₂):\n2CH₄ + 3O₂ → 2CO + 4H₂O  (produces toxic CO)\nor\nCH₄ + O₂ → C + 2H₂O  (produces soot)',
+      topic: 'Combustion',
+    },
+    {
+      id: 'fc-t4-16',
+      front: 'Why is carbon monoxide (CO) dangerous to humans?',
+      back: 'CO binds irreversibly (very strongly) to haemoglobin, forming carboxyhaemoglobin. This prevents haemoglobin from binding and carrying oxygen. At high concentrations, cells and tissues are starved of oxygen, which can be rapidly fatal.',
+      topic: 'Combustion Pollutants',
+    },
+    {
+      id: 'fc-t4-17',
+      front: 'Name four combustion pollutants, their sources, and their effects.',
+      back: '• CO₂ — complete combustion → greenhouse gas, global warming\n• CO — incomplete combustion → binds haemoglobin, toxic\n• SO₂ — S-containing fuels → acid rain (→ H₂SO₄)\n• NOₓ — high-T combustion (N₂+O₂) → acid rain, smog, respiratory irritant',
+      topic: 'Combustion Pollutants',
+    },
+    {
+      id: 'fc-t4-18',
+      front: 'How does a catalytic converter reduce air pollution?',
+      back: 'Contains Pt and Rh catalysts on a large honeycomb surface.\n• CO + ½O₂ → CO₂ (oxidation of toxic CO)\n• 2NOₓ → N₂ + xO₂ (reduction of NOₓ to harmless N₂)\n• Unburned hydrocarbons + O₂ → CO₂ + H₂O\nConverts toxic exhaust gases into CO₂, H₂O, and N₂.',
+      topic: 'Combustion Pollutants',
+    },
+    {
+      id: 'fc-t4-19',
+      front: 'State the three stages of free radical substitution (FRS).',
+      back: '1. Initiation: UV → homolytic fission of Cl₂ → 2Cl• (fish-hook arrows)\n2. Propagation (two repeating steps):\n   Step 1: Cl• + CH₄ → HCl + CH₃•\n   Step 2: CH₃• + Cl₂ → CH₃Cl + Cl•\n3. Termination: two radicals combine (no new radicals) → chain stops\n   e.g. CH₃• + Cl• → CH₃Cl; CH₃• + CH₃• → C₂H₆',
+      topic: 'Free Radical Substitution',
+    },
+    {
+      id: 'fc-t4-20',
+      front: 'What is homolytic fission? How is it shown in a mechanism diagram?',
+      back: 'Homolytic fission is the breaking of a covalent bond where each atom receives one electron from the shared pair, forming two free radicals.\nRepresented by fish-hook (single-headed/half-headed) curly arrows — one arrow from each end of the bond, one to each atom.\nExample: Cl–Cl → Cl• + •Cl',
+      topic: 'Free Radical Substitution',
+    },
+    {
+      id: 'fc-t4-21',
+      front: 'Why does FRS give a mixture of chlorinated products with excess Cl₂?',
+      back: 'CH₃Cl can undergo further propagation cycles:\nCH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄\n(monochloro → dichloro → trichloro → tetrachloro)\nTermination can also form unexpected by-products like C₂H₆ (from CH₃• + CH₃•).\nThis makes FRS a poor synthetic route for a single pure product.',
+      topic: 'Free Radical Substitution',
+    },
+    {
+      id: 'fc-t4-22',
+      front: 'Why are alkanes generally unreactive?',
+      back: '1. C–H and C–C bonds are non-polar → polar reagents cannot attack them\n2. Bond enthalpies are high: C–H ~413 kJ mol⁻¹; C–C ~348 kJ mol⁻¹\nExceptions: combustion (excess O₂) and FRS with halogens under UV light.',
+      topic: 'Properties of Alkanes',
+    },
+    {
+      id: 'fc-t4-23',
+      front: 'Explain the trend in boiling points of straight-chain alkanes.',
+      back: 'Boiling point increases with chain length because:\n• Longer chains have more electrons per molecule\n• More electrons → larger, more polarisable electron clouds\n• Stronger London (dispersion) forces between adjacent molecules\n• More energy needed to overcome IMFs → higher boiling point',
+      topic: 'Properties of Alkanes',
+    },
+    {
+      id: 'fc-t4-24',
+      front: 'Why does branching lower the boiling point of an alkane?',
+      back: 'Branching produces a more compact, spherical molecular shape.\nThis reduces the surface area of contact between adjacent molecules → fewer and weaker London forces.\nLess energy is needed to separate molecules → lower boiling point.\nExample: pentane (36°C) > 2-methylbutane (28°C) > 2,2-dimethylpropane (10°C)',
+      topic: 'Properties of Alkanes',
+    },
+    {
+      id: 'fc-t4-25',
+      front: 'What are the general formulae of alkanes and cycloalkanes?',
+      back: 'Alkanes: CₙH₂ₙ₊₂ (open chain, saturated)\nCycloalkanes: CₙH₂ₙ (ring, saturated — ring closure removes 2 H atoms vs alkane)\nNote: CₙH₂ₙ is also the formula for alkenes, but their structures (and reactions) differ completely.',
+      topic: 'Alkane Formulae',
+    },
+    {
+      id: 'fc-t4-26',
+      front: 'What is meant by a "carbon neutral" fuel?',
+      back: 'A fuel is carbon neutral if burning it results in zero net change in atmospheric CO₂.\nBioethanol is approximately carbon neutral: the crops absorb CO₂ via photosynthesis during growth; combustion releases ~the same amount back.\nNote: not perfectly neutral — transport, fertiliser, and processing also release CO₂.',
+      topic: 'Alternative Fuels',
+    },
+    {
+      id: 'fc-t4-27',
+      front: 'Compare bioethanol and hydrogen as alternative fuels.',
+      back: 'Bioethanol:\n• Made by fermenting sugarcane/crops (renewable)\n• Approximately carbon neutral\n• Requires large land area to grow crops\n\nHydrogen:\n• Burns producing only H₂O (no CO₂ directly)\n• Must be stored in pressurised tanks (explosion risk)\n• Producing H₂ (electrolysis) typically requires energy from fossil fuels',
+      topic: 'Alternative Fuels',
+    },
+    {
+      id: 'fc-t4-28',
+      front: 'What are the properties of alkane molecules that change as chain length increases?',
+      back: 'As chain length INCREASES:\n↑ Boiling point (stronger London forces)\n↑ Viscosity (more intermolecular friction)\n↑ Molar mass (Mᵣ)\n↑ Relative molecular mass\n\nAs chain length INCREASES:\n↓ Volatility (harder to evaporate)\n↓ Flammability (harder to ignite — less volatile)',
+      topic: 'Properties of Alkanes',
+    },
+  ],
+};

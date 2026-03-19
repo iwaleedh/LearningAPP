@@ -1,0 +1,286 @@
+import { exercises_chemistry_1_1 } from './chemistry/exercises_chemistry_1_1';
+import { exercises_chemistry_1_2 } from './chemistry/exercises_chemistry_1_2';
+import { exercises_chemistry_1_3 } from './chemistry/exercises_chemistry_1_3';
+import { exercises_chemistry_1_4 } from './chemistry/exercises_chemistry_1_4';
+import { exercises_chemistry_1_5 } from './chemistry/exercises_chemistry_1_5';
+import { exercises_chemistry_3_3A } from './chemistry/exercises_chemistry_3_3A';
+import { exercises_biology_1_1 } from './biology/exercises_biology_1_1';
+import { exercises_biology_1_2 } from './biology/exercises_biology_1_2';
+import { exercises_biology_2_3 } from './biology/exercises_biology_2_3';
+import { exercises_biology_2_4 } from './biology/exercises_biology_2_4';
+import { exercises_biology_4_5 } from './biology/exercises_biology_4_5';
+import { exercises_chemistry_2_6 } from './chemistry/exercises_chemistry_2_6';
+import { exercises_chemistry_2_7 } from './chemistry/exercises_chemistry_2_7';
+import { exercises_chemistry_2_8 } from './chemistry/exercises_chemistry_2_8';
+import { exercises_chemistry_2_9 } from './chemistry/exercises_chemistry_2_9';
+import { exercises_chemistry_2_10 } from './chemistry/exercises_chemistry_2_10';
+import { exercises_chemistry_4_11 } from './chemistry/exercises_chemistry_4_11';
+import { exercises_chemistry_4_12 } from './chemistry/exercises_chemistry_4_12';
+import { exercises_chemistry_4_13 } from './chemistry/exercises_chemistry_4_13';
+import { exercises_chemistry_4_14 } from './chemistry/exercises_chemistry_4_14';
+import { exercises_chemistry_4_15 } from './chemistry/exercises_chemistry_4_15';
+import { exercises_chemistry_5_16 } from './chemistry/exercises_chemistry_5_16';
+import { exercises_chemistry_5_17 } from './chemistry/exercises_chemistry_5_17';
+import { exercises_chemistry_5_18 } from './chemistry/exercises_chemistry_5_18';
+import { exercises_chemistry_5_19 } from './chemistry/exercises_chemistry_5_19';
+import { exercises_chemistry_5_20 } from './chemistry/exercises_chemistry_5_20';
+import { exercises_chemistry_6_6A } from './chemistry/exercises_chemistry_6_6A';
+import { exercises_biology_4_6 } from './biology/exercises_biology_4_6';
+import { exercises_biology_5_7 } from './biology/exercises_biology_5_7';
+import { exercises_biology_6_6A } from './biology/exercises_biology_6_6A';
+import { exercises_biology_3_3A } from './biology/exercises_biology_3_3A';
+import { exercises_physics_1_1 } from './physics/exercises_physics_1_1';
+import { exercises_physics_1_2 } from './physics/exercises_physics_1_2';
+import { exercises_physics_1_3 } from './physics/exercises_physics_1_3';
+import { exercises_physics_1_4 } from './physics/exercises_physics_1_4';
+import { exercises_physics_1_5 } from './physics/exercises_physics_1_5';
+import { exercises_physics_1_9 } from './physics/exercises_physics_1_9';
+import { exercises_physics_2_6 } from './physics/exercises_physics_2_6';
+import { exercises_physics_2_7 } from './physics/exercises_physics_2_7';
+import { exercises_physics_2_8 } from './physics/exercises_physics_2_8';
+import { exercises_physics_1_10 } from './physics/exercises_physics_1_10';
+import { exercises_physics_2_11 } from './physics/exercises_physics_2_11';
+import { exercises_physics_2_12 } from './physics/exercises_physics_2_12';
+import { exercises_physics_1_13 } from './physics/exercises_physics_1_13';
+import { exercises_physics_4_16 } from './physics/exercises_physics_4_16';
+// AL Business
+// AL Economics
+import { exercises_economics_1_1 } from './economics/exercises_economics_1_1';
+import { exercises_economics_1_2 } from './economics/exercises_economics_1_2';
+import { exercises_economics_1_3 } from './economics/exercises_economics_1_3';
+import { exercises_economics_1_4 } from './economics/exercises_economics_1_4';
+import { exercises_economics_1_5 } from './economics/exercises_economics_1_5';
+import { exercises_economics_1_6 } from './economics/exercises_economics_1_6';
+import { exercises_economics_2_7 } from './economics/exercises_economics_2_7';
+import { exercises_economics_2_8 } from './economics/exercises_economics_2_8';
+import { exercises_economics_2_9 } from './economics/exercises_economics_2_9';
+import { exercises_economics_2_10 } from './economics/exercises_economics_2_10';
+import { exercises_economics_2_11 } from './economics/exercises_economics_2_11';
+import { exercises_economics_2_12 } from './economics/exercises_economics_2_12';
+import { exercises_business_1_1 } from './business/exercises_business_1_1';
+import { exercises_business_2_7 } from './business/exercises_business_2_7';
+import { exercises_business_2_8 } from './business/exercises_business_2_8';
+// AL Accounting
+import { exercises_business_3_11 } from './business/exercises_business_3_11';
+import { exercises_accounting_1_1 } from './accounting/exercises_accounting_1_1';
+import { exercises_accounting_1_4 } from './accounting/exercises_accounting_1_4';
+import { exercises_accounting_1_6 } from './accounting/exercises_accounting_1_6';
+import { exercises_accounting_2_7 } from './accounting/exercises_accounting_2_7';
+import { exercises_accounting_2_9 } from './accounting/exercises_accounting_2_9';
+import { exercises_accounting_2_11 } from './accounting/exercises_accounting_2_11';
+import { exercises_accounting_2_15 } from './accounting/exercises_accounting_2_15';
+// AL Mathematics
+import { exercises_mathematics_1_1 } from './mathematics/exercises_mathematics_1_1';
+import { exercises_mathematics_1_2 } from './mathematics/exercises_mathematics_1_2';
+// IGCSE Chemistry (O Level)
+import { exercises_olevel_chemistry_1_1 } from './olevel_chemistry/exercises_olevel_chemistry_1_1';
+import { exercises_olevel_chemistry_2_2 } from './olevel_chemistry/exercises_olevel_chemistry_2_2';
+import { exercises_olevel_chemistry_3_3 } from './olevel_chemistry/exercises_olevel_chemistry_3_3';
+import { exercises_olevel_chemistry_4_4 } from './olevel_chemistry/exercises_olevel_chemistry_4_4';
+import { exercises_olevel_chemistry_5_5 } from './olevel_chemistry/exercises_olevel_chemistry_5_5';
+import { exercises_olevel_chemistry_6_6 } from './olevel_chemistry/exercises_olevel_chemistry_6_6';
+import { exercises_olevel_chemistry_7_7 } from './olevel_chemistry/exercises_olevel_chemistry_7_7';
+import { exercises_olevel_chemistry_8_8 } from './olevel_chemistry/exercises_olevel_chemistry_8_8';
+import { exercises_olevel_chemistry_9_9 } from './olevel_chemistry/exercises_olevel_chemistry_9_9';
+import { exercises_olevel_chemistry_10_10 } from './olevel_chemistry/exercises_olevel_chemistry_10_10';
+import { exercises_olevel_chemistry_11_11 } from './olevel_chemistry/exercises_olevel_chemistry_11_11';
+import { exercises_olevel_chemistry_12_12 } from './olevel_chemistry/exercises_olevel_chemistry_12_12';
+// IGCSE Biology (O Level)
+import { exercises_olevel_biology_1_1 } from './olevel_biology/exercises_olevel_biology_1_1';
+import { exercises_olevel_biology_2_2 } from './olevel_biology/exercises_olevel_biology_2_2';
+import { exercises_olevel_biology_5_5 } from './olevel_biology/exercises_olevel_biology_5_5';
+import { exercises_olevel_biology_6_6 } from './olevel_biology/exercises_olevel_biology_6_6';
+import { exercises_olevel_biology_7_7 } from './olevel_biology/exercises_olevel_biology_7_7';
+import { exercises_olevel_biology_8_8 } from './olevel_biology/exercises_olevel_biology_8_8';
+import { exercises_olevel_biology_17_17 } from './olevel_biology/exercises_olevel_biology_17_17';
+import { exercises_olevel_biology_18_18 } from './olevel_biology/exercises_olevel_biology_18_18';
+import { exercises_olevel_biology_19_19 } from './olevel_biology/exercises_olevel_biology_19_19';
+import { exercises_olevel_biology_20_20 } from './olevel_biology/exercises_olevel_biology_20_20';
+import { exercises_olevel_biology_21_21 } from './olevel_biology/exercises_olevel_biology_21_21';
+import { exercises_olevel_biology_13_13 } from './olevel_biology/exercises_olevel_biology_13_13';
+import { exercises_olevel_biology_14_14 } from './olevel_biology/exercises_olevel_biology_14_14';
+import { exercises_olevel_biology_15_15 } from './olevel_biology/exercises_olevel_biology_15_15';
+import { exercises_olevel_biology_16_16 } from './olevel_biology/exercises_olevel_biology_16_16';
+import { exercises_olevel_biology_9_9 } from './olevel_biology/exercises_olevel_biology_9_9';
+import { exercises_olevel_biology_10_10 } from './olevel_biology/exercises_olevel_biology_10_10';
+import { exercises_olevel_biology_11_11 } from './olevel_biology/exercises_olevel_biology_11_11';
+import { exercises_olevel_biology_12_12 } from './olevel_biology/exercises_olevel_biology_12_12';
+import { exercises_olevel_biology_3_3 } from './olevel_biology/exercises_olevel_biology_3_3';
+import { exercises_olevel_biology_4_4 } from './olevel_biology/exercises_olevel_biology_4_4';
+// IGCSE Physics (0625)
+import { exercises_olevel_physics_1_1 } from './olevel_physics/exercises_olevel_physics_1_1';
+import { exercises_olevel_physics_1_2 } from './olevel_physics/exercises_olevel_physics_1_2';
+import { exercises_olevel_physics_1_3 } from './olevel_physics/exercises_olevel_physics_1_3';
+import { exercises_olevel_physics_1_4 } from './olevel_physics/exercises_olevel_physics_1_4';
+import { exercises_olevel_physics_1_5 } from './olevel_physics/exercises_olevel_physics_1_5';
+import { exercises_olevel_physics_1_6 } from './olevel_physics/exercises_olevel_physics_1_6';
+import { exercises_olevel_physics_1_7 } from './olevel_physics/exercises_olevel_physics_1_7';
+import { exercises_olevel_physics_1_8 } from './olevel_physics/exercises_olevel_physics_1_8';
+import { exercises_olevel_physics_1_9 } from './olevel_physics/exercises_olevel_physics_1_9';
+import { exercises_olevel_physics_2_1 } from './olevel_physics/exercises_olevel_physics_2_1';
+import { exercises_olevel_physics_2_2 } from './olevel_physics/exercises_olevel_physics_2_2';
+import { exercises_olevel_physics_2_3 } from './olevel_physics/exercises_olevel_physics_2_3';
+import { exercises_olevel_physics_3_1 } from './olevel_physics/exercises_olevel_physics_3_1';
+import { exercises_olevel_physics_3_2 } from './olevel_physics/exercises_olevel_physics_3_2';
+import { exercises_olevel_physics_3_3 } from './olevel_physics/exercises_olevel_physics_3_3';
+import { exercises_olevel_physics_3_4 } from './olevel_physics/exercises_olevel_physics_3_4';
+import { exercises_olevel_physics_4_1 } from './olevel_physics/exercises_olevel_physics_4_1';
+import { exercises_olevel_physics_4_2 } from './olevel_physics/exercises_olevel_physics_4_2';
+import { exercises_olevel_physics_4_3 } from './olevel_physics/exercises_olevel_physics_4_3';
+import { exercises_olevel_physics_4_4 } from './olevel_physics/exercises_olevel_physics_4_4';
+import { exercises_olevel_physics_5_1 } from './olevel_physics/exercises_olevel_physics_5_1';
+import { exercises_olevel_physics_5_2 } from './olevel_physics/exercises_olevel_physics_5_2';
+import { exercises_olevel_physics_6_1 } from './olevel_physics/exercises_olevel_physics_6_1';
+import { exercises_olevel_physics_6_2 } from './olevel_physics/exercises_olevel_physics_6_2';
+
+export const exerciseSets = {
+    'chemistry:1:1': exercises_chemistry_1_1,
+    'chemistry:1:2': exercises_chemistry_1_2,
+    'chemistry:1:3': exercises_chemistry_1_3,
+    'chemistry:1:4': exercises_chemistry_1_4,
+    'chemistry:1:5': exercises_chemistry_1_5,
+    'chemistry:3:3A': exercises_chemistry_3_3A,
+    'biology:1:1': exercises_biology_1_1,
+    'biology:1:2': exercises_biology_1_2,
+    'biology:2:3': exercises_biology_2_3,
+    'biology:2:4': exercises_biology_2_4,
+    'biology:4:5': exercises_biology_4_5,
+    'chemistry:2:6': exercises_chemistry_2_6,
+    'chemistry:2:7': exercises_chemistry_2_7,
+    'chemistry:2:8': exercises_chemistry_2_8,
+    'chemistry:2:9': exercises_chemistry_2_9,
+    'chemistry:2:10': exercises_chemistry_2_10,
+    'chemistry:4:11': exercises_chemistry_4_11,
+    'chemistry:4:12': exercises_chemistry_4_12,
+    'chemistry:4:13': exercises_chemistry_4_13,
+    'chemistry:4:14': exercises_chemistry_4_14,
+    'chemistry:4:15': exercises_chemistry_4_15,
+    'chemistry:5:16': exercises_chemistry_5_16,
+    'chemistry:5:17': exercises_chemistry_5_17,
+    'chemistry:5:18': exercises_chemistry_5_18,
+    'chemistry:5:19': exercises_chemistry_5_19,
+    'chemistry:5:20': exercises_chemistry_5_20,
+    'chemistry:6:6A': exercises_chemistry_6_6A,
+    'biology:4:6': exercises_biology_4_6,
+    'biology:5:7': exercises_biology_5_7,
+    'biology:6:6A': exercises_biology_6_6A,
+    'biology:3:3A': exercises_biology_3_3A,
+    'physics:1:1': exercises_physics_1_1,
+    'physics:1:2': exercises_physics_1_2,
+    'physics:1:3': exercises_physics_1_3,
+    'physics:1:4': exercises_physics_1_4,
+    'economics:1:1': exercises_economics_1_1,
+    'economics:1:2': exercises_economics_1_2,
+    'economics:1:3': exercises_economics_1_3,
+    'economics:1:4': exercises_economics_1_4,
+    'economics:1:5': exercises_economics_1_5,
+    'economics:1:6': exercises_economics_1_6,
+    'economics:2:7': exercises_economics_2_7,
+    'economics:2:8': exercises_economics_2_8,
+    'economics:2:9': exercises_economics_2_9,
+    'economics:2:10': exercises_economics_2_10,
+    'economics:2:11': exercises_economics_2_11,
+    'economics:2:12': exercises_economics_2_12,
+    'physics:1:5': exercises_physics_1_5,
+    'physics:1:9': exercises_physics_1_9,
+    'physics:2:6': exercises_physics_2_6,
+    'physics:2:7': exercises_physics_2_7,
+    'physics:2:8': exercises_physics_2_8,
+    'physics:1:10': exercises_physics_1_10,
+    'physics:2:11': exercises_physics_2_11,
+    'physics:2:12': exercises_physics_2_12,
+    'physics:1:13': exercises_physics_1_13,
+    'physics:4:16': exercises_physics_4_16,
+    // AL Business
+    'business:1:1': exercises_business_1_1,
+    'business:2:7': exercises_business_2_7,
+    'business:2:8': exercises_business_2_8,
+    'business:3:11': exercises_business_3_11,
+    // AL Accounting
+    'accounting:1:1': exercises_accounting_1_1,
+    'accounting:1:4': exercises_accounting_1_4,
+    'accounting:1:6': exercises_accounting_1_6,
+    'accounting:2:7': exercises_accounting_2_7,
+    'accounting:2:9': exercises_accounting_2_9,
+    'accounting:2:11': exercises_accounting_2_11,
+    'accounting:2:15': exercises_accounting_2_15,
+    // AL Mathematics
+    'mathematics:1:1': exercises_mathematics_1_1,
+    'mathematics:1:2': exercises_mathematics_1_2,
+    'mathematics:1:3': exercises_mathematics_1_3,
+    'mathematics:1:4': exercises_mathematics_1_4,
+    'mathematics:1:5': exercises_mathematics_1_5,
+    // IGCSE Chemistry (O Level)
+    'olevel_chemistry:1:1': exercises_olevel_chemistry_1_1,
+    'olevel_chemistry:2:2': exercises_olevel_chemistry_2_2,
+    'olevel_chemistry:3:3': exercises_olevel_chemistry_3_3,
+    'olevel_chemistry:4:4': exercises_olevel_chemistry_4_4,
+    'olevel_chemistry:5:5': exercises_olevel_chemistry_5_5,
+    'olevel_chemistry:6:6': exercises_olevel_chemistry_6_6,
+    'olevel_chemistry:7:7': exercises_olevel_chemistry_7_7,
+    'olevel_chemistry:8:8': exercises_olevel_chemistry_8_8,
+    'olevel_chemistry:9:9': exercises_olevel_chemistry_9_9,
+    'olevel_chemistry:10:10': exercises_olevel_chemistry_10_10,
+    'olevel_chemistry:11:11': exercises_olevel_chemistry_11_11,
+    'olevel_chemistry:12:12': exercises_olevel_chemistry_12_12,
+    // IGCSE Biology (O Level)
+    'olevel_biology:1:1': exercises_olevel_biology_1_1,
+    'olevel_biology:2:2': exercises_olevel_biology_2_2,
+    'olevel_biology:5:5': exercises_olevel_biology_5_5,
+    'olevel_biology:6:6': exercises_olevel_biology_6_6,
+    'olevel_biology:7:7': exercises_olevel_biology_7_7,
+    'olevel_biology:8:8': exercises_olevel_biology_8_8,
+    'olevel_biology:17:17': exercises_olevel_biology_17_17,
+    'olevel_biology:18:18': exercises_olevel_biology_18_18,
+    'olevel_biology:19:19': exercises_olevel_biology_19_19,
+    'olevel_biology:20:20': exercises_olevel_biology_20_20,
+    'olevel_biology:21:21': exercises_olevel_biology_21_21,
+    'olevel_biology:13:13': exercises_olevel_biology_13_13,
+    'olevel_biology:14:14': exercises_olevel_biology_14_14,
+    'olevel_biology:15:15': exercises_olevel_biology_15_15,
+    'olevel_biology:16:16': exercises_olevel_biology_16_16,
+    'olevel_biology:9:9': exercises_olevel_biology_9_9,
+    'olevel_biology:10:10': exercises_olevel_biology_10_10,
+    'olevel_biology:11:11': exercises_olevel_biology_11_11,
+    'olevel_biology:12:12': exercises_olevel_biology_12_12,
+    'olevel_biology:3:3': exercises_olevel_biology_3_3,
+    'olevel_biology:4:4': exercises_olevel_biology_4_4,
+    // IGCSE Physics (0625)
+    'olevel_physics:1:1': exercises_olevel_physics_1_1,
+    'olevel_physics:1:2': exercises_olevel_physics_1_2,
+    'olevel_physics:1:3': exercises_olevel_physics_1_3,
+    'olevel_physics:1:4': exercises_olevel_physics_1_4,
+    'olevel_physics:1:5': exercises_olevel_physics_1_5,
+    'olevel_physics:1:6': exercises_olevel_physics_1_6,
+    'olevel_physics:1:7': exercises_olevel_physics_1_7,
+    'olevel_physics:1:8': exercises_olevel_physics_1_8,
+    'olevel_physics:1:9': exercises_olevel_physics_1_9,
+    'olevel_physics:2:1': exercises_olevel_physics_2_1,
+    'olevel_physics:2:2': exercises_olevel_physics_2_2,
+    'olevel_physics:2:3': exercises_olevel_physics_2_3,
+    'olevel_physics:3:1': exercises_olevel_physics_3_1,
+    'olevel_physics:3:2': exercises_olevel_physics_3_2,
+    'olevel_physics:3:3': exercises_olevel_physics_3_3,
+    'olevel_physics:3:4': exercises_olevel_physics_3_4,
+    'olevel_physics:4:1': exercises_olevel_physics_4_1,
+    'olevel_physics:4:2': exercises_olevel_physics_4_2,
+    'olevel_physics:4:3': exercises_olevel_physics_4_3,
+    'olevel_physics:4:4': exercises_olevel_physics_4_4,
+    'olevel_physics:5:1': exercises_olevel_physics_5_1,
+    'olevel_physics:5:2': exercises_olevel_physics_5_2,
+    'olevel_physics:6:1': exercises_olevel_physics_6_1,
+    'olevel_physics:6:2': exercises_olevel_physics_6_2,
+};
+
+export function getExerciseSet(subject, unitId, topicId) {
+    return exerciseSets[`${subject}:${unitId}:${topicId}`];
+}
+
+export function getAvailableTopics(subject) {
+    return Object.keys(exerciseSets)
+        .filter(key => key.startsWith(`${subject}:`))
+        .map(key => {
+            const [, unitId, topicId] = key.split(':');
+            return { unitId: Number(unitId), topicId: Number(topicId) };
+        });
+}

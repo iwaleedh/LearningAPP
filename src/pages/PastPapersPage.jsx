@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { FileQuestion, Clock, Play, BarChart3, ArrowLeft, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator } from 'lucide-react';
-import TimedExam from '../components/pastpapers/TimedExam';
+import { useNavigate } from 'react-router-dom';
+import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool } from 'lucide-react';
 import PerformanceChart from '../components/pastpapers/PerformanceChart';
 import { chemistryPastPapers, availableYears, availableUnits } from '../data/chemistryPastPapers';
 import { physicsPastPapers, physicsAvailableYears, physicsAvailableUnits } from '../data/physicsPastPapers';
@@ -11,207 +11,80 @@ import { economicsPastPapers, economicsAvailableYears, economicsAvailableUnits }
 import { accountingPastPapers, accountingAvailableYears, accountingAvailableUnits } from '../data/accountingPastPapers';
 import { caePastPapers, caeComponents } from '../data/caePastPapers';
 import { cpePastPapers, cpeComponents } from '../data/cpePastPapers';
-import { downloadFile, generateFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
+import { oLevelChemistryPastPapers, oLevelChemistryAvailableYears, oLevelChemistryAvailableUnits } from '../data/oLevelChemistryPastPapers';
+import { oLevelPhysicsPastPapers, oLevelPhysicsAvailableYears, oLevelPhysicsAvailableUnits } from '../data/oLevelPhysicsPastPapers';
+import { oLevelBiologyPastPapers, oLevelBiologyAvailableYears, oLevelBiologyAvailableUnits } from '../data/oLevelBiologyPastPapers';
+import { oLevelMathematicsPastPapers, oLevelMathematicsAvailableYears, oLevelMathematicsAvailableUnits } from '../data/oLevelMathematicsPastPapers';
+import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
 import './Pages.css';
 
 // Subject configuration
 const subjects = [
     {
         id: 'chemistry', name: 'AL Chemistry', icon: Beaker, color: '#10b981',
-        papers: chemistryPastPapers, years: availableYears, units: availableUnits
+        papers: chemistryPastPapers, years: availableYears, units: availableUnits, isOLevel: false
     },
     {
         id: 'physics', name: 'AL Physics', icon: Atom, color: '#8b5cf6',
-        papers: physicsPastPapers, years: physicsAvailableYears, units: physicsAvailableUnits
+        papers: physicsPastPapers, years: physicsAvailableYears, units: physicsAvailableUnits, isOLevel: false
     },
     {
         id: 'biology', name: 'AL Biology', icon: Dna, color: '#3b82f6',
-        papers: biologyPastPapers, years: biologyAvailableYears, units: biologyAvailableUnits
+        papers: biologyPastPapers, years: biologyAvailableYears, units: biologyAvailableUnits, isOLevel: false
     },
     {
         id: 'mathematics', name: 'AL Mathematics', icon: Calculator, color: '#f59e0b',
-        papers: mathematicsPastPapers, years: mathsAvailableYears, units: mathsAvailableUnits
+        papers: mathematicsPastPapers, years: mathsAvailableYears, units: mathsAvailableUnits, isOLevel: false
     },
     {
         id: 'business', name: 'AL Business', icon: FileText, color: '#ec4899',
-        papers: businessPastPapers, years: businessAvailableYears, units: businessAvailableUnits
+        papers: businessPastPapers, years: businessAvailableYears, units: businessAvailableUnits, isOLevel: false
     },
     {
-        id: 'economics', name: 'AL Economics', icon: BarChart3, color: '#14b8a6',
-        papers: economicsPastPapers, years: economicsAvailableYears, units: economicsAvailableUnits
+        id: 'economics', name: 'AL Economics', icon: FileText, color: '#14b8a6',
+        papers: economicsPastPapers, years: economicsAvailableYears, units: economicsAvailableUnits, isOLevel: false
     },
     {
         id: 'accounting', name: 'AL Accounting', icon: FileQuestion, color: '#f97316',
-        papers: accountingPastPapers, years: accountingAvailableYears, units: accountingAvailableUnits
+        papers: accountingPastPapers, years: accountingAvailableYears, units: accountingAvailableUnits, isOLevel: false
     },
     {
         id: 'cae', name: 'CAE (C1)', icon: FileText, color: '#6366f1',
-        papers: caePastPapers, years: [2022], units: caeComponents.map(c => ({ code: c.id, name: c.name, type: 'C1 Advanced' }))
+        papers: caePastPapers, years: [2022], units: caeComponents.map(c => ({ code: c.id, name: c.name, type: 'C1 Advanced' })), isOLevel: false
     },
     {
         id: 'cpe', name: 'CPE (C2)', icon: FileText, color: '#0ea5e9',
-        papers: cpePastPapers, years: [2022], units: cpeComponents.map(c => ({ code: c.id, name: c.name, type: 'C2 Proficiency' }))
+        papers: cpePastPapers, years: [2022], units: cpeComponents.map(c => ({ code: c.id, name: c.name, type: 'C2 Proficiency' })), isOLevel: false
+    },
+    {
+        id: 'olevel-chemistry', name: 'O Level Chemistry', icon: Beaker, color: '#059669',
+        papers: oLevelChemistryPastPapers, years: oLevelChemistryAvailableYears, units: oLevelChemistryAvailableUnits, isOLevel: true
+    },
+    {
+        id: 'olevel-physics', name: 'O Level Physics', icon: Atom, color: '#7c3aed',
+        papers: oLevelPhysicsPastPapers, years: oLevelPhysicsAvailableYears, units: oLevelPhysicsAvailableUnits, isOLevel: true
+    },
+    {
+        id: 'olevel-biology', name: 'O Level Biology', icon: Dna, color: '#2563eb',
+        papers: oLevelBiologyPastPapers, years: oLevelBiologyAvailableYears, units: oLevelBiologyAvailableUnits, isOLevel: true
+    },
+    {
+        id: 'olevel-mathematics', name: 'O Level Mathematics', icon: Calculator, color: '#d97706',
+        papers: oLevelMathematicsPastPapers, years: oLevelMathematicsAvailableYears, units: oLevelMathematicsAvailableUnits, isOLevel: true
     },
 ];
 
-// Sample papers with embedded questions (for practice mode)
-const samplePapers = [
-    {
-        id: 1, year: 2024, subject: 'Chemistry', variant: 'Paper 1',
-        questions: 10, duration: '1 hour', durationSeconds: 300, type: 'MCQ',
-        questionBank: [
-            {
-                stem: 'What is the relative charge of a proton?',
-                options: ['+1', '-1', '0', '+2'],
-                correctAnswer: 0,
-                rationale: 'A proton has a relative charge of +1.',
-                topic: 'Atomic Structure',
-            },
-            {
-                stem: 'Which subatomic particle has a relative mass of approximately 1/1840?',
-                options: ['Proton', 'Neutron', 'Electron', 'Positron'],
-                correctAnswer: 2,
-                rationale: 'Electrons have a very small mass, approximately 1/1840 of a proton.',
-                topic: 'Atomic Structure',
-            },
-            {
-                stem: 'The atomic number of an element is the number of:',
-                options: ['Neutrons', 'Protons', 'Protons + Neutrons', 'Electrons in outer shell'],
-                correctAnswer: 1,
-                rationale: 'The atomic number (Z) equals the number of protons in the nucleus.',
-                topic: 'Atomic Structure',
-            },
-            {
-                stem: 'Isotopes of an element have the same number of:',
-                options: ['Neutrons', 'Protons', 'Mass number', 'Nucleons'],
-                correctAnswer: 1,
-                rationale: 'Isotopes have the same atomic number (protons) but different mass numbers.',
-                topic: 'Isotopes',
-            },
-            {
-                stem: 'What type of bonding involves the sharing of electrons?',
-                options: ['Ionic', 'Metallic', 'Covalent', 'Hydrogen'],
-                correctAnswer: 2,
-                rationale: 'Covalent bonding involves the sharing of electron pairs between atoms.',
-                topic: 'Chemical Bonding',
-            },
-            {
-                stem: 'In ionic bonding, electrons are:',
-                options: ['Shared equally', 'Shared unequally', 'Transferred', 'Delocalised'],
-                correctAnswer: 2,
-                rationale: 'Ionic bonding involves the transfer of electrons from metal to non-metal atoms.',
-                topic: 'Chemical Bonding',
-            },
-            {
-                stem: 'The maximum number of electrons in the second shell is:',
-                options: ['2', '8', '18', '32'],
-                correctAnswer: 1,
-                rationale: 'The second electron shell can hold a maximum of 8 electrons (2n², where n=2).',
-                topic: 'Electron Configuration',
-            },
-            {
-                stem: 'Which element has the electron configuration 2,8,1?',
-                options: ['Lithium', 'Sodium', 'Potassium', 'Magnesium'],
-                correctAnswer: 1,
-                rationale: 'Sodium (Na, Z=11) has 2 electrons in the first shell, 8 in the second, and 1 in the third.',
-                topic: 'Electron Configuration',
-            },
-            {
-                stem: 'A cation is formed when an atom:',
-                options: ['Gains electrons', 'Loses electrons', 'Shares electrons', 'Gains neutrons'],
-                correctAnswer: 1,
-                rationale: 'A cation (positive ion) is formed when an atom loses one or more electrons.',
-                topic: 'Ions',
-            },
-            {
-                stem: 'What is the formula of magnesium oxide?',
-                options: ['MgO', 'Mg₂O', 'MgO₂', 'Mg₂O₃'],
-                correctAnswer: 0,
-                rationale: 'Mg²⁺ combines with O²⁻ in a 1:1 ratio, giving the formula MgO.',
-                topic: 'Chemical Formulae',
-            },
-        ],
-    },
-    {
-        id: 2, year: 2024, subject: 'Chemistry', variant: 'Paper 2',
-        questions: 6, duration: '1h 15m', durationSeconds: 300, type: 'Theory',
-        questionBank: [],
-    },
-    {
-        id: 3, year: 2023, subject: 'Chemistry', variant: 'Paper 1',
-        questions: 10, duration: '1 hour', durationSeconds: 300, type: 'MCQ',
-        questionBank: [
-            {
-                stem: 'Which particle is negatively charged?',
-                options: ['Proton', 'Neutron', 'Electron', 'Alpha particle'],
-                correctAnswer: 2,
-                rationale: 'Electrons carry a negative charge of -1.',
-                topic: 'Atomic Structure',
-            },
-            {
-                stem: 'The mass number is the total number of:',
-                options: ['Protons', 'Electrons', 'Protons and neutrons', 'Protons and electrons'],
-                correctAnswer: 2,
-                rationale: 'Mass number (A) = protons + neutrons (nucleons in the nucleus).',
-                topic: 'Atomic Structure',
-            },
-            {
-                stem: 'Diamond is a form of carbon with:',
-                options: ['Ionic bonds', 'Metallic bonds', 'Covalent bonds', 'Van der Waals forces only'],
-                correctAnswer: 2,
-                rationale: 'Diamond has a giant covalent structure with strong covalent bonds between carbon atoms.',
-                topic: 'Chemical Bonding',
-            },
-            {
-                stem: 'What is the charge on a chloride ion?',
-                options: ['+1', '-1', '+2', '-2'],
-                correctAnswer: 1,
-                rationale: 'Chlorine gains one electron to form Cl⁻ with a charge of -1.',
-                topic: 'Ions',
-            },
-            {
-                stem: 'Group 1 metals react with water to form:',
-                options: ['An acid', 'A hydroxide and hydrogen', 'An oxide', 'A sulphate'],
-                correctAnswer: 1,
-                rationale: 'Group 1 metals react with water to produce a metal hydroxide and hydrogen gas.',
-                topic: 'Reactivity',
-            },
-        ],
-    },
-    {
-        id: 4, year: 2023, subject: 'Chemistry', variant: 'Paper 2',
-        questions: 6, duration: '1h 15m', durationSeconds: 300, type: 'Theory',
-        questionBank: [],
-    },
-    {
-        id: 5, year: 2022, subject: 'Chemistry', variant: 'Paper 1',
-        questions: 10, duration: '1 hour', durationSeconds: 300, type: 'MCQ',
-        questionBank: [],
-    },
-    {
-        id: 6, year: 2022, subject: 'Chemistry', variant: 'Paper 2',
-        questions: 6, duration: '1h 15m', durationSeconds: 300, type: 'Theory',
-        questionBank: [],
-    },
-];
-
-// Download status component
-function DownloadButton({ paper, type, label }) {
-    const [downloading, setDownloading] = useState(false);
+// Download button component
+function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) {
     const [status, setStatus] = useState(null);
 
     const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
-    const filename = generateFileName(paper, type);
+    const filename = isOLevel ? generateOLevelFileName(paper, type) : generateFileName(paper, type);
 
-    const handleDownload = async () => {
+    const handleDownload = () => {
         if (!url) return;
 
-        setDownloading(true);
-        setStatus(null);
-
-        const result = await downloadFile(url, filename);
-
-        setDownloading(false);
+        const result = downloadFile(url, filename);
 
         if (result.success) {
             setStatus('success');
@@ -224,73 +97,179 @@ function DownloadButton({ paper, type, label }) {
 
     return (
         <button
-            className={`btn btn-sm ${status === 'success' ? 'btn-success' : status === 'error' ? 'btn-ghost' : 'btn-outline'}`}
+            className={`btn btn-sm ${status === 'success' ? 'btn-success' : status === 'error' ? 'btn-ghost' : 'btn-primary'}`}
             onClick={handleDownload}
-            disabled={downloading || !url}
-            title={!url ? 'Coming soon' : `Download ${label}`}
+            disabled={!url}
+            title={!url ? 'Coming soon' : `${label} PDF`}
+            style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+            }}
         >
-            <Download size={14} />
-            {downloading ? 'Downloading...' : status === 'success' ? 'Downloaded!' : status === 'error' ? 'Failed' : label}
+            <Icon size={14} />
+            {status === 'success' ? 'Downloaded!' : status === 'error' ? 'Failed' : label}
         </button>
     );
 }
 
-// Past paper card component
-function PastPaperCard({ paper, onStartPractice }) {
+// View PDF button component
+function ViewPdfButton({ paper, type, label, onClick }) {
+    const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
+
+    return (
+        <button
+            className="btn btn-sm btn-outline"
+            onClick={() => onClick(url, label)}
+            disabled={!url}
+            title={!url ? 'Coming soon' : `View ${label}`}
+            style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+            }}
+        >
+            <Eye size={14} />
+            {label}
+        </button>
+    );
+}
+
+// PDF Viewer Modal
+function PdfViewerModal({ url, title, onClose }) {
+    if (!url) return null;
+
+    return (
+        <div className="pdf-modal-overlay" onClick={onClose}>
+            <div className="pdf-modal-content" onClick={(e) => e.stopPropagation()}>
+                <div className="pdf-modal-header">
+                    <h3>{title}</h3>
+                    <button className="btn btn-icon btn-ghost" onClick={onClose}>
+                        <X size={20} />
+                    </button>
+                </div>
+                <div className="pdf-modal-body">
+                    <iframe
+                        src={url}
+                        title={title}
+                        className="pdf-iframe"
+                    />
+                </div>
+                <div className="pdf-modal-footer">
+                    <DownloadButton
+                        paper={{ questionPaperUrl: url, year: '', month: '', unit: '' }}
+                        type="question"
+                        label="Download PDF"
+                        icon={Download}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// Past paper card component - grouped by year/month
+function ExamSessionCard({ year, month, papers, onViewPdf, isOLevel = false }) {
     const [expanded, setExpanded] = useState(false);
+    const [expandedPaperId, setExpandedPaperId] = useState(null);
+    const navigate = useNavigate();
 
     return (
         <div className="past-paper-card card">
-            <div className="past-paper-header" onClick={() => setExpanded(!expanded)}>
-                <div className="past-paper-main">
-                    <span className="past-paper-year">{paper.year}</span>
-                    <span className="past-paper-month">{paper.month}</span>
-                    <span className={`badge ${getPaperTypeBadge(paper.type)}`}>{paper.type}</span>
-                </div>
-                <div className="past-paper-info">
-                    <h4>{paper.unit} - {paper.paper}</h4>
-                    <p>{paper.unitName}</p>
-                    <p className="past-paper-meta">
-                        <Clock size={12} /> {paper.duration} · {paper.totalMarks} marks
-                    </p>
+            {/* Year/Month Main Header */}
+            <div className="past-paper-session-header" onClick={() => setExpanded(!expanded)}>
+                <div className="past-paper-session-main">
+                    <span className="past-paper-year">{year}</span>
+                    <span className="past-paper-month">{month}</span>
+                    <span className="past-paper-count">{papers.length} papers</span>
                 </div>
                 <div className="past-paper-expand">
                     {expanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                 </div>
             </div>
 
+            {/* Papers List (shown when expanded) */}
             {expanded && (
-                <div className="past-paper-details">
-                    <div className="past-paper-downloads">
-                        <DownloadButton paper={paper} type="question" label="Question Paper" />
-                        <DownloadButton paper={paper} type="marking" label="Marking Scheme" />
-                    </div>
+                <div className="past-paper-papers-list">
+                    {papers.map((paper) => (
+                        <div key={paper.id} className="past-paper-item">
+                            <div
+                                className={`past-paper-item-header ${expandedPaperId === paper.id ? 'expanded' : ''}`}
+                                onClick={() => setExpandedPaperId(expandedPaperId === paper.id ? null : paper.id)}
+                            >
+                                <div className="past-paper-item-info">
+                                    <div className="past-paper-unit">
+                                        <span className="unit-badge">{paper.unit}</span>
+                                        <span className={`badge ${getPaperTypeBadge(paper.type)}`}>{paper.type}</span>
+                                    </div>
+                                    <p className="past-paper-unit-name">{paper.unitName}</p>
+                                    <p className="past-paper-meta">
+                                        <Clock size={12} /> {paper.duration} · {paper.totalMarks} marks
+                                    </p>
+                                </div>
+                                <div className="past-paper-expand">
+                                    {expandedPaperId === paper.id ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                                </div>
+                            </div>
 
-                    <button
-                        className="btn btn-primary"
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            onStartPractice(paper);
-                        }}
-                    >
-                        <Play size={14} /> Practice Questions
-                    </button>
+                            {/* Paper Actions (shown when paper is expanded) */}
+                            {expandedPaperId === paper.id && (
+                                <div className="past-paper-item-actions">
+                                    <ViewPdfButton
+                                        paper={paper}
+                                        type="question"
+                                        label="View Question Paper"
+                                        onViewPdf={(url, label) => onViewPdf(url, `${year} ${month} ${paper.unit} - Question Paper`)}
+                                    />
+                                    <DownloadButton
+                                        paper={paper}
+                                        type="question"
+                                        label="Download QP"
+                                        icon={Download}
+                                        isOLevel={isOLevel}
+                                    />
+                                    <ViewPdfButton
+                                        paper={paper}
+                                        type="marking"
+                                        label="View Marking Scheme"
+                                        onViewPdf={(url, label) => onViewPdf(url, `${year} ${month} ${paper.unit} - Marking Scheme`)}
+                                    />
+                                    <DownloadButton
+                                        paper={paper}
+                                        type="marking"
+                                        label="Download MS"
+                                        icon={Download}
+                                        isOLevel={isOLevel}
+                                    />
+                                    {paper.questionPaperUrl && (
+                                        <button
+                                            className="btn btn-sm btn-primary"
+                                            onClick={() => navigate(`/annotate/${paper.id}`)}
+                                            style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
+                                            title="Open in annotation mode"
+                                        >
+                                            <PenTool size={14} />
+                                            Do it Live
+                                        </button>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    ))}
                 </div>
             )}
         </div>
     );
 }
 
-
-
 export default function PastPapersPage() {
     const [activeSubject, setActiveSubject] = useState('chemistry');
     const [filterYear, setFilterYear] = useState('all');
+    const [filterMonth, setFilterMonth] = useState('all');
     const [filterUnit, setFilterUnit] = useState('all');
-    const [viewMode, setViewMode] = useState('downloads'); // 'downloads' or 'practice'
-    const [activePaper, setActivePaper] = useState(null);
     const [attempts, setAttempts] = useState([]);
     const [showPerformance, setShowPerformance] = useState(false);
+    const [pdfViewer, setPdfViewer] = useState({ url: null, title: null });
 
     // Get active subject config
     const subjectConfig = subjects.find(s => s.id === activeSubject);
@@ -298,93 +277,76 @@ export default function PastPapersPage() {
     const subjectYears = subjectConfig?.years || [];
     const subjectUnits = subjectConfig?.units || [];
 
+    // Get available months based on selected year
+    const getAvailableMonths = () => {
+        const filteredByYear = filterYear !== 'all'
+            ? subjectPapers.filter(p => p.year === parseInt(filterYear))
+            : subjectPapers;
+        const months = [...new Set(filteredByYear.map(p => p.month))].sort((a, b) => {
+            const monthOrder = ['January', 'May', 'October'];
+            return monthOrder.indexOf(a) - monthOrder.indexOf(b);
+        });
+        return months;
+    };
+
+    const availableMonths = getAvailableMonths();
+
     // Reset filters when switching subjects
     const handleSubjectChange = (id) => {
         setActiveSubject(id);
         setFilterYear('all');
+        setFilterMonth('all');
         setFilterUnit('all');
+    };
+
+    // Reset month when year changes
+    const handleYearChange = (year) => {
+        setFilterYear(year);
+        setFilterMonth('all');
     };
 
     // Filter papers
     const filteredPapers = filterPapers(subjectPapers, {
         year: filterYear !== 'all' ? parseInt(filterYear) : null,
+        month: filterMonth !== 'all' ? filterMonth : null,
         unit: filterUnit !== 'all' ? filterUnit : null,
     });
 
     // Sort by date (newest first)
     const sortedPapers = sortPapersByDate(filteredPapers, false);
 
-    // Filter sample papers for practice mode
-    const filteredSamplePapers = samplePapers.filter(p => {
-        if (filterYear !== 'all' && p.year !== parseInt(filterYear)) return false;
-        return true;
-    });
-
-    const handleStart = (paper) => {
-        // Check if it's a real past paper (from chembase) or a sample
-        if (paper.questionBank && paper.questionBank.length === 0) {
-            alert('Questions for this paper are being prepared. Please download the question paper and try practice mode with sample questions.');
-            return;
+    // Group papers by year and month (exam session)
+    const groupedPapers = sortedPapers.reduce((groups, paper) => {
+        const key = `${paper.year}-${paper.month}`;
+        if (!groups[key]) {
+            groups[key] = {
+                year: paper.year,
+                month: paper.month,
+                papers: []
+            };
         }
-        setActivePaper(paper);
+        groups[key].papers.push(paper);
+        return groups;
+    }, {});
+
+    const groupedPapersArray = Object.values(groupedPapers);
+
+    const handleViewPdf = (url, title) => {
+        setPdfViewer({ url, title });
     };
 
-    const handleStartFromRealPaper = (paper) => {
-        // Find matching sample paper or use first one
-        const samplePaper = samplePapers.find(p =>
-            p.year === paper.year && p.subject === paper.subject && p.type === paper.type
-        ) || samplePapers[0];
-
-        if (samplePaper.questionBank.length === 0) {
-            alert('Sample questions not available for this paper yet.');
-            return;
-        }
-        setActivePaper(samplePaper);
+    const handleClosePdf = () => {
+        setPdfViewer({ url: null, title: null });
     };
 
-    const handleFinish = (result) => {
-        const topicScores = {};
-        const paper = activePaper;
-        paper.questionBank.forEach((q, i) => {
-            const topic = q.topic;
-            if (!topicScores[topic]) topicScores[topic] = { correct: 0, total: 0 };
-            topicScores[topic].total++;
-            if (result.answers[i] === q.correctAnswer) topicScores[topic].correct++;
-        });
-
-        const topicPercentages = {};
-        Object.entries(topicScores).forEach(([topic, { correct, total }]) => {
-            topicPercentages[topic] = Math.round((correct / total) * 100);
-        });
-
-        setAttempts(prev => [...prev, {
-            label: `${paper.year} P${paper.variant.slice(-1)}`,
-            percentage: result.percentage,
-            score: result.score,
-            total: result.total,
-            topicScores: topicPercentages,
-        }]);
-        setActivePaper(null);
-        setShowPerformance(true);
-    };
-
-    // Active exam
-    if (activePaper) {
+    // PDF Viewer Mode
+    if (pdfViewer.url) {
         return (
-            <div className="animate-fade-in" style={{ maxWidth: '900px' }}>
-                <button className="btn btn-ghost" onClick={() => setActivePaper(null)} style={{ marginBottom: 'var(--space-4)' }}>
-                    <ArrowLeft size={16} /> Quit Exam
-                </button>
-                <h2 style={{ marginBottom: 'var(--space-2)' }}>
-                    {activePaper.subject} — {activePaper.variant} ({activePaper.year})
-                </h2>
-                <p style={{ marginBottom: 'var(--space-4)', color: 'var(--color-text-tertiary)', fontSize: 'var(--font-size-sm)' }}>
-                    {activePaper.questionBank.length} questions · {activePaper.duration} time limit
-                </p>
-                <TimedExam
-                    paper={activePaper}
-                    questions={activePaper.questionBank}
-                    onFinish={handleFinish}
+            <div className="animate-fade-in" style={{ maxWidth: '100%' }}>
+                <PdfViewerModal
+                    url={pdfViewer.url}
+                    title={pdfViewer.title}
+                    onClose={handleClosePdf}
                 />
             </div>
         );
@@ -394,7 +356,7 @@ export default function PastPapersPage() {
         <div className="animate-fade-in" style={{ maxWidth: '1100px' }}>
             <h1 style={{ marginBottom: 'var(--space-2)' }}>Past Papers</h1>
             <p style={{ marginBottom: 'var(--space-6)' }}>
-                Download real exam papers or practice with sample questions — {subjectPapers.length} papers available
+                View and download real exam papers with marking schemes — {subjectPapers.length} papers available
             </p>
 
             {/* Subject Tabs */}
@@ -438,28 +400,12 @@ export default function PastPapersPage() {
                 })}
             </div>
 
-            {/* View Mode Toggle */}
-            <div className="view-mode-toggle" style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-4)' }}>
-                <button
-                    className={`btn ${viewMode === 'downloads' ? 'btn-primary' : 'btn-ghost'}`}
-                    onClick={() => setViewMode('downloads')}
-                >
-                    <Download size={16} /> Download Papers
-                </button>
-                <button
-                    className={`btn ${viewMode === 'practice' ? 'btn-primary' : 'btn-ghost'}`}
-                    onClick={() => setViewMode('practice')}
-                >
-                    <Play size={16} /> Practice Mode
-                </button>
-            </div>
-
             {/* Filters */}
             <div className="filter-bar" style={{ display: 'flex', gap: 'var(--space-3)', marginBottom: 'var(--space-5)', flexWrap: 'wrap' }}>
                 <select
                     className="input"
                     value={filterYear}
-                    onChange={e => setFilterYear(e.target.value)}
+                    onChange={e => handleYearChange(e.target.value)}
                     style={{ minWidth: '120px' }}
                 >
                     <option value="all">All Years</option>
@@ -468,96 +414,127 @@ export default function PastPapersPage() {
                     ))}
                 </select>
 
-                {viewMode === 'downloads' && (
-                    <select
-                        className="input"
-                        value={filterUnit}
-                        onChange={e => setFilterUnit(e.target.value)}
-                        style={{ minWidth: '200px' }}
-                    >
-                        <option value="all">All Units</option>
-                        {subjectUnits.map(unit => (
-                            <option key={unit.code} value={unit.code}>
-                                {unit.code} – {unit.name.length > 30 ? unit.name.substring(0, 30) + '…' : unit.name}
-                            </option>
-                        ))}
-                    </select>
-                )}
+                <select
+                    className="input"
+                    value={filterMonth}
+                    onChange={e => setFilterMonth(e.target.value)}
+                    style={{ minWidth: '140px' }}
+                    disabled={filterYear === 'all'}
+                >
+                    <option value="all">All Months</option>
+                    {availableMonths.map(month => (
+                        <option key={month} value={month}>{month}</option>
+                    ))}
+                </select>
+
+                <select
+                    className="input"
+                    value={filterUnit}
+                    onChange={e => setFilterUnit(e.target.value)}
+                    style={{ minWidth: '200px' }}
+                >
+                    <option value="all">All Units</option>
+                    {subjectUnits.map(unit => (
+                        <option key={unit.code} value={unit.code}>
+                            {unit.code} – {unit.name.length > 30 ? unit.name.substring(0, 30) + '…' : unit.name}
+                        </option>
+                    ))}
+                </select>
 
                 <button
                     className={`btn ${showPerformance ? 'btn-primary' : 'btn-ghost'}`}
                     onClick={() => setShowPerformance(!showPerformance)}
                 >
-                    <BarChart3 size={16} /> Analytics
+                    <FileText size={16} /> Analytics
                 </button>
             </div>
 
             {/* Performance Chart */}
             {showPerformance && <PerformanceChart attempts={attempts} />}
 
-            {/* Content based on view mode */}
-            {viewMode === 'downloads' ? (
-                <div className="past-papers-list">
-                    {sortedPapers.length > 0 ? (
-                        sortedPapers.map((paper) => (
-                            <PastPaperCard
-                                key={paper.id}
-                                paper={paper}
-                                onStartPractice={handleStartFromRealPaper}
-                            />
-                        ))
-                    ) : (
-                        <div className="empty-state">
-                            <div className="empty-state-icon">
-                                <FileQuestion size={36} />
-                            </div>
-                            <h3>No papers found</h3>
-                            <p>Try adjusting your filters</p>
+            {/* Past Papers List */}
+            <div className="past-papers-list">
+                {groupedPapersArray.length > 0 ? (
+                    groupedPapersArray.map((session) => (
+                        <ExamSessionCard
+                            key={`${session.year}-${session.month}`}
+                            year={session.year}
+                            month={session.month}
+                            papers={session.papers}
+                            onViewPdf={handleViewPdf}
+                            isOLevel={subjectConfig?.isOLevel || false}
+                        />
+                    ))
+                ) : (
+                    <div className="empty-state">
+                        <div className="empty-state-icon">
+                            <FileQuestion size={36} />
                         </div>
-                    )}
-                </div>
-            ) : (
-                <div className="paper-list">
-                    {filteredSamplePapers.map((paper, i) => (
-                        <div
-                            key={paper.id}
-                            className="paper-card card card-hover animate-fade-in"
-                            style={{ animationDelay: `${i * 0.05}s` }}
-                        >
-                            <div className="paper-info">
-                                <span className="paper-year">{paper.year}</span>
-                                <div className="paper-details">
-                                    <h4>{paper.subject} — {paper.variant}</h4>
-                                    <p>
-                                        <Clock size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /> {paper.duration} · {paper.questions} questions
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="paper-badges">
-                                <span className={`badge ${paper.type === 'MCQ' ? 'badge-primary' : 'badge-warning'}`}>
-                                    {paper.type}
-                                </span>
-                                <button
-                                    className="btn btn-primary btn-sm"
-                                    onClick={() => handleStart(paper)}
-                                >
-                                    <Play size={14} /> Start
-                                </button>
-                            </div>
-                        </div>
-                    ))}
+                        <h3>No papers found</h3>
+                        <p>Try adjusting your filters</p>
+                    </div>
+                )}
+            </div>
 
-                    {filteredSamplePapers.length === 0 && (
-                        <div className="empty-state">
-                            <div className="empty-state-icon">
-                                <FileQuestion size={36} />
-                            </div>
-                            <h3>No papers found</h3>
-                            <p>Try adjusting your filters</p>
-                        </div>
-                    )}
-                </div>
-            )}
+            {/* PDF Modal Styles */}
+            <style>{`
+                .pdf-modal-overlay {
+                    position: fixed;
+                    inset: 0;
+                    background: rgba(0, 0, 0, 0.85);
+                    -webkit-backdrop-filter: blur(4px);
+                    backdrop-filter: blur(4px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 3000;
+                    padding: var(--space-4);
+                }
+
+                .pdf-modal-content {
+                    width: 100%;
+                    max-width: 1000px;
+                    height: 90vh;
+                    background: var(--color-surface);
+                    border-radius: var(--radius-xl);
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    box-shadow: var(--shadow-2xl);
+                }
+
+                .pdf-modal-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: var(--space-4) var(--space-5);
+                    border-bottom: 1px solid var(--color-border);
+                }
+
+                .pdf-modal-header h3 {
+                    margin: 0;
+                    font-size: var(--font-size-base);
+                    font-weight: var(--font-weight-semibold);
+                }
+
+                .pdf-modal-body {
+                    flex: 1;
+                    overflow: hidden;
+                }
+
+                .pdf-iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+
+                .pdf-modal-footer {
+                    display: flex;
+                    justify-content: center;
+                    padding: var(--space-3) var(--space-5);
+                    border-top: 1px solid var(--color-border);
+                }
+            `}</style>
         </div>
     );
 }
