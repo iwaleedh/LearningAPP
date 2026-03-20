@@ -336,6 +336,20 @@ export const note_chemistry_1_2_6 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 's and p Orbitals',
+      subtitle: 'WCH11 — Chemistry Topic 2.6',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '🔮', title: 'What is an Orbital?', html: 'A region of space where there is a <strong>≥95% probability</strong> of finding an electron.<br/>Each orbital holds up to <strong>2 electrons</strong> with opposite spins.' },
+        { delay: 1, colSpan: 1, icon: '⭕', title: 's Orbitals', html: '<strong>Spherical</strong> shape — one per s subshell.<br/>1s, 2s, 3s… increasing in size and energy.<br/>Holds a maximum of <strong>2 electrons.</strong>' },
+        { delay: 2, colSpan: 1, icon: '💺', title: 'p Orbitals', html: '<strong>Dumbbell (figure-of-8)</strong> shape.<br/>3 orientations: p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub> at 90° to each other.<br/>3 orbitals × 2e⁻ = <strong>max 6e⁻</strong> per p subshell.' },
+        { delay: 3, colSpan: 1, icon: '📋', title: 'Subshell Capacities', html: 's: 1 orbital → 2e⁻<br/>p: 3 orbitals → 6e⁻<br/>d: 5 orbitals → 10e⁻<br/>f: 7 orbitals → 14e⁻' },
+        { delay: 4, colSpan: 2, icon: '📐', title: 'Key Rules', html: "<strong>Pauli Exclusion:</strong> max 2e⁻ per orbital, opposite spins (↑↓); no two electrons with same quantum numbers.<br/><strong>Hund's Rule:</strong> fill each orbital singly before pairing (↑_ ↑_ before ↑↓) — minimises repulsion.<br/>e.g. C (2p²): two 2p orbitals each singly filled." },
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

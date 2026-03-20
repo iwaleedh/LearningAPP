@@ -1,261 +1,157 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 3 · Subtopic 7
  * "Giant covalent substances (macromolecular structures)"
- * Source: Pearson Edexcel IAL Chemistry — Section 3C.1
+ * Source: Pearson Edexcel IAL Chemistry — Section 3D.2
  */
 export const note_chemistry_1_3_7 = {
   blocks: [
     {
-      id: 'objective',
+      id: 'obj',
       type: 'objective',
-      data: { text: 'Describe the bonding and structure of giant covalent substances (diamond, graphite, silicon dioxide). Explain their properties in terms of their structure.' },
+      data: { text: 'Describe the giant covalent (macromolecular) structures of diamond, graphite and silicon dioxide. Explain their physical properties in terms of strong covalent bonds throughout the lattice. Identify graphite as a conductor.' },
       terms: []
     },
     {
-      id: 'h-intro',
+      id: 'h1',
       type: 'heading',
-      data: { text: 'Giant Covalent Structures', level: 2 },
+      data: { text: 'Diamond — Giant Covalent Network', level: 2 },
       terms: []
     },
     {
-      id: 'p-intro',
-      type: 'paragraph',
-      data: { text: 'Some covalent substances do not form discrete molecules. Instead, all the atoms are joined by covalent bonds in a continuous three-dimensional network, called a <strong>giant covalent structure</strong> (or macromolecular structure). Because there are millions of strong covalent bonds throughout the structure, these materials are very hard and have extremely high melting points.' },
-      terms: ['Giant covalent structure', 'Macromolecular']
-    },
-    {
-      id: 'table-examples',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Key giant covalent structures — comparison',
-        headers: ['Substance', 'Formula', 'Structure', 'Bonding at each atom', 'Conducts electricity?', 'Key properties'],
-        rows: [
-          ['<strong>Diamond</strong>', 'C', '3D network of C atoms each bonded to 4 others in tetrahedral arrangement.', '4 sp³ covalent bonds to C', 'No (no free electrons)', 'Extremely hard; very high mp (3500°C); does not conduct.'],
-          ['<strong>Graphite</strong>', 'C', 'Layers of hexagonal rings. Each C bonded to 3 others in the same layer. Layers are held by weak London forces.', '3 sp² bonds in layer + 1 delocalised π e⁻ above/below layer', 'Yes (delocalised electrons between layers)', 'Soft and slippery (layers slide); conducts electricity; used as lubricant and electrode.'],
-          ['<strong>Silicon dioxide (SiO₂)</strong>', 'SiO₂', '3D network. Each Si bonded to 4 O atoms; each O bonded to 2 Si atoms.', '4 covalent bonds to O', 'No', 'Very hard; very high mp (1700°C); does not conduct.']
-        ]
-      },
-      terms: ['Diamond', 'Graphite', 'Silicon dioxide']
-    },
-    {
-      id: 'svg-diamond-graphite',
+      id: 'svg-diamond',
       type: 'svg',
       data: {
-        caption: 'Figure: Diamond (left) — tetrahedral 3D network; Graphite (right) — hexagonal layers with delocalised electrons',
-        svg: `<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+        caption: 'Diamond structure: each carbon forms 4 covalent bonds to neighbouring C atoms in a tetrahedral arrangement (bond angle 109.5°). Forms a 3D lattice — not a repeating molecular unit. Compare: graphite (right) with hexagonal layers held by van der Waals forces.',
+        svg: `<svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <!-- Diamond panel -->
+  <rect x="5" y="5" width="320" height="270" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="165" y="24" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="13">Diamond</text>
+  <text x="165" y="39" text-anchor="middle" fill="#64748b" font-size="10">Each C: 4 bonds, tetrahedral (109.5°)</text>
 
-  <!-- DIAMOND SECTION -->
-  <text x="170" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">Diamond</text>
-  <text x="170" y="32" text-anchor="middle" fill="#64748b" font-size="10">Each C bonded to 4 others — tetrahedral, 3D</text>
+  <!-- Diamond tetrahedral unit: central C + 4 neighbours -->
+  <circle cx="165" cy="135" r="16" fill="#1e40af" stroke="#1e3a8a" stroke-width="2"/>
+  <text x="165" y="139" text-anchor="middle" fill="white" font-size="10" font-weight="bold">C</text>
+  <!-- 4 bond lines to corner C atoms -->
+  <line x1="105" y1="90" x2="150" y2="122" stroke="#374151" stroke-width="2.5"/>
+  <line x1="105" y1="90" x2="150" y2="122" stroke="#374151" stroke-width="2.5"/>
+  <line x1="225" y1="90" x2="180" y2="122" stroke="#374151" stroke-width="2.5"/>
+  <line x1="115" y1="190" x2="150" y2="148" stroke="#374151" stroke-width="2.5"/>
+  <line x1="215" y1="190" x2="180" y2="148" stroke="#374151" stroke-width="2.5"/>
+  <!-- A 5th C above (3D illusion) -->
+  <line x1="165" y1="118" x2="165" y2="68" stroke="#374151" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <!-- 4 corner C atoms -->
+  <circle cx="105" cy="82" r="14" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="105" y="86" text-anchor="middle" fill="white" font-size="10">C</text>
+  <circle cx="225" cy="82" r="14" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="225" y="86" text-anchor="middle" fill="white" font-size="10">C</text>
+  <circle cx="105" cy="196" r="14" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="105" y="200" text-anchor="middle" fill="white" font-size="10">C</text>
+  <circle cx="225" cy="196" r="14" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="225" y="200" text-anchor="middle" fill="white" font-size="10">C</text>
+  <circle cx="165" cy="58" r="14" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="165" y="62" text-anchor="middle" fill="white" font-size="10">C</text>
+  <!-- Bond angle label -->
+  <path d="M 155 120 A 20 20 0 0 1 152 107" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="128" y="112" fill="#dc2626" font-size="9">109.5°</text>
 
-  <!-- Central C atom -->
-  <circle cx="170" cy="130" r="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
-  <text x="170" y="135" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">C</text>
+  <!-- Diamond properties -->
+  <rect x="15" y="218" width="300" height="50" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="165" y="237" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Properties</text>
+  <text x="25" y="253" fill="#374151" font-size="10">• Hardest natural substance (all 4 bonds must break to deform)</text>
+  <text x="25" y="266" fill="#374151" font-size="10">• Very high m.p. ~3550°C  •  Non-conductor (no free e⁻ or ions)</text>
 
-  <!-- 4 bonded C atoms (tetrahedral projection) -->
-  <!-- top -->
-  <line x1="170" y1="114" x2="170" y2="74" stroke="#475569" stroke-width="2.5"/>
-  <circle cx="170" cy="62" r="14" fill="#334155" stroke="#475569" stroke-width="1.5"/>
-  <text x="170" y="67" text-anchor="middle" fill="#1e293b" font-size="10">C</text>
+  <!-- Graphite panel -->
+  <rect x="342" y="5" width="333" height="270" rx="10" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="508" y="24" text-anchor="middle" fill="#7c3aed" font-weight="bold" font-size="13">Graphite</text>
+  <text x="508" y="39" text-anchor="middle" fill="#64748b" font-size="10">Each C: 3 bonds, hexagonal layers (120°)</text>
 
-  <!-- bottom-left -->
-  <line x1="157" y1="139" x2="100" y2="180" stroke="#475569" stroke-width="2.5"/>
-  <circle cx="88" cy="188" r="14" fill="#334155" stroke="#475569" stroke-width="1.5"/>
-  <text x="88" y="193" text-anchor="middle" fill="#1e293b" font-size="10">C</text>
+  <!-- Hexagonal layer 1: 6-membered ring -->
+  <!-- Centre ~(475,130), radius ~45 -->
+  <!-- Vertices of hexagon: angle 0,60,120,180,240,300 -->
+  <!-- Points: (520,130),(497.5,86.95),(452.5,86.95),(430,130),(452.5,173),(497.5,173) -->
+  <polygon points="520,130 497,88 453,88 430,130 453,172 497,172" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+  <!-- C atoms at vertices -->
+  <circle cx="520" cy="130" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="520" cy="134" text-anchor="middle" fill="white" font-size="9">C</text>
+  <circle cx="497" cy="88" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="497" y="92" text-anchor="middle" fill="white" font-size="9">C</text>
+  <circle cx="453" cy="88" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="453" y="92" text-anchor="middle" fill="white" font-size="9">C</text>
+  <circle cx="430" cy="130" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="430" y="134" text-anchor="middle" fill="white" font-size="9">C</text>
+  <circle cx="453" cy="172" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="453" y="176" text-anchor="middle" fill="white" font-size="9">C</text>
+  <circle cx="497" cy="172" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="497" y="176" text-anchor="middle" fill="white" font-size="9">C</text>
 
-  <!-- bottom-right -->
-  <line x1="183" y1="139" x2="240" y2="180" stroke="#475569" stroke-width="2.5"/>
-  <circle cx="252" cy="188" r="14" fill="#334155" stroke="#475569" stroke-width="1.5"/>
-  <text x="252" y="193" text-anchor="middle" fill="#1e293b" font-size="10">C</text>
+  <!-- Delocalised e- shown as orange dots -->
+  <circle cx="475" cy="118" r="4" fill="#f97316"/>
+  <circle cx="470" cy="134" r="4" fill="#f97316"/>
+  <circle cx="480" cy="148" r="4" fill="#f97316"/>
+  <text x="540" y="130" fill="#f97316" font-size="9.5">π e⁻</text>
+  <text x="540" y="143" fill="#f97316" font-size="9.5">(delocalised)</text>
 
-  <!-- back (dashed) -->
-  <line x1="170" y1="130" x2="170" y2="200" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,4"/>
-  <circle cx="170" cy="212" r="14" fill="#475569" stroke="#64748b" stroke-width="1.5"/>
-  <text x="170" y="217" text-anchor="middle" fill="#1e293b" font-size="10">C</text>
+  <!-- Layer spacing arrow -->
+  <line x1="355" y1="130" x2="355" y2="195" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="358" y="165" fill="#64748b" font-size="9">335 pm</text>
+  <text x="358" y="178" fill="#64748b" font-size="9">weak vdW</text>
 
-  <!-- Labels for diamond -->
-  <text x="170" y="248" text-anchor="middle" fill="#1e40af" font-size="10">Bond angle = 109.5° (tetrahedral)</text>
-  <text x="170" y="262" text-anchor="middle" fill="#64748b" font-size="10">No free electrons → non-conductor</text>
-  <text x="170" y="275" text-anchor="middle" fill="#64748b" font-size="10">All bonds strong → hardest natural material</text>
-
-  <!-- DIVIDER -->
-  <line x1="350" y1="20" x2="350" y2="270" stroke="#e2e8f0" stroke-width="1.5"/>
-
-  <!-- GRAPHITE SECTION -->
-  <text x="525" y="18" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="13">Graphite</text>
-  <text x="525" y="32" text-anchor="middle" fill="#64748b" font-size="10">Each C bonded to 3 others — hexagonal layers</text>
-
-  <!-- Hexagonal layer 1 (lower, slightly offset) -->
-  <g opacity="0.5">
-    <polygon points="440,170 460,150 500,150 520,170 500,190 460,190" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
-    <line x1="440" y1="170" x2="420" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
-    <line x1="520" y1="170" x2="540" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
-    <text x="480" y="174" text-anchor="middle" fill="#64748b" font-size="9">layer 2</text>
-  </g>
-
-  <!-- Dashed lines between layers -->
-  <line x1="445" y1="155" x2="455" y2="120" stroke="#d1fae5" stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="480" y1="148" x2="480" y2="113" stroke="#d1fae5" stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="515" y1="155" x2="505" y2="120" stroke="#d1fae5" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="480" y="138" text-anchor="middle" fill="#059669" font-size="9">weak London</text>
-  <text x="480" y="149" text-anchor="middle" fill="#059669" font-size="9">forces between layers</text>
-
-  <!-- Hexagonal layer 2 (upper, main) -->
-  <polygon points="450,110 470,90 510,90 530,110 510,130 470,130" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
-  <line x1="450" y1="110" x2="425" y2="110" stroke="#16a34a" stroke-width="2"/>
-  <line x1="530" y1="110" x2="555" y2="110" stroke="#16a34a" stroke-width="2"/>
-
-  <!-- C atoms on upper hexagon -->
-  <circle cx="450" cy="110" r="9" fill="#166534" stroke="#15803d" stroke-width="1.5"/>
-  <text x="450" y="114" text-anchor="middle" fill="#1e293b" font-size="8">C</text>
-  <circle cx="470" cy="90" r="9" fill="#166534" stroke="#15803d" stroke-width="1.5"/>
-  <text x="470" y="94" text-anchor="middle" fill="#1e293b" font-size="8">C</text>
-  <circle cx="510" cy="90" r="9" fill="#166534" stroke="#15803d" stroke-width="1.5"/>
-  <text x="510" y="94" text-anchor="middle" fill="#1e293b" font-size="8">C</text>
-  <circle cx="530" cy="110" r="9" fill="#166534" stroke="#15803d" stroke-width="1.5"/>
-  <text x="530" y="114" text-anchor="middle" fill="#1e293b" font-size="8">C</text>
-  <circle cx="510" cy="130" r="9" fill="#166534" stroke="#15803d" stroke-width="1.5"/>
-  <text x="510" y="134" text-anchor="middle" fill="#1e293b" font-size="8">C</text>
-  <circle cx="470" cy="130" r="9" fill="#166534" stroke="#15803d" stroke-width="1.5"/>
-  <text x="470" y="134" text-anchor="middle" fill="#1e293b" font-size="8">C</text>
-
-  <!-- Delocalised electron cloud label -->
-  <ellipse cx="490" cy="78" rx="30" ry="8" fill="#0a3020" stroke="#16a34a" stroke-width="1" opacity="0.7"/>
-  <text x="490" y="82" text-anchor="middle" fill="#166534" font-size="9">π e⁻ cloud</text>
-  <line x1="490" y1="70" x2="490" y2="87" stroke="#16a34a" stroke-width="1" stroke-dasharray="2,2"/>
-
-  <!-- Labels for graphite -->
-  <text x="525" y="220" text-anchor="middle" fill="#15803d" font-size="10">Bond angle = 120° (trigonal planar)</text>
-  <text x="525" y="234" text-anchor="middle" fill="#64748b" font-size="10">1 delocalised e⁻ per C → conducts between layers</text>
-  <text x="525" y="248" text-anchor="middle" fill="#64748b" font-size="10">Layers slide → soft, lubricant</text>
+  <!-- Graphite properties -->
+  <rect x="352" y="204" width="313" height="64" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+  <text x="508" y="221" text-anchor="middle" fill="#4c1d95" font-weight="bold" font-size="11">Properties</text>
+  <text x="360" y="237" fill="#374151" font-size="10">• High m.p. ~3600°C (strong cov. bonds in layers)</text>
+  <text x="360" y="252" fill="#374151" font-size="10">• Electrical conductor (delocalised π e⁻ move between layers)</text>
+  <text x="360" y="265" fill="#374151" font-size="10">• Slippery/lubricant (layers slide over weak vdW forces)</text>
 </svg>`
       },
-      terms: []
+      terms: ['Giant covalent structure', 'Diamond', 'Graphite', 'Delocalised electrons']
     },
     {
-      id: 'callout-graphite',
+      id: 'key-sio2',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Why graphite is unusual — and conducts electricity',
-        text: 'Each carbon in graphite forms only 3 covalent bonds (to 3 neighbouring C atoms in the same layer). This leaves <strong>one delocalised electron per carbon</strong>, which can move freely within the sheet. This makes graphite a good electrical conductor — the only non-metal to do so under normal conditions.<br/><br/>The layers are held together by weak <strong>London (van der Waals) forces</strong>. The layer spacing is about <strong>2.5× the distance between atoms within a layer</strong>, showing that the interlayer forces are much weaker than the covalent bonds within the layer.<br/><br/>This allows layers to slide easily over one another, making graphite soft and a good lubricant (used in pencils and as a dry lubricant for locks).'
+        title: 'Silicon Dioxide (SiO₂) — Third Giant Covalent',
+        text: 'Structure: each Si forms <strong>4 covalent bonds</strong> to O, and each O bridges between 2 Si atoms. Forms a 3D tetrahedral network like diamond but with Si–O bonds.<br/><br/>• Formula SiO₂: empirical formula (not discrete molecules)<br/>• Very high m.p. ~1700°C (many strong Si–O bonds, ~466 kJ mol⁻¹)<br/>• Hard but brittle<br/>• Non-conductor (no free electrons or ions)'
       },
-      terms: []
+      terms: ['Silicon dioxide', 'Empirical formula']
     },
     {
-      id: 'h-sio2',
-      type: 'heading',
-      data: { text: 'Silicon Dioxide (SiO₂) in Detail', level: 2 },
-      terms: []
-    },
-    {
-      id: 'callout-sio2-structure',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'SiO₂ Structure',
-        text: 'Silicon dioxide has a giant covalent structure based on the diamond structure of silicon — but with an oxygen atom bridging each pair of silicon atoms. This gives:<br/>• Each Si atom bonded to <strong>4 O atoms</strong> (tetrahedral, like diamond)<br/>• Each O atom bonded to <strong>2 Si atoms</strong> (bridging oxygen)<br/>• Ratio of Si:O = 1:2, matching the formula SiO₂<br/><br/>There are three different crystal forms of SiO₂ (e.g. quartz, cristobalite, tridymite). The simplest to draw is based directly on the diamond structure with bridging oxygens.'
-      },
-      terms: ['Silicon dioxide', 'Bridging oxygen']
-    },
-    {
-      id: 'svg-sio2',
-      type: 'svg',
-      data: {
-        caption: 'Figure: SiO₂ giant covalent structure — each Si (blue) bonds to 4 O atoms (red); each O bridges two Si atoms. The overall 3D network is similar to diamond but with oxygen bridging between Si atoms.',
-        svg: `<svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
-  <text x="250" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">Silicon Dioxide (SiO₂) — Giant Covalent Structure</text>
-  <text x="250" y="32" text-anchor="middle" fill="#64748b" font-size="10">Each Si bonded to 4 O atoms; each O bridges 2 Si atoms</text>
-
-  <!-- Central Si atom -->
-  <circle cx="250" cy="130" r="18" fill="#1e3a8a" stroke="#2563eb" stroke-width="2.5"/>
-  <text x="250" y="135" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Si</text>
-
-  <!-- 4 O atoms at tetrahedral positions (projected 2D) -->
-  <!-- top O -->
-  <line x1="250" y1="112" x2="250" y2="78" stroke="#475569" stroke-width="2.5"/>
-  <circle cx="250" cy="66" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
-  <text x="250" y="71" text-anchor="middle" fill="#991b1b" font-size="9" font-weight="bold">O</text>
-
-  <!-- bottom-left O -->
-  <line x1="237" y1="141" x2="186" y2="175" stroke="#475569" stroke-width="2.5"/>
-  <circle cx="178" cy="183" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
-  <text x="178" y="188" text-anchor="middle" fill="#991b1b" font-size="9" font-weight="bold">O</text>
-
-  <!-- bottom-right O -->
-  <line x1="263" y1="141" x2="314" y2="175" stroke="#475569" stroke-width="2.5"/>
-  <circle cx="322" cy="183" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
-  <text x="322" y="188" text-anchor="middle" fill="#991b1b" font-size="9" font-weight="bold">O</text>
-
-  <!-- back O (dashed) -->
-  <line x1="250" y1="130" x2="250" y2="195" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,4"/>
-  <circle cx="250" cy="207" r="14" fill="#3d1212" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
-  <text x="250" y="212" text-anchor="middle" fill="#991b1b" font-size="9">O</text>
-
-  <!-- Bridging Si atoms on top O -->
-  <line x1="250" y1="52" x2="250" y2="30" stroke="#475569" stroke-width="2"/>
-  <circle cx="250" cy="22" r="11" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="250" y="26" text-anchor="middle" fill="#1e40af" font-size="8">Si</text>
-
-  <!-- Bridging Si atoms on left O -->
-  <line x1="164" y1="183" x2="130" y2="190" stroke="#475569" stroke-width="2"/>
-  <circle cx="120" cy="193" r="11" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="120" y="197" text-anchor="middle" fill="#1e40af" font-size="8">Si</text>
-
-  <!-- Bridging Si atoms on right O -->
-  <line x1="336" y1="183" x2="370" y2="190" stroke="#475569" stroke-width="2"/>
-  <circle cx="380" cy="193" r="11" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="380" y="197" text-anchor="middle" fill="#1e40af" font-size="8">Si</text>
-
-  <!-- Legend -->
-  <circle cx="40" cy="230" r="10" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="55" y="234" fill="#1e40af" font-size="10">Si (silicon)</text>
-  <circle cx="160" cy="230" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="175" y="234" fill="#991b1b" font-size="10">O (oxygen, bridging)</text>
-  <text x="330" y="234" fill="#64748b" font-size="9" font-style="italic">...extends in 3D — giant structure</text>
-</svg>`
-      },
-      terms: []
-    },
-    {
-      id: 'table-sio2-props',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Properties of SiO₂ and their structural explanation',
-        headers: ['Property', 'Value/Observation', 'Structural explanation'],
-        rows: [
-          ['Melting point', '~1700°C (varies by crystal form)', 'Millions of strong Si–O covalent bonds throughout the 3D network must all be broken — requires enormous energy.'],
-          ['Hardness', 'Very hard', 'Strong 3D covalent bonding in all directions resists deformation.'],
-          ['Electrical conductivity', 'None (insulator)', 'No delocalised electrons or free ions. All electrons are held tightly in Si–O covalent bonds.'],
-          ['Solubility', 'Insoluble in water and organic solvents', 'No intermolecular force between solvent and Si or O can exceed the strength of the covalent bonds in the giant structure.']
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'callout-compare-giant',
+      id: 'tip-graphite',
       type: 'callout',
       data: {
         style: 'tip',
-        title: 'Exam Tip: Comparing Diamond, Graphite and SiO₂',
-        text: '<strong>Diamond vs Graphite anomaly:</strong> Both are giant covalent forms of carbon, but graphite conducts electricity and is soft while diamond does not conduct and is extremely hard.<br/>→ This is because graphite has <em>delocalised electrons</em> (1 per C) that move within the layers, and its layers can slide (held only by weak London forces).<br/>→ Diamond has NO delocalised electrons at all, and is bonded in all 3D directions equally → hardest natural material.<br/><br/><strong>SiO₂ vs diamond:</strong> Both are 3D giant covalent networks, both non-conductors, both very hard and high-melting. Main difference: SiO₂ has oxygen bridges (Si–O–Si) while diamond has direct C–C bonds.'
+        title: 'Why Graphite Conducts — and Diamond Does Not',
+        text: 'In graphite, each C forms only <strong>3 σ bonds</strong> within the layer. The 4th valence electron enters a delocalised π system above and below each hexagonal layer → free to move → electrical conductor.<br/><br/>In diamond, each C forms <strong>4 σ bonds</strong> → all valence electrons are localised in bonds → no free electrons → non-conductor.<br/><br/>Graphite is also a lubricant because the weak van der Waals forces between layers allow them to <em>slide</em> easily.'
       },
-      terms: []
+      terms: ['Delocalised electrons', 'Sigma bond', 'Pi bond']
+    }
+  ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Giant Covalent Structures',
+      subtitle: 'WCH11 — Chemistry Topic 3.7',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '💎', title: 'Diamond', html: 'Each C bonded to <strong>4 C atoms</strong> (tetrahedral, 109.5°).<br/>Giant 3D covalent lattice.<br/><strong>Hardest natural substance</strong> — mp ≈3550°C.<br/>Non-conductor (no free electrons).' },
+        { delay: 1, colSpan: 1, icon: '✏️', title: 'Graphite', html: 'Each C bonded to <strong>3 C atoms</strong> (trigonal planar, 120°) in hexagonal layers.<br/>4th electron <strong>delocalised</strong> between layers → good electrical conductor.<br/>Layers held by weak van der Waals forces → slippery/lubricant.' },
+        { delay: 2, colSpan: 1, icon: '🏖️', title: 'Silicon Dioxide (SiO₂)', html: 'Each Si bonded to <strong>4 O atoms</strong> in giant tetrahedral lattice.<br/>mp ≈1650°C — very high.<br/>Hard, brittle, non-conductor. Found in quartz/sand.' },
+        { delay: 3, colSpan: 2, icon: '📊', title: 'vs Simple Molecules', html: '<strong>Giant covalent:</strong> very high mp/bp, hard, non-conductor (except graphite), insoluble.<br/><strong>Simple molecular:</strong> low mp/bp, soft, always non-conductor, solubility varies.<br/><em>Key:</em> giant structures require breaking many strong covalent bonds to melt.' },
+      ]
     }
   ],
   recall: {
     enabled: true,
+    summaryText: 'Diamond: each C with 4 cov. bonds, tetrahedral (109.5°), hardest substance, non-conductor, very high m.p. Graphite: each C with 3 cov. bonds (120°), layered hexagons, delocalised π e⁻ → conductor, layers slide → lubricant. SiO₂: 3D network Si–O bonds, empirical formula, high m.p. All giant covalent structures: high m.p., non-conductors (except graphite).',
     cues: [
-      { id: 'c1', blockId: 'p-intro', prompt: 'What feature of giant covalent structures makes them have very high melting points?' },
-      { id: 'c2', blockId: 'table-examples', prompt: 'How many covalent bonds does each carbon atom form in (a) diamond and (b) graphite?' },
-      { id: 'c3', blockId: 'callout-graphite', prompt: 'Explain why graphite can conduct electricity but diamond cannot.' },
-      { id: 'c4', blockId: 'callout-graphite', prompt: 'Why is graphite soft and slippery, while diamond is extremely hard?' },
-      { id: 'c5', blockId: 'callout-sio2-structure', prompt: 'Describe the bonding arrangement in SiO₂. How many bonds does each Si atom form? How many does each O atom form?' },
-      { id: 'c6', blockId: 'table-sio2-props', prompt: 'Explain why SiO₂ does not conduct electricity and has a very high melting point.' }
+      { id: 'c1', blockId: 'svg-diamond', prompt: 'Describe the bonding and structure of diamond. Why is it the hardest natural substance?' },
+      { id: 'c2', blockId: 'svg-diamond', prompt: 'Why does graphite have a much lower density and can act as a lubricant, unlike diamond?' },
+      { id: 'c3', blockId: 'tip-graphite', prompt: 'Explain precisely why graphite conducts electricity but diamond does not. Reference the number of bonds each carbon forms.' },
+      { id: 'c4', blockId: 'key-sio2', prompt: 'Describe the structure of SiO₂. Why does it have a much higher melting point than CO₂, despite both containing only C or Si with oxygen?' },
+      { id: 'c5', blockId: 'svg-diamond', prompt: 'State two physical properties shared by diamond, graphite and SiO₂, and one property where graphite is unique.' }
     ],
-    summaryText: 'Giant covalent = millions of covalent bonds throughout 3D structure → very hard, very high mp. Diamond: each C bonded to 4 others, no free e⁻, does not conduct, hardest natural material. Graphite: each C bonded to 3, 1 delocalised e⁻ per C → conducts within layers; layer spacing ~2.5× in-layer distance → layers slide (London forces between them). SiO₂: diamond-like structure with O bridging each pair of Si atoms (Si:O = 1:2); very hard, ~1700°C mp, no conduction. All three are insoluble in water/organic solvents.',
-    ready: false
+    ready: true
   },
-  evidence: []
+  evidence: [],
+  mentions: []
 };
-export default note_chemistry_1_3_7;

@@ -308,6 +308,19 @@ export const note_chemistry_1_1_5 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Empirical & Molecular Formulae',
+      subtitle: 'Chemistry Topic 1.5',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '🔍', title: 'Empirical Formula', html: 'The simplest whole-number ratio of atoms of each element in a compound.' },
+        { delay: 1, colSpan: 1, icon: '📦', title: 'Molecular Formula', html: 'The actual number of atoms of each element in a molecule.' },
+        { delay: 2, colSpan: 1, icon: '🧮', title: 'Finding Empirical', html: '<ol><li>Mass (or %) of each element</li><li>Divide by Aᵣ to find moles</li><li>Divide by smallest mole value = Ratio</li></ol>' },
+        { delay: 3, colSpan: 3, icon: '🔬', title: 'Empirical to Molecular', html: 'You need the molecular molar mass (Mᵣ).<br/>1. Calculate Mᵣ of the empirical formula.<br/>2. Multiplier = Actual Mᵣ ÷ Empirical Mᵣ<br/>3. Multiply empirical formula numbers by the multiplier.' }
+      ]
+    }
+  ],
   recall: {
       enabled: true,
       cues: [

@@ -1,216 +1,67 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 8
+ * "Structural isomerism — types and systematic drawing"
+ */
 export const note_chemistry_1_4_8 = {
-  blocks: [{
-    id: 'obj',
-    type: 'objective',
-    data: {
-      text: 'Define structural isomerism; draw and name all structural isomers for a given molecular formula up to C₆.'
-    }
-  }, {
-    id: 'h-intro',
-    type: 'heading',
-    data: {
-      text: 'What is Structural Isomerism?',
-      level: 2
-    }
-  }, {
-    id: 'callout-key-iso',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: 'Structural Isomers — Definition',
-      text: 'Structural isomers (also called constitutional isomers) are compounds that have the same molecular formula but different structural formulae — i.e. the atoms are connected in a different order or arrangement.'
-    }
-  }, {
-    id: 'p-intro',
-    type: "list",
-    data: {
-      style: "unordered",
-      items: ["Because structural isomers have different connectivity, they have different physical properties (boiling point, melting point, density) and often different chemical properties too."]
-    }
-  }, {
-    id: 'h-types',
-    type: 'heading',
-    data: {
-      text: 'Types of Structural Isomerism',
-      level: 2
-    }
-  }, {
-    id: 'table-types',
-    type: 'comparisonTable',
-    data: {
-      caption: 'Types of structural isomerism',
-      headers: ['Type', 'Description', 'Example (C₄H₁₀)'],
-      rows: [['Chain isomerism', 'Different arrangement of the carbon skeleton (straight vs branched chain)', 'Butane vs 2-methylpropane'], ['Position isomerism', 'Same carbon skeleton and functional group, but functional group on a different carbon', 'Butan-1-ol vs butan-2-ol'], ['Functional group isomerism', 'Same molecular formula but different functional groups', 'C₂H₆O: ethanol (alcohol) vs methoxymethane (ether)']]
-    }
-  }, {
-    id: 'h-chain',
-    type: 'heading',
-    data: {
-      text: 'Chain Isomerism — Worked Examples',
-      level: 2
-    }
-  }, {
-    id: 'callout-we1',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'C₄H₁₀ — Chain Isomers',
-      text: 'Molecular formula: C₄H₁₀ (butane — general formula CₙH₂ₙ₊₂, n=4)\n\nIsomer 1: Butane\nCH₃–CH₂–CH₂–CH₃ (straight chain, 4 carbons)\nb.p. = −1 °C\n\nIsomer 2: 2-Methylpropane\n(CH₃)₃CH — branched, longest chain = 3C with a methyl branch on C2\nb.p. = −12 °C\n\nNote: 2-methylpropane has a lower boiling point because its more compact shape gives a smaller surface area → weaker London forces.'
-    }
-  }, {
-    id: 'callout-we2',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'C₅H₁₂ — Chain Isomers (3 isomers)',
-      text: 'Molecular formula: C₅H₁₂\n\nIsomer 1: Pentane — CH₃CH₂CH₂CH₂CH₃ (b.p. +36 °C)\n\nIsomer 2: 2-Methylbutane — CH₃CH(CH₃)CH₂CH₃ (b.p. +28 °C)\n\nIsomer 3: 2,2-Dimethylpropane — C(CH₃)₄ (b.p. +10 °C)\n\nHighly branched → most compact → lowest boiling point.'
-    }
-  }, {
-    id: 'h-position',
-    type: 'heading',
-    data: {
-      text: 'Position Isomerism — Worked Examples',
-      level: 2
-    }
-  }, {
-    id: 'callout-we3',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'C₄H₉Br — Position Isomers',
-      text: 'Molecular formula: C₄H₉Br (bromobutane)\n\n1-Bromobutane: Br on C1 — CH₂Br–CH₂–CH₂–CH₃\n2-Bromobutane: Br on C2 — CH₃–CHBr–CH₂–CH₃\n\nBoth have same skeleton (butane) and same functional group (–Br), but Br is in a different position → position isomers.'
-    }
-  }, {
-    id: 'h-functional',
-    type: 'heading',
-    data: {
-      text: 'Functional Group Isomerism — Worked Examples',
-      level: 2
-    }
-  }, {
-    id: 'callout-we4',
-    type: 'callout',
-    data: {
-      style: 'worked',
-      title: 'C₃H₆O — Functional Group Isomers',
-      text: 'Molecular formula: C₃H₆O\n\nIsomer 1: Propanal (aldehyde) — CH₃CH₂CHO\nIsomer 2: Propan-2-one / acetone (ketone) — CH₃COCH₃\nIsomer 3: Allyl alcohol (unsaturated alcohol) — CH₂=CHCH₂OH\n\nAll have C₃H₆O but completely different functional groups and very different chemistry.'
-    }
-  }, {
-    id: 'h-counting',
-    type: 'heading',
-    data: {
-      text: 'Systematic Approach to Drawing Isomers',
-      level: 2
-    }
-  }, {
-    id: 'list-systematic',
-    type: 'list',
-    data: {
-      style: 'numbered',
-      items: ['Draw the longest possible straight chain first.', 'Shorten the chain by 1 carbon and try all positions for the removed branch(es).', 'Continue shortening and branching until no new structures are possible.', 'Check for position isomers: move the functional group to each carbon in turn.', 'Check for functional group isomers: what other functional groups have this molecular formula?', 'Verify each structure is unique — rotate and mirror images are the same compound.']
-    }
-  }, {
-    id: 'h-c6',
-    type: 'heading',
-    data: {
-      text: 'C₆H₁₄ — Counting Chain Isomers',
-      level: 2
-    }
-  }, {
-    id: 'table-c6',
-    type: 'comparisonTable',
-    data: {
-      caption: 'All 5 structural isomers of C₆H₁₄ (hexane)',
-      headers: ['IUPAC name', 'Structural representation', 'Boiling point / °C'],
-      rows: [['Hexane', 'CH₃(CH₂)₄CH₃', '+69'], ['2-Methylpentane', 'CH₃CH(CH₃)(CH₂)₂CH₃', '+60'], ['3-Methylpentane', 'CH₃CH₂CH(CH₃)CH₂CH₃', '+63'], ['2,2-Dimethylbutane', '(CH₃)₃CCH₂CH₃', '+50'], ['2,3-Dimethylbutane', 'CH₃CH(CH₃)CH(CH₃)CH₃', '+58']]
-    }
-  }, {
-    id: 'callout-tip',
-    type: 'callout',
-    data: {
-      style: 'tip',
-      title: 'Exam Tips',
-      text: '• Always check that structural isomers have exactly the same molecular formula.\n• Two structures that are mirror images of each other (enantiomers) are NOT structural isomers — they are stereoisomers.\n• When drawing isomers in an exam, work systematically (longest chain first, then branch) to avoid missing any.\n• Branching always lowers boiling point relative to the straight-chain isomer (less surface area → weaker London forces).'
-    }
-  }, {
-    id: 'callout-warning',
-    type: 'callout',
-    data: {
-      style: 'warning',
-      title: 'Common Mistakes',
-      text: '• Drawing the same structure twice in a different orientation and calling them isomers — rotate mentally first.\n• Forgetting position isomers — moving a functional group from C1 to C2 gives a different compound.\n• Confusing structural isomerism with stereoisomerism (E/Z, optical) — stereoisomers have the same connectivity.'
-    }
-  }, {
-    id: 'checklist',
-    type: 'checklist',
-    data: {
-      items: [{
-        text: 'I can define structural isomer precisely.',
-        checked: false
-      }, {
-        text: 'I can distinguish chain, position and functional group isomerism.',
-        checked: false
-      }, {
-        text: 'I can systematically draw all structural isomers of alkanes up to C₆.',
-        checked: false
-      }, {
-        text: 'I can explain why branched isomers have lower boiling points.',
-        checked: false
-      }, {
-        text: 'I can identify when two drawn structures are actually the same compound.',
-        checked: false
-      }]
-    }
-  },
-    // ── BLOOM'S TAXONOMY — HIGHER-ORDER THINKING ─────────────────────────
-  {
-    id: 'bloom-understand',
-    type: 'callout',
-    data: {
-      style: 'key',
-      title: '🧠 Deeper Understanding — Why It Matters',
-      text: 'Understand: Structural isomers have same molecular formula but different arrangements — chain, position, or functional group isomerism.\n\nApply: Draw all structural isomers of C₄H₁₀O. Classify as alcohol or ether.\n\nAnalyze: How do different –OH positions in butan-1-ol vs butan-2-ol affect oxidation products?\n\nEvaluate: "Structural isomers have different physical but same chemical properties." Assess with examples.'
-    },
-    terms: []
-  }, {
-    id: 'summary',
-    type: 'summary',
-    data: {
-      text: 'Structural isomers have the same molecular formula but different structural formulae. Types: chain (different skeleton), position (functional group on different C), functional group (different functional group). Draw systematically: longest chain first, then reduce chain length and add branches. Branching lowers boiling point (less surface area → weaker London forces).'
-    }
-  }],
+  blocks: [
+    { id: 'obj', type: 'objective', data: { text: 'Define structural isomerism; draw and name all structural isomers for a given molecular formula up to C₆.' } },
+    { id: 'h-intro', type: 'heading', data: { text: 'What is Structural Isomerism?', level: 2 } },
+    { id: 'callout-key-iso', type: 'callout', data: {
+      style: 'key', title: 'Structural Isomers — Definition',
+      text: 'Structural isomers (also called constitutional isomers) are compounds that have the same molecular formula but different structural formulae &#x2014; i.e. the atoms are connected in a different order or arrangement.'
+    }},
+    { id: 'h-types', type: 'heading', data: { text: 'Types of Structural Isomerism', level: 2 } },
+    { id: 'svg-types', type: 'svg', data: {
+      caption: 'Three types of structural isomerism — how they differ and example pairs',
+      svg: `<svg viewBox="0 0 580 165" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="90" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Type</text><text x="275" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">What changes</text><text x="455" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Example</text><line x1="180" y1="0" x2="180" y2="165" stroke="#475569" stroke-width="1"/><line x1="370" y1="0" x2="370" y2="165" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="43" fill="#dbeafe"/><text x="8" y="53" font-weight="bold" fill="#1d4ed8" font-size="12">Chain isomerism</text><text x="188" y="48" fill="#374151" font-size="10">Arrangement of carbon skeleton:</text><text x="188" y="62" fill="#374151" font-size="10">straight chain vs branched chain</text><text x="378" y="48" fill="#374151" font-size="10">C₄H₁₀: butane vs</text><text x="378" y="62" fill="#374151" font-size="10">2-methylpropane</text><rect x="0" y="77" width="580" height="43" fill="#fef9c3"/><text x="8" y="96" font-weight="bold" fill="#92400e" font-size="12">Position isomerism</text><text x="188" y="91" fill="#374151" font-size="10">Same skeleton and functional group,</text><text x="188" y="105" fill="#374151" font-size="10">but group on a different carbon</text><text x="378" y="91" fill="#374151" font-size="10">C₄H₉Br: 1-bromobutane</text><text x="378" y="105" fill="#374151" font-size="10">vs 2-bromobutane</text><rect x="0" y="120" width="580" height="43" fill="#d1fae5"/><text x="8" y="137" font-weight="bold" fill="#15803d" font-size="11">Functional group</text><text x="8" y="150" font-weight="bold" fill="#15803d" font-size="11">isomerism</text><text x="188" y="134" fill="#374151" font-size="10">Same molecular formula but</text><text x="188" y="148" fill="#374151" font-size="10">different functional groups</text><text x="378" y="134" fill="#374151" font-size="10">C₂H₆O: ethanol (alcohol)</text><text x="378" y="148" fill="#374151" font-size="10">vs methoxymethane (ether)</text><rect x="0" y="0" width="580" height="165" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'h-chain', type: 'heading', data: { text: 'Chain Isomerism — Worked Examples', level: 2 } },
+    { id: 'callout-we1', type: 'callout', data: {
+      style: 'worked', title: 'C₄H₁₀ — Chain Isomers',
+      text: 'Molecular formula: C&#x2084;H&#x2081;&#x2080; (butane &#x2014; general formula C&#x2099;H&#x2082;&#x2099;&#x208A;&#x2082;, n=4)<br/><br/>Isomer 1: Butane<br/>CH&#x2083;&#x2013;CH&#x2082;&#x2013;CH&#x2082;&#x2013;CH&#x2083; (straight chain, 4 carbons) &#x2014; b.p. = &#x2212;1 &#xB0;C<br/><br/>Isomer 2: 2-Methylpropane<br/>(CH&#x2083;)&#x2083;CH &#x2014; branched, longest chain = 3C with a methyl branch on C2 &#x2014; b.p. = &#x2212;12 &#xB0;C<br/><br/>Note: 2-methylpropane has a lower boiling point because its more compact shape gives a smaller surface area &#x2192; weaker London forces.'
+    }},
+    { id: 'callout-we2', type: 'callout', data: {
+      style: 'worked', title: 'C₅H₁₂ — Chain Isomers (3 isomers)',
+      text: 'Molecular formula: C&#x2085;H&#x2081;&#x2082;<br/><br/>Isomer 1: Pentane &#x2014; CH&#x2083;CH&#x2082;CH&#x2082;CH&#x2082;CH&#x2083; (b.p. +36 &#xB0;C)<br/><br/>Isomer 2: 2-Methylbutane &#x2014; CH&#x2083;CH(CH&#x2083;)CH&#x2082;CH&#x2083; (b.p. +28 &#xB0;C)<br/><br/>Isomer 3: 2,2-Dimethylpropane &#x2014; C(CH&#x2083;)&#x2084; (b.p. +10 &#xB0;C)<br/><br/>Highly branched &#x2192; most compact &#x2192; lowest boiling point.'
+    }},
+    { id: 'h-position', type: 'heading', data: { text: 'Position Isomerism — Worked Examples', level: 2 } },
+    { id: 'callout-we3', type: 'callout', data: {
+      style: 'worked', title: 'C₄H₉Br — Position Isomers',
+      text: 'Molecular formula: C&#x2084;H&#x2089;Br (bromobutane)<br/><br/>1-Bromobutane: Br on C1 &#x2014; CH&#x2082;Br&#x2013;CH&#x2082;&#x2013;CH&#x2082;&#x2013;CH&#x2083;<br/>2-Bromobutane: Br on C2 &#x2014; CH&#x2083;&#x2013;CHBr&#x2013;CH&#x2082;&#x2013;CH&#x2083;<br/><br/>Both have the same skeleton (butane) and same functional group (&#x2013;Br), but Br is in a different position &#x2192; position isomers.'
+    }},
+    { id: 'h-functional', type: 'heading', data: { text: 'Functional Group Isomerism — Worked Examples', level: 2 } },
+    { id: 'callout-we4', type: 'callout', data: {
+      style: 'worked', title: 'C₃H₆O — Functional Group Isomers',
+      text: 'Molecular formula: C&#x2083;H&#x2086;O<br/><br/>Isomer 1: Propanal (aldehyde) &#x2014; CH&#x2083;CH&#x2082;CHO<br/>Isomer 2: Propan-2-one / acetone (ketone) &#x2014; CH&#x2083;COCH&#x2083;<br/>Isomer 3: Allyl alcohol (unsaturated alcohol) &#x2014; CH&#x2082;=CHCH&#x2082;OH<br/><br/>All have C&#x2083;H&#x2086;O but completely different functional groups and very different chemistry.'
+    }},
+    { id: 'h-counting', type: 'heading', data: { text: 'Systematic Approach to Drawing Isomers', level: 2 } },
+    { id: 'svg-systematic', type: 'svg', data: {
+      caption: 'Six-step systematic method for drawing all structural isomers',
+      svg: `<svg viewBox="0 0 580 205" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><text x="290" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b" font-size="13">Systematic Approach to Drawing Structural Isomers</text><rect x="2" y="24" width="276" height="54" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/><rect x="302" y="24" width="276" height="54" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/><rect x="2" y="88" width="276" height="54" rx="6" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1.5"/><rect x="302" y="88" width="276" height="54" rx="6" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1.5"/><rect x="2" y="152" width="276" height="50" rx="6" fill="#fef9c3" stroke="#fbbf24" stroke-width="1.5"/><rect x="302" y="152" width="276" height="50" rx="6" fill="#fef9c3" stroke="#fbbf24" stroke-width="1.5"/><circle cx="18" cy="40" r="12" fill="#1d4ed8"/><text x="18" y="45" text-anchor="middle" fill="white" font-weight="bold" font-size="12">1</text><text x="36" y="38" font-weight="bold" fill="#1e293b" font-size="11">Draw the longest chain first</text><text x="36" y="53" fill="#374151" font-size="10">Write the straight-chain structure</text><text x="36" y="67" fill="#374151" font-size="10">(all carbons in a row)</text><circle cx="318" cy="40" r="12" fill="#1d4ed8"/><text x="318" y="45" text-anchor="middle" fill="white" font-weight="bold" font-size="12">2</text><text x="336" y="38" font-weight="bold" fill="#1e293b" font-size="11">Shorten chain; add branches</text><text x="336" y="53" fill="#374151" font-size="10">Remove one C from chain; place it as</text><text x="336" y="67" fill="#374151" font-size="10">methyl/ethyl branch in every possible position</text><circle cx="18" cy="104" r="12" fill="#15803d"/><text x="18" y="109" text-anchor="middle" fill="white" font-weight="bold" font-size="12">3</text><text x="36" y="102" font-weight="bold" fill="#1e293b" font-size="11">Continue shortening</text><text x="36" y="117" fill="#374151" font-size="10">Keep reducing chain length and adding</text><text x="36" y="131" fill="#374151" font-size="10">branches until no new structures possible</text><circle cx="318" cy="104" r="12" fill="#15803d"/><text x="318" y="109" text-anchor="middle" fill="white" font-weight="bold" font-size="12">4</text><text x="336" y="102" font-weight="bold" fill="#1e293b" font-size="11">Check position isomers</text><text x="336" y="117" fill="#374151" font-size="10">Move functional group to each carbon</text><text x="336" y="131" fill="#374151" font-size="10">position in turn (C1, C2, C3…)</text><circle cx="18" cy="168" r="12" fill="#92400e"/><text x="18" y="173" text-anchor="middle" fill="white" font-weight="bold" font-size="12">5</text><text x="36" y="164" font-weight="bold" fill="#1e293b" font-size="11">Functional group isomers</text><text x="36" y="179" fill="#374151" font-size="10">What other functional groups have</text><text x="36" y="193" fill="#374151" font-size="10">this molecular formula?</text><circle cx="318" cy="168" r="12" fill="#92400e"/><text x="318" y="173" text-anchor="middle" fill="white" font-weight="bold" font-size="12">6</text><text x="336" y="164" font-weight="bold" fill="#1e293b" font-size="11">Verify each is unique</text><text x="336" y="179" fill="#374151" font-size="10">Rotate/reflect structures — mirror</text><text x="336" y="193" fill="#374151" font-size="10">images of same structure are NOT isomers</text></svg>`
+    }},
+    { id: 'h-c6', type: 'heading', data: { text: 'C₆H₁₄ — All 5 Chain Isomers', level: 2 } },
+    { id: 'svg-c6', type: 'svg', data: {
+      caption: 'All five structural (chain) isomers of C₆H₁₄ with boiling points',
+      svg: `<svg viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="120" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">IUPAC Name</text><text x="330" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Structural Formula</text><text x="495" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">BP / &#xB0;C</text><line x1="230" y1="0" x2="230" y2="210" stroke="#475569" stroke-width="1"/><line x1="430" y1="0" x2="430" y2="210" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="34" fill="#f0f9ff"/><text x="8" y="56" fill="#374151" font-size="11">Hexane</text><text x="238" y="56" fill="#374151" font-size="11" font-family="monospace">CH₃(CH₂)₄CH₃</text><text x="438" y="56" fill="#374151" font-size="11">+69</text><rect x="0" y="68" width="580" height="34" fill="white"/><text x="8" y="90" fill="#374151" font-size="11">2-Methylpentane</text><text x="238" y="90" fill="#374151" font-size="11" font-family="monospace">CH₃CH(CH₃)(CH₂)₂CH₃</text><text x="438" y="90" fill="#374151" font-size="11">+60</text><rect x="0" y="102" width="580" height="34" fill="#f0f9ff"/><text x="8" y="124" fill="#374151" font-size="11">3-Methylpentane</text><text x="238" y="124" fill="#374151" font-size="11" font-family="monospace">CH₃CH₂CH(CH₃)CH₂CH₃</text><text x="438" y="124" fill="#374151" font-size="11">+63</text><rect x="0" y="136" width="580" height="34" fill="white"/><text x="8" y="158" fill="#374151" font-size="11">2,2-Dimethylbutane</text><text x="238" y="158" fill="#374151" font-size="11" font-family="monospace">(CH₃)₃CCH₂CH₃</text><text x="438" y="158" fill="#374151" font-size="11">+50</text><rect x="0" y="170" width="580" height="37" fill="#fef9c3"/><text x="8" y="191" fill="#374151" font-size="11">2,3-Dimethylbutane</text><text x="238" y="191" fill="#374151" font-size="11" font-family="monospace">CH₃CH(CH₃)CH(CH₃)CH₃</text><text x="438" y="186" fill="#dc2626" font-weight="bold" font-size="11">+58 (lowest ≠</text><text x="438" y="200" fill="#dc2626" font-size="9">most branched)</text><rect x="0" y="0" width="580" height="210" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'callout-tip', type: 'callout', data: {
+      style: 'tip', title: 'Exam Tips', text: '&#x2022; Always check that structural isomers have exactly the same molecular formula.<br/>&#x2022; Two structures that are mirror images of each other (enantiomers) are NOT structural isomers &#x2014; they are stereoisomers.<br/>&#x2022; When drawing isomers in an exam, work systematically (longest chain first, then branch) to avoid missing any.<br/>&#x2022; Branching always lowers boiling point relative to the straight-chain isomer (less surface area &#x2192; weaker London forces).'
+    }},
+    { id: 'callout-warning', type: 'callout', data: {
+      style: 'warning', title: 'Common Mistakes', text: '&#x2022; Drawing the same structure twice in a different orientation and calling them isomers &#x2014; rotate mentally first.<br/>&#x2022; Forgetting position isomers &#x2014; moving a functional group from C1 to C2 gives a different compound.<br/>&#x2022; Confusing structural isomerism with stereoisomerism (E/Z, optical) &#x2014; stereoisomers have the same connectivity.'
+    }}
+  ],
   recall: {
     enabled: true,
-    cues: [{
-      id: 'cue-1',
-      blockId: 'callout-key-iso',
-      prompt: 'Define structural isomers. How do they differ from stereoisomers?'
-    }, {
-      id: 'cue-2',
-      blockId: 'table-types',
-      prompt: 'Name and describe the three types of structural isomerism.'
-    }, {
-      id: 'cue-3',
-      blockId: 'callout-we1',
-      prompt: 'Draw and name the two structural isomers of C₄H₁₀.'
-    }, {
-      id: 'cue-4',
-      blockId: 'table-c6',
-      prompt: 'How many structural isomers does C₆H₁₄ have? Name them.'
-    }, {
-      id: 'cue-5',
-      blockId: 'callout-tip',
-      prompt: 'Why does 2,2-dimethylpropane have a lower boiling point than pentane?'
-    }],
-    summaryText: 'Structural isomers: same molecular formula, different structural formula. Types: chain, position, functional group. C₄H₁₀ has 2 isomers; C₅H₁₂ has 3; C₆H₁₄ has 5. Branching → lower b.p. (less surface area → weaker London forces).',
+    cues: [
+      { id: 'c1', blockId: 'callout-key-iso', prompt: 'Define structural isomers. How do they differ from stereoisomers?' },
+      { id: 'c2', blockId: 'svg-types', prompt: 'Name and describe the three types of structural isomerism.' },
+      { id: 'c3', blockId: 'callout-we1', prompt: 'Draw and name the two structural isomers of C₄H₁₀. Which has the higher boiling point and why?' },
+      { id: 'c4', blockId: 'svg-c6', prompt: 'How many chain isomers does C₆H₁₄ have? Name them all.' },
+      { id: 'c5', blockId: 'svg-systematic', prompt: 'Describe the systematic method for drawing all structural isomers of a molecular formula.' }
+    ],
+    summaryText: 'Structural isomers: same molecular formula, different structural formula. Types: chain (different skeleton), position (group on different C), functional group (different group). C₄H₁₀ = 2 isomers; C₅H₁₂ = 3; C₆H₁₄ = 5. Branching → lower bp (less surface area → weaker London forces). Work systematically: longest chain first, then shorten and branch.',
     ready: false
   },
-  evidence: [{
-    id: 'ev-1',
-    title: 'Edexcel WCH11 Specification',
-    detail: 'Structural isomerism including chain, position and functional group isomers is required for Topic 4.',
-    year: '2018',
-    source: 'Pearson Edexcel',
-    tags: ['isomerism', 'structural isomers']
-  }]
+  evidence: [], mentions: []
 };

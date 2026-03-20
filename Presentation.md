@@ -1,6 +1,6 @@
 # Presentation.md — Presentation Feature Context File
 
-Last updated: 2026-03-20
+Last updated: 2026-03-20 (Section 17 added: SVG colour override system — grey-text fix)
 
 This file documents the full architecture, conventions, and patterns for the
 Presentation feature so agents can extend it without re-exploring files.
@@ -54,6 +54,10 @@ src/
         SlideEquation.jsx        ← 'equation' — equation block
         SlideChecklist.jsx       ← 'checklist' — checklist block
         SlideSummary.jsx         ← 'summary' — summary block
+        SlideBento.jsx           ← 'bento' — dark infographic bento-grid card deck
+
+  utils/
+    slideCoverage.js             ← coverage supplement engine (see Section 15)
 ```
 
 ---
@@ -325,7 +329,7 @@ Each layout uses a `.pres-slide-{layout}` class on its root element:
 `.pres-slide-cover`, `.pres-slide-bullets`, `.pres-slide-table`,
 `.pres-slide-diagram`, `.pres-slide-infographic`, `.pres-slide-worked`,
 `.pres-slide-tip`, `.pres-slide-warning`, `.pres-slide-equation`,
-`.pres-slide-checklist`, `.pres-slide-summary`
+`.pres-slide-checklist`, `.pres-slide-summary`, `.pres-slide-bento`
 
 ### Browse page extras
 
@@ -453,3 +457,332 @@ Annotations are **ephemeral** — they clear when:
 | `.annot-clear-btn` | Red-tinted trash button |
 | `.annot-mode-badge` | "✏️ ANNOTATING" pill badge at slide top |
 | `.pres-canvas.annot-active` | Crosshair cursor on the canvas area |
+
+---
+
+## 13. Content Creation Rule: Slide Density & Infographics
+
+> [!IMPORTANT]
+> **Condense content into visual infographics.**
+> When creating or rewriting subtopic seed notes for presentation slides, do NOT output long lists of bullet points spread across multiple slides. Instead, convert the subtopic's information and contents into condensed **SVG images** and **infographic layouts**.
+>
+> - **Use SVGs:** Rely heavily on rich `svg` blocks (`slide.layout = 'diagram'`) to visually represent concepts.
+> - **Use Callouts:** Use `callout` blocks with `style: 'key'` (`slide.layout = 'infographic'`) to pair text concisely with diagrams.
+> - **Condense:** Group multiple related subtopic concepts into single, dense, high-quality visual slides rather than fragmenting them into point-form slides.
+
+---
+
+## 14. SlideBento — Infographic Bento-Grid Layout
+
+File: `src/components/presentation/layouts/SlideBento.jsx`
+CSS:  classes `.pres-slide-bento`, `.pres-bento-grid`, `.pres-bento-card` in `Presentation.css`
+
+**Purpose:** A highly visual, dark-themed infographic layout for use when all the essential
+information for a subtopic should be compressed into 1–2 slides. Uses a CSS Grid of "bento
+cards" — each card contains an icon, a title, and HTML body content.
+
+**When to use:** Use `layout: 'bento'` in `presentationSlides[]` for dense overview slides.
+Chemistry WCH11 Topic 1 (all 10 subtopics) currently uses this layout exclusively.
+
+### Slide data format
+
+```js
+{
+  layout: 'bento',
+  title: 'Slide Title',       // shown in bento header h2
+  subtitle: 'Topic 1.1',      // shown in bento header p (optional)
+  elements: [
+    {
+      delay: 0,               // animation step when this card appears
+      colSpan: 2,             // 1, 2, or 3 (CSS grid column span)
+      icon: '⚖️',             // emoji icon in card header
+      title: 'Card Title',    // h3 inside card header
+      html: '...',            // rich HTML body (supports .nb-frac fractions, <sup>, <ul> etc.)
+    },
+    // ...
+  ]
+}
+```
+
+### CSS classes
+
+| Class | Purpose |
+| --- | --- |
+| `.pres-slide-bento` | Root flex container for the bento slide |
+| `.pres-bento-header` | Header area with h2 title + p subtitle |
+| `.pres-bento-header.visible` | Fade-in state (triggered by animStep >= 0) |
+| `.pres-bento-grid` | CSS Grid: `repeat(3, 1fr)` columns |
+| `.pres-bento-card` | Individual glass-morphism card |
+| `.pres-bento-card.visible` | Fade-in + translateY(0) reveal |
+| `.pres-bento-card.col-span-2` | Spans 2 grid columns |
+| `.pres-bento-card.col-span-3` | Spans 3 grid columns (full width) |
+| `.pres-bento-card-header` | Icon + h3 title row |
+| `.pres-bento-icon` | Emoji icon (1.3rem) |
+| `.pres-bento-card-body` | HTML body text (`#d1d5db`, 0.95rem) |
+
+### Responsive behaviour
+
+| Breakpoint | Grid change |
+| --- | --- |
+| ≤ 900px | 2 columns; `col-span-3` collapses to 2 |
+| ≤ 600px | 1 column; all spans collapse to 1 |
+
+### Animation
+
+The header reveals at `animStep >= 0`. Each bento card reveals when `animStep >= element.delay`.
+Card `i` has a CSS `transitionDelay` of `${i * 100}ms` for a staggered cascade effect.
+Clicking/pressing Space or → increments `animStep`, revealing cards one by one.
+
+---
+
+## 15. Custom `presentationSlides` Override
+
+A seed note can export a `presentationSlides[]` array to completely replace the
+auto-generated `blocksToSlides()` output with hand-crafted infographic slides.
+
+### When to use
+
+Use custom `presentationSlides` when:
+- The subtopic's content can be distilled into 1–2 highly visual overview slides (bento layout)
+- The auto-generated slides are too fragmented or verbose for the presentation context
+
+### Format
+
+```js
+export const note_chemistry_1_1_0 = {
+  blocks: [ /* normal note blocks — used for reading view */ ],
+
+  // Custom presentation override — replaces blocksToSlides() output:
+  presentationSlides: [
+    {
+      layout: 'bento',           // any registered layout string
+      title: '...',
+      subtitle: '...',
+      elements: [ ... ],
+    },
+    // max 2 slides per subtopic recommended
+  ],
+
+  // Optional: Control which block types are auto-supplemented (see Section 16)
+  // supplementalBlockTypes: false,         // disable all supplements
+  // supplementalBlockTypes: ['equation'],  // only supplement equations
+
+  recall: { ... },
+  evidence: [],
+};
+```
+
+### LAYOUT_MAP in SlideRenderer.jsx
+
+```js
+const LAYOUT_MAP = {
+  cover:            SlideCover,
+  bullets:          SlideBullets,
+  table:            SlideTable,
+  diagram:          SlideDiagram,
+  infographic:      SlideInfographic,
+  bento:            SlideBento,         // ← custom infographic deck
+  'worked-example': SlideWorkedExample,
+  tip:              SlideCalloutTip,
+  warning:          SlideCalloutWarning,
+  equation:         SlideEquation,
+  checklist:        SlideChecklist,
+  summary:          SlideSummary,
+};
+```
+
+### Priority in PresentationPage
+
+```
+if seedNote.presentationSlides exists:
+  1. Render custom slides
+  2. Append supplemental slides (see Section 16) for any uncovered important blocks
+else:
+  Run blocksToSlides() on the full blocks[] array
+```
+
+### End-of-subtopic overlay
+
+When the user reaches the final slide AND all animation steps are complete,
+a "Subtopic Complete" overlay appears (`pres-end-overlay`). It contains:
+- A ✓ checkmark, the subtopic title
+- A "Up next: [next subtopic]" button (if there is one)
+- A "🎉 Topic Complete!" message (if at the last subtopic)
+- A "← Back" button
+
+**Navigation fix (2026-03-20):** `PresentationPage` now resets `slideIdx` and `animStep`
+to 0 whenever `noteId` changes (i.e., on every subtopic navigation). Previously, state
+persisted across navigation so the overlay would remain visible on the new subtopic.
+
+---
+
+## 16. Coverage Supplement — Never Miss a Block
+
+File: `src/utils/slideCoverage.js`
+
+### The Problem
+
+When `presentationSlides[]` is used, `blocksToSlides()` is skipped entirely.
+Any `equation`, `svg`, `comparisonTable`, `checklist`, `summary`, or worked-example
+`callout` blocks in the note's `blocks[]` array will be **absent** from the
+presentation unless manually reproduced in the custom slides.
+
+### The Solution: Automatic Supplemental Slides
+
+`PresentationPage.jsx` always calls `getSupplementalBlocks(seedNote)` after building
+the custom slides. Any "important" blocks found are converted to slides and appended
+at the end of the custom deck.
+
+```
+[Custom presentationSlides bento cards]
+          ↓
+[Auto-supplemental equation slides]
+[Auto-supplemental diagram slides]
+[Auto-supplemental table slides]
+[Auto-supplemental worked-example slides]
+[Auto-supplemental checklist slide]
+[Auto-supplemental summary slide]
+```
+
+By default the following block types are supplemented:
+
+| Block type | Default |
+| --- | --- |
+| `equation` | ✓ always |
+| `comparisonTable` | ✓ always |
+| `svg` | ✓ always |
+| `checklist` | ✓ always |
+| `summary` | ✓ always |
+| `callout` style=`worked` | ✓ always |
+| `callout` style=`key` | ✗ (usually in bento cards) |
+| `paragraph`, `list`, `heading` | ✗ (structural, covered by bento) |
+
+### Dev-mode logging
+
+In development (`import.meta.env.DEV`), a `console.info` message is printed for
+every note listing how many supplemental slides were appended and which block types.
+Watch the browser console when testing presentations.
+
+### Authoring opt-out / customisation
+
+Add `supplementalBlockTypes` to the seed note export to override the defaults:
+
+```js
+// Disable all supplemental slides:
+supplementalBlockTypes: false,
+
+// Only supplement equations and diagrams:
+supplementalBlockTypes: ['equation', 'svg'],
+
+// Also supplement key callouts:
+supplementalBlockTypes: ['equation', 'svg', 'comparisonTable', 'callout(key)'],
+```
+
+> [!NOTE]
+> `callout` filtering: When `supplementalBlockTypes` is an array, callout blocks are
+> **never** supplemented (the engine only checks block.type, not callout style).
+> The default behaviour (no supplementalBlockTypes field) uses
+> `DEFAULT_SUPPLEMENT_CALLOUT_STYLES = new Set(['worked'])`.
+
+### Audit script
+
+Run `python3 scripts/audit_slides.py` to get a per-note coverage report.
+
+```
+python3 scripts/audit_slides.py                    # all subjects
+python3 scripts/audit_slides.py --subject chemistry # one subject
+python3 scripts/audit_slides.py --gaps-only         # only show notes with gaps
+python3 scripts/audit_slides.py --verbose           # show all notes including auto ones
+```
+
+Output example:
+
+```
+══════════════════════════════════════════════════════════════════════
+  SLIDE COVERAGE AUDIT REPORT
+══════════════════════════════════════════════════════════════════════
+
+  CHEMISTRY
+  ────────────────────────────────────────────────────────────
+    ⚠  note_1_1_1.js  →  gaps: equation×3, svg×2
+    ✓  note_1_1_2.js
+    ⚠  note_1_1_3.js  →  gaps: comparisonTable×1
+
+──────────────────────────────────────────────────────────────────────
+  Custom presentationSlides notes:  10
+  With auto-supplement gaps:         3  ⚠
+  Fully covered:                     7  ✓
+
+  NOTE: Gaps are automatically filled at runtime by slideCoverage.js
+```
+
+The ⚠ items are **not errors** — they are auto-filled at runtime. The audit report
+shows you *what* is being supplemented so you can optionally incorporate it into the
+custom bento slides for a more polished single-deck experience.
+
+---
+
+## 17. SVG Colour Override System
+
+### Problem
+
+Seed-note SVGs are authored with hardcoded dark/grey fills intended for a **light background** (white note cards). When rendered on the dark presentation canvas (`#0d0d1a`) or in dark-mode notes view, those fills produce:
+
+- Invisible or barely-visible text labels (e.g. `fill="#374151"`, `fill="#1f2937"`)
+- Grey structural shapes (axes, tick marks, legend swatches) that appear as murky blobs
+
+### Root Cause (presentation-mode)
+
+`SlideDiagram.jsx` rendered SVG content in a `<div>` with class `pres-diagram-body`. The CSS overrides (which force all `text`/`tspan` to `fill: #ffffff !important`) were scoped to `.pres-svg-wrapper`. Class mismatch = zero overrides applied = original grey fills showed through on the dark canvas.
+
+**Fix:** Added `pres-svg-wrapper` to the `className` on the body `<div>` in `SlideDiagram.jsx`.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `src/components/presentation/layouts/SlideDiagram.jsx` | Added `pres-svg-wrapper` to body `<div>` className — activates all CSS overrides |
+| `src/components/presentation/Presentation.css` | Added dark-fill override block (was missing entirely) + medium-grey fill overrides |
+| `src/components/notes/NoteBlockRenderer.css` | Added medium-grey fill overrides for the notes view |
+
+### CSS Override Architecture
+
+Both contexts use the same three-tier pattern:
+
+#### Tier 1 — `<text>` / `<tspan>` → bright white/light
+
+```css
+/* Presentation */
+.pres-svg-wrapper svg text, .pres-svg-wrapper svg tspan { fill: #ffffff !important; }
+
+/* Notes */
+.nb-svg-container svg text, .nb-svg-container svg tspan { fill: var(--note-svg-text) !important; }
+/* --note-svg-text = #f8fafc */
+```
+
+#### Tier 2 — Dark fills on non-text shapes → readable on dark background
+
+Covers: `#000`, `#111827`, `#1f2937`, `#334155`, `#374151`, `#333`, `#444`–`#999`, `black`
+
+- Presentation: `rgba(226, 232, 240, 0.85)`
+- Notes: `var(--note-svg-muted)` → `#cbd5e1`
+
+#### Tier 3 — Medium-grey fills on non-text shapes → subtle chart furniture
+
+Covers: `#64748b`, `#6b7280`, `#94a3b8`, `#9ca3af`, `#a1a1aa`, `#d1d5db`, `#e5e7eb`, `#e2e8f0`, `#f1f5f9`, `#f8fafc`
+
+- Presentation: `rgba(148, 163, 184, 0.5)`
+- Notes: `var(--note-svg-grid)` → `rgba(148, 163, 184, 0.35)`
+
+#### Tier 4 — Strokes
+
+Dark strokes → `rgba(226, 232, 240, 0.9)`
+Medium/light strokes (`#64748b`, `#ddd`, `#e5e7eb`, `#cbd5e1`, etc.) → `rgba(148, 163, 184, 0.35)`
+
+### Authoring Rule for New SVGs
+
+Continue authoring SVGs for a **light background** — the CSS override system handles dark-mode conversion automatically. No per-element class or style changes needed.
+
+If a colour must **not** be overridden (e.g. a vivid brand colour that coincidentally shares a grey hex), use a CSS class on the element instead of a `fill` attribute, then add a rule in the component's stylesheet.
+
+

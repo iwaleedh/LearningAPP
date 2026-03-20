@@ -1,259 +1,63 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 0
  * "Introduction to organic chemistry"
- * Source: Pearson Edexcel IAL Chemistry — Section 4A.1–4A.3
  */
 export const note_chemistry_1_4_0 = {
   blocks: [
-    {
-      id: 'objective',
-      type: 'objective',
-      data: { text: 'Understand the scope of organic chemistry. Know the terms: organic molecule, hydrocarbon, saturated, unsaturated, functional group, homologous series.' },
-      terms: []
-    },
-    {
-      id: 'h-org',
-      type: 'heading',
-      data: { text: 'What is Organic Chemistry?', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-org',
-      type: 'paragraph',
-      data: { text: '<strong>Organic chemistry</strong> is the chemistry of carbon-containing compounds. Carbon is uniquely able to form long chains and rings because it can form four covalent bonds and bond with itself repeatedly (catenation). This gives rise to millions of organic compounds.' },
-      terms: ['Organic chemistry', 'Catenation']
-    },
-    {
-      id: 'table-terms',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Key organic chemistry terms',
-        headers: ['Term', 'Definition', 'Example'],
-        rows: [
-          ['<strong>Hydrocarbon</strong>', 'A compound containing only carbon and hydrogen atoms.', 'CH₄ (methane), C₆H₆ (benzene)'],
-          ['<strong>Saturated</strong>', 'Contains only single C–C bonds; no C=C double bonds.', 'Alkanes (e.g. ethane, C₂H₆)'],
-          ['<strong>Unsaturated</strong>', 'Contains one or more C=C or C≡C bonds.', 'Alkenes (e.g. ethene, C₂H₄)'],
-          ['<strong>Functional group</strong>', 'An atom or group of atoms that determines the characteristic reactions of a molecule.', 'C=C (alkene); –OH (alcohol); –Br (halogenoalkane)'],
-          ['<strong>Homologous series</strong>', 'A family of organic compounds with the same functional group and general formula, where each member differs by –CH₂–.', 'Alkanes: CₙH₂ₙ₊₂']
-        ]
-      },
-      terms: ['Hydrocarbon', 'Saturated', 'Unsaturated', 'Functional group', 'Homologous series']
-    },
-    {
-      id: 'callout-homologous',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Properties of a Homologous Series',
-        text: 'Members of the same homologous series:<br/>• Have the same <strong>functional group</strong> → similar chemical properties<br/>• Differ by one CH₂ unit → gradually changing physical properties (boiling point, solubility etc.)<br/>• Share the same <strong>general formula</strong><br/>• Can be named using the same systematic rules'
-      },
-      terms: []
-    },
-    {
-      id: 'table-series',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Common homologous series',
-        headers: ['Series', 'Functional Group', 'General Formula'],
-        rows: [
-          ['Alkanes', 'None (C–H and C–C only)', 'CₙH₂ₙ₊₂'],
-          ['Alkenes', 'C=C (double bond)', 'CₙH₂ₙ'],
-          ['Alkynes', 'C≡C (triple bond)', 'CₙH₂ₙ₋₂'],
-          ['Alcohols', '–OH (hydroxyl)', 'CₙH₂ₙ₊₁OH'],
-          ['Halogenoalkanes', 'C–X (X = F, Cl, Br, I)', 'CₙH₂ₙ₊₁X'],
-          ['Carboxylic acids', '–COOH', 'CₙH₂ₙ₊₁COOH'],
-          ['Cycloalkanes', 'Ring of CH₂ groups', 'CₙH₂ₙ']
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-formula-types',
-      type: 'heading',
-      data: { text: 'Types of Formula', level: 2 },
-      terms: []
-    },
-    {
-      id: 'table-formula',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Five ways to represent organic molecules',
-        headers: ['Type', 'Definition', 'Example (Butane)'],
-        rows: [
-          ['<strong>Empirical</strong>', 'Simplest whole-number ratio of atoms in the molecule.', 'C₂H₅'],
-          ['<strong>Molecular</strong>', 'Actual number of atoms of each element in the molecule.', 'C₄H₁₀'],
-          ['<strong>Structural</strong>', 'Shows how atoms are grouped together without showing all bonds.', 'CH₃CH₂CH₂CH₃'],
-          ['<strong>Displayed</strong>', 'Shows every single atom and every single covalent bond.', 'Full drawn structure with 13 bonds'],
-          ['<strong>Skeletal</strong>', 'Shows only the carbon skeleton as lines. C atoms are at vertices/ends. H atoms on C are not shown.', 'Zig-zag line']
-        ]
-      },
-      terms: ['Empirical formula', 'Molecular formula', 'Structural formula', 'Displayed formula', 'Skeletal formula']
-    },
-    {
-      id: 'callout-displayed-limits',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Limitations of Displayed Formulae',
-        text: 'A displayed formula is drawn flat with 90° bond angles on paper, which bears no resemblance to the actual 3D shape of the molecule (e.g. tetrahedral with 109.5° angles). This can be misleading: drawing a CH₃ branch pointing "up", "down", or at the "end" might look like different isomers on paper, but they are often exactly the same molecule just rotated.'
-      },
-      terms: []
-    },
-    {
-      id: 'p-structural-convention',
-      type: 'paragraph',
-      data: { text: 'To avoid confusion when drawing <strong>structural formulae</strong>, the convention is to always find the longest continuous chain of carbon atoms and draw it horizontally. Any side-groups or branches are then written "hanging off" this main carbon chain.' },
-      terms: []
-    },
-    {
-      id: 'p-3d',
-      type: 'paragraph',
-      data: { text: '<strong>Drawing 3D Structures:</strong> When the exact 3D stereochemical arrangement around a carbon atom is important, conventional symbols are used to show bonds entering or leaving the 2D plane of the paper:' },
-      terms: []
-    },
-    {
-      id: 'list-3d',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '<strong>Straight line:</strong> A bond in the plane of the paper/screen.',
-          '<strong>Solid wedge:</strong> A bond coming out of the paper towards you.',
-          '<strong>Hashed (dotted) wedge:</strong> A bond going into the paper away from you.'
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'svg-formula',
-      type: 'svg',
-      data: {
-        caption: 'Figure: Displayed, structural and skeletal formulas for butane and chloroethane',
-        svg: `<svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="12">
-  <!-- Butane -->
-  <text x="150" y="20" text-anchor="middle" font-weight="bold" fill="#1e40af">Butane (C₄H₁₀)</text>
-  
-  <text x="80" y="60" text-anchor="end" fill="#64748b">Displayed:</text>
-  <!-- Displayed Butane -->
-  <text x="100" y="60" font-family="monospace">
-    <tspan x="100" dy="0">  H   H   H   H</tspan>
-    <tspan x="100" dy="15">  |   |   |   |</tspan>
-    <tspan x="100" dy="15">H-C---C---C---C-H</tspan>
-    <tspan x="100" dy="15">  |   |   |   |</tspan>
-    <tspan x="100" dy="15">  H   H   H   H</tspan>
-  </text>
-  
-  <text x="80" y="150" text-anchor="end" fill="#64748b">Structural:</text>
-  <text x="100" y="150" font-family="monospace">CH₃CH₂CH₂CH₃</text>
-  
-  <text x="80" y="190" text-anchor="end" fill="#64748b">Skeletal:</text>
-  <polyline points="100,200 130,180 160,200 190,180" fill="none" stroke="#334155" stroke-width="2"/>
-  
-  <!-- Chloroethane -->
-  <text x="400" y="20" text-anchor="middle" font-weight="bold" fill="#15803d">Chloroethane (C₂H₅Cl)</text>
-  
-  <!-- Displayed Chloroethane -->
-  <text x="350" y="60" font-family="monospace">
-    <tspan x="350" dy="0">  H   H</tspan>
-    <tspan x="350" dy="15">  |   |</tspan>
-    <tspan x="350" dy="15">H-C---C-Cl</tspan>
-    <tspan x="350" dy="15">  |   |</tspan>
-    <tspan x="350" dy="15">  H   H</tspan>
-  </text>
-  
-  <text x="350" y="150" font-family="monospace">CH₃CH₂Cl</text>
-  
-  <polyline points="350,200 380,180 410,200" fill="none" stroke="#334155" stroke-width="2"/>
-  <text x="415" y="205" font-family="monospace" fill="#15803d" font-weight="bold">Cl</text>
-</svg>`
-      },
-      terms: []
-    },
-    {
-      id: 'h-reactions',
-      type: 'heading',
-      data: { text: 'Reaction Types & Bond Breaking', level: 2 },
-      terms: []
-    },
-    {
-      id: 'table-rxn',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Common organic reaction classifications',
-        headers: ['Reaction Type', 'Description'],
-        rows: [
-          ['<strong>Addition</strong>', 'Two reactants join to form a single product. (e.g. alkene + H₂ → alkane)'],
-          ['<strong>Substitution</strong>', 'An atom or group is replaced by a different atom or group. (e.g. alkane + halogen → halogenoalkane + hydrogen halide)'],
-          ['<strong>Oxidation</strong>', 'Addition of oxygen or removal of hydrogen. (e.g. alcohol → aldehyde)'],
-          ['<strong>Reduction</strong>', 'Addition of hydrogen or removal of oxygen. (e.g. alkene + H₂ → alkane)'],
-          ['<strong>Polymerisation</strong>', 'Many small molecules (monomers) join together to form a very large chain molecule (polymer).']
-        ]
-      },
-      terms: ['Addition reaction', 'Substitution reaction', 'Oxidation', 'Reduction', 'Polymerisation']
-    },
-    {
-      id: 'callout-breaking',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Covalent Bond Breaking (Fission)',
-        text: 'When a covalent bond breaks, it can do so in two ways:<br/><br/><strong>Homolytic Fission:</strong> The bond breaks evenly. Each atom takes one electron from the shared pair, forming two highly reactive <strong>free radicals</strong>. (A free radical is an atom or group with an unpaired electron, represented by •).<br/><br/><strong>Heterolytic Fission:</strong> The bond breaks unevenly. One atom takes both electrons from the shared covalent bond, forming a positive ion (cation) and a negative ion (anion). The more electronegative atom takes the electrons.'
-      },
-      terms: ['Homolytic fission', 'Heterolytic fission', 'Free radical']
-    },
-    {
-      id: 'list-curlies',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '<strong>Curly Arrows:</strong> Used to show the movement of electrons during organic reaction mechanisms.',
-          '<strong>Full-headed arrows:</strong> Show the movement of an <strong>electron pair</strong>. The arrow must start from a lone pair or a covalent bond and point to exactly where the electron pair is moving.',
-          '<strong>Half-headed (fish-hook) arrows:</strong> Show the movement of a <strong>single electron</strong>. They are used in radical mechanisms (like homolytic fission).'
-        ]
-      },
-      terms: ['Curly arrow', 'Fish-hook arrow']
-    },
-    {
-      id: 'callout-electrophile',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'What is an Electrophile?',
-        text: 'An <strong>electrophile</strong> ("electron-loving") is a species that is attracted to an electron-rich centre or area of high electron density (like a C=C double bond), where it accepts a pair of electrons to form a new covalent bond. Electrophiles are usually positive ions or molecules with a partial positive charge (δ+).'
-      },
-      terms: ['Electrophile']
-    },
-    {
-      id: 'h-hazards',
-      type: 'heading',
-      data: { text: 'Hazards and Risk Assessments', level: 2 },
-      terms: []
-    },
-    {
-      id: 'callout-risk',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: 'Hazard vs. Risk',
-        text: 'A <strong>hazard</strong> is an intrinsic property of a substance or procedure that has the potential to cause harm (e.g. toxic, flammable, corrosive).<br/><br/>A <strong>risk</strong> is the probability or chance that the hazard will actually cause harm in a particular scenario.<br/><br/><strong>Risk Assessments</strong> evaluate both the hazard and the risk, to determine necessary <strong>control measures</strong>. Examples of control measures include:<br/>• Using a fume cupboard for toxic gases<br/>• Wearing gloves and safety goggles for corrosive liquids<br/>• Keeping flammable liquids away from naked flames (using a water bath instead of a bunsen burner)<br/>• Using a lower and safer concentration or a smaller amount of a hazardous chemical'
-      },
-      terms: ['Hazard', 'Risk', 'Risk assessment', 'Control measure']
-    }
+    { id: 'objective', type: 'objective', data: { text: 'Understand the scope of organic chemistry. Know: homologous series, formula types, organic reaction classifications, covalent bond fission, and hazard vs risk.' } },
+    { id: 'h-series', type: 'heading', data: { text: 'Homologous Series', level: 2 } },
+    { id: 'svg-series', type: 'svg', data: {
+      caption: 'Major homologous series — functional group and general formula',
+      svg: `<svg viewBox="0 0 580 351" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="36" rx="4" fill="#1e293b"/><text x="75" y="23" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Series</text><text x="255" y="23" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Functional Group</text><text x="466" y="23" fill="white" font-weight="bold" font-size="12" text-anchor="middle">General Formula</text><line x1="150" y1="0" x2="150" y2="351" stroke="#475569" stroke-width="1"/><line x1="360" y1="0" x2="360" y2="351" stroke="#475569" stroke-width="1"/><rect x="0" y="36" width="580" height="45" fill="#dbeafe"/><text x="10" y="63" font-weight="bold" fill="#1d4ed8" font-size="13">Alkanes</text><text x="162" y="58" fill="#374151" font-size="11">C–C and C–H single bonds</text><text x="162" y="72" fill="#374151" font-size="11">No functional group</text><text x="370" y="64" fill="#1d4ed8" font-weight="bold" font-family="monospace" font-size="13">CₙH₂ₙ₊₂</text><rect x="0" y="81" width="580" height="45" fill="#d1fae5"/><text x="10" y="108" font-weight="bold" fill="#15803d" font-size="13">Alkenes</text><text x="162" y="108" fill="#374151" font-size="11">C=C double bond</text><text x="370" y="108" fill="#15803d" font-weight="bold" font-family="monospace" font-size="13">CₙH₂ₙ</text><rect x="0" y="126" width="580" height="45" fill="#ede9fe"/><text x="10" y="153" font-weight="bold" fill="#7c3aed" font-size="13">Alkynes</text><text x="162" y="153" fill="#374151" font-size="11">C≡C triple bond</text><text x="370" y="153" fill="#7c3aed" font-weight="bold" font-family="monospace" font-size="13">CₙH₂ₙ₋₂</text><rect x="0" y="171" width="580" height="45" fill="#fef3c7"/><text x="10" y="198" font-weight="bold" fill="#92400e" font-size="13">Alcohols</text><text x="162" y="198" fill="#374151" font-size="11">–OH (hydroxyl group)</text><text x="370" y="198" fill="#92400e" font-weight="bold" font-family="monospace" font-size="13">CₙH₂ₙ₊₁OH</text><rect x="0" y="216" width="580" height="45" fill="#fee2e2"/><text x="10" y="239" font-weight="bold" fill="#b91c1c" font-size="12">Halogenoalkanes</text><text x="162" y="239" fill="#374151" font-size="11">C–X (X = F, Cl, Br, or I)</text><text x="370" y="243" fill="#b91c1c" font-weight="bold" font-family="monospace" font-size="13">CₙH₂ₙ₊₁X</text><rect x="0" y="261" width="580" height="45" fill="#ffedd5"/><text x="10" y="284" font-weight="bold" fill="#c2410c" font-size="12">Carboxylic Acids</text><text x="162" y="284" fill="#374151" font-size="11">–COOH (carboxyl group)</text><text x="370" y="284" fill="#c2410c" font-weight="bold" font-family="monospace" font-size="12">CₙH₂ₙ₊₁COOH</text><rect x="0" y="306" width="580" height="45" fill="#ccfbf1"/><text x="10" y="329" font-weight="bold" fill="#0f766e" font-size="13">Cycloalkanes</text><text x="162" y="329" fill="#374151" font-size="11">Saturated –(CH₂)– ring</text><text x="370" y="329" fill="#0f766e" font-weight="bold" font-family="monospace" font-size="13">CₙH₂ₙ</text><rect x="0" y="0" width="580" height="351" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'callout-homologous', type: 'callout', data: {
+      style: 'key', title: 'Properties of a Homologous Series',
+      text: 'Members of the same homologous series:<br/>&#x2022; Same <strong>functional group</strong> &#x2192; similar chemical properties<br/>&#x2022; Differ by –CH&#x2082;– &#x2192; gradually changing physical properties (bp, solubility)<br/>&#x2022; Share the same <strong>general formula</strong><br/>&#x2022; Named using the same systematic (IUPAC) rules'
+    }},
+    { id: 'h-formula', type: 'heading', data: { text: 'Types of Formula', level: 2 } },
+    { id: 'svg-formula', type: 'svg', data: {
+      caption: 'Five formula types — butane (C₄H₁₀) as example',
+      svg: `<svg viewBox="0 0 580 290" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="80" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Formula Type</text><text x="245" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Definition</text><text x="462" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Butane Example</text><line x1="157" y1="0" x2="157" y2="290" stroke="#475569" stroke-width="1"/><line x1="333" y1="0" x2="333" y2="290" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="51" fill="#f0f9ff"/><text x="10" y="58" font-weight="bold" fill="#0c4a6e">Empirical</text><text x="164" y="58" fill="#374151" font-size="11">Simplest whole-number ratio</text><text x="341" y="62" fill="#0c4a6e" font-weight="bold" font-family="monospace" font-size="14">C₂H₅</text><rect x="0" y="85" width="580" height="51" fill="#fefce8"/><text x="10" y="109" font-weight="bold" fill="#713f12">Molecular</text><text x="164" y="109" fill="#374151" font-size="11">Actual number of each atom</text><text x="341" y="113" fill="#713f12" font-weight="bold" font-family="monospace" font-size="14">C₄H₁₀</text><rect x="0" y="136" width="580" height="51" fill="#f0fdf4"/><text x="10" y="160" font-weight="bold" fill="#14532d">Structural</text><text x="164" y="157" fill="#374151" font-size="11">Atoms in groups; connectivity clear</text><text x="164" y="171" fill="#374151" font-size="11">H atoms shown on each carbon</text><text x="341" y="163" fill="#14532d" font-family="monospace" font-size="12">CH₃CH₂CH₂CH₃</text><rect x="0" y="187" width="580" height="51" fill="#fdf4ff"/><text x="10" y="211" font-weight="bold" fill="#581c87">Displayed</text><text x="164" y="211" fill="#374151" font-size="11">Every atom and every bond shown</text><text x="341" y="200" font-family="monospace" font-size="10" fill="#581c87">H H H H</text><text x="341" y="212" font-family="monospace" font-size="10" fill="#581c87">H-C–C–C–C-H</text><text x="341" y="224" font-family="monospace" font-size="10" fill="#581c87">H H H H</text><rect x="0" y="238" width="580" height="52" fill="#fff7ed"/><text x="10" y="263" font-weight="bold" fill="#7c2d12">Skeletal</text><text x="164" y="262" fill="#374151" font-size="11">Carbon skeleton as zig-zag line;</text><text x="164" y="276" fill="#374151" font-size="11">H atoms on carbon omitted</text><polyline points="341,275 361,260 381,275 401,260" fill="none" stroke="#7c2d12" stroke-width="2.5"/><rect x="0" y="0" width="580" height="290" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'callout-displayed-limits', type: 'callout', data: {
+      style: 'warning', title: 'Limitation of Displayed Formulae',
+      text: 'Displayed formulae are drawn flat on paper with 90&#xB0; angles, bearing no resemblance to the real 3D shape (tetrahedral, 109.5&#xB0;). A CH&#x2083; branch drawn &#x201C;up&#x201D; or at the &#x201C;end&#x201D; can look like a different isomer but is often the same molecule rotated. Always check the IUPAC name before concluding two structures are different compounds.'
+    }},
+    { id: 'h-reactions', type: 'heading', data: { text: 'Organic Reaction Types', level: 2 } },
+    { id: 'svg-reactions', type: 'svg', data: {
+      caption: 'Five major organic reaction classifications',
+      svg: `<svg viewBox="0 0 580 215" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="100" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Reaction Type</text><text x="308" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">What Changes</text><text x="506" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Example</text><line x1="183" y1="0" x2="183" y2="215" stroke="#475569" stroke-width="1"/><line x1="433" y1="0" x2="433" y2="215" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="36" fill="#dbeafe"/><text x="10" y="57" font-weight="bold" fill="#1d4ed8">Addition</text><text x="190" y="57" fill="#374151" font-size="11">Two reactants form one product; nothing lost</text><text x="440" y="57" fill="#1d4ed8" font-size="10">alkene + H₂ → alkane</text><rect x="0" y="70" width="580" height="36" fill="#d1fae5"/><text x="10" y="93" font-weight="bold" fill="#15803d">Substitution</text><text x="190" y="93" fill="#374151" font-size="11">Atom or group replaced by another</text><text x="440" y="93" fill="#15803d" font-size="10">CH₄ + Cl₂ → CH₃Cl + HCl</text><rect x="0" y="106" width="580" height="36" fill="#fef3c7"/><text x="10" y="129" font-weight="bold" fill="#92400e">Oxidation</text><text x="190" y="129" fill="#374151" font-size="11">Gains oxygen or loses hydrogen</text><text x="440" y="129" fill="#92400e" font-size="10">alcohol → aldehyde</text><rect x="0" y="142" width="580" height="36" fill="#ede9fe"/><text x="10" y="165" font-weight="bold" fill="#6d28d9">Reduction</text><text x="190" y="165" fill="#374151" font-size="11">Loses oxygen or gains hydrogen</text><text x="440" y="165" fill="#6d28d9" font-size="10">alkene + H₂ → alkane</text><rect x="0" y="178" width="580" height="37" fill="#fce7f3"/><text x="10" y="201" font-weight="bold" fill="#9d174d">Polymerisation</text><text x="190" y="201" fill="#374151" font-size="11">Many monomers join into polymer chain</text><text x="440" y="201" fill="#9d174d" font-size="10">n(ethene) → poly(ethene)</text><rect x="0" y="0" width="580" height="215" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'h-fission', type: 'heading', data: { text: 'Covalent Bond Fission', level: 2 } },
+    { id: 'callout-breaking', type: 'callout', data: {
+      style: 'key', title: 'Homolytic vs Heterolytic Fission',
+      text: '<strong>Homolytic fission:</strong> Bond breaks evenly — each atom takes <em>one</em> electron, forming two <strong>free radicals</strong> (species with unpaired electron, shown as &#x2022;). Occurs in UV-initiated radical reactions (e.g. FRS of alkanes).<br/><br/><strong>Heterolytic fission:</strong> Bond breaks unevenly — one atom takes <em>both</em> electrons, forming a cation (&#x207A;) and an anion (&#x207B;). The more electronegative atom takes the pair. Occurs in polar/ionic mechanisms.'
+    }},
+    { id: 'svg-fission', type: 'svg', data: {
+      caption: 'Homolytic fission → radicals; heterolytic fission → ions',
+      svg: `<svg viewBox="0 0 580 160" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="2" y="2" width="276" height="156" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/><text x="140" y="22" text-anchor="middle" font-weight="bold" fill="#1d4ed8" font-size="13">HOMOLYTIC</text><text x="140" y="37" text-anchor="middle" fill="#374151" font-size="11">Each atom takes 1 electron</text><text x="55" y="72" font-family="monospace" font-size="15" fill="#1e293b">A ·· B</text><text x="80" y="88" fill="#64748b" font-size="10">(shared electron pair)</text><text x="28" y="122" font-family="monospace" font-size="18" fill="#16a34a">A·</text><text x="100" y="122" font-size="16" fill="#64748b">+</text><text x="128" y="122" font-family="monospace" font-size="18" fill="#16a34a">·B</text><text x="20" y="148" fill="#374151" font-size="10">Two free radicals formed</text><rect x="302" y="2" width="276" height="156" rx="8" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1.5"/><text x="440" y="22" text-anchor="middle" font-weight="bold" fill="#9d174d" font-size="13">HETEROLYTIC</text><text x="440" y="37" text-anchor="middle" fill="#374151" font-size="11">One atom takes both electrons</text><text x="355" y="72" font-family="monospace" font-size="15" fill="#1e293b">A ·· B</text><text x="380" y="88" fill="#64748b" font-size="10">(shared electron pair)</text><text x="328" y="122" font-family="monospace" font-size="18" fill="#dc2626">A⁺</text><text x="400" y="122" font-size="16" fill="#64748b">+</text><text x="428" y="122" font-family="monospace" font-size="18" fill="#dc2626">:B⁻</text><text x="318" y="148" fill="#374151" font-size="10">Cation (+) + anion (–) formed</text></svg>`
+    }},
+    { id: 'callout-electrophile', type: 'callout', data: {
+      style: 'key', title: 'Electrophiles and Nucleophiles',
+      text: '<strong>Electrophile</strong> (&#x201C;electron-loving&#x201D;): attracted to electrons; <em>accepts</em> an electron pair to form a bond. Usually a cation or &#x03B4;+ species. Examples: H&#x207A;, Br&#x207A;, HBr (H end = &#x03B4;&#x207A;).<br/><br/><strong>Nucleophile</strong> (&#x201C;nucleus-loving&#x201D;): attacks electron-poor centres; <em>donates</em> an electron pair. Usually has a lone pair or negative charge. Examples: OH&#x207B;, Br&#x207B;, NH&#x2083;, H&#x2082;O.'
+    }},
+    { id: 'h-hazards', type: 'heading', data: { text: 'Hazards and Risk Assessment', level: 2 } },
+    { id: 'callout-risk', type: 'callout', data: {
+      style: 'warning', title: 'Hazard vs Risk',
+      text: 'A <strong>hazard</strong> is an intrinsic property with potential to cause harm (e.g. toxic, flammable, corrosive).<br/>A <strong>risk</strong> is the probability that the hazard will cause harm in a specific context.<br/><br/><strong>Control measures</strong> reduce risk: fume cupboard for toxic vapours; gloves/goggles for corrosives; water bath instead of naked flame for flammables; using smaller quantities of hazardous reagents.'
+    }}
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'table-terms', prompt: 'Define the terms: saturated, unsaturated, functional group, and homologous series.' },
+      { id: 'c1', blockId: 'svg-series', prompt: 'State the functional group and general formula for: alkanes, alkenes, alcohols, halogenoalkanes, and carboxylic acids.' },
       { id: 'c2', blockId: 'callout-homologous', prompt: 'State four characteristics that all members of the same homologous series share.' },
-      { id: 'c3', blockId: 'table-formula', prompt: 'Explain the difference between molecular, structural, displayed, and skeletal formulas.' },
-      { id: 'c6', blockId: 'list-3d', prompt: 'How are 3D stereochemical bond arrangements drawn on paper?' },
-      { id: 'c4', blockId: 'callout-breaking', prompt: 'Distinguish between homolytic and heterolytic fission. What is formed in each case?' },
+      { id: 'c3', blockId: 'svg-formula', prompt: 'Distinguish between molecular, structural, displayed, and skeletal formulae using butane as an example.' },
+      { id: 'c4', blockId: 'callout-breaking', prompt: 'Distinguish between homolytic and heterolytic fission. What type of species is formed in each case?' },
       { id: 'c5', blockId: 'callout-risk', prompt: 'Explain the difference between a hazard and a risk, and give two examples of control measures.' }
     ],
-    summaryText: 'Organic chemistry = chemistry of C-containing compounds. Homologous series = same functional group, same general formula. Formula types: empirical, molecular, structural, displayed, skeletal. Reactions: addition, substitution, oxidation, reduction, polymerisation. Fission: homolytic (forms radicals) vs heterolytic (forms ions). Hazard = potential to harm; risk = likelihood of harm occurring.',
+    summaryText: 'Organic = chemistry of C compounds. Homologous series: same functional group, same general formula, gradual property changes. Formula types: empirical (ratio), molecular (actual), structural (groups), displayed (all bonds), skeletal (C backbone). Reactions: addition, substitution, oxidation, reduction, polymerisation. Fission: homolytic (1e each → radicals) vs heterolytic (2e to one atom → ions).',
     ready: false
   },
-  evidence: []
+  evidence: [], mentions: []
 };
-export default note_chemistry_1_4_0;

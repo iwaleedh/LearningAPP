@@ -573,6 +573,20 @@
     fill: var(--note-svg-muted) !important;
 }
 
+/* Medium-grey non-text shapes → semi-visible on dark surface */
+.nb-svg-container svg [fill="#64748b" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#6b7280" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#94a3b8" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#9ca3af" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#a1a1aa" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#d1d5db" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#e5e7eb" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#e2e8f0" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#f1f5f9" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#f8fafc" i]:not(text):not(tspan) {
+    fill: var(--note-svg-grid) !important;
+}
+
 .nb-svg-container svg [stroke="#000" i],
 .nb-svg-container svg [stroke="#111827" i],
 .nb-svg-container svg [stroke="#1f2937" i],
@@ -589,6 +603,11 @@
     stroke: var(--note-svg-muted) !important;
 }
 
+/* Medium-grey strokes → faint grid / tick lines */
+.nb-svg-container svg [stroke="#64748b" i],
+.nb-svg-container svg [stroke="#6b7280" i],
+.nb-svg-container svg [stroke="#94a3b8" i],
+.nb-svg-container svg [stroke="#9ca3af" i],
 .nb-svg-container svg [stroke="#ddd" i],
 .nb-svg-container svg [stroke="#e5e7eb" i],
 .nb-svg-container svg [stroke="#eee" i],

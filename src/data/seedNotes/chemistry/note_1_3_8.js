@@ -1,131 +1,136 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 3 · Subtopic 8
  * "Bond length and bond strength"
- * Source: Pearson Edexcel IAL Chemistry — Section 3B.1 / 3B.3
+ * Source: Pearson Edexcel IAL Chemistry — Section 3E
  */
 export const note_chemistry_1_3_8 = {
   blocks: [
     {
-      id: 'objective',
+      id: 'obj',
       type: 'objective',
-      data: { text: 'Understand electronegativity (Pauling scale) and bond polarity. Understand bond length and bond enthalpy. Know how bond order, atomic radius, and electronegativity affect bond properties and inductive effects.' },
+      data: { text: 'Explain the relationship between bond order, bond length and bond enthalpy. Use data to compare single, double and triple bonds. Explain trends in terms of the number of shared electron pairs.' },
       terms: []
     },
     {
-      id: 'h-electronegativity',
+      id: 'h1',
       type: 'heading',
-      data: { text: 'Electronegativity & Polar Bonds', level: 2 },
+      data: { text: 'Bond Order, Length and Enthalpy', level: 2 },
       terms: []
     },
     {
-      id: 'p-eneg-def',
-      type: 'paragraph',
+      id: 'svg-bond-data',
+      type: 'svg',
       data: {
-        text: '<strong>Electronegativity</strong> is a measure of the tendency of an atom to attract a bonding pair of electrons in a covalent bond. The Pauling scale is typically used: Fluorine is the most electronegative (4.0), carbon is 2.5, and hydrogen is 2.1.'
-      }
+        caption: 'As bond order increases (single → double → triple), bond length decreases and bond enthalpy increases. More shared electron pairs → stronger attraction between nuclei → shorter, harder-to-break bond.',
+        svg: `<svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+
+  <!-- LEFT: Bond length bar chart (shorter = longer bar for inverse) -->
+  <rect x="5" y="5" width="320" height="270" rx="10" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <text x="165" y="23" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="13">Bond Length (pm) — shorter is stronger</text>
+
+  <!-- axis -->
+  <line x1="120" y1="40" x2="120" y2="225" stroke="#374151" stroke-width="1.5"/>
+  <line x1="120" y1="225" x2="305" y2="225" stroke="#374151" stroke-width="1.5"/>
+
+  <!-- C–C  single: 154 pm -->
+  <rect x="120" y="75" width="154" height="32" rx="3" fill="#34d399" stroke="#10b981" stroke-width="1"/>
+  <text x="115" y="96" text-anchor="end" fill="#065f46" font-size="10">C–C</text>
+  <text x="280" y="96" fill="#065f46" font-weight="bold" font-size="10">154 pm</text>
+
+  <!-- C=C  double: 134 pm -->
+  <rect x="120" y="123" width="134" height="32" rx="3" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="115" y="144" text-anchor="end" fill="#1e40af" font-size="10">C=C</text>
+  <text x="260" y="144" fill="#1e40af" font-weight="bold" font-size="10">134 pm</text>
+
+  <!-- C≡C  triple: 120 pm -->
+  <rect x="120" y="171" width="120" height="32" rx="3" fill="#a855f7" stroke="#7c3aed" stroke-width="1"/>
+  <text x="115" y="192" text-anchor="end" fill="#7c3aed" font-size="10">C≡C</text>
+  <text x="246" y="192" fill="#7c3aed" font-weight="bold" font-size="10">120 pm</text>
+
+  <!-- scale marks -->
+  <text x="120" y="240" text-anchor="middle" fill="#374151" font-size="9">0</text>
+  <text x="220" y="240" text-anchor="middle" fill="#374151" font-size="9">100</text>
+  <text x="274" y="240" text-anchor="middle" fill="#374151" font-size="9">154 pm</text>
+  <text x="165" y="258" text-anchor="middle" fill="#374151" font-size="10">← Shorter bond = stronger bond</text>
+
+  <!-- RIGHT: Bond enthalpy bar chart -->
+  <rect x="340" y="5" width="335" height="270" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="507" y="23" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="13">Bond Enthalpy (kJ mol⁻¹)</text>
+
+  <!-- axis -->
+  <line x1="405" y1="40" x2="405" y2="225" stroke="#374151" stroke-width="1.5"/>
+  <line x1="405" y1="225" x2="660" y2="225" stroke="#374151" stroke-width="1.5"/>
+
+  <!-- C–C single: 347 kJ/mol → scaled to ~100px -->
+  <rect x="405" y="75" width="100" height="32" rx="3" fill="#34d399" stroke="#10b981" stroke-width="1"/>
+  <text x="400" y="96" text-anchor="end" fill="#065f46" font-size="10">C–C</text>
+  <text x="510" y="96" fill="#065f46" font-weight="bold" font-size="10">347 kJ mol⁻¹</text>
+
+  <!-- C=C double: 614 kJ/mol → ~178px -->
+  <rect x="405" y="123" width="178" height="32" rx="3" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="400" y="144" text-anchor="end" fill="#1e40af" font-size="10">C=C</text>
+  <text x="588" y="144" fill="#1e40af" font-weight="bold" font-size="10">614 kJ mol⁻¹</text>
+
+  <!-- C≡C triple: 839 kJ/mol → ~243px -->
+  <rect x="405" y="171" width="243" height="32" rx="3" fill="#a855f7" stroke="#7c3aed" stroke-width="1"/>
+  <text x="400" y="192" text-anchor="end" fill="#7c3aed" font-size="10">C≡C</text>
+  <text x="653" y="192" fill="#7c3aed" font-weight="bold" font-size="10">839 kJ mol⁻¹</text>
+
+  <!-- scale marks -->
+  <text x="405" y="240" text-anchor="middle" fill="#374151" font-size="9">0</text>
+  <text x="505" y="240" text-anchor="middle" fill="#374151" font-size="9">347</text>
+  <text x="583" y="240" text-anchor="middle" fill="#374151" font-size="9">614</text>
+  <text x="507" y="258" text-anchor="middle" fill="#374151" font-size="10">Higher enthalpy = more energy to break = stronger bond</text>
+</svg>`
+      },
+      terms: ['Bond enthalpy', 'Bond length', 'Bond order']
     },
     {
-      id: 'list-eneg-trends',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '<strong>Nuclear Charge:</strong> More protons exert a stronger pull on the bonding pair (e.g., F (9 protons) attracts electrons more strongly than C (6 protons), despite similar shielding).',
-          '<strong>Atomic Radius & Shielding:</strong> Chlorine (3.0) is less electronegative than Fluorine (4.0). Although Cl has 17 protons, the bonding pair is in the 3rd principal shell, further from the nucleus and shielded by more inner-shell electrons.'
-        ]
-      }
-    },
-    {
-      id: 'callout-inductive',
+      id: 'key-trend',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'Polar Bonds and Inductive Effects',
-        text: 'When atoms of different electronegativities bond, the electron pair is pulled towards the more electronegative atom, creating a <strong>polar bond</strong> with partial charges (e.g., C<sup>δ+</sup> – F<sup>δ−</sup>).<br/><br/>An atom or group that pulls electron density away from a carbon chain is said to exert a <strong>negative inductive effect (–I)</strong> (e.g., halogens, oxygen). This electron-withdrawing effect makes the carbon atom slightly positive (electron deficient), which is crucial for determining reactivity in organic molecules (e.g., susceptibility to nucleophilic attack).'
+        title: 'Bond Order Trend',
+        text: '<strong>More shared electron pairs → more electron density between nuclei → stronger nuclear attraction → shorter, stronger bond.</strong><br/><br/><table style="border-collapse:collapse;width:100%;font-size:12px"><tr style="background:#fde68a"><th style="padding:4px 8px;text-align:left;border:1px solid #f59e0b">Bond</th><th style="padding:4px 8px;border:1px solid #f59e0b">Shared pairs</th><th style="padding:4px 8px;border:1px solid #f59e0b">Length (pm)</th><th style="padding:4px 8px;border:1px solid #f59e0b">Enthalpy (kJ mol⁻¹)</th></tr><tr><td style="padding:4px 8px;border:1px solid #fcd34d">C–C (single)</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">1</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">154</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">347</td></tr><tr style="background:#fef9e7"><td style="padding:4px 8px;border:1px solid #fcd34d">C=C (double)</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">2</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">134</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">614</td></tr><tr><td style="padding:4px 8px;border:1px solid #fcd34d">C≡C (triple)</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">3</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">120</td><td style="padding:4px 8px;border:1px solid #fcd34d;text-align:center">839</td></tr></table>'
       },
-      terms: ['Inductive effect', 'Polar bond']
+      terms: ['Bond order', 'Bond enthalpy', 'Bond length']
     },
     {
-      id: 'h-bond-length',
-      type: 'heading',
-      data: { text: 'Bond Length', level: 2 },
-      terms: []
-    },
-    {
-      id: 'callout-length',
+      id: 'tip-average',
       type: 'callout',
       data: {
-        style: 'key',
-        title: 'Definition: Bond Length',
-        text: '<strong>Bond length</strong> is the average distance between the nuclei of two bonded atoms.<br/><br/>Bond length decreases as:<br/>• <strong>Bond order increases:</strong> triple < double < single (more electron pairs pull nuclei closer)<br/>• <strong>Atomic radius decreases:</strong> smaller atoms → shorter bonds<br/>• <strong>Electronegativity difference increases:</strong> greater pull on electrons → shorter bond'
+        style: 'tip',
+        title: 'Exam Tips on Bond Enthalpy',
+        text: '• Bond enthalpies are <strong>mean (average)</strong> values — the C–H bond enthalpy in CH₄ (412 kJ mol⁻¹) is slightly different from C–H in C₂H₆ due to the different molecular environments.<br/>• Bond breaking is <strong>endothermic</strong> (+ΔH); bond forming is <strong>exothermic</strong> (−ΔH).<br/>• Use: ΔH°rxn ≈ Σ(bonds broken) − Σ(bonds formed) — gives an estimate, not an exact value (because mean values are used).'
       },
-      terms: ['Bond length']
-    },
+      terms: ['Mean bond enthalpy', 'Endothermic', 'Exothermic']
+    }
+  ],
+  presentationSlides: [
     {
-      id: 'table-len',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Typical bond lengths',
-        headers: ['Bond', 'Approximate Bond Length (nm)'],
-        rows: [
-          ['C–C (single)', '0.154'],
-          ['C=C (double)', '0.134'],
-          ['C≡C (triple)', '0.120'],
-          ['C–H', '0.109'],
-          ['C–F', '0.135'],
-          ['C–Cl', '0.177']
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-enthalpy',
-      type: 'heading',
-      data: { text: 'Bond Enthalpy (Bond Energy)', level: 2 },
-      terms: []
-    },
-    {
-      id: 'callout-enthalpy',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Definition: Bond Enthalpy',
-        text: '<strong>Bond enthalpy</strong> (bond energy) is the energy required to break one mole of a specific type of covalent bond in the gaseous state, averaged over a range of similar molecules.<br/><br/>Units: kJ mol⁻¹. Bond breaking is always <strong>endothermic</strong> (+ve); bond forming is always <strong>exothermic</strong> (−ve).'
-      },
-      terms: ['Bond enthalpy', 'Mean bond enthalpy']
-    },
-    {
-      id: 'callout-strength',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Bond strength relationships',
-        text: '• <strong>Higher bond order</strong> → stronger bond (more shared electrons pulling nuclei together)<br/>• <strong>Shorter bond</strong> → generally stronger bond<br/>• <strong>More electronegative atoms</strong> → stronger bond<br/><br/>C≡C (837 kJ mol⁻¹) > C=C (612 kJ mol⁻¹) > C–C (348 kJ mol⁻¹)'
-      },
-      terms: []
-    },
-    {
-      id: 'callout-delta-h',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Using bond enthalpies to estimate ΔH',
-        text: 'ΔH ≈ Σ(bonds broken) − Σ(bonds formed)<br/><br/>Example: CH₄ + 2O₂ → CO₂ + 2H₂O<br/>Broken: 4(C–H) + 2(O=O) = 4(413) + 2(498) = 1652 + 996 = 2648 kJ<br/>Formed: 2(C=O) + 4(O–H) = 2(743) + 4(463) = 1486 + 1852 = 3338 kJ<br/>ΔH ≈ 2648 − 3338 = <strong>−690 kJ mol⁻¹</strong><br/><br/>(Negative = exothermic combustion reaction ✓)'
-      },
-      terms: []
+      layout: 'bento',
+      title: 'Bond Length & Bond Strength',
+      subtitle: 'WCH11 — Chemistry Topic 3.8',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '📏', title: 'Bond Length', html: 'Distance between bonded nuclei.<br/><strong>Single > Double > Triple</strong> (length decreases with bond order).<br/>e.g. C–C: 154 pm; C=C: 134 pm; C≡C: 120 pm.' },
+        { delay: 1, colSpan: 1, icon: '💪', title: 'Bond Enthalpy', html: 'Energy to break 1 mol of bonds in gaseous molecules (kJ mol⁻¹).<br/><strong>Higher bond order → greater bond enthalpy.</strong><br/>C–C: 347; C=C: 612; C≡C: 838 kJ mol⁻¹.' },
+        { delay: 2, colSpan: 1, icon: '🔬', title: 'Factors Affecting Strength', html: 'Bond order: triple > double > single.<br/>Atom size: smaller atoms → shorter bonds → stronger.<br/>H–F (567) > H–Cl (432) > H–Br (366) > H–I (298) kJ mol⁻¹.' },
+        { delay: 3, colSpan: 2, icon: '🧮', title: 'Using Average Bond Enthalpies', html: 'ΔH ≈ Σ(bonds broken) − Σ(bonds formed)<br/>Breaking bonds = endothermic (+ve); forming bonds = exothermic (−ve).<br/>Values are <em>averages</em> — results are approximate (± a few kJ mol⁻¹).' },
+      ]
     }
   ],
   recall: {
     enabled: true,
+    summaryText: 'Bond order: single < double < triple. As bond order increases: length decreases (154→134→120 pm), enthalpy increases (347→614→839 kJ mol⁻¹). Reason: more shared pairs → stronger e⁻ attraction → shorter, stronger bond. Bond enthalpy values are mean values. Bond breaking = endothermic; formation = exothermic.',
     cues: [
-      { id: 'c0', blockId: 'callout-inductive', prompt: 'Define electronegativity and explain what is meant by a negative inductive effect (–I).' },
-      { id: 'c1', blockId: 'callout-length', prompt: 'How does bond length change as you go from a single to a double to a triple bond between the same two atoms? Explain why.' },
-      { id: 'c2', blockId: 'callout-enthalpy', prompt: 'Define bond enthalpy. Is bond breaking endothermic or exothermic?' },
-      { id: 'c3', blockId: 'callout-delta-h', prompt: 'State the formula for estimating ΔH using mean bond enthalpies.' }
+      { id: 'c1', blockId: 'svg-bond-data', prompt: 'State the bond lengths and enthalpies for C–C, C=C and C≡C. What trend do you observe?' },
+      { id: 'c2', blockId: 'key-trend', prompt: 'Explain why a C≡C bond is shorter and stronger than a C–C bond.' },
+      { id: 'c3', blockId: 'tip-average', prompt: 'Why are bond enthalpy values described as "mean" values? When would comparing C–H in different molecules give slightly different results?' },
+      { id: 'c4', blockId: 'tip-average', prompt: 'State the sign convention for bond enthalpy in bond breaking vs bond forming, and write the equation to estimate ΔH°rxn from mean bond enthalpies.' },
+      { id: 'c5', blockId: 'key-trend', prompt: 'Using bond data, predict whether C=O or C–O would be shorter. Justify with reference to shared electron pairs.' }
     ],
-    summaryText: 'Electronegativity is the tendency of an atom to attract a bonding pair of electrons. Atoms like halogens exert a negative inductive effect (–I), creating polar bonds (Cδ+ – Xδ−). Bond length = average internuclear distance. Decreases with higher bond order, smaller atoms, and higher electronegativity. Bond enthalpy = energy to break 1 mol of bond in gas phase (endothermic). ΔH ≈ Σ(bonds broken) − Σ(bonds formed).',
-    ready: false
+    ready: true
   },
-  evidence: []
+  evidence: [],
+  mentions: []
 };
-export default note_chemistry_1_3_8;

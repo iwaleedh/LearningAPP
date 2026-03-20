@@ -1,86 +1,35 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 1
  * "IUPAC nomenclature of alkanes and branched-chain compounds"
- * Source: Pearson Edexcel IAL Chemistry — Section 4A.4
  */
 export const note_chemistry_1_4_1 = {
   blocks: [
-    {
-      id: 'objective',
-      type: 'objective',
-      data: { text: 'Apply IUPAC nomenclature rules to name straight-chain and branched-chain alkanes, halogenoalkanes, and alcohols. Identify the longest carbon chain and correctly number substituents.' },
-      terms: []
-    },
-    {
-      id: 'h-prefix',
-      type: 'heading',
-      data: { text: 'Carbon Chain Prefixes (must be memorised)', level: 2 },
-      terms: []
-    },
-    {
-      id: 'table-prefix',
-      type: 'comparisonTable',
-      data: {
-        caption: 'IUPAC number prefixes for carbon count',
-        headers: ['No. of C atoms', 'Prefix', 'Alkane name', 'Formula'],
-        rows: [
-          ['1', 'meth-', 'methane', 'CH₄'],
-          ['2', 'eth-', 'ethane', 'C₂H₆'],
-          ['3', 'prop-', 'propane', 'C₃H₈'],
-          ['4', 'but-', 'butane', 'C₄H₁₀'],
-          ['5', 'pent-', 'pentane', 'C₅H₁₂'],
-          ['6', 'hex-', 'hexane', 'C₆H₁₄'],
-          ['7', 'hept-', 'heptane', 'C₇H₁₆'],
-          ['8', 'oct-', 'octane', 'C₈H₁₈']
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'h-rules',
-      type: 'heading',
-      data: { text: 'IUPAC Naming Rules', level: 2 },
-      terms: []
-    },
-    {
-      id: 'list-rules',
-      type: 'list',
-      data: {
-        style: 'ordered',
-        items: [
-          '<strong>Find the longest continuous carbon chain</strong> — this gives the parent name (e.g. pentane for 5 carbons). Be careful: the longest chain is not always drawn horizontally!',
-          '<strong>Identify the principal functional group</strong> (like -OH, or C=C) as this determines the ending (suffix) of the name.',
-          '<strong>Number the chain</strong> from the end that gives the principal functional group the lowest number. If only alkyl/halogen substituents are present, number from the end closest to a branch to give substituents the <em>lowest possible numbers</em>.',
-          '<strong>Name substituents</strong> using alkyl groups: methyl (–CH₃), ethyl (–C₂H₅), propyl (–C₃H₇), etc. Halogen substituents: fluoro-, chloro-, bromo-, iodo-.',
-          '<strong>Use multipliers</strong> if the same substituent appears more than once: di-, tri-, tetra-.',
-          '<strong>Write in alphabetical order</strong> (ignoring di-, tri- etc., but not iso- / cyclo-) then end with the base alkane name.',
-          '<strong>Punctuation rules:</strong> Numbers are separated from numbers by commas (e.g., 2,2-dimethyl...). Numbers are separated from letters by hyphens (e.g., 2-methyl...). There are no spaces in the main part of the name.'
-        ]
-      },
-      terms: ['IUPAC nomenclature', 'Alkyl group', 'Substituent']
-    },
-    {
-      id: 'callout-examples',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'Worked Examples & Past Paper Names',
-        text: '<strong>CH₃CH(CH₃)CH₂CH₃:</strong><br/>Longest chain = 4 C (butane). Branch = methyl on C-2.<br/>Name: <strong>2-methylbutane</strong><br/><br/><strong>CH₃CH(CH₃)CH(CH₃)CH₃:</strong><br/>Longest chain = 4 C (butane). Two methyl groups on C-2 and C-3.<br/>Name: <strong>2,3-dimethylbutane</strong><br/><br/><strong>CH₃CH(Br)CH₂CH₃:</strong><br/>Longest chain = 4 C (butane). Bromo on C-2.<br/>Name: <strong>2-bromobutane</strong><br/><br/><strong>Past Paper Trick Examples:</strong><br/>• A butane chain with a Cl on C-2 and a methyl on C-3 is <strong>2-chloro-3-methylbutane</strong> (alphabetical: chloro before methyl).<br/>• <strong>2,2,4-trimethylhexane:</strong> The longest chain is 6 carbons. Numbering from the end that gives lower location numbers (2,2,4, NOT 3,5,5).'
-      },
-      terms: []
-    }
+    { id: 'objective', type: 'objective', data: { text: 'Apply IUPAC nomenclature rules to name straight-chain and branched-chain alkanes, halogenoalkanes, and alcohols. Identify the longest carbon chain and correctly number substituents.' } },
+    { id: 'h-prefix', type: 'heading', data: { text: 'Carbon Chain Prefixes', level: 2 } },
+    { id: 'svg-prefix', type: 'svg', data: {
+      caption: 'IUPAC prefixes for carbon chain length (must be memorised)',
+      svg: `<svg viewBox="0 0 580 338" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="60" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">C Atoms</text><text x="190" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Prefix</text><text x="350" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Alkane Name</text><text x="502" y="22" fill="white" font-weight="bold" font-size="12" text-anchor="middle">Molecular Formula</text><line x1="110" y1="0" x2="110" y2="338" stroke="#475569" stroke-width="1"/><line x1="270" y1="0" x2="270" y2="338" stroke="#475569" stroke-width="1"/><line x1="430" y1="0" x2="430" y2="338" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="38" fill="#e0f2fe"/><text x="60" y="58" font-weight="bold" fill="#0369a1" font-size="14" text-anchor="middle">1</text><text x="190" y="58" font-weight="bold" fill="#0369a1" font-size="14" text-anchor="middle">meth-</text><text x="350" y="58" fill="#0c4a6e" font-size="13" text-anchor="middle">methane</text><text x="502" y="58" fill="#0c4a6e" font-family="monospace" text-anchor="middle">CH₄</text><rect x="0" y="72" width="580" height="38" fill="#f0fdf4"/><text x="60" y="96" font-weight="bold" fill="#15803d" font-size="14" text-anchor="middle">2</text><text x="190" y="96" font-weight="bold" fill="#15803d" font-size="14" text-anchor="middle">eth-</text><text x="350" y="96" fill="#14532d" font-size="13" text-anchor="middle">ethane</text><text x="502" y="96" fill="#14532d" font-family="monospace" text-anchor="middle">C₂H₆</text><rect x="0" y="110" width="580" height="38" fill="#fef3c7"/><text x="60" y="134" font-weight="bold" fill="#92400e" font-size="14" text-anchor="middle">3</text><text x="190" y="134" font-weight="bold" fill="#92400e" font-size="14" text-anchor="middle">prop-</text><text x="350" y="134" fill="#713f12" font-size="13" text-anchor="middle">propane</text><text x="502" y="134" fill="#713f12" font-family="monospace" text-anchor="middle">C₃H₈</text><rect x="0" y="148" width="580" height="38" fill="#fce7f3"/><text x="60" y="172" font-weight="bold" fill="#9d174d" font-size="14" text-anchor="middle">4</text><text x="190" y="172" font-weight="bold" fill="#9d174d" font-size="14" text-anchor="middle">but-</text><text x="350" y="172" fill="#831843" font-size="13" text-anchor="middle">butane</text><text x="502" y="172" fill="#831843" font-family="monospace" text-anchor="middle">C₄H₁₀</text><rect x="0" y="186" width="580" height="38" fill="#ede9fe"/><text x="60" y="210" font-weight="bold" fill="#6d28d9" font-size="14" text-anchor="middle">5</text><text x="190" y="210" font-weight="bold" fill="#6d28d9" font-size="14" text-anchor="middle">pent-</text><text x="350" y="210" fill="#4c1d95" font-size="13" text-anchor="middle">pentane</text><text x="502" y="210" fill="#4c1d95" font-family="monospace" text-anchor="middle">C₅H₁₂</text><rect x="0" y="224" width="580" height="38" fill="#e0f2fe"/><text x="60" y="248" font-weight="bold" fill="#0369a1" font-size="14" text-anchor="middle">6</text><text x="190" y="248" font-weight="bold" fill="#0369a1" font-size="14" text-anchor="middle">hex-</text><text x="350" y="248" fill="#0c4a6e" font-size="13" text-anchor="middle">hexane</text><text x="502" y="248" fill="#0c4a6e" font-family="monospace" text-anchor="middle">C₆H₁₄</text><rect x="0" y="262" width="580" height="38" fill="#f0fdf4"/><text x="60" y="286" font-weight="bold" fill="#15803d" font-size="14" text-anchor="middle">7</text><text x="190" y="286" font-weight="bold" fill="#15803d" font-size="14" text-anchor="middle">hept-</text><text x="350" y="286" fill="#14532d" font-size="13" text-anchor="middle">heptane</text><text x="502" y="286" fill="#14532d" font-family="monospace" text-anchor="middle">C₇H₁₆</text><rect x="0" y="300" width="580" height="38" fill="#fef3c7"/><text x="60" y="324" font-weight="bold" fill="#92400e" font-size="14" text-anchor="middle">8</text><text x="190" y="324" font-weight="bold" fill="#92400e" font-size="14" text-anchor="middle">oct-</text><text x="350" y="324" fill="#713f12" font-size="13" text-anchor="middle">octane</text><text x="502" y="324" fill="#713f12" font-family="monospace" text-anchor="middle">C₈H₁₈</text><rect x="0" y="0" width="580" height="338" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'h-rules', type: 'heading', data: { text: 'IUPAC Naming Rules — 7 Steps', level: 2 } },
+    { id: 'svg-naming', type: 'svg', data: {
+      caption: 'Systematic IUPAC naming procedure for organic compounds',
+      svg: `<svg viewBox="0 0 580 324" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="290" y="22" fill="white" font-weight="bold" font-size="13" text-anchor="middle">IUPAC Naming — Step by Step</text><rect x="0" y="34" width="580" height="41" fill="#f8fafc"/><circle cx="22" cy="55" r="13" fill="#6366f1"/><text x="22" y="60" fill="white" font-weight="bold" font-size="13" text-anchor="middle">1</text><text x="42" y="52" fill="#1e293b" font-weight="bold" font-size="12">Find the longest continuous carbon chain</text><text x="42" y="67" fill="#374151" font-size="11">This gives the parent name prefix (e.g. 5 carbons = pent- → pentane)</text><rect x="0" y="75" width="580" height="41" fill="#f0f9ff"/><circle cx="22" cy="96" r="13" fill="#0369a1"/><text x="22" y="101" fill="white" font-weight="bold" font-size="13" text-anchor="middle">2</text><text x="42" y="93" fill="#1e293b" font-weight="bold" font-size="12">Identify the principal functional group</text><text x="42" y="108" fill="#374151" font-size="11">Gives the suffix: –ane (alkane), –ene (alkene), –ol (alcohol), –al (aldehyde)</text><rect x="0" y="116" width="580" height="41" fill="#f8fafc"/><circle cx="22" cy="137" r="13" fill="#6366f1"/><text x="22" y="142" fill="white" font-weight="bold" font-size="13" text-anchor="middle">3</text><text x="42" y="134" fill="#1e293b" font-weight="bold" font-size="12">Number the chain from the end giving the lowest locant to the main group</text><text x="42" y="149" fill="#374151" font-size="11">Principal functional group (C=C, –OH, etc.) must have lowest possible number</text><rect x="0" y="157" width="580" height="41" fill="#f0f9ff"/><circle cx="22" cy="178" r="13" fill="#0369a1"/><text x="22" y="183" fill="white" font-weight="bold" font-size="13" text-anchor="middle">4</text><text x="42" y="175" fill="#1e293b" font-weight="bold" font-size="12">If no principal group, number to give substituents the lowest locants</text><text x="42" y="190" fill="#374151" font-size="11">Choose the end closest to the first branch point</text><rect x="0" y="198" width="580" height="41" fill="#f8fafc"/><circle cx="22" cy="219" r="13" fill="#6366f1"/><text x="22" y="224" fill="white" font-weight="bold" font-size="13" text-anchor="middle">5</text><text x="42" y="216" fill="#1e293b" font-weight="bold" font-size="12">Name substituents with alkyl or halogen prefixes</text><text x="42" y="231" fill="#374151" font-size="11">Alkyl: methyl (–CH₃), ethyl (–C₂H₅). Halogen: fluoro, chloro, bromo, iodo</text><rect x="0" y="239" width="580" height="41" fill="#f0f9ff"/><circle cx="22" cy="260" r="13" fill="#0369a1"/><text x="22" y="265" fill="white" font-weight="bold" font-size="13" text-anchor="middle">6</text><text x="42" y="257" fill="#1e293b" font-weight="bold" font-size="12">Use multipliers for repeated substituents</text><text x="42" y="272" fill="#374151" font-size="11">di- (×2), tri- (×3), tetra- (×4). These are ignored when sorting alphabetically</text><rect x="0" y="280" width="580" height="44" fill="#f8fafc"/><circle cx="22" cy="302" r="13" fill="#6366f1"/><text x="22" y="307" fill="white" font-weight="bold" font-size="13" text-anchor="middle">7</text><text x="42" y="296" fill="#1e293b" font-weight="bold" font-size="12">Write substituents alphabetically, then add the base chain name</text><text x="42" y="310" fill="#374151" font-size="11">Numbers from letters: hyphens (2-methyl). Numbers from numbers: commas (2,3-di)</text><rect x="0" y="0" width="580" height="324" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'callout-examples', type: 'callout', data: {
+      style: 'worked', title: 'Worked Examples',
+      text: '<strong>CH₃CH(CH₃)CH₂CH₃:</strong><br/>Longest chain = 4 C (butane). Methyl branch on C-2.<br/>Name: <strong>2-methylbutane</strong><br/><br/><strong>CH₃CH(CH₃)CH(CH₃)CH₃:</strong><br/>Longest chain = 4 C (butane). Two methyl groups on C-2 and C-3.<br/>Name: <strong>2,3-dimethylbutane</strong><br/><br/><strong>CH₃CH(Br)CH₂CH₃:</strong><br/>Longest chain = 4 C (butane). Bromo group on C-2.<br/>Name: <strong>2-bromobutane</strong><br/><br/><strong>Past paper trick:</strong> A 4-C chain with Cl on C-2 and methyl on C-3 is <strong>2-chloro-3-methylbutane</strong> (alphabetical: chloro before methyl).'
+    }}
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'table-prefix', prompt: 'State the IUPAC prefix for chains of 1, 2, 3, 4, 5, and 6 carbon atoms.' },
-      { id: 'c2', blockId: 'list-rules', prompt: 'Explain how you decide from which end to number the carbon chain.' },
-      { id: 'c3', blockId: 'callout-examples', prompt: 'Name the following compound: CH₃CH(CH₃)CH(CH₃)CH₂CH₃' },
-      { id: 'c4', blockId: 'list-rules', prompt: 'What are the IUPAC rules for using commas and hyphens in chemical names?' }
+      { id: 'c1', blockId: 'svg-prefix', prompt: 'State the IUPAC prefix for carbon chains of 1, 2, 3, 4, 5, 6, 7, and 8 carbons.' },
+      { id: 'c2', blockId: 'svg-naming', prompt: 'Explain how you decide from which end to number the carbon chain, and why this matters.' },
+      { id: 'c3', blockId: 'callout-examples', prompt: 'Name the compound CH₃CH(CH₃)CH(CH₃)CH₂CH₃. Show your working.' },
+      { id: 'c4', blockId: 'svg-naming', prompt: 'State the rules for using commas vs hyphens vs spaces in IUPAC names.' }
     ],
-    summaryText: 'Prefixes: meth(1), eth(2), prop(3), but(4), pent(5), hex(6). Longest chain might not be horizontal. Number to give lowest numbers (lowest for principal functional group first, then substituents). Use di/tri for multiples. Alphabetical order. Suffix: -ane (alkane), -ene (alkene), -ol (alcohol). Commas separate numbers; hyphens separate numbers and letters.',
+    summaryText: 'Prefixes: meth(1), eth(2), prop(3), but(4), pent(5), hex(6), hept(7), oct(8). Longest chain may not be horizontal. Number to give lowest locants (principal group first, then substituents). Alkyl substituents: methyl, ethyl, propyl. Halogen: fluoro, chloro, bromo, iodo. di/tri/tetra for multiples (ignored in alphabetical ordering). Commas between numbers; hyphens between number and letter.',
     ready: false
   },
-  evidence: []
+  evidence: [], mentions: []
 };
-export default note_chemistry_1_4_1;

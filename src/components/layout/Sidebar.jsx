@@ -3,14 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, X,
-    Brain, Trophy, Search, Zap, Radio, MonitorPlay
+    Brain, Trophy, Search, Zap, Radio
 } from 'lucide-react';
 import './Layout.css';
 
 const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
     { path: '/notes', label: 'Notes', icon: BookOpen },
-    { path: '/presentation', label: 'Presentation', icon: MonitorPlay },
     { path: '/exercises', label: 'Exercises', icon: FlaskConical },
     { path: '/past-papers', label: 'Past Papers', icon: FileQuestion },
     { path: '/flashcards', label: 'Flashcards', icon: Brain },

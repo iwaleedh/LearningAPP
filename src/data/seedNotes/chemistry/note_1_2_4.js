@@ -379,6 +379,19 @@ export const note_chemistry_1_2_4 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Ionisation Energies',
+      subtitle: 'WCH11 — Chemistry Topic 2.4',
+      elements: [
+        { delay: 0, colSpan: 2, icon: '💡', title: 'First Ionisation Energy (IE₁)', html: '<strong>Energy required to remove 1 mol of electrons from 1 mol of gaseous atoms:</strong><br/>X(g) → X<sup>+</sup>(g) + e⁻ ΔH = IE₁<br/>Always endothermic (+ve). Units: kJ mol⁻¹.' },
+        { delay: 1, colSpan: 1, icon: '📐', title: '3 Factors Affecting IE₁', html: '1. <strong>Atomic radius:</strong> larger → lower IE₁.<br/>2. <strong>Electron shielding:</strong> more inner shells → lower IE₁.<br/>3. <strong>Nuclear charge (Z):</strong> more protons → higher IE₁.' },
+        { delay: 2, colSpan: 1, icon: '📈', title: 'Across Period 3', html: 'Generally <strong>increases</strong> Na → Ar.<br/><strong>Dip at Al</strong>: 3p electron screened by 3s — easier to remove.<br/><strong>Dip at S</strong>: paired 3p electron has extra repulsion.' },
+        { delay: 3, colSpan: 2, icon: '🔬', title: 'Successive IEs — Shell Evidence', html: 'IEs increase as each electron is removed (atom becomes more positive).<br/><strong>Large jumps</strong> in successive IEs indicate removal from an inner, lower-energy shell.<br/>e.g. For Na: IE₂/IE₁ ratio ≈ 10× — confirms one electron in the outer 3s shell.' },
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

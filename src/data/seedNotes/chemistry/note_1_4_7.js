@@ -1,115 +1,46 @@
+/**
+ * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 7
+ * "Alkanes and cycloalkanes"
+ */
 export const note_chemistry_1_4_7 = {
   blocks: [
-    {
-      id: 'obj',
-      type: 'objective',
-      data: {
-        text: 'Understand the formulae and structures of alkanes and cycloalkanes. Relate their physical properties and reactivity to their bonding and structure.',
-      }
-    },
-    {
-      id: 'h-alkanes',
-      type: 'heading',
-      data: { text: 'Alkanes', level: 2 }
-    },
-    {
-      id: 'p-alkanes',
-      type: 'paragraph',
-      data: {
-        text: 'Alkanes are saturated hydrocarbons containing only carbon-carbon single bonds and carbon-hydrogen bonds. The first four straight-chain alkanes are methane, ethane, propane, and butane, which are all gases at room temperature.'
-      }
-    },
-    {
-      id: 'callout-alkane-formula',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'General Formula for Alkanes',
-        html: 'Straight-chain and branched alkanes fit the general formula <strong>C<sub>n</sub>H<sub>2n+2</sub></strong>.'
-      }
-    },
-    {
-      id: 'h-cycloalkanes',
-      type: 'heading',
-      data: { text: 'Cycloalkanes', level: 2 }
-    },
-    {
-      id: 'p-cycloalkanes',
-      type: 'paragraph',
-      data: {
-        text: 'Cycloalkanes also contain only C-C and C-H single bonds, but the carbon atoms are joined in a continuous ring. The smallest possible cycloalkane is cyclopropane (C<sub>3</sub>H<sub>6</sub>). To form the ring, two hydrogen atoms are lost compared to the straight chain.'
-      }
-    },
-    {
-      id: 'callout-cyclo-formula',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Formula and Shape of Cycloalkanes',
-        html: 'The general formula for a cycloalkane is <strong>C<sub>n</sub>H<sub>2n</sub></strong>.<br/><br/>Cycloalkanes (from cyclopentane upwards) are not flat; they exist as "puckered" rings. For example, cyclohexane rapidly flips between "chair" and "boat" conformations to minimise strain.'
-      }
-    },
-    {
-      id: 'h-boiling',
-      type: 'heading',
-      data: { text: 'Physical Properties: Boiling Points', level: 2 }
-    },
-    {
-      id: 'list-boiling',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          '<strong>Chain Length:</strong> Alkanes are non-polar, so the only intermolecular forces are London (Van der Waals) dispersion forces. As molecules get larger, they have more electrons, leading to stronger London forces and higher boiling points.',
-          '<strong>Branching:</strong> Branched isomers have lower boiling points than straight-chain isomers. Branching makes molecules shorter and fatter, preventing them from packing as closely together and reducing the strength of London forces.',
-          '<strong>Cycloalkanes:</strong> Cycloalkanes have boiling points about 10-20 K higher than their corresponding straight-chain alkanes because the ring structures allow molecules to pack more closely and increase intermolecular contact.'
-        ]
-      }
-    },
-    {
-      id: 'h-reactivity',
-      type: 'heading',
-      data: { text: 'Chemical Reactivity', level: 2 }
-    },
-    {
-      id: 'list-reactivity',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'Alkanes have strong, almost non-polar C-C and C-H bonds. Because they lack areas of significant positive or negative charge, they do not attract ions or polar reagents, making them generally unreactive.',
-          'Their main reactions are combustion (burning), free radical substitution with halogens (under UV light), and cracking.',
-          '<strong>Exception for small cycloalkanes:</strong> Cyclopropane is unusually reactive. The ring forces the C-C-C bond angle to 60° (instead of the normal 109.5°). This causes severe repulsion between the bonding electron pairs, making the ring bonds weaker and easier to break.'
-        ]
-      }
-    }
+    { id: 'obj', type: 'objective', data: { text: 'Understand the formulae and structures of alkanes and cycloalkanes. Relate their physical properties and reactivity to their bonding and structure.' } },
+    { id: 'h-alkanes', type: 'heading', data: { text: 'Alkanes', level: 2 } },
+    { id: 'callout-alkane-formula', type: 'callout', data: {
+      style: 'key', title: 'General Formula for Alkanes',
+      text: 'Straight-chain and branched alkanes fit the general formula <strong>C<sub>n</sub>H<sub>2n+2</sub></strong>.'
+    }},
+    { id: 'h-cycloalkanes', type: 'heading', data: { text: 'Cycloalkanes', level: 2 } },
+    { id: 'callout-cyclo-formula', type: 'callout', data: {
+      style: 'key', title: 'General Formula and Shape of Cycloalkanes',
+      text: 'The general formula for a cycloalkane is <strong>C<sub>n</sub>H<sub>2n</sub></strong>.<br/><br/>Cycloalkanes (from cyclopentane upwards) are not flat; they exist as &#x201C;puckered&#x201D; rings. For example, cyclohexane rapidly flips between &#x201C;chair&#x201D; and &#x201C;boat&#x201D; conformations to minimise strain.'
+    }},
+    { id: 'h-comparison', type: 'heading', data: { text: 'Alkanes vs Cycloalkanes — Comparison', level: 2 } },
+    { id: 'svg-compare', type: 'svg', data: {
+      caption: 'Alkane vs cycloalkane — formulae, examples and key structural difference',
+      svg: `<svg viewBox="0 0 580 195" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="2" y="2" width="276" height="191" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/><rect x="302" y="2" width="276" height="191" rx="8" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1.5"/><text x="140" y="22" text-anchor="middle" font-weight="bold" fill="#1d4ed8" font-size="13">ALKANES</text><text x="440" y="22" text-anchor="middle" font-weight="bold" fill="#15803d" font-size="13">CYCLOALKANES</text><text x="140" y="41" text-anchor="middle" fill="#1d4ed8" font-size="12">General formula: CₙH₂ₙ₊₂</text><text x="440" y="41" text-anchor="middle" fill="#15803d" font-size="12">General formula: CₙH₂ₙ</text><text x="10" y="62" fill="#374151" font-size="10">Open chain (no ring)</text><text x="310" y="62" fill="#374151" font-size="10">Closed ring structure (ring of C atoms)</text><text x="10" y="80" fill="#374151" font-size="10">Only C–C and C–H single bonds</text><text x="310" y="80" fill="#374151" font-size="10">Only C–C and C–H single bonds</text><text x="10" y="98" fill="#374151" font-size="10">Saturated, non-polar</text><text x="310" y="98" fill="#374151" font-size="10">Saturated, non-polar</text><text x="140" y="117" text-anchor="middle" font-weight="bold" fill="#374151" font-size="11">Examples</text><text x="440" y="117" text-anchor="middle" font-weight="bold" fill="#374151" font-size="11">Examples</text><text x="10" y="134" fill="#374151" font-size="10">Methane CH₄ · Ethane C₂H₆</text><text x="310" y="134" fill="#374151" font-size="10">Cyclopropane C₃H₆ (3-membered ring)</text><text x="10" y="150" fill="#374151" font-size="10">Propane C₃H₈ · Butane C₄H₁₀</text><text x="310" y="150" fill="#374151" font-size="10">Cyclobutane C₄H₈ (4-membered ring)</text><text x="10" y="166" fill="#374151" font-size="10">Pentane C₅H₁₂ · Hexane C₆H₁₄</text><text x="310" y="166" fill="#374151" font-size="10">Cyclopentane C₅H₁₀ · Cyclohexane C₆H₁₂</text><text x="10" y="185" fill="#64748b" font-size="9">Gases (C₁–C₄) → liquids at higher n</text><text x="310" y="185" fill="#64748b" font-size="9">BP ~10–20 K higher than equivalent alkane</text></svg>`
+    }},
+    { id: 'h-boiling', type: 'heading', data: { text: 'Factors Affecting Boiling Points', level: 2 } },
+    { id: 'svg-bp-factors', type: 'svg', data: {
+      caption: 'How chain length, branching, and ring structure affect boiling points',
+      svg: `<svg viewBox="0 0 580 165" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="105" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Factor</text><text x="270" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Effect on BP</text><text x="440" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Explanation</text><line x1="210" y1="0" x2="210" y2="165" stroke="#475569" stroke-width="1"/><line x1="330" y1="0" x2="330" y2="165" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="43" fill="#dbeafe"/><text x="10" y="54" font-weight="bold" fill="#1d4ed8" font-size="11">Chain length ↑</text><text x="10" y="70" fill="#374151" font-size="10">(more C atoms)</text><text x="218" y="58" fill="#15803d" font-weight="bold" font-size="12">Increases ↑</text><text x="338" y="50" fill="#374151" font-size="10">More electrons →</text><text x="338" y="64" fill="#374151" font-size="10">stronger London forces</text><text x="338" y="73" fill="#374151" font-size="9">need more energy to separate</text><rect x="0" y="77" width="580" height="43" fill="#fef9c3"/><text x="10" y="97" font-weight="bold" fill="#92400e" font-size="11">Branching ↑</text><text x="10" y="113" fill="#374151" font-size="10">(more branches)</text><text x="218" y="101" fill="#dc2626" font-weight="bold" font-size="12">Decreases ↓</text><text x="338" y="93" fill="#374151" font-size="10">Compact shape →</text><text x="338" y="107" fill="#374151" font-size="10">less surface area contact</text><text x="338" y="116" fill="#374151" font-size="9">→ weaker London forces</text><rect x="0" y="120" width="580" height="43" fill="#d1fae5"/><text x="10" y="140" font-weight="bold" fill="#15803d" font-size="11">Cyclic ring</text><text x="10" y="156" fill="#374151" font-size="10">(cycloalkane)</text><text x="218" y="144" fill="#15803d" font-weight="bold" font-size="11">~10–20 K higher</text><text x="218" y="158" fill="#15803d" font-size="10">than open chain isomer</text><text x="338" y="136" fill="#374151" font-size="10">Rigid ring packs more</text><text x="338" y="150" fill="#374151" font-size="10">closely → more LF contact</text><rect x="0" y="0" width="580" height="165" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'h-reactivity', type: 'heading', data: { text: 'Chemical Reactivity', level: 2 } },
+    { id: 'svg-reactivity', type: 'svg', data: {
+      caption: 'Why alkanes are unreactive — and the exception of cyclopropane',
+      svg: `<svg viewBox="0 0 580 145" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="2" y="2" width="354" height="141" rx="8" fill="#fef9c3" stroke="#fbbf24" stroke-width="1.5"/><rect x="368" y="2" width="210" height="141" rx="8" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/><text x="179" y="21" text-anchor="middle" font-weight="bold" fill="#92400e" font-size="12">Why Alkanes Are Unreactive</text><text x="473" y="21" text-anchor="middle" font-weight="bold" fill="#dc2626" font-size="12">Exception: Cyclopropane</text><text x="10" y="42" fill="#374151" font-size="10">&#x2022; C&#x2013;H and C&#x2013;C bonds are <tspan font-weight="bold">non-polar</tspan>: similar</text><text x="10" y="56" fill="#374151" font-size="10"> electronegativities &#x2192; no &#x03B4;&#x207A;/&#x03B4;&#x207B; centres.</text><text x="10" y="74" fill="#374151" font-size="10">&#x2022; Bonds are <tspan font-weight="bold">strong</tspan>: C&#x2013;H = 413 kJ mol&#x207B;&#xB9;;</text><text x="10" y="88" fill="#374151" font-size="10"> C&#x2013;C = 348 kJ mol&#x207B;&#xB9; &#x2192; hard to break.</text><text x="10" y="106" fill="#374151" font-size="10">&#x2022; Main reactions: <tspan font-weight="bold">combustion</tspan> (+ O&#x2082;),</text><text x="10" y="120" fill="#374151" font-size="10"> <tspan font-weight="bold">free radical subst.</tspan> (+ halogen/UV),</text><text x="10" y="134" fill="#374151" font-size="10"> <tspan font-weight="bold">cracking</tspan> (high temp/catalyst).</text><text x="376" y="42" fill="#374151" font-size="10">C&#x2013;C&#x2013;C angle forced to 60°</text><text x="376" y="56" fill="#374151" font-size="10">(normal = 109.5° for sp&#xB3;)</text><text x="376" y="74" fill="#dc2626" font-size="10">&#x2192; ring strain: bonds</text><text x="376" y="88" fill="#dc2626" font-size="10">weaker &amp; easier to break</text><text x="376" y="106" fill="#374151" font-size="10">&#x2192; ring opens readily</text><text x="376" y="122" fill="#374151" font-size="10">&#x2192; MORE reactive than</text><text x="376" y="136" fill="#374151" font-size="10">other alkanes</text></svg>`
+    }}
   ],
   recall: {
     enabled: true,
     cues: [
-      {
-        id: 'cue-1',
-        blockId: 'callout-cyclo-formula',
-        prompt: 'State the general formulae for open-chain alkanes and cycloalkanes.'
-      },
-      {
-        id: 'cue-2',
-        blockId: 'list-boiling',
-        prompt: 'Explain why branched alkanes typically have lower boiling points than their straight-chain isomers.'
-      },
-      {
-        id: 'cue-3',
-        blockId: 'list-reactivity',
-        prompt: 'Why are alkanes generally very unreactive to polar reagents?'
-      },
-      {
-        id: 'cue-4',
-        blockId: 'list-reactivity',
-        prompt: 'Explain why cyclopropane is much more reactive than larger cycloalkanes or straight-chain alkanes.'
-      }
+      { id: 'c1', blockId: 'callout-cyclo-formula', prompt: 'State the general formulae for alkanes and cycloalkanes. Why do cycloalkanes have two fewer H atoms than the corresponding alkane?' },
+      { id: 'c2', blockId: 'svg-bp-factors', prompt: 'Explain why branched alkanes typically have lower boiling points than their straight-chain isomers.' },
+      { id: 'c3', blockId: 'svg-bp-factors', prompt: 'Why do cycloalkanes generally have higher boiling points than the corresponding straight-chain alkane?' },
+      { id: 'c4', blockId: 'svg-reactivity', prompt: 'Explain why cyclopropane is much more reactive than larger cycloalkanes or straight-chain alkanes.' }
     ],
-    summaryText: 'Alkanes (CnH2n+2) and cycloalkanes (CnH2n) are saturated, non-polar hydrocarbons. Boiling points increase with size due to stronger London forces, but decrease with branching (less surface contact). Cycloalkanes pack better and have higher bps. Alkanes are unreactive because C-C/C-H bonds are strong and non-polar. Small rings like cyclopropane are highly reactive due to 60 degree bond angle ring strain.',
+    summaryText: 'Alkanes (CₙH₂ₙ₊₂) and cycloalkanes (CₙH₂ₙ) are saturated, non-polar hydrocarbons. BP increases with chain length (stronger London forces), decreases with branching (less surface contact). Cycloalkanes: ~10–20 K higher BP than open-chain isomers (better packing). Alkanes unreactive (non-polar, strong C–H/C–C bonds). Cyclopropane reactive (60° ring strain weakens bonds).',
     ready: false
   },
-  evidence: []
+  evidence: [], mentions: []
 };

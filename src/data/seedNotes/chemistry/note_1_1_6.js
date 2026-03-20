@@ -259,6 +259,19 @@ export const note_chemistry_1_1_6 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Stoichiometry & Gas Volumes',
+      subtitle: 'Chemistry Topic 1.6',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '⚖️', title: 'Reacting Masses', html: 'Use the balanced equation to find mole ratios, then convert moles back to mass.' },
+        { delay: 1, colSpan: 2, icon: '🎈', title: 'Molar Volume of Gases', html: 'At RTP, 1 mole of ANY gas occupies ~<strong>24 dm³ (24,000 cm³)</strong>.<br/><em>Formula:</em> Volume = moles × 24 (if measuring in dm³)' },
+        { delay: 2, colSpan: 3, icon: '🌡️', title: 'Ideal Gas Equation', html: '<strong>pV = nRT</strong><br/>• p = Pressure (Pa)<br/>• V = Volume (m³)<br/>• n = Moles<br/>• R = 8.31 J K⁻¹ mol⁻¹<br/>• T = Temperature (K)' },
+        { delay: 3, colSpan: 3, icon: '📏', title: 'Key Conversions for pV=nRT', html: '• °C to Kelvin: + 273<br/>• kPa to Pa: × 1000<br/>• dm³ to m³: ÷ 1000<br/>• cm³ to m³: ÷ 1,000,000' }
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

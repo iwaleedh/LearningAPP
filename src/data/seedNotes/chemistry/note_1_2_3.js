@@ -420,6 +420,20 @@ export const note_chemistry_1_2_3 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Electron Configuration',
+      subtitle: 'WCH11 — Chemistry Topic 2.3',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '🌊', title: 'Energy Levels (Shells)', html: '<strong>Shell 1:</strong> max 2e⁻<br/><strong>Shell 2:</strong> max 8e⁻<br/><strong>Shell 3:</strong> max 18e⁻<br/>Electrons fill lowest available energy levels first (Aufbau principle).' },
+        { delay: 1, colSpan: 1, icon: '🧩', title: 'Subshells (s, p, d, f)', html: '<strong>s:</strong> max 2e⁻ (1 orbital).<br/><strong>p:</strong> max 6e⁻ (3 orbitals).<br/><strong>d:</strong> max 10e⁻ (5 orbitals).<br/><strong>f:</strong> max 14e⁻ (7 orbitals).' },
+        { delay: 2, colSpan: 1, icon: '📏', title: 'Filling Order', html: '1s → 2s → 2p → 3s → 3p → <strong>4s → 3d</strong> → 4p...<br/>4s fills before 3d.<br/><em>Note:</em> 4s empties before 3d when forming transition metal cations.' },
+        { delay: 3, colSpan: 1, icon: '🔄', title: "Hund's Rule", html: 'Electrons fill orbitals <strong>singly</strong> before pairing up.<br/>All singly-filled orbitals have the same spin (parallel ↑↑).<br/>Minimises electron-electron repulsion.' },
+        { delay: 4, colSpan: 2, icon: '🚫', title: 'Pauli Exclusion Principle', html: 'Each orbital holds a <strong>maximum of 2 electrons</strong> with <strong>opposite spins</strong> (↑↓).<br/>No two electrons in the same atom can have the same set of four quantum numbers.' },
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

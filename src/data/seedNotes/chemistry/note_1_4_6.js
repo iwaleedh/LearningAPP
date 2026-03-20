@@ -1,108 +1,39 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 4 · Subtopic 6
  * "Properties of alkanes"
- * Source: Pearson Edexcel IAL Chemistry — Section 4B
  */
 export const note_chemistry_1_4_6 = {
   blocks: [
-    {
-      id: 'objective',
-      type: 'objective',
-      data: { text: 'Know and explain the physical properties of alkanes (state at room temperature, boiling points, solubility) in terms of intermolecular forces. Understand why alkanes are generally unreactive.' },
-      terms: []
-    },
-    {
-      id: 'h-structure',
-      type: 'heading',
-      data: { text: 'Structure and Bonding in Alkanes', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-structure',
-      type: 'paragraph',
-      data: { text: 'Alkanes are <strong>saturated hydrocarbons</strong> with the general formula CₙH₂ₙ₊₂. They contain only C–C and C–H single bonds. They are <strong>non-polar</strong> (similar electronegativities of C and H; symmetrical shapes). The only intermolecular forces between alkane molecules are <strong>London (van der Waals) forces</strong>.' },
-      terms: ['Alkane', 'Saturated hydrocarbon']
-    },
-    {
-      id: 'table-bp',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Physicsl properties of the first six alkanes',
-        headers: ['Alkane', 'Formula', 'Mr', 'Boiling point', 'State at 25°C'],
-        rows: [
-          ['Methane', 'CH₄', '16', '−162°C', 'Gas'],
-          ['Ethane', 'C₂H₆', '30', '−89°C', 'Gas'],
-          ['Propane', 'C₃H₈', '44', '−42°C', 'Gas'],
-          ['Butane', 'C₄H₁₀', '58', '−1°C', 'Gas'],
-          ['Pentane', 'C₅H₁₂', '72', '36°C', 'Liquid'],
-          ['Hexane', 'C₆H₁₄', '86', '69°C', 'Liquid']
-        ]
-      },
-      terms: []
-    },
-    {
-      id: 'callout-bp-trend',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Why do boiling points increase with chain length?',
-        text: 'Longer alkane chains have more electrons → larger, more polarisable electron clouds → stronger <strong>London dispersion forces</strong> between adjacent molecules. More energy is needed to overcome these forces, so the boiling point rises.'
-      },
-      terms: []
-    },
-    {
-      id: 'callout-branching',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Effect of branching on boiling point',
-        text: 'Branched alkanes have a more <strong>compact/spherical shape</strong>, which reduces the surface area of contact between molecules. Fewer London forces act between them → <strong>lower boiling point</strong> than the straight-chain isomer.<br/><br/>Example: pentane (bp 36°C) > 2-methylbutane (bp 28°C) > 2,2-dimethylpropane (bp 10°C)'
-      },
-      terms: []
-    },
-    {
-      id: 'h-solubility',
-      type: 'heading',
-      data: { text: 'Solubility', level: 2 },
-      terms: []
-    },
-    {
-      id: 'p-solubility',
-      type: 'paragraph',
-      data: { text: 'Alkanes are <strong>insoluble in water</strong> (non-polar, cannot form H-bonds with water). They are soluble in non-polar organic solvents (like dissolves like). Short-chain alkanes are volatile and flammable.' },
-      terms: []
-    },
-    {
-      id: 'h-reactivity',
-      type: 'heading',
-      data: { text: 'Why Are Alkanes Unreactive?', level: 2 },
-      terms: []
-    },
-    {
-      id: 'list-unreactive',
-      type: 'list',
-      data: {
-        style: 'bullet',
-        items: [
-          'C–C and C–H bonds are <strong>non-polar</strong> → not easily attacked by polar reagents.',
-          'C–C and C–H bonds are quite <strong>strong</strong> (C–H: 413 kJ mol⁻¹; C–C: 348 kJ mol⁻¹) → hard to break.',
-          'Alkanes will react with halogens under <strong>UV light (free radical substitution)</strong> and combust in oxygen, but otherwise resist most reagents.'
-        ]
-      },
-      terms: []
-    }
+    { id: 'objective', type: 'objective', data: { text: 'Know and explain the physical properties of alkanes (state at room temperature, boiling points, solubility) in terms of intermolecular forces. Understand why alkanes are generally unreactive.' } },
+    { id: 'h-structure', type: 'heading', data: { text: 'Structure and Bonding in Alkanes', level: 2 } },
+    { id: 'svg-props', type: 'svg', data: {
+      caption: 'Physical properties of the first six alkanes — boiling point rises with chain length',
+      svg: `<svg viewBox="0 0 580 205" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="0" y="0" width="580" height="34" rx="4" fill="#1e293b"/><text x="57" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Alkane</text><text x="157" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Formula</text><text x="233" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Mᵣ</text><text x="327" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Boiling point</text><text x="485" y="22" text-anchor="middle" fill="white" font-weight="bold" font-size="11">State at 25 °C</text><line x1="114" y1="0" x2="114" y2="205" stroke="#475569" stroke-width="1"/><line x1="200" y1="0" x2="200" y2="205" stroke="#475569" stroke-width="1"/><line x1="265" y1="0" x2="265" y2="205" stroke="#475569" stroke-width="1"/><line x1="390" y1="0" x2="390" y2="205" stroke="#475569" stroke-width="1"/><rect x="0" y="34" width="580" height="28" fill="#f0f9ff"/><text x="8" y="53" fill="#374151" font-size="11">Methane</text><text x="120" y="53" fill="#374151" font-size="11">CH₄</text><text x="210" y="53" fill="#374151" font-size="11">16</text><text x="270" y="53" fill="#2563eb" font-size="11">−162 °C</text><text x="398" y="53" fill="#2563eb" font-size="11">Gas</text><rect x="0" y="62" width="580" height="28" fill="white"/><text x="8" y="81" fill="#374151" font-size="11">Ethane</text><text x="120" y="81" fill="#374151" font-size="11">C₂H₆</text><text x="210" y="81" fill="#374151" font-size="11">30</text><text x="270" y="81" fill="#2563eb" font-size="11">−89 °C</text><text x="398" y="81" fill="#2563eb" font-size="11">Gas</text><rect x="0" y="90" width="580" height="28" fill="#f0f9ff"/><text x="8" y="109" fill="#374151" font-size="11">Propane</text><text x="120" y="109" fill="#374151" font-size="11">C₃H₈</text><text x="210" y="109" fill="#374151" font-size="11">44</text><text x="270" y="109" fill="#2563eb" font-size="11">−42 °C</text><text x="398" y="109" fill="#2563eb" font-size="11">Gas</text><rect x="0" y="118" width="580" height="28" fill="white"/><text x="8" y="137" fill="#374151" font-size="11">Butane</text><text x="120" y="137" fill="#374151" font-size="11">C₄H₁₀</text><text x="210" y="137" fill="#374151" font-size="11">58</text><text x="270" y="137" fill="#2563eb" font-size="11">−1 °C</text><text x="398" y="137" fill="#2563eb" font-size="11">Gas</text><rect x="0" y="146" width="580" height="28" fill="#f0fdf4"/><text x="8" y="165" fill="#374151" font-size="11">Pentane</text><text x="120" y="165" fill="#374151" font-size="11">C₅H₁₂</text><text x="210" y="165" fill="#374151" font-size="11">72</text><text x="270" y="165" fill="#15803d" font-size="11">+36 °C</text><text x="398" y="165" fill="#15803d" font-weight="bold" font-size="11">Liquid</text><rect x="0" y="174" width="580" height="28" fill="white"/><text x="8" y="193" fill="#374151" font-size="11">Hexane</text><text x="120" y="193" fill="#374151" font-size="11">C₆H₁₄</text><text x="210" y="193" fill="#374151" font-size="11">86</text><text x="270" y="193" fill="#15803d" font-size="11">+69 °C</text><text x="398" y="193" fill="#15803d" font-weight="bold" font-size="11">Liquid</text><rect x="0" y="0" width="580" height="205" rx="4" fill="none" stroke="#cbd5e1" stroke-width="1.5"/></svg>`
+    }},
+    { id: 'callout-bp-trend', type: 'callout', data: {
+      style: 'key', title: 'Why do boiling points increase with chain length?',
+      text: 'Longer alkane chains have more electrons &#x2192; larger, more polarisable electron clouds &#x2192; stronger <strong>London dispersion forces</strong> between adjacent molecules. More energy is needed to overcome these forces, so the boiling point rises.'
+    }},
+    { id: 'callout-branching', type: 'callout', data: {
+      style: 'key', title: 'Effect of branching on boiling point',
+      text: 'Branched alkanes have a more <strong>compact/spherical shape</strong>, which reduces the surface area of contact between molecules. Fewer London forces act between them &#x2192; <strong>lower boiling point</strong> than the straight-chain isomer.<br/><br/>Example: pentane (bp 36&#xB0;C) &gt; 2-methylbutane (bp 28&#xB0;C) &gt; 2,2-dimethylpropane (bp 10&#xB0;C)'
+    }},
+    { id: 'h-sol-react', type: 'heading', data: { text: 'Solubility and Reactivity', level: 2 } },
+    { id: 'svg-sol-react', type: 'svg', data: {
+      caption: 'Alkane solubility and reactivity — reasons and key exceptions',
+      svg: `<svg viewBox="0 0 580 155" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="2" y="2" width="276" height="151" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/><rect x="302" y="2" width="276" height="151" rx="8" fill="#fef9c3" stroke="#fbbf24" stroke-width="1.5"/><text x="140" y="22" text-anchor="middle" font-weight="bold" fill="#1d4ed8" font-size="13">Insoluble in Water</text><text x="440" y="22" text-anchor="middle" font-weight="bold" fill="#92400e" font-size="13">Low Chemical Reactivity</text><text x="10" y="45" fill="#374151" font-size="11">Alkanes are <tspan font-weight="bold">non-polar</tspan>.</text><text x="10" y="62" fill="#374151" font-size="10">They cannot form hydrogen bonds with</text><text x="10" y="76" fill="#374151" font-size="10">water molecules or break its H-bond network.</text><text x="10" y="96" fill="#374151" font-size="10">&#x2022; Soluble in non-polar solvents (like dissolves</text><text x="10" y="110" fill="#374151" font-size="10"> like): e.g. hexane dissolves in CCl₄.</text><text x="10" y="128" fill="#374151" font-size="10">&#x2022; Short-chain alkanes are <tspan font-weight="bold">volatile</tspan>: low bp,</text><text x="10" y="142" fill="#374151" font-size="10"> evaporate easily at room temperature.</text><text x="310" y="45" fill="#374151" font-size="11">C&#x2013;C and C&#x2013;H bonds are <tspan font-weight="bold">non-polar</tspan>:</text><text x="310" y="62" fill="#374151" font-size="10">No &#x03B4;&#x207A;/&#x03B4;&#x207B; centres &#x2192; polar reagents and ions</text><text x="310" y="76" fill="#374151" font-size="10">do not attack alkane molecules.</text><text x="310" y="96" fill="#374151" font-size="10">C&#x2013;C and C&#x2013;H bonds are also <tspan font-weight="bold">strong</tspan>:</text><text x="310" y="110" fill="#374151" font-size="10">C&#x2013;H: 413 kJ mol&#x207B;&#xB9;; C&#x2013;C: 348 kJ mol&#x207B;&#xB9;</text><text x="310" y="128" fill="#374151" font-size="10">Exceptions: combust with O&#x2082;; react with</text><text x="310" y="142" fill="#374151" font-size="10">halogens under UV (free radical subst.)</text></svg>`
+    }}
   ],
   recall: {
     enabled: true,
     cues: [
-      { id: 'c1', blockId: 'callout-bp-trend', prompt: 'Explain why butane has a higher boiling point than ethane.' },
-      { id: 'c2', blockId: 'callout-branching', prompt: 'Explain why 2,2-dimethylpropane has a lower boiling point than pentane (same molecular formula C₅H₁₂).' },
-      { id: 'c3', blockId: 'p-solubility', prompt: 'Why are alkanes insoluble in water?' },
-      { id: 'c4', blockId: 'list-unreactive', prompt: 'Give two reasons why alkanes are generally unreactive.' }
+      { id: 'c1', blockId: 'svg-props', prompt: 'Which alkanes are gases at room temperature? At what chain length do they become liquids?' },
+      { id: 'c2', blockId: 'callout-bp-trend', prompt: 'Explain why butane has a higher boiling point than ethane.' },
+      { id: 'c3', blockId: 'callout-branching', prompt: 'Explain why 2,2-dimethylpropane has a lower boiling point than pentane (both C₅H₁₂).' },
+      { id: 'c4', blockId: 'svg-sol-react', prompt: 'Why are alkanes insoluble in water and generally unreactive with polar reagents?' }
     ],
-    summaryText: 'Alkanes: CₙH₂ₙ₊₂, only C–H and C–C bonds, non-polar. IMFs = London forces only. bp increases with chain length (more e⁻ → stronger LF). Branching → lower bp (less surface area contact). Insoluble in water (non-polar). Unreactive (non-polar bonds, no labile electrons). React with O₂ (combustion) and halogens/UV (FRS).',
+    summaryText: 'Alkanes: CₙH₂ₙ₊₂, only C–H and C–C bonds, non-polar. IMFs = London forces only. bp increases with chain length (more e⁻ → stronger LF). Branching → lower bp (less surface area). Insoluble in water (non-polar, no H-bonds). Unreactive (non-polar, strong bonds). React with O₂ (combustion) and halogens/UV (FRS).',
     ready: false
   },
-  evidence: []
+  evidence: [], mentions: []
 };
-export default note_chemistry_1_4_6;

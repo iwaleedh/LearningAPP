@@ -478,6 +478,19 @@ export const note_chemistry_1_2_2 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Mass Spectrometry',
+      subtitle: 'WCH11 — Chemistry Topic 2.2',
+      elements: [
+        { delay: 0, colSpan: 3, icon: '🔬', title: '5 Stages of a Mass Spectrometer', html: '<strong>1 Vaporise</strong> → <strong>2 Ionise</strong> (e⁻ gun or ESI) → <strong>3 Accelerate</strong> (electric field) → <strong>4 Deflect</strong> (magnetic field) → <strong>5 Detect</strong> (current).<br/>Operates under <strong>high vacuum</strong> to prevent collisions.' },
+        { delay: 1, colSpan: 1, icon: '⚡', title: 'Ionisation Methods', html: '<strong>Electron ionisation (EI):</strong> high-energy e⁻ knock one out → M<sup>+</sup>(g).<br/><strong>Electrospray (ESI):</strong> dissolve + spray; protonation → [M+H]<sup>+</sup>. Used for large molecules.' },
+        { delay: 2, colSpan: 1, icon: '🧲', title: 'm/z Ratio', html: '<strong>Mass-to-charge ratio.</strong><br/>Low m/z = deflected more; high m/z = deflected less.<br/>Each isotope gives a separate peak.' },
+        { delay: 3, colSpan: 1, icon: '📊', title: 'Reading a Spectrum', html: 'x-axis: m/z ratio.<br/>y-axis: relative abundance (%).<br/>Tallest peak = most abundant isotope.<br/>Use peak heights to calculate Aᵣ.' },
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

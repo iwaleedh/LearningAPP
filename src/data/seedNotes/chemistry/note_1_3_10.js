@@ -1,125 +1,198 @@
 /**
  * Seed note: Chemistry · Unit 1 · Topic 3 · Subtopic 10
  * "Intermolecular forces"
- * Source: Pearson Edexcel IAL Chemistry — Section 3C.2
+ * Source: Pearson Edexcel IAL Chemistry — Section 3G
  */
 export const note_chemistry_1_3_10 = {
   blocks: [
     {
-      id: 'objective',
+      id: 'obj',
       type: 'objective',
-      data: { text: 'Describe and compare the three types of intermolecular forces: London (dispersion) forces, permanent dipole–dipole interactions, and hydrogen bonds. Explain anomalous boiling points of H₂O, HF and NH₃ using hydrogen bonding. Understand why water forms 4 H-bonds per molecule and how this compares to HF and NH₃. Apply intermolecular force concepts to organic molecules (ethanol vs methoxymethane).' },
+      data: { text: 'Describe and explain three types of intermolecular force: London (dispersion) forces, permanent dipole-dipole interactions, and hydrogen bonds. State the conditions required for hydrogen bonding. Compare their relative strengths.' },
       terms: []
     },
     {
-      id: 'h-london',
+      id: 'h1',
       type: 'heading',
-      data: { text: '1. London (Dispersion) Forces', level: 2 },
+      data: { text: 'London (Dispersion) Forces', level: 2 },
       terms: []
     },
     {
-      id: 'callout-london',
+      id: 'svg-london',
+      type: 'svg',
+      data: {
+        caption: 'London forces arise from instantaneous and induced dipoles. Even non-polar molecules/noble gas atoms have a temporary uneven electron distribution → momentary δ+/δ− → induces a dipole in a neighbouring atom. These weak attractive forces exist in ALL substances.',
+        svg: `<svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <!-- Step 1: Non-polar atom -->
+  <rect x="5" y="10" width="200" height="178" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="105" y="28" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="12">Step 1: Neutral atom</text>
+  <circle cx="105" cy="110" r="50" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <!-- uniform electron cloud shown as small circles -->
+  <circle cx="80"  cy="100" r="5" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="120" cy="90"  r="5" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="115" cy="125" r="5" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="85"  cy="130" r="5" fill="#3b82f6" opacity="0.5"/>
+  <text x="105" cy="114" text-anchor="middle" fill="#1e40af" font-size="9">nucleus</text>
+  <text x="105" y="175" text-anchor="middle" fill="#374151" font-size="10">Electrons spread evenly</text>
+
+  <!-- Step 2: Instantaneous dipole -->
+  <rect x="218" y="10" width="200" height="178" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="318" y="28" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="12">Step 2: Instantaneous dipole</text>
+  <circle cx="318" cy="110" r="50" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+  <!-- electron cloud shifted left (more e- on left) -->
+  <circle cx="290" cy="100" r="7" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="285" cy="120" r="7" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="295" cy="90"  r="6" fill="#f59e0b" opacity="0.7"/>
+  <!-- sparse on right -->
+  <circle cx="345" cy="115" r="3" fill="#f59e0b" opacity="0.3"/>
+  <text x="292" y="75"  text-anchor="middle" fill="#dc2626" font-size="11" font-weight="bold">δ−</text>
+  <text x="350" y="108" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="bold">δ+</text>
+  <text x="318" y="175" text-anchor="middle" fill="#374151" font-size="10">Random fluctuation creates δ+/δ−</text>
+
+  <!-- Step 3: Induced dipole in neighbour -->
+  <rect x="432" y="10" width="242" height="178" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <text x="553" y="28" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="12">Step 3: Induced dipole attracts</text>
+  <!-- first atom with shift -->
+  <circle cx="490" cy="110" r="42" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="466" cy="100" r="6" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="462" cy="118" r="6" fill="#f59e0b" opacity="0.7"/>
+  <text x="458" y="96"  fill="#dc2626" font-size="10" font-weight="bold">δ−</text>
+  <text x="512" y="106" fill="#1d4ed8" font-size="10" font-weight="bold">δ+</text>
+  <!-- attraction arrow -->
+  <line x1="535" y1="110" x2="560" y2="110" stroke="#10b981" stroke-width="2.5"/>
+  <polygon points="560,104 574,110 560,116" fill="#10b981"/>
+  <!-- neighbour atom: e- attracted toward first atom -->
+  <circle cx="605" cy="110" r="42" fill="#bbf7d0" stroke="#10b981" stroke-width="2"/>
+  <circle cx="585" cy="108" r="6" fill="#10b981" opacity="0.7"/>
+  <circle cx="583" cy="122" r="6" fill="#10b981" opacity="0.7"/>
+  <text x="580" y="96"  fill="#dc2626" font-size="10" font-weight="bold">δ−</text>
+  <text x="625" y="108" fill="#1d4ed8" font-size="10" font-weight="bold">δ+</text>
+  <text x="553" y="168" text-anchor="middle" fill="#065f46" font-size="10">δ+ of atom A attracts e⁻ in atom B → induced dipole → attraction</text>
+</svg>`
+      },
+      terms: ['London dispersion force', 'Instantaneous dipole', 'Induced dipole']
+    },
+    {
+      id: 'key-london',
       type: 'callout',
       data: {
         style: 'key',
-        title: 'London (Instantaneous Dipole–Induced Dipole) Forces',
-        text: 'Present in <strong>all molecules</strong> (polar and non-polar). At any instant, the random movement of electrons creates a <strong>temporary instantaneous dipole</strong>, which induces a dipole in an adjacent molecule. These two dipoles attract each other weakly.<br/><br/><strong>Strength increases with:</strong><br/>• More electrons → more polarisable electron cloud → larger temporary dipoles<br/>• Larger contact surface area between molecules<br/><br/>This is why I₂ has a higher boiling point than F₂.'
+        title: 'London Force Strength Depends On…',
+        text: '<strong>Number of electrons (polarisability):</strong> More electrons → larger, more diffuse cloud → larger temporary dipoles → stronger London forces.<br/><br/>Examples: F₂ (18e⁻) → weak; Cl₂ (34e⁻) → stronger; Br₂ (70e⁻) → stronger still; I₂ (106e⁻) → strongest. Explains solid I₂ but gas F₂ at room temperature.<br/><br/>London forces act between <strong>all</strong> molecules — even those with other types of IMF.'
       },
-      terms: ['London forces', 'Instantaneous dipole', 'Induced dipole', 'van der Waals forces']
+      terms: ['London dispersion force', 'Polarisability']
     },
     {
-      id: 'h-dipole',
+      id: 'h2',
       type: 'heading',
-      data: { text: '2. Permanent Dipole–Dipole Interactions', level: 2 },
+      data: { text: 'Hydrogen Bonding', level: 2 },
       terms: []
     },
     {
-      id: 'callout-dipole',
+      id: 'svg-hbond',
+      type: 'svg',
+      data: {
+        caption: 'Hydrogen bonding: a particularly strong dipole-dipole force between an H atom bonded to N, O or F (δ+) and a lone pair on another N, O or F atom. Water: each molecule can form up to 4 H-bonds (2 as donor, 2 as acceptor).',
+        svg: `<svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
+  <!-- H₂O dimer panel -->
+  <rect x="5" y="5" width="310" height="210" rx="10" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="160" y="23" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="13">H₂O — Hydrogen Bonding</text>
+
+  <!-- Molecule 1 (top-left) -->
+  <circle cx="80" cy="90"  r="22" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+  <text x="80" y="94" text-anchor="middle" fill="#991b1b" font-size="12" font-weight="bold">O</text>
+  <!-- lone pairs -->
+  <text x="60" y="77" fill="#374151" font-size="14">:</text>
+  <text x="88" y="66" fill="#374151" font-size="14">:</text>
+  <!-- H atoms -->
+  <line x1="62" y1="100" x2="44" y2="122" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="38" cy="130" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="38" y="134" text-anchor="middle" fill="#1e40af" font-size="10">H</text>
+  <text x="52" y="108" fill="#1e40af" font-size="9">δ+</text>
+  <line x1="98" y1="100" x2="116" y2="122" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="122" cy="130" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="122" y="134" text-anchor="middle" fill="#1e40af" font-size="10">H</text>
+  <text x="120" y="108" fill="#1e40af" font-size="9">δ+</text>
+  <text x="68" y="80" fill="#dc2626" font-size="9">δ−</text>
+
+  <!-- H-bond (dashed) between H of mol1 and O of mol2 -->
+  <line x1="122" y1="118" x2="185" y2="100" stroke="#f97316" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <!-- label -->
+  <text x="155" y="104" fill="#c2410c" font-size="9" font-weight="bold">H-bond</text>
+
+  <!-- Molecule 2 (right) -->
+  <circle cx="210" cy="80"  r="22" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+  <text x="210" y="84" text-anchor="middle" fill="#991b1b" font-size="12" font-weight="bold">O</text>
+  <text x="190" y="67" fill="#374151" font-size="14">:</text>
+  <text x="218" y="58" fill="#374151" font-size="14">:</text>
+  <line x1="192" y1="90" x2="174" y2="112" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="168" cy="120" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="168" y="124" text-anchor="middle" fill="#1e40af" font-size="10">H</text>
+  <line x1="228" y1="90" x2="246" y2="112" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="252" cy="120" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="252" y="124" text-anchor="middle" fill="#1e40af" font-size="10">H</text>
+  <text x="208" y="66" fill="#dc2626" font-size="9">δ−</text>
+
+  <!-- Lone pair labels -->
+  <text x="60" y="185" fill="#374151" font-size="10">Lone pair on O acts as</text>
+  <text x="60" y="199" fill="#374151" font-size="10">H-bond acceptor (attracts δ+H)</text>
+
+  <!-- Conditions panel -->
+  <rect x="328" y="5" width="345" height="210" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/>
+  <text x="500" y="24" text-anchor="middle" fill="#c2410c" font-weight="bold" font-size="13">Conditions for H-bonding</text>
+
+  <rect x="338" y="35" width="325" height="50" rx="6" fill="#fde68a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="500" y="52" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="11">DONOR molecule must have:</text>
+  <text x="500" y="70" text-anchor="middle" fill="#374151" font-size="10">H directly bonded to N, O or F (small, very electronegative)</text>
+
+  <rect x="338" y="95" width="325" height="50" rx="6" fill="#fde68a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="500" y="112" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="11">ACCEPTOR molecule must have:</text>
+  <text x="500" y="130" text-anchor="middle" fill="#374151" font-size="10">Lone pair on N, O or F to accept the δ+ H</text>
+
+  <rect x="338" y="155" width="325" height="50" rx="6" fill="#fee2e2" stroke="#f87171" stroke-width="1"/>
+  <text x="500" y="172" text-anchor="middle" fill="#991b1b" font-weight="bold" font-size="11">Strength comparison (approximate):</text>
+  <text x="500" y="190" text-anchor="middle" fill="#374151" font-size="10">London forces &lt; dipole-dipole &lt; H-bonds &lt; ionic / cov. bonds</text>
+  <text x="500" y="205" text-anchor="middle" fill="#374151" font-size="9">(~1–5 kJ mol⁻¹) (&lt;10 kJ mol⁻¹)  (~10–40 kJ mol⁻¹) (~200–900 kJ mol⁻¹)</text>
+</svg>`
+      },
+      terms: ['Hydrogen bond', 'H-bond donor', 'H-bond acceptor', 'Dipole-dipole force']
+    },
+    {
+      id: 'tip-hbond-anomalies',
       type: 'callout',
       data: {
-        style: 'key',
-        title: 'Permanent Dipole–Dipole Forces',
-        text: 'Present in <strong>polar molecules only</strong>. Because the molecule has a permanent dipole, the δ+ end of one molecule attracts the δ− end of a neighbouring molecule.<br/><br/><strong>Important:</strong> Polar molecules experience <em>both</em> London forces AND permanent dipole–dipole forces — they are additive, not alternatives. For very large polar molecules, London forces can actually exceed dipole–dipole forces in magnitude.<br/><br/>Example: HCl molecules attract each other via permanent dipole–dipole forces <em>as well as</em> London forces.'
+        style: 'tip',
+        title: 'Anomalous Properties Caused by H-bonding',
+        text: 'Water&#x2019;s H-bonding explains its unusually high m.p./b.p. compared with H₂S, H₂Se, H₂Te: those lack H-bond donors because S/Se/Te are not electronegative enough.<br/><br/>Ice is LESS DENSE than liquid water because H-bonds force an open hexagonal lattice in ice, with larger average spacing between molecules than in liquid water.<br/><br/>HF has a similarly high b.p. compared with HCl due to H-bonding (even though HF can only donate one H-bond per molecule vs two in H₂O).'
       },
-      terms: ['Permanent dipole-dipole']
-    },
+      terms: ['Hydrogen bond', 'Anomalous boiling point', 'Ice density']
+    }
+  ],
+  presentationSlides: [
     {
-      id: 'h-hbond',
-      type: 'heading',
-      data: { text: '3. Hydrogen Bonds', level: 2 },
-      terms: []
-    },
-    {
-      id: 'callout-hbond',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Hydrogen Bonds — Definition and Conditions',
-        text: 'A <strong>hydrogen bond</strong> is a strong type of permanent dipole–dipole interaction formed when hydrogen is covalently bonded to a <strong>very electronegative atom</strong> (F, O, or N) and the slightly positive H atom (δ+) is attracted to a lone pair on a nearby F, O, or N atom of another molecule.<br/><br/>Conditions for H-bond formation:<br/>• H must be bonded to <strong>F, O, or N</strong> — these are the only electronegative enough small atoms.<br/>• The acceptor atom must have a <strong>lone pair</strong> at n=2 level (concentrated, spatially close negative charge).<br/><br/>Represented by a dotted line: O–H···O<br/><br/>Strength: approximately 1/10th of a typical covalent bond — strong compared to London/dipole forces, but not as strong as covalent. Constantly broken and reformed in liquid water.'
-      },
-      terms: ['Hydrogen bond']
-    },
-    {
-      id: 'callout-bp-trends',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Boiling Point Trends Across Groups: The H-Bonding Anomaly',
-        text: '<strong>Group 4 (CH₄ → SnH₄):</strong> Boiling points increase steadily down the group (CH₄ −161°C → GeH₄ −89°C → SnH₄ −52°C) — no H-bonding, just increasing London forces as molecular mass grows. This is the "expected" trend.<br/><br/><strong>Groups 5, 6, and 7 anomaly:</strong> If you extrapolate the Group 4 trend to predict what NH₃, H₂O, and HF should boil at, their actual boiling points are <em>far higher</em> than predicted:<br/>• <strong>H₂O</strong>: expected ≈ −80°C, actual = +100°C<br/>• <strong>HF</strong>: expected ≈ −100°C, actual = +19.5°C<br/>• <strong>NH₃</strong>: expected ≈ −110°C, actual = −33°C<br/><br/>This anomalously high boiling point is explained by the extra energy needed to break <strong>hydrogen bonds</strong> between molecules. H₂O, HF, and NH₃ all contain H bonded directly to O, F or N.'
-      },
-      terms: []
-    },
-    {
-      id: 'callout-water-perfect',
-      type: 'callout',
-      data: {
-        style: 'key',
-        title: 'Why H₂O Has The Highest Boiling Point: The "Perfect" H-Bond System',
-        text: 'Water has a higher boiling point than both HF and NH₃ despite having a lower molecular mass than HF. This is because water is a <strong>uniquely "perfect" hydrogen-bonding system</strong>:<br/><br/>Each H₂O molecule has:<br/>• <strong>2 δ+ hydrogen atoms</strong> that can donate H-bonds<br/>• <strong>2 lone pairs on oxygen</strong> that can accept H-bonds<br/>→ Every water molecule can form <strong>4 hydrogen bonds</strong> (2 donated + 2 accepted) = a full, balanced network.<br/><br/><strong>HF is limited:</strong> Each HF molecule has 1 δ+H (only 1 donor) but 3 lone pairs (3 potential acceptors). The lone pairs are "wasted" — HF forms chains, not a full network. Fewer H-bonds per molecule → lower bp than H₂O despite being more electronegative.<br/><br/><strong>NH₃ is limited:</strong> Each NH₃ molecule has 3 δ+H (3 donors) but only 1 lone pair (1 acceptor). Many donors are wasted. NH₃ has the fewest H-bonds per molecule → lowest bp of the three.<br/><br/>Order: <strong>H₂O (100°C) > HF (19.5°C) > NH₃ (−33°C)</strong> — reflecting the efficiency of their H-bonding networks.'
-      },
-      terms: []
-    },
-    {
-      id: 'callout-hbond-apps',
-      type: 'callout',
-      data: {
-        style: 'worked',
-        title: 'H-Bonding in Action: Ethanol vs Methoxymethane, and DNA',
-        text: '<strong>Ethanol (C₂H₅OH) vs Methoxymethane (CH₃OCH₃):</strong><br/>Both have the same molecular formula — C₂H₆O — and a similar number of electrons.<br/>• Ethanol bp = <strong>78.5°C</strong>: the O–H group allows hydrogen bonding between molecules.<br/>• Methoxymethane bp = <strong>−24.8°C</strong>: the oxygen is between two carbons, no O–H bond → no hydrogen bonding → only London forces and weak dipole-dipole.<br/>This ~103°C difference is almost entirely due to H-bonding in ethanol.<br/><br/><strong>DNA double helix:</strong> The two complementary strands of DNA are held together by hydrogen bonds between specific base pairs (adenine–thymine: 2 H-bonds; guanine–cytosine: 3 H-bonds). H-bonds are individually weak enough to be unzipped during DNA replication but collectively strong enough to hold the double helix stable.'
-      },
-      terms: []
-    },
-    {
-      id: 'table-effects',
-      type: 'comparisonTable',
-      data: {
-        caption: 'Effects of intermolecular forces on physical properties',
-        headers: ['Effect / Anomaly', 'Explanation'],
-        rows: [
-          ['H₂O has a surprisingly high bp (100°C) vs H₂S (−60°C)', 'H₂O molecules form strong H-bonds (O-H···O); H₂S only has London + weak dipole forces'],
-          ['H₂O > HF > NH₃ in boiling point', 'Water is the "perfect" H-bond system — 2 donors and 2 acceptors per molecule (4 H-bonds). HF has only 1 δ+H donor. NH₃ has only 1 lone pair acceptor. Both are limited compared to water.'],
-          ['HF has a higher bp than HCl', 'HF has strong F-H···F hydrogen bonds; HCl only has dipole-dipole + London forces'],
-          ['Ice is less dense than water', 'In ice, each H₂O forms 4 H-bonds in an open hexagonal lattice. When melted, the lattice partially collapses → liquid water is denser. This is why ice floats.'],
-          ['Ethanol (78.5°C) vs methoxymethane (−24.8°C)', 'Both have formula C₂H₆O but only ethanol has an O–H group → H-bonding. Methoxymethane has no O–H → only London + dipole. The ~100°C difference is almost entirely due to H-bonding.'],
-          ['I₂ boiling point > Br₂ > Cl₂ > F₂', 'All halogens are non-polar; as molecular mass increases, more electrons → stronger London dispersion forces → higher bp']
-        ]
-      },
-      terms: []
+      layout: 'bento',
+      title: 'Intermolecular Forces',
+      subtitle: 'WCH11 — Chemistry Topic 3.10',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '⚡', title: 'London Dispersion Forces', html: 'Present in <em>all</em> molecules (polar and non-polar).<br/>Caused by <strong>instantaneous dipoles</strong> inducing temporary dipoles in neighbours.<br/>Strength increases with number of electrons (more polarisable).' },
+        { delay: 1, colSpan: 1, icon: '⊕⊖', title: 'Permanent Dipole–Dipole', html: 'Between polar molecules with permanent δ+ and δ− ends.<br/>Stronger than London forces for molecules of similar mass.<br/>e.g. HCl, SO₂, CH₂Cl₂.' },
+        { delay: 2, colSpan: 1, icon: '💧', title: 'Hydrogen Bonding', html: 'Strongest intermolecular force.<br/>Requires H directly bonded to <strong>F, O, or N</strong>.<br/>H interacts with a lone pair on another F/O/N atom.<br/>e.g. H₂O, HF, NH₃, alcohols, DNA base pairs.' },
+        { delay: 3, colSpan: 2, icon: '📈', title: 'Effect on Boiling Point', html: '<strong>Strength order:</strong> London < dipole–dipole < hydrogen bonding.<br/>All IMF types increase with molecular size.<br/>H₂O bp (100°C) &gt;&gt; H₂S bp (−60°C) despite H₂S having larger Mᵣ — hydrogen bonding in H₂O dominates.' },
+      ]
     }
   ],
   recall: {
     enabled: true,
+    summaryText: 'Three IMF types: (1) London forces — instantaneous/induced dipoles, present in ALL substances, increase with electron count; (2) Permanent dipole-dipole — between polar molecules; (3) Hydrogen bonds — requires H directly on N/O/F, lone pair on N/O/F, strongest IMF (~10-40 kJ/mol). H-bonding explains water&#x2019;s high b.p. and ice density anomaly.',
     cues: [
-      { id: 'c1', blockId: 'callout-london', prompt: 'Explain the origin of London dispersion forces and what two factors affect their strength.' },
-      { id: 'c2', blockId: 'callout-hbond', prompt: 'Define a hydrogen bond. State the three elements that can form hydrogen bonds with H, and explain why.' },
-      { id: 'c3', blockId: 'callout-bp-trends', prompt: 'Explain why H₂O, HF and NH₃ all have anomalously high boiling points compared to the other hydrides in their groups.' },
-      { id: 'c4', blockId: 'callout-water-perfect', prompt: 'Explain why H₂O has a higher boiling point than HF, even though F is more electronegative than O.' },
-      { id: 'c5', blockId: 'callout-hbond-apps', prompt: 'Ethanol and methoxymethane both have the formula C₂H₆O. Explain why their boiling points differ by about 100°C.' },
-      { id: 'c6', blockId: 'table-effects', prompt: 'Explain why ice is less dense than liquid water.' }
+      { id: 'c1', blockId: 'svg-london', prompt: 'Explain the origin of London dispersion forces. Why do larger molecules (e.g. I₂ vs F₂) have stronger London forces?' },
+      { id: 'c2', blockId: 'key-london', prompt: 'List the boiling points trend F₂ < Cl₂ < Br₂ < I₂ and explain it using London force strength.' },
+      { id: 'c3', blockId: 'svg-hbond', prompt: 'State the two conditions that must be met for a hydrogen bond to form. Identify donor and acceptor in an H₂O dimer.' },
+      { id: 'c4', blockId: 'tip-hbond-anomalies', prompt: 'Why is the boiling point of H₂O much higher than H₂S? Why is ice less dense than liquid water?' },
+      { id: 'c5', blockId: 'svg-hbond', prompt: 'Rank these interactions from weakest to strongest: covalent bonds, London forces, hydrogen bonds, ionic bonds. Give typical energy ranges.' }
     ],
-    summaryText: 'Three intermolecular forces: London (all molecules, ∝ e⁻ count + shape) < permanent dipole-dipole (polar molecules — additive with London) < hydrogen bonds (H bonded to F/O/N, acceptor needs lone pair). H-bonds explain anomalously high bp of H₂O/HF/NH₃ vs their group hydrides. H₂O is the "perfect" H-bond system (2 donors + 2 acceptors = 4 bonds/molecule). HF limited (1 donor), NH₃ limited (1 acceptor). Ethanol bp 78.5°C vs methoxymethane −24.8°C: same formula, difference due to H-bonding. DNA strands held by H-bonds.',
-    ready: false
+    ready: true
   },
-  evidence: []
+  evidence: [],
+  mentions: []
 };
-export default note_chemistry_1_3_10;

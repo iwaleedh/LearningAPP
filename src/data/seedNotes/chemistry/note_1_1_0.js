@@ -133,6 +133,21 @@ export const note_chemistry_1_1_0 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Atomic & Formula Terms',
+      subtitle: 'Chemistry Topic 1.0',
+      elements: [
+        { delay: 0, colSpan: 1, icon: '⚛️', title: 'The Atom', html: 'The smallest part of an <strong>element</strong> that still has its properties. e.g. Au (Gold)' },
+        { delay: 1, colSpan: 1, icon: '🫧', title: 'Elements & Compounds', html: '<strong>Element</strong>: One type of atom.<br/><strong>Compound</strong>: Different elements chemically bonded.' },
+        { delay: 2, colSpan: 1, icon: '🔗', title: 'Molecules', html: 'Two or more atoms joined together.<br/>• <em>Element:</em> O₂<br/>• <em>Compound:</em> HCl' },
+        { delay: 3, colSpan: 1, icon: '⚡', title: 'Ions', html: 'Atoms that have gained or lost electrons.<br/>• <strong>Cation</strong> (+) lost e⁻<br/>• <strong>Anion</strong> (-) gained e⁻' },
+        { delay: 4, colSpan: 2, icon: '🔢', title: 'Atom Counts', html: '<strong>Monatomic</strong>: Single atom (He, Ne).<br/><strong>Diatomic</strong>: Two atoms (H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂).<br/><strong>Polyatomic</strong>: Many atoms (P₄, S₈, SO₄²⁻).' },
+        { delay: 5, colSpan: 3, icon: '📝', title: 'A-Level Equation Skills', html: '• Balance equations correctly.<br/>• State symbols: (s), (l), (g), (aq).<br/>• Arrows: <strong>→</strong> (irreversible) vs <strong>⇌</strong> (reversible).<br/>• Full vs simplest ionic equations.' }
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

@@ -260,6 +260,19 @@ export const note_chemistry_1_1_7 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Percentage Yield & Atom Economy',
+      subtitle: 'Chemistry Topic 1.7',
+      elements: [
+        { delay: 0, colSpan: 2, icon: '📉', title: 'Percentage Yield', html: 'Compares actual product made vs theoretical max.<br/><div style="text-align:center;font-size:1.1em;margin-top:0.5em;"><strong>% Yield = <span class="nb-frac"><span class="nb-num">Actual Yield</span><span class="nb-den">Theoretical Yield</span></span> × 100</strong></div>' },
+        { delay: 1, colSpan: 1, icon: '🤷', title: 'Why is Yield < 100%?', html: '• Reversible reaction<br/>• Side reactions happening<br/>• Product left in apparatus/lost during transfer' },
+        { delay: 2, colSpan: 2, icon: '♻️', title: 'Atom Economy', html: 'Measures how efficiently atoms are utilised in the desired product.<br/><div style="text-align:center;font-size:1.0em;margin-top:0.5em;"><strong>Atom Economy = <span class="nb-frac"><span class="nb-num">Molar Mass of Desired Product</span><span class="nb-den">Sum of Molar Masses of All Products</span></span> × 100</strong></div>' },
+        { delay: 3, colSpan: 1, icon: '🌱', title: 'Green Chemistry', html: 'High atom economy means less waste. Addition reactions always have 100% atom economy.' }
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

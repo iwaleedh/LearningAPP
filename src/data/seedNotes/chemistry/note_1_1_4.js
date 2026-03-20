@@ -350,6 +350,19 @@ export const note_chemistry_1_1_4 = {
       terms: []
     }
   ],
+  presentationSlides: [
+    {
+      layout: 'bento',
+      title: 'Solutions and Concentration',
+      subtitle: 'Chemistry Topic 1.4',
+      elements: [
+        { delay: 0, colSpan: 2, icon: '💧', title: 'Concentration Overview', html: 'Concentration measures how much solute is dissolved in a specific volume of solvent (usually water). Default volume unit is the decimetre cubed (dm³).' },
+        { delay: 1, colSpan: 1, icon: '📏', title: 'Unit Conversions', html: '1 dm³ = 1000 cm³<br/>(Divide cm³ by 1000 to get dm³)' },
+        { delay: 2, colSpan: 2, icon: '🧮', title: 'Moles and Volume Equation', html: 'Concentration (mol dm⁻³) = Moles (n) ÷ Volume (V)<br/><br/><div style="text-align:center;font-size:1.2em;"><strong>c = <span class="nb-frac"><span class="nb-num">n</span><span class="nb-den">V</span></span></strong></div>' },
+        { delay: 3, colSpan: 1, icon: '⚖️', title: 'Mass Concentration', html: 'Concentration can also be measured in g dm⁻³.<br/><strong>Conc (g dm⁻³) = Conc (mol dm⁻³) × Molar Mass</strong>' }
+      ]
+    }
+  ],
   recall: {
     enabled: true,
     cues: [
