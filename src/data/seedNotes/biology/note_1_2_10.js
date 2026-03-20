@@ -31,7 +31,7 @@ export const note_biology_1_2_10 = {
         "id": "svg-diag-1-2-10-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M40,100 L40,60 L70,60 L80,80 L100,80 L110,60 L140,60 L140,100 Z' fill='#e2e8f0' stroke='#4a5568'/><rect x='65' y='30' width='50' height='30' fill='#fc8181' rx='5'/><polygon points='75,60 85,80 95,80 105,60' fill='#fc8181'/><text x='55' y='20' font-size='10' fill='#c53030'>Inhibitor blocks Active Site</text><polygon points='160,40 170,60 180,60 190,40 205,15 145,15' fill='#48bb78'/><text x='150' y='75' font-size='10' fill='#2f855a'>Substrate</text><path d='M170,30 L110,30' stroke='#333' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M40,100 L40,60 L70,60 L80,80 L100,80 L110,60 L140,60 L140,100 Z' fill='#1e293b' stroke='#4a5568'/><rect x='65' y='30' width='50' height='30' fill='#fc8181' rx='5'/><polygon points='75,60 85,80 95,80 105,60' fill='#fc8181'/><text x='55' y='20' font-size='10' fill='#c53030'>Inhibitor blocks Active Site</text><polygon points='160,40 170,60 180,60 190,40 205,15 145,15' fill='#48bb78'/><text x='150' y='75' font-size='10' fill='#2f855a'>Substrate</text><path d='M170,30 L110,30' stroke='#333' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/></svg>",
             "caption": "Competitive Inhibition"
         }
     },
@@ -39,7 +39,7 @@ export const note_biology_1_2_10 = {
         "id": "svg-diag-1-2-10-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M40,100 L40,60 L80,60 L90,75 L110,60 L140,60 L140,100 L110,100 L100,115 L80,100 Z' fill='#e2e8f0' stroke='#4a5568'/><circle cx='95' cy='110' r='10' fill='#fc8181'/><text x='15' y='140' font-size='10' fill='#c53030'>Inhibitor at Allosteric Site</text><polygon points='160,40 170,60 200,60 210,40 230,15 145,15' fill='#48bb78'/><text x='155' y='75' font-size='10'>Substrate doesn't fit</text><text x='70' y='45' font-size='10' font-style='italic'>Shape Changed!</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M40,100 L40,60 L80,60 L90,75 L110,60 L140,60 L140,100 L110,100 L100,115 L80,100 Z' fill='#1e293b' stroke='#4a5568'/><circle cx='95' cy='110' r='10' fill='#fc8181'/><text x='15' y='140' font-size='10' fill='#c53030'>Inhibitor at Allosteric Site</text><polygon points='160,40 170,60 200,60 210,40 230,15 145,15' fill='#48bb78'/><text x='155' y='75' font-size='10'>Substrate doesn't fit</text><text x='70' y='45' font-size='10' font-style='italic'>Shape Changed!</text></svg>",
             "caption": "Non-Competitive Inhibition"
         }
     }

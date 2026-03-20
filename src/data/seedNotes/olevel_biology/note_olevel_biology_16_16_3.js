@@ -40,17 +40,17 @@ export const note_olevel_biology_16_16_3 = {
       data: {
         caption: 'Female reproductive system (front view, simplified)',
         svg: `<svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="480" height="320" fill="#fafafa" rx="8"/>
+  <rect width="480" height="320" fill="#0f172a" rx="8"/>
   <!-- Uterus body -->
-  <path d="M200,130 Q200,80 240,75 Q280,80 280,130 L275,185 Q260,200 240,202 Q220,200 205,185 Z" fill="#ffcdd2" stroke="#e57373" stroke-width="2"/>
+  <path d="M200,130 Q200,80 240,75 Q280,80 280,130 L275,185 Q260,200 240,202 Q220,200 205,185 Z" fill="#7f1d1d" stroke="#e57373" stroke-width="2"/>
   <!-- Uterus label -->
   <text x="240" y="150" text-anchor="middle" fill="#c62828" font-weight="bold" font-size="11">Uterus</text>
   <!-- Cervix -->
-  <rect x="225" y="200" width="30" height="22" rx="6" fill="#ef9a9a" stroke="#e57373" stroke-width="1.5"/>
+  <rect x="225" y="200" width="30" height="22" rx="6" fill="#7f1d1d" stroke="#e57373" stroke-width="1.5"/>
   <text x="310" y="213" fill="#555">Cervix</text>
   <line x1="256" y1="211" x2="308" y2="211" stroke="#aaa" stroke-width="1"/>
   <!-- Vagina -->
-  <rect x="228" y="222" width="24" height="38" rx="5" fill="#ffccbc" stroke="#ff8a65" stroke-width="1.5"/>
+  <rect x="228" y="222" width="24" height="38" rx="5" fill="#532407" stroke="#ff8a65" stroke-width="1.5"/>
   <text x="310" y="248" fill="#555">Vagina</text>
   <line x1="253" y1="242" x2="308" y2="246" stroke="#aaa" stroke-width="1"/>
   <!-- Left oviduct -->

@@ -94,14 +94,14 @@ export const note_olevel_physics_4_4_6 = {
         caption: 'National grid: power station → step-up → pylons → substations → homes',
         svg: `<svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="9">
   <!-- Power station -->
-  <rect x="10" y="70" width="70" height="50" rx="5" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="10" y="70" width="70" height="50" rx="5" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="16" y="90" fill="#b91c1c" font-weight="bold">Power</text>
   <text x="14" y="102" fill="#b91c1c" font-weight="bold">Station</text>
   <text x="20" y="114" fill="#b91c1c">~25 kV</text>
   <!-- Wire to step-up -->
   <line x1="80" y1="95" x2="110" y2="95" stroke="#374151" stroke-width="2"/>
   <!-- Step-up transformer -->
-  <rect x="110" y="65" width="55" height="60" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="110" y="65" width="55" height="60" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
   <text x="117" y="90" fill="#4338ca" font-weight="bold">Step-up</text>
   <text x="113" y="103" fill="#4338ca">Transformer</text>
   <text x="115" y="116" fill="#4338ca">→ 400 kV</text>
@@ -122,15 +122,15 @@ export const note_olevel_physics_4_4_6 = {
   <!-- Wire to step-down primary substation -->
   <line x1="280" y1="95" x2="310" y2="95" stroke="#374151" stroke-width="2"/>
   <!-- Step-down primary -->
-  <rect x="310" y="65" width="60" height="60" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <rect x="310" y="65" width="60" height="60" rx="4" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
   <text x="315" y="88" fill="#065f46" font-weight="bold">Step-down</text>
   <text x="314" y="100" fill="#065f46">33 kV / 11 kV</text>
   <text x="316" y="113" fill="#065f46">Substation</text>
   <!-- Wire to homes -->
   <line x1="370" y1="95" x2="400" y2="95" stroke="#374151" stroke-width="2"/>
   <!-- Homes -->
-  <rect x="400" y="75" width="35" height="40" rx="3" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
-  <polygon points="400,75 417,55 435,75" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <rect x="400" y="75" width="35" height="40" rx="3" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
+  <polygon points="400,75 417,55 435,75" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <text x="404" y="130" fill="#92400e" font-weight="bold">230 V</text>
   <text x="401" y="143" fill="#92400e">Homes</text>
   <!-- Labels -->

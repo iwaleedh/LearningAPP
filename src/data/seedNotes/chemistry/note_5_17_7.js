@@ -76,7 +76,7 @@ export const note_chemistry_5_17_7 = {
         caption: 'Surface adsorption mechanism in heterogeneous catalysis',
         svg: `<svg viewBox="0 0 520 170" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Background -->
-  <rect width="520" height="170" fill="#f8f8ff" rx="8"/>
+  <rect width="520" height="170" fill="#0f172a" rx="8"/>
   <!-- Step labels -->
   <text x="80" y="18" text-anchor="middle" font-weight="bold" fill="#5c35cc" font-size="12">Adsorption</text>
   <text x="260" y="18" text-anchor="middle" font-weight="bold" fill="#2e7d32" font-size="12">Reaction</text>
@@ -85,13 +85,13 @@ export const note_chemistry_5_17_7 = {
   <rect x="10" y="120" width="155" height="20" fill="#9e9e9e" rx="3"/>
   <rect x="180" y="120" width="155" height="20" fill="#9e9e9e" rx="3"/>
   <rect x="350" y="120" width="155" height="20" fill="#9e9e9e" rx="3"/>
-  <text x="87" y="133" text-anchor="middle" fill="white" font-size="10">Metal surface (solid)</text>
-  <text x="257" y="133" text-anchor="middle" fill="white" font-size="10">Metal surface (solid)</text>
-  <text x="427" y="133" text-anchor="middle" fill="white" font-size="10">Metal surface (solid)</text>
+  <text x="87" y="133" text-anchor="middle" fill="#1e293b" font-size="10">Metal surface (solid)</text>
+  <text x="257" y="133" text-anchor="middle" fill="#1e293b" font-size="10">Metal surface (solid)</text>
+  <text x="427" y="133" text-anchor="middle" fill="#1e293b" font-size="10">Metal surface (solid)</text>
   <!-- Panel 1: Adsorption — A and B molecules adsorbing -->
   <circle cx="55" cy="90" r="13" fill="#90caf9" stroke="#1976d2" stroke-width="1.5"/>
   <text x="55" y="95" text-anchor="middle" fill="#1976d2" font-weight="bold">A</text>
-  <circle cx="100" cy="90" r="13" fill="#ffe082" stroke="#f57c00" stroke-width="1.5"/>
+  <circle cx="100" cy="90" r="13" fill="#44370a" stroke="#f57c00" stroke-width="1.5"/>
   <text x="100" y="95" text-anchor="middle" fill="#f57c00" font-weight="bold">B</text>
   <!-- dashed bond lines to surface -->
   <line x1="55" y1="103" x2="55" y2="120" stroke="#1976d2" stroke-dasharray="3,2" stroke-width="1.5"/>
@@ -100,14 +100,14 @@ export const note_chemistry_5_17_7 = {
   <!-- Panel 2: Reaction — A-B bond weakens, new bond forms -->
   <circle cx="225" cy="88" r="13" fill="#90caf9" stroke="#1976d2" stroke-width="1.5"/>
   <text x="225" y="93" text-anchor="middle" fill="#1976d2" font-weight="bold">A</text>
-  <circle cx="270" cy="88" r="13" fill="#ffe082" stroke="#f57c00" stroke-width="1.5"/>
+  <circle cx="270" cy="88" r="13" fill="#44370a" stroke="#f57c00" stroke-width="1.5"/>
   <text x="270" y="93" text-anchor="middle" fill="#f57c00" font-weight="bold">B</text>
   <line x1="237" y1="88" x2="258" y2="88" stroke="#c0392b" stroke-width="2"/>
   <text x="248" y="82" fill="#c0392b" font-size="9" text-anchor="middle">bond forms</text>
   <line x1="225" y1="101" x2="225" y2="120" stroke="#1976d2" stroke-dasharray="3,2" stroke-width="1.5"/>
   <line x1="270" y1="101" x2="270" y2="120" stroke="#f57c00" stroke-dasharray="3,2" stroke-width="1.5"/>
   <!-- Panel 3: Desorption — AB product leaves -->
-  <ellipse cx="427" cy="70" rx="28" ry="16" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <ellipse cx="427" cy="70" rx="28" ry="16" fill="#0a2e1a" stroke="#2e7d32" stroke-width="1.5"/>
   <text x="427" y="75" text-anchor="middle" fill="#2e7d32" font-weight="bold">AB</text>
   <line x1="427" y1="86" x2="427" y2="105" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#arr)"/>
   <text x="452" y="98" fill="#555" font-size="9">product</text>

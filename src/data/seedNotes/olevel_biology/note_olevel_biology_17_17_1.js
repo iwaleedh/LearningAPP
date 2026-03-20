@@ -41,7 +41,7 @@ export const note_olevel_biology_17_17_1 = {
       data: {
         caption: 'Punnett square showing inheritance of sex in humans',
         svg: `<svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
-  <rect width="440" height="300" fill="#fafafa" rx="8"/>
+  <rect width="440" height="300" fill="#0f172a" rx="8"/>
   <!-- Title -->
   <text x="220" y="22" text-anchor="middle" fill="#333" font-size="13" font-weight="bold">Sex Determination — Punnett Square</text>
   <!-- Parents labels -->
@@ -50,30 +50,30 @@ export const note_olevel_biology_17_17_1 = {
   <!-- Punnett square grid -->
   <!-- Header row: sperm types -->
   <text x="220" y="78" text-anchor="middle" fill="#1565c0" font-size="12" font-weight="bold">Sperm (from father)</text>
-  <rect x="155" y="85" width="100" height="40" fill="#bbdefb" stroke="#90caf9" stroke-width="1.5"/>
+  <rect x="155" y="85" width="100" height="40" fill="#1c3a64" stroke="#90caf9" stroke-width="1.5"/>
   <text x="205" y="110" text-anchor="middle" fill="#0d47a1" font-weight="bold" font-size="16">X</text>
-  <rect x="255" y="85" width="100" height="40" fill="#b2dfdb" stroke="#80cbc4" stroke-width="1.5"/>
+  <rect x="255" y="85" width="100" height="40" fill="#0e4a56" stroke="#80cbc4" stroke-width="1.5"/>
   <text x="305" y="110" text-anchor="middle" fill="#004d40" font-weight="bold" font-size="16">Y</text>
   <!-- Left column header: egg types -->
   <text x="78" y="160" text-anchor="end" fill="#880e4f" font-size="12" font-weight="bold">Eggs</text>
   <text x="78" y="175" text-anchor="end" fill="#880e4f" font-size="11">(from</text>
   <text x="78" y="188" text-anchor="end" fill="#880e4f" font-size="11">mother)</text>
-  <rect x="85" y="125" width="68" height="50" fill="#f8bbd9" stroke="#f48fb1" stroke-width="1.5"/>
+  <rect x="85" y="125" width="68" height="50" fill="#4a1040" stroke="#f48fb1" stroke-width="1.5"/>
   <text x="119" y="155" text-anchor="middle" fill="#880e4f" font-weight="bold" font-size="16">X</text>
-  <rect x="85" y="175" width="68" height="50" fill="#f8bbd9" stroke="#f48fb1" stroke-width="1.5"/>
+  <rect x="85" y="175" width="68" height="50" fill="#4a1040" stroke="#f48fb1" stroke-width="1.5"/>
   <text x="119" y="205" text-anchor="middle" fill="#880e4f" font-weight="bold" font-size="16">X</text>
   <!-- Result cells -->
   <!-- XX = female -->
-  <rect x="155" y="125" width="100" height="50" fill="#fce4ec" stroke="#f06292" stroke-width="1.5"/>
+  <rect x="155" y="125" width="100" height="50" fill="#4a1040" stroke="#f06292" stroke-width="1.5"/>
   <text x="205" y="155" text-anchor="middle" fill="#ad1457" font-weight="bold" font-size="16">XX</text>
   <!-- XY = male -->
-  <rect x="255" y="125" width="100" height="50" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1.5"/>
+  <rect x="255" y="125" width="100" height="50" fill="#1c3a64" stroke="#64b5f6" stroke-width="1.5"/>
   <text x="305" y="155" text-anchor="middle" fill="#1565c0" font-weight="bold" font-size="16">XY</text>
   <!-- XX = female -->
-  <rect x="155" y="175" width="100" height="50" fill="#fce4ec" stroke="#f06292" stroke-width="1.5"/>
+  <rect x="155" y="175" width="100" height="50" fill="#4a1040" stroke="#f06292" stroke-width="1.5"/>
   <text x="205" y="205" text-anchor="middle" fill="#ad1457" font-weight="bold" font-size="16">XX</text>
   <!-- XY = male -->
-  <rect x="255" y="175" width="100" height="50" fill="#e3f2fd" stroke="#64b5f6" stroke-width="1.5"/>
+  <rect x="255" y="175" width="100" height="50" fill="#1c3a64" stroke="#64b5f6" stroke-width="1.5"/>
   <text x="305" y="205" text-anchor="middle" fill="#1565c0" font-weight="bold" font-size="16">XY</text>
   <!-- Labels -->
   <text x="205" y="240" text-anchor="middle" fill="#ad1457" font-size="11">Female</text>

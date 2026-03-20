@@ -73,7 +73,7 @@ export const note_olevel_physics_4_2_8 = {
   <line x1="50" y1="195" x2="160" y2="195" stroke="#374151" stroke-width="2"/>
 
   <!-- LDR (top) -->
-  <rect x="135" y="40" width="50" height="50" rx="6" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="135" y="40" width="50" height="50" rx="6" fill="#44370a" stroke="#f59e0b" stroke-width="2"/>
   <text x="160" y="62" text-anchor="middle" fill="#92400e" font-weight="bold">LDR</text>
   <!-- arrows for light -->
   <line x1="103" y1="55" x2="130" y2="55" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#larr)"/>
@@ -93,7 +93,7 @@ export const note_olevel_physics_4_2_8 = {
   <circle cx="160" cy="120" r="4" fill="#374151"/>
 
   <!-- Fixed resistor R (bottom) -->
-  <rect x="135" y="120" width="50" height="50" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="135" y="120" width="50" height="50" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="160" y="150" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R</text>
   <line x1="160" y1="170" x2="160" y2="195" stroke="#374151" stroke-width="2"/>
 

@@ -46,27 +46,27 @@ export const note_olevel_maths_core_5_1_1 = {
       data: {
         svg: `<svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Rectangle -->
-  <rect x="10" y="20" width="100" height="60" fill="#ede9fe" stroke="#6366f1" stroke-width="2"/>
+  <rect x="10" y="20" width="100" height="60" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
   <text x="60" y="15" text-anchor="middle" fill="#374151">l = 10</text>
   <text x="118" y="55" fill="#374151">w = 6</text>
   <text x="60" y="98" text-anchor="middle" fill="#6366f1" font-weight="bold">Rectangle</text>
 
   <!-- Triangle -->
-  <polygon points="150,85 250,85 220,25" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <polygon points="150,85 250,85 220,25" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
   <line x1="220" y1="25" x2="220" y2="85" stroke="#10b981" stroke-width="1" stroke-dasharray="4"/>
   <text x="200" y="100" text-anchor="middle" fill="#374151">b</text>
   <text x="225" y="58" fill="#374151">h</text>
   <text x="200" y="115" text-anchor="middle" fill="#10b981" font-weight="bold">Triangle</text>
 
   <!-- Parallelogram -->
-  <polygon points="280,80 360,80 350,25 270,25" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="280,80 360,80 350,25 270,25" fill="#78350f" stroke="#f59e0b" stroke-width="2"/>
   <line x1="350" y1="25" x2="350" y2="80" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4"/>
   <text x="315" y="97" text-anchor="middle" fill="#374151">b</text>
   <text x="357" y="57" fill="#374151">h</text>
   <text x="315" y="112" text-anchor="middle" fill="#f59e0b" font-weight="bold">Parallelogram</text>
 
   <!-- Trapezium -->
-  <polygon points="30,180 160,180 130,130 60,130" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="30,180 160,180 130,130 60,130" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="95" y="125" text-anchor="middle" fill="#374151">a</text>
   <text x="95" y="196" text-anchor="middle" fill="#374151">b</text>
   <line x1="130" y1="130" x2="130" y2="180" stroke="#ef4444" stroke-width="1" stroke-dasharray="4"/>
@@ -74,7 +74,7 @@ export const note_olevel_maths_core_5_1_1 = {
   <text x="95" y="215" text-anchor="middle" fill="#ef4444" font-weight="bold">Trapezium</text>
 
   <!-- Rhombus -->
-  <polygon points="310,155 360,120 410,155 360,190" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+  <polygon points="310,155 360,120 410,155 360,190" fill="#2d1b69" stroke="#8b5cf6" stroke-width="2"/>
   <line x1="310" y1="155" x2="410" y2="155" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4"/>
   <line x1="360" y1="120" x2="360" y2="190" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4"/>
   <text x="360" y="150" text-anchor="middle" fill="#374151" font-size="10">d₁</text>

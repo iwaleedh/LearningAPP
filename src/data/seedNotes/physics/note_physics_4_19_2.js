@@ -32,7 +32,7 @@ export const note_physics_4_19_2 = {
       id: 'enr-svg-1',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/><path d="M 40 160 Q 120 70 340 50" fill="none" stroke="#6366f1" stroke-width="3"/><path d="M 40 50 Q 120 140 340 158" fill="none" stroke="#ef4444" stroke-width="3"/><line x1="40" y1="20" x2="40" y2="170" stroke="#374151" stroke-width="2"/><line x1="30" y1="160" x2="360" y2="160" stroke="#374151" stroke-width="2"/><text x="60" y="45" font-family="Arial" font-size="13" fill="#6366f1">Charge</text><text x="60" y="175" font-family="Arial" font-size="13" fill="#ef4444">Discharge</text></svg>',
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/><path d="M 40 160 Q 120 70 340 50" fill="none" stroke="#6366f1" stroke-width="3"/><path d="M 40 50 Q 120 140 340 158" fill="none" stroke="#ef4444" stroke-width="3"/><line x1="40" y1="20" x2="40" y2="170" stroke="#374151" stroke-width="2"/><line x1="30" y1="160" x2="360" y2="160" stroke="#374151" stroke-width="2"/><text x="60" y="45" font-family="Arial" font-size="13" fill="#6366f1">Charge</text><text x="60" y="175" font-family="Arial" font-size="13" fill="#ef4444">Discharge</text></svg>',
         caption: 'Charge vs Discharge: V or Q against time — charging rises exponentially to V_max; discharging falls exponentially to zero.'
       }
     },

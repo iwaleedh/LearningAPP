@@ -100,16 +100,16 @@ export const note_olevel_biology_18_18_3 = {
         caption: 'Selective breeding process over three generations to increase milk yield in cattle',
         svg: `<svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Generation 1 -->
-  <rect x="10" y="20" width="130" height="160" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="10" y="20" width="130" height="160" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="75" y="38" text-anchor="middle" font-weight="bold" font-size="10" fill="#713f12">Generation 1</text>
   <!-- Cows with varying sizes (milk yield) -->
-  <ellipse cx="45" cy="80" rx="22" ry="15" fill="#fed7aa" stroke="#ea580c" stroke-width="1.2"/>
+  <ellipse cx="45" cy="80" rx="22" ry="15" fill="#532407" stroke="#ea580c" stroke-width="1.2"/>
   <text x="45" y="84" text-anchor="middle" font-size="8" fill="#431407">Low</text>
-  <ellipse cx="95" cy="75" rx="26" ry="18" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+  <ellipse cx="95" cy="75" rx="26" ry="18" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <text x="95" y="79" text-anchor="middle" font-size="8" fill="#713f12" font-weight="bold">HIGH</text>
-  <ellipse cx="50" cy="130" rx="20" ry="13" fill="#fed7aa" stroke="#ea580c" stroke-width="1.2"/>
+  <ellipse cx="50" cy="130" rx="20" ry="13" fill="#532407" stroke="#ea580c" stroke-width="1.2"/>
   <text x="50" y="134" text-anchor="middle" font-size="8" fill="#431407">Med</text>
-  <ellipse cx="100" cy="128" rx="23" ry="15" fill="#fed7aa" stroke="#ea580c" stroke-width="1.2"/>
+  <ellipse cx="100" cy="128" rx="23" ry="15" fill="#532407" stroke="#ea580c" stroke-width="1.2"/>
   <text x="100" y="132" text-anchor="middle" font-size="8" fill="#431407">Low</text>
   <text x="75" y="170" text-anchor="middle" font-size="9" fill="#4b5563">Select best &#x2714;</text>
 
@@ -123,15 +123,15 @@ export const note_olevel_biology_18_18_3 = {
   <text x="155" y="94" text-anchor="middle" font-size="8" fill="#6366f1">Breed</text>
 
   <!-- Generation 2 -->
-  <rect x="170" y="20" width="130" height="160" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="170" y="20" width="130" height="160" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="235" y="38" text-anchor="middle" font-weight="bold" font-size="10" fill="#713f12">Generation 2</text>
-  <ellipse cx="205" cy="80" rx="25" ry="17" fill="#fde68a" stroke="#ca8a04" stroke-width="1.5"/>
+  <ellipse cx="205" cy="80" rx="25" ry="17" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="205" y="84" text-anchor="middle" font-size="8" fill="#713f12">High</text>
-  <ellipse cx="260" cy="75" rx="27" ry="19" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+  <ellipse cx="260" cy="75" rx="27" ry="19" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <text x="260" y="79" text-anchor="middle" font-size="8" fill="#713f12" font-weight="bold">BEST</text>
-  <ellipse cx="210" cy="130" rx="24" ry="16" fill="#fde68a" stroke="#ca8a04" stroke-width="1.5"/>
+  <ellipse cx="210" cy="130" rx="24" ry="16" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="210" y="134" text-anchor="middle" font-size="8" fill="#713f12">High</text>
-  <ellipse cx="260" cy="128" rx="22" ry="14" fill="#fed7aa" stroke="#ea580c" stroke-width="1.2"/>
+  <ellipse cx="260" cy="128" rx="22" ry="14" fill="#532407" stroke="#ea580c" stroke-width="1.2"/>
   <text x="260" y="132" text-anchor="middle" font-size="8" fill="#431407">Med</text>
   <text x="235" y="170" text-anchor="middle" font-size="9" fill="#4b5563">Select best &#x2714;</text>
 
@@ -140,15 +140,15 @@ export const note_olevel_biology_18_18_3 = {
   <text x="315" y="94" text-anchor="middle" font-size="8" fill="#6366f1">Breed</text>
 
   <!-- Generation 3 -->
-  <rect x="330" y="20" width="130" height="160" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="330" y="20" width="130" height="160" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="395" y="38" text-anchor="middle" font-weight="bold" font-size="10" fill="#14532d">Generation 3+</text>
-  <ellipse cx="365" cy="78" rx="28" ry="20" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="365" cy="78" rx="28" ry="20" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="365" y="82" text-anchor="middle" font-size="8" fill="#14532d" font-weight="bold">HIGH</text>
-  <ellipse cx="425" cy="73" rx="30" ry="21" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="425" cy="73" rx="30" ry="21" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="425" y="77" text-anchor="middle" font-size="8" fill="#14532d" font-weight="bold">HIGH</text>
-  <ellipse cx="368" cy="130" rx="27" ry="19" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="368" cy="130" rx="27" ry="19" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="368" y="134" text-anchor="middle" font-size="8" fill="#14532d" font-weight="bold">HIGH</text>
-  <ellipse cx="425" cy="128" rx="28" ry="20" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="425" cy="128" rx="28" ry="20" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="425" y="132" text-anchor="middle" font-size="8" fill="#14532d" font-weight="bold">HIGH</text>
   <text x="395" y="170" text-anchor="middle" font-size="9" fill="#14532d">All high yield</text>
 </svg>`

@@ -95,7 +95,7 @@ export const note_olevel_chemistry_9_9_5 = {
         <circle cx="45" cy="155" r="3" class="desiccant"/>
         
         <!-- Cotton Wool layer -->
-        <path d="M 15 130 Q 35 120 55 130 Q 35 140 15 130 Z" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+        <path d="M 15 130 Q 35 120 55 130 Q 35 140 15 130 Z" fill="#1e293b" stroke="#bdc3c7" stroke-width="1"/>
         
         <!-- CLEAN Nail -->
         <rect x="32" y="40" width="6" height="80" rx="3" class="nail"/>

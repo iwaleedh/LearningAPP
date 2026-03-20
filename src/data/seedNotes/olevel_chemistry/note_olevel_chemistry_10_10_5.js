@@ -28,7 +28,7 @@ export const note_olevel_chemistry_10_10_5 = {
   <text x="50" y="240" font-family="var(--font-sans)" font-size="12" fill="#3b82f6" opacity="0.8">(Greenhouse Gases: CO₂, CH₄)</text>
 
   <!-- Sun -->
-  <circle cx="50" cy="50" r="30" fill="#fde047" />
+  <circle cx="50" cy="50" r="30" fill="#44370a" />
   <path d="M 50 10 L 50 90 M 10 50 L 90 50 M 20 20 L 80 80 M 20 80 L 80 20" stroke="#facc15" stroke-width="3"/>
 
   <!-- Incoming Solar Radiation -->
@@ -47,7 +47,7 @@ export const note_olevel_chemistry_10_10_5 = {
 
   <!-- Reflected Infrared -->
   <path d="M 390 120 C 430 90, 480 90, 450 160" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="12,6" marker-end="url(#arrow-ir)"/>
-  <circle cx="430" cy="110" r="15" fill="#bae6fd" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="430" cy="110" r="15" fill="#0c4a6e" stroke="#3b82f6" stroke-width="2"/>
   <text x="430" y="114" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">CO₂</text>
 
   <text x="490" y="120" font-family="var(--font-sans)" font-size="12" fill="#dc2626" font-weight="bold">Absorbed & re-emitted</text>
@@ -56,7 +56,7 @@ export const note_olevel_chemistry_10_10_5 = {
 
   <!-- Escaping Infrared -->
   <path d="M 400 120 L 500 20" stroke="#fca5a5" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-escape)"/>
-  <text x="450" y="50" font-family="var(--font-sans)" font-size="10" fill="#fca5a5" transform="rotate(-45 450,50)">Some escapes</text>
+  <text x="450" y="50" font-family="var(--font-sans)" font-size="10" fill="#7f1d1d" transform="rotate(-45 450,50)">Some escapes</text>
 
   <defs>
     <marker id="arrow-sun" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
@@ -66,7 +66,7 @@ export const note_olevel_chemistry_10_10_5 = {
       <path d="M 1 1 L 5 3 L 1 5 Z" fill="#ef4444"/>
     </marker>
     <marker id="arrow-escape" markerWidth="6" markerHeight="6" refX="4" refY="3" orient="auto">
-      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#fca5a5"/>
+      <path d="M 1 1 L 5 3 L 1 5 Z" fill="#7f1d1d"/>
     </marker>
   </defs>
 </svg>`

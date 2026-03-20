@@ -327,11 +327,11 @@ export const note_chemistry_5_18_0 = {
   <text x="212" y="66" text-anchor="end" font-size="10" fill="#6b7280">H</text>
 
   <!-- Bond length annotation box -->
-  <rect x="10" y="148" width="155" height="38" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <rect x="10" y="148" width="155" height="38" rx="4" fill="#3d1212" stroke="#dc2626" stroke-width="1"/>
   <text x="88" y="162" text-anchor="middle" font-size="9.5" fill="#dc2626" font-weight="bold">Kekulé: 2 bond lengths</text>
   <text x="88" y="178" text-anchor="middle" font-size="9" fill="#374151">C=C 134 pm | C−C 154 pm</text>
 
-  <rect x="175" y="148" width="155" height="38" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <rect x="175" y="148" width="155" height="38" rx="4" fill="#0a2e1a" stroke="#16a34a" stroke-width="1"/>
   <text x="253" y="162" text-anchor="middle" font-size="9.5" fill="#16a34a" font-weight="bold">Actual: 1 bond length</text>
   <text x="253" y="178" text-anchor="middle" font-size="9" fill="#374151">All C−C = 139 pm (equal)</text>
 </svg>`

@@ -58,7 +58,7 @@ export const note_olevel_chemistry_1_1_3 = {
     <rect x="100" y="40" width="520" height="60" rx="3" fill="url(#glass)" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)" />
     
     <!-- Left Cotton Wool (Ammonia) -->
-    <path d="M 105,45 Q 120,40 130,55 Q 140,50 145,65 Q 150,80 135,90 Q 120,95 105,85 Q 95,70 105,45 Z" fill="#e2e8f0" stroke="#94a3b8" />
+    <path d="M 105,45 Q 120,40 130,55 Q 140,50 145,65 Q 150,80 135,90 Q 120,95 105,85 Q 95,70 105,45 Z" fill="#1e293b" stroke="#94a3b8" />
     <!-- Label -->
     <text x="80" y="30" text-anchor="middle" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6">Ammonia (NH₃)</text>
     <text x="80" y="115" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Cotton wool</text>
@@ -66,7 +66,7 @@ export const note_olevel_chemistry_1_1_3 = {
     <text x="80" y="150" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-style="italic" fill="var(--color-text-secondary)">Mr = 17 (Lighter, faster)</text>
 
     <!-- Right Cotton Wool (HCl) -->
-    <path d="M 615,45 Q 600,40 590,55 Q 580,50 575,65 Q 570,80 585,90 Q 600,95 615,85 Q 625,70 615,45 Z" fill="#e2e8f0" stroke="#94a3b8" />
+    <path d="M 615,45 Q 600,40 590,55 Q 580,50 575,65 Q 570,80 585,90 Q 600,95 615,85 Q 625,70 615,45 Z" fill="#1e293b" stroke="#94a3b8" />
     <!-- Label -->
     <text x="640" y="30" text-anchor="middle" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444">Hydrochloric Acid (HCl)</text>
     <text x="640" y="115" text-anchor="middle" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Cotton wool</text>
@@ -94,8 +94,8 @@ export const note_olevel_chemistry_1_1_3 = {
     <polygon points="450,70 460,65 460,75" fill="#ef4444" />
 
     <!-- White Ring string (NH4Cl) -->
-    <ellipse cx="430" cy="70" rx="10" ry="25" fill="#f8fafc" stroke="#94a3b8" />
-    <g fill="#e2e8f0">
+    <ellipse cx="430" cy="70" rx="10" ry="25" fill="#0f172a" stroke="#94a3b8" />
+    <g fill="#1e293b">
       <circle cx="430" cy="50" r="4" />
       <circle cx="428" cy="62" r="5" />
       <circle cx="432" cy="75" r="4" />

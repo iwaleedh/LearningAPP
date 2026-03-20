@@ -7,14 +7,14 @@ export const note_chemistry_5_16_2 = {
       id: 'svg-she-diagram',
       data: {
         svg: `<svg viewBox="0 0 400 330" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="400" height="330" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="400" height="330" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="14" fill="#0f172a">Standard Hydrogen Electrode (SHE)</text>
-  <rect x="130" y="35" width="60" height="38" fill="#fefce8" stroke="#ca8a04" stroke-width="2" rx="5"/>
+  <rect x="130" y="35" width="60" height="38" fill="#44370a" stroke="#ca8a04" stroke-width="2" rx="5"/>
   <text x="160" y="51" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="11">H₂ gas</text>
   <text x="160" y="65" text-anchor="middle" fill="#92400e" font-size="10">100 kPa</text>
   <line x1="160" y1="73" x2="160" y2="108" stroke="#ca8a04" stroke-width="2.5" stroke-dasharray="4,2"/>
   <path d="M75,110 L75,275 L325,275 L325,110" fill="none" stroke="#64748b" stroke-width="2.5" rx="4"/>
-  <rect x="76" y="165" width="248" height="109" fill="#dbeafe" opacity="0.75"/>
+  <rect x="76" y="165" width="248" height="109" fill="#1e3a8a" opacity="0.75"/>
   <text x="200" y="215" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="12">H⁺(aq) — 1 mol dm⁻³</text>
   <text x="200" y="245" text-anchor="middle" fill="#2563eb" font-size="11">Temperature: 298 K</text>
   <rect x="148" y="108" width="24" height="115" fill="#9ca3af" stroke="#374151" stroke-width="1.5" rx="3"/>
@@ -29,7 +29,7 @@ export const note_chemistry_5_16_2 = {
   <circle cx="180" cy="250" r="6" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
   <circle cx="145" cy="268" r="4" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
   <text x="270" y="255" fill="#0369a1" font-size="10" font-style="italic">H₂ bubbles ⇑</text>
-  <rect x="20" y="155" width="50" height="80" rx="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="20" y="155" width="50" height="80" rx="5" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="45" y="170" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="9">Standard</text>
   <text x="45" y="182" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="9">Conditions</text>
   <text x="45" y="196" text-anchor="middle" fill="#166534" font-size="9">T = 298 K</text>

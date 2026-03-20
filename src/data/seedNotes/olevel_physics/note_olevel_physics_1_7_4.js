@@ -56,13 +56,13 @@ export const note_olevel_physics_1_7_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 380 210" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="210" fill="#fff7ed" rx="10"/>
+  <rect width="380" height="210" fill="#532407" rx="10"/>
   <text x="190" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c2d12">Work Done by a Force</text>
   <!-- Ground -->
   <line x1="20" y1="170" x2="360" y2="170" stroke="#6b7280" stroke-width="2"/>
   <!-- Box being pushed -->
   <rect x="50" y="130" width="60" height="40" rx="4" fill="#6366f1" opacity="0.85"/>
-  <text x="80" y="154" text-anchor="middle" font-size="11" fill="white">Box</text>
+  <text x="80" y="154" text-anchor="middle" font-size="11" fill="#1e293b">Box</text>
   <!-- Arrow for force -->
   <line x1="110" y1="150" x2="200" y2="150" stroke="#dc2626" stroke-width="2.5"/>
   <polygon points="200,150 190,145 190,155" fill="#dc2626"/>
@@ -79,8 +79,8 @@ export const note_olevel_physics_1_7_4 = {
   <text x="190" y="50" text-anchor="middle" font-size="12" fill="#374151">W = Fd = 50 × 4</text>
   <text x="190" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#16a34a">W = 200 J</text>
   <!-- Lifting example -->
-  <rect x="310" y="140" width="40" height="30" rx="3" fill="#f59e0b" opacity="0.9"/>
-  <text x="330" y="159" text-anchor="middle" font-size="9" fill="white">2 kg</text>
+  <rect x="310" y="140" width="40" height="30" rx="3" fill="#78350f" opacity="0.9"/>
+  <text x="330" y="159" text-anchor="middle" font-size="9" fill="#1e293b">2 kg</text>
   <line x1="330" y1="140" x2="330" y2="80" stroke="#dc2626" stroke-width="2"/>
   <polygon points="330,80 326,90 334,90" fill="#dc2626"/>
   <text x="350" y="113" font-size="9" fill="#dc2626">F = 20 N</text>

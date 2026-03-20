@@ -55,7 +55,7 @@ export const note_chemistry_1_5_5 = {
       <polygon points="0 0,8 3,0 6" fill="#374151"/>
     </marker>
   </defs>
-  <rect x="8" y="22" width="208" height="112" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <rect x="8" y="22" width="208" height="112" rx="6" fill="#0a2e1a" stroke="#86efac" stroke-width="1.5"/>
   <text x="112" y="42" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">Monomer (n molecules)</text>
   <text x="34" y="86" font-size="14" font-weight="700" fill="#166534">n</text>
   <text x="66" y="86" font-size="14" font-weight="700" fill="#111827">CH&#x2082;</text>
@@ -68,7 +68,7 @@ export const note_chemistry_1_5_5 = {
   <text x="257" y="68" font-size="11" font-weight="700" fill="#1e40af" text-anchor="middle">~200 &#xb0;C</text>
   <text x="257" y="81" font-size="11" font-weight="700" fill="#1e40af" text-anchor="middle">~2000 atm</text>
   <text x="257" y="94" font-size="11" font-weight="700" fill="#1e40af" text-anchor="middle">O&#x2082; initiator</text>
-  <rect x="302" y="22" width="270" height="112" rx="6" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.5"/>
+  <rect x="302" y="22" width="270" height="112" rx="6" fill="#2d1b69" stroke="#d8b4fe" stroke-width="1.5"/>
   <text x="437" y="42" font-size="12" font-weight="700" fill="#7e22ce" text-anchor="middle">Polymer chain</text>
   <line x1="316" y1="81" x2="334" y2="81" stroke="#111827" stroke-width="2"/>
   <text x="336" y="93" font-size="24" fill="#7e22ce" font-weight="900">[</text>
@@ -80,7 +80,7 @@ export const note_chemistry_1_5_5 = {
   <line x1="454" y1="81" x2="472" y2="81" stroke="#111827" stroke-width="2"/>
   <text x="437" y="112" font-size="11" fill="#6b7280" text-anchor="middle">C=C broken &#x2192; C&#x2013;C bonds only</text>
   <text x="437" y="127" font-size="11" fill="#6b7280" text-anchor="middle">no by-products &#x2014; all atoms retained</text>
-  <rect x="8" y="141" width="564" height="20" rx="4" fill="#fef9c3" stroke="#fde047" stroke-width="1"/>
+  <rect x="8" y="141" width="564" height="20" rx="4" fill="#44370a" stroke="#fde047" stroke-width="1"/>
   <text x="290" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#854d0e">n = degree of polymerisation: typically thousands to hundreds of thousands</text>
 </svg>`
       }

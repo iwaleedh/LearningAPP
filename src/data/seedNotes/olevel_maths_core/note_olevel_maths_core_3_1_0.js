@@ -122,10 +122,10 @@ export const note_olevel_maths_core_3_1_0 = {
   <text x="140" y="184" fill="#555" text-anchor="end">−1</text>
   <text x="140" y="214" fill="#555" text-anchor="end">−2</text>
   <!-- Quadrant labels (light) -->
-  <text x="230" y="80" fill="#c0c0c0" font-size="9">1st</text>
-  <text x="65" y="80" fill="#c0c0c0" font-size="9">2nd</text>
-  <text x="65" y="230" fill="#c0c0c0" font-size="9">3rd</text>
-  <text x="220" y="230" fill="#c0c0c0" font-size="9">4th</text>
+  <text x="230" y="80" fill="#1e293b" font-size="9">1st</text>
+  <text x="65" y="80" fill="#1e293b" font-size="9">2nd</text>
+  <text x="65" y="230" fill="#1e293b" font-size="9">3rd</text>
+  <text x="220" y="230" fill="#1e293b" font-size="9">4th</text>
   <!-- Point A(2,3): x=2→215, y=3→60 -->
   <circle cx="215" cy="60" r="4" fill="#6366f1"/>
   <text x="220" y="57" fill="#6366f1" font-weight="bold">A(2,3)</text>

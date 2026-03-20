@@ -55,14 +55,14 @@ export const note_olevel_physics_2_3_0 = {
         caption: 'Thermal conduction along a metal rod — energy transferred by vibrating particles and free electrons',
         svg: `<svg viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Rod body -->
-  <rect x="50" y="70" width="320" height="50" rx="6" fill="#c8d8e8" stroke="#6090c8" stroke-width="2"/>
+  <rect x="50" y="70" width="320" height="50" rx="6" fill="#1c3a64" stroke="#6090c8" stroke-width="2"/>
 
   <!-- Heat source left -->
   <rect x="10" y="60" width="40" height="70" rx="6" fill="#ff7744" stroke="#cc4422" stroke-width="2"/>
-  <text x="14" y="100" fill="white" font-size="11" font-weight="bold">Hot</text>
+  <text x="14" y="100" fill="#1e293b" font-size="11" font-weight="bold">Hot</text>
 
   <!-- Cold end right -->
-  <rect x="370" y="70" width="40" height="50" rx="6" fill="#aaddff" stroke="#4488cc" stroke-width="2"/>
+  <rect x="370" y="70" width="40" height="50" rx="6" fill="#1c3a64" stroke="#4488cc" stroke-width="2"/>
   <text x="374" y="99" fill="#336" font-size="11">Cold</text>
 
   <!-- Particles along rod -->
@@ -74,9 +74,9 @@ export const note_olevel_physics_2_3_0 = {
   <circle cx="110" cy="95" r="3" fill="#ffaa66" opacity="0.6"/>
 
   <!-- Mid particles -->
-  <circle cx="170" cy="95" r="8" fill="#ffcc88" stroke="#cc8844" stroke-width="1.5"/>
+  <circle cx="170" cy="95" r="8" fill="#532407" stroke="#cc8844" stroke-width="1.5"/>
   <!-- Cool end particles -->
-  <circle cx="260" cy="95" r="7" fill="#aaccee" stroke="#5588aa" stroke-width="1.5"/>
+  <circle cx="260" cy="95" r="7" fill="#1c3a64" stroke="#5588aa" stroke-width="1.5"/>
   <circle cx="340" cy="95" r="6" fill="#88aacc" stroke="#446690" stroke-width="1.5"/>
 
   <!-- Energy flow arrow -->
@@ -85,9 +85,9 @@ export const note_olevel_physics_2_3_0 = {
   <line x1="275" y1="88" x2="325" y2="88" stroke="#88aacc" stroke-width="2" marker-end="url(#arrc)"/>
 
   <!-- Free electron dots -->
-  <circle cx="130" cy="105" r="3" fill="#ffee00" stroke="#cc9900" stroke-width="1"/>
-  <circle cx="215" cy="82" r="3" fill="#ffee00" stroke="#cc9900" stroke-width="1"/>
-  <circle cx="305" cy="108" r="3" fill="#ffee00" stroke="#cc9900" stroke-width="1"/>
+  <circle cx="130" cy="105" r="3" fill="#44370a" stroke="#cc9900" stroke-width="1"/>
+  <circle cx="215" cy="82" r="3" fill="#44370a" stroke="#cc9900" stroke-width="1"/>
+  <circle cx="305" cy="108" r="3" fill="#44370a" stroke="#cc9900" stroke-width="1"/>
   <text x="55" y="160" fill="#cc9900" font-size="10">● Free electrons (yellow) carry energy rapidly</text>
   <text x="55" y="173" fill="#e06020" font-size="10">→ Direction of energy transfer</text>
 

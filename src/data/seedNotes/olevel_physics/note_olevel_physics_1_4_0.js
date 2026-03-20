@@ -52,7 +52,7 @@ export const note_olevel_physics_1_4_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="240" fill="#fff7ed" rx="10"/>
+  <rect width="440" height="240" fill="#532407" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Resultant Forces</text>
   <!-- Case 1: same direction -->
   <text x="10" y="55" font-size="12" fill="#374151" font-weight="bold">Case 1: Same direction</text>

@@ -59,15 +59,15 @@ export const note_olevel_chemistry_7_7_6 = {
   <text x="380" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Solution 2 (Na₂CO₃)</text>
 
   <!-- Ions in solution 1 -->
-  <circle cx="100" cy="70" r="16" fill="#bfdbfe" />
+  <circle cx="100" cy="70" r="16" fill="#1e3a8a" />
   <text x="100" y="74" font-family="var(--font-sans)" font-size="12" fill="#1e3a8a" text-anchor="middle">Ca²⁺</text>
-  <circle cx="140" cy="70" r="14" fill="#fecaca" />
+  <circle cx="140" cy="70" r="14" fill="#7f1d1d" />
   <text x="140" y="74" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">Cl¯</text>
 
   <!-- Ions in solution 2 -->
-  <circle cx="360" cy="70" r="14" fill="#a7f3d0" />
+  <circle cx="360" cy="70" r="14" fill="#065f46" />
   <text x="360" y="74" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">Na⁺</text>
-  <circle cx="400" cy="70" r="18" fill="#fde68a" />
+  <circle cx="400" cy="70" r="18" fill="#44370a" />
   <text x="400" y="74" font-family="var(--font-sans)" font-size="12" fill="#78350f" text-anchor="middle">CO₃²¯</text>
 
   <!-- Arrows crossing to products -->
@@ -78,7 +78,7 @@ export const note_olevel_chemistry_7_7_6 = {
 
   <!-- Products -->
   <text x="250" y="140" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Insoluble</text>
-  <rect x="210" y="150" width="80" height="30" rx="4" fill="#fef08a" stroke="#d97706" />
+  <rect x="210" y="150" width="80" height="30" rx="4" fill="#44370a" stroke="#d97706" />
   <text x="250" y="170" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#78350f" text-anchor="middle">CaCO₃(s)</text>
 
   <text x="250" y="80" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Soluble Spectator Ions</text>

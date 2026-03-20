@@ -56,7 +56,7 @@ export const note_olevel_biology_14_14_5 = {
       data: {
         caption: 'Auxin distribution in a shoot tip causes phototropism',
         svg: `<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="300" fill="#f0fdf4" rx="12"/>
+  <rect width="520" height="300" fill="#0a2e1a" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Phototropism: Auxin Causes Shoot to Bend Towards Light</text>
   <!-- Light rays from left -->
   <line x1="20" y1="60" x2="120" y2="100" stroke="#fbbf24" stroke-width="2.5"/>
@@ -64,7 +64,7 @@ export const note_olevel_biology_14_14_5 = {
   <line x1="20" y1="140" x2="120" y2="140" stroke="#fbbf24" stroke-width="2.5"/>
   <text x="10" y="55" font-size="12" fill="#b45309">☀ Light</text>
   <!-- Shoot -->
-  <rect x="180" y="60" width="60" height="180" rx="8" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <rect x="180" y="60" width="60" height="180" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <!-- Auxin dots — more on shaded side -->
   <circle cx="195" cy="90" r="4" fill="#7c3aed"/>
   <circle cx="195" cy="110" r="4" fill="#7c3aed"/>
@@ -88,7 +88,7 @@ export const note_olevel_biology_14_14_5 = {
   <text x="140" y="215" font-size="10" fill="#16a34a">less elongation</text>
   <text x="248" y="215" font-size="10" fill="#16a34a">more elongation</text>
   <!-- Explanation box -->
-  <rect x="340" y="60" width="165" height="120" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="340" y="60" width="165" height="120" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="422" y="82" text-anchor="middle" font-size="11" font-weight="bold" fill="#5b21b6">How it works:</text>
   <text x="422" y="98" text-anchor="middle" font-size="10" fill="#5b21b6">Auxin moves away</text>
   <text x="422" y="111" text-anchor="middle" font-size="10" fill="#5b21b6">from light to shaded</text>

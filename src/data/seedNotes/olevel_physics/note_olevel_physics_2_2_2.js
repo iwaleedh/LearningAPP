@@ -42,11 +42,11 @@ export const note_olevel_physics_2_2_2 = {
         caption: 'Labelled diagram of the metal block apparatus for measuring SHC',
         svg: `<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Insulating foam (outer) -->
-  <rect x="80" y="80" width="160" height="120" rx="12" fill="#e8d5b0" stroke="#b8a080" stroke-width="2"/>
+  <rect x="80" y="80" width="160" height="120" rx="12" fill="#3d2b0a" stroke="#b8a080" stroke-width="2"/>
   <text x="85" y="218" fill="#a07840" font-size="11">Foam insulation</text>
 
   <!-- Metal block (inner) -->
-  <rect x="100" y="95" width="120" height="90" rx="6" fill="#b0c8e0" stroke="#6090b8" stroke-width="2"/>
+  <rect x="100" y="95" width="120" height="90" rx="6" fill="#1c3a64" stroke="#6090b8" stroke-width="2"/>
   <text x="115" y="150" fill="#3060a0" font-size="12" font-weight="bold">Metal Block</text>
   <text x="115" y="165" fill="#3060a0" font-size="10">(e.g. aluminium)</text>
 
@@ -55,7 +55,7 @@ export const note_olevel_physics_2_2_2 = {
   <text x="102" y="100" fill="#a04020" font-size="10">Heater</text>
 
   <!-- Thermometer hole (right) -->
-  <rect x="185" y="103" width="12" height="60" rx="3" fill="#c0e8c0" stroke="#40a040" stroke-width="1.5"/>
+  <rect x="185" y="103" width="12" height="60" rx="3" fill="#0a2e1a" stroke="#40a040" stroke-width="1.5"/>
   <!-- Thermometer bulb -->
   <circle cx="191" cy="163" r="5" fill="#e04040"/>
   <text x="200" y="100" fill="#207020" font-size="10">Thermometer</text>
@@ -66,15 +66,15 @@ export const note_olevel_physics_2_2_2 = {
   <line x1="126" y1="103" x2="126" y2="50" stroke="#c44" stroke-width="2"/>
 
   <!-- Ammeter -->
-  <rect x="60" y="20" width="40" height="24" rx="4" fill="#fff" stroke="#888" stroke-width="1.5"/>
+  <rect x="60" y="20" width="40" height="24" rx="4" fill="#1e293b" stroke="#888" stroke-width="1.5"/>
   <text x="72" y="36" fill="#333" font-size="11" font-weight="bold">A</text>
 
   <!-- Voltmeter -->
-  <rect x="200" y="20" width="40" height="24" rx="4" fill="#fff" stroke="#888" stroke-width="1.5"/>
+  <rect x="200" y="20" width="40" height="24" rx="4" fill="#1e293b" stroke="#888" stroke-width="1.5"/>
   <text x="212" y="36" fill="#333" font-size="11" font-weight="bold">V</text>
 
   <!-- Power supply -->
-  <rect x="300" y="30" width="100" height="40" rx="6" fill="#f0f0f0" stroke="#888" stroke-width="1.5"/>
+  <rect x="300" y="30" width="100" height="40" rx="6" fill="#0f172a" stroke="#888" stroke-width="1.5"/>
   <text x="315" y="52" fill="#333" font-size="11">Power Supply</text>
   <line x1="117" y1="44" x2="80" y2="44" stroke="#c44" stroke-width="2"/>
   <line x1="100" y1="32" x2="100" y2="44" stroke="#c44" stroke-width="2"/>

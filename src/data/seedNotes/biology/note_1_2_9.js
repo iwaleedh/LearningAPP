@@ -42,7 +42,7 @@ export const note_biology_1_2_9 = {
         "id": "svg-diag-1-2-9-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,100 L50,50 L80,50 L90,70 L110,70 L120,50 L150,50 L150,100 Z' fill='#fed7d7' stroke='#c53030' stroke-width='2'/><text x='80' y='120' font-size='12'>Enzyme</text><polygon points='85,45 95,65 105,65 115,45 130,20 70,20' fill='#c6f6d5' stroke='#2f855a'/><text x='75' y='15' font-size='10'>Substrate</text><path d='M160,60 L190,60' stroke='#333' stroke-width='2' marker-end='url(#arrow)'/><path d='M210,100 L210,50 L240,50 L250,70 L270,70 L280,50 L310,50 L310,100 Z' fill='#fed7d7' stroke='#c53030' stroke-width='2'/><polygon points='245,49 255,69 265,69 275,49 290,24 230,24' fill='#fbd38d' stroke='#dd6b20'/><text x='220' y='120' font-size='10'>Enzyme-Substrate Complex</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,100 L50,50 L80,50 L90,70 L110,70 L120,50 L150,50 L150,100 Z' fill='#7f1d1d' stroke='#c53030' stroke-width='2'/><text x='80' y='120' font-size='12'>Enzyme</text><polygon points='85,45 95,65 105,65 115,45 130,20 70,20' fill='#0a2e1a' stroke='#2f855a'/><text x='75' y='15' font-size='10'>Substrate</text><path d='M160,60 L190,60' stroke='#333' stroke-width='2' marker-end='url(#arrow)'/><path d='M210,100 L210,50 L240,50 L250,70 L270,70 L280,50 L310,50 L310,100 Z' fill='#7f1d1d' stroke='#c53030' stroke-width='2'/><polygon points='245,49 255,69 265,69 275,49 290,24 230,24' fill='#532407' stroke='#dd6b20'/><text x='220' y='120' font-size='10'>Enzyme-Substrate Complex</text></svg>",
             "caption": "Lock and Key Model"
         }
     },

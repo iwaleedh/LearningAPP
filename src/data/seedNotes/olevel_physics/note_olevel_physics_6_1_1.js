@@ -12,11 +12,11 @@ export const note_olevel_physics_6_1_1 = {
     ]}},
     { id: 'svg-moon', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
   <rect width="400" height="280" fill="#0f172a" rx="8"/>
-  <text x="200" y="22" text-anchor="middle" font-size="12" font-weight="bold" fill="#f1f5f9">Earth–Moon System</text>
+  <text x="200" y="22" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">Earth–Moon System</text>
   <!-- Stars -->
-  <circle cx="50" cy="50" r="1" fill="white"/><circle cx="120" cy="30" r="1" fill="white"/>
-  <circle cx="350" cy="60" r="1" fill="white"/><circle cx="380" cy="120" r="1" fill="white"/>
-  <circle cx="30" cy="200" r="1" fill="white"/><circle cx="370" cy="250" r="1" fill="white"/>
+  <circle cx="50" cy="50" r="1" fill="#1e293b"/><circle cx="120" cy="30" r="1" fill="#1e293b"/>
+  <circle cx="350" cy="60" r="1" fill="#1e293b"/><circle cx="380" cy="120" r="1" fill="#1e293b"/>
+  <circle cx="30" cy="200" r="1" fill="#1e293b"/><circle cx="370" cy="250" r="1" fill="#1e293b"/>
   <!-- Earth -->
   <circle cx="200" cy="150" r="40" fill="#1d4ed8"/>
   <ellipse cx="200" cy="150" rx="40" ry="15" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.6"/>
@@ -35,14 +35,14 @@ export const note_olevel_physics_6_1_1 = {
   <text x="280" y="143" text-anchor="middle" font-size="8" fill="#f59e0b">gravity</text>
   <!-- Orbital velocity arrow -->
   <line x1="328" y1="135" x2="310" y2="100" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#vel)"/>
-  <text x="300" y="92" text-anchor="middle" font-size="8" fill="#a78bfa">orbital</text>
-  <text x="300" y="103" text-anchor="middle" font-size="8" fill="#a78bfa">velocity</text>
+  <text x="300" y="92" text-anchor="middle" font-size="8" fill="#2d1b69">orbital</text>
+  <text x="300" y="103" text-anchor="middle" font-size="8" fill="#2d1b69">velocity</text>
   <!-- Distance label -->
   <line x1="240" y1="175" x2="315" y2="175" stroke="#94a3b8" stroke-width="1"/>
   <text x="277" y="188" text-anchor="middle" font-size="8" fill="#94a3b8">~384 000 km</text>
   <defs>
     <marker id="grav" markerWidth="7" markerHeight="7" refX="3" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#f59e0b"/></marker>
-    <marker id="vel" markerWidth="7" markerHeight="7" refX="3" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#a78bfa"/></marker>
+    <marker id="vel" markerWidth="7" markerHeight="7" refX="3" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2d1b69"/></marker>
   </defs>
 </svg>`, caption: "The Moon orbits Earth (period ≈ 27 days, distance ≈ 384 000 km). Earth's gravity provides the centripetal force." } },
     { id: 'h-other-moons', type: 'heading', data: { text: 'Moons of Other Planets', level: 2 } },

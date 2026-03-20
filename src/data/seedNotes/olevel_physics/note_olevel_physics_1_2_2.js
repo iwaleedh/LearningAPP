@@ -30,7 +30,7 @@ export const note_olevel_physics_1_2_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="300" fill="#f8fafc" rx="10"/>
+  <rect width="440" height="300" fill="#0f172a" rx="10"/>
   <text x="220" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Distance–Time Graph: Three Types of Motion</text>
   <!-- Axes -->
   <line x1="60" y1="250" x2="400" y2="250" stroke="#374151" stroke-width="2"/>

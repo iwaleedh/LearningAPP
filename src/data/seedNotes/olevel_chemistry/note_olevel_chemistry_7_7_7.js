@@ -40,7 +40,7 @@ export const note_olevel_chemistry_7_7_7 = {
   <!-- Before Heating (Blue Crystals) -->
   <text x="120" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Hydrated CuSO₄·5H₂O</text>
   
-  <path d="M 80 150 L 160 150 L 150 170 L 90 170 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M 80 150 L 160 150 L 150 170 L 90 170 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <path d="M 80 150 C 120 160 160 150 160 150" fill="none" stroke="#64748b" stroke-width="1"/>
   
   <polygon points="100,140 110,145 105,155 95,150" fill="#3b82f6"/>
@@ -58,13 +58,13 @@ export const note_olevel_chemistry_7_7_7 = {
   <!-- After Heating (White Powder) -->
   <text x="380" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Anhydrous CuSO₄</text>
 
-  <path d="M 340 150 L 420 150 L 410 170 L 350 170 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M 340 150 L 420 150 L 410 170 L 350 170 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <path d="M 340 150 C 380 160 420 150 420 150" fill="none" stroke="#64748b" stroke-width="1"/>
 
-  <path d="M 350 150 Q 380 135 410 150 L 410 153 Q 380 140 350 153 Z" fill="#f8fafc"/>
-  <circle cx="360" cy="148" r="1.5" fill="#e2e8f0"/>
-  <circle cx="380" cy="142" r="1" fill="#e2e8f0"/>
-  <circle cx="400" cy="147" r="1.5" fill="#e2e8f0"/>
+  <path d="M 350 150 Q 380 135 410 150 L 410 153 Q 380 140 350 153 Z" fill="#0f172a"/>
+  <circle cx="360" cy="148" r="1.5" fill="#1e293b"/>
+  <circle cx="380" cy="142" r="1" fill="#1e293b"/>
+  <circle cx="400" cy="147" r="1.5" fill="#1e293b"/>
   <text x="380" y="195" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">White powder</text>
 
   <!-- Water vapor -->

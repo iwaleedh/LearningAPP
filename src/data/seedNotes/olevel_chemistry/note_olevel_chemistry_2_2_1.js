@@ -62,17 +62,17 @@ export const note_olevel_chemistry_2_2_1 = {
     <!-- Shell 1 -->
     <g transform="rotate(45)">
       <circle cx="0" cy="-60" r="8" fill="url(#electron-grad)" filter="url(#glow)" />
-      <text x="0" y="-57" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">-</text>
+      <text x="0" y="-57" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1e293b">-</text>
     </g>
     <g transform="rotate(225)">
       <circle cx="0" cy="-60" r="8" fill="url(#electron-grad)" filter="url(#glow)" />
-      <text x="0" y="-57" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">-</text>
+      <text x="0" y="-57" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1e293b">-</text>
     </g>
 
     <!-- Shell 2 -->
     <g transform="rotate(0)">
       <circle cx="0" cy="-120" r="8" fill="url(#electron-grad)" filter="url(#glow)" />
-      <text x="0" y="-117" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">-</text>
+      <text x="0" y="-117" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1e293b">-</text>
     </g>
 
     <!-- Nucleus (Lithium-7: 3 protons, 4 neutrons) -->
@@ -84,13 +84,13 @@ export const note_olevel_chemistry_2_2_1 = {
     
     <!-- Protons -->
     <circle cx="0" cy="-15" r="10" fill="url(#proton-grad)" />
-    <text x="0" y="-11" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">+</text>
+    <text x="0" y="-11" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b">+</text>
     
     <circle cx="-12" cy="0" r="10" fill="url(#proton-grad)" />
-    <text x="-12" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">+</text>
+    <text x="-12" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b">+</text>
     
     <circle cx="8" cy="5" r="10" fill="url(#proton-grad)" />
-    <text x="8" y="9" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">+</text>
+    <text x="8" y="9" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b">+</text>
 
     <!-- Labels -->
     <!-- Nucleus Label -->
@@ -114,7 +114,7 @@ export const note_olevel_chemistry_2_2_1 = {
       <rect x="0" y="0" width="140" height="60" rx="4" fill="var(--color-surface)" stroke="var(--color-border)" />
       
       <circle cx="20" cy="20" r="8" fill="url(#proton-grad)" />
-      <text x="20" y="24" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff">+</text>
+      <text x="20" y="24" text-anchor="middle" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1e293b">+</text>
       <text x="40" y="24" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)">Proton (p)</text>
       
       <circle cx="20" cy="40" r="8" fill="url(#neutron-grad)" />

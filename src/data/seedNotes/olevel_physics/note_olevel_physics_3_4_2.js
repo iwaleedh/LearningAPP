@@ -28,13 +28,13 @@ export const note_olevel_physics_3_4_2 = {
   <!-- Outer core (liquid) -->
   <circle cx="240" cy="240" r="130" fill="#e88f2e"/>
   <!-- Inner core (solid) -->
-  <circle cx="240" cy="240" r="60" fill="#facc15"/>
+  <circle cx="240" cy="240" r="60" fill="#532407"/>
   <!-- Crust (thin outer ring) - show as hatched ring -->
   <circle cx="240" cy="240" r="205" fill="none" stroke="#5e8a45" stroke-width="10" opacity="0.7"/>
   <!-- Labels with lines -->
   <!-- Crust -->
   <line x1="240" y1="35" x2="240" y2="58" stroke="#5e8a45" stroke-width="1.5"/>
-  <rect x="150" y="18" width="180" height="18" fill="white" opacity="0.75" rx="3"/>
+  <rect x="150" y="18" width="180" height="18" fill="#1e293b" opacity="0.75" rx="3"/>
   <text x="240" y="31" text-anchor="middle" fill="#3b6e1f" font-weight="bold">Crust (0–30 km, SOLID)</text>
   <!-- Mantle label -->
   <line x1="360" y1="155" x2="330" y2="180" stroke="#7c3707" stroke-width="1.5"/>

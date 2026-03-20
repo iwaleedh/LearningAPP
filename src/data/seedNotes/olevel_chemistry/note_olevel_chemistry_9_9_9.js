@@ -90,7 +90,7 @@ export const note_olevel_chemistry_9_9_9 = {
     <rect x="345" y="70" width="10" height="20" fill="#7f8c8d"/>
     
     <text x="260" y="45" class="label bold" text-anchor="middle">Positive Anodes (+)</text>
-    <text x="260" y="125" class="label" text-anchor="middle" fill="#fff">Carbon</text>
+    <text x="260" y="125" class="label" text-anchor="middle" fill="#1e293b">Carbon</text>
     
     <!-- Gas Outlet (O2 / CO2) -->
     <text x="535" y="100" class="label">Waste gases</text>

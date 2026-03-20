@@ -30,35 +30,35 @@ export const note_olevel_physics_1_8_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="190" fill="#fefce8" rx="10"/>
+  <rect width="420" height="190" fill="#44370a" rx="10"/>
   <text x="210" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#713f12">Nuclear Power Station — Overview</text>
   <!-- Reactor -->
   <rect x="20" y="45" width="80" height="90" rx="8" fill="#dc2626" opacity="0.8"/>
-  <text x="60" y="85" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Nuclear</text>
-  <text x="60" y="97" text-anchor="middle" font-size="10" fill="white">Reactor</text>
-  <text x="60" y="109" text-anchor="middle" font-size="9" fill="#fecaca">Fission</text>
-  <text x="60" y="120" text-anchor="middle" font-size="9" fill="#fecaca">→ Heat</text>
+  <text x="60" y="85" text-anchor="middle" font-size="10" fill="#1e293b" font-weight="bold">Nuclear</text>
+  <text x="60" y="97" text-anchor="middle" font-size="10" fill="#1e293b">Reactor</text>
+  <text x="60" y="109" text-anchor="middle" font-size="9" fill="#7f1d1d">Fission</text>
+  <text x="60" y="120" text-anchor="middle" font-size="9" fill="#7f1d1d">→ Heat</text>
   <!-- Arrow to steam generator -->
   <line x1="100" y1="90" x2="125" y2="90" stroke="#374151" stroke-width="2"/>
   <polygon points="125,90 117,86 117,94" fill="#374151"/>
   <!-- Steam generator -->
   <rect x="125" y="55" width="70" height="70" rx="6" fill="#0ea5e9" opacity="0.8"/>
-  <text x="160" y="88" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Steam</text>
-  <text x="160" y="100" text-anchor="middle" font-size="10" fill="white">Generator</text>
+  <text x="160" y="88" text-anchor="middle" font-size="10" fill="#1e293b" font-weight="bold">Steam</text>
+  <text x="160" y="100" text-anchor="middle" font-size="10" fill="#1e293b">Generator</text>
   <!-- Arrow to turbine -->
   <line x1="195" y1="90" x2="220" y2="90" stroke="#374151" stroke-width="2"/>
   <polygon points="220,90 212,86 212,94" fill="#374151"/>
   <!-- Turbine -->
   <rect x="220" y="62" width="65" height="56" rx="6" fill="#16a34a" opacity="0.8"/>
-  <text x="252" y="88" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Turbine</text>
-  <text x="252" y="101" text-anchor="middle" font-size="9" fill="white">KE</text>
+  <text x="252" y="88" text-anchor="middle" font-size="10" fill="#1e293b" font-weight="bold">Turbine</text>
+  <text x="252" y="101" text-anchor="middle" font-size="9" fill="#1e293b">KE</text>
   <!-- Arrow to generator -->
   <line x1="285" y1="90" x2="308" y2="90" stroke="#374151" stroke-width="2"/>
   <polygon points="308,90 300,86 300,94" fill="#374151"/>
   <!-- Generator -->
   <rect x="308" y="62" width="80" height="56" rx="6" fill="#7c3aed" opacity="0.8"/>
-  <text x="348" y="88" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Generator</text>
-  <text x="348" y="101" text-anchor="middle" font-size="9" fill="white">Electrical</text>
+  <text x="348" y="88" text-anchor="middle" font-size="10" fill="#1e293b" font-weight="bold">Generator</text>
+  <text x="348" y="101" text-anchor="middle" font-size="9" fill="#1e293b">Electrical</text>
   <!-- Cooling tower / safety note -->
   <text x="210" y="148" text-anchor="middle" font-size="10" fill="#dc2626">⚠ Radioactive waste must be safely stored for thousands of years</text>
   <text x="210" y="163" text-anchor="middle" font-size="9" fill="#6b7280">Control rods (boron) absorb neutrons to regulate the chain reaction</text>

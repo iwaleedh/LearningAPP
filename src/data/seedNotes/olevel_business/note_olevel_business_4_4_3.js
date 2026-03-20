@@ -55,7 +55,7 @@ export const note_olevel_business_4_4_3 = {
       data: {
         svg: `<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
   <!-- Background -->
-  <rect width="520" height="300" fill="#f8fafc" rx="8"/>
+  <rect width="520" height="300" fill="#0f172a" rx="8"/>
   <!-- Axes -->
   <line x1="60" y1="260" x2="480" y2="260" stroke="#334155" stroke-width="2"/>
   <line x1="60" y1="260" x2="60" y2="30" stroke="#334155" stroke-width="2"/>

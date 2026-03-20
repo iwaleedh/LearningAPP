@@ -43,7 +43,7 @@ export const note_olevel_chemistry_2_2_2 = {
   <g transform="translate(150, 120)">
     <!-- Symbol -->
     <circle cx="0" cy="0" r="14" fill="url(#nuc)" />
-    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">He</text>
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b">He</text>
     
     <!-- Shell 1 -->
     <circle cx="0" cy="0" r="40" fill="none" stroke="var(--color-border)" stroke-width="2" />
@@ -59,7 +59,7 @@ export const note_olevel_chemistry_2_2_2 = {
   <g transform="translate(400, 120)">
     <!-- Symbol -->
     <circle cx="0" cy="0" r="14" fill="url(#nuc)" />
-    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">O</text>
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b">O</text>
     
     <!-- Shell 1 -->
     <circle cx="0" cy="0" r="30" fill="none" stroke="var(--color-border)" stroke-width="2" />
@@ -85,7 +85,7 @@ export const note_olevel_chemistry_2_2_2 = {
   <g transform="translate(670, 120)">
     <!-- Symbol -->
     <circle cx="0" cy="0" r="14" fill="url(#nuc)" />
-    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff">Na</text>
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b">Na</text>
     
     <!-- Shell 1 -->
     <circle cx="0" cy="0" r="25" fill="none" stroke="var(--color-border)" stroke-width="2" />

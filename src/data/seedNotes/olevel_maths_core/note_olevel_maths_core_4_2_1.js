@@ -90,7 +90,7 @@ export const note_olevel_maths_core_4_2_1 = {
   </g>
   <!-- Angle labels showing 360° -->
   <g transform="translate(310,130)">
-    <polygon points="30,0 120,10 130,70 0,60" fill="#f1f5f9" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="30,0 120,10 130,70 0,60" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
     <text x="3" y="-5" fill="#6366f1" font-size="10" font-weight="700">Any quadrilateral:</text>
     <text x="-2" y="18" fill="#6366f1" font-size="10">a</text>
     <text x="115" y="18" fill="#6366f1" font-size="10">b</text>

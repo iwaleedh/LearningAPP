@@ -28,7 +28,7 @@ export const note_olevel_maths_core_5_2_1 = {
   <!-- full circle outline faint -->
   <circle cx="140" cy="120" r="90" fill="none" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,4"/>
   <!-- sector fill -->
-  <path d="M140,120 L140,30 A90,90 0 0,1 225,165 Z" fill="#ede9fe" stroke="#6366f1" stroke-width="2"/>
+  <path d="M140,120 L140,30 A90,90 0 0,1 225,165 Z" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
   <!-- angle arc -->
   <path d="M140,120 m30,0 A30,30 0 0,1 140,90" fill="none" stroke="#f59e0b" stroke-width="2"/>
   <!-- labels -->

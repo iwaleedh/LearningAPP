@@ -27,7 +27,7 @@ export const note_olevel_physics_2_1_0 = {
         caption: 'Particle arrangement in solids, liquids and gases',
         svg: `<svg viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif" font-size="13">
   <!-- SOLID -->
-  <rect x="10" y="10" width="160" height="160" rx="8" fill="#e8eaf6" stroke="#6366f1" stroke-width="2"/>
+  <rect x="10" y="10" width="160" height="160" rx="8" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
   <text x="90" y="185" text-anchor="middle" fill="#6366f1" font-weight="600">Solid</text>
   <circle cx="45" cy="45" r="12" fill="#6366f1" opacity="0.85"/>
   <circle cx="90" cy="45" r="12" fill="#6366f1" opacity="0.85"/>
@@ -39,7 +39,7 @@ export const note_olevel_physics_2_1_0 = {
   <circle cx="90" cy="135" r="12" fill="#6366f1" opacity="0.85"/>
   <circle cx="135" cy="135" r="12" fill="#6366f1" opacity="0.85"/>
   <!-- LIQUID -->
-  <rect x="190" y="10" width="160" height="160" rx="8" fill="#e3f2fd" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="190" y="10" width="160" height="160" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
   <text x="270" y="185" text-anchor="middle" fill="#3b82f6" font-weight="600">Liquid</text>
   <circle cx="220" cy="50" r="12" fill="#3b82f6" opacity="0.8"/>
   <circle cx="260" cy="38" r="12" fill="#3b82f6" opacity="0.8"/>
@@ -53,7 +53,7 @@ export const note_olevel_physics_2_1_0 = {
   <circle cx="265" cy="128" r="12" fill="#3b82f6" opacity="0.8"/>
   <circle cx="315" cy="140" r="12" fill="#3b82f6" opacity="0.8"/>
   <!-- GAS -->
-  <rect x="370" y="10" width="160" height="160" rx="8" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+  <rect x="370" y="10" width="160" height="160" rx="8" fill="#3b1460" stroke="#9333ea" stroke-width="2"/>
   <text x="450" y="185" text-anchor="middle" fill="#9333ea" font-weight="600">Gas</text>
   <circle cx="400" cy="35" r="10" fill="#9333ea" opacity="0.75"/>
   <circle cx="500" cy="50" r="10" fill="#9333ea" opacity="0.75"/>

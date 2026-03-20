@@ -53,33 +53,33 @@ export const note_olevel_chemistry_2_2_5 = {
     <!-- Rows of alternating ions -->
     <!-- Row 1 -->
     <circle cx="0" cy="0" r="16" fill="url(#grad-na)"/>
-    <text x="0" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#fff">+</text>
+    <text x="0" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#1e293b">+</text>
     <circle cx="40" cy="0" r="20" fill="url(#grad-cl)"/>
-    <text x="40" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#fff">-</text>
+    <text x="40" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#1e293b">-</text>
     <circle cx="80" cy="0" r="16" fill="url(#grad-na)"/>
-    <text x="80" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#fff">+</text>
+    <text x="80" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#1e293b">+</text>
     <circle cx="120" cy="0" r="20" fill="url(#grad-cl)"/>
-    <text x="120" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#fff">-</text>
+    <text x="120" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#1e293b">-</text>
 
     <!-- Row 2 -->
     <circle cx="0" cy="40" r="20" fill="url(#grad-cl)"/>
-    <text x="0" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#fff">-</text>
+    <text x="0" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#1e293b">-</text>
     <circle cx="40" cy="40" r="16" fill="url(#grad-na)"/>
-    <text x="40" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#fff">+</text>
+    <text x="40" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#1e293b">+</text>
     <circle cx="80" cy="40" r="20" fill="url(#grad-cl)"/>
-    <text x="80" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#fff">-</text>
+    <text x="80" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#1e293b">-</text>
     <circle cx="120" cy="40" r="16" fill="url(#grad-na)"/>
-    <text x="120" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#fff">+</text>
+    <text x="120" y="45" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#1e293b">+</text>
 
     <!-- Row 3 -->
     <circle cx="0" cy="80" r="16" fill="url(#grad-na)"/>
-    <text x="0" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#fff">+</text>
+    <text x="0" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#1e293b">+</text>
     <circle cx="40" cy="80" r="20" fill="url(#grad-cl)"/>
-    <text x="40" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#fff">-</text>
+    <text x="40" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#1e293b">-</text>
     <circle cx="80" cy="80" r="16" fill="url(#grad-na)"/>
-    <text x="80" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#fff">+</text>
+    <text x="80" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="12" fill="#1e293b">+</text>
     <circle cx="120" cy="80" r="20" fill="url(#grad-cl)"/>
-    <text x="120" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#fff">-</text>
+    <text x="120" y="85" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="16" fill="#1e293b">-</text>
 
     <!-- Lines to show attraction -->
     <line x1="16" y1="0" x2="20" y2="0" stroke="var(--color-text-secondary)" stroke-width="2"/>

@@ -39,17 +39,17 @@ export const note_business_4_19_1 = {
             caption: "The Three Approaches to Global Marketing — standardisation to full adaptation",
             svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 310' font-family='Inter,system-ui,sans-serif'>
   <text x='350' y='24' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>EPRG Framework: Three Approaches to Global Marketing</text>
-  <rect x='200' y='38' width='300' height='68' rx='10' fill='#ede9fe' stroke='#6366f1' stroke-width='2'/>
+  <rect x='200' y='38' width='300' height='68' rx='10' fill='#2d1b69' stroke='#6366f1' stroke-width='2'/>
   <text x='350' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#4338ca'>ETHNOCENTRIC</text>
   <text x='350' y='79' text-anchor='middle' font-size='11' fill='#475569'>&quot;Home country approach is best&quot;</text>
   <text x='350' y='96' text-anchor='middle' font-size='10' fill='#64748b'>e.g. Apple — same iPhone sold worldwide</text>
   <line x1='350' y1='106' x2='350' y2='134' stroke='#c7d2fe' stroke-width='2' stroke-dasharray='4 3'/>
-  <rect x='160' y='137' width='380' height='68' rx='10' fill='#dbeafe' stroke='#3b82f6' stroke-width='2'/>
+  <rect x='160' y='137' width='380' height='68' rx='10' fill='#1e3a8a' stroke='#3b82f6' stroke-width='2'/>
   <text x='350' y='161' text-anchor='middle' font-size='13' font-weight='700' fill='#1d4ed8'>GEOCENTRIC</text>
   <text x='350' y='178' text-anchor='middle' font-size='11' fill='#475569'>&quot;Blend global efficiency + local relevance&quot;</text>
   <text x='350' y='195' text-anchor='middle' font-size='10' fill='#64748b'>e.g. McDonald's — Golden Arches globally, local menus per country</text>
   <line x1='350' y1='205' x2='350' y2='233' stroke='#bfdbfe' stroke-width='2' stroke-dasharray='4 3'/>
-  <rect x='120' y='236' width='460' height='60' rx='10' fill='#dcfce7' stroke='#22c55e' stroke-width='2'/>
+  <rect x='120' y='236' width='460' height='60' rx='10' fill='#0a2e1a' stroke='#22c55e' stroke-width='2'/>
   <text x='350' y='260' text-anchor='middle' font-size='13' font-weight='700' fill='#15803d'>POLYCENTRIC</text>
   <text x='350' y='277' text-anchor='middle' font-size='11' fill='#475569'>&quot;Each local market knows best — fully adapt&quot;</text>
   <text x='350' y='289' text-anchor='middle' font-size='10' fill='#64748b'>e.g. KitKat Japan: matcha, purple sweet potato, sakura-themed packaging</text>

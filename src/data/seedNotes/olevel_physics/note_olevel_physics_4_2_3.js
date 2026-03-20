@@ -81,7 +81,7 @@ export const note_olevel_physics_4_2_3 = {
         svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="11">
   <!-- Graph A: Ohmic -->
   <g transform="translate(10,10)">
-    <rect width="110" height="110" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <rect width="110" height="110" fill="#0f172a" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="10" y1="100" x2="105" y2="100" stroke="#94a3b8" stroke-width="1"/>
     <line x1="10" y1="5" x2="10" y2="105" stroke="#94a3b8" stroke-width="1"/>
     <text x="60" y="112" text-anchor="middle" fill="#64748b" font-size="9">V →</text>
@@ -92,7 +92,7 @@ export const note_olevel_physics_4_2_3 = {
   </g>
   <!-- Graph B: Filament lamp -->
   <g transform="translate(155,10)">
-    <rect width="110" height="110" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <rect width="110" height="110" fill="#0f172a" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="10" y1="100" x2="105" y2="100" stroke="#94a3b8" stroke-width="1"/>
     <line x1="10" y1="5" x2="10" y2="105" stroke="#94a3b8" stroke-width="1"/>
     <text x="60" y="112" text-anchor="middle" fill="#64748b" font-size="9">V →</text>
@@ -103,7 +103,7 @@ export const note_olevel_physics_4_2_3 = {
   </g>
   <!-- Graph C: Diode -->
   <g transform="translate(300,10)">
-    <rect width="110" height="110" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <rect width="110" height="110" fill="#0f172a" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="55" y1="100" x2="105" y2="100" stroke="#94a3b8" stroke-width="1"/>
     <line x1="10" y1="100" x2="55" y2="100" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="3,2"/>
     <line x1="55" y1="5" x2="55" y2="105" stroke="#94a3b8" stroke-width="1"/>

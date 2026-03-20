@@ -68,8 +68,8 @@ export const note_chemistry_4_14_7 = {
   <rect x='60' y='30' width='8' height='200' rx='2' fill='#6b7280'/>
   <rect x='30' y='228' width='68' height='8' rx='2' fill='#6b7280'/>
   <!-- Burette -->
-  <rect x='82' y='32' width='18' height='160' rx='3' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/>
-  <rect x='87' y='192' width='8' height='20' rx='2' fill='#93c5fd' stroke='#1d4ed8' stroke-width='1'/>
+  <rect x='82' y='32' width='18' height='160' rx='3' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='1.5'/>
+  <rect x='87' y='192' width='8' height='20' rx='2' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='1'/>
   <!-- NaOH label -->
   <text x='108' y='80' font-size='9' fill='#1d4ed8' font-weight='bold'>NaOH(aq)</text>
   <text x='108' y='91' font-size='8' fill='#374151'>0.1 mol dm⁻³</text>
@@ -79,20 +79,20 @@ export const note_chemistry_4_14_7 = {
   <text x='25' y='83' font-size='8' fill='#374151'>boss +</text>
   <text x='25' y='92' font-size='8' fill='#374151'>clamp</text>
   <!-- Conical flask -->
-  <polygon points='75,215 91,215 105,260 61,260' fill='#d1fae5' stroke='#059669' stroke-width='1.5'/>
-  <rect x='79' y='205' width='12' height='12' rx='1' fill='#d1fae5' stroke='#059669' stroke-width='1'/>
+  <polygon points='75,215 91,215 105,260 61,260' fill='#0a2e1a' stroke='#059669' stroke-width='1.5'/>
+  <rect x='79' y='205' width='12' height='12' rx='1' fill='#0a2e1a' stroke='#059669' stroke-width='1'/>
   <text x='83' y='248' font-size='8' fill='#059669' text-anchor='middle'>CH₃COOH</text>
   <text x='83' y='260' font-size='8' fill='#374151' text-anchor='middle'>+ phenolphthalein</text>
   <!-- pH probe -->
   <line x1='200' y1='35' x2='200' y2='250' stroke='#7c3aed' stroke-width='2'/>
-  <rect x='185' y='250' width='30' height='10' rx='3' fill='#ede9fe' stroke='#7c3aed' stroke-width='1.5'/>
+  <rect x='185' y='250' width='30' height='10' rx='3' fill='#2d1b69' stroke='#7c3aed' stroke-width='1.5'/>
   <text x='200' y='257' font-size='7' fill='#7c3aed' text-anchor='middle'>pH probe</text>
   <!-- Data logger box -->
-  <rect x='175' y='20' width='70' height='30' rx='5' fill='#ede9fe' stroke='#7c3aed' stroke-width='1.5'/>
+  <rect x='175' y='20' width='70' height='30' rx='5' fill='#2d1b69' stroke='#7c3aed' stroke-width='1.5'/>
   <text x='210' y='33' font-size='9' font-weight='bold' fill='#4c1d95' text-anchor='middle'>DATA LOGGER</text>
   <text x='210' y='43' font-size='8' fill='#6d28d9' text-anchor='middle'>continuous pH</text>
   <!-- Steps panel -->
-  <rect x='255' y='30' width='155' height='240' rx='6' fill='#fefce8' stroke='#ca8a04' stroke-width='1'/>
+  <rect x='255' y='30' width='155' height='240' rx='6' fill='#44370a' stroke='#ca8a04' stroke-width='1'/>
   <text x='332' y='47' font-size='10' font-weight='bold' fill='#78350f' text-anchor='middle'>Exam Method</text>
   <text x='263' y='63' font-size='8' fill='#374151'>① Calibrate pH probe</text>
   <text x='263' y='75' font-size='8' fill='#374151'>② Pipette 25 cm³ CH₃COOH</text>
@@ -401,6 +401,15 @@ export const note_chemistry_4_14_7 = {
       data: {
         text: 'Core Practical 11: Titrate weak acid with standard NaOH. Measure pH at each volume. Plot titration curve. Find half-equivalence point (volume at V_eq/2). pH at half-equivalence = pKa. Calculate Ka = 10^(−pKa). Calibrate pH meter before use. Add NaOH slowly near equivalence point for accuracy.'
       }
+    },
+    {
+      id: 'svg-acid-base-map',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="system-ui,sans-serif"><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">ACID-BASE CALCULATION MAP</text><!-- LEFT: strong vs weak acid --><rect x="10" y="32" width="330" height="394" rx="10" fill="rgba(239,68,68,0.08)" stroke="#ef4444" stroke-width="1.5"/><text x="175" y="52" text-anchor="middle" font-size="11" fill="#ef4444" font-weight="700">ACID pH CALCULATIONS</text><!-- Strong acid --><rect x="22" y="60" width="306" height="90" rx="8" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1"/><text x="175" y="78" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="700">STRONG ACID (fully ionised)</text><text x="30" y="95" font-size="9" fill="#7f1d1d">HCl, HNO₃, H₂SO₄</text><text x="30" y="110" font-size="9" fill="#1e293b">[H⁺] = concentration of acid</text><text x="30" y="124" font-size="10" font-weight="700" fill="#1e293b">pH = −log₁₀[H⁺]</text><text x="30" y="140" font-size="8.5" fill="#7f1d1d">e.g. 0.1 mol dm⁻³ HCl → pH = −log(0.1) = 1</text><!-- Weak acid --><rect x="22" y="158" width="306" height="130" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1.5"/><text x="175" y="176" text-anchor="middle" font-size="10" fill="#fb923c" font-weight="700">WEAK ACID (partial ionisation)</text><text x="30" y="193" font-size="9" fill="#532407">HA ⇌ H⁺ + A⁻</text><text x="30" y="208" font-size="9" fill="#532407">Ka = [H⁺][A⁻] / [HA] = [H⁺]² / [HA] (if [A⁻]=[H⁺])</text><text x="30" y="223" font-size="10" font-weight="700" fill="#1e293b">[H⁺] = √(Ka × [HA])    then pH = −log[H⁺]</text><text x="30" y="240" font-size="9" fill="#532407">pKa = −log Ka   →   Ka = 10^(−pKa)</text><text x="30" y="255" font-size="8.5" fill="#78350f">Approximation valid when Ka &lt;&lt; [HA] (check!)</text><text x="30" y="272" font-size="8.5" fill="#532407">e.g. 0.1 M ethanoic acid Ka = 1.8×10⁻⁵</text><text x="30" y="280" font-size="8.5" fill="#1e293b">pH = −log(√(1.8×10⁻⁵ × 0.1)) = 2.87</text><!-- Buffer --><rect x="22" y="298" width="306" height="118" rx="8" fill="rgba(52,211,153,0.15)" stroke="#34d399" stroke-width="1.5"/><text x="175" y="316" text-anchor="middle" font-size="10" fill="#34d399" font-weight="700">BUFFER SOLUTION (resists pH change)</text><text x="30" y="333" font-size="9" fill="#065f46">Weak acid + its conjugate base (salt)</text><text x="30" y="348" font-size="9" fill="#065f46">e.g. CH₃COOH + CH₃COONa</text><text x="175" y="366" text-anchor="middle" font-size="11" font-weight="800" fill="#1e293b">pH = pKa + log([A⁻]/[HA])</text><text x="175" y="381" text-anchor="middle" font-size="8.5" fill="#065f46">Henderson-Hasselbalch equation</text><text x="30" y="397" font-size="8.5" fill="#065f46">When [A⁻] = [HA]: pH = pKa (half-equivalence point)</text><text x="30" y="409" font-size="8.5" fill="#065f46">Used in blood (pH 7.4), shampoo, enzyme lab reactions</text><!-- RIGHT: Titration curves --><rect x="360" y="32" width="330" height="394" rx="10" fill="rgba(96,165,250,0.08)" stroke="#60a5fa" stroke-width="1.5"/><text x="525" y="52" text-anchor="middle" font-size="11" fill="#60a5fa" font-weight="700">TITRATION CURVES</text><!-- Strong acid + strong base --><rect x="374" y="60" width="302" height="90" rx="8" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1"/><text x="525" y="78" text-anchor="middle" font-size="9.5" fill="#ef4444" font-weight="700">STRONG ACID + STRONG BASE</text><text x="380" y="94" font-size="8.5" fill="#7f1d1d">Start pH ~1  |  End pH ~13  |  Equiv. point pH = 7</text><text x="380" y="108" font-size="8.5" fill="#7f1d1d">Sharp vertical section near equivalence (pH 3→11 in drops)</text><text x="380" y="122" font-size="8.5" fill="#7f1d1d">Indicators: methyl orange or phenolphthalein both ok</text><text x="380" y="136" font-size="8.5" fill="#7f1d1d">Salt: NaCl (neutral), ppt of Mg(OH)₂ if Mg²⁺</text><!-- Weak acid + strong base --><rect x="374" y="158" width="302" height="108" rx="8" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1"/><text x="525" y="176" text-anchor="middle" font-size="9.5" fill="#fb923c" font-weight="700">WEAK ACID + STRONG BASE</text><text x="380" y="193" font-size="8.5" fill="#532407">Start pH ~3  |  End pH ~13  |  Equiv. point pH &gt; 7</text><text x="380" y="207" font-size="8.5" fill="#532407">pH &gt; 7 at equiv.: salt hydrolysis (CH₃COO⁻ + H₂O)</text><text x="380" y="221" font-size="8.5" fill="#532407">Half-equiv. point: pH = pKa (read off Ka directly)</text><text x="380" y="235" font-size="8.5" fill="#532407">Buffer region: gradual pH change around half-equiv.</text><text x="380" y="249" font-size="8.5" fill="#78350f">Use phenolphthalein (not methyl orange) as indicator</text><!-- Strong acid + weak base --><rect x="374" y="274" width="302" height="86" rx="8" fill="rgba(96,165,250,0.15)" stroke="#60a5fa" stroke-width="1"/><text x="525" y="292" text-anchor="middle" font-size="9.5" fill="#60a5fa" font-weight="700">STRONG ACID + WEAK BASE</text><text x="380" y="308" font-size="8.5" fill="#1e3a8a">Equiv. point pH &lt; 7 (NH₄⁺ is acidic)</text><text x="380" y="322" font-size="8.5" fill="#1e3a8a">Steep section less pronounced than strong+strong</text><text x="380" y="336" font-size="8.5" fill="#1e3a8a">Use methyl orange (not phenolphthalein)</text><!-- Kw box --><rect x="374" y="368" width="302" height="50" rx="8" fill="rgba(99,102,241,0.2)" stroke="#818cf8" stroke-width="1"/><text x="525" y="386" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C  |  pKw = 14</text><text x="525" y="402" text-anchor="middle" font-size="9" fill="#2d2d72">pH + pOH = 14  |  Neutral: pH = 7 (at 25°C only)</text><text x="525" y="416" text-anchor="middle" font-size="8.5" fill="#818cf8">Kw increases with temperature → neutral pH decreases above 25°C</text></svg>',
+        caption: 'Acid-Base Calculation Map — strong acids: pH = −log[H⁺]. Weak acids: [H⁺] = √(Ka × [HA]). Buffers: pH = pKa + log([A⁻]/[HA]). Titration curves differ for strong/weak combinations — choose the indicator that changes in the steep section.'
+      },
+      terms: []
     }
   ],
   recall: {

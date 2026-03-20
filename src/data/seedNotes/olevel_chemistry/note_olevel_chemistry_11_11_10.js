@@ -64,7 +64,7 @@ export const note_olevel_chemistry_11_11_10 = {
 
     <!-- The OH that leaves -->
     <path d="M 52 18 L 65 30" fill="none" stroke="var(--color-text)" stroke-width="2"/>
-    <rect x="65" y="15" width="30" height="25" fill="#fecaca" rx="4"/>
+    <rect x="65" y="15" width="30" height="25" fill="#7f1d1d" rx="4"/>
     <text x="70" y="32" font-family="var(--font-mono)" font-size="18" fill="#dc2626">OH</text>
   </g>
 
@@ -76,7 +76,7 @@ export const note_olevel_chemistry_11_11_10 = {
     <text x="45" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Ethanol</text>
     
     <!-- The H that leaves -->
-    <rect x="0" y="15" width="20" height="25" fill="#bfdbfe" rx="4"/>
+    <rect x="0" y="15" width="20" height="25" fill="#1e3a8a" rx="4"/>
     <text x="5" y="32" font-family="var(--font-mono)" font-size="18" fill="#2563eb">H</text>
 
     <text x="20" y="30" font-family="var(--font-mono)" font-size="18" fill="var(--color-text)">O<tspan>—</tspan>CH<tspan dy="6" font-size="12">2</tspan><tspan dy="-6">—</tspan>CH<tspan dy="6" font-size="12">3</tspan></text>

@@ -48,7 +48,7 @@ export const note_biology_2_3_3 = {
         "id": "svg-diag-2-3-3-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 400 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='160' height='120' fill='#ebf8ff' stroke='#3182ce' rx='10'/><text x='40' y='40' font-weight='bold' font-size='12' fill='#2b6cb0'>Light Microscope</text><text x='30' y='65' font-size='10'>Resolution: ~200 nm</text><text x='30' y='85' font-size='10'>Magnification: ~x1500</text><text x='30' y='105' font-size='10'>Uses: Living cells, color</text><rect x='200' y='20' width='160' height='120' fill='#f0fff4' stroke='#38a169' rx='10'/><text x='210' y='40' font-weight='bold' font-size='12' fill='#2f855a'>Electron Microscope</text><text x='210' y='65' font-size='10'>Resolution: ~0.1 nm</text><text x='210' y='85' font-size='10'>Magnification: ~x500,000</text><text x='210' y='105' font-size='10'>Uses: Dead cells, B&W (TEM/SEM)</text></svg>",
+            "svg": "<svg viewBox='0 0 400 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='160' height='120' fill='#1c3a64' stroke='#3182ce' rx='10'/><text x='40' y='40' font-weight='bold' font-size='12' fill='#2b6cb0'>Light Microscope</text><text x='30' y='65' font-size='10'>Resolution: ~200 nm</text><text x='30' y='85' font-size='10'>Magnification: ~x1500</text><text x='30' y='105' font-size='10'>Uses: Living cells, color</text><rect x='200' y='20' width='160' height='120' fill='#0a2e1a' stroke='#38a169' rx='10'/><text x='210' y='40' font-weight='bold' font-size='12' fill='#2f855a'>Electron Microscope</text><text x='210' y='65' font-size='10'>Resolution: ~0.1 nm</text><text x='210' y='85' font-size='10'>Magnification: ~x500,000</text><text x='210' y='105' font-size='10'>Uses: Dead cells, B&W (TEM/SEM)</text></svg>",
             "caption": "Light vs Electron Microscope"
         }
     },
@@ -56,7 +56,7 @@ export const note_biology_2_3_3 = {
         "id": "svg-diag-2-3-3-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,50 Q80,20 130,50 T170,80' fill='none' stroke='#333' stroke-width='4'/><path d='M70,20 L100,50 L130,20' fill='none' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4'/><text x='40' y='120' font-size='12' fill='#c53030'>SEM: Scans Surface (3D)</text><rect x='220' y='40' width='60' height='60' fill='#e2e8f0' stroke='#4a5568'/><circle cx='250' cy='70' r='10' fill='#a0aec0'/><path d='M250,20 L250,120' stroke='#3182ce' stroke-width='2' stroke-dasharray='4'/><text x='200' y='135' font-size='12' fill='#2b6cb0'>TEM: Passes Through (2D internal)</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,50 Q80,20 130,50 T170,80' fill='none' stroke='#333' stroke-width='4'/><path d='M70,20 L100,50 L130,20' fill='none' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4'/><text x='40' y='120' font-size='12' fill='#c53030'>SEM: Scans Surface (3D)</text><rect x='220' y='40' width='60' height='60' fill='#1e293b' stroke='#4a5568'/><circle cx='250' cy='70' r='10' fill='#a0aec0'/><path d='M250,20 L250,120' stroke='#3182ce' stroke-width='2' stroke-dasharray='4'/><text x='200' y='135' font-size='12' fill='#2b6cb0'>TEM: Passes Through (2D internal)</text></svg>",
             "caption": "Scanning (SEM) vs Transmission (TEM)"
         }
     }

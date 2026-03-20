@@ -80,24 +80,24 @@ export const note_business_4_18_6 = {
   </defs>
   <line x1="20" y1="272" x2="545" y2="272" stroke="#cbd5e1" stroke-width="1.5"/>
   <line x1="30" y1="212" x2="527" y2="92" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#rarr)"/>
-  <rect x="30" y="212" width="110" height="60" rx="5" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="30" y="212" width="110" height="60" rx="5" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="85" y="231" text-anchor="middle" font-size="11" font-weight="bold" fill="#15803d">Exporting</text>
   <text x="85" y="246" text-anchor="middle" font-size="9" fill="#166534">Low risk</text>
   <text x="85" y="259" text-anchor="middle" font-size="9" fill="#166534">Low control</text>
-  <rect x="150" y="172" width="110" height="100" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="150" y="172" width="110" height="100" rx="5" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
   <text x="205" y="192" text-anchor="middle" font-size="10" font-weight="bold" fill="#1d4ed8">Licensing /</text>
   <text x="205" y="205" text-anchor="middle" font-size="10" font-weight="bold" fill="#1d4ed8">Franchising</text>
   <text x="205" y="220" text-anchor="middle" font-size="9" fill="#1e40af">Some control</text>
   <text x="205" y="233" text-anchor="middle" font-size="9" fill="#1e40af">Royalty income</text>
   <text x="205" y="249" text-anchor="middle" font-size="9" fill="#3b82f6" font-style="italic">e.g. McDonalds</text>
-  <rect x="270" y="132" width="110" height="140" rx="5" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <rect x="270" y="132" width="110" height="140" rx="5" fill="#532407" stroke="#ea580c" stroke-width="2"/>
   <text x="325" y="152" text-anchor="middle" font-size="11" font-weight="bold" fill="#c2410c">Joint Venture</text>
   <text x="325" y="167" text-anchor="middle" font-size="9" fill="#9a3412">Shared risk</text>
   <text x="325" y="180" text-anchor="middle" font-size="9" fill="#9a3412">+ control</text>
   <text x="325" y="195" text-anchor="middle" font-size="9" fill="#9a3412">Local partner</text>
   <text x="325" y="208" text-anchor="middle" font-size="9" fill="#9a3412">knowledge</text>
   <text x="325" y="225" text-anchor="middle" font-size="9" fill="#ea580c" font-style="italic">e.g. Sony-Ericsson</text>
-  <rect x="390" y="92" width="140" height="180" rx="5" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <rect x="390" y="92" width="140" height="180" rx="5" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="460" y="112" text-anchor="middle" font-size="10" font-weight="bold" fill="#b91c1c">Wholly Owned</text>
   <text x="460" y="126" text-anchor="middle" font-size="10" font-weight="bold" fill="#b91c1c">Subsidiary (WOS)</text>
   <text x="460" y="143" text-anchor="middle" font-size="9" fill="#991b1b">Full control</text>

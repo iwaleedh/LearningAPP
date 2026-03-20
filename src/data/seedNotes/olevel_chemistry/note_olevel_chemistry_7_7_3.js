@@ -24,27 +24,27 @@ export const note_olevel_chemistry_7_7_3 = {
   <!-- Boxes for elements -->
   <g font-family="var(--font-sans)" font-size="12" text-anchor="middle">
     <!-- Na, Mg -->
-    <rect x="50" y="60" width="60" height="40" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <rect x="50" y="60" width="60" height="40" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
     <text x="80" y="85" fill="#1e3a8a" font-weight="bold">Na₂O</text>
     
-    <rect x="120" y="60" width="60" height="40" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <rect x="120" y="60" width="60" height="40" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
     <text x="150" y="85" fill="#1e3a8a" font-weight="bold">MgO</text>
 
     <!-- Al -->
-    <rect x="190" y="60" width="60" height="40" rx="4" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    <rect x="190" y="60" width="60" height="40" rx="4" fill="#3b1460" stroke="#a855f7" stroke-width="2"/>
     <text x="220" y="85" fill="#581c87" font-weight="bold">Al₂O₃</text>
 
     <!-- Si, P, S, Cl -->
-    <rect x="260" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <rect x="260" y="60" width="60" height="40" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
     <text x="290" y="85" fill="#7f1d1d" font-weight="bold">SiO₂</text>
 
-    <rect x="330" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <rect x="330" y="60" width="60" height="40" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
     <text x="360" y="85" fill="#7f1d1d" font-weight="bold">P₄O₁₀</text>
 
-    <rect x="400" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <rect x="400" y="60" width="60" height="40" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
     <text x="430" y="85" fill="#7f1d1d" font-weight="bold">SO₃/SO₂</text>
 
-    <rect x="470" y="60" width="60" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <rect x="470" y="60" width="60" height="40" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
     <text x="500" y="85" fill="#7f1d1d" font-weight="bold">Cl₂O₇</text>
   </g>
 

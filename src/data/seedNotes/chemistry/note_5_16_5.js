@@ -9,34 +9,34 @@ export const note_chemistry_5_16_5 = {
       data: {
         caption: 'Feasibility checking flowchart — systematic method',
         svg: `<svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
-  <rect width="460" height="300" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="460" height="300" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <text x="230" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Feasibility Method — Flow Diagram</text>
   <!-- Step 1 -->
-  <rect x="130" y="35" width="200" height="32" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="130" y="35" width="200" height="32" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="230" y="56" text-anchor="middle" fill="#4c1d95" font-weight="bold">Step 1: Write both half-equations</text>
   <line x1="230" y1="67" x2="230" y2="83" stroke="#475569" stroke-width="1.5" marker-end="url(#a)"/>
   <!-- Step 2 -->
-  <rect x="120" y="83" width="220" height="32" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <rect x="120" y="83" width="220" height="32" rx="6" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="230" y="104" text-anchor="middle" fill="#1e3a8a" font-weight="bold">Step 2: Circle your REACTANTS</text>
   <line x1="230" y1="115" x2="230" y2="131" stroke="#475569" stroke-width="1.5" marker-end="url(#a)"/>
   <!-- Step 3 -->
-  <rect x="80" y="131" width="300" height="42" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="80" y="131" width="300" height="42" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="230" y="149" text-anchor="middle" fill="#14532d" font-weight="bold">Step 3: Apply equilibrium rule</text>
   <text x="230" y="165" text-anchor="middle" fill="#166534" font-size="10">More −ve → shifts LEFT ┃ More +ve → shifts RIGHT</text>
   <line x1="230" y1="173" x2="230" y2="189" stroke="#475569" stroke-width="1.5" marker-end="url(#a)"/>
   <!-- Step 4 decision -->
-  <polygon points="230,189 360,220 230,251 100,220" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <polygon points="230,189 360,220 230,251 100,220" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="230" y="215" text-anchor="middle" fill="#78350f" font-weight="bold">Do shifts produce</text>
   <text x="230" y="230" text-anchor="middle" fill="#78350f" font-weight="bold">your products?</text>
   <!-- Yes branch -->
   <line x1="360" y1="220" x2="430" y2="220" stroke="#16a34a" stroke-width="1.5" marker-end="url(#ga)"/>
   <text x="392" y="213" text-anchor="middle" fill="#16a34a" font-weight="bold">YES</text>
-  <rect x="400" y="235" width="55" height="24" rx="5" fill="#bbf7d0" stroke="#16a34a"/>
+  <rect x="400" y="235" width="55" height="24" rx="5" fill="#0a3020" stroke="#16a34a"/>
   <text x="427" y="251" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="10">FEASIBLE</text>
   <!-- No branch -->
   <line x1="100" y1="220" x2="30" y2="220" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ra)"/>
   <text x="63" y="213" text-anchor="middle" fill="#dc2626" font-weight="bold">NO</text>
-  <rect x="5" y="235" width="55" height="24" rx="5" fill="#fee2e2" stroke="#dc2626"/>
+  <rect x="5" y="235" width="55" height="24" rx="5" fill="#3d1212" stroke="#dc2626"/>
   <text x="32" y="251" text-anchor="middle" fill="#7f1d1d" font-weight="bold" font-size="10">NOT feasible</text>
   <defs>
     <marker id="a" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"/></marker>

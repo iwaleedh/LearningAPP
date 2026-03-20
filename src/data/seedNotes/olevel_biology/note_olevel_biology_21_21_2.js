@@ -40,10 +40,10 @@ export const note_olevel_biology_21_21_2 = {
       data: {
         caption: 'Genetic modification process — gene transfer using a plasmid vector',
         svg: `<svg viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="320" fill="#fdf4ff" rx="12"/>
+  <rect width="520" height="320" fill="#2d1b69" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#7e22ce">Genetic Modification — Plasmid Vector Method</text>
   <!-- Step 1: Human DNA with gene -->
-  <rect x="20" y="45" width="120" height="35" rx="6" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="45" width="120" height="35" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="80" y="66" text-anchor="middle" font-size="10" fill="#1e40af">Human DNA</text>
   <text x="80" y="78" text-anchor="middle" font-size="10" fill="#1e40af">(insulin gene)</text>
   <!-- Arrow -->
@@ -51,8 +51,8 @@ export const note_olevel_biology_21_21_2 = {
   <text x="148" y="55" font-size="9" fill="#374151">Restriction</text>
   <text x="148" y="65" font-size="9" fill="#374151">enzyme cuts</text>
   <!-- Isolated gene -->
-  <rect x="168" y="47" width="90" height="30" rx="5" fill="#a78bfa" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="213" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Insulin gene</text>
+  <rect x="168" y="47" width="90" height="30" rx="5" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="213" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b">Insulin gene</text>
   <!-- Plasmid -->
   <circle cx="90" cy="170" r="40" fill="none" stroke="#16a34a" stroke-width="2.5"/>
   <text x="90" y="166" text-anchor="middle" font-size="10" fill="#166534">Bacterial</text>
@@ -67,14 +67,14 @@ export const note_olevel_biology_21_21_2 = {
   <text x="175" y="136" font-size="9" fill="#7c3aed">joins gene</text>
   <!-- Recombinant plasmid -->
   <circle cx="280" cy="170" r="40" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-  <rect x="260" y="132" width="40" height="14" rx="4" fill="#a78bfa" stroke="#7c3aed" stroke-width="1"/>
-  <text x="280" y="144" text-anchor="middle" font-size="8" fill="white">Ins. gene</text>
+  <rect x="260" y="132" width="40" height="14" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1"/>
+  <text x="280" y="144" text-anchor="middle" font-size="8" fill="#1e293b">Ins. gene</text>
   <text x="280" y="175" text-anchor="middle" font-size="10" fill="#166534">Recombinant</text>
   <text x="280" y="188" text-anchor="middle" font-size="10" fill="#166534">plasmid</text>
   <!-- Arrow between plasmids -->
   <line x1="132" y1="170" x2="238" y2="170" stroke="#374151" stroke-width="2" marker-end="url(#gm3)"/>
   <!-- Bacterium -->
-  <ellipse cx="440" cy="170" rx="55" ry="35" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <ellipse cx="440" cy="170" rx="55" ry="35" fill="#78350f" stroke="#b45309" stroke-width="2"/>
   <text x="440" y="166" text-anchor="middle" font-size="10" fill="#92400e">E. coli</text>
   <text x="440" y="180" text-anchor="middle" font-size="10" fill="#92400e">bacterium</text>
   <!-- Arrow to bacterium -->

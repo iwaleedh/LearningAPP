@@ -71,7 +71,7 @@ export const note_olevel_chemistry_4_4_3 = {
 
   <!-- Battery & Circuit -->
   <rect x="210" y="40" width="80" height="30" rx="4" fill="#1e293b" />
-  <text x="250" y="60" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Power Supply</text>
+  <text x="250" y="60" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Power Supply</text>
   <text x="220" y="34" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">+</text>
   <text x="280" y="34" font-family="var(--font-sans)" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="middle">-</text>
 
@@ -99,12 +99,12 @@ export const note_olevel_chemistry_4_4_3 = {
 
   <!-- Observations -->
   <!-- Oxygen Bubbles at Anode -->
-  <circle cx="160" cy="250" r="4" fill="#fff" opacity="0.8"/>
-  <circle cx="152" cy="235" r="5" fill="#fff" opacity="0.8"/>
-  <circle cx="168" cy="220" r="4" fill="#fff" opacity="0.8"/>
-  <circle cx="156" cy="205" r="6" fill="#fff" opacity="0.8"/>
-  <circle cx="162" cy="190" r="5" fill="#fff" opacity="0.8"/>
-  <circle cx="150" cy="175" r="7" fill="#fff" opacity="0.8"/>
+  <circle cx="160" cy="250" r="4" fill="#1e293b" opacity="0.8"/>
+  <circle cx="152" cy="235" r="5" fill="#1e293b" opacity="0.8"/>
+  <circle cx="168" cy="220" r="4" fill="#1e293b" opacity="0.8"/>
+  <circle cx="156" cy="205" r="6" fill="#1e293b" opacity="0.8"/>
+  <circle cx="162" cy="190" r="5" fill="#1e293b" opacity="0.8"/>
+  <circle cx="150" cy="175" r="7" fill="#1e293b" opacity="0.8"/>
 
   <line x1="80" y1="200" x2="140" y2="200" stroke="var(--color-text-secondary)" stroke-width="1" stroke-dasharray="2,2"/>
   <text x="75" y="195" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="end">Oxygen gas (O₂)</text>

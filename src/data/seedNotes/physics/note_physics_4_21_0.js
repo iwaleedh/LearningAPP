@@ -19,7 +19,7 @@ export const note_physics_4_21_0 = {
       id: 'svg-magnetic-flux',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect x="100" y="50" width="100" height="100" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" transform="skewY(20)"/><path d="M 50 120 L 250 120" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-flux)"/><path d="M 50 140 L 250 140" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-flux)"/><path d="M 50 160 L 250 160" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-flux)"/><text x="260" y="145" font-family="Arial" font-size="14" fill="#991B1B">B Field</text><text x="120" y="130" font-family="Arial" font-size="14" fill="#1E3A8A" transform="skewY(20)">Area (A)</text><defs><marker id="arrow-flux" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="#EF4444"/></marker></defs></svg>',
+        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><rect x="100" y="50" width="100" height="100" fill="#1e3a8a" stroke="#2563EB" stroke-width="2" transform="skewY(20)"/><path d="M 50 120 L 250 120" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-flux)"/><path d="M 50 140 L 250 140" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-flux)"/><path d="M 50 160 L 250 160" stroke="#EF4444" stroke-width="3" marker-end="url(#arrow-flux)"/><text x="260" y="145" font-family="Arial" font-size="14" fill="#991B1B">B Field</text><text x="120" y="130" font-family="Arial" font-size="14" fill="#1E3A8A" transform="skewY(20)">Area (A)</text><defs><marker id="arrow-flux" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="#EF4444"/></marker></defs></svg>',
         caption: 'Magnetic Flux'
       },
       terms: []
@@ -28,7 +28,7 @@ export const note_physics_4_21_0 = {
       id: 'svg-flux-equation',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="120" fill="#F0FDF4" rx="10"/><text x="175" y="50" font-family="Times New Roman" font-size="32" font-style="italic" font-weight="bold" text-anchor="middle" fill="#065F46">&Phi; = B A</text><text x="175" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Flux (Weber, Wb) = Flux Density (T) &times; Area (m&sup2;)</text></svg>',
+        svg: '<svg viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg"><rect width="350" height="120" fill="#0a2e1a" rx="10"/><text x="175" y="50" font-family="Times New Roman" font-size="32" font-style="italic" font-weight="bold" text-anchor="middle" fill="#065F46">&Phi; = B A</text><text x="175" y="90" font-family="Arial" font-size="14" text-anchor="middle" fill="#4B5563">Flux (Weber, Wb) = Flux Density (T) &times; Area (m&sup2;)</text></svg>',
         caption: 'Magnetic Flux Formula'
       },
       terms: []
@@ -37,7 +37,7 @@ export const note_physics_4_21_0 = {
       id: 'enr-svg-1',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#EFF6FF" rx="8"/><line x1="200" y1="30" x2="200" y2="170" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round"/><path d="M205 100 L310 100" stroke="#DC2626" stroke-width="2.5" marker-end="url(#enr-a)"/><text x="318" y="106" font-family="Arial" font-size="16" fill="#DC2626" font-weight="bold">v</text><text x="30" y="115" font-family="Arial" font-size="28" fill="#047857">&#215; B</text><text x="100" y="190" font-family="Arial" font-size="14" fill="#1E3A8A">&#949; = BvL  (motional e.m.f)</text><defs><marker id="enr-a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="#DC2626"/></marker></defs></svg>',
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#1c3a64" rx="8"/><line x1="200" y1="30" x2="200" y2="170" stroke="#1D4ED8" stroke-width="5" stroke-linecap="round"/><path d="M205 100 L310 100" stroke="#DC2626" stroke-width="2.5" marker-end="url(#enr-a)"/><text x="318" y="106" font-family="Arial" font-size="16" fill="#DC2626" font-weight="bold">v</text><text x="30" y="115" font-family="Arial" font-size="28" fill="#047857">&#215; B</text><text x="100" y="190" font-family="Arial" font-size="14" fill="#1E3A8A">&#949; = BvL  (motional e.m.f)</text><defs><marker id="enr-a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="#DC2626"/></marker></defs></svg>',
         caption: 'A conductor of length L moving at velocity v through field B (into page) generates motional e.m.f ε = BvL.'
       },
       terms: []

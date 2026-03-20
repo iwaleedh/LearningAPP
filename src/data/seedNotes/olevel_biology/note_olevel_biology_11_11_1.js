@@ -22,17 +22,17 @@ export const note_olevel_biology_11_11_1 = {
       data: {
         caption: 'Diagram of the human breathing system showing major structures',
         svg: `<svg viewBox="0 0 620 500" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="620" height="500" fill="#f8fafc" rx="12"/>
+  <rect width="620" height="500" fill="#0f172a" rx="12"/>
   <text x="310" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">The Human Breathing System</text>
   <!-- Nasal cavity -->
-  <ellipse cx="310" cy="58" rx="38" ry="22" fill="#fde8d8" stroke="#f97316" stroke-width="1.5"/>
+  <ellipse cx="310" cy="58" rx="38" ry="22" fill="#532407" stroke="#f97316" stroke-width="1.5"/>
   <text x="310" y="55" text-anchor="middle" font-size="9" fill="#c2410c">Nasal</text>
   <text x="310" y="67" text-anchor="middle" font-size="9" fill="#c2410c">cavity</text>
   <!-- Larynx / pharynx -->
-  <rect x="290" y="85" width="40" height="20" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="290" y="85" width="40" height="20" rx="4" fill="#532407" stroke="#f97316" stroke-width="1.5"/>
   <text x="310" y="99" text-anchor="middle" font-size="8" fill="#c2410c">Larynx</text>
   <!-- Trachea -->
-  <rect x="298" y="108" width="24" height="90" rx="6" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="298" y="108" width="24" height="90" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="360" y="155" font-size="9" fill="#1d4ed8">Trachea</text>
   <line x1="322" y1="152" x2="358" y2="152" stroke="#64748b" stroke-width="1"/>
   <!-- C-rings on trachea -->
@@ -49,9 +49,9 @@ export const note_olevel_biology_11_11_1 = {
   <text x="210" y="226" font-size="9" fill="#2563eb">Right bronchus</text>
   <text x="370" y="226" font-size="9" fill="#2563eb">Left bronchus</text>
   <!-- Right lung outline -->
-  <ellipse cx="240" cy="330" rx="90" ry="115" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <ellipse cx="240" cy="330" rx="90" ry="115" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <!-- Left lung outline -->
-  <ellipse cx="380" cy="330" rx="90" ry="115" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <ellipse cx="380" cy="330" rx="90" ry="115" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="310" y="298" text-anchor="middle" font-size="10" fill="#991b1b" font-weight="bold">Lungs</text>
   <!-- Bronchioles sketch inside lungs -->
   <path d="M255 240 Q240 260 230 285 Q220 310 215 340" stroke="#f87171" stroke-width="2" fill="none"/>
@@ -59,14 +59,14 @@ export const note_olevel_biology_11_11_1 = {
   <path d="M365 240 Q380 260 390 285 Q400 310 405 340" stroke="#f87171" stroke-width="2" fill="none"/>
   <path d="M365 240 Q365 270 360 295 Q355 320 358 350" stroke="#f87171" stroke-width="2" fill="none"/>
   <!-- Alveoli clusters -->
-  <circle cx="215" cy="348" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="225" cy="360" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="207" cy="361" r="9" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="262" cy="358" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="270" cy="368" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="405" cy="348" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="415" cy="360" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <circle cx="358" cy="360" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="215" cy="348" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="225" cy="360" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="207" cy="361" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="262" cy="358" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="270" cy="368" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="405" cy="348" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="415" cy="360" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="358" cy="360" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="148" y="356" font-size="9" fill="#dc2626">Alveoli</text>
   <line x1="203" y1="355" x2="175" y2="355" stroke="#64748b" stroke-width="1"/>
   <!-- Diaphragm -->

@@ -77,9 +77,9 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 background (blue) -->
-  <rect x="8" y="12" width="484" height="158" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="12" width="484" height="158" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <!-- Stage 2 background (green) -->
-  <rect x="8" y="178" width="484" height="165" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="178" width="484" height="165" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
 
   <!-- Stage 1 header -->
   <text x="20" y="30" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow &#x2014; RDS): X&#x207a; attacks the &#x3c0; electrons</text>
@@ -263,7 +263,7 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 background (light blue) -->
-  <rect x="8" y="8" width="524" height="182" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="8" width="524" height="182" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <text x="20" y="27" class="hd" fill="#1d4ed8">Stage 1 (slow — RDS): NO₂⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(85,105), r=35, pointy-top hexagon -->
@@ -300,7 +300,7 @@ export const note_chemistry_5_18_4 = {
   <text x="362" y="157" class="dim" text-anchor="middle">arenium ion</text>
 
   <!-- Stage 2 background (light green) -->
-  <rect x="8" y="195" width="524" height="170" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="195" width="524" height="170" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <text x="20" y="214" class="hd" fill="#15803d">Stage 2 (fast): HSO₄⁻ removes H⁺ → ring restored, H₂SO₄ regenerated</text>
 
   <!-- Arenium ion (Stage 2): center=(85,280), r=35 -->
@@ -436,7 +436,7 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 background -->
-  <rect x="8" y="8" width="524" height="175" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): Cl₂ (activated by AlCl₃) attacks π electrons</text>
 
   <!-- Benzene ring: center=(75,100), pointy-top hex, r=35 -->
@@ -484,7 +484,7 @@ export const note_chemistry_5_18_4 = {
   <text x="403" y="83" class="chg" text-anchor="start">−</text>
 
   <!-- Stage 2 background -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
 
   <!-- Arenium ion (Stage 2): center=(75,280), r=35 -->
@@ -604,7 +604,7 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 -->
-  <rect x="8" y="8" width="524" height="205" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="8" width="524" height="205" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <text x="20" y="26" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): δ+S of SO₃ attacks π electrons</text>
 
   <!-- Benzene ring: center=(72,140), r=35 -->
@@ -650,7 +650,7 @@ export const note_chemistry_5_18_4 = {
   <text x="322" y="197" class="dim" text-anchor="middle">arenium ion (σ-complex)</text>
 
   <!-- Stage 2 -->
-  <rect x="8" y="213" width="524" height="199" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="213" width="524" height="199" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <text x="20" y="231" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): O⁻ removes H⁺ internally — no separate ion!</text>
 
   <!-- Arenium (Stage 2): center=(72,335), r=35 -->
@@ -799,7 +799,7 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 background (light blue) -->
-  <rect x="8" y="8" width="524" height="175" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): CH₃CO⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(80,100), pointy-top hexagon, r=35 -->
@@ -834,7 +834,7 @@ export const note_chemistry_5_18_4 = {
   <text x="340" y="152" class="dim" text-anchor="middle">arenium ion</text>
 
   <!-- Stage 2 background (light green) -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
 
   <!-- Arenium ion (Stage 2): center=(80,280), r=35 -->
@@ -964,7 +964,7 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 background (light blue) -->
-  <rect x="8" y="8" width="524" height="175" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): CH₃⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(80,100), pointy-top hexagon, r=35 -->
@@ -999,7 +999,7 @@ export const note_chemistry_5_18_4 = {
   <text x="335" y="152" class="dim" text-anchor="middle">arenium ion</text>
 
   <!-- Stage 2 background (light green) -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
 
   <!-- Arenium ion (Stage 2): center=(80,280), r=35 -->
@@ -1112,7 +1112,7 @@ export const note_chemistry_5_18_4 = {
   </defs>
 
   <!-- Stage 1 background -->
-  <rect x="8" y="8" width="524" height="175" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="8" y="8" width="524" height="175" rx="5" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
   <text x="20" y="27" class="hd" fill="#1d4ed8" text-anchor="start">Stage 1 (slow — RDS): CH₃CH₂⁺ attacks the π electrons</text>
 
   <!-- Benzene ring: center=(80,100), pointy-top hex, r=35 -->
@@ -1147,7 +1147,7 @@ export const note_chemistry_5_18_4 = {
   <text x="340" y="152" class="dim" text-anchor="middle">arenium ion (σ-complex)</text>
 
   <!-- Stage 2 background -->
-  <rect x="8" y="190" width="524" height="174" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="8" y="190" width="524" height="174" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <text x="20" y="209" class="hd" fill="#15803d" text-anchor="start">Stage 2 (fast): AlCl₄⁻ removes H⁺ → ring restored, AlCl₃ regenerated</text>
 
   <!-- Arenium ion (Stage 2): center=(80,280), r=35 -->

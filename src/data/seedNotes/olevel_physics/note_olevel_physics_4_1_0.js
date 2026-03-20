@@ -71,9 +71,9 @@ export const note_olevel_physics_4_1_0 = {
         caption: 'Like charges repel (top); unlike charges attract (bottom)',
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="13">
   <!-- Two positive charges repelling -->
-  <rect x="20" y="30" width="60" height="30" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="20" y="30" width="60" height="30" rx="6" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="50" y="50" text-anchor="middle" fill="#ef4444" font-weight="bold">+ +</text>
-  <rect x="120" y="30" width="60" height="30" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="120" y="30" width="60" height="30" rx="6" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="150" y="50" text-anchor="middle" fill="#ef4444" font-weight="bold">+ +</text>
   <!-- Repulsion arrows -->
   <line x1="80" y1="45" x2="115" y2="45" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-r)"/>
@@ -81,9 +81,9 @@ export const note_olevel_physics_4_1_0 = {
   <text x="100" y="82" text-anchor="middle" fill="#ef4444" font-size="12">REPEL</text>
 
   <!-- Unlike charges attracting -->
-  <rect x="20" y="120" width="60" height="30" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="20" y="120" width="60" height="30" rx="6" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="50" y="140" text-anchor="middle" fill="#ef4444" font-weight="bold">+ +</text>
-  <rect x="120" y="120" width="60" height="30" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="120" y="120" width="60" height="30" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="150" y="140" text-anchor="middle" fill="#3b82f6" font-weight="bold">− −</text>
   <!-- Attraction arrows -->
   <line x1="80" y1="135" x2="118" y2="135" stroke="#6366f1" stroke-width="2" marker-end="url(#arr-a)"/>

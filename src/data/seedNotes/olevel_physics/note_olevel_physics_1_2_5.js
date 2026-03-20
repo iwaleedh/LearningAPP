@@ -65,7 +65,7 @@ export const note_olevel_physics_1_2_5 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="300" fill="#faf5ff" rx="10"/>
+  <rect width="440" height="300" fill="#2d1b69" rx="10"/>
   <text x="220" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#4c1d95">Terminal Velocity: Speed–Time Graph for a Falling Object</text>
   <!-- Axes -->
   <line x1="60" y1="250" x2="400" y2="250" stroke="#374151" stroke-width="2"/>

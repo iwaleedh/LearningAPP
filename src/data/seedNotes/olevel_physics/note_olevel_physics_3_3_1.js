@@ -47,7 +47,7 @@ export const note_olevel_physics_3_3_1 = {
   <line x1="70" y1="120" x2="55" y2="140" stroke="#64748b" stroke-width="1.5"/>
   <line x1="70" y1="120" x2="85" y2="140" stroke="#64748b" stroke-width="1.5"/>
   <!-- Wall -->
-  <rect x="390" y="40" width="20" height="120" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="390" y="40" width="20" height="120" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
   <line x1="390" y1="50" x2="410" y2="65" stroke="#94a3b8" stroke-width="1"/>
   <line x1="390" y1="70" x2="410" y2="85" stroke="#94a3b8" stroke-width="1"/>
   <line x1="390" y1="90" x2="410" y2="105" stroke="#94a3b8" stroke-width="1"/>

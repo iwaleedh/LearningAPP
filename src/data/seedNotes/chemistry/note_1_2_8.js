@@ -196,53 +196,103 @@ export const note_chemistry_1_2_8 = {
       terms: []
     },
     {
-      id: 'svg-p3-ie1',
+      id: 'svg-ion-config-iso',
       type: 'svg',
       data: {
-        caption: 'First ionisation energy trend across Period 3. Note the general increase and the two anomalous dips at Al (3p orbital effect) and S (paired electron repulsion).',
-        svg: `<svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
-  <text x="260" y="16" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">First Ionisation Energy Across Period 3</text>
-  <line x1="60" y1="195" x2="490" y2="195" stroke="#334155" stroke-width="2"/>
-  <line x1="60" y1="25" x2="60" y2="195" stroke="#334155" stroke-width="2"/>
-  <text transform="rotate(-90 16 115)" x="16" y="115" text-anchor="middle" fill="#475569" font-size="10">IE₁ / kJ mol⁻¹</text>
-  <text x="55" y="202" text-anchor="end" fill="#64748b" font-size="9">400</text>
-  <text x="55" y="162" text-anchor="end" fill="#64748b" font-size="9">700</text>
-  <text x="55" y="122" text-anchor="end" fill="#64748b" font-size="9">1000</text>
-  <text x="55" y="82" text-anchor="end" fill="#64748b" font-size="9">1300</text>
-  <text x="55" y="42" text-anchor="end" fill="#64748b" font-size="9">1600</text>
-  <line x1="60" y1="162" x2="490" y2="162" stroke="#e2e8f0" stroke-width="1"/>
-  <line x1="60" y1="122" x2="490" y2="122" stroke="#e2e8f0" stroke-width="1"/>
-  <line x1="60" y1="82" x2="490" y2="82" stroke="#e2e8f0" stroke-width="1"/>
-  <line x1="60" y1="42" x2="490" y2="42" stroke="#e2e8f0" stroke-width="1"/>
-  <polyline points="80,189 135,157 190,178 245,151 300,120 355,122 410,89 465,53" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <circle cx="80" cy="189" r="5" fill="#3b82f6"/>
-  <circle cx="135" cy="157" r="5" fill="#3b82f6"/>
-  <circle cx="190" cy="178" r="6" fill="#ef4444"/>
-  <circle cx="245" cy="151" r="5" fill="#3b82f6"/>
-  <circle cx="300" cy="120" r="5" fill="#3b82f6"/>
-  <circle cx="355" cy="122" r="6" fill="#ef4444"/>
-  <circle cx="410" cy="89" r="5" fill="#3b82f6"/>
-  <circle cx="465" cy="53" r="5" fill="#3b82f6"/>
-  <text x="80" y="183" text-anchor="middle" fill="#1e40af" font-size="8">496</text>
-  <text x="135" y="151" text-anchor="middle" fill="#1e40af" font-size="8">738</text>
-  <text x="190" y="187" text-anchor="middle" fill="#dc2626" font-size="8">577</text>
-  <text x="245" y="145" text-anchor="middle" fill="#1e40af" font-size="8">786</text>
-  <text x="300" y="114" text-anchor="middle" fill="#1e40af" font-size="8">1012</text>
-  <text x="355" y="131" text-anchor="middle" fill="#dc2626" font-size="8">1000</text>
-  <text x="410" y="83" text-anchor="middle" fill="#1e40af" font-size="8">1251</text>
-  <text x="465" y="47" text-anchor="middle" fill="#1e40af" font-size="8">1521</text>
-  <text x="80" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Na</text>
-  <text x="135" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Mg</text>
-  <text x="190" y="212" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">Al</text>
-  <text x="245" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Si</text>
-  <text x="300" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">P</text>
-  <text x="355" y="212" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">S</text>
-  <text x="410" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Cl</text>
-  <text x="465" y="212" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Ar</text>
-  <text x="190" y="165" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ 3p orbital</text>
-  <text x="355" y="109" text-anchor="middle" fill="#dc2626" font-size="9" font-style="italic">↓ paired e⁻</text>
-  <circle cx="78" cy="228" r="4" fill="#3b82f6"/><text x="86" y="232" fill="#1e40af" font-size="9">Normal increase</text>
-  <circle cx="185" cy="228" r="4" fill="#ef4444"/><text x="193" y="232" fill="#dc2626" font-size="9">Anomalous dip</text>
+        caption: 'Cross-topic reference: ion configuration rules (links to Electronic Configuration 2.7) and isoelectronic series — species with the same electron configuration.',
+        svg: `<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
+  <line x1="308" y1="8" x2="308" y2="292" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="8" y="8" width="292" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="8" y="8" width="292" height="28" rx="8" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="26" width="292" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <text x="154" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Ion Configurations</text>
+  <rect x="16" y="44" width="276" height="30" rx="5" fill="#44370a"/>
+  <text x="154" y="57" text-anchor="middle" font-size="10" font-weight="bold" fill="#713f12">Rule: Remove 4s electrons BEFORE 3d when forming TM ions</text>
+  <text x="154" y="69" text-anchor="middle" font-size="9" fill="#92400e">(4s becomes higher energy than 3d once d-orbitals start to fill)</text>
+  <text x="16" y="92" font-size="10" font-weight="bold" fill="#374151">Transition metal ion examples:</text>
+  <rect x="16" y="98" width="276" height="18" rx="3" fill="#1e293b"/>
+  <text x="100" y="111" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Species</text>
+  <text x="220" y="111" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Configuration</text>
+  <line x1="16" y1="116" x2="292" y2="116" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="132" font-size="10" fill="#374151" font-weight="bold">Fe (Z=26)</text>
+  <text x="165" y="132" font-size="10" fill="#374151">[Ar] 3d⁶ 4s²</text>
+  <line x1="16" y1="138" x2="292" y2="138" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="30" y="154" font-size="10" fill="#1d4ed8" font-weight="bold">Fe²⁺</text>
+  <text x="165" y="154" font-size="10" fill="#1d4ed8">[Ar] 3d⁶</text>
+  <text x="270" y="154" font-size="9" fill="#6b7280">4s² removed</text>
+  <line x1="16" y1="160" x2="292" y2="160" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="30" y="176" font-size="10" fill="#1d4ed8" font-weight="bold">Fe³⁺</text>
+  <text x="165" y="176" font-size="10" fill="#1d4ed8">[Ar] 3d⁵</text>
+  <text x="270" y="176" font-size="9" fill="#6b7280">4s²+3d¹ gone</text>
+  <line x1="16" y1="182" x2="292" y2="182" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="198" font-size="10" fill="#374151" font-weight="bold">Cu (Z=29)</text>
+  <text x="165" y="198" font-size="10" fill="#dc2626">[Ar] 3d¹⁰ 4s¹</text>
+  <text x="270" y="198" font-size="8" fill="#dc2626">★ anomaly</text>
+  <line x1="16" y1="204" x2="292" y2="204" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="30" y="220" font-size="10" fill="#1d4ed8" font-weight="bold">Cu²⁺</text>
+  <text x="165" y="220" font-size="10" fill="#1d4ed8">[Ar] 3d⁹</text>
+  <text x="270" y="220" font-size="9" fill="#6b7280">4s¹+3d¹ gone</text>
+  <line x1="16" y1="226" x2="292" y2="226" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="16" y="242" font-size="10" font-weight="bold" fill="#374151">Main group ion (add electrons):</text>
+  <text x="30" y="258" font-size="10" fill="#374151" font-weight="bold">Cl (17)</text>
+  <text x="165" y="258" font-size="10" fill="#374151">1s² 2s² 2p⁶ 3s² 3p⁵</text>
+  <line x1="16" y1="262" x2="292" y2="262" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="30" y="278" font-size="10" fill="#1d4ed8" font-weight="bold">Cl⁻</text>
+  <text x="165" y="278" font-size="10" fill="#1d4ed8">1s² 2s² 2p⁶ 3s² 3p⁶</text>
+  <text x="270" y="278" font-size="9" fill="#6b7280">+1e gained</text>
+  <rect x="316" y="8" width="296" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="316" y="8" width="296" height="28" rx="8" fill="#065f46" fill-opacity="0.5"/>
+  <rect x="316" y="26" width="296" height="10" fill="#065f46" fill-opacity="0.5"/>
+  <text x="464" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">Isoelectronic Series</text>
+  <rect x="324" y="44" width="280" height="22" rx="4" fill="#0a2e1a" stroke="#10b981" stroke-width="1"/>
+  <text x="464" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">Isoelectronic = same electron configuration</text>
+  <text x="324" y="80" font-size="10" fill="#374151" font-weight="bold">10-electron series (config: 1s² 2s² 2p⁶):</text>
+  <rect x="324" y="86" width="280" height="24" rx="3" fill="#1e293b"/>
+  <text x="360" y="102" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Ion</text>
+  <text x="425" y="102" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Z (protons)</text>
+  <text x="510" y="102" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Electrons</text>
+  <text x="572" y="102" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Charge</text>
+  <line x1="324" y1="110" x2="604" y2="110" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="360" y="126" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">N³⁻</text>
+  <text x="425" y="126" text-anchor="middle" font-size="10" fill="#374151">7</text>
+  <text x="510" y="126" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="126" text-anchor="middle" font-size="10" fill="#374151">3−</text>
+  <line x1="324" y1="130" x2="604" y2="130" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="360" y="146" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">O²⁻</text>
+  <text x="425" y="146" text-anchor="middle" font-size="10" fill="#374151">8</text>
+  <text x="510" y="146" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="146" text-anchor="middle" font-size="10" fill="#374151">2−</text>
+  <line x1="324" y1="150" x2="604" y2="150" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="360" y="166" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">F⁻</text>
+  <text x="425" y="166" text-anchor="middle" font-size="10" fill="#374151">9</text>
+  <text x="510" y="166" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="166" text-anchor="middle" font-size="10" fill="#374151">1−</text>
+  <line x1="324" y1="170" x2="604" y2="170" stroke="#f1f5f9" stroke-width="1"/>
+  <rect x="324" y="171" width="280" height="22" rx="2" fill="#0a2e1a"/>
+  <text x="360" y="186" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Ne</text>
+  <text x="425" y="186" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="510" y="186" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="186" text-anchor="middle" font-size="9" fill="#065f46">neutral</text>
+  <line x1="324" y1="193" x2="604" y2="193" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="360" y="209" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Na⁺</text>
+  <text x="425" y="209" text-anchor="middle" font-size="10" fill="#374151">11</text>
+  <text x="510" y="209" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="209" text-anchor="middle" font-size="10" fill="#374151">1+</text>
+  <line x1="324" y1="213" x2="604" y2="213" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="360" y="229" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Mg²⁺</text>
+  <text x="425" y="229" text-anchor="middle" font-size="10" fill="#374151">12</text>
+  <text x="510" y="229" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="229" text-anchor="middle" font-size="10" fill="#374151">2+</text>
+  <line x1="324" y1="233" x2="604" y2="233" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="360" y="249" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Al³⁺</text>
+  <text x="425" y="249" text-anchor="middle" font-size="10" fill="#374151">13</text>
+  <text x="510" y="249" text-anchor="middle" font-size="10" fill="#374151">10</text>
+  <text x="572" y="249" text-anchor="middle" font-size="10" fill="#374151">3+</text>
+  <line x1="324" y1="253" x2="604" y2="253" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="324" y="258" width="280" height="38" rx="5" fill="#44370a"/>
+  <text x="464" y="273" text-anchor="middle" font-size="10" font-weight="bold" fill="#713f12">Key pattern:</text>
+  <text x="464" y="285" text-anchor="middle" font-size="9" fill="#713f12">All have same config but ionic radius decreases</text>
+  <text x="464" y="297" text-anchor="middle" font-size="9" fill="#713f12">as Z increases (more protons pull e⁻ in)</text>
 </svg>`
       },
       terms: []
@@ -485,6 +535,15 @@ export const note_chemistry_1_2_8 = {
       type: 'summary',
       data: {
         text: 'Electronic configs of ions: cations remove from highest-energy subshell (transition metals: 4s out before 3d); anions add to outermost subshell. Isoelectronic species share the same config (Na⁺/Mg²⁺/Al³⁺/F⁻/Ne: all 1s²2s²2p⁶). Across Period 3 — IE₁: generally increases (constant shielding, increasing nuclear charge); dip at Al (3p higher in energy than 3s); dip at S (paired 3p electrons repel). Atomic radius: decreases Na→Cl (Na 186 pm → Cl 99 pm). Electronegativity: increases Na (0.93) → Cl (3.16). Down a group: radius ↑, IE₁ ↓, EN ↓ (increasing shell number and greater shielding). Physical properties: Na/Mg/Al giant metallic (mp: Na<Mg<Al, more delocalized e⁻); Si giant covalent (highest mp 1414°C); P₄/S₈/Cl₂ simple molecular — only London forces between molecules (mp: S₈ 119°C > P₄ 44°C > Cl₂ −101°C > Ar −189°C). Si semiconductor; P/S/Cl/Ar non-conductors.'
+      },
+      terms: []
+    },
+    {
+      id: 'svg-period3-trends',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" font-family="system-ui,sans-serif"><text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">PERIODIC TRENDS ACROSS PERIOD 3</text><!-- Period 3 element strip --><text x="350" y="48" text-anchor="middle" font-size="10" fill="#2d2d72">Na  →  Mg  →  Al  →  Si  →  P  →  S  →  Cl  →  Ar</text><text x="350" y="63" text-anchor="middle" font-size="9" fill="#6366f1">Nuclear charge Z = 11  →  →  →  →  →  →  →  18  (all +1 each step)</text><!-- Trend 1: Atomic Radius DECREASES --><rect x="10" y="74" width="680" height="80" rx="10" fill="rgba(244,114,182,0.12)" stroke="#f472b6" stroke-width="1.5"/><text x="24" y="95" font-size="10" fill="#f472b6" font-weight="700">ATOMIC RADIUS — DECREASES ←</text><rect x="24" y="102" width="640" height="24" rx="6" fill="rgba(244,114,182,0.15)"/><rect x="24" y="102" width="640" height="24" rx="6" fill="url(#r-grad)"/><!-- Gradient bar (large on left, small on right) --><defs><linearGradient id="r-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f472b6" stop-opacity="0.7"/><stop offset="1" stop-color="#f472b6" stop-opacity="0.1"/></linearGradient></defs><text x="40" y="118" font-size="9" fill="#4a1040">Na biggest: 3 shells, 11p, few 2p shielding</text><text x="380" y="118" font-size="9" fill="#4a1040">Cl smallest: more protons pull same 3rd-shell e⁻ closer</text><text x="24" y="142" font-size="9" fill="#2d1b69">Why? Same shielding core — more protons = stronger pull = smaller radius</text><!-- Trend 2: IE₁ INCREASES (with dips) --><rect x="10" y="164" width="680" height="90" rx="10" fill="rgba(96,165,250,0.12)" stroke="#60a5fa" stroke-width="1.5"/><text x="24" y="182" font-size="10" fill="#60a5fa" font-weight="700">FIRST IONISATION ENERGY — INCREASES → (with 2 dips)</text><rect x="24" y="190" width="640" height="24" rx="6" fill="url(#ie-grad)"/><defs><linearGradient id="ie-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60a5fa" stop-opacity="0.15"/><stop offset="1" stop-color="#60a5fa" stop-opacity="0.75"/></linearGradient></defs><text x="24" y="206" font-size="9" fill="#1e3a8a">Na low</text><text x="580" y="206" font-size="9" fill="#1e3a8a">Ar highest</text><!-- Dip markers --><text x="140" y="228" text-anchor="middle" font-size="8.5" fill="#78350f">⚠ Al dip: 3p (single) easier to remove than Mg 3s²</text><text x="430" y="228" text-anchor="middle" font-size="8.5" fill="#78350f">⚠ S dip: 3p⁴ paired — repulsion makes one easier to remove vs P (3p³ half-full)</text><text x="24" y="244" font-size="9" fill="#1250a0">General trend: more protons → greater attraction → higher IE₁. Two dips explained by orbital theory.</text><!-- Trend 3: Electronegativity INCREASES --><rect x="10" y="264" width="680" height="70" rx="10" fill="rgba(52,211,153,0.12)" stroke="#34d399" stroke-width="1.5"/><text x="24" y="282" font-size="10" fill="#34d399" font-weight="700">ELECTRONEGATIVITY — INCREASES → (no dips)</text><rect x="24" y="290" width="640" height="20" rx="6" fill="url(#en-grad)"/><defs><linearGradient id="en-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34d399" stop-opacity="0.15"/><stop offset="1" stop-color="#34d399" stop-opacity="0.75"/></linearGradient></defs><text x="40" y="304" font-size="9" fill="#065f46">Na = 0.93</text><text x="620" y="304" font-size="9" fill="#065f46">Cl = 3.16</text><text x="24" y="324" font-size="9" fill="#065f46">Why? More protons pull shared bonding electrons more strongly toward that atom.</text><!-- Summary box --><rect x="10" y="344" width="680" height="76" rx="10" fill="rgba(99,102,241,0.15)" stroke="#818cf8" stroke-width="1.5"/><text x="350" y="363" text-anchor="middle" font-size="10" fill="#2d2d72" font-weight="700">ONE ROOT CAUSE EXPLAINS ALL TRENDS</text><text x="350" y="381" text-anchor="middle" font-size="11" font-weight="800" fill="#1e293b">Across a period: Z increases, shielding stays similar → effective nuclear charge rises</text><text x="350" y="399" text-anchor="middle" font-size="9" fill="#2d2d72">↑ Zeff = smaller radius  |  ↑ Zeff = higher IE₁ (usually)  |  ↑ Zeff = higher electronegativity</text><text x="350" y="415" text-anchor="middle" font-size="8.5" fill="#6366f1">Exam tip: the two IE₁ dips (Al and S) are essential exam knowledge — memorise the atomic orbital reason</text></svg>',
+        caption: 'Period 3 Periodic Trends — all three trends (atomic radius, IE₁, electronegativity) share one root cause: increasing effective nuclear charge. The two IE₁ dips (Al = 3p vs 3s²; S = paired 3p⁴) are tested repeatedly in exams.'
       },
       terms: []
     }

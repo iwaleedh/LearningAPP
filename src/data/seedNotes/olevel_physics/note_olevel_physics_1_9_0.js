@@ -38,10 +38,10 @@ export const note_olevel_physics_1_9_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="200" fill="#f0fdf4" rx="10"/>
+  <rect width="380" height="200" fill="#0a2e1a" rx="10"/>
   <text x="190" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Same Force, Different Area → Different Pressure</text>
   <!-- Left: Small area (nail/knife) -->
-  <rect x="30" y="100" width="120" height="60" fill="white" stroke="#e5e7eb" rx="5"/>
+  <rect x="30" y="100" width="120" height="60" fill="#1e293b" stroke="#e5e7eb" rx="5"/>
   <text x="90" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Small Area (nail)</text>
   <!-- Nail shape -->
   <polygon points="90,40 82,90 98,90" fill="#94a3b8"/>
@@ -57,7 +57,7 @@ export const note_olevel_physics_1_9_0 = {
   <text x="90" y="168" text-anchor="middle" font-size="9" fill="#dc2626">High pressure!</text>
 
   <!-- Right: Large area (snowshoe) -->
-  <rect x="220" y="100" width="130" height="60" fill="white" stroke="#e5e7eb" rx="5"/>
+  <rect x="220" y="100" width="130" height="60" fill="#1e293b" stroke="#e5e7eb" rx="5"/>
   <text x="285" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Large Area (snowshoe)</text>
   <!-- Snowshoe / flat shape -->
   <ellipse cx="285" cy="95" rx="45" ry="10" fill="#9ca3af"/>

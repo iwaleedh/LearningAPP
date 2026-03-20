@@ -95,19 +95,19 @@ export const note_olevel_physics_4_4_4 = {
         svg: `<svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Left side: generator diagram -->
   <!-- N pole -->
-  <rect x="10" y="60" width="50" height="100" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="10" y="60" width="50" height="100" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="22" y="115" fill="#16a34a" font-weight="bold" font-size="16">N</text>
   <!-- S pole -->
-  <rect x="170" y="60" width="50" height="100" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="170" y="60" width="50" height="100" rx="8" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="183" y="115" fill="#ef4444" font-weight="bold" font-size="16">S</text>
   <!-- Coil -->
-  <rect x="75" y="70" width="80" height="80" rx="5" fill="#e0e7ff" stroke="#6366f1" stroke-width="2.5"/>
+  <rect x="75" y="70" width="80" height="80" rx="5" fill="#2d2f72" stroke="#6366f1" stroke-width="2.5"/>
   <text x="96" y="113" fill="#6366f1">Coil</text>
   <!-- Axle -->
   <line x1="115" y1="50" x2="115" y2="220" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4,3"/>
   <!-- Slip rings -->
-  <ellipse cx="115" cy="170" rx="15" ry="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-  <ellipse cx="115" cy="180" rx="15" ry="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="115" cy="170" rx="15" ry="6" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="115" cy="180" rx="15" ry="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="130" y="178" fill="#d97706" font-size="9">slip rings</text>
   <!-- Brushes -->
   <rect x="82" y="168" width="10" height="8" rx="2" fill="#374151"/>

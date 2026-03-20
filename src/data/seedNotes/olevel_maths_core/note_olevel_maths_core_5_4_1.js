@@ -48,7 +48,7 @@ export const note_olevel_maths_core_5_4_1 = {
       data: {
         svg: `<svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Small square -->
-  <rect x="20" y="40" width="60" height="60" fill="#ede9fe" stroke="#6366f1" stroke-width="2"/>
+  <rect x="20" y="40" width="60" height="60" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
   <text x="50" y="115" text-anchor="middle" fill="#6366f1">s = 4 cm</text>
   <text x="50" y="130" text-anchor="middle" fill="#374151">Area = 16 cm²</text>
   <text x="50" y="145" text-anchor="middle" fill="#374151">Vol = 64 cm³</text>
@@ -58,7 +58,7 @@ export const note_olevel_maths_core_5_4_1 = {
   <line x1="130" y1="70" x2="200" y2="70" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrhead)"/>
 
   <!-- Large square -->
-  <rect x="220" y="20" width="120" height="120" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <rect x="220" y="20" width="120" height="120" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
   <text x="280" y="155" text-anchor="middle" fill="#10b981">s = 8 cm (×2)</text>
   <text x="280" y="170" fill="none"/>
 

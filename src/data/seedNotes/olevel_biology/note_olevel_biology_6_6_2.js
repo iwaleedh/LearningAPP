@@ -71,7 +71,7 @@ export const note_olevel_biology_6_6_2 = {
       data: {
         caption: 'Graphs showing the effect of light intensity, CO₂ concentration, and temperature on the rate of photosynthesis',
         svg: `<svg viewBox="0 0 540 310" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="10">
-  <rect width="540" height="310" fill="#f0fdf4" rx="12"/>
+  <rect width="540" height="310" fill="#0a2e1a" rx="12"/>
   <text x="270" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Factors Affecting Rate of Photosynthesis</text>
 
   <!-- ======================== Graph 1: Light Intensity ======================== -->

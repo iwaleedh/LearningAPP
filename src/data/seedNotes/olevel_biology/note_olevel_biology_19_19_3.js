@@ -44,19 +44,19 @@ export const note_olevel_biology_19_19_3 = {
       data: {
         caption: 'The nitrogen cycle — flow of nitrogen through the environment',
         svg: `<svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="360" fill="#f0f9ff" rx="12"/>
+  <rect width="520" height="360" fill="#1c3a64" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">The Nitrogen Cycle</text>
   <!-- Atmosphere -->
-  <rect x="160" y="35" width="200" height="40" rx="8" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="160" y="35" width="200" height="40" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="260" y="59" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">Atmospheric N₂</text>
   <!-- Soil nitrates -->
-  <rect x="160" y="200" width="200" height="40" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="160" y="200" width="200" height="40" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="260" y="224" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">Nitrates in soil (NO₃⁻)</text>
   <!-- Ammonium -->
-  <rect x="30" y="270" width="170" height="40" rx="8" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <rect x="30" y="270" width="170" height="40" rx="8" fill="#44370a" stroke="#b45309" stroke-width="2"/>
   <text x="115" y="294" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Ammonium (NH₄⁺)</text>
   <!-- Plants -->
-  <rect x="320" y="130" width="160" height="40" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <rect x="320" y="130" width="160" height="40" rx="8" fill="#0a2e1a" stroke="#059669" stroke-width="2"/>
   <text x="400" y="154" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Plant proteins</text>
   <!-- Arrows with labels -->
   <!-- N fixation: atmos → ammonium -->

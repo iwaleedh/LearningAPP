@@ -26,10 +26,10 @@ export const note_business_3_14_0 = {
       } },
       { id: "sum-1", type: "summary", data: { text: "Corporate culture is the blueprint for employee behaviour and decision-making. Managers must identify whether their existing culture (power, role, task, or person) aligns with their strategic objectives." } },
       { id: "enr-svg-1", type: "svg", data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" font-family="Inter, sans-serif">
-  <rect width="560" height="400" fill="#f8f9fa" rx="10"/>
+  <rect width="560" height="400" fill="#0f172a" rx="10"/>
   <line x1="280" y1="0" x2="280" y2="400" stroke="#dee2e6" stroke-width="1.5"/>
   <line x1="0" y1="200" x2="560" y2="200" stroke="#dee2e6" stroke-width="1.5"/>
-  <rect x="4" y="4" width="272" height="192" fill="#e9ecef" rx="8"/>
+  <rect x="4" y="4" width="272" height="192" fill="#1e293b" rx="8"/>
   <circle cx="47" cy="100" r="34" fill="none" stroke="#868e96" stroke-width="2.5"/>
   <circle cx="47" cy="100" r="21" fill="none" stroke="#868e96" stroke-width="2.5"/>
   <circle cx="47" cy="100" r="9" fill="#868e96"/>
@@ -37,7 +37,7 @@ export const note_business_3_14_0 = {
   <text x="92" y="82" font-size="12" fill="#495057">Centralised decisions.</text>
   <text x="92" y="100" font-size="12" fill="#495057">Fast but risky.</text>
   <text x="92" y="118" font-size="11" fill="#868e96">e.g. Bezos-era Amazon</text>
-  <rect x="284" y="4" width="272" height="192" fill="#e8f0fe" rx="8"/>
+  <rect x="284" y="4" width="272" height="192" fill="#1c3a64" rx="8"/>
   <rect x="308" y="65" width="13" height="58" rx="2" fill="#4361ee"/>
   <rect x="326" y="73" width="13" height="50" rx="2" fill="#4361ee"/>
   <rect x="344" y="68" width="13" height="55" rx="2" fill="#4361ee"/>
@@ -45,7 +45,7 @@ export const note_business_3_14_0 = {
   <text x="372" y="82" font-size="12" fill="#495057">Rules &amp; hierarchy.</text>
   <text x="372" y="100" font-size="12" fill="#495057">Stable but slow.</text>
   <text x="372" y="118" font-size="11" fill="#868e96">e.g. NHS, civil service</text>
-  <rect x="4" y="204" width="272" height="192" fill="#d1fae5" rx="8"/>
+  <rect x="4" y="204" width="272" height="192" fill="#0a2e1a" rx="8"/>
   <line x1="20" y1="262" x2="74" y2="262" stroke="#059669" stroke-width="2" stroke-dasharray="5,3"/>
   <line x1="20" y1="277" x2="74" y2="277" stroke="#059669" stroke-width="2" stroke-dasharray="5,3"/>
   <line x1="20" y1="292" x2="74" y2="292" stroke="#059669" stroke-width="2" stroke-dasharray="5,3"/>
@@ -56,7 +56,7 @@ export const note_business_3_14_0 = {
   <text x="92" y="282" font-size="12" fill="#495057">Team-based.</text>
   <text x="92" y="300" font-size="12" fill="#495057">Flexible &amp; creative.</text>
   <text x="92" y="318" font-size="11" fill="#868e96">e.g. Google, Spotify</text>
-  <rect x="284" y="204" width="272" height="192" fill="#ede9fe" rx="8"/>
+  <rect x="284" y="204" width="272" height="192" fill="#2d1b69" rx="8"/>
   <circle cx="318" cy="278" r="11" fill="#7c3aed" opacity="0.8"/>
   <circle cx="338" cy="262" r="8" fill="#7c3aed" opacity="0.65"/>
   <circle cx="354" cy="283" r="10" fill="#7c3aed" opacity="0.85"/>

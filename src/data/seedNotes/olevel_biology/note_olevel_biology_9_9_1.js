@@ -91,30 +91,30 @@ export const note_olevel_biology_9_9_1 = {
       data: {
         caption: 'Labelled diagram of the human heart showing chambers, valves, and major blood vessels',
         svg: `<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="480" height="380" fill="#fff0f0" rx="12"/>
+  <rect width="480" height="380" fill="#3d1212" rx="12"/>
   <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed">The Mammalian Heart</text>
   <!-- Heart outline -->
-  <path d="M240 340 Q120 260 100 180 Q80 100 160 90 Q200 85 240 130 Q280 85 320 90 Q400 100 380 180 Q360 260 240 340 Z" fill="#fecaca" stroke="#b91c1c" stroke-width="2.5"/>
+  <path d="M240 340 Q120 260 100 180 Q80 100 160 90 Q200 85 240 130 Q280 85 320 90 Q400 100 380 180 Q360 260 240 340 Z" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2.5"/>
   <!-- Septum -->
   <line x1="240" y1="130" x2="240" y2="310" stroke="#7f1d1d" stroke-width="2.5" stroke-dasharray="5,3"/>
   <!-- Right atrium -->
-  <ellipse cx="180" cy="145" rx="50" ry="35" fill="#fed7d7" stroke="#b91c1c" stroke-width="1.5"/>
+  <ellipse cx="180" cy="145" rx="50" ry="35" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1.5"/>
   <text x="180" y="141" text-anchor="middle" font-size="10" font-weight="bold" fill="#7f1d1d">Right</text>
   <text x="180" y="154" text-anchor="middle" font-size="10" font-weight="bold" fill="#7f1d1d">Atrium</text>
   <!-- Left atrium -->
-  <ellipse cx="300" cy="145" rx="50" ry="35" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <ellipse cx="300" cy="145" rx="50" ry="35" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="300" y="141" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Left</text>
   <text x="300" y="154" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Atrium</text>
   <!-- Right ventricle -->
-  <path d="M130 200 Q140 280 200 300 Q220 310 240 310 L240 200 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/>
+  <path d="M130 200 Q140 280 200 300 Q220 310 240 310 L240 200 Z" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1.5"/>
   <text x="182" y="262" text-anchor="middle" font-size="10" font-weight="bold" fill="#7f1d1d">Right</text>
   <text x="182" y="275" text-anchor="middle" font-size="10" font-weight="bold" fill="#7f1d1d">Ventricle</text>
   <!-- Left ventricle (thicker wall) -->
-  <path d="M240 200 L240 310 Q260 310 280 300 Q340 280 350 200 Z" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2.5"/>
+  <path d="M240 200 L240 310 Q260 310 280 300 Q340 280 350 200 Z" fill="#1250a0" stroke="#1d4ed8" stroke-width="2.5"/>
   <text x="300" y="262" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Left</text>
   <text x="300" y="275" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Ventricle</text>
   <!-- Vena cava (top right, into right atrium) -->
-  <rect x="100" y="50" width="18" height="55" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/>
+  <rect x="100" y="50" width="18" height="55" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1.5"/>
   <text x="60" y="65" text-anchor="middle" font-size="9" fill="#b91c1c">Vena cava</text>
   <text x="60" y="77" text-anchor="middle" font-size="9" fill="#b91c1c">(deoxy.)</text>
   <line x1="85" y1="72" x2="100" y2="95" stroke="#b91c1c" stroke-width="1" stroke-dasharray="3,2"/>

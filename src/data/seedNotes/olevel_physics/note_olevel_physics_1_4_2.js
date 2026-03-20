@@ -50,7 +50,7 @@ export const note_olevel_physics_1_4_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="200" fill="#eff6ff" rx="10"/>
+  <rect width="440" height="200" fill="#1c3a64" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">F = ma: Relationships</text>
   <!-- F vs a graph (left) -->
   <text x="90" y="42" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">F vs a (constant m)</text>

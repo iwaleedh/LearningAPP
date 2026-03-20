@@ -45,12 +45,12 @@ export const note_olevel_physics_4_2_7 = {
 
   <!-- Resistor R1 top -->
   <line x1="180" y1="30" x2="180" y2="75" stroke="#374151" stroke-width="2"/>
-  <rect x="160" y="75" width="40" height="50" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="160" y="75" width="40" height="50" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="180" y="104" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R₁</text>
   <line x1="180" y1="125" x2="180" y2="155" stroke="#374151" stroke-width="2"/>
 
   <!-- Resistor R2 bottom -->
-  <rect x="160" y="155" width="40" height="50" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <rect x="160" y="155" width="40" height="50" rx="4" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="180" y="184" text-anchor="middle" fill="#15803d" font-weight="bold">R₂</text>
   <line x1="180" y1="205" x2="180" y2="210" stroke="#374151" stroke-width="2"/>
 

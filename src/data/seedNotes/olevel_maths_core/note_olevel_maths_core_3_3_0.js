@@ -101,7 +101,7 @@ export const note_olevel_maths_core_3_3_0 = {
         caption: 'Sketch shapes for each of the five graph types',
         svg: `<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10" fill="none">
   <!-- 1. Linear (panel 1, x: 5-75) -->
-  <rect x="5" y="5" width="70" height="80" fill="#f5f5ff" stroke="#ddd"/>
+  <rect x="5" y="5" width="70" height="80" fill="#1c3a64" stroke="#ddd"/>
   <line x1="5" y1="50" x2="75" y2="50" stroke="#999" stroke-width="0.8"/>
   <line x1="40" y1="5" x2="40" y2="85" stroke="#999" stroke-width="0.8"/>
   <line x1="12" y1="78" x2="68" y2="12" stroke="#6366f1" stroke-width="2"/>
@@ -109,7 +109,7 @@ export const note_olevel_maths_core_3_3_0 = {
   <text x="40" y="108" text-anchor="middle" fill="#888" font-size="8">Linear</text>
 
   <!-- 2. Quadratic (panel 2, x:85-155) -->
-  <rect x="85" y="5" width="70" height="80" fill="#fff8f5" stroke="#ddd"/>
+  <rect x="85" y="5" width="70" height="80" fill="#532407" stroke="#ddd"/>
   <line x1="85" y1="50" x2="155" y2="50" stroke="#999" stroke-width="0.8"/>
   <line x1="120" y1="5" x2="120" y2="85" stroke="#999" stroke-width="0.8"/>
   <path d="M90,78 Q120,10 150,78" stroke="#ef4444" stroke-width="2"/>
@@ -117,7 +117,7 @@ export const note_olevel_maths_core_3_3_0 = {
   <text x="120" y="108" text-anchor="middle" fill="#888" font-size="8">Quadratic</text>
 
   <!-- 3. Reciprocal (panel 3, x:165-235) -->
-  <rect x="165" y="5" width="70" height="80" fill="#f0fff4" stroke="#ddd"/>
+  <rect x="165" y="5" width="70" height="80" fill="#0a2e1a" stroke="#ddd"/>
   <line x1="165" y1="45" x2="235" y2="45" stroke="#999" stroke-width="0.8"/>
   <line x1="200" y1="5" x2="200" y2="85" stroke="#999" stroke-width="0.8"/>
   <!-- Branch 1 (top right) -->
@@ -128,7 +128,7 @@ export const note_olevel_maths_core_3_3_0 = {
   <text x="200" y="108" text-anchor="middle" fill="#888" font-size="8">Reciprocal</text>
 
   <!-- 4. Cubic (panel 4, x:245-315) -->
-  <rect x="245" y="5" width="70" height="80" fill="#fffbeb" stroke="#ddd"/>
+  <rect x="245" y="5" width="70" height="80" fill="#44370a" stroke="#ddd"/>
   <line x1="245" y1="45" x2="315" y2="45" stroke="#999" stroke-width="0.8"/>
   <line x1="280" y1="5" x2="280" y2="85" stroke="#999" stroke-width="0.8"/>
   <path d="M252,78 Q265,65 275,45 Q285,25 308,12" stroke="#f59e0b" stroke-width="2"/>
@@ -136,7 +136,7 @@ export const note_olevel_maths_core_3_3_0 = {
   <text x="280" y="108" text-anchor="middle" fill="#888" font-size="8">Cubic</text>
 
   <!-- 5. Exponential (panel 5, x:325-395) -->
-  <rect x="325" y="5" width="70" height="80" fill="#fdf4ff" stroke="#ddd"/>
+  <rect x="325" y="5" width="70" height="80" fill="#2d1b69" stroke="#ddd"/>
   <line x1="325" y1="70" x2="395" y2="70" stroke="#999" stroke-width="0.8"/>
   <line x1="360" y1="5" x2="360" y2="85" stroke="#999" stroke-width="0.8"/>
   <path d="M330,68 Q345,66 355,60 Q362,53 368,42 Q374,30 383,12" stroke="#8b5cf6" stroke-width="2"/>

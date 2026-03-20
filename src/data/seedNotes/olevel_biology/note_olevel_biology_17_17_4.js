@@ -48,9 +48,9 @@ export const note_olevel_biology_17_17_4 = {
       data: {
         caption: 'Meiosis overview: 1 diploid cell → 4 haploid cells (gametes)',
         svg: `<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
-  <rect width="520" height="220" fill="#fafafa" rx="8"/>
+  <rect width="520" height="220" fill="#0f172a" rx="8"/>
   <!-- Parent cell -->
-  <ellipse cx="55" cy="110" rx="46" ry="55" fill="#e8eaf6" stroke="#3949ab" stroke-width="2"/>
+  <ellipse cx="55" cy="110" rx="46" ry="55" fill="#2d2d72" stroke="#3949ab" stroke-width="2"/>
   <text x="55" y="95" text-anchor="middle" fill="#1a237e" font-size="10" font-weight="bold">Parent</text>
   <text x="55" y="107" text-anchor="middle" fill="#1a237e" font-size="10" font-weight="bold">Cell</text>
   <text x="37" y="120" text-anchor="middle" fill="#5c6bc0" font-size="14">X</text>
@@ -64,12 +64,12 @@ export const note_olevel_biology_17_17_4 = {
   <text x="118" y="130" text-anchor="middle" fill="#555" font-size="9">homologous</text>
   <text x="118" y="140" text-anchor="middle" fill="#555" font-size="9">pairs separate</text>
   <!-- Two intermediate cells -->
-  <ellipse cx="195" cy="70" rx="38" ry="35" fill="#fce4ec" stroke="#e91e63" stroke-width="1.5"/>
+  <ellipse cx="195" cy="70" rx="38" ry="35" fill="#4a1040" stroke="#e91e63" stroke-width="1.5"/>
   <text x="195" y="62" text-anchor="middle" fill="#880e4f" font-size="10">Cell A</text>
   <text x="183" y="76" text-anchor="middle" fill="#5c6bc0" font-size="14">X</text>
   <text x="207" y="76" text-anchor="middle" fill="#5c6bc0" font-size="14">X</text>
   <text x="195" y="92" text-anchor="middle" fill="#555" font-size="9">haploid</text>
-  <ellipse cx="195" cy="155" rx="38" ry="35" fill="#fce4ec" stroke="#e91e63" stroke-width="1.5"/>
+  <ellipse cx="195" cy="155" rx="38" ry="35" fill="#4a1040" stroke="#e91e63" stroke-width="1.5"/>
   <text x="195" y="147" text-anchor="middle" fill="#880e4f" font-size="10">Cell B</text>
   <text x="183" y="161" text-anchor="middle" fill="#9c27b0" font-size="14">X</text>
   <text x="207" y="161" text-anchor="middle" fill="#9c27b0" font-size="14">X</text>
@@ -83,24 +83,24 @@ export const note_olevel_biology_17_17_4 = {
   <text x="248" y="130" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="bold">Meiosis II</text>
   <text x="248" y="143" text-anchor="middle" fill="#555" font-size="9">chromatids</text>
   <!-- Four haploid cells -->
-  <ellipse cx="320" cy="45" rx="32" ry="28" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <ellipse cx="320" cy="45" rx="32" ry="28" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="320" y="39" text-anchor="middle" fill="#1b5e20" font-size="9" font-weight="bold">Gamete 1</text>
   <text x="320" y="52" text-anchor="middle" fill="#388e3c" font-size="14">X</text>
   <text x="320" y="62" text-anchor="middle" fill="#555" font-size="9">n=2</text>
-  <ellipse cx="320" cy="107" rx="32" ry="28" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <ellipse cx="320" cy="107" rx="32" ry="28" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="320" y="101" text-anchor="middle" fill="#1b5e20" font-size="9" font-weight="bold">Gamete 2</text>
   <text x="320" y="114" text-anchor="middle" fill="#388e3c" font-size="14">X</text>
   <text x="320" y="124" text-anchor="middle" fill="#555" font-size="9">n=2 (varies)</text>
-  <ellipse cx="320" cy="143" rx="32" ry="28" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <ellipse cx="320" cy="143" rx="32" ry="28" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="320" y="137" text-anchor="middle" fill="#1b5e20" font-size="9" font-weight="bold">Gamete 3</text>
   <text x="320" y="150" text-anchor="middle" fill="#9c27b0" font-size="14">X</text>
   <text x="320" y="160" text-anchor="middle" fill="#555" font-size="9">n=2</text>
-  <ellipse cx="320" cy="197" rx="32" ry="20" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <ellipse cx="320" cy="197" rx="32" ry="20" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="320" y="192" text-anchor="middle" fill="#1b5e20" font-size="9" font-weight="bold">Gamete 4</text>
   <text x="320" y="203" text-anchor="middle" fill="#9c27b0" font-size="14">X</text>
   <text x="320" y="213" text-anchor="middle" fill="#555" font-size="9">n=2 (varies)</text>
   <!-- Summary box -->
-  <rect x="368" y="30" width="142" height="160" rx="8" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+  <rect x="368" y="30" width="142" height="160" rx="8" fill="#44370a" stroke="#f9a825" stroke-width="1.5"/>
   <text x="439" y="48" text-anchor="middle" fill="#e65100" font-size="10" font-weight="bold">Result Summary</text>
   <text x="439" y="64" text-anchor="middle" fill="#333" font-size="10">4 gametes</text>
   <text x="439" y="78" text-anchor="middle" fill="#333" font-size="10">All haploid (n)</text>

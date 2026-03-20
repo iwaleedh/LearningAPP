@@ -1,16 +1,16 @@
 import React from 'react';
-import { useTheme } from '../../hooks/useTheme';
 import { Link, useLocation } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
-    LayoutDashboard, Settings, Sun, Moon, Menu, X,
-    Brain, Trophy, Search, Zap, Radio
+    LayoutDashboard, Settings, X,
+    Brain, Trophy, Search, Zap, Radio, MonitorPlay
 } from 'lucide-react';
 import './Layout.css';
 
 const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
     { path: '/notes', label: 'Notes', icon: BookOpen },
+    { path: '/presentation', label: 'Presentation', icon: MonitorPlay },
     { path: '/exercises', label: 'Exercises', icon: FlaskConical },
     { path: '/past-papers', label: 'Past Papers', icon: FileQuestion },
     { path: '/flashcards', label: 'Flashcards', icon: Brain },
@@ -20,7 +20,6 @@ const navItems = [
 
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
-    const { theme, toggleTheme } = useTheme();
 
     return (
         <>
@@ -106,13 +105,6 @@ export default function Sidebar({ isOpen, onToggle }) {
                     </Link>
                 </nav>
 
-                {/* Theme toggle */}
-                <div className="sidebar-footer">
-                    <button className="theme-toggle" onClick={toggleTheme}>
-                        {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-                        <span>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
-                    </button>
-                </div>
             </aside>
         </>
     );

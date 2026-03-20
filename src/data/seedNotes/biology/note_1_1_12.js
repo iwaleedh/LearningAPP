@@ -51,7 +51,7 @@ export const note_biology_1_1_12 = {
         "id": "svg-diag-1-1-12-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'><rect x='115' y='30' width='10' height='120' fill='#e2e8f0' stroke='#4a5568'/><text x='135' y='90' font-size='12'>Burette</text><path d='M90,180 L150,180 L140,220 L100,220 Z' fill='#fff5f5' stroke='#4a5568' stroke-width='2'/><text x='30' y='210' font-size='10'>Vitamin C Extract</text><circle cx='120' cy='160' r='3' fill='#3182ce'/><circle cx='120' cy='170' r='3' fill='#3182ce'/><text x='135' y='165' font-size='10' fill='#3182ce'>DCPIP Drops</text></svg>",
+            "svg": "<svg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'><rect x='115' y='30' width='10' height='120' fill='#1e293b' stroke='#4a5568'/><text x='135' y='90' font-size='12'>Burette</text><path d='M90,180 L150,180 L140,220 L100,220 Z' fill='#3d1212' stroke='#4a5568' stroke-width='2'/><text x='30' y='210' font-size='10'>Vitamin C Extract</text><circle cx='120' cy='160' r='3' fill='#3182ce'/><circle cx='120' cy='170' r='3' fill='#3182ce'/><text x='135' y='165' font-size='10' fill='#3182ce'>DCPIP Drops</text></svg>",
             "caption": "DCPIP Titration Setup"
         }
     },
@@ -59,7 +59,7 @@ export const note_biology_1_1_12 = {
         "id": "svg-diag-1-1-12-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 100' xmlns='http://www.w3.org/2000/svg'><circle cx='70' cy='50' r='25' fill='#3182ce'/><text x='55' y='55' fill='white' font-size='12'>Blue</text><text x='115' y='55' font-size='12' font-family='sans-serif'>+ Vitamin C →</text><circle cx='230' cy='50' r='25' fill='none' stroke='#4a5568' stroke-width='2'/><text x='205' y='55' font-size='12'>Colourless</text></svg>",
+            "svg": "<svg viewBox='0 0 350 100' xmlns='http://www.w3.org/2000/svg'><circle cx='70' cy='50' r='25' fill='#3182ce'/><text x='55' y='55' fill='#1e293b' font-size='12'>Blue</text><text x='115' y='55' font-size='12' font-family='sans-serif'>+ Vitamin C →</text><circle cx='230' cy='50' r='25' fill='none' stroke='#4a5568' stroke-width='2'/><text x='205' y='55' font-size='12'>Colourless</text></svg>",
             "caption": "DCPIP End Point"
         }
     }

@@ -71,7 +71,7 @@ export const note_olevel_biology_10_10_1 = {
       data: {
         caption: 'Phagocytosis: a phagocyte engulfs and digests a pathogen',
         svg: `<svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="680" height="320" fill="#f8fafc" rx="12"/>
+  <rect width="680" height="320" fill="#0f172a" rx="12"/>
   <text x="340" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Phagocytosis — Step by Step</text>
   <!-- Step labels -->
   <text x="80" y="56" text-anchor="middle" font-size="11" fill="#64748b">Step 1: Detection</text>
@@ -79,37 +79,37 @@ export const note_olevel_biology_10_10_1 = {
   <text x="400" y="56" text-anchor="middle" font-size="11" fill="#64748b">Step 3: Vacuole forms</text>
   <text x="560" y="56" text-anchor="middle" font-size="11" fill="#64748b">Step 4: Digestion</text>
   <!-- Step 1: Phagocyte approaching -->
-  <ellipse cx="80" cy="155" rx="52" ry="42" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="80" cy="155" rx="52" ry="42" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="80" y="148" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">Phagocyte</text>
   <text x="80" y="163" text-anchor="middle" font-size="9" fill="#1e40af">(nucleus)</text>
   <!-- nucleus -->
-  <ellipse cx="80" cy="165" rx="16" ry="10" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1"/>
+  <ellipse cx="80" cy="165" rx="16" ry="10" fill="#1250a0" stroke="#1d4ed8" stroke-width="1"/>
   <!-- pathogen -->
-  <ellipse cx="140" cy="130" rx="14" ry="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <ellipse cx="140" cy="130" rx="14" ry="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="140" y="118" text-anchor="middle" font-size="9" fill="#dc2626">Bacterium</text>
   <!-- Step 2: Engulfing -->
-  <path d="M200 120 Q232 80 270 110 Q300 95 310 120 Q340 90 340 155 Q340 210 270 210 Q200 210 200 155 Z" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <ellipse cx="254" cy="170" rx="16" ry="10" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1"/>
-  <ellipse cx="275" cy="112" rx="14" ry="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <path d="M200 120 Q232 80 270 110 Q300 95 310 120 Q340 90 340 155 Q340 210 270 210 Q200 210 200 155 Z" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="254" cy="170" rx="16" ry="10" fill="#1250a0" stroke="#1d4ed8" stroke-width="1"/>
+  <ellipse cx="275" cy="112" rx="14" ry="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="270" y="88" text-anchor="middle" font-size="9" fill="#dc2626">Engulfing</text>
   <!-- arrow -->
   <line x1="148" y1="155" x2="192" y2="155" stroke="#475569" stroke-width="1.5" marker-end="url(#a1)"/>
   <!-- Step 3: Vacuole -->
-  <ellipse cx="400" cy="155" rx="52" ry="42" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <ellipse cx="400" cy="155" rx="18" ry="18" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <ellipse cx="400" cy="155" rx="52" ry="42" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="400" cy="155" rx="18" ry="18" fill="#3d1212" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
   <text x="400" y="159" text-anchor="middle" font-size="9" fill="#dc2626">Phagosome</text>
-  <ellipse cx="415" cy="175" rx="13" ry="9" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1"/>
+  <ellipse cx="415" cy="175" rx="13" ry="9" fill="#1250a0" stroke="#1d4ed8" stroke-width="1"/>
   <text x="400" y="215" text-anchor="middle" font-size="9" fill="#64748b">Vacuole seals</text>
   <!-- Lysosome -->
-  <ellipse cx="380" cy="135" rx="10" ry="8" fill="#d8b4fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <ellipse cx="380" cy="135" rx="10" ry="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="356" y="123" text-anchor="middle" font-size="8" fill="#7c3aed">Lysosome</text>
   <line x1="341" y1="155" x2="344" y2="155" stroke="#475569" stroke-width="1.5" marker-end="url(#a1)"/>
   <!-- Step 4: Digestion -->
-  <ellipse cx="560" cy="155" rx="52" ry="42" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <ellipse cx="560" cy="148" rx="18" ry="18" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <ellipse cx="560" cy="155" rx="52" ry="42" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="560" cy="148" rx="18" ry="18" fill="#0a3020" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,2"/>
   <text x="560" y="146" text-anchor="middle" font-size="8.5" fill="#15803d" font-weight="bold">Digested</text>
   <text x="560" y="158" text-anchor="middle" font-size="8" fill="#15803d">products</text>
-  <ellipse cx="575" cy="175" rx="13" ry="9" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1"/>
+  <ellipse cx="575" cy="175" rx="13" ry="9" fill="#1250a0" stroke="#1d4ed8" stroke-width="1"/>
   <text x="560" y="215" text-anchor="middle" font-size="9" fill="#64748b">Enzymes digest pathogen</text>
   <line x1="457" y1="155" x2="503" y2="155" stroke="#475569" stroke-width="1.5" marker-end="url(#a1)"/>
   <defs>

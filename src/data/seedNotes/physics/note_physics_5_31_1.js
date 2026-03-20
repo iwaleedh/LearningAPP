@@ -34,7 +34,7 @@ export const note_physics_5_31_1 = {
       id: 'enr-svg-1',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#f8f9fa" rx="8"/><line x1="50" y1="170" x2="370" y2="170" stroke="#64748b" stroke-width="2"/><line x1="50" y1="20" x2="50" y2="170" stroke="#64748b" stroke-width="2"/><path d="M 60 30 C 80 42 130 90 200 130 S 310 158 360 165" stroke="#6366f1" fill="none" stroke-width="2.5"/><text x="210" y="192" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">Distance r from centre of planet</text><text x="14" y="100" font-family="sans-serif" font-size="11" fill="#475569" transform="rotate(-90 14 100)">g (N kg&#8315;&#185;)</text></svg>',
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="8"/><line x1="50" y1="170" x2="370" y2="170" stroke="#64748b" stroke-width="2"/><line x1="50" y1="20" x2="50" y2="170" stroke="#64748b" stroke-width="2"/><path d="M 60 30 C 80 42 130 90 200 130 S 310 158 360 165" stroke="#6366f1" fill="none" stroke-width="2.5"/><text x="210" y="192" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">Distance r from centre of planet</text><text x="14" y="100" font-family="sans-serif" font-size="11" fill="#475569" transform="rotate(-90 14 100)">g (N kg&#8315;&#185;)</text></svg>',
         caption: "g decreases with distance from the planet's centre: g ∝ 1/r² (inverse square law)"
       }
     },

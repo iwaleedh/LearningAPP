@@ -22,9 +22,9 @@ export const note_olevel_biology_17_17_0 = {
       data: {
         caption: 'Hierarchy: nucleus → chromosome → gene → allele',
         svg: `<svg viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="520" height="180" fill="#fafafa" rx="8"/>
+  <rect width="520" height="180" fill="#0f172a" rx="8"/>
   <!-- Cell nucleus -->
-  <ellipse cx="55" cy="90" rx="40" ry="50" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+  <ellipse cx="55" cy="90" rx="40" ry="50" fill="#1c3a64" stroke="#1e88e5" stroke-width="2"/>
   <text x="55" y="88" text-anchor="middle" fill="#1e88e5" font-weight="bold" font-size="11">Nucleus</text>
   <text x="55" y="102" text-anchor="middle" fill="#1e88e5" font-size="10">(in cell)</text>
   <!-- Arrow -->
@@ -38,7 +38,7 @@ export const note_olevel_biology_17_17_0 = {
   <!-- Arrow -->
   <line x1="144" y1="90" x2="170" y2="90" stroke="#555" stroke-width="1.5"/>
   <!-- Gene region on chromosome -->
-  <rect x="172" y="68" width="80" height="44" rx="6" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
+  <rect x="172" y="68" width="80" height="44" rx="6" fill="#44370a" stroke="#f9a825" stroke-width="2"/>
   <text x="212" y="86" text-anchor="middle" fill="#e65100" font-weight="bold" font-size="11">Gene</text>
   <text x="212" y="100" text-anchor="middle" fill="#e65100" font-size="10">section of DNA</text>
   <text x="212" y="112" text-anchor="middle" fill="#888" font-size="10">→ codes for a protein</text>
@@ -46,16 +46,16 @@ export const note_olevel_biology_17_17_0 = {
   <!-- Arrow -->
   <line x1="253" y1="90" x2="278" y2="90" stroke="#555" stroke-width="1.5"/>
   <!-- Alleles -->
-  <rect x="280" y="55" width="75" height="32" rx="6" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <rect x="280" y="55" width="75" height="32" rx="6" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="317" y="70" text-anchor="middle" fill="#1b5e20" font-weight="bold" font-size="11">Allele A</text>
   <text x="317" y="82" text-anchor="middle" fill="#1b5e20" font-size="10">(e.g. Brown eyes)</text>
-  <rect x="280" y="98" width="75" height="32" rx="6" fill="#ffccbc" stroke="#e64a19" stroke-width="2"/>
+  <rect x="280" y="98" width="75" height="32" rx="6" fill="#532407" stroke="#e64a19" stroke-width="2"/>
   <text x="317" y="113" text-anchor="middle" fill="#bf360c" font-weight="bold" font-size="11">Allele a</text>
   <text x="317" y="125" text-anchor="middle" fill="#bf360c" font-size="10">(e.g. Blue eyes)</text>
   <text x="317" y="148" text-anchor="middle" fill="#555" font-size="11">Alleles = different forms</text>
   <text x="317" y="160" text-anchor="middle" fill="#555" font-size="11">of the same gene</text>
   <!-- Human number note -->
-  <rect x="375" y="40" width="135" height="100" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+  <rect x="375" y="40" width="135" height="100" rx="6" fill="#2d2d72" stroke="#3949ab" stroke-width="1.5"/>
   <text x="442" y="60" text-anchor="middle" fill="#1a237e" font-weight="bold" font-size="11">Humans</text>
   <text x="442" y="76" text-anchor="middle" fill="#3949ab" font-size="11">Body cells: 46</text>
   <text x="442" y="90" text-anchor="middle" fill="#3949ab" font-size="11">chromosomes</text>

@@ -46,7 +46,7 @@ export const note_mathematics_5_4_2 = {
   <line x1="150" y1="20" x2="150" y2="80" stroke="#9ca3af" stroke-width="4"/>
   
   <!-- Pulley -->
-  <circle cx="150" cy="110" r="30" fill="#e5e7eb" stroke="#6b7280" stroke-width="4"/>
+  <circle cx="150" cy="110" r="30" fill="#1e293b" stroke="#6b7280" stroke-width="4"/>
   <circle cx="150" cy="110" r="4" fill="#6b7280"/>
   
   <!-- Strings -->
@@ -55,11 +55,11 @@ export const note_mathematics_5_4_2 = {
   
   <!-- Mass 1 (Left - heavier) -->
   <rect x="100" y="280" width="40" height="40" fill="#6366f1" rx="4"/>
-  <text x="110" y="305" font-family="sans-serif" fill="#fff" font-size="16">m₁</text>
+  <text x="110" y="305" font-family="sans-serif" fill="#1e293b" font-size="16">m₁</text>
   
   <!-- Mass 2 (Right - lighter) -->
-  <rect x="165" y="200" width="30" height="30" fill="#10b981" rx="4"/>
-  <text x="170" y="220" font-family="sans-serif" fill="#fff" font-size="14">m₂</text>
+  <rect x="165" y="200" width="30" height="30" fill="#065f46" rx="4"/>
+  <text x="170" y="220" font-family="sans-serif" fill="#1e293b" font-size="14">m₂</text>
   
   <!-- Tension Arrows -->
   <path d="M 120 280 L 120 240" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-yellow-p)"/>

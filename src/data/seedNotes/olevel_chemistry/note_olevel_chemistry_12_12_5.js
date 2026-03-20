@@ -79,7 +79,7 @@ export const note_olevel_chemistry_12_12_5 = {
     
     <!-- Liquid in flask -->
     <path d="M 52,240 Q 100,245 148,240 A 48,48 0 0,1 100,278 A 48,48 0 0,1 52,240" class="liquid-blue"/>
-    <text x="100" y="260" class="label" fill="#fff" text-anchor="middle">Solution</text>
+    <text x="100" y="260" class="label" fill="#1e293b" text-anchor="middle">Solution</text>
 
     <!-- Bubbles/Vapor -->
     <circle cx="90" cy="230" r="3" class="vapor"/><circle cx="110" cy="220" r="2" class="vapor"/>
@@ -93,7 +93,7 @@ export const note_olevel_chemistry_12_12_5 = {
     <rect x="80" y="95" width="40" height="15" fill="#34495e"/> <!-- stopper -->
 
     <!-- Still Head / side arm -->
-    <path d="M 135,130 L 170,140 L 170,165 L 135,155 Z" class="glass" fill="#fff"/>
+    <path d="M 135,130 L 170,140 L 170,165 L 135,155 Z" class="glass" fill="#1e293b"/>
 
     <!-- Condenser -->
     <!-- Inner tube -->

@@ -48,7 +48,7 @@ export const note_olevel_physics_1_7_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 380 230" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="230" fill="#f0fdf4" rx="10"/>
+  <rect width="380" height="230" fill="#0a2e1a" rx="10"/>
   <text x="190" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">GPE → KE: Roller Coaster</text>
   <!-- Track -->
   <path d="M30,60 Q100,60 130,150 Q160,200 200,200 Q250,200 280,130 Q310,80 350,80" stroke="#94a3b8" stroke-width="3" fill="none"/>
@@ -63,7 +63,7 @@ export const note_olevel_physics_1_7_2 = {
   <text x="48" y="135" font-size="9" fill="#16a34a">GPE = mgh</text>
   <text x="48" y="145" font-size="9" fill="#2563eb">KE = 0</text>
   <!-- Cart at bottom -->
-  <rect x="184" y="184" width="28" height="16" rx="3" fill="#10b981"/>
+  <rect x="184" y="184" width="28" height="16" rx="3" fill="#065f46"/>
   <circle cx="190" cy="201" r="4" fill="#374151"/>
   <circle cx="206" cy="201" r="4" fill="#374151"/>
   <text x="198" y="178" text-anchor="middle" font-size="9" fill="#16a34a">h = 0</text>

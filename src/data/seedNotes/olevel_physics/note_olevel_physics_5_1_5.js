@@ -5,7 +5,7 @@ export const note_olevel_physics_5_1_5 = {
     { id: 'h-graph', type: 'heading', data: { text: 'Reading Half-Life from a Graph', level: 2 } },
     { id: 'para-graph', type: 'paragraph', data: { text: 'A radioactive decay curve is an <strong>exponential decay</strong> of activity (Bq) against time. The half-life is the same time interval regardless of starting point — it is constant for a given isotope. To find the half-life from a graph: read the initial activity A₀; find the time when activity = A₀/2; the time difference is the half-life. Verify by repeating from A₀/2 to A₀/4.' } },
     { id: 'svg-decay', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 290" width="480" height="290">
-  <rect width="480" height="290" fill="#f0fdf4" rx="8"/>
+  <rect width="480" height="290" fill="#0a2e1a" rx="8"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Radioactive Decay Curve (t₁/₂ = 10 s)</text>
   <!-- Axes -->
   <line x1="65" y1="250" x2="445" y2="250" stroke="#334155" stroke-width="2"/>
@@ -45,7 +45,7 @@ export const note_olevel_physics_5_1_5 = {
   <!-- Half-life brackets -->
   <text x="107" y="240" text-anchor="middle" font-size="9" fill="#ef4444" font-weight="bold">t½ = 10 s</text>
   <text x="202" y="240" text-anchor="middle" font-size="9" fill="#f97316" font-weight="bold">t½ = 10 s</text>
-  <text x="297" y="240" text-anchor="middle" font-size="9" fill="#a78bfa" font-weight="bold">t½ = 10 s</text>
+  <text x="297" y="240" text-anchor="middle" font-size="9" fill="#2d1b69" font-weight="bold">t½ = 10 s</text>
   <text x="430" y="44" font-size="10" fill="#16a34a">Decay</text>
   <text x="430" y="56" font-size="10" fill="#16a34a">curve</text>
 </svg>`, caption: 'Exponential decay curve showing constant half-life of 10 s at each step: 800→400→200→100 Bq.' } },

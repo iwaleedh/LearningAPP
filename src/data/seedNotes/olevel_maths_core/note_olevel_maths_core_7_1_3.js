@@ -100,7 +100,7 @@ export const note_olevel_maths_core_7_1_3 = {
       <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
     </pattern>
   </defs>
-  <rect width="300" height="250" fill="#f8fafc"/>
+  <rect width="300" height="250" fill="#0f172a"/>
   <rect width="300" height="250" fill="url(#engrid)"/>
   <line x1="10" y1="230" x2="290" y2="230" stroke="#94a3b8" stroke-width="1"/>
   <line x1="20" y1="10" x2="20" y2="240" stroke="#94a3b8" stroke-width="1"/>
@@ -108,11 +108,11 @@ export const note_olevel_maths_core_7_1_3 = {
   <text x="24" y="14" font-size="9" fill="#64748b">y</text>
   <circle cx="40" cy="210" r="4" fill="#ef4444"/>
   <text x="22" y="206" font-size="9" fill="#ef4444" font-weight="bold">E(1,1)</text>
-  <polygon points="60,190 100,190 60,150" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="60,190 100,190 60,150" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="56" y="204" font-size="9" fill="#1d4ed8">A(2,2)</text>
   <text x="95" y="204" font-size="9" fill="#1d4ed8">B(4,2)</text>
   <text x="40" y="148" font-size="9" fill="#1d4ed8">C(2,4)</text>
-  <polygon points="80,170 160,170 80,90" fill="#fed7aa" stroke="#f97316" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="80,170 160,170 80,90" fill="#532407" stroke="#f97316" stroke-width="2" stroke-dasharray="4,2"/>
   <text x="72" y="185" font-size="9" fill="#c2410c">A'(3,3)</text>
   <text x="153" y="185" font-size="9" fill="#c2410c">B'(7,3)</text>
   <text x="58" y="86" font-size="9" fill="#c2410c">C'(3,7)</text>

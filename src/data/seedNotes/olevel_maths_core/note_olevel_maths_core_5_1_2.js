@@ -45,7 +45,7 @@ export const note_olevel_maths_core_5_1_2 = {
       data: {
         svg: `<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- L-shape (two rectangles) -->
-  <polygon points="20,20 20,160 80,160 80,90 140,90 140,20" fill="#ede9fe" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="20,20 20,160 80,160 80,90 140,90 140,20" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
   <line x1="80" y1="20" x2="80" y2="90" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="5,3"/>
   <!-- dimensions -->
   <text x="80" y="13" text-anchor="middle" fill="#374151">6 cm</text>
@@ -56,16 +56,16 @@ export const note_olevel_maths_core_5_1_2 = {
   <text x="80" y="185" text-anchor="middle" fill="#6366f1" font-weight="bold">L-shape = R1 + R2</text>
 
   <!-- Shape with hole -->
-  <rect x="220" y="20" width="120" height="90" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
-  <rect x="250" y="45" width="50" height="40" fill="white" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3"/>
+  <rect x="220" y="20" width="120" height="90" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
+  <rect x="250" y="45" width="50" height="40" fill="#1e293b" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3"/>
   <text x="280" y="15" text-anchor="middle" fill="#374151">12 cm</text>
   <text x="349" y="65" fill="#374151">9 cm</text>
   <text x="275" y="70" text-anchor="middle" fill="#374151" font-size="10">hole</text>
   <text x="280" y="130" text-anchor="middle" fill="#10b981" font-weight="bold">Outer − Hole</text>
 
   <!-- Semi-circle + rectangle -->
-  <rect x="380" y="80" width="100" height="70" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-  <ellipse cx="430" cy="80" rx="50" ry="30" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" fill-opacity="0.7"/>
+  <rect x="380" y="80" width="100" height="70" fill="#78350f" stroke="#f59e0b" stroke-width="2"/>
+  <ellipse cx="430" cy="80" rx="50" ry="30" fill="#78350f" stroke="#f59e0b" stroke-width="2" fill-opacity="0.7"/>
   <text x="430" y="160" text-anchor="middle" fill="#374151">r = 5</text>
   <text x="490" y="120" fill="#374151">h</text>
   <text x="430" y="180" text-anchor="middle" fill="#f59e0b" font-weight="bold">Rect + Semi-circle</text>

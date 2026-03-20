@@ -45,11 +45,11 @@ export const note_olevel_physics_4_4_8 = {
         caption: 'Relay circuit — control coil closes armature contacts to switch load',
         svg: `<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Relay housing box -->
-  <rect x="140" y="40" width="160" height="130" rx="8" fill="#f9fafb" stroke="#6b7280" stroke-width="2" stroke-dasharray="6"/>
+  <rect x="140" y="40" width="160" height="130" rx="8" fill="#0f172a" stroke="#6b7280" stroke-width="2" stroke-dasharray="6"/>
   <text x="195" y="32" fill="#6b7280" font-size="9">RELAY</text>
 
   <!-- Coil on soft iron core -->
-  <rect x="155" y="90" width="50" height="60" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="155" y="90" width="50" height="60" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
   <text x="162" y="118" fill="#4338ca" font-weight="bold">Coil</text>
   <text x="160" y="130" fill="#4338ca">(iron core)</text>
   <!-- Coil turns -->
@@ -59,7 +59,7 @@ export const note_olevel_physics_4_4_8 = {
   <line x1="156" y1="133" x2="204" y2="133" stroke="#6366f1" stroke-width="1.5"/>
 
   <!-- Armature (horizontal bar, pivots left) -->
-  <rect x="210" y="80" width="80" height="14" rx="3" fill="#d1d5db" stroke="#374151" stroke-width="2"/>
+  <rect x="210" y="80" width="80" height="14" rx="3" fill="#1e293b" stroke="#374151" stroke-width="2"/>
   <text x="230" y="72" fill="#374151" font-weight="bold">Armature</text>
   <!-- Pivot point -->
   <circle cx="218" cy="87" r="5" fill="#374151"/>
@@ -81,7 +81,7 @@ export const note_olevel_physics_4_4_8 = {
   <line x1="155" y1="100" x2="80" y2="100" stroke="#6366f1" stroke-width="2"/>
   <line x1="155" y1="148" x2="80" y2="148" stroke="#6366f1" stroke-width="2"/>
   <line x1="80" y1="100" x2="80" y2="148" stroke="#6366f1" stroke-width="2"/>
-  <rect x="50" y="115" width="30" height="20" rx="3" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="50" y="115" width="30" height="20" rx="3" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="57" y="128" fill="#92400e">Switch</text>
   <text x="55" y="165" fill="#6366f1">Control circuit</text>
   <text x="58" y="177" fill="#6366f1">(low current)</text>
@@ -91,7 +91,7 @@ export const note_olevel_physics_4_4_8 = {
   <line x1="255" y1="20" x2="380" y2="20" stroke="#ef4444" stroke-width="2"/>
   <line x1="380" y1="20" x2="380" y2="140" stroke="#ef4444" stroke-width="2"/>
   <line x1="380" y1="140" x2="255" y2="140" stroke="#ef4444" stroke-width="2"/>
-  <rect x="340" y="50" width="40" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="340" y="50" width="40" height="40" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="347" y="70" fill="#b91c1c" font-weight="bold">Load</text>
   <text x="342" y="82" fill="#b91c1c">(motor/</text>
   <text x="344" y="92" fill="#b91c1c">lamp)</text>

@@ -47,25 +47,25 @@ export const note_olevel_physics_1_6_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="200" fill="#fef9f0" rx="10"/>
+  <rect width="440" height="200" fill="#44370a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Conservation of Momentum — Collision</text>
   <!-- Before -->
   <text x="100" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">BEFORE</text>
   <!-- Object A moving right -->
   <rect x="20" y="60" width="60" height="40" fill="#6366f1" rx="4"/>
-  <text x="50" y="84" text-anchor="middle" font-size="11" fill="white">A: 4 kg</text>
+  <text x="50" y="84" text-anchor="middle" font-size="11" fill="#1e293b">A: 4 kg</text>
   <line x1="80" y1="80" x2="105" y2="80" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="105,80 97,76 97,84" fill="#2563eb"/>
   <text x="92" y="72" font-size="10" fill="#2563eb">u=6 m/s</text>
   <!-- Object B stationary -->
   <rect x="140" y="60" width="60" height="40" fill="#94a3b8" rx="4"/>
-  <text x="170" y="84" text-anchor="middle" font-size="11" fill="white">B: 2 kg</text>
+  <text x="170" y="84" text-anchor="middle" font-size="11" fill="#1e293b">B: 2 kg</text>
   <text x="170" y="52" text-anchor="middle" font-size="10" fill="#374151">u=0</text>
   <text x="110" y="130" font-size="11" fill="#374151">p_total = 4×6 + 2×0 = 24 kg·m/s</text>
   <!-- After -->
   <text x="330" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">AFTER (together)</text>
   <rect x="275" y="60" width="110" height="40" fill="#6366f1" rx="4"/>
-  <text x="330" y="84" text-anchor="middle" font-size="11" fill="white">A + B: 6 kg</text>
+  <text x="330" y="84" text-anchor="middle" font-size="11" fill="#1e293b">A + B: 6 kg</text>
   <line x1="385" y1="80" x2="415" y2="80" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="415,80 407,76 407,84" fill="#2563eb"/>
   <text x="400" y="72" font-size="10" fill="#2563eb">v = ?</text>
@@ -75,7 +75,7 @@ export const note_olevel_physics_1_6_0 = {
   <polygon points="268,78 260,74 260,82" fill="#f59e0b"/>
   <text x="254" y="68" text-anchor="middle" font-size="10" fill="#f59e0b">collision</text>
   <!-- Momentum preserved label -->
-  <rect x="80" y="160" width="280" height="28" fill="#fef3c7" rx="6"/>
+  <rect x="80" y="160" width="280" height="28" fill="#78350f" rx="6"/>
   <text x="220" y="178" text-anchor="middle" font-size="11" fill="#92400e">Momentum conserved: 24 = 24 kg·m/s ✓</text>
 </svg>`,
         caption: 'Before: A (4 kg at 6 m/s) hits stationary B (2 kg). After: they stick → v = 4 m/s.',

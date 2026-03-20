@@ -33,7 +33,7 @@ export const note_olevel_maths_core_4_5_2 = {
     .rad  { stroke: #6366f1; stroke-width: 2; }
   </style>
   <!-- Circle -->
-  <circle cx="200" cy="135" r="100" fill="#e0e7ff" fill-opacity="0.3" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="200" cy="135" r="100" fill="#2d2f72" fill-opacity="0.3" stroke="#6366f1" stroke-width="2"/>
   <!-- Centre O -->
   <circle cx="200" cy="135" r="4" fill="#6366f1"/>
   <text x="206" y="130" class="lbl">O</text>

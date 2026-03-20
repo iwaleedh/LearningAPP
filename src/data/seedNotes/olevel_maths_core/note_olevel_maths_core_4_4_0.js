@@ -60,7 +60,7 @@ export const note_olevel_maths_core_4_4_0 = {
   </style>
   <!-- Equilateral triangle (3 lines) -->
   <g transform="translate(20, 20)">
-    <polygon points="55,5 100,85 10,85" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="55,5 100,85 10,85" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
     <line x1="55" y1="5" x2="55" y2="85" class="symline"/>
     <line x1="10" y1="85" x2="77.5" y2="45" class="symline"/>
     <line x1="100" y1="85" x2="32.5" y2="45" class="symline"/>
@@ -69,14 +69,14 @@ export const note_olevel_maths_core_4_4_0 = {
   </g>
   <!-- Isosceles triangle (1 line) -->
   <g transform="translate(155, 20)">
-    <polygon points="55,5 90,85 20,85" fill="#dcfce7" stroke="#10b981" stroke-width="1.5"/>
+    <polygon points="55,5 90,85 20,85" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
     <line x1="55" y1="5" x2="55" y2="85" class="symline" stroke="#10b981"/>
     <text x="18" y="103" class="name">Isosceles</text>
     <text x="25" y="114">1 line</text>
   </g>
   <!-- Square (4 lines) -->
   <g transform="translate(280, 20)">
-    <rect x="15" y="10" width="75" height="75" fill="#fce7f3" stroke="#9333ea" stroke-width="1.5"/>
+    <rect x="15" y="10" width="75" height="75" fill="#4a1040" stroke="#9333ea" stroke-width="1.5"/>
     <line x1="52.5" y1="10" x2="52.5" y2="85" class="symline" stroke="#9333ea"/>
     <line x1="15" y1="47.5" x2="90" y2="47.5" class="symline" stroke="#9333ea"/>
     <line x1="15" y1="10" x2="90" y2="85" class="symline" stroke="#9333ea"/>
@@ -86,7 +86,7 @@ export const note_olevel_maths_core_4_4_0 = {
   </g>
   <!-- Regular hexagon (6 lines) -->
   <g transform="translate(400, 10)">
-    <polygon points="55,5 95,30 95,75 55,100 15,75 15,30" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+    <polygon points="55,5 95,30 95,75 55,100 15,75 15,30" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
     <line x1="55" y1="5" x2="55" y2="100" class="symline" stroke="#ca8a04"/>
     <line x1="15" y1="30" x2="95" y2="75" class="symline" stroke="#ca8a04"/>
     <line x1="95" y1="30" x2="15" y2="75" class="symline" stroke="#ca8a04"/>

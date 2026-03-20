@@ -76,7 +76,7 @@ export const note_olevel_chemistry_12_12_1 = {
 
   <!-- Beaker 1 -->
   <path d="M 60 40 L 60 140 Q 60 150, 70 150 L 130 150 Q 140 150, 140 140 L 140 40" fill="none" stroke="var(--color-text)" stroke-width="3"/>
-  <path d="M 62 100 L 138 100 L 138 140 Q 138 148, 130 148 L 70 148 Q 62 148, 62 140 Z" fill="#93c5fd" opacity="0.6"/>
+  <path d="M 62 100 L 138 100 L 138 140 Q 138 148, 130 148 L 70 148 Q 62 148, 62 140 Z" fill="#1250a0" opacity="0.6"/>
   
   <text x="100" y="170" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Concentrated</text>
   <text x="100" y="185" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">C₁, V₁</text>
@@ -98,7 +98,7 @@ export const note_olevel_chemistry_12_12_1 = {
 
   <!-- Volumetric Flask / Beaker 2 -->
   <path d="M 330 40 L 330 140 Q 330 150, 340 150 L 460 150 Q 470 150, 470 140 L 470 40" fill="none" stroke="var(--color-text)" stroke-width="3"/>
-  <path d="M 332 60 L 468 60 L 468 140 Q 468 148, 460 148 L 340 148 Q 332 148, 332 140 Z" fill="#93c5fd" opacity="0.3"/>
+  <path d="M 332 60 L 468 60 L 468 140 Q 468 148, 460 148 L 340 148 Q 332 148, 332 140 Z" fill="#1250a0" opacity="0.3"/>
 
   <text x="400" y="170" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Diluted</text>
   <text x="400" y="185" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">C₂, V₂</text>

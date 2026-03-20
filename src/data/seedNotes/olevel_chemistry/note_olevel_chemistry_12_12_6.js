@@ -73,9 +73,9 @@ export const note_olevel_chemistry_12_12_6 = {
         <path d="M -18,40 L 18,40 L 18,90 A 18,18 0 0,1 -18,90 Z" class="liquid"/>
         <!-- Precipitate -->
         <path d="M -16,80 Q 0,75 16,85 A 16,16 0 0,1 -16,85 Z" class="ppt-cl"/>
-        <circle cx="-5" cy="90" r="3" fill="#fdfdfd"/>
-        <circle cx="5" cy="95" r="4" fill="#fdfdfd"/>
-        <circle cx="10" cy="85" r="2" fill="#fdfdfd"/>
+        <circle cx="-5" cy="90" r="3" fill="#0f172a"/>
+        <circle cx="5" cy="95" r="4" fill="#0f172a"/>
+        <circle cx="10" cy="85" r="2" fill="#0f172a"/>
         
         <text x="0" y="140" class="label-bold">Chloride (Cl⁻)</text>
         <text x="0" y="160" class="label">White ppt</text>
@@ -89,9 +89,9 @@ export const note_olevel_chemistry_12_12_6 = {
         <path d="M -18,40 L 18,40 L 18,90 A 18,18 0 0,1 -18,90 Z" class="liquid"/>
         <!-- Precipitate -->
         <path d="M -16,80 Q 0,75 16,85 A 16,16 0 0,1 -16,85 Z" class="ppt-br"/>
-        <circle cx="-5" cy="90" r="3" fill="#f1c40f" opacity="0.6"/>
-        <circle cx="5" cy="95" r="4" fill="#f1c40f" opacity="0.6"/>
-        <circle cx="10" cy="85" r="2" fill="#f1c40f" opacity="0.6"/>
+        <circle cx="-5" cy="90" r="3" fill="#532407" opacity="0.6"/>
+        <circle cx="5" cy="95" r="4" fill="#532407" opacity="0.6"/>
+        <circle cx="10" cy="85" r="2" fill="#532407" opacity="0.6"/>
         
         <text x="0" y="140" class="label-bold">Bromide (Br⁻)</text>
         <text x="0" y="160" class="label">Cream ppt</text>

@@ -41,7 +41,7 @@ export const note_olevel_maths_core_4_5_1 = {
     .angle { font-weight: 700; fill: #ef4444; font-size: 13px; }
   </style>
   <!-- Circle -->
-  <circle cx="230" cy="155" r="110" fill="#e0e7ff" fill-opacity="0.3" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="230" cy="155" r="110" fill="#2d2f72" fill-opacity="0.3" stroke="#6366f1" stroke-width="2"/>
   <!-- Diameter AB -->
   <line x1="120" y1="155" x2="340" y2="155" stroke="#6366f1" stroke-width="2.5"/>
   <circle cx="120" cy="155" r="4" fill="#6366f1"/>

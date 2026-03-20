@@ -51,9 +51,9 @@ export const note_olevel_biology_17_17_3 = {
       data: {
         caption: 'Summary diagram of mitosis — one cell divides into two identical cells',
         svg: `<svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="520" height="200" fill="#fafafa" rx="8"/>
+  <rect width="520" height="200" fill="#0f172a" rx="8"/>
   <!-- Parent cell -->
-  <ellipse cx="80" cy="100" rx="60" ry="55" fill="#e8eaf6" stroke="#3949ab" stroke-width="2"/>
+  <ellipse cx="80" cy="100" rx="60" ry="55" fill="#2d2d72" stroke="#3949ab" stroke-width="2"/>
   <text x="80" y="88" text-anchor="middle" fill="#1a237e" font-size="11" font-weight="bold">Parent Cell</text>
   <!-- Chromosomes in parent (simplified as X shapes) -->
   <text x="65" y="106" text-anchor="middle" fill="#5c6bc0" font-size="16" font-weight="bold">X</text>
@@ -66,7 +66,7 @@ export const note_olevel_biology_17_17_3 = {
   <text x="172" y="100" text-anchor="middle" fill="#555" font-size="10">replication</text>
   <text x="172" y="112" text-anchor="middle" fill="#555" font-size="10">+ mitosis</text>
   <!-- Cell dividing (hourglass) -->
-  <ellipse cx="270" cy="100" rx="55" ry="50" fill="#e8eaf6" stroke="#3949ab" stroke-width="2" stroke-dasharray="5"/>
+  <ellipse cx="270" cy="100" rx="55" ry="50" fill="#2d2d72" stroke="#3949ab" stroke-width="2" stroke-dasharray="5"/>
   <line x1="270" y1="55" x2="270" y2="145" stroke="#e57373" stroke-width="1.5" stroke-dasharray="4"/>
   <text x="248" y="100" text-anchor="middle" fill="#5c6bc0" font-size="14" font-weight="bold">X</text>
   <text x="292" y="100" text-anchor="middle" fill="#5c6bc0" font-size="14" font-weight="bold">X</text>
@@ -75,12 +75,12 @@ export const note_olevel_biology_17_17_3 = {
   <line x1="330" y1="100" x2="368" y2="100" stroke="#555" stroke-width="2"/>
   <polygon points="368,94 378,100 368,106" fill="#555"/>
   <!-- Daughter cells -->
-  <ellipse cx="415" cy="70" rx="45" ry="38" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <ellipse cx="415" cy="70" rx="45" ry="38" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="415" y="62" text-anchor="middle" fill="#1b5e20" font-size="11" font-weight="bold">Daughter 1</text>
   <text x="400" y="76" text-anchor="middle" fill="#388e3c" font-size="13" font-weight="bold">X</text>
   <text x="428" y="76" text-anchor="middle" fill="#388e3c" font-size="13" font-weight="bold">X</text>
   <text x="415" y="90" text-anchor="middle" fill="#555" font-size="10">diploid, identical</text>
-  <ellipse cx="415" cy="148" rx="45" ry="38" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <ellipse cx="415" cy="148" rx="45" ry="38" fill="#0a2e1a" stroke="#388e3c" stroke-width="2"/>
   <text x="415" y="140" text-anchor="middle" fill="#1b5e20" font-size="11" font-weight="bold">Daughter 2</text>
   <text x="400" y="154" text-anchor="middle" fill="#388e3c" font-size="13" font-weight="bold">X</text>
   <text x="428" y="154" text-anchor="middle" fill="#388e3c" font-size="13" font-weight="bold">X</text>

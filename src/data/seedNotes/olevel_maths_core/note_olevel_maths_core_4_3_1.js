@@ -55,17 +55,17 @@ export const note_olevel_maths_core_4_3_1 = {
   </style>
   <!-- Cube -->
   <g transform="translate(20, 20)">
-    <polygon points="20,50 70,50 70,100 20,100" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
-    <polygon points="20,50 45,30 95,30 70,50" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
-    <polygon points="70,50 95,30 95,80 70,100" fill="#a5b4fc" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="20,50 70,50 70,100 20,100" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="20,50 45,30 95,30 70,50" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="70,50 95,30 95,80 70,100" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
     <text x="20" y="120" class="name">Cube</text>
     <text x="10" y="133">F=6, E=12, V=8</text>
   </g>
   <!-- Triangular prism -->
   <g transform="translate(150, 20)">
-    <polygon points="20,90 70,90 70,50 20,50" fill="#dcfce7" stroke="#10b981" stroke-width="1.5"/>
-    <polygon points="20,50 45,20 70,50" fill="#bbf7d0" stroke="#10b981" stroke-width="1.5"/>
-    <polygon points="70,50 95,20 95,60 70,90" fill="#86efac" stroke="#10b981" stroke-width="1.5"/>
+    <polygon points="20,90 70,90 70,50 20,50" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
+    <polygon points="20,50 45,20 70,50" fill="#0a3020" stroke="#10b981" stroke-width="1.5"/>
+    <polygon points="70,50 95,20 95,60 70,90" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
     <line x1="45" y1="20" x2="95" y2="20" stroke="#10b981" stroke-width="1.5"/>
     <line x1="95" y1="20" x2="95" y2="60" stroke="#10b981" stroke-width="1.5"/>
     <text x="15" y="120" class="name">Triangular prism</text>
@@ -73,9 +73,9 @@ export const note_olevel_maths_core_4_3_1 = {
   </g>
   <!-- Square pyramid -->
   <g transform="translate(320, 15)">
-    <polygon points="20,90 80,90 80,50 20,50" fill="#fce7f3" stroke="#9333ea" stroke-width="1.5"/>
-    <polygon points="20,90 50,30 80,90" fill="#f5d0fe" stroke="#9333ea" stroke-width="1.5"/>
-    <polygon points="20,90 50,30 20,50" fill="#e9d5ff" stroke="#9333ea" stroke-width="1.5" opacity="0.6"/>
+    <polygon points="20,90 80,90 80,50 20,50" fill="#4a1040" stroke="#9333ea" stroke-width="1.5"/>
+    <polygon points="20,90 50,30 80,90" fill="#4a1040" stroke="#9333ea" stroke-width="1.5"/>
+    <polygon points="20,90 50,30 20,50" fill="#2d1b69" stroke="#9333ea" stroke-width="1.5" opacity="0.6"/>
     <line x1="80" y1="90" x2="50" y2="30" stroke="#9333ea" stroke-width="1.5"/>
     <line x1="80" y1="50" x2="50" y2="30" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4,3"/>
     <text x="15" y="120" class="name">Square pyramid</text>

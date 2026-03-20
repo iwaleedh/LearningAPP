@@ -72,7 +72,7 @@ export const note_biology_2_3_7 = {
         "id": "svg-diag-2-3-7-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='90' height='30' fill='#fed7d7' rx='5'/><text x='35' y='40' font-size='10'>Totipotent</text><text x='30' y='60' font-size='8' fill='#c53030'>(All cells + Placenta)</text><path d='M65,65 L65,90' stroke='#333' marker-end='url(#arrow)'/><rect x='130' y='80' width='90' height='30' fill='#fefcbf' rx='5'/><text x='145' y='100' font-size='10'>Pluripotent</text><text x='135' y='120' font-size='8' fill='#b7791f'>(All body cells / Embryo)</text><path d='M110,35 L160,35 L160,70' fill='none' stroke='#333' marker-end='url(#arrow)'/><rect x='240' y='80' width='90' height='30' fill='#c6f6d5' rx='5'/><text x='250' y='100' font-size='10'>Multipotent</text><text x='245' y='120' font-size='8' fill='#2f855a'>(Specific tissues e.g. blood)</text><path d='M220,95 L235,95' stroke='#333' marker-end='url(#arrow)'/></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='90' height='30' fill='#7f1d1d' rx='5'/><text x='35' y='40' font-size='10'>Totipotent</text><text x='30' y='60' font-size='8' fill='#c53030'>(All cells + Placenta)</text><path d='M65,65 L65,90' stroke='#333' marker-end='url(#arrow)'/><rect x='130' y='80' width='90' height='30' fill='#44370a' rx='5'/><text x='145' y='100' font-size='10'>Pluripotent</text><text x='135' y='120' font-size='8' fill='#b7791f'>(All body cells / Embryo)</text><path d='M110,35 L160,35 L160,70' fill='none' stroke='#333' marker-end='url(#arrow)'/><rect x='240' y='80' width='90' height='30' fill='#0a2e1a' rx='5'/><text x='250' y='100' font-size='10'>Multipotent</text><text x='245' y='120' font-size='8' fill='#2f855a'>(Specific tissues e.g. blood)</text><path d='M220,95 L235,95' stroke='#333' marker-end='url(#arrow)'/></svg>",
             "caption": "Stem Cell Potency Hierarchy"
         }
     },
@@ -80,7 +80,7 @@ export const note_biology_2_3_7 = {
         "id": "svg-diag-2-3-7-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='50' r='20' fill='#fbd38d'/><circle cx='70' cy='45' r='5' fill='#ed8936'/><circle cx='85' cy='55' r='5' fill='#ed8936'/><circle cx='75' cy='55' r='5' fill='#ed8936'/><text x='50' y='90' font-size='12' fill='#dd6b20'>Blastocyst</text><text x='50' y='105' font-size='10'>(Embryonic/Pluripotent)</text><path d='M200,30 Q220,10 240,30 L240,70 Q220,90 200,70 Z' fill='#e2e8f0'/><rect x='215' y='30' width='10' height='50' fill='#fc8181'/><text x='190' y='105' font-size='12' fill='#c53030'>Bone Marrow</text><text x='190' y='120' font-size='10'>(Adult/Multipotent)</text></svg>",
+            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='50' r='20' fill='#532407'/><circle cx='70' cy='45' r='5' fill='#ed8936'/><circle cx='85' cy='55' r='5' fill='#ed8936'/><circle cx='75' cy='55' r='5' fill='#ed8936'/><text x='50' y='90' font-size='12' fill='#dd6b20'>Blastocyst</text><text x='50' y='105' font-size='10'>(Embryonic/Pluripotent)</text><path d='M200,30 Q220,10 240,30 L240,70 Q220,90 200,70 Z' fill='#1e293b'/><rect x='215' y='30' width='10' height='50' fill='#fc8181'/><text x='190' y='105' font-size='12' fill='#c53030'>Bone Marrow</text><text x='190' y='120' font-size='10'>(Adult/Multipotent)</text></svg>",
             "caption": "Sources of Stem Cells"
         }
     }

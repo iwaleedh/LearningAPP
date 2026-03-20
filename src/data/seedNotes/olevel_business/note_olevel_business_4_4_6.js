@@ -91,7 +91,7 @@ export const note_olevel_business_4_4_6 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
-  <rect width="520" height="340" fill="#f8fafc" rx="8"/>
+  <rect width="520" height="340" fill="#0f172a" rx="8"/>
   <!-- Axes -->
   <line x1="70" y1="290" x2="480" y2="290" stroke="#334155" stroke-width="2"/>
   <line x1="70" y1="290" x2="70" y2="30" stroke="#334155" stroke-width="2"/>

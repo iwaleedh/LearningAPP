@@ -66,25 +66,25 @@ export const note_business_4_18_5 = {
     </marker>
   </defs>
   <rect x="190" y="14" width="220" height="52" rx="8" fill="#6366f1" stroke="#4338ca" stroke-width="2"/>
-  <text x="300" y="37" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Where to produce?</text>
-  <text x="300" y="55" text-anchor="middle" font-size="11" fill="#c7d2fe">Production location decision</text>
+  <text x="300" y="37" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Where to produce?</text>
+  <text x="300" y="55" text-anchor="middle" font-size="11" fill="#2d2d72">Production location decision</text>
   <line x1="240" y1="66" x2="148" y2="128" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
   <line x1="360" y1="66" x2="452" y2="128" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
   <circle cx="130" cy="167" r="52" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2"/>
-  <text x="130" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Domestic</text>
-  <text x="130" y="178" text-anchor="middle" font-size="11" fill="#bfdbfe">Production</text>
+  <text x="130" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Domestic</text>
+  <text x="130" y="178" text-anchor="middle" font-size="11" fill="#1e3a8a">Production</text>
   <circle cx="470" cy="167" r="52" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
-  <text x="470" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Offshore</text>
-  <text x="470" y="178" text-anchor="middle" font-size="11" fill="#fed7aa">Production</text>
+  <text x="470" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Offshore</text>
+  <text x="470" y="178" text-anchor="middle" font-size="11" fill="#532407">Production</text>
   <line x1="130" y1="219" x2="130" y2="262" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
   <line x1="470" y1="219" x2="470" y2="262" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="18" y="265" width="224" height="100" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="18" y="265" width="224" height="100" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="130" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#15803d">Domestic Characteristics</text>
   <text x="130" y="300" text-anchor="middle" font-size="10" fill="#166534">&#8226; Higher labour costs</text>
   <text x="130" y="316" text-anchor="middle" font-size="10" fill="#166534">&#8226; Known regulations</text>
   <text x="130" y="332" text-anchor="middle" font-size="10" fill="#166534">&#8226; No language barrier</text>
   <text x="130" y="348" text-anchor="middle" font-size="10" fill="#166534">&#8226; Quick to market</text>
-  <rect x="358" y="265" width="224" height="100" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <rect x="358" y="265" width="224" height="100" rx="8" fill="#532407" stroke="#ea580c" stroke-width="1.5"/>
   <text x="470" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#c2410c">Offshore Characteristics</text>
   <text x="470" y="300" text-anchor="middle" font-size="10" fill="#9a3412">&#8226; Lower labour costs</text>
   <text x="470" y="316" text-anchor="middle" font-size="10" fill="#9a3412">&#8226; Different regulations/risks</text>

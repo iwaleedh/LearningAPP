@@ -61,7 +61,7 @@ export const note_olevel_physics_1_7_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="210" fill="#eff6ff" rx="10"/>
+  <rect width="400" height="210" fill="#1c3a64" rx="10"/>
   <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">How KE Depends on Speed</text>
   <!-- Axes -->
   <line x1="55" y1="170" x2="370" y2="170" stroke="#374151" stroke-width="2"/>

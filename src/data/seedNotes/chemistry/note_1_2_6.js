@@ -115,35 +115,35 @@ export const note_chemistry_1_2_6 = {
       data: {
         caption: 'Shapes of s orbital (left) and the three p orbitals — p\u2093, p\u1d67, p\u1d69 (right)',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" font-family="sans-serif" font-size="12">
-  <rect width="520" height="270" fill="#f8f9ff" rx="8"/>
+  <rect width="520" height="270" fill="#0f172a" rx="8"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Shapes of s and p Orbitals</text>
   <!-- Divider -->
   <line x1="148" y1="35" x2="148" y2="258" stroke="#ccc" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- === s ORBITAL (left panel) === -->
   <text x="74" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#3f51b5">s orbital</text>
-  <ellipse cx="74" cy="148" rx="54" ry="54" fill="#b3c6ff" fill-opacity="0.45" stroke="#3f51b5" stroke-width="1.5"/>
+  <ellipse cx="74" cy="148" rx="54" ry="54" fill="#1e3a8a" fill-opacity="0.45" stroke="#3f51b5" stroke-width="1.5"/>
   <circle cx="74" cy="148" r="5" fill="#e63946"/>
   <text x="74" y="215" text-anchor="middle" fill="#3f51b5" font-size="11">Spherical</text>
   <text x="74" y="229" text-anchor="middle" fill="#3f51b5" font-size="11">1 orbital → max 2 e⁻</text>
   <!-- === p ORBITALS (right panel) === -->
   <text x="334" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a0dad">p orbitals (p\u2093, p\u1d67, p\u1d69)</text>
   <!-- px: two horizontal lobes -->
-  <ellipse cx="196" cy="130" rx="32" ry="17" fill="#d4a8ff" fill-opacity="0.6" stroke="#6a0dad" stroke-width="1.5"/>
-  <ellipse cx="256" cy="130" rx="32" ry="17" fill="#d4a8ff" fill-opacity="0.6" stroke="#6a0dad" stroke-width="1.5"/>
+  <ellipse cx="196" cy="130" rx="32" ry="17" fill="#2d1b69" fill-opacity="0.6" stroke="#6a0dad" stroke-width="1.5"/>
+  <ellipse cx="256" cy="130" rx="32" ry="17" fill="#2d1b69" fill-opacity="0.6" stroke="#6a0dad" stroke-width="1.5"/>
   <circle cx="226" cy="130" r="4" fill="#e63946"/>
   <text x="226" y="160" text-anchor="middle" fill="#6a0dad" font-size="11">p\u2093 (x-axis)</text>
   <!-- py: two vertical lobes -->
-  <ellipse cx="334" cy="98" rx="17" ry="32" fill="#a8d8ff" fill-opacity="0.6" stroke="#1565c0" stroke-width="1.5"/>
-  <ellipse cx="334" cy="162" rx="17" ry="32" fill="#a8d8ff" fill-opacity="0.6" stroke="#1565c0" stroke-width="1.5"/>
+  <ellipse cx="334" cy="98" rx="17" ry="32" fill="#1c3a64" fill-opacity="0.6" stroke="#1565c0" stroke-width="1.5"/>
+  <ellipse cx="334" cy="162" rx="17" ry="32" fill="#1c3a64" fill-opacity="0.6" stroke="#1565c0" stroke-width="1.5"/>
   <circle cx="334" cy="130" r="4" fill="#e63946"/>
   <text x="334" y="208" text-anchor="middle" fill="#1565c0" font-size="11">p\u1d67 (y-axis)</text>
   <!-- pz: tilted lobes (suggesting z-axis depth) -->
-  <ellipse cx="432" cy="130" rx="28" ry="14" fill="#b8f0c8" fill-opacity="0.6" stroke="#2e7d32" stroke-width="1.5" transform="rotate(-50 432 130)"/>
-  <ellipse cx="432" cy="130" rx="28" ry="14" fill="#b8f0c8" fill-opacity="0.3" stroke="#2e7d32" stroke-width="1.5" transform="rotate(130 432 130)"/>
+  <ellipse cx="432" cy="130" rx="28" ry="14" fill="#0a2e1a" fill-opacity="0.6" stroke="#2e7d32" stroke-width="1.5" transform="rotate(-50 432 130)"/>
+  <ellipse cx="432" cy="130" rx="28" ry="14" fill="#0a2e1a" fill-opacity="0.3" stroke="#2e7d32" stroke-width="1.5" transform="rotate(130 432 130)"/>
   <circle cx="432" cy="130" r="4" fill="#e63946"/>
   <text x="432" y="208" text-anchor="middle" fill="#2e7d32" font-size="11">p\u1d69 (z-axis)</text>
   <!-- Bottom notes -->
-  <rect x="160" y="220" width="340" height="42" rx="4" fill="white" stroke="#ddd"/>
+  <rect x="160" y="220" width="340" height="42" rx="4" fill="#1e293b" stroke="#ddd"/>
   <text x="330" y="236" text-anchor="middle" fill="#555" font-size="10">All three p orbitals are degenerate (equal energy)</text>
   <text x="330" y="250" text-anchor="middle" fill="#555" font-size="10">Each at 90° to the others · 3 orbitals → max 6 e⁻ per p sub-shell</text>
 </svg>`

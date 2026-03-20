@@ -48,13 +48,13 @@ export const note_olevel_physics_2_3_1 = {
         caption: 'Convection current in a tank of water — heat source at bottom left',
         svg: `<svg viewBox="0 0 420 250" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Tank outline -->
-  <rect x="40" y="40" width="330" height="180" rx="6" fill="#e8f4ff" stroke="#5580a8" stroke-width="2.5"/>
+  <rect x="40" y="40" width="330" height="180" rx="6" fill="#1c3a64" stroke="#5580a8" stroke-width="2.5"/>
 
   <!-- Water fill -->
-  <rect x="42" y="42" width="326" height="176" rx="5" fill="#c8e8ff" opacity="0.6"/>
+  <rect x="42" y="42" width="326" height="176" rx="5" fill="#1c3a64" opacity="0.6"/>
 
   <!-- Hot region (bottom left) -->
-  <rect x="42" y="180" width="80" height="38" rx="5" fill="#ff9966" opacity="0.7"/>
+  <rect x="42" y="180" width="80" height="38" rx="5" fill="#7c2d12" opacity="0.7"/>
   <text x="50" y="205" fill="#c33" font-size="11" font-weight="bold">🔥 Heat</text>
 
   <!-- Convection current arrows -->

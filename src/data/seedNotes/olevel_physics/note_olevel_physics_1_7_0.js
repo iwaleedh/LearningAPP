@@ -43,12 +43,12 @@ export const note_olevel_physics_1_7_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="220" fill="#fff7ed" rx="10"/>
+  <rect width="440" height="220" fill="#532407" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Energy Transfer: Ball Thrown Up</text>
   <!-- Ground line -->
   <line x1="30" y1="185" x2="410" y2="185" stroke="#6b7280" stroke-width="2"/>
   <!-- Stage 1: ground moving -->
-  <rect x="35" y="35" width="110" height="155" fill="white" stroke="#e5e7eb" rx="6"/>
+  <rect x="35" y="35" width="110" height="155" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="90" y="52" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">At launch</text>
   <circle cx="90" cy="165" r="12" fill="#6366f1"/>
   <line x1="90" y1="153" x2="90" y2="125" stroke="#2563eb" stroke-width="2.5"/>
@@ -57,13 +57,13 @@ export const note_olevel_physics_1_7_0 = {
   <text x="90" y="195" text-anchor="middle" font-size="10" fill="#2563eb">KE = max</text>
   <text x="90" y="207" text-anchor="middle" font-size="10" fill="#16a34a">GPE = 0</text>
   <!-- Stage 2: halfway up -->
-  <rect x="165" y="35" width="110" height="155" fill="white" stroke="#e5e7eb" rx="6"/>
+  <rect x="165" y="35" width="110" height="155" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="220" y="52" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Halfway up</text>
   <circle cx="220" cy="125" r="12" fill="#6366f1"/>
   <text x="220" y="195" text-anchor="middle" font-size="10" fill="#2563eb">KE = ½ max</text>
   <text x="220" y="207" text-anchor="middle" font-size="10" fill="#16a34a">GPE = ½ max</text>
   <!-- Stage 3: at top -->
-  <rect x="295" y="35" width="110" height="155" fill="white" stroke="#e5e7eb" rx="6"/>
+  <rect x="295" y="35" width="110" height="155" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="350" y="52" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">At top</text>
   <circle cx="350" cy="65" r="12" fill="#6366f1"/>
   <text x="350" y="195" text-anchor="middle" font-size="10" fill="#2563eb">KE = 0</text>

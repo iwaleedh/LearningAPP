@@ -40,27 +40,27 @@ export const note_olevel_chemistry_8_8_2 = {
   <!-- Trough 1: Lithium -->
   <text x="100" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Lithium (Li)</text>
   <path d="M 50 100 L 50 160 Q 50 170 60 170 L 140 170 Q 150 170 150 160 L 150 100" fill="none" stroke="var(--color-text)" stroke-width="2"/>
-  <path d="M 50 120 L 150 120 L 150 160 Q 150 168 140 168 L 60 168 Q 50 168 50 160 Z" fill="#e0f2fe"/>
+  <path d="M 50 120 L 150 120 L 150 160 Q 150 168 140 168 L 60 168 Q 50 168 50 160 Z" fill="#0c4a6e"/>
   <!-- Li piece (floats) -->
   <rect x="90" y="115" width="10" height="8" fill="#94a3b8"/>
-  <circle cx="100" cy="110" r="2" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
-  <circle cx="95" cy="105" r="2" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
-  <circle cx="108" cy="108" r="2" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="100" cy="110" r="2" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="95" cy="105" r="2" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="108" cy="108" r="2" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
   <text x="100" y="185" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Gentle fizzing</text>
   <text x="100" y="200" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Moves slowly</text>
 
   <!-- Trough 2: Sodium -->
   <text x="300" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Sodium (Na)</text>
   <path d="M 250 100 L 250 160 Q 250 170 260 170 L 340 170 Q 350 170 350 160 L 350 100" fill="none" stroke="var(--color-text)" stroke-width="2"/>
-  <path d="M 250 120 L 350 120 L 350 160 Q 350 168 340 168 L 260 168 Q 250 168 250 160 Z" fill="#bae6fd"/>
+  <path d="M 250 120 L 350 120 L 350 160 Q 350 168 340 168 L 260 168 Q 250 168 250 160 Z" fill="#0c4a6e"/>
   <!-- Na piece melts into a ball -->
   <circle cx="280" cy="116" r="6" fill="#94a3b8"/>
   <!-- Trail / rapid bubbles -->
   <path d="M 320 116 Q 300 125 285 116" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2,2"/>
-  <circle cx="275" cy="100" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
-  <circle cx="285" cy="105" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
-  <circle cx="270" cy="108" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
-  <circle cx="290" cy="98" r="3" fill="#fff" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="275" cy="100" r="3" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="285" cy="105" r="3" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="270" cy="108" r="3" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
+  <circle cx="290" cy="98" r="3" fill="#1e293b" stroke="#64748b" stroke-width="0.5"/>
   <text x="300" y="185" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Melts into a ball</text>
   <text x="300" y="200" font-family="var(--font-sans)" font-size="12" fill="#64748b" text-anchor="middle">Vigorous fizzing, moves quickly</text>
 
@@ -72,7 +72,7 @@ export const note_olevel_chemistry_8_8_2 = {
   <circle cx="500" cy="116" r="5" fill="#94a3b8"/>
   <!-- Lilac flame -->
   <path d="M 490 115 Q 500 80 510 115 Z" fill="#d946ef" opacity="0.8"/>
-  <path d="M 495 115 Q 500 90 505 115 Z" fill="#fbcfe8" opacity="0.9"/>
+  <path d="M 495 115 Q 500 90 505 115 Z" fill="#4a1040" opacity="0.9"/>
   <!-- Sparks/smoke -->
   <circle cx="485" cy="100" r="1.5" fill="#d946ef"/>
   <circle cx="515" cy="105" r="1.5" fill="#d946ef"/>

@@ -258,6 +258,108 @@ export const note_chemistry_1_2_7 = {
       terms: []
     },
     {
+      id: 'svg-config-reference',
+      type: 'svg',
+      data: {
+        caption: 'Cross-topic reference card: electron filling order (Aufbau), key rules (Hund\'s & Pauli), and configuration examples including the Cr & Cu anomalies — bridging Orbitals (2.6), Electronic Configuration (2.7) and Ion Configurations (2.8).',
+        svg: `<svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
+  <rect x="8" y="8" width="290" height="304" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="8" y="8" width="290" height="28" rx="8" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="26" width="290" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <text x="153" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Filling Order &amp; Rules</text>
+  <text x="18" y="54" font-size="10" font-weight="bold" fill="#374151">Sub-shell filling order (increasing energy):</text>
+  <rect x="18" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="30" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">1s</text>
+  <text x="46" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="52" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="64" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">2s</text>
+  <text x="80" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="86" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="98" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">2p</text>
+  <text x="114" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="120" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="132" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">3s</text>
+  <text x="148" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="154" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="166" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">3p</text>
+  <text x="182" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="188" y="60" width="24" height="20" rx="3" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="200" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">4s</text>
+  <text x="216" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="222" y="60" width="24" height="20" rx="3" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="234" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">3d</text>
+  <text x="250" y="74" font-size="11" fill="#9ca3af">›</text>
+  <rect x="256" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  <text x="268" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">4p</text>
+  <rect x="18" y="88" width="270" height="20" rx="4" fill="#44370a"/>
+  <text x="153" y="102" text-anchor="middle" font-size="9" font-weight="bold" fill="#92400e">⚠ 4s fills BEFORE 3d — but 4s empties FIRST when forming ions</text>
+  <text x="18" y="122" font-size="10" font-weight="bold" fill="#374151">Two key rules:</text>
+  <rect x="18" y="128" width="130" height="56" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1"/>
+  <text x="83" y="142" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Pauli Exclusion</text>
+  <text x="83" y="155" text-anchor="middle" font-size="9" fill="#374151">Max 2 electrons</text>
+  <text x="83" y="167" text-anchor="middle" font-size="9" fill="#374151">per orbital, with</text>
+  <text x="83" y="179" text-anchor="middle" font-size="9" fill="#374151">opposite spins ↑↓</text>
+  <rect x="158" y="128" width="130" height="56" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1"/>
+  <text x="223" y="142" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Hund's Rule</text>
+  <text x="223" y="155" text-anchor="middle" font-size="9" fill="#374151">Fill orbitals singly</text>
+  <text x="223" y="167" text-anchor="middle" font-size="9" fill="#374151">before pairing;</text>
+  <text x="223" y="179" text-anchor="middle" font-size="9" fill="#374151">parallel spins ↑↑↑</text>
+  <text x="18" y="204" font-size="10" font-weight="bold" fill="#374151">Anomalous configurations:</text>
+  <rect x="18" y="210" width="270" height="28" rx="5" fill="#3d1212" stroke="#ef4444" stroke-width="1"/>
+  <text x="153" y="222" text-anchor="middle" font-size="10" font-weight="bold" fill="#dc2626">Cr (Z=24): [Ar] 3d⁵ 4s¹  ★</text>
+  <text x="153" y="234" text-anchor="middle" font-size="9" fill="#374151">Half-filled 3d⁵ extra stability → one 4s promotes to 3d</text>
+  <rect x="18" y="244" width="270" height="28" rx="5" fill="#3d1212" stroke="#ef4444" stroke-width="1"/>
+  <text x="153" y="256" text-anchor="middle" font-size="10" font-weight="bold" fill="#dc2626">Cu (Z=29): [Ar] 3d¹⁰ 4s¹  ★</text>
+  <text x="153" y="268" text-anchor="middle" font-size="9" fill="#374151">Full 3d¹⁰ extra stability → one 4s promotes to 3d</text>
+  <rect x="18" y="278" width="270" height="26" rx="5" fill="#0a2e1a"/>
+  <text x="153" y="293" text-anchor="middle" font-size="9" fill="#065f46">Expected (wrong): Cr 3d⁴ 4s² · Cu 3d⁹ 4s² — do not write these</text>
+  <line x1="306" y1="8" x2="306" y2="312" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="312" y="8" width="300" height="304" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="312" y="8" width="300" height="28" rx="8" fill="#065f46" fill-opacity="0.5"/>
+  <rect x="312" y="26" width="300" height="10" fill="#065f46" fill-opacity="0.5"/>
+  <text x="462" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">Configuration Reference</text>
+  <rect x="320" y="44" width="284" height="18" rx="3" fill="#1e293b"/>
+  <text x="365" y="57" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Element (Z)</text>
+  <text x="500" y="57" text-anchor="middle" font-size="9" font-weight="bold" fill="#6b7280">Configuration</text>
+  <line x1="320" y1="62" x2="604" y2="62" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="330" y="78" font-size="10" fill="#374151" font-weight="bold">Na (11)</text>
+  <text x="430" y="78" font-size="10" fill="#374151">[Ne] 3s¹</text>
+  <line x1="320" y1="84" x2="604" y2="84" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="330" y="100" font-size="10" fill="#374151" font-weight="bold">Mg (12)</text>
+  <text x="430" y="100" font-size="10" fill="#374151">[Ne] 3s²</text>
+  <line x1="320" y1="106" x2="604" y2="106" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="330" y="122" font-size="10" fill="#374151" font-weight="bold">S (16)</text>
+  <text x="430" y="122" font-size="10" fill="#374151">[Ne] 3s² 3p⁴</text>
+  <line x1="320" y1="128" x2="604" y2="128" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="330" y="144" font-size="10" fill="#374151" font-weight="bold">Ca (20)</text>
+  <text x="430" y="144" font-size="10" fill="#374151">[Ar] 4s²</text>
+  <line x1="320" y1="150" x2="604" y2="150" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="330" y="166" font-size="10" fill="#374151" font-weight="bold">Fe (26)</text>
+  <text x="430" y="166" font-size="10" fill="#374151">[Ar] 3d⁶ 4s²</text>
+  <line x1="320" y1="172" x2="604" y2="172" stroke="#f1f5f9" stroke-width="1"/>
+  <rect x="320" y="174" width="284" height="22" rx="2" fill="#3d1212"/>
+  <text x="330" y="189" font-size="10" fill="#dc2626" font-weight="bold">Cr (24) ★</text>
+  <text x="430" y="189" font-size="10" fill="#dc2626">[Ar] 3d⁵ 4s¹</text>
+  <line x1="320" y1="196" x2="604" y2="196" stroke="#f1f5f9" stroke-width="1"/>
+  <rect x="320" y="198" width="284" height="22" rx="2" fill="#3d1212"/>
+  <text x="330" y="213" font-size="10" fill="#dc2626" font-weight="bold">Cu (29) ★</text>
+  <text x="430" y="213" font-size="10" fill="#dc2626">[Ar] 3d¹⁰ 4s¹</text>
+  <line x1="320" y1="220" x2="604" y2="220" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="322" y="236" font-size="9" fill="#6b7280" font-weight="bold">Ion configs — remove 4s first:</text>
+  <line x1="320" y1="240" x2="604" y2="240" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="330" y="256" font-size="10" fill="#374151" font-weight="bold">Fe²⁺</text>
+  <text x="430" y="256" font-size="10" fill="#374151">[Ar] 3d⁶  (4s² removed)</text>
+  <line x1="320" y1="260" x2="604" y2="260" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="330" y="276" font-size="10" fill="#374151" font-weight="bold">Fe³⁺</text>
+  <text x="430" y="276" font-size="10" fill="#374151">[Ar] 3d⁵  (4s² + one 3d)</text>
+  <line x1="320" y1="280" x2="604" y2="280" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="330" y="296" font-size="10" fill="#374151" font-weight="bold">Cl⁻</text>
+  <text x="430" y="296" font-size="10" fill="#374151">1s² 2s² 2p⁶ 3s² 3p⁶  (+1e)</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
       id: 'checklist-1-2-7',
       type: 'checklist',
       data: {

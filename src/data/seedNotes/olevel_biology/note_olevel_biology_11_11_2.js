@@ -26,21 +26,21 @@ export const note_olevel_biology_11_11_2 = {
       data: {
         caption: 'Cross-section of an alveolus and surrounding capillary showing gas exchange by diffusion',
         svg: `<svg viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="640" height="340" fill="#f8fafc" rx="12"/>
+  <rect width="640" height="340" fill="#0f172a" rx="12"/>
   <text x="320" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Gas Exchange at an Alveolus</text>
   <!-- Alveolus -->
-  <ellipse cx="230" cy="175" rx="110" ry="110" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
+  <ellipse cx="230" cy="175" rx="110" ry="110" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2.5"/>
   <text x="230" y="145" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">Alveolus</text>
   <text x="230" y="162" text-anchor="middle" font-size="10" fill="#1d4ed8">(air space)</text>
   <!-- O2 in alveolus -->
-  <circle cx="188" cy="190" r="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="188" cy="190" r="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="188" y="194" text-anchor="middle" font-size="8" font-weight="bold" fill="#15803d">O₂</text>
-  <circle cx="215" cy="202" r="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="215" cy="202" r="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="215" y="206" text-anchor="middle" font-size="8" font-weight="bold" fill="#15803d">O₂</text>
-  <circle cx="245" cy="196" r="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="245" cy="196" r="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="245" y="200" text-anchor="middle" font-size="8" font-weight="bold" fill="#15803d">O₂</text>
   <!-- CO2 in alveolus (lower) -->
-  <circle cx="210" cy="218" r="7" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="210" cy="218" r="7" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
   <text x="210" y="222" text-anchor="middle" font-size="7" font-weight="bold" fill="#4338ca">CO₂</text>
   <!-- Alveolar wall (thin line) -->
   <ellipse cx="230" cy="175" rx="110" ry="110" fill="none" stroke="#93c5fd" stroke-width="6"/>

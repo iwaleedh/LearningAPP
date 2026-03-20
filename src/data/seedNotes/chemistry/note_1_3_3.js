@@ -106,14 +106,14 @@ export const note_chemistry_1_3_3 = {
   <text x="120" y="32" text-anchor="middle" fill="#64748b" font-size="10">Most metals (Mg, Al, Fe, Cu...)</text>
 
   <!-- Bottom layer (3 atoms) -->
-  <circle cx="60" cy="130" r="24" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <circle cx="110" cy="130" r="24" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <circle cx="160" cy="130" r="24" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="60" cy="130" r="24" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="110" cy="130" r="24" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="160" cy="130" r="24" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <!-- Middle layer (2 atoms sitting in hollows) -->
-  <circle cx="85" cy="97" r="24" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="135" cy="97" r="24" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="85" cy="97" r="24" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="135" cy="97" r="24" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
   <!-- Top layer (1 atom) -->
-  <circle cx="110" cy="64" r="24" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="110" cy="64" r="24" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,3"/>
   <!-- Labels -->
   <text x="85" y="170" text-anchor="middle" fill="#374151" font-size="10">Layer 1</text>
   <text x="85" y="99" text-anchor="middle" fill="#1e40af" font-size="9" font-weight="bold">centre</text>
@@ -129,17 +129,17 @@ export const note_chemistry_1_3_3 = {
   <text x="380" y="32" text-anchor="middle" fill="#64748b" font-size="10">Group 1 metals (Na, K, Li...)</text>
 
   <!-- Bottom layer (4 atoms, not touching each other) -->
-  <circle cx="300" cy="150" r="20" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="360" cy="150" r="20" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="420" cy="150" r="20" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="480" cy="150" r="20" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="300" cy="150" r="20" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="360" cy="150" r="20" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="420" cy="150" r="20" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="480" cy="150" r="20" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <!-- Gap labels -->
   <text x="330" y="153" text-anchor="middle" fill="#94a3b8" font-size="16">·</text>
   <text x="390" y="150" text-anchor="middle" fill="#94a3b8" font-size="9">gap</text>
   <text x="450" y="153" text-anchor="middle" fill="#94a3b8" font-size="16">·</text>
 
   <!-- Middle centre atom (touches all 4 below and 4 above) -->
-  <circle cx="390" cy="107" r="20" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+  <circle cx="390" cy="107" r="20" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
   <text x="390" y="111" text-anchor="middle" fill="#4c1d95" font-size="9" font-weight="bold">centre</text>
 
   <!-- Lines to bottom neighbours -->
@@ -205,21 +205,21 @@ export const note_chemistry_1_3_3 = {
         svg: `<svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <text x="110" y="16" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">Pure Metal — layers slip</text>
   <!-- Pure metal grid (uniform atoms) -->
-  <circle cx="30" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="70" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="110" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="150" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="190" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="30" cy="90" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="70" cy="90" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="110" cy="90" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="150" cy="90" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="190" cy="90" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="30" cy="130" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="70" cy="130" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="110" cy="130" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="150" cy="130" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="190" cy="130" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="30" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="70" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="110" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="150" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="190" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="30" cy="90" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="70" cy="90" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="110" cy="90" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="150" cy="90" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="190" cy="90" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="30" cy="130" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="70" cy="130" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="110" cy="130" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="150" cy="130" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="190" cy="130" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Slip arrow -->
   <text x="110" y="170" text-anchor="middle" fill="#1e40af" font-size="10">Regular → layers slide freely</text>
   <path d="M 30 155 L 190 155" stroke="#1e40af" stroke-width="1.5" marker-end="url(#arrowB)"/>
@@ -231,28 +231,28 @@ export const note_chemistry_1_3_3 = {
   <!-- Title right -->
   <text x="365" y="16" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="12">Alloy — layers blocked</text>
   <!-- Alloy grid (mixed atom sizes) -->
-  <circle cx="260" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="300" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="340" cy="50" r="24" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
-  <circle cx="385" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="425" cy="50" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="260" cy="92" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="300" cy="92" r="12" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
-  <circle cx="340" cy="92" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="385" cy="92" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="425" cy="92" r="22" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
-  <circle cx="260" cy="132" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="300" cy="132" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="340" cy="132" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="385" cy="132" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
-  <circle cx="425" cy="132" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="260" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="300" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="340" cy="50" r="24" fill="#44370a" stroke="#d97706" stroke-width="2"/>
+  <circle cx="385" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="425" cy="50" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="260" cy="92" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="300" cy="92" r="12" fill="#44370a" stroke="#d97706" stroke-width="2"/>
+  <circle cx="340" cy="92" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="385" cy="92" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="425" cy="92" r="22" fill="#44370a" stroke="#d97706" stroke-width="2"/>
+  <circle cx="260" cy="132" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="300" cy="132" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="340" cy="132" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="385" cy="132" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="425" cy="132" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Labels -->
   <text x="365" y="170" text-anchor="middle" fill="#dc2626" font-size="10">Size irregularity blocks layer sliding</text>
   <text x="365" y="185" text-anchor="middle" fill="#64748b" font-size="9">harder, stronger than pure metals</text>
   <!-- Legend -->
-  <circle cx="255" cy="195" r="7" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <circle cx="255" cy="195" r="7" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="265" y="198" fill="#374151" font-size="9">host metal</text>
-  <circle cx="320" cy="195" r="7" fill="#fde68a" stroke="#d97706" stroke-width="1"/>
+  <circle cx="320" cy="195" r="7" fill="#44370a" stroke="#d97706" stroke-width="1"/>
   <text x="330" y="198" fill="#374151" font-size="9">alloying element (different size)</text>
 </svg>`
       },

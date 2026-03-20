@@ -105,15 +105,15 @@ export const note_olevel_biology_4_4_0 = {
       data: {
         caption: 'Summary of the three main biological molecules: carbohydrates, lipids, and proteins',
         svg: `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
-  <rect width="520" height="280" fill="#f8fafc" rx="12"/>
+  <rect width="520" height="280" fill="#0f172a" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Biological Molecules — Overview</text>
 
   <!-- Carbohydrates box -->
-  <rect x="20" y="35" width="152" height="225" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <rect x="20" y="35" width="152" height="225" rx="10" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <text x="96" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">Carbohydrates</text>
   <text x="96" y="70" text-anchor="middle" font-size="10" fill="#78350f">Elements: C, H, O</text>
   <!-- Glucose hexagon -->
-  <polygon points="96,85 114,95 114,115 96,125 78,115 78,95" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <polygon points="96,85 114,95 114,115 96,125 78,115 78,95" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="96" y="107" text-anchor="middle" font-size="9" fill="#92400e">Glucose</text>
   <text x="96" y="140" text-anchor="middle" font-size="9" fill="#374151">Monomer: glucose</text>
   <text x="96" y="153" text-anchor="middle" font-size="9" fill="#374151">Polymer: starch /</text>
@@ -127,15 +127,15 @@ export const note_olevel_biology_4_4_0 = {
   <text x="96" y="260" text-anchor="middle" font-size="9" fill="#374151">(blue-black = +ve)</text>
 
   <!-- Lipids box -->
-  <rect x="184" y="35" width="152" height="225" rx="10" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+  <rect x="184" y="35" width="152" height="225" rx="10" fill="#4a1040" stroke="#db2777" stroke-width="2"/>
   <text x="260" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#9d174d">Lipids</text>
   <text x="260" y="70" text-anchor="middle" font-size="10" fill="#831843">Elements: C, H, O</text>
   <!-- Glycerol + fatty acids diagram -->
-  <rect x="218" y="78" width="84" height="18" rx="4" fill="#f9a8d4" stroke="#db2777" stroke-width="1"/>
+  <rect x="218" y="78" width="84" height="18" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1"/>
   <text x="260" y="91" text-anchor="middle" font-size="9" fill="#831843">Glycerol</text>
-  <rect x="218" y="100" width="84" height="10" rx="2" fill="#fbcfe8" stroke="#db2777" stroke-width="1"/>
-  <rect x="218" y="113" width="84" height="10" rx="2" fill="#fbcfe8" stroke="#db2777" stroke-width="1"/>
-  <rect x="218" y="126" width="84" height="10" rx="2" fill="#fbcfe8" stroke="#db2777" stroke-width="1"/>
+  <rect x="218" y="100" width="84" height="10" rx="2" fill="#4a1040" stroke="#db2777" stroke-width="1"/>
+  <rect x="218" y="113" width="84" height="10" rx="2" fill="#4a1040" stroke="#db2777" stroke-width="1"/>
+  <rect x="218" y="126" width="84" height="10" rx="2" fill="#4a1040" stroke="#db2777" stroke-width="1"/>
   <text x="260" y="109" text-anchor="middle" font-size="8" fill="#831843">Fatty acid 1</text>
   <text x="260" y="122" text-anchor="middle" font-size="8" fill="#831843">Fatty acid 2</text>
   <text x="260" y="135" text-anchor="middle" font-size="8" fill="#831843">Fatty acid 3</text>
@@ -148,17 +148,17 @@ export const note_olevel_biology_4_4_0 = {
   <text x="260" y="234" text-anchor="middle" font-size="9" fill="#374151">(milky white = +ve)</text>
 
   <!-- Proteins box -->
-  <rect x="348" y="35" width="152" height="225" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="348" y="35" width="152" height="225" rx="10" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
   <text x="424" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#4c1d95">Proteins</text>
   <text x="424" y="70" text-anchor="middle" font-size="10" fill="#3b0764">Elements: C,H,O,N(,S)</text>
   <!-- Amino acids chain -->
-  <circle cx="375" cy="100" r="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="375" cy="100" r="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="375" y="104" text-anchor="middle" font-size="8" fill="#4c1d95">AA</text>
   <line x1="387" y1="100" x2="399" y2="100" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="411" cy="100" r="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="411" cy="100" r="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="411" y="104" text-anchor="middle" font-size="8" fill="#4c1d95">AA</text>
   <line x1="423" y1="100" x2="435" y2="100" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="447" cy="100" r="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="447" cy="100" r="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="447" y="104" text-anchor="middle" font-size="8" fill="#4c1d95">AA</text>
   <text x="424" y="124" text-anchor="middle" font-size="9" fill="#374151">Monomer: amino acid</text>
   <text x="424" y="137" text-anchor="middle" font-size="9" fill="#374151">Joined by peptide bonds</text>

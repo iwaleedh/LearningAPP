@@ -490,7 +490,7 @@ export const note_chemistry_2_10_4 = {
     </style>
   </defs>
   <text x="325" y="22" text-anchor="middle" class="hd" font-size="14">Butan-2-ol → Three Products (E1 Dehydration)</text>
-  <rect x="170" y="34" width="310" height="58" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <rect x="170" y="34" width="310" height="58" rx="6" fill="#1c3a64" stroke="#bfdbfe" stroke-width="1.2"/>
   <text x="325" y="51" text-anchor="middle" class="hd" font-size="11">butan-2-ol carbocation (formed in Step 2 of E1)</text>
   <text x="255" y="80" text-anchor="middle" class="atm">CH&#8323;</text>
   <line x1="272" y1="74" x2="287" y2="74" class="bnd"/>
@@ -506,17 +506,17 @@ export const note_chemistry_2_10_4 = {
   <text x="182" y="128" text-anchor="middle" class="lbl">H&#8314; from &#946;&#8321;</text>
   <path d="M 348 96 Q 415 125 475 150" class="arr"/>
   <text x="427" y="125" text-anchor="middle" class="lbl">H&#8314; from &#946;&#8322;</text>
-  <rect x="10" y="155" width="235" height="60" rx="6" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.2"/>
+  <rect x="10" y="155" width="235" height="60" rx="6" fill="#0a2e1a" stroke="#6ee7b7" stroke-width="1.2"/>
   <text x="127" y="174" text-anchor="middle" class="prd">but-1-ene</text>
   <text x="127" y="193" text-anchor="middle" class="atm" font-size="14">CH&#8322;=CH&#8212;CH&#8322;&#8212;CH&#8323;</text>
   <text x="127" y="208" text-anchor="middle" class="sub">terminal alkene &#8212; 1 structural product</text>
-  <rect x="258" y="155" width="382" height="60" rx="6" fill="#fefce8" stroke="#fde68a" stroke-width="1.2"/>
+  <rect x="258" y="155" width="382" height="60" rx="6" fill="#44370a" stroke="#fde68a" stroke-width="1.2"/>
   <text x="449" y="174" text-anchor="middle" class="prd">but-2-ene (internal alkene)</text>
   <text x="449" y="193" text-anchor="middle" class="atm" font-size="14">CH&#8323;&#8212;CH=CH&#8212;CH&#8323;</text>
   <text x="449" y="208" text-anchor="middle" class="sub">2 stereoisomers &#8212; E/Z geometric isomerism</text>
   <line x1="20" y1="238" x2="630" y2="238" stroke="#d1d5db" stroke-width="1"/>
   <text x="325" y="257" text-anchor="middle" class="hd" font-size="12">Geometric Isomers of But-2-ene (draw with 120&#176; bond angles)</text>
-  <rect x="20" y="265" width="290" height="152" rx="6" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.2"/>
+  <rect x="20" y="265" width="290" height="152" rx="6" fill="#1c3a64" stroke="#7dd3fc" stroke-width="1.2"/>
   <text x="165" y="284" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">cis (Z)-but-2-ene</text>
   <line x1="115" y1="330" x2="215" y2="330" class="bnd"/>
   <line x1="115" y1="337" x2="215" y2="337" class="bnd"/>
@@ -531,7 +531,7 @@ export const note_chemistry_2_10_4 = {
   <line x1="215" y1="337" x2="252" y2="365" class="bnd"/>
   <text x="259" y="370" text-anchor="start" class="atm" font-size="13">H</text>
   <text x="165" y="408" text-anchor="middle" class="sub">Both CH&#8323; groups on the same side</text>
-  <rect x="340" y="265" width="290" height="152" rx="6" fill="#fff7ed" stroke="#fdba74" stroke-width="1.2"/>
+  <rect x="340" y="265" width="290" height="152" rx="6" fill="#532407" stroke="#fdba74" stroke-width="1.2"/>
   <text x="485" y="284" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="13">trans (E)-but-2-ene</text>
   <line x1="435" y1="330" x2="535" y2="330" class="bnd"/>
   <line x1="435" y1="337" x2="535" y2="337" class="bnd"/>

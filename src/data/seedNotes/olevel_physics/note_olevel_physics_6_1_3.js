@@ -19,7 +19,7 @@ export const note_olevel_physics_6_1_3 = {
     { id: 'h-structure', type: 'heading', data: { text: 'Structure of the Sun', level: 2 } },
     { id: 'svg-sun', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 300" width="460" height="300">
   <rect width="460" height="300" fill="#0f172a" rx="8"/>
-  <text x="230" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">Structure of the Sun</text>
+  <text x="230" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Structure of the Sun</text>
   <!-- Corona (outer glow) -->
   <circle cx="190" cy="155" r="125" fill="none" stroke="#fde68a" stroke-width="18" opacity="0.2"/>
   <circle cx="190" cy="155" r="130" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.15"/>
@@ -30,7 +30,7 @@ export const note_olevel_physics_6_1_3 = {
   <circle cx="190" cy="155" r="80" fill="#b45309" opacity="0.5"/>
   <circle cx="190" cy="155" r="80" fill="none" stroke="#f59e0b" stroke-width="2"/>
   <!-- Core -->
-  <circle cx="190" cy="155" r="42" fill="#fbbf24" opacity="0.95"/>
+  <circle cx="190" cy="155" r="42" fill="#78350f" opacity="0.95"/>
   <text x="190" y="151" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Core</text>
   <text x="190" y="163" text-anchor="middle" font-size="9" fill="#1e293b">1.5×10⁷ K</text>
   <!-- Labels with arrows -->
@@ -43,9 +43,9 @@ export const note_olevel_physics_6_1_3 = {
   <text x="300" y="149" font-size="9" fill="#f59e0b">(photons slowly</text>
   <text x="300" y="161" font-size="9" fill="#f59e0b">diffuse outward)</text>
   <line x1="295" y1="200" x2="260" y2="185" stroke="#fde68a" stroke-width="1.5"/>
-  <text x="300" y="197" font-size="10" fill="#fde68a">Photosphere</text>
-  <text x="300" y="209" font-size="9" fill="#fde68a">(visible surface,</text>
-  <text x="300" y="221" font-size="9" fill="#fde68a">≈5800 K)</text>
+  <text x="300" y="197" font-size="10" fill="#44370a">Photosphere</text>
+  <text x="300" y="209" font-size="9" fill="#44370a">(visible surface,</text>
+  <text x="300" y="221" font-size="9" fill="#44370a">≈5800 K)</text>
   <!-- Photosphere ring -->
   <circle cx="190" cy="155" r="108" fill="none" stroke="#fde68a" stroke-width="2.5"/>
 </svg>`, caption: 'Cross-section of the Sun: core (fusion), radiative zone (photon diffusion), convective zone (plasma circulation), photosphere (visible surface), chromosphere and corona (outer atmosphere).' } },

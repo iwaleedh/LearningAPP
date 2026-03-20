@@ -38,7 +38,7 @@ export const note_olevel_chemistry_6_6_6 = {
   <ellipse cx="250" cy="20" rx="20" ry="5" fill="none" stroke="var(--color-text)" stroke-width="3" />
 
   <!-- Solid bottom (NH4Cl) -->
-  <path d="M 233 150 Q 250 145 267 150 L 267 160 A 17 20 0 0 1 233 160 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+  <path d="M 233 150 Q 250 145 267 150 L 267 160 A 17 20 0 0 1 233 160 Z" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
   <text x="250" y="157" font-family="var(--font-sans)" font-size="10" fill="#475569" text-anchor="middle">NH₄Cl</text>
 
   <!-- Heat -->
@@ -50,8 +50,8 @@ export const note_olevel_chemistry_6_6_6 = {
   <path d="M 260 140 Q 255 120 260 100" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrow-up)"/>
   
   <!-- Solid top (NH4Cl) forming on cool walls -->
-  <rect x="230" y="50" width="4" height="30" fill="#e2e8f0"/>
-  <rect x="266" y="50" width="4" height="30" fill="#e2e8f0"/>
+  <rect x="230" y="50" width="4" height="30" fill="#1e293b"/>
+  <rect x="266" y="50" width="4" height="30" fill="#1e293b"/>
   <text x="285" y="65" font-family="var(--font-sans)" font-size="10" fill="#475569" text-anchor="start">White deposit</text>
   <text x="285" y="77" font-family="var(--font-sans)" font-size="10" fill="#475569" text-anchor="start">of NH₄Cl forms</text>
   <path d="M 280 65 L 272 65" fill="none" stroke="#475569" stroke-width="1"/>

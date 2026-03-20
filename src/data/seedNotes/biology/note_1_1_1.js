@@ -69,7 +69,7 @@ export const note_biology_1_1_1 = {
         "id": "svg-diag-1-1-1-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 120' xmlns='http://www.w3.org/2000/svg'><polygon points='50,20 80,40 80,80 50,100 20,80 20,40' fill='#f7fafc' stroke='#2b6cb0' stroke-width='2'/><text x='25' y='115' font-size='10' font-family='sans-serif'>OH (down)</text><text x='35' y='65' font-weight='bold' font-family='sans-serif' font-size='12'>α-glucose</text><polygon points='200,20 230,40 230,80 200,100 170,80 170,40' fill='#f7fafc' stroke='#2b6cb0' stroke-width='2'/><text x='175' y='15' font-size='10' font-family='sans-serif'>OH (up)</text><text x='185' y='65' font-weight='bold' font-family='sans-serif' font-size='12'>β-glucose</text></svg>",
+            "svg": "<svg viewBox='0 0 300 120' xmlns='http://www.w3.org/2000/svg'><polygon points='50,20 80,40 80,80 50,100 20,80 20,40' fill='#0f172a' stroke='#2b6cb0' stroke-width='2'/><text x='25' y='115' font-size='10' font-family='sans-serif'>OH (down)</text><text x='35' y='65' font-weight='bold' font-family='sans-serif' font-size='12'>α-glucose</text><polygon points='200,20 230,40 230,80 200,100 170,80 170,40' fill='#0f172a' stroke='#2b6cb0' stroke-width='2'/><text x='175' y='15' font-size='10' font-family='sans-serif'>OH (up)</text><text x='185' y='65' font-weight='bold' font-family='sans-serif' font-size='12'>β-glucose</text></svg>",
             "caption": "Alpha vs Beta Glucose"
         }
     },

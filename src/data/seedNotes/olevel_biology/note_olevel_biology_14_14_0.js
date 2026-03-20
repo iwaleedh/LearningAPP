@@ -54,18 +54,18 @@ export const note_olevel_biology_14_14_0 = {
         caption: 'Diagram of a spinal reflex arc',
         svg: `<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Spinal cord cross-section -->
-  <ellipse cx="310" cy="150" rx="55" ry="70" fill="#fde8c8" stroke="#c0902a" stroke-width="3"/>
+  <ellipse cx="310" cy="150" rx="55" ry="70" fill="#532407" stroke="#c0902a" stroke-width="3"/>
   <text x="310" y="145" text-anchor="middle" font-weight="bold" fill="#7a3a00" font-size="11">SPINAL</text>
   <text x="310" y="160" text-anchor="middle" font-weight="bold" fill="#7a3a00" font-size="11">CORD</text>
   <!-- Grey matter (H-shape simplified) -->
-  <ellipse cx="310" cy="150" rx="28" ry="42" fill="#f5c48a" stroke="#c0902a" stroke-width="1.5"/>
+  <ellipse cx="310" cy="150" rx="28" ry="42" fill="#532407" stroke="#c0902a" stroke-width="1.5"/>
   <!-- Relay neurone in grey matter -->
   <circle cx="310" cy="150" r="10" fill="#7c3aed" opacity="0.8"/>
   <text x="310" y="207" text-anchor="middle" fill="#7c3aed" font-size="10">Relay neurone</text>
   <line x1="310" y1="197" x2="310" y2="192" stroke="#7c3aed" stroke-width="1"/>
 
   <!-- RECEPTOR (left, skin) -->
-  <rect x="20" y="130" width="90" height="40" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="20" y="130" width="90" height="40" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="2"/>
   <text x="65" y="148" text-anchor="middle" fill="#991b1b" font-weight="bold" font-size="11">RECEPTOR</text>
   <text x="65" y="162" text-anchor="middle" fill="#991b1b" font-size="10">(skin / sense organ)</text>
 
@@ -81,7 +81,7 @@ export const note_olevel_biology_14_14_0 = {
   <text x="225" y="195" fill="#dc2626" font-size="9">(ventral root)</text>
 
   <!-- EFFECTOR (left, muscle) -->
-  <rect x="20" y="168" width="90" height="40" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="20" y="168" width="90" height="40" rx="6" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <text x="65" y="186" text-anchor="middle" fill="#1e3a8a" font-weight="bold" font-size="11">EFFECTOR</text>
   <text x="65" y="200" text-anchor="middle" fill="#1e3a8a" font-size="10">(muscle or gland)</text>
 

@@ -124,7 +124,7 @@ export const note_olevel_physics_4_3_5 = {
     <text x="20" y="12" fill="#6366f1" font-weight="bold" font-size="11">AND</text>
     <line x1="0" y1="35" x2="20" y2="35" stroke="#333" stroke-width="2"/>
     <line x1="0" y1="55" x2="20" y2="55" stroke="#333" stroke-width="2"/>
-    <path d="M20,25 L20,65 C50,65 65,55 65,45 C65,35 50,25 20,25 Z" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <path d="M20,25 L20,65 C50,65 65,55 65,45 C65,35 50,25 20,25 Z" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
     <line x1="65" y1="45" x2="80" y2="45" stroke="#333" stroke-width="2"/>
     <text x="25" y="49" fill="#6366f1">AND</text>
   </g>
@@ -133,7 +133,7 @@ export const note_olevel_physics_4_3_5 = {
     <text x="22" y="12" fill="#10b981" font-weight="bold" font-size="11">OR</text>
     <line x1="0" y1="35" x2="18" y2="35" stroke="#333" stroke-width="2"/>
     <line x1="0" y1="55" x2="18" y2="55" stroke="#333" stroke-width="2"/>
-    <path d="M10,25 Q30,25 65,45 Q30,65 10,65 Q25,45 10,25 Z" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+    <path d="M10,25 Q30,25 65,45 Q30,65 10,65 Q25,45 10,25 Z" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
     <line x1="65" y1="45" x2="80" y2="45" stroke="#333" stroke-width="2"/>
     <text x="28" y="49" fill="#10b981">OR</text>
   </g>
@@ -141,8 +141,8 @@ export const note_olevel_physics_4_3_5 = {
   <g transform="translate(215,10)">
     <text x="18" y="12" fill="#f59e0b" font-weight="bold" font-size="11">NOT</text>
     <line x1="0" y1="45" x2="15" y2="45" stroke="#333" stroke-width="2"/>
-    <polygon points="15,25 55,45 15,65" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
-    <circle cx="59" cy="45" r="5" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
+    <polygon points="15,25 55,45 15,65" fill="#44370a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="59" cy="45" r="5" fill="#44370a" stroke="#f59e0b" stroke-width="2"/>
     <line x1="64" y1="45" x2="80" y2="45" stroke="#333" stroke-width="2"/>
     <text x="22" y="49" fill="#f59e0b">NOT</text>
   </g>
@@ -151,8 +151,8 @@ export const note_olevel_physics_4_3_5 = {
     <text x="18" y="12" fill="#ef4444" font-weight="bold" font-size="11">NAND</text>
     <line x1="0" y1="35" x2="20" y2="35" stroke="#333" stroke-width="2"/>
     <line x1="0" y1="55" x2="20" y2="55" stroke="#333" stroke-width="2"/>
-    <path d="M20,25 L20,65 C50,65 63,55 63,45 C63,35 50,25 20,25 Z" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
-    <circle cx="67" cy="45" r="5" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <path d="M20,25 L20,65 C50,65 63,55 63,45 C63,35 50,25 20,25 Z" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="67" cy="45" r="5" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
     <line x1="72" y1="45" x2="85" y2="45" stroke="#333" stroke-width="2"/>
     <text x="25" y="49" fill="#ef4444">NAND</text>
   </g>
@@ -161,8 +161,8 @@ export const note_olevel_physics_4_3_5 = {
     <text x="22" y="12" fill="#8b5cf6" font-weight="bold" font-size="11">NOR</text>
     <line x1="0" y1="35" x2="18" y2="35" stroke="#333" stroke-width="2"/>
     <line x1="0" y1="55" x2="18" y2="55" stroke="#333" stroke-width="2"/>
-    <path d="M10,25 Q30,25 63,45 Q30,65 10,65 Q25,45 10,25 Z" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
-    <circle cx="67" cy="45" r="5" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M10,25 Q30,25 63,45 Q30,65 10,65 Q25,45 10,25 Z" fill="#2d1b69" stroke="#8b5cf6" stroke-width="2"/>
+    <circle cx="67" cy="45" r="5" fill="#2d1b69" stroke="#8b5cf6" stroke-width="2"/>
     <line x1="72" y1="45" x2="85" y2="45" stroke="#333" stroke-width="2"/>
     <text x="22" y="49" fill="#8b5cf6">NOR</text>
   </g>

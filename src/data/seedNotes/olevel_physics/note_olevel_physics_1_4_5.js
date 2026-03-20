@@ -30,7 +30,7 @@ export const note_olevel_physics_1_4_5 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="220" fill="#f0f4ff" rx="10"/>
+  <rect width="440" height="220" fill="#1c3a64" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Circular Motion and Centripetal Force</text>
   <!-- Circle path -->
   <circle cx="180" cy="115" r="75" fill="none" stroke="#d1d5db" stroke-width="2" stroke-dasharray="6,4"/>
@@ -56,7 +56,7 @@ export const note_olevel_physics_1_4_5 = {
   <polygon points="195,115 203,111 203,119" fill="#ef4444"/>
   <text x="205" y="108" font-size="11" fill="#ef4444">F<tspan baseline-shift="sub" font-size="9">c</tspan></text>
   <!-- Examples column -->
-  <rect x="310" y="40" width="120" height="150" fill="white" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+  <rect x="310" y="40" width="120" height="150" fill="#1e293b" stroke="#e5e7eb" stroke-width="1" rx="6"/>
   <text x="370" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Examples</text>
   <text x="320" y="78" font-size="10" fill="#374151">🌎 Satellite</text>
   <text x="320" y="94" font-size="10" fill="#6b7280">Gravity = centripetal</text>

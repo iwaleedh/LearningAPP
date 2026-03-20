@@ -54,7 +54,7 @@ export const note_biology_1_2_13 = {
         "id": "svg-diag-1-2-13-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,80 L120,80 L160,40 L280,40' fill='none' stroke='#2b6cb0' stroke-width='3'/><path d='M150,110 L280,110' fill='none' stroke='#2b6cb0' stroke-width='3'/><path d='M140,70 L280,70' fill='none' stroke='#e53e3e' stroke-width='3'/><rect x='110' y='30' width='80' height='90' fill='#c6f6d5' opacity='0.6' rx='10'/><text x='115' y='20' font-size='10'>RNA Polymerase</text><text x='290' y='75' font-size='10' fill='#c53030'>mRNA</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,80 L120,80 L160,40 L280,40' fill='none' stroke='#2b6cb0' stroke-width='3'/><path d='M150,110 L280,110' fill='none' stroke='#2b6cb0' stroke-width='3'/><path d='M140,70 L280,70' fill='none' stroke='#e53e3e' stroke-width='3'/><rect x='110' y='30' width='80' height='90' fill='#0a2e1a' opacity='0.6' rx='10'/><text x='115' y='20' font-size='10'>RNA Polymerase</text><text x='290' y='75' font-size='10' fill='#c53030'>mRNA</text></svg>",
             "caption": "Transcription (DNA to mRNA)"
         }
     },
@@ -62,7 +62,7 @@ export const note_biology_1_2_13 = {
         "id": "svg-diag-1-2-13-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='90' width='250' height='10' fill='#e53e3e'/><ellipse cx='150' cy='100' rx='60' ry='30' fill='#e2e8f0' stroke='#a0aec0'/><text x='125' y='125' font-size='12'>Ribosome</text><path d='M130,50 L140,70 L150,50 Z' fill='#f6ad55'/><circle cx='140' cy='30' r='10' fill='#9f7aea'/><text x='155' y='35' font-size='10'>Amino Acid</text><text x='60' y='115' font-size='10' fill='#c53030'>mRNA</text><text x='100' y='65' font-size='10'>tRNA</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='90' width='250' height='10' fill='#e53e3e'/><ellipse cx='150' cy='100' rx='60' ry='30' fill='#1e293b' stroke='#a0aec0'/><text x='125' y='125' font-size='12'>Ribosome</text><path d='M130,50 L140,70 L150,50 Z' fill='#f6ad55'/><circle cx='140' cy='30' r='10' fill='#9f7aea'/><text x='155' y='35' font-size='10'>Amino Acid</text><text x='60' y='115' font-size='10' fill='#c53030'>mRNA</text><text x='100' y='65' font-size='10'>tRNA</text></svg>",
             "caption": "Translation (tRNA & Ribosome)"
         }
     }

@@ -55,7 +55,7 @@ export const note_olevel_biology_19_19_4 = {
       data: {
         caption: 'Predator-prey population cycle (e.g. lynx and hare)',
         svg: `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="280" fill="#f0fdf4" rx="12"/>
+  <rect width="520" height="280" fill="#0a2e1a" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Predator-Prey Population Cycle</text>
   <!-- Axes -->
   <line x1="60" y1="230" x2="490" y2="230" stroke="#374151" stroke-width="2"/>

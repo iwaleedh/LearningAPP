@@ -56,15 +56,15 @@ export const note_olevel_biology_2_2_0 = {
       data: {
         caption: 'Labelled diagrams of animal cell (left) and plant cell (right)',
         svg: `<svg viewBox="0 0 580 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="580" height="320" fill="#f0fdf4" rx="12"/>
+  <rect width="580" height="320" fill="#0a2e1a" rx="12"/>
   <!-- ANIMAL CELL -->
   <text x="140" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">Animal Cell</text>
-  <ellipse cx="140" cy="155" rx="110" ry="90" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="140" cy="155" rx="110" ry="90" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <!-- nucleus -->
-  <ellipse cx="125" cy="145" rx="38" ry="28" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+  <ellipse cx="125" cy="145" rx="38" ry="28" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <text x="125" y="149" text-anchor="middle" font-size="9" fill="#1e3a8a" font-weight="bold">Nucleus</text>
   <!-- mitochondria -->
-  <ellipse cx="200" cy="120" rx="20" ry="10" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="200" cy="120" rx="20" ry="10" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="226" y="118" font-size="9" fill="#92400e">Mitochondria</text>
   <!-- ribosomes -->
   <circle cx="170" cy="185" r="4" fill="#f87171"/>
@@ -79,25 +79,25 @@ export const note_olevel_biology_2_2_0 = {
 
   <!-- PLANT CELL -->
   <text x="430" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Plant Cell</text>
-  <rect x="305" y="48" width="240" height="198" rx="4" fill="#d1fae5" stroke="#166534" stroke-width="3"/>
+  <rect x="305" y="48" width="240" height="198" rx="4" fill="#0a2e1a" stroke="#166534" stroke-width="3"/>
   <!-- inner membrane -->
-  <rect x="314" y="57" width="222" height="181" rx="2" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="314" y="57" width="222" height="181" rx="2" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <!-- nucleus -->
-  <ellipse cx="390" cy="140" rx="38" ry="28" fill="#a7f3d0" stroke="#059669" stroke-width="2"/>
+  <ellipse cx="390" cy="140" rx="38" ry="28" fill="#065f46" stroke="#059669" stroke-width="2"/>
   <text x="390" y="144" text-anchor="middle" font-size="9" fill="#065f46" font-weight="bold">Nucleus</text>
   <!-- chloroplasts -->
-  <ellipse cx="470" cy="100" rx="18" ry="9" fill="#4ade80" stroke="#166534" stroke-width="1.5"/>
-  <ellipse cx="470" cy="130" rx="18" ry="9" fill="#4ade80" stroke="#166534" stroke-width="1.5"/>
+  <ellipse cx="470" cy="100" rx="18" ry="9" fill="#0a4a1a" stroke="#166534" stroke-width="1.5"/>
+  <ellipse cx="470" cy="130" rx="18" ry="9" fill="#0a4a1a" stroke="#166534" stroke-width="1.5"/>
   <text x="494" y="116" font-size="9" fill="#166534">Chloroplasts</text>
   <!-- vacuole -->
-  <ellipse cx="430" cy="185" rx="42" ry="26" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <ellipse cx="430" cy="185" rx="42" ry="26" fill="#0c4a6e" stroke="#0284c7" stroke-width="1.5"/>
   <text x="430" y="189" text-anchor="middle" font-size="9" fill="#0c4a6e">Vacuole</text>
   <!-- cell wall label -->
   <text x="290" y="148" font-size="9" fill="#166534" text-anchor="end">Cell</text>
   <text x="292" y="160" font-size="9" fill="#166534" text-anchor="end">wall</text>
   <line x1="295" y1="154" x2="310" y2="148" stroke="#166534" stroke-width="1"/>
   <!-- mitochondria -->
-  <ellipse cx="350" cy="100" rx="16" ry="8" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="350" cy="100" rx="16" ry="8" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="330" y="86" font-size="9" fill="#92400e">Mitochondria</text>
 </svg>`
       }

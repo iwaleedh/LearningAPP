@@ -54,17 +54,17 @@ export const note_olevel_chemistry_9_9_6 = {
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Water -->
-  <path d="M 0 100 Q 125 110, 250 100 T 500 100 L 500 240 L 0 240 Z" fill="#93c5fd" opacity="0.3" />
+  <path d="M 0 100 Q 125 110, 250 100 T 500 100 L 500 240 L 0 240 Z" fill="#1250a0" opacity="0.3" />
   <text x="450" y="210" font-family="var(--font-sans)" font-size="12" fill="#3b82f6" font-style="italic">Seawater</text>
 
   <!-- Ship Hull -->
   <path d="M 50 20 L 50 160 C 50 190, 80 220, 150 220 L 400 220 C 470 220, 480 160, 480 80 L 480 20 Z" fill="#94a3b8" stroke="#475569" stroke-width="4"/>
-  <text x="265" y="60" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">Steel Ship Hull (Iron)</text>
+  <text x="265" y="60" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Steel Ship Hull (Iron)</text>
 
   <!-- Sacrificial Blocks -->
-  <rect x="120" y="160" width="30" height="15" fill="#facc15" stroke="#ca8a04" stroke-width="2" rx="2" />
-  <rect x="235" y="180" width="30" height="15" fill="#facc15" stroke="#ca8a04" stroke-width="2" rx="2" />
-  <rect x="350" y="160" width="30" height="15" fill="#facc15" stroke="#ca8a04" stroke-width="2" rx="2" />
+  <rect x="120" y="160" width="30" height="15" fill="#532407" stroke="#ca8a04" stroke-width="2" rx="2" />
+  <rect x="235" y="180" width="30" height="15" fill="#532407" stroke="#ca8a04" stroke-width="2" rx="2" />
+  <rect x="350" y="160" width="30" height="15" fill="#532407" stroke="#ca8a04" stroke-width="2" rx="2" />
   
   <!-- Labels -->
   <path d="M 250 180 L 250 125 L 300 125" fill="none" stroke="var(--color-text)" stroke-width="1.5" />

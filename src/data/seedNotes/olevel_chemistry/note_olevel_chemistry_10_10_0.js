@@ -21,7 +21,7 @@ export const note_olevel_chemistry_10_10_0 = {
 
   <!-- Copper Sulfate Test -->
   <!-- Before -->
-  <rect x="50" y="40" width="80" height="40" rx="4" fill="#f4f4f5" stroke="#a1a1aa" stroke-width="2"/>
+  <rect x="50" y="40" width="80" height="40" rx="4" fill="#0f172a" stroke="#a1a1aa" stroke-width="2"/>
   <text x="90" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#52525b" text-anchor="middle">White</text>
   <text x="90" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Anhydrous</text>
   <text x="90" y="110" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">CuSO₄</text>
@@ -32,14 +32,14 @@ export const note_olevel_chemistry_10_10_0 = {
 
   <!-- After -->
   <rect x="190" y="40" width="80" height="40" rx="4" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-  <text x="230" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Blue</text>
+  <text x="230" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Blue</text>
   <text x="230" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Hydrated</text>
   <text x="230" y="110" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">CuSO₄·5H₂O</text>
 
   <!-- Cobalt Chloride Test -->
   <!-- Before -->
   <rect x="290" y="120" width="60" height="60" fill="#60a5fa" stroke="#2563eb" stroke-width="2"/>
-  <text x="320" y="155" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Blue</text>
+  <text x="320" y="155" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Blue</text>
   <text x="320" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">CoCl₂ paper</text>
 
   <!-- Arrow -->
@@ -48,7 +48,7 @@ export const note_olevel_chemistry_10_10_0 = {
 
   <!-- After -->
   <rect x="420" y="120" width="60" height="60" fill="#f472b6" stroke="#db2777" stroke-width="2"/>
-  <text x="450" y="155" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Pink</text>
+  <text x="450" y="155" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Pink</text>
   <text x="450" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Hydrated paper</text>
 
   <defs>

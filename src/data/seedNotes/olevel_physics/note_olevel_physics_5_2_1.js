@@ -38,11 +38,11 @@ export const note_olevel_physics_5_2_1 = {
       ['Ionising ability', 'High', 'Moderate', 'Low'],
     ]}},
     { id: 'svg-penetration', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240">
-  <rect width="480" height="240" fill="#f8fafc" rx="8"/>
+  <rect width="480" height="240" fill="#0f172a" rx="8"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Penetrating Power of α, β and γ Radiation</text>
   <!-- Source -->
   <rect x="20" y="60" width="50" height="120" rx="6" fill="#475569"/>
-  <text x="45" y="118" text-anchor="middle" font-size="10" fill="white">Source</text>
+  <text x="45" y="118" text-anchor="middle" font-size="10" fill="#1e293b">Source</text>
   <!-- Alpha arrow -->
   <line x1="70" y1="80" x2="120" y2="80" stroke="#ef4444" stroke-width="2.5" marker-end="url(#a1)"/>
   <text x="95" y="72" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="bold">α</text>
@@ -53,7 +53,7 @@ export const note_olevel_physics_5_2_1 = {
   <line x1="70" y1="160" x2="390" y2="160" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#a3)"/>
   <text x="235" y="152" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="bold">γ</text>
   <!-- Paper barrier -->
-  <rect x="120" y="55" width="10" height="130" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="120" y="55" width="10" height="130" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="125" y="200" text-anchor="middle" font-size="8" fill="#d97706">paper</text>
   <!-- Alpha blocked here by paper - X mark -->
   <text x="140" y="85" font-size="12" fill="#ef4444">✕</text>

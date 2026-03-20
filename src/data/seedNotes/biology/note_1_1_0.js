@@ -63,7 +63,7 @@ export const note_biology_1_1_0 = {
         "id": "svg-diag-1-1-0-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='60' r='30' fill='#4ba3e3'/><circle cx='60' cy='100' r='15' fill='#e2e8f0'/><circle cx='140' cy='100' r='15' fill='#e2e8f0'/><line x1='80' y1='80' x2='65' y2='95' stroke='#333' stroke-width='4'/><line x1='120' y1='80' x2='135' y2='95' stroke='#333' stroke-width='4'/><text x='95' y='65' fill='white' font-weight='bold' font-size='20'>O</text><text x='53' y='105' font-weight='bold' font-size='14'>H</text><text x='133' y='105' font-weight='bold' font-size='14'>H</text><text x='90' y='20' fill='#2b6cb0' font-weight='bold' font-size='16'>δ-</text><text x='35' y='130' fill='#c53030' font-weight='bold' font-size='16'>δ+</text><text x='150' y='130' fill='#c53030' font-weight='bold' font-size='16'>δ+</text></svg>",
+            "svg": "<svg viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='60' r='30' fill='#4ba3e3'/><circle cx='60' cy='100' r='15' fill='#1e293b'/><circle cx='140' cy='100' r='15' fill='#1e293b'/><line x1='80' y1='80' x2='65' y2='95' stroke='#333' stroke-width='4'/><line x1='120' y1='80' x2='135' y2='95' stroke='#333' stroke-width='4'/><text x='95' y='65' fill='#1e293b' font-weight='bold' font-size='20'>O</text><text x='53' y='105' font-weight='bold' font-size='14'>H</text><text x='133' y='105' font-weight='bold' font-size='14'>H</text><text x='90' y='20' fill='#2b6cb0' font-weight='bold' font-size='16'>δ-</text><text x='35' y='130' fill='#c53030' font-weight='bold' font-size='16'>δ+</text><text x='150' y='130' fill='#c53030' font-weight='bold' font-size='16'>δ+</text></svg>",
             "caption": "Structure of Water Molecule"
         }
     },
@@ -71,7 +71,7 @@ export const note_biology_1_1_0 = {
         "id": "svg-diag-1-1-0-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='50' r='20' fill='#4ba3e3'/><circle cx='50' cy='80' r='10' fill='#e2e8f0'/><circle cx='110' cy='80' r='10' fill='#e2e8f0'/><text x='74' y='56' fill='white' font-size='14'>O</text><circle cx='220' cy='90' r='20' fill='#4ba3e3'/><circle cx='190' cy='60' r='10' fill='#e2e8f0'/><circle cx='250' cy='60' r='10' fill='#e2e8f0'/><text x='214' y='96' fill='white' font-size='14'>O</text><line x1='118' y1='80' x2='182' y2='66' stroke='#e53e3e' stroke-width='3' stroke-dasharray='5,5'/><text x='110' y='50' fill='#e53e3e' font-size='12' font-weight='bold'>Hydrogen bond</text></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='50' r='20' fill='#4ba3e3'/><circle cx='50' cy='80' r='10' fill='#1e293b'/><circle cx='110' cy='80' r='10' fill='#1e293b'/><text x='74' y='56' fill='#1e293b' font-size='14'>O</text><circle cx='220' cy='90' r='20' fill='#4ba3e3'/><circle cx='190' cy='60' r='10' fill='#1e293b'/><circle cx='250' cy='60' r='10' fill='#1e293b'/><text x='214' y='96' fill='#1e293b' font-size='14'>O</text><line x1='118' y1='80' x2='182' y2='66' stroke='#e53e3e' stroke-width='3' stroke-dasharray='5,5'/><text x='110' y='50' fill='#e53e3e' font-size='12' font-weight='bold'>Hydrogen bond</text></svg>",
             "caption": "Hydrogen Bonding"
         }
     }

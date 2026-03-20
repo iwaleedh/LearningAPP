@@ -19,7 +19,7 @@ export const note_physics_4_17_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <circle cx="200" cy="100" r="70" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
   <path d="M 200 100 L 270 100" stroke="#cbd5e1" stroke-width="2"/>
   <path d="M 200 100 L 249 50" stroke="#3b82f6" stroke-width="3"/>
@@ -38,10 +38,10 @@ export const note_physics_4_17_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Angular Velocity (ω)</text>
   <text x="200" y="80" font-family="Arial" font-size="14" fill="#334155" text-anchor="middle">Rate of change of angular displacement</text>
-  <rect x="120" y="110" width="160" height="60" fill="#ecfdf5" rx="8" stroke="#10b981" stroke-width="2"/>
+  <rect x="120" y="110" width="160" height="60" fill="#0a2e1a" rx="8" stroke="#10b981" stroke-width="2"/>
   <text x="200" y="145" font-family="Arial" font-size="20" fill="#047857" font-weight="bold" text-anchor="middle">ω = 2π / T = 2πf</text>
   <text x="200" y="190" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">Units: rad s⁻¹</text>
 </svg>`,
@@ -61,7 +61,7 @@ export const note_physics_4_17_1 = {
       <path d="M0,0 L0,8 L8,4 Z" fill="#ef4444"/>
     </marker>
   </defs>
-  <rect x="0" y="0" width="480" height="260" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="480" height="260" fill="#0f172a" rx="8"/>
   <circle cx="220" cy="120" r="90" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
   <circle cx="220" cy="120" r="5" fill="#1e293b"/>
   <text x="226" y="125" font-family="Arial" font-size="12" fill="#1e293b">centre</text>
@@ -71,7 +71,7 @@ export const note_physics_4_17_1 = {
   <text x="346" y="82" font-family="Arial" font-size="12" fill="#10b981" font-weight="bold">v (tangential)</text>
   <line x1="284" y1="56" x2="237" y2="95" stroke="#ef4444" stroke-width="2.5" marker-end="url(#arrowR)"/>
   <text x="165" y="40" font-family="Arial" font-size="12" fill="#ef4444" font-weight="bold">a = v²/r (toward centre)</text>
-  <rect x="10" y="218" width="460" height="32" fill="#fef3c7" rx="6" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="10" y="218" width="460" height="32" fill="#78350f" rx="6" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="240" y="239" font-family="Arial" font-size="12" fill="#92400e" font-weight="bold" text-anchor="middle">F = mv²/r = mω²r   |   a = v²/r = ω²r   (toward centre)</text>
   <text x="20" y="210" font-family="Arial" font-size="11" fill="#f59e0b" font-weight="bold">Centripetal force always points toward centre</text>
 </svg>`,

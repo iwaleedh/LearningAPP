@@ -65,7 +65,7 @@ export const note_olevel_chemistry_11_11_2 = {
   <!-- Outline -->
   <path d="M 340 70 L 340 180 Q 340 200, 360 200 Q 380 200, 380 180 L 380 70" fill="none" stroke="#64748b" stroke-width="3"/>
   <!-- Liquid Liquid -->
-  <path d="M 342 130 L 378 130 L 378 180 Q 378 198, 360 198 Q 342 198, 342 180 Z" fill="#e2e8f0" opacity="0.6"/>
+  <path d="M 342 130 L 378 130 L 378 180 Q 378 198, 360 198 Q 342 198, 342 180 Z" fill="#1e293b" opacity="0.6"/>
   
   <text x="360" y="225" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Alkene</text>
   <text x="360" y="240" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(Unsaturated)</text>

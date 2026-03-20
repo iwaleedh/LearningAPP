@@ -29,14 +29,14 @@ export const note_olevel_physics_2_3_5 = {
   <!-- Leslie's cube (isometric-style) -->
   <!-- Front face (dull black) -->
   <rect x="130" y="90" width="80" height="80" fill="#222" stroke="#444" stroke-width="2"/>
-  <text x="148" y="135" fill="white" font-size="10" font-weight="bold">Dull Black</text>
+  <text x="148" y="135" fill="#1e293b" font-size="10" font-weight="bold">Dull Black</text>
 
   <!-- Right face (shiny silver) -->
-  <polygon points="210,90 250,70 250,150 210,170" fill="#e8e8e8" stroke="#aaa" stroke-width="2"/>
+  <polygon points="210,90 250,70 250,150 210,170" fill="#1e293b" stroke="#aaa" stroke-width="2"/>
   <text x="217" y="128" fill="#555" font-size="9">Shiny</text>
 
   <!-- Top face -->
-  <polygon points="130,90 170,70 250,70 210,90" fill="#cccccc" stroke="#888" stroke-width="1.5"/>
+  <polygon points="130,90 170,70 250,70 210,90" fill="#1e293b" stroke="#888" stroke-width="1.5"/>
 
   <!-- Left face (dull grey) — suggested label -->
   <text x="80" y="135" fill="#667" font-size="9">(White face</text>
@@ -56,13 +56,13 @@ export const note_olevel_physics_2_3_5 = {
   <line x1="250" y1="120" x2="305" y2="120" stroke="#ffaa88" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arl2)"/>
 
   <!-- Thermopile left of black face -->
-  <rect x="22" y="115" width="42" height="32" rx="4" fill="#f5f5f5" stroke="#888" stroke-width="1.5"/>
+  <rect x="22" y="115" width="42" height="32" rx="4" fill="#0f172a" stroke="#888" stroke-width="1.5"/>
   <text x="28" y="128" fill="#333" font-size="9">Thermo-</text>
   <text x="30" y="140" fill="#333" font-size="9">pile</text>
   <text x="20" y="160" fill="#e05020" font-size="9">High reading</text>
 
   <!-- Thermopile right of shiny face -->
-  <rect x="316" y="105" width="42" height="32" rx="4" fill="#f5f5f5" stroke="#888" stroke-width="1.5"/>
+  <rect x="316" y="105" width="42" height="32" rx="4" fill="#0f172a" stroke="#888" stroke-width="1.5"/>
   <text x="322" y="118" fill="#333" font-size="9">Thermo-</text>
   <text x="324" y="130" fill="#333" font-size="9">pile</text>
   <text x="314" y="150" fill="#888" font-size="9">Low reading</text>

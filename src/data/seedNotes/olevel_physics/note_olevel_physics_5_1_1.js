@@ -22,31 +22,31 @@ export const note_olevel_physics_5_1_1 = {
     { id: 'eq-nuclide', type: 'equation', data: { html: '<span style="font-size:1.5em; line-height:1.8"><sup>A</sup><sub style="margin-left:-0.5em">Z</sub>&thinsp;X</span>', caption: 'Nuclide notation: A (mass number, top) and Z (proton number, bottom) of element symbol X' } },
     { id: 'para-examples', type: 'paragraph', data: { text: '<strong>Examples:</strong> Carbon-12 → <sup>12</sup><sub>6</sub>C: 6 protons, 6 neutrons, 6 electrons. Sodium-23 → <sup>23</sup><sub>11</sub>Na: 11 protons, 12 neutrons, 11 electrons. Uranium-238 → <sup>238</sup><sub>92</sub>U: 92 protons, 146 neutrons, 92 electrons.' } },
     { id: 'svg-atom', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="300">
-  <rect width="420" height="300" fill="#f0f9ff" rx="8"/>
+  <rect width="420" height="300" fill="#1c3a64" rx="8"/>
   <text x="210" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Carbon-12 Atom Structure</text>
   <!-- Electron orbits -->
   <ellipse cx="210" cy="165" rx="130" ry="42" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5"/>
   <ellipse cx="210" cy="165" rx="88" ry="28" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5" transform="rotate(-50,210,165)"/>
   <ellipse cx="210" cy="165" rx="88" ry="28" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5" transform="rotate(50,210,165)"/>
   <!-- Nucleus background -->
-  <circle cx="210" cy="165" r="26" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/>
+  <circle cx="210" cy="165" r="26" fill="#3d1212" stroke="#fca5a5" stroke-width="1.5"/>
   <!-- Protons -->
   <circle cx="200" cy="157" r="9" fill="#ef4444" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="200" y="161" text-anchor="middle" font-size="9" fill="white" font-weight="bold">p⁺</text>
+  <text x="200" y="161" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">p⁺</text>
   <circle cx="219" cy="157" r="9" fill="#ef4444" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="219" y="161" text-anchor="middle" font-size="9" fill="white" font-weight="bold">p⁺</text>
+  <text x="219" y="161" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">p⁺</text>
   <!-- Neutrons -->
   <circle cx="200" cy="175" r="9" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
-  <text x="200" y="179" text-anchor="middle" font-size="9" fill="white" font-weight="bold">n</text>
+  <text x="200" y="179" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">n</text>
   <circle cx="219" cy="175" r="9" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
-  <text x="219" y="179" text-anchor="middle" font-size="9" fill="white" font-weight="bold">n</text>
+  <text x="219" y="179" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">n</text>
   <!-- Electrons -->
   <circle cx="340" cy="165" r="7" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="340" y="169" text-anchor="middle" font-size="8" fill="white">e⁻</text>
+  <text x="340" y="169" text-anchor="middle" font-size="8" fill="#1e293b">e⁻</text>
   <circle cx="80" cy="165" r="7" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="80" y="169" text-anchor="middle" font-size="8" fill="white">e⁻</text>
+  <text x="80" y="169" text-anchor="middle" font-size="8" fill="#1e293b">e⁻</text>
   <circle cx="163" cy="125" r="7" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="163" y="129" text-anchor="middle" font-size="8" fill="white">e⁻</text>
+  <text x="163" y="129" text-anchor="middle" font-size="8" fill="#1e293b">e⁻</text>
   <!-- Labels -->
   <text x="258" y="155" font-size="10" fill="#ef4444" font-weight="bold">Nucleus</text>
   <text x="258" y="168" font-size="9" fill="#64748b">6 protons (red)</text>
@@ -55,7 +55,7 @@ export const note_olevel_physics_5_1_1 = {
   <text x="355" y="148" font-size="10" fill="#3b82f6">Electrons</text>
   <text x="355" y="161" font-size="9" fill="#3b82f6">(6 orbiting)</text>
   <!-- Label box -->
-  <rect x="20" y="38" width="90" height="60" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="20" y="38" width="90" height="60" rx="6" fill="#1e293b" stroke="#e2e8f0" stroke-width="1"/>
   <text x="65" y="56" text-anchor="middle" font-size="18" fill="#1e293b" font-weight="bold">¹²C</text>
   <text x="42" y="72" text-anchor="middle" font-size="11" fill="#64748b">₆</text>
   <text x="65" y="88" text-anchor="middle" font-size="9" fill="#64748b">Z=6, A=12, N=6</text>

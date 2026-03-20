@@ -61,89 +61,89 @@ export const note_chemistry_1_3_4 = {
   <!-- LINEAR: CO₂ -->
   <text x="68" y="15" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">Linear</text>
   <text x="68" y="27" text-anchor="middle" fill="#64748b" font-size="10">180°</text>
-  <circle cx="20" cy="70" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="20" cy="70" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="20" y="74" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <line x1="34" y1="70" x2="54" y2="70" stroke="#334155" stroke-width="2"/>
-  <circle cx="68" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="68" cy="70" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="68" y="74" text-anchor="middle" fill="#1e40af" font-size="10">C</text>
   <line x1="82" y1="70" x2="102" y2="70" stroke="#334155" stroke-width="2"/>
-  <circle cx="116" cy="70" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="116" cy="70" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="116" y="74" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <text x="68" y="100" text-anchor="middle" fill="#64748b" font-size="10">e.g. CO₂, BeCl₂</text>
 
   <!-- TRIGONAL PLANAR: BF₃ -->
   <text x="220" y="15" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">Trigonal Planar</text>
   <text x="220" y="27" text-anchor="middle" fill="#64748b" font-size="10">120°</text>
-  <circle cx="220" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="220" cy="70" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="220" y="74" text-anchor="middle" fill="#1e40af" font-size="10">B</text>
   <line x1="220" y1="56" x2="220" y2="36" stroke="#334155" stroke-width="2"/>
-  <circle cx="220" cy="24" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="220" cy="24" r="12" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="220" y="42" text-anchor="middle" fill="#166534" font-size="10">F</text>
   <line x1="208" y1="77" x2="190" y2="93" stroke="#334155" stroke-width="2"/>
-  <circle cx="181" cy="100" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="181" cy="100" r="12" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="181" y="104" text-anchor="middle" fill="#166534" font-size="10">F</text>
   <line x1="232" y1="77" x2="250" y2="93" stroke="#334155" stroke-width="2"/>
-  <circle cx="259" cy="100" r="12" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="259" cy="100" r="12" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="259" y="104" text-anchor="middle" fill="#166534" font-size="10">F</text>
   <text x="220" y="120" text-anchor="middle" fill="#64748b" font-size="10">e.g. BF₃, SO₃</text>
 
   <!-- TETRAHEDRAL: CH₄ -->
   <text x="370" y="15" text-anchor="middle" fill="#7c3aed" font-weight="bold" font-size="12">Tetrahedral</text>
   <text x="370" y="27" text-anchor="middle" fill="#64748b" font-size="10">109.5°</text>
-  <circle cx="370" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="370" cy="70" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="370" y="74" text-anchor="middle" fill="#1e40af" font-size="10">C</text>
   <line x1="370" y1="56" x2="370" y2="36" stroke="#334155" stroke-width="2"/>
-  <circle cx="370" cy="24" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="370" cy="24" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="370" y="42" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <line x1="358" y1="63" x2="335" y2="50" stroke="#334155" stroke-width="2"/>
-  <circle cx="325" cy="44" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="325" cy="44" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="325" y="48" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <line x1="382" y1="63" x2="405" y2="50" stroke="#334155" stroke-width="2"/>
-  <circle cx="415" cy="44" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="415" cy="44" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="415" y="48" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <line x1="370" y1="84" x2="370" y2="104" stroke="#334155" stroke-width="2" stroke-dasharray="4,2"/>
-  <circle cx="370" cy="116" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="370" cy="116" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="370" y="120" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <text x="370" y="136" text-anchor="middle" fill="#64748b" font-size="10">e.g. CH₄, NH₄⁺</text>
 
   <!-- PYRAMIDAL: NH₃ -->
   <text x="525" y="15" text-anchor="middle" fill="#b45309" font-weight="bold" font-size="12">Pyramidal</text>
   <text x="525" y="27" text-anchor="middle" fill="#64748b" font-size="10">107°</text>
-  <circle cx="525" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="525" cy="70" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="525" y="74" text-anchor="middle" fill="#1e40af" font-size="10">N</text>
   <!-- Lone pair arc -->
   <path d="M515,58 Q525,45 535,58" fill="none" stroke="#f59e0b" stroke-width="2"/>
   <text x="525" y="44" text-anchor="middle" fill="#b45309" font-size="9">LP</text>
   <line x1="513" y1="77" x2="495" y2="98" stroke="#334155" stroke-width="2"/>
-  <circle cx="487" cy="107" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="487" cy="107" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="487" y="111" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <line x1="525" y1="84" x2="525" y2="104" stroke="#334155" stroke-width="2"/>
-  <circle cx="525" cy="116" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="525" cy="116" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="525" y="120" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <line x1="537" y1="77" x2="555" y2="98" stroke="#334155" stroke-width="2"/>
-  <circle cx="563" cy="107" r="12" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <circle cx="563" cy="107" r="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
   <text x="563" y="111" text-anchor="middle" fill="#334155" font-size="10">H</text>
   <text x="525" y="136" text-anchor="middle" fill="#64748b" font-size="10">e.g. NH₃, PCl₃</text>
 
   <!-- BENT: H₂O -->
   <text x="645" y="15" text-anchor="middle" fill="#be185d" font-weight="bold" font-size="12">Bent</text>
   <text x="645" y="27" text-anchor="middle" fill="#64748b" font-size="10">104.5°</text>
-  <circle cx="645" cy="70" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="645" cy="70" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="645" y="74" text-anchor="middle" fill="#1e40af" font-size="10">O</text>
   <!-- 2 lone pairs -->
   <path d="M633,58 Q640,46 650,58" fill="none" stroke="#f59e0b" stroke-width="2"/>
   <path d="M638,54 Q645,42 655,54" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2"/>
   <text x="645" y="42" text-anchor="middle" fill="#b45309" font-size="9">2LP</text>
   <line x1="633" y1="77" x2="615" y2="98" stroke="#334155" stroke-width="2"/>
-  <circle cx="607" cy="107" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="607" cy="107" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="607" y="111" text-anchor="middle" fill="#7f1d1d" font-size="10">H</text>
   <line x1="657" y1="77" x2="675" y2="98" stroke="#334155" stroke-width="2"/>
-  <circle cx="683" cy="107" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="683" cy="107" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="683" y="111" text-anchor="middle" fill="#7f1d1d" font-size="10">H</text>
   <text x="645" y="136" text-anchor="middle" fill="#64748b" font-size="10">e.g. H₂O</text>
 
   <!-- Legend -->
-  <rect x="10" y="155" width="680" height="1" fill="#e2e8f0"/>
+  <rect x="10" y="155" width="680" height="1" fill="#1e293b"/>
   <text x="350" y="172" text-anchor="middle" fill="#64748b" font-size="10">LP = lone pair (not shown as atoms but takes up space and pushes bonding pairs closer)</text>
   <text x="350" y="185" text-anchor="middle" fill="#64748b" font-size="10">More lone pairs → smaller bond angle: CH₄ (109.5°) → NH₃ (107°) → H₂O (104.5°)</text>
 </svg>`

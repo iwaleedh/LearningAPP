@@ -86,16 +86,16 @@ export const note_olevel_physics_4_4_1 = {
         svg: `<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Hand outline (stylised) -->
   <!-- Palm -->
-  <rect x="120" y="110" width="80" height="70" rx="15" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <rect x="120" y="110" width="80" height="70" rx="15" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <!-- Thumb (pointing right/upward = Force) -->
-  <rect x="175" y="75" width="20" height="50" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="2" transform="rotate(-30,185,100)"/>
+  <rect x="175" y="75" width="20" height="50" rx="10" fill="#44370a" stroke="#d97706" stroke-width="2" transform="rotate(-30,185,100)"/>
   <!-- Index finger (pointing up = Field B) -->
-  <rect x="155" y="40" width="18" height="75" rx="9" fill="#a5f3fc" stroke="#0891b2" stroke-width="2"/>
+  <rect x="155" y="40" width="18" height="75" rx="9" fill="#0e4a56" stroke="#0891b2" stroke-width="2"/>
   <!-- Middle finger (pointing right = Current I) -->
-  <rect x="178" y="105" width="18" height="70" rx="9" fill="#bbf7d0" stroke="#16a34a" stroke-width="2" transform="rotate(90,187,140)"/>
+  <rect x="178" y="105" width="18" height="70" rx="9" fill="#0a3020" stroke="#16a34a" stroke-width="2" transform="rotate(90,187,140)"/>
   <!-- Ring and pinky (folded) -->
-  <rect x="198" y="100" width="14" height="40" rx="7" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
-  <rect x="213" y="105" width="12" height="35" rx="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="198" y="100" width="14" height="40" rx="7" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="213" y="105" width="12" height="35" rx="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <!-- Labels -->
   <text x="8" y="55" fill="#0891b2" font-weight="bold">B — Magnetic</text>
   <text x="8" y="70" fill="#0891b2">Field direction</text>
@@ -107,7 +107,7 @@ export const note_olevel_physics_4_4_1 = {
   <text x="195" y="100" fill="#d97706">Force</text>
   <!-- 3 arrows showing directions -->
   <text x="25" y="190" fill="#374151" font-size="10">↑ Field (B) &nbsp;&nbsp; → Force (F) &nbsp;&nbsp; ⊙ Current (I) out of page</text>
-  <rect x="5" y="178" width="330" height="35" rx="5" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="5" y="178" width="330" height="35" rx="5" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
   <text x="15" y="193" fill="#374151" font-size="9">Example: B upward, I out of page → Force to the RIGHT</text>
   <text x="15" y="208" fill="#374151" font-size="9">Use left hand: first↑ (B), middle⊙ (I) → thumb points right (F)</text>
 </svg>`,

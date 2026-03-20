@@ -20,16 +20,16 @@ export const note_physics_5_28_0 = {
       "data": {
         "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="200" fill="#192a56" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#fff"><strong>Hubble's Law</strong> &amp; Expansion</text>
-  <circle cx="50" cy="100" r="4" fill="#f1c40f"/>
+  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b"><strong>Hubble's Law</strong> &amp; Expansion</text>
+  <circle cx="50" cy="100" r="4" fill="#532407"/>
   <circle cx="150" cy="70" r="4" fill="#3498db"/>
   <line x1="155" y1="70" x2="190" y2="70" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
   <circle cx="130" cy="140" r="4" fill="#9b59b6"/>
   <line x1="135" y1="140" x2="160" y2="140" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
   <circle cx="280" cy="100" r="4" fill="#2ecc71"/>
   <line x1="285" y1="100" x2="350" y2="100" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrow)"/>
-  <text x="50" y="115" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#fff">Observer</text>
-  <text x="280" y="90" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#fff">v = H₀ d</text>
+  <text x="50" y="115" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#1e293b">Observer</text>
+  <text x="280" y="90" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#1e293b">v = H₀ d</text>
   <defs>
     <marker id="arrow" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
       <polygon points="0 0, 5 2.5, 0 5" fill="#e74c3c"/>
@@ -45,18 +45,18 @@ export const note_physics_5_28_0 = {
       "data": {
         "svg": `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="200" fill="#2d3436" rx="10"/>
-  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#fff"><strong>Redshift</strong> (<strong>Doppler Effect</strong> for Light)</text>
-  <rect x="50" y="60" width="300" height="30" fill="#fff" rx="5"/>
+  <text x="200" y="20" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#1e293b"><strong>Redshift</strong> (<strong>Doppler Effect</strong> for Light)</text>
+  <rect x="50" y="60" width="300" height="30" fill="#1e293b" rx="5"/>
   <line x1="100" y1="60" x2="100" y2="90" stroke="#000" stroke-width="2"/>
   <line x1="120" y1="60" x2="120" y2="90" stroke="#000" stroke-width="2"/>
   <line x1="200" y1="60" x2="200" y2="90" stroke="#000" stroke-width="2"/>
-  <text x="360" y="80" font-family="sans-serif" font-size="12" fill="#fff">Lab</text>
+  <text x="360" y="80" font-family="sans-serif" font-size="12" fill="#1e293b">Lab</text>
   
-  <rect x="50" y="120" width="300" height="30" fill="#fff" rx="5"/>
+  <rect x="50" y="120" width="300" height="30" fill="#1e293b" rx="5"/>
   <line x1="120" y1="120" x2="120" y2="150" stroke="#e74c3c" stroke-width="2"/>
   <line x1="140" y1="120" x2="140" y2="150" stroke="#e74c3c" stroke-width="2"/>
   <line x1="220" y1="120" x2="220" y2="150" stroke="#e74c3c" stroke-width="2"/>
-  <text x="360" y="140" font-family="sans-serif" font-size="12" fill="#fff">Galaxy</text>
+  <text x="360" y="140" font-family="sans-serif" font-size="12" fill="#1e293b">Galaxy</text>
   
   <line x1="100" y1="95" x2="115" y2="115" stroke="#fff" stroke-width="1" stroke-dasharray="2,2"/>
   <text x="160" y="50" font-family="sans-serif" font-size="10" fill="#7f8c8d">Blue</text>
@@ -71,7 +71,7 @@ export const note_physics_5_28_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg">
-  <rect width="500" height="260" fill="#f8fafc" rx="10"/>
+  <rect width="500" height="260" fill="#0f172a" rx="10"/>
   <!-- Title -->
   <text x="250" y="22" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b"><strong>Hubble's Law</strong>: v = H₀d</text>
   <!-- Axes -->
@@ -109,7 +109,7 @@ export const note_physics_5_28_0 = {
   <text x="60" y="58" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">v = H₀d</text>
   <!-- Inset: <strong>redshift</strong> diagram -->
   <rect x="308" y="35" width="175" height="100" fill="#1e293b" rx="6"/>
-  <text x="395" y="52" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#fff"><strong>Redshift</strong> of Spectral Lines</text>
+  <text x="395" y="52" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle" fill="#1e293b"><strong>Redshift</strong> of Spectral Lines</text>
   <!-- Emitted spectrum bar -->
   <text x="318" y="66" font-family="sans-serif" font-size="8" fill="#94a3b8">Emitted λ₀:</text>
   <rect x="318" y="70" width="155" height="14" fill="url(#g1)" rx="2"/>

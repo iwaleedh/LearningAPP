@@ -394,8 +394,8 @@
 
 /* ── Summary ──────────────────────────────────────────────────────────────── */
 .nb-summary {
-    background: linear-gradient(135deg, #fef9c3, #fef3c7);
-    border: 1.5px solid #fbbf24;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(251, 191, 36, 0.1));
+    border: 1.5px solid rgba(251, 191, 36, 0.38);
     border-radius: 10px;
     padding: var(--space-4) var(--space-5);
 }
@@ -406,13 +406,13 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #92400e;
+    color: #fbbf24;
     margin-bottom: var(--space-2);
 }
 
 .nb-summary p {
     margin: 0;
-    color: #78350f;
+    color: #fef3c7;
     font-size: var(--font-size-sm);
 }
 
@@ -441,60 +441,77 @@
 
 /* Key idea */
 .nb-callout-key {
-    background: linear-gradient(135deg, #eff6ff, #dbeafe);
-    border-color: #3b82f6;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.08));
+    border-color: rgba(96, 165, 250, 0.6);
 }
 
 .nb-callout-key .nb-callout-title {
-    color: #1e40af;
+    color: #93c5fd;
 }
 
 .nb-callout-key .nb-callout-body {
-    color: #1e3a8a;
+    color: #dbeafe;
 }
 
 /* Worked example */
 .nb-callout-worked {
-    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-    border-color: #16a34a;
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.18), rgba(34, 197, 94, 0.08));
+    border-color: rgba(74, 222, 128, 0.55);
 }
 
 .nb-callout-worked .nb-callout-title {
-    color: #14532d;
+    color: #86efac;
 }
 
 .nb-callout-worked .nb-callout-body {
-    color: #166534;
+    color: #dcfce7;
     font-family: 'Courier New', monospace;
-    font-size: 0.875rem;
+    font-size: 0.92rem;
+    line-height: 1.85;
+}
+
+.nb-callout-worked .nb-callout-body,
+.nb-callout-worked .nb-callout-body * {
+    color: #f0fdf4 !important;
+}
+
+.nb-callout-worked .nb-callout-body strong,
+.nb-callout-worked .nb-callout-body b {
+    color: #bbf7d0 !important;
+    font-weight: 700;
+}
+
+.nb-callout-worked .nb-callout-body em,
+.nb-callout-worked .nb-callout-body code {
+    color: #dcfce7 !important;
 }
 
 /* Tip */
 .nb-callout-tip {
-    background: linear-gradient(135deg, #fdf4ff, #f3e8ff);
-    border-color: #9333ea;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.18), rgba(168, 85, 247, 0.08));
+    border-color: rgba(196, 181, 253, 0.52);
 }
 
 .nb-callout-tip .nb-callout-title {
-    color: #6b21a8;
+    color: #d8b4fe;
 }
 
 .nb-callout-tip .nb-callout-body {
-    color: #581c87;
+    color: #f3e8ff;
 }
 
 /* Warning */
 .nb-callout-warning {
-    background: linear-gradient(135deg, #fff7ed, #ffedd5);
-    border-color: #f97316;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.18), rgba(251, 146, 60, 0.08));
+    border-color: rgba(253, 186, 116, 0.55);
 }
 
 .nb-callout-warning .nb-callout-title {
-    color: #9a3412;
+    color: #fdba74;
 }
 
 .nb-callout-warning .nb-callout-body {
-    color: #7c2d12;
+    color: #ffedd5;
 }
 
 /* ── SVG figure ───────────────────────────────────────────────────────────── */
@@ -513,6 +530,10 @@
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
+    color: var(--color-text);
+    --note-svg-text: #f8fafc;
+    --note-svg-muted: #cbd5e1;
+    --note-svg-grid: rgba(148, 163, 184, 0.35);
 }
 
 /* SVG scales down proportionally on wide screens */
@@ -523,6 +544,66 @@
     max-height: 400px;
     width: auto;
     height: auto;
+}
+
+.nb-svg-container svg text,
+.nb-svg-container svg tspan,
+.nb-svg-container svg .lbl,
+.nb-svg-container svg .sub,
+.nb-svg-container svg .hdr {
+    fill: var(--note-svg-text) !important;
+    font-family: var(--font-sans) !important;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.nb-svg-container svg [fill="#000" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#111827" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#1f2937" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#334155" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#374151" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#444" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#555" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#666" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#777" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#888" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#999" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="#333" i]:not(text):not(tspan),
+.nb-svg-container svg [fill="black" i]:not(text):not(tspan) {
+    fill: var(--note-svg-muted) !important;
+}
+
+.nb-svg-container svg [stroke="#000" i],
+.nb-svg-container svg [stroke="#111827" i],
+.nb-svg-container svg [stroke="#1f2937" i],
+.nb-svg-container svg [stroke="#334155" i],
+.nb-svg-container svg [stroke="#374151" i],
+.nb-svg-container svg [stroke="#444" i],
+.nb-svg-container svg [stroke="#555" i],
+.nb-svg-container svg [stroke="#666" i],
+.nb-svg-container svg [stroke="#777" i],
+.nb-svg-container svg [stroke="#888" i],
+.nb-svg-container svg [stroke="#999" i],
+.nb-svg-container svg [stroke="#333" i],
+.nb-svg-container svg [stroke="black" i] {
+    stroke: var(--note-svg-muted) !important;
+}
+
+.nb-svg-container svg [stroke="#ddd" i],
+.nb-svg-container svg [stroke="#e5e7eb" i],
+.nb-svg-container svg [stroke="#eee" i],
+.nb-svg-container svg [stroke="#f1f5f9" i],
+.nb-svg-container svg [stroke="#cbd5e1" i] {
+    stroke: var(--note-svg-grid) !important;
+}
+
+.nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color:#555"],
+.nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color: #555"],
+.nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color:#64748b"],
+.nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color: #64748b"],
+.nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color:#6b7280"],
+.nb-root :where(p, div, span, strong, em, li, small, code, sub, sup)[style*="color: #6b7280"] {
+    color: var(--color-text-secondary) !important;
 }
 
 /* Narrow SVGs (≤ 320px viewBox width) — scale freely */
@@ -672,31 +753,31 @@
 
 /* Understand — blue */
 .nb-deeper-understand {
-    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.16), rgba(59, 130, 246, 0.08));
 }
-.nb-deeper-understand .nb-deeper-card-label { color: #1e40af; }
-.nb-deeper-understand .nb-deeper-card-text  { color: #1e3a8a; }
+.nb-deeper-understand .nb-deeper-card-label { color: #93c5fd; }
+.nb-deeper-understand .nb-deeper-card-text  { color: #dbeafe; }
 
 /* Apply — green */
 .nb-deeper-apply {
-    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.16), rgba(34, 197, 94, 0.08));
 }
-.nb-deeper-apply .nb-deeper-card-label { color: #14532d; }
-.nb-deeper-apply .nb-deeper-card-text  { color: #166534; }
+.nb-deeper-apply .nb-deeper-card-label { color: #86efac; }
+.nb-deeper-apply .nb-deeper-card-text  { color: #dcfce7; }
 
 /* Analyse — purple */
 .nb-deeper-analyze {
-    background: linear-gradient(135deg, #fdf4ff, #f3e8ff);
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.16), rgba(168, 85, 247, 0.08));
 }
-.nb-deeper-analyze .nb-deeper-card-label { color: #6b21a8; }
-.nb-deeper-analyze .nb-deeper-card-text  { color: #581c87; }
+.nb-deeper-analyze .nb-deeper-card-label { color: #d8b4fe; }
+.nb-deeper-analyze .nb-deeper-card-text  { color: #f3e8ff; }
 
 /* Evaluate — amber */
 .nb-deeper-evaluate {
-    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(251, 191, 36, 0.08));
 }
-.nb-deeper-evaluate .nb-deeper-card-label { color: #92400e; }
-.nb-deeper-evaluate .nb-deeper-card-text  { color: #78350f; }
+.nb-deeper-evaluate .nb-deeper-card-label { color: #fbbf24; }
+.nb-deeper-evaluate .nb-deeper-card-text  { color: #fef3c7; }
 
 @media (max-width: 600px) {
     .nb-deeper-grid {
@@ -713,56 +794,22 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    .nb-deeper {
-        background: var(--color-bg-secondary);
-    }
-    .nb-deeper-understand { background: rgba(59,130,246,0.1); }
-    .nb-deeper-apply      { background: rgba(22,163,74,0.1);  }
-    .nb-deeper-analyze    { background: rgba(147,51,234,0.1); }
-    .nb-deeper-evaluate   { background: rgba(251,191,36,0.1); }
+.nb-deeper {
+    background: var(--color-bg-secondary);
 }
 
-/* ── Dark mode overrides ──────────────────────────────────────────────────── */
-@media (prefers-color-scheme: dark) {
-    .nb-objective {
-        background: rgba(99, 102, 241, 0.1);
-    }
+.nb-objective {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(99, 102, 241, 0.08));
+}
 
-    .nb-equation {
-        background: var(--color-bg-secondary);
-    }
+.nb-equation {
+    background: var(--color-bg-secondary);
+}
 
-    .nb-table th {
-        background: var(--color-primary-dark);
-    }
+.nb-table th {
+    background: var(--color-primary-dark);
+}
 
-    .nb-summary {
-        background: rgba(251, 191, 36, 0.12);
-        border-color: #92400e;
-    }
-
-    .nb-summary p {
-        color: #fbbf24;
-    }
-
-    .nb-callout-key {
-        background: rgba(59, 130, 246, 0.1);
-    }
-
-    .nb-callout-worked {
-        background: rgba(22, 163, 74, 0.1);
-    }
-
-    .nb-callout-tip {
-        background: rgba(147, 51, 234, 0.1);
-    }
-
-    .nb-callout-warning {
-        background: rgba(249, 115, 22, 0.1);
-    }
-
-    .nb-svg-figure {
-        background: var(--color-bg-secondary);
-    }
+.nb-svg-figure {
+    background: var(--color-bg-secondary);
 }

@@ -46,8 +46,8 @@ export const note_olevel_physics_3_1_4 = {
     <marker id="ag14" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
-  <rect x="0" y="0" width="420" height="160" fill="#dbeafe" opacity="0.45"/>
-  <rect x="0" y="160" width="420" height="160" fill="#a5f3fc" opacity="0.55"/>
+  <rect x="0" y="0" width="420" height="160" fill="#1e3a8a" opacity="0.45"/>
+  <rect x="0" y="160" width="420" height="160" fill="#0e4a56" opacity="0.55"/>
   <text x="10" y="22" font-weight="bold" fill="#1d4ed8">Air  (less dense — faster)</text>
   <text x="10" y="185" font-weight="bold" fill="#0e7490">Glass  (more dense — slower)</text>
   <line x1="0" y1="160" x2="420" y2="160" stroke="#0e7490" stroke-width="2"/>

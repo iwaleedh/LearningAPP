@@ -77,7 +77,7 @@ export const note_chemistry_1_5_7 = {
       <polygon points="0,0 8,3.5 0,7" fill="#444"/>
     </marker>
     <marker id="cp4arrup" markerWidth="8" markerHeight="7" refX="4" refY="7" orient="auto">
-      <polygon points="0,7 4,0 8,7" fill="#93c5fd"/>
+      <polygon points="0,7 4,0 8,7" fill="#1250a0"/>
     </marker>
     <marker id="cp4arrdown" markerWidth="8" markerHeight="7" refX="4" refY="0" orient="auto">
       <polygon points="0,0 4,7 8,0" fill="#3b82f6"/>
@@ -91,14 +91,14 @@ export const note_chemistry_1_5_7 = {
   <text x="250" y="26" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e3a8a">Reflux Apparatus — Core Practical 4</text>
 
   <!-- ═══ HEATING MANTLE (trapezoid under flask) ═══ -->
-  <polygon points="128,453 140,478 218,478 230,453" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="128,453 140,478 218,478 230,453" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="179" y="470" text-anchor="middle" fill="#92400e" font-size="10" font-weight="bold">Heating mantle</text>
 
   <!-- ═══ ROUND-BOTTOM FLASK ═══ -->
-  <ellipse cx="179" cy="391" rx="63" ry="56" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <ellipse cx="179" cy="391" rx="63" ry="56" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
 
   <!-- Flask neck (bridges flask top to condenser base; same fill/stroke as flask) -->
-  <rect x="165" y="298" width="28" height="46" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="165" y="298" width="28" height="46" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
 
   <!-- Reaction mixture text inside flask -->
   <text x="179" y="384" text-anchor="middle" fill="#1e40af" font-size="10">Butan-1-ol</text>
@@ -111,12 +111,12 @@ export const note_chemistry_1_5_7 = {
 
   <!-- ═══ LIEBIG CONDENSER ═══ -->
   <!-- Outer jacket -->
-  <rect x="158" y="88" width="42" height="213" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <rect x="158" y="88" width="42" height="213" rx="4" fill="#0c4a6e" stroke="#0284c7" stroke-width="2"/>
   <!-- Inner tube -->
   <rect x="167" y="93" width="24" height="205" fill="none" stroke="#0284c7" stroke-width="1.5"/>
 
   <!-- Open top of condenser -->
-  <rect x="168" y="78" width="22" height="12" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="168" y="78" width="22" height="12" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
   <text x="179" y="72" text-anchor="middle" fill="#6b7280" font-size="10">Open end</text>
 
   <!-- ═══ WATER CIRCULATION ═══ -->

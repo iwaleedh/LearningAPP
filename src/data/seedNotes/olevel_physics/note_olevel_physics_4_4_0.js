@@ -82,7 +82,7 @@ export const note_olevel_physics_4_4_0 = {
         caption: 'Solenoid magnetic field — acts like a bar magnet with N and S poles',
         svg: `<svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Solenoid body -->
-  <rect x="100" y="80" width="180" height="40" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="100" y="80" width="180" height="40" rx="6" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
   <!-- Coil loops -->
   <ellipse cx="110" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
   <ellipse cx="130" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
@@ -92,9 +92,9 @@ export const note_olevel_physics_4_4_0 = {
   <ellipse cx="210" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
   <ellipse cx="270" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
   <!-- N / S poles -->
-  <rect x="55" y="75" width="45" height="50" rx="5" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="55" y="75" width="45" height="50" rx="5" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="65" y="104" fill="#16a34a" font-weight="bold" font-size="16">N</text>
-  <rect x="280" y="75" width="45" height="50" rx="5" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="280" y="75" width="45" height="50" rx="5" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="292" y="104" fill="#ef4444" font-weight="bold" font-size="16">S</text>
   <!-- Field lines (external) -->
   <path d="M55,92 C20,70 10,40 40,20 C80,0 160,5 200,10 C270,18 330,30 360,50 C365,65 340,80 305,85"

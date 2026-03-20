@@ -62,7 +62,7 @@ export const note_olevel_maths_core_3_1_1 = {
         caption: 'Four lines showing positive, negative, zero, and undefined gradients',
         svg: `<svg viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Positive gradient panel -->
-  <rect x="5" y="5" width="80" height="80" fill="#f8f8ff" stroke="#ddd"/>
+  <rect x="5" y="5" width="80" height="80" fill="#0f172a" stroke="#ddd"/>
   <line x1="15" y1="80" x2="75" y2="15" stroke="#6366f1" stroke-width="2.5"/>
   <text x="44" y="95" text-anchor="middle" fill="#6366f1" font-weight="bold">Positive</text>
   <text x="44" y="107" text-anchor="middle" fill="#6366f1">m &gt; 0</text>
@@ -73,19 +73,19 @@ export const note_olevel_maths_core_3_1_1 = {
   <text x="78" y="35" fill="#999" font-size="9">rise</text>
 
   <!-- Negative gradient panel -->
-  <rect x="95" y="5" width="80" height="80" fill="#fff8f8" stroke="#ddd"/>
+  <rect x="95" y="5" width="80" height="80" fill="#3d1212" stroke="#ddd"/>
   <line x1="105" y1="15" x2="165" y2="80" stroke="#ef4444" stroke-width="2.5"/>
   <text x="134" y="95" text-anchor="middle" fill="#ef4444" font-weight="bold">Negative</text>
   <text x="134" y="107" text-anchor="middle" fill="#ef4444">m &lt; 0</text>
 
   <!-- Zero gradient panel -->
-  <rect x="185" y="5" width="80" height="80" fill="#f0fff4" stroke="#ddd"/>
+  <rect x="185" y="5" width="80" height="80" fill="#0a2e1a" stroke="#ddd"/>
   <line x1="195" y1="45" x2="255" y2="45" stroke="#10b981" stroke-width="2.5"/>
   <text x="224" y="95" text-anchor="middle" fill="#10b981" font-weight="bold">Zero</text>
   <text x="224" y="107" text-anchor="middle" fill="#10b981">m = 0</text>
 
   <!-- Undefined gradient panel -->
-  <rect x="275" y="5" width="80" height="80" fill="#fffbeb" stroke="#ddd"/>
+  <rect x="275" y="5" width="80" height="80" fill="#44370a" stroke="#ddd"/>
   <line x1="315" y1="10" x2="315" y2="80" stroke="#f59e0b" stroke-width="2.5"/>
   <text x="315" y="95" text-anchor="middle" fill="#f59e0b" font-weight="bold">Undefined</text>
   <text x="315" y="107" text-anchor="middle" fill="#f59e0b">no gradient</text>

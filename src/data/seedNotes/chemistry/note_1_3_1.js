@@ -42,39 +42,39 @@ export const note_chemistry_1_3_1 = {
         svg: `<svg viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Grid of ions (5x5) arranged in alternating pattern -->
   <!-- Row 0: Na Cl Na Cl Na -->
-  <circle cx="60" cy="40" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="60" cy="40" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="60" y="45" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
-  <circle cx="120" cy="40" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="120" cy="40" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="120" y="45" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
-  <circle cx="180" cy="40" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="180" cy="40" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="180" y="45" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
-  <circle cx="240" cy="40" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="240" cy="40" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="240" y="45" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
-  <circle cx="300" cy="40" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="300" cy="40" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="300" y="45" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
 
   <!-- Row 1: Cl Na Cl Na Cl -->
-  <circle cx="60" cy="110" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="60" cy="110" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="60" y="115" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
-  <circle cx="120" cy="110" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="120" cy="110" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="120" y="115" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
-  <circle cx="180" cy="110" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="180" cy="110" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="180" y="115" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
-  <circle cx="240" cy="110" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="240" cy="110" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="240" y="115" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
-  <circle cx="300" cy="110" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="300" cy="110" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="300" y="115" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
 
   <!-- Row 2: Na Cl Na Cl Na -->
-  <circle cx="60" cy="180" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="60" cy="180" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="60" y="185" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
-  <circle cx="120" cy="180" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="120" cy="180" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="120" y="185" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
-  <circle cx="180" cy="180" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="180" cy="180" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="180" y="185" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
-  <circle cx="240" cy="180" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="240" cy="180" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="240" y="185" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="bold">Cl⁻</text>
-  <circle cx="300" cy="180" r="18" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="300" cy="180" r="18" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="300" y="185" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold">Na⁺</text>
 
   <!-- Bond lines (between row 0 and row 1) -->
@@ -110,9 +110,9 @@ export const note_chemistry_1_3_1 = {
   <line x1="262" y1="180" x2="282" y2="180" stroke="#94a3b8" stroke-width="1"/>
 
   <!-- Legend -->
-  <circle cx="20" cy="235" r="8" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="20" cy="235" r="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="32" y="239" fill="#1e40af" font-size="10">Na⁺ (smaller cation)</text>
-  <circle cx="170" cy="235" r="10" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="170" cy="235" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="184" y="239" fill="#991b1b" font-size="10">Cl⁻ (larger anion)</text>
   <text x="190" y="252" text-anchor="middle" fill="#64748b" font-size="9">Coordination number = 6 (each ion surrounded by 6 of the opposite charge)</text>
 </svg>`
@@ -193,32 +193,32 @@ export const note_chemistry_1_3_1 = {
   <line x1="155" y1="30" x2="155" y2="130" stroke="#64748b" stroke-width="1.5"/>
 
   <!-- 8 Cl⁻ ions at cube corners -->
-  <circle cx="100" cy="60" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="100" cy="60" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
   <text x="100" y="64" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="200" cy="60" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="200" cy="60" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="200" y="64" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="155" cy="30" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="155" cy="30" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="155" y="34" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="255" cy="30" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="255" cy="30" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="255" y="34" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="100" cy="160" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="100" cy="160" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="100" y="164" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="200" cy="160" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="200" cy="160" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="200" y="164" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="155" cy="130" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="155" cy="130" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="155" y="134" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
-  <circle cx="255" cy="130" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="255" cy="130" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="255" y="134" text-anchor="middle" fill="#991b1b" font-size="9">Cl⁻</text>
 
   <!-- Cs⁺ ion at cube centre -->
-  <circle cx="178" cy="95" r="20" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="178" cy="95" r="20" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="178" y="92" text-anchor="middle" fill="#166534" font-size="10" font-weight="bold">Cs⁺</text>
   <text x="178" y="106" text-anchor="middle" fill="#166534" font-size="8">centre</text>
 
@@ -228,7 +228,7 @@ export const note_chemistry_1_3_1 = {
   <text x="210" y="228" text-anchor="middle" fill="#64748b" font-size="10">Each Cl⁻ surrounded by 8 Cs⁺ (by symmetry)</text>
 
   <!-- Comparison annotation -->
-  <rect x="300" y="50" width="110" height="80" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <rect x="300" y="50" width="110" height="80" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1"/>
   <text x="355" y="67" text-anchor="middle" fill="#166534" font-weight="bold" font-size="10">NaCl vs CsCl</text>
   <text x="355" y="82" text-anchor="middle" fill="#374151" font-size="9">NaCl: 6:6 coord.</text>
   <text x="355" y="95" text-anchor="middle" fill="#374151" font-size="9">Na⁺ = 52% of Cl⁻</text>
@@ -297,26 +297,26 @@ export const note_chemistry_1_3_1 = {
   <!-- BEFORE (left) -->
   <text x="120" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">Before stress</text>
   <!-- Row 1 -->
-  <circle cx="40" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="40" cy="50" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="40" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="80" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="80" cy="50" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="80" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="120" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="120" cy="50" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="120" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="160" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="160" cy="50" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="160" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="200" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="200" cy="50" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="200" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
   <!-- Row 2 -->
-  <circle cx="40" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="40" cy="100" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="40" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="80" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="80" cy="100" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="80" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="120" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="120" cy="100" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="120" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="160" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="160" cy="100" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="160" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="200" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="200" cy="100" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="200" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
   <!-- Vertical attraction lines: opposite charges directly above/below in BEFORE diagram -->
   <line x1="40" y1="64" x2="40" y2="84" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,2"/>
@@ -334,22 +334,22 @@ export const note_chemistry_1_3_1 = {
   <!-- AFTER: Row 1 shifted one full lattice spacing (40 px) to the right → like charges now align directly above each other -->
   <text x="390" y="18" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="12">After layer shift</text>
   <!-- Row 2 (UNCHANGED): Cl−(300), Na+(340), Cl−(380), Na+(420) at y=100 -->
-  <circle cx="300" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="300" cy="100" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="300" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="340" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="340" cy="100" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="340" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="380" cy="100" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="380" cy="100" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="380" y="104" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="420" cy="100" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="420" cy="100" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="420" y="104" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
   <!-- Row 1 (SHIFTED +40 px): Na+(340), Cl−(380), Na+(420), Cl−(460) at y=50 -->
-  <circle cx="340" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="340" cy="50" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="340" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="380" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="380" cy="50" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="380" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
-  <circle cx="420" cy="50" r="14" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="420" cy="50" r="14" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="420" y="54" text-anchor="middle" fill="#1e40af" font-size="9">+</text>
-  <circle cx="460" cy="50" r="16" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="460" cy="50" r="16" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="460" y="54" text-anchor="middle" fill="#991b1b" font-size="9">−</text>
   <!-- Red repulsion lines between SAME charges now directly above each other -->
   <line x1="340" y1="64" x2="340" y2="86" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,2"/>
@@ -438,7 +438,7 @@ export const note_chemistry_1_3_1 = {
   <!-- Title -->
   <text x="300" y="17" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Electrolysis of Molten PbBr₂</text>
   <!-- DC Power Source box -->
-  <rect x="220" y="26" width="160" height="46" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <rect x="220" y="26" width="160" height="46" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <text x="300" y="47" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="12">DC Power Source</text>
   <text x="238" y="64" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="16">−</text>
   <text x="362" y="64" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="16">+</text>
@@ -451,7 +451,7 @@ export const note_chemistry_1_3_1 = {
   <polygon points="425,70 420,86 430,86" fill="#b91c1c"/>
   <text x="437" y="102" fill="#b91c1c" font-size="10">e⁻ flow ↑</text>
   <!-- Beaker outline -->
-  <rect x="108" y="172" width="384" height="138" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <rect x="108" y="172" width="384" height="138" rx="8" fill="#0c4a6e" stroke="#0369a1" stroke-width="2"/>
   <!-- Cathode electrode (left) -->
   <rect x="168" y="140" width="14" height="152" rx="3" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
   <text x="175" y="133" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">CATHODE (−)</text>
@@ -462,8 +462,8 @@ export const note_chemistry_1_3_1 = {
   <rect x="418" y="140" width="14" height="152" rx="3" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
   <text x="425" y="133" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">ANODE (+)</text>
   <!-- Br2 gas bubbles rising above melt surface -->
-  <circle cx="426" cy="165" r="8" fill="#fef08a" stroke="#ca8a04" stroke-width="1.2"/>
-  <circle cx="442" cy="154" r="6" fill="#fef08a" stroke="#ca8a04" stroke-width="1" opacity="0.8"/>
+  <circle cx="426" cy="165" r="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.2"/>
+  <circle cx="442" cy="154" r="6" fill="#44370a" stroke="#ca8a04" stroke-width="1" opacity="0.8"/>
   <text x="452" y="158" fill="#92400e" font-weight="bold" font-size="10">Br₂(g)</text>
   <!-- Pb2+ cation arrows toward cathode -->
   <text x="230" y="208" fill="#1d4ed8" font-weight="bold" font-size="13">Pb²⁺</text>

@@ -22,7 +22,7 @@ export const note_physics_4_18_7 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <circle cx="200" cy="100" r="15" fill="#ef4444"/>
   <circle cx="200" cy="100" r="40" fill="none" stroke="#10b981" stroke-dasharray="4,4"/>
   <circle cx="200" cy="100" r="70" fill="none" stroke="#10b981" stroke-dasharray="4,4"/>
@@ -41,7 +41,7 @@ export const note_physics_4_18_7 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <rect x="80" y="60" width="240" height="80" fill="none" stroke="#334155" stroke-width="2"/>
   <path d="M 140 60 L 140 140" stroke="#10b981" stroke-dasharray="4,4" stroke-width="2"/>
   <path d="M 200 60 L 200 140" stroke="#10b981" stroke-dasharray="4,4" stroke-width="2"/>
@@ -66,7 +66,7 @@ export const note_physics_4_18_7 = {
       <polygon points="0 0, 8 3, 0 6" fill="#3b82f6"/>
     </marker>
   </defs>
-  <rect width="500" height="240" fill="#f8fafc" rx="8"/>
+  <rect width="500" height="240" fill="#0f172a" rx="8"/>
   <text x="125" y="22" font-family="Arial" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Radial Field (+ve charge)</text>
   <circle cx="125" cy="125" r="42" fill="none" stroke="#10b981" stroke-dasharray="5,3" stroke-width="1.5"/>
   <circle cx="125" cy="125" r="72" fill="none" stroke="#10b981" stroke-dasharray="5,3" stroke-width="1.5"/>
@@ -79,7 +79,7 @@ export const note_physics_4_18_7 = {
   <line x1="134" y1="134" x2="173" y2="173" stroke="#3b82f6" stroke-width="2" marker-end="url(#enr-arr)"/>
   <line x1="116" y1="134" x2="77" y2="173" stroke="#3b82f6" stroke-width="2" marker-end="url(#enr-arr)"/>
   <circle cx="125" cy="125" r="13" fill="#ef4444"/>
-  <text x="125" y="130" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">+</text>
+  <text x="125" y="130" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
   <text x="125" y="222" font-family="Arial" font-size="11" fill="#10b981" text-anchor="middle">Dashed circles = equipotentials</text>
   <line x1="249" y1="10" x2="249" y2="230" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4,4"/>
   <text x="374" y="22" font-family="Arial" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Uniform Field (parallel plates)</text>

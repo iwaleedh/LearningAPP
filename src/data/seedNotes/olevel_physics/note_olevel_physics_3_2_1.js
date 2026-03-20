@@ -54,7 +54,7 @@ export const note_olevel_physics_3_2_1 = {
     <marker id="ag21" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
-  <rect x="150" y="80" width="160" height="160" fill="#a5f3fc" opacity="0.55" stroke="#0e7490" stroke-width="2"/>
+  <rect x="150" y="80" width="160" height="160" fill="#0e4a56" opacity="0.55" stroke="#0e7490" stroke-width="2"/>
   <text x="195" y="165" fill="#0e7490" font-weight="bold">GLASS</text>
   <text x="185" y="180" fill="#0e7490" font-size="10">n ≈ 1.5</text>
   <line x1="150" y1="40" x2="150" y2="280" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 3"/>

@@ -23,7 +23,7 @@ export const note_physics_4_16_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="220" fill="#0f172a" rx="8"/>
   <rect x="50" y="160" width="300" height="10" fill="#64748b"/>
   <rect x="100" y="120" width="60" height="40" fill="#3b82f6" rx="4"/>
   <circle cx="115" cy="150" r="10" fill="#334155"/>
@@ -47,7 +47,7 @@ export const note_physics_4_16_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <path d="M 60 170 L 340 170" stroke="#334155" stroke-width="2"/>
   <path d="M 60 170 L 60 40" stroke="#334155" stroke-width="2"/>
   <path d="M 120 170 L 140 60 L 160 150 L 180 170" stroke="#ef4444" stroke-width="2" fill="none"/>
@@ -73,7 +73,7 @@ export const note_physics_4_16_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="480" height="260" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="480" height="260" fill="#0f172a" rx="8"/>
   <line x1="60" y1="205" x2="425" y2="205" stroke="#334155" stroke-width="2"/>
   <line x1="60" y1="205" x2="60" y2="40" stroke="#334155" stroke-width="2"/>
   <text x="245" y="232" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">Time (s)</text>
@@ -88,7 +88,7 @@ export const note_physics_4_16_1 = {
   <text x="227" y="166" font-family="Arial" font-size="12" fill="#4338ca" text-anchor="middle">= F × Δt = Δp</text>
   <line x1="65" y1="95" x2="133" y2="95" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/>
   <text x="58" y="99" font-family="Arial" font-size="12" fill="#64748b" text-anchor="end">F</text>
-  <rect x="118" y="14" width="218" height="32" fill="#ede9fe" rx="6" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="118" y="14" width="218" height="32" fill="#2d1b69" rx="6" stroke="#6366f1" stroke-width="1.5"/>
   <text x="227" y="35" font-family="Arial" font-size="11" fill="#4338ca" text-anchor="middle">Impulse = area under F–t graph = Δp</text>
 </svg>`,
         caption: 'Impulse equals the area under a force–time graph'

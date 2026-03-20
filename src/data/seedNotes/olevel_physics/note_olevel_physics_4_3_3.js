@@ -107,7 +107,7 @@ export const note_olevel_physics_4_3_3 = {
   <line x1="30" y1="50" x2="100" y2="50" stroke="#333" stroke-width="2"/>
   <line x1="30" y1="150" x2="100" y2="150" stroke="#333" stroke-width="2"/>
   <!-- Coil (electromagnet) -->
-  <rect x="100" y="60" width="60" height="80" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="100" y="60" width="60" height="80" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
   <text x="108" y="95" fill="#6366f1">Coil</text>
   <text x="105" y="110" fill="#6366f1" font-size="9">(electromagnet)</text>
   <!-- Core (iron) -->
@@ -126,7 +126,7 @@ export const note_olevel_physics_4_3_3 = {
   <circle cx="260" cy="160" r="5" fill="#10b981" opacity="0.4"/>
   <text x="240" y="145" fill="#10b981" font-size="9">contacts</text>
   <!-- Load (motor) -->
-  <rect x="265" y="80" width="40" height="30" rx="5" fill="#fef9c3" stroke="#d97706" stroke-width="2"/>
+  <rect x="265" y="80" width="40" height="30" rx="5" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="272" y="100" fill="#d97706">Load</text>
   <line x1="305" y1="95" x2="330" y2="95" stroke="#d97706" stroke-width="2"/>
   <line x1="330" y1="60" x2="330" y2="95" stroke="#d97706" stroke-width="2"/>

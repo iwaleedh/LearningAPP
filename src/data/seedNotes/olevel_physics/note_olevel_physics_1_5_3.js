@@ -21,13 +21,13 @@ export const note_olevel_physics_1_5_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="250" fill="#f0f4ff" rx="10"/>
+  <rect width="440" height="250" fill="#1c3a64" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Plumb Line Method — Finding the CoG</text>
   <!-- Step 1: first hole -->
-  <rect x="20" y="35" width="185" height="190" fill="white" stroke="#e5e7eb" rx="6"/>
+  <rect x="20" y="35" width="185" height="190" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="112" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Step 1 — Hang from hole A</text>
   <!-- Irregular shape -->
-  <path d="M 55 80 Q 80 65 110 70 Q 140 60 160 80 Q 175 100 165 130 Q 155 155 130 165 Q 100 180 75 165 Q 50 145 55 115 Z" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <path d="M 55 80 Q 80 65 110 70 Q 140 60 160 80 Q 175 100 165 130 Q 155 155 130 165 Q 100 180 75 165 Q 50 145 55 115 Z" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
   <circle cx="105" cy="70" r="5" fill="#374151"/>
   <text x="112" y="72" font-size="10" fill="#374151">A</text>
   <!-- Plumb line from A -->
@@ -35,10 +35,10 @@ export const note_olevel_physics_1_5_3 = {
   <circle cx="105" cy="200" r="8" fill="#ef4444" opacity="0.8"/>
   <text x="118" y="175" font-size="10" fill="#ef4444">Plumb line L1</text>
   <!-- Step 2: second hole -->
-  <rect x="230" y="35" width="185" height="190" fill="white" stroke="#e5e7eb" rx="6"/>
+  <rect x="230" y="35" width="185" height="190" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="322" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Step 2 — Hang from hole B</text>
   <!-- Same shape, slightly offset visually -->
-  <path d="M 265 80 Q 290 65 320 70 Q 350 60 370 80 Q 385 100 375 130 Q 365 155 340 165 Q 310 180 285 165 Q 260 145 265 115 Z" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <path d="M 265 80 Q 290 65 320 70 Q 350 60 370 80 Q 385 100 375 130 Q 365 155 340 165 Q 310 180 285 165 Q 260 145 265 115 Z" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
   <circle cx="355" cy="75" r="5" fill="#374151"/>
   <text x="362" y="77" font-size="10" fill="#374151">B</text>
   <!-- Plumb line from B -->

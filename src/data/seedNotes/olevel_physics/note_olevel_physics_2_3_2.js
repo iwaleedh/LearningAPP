@@ -83,9 +83,9 @@ export const note_olevel_physics_2_3_2 = {
   <text x="188" y="125" fill="#888" font-size="14" font-weight="bold">vs</text>
 
   <!-- Polished silver surface (right) -->
-  <rect x="230" y="70" width="120" height="100" rx="6" fill="#e8e8e8" stroke="#aaa" stroke-width="2"/>
+  <rect x="230" y="70" width="120" height="100" rx="6" fill="#1e293b" stroke="#aaa" stroke-width="2"/>
   <!-- Shine effect -->
-  <ellipse cx="265" cy="95" rx="20" ry="8" fill="white" opacity="0.5"/>
+  <ellipse cx="265" cy="95" rx="20" ry="8" fill="#1e293b" opacity="0.5"/>
   <text x="240" y="64" fill="#777" font-size="13" font-weight="bold">Shiny Silver</text>
   <text x="237" y="180" fill="#555" font-size="11">Worst emitter</text>
 

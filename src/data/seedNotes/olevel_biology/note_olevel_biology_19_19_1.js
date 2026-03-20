@@ -40,31 +40,31 @@ export const note_olevel_biology_19_19_1 = {
   <text x="250" y="18" text-anchor="middle" font-weight="bold" font-size="13" fill="#334155">Grassland Food Web</text>
 
   <!-- Producer: Grass -->
-  <rect x="195" y="235" width="110" height="32" rx="6" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <rect x="195" y="235" width="110" height="32" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="250" y="256" text-anchor="middle" font-weight="bold" font-size="11" fill="#14532d">Grass (Producer)</text>
 
   <!-- Primary consumers -->
-  <rect x="50" y="165" width="90" height="30" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="50" y="165" width="90" height="30" rx="6" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="95" y="184" text-anchor="middle" font-size="11" fill="#14532d">Rabbit</text>
 
-  <rect x="195" y="165" width="110" height="30" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="195" y="165" width="110" height="30" rx="6" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="250" y="184" text-anchor="middle" font-size="11" fill="#14532d">Grasshopper</text>
 
-  <rect x="360" y="165" width="90" height="30" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="360" y="165" width="90" height="30" rx="6" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="405" y="184" text-anchor="middle" font-size="11" fill="#14532d">Vole</text>
 
   <!-- Secondary consumers -->
-  <rect x="50" y="95" width="90" height="30" rx="6" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="50" y="95" width="90" height="30" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
   <text x="95" y="114" text-anchor="middle" font-size="11" fill="#3730a3">Fox</text>
 
-  <rect x="205" y="95" width="90" height="30" rx="6" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="205" y="95" width="90" height="30" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
   <text x="250" y="114" text-anchor="middle" font-size="11" fill="#3730a3">Frog</text>
 
-  <rect x="355" y="95" width="100" height="30" rx="6" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="355" y="95" width="100" height="30" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
   <text x="405" y="114" text-anchor="middle" font-size="11" fill="#3730a3">Weasel</text>
 
   <!-- Tertiary consumer -->
-  <rect x="195" y="30" width="110" height="32" rx="6" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <rect x="195" y="30" width="110" height="32" rx="6" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="250" y="50" text-anchor="middle" font-weight="bold" font-size="11" fill="#991b1b">Hawk (top)</text>
 
   <!-- Arrows: Grass to primary consumers -->

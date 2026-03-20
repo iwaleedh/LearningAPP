@@ -1,24 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import ThemeContext from './ThemeContext';
 
 export default function ThemeProvider({ children }) {
-    const [theme, setTheme] = useState(() => {
-        const saved = localStorage.getItem('lt-theme');
-        if (saved) return saved;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    });
-
     useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('lt-theme', theme);
-    }, [theme]);
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.style.colorScheme = 'dark';
+        localStorage.removeItem('lt-theme');
+    }, []);
 
-    const toggleTheme = () => {
-        setTheme(prev => prev === 'light' ? 'dark' : 'light');
-    };
+    const value = useMemo(() => ({
+        theme: 'dark',
+        toggleTheme: () => { },
+    }), []);
 
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={value}>
             {children}
         </ThemeContext.Provider>
     );

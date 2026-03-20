@@ -76,10 +76,10 @@ export const note_olevel_physics_1_7_5 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="360" height="200" fill="#f0fdf4" rx="10"/>
+  <rect width="360" height="200" fill="#0a2e1a" rx="10"/>
   <text x="180" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Power = Rate of Energy Transfer</text>
   <!-- Person A slow -->
-  <rect x="30" y="75" width="120" height="80" rx="6" fill="white" stroke="#e5e7eb"/>
+  <rect x="30" y="75" width="120" height="80" rx="6" fill="#1e293b" stroke="#e5e7eb"/>
   <text x="90" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Person A</text>
   <!-- Stick figure -->
   <circle cx="90" cy="115" r="10" fill="#6366f1" stroke="#374151"/>
@@ -90,7 +90,7 @@ export const note_olevel_physics_1_7_5 = {
   <text x="90" y="178" text-anchor="middle" font-size="9" fill="#6366f1">1800 J in 8 s</text>
   <text x="90" y="190" text-anchor="middle" font-size="10" font-weight="bold" fill="#6366f1">P = 225 W</text>
   <!-- Person B fast -->
-  <rect x="210" y="75" width="120" height="80" rx="6" fill="white" stroke="#e5e7eb"/>
+  <rect x="210" y="75" width="120" height="80" rx="6" fill="#1e293b" stroke="#e5e7eb"/>
   <text x="270" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Person B</text>
   <!-- Stick figure running -->
   <circle cx="270" cy="109" r="10" fill="#10b981" stroke="#374151"/>

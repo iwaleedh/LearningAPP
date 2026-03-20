@@ -75,28 +75,28 @@ export const note_olevel_biology_8_8_1 = {
       data: {
         caption: 'Root hair cell absorbing water (left) and guard cells controlling stomatal opening (right)',
         svg: `<svg viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="320" fill="#f0fdf4" rx="12"/>
+  <rect width="520" height="320" fill="#0a2e1a" rx="12"/>
   <!-- ROOT HAIR CELL section -->
   <text x="130" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Root Hair Cell</text>
   <!-- Soil particles -->
-  <ellipse cx="30" cy="80" rx="20" ry="15" fill="#d1b28a" stroke="#92400e" stroke-width="1"/>
+  <ellipse cx="30" cy="80" rx="20" ry="15" fill="#3d2b0a" stroke="#92400e" stroke-width="1"/>
   <ellipse cx="60" cy="110" rx="18" ry="13" fill="#c4a47a" stroke="#92400e" stroke-width="1"/>
-  <ellipse cx="25" cy="145" rx="22" ry="14" fill="#d1b28a" stroke="#92400e" stroke-width="1"/>
+  <ellipse cx="25" cy="145" rx="22" ry="14" fill="#3d2b0a" stroke="#92400e" stroke-width="1"/>
   <ellipse cx="55" cy="170" rx="17" ry="12" fill="#c4a47a" stroke="#92400e" stroke-width="1"/>
   <text x="42" y="200" text-anchor="middle" font-size="10" fill="#92400e">Soil</text>
   <!-- Root hair -->
-  <ellipse cx="140" cy="160" rx="55" ry="40" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="140" cy="160" rx="55" ry="40" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="140" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Root hair</text>
   <text x="140" y="170" text-anchor="middle" font-size="10" fill="#166534">cell</text>
   <!-- Extension -->
   <path d="M85 155 Q55 120 30 90" stroke="#16a34a" stroke-width="3" fill="none"/>
-  <ellipse cx="60" cy="120" rx="25" ry="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <ellipse cx="60" cy="120" rx="25" ry="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="60" y="123" text-anchor="middle" font-size="9" fill="#166534">hair</text>
   <!-- Water arrows -->
   <line x1="68" y1="125" x2="85" y2="148" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
   <text x="52" y="140" font-size="9" fill="#1d4ed8">H₂O</text>
   <!-- Vacuole -->
-  <ellipse cx="145" cy="162" rx="28" ry="20" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,2"/>
+  <ellipse cx="145" cy="162" rx="28" ry="20" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,2"/>
   <text x="145" y="165" text-anchor="middle" font-size="9" fill="#1d4ed8">Vacuole</text>
   <!-- Osmosis label -->
   <text x="130" y="225" text-anchor="middle" font-size="10" fill="#1d4ed8">Water enters by osmosis</text>
@@ -107,18 +107,18 @@ export const note_olevel_biology_8_8_1 = {
   <text x="390" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Stomata — Guard Cells</text>
   <!-- Open stoma -->
   <text x="315" y="55" font-size="11" font-weight="bold" fill="#15803d">Open (light)</text>
-  <ellipse cx="315" cy="100" rx="20" ry="40" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
-  <ellipse cx="355" cy="100" rx="20" ry="40" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
-  <ellipse cx="335" cy="100" rx="10" ry="18" fill="#f0fdf4" stroke="none"/>
+  <ellipse cx="315" cy="100" rx="20" ry="40" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="355" cy="100" rx="20" ry="40" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="335" cy="100" rx="10" ry="18" fill="#0a2e1a" stroke="none"/>
   <text x="335" y="103" text-anchor="middle" font-size="9" fill="#166534">pore</text>
   <text x="290" y="103" text-anchor="middle" font-size="9" fill="#166534">GC</text>
   <text x="380" y="103" text-anchor="middle" font-size="9" fill="#166534">GC</text>
   <text x="315" y="158" font-size="9" fill="#166534">turgid — pore open</text>
   <!-- Closed stoma -->
   <text x="430" y="55" font-size="11" font-weight="bold" fill="#b91c1c">Closed (dark)</text>
-  <ellipse cx="430" cy="100" rx="16" ry="40" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
-  <ellipse cx="470" cy="100" rx="16" ry="40" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
-  <ellipse cx="450" cy="100" rx="3" ry="5" fill="#fee2e2" stroke="none"/>
+  <ellipse cx="430" cy="100" rx="16" ry="40" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2"/>
+  <ellipse cx="470" cy="100" rx="16" ry="40" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2"/>
+  <ellipse cx="450" cy="100" rx="3" ry="5" fill="#3d1212" stroke="none"/>
   <text x="430" y="158" font-size="9" fill="#b91c1c">flaccid — pore closed</text>
   <!-- Arrow labels -->
   <text x="390" y="195" text-anchor="middle" font-size="10" fill="#166534">Light → photosynthesis →</text>

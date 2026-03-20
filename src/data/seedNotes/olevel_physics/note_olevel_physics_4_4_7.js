@@ -121,7 +121,7 @@ export const note_olevel_physics_4_4_7 = {
         caption: 'Magnetic domains: unmagnetised (random), magnetised (aligned), and demagnetised',
         svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Box 1: Unmagnetised (random domains) -->
-  <rect x="10" y="30" width="120" height="100" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="10" y="30" width="120" height="100" rx="6" fill="#0f172a" stroke="#9ca3af" stroke-width="2"/>
   <text x="30" y="21" fill="#374151" font-weight="bold">Unmagnetised</text>
   <!-- random arrows -->
   <line x1="28" y1="55" x2="48" y2="55" stroke="#6b7280" stroke-width="2" marker-end="url(#arr)"/>
@@ -135,7 +135,7 @@ export const note_olevel_physics_4_4_7 = {
   <text x="22" y="160" fill="#6b7280">No net field</text>
 
   <!-- Box 2: Magnetised (aligned domains) -->
-  <rect x="160" y="30" width="120" height="100" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="160" y="30" width="120" height="100" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
   <text x="165" y="21" fill="#374151" font-weight="bold">Magnetised</text>
   <!-- aligned arrows all pointing right -->
   <line x1="175" y1="55" x2="195" y2="55" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
@@ -151,7 +151,7 @@ export const note_olevel_physics_4_4_7 = {
   <text x="162" y="160" fill="#7c3aed">Strong net N pole →</text>
 
   <!-- Box 3: Hard vs Soft retention -->
-  <rect x="310" y="30" width="120" height="100" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <rect x="310" y="30" width="120" height="100" rx="6" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
   <text x="315" y="21" fill="#374151" font-weight="bold">Applications</text>
   <text x="316" y="52" fill="#065f46" font-weight="bold">HARD (steel)</text>
   <text x="316" y="66" fill="#374151">Permanent magnet</text>

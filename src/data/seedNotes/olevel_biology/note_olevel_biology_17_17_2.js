@@ -68,9 +68,9 @@ export const note_olevel_biology_17_17_2 = {
       data: {
         caption: 'Overview of transcription (nucleus) and translation (ribosome)',
         svg: `<svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="520" height="260" fill="#fafafa" rx="8"/>
+  <rect width="520" height="260" fill="#0f172a" rx="8"/>
   <!-- Nucleus region -->
-  <ellipse cx="130" cy="130" rx="115" ry="100" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2" stroke-dasharray="6"/>
+  <ellipse cx="130" cy="130" rx="115" ry="100" fill="#1c3a64" stroke="#1e88e5" stroke-width="2" stroke-dasharray="6"/>
   <text x="130" y="22" text-anchor="middle" fill="#1e88e5" font-size="12" font-weight="bold">NUCLEUS</text>
   <!-- DNA double helix simplified -->
   <path d="M60,60 Q90,80 60,100 Q90,120 60,140 Q90,160 60,180" stroke="#5c6bc0" stroke-width="3" fill="none"/>
@@ -89,7 +89,7 @@ export const note_olevel_biology_17_17_2 = {
   <text x="268" y="134" text-anchor="middle" fill="#555" font-size="10">exits</text>
   <text x="268" y="146" text-anchor="middle" fill="#555" font-size="10">nucleus</text>
   <!-- Cytoplasm / Ribosome region -->
-  <rect x="295" y="75" width="210" height="150" rx="10" fill="#f3e5f5" stroke="#8e24aa" stroke-width="1.5"/>
+  <rect x="295" y="75" width="210" height="150" rx="10" fill="#3b1460" stroke="#8e24aa" stroke-width="1.5"/>
   <text x="400" y="92" text-anchor="middle" fill="#6a1b9a" font-size="11" font-weight="bold">CYTOPLASM / RIBOSOME</text>
   <!-- Ribosome shape -->
   <ellipse cx="400" cy="145" rx="45" ry="22" fill="#ce93d8" stroke="#8e24aa" stroke-width="2"/>
@@ -101,7 +101,7 @@ export const note_olevel_biology_17_17_2 = {
   <text x="360" y="162" text-anchor="middle" fill="#e65100" font-size="9">UUU</text>
   <text x="385" y="162" text-anchor="middle" fill="#e65100" font-size="9">GCC</text>
   <!-- tRNA -->
-  <path d="M360,145 L360,108 Q370,98 380,108 L380,145" stroke="#388e3c" stroke-width="2" fill="#c8e6c9"/>
+  <path d="M360,145 L360,108 Q370,98 380,108 L380,145" stroke="#388e3c" stroke-width="2" fill="#0a2e1a"/>
   <text x="370" y="105" text-anchor="middle" fill="#1b5e20" font-size="9">tRNA</text>
   <!-- Amino acid on tRNA -->
   <circle cx="370" cy="95" r="10" fill="#ffb300"/>

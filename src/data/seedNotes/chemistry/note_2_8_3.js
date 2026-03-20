@@ -84,7 +84,7 @@ export const note_chemistry_2_8_3 = {
                 svg: `<svg viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <text x="280" y="16" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">Group 1 Periodic Trends</text>
   <!-- IE₁ panel -->
-  <rect x="0" y="22" width="268" height="210" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <rect x="0" y="22" width="268" height="210" rx="6" fill="#1c3a64" stroke="#93c5fd" stroke-width="1"/>
   <text x="134" y="40" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">First Ionisation Energy</text>
   <text x="134" y="53" text-anchor="middle" fill="#64748b" font-size="10">decreases down Group 1</text>
   <!-- IE₁ bar chart -->
@@ -106,7 +106,7 @@ export const note_chemistry_2_8_3 = {
   <text x="231" y="111" text-anchor="middle" fill="#1e40af" font-size="9">376</text>
   <text x="134" y="225" text-anchor="middle" fill="#64748b" font-size="9">kJ mol⁻¹</text>
   <!-- Atomic radius panel -->
-  <rect x="290" y="22" width="268" height="210" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <rect x="290" y="22" width="268" height="210" rx="6" fill="#0a2e1a" stroke="#86efac" stroke-width="1"/>
   <text x="424" y="40" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">Atomic Radius (pm)</text>
   <text x="424" y="53" text-anchor="middle" fill="#64748b" font-size="10">increases down Group 1</text>
   <!-- Radii: Li=152, Na=186, K=227, Rb=248, Cs=265 — scale circles by value -->
@@ -229,39 +229,39 @@ export const note_chemistry_2_8_3 = {
   <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker></defs>
   <text x="14" y="108" fill="#94a3b8" font-size="9" transform="rotate(-90,14,108)">Down group →</text>
   <!-- Li row -->
-  <rect x="45" y="28" width="60" height="28" rx="4" fill="#dbeafe"/>
+  <rect x="45" y="28" width="60" height="28" rx="4" fill="#1e3a8a"/>
   <text x="75" y="47" text-anchor="middle" fill="#1e40af" font-weight="bold">Li</text>
   <rect x="115" y="28" width="160" height="28" rx="4" fill="#3b82f6"/>
-  <text x="195" y="47" text-anchor="middle" fill="white" font-size="10">Simple oxide Li₂O (O²⁻)</text>
-  <rect x="285" y="28" width="270" height="28" rx="4" fill="#f1f5f9"/>
+  <text x="195" y="47" text-anchor="middle" fill="#1e293b" font-size="10">Simple oxide Li₂O (O²⁻)</text>
+  <rect x="285" y="28" width="270" height="28" rx="4" fill="#1e293b"/>
   <text x="420" y="47" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <!-- Na row -->
-  <rect x="45" y="62" width="60" height="28" rx="4" fill="#dbeafe"/>
+  <rect x="45" y="62" width="60" height="28" rx="4" fill="#1e3a8a"/>
   <text x="75" y="81" text-anchor="middle" fill="#1e40af" font-weight="bold">Na</text>
   <rect x="115" y="62" width="160" height="28" rx="4" fill="#3b82f6"/>
-  <text x="195" y="81" text-anchor="middle" fill="white" font-size="10">Li₂O-type (limited O₂)</text>
+  <text x="195" y="81" text-anchor="middle" fill="#1e293b" font-size="10">Li₂O-type (limited O₂)</text>
   <rect x="285" y="62" width="120" height="28" rx="4" fill="#7c3aed"/>
-  <text x="345" y="81" text-anchor="middle" fill="white" font-size="10">Peroxide Na₂O₂</text>
-  <rect x="415" y="62" width="140" height="28" rx="4" fill="#f1f5f9"/>
+  <text x="345" y="81" text-anchor="middle" fill="#1e293b" font-size="10">Peroxide Na₂O₂</text>
+  <rect x="415" y="62" width="140" height="28" rx="4" fill="#1e293b"/>
   <text x="485" y="81" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <!-- K row -->
-  <rect x="45" y="96" width="60" height="28" rx="4" fill="#dbeafe"/>
+  <rect x="45" y="96" width="60" height="28" rx="4" fill="#1e3a8a"/>
   <text x="75" y="115" text-anchor="middle" fill="#1e40af" font-weight="bold">K</text>
-  <rect x="115" y="96" width="160" height="28" rx="4" fill="#f1f5f9"/>
+  <rect x="115" y="96" width="160" height="28" rx="4" fill="#1e293b"/>
   <text x="195" y="115" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <rect x="285" y="96" width="120" height="28" rx="4" fill="#7c3aed"/>
-  <text x="345" y="115" text-anchor="middle" fill="white" font-size="10">Peroxide K₂O₂</text>
+  <text x="345" y="115" text-anchor="middle" fill="#1e293b" font-size="10">Peroxide K₂O₂</text>
   <rect x="415" y="96" width="140" height="28" rx="4" fill="#dc2626"/>
-  <text x="485" y="115" text-anchor="middle" fill="white" font-size="10">Superoxide KO₂ (O₂⁻)</text>
+  <text x="485" y="115" text-anchor="middle" fill="#1e293b" font-size="10">Superoxide KO₂ (O₂⁻)</text>
   <!-- Rb/Cs row -->
-  <rect x="45" y="130" width="60" height="28" rx="4" fill="#dbeafe"/>
+  <rect x="45" y="130" width="60" height="28" rx="4" fill="#1e3a8a"/>
   <text x="75" y="149" text-anchor="middle" fill="#1e40af" font-weight="bold">Rb, Cs</text>
-  <rect x="115" y="130" width="160" height="28" rx="4" fill="#f1f5f9"/>
+  <rect x="115" y="130" width="160" height="28" rx="4" fill="#1e293b"/>
   <text x="195" y="149" text-anchor="middle" fill="#64748b" font-size="10">—</text>
-  <rect x="285" y="130" width="120" height="28" rx="4" fill="#f1f5f9"/>
+  <rect x="285" y="130" width="120" height="28" rx="4" fill="#1e293b"/>
   <text x="345" y="149" text-anchor="middle" fill="#64748b" font-size="10">—</text>
   <rect x="415" y="130" width="140" height="28" rx="4" fill="#dc2626"/>
-  <text x="485" y="149" text-anchor="middle" fill="white" font-size="10">Superoxide XO₂</text>
+  <text x="485" y="149" text-anchor="middle" fill="#1e293b" font-size="10">Superoxide XO₂</text>
   <!-- Legend -->
   <rect x="45" y="168" width="12" height="12" fill="#3b82f6" rx="2"/>
   <text x="62" y="179" fill="#1e40af" font-size="9">Simple oxide X₂O</text>
@@ -491,29 +491,29 @@ export const note_chemistry_2_8_3 = {
   <text x="280" y="14" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">Group 1 Flame Test Colours</text>
   <!-- Li -->
   <rect x="10" y="24" width="95" height="75" rx="8" fill="#dc2626"/>
-  <text x="57" y="55" text-anchor="middle" fill="white" font-weight="bold" font-size="24">🔴</text>
-  <text x="57" y="76" text-anchor="middle" fill="white" font-weight="bold" font-size="13">Li</text>
-  <text x="57" y="91" text-anchor="middle" fill="#fecaca" font-size="9">Crimson Red</text>
+  <text x="57" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔴</text>
+  <text x="57" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Li</text>
+  <text x="57" y="91" text-anchor="middle" fill="#7f1d1d" font-size="9">Crimson Red</text>
   <!-- Na -->
-  <rect x="115" y="24" width="95" height="75" rx="8" fill="#f59e0b"/>
-  <text x="162" y="55" text-anchor="middle" fill="white" font-weight="bold" font-size="24">🟡</text>
-  <text x="162" y="76" text-anchor="middle" fill="white" font-weight="bold" font-size="13">Na</text>
-  <text x="162" y="91" text-anchor="middle" fill="#fef3c7" font-size="9">Yellow-Orange</text>
+  <rect x="115" y="24" width="95" height="75" rx="8" fill="#78350f"/>
+  <text x="162" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🟡</text>
+  <text x="162" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Na</text>
+  <text x="162" y="91" text-anchor="middle" fill="#78350f" font-size="9">Yellow-Orange</text>
   <!-- K -->
   <rect x="220" y="24" width="95" height="75" rx="8" fill="#7c3aed"/>
-  <text x="267" y="55" text-anchor="middle" fill="white" font-weight="bold" font-size="24">🔮</text>
-  <text x="267" y="76" text-anchor="middle" fill="white" font-weight="bold" font-size="13">K</text>
-  <text x="267" y="91" text-anchor="middle" fill="#ede9fe" font-size="9">Lilac</text>
+  <text x="267" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔮</text>
+  <text x="267" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">K</text>
+  <text x="267" y="91" text-anchor="middle" fill="#2d1b69" font-size="9">Lilac</text>
   <!-- Rb -->
   <rect x="325" y="24" width="95" height="75" rx="8" fill="#b91c1c"/>
-  <text x="372" y="55" text-anchor="middle" fill="white" font-weight="bold" font-size="24">🟣</text>
-  <text x="372" y="76" text-anchor="middle" fill="white" font-weight="bold" font-size="13">Rb</text>
-  <text x="372" y="91" text-anchor="middle" fill="#fecaca" font-size="9">Red-Violet</text>
+  <text x="372" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🟣</text>
+  <text x="372" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Rb</text>
+  <text x="372" y="91" text-anchor="middle" fill="#7f1d1d" font-size="9">Red-Violet</text>
   <!-- Cs -->
   <rect x="430" y="24" width="95" height="75" rx="8" fill="#1d4ed8"/>
-  <text x="477" y="55" text-anchor="middle" fill="white" font-weight="bold" font-size="24">🔵</text>
-  <text x="477" y="76" text-anchor="middle" fill="white" font-weight="bold" font-size="13">Cs</text>
-  <text x="477" y="91" text-anchor="middle" fill="#bfdbfe" font-size="9">Blue-Violet</text>
+  <text x="477" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔵</text>
+  <text x="477" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Cs</text>
+  <text x="477" y="91" text-anchor="middle" fill="#1e3a8a" font-size="9">Blue-Violet</text>
   <text x="280" y="122" text-anchor="middle" fill="#64748b" font-size="9">* K: use cobalt-blue glass to see lilac when Na contamination is present</text>
 </svg>`
             },

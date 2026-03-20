@@ -56,48 +56,48 @@ export const note_olevel_biology_11_11_0 = {
       data: {
         caption: 'Fick\'s Law illustrated: how surface area, distance, and concentration gradient affect diffusion rate',
         svg: `<svg viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="660" height="320" fill="#f8fafc" rx="12"/>
+  <rect width="660" height="320" fill="#0f172a" rx="12"/>
   <text x="330" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Fick\'s Law — Factors Affecting Diffusion Rate</text>
   <!-- Factor 1: Surface Area -->
-  <rect x="20" y="45" width="190" height="240" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="45" width="190" height="240" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="115" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Surface Area</text>
   <!-- Small surface -->
-  <rect x="40" y="78" width="60" height="60" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="40" y="78" width="60" height="60" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="70" y="148" text-anchor="middle" font-size="9" fill="#1e40af">Small surface</text>
   <text x="70" y="160" text-anchor="middle" font-size="9" fill="#64748b">Few molecules</text>
   <text x="70" y="171" text-anchor="middle" font-size="9" fill="#64748b">can cross at once</text>
   <!-- Large surface -->
-  <rect x="120" y="78" width="75" height="75" rx="4" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="120" y="78" width="75" height="75" rx="4" fill="#1250a0" stroke="#1d4ed8" stroke-width="2"/>
   <text x="157" y="163" text-anchor="middle" font-size="9" fill="#1d4ed8">Large surface</text>
   <text x="157" y="174" text-anchor="middle" font-size="9" fill="#64748b">More molecules</text>
   <text x="157" y="185" text-anchor="middle" font-size="9" fill="#64748b">cross simultaneously</text>
   <text x="115" y="206" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">↑ Area = ↑ Rate</text>
   <!-- Alveoli note -->
-  <rect x="32" y="215" width="156" height="58" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <rect x="32" y="215" width="156" height="58" rx="6" fill="#1c3a64" stroke="#93c5fd" stroke-width="1"/>
   <text x="110" y="232" text-anchor="middle" font-size="9" fill="#1e40af">Alveoli: ~70 m²</text>
   <text x="110" y="245" text-anchor="middle" font-size="9" fill="#64748b">= 35 × a squash court</text>
   <text x="110" y="258" text-anchor="middle" font-size="9" fill="#64748b">700 million alveoli</text>
   <!-- Factor 2: Diffusion Distance -->
-  <rect x="235" y="45" width="190" height="240" rx="10" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="235" y="45" width="190" height="240" rx="10" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
   <text x="330" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Diffusion Distance</text>
   <!-- Thick membrane -->
-  <rect x="250" y="78" width="70" height="50" rx="4" fill="#6ee7b7" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="250" y="78" width="70" height="50" rx="4" fill="#065f46" stroke="#10b981" stroke-width="1.5"/>
   <text x="285" y="100" text-anchor="middle" font-size="9" fill="#065f46">Thick</text>
   <text x="285" y="138" text-anchor="middle" font-size="9" fill="#64748b">Long distance →</text>
   <text x="285" y="149" text-anchor="middle" font-size="9" fill="#64748b">slow diffusion</text>
   <!-- Thin membrane -->
-  <rect x="340" y="104" width="70" height="8" rx="2" fill="#6ee7b7" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="340" y="104" width="70" height="8" rx="2" fill="#065f46" stroke="#10b981" stroke-width="1.5"/>
   <text x="375" y="138" text-anchor="middle" font-size="9" fill="#065f46">Thin</text>
   <text x="375" y="149" text-anchor="middle" font-size="9" fill="#064e3b">Short distance →</text>
   <text x="375" y="160" text-anchor="middle" font-size="9" fill="#064e3b">fast diffusion</text>
   <text x="330" y="180" text-anchor="middle" font-size="10" fill="#065f46" font-weight="bold">↓ Thickness = ↑ Rate</text>
-  <rect x="247" y="193" width="156" height="80" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+  <rect x="247" y="193" width="156" height="80" rx="6" fill="#0a2e1a" stroke="#a7f3d0" stroke-width="1"/>
   <text x="325" y="212" text-anchor="middle" font-size="9" fill="#065f46">Alveolar wall: ~0.2 µm</text>
   <text x="325" y="226" text-anchor="middle" font-size="9" fill="#64748b">1 alveolar cell thick</text>
   <text x="325" y="239" text-anchor="middle" font-size="9" fill="#64748b">+ 1 capillary cell thick</text>
   <text x="325" y="260" text-anchor="middle" font-size="9" fill="#065f46">Very short diffusion path</text>
   <!-- Factor 3: Concentration Gradient -->
-  <rect x="450" y="45" width="190" height="240" rx="10" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <rect x="450" y="45" width="190" height="240" rx="10" fill="#44370a" stroke="#eab308" stroke-width="1.5"/>
   <text x="545" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#713f12">Concentration</text>
   <text x="545" y="76" text-anchor="middle" font-size="11" font-weight="bold" fill="#713f12">Gradient</text>
   <!-- Gradient arrows -->
@@ -107,7 +107,7 @@ export const note_olevel_biology_11_11_0 = {
   <text x="545" y="148" text-anchor="middle" font-size="9" fill="#64748b">Steep gradient</text>
   <text x="545" y="160" text-anchor="middle" font-size="9" fill="#64748b">= fast diffusion</text>
   <text x="545" y="186" text-anchor="middle" font-size="10" fill="#b45309" font-weight="bold">↑ Gradient = ↑ Rate</text>
-  <rect x="462" y="200" width="166" height="72" rx="6" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+  <rect x="462" y="200" width="166" height="72" rx="6" fill="#44370a" stroke="#fde68a" stroke-width="1"/>
   <text x="545" y="218" text-anchor="middle" font-size="9" fill="#713f12">Maintained by:</text>
   <text x="545" y="232" text-anchor="middle" font-size="9" fill="#64748b">• Ventilation (fresh air)</text>
   <text x="545" y="246" text-anchor="middle" font-size="9" fill="#64748b">• Continuous blood flow</text>

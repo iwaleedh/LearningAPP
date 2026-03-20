@@ -41,7 +41,7 @@ export const note_olevel_physics_2_1_4 = {
         caption: 'Net movement of particles from high concentration (left) to low concentration (right) over time',
         svg: `<svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif" font-size="12">
   <!-- Box 1: Initial state -->
-  <rect x="10" y="30" width="250" height="160" rx="8" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+  <rect x="10" y="30" width="250" height="160" rx="8" fill="#3b1460" stroke="#9333ea" stroke-width="2"/>
   <text x="135" y="22" text-anchor="middle" fill="#9333ea" font-weight="600" font-size="13">Initial State</text>
   <!-- High conc left side -->
   <circle cx="45"  cy="70"  r="8" fill="#9333ea" opacity="0.9"/>
@@ -65,7 +65,7 @@ export const note_olevel_physics_2_1_4 = {
   <text x="275" y="115" text-anchor="middle" fill="#374151" font-size="20">→</text>
 
   <!-- Box 2: After diffusion -->
-  <rect x="300" y="30" width="250" height="160" rx="8" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+  <rect x="300" y="30" width="250" height="160" rx="8" fill="#3b1460" stroke="#9333ea" stroke-width="2"/>
   <text x="425" y="22" text-anchor="middle" fill="#9333ea" font-weight="600" font-size="13">After Diffusion</text>
   <!-- Uniform distribution -->
   <circle cx="325" cy="65"  r="8" fill="#9333ea" opacity="0.75"/>

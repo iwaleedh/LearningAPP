@@ -34,7 +34,7 @@ export const note_olevel_maths_core_4_5_3 = {
     .eq   { font-weight: 700; fill: #ef4444; font-size: 11px; }
   </style>
   <!-- Circle centre O -->
-  <circle cx="300" cy="150" r="90" fill="#e0e7ff" fill-opacity="0.25" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="300" cy="150" r="90" fill="#2d2f72" fill-opacity="0.25" stroke="#6366f1" stroke-width="2"/>
   <circle cx="300" cy="150" r="4" fill="#6366f1"/>
   <text x="306" y="155" class="lbl" fill="#6366f1">O</text>
   <!-- External point P -->

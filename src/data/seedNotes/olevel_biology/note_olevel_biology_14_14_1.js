@@ -44,7 +44,7 @@ export const note_olevel_biology_14_14_1 = {
   <text x="5" y="130" fill="#1d4ed8" font-size="10">Dendrites</text>
 
   <!-- Cell body -->
-  <circle cx="135" cy="140" r="28" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
+  <circle cx="135" cy="140" r="28" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2.5"/>
   <circle cx="135" cy="140" r="10" fill="#1d4ed8" opacity="0.5"/>
   <text x="135" y="183" text-anchor="middle" fill="#1e3a8a" font-size="10">Cell body</text>
   <text x="135" y="193" text-anchor="middle" fill="#1e3a8a" font-size="10">(nucleus)</text>
@@ -52,12 +52,12 @@ export const note_olevel_biology_14_14_1 = {
   <!-- Axon with myelin segments -->
   <line x1="163" y1="140" x2="480" y2="140" stroke="#7c3aed" stroke-width="3"/>
   <!-- Myelin sheath segments -->
-  <rect x="170" y="132" width="40" height="16" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="218" y="132" width="40" height="16" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="266" y="132" width="40" height="16" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="314" y="132" width="40" height="16" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="362" y="132" width="40" height="16" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="410" y="132" width="40" height="16" rx="8" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="170" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="218" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="266" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="314" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="362" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="410" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
   <!-- Node of Ranvier labels -->
   <text x="212" y="167" fill="#7c3aed" font-size="9">Node of</text>
   <text x="210" y="177" fill="#7c3aed" font-size="9">Ranvier</text>
@@ -70,7 +70,7 @@ export const note_olevel_biology_14_14_1 = {
   <text x="320" y="175" fill="#7c3aed" font-size="10">Axon</text>
 
   <!-- Synaptic knob -->
-  <ellipse cx="510" cy="140" rx="30" ry="22" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <ellipse cx="510" cy="140" rx="30" ry="22" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <!-- Vesicles -->
   <circle cx="500" cy="138" r="5" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
   <circle cx="515" cy="132" r="5" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
@@ -80,12 +80,12 @@ export const note_olevel_biology_14_14_1 = {
   <text x="510" y="119" text-anchor="middle" fill="#92400e" font-size="10">knob + vesicles</text>
 
   <!-- Synapse gap -->
-  <rect x="540" y="118" width="8" height="44" fill="#f0f9ff" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="540" y="118" width="8" height="44" fill="#1c3a64" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 2"/>
   <text x="548" y="110" fill="#64748b" font-size="9">Synaptic</text>
   <text x="550" y="119" fill="#64748b" font-size="9">gap</text>
 
   <!-- Post-synaptic membrane -->
-  <rect x="548" y="118" width="8" height="44" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="548" y="118" width="8" height="44" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <!-- Receptors on post-synaptic -->
   <rect x="548" y="124" width="8" height="6" rx="2" fill="#16a34a"/>
   <rect x="548" y="138" width="8" height="6" rx="2" fill="#16a34a"/>

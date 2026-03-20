@@ -19,9 +19,9 @@ export const note_physics_4_17_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Centripetal Force (F = ma)</text>
-  <rect x="60" y="80" width="280" height="70" fill="#fef2f2" rx="8" stroke="#ef4444" stroke-width="2"/>
+  <rect x="60" y="80" width="280" height="70" fill="#3d1212" rx="8" stroke="#ef4444" stroke-width="2"/>
   <text x="200" y="115" font-family="Arial" font-size="20" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = mv² / r</text>
   <text x="200" y="140" font-family="Arial" font-size="20" fill="#b91c1c" font-weight="bold" text-anchor="middle">F = mrω²</text>
   <text x="200" y="180" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Required resultant force to maintain circular motion</text>
@@ -34,9 +34,9 @@ export const note_physics_4_17_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="220" fill="#0f172a" rx="8"/>
   <circle cx="200" cy="110" r="70" fill="none" stroke="#94a3b8" stroke-dasharray="4,4"/>
-  <circle cx="200" cy="110" r="20" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="200" cy="110" r="20" fill="#44370a" stroke="#f59e0b" stroke-width="2"/>
   <circle cx="200" cy="40" r="8" fill="#3b82f6"/>
   <path d="M 200 40 L 200 75" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-red)"/>
   <text x="220" y="65" font-family="Arial" font-size="14" fill="#ef4444">Gravity (F_g)</text>
@@ -51,13 +51,13 @@ export const note_physics_4_17_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="500" height="240" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="500" height="240" fill="#0f172a" rx="8"/>
   <text x="250" y="22" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Centripetal Force: Always Directed Towards Centre</text>
   <circle cx="200" cy="130" r="85" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,4"/>
   <circle cx="200" cy="130" r="5" fill="#334155"/>
   <text x="200" y="147" font-family="Arial" font-size="11" fill="#334155" text-anchor="middle">centre</text>
   <circle cx="200" cy="45" r="10" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="200" y="49" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">m</text>
+  <text x="200" y="49" font-family="Arial" font-size="10" fill="#1e293b" text-anchor="middle">m</text>
   <line x1="200" y1="55" x2="200" y2="95" stroke="#ef4444" stroke-width="3" marker-end="url(#enr-arr-red)"/>
   <text x="215" y="80" font-family="Arial" font-size="12" fill="#ef4444" font-weight="bold">F_c = mv²/r</text>
   <line x1="210" y1="45" x2="258" y2="45" stroke="#10b981" stroke-width="3" marker-end="url(#enr-arr-green)"/>

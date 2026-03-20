@@ -34,7 +34,7 @@ export const note_olevel_chemistry_10_10_3 = {
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Land and Lake -->
-  <path d="M 0 100 Q 50 100, 100 120 T 150 160 L 600 160 L 600 300 L 0 300 Z" fill="#93c5fd" opacity="0.4" />
+  <path d="M 0 100 Q 50 100, 100 120 T 150 160 L 600 160 L 600 300 L 0 300 Z" fill="#1250a0" opacity="0.4" />
   <path d="M 0 100 Q 50 100, 100 120 T 150 160 L 150 300 L 0 300 Z" fill="#84cc16" opacity="0.3" />
   
   <text x="50" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#4d7c0f">Farm Land</text>
@@ -42,20 +42,20 @@ export const note_olevel_chemistry_10_10_3 = {
 
   <!-- Step 1: Run-off -->
   <path d="M 60 110 Q 100 130, 140 150" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-red)"/>
-  <rect x="25" y="115" width="20" height="20" rx="10" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="25" y="115" width="20" height="20" rx="10" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="35" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">1</text>
   <text x="65" y="105" font-family="var(--font-sans)" font-size="10" fill="#ef4444">Fertiliser run-off</text>
   <text x="65" y="117" font-family="var(--font-sans)" font-size="10" fill="#ef4444">(Nitrates & Phosphates)</text>
 
   <!-- Step 2: Algal Bloom -->
   <path d="M 150 160 Q 300 160, 450 160" fill="none" stroke="#22c55e" stroke-width="15" opacity="0.8"/>
-  <rect x="235" y="125" width="20" height="20" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <rect x="235" y="125" width="20" height="20" rx="10" fill="#0a2e1a" stroke="#22c55e" stroke-width="2"/>
   <text x="245" y="140" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="middle">2</text>
   <text x="270" y="135" font-family="var(--font-sans)" font-size="10" fill="#166534" font-weight="bold">Algal bloom on surface</text>
   <text x="270" y="147" font-family="var(--font-sans)" font-size="10" fill="#166534">blocks sunlight</text>
 
   <!-- Sun & blocked rays -->
-  <circle cx="500" cy="50" r="20" fill="#fde047" />
+  <circle cx="500" cy="50" r="20" fill="#44370a" />
   <path d="M 500 70 L 500 140" fill="none" stroke="#facc15" stroke-width="2" stroke-dasharray="4,2"/>
   <path d="M 480 65 L 430 140" fill="none" stroke="#facc15" stroke-width="2" stroke-dasharray="4,2"/>
   <path d="M 460 145 L 510 145" fill="none" stroke="#ef4444" stroke-width="3"/> <!-- X blocking sunlight -->
@@ -65,14 +65,14 @@ export const note_olevel_chemistry_10_10_3 = {
   <path d="M 350 250 Q 340 200, 360 170" fill="none" stroke="#166534" stroke-width="3"/>
   <path d="M 320 220 L 340 240 L 310 240 Z" fill="#ea580c"/> <!-- Dead plants -->
   
-  <rect x="375" y="215" width="20" height="20" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <rect x="375" y="215" width="20" height="20" rx="10" fill="#532407" stroke="#ea580c" stroke-width="2"/>
   <text x="385" y="230" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ea580c" text-anchor="middle">3</text>
   <text x="405" y="225" font-family="var(--font-sans)" font-size="10" fill="#c2410c" font-weight="bold">Underwater plants die</text>
   <text x="405" y="237" font-family="var(--font-sans)" font-size="10" fill="#c2410c">(no light for photosynthesis)</text>
 
   <!-- Step 4 & 5: Bacteria & O2 drop -->
-  <circle cx="200" cy="220" r="15" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
-  <text x="200" y="224" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">4/5</text>
+  <circle cx="200" cy="220" r="15" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
+  <text x="200" y="224" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">4/5</text>
   <text x="170" y="245" font-family="var(--font-sans)" font-size="10" fill="#dc2626" font-weight="bold">Decomposing bacteria multiply</text>
   <text x="170" y="257" font-family="var(--font-sans)" font-size="10" fill="#dc2626">and use up dissolved O₂</text>
 
@@ -81,7 +81,7 @@ export const note_olevel_chemistry_10_10_3 = {
   <path d="M 450 200 C 470 190, 490 190, 510 200 L 525 190 L 525 210 Z" fill="#9ca3af" transform="scale(1, -1) translate(0, -400)"/>
   <text x="480" y="200" font-family="var(--font-sans)" font-size="8" font-weight="bold" fill="#111827">X X</text>
   
-  <rect x="525" y="225" width="20" height="20" rx="10" fill="#f3f4f6" stroke="#4b5563" stroke-width="2"/>
+  <rect x="525" y="225" width="20" height="20" rx="10" fill="#0f172a" stroke="#4b5563" stroke-width="2"/>
   <text x="535" y="240" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#4b5563" text-anchor="middle">7</text>
   <text x="500" y="260" font-family="var(--font-sans)" font-size="10" fill="#1f2937" font-weight="bold">Fish suffocate & die</text>
 

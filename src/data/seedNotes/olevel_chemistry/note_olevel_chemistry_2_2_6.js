@@ -85,28 +85,28 @@ export const note_olevel_chemistry_2_2_6 = {
     
     <!-- Top Layer -->
     <circle cx="0" cy="0" r="14" fill="url(#po)"/>
-    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
     <circle cx="40" cy="0" r="14" fill="url(#ne)"/>
-    <text x="40" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <text x="40" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">-</text>
     <circle cx="80" cy="0" r="14" fill="url(#po)"/>
-    <text x="80" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <text x="80" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
     <circle cx="120" cy="0" r="14" fill="url(#ne)"/>
-    <text x="120" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <text x="120" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">-</text>
 
     <!-- Bottom Layer -->
     <circle cx="0" cy="40" r="14" fill="url(#ne)"/>
-    <text x="0" y="43" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <text x="0" y="43" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">-</text>
     <circle cx="40" cy="40" r="14" fill="url(#po)"/>
-    <text x="40" y="44" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <text x="40" y="44" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
     <circle cx="80" cy="40" r="14" fill="url(#ne)"/>
-    <text x="80" y="43" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <text x="80" y="43" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">-</text>
     <circle cx="120" cy="40" r="14" fill="url(#po)"/>
-    <text x="120" y="44" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <text x="120" y="44" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
 
     <!-- Force Hammer -->
     <path d="M-60 -10 L-20 -10 L-20 10 L-60 10 Z" fill="#64748b"/>
     <path d="M-40 -20 L-20 -20 L-10 0 L-20 20 L-40 20 Z" fill="#94a3b8"/>
-    <text x="-35" y="4" fill="#fff" font-weight="bold" font-family="var(--font-sans)">Hit</text>
+    <text x="-35" y="4" fill="#1e293b" font-weight="bold" font-family="var(--font-sans)">Hit</text>
     <path d="M-15 0 L-5 0 L-10 -5 M-5 0 L-10 5" stroke="#000" stroke-width="2" fill="none"/>
   </g>
 
@@ -121,21 +121,21 @@ export const note_olevel_chemistry_2_2_6 = {
     <!-- Top Layer (Shifted Right by 40) -->
     <g transform="translate(40, 0)">
       <circle cx="0" cy="0" r="14" fill="url(#po)"/>
-      <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+      <text x="0" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
       <circle cx="40" cy="0" r="14" fill="url(#ne)"/>
-      <text x="40" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+      <text x="40" y="3" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">-</text>
       <circle cx="80" cy="0" r="14" fill="url(#po)"/>
-      <text x="80" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+      <text x="80" y="4" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
     </g>
 
     <!-- Bottom Layer (Stays) -->
     <!-- Removed one for alignment visualization -->
     <circle cx="40" cy="50" r="14" fill="url(#po)"/>
-    <text x="40" y="54" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <text x="40" y="54" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
     <circle cx="80" cy="50" r="14" fill="url(#ne)"/>
-    <text x="80" y="53" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">-</text>
+    <text x="80" y="53" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">-</text>
     <circle cx="120" cy="50" r="14" fill="url(#po)"/>
-    <text x="120" y="54" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#fff">+</text>
+    <text x="120" y="54" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" fill="#1e293b">+</text>
 
     <!-- Repulsion lines -->
     <path d="M 40 18 L 40 32 M 35 22 L 40 18 L 45 22 M 35 28 L 40 32 L 45 28" stroke="#ef4444" stroke-width="2" fill="none"/>

@@ -61,8 +61,8 @@ export const note_olevel_physics_4_1_2 = {
   <!-- Bar magnet -->
   <rect x="130" y="100" width="70" height="30" rx="0" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>
   <rect x="200" y="100" width="70" height="30" rx="0" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="165" y="120" text-anchor="middle" fill="white" font-weight="bold" font-size="14">N</text>
-  <text x="235" y="120" text-anchor="middle" fill="white" font-weight="bold" font-size="14">S</text>
+  <text x="165" y="120" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">N</text>
+  <text x="235" y="120" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">S</text>
 
   <!-- Field lines arcing above -->
   <path d="M 155 100 Q 190 40 235 100" fill="none" stroke="#6366f1" stroke-width="1.5"/>

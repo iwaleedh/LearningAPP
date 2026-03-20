@@ -37,27 +37,27 @@ export const note_chemistry_5_16_8 = {
         svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270' style='font-family:Arial,sans-serif;background:#eff6ff;border-radius:8px'>
   <text x='250' y='18' font-size='13' font-weight='bold' fill='#1e3a5f' text-anchor='middle'>CP12: Electrochemical Cell — Copper/Silver Example</text>
   <!-- LEFT BEAKER: Cu/CuSO4 -->
-  <rect x='30' y='90' width='130' height='120' rx='4' fill='#dbeafe' stroke='#1d4ed8' stroke-width='1.5'/>
-  <rect x='80' y='60' width='14' height='110' rx='3' fill='#f59e0b' stroke='#92400e' stroke-width='1.5'/>
+  <rect x='30' y='90' width='130' height='120' rx='4' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='1.5'/>
+  <rect x='80' y='60' width='14' height='110' rx='3' fill='#78350f' stroke='#92400e' stroke-width='1.5'/>
   <text x='87' y='55' font-size='10' font-weight='bold' fill='#92400e' text-anchor='middle'>Cu</text>
   <text x='87' y='44' font-size='8' fill='#374151' text-anchor='middle'>electrode</text>
   <text x='95' y='135' font-size='9' font-weight='bold' fill='#1d4ed8' text-anchor='middle'>CuSO₄(aq)</text>
   <text x='95' y='148' font-size='8' fill='#374151' text-anchor='middle'>1 mol dm⁻³, 298 K</text>
   <text x='95' y='195' font-size='8' fill='#dc2626' font-weight='bold' text-anchor='middle'>OXIDATION (left)</text>
   <!-- RIGHT BEAKER: Ag/AgNO3 -->
-  <rect x='340' y='90' width='130' height='120' rx='4' fill='#f3f4f6' stroke='#6b7280' stroke-width='1.5'/>
-  <rect x='400' y='60' width='14' height='110' rx='3' fill='#e5e7eb' stroke='#374151' stroke-width='2'/>
+  <rect x='340' y='90' width='130' height='120' rx='4' fill='#0f172a' stroke='#6b7280' stroke-width='1.5'/>
+  <rect x='400' y='60' width='14' height='110' rx='3' fill='#1e293b' stroke='#374151' stroke-width='2'/>
   <text x='407' y='55' font-size='10' font-weight='bold' fill='#374151' text-anchor='middle'>Ag</text>
   <text x='407' y='44' font-size='8' fill='#374151' text-anchor='middle'>electrode</text>
   <text x='405' y='135' font-size='9' font-weight='bold' fill='#374151' text-anchor='middle'>AgNO₃(aq)</text>
   <text x='405' y='148' font-size='8' fill='#374151' text-anchor='middle'>1 mol dm⁻³, 298 K</text>
   <text x='405' y='195' font-size='8' fill='#16a34a' font-weight='bold' text-anchor='middle'>REDUCTION (right)</text>
   <!-- Salt bridge -->
-  <rect x='175' y='95' width='150' height='22' rx='10' fill='#fef9c3' stroke='#ca8a04' stroke-width='1.5'/>
+  <rect x='175' y='95' width='150' height='22' rx='10' fill='#44370a' stroke='#ca8a04' stroke-width='1.5'/>
   <text x='250' y='107' font-size='9' font-weight='bold' fill='#78350f' text-anchor='middle'>SALT BRIDGE</text>
   <text x='250' y='124' font-size='8' fill='#374151' text-anchor='middle'>filter paper in saturated KNO₃</text>
   <!-- Voltmeter -->
-  <rect x='190' y='28' width='120' height='36' rx='8' fill='#fff' stroke='#374151' stroke-width='2'/>
+  <rect x='190' y='28' width='120' height='36' rx='8' fill='#1e293b' stroke='#374151' stroke-width='2'/>
   <text x='250' y='44' font-size='11' font-weight='bold' fill='#374151' text-anchor='middle'>VOLTMETER</text>
   <text x='250' y='57' font-size='9' fill='#374151' text-anchor='middle'>high resistance ≥10 MΩ</text>
   <!-- Wires -->

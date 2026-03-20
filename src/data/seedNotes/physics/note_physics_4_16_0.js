@@ -19,7 +19,7 @@ export const note_physics_4_16_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <path d="M 50 150 L 350 150" stroke="#334155" stroke-width="2"/>
   <rect x="100" y="110" width="40" height="40" fill="#3b82f6" rx="4"/>
   <path d="M 150 130 L 220 130" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow)"/>
@@ -40,7 +40,7 @@ export const note_physics_4_16_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="220" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="220" fill="#0f172a" rx="8"/>
   <path d="M 50 180 L 350 180" stroke="#334155" stroke-width="2"/>
   <path d="M 50 180 L 50 50" stroke="#334155" stroke-width="2"/>
   <path d="M 100 180 Q 150 60 200 60 T 300 180" stroke="#3b82f6" stroke-width="3" fill="none"/>
@@ -58,16 +58,16 @@ export const note_physics_4_16_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="500" height="220" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="500" height="220" fill="#0f172a" rx="8"/>
   <line x1="30" y1="165" x2="470" y2="165" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5 4"/>
   <rect x="55" y="92" width="80" height="65" fill="#3b82f6" rx="6"/>
-  <text x="95" y="118" font-family="Arial" font-size="13" font-weight="bold" fill="white" text-anchor="middle">A</text>
-  <text x="95" y="135" font-family="Arial" font-size="11" fill="white" text-anchor="middle">m = 2 kg</text>
+  <text x="95" y="118" font-family="Arial" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+  <text x="95" y="135" font-family="Arial" font-size="11" fill="#1e293b" text-anchor="middle">m = 2 kg</text>
   <path d="M 144 124 L 182 124" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arr-b1)"/>
   <text x="163" y="115" font-family="Arial" font-size="11" fill="#1d4ed8" text-anchor="middle">3 m/s →</text>
   <rect x="365" y="92" width="80" height="65" fill="#ef4444" rx="6"/>
-  <text x="405" y="118" font-family="Arial" font-size="13" font-weight="bold" fill="white" text-anchor="middle">B</text>
-  <text x="405" y="135" font-family="Arial" font-size="11" fill="white" text-anchor="middle">m = 3 kg</text>
+  <text x="405" y="118" font-family="Arial" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+  <text x="405" y="135" font-family="Arial" font-size="11" fill="#1e293b" text-anchor="middle">m = 3 kg</text>
   <path d="M 356 124 L 318 124" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#arr-r1)"/>
   <text x="337" y="115" font-family="Arial" font-size="11" fill="#b91c1c" text-anchor="middle">← 1 m/s</text>
   <path d="M 75 177 L 135 177" stroke="#3b82f6" stroke-width="4.5" marker-end="url(#arr-b2)"/>

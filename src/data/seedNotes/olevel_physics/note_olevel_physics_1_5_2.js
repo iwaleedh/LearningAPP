@@ -30,7 +30,7 @@ export const note_olevel_physics_1_5_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 210" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="210" fill="#faf5ff" rx="10"/>
+  <rect width="440" height="210" fill="#2d1b69" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Stability and Centre of Gravity</text>
   <!-- Stable: low CoG, wide base -->
   <rect x="30" y="160" width="110" height="5" fill="#374151"/>

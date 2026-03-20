@@ -49,8 +49,8 @@ export const note_olevel_biology_13_13_1 = {
         caption: 'Diagram of a nephron showing key regions and blood supply',
         svg: `<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Bowman's capsule -->
-  <circle cx="120" cy="80" r="40" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5"/>
-  <circle cx="120" cy="80" r="22" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <circle cx="120" cy="80" r="40" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2.5"/>
+  <circle cx="120" cy="80" r="22" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="120" y="77" text-anchor="middle" fill="#1e3a8a" font-size="10" font-weight="bold">Bowman\'s</text>
   <text x="120" y="90" text-anchor="middle" fill="#1e3a8a" font-size="10">capsule</text>
   <!-- Glomerulus label -->

@@ -42,11 +42,11 @@ export const note_olevel_physics_3_2_5 = {
         caption: 'White light dispersed into ROYGBIV spectrum by a glass prism — violet bends most, red least',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
   <defs>
-    <marker id="aw25" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#ffffff"/></marker>
+    <marker id="aw25" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1e293b"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <!-- Prism -->
-  <polygon points="200,40 120,240 280,240" fill="#a5f3fc" opacity="0.5" stroke="#0e7490" stroke-width="2"/>
+  <polygon points="200,40 120,240 280,240" fill="#0e4a56" opacity="0.5" stroke="#0e7490" stroke-width="2"/>
   <text x="185" y="165" fill="#0e7490" font-weight="bold">Glass</text>
   <text x="182" y="178" fill="#0e7490" font-weight="bold">Prism</text>
   <!-- Incoming white ray -->

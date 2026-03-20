@@ -86,8 +86,8 @@ export const note_chemistry_5_17_8 = {
       data: {
         caption: 'Chromate/dichromate equilibrium based on pH',
         svg: `<svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="background-color:var(--color-surface);border-radius:8px;">
-  <rect x="50" y="30" width="140" height="60" rx="4" fill="#FFD700" opacity="0.8" />
-  <rect x="310" y="30" width="140" height="60" rx="4" fill="#FF8C00" opacity="0.8" />
+  <rect x="50" y="30" width="140" height="60" rx="4" fill="#78350f" stroke="#FFD700" stroke-width="2" />
+  <rect x="310" y="30" width="140" height="60" rx="4" fill="#7c2d12" stroke="#FF8C00" stroke-width="2" />
   <text x="120" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">2CrO₄²⁻</text>
   <text x="120" y="75" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000">Chromate (Yellow)</text>
   <text x="380" y="55" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Cr₂O₇²⁻ + H₂O</text>

@@ -20,21 +20,21 @@ export const note_olevel_physics_6_1_4 = {
     { id: 'h-lifecycle', type: 'heading', data: { text: 'Life Cycles: Low-Mass vs High-Mass', level: 2 } },
     { id: 'svg-lifecycle', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="520" height="320">
   <rect width="520" height="320" fill="#0f172a" rx="8"/>
-  <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">Stellar Life Cycles</text>
+  <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Stellar Life Cycles</text>
   <!-- Nebula start -->
   <ellipse cx="50" cy="100" rx="35" ry="25" fill="#4338ca" opacity="0.7"/>
-  <text x="50" y="98" text-anchor="middle" font-size="9" fill="white">Nebula</text>
-  <text x="50" y="110" text-anchor="middle" font-size="8" fill="#c7d2fe">+ dust</text>
+  <text x="50" y="98" text-anchor="middle" font-size="9" fill="#1e293b">Nebula</text>
+  <text x="50" y="110" text-anchor="middle" font-size="8" fill="#2d2d72">+ dust</text>
   <!-- Arrow to protostar -->
   <line x1="85" y1="100" x2="110" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr1)"/>
   <!-- Protostar -->
   <circle cx="130" cy="100" r="18" fill="#f97316" opacity="0.85"/>
-  <text x="130" y="97" text-anchor="middle" font-size="8" fill="white" font-weight="bold">Proto</text>
-  <text x="130" y="108" text-anchor="middle" font-size="8" fill="white">star</text>
+  <text x="130" y="97" text-anchor="middle" font-size="8" fill="#1e293b" font-weight="bold">Proto</text>
+  <text x="130" y="108" text-anchor="middle" font-size="8" fill="#1e293b">star</text>
   <!-- Arrow to main sequence -->
   <line x1="148" y1="100" x2="175" y2="100" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr1)"/>
   <!-- Main sequence -->
-  <rect x="178" y="80" width="72" height="40" rx="6" fill="#fbbf24" opacity="0.9"/>
+  <rect x="178" y="80" width="72" height="40" rx="6" fill="#78350f" opacity="0.9"/>
   <text x="214" y="97" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Main</text>
   <text x="214" y="110" text-anchor="middle" font-size="9" fill="#1e293b">Sequence</text>
   <!-- BRANCH: lower path (low-mass) -->
@@ -42,17 +42,17 @@ export const note_olevel_physics_6_1_4 = {
   <text x="258" y="132" font-size="8" fill="#f59e0b">low mass</text>
   <!-- Red giant -->
   <circle cx="300" cy="160" r="22" fill="#ef4444" opacity="0.8"/>
-  <text x="300" y="157" text-anchor="middle" font-size="8" fill="white" font-weight="bold">Red</text>
-  <text x="300" y="168" text-anchor="middle" font-size="8" fill="white">Giant</text>
+  <text x="300" y="157" text-anchor="middle" font-size="8" fill="#1e293b" font-weight="bold">Red</text>
+  <text x="300" y="168" text-anchor="middle" font-size="8" fill="#1e293b">Giant</text>
   <!-- Arrow to planetary nebula -->
   <line x1="322" y1="160" x2="348" y2="160" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr1)"/>
   <!-- Planetary nebula -->
   <ellipse cx="370" cy="160" rx="18" ry="14" fill="none" stroke="#a78bfa" stroke-width="2"/>
-  <text x="370" y="157" text-anchor="middle" font-size="7" fill="#a78bfa">Plan.</text>
-  <text x="370" y="168" text-anchor="middle" font-size="7" fill="#a78bfa">nebula</text>
+  <text x="370" y="157" text-anchor="middle" font-size="7" fill="#2d1b69">Plan.</text>
+  <text x="370" y="168" text-anchor="middle" font-size="7" fill="#2d1b69">nebula</text>
   <!-- White dwarf -->
   <line x1="388" y1="160" x2="410" y2="160" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr1)"/>
-  <circle cx="430" cy="160" r="12" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="430" cy="160" r="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
   <text x="430" y="157" text-anchor="middle" font-size="7" fill="#1e293b">White</text>
   <text x="430" y="167" text-anchor="middle" font-size="7" fill="#1e293b">dwarf</text>
   <!-- BRANCH: upper path (high-mass) -->
@@ -60,8 +60,8 @@ export const note_olevel_physics_6_1_4 = {
   <text x="255" y="72" font-size="8" fill="#60a5fa">high mass</text>
   <!-- Red supergiant -->
   <circle cx="310" cy="48" r="28" fill="#dc2626" opacity="0.85"/>
-  <text x="310" y="44" text-anchor="middle" font-size="8" fill="white" font-weight="bold">Red Super</text>
-  <text x="310" y="56" text-anchor="middle" font-size="8" fill="white">Giant</text>
+  <text x="310" y="44" text-anchor="middle" font-size="8" fill="#1e293b" font-weight="bold">Red Super</text>
+  <text x="310" y="56" text-anchor="middle" font-size="8" fill="#1e293b">Giant</text>
   <!-- Supernova -->
   <line x1="338" y1="48" x2="358" y2="48" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr1)"/>
   <polygon points="382,34 388,48 382,62 368,56 362,48 368,40" fill="#f59e0b" opacity="0.9"/>
@@ -70,8 +70,8 @@ export const note_olevel_physics_6_1_4 = {
   <!-- Neutron star / black hole fork -->
   <line x1="394" y1="44" x2="420" y2="30" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr1)"/>
   <circle cx="435" cy="26" r="11" fill="#1e40af"/>
-  <text x="435" y="24" text-anchor="middle" font-size="6" fill="white">Neutron</text>
-  <text x="435" y="34" text-anchor="middle" font-size="6" fill="white">star</text>
+  <text x="435" y="24" text-anchor="middle" font-size="6" fill="#1e293b">Neutron</text>
+  <text x="435" y="34" text-anchor="middle" font-size="6" fill="#1e293b">star</text>
   <line x1="394" y1="52" x2="420" y2="65" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr1)"/>
   <circle cx="435" cy="72" r="11" fill="#000" stroke="#94a3b8" stroke-width="1.5"/>
   <text x="435" y="70" text-anchor="middle" font-size="6" fill="#94a3b8">Black</text>

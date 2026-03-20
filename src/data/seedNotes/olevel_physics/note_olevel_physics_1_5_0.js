@@ -38,7 +38,7 @@ export const note_olevel_physics_1_5_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="200" fill="#fff7ed" rx="10"/>
+  <rect width="440" height="200" fill="#532407" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Moment of a Force About a Pivot</text>
   <!-- Lever beam -->
   <rect x="60" y="100" width="300" height="10" fill="#92400e" rx="3"/>
@@ -56,7 +56,7 @@ export const note_olevel_physics_1_5_0 = {
   <line x1="330" y1="75" x2="330" y2="85" stroke="#2563eb" stroke-width="1.5"/>
   <text x="235" y="74" text-anchor="middle" font-size="11" fill="#2563eb">d = 0.5 m (perpendicular)</text>
   <!-- Calculation -->
-  <rect x="60" y="162" width="320" height="28" fill="#fef3c7" rx="6"/>
+  <rect x="60" y="162" width="320" height="28" fill="#78350f" rx="6"/>
   <text x="220" y="180" text-anchor="middle" font-size="12" fill="#92400e">M = F × d = 20 × 0.5 = 10 N·m  (anticlockwise)</text>
   <!-- Clockwise and anticlockwise label -->
   <path d="M 100 100 A 30 30 0 0 1 140 75" fill="none" stroke="#16a34a" stroke-width="2"/>

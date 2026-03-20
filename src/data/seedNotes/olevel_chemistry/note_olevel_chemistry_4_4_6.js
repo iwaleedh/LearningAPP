@@ -107,10 +107,10 @@ export const note_olevel_chemistry_4_4_6 = {
 
   <!-- Ion movement H+ -->
   <circle cx="225" cy="180" r="10" fill="#3b82f6"/>
-  <text x="225" y="184" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">H⁺</text>
+  <text x="225" y="184" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">H⁺</text>
   
   <circle cx="225" cy="220" r="10" fill="#3b82f6"/>
-  <text x="225" y="224" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">H⁺</text>
+  <text x="225" y="224" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">H⁺</text>
 
   <path d="M 195 180 L 255 180" stroke="#000" stroke-width="1.5" stroke-dasharray="2,2" marker-end="url(#arrow)"/>
   <path d="M 195 220 L 255 220" stroke="#000" stroke-width="1.5" stroke-dasharray="2,2" marker-end="url(#arrow)"/>
@@ -120,7 +120,7 @@ export const note_olevel_chemistry_4_4_6 = {
   <path d="M 285 90 L 285 50 L 240 50" stroke="#1e293b" stroke-width="2" fill="none"/>
   
   <!-- Load (Bulb) -->
-  <circle cx="225" cy="50" r="15" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <circle cx="225" cy="50" r="15" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <!-- Bulb filament -->
   <path d="M 215 50 Q 225 35 235 50" fill="none" stroke="#b45309" stroke-width="2"/>
   <!-- e- flow -->

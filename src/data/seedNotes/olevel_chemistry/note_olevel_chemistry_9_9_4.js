@@ -24,7 +24,7 @@ export const note_olevel_chemistry_9_9_4 = {
   <text x="150" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Smaller radius = Stronger attraction</text>
 
   <circle cx="150" cy="140" r="15" fill="#ef4444" />
-  <text x="150" y="144" font-family="var(--font-sans)" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">+3</text>
+  <text x="150" y="144" font-family="var(--font-sans)" font-size="12" fill="#1e293b" font-weight="bold" text-anchor="middle">+3</text>
 
   <!-- Shells -->
   <circle cx="150" cy="140" r="35" fill="none" stroke="var(--color-text-secondary)" stroke-dasharray="4,4" />
@@ -46,7 +46,7 @@ export const note_olevel_chemistry_9_9_4 = {
   <text x="380" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Larger radius = Weaker attraction</text>
 
   <circle cx="380" cy="140" r="15" fill="#ef4444" />
-  <text x="380" y="144" font-family="var(--font-sans)" font-size="10" fill="#fff" font-weight="bold" text-anchor="middle">+19</text>
+  <text x="380" y="144" font-family="var(--font-sans)" font-size="10" fill="#1e293b" font-weight="bold" text-anchor="middle">+19</text>
 
   <!-- Shells -->
   <circle cx="380" cy="140" r="25" fill="none" stroke="var(--color-text-secondary)" stroke-dasharray="4,4" />

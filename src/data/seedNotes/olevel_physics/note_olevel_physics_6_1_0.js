@@ -25,17 +25,17 @@ export const note_olevel_physics_6_1_0 = {
     ]}},
     { id: 'svg-solar', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200">
   <rect width="520" height="200" fill="#0f172a" rx="8"/>
-  <text x="260" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#f1f5f9">The Solar System (not to scale)</text>
+  <text x="260" y="20" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">The Solar System (not to scale)</text>
   <!-- Sun -->
-  <circle cx="30" cy="100" r="22" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-  <text x="30" y="133" text-anchor="middle" font-size="8" fill="#fbbf24">Sun</text>
+  <circle cx="30" cy="100" r="22" fill="#78350f" stroke="#f59e0b" stroke-width="2"/>
+  <text x="30" y="133" text-anchor="middle" font-size="8" fill="#78350f">Sun</text>
   <!-- Orbit ellipses (simplified as lines to show order) -->
   <!-- Mercury -->
   <circle cx="75" cy="100" r="4" fill="#9ca3af"/>
   <text x="75" y="118" text-anchor="middle" font-size="7" fill="#9ca3af">Mer.</text>
   <!-- Venus -->
-  <circle cx="110" cy="100" r="6" fill="#fcd34d"/>
-  <text x="110" y="120" text-anchor="middle" font-size="7" fill="#fcd34d">Ven.</text>
+  <circle cx="110" cy="100" r="6" fill="#532407"/>
+  <text x="110" y="120" text-anchor="middle" font-size="7" fill="#532407">Ven.</text>
   <!-- Earth -->
   <circle cx="148" cy="100" r="6" fill="#3b82f6"/>
   <text x="148" y="120" text-anchor="middle" font-size="7" fill="#3b82f6">Earth</text>
@@ -54,9 +54,9 @@ export const note_olevel_physics_6_1_0 = {
   <circle cx="270" cy="100" r="14" fill="#f97316"/>
   <text x="270" y="123" text-anchor="middle" font-size="7" fill="#f97316">Jup.</text>
   <!-- Saturn + rings -->
-  <circle cx="330" cy="100" r="11" fill="#fbbf24"/>
+  <circle cx="330" cy="100" r="11" fill="#78350f"/>
   <ellipse cx="330" cy="100" rx="20" ry="5" fill="none" stroke="#d97706" stroke-width="2"/>
-  <text x="330" y="120" text-anchor="middle" font-size="7" fill="#fbbf24">Sat.</text>
+  <text x="330" y="120" text-anchor="middle" font-size="7" fill="#78350f">Sat.</text>
   <!-- Uranus -->
   <circle cx="390" cy="100" r="9" fill="#06b6d4"/>
   <text x="390" y="118" text-anchor="middle" font-size="7" fill="#06b6d4">Ura.</text>

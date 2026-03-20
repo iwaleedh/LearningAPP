@@ -69,26 +69,26 @@ export const note_olevel_biology_2_2_1 = {
       data: {
         caption: 'Pyramid diagram showing levels of biological organisation',
         svg: `<svg viewBox="0 0 500 330" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="500" height="330" fill="#f0fdf4" rx="12"/>
+  <rect width="500" height="330" fill="#0a2e1a" rx="12"/>
   <text x="250" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">Levels of Biological Organisation</text>
   <!-- Organism level -->
-  <polygon points="250,44 130,104 370,104" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <polygon points="250,44 130,104 370,104" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="250" y="82" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">ORGANISM</text>
   <text x="250" y="96" text-anchor="middle" font-size="9" fill="#166534">e.g. Human</text>
   <!-- Organ system -->
-  <rect x="100" y="110" width="300" height="38" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="100" y="110" width="300" height="38" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="250" y="126" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">ORGAN SYSTEM</text>
   <text x="250" y="141" text-anchor="middle" font-size="9" fill="#166534">e.g. Circulatory system (heart + vessels + blood)</text>
   <!-- Organ -->
-  <rect x="70" y="154" width="360" height="38" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="70" y="154" width="360" height="38" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="250" y="170" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">ORGAN</text>
   <text x="250" y="185" text-anchor="middle" font-size="9" fill="#166534">e.g. Heart (cardiac muscle + nervous + connective tissues)</text>
   <!-- Tissue -->
-  <rect x="40" y="198" width="420" height="38" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="40" y="198" width="420" height="38" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="250" y="214" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">TISSUE</text>
   <text x="250" y="229" text-anchor="middle" font-size="9" fill="#166534">e.g. Muscle tissue (group of similar muscle cells)</text>
   <!-- Cell -->
-  <rect x="10" y="242" width="480" height="44" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <rect x="10" y="242" width="480" height="44" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="250" y="260" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">CELL</text>
   <text x="250" y="278" text-anchor="middle" font-size="9" fill="#166534">e.g. Muscle cell — basic unit of life</text>
   <!-- Arrow -->

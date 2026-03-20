@@ -90,7 +90,7 @@ export const note_olevel_physics_4_3_7 = {
   <text x="205" y="108" fill="#6b7280" font-size="9">e.g. 6 V battery → flat line at +6 V</text>
 
   <!-- Legend -->
-  <rect x="5" y="125" width="370" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="5" y="125" width="370" height="90" rx="6" fill="#0f172a" stroke="#e2e8f0" stroke-width="1"/>
   <text x="15" y="143" fill="#374151" font-weight="bold" font-size="11">Key Points</text>
   <line x1="15" y1="162" x2="35" y2="162" stroke="#22d3ee" stroke-width="2.5"/>
   <text x="40" y="166" fill="#374151" font-size="10">AC — sine wave, 50 Hz in UK, 230 V rms (peak ≈ 325 V)</text>

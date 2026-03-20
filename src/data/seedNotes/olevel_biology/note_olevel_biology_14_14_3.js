@@ -55,17 +55,17 @@ export const note_olevel_biology_14_14_3 = {
         svg: `<svg viewBox="0 0 380 520" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Body outline (simplified) -->
   <!-- Head -->
-  <ellipse cx="190" cy="55" rx="45" ry="50" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
+  <ellipse cx="190" cy="55" rx="45" ry="50" fill="#532407" stroke="#c0902a" stroke-width="2"/>
   <!-- Neck -->
-  <rect x="175" y="100" width="30" height="30" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
+  <rect x="175" y="100" width="30" height="30" fill="#532407" stroke="#c0902a" stroke-width="2"/>
   <!-- Torso -->
-  <rect x="130" y="128" width="120" height="180" rx="20" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
+  <rect x="130" y="128" width="120" height="180" rx="20" fill="#532407" stroke="#c0902a" stroke-width="2"/>
   <!-- Arms -->
-  <rect x="80" y="130" width="50" height="130" rx="15" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
-  <rect x="250" y="130" width="50" height="130" rx="15" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
+  <rect x="80" y="130" width="50" height="130" rx="15" fill="#532407" stroke="#c0902a" stroke-width="2"/>
+  <rect x="250" y="130" width="50" height="130" rx="15" fill="#532407" stroke="#c0902a" stroke-width="2"/>
   <!-- Legs -->
-  <rect x="140" y="305" width="40" height="160" rx="15" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
-  <rect x="200" y="305" width="40" height="160" rx="15" fill="#fde8c8" stroke="#c0902a" stroke-width="2"/>
+  <rect x="140" y="305" width="40" height="160" rx="15" fill="#532407" stroke="#c0902a" stroke-width="2"/>
+  <rect x="200" y="305" width="40" height="160" rx="15" fill="#532407" stroke="#c0902a" stroke-width="2"/>
 
   <!-- Pituitary (brain, small) -->
   <circle cx="190" cy="65" r="9" fill="#7c3aed" stroke="#5b21b6" stroke-width="2"/>
@@ -85,7 +85,7 @@ export const note_olevel_biology_14_14_3 = {
   <line x1="100" y1="215" x2="143" y2="218" stroke="#dc2626" stroke-width="1"/>
 
   <!-- Pancreas -->
-  <rect x="155" y="240" width="50" height="15" rx="6" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+  <rect x="155" y="240" width="50" height="15" rx="6" fill="#78350f" stroke="#d97706" stroke-width="2"/>
   <text x="215" y="255" fill="#d97706" font-size="10" font-weight="bold">Pancreas</text>
   <line x1="212" y1="253" x2="205" y2="250" stroke="#d97706" stroke-width="1"/>
 

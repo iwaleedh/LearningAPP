@@ -83,27 +83,27 @@ export const note_olevel_maths_core_5_3_0 = {
       data: {
         svg: `<svg viewBox="0 0 540 180" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Cuboid -->
-  <polygon points="20,60 80,60 80,120 20,120" fill="#ede9fe" stroke="#6366f1" stroke-width="1.5"/>
-  <polygon points="80,60 110,35 110,95 80,120" fill="#c4b5fd" stroke="#6366f1" stroke-width="1.5"/>
-  <polygon points="20,60 50,35 110,35 80,60" fill="#ddd6fe" stroke="#6366f1" stroke-width="1.5"/>
+  <polygon points="20,60 80,60 80,120 20,120" fill="#2d1b69" stroke="#6366f1" stroke-width="1.5"/>
+  <polygon points="80,60 110,35 110,95 80,120" fill="#2d1b69" stroke="#6366f1" stroke-width="1.5"/>
+  <polygon points="20,60 50,35 110,35 80,60" fill="#2d1b69" stroke="#6366f1" stroke-width="1.5"/>
   <text x="65" y="145" text-anchor="middle" fill="#6366f1" font-weight="bold">Cuboid</text>
   <text x="50" y="90" text-anchor="middle" fill="#374151" font-size="10">l×w×h</text>
 
   <!-- Cylinder -->
-  <ellipse cx="190" cy="55" rx="35" ry="12" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
-  <rect x="155" y="55" width="70" height="60" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
-  <ellipse cx="190" cy="115" rx="35" ry="12" fill="#a7f3d0" stroke="#10b981" stroke-width="1.5"/>
+  <ellipse cx="190" cy="55" rx="35" ry="12" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="155" y="55" width="70" height="60" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
+  <ellipse cx="190" cy="115" rx="35" ry="12" fill="#065f46" stroke="#10b981" stroke-width="1.5"/>
   <text x="190" y="145" text-anchor="middle" fill="#10b981" font-weight="bold">Cylinder</text>
   <text x="190" y="88" text-anchor="middle" fill="#374151" font-size="10">πr²h</text>
 
   <!-- Cone -->
-  <polygon points="300,30 265,120 335,120" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
-  <ellipse cx="300" cy="120" rx="35" ry="10" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="300,30 265,120 335,120" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
+  <ellipse cx="300" cy="120" rx="35" ry="10" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="300" y="148" text-anchor="middle" fill="#f59e0b" font-weight="bold">Cone</text>
   <text x="300" y="85" text-anchor="middle" fill="#374151" font-size="10">⅓πr²h</text>
 
   <!-- Sphere -->
-  <circle cx="430" cy="85" r="45" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="430" cy="85" r="45" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
   <ellipse cx="430" cy="85" rx="45" ry="15" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="430" y="148" text-anchor="middle" fill="#ef4444" font-weight="bold">Sphere</text>
   <text x="430" y="85" text-anchor="middle" fill="#374151" font-size="10">⁴⁄₃πr³</text>

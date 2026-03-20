@@ -54,7 +54,7 @@ export const note_biology_1_2_14 = {
         "id": "svg-diag-1-2-14-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='40' width='60' height='30' fill='#ebf8ff' stroke='#3182ce'/><text x='65' y='60' font-weight='bold'>A U G</text><rect x='120' y='40' width='60' height='30' fill='#e6fffa' stroke='#38a169'/><text x='135' y='60' font-weight='bold'>C C G</text><rect x='180' y='40' width='60' height='30' fill='#fff5f5' stroke='#e53e3e'/><text x='195' y='60' font-weight='bold'>U A A</text><text x='65' y='90' font-size='10'>Codon 1</text><text x='135' y='90' font-size='10'>Codon 2</text><text x='195' y='90' font-size='10'>Codon 3</text><text x='55' y='20' font-size='10'>(Non-Overlapping & Degenerate)</text></svg>",
+            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='40' width='60' height='30' fill='#1c3a64' stroke='#3182ce'/><text x='65' y='60' font-weight='bold'>A U G</text><rect x='120' y='40' width='60' height='30' fill='#0e4a56' stroke='#38a169'/><text x='135' y='60' font-weight='bold'>C C G</text><rect x='180' y='40' width='60' height='30' fill='#3d1212' stroke='#e53e3e'/><text x='195' y='60' font-weight='bold'>U A A</text><text x='65' y='90' font-size='10'>Codon 1</text><text x='135' y='90' font-size='10'>Codon 2</text><text x='195' y='90' font-size='10'>Codon 3</text><text x='55' y='20' font-size='10'>(Non-Overlapping & Degenerate)</text></svg>",
             "caption": "The Triplet Code"
         }
     },

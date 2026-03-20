@@ -21,7 +21,7 @@ export const note_olevel_physics_1_4_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="240" fill="#faf5ff" rx="10"/>
+  <rect width="440" height="240" fill="#2d1b69" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Spring Extension Experiment</text>
   <!-- Stand/clamp -->
   <rect x="100" y="30" width="8" height="170" fill="#78350f" rx="2"/>
@@ -42,7 +42,7 @@ export const note_olevel_physics_1_4_3 = {
   <line x1="300" y1="121" x2="300" y2="140" stroke="#374151" stroke-width="2"/>
   <!-- mass -->
   <rect x="280" y="140" width="40" height="22" fill="#64748b" rx="4"/>
-  <text x="300" y="155" text-anchor="middle" font-size="10" fill="white">100 g</text>
+  <text x="300" y="155" text-anchor="middle" font-size="10" fill="#1e293b">100 g</text>
   <!-- extension arrow -->
   <line x1="320" y1="105" x2="320" y2="140" stroke="#ef4444" stroke-width="1.5"/>
   <polygon points="320,140 316,130 324,130" fill="#ef4444"/>

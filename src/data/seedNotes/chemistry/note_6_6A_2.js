@@ -125,18 +125,18 @@ export const note_chemistry_6_6A_2 = {
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#555"/></marker>
   </defs>
-  <rect x="230" y="10" width="220" height="36" rx="6" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="230" y="10" width="220" height="36" rx="6" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
   <text x="340" y="26" text-anchor="middle" font-weight="bold" fill="#4338ca">Unknown solution</text>
   <text x="340" y="40" text-anchor="middle" fill="#4338ca">Add excess NaOH</text>
   <line x1="340" y1="46" x2="340" y2="70" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Precipitate dissolves box -->
-  <rect x="430" y="70" width="220" height="44" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <rect x="430" y="70" width="220" height="44" rx="6" fill="#0a2e1a" stroke="#059669" stroke-width="1.5"/>
   <text x="540" y="88" text-anchor="middle" font-weight="bold" fill="#065f46">Ppt dissolves in</text>
   <text x="540" y="102" text-anchor="middle" fill="#065f46">excess NaOH</text>
 
   <!-- No dissolve box -->
-  <rect x="30" y="70" width="220" height="44" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="30" y="70" width="220" height="44" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="140" y="88" text-anchor="middle" font-weight="bold" fill="#991b1b">Ppt does NOT</text>
   <text x="140" y="102" text-anchor="middle" fill="#991b1b">dissolve in excess NaOH</text>
 
@@ -146,14 +146,14 @@ export const note_chemistry_6_6A_2 = {
   <text x="375" y="62" font-size="10" fill="#555">dissolves</text>
 
   <!-- Amphoteric: Cr / Zn / Al -->
-  <rect x="430" y="132" width="220" height="56" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.2"/>
+  <rect x="430" y="132" width="220" height="56" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.2"/>
   <text x="540" y="150" text-anchor="middle" font-weight="bold" fill="#166534">Amphoteric:</text>
   <text x="540" y="164" text-anchor="middle" fill="#166534">Cr³⁺ (green ppt → green soln)</text>
   <text x="540" y="178" text-anchor="middle" fill="#166534">Zn²⁺ / Al³⁺ (white ppt → colourless)</text>
   <line x1="540" y1="114" x2="540" y2="132" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Non-dissolve ions -->
-  <rect x="30" y="132" width="220" height="70" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <rect x="30" y="132" width="220" height="70" rx="6" fill="#78350f" stroke="#d97706" stroke-width="1.2"/>
   <text x="140" y="150" text-anchor="middle" font-weight="bold" fill="#92400e">Check ppt colour:</text>
   <text x="140" y="164" text-anchor="middle" fill="#92400e">Green = Fe²⁺ or Ni²⁺ or Cr³⁺</text>
   <text x="140" y="178" text-anchor="middle" fill="#92400e">Orange-brown = Fe³⁺</text>
@@ -162,13 +162,13 @@ export const note_chemistry_6_6A_2 = {
   <line x1="140" y1="114" x2="140" y2="132" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Confirm with NH₃ -->
-  <rect x="30" y="220" width="220" height="44" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="30" y="220" width="220" height="44" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="140" y="238" text-anchor="middle" font-weight="bold" fill="#4c1d95">Confirm: add excess NH₃</text>
   <text x="140" y="252" text-anchor="middle" fill="#4c1d95">(does ppt dissolve?)</text>
   <line x1="140" y1="202" x2="140" y2="220" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- NH3 outcomes -->
-  <rect x="30" y="282" width="220" height="80" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <rect x="30" y="282" width="220" height="80" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.2"/>
   <text x="140" y="300" text-anchor="middle" font-weight="bold" fill="#4c1d95">NH₃ dissolves:</text>
   <text x="140" y="314" text-anchor="middle" fill="#4c1d95">Cu²⁺ → deep blue [Cu(NH₃)₄]²⁺</text>
   <text x="140" y="328" text-anchor="middle" fill="#4c1d95">Co²⁺ → yellow [Co(NH₃)₆]²⁺</text>
@@ -177,12 +177,12 @@ export const note_chemistry_6_6A_2 = {
   <line x1="140" y1="264" x2="140" y2="282" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- SCN- test -->
-  <rect x="230" y="390" width="220" height="44" rx="6" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <rect x="230" y="390" width="220" height="44" rx="6" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="340" y="408" text-anchor="middle" font-weight="bold" fill="#831843">If Fe³⁺ suspected:</text>
   <text x="340" y="422" text-anchor="middle" fill="#831843">Add SCN⁻ → blood-red confirms Fe³⁺</text>
 
   <!-- Na₂CO₃ test -->
-  <rect x="230" y="450" width="220" height="54" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2"/>
+  <rect x="230" y="450" width="220" height="54" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.2"/>
   <text x="340" y="468" text-anchor="middle" font-weight="bold" fill="#713f12">Na₂CO₃ test:</text>
   <text x="340" y="482" text-anchor="middle" fill="#713f12">3+ → hydroxide ppt + CO₂ gas</text>
   <text x="340" y="496" text-anchor="middle" fill="#713f12">2+ → carbonate ppt, no gas</text>

@@ -69,10 +69,10 @@ export const note_olevel_physics_1_1_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 460 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="460" height="220" fill="#f8fafc" rx="10"/>
+  <rect width="460" height="220" fill="#0f172a" rx="10"/>
   <text x="230" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Vernier Calliper</text>
   <!-- main scale body -->
-  <rect x="30" y="60" width="320" height="30" fill="#cbd5e1" rx="3"/>
+  <rect x="30" y="60" width="320" height="30" fill="#1e293b" rx="3"/>
   <!-- main scale markings -->
   <line x1="50" y1="60" x2="50" y2="50" stroke="#1e293b" stroke-width="1.5"/>
   <line x1="70" y1="60" x2="70" y2="55" stroke="#1e293b" stroke-width="1"/>
@@ -90,7 +90,7 @@ export const note_olevel_physics_1_1_0 = {
   <text x="250" y="45" text-anchor="middle" font-size="10" fill="#1e293b">2</text>
   <text x="200" y="115" text-anchor="middle" font-size="11" fill="#475569">Main scale (cm)</text>
   <!-- vernier scale (sliding jaw) -->
-  <rect x="130" y="90" width="120" height="22" fill="#93c5fd" rx="2" opacity="0.8"/>
+  <rect x="130" y="90" width="120" height="22" fill="#1250a0" rx="2" opacity="0.8"/>
   <line x1="140" y1="90" x2="140" y2="100" stroke="#1e40af" stroke-width="1"/>
   <line x1="152" y1="90" x2="152" y2="98" stroke="#1e40af" stroke-width="1"/>
   <line x1="164" y1="90" x2="164" y2="98" stroke="#1e40af" stroke-width="1"/>

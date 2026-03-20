@@ -125,11 +125,11 @@ export const note_olevel_biology_7_7_2 = {
       data: {
         caption: 'Emulsification by bile — large fat globules broken into smaller droplets, increasing surface area for lipase',
         svg: `<svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="460" height="200" fill="#f8f9fa" rx="10"/>
+  <rect width="460" height="200" fill="#0f172a" rx="10"/>
   <text x="230" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Emulsification of Fat by Bile</text>
 
   <!-- Large fat globule -->
-  <ellipse cx="100" cy="110" rx="60" ry="55" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <ellipse cx="100" cy="110" rx="60" ry="55" fill="#44370a" stroke="#b45309" stroke-width="2"/>
   <text x="100" y="105" text-anchor="middle" font-size="12" fill="#78350f">Large fat</text>
   <text x="100" y="120" text-anchor="middle" font-size="12" fill="#78350f">globule</text>
   <text x="100" y="178" text-anchor="middle" font-size="11" fill="#92400e">Before bile</text>
@@ -145,16 +145,16 @@ export const note_olevel_biology_7_7_2 = {
   </defs>
 
   <!-- Small fat droplets -->
-  <circle cx="270" cy="80" r="20" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="310" cy="68" r="18" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="350" cy="80" r="22" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="260" cy="120" r="18" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="300" cy="115" r="20" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="340" cy="118" r="16" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="380" cy="100" r="19" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="270" cy="155" r="16" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="315" cy="150" r="17" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <circle cx="360" cy="148" r="15" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="270" cy="80" r="20" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="310" cy="68" r="18" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="350" cy="80" r="22" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="260" cy="120" r="18" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="300" cy="115" r="20" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="340" cy="118" r="16" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="380" cy="100" r="19" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="270" cy="155" r="16" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="315" cy="150" r="17" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <circle cx="360" cy="148" r="15" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
 
   <text x="315" y="185" text-anchor="middle" font-size="11" fill="#92400e">After emulsification</text>
   <text x="315" y="198" text-anchor="middle" font-size="11" fill="#92400e">(much greater surface area)</text>

@@ -59,7 +59,7 @@ export const note_olevel_maths_core_5_4_0 = {
       data: {
         svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Small triangle -->
-  <polygon points="40,160 120,160 80,80" fill="#ede9fe" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="40,160 120,160 80,80" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
   <text x="70" y="175" text-anchor="middle" fill="#374151">6</text>
   <text x="27" y="125" fill="#374151">5</text>
   <text x="108" y="125" fill="#374151">5</text>
@@ -71,7 +71,7 @@ export const note_olevel_maths_core_5_4_0 = {
   <text x="200" y="160" fill="#374151">→</text>
 
   <!-- Large triangle (k=2) -->
-  <polygon points="280,160 440,160 360,0" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <polygon points="280,160 440,160 360,0" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
   <text x="360" y="178" text-anchor="middle" fill="#374151">12</text>
   <text x="260" y="95" fill="#374151">10</text>
   <text x="445" y="95" fill="#374151">10</text>

@@ -56,7 +56,7 @@ export const note_olevel_physics_1_1_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 280" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="280" fill="#fef9f0" rx="10"/>
+  <rect width="420" height="280" fill="#44370a" rx="10"/>
   <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">Tip-to-Tail Vector Addition: 3 N East + 4 N North</text>
   <!-- East vector (3N) -->
   <line x1="80" y1="200" x2="200" y2="200" stroke="#ef4444" stroke-width="3"/>
@@ -74,7 +74,7 @@ export const note_olevel_physics_1_1_2 = {
   <path d="M 113 200 A 33 33 0 0 1 113 175" stroke="#16a34a" fill="none" stroke-width="1.5"/>
   <text x="120" y="186" font-size="11" fill="#166534">53°</text>
   <!-- Calculation box -->
-  <rect x="240" y="80" width="165" height="100" fill="white" rx="6" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="240" y="80" width="165" height="100" fill="#1e293b" rx="6" stroke="#d1d5db" stroke-width="1"/>
   <text x="322" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Calculation</text>
   <text x="255" y="118" font-size="11" fill="#374151">R = √(3² + 4²)</text>
   <text x="255" y="135" font-size="11" fill="#374151">R = √(9 + 16) = √25</text>

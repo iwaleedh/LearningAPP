@@ -122,9 +122,9 @@ export const note_olevel_chemistry_12_12_8 = {
     
     <!-- Air being displaced upwards -->
     <path d="M100,80 L100,40 M90,80 L80,50 M110,80 L120,50" fill="none" stroke="#bdc3c7" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4" />
-    <polygon points="100,30 95,40 105,40" fill="#bdc3c7" />
-    <polygon points="75,40 80,50 85,45" fill="#bdc3c7" />
-    <polygon points="125,40 115,45 120,50" fill="#bdc3c7" />
+    <polygon points="100,30 95,40 105,40" fill="#1e293b" />
+    <polygon points="75,40 80,50 85,45" fill="#1e293b" />
+    <polygon points="125,40 115,45 120,50" fill="#1e293b" />
     <text x="100" y="25" text-anchor="middle" font-family="var(--font-sans)" font-size="10" fill="#95a5a6" font-style="italic">Air</text>
   </g>
 
@@ -157,9 +157,9 @@ export const note_olevel_chemistry_12_12_8 = {
     
     <!-- Air being displaced downwards -->
     <path d="M100,160 L100,200 M90,160 L80,190 M110,160 L120,190" fill="none" stroke="#bdc3c7" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4" />
-    <polygon points="100,210 95,200 105,200" fill="#bdc3c7" />
-    <polygon points="75,200 80,190 85,195" fill="#bdc3c7" />
-    <polygon points="125,200 115,195 120,190" fill="#bdc3c7" />
+    <polygon points="100,210 95,200 105,200" fill="#1e293b" />
+    <polygon points="75,200 80,190 85,195" fill="#1e293b" />
+    <polygon points="125,200 115,195 120,190" fill="#1e293b" />
     <text x="100" y="220" text-anchor="middle" font-family="var(--font-sans)" font-size="10" fill="#95a5a6" font-style="italic">Air</text>
   </g>
 
@@ -188,7 +188,7 @@ export const note_olevel_chemistry_12_12_8 = {
     <path d="M 76,100 L 124,100 L 124,170 L 76,170 Z" fill="url(#water-grad)" />
     
     <!-- Bubbles -->
-    <g fill="#fff" opacity="0.8">
+    <g fill="#1e293b" opacity="0.8">
       <circle cx="100" cy="160" r="3" />
       <circle cx="95" cy="150" r="4" />
       <circle cx="105" cy="140" r="3" />

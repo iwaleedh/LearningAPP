@@ -78,23 +78,23 @@ export const note_olevel_biology_18_18_2 = {
         caption: 'Diagram showing natural selection leading to antibiotic resistance in bacteria over successive generations',
         svg: `<svg viewBox="0 0 500 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Generation 1 -->
-  <rect x="10" y="10" width="140" height="210" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="10" y="10" width="140" height="210" rx="8" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
   <text x="80" y="28" text-anchor="middle" font-weight="bold" font-size="10" fill="#991b1b">Generation 1</text>
   <text x="80" y="40" text-anchor="middle" font-size="9" fill="#7f1d1d">(Before antibiotic)</text>
   <!-- Many bacteria, one resistant -->
-  <circle cx="40" cy="70" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="65" cy="60" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="90" cy="75" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="115" cy="65" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="50" cy="100" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="80" cy="105" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="110" cy="95" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="40" cy="70" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="65" cy="60" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="90" cy="75" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="115" cy="65" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="50" cy="100" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="80" cy="105" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="110" cy="95" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
   <!-- Resistant bacterium (green) -->
-  <circle cx="65" cy="130" r="9" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="65" cy="130" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="65" y="133" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="40" cy="160" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="110" cy="155" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
-  <circle cx="80" cy="170" r="8" fill="#fca5a5" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="40" cy="160" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="110" cy="155" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="80" cy="170" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
   <text x="80" y="205" text-anchor="middle" font-size="9" fill="#4b5563">Most non-resistant</text>
 
   <!-- Arrow 1 -->
@@ -103,7 +103,7 @@ export const note_olevel_biology_18_18_2 = {
   <text x="155" y="130" font-size="8" fill="#6366f1" text-anchor="middle">applied</text>
 
   <!-- Generation 2: After selection -->
-  <rect x="180" y="10" width="140" height="210" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="180" y="10" width="140" height="210" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="250" y="28" text-anchor="middle" font-weight="bold" font-size="10" fill="#14532d">After Selection</text>
   <text x="250" y="40" text-anchor="middle" font-size="9" fill="#14532d">(antibiotic kills non-resistant)</text>
   <!-- Dead bacteria (crosses) -->
@@ -114,7 +114,7 @@ export const note_olevel_biology_18_18_2 = {
   <text x="220" y="105" font-size="14" fill="#ef4444" text-anchor="middle">&#10005;</text>
   <text x="280" y="100" font-size="14" fill="#ef4444" text-anchor="middle">&#10005;</text>
   <!-- Surviving resistant bacterium -->
-  <circle cx="250" cy="140" r="11" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="250" cy="140" r="11" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="250" y="144" text-anchor="middle" font-size="8" fill="#14532d">R</text>
   <text x="250" y="200" text-anchor="middle" font-size="9" fill="#4b5563">Only resistant</text>
   <text x="250" y="212" text-anchor="middle" font-size="9" fill="#4b5563">bacterium survives</text>
@@ -124,25 +124,25 @@ export const note_olevel_biology_18_18_2 = {
   <text x="328" y="120" font-size="8" fill="#6366f1" text-anchor="middle">Reproduce</text>
 
   <!-- Generation 3: All resistant -->
-  <rect x="350" y="10" width="140" height="210" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="350" y="10" width="140" height="210" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="420" y="28" text-anchor="middle" font-weight="bold" font-size="10" fill="#14532d">New Generation</text>
   <text x="420" y="40" text-anchor="middle" font-size="9" fill="#14532d">(all resistant)</text>
   <!-- All green resistant bacteria -->
-  <circle cx="385" cy="70" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="385" cy="70" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="385" y="74" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="415" cy="60" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="415" cy="60" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="415" y="64" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="445" cy="75" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="445" cy="75" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="445" y="79" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="390" cy="105" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="390" cy="105" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="390" y="109" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="425" cy="100" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="425" cy="100" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="425" y="104" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="455" cy="105" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="455" cy="105" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="455" y="109" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="400" cy="140" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="400" cy="140" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="400" y="144" text-anchor="middle" font-size="7" fill="#14532d">R</text>
-  <circle cx="435" cy="135" r="9" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="435" cy="135" r="9" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="435" y="139" text-anchor="middle" font-size="7" fill="#14532d">R</text>
   <text x="420" y="200" text-anchor="middle" font-size="9" fill="#14532d">Antibiotic now</text>
   <text x="420" y="212" text-anchor="middle" font-size="9" fill="#14532d">ineffective</text>

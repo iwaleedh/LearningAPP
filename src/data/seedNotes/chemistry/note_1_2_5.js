@@ -117,7 +117,7 @@ export const note_chemistry_1_2_5 = {
       data: {
         caption: "Rutherford's gold foil experiment — the three types of α-particle paths observed",
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 310" font-family="sans-serif" font-size="12">
-  <rect width="500" height="310" fill="#f8f9ff" rx="8"/>
+  <rect width="500" height="310" fill="#0f172a" rx="8"/>
   <text x="250" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Rutherford α-Particle Scattering Experiment</text>
   <!-- Detector screen arc (semicircle right of foil) -->
   <path d="M 300 150 m -120 0 a 120 120 0 1 1 240 0" fill="none" stroke="#888" stroke-width="2.5" stroke-dasharray="6,3"/>
@@ -131,7 +131,7 @@ export const note_chemistry_1_2_5 = {
   <text x="314" y="147" fill="#e63946" font-size="10" font-weight="bold">nucleus</text>
   <!-- Alpha source box -->
   <rect x="50" y="136" width="62" height="28" rx="4" fill="#264653"/>
-  <text x="81" y="154" text-anchor="middle" fill="white" font-size="11" font-weight="bold">α source</text>
+  <text x="81" y="154" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">α source</text>
   <!-- Path 1: straight through (blue) -->
   <line x1="112" y1="150" x2="422" y2="150" stroke="#2196F3" stroke-width="2"/>
   <polygon points="422,150 412,145 412,155" fill="#2196F3"/>
@@ -145,7 +145,7 @@ export const note_chemistry_1_2_5 = {
   <polygon points="148,235 157,226 163,236" fill="#FF5722"/>
   <text x="130" y="250" fill="#FF5722" font-size="11" font-weight="bold">③</text>
   <!-- Legend -->
-  <rect x="25" y="265" width="450" height="40" rx="4" fill="white" stroke="#ddd"/>
+  <rect x="25" y="265" width="450" height="40" rx="4" fill="#1e293b" stroke="#ddd"/>
   <line x1="37" y1="279" x2="60" y2="279" stroke="#2196F3" stroke-width="2"/>
   <text x="65" y="283" fill="#333" font-size="10">① Straight through (majority — empty space)</text>
   <line x1="37" y1="294" x2="60" y2="294" stroke="#4CAF50" stroke-width="2"/>

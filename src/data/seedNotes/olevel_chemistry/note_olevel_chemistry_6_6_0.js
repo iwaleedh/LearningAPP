@@ -60,7 +60,7 @@ export const note_olevel_chemistry_6_6_0 = {
   <text x="150" y="60" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">Melting Ice</text>
 
   <!-- Ice Cube -->
-  <rect x="70" y="90" width="40" height="40" fill="#bae6fd" stroke="#0284c7" stroke-width="2" rx="4"/>
+  <rect x="70" y="90" width="40" height="40" fill="#0c4a6e" stroke="#0284c7" stroke-width="2" rx="4"/>
   <text x="90" y="115" font-family="var(--font-sans)" font-size="20" fill="#0284c7" text-anchor="middle">🧊</text>
   <text x="90" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">H₂O (s)</text>
 
@@ -86,9 +86,9 @@ export const note_olevel_chemistry_6_6_0 = {
   <path d="M 415 110 L 465 110" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-fwd-red)"/>
   
   <!-- Fire / Glowing MgO -->
-  <circle cx="510" cy="100" r="16" fill="#fef08a" />
-  <circle cx="510" cy="100" r="10" fill="#fde047" />
-  <path d="M 495 115 Q 510 90 525 115" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+  <circle cx="510" cy="100" r="16" fill="#44370a" />
+  <circle cx="510" cy="100" r="10" fill="#44370a" />
+  <path d="M 495 115 Q 510 90 525 115" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
   <text x="510" y="130" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">MgO</text>
   <text x="510" y="145" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">(White Ash)</text>
 

@@ -8,9 +8,9 @@ export const note_olevel_physics_6_2_1 = {
     { id: 'para-redshift', type: 'paragraph', data: { text: 'When a source of light moves away from an observer, the wavelength of the light is stretched — shifted toward the red (longer wavelength) end of the spectrum. This is called <strong>redshift</strong>. This is an example of the Doppler effect applied to light.' } },
     { id: 'svg-redshift', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220">
   <rect width="480" height="220" fill="#0f172a" rx="8"/>
-  <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">Redshift: Light from a Receding Galaxy</text>
+  <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Redshift: Light from a Receding Galaxy</text>
   <!-- Expected spectrum from lab -->
-  <text x="30" y="55" font-size="10" fill="#e2e8f0">Lab spectrum</text>
+  <text x="30" y="55" font-size="10" fill="#1e293b">Lab spectrum</text>
   <text x="30" y="68" font-size="9" fill="#94a3b8">(stationary source)</text>
   <!-- Spectrum bar lab -->
   <defs>
@@ -39,7 +39,7 @@ export const note_olevel_physics_6_2_1 = {
   <text x="163" y="87" font-size="9" fill="#7c3aed">violet</text>
   <text x="415" y="87" font-size="9" fill="#dc2626">red</text>
   <!-- Galaxy spectrum (redshifted) -->
-  <text x="30" y="125" font-size="10" fill="#e2e8f0">Galaxy spectrum</text>
+  <text x="30" y="125" font-size="10" fill="#1e293b">Galaxy spectrum</text>
   <text x="30" y="138" font-size="9" fill="#94a3b8">(receding source)</text>
   <rect x="160" y="115" width="280" height="30" fill="url(#spec-red)" rx="3"/>
   <!-- Dark absorption lines (shifted right) -->
@@ -55,8 +55,8 @@ export const note_olevel_physics_6_2_1 = {
   <text x="240" y="108" font-size="8" fill="#f59e0b">lines shift toward red end</text>
   <!-- Receding galaxy -->
   <ellipse cx="85" cy="130" rx="30" ry="12" fill="#1e40af" opacity="0.7"/>
-  <text x="85" y="126" text-anchor="middle" font-size="8" fill="white">Galaxy</text>
-  <text x="85" y="138" text-anchor="middle" font-size="8" fill="white">receding →</text>
+  <text x="85" y="126" text-anchor="middle" font-size="8" fill="#1e293b">Galaxy</text>
+  <text x="85" y="138" text-anchor="middle" font-size="8" fill="#1e293b">receding →</text>
   <line x1="115" y1="130" x2="148" y2="130" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arr2)"/>
   <text x="240" y="195" text-anchor="middle" font-size="10" fill="#94a3b8">Absorption lines shift toward longer wavelengths (red) = galaxy moving away</text>
   <defs>

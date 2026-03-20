@@ -110,7 +110,7 @@ export const note_chemistry_4_15_5 = {
   <text x="316" y="135" font-size="12" fill="#dc2626">½⁻</text>
 
   <!-- Annotation box -->
-  <rect x="222" y="152" width="230" height="44" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="222" y="152" width="230" height="44" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="232" y="170" font-size="11" fill="#5b21b6">Charge is spread equally over both</text>
   <text x="232" y="186" font-size="11" fill="#5b21b6">C–O bonds → resonance stabilised</text>
 
@@ -278,7 +278,7 @@ export const note_chemistry_4_15_5 = {
   <text x="335" y="118" font-size="11" fill="#0284c7" font-weight="bold">H-bond ②</text>
 
   <!-- Key box -->
-  <rect x="14" y="170" width="240" height="65" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="14" y="170" width="240" height="65" rx="6" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="24" y="188" font-size="12" font-weight="bold" fill="#1d4ed8">Two H-bonds with water:</text>
   <text x="24" y="206" font-size="11" fill="#374151">① δ⁻ O (C=O) ··· δ⁺ H–O (water)</text>
   <text x="24" y="222" font-size="11" fill="#374151">② δ⁺ H (–OH) ··· lone pair on O (water)</text>

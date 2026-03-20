@@ -43,7 +43,7 @@ export const note_olevel_maths_core_4_4_1 = {
   </style>
   <!-- Equilateral triangle — order 3 -->
   <g transform="translate(20, 20)">
-    <polygon points="55,5 100,85 10,85" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="55,5 100,85 10,85" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
     <circle cx="55" cy="58" r="4" class="centre"/>
     <text x="18" y="108" class="name">Equilateral △</text>
     <text x="18" y="120" class="order">Order 3</text>
@@ -51,7 +51,7 @@ export const note_olevel_maths_core_4_4_1 = {
   </g>
   <!-- Square — order 4 -->
   <g transform="translate(165, 20)">
-    <rect x="10" y="10" width="75" height="75" fill="#dcfce7" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="10" y="10" width="75" height="75" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
     <circle cx="47.5" cy="47.5" r="4" fill="#10b981"/>
     <text x="18" y="108" class="name">Square</text>
     <text x="18" y="120" class="order" fill="#10b981">Order 4</text>
@@ -59,7 +59,7 @@ export const note_olevel_maths_core_4_4_1 = {
   </g>
   <!-- Parallelogram — order 2 -->
   <g transform="translate(310, 30)">
-    <polygon points="10,70 80,70 100,10 30,10" fill="#fce7f3" stroke="#9333ea" stroke-width="1.5"/>
+    <polygon points="10,70 80,70 100,10 30,10" fill="#4a1040" stroke="#9333ea" stroke-width="1.5"/>
     <circle cx="55" cy="40" r="4" fill="#9333ea"/>
     <text x="10" y="98" class="name">Parallelogram</text>
     <text x="18" y="110" class="order" fill="#9333ea">Order 2</text>
@@ -67,7 +67,7 @@ export const note_olevel_maths_core_4_4_1 = {
   </g>
   <!-- Regular hexagon — order 6 -->
   <g transform="translate(430, 10)">
-    <polygon points="55,5 90,28 90,72 55,95 20,72 20,28" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+    <polygon points="55,5 90,28 90,72 55,95 20,72 20,28" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
     <circle cx="55" cy="50" r="4" fill="#ca8a04"/>
     <text x="22" y="115" class="name">Hexagon</text>
     <text x="22" y="127" class="order" fill="#ca8a04">Order 6</text>

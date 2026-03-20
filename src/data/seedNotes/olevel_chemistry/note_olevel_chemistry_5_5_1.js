@@ -75,7 +75,7 @@ export const note_olevel_chemistry_5_5_1 = {
   <ellipse cx="250" cy="180" rx="130" ry="20" fill="none" stroke="var(--color-border)" stroke-width="3"/>
 
   <!-- Polystyrene Cup (Insulator) -->
-  <path d="M 140 180 L 150 300 Q 150 310 165 310 L 335 310 Q 350 310 350 300 L 360 180" fill="#f8fafc" stroke="#94a3b8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M 140 180 L 150 300 Q 150 310 165 310 L 335 310 Q 350 310 350 300 L 360 180" fill="#0f172a" stroke="#94a3b8" stroke-width="4" stroke-linejoin="round"/>
   
   <!-- Content / Reaction mixture -->
   <path d="M 143 210 L 150 298 Q 150 308 165 308 L 335 308 Q 350 308 350 298 L 357 210 Z" fill="url(#liquid-cal)"/>
@@ -83,10 +83,10 @@ export const note_olevel_chemistry_5_5_1 = {
   <text x="250" y="270" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#0369a1" text-anchor="middle">Reaction Mixture</text>
 
   <!-- Polystyrene Lid -->
-  <ellipse cx="250" cy="180" rx="120" ry="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="3"/>
+  <ellipse cx="250" cy="180" rx="120" ry="16" fill="#1e293b" stroke="#94a3b8" stroke-width="3"/>
   
   <!-- Thermometer -->
-  <rect x="235" y="40" width="10" height="250" rx="5" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <rect x="235" y="40" width="10" height="250" rx="5" fill="#0f172a" stroke="#475569" stroke-width="2"/>
   <circle cx="240" cy="280" r="10" fill="#ef4444"/>
   <!-- Thermometer liquid -->
   <path d="M 238 275 L 238 100 L 242 100 L 242 275 Z" fill="#ef4444"/>

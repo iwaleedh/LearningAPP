@@ -78,46 +78,46 @@ export const note_olevel_biology_1_1_3 = {
       data: {
         caption: 'Dichotomous key structure — branching diagram for four insects',
         svg: `<svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="560" height="320" fill="#f0fdf4" rx="12"/>
+  <rect width="560" height="320" fill="#0a2e1a" rx="12"/>
   <text x="280" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">Dichotomous Key — Four Insects</text>
   <!-- Step 1 box -->
-  <rect x="180" y="44" width="200" height="38" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="180" y="44" width="200" height="38" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="280" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Step 1: Has wings?</text>
   <text x="280" y="74" text-anchor="middle" font-size="10" fill="#166534">YES or NO</text>
   <!-- NO branch to Ant -->
   <line x1="180" y1="63" x2="80" y2="112" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="118" y="96" font-size="10" fill="#dc2626">NO</text>
-  <rect x="20" y="112" width="120" height="32" rx="8" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="20" y="112" width="120" height="32" rx="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="80" y="132" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">ANT</text>
   <!-- YES branch to Step 2 -->
   <line x1="380" y1="63" x2="460" y2="112" stroke="#16a34a" stroke-width="1.5"/>
   <text x="432" y="96" font-size="10" fill="#16a34a">YES</text>
   <!-- Step 2 box -->
-  <rect x="360" y="112" width="190" height="38" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="360" y="112" width="190" height="38" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="455" y="126" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Step 2: Two pairs</text>
   <text x="455" y="140" text-anchor="middle" font-size="11" fill="#166534">of wings?</text>
   <!-- NO branch (1 pair) to Beetle -->
   <line x1="360" y1="131" x2="280" y2="192" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="302" y="168" font-size="10" fill="#dc2626">NO</text>
-  <rect x="210" y="192" width="130" height="32" rx="8" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="210" y="192" width="130" height="32" rx="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="275" y="212" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">BEETLE</text>
   <!-- YES branch to Step 3 -->
   <line x1="550" y1="131" x2="550" y2="192" stroke="#16a34a" stroke-width="1.5"/>
   <text x="554" y="168" font-size="10" fill="#16a34a">YES</text>
   <!-- Step 3 box -->
-  <rect x="390" y="192" width="190" height="44" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="390" y="192" width="190" height="44" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="485" y="208" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Step 3: Striped</text>
   <text x="485" y="222" text-anchor="middle" font-size="11" fill="#166534">yellow/black abdomen?</text>
   <text x="485" y="234" text-anchor="middle" font-size="10" fill="#166534">YES / NO</text>
   <!-- YES to Bee -->
   <line x1="390" y1="214" x2="320" y2="268" stroke="#16a34a" stroke-width="1.5"/>
   <text x="342" y="250" font-size="10" fill="#16a34a">YES</text>
-  <rect x="250" y="268" width="120" height="32" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+  <rect x="250" y="268" width="120" height="32" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="310" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">BEE</text>
   <!-- NO to Dragonfly -->
   <line x1="580" y1="214" x2="540" y2="268" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="566" y="250" font-size="10" fill="#dc2626">NO</text>
-  <rect x="400" y="268" width="140" height="32" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+  <rect x="400" y="268" width="140" height="32" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="470" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">DRAGONFLY</text>
 </svg>`
       }

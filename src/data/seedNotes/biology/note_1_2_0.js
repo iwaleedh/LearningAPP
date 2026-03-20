@@ -61,7 +61,7 @@ export const note_biology_1_2_0 = {
         "id": "svg-diag-1-2-0-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><text x='20' y='30' font-size='14' font-weight='bold'>Rate of Diffusion ∝</text><rect x='170' y='10' width='120' height='30' fill='#ebf8ff' stroke='#3182ce'/><text x='180' y='30' font-size='12'>Surface Area × ∆C</text><line x1='170' y1='45' x2='290' y2='45' stroke='#333' stroke-width='2'/><rect x='170' y='50' width='120' height='30' fill='#fff5f5' stroke='#e53e3e'/><text x='200' y='70' font-size='12'>Thickness</text><text x='20' y='90' font-size='10'>∆C = Concentration Difference</text><text x='20' y='110' font-size='10'>Large SA + Thin Surface = Fast Diffusion</text></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><text x='20' y='30' font-size='14' font-weight='bold'>Rate of Diffusion ∝</text><rect x='170' y='10' width='120' height='30' fill='#1c3a64' stroke='#3182ce'/><text x='180' y='30' font-size='12'>Surface Area × ∆C</text><line x1='170' y1='45' x2='290' y2='45' stroke='#333' stroke-width='2'/><rect x='170' y='50' width='120' height='30' fill='#3d1212' stroke='#e53e3e'/><text x='200' y='70' font-size='12'>Thickness</text><text x='20' y='90' font-size='10'>∆C = Concentration Difference</text><text x='20' y='110' font-size='10'>Large SA + Thin Surface = Fast Diffusion</text></svg>",
             "caption": "Fick's Law Variables"
         }
     },
@@ -69,7 +69,7 @@ export const note_biology_1_2_0 = {
         "id": "svg-diag-1-2-0-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,30 L30,120 M70,30 L70,120' stroke='#a0aec0' stroke-width='2'/><circle cx='10' cy='75' r='5' fill='#e53e3e'/><path d='M20,75 L80,75' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><text x='35' y='20' font-size='10'>Thin Path (Fast)</text><path d='M150,30 L150,120 M250,30 L250,120' stroke='#a0aec0' stroke-width='2'/><rect x='150' y='30' width='100' height='90' fill='#edf2f7'/><circle cx='130' cy='75' r='5' fill='#e53e3e'/><path d='M140,75 Q200,60 260,75' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><text x='155' y='20' font-size='10'>Thick Path (Slow)</text></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,30 L30,120 M70,30 L70,120' stroke='#a0aec0' stroke-width='2'/><circle cx='10' cy='75' r='5' fill='#e53e3e'/><path d='M20,75 L80,75' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><text x='35' y='20' font-size='10'>Thin Path (Fast)</text><path d='M150,30 L150,120 M250,30 L250,120' stroke='#a0aec0' stroke-width='2'/><rect x='150' y='30' width='100' height='90' fill='#1e293b'/><circle cx='130' cy='75' r='5' fill='#e53e3e'/><path d='M140,75 Q200,60 260,75' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><text x='155' y='20' font-size='10'>Thick Path (Slow)</text></svg>",
             "caption": "Membrane Thickness Impact"
         }
     }

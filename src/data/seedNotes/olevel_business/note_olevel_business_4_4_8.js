@@ -100,7 +100,7 @@ export const note_olevel_business_4_4_8 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
-  <rect width="480" height="280" fill="#f8fafc" rx="8"/>
+  <rect width="480" height="280" fill="#0f172a" rx="8"/>
   <!-- Axes -->
   <line x1="55" y1="240" x2="440" y2="240" stroke="#334155" stroke-width="2"/>
   <line x1="55" y1="240" x2="55" y2="30" stroke="#334155" stroke-width="2"/>

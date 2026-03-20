@@ -34,7 +34,7 @@ export const note_olevel_chemistry_2_2_3 = {
   <!-- C-12 -->
   <g transform="translate(150, 140)">
     <!-- Nucleus -->
-    <circle cx="0" cy="0" r="25" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="25" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
     <text x="0" y="-4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444">6p⁺</text>
     <text x="0" y="10" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#64748b">6n⁰</text>
     
@@ -56,7 +56,7 @@ export const note_olevel_chemistry_2_2_3 = {
   <!-- C-14 -->
   <g transform="translate(450, 140)">
     <!-- Nucleus -->
-    <circle cx="0" cy="0" r="25" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="25" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
     <text x="0" y="-4" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#ef4444">6p⁺</text>
     <text x="0" y="10" text-anchor="middle" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#64748b">8n⁰</text>
     

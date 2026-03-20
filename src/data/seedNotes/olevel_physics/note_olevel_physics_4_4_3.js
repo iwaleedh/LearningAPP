@@ -78,14 +78,14 @@ export const note_olevel_physics_4_4_3 = {
         caption: 'Magnet moving into coil: galvanometer deflects, indicating induced current',
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Coil -->
-  <rect x="130" y="60" width="100" height="80" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="130" cy="100" rx="10" ry="40" fill="#d1d5db" stroke="#6366f1" stroke-width="1.5"/>
-  <ellipse cx="145" cy="100" rx="10" ry="40" fill="#d1d5db" stroke="#6366f1" stroke-width="1.5"/>
-  <ellipse cx="215" cy="100" rx="10" ry="40" fill="#d1d5db" stroke="#6366f1" stroke-width="1.5"/>
-  <ellipse cx="230" cy="100" rx="10" ry="40" fill="#d1d5db" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="130" y="60" width="100" height="80" rx="8" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
+  <ellipse cx="130" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <ellipse cx="145" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <ellipse cx="215" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <ellipse cx="230" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
   <text x="155" y="108" fill="#6366f1" font-weight="bold">Coil</text>
   <!-- Magnet (moving towards coil) -->
-  <rect x="15" y="80" width="80" height="40" rx="5" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="15" y="80" width="80" height="40" rx="5" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <line x1="55" y1="80" x2="55" y2="120" stroke="#9ca3af" stroke-width="1"/>
   <text x="20" y="104" fill="#ef4444" font-weight="bold" font-size="14">S</text>
   <text x="62" y="104" fill="#16a34a" font-weight="bold" font-size="14">N</text>
@@ -94,7 +94,7 @@ export const note_olevel_physics_4_4_3 = {
   <polygon points="128,95 138,100 128,105" fill="#d97706"/>
   <text x="95" y="90" fill="#d97706" font-size="9">→ motion</text>
   <!-- Galvanometer -->
-  <circle cx="300" cy="100" r="28" fill="#fef9c3" stroke="#d97706" stroke-width="2"/>
+  <circle cx="300" cy="100" r="28" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="282" y="97" fill="#d97706" font-weight="bold" font-size="12">G</text>
   <text x="285" y="113" fill="#d97706" font-size="9">deflects</text>
   <!-- Wires from coil to galvanometer -->
@@ -103,7 +103,7 @@ export const note_olevel_physics_4_4_3 = {
   <line x1="230" y1="130" x2="280" y2="130" stroke="#374151" stroke-width="1.5"/>
   <line x1="280" y1="130" x2="300" y2="128" stroke="#374151" stroke-width="1.5"/>
   <!-- Lenz label -->
-  <rect x="130" y="155" width="100" height="22" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <rect x="130" y="155" width="100" height="22" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="1"/>
   <text x="140" y="170" fill="#ef4444" font-size="9">N face repels magnet (Lenz)</text>
 </svg>`,
       },

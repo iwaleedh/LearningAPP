@@ -90,10 +90,10 @@ export const note_olevel_physics_1_2_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="200" fill="#f0f9ff" rx="10"/>
+  <rect width="400" height="200" fill="#1c3a64" rx="10"/>
   <text x="200" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a5f">Speed Triangle</text>
   <!-- Triangle -->
-  <polygon points="200,45 100,155 300,155" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="200,45 100,155 300,155" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <!-- Labels inside segments -->
   <text x="200" y="90" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4ed8">v</text>
   <text x="150" y="150" text-anchor="middle" font-size="15" font-weight="bold" fill="#15803d">d</text>

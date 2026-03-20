@@ -76,7 +76,7 @@ export const note_olevel_chemistry_4_4_1 = {
 
   <!-- Circuit (Battery and Wires) -->
   <rect x="210" y="50" width="80" height="30" rx="4" fill="#1e293b" />
-  <text x="250" y="70" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Battery</text>
+  <text x="250" y="70" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Battery</text>
   <text x="220" y="44" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">+</text>
   <text x="280" y="44" font-family="var(--font-sans)" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="middle">-</text>
   

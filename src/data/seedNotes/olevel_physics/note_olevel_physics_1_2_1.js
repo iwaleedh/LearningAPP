@@ -48,10 +48,10 @@ export const note_olevel_physics_1_2_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="200" fill="#f0fdf4" rx="10"/>
+  <rect width="420" height="200" fill="#0a2e1a" rx="10"/>
   <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">Acceleration vs Deceleration</text>
   <!-- Acceleration scenario -->
-  <rect x="20" y="50" width="170" height="70" fill="#dcfce7" rx="6" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="20" y="50" width="170" height="70" fill="#0a2e1a" rx="6" stroke="#16a34a" stroke-width="1.5"/>
   <text x="105" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">Acceleration</text>
   <line x1="40" y1="100" x2="80" y2="100" stroke="#374151" stroke-width="2"/>
   <polygon points="80,100 70,95 70,105" fill="#374151"/>
@@ -61,7 +61,7 @@ export const note_olevel_physics_1_2_1 = {
   <text x="142" y="116" text-anchor="middle" font-size="10" fill="#15803d">v = 25 m/s</text>
   <text x="105" y="135" text-anchor="middle" font-size="11" fill="#15803d">a = +ve (speeds up)</text>
   <!-- Deceleration scenario -->
-  <rect x="230" y="50" width="170" height="70" fill="#fee2e2" rx="6" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="230" y="50" width="170" height="70" fill="#3d1212" rx="6" stroke="#dc2626" stroke-width="1.5"/>
   <text x="315" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#b91c1c">Deceleration</text>
   <line x1="250" y1="100" x2="310" y2="100" stroke="#374151" stroke-width="3"/>
   <polygon points="310,100 298,94 298,106" fill="#374151"/>

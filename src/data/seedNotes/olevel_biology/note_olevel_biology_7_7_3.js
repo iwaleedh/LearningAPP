@@ -32,11 +32,11 @@ export const note_olevel_biology_7_7_3 = {
       data: {
         caption: 'Structure of a villus showing blood capillaries and lacteal',
         svg: `<svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="400" height="380" fill="#f8f9fa" rx="10"/>
+  <rect width="400" height="380" fill="#0f172a" rx="10"/>
   <text x="200" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Structure of a Villus</text>
 
   <!-- Villus outline -->
-  <path d="M 155 320 L 130 140 Q 130 60 200 50 Q 270 60 270 140 L 245 320 Z" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <path d="M 155 320 L 130 140 Q 130 60 200 50 Q 270 60 270 140 L 245 320 Z" fill="#44370a" stroke="#b45309" stroke-width="2"/>
 
   <!-- Epithelial cell layer (microvilli at top) -->
   <path d="M 130 140 Q 130 60 200 50 Q 270 60 270 140" fill="none" stroke="#b45309" stroke-width="3"/>
@@ -64,7 +64,7 @@ export const note_olevel_biology_7_7_3 = {
   <line x1="319" y1="180" x2="232" y2="180" stroke="#b91c1c" stroke-width="1"/>
 
   <!-- Lacteal -->
-  <path d="M 195 295 L 192 140 Q 192 95 200 90 Q 208 95 208 140 L 205 295 Z" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <path d="M 195 295 L 192 140 Q 192 95 200 90 Q 208 95 208 140 L 205 295 Z" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="52" y="165" text-anchor="start" font-size="11" fill="#1d4ed8">Lacteal</text>
   <text x="52" y="178" text-anchor="start" font-size="11" fill="#1d4ed8">(lymph vessel)</text>
   <line x1="120" y1="171" x2="192" y2="171" stroke="#1d4ed8" stroke-width="1"/>

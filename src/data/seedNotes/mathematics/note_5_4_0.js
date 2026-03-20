@@ -24,7 +24,7 @@ export const note_mathematics_5_4_0 = {
         svg: `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-sm mx-auto" aria-labelledby="forceDiagramTitle" role="img">
   <title id="forceDiagramTitle">Force Diagram</title>
   <!-- Surface -->
-  <rect x="0" y="200" width="400" height="20" fill="#e5e7eb" />
+  <rect x="0" y="200" width="400" height="20" fill="#1e293b" />
   <!-- Particle/Block -->
   <rect x="150" y="100" width="100" height="100" fill="#6366f1" rx="4" />
   <!-- Normal Reaction -->

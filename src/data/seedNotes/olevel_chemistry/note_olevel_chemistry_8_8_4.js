@@ -57,7 +57,7 @@ export const note_olevel_chemistry_8_8_4 = {
   <ellipse cx="150" cy="70" rx="30" ry="8" fill="none" stroke="var(--color-text)" stroke-width="2"/>
 
   <!-- Water layer -->
-  <path d="M 121 140 Q 150 145 179 140 L 179 180 A 29 29 0 0 1 121 180 Z" fill="#fef08a" opacity="0.6"/>
+  <path d="M 121 140 Q 150 145 179 140 L 179 180 A 29 29 0 0 1 121 180 Z" fill="#44370a" opacity="0.6"/>
   <text x="150" y="170" font-family="var(--font-sans)" font-size="12" fill="#854d0e" text-anchor="middle">Aqueous layer</text>
   
   <!-- Cyclohexane layer (Orange for Br2) -->
@@ -73,7 +73,7 @@ export const note_olevel_chemistry_8_8_4 = {
   <ellipse cx="450" cy="70" rx="30" ry="8" fill="none" stroke="var(--color-text)" stroke-width="2"/>
 
   <!-- Water layer -->
-  <path d="M 421 140 Q 450 145 479 140 L 479 180 A 29 29 0 0 1 421 180 Z" fill="#fca5a5" opacity="0.3"/>
+  <path d="M 421 140 Q 450 145 479 140 L 479 180 A 29 29 0 0 1 421 180 Z" fill="#7f1d1d" opacity="0.3"/>
   <text x="450" y="170" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">Aqueous layer</text>
   
   <!-- Cyclohexane layer (Purple for I2) -->

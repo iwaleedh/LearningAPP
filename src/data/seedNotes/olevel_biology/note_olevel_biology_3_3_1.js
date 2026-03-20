@@ -103,7 +103,7 @@ export const note_olevel_biology_3_3_1 = {
       data: {
         caption: 'Osmosis: effects on plant and animal cells in hypotonic, isotonic, and hypertonic solutions',
         svg: `<svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
-  <rect width="560" height="320" fill="#f0f9ff" rx="12"/>
+  <rect width="560" height="320" fill="#1c3a64" rx="12"/>
   <text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">Osmosis — Effects on Plant and Animal Cells</text>
 
   <!-- Column headers -->
@@ -115,25 +115,25 @@ export const note_olevel_biology_3_3_1 = {
   <text x="10" y="110" font-size="10" font-weight="bold" fill="#374151" transform="rotate(-90,10,110)" text-anchor="middle">Plant cell</text>
 
   <!-- Plant cell - Hypotonic (Turgid) -->
-  <rect x="55" y="60" width="80" height="80" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5"/>
-  <rect x="65" y="70" width="60" height="60" rx="2" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+  <rect x="55" y="60" width="80" height="80" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2.5"/>
+  <rect x="65" y="70" width="60" height="60" rx="2" fill="#1250a0" stroke="#1d4ed8" stroke-width="1.5"/>
   <rect x="72" y="77" width="46" height="46" rx="2" fill="#60a5fa" opacity="0.7"/>
   <text x="95" y="155" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">Turgid</text>
   <text x="95" y="167" text-anchor="middle" font-size="9" fill="#374151">Water enters →</text>
   <text x="95" y="178" text-anchor="middle" font-size="9" fill="#374151">cell swells, firm</text>
 
   <!-- Plant cell - Isotonic (Flaccid) -->
-  <rect x="240" y="65" width="80" height="75" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
-  <rect x="252" y="75" width="56" height="55" rx="2" fill="#86efac" stroke="#15803d" stroke-width="1.5"/>
-  <rect x="260" y="82" width="40" height="41" rx="2" fill="#4ade80" opacity="0.7"/>
+  <rect x="240" y="65" width="80" height="75" rx="4" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
+  <rect x="252" y="75" width="56" height="55" rx="2" fill="#0a2e1a" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="260" y="82" width="40" height="41" rx="2" fill="#0a4a1a" opacity="0.7"/>
   <text x="280" y="155" text-anchor="middle" font-size="10" fill="#15803d" font-weight="bold">Flaccid</text>
   <text x="280" y="167" text-anchor="middle" font-size="9" fill="#374151">No net movement</text>
   <text x="280" y="178" text-anchor="middle" font-size="9" fill="#374151">of water</text>
 
   <!-- Plant cell - Hypertonic (Plasmolysed) -->
-  <rect x="425" y="62" width="80" height="80" rx="4" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5"/>
-  <rect x="437" y="74" width="50" height="50" rx="2" fill="#fdba74" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <rect x="447" y="82" width="30" height="30" rx="2" fill="#fb923c" opacity="0.7"/>
+  <rect x="425" y="62" width="80" height="80" rx="4" fill="#532407" stroke="#ea580c" stroke-width="2.5"/>
+  <rect x="437" y="74" width="50" height="50" rx="2" fill="#7c2d12" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="447" y="82" width="30" height="30" rx="2" fill="#7c2d12" opacity="0.7"/>
   <text x="465" y="155" text-anchor="middle" font-size="10" fill="#c2410c" font-weight="bold">Plasmolysed</text>
   <text x="465" y="167" text-anchor="middle" font-size="9" fill="#374151">Water leaves →</text>
   <text x="465" y="178" text-anchor="middle" font-size="9" fill="#374151">membrane pulls away</text>
@@ -142,21 +142,21 @@ export const note_olevel_biology_3_3_1 = {
   <text x="10" y="250" font-size="10" font-weight="bold" fill="#374151" transform="rotate(-90,10,250)" text-anchor="middle">Animal cell</text>
 
   <!-- Animal cell - Hypotonic (Lysed) -->
-  <circle cx="95" cy="228" r="38" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2.5"/>
-  <circle cx="95" cy="228" r="26" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="95" cy="228" r="38" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2.5"/>
+  <circle cx="95" cy="228" r="26" fill="#1250a0" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="3,2"/>
   <text x="95" y="278" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">Lysed (burst)</text>
   <text x="95" y="290" text-anchor="middle" font-size="9" fill="#374151">Swells → bursts</text>
   <text x="95" y="302" text-anchor="middle" font-size="9" fill="#374151">(no cell wall)</text>
 
   <!-- Animal cell - Isotonic (Normal) -->
-  <circle cx="280" cy="228" r="30" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
-  <circle cx="280" cy="228" r="20" fill="#86efac" stroke="#15803d" stroke-width="1"/>
+  <circle cx="280" cy="228" r="30" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="280" cy="228" r="20" fill="#0a2e1a" stroke="#15803d" stroke-width="1"/>
   <text x="280" y="272" text-anchor="middle" font-size="10" fill="#15803d" font-weight="bold">Normal</text>
   <text x="280" y="284" text-anchor="middle" font-size="9" fill="#374151">Normal shape</text>
   <text x="280" y="296" text-anchor="middle" font-size="9" fill="#374151">and volume</text>
 
   <!-- Animal cell - Hypertonic (Crenated) -->
-  <path d="M465,192 Q474,197 480,192 Q488,200 487,210 Q494,218 490,228 Q496,238 490,246 Q488,256 480,260 Q474,267 465,264 Q456,267 450,260 Q442,256 440,246 Q434,238 440,228 Q434,218 443,210 Q442,200 450,192 Q456,185 465,192 Z" fill="#fed7aa" stroke="#ea580c" stroke-width="2"/>
+  <path d="M465,192 Q474,197 480,192 Q488,200 487,210 Q494,218 490,228 Q496,238 490,246 Q488,256 480,260 Q474,267 465,264 Q456,267 450,260 Q442,256 440,246 Q434,238 440,228 Q434,218 443,210 Q442,200 450,192 Q456,185 465,192 Z" fill="#532407" stroke="#ea580c" stroke-width="2"/>
   <circle cx="465" cy="228" r="16" fill="#fdba74" stroke="#c2410c" stroke-width="1"/>
   <text x="465" y="278" text-anchor="middle" font-size="10" fill="#c2410c" font-weight="bold">Crenated</text>
   <text x="465" y="290" text-anchor="middle" font-size="9" fill="#374151">Shrivels → spiky</text>

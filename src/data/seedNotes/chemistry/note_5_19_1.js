@@ -122,11 +122,11 @@ export const note_chemistry_5_19_1 = {
         caption: 'Phenylamine: lone pair delocalized into benzene ring π system',
         svg: `<svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Benzene ring -->
-  <polygon points="120,100 140,65 180,65 200,100 180,135 140,135" fill="#e8f4ff" stroke="#4a6da7" stroke-width="2"/>
+  <polygon points="120,100 140,65 180,65 200,100 180,135 140,135" fill="#1c3a64" stroke="#4a6da7" stroke-width="2"/>
   <!-- Alternating bond indicators -->
   <polygon points="123,100 143,70 177,70 197,100 177,130 143,130" fill="none" stroke="#4a6da7" stroke-width="1" stroke-dasharray="4 4"/>
   <!-- N atom -->
-  <circle cx="230" cy="100" r="14" fill="#d4f1d4" stroke="#2e7d32" stroke-width="2"/>
+  <circle cx="230" cy="100" r="14" fill="#0a2e1a" stroke="#2e7d32" stroke-width="2"/>
   <text x="230" y="104" text-anchor="middle" font-weight="bold" fill="#2e7d32">N</text>
   <!-- N-H bonds -->
   <line x1="244" y1="92" x2="265" y2="78" stroke="#2e7d32" stroke-width="2"/>
@@ -412,7 +412,7 @@ export const note_chemistry_5_19_1 = {
       id: 'svg-phenylamine-deloc-bromine',
       type: 'svg',
       data: {
-        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine: N lone pair delocalises</text><text x="10" y="40" font-size="14" fill="#333">→ Ring activation for Br₂</text></svg>',
+        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine: N lone pair delocalises</text><text x="10" y="40" font-size="14" fill="#333">→ Ring activation for Br₂</text></svg>',
         caption: 'Delocalisation of N lone pair into benzene ring activates ring for bromine substitution.'
       }
     },

@@ -154,21 +154,21 @@ export const note_chemistry_1_5_8 = {
   <text x="310" y="24" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e3a8a">Distillation Apparatus — CP5: Preparation of Cyclohexene</text>
 
   <!-- ═══ HEATING MANTLE ═══ -->
-  <polygon points="70,393 207,393 197,365 80,365" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="70,393 207,393 197,365 80,365" fill="#44370a" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="139" y="384" text-anchor="middle" fill="#92400e" font-size="10" font-weight="bold">Heating mantle</text>
 
   <!-- ═══ ROUND-BOTTOM FLASK ═══ -->
-  <ellipse cx="139" cy="295" rx="67" ry="63" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <ellipse cx="139" cy="295" rx="67" ry="63" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
   <text x="139" y="285" text-anchor="middle" fill="#1e40af" font-size="10">Cyclohexanol</text>
   <text x="139" y="299" text-anchor="middle" fill="#1e40af" font-size="10">+ conc. H₃PO₄</text>
   <text x="139" y="313" text-anchor="middle" fill="#6b7280" font-size="9">(anti-bumping granules)</text>
 
   <!-- ═══ FLASK NECK ═══ -->
   <!-- Flask top: y = 295 - 63 = 232; neck goes from y=200 up to y=232. height=32 -->
-  <rect x="126" y="200" width="26" height="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="126" y="200" width="26" height="32" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
 
   <!-- ═══ HORIZONTAL ADAPTER (connects flask neck to condenser at x=195, y=197) ═══ -->
-  <rect x="126" y="190" width="69" height="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2" rx="2"/>
+  <rect x="126" y="190" width="69" height="14" fill="#1e3a8a" stroke="#2563eb" stroke-width="2" rx="2"/>
 
   <!-- ═══ LIEBIG CONDENSER (angled, axis from A=(195,197) to B=(440,300)) ═══
        Outer jacket polygon:
@@ -177,9 +177,9 @@ export const note_chemistry_1_5_8 = {
          TL(192,205)  TR(437,308)  BR(444,292)  BL(199,189)
   ═══ -->
   <!-- Outer jacket (water space, blue fill) -->
-  <polygon points="188,213 433,316 447,284 202,181" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <polygon points="188,213 433,316 447,284 202,181" fill="#0c4a6e" stroke="#0284c7" stroke-width="2"/>
   <!-- Inner tube (vapour/liquid path, white) -->
-  <polygon points="192,205 437,308 444,292 199,189" fill="white" stroke="#0284c7" stroke-width="1.5"/>
+  <polygon points="192,205 437,308 444,292 199,189" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
 
   <!-- ═══ WATER IN (at far end of condenser, outer-right corner ≈(447,284)) ═══ -->
   <line x1="447" y1="284" x2="492" y2="284" stroke="#2563eb" stroke-width="2" marker-end="url(#alk8arrb)"/>
@@ -192,11 +192,11 @@ export const note_chemistry_1_5_8 = {
 
   <!-- ═══ DRIP TUBE from condenser exit to collection flask ═══ -->
   <!-- Inner tube far end: center at B=(440,300); far end bottom vertex TR=(437,308) -->
-  <rect x="434" y="308" width="12" height="26" fill="white" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="434" y="308" width="12" height="26" fill="#1e293b" stroke="#2563eb" stroke-width="1.5"/>
 
   <!-- ═══ COLLECTION FLASK ═══ -->
   <!-- Top of collection flask: y = 334+2 = 336; cy = 336+40 = 376 -->
-  <ellipse cx="440" cy="377" rx="44" ry="41" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <ellipse cx="440" cy="377" rx="44" ry="41" fill="#0a2e1a" stroke="#059669" stroke-width="2"/>
   <text x="440" y="372" text-anchor="middle" fill="#065f46" font-size="10">Cyclohexene</text>
   <text x="440" y="386" text-anchor="middle" fill="#065f46" font-size="10">(+ water layer)</text>
 

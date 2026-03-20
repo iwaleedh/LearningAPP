@@ -65,23 +65,23 @@ export const note_olevel_physics_1_3_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="200" fill="#fef2f2" rx="10"/>
+  <rect width="420" height="200" fill="#3d1212" rx="10"/>
   <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#7f1d1d">Weight Changes, Mass Does Not</text>
   <!-- Earth panel -->
-  <rect x="30" y="40" width="160" height="140" fill="#dbeafe" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="30" y="40" width="160" height="140" fill="#1e3a8a" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="110" y="63" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">Earth</text>
   <text x="110" y="83" text-anchor="middle" font-size="12" fill="#1e40af">g = 10 N/kg</text>
   <circle cx="110" cy="120" r="20" fill="#60a5fa"/>
-  <text x="110" y="124" text-anchor="middle" font-size="11" fill="white">m = 60 kg</text>
+  <text x="110" y="124" text-anchor="middle" font-size="11" fill="#1e293b">m = 60 kg</text>
   <line x1="110" y1="140" x2="110" y2="165" stroke="#ef4444" stroke-width="2"/>
   <polygon points="110,165 106,155 114,155" fill="#ef4444"/>
   <text x="110" y="180" text-anchor="middle" font-size="11" fill="#ef4444">W = 600 N</text>
   <!-- Moon panel -->
-  <rect x="230" y="40" width="160" height="140" fill="#f0fdf4" rx="8" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="230" y="40" width="160" height="140" fill="#0a2e1a" rx="8" stroke="#16a34a" stroke-width="1.5"/>
   <text x="310" y="63" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">Moon</text>
   <text x="310" y="83" text-anchor="middle" font-size="12" fill="#15803d">g = 1.6 N/kg</text>
-  <circle cx="310" cy="120" r="20" fill="#86efac"/>
-  <text x="310" y="124" text-anchor="middle" font-size="11" fill="white">m = 60 kg</text>
+  <circle cx="310" cy="120" r="20" fill="#0a2e1a"/>
+  <text x="310" y="124" text-anchor="middle" font-size="11" fill="#1e293b">m = 60 kg</text>
   <line x1="310" y1="140" x2="310" y2="165" stroke="#ef4444" stroke-width="2"/>
   <polygon points="310,165 306,155 314,155" fill="#ef4444"/>
   <text x="310" y="180" text-anchor="middle" font-size="11" fill="#ef4444">W = 96 N</text>

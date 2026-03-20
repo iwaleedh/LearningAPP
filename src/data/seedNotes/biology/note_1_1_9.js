@@ -60,7 +60,7 @@ export const note_biology_1_1_9 = {
         "id": "svg-diag-1-1-9-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><circle cx='150' cy='100' r='40' fill='#fed7d7' stroke='#c53030'/><text x='135' y='105' font-weight='bold'>CVD</text><line x1='150' y1='60' x2='150' y2='30' stroke='#333' stroke-width='2'/><text x='135' y='20' font-size='12'>Age / Sex</text><line x1='150' y1='140' x2='150' y2='170' stroke='#333' stroke-width='2'/><text x='130' y='185' font-size='12'>Genetics</text><line x1='110' y1='100' x2='80' y2='100' stroke='#333' stroke-width='2'/><text x='30' y='105' font-size='12'>Smoking</text><line x1='190' y1='100' x2='220' y2='100' stroke='#333' stroke-width='2'/><text x='230' y='95' font-size='12'>Diet / Obesity</text><text x='230' y='110' font-size='12'>(High LDL)</text></svg>",
+            "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><circle cx='150' cy='100' r='40' fill='#7f1d1d' stroke='#c53030'/><text x='135' y='105' font-weight='bold'>CVD</text><line x1='150' y1='60' x2='150' y2='30' stroke='#333' stroke-width='2'/><text x='135' y='20' font-size='12'>Age / Sex</text><line x1='150' y1='140' x2='150' y2='170' stroke='#333' stroke-width='2'/><text x='130' y='185' font-size='12'>Genetics</text><line x1='110' y1='100' x2='80' y2='100' stroke='#333' stroke-width='2'/><text x='30' y='105' font-size='12'>Smoking</text><line x1='190' y1='100' x2='220' y2='100' stroke='#333' stroke-width='2'/><text x='230' y='95' font-size='12'>Diet / Obesity</text><text x='230' y='110' font-size='12'>(High LDL)</text></svg>",
             "caption": "CVD Risk Factors"
         }
     },
@@ -68,7 +68,7 @@ export const note_biology_1_1_9 = {
         "id": "svg-diag-1-1-9-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M175,120 L125,50 L225,50 Z' fill='#e2e8f0' stroke='#4a5568' stroke-width='2'/><circle cx='175' cy='120' r='10' fill='#2d3748'/><rect x='105' y='20' width='40' height='30' fill='#4299e1' rx='2'/><text x='110' y='40' font-size='10' fill='white'>Actual</text><rect x='205' y='10' width='60' height='40' fill='#f56565' rx='2'/><text x='210' y='35' font-size='10' fill='white'>Perceived</text><text x='60' y='140' font-size='11' font-style='italic'>Affected by media, familiarity, and fear</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M175,120 L125,50 L225,50 Z' fill='#1e293b' stroke='#4a5568' stroke-width='2'/><circle cx='175' cy='120' r='10' fill='#2d3748'/><rect x='105' y='20' width='40' height='30' fill='#4299e1' rx='2'/><text x='110' y='40' font-size='10' fill='#1e293b'>Actual</text><rect x='205' y='10' width='60' height='40' fill='#f56565' rx='2'/><text x='210' y='35' font-size='10' fill='#1e293b'>Perceived</text><text x='60' y='140' font-size='11' font-style='italic'>Affected by media, familiarity, and fear</text></svg>",
             "caption": "Actual vs Perceived Risk"
         }
     }

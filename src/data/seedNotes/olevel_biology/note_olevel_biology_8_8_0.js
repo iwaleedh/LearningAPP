@@ -94,27 +94,27 @@ export const note_olevel_biology_8_8_0 = {
       data: {
         caption: 'Cross-section of a dicot stem showing vascular bundle with xylem and phloem labelled',
         svg: `<svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="500" height="360" fill="#f0fdf4" rx="12"/>
+  <rect width="500" height="360" fill="#0a2e1a" rx="12"/>
   <text x="250" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#166534">Vascular Bundle — Cross-Section of Dicot Stem</text>
   <!-- Stem outline -->
-  <circle cx="250" cy="185" r="130" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="250" cy="185" r="130" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <!-- Pith -->
-  <circle cx="250" cy="185" r="65" fill="#bbf7d0" stroke="#16a34a" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="250" cy="185" r="65" fill="#0a3020" stroke="#16a34a" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="250" y="189" text-anchor="middle" font-size="12" fill="#166534">Pith</text>
   <!-- Vascular bundle 1 (top) -->
-  <ellipse cx="250" cy="100" rx="28" ry="18" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="250" cy="100" rx="28" ry="18" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <ellipse cx="250" cy="108" rx="16" ry="10" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
   <ellipse cx="250" cy="93" rx="12" ry="7" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/>
   <!-- Vascular bundle 2 (bottom) -->
-  <ellipse cx="250" cy="270" rx="28" ry="18" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="250" cy="270" rx="28" ry="18" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <ellipse cx="250" cy="278" rx="16" ry="10" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
   <ellipse cx="250" cy="263" rx="12" ry="7" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/>
   <!-- Vascular bundle 3 (right) -->
-  <ellipse cx="345" cy="185" rx="18" ry="28" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="345" cy="185" rx="18" ry="28" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <ellipse cx="353" cy="185" rx="10" ry="16" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
   <ellipse cx="338" cy="185" rx="7" ry="12" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/>
   <!-- Vascular bundle 4 (left) -->
-  <ellipse cx="155" cy="185" rx="18" ry="28" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="155" cy="185" rx="18" ry="28" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <ellipse cx="147" cy="185" rx="10" ry="16" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
   <ellipse cx="162" cy="185" rx="7" ry="12" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/>
   <!-- Legend -->
@@ -122,7 +122,7 @@ export const note_olevel_biology_8_8_0 = {
   <text x="28" y="326" font-size="11" fill="#166534">Xylem (dead hollow vessels)</text>
   <rect x="175" y="315" width="14" height="14" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1"/>
   <text x="193" y="326" font-size="11" fill="#166534">Phloem (living sieve tubes)</text>
-  <rect x="340" y="315" width="14" height="14" fill="#fde68a" stroke="#b45309" stroke-width="1"/>
+  <rect x="340" y="315" width="14" height="14" fill="#44370a" stroke="#b45309" stroke-width="1"/>
   <text x="358" y="326" font-size="11" fill="#166534">Bundle sheath</text>
   <!-- Labels -->
   <text x="250" y="68" text-anchor="middle" font-size="10" fill="#991b1b">Xylem</text>

@@ -28,7 +28,7 @@ export const note_olevel_physics_3_2_2 = {
     <marker id="ar22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#ef4444"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:10px;fill:#1e293b;}</style>
-  <rect x="0" y="150" width="480" height="150" fill="#a5f3fc" opacity="0.4"/>
+  <rect x="0" y="150" width="480" height="150" fill="#0e4a56" opacity="0.4"/>
   <line x1="0" y1="150" x2="480" y2="150" stroke="#0e7490" stroke-width="2"/>
   <text x="2" y="148" fill="#0e7490" font-size="9">glass–air boundary</text>
   <text x="5" y="175" fill="#0e7490" font-weight="bold" font-size="10">Glass (denser)</text>

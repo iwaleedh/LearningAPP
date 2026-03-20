@@ -93,10 +93,10 @@ export const note_olevel_biology_11_11_3 = {
       data: {
         caption: 'Rib and diaphragm movements during inspiration and expiration',
         svg: `<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="680" height="340" fill="#f8fafc" rx="12"/>
+  <rect width="680" height="340" fill="#0f172a" rx="12"/>
   <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Breathing Mechanics — Inspiration vs Expiration</text>
   <!-- INSPIRATION panel -->
-  <rect x="15" y="38" width="310" height="280" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="15" y="38" width="310" height="280" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="170" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">INSPIRATION</text>
   <!-- Rib cage inspiration (wider) -->
   <!-- Spine -->
@@ -113,7 +113,7 @@ export const note_olevel_biology_11_11_3 = {
   <path d="M82 240 Q125 248 166 245 Q207 248 248 240" stroke="#7c3aed" stroke-width="3" fill="none"/>
   <text x="170" y="263" text-anchor="middle" font-size="9" fill="#7c3aed">Diaphragm flat (contracted)</text>
   <!-- Lung outline (tall) -->
-  <ellipse cx="132" cy="185" rx="44" ry="72" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="132" cy="185" rx="44" ry="72" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
   <!-- Arrows: ribs out and up -->
   <line x1="88" y1="158" x2="62" y2="140" stroke="#16a34a" stroke-width="2" marker-end="url(#insp)"/>
   <text x="36" y="138" text-anchor="middle" font-size="8" fill="#16a34a">Up &amp;</text>
@@ -123,12 +123,12 @@ export const note_olevel_biology_11_11_3 = {
   <text x="195" y="274" text-anchor="start" font-size="8" fill="#7c3aed">Diaphragm</text>
   <text x="195" y="285" text-anchor="start" font-size="8" fill="#7c3aed">moves down</text>
   <!-- Volume up label -->
-  <rect x="200" y="120" width="108" height="50" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <rect x="200" y="120" width="108" height="50" rx="6" fill="#1c3a64" stroke="#93c5fd" stroke-width="1"/>
   <text x="254" y="140" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">Volume ↑</text>
   <text x="254" y="154" text-anchor="middle" font-size="9" fill="#1d4ed8">Pressure ↓</text>
   <text x="254" y="166" text-anchor="middle" font-size="9" fill="#1d4ed8">Air flows IN →</text>
   <!-- EXPIRATION panel -->
-  <rect x="355" y="38" width="310" height="280" rx="10" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <rect x="355" y="38" width="310" height="280" rx="10" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="510" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#831843">EXPIRATION</text>
   <!-- Spine -->
   <rect x="500" y="75" width="12" height="170" rx="3" fill="#94a3b8"/>
@@ -144,7 +144,7 @@ export const note_olevel_biology_11_11_3 = {
   <path d="M428 228 Q472 208 506 214 Q540 208 576 228" stroke="#7c3aed" stroke-width="3" fill="none"/>
   <text x="508" y="248" text-anchor="middle" font-size="9" fill="#7c3aed">Diaphragm domed (relaxed)</text>
   <!-- Lung outline (shorter) -->
-  <ellipse cx="472" cy="175" rx="38" ry="60" fill="#fbcfe8" stroke="#db2777" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="472" cy="175" rx="38" ry="60" fill="#4a1040" stroke="#db2777" stroke-width="1.5" opacity="0.7"/>
   <!-- Arrow: ribs down and in -->
   <line x1="432" y1="165" x2="408" y2="182" stroke="#dc2626" stroke-width="2" marker-end="url(#exp)"/>
   <text x="376" y="176" text-anchor="middle" font-size="8" fill="#dc2626">Down</text>
@@ -152,7 +152,7 @@ export const note_olevel_biology_11_11_3 = {
   <!-- Arrow: diaphragm up -->
   <line x1="507" y1="222" x2="507" y2="208" stroke="#7c3aed" stroke-width="2" marker-end="url(#purp2)"/>
   <!-- Volume down label -->
-  <rect x="540" y="120" width="108" height="50" rx="6" fill="#fdf2f8" stroke="#f9a8d4" stroke-width="1"/>
+  <rect x="540" y="120" width="108" height="50" rx="6" fill="#4a1040" stroke="#f9a8d4" stroke-width="1"/>
   <text x="594" y="140" text-anchor="middle" font-size="9" font-weight="bold" fill="#831843">Volume ↓</text>
   <text x="594" y="154" text-anchor="middle" font-size="9" fill="#831843">Pressure ↑</text>
   <text x="594" y="166" text-anchor="middle" font-size="9" fill="#831843">Air flows OUT ←</text>

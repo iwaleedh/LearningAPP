@@ -48,12 +48,12 @@ export const note_olevel_biology_17_17_5 = {
       data: {
         caption: 'Punnett square: Tt × Tt cross showing 3:1 phenotype ratio',
         svg: `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="300" fill="#f0fdf4" rx="12"/>
+  <rect width="400" height="300" fill="#0a2e1a" rx="12"/>
   <text x="200" y="25" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Monohybrid Cross: Tt × Tt</text>
   <!-- Parent labels -->
   <text x="80" y="55" text-anchor="middle" font-size="12" fill="#166534">Parent genotypes: <tspan font-weight="bold">Tt × Tt</tspan></text>
   <!-- Grid -->
-  <rect x="140" y="70" width="220" height="180" fill="white" stroke="#16a34a" stroke-width="2"/>
+  <rect x="140" y="70" width="220" height="180" fill="#1e293b" stroke="#16a34a" stroke-width="2"/>
   <!-- Column headers -->
   <text x="195" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">T</text>
   <text x="305" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">t</text>

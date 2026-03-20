@@ -74,18 +74,18 @@ export const note_olevel_biology_9_9_0 = {
       data: {
         caption: 'Double circulation in mammals — pulmonary and systemic circuits',
         svg: `<svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="480" height="340" fill="#fff7f0" rx="12"/>
+  <rect width="480" height="340" fill="#532407" rx="12"/>
   <text x="240" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed">Double Circulation in Mammals</text>
   <!-- LUNGS box -->
-  <rect x="160" y="40" width="160" height="55" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="160" y="40" width="160" height="55" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="240" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">LUNGS</text>
   <text x="240" y="82" text-anchor="middle" font-size="10" fill="#1d4ed8">Gas exchange (oxygenation)</text>
   <!-- HEART box -->
-  <rect x="170" y="145" width="140" height="60" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="2.5"/>
+  <rect x="170" y="145" width="140" height="60" rx="8" fill="#4a1040" stroke="#db2777" stroke-width="2.5"/>
   <text x="240" y="172" text-anchor="middle" font-size="14" font-weight="bold" fill="#be185d">HEART</text>
   <text x="240" y="188" text-anchor="middle" font-size="10" fill="#be185d">pumps blood</text>
   <!-- BODY box -->
-  <rect x="160" y="255" width="160" height="55" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <rect x="160" y="255" width="160" height="55" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="240" y="280" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">BODY ORGANS</text>
   <text x="240" y="296" text-anchor="middle" font-size="10" fill="#166534">Tissues receive O₂, nutrients</text>
   <!-- PULMONARY circuit - left side (deoxygenated up, oxygenated down) -->

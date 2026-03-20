@@ -57,46 +57,46 @@ export const note_olevel_biology_1_1_0 = {
       data: {
         caption: 'MRS GREN mnemonic diagram',
         svg: `<svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="380" fill="#f0fdf4" rx="12"/>
+  <rect width="520" height="380" fill="#0a2e1a" rx="12"/>
   <text x="260" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#166534">MRS GREN</text>
   <text x="260" y="52" text-anchor="middle" font-size="11" fill="#166534">Seven Characteristics of Living Organisms</text>
   <!-- M -->
-  <rect x="20" y="70" width="220" height="44" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="20" y="70" width="220" height="44" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="34" y="88" font-size="18" font-weight="bold" fill="#15803d">M</text>
   <text x="58" y="88" font-size="13" font-weight="bold" fill="#166534">ovement</text>
   <text x="58" y="104" font-size="11" fill="#15803d">Change in position of body/parts</text>
   <!-- R1 -->
-  <rect x="280" y="70" width="220" height="44" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="280" y="70" width="220" height="44" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="294" y="88" font-size="18" font-weight="bold" fill="#15803d">R</text>
   <text x="318" y="88" font-size="13" font-weight="bold" fill="#166534">espiration</text>
   <text x="318" y="104" font-size="11" fill="#15803d">Release of energy from food</text>
   <!-- S -->
-  <rect x="20" y="128" width="220" height="44" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="20" y="128" width="220" height="44" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="34" y="146" font-size="18" font-weight="bold" fill="#15803d">S</text>
   <text x="58" y="146" font-size="13" font-weight="bold" fill="#166534">ensitivity</text>
   <text x="58" y="162" font-size="11" fill="#15803d">Detect and respond to stimuli</text>
   <!-- G -->
-  <rect x="280" y="128" width="220" height="44" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="280" y="128" width="220" height="44" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="294" y="146" font-size="18" font-weight="bold" fill="#15803d">G</text>
   <text x="318" y="146" font-size="13" font-weight="bold" fill="#166534">rowth</text>
   <text x="318" y="162" font-size="11" fill="#15803d">Permanent increase in size/mass</text>
   <!-- R2 -->
-  <rect x="20" y="186" width="220" height="44" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="20" y="186" width="220" height="44" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="34" y="204" font-size="18" font-weight="bold" fill="#15803d">R</text>
   <text x="58" y="204" font-size="13" font-weight="bold" fill="#166534">eproduction</text>
   <text x="58" y="220" font-size="11" fill="#15803d">Produce offspring (sexual/asexual)</text>
   <!-- E -->
-  <rect x="280" y="186" width="220" height="44" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="280" y="186" width="220" height="44" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="294" y="204" font-size="18" font-weight="bold" fill="#15803d">E</text>
   <text x="318" y="204" font-size="13" font-weight="bold" fill="#166534">xcretion</text>
   <text x="318" y="220" font-size="11" fill="#15803d">Remove metabolic waste products</text>
   <!-- N -->
-  <rect x="150" y="244" width="220" height="44" rx="8" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <rect x="150" y="244" width="220" height="44" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="164" y="262" font-size="18" font-weight="bold" fill="#15803d">N</text>
   <text x="188" y="262" font-size="13" font-weight="bold" fill="#166534">utrition</text>
   <text x="188" y="278" font-size="11" fill="#15803d">Obtain and use food/energy</text>
   <!-- Note -->
-  <rect x="20" y="308" width="480" height="54" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="20" y="308" width="480" height="54" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="260" y="328" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">Remember: ALL 7 characteristics must be present</text>
   <text x="260" y="346" text-anchor="middle" font-size="11" fill="#92400e">for something to be classified as a living organism.</text>
   <text x="260" y="358" text-anchor="middle" font-size="11" fill="#92400e">Fire moves, grows, and uses nutrition — but cannot reproduce or excrete!</text>

@@ -113,35 +113,35 @@ export const note_olevel_biology_10_10_0 = {
         caption: 'Transmission routes of pathogens — summary diagram',
         svg: `<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
   <!-- Background -->
-  <rect width="700" height="380" fill="#f8fafc" rx="12"/>
+  <rect width="700" height="380" fill="#0f172a" rx="12"/>
   <!-- Title -->
   <text x="350" y="32" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">Routes of Disease Transmission</text>
   <!-- Central infected person -->
-  <ellipse cx="350" cy="190" rx="54" ry="54" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <ellipse cx="350" cy="190" rx="54" ry="54" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="350" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">Infected</text>
   <text x="350" y="200" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">Person</text>
   <!-- Droplets node -->
-  <ellipse cx="170" cy="90" rx="68" ry="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <ellipse cx="170" cy="90" rx="68" ry="30" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="170" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Droplet</text>
   <text x="170" y="100" text-anchor="middle" font-size="10" fill="#1d4ed8">Cough / Sneeze</text>
   <line x1="240" y1="155" x2="222" y2="115" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr)"/>
   <!-- Direct contact -->
-  <ellipse cx="530" cy="90" rx="68" ry="30" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <ellipse cx="530" cy="90" rx="68" ry="30" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
   <text x="530" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Direct</text>
   <text x="530" y="100" text-anchor="middle" font-size="10" fill="#065f46">Contact</text>
   <line x1="460" y1="155" x2="478" y2="115" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr2)"/>
   <!-- Food/water -->
-  <ellipse cx="100" cy="240" rx="74" ry="30" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <ellipse cx="100" cy="240" rx="74" ry="30" fill="#44370a" stroke="#eab308" stroke-width="1.5"/>
   <text x="100" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#713f12">Food /</text>
   <text x="100" y="250" text-anchor="middle" font-size="10" fill="#713f12">Water</text>
   <line x1="220" y1="210" x2="170" y2="238" stroke="#eab308" stroke-width="1.5" marker-end="url(#arr3)"/>
   <!-- Vector -->
-  <ellipse cx="350" cy="330" rx="68" ry="30" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <ellipse cx="350" cy="330" rx="68" ry="30" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="350" y="325" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">Vector</text>
   <text x="350" y="340" text-anchor="middle" font-size="10" fill="#4c1d95">(e.g. Mosquito)</text>
   <line x1="350" y1="244" x2="350" y2="300" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr4)"/>
   <!-- Sexual contact -->
-  <ellipse cx="600" cy="240" rx="74" ry="30" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <ellipse cx="600" cy="240" rx="74" ry="30" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="600" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#831843">Sexual</text>
   <text x="600" y="250" text-anchor="middle" font-size="10" fill="#831843">Contact</text>
   <line x1="480" y1="210" x2="530" y2="238" stroke="#db2777" stroke-width="1.5" marker-end="url(#arr5)"/>

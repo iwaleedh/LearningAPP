@@ -35,7 +35,7 @@ export const note_olevel_biology_3_3_0 = {
       data: {
         caption: 'Diffusion — particles moving from high to low concentration across a membrane',
         svg: `<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="500" height="240" fill="#f0f9ff" rx="12"/>
+  <rect width="500" height="240" fill="#1c3a64" rx="12"/>
   <!-- Title -->
   <text x="250" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">Diffusion Across a Membrane</text>
   <!-- Membrane -->
@@ -74,7 +74,7 @@ export const note_olevel_biology_3_3_0 = {
   <text x="190" y="195" text-anchor="middle" font-size="10" fill="#dc2626">Net movement →</text>
   <text x="190" y="208" text-anchor="middle" font-size="10" fill="#dc2626">(down concentration gradient)</text>
   <!-- No energy label -->
-  <rect x="290" y="185" width="170" height="28" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="290" y="185" width="170" height="28" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="375" y="203" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">No energy (ATP) required</text>
 </svg>`
       }

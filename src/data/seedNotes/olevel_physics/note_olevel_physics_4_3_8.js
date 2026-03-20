@@ -38,9 +38,9 @@ export const note_olevel_physics_4_3_8 = {
         caption: 'UK 3-pin plug wiring diagram',
         svg: `<svg viewBox="0 0 320 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Plug body -->
-  <rect x="60" y="30" width="200" height="140" rx="20" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="60" y="30" width="200" height="140" rx="20" fill="#1e293b" stroke="#9ca3af" stroke-width="2"/>
   <!-- Cable entry -->
-  <rect x="130" y="160" width="60" height="25" rx="4" fill="#d1d5db" stroke="#9ca3af" stroke-width="1.5"/>
+  <rect x="130" y="160" width="60" height="25" rx="4" fill="#1e293b" stroke="#9ca3af" stroke-width="1.5"/>
   <!-- Earth pin (top) -->
   <rect x="145" y="45" width="18" height="30" rx="3" fill="#374151" stroke="#374151"/>
   <text x="168" y="65" fill="#374151">Earth (Top)</text>
@@ -58,13 +58,13 @@ export const note_olevel_physics_4_3_8 = {
   <line x1="84" y1="123" x2="84" y2="155" stroke="#2563eb" stroke-width="4"/>
   <line x1="84" y1="155" x2="152" y2="170" stroke="#2563eb" stroke-width="4"/>
   <!-- Live wire + fuse -->
-  <rect x="205" y="135" width="25" height="10" rx="3" fill="#fef9c3" stroke="#d97706" stroke-width="2"/>
+  <rect x="205" y="135" width="25" height="10" rx="3" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="202" y="130" fill="#d97706" font-size="9">fuse</text>
   <line x1="224" y1="123" x2="224" y2="135" stroke="#b45309" stroke-width="4"/>
   <line x1="205" y1="140" x2="175" y2="155" stroke="#b45309" stroke-width="4"/>
   <line x1="175" y1="155" x2="160" y2="170" stroke="#b45309" stroke-width="4"/>
   <!-- Legend -->
-  <rect x="5" y="185" width="310" height="40" rx="5" fill="#f9fafb" stroke="#e5e7eb"/>
+  <rect x="5" y="185" width="310" height="40" rx="5" fill="#0f172a" stroke="#e5e7eb"/>
   <line x1="12" y1="200" x2="30" y2="200" stroke="#16a34a" stroke-width="3"/>
   <text x="34" y="204" fill="#374151">Earth (green/yellow)</text>
   <line x1="120" y1="200" x2="138" y2="200" stroke="#2563eb" stroke-width="3"/>

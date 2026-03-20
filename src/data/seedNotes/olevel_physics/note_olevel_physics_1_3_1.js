@@ -66,16 +66,16 @@ export const note_olevel_physics_1_3_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="180" fill="#fefce8" rx="10"/>
+  <rect width="420" height="180" fill="#44370a" rx="10"/>
   <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#713f12">Density: Same Volume, Different Mass</text>
   <!-- Box 1: Low density (wood) -->
-  <rect x="40" y="50" width="120" height="90" fill="#d9f99d" stroke="#65a30d" stroke-width="2" rx="4"/>
+  <rect x="40" y="50" width="120" height="90" fill="#1a3a08" stroke="#65a30d" stroke-width="2" rx="4"/>
   <text x="100" y="92" text-anchor="middle" font-size="13" fill="#365314" font-weight="bold">Wood</text>
   <text x="100" y="110" text-anchor="middle" font-size="11" fill="#365314">m = 72 kg</text>
   <text x="100" y="126" text-anchor="middle" font-size="11" fill="#65a30d">ρ = 720 kg/m³</text>
   <text x="100" y="155" text-anchor="middle" font-size="10" fill="#6b7280">V = 0.1 m³</text>
   <!-- Box 2: High density (iron) -->
-  <rect x="210" y="50" width="120" height="90" fill="#c7d2fe" stroke="#4338ca" stroke-width="2" rx="4"/>
+  <rect x="210" y="50" width="120" height="90" fill="#2d2d72" stroke="#4338ca" stroke-width="2" rx="4"/>
   <text x="270" y="92" text-anchor="middle" font-size="13" fill="#1e1b4b" font-weight="bold">Iron</text>
   <text x="270" y="110" text-anchor="middle" font-size="11" fill="#1e1b4b">m = 790 kg</text>
   <text x="270" y="126" text-anchor="middle" font-size="11" fill="#4338ca">ρ = 7900 kg/m³</text>

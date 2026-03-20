@@ -199,7 +199,7 @@ export const note_chemistry_1_5_4 = {
   <text x="500" y="158" class="sub" text-anchor="middle">general: R–C⁺(R′)–R″</text>
 
   <!-- Stability bar -->
-  <rect x="20" y="170" width="560" height="40" rx="4" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
+  <rect x="20" y="170" width="560" height="40" rx="4" fill="#78350f" stroke="#fcd34d" stroke-width="1"/>
   <text x="300" y="187" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Stability order:  1° &lt; 2° &lt; 3°</text>
   <text x="300" y="202" text-anchor="middle" font-size="10" fill="#92400e">More alkyl groups → more charge spreading → lower energy → more stable</text>
 </svg>`
@@ -300,9 +300,9 @@ export const note_chemistry_1_5_4 = {
   </defs>
 
   <!-- PATH B background (major, green) -->
-  <rect x="10" y="15" width="620" height="135" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <rect x="10" y="15" width="620" height="135" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1.2"/>
   <!-- PATH A background (minor, red) -->
-  <rect x="10" y="158" width="620" height="133" rx="5" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.2"/>
+  <rect x="10" y="158" width="620" height="133" rx="5" fill="#3d1212" stroke="#fca5a5" stroke-width="1.2"/>
 
   <!-- Headers -->
   <text x="22" y="35" class="hd" fill="#15803d" text-anchor="start">Path B (MAJOR) &#x2014; H&#x207a; adds to C1 (CH&#x2082; end, more H&#x2019;s)</text>

@@ -41,7 +41,7 @@ export const note_olevel_physics_1_5_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="220" fill="#f0fdf4" rx="10"/>
+  <rect width="440" height="220" fill="#0a2e1a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Principle of Moments — Balanced Beam</text>
   <!-- Beam -->
   <rect x="40" y="100" width="360" height="12" fill="#78350f" rx="3"/>
@@ -64,7 +64,7 @@ export const note_olevel_physics_1_5_1 = {
   <line x1="220" y1="88" x2="320" y2="88" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="270" y="82" text-anchor="middle" font-size="10" fill="#ef4444">d₂ = 0.4 m</text>
   <!-- Calculation box -->
-  <rect x="40" y="175" width="360" height="36" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" rx="6"/>
+  <rect x="40" y="175" width="360" height="36" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5" rx="6"/>
   <text x="220" y="190" text-anchor="middle" font-size="11" fill="#166534">ACW: 40 × 0.6 = 24 N·m  |  CW: F₂ × 0.4 = 24 N·m</text>
   <text x="220" y="205" text-anchor="middle" font-size="12" fill="#166534" font-weight="bold">F₂ = 24 ÷ 0.4 = 60 N</text>
 </svg>`,

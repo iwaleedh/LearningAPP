@@ -62,21 +62,21 @@ export const note_olevel_chemistry_9_9_7 = {
   <!-- Method Brackets and Boxes -->
   <!-- Electrolysis Box -->
   <path d="M 200 50 L 220 50 L 220 145 L 200 145" fill="none" stroke="#ef4444" stroke-width="2"/>
-  <rect x="230" y="70" width="230" height="55" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="2" />
+  <rect x="230" y="70" width="230" height="55" rx="6" fill="#3d1212" stroke="#ef4444" stroke-width="2" />
   <text x="345" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">Electrolysis</text>
   <text x="345" y="110" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="middle">Of molten ore (compounds are</text>
   <text x="345" y="123" font-family="var(--font-sans)" font-size="12" fill="#ef4444" text-anchor="middle">too stable for carbon reduction)</text>
 
   <!-- Carbon Reduction Box -->
   <path d="M 200 180 L 220 180 L 220 255 L 200 255" fill="none" stroke="#ca8a04" stroke-width="2"/>
-  <rect x="230" y="190" width="230" height="55" rx="6" fill="#fefce8" stroke="#ca8a04" stroke-width="2" />
+  <rect x="230" y="190" width="230" height="55" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="2" />
   <text x="345" y="210" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">Reduction with Carbon</text>
   <text x="345" y="230" font-family="var(--font-sans)" font-size="12" fill="#ca8a04" text-anchor="middle">Heated with carbon/coke</text>
   <text x="345" y="243" font-family="var(--font-sans)" font-size="12" fill="#ca8a04" text-anchor="middle">in a furnace</text>
 
   <!-- Native Box -->
   <path d="M 200 270 L 220 270 L 220 305 L 200 305" fill="none" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="230" y="275" width="230" height="30" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+  <rect x="230" y="275" width="230" height="30" rx="6" fill="#1c3a64" stroke="#3b82f6" stroke-width="2" />
   <text x="345" y="295" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Found Native (Uncombined)</text>
 
 </svg>`

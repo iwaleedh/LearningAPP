@@ -41,26 +41,26 @@ export const note_chemistry_1_4_9 = {
       svg: `<svg viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <text x="230" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Fractionating Column</text>
   <!-- Column body -->
-  <rect x="120" y="30" width="80" height="320" rx="6" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+  <rect x="120" y="30" width="80" height="320" rx="6" fill="#2d2f72" stroke="#4f46e5" stroke-width="2"/>
   <!-- Temperature gradient arrow -->
   <line x1="100" y1="50" x2="100" y2="340" stroke="#ef4444" stroke-width="2"/>
   <polygon points="100,40 96,55 104,55" fill="#ef4444"/>
   <text x="95" y="200" text-anchor="middle" font-size="11" fill="#ef4444" transform="rotate(-90,95,200)">Temperature increases ↓</text>
   <!-- Fractions -->
   <!-- Refinery gas -->
-  <rect x="210" y="32" width="10" height="30" fill="#93c5fd" rx="2"/>
+  <rect x="210" y="32" width="10" height="30" fill="#1250a0" rx="2"/>
   <text x="225" y="42" font-size="11" fill="#1e40af">Refinery gas (C₁–C₄)</text>
   <text x="225" y="54" font-size="10" fill="#6b7280">b.p. below 25 °C — bottled gas, heating</text>
   <!-- Gasoline/petrol -->
-  <rect x="210" y="82" width="10" height="35" fill="#fbbf24" rx="2"/>
+  <rect x="210" y="82" width="10" height="35" fill="#78350f" rx="2"/>
   <text x="225" y="94" font-size="11" fill="#92400e">Petrol/gasoline (C₅–C₁₀)</text>
   <text x="225" y="106" font-size="10" fill="#6b7280">25–75 °C — motor fuel</text>
   <!-- Naphtha -->
-  <rect x="210" y="132" width="10" height="30" fill="#a78bfa" rx="2"/>
+  <rect x="210" y="132" width="10" height="30" fill="#2d1b69" rx="2"/>
   <text x="225" y="144" font-size="11" fill="#5b21b6">Naphtha (C₆–C₁₀)</text>
   <text x="225" y="156" font-size="10" fill="#6b7280">75–190 °C — chemical feedstock</text>
   <!-- Kerosene -->
-  <rect x="210" y="177" width="10" height="35" fill="#34d399" rx="2"/>
+  <rect x="210" y="177" width="10" height="35" fill="#065f46" rx="2"/>
   <text x="225" y="189" font-size="11" fill="#065f46">Kerosene (C₁₀–C₁₆)</text>
   <text x="225" y="201" font-size="10" fill="#6b7280">150–250 °C — jet fuel</text>
   <!-- Diesel -->
@@ -75,7 +75,7 @@ export const note_chemistry_1_4_9 = {
   <rect x="120" y="350" width="80" height="15" fill="#1f2937" rx="3"/>
   <text x="160" y="377" text-anchor="middle" font-size="11" fill="#374151">Bitumen residue (C₅₀+) — road surfacing</text>
   <!-- Furnace -->
-  <rect x="110" y="380" width="100" height="28" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="110" y="380" width="100" height="28" rx="4" fill="#3d1212" stroke="#ef4444" stroke-width="1.5"/>
   <text x="160" y="399" text-anchor="middle" font-size="11" fill="#991b1b">Furnace — heat crude oil</text>
 </svg>`,
       caption: 'Fractionating column: crude oil heated at bottom, fractions condense at different heights based on boiling point.'

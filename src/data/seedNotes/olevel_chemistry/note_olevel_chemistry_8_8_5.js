@@ -65,14 +65,14 @@ export const note_olevel_chemistry_8_8_5 = {
   <!-- Tube 2: Fe2+ -->
   <path d="M 220 60 L 220 160 A 15 15 0 0 0 250 160 L 250 60" fill="none" stroke="var(--color-text)" stroke-width="2"/>
   <ellipse cx="235" cy="60" rx="15" ry="4" fill="none" stroke="var(--color-text)" stroke-width="2"/>
-  <path d="M 221 110 Q 235 115 249 110 L 249 160 A 14 14 0 0 1 221 160 Z" fill="#bbf7d0" opacity="0.8"/>
+  <path d="M 221 110 Q 235 115 249 110 L 249 160 A 14 14 0 0 1 221 160 Z" fill="#0a3020" opacity="0.8"/>
   <text x="235" y="195" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fe²⁺</text>
   <text x="235" y="215" font-family="var(--font-sans)" font-size="12" fill="#166534" text-anchor="middle">Pale Green</text>
 
   <!-- Tube 3: Fe3+ -->
   <path d="M 320 60 L 320 160 A 15 15 0 0 0 350 160 L 350 60" fill="none" stroke="var(--color-text)" stroke-width="2"/>
   <ellipse cx="335" cy="60" rx="15" ry="4" fill="none" stroke="var(--color-text)" stroke-width="2"/>
-  <path d="M 321 110 Q 335 115 349 110 L 349 160 A 14 14 0 0 1 321 160 Z" fill="#fcd34d" opacity="0.8"/>
+  <path d="M 321 110 Q 335 115 349 110 L 349 160 A 14 14 0 0 1 321 160 Z" fill="#532407" opacity="0.8"/>
   <text x="335" y="195" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fe³⁺</text>
   <text x="335" y="215" font-family="var(--font-sans)" font-size="12" fill="#b45309" text-anchor="middle">Yellow-Brown</text>
 

@@ -61,21 +61,21 @@ export const note_olevel_biology_5_5_0 = {
       data: {
         caption: 'The lock-and-key model of enzyme action — substrate binds to the active site, products are released',
         svg: `<svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
-  <rect width="520" height="260" fill="#fdf4ff" rx="12"/>
+  <rect width="520" height="260" fill="#2d1b69" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#4c1d95">Lock-and-Key Model of Enzyme Action</text>
 
   <!-- Step 1: Enzyme + Substrate approaching -->
   <text x="90" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 1: Approach</text>
   <!-- Enzyme (lock) -->
-  <path d="M 30,65 Q 30,55 40,55 L 140,55 Q 150,55 150,65 L 150,155 Q 150,165 140,165 L 40,165 Q 30,165 30,155 Z" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
-  <path d="M 65,110 Q 65,90 90,90 Q 115,90 115,110 Q 115,130 90,130 Q 65,130 65,110 Z" fill="#f0fdf4" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M 30,65 Q 30,55 40,55 L 140,55 Q 150,55 150,65 L 150,155 Q 150,165 140,165 L 40,165 Q 30,165 30,155 Z" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <path d="M 65,110 Q 65,90 90,90 Q 115,90 115,110 Q 115,130 90,130 Q 65,130 65,110 Z" fill="#0a2e1a" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="90" y="183" text-anchor="middle" font-size="10" fill="#4c1d95" font-weight="bold">Enzyme</text>
   <text x="90" y="195" text-anchor="middle" font-size="9" fill="#374151">(lock)</text>
   <!-- Label active site -->
   <text x="90" y="114" text-anchor="middle" font-size="8" fill="#374151">Active</text>
   <text x="90" y="124" text-anchor="middle" font-size="8" fill="#374151">site</text>
   <!-- Substrate -->
-  <ellipse cx="90" cy="55" rx="22" ry="22" fill="#86efac" stroke="#16a34a" stroke-width="2" transform="translate(100,0)"/>
+  <ellipse cx="90" cy="55" rx="22" ry="22" fill="#0a2e1a" stroke="#16a34a" stroke-width="2" transform="translate(100,0)"/>
   <text x="190" y="55" text-anchor="middle" font-size="9" fill="#15803d" dy="4">Substrate</text>
   <text x="190" y="68" text-anchor="middle" font-size="9" fill="#374151">(key)</text>
   <!-- Arrow -->
@@ -83,9 +83,9 @@ export const note_olevel_biology_5_5_0 = {
 
   <!-- Step 2: Enzyme-substrate complex -->
   <text x="270" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 2: Complex forms</text>
-  <path d="M 210,65 Q 210,55 220,55 L 320,55 Q 330,55 330,65 L 330,155 Q 330,165 320,165 L 220,165 Q 210,165 210,155 Z" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+  <path d="M 210,65 Q 210,55 220,55 L 320,55 Q 330,55 330,65 L 330,155 Q 330,165 320,165 L 220,165 Q 210,165 210,155 Z" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
   <!-- Substrate fills active site -->
-  <ellipse cx="270" cy="110" rx="28" ry="26" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <ellipse cx="270" cy="110" rx="28" ry="26" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="270" y="107" text-anchor="middle" font-size="8" fill="#15803d">Enzyme-</text>
   <text x="270" y="118" text-anchor="middle" font-size="8" fill="#15803d">substrate</text>
   <text x="270" y="129" text-anchor="middle" font-size="8" fill="#15803d">complex</text>
@@ -94,12 +94,12 @@ export const note_olevel_biology_5_5_0 = {
 
   <!-- Step 3: Products released -->
   <text x="445" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 3: Products released</text>
-  <path d="M 385,65 Q 385,55 395,55 L 495,55 Q 505,55 505,65 L 505,155 Q 505,165 495,165 L 395,165 Q 385,165 385,155 Z" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
-  <path d="M 415,110 Q 415,90 440,90 Q 465,90 465,110 Q 465,130 440,130 Q 415,130 415,110 Z" fill="#f0fdf4" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M 385,65 Q 385,55 395,55 L 495,55 Q 505,55 505,65 L 505,155 Q 505,165 495,165 L 395,165 Q 385,165 385,155 Z" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <path d="M 415,110 Q 415,90 440,90 Q 465,90 465,110 Q 465,130 440,130 Q 415,130 415,110 Z" fill="#0a2e1a" stroke="#7c3aed" stroke-width="1.5"/>
   <!-- Two products -->
-  <ellipse cx="430" cy="55" rx="14" ry="14" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="430" cy="55" rx="14" ry="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="430" y="59" text-anchor="middle" font-size="8" fill="#92400e">P1</text>
-  <ellipse cx="460" cy="55" rx="14" ry="14" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <ellipse cx="460" cy="55" rx="14" ry="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="460" y="59" text-anchor="middle" font-size="8" fill="#92400e">P2</text>
   <text x="445" y="183" text-anchor="middle" font-size="10" fill="#4c1d95" font-weight="bold">Enzyme free</text>
   <text x="445" y="195" text-anchor="middle" font-size="9" fill="#374151">Products released</text>

@@ -50,7 +50,7 @@ export const note_olevel_physics_4_2_5 = {
         caption: 'Series circuit: same current through all; voltages V₁, V₂ add up to supply voltage.',
         svg: `<svg viewBox="0 0 380 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
   <!-- Battery -->
-  <rect x="15" y="65" width="30" height="40" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="15" y="65" width="30" height="40" rx="4" fill="#78350f" stroke="#f59e0b" stroke-width="2"/>
   <text x="30" y="90" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="11">EMF</text>
   <!-- Top wire -->
   <line x1="45" y1="75" x2="345" y2="75" stroke="#374151" stroke-width="2"/>
@@ -60,13 +60,13 @@ export const note_olevel_physics_4_2_5 = {
   <line x1="345" y1="75" x2="345" y2="105" stroke="#374151" stroke-width="2"/>
 
   <!-- Resistor R1 -->
-  <rect x="90" y="63" width="60" height="24" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="90" y="63" width="60" height="24" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="120" y="79" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R₁</text>
   <!-- Resistor R2 -->
-  <rect x="200" y="63" width="60" height="24" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="200" y="63" width="60" height="24" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="230" y="79" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R₂</text>
   <!-- Resistor R3 -->
-  <rect x="280" y="63" width="50" height="24" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="280" y="63" width="50" height="24" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="305" y="79" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R₃</text>
 
   <!-- Current arrows on wire -->

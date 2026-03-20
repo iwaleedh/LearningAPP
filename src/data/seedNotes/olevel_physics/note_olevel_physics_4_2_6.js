@@ -59,7 +59,7 @@ export const note_olevel_physics_4_2_6 = {
         caption: 'Parallel circuit: same voltage across both resistors; currents I₁ and I₂ flow through separate branches.',
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
   <!-- Battery left -->
-  <rect x="10" y="80" width="30" height="50" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="10" y="80" width="30" height="50" rx="4" fill="#78350f" stroke="#f59e0b" stroke-width="2"/>
   <text x="25" y="108" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="10">EMF</text>
   <!-- Top wire -->
   <line x1="40" y1="88" x2="330" y2="88" stroke="#374151" stroke-width="2"/>
@@ -72,14 +72,14 @@ export const note_olevel_physics_4_2_6 = {
   <line x1="130" y1="88" x2="130" y2="60" stroke="#374151" stroke-width="1.5"/>
   <line x1="250" y1="88" x2="250" y2="60" stroke="#374151" stroke-width="1.5"/>
   <line x1="130" y1="60" x2="250" y2="60" stroke="#374151" stroke-width="1.5"/>
-  <rect x="158" y="50" width="66" height="20" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="158" y="50" width="66" height="20" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="191" y="64" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R₁</text>
 
   <!-- Branch 2 R2 (bottom) -->
   <line x1="130" y1="122" x2="130" y2="150" stroke="#374151" stroke-width="1.5"/>
   <line x1="250" y1="122" x2="250" y2="150" stroke="#374151" stroke-width="1.5"/>
   <line x1="130" y1="150" x2="250" y2="150" stroke="#374151" stroke-width="1.5"/>
-  <rect x="158" y="140" width="66" height="20" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="158" y="140" width="66" height="20" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="191" y="155" text-anchor="middle" fill="#1d4ed8" font-weight="bold">R₂</text>
 
   <!-- Junctions dots -->

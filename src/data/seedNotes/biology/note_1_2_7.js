@@ -42,7 +42,7 @@ export const note_biology_1_2_7 = {
         "id": "svg-diag-1-2-7-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='150' cy='75' r='15' fill='#cbd5e0'/><text x='145' y='80' font-weight='bold'>C</text><rect x='70' y='60' width='50' height='30' fill='#ebf8ff' rx='5'/><text x='75' y='80' font-size='12' fill='#2b6cb0'>H₂N (Amine)</text><line x1='120' y1='75' x2='135' y2='75' stroke='#333' stroke-width='2'/><rect x='180' y='60' width='70' height='30' fill='#fff5f5' rx='5'/><text x='185' y='80' font-size='12' fill='#c53030'>COOH (Acid)</text><line x1='165' y1='75' x2='180' y2='75' stroke='#333' stroke-width='2'/><circle cx='150' cy='30' r='15' fill='#fefcbf'/><text x='145' y='35' font-weight='bold'>R</text><line x1='150' y1='45' x2='150' y2='60' stroke='#333' stroke-width='2'/></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='150' cy='75' r='15' fill='#1e293b'/><text x='145' y='80' font-weight='bold'>C</text><rect x='70' y='60' width='50' height='30' fill='#1c3a64' rx='5'/><text x='75' y='80' font-size='12' fill='#2b6cb0'>H₂N (Amine)</text><line x1='120' y1='75' x2='135' y2='75' stroke='#333' stroke-width='2'/><rect x='180' y='60' width='70' height='30' fill='#3d1212' rx='5'/><text x='185' y='80' font-size='12' fill='#c53030'>COOH (Acid)</text><line x1='165' y1='75' x2='180' y2='75' stroke='#333' stroke-width='2'/><circle cx='150' cy='30' r='15' fill='#44370a'/><text x='145' y='35' font-weight='bold'>R</text><line x1='150' y1='45' x2='150' y2='60' stroke='#333' stroke-width='2'/></svg>",
             "caption": "Amino Acid Structure"
         }
     },
@@ -50,7 +50,7 @@ export const note_biology_1_2_7 = {
         "id": "svg-diag-1-2-7-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><text x='50' y='50' font-size='14'>Amino Acid 1 + Amino Acid 2</text><path d='M100,70 L200,70' fill='none' stroke='#4a5568' stroke-width='2' marker-end='url(#arrow)'/><text x='120' y='90' font-size='10' fill='#3182ce'>Condensation (-H₂O)</text><rect x='220' y='35' width='120' height='30' fill='#e2e8f0' rx='5'/><text x='230' y='55' font-size='12' font-weight='bold'>Dipeptide</text><text x='250' y='80' font-size='10' fill='#e53e3e'>Peptide Bond (C-N)</text></svg>",
+            "svg": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><text x='50' y='50' font-size='14'>Amino Acid 1 + Amino Acid 2</text><path d='M100,70 L200,70' fill='none' stroke='#4a5568' stroke-width='2' marker-end='url(#arrow)'/><text x='120' y='90' font-size='10' fill='#3182ce'>Condensation (-H₂O)</text><rect x='220' y='35' width='120' height='30' fill='#1e293b' rx='5'/><text x='230' y='55' font-size='12' font-weight='bold'>Dipeptide</text><text x='250' y='80' font-size='10' fill='#e53e3e'>Peptide Bond (C-N)</text></svg>",
             "caption": "Peptide Bond Formation"
         }
     }

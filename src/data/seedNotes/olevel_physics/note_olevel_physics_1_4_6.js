@@ -40,10 +40,10 @@ export const note_olevel_physics_1_4_6 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="240" fill="#f0fdf4" rx="10"/>
+  <rect width="440" height="240" fill="#0a2e1a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Falling Parachutist — Terminal Velocity</text>
   <!-- Stage 1: just dropped -->
-  <rect x="25" y="40" width="90" height="170" fill="white" stroke="#e5e7eb" stroke-width="1.5" rx="6"/>
+  <rect x="25" y="40" width="90" height="170" fill="#1e293b" stroke="#e5e7eb" stroke-width="1.5" rx="6"/>
   <text x="70" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Stage 1</text>
   <!-- Person -->
   <circle cx="70" cy="100" r="10" fill="#6366f1"/>
@@ -59,7 +59,7 @@ export const note_olevel_physics_1_4_6 = {
   <text x="70" y="200" text-anchor="middle" font-size="9" fill="#374151">W &gt; D</text>
   <text x="70" y="212" text-anchor="middle" font-size="9" fill="#ef4444">Accelerating ↓</text>
   <!-- Stage 2: faster, bigger drag -->
-  <rect x="175" y="40" width="90" height="170" fill="white" stroke="#e5e7eb" stroke-width="1.5" rx="6"/>
+  <rect x="175" y="40" width="90" height="170" fill="#1e293b" stroke="#e5e7eb" stroke-width="1.5" rx="6"/>
   <text x="220" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Stage 2</text>
   <circle cx="220" cy="100" r="10" fill="#6366f1"/>
   <line x1="220" y1="110" x2="220" y2="140" stroke="#6366f1" stroke-width="2.5"/>
@@ -72,7 +72,7 @@ export const note_olevel_physics_1_4_6 = {
   <text x="220" y="200" text-anchor="middle" font-size="9" fill="#374151">W &gt; D still</text>
   <text x="220" y="212" text-anchor="middle" font-size="9" fill="#f59e0b">Still accelerating ↓</text>
   <!-- Stage 3: terminal velocity -->
-  <rect x="325" y="40" width="90" height="170" fill="white" stroke="#16a34a" stroke-width="2" rx="6"/>
+  <rect x="325" y="40" width="90" height="170" fill="#1e293b" stroke="#16a34a" stroke-width="2" rx="6"/>
   <text x="370" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Stage 3</text>
   <circle cx="370" cy="100" r="10" fill="#6366f1"/>
   <line x1="370" y1="110" x2="370" y2="140" stroke="#6366f1" stroke-width="2.5"/>

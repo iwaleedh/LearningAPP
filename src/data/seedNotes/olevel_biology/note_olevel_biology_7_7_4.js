@@ -41,28 +41,28 @@ export const note_olevel_biology_7_7_4 = {
       data: {
         caption: 'Cross-section of a human molar tooth',
         svg: `<svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="400" height="420" fill="#f8f9fa" rx="10"/>
+  <rect width="400" height="420" fill="#0f172a" rx="10"/>
   <text x="200" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Cross-Section of a Tooth</text>
 
   <!-- Gum line -->
-  <rect x="60" y="200" width="280" height="8" fill="#fca5a5" rx="2"/>
+  <rect x="60" y="200" width="280" height="8" fill="#7f1d1d" rx="2"/>
   <text x="345" y="207" text-anchor="start" font-size="11" fill="#b91c1c">Gum line</text>
 
   <!-- Crown (above gum) -->
   <!-- Enamel outer layer -->
-  <path d="M 130 200 Q 120 160 140 110 Q 160 70 200 60 Q 240 70 260 110 Q 280 160 270 200 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 130 200 Q 120 160 140 110 Q 160 70 200 60 Q 240 70 260 110 Q 280 160 270 200 Z" fill="#0c4a6e" stroke="#0369a1" stroke-width="2"/>
   <!-- Dentine -->
-  <path d="M 145 200 Q 138 165 153 118 Q 168 82 200 73 Q 232 82 247 118 Q 262 165 255 200 Z" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <path d="M 145 200 Q 138 165 153 118 Q 168 82 200 73 Q 232 82 247 118 Q 262 165 255 200 Z" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <!-- Pulp cavity -->
-  <path d="M 175 200 Q 172 170 179 135 Q 187 108 200 100 Q 213 108 221 135 Q 228 170 225 200 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/>
+  <path d="M 175 200 Q 172 170 179 135 Q 187 108 200 100 Q 213 108 221 135 Q 228 170 225 200 Z" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1.5"/>
 
   <!-- Root (below gum) -->
   <!-- Dentine root -->
-  <path d="M 145 200 Q 140 250 155 300 Q 170 340 185 360 Q 192 375 200 380 Q 208 375 215 360 Q 230 340 245 300 Q 260 250 255 200 Z" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <path d="M 145 200 Q 140 250 155 300 Q 170 340 185 360 Q 192 375 200 380 Q 208 375 215 360 Q 230 340 245 300 Q 260 250 255 200 Z" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <!-- Cement -->
   <path d="M 145 200 Q 138 252 151 304 Q 165 346 182 363 Q 191 377 200 382 Q 209 377 218 363 Q 235 346 249 304 Q 262 252 255 200" fill="none" stroke="#92400e" stroke-width="4"/>
   <!-- Pulp canal -->
-  <path d="M 175 200 Q 172 248 177 296 Q 182 338 192 360 Q 196 372 200 376 Q 204 372 208 360 Q 218 338 223 296 Q 228 248 225 200 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="1"/>
+  <path d="M 175 200 Q 172 248 177 296 Q 182 338 192 360 Q 196 372 200 376 Q 204 372 208 360 Q 218 338 223 296 Q 228 248 225 200 Z" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1"/>
 
   <!-- Root canal / nerve + blood vessel -->
   <line x1="200" y1="370" x2="200" y2="400" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="3,2"/>

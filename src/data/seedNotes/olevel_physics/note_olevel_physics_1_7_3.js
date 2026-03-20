@@ -44,7 +44,7 @@ export const note_olevel_physics_1_7_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="360" height="220" fill="#fdf4ff" rx="10"/>
+  <rect width="360" height="220" fill="#2d1b69" rx="10"/>
   <text x="180" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#581c87">Pendulum: Energy Conversion</text>
   <!-- Pivot -->
   <circle cx="180" cy="35" r="5" fill="#374151"/>

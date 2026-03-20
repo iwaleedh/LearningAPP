@@ -7,18 +7,18 @@ export const note_olevel_physics_5_1_0 = {
     { id: 'h-experiment', type: 'heading', data: { text: 'The Rutherford–Geiger–Marsden Experiment (1909)', level: 2 } },
     { id: 'para-setup', type: 'paragraph', data: { text: 'Hans Geiger and Ernest Marsden, directed by Rutherford, fired a beam of <strong>alpha particles</strong> from a radioactive source at a very thin sheet of gold foil (only a few atoms thick). A zinc-sulphide detector screen surrounding the foil flashed when struck by an alpha particle, recording where each particle landed.' } },
     { id: 'svg-rutherford', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300">
-  <rect width="520" height="300" fill="#f8f9ff" rx="8"/>
+  <rect width="520" height="300" fill="#0f172a" rx="8"/>
   <text x="260" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Rutherford Alpha-Scattering Experiment</text>
   <!-- Source box -->
   <rect x="20" y="130" width="55" height="40" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="2"/>
-  <text x="47" y="147" text-anchor="middle" font-size="9" fill="white" font-weight="bold">α source</text>
-  <text x="47" y="161" text-anchor="middle" font-size="9" fill="white">(radium)</text>
+  <text x="47" y="147" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">α source</text>
+  <text x="47" y="161" text-anchor="middle" font-size="9" fill="#1e293b">(radium)</text>
   <!-- Lead collimator -->
   <rect x="80" y="118" width="18" height="64" fill="#475569"/>
-  <rect x="80" y="147" width="18" height="6" fill="#f8f9ff"/>
+  <rect x="80" y="147" width="18" height="6" fill="#0f172a"/>
   <text x="89" y="198" text-anchor="middle" font-size="9" fill="#64748b">lead</text>
   <!-- Gold foil -->
-  <rect x="238" y="88" width="7" height="124" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="238" y="88" width="7" height="124" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="241" y="82" text-anchor="middle" font-size="9" fill="#d97706" font-weight="bold">gold foil</text>
   <!-- Nucleus -->
   <circle cx="241" cy="150" r="5" fill="#ef4444"/>

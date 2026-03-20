@@ -22,42 +22,42 @@ export const note_olevel_biology_9_9_3 = {
       data: {
         caption: 'The four components of blood and their relative sizes',
         svg: `<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="460" height="260" fill="#f8f9fa" rx="10"/>
+  <rect width="460" height="260" fill="#0f172a" rx="10"/>
   <text x="230" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Components of Blood</text>
 
   <!-- Plasma background -->
-  <rect x="20" y="35" width="420" height="190" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="20" y="35" width="420" height="190" rx="10" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="230" y="56" text-anchor="middle" font-size="12" fill="#854d0e" font-style="italic">Plasma (liquid — ~55% of blood volume)</text>
 
   <!-- Red blood cells (biconcave discs) -->
   <!-- Side view (biconcave) -->
   <ellipse cx="90" cy="130" rx="28" ry="10" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>
-  <ellipse cx="90" cy="130" rx="14" ry="5" fill="#fca5a5"/>
+  <ellipse cx="90" cy="130" rx="14" ry="5" fill="#7f1d1d"/>
   <ellipse cx="140" cy="140" rx="28" ry="10" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>
-  <ellipse cx="140" cy="140" rx="14" ry="5" fill="#fca5a5"/>
+  <ellipse cx="140" cy="140" rx="14" ry="5" fill="#7f1d1d"/>
   <!-- Face-on view -->
   <circle cx="115" cy="165" r="20" fill="#ef4444" stroke="#b91c1c" stroke-width="1.5"/>
-  <circle cx="115" cy="165" r="10" fill="#fca5a5"/>
+  <circle cx="115" cy="165" r="10" fill="#7f1d1d"/>
   <text x="95" y="205" text-anchor="middle" font-size="11" fill="#b91c1c">Red blood cells</text>
   <text x="95" y="218" text-anchor="middle" font-size="11" fill="#b91c1c">(erythrocytes)</text>
 
   <!-- White blood cells -->
   <!-- Phagocyte (irregular) -->
-  <path d="M 230 115 Q 220 100 235 90 Q 250 85 260 95 Q 275 90 275 110 Q 280 125 265 135 Q 248 145 235 135 Q 220 130 230 115 Z" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <path d="M 230 115 Q 220 100 235 90 Q 250 85 260 95 Q 275 90 275 110 Q 280 125 265 135 Q 248 145 235 135 Q 220 130 230 115 Z" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
   <!-- Nucleus -->
-  <path d="M 238 112 Q 235 105 244 103 Q 256 103 258 112 Q 260 120 252 122 Q 242 123 238 112 Z" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1"/>
+  <path d="M 238 112 Q 235 105 244 103 Q 256 103 258 112 Q 260 120 252 122 Q 242 123 238 112 Z" fill="#1250a0" stroke="#1d4ed8" stroke-width="1"/>
   <text x="250" y="160" text-anchor="middle" font-size="10" fill="#1d4ed8">Phagocyte</text>
 
   <!-- Lymphocyte (round, large nucleus) -->
-  <circle cx="320" cy="118" r="24" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.5"/>
-  <circle cx="320" cy="118" r="18" fill="#c4b5fd" stroke="#7e22ce" stroke-width="1"/>
+  <circle cx="320" cy="118" r="24" fill="#2d1b69" stroke="#7e22ce" stroke-width="1.5"/>
+  <circle cx="320" cy="118" r="18" fill="#2d1b69" stroke="#7e22ce" stroke-width="1"/>
   <text x="320" y="155" text-anchor="middle" font-size="10" fill="#7e22ce">Lymphocyte</text>
   <text x="285" y="175" text-anchor="middle" font-size="11" fill="#4c1d95">White blood cells (leucocytes)</text>
 
   <!-- Platelets (small fragments) -->
-  <ellipse cx="390" cy="108" rx="10" ry="6" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <ellipse cx="408" cy="120" rx="9" ry="5" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
-  <ellipse cx="388" cy="130" rx="8" ry="5" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="390" cy="108" rx="10" ry="6" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="408" cy="120" rx="9" ry="5" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="388" cy="130" rx="8" ry="5" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <text x="400" y="155" text-anchor="middle" font-size="11" fill="#92400e">Platelets</text>
   <text x="400" y="168" text-anchor="middle" font-size="11" fill="#92400e">(thrombocytes)</text>
 </svg>`

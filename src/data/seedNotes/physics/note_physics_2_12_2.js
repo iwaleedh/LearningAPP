@@ -20,7 +20,7 @@ export const note_physics_2_12_2 = {
       type: "svg",
       data: {
         caption: "Stationary wave formation: two waves travelling in opposite directions superpose to create nodes and antinodes",
-        svg: "<svg viewBox='0 0 400 170' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='170' fill='#f8f9fa' rx='8'/><text x='200' y='14' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e293b' text-anchor='middle'>Stationary Wave Formation by Superposition</text><!-- Wave 1 travelling right --><text x='10' y='42' font-family='sans-serif' font-size='9' fill='#3b82f6'>Wave 1 &#8594;</text><path d='M30,50 C55,28 80,28 105,50 C130,72 155,72 180,50 C205,28 230,28 255,50 C280,72 305,72 330,50 C355,28 370,28 380,40' fill='none' stroke='#3b82f6' stroke-width='1.8' stroke-dasharray='5,3'/><!-- Wave 2 travelling left --><text x='340' y='90' font-family='sans-serif' font-size='9' fill='#ef4444'>&#8592; Wave 2</text><path d='M380,84 C355,62 330,62 305,84 C280,106 255,106 230,84 C205,62 180,62 155,84 C130,106 105,106 80,84 C55,62 30,62 20,72' fill='none' stroke='#ef4444' stroke-width='1.8' stroke-dasharray='5,3'/><!-- Resultant stationary wave --><text x='10' y='126' font-family='sans-serif' font-size='9' fill='#6366f1' font-weight='bold'>Resultant</text><line x1='30' y1='128' x2='380' y2='128' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3'/><!-- Envelope (standing wave shape) --><path d='M30,128 Q92,92 155,128 Q218,164 280,128 Q342,92 380,108' fill='none' stroke='#6366f1' stroke-width='2.5'/><path d='M30,128 Q92,164 155,128 Q218,92 280,128 Q342,164 380,148' fill='none' stroke='#6366f1' stroke-width='2.5' stroke-dasharray='6,3' opacity='0.6'/><!-- Node dots --><circle cx='30' cy='128' r='5' fill='#ef4444'/><circle cx='155' cy='128' r='5' fill='#ef4444'/><circle cx='280' cy='128' r='5' fill='#ef4444'/><text x='30' y='145' font-family='sans-serif' font-size='9' fill='#ef4444' text-anchor='middle'>N</text><text x='155' y='145' font-family='sans-serif' font-size='9' fill='#ef4444' text-anchor='middle'>N</text><text x='280' y='145' font-family='sans-serif' font-size='9' fill='#ef4444' text-anchor='middle'>N</text><!-- Antinode dots --><circle cx='92' cy='92' r='5' fill='#6366f1'/><circle cx='218' cy='164' r='5' fill='#6366f1'/><text x='95' y='85' font-family='sans-serif' font-size='9' fill='#6366f1'>A</text><text x='222' y='160' font-family='sans-serif' font-size='9' fill='#6366f1'>A</text><!-- lambda/2 label --><line x1='30' y1='158' x2='155' y2='158' stroke='#f59e0b' stroke-width='1.5' marker-start='url(#sw-l)' marker-end='url(#sw-r)'/><text x='92' y='168' font-family='sans-serif' font-size='9' fill='#f59e0b' text-anchor='middle'>&#955;/2</text><defs><marker id='sw-l' markerWidth='5' markerHeight='5' refX='0' refY='2.5' orient='auto'><path d='M5,0 L0,2.5 L5,5 Z' fill='#f59e0b'/></marker><marker id='sw-r' markerWidth='5' markerHeight='5' refX='5' refY='2.5' orient='auto'><path d='M0,0 L5,2.5 L0,5 Z' fill='#f59e0b'/></marker></defs></svg>"
+        svg: "<svg viewBox='0 0 400 170' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='170' fill='#0f172a' rx='8'/><text x='200' y='14' font-family='sans-serif' font-size='11' font-weight='bold' fill='#1e293b' text-anchor='middle'>Stationary Wave Formation by Superposition</text><!-- Wave 1 travelling right --><text x='10' y='42' font-family='sans-serif' font-size='9' fill='#3b82f6'>Wave 1 &#8594;</text><path d='M30,50 C55,28 80,28 105,50 C130,72 155,72 180,50 C205,28 230,28 255,50 C280,72 305,72 330,50 C355,28 370,28 380,40' fill='none' stroke='#3b82f6' stroke-width='1.8' stroke-dasharray='5,3'/><!-- Wave 2 travelling left --><text x='340' y='90' font-family='sans-serif' font-size='9' fill='#ef4444'>&#8592; Wave 2</text><path d='M380,84 C355,62 330,62 305,84 C280,106 255,106 230,84 C205,62 180,62 155,84 C130,106 105,106 80,84 C55,62 30,62 20,72' fill='none' stroke='#ef4444' stroke-width='1.8' stroke-dasharray='5,3'/><!-- Resultant stationary wave --><text x='10' y='126' font-family='sans-serif' font-size='9' fill='#6366f1' font-weight='bold'>Resultant</text><line x1='30' y1='128' x2='380' y2='128' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3'/><!-- Envelope (standing wave shape) --><path d='M30,128 Q92,92 155,128 Q218,164 280,128 Q342,92 380,108' fill='none' stroke='#6366f1' stroke-width='2.5'/><path d='M30,128 Q92,164 155,128 Q218,92 280,128 Q342,164 380,148' fill='none' stroke='#6366f1' stroke-width='2.5' stroke-dasharray='6,3' opacity='0.6'/><!-- Node dots --><circle cx='30' cy='128' r='5' fill='#ef4444'/><circle cx='155' cy='128' r='5' fill='#ef4444'/><circle cx='280' cy='128' r='5' fill='#ef4444'/><text x='30' y='145' font-family='sans-serif' font-size='9' fill='#ef4444' text-anchor='middle'>N</text><text x='155' y='145' font-family='sans-serif' font-size='9' fill='#ef4444' text-anchor='middle'>N</text><text x='280' y='145' font-family='sans-serif' font-size='9' fill='#ef4444' text-anchor='middle'>N</text><!-- Antinode dots --><circle cx='92' cy='92' r='5' fill='#6366f1'/><circle cx='218' cy='164' r='5' fill='#6366f1'/><text x='95' y='85' font-family='sans-serif' font-size='9' fill='#6366f1'>A</text><text x='222' y='160' font-family='sans-serif' font-size='9' fill='#6366f1'>A</text><!-- lambda/2 label --><line x1='30' y1='158' x2='155' y2='158' stroke='#f59e0b' stroke-width='1.5' marker-start='url(#sw-l)' marker-end='url(#sw-r)'/><text x='92' y='168' font-family='sans-serif' font-size='9' fill='#f59e0b' text-anchor='middle'>&#955;/2</text><defs><marker id='sw-l' markerWidth='5' markerHeight='5' refX='0' refY='2.5' orient='auto'><path d='M5,0 L0,2.5 L5,5 Z' fill='#f59e0b'/></marker><marker id='sw-r' markerWidth='5' markerHeight='5' refX='5' refY='2.5' orient='auto'><path d='M0,0 L5,2.5 L0,5 Z' fill='#f59e0b'/></marker></defs></svg>"
       },
       terms: []
     },
@@ -30,7 +30,7 @@ export const note_physics_2_12_2 = {
       data: {
         svg: `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" style="background:#0f172a;border-radius:10px;font-family:sans-serif;">
   <!-- Title -->
-  <text x="260" y="22" fill="#e2e8f0" font-size="13" font-weight="bold" text-anchor="middle">Harmonics on a Stretched String</text>
+  <text x="260" y="22" fill="#1e293b" font-size="13" font-weight="bold" text-anchor="middle">Harmonics on a Stretched String</text>
 
   <!-- === ROW 1: Fundamental f₁ === -->
   <text x="10" y="60" fill="#94a3b8" font-size="11">1st harmonic (f₁)</text>
@@ -49,7 +49,7 @@ export const note_physics_2_12_2 = {
   <text x="250" y="28" fill="#818cf8" font-size="10" text-anchor="middle">A</text>
   <!-- λ label -->
   <line x1="60" y1="100" x2="440" y2="100" stroke="#fbbf24" stroke-width="1" marker-end="url(#arr)" marker-start="url(#arrL)"/>
-  <text x="250" y="113" fill="#fbbf24" font-size="10" text-anchor="middle">L  →  λ=2L,  f₁=v/2L</text>
+  <text x="250" y="113" fill="#78350f" font-size="10" text-anchor="middle">L  →  λ=2L,  f₁=v/2L</text>
 
   <!-- === ROW 2: Second harmonic 2f₁ === -->
   <text x="10" y="148" fill="#94a3b8" font-size="11">2nd harmonic (2f₁)</text>
@@ -69,7 +69,7 @@ export const note_physics_2_12_2 = {
   <text x="443" y="181" fill="#f472b6" font-size="10" text-anchor="middle">N</text>
   <text x="155" y="124" fill="#34d399" font-size="10" text-anchor="middle">A</text>
   <text x="345" y="203" fill="#34d399" font-size="10" text-anchor="middle">A</text>
-  <text x="250" y="200" fill="#fbbf24" font-size="10" text-anchor="middle">λ=L,  f₂=v/L=2f₁</text>
+  <text x="250" y="200" fill="#78350f" font-size="10" text-anchor="middle">λ=L,  f₂=v/L=2f₁</text>
 
   <!-- === ROW 3: Third harmonic 3f₁ === -->
   <text x="10" y="234" fill="#94a3b8" font-size="11">3rd harmonic (3f₁)</text>
@@ -86,12 +86,12 @@ export const note_physics_2_12_2 = {
   <circle cx="113" cy="230" r="4" fill="#fb923c" stroke="none"/>
   <circle cx="220" cy="268" r="4" fill="#fb923c" stroke="none"/>
   <circle cx="327" cy="230" r="4" fill="#fb923c" stroke="none"/>
-  <text x="250" y="278" fill="#fbbf24" font-size="10" text-anchor="middle">λ=2L/3,  f₃=3v/2L=3f₁</text>
+  <text x="250" y="278" fill="#78350f" font-size="10" text-anchor="middle">λ=2L/3,  f₃=3v/2L=3f₁</text>
 
   <!-- Arrow markers -->
   <defs>
-    <marker id="arr"  markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/></marker>
-    <marker id="arrL" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M0,0 L6,3 L0,6 Z" fill="#fbbf24"/></marker>
+    <marker id="arr"  markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#78350f"/></marker>
+    <marker id="arrL" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M0,0 L6,3 L0,6 Z" fill="#78350f"/></marker>
   </defs>
 </svg>`,
         caption: "Harmonics on a stretched string"

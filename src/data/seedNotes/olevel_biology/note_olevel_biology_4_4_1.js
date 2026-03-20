@@ -56,7 +56,7 @@ export const note_olevel_biology_4_4_1 = {
       data: {
         caption: 'Structure of the DNA double helix showing base pairs and the sugar-phosphate backbone',
         svg: `<svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
-  <rect width="480" height="340" fill="#f0fdf4" rx="12"/>
+  <rect width="480" height="340" fill="#0a2e1a" rx="12"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">DNA Double Helix Structure</text>
 
   <!-- Left backbone (sugar-phosphate) -->
@@ -67,44 +67,44 @@ export const note_olevel_biology_4_4_1 = {
   <!-- Base pair rungs -->
   <!-- Rung 1: A-T at ~y=70 -->
   <line x1="82" y1="72" x2="218" y2="72" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="62" width="36" height="20" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="88" y="62" width="36" height="20" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="106" y="76" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">A</text>
-  <rect x="176" y="62" width="36" height="20" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="176" y="62" width="36" height="20" rx="4" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="194" y="76" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">T</text>
 
   <!-- Rung 2: C-G at ~y=110 -->
   <line x1="82" y1="112" x2="218" y2="112" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="102" width="36" height="20" rx="4" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <rect x="88" y="102" width="36" height="20" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="106" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#9d174d">C</text>
-  <rect x="176" y="102" width="36" height="20" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="176" y="102" width="36" height="20" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="194" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">G</text>
 
   <!-- Rung 3: T-A at ~y=150 -->
   <line x1="82" y1="152" x2="218" y2="152" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="142" width="36" height="20" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="88" y="142" width="36" height="20" rx="4" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="106" y="156" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">T</text>
-  <rect x="176" y="142" width="36" height="20" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="176" y="142" width="36" height="20" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="194" y="156" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">A</text>
 
   <!-- Rung 4: G-C at ~y=190 -->
   <line x1="82" y1="192" x2="218" y2="192" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="182" width="36" height="20" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="88" y="182" width="36" height="20" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="106" y="196" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">G</text>
-  <rect x="176" y="182" width="36" height="20" rx="4" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <rect x="176" y="182" width="36" height="20" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="194" y="196" text-anchor="middle" font-size="11" font-weight="bold" fill="#9d174d">C</text>
 
   <!-- Rung 5: A-T at ~y=230 -->
   <line x1="82" y1="232" x2="218" y2="232" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="222" width="36" height="20" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="88" y="222" width="36" height="20" rx="4" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="106" y="236" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">A</text>
-  <rect x="176" y="222" width="36" height="20" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="176" y="222" width="36" height="20" rx="4" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="194" y="236" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">T</text>
 
   <!-- Rung 6: C-G at ~y=270 -->
   <line x1="82" y1="272" x2="218" y2="272" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="262" width="36" height="20" rx="4" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <rect x="88" y="262" width="36" height="20" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="106" y="276" text-anchor="middle" font-size="11" font-weight="bold" fill="#9d174d">C</text>
-  <rect x="176" y="262" width="36" height="20" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="176" y="262" width="36" height="20" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="194" y="276" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">G</text>
 
   <!-- Labels left column -->
@@ -116,15 +116,15 @@ export const note_olevel_biology_4_4_1 = {
   <text x="260" y="190" text-anchor="middle" font-size="10" fill="#374151">3' → 5'</text>
 
   <!-- Key / legend -->
-  <rect x="295" y="40" width="170" height="200" rx="8" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="295" y="40" width="170" height="200" rx="8" fill="#1e293b" stroke="#d1d5db" stroke-width="1.5"/>
   <text x="380" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#111827">Key</text>
-  <rect x="308" y="68" width="30" height="16" rx="3" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="308" y="68" width="30" height="16" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="348" y="80" font-size="10" fill="#374151">Adenine (A)</text>
-  <rect x="308" y="90" width="30" height="16" rx="3" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="308" y="90" width="30" height="16" rx="3" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="348" y="102" font-size="10" fill="#374151">Thymine (T)</text>
-  <rect x="308" y="112" width="30" height="16" rx="3" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+  <rect x="308" y="112" width="30" height="16" rx="3" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="348" y="124" font-size="10" fill="#374151">Cytosine (C)</text>
-  <rect x="308" y="134" width="30" height="16" rx="3" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="308" y="134" width="30" height="16" rx="3" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="348" y="146" font-size="10" fill="#374151">Guanine (G)</text>
   <line x1="308" y1="162" x2="338" y2="162" stroke="#16a34a" stroke-width="5" stroke-linecap="round"/>
   <text x="348" y="166" font-size="10" fill="#374151">Sugar-phosphate</text>
@@ -134,7 +134,7 @@ export const note_olevel_biology_4_4_1 = {
   <text x="348" y="208" font-size="10" fill="#374151">(between bases)</text>
 
   <!-- Base pairing summary -->
-  <rect x="295" y="255" width="170" height="60" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="295" y="255" width="170" height="60" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="380" y="271" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">Base Pairing Rules</text>
   <text x="380" y="288" text-anchor="middle" font-size="12" fill="#1e40af">A</text>
   <text x="380" y="288" text-anchor="start" dx="10" font-size="10" fill="#374151"> pairs with </text>

@@ -20,19 +20,19 @@ export const note_olevel_chemistry_10_10_2 = {
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- River / Reservoir (Source) -->
-  <path d="M 20 180 Q 50 190, 80 180 T 140 180 L 140 220 L 20 220 Z" fill="#93c5fd" />
+  <path d="M 20 180 Q 50 190, 80 180 T 140 180 L 140 220 L 20 220 Z" fill="#1250a0" />
   <text x="80" y="210" font-family="var(--font-sans)" font-size="12" fill="#1d4ed8" text-anchor="middle">Reservoir</text>
 
   <!-- Pipe from source to screens -->
   <path d="M 140 190 L 170 190 L 170 50 L 210 50" fill="none" stroke="#64748b" stroke-width="8" />
 
   <!-- Step 1: Screens -->
-  <rect x="210" y="30" width="30" height="80" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="210" y="30" width="30" height="80" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
   <line x1="220" y1="30" x2="220" y2="110" stroke="#475569" stroke-width="2" stroke-dasharray="4,4"/>
   <line x1="230" y1="30" x2="230" y2="110" stroke="#475569" stroke-width="2" stroke-dasharray="4,4"/>
   
   <rect x="180" y="10" width="80" height="20" rx="4" fill="#3b82f6" />
-  <text x="220" y="24" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">1. Screens</text>
+  <text x="220" y="24" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">1. Screens</text>
   <text x="220" y="130" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Removes large</text>
   <text x="220" y="142" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">debris</text>
 
@@ -40,12 +40,12 @@ export const note_olevel_chemistry_10_10_2 = {
   <path d="M 240 90 L 300 90" fill="none" stroke="#64748b" stroke-width="8" />
 
   <!-- Step 2: Sedimentation -->
-  <rect x="300" y="60" width="80" height="80" fill="#bfdbfe" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="300" y="60" width="80" height="80" fill="#1e3a8a" stroke="#94a3b8" stroke-width="2"/>
   <path d="M 300 120 L 380 120 L 380 140 L 300 140 Z" fill="#94a3b8" opacity="0.6"/> <!-- Sediment -->
   <text x="340" y="132" font-family="var(--font-sans)" font-size="10" fill="#334155" text-anchor="middle">Sediment</text>
 
   <rect x="300" y="30" width="80" height="20" rx="4" fill="#3b82f6" />
-  <text x="340" y="44" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">2. Sedimentation</text>
+  <text x="340" y="44" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">2. Sedimentation</text>
   <text x="340" y="155" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Alum added.</text>
   <text x="340" y="167" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Particles coagulate</text>
   <text x="340" y="179" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">& sink</text>
@@ -54,11 +54,11 @@ export const note_olevel_chemistry_10_10_2 = {
   <path d="M 380 70 L 440 70" fill="none" stroke="#64748b" stroke-width="8" />
 
   <!-- Step 3: Filtration -->
-  <rect x="440" y="50" width="70" height="120" fill="#bfdbfe" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="440" y="50" width="70" height="120" fill="#1e3a8a" stroke="#94a3b8" stroke-width="2"/>
   <!-- Sand layer -->
-  <rect x="440" y="100" width="70" height="30" fill="#fde047" opacity="0.6"/>
+  <rect x="440" y="100" width="70" height="30" fill="#44370a" opacity="0.6"/>
   <!-- Gravel layer -->
-  <rect x="440" y="130" width="70" height="40" fill="#d1d5db" />
+  <rect x="440" y="130" width="70" height="40" fill="#1e293b" />
   <!-- Gravel dots -->
   <circle cx="450" cy="140" r="3" fill="#94a3b8"/><circle cx="460" cy="145" r="4" fill="#94a3b8"/>
   <circle cx="480" cy="138" r="5" fill="#94a3b8"/><circle cx="495" cy="142" r="3" fill="#94a3b8"/>
@@ -66,7 +66,7 @@ export const note_olevel_chemistry_10_10_2 = {
   <circle cx="470" cy="160" r="3" fill="#94a3b8"/><circle cx="500" cy="160" r="4" fill="#94a3b8"/>
 
   <rect x="435" y="20" width="80" height="20" rx="4" fill="#3b82f6" />
-  <text x="475" y="34" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">3. Filtration</text>
+  <text x="475" y="34" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">3. Filtration</text>
   <text x="475" y="185" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Sand & gravel</text>
   <text x="475" y="197" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">remove fine</text>
   <text x="475" y="209" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">particles</text>
@@ -75,14 +75,14 @@ export const note_olevel_chemistry_10_10_2 = {
   <path d="M 510 160 L 560 160" fill="none" stroke="#64748b" stroke-width="8" />
 
   <!-- Step 4: Chlorination -->
-  <rect x="560" y="110" width="60" height="100" fill="#bfdbfe" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="560" y="110" width="60" height="100" fill="#1e3a8a" stroke="#94a3b8" stroke-width="2"/>
   
   <path d="M 590 60 L 590 100" fill="none" stroke="#16a34a" stroke-width="3" stroke-dasharray="4,2" marker-end="url(#arrow-head-green)"/>
-  <rect x="565" y="40" width="50" height="20" rx="4" fill="#86efac" />
+  <rect x="565" y="40" width="50" height="20" rx="4" fill="#0a2e1a" />
   <text x="590" y="54" font-family="var(--font-sans)" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Chlorine</text>
 
   <rect x="550" y="10" width="80" height="20" rx="4" fill="#3b82f6" />
-  <text x="590" y="24" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">4. Chlorination</text>
+  <text x="590" y="24" font-family="var(--font-sans)" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4. Chlorination</text>
   <text x="590" y="222" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">Kills bacteria</text>
   <text x="590" y="234" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">(& fluoridation)</text>
 

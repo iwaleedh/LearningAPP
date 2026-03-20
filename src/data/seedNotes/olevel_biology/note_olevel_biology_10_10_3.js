@@ -46,31 +46,31 @@ export const note_olevel_biology_10_10_3 = {
       data: {
         caption: 'How vaccination leads to protection: vaccine antigens trigger memory cell production',
         svg: `<svg viewBox="0 0 680 310" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="680" height="310" fill="#f8fafc" rx="12"/>
+  <rect width="680" height="310" fill="#0f172a" rx="12"/>
   <text x="340" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">How Vaccination Works</text>
   <!-- Step boxes -->
   <!-- 1 Vaccine injected -->
-  <rect x="20" y="48" width="110" height="68" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="48" width="110" height="68" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="75" y="70" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">1. Vaccine</text>
   <text x="75" y="84" text-anchor="middle" font-size="9" fill="#1e40af">injected — contains</text>
   <text x="75" y="97" text-anchor="middle" font-size="9" fill="#1e40af">antigens (safe)</text>
   <!-- arrow -->
   <line x1="130" y1="82" x2="152" y2="82" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>
   <!-- 2 Lymphocytes activated -->
-  <rect x="155" y="48" width="120" height="68" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="155" y="48" width="120" height="68" rx="8" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
   <text x="215" y="70" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">2. B-lymphocytes</text>
   <text x="215" y="84" text-anchor="middle" font-size="9" fill="#065f46">recognise antigen</text>
   <text x="215" y="97" text-anchor="middle" font-size="9" fill="#065f46">→ divide &amp; multiply</text>
   <line x1="275" y1="82" x2="297" y2="82" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>
   <!-- 3 Split into plasma + memory -->
-  <rect x="300" y="48" width="120" height="68" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <rect x="300" y="48" width="120" height="68" rx="8" fill="#44370a" stroke="#eab308" stroke-width="1.5"/>
   <text x="360" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="#713f12">3. Differentiate</text>
   <text x="360" y="80" text-anchor="middle" font-size="9" fill="#713f12">→ Plasma cells</text>
   <text x="360" y="93" text-anchor="middle" font-size="9" fill="#713f12">(make antibodies)</text>
   <text x="360" y="106" text-anchor="middle" font-size="9" fill="#713f12">+ Memory cells</text>
   <line x1="420" y1="82" x2="442" y2="82" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>
   <!-- 4 Memory cells persist -->
-  <rect x="445" y="48" width="115" height="68" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="445" y="48" width="115" height="68" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="502" y="70" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">4. Memory cells</text>
   <text x="502" y="84" text-anchor="middle" font-size="9" fill="#4c1d95">persist in blood</text>
   <text x="502" y="97" text-anchor="middle" font-size="9" fill="#4c1d95">for years</text>
@@ -78,24 +78,24 @@ export const note_olevel_biology_10_10_3 = {
   <line x1="40" y1="145" x2="640" y2="145" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="340" y="162" text-anchor="middle" font-size="11" fill="#64748b" font-style="italic">Later — real pathogen encountered</text>
   <!-- 5 Real pathogen -->
-  <rect x="20" y="175" width="115" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="20" y="175" width="115" height="60" rx="8" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="77" y="197" text-anchor="middle" font-size="10" font-weight="bold" fill="#991b1b">5. Real pathogen</text>
   <text x="77" y="211" text-anchor="middle" font-size="9" fill="#991b1b">enters body with</text>
   <text x="77" y="224" text-anchor="middle" font-size="9" fill="#991b1b">same antigen</text>
   <line x1="135" y1="205" x2="157" y2="205" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>
   <!-- 6 Memory cells activate fast -->
-  <rect x="160" y="175" width="140" height="60" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="160" y="175" width="140" height="60" rx="8" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
   <text x="230" y="197" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">6. Memory cells</text>
   <text x="230" y="211" text-anchor="middle" font-size="9" fill="#065f46">rapidly divide →</text>
   <text x="230" y="224" text-anchor="middle" font-size="9" fill="#065f46">massive antibody surge</text>
   <line x1="300" y1="205" x2="322" y2="205" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>
   <!-- 7 Pathogen destroyed -->
-  <rect x="325" y="175" width="130" height="60" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="325" y="175" width="130" height="60" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="390" y="197" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">7. Antibodies</text>
   <text x="390" y="211" text-anchor="middle" font-size="9" fill="#14532d">destroy pathogen</text>
   <text x="390" y="224" text-anchor="middle" font-size="9" fill="#14532d">before disease develops</text>
   <!-- Protected label -->
-  <rect x="475" y="182" width="100" height="46" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <rect x="475" y="182" width="100" height="46" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="525" y="202" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">PROTECTED</text>
   <text x="525" y="218" text-anchor="middle" font-size="10" fill="#14532d">No disease</text>
   <line x1="455" y1="205" x2="473" y2="205" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>

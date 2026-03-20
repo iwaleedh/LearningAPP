@@ -13,7 +13,7 @@ export const note_chemistry_5_16_3 = {
       data: {
         caption: 'Zn/Cu electrochemical cell — full shorthand notation with E° values',
         svg: `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="480" height="220" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="480" height="220" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <!-- Title -->
   <text x="240" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Electrochemical Cell Shorthand Notation</text>
   <!-- Notation row -->

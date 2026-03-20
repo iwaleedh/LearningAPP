@@ -95,7 +95,7 @@ export const note_olevel_chemistry_1_1_2 = {
     <path d="M 10,10 L 10,130 L 110,130 L 110,10" fill="none" stroke="var(--color-border)" stroke-width="3" />
     <!-- Piston top -->
     <rect x="5" y="10" width="110" height="15" fill="#94a3b8" />
-    <rect x="50" y="-20" width="20" height="30" fill="#cbd5e1" />
+    <rect x="50" y="-20" width="20" height="30" fill="#1e293b" />
     
     <!-- Particles -->
     <circle cx="30" cy="50" r="6" fill="url(#gas)" />
@@ -122,7 +122,7 @@ export const note_olevel_chemistry_1_1_2 = {
     <text x="60" y="-15" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="14" fill="var(--color-text)">2. Increase Temp</text>
     <path d="M 10,10 L 10,130 L 110,130 L 110,10" fill="none" stroke="var(--color-border)" stroke-width="3" />
     <rect x="5" y="10" width="110" height="15" fill="#94a3b8" />
-    <rect x="50" y="-20" width="20" height="30" fill="#cbd5e1" />
+    <rect x="50" y="-20" width="20" height="30" fill="#1e293b" />
     
     <!-- Heat applied -->
     <use href="#flame" x="40" y="130" transform="scale(1.5) translate(-10, 0)" />
@@ -161,12 +161,12 @@ export const note_olevel_chemistry_1_1_2 = {
     
     <!-- Piston pushed down -->
     <rect x="5" y="70" width="110" height="15" fill="#94a3b8" />
-    <rect x="50" y="10" width="20" height="60" fill="#cbd5e1" />
+    <rect x="50" y="10" width="20" height="60" fill="#1e293b" />
     <!-- Push force arrow -->
     <path d="M 60,0 L 60,10" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-move)" />
     
     <!-- Area above piston dimmed -->
-    <rect x="10" y="10" width="100" height="60" fill="#f1f5f9" opacity="0.8" />
+    <rect x="10" y="10" width="100" height="60" fill="#1e293b" opacity="0.8" />
     
     <!-- Particles crowded in smaller space -->
     <circle cx="30" cy="90" r="6" fill="url(#gas)" />

@@ -19,7 +19,7 @@ export const note_physics_4_17_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="240" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="240" fill="#0f172a" rx="8"/>
   <circle cx="200" cy="120" r="90" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
   <circle cx="200" cy="120" r="5" fill="#334155"/>
   <circle cx="200" cy="30" r="12" fill="#3b82f6"/>
@@ -42,10 +42,10 @@ export const note_physics_4_17_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <text x="200" y="40" font-family="Arial" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">Centripetal Acceleration Equations</text>
-  <rect x="60" y="80" width="120" height="70" fill="#e0e7ff" rx="8" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="220" y="80" width="120" height="70" fill="#e0e7ff" rx="8" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="60" y="80" width="120" height="70" fill="#2d2f72" rx="8" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="220" y="80" width="120" height="70" fill="#2d2f72" rx="8" stroke="#3b82f6" stroke-width="2"/>
   <text x="120" y="120" font-family="Arial" font-size="20" fill="#1d4ed8" font-weight="bold" text-anchor="middle">a = v² / r</text>
   <text x="280" y="120" font-family="Arial" font-size="20" fill="#1d4ed8" font-weight="bold" text-anchor="middle">a = rω²</text>
   <text x="200" y="180" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Directed towards the centre of the circle</text>
@@ -58,7 +58,7 @@ export const note_physics_4_17_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="500" height="240" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="500" height="240" fill="#0f172a" rx="8"/>
   <text x="250" y="22" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Radian Definition: θ = s / r</text>
   <circle cx="200" cy="125" r="85" fill="none" stroke="#94a3b8" stroke-width="2"/>
   <circle cx="200" cy="125" r="4" fill="#1e293b"/>

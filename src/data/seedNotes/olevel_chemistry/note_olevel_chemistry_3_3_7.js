@@ -37,7 +37,7 @@ export const note_olevel_chemistry_3_3_7 = {
         svg: `<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(200, 30)">
     <!-- Triangle Base -->
-    <polygon points="0,0 -120,160 120,160" fill="#fce7f3" stroke="#db2777" stroke-width="4" stroke-linejoin="round"/>
+    <polygon points="0,0 -120,160 120,160" fill="#4a1040" stroke="#db2777" stroke-width="4" stroke-linejoin="round"/>
     
     <!-- Divider lines -->
     <line x1="-60" y1="80" x2="60" y2="80" stroke="#db2777" stroke-width="4"/>

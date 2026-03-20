@@ -72,7 +72,7 @@ export const note_olevel_biology_17_17_6 = {
       data: {
         caption: 'Punnett square: carrier female × normal male for colour blindness',
         svg: `<svg viewBox="0 0 400 290" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="290" fill="#fdf4ff" rx="12"/>
+  <rect width="400" height="290" fill="#2d1b69" rx="12"/>
   <text x="200" y="22" text-anchor="middle" font-size="12" font-weight="bold" fill="#7e22ce">Sex-Linked Cross: Carrier Female × Normal Male</text>
   <text x="200" y="40" text-anchor="middle" font-size="11" fill="#7e22ce">X\u1d2aX\u1d2a\u1d2c (carrier female) × X\u1d2aY (normal male)</text>
   <!-- Headers -->
@@ -81,7 +81,7 @@ export const note_olevel_biology_17_17_6 = {
   <text x="95" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">X\u1d2a</text>
   <text x="95" y="210" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">X\u1d2a\u1d2c</text>
   <!-- Grid -->
-  <rect x="120" y="75" width="240" height="170" fill="white" stroke="#7e22ce" stroke-width="2"/>
+  <rect x="120" y="75" width="240" height="170" fill="#1e293b" stroke="#7e22ce" stroke-width="2"/>
   <line x1="240" y1="75" x2="240" y2="245" stroke="#7e22ce" stroke-width="1.5"/>
   <line x1="120" y1="160" x2="360" y2="160" stroke="#7e22ce" stroke-width="1.5"/>
   <!-- Cell contents -->

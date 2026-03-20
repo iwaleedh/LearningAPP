@@ -56,12 +56,12 @@ export const note_olevel_physics_4_1_1 = {
         caption: 'Left: Uniform field between parallel plates. Right: Radial field around a positive point charge.',
         svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
   <!-- UNIFORM FIELD left panel -->
-  <rect x="10" y="15" width="180" height="170" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="10" y="15" width="180" height="170" rx="4" fill="#0f172a" stroke="#e2e8f0" stroke-width="1"/>
   <!-- Positive plate top -->
-  <rect x="25" y="25" width="150" height="12" rx="3" fill="#fca5a5" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="25" y="25" width="150" height="12" rx="3" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>
   <text x="100" y="35" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="11">+ + + + + +</text>
   <!-- Negative plate bottom -->
-  <rect x="25" y="163" width="150" height="12" rx="3" fill="#93c5fd" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="25" y="163" width="150" height="12" rx="3" fill="#1250a0" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="100" y="173" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">− − − − − −</text>
   <!-- Uniform field lines with arrows -->
   <defs>
@@ -77,8 +77,8 @@ export const note_olevel_physics_4_1_1 = {
   <text x="100" y="195" text-anchor="middle" fill="#475569" font-size="11">Uniform field (parallel plates)</text>
 
   <!-- RADIAL FIELD right panel -->
-  <rect x="220" y="15" width="185" height="170" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <circle cx="312" cy="100" r="14" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <rect x="220" y="15" width="185" height="170" rx="4" fill="#0f172a" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="312" cy="100" r="14" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="312" y="105" text-anchor="middle" fill="#dc2626" font-weight="bold">+</text>
   <!-- Radial lines outward -->
   <defs>

@@ -42,9 +42,9 @@ export const note_olevel_biology_12_12_0 = {
         caption: 'Structure of a mitochondrion — site of aerobic respiration',
         svg: `<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
   <!-- Outer membrane -->
-  <ellipse cx="260" cy="140" rx="230" ry="110" fill="#fff9e6" stroke="#c0902a" stroke-width="3"/>
+  <ellipse cx="260" cy="140" rx="230" ry="110" fill="#44370a" stroke="#c0902a" stroke-width="3"/>
   <!-- Inner membrane (matrix region) -->
-  <ellipse cx="260" cy="140" rx="190" ry="80" fill="#fff3cc" stroke="#c0902a" stroke-width="2" stroke-dasharray="6 3"/>
+  <ellipse cx="260" cy="140" rx="190" ry="80" fill="#44370a" stroke="#c0902a" stroke-width="2" stroke-dasharray="6 3"/>
   <!-- Cristae folds -->
   <path d="M120 105 Q150 140 120 175" fill="none" stroke="#c0902a" stroke-width="2"/>
   <path d="M165 90 Q195 140 165 190" fill="none" stroke="#c0902a" stroke-width="2"/>

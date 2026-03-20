@@ -115,8 +115,8 @@ export const note_chemistry_1_2_0 = {
   <circle cx="195" cy="215" r="50" fill="none" stroke="#64b5f6" stroke-width="1.5" stroke-dasharray="5,3"/>
   <!-- Nucleus -->
   <circle cx="195" cy="215" r="25" fill="#ef5350" stroke="#c62828" stroke-width="2"/>
-  <text x="195" y="211" text-anchor="middle" fill="white" font-size="11" font-weight="bold">11p&#x207A;</text>
-  <text x="195" y="225" text-anchor="middle" fill="white" font-size="11">12n&#xB0;</text>
+  <text x="195" y="211" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">11p&#x207A;</text>
+  <text x="195" y="225" text-anchor="middle" fill="#1e293b" font-size="11">12n&#xB0;</text>
   <!-- Shell 1: 2 electrons at 270° (top) and 90° (bottom), r=50 -->
   <circle cx="195" cy="165" r="7" fill="#1565c0"/>
   <circle cx="195" cy="265" r="7" fill="#1565c0"/>

@@ -46,19 +46,19 @@ export const note_olevel_physics_3_3_0 = {
   <!-- C1 at ~100 -->
   <rect x="85" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
   <!-- R1 at ~130 -->
-  <rect x="120" y="55" width="44" height="90" fill="#e0e7ff" opacity="0.3" rx="3"/>
+  <rect x="120" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- C2 at ~175 -->
   <rect x="173" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
   <!-- R2 at ~210 -->
-  <rect x="208" y="55" width="44" height="90" fill="#e0e7ff" opacity="0.3" rx="3"/>
+  <rect x="208" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- C3 at ~263 -->
   <rect x="261" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
   <!-- R3 at ~298 -->
-  <rect x="296" y="55" width="44" height="90" fill="#e0e7ff" opacity="0.3" rx="3"/>
+  <rect x="296" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- C4 -->
   <rect x="349" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
   <!-- R4 -->
-  <rect x="384" y="55" width="44" height="90" fill="#e0e7ff" opacity="0.3" rx="3"/>
+  <rect x="384" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- Dots representing air molecules -->
   <circle cx="98" cy="100" r="3" fill="#6366f1"/>
   <circle cx="106" cy="100" r="3" fill="#6366f1"/>

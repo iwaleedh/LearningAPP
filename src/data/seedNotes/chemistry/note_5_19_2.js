@@ -194,7 +194,7 @@ export const note_chemistry_5_19_2 = {
       id: 'svg-diazonium-mechanism',
       type: 'svg',
       data: {
-        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine + HNO₂ (in situ) + HCl</text><text x="10" y="40" font-size="14" fill="#333">↓ ≤5°C</text><text x="10" y="60" font-size="14" fill="#333">→ Benzenediazonium chloride (C₆H₅N₂⁺Cl⁻)</text></svg>',
+        svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#333">Phenylamine + HNO₂ (in situ) + HCl</text><text x="10" y="40" font-size="14" fill="#333">↓ ≤5°C</text><text x="10" y="60" font-size="14" fill="#333">→ Benzenediazonium chloride (C₆H₅N₂⁺Cl⁻)</text></svg>',
         caption: 'Stepwise mechanism: phenylamine reacts with nitrous acid (generated in situ from NaNO₂ + HCl) at low temperature to form benzenediazonium chloride.'
       }
     },

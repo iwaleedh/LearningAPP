@@ -30,7 +30,7 @@ export const note_olevel_physics_1_2_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 450 310" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="450" height="310" fill="#fff7ed" rx="10"/>
+  <rect width="450" height="310" fill="#532407" rx="10"/>
   <text x="225" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#78350f">Speed–Time Graph with Labelled Regions</text>
   <!-- Axes -->
   <line x1="60" y1="260" x2="420" y2="260" stroke="#374151" stroke-width="2"/>
@@ -42,13 +42,13 @@ export const note_olevel_physics_1_2_3 = {
   <!-- Acceleration phase (0 to 4s: 0 to 20 m/s) -->
   <line x1="60" y1="260" x2="180" y2="140" stroke="#ef4444" stroke-width="2.5"/>
   <!-- Fill area under acceleration phase -->
-  <polygon points="60,260 180,140 180,260" fill="#fecaca" opacity="0.6"/>
+  <polygon points="60,260 180,140 180,260" fill="#7f1d1d" opacity="0.6"/>
   <!-- Constant speed phase (4s to 8s: 20 m/s) -->
   <line x1="180" y1="140" x2="300" y2="140" stroke="#16a34a" stroke-width="2.5"/>
-  <polygon points="180,260 180,140 300,140 300,260" fill="#bbf7d0" opacity="0.6"/>
+  <polygon points="180,260 180,140 300,140 300,260" fill="#0a3020" opacity="0.6"/>
   <!-- Deceleration phase (8s to 12s: 20 to 0) -->
   <line x1="300" y1="140" x2="420" y2="260" stroke="#3b82f6" stroke-width="2.5"/>
-  <polygon points="300,260 300,140 420,260" fill="#bfdbfe" opacity="0.6"/>
+  <polygon points="300,260 300,140 420,260" fill="#1e3a8a" opacity="0.6"/>
   <!-- Labels on sections -->
   <text x="120" y="220" text-anchor="middle" font-size="11" fill="#b91c1c" font-weight="bold">Accelerating</text>
   <text x="240" y="220" text-anchor="middle" font-size="11" fill="#15803d" font-weight="bold">Constant speed</text>

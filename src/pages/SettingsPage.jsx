@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useTheme } from '../hooks/useTheme';
-import { Sun, Moon, Download, Trash2, Palette, GraduationCap } from 'lucide-react';
+import { Moon, Download, Trash2, GraduationCap } from 'lucide-react';
 import { onSpacetimeDBReady, getMyRole, setTeacherRole } from '../spacetime.js';
 import './Pages.css';
 
 export default function SettingsPage() {
-    const { theme, toggleTheme } = useTheme();
     const [role, setRole] = useState('student');
 
     // Load role once SpacetimeDB is ready
@@ -33,16 +31,15 @@ export default function SettingsPage() {
                 <div className="setting-item card">
                     <div className="setting-info">
                         <h4>
-                            <Palette size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} />
-                            Dark Mode
+                            <Moon size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '8px' }} />
+                            Night Mode
                         </h4>
-                        <p>Switch between light and dark themes</p>
+                        <p>
+                            Night mode is now the only app theme, so reading, note blocks,
+                            and diagrams stay consistently high-contrast across every page.
+                        </p>
                     </div>
-                    <button
-                        className={`toggle-switch ${theme === 'dark' ? 'active' : ''}`}
-                        onClick={toggleTheme}
-                        aria-label="Toggle dark mode"
-                    />
+                    <span className="badge">Always on</span>
                 </div>
 
                 {/* Export */}

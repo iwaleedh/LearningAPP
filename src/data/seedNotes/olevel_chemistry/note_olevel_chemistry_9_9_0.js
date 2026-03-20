@@ -58,36 +58,36 @@ export const note_olevel_chemistry_9_9_0 = {
   <!-- Metallic Lattice -->
   <text x="150" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Metallic Lattice</text>
   
-  <rect x="70" y="60" width="160" height="140" fill="#f1f5f9" rx="8"/>
+  <rect x="70" y="60" width="160" height="140" fill="#1e293b" rx="8"/>
   
   <!-- Row 1 -->
-  <circle cx="95" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="95" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="95" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="135" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="135" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="135" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="175" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="175" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="175" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="215" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="215" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="215" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <!-- Row 2 -->
-  <circle cx="85" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="85" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="85" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="125" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="125" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="125" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="165" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="165" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="165" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="205" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="205" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="205" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <!-- Row 3 -->
-  <circle cx="95" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="95" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="95" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="135" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="135" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="135" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="175" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="175" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="175" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="215" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="215" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="215" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <!-- Electrons -->
@@ -110,33 +110,33 @@ export const note_olevel_chemistry_9_9_0 = {
   <text x="345" y="75" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Force</text>
 
   <!-- Shifted Row 1 -->
-  <circle cx="415" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="415" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="415" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="455" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="455" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="455" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="495" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="495" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="495" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="535" cy="85" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="535" cy="85" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="535" y="89" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <!-- Row 2 -->
-  <circle cx="385" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="385" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="385" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="425" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="425" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="425" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="465" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="465" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="465" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="505" cy="130" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="505" cy="130" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="505" y="134" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <!-- Row 3 -->
-  <circle cx="395" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="395" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="395" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="435" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="435" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="435" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="475" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="475" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="475" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
-  <circle cx="515" cy="175" r="15" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="515" cy="175" r="15" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
   <text x="515" y="179" font-family="var(--font-sans)" font-size="12" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <text x="450" y="215" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Layers slide; bonds do not break</text>

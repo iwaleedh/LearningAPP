@@ -39,11 +39,11 @@ export const note_olevel_physics_3_4_1 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <!-- Outer mantle/crust -->
-  <circle cx="240" cy="240" r="200" fill="#d4ac6d" stroke="#a0845c" stroke-width="1.5"/>
+  <circle cx="240" cy="240" r="200" fill="#3d2b0a" stroke="#a0845c" stroke-width="1.5"/>
   <!-- Outer core (liquid) -->
   <circle cx="240" cy="240" r="120" fill="#60a5fa" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Inner core (solid) -->
-  <circle cx="240" cy="240" r="55" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="240" cy="240" r="55" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <!-- Layer labels -->
   <text x="240" y="244" text-anchor="middle" fill="#92400e" font-weight="bold" font-size="10">Inner core</text>
   <text x="240" y="256" text-anchor="middle" fill="#92400e" font-size="10">(solid)</text>

@@ -38,7 +38,7 @@ export const note_olevel_chemistry_3_3_4 = {
     <text x="200" y="60" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-text)" text-anchor="middle">= 12</text>
 
     <!-- 1 Mole -->
-    <rect x="300" y="0" width="150" height="80" rx="8" fill="#e0e7ff" stroke="var(--color-primary)" stroke-width="3"/>
+    <rect x="300" y="0" width="150" height="80" rx="8" fill="#2d2f72" stroke="var(--color-primary)" stroke-width="3"/>
     <text x="375" y="30" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">1 Mole</text>
     <text x="375" y="60" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="var(--color-text)" text-anchor="middle">= 6.02 × 10²³</text>
   </g>

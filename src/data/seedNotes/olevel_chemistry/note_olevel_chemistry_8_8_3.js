@@ -46,7 +46,7 @@ export const note_olevel_chemistry_8_8_3 = {
 
   <!-- Fluorine (F2) -->
   <text x="100" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Fluorine (F₂)</text>
-  <rect x="75" y="60" width="50" height="120" rx="4" fill="#fef9c3" opacity="0.4" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="75" y="60" width="50" height="120" rx="4" fill="#44370a" opacity="0.4" stroke="var(--color-text)" stroke-width="2"/>
   <rect x="70" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
   <text x="100" y="100" font-family="var(--font-sans)" font-size="12" fill="#854d0e" opacity="0.6" text-anchor="middle">Pale</text>
   <text x="100" y="115" font-family="var(--font-sans)" font-size="12" fill="#854d0e" opacity="0.6" text-anchor="middle">yellow</text>
@@ -54,7 +54,7 @@ export const note_olevel_chemistry_8_8_3 = {
 
   <!-- Chlorine (Cl2) -->
   <text x="230" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Chlorine (Cl₂)</text>
-  <rect x="205" y="60" width="50" height="120" rx="4" fill="#86efac" opacity="0.6" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="205" y="60" width="50" height="120" rx="4" fill="#0a2e1a" opacity="0.6" stroke="var(--color-text)" stroke-width="2"/>
   <rect x="200" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
   <text x="230" y="100" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">Yellow-</text>
   <text x="230" y="115" font-family="var(--font-sans)" font-size="12" fill="#064e3b" text-anchor="middle">green</text>
@@ -62,16 +62,16 @@ export const note_olevel_chemistry_8_8_3 = {
 
   <!-- Bromine (Br2) -->
   <text x="360" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Bromine (Br₂)</text>
-  <rect x="335" y="60" width="50" height="120" rx="4" fill="#fdba74" opacity="0.5" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="335" y="60" width="50" height="120" rx="4" fill="#7c2d12" opacity="0.5" stroke="var(--color-text)" stroke-width="2"/>
   <rect x="335" y="130" width="50" height="50" rx="4" fill="#c2410c"/> <!-- liquid -->
   <rect x="330" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
   <text x="360" y="100" font-family="var(--font-sans)" font-size="12" fill="#9a3412" text-anchor="middle">Red-brown</text>
   <text x="360" y="115" font-family="var(--font-sans)" font-size="12" fill="#9a3412" text-anchor="middle">vapour</text>
-  <text x="360" y="155" font-family="var(--font-sans)" font-size="12" fill="#fff" text-anchor="middle">Liquid</text>
+  <text x="360" y="155" font-family="var(--font-sans)" font-size="12" fill="#1e293b" text-anchor="middle">Liquid</text>
 
   <!-- Iodine (I2) -->
   <text x="490" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Iodine (I₂)</text>
-  <rect x="465" y="60" width="50" height="120" rx="4" fill="#d8b4fe" opacity="0.4" stroke="var(--color-text)" stroke-width="2"/>
+  <rect x="465" y="60" width="50" height="120" rx="4" fill="#2d1b69" opacity="0.4" stroke="var(--color-text)" stroke-width="2"/>
   <rect x="460" y="55" width="60" height="5" fill="#94a3b8"/> <!-- lid -->
   <!-- Solid crystals at bottom -->
   <polygon points="475,175 480,165 490,170 485,180" fill="#334155"/>

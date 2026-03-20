@@ -45,7 +45,7 @@ export const note_mathematics_5_4_1 = {
         svg: `<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-w-md mx-auto" aria-labelledby="inclinedPlaneTitle" role="img">
   <title id="inclinedPlaneTitle">Inclined Plane Force Diagram</title>
   <!-- Triangle/Plane -->
-  <polygon points="50,300 450,300 50,100" fill="#e5e7eb" />
+  <polygon points="50,300 450,300 50,100" fill="#1e293b" />
   <path d="M 50 300 L 450 300 L 50 100 Z" stroke="#9ca3af" stroke-width="2" fill="none"/>
   <!-- Angle arc -->
   <path d="M 380 300 A 70 70 0 0 0 350 250" fill="none" stroke="#6b7280" stroke-width="2"/>

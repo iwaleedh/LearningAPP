@@ -113,7 +113,7 @@ export const note_olevel_chemistry_11_11_11 = {
   
   <g transform="translate(40, 180)">
     <!-- Diacid Block -->
-    <rect x="0" y="0" width="80" height="30" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+    <rect x="0" y="0" width="80" height="30" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
     <text x="40" y="18" font-family="var(--font-sans)" font-size="12" fill="#991b1b" text-anchor="middle">Diacid</text>
     <text x="-25" y="20" font-family="var(--font-mono)" font-size="14" fill="var(--color-text)">HO</text>
     <path d="M -5 15 L 0 15" fill="none" stroke="var(--color-text)" stroke-width="1.5"/>
@@ -124,7 +124,7 @@ export const note_olevel_chemistry_11_11_11 = {
   <g transform="translate(170, 180)">
     <text x="-15" y="22" font-family="var(--font-mono)" font-size="20" fill="var(--color-text)">+</text>
     <!-- Diol Block -->
-    <rect x="0" y="0" width="80" height="30" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="0" y="0" width="80" height="30" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
     <text x="40" y="18" font-family="var(--font-sans)" font-size="12" fill="#1e40af" text-anchor="middle">Diol</text>
     <text x="-15" y="20" font-family="var(--font-mono)" font-size="14" fill="#3b82f6">H</text>
     <path d="M -5 15 L 0 15" fill="none" stroke="var(--color-text)" stroke-width="1.5"/>
@@ -138,13 +138,13 @@ export const note_olevel_chemistry_11_11_11 = {
     <!-- Polymer Chain -->
     <path d="M -15 15 L 0 15" fill="none" stroke="var(--color-text)" stroke-width="2" stroke-dasharray="4,2"/>
     
-    <rect x="0" y="0" width="80" height="30" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+    <rect x="0" y="0" width="80" height="30" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
     <text x="40" y="18" font-family="var(--font-sans)" font-size="12" fill="#991b1b" text-anchor="middle">Diacid</text>
     
     <!-- Ester linkage showing O joined -->
     <path d="M 80 15 L 100 15" fill="none" stroke="#10b981" stroke-width="3"/>
     
-    <rect x="100" y="0" width="80" height="30" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="100" y="0" width="80" height="30" fill="#1e3a8a" stroke="#2563eb" stroke-width="2"/>
     <text x="140" y="18" font-family="var(--font-sans)" font-size="12" fill="#1e40af" text-anchor="middle">Diol</text>
 
     <path d="M 180 15 L 195 15" fill="none" stroke="var(--color-text)" stroke-width="2" stroke-dasharray="4,2"/>

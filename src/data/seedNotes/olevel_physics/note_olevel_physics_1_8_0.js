@@ -42,11 +42,11 @@ export const note_olevel_physics_1_8_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="200" fill="#fffbeb" rx="10"/>
+  <rect width="400" height="200" fill="#44370a" rx="10"/>
   <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Solar Energy Sources</text>
   <!-- Sun -->
-  <circle cx="200" cy="55" r="22" fill="#fbbf24"/>
-  <text x="200" y="60" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Sun</text>
+  <circle cx="200" cy="55" r="22" fill="#78350f"/>
+  <text x="200" y="60" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">Sun</text>
   <!-- Rays -->
   <line x1="200" y1="28" x2="200" y2="18" stroke="#fbbf24" stroke-width="2"/>
   <line x1="220" y1="35" x2="228" y2="27" stroke="#fbbf24" stroke-width="2"/>
@@ -55,20 +55,20 @@ export const note_olevel_physics_1_8_0 = {
   <line x1="173" y1="55" x2="163" y2="55" stroke="#fbbf24" stroke-width="2"/>
   <!-- PV cell (left) -->
   <rect x="30" y="120" width="120" height="60" rx="5" fill="#3b82f6" opacity="0.85"/>
-  <text x="90" y="143" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Photovoltaic Cell</text>
-  <text x="90" y="157" text-anchor="middle" font-size="10" fill="white">Light → Electricity</text>
-  <text x="90" y="170" text-anchor="middle" font-size="9" fill="#dbeafe">(direct conversion)</text>
+  <text x="90" y="143" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b">Photovoltaic Cell</text>
+  <text x="90" y="157" text-anchor="middle" font-size="10" fill="#1e293b">Light → Electricity</text>
+  <text x="90" y="170" text-anchor="middle" font-size="9" fill="#1e3a8a">(direct conversion)</text>
   <!-- Arrow sun → PV -->
   <line x1="155" y1="65" x2="100" y2="118" stroke="#fbbf24" stroke-width="2"/>
-  <polygon points="100,118 105,110 110,117" fill="#fbbf24"/>
+  <polygon points="100,118 105,110 110,117" fill="#78350f"/>
   <!-- Solar heater (right) -->
   <rect x="250" y="120" width="120" height="60" rx="5" fill="#dc2626" opacity="0.85"/>
-  <text x="310" y="143" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Solar Heater</text>
-  <text x="310" y="157" text-anchor="middle" font-size="10" fill="white">Light → Thermal</text>
-  <text x="310" y="170" text-anchor="middle" font-size="9" fill="#fee2e2">(heats water)</text>
+  <text x="310" y="143" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b">Solar Heater</text>
+  <text x="310" y="157" text-anchor="middle" font-size="10" fill="#1e293b">Light → Thermal</text>
+  <text x="310" y="170" text-anchor="middle" font-size="9" fill="#3d1212">(heats water)</text>
   <!-- Arrow sun → heater -->
   <line x1="245" y1="65" x2="300" y2="118" stroke="#fbbf24" stroke-width="2"/>
-  <polygon points="300,118 295,110 305,111" fill="#fbbf24"/>
+  <polygon points="300,118 295,110 305,111" fill="#78350f"/>
 </svg>`,
         caption: 'Two ways to harness solar energy: PV cells (light → electricity) and solar thermal panels (light → heat).',
       },

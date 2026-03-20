@@ -36,7 +36,7 @@ export const note_olevel_physics_3_2_0 = {
     <marker id="ag20" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
-  <rect x="240" y="0" width="240" height="300" fill="#dbeafe" opacity="0.35"/>
+  <rect x="240" y="0" width="240" height="300" fill="#1e3a8a" opacity="0.35"/>
   <line x1="240" y1="0" x2="240" y2="300" stroke="#1e40af" stroke-width="3"/>
   <line x1="240" y1="10" x2="254" y2="10" stroke="#94a3b8"/>
   <line x1="240" y1="30" x2="254" y2="30" stroke="#94a3b8"/>

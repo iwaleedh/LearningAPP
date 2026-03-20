@@ -48,23 +48,23 @@ export const note_olevel_physics_1_7_6 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="200" fill="#fff1f2" rx="10"/>
+  <rect width="400" height="200" fill="#3d1212" rx="10"/>
   <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#7f1d1d">Sankey Diagram: Electric Motor (60% efficient)</text>
   <!-- Input arrow -->
   <rect x="30" y="60" width="100" height="80" fill="#6366f1" rx="4"/>
   <polygon points="130,60 130,140 160,100" fill="#6366f1"/>
-  <text x="80" y="95" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Input</text>
-  <text x="80" y="108" text-anchor="middle" font-size="11" fill="white">100 J</text>
+  <text x="80" y="95" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">Input</text>
+  <text x="80" y="108" text-anchor="middle" font-size="11" fill="#1e293b">100 J</text>
   <!-- Useful output arrow (forward, 60 J) -->
-  <rect x="200" y="70" width="140" height="48" fill="#10b981" rx="4"/>
+  <rect x="200" y="70" width="140" height="48" fill="#065f46" rx="4"/>
   <polygon points="200,70 200,118 175,94" fill="#10b981"/>
-  <text x="270" y="98" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Useful KE</text>
-  <text x="270" y="111" text-anchor="middle" font-size="11" fill="white">60 J</text>
+  <text x="270" y="98" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">Useful KE</text>
+  <text x="270" y="111" text-anchor="middle" font-size="11" fill="#1e293b">60 J</text>
   <!-- Wasted arrow (down, 40 J) -->
   <polygon points="175,105 215,105 215,165 175,165" fill="#f87171"/>
   <polygon points="175,165 215,165 195,185" fill="#f87171"/>
-  <text x="195" y="145" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Wasted</text>
-  <text x="195" y="157" text-anchor="middle" font-size="10" fill="white">heat 40 J</text>
+  <text x="195" y="145" text-anchor="middle" font-size="10" fill="#1e293b" font-weight="bold">Wasted</text>
+  <text x="195" y="157" text-anchor="middle" font-size="10" fill="#1e293b">heat 40 J</text>
   <!-- Junction block -->
   <rect x="158" y="70" width="50" height="110" fill="#94a3b8" rx="2" opacity="0.5"/>
   <!-- Efficiency calc -->

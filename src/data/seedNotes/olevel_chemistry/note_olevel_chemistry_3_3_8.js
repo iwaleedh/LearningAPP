@@ -72,8 +72,8 @@ export const note_olevel_chemistry_3_3_8 = {
     <path d="M 90 240 L 70 240" stroke="var(--color-text-secondary)" stroke-width="1" fill="none"/>
 
     <!-- Drops falling -->
-    <circle cx="50" cy="275" r="3" fill="#fca5a5"/>
-    <circle cx="50" cy="290" r="3" fill="#fca5a5"/>
+    <circle cx="50" cy="275" r="3" fill="#7f1d1d"/>
+    <circle cx="50" cy="290" r="3" fill="#7f1d1d"/>
 
     <!-- Conical Flask -->
     <g transform="translate(0, 310)">

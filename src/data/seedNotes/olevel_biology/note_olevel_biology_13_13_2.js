@@ -37,12 +37,12 @@ export const note_olevel_biology_13_13_2 = {
         caption: 'Negative feedback control of water balance by ADH',
         svg: `<svg viewBox="0 0 580 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Central blood box -->
-  <rect x="215" y="130" width="150" height="50" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="215" y="130" width="150" height="50" rx="8" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <text x="290" y="150" text-anchor="middle" font-weight="bold" fill="#1e3a8a">BLOOD PLASMA</text>
   <text x="290" y="167" text-anchor="middle" fill="#1e3a8a" font-size="11">water concentration</text>
 
   <!-- Hypothalamus detector -->
-  <rect x="215" y="20" width="150" height="50" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <rect x="215" y="20" width="150" height="50" rx="8" fill="#78350f" stroke="#d97706" stroke-width="2"/>
   <text x="290" y="40" text-anchor="middle" font-weight="bold" fill="#92400e">HYPOTHALAMUS</text>
   <text x="290" y="56" text-anchor="middle" fill="#92400e" font-size="11">detects change</text>
 
@@ -50,17 +50,17 @@ export const note_olevel_biology_13_13_2 = {
   <line x1="290" y1="130" x2="290" y2="70" stroke="#555" stroke-width="2" marker-end="url(#arrG)"/>
 
   <!-- HIGH concentration scenario — left -->
-  <rect x="20" y="60" width="150" height="44" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="20" y="60" width="150" height="44" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="95" y="78" text-anchor="middle" fill="#991b1b" font-size="11" font-weight="bold">Blood too concentrated</text>
   <text x="95" y="94" text-anchor="middle" fill="#991b1b" font-size="11">(low water conc.)</text>
 
   <line x1="170" y1="82" x2="215" y2="45" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3"/>
 
-  <rect x="20" y="140" width="150" height="44" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="20" y="140" width="150" height="44" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="95" y="158" text-anchor="middle" fill="#991b1b" font-size="11" font-weight="bold">More ADH released</text>
   <text x="95" y="174" text-anchor="middle" fill="#991b1b" font-size="11">from pituitary</text>
 
-  <rect x="20" y="220" width="150" height="44" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="20" y="220" width="150" height="44" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="95" y="238" text-anchor="middle" fill="#991b1b" font-size="11" font-weight="bold">Kidneys reabsorb</text>
   <text x="95" y="254" text-anchor="middle" fill="#991b1b" font-size="11">more water → small,</text>
   <!-- arrow chain -->
@@ -69,17 +69,17 @@ export const note_olevel_biology_13_13_2 = {
   <line x1="95" y1="104" x2="95" y2="140" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arrR)"/>
 
   <!-- LOW concentration scenario — right -->
-  <rect x="410" y="60" width="150" height="44" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="410" y="60" width="150" height="44" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="485" y="78" text-anchor="middle" fill="#14532d" font-size="11" font-weight="bold">Blood too dilute</text>
   <text x="485" y="94" text-anchor="middle" fill="#14532d" font-size="11">(high water conc.)</text>
 
   <line x1="410" y1="82" x2="365" y2="45" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4 3"/>
 
-  <rect x="410" y="140" width="150" height="44" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="410" y="140" width="150" height="44" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="485" y="158" text-anchor="middle" fill="#14532d" font-size="11" font-weight="bold">Less ADH released</text>
   <text x="485" y="174" text-anchor="middle" fill="#14532d" font-size="11">from pituitary</text>
 
-  <rect x="410" y="220" width="150" height="44" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="410" y="220" width="150" height="44" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="485" y="238" text-anchor="middle" fill="#14532d" font-size="11" font-weight="bold">Kidneys reabsorb</text>
   <text x="485" y="254" text-anchor="middle" fill="#14532d" font-size="11">less water → large,</text>
   <text x="485" y="268" text-anchor="middle" fill="#14532d" font-size="10">dilute urine</text>

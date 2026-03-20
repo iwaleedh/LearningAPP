@@ -34,12 +34,12 @@ export const note_olevel_physics_2_2_4 = {
   <rect x="38" y="60" width="70" height="8" rx="3" fill="#aaa"/>
 
   <!-- Funnel -->
-  <polygon points="108,50 172,50 155,110 125,110" fill="#d0e8f8" stroke="#6090c8" stroke-width="2"/>
+  <polygon points="108,50 172,50 155,110 125,110" fill="#1c3a64" stroke="#6090c8" stroke-width="2"/>
   <!-- Funnel stem -->
   <rect x="133" y="110" width="14" height="30" rx="2" fill="#6090c8"/>
 
   <!-- Ice in funnel (crushed) -->
-  <ellipse cx="140" cy="60" rx="28" ry="14" fill="#cceeff" stroke="#88aacc" stroke-width="1.5"/>
+  <ellipse cx="140" cy="60" rx="28" ry="14" fill="#1c3a64" stroke="#88aacc" stroke-width="1.5"/>
   <text x="118" y="64" fill="#3080b0" font-size="10" font-weight="bold">Ice</text>
 
   <!-- Heater in Ice -->
@@ -48,27 +48,27 @@ export const note_olevel_physics_2_2_4 = {
   <line x1="140" y1="38" x2="140" y2="18" stroke="#c44" stroke-width="2"/>
 
   <!-- Power supply -->
-  <rect x="185" y="10" width="100" height="35" rx="6" fill="#f5f5f5" stroke="#888" stroke-width="1.5"/>
+  <rect x="185" y="10" width="100" height="35" rx="6" fill="#0f172a" stroke="#888" stroke-width="1.5"/>
   <text x="200" y="32" fill="#333" font-size="11">Power Supply</text>
   <line x1="140" y1="18" x2="185" y2="27" stroke="#c44" stroke-width="2"/>
   <line x1="285" y1="27" x2="300" y2="100" stroke="#c44" stroke-width="2" stroke-dasharray="4,3"/>
 
   <!-- Beaker (heater) -->
-  <rect x="105" y="145" width="68" height="60" rx="4" fill="#e8f8ff" stroke="#6090c8" stroke-width="2"/>
+  <rect x="105" y="145" width="68" height="60" rx="4" fill="#1c3a64" stroke="#6090c8" stroke-width="2"/>
   <!-- Meltwater in beaker -->
-  <rect x="108" y="175" width="62" height="27" rx="2" fill="#aaddf8"/>
+  <rect x="108" y="175" width="62" height="27" rx="2" fill="#1c3a64"/>
   <text x="110" y="168" fill="#3080b0" font-size="10">Meltwater</text>
   <text x="109" y="218" fill="#3080b0" font-size="10">Beaker A (heater on)</text>
 
   <!-- Control funnel + beaker -->
-  <polygon points="270,50 334,50 317,110 287,110" fill="#d0e8f8" stroke="#6090c8" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="270,50 334,50 317,110 287,110" fill="#1c3a64" stroke="#6090c8" stroke-width="2" stroke-dasharray="5,3"/>
   <rect x="295" y="110" width="14" height="30" rx="2" fill="#6090c8" stroke-dasharray="5,3"/>
-  <ellipse cx="302" cy="62" rx="28" ry="14" fill="#cceeff" stroke="#88aacc" stroke-width="1" stroke-dasharray="4,3"/>
+  <ellipse cx="302" cy="62" rx="28" ry="14" fill="#1c3a64" stroke="#88aacc" stroke-width="1" stroke-dasharray="4,3"/>
   <text x="278" y="66" fill="#3080b0" font-size="10" font-weight="bold">Ice</text>
   <text x="268" y="44" fill="#888" font-size="10">(no heater)</text>
 
-  <rect x="267" y="145" width="68" height="60" rx="4" fill="#e8f8ff" stroke="#6090c8" stroke-width="2" stroke-dasharray="5,3"/>
-  <rect x="270" y="185" width="62" height="17" rx="2" fill="#aaddf8"/>
+  <rect x="267" y="145" width="68" height="60" rx="4" fill="#1c3a64" stroke="#6090c8" stroke-width="2" stroke-dasharray="5,3"/>
+  <rect x="270" y="185" width="62" height="17" rx="2" fill="#1c3a64"/>
   <text x="270" y="218" fill="#3080b0" font-size="10">Beaker B (control)</text>
 
   <!-- Scale balance icon -->

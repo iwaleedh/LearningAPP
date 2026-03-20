@@ -26,21 +26,21 @@ export const note_olevel_biology_10_10_2 = {
       data: {
         caption: 'Antibody-antigen specificity: each antibody has a binding site complementary to one antigen shape',
         svg: `<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="600" height="260" fill="#f8fafc" rx="12"/>
+  <rect width="600" height="260" fill="#0f172a" rx="12"/>
   <text x="300" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Antibody–Antigen Specificity (Lock and Key)</text>
   <!-- Antibody Y shape left -->
   <text x="130" y="58" text-anchor="middle" font-size="11" fill="#1d4ed8" font-weight="bold">Antibody A</text>
-  <rect x="110" y="65" width="40" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="82" y="65" width="30" height="50" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="148" y="65" width="30" height="50" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="110" y="65" width="40" height="80" rx="5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="82" y="65" width="30" height="50" rx="5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="148" y="65" width="30" height="50" rx="5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <!-- Binding site cutout -->
-  <rect x="89" y="98" width="16" height="17" rx="3" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.5"/>
-  <rect x="155" y="98" width="16" height="17" rx="3" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="89" y="98" width="16" height="17" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="155" y="98" width="16" height="17" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="130" y="168" text-anchor="middle" font-size="9" fill="#64748b">Binding sites</text>
   <!-- Matching antigen -->
   <text x="130" y="196" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="bold">Antigen A</text>
-  <rect x="91" y="200" width="16" height="16" rx="2" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
-  <rect x="153" y="200" width="16" height="16" rx="2" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="91" y="200" width="16" height="16" rx="2" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="153" y="200" width="16" height="16" rx="2" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="130" y="232" text-anchor="middle" font-size="9" fill="#16a34a">✓ Complementary fit</text>
   <!-- Arrows showing fit -->
   <line x1="99" y1="197" x2="99" y2="117" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,2"/>
@@ -49,15 +49,15 @@ export const note_olevel_biology_10_10_2 = {
   <line x1="300" y1="50" x2="300" y2="245" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
   <!-- Antibody B right -->
   <text x="460" y="58" text-anchor="middle" font-size="11" fill="#1d4ed8" font-weight="bold">Antibody A</text>
-  <rect x="440" y="65" width="40" height="80" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="412" y="65" width="30" height="50" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="478" y="65" width="30" height="50" rx="5" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="419" y="98" width="16" height="17" rx="3" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.5"/>
-  <rect x="485" y="98" width="16" height="17" rx="3" fill="#f8fafc" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="440" y="65" width="40" height="80" rx="5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="412" y="65" width="30" height="50" rx="5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="478" y="65" width="30" height="50" rx="5" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="419" y="98" width="16" height="17" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="485" y="98" width="16" height="17" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Non-matching antigen (different shape) -->
   <text x="460" y="196" text-anchor="middle" font-size="11" fill="#7c3aed" font-weight="bold">Antigen B</text>
-  <ellipse cx="427" cy="208" rx="10" ry="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <ellipse cx="493" cy="208" rx="10" ry="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <ellipse cx="427" cy="208" rx="10" ry="10" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <ellipse cx="493" cy="208" rx="10" ry="10" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="460" y="232" text-anchor="middle" font-size="9" fill="#dc2626">✗ Does NOT fit — no binding</text>
 </svg>`
       }
@@ -123,7 +123,7 @@ export const note_olevel_biology_10_10_2 = {
       data: {
         caption: 'Primary and secondary immune responses — antibody concentration over time',
         svg: `<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="620" height="300" fill="#f8fafc" rx="12"/>
+  <rect width="620" height="300" fill="#0f172a" rx="12"/>
   <text x="310" y="26" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Primary vs Secondary Immune Response</text>
   <!-- Axes -->
   <line x1="70" y1="250" x2="580" y2="250" stroke="#475569" stroke-width="2"/>

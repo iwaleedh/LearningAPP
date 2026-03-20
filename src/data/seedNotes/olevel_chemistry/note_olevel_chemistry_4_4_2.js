@@ -105,19 +105,19 @@ export const note_olevel_chemistry_4_4_2 = {
   <path d="M 312 150 L 312 333 A 13 13 0 0 0 338 333 L 338 150 Z" fill="url(#acid)"/>
 
   <!-- Bubbles (H2) -->
-  <circle cx="175" cy="195" r="3" fill="#fff" opacity="0.8"/>
-  <circle cx="170" cy="210" r="4" fill="#fff" opacity="0.8"/>
-  <circle cx="180" cy="225" r="3" fill="#fff" opacity="0.8"/>
-  <circle cx="172" cy="245" r="5" fill="#fff" opacity="0.8"/>
-  <circle cx="178" cy="265" r="4" fill="#fff" opacity="0.8"/>
-  <circle cx="175" cy="285" r="5" fill="#fff" opacity="0.8"/>
+  <circle cx="175" cy="195" r="3" fill="#1e293b" opacity="0.8"/>
+  <circle cx="170" cy="210" r="4" fill="#1e293b" opacity="0.8"/>
+  <circle cx="180" cy="225" r="3" fill="#1e293b" opacity="0.8"/>
+  <circle cx="172" cy="245" r="5" fill="#1e293b" opacity="0.8"/>
+  <circle cx="178" cy="265" r="4" fill="#1e293b" opacity="0.8"/>
+  <circle cx="175" cy="285" r="5" fill="#1e293b" opacity="0.8"/>
 
   <!-- Bubbles (O2) -->
-  <circle cx="325" cy="155" r="3" fill="#fff" opacity="0.8"/>
-  <circle cx="320" cy="180" r="4" fill="#fff" opacity="0.8"/>
-  <circle cx="330" cy="210" r="3" fill="#fff" opacity="0.8"/>
-  <circle cx="322" cy="240" r="4" fill="#fff" opacity="0.8"/>
-  <circle cx="328" cy="270" r="5" fill="#fff" opacity="0.8"/>
+  <circle cx="325" cy="155" r="3" fill="#1e293b" opacity="0.8"/>
+  <circle cx="320" cy="180" r="4" fill="#1e293b" opacity="0.8"/>
+  <circle cx="330" cy="210" r="3" fill="#1e293b" opacity="0.8"/>
+  <circle cx="322" cy="240" r="4" fill="#1e293b" opacity="0.8"/>
+  <circle cx="328" cy="270" r="5" fill="#1e293b" opacity="0.8"/>
 
   <!-- Empty Gas spaces -->
   <rect x="162" y="100" width="26" height="100" fill="url(#gas)"/>

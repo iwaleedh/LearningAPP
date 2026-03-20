@@ -46,8 +46,8 @@ export const note_olevel_physics_3_2_6 = {
   <text x="280" y="42" fill="#64748b" text-anchor="middle" font-size="9">← f increasing  |  E increasing  →</text>
   <!-- Colored bands -->
   <rect x="20" y="55" width="72" height="50" fill="#6366f1" opacity="0.18" rx="3"/>
-  <rect x="92" y="55" width="66" height="50" fill="#10b981" opacity="0.2" rx="3"/>
-  <rect x="158" y="55" width="66" height="50" fill="#f59e0b" opacity="0.22" rx="3"/>
+  <rect x="92" y="55" width="66" height="50" fill="#065f46" opacity="0.2" rx="3"/>
+  <rect x="158" y="55" width="66" height="50" fill="#78350f" opacity="0.22" rx="3"/>
   <rect x="224" y="55" width="50" height="50" rx="3">
     <animate attributeName="fill" values="#dc2626;#ea580c;#ca8a04;#16a34a;#2563eb;#7c3aed;#dc2626" dur="4s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.4;0.5;0.4;0.5;0.4;0.5;0.4" dur="4s" repeatCount="indefinite"/>

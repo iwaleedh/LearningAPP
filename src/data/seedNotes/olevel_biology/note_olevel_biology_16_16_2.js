@@ -27,7 +27,7 @@ export const note_olevel_biology_16_16_2 = {
         caption: 'Generalised flower structure showing male and female parts',
         svg: `<svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Background -->
-  <rect width="520" height="340" fill="#fafafa" rx="8"/>
+  <rect width="520" height="340" fill="#0f172a" rx="8"/>
   <!-- Receptacle -->
   <rect x="220" y="290" width="80" height="18" rx="4" fill="#8B6914"/>
   <text x="260" y="322" text-anchor="middle" fill="#555">Receptacle</text>
@@ -41,12 +41,12 @@ export const note_olevel_biology_16_16_2 = {
   <ellipse cx="310" cy="180" rx="32" ry="14" fill="#f48fb1" transform="rotate(10 310 180)"/>
   <ellipse cx="360" cy="210" rx="32" ry="14" fill="#f48fb1" transform="rotate(40 360 210)"/>
   <!-- Ovary -->
-  <ellipse cx="260" cy="262" rx="28" ry="20" fill="#ffe082"/>
+  <ellipse cx="260" cy="262" rx="28" ry="20" fill="#44370a"/>
   <text x="260" y="266" text-anchor="middle" fill="#333" font-weight="bold" font-size="11">Ovary</text>
   <!-- Ovule -->
   <ellipse cx="260" cy="260" rx="8" ry="6" fill="#ffb300"/>
   <!-- Style -->
-  <rect x="255" y="215" width="10" height="45" fill="#aed581"/>
+  <rect x="255" y="215" width="10" height="45" fill="#14532d"/>
   <!-- Stigma -->
   <ellipse cx="260" cy="212" rx="16" ry="7" fill="#cddc39"/>
   <text x="310" y="215" fill="#555" font-size="11">Stigma</text>
@@ -57,11 +57,11 @@ export const note_olevel_biology_16_16_2 = {
   <text x="310" y="278" fill="#555" font-size="11">(+ ovule)</text>
   <!-- Stamens -->
   <line x1="200" y1="262" x2="185" y2="215" stroke="#b0bec5" stroke-width="2"/>
-  <ellipse cx="183" cy="212" rx="9" ry="5" fill="#fdd835"/>
+  <ellipse cx="183" cy="212" rx="9" ry="5" fill="#44370a"/>
   <text x="120" y="212" fill="#555" font-size="11">Anther</text>
   <line x1="183" y1="211" x2="160" y2="211" stroke="#aaa" stroke-width="1"/>
   <line x1="315" y1="262" x2="330" y2="215" stroke="#b0bec5" stroke-width="2"/>
-  <ellipse cx="332" cy="212" rx="9" ry="5" fill="#fdd835"/>
+  <ellipse cx="332" cy="212" rx="9" ry="5" fill="#44370a"/>
   <text x="120" y="235" fill="#555" font-size="11">Filament</text>
   <line x1="196" y1="240" x2="160" y2="233" stroke="#aaa" stroke-width="1"/>
   <!-- Labels -->

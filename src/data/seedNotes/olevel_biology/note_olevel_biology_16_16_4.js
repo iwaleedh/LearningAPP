@@ -26,7 +26,7 @@ export const note_olevel_biology_16_16_4 = {
       data: {
         caption: 'Hormone levels during the 28-day menstrual cycle',
         svg: `<svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
-  <rect width="520" height="260" fill="#fafafa" rx="8"/>
+  <rect width="520" height="260" fill="#0f172a" rx="8"/>
   <!-- Axes -->
   <line x1="55" y1="20" x2="55" y2="210" stroke="#555" stroke-width="1.5"/>
   <line x1="55" y1="210" x2="490" y2="210" stroke="#555" stroke-width="1.5"/>
@@ -50,7 +50,7 @@ export const note_olevel_biology_16_16_4 = {
   <!-- FSH curve -->
   <path d="M55,175 Q80,155 120,110 Q140,90 160,140 Q180,180 490,190" stroke="#f4511e" stroke-width="2" fill="none"/>
   <!-- Legend -->
-  <rect x="320" y="22" width="165" height="90" fill="white" stroke="#ddd" rx="4"/>
+  <rect x="320" y="22" width="165" height="90" fill="#1e293b" stroke="#ddd" rx="4"/>
   <line x1="328" y1="38" x2="358" y2="38" stroke="#ab47bc" stroke-width="2"/>
   <text x="364" y="42" fill="#555">Oestrogen</text>
   <line x1="328" y1="55" x2="358" y2="55" stroke="#1e88e5" stroke-width="2"/>

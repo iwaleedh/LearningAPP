@@ -71,7 +71,7 @@ export const note_biology_2_3_6 = {
         "id": "svg-diag-2-3-6-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M250,150 A100,100 0 0,0 250,50' fill='none' stroke='#f56565' stroke-width='10'/><text x='270' y='110' font-size='12' fill='#c53030'>Zona Pellucida</text><path d='M120,100 C150,80 180,100 150,120' fill='#ebf8ff' stroke='#3182ce'/><circle cx='140' cy='100' r='5' fill='#2b6cb0'/><path d='M160,100 L240,100' fill='none' stroke='#38a169' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><ellipse cx='180' cy='100' rx='10' ry='5' fill='#fefcbf' stroke='#d69e2e'/><text x='100' y='70' font-size='10' fill='#2b6cb0'>Sperm Head</text><text x='140' y='135' font-size='10' fill='#b7791f'>Enzymes Digest Jelly</text></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M250,150 A100,100 0 0,0 250,50' fill='none' stroke='#f56565' stroke-width='10'/><text x='270' y='110' font-size='12' fill='#c53030'>Zona Pellucida</text><path d='M120,100 C150,80 180,100 150,120' fill='#1c3a64' stroke='#3182ce'/><circle cx='140' cy='100' r='5' fill='#2b6cb0'/><path d='M160,100 L240,100' fill='none' stroke='#38a169' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><ellipse cx='180' cy='100' rx='10' ry='5' fill='#44370a' stroke='#d69e2e'/><text x='100' y='70' font-size='10' fill='#2b6cb0'>Sperm Head</text><text x='140' y='135' font-size='10' fill='#b7791f'>Enzymes Digest Jelly</text></svg>",
             "caption": "Acrosome Reaction"
         }
     },

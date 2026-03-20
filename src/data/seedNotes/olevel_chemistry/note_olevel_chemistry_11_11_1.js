@@ -31,10 +31,10 @@ export const note_olevel_chemistry_11_11_1 = {
   <!-- Methane -->
   <g transform="translate(60, 50)">
     <circle cx="20" cy="20" r="12" fill="#1e293b" />
-    <circle cx="20" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="20" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="-5" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="45" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="20" cy="-5" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="20" cy="45" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="-5" cy="20" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="45" cy="20" r="8" fill="#0f172a" stroke="#94a3b8" />
     <text x="20" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Methane</text>
     <text x="20" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">CH₄</text>
   </g>
@@ -48,13 +48,13 @@ export const note_olevel_chemistry_11_11_1 = {
     <circle cx="20" cy="20" r="12" fill="#1e293b" />
     <circle cx="45" cy="20" r="12" fill="#1e293b" />
     
-    <circle cx="20" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="20" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="-5" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="20" cy="-5" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="20" cy="45" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="-5" cy="20" r="8" fill="#0f172a" stroke="#94a3b8" />
 
-    <circle cx="45" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="45" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="70" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="45" cy="-5" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="45" cy="45" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="70" cy="20" r="8" fill="#0f172a" stroke="#94a3b8" />
 
     <text x="32" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Ethane</text>
     <text x="32" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">C₂H₆</text>
@@ -70,16 +70,16 @@ export const note_olevel_chemistry_11_11_1 = {
     <circle cx="35" cy="20" r="12" fill="#1e293b" />
     <circle cx="60" cy="20" r="12" fill="#1e293b" />
     
-    <circle cx="10" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="10" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="-15" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="10" cy="-5" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="10" cy="45" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="-15" cy="20" r="8" fill="#0f172a" stroke="#94a3b8" />
 
-    <circle cx="35" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="35" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="35" cy="-5" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="35" cy="45" r="8" fill="#0f172a" stroke="#94a3b8" />
 
-    <circle cx="60" cy="-5" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="60" cy="45" r="8" fill="#f8fafc" stroke="#94a3b8" />
-    <circle cx="85" cy="20" r="8" fill="#f8fafc" stroke="#94a3b8" />
+    <circle cx="60" cy="-5" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="60" cy="45" r="8" fill="#0f172a" stroke="#94a3b8" />
+    <circle cx="85" cy="20" r="8" fill="#0f172a" stroke="#94a3b8" />
 
     <text x="35" y="80" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Propane</text>
     <text x="35" y="95" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">C₃H₈</text>

@@ -42,11 +42,11 @@ export const note_business_4_19_0 = {
   <text x='350' y='22' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>Global Marketing Strategy Spectrum</text>
   <rect x='60' y='38' width='580' height='24' rx='12' fill='url(#specGrad)'/>
   <circle cx='100' cy='50' r='11' fill='#6366f1' stroke='white' stroke-width='2'/>
-  <text x='100' y='54' text-anchor='middle' font-size='9' fill='white' font-weight='700'>S</text>
+  <text x='100' y='54' text-anchor='middle' font-size='9' fill='#1e293b' font-weight='700'>S</text>
   <circle cx='350' cy='50' r='11' fill='#8b5cf6' stroke='white' stroke-width='2'/>
-  <text x='350' y='54' text-anchor='middle' font-size='9' fill='white' font-weight='700'>G</text>
+  <text x='350' y='54' text-anchor='middle' font-size='9' fill='#1e293b' font-weight='700'>G</text>
   <circle cx='600' cy='50' r='11' fill='#f59e0b' stroke='white' stroke-width='2'/>
-  <text x='600' y='54' text-anchor='middle' font-size='9' fill='white' font-weight='700'>A</text>
+  <text x='600' y='54' text-anchor='middle' font-size='9' fill='#1e293b' font-weight='700'>A</text>
   <text x='100' y='82' text-anchor='middle' font-size='12' font-weight='700' fill='#4338ca'>Fully Standardised</text>
   <text x='100' y='97' text-anchor='middle' font-size='11' fill='#475569'>(Global Strategy)</text>
   <text x='100' y='113' text-anchor='middle' font-size='10' fill='#64748b'>Coca-Cola — same taste</text>

@@ -64,7 +64,7 @@ export const note_olevel_physics_4_3_4 = {
         caption: 'Analogue signal (smooth curve) vs digital signal (square wave pulses)',
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Analogue panel -->
-  <rect x="5" y="5" width="185" height="190" rx="8" fill="#f0f9ff" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="5" y="5" width="185" height="190" rx="8" fill="#1c3a64" stroke="#6366f1" stroke-width="1.5"/>
   <text x="50" y="22" fill="#6366f1" font-weight="bold" font-size="12">Analogue</text>
   <!-- Axes -->
   <line x1="20" y1="100" x2="180" y2="100" stroke="#9ca3af" stroke-width="1"/>
@@ -80,7 +80,7 @@ export const note_olevel_physics_4_3_4 = {
   <text x="30" y="145" fill="#ef4444" font-size="9">+noise</text>
 
   <!-- Digital panel -->
-  <rect x="210" y="5" width="185" height="190" rx="8" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="210" y="5" width="185" height="190" rx="8" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
   <text x="265" y="22" fill="#10b981" font-weight="bold" font-size="12">Digital</text>
   <line x1="225" y1="130" x2="385" y2="130" stroke="#9ca3af" stroke-width="1"/>
   <line x1="230" y1="40" x2="230" y2="170" stroke="#9ca3af" stroke-width="1"/>

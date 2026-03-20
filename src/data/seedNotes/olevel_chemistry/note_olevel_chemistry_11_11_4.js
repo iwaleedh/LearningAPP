@@ -46,14 +46,14 @@ export const note_olevel_chemistry_11_11_4 = {
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Furnace & Pipe -->
-  <rect x="20" y="320" width="80" height="80" fill="#cbd5e1" stroke="#475569" stroke-width="3" rx="4"/>
+  <rect x="20" y="320" width="80" height="80" fill="#1e293b" stroke="#475569" stroke-width="3" rx="4"/>
   <text x="60" y="350" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Furnace</text>
   <text x="60" y="370" font-family="var(--font-sans)" font-size="12" fill="#dc2626" text-anchor="middle">~350°C</text>
   <path d="M 100 360 L 160 360" fill="none" stroke="#475569" stroke-width="8"/>
   <path d="M 130 360 L 140 360" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow-red)"/>
 
   <!-- Column Outline -->
-  <path d="M 160 50 L 160 400 L 260 400 L 260 50 L 210 20 Z" fill="#f8fafc" stroke="#475569" stroke-width="3"/>
+  <path d="M 160 50 L 160 400 L 260 400 L 260 50 L 210 20 Z" fill="#0f172a" stroke="#475569" stroke-width="3"/>
   <text x="210" y="420" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Fractionating Column</text>
 
   <!-- Temperature Gradient -->
@@ -62,7 +62,7 @@ export const note_olevel_chemistry_11_11_4 = {
   <path d="M 140 330 L 140 60" fill="none" stroke="url(#temp-grad)" stroke-width="4" marker-end="url(#arrow-blue)"/>
 
   <!-- Trays & Outlets -->
-  <g fill="#cbd5e1" stroke="#64748b" stroke-width="2">
+  <g fill="#1e293b" stroke="#64748b" stroke-width="2">
     <!-- Refinery Gas -->
     <path d="M 210 20 L 210 10 L 350 10 L 350 20" fill="none" stroke="#64748b" stroke-width="4"/>
     <text x="400" y="25" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1d4ed8">Refinery Gas (1-4C)</text>

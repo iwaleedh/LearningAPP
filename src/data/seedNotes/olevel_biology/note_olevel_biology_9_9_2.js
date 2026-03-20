@@ -22,21 +22,21 @@ export const note_olevel_biology_9_9_2 = {
       data: {
         caption: 'Cross-sections of an artery, vein, and capillary — comparing wall thickness and lumen size',
         svg: `<svg viewBox="0 0 460 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="460" height="280" fill="#f8f9fa" rx="10"/>
+  <rect width="460" height="280" fill="#0f172a" rx="10"/>
   <text x="230" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Cross-Sections of Blood Vessels</text>
 
   <!-- ARTERY -->
   <text x="90" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#b91c1c">Artery</text>
   <!-- Outer wall (adventitia) -->
-  <circle cx="90" cy="130" r="68" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+  <circle cx="90" cy="130" r="68" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2"/>
   <!-- Thick smooth muscle + elastic tissue layer -->
-  <circle cx="90" cy="130" r="52" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <circle cx="90" cy="130" r="52" fill="#44370a" stroke="#b45309" stroke-width="2"/>
   <!-- Endothelium + small lumen -->
-  <circle cx="90" cy="130" r="28" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+  <circle cx="90" cy="130" r="28" fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
   <!-- Blood (lumen) -->
   <circle cx="90" cy="130" r="22" fill="#ef4444" stroke="none"/>
   <!-- Labels -->
-  <text x="90" y="134" text-anchor="middle" font-size="10" fill="#fff">Lumen</text>
+  <text x="90" y="134" text-anchor="middle" font-size="10" fill="#1e293b">Lumen</text>
   <text x="8" y="95" font-size="10" fill="#b91c1c">Thick</text>
   <text x="4" y="107" font-size="10" fill="#b91c1c">muscular</text>
   <text x="6" y="119" font-size="10" fill="#b91c1c">wall</text>
@@ -45,16 +45,16 @@ export const note_olevel_biology_9_9_2 = {
   <!-- VEIN -->
   <text x="230" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">Vein</text>
   <!-- Outer wall (thin) -->
-  <circle cx="230" cy="130" r="68" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="230" cy="130" r="68" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Thinner muscle layer -->
-  <circle cx="230" cy="130" r="56" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="230" cy="130" r="56" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Large lumen -->
   <circle cx="230" cy="130" r="48" fill="#60a5fa" stroke="none"/>
   <!-- Valve representation -->
   <path d="M 210 115 Q 215 130 210 145" fill="none" stroke="#fff" stroke-width="2.5"/>
   <path d="M 250 115 Q 245 130 250 145" fill="none" stroke="#fff" stroke-width="2.5"/>
-  <text x="230" y="134" text-anchor="middle" font-size="10" fill="#fff">Large lumen</text>
-  <text x="230" y="147" text-anchor="middle" font-size="9" fill="#fff">+ valve</text>
+  <text x="230" y="134" text-anchor="middle" font-size="10" fill="#1e293b">Large lumen</text>
+  <text x="230" y="147" text-anchor="middle" font-size="9" fill="#1e293b">+ valve</text>
   <!-- Labels -->
   <text x="165" y="95" font-size="10" fill="#1d4ed8">Thin</text>
   <text x="162" y="107" font-size="10" fill="#1d4ed8">wall</text>
@@ -63,7 +63,7 @@ export const note_olevel_biology_9_9_2 = {
   <!-- CAPILLARY -->
   <text x="380" y="48" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">Capillary</text>
   <!-- Single cell wall -->
-  <circle cx="380" cy="130" r="22" fill="#86efac" stroke="#15803d" stroke-width="3"/>
+  <circle cx="380" cy="130" r="22" fill="#0a2e1a" stroke="#15803d" stroke-width="3"/>
   <!-- Tiny lumen (barely fits one RBC) -->
   <circle cx="380" cy="130" r="10" fill="#22c55e"/>
   <text x="380" y="193" text-anchor="middle" font-size="10" fill="#15803d">One-cell-thick wall</text>
@@ -72,9 +72,9 @@ export const note_olevel_biology_9_9_2 = {
   <!-- Legend -->
   <rect x="30" y="218" width="14" height="10" fill="#ef4444"/>
   <text x="48" y="228" font-size="11" fill="#1e293b">Blood (lumen)</text>
-  <rect x="140" y="218" width="14" height="10" fill="#fde68a" stroke="#b45309" stroke-width="1"/>
+  <rect x="140" y="218" width="14" height="10" fill="#44370a" stroke="#b45309" stroke-width="1"/>
   <text x="158" y="228" font-size="11" fill="#1e293b">Smooth muscle / elastic</text>
-  <rect x="310" y="218" width="14" height="10" fill="#fca5a5" stroke="#b91c1c" stroke-width="1"/>
+  <rect x="310" y="218" width="14" height="10" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1"/>
   <text x="328" y="228" font-size="11" fill="#1e293b">Outer wall</text>
 
   <text x="230" y="255" text-anchor="middle" font-size="10" fill="#64748b">Note: capillary shown at a larger scale for clarity</text>
@@ -132,16 +132,16 @@ export const note_olevel_biology_9_9_2 = {
       data: {
         caption: 'How valves in veins prevent backflow of blood',
         svg: `<svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="400" height="180" fill="#f8f9fa" rx="10"/>
+  <rect width="400" height="180" fill="#0f172a" rx="10"/>
   <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Valves in Veins</text>
 
   <!-- LEFT: valve open (blood flows towards heart) -->
   <text x="95" y="42" text-anchor="middle" font-size="11" fill="#15803d">Valve open — blood flows</text>
   <!-- Vein walls -->
-  <rect x="40" y="55" width="110" height="90" rx="8" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="40" y="55" width="110" height="90" rx="8" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Valve cups open (against walls) -->
-  <path d="M 55 100 Q 60 80 75 80 Q 75 80 75 100" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
-  <path d="M 135 100 Q 130 80 115 80 Q 115 80 115 100" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+  <path d="M 55 100 Q 60 80 75 80 Q 75 80 75 100" fill="#1250a0" stroke="#1d4ed8" stroke-width="1.5"/>
+  <path d="M 135 100 Q 130 80 115 80 Q 115 80 115 100" fill="#1250a0" stroke="#1d4ed8" stroke-width="1.5"/>
   <!-- Blood flow arrow -->
   <line x1="95" y1="130" x2="95" y2="60" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#up)"/>
   <defs>
@@ -157,9 +157,9 @@ export const note_olevel_biology_9_9_2 = {
   <!-- RIGHT: valve closed (prevents backflow) -->
   <text x="295" y="42" text-anchor="middle" font-size="11" fill="#b91c1c">Valve closed — no backflow</text>
   <!-- Vein walls -->
-  <rect x="240" y="55" width="110" height="90" rx="8" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="240" y="55" width="110" height="90" rx="8" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Valve cups closed (meeting in middle) -->
-  <path d="M 255 80 Q 270 110 295 110 Q 320 110 335 80" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/>
+  <path d="M 255 80 Q 270 110 295 110 Q 320 110 335 80" fill="#1250a0" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Blocked backflow arrow -->
   <line x1="295" y1="60" x2="295" y2="80" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="4,3" marker-end="url(#down)"/>
   <text x="295" y="160" text-anchor="middle" font-size="11" fill="#b91c1c">← backflow blocked</text>

@@ -29,25 +29,25 @@ export const note_olevel_chemistry_10_10_7 = {
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Atmosphere -->
-  <rect x="200" y="20" width="200" height="60" rx="30" fill="#bae6fd" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="200" y="20" width="200" height="60" rx="30" fill="#0c4a6e" stroke="#3b82f6" stroke-width="2"/>
   <text x="300" y="47" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1d4ed8" text-anchor="middle">CO₂ in Atmosphere</text>
 
   <!-- Plants Box -->
-  <rect x="50" y="160" width="140" height="50" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <rect x="50" y="160" width="140" height="50" rx="8" fill="#0a2e1a" stroke="#22c55e" stroke-width="2"/>
   <text x="120" y="185" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Carbon in Plants</text>
   <text x="120" y="200" font-family="var(--font-sans)" font-size="10" fill="#166534" text-anchor="middle">(Glucose & tissues)</text>
 
   <!-- Animals Box -->
-  <rect x="250" y="160" width="140" height="50" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <rect x="250" y="160" width="140" height="50" rx="8" fill="#532407" stroke="#f97316" stroke-width="2"/>
   <text x="320" y="190" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="middle">Carbon in Animals</text>
 
   <!-- Fossil Fuels Box -->
-  <rect x="420" y="260" width="140" height="50" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <rect x="420" y="260" width="140" height="50" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
   <text x="490" y="285" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Fossil Fuels</text>
   <text x="490" y="300" font-family="var(--font-sans)" font-size="10" fill="#1e293b" text-anchor="middle">(Coal, Oil, Gas)</text>
 
   <!-- Dead Matter Box -->
-  <rect x="150" y="260" width="140" height="50" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="150" y="260" width="140" height="50" rx="8" fill="#0f172a" stroke="#9ca3af" stroke-width="2"/>
   <text x="220" y="290" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#4b5563" text-anchor="middle">Dead Matter & Waste</text>
 
   <!-- ARROWS -->

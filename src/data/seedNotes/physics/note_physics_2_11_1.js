@@ -25,8 +25,8 @@ export const note_physics_2_11_1 = {
   <path d="M50 80 Q 200 80 350 40" fill="none" stroke="#f472b6" stroke-width="3" stroke-dasharray="8,4"/>
   <path d="M50 100 Q 200 100 350 100" fill="none" stroke="#f472b6" stroke-width="4"/>
   <path d="M50 120 Q 200 120 350 160" fill="none" stroke="#f472b6" stroke-width="3" stroke-dasharray="8,4"/>
-  <text x="200" y="30" fill="#f8fafc" font-size="16" text-anchor="middle">Turbulent vs Laminar Flow</text>
-  <circle cx="200" cy="100" r="10" fill="#fbbf24"/>
+  <text x="200" y="30" fill="#0f172a" font-size="16" text-anchor="middle">Turbulent vs Laminar Flow</text>
+  <circle cx="200" cy="100" r="10" fill="#78350f"/>
 </svg>`,
         caption: "Physics Diagram"
       }
@@ -65,9 +65,9 @@ export const note_physics_2_11_1 = {
   <circle cx="354" cy="79" r="5" fill="#60a5fa"/>
   <circle cx="312" cy="97" r="5" fill="#60a5fa"/>
   <circle cx="340" cy="97" r="5" fill="#60a5fa"/>
-  <text x="60" y="48" fill="#fbbf24" font-size="11" text-anchor="middle">compression</text>
+  <text x="60" y="48" fill="#78350f" font-size="11" text-anchor="middle">compression</text>
   <text x="148" y="48" fill="#34d399" font-size="11" text-anchor="middle">rarefaction</text>
-  <text x="237" y="48" fill="#fbbf24" font-size="11" text-anchor="middle">compression</text>
+  <text x="237" y="48" fill="#78350f" font-size="11" text-anchor="middle">compression</text>
   <text x="326" y="48" fill="#34d399" font-size="11" text-anchor="middle">rarefaction</text>
   <line x1="22" y1="145" x2="398" y2="145" stroke="#94a3b8" stroke-width="1.5"/>
   <polygon points="395,141 403,145 395,149" fill="#94a3b8"/>

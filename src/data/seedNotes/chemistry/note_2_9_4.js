@@ -55,10 +55,10 @@ export const note_chemistry_2_9_4 = {
     <rect width="600" height="350" fill="var(--color-surface)" />
     
     <!-- Area under curve right of Ec -->
-    <path d="M 320 236 Q 400 90, 500 15 L 500 280 L 320 280 Z" fill="#E0F2FE" />
+    <path d="M 320 236 Q 400 90, 500 15 L 500 280 L 320 280 Z" fill="#0c4a6e" />
     
     <!-- Area under curve right of Ea (darker blue) -->
-    <path d="M 400 134 Q 450 40, 500 15 L 500 280 L 400 280 Z" fill="#93C5FD" />
+    <path d="M 400 134 Q 450 40, 500 15 L 500 280 L 400 280 Z" fill="#1e3a8a" />
     
     <!-- Axes -->
     <line x1="50" y1="280" x2="550" y2="280" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow)" />
@@ -80,9 +80,9 @@ export const note_chemistry_2_9_4 = {
     <text x="320" y="300" font-family="sans-serif" font-size="16" fill="var(--color-text)" text-anchor="end">Eₐ (catalysed)</text>
     
     <!-- Legend -->
-    <rect x="350" y="50" width="20" height="20" fill="#93C5FD" />
+    <rect x="350" y="50" width="20" height="20" fill="#1e3a8a" />
     <text x="380" y="65" font-family="sans-serif" font-size="12" fill="var(--color-text)">Molecules reacting without catalyst</text>
-    <rect x="350" y="80" width="20" height="20" fill="#E0F2FE" stroke="#93C5FD" stroke-width="1"/>
+    <rect x="350" y="80" width="20" height="20" fill="#0c4a6e" stroke="#93C5FD" stroke-width="1"/>
     <text x="380" y="95" font-family="sans-serif" font-size="12" fill="var(--color-text)">Extra molecules reacting with catalyst</text>
 
     <defs>

@@ -51,7 +51,7 @@ export const note_biology_2_3_13 = {
         "id": "svg-diag-2-3-13-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M100,20 L100,120 Q150,150 200,120 L200,20 Z' fill='#c6f6d5' stroke='#38a169' stroke-width='2'/><line x1='100' y1='70' x2='200' y2='70' stroke='#2f855a' stroke-dasharray='4'/><line x1='100' y1='100' x2='200' y2='100' stroke='#2f855a' stroke-dasharray='4'/><text x='210' y='50' font-size='10'>Zone of Differentiation</text><text x='210' y='85' font-size='10'>Zone of Elongation</text><text x='210' y='115' font-size='10' font-weight='bold' fill='#c53030'>Meristem (Mitosis!)</text><text x='205' y='135' font-size='10'>Root Cap (Protection)</text><path d='M150,115 L100,140' stroke='#333' marker-end='url(#arrow)'/></svg>",
+            "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M100,20 L100,120 Q150,150 200,120 L200,20 Z' fill='#0a2e1a' stroke='#38a169' stroke-width='2'/><line x1='100' y1='70' x2='200' y2='70' stroke='#2f855a' stroke-dasharray='4'/><line x1='100' y1='100' x2='200' y2='100' stroke='#2f855a' stroke-dasharray='4'/><text x='210' y='50' font-size='10'>Zone of Differentiation</text><text x='210' y='85' font-size='10'>Zone of Elongation</text><text x='210' y='115' font-size='10' font-weight='bold' fill='#c53030'>Meristem (Mitosis!)</text><text x='205' y='135' font-size='10'>Root Cap (Protection)</text><path d='M150,115 L100,140' stroke='#333' marker-end='url(#arrow)'/></svg>",
             "caption": "Garlic Root Tip Zones"
         }
     },
@@ -59,7 +59,7 @@ export const note_biology_2_3_13 = {
         "id": "svg-diag-2-3-13-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='100' height='80' fill='#fff' stroke='#333'/><circle cx='40' cy='40' r='8' fill='#e2e8f0'/><circle cx='70' cy='50' r='8' fill='#fc8181'/><circle cx='90' cy='30' r='8' fill='#e2e8f0'/><circle cx='50' cy='80' r='8' fill='#fc8181'/><circle cx='90' cy='80' r='8' fill='#e2e8f0'/><text x='140' y='40' font-size='12' font-weight='bold'>Mitotic Index =</text><line x1='140' y1='50' x2='280' y2='50' stroke='#333' stroke-width='2'/><text x='150' y='45' font-size='10'>Cells in Mitosis (e.g. Red = 2)</text><text x='150' y='65' font-size='10'>Total Cells (e.g. 5)</text><text x='150' y='100' font-size='12' fill='#c53030'>MI = 2 / 5 = 0.4 (40%)</text></svg>",
+            "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='100' height='80' fill='#1e293b' stroke='#333'/><circle cx='40' cy='40' r='8' fill='#1e293b'/><circle cx='70' cy='50' r='8' fill='#fc8181'/><circle cx='90' cy='30' r='8' fill='#1e293b'/><circle cx='50' cy='80' r='8' fill='#fc8181'/><circle cx='90' cy='80' r='8' fill='#1e293b'/><text x='140' y='40' font-size='12' font-weight='bold'>Mitotic Index =</text><line x1='140' y1='50' x2='280' y2='50' stroke='#333' stroke-width='2'/><text x='150' y='45' font-size='10'>Cells in Mitosis (e.g. Red = 2)</text><text x='150' y='65' font-size='10'>Total Cells (e.g. 5)</text><text x='150' y='100' font-size='12' fill='#c53030'>MI = 2 / 5 = 0.4 (40%)</text></svg>",
             "caption": "Mitotic Index Calculation"
         }
     }

@@ -93,13 +93,13 @@ export const note_chemistry_1_3_2 = {
   <!-- === H₂O === -->
   <text x="75" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">H₂O</text>
   <!-- O circle -->
-  <circle cx="75" cy="80" r="32" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="75" cy="80" r="32" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="75" y="85" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">O</text>
   <!-- H left -->
-  <circle cx="20" cy="80" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="20" cy="80" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="20" y="85" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">H</text>
   <!-- H right -->
-  <circle cx="130" cy="80" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="130" cy="80" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="130" y="85" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">H</text>
   <!-- Shared electrons left (H–O bond) -->
   <text x="42" y="77" fill="#1e40af" font-size="10">•</text>
@@ -117,14 +117,14 @@ export const note_chemistry_1_3_2 = {
   <!-- === NH₃ === -->
   <text x="225" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">NH₃</text>
   <!-- N circle -->
-  <circle cx="225" cy="80" r="32" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="225" cy="80" r="32" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="225" y="85" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">N</text>
   <!-- 3 H atoms at angles -->
-  <circle cx="170" cy="110" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="170" cy="110" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="170" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">H</text>
-  <circle cx="225" cy="130" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="225" cy="130" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="225" y="135" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">H</text>
-  <circle cx="280" cy="110" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="280" cy="110" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="280" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">H</text>
   <!-- Bonding pairs -->
   <text x="192" y="100" fill="#1e40af" font-size="10">•×</text>
@@ -139,13 +139,13 @@ export const note_chemistry_1_3_2 = {
   <!-- === CO₂ === -->
   <text x="390" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">CO₂</text>
   <!-- C -->
-  <circle cx="390" cy="60" r="28" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="390" cy="60" r="28" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="390" y="65" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">C</text>
   <!-- O left -->
-  <circle cx="315" cy="60" r="28" fill="#fce7f3" stroke="#9d174d" stroke-width="1.5"/>
+  <circle cx="315" cy="60" r="28" fill="#4a1040" stroke="#9d174d" stroke-width="1.5"/>
   <text x="315" y="65" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">O</text>
   <!-- O right -->
-  <circle cx="465" cy="60" r="28" fill="#fce7f3" stroke="#9d174d" stroke-width="1.5"/>
+  <circle cx="465" cy="60" r="28" fill="#4a1040" stroke="#9d174d" stroke-width="1.5"/>
   <text x="465" y="65" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">O</text>
   <!-- Double bond left: 2 pairs -->
   <text x="343" y="53" fill="#1e40af" font-size="10">×•</text>
@@ -166,10 +166,10 @@ export const note_chemistry_1_3_2 = {
   <!-- === N₂ === -->
   <text x="540" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">N₂</text>
   <!-- N left -->
-  <circle cx="510" cy="195" r="28" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="510" cy="195" r="28" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="510" y="200" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">N</text>
   <!-- N right -->
-  <circle cx="570" cy="195" r="28" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="570" cy="195" r="28" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="570" y="200" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">N</text>
   <!-- Triple bond: 3 shared pairs stacked vertically -->
   <text x="534" y="189" fill="#1e40af" font-size="10">× •</text>
@@ -189,7 +189,7 @@ export const note_chemistry_1_3_2 = {
   <line x1="500" y1="140" x2="500" y2="260" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- Key: electron symbols -->
-  <rect x="10" y="190" width="285" height="50" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="10" y="190" width="285" height="50" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1"/>
   <text x="152" y="207" text-anchor="middle" fill="#374151" font-weight="bold" font-size="10">Key</text>
   <text x="25" y="222" fill="#1e40af" font-size="11">•</text>
   <text x="32" y="222" fill="#374151" font-size="9">= electron from atom 1 (e.g. O, N, C)</text>
@@ -250,16 +250,16 @@ export const note_chemistry_1_3_2 = {
   <!-- === NH4+ === -->
   <text x="140" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">NH₄⁺ (ammonium ion)</text>
   <!-- N at centre -->
-  <circle cx="140" cy="110" r="30" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="140" cy="110" r="30" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="140" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">N</text>
   <!-- 4 H atoms: top, bottom, left, right -->
-  <circle cx="140" cy="55" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="140" cy="55" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="140" y="60" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
-  <circle cx="140" cy="165" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="140" cy="165" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="140" y="170" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
-  <circle cx="85" cy="110" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="85" cy="110" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="85" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
-  <circle cx="195" cy="110" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="195" cy="110" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="195" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
   <!-- 3 normal bonding pairs (dots•crosses×) -->
   <text x="130" y="72" fill="#1e40af" font-size="10">•×</text>
@@ -283,14 +283,14 @@ export const note_chemistry_1_3_2 = {
   <!-- === H3O+ === -->
   <text x="420" y="18" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">H₃O⁺ (hydroxonium ion)</text>
   <!-- O at centre -->
-  <circle cx="420" cy="110" r="30" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="420" cy="110" r="30" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="420" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">O</text>
   <!-- 3 H atoms: top, bottom-left, bottom-right -->
-  <circle cx="420" cy="55" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="420" cy="55" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="420" y="60" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
-  <circle cx="365" cy="155" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="365" cy="155" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="365" y="160" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
-  <circle cx="475" cy="155" r="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="475" cy="155" r="16" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="475" y="160" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">H</text>
   <!-- 2 normal bonding pairs -->
   <text x="407" y="72" fill="#1e40af" font-size="10">•×</text>
@@ -353,10 +353,10 @@ export const note_chemistry_1_3_2 = {
   <!-- === BF3 (electron deficient) === -->
   <text x="130" y="18" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="13">BF₃ — electron deficient (6e⁻ around B)</text>
   <!-- B at centre -->
-  <circle cx="130" cy="110" r="28" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="130" cy="110" r="28" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="130" y="115" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">B</text>
   <!-- F top -->
-  <circle cx="130" cy="48" r="26" fill="#fce7f3" stroke="#9d174d" stroke-width="1.5"/>
+  <circle cx="130" cy="48" r="26" fill="#4a1040" stroke="#9d174d" stroke-width="1.5"/>
   <text x="130" y="53" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">F</text>
   <!-- Lone pairs on F top -->
   <text x="110" y="33" fill="#ca8a04" font-size="9">× ×</text>
@@ -364,12 +364,12 @@ export const note_chemistry_1_3_2 = {
   <text x="148" y="57" fill="#ca8a04" font-size="9">•</text>
   <text x="112" y="57" fill="#ca8a04" font-size="9">×</text>
   <!-- F bottom-left -->
-  <circle cx="68" cy="162" r="26" fill="#fce7f3" stroke="#9d174d" stroke-width="1.5"/>
+  <circle cx="68" cy="162" r="26" fill="#4a1040" stroke="#9d174d" stroke-width="1.5"/>
   <text x="68" y="167" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">F</text>
   <text x="40" y="157" fill="#ca8a04" font-size="9">× ×</text>
   <text x="40" y="172" fill="#ca8a04" font-size="9">• •</text>
   <!-- F bottom-right -->
-  <circle cx="192" cy="162" r="26" fill="#fce7f3" stroke="#9d174d" stroke-width="1.5"/>
+  <circle cx="192" cy="162" r="26" fill="#4a1040" stroke="#9d174d" stroke-width="1.5"/>
   <text x="192" y="167" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">F</text>
   <text x="208" y="157" fill="#ca8a04" font-size="9">× ×</text>
   <text x="208" y="172" fill="#ca8a04" font-size="9">• •</text>
@@ -387,18 +387,18 @@ export const note_chemistry_1_3_2 = {
   <!-- === PCl5 (expanded octet) === -->
   <text x="420" y="18" text-anchor="middle" fill="#059669" font-weight="bold" font-size="13">PCl₅ — expanded octet (10e⁻ around P)</text>
   <!-- P at centre -->
-  <circle cx="420" cy="125" r="28" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="420" cy="125" r="28" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="420" y="130" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">P</text>
   <!-- 5 Cl atoms: top, left, right, bottom-left, bottom-right -->
-  <circle cx="420" cy="60" r="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="420" cy="60" r="22" fill="#0c4a6e" stroke="#0369a1" stroke-width="1.5"/>
   <text x="420" y="65" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Cl</text>
-  <circle cx="355" cy="100" r="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="355" cy="100" r="22" fill="#0c4a6e" stroke="#0369a1" stroke-width="1.5"/>
   <text x="355" y="105" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Cl</text>
-  <circle cx="485" cy="100" r="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="485" cy="100" r="22" fill="#0c4a6e" stroke="#0369a1" stroke-width="1.5"/>
   <text x="485" y="105" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Cl</text>
-  <circle cx="370" cy="180" r="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="370" cy="180" r="22" fill="#0c4a6e" stroke="#0369a1" stroke-width="1.5"/>
   <text x="370" y="185" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Cl</text>
-  <circle cx="470" cy="180" r="22" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <circle cx="470" cy="180" r="22" fill="#0c4a6e" stroke="#0369a1" stroke-width="1.5"/>
   <text x="470" y="185" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Cl</text>
   <!-- Bonding pairs -->
   <text x="412" y="90" fill="#1e40af" font-size="10">•×</text>

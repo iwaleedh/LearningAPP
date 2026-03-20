@@ -43,7 +43,7 @@ export const note_olevel_physics_3_4_3 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="460" height="380">
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <!-- Background map-like  -->
-  <rect x="0" y="0" width="460" height="380" fill="#f0fdf4" rx="4"/>
+  <rect x="0" y="0" width="460" height="380" fill="#0a2e1a" rx="4"/>
   <!-- Station A (left) with circle -->
   <circle cx="90" cy="280" r="4" fill="#6366f1"/>
   <text x="78" y="300" fill="#6366f1">Station A</text>
@@ -71,7 +71,7 @@ export const note_olevel_physics_3_4_3 = {
   <line x1="230" y1="50" x2="225" y2="215" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
   <!-- Seismogram sketches near each station -->
   <!-- Station A seismogram -->
-  <rect x="10" y="180" width="75" height="40" fill="white" stroke="#6366f1" stroke-width="1" rx="2"/>
+  <rect x="10" y="180" width="75" height="40" fill="#1e293b" stroke="#6366f1" stroke-width="1" rx="2"/>
   <text x="47" y="193" text-anchor="middle" fill="#6366f1" font-size="9">Seismogram A</text>
   <path d="M15,212 L25,212 L27,204 L29,220 L31,212 L37,212 L40,200 L43,224 L46,212 L52,212 L53,207 L55,217 L57,212 L80,212" stroke="#6366f1" stroke-width="1.2" fill="none"/>
   <text x="47" y="230" text-anchor="middle" fill="#94a3b8" font-size="8">P  S  →time</text>

@@ -127,7 +127,7 @@ export const note_chemistry_2_9_3 = {
   <text x="260" y="160" font-family="-apple-system, sans-serif" font-size="16" fill="#d97706" font-weight="bold">Temperature T + t</text>
 
   <!-- Labels for shaded areas -->
-  <rect x="390" y="120" width="180" height="40" fill="white" fill-opacity="0.9" rx="4"/>
+  <rect x="390" y="120" width="180" height="40" fill="#1e293b" fill-opacity="0.9" rx="4"/>
   <text x="400" y="135" font-family="-apple-system, sans-serif" font-size="12" fill="#ef4444">Yellow area represents the</text>
   <text x="400" y="150" font-family="-apple-system, sans-serif" font-size="12" fill="#ef4444">proportional increase in</text>
   <text x="400" y="165" font-family="-apple-system, sans-serif" font-size="12" fill="#ef4444">capable particles at higher T</text>

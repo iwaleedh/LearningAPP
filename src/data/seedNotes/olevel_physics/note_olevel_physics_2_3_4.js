@@ -83,10 +83,10 @@ export const note_olevel_physics_2_3_4 = {
         caption: 'Cross-section of a vacuum flask showing heat-reducing features',
         svg: `<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Outer glass wall -->
-  <path d="M80,30 L80,240 Q80,270 150,270 Q220,270 220,240 L220,30 Z" fill="#e8eef8" stroke="#8898b8" stroke-width="2.5"/>
+  <path d="M80,30 L80,240 Q80,270 150,270 Q220,270 220,240 L220,30 Z" fill="#1c3a64" stroke="#8898b8" stroke-width="2.5"/>
 
   <!-- Vacuum gap (white / hatched) -->
-  <path d="M95,35 L95,235 Q95,255 150,255 Q205,255 205,235 L205,35 Z" fill="white" stroke="#aab8cc" stroke-width="1.5"/>
+  <path d="M95,35 L95,235 Q95,255 150,255 Q205,255 205,235 L205,35 Z" fill="#1e293b" stroke="#aab8cc" stroke-width="1.5"/>
   <!-- Vacuum hatching -->
   <line x1="95" y1="60" x2="115" y2="40" stroke="#ccddee" stroke-width="0.8"/>
   <line x1="95" y1="90" x2="130" y2="55" stroke="#ccddee" stroke-width="0.8"/>
@@ -98,18 +98,18 @@ export const note_olevel_physics_2_3_4 = {
   <line x1="160" y1="232" x2="205" y2="187" stroke="#ccddee" stroke-width="0.8"/>
 
   <!-- Inner glass wall (silvered) -->
-  <path d="M108,38 L108,232 Q108,248 150,248 Q192,248 192,232 L192,38 Z" fill="#ddeeff" stroke="#aaccee" stroke-width="2"/>
+  <path d="M108,38 L108,232 Q108,248 150,248 Q192,248 192,232 L192,38 Z" fill="#1c3a64" stroke="#aaccee" stroke-width="2"/>
   <!-- Silver sheen on inner wall -->
   <path d="M108,38 L108,232" stroke="silver" stroke-width="3" opacity="0.6"/>
   <path d="M192,38 L192,232" stroke="silver" stroke-width="3" opacity="0.6"/>
 
   <!-- Contents (liquid) -->
-  <path d="M112,42 L112,230 Q112,244 150,244 Q188,244 188,230 L188,42 Z" fill="#ffe8b0" opacity="0.7"/>
+  <path d="M112,42 L112,230 Q112,244 150,244 Q188,244 188,230 L188,42 Z" fill="#532407" opacity="0.7"/>
   <text x="130" y="145" fill="#bb7700" font-size="12" font-weight="bold">Hot liquid</text>
 
   <!-- Stopper -->
   <rect x="105" y="20" width="90" height="25" rx="6" fill="#8888aa" stroke="#555588" stroke-width="1.5"/>
-  <text x="120" y="37" fill="white" font-size="11">Stopper</text>
+  <text x="120" y="37" fill="#1e293b" font-size="11">Stopper</text>
 
   <!-- Annotation lines and labels (right side) -->
   <!-- Silvered walls -->

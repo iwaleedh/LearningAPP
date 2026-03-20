@@ -134,7 +134,7 @@ export const note_chemistry_1_5_9 = {
     </marker>
   </defs>
   <text x="280" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Addition of HBr to Propene: Two Pathways</text>
-  <rect x="200" y="28" width="160" height="50" rx="6" fill="#e8f0fe" stroke="#4a90d9" stroke-width="1.5"/>
+  <rect x="200" y="28" width="160" height="50" rx="6" fill="#1c3a64" stroke="#4a90d9" stroke-width="1.5"/>
   <text x="280" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a237e">CH&#x2083;CH=CH&#x2082;</text>
   <text x="280" y="66" text-anchor="middle" font-size="11" fill="#1a237e">propene</text>
   <line x1="218" y1="78" x2="108" y2="108" stroke="#555" stroke-width="1.5" marker-end="url(#arr9)"/>
@@ -143,11 +143,11 @@ export const note_chemistry_1_5_9 = {
   <line x1="342" y1="78" x2="452" y2="108" stroke="#555" stroke-width="1.5" marker-end="url(#arr9)"/>
   <text x="418" y="89" text-anchor="middle" font-size="10" fill="#555">HBr + peroxide</text>
   <text x="418" y="102" text-anchor="middle" font-size="10" fill="#2e7d32">Free radical addition</text>
-  <rect x="12" y="115" width="188" height="68" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <rect x="12" y="115" width="188" height="68" rx="6" fill="#4a1040" stroke="#c62828" stroke-width="1.5"/>
   <text x="106" y="133" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Markovnikov Product</text>
   <text x="106" y="151" text-anchor="middle" font-size="12" fill="#b71c1c">CH&#x2083;&#x2013;CHBr&#x2013;CH&#x2083;</text>
   <text x="106" y="168" text-anchor="middle" font-size="11" fill="#b71c1c">2-bromopropane</text>
-  <rect x="360" y="115" width="188" height="68" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <rect x="360" y="115" width="188" height="68" rx="6" fill="#0a2e1a" stroke="#2e7d32" stroke-width="1.5"/>
   <text x="454" y="133" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">Anti-Markovnikov Product</text>
   <text x="454" y="151" text-anchor="middle" font-size="12" fill="#1b5e20">CH&#x2083;&#x2013;CH&#x2082;&#x2013;CH&#x2082;Br</text>
   <text x="454" y="168" text-anchor="middle" font-size="11" fill="#1b5e20">1-bromopropane</text>

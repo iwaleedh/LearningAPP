@@ -46,7 +46,7 @@ export const note_biology_1_2_5 = {
         "id": "svg-diag-1-2-5-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='60' width='200' height='30' fill='#edf2f7'/><rect x='135' y='50' width='30' height='50' fill='#ed8936' rx='5'/><circle cx='150' cy='130' r='6' fill='#38a169'/><path d='M150,110 L150,30' stroke='#e53e3e' stroke-width='2' marker-end='url(#arrow)'/><circle cx='150' cy='20' r='6' fill='#38a169'/><text x='160' y='85' font-size='10' font-weight='bold' fill='#c53030'>ATP</text><text x='30' y='140' font-size='10'>Against Concentration Gradient</text></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='60' width='200' height='30' fill='#1e293b'/><rect x='135' y='50' width='30' height='50' fill='#ed8936' rx='5'/><circle cx='150' cy='130' r='6' fill='#38a169'/><path d='M150,110 L150,30' stroke='#e53e3e' stroke-width='2' marker-end='url(#arrow)'/><circle cx='150' cy='20' r='6' fill='#38a169'/><text x='160' y='85' font-size='10' font-weight='bold' fill='#c53030'>ATP</text><text x='30' y='140' font-size='10'>Against Concentration Gradient</text></svg>",
             "caption": "Active Transport (ATP)"
         }
     },

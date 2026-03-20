@@ -38,10 +38,10 @@ export const note_olevel_physics_1_9_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="220" fill="#eff6ff" rx="10"/>
+  <rect width="380" height="220" fill="#1c3a64" rx="10"/>
   <text x="190" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3a8a">Pressure Increases with Depth</text>
   <!-- Container of water -->
-  <rect x="60" y="35" width="140" height="150" fill="#bae6fd" stroke="#1d4ed8" stroke-width="2" rx="4"/>
+  <rect x="60" y="35" width="140" height="150" fill="#0c4a6e" stroke="#1d4ed8" stroke-width="2" rx="4"/>
   <!-- Water surface label -->
   <text x="130" y="30" text-anchor="middle" font-size="9" fill="#1d4ed8">Surface (P = 0 gauge)</text>
   <!-- Depth arrows and pressure arrow -->
@@ -67,7 +67,7 @@ export const note_olevel_physics_1_9_1 = {
   <text x="130" y="95" text-anchor="middle" font-size="10" fill="#374151">P₁ = ρg(2)</text>
   <text x="130" y="155" text-anchor="middle" font-size="10" fill="#374151">P₂ = ρg(6)</text>
   <!-- Formula box -->
-  <rect x="240" y="140" width="120" height="50" rx="5" fill="white" stroke="#e5e7eb"/>
+  <rect x="240" y="140" width="120" height="50" rx="5" fill="#1e293b" stroke="#e5e7eb"/>
   <text x="300" y="160" text-anchor="middle" font-size="10" fill="#374151">Water: ρ = 1000 kg/m³</text>
   <text x="300" y="175" text-anchor="middle" font-size="10" fill="#374151">P = 1000 × 10 × h</text>
   <text x="300" y="188" text-anchor="middle" font-size="10" fill="#374151">P = 10 000h Pa</text>

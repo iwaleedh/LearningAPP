@@ -105,7 +105,7 @@ export const note_olevel_biology_12_12_1 = {
         caption: 'Aerobic vs anaerobic respiration pathways from glucose',
         svg: `<svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="13">
   <!-- Glucose box -->
-  <rect x="205" y="20" width="150" height="44" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <rect x="205" y="20" width="150" height="44" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="2"/>
   <text x="280" y="37" text-anchor="middle" font-weight="bold" fill="#7a4a00">GLUCOSE</text>
   <text x="280" y="54" text-anchor="middle" font-size="11" fill="#7a4a00">C₆H₁₂O₆</text>
 
@@ -119,14 +119,14 @@ export const note_olevel_biology_12_12_1 = {
   <text x="430" y="100" text-anchor="middle" fill="#16a34a" font-size="11">With O₂</text>
 
   <!-- Anaerobic box -->
-  <rect x="20" y="115" width="200" height="80" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="20" y="115" width="200" height="80" rx="8" fill="#3d1212" stroke="#dc2626" stroke-width="2"/>
   <text x="120" y="135" text-anchor="middle" font-weight="bold" fill="#991b1b">ANAEROBIC</text>
   <text x="120" y="152" text-anchor="middle" fill="#991b1b" font-size="11">Animals: lactic acid</text>
   <text x="120" y="168" text-anchor="middle" fill="#991b1b" font-size="11">Yeast: ethanol + CO₂</text>
   <text x="120" y="184" text-anchor="middle" fill="#991b1b" font-size="11">~2 ATP released</text>
 
   <!-- Aerobic box -->
-  <rect x="340" y="115" width="200" height="80" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <rect x="340" y="115" width="200" height="80" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="440" y="135" text-anchor="middle" font-weight="bold" fill="#14532d">AEROBIC</text>
   <text x="440" y="152" text-anchor="middle" fill="#14532d" font-size="11">CO₂ + H₂O</text>
   <text x="440" y="168" text-anchor="middle" fill="#14532d" font-size="11">~38 ATP released</text>

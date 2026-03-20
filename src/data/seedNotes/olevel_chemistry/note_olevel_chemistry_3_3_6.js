@@ -57,7 +57,7 @@ export const note_olevel_chemistry_3_3_6 = {
     <text x="130" y="20" font-family="var(--font-sans)" font-size="12" fill="var(--color-primary)" text-anchor="middle">÷ Mᵣ(A)</text>
 
     <!-- Box 2: Moles of A -->
-    <rect x="170" y="0" width="100" height="60" rx="8" fill="#e0f2fe" stroke="var(--color-primary)" stroke-width="2"/>
+    <rect x="170" y="0" width="100" height="60" rx="8" fill="#0c4a6e" stroke="var(--color-primary)" stroke-width="2"/>
     <text x="220" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Moles of A</text>
     <text x="220" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
 
@@ -67,7 +67,7 @@ export const note_olevel_chemistry_3_3_6 = {
     <text x="300" y="25" font-family="var(--font-sans)" font-size="10" fill="var(--color-text-secondary)" text-anchor="middle">(from Eq.)</text>
 
     <!-- Box 3: Moles of B -->
-    <rect x="340" y="0" width="100" height="60" rx="8" fill="#fce7f3" stroke="#0284c7" stroke-width="2"/>
+    <rect x="340" y="0" width="100" height="60" rx="8" fill="#4a1040" stroke="#0284c7" stroke-width="2"/>
     <text x="390" y="25" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Moles of B</text>
     <text x="390" y="45" font-family="var(--font-sans)" font-size="12" fill="var(--color-text-secondary)" text-anchor="middle">(mol)</text>
 

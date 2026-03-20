@@ -43,7 +43,7 @@ export const note_olevel_physics_1_4_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 210" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="210" fill="#fefce8" rx="10"/>
+  <rect width="440" height="210" fill="#44370a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Hooke's Law: F–Extension Graph</text>
   <!-- Axes -->
   <line x1="60" y1="170" x2="360" y2="170" stroke="#374151" stroke-width="2"/>

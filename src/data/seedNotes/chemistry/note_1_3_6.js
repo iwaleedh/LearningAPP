@@ -111,22 +111,22 @@ export const note_chemistry_1_3_6 = {
 
   <!-- Central hexagonal ring of O atoms (simplified ice Ic) -->
   <!-- Oxygen atoms at vertices of a hexagon (approximate positions) -->
-  <circle cx="240" cy="80" r="12" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="240" cy="80" r="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="240" y="84" text-anchor="middle" fill="#1e40af" font-size="9">O</text>
 
-  <circle cx="290" cy="110" r="12" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="290" cy="110" r="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="290" y="114" text-anchor="middle" fill="#1e40af" font-size="9">O</text>
 
-  <circle cx="290" cy="160" r="12" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="290" cy="160" r="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="290" y="164" text-anchor="middle" fill="#1e40af" font-size="9">O</text>
 
-  <circle cx="240" cy="190" r="12" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="240" cy="190" r="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="240" y="194" text-anchor="middle" fill="#1e40af" font-size="9">O</text>
 
-  <circle cx="190" cy="160" r="12" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="190" cy="160" r="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="190" y="164" text-anchor="middle" fill="#1e40af" font-size="9">O</text>
 
-  <circle cx="190" cy="110" r="12" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="190" cy="110" r="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="190" y="114" text-anchor="middle" fill="#1e40af" font-size="9">O</text>
 
   <!-- H-bonds (dashed lines between O atoms — each line represents O-H···O) -->
@@ -138,17 +138,17 @@ export const note_chemistry_1_3_6 = {
   <line x1="202" y1="106" x2="228" y2="88" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,3"/>
 
   <!-- H atoms along each bond (small circles) -->
-  <circle cx="268" cy="99" r="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="268" cy="99" r="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="268" y="103" text-anchor="middle" fill="#92400e" font-size="7">H</text>
-  <circle cx="290" cy="136" r="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="290" cy="136" r="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="290" y="140" text-anchor="middle" fill="#92400e" font-size="7">H</text>
-  <circle cx="266" cy="175" r="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="266" cy="175" r="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="266" y="179" text-anchor="middle" fill="#92400e" font-size="7">H</text>
-  <circle cx="213" cy="176" r="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="213" cy="176" r="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="213" y="180" text-anchor="middle" fill="#92400e" font-size="7">H</text>
-  <circle cx="190" cy="136" r="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="190" cy="136" r="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="190" y="140" text-anchor="middle" fill="#92400e" font-size="7">H</text>
-  <circle cx="214" cy="97" r="6" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="214" cy="97" r="6" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="214" y="101" text-anchor="middle" fill="#92400e" font-size="7">H</text>
 
   <!-- Empty space label inside ring -->
@@ -156,7 +156,7 @@ export const note_chemistry_1_3_6 = {
   <text x="240" y="152" text-anchor="middle" fill="#94a3b8" font-size="10" font-style="italic">inside ring</text>
 
   <!-- Right panel: key points -->
-  <rect x="370" y="40" width="100" height="140" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="370" y="40" width="100" height="140" rx="6" fill="#1c3a64" stroke="#3b82f6" stroke-width="1"/>
   <text x="420" y="56" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="10">Key Points</text>
   <text x="375" y="74" fill="#374151" font-size="9">• 4 H-bonds per H₂O</text>
   <text x="375" y="90" fill="#374151" font-size="9">• Open lattice →</text>

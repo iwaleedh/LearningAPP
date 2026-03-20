@@ -54,18 +54,18 @@ export const note_olevel_chemistry_2_2_9 = {
     <!-- Molecules -->
     <g id="h2o" transform="translate(0, 0)">
       <circle cx="0" cy="0" r="14" fill="#ef4444"/>
-      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
-      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="-10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
     </g>
     <g transform="translate(-40, 40) rotate(45)">
       <circle cx="0" cy="0" r="14" fill="#ef4444"/>
-      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
-      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="-10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
     </g>
     <g transform="translate(40, -40) rotate(-60)">
       <circle cx="0" cy="0" r="14" fill="#ef4444"/>
-      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
-      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="-10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
     </g>
 
     <!-- Intermolecular Forces -->
@@ -91,18 +91,18 @@ export const note_olevel_chemistry_2_2_9 = {
     <!-- Molecules -->
     <g transform="translate(-40, -40) rotate(15)">
       <circle cx="0" cy="0" r="14" fill="#ef4444"/>
-      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
-      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="-10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
     </g>
     <g transform="translate(40, -10) rotate(-120)">
       <circle cx="0" cy="0" r="14" fill="#ef4444"/>
-      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
-      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="-10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
     </g>
     <g transform="translate(-20, 50) rotate(80)">
       <circle cx="0" cy="0" r="14" fill="#ef4444"/>
-      <circle cx="-10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
-      <circle cx="10" cy="-12" r="8" fill="#f8fafc" stroke="#94a3b8"/>
+      <circle cx="-10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
+      <circle cx="10" cy="-12" r="8" fill="#0f172a" stroke="#94a3b8"/>
     </g>
 
     <!-- Labels -->

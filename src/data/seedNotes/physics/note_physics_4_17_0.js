@@ -19,9 +19,9 @@ export const note_physics_4_17_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <circle cx="150" cy="100" r="80" fill="none" stroke="#94a3b8" stroke-width="2"/>
-  <path d="M 150 100 L 230 100 A 80 80 0 0 0 206 43 Z" fill="#bae6fd" opacity="0.5" stroke="#3b82f6"/>
+  <path d="M 150 100 L 230 100 A 80 80 0 0 0 206 43 Z" fill="#0c4a6e" opacity="0.5" stroke="#3b82f6"/>
   <line x1="150" y1="100" x2="230" y2="100" stroke="#3b82f6" stroke-width="2"/>
   <line x1="150" y1="100" x2="206" y2="43" stroke="#3b82f6" stroke-width="2"/>
   <text x="180" y="90" font-family="Arial" font-size="16" fill="#1e293b">θ</text>
@@ -38,10 +38,10 @@ export const note_physics_4_17_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="400" height="200" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="400" height="200" fill="#0f172a" rx="8"/>
   <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">Degrees to Radians</text>
-  <rect x="60" y="60" width="120" height="40" fill="#e0e7ff" rx="4"/>
-  <rect x="220" y="60" width="120" height="40" fill="#fef08a" rx="4"/>
+  <rect x="60" y="60" width="120" height="40" fill="#2d2f72" rx="4"/>
+  <rect x="220" y="60" width="120" height="40" fill="#44370a" rx="4"/>
   <text x="120" y="85" font-family="Arial" font-size="14" fill="#1e293b" text-anchor="middle">360°</text>
   <text x="280" y="85" font-family="Arial" font-size="14" fill="#1e293b" text-anchor="middle">2π radians</text>
   <path d="M 190 80 L 210 80" stroke="#334155" stroke-width="2"/>
@@ -55,7 +55,7 @@ export const note_physics_4_17_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="480" height="280" fill="#f8fafc" rx="8"/>
+  <rect x="0" y="0" width="480" height="280" fill="#0f172a" rx="8"/>
   <circle cx="200" cy="145" r="100" fill="none" stroke="#94a3b8" stroke-width="2"/>
   <circle cx="200" cy="145" r="4" fill="#1e293b"/>
   <line x1="200" y1="145" x2="300" y2="145" stroke="#3b82f6" stroke-width="2.5"/>
@@ -70,7 +70,7 @@ export const note_physics_4_17_0 = {
   <text x="345" y="82" font-family="Arial" font-size="12" fill="#475569">360° = 2π rad</text>
   <text x="345" y="100" font-family="Arial" font-size="12" fill="#475569">180° = π rad</text>
   <text x="345" y="118" font-family="Arial" font-size="12" fill="#475569">90°  = π/2 rad</text>
-  <rect x="20" y="200" width="220" height="62" fill="#e0e7ff" rx="6" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="20" y="200" width="220" height="62" fill="#2d2f72" rx="6" stroke="#6366f1" stroke-width="1.5"/>
   <text x="130" y="220" font-family="Arial" font-size="13" fill="#3730a3" font-weight="bold" text-anchor="middle">Angular velocity</text>
   <text x="130" y="240" font-family="Arial" font-size="13" fill="#3730a3" text-anchor="middle">ω = Δθ/Δt (rad s⁻¹)</text>
   <text x="130" y="256" font-family="Arial" font-size="13" fill="#3730a3" text-anchor="middle">v = ωr (tangential speed)</text>

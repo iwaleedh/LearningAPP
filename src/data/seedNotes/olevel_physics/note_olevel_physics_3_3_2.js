@@ -63,7 +63,7 @@ export const note_olevel_physics_3_3_2 = {
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <!-- Grid helper: 4 panels in 2x2 -->
   <!-- Panel 1: High pitch, loud (top-left) -->
-  <rect x="10" y="10" width="220" height="130" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
+  <rect x="10" y="10" width="220" height="130" fill="#0f172a" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
   <text x="15" y="25" font-weight="bold" fill="#6366f1">High pitch, Loud</text>
   <line x1="10" y1="75" x2="230" y2="75" stroke="#e2e8f0" stroke-width="1"/>
   <!-- High pitch (close together) + large amplitude (tall) -->
@@ -71,7 +71,7 @@ export const note_olevel_physics_3_3_2 = {
   <text x="120" y="148" text-anchor="middle" fill="#64748b" font-size="10">→ High f, Large A</text>
 
   <!-- Panel 2: Low pitch, loud (top-right) -->
-  <rect x="270" y="10" width="220" height="130" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
+  <rect x="270" y="10" width="220" height="130" fill="#0f172a" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
   <text x="275" y="25" font-weight="bold" fill="#10b981">Low pitch, Loud</text>
   <line x1="270" y1="75" x2="490" y2="75" stroke="#e2e8f0" stroke-width="1"/>
   <!-- Low pitch (far apart) + large amplitude (tall) -->
@@ -79,7 +79,7 @@ export const note_olevel_physics_3_3_2 = {
   <text x="380" y="148" text-anchor="middle" fill="#64748b" font-size="10">→ Low f, Large A</text>
 
   <!-- Panel 3: High pitch, quiet (bottom-left) -->
-  <rect x="10" y="180" width="220" height="130" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
+  <rect x="10" y="180" width="220" height="130" fill="#0f172a" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
   <text x="15" y="195" font-weight="bold" fill="#f59e0b">High pitch, Quiet</text>
   <line x1="10" y1="245" x2="230" y2="245" stroke="#e2e8f0" stroke-width="1"/>
   <!-- High pitch (close together) + small amplitude (short) -->
@@ -87,7 +87,7 @@ export const note_olevel_physics_3_3_2 = {
   <text x="120" y="318" text-anchor="middle" fill="#64748b" font-size="10">→ High f, Small A</text>
 
   <!-- Panel 4: Low pitch, quiet (bottom-right) -->
-  <rect x="270" y="180" width="220" height="130" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
+  <rect x="270" y="180" width="220" height="130" fill="#0f172a" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
   <text x="275" y="195" font-weight="bold" fill="#ef4444">Low pitch, Quiet</text>
   <line x1="270" y1="245" x2="490" y2="245" stroke="#e2e8f0" stroke-width="1"/>
   <!-- Low pitch (far apart) + small amplitude (short) -->

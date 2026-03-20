@@ -89,7 +89,7 @@ export const note_chemistry_4_15_4 = {
     <marker id="sa-bh4" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1e40af"/></marker>
   </defs>
   <text x="325" y="17" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Reduction of Ethanal by NaBH&#8324; &#8212; Simplified 2-Step Mechanism (A-level)</text>
-  <rect x="8" y="26" width="634" height="130" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <rect x="8" y="26" width="634" height="130" rx="5" fill="#1c3a64" stroke="#bfdbfe" stroke-width="1.2"/>
   <text x="18" y="43" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 1: H&#8315; (hydride ion, from BH&#8324;&#8315;) attacks the &#948;&#8314; carbon of the C=O bond</text>
   <circle cx="25" cy="91" r="2.5" fill="#111827"/>
   <circle cx="25" cy="98" r="2.5" fill="#111827"/>
@@ -109,9 +109,9 @@ export const note_chemistry_4_15_4 = {
   <rect x="306" y="72" width="176" height="36" rx="4" fill="none" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="1.2"/>
   <text x="484" y="71" text-anchor="start" fill="#ef4444" font-weight="bold" font-size="12">[&#8722;]</text>
   <text x="394" y="122" text-anchor="middle" fill="#6b7280" font-size="11">negatively charged tetrahedral intermediate</text>
-  <rect x="8" y="165" width="634" height="148" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+  <rect x="8" y="165" width="634" height="148" rx="5" fill="#0a2e1a" stroke="#bbf7d0" stroke-width="1.2"/>
   <text x="18" y="182" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 2a (add acid): O&#8315; picks up H&#8314; from H&#8314;(aq) &#8212; OR &#8212; Step 2b (add water): O&#8315; takes H&#8314; from H&#8322;O</text>
-  <rect x="14" y="192" width="300" height="112" rx="4" fill="#fff" stroke="#bbf7d0" stroke-width="1"/>
+  <rect x="14" y="192" width="300" height="112" rx="4" fill="#1e293b" stroke="#bbf7d0" stroke-width="1"/>
   <text x="164" y="209" text-anchor="middle" fill="#065f46" font-weight="600" font-size="12">Step 2a &#8212; acid workup</text>
   <text x="100" y="244" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
   <text x="190" y="244" text-anchor="middle" fill="#374151" font-size="16">+</text>
@@ -119,7 +119,7 @@ export const note_chemistry_4_15_4 = {
   <path d="M 246 240 L 286 260" fill="none" stroke="#1e40af" stroke-width="2" marker-end="url(#sa-bh4)"/>
   <text x="164" y="273" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;CH&#8322;OH</text>
   <text x="164" y="291" text-anchor="middle" fill="#6b7280" font-size="11">ethanol (primary alcohol)</text>
-  <rect x="330" y="192" width="306" height="112" rx="4" fill="#fff" stroke="#bbf7d0" stroke-width="1"/>
+  <rect x="330" y="192" width="306" height="112" rx="4" fill="#1e293b" stroke="#bbf7d0" stroke-width="1"/>
   <text x="483" y="209" text-anchor="middle" fill="#065f46" font-weight="600" font-size="12">Step 2b &#8212; water workup</text>
   <text x="405" y="244" text-anchor="middle" fill="#111827" font-size="14">CH&#8323;&#8211;CH(H)&#8211;O&#8315;</text>
   <text x="497" y="244" text-anchor="middle" fill="#374151" font-size="16">+</text>
@@ -188,7 +188,7 @@ export const note_chemistry_4_15_4 = {
     <marker id="sa-hcn" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1e40af"/></marker>
   </defs>
   <text x="325" y="17" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="14">Nucleophilic Addition of HCN to Propanone &#8212; 2-Step Mechanism</text>
-  <rect x="8" y="25" width="634" height="130" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+  <rect x="8" y="25" width="634" height="130" rx="5" fill="#1c3a64" stroke="#bfdbfe" stroke-width="1.2"/>
   <text x="18" y="42" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 1: CN&#8315; (nucleophile) attacks the &#948;&#8314; carbon of the C=O bond</text>
   <circle cx="24" cy="87" r="2.5" fill="#111827"/>
   <circle cx="24" cy="94" r="2.5" fill="#111827"/>
@@ -207,7 +207,7 @@ export const note_chemistry_4_15_4 = {
   <rect x="304" y="71" width="174" height="36" rx="4" fill="none" stroke="#ef4444" stroke-dasharray="4,3" stroke-width="1.2"/>
   <text x="480" y="70" text-anchor="start" fill="#ef4444" font-weight="bold" font-size="12">[&#8722;]</text>
   <text x="390" y="121" text-anchor="middle" fill="#6b7280" font-size="11">negatively charged tetrahedral intermediate</text>
-  <rect x="8" y="165" width="634" height="140" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+  <rect x="8" y="165" width="634" height="140" rx="5" fill="#0a2e1a" stroke="#bbf7d0" stroke-width="1.2"/>
   <text x="18" y="182" text-anchor="start" fill="#1e40af" font-weight="bold" font-size="12">Step 2: O&#8315; picks up H&#8314; from HCN (H&#8322;O or H&#8323;O&#8314; also work &#8212; one equation is enough)</text>
   <text x="100" y="228" text-anchor="middle" fill="#111827" font-size="15">(CH&#8323;)&#8322;C(CN)&#8211;O&#8315;</text>
   <text x="196" y="228" text-anchor="middle" fill="#374151" font-size="18">+</text>

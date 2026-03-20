@@ -202,11 +202,11 @@ export const note_chemistry_1_4_12 = {
       svg: `<svg viewBox="0 0 440 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <text x="220" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Free-Radical Chain Mechanism</text>
   <!-- Initiation box -->
-  <rect x="10" y="28" width="420" height="38" rx="5" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <rect x="10" y="28" width="420" height="38" rx="5" fill="#44370a" stroke="#eab308" stroke-width="1.5"/>
   <text x="20" y="45" font-weight="bold" fill="#92400e" font-size="11">INITIATION</text>
   <text x="20" y="60" fill="#374151">Cl₂  →(UV)→  Cl•  +  Cl•</text>
   <!-- Propagation box -->
-  <rect x="10" y="74" width="420" height="60" rx="5" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="10" y="74" width="420" height="60" rx="5" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="20" y="91" font-weight="bold" fill="#166534" font-size="11">PROPAGATION (repeats ~10,000×)</text>
   <text x="20" y="107" fill="#374151">Step 1:  Cl•  +  CH₄  →  HCl  +  CH₃•</text>
   <text x="20" y="125" fill="#374151">Step 2:  CH₃•  +  Cl₂  →  CH₃Cl  +  Cl•</text>
@@ -218,7 +218,7 @@ export const note_chemistry_1_4_12 = {
     </marker>
   </defs>
   <!-- Termination box -->
-  <rect x="10" y="143" width="420" height="72" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="10" y="143" width="420" height="72" rx="5" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="20" y="160" font-weight="bold" fill="#991b1b" font-size="11">TERMINATION (any two radicals combine)</text>
   <text x="20" y="176" fill="#374151">Cl•  +  Cl•  →  Cl₂</text>
   <text x="20" y="193" fill="#374151">CH₃•  +  CH₃•  →  C₂H₆  (by-product — evidence for CH₃•)</text>
@@ -289,7 +289,17 @@ export const note_chemistry_1_4_12 = {
     data: {
       text: 'Free-radical substitution of alkanes with halogens (UV light) proceeds via: Initiation — homolytic fission of X₂ → 2X•. Propagation — X• + RH → HX + R•; then R• + X₂ → RX + X• (cycle repeats ~10,000×). Termination — any two radicals combine. Fish-hook arrows throughout. Further substitution gives mixed products; excess alkane favours monosubstitution. Bromination is slower but more selective than chlorination.'
     }
-  }],
+  },
+    {
+      id: 'svg-alkane-reactions',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="system-ui,sans-serif"><defs><marker id="ak-arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#2d2d72"/></marker></defs><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">ALKANE REACTIONS MAP</text><!-- Central alkane box --><rect x="270" y="154" width="160" height="68" rx="12" fill="#6366f1" stroke="#a5b4fc" stroke-width="2"/><text x="350" y="180" text-anchor="middle" font-size="14" font-weight="800" fill="#1e293b">ALKANE</text><text x="350" y="198" text-anchor="middle" font-size="10" fill="#2d2d72">CₙH₂ₙ₊₂</text><text x="350" y="212" text-anchor="middle" font-size="9" fill="#2d2d72">single C-H and C-C bonds</text><!-- TOP: Combustion --><line x1="350" y1="154" x2="350" y2="96" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ak-arr)"/><rect x="214" y="34" width="272" height="62" rx="10" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5"/><text x="350" y="54" text-anchor="middle" font-size="10" fill="#ef4444" font-weight="700">COMBUSTION</text><text x="350" y="70" text-anchor="middle" font-size="10" font-weight="700" fill="#1e293b">Complete: CₙH₂ₙ₊₂ + O₂ → CO₂ + H₂O</text><text x="350" y="86" text-anchor="middle" font-size="9" fill="#7f1d1d">Incomplete (limited O₂): produces CO and/or C (soot)</text><!-- LEFT: Free radical substitution --><line x1="270" y1="188" x2="190" y2="188" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ak-arr)"/><rect x="10" y="130" width="180" height="116" rx="10" fill="rgba(251,146,60,0.18)" stroke="#fb923c" stroke-width="1.5"/><text x="100" y="150" text-anchor="middle" font-size="10" fill="#fb923c" font-weight="700">FREE RADICAL SUBSTn.</text><text x="100" y="166" text-anchor="middle" font-size="9" fill="#1e293b">RH + Cl₂ → RCl + HCl</text><text x="100" y="182" text-anchor="middle" font-size="8.5" fill="#532407">Initiation: UV → Cl₂ → 2Cl•</text><text x="100" y="196" text-anchor="middle" font-size="8.5" fill="#532407">Propagation: Cl• + RH → R• + HCl</text><text x="100" y="210" text-anchor="middle" font-size="8.5" fill="#532407">then R• + Cl₂ → RCl + Cl•</text><text x="100" y="226" text-anchor="middle" font-size="8" fill="#78350f">Mixed products; monosub. if excess RH</text><!-- BOTTOM-LEFT: Catalytic cracking --><line x1="295" y1="222" x2="225" y2="316" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ak-arr)"/><rect x="10" y="316" width="235" height="100" rx="10" fill="rgba(52,211,153,0.18)" stroke="#34d399" stroke-width="1.5"/><text x="117" y="336" text-anchor="middle" font-size="10" fill="#34d399" font-weight="700">CATALYTIC CRACKING</text><text x="117" y="352" text-anchor="middle" font-size="9" fill="#1e293b">Long alkane → shorter alkene + alkane</text><text x="117" y="368" text-anchor="middle" font-size="8.5" fill="#065f46">Conditions: ~500°C, zeolite catalyst</text><text x="117" y="384" text-anchor="middle" font-size="8.5" fill="#065f46">Product: cycloalkanes, branched alkanes</text><text x="117" y="400" text-anchor="middle" font-size="8.5" fill="#065f46">Used for: petrol, feedstock for polymers</text><text x="117" y="416" text-anchor="middle" font-size="8" fill="#065f46">Lower activation energy than thermal cracking</text><!-- BOTTOM-RIGHT: Steam/thermal cracking --><line x1="405" y1="222" x2="470" y2="316" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ak-arr)"/><rect x="454" y="316" width="236" height="100" rx="10" fill="rgba(232,121,249,0.15)" stroke="#e879f9" stroke-width="1.5"/><text x="572" y="336" text-anchor="middle" font-size="10" fill="#e879f9" font-weight="700">STEAM CRACKING</text><text x="572" y="352" text-anchor="middle" font-size="9" fill="#1e293b">Long alkane → smaller alkenes + H₂</text><text x="572" y="368" text-anchor="middle" font-size="8.5" fill="#4a1040">Conditions: 800-900°C, steam (no catalyst)</text><text x="572" y="384" text-anchor="middle" font-size="8.5" fill="#4a1040">Product: ethene, propene (monomers)</text><text x="572" y="400" text-anchor="middle" font-size="8.5" fill="#4a1040">Used for: making plastics and polymers</text><text x="572" y="416" text-anchor="middle" font-size="8" fill="#2d1b69">Higher temp needed: homolytic fission</text><!-- RIGHT: Other reactions side note --><rect x="510" y="134" width="180" height="80" rx="10" fill="rgba(96,165,250,0.14)" stroke="#60a5fa" stroke-width="1.5"/><text x="600" y="154" text-anchor="middle" font-size="10" fill="#60a5fa" font-weight="700">WHY NOT REACTIVE?</text><text x="600" y="170" text-anchor="middle" font-size="9" fill="#1e3a8a">C-H and C-C bonds are strong</text><text x="600" y="186" text-anchor="middle" font-size="9" fill="#1e3a8a">and non-polar</text><text x="600" y="202" text-anchor="middle" font-size="9" fill="#1e3a8a">No electrophilic attack possible</text><line x1="430" y1="188" x2="510" y2="188" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="4,3"/></svg>',
+        caption: 'Alkane Reactions Map — alkanes have 4 main reaction types. Combustion and free radical substitution are the main chemical reactions; cracking (catalytic and thermal) are industrial processes to convert long-chain hydrocarbons into useful shorter-chain products.'
+      },
+      terms: []
+    }
+  ],
   recall: {
     enabled: true,
     cues: [{

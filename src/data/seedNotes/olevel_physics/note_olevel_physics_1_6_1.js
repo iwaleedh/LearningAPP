@@ -56,7 +56,7 @@ export const note_olevel_physics_1_6_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="200" fill="#f0fdf4" rx="10"/>
+  <rect width="440" height="200" fill="#0a2e1a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Impulse = Area under F–t Graph</text>
   <!-- Axes -->
   <line x1="55" y1="155" x2="400" y2="155" stroke="#374151" stroke-width="2"/>

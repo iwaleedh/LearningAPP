@@ -62,9 +62,9 @@ export const note_olevel_chemistry_8_8_1 = {
   <rect width="100%" height="100%" fill="var(--color-surface)" />
 
   <!-- Periodic Table outline -->
-  <path d="M 120 60 L 160 60 L 160 90 L 400 90 L 400 60 L 460 60 L 460 220 L 120 220 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-  <rect x="120" y="40" width="20" height="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
-  <rect x="440" y="40" width="20" height="20" fill="#cbd5e1" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 120 60 L 160 60 L 160 90 L 400 90 L 400 60 L 460 60 L 460 220 L 120 220 Z" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="120" y="40" width="20" height="20" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="440" y="40" width="20" height="20" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
 
   <!-- Across a Period -->
   <path d="M 180 30 L 380 30" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-head-blue)" />
@@ -75,10 +75,10 @@ export const note_olevel_chemistry_8_8_1 = {
   <text x="280" y="150" font-family="var(--font-sans)" font-size="12" fill="#1d4ed8" text-anchor="middle">Electronegativity ↑</text>
 
   <!-- Atoms across -->
-  <circle cx="200" cy="70" r="12" fill="#93c5fd"/>
-  <circle cx="250" cy="70" r="10" fill="#93c5fd"/>
-  <circle cx="300" cy="70" r="8" fill="#93c5fd"/>
-  <circle cx="350" cy="70" r="6" fill="#93c5fd"/>
+  <circle cx="200" cy="70" r="12" fill="#1250a0"/>
+  <circle cx="250" cy="70" r="10" fill="#1250a0"/>
+  <circle cx="300" cy="70" r="8" fill="#1250a0"/>
+  <circle cx="350" cy="70" r="6" fill="#1250a0"/>
 
   <!-- Down a Group -->
   <path d="M 80 80 L 80 180" fill="none" stroke="#ea580c" stroke-width="3" marker-end="url(#arrow-head-orange)" />

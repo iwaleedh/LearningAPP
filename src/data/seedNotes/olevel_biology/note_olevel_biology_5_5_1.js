@@ -68,7 +68,7 @@ export const note_olevel_biology_5_5_1 = {
       data: {
         caption: 'Rate graphs showing the effect of temperature, pH, and substrate concentration on enzyme activity',
         svg: `<svg viewBox="0 0 540 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="10">
-  <rect width="540" height="300" fill="#f8fafc" rx="12"/>
+  <rect width="540" height="300" fill="#0f172a" rx="12"/>
   <text x="270" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Factors Affecting Enzyme Activity</text>
 
   <!-- === Graph 1: Temperature === -->

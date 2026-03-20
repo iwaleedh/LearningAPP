@@ -61,7 +61,7 @@ export const note_biology_1_2_11 = {
         "id": "svg-diag-1-2-11-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='70' cy='50' r='20' fill='#fbd38d' stroke='#dd6b20'/><text x='45' y='90' font-size='10'>Phosphate</text><polygon points='110,40 140,40 150,70 125,90 100,70' fill='#ebf8ff' stroke='#3182ce'/><text x='105' y='110' font-size='10'>Pentose Sugar</text><rect x='170' y='30' width='60' height='30' fill='#fed7d7' stroke='#e53e3e'/><text x='175' y='80' font-size='10'>Nitrogenous Base</text><line x1='90' y1='50' x2='105' y2='50' stroke='#333' stroke-width='2'/><line x1='145' y1='45' x2='170' y2='45' stroke='#333' stroke-width='2'/></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='70' cy='50' r='20' fill='#532407' stroke='#dd6b20'/><text x='45' y='90' font-size='10'>Phosphate</text><polygon points='110,40 140,40 150,70 125,90 100,70' fill='#1c3a64' stroke='#3182ce'/><text x='105' y='110' font-size='10'>Pentose Sugar</text><rect x='170' y='30' width='60' height='30' fill='#7f1d1d' stroke='#e53e3e'/><text x='175' y='80' font-size='10'>Nitrogenous Base</text><line x1='90' y1='50' x2='105' y2='50' stroke='#333' stroke-width='2'/><line x1='145' y1='45' x2='170' y2='45' stroke='#333' stroke-width='2'/></svg>",
             "caption": "Nucleotide Structure"
         }
     },

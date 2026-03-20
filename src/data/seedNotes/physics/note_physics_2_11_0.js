@@ -22,7 +22,7 @@ export const note_physics_2_11_0 = {
   <path d="M50 100 Q 150 50 250 100 T 400 100" fill="none" stroke="#4ade80" stroke-width="4"/>
   <path d="M50 120 Q 150 70 250 120 T 400 120" fill="none" stroke="#60a5fa" stroke-width="4"/>
   <path d="M50 140 Q 150 90 250 140 T 400 140" fill="none" stroke="#38bdf8" stroke-width="4"/>
-  <text x="200" y="40" fill="#f8fafc" font-size="20" text-anchor="middle" font-weight="bold">Streamline Flow</text>
+  <text x="200" y="40" fill="#0f172a" font-size="20" text-anchor="middle" font-weight="bold">Streamline Flow</text>
 </svg>`,
         caption: "Physics Diagram"
       }
@@ -34,22 +34,22 @@ export const note_physics_2_11_0 = {
         svg: `<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" style="background:#1e1e2f;border-radius:8px;font-family:sans-serif;">
   <line x1="20" y1="110" x2="420" y2="110" stroke="#64748b" stroke-width="1" stroke-dasharray="5,4"/>
   <path d="M20 110 Q65 -10 110 110 Q155 230 200 110 Q245 -10 290 110 Q335 230 380 110" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
-  <text x="65" y="36" fill="#e2e8f0" font-size="12" text-anchor="middle">crest</text>
-  <text x="245" y="36" fill="#e2e8f0" font-size="12" text-anchor="middle">crest</text>
-  <text x="155" y="195" fill="#e2e8f0" font-size="12" text-anchor="middle">trough</text>
+  <text x="65" y="36" fill="#1e293b" font-size="12" text-anchor="middle">crest</text>
+  <text x="245" y="36" fill="#1e293b" font-size="12" text-anchor="middle">crest</text>
+  <text x="155" y="195" fill="#1e293b" font-size="12" text-anchor="middle">trough</text>
   <line x1="70" y1="28" x2="240" y2="28" stroke="#a78bfa" stroke-width="1.5"/>
-  <polygon points="65,28 74,24 74,32" fill="#a78bfa"/>
-  <polygon points="245,28 236,24 236,32" fill="#a78bfa"/>
-  <text x="155" y="20" fill="#a78bfa" font-size="13" text-anchor="middle" font-style="italic">λ</text>
+  <polygon points="65,28 74,24 74,32" fill="#2d1b69"/>
+  <polygon points="245,28 236,24 236,32" fill="#2d1b69"/>
+  <text x="155" y="20" fill="#2d1b69" font-size="13" text-anchor="middle" font-style="italic">λ</text>
   <line x1="380" y1="50" x2="398" y2="50" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,2"/>
   <line x1="398" y1="50" x2="398" y2="110" stroke="#fbbf24" stroke-width="1.5"/>
-  <polygon points="398,47 394,56 402,56" fill="#fbbf24"/>
-  <polygon points="398,113 394,104 402,104" fill="#fbbf24"/>
-  <text x="410" y="83" fill="#fbbf24" font-size="13" font-style="italic" font-weight="bold">A</text>
+  <polygon points="398,47 394,56 402,56" fill="#78350f"/>
+  <polygon points="398,113 394,104 402,104" fill="#78350f"/>
+  <text x="410" y="83" fill="#78350f" font-size="13" font-style="italic" font-weight="bold">A</text>
   <rect x="430" y="65" width="82" height="75" rx="5" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5"/>
-  <text x="471" y="96" fill="#f8fafc" font-size="14" text-anchor="middle" font-weight="bold">v = fλ</text>
+  <text x="471" y="96" fill="#0f172a" font-size="14" text-anchor="middle" font-weight="bold">v = fλ</text>
   <line x1="440" y1="103" x2="502" y2="103" stroke="#334155" stroke-width="0.8"/>
-  <text x="471" y="123" fill="#f8fafc" font-size="14" text-anchor="middle">T = 1/f</text>
+  <text x="471" y="123" fill="#0f172a" font-size="14" text-anchor="middle">T = 1/f</text>
 </svg>`,
         caption: 'Transverse wave: displacement perpendicular to direction of travel'
       }

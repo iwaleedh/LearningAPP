@@ -39,7 +39,7 @@ export const note_olevel_maths_core_6_2_0 = {
         caption: 'Labelled right-angled triangle showing θ, opposite, adjacent and hypotenuse',
         svg: `<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <!-- Triangle -->
-  <polygon points="30,180 30,40 240,180" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="30,180 30,40 240,180" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
   <!-- Right angle marker -->
   <polyline points="30,160 50,160 50,180" fill="none" stroke="#6366f1" stroke-width="1.5"/>
   <!-- Angle theta arc -->
@@ -186,7 +186,7 @@ export const note_olevel_maths_core_6_2_0 = {
   <!-- Observer -->
   <circle cx="40" cy="118" r="4" fill="#6366f1"/>
   <!-- Building / tall object -->
-  <rect x="250" y="30" width="20" height="90" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="250" y="30" width="20" height="90" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
   <!-- Line of sight (elevation) -->
   <line x1="40" y1="118" x2="250" y2="32" stroke="#e11d48" stroke-width="1.5"/>
   <!-- Elevation arc -->

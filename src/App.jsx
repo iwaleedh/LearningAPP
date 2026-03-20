@@ -20,6 +20,8 @@ const NotePage = lazy(() => import('./pages/NotePage'));
 const AnnotatePage = lazy(() => import('./pages/AnnotatePage'));
 const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
 const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
+const PresentationBrowsePage = lazy(() => import('./pages/PresentationBrowsePage'));
+const PresentationPage = lazy(() => import('./pages/PresentationPage'));
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -56,6 +58,8 @@ function AppContent() {
               <Route path="/chapters/:chapterId" element={<ChapterPage />} />
               <Route path="/notes" element={<ChapterPage />} />
               <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<NotePage />} />
+              <Route path="/presentation" element={<PresentationBrowsePage />} />
+              <Route path="/presentation/:subject/:unitId/:topicId/:subtopicIndex" element={<PresentationPage />} />
               <Route path="/exercises" element={<ExercisePage />} />
               <Route path="/past-papers" element={<PastPapersPage />} />
               <Route path="/flashcards" element={<FlashcardsPage />} />

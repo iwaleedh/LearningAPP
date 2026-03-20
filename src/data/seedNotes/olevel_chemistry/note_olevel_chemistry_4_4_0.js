@@ -91,7 +91,7 @@ export const note_olevel_chemistry_4_4_0 = {
 
   <!-- Battery -->
   <rect x="200" y="40" width="100" height="40" rx="4" fill="url(#battery)"/>
-  <text x="250" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">DC Source</text>
+  <text x="250" y="65" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">DC Source</text>
   
   <text x="215" y="32" font-family="var(--font-sans)" font-size="18" font-weight="bold" fill="#ef4444" text-anchor="middle">+</text>
   <text x="285" y="32" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="#38bdf8" text-anchor="middle">-</text>
@@ -111,17 +111,17 @@ export const note_olevel_chemistry_4_4_0 = {
   <!-- Anode (+) -->
   <rect x="100" y="100" width="40" height="180" rx="4" fill="#475569"/>
   <text x="120" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">Anode (+)</text>
-  <text x="120" y="270" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="#fca5a5" text-anchor="middle">+</text>
+  <text x="120" y="270" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="#7f1d1d" text-anchor="middle">+</text>
 
   <!-- Cathode (-) -->
   <rect x="360" y="100" width="40" height="180" rx="4" fill="#475569"/>
   <text x="380" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">Cathode (-)</text>
-  <text x="380" y="270" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="#bae6fd" text-anchor="middle">-</text>
+  <text x="380" y="270" font-family="var(--font-sans)" font-size="24" font-weight="bold" fill="#0c4a6e" text-anchor="middle">-</text>
 
   <!-- Ions migrating -->
   <!-- Anion moving left to Anode -->
   <circle cx="230" cy="200" r="16" fill="url(#anion)"/>
-  <text x="230" y="205" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">-</text>
+  <text x="230" y="205" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">-</text>
   <path d="M 205 200 L 155 200" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrow-red)" stroke-dasharray="4,4">
     <animate attributeName="stroke-dashoffset" from="20" to="0" dur="1s" repeatCount="indefinite"/>
   </path>
@@ -129,7 +129,7 @@ export const note_olevel_chemistry_4_4_0 = {
 
   <!-- Cation moving right to Cathode -->
   <circle cx="270" cy="150" r="16" fill="url(#cation)"/>
-  <text x="270" y="155" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">+</text>
+  <text x="270" y="155" font-family="var(--font-sans)" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
   <path d="M 295 150 L 345 150" stroke="#0284c7" stroke-width="2" fill="none" marker-end="url(#arrow-blue)" stroke-dasharray="4,4">
     <animate attributeName="stroke-dashoffset" from="20" to="0" dur="1s" repeatCount="indefinite"/>
   </path>
@@ -137,12 +137,12 @@ export const note_olevel_chemistry_4_4_0 = {
 
   <!-- Oil Rig notes near electrodes -->
   <!-- Left Side: Anode -->
-  <rect x="25" y="140" width="60" height="40" rx="4" fill="#fee2e2" stroke="#f87171" stroke-width="1"/>
+  <rect x="25" y="140" width="60" height="40" rx="4" fill="#3d1212" stroke="#f87171" stroke-width="1"/>
   <text x="55" y="158" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Loses e⁻</text>
   <text x="55" y="172" font-family="var(--font-sans)" font-size="10" fill="#b91c1c" text-anchor="middle">(Oxidation)</text>
 
   <!-- Right Side: Cathode -->
-  <rect x="415" y="140" width="60" height="40" rx="4" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1"/>
+  <rect x="415" y="140" width="60" height="40" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1"/>
   <text x="445" y="158" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Gains e⁻</text>
   <text x="445" y="172" font-family="var(--font-sans)" font-size="10" fill="#0369a1" text-anchor="middle">(Reduction)</text>
 

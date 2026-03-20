@@ -39,7 +39,7 @@ export const note_biology_1_2_2 = {
         "id": "svg-diag-1-2-2-0",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='40' width='100' height='60' rx='30' fill='#fff5f5' stroke='#fc8181' stroke-width='4'/><text x='40' y='120' font-size='10'>Healthy (Clear)</text><rect x='180' y='40' width='100' height='60' rx='30' fill='#fff5f5' stroke='#fc8181' stroke-width='4'/><ellipse cx='230' cy='70' rx='40' ry='20' fill='#f6e05e' opacity='0.8'/><text x='195' y='120' font-size='10'>Cystic Fibrosis</text><text x='190' y='135' font-size='10' fill='#b7791f'>(Thick Mucus Blockage)</text></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='40' width='100' height='60' rx='30' fill='#3d1212' stroke='#fc8181' stroke-width='4'/><text x='40' y='120' font-size='10'>Healthy (Clear)</text><rect x='180' y='40' width='100' height='60' rx='30' fill='#3d1212' stroke='#fc8181' stroke-width='4'/><ellipse cx='230' cy='70' rx='40' ry='20' fill='#44370a' opacity='0.8'/><text x='195' y='120' font-size='10'>Cystic Fibrosis</text><text x='190' y='135' font-size='10' fill='#b7791f'>(Thick Mucus Blockage)</text></svg>",
             "caption": "Healthy Airway vs CF Airway"
         }
     },
@@ -47,7 +47,7 @@ export const note_biology_1_2_2 = {
         "id": "svg-diag-1-2-2-1",
         "type": "svg",
         "data": {
-            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='50' width='200' height='50' fill='#fefcbf' stroke='#b7791f'/><circle cx='100' cy='75' r='5' fill='#38a169'/><circle cx='130' cy='65' r='5' fill='#38a169'/><circle cx='180' cy='85' r='5' fill='#38a169'/><text x='60' y='40' font-size='12' font-weight='bold'>Thick Sticky Mucus</text><text x='60' y='20' font-size='10'>Cilia unable to beat away bacteria</text></svg>",
+            "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='50' width='200' height='50' fill='#44370a' stroke='#b7791f'/><circle cx='100' cy='75' r='5' fill='#38a169'/><circle cx='130' cy='65' r='5' fill='#38a169'/><circle cx='180' cy='85' r='5' fill='#38a169'/><text x='60' y='40' font-size='12' font-weight='bold'>Thick Sticky Mucus</text><text x='60' y='20' font-size='10'>Cilia unable to beat away bacteria</text></svg>",
             "caption": "Trapped Pathogens in CF"
         }
     }

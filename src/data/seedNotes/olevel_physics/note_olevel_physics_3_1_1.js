@@ -75,16 +75,16 @@ export const note_olevel_physics_3_1_1 = {
   <text x="10" y="175" fill="#64748b">oscillation ↔  energy →</text>
   <line x1="40" y1="220" x2="455" y2="220" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#ahL)"/>
   <text x="460" y="223" fill="#f59e0b" font-size="10">Energy</text>
-  <rect x="50" y="200" width="22" height="35" rx="3" fill="#f59e0b" opacity="0.7"/>
-  <rect x="78" y="200" width="40" height="35" rx="3" fill="#fde68a" opacity="0.6"/>
-  <rect x="124" y="200" width="22" height="35" rx="3" fill="#f59e0b" opacity="0.7"/>
-  <rect x="152" y="200" width="50" height="35" rx="3" fill="#fde68a" opacity="0.6"/>
-  <rect x="208" y="200" width="22" height="35" rx="3" fill="#f59e0b" opacity="0.7"/>
-  <rect x="236" y="200" width="45" height="35" rx="3" fill="#fde68a" opacity="0.6"/>
-  <rect x="287" y="200" width="22" height="35" rx="3" fill="#f59e0b" opacity="0.7"/>
-  <rect x="315" y="200" width="45" height="35" rx="3" fill="#fde68a" opacity="0.6"/>
-  <rect x="366" y="200" width="22" height="35" rx="3" fill="#f59e0b" opacity="0.7"/>
-  <rect x="394" y="200" width="40" height="35" rx="3" fill="#fde68a" opacity="0.6"/>
+  <rect x="50" y="200" width="22" height="35" rx="3" fill="#78350f" opacity="0.7"/>
+  <rect x="78" y="200" width="40" height="35" rx="3" fill="#44370a" opacity="0.6"/>
+  <rect x="124" y="200" width="22" height="35" rx="3" fill="#78350f" opacity="0.7"/>
+  <rect x="152" y="200" width="50" height="35" rx="3" fill="#44370a" opacity="0.6"/>
+  <rect x="208" y="200" width="22" height="35" rx="3" fill="#78350f" opacity="0.7"/>
+  <rect x="236" y="200" width="45" height="35" rx="3" fill="#44370a" opacity="0.6"/>
+  <rect x="287" y="200" width="22" height="35" rx="3" fill="#78350f" opacity="0.7"/>
+  <rect x="315" y="200" width="45" height="35" rx="3" fill="#44370a" opacity="0.6"/>
+  <rect x="366" y="200" width="22" height="35" rx="3" fill="#78350f" opacity="0.7"/>
+  <rect x="394" y="200" width="40" height="35" rx="3" fill="#44370a" opacity="0.6"/>
   <text x="61" y="248" text-anchor="middle" fill="#b45309" font-size="9">C</text>
   <text x="98" y="248" text-anchor="middle" fill="#92400e" font-size="9">R</text>
   <text x="135" y="248" text-anchor="middle" fill="#b45309" font-size="9">C</text>

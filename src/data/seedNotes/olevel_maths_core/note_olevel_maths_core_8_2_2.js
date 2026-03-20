@@ -27,13 +27,13 @@ export const note_olevel_maths_core_8_2_2 = {
         caption: 'Venn diagram: 40 students, Set A = plays football, Set B = plays tennis (numbers in each region)',
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
   <!-- Universal set rectangle -->
-  <rect x="10" y="10" width="380" height="200" rx="8" fill="#f0f4ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="10" y="10" width="380" height="200" rx="8" fill="#1c3a64" stroke="#6366f1" stroke-width="2"/>
   <text x="380" y="28" text-anchor="end" fill="#6366f1" font-size="13" font-weight="bold">ξ = 40</text>
 
   <!-- Circle A (football) - left -->
-  <circle cx="155" cy="110" r="75" fill="#fee2e2" fill-opacity="0.7" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="155" cy="110" r="75" fill="#3d1212" fill-opacity="0.7" stroke="#ef4444" stroke-width="2"/>
   <!-- Circle B (tennis) - right -->
-  <circle cx="245" cy="110" r="75" fill="#dbeafe" fill-opacity="0.7" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="245" cy="110" r="75" fill="#1e3a8a" fill-opacity="0.7" stroke="#3b82f6" stroke-width="2"/>
 
   <!-- Labels -->
   <text x="105" y="90"  text-anchor="middle" fill="#ef4444" font-weight="bold" font-size="14">A</text>

@@ -80,13 +80,13 @@ export const note_olevel_chemistry_12_12_3 = {
     <!-- Beaker -->
     <path d="M 20 20 L 20 180 Q 20 190, 30 190 L 130 190 Q 140 190, 140 180 L 140 20" fill="none" stroke="#64748b" stroke-width="3"/>
     <!-- Solvent -->
-    <path d="M 22 160 L 138 160 L 138 180 Q 138 188, 130 188 L 30 188 Q 22 188, 22 180 Z" fill="#bae6fd" opacity="0.5"/>
+    <path d="M 22 160 L 138 160 L 138 180 Q 138 188, 130 188 L 30 188 Q 22 188, 22 180 Z" fill="#0c4a6e" opacity="0.5"/>
     <text x="150" y="175" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#0284c7">Solvent</text>
 
     <!-- Paper -->
-    <rect x="45" y="0" width="70" height="170" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="45" y="0" width="70" height="170" fill="#0f172a" stroke="#cbd5e1" stroke-width="2"/>
     <!-- Stick/Clip at top -->
-    <rect x="30" y="0" width="100" height="10" fill="#d1d5db" rx="2"/>
+    <rect x="30" y="0" width="100" height="10" fill="#1e293b" rx="2"/>
 
     <!-- Baseline -->
     <path d="M 45 145 L 115 145" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="2,2"/>
@@ -108,7 +108,7 @@ export const note_olevel_chemistry_12_12_3 = {
   <!-- Result (Right) -->
   <g transform="translate(390, 40)">
     <!-- Paper -->
-    <rect x="30" y="0" width="90" height="190" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+    <rect x="30" y="0" width="90" height="190" fill="#0f172a" stroke="#cbd5e1" stroke-width="2"/>
     
     <!-- Baseline -->
     <path d="M 30 160 L 120 160" fill="none" stroke="#475569" stroke-width="1.5"/>

@@ -21,7 +21,7 @@ export const note_olevel_physics_1_8_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 380 190" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="190" fill="#eff6ff" rx="10"/>
+  <rect width="380" height="190" fill="#1c3a64" rx="10"/>
   <text x="190" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3a8a">Hydroelectric Power</text>
   <!-- Reservoir hill -->
   <polygon points="0,145 80,60 140,145" fill="#6b7280" opacity="0.5"/>
@@ -36,8 +36,8 @@ export const note_olevel_physics_1_8_2 = {
   <rect x="152" y="120" width="60" height="12" fill="#94a3b8" rx="3"/>
   <!-- Turbine + generator box -->
   <rect x="212" y="112" width="60" height="28" fill="#6366f1" rx="4"/>
-  <text x="242" y="127" text-anchor="middle" font-size="9" fill="white">Turbine +</text>
-  <text x="242" y="136" text-anchor="middle" font-size="9" fill="white">Generator</text>
+  <text x="242" y="127" text-anchor="middle" font-size="9" fill="#1e293b">Turbine +</text>
+  <text x="242" y="136" text-anchor="middle" font-size="9" fill="#1e293b">Generator</text>
   <!-- Water output -->
   <rect x="272" y="130" width="60" height="10" fill="#3b82f6" opacity="0.6" rx="3"/>
   <text x="302" y="157" text-anchor="middle" font-size="9" fill="#1d4ed8">River</text>

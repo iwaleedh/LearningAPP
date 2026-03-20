@@ -30,10 +30,10 @@ export const note_olevel_physics_1_4_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="220" fill="#f0fdf4" rx="10"/>
+  <rect width="440" height="220" fill="#0a2e1a" rx="10"/>
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Newton\'s First Law: Three Cases</text>
   <!-- Case 1: At rest -->
-  <rect x="20" y="35" width="120" height="80" fill="white" stroke="#16a34a" stroke-width="1.5" rx="6"/>
+  <rect x="20" y="35" width="120" height="80" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" rx="6"/>
   <text x="80" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">At Rest</text>
   <rect x="55" y="60" width="50" height="30" fill="#6366f1" rx="4"/>
   <line x1="80" y1="60" x2="80" y2="40" stroke="#ef4444" stroke-width="2"/>
@@ -44,7 +44,7 @@ export const note_olevel_physics_1_4_1 = {
   <text x="90" y="108" font-size="9" fill="#ef4444">W</text>
   <text x="80" y="122" text-anchor="middle" font-size="9" fill="#16a34a">Balanced → stays still</text>
   <!-- Case 2: Constant velocity -->
-  <rect x="160" y="35" width="120" height="80" fill="white" stroke="#16a34a" stroke-width="1.5" rx="6"/>
+  <rect x="160" y="35" width="120" height="80" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" rx="6"/>
   <text x="220" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Constant Velocity</text>
   <rect x="195" y="60" width="50" height="28" fill="#6366f1" rx="4"/>
   <line x1="245" y1="74" x2="260" y2="74" stroke="#2563eb" stroke-width="2"/>
@@ -55,7 +55,7 @@ export const note_olevel_physics_1_4_1 = {
   <text x="160" y="69" font-size="9" fill="#ef4444">Fr</text>
   <text x="220" y="122" text-anchor="middle" font-size="9" fill="#16a34a">Balanced → v stays same</text>
   <!-- Case 3: Unbalanced (accelerates) -->
-  <rect x="300" y="35" width="120" height="80" fill="white" stroke="#ef4444" stroke-width="1.5" rx="6"/>
+  <rect x="300" y="35" width="120" height="80" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" rx="6"/>
   <text x="360" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Net Force</text>
   <rect x="330" y="60" width="50" height="28" fill="#6366f1" rx="4"/>
   <line x1="380" y1="74" x2="405" y2="74" stroke="#2563eb" stroke-width="3"/>

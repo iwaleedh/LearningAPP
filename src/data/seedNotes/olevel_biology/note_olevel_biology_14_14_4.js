@@ -31,14 +31,14 @@ export const note_olevel_biology_14_14_4 = {
       data: {
         caption: 'Negative feedback loop — the basis of homeostasis',
         svg: `<svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="520" height="200" fill="#f0fdf4" rx="12"/>
+  <rect width="520" height="200" fill="#0a2e1a" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Negative Feedback Loop</text>
   <!-- Boxes -->
-  <rect x="20" y="60" width="100" height="40" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="20" y="60" width="100" height="40" rx="6" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="70" y="84" text-anchor="middle" font-size="11" fill="#166534">Normal level</text>
-  <rect x="165" y="60" width="100" height="40" rx="6" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <rect x="165" y="60" width="100" height="40" rx="6" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <text x="215" y="84" text-anchor="middle" font-size="11" fill="#92400e">Change detected</text>
-  <rect x="315" y="60" width="100" height="40" rx="6" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="315" y="60" width="100" height="40" rx="6" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="365" y="79" text-anchor="middle" font-size="11" fill="#991b1b">Corrective</text>
   <text x="365" y="93" text-anchor="middle" font-size="11" fill="#991b1b">response</text>
   <!-- Arrows -->

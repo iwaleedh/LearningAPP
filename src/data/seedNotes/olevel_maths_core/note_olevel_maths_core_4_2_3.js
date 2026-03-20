@@ -111,9 +111,9 @@ export const note_olevel_maths_core_4_2_3 = {
     <text x="0" y="116" fill="#374151" font-size="9">∥</text>
     <line x1="40" y1="20" x2="100" y2="150" stroke="#374151" stroke-width="2.5"/>
     <!-- Angle at top intersection (right side below) -->
-    <path d="M43,65 A20,20 0 0,0 60,55" fill="#fee2e2" fill-opacity="0.6" stroke="#ef4444" stroke-width="2"/>
+    <path d="M43,65 A20,20 0 0,0 60,55" fill="#3d1212" fill-opacity="0.6" stroke="#ef4444" stroke-width="2"/>
     <!-- Angle at bottom (same side, above parallel) -->
-    <path d="M65,105 A20,20 0 0,1 78,115" fill="#fee2e2" fill-opacity="0.6" stroke="#ef4444" stroke-width="2"/>
+    <path d="M65,105 A20,20 0 0,1 78,115" fill="#3d1212" fill-opacity="0.6" stroke="#ef4444" stroke-width="2"/>
     <text x="36" y="80" class="lbl" fill="#ef4444">e</text>
     <text x="73" y="108" class="lbl" fill="#ef4444">f</text>
     <text x="5" y="165">e + f = 180°</text>

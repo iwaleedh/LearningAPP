@@ -18,7 +18,7 @@ export const note_olevel_maths_core_5_2_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="12">
-  <circle cx="150" cy="100" r="80" fill="#ede9fe" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="150" cy="100" r="80" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
   <!-- diameter line -->
   <line x1="70" y1="100" x2="230" y2="100" stroke="#6366f1" stroke-width="2"/>
   <!-- radius line -->

@@ -67,16 +67,16 @@ export const note_olevel_biology_13_13_0 = {
         svg: `<svg viewBox="0 0 580 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Background layers -->
   <!-- Epidermis -->
-  <rect x="0" y="0" width="580" height="70" fill="#fde8c8"/>
+  <rect x="0" y="0" width="580" height="70" fill="#532407"/>
   <text x="10" y="20" font-weight="bold" fill="#7a3a00">EPIDERMIS</text>
   <text x="10" y="38" fill="#7a3a00" font-size="11">Outer protective layer; dead cells on surface</text>
 
   <!-- Dermis -->
-  <rect x="0" y="70" width="580" height="180" fill="#fcd9b0"/>
+  <rect x="0" y="70" width="580" height="180" fill="#532407"/>
   <text x="10" y="90" font-weight="bold" fill="#7a3a00">DERMIS</text>
 
   <!-- Subcutaneous fat -->
-  <rect x="0" y="250" width="580" height="70" fill="#f5c48a"/>
+  <rect x="0" y="250" width="580" height="70" fill="#532407"/>
   <text x="10" y="275" font-weight="bold" fill="#5a2a00">SUBCUTANEOUS FAT</text>
   <text x="10" y="293" fill="#5a2a00" font-size="11">Insulation and energy store</text>
 
@@ -102,7 +102,7 @@ export const note_olevel_biology_13_13_0 = {
   <text x="60" y="112" fill="#dc2626" font-size="11">Blood capillaries</text>
 
   <!-- Sebaceous gland -->
-  <ellipse cx="150" cy="150" rx="22" ry="14" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <ellipse cx="150" cy="150" rx="22" ry="14" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="160" y="152" fill="#14532d" font-size="10">Sebaceous</text>
   <text x="165" y="164" fill="#14532d" font-size="10">gland</text>
 

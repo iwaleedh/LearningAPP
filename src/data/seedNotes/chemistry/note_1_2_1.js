@@ -170,6 +170,88 @@ export const note_chemistry_1_2_1 = {
       terms: []
     },
     {
+      id: 'svg-particles-nuclide',
+      type: 'svg',
+      data: {
+        caption: 'Cross-topic reference: subatomic particle properties (from atomic structure) and nuclide notation — the foundation for understanding isotopes and Aᵣ calculations.',
+        svg: `<svg viewBox="0 0 580 262" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
+  <line x1="290" y1="8" x2="290" y2="254" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="8" y="8" width="274" height="246" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="8" y="8" width="274" height="30" rx="8" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="28" width="274" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <text x="145" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Subatomic Particles</text>
+  <text x="36" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">Particle</text>
+  <text x="118" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">Rel. mass</text>
+  <text x="188" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">Charge</text>
+  <text x="255" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">Location</text>
+  <line x1="16" y1="59" x2="274" y2="59" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="22" cy="76" r="8" fill="#3b82f6"/>
+  <text x="22" y="80" text-anchor="middle" font-size="9" font-weight="bold" fill="#1c3a64">p+</text>
+  <text x="54" y="80" font-size="11" fill="#1e3a8a" font-weight="bold">Proton</text>
+  <text x="118" y="80" text-anchor="middle" font-size="11" fill="#374151">1</text>
+  <text x="188" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d4ed8">+1</text>
+  <text x="255" y="80" text-anchor="middle" font-size="10" fill="#374151">Nucleus</text>
+  <line x1="16" y1="87" x2="274" y2="87" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="22" cy="103" r="8" fill="#64748b"/>
+  <text x="22" y="107" text-anchor="middle" font-size="8" font-weight="bold" fill="#1c3a64">n</text>
+  <text x="54" y="107" font-size="11" fill="#374151" font-weight="bold">Neutron</text>
+  <text x="118" y="107" text-anchor="middle" font-size="11" fill="#374151">1</text>
+  <text x="188" y="107" text-anchor="middle" font-size="12" font-weight="bold" fill="#64748b">0</text>
+  <text x="255" y="107" text-anchor="middle" font-size="10" fill="#374151">Nucleus</text>
+  <line x1="16" y1="114" x2="274" y2="114" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="22" cy="130" r="8" fill="#ef4444"/>
+  <text x="22" y="134" text-anchor="middle" font-size="8" font-weight="bold" fill="#1c3a64">e-</text>
+  <text x="54" y="134" font-size="11" fill="#991b1b" font-weight="bold">Electron</text>
+  <text x="118" y="134" text-anchor="middle" font-size="10" fill="#374151">~1/1836</text>
+  <text x="188" y="134" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">-1</text>
+  <text x="255" y="134" text-anchor="middle" font-size="10" fill="#374151">Shells</text>
+  <rect x="16" y="146" width="260" height="30" rx="5" fill="#44370a"/>
+  <text x="146" y="159" text-anchor="middle" font-size="10" fill="#713f12" font-weight="bold">Nucleus holds &gt;99.9% of atom's mass</text>
+  <text x="146" y="172" text-anchor="middle" font-size="9" fill="#92400e">Atoms are mostly empty space</text>
+  <rect x="16" y="184" width="260" height="24" rx="5" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="146" y="193" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">Key formula:</text>
+  <text x="146" y="204" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Neutrons = A - Z</text>
+  <rect x="8" y="215" width="274" height="1" fill="#1e293b"/>
+  <text x="146" y="232" text-anchor="middle" font-size="10" fill="#4b5563">In a neutral atom: electrons = protons = Z</text>
+  <text x="146" y="246" text-anchor="middle" font-size="10" fill="#4b5563">Ion: electrons = Z - (ionic charge)</text>
+  <rect x="298" y="8" width="274" height="246" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="298" y="8" width="274" height="30" rx="8" fill="#065f46" fill-opacity="0.5"/>
+  <rect x="298" y="28" width="274" height="10" fill="#065f46" fill-opacity="0.5"/>
+  <text x="435" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">Nuclide Notation</text>
+  <text x="354" y="76" font-size="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">35</text>
+  <text x="376" y="100" font-size="44" font-weight="bold" fill="#374151">Cl</text>
+  <text x="354" y="116" font-size="18" font-weight="bold" fill="#dc2626" text-anchor="middle">17</text>
+  <defs>
+    <marker id="arr-b" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#1d4ed8"/></marker>
+    <marker id="arr-r" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#dc2626"/></marker>
+  </defs>
+  <line x1="414" y1="78" x2="366" y2="73" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr-b)"/>
+  <text x="418" y="70" font-size="10" fill="#1d4ed8" font-weight="bold">A = mass number</text>
+  <text x="418" y="82" font-size="9" fill="#6b7280">(protons + neutrons)</text>
+  <line x1="414" y1="112" x2="366" y2="112" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr-r)"/>
+  <text x="418" y="108" font-size="10" fill="#dc2626" font-weight="bold">Z = atomic number</text>
+  <text x="418" y="120" font-size="9" fill="#6b7280">(protons only)</text>
+  <line x1="308" y1="130" x2="564" y2="130" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="435" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Isotopes: same Z, different A</text>
+  <rect x="308" y="155" width="120" height="68" rx="6" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="334" y="176" font-size="20" font-weight="bold" fill="#1d4ed8" text-anchor="middle">35</text>
+  <text x="350" y="196" font-size="32" font-weight="bold" fill="#374151">Cl</text>
+  <text x="334" y="213" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle">17</text>
+  <text x="367" y="172" font-size="9" fill="#374151">18 neutrons</text>
+  <text x="367" y="184" font-size="9" fill="#374151">75.5% abundant</text>
+  <rect x="450" y="155" width="120" height="68" rx="6" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="476" y="176" font-size="20" font-weight="bold" fill="#1d4ed8" text-anchor="middle">37</text>
+  <text x="492" y="196" font-size="32" font-weight="bold" fill="#374151">Cl</text>
+  <text x="476" y="213" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle">17</text>
+  <text x="509" y="172" font-size="9" fill="#374151">20 neutrons</text>
+  <text x="509" y="184" font-size="9" fill="#374151">24.5% abundant</text>
+  <text x="435" y="238" text-anchor="middle" font-size="10" fill="#6b7280" font-style="italic">Both have Z=17: same element, different masses</text>
+  <text x="435" y="250" text-anchor="middle" font-size="10" fill="#6b7280" font-style="italic">Ar = (35 x 75.5 + 37 x 24.5) / 100 = 35.5</text>
+</svg>`
+      },
+      terms: []
+    },
+    {
       id: 'checklist-1-2-1',
       type: 'checklist',
       data: {

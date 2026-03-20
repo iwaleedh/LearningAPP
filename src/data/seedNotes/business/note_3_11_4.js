@@ -158,29 +158,29 @@ export const note_business_3_11_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
-  <rect width="500" height="400" fill="#f9f9f9" rx="8"/>
+  <rect width="500" height="400" fill="#0f172a" rx="8"/>
   <text x="18" y="200" text-anchor="middle" font-size="12" font-weight="bold" fill="#444" transform="rotate(-90,18,200)">Competitive Scope</text>
   <text x="280" y="396" text-anchor="middle" font-size="12" font-weight="bold" fill="#444">Competitive Advantage</text>
   <text x="176" y="44" text-anchor="middle" font-size="12" fill="#666">Cost</text>
   <text x="388" y="44" text-anchor="middle" font-size="12" fill="#666">Differentiation</text>
   <text x="52" y="126" text-anchor="middle" font-size="12" fill="#666" transform="rotate(-90,52,126)">Broad</text>
   <text x="52" y="268" text-anchor="middle" font-size="12" fill="#666" transform="rotate(-90,52,268)">Narrow</text>
-  <rect x="70" y="55" width="212" height="142" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="3"/>
+  <rect x="70" y="55" width="212" height="142" fill="#0a2e1a" stroke="#2e7d32" stroke-width="2" rx="3"/>
   <text x="176" y="82" text-anchor="middle" font-weight="bold" font-size="13" fill="#2e7d32">Cost Leadership</text>
   <text x="176" y="100" text-anchor="middle" font-size="11" fill="#555">Lowest-cost producer,</text>
   <text x="176" y="115" text-anchor="middle" font-size="11" fill="#555">broad market scope</text>
   <text x="176" y="175" text-anchor="middle" font-size="10" fill="#2e7d32">e.g. Ryanair, IKEA</text>
-  <rect x="282" y="55" width="213" height="142" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="3"/>
+  <rect x="282" y="55" width="213" height="142" fill="#1c3a64" stroke="#1565c0" stroke-width="2" rx="3"/>
   <text x="388" y="82" text-anchor="middle" font-weight="bold" font-size="13" fill="#1565c0">Differentiation</text>
   <text x="388" y="100" text-anchor="middle" font-size="11" fill="#555">Unique product / brand,</text>
   <text x="388" y="115" text-anchor="middle" font-size="11" fill="#555">broad market scope</text>
   <text x="388" y="175" text-anchor="middle" font-size="10" fill="#1565c0">e.g. Apple, Dyson</text>
-  <rect x="70" y="197" width="212" height="143" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="3"/>
+  <rect x="70" y="197" width="212" height="143" fill="#532407" stroke="#e65100" stroke-width="2" rx="3"/>
   <text x="176" y="224" text-anchor="middle" font-weight="bold" font-size="13" fill="#e65100">Cost Focus</text>
   <text x="176" y="242" text-anchor="middle" font-size="11" fill="#555">Lowest cost within</text>
   <text x="176" y="257" text-anchor="middle" font-size="11" fill="#555">a niche segment</text>
   <text x="176" y="317" text-anchor="middle" font-size="10" fill="#e65100">e.g. Lidl (budget food)</text>
-  <rect x="282" y="197" width="213" height="143" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2" rx="3"/>
+  <rect x="282" y="197" width="213" height="143" fill="#3b1460" stroke="#6a1b9a" stroke-width="2" rx="3"/>
   <text x="388" y="224" text-anchor="middle" font-weight="bold" font-size="13" fill="#6a1b9a">Differentiation Focus</text>
   <text x="388" y="242" text-anchor="middle" font-size="11" fill="#555">Unique product within</text>
   <text x="388" y="257" text-anchor="middle" font-size="11" fill="#555">a niche segment</text>

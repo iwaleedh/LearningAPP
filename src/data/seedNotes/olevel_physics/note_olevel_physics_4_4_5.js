@@ -103,11 +103,11 @@ export const note_olevel_physics_4_4_5 = {
         caption: 'Transformer: primary coil, iron core, and secondary coil',
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Iron core (E-shape) -->
-  <rect x="130" y="30" width="100" height="140" rx="5" fill="#d1d5db" stroke="#6b7280" stroke-width="2"/>
+  <rect x="130" y="30" width="100" height="140" rx="5" fill="#1e293b" stroke="#6b7280" stroke-width="2"/>
   <!-- Core window cutout -->
-  <rect x="150" y="60" width="60" height="80" rx="3" fill="#f9fafb"/>
+  <rect x="150" y="60" width="60" height="80" rx="3" fill="#0f172a"/>
   <!-- Primary coil (left) -->
-  <rect x="80" y="55" width="70" height="90" rx="5" fill="#e0e7ff" stroke="#6366f1" stroke-width="2.5"/>
+  <rect x="80" y="55" width="70" height="90" rx="5" fill="#2d2f72" stroke="#6366f1" stroke-width="2.5"/>
   <!-- Primary coil turns (visual) -->
   <line x1="88" y1="65" x2="148" y2="65" stroke="#6366f1" stroke-width="1.5"/>
   <line x1="88" y1="75" x2="148" y2="75" stroke="#6366f1" stroke-width="1.5"/>
@@ -120,7 +120,7 @@ export const note_olevel_physics_4_4_5 = {
   <text x="85" y="165" fill="#6366f1" font-weight="bold">Primary</text>
   <text x="90" y="177" fill="#6366f1">N_p turns</text>
   <!-- Secondary coil (right) -->
-  <rect x="210" y="55" width="70" height="90" rx="5" fill="#d1fae5" stroke="#10b981" stroke-width="2.5"/>
+  <rect x="210" y="55" width="70" height="90" rx="5" fill="#0a2e1a" stroke="#10b981" stroke-width="2.5"/>
   <!-- Fewer turns for step-down illustration -->
   <line x1="212" y1="70" x2="278" y2="70" stroke="#10b981" stroke-width="1.5"/>
   <line x1="212" y1="90" x2="278" y2="90" stroke="#10b981" stroke-width="1.5"/>

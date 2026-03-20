@@ -37,22 +37,22 @@ export const note_olevel_biology_19_19_2 = {
         caption: 'The carbon cycle showing key processes that move carbon between the atmosphere, living organisms, and fossil fuels',
         svg: `<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Atmosphere box -->
-  <rect x="155" y="5" width="210" height="36" rx="8" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+  <rect x="155" y="5" width="210" height="36" rx="8" fill="#0c4a6e" stroke="#0284c7" stroke-width="2"/>
   <text x="260" y="22" text-anchor="middle" font-weight="bold" font-size="12" fill="#0c4a6e">Atmosphere</text>
   <text x="260" y="35" text-anchor="middle" font-size="10" fill="#0c4a6e">(CO₂)</text>
 
   <!-- Plant box -->
-  <rect x="30" y="90" width="110" height="38" rx="8" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <rect x="30" y="90" width="110" height="38" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="85" y="107" text-anchor="middle" font-weight="bold" font-size="11" fill="#14532d">Plants / Algae</text>
   <text x="85" y="120" text-anchor="middle" font-size="9" fill="#14532d">(Producers)</text>
 
   <!-- Animal box -->
-  <rect x="200" y="90" width="120" height="38" rx="6" fill="#c7d2fe" stroke="#6366f1" stroke-width="2"/>
+  <rect x="200" y="90" width="120" height="38" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
   <text x="260" y="107" text-anchor="middle" font-weight="bold" font-size="11" fill="#3730a3">Animals</text>
   <text x="260" y="120" text-anchor="middle" font-size="9" fill="#3730a3">(Consumers)</text>
 
   <!-- Decomposers box -->
-  <rect x="140" y="190" width="130" height="36" rx="6" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <rect x="140" y="190" width="130" height="36" rx="6" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="205" y="207" text-anchor="middle" font-weight="bold" font-size="11" fill="#78350f">Decomposers</text>
   <text x="205" y="220" text-anchor="middle" font-size="9" fill="#78350f">(bacteria/fungi)</text>
 

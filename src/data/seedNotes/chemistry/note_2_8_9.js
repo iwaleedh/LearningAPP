@@ -38,9 +38,9 @@ export const note_chemistry_2_8_9 = {
         caption: 'Figure: Structural trend across Period 3 oxides — from giant ionic to giant covalent to molecular',
         svg: `<svg viewBox="0 0 620 130" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="11">
   <!-- Background zones -->
-  <rect x="0" y="0" width="190" height="130" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
-  <rect x="196" y="0" width="100" height="130" rx="6" fill="#f0fdf4" stroke="#6ee7b7" stroke-width="1.2"/>
-  <rect x="302" y="0" width="318" height="130" rx="6" fill="#fef9c3" stroke="#fcd34d" stroke-width="1.2"/>
+  <rect x="0" y="0" width="190" height="130" rx="6" fill="#1c3a64" stroke="#93c5fd" stroke-width="1.2"/>
+  <rect x="196" y="0" width="100" height="130" rx="6" fill="#0a2e1a" stroke="#6ee7b7" stroke-width="1.2"/>
+  <rect x="302" y="0" width="318" height="130" rx="6" fill="#44370a" stroke="#fcd34d" stroke-width="1.2"/>
   <!-- Zone labels -->
   <text x="95" y="14" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Giant Ionic</text>
   <text x="246" y="14" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="11">Giant Covalent</text>
@@ -67,10 +67,10 @@ export const note_chemistry_2_8_9 = {
   <rect x="14" y="95" width="50" height="14" rx="2" fill="#1d4ed8"/>
   <rect x="70" y="95" width="50" height="14" rx="2" fill="#2563eb"/>
   <rect x="126" y="95" width="50" height="14" rx="2" fill="#3b82f6"/>
-  <rect x="196" y="95" width="100" height="14" rx="2" fill="#22c55e"/>
-  <rect x="302" y="95" width="55" height="8" rx="2" fill="#fbbf24" y="99"/>
-  <rect x="433" y="101" width="55" height="6" rx="2" fill="#f59e0b"/>
-  <rect x="560" y="103" width="48" height="4" rx="2" fill="#f59e0b"/>
+  <rect x="196" y="95" width="100" height="14" rx="2" fill="#14532d"/>
+  <rect x="302" y="95" width="55" height="8" rx="2" fill="#78350f" y="99"/>
+  <rect x="433" y="101" width="55" height="6" rx="2" fill="#78350f"/>
+  <rect x="560" y="103" width="48" height="4" rx="2" fill="#78350f"/>
   <text x="39"  y="117" text-anchor="middle" fill="#374151" font-size="8">~1132°C</text>
   <text x="95"  y="117" text-anchor="middle" fill="#374151" font-size="8">2852°C</text>
   <text x="151" y="117" text-anchor="middle" fill="#374151" font-size="8">2054°C</text>
@@ -142,37 +142,37 @@ export const note_chemistry_2_8_9 = {
   <text x="210" y="17" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">SiO₂ — Giant Covalent Network</text>
   <!-- Central Si -->
   <circle cx="210" cy="130" r="18" fill="#9ca3af" stroke="#4b5563" stroke-width="2"/>
-  <text x="210" y="134" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Si</text>
+  <text x="210" y="134" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Si</text>
   <!-- Top O -->
-  <circle cx="210" cy="78" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="210" cy="78" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="210" y="82" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <line x1="210" y1="90" x2="210" y2="112" stroke="#374151" stroke-width="2"/>
   <!-- Si top -->
   <circle cx="210" cy="40" r="18" fill="#9ca3af" stroke="#4b5563" stroke-width="2"/>
-  <text x="210" y="44" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Si</text>
+  <text x="210" y="44" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Si</text>
   <line x1="210" y1="66" x2="210" y2="68" stroke="#374151" stroke-width="2"/>
   <!-- Left O -->
-  <circle cx="142" cy="118" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="142" cy="118" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="142" y="122" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <line x1="154" y1="122" x2="193" y2="126" stroke="#374151" stroke-width="2"/>
   <!-- Si left -->
   <circle cx="105" cy="110" r="18" fill="#9ca3af" stroke="#4b5563" stroke-width="2"/>
-  <text x="105" y="114" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Si</text>
+  <text x="105" y="114" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Si</text>
   <line x1="123" y1="113" x2="130" y2="115" stroke="#374151" stroke-width="2"/>
   <!-- Right O -->
-  <circle cx="278" cy="118" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="278" cy="118" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="278" y="122" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <line x1="227" y1="126" x2="266" y2="122" stroke="#374151" stroke-width="2"/>
   <!-- Si right -->
   <circle cx="315" cy="110" r="18" fill="#9ca3af" stroke="#4b5563" stroke-width="2"/>
-  <text x="315" y="114" text-anchor="middle" fill="white" font-weight="bold" font-size="11">Si</text>
+  <text x="315" y="114" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Si</text>
   <line x1="290" y1="115" x2="297" y2="113" stroke="#374151" stroke-width="2"/>
   <!-- Bottom-left O -->
-  <circle cx="168" cy="178" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="168" cy="178" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="168" y="182" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <line x1="177" y1="168" x2="200" y2="148" stroke="#374151" stroke-width="2"/>
   <!-- Bottom-right O -->
-  <circle cx="252" cy="178" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="252" cy="178" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="252" y="182" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <line x1="243" y1="168" x2="220" y2="148" stroke="#374151" stroke-width="2"/>
   <!-- Continuation dots -->
@@ -183,7 +183,7 @@ export const note_chemistry_2_8_9 = {
   <!-- Legend -->
   <circle cx="30"  cy="230" r="10" fill="#9ca3af" stroke="#4b5563" stroke-width="1.5"/>
   <text x="44" y="234" fill="#374151" font-size="10">Silicon</text>
-  <circle cx="100" cy="230" r="8"  fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="100" cy="230" r="8"  fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="112" y="234" fill="#374151" font-size="10">Oxygen (bridging)</text>
   <text x="250" y="234" fill="#6b7280" font-size="9">Structure extends in all 3 dimensions</text>
 </svg>`
@@ -248,10 +248,10 @@ export const note_chemistry_2_8_9 = {
   <circle cx="40"  cy="175" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
   <circle cx="130" cy="175" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
   <circle cx="85"  cy="148" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
-  <text x="85"  y="104" text-anchor="middle" fill="white" font-size="9">P</text>
-  <text x="40"  y="179" text-anchor="middle" fill="white" font-size="9">P</text>
-  <text x="130" y="179" text-anchor="middle" fill="white" font-size="9">P</text>
-  <text x="85"  y="152" text-anchor="middle" fill="white" font-size="9">P</text>
+  <text x="85"  y="104" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
+  <text x="40"  y="179" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
+  <text x="130" y="179" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
+  <text x="85"  y="152" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
   <text x="85"  y="210" text-anchor="middle" fill="#6b7280" font-size="9">All 4 P–P bonds</text>
 
   <!-- Arrow -->
@@ -272,25 +272,25 @@ export const note_chemistry_2_8_9 = {
   <line x1="370" y1="175" x2="325" y2="148" stroke="#374151" stroke-width="1.2" stroke-dasharray="4,3"/>
   <line x1="340" y1="100" x2="325" y2="118" stroke="#374151" stroke-width="1.2" stroke-dasharray="4,3"/>
   <!-- O bridge atoms -->
-  <circle cx="310" cy="145" r="9" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="310" cy="145" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="310" cy="149" text-anchor="middle" fill="#7f1d1d" font-size="8"><tspan x="310" y="149">O</tspan></text>
-  <circle cx="320" cy="178" r="9" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="320" cy="178" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="320" y="182" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
-  <circle cx="372" cy="142" r="9" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="372" cy="142" r="9" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="372" y="146" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <!-- back O bridges (dashed) -->
-  <circle cx="302" cy="160" r="8" fill="#fca5a5" stroke="#dc2626" stroke-width="1" opacity="0.55"/>
-  <circle cx="325" cy="133" r="8" fill="#fca5a5" stroke="#dc2626" stroke-width="1" opacity="0.55"/>
-  <circle cx="352" cy="162" r="8" fill="#fca5a5" stroke="#dc2626" stroke-width="1" opacity="0.55"/>
+  <circle cx="302" cy="160" r="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="1" opacity="0.55"/>
+  <circle cx="325" cy="133" r="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="1" opacity="0.55"/>
+  <circle cx="352" cy="162" r="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="1" opacity="0.55"/>
   <!-- P atoms P4O6 -->
   <circle cx="340" cy="100" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
   <circle cx="280" cy="175" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
   <circle cx="370" cy="175" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
   <circle cx="325" cy="148" r="14" fill="#f97316" stroke="#c2410c" stroke-width="2"/>
-  <text x="340" y="104" text-anchor="middle" fill="white" font-size="9">P</text>
-  <text x="280" y="179" text-anchor="middle" fill="white" font-size="9">P</text>
-  <text x="370" y="179" text-anchor="middle" fill="white" font-size="9">P</text>
-  <text x="325" y="152" text-anchor="middle" fill="white" font-size="9">P</text>
+  <text x="340" y="104" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
+  <text x="280" y="179" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
+  <text x="370" y="179" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
+  <text x="325" y="152" text-anchor="middle" fill="#1e293b" font-size="9">P</text>
   <text x="340" y="210" text-anchor="middle" fill="#6b7280" font-size="9">P–O–P bridges (6)</text>
 
   <!-- === P4O10 note === -->
@@ -337,17 +337,17 @@ export const note_chemistry_2_8_9 = {
   <!-- lone pair on S -->
   <text x="105" y="52" text-anchor="middle" fill="#374151" font-size="18">⁚</text>
   <!-- S atom -->
-  <circle cx="105" cy="75" r="20" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+  <circle cx="105" cy="75" r="20" fill="#44370a" stroke="#a16207" stroke-width="2"/>
   <text x="105" y="80" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="13">S</text>
   <!-- double bonds — left -->
   <line x1="86"  y1="85" x2="50"  y2="120" stroke="#374151" stroke-width="2.2"/>
   <line x1="83"  y1="90" x2="47"  y2="125" stroke="#374151" stroke-width="2.2"/>
-  <circle cx="38" cy="130" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="38" cy="130" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="38"  y="134" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <!-- double bonds — right -->
   <line x1="124" y1="85" x2="160" y2="120" stroke="#374151" stroke-width="2.2"/>
   <line x1="127" y1="90" x2="163" y2="125" stroke="#374151" stroke-width="2.2"/>
-  <circle cx="172" cy="130" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="172" cy="130" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="172" y="134" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <!-- bond angle label -->
   <path d="M 62,115 Q 105,140 148,115" stroke="#6b7280" stroke-width="1" fill="none" stroke-dasharray="3,2"/>
@@ -360,22 +360,22 @@ export const note_chemistry_2_8_9 = {
   <!-- SO3 -->
   <text x="330" y="20" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">SO₃ (planar trigonal)</text>
   <!-- S -->
-  <circle cx="330" cy="90" r="20" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+  <circle cx="330" cy="90" r="20" fill="#44370a" stroke="#a16207" stroke-width="2"/>
   <text x="330" y="95" text-anchor="middle" fill="#78350f" font-weight="bold" font-size="13">S</text>
   <!-- 3 double bonds at 120° -->
   <line x1="330" y1="70" x2="330" y2="34" stroke="#374151" stroke-width="2.2"/>
   <line x1="325" y1="70" x2="325" y2="34" stroke="#374151" stroke-width="2.2"/>
-  <circle cx="330" cy="24" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="330" cy="24" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="330" y="28" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
 
   <line x1="313" y1="100" x2="272" y2="124" stroke="#374151" stroke-width="2.2"/>
   <line x1="315" y1="105" x2="274" y2="129" stroke="#374151" stroke-width="2.2"/>
-  <circle cx="263" cy="136" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="263" cy="136" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="263" y="140" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
 
   <line x1="347" y1="100" x2="388" y2="124" stroke="#374151" stroke-width="2.2"/>
   <line x1="345" y1="105" x2="386" y2="129" stroke="#374151" stroke-width="2.2"/>
-  <circle cx="397" cy="136" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="397" cy="136" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="397" y="140" text-anchor="middle" fill="#7f1d1d" font-size="9">O</text>
 
   <text x="330" y="162" text-anchor="middle" fill="#6b7280" font-size="9">120° — all S outer e⁻ used</text>
@@ -414,15 +414,15 @@ export const note_chemistry_2_8_9 = {
   <text x="105" y="22" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">Cl₂O</text>
   <text x="105" y="37" text-anchor="middle" fill="#6b7280" font-size="9">(chlorine(I) oxide — gas)</text>
   <!-- O centre -->
-  <circle cx="105" cy="100" r="14" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="105" cy="100" r="14" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="105" y="104" text-anchor="middle" fill="#7f1d1d" font-size="10">O</text>
   <!-- Cl left -->
   <line x1="91" y1="94" x2="52" y2="75" stroke="#374151" stroke-width="2"/>
-  <circle cx="40" cy="68" r="18" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+  <circle cx="40" cy="68" r="18" fill="#0a3020" stroke="#15803d" stroke-width="2"/>
   <text x="40" y="72" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="11">Cl</text>
   <!-- Cl right -->
   <line x1="119" y1="94" x2="158" y2="75" stroke="#374151" stroke-width="2"/>
-  <circle cx="170" cy="68" r="18" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+  <circle cx="170" cy="68" r="18" fill="#0a3020" stroke="#15803d" stroke-width="2"/>
   <text x="170" y="72" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="11">Cl</text>
   <!-- bond angle -->
   <path d="M 62,76 Q 105,100 148,76" stroke="#6b7280" fill="none" stroke-width="1" stroke-dasharray="3,2"/>
@@ -436,32 +436,32 @@ export const note_chemistry_2_8_9 = {
   <text x="350" y="22" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">Cl₂O₇</text>
   <text x="350" y="37" text-anchor="middle" fill="#6b7280" font-size="9">(chlorine(VII) oxide — liquid)</text>
   <!-- Central O -->
-  <circle cx="350" cy="100" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="350" cy="100" r="12" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.8"/>
   <text x="350" y="104" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <!-- Left Cl -->
   <line x1="338" y1="100" x2="296" y2="100" stroke="#374151" stroke-width="2"/>
-  <circle cx="281" cy="100" r="18" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+  <circle cx="281" cy="100" r="18" fill="#0a3020" stroke="#15803d" stroke-width="2"/>
   <text x="281" y="104" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="10">Cl</text>
   <!-- Left 3 O atoms -->
   <line x1="265" y1="92" x2="248" y2="68" stroke="#374151" stroke-width="2"/>
-  <circle cx="245" cy="58" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="245" cy="58" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="245" y="62" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <line x1="265" y1="108" x2="248" y2="132" stroke="#374151" stroke-width="2"/>
-  <circle cx="245" cy="142" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="245" cy="142" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="245" y="146" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <line x1="263" y1="100" x2="240" y2="100" stroke="#374151" stroke-width="2"/>
-  <circle cx="228" cy="100" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="228" cy="100" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="228" y="104" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <!-- Right Cl -->
   <line x1="362" y1="100" x2="404" y2="100" stroke="#374151" stroke-width="2"/>
-  <circle cx="419" cy="100" r="18" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+  <circle cx="419" cy="100" r="18" fill="#0a3020" stroke="#15803d" stroke-width="2"/>
   <text x="419" y="104" text-anchor="middle" fill="#14532d" font-weight="bold" font-size="10">Cl</text>
   <!-- Right 3 O atoms -->
   <line x1="435" y1="92" x2="452" y2="68" stroke="#374151" stroke-width="2"/>
-  <circle cx="455" cy="58" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="455" cy="58" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="455" y="62" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <line x1="435" y1="108" x2="452" y2="132" stroke="#374151" stroke-width="2"/>
-  <circle cx="455" cy="142" r="10" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5"/>
+  <circle cx="455" cy="142" r="10" fill="#7f1d1d" stroke="#dc2626" stroke-width="1.5"/>
   <text x="455" y="146" text-anchor="middle" fill="#7f1d1d" font-size="8">O</text>
   <line x1="437" y1="100" x2="457" y2="100" stroke="#374151" stroke-width="2"/>
   <circle cx="459" cy="100" r="0"/><!--placeholder-->

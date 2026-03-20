@@ -149,7 +149,7 @@ export const note_chemistry_1_5_6 = {
   </defs>
 
   <!-- DIOL BOX (top) -->
-  <rect x="125" y="8" width="310" height="38" rx="7" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <rect x="125" y="8" width="310" height="38" rx="7" fill="#0a2e1a" stroke="#059669" stroke-width="1.5"/>
   <text x="280" y="24" text-anchor="middle" font-weight="bold" fill="#065f46" font-size="12">Diol  (mild oxidation)</text>
   <text x="280" y="40" text-anchor="middle" fill="#065f46" font-size="11">R–CH(OH)–CH(OH)–R′</text>
 
@@ -159,7 +159,7 @@ export const note_chemistry_1_5_6 = {
   <text x="290" y="76" fill="#059669" font-size="10">acidified · room temperature</text>
 
   <!-- ALKENE BOX (centre) -->
-  <rect x="170" y="86" width="220" height="44" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="170" y="86" width="220" height="44" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
   <text x="280" y="104" text-anchor="middle" font-weight="bold" fill="#1e3a8a" font-size="13">Alkene</text>
   <text x="280" y="121" text-anchor="middle" fill="#1e3a8a" font-size="11">R–CH=CH–R′</text>
 
@@ -169,7 +169,7 @@ export const note_chemistry_1_5_6 = {
   <text x="290" y="157" fill="#dc2626" font-size="10">vigorous · heated</text>
 
   <!-- CLEAVAGE PRODUCTS BOX (bottom) -->
-  <rect x="8" y="165" width="544" height="71" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <rect x="8" y="165" width="544" height="71" rx="8" fill="#3d1212" stroke="#dc2626" stroke-width="1.5"/>
   <text x="280" y="181" text-anchor="middle" font-weight="bold" fill="#7f1d1d" font-size="11">Oxidative Cleavage Products</text>
 
   <!-- Column dividers -->

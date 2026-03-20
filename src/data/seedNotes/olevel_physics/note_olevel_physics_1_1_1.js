@@ -67,7 +67,7 @@ export const note_olevel_physics_1_1_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="220" fill="#f0fdf4" rx="10"/>
+  <rect width="420" height="220" fill="#0a2e1a" rx="10"/>
   <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">Distance vs Displacement</text>
   <!-- path walked -->
   <line x1="60" y1="160" x2="200" y2="160" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6,3"/>

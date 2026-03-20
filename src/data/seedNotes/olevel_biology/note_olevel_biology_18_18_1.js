@@ -101,10 +101,10 @@ export const note_olevel_biology_18_18_1 = {
         caption: 'Structural adaptations of a cactus vs a polar bear — reducing water loss vs reducing heat loss',
         svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Cactus panel -->
-  <rect x="10" y="10" width="220" height="180" rx="8" fill="#fefce8" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="10" y="10" width="220" height="180" rx="8" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="120" y="28" text-anchor="middle" font-weight="bold" font-size="12" fill="#92400e">Cactus (Desert)</text>
   <!-- Cactus body -->
-  <rect x="95" y="60" width="50" height="100" rx="25" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <rect x="95" y="60" width="50" height="100" rx="25" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <!-- Spines -->
   <line x1="95" y1="80" x2="68" y2="70" stroke="#4b5563" stroke-width="1.5"/>
   <line x1="95" y1="95" x2="65" y2="90" stroke="#4b5563" stroke-width="1.5"/>
@@ -126,15 +126,15 @@ export const note_olevel_biology_18_18_1 = {
   <text x="78" y="197" font-size="9" fill="#92400e">Wide shallow roots</text>
 
   <!-- Polar bear panel -->
-  <rect x="265" y="10" width="220" height="180" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="265" y="10" width="220" height="180" rx="8" fill="#1c3a64" stroke="#2563eb" stroke-width="1.5"/>
   <text x="375" y="28" text-anchor="middle" font-weight="bold" font-size="12" fill="#1e3a8a">Polar Bear (Arctic)</text>
   <!-- Bear body (simple) -->
-  <ellipse cx="375" cy="120" rx="55" ry="40" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <ellipse cx="375" cy="120" rx="55" ry="40" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
   <!-- Head -->
-  <circle cx="420" cy="90" r="22" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="420" cy="90" r="22" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
   <!-- Ears (small) -->
-  <circle cx="410" cy="71" r="6" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
-  <circle cx="430" cy="71" r="6" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="410" cy="71" r="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="430" cy="71" r="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
   <!-- Fat layer label -->
   <line x1="320" y1="130" x2="295" y2="150" stroke="#2563eb" stroke-width="1"/>
   <text x="270" y="162" font-size="9" fill="#2563eb">Thick</text>

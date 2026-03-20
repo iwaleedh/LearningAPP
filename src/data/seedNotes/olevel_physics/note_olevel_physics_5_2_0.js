@@ -6,12 +6,12 @@ export const note_olevel_physics_5_2_0 = {
     { id: 'h-gm', type: 'heading', data: { text: 'Geiger-Müller (GM) Tube', level: 3 } },
     { id: 'para-gm', type: 'paragraph', data: { text: 'The <strong>Geiger-Müller tube</strong> is the most common laboratory detector for ionising radiation. It consists of a sealed tube containing a low-pressure inert gas (usually argon) with a thin mica window at one end and a central anode wire. When ionising radiation enters, it ionises the gas atoms. The freed electrons are accelerated towards the anode by a high voltage (≈400 V), causing a cascade of further ionisations (an avalanche). Each cascade produces a brief pulse of electric current, counted electronically and shown on a rate-meter or digital counter.' } },
     { id: 'svg-gm-tube', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 230" width="480" height="230">
-  <rect width="480" height="230" fill="#f8fafc" rx="8"/>
+  <rect width="480" height="230" fill="#0f172a" rx="8"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Geiger-Müller Tube (cross-section)</text>
   <!-- Tube body -->
-  <rect x="100" y="60" width="260" height="120" rx="10" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="100" y="60" width="260" height="120" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="2"/>
   <!-- Mica window -->
-  <rect x="96" y="80" width="10" height="80" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="96" y="80" width="10" height="80" rx="3" fill="#78350f" stroke="#f59e0b" stroke-width="1.5"/>
   <text x="80" y="118" text-anchor="middle" font-size="9" fill="#d97706">mica</text>
   <text x="80" y="130" text-anchor="middle" font-size="9" fill="#d97706">window</text>
   <!-- Central anode wire -->
@@ -31,7 +31,7 @@ export const note_olevel_physics_5_2_0 = {
   <text x="40" y="112" text-anchor="middle" font-size="9" fill="#7c3aed">α, β</text>
   <text x="40" y="124" text-anchor="middle" font-size="9" fill="#7c3aed">or γ</text>
   <!-- Output -->
-  <rect x="360" y="100" width="80" height="40" rx="6" fill="white" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="360" y="100" width="80" height="40" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
   <text x="400" y="117" text-anchor="middle" font-size="10" fill="#10b981">Counter /</text>
   <text x="400" y="131" text-anchor="middle" font-size="10" fill="#10b981">Rate-meter</text>
   <line x1="360" y1="120" x2="350" y2="120" stroke="#10b981" stroke-width="1.5"/>

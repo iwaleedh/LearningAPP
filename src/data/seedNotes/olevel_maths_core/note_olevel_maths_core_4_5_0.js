@@ -39,7 +39,7 @@ export const note_olevel_maths_core_4_5_0 = {
     .arr { fill: #6366f1; }
   </style>
   <!-- Main circle -->
-  <circle cx="230" cy="155" r="110" fill="#e0e7ff" fill-opacity="0.4" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="230" cy="155" r="110" fill="#2d2f72" fill-opacity="0.4" stroke="#6366f1" stroke-width="2"/>
   <!-- Centre dot -->
   <circle cx="230" cy="155" r="4" fill="#6366f1"/>
   <text x="235" y="150" class="lbl">O (centre)</text>
@@ -61,10 +61,10 @@ export const note_olevel_maths_core_4_5_0 = {
   <path d="M230,45 A110,110 0 0,1 340,155" fill="none" stroke="#f59e0b" stroke-width="3"/>
   <text x="300" y="60" fill="#f59e0b" font-weight="700" font-size="11">minor arc</text>
   <!-- Sector shading -->
-  <path d="M230,155 L230,45 A110,110 0 0,1 310,88 Z" fill="#fef9c3" fill-opacity="0.6" stroke="none"/>
+  <path d="M230,155 L230,45 A110,110 0 0,1 310,88 Z" fill="#44370a" fill-opacity="0.6" stroke="none"/>
   <text x="240" y="100" fill="#ca8a04" font-weight="700" font-size="10">sector</text>
   <!-- Segment -->
-  <path d="M155,78 A110,110 0 0,1 310,220" fill="#fce7f3" fill-opacity="0.6" stroke="none"/>
+  <path d="M155,78 A110,110 0 0,1 310,220" fill="#4a1040" fill-opacity="0.6" stroke="none"/>
   <text x="200" y="220" fill="#9333ea" font-size="10" font-weight="700">segment</text>
 </svg>`,
         caption: 'Labelled circle showing centre, radius, diameter, chord, arc, sector, segment, and tangent'

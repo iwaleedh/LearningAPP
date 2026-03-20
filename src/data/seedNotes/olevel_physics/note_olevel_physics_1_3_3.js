@@ -40,17 +40,17 @@ export const note_olevel_physics_1_3_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 250" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="250" fill="#f0f9ff" rx="10"/>
+  <rect width="440" height="250" fill="#1c3a64" rx="10"/>
   <text x="220" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Floating vs Sinking: Force Comparison</text>
   <!-- Water background -->
-  <rect x="30" y="110" width="180" height="110" fill="#bae6fd" rx="0"/>
-  <rect x="230" y="110" width="180" height="110" fill="#bae6fd" rx="0"/>
+  <rect x="30" y="110" width="180" height="110" fill="#0c4a6e" rx="0"/>
+  <rect x="230" y="110" width="180" height="110" fill="#0c4a6e" rx="0"/>
   <!-- Container borders -->
   <rect x="30" y="50" width="180" height="170" fill="none" stroke="#374151" stroke-width="2" rx="4"/>
   <rect x="230" y="50" width="180" height="170" fill="none" stroke="#374151" stroke-width="2" rx="4"/>
   <!-- Floating object (left) - wood -->
   <rect x="75" y="85" width="90" height="40" fill="#a16207" rx="4" opacity="0.9"/>
-  <text x="120" y="109" text-anchor="middle" font-size="11" fill="white">Wood block</text>
+  <text x="120" y="109" text-anchor="middle" font-size="11" fill="#1e293b">Wood block</text>
   <!-- Force arrows on wood -->
   <line x1="120" y1="85" x2="120" y2="60" stroke="#16a34a" stroke-width="2"/>
   <polygon points="120,60 116,68 124,68" fill="#16a34a"/>
@@ -61,7 +61,7 @@ export const note_olevel_physics_1_3_3 = {
   <text x="120" y="235" text-anchor="middle" font-size="11" fill="#166534" font-weight="bold">FLOATS (ρ &lt; ρ_water)</text>
   <!-- Sinking object (right) - iron -->
   <rect x="275" y="165" width="90" height="40" fill="#64748b" rx="4"/>
-  <text x="320" y="189" text-anchor="middle" font-size="11" fill="white">Iron block</text>
+  <text x="320" y="189" text-anchor="middle" font-size="11" fill="#1e293b">Iron block</text>
   <!-- Force arrows on iron -->
   <line x1="320" y1="165" x2="320" y2="145" stroke="#16a34a" stroke-width="2"/>
   <polygon points="320,145 316,153 324,153" fill="#16a34a"/>

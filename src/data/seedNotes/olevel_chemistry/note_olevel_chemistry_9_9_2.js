@@ -32,24 +32,24 @@ export const note_olevel_chemistry_9_9_2 = {
   <text x="150" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Pure Metal</text>
   
   <!-- Row 1 (sliding) -->
-  <circle cx="100" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="140" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="180" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="220" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="100" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="140" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="180" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="220" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
   
   <path d="M 60 70 L 80 70" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-head-red)"/>
 
   <!-- Row 2 -->
-  <circle cx="80" cy="110" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="120" cy="110" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="160" cy="110" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="200" cy="110" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="80" cy="110" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="120" cy="110" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="160" cy="110" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="200" cy="110" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
 
   <!-- Row 3 -->
-  <circle cx="100" cy="150" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="140" cy="150" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="180" cy="150" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="220" cy="150" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="100" cy="150" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="140" cy="150" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="180" cy="150" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="220" cy="150" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
 
   <text x="150" y="195" font-family="var(--font-sans)" font-size="12" fill="var(--color-text)" text-anchor="middle">Regular lattice</text>
   <text x="150" y="215" font-family="var(--font-sans)" font-size="12" fill="#ef4444" font-weight="bold" text-anchor="middle">Layers slide easily (soft)</text>
@@ -58,23 +58,23 @@ export const note_olevel_chemistry_9_9_2 = {
   <text x="450" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="var(--color-text)" text-anchor="middle">Alloy (e.g., Steel)</text>
 
   <!-- Row 1 -->
-  <circle cx="380" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="420" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="380" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="420" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
   <!-- Different sized atom -->
-  <circle cx="460" cy="72" r="22" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
-  <circle cx="505" cy="70" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="460" cy="72" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="505" cy="70" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
 
   <!-- Row 2 -->
-  <circle cx="370" cy="115" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="410" cy="115" r="22" fill="#fde047" stroke="#d97706" stroke-width="2"/>
-  <circle cx="460" cy="120" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="500" cy="110" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="370" cy="115" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="410" cy="115" r="22" fill="#44370a" stroke="#d97706" stroke-width="2"/>
+  <circle cx="460" cy="120" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="500" cy="110" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
 
   <!-- Row 3 -->
-  <circle cx="390" cy="155" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="430" cy="160" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="475" cy="165" r="22" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
-  <circle cx="520" cy="155" r="16" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="390" cy="155" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="430" cy="160" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="475" cy="165" r="22" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="520" cy="155" r="16" fill="#1250a0" stroke="#2563eb" stroke-width="2"/>
 
   <path d="M 330 90 L 350 90" fill="none" stroke="#ef4444" stroke-width="3" marker-end="url(#arrow-head-red)"/>
   <line x1="365" y1="80" x2="365" y2="100" stroke="#ef4444" stroke-width="3"/>

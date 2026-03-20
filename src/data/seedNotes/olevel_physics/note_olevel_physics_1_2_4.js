@@ -39,7 +39,7 @@ export const note_olevel_physics_1_2_4 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="300" fill="#f0f9ff" rx="10"/>
+  <rect width="440" height="300" fill="#1c3a64" rx="10"/>
   <text x="220" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c4a6e">Calculating Acceleration and Distance from a v–t Graph</text>
   <!-- Axes -->
   <line x1="60" y1="250" x2="400" y2="250" stroke="#374151" stroke-width="2"/>
@@ -47,10 +47,10 @@ export const note_olevel_physics_1_2_4 = {
   <text x="230" y="278" text-anchor="middle" font-size="12" fill="#374151">Time / s</text>
   <text x="18" y="155" text-anchor="middle" font-size="12" fill="#374151" transform="rotate(-90 18 155)">Speed / m/s</text>
   <!-- Acceleration (0 to 5s: 0 to 20 m/s) -->
-  <polygon points="60,250 200,150 200,250" fill="#fde68a" opacity="0.7"/>
+  <polygon points="60,250 200,150 200,250" fill="#44370a" opacity="0.7"/>
   <line x1="60" y1="250" x2="200" y2="150" stroke="#d97706" stroke-width="2.5"/>
   <!-- Constant (5 to 12s: 20 m/s) -->
-  <polygon points="200,250 200,150 360,150 360,250" fill="#bbf7d0" opacity="0.7"/>
+  <polygon points="200,250 200,150 360,150 360,250" fill="#0a3020" opacity="0.7"/>
   <line x1="200" y1="150" x2="360" y2="150" stroke="#16a34a" stroke-width="2.5"/>
   <!-- Axis ticks -->
   <line x1="60" y1="250" x2="60" y2="255" stroke="#374151" stroke-width="1.5"/>
@@ -72,7 +72,7 @@ export const note_olevel_physics_1_2_4 = {
   <!-- Gradient dashes for acceleration -->
   <line x1="60" y1="250" x2="200" y2="250" stroke="#d97706" stroke-width="1" stroke-dasharray="4,2"/>
   <line x1="200" y1="150" x2="200" y2="250" stroke="#d97706" stroke-width="1" stroke-dasharray="4,2"/>
-  <text x="130" y="290" fill="white" font-size="1">spacer</text>
+  <text x="130" y="290" fill="#1e293b" font-size="1">spacer</text>
 </svg>`,
         caption: 'Yellow triangle = distance during acceleration; green rectangle = distance at constant speed',
       },

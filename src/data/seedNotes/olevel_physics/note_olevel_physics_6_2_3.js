@@ -6,7 +6,7 @@ export const note_olevel_physics_6_2_3 = {
     { id: 'para-rotation', type: 'paragraph', data: { text: 'When astronomers measured how fast stars orbit the centres of spiral galaxies, they found something unexpected. According to Newtonian gravity, stars far from the galactic centre (where most visible mass is concentrated) should orbit <strong>more slowly</strong> — like the outer planets in the solar system. In reality, orbital speeds stay roughly <strong>constant</strong> at large radii, or even increase slightly. This is called the <strong>galaxy rotation problem</strong>.' } },
     { id: 'svg-rotation', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="460" height="260">
   <rect width="460" height="260" fill="#0f172a" rx="8"/>
-  <text x="230" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">Galaxy Rotation Curve</text>
+  <text x="230" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Galaxy Rotation Curve</text>
   <!-- Axes -->
   <line x1="55" y1="220" x2="420" y2="220" stroke="#94a3b8" stroke-width="2"/>
   <line x1="55" y1="50" x2="55" y2="220" stroke="#94a3b8" stroke-width="2"/>
@@ -23,18 +23,18 @@ export const note_olevel_physics_6_2_3 = {
   <text x="410" y="98" font-size="9" fill="#34d399">(flat curve)</text>
   <!-- Shaded region between curves -->
   <!-- Star symbols along x-axis for galaxy reference -->
-  <circle cx="65" cy="220" r="4" fill="#fbbf24"/>
+  <circle cx="65" cy="220" r="4" fill="#78350f"/>
   <text x="65" y="237" text-anchor="middle" font-size="9" fill="#94a3b8">centre</text>
   <!-- Dark matter halo label -->
-  <text x="320" y="145" font-size="9" fill="#a78bfa">Dark matter</text>
-  <text x="320" y="157" font-size="9" fill="#a78bfa">halo needed</text>
-  <text x="320" y="169" font-size="9" fill="#a78bfa">to explain gap</text>
+  <text x="320" y="145" font-size="9" fill="#2d1b69">Dark matter</text>
+  <text x="320" y="157" font-size="9" fill="#2d1b69">halo needed</text>
+  <text x="320" y="169" font-size="9" fill="#2d1b69">to explain gap</text>
   <line x1="320" y1="140" x2="305" y2="125" stroke="#a78bfa" stroke-width="1"/>
   <!-- Arrow between curves -->
   <line x1="260" y1="170" x2="260" y2="100" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3" marker-end="url(#arr3)"/>
   <defs>
     <marker id="arr3" markerWidth="7" markerHeight="7" refX="3" refY="3.5" orient="auto">
-      <path d="M0,0 L7,3.5 L0,7 Z" fill="#a78bfa"/>
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#2d1b69"/>
     </marker>
   </defs>
 </svg>`, caption: 'Galaxy rotation curves: stars at large radii orbit much faster than expected from visible mass alone, implying hidden (dark) mass in an extended halo.' } },

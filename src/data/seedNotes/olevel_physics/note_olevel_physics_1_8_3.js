@@ -21,7 +21,7 @@ export const note_olevel_physics_1_8_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="380" height="200" fill="#fff7ed" rx="10"/>
+  <rect width="380" height="200" fill="#532407" rx="10"/>
   <text x="190" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c2d12">Geothermal Power</text>
   <!-- Surface -->
   <rect x="0" y="80" width="380" height="15" fill="#a8a29e" rx="2"/>
@@ -36,14 +36,14 @@ export const note_olevel_physics_1_8_3 = {
   <text x="85" y="36" font-size="9" fill="#3b82f6">Cold water</text>
   <text x="85" y="46" font-size="9" fill="#3b82f6">injected</text>
   <!-- Hot steam pipe (right) -->
-  <rect x="250" y="40" width="14" height="100" fill="#f59e0b" rx="3"/>
+  <rect x="250" y="40" width="14" height="100" fill="#78350f" rx="3"/>
   <polygon points="257,40 251,50 263,50" fill="#f59e0b"/>
   <text x="268" y="36" font-size="9" fill="#f59e0b">Hot steam</text>
   <text x="268" y="46" font-size="9" fill="#f59e0b">rises</text>
   <!-- Building / turbine at top -->
   <rect x="195" y="22" width="48" height="30" rx="4" fill="#6366f1"/>
-  <text x="219" y="37" text-anchor="middle" font-size="9" fill="white">Turbine +</text>
-  <text x="219" y="47" text-anchor="middle" font-size="9" fill="white">Generator</text>
+  <text x="219" y="37" text-anchor="middle" font-size="9" fill="#1e293b">Turbine +</text>
+  <text x="219" y="47" text-anchor="middle" font-size="9" fill="#1e293b">Generator</text>
   <!-- Electricity output -->
   <line x1="219" y1="22" x2="219" y2="10" stroke="#f59e0b" stroke-width="2"/>
   <polygon points="219,10 215,18 223,18" fill="#f59e0b"/>

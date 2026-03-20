@@ -48,10 +48,10 @@ export const note_olevel_chemistry_4_4_4 = {
   <text x="60" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">Cathode (-) Reduction</text>
 
   <!-- Cathode Solution Side -->
-  <rect x="100" y="40" width="130" height="200" fill="#e0f2fe" opacity="0.6"/>
+  <rect x="100" y="40" width="130" height="200" fill="#0c4a6e" opacity="0.6"/>
   <!-- Cu2+ ion approaching -->
   <circle cx="200" cy="180" r="16" fill="#3b82f6"/>
-  <text x="200" y="186" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Cu²⁺</text>
+  <text x="200" y="186" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Cu²⁺</text>
   <path d="M 180 180 L 140 180" stroke="#0284c7" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
   
   <!-- e- appearing -->
@@ -64,21 +64,21 @@ export const note_olevel_chemistry_4_4_4 = {
   
   <!-- Cu neutral atom deposited -->
   <circle cx="120" cy="150" r="16" fill="#d97706"/>
-  <text x="120" y="156" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Cu</text>
+  <text x="120" y="156" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Cu</text>
 
   <text x="115" y="260" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#0369a1" text-anchor="middle">Cu²⁺ + 2e⁻ → Cu</text>
 
 
   <!-- Right: Anode Oxidation -->
-  <rect x="270" y="40" width="130" height="200" fill="#fee2e2" opacity="0.6"/>
+  <rect x="270" y="40" width="130" height="200" fill="#3d1212" opacity="0.6"/>
   <rect x="400" y="40" width="80" height="200" fill="url(#anode)"/>
   <text x="440" y="30" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">Anode (+) Oxidation</text>
 
   <!-- Cl- ions approaching -->
   <circle cx="300" cy="100" r="14" fill="#10b981"/>
-  <text x="300" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Cl⁻</text>
+  <text x="300" y="105" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Cl⁻</text>
   <circle cx="300" cy="140" r="14" fill="#10b981"/>
-  <text x="300" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Cl⁻</text>
+  <text x="300" y="145" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Cl⁻</text>
   
   <path d="M 320 120 L 360 120" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
 
@@ -86,7 +86,7 @@ export const note_olevel_chemistry_4_4_4 = {
   <g transform="translate(370, 120)">
     <circle cx="0" cy="-8" r="12" fill="#047857"/>
     <circle cx="0" cy="8" r="12" fill="#047857"/>
-    <text x="0" y="4" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Cl₂</text>
+    <text x="0" y="4" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Cl₂</text>
   </g>
 
   <!-- Electrons going into Anode -->

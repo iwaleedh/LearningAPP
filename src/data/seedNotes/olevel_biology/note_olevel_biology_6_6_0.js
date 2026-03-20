@@ -54,20 +54,20 @@ export const note_olevel_biology_6_6_0 = {
       data: {
         caption: 'Summary diagram of photosynthesis — raw materials, products, and the role of chloroplasts',
         svg: `<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
-  <rect width="520" height="300" fill="#f0fdf4" rx="12"/>
+  <rect width="520" height="300" fill="#0a2e1a" rx="12"/>
   <text x="260" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Photosynthesis Summary</text>
 
   <!-- Central chloroplast shape -->
-  <ellipse cx="260" cy="155" rx="85" ry="65" fill="#86efac" stroke="#16a34a" stroke-width="2.5"/>
+  <ellipse cx="260" cy="155" rx="85" ry="65" fill="#0a2e1a" stroke="#16a34a" stroke-width="2.5"/>
   <!-- Thylakoid stacks inside -->
-  <rect x="220" y="128" width="80" height="10" rx="3" fill="#4ade80" stroke="#15803d" stroke-width="1"/>
-  <rect x="220" y="142" width="80" height="10" rx="3" fill="#4ade80" stroke="#15803d" stroke-width="1"/>
-  <rect x="220" y="156" width="80" height="10" rx="3" fill="#4ade80" stroke="#15803d" stroke-width="1"/>
+  <rect x="220" y="128" width="80" height="10" rx="3" fill="#0a4a1a" stroke="#15803d" stroke-width="1"/>
+  <rect x="220" y="142" width="80" height="10" rx="3" fill="#0a4a1a" stroke="#15803d" stroke-width="1"/>
+  <rect x="220" y="156" width="80" height="10" rx="3" fill="#0a4a1a" stroke="#15803d" stroke-width="1"/>
   <text x="260" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#14532d">CHLOROPLAST</text>
   <text x="260" y="185" text-anchor="middle" font-size="9" fill="#14532d">Contains chlorophyll</text>
 
   <!-- Sun / Light energy -->
-  <circle cx="90" cy="75" r="32" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <circle cx="90" cy="75" r="32" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="90" y="71" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">☀ Light</text>
   <text x="90" y="84" text-anchor="middle" font-size="10" fill="#92400e">energy</text>
   <!-- Arrow from sun to chloroplast -->
@@ -81,7 +81,7 @@ export const note_olevel_biology_6_6_0 = {
   <text x="145" y="121" font-size="9" fill="#92400e">chlorophyll</text>
 
   <!-- CO2 input -->
-  <rect x="15" y="150" width="90" height="35" rx="8" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="15" y="150" width="90" height="35" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="60" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">CO₂</text>
   <text x="60" y="178" text-anchor="middle" font-size="9" fill="#374151">from air via stomata</text>
   <defs>
@@ -92,7 +92,7 @@ export const note_olevel_biology_6_6_0 = {
   <line x1="105" y1="162" x2="173" y2="155" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowPS2)"/>
 
   <!-- H2O input -->
-  <rect x="15" y="210" width="90" height="35" rx="8" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="15" y="210" width="90" height="35" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="60" y="225" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">H₂O</text>
   <text x="60" y="238" text-anchor="middle" font-size="9" fill="#374151">from soil via roots</text>
   <line x1="105" y1="225" x2="173" y2="175" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowPS2)"/>
@@ -103,7 +103,7 @@ export const note_olevel_biology_6_6_0 = {
       <path d="M0,0 L0,6 L8,3 z" fill="#d97706"/>
     </marker>
   </defs>
-  <rect x="415" y="148" width="90" height="35" rx="8" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <rect x="415" y="148" width="90" height="35" rx="8" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="460" y="163" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Glucose</text>
   <text x="460" y="176" text-anchor="middle" font-size="9" fill="#374151">C₆H₁₂O₆</text>
   <line x1="345" y1="155" x2="413" y2="163" stroke="#d97706" stroke-width="2" marker-end="url(#arrowPS3)"/>
@@ -114,13 +114,13 @@ export const note_olevel_biology_6_6_0 = {
       <path d="M0,0 L0,6 L8,3 z" fill="#16a34a"/>
     </marker>
   </defs>
-  <rect x="415" y="208" width="90" height="35" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="415" y="208" width="90" height="35" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="460" y="223" text-anchor="middle" font-size="11" font-weight="bold" fill="#15803d">Oxygen</text>
   <text x="460" y="236" text-anchor="middle" font-size="9" fill="#374151">released via stomata</text>
   <line x1="345" y1="170" x2="413" y2="220" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowPS4)"/>
 
   <!-- Equation at bottom -->
-  <rect x="100" y="262" width="320" height="30" rx="8" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+  <rect x="100" y="262" width="320" height="30" rx="8" fill="#1e293b" stroke="#6b7280" stroke-width="1.5"/>
   <text x="260" y="281" text-anchor="middle" font-size="11" font-weight="bold" fill="#14532d">6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂   (light + chlorophyll)</text>
 </svg>`
       }

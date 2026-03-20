@@ -61,7 +61,7 @@ export const note_chemistry_5_20_5 = {
   <text x='110' y='24' font-size='13' font-weight='bold' fill='#1e3a5f'>Simple Distillation Apparatus</text>
   <text x='80' y='39' font-size='9' fill='#6b7280'>vapour travels along condenser and is collected as distillate in a separate flask</text>
   <!-- Round-bottom flask (left) -->
-  <ellipse cx='75' cy='220' rx='52' ry='38' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/>
+  <ellipse cx='75' cy='220' rx='52' ry='38' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='2'/>
   <line x1='56' y1='185' x2='52' y2='162' stroke='#1d4ed8' stroke-width='2'/>
   <line x1='94' y1='185' x2='98' y2='162' stroke='#1d4ed8' stroke-width='2'/>
   <line x1='52' y1='162' x2='98' y2='162' stroke='#1d4ed8' stroke-width='2'/>
@@ -90,7 +90,7 @@ export const note_chemistry_5_20_5 = {
   <!-- Adaptor to collection flask -->
   <line x1='328' y1='222' x2='346' y2='238' stroke='#1d4ed8' stroke-width='2'/>
   <!-- Collection flask (right) -->
-  <ellipse cx='375' cy='264' rx='40' ry='28' fill='#dcfce7' stroke='#15803d' stroke-width='2'/>
+  <ellipse cx='375' cy='264' rx='40' ry='28' fill='#0a2e1a' stroke='#15803d' stroke-width='2'/>
   <text x='348' y='298' font-size='9' fill='#15803d'>collecting flask</text>
   <text x='362' y='308' font-size='9' fill='#15803d'>(distillate)</text>
   <!-- Flask labels -->
@@ -153,7 +153,7 @@ export const note_chemistry_5_20_5 = {
   <text x='62' y='22' font-size='13' font-weight='bold' fill='#1e3a5f'>Reflux Apparatus</text>
   <text x='30' y='38' font-size='9' fill='#6b7280'>vapour condenses in vertical condenser and drips back into reaction flask</text>
   <!-- Round-bottom flask -->
-  <ellipse cx='150' cy='305' rx='58' ry='40' fill='#dbeafe' stroke='#1d4ed8' stroke-width='2'/>
+  <ellipse cx='150' cy='305' rx='58' ry='40' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='2'/>
   <!-- Flask neck -->
   <line x1='128' y1='268' x2='134' y2='248' stroke='#1d4ed8' stroke-width='2'/>
   <line x1='172' y1='268' x2='166' y2='248' stroke='#1d4ed8' stroke-width='2'/>
@@ -166,7 +166,7 @@ export const note_chemistry_5_20_5 = {
   <!-- Condenser outer jacket (vertical, dashed) -->
   <rect x='132' y='62' width='36' height='186' rx='4' fill='none' stroke='#93c5fd' stroke-width='1.2' stroke-dasharray='5,3'/>
   <!-- Inner condenser tube -->
-  <rect x='142' y='57' width='16' height='192' rx='3' fill='#bfdbfe' stroke='#1d4ed8' stroke-width='1.5'/>
+  <rect x='142' y='57' width='16' height='192' rx='3' fill='#1e3a8a' stroke='#1d4ed8' stroke-width='1.5'/>
   <!-- Water in at bottom of outer jacket -->
   <line x1='132' y1='215' x2='105' y2='215' stroke='#0ea5e9' stroke-width='1.5'/>
   <polygon points='114,211 105,215 114,219' fill='#0ea5e9'/>
@@ -276,7 +276,7 @@ export const note_chemistry_5_20_5 = {
         svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460 260' style='font-family:Arial,sans-serif;background:#f0f9ff;border-radius:8px'>
   <text x='140' y='22' font-size='13' font-weight='bold' fill='#1e3a5f'>Steam Distillation</text>
   <!-- Steam generator flask (left) -->
-  <ellipse cx='55' cy='165' rx='40' ry='30' fill='#fef9c3' stroke='#ca8a04' stroke-width='2'/>
+  <ellipse cx='55' cy='165' rx='40' ry='30' fill='#44370a' stroke='#ca8a04' stroke-width='2'/>
   <text x='22' y='200' font-size='9' fill='#ca8a04'>steam</text>
   <text x='18' y='210' font-size='9' fill='#ca8a04'>generator</text>
   <text x='26' y='220' font-size='9' fill='#ca8a04'>(heated)</text>
@@ -285,11 +285,11 @@ export const note_chemistry_5_20_5 = {
   <polygon points='160,156 168,160 160,164' fill='#ca8a04'/>
   <text x='100' y='153' font-size='9' fill='#ca8a04'>steam →</text>
   <!-- Reaction flask (centre) containing immiscible layers -->
-  <ellipse cx='215' cy='170' rx='52' ry='38' fill='#e0e7ff' stroke='#4338ca' stroke-width='2'/>
+  <ellipse cx='215' cy='170' rx='52' ry='38' fill='#2d2d72' stroke='#4338ca' stroke-width='2'/>
   <!-- Two liquid layers inside -->
-  <ellipse cx='215' cy='163' rx='43' ry='12' fill='#bae6fd' opacity='0.85'/>
+  <ellipse cx='215' cy='163' rx='43' ry='12' fill='#0c4a6e' opacity='0.85'/>
   <text x='186' y='166' font-size='8' fill='#0369a1'>organic layer</text>
-  <ellipse cx='215' cy='182' rx='43' ry='13' fill='#bbf7d0' opacity='0.85'/>
+  <ellipse cx='215' cy='182' rx='43' ry='13' fill='#0a3020' opacity='0.85'/>
   <text x='192' y='186' font-size='8' fill='#15803d'>water layer</text>
   <!-- Agitation bubbles from steam -->
   <circle cx='200' cy='150' r='3' fill='none' stroke='#7c3aed' stroke-width='1.2'/>
@@ -304,13 +304,13 @@ export const note_chemistry_5_20_5 = {
   <line x1='273' y1='131' x2='371' y2='177' stroke='#93c5fd' stroke-width='5' opacity='0.7'/>
   <text x='290' y='143' font-size='9' fill='#374151' transform='rotate(25,290,143)'>condenser</text>
   <!-- Collection flask (right) -->
-  <ellipse cx='400' cy='215' rx='33' ry='22' fill='#dcfce7' stroke='#16a34a' stroke-width='2'/>
+  <ellipse cx='400' cy='215' rx='33' ry='22' fill='#0a2e1a' stroke='#16a34a' stroke-width='2'/>
   <line x1='372' y1='179' x2='382' y2='200' stroke='#4338ca' stroke-width='2'/>
   <text x='377' y='243' font-size='9' fill='#16a34a'>distillate</text>
   <text x='368' y='253' font-size='9' fill='#16a34a'>(two layers →</text>
   <text x='368' y='263' font-size='9' fill='#16a34a'>sep. funnel)</text>
   <!-- Key callout box -->
-  <rect x='80' y='55' width='230' height='38' rx='4' fill='#fef3c7' stroke='#f59e0b' stroke-width='1'/>
+  <rect x='80' y='55' width='230' height='38' rx='4' fill='#78350f' stroke='#f59e0b' stroke-width='1'/>
   <text x='90' y='71' font-size='10' fill='#92400e'>Key: organic liquid distils at temperature</text>
   <text x='90' y='85' font-size='10' fill='#92400e' font-weight='bold'>LOWER than its own boiling point</text>
 </svg>`,

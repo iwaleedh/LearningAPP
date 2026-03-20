@@ -9,19 +9,19 @@ export const note_olevel_physics_5_2_3 = {
     { id: 'h-chain', type: 'heading', data: { text: 'Chain Reaction', level: 2 } },
     { id: 'para-chain', type: 'paragraph', data: { text: 'The neutrons released in fission can be absorbed by other U-235 nuclei, triggering further fission events. This is a <strong>chain reaction</strong>. If each fission produces on average one new fission event, the reaction is controlled (as in a nuclear reactor). If more than one new event is triggered per fission, the reaction accelerates exponentially — this is uncontrolled fission, as in a nuclear bomb.' } },
     { id: 'svg-chain', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" width="480" height="260">
-  <rect width="480" height="260" fill="#fff7ed" rx="8"/>
+  <rect width="480" height="260" fill="#532407" rx="8"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Nuclear Fission Chain Reaction</text>
   <!-- First nucleus -->
-  <circle cx="60" cy="130" r="18" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+  <circle cx="60" cy="130" r="18" fill="#78350f" stroke="#d97706" stroke-width="2"/>
   <text x="60" y="134" text-anchor="middle" font-size="9" fill="#1e293b">U-235</text>
   <!-- Incoming neutron -->
   <circle cx="30" cy="130" r="5" fill="#64748b"/>
   <line x1="35" y1="130" x2="42" y2="130" stroke="#64748b" stroke-width="1.5" marker-end="url(#n1)"/>
   <!-- First fission products -->
   <circle cx="140" cy="100" r="13" fill="#ef4444" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="140" y="104" text-anchor="middle" font-size="8" fill="white">Ba</text>
+  <text x="140" y="104" text-anchor="middle" font-size="8" fill="#1e293b">Ba</text>
   <circle cx="140" cy="160" r="10" fill="#3b82f6" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="140" y="164" text-anchor="middle" font-size="8" fill="white">Kr</text>
+  <text x="140" y="164" text-anchor="middle" font-size="8" fill="#1e293b">Kr</text>
   <!-- Arrows from first fission -->
   <line x1="78" y1="118" x2="127" y2="100" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3"/>
   <line x1="78" y1="142" x2="130" y2="155" stroke="#f97316" stroke-width="1.5" stroke-dasharray="3"/>
@@ -30,11 +30,11 @@ export const note_olevel_physics_5_2_3 = {
   <circle cx="185" cy="130" r="5" fill="#64748b"/>
   <circle cx="175" cy="175" r="5" fill="#64748b"/>
   <!-- Second generation nuclei and fissions -->
-  <circle cx="250" cy="65" r="14" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="250" cy="65" r="14" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="250" y="69" text-anchor="middle" font-size="8" fill="#1e293b">U-235</text>
-  <circle cx="250" cy="130" r="14" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="250" cy="130" r="14" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="250" y="134" text-anchor="middle" font-size="8" fill="#1e293b">U-235</text>
-  <circle cx="250" cy="195" r="14" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="250" cy="195" r="14" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="250" y="199" text-anchor="middle" font-size="8" fill="#1e293b">U-235</text>
   <!-- Arrows to second gen -->
   <line x1="180" y1="85" x2="236" y2="65" stroke="#64748b" stroke-width="1.5" marker-end="url(#n1)"/>

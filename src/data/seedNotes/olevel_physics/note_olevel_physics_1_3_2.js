@@ -44,11 +44,11 @@ export const note_olevel_physics_1_3_2 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="420" height="260" fill="#f0f9ff" rx="10"/>
+  <rect width="420" height="260" fill="#1c3a64" rx="10"/>
   <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#0c4a6e">Water Displacement Method for Irregular Solids</text>
   <!-- Measuring cylinder 1 (before) -->
   <rect x="50" y="50" width="60" height="160" fill="none" stroke="#374151" stroke-width="2" rx="3"/>
-  <rect x="50" y="130" width="60" height="80" fill="#bfdbfe" opacity="0.8"/>
+  <rect x="50" y="130" width="60" height="80" fill="#1e3a8a" opacity="0.8"/>
   <line x1="40" y1="130" x2="120" y2="130" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2"/>
   <text x="80" y="123" text-anchor="middle" font-size="10" fill="#1d4ed8">50 cm³</text>
   <text x="80" y="226" text-anchor="middle" font-size="11" fill="#374151">Before</text>
@@ -56,17 +56,17 @@ export const note_olevel_physics_1_3_2 = {
   <text x="175" y="135" text-anchor="middle" font-size="24" fill="#374151">→</text>
   <!-- Object being lowered -->
   <ellipse cx="175" cy="100" rx="18" ry="14" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
-  <text x="175" y="104" text-anchor="middle" font-size="10" fill="white">rock</text>
+  <text x="175" y="104" text-anchor="middle" font-size="10" fill="#1e293b">rock</text>
   <!-- Measuring cylinder 2 (after) -->
   <rect x="240" y="50" width="60" height="160" fill="none" stroke="#374151" stroke-width="2" rx="3"/>
-  <rect x="240" y="110" width="60" height="100" fill="#bfdbfe" opacity="0.8"/>
+  <rect x="240" y="110" width="60" height="100" fill="#1e3a8a" opacity="0.8"/>
   <!-- Submerged rock -->
   <ellipse cx="270" cy="156" rx="16" ry="12" fill="#94a3b8" opacity="0.7"/>
   <line x1="230" y1="110" x2="310" y2="110" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2"/>
   <text x="270" y="103" text-anchor="middle" font-size="10" fill="#1d4ed8">72 cm³</text>
   <text x="270" y="226" text-anchor="middle" font-size="11" fill="#374151">After</text>
   <!-- Calculation box -->
-  <rect x="330" y="80" width="80" height="80" fill="white" rx="6" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="330" y="80" width="80" height="80" fill="#1e293b" rx="6" stroke="#d1d5db" stroke-width="1"/>
   <text x="370" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Volume</text>
   <text x="370" y="116" text-anchor="middle" font-size="11" fill="#374151">= 72 − 50</text>
   <text x="370" y="132" text-anchor="middle" font-size="11" fill="#1d4ed8" font-weight="bold">= 22 cm³</text>

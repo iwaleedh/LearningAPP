@@ -23,32 +23,32 @@ export const note_olevel_biology_7_7_1 = {
         caption: 'The human digestive system — organs of the alimentary canal and accessory organs',
         svg: `<svg viewBox="0 0 420 600" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Background -->
-  <rect width="420" height="600" fill="#f8f9fa" rx="12"/>
+  <rect width="420" height="600" fill="#0f172a" rx="12"/>
   <text x="210" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e293b">Human Digestive System</text>
 
   <!-- Mouth -->
-  <ellipse cx="210" cy="60" rx="30" ry="16" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+  <ellipse cx="210" cy="60" rx="30" ry="16" fill="#44370a" stroke="#b45309" stroke-width="1.5"/>
   <text x="210" y="64" text-anchor="middle" font-size="11" fill="#78350f">Mouth</text>
 
   <!-- Oesophagus -->
-  <rect x="198" y="76" width="24" height="55" rx="5" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <rect x="198" y="76" width="24" height="55" rx="5" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="248" y="107" text-anchor="start" font-size="11" fill="#1d4ed8">Oesophagus</text>
   <line x1="243" y1="105" x2="222" y2="105" stroke="#1d4ed8" stroke-width="1"/>
 
   <!-- Stomach -->
-  <ellipse cx="195" cy="175" rx="45" ry="35" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/>
+  <ellipse cx="195" cy="175" rx="45" ry="35" fill="#7f1d1d" stroke="#b91c1c" stroke-width="1.5"/>
   <text x="195" y="179" text-anchor="middle" font-size="11" fill="#7f1d1d">Stomach</text>
 
   <!-- Liver -->
-  <ellipse cx="300" cy="162" rx="42" ry="28" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/>
+  <ellipse cx="300" cy="162" rx="42" ry="28" fill="#0a3020" stroke="#15803d" stroke-width="1.5"/>
   <text x="300" y="166" text-anchor="middle" font-size="11" fill="#14532d">Liver</text>
 
   <!-- Gall bladder -->
-  <ellipse cx="280" cy="198" rx="18" ry="12" fill="#86efac" stroke="#15803d" stroke-width="1.5"/>
+  <ellipse cx="280" cy="198" rx="18" ry="12" fill="#0a2e1a" stroke="#15803d" stroke-width="1.5"/>
   <text x="280" y="215" text-anchor="middle" font-size="10" fill="#14532d">Gall bladder</text>
 
   <!-- Pancreas -->
-  <ellipse cx="270" cy="240" rx="38" ry="16" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.5"/>
+  <ellipse cx="270" cy="240" rx="38" ry="16" fill="#2d1b69" stroke="#7e22ce" stroke-width="1.5"/>
   <text x="270" y="244" text-anchor="middle" font-size="11" fill="#4c1d95">Pancreas</text>
 
   <!-- Small intestine (duodenum + ileum coil) -->
@@ -64,7 +64,7 @@ export const note_olevel_biology_7_7_1 = {
   <line x1="88" y1="256" x2="122" y2="256" stroke="#475569" stroke-width="1"/>
 
   <!-- Rectum -->
-  <rect x="198" y="350" width="24" height="40" rx="5" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+  <rect x="198" y="350" width="24" height="40" rx="5" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
   <text x="244" y="374" text-anchor="start" font-size="11" fill="#475569">Rectum</text>
   <line x1="243" y1="372" x2="222" y2="372" stroke="#475569" stroke-width="1"/>
 
@@ -134,18 +134,18 @@ export const note_olevel_biology_7_7_1 = {
       data: {
         caption: 'Peristalsis — wave of muscular contraction moves food through the gut',
         svg: `<svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="480" height="160" fill="#f8f9fa" rx="10"/>
+  <rect width="480" height="160" fill="#0f172a" rx="10"/>
   <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Peristalsis</text>
 
   <!-- Gut tube - relaxed region ahead -->
-  <path d="M 20 60 Q 20 40 40 40 L 160 40 Q 170 40 170 60 L 170 100 Q 170 120 160 120 L 40 120 Q 20 120 20 100 Z" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+  <path d="M 20 60 Q 20 40 40 40 L 160 40 Q 170 40 170 60 L 170 100 Q 170 120 160 120 L 40 120 Q 20 120 20 100 Z" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Circular muscle contracting (narrowed) -->
-  <path d="M 170 60 Q 175 70 175 80 Q 175 90 170 100 L 220 100 Q 225 90 225 80 Q 225 70 220 60 Z" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+  <path d="M 170 60 Q 175 70 175 80 Q 175 90 170 100 L 220 100 Q 225 90 225 80 Q 225 70 220 60 Z" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2"/>
   <!-- Bolus -->
-  <ellipse cx="280" cy="80" rx="35" ry="28" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <ellipse cx="280" cy="80" rx="35" ry="28" fill="#44370a" stroke="#b45309" stroke-width="2"/>
   <text x="280" y="84" text-anchor="middle" font-size="11" fill="#78350f">Bolus</text>
   <!-- Relaxed tube ahead -->
-  <path d="M 315 52 Q 325 40 340 40 L 440 40 Q 460 40 460 60 L 460 100 Q 460 120 440 120 L 340 120 Q 325 120 315 108" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <path d="M 315 52 Q 325 40 340 40 L 440 40 Q 460 40 460 60 L 460 100 Q 460 120 440 120 L 340 120 Q 325 120 315 108" fill="#0c4a6e" stroke="#0369a1" stroke-width="2"/>
 
   <!-- Arrow showing direction -->
   <line x1="350" y1="80" x2="430" y2="80" stroke="#0369a1" stroke-width="2" marker-end="url(#arr)"/>

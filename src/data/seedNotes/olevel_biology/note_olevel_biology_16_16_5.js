@@ -105,29 +105,29 @@ export const note_olevel_biology_16_16_5 = {
       data: {
         caption: 'HIV transmission routes (summary)',
         svg: `<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="480" height="220" fill="#fafafa" rx="8"/>
+  <rect width="480" height="220" fill="#0f172a" rx="8"/>
   <!-- Central label -->
   <ellipse cx="240" cy="110" rx="52" ry="32" fill="#e53935" opacity="0.85"/>
-  <text x="240" y="105" text-anchor="middle" fill="white" font-weight="bold" font-size="13">HIV</text>
-  <text x="240" y="120" text-anchor="middle" fill="white" font-size="11">Virus</text>
+  <text x="240" y="105" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">HIV</text>
+  <text x="240" y="120" text-anchor="middle" fill="#1e293b" font-size="11">Virus</text>
   <!-- Routes -->
   <!-- Sexual -->
-  <rect x="20" y="48" width="120" height="36" rx="6" fill="#ffcdd2" stroke="#e57373"/>
+  <rect x="20" y="48" width="120" height="36" rx="6" fill="#7f1d1d" stroke="#e57373"/>
   <text x="80" y="64" text-anchor="middle" fill="#b71c1c" font-size="11">Unprotected</text>
   <text x="80" y="78" text-anchor="middle" fill="#b71c1c" font-size="11">sexual contact</text>
   <line x1="140" y1="66" x2="188" y2="100" stroke="#e57373" stroke-width="1.5" marker-end="url(#arr)"/>
   <!-- Blood -->
-  <rect x="20" y="135" width="120" height="36" rx="6" fill="#ffcdd2" stroke="#e57373"/>
+  <rect x="20" y="135" width="120" height="36" rx="6" fill="#7f1d1d" stroke="#e57373"/>
   <text x="80" y="150" text-anchor="middle" fill="#b71c1c" font-size="11">Shared needles /</text>
   <text x="80" y="164" text-anchor="middle" fill="#b71c1c" font-size="11">blood transfusion</text>
   <line x1="140" y1="153" x2="188" y2="120" stroke="#e57373" stroke-width="1.5"/>
   <!-- Mother-baby -->
-  <rect x="340" y="48" width="120" height="36" rx="6" fill="#ffcdd2" stroke="#e57373"/>
+  <rect x="340" y="48" width="120" height="36" rx="6" fill="#7f1d1d" stroke="#e57373"/>
   <text x="400" y="64" text-anchor="middle" fill="#b71c1c" font-size="11">Mother to child</text>
   <text x="400" y="78" text-anchor="middle" fill="#b71c1c" font-size="11">(placenta/milk)</text>
   <line x1="340" y1="66" x2="292" y2="100" stroke="#e57373" stroke-width="1.5"/>
   <!-- Breastfeeding -->
-  <rect x="340" y="135" width="120" height="36" rx="6" fill="#ffcdd2" stroke="#e57373"/>
+  <rect x="340" y="135" width="120" height="36" rx="6" fill="#7f1d1d" stroke="#e57373"/>
   <text x="400" y="150" text-anchor="middle" fill="#b71c1c" font-size="11">Breastfeeding</text>
   <text x="400" y="164" text-anchor="middle" fill="#b71c1c" font-size="11">(breast milk)</text>
   <line x1="340" y1="153" x2="292" y2="120" stroke="#e57373" stroke-width="1.5"/>

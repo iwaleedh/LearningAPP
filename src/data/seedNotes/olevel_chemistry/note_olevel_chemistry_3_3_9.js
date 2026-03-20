@@ -20,7 +20,7 @@ export const note_olevel_chemistry_3_3_9 = {
   <rect width="500" height="200" fill="var(--color-surface)" rx="8"/>
   
   <!-- Empirical -->
-  <rect x="50" y="40" width="160" height="120" fill="white" fill-opacity="0.05" stroke="var(--color-primary)" stroke-width="2" rx="8"/>
+  <rect x="50" y="40" width="160" height="120" fill="#1e293b" fill-opacity="0.05" stroke="var(--color-primary)" stroke-width="2" rx="8"/>
   <text x="130" y="70" font-family="sans-serif" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">Empirical Formula</text>
   <text x="130" y="110" font-family="sans-serif" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">CH₂</text>
   <text x="130" y="140" font-family="sans-serif" font-size="14" fill="var(--color-text-secondary)" text-anchor="middle">Ratio 1:2</text>
@@ -30,7 +30,7 @@ export const note_olevel_chemistry_3_3_9 = {
   <text x="250" y="90" font-family="sans-serif" font-size="16" font-weight="bold" fill="var(--color-success)" text-anchor="middle">× 2 (n)</text>
   
   <!-- Molecular -->
-  <rect x="290" y="40" width="160" height="120" fill="var(--color-primary)" fill-opacity="0.1" stroke="var(--color-primary)" stroke-width="2" rx="8"/>
+  <rect x="290" y="40" width="160" height="120" fill="var(--color-primary)" fill-opacity="0.4" stroke="var(--color-primary)" stroke-width="2" rx="8"/>
   <text x="370" y="70" font-family="sans-serif" font-size="16" font-weight="bold" fill="var(--color-primary)" text-anchor="middle">Molecular Formula</text>
   <text x="370" y="110" font-family="sans-serif" font-size="28" font-weight="bold" fill="var(--color-text)" text-anchor="middle">C₂H₄</text>
   <text x="370" y="140" font-family="sans-serif" font-size="14" fill="var(--color-text-secondary)" text-anchor="middle">Actual number</text>

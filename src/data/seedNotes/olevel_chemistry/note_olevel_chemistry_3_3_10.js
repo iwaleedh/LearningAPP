@@ -62,7 +62,7 @@ export const note_olevel_chemistry_3_3_10 = {
     <text x="-10" y="90" font-family="var(--font-sans)" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="end">Actual Yield</text>
     <path d="M-5,85 L0,85" stroke="#3b82f6" stroke-width="1"/>
     
-    <text x="50" y="95" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">80%</text>
+    <text x="50" y="95" font-family="var(--font-sans)" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">80%</text>
 
     <!-- Overall label right side -->
     <path d="M105,0 L115,0 M110,0 L110,150 M115,150 L105,150" stroke="var(--color-text-secondary)" stroke-width="2" fill="none"/>

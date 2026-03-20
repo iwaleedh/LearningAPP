@@ -161,7 +161,7 @@ export const note_chemistry_5_19_3 = {
           id: 'svg-diazonium-substitution',
           type: 'svg',
           data: {
-            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Diazonium ion (C₆H₅N₂⁺) + H₂O (warm)</text><text x="10" y="40" font-size="14" fill="#333">→ Phenol + N₂</text><text x="10" y="60" font-size="14" fill="#333">Diazonium ion + KI (cold) → Iodobenzene + N₂</text></svg>',
+            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#333">Diazonium ion (C₆H₅N₂⁺) + H₂O (warm)</text><text x="10" y="40" font-size="14" fill="#333">→ Phenol + N₂</text><text x="10" y="60" font-size="14" fill="#333">Diazonium ion + KI (cold) → Iodobenzene + N₂</text></svg>',
             caption: 'Substitution reactions: −N₂⁺ replaced by −OH (warm) or −I (cold), releasing nitrogen gas.'
           }
         },
@@ -194,7 +194,7 @@ export const note_chemistry_5_19_3 = {
           id: 'svg-diazonium-coupling',
           type: 'svg',
           data: {
-            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Diazonium ion + phenoxide (NaOH, cold)</text><text x="10" y="40" font-size="14" fill="#333">→ Orange azo dye</text><text x="10" y="60" font-size="14" fill="#333">Diazonium ion + naphthoxide → Red azo dye</text></svg>',
+            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#333">Diazonium ion + phenoxide (NaOH, cold)</text><text x="10" y="40" font-size="14" fill="#333">→ Orange azo dye</text><text x="10" y="60" font-size="14" fill="#333">Diazonium ion + naphthoxide → Red azo dye</text></svg>',
             caption: 'Coupling reactions: diazonium ion forms azo dyes with phenol, naphthol, or aniline under cold, alkaline conditions.'
           }
         },
@@ -228,7 +228,7 @@ export const note_chemistry_5_19_3 = {
           id: 'svg-methyl-orange-colours',
           type: 'svg',
           data: {
-            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#f9f9f9"/><text x="10" y="20" font-size="14" fill="#333">Methyl orange: red (acid), orange (mid), yellow (alkali)</text></svg>',
+            svg: '<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="220" height="80" fill="#0f172a"/><text x="10" y="20" font-size="14" fill="#333">Methyl orange: red (acid), orange (mid), yellow (alkali)</text></svg>',
             caption: 'Methyl orange colour changes: red in acid, yellow in alkali, orange in between.'
           }
         },

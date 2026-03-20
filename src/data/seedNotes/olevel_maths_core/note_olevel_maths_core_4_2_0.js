@@ -70,7 +70,7 @@ export const note_olevel_maths_core_4_2_0 = {
   <g transform="translate(30, 20)">
     <text x="40" y="0" class="title">Interior angles: a + b + c = 180°</text>
     <!-- Triangle -->
-    <polygon points="100,160 220,160 160,50" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <polygon points="100,160 220,160 160,50" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
     <!-- Angle arcs -->
     <path d="M113,160 A15,15 0 0,0 107,146" fill="none" stroke="#6366f1" stroke-width="1.5"/>
     <path d="M207,160 A15,15 0 0,1 214,147" fill="none" stroke="#6366f1" stroke-width="1.5"/>
@@ -84,7 +84,7 @@ export const note_olevel_maths_core_4_2_0 = {
   <g transform="translate(295, 20)">
     <text x="10" y="0" class="title">Exterior angle = a + b</text>
     <!-- Triangle -->
-    <polygon points="30,160 165,160 100,50" fill="#fce7f3" stroke="#9333ea" stroke-width="2"/>
+    <polygon points="30,160 165,160 100,50" fill="#4a1040" stroke="#9333ea" stroke-width="2"/>
     <!-- Extended line -->
     <line x1="165" y1="160" x2="220" y2="160" stroke="#374151" stroke-width="2" stroke-dasharray="5,3"/>
     <!-- Interior angle arcs -->

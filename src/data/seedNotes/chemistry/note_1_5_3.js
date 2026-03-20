@@ -159,7 +159,7 @@ export const note_chemistry_1_5_3 = {
   <path d="M 304 227 L 324 227" class="bnd"/>
   <text x="335" y="228" class="atm" text-anchor="middle" dominant-baseline="central">Br</text>
   <text x="285" y="250" class="dim" text-anchor="middle">bromoethane (product)</text>
-  <rect x="20" y="274" width="610" height="34" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <rect x="20" y="274" width="610" height="34" rx="6" fill="#0a2e1a" stroke="#86efac" stroke-width="1"/>
   <text x="325" y="295" class="lbl" text-anchor="middle" dominant-baseline="central">Overall: CH₂=CH₂ + HBr → CH₃CH₂Br</text>
 </svg>`
       },
@@ -309,7 +309,7 @@ export const note_chemistry_1_5_3 = {
   <path d="M 314 209 L 334 209" class="bnd"/>
   <text x="346" y="210" class="atm" text-anchor="middle" dominant-baseline="central">CH₂Br</text>
   <text x="311" y="230" class="dim" text-anchor="middle">1,2-dibromoethane</text>
-  <rect x="20" y="242" width="610" height="24" rx="5" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <rect x="20" y="242" width="610" height="24" rx="5" fill="#0a2e1a" stroke="#86efac" stroke-width="1"/>
   <text x="325" y="257" class="lbl" text-anchor="middle" dominant-baseline="central">Overall: CH₂=CH₂ + Br₂ → CH₂BrCH₂Br (1,2-dibromoethane)</text>
 </svg>`
       },
@@ -442,7 +442,7 @@ export const note_chemistry_1_5_3 = {
   <text x="420" y="153" class="dim" text-anchor="middle">1,2-dibromocyclohexane</text>
 
   <!-- ── Overall equation bar ── -->
-  <rect x="20" y="163" width="520" height="17" rx="3" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <rect x="20" y="163" width="520" height="17" rx="3" fill="#0a2e1a" stroke="#86efac" stroke-width="1"/>
   <text x="280" y="173" class="lbl" text-anchor="middle" dominant-baseline="central">C₆H₁₀ + Br₂ → C₆H₁₀Br₂ (1,2-dibromocyclohexane; cold; no catalyst)</text>
 </svg>`
       },

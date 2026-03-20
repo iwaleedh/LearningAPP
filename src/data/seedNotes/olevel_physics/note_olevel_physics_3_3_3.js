@@ -63,7 +63,7 @@ export const note_olevel_physics_3_3_3 = {
   <rect x="55" y="80" width="8" height="40" fill="#6366f1" rx="2"/>
   <text x="35" y="158" text-anchor="middle" fill="#475569">Probe</text>
   <!-- Body region -->
-  <rect x="63" y="55" width="280" height="90" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" rx="3"/>
+  <rect x="63" y="55" width="280" height="90" fill="#78350f" stroke="#f59e0b" stroke-width="1" rx="3"/>
   <text x="160" y="155" text-anchor="middle" fill="#f59e0b">Tissue (v ≈ 1500 m/s)</text>
   <!-- Tissue boundary -->
   <line x1="343" y1="55" x2="343" y2="145" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 3"/>

@@ -23,15 +23,15 @@ export const note_olevel_biology_14_14_2 = {
         caption: 'Cross-section of the human eye showing key structures',
         svg: `<svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Sclera (white outer coat) -->
-  <ellipse cx="220" cy="180" rx="160" ry="150" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/>
+  <ellipse cx="220" cy="180" rx="160" ry="150" fill="#0f172a" stroke="#94a3b8" stroke-width="3"/>
   <!-- Choroid (dark layer) -->
   <ellipse cx="220" cy="180" rx="145" ry="135" fill="#1e293b" stroke="none"/>
   <!-- Retina (inner layer) -->
   <ellipse cx="220" cy="180" rx="130" ry="120" fill="#1e3a8a" stroke="none" opacity="0.6"/>
   <!-- Vitreous humour (inner space) -->
-  <ellipse cx="220" cy="185" rx="100" ry="105" fill="#e0f2fe" stroke="none"/>
+  <ellipse cx="220" cy="185" rx="100" ry="105" fill="#0c4a6e" stroke="none"/>
   <!-- Aqueous humour (front chamber) -->
-  <path d="M100 155 Q85 175 100 200 Q115 185 115 175 Z" fill="#bae6fd" stroke="none"/>
+  <path d="M100 155 Q85 175 100 200 Q115 185 115 175 Z" fill="#0c4a6e" stroke="none"/>
 
   <!-- Cornea -->
   <path d="M90 155 Q55 178 90 200" fill="none" stroke="#0ea5e9" stroke-width="4"/>
@@ -48,7 +48,7 @@ export const note_olevel_biology_14_14_2 = {
   <line x1="48" y1="228" x2="100" y2="178" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 2"/>
 
   <!-- Lens -->
-  <ellipse cx="135" cy="178" rx="18" ry="22" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
+  <ellipse cx="135" cy="178" rx="18" ry="22" fill="#44370a" stroke="#ca8a04" stroke-width="2.5"/>
   <text x="120" y="135" fill="#92400e" font-weight="bold" font-size="11">Lens</text>
   <line x1="135" y1="140" x2="135" y2="155" stroke="#92400e" stroke-width="1"/>
 
@@ -64,20 +64,20 @@ export const note_olevel_biology_14_14_2 = {
   <text x="178" y="225" fill="#15803d" font-size="9">Ciliary muscle</text>
 
   <!-- Yellow spot / fovea -->
-  <circle cx="320" cy="180" r="8" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+  <circle cx="320" cy="180" r="8" fill="#78350f" stroke="#d97706" stroke-width="2"/>
   <text x="330" y="158" fill="#d97706" font-size="10">Fovea (yellow spot)</text>
   <text x="338" y="169" fill="#d97706" font-size="10">— highest cone density</text>
   <line x1="333" y1="171" x2="323" y2="176" stroke="#d97706" stroke-width="1"/>
 
   <!-- Blind spot -->
-  <circle cx="330" cy="220" r="8" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
+  <circle cx="330" cy="220" r="8" fill="#7f1d1d" stroke="#dc2626" stroke-width="2"/>
   <text x="345" y="225" fill="#dc2626" font-size="10">Blind spot</text>
   <line x1="343" y1="223" x2="338" y2="222" stroke="#dc2626" stroke-width="1"/>
 
   <!-- Optic nerve -->
   <rect x="340" y="208" width="80" height="24" rx="4" fill="#7c3aed" stroke="#6d28d9" stroke-width="2"/>
   <line x1="338" y1="220" x2="340" y2="220" stroke="#7c3aed" stroke-width="2"/>
-  <text x="380" y="224" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Optic nerve</text>
+  <text x="380" y="224" text-anchor="middle" fill="#1e293b" font-size="10" font-weight="bold">Optic nerve</text>
   <text x="422" y="205" fill="#7c3aed" font-size="10">(to brain)</text>
 
   <!-- Retina label -->

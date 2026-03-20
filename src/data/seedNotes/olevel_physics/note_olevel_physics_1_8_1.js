@@ -26,36 +26,36 @@ export const note_olevel_physics_1_8_1 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 440 170" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="440" height="170" fill="#f8fafc" rx="10"/>
+  <rect width="440" height="170" fill="#0f172a" rx="10"/>
   <text x="220" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Fossil Fuel Power Station — Energy Chain</text>
   <!-- Step boxes -->
   <rect x="10" y="40" width="72" height="40" rx="5" fill="#dc2626"/>
-  <text x="46" y="58" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Boiler</text>
-  <text x="46" y="70" text-anchor="middle" font-size="8" fill="white">Burns fuel</text>
+  <text x="46" y="58" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Boiler</text>
+  <text x="46" y="70" text-anchor="middle" font-size="8" fill="#1e293b">Burns fuel</text>
   <line x1="82" y1="60" x2="98" y2="60" stroke="#374151" stroke-width="2"/>
   <polygon points="98,60 90,56 90,64" fill="#374151"/>
 
   <rect x="98" y="40" width="72" height="40" rx="5" fill="#0ea5e9"/>
-  <text x="134" y="58" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Steam</text>
-  <text x="134" y="70" text-anchor="middle" font-size="8" fill="white">Produced</text>
+  <text x="134" y="58" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Steam</text>
+  <text x="134" y="70" text-anchor="middle" font-size="8" fill="#1e293b">Produced</text>
   <line x1="170" y1="60" x2="186" y2="60" stroke="#374151" stroke-width="2"/>
   <polygon points="186,60 178,56 178,64" fill="#374151"/>
 
   <rect x="186" y="40" width="72" height="40" rx="5" fill="#16a34a"/>
-  <text x="222" y="58" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Turbine</text>
-  <text x="222" y="70" text-anchor="middle" font-size="8" fill="white">Spins</text>
+  <text x="222" y="58" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Turbine</text>
+  <text x="222" y="70" text-anchor="middle" font-size="8" fill="#1e293b">Spins</text>
   <line x1="258" y1="60" x2="274" y2="60" stroke="#374151" stroke-width="2"/>
   <polygon points="274,60 266,56 266,64" fill="#374151"/>
 
   <rect x="274" y="40" width="80" height="40" rx="5" fill="#7c3aed"/>
-  <text x="314" y="58" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Generator</text>
-  <text x="314" y="70" text-anchor="middle" font-size="8" fill="white">Electricity</text>
+  <text x="314" y="58" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Generator</text>
+  <text x="314" y="70" text-anchor="middle" font-size="8" fill="#1e293b">Electricity</text>
   <line x1="354" y1="60" x2="370" y2="60" stroke="#374151" stroke-width="2"/>
   <polygon points="370,60 362,56 362,64" fill="#374151"/>
 
-  <rect x="370" y="40" width="60" height="40" rx="5" fill="#f59e0b"/>
-  <text x="400" y="58" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Grid</text>
-  <text x="400" y="70" text-anchor="middle" font-size="8" fill="white">Homes/Industry</text>
+  <rect x="370" y="40" width="60" height="40" rx="5" fill="#78350f"/>
+  <text x="400" y="58" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Grid</text>
+  <text x="400" y="70" text-anchor="middle" font-size="8" fill="#1e293b">Homes/Industry</text>
 
   <!-- Energy types below -->
   <text x="46" y="100" text-anchor="middle" font-size="9" fill="#dc2626">Chemical</text>

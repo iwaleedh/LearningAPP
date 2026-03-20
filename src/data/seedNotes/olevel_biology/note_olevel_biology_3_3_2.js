@@ -35,49 +35,49 @@ export const note_olevel_biology_3_3_2 = {
       data: {
         caption: 'Active transport — carrier proteins move molecules against the concentration gradient using ATP energy',
         svg: `<svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
-  <rect width="500" height="260" fill="#fdf4ff" rx="12"/>
+  <rect width="500" height="260" fill="#2d1b69" rx="12"/>
   <text x="250" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#6d28d9">Active Transport</text>
 
   <!-- Membrane -->
-  <rect x="220" y="36" width="60" height="185" fill="#a78bfa" rx="6" opacity="0.3"/>
+  <rect x="220" y="36" width="60" height="185" fill="#2d1b69" rx="6" opacity="0.3"/>
   <rect x="220" y="36" width="60" height="185" fill="none" stroke="#7c3aed" stroke-width="2" rx="6"/>
   <text x="250" y="232" text-anchor="middle" font-size="9" fill="#5b21b6">Cell membrane</text>
 
   <!-- Phospholipid bilayer representation -->
-  <circle cx="235" cy="60" r="6" fill="#c4b5fd"/>
-  <rect x="232" y="66" width="6" height="15" fill="#a78bfa"/>
-  <circle cx="248" cy="60" r="6" fill="#c4b5fd"/>
-  <rect x="245" y="66" width="6" height="15" fill="#a78bfa"/>
-  <circle cx="235" cy="205" r="6" fill="#c4b5fd"/>
-  <rect x="232" y="185" width="6" height="20" fill="#a78bfa"/>
-  <circle cx="248" cy="205" r="6" fill="#c4b5fd"/>
-  <rect x="245" y="185" width="6" height="20" fill="#a78bfa"/>
+  <circle cx="235" cy="60" r="6" fill="#2d1b69"/>
+  <rect x="232" y="66" width="6" height="15" fill="#2d1b69"/>
+  <circle cx="248" cy="60" r="6" fill="#2d1b69"/>
+  <rect x="245" y="66" width="6" height="15" fill="#2d1b69"/>
+  <circle cx="235" cy="205" r="6" fill="#2d1b69"/>
+  <rect x="232" y="185" width="6" height="20" fill="#2d1b69"/>
+  <circle cx="248" cy="205" r="6" fill="#2d1b69"/>
+  <rect x="245" y="185" width="6" height="20" fill="#2d1b69"/>
 
   <!-- Carrier protein -->
   <ellipse cx="250" cy="130" rx="22" ry="50" fill="#7c3aed" opacity="0.8" rx="6"/>
-  <text x="250" y="134" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Carrier</text>
-  <text x="250" y="145" text-anchor="middle" font-size="9" fill="white">protein</text>
+  <text x="250" y="134" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Carrier</text>
+  <text x="250" y="145" text-anchor="middle" font-size="9" fill="#1e293b">protein</text>
 
   <!-- LOW concentration side (left) -->
   <text x="105" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#16a34a">LOW</text>
   <text x="105" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#16a34a">concentration</text>
-  <circle cx="70" cy="120" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="110" cy="140" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="80" cy="165" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="70" cy="120" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="110" cy="140" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="80" cy="165" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
   <text x="105" y="195" text-anchor="middle" font-size="10" fill="#374151">(outside cell /</text>
   <text x="105" y="207" text-anchor="middle" font-size="10" fill="#374151">low [ion])</text>
 
   <!-- HIGH concentration side (right) -->
   <text x="395" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">HIGH</text>
   <text x="395" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">concentration</text>
-  <circle cx="340" cy="90" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="380" cy="110" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="420" cy="90" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="355" cy="140" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="400" cy="150" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="445" cy="130" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="360" cy="170" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
-  <circle cx="430" cy="165" r="8" fill="#4ade80" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="340" cy="90" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="380" cy="110" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="420" cy="90" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="355" cy="140" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="400" cy="150" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="445" cy="130" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="360" cy="170" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
+  <circle cx="430" cy="165" r="8" fill="#0a4a1a" stroke="#15803d" stroke-width="1.5"/>
   <text x="395" y="200" text-anchor="middle" font-size="10" fill="#374151">(inside cell /</text>
   <text x="395" y="212" text-anchor="middle" font-size="10" fill="#374151">high [ion])</text>
 
@@ -91,7 +91,7 @@ export const note_olevel_biology_3_3_2 = {
   <text x="185" y="120" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="bold">AGAINST gradient</text>
 
   <!-- ATP label -->
-  <rect x="175" y="148" width="60" height="22" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="175" y="148" width="60" height="22" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="205" y="163" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">ATP needed</text>
 </svg>`
       }

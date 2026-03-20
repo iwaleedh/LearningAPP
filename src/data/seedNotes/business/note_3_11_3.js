@@ -181,29 +181,29 @@ export const note_business_3_11_3 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
-  <rect width="500" height="400" fill="#f9f9f9" rx="8"/>
+  <rect width="500" height="400" fill="#0f172a" rx="8"/>
   <text x="18" y="200" text-anchor="middle" font-size="13" font-weight="bold" fill="#444" transform="rotate(-90,18,200)">Markets</text>
   <text x="280" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#444">Products</text>
   <text x="176" y="44" text-anchor="middle" font-size="12" fill="#666">Existing</text>
   <text x="388" y="44" text-anchor="middle" font-size="12" fill="#666">New</text>
   <text x="52" y="126" text-anchor="middle" font-size="12" fill="#666" transform="rotate(-90,52,126)">New</text>
   <text x="52" y="268" text-anchor="middle" font-size="12" fill="#666" transform="rotate(-90,52,268)">Existing</text>
-  <rect x="70" y="55" width="212" height="142" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="3"/>
+  <rect x="70" y="55" width="212" height="142" fill="#532407" stroke="#e65100" stroke-width="2" rx="3"/>
   <text x="176" y="82" text-anchor="middle" font-weight="bold" font-size="13" fill="#e65100">Market Development</text>
   <text x="176" y="100" text-anchor="middle" font-size="11" fill="#555">Existing product,</text>
   <text x="176" y="115" text-anchor="middle" font-size="11" fill="#555">new market / region</text>
   <text x="176" y="175" text-anchor="middle" font-size="11" fill="#e65100">&#9888; Medium Risk</text>
-  <rect x="282" y="55" width="213" height="142" fill="#ffebee" stroke="#c62828" stroke-width="2" rx="3"/>
+  <rect x="282" y="55" width="213" height="142" fill="#3d1212" stroke="#c62828" stroke-width="2" rx="3"/>
   <text x="388" y="82" text-anchor="middle" font-weight="bold" font-size="13" fill="#c62828">Diversification</text>
   <text x="388" y="100" text-anchor="middle" font-size="11" fill="#555">New product,</text>
   <text x="388" y="115" text-anchor="middle" font-size="11" fill="#555">new market</text>
   <text x="388" y="175" text-anchor="middle" font-size="11" fill="#c62828">Highest Risk</text>
-  <rect x="70" y="197" width="212" height="143" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="3"/>
+  <rect x="70" y="197" width="212" height="143" fill="#0a2e1a" stroke="#2e7d32" stroke-width="2" rx="3"/>
   <text x="176" y="224" text-anchor="middle" font-weight="bold" font-size="13" fill="#2e7d32">Market Penetration</text>
   <text x="176" y="242" text-anchor="middle" font-size="11" fill="#555">Existing product,</text>
   <text x="176" y="257" text-anchor="middle" font-size="11" fill="#555">existing market</text>
   <text x="176" y="317" text-anchor="middle" font-size="11" fill="#2e7d32">Lowest Risk</text>
-  <rect x="282" y="197" width="213" height="143" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" rx="3"/>
+  <rect x="282" y="197" width="213" height="143" fill="#1c3a64" stroke="#1565c0" stroke-width="2" rx="3"/>
   <text x="388" y="224" text-anchor="middle" font-weight="bold" font-size="13" fill="#1565c0">Product Development</text>
   <text x="388" y="242" text-anchor="middle" font-size="11" fill="#555">New product,</text>
   <text x="388" y="257" text-anchor="middle" font-size="11" fill="#555">existing market</text>

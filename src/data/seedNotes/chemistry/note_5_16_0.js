@@ -52,23 +52,23 @@ export const note_chemistry_5_16_0 = {
       id: 'svg-metal-equil',
       data: {
         svg: `<svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="420" height="200" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="420" height="200" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <text x="210" y="20" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Metal–Solution Equilibrium</text>
   <rect x="20" y="35" width="90" height="130" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
-  <text x="65" y="97" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="13">Metal</text>
-  <text x="65" y="113" text-anchor="middle" fill="#e2e8f0" font-size="11">M(s)</text>
+  <text x="65" y="97" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Metal</text>
+  <text x="65" y="113" text-anchor="middle" fill="#1e293b" font-size="11">M(s)</text>
   <text x="118" y="58" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
   <text x="118" y="76" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
   <text x="118" y="94" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
   <text x="118" y="112" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
   <text x="112" y="148" fill="#4f46e5" font-size="9">build-up</text>
-  <rect x="160" y="35" width="240" height="130" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="160" y="35" width="240" height="130" rx="6" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
   <text x="280" y="58" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Solution</text>
-  <circle cx="230" cy="95" r="14" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="230" cy="95" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="230" y="100" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
-  <circle cx="285" cy="120" r="14" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="285" cy="120" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="285" y="125" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
-  <circle cx="345" cy="90" r="14" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="345" cy="90" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="345" y="95" text-anchor="middle" fill="#92400e" font-size="12">M⁺</text>
   <path d="M155,75 Q143,55 132,62" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#ra)"/>
   <text x="94" y="50" fill="#ef4444" font-weight="bold" font-size="10">oxidation</text>
@@ -312,9 +312,9 @@ export const note_chemistry_5_16_0 = {
       id: 'svg-series-diagram',
       data: {
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="400" height="220" fill="#f8fafc" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="400" height="220" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Electrochemical Series — Key Rules</text>
-  <rect x="20" y="35" width="360" height="145" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="20" y="35" width="360" height="145" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
   <text x="40" y="56" fill="#dc2626" font-size="11" font-weight="bold">Most negative E° (top)</text>
   <text x="40" y="72" fill="#374151" font-size="10">Li⁺ + e⁻ ⇌  Li          E° = −3.04 V</text>
   <text x="40" y="87" fill="#374151" font-size="10">Mg²⁺ + 2e⁻ ⇌ Mg        E° = −2.37 V</text>

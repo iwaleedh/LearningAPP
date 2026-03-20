@@ -86,7 +86,7 @@ export const note_chemistry_4_15_8 = {
       data: {
         caption: 'NMR spectrum concept: δ axis goes from high values (left, downfield/deshielded) to 0 (right, upfield/shielded). TMS reference peak is at δ = 0.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 195" font-family="Arial,sans-serif">
-  <rect width="560" height="195" fill="#f8f9fa" rx="8"/>
+  <rect width="560" height="195" fill="#0f172a" rx="8"/>
   <text x="280" y="20" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">NMR Spectrum — Chemical Shift (δ) Axis</text>
   <!-- Y axis -->
   <line x1="52" y1="32" x2="52" y2="148" stroke="#444" stroke-width="2"/>
@@ -224,7 +224,7 @@ export const note_chemistry_4_15_8 = {
       data: {
         caption: '¹³C NMR chemical shift map — colour-coded horizontal bars show the δ range for each type of carbon environment. δ axis runs from 0 (right) to 220 (left), following NMR convention.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" font-family="Arial,sans-serif">
-  <rect width="560" height="240" fill="#f8f9fa" rx="8"/>
+  <rect width="560" height="240" fill="#0f172a" rx="8"/>
   <text x="280" y="20" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">¹³C NMR Chemical Shift Map</text>
   <!-- Scale: 0 ppm at x=500, 220 ppm at x=60 → scale=440/220=2px per ppm -->
   <!-- x(ppm) = 500 - ppm*2 -->
@@ -250,34 +250,34 @@ export const note_chemistry_4_15_8 = {
   <text x="280" y="238" font-size="10" fill="#333" text-anchor="middle">δ / ppm →</text>
   <!-- Row 1: C=O aldehyde/ketone 190-220 → x=500-190*2=120 to x=500-220*2=60 -->
   <rect x="60" y="36" width="60" height="22" fill="#e05050" rx="3"/>
-  <text x="90" y="52" font-size="9" fill="white" text-anchor="middle" font-weight="bold">190–220</text>
+  <text x="90" y="52" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">190–220</text>
   <text x="30" y="51" font-size="9.5" fill="#333" text-anchor="middle">C=O</text>
   <text x="30" y="63" font-size="8.5" fill="#555" text-anchor="middle">ald/ket</text>
   <!-- Row 2: COO ester/acid 160-185 → x=500-185*2=130 to x=500-160*2=180 -->
   <rect x="130" y="68" width="50" height="22" fill="#e06820" rx="3"/>
-  <text x="155" y="84" font-size="9" fill="white" text-anchor="middle" font-weight="bold">160–185</text>
+  <text x="155" y="84" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">160–185</text>
   <text x="30" y="83" font-size="9.5" fill="#333" text-anchor="middle">COO</text>
   <text x="30" y="95" font-size="8.5" fill="#555" text-anchor="middle">ester/acid</text>
   <!-- Row 3: C=C alkene 120-140 → x=500-140*2=220 to x=500-120*2=260 -->
-  <rect x="220" y="100" width="40" height="22" fill="#e0aa00" rx="3"/>
-  <text x="240" y="116" font-size="9" fill="white" text-anchor="middle" font-weight="bold">120–140</text>
+  <rect x="220" y="100" width="40" height="22" fill="#78350f" rx="3"/>
+  <text x="240" y="116" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">120–140</text>
   <text x="30" y="115" font-size="9.5" fill="#333" text-anchor="middle">C=C</text>
   <text x="30" y="127" font-size="8.5" fill="#555" text-anchor="middle">alkene</text>
   <!-- Row 4: C-O alcohol 50-80 → x=500-80*2=340 to x=500-50*2=400 -->
   <rect x="340" y="132" width="60" height="22" fill="#22aa44" rx="3"/>
-  <text x="370" y="148" font-size="9" fill="white" text-anchor="middle" font-weight="bold">50–80</text>
+  <text x="370" y="148" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">50–80</text>
   <text x="30" y="147" font-size="9.5" fill="#333" text-anchor="middle">C–O</text>
   <text x="30" y="159" font-size="8.5" fill="#555" text-anchor="middle">alcohol</text>
   <!-- Row 5: C-N 35-62 → x=500-62*2=376 to x=500-35*2=430 -->
   <rect x="376" y="164" width="54" height="22" fill="#6644bb" rx="3"/>
-  <text x="403" y="180" font-size="9" fill="white" text-anchor="middle" font-weight="bold">35–62</text>
+  <text x="403" y="180" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">35–62</text>
   <text x="30" y="179" font-size="9.5" fill="#333" text-anchor="middle">C–N</text>
   <!-- Row 6: C-C alkane 5-60 → x=500-60*2=380 to x=500-5*2=490 -->
   <rect x="380" y="196" width="110" height="0" fill="none"/>
   <rect x="380" y="187" width="110" height="0" fill="none"/>
   <!-- Actually draw it properly -->
   <rect x="380" y="188" width="110" height="17" fill="#3355cc" rx="3" opacity="0.85"/>
-  <text x="435" y="201" font-size="9" fill="white" text-anchor="middle" font-weight="bold">5–60</text>
+  <text x="435" y="201" font-size="9" fill="#1e293b" text-anchor="middle" font-weight="bold">5–60</text>
   <text x="30" y="200" font-size="9.5" fill="#333" text-anchor="middle">C–C</text>
   <text x="30" y="212" font-size="8.5" fill="#555" text-anchor="middle">alkane</text>
 </svg>`
@@ -383,7 +383,7 @@ export const note_chemistry_4_15_8 = {
       data: {
         caption: 'Integration trace in ¹H NMR: the stepped line rises at each peak. The height of each step is proportional to the number of H atoms in that environment. Here the ratio is 3:2:1 (e.g. CH₃ : CH₂ : CHO).',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" font-family="Arial,sans-serif">
-  <rect width="520" height="210" fill="#f8f9fa" rx="8"/>
+  <rect width="520" height="210" fill="#0f172a" rx="8"/>
   <text x="260" y="20" font-size="12.5" fill="#222" font-weight="bold" text-anchor="middle">¹H NMR Integration Trace</text>
   <!-- Axes -->
   <line x1="50" y1="155" x2="490" y2="155" stroke="#444" stroke-width="2"/>
@@ -544,7 +544,7 @@ export const note_chemistry_4_15_8 = {
       data: {
         caption: 'Visual representation of splitting patterns: singlet (no adjacent H), doublet (1 adjacent H), triplet (2), quartet (3), and quintet (4). Heights within each pattern reflect the relative peak ratios.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" font-family="Arial,sans-serif">
-  <rect width="560" height="220" fill="#f8f9fa" rx="8"/>
+  <rect width="560" height="220" fill="#0f172a" rx="8"/>
   <text x="280" y="18" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">¹H NMR Splitting Patterns (n+1 Rule)</text>
   <!-- Column headers and baselines -->
   <!-- Column positions at x: 50, 162, 274, 386, 498 (width 90 each) -->
@@ -705,39 +705,39 @@ export const note_chemistry_4_15_8 = {
       data: {
         caption: 'Step-by-step strategy for determining molecular structure from ¹H NMR data.',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310" font-family="Arial,sans-serif">
-  <rect width="520" height="310" fill="#f8f9fa" rx="8"/>
+  <rect width="520" height="310" fill="#0f172a" rx="8"/>
   <text x="260" y="22" font-size="13" fill="#222" font-weight="bold" text-anchor="middle">Structure Determination from ¹H NMR — Strategy</text>
   <!-- Step boxes -->
   <!-- Step 1 -->
-  <rect x="30" y="35" width="460" height="40" fill="#e8eeff" rx="6" stroke="#3355cc" stroke-width="1.5"/>
+  <rect x="30" y="35" width="460" height="40" fill="#1c3a64" rx="6" stroke="#3355cc" stroke-width="1.5"/>
   <text x="55" y="52" font-size="11" fill="#222" font-weight="bold">Step 1</text>
   <text x="55" y="67" font-size="10.5" fill="#333">Count peaks → number of different H environments</text>
   <!-- Arrow -->
   <line x1="260" y1="75" x2="260" y2="88" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,88 265,88 260,95" fill="#888"/>
   <!-- Step 2 -->
-  <rect x="30" y="95" width="460" height="40" fill="#e8fff0" rx="6" stroke="#22aa44" stroke-width="1.5"/>
+  <rect x="30" y="95" width="460" height="40" fill="#0a2e1a" rx="6" stroke="#22aa44" stroke-width="1.5"/>
   <text x="55" y="112" font-size="11" fill="#222" font-weight="bold">Step 2</text>
   <text x="55" y="127" font-size="10.5" fill="#333">Read integration (area) → ratio of H atoms per environment → name fragments</text>
   <!-- Arrow -->
   <line x1="260" y1="135" x2="260" y2="148" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,148 265,148 260,155" fill="#888"/>
   <!-- Step 3 -->
-  <rect x="30" y="155" width="460" height="40" fill="#fff8e0" rx="6" stroke="#e08020" stroke-width="1.5"/>
+  <rect x="30" y="155" width="460" height="40" fill="#44370a" rx="6" stroke="#e08020" stroke-width="1.5"/>
   <text x="55" y="172" font-size="11" fill="#222" font-weight="bold">Step 3</text>
   <text x="55" y="187" font-size="10.5" fill="#333">Check chemical shifts (δ) → match to data book → identify functional group neighbourhood</text>
   <!-- Arrow -->
   <line x1="260" y1="195" x2="260" y2="208" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,208 265,208 260,215" fill="#888"/>
   <!-- Step 4 -->
-  <rect x="30" y="215" width="460" height="40" fill="#fce8ff" rx="6" stroke="#aa2299" stroke-width="1.5"/>
+  <rect x="30" y="215" width="460" height="40" fill="#4a1040" rx="6" stroke="#aa2299" stroke-width="1.5"/>
   <text x="55" y="232" font-size="11" fill="#222" font-weight="bold">Step 4</text>
   <text x="55" y="247" font-size="10.5" fill="#333">Apply n+1 rule to splitting patterns → deduce number of H on adjacent carbon</text>
   <!-- Arrow -->
   <line x1="260" y1="255" x2="260" y2="268" stroke="#888" stroke-width="1.5"/>
   <polygon points="255,268 265,268 260,275" fill="#888"/>
   <!-- Step 5 -->
-  <rect x="30" y="275" width="460" height="28" fill="#ffe8e8" rx="6" stroke="#cc3333" stroke-width="1.5"/>
+  <rect x="30" y="275" width="460" height="28" fill="#3d1212" rx="6" stroke="#cc3333" stroke-width="1.5"/>
   <text x="55" y="291" font-size="11" fill="#222" font-weight="bold">Step 5</text>
   <text x="55" y="299" font-size="10.5" fill="#333">Assemble fragments → propose structure → verify against molecular formula ✓</text>
 </svg>`
@@ -844,6 +844,15 @@ export const note_chemistry_4_15_8 = {
       data: {
         text: '¹³C NMR: peaks = number of carbon environments; position (δ, ppm) from data book; peak height ∝ carbons per environment. ¹H NMR: peaks = H environments; area (integration) = relative H count; high resolution adds splitting — apply n+1 rule (n adjacent H → n+1 sub-peaks). Singlet=0, doublet=1, triplet=2, quartet=3, quintet=4 adjacent H. OH groups always singlets. Both spectra use CDCl₃ solvent and TMS reference (δ=0). Combine with IR (functional groups) and MS (Mr) for full structure determination.'
       }
+    },
+    {
+      id: 'svg-nmr-guide',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="system-ui,sans-serif"><text x="350" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="1">¹H NMR INTERPRETATION GUIDE</text><!-- LEFT: n+1 splitting rule --><rect x="10" y="32" width="330" height="398" rx="10" fill="rgba(52,211,153,0.08)" stroke="#34d399" stroke-width="1.5"/><text x="175" y="52" text-anchor="middle" font-size="11" fill="#34d399" font-weight="700">SPLITTING PATTERNS (n+1 RULE)</text><text x="175" y="66" text-anchor="middle" font-size="9" fill="#065f46">n = number of equivalent H on adjacent carbon → n+1 peaks</text><!-- Pattern table --><rect x="22" y="74" width="306" height="24" rx="4" fill="rgba(52,211,153,0.25)"/><text x="80" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">Pattern</text><text x="175" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">n adjacent H</text><text x="290" y="89" text-anchor="middle" font-size="8.5" fill="#065f46" font-weight="700">Visual</text><!-- rows --><rect x="22" y="98" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="115" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">SINGLET</text><text x="175" y="115" text-anchor="middle" font-size="9" fill="#065f46">0 adjacent H</text><text x="290" y="115" text-anchor="middle" font-size="9" fill="#065f46">| (one tall peak)</text><rect x="22" y="124" width="306" height="26" rx="0" fill="rgba(52,211,153,0.05)"/><text x="80" y="141" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">DOUBLET</text><text x="175" y="141" text-anchor="middle" font-size="9" fill="#065f46">1 adjacent H</text><text x="290" y="141" text-anchor="middle" font-size="9" fill="#065f46">|| (two equal peaks)</text><rect x="22" y="150" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="167" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">TRIPLET</text><text x="175" y="167" text-anchor="middle" font-size="9" fill="#065f46">2 adjacent H</text><text x="290" y="167" text-anchor="middle" font-size="9" fill="#065f46">||| (1:2:1 ratio)</text><rect x="22" y="176" width="306" height="26" rx="0" fill="rgba(52,211,153,0.05)"/><text x="80" y="193" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">QUARTET</text><text x="175" y="193" text-anchor="middle" font-size="9" fill="#065f46">3 adjacent H</text><text x="290" y="193" text-anchor="middle" font-size="9" fill="#065f46">|||| (1:3:3:1 ratio)</text><rect x="22" y="202" width="306" height="26" rx="0" fill="rgba(255,255,255,0.03)"/><text x="80" y="219" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="700">QUINTET</text><text x="175" y="219" text-anchor="middle" font-size="9" fill="#065f46">4 adjacent H</text><text x="290" y="219" text-anchor="middle" font-size="9" fill="#065f46">||||| (1:4:6:4:1)</text><!-- Key rules for splitting --><rect x="22" y="236" width="306" height="100" rx="8" fill="rgba(52,211,153,0.12)" stroke="#34d399" stroke-width="1"/><text x="175" y="254" text-anchor="middle" font-size="9.5" fill="#34d399" font-weight="700">SPLITTING RULES</text><text x="30" y="270" font-size="8.5" fill="#065f46">• Only H on ADJACENT carbons cause splitting</text><text x="30" y="284" font-size="8.5" fill="#065f46">• OH (alcohol) and NH always show as SINGLETS</text><text x="30" y="298" font-size="8.5" fill="#065f46">• CHO (aldehyde H) = singlet at δ 9-10 ppm</text><text x="30" y="312" font-size="8.5" fill="#065f46">• Equivalent H on same C do not split each other</text><text x="30" y="326" font-size="8.5" fill="#78350f">• INTEGRATION = relative number of H in environment</text><!-- Ethanol example --><rect x="22" y="344" width="306" height="76" rx="8" fill="rgba(99,102,241,0.15)" stroke="#818cf8" stroke-width="1"/><text x="175" y="362" text-anchor="middle" font-size="9.5" fill="#2d2d72" font-weight="700">EXAMPLE: ethanol CH₃CH₂OH</text><text x="30" y="378" font-size="8.5" fill="#2d2d72">CH₃ (3H): adjacent to CH₂ (2H) → triplet at δ ~1.2</text><text x="30" y="393" font-size="8.5" fill="#2d2d72">CH₂ (2H): adjacent to CH₃ (3H) → quartet at δ ~3.7</text><text x="30" y="408" font-size="8.5" fill="#2d2d72">OH (1H): singlet at δ ~2.6 (no splitting)</text><!-- RIGHT: Chemical shift table --><rect x="360" y="32" width="330" height="398" rx="10" fill="rgba(96,165,250,0.08)" stroke="#60a5fa" stroke-width="1.5"/><text x="525" y="52" text-anchor="middle" font-size="11" fill="#60a5fa" font-weight="700">CHEMICAL SHIFT ENVIRONMENTS</text><text x="525" y="66" text-anchor="middle" font-size="9" fill="#1e3a8a">δ in ppm (downfield = deshielded = higher δ)</text><!-- shift regions --><rect x="374" y="74" width="302" height="20" rx="4" fill="rgba(96,165,250,0.25)"/><text x="450" y="87" text-anchor="middle" font-size="8" fill="#1e3a8a" font-weight="700">δ range (ppm)</text><text x="575" y="87" text-anchor="middle" font-size="8" fill="#1e3a8a" font-weight="700">Environment</text><!-- rows --><rect x="374" y="96" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="112" text-anchor="middle" font-size="9" fill="#1e293b">0 - 1</text><text x="575" y="112" text-anchor="middle" font-size="8.5" fill="#1e3a8a">R−CH₃ alkyl (near no EW groups)</text><rect x="374" y="120" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="136" text-anchor="middle" font-size="9" fill="#1e293b">1 - 2</text><text x="575" y="136" text-anchor="middle" font-size="8.5" fill="#1e3a8a">−CH₂− and −CH₃ alkyl groups</text><rect x="374" y="144" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="160" text-anchor="middle" font-size="9" fill="#1e293b">1 - 4</text><text x="575" y="160" text-anchor="middle" font-size="8.5" fill="#1e3a8a">N−H (amine), C−H near N</text><rect x="374" y="168" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="184" text-anchor="middle" font-size="9" fill="#1e293b">2 - 3</text><text x="575" y="184" text-anchor="middle" font-size="8.5" fill="#1e3a8a">R−CO−CH₃ (next to C=O)</text><rect x="374" y="192" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="208" text-anchor="middle" font-size="9" fill="#1e293b">3 - 5</text><text x="575" y="208" text-anchor="middle" font-size="8.5" fill="#1e3a8a">O−H alcohol (broad), R−CH₂Cl</text><rect x="374" y="216" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="232" text-anchor="middle" font-size="9" fill="#1e293b">6 - 8</text><text x="575" y="232" text-anchor="middle" font-size="8.5" fill="#1e3a8a">Aromatic ring H (C₆H₅−)</text><rect x="374" y="240" width="302" height="24" rx="0" fill="rgba(255,255,255,0.03)"/><text x="450" y="256" text-anchor="middle" font-size="9" fill="#1e293b">9 - 10</text><text x="575" y="256" text-anchor="middle" font-size="8.5" fill="#1e3a8a">CHO aldehyde H</text><rect x="374" y="264" width="302" height="24" rx="0" fill="rgba(96,165,250,0.05)"/><text x="450" y="280" text-anchor="middle" font-size="9" fill="#1e293b">10 - 12</text><text x="575" y="280" text-anchor="middle" font-size="8.5" fill="#1e3a8a">COOH carboxylic acid O−H</text><!-- 13C NMR --><rect x="374" y="296" width="302" height="80" rx="8" fill="rgba(251,146,60,0.12)" stroke="#fb923c" stroke-width="1"/><text x="525" y="314" text-anchor="middle" font-size="9.5" fill="#fb923c" font-weight="700">¹³C NMR — KEY DIFFERENCES</text><text x="380" y="330" font-size="8.5" fill="#532407">• No splitting (no coupling in ¹³C)</text><text x="380" y="345" font-size="8.5" fill="#532407">• Count peaks = count carbon environments</text><text x="380" y="360" font-size="8.5" fill="#532407">• δ 0-50: C−H, C−C (aliphatic)</text><text x="380" y="375" font-size="8.5" fill="#532407">• δ 100-150: C=C, aromatic or C=O (~170-220)</text><!-- Full structure ID --><rect x="374" y="384" width="302" height="38" rx="8" fill="rgba(99,102,241,0.15)" stroke="#818cf8" stroke-width="1"/><text x="525" y="400" text-anchor="middle" font-size="9" fill="#2d2d72" font-weight="700">FULL STRUCTURE ID: MS (Mr) + IR (groups) + NMR (environments)</text><text x="525" y="416" text-anchor="middle" font-size="8.5" fill="#2d2d72">Work systematically: degrees of unsaturation, then piece fragments together</text></svg>',
+        caption: '¹H NMR Guide — n+1 rule determines splitting (n adjacent H → n+1 peaks). Integration gives relative H count per environment. Chemical shift (δ) reveals electronic environment. OH and NH always singlets. ¹³C NMR: one peak per unique carbon, no splitting.'
+      },
+      terms: []
     }
   ],
 

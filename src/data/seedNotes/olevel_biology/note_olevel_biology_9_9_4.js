@@ -59,20 +59,20 @@ export const note_olevel_biology_9_9_4 = {
       data: {
         caption: 'Cross-section of a coronary artery showing plaque build-up and narrowing of the lumen',
         svg: `<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
-  <rect width="460" height="260" fill="#f8f9fa" rx="10"/>
+  <rect width="460" height="260" fill="#0f172a" rx="10"/>
   <text x="230" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Atherosclerosis — Plaque Build-up in an Artery</text>
 
   <!-- HEALTHY ARTERY (left) -->
   <text x="100" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">Healthy Artery</text>
   <!-- Outer wall -->
-  <circle cx="100" cy="145" r="72" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+  <circle cx="100" cy="145" r="72" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2"/>
   <!-- Muscle / elastic layer -->
-  <circle cx="100" cy="145" r="56" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <circle cx="100" cy="145" r="56" fill="#44370a" stroke="#b45309" stroke-width="2"/>
   <!-- Endothelium (smooth inner lining) -->
-  <circle cx="100" cy="145" r="42" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+  <circle cx="100" cy="145" r="42" fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
   <!-- Wide lumen -->
   <circle cx="100" cy="145" r="36" fill="#ef4444"/>
-  <text x="100" y="149" text-anchor="middle" font-size="10" fill="#fff">Wide lumen</text>
+  <text x="100" y="149" text-anchor="middle" font-size="10" fill="#1e293b">Wide lumen</text>
   <text x="100" y="238" text-anchor="middle" font-size="11" fill="#15803d">Normal blood flow</text>
 
   <!-- Labels healthy -->
@@ -93,16 +93,16 @@ export const note_olevel_biology_9_9_4 = {
   <!-- DISEASED ARTERY (right) -->
   <text x="360" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="#b91c1c">Atherosclerotic Artery</text>
   <!-- Outer wall -->
-  <circle cx="360" cy="145" r="72" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/>
+  <circle cx="360" cy="145" r="72" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2"/>
   <!-- Thickened wall -->
-  <circle cx="360" cy="145" r="56" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+  <circle cx="360" cy="145" r="56" fill="#44370a" stroke="#b45309" stroke-width="2"/>
   <!-- Plaque (atheroma) — asymmetric build-up -->
   <path d="M 325 120 Q 320 140 325 165 Q 330 185 350 188 Q 370 190 385 178 Q 400 165 398 145 Q 396 125 380 115 Q 365 108 348 110 Q 333 112 325 120 Z" fill="#78350f" stroke="#451a03" stroke-width="1.5"/>
-  <text x="362" y="155" text-anchor="middle" font-size="9" fill="#fff">Plaque</text>
+  <text x="362" y="155" text-anchor="middle" font-size="9" fill="#1e293b">Plaque</text>
   <!-- Narrow lumen -->
   <ellipse cx="350" cy="127" rx="14" ry="11" fill="#ef4444"/>
-  <text x="350" y="131" text-anchor="middle" font-size="9" fill="#fff">Narrow</text>
-  <text x="350" y="143" text-anchor="middle" font-size="9" fill="#fff">lumen</text>
+  <text x="350" y="131" text-anchor="middle" font-size="9" fill="#1e293b">Narrow</text>
+  <text x="350" y="143" text-anchor="middle" font-size="9" fill="#1e293b">lumen</text>
 
   <!-- Labels diseased -->
   <line x1="400" y1="158" x2="430" y2="170" stroke="#451a03" stroke-width="1"/>

@@ -67,10 +67,10 @@ export const note_olevel_biology_21_21_1 = {
       data: {
         caption: 'Industrial fermenter — key features',
         svg: `<svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
-  <rect width="400" height="340" fill="#f0fdf4" rx="12"/>
+  <rect width="400" height="340" fill="#0a2e1a" rx="12"/>
   <text x="200" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Industrial Fermenter</text>
   <!-- Vessel -->
-  <rect x="120" y="50" width="160" height="220" rx="20" fill="#bbf7d0" stroke="#16a34a" stroke-width="3"/>
+  <rect x="120" y="50" width="160" height="220" rx="20" fill="#0a3020" stroke="#16a34a" stroke-width="3"/>
   <!-- Stirrer shaft -->
   <line x1="200" y1="50" x2="200" y2="270" stroke="#374151" stroke-width="3"/>
   <!-- Stirrer blades -->

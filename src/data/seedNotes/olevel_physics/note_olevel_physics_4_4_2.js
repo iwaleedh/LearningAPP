@@ -72,13 +72,13 @@ export const note_olevel_physics_4_4_2 = {
         caption: 'DC motor cross-section: coil between N and S poles, split-ring commutator and brushes',
         svg: `<svg viewBox="0 0 360 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- N pole -->
-  <rect x="30" y="60" width="55" height="110" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <rect x="30" y="60" width="55" height="110" rx="8" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="42" y="120" fill="#16a34a" font-weight="bold" font-size="18">N</text>
   <!-- S pole -->
-  <rect x="275" y="60" width="55" height="110" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <rect x="275" y="60" width="55" height="110" rx="8" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="288" y="120" fill="#ef4444" font-weight="bold" font-size="18">S</text>
   <!-- Coil (rectangular) -->
-  <rect x="140" y="70" width="80" height="90" rx="4" fill="#e0e7ff" stroke="#6366f1" stroke-width="3"/>
+  <rect x="140" y="70" width="80" height="90" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="3"/>
   <text x="158" y="118" fill="#6366f1">Coil</text>
   <!-- Force arrows on coil sides -->
   <text x="95" y="88" fill="#d97706" font-size="10">F↑</text>
@@ -89,8 +89,8 @@ export const note_olevel_physics_4_4_2 = {
   <line x1="180" y1="40" x2="180" y2="190" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4,3"/>
   <text x="185" y="45" fill="#9ca3af" font-size="9">axle</text>
   <!-- Commutator halves -->
-  <path d="M155,175 A25,10 0 0,1 205,175" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
-  <path d="M155,175 A25,10 0 0,0 205,175" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+  <path d="M155,175 A25,10 0 0,1 205,175" fill="#78350f" stroke="#d97706" stroke-width="2"/>
+  <path d="M155,175 A25,10 0 0,0 205,175" fill="#44370a" stroke="#d97706" stroke-width="2"/>
   <text x="140" y="195" fill="#d97706" font-size="9">Split-ring commutator</text>
   <!-- Brushes -->
   <rect x="125" y="178" width="15" height="10" rx="2" fill="#374151" stroke="#1f2937" stroke-width="1.5"/>

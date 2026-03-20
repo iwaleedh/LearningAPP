@@ -10,7 +10,7 @@ export const note_olevel_physics_6_2_4 = {
     { id: 'para-comp', type: 'paragraph', data: { text: "Based on all current observations (CMB anisotropy, galaxy surveys, supernova data), the universe's total energy–mass content is divided as follows:" } },
     { id: 'svg-pie', type: 'svg', data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260" width="380" height="260">
   <rect width="380" height="260" fill="#0f172a" rx="8"/>
-  <text x="190" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">Composition of the Universe</text>
+  <text x="190" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#78350f">Composition of the Universe</text>
   <!-- Pie chart: Dark energy 68%, Dark matter 27%, Ordinary matter 5% -->
   <!-- Dark energy slice: 68% = 244.8 degrees from 270° to 154.8° (going clockwise from top) -->
   <!-- Using: centre 130,145 radius 90 -->
@@ -19,22 +19,22 @@ export const note_olevel_physics_6_2_4 = {
   <!-- Dark matter: 27% = 97.2 degrees from 154.8° to 252° -->
   <path d="M 130 145 L 56.4 198.8 A 90 90 0 0 1 130 235 Z" fill="#7c3aed" opacity="0.7"/>
   <!-- Ordinary matter: 5% = 18 degrees from 252° to 270° -->
-  <path d="M 130 145 L 130 235 A 90 90 0 0 1 130 55 Z" fill="#fbbf24" opacity="0.85"/>
+  <path d="M 130 145 L 130 235 A 90 90 0 0 1 130 55 Z" fill="#78350f" opacity="0.85"/>
   <!-- Labels with lines -->
   <!-- Dark energy label -->
   <line x1="175" y1="90" x2="215" y2="75" stroke="#4338ca" stroke-width="1.5"/>
-  <text x="218" y="73" font-size="12" fill="#a5b4fc" font-weight="bold">Dark Energy</text>
-  <text x="218" y="87" font-size="11" fill="#c7d2fe">68%</text>
+  <text x="218" y="73" font-size="12" fill="#2d2d72" font-weight="bold">Dark Energy</text>
+  <text x="218" y="87" font-size="11" fill="#2d2d72">68%</text>
   <text x="218" y="100" font-size="9" fill="#94a3b8">unknown nature;</text>
   <text x="218" y="112" font-size="9" fill="#94a3b8">drives acceleration</text>
   <!-- Dark matter label -->
   <line x1="82" y1="215" x2="60" y2="240" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="18" y="240" font-size="12" fill="#c4b5fd" font-weight="bold">Dark Matter</text>
-  <text x="22" y="253" font-size="11" fill="#c4b5fd">27%</text>
+  <text x="18" y="240" font-size="12" fill="#2d1b69" font-weight="bold">Dark Matter</text>
+  <text x="22" y="253" font-size="11" fill="#2d1b69">27%</text>
   <!-- Ordinary matter -->
   <line x1="138" y1="235" x2="210" y2="250" stroke="#fbbf24" stroke-width="1.5"/>
-  <text x="213" y="247" font-size="12" fill="#fbbf24" font-weight="bold">Ordinary Matter</text>
-  <text x="265" y="260" font-size="11" fill="#fde68a">5%</text>
+  <text x="213" y="247" font-size="12" fill="#78350f" font-weight="bold">Ordinary Matter</text>
+  <text x="265" y="260" font-size="11" fill="#44370a">5%</text>
   <text x="213" y="260" font-size="9" fill="#94a3b8">(all atoms, stars, gas)</text>
 </svg>`, caption: 'The universe is composed of ~68% dark energy, ~27% dark matter, and only ~5% ordinary (baryonic) matter.' } },
     { id: 'tbl-comp', type: 'comparisonTable', data: { caption: 'Components of the universe', headers: ['Component', 'Fraction', 'Description'], rows: [

@@ -58,17 +58,17 @@ export const note_olevel_chemistry_1_1_1 = {
 
     <!-- Circles for states -->
     <g transform="translate(150, 230)">
-      <circle cx="0" cy="0" r="50" fill="#f8fafc" stroke="#94a3b8" stroke-width="3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="50" fill="#0f172a" stroke="#94a3b8" stroke-width="3" filter="url(#shadow)" />
       <text x="0" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="18" fill="var(--color-text)">SOLID</text>
     </g>
     
     <g transform="translate(450, 230)">
-      <circle cx="0" cy="0" r="50" fill="#f0f9ff" stroke="#60a5fa" stroke-width="3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="50" fill="#1c3a64" stroke="#60a5fa" stroke-width="3" filter="url(#shadow)" />
       <text x="0" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="18" fill="var(--color-text)">LIQUID</text>
     </g>
 
     <g transform="translate(300, 60)">
-      <circle cx="0" cy="0" r="50" fill="#eff6ff" stroke="#38bdf8" stroke-width="3" filter="url(#shadow)" />
+      <circle cx="0" cy="0" r="50" fill="#1c3a64" stroke="#38bdf8" stroke-width="3" filter="url(#shadow)" />
       <text x="0" y="5" text-anchor="middle" font-family="var(--font-sans)" font-weight="bold" font-size="18" fill="var(--color-text)">GAS</text>
     </g>
 

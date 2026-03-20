@@ -81,34 +81,34 @@ export const note_chemistry_2_8_2 = {
             data: {
                 caption: 'Flowchart: 4-step method for writing a half-equation in acid conditions',
                 svg: `<svg viewBox="0 0 480 330" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
-  <rect width="480" height="330" rx="10" fill="#f8fafc"/>
+  <rect width="480" height="330" rx="10" fill="#0f172a"/>
   <text x="240" y="22" text-anchor="middle" font-weight="700" font-size="14" fill="#1e293b">4-Step Method: Building a Half-Equation</text>
 
   <!-- Step 1 -->
-  <rect x="90" y="35" width="300" height="48" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="90" y="35" width="300" height="48" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="240" y="55" text-anchor="middle" font-weight="700" fill="#1e40af">Step 1</text>
   <text x="240" y="72" text-anchor="middle" fill="#1d4ed8" font-size="11">Balance all atoms EXCEPT O and H</text>
   <line x1="240" y1="83" x2="240" y2="103" stroke="#475569" stroke-width="1.5" marker-end="url(#aS)"/>
 
   <!-- Step 2 -->
-  <rect x="90" y="103" width="300" height="48" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="90" y="103" width="300" height="48" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="240" y="123" text-anchor="middle" font-weight="700" fill="#15803d">Step 2</text>
   <text x="240" y="140" text-anchor="middle" fill="#166534" font-size="11">Balance O atoms — add H₂O to the O-deficient side</text>
   <line x1="240" y1="151" x2="240" y2="171" stroke="#475569" stroke-width="1.5" marker-end="url(#aS)"/>
 
   <!-- Step 3 -->
-  <rect x="90" y="171" width="300" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="90" y="171" width="300" height="48" rx="8" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="240" y="191" text-anchor="middle" font-weight="700" fill="#92400e">Step 3</text>
   <text x="240" y="208" text-anchor="middle" fill="#78350f" font-size="11">Balance H atoms — add H⁺ to the H-deficient side</text>
   <line x1="240" y1="219" x2="240" y2="239" stroke="#475569" stroke-width="1.5" marker-end="url(#aS)"/>
 
   <!-- Step 4 -->
-  <rect x="90" y="239" width="300" height="48" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
+  <rect x="90" y="239" width="300" height="48" rx="8" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/>
   <text x="240" y="259" text-anchor="middle" font-weight="700" fill="#be185d">Step 4</text>
   <text x="240" y="276" text-anchor="middle" fill="#9d174d" font-size="11">Balance charge — add e⁻ to the more positive side</text>
 
   <!-- Final check -->
-  <rect x="140" y="298" width="200" height="26" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+  <rect x="140" y="298" width="200" height="26" rx="6" fill="#0c4a6e" stroke="#0284c7" stroke-width="1"/>
   <text x="240" y="315" text-anchor="middle" fill="#0c4a6e" font-size="11" font-weight="600">✓ Check: atoms and charges must balance</text>
 
   <defs>
@@ -347,23 +347,23 @@ export const note_chemistry_2_8_2 = {
             data: {
                 caption: 'Combining two half-equations into a full ionic equation — process overview',
                 svg: `<svg viewBox="0 0 520 240" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
-  <rect width="520" height="240" rx="10" fill="#f0f9ff"/>
+  <rect width="520" height="240" rx="10" fill="#1c3a64"/>
   <text x="260" y="21" text-anchor="middle" font-weight="700" font-size="14" fill="#0c4a6e">Combining Half-Equations: General Approach</text>
 
   <!-- Oxidation half -->
-  <rect x="15" y="34" width="225" height="52" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+  <rect x="15" y="34" width="225" height="52" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="127" y="52" text-anchor="middle" font-weight="700" fill="#92400e" font-size="12">OXIDATION half-equation</text>
   <text x="127" y="70" text-anchor="middle" fill="#78350f" font-size="11">A → B + ne⁻</text>
   <text x="127" y="82" text-anchor="middle" fill="#78350f" font-size="10">(electrons on RIGHT)</text>
 
   <!-- Reduction half -->
-  <rect x="280" y="34" width="225" height="52" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="280" y="34" width="225" height="52" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
   <text x="392" y="52" text-anchor="middle" font-weight="700" fill="#4c1d95" font-size="12">REDUCTION half-equation</text>
   <text x="392" y="70" text-anchor="middle" fill="#4c1d95" font-size="11">C + me⁻ → D</text>
   <text x="392" y="82" text-anchor="middle" fill="#5b21b6" font-size="10">(electrons on LEFT)</text>
 
   <!-- Multiply step -->
-  <rect x="15" y="105" width="490" height="36" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <rect x="15" y="105" width="490" height="36" rx="8" fill="#0c4a6e" stroke="#0284c7" stroke-width="1.5"/>
   <text x="260" y="121" text-anchor="middle" fill="#0c4a6e" font-weight="600">Multiply each half-equation so electrons balance (find LCM of n and m)</text>
   <text x="260" y="135" text-anchor="middle" fill="#0369a1" font-size="11">e.g. n=2, m=5 → multiply oxidation ×5, reduction ×2 → 10e⁻ each side</text>
 
@@ -371,12 +371,12 @@ export const note_chemistry_2_8_2 = {
   <line x1="260" y1="141" x2="260" y2="157" stroke="#475569" stroke-width="1.5" marker-end="url(#aC2)"/>
 
   <!-- Add step -->
-  <rect x="15" y="157" width="490" height="26" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="15" y="157" width="490" height="26" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="260" y="174" text-anchor="middle" fill="#14532d" font-weight="600">Add the two (multiplied) equations together; cancel electrons</text>
   <line x1="260" y1="183" x2="260" y2="199" stroke="#475569" stroke-width="1.5" marker-end="url(#aC2)"/>
 
   <!-- Check step -->
-  <rect x="15" y="199" width="490" height="34" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
+  <rect x="15" y="199" width="490" height="34" rx="8" fill="#4a1040" stroke="#ec4899" stroke-width="1.5"/>
   <text x="260" y="217" text-anchor="middle" fill="#9d174d" font-weight="600">Simplify: cancel any H⁺ or H₂O on both sides</text>
   <text x="260" y="231" text-anchor="middle" fill="#be185d" font-size="10">Check: total atoms balance ✓ &amp; total charge balance ✓ on both sides</text>
 
@@ -429,48 +429,48 @@ export const note_chemistry_2_8_2 = {
             data: {
                 caption: 'Disproportionation: Cl₂ in water and Cu⁺ ions — same element simultaneously oxidised and reduced',
                 svg: `<svg viewBox="0 0 520 205" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif" font-size="12">
-  <rect width="520" height="205" rx="10" fill="#fafafa"/>
+  <rect width="520" height="205" rx="10" fill="#0f172a"/>
   <text x="260" y="20" text-anchor="middle" font-weight="700" font-size="14" fill="#1e293b">Disproportionation Examples</text>
 
   <!-- Example 1: Cl₂ in water -->
-  <rect x="10" y="30" width="240" height="155" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+  <rect x="10" y="30" width="240" height="155" rx="8" fill="#1c3a64" stroke="#0284c7" stroke-width="1.5"/>
   <text x="130" y="50" text-anchor="middle" font-weight="700" fill="#0c4a6e">Example 1: Cl₂ + H₂O</text>
   <text x="130" y="68" text-anchor="middle" fill="#0369a1" font-size="11">Cl₂ + H₂O ⇌ HCl + HClO</text>
 
-  <rect x="20" y="78" width="100" height="38" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="20" y="78" width="100" height="38" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="70" y="95" text-anchor="middle" font-weight="700" fill="#1e40af" font-size="13">Cl₂</text>
   <text x="70" y="110" text-anchor="middle" fill="#1e40af" font-size="11">Cl = 0</text>
 
   <path d="M 123 95 L 155 80" stroke="#dc2626" stroke-width="1.5" marker-end="url(#aD1)"/>
   <path d="M 123 102 L 155 137" stroke="#16a34a" stroke-width="1.5" marker-end="url(#aD2)"/>
 
-  <rect x="155" y="68" width="85" height="32" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <rect x="155" y="68" width="85" height="32" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1"/>
   <text x="197" y="83" text-anchor="middle" fill="#7f1d1d" font-weight="700" font-size="11">HClO</text>
   <text x="197" y="97" text-anchor="middle" fill="#7f1d1d" font-size="10">Cl = +1 ↑ OXIDISED</text>
 
-  <rect x="155" y="122" width="85" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <rect x="155" y="122" width="85" height="32" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1"/>
   <text x="197" y="137" text-anchor="middle" fill="#14532d" font-weight="700" font-size="11">HCl</text>
   <text x="197" y="151" text-anchor="middle" fill="#14532d" font-size="10">Cl = –1 ↓ REDUCED</text>
 
   <text x="130" y="178" text-anchor="middle" fill="#475569" font-size="10">Cl goes from 0 → +1 AND 0 → –1</text>
 
   <!-- Example 2: Cu⁺ -->
-  <rect x="270" y="30" width="240" height="155" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="270" y="30" width="240" height="155" rx="8" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="390" y="50" text-anchor="middle" font-weight="700" fill="#92400e">Example 2: Cu⁺ ions</text>
   <text x="390" y="68" text-anchor="middle" fill="#b45309" font-size="11">2Cu⁺ → Cu²⁺ + Cu</text>
 
-  <rect x="280" y="78" width="100" height="38" rx="6" fill="#fde68a" stroke="#d97706" stroke-width="1"/>
+  <rect x="280" y="78" width="100" height="38" rx="6" fill="#44370a" stroke="#d97706" stroke-width="1"/>
   <text x="330" y="95" text-anchor="middle" font-weight="700" fill="#92400e" font-size="13">Cu⁺</text>
   <text x="330" y="110" text-anchor="middle" fill="#92400e" font-size="11">Cu = +1</text>
 
   <path d="M 383 95 L 415 80" stroke="#dc2626" stroke-width="1.5" marker-end="url(#aD1)"/>
   <path d="M 383 102 L 415 137" stroke="#16a34a" stroke-width="1.5" marker-end="url(#aD2)"/>
 
-  <rect x="415" y="68" width="85" height="32" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <rect x="415" y="68" width="85" height="32" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="1"/>
   <text x="457" y="83" text-anchor="middle" fill="#7f1d1d" font-weight="700" font-size="11">Cu²⁺</text>
   <text x="457" y="97" text-anchor="middle" fill="#7f1d1d" font-size="10">Cu = +2 ↑ OXIDISED</text>
 
-  <rect x="415" y="122" width="85" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <rect x="415" y="122" width="85" height="32" rx="6" fill="#0a2e1a" stroke="#16a34a" stroke-width="1"/>
   <text x="457" y="137" text-anchor="middle" fill="#14532d" font-weight="700" font-size="11">Cu</text>
   <text x="457" y="151" text-anchor="middle" fill="#14532d" font-size="10">Cu = 0 ↓ REDUCED</text>
 

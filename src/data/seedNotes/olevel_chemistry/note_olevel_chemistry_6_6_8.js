@@ -71,13 +71,13 @@ export const note_olevel_chemistry_6_6_8 = {
   <rect x="250" y="50" width="80" height="15" fill="#94a3b8" />
   <rect x="250" y="80" width="80" height="15" fill="#94a3b8" />
   <rect x="250" y="110" width="80" height="15" fill="#94a3b8" />
-  <text x="290" y="100" font-family="var(--font-sans)" font-size="10" fill="#f8fafc" text-anchor="middle">Iron Catalyst</text>
+  <text x="290" y="100" font-family="var(--font-sans)" font-size="10" fill="#0f172a" text-anchor="middle">Iron Catalyst</text>
 
   <path d="M 340 120 L 400 120" fill="none" stroke="var(--color-text)" stroke-width="2" marker-end="url(#arrow-head)" />
   <text x="370" y="110" font-family="var(--font-sans)" font-size="10" fill="var(--color-text)" text-anchor="middle">N₂, H₂, NH₃</text>
 
   <!-- Condenser / cooler -->
-  <rect x="410" y="80" width="80" height="100" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+  <rect x="410" y="80" width="80" height="100" rx="4" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="2"/>
   <text x="450" y="135" font-family="var(--font-sans)" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Cooling</text>
 
   <!-- Liquid ammonia out -->
