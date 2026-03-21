@@ -214,7 +214,6 @@ export const note_biology_1_1_4 = {
         text: "Four key food tests: (1) Benedict's (Cu²⁺, heat) → brick-red precipitate for reducing sugars; non-reducing sugars need HCl hydrolysis first. (2) Iodine/KI → blue-black for starch (I₂ enters amylose helix). (3) Biuret (NaOH + CuSO₄) → purple for proteins (Cu²⁺ complexes with peptide bonds). (4) Emulsion (ethanol then water) → milky white cloudiness for lipids. Always use positive and negative controls.",
       },
     },
-  ,
     {
         "id": "svg-diag-1-1-4-0",
         "type": "svg",
@@ -230,6 +229,15 @@ export const note_biology_1_1_4 = {
             "svg": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='40' width='20' height='40' fill='#1e293b' rx='2'/><text x='25' y='95' font-size='10'>Light</text><line x1='50' y1='60' x2='120' y2='60' stroke='#ecc94b' stroke-width='6'/><rect x='130' y='30' width='40' height='60' fill='#1c3a64' stroke='#4299e1' stroke-width='2' opacity='0.8' rx='3'/><text x='132' y='20' font-size='10'>Cuvette</text><line x1='170' y1='60' x2='240' y2='60' stroke='#ecc94b' stroke-width='2'/><rect x='250' y='35' width='50' height='50' fill='#2d3748' rx='4'/><text x='257' y='65' fill='#1e293b' font-size='11'>Sensor</text><text x='320' y='55' font-size='11'>Measures</text><text x='320' y='70' font-size='11'>Absorbance</text><text x='180' y='80' font-size='9' fill='#c53030'>Less transmitted</text></svg>",
             "caption": "Colorimeter Operation"
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Non-Reducing Sugar Test",
+        text: "In the Benedict's test for non-reducing sugars, you must state that the sample is first boiled with dilute hydrochloric acid to hydrolyse the glycosidic bonds, then neutralized with an alkali (like sodium hydrogen carbonate) before adding Benedict's reagent."
+      }
     }
   ],
   recall: {

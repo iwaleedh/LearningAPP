@@ -247,6 +247,15 @@ export const note_biology_1_1_3 = {
             "svg": "<svg viewBox='0 0 300 140' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='60' r='45' fill='#3d1212' stroke='#c53030' stroke-width='3'/><circle cx='80' cy='60' r='35' fill='#7f1d1d'/><text x='62' y='65' font-weight='bold' font-size='14' fill='#742a2a'>LDL</text><text x='40' y='125' font-size='11'>More Cholesterol</text><circle cx='220' cy='60' r='35' fill='#0a2e1a' stroke='#2f855a' stroke-width='3'/><circle cx='220' cy='60' r='20' fill='#0a2e1a'/><text x='202' y='65' font-weight='bold' font-size='14' fill='#22543d'>HDL</text><text x='190' y='115' font-size='11'>More Protein</text></svg>",
             "caption": "Lipoproteins (LDL vs HDL)"
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Direction of Cholesterol Transport",
+        text: "Remember that LDLs transport cholesterol from the liver to the tissues/cells, while HDLs transport cholesterol from the tissues back to the liver. A common error is mixing up their directions of transport."
+      }
     }
   ],
   recall: {
