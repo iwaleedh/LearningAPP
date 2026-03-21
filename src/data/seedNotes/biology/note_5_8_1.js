@@ -40,7 +40,8 @@ export const note_biology_5_8_1 = {
           "Propagation: The influx of Na+ sets up localized electrical circuits that depolarise the adjacent section of the membrane, triggering the next action potential like falling dominoes."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-808044ae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

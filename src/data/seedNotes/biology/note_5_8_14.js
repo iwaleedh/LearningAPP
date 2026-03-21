@@ -34,7 +34,8 @@ export const note_biology_5_8_14 = {
       id: "p-result",
       type: "paragraph",
       data: { text: "Results normally show a steep negative correlation. Calcium channels in the snail's sensory neurones become less responsive over repeated firings, releasing less neurotransmitter into the synapse, resulting in no motor response. The snail has successfully habituated." }
-    }
+    },
+{ 'id': 'callout-examiner-dd2bc9d3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

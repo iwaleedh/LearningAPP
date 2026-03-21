@@ -22,7 +22,8 @@ export const note_biology_5_8_6 = {
           "Hypothalamus: Regulates homeostasis (body temperature, water potential) and coordinates the endocrine system via the attached pituitary gland."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-5ff6ff26', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

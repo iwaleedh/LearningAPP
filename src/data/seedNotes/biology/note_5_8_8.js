@@ -43,7 +43,8 @@ export const note_biology_5_8_8 = {
           "Conclusion: If synapses aren't stimulated during the critical period, they are permanently pruned away. This proves visual cortex development is plastic and activity-dependent."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-7825103a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -26,7 +26,8 @@ export const note_biology_5_8_0 = {
           "Motor Neurone: Carries impulses from the CNS to an effector (muscle or gland). Has a large cell body at one end with short dendrites, and a very long axon terminating at neuromuscular junctions."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-86a081e2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -46,7 +46,9 @@ export const note_biology_5_8_9 = {
           "This uneven growth causes the shoot to bend towards the light (positive phototropism)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-e57178ec', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-106d03be', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

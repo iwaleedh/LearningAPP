@@ -26,7 +26,8 @@ export const note_biology_5_8_3 = {
           "The neurotransmitter is broken down by enzymes (e.g., acetylcholinesterase) to prevent continuous firing, and the products are reabsorbed."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-d37a6d37', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

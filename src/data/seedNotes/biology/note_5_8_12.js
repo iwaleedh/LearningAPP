@@ -22,7 +22,8 @@ export const note_biology_5_8_12 = {
           "Corporate Monopolies: Large agricultural corporations patent GM seeds, preventing poor farmers in developing countries from saving seeds year-on-year, enforcing a cycle of extreme debt."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-a1e71d01', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

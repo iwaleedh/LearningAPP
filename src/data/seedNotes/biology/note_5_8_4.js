@@ -28,7 +28,8 @@ export const note_biology_5_8_4 = {
           "Release Modulators: L-Dopa increases dopamine synthesis; Botulinum toxin prevents acetylcholine release."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-1fddfb46', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

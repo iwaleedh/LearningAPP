@@ -22,7 +22,8 @@ export const note_biology_5_8_7 = {
           "PET Scan (Positron Emission Tomography): Involves injecting a radioactive tracer (often radioactive glucose). Active brain regions rapidly absorb the glucose, emitting positrons that are mapped. Advantages: Extremely detailed functional data; great for Alzheimer's or cancer mapping."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-2a4fc551', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

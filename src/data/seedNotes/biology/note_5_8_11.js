@@ -41,7 +41,8 @@ export const note_biology_5_8_11 = {
           "Germ-Line Therapy: Targets a fertilized egg/embryo. Every single cell in the resulting human will possess the healthy gene. The fix is permanent and will be passed to future generations. Currently highly illegal worldwide due to massive ethical and eugenics concerns."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-56b9d50a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -56,7 +56,8 @@ export const note_biology_5_8_5 = {
           "The bipolar cell is freed from inhibition, depolarises, and fires an action potential down the optic nerve."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-1b4b005e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

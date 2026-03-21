@@ -27,7 +27,8 @@ export const note_biology_5_8_2 = {
           "Speed: Saltatory conduction allows impulses to travel up to 100x faster than in unmyelinated axons of the same diameter, and requires less ATP as fewer Na+/K+ pumps are needed."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-abdeb644', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -24,7 +24,8 @@ export const note_biology_5_8_15 = {
         ],
         caption: "Summary of coordination systems."
       }
-    }
+    },
+{ 'id': 'callout-examiner-be624652', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

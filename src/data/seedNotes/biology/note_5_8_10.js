@@ -22,7 +22,8 @@ export const note_biology_5_8_10 = {
           "DNA Ligase: The biochemical glue. Once sticky ends of a plasmid and a target gene have hydrogen-bonded together (annealed), DNA Ligase creates new phosphodiester bonds to permanently seal the recombinant DNA backbone."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-ef9d997f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,
