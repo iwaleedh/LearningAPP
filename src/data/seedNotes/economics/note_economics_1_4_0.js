@@ -81,6 +81,15 @@ export const note_economics_1_4_0 = {
         text: 'In exam diagrams, always label: axes (P and Q), both curves (S and D), equilibrium point (E), equilibrium price (P*), and equilibrium quantity (Q*). If a shift occurs, label the new curve S₂ or D₂ and show new P₂ and Q₂ with dashed lines.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In exam diagrams, always label: axes (P and Q), both curves (S and D), equilibrium point (E), equilibrium price (P*), and equilibrium quantity (Q*). If a shift occurs, label the new curve S\u2082 or D\u2082 and show new P\u2082 and Q\u2082 with dashed lines."
+      }
     }
   ],
   recall: {

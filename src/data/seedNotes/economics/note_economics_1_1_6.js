@@ -108,6 +108,24 @@ export const note_economics_1_1_6 = {
         text: 'When evaluating a market structure (e.g. monopoly vs perfect competition), always address <strong>both</strong> productive and allocative efficiency separately. State the condition for each (min ATC and P = MC respectively) and explain whether each condition is met in that market.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Productive efficiency and allocative efficiency are not the same thing. A firm can be productively efficient (producing at min ATC) but allocatively inefficient (P > MC). A monopoly, for example, may produce efficiently in terms of costs but still restrict output so that P > MC."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When evaluating a market structure (e.g. monopoly vs perfect competition), always address both productive and allocative efficiency separately. State the condition for each (min ATC and P = MC respectively) and explain whether each condition is met in that market."
+      }
     }
   ],
   recall: {

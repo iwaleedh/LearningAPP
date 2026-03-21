@@ -11,6 +11,15 @@ export const note_economics_1_6_6 = {
     { id: 'h-4', type: 'heading', data: { text: 'Evaluation', level: 2 }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'warning', title: 'Limitations of Information Provision and Nudges', text: '<strong>Information provision</strong>: may be ignored; health warnings on cigarettes have limited effect on addicted smokers; information overload can be as bad as too little.<br/><strong>Nudge</strong>: paternalistic — critics argue the state should not manipulate choices;<br/>effects may be temporary or weak; works best for one-off decisions (pensions) less well for habitual behaviour (diet); does not address structural poverty as root cause of unhealthy choices.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Government reduces information failure through campaigns, compulsory labelling, and mandatory disclosure. Nudge theory uses default options and choice architecture to guide decisions. Both preserve consumer freedom but have limited impact on entrenched behaviours.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Information provision: may be ignored; health warnings on cigarettes have limited effect on addicted smokers; information overload can be as bad as too little.\nNudge: paternalistic \u2014 critics argue the state should not manipulate choices; effects may be temporary or weak; works best for one-off decisions (pensions) less well for habitual behaviour (diet); does not address structural poverty as root cause of unhealthy choices."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

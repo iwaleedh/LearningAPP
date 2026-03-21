@@ -83,6 +83,15 @@ export const note_economics_1_1_9 = {
         text: 'If asked to evaluate money as a store of value, mention <strong>inflation</strong> as the key limitation. A strong answer links this to monetary policy — central banks target low inflation (e.g. 2% in the UK) precisely to preserve money\'s ability to function as a store of value.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "If asked to evaluate money as a store of value, mention inflation as the key limitation. A strong answer links this to monetary policy \u2014 central banks target low inflation (e.g. 2% in the UK) precisely to preserve money's ability to function as a store of value."
+      }
     }
   ],
   recall: {

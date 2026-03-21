@@ -12,6 +12,15 @@ export const note_economics_1_6_8 = {
     { id: 'list-3', type: 'list', data: { style: 'bullet', items: [{ text: 'Intervention is only justified when <strong>marginal social benefit of intervention > marginal social cost of intervention</strong>.' }, { text: 'Costs include: administrative costs, distortionary effects, enforcement costs.' }, { text: 'Benefits: reduction in market failure, externality internalisation, equity gains.' }, { text: 'If evidence of government failure is strong, <strong>market-based solutions or deregulation</strong> may be preferred.' }] }, terms: [] },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always evaluate: does the cure cause more harm than the disease? Consider whether government failure makes a proposed intervention\'s costs exceed its benefits. This analysis is worth evaluation marks.<br/>Key chain: Market failure → Government intervenes → Government failure can arise → Net welfare effect may be negative.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Government failure arises from information failures, unintended consequences, regulatory capture, short-termism, disproportionate costs, and moral hazard. Intervention is only justified when net social benefit is positive.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Always evaluate: does the cure cause more harm than the disease? Consider whether government failure makes a proposed intervention's costs exceed its benefits. This analysis is worth evaluation marks.\nKey chain: Market failure \u2192 Government intervenes \u2192 Government failure can arise \u2192 Net welfare effect may be negative."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

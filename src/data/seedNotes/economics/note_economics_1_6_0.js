@@ -10,6 +10,15 @@ export const note_economics_1_6_0 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Indirect taxes</strong>: raise the price of demerit goods (cigarettes, alcohol, petrol) to reduce consumption.' }, { text: '<strong>Subsidies</strong>: lower the effective price of merit goods (vaccines, public transport) to increase consumption.' }, { text: '<strong>Price controls</strong>: maximum prices (rent controls) and minimum prices (minimum wage, agricultural floor prices).' }, { text: '<strong>Regulation</strong>: rules imposed on producers and consumers (emission standards, food safety, banking capital ratios).' }, { text: '<strong>Direct provision</strong>: state provides public/merit goods directly (NHS, schools, defence).' }, { text: '<strong>Information provision</strong>: government corrects information failures (food labels, health warnings, consumer rights enforcement).' }, { text: '<strong>Property rights</strong>: assigning rights to internalise externalities (Coase theorem, tradable permits).' }] }, terms: [] },
     { id: 'call-2', type: 'callout', data: { style: 'tip', title: 'Evaluation: Government Failure', text: 'Intervention is justified when market failure causes deadweight loss. However, government intervention can itself cause <strong>government failure</strong> if it creates new inefficiencies, has unintended consequences, or involves regulatory capture — sometimes making things worse than the original market failure.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Government intervention corrects market failures (externalities, public goods, information gaps, merit/demerit goods) and promotes equity and stability. Tools include taxes, subsidies, price controls, regulation, direct provision, and information campaigns.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Intervention is justified when market failure causes deadweight loss. However, government intervention can itself cause government failure if it creates new inefficiencies, has unintended consequences, or involves regulatory capture \u2014 sometimes making things worse than the original market failure."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

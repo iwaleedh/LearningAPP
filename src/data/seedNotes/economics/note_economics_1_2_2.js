@@ -12,6 +12,24 @@ export const note_economics_1_2_2 = {
     { id: 'h-4', type: 'heading', data: { text: 'Common Exam Errors', level: 2 }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'warning', title: 'Common Mistakes', text: '<strong>Do not</strong> say "demand increases" when you mean "quantity demanded increases" — these are different concepts.<br/><strong>Price changes</strong> → movement; <strong>non-price factors</strong> → shift.<br/>A shift right means more is demanded at <em>every</em> price, not just a higher quantity at one price.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Price changes cause movements along the demand curve. Non-price factors (income, prices of related goods, tastes, expectations, demographics) cause shifts of the entire curve. Rightward = demand increase; leftward = demand decrease.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When answering exam questions:\n\u2022 Label axes \"Price (\u00a3)\" and \"Quantity Demanded (units per period)\"\n\u2022 For a movement: draw an arrow along the existing curve\n\u2022 For a shift: draw a new curve and label it D\u2082\n\u2022 Always state the direction (rightward = increase in demand, leftward = decrease)"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Do not say \"demand increases\" when you mean \"quantity demanded increases\" \u2014 these are different concepts.\nPrice changes \u2192 movement; non-price factors \u2192 shift.\nA shift right means more is demanded at every price, not just a higher quantity at one price."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

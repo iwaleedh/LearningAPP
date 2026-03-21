@@ -13,6 +13,15 @@ export const note_economics_1_2_5 = {
     { id: 'call-2', type: 'callout', data: { style: 'worked', title: 'Worked Example: Calculating PED', text: 'The price of coffee rises from £2.00 to £2.50 (a 25% rise).<br/>Quantity demanded falls from 200 to 160 cups/day (a 20% fall).<br/><br/>PED = −20% ÷ +25% = −0.8<br/><br/>|PED| = 0.8 → <strong>inelastic</strong> (0 < 0.8 < 1).<br/>Interpretation: a 1% rise in price leads to only a 0.8% fall in quantity demanded.' }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Point PED on a Demand Curve', text: 'At the <strong>top</strong> of a straight-line demand curve, PED is elastic (|PED| > 1).<br/>At the <strong>midpoint</strong>, PED = 1 (unit elastic).<br/>At the <strong>bottom</strong>, PED is inelastic (|PED| < 1).<br/>This is because % change in price varies as you move along the curve.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'PED measures how responsive quantity demanded is to price changes. Key determinants: substitutes, necessity/luxury, time period, income proportion. Inelastic: |PED| < 1; elastic: |PED| > 1.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "At the top of a straight-line demand curve, PED is elastic (|PED| > 1).\nAt the midpoint, PED = 1 (unit elastic).\nAt the bottom, PED is inelastic (|PED| < 1).\nThis is because % change in price varies as you move along the curve."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -87,6 +87,15 @@ export const note_economics_1_5_4 = {
         text: 'Many students confuse "public good" with "goods provided by the government." This is wrong. A public good has <strong>specific economic properties</strong> (non-rival + non-excludable). Governments often provide services that are actually private goods (e.g. healthcare — excludable and rival).'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Many students confuse \"public good\" with \"goods provided by the government.\" This is wrong. A public good has specific economic properties (non-rival + non-excludable). Governments often provide services that are actually private goods (e.g. healthcare \u2014 excludable and rival)."
+      }
     }
   ],
   recall: {

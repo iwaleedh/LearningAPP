@@ -11,6 +11,15 @@ export const note_economics_1_6_3 = {
     { id: 'h-4', type: 'heading', data: { text: 'Evaluation', level: 2 }, terms: [] },
     { id: 'call-2', type: 'callout', data: { style: 'warning', title: 'Limitations of Cap-and-Trade', text: '<strong>Permit price volatility</strong>: if economic recession lowers output, permits become cheap — reducing incentive to innovate green technology.<br/><strong>Carbon leakage</strong>: production may move to non-regulated countries, reducing effectiveness.<br/><strong>Setting the cap</strong>: politically difficult to set a tight enough cap; lobbying from industry can result in too many permits.<br/><strong>Windfall profits</strong>: free permit allocation let energy companies pass on notional permit costs to consumers — generating large windfall profits.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Tradable pollution permits use market mechanisms to achieve a guaranteed pollution cap at least cost. Firms that reduce pollution cheaply sell permits; those with high abatement costs buy them. Main advantage: cost-effectiveness. Main limitation: permit price volatility.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Permit price volatility: if economic recession lowers output, permits become cheap \u2014 reducing incentive to innovate green technology.\nCarbon leakage: production may move to non-regulated countries, reducing effectiveness.\nSetting the cap: politically difficult to set a tight enough cap; lobbying from industry can result in too many permits.\nWindfall profits: free permit allocation let energy companies pass on notional permit costs to consumers \u2014 generating large windfall profits."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

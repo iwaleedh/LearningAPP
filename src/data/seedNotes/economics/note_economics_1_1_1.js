@@ -103,6 +103,24 @@ export const note_economics_1_1_1 = {
         text: 'If asked to evaluate an economic argument, you can critique the <strong>ceteris paribus assumption</strong> by explaining what other variables might change simultaneously and how that would affect the conclusion. This demonstrates sophisticated analytical thinking.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students sometimes treat model predictions as definitive facts. Remember: all economic models are simplifications. When evaluating a model's conclusion, always consider whether its assumptions are realistic in the specific context being discussed."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "If asked to evaluate an economic argument, you can critique the ceteris paribus assumption by explaining what other variables might change simultaneously and how that would affect the conclusion. This demonstrates sophisticated analytical thinking."
+      }
     }
   ],
   recall: {

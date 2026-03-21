@@ -105,6 +105,24 @@ export const note_economics_1_1_10 = {
         text: 'When discussing financial markets, link their <strong>efficiency in allocating capital</strong> to broader economic benefits (investment, growth). When evaluating, note that market failures in finance (information asymmetry, systemic risk) justify central bank regulation and government intervention.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Financial Market Failure",
+        text: "Financial markets can fail. The 2008 Global Financial Crisis demonstrated how moral hazard (excessive risk-taking by banks expecting government bailouts), asymmetric information (complex financial products that investors did not understand), and systemic risk (interconnected failures) can cause severe economic disruption. This is why financial regulation and central bank oversight are essential."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When discussing financial markets, link their efficiency in allocating capital to broader economic benefits (investment, growth). When evaluating, note that market failures in finance (information asymmetry, systemic risk) justify central bank regulation and government intervention."
+      }
     }
   ],
   recall: {

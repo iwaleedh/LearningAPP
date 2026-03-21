@@ -98,6 +98,24 @@ export const note_economics_1_3_5 = {
         text: 'Do not say patents simply "increase supply." They protect the patent holder\'s right to supply exclusively — for other firms, they are a <strong>barrier to entry</strong> that keeps supply lower than it would otherwise be.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In a 6+ mark evaluation, consider both sides: legal constraints can protect innovation (patents incentivise R&D) but restrict supply and raise prices for consumers. Always weigh trade-offs."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Do not say patents simply \"increase supply.\" They protect the patent holder's right to supply exclusively \u2014 for other firms, they are a barrier to entry that keeps supply lower than it would otherwise be."
+      }
     }
   ],
   recall: {

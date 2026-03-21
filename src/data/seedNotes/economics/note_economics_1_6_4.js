@@ -11,6 +11,15 @@ export const note_economics_1_6_4 = {
     { id: 'h-4', type: 'heading', data: { text: 'Limitations of the Coase Approach', level: 2 }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'warning', title: 'Why Coase Bargaining Often Fails in Practice', text: '<strong>High transaction costs</strong>: negotiating with thousands of affected parties (e.g. air pollution hurting millions) is prohibitively costly.<br/><strong>Difficulty defining rights</strong>: who owns the atmosphere? Rights are often legally unclear.<br/><strong>Wealth effects</strong>: who holds the right affects the distribution of benefits — the outcome may be efficient but unfair.<br/><strong>Information problems</strong>: each side may misrepresent preferences during bargaining.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'The Coase theorem shows that with zero transaction costs and clear property rights, parties can privately negotiate away externalities. In practice, this fails for large-scale externalities (air pollution, climate change) due to high transaction costs and unclear rights — justifying government intervention.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "High transaction costs: negotiating with thousands of affected parties (e.g. air pollution hurting millions) is prohibitively costly.\nDifficulty defining rights: who owns the atmosphere? Rights are often legally unclear.\nWealth effects: who holds the right affects the distribution of benefits \u2014 the outcome may be efficient but unfair.\nInformation problems: each side may misrepresent preferences during bargaining."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -103,6 +103,15 @@ export const note_economics_1_3_2 = {
         text: 'Price of wheat rises from £200 to £240 per tonne (+20%). Quantity supplied rises from 500 to 540 tonnes (+8%).<br/><br/>PES = 8% ÷ 20% = <strong>0.4</strong><br/><br/>Interpretation: Supply is <strong>inelastic</strong> (PES < 1). A 20% price rise only induces an 8% increase in quantity supplied — typical of agricultural goods in the short run.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Any straight-line supply curve passing through the origin has PES = 1. A supply curve cutting the price axis has PES > 1 (elastic). A supply curve cutting the quantity axis has PES < 1 (inelastic)."
+      }
     }
   ],
   recall: {

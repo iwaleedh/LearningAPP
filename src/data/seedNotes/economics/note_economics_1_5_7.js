@@ -11,6 +11,15 @@ export const note_economics_1_5_7 = {
     { id: 'h-4', type: 'heading', data: { text: 'Moral Hazard vs Adverse Selection', level: 2 }, terms: [] },
     { id: 'call-2', type: 'callout', data: { style: 'warning', title: 'Do Not Confuse These', text: '<strong>Adverse selection</strong>: hidden information <em>before</em> the contract (e.g. high-risk customers seeking insurance without revealing their risk).<br/><strong>Moral hazard</strong>: changed behaviour <em>after</em> the contract (e.g. once insured, taking more risks).<br/>Both are forms of asymmetric information — they just occur at different stages.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Moral hazard occurs post-contract when one party is shielded from risk and therefore acts less carefully. Key examples: insurance, banking ("too big to fail"), employment. Solutions: co-payments, monitoring, regulation, performance-linked pay.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Adverse selection: hidden information before the contract (e.g. high-risk customers seeking insurance without revealing their risk).\nMoral hazard: changed behaviour after the contract (e.g. once insured, taking more risks).\nBoth are forms of asymmetric information \u2014 they just occur at different stages."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

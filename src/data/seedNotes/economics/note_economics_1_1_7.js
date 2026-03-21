@@ -85,6 +85,15 @@ export const note_economics_1_1_7 = {
         text: 'When a PPF question shows capital goods on one axis and consumer goods on the other, remember: <strong>moving towards more capital goods on the PPF today</strong> leads to an outward shift of the PPF in the future. This is the mechanism by which investment drives economic growth.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When a PPF question shows capital goods on one axis and consumer goods on the other, remember: moving towards more capital goods on the PPF today leads to an outward shift of the PPF in the future. This is the mechanism by which investment drives economic growth."
+      }
     }
   ],
   recall: {

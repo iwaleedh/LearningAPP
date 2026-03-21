@@ -86,6 +86,15 @@ export const note_economics_1_2_1 = {
         text: 'Behavioural economics questions often ask you to <strong>apply a specific bias to a given scenario</strong>. Practise identifying which bias best explains the described behaviour, then link it to a policy implication (e.g. status quo bias → default enrolment nudge). Always evaluate — nudges work but have limits.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Behavioural economics questions often ask you to apply a specific bias to a given scenario. Practise identifying which bias best explains the described behaviour, then link it to a policy implication (e.g. status quo bias \u2192 default enrolment nudge). Always evaluate \u2014 nudges work but have limits."
+      }
     }
   ],
   recall: {

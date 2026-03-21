@@ -71,6 +71,15 @@ export const note_economics_1_4_4 = {
         text: '<strong>Tax revenue</strong> = (Pc − Pp) × Q₂. It appears as a rectangle on the diagram. The <strong>deadweight loss</strong> is the triangle between the old and new equilibrium quantities — it represents lost transactions and reduced welfare.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Tax revenue = (Pc \u2212 Pp) \u00d7 Q\u2082. It appears as a rectangle on the diagram. The deadweight loss is the triangle between the old and new equilibrium quantities \u2014 it represents lost transactions and reduced welfare."
+      }
     }
   ],
   recall: {

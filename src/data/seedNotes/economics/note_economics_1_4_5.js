@@ -78,6 +78,15 @@ export const note_economics_1_4_5 = {
         text: 'Like taxes, the distribution of the subsidy benefit between consumers and producers depends on the <strong>relative elasticities of demand and supply</strong>. Inelastic demand means consumers benefit more; inelastic supply means producers benefit more.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Like taxes, the distribution of the subsidy benefit between consumers and producers depends on the relative elasticities of demand and supply. Inelastic demand means consumers benefit more; inelastic supply means producers benefit more."
+      }
     }
   ],
   recall: {

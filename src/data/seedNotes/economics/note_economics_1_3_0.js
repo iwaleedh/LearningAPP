@@ -88,6 +88,24 @@ export const note_economics_1_3_0 = {
         text: 'Students often confuse a change in the <em>price of a related good</em> with a movement. A change in the price of an input (e.g. oil) is a <strong>cost change</strong> → shifts supply. A change in the price of the good itself → movement along the existing curve.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Always ask: did the price of the good change? If yes \u2192 movement. If a non-price factor changed \u2192 shift. In exam diagrams, draw a whole new supply curve for a shift, not just a new point."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often confuse a change in the price of a related good with a movement. A change in the price of an input (e.g. oil) is a cost change \u2192 shifts supply. A change in the price of the good itself \u2192 movement along the existing curve."
+      }
     }
   ],
   recall: {

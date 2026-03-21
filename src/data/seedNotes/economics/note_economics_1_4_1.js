@@ -75,6 +75,15 @@ export const note_economics_1_4_1 = {
         text: 'When explaining adjustment, use precise language: say price <strong>"rises/falls"</strong>, quantity demanded <strong>"contracts/extends"</strong>, and quantity supplied <strong>"extends/contracts"</strong>. Avoid saying the curve "moves" — it is a <em>movement along</em> the existing curves.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When explaining adjustment, use precise language: say price \"rises/falls\", quantity demanded \"contracts/extends\", and quantity supplied \"extends/contracts\". Avoid saying the curve \"moves\" \u2014 it is a movement along the existing curves."
+      }
     }
   ],
   recall: {

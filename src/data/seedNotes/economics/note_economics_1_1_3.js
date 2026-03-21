@@ -118,6 +118,24 @@ export const note_economics_1_1_3 = {
         text: 'When asked to identify opportunity cost, always specify the <strong>specific alternative forgone</strong>, not just "something else." Vague answers like "other things" will not gain full marks. Relate it to the context provided in the question.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Opportunity cost is not \"the money spent\" \u2014 it is the value of the best alternative that was not chosen. For example, if you spend \u00a3100 on a concert ticket, the opportunity cost is not \u00a3100 in cash \u2014 it is whatever you would otherwise have done with that \u00a3100 (e.g. savings, a textbook, a meal out)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When asked to identify opportunity cost, always specify the specific alternative forgone, not just \"something else.\" Vague answers like \"other things\" will not gain full marks. Relate it to the context provided in the question."
+      }
     }
   ],
   recall: {

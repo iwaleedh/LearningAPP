@@ -13,6 +13,15 @@ export const note_economics_1_2_8 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: 'At the top of the demand curve (high P, low Q): demand is <strong>elastic</strong> → TR is low and rising as price falls.' }, { text: 'At the midpoint: demand is <strong>unit elastic</strong> → TR is at its <strong>maximum</strong>.' }, { text: 'At the bottom (low P, high Q): demand is <strong>inelastic</strong> → TR falls as price falls further.' }, { text: 'This creates an <strong>inverted-U shaped TR curve</strong> when plotted against quantity.' }] }, terms: [] },
     { id: 'call-4', type: 'callout', data: { style: 'tip', title: 'Exam Application', text: 'A <strong>profit-maximising firm</strong> never sells in the inelastic region of its demand curve (MR < 0 there). Revenue is maximised at unit elasticity (MR = 0). Always explain <em>why</em> TR changes using PED logic, not just stating it goes up or down.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'TR = P × Q. When elastic, a price rise reduces TR (quantity effect dominates). When inelastic, a price rise raises TR (price effect dominates). TR is maximised at unit elasticity.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "A profit-maximising firm never sells in the inelastic region of its demand curve (MR < 0 there). Revenue is maximised at unit elasticity (MR = 0). Always explain why TR changes using PED logic, not just stating it goes up or down."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

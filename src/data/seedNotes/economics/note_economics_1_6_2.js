@@ -12,6 +12,24 @@ export const note_economics_1_6_2 = {
     { id: 'call-3', type: 'callout', data: { style: 'warning', title: 'Limitations', text: '<strong>Maximum prices</strong>: cause shortages; black markets may emerge; quality falls; under-investment in supply (especially housing); administrative cost of enforcement.<br/><strong>Minimum prices</strong>: cause surpluses (government may need to buy up surplus at significant cost); distorts comparative advantage; higher minimum wage may cause unemployment if PED of labour demand is elastic.' }, terms: [] },
     { id: 'call-4', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Effectiveness', text: 'Effectiveness of a price floor (e.g. minimum wage) depends on:<br/>• How much above equilibrium it is set<br/>• Elasticity of labour demand (elastic → more unemployment)<br/>• Enforcement quality<br/>Always discuss unintended consequences in evaluation.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Maximum prices below equilibrium cause shortages and black markets. Minimum prices above equilibrium cause surpluses. Both can achieve policy goals but create allocative inefficiency and unintended consequences.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Maximum prices: cause shortages; black markets may emerge; quality falls; under-investment in supply (especially housing); administrative cost of enforcement.\nMinimum prices: cause surpluses (government may need to buy up surplus at significant cost); distorts comparative advantage; higher minimum wage may cause unemployment if PED of labour demand is elastic."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Effectiveness of a price floor (e.g. minimum wage) depends on:\n\u2022 How much above equilibrium it is set\n\u2022 Elasticity of labour demand (elastic \u2192 more unemployment)\n\u2022 Enforcement quality\nAlways discuss unintended consequences in evaluation."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -76,6 +76,15 @@ export const note_economics_1_3_4 = {
         text: 'When asked about PES, always consider the <strong>time horizon</strong> and <strong>storability</strong>. A question about a fisherman\'s daily catch is very different from a question about global oil reserves. State your assumptions explicitly.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When asked about PES, always consider the time horizon and storability. A question about a fisherman's daily catch is very different from a question about global oil reserves. State your assumptions explicitly."
+      }
     }
   ],
   recall: {

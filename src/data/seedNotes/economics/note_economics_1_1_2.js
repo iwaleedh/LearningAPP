@@ -106,6 +106,24 @@ export const note_economics_1_1_2 = {
         text: 'The quickest way to identify a normative statement in an exam is to look for words like <strong>"should," "ought," "better," "fairer,"</strong> or <strong>"desirable."</strong> Positive statements typically describe what "is," "causes," or "will happen."'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often confuse disagreements between economists as being purely factual. In practice, many disagreements are normative \u2014 economists agree on the facts but disagree about what should be done because they hold different values about fairness, efficiency, or freedom."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The quickest way to identify a normative statement in an exam is to look for words like \"should,\" \"ought,\" \"better,\" \"fairer,\" or \"desirable.\" Positive statements typically describe what \"is,\" \"causes,\" or \"will happen.\""
+      }
     }
   ],
   recall: {

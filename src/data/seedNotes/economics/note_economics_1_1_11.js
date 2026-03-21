@@ -82,6 +82,24 @@ export const note_economics_1_1_11 = {
         text: 'To evaluate economic systems, use the framework of <strong>efficiency</strong> (does it allocate resources without waste?), <strong>equity</strong> (is the distribution of output fair?), and <strong>freedom</strong> (does it respect individual choice?). Free markets score well on efficiency and freedom but poorly on equity; command economies aim for equity but sacrifice efficiency and freedom.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "No country operates a pure free market economy. Even the most market-oriented economies (USA, Hong Kong) have significant government involvement in healthcare, defence, infrastructure, and regulation. Describing an economy as \"free market\" in an exam context means it relies primarily on the price mechanism."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "To evaluate economic systems, use the framework of efficiency (does it allocate resources without waste?), equity (is the distribution of output fair?), and freedom (does it respect individual choice?). Free markets score well on efficiency and freedom but poorly on equity; command economies aim for equity but sacrifice efficiency and freedom."
+      }
     }
   ],
   recall: {

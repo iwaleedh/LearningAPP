@@ -102,6 +102,15 @@ export const note_economics_1_2_0 = {
         text: 'The rational choice model is a <strong>simplification</strong>. In reality: consumers have limited attention and time (bounded rationality); preferences can be inconsistent (e.g. preferring immediate pleasure to long-term welfare); and social influences (advertising, peer pressure) shape choices in ways the model ignores. Behavioural economics has demonstrated systematic departures from rationality.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The Edexcel IAL exam often asks whether consumer behaviour is \"rational.\" In straightforward demand analysis, assume rationality. However, in questions about behavioural economics, acknowledge that real consumers often deviate from rationality due to biases, emotions, and limited information \u2014 this is covered in the next subtopic."
+      }
     }
   ],
   recall: {

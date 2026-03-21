@@ -77,6 +77,15 @@ export const note_economics_1_4_2 = {
         text: 'When a tax is imposed, the market price rises and quantity falls. <strong>Both CS and PS shrink.</strong> The tax revenue captured by government is a transfer, but the area that is neither CS, PS, nor tax revenue is the <strong>deadweight loss</strong> — show this clearly in your diagram.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When a tax is imposed, the market price rises and quantity falls. Both CS and PS shrink. The tax revenue captured by government is a transfer, but the area that is neither CS, PS, nor tax revenue is the deadweight loss \u2014 show this clearly in your diagram."
+      }
     }
   ],
   recall: {

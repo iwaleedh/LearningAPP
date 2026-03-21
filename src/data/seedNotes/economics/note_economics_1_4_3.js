@@ -77,6 +77,15 @@ export const note_economics_1_4_3 = {
         text: 'Questions on the price mechanism often ask for analysis of <strong>all three functions</strong>. Link each function to a specific example and consider when the price mechanism might <em>fail</em> to perform these functions effectively (e.g. externalities distort signals).'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Questions on the price mechanism often ask for analysis of all three functions. Link each function to a specific example and consider when the price mechanism might fail to perform these functions effectively (e.g. externalities distort signals)."
+      }
     }
   ],
   recall: {

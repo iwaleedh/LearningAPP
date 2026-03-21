@@ -80,6 +80,15 @@ export const note_economics_1_3_1 = {
         text: 'In a 4+ mark question, <strong>chain your analysis</strong>: state the determinant → explain why it affects costs or profitability → state which direction supply shifts → state the effect on equilibrium price and quantity.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In a 4+ mark question, chain your analysis: state the determinant \u2192 explain why it affects costs or profitability \u2192 state which direction supply shifts \u2192 state the effect on equilibrium price and quantity."
+      }
     }
   ],
   recall: {

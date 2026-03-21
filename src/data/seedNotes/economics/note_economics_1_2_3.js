@@ -13,6 +13,15 @@ export const note_economics_1_2_3 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Cardinal utility</strong>: assumes utility can be measured in exact numbers ("utils") — the approach used in DMU analysis.' }, { text: '<strong>Ordinal utility</strong>: more modern approach — consumers only need to <strong>rank</strong> preferences (A > B > C), not assign numerical values.' }, { text: 'Ordinal utility is considered more realistic; DMU analysis uses cardinal utility for simplicity in models.' }] }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Remember: MU = 0 at the <strong>point of satiation</strong> (maximum TU). Negative MU = <strong>disutility</strong>. For exam diagrams, TU is an inverted-U shape peaking when MU crosses zero.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Marginal utility falls with each extra unit consumed (law of DMU). TU peaks where MU = 0. Because MU declines, consumers pay less for additional units, explaining the downward-sloping demand curve.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Remember: MU = 0 at the point of satiation (maximum TU). Negative MU = disutility. For exam diagrams, TU is an inverted-U shape peaking when MU crosses zero."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

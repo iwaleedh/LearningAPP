@@ -13,6 +13,15 @@ export const note_economics_1_6_1 = {
     { id: 'h-4', type: 'heading', data: { text: 'Evaluation', level: 2 }, terms: [] },
     { id: 'call-4', type: 'callout', data: { style: 'warning', title: 'Limitations of Taxes and Subsidies', text: '<strong>Taxes</strong>: hard to set the correct rate; may increase black markets; regressively burden low-income consumers (spend higher % on necessities like petrol).<br/><strong>Subsidies</strong>: costly for government; may be inefficient (prop up uncompetitive industries); subsidy benefit may be captured by producers rather than consumers; distorts resource allocation.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Indirect taxes raise price and reduce output, correcting negative externalities but creating deadweight loss. Subsidies lower price and increase output, correcting under-consumption of merit goods. Tax incidence depends on the relative elasticities of supply and demand.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Taxes: hard to set the correct rate; may increase black markets; regressively burden low-income consumers (spend higher % on necessities like petrol).\nSubsidies: costly for government; may be inefficient (prop up uncompetitive industries); subsidy benefit may be captured by producers rather than consumers; distorts resource allocation."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

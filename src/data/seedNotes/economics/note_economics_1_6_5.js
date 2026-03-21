@@ -11,6 +11,15 @@ export const note_economics_1_6_5 = {
     { id: 'h-3', type: 'heading', data: { text: 'Evaluation: Limitations', level: 2 }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'warning', title: 'Problems with State Provision and Regulation', text: '<strong>State provision</strong>: productive inefficiency (no profit motive); bureaucratic waste; political interference; crowding out private investment.<br/><br/><strong>Regulation</strong>: regulatory capture (regulators side with the industry they oversee); compliance costs for business; may stifle innovation; government lacks full information to set rules correctly.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'State provision directly provides public and merit goods but may lack efficiency incentives. Regulation corrects market failures via rules without direct production but risks regulatory capture and information problems.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "State provision: productive inefficiency (no profit motive); bureaucratic waste; political interference; crowding out private investment.\n\nRegulation: regulatory capture (regulators side with the industry they oversee); compliance costs for business; may stifle innovation; government lacks full information to set rules correctly."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -107,6 +107,15 @@ export const note_economics_1_1_8 = {
         text: 'When evaluating specialisation, always consider both the <strong>efficiency gains</strong> and the <strong>risks</strong>. A balanced answer should note that while specialisation raises productivity and enables trade, it also creates interdependence, structural unemployment risk, and potential loss of job satisfaction — and that the extent of these depends on the context.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When evaluating specialisation, always consider both the efficiency gains and the risks. A balanced answer should note that while specialisation raises productivity and enables trade, it also creates interdependence, structural unemployment risk, and potential loss of job satisfaction \u2014 and that the extent of these depends on the context."
+      }
     }
   ],
   recall: {

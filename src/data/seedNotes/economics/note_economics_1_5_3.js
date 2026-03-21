@@ -61,6 +61,15 @@ export const note_economics_1_5_3 = {
         text: '1. Label ALL curves: MPC, MSC, MPB/D, MSB.<br/>2. Mark BOTH equilibrium points: Qm (market) and Q* (social optimum).<br/>3. Shade the DWL triangle and label it clearly.<br/>4. State whether the market <em>over</em> or <em>under</em>produces relative to Q*.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "1. Label ALL curves: MPC, MSC, MPB/D, MSB.\n2. Mark BOTH equilibrium points: Qm (market) and Q* (social optimum).\n3. Shade the DWL triangle and label it clearly.\n4. State whether the market over or underproduces relative to Q*."
+      }
     }
   ],
   recall: {

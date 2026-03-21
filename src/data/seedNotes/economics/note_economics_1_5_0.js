@@ -72,6 +72,15 @@ export const note_economics_1_5_0 = {
         text: 'In evaluative answers on market failure, always distinguish between <strong>market failure</strong> (a problem with the free market) and <strong>government failure</strong> (a problem with government intervention). Acknowledging both sides is expected at higher marks.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In evaluative answers on market failure, always distinguish between market failure (a problem with the free market) and government failure (a problem with government intervention). Acknowledging both sides is expected at higher marks."
+      }
     }
   ],
   recall: {

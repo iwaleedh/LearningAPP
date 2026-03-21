@@ -101,6 +101,15 @@ export const note_economics_1_1_4 = {
         text: 'Questions on resources often link to <strong>market failure</strong> (externalities, common resources), <strong>government intervention</strong> (carbon taxes, subsidies for renewables), and <strong>sustainability</strong>. Be ready to connect resource type to these broader themes.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Questions on resources often link to market failure (externalities, common resources), government intervention (carbon taxes, subsidies for renewables), and sustainability. Be ready to connect resource type to these broader themes."
+      }
     }
   ],
   recall: {
