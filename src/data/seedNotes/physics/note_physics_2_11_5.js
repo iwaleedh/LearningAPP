@@ -86,6 +86,15 @@ export const note_physics_2_11_5 = {
         title: "Exam Tip — Core Practical 6",
         text: "• Always measure the distance d between the <em>centres</em> of the two microphones, not their outer edges.\n• Read the time delay Δt directly from the oscilloscope time-base setting — one horizontal division × time/div.\n• Repeat with different separations and plot a d vs Δt graph; the gradient equals the speed of sound, reducing the effect of random error.\n• State that sound diffracts around the microphones — keep them small relative to the <strong>wavelength</strong>."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When investigating standing waves, it can be difficult to identify the exact position of maximum resonance by ear alone. In your evaluations, always mention taking multiple measurements to calculate a mean, and suggest using a microphone connected to an oscilloscope to significantly reduce uncertainty."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 6: Investigating the Speed of Sound' }], summaryText: '', ready: true },
