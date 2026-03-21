@@ -30,7 +30,8 @@ export const note_biology_5_7_18 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-922f4615', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-922f4615', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-d93f78fc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -48,7 +48,9 @@ export const note_biology_5_7_17 = {
       }
     },
 { 'id': 'callout-examiner-c2676c09', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-6b63925f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-6b63925f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-254da7d9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-9936239c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

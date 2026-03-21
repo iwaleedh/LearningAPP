@@ -43,7 +43,8 @@ export const note_biology_5_7_6 = {
       type: "paragraph",
       data: { text: "If an RQ value is greater than 1, it means the organism is struggling for oxygen and is starting to undergo anaerobic respiration (producing more CO2 than the O2 it consumes)." }
     },
-{ 'id': 'callout-examiner-30095a51', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-30095a51', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-1d9add6b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

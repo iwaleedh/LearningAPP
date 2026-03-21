@@ -41,7 +41,9 @@ export const note_biology_5_7_9 = {
       data: { text: "Relaxation occurs when nervous stimulation stops. Ca2+ is actively pumped back into the sarcoplasmic reticulum, tropomyosin recovers the binding sites, and the sarcomere lengthens back to normal." }
     },
 { 'id': 'callout-examiner-0c3291f7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-92060140', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-92060140', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-e3cca6d9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-608b87f9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

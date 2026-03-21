@@ -35,7 +35,8 @@ export const note_biology_5_7_4 = {
       type: "callout",
       data: { style: "warning", title: "Role of Oxygen", text: "Without oxygen to accept the electrons, the ETC halts. Protons cannot be pumped, ATP synthases stops, and NADH cannot be oxidized back to NAD. The Krebs cycle and Link reaction stop." }
     },
-{ 'id': 'callout-examiner-f146262d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-f146262d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-884232f8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

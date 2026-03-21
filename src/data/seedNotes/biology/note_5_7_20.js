@@ -33,7 +33,8 @@ export const note_biology_5_7_20 = {
       type: "callout",
       data: { style: "warning", title: "Common Errors", text: "Ensure the syringe/pipettes are perfectly airtight using petroleum jelly on seals. Leave the three-way tap open to the air for 5 minutes during temp equilibration to let pressure adjust before closing the system." }
     },
-{ 'id': 'callout-examiner-407a8b16', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-407a8b16', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-152c7a18', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

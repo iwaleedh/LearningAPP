@@ -33,7 +33,8 @@ export const note_biology_5_7_7 = {
       type: "callout",
       data: { style: "warning", title: "Key Controls & Safety", text: "Soda lime is corrosive, so a wire mesh must separate it from the animal. Temperature must be kept perfectly constant using a water bath, otherwise expanding gases will cause inaccurate manometer readings." }
     },
-{ 'id': 'callout-examiner-d47b8ac5', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-d47b8ac5', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-5f10223e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,
