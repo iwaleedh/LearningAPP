@@ -56,7 +56,9 @@ export const note_biology_2_4_2 = {
         "title": "Why use polysaccharides for storage?",
         "text": "Starch and glycogen are both large, insoluble molecules. Because of this, they do not affect the water potential of the cell (no osmotic effect) and cannot diffuse out of the cell."
       }
-    }
+    },
+{ 'id': 'callout-examiner-c183e6ef', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Why Insoluble?', 'text': 'When asked why starch or glycogen are good storage molecules, saying \'they are large\' isn\'t enough. You must state that they are insoluble and therefore do not affect the water potential (or cause osmotic swelling) of the cell.' } },
+{ 'id': 'callout-examiner-8374b1d0', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Amylose vs Amylopectin', 'text': 'Clearly distinguish between the two components of starch: amylose is unbranched and coiled (only 1,4-glycosidic bonds), making it compact, whereas amylopectin is branched (1,4 and 1,6-glycosidic bonds), allowing rapid hydrolysis.' } }
   ],
   "recall": {
     "enabled": true,

@@ -70,7 +70,9 @@ export const note_biology_2_4_3 = {
       "data": {
         "text": "Functioning purely for structural support (not transport), sclerenchyma fibres are made of dead cells with heavily lignified cell walls. They are typically found capping the vascular bundles."
       }
-    }
+    },
+{ 'id': 'callout-examiner-c16da93f', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Water Transport in Xylem', 'text': 'When explaining how xylem is adapted for transport, explicitly mention that it consists of dead cells forming a hollow, continuous tube with no end walls, cytoplasm, or organelles, offering minimal resistance to water flow.' } },
+{ 'id': 'callout-examiner-3bf46b9b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Role of Lignin', 'text': 'Don\'t just say lignin \'makes xylem strong\'. State that it provides structural support to prevent collapse under tension (negative pressure) and waterproofs the vessels.' } }
   ],
   "recall": {
     "enabled": true,

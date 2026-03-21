@@ -63,7 +63,9 @@ export const note_biology_2_4_8 = {
           "Over many generations, the frequency of the advantageous allele increases within the population."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-f34ac71e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Natural Selection Step-by-Step', 'text': 'In long-answer questions about evolution, always start with \'a random mutation produces an advantageous allele\'. Then state that this leads to survival, reproduction, and the passing on of this specific allele to offspring.' } },
+{ 'id': 'callout-examiner-7a39da97', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Defining an Ecological Niche', 'text': 'Examiners want a complete definition: it is the \'role\' of an organism within its habitat, which includes how it exploits resources (e.g., food, shelter) and interactions with other species.' } }
   ],
   "recall": {
     "enabled": true,

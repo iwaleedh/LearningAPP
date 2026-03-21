@@ -57,7 +57,9 @@ export const note_biology_2_4_5 = {
       "data": {
         "text": "In Phase III, patients are randomly split into two groups. One receives the active drug, the other receives a placebo (an inactive dummy pill/treatment). A \"double-blind\" trial means that neither the patients nor the administering doctors know who is receiving which. This removes bias (both psychological placebo effects in patients and subconscious bias in doctors analysing data)."
       }
-    }
+    },
+{ 'id': 'callout-examiner-ef2ef945', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'The Purpose of Phase 1', 'text': 'Examiners specifically look for the phrase \'healthy volunteers\' in Phase 1 trials. Its main purpose is to test for safety, side effects, and safe dosage, not efficacy.' } },
+{ 'id': 'callout-examiner-78f4ce70', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Placebo vs Double-Blind', 'text': 'Do not mix up these terms. A placebo is a dummy drug used as a control. A double-blind trial means neither the patient nor the doctor knows who receives the drug or placebo, which removes observer bias.' } }
   ],
   "recall": {
     "enabled": true,

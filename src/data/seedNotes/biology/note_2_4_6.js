@@ -70,7 +70,9 @@ export const note_biology_2_4_6 = {
       "data": {
         "text": "Molecular phylogeny looks at evolutionary relationships based on comparing the molecular sequences in different organisms, such as DNA base sequences, RNA sequences, or amino acid sequences in common proteins (like Cytochrome C). Organisms sharing highly similar sequences share a more recent common ancestor."
       }
-    }
+    },
+{ 'id': 'callout-examiner-84862947', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Molecular Phylogeny Evidence', 'text': 'When asked how new classification systems are developed, always cite \'molecular phylogeny\'. Mention comparing sequences of DNA, RNA, or proteins (amino acids) to determine evolutionary relationships.' } },
+{ 'id': 'callout-examiner-cd256c45', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Three-Domain System Basis', 'text': 'Remember that Carl Woese based his three domains (Bacteria, Archaea, Eukarya) on differences in ribosomal RNA (rRNA) and the cellular machinery, not just observable morphological characteristics.' } }
   ],
   "recall": {
     "enabled": true,

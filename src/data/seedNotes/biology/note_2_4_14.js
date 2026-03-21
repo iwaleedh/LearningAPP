@@ -45,7 +45,9 @@ export const note_biology_2_4_14 = {
         "title": "Aseptic Technique",
         "text": "You must disinfect the bench, work near a Bunsen burner flame (which creates an updraft to pull airborne microbes away), flame instrument necks/loops, and properly dispose of all plates into an autoclave bag."
       }
-    }
+    },
+{ 'id': 'callout-examiner-0de1ab87', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Aseptic Techniques', 'text': 'Exam scheme answers for aseptic technique usually include specific methods: working near a Bunsen burner (convection currents), flaming the neck of the bottle, and partially lifting the Petri dish lid (clamming) to prevent contamination from the air.' } },
+{ 'id': 'callout-examiner-1fbda1a2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Incubation Temperature', 'text': 'Never incubate bacterial cultures at 37°C in school experiments as it encourages the growth of human pathogenic bacteria. State that plates should be incubated around 25°C to 30°C.' } }
   ],
   "recall": {
     "enabled": true,

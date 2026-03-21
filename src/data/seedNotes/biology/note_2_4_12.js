@@ -45,7 +45,9 @@ export const note_biology_2_4_12 = {
         "title": "Rules for Biological Drawings",
         "text": "Use a sharp HB pencil. Draw continuous lines with no sketching/shading/overlapping. Drawing must take up at least 50% of the page. Include a title and a scale or magnification marker. Provide clear, uncrossed label lines drawn with a ruler."
       }
-    }
+    },
+{ 'id': 'callout-examiner-88a56731', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Tissue Sectioning', 'text': 'Make sure you mention taking the thinnest possible sections. If the sections are too thick, multiple layers of cells overlap which prevents light from passing through effectively, making the image blurry.' } },
+{ 'id': 'callout-examiner-4e243c02', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Safety with Razor Blades', 'text': 'Always state a specific safety precaution. The classic marking point is to cut away from the body/fingers when using a razor blade, or using forceps to move the thin sections.' } }
   ],
   "recall": {
     "enabled": true,

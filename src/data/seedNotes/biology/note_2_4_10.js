@@ -58,7 +58,9 @@ export const note_biology_2_4_10 = {
       "data": {
         "text": "Speciation occurs without geographic isolation within the same physical environment. This usually involves reproductive isolation mechanisms like differing mating seasons (temporal isolation), mechanical incompatibilities, or behavioural differences (e.g., a mutated mating call). Polyploidy (mutation in chromosome number) in plants is a rapid form of sympatric speciation."
       }
-    }
+    },
+{ 'id': 'callout-examiner-c51e4f31', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Allopatric vs Sympatric Speciation', 'text': 'Students frequently forget to specify the starting point: Allopatric speciation requires geographical isolation, whereas sympatric speciation occurs in the same geographical area (often due to behavioural or temporal isolation).' } },
+{ 'id': 'callout-examiner-d3a13b75', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'The Key Mechanism of Speciation', 'text': 'In any speciation question, to get full marks you must mention that different selection pressures lead to different alleles being selected for, leading to a change in allele frequencies until they can no longer interbreed to produce fertile offspring.' } }
   ],
   "recall": {
     "enabled": true,

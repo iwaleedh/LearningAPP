@@ -60,7 +60,9 @@ export const note_biology_2_4_7 = {
       "data": {
         "text": "Genetic diversity within a population can be quantified using the heterozygosity index (H), which calculates the proportion of individuals in the population that are heterozygous for a particular gene. Higher heterozygosity indicates greater genetic diversity, allowing better adaptation to disease or environmental changes."
       }
-    }
+    },
+{ 'id': 'callout-examiner-09fd0bb0', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Defining Endemism', 'text': 'A classic omission! Endemism means a species is found in one specific geographical location AND nowhere else in the world. Forgetting the \'nowhere else\' part loses marks.' } },
+{ 'id': 'callout-examiner-b6a307c5', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Heterozygosity Index (H)', 'text': 'When using the heterozygosity formula (H = number of heterozygotes / total population), specify that a higher index means a higher proportion of heterozygotes, which indicates greater genetic diversity.' } }
   ],
   "recall": {
     "enabled": true,

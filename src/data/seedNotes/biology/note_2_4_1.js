@@ -49,7 +49,9 @@ export const note_biology_2_4_1 = {
       "data": {
         "text": "Numerous straight cellulose chains line up parallel to each other. Hydrogen bonds form cross-links between the adjacent chains. Although individual hydrogen bonds are weak, the sheer number of them provides massive collective strength. These bonded chains form a bundle called a microfibril. Many microfibrils bunch together to form strong macroscopic cellulose fibres."
       }
-    }
+    },
+{ 'id': 'callout-examiner-e1777663', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Beta-Glucose Orientation', 'text': 'When describing cellulose, you must mention that it is composed of β-glucose monomers where every alternate monomer is inverted (rotated 180°). This allows the chain to be straight rather than helical.' } },
+{ 'id': 'callout-examiner-3df75709', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Bonds within Microfibrils', 'text': 'A common mistake is vaguely stating \'hydrogen bonds form cellulose\'. Be precise: hydrogen bonds form cross-links between adjacent, parallel cellulose chains to form microfibrils, providing high tensile strength.' } }
   ],
   "recall": {
     "enabled": true,

@@ -78,7 +78,9 @@ export const note_biology_2_4_9 = {
         "title": "Calculation Strategy",
         "text": "If a question states \"16% of the population suffers from the recessive disease\", that means q² = 0.16. From there, take the square root to find q (q = 0.4). Then use p = 1 - q to find p (p = 0.6). Finally, calculate 2pq to find the number of carriers."
       }
-    }
+    },
+{ 'id': 'callout-examiner-6704d192', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'p + q = 1 vs p² + 2pq + q² = 1', 'text': 'A common mistake is confusing allele frequencies ($p$ and $q$) with genotype frequencies ($p^2$, $2pq$, $q^2$). Remember you must square root the frequency of the homozygous recessive phenotype ($q^2$) to find the recessive allele frequency ($q$) first.' } },
+{ 'id': 'callout-examiner-0be8e67e', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Conditions for Hardy-Weinberg', 'text': 'Examiners often ask for the conditions under which the Hardy-Weinberg principle applies. Always state: no mutations, random mating, a large population, no gene flow (migration), and no selection pressure.' } }
   ],
   "recall": {
     "enabled": true,

@@ -124,6 +124,8 @@ export const note_biology_2_4_15 = {
         text: 'Core Practical 8: measure fibre diameter (micrometer), clamp horizontally, apply increasing masses, record extension at each load, measure breaking mass. Calculations: tensile strength = breaking force (N) / cross-sectional area (m²) in MPa. Young\'s modulus = stress/strain = (force/area) / (extension/original length) in GPa. Stress-strain graph: plot stress vs. strain; gradient of elastic region = Young\'s modulus. Steep gradient = stiff (high modulus, e.g. flax ~50–70 GPa); shallow = flexible (low modulus, e.g. polyester ~2–5 GPa). Safety: secure clamps, gradual loading, eye protection, stable apparatus.',
       },
     },
+{ 'id': 'callout-examiner-9ff942f8', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Calculating Young\'s Modulus', 'text': 'Remember the formula: Young\'s Modulus (E) = Tensile Stress / Tensile Strain. You must calculate stress from Force/Area and strain from Extension/Original Length. It is a measure of stiffness.' } },
+{ 'id': 'callout-examiner-db9f6a62', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Safety with Weights', 'text': 'When adding masses to a fibre until it snaps, students often miss the safety marks. You must specify placing a soft mat or sand tray underneath to catch the falling masses and protect feet.' } }
   ],
   recall: {
     enabled: true,

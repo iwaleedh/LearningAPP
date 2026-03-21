@@ -126,6 +126,8 @@ export const note_biology_2_4_17 = {
       data: { text: 'CP7: prepare stained cross-sections of plant tissue, identify xylem/phloem/epidermis under microscope. CP8: load plant fibres to breaking point, record force, calculate Young\'s modulus — compare natural vs synthetic. CP9: disk diffusion assay on agar — soak disks in plant extract, incubate at 25°C, measure zone of inhibition. Aseptic technique essential throughout CP9.' },
       terms: [],
     },
+{ 'id': 'callout-examiner-d7bfdd89', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Staining Vascular Tissue', 'text': 'Students frequently forget the function of the stain. State that stains like phloroglucinol or safranin bind to lignin, making the xylem vessels distinct and easier to distinguish from surrounding phloem or parenchyma.' } },
+{ 'id': 'callout-examiner-ed099453', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Calculating Magnifications', 'text': 'When deriving magnification, remember the formula is Magnification = Image Size / Actual Size. Double-check your units (convert mm to µm by multiplying by 1000) before dividing to avoid classic magnitude errors.' } }
   ],
   recall: {
     enabled: true,

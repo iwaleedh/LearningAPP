@@ -46,7 +46,9 @@ export const note_biology_2_4_13 = {
         "title": "Controlling Variables",
         "text": "Temperature/humidity, the exact length of the fibre being tested, the botanical source of the fibre, and the age of the plant must all be rigidly controlled to ensure a valid comparison."
       }
-    }
+    },
+{ 'id': 'callout-examiner-6bbe8558', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Standardising Variables in Fibre Testing', 'text': 'In tensile strength experiments, you must state which variables should be controlled to ensure a valid comparison. Include factors such as length, age, humidity, and diameter (cross-sectional area) of the plant fibres.' } },
+{ 'id': 'callout-examiner-0a3f101b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Cross-Sectional Area', 'text': 'A common mistake when calculating tensile strength is forgetting to measure the diameter using calipers or a micrometer to calculate the cross-sectional area. Tensile strength is force divided by cross-sectional area, not just the breaking force.' } }
   ],
   "recall": {
     "enabled": true,

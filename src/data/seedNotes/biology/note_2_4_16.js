@@ -133,6 +133,8 @@ export const note_biology_2_4_16 = {
         text: 'Core Practical 9: prepare plant extract (grind tissue, extract in solvent, filter), culture bacteria (streak on agar, incubate), prepare lawn (swab bacteria uniformly), soak filter discs in extract, place on lawn, incubate 24–48h, measure inhibition zones (mm). Interpretation: >20mm = strong, 10–20mm = moderate, 6–10mm = weak, <6mm = inactive. Controls: positive (antibiotic, must show zone), negative (solvent, must show no zone). Aseptic: flame equipment, work near Bunsen, minimise exposure, sterile items, autoclave waste. Safety: use COSHH-approved organisms, PPE, no eating/drinking, hand washing, report spills.',
       },
     },
+{ 'id': 'callout-examiner-689a3d08', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Measuring Inhibition Zones', 'text': 'To compare antimicrobial efficacy, measure the diameter of the clear zone of inhibition using a transparent ruler over the bottom of the unopened agar plate, taking two measurements at 90° and calculating a mean.' } },
+{ 'id': 'callout-examiner-de5d1c90', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Sealing Petri Dishes', 'text': 'Do not fully seal the Petri dish edges with tape as this creates anaerobic conditions that may encourage the growth of dangerous pathogenic anaerobic bacteria. Use pieces of tape in a cross across the plate instead.' } }
   ],
   recall: {
     enabled: true,

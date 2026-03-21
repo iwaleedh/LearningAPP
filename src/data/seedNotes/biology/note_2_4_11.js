@@ -62,7 +62,9 @@ export const note_biology_2_4_11 = {
           "Reintroduction: Animals are eventually re-released into the wild. This struggles if habitats have degraded or if zoo-raised animals lack necessary wild survival/foraging skills."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-5acc1278', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Genetic Diversity in Captive Breeding', 'text': 'A frequent error is vaguely mentioning "problems with inbreeding". In exam answers, specify that captive breeding can cause an increase in homozygosity and a decrease in genetic diversity unless studbooks and exchanges between zoos are used.' } },
+{ 'id': 'callout-examiner-ce8c6664', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Seed Bank Storage Conditions', 'text': 'When asked how seed viability is maintained, clearly state that seeds are dried and kept in cold, low-humidity conditions to reduce enzyme activity and prevent germination and decay.' } }
   ],
   "recall": {
     "enabled": true,

@@ -37,7 +37,9 @@ export const note_biology_2_4_0 = {
           "Middle Lamella: A layer (mainly calcium pectate) that acts like a cement, holding adjacent plant cell walls together."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-477e1c6a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Middle Lamella vs Plasmodesmata', 'text': 'Students often confuse these two structures. Remember that the middle lamella cements adjacent plant cells together (usually using calcium pectate), while plasmodesmata are actual channels penetrating the cell walls that allow transport and communication.' } },
+{ 'id': 'callout-examiner-af12efef', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Role of the Amyloplast', 'text': 'When describing amyloplasts, specifically state that they synthesise and store starch granules. Do not just say \'they store energy\', as examiners look for the specific mention of starch.' } }
   ],
   "recall": {
     "enabled": true,

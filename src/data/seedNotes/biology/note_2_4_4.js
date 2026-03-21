@@ -48,7 +48,9 @@ export const note_biology_2_4_4 = {
           "Plant Fibre Products: Using natural plant fibres for materials is more sustainable than using synthetic fibres (like nylon) which are derived from non-renewable fossil fuels."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-577af6e2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Defining Carbon Neutrality', 'text': 'A frequent error is stating plant-based products \'do not release carbon dioxide\'. They do! The key marking point is that the CO₂ released when burnt or decomposed is equal to the CO₂ absorbed during photosynthesis.' } },
+{ 'id': 'callout-examiner-97f52cbb', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Bioplastic Sustainability', 'text': 'In sustainability questions, always use the terms \'renewable\' (the plants can be regrown) and \'biodegradable\' (can be broken down by microbes) when comparing bioplastics or plant fibres to fossil fuel alternatives.' } }
   ],
   "recall": {
     "enabled": true,
