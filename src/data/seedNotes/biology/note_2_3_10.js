@@ -68,6 +68,9 @@ export const note_biology_2_3_10 = {
             "caption": "Epigenetic & Genetic Control"
         }
     }
+  ,
+{ 'id': 'callout-examiner-7508bec6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'All Cells Have the SAME Genome', 'text': 'This is a conceptual lynchpin. Every cell in a multicellular organism has the same DNA (except gametes). Cells differ because DIFFERENT GENES are expressed. If asked \'how are cells different if they have the same DNA,\' explain that transcription factors activate specific genes in each cell type.' } },
+{ 'id': 'callout-examiner-4ace902b', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Differentiation is a Result of Gene Expression, Not Mutation', 'text': 'Differentiation happens because specific transcription factors activate target genes, producing proteins that shape the cell. This is reversible under laboratory conditions (e.g., induced pluripotent stem cells). If asked \'is differentiation permanent,\' technically it can be reversed if signalling changes.' } }
   ],
   "recall": {
     "enabled": true,

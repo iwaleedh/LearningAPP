@@ -80,6 +80,9 @@ export const note_biology_2_3_8 = {
             "caption": "Operon Model (Prokaryotic Regulation)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-d1a327dc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Activators vs Repressors', 'text': 'Activators INCREASE transcription; repressors DECREASE transcription. Do not confuse the direction of effect. Both bind to DNA, but they have opposite actions. Examiners test this with scenario questions.' } },
+{ 'id': 'callout-examiner-63a97a79', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Lac Operon: Inducer Changes Repressor Shape', 'text': 'In the lac operon, when lactose (the inducer) binds the repressor, it CHANGES the repressor\'s shape so it cannot bind the operator. This is allosteric regulation. The repressor is not destroyed; it is inactivated. Many students miss this detail.' } }
   ],
   "recall": {
     "enabled": true,

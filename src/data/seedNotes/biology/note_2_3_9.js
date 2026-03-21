@@ -69,6 +69,9 @@ export const note_biology_2_3_9 = {
             "caption": "Histone Acetylation (Gene Activation)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-ec5c21f6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Methylation Silences Genes; Acetylation Activates Them', 'text': 'Increased DNA methylation = gene OFF (repressed). Increased histone acetylation = gene ON (activated). This is a common opposites question. If reversed, you lose marks. Examiners love to ask this in true/false or short-answer format.' } },
+{ 'id': 'callout-examiner-1cdacf20', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Epigenetics vs Mutation', 'text': 'Epigenetic changes are heritable and affect gene EXPRESSION, but they do NOT change the DNA base sequence. Mutations change the base sequence. Do NOT confuse these. If asked \'is this a mutation,\' and the DNA sequence is unchanged, the answer is \'no, it is epigenetic.\'' } }
   ],
   "recall": {
     "enabled": true,

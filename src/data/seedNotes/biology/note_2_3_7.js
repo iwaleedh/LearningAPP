@@ -84,6 +84,9 @@ export const note_biology_2_3_7 = {
             "caption": "Sources of Stem Cells"
         }
     }
+  ,
+{ 'id': 'callout-examiner-c7594b5d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Stem Cell Potency Definitions', 'text': 'Totipotent = ANY cell type PLUS extra-embryonic tissues. Pluripotent = MOST cell types but NOT extra-embryonic. Multipotent = LIMITED cell types. These precise definitions are tested. If you confuse them, you lose marks.' } },
+{ 'id': 'callout-examiner-b2a9b2e7', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Ethical Concerns with Embryonic Stem Cells', 'text': 'Examiners often ask about ethical issues. Know this: extracting pluripotent stem cells from a blastocyst DESTROYS the embryo, raising questions about when life begins and embryo rights. This is a nuanced point that separates high marks from low marks.' } }
   ],
   "recall": {
     "enabled": true,

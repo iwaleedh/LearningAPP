@@ -80,6 +80,9 @@ export const note_biology_2_3_2 = {
             "caption": "Differential Centrifugation Speeds"
         }
     }
+  ,
+{ 'id': 'callout-examiner-5c135112', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Why Cold, Isotonic, and Buffered?', 'text': 'Do not just memorise these conditions—understand WHY. Cold = slows enzyme activity (prevents damage). Isotonic = prevents osmotic lysis (bursting) or shrinkage of organelles. Buffered = prevents protein denaturation. Examiners ask for reasons.' } },
+{ 'id': 'callout-examiner-1aa5e0ac', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Order of Centrifugation', 'text': 'Heaviest organelles (nuclei) pellet first at low speeds; lightest (ribosomes) pellet last at highest speeds. If asked which organelle forms the first pellet, always answer NUCLEI. This is a consistent exam question.' } }
   ],
   "recall": {
     "enabled": true,

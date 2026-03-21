@@ -90,6 +90,9 @@ export const note_biology_2_3_11 = {
             "caption": "Plant Tissue Culture (Micropropagation)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-4abf84cf', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Plant vs Mammalian Cloning Methods', 'text': 'Do NOT mix them up. Plant cloning uses TISSUE CULTURE (totipotent explants → callus → differentiate into organs). Mammalian cloning uses SCNT (somatic nucleus → enucleated egg → electric shock → embryo → surrogate). Examiners give separate marks for each method.' } },
+{ 'id': 'callout-examiner-b9cdac19', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Growth Hormones Drive Differentiation in Plant Tissue Culture', 'text': 'In plant tissue culture, the ratio of auxin to cytokinin determines whether roots or shoots form. High auxin:cytokinin = roots. Low ratio = shoots. This is a testable detail that separates competent answers from basic ones.' } }
   ],
   "recall": {
     "enabled": true,

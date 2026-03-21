@@ -60,6 +60,9 @@ export const note_biology_2_3_3 = {
             "caption": "Scanning (SEM) vs Transmission (TEM)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-60122475', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Magnification ≠ Resolution', 'text': 'These are NOT the same thing. Magnification = how much larger the image is. Resolution = ability to distinguish between two close points. A light microscope can magnify x1500 but has poor resolution (~200nm). Examiners test this distinction every year.' } },
+{ 'id': 'callout-examiner-c88be8e5', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Why TEM Shows Internal Detail', 'text': 'TEM provides ultra-high resolution (0.1nm) because electron wavelength is much shorter than visible light. However, TEM images are 2D (two-dimensional cross-sections). If a question asks for 3D surface detail, the answer is SEM, not TEM.' } }
   ],
   "recall": {
     "enabled": true,

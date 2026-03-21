@@ -62,6 +62,9 @@ export const note_biology_2_3_12 = {
             "caption": "Preparing a Slide (Squash/Stain)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-1353d34a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Use the Correct Stain for the Cell Type', 'text': 'Iodine solution stains STARCH in plant cell walls (appears yellow/brown). Methylene blue stains NUCLEI in animal cells (appears dark blue). If you use the wrong stain, the exam question asks you to predict what you would see, and you must get this right.' } },
+{ 'id': 'callout-examiner-18074c5d', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Coverslip Must Be Lowered at an Angle to Avoid Air Bubbles', 'text': 'This is a core practical technique question. If asked \'why lower the coverslip at an angle,\' the answer is: air bubbles refract light and appear as large thick-ringed structures that ruin the image. Lowering at an angle with a needle pushes air to the side, preventing this problem.' } }
   ],
   "recall": {
     "enabled": true,

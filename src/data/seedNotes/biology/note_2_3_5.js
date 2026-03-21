@@ -65,6 +65,9 @@ export const note_biology_2_3_5 = {
             "caption": "Independent Assortment"
         }
     }
+  ,
+{ 'id': 'callout-examiner-e8dd1c28', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Crossing Over vs Independent Assortment', 'text': 'Both create genetic variation, but they are DIFFERENT mechanisms. Crossing over = exchange of alleles between homologous chromosomes (occurs prophase I). Independent assortment = random alignment of chromosome pairs at metaphase I. Examiners frequently ask you to distinguish between them.' } },
+{ 'id': 'callout-examiner-0d726154', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Meiosis Maintains Chromosome Number', 'text': 'The key reason for meiosis is to halve chromosome number for gametes, so upon fertilisation, the diploid state is restored. If asked \'why is meiosis important,\' include both genetic variation AND chromosome number maintenance.' } }
   ],
   "recall": {
     "enabled": true,

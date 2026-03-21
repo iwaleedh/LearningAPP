@@ -65,6 +65,9 @@ export const note_biology_2_3_0 = {
             "caption": "Plant Cell Specific Structures"
         }
     }
+  ,
+{ 'id': 'callout-examiner-3fb3ed74', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'RER vs SER Function', 'text': 'Students often confuse RER and SER. Remember: RER has ribosomes attached and makes PROTEINS. SER lacks ribosomes and makes LIPIDS and CARBOHYDRATES. Do not mix these up in exam questions about organelle function.' } },
+{ 'id': 'callout-examiner-01e87841', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Mitochondrial Structure & ATP', 'text': 'Examiners frequently ask why mitochondria have cristae. Answer: the folds of the inner membrane increase the surface area for the electron transport chain, maximising ATP production. This is a key adaptational detail.' } }
   ],
   "recall": {
     "enabled": true,

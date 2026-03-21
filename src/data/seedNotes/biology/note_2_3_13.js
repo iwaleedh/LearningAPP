@@ -63,6 +63,9 @@ export const note_biology_2_3_13 = {
             "caption": "Mitotic Index Calculation"
         }
     }
+  ,
+{ 'id': 'callout-examiner-56baf986', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'HCl Breaks Down the Middle Lamella, Separating Cells', 'text': 'The strong hydrochloric acid at 60°C macerated (separates) cells by breaking down the middle lamella. Many students say \'it makes cells visible\' or \'stains them,\' which is wrong. If asked \'what is the purpose of HCl,\' always answer \'to separate/macerate cells by dissolving the middle lamella.\'' } },
+{ 'id': 'callout-examiner-1052b4d4', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Mitotic Index Indicates Tissue Growth Rate or Cancer', 'text': 'Mitotic Index = (cells in mitosis) ÷ (total cells). A HIGH mitotic index = rapid cell division, indicating fast growth or possibly cancerous tissue. Examiners often ask you to interpret a calculated mitotic index. Low MI = slow growth. Know this link.' } }
   ],
   "recall": {
     "enabled": true,

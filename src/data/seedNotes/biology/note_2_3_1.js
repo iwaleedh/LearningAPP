@@ -72,6 +72,9 @@ export const note_biology_2_3_1 = {
             "caption": "Eukaryote vs Prokaryote Size/Ribosomes"
         }
     }
+  ,
+{ 'id': 'callout-examiner-6b28d544', 'type': 'callout', 'data': { 'style': 'warning', 'title': '70S vs 80S Ribosomes', 'text': 'Do NOT confuse prokaryotic 70S ribosomes with eukaryotic 80S ribosomes. This is heavily tested. Prokaryotes = 70S (smaller, simpler). Use this fact to distinguish between cell types if given an electron micrograph.' } },
+{ 'id': 'callout-examiner-a476c627', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Peptidoglycan Wall vs Cellulose', 'text': 'Both prokaryotes and plants have cell walls, but they are DIFFERENT compounds. Prokaryotes use peptidoglycan (murein); plant cells use cellulose. Examiners test this distinction frequently.' } }
   ],
   "recall": {
     "enabled": true,

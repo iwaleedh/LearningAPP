@@ -81,6 +81,9 @@ export const note_biology_2_3_4 = {
             "caption": "Stages of Mitosis (PMAT)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-3a6fa3ac', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Sister Chromatids vs Chromosomes', 'text': 'This is the most common exam mistake. During prophase and metaphase, a chromosome = 2 sister chromatids joined at centromere. During anaphase, after centromeres divide, each chromatid = 1 separate chromosome. Do NOT say there are 92 chromatids at anaphase; there are 92 chromosomes.' } },
+{ 'id': 'callout-examiner-25f354d7', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'DNA Replication Timing', 'text': 'DNA replication happens during S PHASE (synthesis), not during mitosis itself. If asked \'when does DNA replicate,\' answer S phase of interphase. Mitosis just distributes the already-replicated DNA.' } }
   ],
   "recall": {
     "enabled": true,

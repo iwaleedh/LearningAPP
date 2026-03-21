@@ -83,6 +83,9 @@ export const note_biology_2_3_6 = {
             "caption": "Cortical Reaction (Block to Polyspermy)"
         }
     }
+  ,
+{ 'id': 'callout-examiner-f5d10881', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Order of Fertilisation Events', 'text': 'The sequence matters a lot. Acrosome reaction → Cortical reaction → Nucleus fusion. Many students skip the cortical reaction. Remember: the CORTICAL REACTION prevents polyspermy by hardening the zona pellucida. This is tested almost every year.' } },
+{ 'id': 'callout-examiner-839c08bd', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Polyspermy is Prevented by the Cortical Reaction', 'text': 'If asked \'how is polyspermy prevented,\' the answer is the cortical reaction: cortical granules fuse with the egg membrane and release enzymes that harden the zona pellucida. Without this, multiple sperm could enter, causing problems.' } }
   ],
   "recall": {
     "enabled": true,
