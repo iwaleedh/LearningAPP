@@ -120,6 +120,8 @@ export const note_biology_3_3A_5 = {
       data: { text: 'COSHH: identify hazardous substances (ethanol, acids, phenol), assess risk (hazard × likelihood × severity), implement controls (PPE, fume hoods, safe disposal). BSL1 organisms (E. coli K12, B. subtilis, yeast) are safe for school use. Human tissue requires informed consent and standard precautions. Biological waste: autoclave before disposal. Chemical waste: licensed contractor disposal only.' },
       terms: [],
     },
+{ 'id': 'callout-examiner-e3862574', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Acrosome vs. Cortical Reactions', 'text': 'Do not confuse these two processes. The acrosome reaction involves the release of digestive enzymes from the sperm head to penetrate the zona pellucida. In contrast, the cortical reaction occurs *after* fusion, releasing granules that harden the zona pellucida to prevent polyspermy.' } },
+{ 'id': 'callout-examiner-0678884b', 'type': 'callout', 'data': { 'style': 'tip', 'title': 'Measuring Pollen Tube Growth', 'text': 'For measuring the dependent variable (pollen tube length) accurately under a microscope, state that you must use an eyepiece graticule that has been properly calibrated with a stage micrometer.' } }
   ],
   recall: {
     enabled: true,
