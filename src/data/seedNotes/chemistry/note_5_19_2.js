@@ -232,6 +232,15 @@ export const note_chemistry_5_19_2 = {
       data: {
         text: 'Alkylamines can be prepared by heating a haloalkane with excess ammonia in a sealed tube, but this gives a mixture of primary, secondary, tertiary amines, and quaternary salts requiring separation. Pure primary amines are better made by nitrile reduction (H₂/Ni catalyst or LiAlH₄) from R−C≡N → R−CH₂−NH₂. Phenylamine is synthesised by reducing nitrobenzene (C₆H₅NO₂) with tin and concentrated HCl, then adding NaOH to liberate the free base. Iron can substitute for tin as the reductant.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Controlling Amine Products via Excess Reagent",
+        text: "Haloalkane + ammonia gives mixture (primary, secondary, tertiary, quaternary). Control by stoichiometry: EXCESS ammonia favours 1\u00b0 amine (ammonia collides more often than formed amine); EXCESS haloalkane favours quaternary salt (exhausts ammonia, formed amine quaternizes). Nitrile route avoids this \u2014 gives only 1\u00b0."
+      }
     }
   ],
   recall: {

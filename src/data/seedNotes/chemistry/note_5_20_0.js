@@ -211,6 +211,15 @@ export const note_chemistry_5_20_0 = {
       data: {
         text: 'Combustion analysis + molar mass → molecular formula. Calculate degree of unsaturation (DoU) to count the number of C=C/C≡C/rings present. DoU = (2C + 2 + N − H − X) / 2. Empirical formula × multiplier (n) = molecular formula.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Combustion Analysis Worked Example",
+        text: "0.620 g organic (C, H, O) burned \u2192 1.232 g CO\u2082, 0.504 g H\u2082O. Moles C = 1.232\u00f744 = 0.0280 mol; moles H = (0.504\u00f718) \u00d7 2 = 0.0560 mol; mass O by difference = 0.620 \u2212 0.336 \u2212 0.0560 = 0.228 g \u2192 0.01425 mol. Ratio 0.0280:0.0560:0.01425 = 2:4:1 \u2192 empirical C\u2082H\u2084O."
+      }
     }
   ],
   recall: {

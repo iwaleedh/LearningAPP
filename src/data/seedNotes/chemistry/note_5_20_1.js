@@ -219,6 +219,15 @@ export const note_chemistry_5_20_1 = {
       data: {
         text: 'IR identifies functional groups by characteristic peak positions (O−H, N−H, C=O, C−O, C−H). ¹H NMR shows H environments (δ ppm), integration (H count), and splitting (neighbouring H via n+1 rule). MS gives molar mass (M⁺) and fragments revealing functional groups. Combined interpretation yields molecular structure.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "IR: Distinguish O\u2212H by Peak Shape",
+        text: "Broad O\u2212H (2500\u20133300 cm\u207b\u00b9) with dip = carboxylic acid (H-bonded to nearby \u2212C=O oxygen). Sharp O\u2212H (3200\u20133550 cm\u207b\u00b9) = alcohol or phenol (no intramolecular H-bonding). C=O peak position reveals functional group: esters ~1735, acids ~1700, amides ~1650 (lower due to resonance)."
+      }
     }
   ],
   recall: {

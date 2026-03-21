@@ -307,6 +307,15 @@ export const note_chemistry_5_20_3 = {
       data: {
         text: 'Multi-step synthesis: convert starting material to target through intermediate functional groups. Use the functional group table to identify reagents and conditions. Plan retrosynthetically (work backwards). Consider selectivity, protection strategies, and atom economy. Write complete sequences including all structures, reagents, and conditions for each step.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "4-Step Maximum at A-Level",
+        text: "+1 carbon needed \u2192 nitrile route gets product in 3\u20134 steps. +many carbons needed \u2192 Grignard route. If synthesis exceeds 4 steps, look for shortcuts (e.g., direct oxidation, anhydride use). Question-setters rarely require >4 steps in A-level, hinting students should find efficient routes."
+      }
     }
   ],
   recall: {

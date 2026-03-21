@@ -132,6 +132,15 @@ export const note_chemistry_5_18_1 = {
       data: {
         text: 'Benzene\'s stability arises from sp² hybridisation, allowing six p orbitals to overlap and form a delocalised π system. The six π electrons occupy three bonding molecular orbitals that extend over all six carbons, lowering the total energy by ~150 kJ/mol (stabilisation energy). This delocalisation is the essence of aromaticity in benzene and explains its resistance to addition reactions.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Electrophilic Aromatic Substitution (EAS)",
+        text: "Benzene's \u03c0-electrons attract electrophiles (E\u207a). Attack forms carbocation intermediate (arenium ion), preserving 4 \u03c0-electrons in ring. H\u207a removed to restore aromaticity & 6 \u03c0-electrons. Mechanism: \u03c0-electrons attack E\u207a, form sigma bond, lose H\u207a. Catalyst (AlCl\u2083) required to activate E\u207a (e.g., HNO\u2083 \u2192 NO\u2082\u207a)."
+      }
     }
   ],
   recall: {

@@ -374,6 +374,15 @@ export const note_chemistry_5_19_4 = {
       data: {
         text: 'Amides form from acyl chlorides and ammonia by nucleophilic acyl substitution: N lone pair attacks δ+ C (both O and Cl make C electron-deficient); Cl leaves with H → HCl fumes; HCl + excess NH₃ → NH₄Cl; overall: acyl chloride + 2NH₃ → amide + NH₄Cl. Carboxylic acids react with NH₃ on heating (two-step, via ammonium salt). Hydrolysis: HCl (heat) → RCOOH + NH₄⁺; NaOH (heat) → RCOO⁻ + NH₃. Nylon 6,6 = condensation of hexanedioic acid (6C) + 1,6-diaminohexane (6C) → polyamide + H₂O; extensive H-bonds give strength. Kevlar = aromatic polyamide from 1,4-diaminobenzene + benzene-1,4-diacyl chloride; uses: bulletproof/stab-proof vests. Poly(propenamide): addition polymer of CH₂=CH−CONH₂ (only C=C reacts; amide group unchanged); cross-linked → gel; uses: contact lenses, water treatment, facial surgery filler. Poly(ethenol)/PVA: Stage 1 = addition polymerisation of ethenyl ethanoate; Stage 2 = transesterification with MeOH → polymer with −OH groups; water-soluble due to H-bonding; use: hospital dissolving laundry bags.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "H-bonding in Polyamides",
+        text: "Nylon and other polyamides have extensive H-bonding between chains (\u2212CO\u2212NH\u2212 groups with C=O as acceptor, \u2212NH as donor). Strong 3D H-bonding network makes polyamides tough, heat-stable (~200\u00b0C mp), stretching-resistant, and strong. Kevlar (aromatic polyamide) even stronger due to \u03c0\u2212\u03c0 stacking plus H-bonding."
+      }
     }
   ],
   recall: {

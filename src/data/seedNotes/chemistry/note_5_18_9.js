@@ -86,6 +86,15 @@ export const note_chemistry_5_18_9 = {
       data: {
         text: 'The delocalisation of an oxygen lone pair into the benzene ring makes phenol highly reactive towards electrophilic substitution. The –OH group is a strong 2,4-directing activator. Phenol rapidly decolourises bromine water in the cold, forming a white precipitate of 2,4,6-tribromophenol. Unlike benzene, phenol reacts with dilute nitric acid at room temperature to yield a mixture of 2- and 4-nitrophenol, and with concentrated nitric acid to yield 2,4,6-trinitrophenol. No strong acid or Lewis acid catalysts are required.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Reactions of Phenol I: Esterification",
+        text: "Phenol + R\u2212COCl (acyl chloride) or (RCO)\u2082O (anhydride) \u2192 ester + HCl(or acid). Example: phenol + acetic anhydride \u2192 phenyl acetate + acetic acid (no catalyst needed, room temp, exothermic). Fischer esterification (phenol + RCOOH + H\u2082SO\u2084) does NOT work well \u2014 phenol is too weakly nucleophilic as an alcohol."
+      }
     }
   ],
   recall: {

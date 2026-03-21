@@ -324,6 +324,15 @@ export const note_chemistry_5_17_6 = {
       data: {
         text: 'Transition metal complexes react via 4 types: (1) redox — oxidation state changes (e.g. Fe²⁺ → Fe³⁺ in air); (2) deprotonation — OH⁻/NH₃ removes H⁺ from H₂O ligands → precipitate forms; (3) ligand exchange — excess NH₃ replaces all ligands → complex dissolves; (4) coordination number change — large Cl⁻ forces 6→4 change. NaOH reactions give precipitates except Cr and Zn (amphoteric, dissolve in excess). Excess NH₃ re-dissolves Co (yellow), Cu (deep blue), Cr (purple), Ni (deep blue), Zn (colourless). Fe³⁺ + SCN⁻ → blood-red [Fe(SCN)]²⁺ (qualitative test).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Why Complexes Are Colored",
+        text: "Colored complex ions contain transition metals with partially filled d-orbitals (e.g., Cu\u00b2\u207a, Fe\u00b2\u207a/Fe\u00b3\u207a, Cr\u00b3\u207a). Ligand approach splits d-orbitals into two energy levels (\u0394). Electrons absorb visible light matching the energy gap (\u0394E = h\u03bd = \u03bb/c), promoting electrons from lower to higher d-orbital. Transmitted light = opposite color."
+      }
     }
   ],
   recall: {

@@ -117,6 +117,15 @@ export const note_chemistry_5_17_0 = {
       data: {
         text: 'The d-block spans Groups 3–12. Transition metals are defined as elements with incomplete d sub-shells in their atoms or ions. Scandium (loses all d-electrons) and zinc (has full d¹⁰) are d-block but NOT transition metals. Copper, despite having full d¹⁰ in the atom, IS a transition metal because Cu²⁺ has 3d⁹ (incomplete). This distinction is crucial for understanding transition metal chemistry.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Variable Valency Confusion",
+        text: "Students often assume all d-block metals have fixed valency like main group elements. d-block metals have variable valency (e.g., Fe\u00b2\u207a and Fe\u00b3\u207a) due to incomplete d-orbital filling, requiring specific context clues (charge, colour, etc.) to determine oxidation state."
+      }
     }
   ],
   recall: {

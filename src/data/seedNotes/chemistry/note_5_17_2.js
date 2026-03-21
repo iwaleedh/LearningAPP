@@ -240,6 +240,15 @@ export const note_chemistry_5_17_2 = {
       data: {
         text: 'Transition metals show variable oxidation states because both 3d and 4s electrons can be removed. Iron exhibits +2/+3; manganese spans +2 to +7; vanadium shows four distinct oxidation states with characteristic colours (yellow VO₂⁺, blue VO²⁺, green V³⁺, violet V²⁺). Copper has +1 (colourless, d¹⁰) and +2 (blue, d⁹) states. The range of oxidation states is a defining feature of transition metal chemistry, enabling diverse redox chemistry and colour phenomena.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "d-block Chemical Properties",
+        text: "d-block metals show typical metal properties (good conductors, malleable, high mp) PLUS anomalies: variable valency, coloured compounds (due to d-d transitions), catalytic activity (partially filled orbitals enable electron transfer), and complex formation (small size, high charge density attract ligands)."
+      }
     }
   ],
   recall: {

@@ -411,6 +411,15 @@ export const note_chemistry_5_17_7 = {
       data: {
         text: 'Transition metals catalyse reactions because their variable oxidation states facilitate electron transfer. Heterogeneous catalysis (solid catalyst, gas/liquid reactants): Haber process (Fe, N₂ + 3H₂ → 2NH₃), Contact process (V₂O₅, SO₂ + ½O₂ → SO₃), catalytic converters (Pt/Pd). Homogeneous catalysis (dissolved catalyst): Mn²⁺ in permanganate oxidations, Fe²⁺/Fe³⁺ in S₂O₈²⁻/I⁻ reaction. The catalyst cycles through different oxidation states, forming intermediates with reactants and activating them. Autocatalysis: product (e.g., Mn²⁺) catalyses the reaction, causing acceleration as reaction proceeds. All examples rely on the flexible oxidation states of transition metals.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Stability Constants & Ligand Exchange",
+        text: "Complex stability is quantified by Kstab (stability constant). Bidentate/polydentate ligands form more stable complexes than monodentate (chelate effect: entropy favors many small molecules over fewer large ones). Complex strength series: cn\u207b > nh\u2083 >> h\u2082o >> f\u207b (hard/soft Lewis acid-base principle)."
+      }
     }
   ],
   recall: {

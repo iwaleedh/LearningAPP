@@ -308,6 +308,15 @@ export const note_chemistry_5_17_8 = {
       data: {
         text: 'Transition metals undergo redox chemistry via variable oxidation states. Fe²⁺ → Fe³⁺ by MnO₄⁻: 5Fe²⁺ + MnO₄⁻ + 8H⁺ → 5Fe³⁺ + Mn²⁺ + 4H₂O. Cr³⁺ (green) → CrO₄²⁻ (yellow) with H₂O₂/NaOH. CrO₄²⁻ ↔ Cr₂O₇²⁻ is a pH-dependent equilbrium (NOT redox, Cr stays +6). Zn reduces Cr₂O₇²⁻: orange→green→blue. Vanadium with Zn: yellow(V⁵⁺)→blue(V⁴⁺, E°=+1.76V)→green(V³⁺, +1.10V)→purple(V²⁺, +0.50V); stops at V²⁺ (−0.42V not feasible). MnO₄⁻: acidic→Mn²⁺; neutral→MnO₂; alkaline→MnO₄²⁻. Disproportionation: 2Cu⁺→Cu+Cu²⁺.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Titration with Chelating Agents",
+        text: "EDTA (ethylenediaminetetraacetic acid) is a hexadentate ligand that forms extremely stable 1:1 complexes with metal ions. Useful in complexometric titrations to determine metal concentration; sharp endpoint via indicator (e.g., eriochrome black T, color changes when all metal bound)."
+      }
     }
   ],
   recall: {

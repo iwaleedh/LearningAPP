@@ -147,6 +147,15 @@ export const note_chemistry_5_17_1 = {
       data: {
         text: 'Transition metals typically have [Ar] 3d<sup>x</sup> 4s² configurations, following aufbau filling. Chromium and copper are exceptions, achieving half-filled (d⁵) and fully-filled (d¹⁰) d-orbitals respectively due to their extra stability. When forming ions, 4s electrons are always removed first, before 3d electrons. This rule explains why Fe²⁺ is [Ar] 3d⁶ and Fe³⁺ is [Ar] 3d⁵.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "d-block \u2260 Transition Metals",
+        text: "All d-block elements have a partially filled d-subshell. However, transition metals specifically are defined as d-block metals that form at least one stable cation with an incomplete d-subshell. Scandium and zinc are d-block but NOT transition metals (sc always loses all three electrons; Zn always has full d\u00b9\u2070)."
+      }
     }
   ],
   recall: {

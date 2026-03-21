@@ -146,6 +146,15 @@ export const note_chemistry_5_18_11 = {
         caption: 'Benzene EAS Reactions Map — 5 key electrophilic substitution reactions. All follow the same EAS mechanism (curved arrows: ring attacks E⁺, H⁺ lost to restore aromaticity). Aromaticity is always preserved — this is why addition does NOT occur.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Photochemical Reaction (Free Radical Side-Chain)",
+        text: "Methylbenzene (toluene) + Cl\u2082 under UV light (NOT dark) undergoes free radical substitution on the side-chain methyl group (\u2212CH\u2083 \u2192 \u2212CH\u2082Cl \u2192 \u2212CHCl\u2082 \u2192 \u2212CCl\u2083). Emphasizes this is NOT photocatalysis \u2014 light is energy source for radical formation, not a catalyst. Dark + AlCl\u2083 catalyst \u2192 ring EAS instead."
+      }
     }
   ],
   recall: {

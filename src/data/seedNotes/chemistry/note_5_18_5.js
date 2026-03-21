@@ -199,6 +199,15 @@ export const note_chemistry_5_18_5 = {
       data: {
         text: 'Phenol is much more reactive than benzene towards electrophilic aromatic substitution because the hydroxyl group donates electron density into the ring via resonance. Phenol reacts with Br₂(aq) immediately at room temperature to form 2,4,6-tribromophenol. The −OH group is an ortho/para director: the arenium ion is more stable when the positive charge can be delocalised onto oxygen. Methylbenzene (toluene) is also more reactive than benzene but less reactive than phenol, and is also ortho/para directing. In contrast, electron-withdrawing groups like −NO₂ deactivate the ring and are meta directors. Reactivity increases with electron density: phenol >> toluene >> benzene >> nitrobenzene. KEY EXAM SKILL: When drawing the arenium ion for a substituted ring (e.g. methylbenzene nitration at C4), show partial delocalisation over ALL ring carbons EXCEPT the sp³ carbon where the electrophile bonded. For methylbenzene + Cl₂: dark conditions + AlCl₃ → ring EAS (ionic, 2-/4-chloromethylbenzene); UV light, no catalyst → side-chain free radical substitution → (chloromethyl)benzene.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Friedel-Crafts Acylation",
+        text: "R\u2212COCl + AlCl\u2083 \u2192 R\u2212CO\u207a (acylium ion, stabilized by resonance, does NOT rearrange). Benzene \u03c0-electrons attack, form arenium, lose H\u207a \u2192 R\u2212CO\u2212C\u2086H\u2085 (aromatic ketone). Products: C\u2086H\u2085\u2212CO\u2212CH\u2083 (acetophenone), C\u2086H\u2085\u2212CO\u2212C\u2082H\u2085 (propiophenone)."
+      }
     }
   ],
   recall: {

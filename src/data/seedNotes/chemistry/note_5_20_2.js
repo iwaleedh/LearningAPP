@@ -351,6 +351,15 @@ export const note_chemistry_5_20_2 = {
       data: {
         text: 'Nitriles (R−C≡N) add +1 carbon. Synthesis: RBr + KCN/EtOH → RCN; then reduce (LiAlH₄ → amine) or hydrolyse (H⁺/H₂O → acid). Chain shortening: KMnO₄/NaOH oxidises aromatic side chains to carboxylic acids. Retrosynthetic analysis plans multi-step routes by working backwards from target to starting materials.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Nitrile Synthesis: Methanol to Ethanol",
+        text: "CH\u2083OH + PCl\u2085 \u2192 CH\u2083Cl. CH\u2083Cl + KCN(ethanol, reflux) \u2192 CH\u2083CN. CH\u2083CN + H\u2082SO\u2084/H\u2082O(reflux) \u2192 CH\u2083COOH. CH\u2083COOH + LiAlH\u2084 \u2192 CH\u2083CH\u2082OH. Four steps: +1 carbon via nitrile route. Advantage: pure products at each step."
+      }
     }
   ],
   recall: {

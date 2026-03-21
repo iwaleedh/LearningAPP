@@ -290,6 +290,15 @@ export const note_chemistry_5_18_3 = {
       data: {
         text: 'Benzene undergoes five main electrophilic aromatic substitution reactions. (1) Nitration: conc HNO₃ + H₂SO₄ at 50–60°C → nitrobenzene (stay at 50°C to avoid polynitration). (2) Halogenation: Br₂ + AlBr₃ (or Fe filings) under reflux, anhydrous → bromobenzene + HBr. (3) Friedel-Crafts alkylation: RCl + AlCl₃, anhydrous → alkylbenzene (polyalkylation risk). (4) Friedel-Crafts acylation: RCOCl + AlCl₃, anhydrous → aryl ketone (no polyacylation — acyl group deactivates ring). (5) Sulphonation: fuming H₂SO₄, ~40°C → benzene sulphonic acid + H₂O. Benzene also undergoes combustion (smoky flame) and hydrogenation (Ni, heat, pressure → cyclohexane).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Nitration of Benzene",
+        text: "Benzene + conc. HNO\u2083 + conc. H\u2082SO\u2084 \u2192 nitrobenzene (yellowish liquid). Mechanism: H\u2082SO\u2084 protonates HNO\u2083 \u2192 NO\u2082\u207a (electrophile). \u03c0-electrons attack NO\u2082\u207a, form arenium ion, lose H\u207a. Product is mono-nitrated. Higher temp/long reaction \u2192 dinitration (\u2212NO\u2082 is meta-directing deactivator)."
+      }
     }
   ],
   recall: {

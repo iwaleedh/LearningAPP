@@ -120,6 +120,15 @@ export const note_chemistry_5_18_6 = {
       data: {
         text: 'Aryl halides contain a halogen atom directly bonded to a benzene ring. One of the halogen\'s lone pairs overlaps and delocalises with the ring\'s pi system, giving the C–X bond partial double-bond character and strengthening it. This delocalisation, combined with the repulsive electronegative pi cloud, makes aryl halides heavily resistant to nucleophilic substitution. Physically, they are dense oily liquids that are insoluble in water; boiling points increase down the halogen group due to stronger London dispersion forces. Chlorobenzene and bromobenzene are prepared via direct electrophilic substitution using halogen carriers as catalysts. Iodobenzene is specifically prepared by reacting ice-cold benzenediazonium chloride with potassium iodide.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Distinction: Alkylation vs Acylation",
+        text: "F-C Alkylation: R-X + AlCl\u2083 \u2192 alkylbenzene (R chain attached directly to ring); prone to rearrangement. F-C Acylation: R-COCl + AlCl\u2083 \u2192 aromatic ketone (C=O attached to ring); no rearrangement (acylium resonance-stabilized). In synthesis, acylation followed by reduction is preferred to avoid rearrangement."
+      }
     }
   ],
   recall: {

@@ -249,6 +249,15 @@ export const note_chemistry_5_19_7 = {
         caption: 'Functional Group Identification Tests — amine vs amide (litmus and HCl smoke), amino acids (ninhydrin → purple), carboxylic acid (Na₂CO₃ → CO₂ bubbles), aldehyde (Tollens → silver mirror). Cross-reference tests to determine compound class with certainty.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Ninhydrin Test: Blue/Purple = Amino Acid",
+        text: "Ninhydrin test specifically detects amino acids (free \u2212NH\u2082 and \u2212COOH groups intact). Gives blue/purple (Ruhemann's purple). Litmus test distinguishes: amines turn blue litmus red; amides/amino acids do NOT. Combination: blue litmus AND ninhydrin purple \u2192 definitely amino acid; blue litmus only \u2192 amine."
+      }
     }
   ],
   recall: {

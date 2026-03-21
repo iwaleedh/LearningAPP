@@ -246,7 +246,25 @@ export const note_chemistry_6_6A_2 = {
             data: {
                 text: 'Qualitative tests on hexaaqua ions use three reagents: NaOH (gives precipitate; Cr/Zn/Al dissolve in excess — amphoteric), NH₃ (same precipitate; Cu/Co/Cr/Ni/Zn dissolve in excess — form ammine complexes; Fe/Mn/Al do not), Na₂CO₃ (3+ ions give hydroxide ppt + CO₂; 2+ ions give carbonate ppt, no gas). Confirm Fe³⁺ with SCN⁻ → blood-red. Gas tests: CO₂ turns limewater milky; NH₃ turns damp red litmus blue; H₂ gives squeaky pop.'
             }
-        }
+        },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Fe\u00b2\u207a Oxidation in Air \u2014 Colour Changes Over Time",
+        text: "The green Fe\u00b2\u207a hydroxide precipitate [Fe(H\u2082O)\u2084(OH)\u2082] turns orange-brown within minutes as aerial oxidation converts Fe\u00b2\u207a to Fe\u00b3\u207a. Examiners expect students to note the 'initial green \u2192 orange-brown' sequence as evidence of oxidation. Recording only the final colour loses marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Precipitate Dissolution in Excess Ammonia Identifies Cu, Co, Ni \u2014 Memorise the Colours",
+        text: "Cu\u00b2\u207a \u2192 deep blue [Cu(NH\u2083)\u2084]\u00b2\u207a, Co\u00b2\u207a \u2192 yellow [Co(NH\u2083)\u2086]\u00b2\u207a, Ni\u00b2\u207a \u2192 deep blue [Ni(NH\u2083)\u2086]\u00b2\u207a. Students often confuse Cu and Ni (both deep blue) \u2014 examiners test this distinction. Write out the complex ion formula, not just 'blue'."
+      }
+    }
     ],
     recall: {
         enabled: true,

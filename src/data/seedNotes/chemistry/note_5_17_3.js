@@ -269,6 +269,15 @@ export const note_chemistry_5_17_3 = {
       data: {
         text: 'Ligands are electron pair donors forming coordinate bonds with metal ions. Monodentate ligands (H₂O, NH₃, Cl⁻, CN⁻, SCN⁻) form one bond; bidentate ligands (en, C₂O₄²⁻) form two bonds creating chelate rings; polydentate ligands like EDTA⁴⁻ form multiple bonds. The chelate effect explains why polydentate ligands form significantly more stable complexes than equivalent monodentate ligands—entropy and ring stability favour polydentate coordination.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Ligand Coordinate Bonds",
+        text: "Ligands are Lewis bases (electron pair donors) bonded to metal center via coordinate covalent bonds (both electrons from ligand). Common ligands: oh\u207b, nh\u2083, h\u2082o, cn\u207b, cl\u207b. Ligands approach from direction of orbital lobes; negative ligands coordinate better than neutral to positively charged centers."
+      }
     }
   ],
   recall: {

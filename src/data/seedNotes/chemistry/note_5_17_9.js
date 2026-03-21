@@ -275,6 +275,15 @@ export const note_chemistry_5_17_9 = {
         caption: 'Transition Metal Complex Ions — Cu²⁺ transformations: pale blue [Cu(H₂O)₆]²⁺ → deep blue [Cu(NH₃)₄(H₂O)₂]²⁺ (excess NH₃) → yellow [CuCl₄]²⁻ (conc. HCl). Iron: Fe²⁺ pale green, Fe³⁺ yellow-brown. Cobalt: Co²⁺ pink, [CoCl₄]²⁻ blue.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Core Practical 13: Synthesis & Colorimetry",
+        text: "Synthesis of coloured coordination compound (e.g., [cu(nh\u2083)\u2084]\u00b2\u207a from CuSO\u2084 + aqueous NH\u2083). Intense blue color develops due to d-d transitions (cupric d\u2079 configuration). Measure absorbance using colorimeter at \u03bbmax; compare against calibration curve to determine concentration via Beer-Lambert law (A = \u03b5cl)."
+      }
     }
   ],
   recall: {

@@ -107,6 +107,15 @@ export const note_chemistry_5_18_10 = {
       data: {
         text: 'Phenol burns in air with a remarkably smoky flame due to its very high carbon-to-hydrogen ratio resulting in incomplete combustion. It does not easily form esters with carboxylic acids; instead, reactions with acyl chlorides (like ethanoyl chloride) or acid anhydrides are used to produce phenyl esters. These esterification reactions are notably faster if the phenol is first converted to a phenoxide ion using NaOH. Finally, an essential laboratory test for phenol is the addition of iron(III) chloride solution, which yields an intense violet-purple solution.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "The Iron(III) Chloride Test",
+        text: "Adding FeCl\u2083(aq) to phenol produces **intense violet/purple solution immediately** (characteristic of \u2212OH directly attached to benzene ring); valid diagnostic test for phenols. Phenoxide ion (C\u2086H\u2085O\u207b) reacts with Fe\u00b3\u207a forming violet Fe\u2212phenolate complex; distinguishes phenols from alcohols and carboxylic acids."
+      }
     }
   ],
   recall: {

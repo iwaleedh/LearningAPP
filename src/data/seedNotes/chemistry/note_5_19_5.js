@@ -297,6 +297,15 @@ export const note_chemistry_5_19_5 = {
       data: {
         text: 'Amino acids form zwitterions (⁺H₃N−CHR−COO⁻) in neutral solution via internal proton transfer. Charge varies with pH: low pH → +1 charge; neutral pH → zwitterion (0); high pH → −1 charge. Isoelectric point (pI) is the pH where net charge = 0. Low pI → amino acid is more acidic; high pI → more basic; at pI → zwitterion. Amino acids are amphoteric — they form salts with both acids and bases (e.g., glutamic acid + NaOH → sodium glutamate/MSG). In electrophoresis: pH < pI → move to cathode; pH > pI → move to anode; pH = pI → no movement. Most amino acids are chiral — the α-carbon bonds to 4 different groups; glycine (R = H) is the only non-chiral amino acid. Equal amounts of enantiomers give a racemic mixture with no net rotation of polarised light.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Zwitterion & Enantiomers of Tyrosine (Jan 2017)",
+        text: "Draw tyrosine zwitterion: H\u2083N\u207a\u2212CHR(C\u2086H\u2084\u2212OH)\u2212COO\u207b (charge on N and O from carboxyl, NOT on phenol). Identify R = C\u2086H\u2084\u2212OH with phenolic \u2212OH group separate. Draw two enantiomers (non-superimposable mirror images) with wedge/dash bonds at chiral center. Common exam mistake: students place charge on phenol \u2212OH instead of carboxyl."
+      }
     }
   ],
   recall: {

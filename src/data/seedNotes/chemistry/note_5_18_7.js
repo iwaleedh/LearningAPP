@@ -91,6 +91,15 @@ export const note_chemistry_5_18_7 = {
       data: {
         text: 'Phenol (C₆H₅OH) features a hydroxyl group directly attached to a benzene ring. One of the oxygen\'s lone pairs overlaps and delocalises into the ring\'s π system, making the ring more reactive to electrophiles and the –OH hydrogen more acidic. Physically, it is a corrosive, white crystalline solid with higher melting and boiling points than similar-sized arenes (like methylbenzene) due to extensive intermolecular hydrogen bonding. It is moderately soluble in water as it can form hydrogen bonds with water molecules.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Phenol: Weakly Acidic Hydroxyl",
+        text: "Phenol (pKa \u2248 10) is weakly acidic because the phenoxide ion (C\u2086H\u2085O\u207b) is stabilized by delocalisation of the negative charge into the benzene ring \u03c0-system via resonance. Charge spreads over all 6 ring carbons (and oxygen), lowering the energy of the anion, making H\u207a loss easier than from alcohols."
+      }
     }
   ],
   recall: {

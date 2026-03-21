@@ -1249,6 +1249,15 @@ export const note_chemistry_5_18_4 = {
       data: {
         text: 'All benzene EAS reactions follow a two-step mechanism: (1) slow electrophile attack forms unstable arenium ion (delocalisation disrupted), (2) fast H⁺ loss regenerates aromatic ring. In nitration, conc H₂SO₄ generates NO₂⁺ from HNO₃; HSO₄⁻ (not bare H⁺) removes proton in Stage 2. In halogenation, Lewis acid (e.g. AlCl₃) activates Cl₂ to Cl⁺. In sulphonation, SO₃ (δ+ on S) is the electrophile; Stage 2 is unique — the O⁻ on the arenium directly removes H⁺ (no separate ion); O⁻ must be on the same side as H. In Friedel-Crafts acylation, AlCl₃ generates CH₃CO⁺ (acylium ion) from CH₃COCl; AlCl₄⁻ removes H⁺ in Stage 2 → phenylethanone + HCl + regenerated AlCl₃. In Friedel-Crafts alkylation, AlCl₃ generates CH₃⁺ from CH₃Cl; same Stage 2 gives methylbenzene — but polyalkylation is a problem (product is more reactive than starting material). Industrial alkylation uses alkene + HCl + AlCl₃ instead of a chloroalkane: HCl adds to the alkene to form the carbocation electrophile (CH₃CH₂⁺ from ethene; secondary cation from propene — Markovnikov); the EAS mechanism then proceeds identically. Step 1 is rate-limiting. The regeneration of aromaticity in Step 2 drives the reaction forward.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Friedel-Crafts Alkylation",
+        text: "R-Cl + AlCl\u2083 \u2192 R\u207a (carbocation, electrophile). Benzene \u03c0-electrons attack R\u207a, form arenium, lose H\u207a. Limitation: R\u207a can rearrange if secondary (e.g., n-propyl halide gives isopropylbenzene). Cannot do F-C on amino or nitro-substituted benzenes (amine too reactive, nitro too deactivating)."
+      }
     }
   ],
   recall: {

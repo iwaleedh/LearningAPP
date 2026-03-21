@@ -478,6 +478,15 @@ export const note_chemistry_5_19_1 = {
       data: {
         text: 'Amines are bases: the N lone pair accepts protons. pKb < 7 = more basic than water. Alkylamines are stronger bases than NH₃ (pKb 4.74) because alkyl groups donate electrons inductively, increasing lone pair density on N. Trend: methylamine (3.36) < ethylamine (3.25) — longer chain = lower pKb = stronger base. Phenylamine pKb = 9.3 — LESS basic than water because the lone pair is delocalised into the benzene ring, reducing electron density on N. Primary amines dissolve in water forming alkaline solutions (RNH₂ + H₂O ⇌ RNH₃⁺ + OH⁻). Short-chain amines are very soluble (H-bonding); solubility decreases as chain length increases (London forces dominant). Amines react with haloalkanes: sequential alkylation gives secondary amine → tertiary amine → quaternary ammonium salt (R₄N⁺X⁻, no H on N). Amines react with Cu²⁺: pale blue Cu(OH)₂ precipitate with small amounts; deep blue copper-amine complex with excess.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Phenylamine: Weak Base Paradox",
+        text: "Phenylamine (pKb = 9.3) is weaker base than WATER (pKb = 7 at 25\u00b0C). Reason: lone pair on N is delocalised into benzene ring \u03c0-system, reducing availability for protonation. Alkyl groups donate electrons (make N more basic), while phenyl group withdraws (makes N less basic). Methanamine > ethylamine >> phenylamine in base strength."
+      }
     }
   ],
   recall: {

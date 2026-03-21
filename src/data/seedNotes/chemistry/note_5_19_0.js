@@ -226,6 +226,15 @@ export const note_chemistry_5_19_0 = {
       data: {
         text: 'Amines are classified by the number of carbon groups on N: primary (RNH₂), secondary (R₂NH), tertiary (R₃N). Alkylamines use the −amine suffix. Arylamines have N on a benzene ring (phenylamine). Amides (RCONH₂) are all solids except methanamide (liquid). Lower amides are water-soluble due to H-bonding through their electronegative O and N atoms; solubility decreases as chain length increases. Amino acids (H₂N−CHR−COOH) are α-amino acids; IUPAC names use the "amino-" prefix (e.g., 2-aminoethanoic acid = glycine); 20 standard amino acids exist, differentiated by their R group.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Methanamide Exception",
+        text: "Simple aliphatic amides (R\u2212CO\u2212NH\u2082) are SOLIDS at room temperature with mp > 200\u00b0C due to strong H-bonding (polar \u2212CONH\u2082 group). EXCEPTION: methanamide (H\u2212CO\u2212NH\u2082) is a LIQUID at room temperature \u2014 commonly examined trap question. All other simple amides are solids."
+      }
     }
   ],
   recall: {

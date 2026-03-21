@@ -321,6 +321,15 @@ export const note_chemistry_5_17_4 = {
       data: {
         text: 'Coordination number determines complex shape: 6 → octahedral (90° angles, most common); 4 → tetrahedral (109.5°) or square planar (90°). Cis-trans isomerism arises when different ligands occupy different positions. Octahedral [MA₄B₂] and square planar [MA₂B₂] complexes show cis-trans isomerism. Optical isomerism occurs in octahedral complexes with bidentate ligands lacking plane of symmetry, producing d and l enantiomers that rotate plane-polarised light oppositely. Cisplatin exemplifies how geometric isomerism affects biological activity.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Bonding in Complexes",
+        text: "Metal-ligand bonds have significant covalent character despite being notated as coordinate. In coordination complexes, the metal d-orbitals split into higher and lower energy groups when ligands approach (crystal field theory), causing d-d transitions that produce color when visible light is absorbed."
+      }
     }
   ],
   recall: {

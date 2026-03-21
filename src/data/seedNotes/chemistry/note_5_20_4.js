@@ -253,6 +253,15 @@ export const note_chemistry_5_20_4 = {
       data: {
         text: 'Aspirin synthesis: salicylic acid + (CH₃CO)₂O → aspirin (white crystals) + acetic acid. Purify by recrystallisation from hot ethanol. Test purity: melting point (pure = 135°C sharp), FeCl₃ (no purple = ester formed, pure). Calculate % yield = (actual ÷ theoretical) × 100%. Common errors: incomplete reaction, solubility losses, incomplete drying, transfer losses.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "FeCl\u2083 Test Interpretation for Aspirin",
+        text: "Salicylic acid (free phenolic \u2212OH) + FeCl\u2083 \u2192 purple/violet complex. Aspirin (\u2212OH esterified to \u2212O\u2212CO\u2212CH\u2083) + FeCl\u2083 \u2192 no colour (or pale yellow). Test rapidly confirms whether phenolic group has been acetylated; no purple = pure ester, pure aspirin."
+      }
     }
   ],
   recall: {

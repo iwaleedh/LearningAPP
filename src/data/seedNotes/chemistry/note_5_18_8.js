@@ -67,6 +67,15 @@ export const note_chemistry_5_18_8 = {
       data: {
         text: 'Phenol is a weak acid because its conjugate base, the phenoxide ion, is stabilised by the delocalisation of the oxygen\'s negative charge into the benzene ring. It reacts with strong bases (NaOH) and reactive metals (Na) to form sodium phenoxide, but it is not acidic enough to liberate CO₂ gas from sodium carbonate or hydrogencarbonate. This lack of reaction with carbonates is a key chemical test distinguishing phenols from carboxylic acids.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Phenol EAS Reactivity",
+        text: "\u2212OH is ortho/para-directing and STRONGLY activating. Ring is so electron-rich that EAS proceeds at room temp without catalyst. Example: phenol + Br\u2082(aq) at room temp \u2192 2,4,6-tribromophenol white precipitate (no AlCl\u2083 needed, automatic). Nitration requires careful temp control (\u221210\u00b0C) to avoid explosive polymerization."
+      }
     }
   ],
   recall: {

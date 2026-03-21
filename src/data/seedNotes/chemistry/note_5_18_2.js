@@ -132,6 +132,15 @@ export const note_chemistry_5_18_2 = {
       data: {
         text: 'Arenes like benzene undergo electrophilic substitution rather than addition because the delocalised π system is stabilised by ~150 kJ/mol. Breaking this stability via addition is unfavourable. Alkenes, with localised π electrons, readily undergo addition with Br₂ at room temperature without a catalyst. Benzene requires a Lewis acid catalyst (AlBr₃ or FeBr₃) to activate the electrophile and undergoes slower substitution reactions that preserve the aromatic ring.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Regioselectivity in EAS",
+        text: "Substituents on benzene direct incoming electrophile to ortho/para or meta positions depending on whether they are electron-donating or electron-withdrawing. Alkyl, -OH, -OR (+ groups) give ortho/para (activate ring). -NO\u2082, -CN, -CHO (- groups) give meta (deactivate ring). Ignoring these rules gives wrong product in exams."
+      }
     }
   ],
   recall: {

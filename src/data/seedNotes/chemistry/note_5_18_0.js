@@ -378,6 +378,15 @@ export const note_chemistry_5_18_0 = {
       data: {
         text: 'Benzene (C₆H₆) is an aromatic compound, unlike aliphatic compounds which lack the benzene ring. The Kekulé structure (alternating C=C and C−C) is disproved by five pieces of evidence: (1) benzene does not decolourise Br₂(aq) — it undergoes substitution, not addition; (2) only 3 isomers of dibromobenzene exist (not 4); (3) X-ray diffraction shows all C−C bonds are equal at 139 pm; (4) enthalpy of hydrogenation is −208 kJ/mol (not −360 kJ/mol); (5) IR spectrum shows no C=C peak at 1650 cm⁻¹. The modern model: 6 p orbitals overlap to form a delocalised π system above and below the ring, stabilising benzene by ~152 kJ/mol. Represented as a hexagon with a circle.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Aromaticity & Delocalisation",
+        text: "Benzene's exceptional stability (\u0394H_combustion -3268 kJ/mol, more negative than predicted) arises from extended \u03c0-electron delocalisation across all 6 carbons. Each C contributes one p-orbital to the ring, creating a continuous 6-electron cloud above and below the plane. Delocalisation energy \u2248 150 kJ/mol."
+      }
     }
   ],
   recall: {

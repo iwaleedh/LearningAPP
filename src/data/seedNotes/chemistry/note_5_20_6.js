@@ -123,6 +123,15 @@ export const note_chemistry_5_20_6 = {
         caption: 'Organic Mechanism Types — 6 key mechanistic categories. SR (alkanes + UV), EA (alkenes + electrophile), EAS (benzene + electrophile), SN1/SN2 (halogenoalkanes), NA (carbonyls), add-elimination (acyl chlorides). Each has a characteristic arrow pattern and rate equation.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Mechanism Classification Tree",
+        text: "Alkanes (saturated C\u2212H) \u2192 free radical substitution (UV required). Alkenes (C=C) \u2192 electrophilic addition. Arenes (benzene) \u2192 electrophilic substitution (preserves aromaticity, H lost). Halogenoalkanes \u2192 nucleophilic substitution SN1 (3\u00b0 tertiary) or SN2 (primary-secondary). Carbonyls \u2192 nucleophilic addition. Acyl chlorides \u2192 nucleophilic add-elimination."
+      }
     }
   ],
   recall: {

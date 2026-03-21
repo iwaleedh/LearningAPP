@@ -360,6 +360,15 @@ export const note_chemistry_5_19_3 = {
       data: {
         text: 'Diazotisation converts phenylamine into benzenediazonium chloride using NaNO₂ and dilute HCl at 0−5°C. Diazonium ions are highly unstable and must be kept cold. The diazonium ion is a powerful electrophile that couples with phenols and amines in alkaline conditions to form azo compounds. The resulting azo compound contains the −N=N− chromophore and forms a highly extended conjugated system spanning both rings, absorbing visible light to produce intense colours. In contrast, aliphatic primary amines react with nitrous acid to form highly unstable diazonium ions that instantly decompose, releasing quantitative amounts of N₂ gas. Secondary aliphatic amines form a yellow carcinogenic nitrosamine oil. Tertiary aliphatic amines just form a dissolved colourless salt.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Temperature Control <5\u00b0C CRITICAL",
+        text: "Diazonium ions (R\u2212N\u2082\u207a) are UNSTABLE above ~5\u00b0C \u2014 decompose to phenol + N\u2082 gas (unwanted). Diazotisation must use ice bath throughout; add reagents slowly. Diazonium ions are explosive as isolated solids \u2014 never isolate. Temperature violation is major exam mistake causing decomposition/side reactions."
+      }
     }
   ],
   recall: {

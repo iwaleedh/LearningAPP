@@ -376,6 +376,15 @@ export const note_chemistry_5_19_6 = {
       data: {
         text: 'Peptide bonds form by condensation of amino acids (−CO−NH− + H₂O). Two different amino acids give 2 possible dipeptides; three different amino acids give 6 possible tripeptides. Polypeptides are condensation polymers; proteins have large Mᵣ values (insulin: 5700, haemoglobin: 66000, ferritin: 480000). Protein structure: Primary (amino acid sequence), Secondary (α-helix/β-sheet via H-bonds), Tertiary (3D fold: H-bonds, disulfide bonds S−S, ionic interactions, hydrophobic), Quaternary (multi-subunit). Enzymes are globular proteins acting as specific catalysts; their active sites bind substrates via tertiary bonds. High temperatures or extreme pH denature enzymes by breaking these tertiary bonds. Proteins are hydrolysed by prolonged heating with concentrated HCl, breaking all peptide bonds to yield individual amino acids. Amino acids identified by paper chromatography: spots developed with ninhydrin (purple colour); RF = distance by spot ÷ distance by solvent front (always < 1); compare to known control samples.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Tertiary Structure: Multiple Stabilization Forces",
+        text: "Four types of interactions stabilize 3D protein shape: (1) hydrophobic effect (nonpolar residues cluster inside, away from water); (2) disulfide bonds (\u2212S\u2212S\u2212 covalent, very strong, between cysteines); (3) ionic interactions (\u2212COO\u207b to \u2212NH\u2083\u207a); (4) hydrogen bonds (polar side-chains). Breakdown causes misfolding diseases."
+      }
     }
   ],
   recall: {

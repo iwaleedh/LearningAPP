@@ -374,6 +374,15 @@ export const note_chemistry_5_17_5 = {
       data: {
         text: 'Transition metal complexes are coloured because ligands split d-orbitals into different energy levels. Electrons absorb visible light (Δ = hν) to jump between levels; the observed colour is complementary to absorbed colour. The spectrochemical series (I⁻ to CN⁻) orders ligands by splitting power. Colour is affected by: (1) metal identity, (2) oxidation state (higher → larger Δ), (3) ligand type (stronger field → larger Δ), (4) coordination number (octahedral vs tetrahedral). [Cu(H₂O)₆]²⁺ is pale blue; [Cu(NH₃)₄(H₂O)₂]²⁺ is deep blue (stronger ligand, larger Δ).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Coordination Geometry & Isomerism",
+        text: "Square planar (coordination number 4) complexes show cis-trans isomerism: cis isomers have identical ligands on same side (differ in properties/color); trans have opposite sides. Octahedral (coordination number 6) complexes show optical isomerism and geometric isomerism (fac- and mer-)."
+      }
     }
   ],
   recall: {

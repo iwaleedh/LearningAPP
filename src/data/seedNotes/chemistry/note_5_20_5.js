@@ -697,6 +697,15 @@ export const note_chemistry_5_20_5 = {
       data: {
         text: 'Reflux: vertical condenser, vapour returns to flask (prolonged heating without solvent loss). Simple distillation: angled condenser, distillate collected separately (bp difference > 25°C). Fractional distillation: fractionating column with glass beads for similar-bp mixtures. Steam distillation: steam bubbled through immiscible liquid; distils BELOW normal bp. Washing: dissolve impurities in immiscible solvent (Na₂CO₃ for excess acid). Drying: anhydrous Na₂SO₄/MgSO₄ in solution, or desiccator for solids. Recrystallisation: minimum hot solvent → saturated solution → hot filter (remove insoluble impurities) → ice bath (maximum yield) → suction filter (remove soluble impurities). Purity: mp sharp ≤2°C = pure; same mp/bp for different compounds is possible → confirm with MS/IR/NMR. TLC: 1 spot = pure.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Reflux vs Distillation: Condenser Orientation",
+        text: "Distillation: condenser angled downward (DIVERGES from vertical) \u2014 product escapes to receiving flask. Reflux: condenser VERTICAL \u2014 vapour immediately condenses and returns to reaction flask. Distillation separates by bp; reflux drives reaction forward. Critical apparatus design choice affecting experimental success."
+      }
     }
   ],
   recall: {
