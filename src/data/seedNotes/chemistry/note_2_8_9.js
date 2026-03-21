@@ -527,6 +527,25 @@ export const note_chemistry_2_8_9 = {
         text: 'Period 3 oxide structures change left to right: <strong>giant ionic</strong> (Na₂O, MgO, Al₂O₃ — high mp, conduct when molten) → <strong>giant covalent</strong> (SiO₂ — high mp, never conducts) → <strong>molecular</strong> (P₄O₆/P₄O₁₀, SO₂/SO₃, Cl₂O/Cl₂O₇ — low mp, never conduct). Molecular oxides have low melting points due to weak van der Waals/dipole–dipole intermolecular forces. Acid–base character: basic (metal oxides) → amphoteric (Al₂O₃) → weakly acidic (SiO₂) → acidic (non-metal oxides, increasing right). For detailed equations of these acid–base reactions, see the companion subtopic: <em>Reactions of Period 3 oxides with water</em>.'
       }
     }
+  ,
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Trap: MgO Has the Highest Melting Point",
+        text: "Despite Al\u2082O\u2083 having Al\u00b3\u207a (vs. Mg\u00b2\u207a), MgO has a higher melting point (~2852\u00b0C vs. ~2054\u00b0C). Why? Al\u2082O\u2083 contains complex polyatomic ions with covalent character; MgO is purely ionic (NaCl structure) with very strong electrostatic forces. This question appears in almost every paper."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Key Idea: Structural Trend Determines Properties",
+        text: "Across Period 3 oxides, the structure changes: giant ionic (Na, Mg, Al) \u2192 giant covalent (Si) \u2192 molecular (P, S, Cl). This structural change directly dictates melting points, conductivity, and whether the oxide is basic or acidic. Understand the structure, predict the properties."
+      }
+    }
   ],
   recall: {
     enabled: true,

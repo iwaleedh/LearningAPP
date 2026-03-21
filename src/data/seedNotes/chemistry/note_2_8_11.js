@@ -804,6 +804,25 @@ export const note_chemistry_2_8_11 = {
         text: 'Period 3 "hydroxides" span a huge range of acid–base behaviour: <strong>NaOH and Mg(OH)₂</strong> are ionic (contain OH⁻) and basic; <strong>Al(OH)₃</strong> is amphoteric — it reacts with both HCl and NaOH; <strong>Si, P, S, Cl</strong> form covalent –OH acids of increasing strength. Acid strength is determined by <strong>charge delocalization in the anion</strong>: Si(OH)₄ (0 Si=O bonds, very weak) → H₃PO₄ (1 P=O, weak) → H₂SO₄ (2 S=O, strong) → HClO₄ (3 Cl=O, very strong). The ClO₄⁻ ion is uniquely stable because the −1 charge is spread equally over all four oxygen atoms.'
       }
     }
+  ,
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Trap: Carboxylic Acid O-H Peak is Messy & Broad",
+        text: "On an IR spectrum, carboxylic acid O-H stretches are EXTREMELY broad and hairy (2500-3300 cm\u207b\u00b9), overlapping the C-H region. Alcohol O-H is smooth and narrow (3230-3550 cm\u207b\u00b9). Students confuse these two constantly. If you see both a very broad O-H AND a C=O peak near 1700, it's a carboxylic acid."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Key Idea: Relate Structure to IR Spectrum",
+        text: "The strength of acid depends on how well negative charge is delocalised in the conjugate anion: H\u2082SO\u2084 (very strong) > H\u2083PO\u2084 (moderately strong) > H\u2084SiO\u2084 (very weak). Examiners ask: 'Why is HClO\u2084 much stronger than H\u2082SO\u2084?' Answer: seven oxygens delocalize charge better than four."
+      }
+    }
   ],
 
   recall: {

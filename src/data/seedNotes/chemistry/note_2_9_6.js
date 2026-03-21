@@ -174,6 +174,25 @@ export const note_chemistry_2_9_6 = {
       },
       terms: []
     }
+  ,
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Trap: Catalyst Does NOT Shift Equilibrium Position",
+        text: "Le Chatelier's principle does NOT apply to catalysts. A catalyst affects RATE, not POSITION. Saying 'the equilibrium shifts right when we add a catalyst' gets ZERO marks. The equilibrium arrives faster, but at the same concentrations (if temperature is constant)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Key Idea: Industrial Compromises Balance Three Factors",
+        text: "Methanol synthesis (CO + 2H\u2082 \u21cc CH\u2083OH, exothermic): Low T gives high yield but slow rate. 250\u00b0C is compromise. High pressure (50-100 atm) increases both yield and rate, but is expensive. Choice of catalyst (Cu/ZnO) allows this compromise temperature to work. Examiners ask: 'Why not 100\u00b0C & 1000 atm?' Answer: cost, danger, diminishing returns."
+      }
+    }
   ],
   recall: {
     enabled: true,

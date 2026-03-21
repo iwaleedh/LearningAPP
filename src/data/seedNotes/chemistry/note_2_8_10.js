@@ -798,6 +798,25 @@ export const note_chemistry_2_8_10 = {
         text: 'Period 3 oxides show a clear trend in acid–base character: <strong>basic</strong> (Na₂O, MgO — contain O²⁻, dissolve in water as alkalis) → <strong>amphoteric</strong> (Al₂O₃ — reacts with both acids and concentrated NaOH) → <strong>weakly acidic</strong> (SiO₂ — only reacts with hot concentrated alkali) → <strong>acidic</strong> (P₄O₁₀ → H₃PO₄; SO₃ → H₂SO₄; Cl₂O₇ → HClO₄). Lower oxidation state oxides (SO₂, Cl₂O) are also acidic but the pattern is less clean. Acid strength of oxoacids increases with the number of O atoms: more O atoms → more withdrawal of electron density from O–H → weaker O–H bond → easier proton donation → stronger acid.'
       }
     }
+  ,
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Trap: Reactions with Water vs Acids vs Bases",
+        text: "Students confuse when Period 3 oxides react with water vs. aqueous acid vs. concentrated alkali. Al\u2082O\u2083 doesn't react with water, but reacts with BOTH dilute acid (basic behavior) AND conc. NaOH (acidic behavior). This amphoteric behavior is heavily tested."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Key Idea: Write the Correct Equations",
+        text: "SiO\u2082 + 2NaOH \u2192 Na\u2082SiO\u2083 + H\u2082O (forms soluble silicate). Na\u2082O + H\u2082O \u2192 2NaOH (strong base). P\u2084O\u2081\u2080 + 6H\u2082O \u2192 4H\u2083PO\u2084 (forms acidic phosphoric acid). Get the products right\u2014examiners give no partial credit for equations with wrong products."
+      }
+    }
   ],
 
   recall: {

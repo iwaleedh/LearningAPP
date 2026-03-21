@@ -103,7 +103,7 @@ export const note_chemistry_2_9_4 = {
                     'Adding a catalyst does <strong>not change the shape</strong> of the curve at all.',
                     'Instead, it places a new, lower $E_a$ vertical line to the <em>left</em> of the uncatalysed line.',
                     'The area under the curve to the right of this new lower $E_a$ is much larger.',
-                    'Therefore, a much greater <strong>proportion of molecules</strong> has energy greater than or equal to the catalysed activation energy ($E \ge E_{cat}$).',
+                    'Therefore, a much greater <strong>proportion of molecules</strong> has energy greater than or equal to the catalysed activation energy ($E \\ge E_{cat}$).',
                     'This leads to a dramatically higher frequency of successful collisions.'
                 ]
             },
