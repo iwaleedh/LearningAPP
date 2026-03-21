@@ -60,6 +60,24 @@ export const note_physics_4_21_2 = {
         text: 'Always follow three steps: (1) State whether flux is <strong>increasing or decreasing</strong>. (2) State what pole the coil must form to <strong>oppose</strong> the change. (3) Apply the right-hand grip rule to find the <strong>current direction</strong>. Examiners award marks for each step explicitly stated.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Explain the Negative Sign in Faraday's Law",
+        text: "Examiners regularly ask: 'Explain the negative sign in \u03b5 = \u2212N(\u0394\u03a6/\u0394t).' The answer: the negative sign represents Lenz's Law \u2014 the induced e.m.f acts to oppose the change in flux that caused it. Omitting this explanation costs marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Lenz's Law Direction Steps",
+        text: "Always follow three steps: (1) Identify if flux through coil is INCREASING or DECREASING. (2) State what pole the coil must become to OPPOSE this change. (3) Apply right-hand grip rule to find current direction. Marks awarded for each step stated explicitly."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Lenz\'s Law' }], summaryText: '', ready: true },

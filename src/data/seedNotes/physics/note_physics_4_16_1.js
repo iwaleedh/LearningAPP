@@ -103,6 +103,24 @@ export const note_physics_4_16_1 = {
         text: '<strong>Impulse</strong> = FΔt = Δp (change in <strong>momentum</strong>). Units: N s = kg m s<sup>−1</sup>. Area under F–t graph = <strong>impulse</strong>. If F varies with time: use area (count squares or integrate).<br/><br/>"Explain why crumple zones reduce force" — same Δp, longer Δt → smaller F = Δp / Δt.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Data Logger Advantage",
+        text: "Data logger eliminates reaction-time error compared to manual stopwatch timing."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Measurement Errors",
+        text: "Card length L and interrupt time \u0394t measurement errors are the main sources of uncertainty \u2014 use precise photogate equipment and check card length before testing."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 9: Investigating <strong>Impulse</strong>' }], summaryText: '', ready: true },
   evidence: [],

@@ -52,6 +52,24 @@ export const note_physics_4_22_4 = {
     { id: 'enr-svg-3', type: 'svg', data: { caption: 'Same B field and charge; the higher-momentum particle (blue) follows a larger arc. r = mv/(Bq) — radius is directly proportional to momentum.', svg: '<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="240" fill="#0f172a" rx="8"/><text x="250" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">r = mv/(Bq): Effect of Momentum on Orbital Radius</text><text x="250" y="42" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Same B field (⊗ into page) and same charge q — different momenta</text><path d="M 40 215 A 80 80 0 0 1 200 215" stroke="#e03131" stroke-width="2.5" fill="none"/><circle cx="40" cy="215" r="5" fill="#e03131"/><polygon points="200,215 191,209 191,221" fill="#e03131"/><text x="120" y="196" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">r₁ small</text><text x="120" y="230" font-family="sans-serif" font-size="9" fill="#c92a2a" text-anchor="middle">low momentum m₁v₁</text><path d="M 180 215 A 150 150 0 0 1 480 215" stroke="#1864ab" stroke-width="2.5" fill="none"/><circle cx="180" cy="215" r="5" fill="#1864ab"/><polygon points="480,215 471,209 471,221" fill="#1864ab"/><text x="330" y="135" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">r₂ large</text><text x="330" y="230" font-family="sans-serif" font-size="9" fill="#1864ab" text-anchor="middle">high momentum m₂v₂</text><text x="250" y="75" font-family="sans-serif" font-size="13" fill="#212529" text-anchor="middle" font-weight="bold">r = mv / (Bq)</text><text x="250" y="95" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Larger momentum → larger radius of curvature</text></svg>' } },
     { id: 'enr-worked-3', type: 'callout', data: { style: 'worked', title: 'Worked Example — Electron in a <strong>Magnetic Field</strong>', text: 'An electron (mₑ = 9.11 × 10⁻³¹ kg, q = 1.6 × 10⁻¹⁹ C) moves at 3.0 × 10⁷ m s⁻¹ perpendicular to a 0.20 T field.\nFind (a) the orbital radius and (b) the cyclotron frequency.\n\n(a) r = mv/(Bq)\nr = (9.11 × 10⁻³¹ × 3.0 × 10⁷) / (0.20 × 1.6 × 10⁻¹⁹)\nr = 2.733 × 10⁻²³ / 3.2 × 10⁻²⁰ ≈ 8.5 × 10⁻⁴ m  (0.85 mm)\n\n(b) f = qB/(2πm)\nf = (1.6 × 10⁻¹⁹ × 0.20) / (2π × 9.11 × 10⁻³¹)\nf = 3.2 × 10⁻²⁰ / 5.72 × 10⁻³⁰ ≈ 5.6 × 10⁹ Hz  (5.6 GHz)\n\nNote: f is independent of speed — this is the cyclotron resonance condition.' } },
     { id: 'enr-tip-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Reading Particle Tracks in a <strong>Magnetic Field</strong>', text: 'In a cloud chamber or bubble chamber with a known B field direction:\n\n1. Direction of curvature reveals charge sign — use Fleming\'s left-hand rule for positive charges; reverse it for negative (electrons).\n2. A larger radius of curvature means greater <strong>momentum</strong> (r = mv/Bq).\n3. A track spiralling inward (decreasing radius) means the particle is losing energy, e.g. by ionising the chamber medium.\n\nIn the exam: always state both the direction of curvature AND explain it using the direction of the magnetic force on that charge sign.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Derivation: Magnetic Force = Centripetal Force",
+        text: "Students often forget how r = mv/(Bq) is derived. The key: magnetic force provides centripetal force: Bqv = mv\u00b2/r. Rearrange to get r. This derivation is frequently tested. Know it cold."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Momentum Effect on Track Radius",
+        text: "From r = mv/(Bq): larger momentum \u2192 larger radius. Use this to interpret particle tracks: a wider-curving track means higher momentum. For same B and q, doubling momentum doubles the radius \u2014 direct proportionality."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Derive r = mv/(Bq). What two forces are balanced in this derivation?' },

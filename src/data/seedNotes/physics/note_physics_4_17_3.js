@@ -77,6 +77,24 @@ export const note_physics_4_17_3 = {
         text: "For orbit problems set gravitational force = <strong>centripetal force</strong>: GMm/r² = mv²/r, giving v = √(GM/r). The satellite mass cancels — orbital speed is independent of the satellite's own mass. Geostationary satellites have T = 24 h, orbit directly above the equator, and appear stationary from Earth's surface. Always convert T from hours to seconds before substituting. Don't confuse orbital speed v = √(GM/r) with escape velocity v_esc = √(2GM/r) — escape velocity is √2 times the orbital speed at the same radius."
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "What is Centripetal Force?",
+        text: "Centripetal force is NOT a new type of force \u2014 it is the name given to the resultant force that happens to be directed toward the centre."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Minimum Speed at Top",
+        text: "Vertical circles: minimum speed at top v_min = \u221a(gr) occurs when normal force N = 0 \u2014 all centripetal force comes from gravity."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Name four physical forces that can act as a <strong>centripetal force</strong> in different situations. Is <strong>centripetal force</strong> a new type of force?' },

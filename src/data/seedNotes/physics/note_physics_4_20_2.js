@@ -53,6 +53,24 @@ export const note_physics_4_20_2 = {
         title: 'Exam Tip: Flux Density B vs Magnetic Flux Φ',
         text: '<strong>Do not confuse B and Φ:</strong><br>• <strong>Magnetic flux</strong> density</strong> B</strong> (Tesla, T) — field strength at a point; independent of area.<br>• <strong>Magnetic flux</strong> Φ</strong> (Weber, Wb) — total field through a surface: Φ = BA.<br><br>Φ is largest when B is <em>perpendicular</em> to the area (field lines parallel to the surface normal) and zero when B is <em>parallel</em> to the area. If an exam question gives the angle between B and the <em>plane</em> of a coil, use Φ = BA sin θ; if the angle is between B and the <em>normal</em> to the coil, use Φ = BA cos θ — always check which convention is used.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "B and \u03a6 Must Not be Confused in Force Calculations",
+        text: "When calculating force on a wire (F = BIL), use magnetic flux DENSITY B (in Tesla), not flux \u03a6. Common error: substituting \u03a6 for B and getting units wrong. Force depends directly on B field strength, not on area or flux."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Angle Effect on Force",
+        text: "General form F = BIL sin\u03b8 where \u03b8 is angle between wire and field. Maximum force (F = BIL) when \u03b8 = 90\u00b0; zero force when wire is parallel to field (\u03b8 = 0\u00b0). Always identify whether the given angle is between wire and field, or between wire and normal."
+      }
     }
 
   ],

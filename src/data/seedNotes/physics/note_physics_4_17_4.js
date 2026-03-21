@@ -95,6 +95,24 @@ export const note_physics_4_17_4 = {
         text: "<strong>Centripetal force</strong> is NOT a new type of force — it is always an existing force (tension, friction, gravity, normal force or a combination) acting toward the centre. Never draw a 'centrifugal force' pointing outward on a free-body diagram in an inertial frame. Because F_c is always perpendicular to v, it does no work on the object — <strong>kinetic energy</strong> (and speed) remain constant. Use F = mv²/r when speed v is given; use F = mω²r when <strong>angular velocity</strong> ω is given (they are equivalent since v = ωr)."
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Centripetal Force Type",
+        text: "Centripetal force is always an existing force (tension, friction, gravity, normal force or combination) \u2014 never a new force type."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Centrifugal Force Misconception",
+        text: "Do NOT draw 'centrifugal force' pointing outward in inertial frames \u2014 this is a non-inertial reference frame concept and loses marks."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Centripetal Force</strong>' }], summaryText: '', ready: true },
   evidence: [],

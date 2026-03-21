@@ -116,6 +116,24 @@ export const note_physics_4_18_7 = {
         text: '<b>1. Perpendicularity:</b> Equipotentials are <em>always</em> perpendicular to <strong>electric field</strong> lines — in both radial and uniform fields. Never parallel.<br><br><b>2. Line spacing → field strength:</b> Closely spaced field lines = strong E; widely spaced field lines = weak E.<br><br><b>3. Radial vs Uniform:</b> Radial field — E ∝ 1/r² (weakens with distance, lines spread out). Uniform field — E is constant (parallel, equally spaced lines).<br><br><b>4. Direction convention:</b> Field lines always point from + to − (away from positive charges, towards negative charges).<br><br><b>5. Field lines never cross</b> — if they did, the force on a charge at that point would have two directions, which is physically impossible.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Field Line Rules",
+        text: "Equipotentials perpendicular to field lines; close lines = strong E; wide spacing = weak E; lines never cross."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Field Line Distribution",
+        text: "Radial fields: lines spread outward with spacing increasing. Uniform fields: parallel equally-spaced lines. Students often confuse these patterns."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Representing Radial & Uniform Electric Fields' }], summaryText: '', ready: true },
   evidence: [],

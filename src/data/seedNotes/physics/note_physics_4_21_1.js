@@ -58,6 +58,24 @@ export const note_physics_4_21_1 = {
         text: 'For an <strong>ideal</strong> transformer assume 100% efficiency: V<sub>p</sub>I<sub>p</sub> = V<sub>s</sub>I<sub>s</sub>. Real transformers lose energy as heat due to <strong>eddy currents</strong> (reduced by laminating the iron core) and <strong>resistance heating</strong> in the coil wires. Always use AC — DC gives no changing flux, so no induced EMF.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Transformers Do NOT Work with DC",
+        text: "A common exam pitfall: students assume transformers work with any voltage. False! Transformers require AC because they need a CHANGING magnetic flux through the iron core. DC produces a constant field \u2192 no change \u2192 no induced e.m.f in secondary \u2192 transformer is useless with DC."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Ideal Transformer Power Equation",
+        text: "For ideal transformers (100% efficient), power is conserved: Vp\u00b7Ip = Vs\u00b7Is. Combined with turns ratio Vs/Vp = Ns/Np, you can solve for any unknown. Always use this power conservation constraint in exam questions."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Induced E.M.F between Linked Coils' }], summaryText: '', ready: true },

@@ -37,6 +37,24 @@ export const note_physics_4_18_3 = {
     { id: 'enr-worked-2', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Field Strength Near a Proton', text: 'Calculate the <strong>electric field</strong> strength at a distance of 0.50 nm from a proton (Q = +1.6 × 10⁻¹⁹ C). State the direction.<br/>r = 0.50 nm = 5.0 × 10⁻¹⁰ m<br/>E = kQ / r²<br/>E = (8.99 × 10⁹ × 1.6 × 10⁻¹⁹) / (5.0 × 10⁻¹⁰)²<br/>Numerator: 8.99 × 10⁹ × 1.6 × 10⁻¹⁹ = 1.438 × 10⁻⁹<br/>Denominator: (5.0)² × 10⁻²⁰ = 25 × 10⁻²⁰ = 2.5 × 10⁻¹⁹<br/>E = 1.438 × 10⁻⁹ / 2.5 × 10⁻¹⁹ ≈ 5.8 × 10⁹ N C⁻¹<br/>Direction: radially outward from the proton (positive charge → field points away).' } },
     { id: 'enr-worked-millikan', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Millikan Oil Drop Experiment', text: 'An oil drop of mass m = 1.0 × 10⁻¹⁵ kg is held stationary between parallel plates separated by d = 5 mm with voltage V = 800 V.<br/><br/>Step 1 — <strong>Electric field</strong>: E = V/d = 800 / 0.005 = 1.60 × 10⁵ V m⁻¹<br/><br/>Step 2 — Equilibrium (electric force = weight): qE = mg<br/>q = mg / E = (1.0 × 10⁻¹⁵ × 9.81) / (1.60 × 10⁵) = 9.81 × 10⁻¹⁵ / 1.60 × 10⁵ ≈ 6.1 × 10⁻²⁰ C ≈ 0.38e (measurement uncertainty)<br/><br/>Step 3 — For a drop with q = 3.2 × 10⁻¹⁹ C (= 2e): equilibrium requires V = (mg/q) × d = (9.81 × 10⁻¹⁵ / 3.2 × 10⁻¹⁹) × 0.005 ≈ 0.15 V.<br/><br/>Conclusion: Millikan measured hundreds of drops. Every charge was a whole-number multiple of 1.6 × 10⁻¹⁹ C — direct experimental evidence that electric charge is quantised.' } },
     { id: 'enr-tip-2', type: 'callout', terms: [], data: { style: 'tip', title: 'Exam Tip: Radial vs Uniform Field Formulae', text: 'For a uniform field (parallel plates): use E = V/d, where V is the <strong>potential difference</strong> and d is the plate separation.<br/>For a radial field (point charge): use E = kQ/r².<br/>Never mix the two formulae — identify the field type first.<br/>Also: for a radial field, the area under an E–r graph gives the change in potential ΔV; the gradient of a V–r graph gives −E.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "1/r\u00b2 vs 1/r Confusion",
+        text: "E \u221d 1/r\u00b2 while V \u221d 1/r \u2014 students often confuse these. If distance doubles: E drops to 1/4 BUT V drops to 1/2."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Point Charge Field",
+        text: "E = kQ/r\u00b2 is the inverse square law for radial electric fields \u2014 always distinguishable from uniform field patterns."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Electric Field</strong> due to a Point Charge' }], summaryText: '', ready: true },
   evidence: [],

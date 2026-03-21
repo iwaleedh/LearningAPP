@@ -53,6 +53,24 @@ export const note_physics_4_19_4 = {
         title: 'Exam Tip — Time Constant τ',
         text: 'The <strong>time constant</strong> τ = RC</strong> is the time for charge Q, voltage V, <em>or</em> current I to all fall to <strong>1/e ≈ 37%</strong> of their initial values — they all share the same τ. After <strong>5τ</strong> the <strong>capacitor</strong> is considered fully discharged (&lt;1% remains). Always convert units before substituting: R in Ω and C in F gives τ in seconds. On a log–linear graph, <strong>exponential decay</strong> appears as a straight line — useful if asked to verify the relationship experimentally.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Time Constant Definition",
+        text: "Time constant \u03c4 = RC is the time for charge Q, voltage V, AND current I to all fall to 1/e \u2248 37% of initial values \u2014 single \u03c4 applies to all three."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Full Discharge Criterion",
+        text: "After 5\u03c4 the capacitor is considered fully discharged (<1% remains). Always convert R to \u03a9 and C to F before substituting to get \u03c4 in seconds."
+      }
     }
 
   ],

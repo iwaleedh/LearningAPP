@@ -49,7 +49,25 @@ export const note_physics_4_22_6 = {
     { id: 'summary-1', type: 'summary', data: { text: "Smaller structures require shorter λ = h/p → higher <strong>momentum</strong> → higher energy. Fixed-target: not all KE available for creation. Collider: all KE available (head-on, centre of mass at rest). New particles created via E = mc²: KE → rest mass of new particles. Conservation laws: energy, <strong>momentum</strong>, charge, baryon number, lepton number. LHC: 13 TeV, superconducting magnets, discovered Higgs (2012)." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Fixed-Target vs Collider Available Energy</text><text x="200" y="78" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">Fixed-target: E&#8203;&#8203;avail ≈ √(2m&#8203;&#8203;pc² · E&#8203;&#8203;beam) ≪ E&#8203;&#8203;beam</text><line x1="40" y1="105" x2="360" y2="105" stroke="#ced4da" stroke-width="1.5"/><text x="200" y="138" font-family="sans-serif" font-size="11" fill="#2b8a3e" text-anchor="middle">Collider (head-on): E&#8203;&#8203;avail = 2E&#8203;&#8203;beam — all KE usable</text><text x="200" y="186" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">At LHC: 2 × 6.5 TeV = 13 TeV available for new particles</text></svg>', caption: 'Fixed-target accelerators waste most beam energy on recoil; head-on colliders make all kinetic energy available for particle creation.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: de Broglie Wavelength at LHC', text: 'A proton at the LHC carries 6.5 TeV of <strong>kinetic energy</strong>. Estimate its de Broglie wavelength.\nAt ultra-relativistic energies KE ≫ m<sub>p</sub>c², so KE ≈ pc, giving p = KE/c = (6.5 × 10¹² × 1.6 × 10⁻¹⁹) / (3 × 10⁸) ≈ 3.5 × 10⁻¹⁵ kg m s⁻¹.\nλ = h/p = 6.63 × 10⁻³⁴ / 3.5 × 10⁻¹⁵ ≈ 1.9 × 10⁻¹⁹ m — far smaller than quark size (~10⁻¹⁸ m), confirming the LHC probes quark-scale structure.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Collider vs Fixed-Target Efficiency', text: 'In a collider the total <strong>momentum</strong> is zero, so all <strong>kinetic energy</strong> is available for creating new particles — state this explicitly in exam answers.\nIn a fixed-target collision, <strong>momentum</strong> must be carried away by the products, so only a fraction of the beam energy goes into mass creation.\nThis is why the LHC (collider) can probe energies unreachable by any fixed-target machine of comparable beam energy.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Collider vs Fixed-Target Efficiency', text: 'In a collider the total <strong>momentum</strong> is zero, so all <strong>kinetic energy</strong> is available for creating new particles — state this explicitly in exam answers.\nIn a fixed-target collision, <strong>momentum</strong> must be carried away by the products, so only a fraction of the beam energy goes into mass creation.\nThis is why the LHC (collider) can probe energies unreachable by any fixed-target machine of comparable beam energy.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Collider vs Fixed-Target Efficiency",
+        text: "A head-on collider (particles circulating in opposite directions) provides ALL collision kinetic energy for particle creation. A fixed-target (beam hits stationary target) wastes most energy carrying away recoil momentum. This is why LHC can reach quark-probing energies \u2014 a fixed-target would need ~100\u00d7 more beam energy to match 13 TeV centre-of-mass."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Always Verify All Conservation Laws",
+        text: "After writing a particle collision equation, check: energy conserved, momentum conserved, charge conserved, baryon number conserved, lepton number conserved. Omitting any check costs exam marks. Use a table format to avoid errors."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: 'Why do physicists need higher energy beams to probe smaller structures? Use de Broglie wavelength in your answer.' },

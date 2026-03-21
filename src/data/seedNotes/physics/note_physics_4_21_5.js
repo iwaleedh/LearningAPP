@@ -53,6 +53,24 @@ export const note_physics_4_21_5 = {
         title: 'Exam Tip: R.M.S. Values & Power Calculations',
         text: 'Always use r.m.s. values when calculating power in AC circuits: <b>P = V<sub>rms</sub> I<sub>rms</sub> = I<sub>rms</sub>² R = V<sub>rms</sub>²/R</b>. The r.m.s. value gives the equivalent DC producing the same heating effect. Note: V<sub>rms</sub> = V<sub>0</sub>/√2 and I<sub>rms</sub> = I<sub>0</sub>/√2 <b>only apply to sinusoidal</b> waveforms — for other waveforms (e.g. square wave) you must calculate r.m.s. from first principles.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Oscilloscope Reads Peak, Not RMS",
+        text: "An oscilloscope displays PEAK voltage directly from the trace amplitude. To find power in a resistor, you must convert: Vrms = V\u2080/\u221a2 first, then use P = Vrms\u00b2/R. Many students forget this conversion step."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "UK Mains Voltage Facts for Exam Memory",
+        text: "UK mains: 230 V RMS, 325 V peak (\u2248 230\u221a2), 50 Hz frequency, 20 ms period. These values appear frequently in exam questions. Peak-to-peak voltage is 650 V \u2014 remember the danger of the live wire."
+      }
     }
 
   ],

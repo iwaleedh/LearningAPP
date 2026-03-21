@@ -97,6 +97,24 @@ export const note_physics_4_17_2 = {
         text: "Always set your calculator to Radians mode for circular motion calculations. Both a = v²/r and a = rω² are valid — use whichever matches the given data; they are related via v = ωr. <strong>Centripetal acceleration</strong> always points towards the centre (perpendicular to v), so it changes direction but not speed — <strong>kinetic energy</strong> is constant. Remember: one full revolution = 2π rad ≈ 6.28 rad; half revolution = π rad."
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Calculator Radians Mode",
+        text: "Always set your calculator to Radians mode for all circular motion calculations involving trigonometric functions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Centripetal Acceleration Direction",
+        text: "a points toward center perpendicular to velocity; kinetic energy stays constant but direction changes constantly."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Centripetal Acceleration</strong>' }], summaryText: '', ready: true },
   evidence: [],

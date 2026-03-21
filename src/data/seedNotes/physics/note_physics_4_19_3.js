@@ -50,7 +50,25 @@ export const note_physics_4_19_3 = {
     { id: 'summary-1', type: 'summary', data: { text: "Circuit: C in series with R; voltmeter (high impedance) across C; data logger records V vs t. Discharge: V = V₀ e⁻ᵗ/ᴿᶜ — <strong>exponential decay</strong>. <strong>Time constant</strong> τ = RC: time for V to fall to 0.37V₀. Determine τ: read from V-t graph, or plot ln V vs t → straight line; gradient = −1/(RC). After 5τ: effectively fully discharged. Errors: leakage current, voltmeter loading, timing delay." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="6"/><line x1="45" y1="165" x2="375" y2="165" stroke="#212529" stroke-width="2"/><line x1="45" y1="165" x2="45" y2="20" stroke="#212529" stroke-width="2"/><path d="M 45 28 C 85 28 115 68 160 108 C 195 135 265 158 370 163" stroke="#fa5252" stroke-width="2.5" fill="none"/><line x1="160" y1="28" x2="160" y2="165" stroke="#339af0" stroke-width="1.5" stroke-dasharray="5,3"/><text font-family="sans-serif"><tspan x="130" y="14" font-size="12" font-weight="bold" fill="#212529">Discharge: V vs t</tspan><tspan x="22" y="32" font-size="10" fill="#e03131">V₀</tspan><tspan x="152" y="182" font-size="11" fill="#1864ab">τ = RC</tspan><tspan x="167" y="108" font-size="10" fill="#339af0">← 0.37V₀</tspan><tspan x="345" y="158" font-size="10" fill="#495057">t →</tspan></text></svg>', caption: 'V falls exponentially; at t = τ = RC the voltage reaches 0.37V₀. Reading τ directly off this graph gives a first estimate of the time constant.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Finding RC from a ln V–t Graph', text: 'A ln V vs t graph gives a straight line with gradient = −0.025 s⁻¹. The resistor is R = 40 kΩ. Find τ and C.\n\nRC = −1/gradient = −1/(−0.025) = 40 s → τ = 40 s.\nC = RC/R = 40 / (40 × 10³) = 1.0 × 10⁻³ F = 1000 μF.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: ln V vs t vs V vs t', text: 'Always prefer the ln V vs t graph in calculations — it converts the exponential into a straight line so you can use gradient = −1/(RC) with a best-fit line through all points, reducing random error.\nCross-check: read 0.37V₀ directly from the V-t graph to verify your τ value.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: ln V vs t vs V vs t', text: 'Always prefer the ln V vs t graph in calculations — it converts the exponential into a straight line so you can use gradient = −1/(RC) with a best-fit line through all points, reducing random error.\nCross-check: read 0.37V₀ directly from the V-t graph to verify your τ value.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Logarithmic Graph Method",
+        text: "Always prefer ln V vs t graph over V vs t \u2014 converts exponential curve to straight line; gradient = \u22121/(RC) using best-fit line through all points reduces random error."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Capacitor Leakage",
+        text: "Leakage current through electrolytic capacitors causes V to drop faster than theoretical prediction \u2014 use high-quality capacitors and check ratings."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Write the equation for the voltage across a discharging <strong>capacitor</strong>. What is the <strong>time constant</strong> τ?' },

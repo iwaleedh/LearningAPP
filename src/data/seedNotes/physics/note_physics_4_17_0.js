@@ -96,6 +96,24 @@ export const note_physics_4_17_0 = {
         text: 'ω = 2πf = 2π/T.  v = ωr.\n\nAt constant speed |v| is constant but direction changes → acceleration exists (centripetal).\n\nθ in radians: 360° = 2π, 180° = π, 90° = π/2.\nConvert degrees to radians: multiply by π/180.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Calculator Mode Error",
+        text: "It is extremely common for students to lose marks if their calculator is in the wrong mode (degree vs radian) when using trigonometric functions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Radian Conversion",
+        text: "360\u00b0 = 2\u03c0 rad; remember 1 rad \u2248 57.3\u00b0 for quick mental checks."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Radians & Angular Displacement' }], summaryText: '', ready: true },
   evidence: [],

@@ -49,7 +49,25 @@ export const note_physics_4_22_5 = {
     { id: 'summary-1', type: 'summary', data: { text: "Track curvature direction → charge sign (opposite for opposite charges). Radius r = p/(Bq) → larger r = larger <strong>momentum</strong>. Spiralling: radius decreasing = particle losing energy to medium. V-shape with no entry track = pair production (photon → e⁻ + e⁺, opposite curvatures). Track density reflects ionisation rate." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Radius vs Momentum: p = Bqr</text><path d="M 60 170 Q 100 80 180 60" stroke="#fa5252" stroke-width="3" fill="none" stroke-dasharray="none"/><text x="120" y="56" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">small r → low p</text><path d="M 200 175 Q 260 130 340 115" stroke="#339af0" stroke-width="3" fill="none"/><text x="300" y="108" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">large r → high p</text><text x="200" y="196" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">Same B field and charge q — only momentum differs</text></svg>', caption: 'Larger track radius means greater momentum: p = Bqr. Same B and q, so r ∝ p.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — Finding <strong>Momentum</strong> from Track Radius', text: 'A proton (q = 1.6×10⁻¹⁹ C) leaves a circular track of radius r = 0.15 m in a <strong>magnetic field</strong> B = 0.50 T.<br>Use p = Bqr:<br>p = 0.50 × 1.6×10⁻¹⁹ × 0.15 = 1.2×10⁻²⁰ kg m s⁻¹' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Pair Production Threshold', text: 'The minimum photon energy for pair production is E ≥ 2m<sub>e</sub>c² ≈ 1.02 MeV (rest energy of electron + positron). In a track diagram: no incoming track + V-shape with opposite curvatures = pair production. The two tracks must curve in opposite directions — this confirms one is e⁻ and the other e⁺.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Pair Production Threshold', text: 'The minimum photon energy for pair production is E ≥ 2m<sub>e</sub>c² ≈ 1.02 MeV (rest energy of electron + positron). In a track diagram: no incoming track + V-shape with opposite curvatures = pair production. The two tracks must curve in opposite directions — this confirms one is e⁻ and the other e⁺.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Track Spiralling = Energy Loss",
+        text: "A track that spirals INWARD (decreasing radius) means the particle is losing energy via ionisation. Do NOT assume constant radius in cloud chambers. Plot the energy loss via: as r decreases, v decreases (from r = mv/Bq), so kinetic energy decreases."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Pair Production V-Shape Recognition",
+        text: "A V-shaped track with NO incoming track indicates pair production: \u03b3 ray (invisible, no track) converts to e\u207b and e\u207a. The two tracks curve in OPPOSITE directions \u2014 this opposite curvature is the unique signature confirming e\u207b (negative) and e\u207a (positive) charges."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'In a <strong>magnetic field</strong> directed into the page, a particle curves to the right. What is the sign of its charge?' },

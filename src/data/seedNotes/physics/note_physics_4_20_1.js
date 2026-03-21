@@ -53,6 +53,24 @@ export const note_physics_4_20_1 = {
         title: 'Exam Tip: Flux θ Convention',
         text: 'In Φ = BAcosθ, θ is the angle between B and the normal to the coil face (not the coil plane). Flux is maximum (Φ = BA) when B is perpendicular to coil face (θ = 0°). Flux is zero when B is parallel to coil face (θ = 90°). Flux linkage = NΦ (unit: Wb turns). 1 Wb = 1 T m². Apply Faraday\'s law: EMF = −Δ(NΦ)/Δt.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Flux Angle Convention Trap",
+        text: "In \u03a6 = BAcos\u03b8, \u03b8 is the angle between B and the NORMAL to the coil face, NOT the angle between B and the coil plane itself. Maximum flux (\u03a6 = BA) when B is perpendicular to coil face (\u03b8 = 0\u00b0); zero flux when parallel to face (\u03b8 = 90\u00b0)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Flux vs Flux Linkage Units",
+        text: "Flux \u03a6 is measured in Weber (Wb); flux linkage N\u03a6 is measured in Wb turns. When exam questions give data for flux, multiply by N before applying Faraday's law: \u03b5 = \u2212N(\u0394\u03a6/\u0394t) or \u03b5 = \u2212\u0394(N\u03a6)/\u0394t."
+      }
     }
 
   ],

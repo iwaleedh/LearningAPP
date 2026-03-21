@@ -45,6 +45,24 @@ export const note_physics_4_18_4 = {
     },
     { id: 'enr-worked-3', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Finding Q and E from Potential', text: 'The <strong>electric potential</strong> at a point 0.50 m from a positive charge is +180 V. Find (a) the charge Q and (b) the <strong>electric field</strong> strength at that point.<br/><br/>(a) V = kQ / r → Q = Vr / k<br/>Q = (180 × 0.50) / (8.99 × 10⁹) = 90 / (8.99 × 10⁹)<br/>Q = 1.0 × 10⁻⁸ C<br/><br/>(b) E = kQ / r² = (8.99 × 10⁹ × 1.0 × 10⁻⁸) / (0.50)² = 89.9 / 0.25 = 360 N C⁻¹<br/>Cross-check: E = V / r = 180 / 0.50 = 360 N C⁻¹ ✓<br/>Direction: radially outward from the charge (positive Q).' } },
     { id: 'enr-tip-3', type: 'callout', terms: [], data: { style: 'tip', title: 'Exam Tip: V, E and the Potential Gradient', text: 'E = −dV/dr: the field equals the negative gradient of the V–r graph. A steeper slope means a stronger field.<br/>V is a scalar (no direction); E is a vector — always state its direction in exam answers.<br/>For a radial field: since V = kQ/r and E = kQ/r², it follows that E = V/r at the same point — a useful shortcut.<br/>Equipotential surfaces are perpendicular to field lines; no work is done moving a charge along an equipotential.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Potential Gradient Sign",
+        text: "E = \u2212dV/dr \u2014 note the negative sign. Electric field points from high to low potential (direction of decreasing V)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Equipotential Perpendicularity",
+        text: "Equipotential surfaces are always perpendicular to field lines \u2014 useful for quickly sketching field diagrams."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Electric Field</strong> & Potential' }], summaryText: '', ready: true },
   evidence: [],

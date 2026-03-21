@@ -29,6 +29,24 @@ export const note_physics_4_23_2 = {
     { id: 'enr-svg-1', type: 'svg', data: { caption: "Quark content of common hadrons", svg: "<svg viewBox=\"0 0 400 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"200\" fill=\"#f8f9fa\" rx=\"8\"/><text x=\"200\" y=\"28\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#2c3e50\">Quark Content of Common Hadrons</text><rect x=\"30\" y=\"50\" width=\"140\" height=\"120\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><text x=\"100\" y=\"72\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#1d4ed8\">Proton (uud)</text><circle cx=\"70\" cy=\"110\" r=\"20\" fill=\"#ef4444\"/><text x=\"70\" y=\"115\" text-anchor=\"middle\" fill=\"white\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">u</text><circle cx=\"100\" cy=\"110\" r=\"20\" fill=\"#ef4444\"/><text x=\"100\" y=\"115\" text-anchor=\"middle\" fill=\"white\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">u</text><circle cx=\"130\" cy=\"110\" r=\"20\" fill=\"#3b82f6\"/><text x=\"130\" y=\"115\" text-anchor=\"middle\" fill=\"white\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">d</text><rect x=\"230\" y=\"50\" width=\"140\" height=\"120\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#22c55e\" stroke-width=\"1.5\"/><text x=\"300\" y=\"72\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">Neutron (udd)</text><circle cx=\"270\" cy=\"110\" r=\"20\" fill=\"#ef4444\"/><text x=\"270\" y=\"115\" text-anchor=\"middle\" fill=\"white\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">u</text><circle cx=\"300\" cy=\"110\" r=\"20\" fill=\"#3b82f6\"/><text x=\"300\" y=\"115\" text-anchor=\"middle\" fill=\"white\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">d</text><circle cx=\"330\" cy=\"110\" r=\"20\" fill=\"#3b82f6\"/><text x=\"330\" y=\"115\" text-anchor=\"middle\" fill=\"white\" font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\">d</text></svg>" } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Checking Baryon Number Conservation', text: 'For β⁻ decay: n → p + e⁻ + ν̄e<br>Baryon number: 1 → 1 + 0 + 0 = 1 ✓<br>Charge: 0 → +1 + (−1) + 0 = 0 ✓<br>Lepton number: 0 → 0 + 1 + (−1) = 0 ✓ — all conservation laws satisfied.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Conservation Law Checklist', text: 'In every particle interaction, always verify four quantities: charge (Q), baryon number (B), lepton number (L), and strangeness (S — conserved in strong/EM, not weak).<br>Write them in a table row-by-row to avoid sign errors.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Conservation Law Check Table Format Avoids Errors",
+        text: "Write a table with rows for Q (charge), B (baryon number), L (lepton number), S (strangeness). List initial state and final state separately. Common error: forgetting to check lepton number \u2014 always include it."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Strangeness Conserved in Strong/EM, Not Weak",
+        text: "Strangeness (S) conservation depends on interaction type: strong force and electromagnetic force CONSERVE S (change = 0); weak force VIOLATES S (can change by \u00b11). Identify interaction type first \u2014 if neutrino involved, it's weak and S can change."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Conservation Laws in Particle Physics' }], summaryText: '', ready: true },
   evidence: [],

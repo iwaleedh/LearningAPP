@@ -22,7 +22,25 @@ export const note_physics_4_21_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "AC: V = V₀ sin(2πft), mean value = 0. RMS value represents equivalent DC heating power. V_rms = V₀/√2 ≈ 0.707 V₀; I_rms = I₀/√2. Power formulae: P = V_rms I_rms = V_rms²/R = I_rms²R. UK mains: 230 V RMS, 325 V peak, 50 Hz. Oscilloscope reads V₀ and T directly; calculate V_rms = V₀/√2." }, terms: [] },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="4"/><line x1="20" y1="110" x2="380" y2="110" stroke="#868e96" stroke-width="1.5"/><path d="M20 110 Q65 30 110 110 Q155 190 200 110 Q245 30 290 110 Q335 190 380 110" stroke="#339af0" stroke-width="3" fill="none"/><line x1="20" y1="57" x2="380" y2="57" stroke="#fa5252" stroke-width="2" stroke-dasharray="8,5"/><text x="6" y="34" font-family="sans-serif" font-size="13" fill="#1c7ed6" font-weight="bold">V&#8320;</text><text x="230" y="50" font-family="sans-serif" font-size="12" fill="#c92a2a" font-weight="bold">V_rms = V&#8320;/&#8730;2 &#8776; 0.707 V&#8320;</text></svg>', caption: 'Sinusoidal AC: peak value V₀ (blue wave) and RMS value V_rms (red dashed line) — the effective DC equivalent level' }, terms: [] },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: AC Power Calculation', text: 'A 50 Ω resistor is connected to a sinusoidal AC supply with peak voltage V₀ = 340 V.<br/>(a) V_rms = V₀/√2 = 340 ÷ 1.414 ≈ <strong>240 V</strong><br/>(b) Mean power P = V_rms²/R = 240² ÷ 50 = <strong>1152 W</strong><br/>Check: peak power = V₀²/R = 340² ÷ 50 = 2312 W ≈ 2 × 1152 W ✓' }, terms: [] },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: RMS & Oscilloscope Readings', text: 'An oscilloscope displays <em>peak</em> voltage — always divide by √2 before substituting into P = V²/R.<br/>UK mains 230 V is an RMS value; peak ≈ 325 V (= 230 × √2).<br/>Using V₀ directly in power formulae gives peak power, which is <em>double</em> the mean power — a common exam error.' }, terms: [] }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: RMS & Oscilloscope Readings', text: 'An oscilloscope displays <em>peak</em> voltage — always divide by √2 before substituting into P = V²/R.<br/>UK mains 230 V is an RMS value; peak ≈ 325 V (= 230 × √2).<br/>Using V₀ directly in power formulae gives peak power, which is <em>double</em> the mean power — a common exam error.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Peak Voltage \u2260 RMS Voltage in Power Calculations",
+        text: "The most common exam error: using peak voltage V\u2080 in P = V\u00b2/R gives power 2\u00d7 too large. Always use RMS values: P = Vrms\u00b2/R. For 230 V UK mains (RMS), peak is 325 V \u2014 using 325 in a power formula is wrong."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "RMS = V\u2080/\u221a2 Only for Sinusoidal Waveforms",
+        text: "The formula Vrms = V\u2080/\u221a2 applies ONLY to sinusoidal AC. For square waves or other shapes, Vrms \u2260 V\u2080/\u221a2. Some exams give non-sinusoidal signals \u2014 check the graph carefully before applying the formula."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Why is the RMS value used for AC rather than the peak or mean value? What is the RMS defined to equal?' },

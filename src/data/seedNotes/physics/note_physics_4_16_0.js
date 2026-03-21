@@ -112,6 +112,24 @@ export const note_physics_4_16_0 = {
         text: '<strong>Conservation of <strong>momentum</strong></strong> applies when no external forces act (net external force = 0). p<sub>before</sub> = p<sub>after</sub>. Always define a positive direction first. <strong>Momentum</strong> is a vector — include sign for direction. Units: kg m s<sup>−1</sup> = N s.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Impulse Area Under Graph",
+        text: "Impulse = area under F-t graph \u2014 a useful graphical interpretation for exam problems."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Momentum Direction",
+        text: "Momentum is a vector \u2014 always include sign for direction."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Impulse</strong>' }], summaryText: '', ready: true },
   evidence: [],

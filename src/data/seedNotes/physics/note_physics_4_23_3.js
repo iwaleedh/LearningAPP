@@ -20,6 +20,24 @@ export const note_physics_4_23_3 = {
     { id: 'enr-svg-1', type: 'svg', data: { caption: 'Conservation check flowchart', svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="8"/><rect x="20" y="20" width="100" height="36" rx="6" fill="#2980b9"/><text x="70" y="43" text-anchor="middle" fill="#1e293b" font-family="sans-serif" font-size="12">Check Q</text><rect x="150" y="20" width="100" height="36" rx="6" fill="#8e44ad"/><text x="200" y="43" text-anchor="middle" fill="#1e293b" font-family="sans-serif" font-size="12">Check B</text><rect x="280" y="20" width="100" height="36" rx="6" fill="#16a085"/><text x="330" y="43" text-anchor="middle" fill="#1e293b" font-family="sans-serif" font-size="12">Check L</text><line x1="120" y1="38" x2="150" y2="38" stroke="#555" stroke-width="2" marker-end="url(#arr)"/><line x1="250" y1="38" x2="280" y2="38" stroke="#555" stroke-width="2"/><rect x="110" y="110" width="180" height="40" rx="8" fill="#27ae60"/><text x="200" y="135" text-anchor="middle" fill="#1e293b" font-family="sans-serif" font-size="13" font-weight="bold">All conserved → Permitted</text></svg>' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — Check π⁰ → γ + γ', text: 'Q: 0 → 0 + 0 ✓<br>B: 0 → 0 + 0 ✓<br>L: 0 → 0 + 0 ✓<br>All quantum numbers conserved — this decay <strong>is permitted</strong>.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Strangeness', text: 'Strangeness (S) is conserved in <strong>strong and electromagnetic</strong> interactions but <strong>not</strong> in weak interactions. Always identify the interaction type first — if weak (involves W boson / neutrino), a change in S of ±1 is allowed.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "One Failed Conservation Law = Reaction Forbidden",
+        text: "A reaction is ONLY allowed if ALL quantum numbers are conserved (except strangeness in weak interactions). If even one conservation law fails, the reaction cannot occur. Students sometimes think 'close enough' \u2014 wrong! Conservation is absolute."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Recognise Weak Interactions by Neutrino Emission",
+        text: "If a decay equation includes a neutrino (\u03bde, \u03bd\u03bc, \u03bd\u03c4), it is weak interaction \u2014 strangeness can change by \u00b11. Example: \u03b2\u207b decay n \u2192 p + e\u207b + \u03bd\u0304e violates no conservation law (check: Q, B, L all conserved)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Particle Interaction Equations' }], summaryText: '', ready: true },
   evidence: [],

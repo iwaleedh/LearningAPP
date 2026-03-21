@@ -96,6 +96,24 @@ export const note_physics_4_17_1 = {
         text: '<strong>Centripetal force</strong> is NOT a new force — it is the resultant of existing forces (gravity, tension, friction, normal reaction, etc.) directed toward the centre.\n\na = v²/r = ω²r.  F = mv²/r = mω²r.\n\nAt top of loop: mg + N = mv²/r.\nAt bottom: N − mg = mv²/r.\nNet force always points toward centre of circular path.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Vertical Circle Forces",
+        text: "Force equations differ at top vs bottom: at top mg + N = mv\u00b2/r; at bottom N \u2212 mg = mv\u00b2/r \u2014 easy mistake to invert these."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Velocity and Acceleration",
+        text: "Velocity is tangential, acceleration is centripetal (perpendicular to velocity) \u2014 direction constantly changes but speed remains constant."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Angular Velocity</strong>' }], summaryText: '', ready: true },
   evidence: [],

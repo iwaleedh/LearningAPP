@@ -43,7 +43,25 @@ export const note_physics_4_21_0 = {
       terms: []
     },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Motional E.M.F', text: 'A straight conductor of length <strong>0.25 m</strong> moves at <strong>4 m s⁻¹</strong> perpendicular to a uniform field of flux density <strong>0.5 T</strong>.<br>ε = BvL = 0.5 × 4 × 0.25 = <strong>0.5 V</strong><br>The conductor must move <em>perpendicular</em> to B for the full BvL formula to apply; if at angle θ, use ε = BvL sin θ.' }, terms: [] },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Three Conditions for Induction', text: 'Remember <strong>C-R-D</strong>: a conductor in a <strong>C</strong>losed circuit must have a <strong>R</strong>ate of change of flux linkage (ΔNΦ/Δt ≠ 0); the <strong>D</strong>irection of the induced current opposes the change (Lenz\'s Law). If any one of these is missing, state which condition fails — examiners reward this.' }, terms: [] }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Three Conditions for Induction', text: 'Remember <strong>C-R-D</strong>: a conductor in a <strong>C</strong>losed circuit must have a <strong>R</strong>ate of change of flux linkage (ΔNΦ/Δt ≠ 0); the <strong>D</strong>irection of the induced current opposes the change (Lenz\'s Law). If any one of these is missing, state which condition fails — examiners reward this.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Stationary Magnet Produces No E.M.F",
+        text: "Students often think a strong magnet held still inside a coil will induce an e.m.f. Incorrect! It is the CHANGE in flux (\u0394\u03a6/\u0394t) that induces an e.m.f, not the flux itself. No motion = no change = zero e.m.f, regardless of field strength."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Three Conditions for Induction (C-R-D)",
+        text: "Remember C-R-D: Closed circuit required; Rate of change of flux linkage must be non-zero (\u0394N\u03a6/\u0394t \u2260 0); Direction of induced current opposes the change (Lenz's Law). If any one fails, no induction occurs."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Induced E.M.F in a Moving Coil' }], summaryText: '', ready: true },
   evidence: [],

@@ -45,6 +45,24 @@ export const note_physics_4_18_2 = {
     },
     { id: 'enr-worked-1', type: 'callout', terms: [], data: { style: 'worked', title: 'Worked Example: Coulomb Force Between Two Protons', text: 'Two protons are separated by 7.4 × 10⁻¹¹ m. Calculate the magnitude of the electrostatic force between them.<br/>Given: Q₁ = Q₂ = +1.6 × 10⁻¹⁹ C, r = 7.4 × 10⁻¹¹ m, k = 8.99 × 10⁹ N m² C⁻²<br/>F = kQ₁Q₂ / r²<br/>F = (8.99 × 10⁹ × (1.6 × 10⁻¹⁹)²) / (7.4 × 10⁻¹¹)²<br/>Numerator: 8.99 × 10⁹ × 2.56 × 10⁻³⁸ = 2.30 × 10⁻²⁸<br/>Denominator: (7.4)² × 10⁻²² = 5.476 × 10⁻²¹<br/>F = 2.30 × 10⁻²⁸ / 5.476 × 10⁻²¹ ≈ 4.2 × 10⁻⁸ N (repulsive, both charges positive)' } },
     { id: 'enr-tip-1', type: 'callout', terms: [], data: { style: 'tip', title: 'Exam Tip: Applying Coulomb\'s Law', text: 'k = 1/(4πε₀) ≈ 8.99 × 10⁹ N m² C⁻² is given in the data booklet — no need to memorise.<br/>Use SI units: charges in Coulombs (C), distances in metres (m).<br/>If asked for the magnitude of force, ignore the sign.<br/>Inverse square law: doubling r → force becomes ¼; tripling r → force becomes 1/9.<br/>Treat uniform spherical conductors as point charges located at their centres.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Sign Convention",
+        text: "Opposite charges \u2192 F negative (attractive); same sign charges \u2192 F positive (repulsive) \u2014 easy to misremember."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Inverse Square Law",
+        text: "Doubling distance r reduces force to 1/4 NOT 1/2 \u2014 students consistently confuse the scaling factor."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electric Force between Two Charges' }], summaryText: '', ready: true },
   evidence: [],

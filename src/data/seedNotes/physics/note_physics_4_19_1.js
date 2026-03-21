@@ -53,6 +53,24 @@ export const note_physics_4_19_1 = {
         title: 'Exam Tips: Energy in Capacitors',
         text: '<strong>Work done by supply vs energy stored:</strong> When charging from 0 to V, the supply does work W = QV, but only ½QV is stored. The remaining ½QV is dissipated as heat — even in ideal connecting wires.<br><br><strong>Choosing the right formula:</strong><br>• Use <strong>E = ½CV<sup>2</sup></strong> when V is given (most common in exams).<br>• Use <strong>E = Q<sup>2</sup>/2C</strong> when Q is given and V is unknown.<br>• Use <strong>E = ½QV</strong> for the area-under-graph approach.<br><br><strong>E ∝ V<sup>2</sup>:</strong> doubling V quadruples energy; tripling V gives ×9 energy. Energy is not proportional to V.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Energy vs Work Dissipation",
+        text: "Supply does work W = QV during charging, but only \u00bdQV is stored as energy \u2014 the other \u00bdQV is dissipated as heat even in ideal wires."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Energy Proportionality",
+        text: "Energy \u221d V\u00b2 NOT V \u2014 doubling V quadruples energy; tripling V gives \u00d79 energy. Non-linear scaling."
+      }
     }
 
   ],

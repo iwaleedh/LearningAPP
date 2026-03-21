@@ -53,6 +53,24 @@ export const note_physics_4_19_0 = {
         title: 'Exam Tip: Energy Formulae',
         text: 'Three equivalent energy formulae: <strong>E = ½QV = ½CV<sup>2</sup> = Q<sup>2</sup>/2C</strong> — all equivalent. Choose based on what is known: use ½CV<sup>2</sup> when V is given, Q<sup>2</sup>/2C when Q and C are given.<br><br><strong>C = Q/V</strong> defines <strong>capacitance</strong>. A larger C stores more charge at the same voltage, and more energy.<br><br><strong>Area under Q&#8211;V graph</strong> = ½QV = energy stored (triangle: base V, height Q).<br><br><strong>Unit:</strong> Farad F = C V<sup>-1</sup> = C<sup>2</sup> J<sup>-1</sup>.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Three Energy Formulae",
+        text: "Three equivalent energy formulae: E = \u00bdQV = \u00bdCV\u00b2 = Q\u00b2/2C \u2014 choose based on known quantities. Use \u00bdCV\u00b2 when V given."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Capacitance Definition",
+        text: "C = Q/V defines capacitance. Area under Q\u2013V graph = \u00bdQV = energy stored (triangle area formula)."
+      }
     }
 
   ],

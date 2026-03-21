@@ -53,6 +53,24 @@ export const note_physics_4_20_0 = {
         title: 'Exam Tip: F = BIL & F = BQv',
         text: 'F = BIL sinθ (θ = angle between wire and field; maximum when θ = 90°). F = BQv sinθ (for a moving charge). Fleming\'s LEFT-hand rule: Thumb → Force (motor effect), Index → B-field, Middle → Conventional current. B = 1 T means 1 N force on 1 m wire carrying 1 A at right angles. Units: Tesla T = N A⁻¹ m⁻¹.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Flux Density vs Flux",
+        text: "Students confuse B (magnetic flux density in Tesla) with \u03a6 (magnetic flux in Weber). Remember: B is field strength at a point (independent of area); \u03a6 depends on the area. \u03a6 = BA (or BAcos\u03b8 if at an angle)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Right Force Direction",
+        text: "Use Fleming's LEFT-hand rule for motor/force direction (F = BIL). Thumb = force direction; Index = B field; Middle finger = conventional current. Maximum force when wire is perpendicular to B; zero force when parallel."
+      }
     }
 
   ],

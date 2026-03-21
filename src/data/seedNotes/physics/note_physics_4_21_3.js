@@ -64,6 +64,24 @@ export const note_physics_4_21_3 = {
         text: '<strong>1. Flux Φ vs Flux Linkage NΦ:</strong> Exams often give data you must multiply by N before dividing by Δt. "Change in flux linkage" = N × ΔΦ, not just ΔΦ.<br/><strong>2. The negative sign:</strong> You will rarely be penalised for omitting the minus sign if you state it opposes the change (Lenz\'s Law). But always mention Lenz\'s Law explicitly to gain the mark.<br/><strong>3. Graph questions:</strong> If given a NΦ–t graph: induced e.m.f. = −gradient of the tangent. Steepest part of curve → greatest |ε|; flat sections → ε = 0. A sinusoidal NΦ graph produces a cosine ε graph (90° phase shift).<br/><strong>4. Units check:</strong> Wb turns / s = V. If flux is in mWb, convert to Wb before substituting.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Graph Gradient = Induced E.M.F Magnitude",
+        text: "On a flux linkage vs time graph, the gradient at any point equals \u2212\u03b5. Zero gradient = zero e.m.f; steepest gradient = greatest |\u03b5|. Most common error: reading flux value instead of gradient slope on the exam chart."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Remember to Include N (Number of Turns)",
+        text: "Faraday's law is \u03b5 = \u2212N(\u0394\u03a6/\u0394t), not \u03b5 = \u2212(\u0394\u03a6/\u0394t). Forgetting to multiply by N is a frequent loss of marks. Always identify N separately and ensure it multiplies the flux change rate."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Faraday\'s Law' }], summaryText: '', ready: true },

@@ -17,6 +17,24 @@ export const note_physics_4_22_2 = {
     { id: 'enr-svg-1', type: 'svg', data: { caption: 'Electron gun: heated cathode emits electrons by thermionic emission; electrons are accelerated through p.d. V toward the anode (eV = ½mv²).', svg: '<svg viewBox="0 0 500 240" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="240" fill="#0f172a" rx="8"/><text x="250" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Thermionic Emission — Electron Gun</text><rect x="30" y="55" width="130" height="130" rx="10" fill="none" stroke="#adb5bd" stroke-width="1.5"/><rect x="48" y="75" width="14" height="70" rx="3" fill="#e03131" stroke="#c92a2a" stroke-width="1"/><text x="55" y="218" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">Cathode (−)</text><text x="80" y="107" font-family="sans-serif" font-size="12" fill="#fd7e14">heat ⟶</text><circle cx="130" cy="98" r="5" fill="#339af0"/><circle cx="162" cy="116" r="5" fill="#339af0"/><circle cx="200" cy="104" r="5" fill="#339af0"/><circle cx="242" cy="120" r="5" fill="#339af0"/><circle cx="280" cy="106" r="5" fill="#339af0"/><line x1="90" y1="120" x2="320" y2="120" stroke="#339af0" stroke-width="1.5" stroke-dasharray="5,3"/><polygon points="320,120 312,115 312,125" fill="#339af0"/><text x="200" y="148" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">electrons accelerated →</text><rect x="325" y="75" width="14" height="70" rx="3" fill="#2b8a3e" stroke="#1f7a37" stroke-width="1"/><rect x="325" y="108" width="14" height="24" fill="#0f172a"/><text x="332" y="218" font-family="sans-serif" font-size="10" fill="#2b8a3e" text-anchor="middle">Anode (+)</text><line x1="340" y1="120" x2="440" y2="120" stroke="#339af0" stroke-width="2"/><polygon points="440,120 432,115 432,125" fill="#339af0"/><text x="390" y="113" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">beam exits</text><line x1="55" y1="68" x2="55" y2="45" stroke="#868e96" stroke-width="1"/><line x1="332" y1="68" x2="332" y2="45" stroke="#868e96" stroke-width="1"/><line x1="55" y1="45" x2="332" y2="45" stroke="#868e96" stroke-width="1"/><text x="193" y="40" font-family="sans-serif" font-size="11" fill="#495057" text-anchor="middle">accelerating p.d. V</text><text x="250" y="185" font-family="sans-serif" font-size="11" fill="#212529" text-anchor="middle">eV = ½mv²  →  v = √(2eV / m)</text></svg>' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — Electron Gun Speed', text: 'An electron is accelerated from rest through a p.d. of 5.0 kV. Find its final speed.\n\nGiven: V = 5000 V, e = 1.6 × 10⁻¹⁹ C, mₑ = 9.11 × 10⁻³¹ kg\n\nStep 1 — Energy transferred: W = eV = 1.6 × 10⁻¹⁹ × 5000 = 8.0 × 10⁻¹⁶ J\n\nStep 2 — Set KE = W: ½mₑv² = eV  →  v² = 2eV/mₑ\n\nStep 3 — Calculate: v² = (2 × 8.0 × 10⁻¹⁶) / (9.11 × 10⁻³¹) = 1.756 × 10¹⁵ m² s⁻²\nv = √(1.756 × 10¹⁵) ≈ 4.2 × 10⁷ m s⁻¹\n\nNote: ~14% of c, so relativistic effects are small but begin to matter.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Thermionic Emission vs Photoelectric Effect', text: 'Both processes release electrons from a metal surface, but via different energy sources:\n• Thermionic emission: electrons gain energy from HEAT (thermal energy).\n• Photoelectric effect: electrons gain energy from PHOTONS (light or UV).\nIn both cases the electron must overcome the work function φ. In an exam always state the energy source clearly. The key equation for an electron gun is eV = ½mv² — equate electrical energy input to <strong>kinetic energy</strong> gained.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Thermionic vs Photoelectric \u2014 Know the Difference",
+        text: "Both release electrons from metal, but via different energy sources: Thermionic = HEAT energy liberates electrons; Photoelectric = LIGHT (photons) liberates electrons. The work function \u03c6 must be overcome in both cases. Exam questions test this distinction directly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Electron Gun Energy Equation",
+        text: "For an electron accelerated through p.d. V: always use eV = \u00bdmev\u00b2. The electrical potential energy gained equals kinetic energy of the electron. At 5 kV: KE = 5 keV = 5 \u00d7 10\u00b3 \u00d7 1.6 \u00d7 10\u207b\u00b9\u2079 J."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Thermionic Emission' }], summaryText: '', ready: true },
   evidence: [],

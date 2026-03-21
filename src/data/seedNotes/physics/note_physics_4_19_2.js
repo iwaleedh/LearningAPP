@@ -53,6 +53,24 @@ export const note_physics_4_19_2 = {
         title: 'Exam Tip — Exponential Decay',
         text: 'Remember: Q = Q₀e<sup>−t/RC</sup> and V = V₀e<sup>−t/RC</sup> apply during <em>discharge</em>. During charging use V = V₀(1 − e<sup>−t/RC</sup>). Always check which equation the question requires.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Discharge vs Charging Equations",
+        text: "Discharge: Q = Q\u2080e^(\u2212t/RC) and V = V\u2080e^(\u2212t/RC). Charging: V = V\u2080(1 \u2212 e^(\u2212t/RC)). Both describe exponential behavior with same time constant."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Equation Selection",
+        text: "Always check which equation your question requires \u2014 discharge and charging curves have opposite signs and are easily confused."
+      }
     }
 
   ],
