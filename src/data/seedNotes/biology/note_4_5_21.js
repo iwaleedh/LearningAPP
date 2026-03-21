@@ -39,7 +39,8 @@ export const note_biology_4_5_21 = {
       id: "p-q10-val",
       type: "paragraph",
       data: { text: "For most enzyme-controlled reactions (before the optimum temperature is reached), the Q10 value is roughly 2. This means the rate of reaction doubles for every 10 °C rise in temperature." }
-    }
+    },
+{ 'id': 'callout-examiner-8f28bab7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

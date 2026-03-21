@@ -36,7 +36,8 @@ export const note_biology_4_5_18 = {
       id: "callout-models",
       type: "callout",
       data: { style: "warning", title: "Predictive Models", text: "Scientists use computer models to extrapolate current data into the future. Extrapolation is uncertain because it assumes current trends continue unchanged, ignoring potential unknown feedback mechanisms, future emission reductions, or unpredictable solar activity." }
-    }
+    },
+{ 'id': 'callout-examiner-5a27328e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

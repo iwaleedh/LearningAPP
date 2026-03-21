@@ -43,7 +43,8 @@ export const note_biology_4_5_25 = {
           "Complexity: Ecosystems are incredibly complex, and establishing a direct 100% causal link between one country's emissions and a specific weather event is incredibly difficult."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-bd8b4eb9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

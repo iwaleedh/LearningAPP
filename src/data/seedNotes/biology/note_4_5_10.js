@@ -35,7 +35,8 @@ export const note_biology_4_5_10 = {
           "Oxygenase activity (Photorespiration): O₂ binds competitively to the active site. RuBP reacts with O₂ resulting in a product that cannot be used efficiently in the Calvin cycle. This wastes ATP and loses fixed carbon as CO₂, significantly reducing photosynthetic efficiency, especially at high temperatures when oxygen becomes relatively more soluble than CO₂."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-37e15b49', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

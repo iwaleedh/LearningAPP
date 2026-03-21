@@ -32,7 +32,8 @@ export const note_biology_4_5_2 = {
       id: "callout-calvin-yield",
       type: "callout",
       data: { style: "worked", title: "Making one hexose sugar", text: "Because 1 CO₂ generates a net gain of 1 carbon atom, it takes 6 turns of the Calvin cycle (fixing 6 CO₂ molecules) to produce 2 extra GALP molecules, which join to form 1 molecule of glucose." }
-    }
+    },
+{ 'id': 'callout-examiner-6c83d843', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

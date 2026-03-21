@@ -37,7 +37,8 @@ export const note_biology_4_5_8 = {
       id: "callout-glucose-vs-atp",
       type: "callout",
       data: { style: "worked", title: "ATP vs Glucose", text: "Glucose contains too much energy; if released all at once, much would be wasted as heat, raising cell temperature destructively. ATP releases energy in small, discrete, manageable amounts in a single-step reaction." }
-    }
+    },
+{ 'id': 'callout-examiner-87c58eca', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

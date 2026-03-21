@@ -38,7 +38,8 @@ export const note_biology_4_5_16 = {
       id: "p-deflected",
       type: "paragraph",
       data: { text: "Deflected succession/Plagioclimax: When human intervention (like mowing, grazing sheep, or controlled burning) prevents an ecosystem from reaching its natural climax community." }
-    }
+    },
+{ 'id': 'callout-examiner-c44c57cc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

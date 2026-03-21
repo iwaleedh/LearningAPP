@@ -34,7 +34,8 @@ export const note_biology_4_5_14 = {
       id: "callout-eq2",
       type: "callout",
       data: { style: "worked", title: "Secondary Productivity Equation", text: "NSP = I - (F + R)\nWhere I is chemical energy in ingested food, F is chemical energy lost in faeces and urine, and R is respiratory losses." }
-    }
+    },
+{ 'id': 'callout-examiner-3c043763', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

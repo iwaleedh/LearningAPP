@@ -34,7 +34,8 @@ export const note_biology_4_5_15 = {
       id: "callout-balance",
       type: "callout",
       data: { style: "warning", title: "Carbon Balance", text: "Historically, the carbon cycle was balanced. Human activities—broadly deforestation (reducing photosynthesis) and combusting fossil fuels—have disrupted this balance, leading to rising atmospheric CO₂ levels." }
-    }
+    },
+{ 'id': 'callout-examiner-5e1386a8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

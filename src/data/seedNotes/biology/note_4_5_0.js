@@ -39,7 +39,8 @@ export const note_biology_4_5_0 = {
           "Circular DNA and 70S ribosomes: For synthesis of chloroplast proteins."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-be14748d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -35,7 +35,8 @@ export const note_biology_4_5_6 = {
       id: "callout-errors",
       type: "callout",
       data: { style: "warning", title: "Sources of Error", text: "The gas collected may contain nitrogen or oxygen lost due to plant respiration. Counting bubbles is inaccurate as bubble size varies; collecting the volume is more precise." }
-    }
+    },
+{ 'id': 'callout-examiner-c94dcd2b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -29,7 +29,8 @@ export const note_biology_4_5_1 = {
           "Reduction of NADP: Electrons from PSI are excited by light and, along with protons from water, are accepted by NADP to form reduced NADP (NADPH). "
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-df5a1bf3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

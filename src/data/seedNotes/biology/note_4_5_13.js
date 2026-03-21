@@ -42,7 +42,8 @@ export const note_biology_4_5_13 = {
       id: "p-chain-length",
       type: "paragraph",
       data: { text: "Because energy is lost so rapidly at each stage, most food chains are restricted to 4 or 5 trophic levels, as there is insufficient energy to support a higher trophic level." }
-    }
+    },
+{ 'id': 'callout-examiner-04c8cde2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

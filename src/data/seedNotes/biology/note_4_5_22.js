@@ -38,7 +38,8 @@ export const note_biology_4_5_22 = {
       id: "callout-ethics",
       type: "callout",
       data: { style: "warning", title: "Ethical Considerations", text: "When using animals like brine shrimp, minimize suffering. Return them to their natural habitat if possible, or maintain them appropriately. Do not use extreme temperatures that unnecessarily cause death." }
-    }
+    },
+{ 'id': 'callout-examiner-efa6433b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

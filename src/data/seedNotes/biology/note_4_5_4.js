@@ -46,7 +46,8 @@ export const note_biology_4_5_4 = {
       id: "callout-rf",
       type: "callout",
       data: { style: "key", title: "Rf Value", text: "Rf = distance moved by pigment / distance moved by solvent front" }
-    }
+    },
+{ 'id': 'callout-examiner-3fecc52e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

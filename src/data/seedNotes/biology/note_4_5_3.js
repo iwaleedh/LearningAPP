@@ -31,7 +31,8 @@ export const note_biology_4_5_3 = {
       id: "callout-glasshouse",
       type: "callout",
       data: { style: "worked", title: "Commercial Optimization", text: "Farmers control limiting factors in glasshouses to maximize yield. Heaters/coolers regulate temperature, artificial lamps provide lighting at night, and burning fossil fuels or pumping CO₂ increases CO₂ concentration." }
-    }
+    },
+{ 'id': 'callout-examiner-f76ae8e8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

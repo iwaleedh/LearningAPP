@@ -27,7 +27,8 @@ export const note_biology_4_5_17 = {
           "Ice Cores: Deep ice cores trap air bubbles. Analyzing the isotopic composition of oxygen and the concentration of CO₂ in these bubbles reveals the atmospheric composition and temperature at the time the snow fell (up to 800,000 years ago)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-0acf4c1c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

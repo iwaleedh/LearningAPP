@@ -25,7 +25,8 @@ export const note_biology_4_5_7 = {
           "Measure the distance from the origin to the center of each pigment spot, and the distance to the solvent front to calculate Rf values."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-b4b29c3e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

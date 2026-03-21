@@ -49,7 +49,8 @@ export const note_biology_4_5_12 = {
           "Decomposers: Saprobionts (fungi/bacteria) that break down dead organic matter into inorganic ions, returning them to the soil."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-816e5d2a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

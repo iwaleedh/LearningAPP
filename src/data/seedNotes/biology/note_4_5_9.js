@@ -49,7 +49,8 @@ export const note_biology_4_5_9 = {
           "No photolysis of water occurs, so no oxygen is produced, and no reduced NADP is generated."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-9c8da0fb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

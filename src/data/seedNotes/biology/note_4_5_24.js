@@ -48,7 +48,8 @@ export const note_biology_4_5_24 = {
       id: "p-sympatric",
       type: "paragraph",
       data: { text: "No geographical barrier. Speciation occurs in the same area due to a mutation resulting in random reproductive isolation (e.g., polyploidy preventing successful meiosis, changes in courtship behavior, or different flowering times preventing gamete fusion)." }
-    }
+    },
+{ 'id': 'callout-examiner-75bacc79', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

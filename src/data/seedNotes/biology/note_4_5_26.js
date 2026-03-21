@@ -47,7 +47,8 @@ export const note_biology_4_5_26 = {
           "Reforestation: Replanting trees whenever trees are felled."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-1cbf8276', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -26,7 +26,8 @@ export const note_biology_4_5_11 = {
           "Phloem network: Rapidly removes the sugars produced via translocation, maintaining concentration gradients."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-d5e09da3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

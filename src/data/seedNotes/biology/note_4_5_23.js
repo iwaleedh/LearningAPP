@@ -45,7 +45,8 @@ export const note_biology_4_5_23 = {
           "Behavioural: Ways an organism acts (e.g., possums playing dead or birds migrating)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-689d9c68', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

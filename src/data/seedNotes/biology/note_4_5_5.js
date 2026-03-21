@@ -36,7 +36,8 @@ export const note_biology_4_5_5 = {
       id: "p-loss",
       type: "paragraph",
       data: { text: "Why isn't GPP 100% of incoming light? Not all wavelengths are absorbed (some are green/reflected), light misses chloroplasts, or passes through the leaf. Limiting factors (CO₂) may restrict the maximum rate." }
-    }
+    },
+{ 'id': 'callout-examiner-b4a2471a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,
