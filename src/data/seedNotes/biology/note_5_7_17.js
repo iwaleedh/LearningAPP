@@ -46,7 +46,9 @@ export const note_biology_5_7_17 = {
           "Result: A small volume of highly concentrated, hypertonic urine is produced. Blood water potential rises."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-c2676c09', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-6b63925f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -39,7 +39,8 @@ export const note_biology_5_7_12 = {
       id: "p-stretch",
       type: "paragraph",
       data: { text: "Stretch receptors in the bronchioles also prevent the lungs from over-inflating by sending inhibitory signals to the ventilation center, triggering exhalation (the Hering-Breuer reflex)." }
-    }
+    },
+{ 'id': 'callout-examiner-9d68c93a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

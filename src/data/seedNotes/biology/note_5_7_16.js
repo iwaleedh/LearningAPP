@@ -47,7 +47,8 @@ export const note_biology_5_7_16 = {
           "This lowers the water potential of the blood, causing some water to be reabsorbed via osmosis."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-6648914b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

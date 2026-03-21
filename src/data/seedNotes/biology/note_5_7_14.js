@@ -42,7 +42,8 @@ export const note_biology_5_7_14 = {
       id: "callout-positive",
       type: "callout",
       data: { style: "warning", title: "Positive Feedback", text: "Contrast with positive feedback, where a deviation causes a response that amplifies the deviation (e.g., sodium channels opening rapidly during a nerve action potential, or oxytocin during childbirth). Positive feedback does not lead to homeostasis." }
-    }
+    },
+{ 'id': 'callout-examiner-55142576', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

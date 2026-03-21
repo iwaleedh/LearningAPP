@@ -50,7 +50,8 @@ export const note_biology_5_7_8 = {
           "H-zone: The lighter region in the center of the completely dark A-band containing only myosin."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-bb867f7e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -29,7 +29,8 @@ export const note_biology_5_7_18 = {
           "Translation: The resulting mRNA travels to ribosomes to be translated into new proteins, altering the cell's structure/function."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-922f4615', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

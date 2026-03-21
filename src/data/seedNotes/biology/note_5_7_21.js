@@ -32,7 +32,8 @@ export const note_biology_5_7_21 = {
       id: "p-exercise",
       type: "paragraph",
       data: { text: "By measuring resting traces, having the subject perform 5 minutes of exercise (e.g., step-ups), and then measuring post-exercise traces immediately, students can mathematically demonstrate the vast increase in Minute Ventilation required to clear CO2 and repay the oxygen debt." }
-    }
+    },
+{ 'id': 'callout-examiner-14015347', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

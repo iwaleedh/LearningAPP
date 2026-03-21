@@ -31,7 +31,8 @@ export const note_biology_5_7_2 = {
       id: "callout-yield",
       type: "callout",
       data: { style: "worked", title: "Net Yield per Glucose", text: "Because 1 glucose makes 2 pyruvate, the link reaction happens twice per glucose. Yield: 2 Acetyl CoA, 2 CO2, 2 Reduced NAD. (NO ATP is formed here)." }
-    }
+    },
+{ 'id': 'callout-examiner-089acf33', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

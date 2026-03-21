@@ -33,7 +33,8 @@ export const note_biology_5_7_3 = {
       id: "callout-yield",
       type: "callout",
       data: { style: "key", title: "Yield per cycle vs per glucose", text: "One cycle (1 Acetyl CoA): 3 NADH, 1 FADH2, 1 ATP, 2 CO2. Per glucose (2 cycles): 6 NADH, 2 FADH2, 2 ATP, 4 CO2." }
-    }
+    },
+{ 'id': 'callout-examiner-5293ac42', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

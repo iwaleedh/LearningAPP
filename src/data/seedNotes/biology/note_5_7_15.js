@@ -38,7 +38,8 @@ export const note_biology_5_7_15 = {
       id: "p-nephron",
       type: "paragraph",
       data: { text: "The nephron is the functional filtering unit of the kidney (~1 million per kidney). Blood enters via the afferent arteriole, which forms a knot of capillaries (glomerulus) inside the Bowman's capsule. Filtered blood leaves via the efferent arteriole, wrapping around the subsequent tubules." }
-    }
+    },
+{ 'id': 'callout-examiner-9d7e8d86', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

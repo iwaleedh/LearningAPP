@@ -42,7 +42,8 @@ export const note_biology_5_7_0 = {
           "Oxidative Phosphorylation: Occurs across the inner mitochondrial membrane (cristae)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-ea3ddee6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

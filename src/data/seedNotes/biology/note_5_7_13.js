@@ -27,7 +27,8 @@ export const note_biology_5_7_13 = {
           "Vascular System: Causes vasoconstriction of arterioles to the gut and skin, but vasodilation to skeletal muscles, prioritizing blood flow to active tissues."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-027e5b60', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

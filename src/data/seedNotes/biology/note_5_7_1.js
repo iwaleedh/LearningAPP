@@ -32,7 +32,8 @@ export const note_biology_5_7_1 = {
       id: "callout-yield",
       type: "callout",
       data: { style: "key", title: "Net Yield of Glycolysis", text: "Per glucose molecule: 2 Pyruvate, 2 net ATP (4 produced - 2 used), 2 Reduced NAD." }
-    }
+    },
+{ 'id': 'callout-examiner-78b9cc5d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -49,7 +49,8 @@ export const note_biology_5_7_5 = {
           "This pathway is irreversible."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-e71bddf2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -34,7 +34,8 @@ export const note_biology_5_7_19 = {
       id: "p-vars",
       type: "paragraph",
       data: { text: "This setup can be used to test how temperature, substrate concentration, or substrate type (glucose vs maltose) affects the rate of respiration in yeast." }
-    }
+    },
+{ 'id': 'callout-examiner-b1fcbf79', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

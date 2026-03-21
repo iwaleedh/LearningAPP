@@ -31,7 +31,8 @@ export const note_biology_5_7_10 = {
           ["Glycogen/Phosphocreatine", "Low.", "High (rapid fuel availability)."]
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-25e9971e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,
