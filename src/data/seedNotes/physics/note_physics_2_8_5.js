@@ -47,6 +47,24 @@ export const note_physics_2_8_5 = {
         text: '\u03b5 = V + Ir, where V is the terminal PD. The V\u2013I graph has <strong>gradient = \u2212r</strong> and <strong>y-intercept = \u03b5</strong>. Low r means more energy delivered to the external circuit. High <strong>current</strong> demand causes a large terminal PD drop. Always draw r as a small resistor in series <em>inside</em> the battery symbol in circuit diagrams.',
       },
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Light-Dependent Resistor (LDR)",
+        text: "Resistance decreases with light intensity (photons create charge carriers). In darkness R is very high (M\u03a9 range); in bright light R drops to ~100 \u03a9. Used in light-sensor circuits, automatic brightness control, and alarm systems."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Photosensitive Device Applications",
+        text: "An LDR in a potential divider circuit produces a voltage that varies with light level. This voltage change can trigger logic circuits or be used to regulate a system automatically (e.g., street lights that activate at dusk)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Resistance</strong> & Illumination' }], summaryText: '', ready: true },
   evidence: [],

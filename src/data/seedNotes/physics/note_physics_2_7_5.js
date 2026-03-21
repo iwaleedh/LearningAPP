@@ -31,7 +31,25 @@ export const note_physics_2_7_5 = {
     },
     { id: 'enr-worked-3', type: 'callout', data: { style: 'worked', title: 'Core Practical — Measuring <strong>Resistivity</strong> of a Wire', text: 'A student measures <strong>resistance</strong> R of a nichrome wire at different lengths L. Wire diameter d = 0.40 mm (three micrometer readings, averaged).<br><br>Results: L = 0.20 m → R = 2.8 Ω; L = 0.40 m → R = 5.6 Ω; L = 0.60 m → R = 8.4 Ω; L = 0.80 m → R = 11.2 Ω<br><br>Step 1 — Plot R (y-axis) against L (x-axis). Straight line through origin confirms R ∝ L.<br>Step 2 — Gradient: ΔR/ΔL = (11.2 − 2.8) / (0.80 − 0.20) = 8.4 / 0.60 = 14.0 Ω m⁻¹<br>Step 3 — Cross-sectional area: A = π(d/2)² = π × (0.20 × 10⁻³)² = 1.257 × 10⁻⁷ m²<br>Step 4 — <strong>Resistivity</strong>: ρ = gradient × A = 14.0 × 1.257 × 10⁻⁷ = 1.76 × 10⁻⁶ Ω m<br><br>Published value for nichrome ≈ 1.1 × 10⁻⁶ Ω m. Discrepancy due to non-uniform diameter and contact <strong>resistance</strong> at crocodile clips.' } },
     { id: 'enr-warn-1', type: 'callout', data: { style: 'warning', title: 'Common Error — Unit Conversion in ρ = RA/L', text: 'Three frequent mistakes: (1) Using diameter instead of radius — area A = π r² not π d². If you use d directly, A is 4× too large and ρ will be wrong by a factor of 4. (2) Forgetting to convert mm → m — a diameter of 0.50 mm = 5.0 × 10⁻⁴ m; the area must be in m². Omitting this conversion makes ρ wrong by a factor of 10⁶. (3) Inconsistent units — all values must be in SI (R in Ω, L in m, A in m²) for ρ to come out in Ω m. Final check: <strong>resistivity</strong> of a metal should be in the range 10⁻⁸ to 10⁻⁶ Ω m; an insulator 10⁸ to 10¹⁶ Ω m.' } },
-    { id: 'enr-tip-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip — <strong>Resistivity</strong> and Potential Divider Summary', text: 'Key reminders: • <strong>Resistivity</strong> ρ is a material property; <strong>resistance</strong> R depends on geometry (R = ρL/A). Doubling L doubles R; doubling radius quadruples A and quarters R. • In a potential divider, voltages divide in ratio of resistances. A sensor (LDR/<strong>thermistor</strong>) replaces one resistor; as sensor R changes, V_out changes predictably. • For <strong>resistivity</strong> practicals, plot R vs L — the gradient equals ρ/A. Measure diameter at 3–5 positions with a micrometer and use the mean to reduce systematic error. • NTC <strong>thermistor</strong> hotter → R ↓ → V_out across it ↓ (if it is R₂ in the divider). Colder → R ↑ → V_out ↑. Always identify which position (R₁ or R₂) the sensor occupies before deciding the direction of V_out change.' } }
+    { id: 'enr-tip-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip — <strong>Resistivity</strong> and Potential Divider Summary', text: 'Key reminders: • <strong>Resistivity</strong> ρ is a material property; <strong>resistance</strong> R depends on geometry (R = ρL/A). Doubling L doubles R; doubling radius quadruples A and quarters R. • In a potential divider, voltages divide in ratio of resistances. A sensor (LDR/<strong>thermistor</strong>) replaces one resistor; as sensor R changes, V_out changes predictably. • For <strong>resistivity</strong> practicals, plot R vs L — the gradient equals ρ/A. Measure diameter at 3–5 positions with a micrometer and use the mean to reduce systematic error. • NTC <strong>thermistor</strong> hotter → R ↓ → V_out across it ↓ (if it is R₂ in the divider). Colder → R ↑ → V_out ↑. Always identify which position (R₁ or R₂) the sensor occupies before deciding the direction of V_out change.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "LDR and Thermistor Applications",
+        text: "LDR (light-dependent resistor): resistance decreases with increasing light intensity. Thermistor (NTC): resistance decreases with increasing temperature. Both are used in sensor circuits where a potential divider converts resistance change into a voltage change that can be measured or used to trigger logic."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Unit Conversion Trap",
+        text: "Diameter must be converted to radius for area calculations: A = \u03c0(d/2)\u00b2 = \u03c0r\u00b2. Common error: using diameter directly gives A = \u03c0d\u00b2 which is 4\u00d7 too large. Also convert mm or cm to m for SI units: mm = 10\u207b\u00b3 m, not 10\u207b\u00b2 m."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Potential Dividers & Variable <strong>Resistance</strong>' }], summaryText: '', ready: true },
   evidence: [],

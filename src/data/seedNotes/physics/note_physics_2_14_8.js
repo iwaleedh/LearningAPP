@@ -45,6 +45,24 @@ export const note_physics_2_14_8 = {
         text: '<strong>Maximise marks by stating the condition clearly:</strong><br>• <strong>Diffraction</strong> is <em>most significant</em> when the gap width a ≈ λ (same order of magnitude).<br>• When a ≫ λ, the wave travels almost straight through with little spreading.<br>• When a ≪ λ, the gap is too small for the wave to pass through appreciably.<br><br>Examiners reward the phrase: <em>"<strong>diffraction</strong> is greatest when the gap size is approximately equal to the <strong>wavelength</strong>."</em><br><br>Also remember: <strong>only <strong>amplitude</strong> changes</strong> on <strong>diffraction</strong> — <strong>wavelength</strong>, <strong>frequency</strong>, and speed are unchanged.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Photon Energy: E = hf = hc/\u03bb",
+        text: "Use whichever form fits the given data. If frequency is given, use E = hf. If wavelength is given, use E = hc/\u03bb. Higher frequency (shorter wavelength) photons carry more energy. Always include units: energy in joules, or in eV (1 eV = 1.6 \u00d7 10\u207b\u00b9\u2079 J)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Photon Energy vs Intensity",
+        text: "The energy of a SINGLE photon depends only on frequency: E = hf. The number of photons per second (and thus total intensity) depends on the source brightness. Brightness (intensity) and photon energy are independent quantities \u2014 do not confuse them. A dim UV source has fewer photons per second than a bright red laser, but each photon carries more energy."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Energy of a <strong>Photon</strong>' }], summaryText: '', ready: true },
   evidence: [],

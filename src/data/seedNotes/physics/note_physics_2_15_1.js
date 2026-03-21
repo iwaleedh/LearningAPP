@@ -19,6 +19,24 @@ export const note_physics_2_15_1 = {
     { id: 'enr-svg-threshold', type: 'svg', data: { caption: 'KE_max vs frequency: gradient=h, x-intercept=threshold frequency', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280"><line x1="80" y1="15" x2="80" y2="260" stroke="#475569" stroke-width="2"/><polygon points="76,15 84,15 80,7" fill="#475569"/><line x1="60" y1="195" x2="450" y2="195" stroke="#475569" stroke-width="2"/><polygon points="450,191 450,199 458,195" fill="#475569"/><text x="461" y="199" font-family="sans-serif" font-size="13" fill="#1e293b">f (Hz)</text><text x="22" y="140" font-family="sans-serif" font-size="13" fill="#1e293b" text-anchor="middle" transform="rotate(-90,22,140)">KE_max (J)</text><text x="63" y="212" font-family="sans-serif" font-size="12" fill="#64748b">0</text><line x1="80" y1="248" x2="230" y2="195" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,4"/><line x1="230" y1="195" x2="420" y2="90" stroke="#6366f1" stroke-width="2.5"/><circle cx="230" cy="195" r="5" fill="#ef4444"/><text x="212" y="218" font-family="sans-serif" font-size="11" fill="#ef4444">threshold f&#x2080;</text><text x="222" y="231" font-family="sans-serif" font-size="11" fill="#ef4444">KE = 0</text><circle cx="80" cy="248" r="4" fill="#f59e0b"/><text x="86" y="252" font-family="sans-serif" font-size="12" fill="#f59e0b">&#x2212;&#x03C6; (work function)</text><text x="325" y="155" font-family="sans-serif" font-size="12" fill="#6366f1" transform="rotate(-29,350,140)">gradient = h</text></svg>' }, terms: [] },
     { id: 'enr-worked-graph', type: 'callout', data: { style: 'worked', title: 'From KE_max vs f Graph', text: 'x-intercept = 6.0 × 10¹⁴ Hz → <strong>threshold frequency</strong> → φ = hf₀ = 6.63 × 10⁻³⁴ × 6.0 × 10¹⁴ = 3.98 × 10⁻¹⁹ J = 2.49 eV.<br/>Gradient = h from two points: at f = 8 × 10¹⁴ Hz, KE = 1.32 × 10⁻¹⁹ J.<br/>h = (KE − 0) / (f − f₀) = 1.32 × 10⁻¹⁹ / (8 − 6) × 10¹⁴ = 6.6 × 10⁻³⁴ J·s ≈ 6.63 × 10⁻³⁴.<br/>Experiment confirms Planck\'s constant.' }, terms: [] },
     { id: 'enr-tip-threshold', type: 'callout', data: { style: 'tip', title: 'Exam Tip: <strong>Threshold Frequency</strong> & Graph Reading', text: '<strong>Threshold frequency</strong> f₀ = φ/h. <strong>Work function</strong> φ in Joules for calculation. At threshold: KE_max = 0 (electrons just escape). From graph: gradient = h (Planck\'s constant), x-intercept = f₀, y-intercept = −φ. In exam: clearly identify which axis has which quantity. Units: KE in J, φ in J or eV (1 eV = 1.6 × 10⁻¹⁹ J).' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "KE_max is Maximum \u2014 Most Electrons Have Less Energy",
+        text: "KE_max is achieved only by electrons at the very surface of the metal that escape with zero energy loss. Electrons deeper in the metal lose some photon energy climbing to the surface, so they emerge with KE < KE_max. Therefore, KE_max is the UPPER LIMIT of the distribution, not the average. Examiners test this distinction carefully."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Using the KE_max vs Frequency Graph",
+        text: "A plot of KE_max against frequency f is a straight line with: gradient = h (Planck's constant \u2014 can be verified experimentally), x-intercept = f\u2080 (threshold frequency), y-intercept = \u2212\u03a6 (negative work function). From any two points on the graph, calculate h = \u0394KE_max / \u0394f. This is a common exam calculation."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise The Photoelectric Equation' }], summaryText: '', ready: true },
   evidence: [],

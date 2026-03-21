@@ -67,6 +67,24 @@ export const note_physics_2_13_1 = {
         title: "Exam Tip: Snell's Law",
         text: "Snell's Law: n₁sinθ₁=n₂sinθ₂. Light bends TOWARD normal when entering denser medium (n increases). Light bends AWAY from normal when entering less dense medium. Angles always measured from the NORMAL, not the surface."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Angles Measured from Normal, NOT from Surface",
+        text: "Critical error: Students measure angles from the surface instead of from the normal. Snell's law states: n\u2081 sin \u03b8\u2081 = n\u2082 sin \u03b8\u2082, where \u03b8 is always measured perpendicular to the boundary. Measuring from the surface gives sin(90\u00b0 \u2212 \u03b8) and produces completely wrong answers."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Refractive Index Sign Convention",
+        text: "When light enters a denser medium, it bends toward the normal (\u03b8 decreases). Memorise: denser \u2192 bend toward normal, less dense \u2192 bend away. This visual check helps catch calculation errors in exam work."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Refraction</strong> & Refractive Index' }], summaryText: '', ready: true },

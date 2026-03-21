@@ -50,7 +50,25 @@ export const note_physics_2_7_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "Potential divider: V_out = V_in × R₂/(R₁+R₂). <strong>Voltage</strong> divides in ratio of resistances. With a variable resistor: V_out varies 0 to V_in. LDR (light ↑ → R ↓) or <strong>thermistor</strong> (temp ↑ → R ↓) in divider circuit makes V_out change with environment. Loading reduces V_out — minimise by using high-impedance loads." } },
     { id: 'enr-worked-2', type: 'callout', data: { style: 'worked', title: 'Worked Example — LDR Sensor Calculation', text: 'An LDR (R₁, top) is in a potential divider with fixed R₂ = 600 Ω across V_in = 9.0 V. V_out is taken across R₂.<br><br>Dim light (R_LDR = 2 400 Ω):<br>V_out = 9.0 × 600 / (2 400 + 600) = 5 400 / 3 000 = 1.80 V<br><br>Bright light (R_LDR = 400 Ω):<br>V_out = 9.0 × 600 / (400 + 600) = 5 400 / 1 000 = 5.40 V<br><br>As light increases, R_LDR ↓ → more V_in dropped across R₂ → V_out rises. A comparator connected to V_out can switch off an artificial lamp once V_out exceeds a reference <strong>voltage</strong>, forming an automatic light controller.' } },
     { id: 'enr-worked-ev', type: 'callout', data: { style: 'worked', title: 'Real-World Application — Electric Vehicle Battery Pack', text: 'An EV battery pack: ε = 360 V, <strong>internal resistance</strong> r = 0.8 Ω. Motor load: R = 7.2 Ω.<br><br>(a) <strong>Current</strong>: I = ε / (R + r) = 360 / 8.0 = 45 A<br>(b) Terminal <strong>voltage</strong>: V = ε − Ir = 360 − (45 × 0.8) = 360 − 36 = 324 V<br>(c) Useful power to motor: P = I²R = 45² × 7.2 = 14 580 W ≈ 14.6 kW<br>(d) Total power from source: P_total = εI = 360 × 45 = 16 200 W<br>(e) Efficiency: η = 14 580 / 16 200 = 0.90 = 90%<br><br>The 10% loss (1 620 W) is dissipated as heat in <strong>internal resistance</strong> r. Minimising r is critical for maximising EV range — this drives the use of lithium-ion cells with very low r (< 0.1 Ω per cell).' } },
-    { id: 'enr-tip-2', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Potential Divider Common Pitfalls', text: 'Three classic mistakes: (1) Output across wrong resistor — re-read which component V_out is taken across; if across R₁ then V_out = V_in × R₁/(R₁+R₂). (2) Loading effect — connecting load R_L across R₂ gives effective <strong>resistance</strong> R₂R_L/(R₂+R_L) which is less than R₂, so V_out falls below the unloaded value. (3) Sensor direction — LDR as R₁ (top): more light → R₁ ↓ → V_out (across R₂) ↑. LDR as R₂: more light → R₂ ↓ → V_out ↓. Always sketch the circuit before deciding the direction of change.' } }
+    { id: 'enr-tip-2', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Potential Divider Common Pitfalls', text: 'Three classic mistakes: (1) Output across wrong resistor — re-read which component V_out is taken across; if across R₁ then V_out = V_in × R₁/(R₁+R₂). (2) Loading effect — connecting load R_L across R₂ gives effective <strong>resistance</strong> R₂R_L/(R₂+R_L) which is less than R₂, so V_out falls below the unloaded value. (3) Sensor direction — LDR as R₁ (top): more light → R₁ ↓ → V_out (across R₂) ↑. LDR as R₂: more light → R₂ ↓ → V_out ↓. Always sketch the circuit before deciding the direction of change.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Loading Effect in Potential Dividers",
+        text: "When you connect a load resistor R_L across the output of a potential divider, the effective output resistance drops and the output voltage falls below the no-load value V_out = V_in \u00d7 R\u2082/(R\u2081+R\u2082). The lower the load resistance, the greater the voltage drop. This is critical in practical applications like sensor circuits."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Recognizing Loading",
+        text: "If an exam question asks 'what happens when a load is connected?', state: (1) effective output resistance decreases, (2) output voltage decreases, (3) output current increases, (4) load current depends on load resistance."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Derive the potential divider equation V_out = V_in × R₂/(R₁+R₂).' },

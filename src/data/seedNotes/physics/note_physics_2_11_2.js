@@ -59,6 +59,24 @@ export const note_physics_2_11_2 = {
         title: 'Exam Tip: Doppler Effect',
         text: 'Doppler effect: source approaching → higher observed <strong>frequency</strong> (waves compressed). Source receding → lower observed <strong>frequency</strong> (waves stretched). Applications: police radar, weather radar, Doppler ultrasound (blood flow), galaxy recession (cosmological redshift). Formula: f_obs = f_source × v / (v ± v_source). Use minus for approaching, plus for receding.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Don't Assume Sinusoidal = Transverse",
+        text: "Both transverse and longitudinal waves can produce sinusoidal displacement-distance graphs. The difference is the direction: transverse particles vibrate perpendicular to travel direction; longitudinal particles vibrate parallel to travel direction. Read the question carefully."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Longitudinal Waves: Compressions and Rarefactions",
+        text: "Longitudinal waves (sound, P-waves) consist of regions of high pressure (compressions) alternating with low pressure (rarefactions). Wavelength \u03bb is the distance between one compression and the next compression. These waves cannot be polarized (no up-down or left-right vibration)."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Longitudinal Waves' }], summaryText: '', ready: true },

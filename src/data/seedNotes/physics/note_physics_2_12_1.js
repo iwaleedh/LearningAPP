@@ -50,6 +50,24 @@ export const note_physics_2_12_1 = {
         text: '<strong>Constructive <strong>interference</strong>:</strong> <strong>path difference</strong> = nλ (n = 0, 1, 2, …) → bright fringe / loud sound.<br/><strong>Destructive <strong>interference</strong>:</strong> <strong>path difference</strong> = (n + ½)λ → dark fringe / silence.<br/><br/><strong>Converting to <strong>phase difference</strong>:</strong> <strong>phase difference</strong> = (<strong>path difference</strong> / λ) × 360°.<br/>e.g. path diff = λ/2 → phase diff = 180° (antiphase).<br/><br/><strong>Watch out:</strong> the rules above assume sources emit <em>in phase</em>. If the two sources emit <em>in antiphase</em> (<strong>phase difference</strong> = 180° between them), reverse the rules — a <strong>path difference</strong> of nλ gives destructive <strong>interference</strong> and (n + ½)λ gives constructive <strong>interference</strong>.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Coherence is Essential for Stable Fringes",
+        text: "Two incoherent sources (like separate lamps) have random, time-varying phase differences (~10\u207b\u2078 s changes). The interference pattern shifts rapidly and appears only as uniform brightness. A laser or single source split into two paths maintains constant phase\u2014essential for stable fringes."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Phase Difference \u2194 Path Difference Link",
+        text: "Path difference of \u03bb \u2194 phase difference 360\u00b0 (2\u03c0 rad). Path difference \u03bb/2 \u2194 180\u00b0 (\u03c0 rad). General: phase diff (\u00b0) = (path diff / \u03bb) \u00d7 360\u00b0. Convert between these representations quickly for exam calculations."
+      }
     }
   ],
   recall: { enabled: true, cues: [

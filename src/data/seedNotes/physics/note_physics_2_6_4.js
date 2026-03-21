@@ -22,7 +22,25 @@ export const note_physics_2_6_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "Kirchhoff's Second Law (KVL): ΣE.M.F. = ΣV around any closed loop — conservation of energy for circuits. Energy gained per unit charge from the source equals energy lost per unit charge in resistors. For a series circuit: ε = IR₁ + IR₂ + ... Energy dissipated in time t: W = I²Rt. Check by verifying <strong>voltage</strong> drops sum to the e.m.f." }, terms: [] },
     { id: 'enr-worked-kirchhoff', type: 'callout', data: { style: 'worked', title: 'Worked Example: Loop ABCDA', text: 'Loop ABCDA: 12 V battery, R₁ = 3 Ω, R₂ = 5 Ω, R₃ = 4 Ω in series.<br/>Total R = 3 + 5 + 4 = 12 Ω. I = 12 / 12 = <strong>1 A</strong>.<br/>V_R₁ = 1 × 3 = 3 V. V_R₂ = 1 × 5 = 5 V. V_R₃ = 1 × 4 = 4 V.<br/>Sum = 3 + 5 + 4 = 12 V = battery <strong>EMF</strong> (Kirchhoff\'s 2nd law ✓).<br/>At junction: only one path → I same everywhere through series (Kirchhoff\'s 1st ✓).' }, terms: [] },
     { id: 'enr-worked-grid', type: 'callout', data: { style: 'worked', title: 'Worked Example: National Grid Power Loss', text: 'National grid transmits 1 GW at 400,000 V. Cable <strong>resistance</strong> R = 50 Ω.<br/>I = P / V = 1 × 10⁹ / 4 × 10⁵ = <strong>2500 A</strong>.<br/>Power lost = I²R = 2500² × 50 = <strong>312.5 MW</strong> (31%!).<br/>At 400 kV: even at this high <strong>voltage</strong> there is significant loss. Real grids use voltages up to 765 kV to further reduce I and minimise I²R heat losses in cables.' }, terms: [] },
-    { id: 'enr-tip-power-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Three Power Formulas', text: 'Three power formulas: <strong>P = IV = I²R = V²/R</strong>.<br/>Resistors in <strong>series</strong>: same I, so P ∝ R (most power in largest R).<br/>Resistors in <strong>parallel</strong>: same V, so P ∝ 1/R (most power in smallest R).<br/>National grid uses high V to reduce I and minimise P = I²R cable losses.' }, terms: [] }
+    { id: 'enr-tip-power-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Three Power Formulas', text: 'Three power formulas: <strong>P = IV = I²R = V²/R</strong>.<br/>Resistors in <strong>series</strong>: same I, so P ∝ R (most power in largest R).<br/>Resistors in <strong>parallel</strong>: same V, so P ∝ 1/R (most power in smallest R).<br/>National grid uses high V to reduce I and minimise P = I²R cable losses.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Kirchhoff's Second Law",
+        text: "Around any closed loop, the algebraic sum of EMF = sum of potential differences across resistors (\u03a3E = \u03a3IR). This reflects energy conservation: the energy supplied by the source equals the energy dissipated in the circuit."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Sign Convention for KVL",
+        text: "When traversing a loop, assign positive direction arbitrarily. EMF and resistor PD with the same direction as traverse are positive; opposite direction are negative. If you have an error, the negative result tells you current flows backwards."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: "State Kirchhoff's Second Law. What physical principle does it express?" },

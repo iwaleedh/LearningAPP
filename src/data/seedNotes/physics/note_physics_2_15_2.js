@@ -25,6 +25,24 @@ export const note_physics_2_15_2 = {
     { id: 'enr-svg-1', type: 'svg', data: { caption: 'Electron accelerated from rest through potential difference V — work done on electron = eV = ½mv²', svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 240">  <text x="250" y="22" fill="#1e293b" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">Electron Accelerated Through Potential Difference</text>  <rect x="70" y="45" width="14" height="130" fill="#475569" rx="2"/>  <text x="77" y="192" fill="#475569" font-family="sans-serif" font-size="20" text-anchor="middle">−</text>  <rect x="416" y="45" width="14" height="130" fill="#475569" rx="2"/>  <text x="423" y="192" fill="#475569" font-family="sans-serif" font-size="20" text-anchor="middle">+</text>  <circle cx="130" cy="110" r="14" fill="#3b82f6"/>  <text x="130" y="115" fill="#1e293b" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="bold">e⁻</text>  <text x="130" y="146" fill="#3b82f6" font-family="sans-serif" font-size="11" text-anchor="middle">u = 0</text>  <line x1="148" y1="110" x2="356" y2="110" stroke="#ef4444" stroke-width="2.5"/>  <polygon points="352,105 363,110 352,115" fill="#ef4444"/>  <circle cx="390" cy="110" r="14" fill="#3b82f6"/>  <text x="390" y="115" fill="#1e293b" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="bold">e⁻</text>  <text x="390" y="146" fill="#3b82f6" font-family="sans-serif" font-size="11" text-anchor="middle">KE = eV</text>  <text x="250" y="80" fill="#10b981" font-family="sans-serif" font-size="13" text-anchor="middle">Work done = QV = eV</text>  <text x="250" y="170" fill="#10b981" font-family="sans-serif" font-size="13" text-anchor="middle">½mv² = eV  →  v = √(2eV/m)</text>  <line x1="88" y1="210" x2="412" y2="210" stroke="#6366f1" stroke-width="1.5"/>  <polygon points="83,207 83,213 88,210" fill="#6366f1"/>  <polygon points="417,207 417,213 412,210" fill="#6366f1"/>  <text x="250" y="228" fill="#6366f1" font-family="sans-serif" font-size="13" text-anchor="middle">Accelerating Voltage V</text></svg>' }, terms: [] },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Speed of an Accelerated Electron', text: 'An electron is accelerated from rest through a <strong>potential difference</strong> of 500 V. Calculate its speed. (m<sub>e</sub> = 9.11 × 10⁻³¹ kg, e = 1.60 × 10⁻¹⁹ C)<br/><br/>Step 1: Energy gained = eV = 1.60 × 10⁻¹⁹ × 500 = 8.00 × 10⁻¹⁷ J<br/>Step 2: Set equal to kinetic energy: ½mv² = 8.00 × 10⁻¹⁷<br/>Step 3: v² = 2 × 8.00 × 10⁻¹⁷ / 9.11 × 10⁻³¹ = 1.757 × 10¹⁴ m² s⁻²<br/>Step 4: v = √(1.757 × 10¹⁴) = <strong>1.33 × 10⁷ m s⁻¹</strong> (≈ 4% of the speed of light)' }, terms: [] },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: eV and the Kinetic Energy Equation', text: 'When a question gives an accelerating <strong>voltage</strong> V, the kinetic energy gained by an electron is simply V electronvolts — so <strong>eV = ½mv²</strong> is your go-to equation. Multiply eV by 1.6 × 10⁻¹⁹ to convert to joules before substituting into ½mv². Sanity check: the speed must always be less than 3 × 10⁸ m s⁻¹; if it is not, you have converted in the wrong direction.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Unit Conversion Direction: eV is SMALLER Unit than J",
+        text: "1 eV = 1.6 \u00d7 10\u207b\u00b9\u2079 J. Since eV is a much smaller unit, the same energy expressed in eV will be a LARGER number than in joules. Example: 3.2 \u00d7 10\u207b\u00b9\u2079 J = 2 eV. If your converted answer is smaller in eV than in J, you've converted backwards. Always sanity-check the magnitude."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Check Consistent Units in Photoelectric Equation",
+        text: "In hf = \u03a6 + KE_max, ALL terms must be in the same units. If \u03a6 is given in eV (typical for data sheets), convert to joules: \u03a6 (in J) = [\u03a6 in eV] \u00d7 1.6 \u00d7 10\u207b\u00b9\u2079. Then substitute all values in joules. Mixing units (e.g., hf in joules but \u03a6 in eV) is a common exam error producing completely wrong answers."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise The Electronvolt' }], summaryText: '', ready: true },
   evidence: [],

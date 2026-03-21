@@ -41,6 +41,24 @@ export const note_physics_2_15_4 = {
         text: 'Unique line spectra = elemental fingerprint. Astronomers identify star composition from absorption lines — the cooler outer gas absorbs at exactly the same frequencies it would emit.\n\nKey equation: E = hf = ΔE between levels.\n\nDiscrete lines prove energy levels are quantised — this directly contradicts classical physics, which predicts a continuous spectrum as electrons could lose energy by any amount.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Line Spectrum is the Elemental Fingerprint",
+        text: "Each element has a unique set of energy levels, producing a unique emission line spectrum. Astronomers identify star composition by observing absorption lines (cooler outer gas absorbs at the same frequencies it would emit). The same set of wavelengths appears in both emission and absorption spectra \u2014 just complementary patterns (bright lines vs dark lines)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Discrete Lines Prove Energy Levels Are Quantised",
+        text: "If electrons could lose energy by any amount (classical prediction), we'd observe a continuous spectrum. Instead, we see discrete lines corresponding to specific transitions between quantised energy levels. This DIRECTLY CONTRADICTS classical physics. Each line's frequency satisfies: f = \u0394E / h, where \u0394E is the energy gap between two specific levels. Discrete lines = quantisation."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Atomic Line Spectra' }], summaryText: '', ready: true },
   evidence: [],

@@ -98,6 +98,24 @@ export const note_physics_2_11_1 = {
         title: 'Exam Tip: Longitudinal vs Transverse',
         text: 'Longitudinal waves: compressions/rarefactions, displacement parallel to travel direction. Cannot be polarised (only transverse waves can be polarised). Sound is longitudinal — cannot travel in vacuum (needs medium to compress). EM waves are transverse — can travel in vacuum.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Wave Equation Relationships",
+        text: "v = f\u03bb links wave speed, frequency, and wavelength. For constant wave speed: if f \u2191 then \u03bb \u2193 (inverse relationship). This applies to all waves \u2014 light, sound, water, radio \u2014 in any medium."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Unit Conversion in Wave Equation",
+        text: "Convert all quantities to SI before substitution: frequency in Hz, wavelength in m, wave speed in m/s. A common error: 100 cm/s is NOT 100 m/s; it is 1 m/s. Missing this converts the answer by a factor of 100."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise The Wave Equation' }], summaryText: '', ready: true },

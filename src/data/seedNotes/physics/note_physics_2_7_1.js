@@ -49,6 +49,24 @@ export const note_physics_2_7_1 = {
     { id: 'enr-worked-bulb', type: 'callout', data: { style: 'worked', title: 'Worked Example: Tungsten Filament Bulb', text: 'Tungsten filament: at room temp R≈10Ω. At operating temp ~2700°C: R≈110Ω. <strong>Resistance</strong> increased 11×. At switch-on (cold): surge <strong>current</strong> = 230/10 = 23A. At steady state: 230/110 = 2.1A. This is why bulbs usually fail at switch-on — maximum thermal stress at that moment.' } },
     { id: 'enr-worked-thermistor', type: 'callout', data: { style: 'worked', title: 'Worked Example: NTC <strong>Thermistor</strong>', text: 'NTC <strong>thermistor</strong>: at 0°C R=47kΩ, at 25°C R=10kΩ, at 50°C R=3.4kΩ. Large R variation with temperature makes it useful as medical temperature probe, thermostat sensor, car engine management, phone battery temperature monitoring. Opposite of metals: semiconductor R decreases with temperature.' } },
     { id: 'enr-tip-temp-resistance', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Temperature & <strong>Resistance</strong>', text: 'Exam tip: Metal <strong>resistance</strong> increases with temperature (ions vibrate more, more collisions with electrons). Semiconductor (NTC <strong>thermistor</strong>) <strong>resistance</strong> decreases with temperature (more charge carriers excited). LDR: <strong>resistance</strong> decreases with light <strong>intensity</strong> (<strong>photons</strong> free electrons). Know all three for 6-mark explain questions.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Core Practical: Measure diameter many times",
+        text: "To find the wire diameter, measure at least 5\u201310 positions along the wire using a micrometer. Take the mean to reduce random error. A single measurement of diameter introduces large systematic error into R = \u03c1L/A because resistance depends on A = \u03c0d\u00b2/4 (error in d is squared in the error for A)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Avoid Heating the Wire",
+        text: "The wire's resistance changes with temperature: \u0394R/\u0394T \u2248 \u03b1 \u00d7 R\u2080. Heating from the current measurement itself causes R to drift, throwing off the experiment. Use moderate current and record readings quickly."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Core Practical 2: Investigating <strong>Resistivity</strong>' }], summaryText: '', ready: true },
   evidence: [],

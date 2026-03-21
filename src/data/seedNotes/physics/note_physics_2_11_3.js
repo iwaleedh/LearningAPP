@@ -84,6 +84,24 @@ export const note_physics_2_11_3 = {
         title: "Exam tip: Transverse waves and <strong>polarisation</strong>",
         text: "Exam tip: Only transverse waves can be polarised — this is the key experimental evidence that light is a transverse wave. If a question asks you to distinguish transverse from longitudinal waves, state that transverse waves oscillate perpendicular to the direction of energy transfer, whereas longitudinal waves oscillate parallel to it. Also remember: a displacement–distance graph shows a snapshot of the whole wave at one instant, while a displacement–time graph shows how a single point on the wave moves over time. Don't confuse <strong>wavelength</strong> (read from a displacement–distance graph) with period (read from a displacement–time graph)."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Transverse Wave Definition",
+        text: "Particles vibrate perpendicular to the direction of wave travel (energy transfer). Shows crests (peaks) and troughs (valleys). Examples: light, water waves, guitar strings. Transverse waves CAN be polarized by passing through a filter."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Distinguishing Wave Types on Graphs",
+        text: "Displacement-distance graph (snapshot): read amplitude A and wavelength \u03bb directly. Displacement-time graph: read amplitude A and period T directly. Calculate frequency from f = 1/T. Both graphs look identical but measure different things\u2014the axis label is your clue."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Transverse Waves' }], summaryText: '', ready: true },

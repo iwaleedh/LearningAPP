@@ -101,6 +101,24 @@ export const note_physics_2_13_12 = {
         title: "Exam Tip — Inverse Square Law & <strong>Amplitude</strong>",
         text: "Don't confuse the two <strong>intensity</strong> relationships:\n• <strong>I ∝ 1/r²</strong> — <strong>intensity</strong> vs <em>distance</em> from a point source (inverse square)\n• <strong>I ∝ A²</strong> — <strong>intensity</strong> vs <em><strong>amplitude</strong></em> (direct square)\n\nIn exam questions involving 'the same wave at twice the distance', use I ∝ 1/r².\nIn questions involving '<strong>amplitude</strong> halved', use I ∝ A² → <strong>intensity</strong> becomes ¼.\n\n<strong>Key phrase to spot:</strong> 'point source' → inverse square law applies."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Polarisation Reduces Intensity",
+        text: "When unpolarised light passes through a polariser, the transmitted intensity is half the incident intensity (I_transmitted = I_incident / 2). When polarised light passes through an analyser at angle \u03b8 to the polarisation direction, use Malus's law: I = I\u2080 cos\u00b2 \u03b8."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Malus's Law: Angle Between Polarisation Directions",
+        text: "In I = I\u2080 cos\u00b2 \u03b8, the angle \u03b8 must be measured between the polarisation direction of the incident light and the axis of the analyser. If two polarisers are at 90\u00b0 to each other, NO light passes (I = 0). This is a common exam setup \u2014 always identify the angle carefully."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Plane <strong>Polarisation</strong>' }], summaryText: '', ready: true },

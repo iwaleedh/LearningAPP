@@ -55,6 +55,24 @@ export const note_physics_2_7_0 = {
         text: "<strong>Resistivity</strong> ρ is a MATERIAL property (not geometry). R depends on both material (ρ) and dimensions (L, A).\n\n• Units of ρ: Ω·m\n• Area A = πr² = πd²/4. When d is given, remember r = d/2.\n• ρ increases with temperature for metals (more ion vibration → more collisions).\n• ρ decreases with temperature for semiconductors (more charge carriers are released).\n• R = ρL/A: doubling L doubles R; doubling r quadruples A, so R is quartered."
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Resistivity Formula",
+        text: "R = \u03c1L/A: a longer wire has more resistance (R \u221d L), while a thicker wire has less (R \u221d 1/A). Resistivity \u03c1 depends only on the material and temperature, not on the wire's dimensions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Unit Check",
+        text: "\u03c1 is in \u03a9\u00b7m, L in m, A in m\u00b2. Check: (\u03a9\u00b7m \u00d7 m) / m\u00b2 = \u03a9 \u2713. A common error is forgetting to square the radius when converting diameter to area."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Electrical <strong>Resistivity</strong>' }], summaryText: '', ready: true },
   evidence: [],

@@ -50,6 +50,24 @@ export const note_physics_2_12_4 = {
         text: "A common exam trap is miscounting <strong>nodes</strong> and <strong>antinodes</strong>. Use this rule: for the nth harmonic on a string fixed at both ends, there are (n + 1) <strong>nodes</strong> and n <strong>antinodes</strong>. For the fundamental (n = 1): 2 <strong>nodes</strong>, 1 <strong>antinode</strong>. For n = 3: 4 <strong>nodes</strong>, 3 <strong>antinodes</strong>. You can also spot the harmonic number instantly — it equals the number of <strong>antinodes</strong> (or 'loops') you see in the pattern. When asked to describe a <strong>stationary wave</strong> pattern, always state: (1) the positions of <strong>nodes</strong> and <strong>antinodes</strong>, (2) that <strong>nodes</strong> are points of zero <strong>amplitude</strong>, and (3) that adjacent <strong>antinodes</strong> are 180° out of phase with each other."
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Filament Lamp Cannot Produce Stable Fringes",
+        text: "A filament lamp emits light from millions of independent atoms, each emitting brief random-phase wave trains. The phase difference changes every ~10\u207b\u2078 seconds, causing the interference pattern to shift too fast to see\u2014only uniform brightness is observed. Use a laser instead."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Core Practical 7: Identifying Harmonics",
+        text: "Drive the string with an oscillator at varying frequency. When frequency matches a natural (harmonic) frequency, a stable standing-wave pattern appears. Fundamental shows 1 antinode (2 nodes); second harmonic shows 2 antinodes (3 nodes); nth harmonic shows n antinodes (n+1 nodes). Count the loops to identify the harmonic number."
+      }
     }
   ],
   recall: { enabled: true, cues: [

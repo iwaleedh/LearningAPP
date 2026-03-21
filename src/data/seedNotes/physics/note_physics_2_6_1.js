@@ -25,7 +25,25 @@ export const note_physics_2_6_1 = {
     { id: 'svg-real-2_826515', type: 'svg', data: { svg: '<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="250" fill="#0f172a"/><path d="M 50 150 L 150 150" stroke="#212529" stroke-width="3" fill="none"/><rect x="150" y="130" width="100" height="40" fill="#1e293b" stroke="#495057" stroke-width="3"/><path d="M 250 150 L 350 150" stroke="#212529" stroke-width="3" fill="none"/><path d="M 100 150 L 100 80 L 170 80" stroke="#339af0" stroke-width="3" fill="none"/><circle cx="200" cy="80" r="30" fill="#1c3a64" stroke="#1864ab" stroke-width="3"/><text x="200" y="88" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1864ab" text-anchor="middle">V</text><path d="M 230 80 L 300 80 L 300 150" stroke="#339af0" stroke-width="3" fill="none"/><text x="200" y="210" font-family="sans-serif" font-size="16" fill="#343a40" text-anchor="middle">Voltmeter in Parallel</text><circle cx="100" cy="150" r="4" fill="#212529"/><circle cx="300" cy="150" r="4" fill="#212529"/></svg>', caption: "Voltmeter in Parallel" }, terms: [] },
     { id: 'enr-worked-pd', type: 'callout', data: { style: 'worked', title: 'Worked Example: Energy Transferred in Phone Charging', text: '<strong>Potential difference</strong> definition:</strong> 1 V = 1 J/C &mdash; every coulomb of charge carries 1 joule of energy.<br/><strong>Problem:</strong> A phone battery at 3.7 V moves 12,960 C of charge (from the <strong>current</strong> topic).<br/><strong>Step 1:</strong> Equation: W = QV.<br/><strong>Step 2:</strong> Substitute: W = 12,960 &times; 3.7 = <strong>47,952 J &asymp; 48 kJ</strong>.<br/>This energy came from chemical reactions in the lithium cells &mdash; converted to electrical energy to charge the phone battery.' }, terms: [] },
     { id: 'enr-worked-ohm', type: 'callout', data: { style: 'worked', title: 'Worked Example: Toaster Heating Element', text: 'A toaster operates from the 230 V mains and draws 10 A <strong>current</strong>. Find the <strong>resistance</strong> and power.<br/><strong>Step 1:</strong> R = V/I = 230 &divide; 10 = <strong>23 &#x2126;</strong>.<br/><strong>Step 2:</strong> P = VI = 230 &times; 10 = <strong>2300 W</strong>.<br/>The heating element designer chooses wire gauge and length to achieve this exact <strong>resistance</strong>. Nichrome wire (&asymp;1.1 &#x2126;/m for 1 mm diameter) is standard for heating elements. Too high R &rarr; lower I &rarr; less heat generated.' }, terms: [] },
-    { id: 'enr-tip-ohm', type: 'callout', data: { style: 'tip', title: "Exam Tip: <strong>Ohm's Law</strong> & V-I Graphs", text: "<strong>Ohm's Law</strong> <strong>V = IR</strong> only applies to <strong>ohmic conductors</strong> (constant R, does not heat significantly).<br/>&bull; <strong>V-I graph for ohmic conductor:</strong> straight line through origin. Gradient = R (if V is y-axis) or 1/R (if I is y-axis).<br/>&bull; <strong>Filament lamp:</strong> V-I graph curves &mdash; <strong>resistance</strong> increases as temperature rises (non-ohmic).<br/>&bull; <strong>Diode</strong>:</strong> conducts in one direction only &mdash; highly non-ohmic. Never apply V = IR blindly to non-ohmic components." }, terms: [] }
+    { id: 'enr-tip-ohm', type: 'callout', data: { style: 'tip', title: "Exam Tip: <strong>Ohm's Law</strong> & V-I Graphs", text: "<strong>Ohm's Law</strong> <strong>V = IR</strong> only applies to <strong>ohmic conductors</strong> (constant R, does not heat significantly).<br/>&bull; <strong>V-I graph for ohmic conductor:</strong> straight line through origin. Gradient = R (if V is y-axis) or 1/R (if I is y-axis).<br/>&bull; <strong>Filament lamp:</strong> V-I graph curves &mdash; <strong>resistance</strong> increases as temperature rises (non-ohmic).<br/>&bull; <strong>Diode</strong>:</strong> conducts in one direction only &mdash; highly non-ohmic. Never apply V = IR blindly to non-ohmic components." }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Misconception: Voltage is Not Consumed",
+        text: "Voltage measures energy per coulomb, not a quantity that gets 'used up' by components. Each coulomb of charge experiences the potential difference, but charge is not consumed."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Measuring Voltage: Exam Tip",
+        text: "Voltmeters must be connected in parallel, not series like ammeters. A voltmeter has very high resistance to draw minimal current from the circuit."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Potential Difference</strong>' }], summaryText: '', ready: true },
   evidence: [],

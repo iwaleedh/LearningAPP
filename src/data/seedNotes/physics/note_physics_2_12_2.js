@@ -117,6 +117,24 @@ export const note_physics_2_12_2 = {
         text: "Key facts examiners test:<br/>(1) <strong>Nodes</strong> = points of permanently zero displacement — the two superposing waves always cancel here.<br/>(2) <strong>Antinodes</strong> = points of maximum displacement <strong>amplitude</strong>.<br/>(3) Adjacent <strong>nodes</strong> are separated by <strong>λ/2</strong>.<br/>(4) All points <em>between</em> two adjacent <strong>nodes</strong> vibrate <strong>in phase</strong>; points on <em>opposite sides</em> of a <strong>node</strong> vibrate in <strong>antiphase</strong> (<strong>phase difference</strong> = π rad).<br/>(5) Unlike a progressive wave, a <strong>stationary wave</strong> causes <strong>no net energy transfer</strong> — energy is stored in the pattern, not transported."
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Stationary Waves Do NOT Transfer Energy",
+        text: "A progressive wave carries energy along the direction of travel. A stationary wave stores energy in the oscillating medium between nodes but transfers zero net energy along the wire \u2014 it is a resonance phenomenon, not propagation."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Nodes and Antinodes",
+        text: "Nodes: points of zero vibration (always); antinodes: points of maximum vibration (always). In a standing wave, nodes and antinodes remain fixed in space (do not move left-right). This contrasts with a progressive wave where all particles vibrate with the same amplitude."
+      }
     }
   ],
   recall: { enabled: true, cues: [

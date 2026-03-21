@@ -53,6 +53,24 @@ export const note_physics_2_12_3 = {
         text: 'Exam questions often supply <strong>two different lengths</strong>: the <strong>total string length</strong> (used to calculate μ = m / L<sub>total</sub>) and a shorter <strong>vibrating length L</strong> (the distance between the two fixed supports, used in f₁ = v / 2L). Using the wrong length in the wrong formula is the most common error. Always label which length is which before substituting. Also remember: <em>v = √(T/μ) gives the wave speed regardless of L</em> — L only enters when you calculate <strong>frequency</strong> from f = v / λ.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Total Length vs Vibrating Length",
+        text: "When calculating \u03bc = m/L, use the total string length (or wire reel length). When calculating fundamental frequency f\u2081 = v/(2L), use the vibrating length (distance between fixed supports)\u2014a common exam trap is using the wrong length in the wrong place."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Fundamental Frequency Formula",
+        text: "f\u2081 = (1/2L)\u221a(T/\u03bc). Increasing tension T \u2192 higher f\u2081. Increasing length L \u2192 lower f\u2081. Increasing linear density \u03bc (thicker string) \u2192 lower f\u2081. These dependencies explain why tightening a guitar string raises pitch and why thick bass strings are lower than thin treble strings."
+      }
     }
   ],
   recall: { enabled: true, cues: [

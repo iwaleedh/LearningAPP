@@ -52,7 +52,25 @@ export const note_physics_2_13_6 = {
     { id: 'summary-1', type: 'summary', data: { text: "Three principal rays: (1) parallel to axis → through F on far side; (2) through optical centre → straight through; (3) through near F → emerges parallel. Converging lens: object beyond F → real, inverted image; object inside F → virtual, upright, magnified image. Diverging lens: always virtual, upright, diminished image. Real images form where rays actually cross; virtual images form where backward extensions cross." } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Ray Diagram for Object Between F and 2F', text: 'A converging lens has focal length f = 15 cm. An object 4 cm tall is placed 24 cm from the lens (between F at 15 cm and 2F at 30 cm).<br/>Step 1: Predict the image — object between F and 2F gives a real, inverted, magnified image beyond 2F on the far side.<br/>Step 2: Draw Ray 1 from the object tip, parallel to the principal axis → refracts through the far focal point F.<br/>Step 3: Draw Ray 2 from the object tip through the optical centre O → continues straight through, undeviated.<br/>Step 4: Rays 1 and 2 cross beyond 2F on the far side — this crossing point is the image tip. Drop a perpendicular to the axis for the image arrow.<br/>Conclusion: Image is <strong>real</strong>, <strong>inverted</strong>, <strong>magnified</strong>. Application: a film projector places the slide just outside F, producing a large real image on a distant screen.' } },
     { id: 'enr-worked-2', type: 'callout', data: { style: 'worked', title: 'Real-World Application: Camera, Human Eye, and LASIK Surgery', text: 'All exploit the converging lens forming a real inverted image when the object is beyond F.<br/><strong>Camera:</strong> Subject (far beyond 2F) gives a real, inverted, diminished image on the sensor. A standard 50 mm lens has 2F ≈ 100 mm — any subject further than 10 cm yields a real image on the sensor.<br/><strong>Human eye:</strong> Cornea (P ≈ +43 D) and adjustable lens (P ≈ +15 D) together focus a real, inverted image on the retina. Ciliary muscles alter lens curvature to accommodate near and far objects. The brain processes the image upright.<br/><strong>LASIK surgery:</strong> A laser ablates corneal tissue to flatten it, reducing its converging power and shifting the focal point onto the retina — correcting myopia without spectacles, by reducing the curvature of the front surface.<br/><strong>Telescope eyepiece:</strong> Acts as a magnifying glass — the intermediate image falls just inside the eyepiece focal length, giving a virtual, upright, magnified final image for the observer.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Describing Images Fully', text: 'Every image answer typically needs all four properties: (1) real or virtual, (2) upright or inverted, (3) magnified / same size / diminished, (4) approximate position relative to F or 2F. Missing any one property costs marks. Memory check: a diverging lens <em>always</em> gives virtual, upright, diminished — no exceptions regardless of object position. A converging lens with object inside F gives virtual, upright, magnified (magnifying glass case). Quick test — if the image forms on the same side as the object, it is always virtual.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Describing Images Fully', text: 'Every image answer typically needs all four properties: (1) real or virtual, (2) upright or inverted, (3) magnified / same size / diminished, (4) approximate position relative to F or 2F. Missing any one property costs marks. Memory check: a diverging lens <em>always</em> gives virtual, upright, diminished — no exceptions regardless of object position. A converging lens with object inside F gives virtual, upright, magnified (magnifying glass case). Quick test — if the image forms on the same side as the object, it is always virtual.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Ray Diagram: Draw from Object Tip, Not Object Base",
+        text: "Always draw the three principal rays starting from the TIP of the object (not the base). The three rays are: (1) parallel to axis through F, (2) through optical centre O straight, (3) through F emerging parallel. The intersection of these rays marks the image tip position."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Minimum 3 Rays Required in Exam",
+        text: "Examiners require at least three principal rays to award full marks for a ray diagram. Two rays are insufficient. All three rays must be clearly drawn, labelled, and intersect at a single image point (or appear to originate from one point for virtual images)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'State the three principal ray rules for constructing a ray diagram through a converging lens.' },

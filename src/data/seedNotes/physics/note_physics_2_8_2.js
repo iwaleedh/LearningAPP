@@ -33,7 +33,25 @@ export const note_physics_2_8_2 = {
     { id: 'summary-1', type: 'summary', data: { text: "E.M.F. (ε): total energy per coulomb from the source. Terminal PD (V = ε − Ir): energy per coulomb delivered to the external circuit. Lost volts (Ir): energy per coulomb dissipated inside the cell. Open circuit: V = ε. Closed circuit: V < ε. Circuit equation: ε = I(R + r); I = ε/(R + r). Measure e.m.f. with a high-<strong>resistance</strong> voltmeter on open circuit." }, terms: [] },
     { id: 'enr-worked-cells', type: 'callout', data: { style: 'worked', title: 'Worked Example: Cells in Series vs Parallel', text: 'Two AA cells (ε = 1.5 V, r = 0.5 Ω each) in <strong>series</strong>: total <strong>EMF</strong> = 3.0 V, total r = 1.0 Ω. With R = 5 Ω: I = 3.0/6.0 = 0.5 A. Terminal PD = 3.0 − 0.5 × 1 = 2.5 V.<br/>In <strong>parallel</strong>: <strong>EMF</strong> = 1.5 V, r = 0.25 Ω. With R = 5 Ω: I = 1.5/5.25 = 0.286 A, terminal PD = 1.43 V.<br/>Use <strong>series</strong> for higher <strong>voltage</strong>; use <strong>parallel</strong> for lower <strong>internal resistance</strong> and higher <strong>current</strong>.' }, terms: [] },
     { id: 'enr-worked-ev', type: 'callout', data: { style: 'worked', title: 'Real-World Example: EV Battery Pack', text: 'Tesla Model 3 battery: ~100 lithium cells in series (each ~3.7 V). Total <strong>EMF</strong> = 370 V, total r ≈ 0.1 Ω. At full power 200 A: lost volts = 200 × 0.1 = 20 V, terminal <strong>voltage</strong> = 350 V, output power = 350 × 200 = 70 kW.<br/>Battery management system prevents excessive <strong>current</strong> draw to protect cells from overheating.' }, terms: [] },
-    { id: 'enr-tip-cells', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Series vs Parallel Cells', text: '<strong>Cells in series:</strong> <strong>EMF</strong><sub>total</sub> = sum of EMFs; r<sub>total</sub> = sum of internal resistances.<br/><strong>Cells in parallel (n identical):</strong> <strong>EMF</strong><sub>total</sub> = same as one cell; r<sub>total</sub> = r/n.<br/>Use <strong>series</strong> for higher <strong>EMF</strong> (e.g. car battery — 6 cells). Use <strong>parallel</strong> to reduce <strong>internal resistance</strong> (e.g. solar cell arrays).' }, terms: [] }
+    { id: 'enr-tip-cells', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Series vs Parallel Cells', text: '<strong>Cells in series:</strong> <strong>EMF</strong><sub>total</sub> = sum of EMFs; r<sub>total</sub> = sum of internal resistances.<br/><strong>Cells in parallel (n identical):</strong> <strong>EMF</strong><sub>total</sub> = same as one cell; r<sub>total</sub> = r/n.<br/>Use <strong>series</strong> for higher <strong>EMF</strong> (e.g. car battery — 6 cells). Use <strong>parallel</strong> to reduce <strong>internal resistance</strong> (e.g. solar cell arrays).' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "EMF \u2260 Terminal PD When Current Flows",
+        text: "Terminal potential difference V = \u03b5 \u2212 Ir is always less than EMF when current flows (lost volts = Ir). As current increases, terminal PD decreases linearly. A 1.5 V cell on open circuit has \u03b5 = 1.5 V, but when drawing current it shows V < 1.5 V."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Calculating Lost Volts",
+        text: "Lost volts = Ir = I \u00d7 internal resistance. This energy is dissipated as heat inside the battery (wasted as thermal energy). The external circuit receives energy at rate P = IV = I(\u03b5 \u2212 Ir) = I\u03b5 \u2212 I\u00b2r."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: 'What is terminal <strong>potential difference</strong> and how does it differ from e.m.f.?' },

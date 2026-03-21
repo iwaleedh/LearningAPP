@@ -42,6 +42,24 @@ export const note_physics_2_14_0 = {
         text: '<ul><li><strong>Diffraction</strong> is most noticeable when <strong>gap width ≈ <strong>wavelength</strong>.</li><li><strong>Narrower gap → wider spreading</strong> of diffracted waves.</li><li><strong>Longer <strong>wavelength</strong> → more <strong>diffraction</strong> for a given gap.</li><li>All waves diffract: sound, light, water, microwaves, radio waves.</li><li><strong>Diffraction</strong> explains why sound bends round corners, radio waves penetrate buildings, and optical instruments have a <em>resolution limit</em> (Rayleigh criterion).</li></ul>'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Diffraction is Significant When Gap \u2248 Wavelength",
+        text: "Diffraction only becomes noticeable when the gap size is comparable to the wavelength: gap \u2248 \u03bb or smaller. Ultrasound (\u03bb \u2248 mm) diffracts around small obstacles, but visible light (\u03bb \u2248 500 nm) diffracts only through narrow slits. Always compare the physical dimension to wavelength."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Diffraction Does NOT Change Frequency",
+        text: "Key distinction: diffraction spreads waves, BUT the frequency stays constant. If you measure the diffracted waves, they have the same frequency as the incident wave, but their direction and amplitude change. Wavelength and speed adjust to maintain f = v/\u03bb."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Diffraction</strong>' }], summaryText: '', ready: true },
   evidence: [],

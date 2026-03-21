@@ -49,7 +49,25 @@ export const note_physics_2_6_6 = {
     { id: 'summary-1', type: 'summary', data: { text: "Electrical power P = IV = I²R = V²/R (unit: W = J/s). Choose the formula to match the given quantities. Energy W = Pt = IVt = I²Rt = V²t/R (joules). In series: P ∝ R (larger R dissipates more). In parallel: P ∝ 1/R (smaller R dissipates more). Practical unit: 1 kWh = 3.6 MJ." } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Real-World Application: Electric Kettle', text: 'A 2200 W kettle operates on the 230 V mains. (a) Find the <strong>current</strong> drawn: P = IV → I = P/V = 2200/230 = 9.57 A. (b) Find the <strong>resistance</strong> of the heating element: R = V/I = 230/9.57 = 24.0 Ω, or using R = V²/P = 230²/2200 = 24.0 Ω ✓. (c) Energy used in 3 minutes: W = Pt = 2200 × 180 = 396 000 J = 396 kJ. (d) Cost at 30p per kWh: energy = 2.2 × (3/60) = 0.11 kWh; cost = 0.11 × 30 = 3.3p. Real-world context: ovens, hair dryers, and immersion heaters all exploit I²R heating in a resistive element. High-power appliances have low <strong>resistance</strong> so they draw large currents at mains <strong>voltage</strong>.' } },
     { id: 'enr-worked-2', type: 'callout', data: { style: 'worked', title: 'Physics Application: Series vs Parallel Power Dissipation', text: 'R₁ = 6 Ω and R₂ = 3 Ω connected to a 12 V supply. Compare power dissipated in each configuration. IN SERIES (same <strong>current</strong> I throughout): total R = 9 Ω; I = 12/9 = 1.33 A. P₁ = I²R₁ = 1.33² × 6 = 10.7 W. P₂ = I²R₂ = 1.33² × 3 = 5.3 W → larger R dissipates more power. IN PARALLEL (same PD V = 12 V across each): P₁ = V²/R₁ = 144/6 = 24.0 W. P₂ = V²/R₂ = 144/3 = 48.0 W → smaller R dissipates more power (double). Real-world implication: household appliances are wired in parallel so each receives the full 230 V. A 2 kW heater has a much lower <strong>resistance</strong> (≈ 26 Ω) than a 60 W lamp (≈ 880 Ω).' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Formula Selection and Series/Parallel Power', text: 'Match the formula to the given quantities: P = IV when both I and V are known; P = I²R when I and R are known (avoids finding V first); P = V²/R when V and R are known (avoids finding I first). Most common error: using the total supply <strong>voltage</strong> instead of the PD across a single component in a series circuit. Key contrast to memorise — in series: larger R receives more power (P = I²R, same I); in parallel: smaller R receives more power (P = V²/R, same V). These two results are exact opposites.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Formula Selection and Series/Parallel Power', text: 'Match the formula to the given quantities: P = IV when both I and V are known; P = I²R when I and R are known (avoids finding V first); P = V²/R when V and R are known (avoids finding I first). Most common error: using the total supply <strong>voltage</strong> instead of the PD across a single component in a series circuit. Key contrast to memorise — in series: larger R receives more power (P = I²R, same I); in parallel: smaller R receives more power (P = V²/R, same V). These two results are exact opposites.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Three Power Formulas",
+        text: "P = IV (most general); P = I\u00b2R (for resistive losses); P = V\u00b2/R (for voltage-limited supplies). Choose based on what you know. Check units always produce watts (J/s)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Selecting the Right Formula",
+        text: "If you know current and resistance \u2192 P = I\u00b2R. If you know voltage and current \u2192 P = IV. If you know voltage and resistance \u2192 P = V\u00b2/R. Never guess \u2014 the correct formula depends on which quantities are given."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Derive P = I²R and P = V²/R from P = IV and V = IR.' },

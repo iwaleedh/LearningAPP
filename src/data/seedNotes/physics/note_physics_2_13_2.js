@@ -83,6 +83,24 @@ export const note_physics_2_13_2 = {
         title: "Exam Tip: Total Internal <strong>Reflection</strong>",
         text: "TIR occurs ONLY when: (1) light travels from DENSE to LESS DENSE medium, AND (2) angle of incidence &gt; critical angle θc. sinθc = n₂/n₁ = 1/n for glass–air boundary. Applications: fibre optic cables, periscope prisms, endoscopes, diamond sparkle."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Critical Angle Only at Denser\u2192Less Dense Boundary",
+        text: "Critical angle ONLY exists when light travels from a denser to a less dense medium (higher n to lower n). If light enters a denser medium, total internal reflection is impossible \u2014 refraction always occurs. Watch for exam tricks using this."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Define Critical Angle Correctly",
+        text: "The critical angle \u03b8c is the angle of incidence at which the angle of refraction equals 90\u00b0. When \u03b8\u1d62 > \u03b8c, total internal reflection occurs. Use sin \u03b8c = n\u2082/n\u2081 (less dense/more dense)."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Critical Angle' }], summaryText: '', ready: true },

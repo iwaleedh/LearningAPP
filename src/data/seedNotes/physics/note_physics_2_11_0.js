@@ -71,6 +71,24 @@ export const note_physics_2_11_0 = {
         title: 'Exam Tip',
         text: 'v = fλ always applies. For a given medium, v is fixed (depends on medium, not source). Changing <strong>frequency</strong> → <strong>wavelength</strong> changes proportionally. Light in vacuum: v = 3 × 10⁸ m/s (constant for all frequencies). Sound in air: v ≈ 340 m/s. Remember: period T = 1/f.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Wave Properties: Five Key Definitions",
+        text: "Frequency f (Hz) is cycles per second. Period T (s) relates to frequency: T = 1/f. Wavelength \u03bb (m) is distance between identical points (crest to crest). Amplitude A (m) is maximum displacement. Wave speed c (m/s) is distance traveled per second \u2014 NOT the same as particle velocity."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Unit Conversion for Frequency",
+        text: "Always convert period from milliseconds (ms) or microseconds (\u03bcs) to seconds (s) before calculating frequency: f = 1/T. A period of 2 ms = 2 \u00d7 10\u207b\u00b3 s \u2192 f = 500 Hz. Missing unit conversion is a frequent exam penalty."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Properties of Waves' }], summaryText: '', ready: true },

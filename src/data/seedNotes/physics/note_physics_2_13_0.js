@@ -73,6 +73,24 @@ export const note_physics_2_13_0 = {
         title: "Exam Tip: <strong>Intensity</strong> & Inverse Square Law",
         text: "<strong>Intensity</strong> I=P/A = P/(4πr²) for a point source. I∝1/r² (inverse square law). If r doubles, I decreases by factor 4. Units: W/m². For extended sources or beams (laser, torchlight): I depends on beam cross-section area, not spherical spread."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Inverse Square Law is NOT Linear",
+        text: "Common error: Students assume intensity scales linearly with distance. Actually, intensity is inversely proportional to r\u00b2 (I \u221d 1/r\u00b2). If distance doubles, intensity becomes 1/4, not 1/2. This appears frequently in exam calculations \u2014 always use the full inverse square formula."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Spherical Wavefronts Assumption",
+        text: "The inverse square law only applies to spherical wavefronts from point sources. Always verify the problem describes a point source radiating spherically. For plane waves or bounded sources, the relationship is different."
+      }
     }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Equation for the <strong>Intensity</strong> of Radiation' }], summaryText: '', ready: true },

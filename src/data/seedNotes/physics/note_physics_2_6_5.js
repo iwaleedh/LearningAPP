@@ -48,7 +48,25 @@ export const note_physics_2_6_5 = {
     { id: 'summary-1', type: 'summary', data: { text: "Series: R_total = R₁+R₂+... (total always larger). Same I throughout; V splits in proportion to R. Parallel: 1/R_total = 1/R₁+1/R₂+... (total always smaller than smallest R). Same V across each branch; I splits in inverse proportion to R. For two parallel resistors: R = R₁R₂/(R₁+R₂)." } },
     { id: 'enr-svg-energy-power', type: 'svg', data: { svg: '<svg viewBox="0 0 480 180" xmlns="http://www.w3.org/2000/svg"><rect width="480" height="180" fill="#0f172a"/><text x="240" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Energy vs Power</text><rect x="20" y="30" width="155" height="54" rx="8" fill="#1c3a64" stroke="#339af0" stroke-width="2"/><text x="98" y="52" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1864ab" text-anchor="middle">Power P (W)</text><text x="98" y="70" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">= energy per second</text><rect x="305" y="30" width="155" height="54" rx="8" fill="#0a2e1a" stroke="#40c057" stroke-width="2"/><text x="383" y="52" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2b8a3e" text-anchor="middle">Energy E (J)</text><text x="383" y="70" font-family="sans-serif" font-size="11" fill="#2b8a3e" text-anchor="middle">= P × t</text><text x="240" y="62" font-family="sans-serif" font-size="15" font-weight="bold" fill="#e67700" text-anchor="middle">E = Pt</text><line x1="175" y1="57" x2="225" y2="57" stroke="#495057" stroke-width="1.5" marker-end="url(#arr)"/><line x1="305" y1="57" x2="255" y2="57" stroke="#495057" stroke-width="1.5" marker-end="url(#arr)"/><defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#495057"/></marker></defs><rect x="55" y="105" width="180" height="60" rx="4" fill="#44370a" stroke="#f08c00" stroke-width="1.5"/><text x="145" y="122" font-family="sans-serif" font-size="11" font-weight="bold" fill="#e67700" text-anchor="middle">P–t graph</text><rect x="75" y="128" width="100" height="28" fill="#532407" stroke="#f08c00" stroke-width="1"/><text x="125" y="147" font-family="sans-serif" font-size="10" fill="#e67700" text-anchor="middle">E = area = Pt</text><text x="240" y="175" font-family="sans-serif" font-size="10" fill="#868e96" text-anchor="middle">Energy is power multiplied by time</text></svg>', caption: 'Energy is power multiplied by time' } },
     { id: 'enr-worked-bill', type: 'callout', data: { style: 'worked', title: 'Electricity Bill Calculations', text: 'Kettle rated 2 kW runs 30 min/day (0.5 h). Daily energy = 2 kW × 0.5 h = 1 kWh. Monthly = 1 × 30 = 30 kWh. Cost at 28 p/kWh: 30 × 28 = 840 p = £8.40/month.\n\nElectric car charger rated 7 kW runs 8 h/night. Energy per night = 7 × 8 = 56 kWh. Monthly = 56 × 30 = 1 680 kWh. Cost: 1 680 × 28 = 47 040 p = £470.40/month.\n\nConverting to joules: 1 kWh = 1 000 W × 3 600 s = 3.6 × 10⁶ J. So 30 kWh = 30 × 3.6 × 10⁶ = 1.08 × 10⁸ J.' } },
-    { id: 'enr-tip-energy-bill', type: 'callout', data: { style: 'tip', title: 'Exam Tip: kWh ↔ J Conversion', text: '1 kWh = 3.6 × 10⁶ J. Electricity meters read in kWh. To convert to SI joules: multiply kWh by 3 600 000. For all exam calculations use SI units — joules (J), watts (W), seconds (s). Common error: mixing kW with W, or kWh with J, in the same equation will give an answer wrong by a factor of 1 000 or 3 600 000.' } }
+    { id: 'enr-tip-energy-bill', type: 'callout', data: { style: 'tip', title: 'Exam Tip: kWh ↔ J Conversion', text: '1 kWh = 3.6 × 10⁶ J. Electricity meters read in kWh. To convert to SI joules: multiply kWh by 3 600 000. For all exam calculations use SI units — joules (J), watts (W), seconds (s). Common error: mixing kW with W, or kWh with J, in the same equation will give an answer wrong by a factor of 1 000 or 3 600 000.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Series and Parallel Resistances",
+        text: "Series: R_total = R\u2081 + R\u2082 + ... (current same through all, voltage divides). Parallel: 1/R_total = 1/R\u2081 + 1/R\u2082 + ... (voltage same across all, current divides). A parallel resistor always reduces total resistance."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Power in Combinations",
+        text: "In series: P \u221d R (highest power in largest resistor). In parallel: P \u221d 1/R (highest power in smallest resistor). Recognize these patterns to check work quickly."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'State the formula for total <strong>resistance</strong> in series. What are the rules for <strong>current</strong> and <strong>voltage</strong> in a series circuit?' },
