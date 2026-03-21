@@ -44,7 +44,9 @@ export const note_biology_4_6_11 = {
           "The frequency of the resistance allele increases in the population (e.g., MRSA)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-7574c07f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-de7e1d91', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

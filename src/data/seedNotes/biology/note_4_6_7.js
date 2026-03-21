@@ -55,7 +55,9 @@ export const note_biology_4_6_7 = {
           "Presentation: Macrophages will then present the pathogen's antigens on their own cell surface, becoming an Antigen Presenting Cell (APC). This bridges the non-specific and specific immune responses."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-8cc390d6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-2dffea26', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

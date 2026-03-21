@@ -33,7 +33,8 @@ export const note_biology_4_6_3 = {
       id: "p-analysis",
       type: "paragraph",
       data: { text: "Ensure strict aseptic techniques are maintained whenever withdrawing samples from the flask. As the microorganisms replicate, the broth becomes cloudier, and absorbance strictly rises during the log phase." }
-    }
+    },
+{ 'id': 'callout-examiner-7c9f1eb7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

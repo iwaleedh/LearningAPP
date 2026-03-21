@@ -32,7 +32,9 @@ export const note_biology_4_6_2 = {
       id: "callout-logs",
       type: "callout",
       data: { style: "key", title: "Logarithmic Scales", text: "Because bacterial numbers increase so rapidly in the log phase, population data is almost always plotted on a log base 10 scale (y-axis) against time (x-axis) to fit the data on a single readable graph." }
-    }
+    },
+{ 'id': 'callout-examiner-0da48692', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-283623f6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

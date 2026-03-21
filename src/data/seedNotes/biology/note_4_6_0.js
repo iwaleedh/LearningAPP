@@ -49,7 +49,9 @@ export const note_biology_4_6_0 = {
           "Taping the dish: Tape the Petri dish cross-wise (not fully sealed, to prevent the growth of dangerous anaerobic bacteria)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-6e0c2f3b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-480b80db', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

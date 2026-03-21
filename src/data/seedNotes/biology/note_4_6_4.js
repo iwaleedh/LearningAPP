@@ -44,7 +44,8 @@ export const note_biology_4_6_4 = {
           "Extras: Often have attachment proteins (antigens) sticking out to bind to host cells."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-c52c0260', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

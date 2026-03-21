@@ -46,7 +46,8 @@ export const note_biology_4_6_6 = {
           "Mucus and Cilia: Goblet cells secrete mucus to trap inhaled particles. Ciliated epithelial cells waft the mucus up to the throat to be swallowed."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-25b5106c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

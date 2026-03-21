@@ -49,7 +49,9 @@ export const note_biology_4_6_8 = {
           "The B cells differentiate into B effector (plasma) cells, which secrete millions of antibodies, and B memory cells, which remain in the blood for secondary immunity."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-1b21d266', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-280f2561', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

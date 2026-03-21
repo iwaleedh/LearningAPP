@@ -50,7 +50,9 @@ export const note_biology_4_6_5 = {
           "AIDS: As T helper cell numbers crash, the patient's immune system fails. They develop Acquired Immune Deficiency Syndrome (AIDS) and die from opportunistic infections (like TB or pneumonia)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-26168ba1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-843876bb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

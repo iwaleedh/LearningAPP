@@ -47,7 +47,9 @@ export const note_biology_4_6_16 = {
           "The band pattern is compared against a suspect's DNA or victim's DNA to look for a perfect match."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-dbb8b60d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-51b2241c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

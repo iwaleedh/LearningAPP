@@ -36,7 +36,9 @@ export const note_biology_4_6_10 = {
       id: "p-vaccines",
       type: "paragraph",
       data: { text: "Vaccines contain antigens from a pathogen (e.g., dead, weakened, or fragments). They trick the immune system into triggering a primary specific response (creating memory cells) without causing the disease itself." }
-    }
+    },
+{ 'id': 'callout-examiner-75b9bf1d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-86e95c96', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

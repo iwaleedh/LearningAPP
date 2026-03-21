@@ -51,7 +51,8 @@ export const note_biology_4_6_12 = {
           "Screening: Swabbing new patients for MRSA before they enter wards."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-d5f3b3c1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

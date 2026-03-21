@@ -53,7 +53,8 @@ export const note_biology_4_6_1 = {
           "Limitation: Like direct counting, a colorimeter cannot distinguish between living and dead cells."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-4b5fc23c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

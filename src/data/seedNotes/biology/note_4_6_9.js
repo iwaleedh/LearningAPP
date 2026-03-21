@@ -56,7 +56,9 @@ export const note_biology_4_6_9 = {
           "Neutralization: Antibodies bind to toxins or viral attachment proteins, blocking them from causing harm."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-0dd34471', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-bf55c38e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

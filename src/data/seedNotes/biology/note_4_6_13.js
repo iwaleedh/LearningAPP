@@ -33,7 +33,9 @@ export const note_biology_4_6_13 = {
       id: "callout-controls",
       type: "callout",
       data: { style: "key", title: "Key Controls", text: "Control the volume/concentration of antibiotic on the discs, the size of the discs, the strain/concentration of bacteria used, the thickness of the agar, and the incubation time/temperature." }
-    }
+    },
+{ 'id': 'callout-examiner-a72c6832', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
+{ 'id': 'callout-examiner-5cf1b28d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,
