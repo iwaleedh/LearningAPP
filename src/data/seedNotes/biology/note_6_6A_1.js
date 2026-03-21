@@ -23,7 +23,8 @@ export const note_biology_6_6A_1 = {
           "S (Safety/Risk): Identify a specific hazard (e.g. bacteria, scalpel, hot water), the risk it poses, and the control measure (e.g. aseptic technique, cut away from body, use tongs)."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-62d50451', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

@@ -32,7 +32,8 @@ export const note_biology_6_6A_0 = {
           "CP 18: Snail Habituation. Measuring withdrawal response times."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-0abe4e72', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

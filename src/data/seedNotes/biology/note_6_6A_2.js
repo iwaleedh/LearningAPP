@@ -40,7 +40,8 @@ export const note_biology_6_6A_2 = {
           "Line: Draw a point-to-point line with a ruler, OR a smooth line of best fit (LOBF) if the trend is distinctly continuous. Never extrapolate beyond the last data point."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-8c7f2fae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

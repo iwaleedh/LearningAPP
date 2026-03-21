@@ -38,7 +38,8 @@ export const note_biology_6_6A_3 = {
           "Increase the range of independent variables to pinpoint the exact optimum/peak."
         ]
       }
-    }
+    },
+{ 'id': 'callout-examiner-9f970cd7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,

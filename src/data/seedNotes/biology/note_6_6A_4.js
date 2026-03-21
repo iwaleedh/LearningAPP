@@ -36,7 +36,8 @@ export const note_biology_6_6A_4 = {
       id: "p-qual",
       type: "paragraph",
       data: { text: "Some errors cannot be quantified, such as difficulty judging the exact 'end point' of a reaction visually, biological variations within a genetically diverse sample (e.g. wild leaves), or fluctuating room temperatures." }
-    }
+    },
+{ 'id': 'callout-examiner-efbbb533', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
   ],
   recall: {
     enabled: true,
