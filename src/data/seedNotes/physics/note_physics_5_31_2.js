@@ -46,6 +46,15 @@ export const note_physics_5_31_2 = {
     },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Find the Gravitational Force', text: 'Given: M&#8321; = 5.0\u00d710<sup>24</sup> kg, M&#8322; = 2.0\u00d710<sup>3</sup> kg, r = 8.0\u00d710<sup>6</sup> m, G = 6.67\u00d710<sup>\u221211</sup> N m\u00b2 kg<sup>\u22122</sup><br>Numerator: 6.67\u00d710<sup>\u221211</sup> \u00d7 5.0\u00d710<sup>24</sup> \u00d7 2.0\u00d710<sup>3</sup> = 6.67\u00d710<sup>17</sup><br>Denominator: (8.0\u00d710<sup>6</sup>)\u00b2 = 6.4\u00d710<sup>13</sup><br>F = 6.67\u00d710<sup>17</sup> \u00f7 6.4\u00d710<sup>13</sup> \u2248 <strong>1.04\u00d710<sup>4</sup> N</strong>' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always use the centre-to-centre distance for r \u2014 not the surface-to-surface gap.<br>For a satellite at height h above a planet of radius R: r = R + h.<br>Doubling r reduces F by a factor of 4 (inverse square law: F \u221d 1/r\u00b2).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Distance r",
+        text: "In the equation $ F = \\frac{GMm}{r^2} $, remember that $ r $ is the distance between the centers of the two masses, not the distance between their surfaces. For an object in orbit, $ r = \\text{Radius of planet} + \\text{altitude} $."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Newton’s Law of Universal Gravitation' }], summaryText: '', ready: true },
   evidence: [],

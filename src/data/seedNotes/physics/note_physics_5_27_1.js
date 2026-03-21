@@ -39,7 +39,16 @@ export const note_physics_5_27_1 = {
     { id: 'summary-1', type: 'summary', data: { text: "<strong>Parallax</strong>: nearby stars appear to shift against distant background stars as Earth orbits the Sun. <strong>Parallax</strong> angle p = half the total angular shift (baseline = 1 AU). d (pc) = 1/p (arcsec). 1 pc = 3.09×10¹⁶ m = 3.26 ly. 1 AU = 1.50×10¹¹ m. Proxima Centauri: p = 0.77 arcsec → d = 1.3 pc. Limit: p < 0.01 arcsec (d > 100 pc) unmeasurable from Earth's surface → use standard candles for larger distances." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" rx="6" fill="#1a1a2e"/><line x1="60" y1="20" x2="60" y2="165" stroke="#adb5bd" stroke-width="1.5"/><line x1="60" y1="165" x2="380" y2="165" stroke="#adb5bd" stroke-width="1.5"/><path d="M 65 28 C 90 35 130 75 200 120 S 320 155 380 161" stroke="#74c0fc" stroke-width="2.5" fill="none"/><text x="220" y="186" font-family="sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Distance d (pc) →</text><text x="18" y="95" font-family="sans-serif" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90,18,95)">p (arcsec) →</text></svg>', caption: 'Inverse relationship d = 1/p: as distance increases the <strong>parallax</strong> angle falls sharply, making distant stars hard to measure.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked: Proxima Centauri Distance', text: 'Proxima Centauri has a <strong>parallax</strong> angle p = 0.769 arcseconds. Find its distance in parsecs and in metres.\nd (pc) = 1 / 0.769 = 1.30 pc\nd (m) = 1.30 × 3.09 × 10¹⁶ = 4.02 × 10¹⁶ m' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Always Check Units', text: 'The formula d = 1/p only works when p is in arcseconds and d is in parsecs. Convert p to arcseconds first if given in other units.\nIf a question asks for metres, multiply your parsec answer by 3.09 × 10¹⁶.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Always Check Units', text: 'The formula d = 1/p only works when p is in arcseconds and d is in parsecs. Convert p to arcseconds first if given in other units.\nIf a question asks for metres, multiply your parsec answer by 3.09 × 10¹⁶.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Always Check Units",
+        text: "The formula d(parsecs) = 1/p(arcseconds) only works when p is in arcseconds and d is in parsecs. Convert p to arcseconds first if given in other units. If a question asks for metres, multiply your parsec answer by 3.09 \u00d7 10\u00b9\u2076."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'State the equation relating stellar distance (in parsecs) and <strong>parallax</strong> angle (in arcseconds). Define the parsec.' },

@@ -17,6 +17,15 @@ export const note_physics_5_32_0 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><line x1="30" y1="100" x2="370" y2="100" stroke="#334155" stroke-width="2"/><circle cx="200" cy="100" r="6" fill="#6366f1"/><circle cx="300" cy="100" r="16" fill="#3b82f6"/><text x="200" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6366f1">O (equilibrium)</text><text x="300" y="145" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ef4444">F = &#8722;kx &#8592; restoring</text></svg>', caption: 'Mass displaced to +x; restoring force F = −kx points back toward equilibrium O' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Finding the Restoring Force', text: 'A spring–mass system has k = 90 N m⁻¹. Find the restoring force when x = +0.04 m.<br/>F = −kx = −90 × 0.04 = <strong>−3.6 N</strong><br/>The negative sign confirms the force acts back toward equilibrium, opposing the displacement.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Two SHM Conditions', text: 'Both conditions must hold: (1) acceleration ∝ displacement, <em>and</em> (2) acceleration directed toward equilibrium.<br/>The negative sign in a = −ω²x encodes condition (2) — never omit it in exam answers.<br/>A trampoline fails SHM because weight (restoring force) is constant, not proportional to displacement.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip: Conditions for SHM",
+        text: "To get full marks when defining SHM, you must state two key conditions: the acceleration is directly proportional to the displacement from equilibrium, AND it is always directed towards the equilibrium position."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Conditions for Simple Harmonic Motion' }], summaryText: '', ready: true },
   evidence: [],

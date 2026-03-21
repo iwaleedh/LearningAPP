@@ -17,6 +17,15 @@ export const note_physics_5_32_1 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="8"/><line x1="40" y1="100" x2="370" y2="100" stroke="#334155" stroke-width="1.5"/><line x1="200" y1="178" x2="200" y2="18" stroke="#334155" stroke-width="1.5"/><line x1="55" y1="22" x2="348" y2="178" stroke="#ef4444" stroke-width="2.5"/><text x="356" y="96" font-family="sans-serif" font-size="13" fill="#334155">x</text><text x="207" y="16" font-family="sans-serif" font-size="13" fill="#334155">a</text></svg>', caption: 'a–x graph for SHM: straight line through the origin, negative gradient = −ω², confirming a = −ω²x' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: SHM Acceleration', text: "A mass oscillates in SHM with amplitude A = 0.05 m and ω = 10 rad s⁻¹.<br>Find: (a) maximum acceleration; (b) acceleration at x = +0.03 m.<br><b>(a)</b> a<sub>max</sub> = ω²A = 10² × 0.05 = <b>5 m s⁻²</b> (at displacement x = ±A)<br><b>(b)</b> a = −ω²x = −100 × 0.03 = <b>−3 m s⁻²</b> (directed back towards equilibrium)" } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Sign Convention in SHM', text: "The minus sign in <b>a = −ω²x</b> is non-negotiable — it confirms acceleration always points back to equilibrium.<br>At x = 0 the acceleration is zero; at x = ±A the acceleration is maximum.<br>If asked for the magnitude, use |a| = ω²x, but always state the direction separately." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Calculator Mode",
+        text: "When using the sinusoidal equations for SHM like $ x = A \\cos(\\omega t) $, your calculator MUST be set to Radians, not Degrees. Failing to switch modes is one of the most common student errors."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Equations for Simple Harmonic Motion' }], summaryText: '', ready: true },
   evidence: [],

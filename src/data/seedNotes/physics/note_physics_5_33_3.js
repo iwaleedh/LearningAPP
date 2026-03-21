@@ -27,6 +27,15 @@ export const note_physics_5_33_3 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#1c3a64"/><line x1="40" y1="170" x2="380" y2="170" stroke="#334155" stroke-width="2"/><line x1="40" y1="20" x2="40" y2="170" stroke="#334155" stroke-width="2"/><path d="M 60 165 C 120 163 170 160 200 60 C 230 160 280 163 380 165" fill="none" stroke="#6366f1" stroke-width="2.5"/><text x="200" y="52" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6366f1">f&#8320; &#8212; max amplitude</text><text x="210" y="192" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#334155">Driving frequency &#8594;</text></svg>', caption: 'Amplitude peaks sharply when driving frequency f₁ equals natural frequency f₀ — resonance' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Resonance', text: 'A loudspeaker emits sound at 256 Hz. A crystal glass (f₀ = 256 Hz) vibrates violently. (a) Forced oscillation — driven by the periodic sound wave at 256 Hz. (b) Driving frequency f₁ = natural frequency f₀, so resonance occurs and amplitude is maximum.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Free vs Forced', text: 'Free oscillations use natural frequency f₀; forced oscillations use driving frequency f₁. Resonance (max amplitude, max energy transfer) occurs only when f₁ = f₀. Keywords like "vibrates violently" or "maximum amplitude" in exam questions signal resonance.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Terminology: Free vs Forced",
+        text: "Ensure you can distinguish between free oscillations (where a system is disturbed and left to oscillate at its own natural frequency) and forced oscillations (where a system is continuously driven by an external periodic force)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Free & Forced Oscillations' }], summaryText: '', ready: true },
   evidence: [],

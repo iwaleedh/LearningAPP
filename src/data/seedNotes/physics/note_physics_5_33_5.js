@@ -37,6 +37,15 @@ export const note_physics_5_33_5 = {
         text: 'Damping reduces the amplitude at resonance and broadens the peak — heavier damping = lower, wider peak. In exams, state that resonance occurs when driving frequency equals natural frequency, and maximum energy transfer occurs at this point.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Plastic Deformation",
+        text: "Ductile materials can absorb large amounts of energy through plastic deformation before breaking. In questions about earthquake-resistant buildings, mention that this deformation acts as heavy damping to dissipate the vibrational energy."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Damping & Plastic Deformation' }], summaryText: '', ready: true },
   evidence: [],

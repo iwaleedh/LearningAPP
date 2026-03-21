@@ -49,7 +49,16 @@ export const note_physics_5_33_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "Resonance curve: amplitude vs driving frequency f_d; peak at f₀ (resonant frequency). Light damping: tall narrow peak at f₀. Heavy damping: low broad peak; peak shifts slightly below f₀. Bandwidth Δf: width at A_max/√2 (half-power). Q = f₀/Δf: high Q = sharp, selective (radio, crystals); low Q = broad, stable amplitude (shock absorbers, buildings). Critical/overdamping: no peak, amplitude decreases monotonically." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="20" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">High-Q vs Low-Q Resonance Comparison</text><path d="M 40 185 Q 155 180 190 172 Q 196 145 200 42 Q 204 145 210 172 Q 245 180 360 185" stroke="#c92a2a" stroke-width="2.5" fill="none"/><path d="M 40 183 Q 115 170 170 150 Q 190 136 200 108 Q 210 136 230 150 Q 285 170 360 183" stroke="#1864ab" stroke-width="2.5" fill="none"/><text x="220" y="40" font-family="sans-serif" font-size="11" fill="#c92a2a">High Q — narrow peak (light damping)</text><text x="220" y="106" font-family="sans-serif" font-size="11" fill="#1864ab">Low Q — broad peak (heavy damping)</text></svg>', caption: 'High-Q: tall, sharp peak — precise frequency selectivity. Low-Q: short, wide peak — broad frequency response. Both peaks are centred near f₀.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Calculating Q-Factor', text: 'A radio tuner resonates at f₀ = 900 kHz. Its amplitude equals A_max/√2 at 895 kHz and 905 kHz.<br>Step 1 — Bandwidth: Δf = 905 − 895 = 10 kHz.<br>Step 2 — Q-factor: Q = f₀/Δf = 900/10 = 90.<br>A Q of 90 indicates sharp selectivity — the tuner isolates stations 10 kHz apart with ease.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Half-Power Points', text: 'Bandwidth is measured at A_max/√2 ≈ 0.707 A_max — not A_max/2. The label "half-power" comes from power ∝ A²: at A_max/√2, power = (A_max/√2)² = A_max²/2.<br>High Q → narrow Δf → sharp selectivity (radio, quartz). Low Q → wide Δf → stable response (shock absorbers). Examiners often set Q = f₀/Δf calculations using given half-power frequencies.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Half-Power Points', text: 'Bandwidth is measured at A_max/√2 ≈ 0.707 A_max — not A_max/2. The label "half-power" comes from power ∝ A²: at A_max/√2, power = (A_max/√2)² = A_max²/2.<br>High Q → narrow Δf → sharp selectivity (radio, quartz). Low Q → wide Δf → stable response (shock absorbers). Examiners often set Q = f₀/Δf calculations using given half-power frequencies.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Damped Resonance Curves",
+        text: "When drawing resonance curves with increased damping, ensure that the new curve has a lower peak (lower amplitude), is wider, and its peak is slightly shifted to the left (a lower frequency)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-4', prompt: 'What three changes occur to the resonance curve when damping is increased? Sketch the curves for light and heavy damping.' },

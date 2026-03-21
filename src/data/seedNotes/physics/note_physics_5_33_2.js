@@ -20,6 +20,15 @@ export const note_physics_5_33_2 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><line x1="40" y1="165" x2="380" y2="165" stroke="#334155" stroke-width="2"/><line x1="40" y1="165" x2="40" y2="20" stroke="#334155" stroke-width="2"/><path d="M 50,160 C 90,158 140,154 170,135 C 190,115 198,42 210,42 C 222,42 230,115 250,135 C 280,154 330,158 370,160" fill="none" stroke="#6366f1" stroke-width="2.5"/><text x="210" y="182" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#334155">f&#8320; (natural frequency) &#8594; driving frequency</text><text x="200" y="14" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">Resonance Curve: Amplitude vs Driving Frequency</text></svg>', caption: 'Amplitude peaks sharply when the driving frequency equals the natural frequency f₀ — this is resonance' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — Identifying Resonance', text: 'A child on a swing has a natural frequency of 0.4 Hz. A parent pushes at 0.4 Hz.<br><strong>Q:</strong> What phenomenon occurs and why?<br><strong>A:</strong> Resonance — the driving frequency equals f₀ = 0.4 Hz so energy is transferred to the swing most efficiently, maximising amplitude.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Damping and Resonance', text: 'More damping → lower, broader resonance peak; less damping → taller, sharper peak. In exam questions about reducing unwanted resonance (e.g. car suspensions, Tacoma Bridge), always state that <em>damping reduces the amplitude at resonance</em> by dissipating energy.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Time Period and Damping",
+        text: "Damping progressively reduces the amplitude of oscillations by dissipating energy, but it has almost NO effect on the time period of the oscillation. Many students wrongly assume damping makes the oscillations slower."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Damped & Undamped Oscillating Systems' }], summaryText: '', ready: true },
   evidence: [],

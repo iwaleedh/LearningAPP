@@ -24,7 +24,25 @@ export const note_physics_5_25_0 = {
       { text: "State the Kelvin scale: T(K) = θ(°C) + 273; define <strong>absolute zero</strong> as the temperature at which molecules have zero kinetic energy", checked: false },
       { text: "Apply the <strong>ideal gas</strong> equation pV = nRT; explain why temperature must always be in kelvin in gas law calculations", checked: false }
     ]}, terms: [] },
-    { id: 'summary-1', type: 'summary', data: { text: "<strong>Internal energy</strong> U = total KE + total PE of all molecules. KE ∝ T (rises with temperature); PE depends on molecular separation (phase). During a phase change: T constant but U still increases (PE ↑, KE unchanged). <strong>Absolute zero</strong> = 0 K = −273 °C: zero molecular KE. Convert: T(K) = θ(°C) + 273. <strong>Ideal gas</strong>: pV = nRT (R = 8.31 J mol⁻¹ K⁻¹); pV = NkT (k = 1.38 × 10⁻²³ J K⁻¹). Always use kelvin." }, terms: [] }
+    { id: 'summary-1', type: 'summary', data: { text: "<strong>Internal energy</strong> U = total KE + total PE of all molecules. KE ∝ T (rises with temperature); PE depends on molecular separation (phase). During a phase change: T constant but U still increases (PE ↑, KE unchanged). <strong>Absolute zero</strong> = 0 K = −273 °C: zero molecular KE. Convert: T(K) = θ(°C) + 273. <strong>Ideal gas</strong>: pV = nRT (R = 8.31 J mol⁻¹ K⁻¹); pV = NkT (k = 1.38 × 10⁻²³ J K⁻¹). Always use kelvin." }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Misconception: Internal Energy During Phase Change",
+        text: "During a phase change, temperature is constant \u2014 but internal energy is NOT constant. The kinetic energy of molecules stays the same, but the potential energy increases as bonds are broken. Internal energy increases during melting and vaporisation even though the thermometer reads the same."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Always Convert to Kelvin",
+        text: "In all gas law and thermodynamics calculations, convert temperature to Kelvin before substituting into equations. A common exam error is leaving temperature in Celsius. Remember: T(K) = T(\u00b0C) + 273. For example, 27\u00b0C = 300 K."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: 'Summarise <strong>Internal Energy</strong> — define it and state what two types of energy it comprises.' },

@@ -17,6 +17,15 @@ export const note_physics_5_32_4 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><line x1="40" y1="100" x2="380" y2="100" stroke="#334155" stroke-width="1.5"/><line x1="40" y1="20" x2="40" y2="180" stroke="#334155" stroke-width="1.5"/><path d="M 40,100 C 60,20 100,20 120,100 C 140,180 180,180 200,100 C 220,20 260,20 280,100 C 300,180 340,180 360,100" fill="none" stroke="#6366f1" stroke-width="2.5"/><text x="200" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">v = A&#969; cos(&#969;t) — velocity is maximum at x = 0</text></svg>', caption: 'SHM velocity–time graph: v = Aω cos(ωt); maximum velocity ±Aω occurs when displacement x = 0' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Maximum Velocity', text: 'A mass oscillates with amplitude A = 0.05 m and frequency f = 2 Hz. Find the maximum speed.<br>ω = 2πf = 2π × 2 = 4π rad s⁻¹<br>v<sub>max</sub> = Aω = 0.05 × 4π ≈ <strong>0.63 m s⁻¹</strong><br>This occurs each time the mass passes through the equilibrium position.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: v–t vs x–t Graphs', text: 'If x = A sin(ωt), then v = Aω cos(ωt) — a cosine graph shifted 90° ahead of displacement.<br>Velocity is <strong>zero</strong> at maximum displacement (±A) and <strong>maximum</strong> at x = 0.<br>The gradient of the x–t graph at any point equals the instantaneous velocity.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Graph Gradients",
+        text: "The velocity-time graph is the gradient of the displacement-time graph. So, if displacement is a cosine curve ($ x = A \\cos \\omega t $), the velocity graph will be an inverted sine curve."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Velocity-Time Graph for an Oscillator' }], summaryText: '', ready: true },
   evidence: [],

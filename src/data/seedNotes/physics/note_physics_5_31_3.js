@@ -17,6 +17,15 @@ export const note_physics_5_31_3 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><circle cx="200" cy="100" r="22" fill="#475569"/><text x="200" y="105" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e293b" font-weight="bold">M</text><path d="M200,35 L200,78 M355,100 L222,100 M272,35 L216,82 M128,35 L184,82" stroke="#6366f1" stroke-width="2.5" fill="none"/><text x="330" y="55" font-family="sans-serif" font-size="11" fill="#6366f1">g = GM/r&#178;</text><text x="200" y="192" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#334155">Field lines point radially inward toward M; strength &#8733; 1/r&#178;</text></svg>', caption: 'Radial gravitational field lines converging on point mass M — strength decreases with distance' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — g at altitude', text: 'A satellite orbits 2000 km above Earth\'s surface (R = 6400 km). Find g at that orbit.<br><br>r = (6400 + 2000) × 10³ = 8.4 × 10⁶ m<br>g = GM/r² = (6.67 × 10⁻¹¹ × 6.0 × 10²⁴) / (8.4 × 10⁶)² ≈ <strong>5.68 N kg⁻¹</strong><br><br>Always measure r from Earth\'s <em>centre</em>, not its surface.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — r from the centre', text: 'Always use r = R + h (planet radius + height above surface) — <strong>never</strong> just the height h.<br>Because g ∝ 1/r², doubling the distance from the centre <em>quarters</em> the field strength. This is the inverse-square law.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Forgetting to Square",
+        text: "A very common slip in calculations using $ g = \\frac{GM}{r^2} $ is forgetting to square the distance $ r $. Always double-check your substitution steps to ensure the square is included."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Gravitational Field due to a Point Mass' }], summaryText: '', ready: true },
   evidence: [],

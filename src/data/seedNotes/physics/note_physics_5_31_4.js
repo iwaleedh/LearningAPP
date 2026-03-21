@@ -17,6 +17,15 @@ export const note_physics_5_31_4 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><circle cx="200" cy="100" r="25" fill="#4b5563"/><circle cx="200" cy="100" r="65" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="5,3"/><circle cx="200" cy="100" r="108" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="5,3"/><text x="200" y="20" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Equipotential Surfaces</text><text x="200" y="190" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#334155">Outer surface: V is less negative (closer to zero)</text></svg>', caption: 'Equipotential surfaces are concentric spheres; V becomes less negative as distance from M increases' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: V at Earth\'s Surface', text: 'G = 6.67×10⁻¹¹ N m² kg⁻², M = 6.0×10²⁴ kg, r = 6.4×10⁶ m.<br>V = −GM/r = −(6.67×10⁻¹¹ × 6.0×10²⁴) / 6.4×10⁶<br>V ≈ −6.25×10⁷ J kg⁻¹<br>The negative value confirms work must be done to escape Earth\'s gravitational field.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tips', text: 'V is always negative in a gravitational field — never omit the minus sign.<br>Use r from the centre of the planet, not from the surface.<br>Potential difference ΔV = V₂ − V₁; work done on mass m is W = mΔV.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Negative Potential",
+        text: "Gravitational potential $ V $ is defined as zero at infinity. Because gravity is an attractive force, work is done by the field as an object moves closer, making all potential values negative. Don't drop the negative sign in $ V = -\\frac{GM}{r} $!"
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Gravitational Potential for a Radial Field' }], summaryText: '', ready: true },
   evidence: [],

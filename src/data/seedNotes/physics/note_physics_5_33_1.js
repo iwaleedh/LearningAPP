@@ -55,7 +55,16 @@ export const note_physics_5_33_1 = {
     { id: 'summary-1', type: 'summary', data: { text: "Forced oscillations: driving at natural frequency f₀ → resonance (maximum amplitude). Phase: 0 below f₀; π/2 at f₀; π above f₀. Resonance curve: plot amplitude vs f_d. Light damping: sharp tall peak at f₀. Heavy damping: broad low peak, peak shifts slightly below f₀. Barton's pendulums demonstrate resonance with same-length pendulum resonating. Real applications: musical instruments (desirable); Tacoma Bridge collapse (undesirable — add damping)." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><g font-family="sans-serif" font-size="10" fill="#495057"><text x="200" y="14" text-anchor="middle" font-size="12" font-weight="bold" fill="#212529">Phase Angle vs Driving Frequency</text><text x="200" y="193" text-anchor="middle" font-size="9">Driving frequency f_d →</text><text x="42" y="170" text-anchor="middle">0</text><text x="32" y="103" text-anchor="middle">π/2</text><text x="42" y="40" text-anchor="middle">π</text><text x="200" y="186" text-anchor="middle" font-size="9" fill="#868e96">f₀</text></g><line x1="55" y1="175" x2="368" y2="175" stroke="#212529" stroke-width="1.5"/><line x1="55" y1="175" x2="55" y2="28" stroke="#212529" stroke-width="1.5"/><path d="M 60 168 Q 130 165 200 100 Q 270 35 365 32" stroke="#6366f1" stroke-width="2.5" fill="none"/><line x1="200" y1="28" x2="200" y2="175" stroke="#adb5bd" stroke-width="1" stroke-dasharray="3,3"/></svg>', caption: 'Phase angle of oscillator displacement relative to driver: 0 at low f_d; π/2 at resonance (f_d = f₀); approaches π above f₀.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Finding the Resonant Frequency', text: 'A mass-spring system has spring constant k = 15 N m⁻¹ and mass m = 0.6 kg. Find the natural frequency.<br><br>f₀ = (1/2π)√(k/m) = (1/2π)√(15/0.6) = (1/2π)√25 = 5/(2π) ≈ <strong>0.80 Hz</strong>.<br>The vibration generator must be set to 0.80 Hz to drive the system into resonance.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Phase and Damping Common Mistakes', text: 'The phase difference at resonance is π/2 (90°) — not zero. Below f₀ the oscillator is in phase (≈ 0) with the driver; above f₀ it is in antiphase (≈ π). Damping both lowers and broadens the peak, and shifts maximum amplitude slightly below the undamped f₀.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Phase and Damping Common Mistakes', text: 'The phase difference at resonance is π/2 (90°) — not zero. Below f₀ the oscillator is in phase (≈ 0) with the driver; above f₀ it is in antiphase (≈ π). Damping both lowers and broadens the peak, and shifts maximum amplitude slightly below the undamped f₀.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Improving Practical Accuracy",
+        text: "In resonance experiments, suggest using a fiducial marker placed exactly at the equilibrium position to help count oscillations, as the mass moves fastest there and is least likely to be obscured."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What happens to the amplitude and phase of a driven oscillator when the driving frequency equals the natural frequency? What is this condition called?' },

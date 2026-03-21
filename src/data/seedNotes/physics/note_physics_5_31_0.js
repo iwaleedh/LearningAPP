@@ -53,7 +53,16 @@ export const note_physics_5_31_0 = {
     { id: 'summary-1', type: 'summary', data: { text: "Gravitational field: region where mass experiences force. g = F/m = GM/r² (N kg⁻¹). Newton: F = GMm/r². Radial field: lines toward centre, closer near M. Uniform near surface: g ≈ 9.81 N kg⁻¹. Inside Earth: g ∝ r. Outside: g ∝ 1/r² (inverse square). Potential: V_g = −GM/r (always −ve, = 0 at ∞). g = −dV_g/dr. Equipotentials ⊥ field lines." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="18" font-family="sans-serif" font-size="12" font-weight="bold" fill="#212529" text-anchor="middle">Gravitational Potential V_g vs Distance r</text><line x1="40" y1="65" x2="385" y2="65" stroke="#868e96" stroke-width="1.5" stroke-dasharray="4,3"/><line x1="40" y1="25" x2="40" y2="188" stroke="#212529" stroke-width="1.5"/><path d="M 60 185 Q 100 147 150 108 Q 200 85 260 73 Q 310 67 385 64" stroke="#9c36b5" stroke-width="2.5" fill="none"/><text x="200" y="198" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">V_g = −GM/r (purple): always negative, approaching V = 0 reference (dashed) as r → ∞</text></svg>', caption: 'Gravitational potential V_g is always negative, becoming less negative as r increases toward infinity. The negative slope dV_g/dr at any point equals −g.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Gravitational Potential at Earth\'s Surface', text: 'Calculate V_g at Earth\'s surface. Given: M_E = 5.97 × 10²⁴ kg, R_E = 6.37 × 10⁶ m, G = 6.67 × 10⁻¹¹ N m² kg⁻². V_g = −GM/R = −(6.67 × 10⁻¹¹ × 5.97 × 10²⁴) / (6.37 × 10⁶) = −6.25 × 10⁷ J kg⁻¹. This means 6.25 × 10⁷ J of work per kilogram must be done against gravity to move a mass from Earth\'s surface to infinity (the escape energy per unit mass).' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Signs and the g–V_g Relationship', text: 'g = −dV_g/dr means g equals the negative slope of the V_g vs r graph — a steep curve means a strong field. Since V_g is always negative, "higher" potential means less negative (further from mass). When comparing two points, −4 × 10⁷ J kg⁻¹ is a higher (less negative) potential than −6 × 10⁷ J kg⁻¹, so less energy is needed to escape from the first location.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Signs and the g–V_g Relationship', text: 'g = −dV_g/dr means g equals the negative slope of the V_g vs r graph — a steep curve means a strong field. Since V_g is always negative, "higher" potential means less negative (further from mass). When comparing two points, −4 × 10⁷ J kg⁻¹ is a higher (less negative) potential than −6 × 10⁷ J kg⁻¹, so less energy is needed to escape from the first location.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Drawing Field Lines",
+        text: "When drawing gravitational field lines, ensure the arrows always point towards the center of mass. For a radial field (like around a planet), the lines must clearly diverge as they move outwards."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Define gravitational field strength. Write the formula for g due to a spherical mass M at distance r. What are its units?' },

@@ -17,6 +17,15 @@ export const note_physics_5_31_6 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><circle cx="200" cy="100" r="30" fill="#4b5563"/><line x1="200" y1="55" x2="200" y2="75" stroke="#6366f1" stroke-width="2" marker-end="url(#arr)"/><line x1="245" y1="100" x2="225" y2="100" stroke="#6366f1" stroke-width="2" marker-end="url(#arr)"/><line x1="200" y1="145" x2="200" y2="125" stroke="#6366f1" stroke-width="2" marker-end="url(#arr)"/><line x1="155" y1="100" x2="175" y2="100" stroke="#6366f1" stroke-width="2" marker-end="url(#arr)"/><defs><marker id="arr" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6366f1"/></marker></defs><text x="200" y="105" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1e293b" font-weight="bold">M</text></svg>', caption: 'Radial gravitational field lines point toward the centre of mass — field strength increases closer to the body' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Orbital Speed', text: 'A satellite orbits Earth at r = 7.0 × 10⁶ m. Find its orbital speed. (GM = 4.0 × 10¹⁴ N m² kg⁻¹)<br>Equate gravity to centripetal force: GMm/r² = mv²/r<br>v = √(GM/r) = √(4.0 × 10¹⁴ ÷ 7.0 × 10⁶) = √(5.71 × 10⁷)<br><strong>v ≈ 7 600 m s⁻¹</strong>' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Orbital Radius vs Altitude', text: 'Always use r measured from the <strong>centre of the planet</strong>, not the altitude above the surface. If a question gives altitude h, add the planet radius R: r = R + h.<br>Also, g at orbital height ≠ g at the surface — g falls as 1/r².' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Deriving Orbital Equations",
+        text: "To find orbital velocity or time period, you should automatically start by equating the gravitational force to the centripetal force: $ \\frac{GMm}{r^2} = \\frac{mv^2}{r} $ or $ \\frac{GMm}{r^2} = mr\\omega^2 $."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Orbital Motion' }], summaryText: '', ready: true },
   evidence: [],

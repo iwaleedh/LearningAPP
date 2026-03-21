@@ -20,6 +20,15 @@ export const note_physics_5_33_0 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><line x1="30" y1="100" x2="370" y2="100" stroke="#94a3b8" stroke-width="1.2"/><path d="M 30,100 C 52,52 88,52 110,100 C 132,148 168,148 190,100 C 212,52 248,52 270,100 C 292,148 328,148 350,100" fill="none" stroke="#6366f1" stroke-width="2.5"/><path d="M 30,100 C 52,148 88,148 110,100 C 132,52 168,52 190,100 C 212,148 248,148 270,100 C 292,52 328,52 350,100" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,3"/><text x="354" y="68" font-family="sans-serif" font-size="11" fill="#6366f1">F (driver)</text><text x="354" y="138" font-family="sans-serif" font-size="11" fill="#ef4444">x (90° lag)</text></svg>', caption: 'At resonance the displacement x lags the driving force F by exactly 90°; this phase relationship confirms resonance is occurring' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — Natural Frequency of a Pendulum', text: 'A pendulum of length <b>l = 0.25 m</b> is driven at various frequencies. Find the driving frequency that produces resonance.<br><br>At resonance, f<sub>drive</sub> = f₀, where f₀ = <sup>1</sup>/<sub>2π</sub> √(g/l)<br>f₀ = <sup>1</sup>/<sub>2π</sub> × √(9.81 / 0.25) = <sup>1</sup>/<sub>2π</sub> × 6.26 ≈ <b>1.0 Hz</b>' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Phase at Resonance', text: 'At resonance the displacement <b>lags the driving force by exactly 90°</b> (π/2 rad). Below resonance the lag is less than 90°; above resonance it approaches 180°. Examiners often ask you to state this phase relationship — do not confuse it with the condition f<sub>drive</sub> = f₀.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Defining Resonance",
+        text: "When defining resonance, clearly state that it occurs when the driving frequency exactly matches the natural frequency of the system, resulting in a maximum transfer of energy and a maximum amplitude of oscillation."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Resonance' }], summaryText: '', ready: true },
   evidence: [],

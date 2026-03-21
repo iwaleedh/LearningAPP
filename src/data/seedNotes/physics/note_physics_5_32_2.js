@@ -46,7 +46,16 @@ export const note_physics_5_32_2 = {
     { id: 'summary-1', type: 'summary', data: { text: "SHM: F = −kx → a = −ω²x where ω = √(k/m). T = 2π/ω. Mass-spring: T = 2π√(m/k); depends on m and k; NOT on A or g. Simple pendulum: T = 2π√(l/g); depends on l and g; NOT on mass or A (small angles). Both isochronous. Measure g: plot T² vs l → gradient = 4π²/g → g = 4π²/gradient." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="24" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Factors Affecting Period T</text><text font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle"><tspan x="100" y="55" font-weight="bold">Mass-Spring</tspan><tspan x="100" dy="20">&#8593; m &#8594; T longer</tspan><tspan x="100" dy="17">&#8593; k &#8594; T shorter</tspan><tspan x="100" dy="17">A, g: no effect</tspan></text><line x1="200" y1="38" x2="200" y2="175" stroke="#ced4da" stroke-width="1.5"/><text font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle"><tspan x="300" y="55" font-weight="bold">Simple Pendulum</tspan><tspan x="300" dy="20">&#8593; l &#8594; T longer</tspan><tspan x="300" dy="17">&#8593; g &#8594; T shorter</tspan><tspan x="300" dy="17">mass, A: no effect</tspan></text><text x="200" y="192" font-family="sans-serif" font-size="9" fill="#868e96" text-anchor="middle">Both isochronous &#8212; amplitude does not change T</text></svg>', caption: 'Factors that do and do not affect T for each oscillator.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked: Pendulum Period on the Moon vs Earth', text: 'A pendulum of length 0.80 m on Earth (g = 9.81 m s⁻²): T = 2π√(0.80/9.81) = 1.80 s. On the Moon (g = 1.63 m s⁻²): T = 2π√(0.80/1.63) = 4.40 s. The pendulum is ×2.4 slower on the Moon. A mass-spring system is unaffected by g: same T on Earth or Moon.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Which Formula Changes on the Moon?', text: 'T = 2π√(m/k) for mass-spring; T = 2π√(l/g) for pendulum. Classic exam trap: "pendulum taken to the Moon" → lower g → longer T. But a mass-spring system on the Moon has the same T (no g in formula). Doubling l multiplies T by √2 ≈ 1.41; doubling m also multiplies mass-spring T by √2.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Which Formula Changes on the Moon?', text: 'T = 2π√(m/k) for mass-spring; T = 2π√(l/g) for pendulum. Classic exam trap: "pendulum taken to the Moon" → lower g → longer T. But a mass-spring system on the Moon has the same T (no g in formula). Doubling l multiplies T by √2 ≈ 1.41; doubling m also multiplies mass-spring T by √2.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Amplitude Independence",
+        text: "Notice that the amplitude $ A $ does not appear in the time period equations for a mass-spring system or a pendulum. Therefore, the time period of an SHM oscillator is completely independent of its initial amplitude."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Derive T = 2π√(m/k) for a mass-spring system. Start from F = −kx and compare with the SHM equation a = −ω²x.' },

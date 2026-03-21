@@ -33,6 +33,15 @@ export const note_physics_5_30_2 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="8"/><text x="200" y="32" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Conservation Laws in Nuclear Equations</text><text x="200" y="95" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1e40af">&#8721;A (left) = &#8721;A (right)</text><text x="200" y="130" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#0f766e">&#8721;Z (left) = &#8721;Z (right)</text><text x="200" y="175" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64748b">Mass number A and atomic number Z are each conserved across the equation</text></svg>', caption: 'Both mass number (A) and atomic number (Z) are conserved in every nuclear decay equation.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: <strong>Alpha Decay</strong> of Radium-226', text: '&#²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He<br>Check A: 226 = 222 + 4 ✓<br>Check Z: 88 = 86 + 2 ✓<br>The daughter nucleus is Radon-222, identified from Z = 86.' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Finding an Unknown Daughter Nucleus', text: 'Set up two separate conservation equations — one for A and one for Z — then solve for the unknowns.<br>Use Z to identify the element from a periodic table.<br>Always write missing species (e.g. neutrino ν̄ in β⁻ decay) to get full marks.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Balancing Equations",
+        text: "Always verify that both the total mass number (top numbers) and the total atomic number (bottom numbers) are conserved on both sides of a nuclear equation. Remember that a beta particle is written as $ ^0_{-1}\\beta $."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Nuclear Decay Equations' }], summaryText: '', ready: true },
   evidence: [],

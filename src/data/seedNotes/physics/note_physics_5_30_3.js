@@ -57,7 +57,16 @@ export const note_physics_5_30_3 = {
     { id: 'summary-1', type: 'summary', data: { text: "Gamma absorption: I = I₀e⁻μx (exponential). μ = linear absorption coefficient (m⁻¹). Experiment: GM tube; vary lead thickness x; correct for background (subtract C_bg). Plot I vs x → exponential curve. Plot ln I vs x → straight line; gradient = −μ; y-intercept = ln I₀. Half-value thickness x₁/₂ = ln2/μ. Errors: background (subtract it), statistics (long counting times), scatter (collimator)." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529">Half-Value Thickness x&#189;</text><rect x="180" y="45" width="40" height="110" rx="3" fill="#1e293b" stroke="#495057" stroke-width="2"/><line x1="20" y1="100" x2="180" y2="100" stroke="#fa5252" stroke-width="8"/><line x1="220" y1="100" x2="380" y2="100" stroke="#fa5252" stroke-width="4" stroke-dasharray="8,4"/><text font-family="sans-serif" fill="#343a40"><tspan x="80" y="87" font-size="12">I&#8320;</tspan><tspan x="274" y="87" font-size="12">I&#8320;/2</tspan><tspan x="120" y="185" font-size="10" fill="#6c757d">x&#189; = ln 2 / &#956; &#8776; 0.693 / &#956;</tspan></text></svg>', caption: 'After one half-value thickness x₁/₂, intensity halves from I₀ to I₀/2. Larger μ → more absorbing material → smaller x₁/₂.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked: Calculating μ from a Best-Fit Line', text: 'Two points on the ln I vs x best-fit line: (0.005 m, 6.17) and (0.020 m, 4.09). Gradient = (4.09 − 6.17) ÷ (0.020 − 0.005) = −2.08 ÷ 0.015 = −138.7 m⁻¹. So μ = 138.7 m⁻¹ ≈ 139 m⁻¹. Half-value thickness: x₁/₂ = 0.693 ÷ 139 = 4.99 × 10⁻³ m ≈ 5.0 mm.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tips: Gamma Absorption Practical', text: 'Always subtract background count rate before taking ln — forgetting this is the most penalised error. Convert x to metres when quoting μ in m⁻¹ (e.g. 5 mm = 0.005 m). Never force the ln I vs x best-fit line through the origin. Quote μ to 3 significant figures, consistent with your data precision.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tips: Gamma Absorption Practical', text: 'Always subtract background count rate before taking ln — forgetting this is the most penalised error. Convert x to metres when quoting μ in m⁻¹ (e.g. 5 mm = 0.005 m). Never force the ln I vs x best-fit line through the origin. Quote μ to 3 significant figures, consistent with your data precision.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Dealing with Uncertainty",
+        text: "Radioactive decay is a random process. When describing experiments, mention that taking readings over a longer period of time, or taking multiple repeat readings, helps to reduce the percentage uncertainty."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: 'Write the equation for gamma absorption. Define I₀, I, μ, and x.' },

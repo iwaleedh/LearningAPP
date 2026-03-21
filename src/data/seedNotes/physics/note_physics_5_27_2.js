@@ -48,7 +48,16 @@ export const note_physics_5_27_2 = {
     { id: 'summary-1', type: 'summary', data: { text: "<strong>Standard candle</strong>: object with known <strong>luminosity</strong> L. Inverse square law: F = L/(4πd²) → d = √(L/4πF). Cepheid variables: longer pulsation period → greater L (period-<strong>luminosity</strong> relation); useful up to ~50 Mpc. Type Ia supernovae: explode at Chandrasekhar mass (~1.44 M_Sun) → same peak L ≈ 4×10³⁶ W; useful to cosmological distances. Evidence for accelerating expansion (1998) came from Type Ia supernovae." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0a0a1a"/><text x="200" y="18" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle"><strong>Cepheid Variable</strong> — Light Curve</text><line x1="30" y1="160" x2="380" y2="160" stroke="#adb5bd" stroke-width="1.5"/><text x="200" y="182" font-family="sans-serif" font-size="10" fill="#1e293b" text-anchor="middle">Time (days) — longer period → greater <strong>luminosity</strong></text><polyline points="30,130 55,80 80,140 115,68 150,140 185,68 220,140 255,68 290,140 325,72 360,138" fill="none" stroke="#fab005" stroke-width="2.5"/></svg>', caption: 'Cepheid light curve: flux oscillates with a regular period. Henrietta Leavitt showed longer period → greater <strong>luminosity</strong>, giving L without knowing distance.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example — Type Ia <strong>Supernova</strong> Distance', text: 'A Type Ia <strong>supernova</strong> has peak L = 4.0 × 10³⁶ W. Measured flux F = 3.3 × 10⁻¹⁶ W m⁻². Find d.<br>d = √(L / 4πF) = √(4.0 × 10³⁶ / (4π × 3.3 × 10⁻¹⁶))<br>= √(4.0 × 10³⁶ / 4.15 × 10⁻¹⁵) = √(9.64 × 10⁵⁰) = 3.1 × 10²⁵ m<br>Converting: 3.1 × 10²⁵ / 3.09 × 10²² ≈ 1000 Mpc ≈ 1.0 Gpc' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Units and Conversions', text: 'Always work in SI: L in W, F in W m⁻², d in metres. Convert to pc or Mpc only at the final step (1 pc = 3.09 × 10¹⁶ m; 1 Mpc = 3.09 × 10²² m). A common error is dividing by 3.09 × 10¹⁶ when converting to Mpc — the correct divisor is 3.09 × 10²².' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Units and Conversions', text: 'Always work in SI: L in W, F in W m⁻², d in metres. Convert to pc or Mpc only at the final step (1 pc = 3.09 × 10¹⁶ m; 1 Mpc = 3.09 × 10²² m). A common error is dividing by 3.09 × 10¹⁶ when converting to Mpc — the correct divisor is 3.09 × 10²².' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip \u2014 Units and Conversions",
+        text: "Always work in SI: L in W, F in W m\u207b\u00b2, d in metres. Convert to pc or Mpc only at the final step (1 pc = 3.09 \u00d7 10\u00b9\u2076 m; 1 Mpc = 3.09 \u00d7 10\u00b2\u00b2 m). A common error is dividing by 3.09 \u00d7 10\u00b9\u2076 when converting to Mpc."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'State the inverse square law for flux. Define <strong>luminosity</strong> and flux. How is distance found from these quantities?' },

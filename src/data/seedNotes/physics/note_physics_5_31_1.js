@@ -56,6 +56,15 @@ export const note_physics_5_31_1 = {
         text: "Never confuse g and G. g = F/m (units N kg⁻¹ or m s⁻²) varies with location and planet. G = 6.67 × 10⁻¹¹ N m² kg⁻² is the universal gravitational constant — identical everywhere in the universe. Always quote the formula g = GM/r² and show substitution in calculations."
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Value of g",
+        text: "While $ g = 9.81 \\text{ N kg}^{-1} $ near the Earth's surface, remember that $ g $ follows an inverse-square law ($ g \\propto \\frac{1}{r^2} $) and decreases significantly at higher orbital altitudes."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Gravitational Field Strength' }], summaryText: '', ready: true },
   evidence: [],

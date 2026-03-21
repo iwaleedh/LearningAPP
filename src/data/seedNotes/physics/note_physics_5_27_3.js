@@ -54,7 +54,16 @@ export const note_physics_5_27_3 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0a0a1a"/><circle cx="95" cy="112" r="60" fill="#ff6b6b" opacity="0.85"/><circle cx="248" cy="128" r="20" fill="#44370a"/><circle cx="345" cy="133" r="5" fill="#74c0fc"/><text x="200" y="22" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">Stellar Radius Comparison (conceptual)</text><text x="200" y="185" font-family="sans-serif" font-size="9" fill="#1e293b" text-anchor="middle"><strong>Red Giant</strong> (~50 R&#9737;) &#160;&#160;&#160;&#160;&#160;&#160; Sun (R&#9737;) &#160;&#160;&#160;&#160; <strong>White Dwarf</strong> (~0.01 R&#9737;)</text></svg>', caption: 'Relative sizes: red giants are vastly larger than the Sun; white dwarfs are roughly Earth-sized.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Find stellar radius from L and T', text: 'Given: L = 3.85 × 10²⁶ W, T = 5800 K, σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴.\nRearrange L = 4πR²σT⁴ → R = √(L / 4πσT⁴).\nR = √(3.85×10²⁶ / (4π × 5.67×10⁻⁸ × 5800⁴)) = √(3.85×10²⁶ / 2.54×10¹⁰) ≈ 3.9×10⁷ m ≈ R☉.\nCheck: this matches the known solar radius (~6.96×10⁸ m — adjust T/L for an exam but method is identical).' } },
     { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tips: HR Diagram', text: 'Remember temperature increases right to left on the x-axis — examiners catch students who read it the wrong way.\nSpectral class mnemonic: Oh Be A Fine Girl Kiss Me (O→M, hot→cool).\nIf asked to compare radii: a <strong>red giant</strong> can be cool yet highly luminous only because R is enormous (L ∝ R²T⁴).\nStellar lifetime ∝ 1/M² — more massive stars burn out far faster despite larger fuel reserves.' } },
-    { id: 'summary-1', type: 'summary', data: { text: "HR diagram: L vs T (T decreases left to right). <strong>Main sequence</strong>: diagonal band, H <strong>fusion</strong>, hydrostatic equilibrium, ~90% of stars. Red giants: top-right, cool (~4000K), large radii. White dwarfs: bottom-left, hot but tiny and dim. Supergiants: very top, massive stars fusing heavier elements. L = 4πR²σT⁴ → R = √(L/4πσT⁴). Spectral classes: O B A F G K M. Sun: G2V, T ≈ 5800 K, L = 3.85×10²⁶ W." } }
+    { id: 'summary-1', type: 'summary', data: { text: "HR diagram: L vs T (T decreases left to right). <strong>Main sequence</strong>: diagonal band, H <strong>fusion</strong>, hydrostatic equilibrium, ~90% of stars. Red giants: top-right, cool (~4000K), large radii. White dwarfs: bottom-left, hot but tiny and dim. Supergiants: very top, massive stars fusing heavier elements. L = 4πR²σT⁴ → R = √(L/4πσT⁴). Spectral classes: O B A F G K M. Sun: G2V, T ≈ 5800 K, L = 3.85×10²⁶ W." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tips: HR Diagram",
+        text: "Remember temperature increases right to left on the x-axis. Spectral class mnemonic: Oh Be A Fine Girl Kiss Me (O\u2192M, hot\u2192cool). A red giant can be cool yet highly luminous only because R is enormous. Stellar lifetime \u221d 1/M\u00b2 \u2014 more massive stars burn out far faster."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is the <strong>main sequence</strong> on the HR diagram? What physical process maintains stars on the <strong>main sequence</strong>?' },

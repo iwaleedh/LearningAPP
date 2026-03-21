@@ -58,7 +58,16 @@ export const note_physics_5_31_5 = {
     { id: 'summary-1', type: 'summary', data: { text: "Both fields: F ∝ 1/r²; field strength ∝ 1/r²; potential ∝ 1/r; field = −dV/dr; equipotentials ⊥ field lines. Gravity: F = Gm₁m₂/r²; g = GM/r²; V = −GM/r (always −ve); attractive only; very weak. Electrostatic: F = kQ₁Q₂/r²; E = kQ/r²; V = kQ/r (±); attractive or repulsive; ~10³⁶× stronger. Gravity dominates cosmically: matter is electrically neutral (charges cancel); mass is always positive (adds up)." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a" rx="6"/><line x1="50" y1="100" x2="370" y2="100" stroke="#495057" stroke-width="1.5"/><path d="M 80,40 C 120,65 200,82 360,96" fill="none" stroke="#c92a2a" stroke-width="2"/><path d="M 80,160 C 120,135 200,118 360,104" fill="none" stroke="#339af0" stroke-width="2"/><text x="295" y="56" font-family="sans-serif" font-size="10" fill="#c92a2a">V = kQ/r (+Q)</text><text x="290" y="152" font-family="sans-serif" font-size="10" fill="#1864ab">V = −GM/r</text></svg>', caption: 'Potential vs distance: electric potential (red, +Q) is always positive and decays to zero; gravitational potential (blue) is always negative, rising toward zero. Both follow 1/r.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked: Force Ratio F_e / F_g for Two Protons', text: 'F_e = ke²/r² = 8.99×10⁹ × (1.6×10⁻¹⁹)² / r² = 2.30×10⁻²⁸/r² N<br>F_g = Gm_p²/r² = 6.67×10⁻¹¹ × (1.67×10⁻²⁷)² / r² = 1.87×10⁻⁶⁴/r² N<br>Ratio = F_e/F_g = 2.30×10⁻²⁸ / 1.87×10⁻⁶⁴ ≈ 1.2×10³⁶ (r² cancels — ratio is independent of separation)<br>Electricity is ~10³⁶× stronger than gravity between two protons at any distance.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Potential Signs', text: 'V_g = −GM/r is always negative — never omit the minus sign. V_e = kQ/r is positive for +Q, negative for −Q. Both → 0 as r → ∞ (zero reference at infinity). For E_p = mV_g or E_p = qV_e, a negative value means the particle is bound to the source.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Potential Signs', text: 'V_g = −GM/r is always negative — never omit the minus sign. V_e = kQ/r is positive for +Q, negative for −Q. Both → 0 as r → ∞ (zero reference at infinity). For E_p = mV_g or E_p = qV_e, a negative value means the particle is bound to the source.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: Comparing Fields",
+        text: "When asked to compare electric and gravitational fields, the most crucial difference to state is that gravitational forces are purely attractive, whereas electric forces can be either attractive or repulsive."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Write Newton\'s law of gravitation and Coulomb\'s law side-by-side. What is the analogous quantity in each? What is the key structural difference?' },

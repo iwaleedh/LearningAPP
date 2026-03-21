@@ -60,7 +60,16 @@ export const note_physics_5_32_3 = {
     { id: 'summary-1', type: 'summary', data: { text: "SHM displacement: x = A cos(ωt) (start at max) or x = A sin(ωt) (start at equilibrium). Velocity: v = −Aω sin(ωt); leads x by π/2. Acceleration: a = −Aω²cos(ωt) = −ω²x; antiphase to x. Speed at displacement x: v = ±ω√(A²−x²). At x = 0: v = ±Aω (max), a = 0. At x = ±A: v = 0, a = ∓Aω² (max). E_total = ½mω²A² = constant; alternates between KE and PE." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><line x1="20" y1="100" x2="390" y2="100" stroke="#adb5bd" stroke-width="1"/><path d="M 20 60 Q 60 20 100 60 Q 140 100 180 60 Q 220 20 260 60 Q 300 100 340 60 Q 380 20 390 60" stroke="#339af0" stroke-width="2.5" fill="none"/><path d="M 20 100 Q 60 60 100 100 Q 140 140 180 100 Q 220 60 260 100 Q 300 140 340 100 Q 380 60 390 100" stroke="#40c057" stroke-width="2" fill="none" stroke-dasharray="5,3"/><path d="M 20 140 Q 60 100 100 140 Q 140 180 180 140 Q 220 100 260 140 Q 300 180 340 140 Q 380 100 390 140" stroke="#fa5252" stroke-width="2" fill="none" stroke-dasharray="2,3"/><text x="200" y="193" font-family="sans-serif" font-size="9" fill="#495057" text-anchor="middle">x (blue) &#8212; v leads x by &#960;/2 (green dashed) &#8212; a antiphase to x (red dotted)</text></svg>', caption: 'Phase relationships: displacement x (blue), velocity v (green, π/2 ahead of x), acceleration a (red, antiphase to x).' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Speed at a Given Displacement', text: 'A mass oscillates with A = 0.08 m and T = 0.40 s. Find the speed when x = 0.06 m.\nω = 2π/T = 2π/0.40 = 5π ≈ 15.7 rad s⁻¹.\nv = ω√(A² − x²) = 15.7 × √(0.08² − 0.06²) = 15.7 × √(0.0028) ≈ 0.83 m s⁻¹.\nNote: v_max = Aω = 0.08 × 15.7 ≈ 1.26 m s⁻¹ (at x = 0).' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Phase & Energy', text: 'Remember: a is always antiphase to x (a = −ω²x), so acceleration and displacement graphs are mirror images. Energy ∝ A² — if the amplitude doubles, total energy quadruples. On graph sketches, v must be zero wherever the gradient of the x–t graph is zero (i.e. at the peaks and troughs).' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Phase & Energy', text: 'Remember: a is always antiphase to x (a = −ω²x), so acceleration and displacement graphs are mirror images. Energy ∝ A² — if the amplitude doubles, total energy quadruples. On graph sketches, v must be zero wherever the gradient of the x–t graph is zero (i.e. at the peaks and troughs).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip: SHM Graphs",
+        text: "Remember the phase relationships: At maximum displacement, velocity is zero and acceleration is at a maximum. As the oscillator passes through the equilibrium position, displacement and acceleration are zero, but velocity is at a maximum."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Starting from x = A cos(ωt), differentiate to find v and a. What are the maximum values of each?' },

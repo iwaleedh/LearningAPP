@@ -55,7 +55,16 @@ export const note_physics_5_30_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "<strong>Radioactive decay</strong> is random (unpredictable which nucleus next) and spontaneous (no trigger needed). A = λN; N = N₀e⁻λt; A = A₀e⁻λt. <strong>Half-life</strong>: T₁/₂ = ln2/λ; after n half-lives N = N₀/2ⁿ. Linearise: plot ln A vs t → gradient = −λ; y-intercept = ln A₀. Statistical uncertainty: ±√N in a count of N. Always subtract background count rate. Count for longer to reduce % uncertainty." } },
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><text x="200" y="18" font-family="sans-serif" font-size="12" font-weight="bold" fill="#212529" text-anchor="middle">Remaining Quantity After Each <strong>Half-Life</strong></text><rect x="60" y="40" width="70" height="120" fill="#339af0" rx="3"/><rect x="160" y="100" width="70" height="60" fill="#1e3a8a" rx="3"/><rect x="260" y="130" width="70" height="30" fill="#1c3a64" rx="3"/><text font-family="sans-serif" font-size="10" fill="#495057"><tspan x="95" y="175" text-anchor="middle">t = 0</tspan><tspan x="195" y="175" text-anchor="middle">t = T&#189;</tspan><tspan x="295" y="175" text-anchor="middle">t = 2T&#189;</tspan><tspan x="95" y="35" text-anchor="middle" fill="#1971c2">N&#8320;</tspan><tspan x="195" y="95" text-anchor="middle" fill="#1971c2">N&#8320;/2</tspan><tspan x="295" y="125" text-anchor="middle" fill="#1971c2">N&#8320;/4</tspan></text></svg>', caption: 'Bar chart: quantity remaining halves at each <strong>half-life</strong>. At t = 2T½ only N₀/4 remains.' } },
     { id: 'enr-worked-1', type: 'callout', data: { style: 'worked', title: 'Worked: Using N = N₀e⁻λt', text: 'Given: λ = 2.0 × 10⁻³ s⁻¹, N₀ = 5.0 × 10¹⁸, t = 400 s.<br>λt = 2.0 × 10⁻³ × 400 = 0.80.<br>N = N₀ e⁻λt = 5.0 × 10¹⁸ × e⁻⁰·⁸⁰ = 5.0 × 10¹⁸ × 0.449.<br>N ≈ 2.2 × 10¹⁸ nuclei.' } },
-    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Unit Consistency', text: 'Always convert T₁/₂ to seconds before computing λ = ln 2 / T₁/₂. Use λ (s⁻¹) and t (s) — the exponent λt must be dimensionless.<br>For whole-number half-lives, N = N₀/2ⁿ is quicker than the exponential form.<br>Remember to subtract background count rate before any λ or T₁/₂ calculation.' } }
+    { id: 'enr-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Unit Consistency', text: 'Always convert T₁/₂ to seconds before computing λ = ln 2 / T₁/₂. Use λ (s⁻¹) and t (s) — the exponent λt must be dimensionless.<br>For whole-number half-lives, N = N₀/2ⁿ is quicker than the exponential form.<br>Remember to subtract background count rate before any λ or T₁/₂ calculation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Definitions: Random vs Spontaneous",
+        text: "Examiners strictly distinguish between these two terms. 'Random' means we cannot predict exactly when a specific nucleus will decay. 'Spontaneous' means the decay cannot be induced or affected by external factors like temperature or pressure."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: 'What does it mean to say <strong>radioactive decay</strong> is (a) random and (b) spontaneous? How do fluctuations in count rate demonstrate randomness?' },
