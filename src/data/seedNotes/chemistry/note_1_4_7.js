@@ -30,6 +30,16 @@ export const note_chemistry_1_4_7 = {
       caption: 'Why alkanes are unreactive — and the exception of cyclopropane',
       svg: `<svg viewBox="0 0 580 145" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif"><rect x="2" y="2" width="354" height="141" rx="8" fill="#fef9c3" stroke="#fbbf24" stroke-width="1.5"/><rect x="368" y="2" width="210" height="141" rx="8" fill="#fee2e2" stroke="#fca5a5" stroke-width="1.5"/><text x="179" y="21" text-anchor="middle" font-weight="bold" fill="#92400e" font-size="12">Why Alkanes Are Unreactive</text><text x="473" y="21" text-anchor="middle" font-weight="bold" fill="#dc2626" font-size="12">Exception: Cyclopropane</text><text x="10" y="42" fill="#374151" font-size="10">&#x2022; C&#x2013;H and C&#x2013;C bonds are <tspan font-weight="bold">non-polar</tspan>: similar</text><text x="10" y="56" fill="#374151" font-size="10"> electronegativities &#x2192; no &#x03B4;&#x207A;/&#x03B4;&#x207B; centres.</text><text x="10" y="74" fill="#374151" font-size="10">&#x2022; Bonds are <tspan font-weight="bold">strong</tspan>: C&#x2013;H = 413 kJ mol&#x207B;&#xB9;;</text><text x="10" y="88" fill="#374151" font-size="10"> C&#x2013;C = 348 kJ mol&#x207B;&#xB9; &#x2192; hard to break.</text><text x="10" y="106" fill="#374151" font-size="10">&#x2022; Main reactions: <tspan font-weight="bold">combustion</tspan> (+ O&#x2082;),</text><text x="10" y="120" fill="#374151" font-size="10"> <tspan font-weight="bold">free radical subst.</tspan> (+ halogen/UV),</text><text x="10" y="134" fill="#374151" font-size="10"> <tspan font-weight="bold">cracking</tspan> (high temp/catalyst).</text><text x="376" y="42" fill="#374151" font-size="10">C&#x2013;C&#x2013;C angle forced to 60°</text><text x="376" y="56" fill="#374151" font-size="10">(normal = 109.5° for sp&#xB3;)</text><text x="376" y="74" fill="#dc2626" font-size="10">&#x2192; ring strain: bonds</text><text x="376" y="88" fill="#dc2626" font-size="10">weaker &amp; easier to break</text><text x="376" y="106" fill="#374151" font-size="10">&#x2192; ring opens readily</text><text x="376" y="122" fill="#374151" font-size="10">&#x2192; MORE reactive than</text><text x="376" y="136" fill="#374151" font-size="10">other alkanes</text></svg>`
     }}
+  ,
+    {
+      id: 'callout-exam-4-7',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "General Formulae Trap",
+        text: "Remember that cycloalkanes have the general formula C\u2099H\u2082\u2099 \u2014 which is the same as straight-chain alkenes \u2014 whereas straight-chain alkanes are C\u2099H\u2082\u2099\u208a\u2082."
+      }
+    }
   ],
   recall: {
     enabled: true,

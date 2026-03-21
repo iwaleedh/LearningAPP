@@ -54,6 +54,23 @@ export const note_chemistry_5_16_1 = {
       },
     },
     {
+      type: 'callout',
+      id: 'callout-exam-tip-conc',
+      data: {
+        style: 'warning',
+        title: 'High-Value Exam Tip: Explaining changes to E',
+        text: 'When asked how a change in concentration affects the electrode potential, always explicitly mention the equilibrium shift. Use this template: \\"Increasing [ion] shifts the equilibrium (write out half-equation) to the right. This removes electrons, making the electrode potential more positive.\\" Do not just say \\"it makes E more positive\\" without explaining the equilibrium shift (Le Chatelier\'s Principle)!',
+      },
+    },
+    {
+      type: 'svg',
+      id: 'svg-le-chatelier-conc',
+      data: {
+        caption: "Le Chatelier's Principle and Electrode Potential",
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="100%" height="auto"><defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6" /></marker><marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" /></marker></defs><style>text{font-family:sans-serif;fill:currentColor} .heading{font-weight:bold;font-size:16px;} .sub{font-size:12px;} .eq{font-size:18px;font-weight:bold;} </style><rect x="10" y="10" width="480" height="180" rx="10" fill="none" stroke="#cbd5e1" stroke-width="2" /><text x="250" y="40" text-anchor="middle" class="heading">Mⁿ⁺(aq) + ne⁻ ⇌ M(s)</text><rect x="30" y="70" width="200" height="100" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" /><text x="130" y="100" text-anchor="middle" font-weight="bold" fill="#1e3a8a">Increase [Mⁿ⁺]</text><path d="M 130 110 L 130 130" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrow)" /><text x="130" y="150" text-anchor="middle" fill="#1e3a8a" class="sub" font-weight="bold">Equilibrium shifts RIGHT</text><text x="130" y="165" text-anchor="middle" fill="#1e3a8a" class="sub">E becomes more positive</text><rect x="270" y="70" width="200" height="100" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2" /><text x="370" y="100" text-anchor="middle" font-weight="bold" fill="#7f1d1d">Decrease [Mⁿ⁺]</text><path d="M 370 110 L 370 130" stroke="#ef4444" stroke-width="3" marker-end="url(#arrowRed)" /><text x="370" y="150" text-anchor="middle" fill="#7f1d1d" class="sub" font-weight="bold">Equilibrium shifts LEFT</text><text x="370" y="165" text-anchor="middle" fill="#7f1d1d" class="sub">E becomes less positive</text></svg>'
+      }
+    },
+    {
       type: 'heading',
       id: 'h-temperature-effect',
       data: {

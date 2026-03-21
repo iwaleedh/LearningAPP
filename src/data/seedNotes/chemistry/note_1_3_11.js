@@ -132,6 +132,16 @@ export const note_chemistry_1_3_11 = {
         { delay: 3, colSpan: 2, icon: '⚠️', title: 'Sources of Error & Improvements', html: '<strong>Heat loss to surroundings:</strong> use polystyrene cup, lid, draught shield.<br/><strong>Heat capacity of calorimeter ignored:</strong> slight underestimate of |ΔH|.<br/><strong>Extrapolation method:</strong> plot temperature vs time and extrapolate back to mixing point for accurate ΔT.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-11-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "SIGN CONVENTION: \u0394H = \u2212q/n (Don't Forget the Negative!)",
+        text: "Examiners mark this as a common error: students write \u0394H = q/n and lose marks. THE RULE: when temperature rises (exothermic reaction), q is POSITIVE (solution gained heat). But \u0394H must be NEGATIVE for exothermic."
+      }
+    }
   ],
   recall: {
     enabled: true,

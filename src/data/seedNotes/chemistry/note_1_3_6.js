@@ -128,6 +128,16 @@ export const note_chemistry_1_3_6 = {
         { delay: 3, colSpan: 2, icon: '⛛️', title: 'Examples', html: '<strong>Non-polar:</strong> I₂ (sublimes 184°C), CH₄ (−161°C), Cl₂ (−34°C).<br/><strong>Polar:</strong> HCl (−85°C), SO₂ (−10°C), H₂O (100°C — hydrogen bonding elevates bp).<br/>Covalent bonds NOT broken during melting/boiling.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-6-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "EXAM TRAP: Melting \u2260 Breaking Covalent Bonds",
+        text: "Students frequently state that melting a simple molecular solid involves 'breaking covalent bonds.' This is WRONG and loses marks. When Cl\u2082(s) melts to Cl\u2082(l), ONLY the weak intermolecular London forces between molecules are broken. Each Cl\u2082 molecule remains intact \u2014 the covalent Cl\u2013Cl bond stays unbroken."
+      }
+    }
   ],
   recall: {
     enabled: true,

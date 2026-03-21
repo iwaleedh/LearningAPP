@@ -142,7 +142,17 @@ export const note_chemistry_1_5_0 = {
         ]
       },
       terms: []
-    },],
+    },
+    {
+      id: 'callout-exam-5-0',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Defining the Pi (\u03c0) Bond",
+        text: "You must explicitly mention that a \u03c0 bond is formed by the <strong>'sideways overlap of adjacent p orbitals'</strong> above and below the plane of the \u03c3 bond. This exact phrasing is a common mark scheme requirement."
+      }
+    }
+  ],
   recall: {
     enabled: true,
     cues: [

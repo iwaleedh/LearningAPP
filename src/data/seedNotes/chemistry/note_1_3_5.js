@@ -263,6 +263,16 @@ export const note_chemistry_1_3_5 = {
         { delay: 3, colSpan: 2, icon: '💡', title: 'Dipole Moments & Symmetry', html: 'A <strong>dipole moment (μ)</strong> indicates overall polarity.<br/>Molecules with polar bonds can still be <em>non-polar</em> if geometry causes dipoles to cancel.<br/>e.g. BF₃: 3 polar B–F bonds, trigonal planar → dipoles cancel exactly → non-polar.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-6',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Polar Bond \u2260 Polar Molecule (Symmetry Cancels Dipoles)",
+        text: "Frequent error: \"CO\u2082 is polar because C=O bonds are polar.\" <strong>The molecule is non-polar.</strong> Why? Symmetric linear structure: the two C=O dipole moments point in exactly opposite directions and <strong>cancel to zero.</strong> Similarly, CCl\u2084 has polar C\u2014Cl bonds but is non-polar due to tetrahedral symmetry. Test for overall polarity: <strong>consider both bond polarity AND molecular geometry.</strong>"
+      }
+    }
   ],
   recall: {
     enabled: true,

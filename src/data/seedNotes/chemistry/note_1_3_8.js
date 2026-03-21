@@ -118,6 +118,16 @@ export const note_chemistry_1_3_8 = {
         { delay: 3, colSpan: 2, icon: '🧮', title: 'Using Average Bond Enthalpies', html: 'ΔH ≈ Σ(bonds broken) − Σ(bonds formed)<br/>Breaking bonds = endothermic (+ve); forming bonds = exothermic (−ve).<br/>Values are <em>averages</em> — results are approximate (± a few kJ mol⁻¹).' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-8-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "KEY LIMITATION: Bond Enthalpies Are MEAN Values",
+        text: "Many students calculate \u0394H_rxn using mean bond enthalpies and expect an exact answer matching literature values. Examiners deduct marks if you ignore this caveat. The C\u2013H bond has slightly different enthalpies in different molecular environments. Always state: 'These are mean values' in your answer."
+      }
+    }
   ],
   recall: {
     enabled: true,

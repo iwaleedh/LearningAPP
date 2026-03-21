@@ -159,6 +159,16 @@ export const note_chemistry_1_4_9 = {
   <text x="306" y="162" fill="#6b7280" font-size="9">Higher octane; H₂ is a useful by-product</text>
 </svg>`, caption: 'Isomerisation (Pt/zeolite, 250°C): straight → branched. Reforming (Pt/Al₂O₃, 500°C): straight → aromatic + H₂. Both increase octane rating.' } },
     { id: 'callout-fluid-catalytic', type: 'callout', data: { style: 'key', title: 'Catalyst Comparison: Isomerisation vs Reforming', text: 'Note the use of Platinum (Pt). Isomerisation uses Pt on zeolite at 250°C, while reforming uses Pt on aluminium oxide at 500°C. These are vital for upgrading naphtha into high-octane petrol components.' } }
+  ,
+    {
+      id: 'callout-exam-4-9',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Fractional Distillation Core Principle",
+        text: "Examiners often ask why fractions separate. You must explicitly state that they have <strong>different boiling points</strong> due to differing chain lengths and consequently different London force strengths."
+      }
+    }
   ],
   recall: {
     enabled: true,

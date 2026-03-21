@@ -145,6 +145,16 @@ export const note_chemistry_2_7_7 = {
         text: "Saturated vapour pressure is the pressure of a vapour in dynamic equilibrium with its liquid phase. It increases non-linearly with temperature. A liquid boils when its saturated vapour pressure matches the external atmospheric pressure."
       }
     }
+  ,
+    {
+      id: 'callout-exam-7-7',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Bonds vs Intermolecular Forces",
+        text: "Be precise: don't just generically say 'bonds are broken'\u2014always explicitly specify whether you mean strong intramolecular covalent bonds or weak intermolecular forces (e.g. London dispersion)."
+      }
+    }
   ],
   recall: {
     enabled: true,

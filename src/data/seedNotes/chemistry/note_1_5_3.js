@@ -606,6 +606,16 @@ export const note_chemistry_1_5_3 = {
       },
       terms: ['Homolytic fission', 'Heterolytic fission']
     }
+  ,
+    {
+      id: 'callout-exam-5-3',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Precision with Curly Arrows",
+        text: "Curly arrows must be drawn accurately! An arrow representing electrophilic attack must start <strong>exactly at the C=C double bond line</strong> and point directly to the electrophilic atom (e.g. the \u03b4+ Br)."
+      }
+    }
   ],
   recall: {
     enabled: true,

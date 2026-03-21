@@ -46,6 +46,16 @@ export const note_chemistry_1_4_0 = {
       style: 'warning', title: 'Hazard vs Risk',
       text: 'A <strong>hazard</strong> is an intrinsic property with potential to cause harm (e.g. toxic, flammable, corrosive).<br/>A <strong>risk</strong> is the probability that the hazard will cause harm in a specific context.<br/><br/><strong>Control measures</strong> reduce risk: fume cupboard for toxic vapours; gloves/goggles for corrosives; water bath instead of naked flame for flammables; using smaller quantities of hazardous reagents.'
     }}
+  ,
+    {
+      id: 'callout-exam-4-0',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Error: Formula Types",
+        text: "Do not confuse empirical, molecular, structural, and displayed formulae. Examiners strictly penalise drawing a structural/skeletal hybrid when a <strong>displayed formula</strong> (showing every single atom and bond) is explicitly requested."
+      }
+    }
   ],
   recall: {
     enabled: true,

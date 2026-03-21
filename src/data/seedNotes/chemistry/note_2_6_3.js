@@ -144,7 +144,196 @@ export const note_chemistry_2_6_3 = {
                 ]
             },
             terms: []
-        }
+        },
+        {
+            id: 'svg-cooling-curve',
+            type: 'svg',
+            data: {
+                svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="auto" font-family="Inter,Arial,sans-serif">
+    <!-- Background Grid -->
+    <defs>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#e5e7eb" stroke-width="0.5"/>
+        </pattern>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#1e40af" />
+        </marker>
+    </defs>
+    <rect x="50" y="20" width="600" height="330" fill="url(#grid)" />
+    
+    <!-- Axes -->
+    <line x1="50" y1="350" x2="670" y2="350" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="50" y1="350" x2="50" y2="10" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <!-- Axis Labels -->
+    <text x="350" y="385" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">Time (minutes)</text>
+    <text x="25" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827" transform="rotate(-90 25,180)">Temperature (°C)</text>
+    
+    <!-- Ticks & Values (X) -->
+    <g font-size="12" fill="#4b5563" text-anchor="middle">
+        <text x="50" y="365">0</text>
+        <text x="110" y="365">1</text>
+        <text x="170" y="365">2</text>
+        <text x="230" y="365">3</text>
+        <text x="290" y="365">4 (Mix)</text>
+        <text x="350" y="365">5</text>
+        <text x="410" y="365">6</text>
+        <text x="470" y="365">7</text>
+        <text x="530" y="365">8</text>
+        <text x="590" y="365">9</text>
+        <text x="650" y="365">10</text>
+    </g>
+    
+    <!-- Mixing vertical line -->
+    <line x1="290" y1="20" x2="290" y2="350" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5,5" />
+    
+    <!-- Initial Stable Line (solid back to t=0, extrapolated to t=4 in dash) -->
+    <line x1="50" y1="280" x2="230" y2="280" stroke="#047857" stroke-width="2.5" />
+    <line x1="230" y1="280" x2="290" y2="280" stroke="#047857" stroke-width="2.5" stroke-dasharray="5,4" />
+    
+    <!-- Cooling Line (solid from t=5, extrapolated back to t=4 in dash) -->
+    <!-- Extrapolated to exactly Min 4 at y=40 -->
+    <!-- Cools through (350, 80), (410, 120), (470, 160) -->
+    <line x1="350" y1="80" x2="650" y2="280" stroke="#b91c1c" stroke-width="2.5" />
+    <line x1="290" y1="40" x2="350" y2="80" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="5,4" />
+    
+    <!-- Initial Temperature points -->
+    <g fill="#10b981" stroke="#064e3b" stroke-width="1">
+        <circle cx="50" cy="280" r="4" />
+        <circle cx="110" cy="280" r="4" />
+        <circle cx="170" cy="280" r="4" />
+        <circle cx="230" cy="280" r="4" />
+    </g>
+    
+    <!-- Cooling points -->
+    <g fill="#ef4444" stroke="#7f1d1d" stroke-width="1">
+        <circle cx="350" cy="80" r="4" />
+        <circle cx="410" cy="120" r="4" />
+        <circle cx="470" cy="160" r="4" />
+        <circle cx="530" cy="200" r="4" />
+        <circle cx="590" cy="240" r="4" />
+        <circle cx="650" cy="280" r="4" />
+    </g>
+    
+    <!-- Extrapolated Points at t=4 -->
+    <circle cx="290" cy="280" r="4" fill="none" stroke="#047857" stroke-width="2" />
+    <circle cx="290" cy="40" r="4" fill="none" stroke="#b91c1c" stroke-width="2" />
+    
+    <!-- True Delta T Arrow -->
+    <line x1="290" y1="280" x2="290" y2="40" stroke="#2563eb" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    
+    <!-- Labels & Callouts -->
+    <rect x="75" y="300" width="145" height="35" rx="4" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+    <text x="147.5" y="322" font-size="12" fill="#065f46" text-anchor="middle">Initial stable temp</text>
+    
+    <rect x="420" y="45" width="160" height="35" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="500" y="67" font-size="12" fill="#991b1b" text-anchor="middle">Cooling due to heat loss</text>
+
+    <rect x="80" y="25" width="180" height="40" rx="4" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="170" y="43" font-size="12" fill="#1e40af" text-anchor="middle">Theoretical max temp if</text>
+    <text x="170" y="58" font-size="12" fill="#1e40af" text-anchor="middle">no heat was lost instantly</text>
+    <line x1="260" y1="40" x2="280" y2="40" stroke="#3b82f6" stroke-width="1" />
+
+    <text x="310" y="165" font-size="20" font-weight="bold" fill="#1e40af">True ΔT</text>
+</svg>`,
+                caption: 'Cooling curve extrapolation graph to find the true temperature change (ΔT) by accounting for heat loss.'
+            }
+        },
+        {
+            id: 'svg-cooling-curve',
+            type: 'svg',
+            data: {
+                svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="auto" font-family="Inter,Arial,sans-serif">
+    <!-- Background Grid -->
+    <defs>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#e5e7eb" stroke-width="0.5"/>
+        </pattern>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#1e40af" />
+        </marker>
+    </defs>
+    <rect x="50" y="20" width="600" height="330" fill="url(#grid)" />
+    
+    <!-- Axes -->
+    <line x1="50" y1="350" x2="670" y2="350" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="50" y1="350" x2="50" y2="10" stroke="#111827" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <!-- Axis Labels -->
+    <text x="350" y="385" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827">Time (minutes)</text>
+    <text x="25" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#111827" transform="rotate(-90 25,180)">Temperature (°C)</text>
+    
+    <!-- Ticks & Values (X) -->
+    <g font-size="12" fill="#4b5563" text-anchor="middle">
+        <text x="50" y="365">0</text>
+        <text x="110" y="365">1</text>
+        <text x="170" y="365">2</text>
+        <text x="230" y="365">3</text>
+        <text x="290" y="365">4 (Mix)</text>
+        <text x="350" y="365">5</text>
+        <text x="410" y="365">6</text>
+        <text x="470" y="365">7</text>
+        <text x="530" y="365">8</text>
+        <text x="590" y="365">9</text>
+        <text x="650" y="365">10</text>
+    </g>
+    
+    <!-- Mixing vertical line -->
+    <line x1="290" y1="20" x2="290" y2="350" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5,5" />
+    
+    <!-- Initial Stable Line (solid back to t=0, extrapolated to t=4 in dash) -->
+    <line x1="50" y1="280" x2="230" y2="280" stroke="#047857" stroke-width="2.5" />
+    <line x1="230" y1="280" x2="290" y2="280" stroke="#047857" stroke-width="2.5" stroke-dasharray="5,4" />
+    
+    <!-- Cooling Line (solid from t=5, extrapolated back to t=4 in dash) -->
+    <!-- Extrapolated to exactly Min 4 at y=40 -->
+    <!-- Cools through (350, 80), (410, 120), (470, 160) -->
+    <line x1="350" y1="80" x2="650" y2="280" stroke="#b91c1c" stroke-width="2.5" />
+    <line x1="290" y1="40" x2="350" y2="80" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="5,4" />
+    
+    <!-- Initial Temperature points -->
+    <g fill="#10b981" stroke="#064e3b" stroke-width="1">
+        <circle cx="50" cy="280" r="4" />
+        <circle cx="110" cy="280" r="4" />
+        <circle cx="170" cy="280" r="4" />
+        <circle cx="230" cy="280" r="4" />
+    </g>
+    
+    <!-- Cooling points -->
+    <g fill="#ef4444" stroke="#7f1d1d" stroke-width="1">
+        <circle cx="350" cy="80" r="4" />
+        <circle cx="410" cy="120" r="4" />
+        <circle cx="470" cy="160" r="4" />
+        <circle cx="530" cy="200" r="4" />
+        <circle cx="590" cy="240" r="4" />
+        <circle cx="650" cy="280" r="4" />
+    </g>
+    
+    <!-- Extrapolated Points at t=4 -->
+    <circle cx="290" cy="280" r="4" fill="none" stroke="#047857" stroke-width="2" />
+    <circle cx="290" cy="40" r="4" fill="none" stroke="#b91c1c" stroke-width="2" />
+    
+    <!-- True Delta T Arrow -->
+    <line x1="290" y1="280" x2="290" y2="40" stroke="#2563eb" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    
+    <!-- Labels & Callouts -->
+    <rect x="75" y="300" width="145" height="35" rx="4" fill="#ecfdf5" stroke="#10b981" stroke-width="1"/>
+    <text x="147.5" y="322" font-size="12" fill="#065f46" text-anchor="middle">Initial stable temp</text>
+    
+    <rect x="420" y="45" width="160" height="35" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="500" y="67" font-size="12" fill="#991b1b" text-anchor="middle">Cooling due to heat loss</text>
+
+    <rect x="80" y="25" width="180" height="40" rx="4" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="170" y="43" font-size="12" fill="#1e40af" text-anchor="middle">Theoretical max temp if</text>
+    <text x="170" y="58" font-size="12" fill="#1e40af" text-anchor="middle">no heat was lost instantly</text>
+    <line x1="260" y1="40" x2="280" y2="40" stroke="#3b82f6" stroke-width="1" />
+
+    <text x="310" y="165" font-size="20" font-weight="bold" fill="#1e40af">True ΔT</text>
+</svg>`,
+                caption: 'Cooling curve extrapolation graph to find the true temperature change (ΔT) by accounting for heat loss.'
+            }
+        },
+
     ],
     recall: {
         enabled: true,

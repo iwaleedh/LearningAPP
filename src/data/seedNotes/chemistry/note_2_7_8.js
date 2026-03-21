@@ -186,6 +186,16 @@ export const note_chemistry_2_7_8 = {
         text: "Phase diagrams map out state equilibria against pressure and temperature. The lines represent dynamic equilibrium between phases, converging at the unique Triple Point. The liquid-gas line terminates at the Critical Point. Water uniquely possesses a backwards-sloping melting line, while Carbon Dioxide exhibits a triple point at 5.11 atm causing it to undergo sublimation under standard atmospheric conditions."
       }
     }
+  ,
+    {
+      id: 'callout-exam-7-8',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Comparing Magnitudes Properly",
+        text: "Ensure you explicitly specify the differing <strong>type</strong> of intermolecular forces dominating each substance, not just the magnitude, when answering comparative long-answer properties questions."
+      }
+    }
   ],
   recall: {
     enabled: true,

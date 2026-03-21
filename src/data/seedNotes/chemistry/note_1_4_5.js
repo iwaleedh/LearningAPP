@@ -31,6 +31,16 @@ export const note_chemistry_1_4_5 = {
       style: 'warning', title: 'Mixture of Products — Further Substitution',
       text: 'FRS produces a mixture because substitution continues:<br/>CH&#x2084; &#x2192; CH&#x2083;Cl &#x2192; CH&#x2082;Cl&#x2082; &#x2192; CHCl&#x2083; &#x2192; CCl&#x2084;<br/>(chloromethane &#x2192; di &#x2192; tri &#x2192; tetrachloromethane)<br/><br/>This is why FRS is not used for producing pure single products — the mixture is difficult and expensive to separate.'
     }}
+  ,
+    {
+      id: 'callout-exam-4-5',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exam Tip: Free Radical Dots",
+        text: "In propagation steps, the radical produced in step 1 must be a reactant in step 2. You must show the radical dot (\u2022) clearly on the correct atom or fragment (e.g. \u2022CH\u2083, not CH\u2083\u2022 if the C holds the unpaired electron)."
+      }
+    }
   ],
   recall: {
     enabled: true,

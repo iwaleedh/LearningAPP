@@ -104,6 +104,15 @@ export const note_chemistry_5_16_2 = {
       },
     },
     {
+      type: 'callout',
+      id: 'callout-salt-bridge-trap',
+      data: {
+        style: 'warning',
+        title: 'High-Value Exam Tip: The "KCl Salt Bridge" Trap',
+        text: 'Exam questions often ask why a potassium chloride (KCl) salt bridge cannot be used in a cell containing Ag⁺ or Pb²⁺ ions. The Cl⁻ ions from the bridge would react to form an insoluble precipitate of AgCl or PbCl₂. This blocks the pores of the salt bridge, stopping the flow of ions and dropping the cell voltage to zero. Always stick to KNO₃ unless otherwise specified!',
+      },
+    },
+    {
       type: 'heading',
       id: 'h-complex-systems',
       data: {

@@ -449,6 +449,16 @@ export const note_chemistry_1_5_4 = {
         text: 'The bromine water test (orange → colourless in the dark) confirms a C=C double bond by electrophilic addition of Br₂ to form a dibromoalkane. For asymmetrical alkenes reacting with HX, Markovnikov\'s rule predicts the major product: H⁺ adds to the carbon with more H atoms, forming the more stable secondary (or tertiary) carbocation intermediate. Stability order 3° > 2° > 1° — more alkyl groups disperse positive charge and lower activation energy. Both major and minor products always form; never state only one product is possible.'
       }
     }
+  ,
+    {
+      id: 'callout-exam-5-4',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Explaining Major Products",
+        text: "To get full marks explaining Markovnikov's rule, always explicitly compare carbocation stability (e.g., <strong>'the secondary carbocation intermediate is more stable than the primary carbocation'</strong> due to the electron-releasing inductive effect of alkyl groups)."
+      }
+    }
   ],
   recall: {
     enabled: true,

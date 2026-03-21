@@ -23,6 +23,16 @@ export const note_chemistry_1_4_2 = {
       style: 'tip', title: 'Tips for Drawing Isomers in Exams',
       text: '&#x2022; <strong>Avoid duplicates:</strong> A bent chain is still the same continuous main chain. Always check the IUPAC name — if it is the same, it is the same molecule.<br/>&#x2022; <strong>Combine isomer types:</strong> You aren&#x2019;t limited to just chain <em>or</em> positional isomers. Often a mix of both is needed.<br/>&#x2022; <strong>Consider rings and unusual functional groups:</strong> Cycloalkanes are isomeric with alkenes (both CₙH₂ₙ). Aldehydes and ketones share the same formula (CₙH₂ₙO).'
     }}
+  ,
+    {
+      id: 'callout-exam-4-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Avoid Duplicate Isomers",
+        text: "Students often draw the same isomer twice simply by bending the carbon chain. Always find the longest continuous chain and name the molecule to check if two drawn structures are actually identical."
+      }
+    }
   ],
   recall: {
     enabled: true,

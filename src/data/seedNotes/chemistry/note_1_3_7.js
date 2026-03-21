@@ -139,6 +139,16 @@ export const note_chemistry_1_3_7 = {
         { delay: 3, colSpan: 2, icon: '📊', title: 'vs Simple Molecules', html: '<strong>Giant covalent:</strong> very high mp/bp, hard, non-conductor (except graphite), insoluble.<br/><strong>Simple molecular:</strong> low mp/bp, soft, always non-conductor, solubility varies.<br/><em>Key:</em> giant structures require breaking many strong covalent bonds to melt.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-7-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "EXAMINER REPORT: Why Graphite Conducts",
+        text: "Examiners report that many students write 'graphite conducts because it is a giant structure' or 'because electrons are delocalised' without precision. The key: each carbon in graphite forms only 3 \u03c3 bonds. The 4th valence electron occupies a delocalised \u03c0 orbital above/below the hexagonal layers. These mobile \u03c0 electrons carry charge."
+      }
+    }
   ],
   recall: {
     enabled: true,

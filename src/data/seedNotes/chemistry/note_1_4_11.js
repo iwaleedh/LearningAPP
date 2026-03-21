@@ -115,6 +115,16 @@ export const note_chemistry_1_4_11 = {
     { id: 'callout-greenhouse', type: 'callout', data: { style: 'key', title: 'The Enhanced Greenhouse Effect', text: '<strong>Natural greenhouse effect:</strong> CO₂, CH₄, and H₂O vapour absorb infrared radiation emitted from Earth and re-radiate it in all directions, keeping Earth warm enough for life.<br/><strong>Enhanced greenhouse effect:</strong> Increased CO₂ (from burning fossil fuels) and CH₄ (from livestock, landfill) trap more IR radiation → global warming.<br/><strong>Key facts:</strong> Pre-industrial CO₂ ~280 ppm; current level ~422 ppm (NOAA, 2024). CH₄ is ~28× more potent than CO₂ over 100 years.<br/><strong>Consequences:</strong> Rising sea levels, more extreme weather, ecosystem disruption, ocean acidification.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tips', text: '&#x2022; "Carbon neutral" means net CO₂ = zero over the life cycle — not zero CO₂ at the point of combustion.<br/>&#x2022; Hydrogen&#x2019;s only combustion product is water — always state this clearly.<br/>&#x2022; For biofuels, always evaluate BOTH advantages and disadvantages — exam questions often ask for a balanced assessment.<br/>&#x2022; The enhanced greenhouse effect is caused by INCREASED concentrations of greenhouse gases from human activity.' } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Common Mistakes', text: '&#x2022; Saying biofuels are "carbon neutral" without qualification — in practice they are not, due to energy costs of production.<br/>&#x2022; Confusing the greenhouse effect (natural, necessary) with the enhanced greenhouse effect (human-caused, problematic).<br/>&#x2022; Saying hydrogen "produces no pollution" without noting that current H₂ production is mainly from fossil fuels.' } }
+  ,
+    {
+      id: 'callout-exam-4-11',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Defining Carbon Neutrality",
+        text: "When defining carbon neutrality for biofuels, specify that the CO\u2082 <strong>absorbed</strong> by the plant during photosynthesis exactly equals the CO\u2082 <strong>released</strong> when the fuel is burned/combusted."
+      }
+    }
   ],
   recall: {
     enabled: true,

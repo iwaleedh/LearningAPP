@@ -220,6 +220,16 @@ export const note_chemistry_1_3_1 = {
         { delay: 3, colSpan: 2, icon: '🔬', title: 'Physical Properties', html: '<strong>Hard and brittle:</strong> lattice resists distortion; planes of like charges repel when shifted → shatters.<br/><strong>Soluble in polar solvents:</strong> water molecules solvate the ions, pulling them apart.<br/><strong>Insoluble in non-polar solvents</strong> — insufficient lattice-breaking energy.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Conductivity: It's About Ion Mobility, NOT Just Ion Presence",
+        text: "Common error: \"Ionic compounds conduct because they have ions.\" <strong>Wrong.</strong> The key is whether ions are <strong>free to move</strong>. Examiners expect: <strong>Solid = ions in fixed positions \u2192 cannot conduct. Molten or aqueous = ions free to move \u2192 conducts.</strong> Do not say \"ionic compounds always conduct\" \u2014 you will lose marks."
+      }
+    }
   ],
   recall: {
     enabled: true,

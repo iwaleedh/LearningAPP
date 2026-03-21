@@ -73,6 +73,16 @@ export const note_chemistry_1_4_10 = {
     { id: 'callout-acid-rain', type: 'callout', data: { style: 'key', title: 'Acid Rain Formation from SO₂ and NOₓ', text: '<strong>From SO₂:</strong> SO₂ + H₂O → H₂SO₃ (sulfurous acid); 2SO₂ + O₂ → 2SO₃; SO₃ + H₂O → H₂SO₄ (sulfuric acid, strong)<br/><strong>From NOₓ:</strong> NO + ½O₂ → NO₂; 3NO₂ + H₂O → 2HNO₃ + NO (nitric acid)<br/><strong>Effects:</strong> pH typically 4–5 (normal rain ~5.6); kills aquatic life, damages tree roots, corrodes limestone buildings and metal structures.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tips', text: '&#x2022; For CO toxicity: state it binds to haemoglobin (forming carboxyhaemoglobin) and PREVENTS oxygen transport — do not just say "it is toxic".<br/>&#x2022; For NOₓ formation: explain it forms at high temperatures in engine cylinders where N₂ and O₂ from air react.<br/>&#x2022; CO₂ is NOT directly toxic — its effect is as a greenhouse gas causing global warming.<br/>&#x2022; Learn the catalytic converter equation: 2CO + 2NO → 2CO₂ + N₂.' } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Common Mistakes', text: '&#x2022; Saying CO₂ causes acid rain — it does not (it forms very weak carbonic acid). Acid rain is primarily from SO₂ and NOₓ.<br/>&#x2022; Forgetting that NOₓ comes from the nitrogen in AIR, not from the fuel itself (in petrol/diesel engines).<br/>&#x2022; Confusing soot (carbon particles) with CO — soot is solid carbon; CO is a colourless, odourless gas.' } }
+  ,
+    {
+      id: 'callout-exam-4-10',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Incomplete Combustion Products",
+        text: "When writing incomplete combustion equations, read the question carefully to see if it specifically asks for carbon (soot, C) or carbon monoxide (CO) as the required product."
+      }
+    }
   ],
   recall: {
     enabled: true,

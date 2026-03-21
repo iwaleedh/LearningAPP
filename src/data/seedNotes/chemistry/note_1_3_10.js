@@ -180,6 +180,16 @@ export const note_chemistry_1_3_10 = {
         { delay: 3, colSpan: 2, icon: '📈', title: 'Effect on Boiling Point', html: '<strong>Strength order:</strong> London < dipole–dipole < hydrogen bonding.<br/>All IMF types increase with molecular size.<br/>H₂O bp (100°C) &gt;&gt; H₂S bp (−60°C) despite H₂S having larger Mᵣ — hydrogen bonding in H₂O dominates.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-10-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "H-BONDING CONDITIONS: Must Have BOTH Donor AND Acceptor",
+        text: "CRITICAL CONDITIONS: (1) H must be directly bonded to F, O, or N (\u03b4+H forms). (2) A lone pair on another F, O, or N atom must be present (as acceptor)."
+      }
+    }
   ],
   recall: {
     enabled: true,

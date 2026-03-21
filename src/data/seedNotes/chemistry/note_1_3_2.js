@@ -225,6 +225,16 @@ export const note_chemistry_1_3_2 = {
         { delay: 3, colSpan: 2, icon: '✏️', title: 'Dot-Cross Diagram Rules', html: '• Show outer-shell electrons only.<br/>• Dots from one atom, crosses from another.<br/>• Shared pairs in overlapping region between atoms.<br/>• Lone pairs on the atom (not shared).<br/>e.g. H₂O: 2 bonding pairs + 2 lone pairs on O.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-3',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Show Outer-Shell Electrons ONLY & Don't Forget Lone Pairs",
+        text: "Students often draw all electrons (core + valence) or omit lone pairs, losing marks. Remember: <strong>Only draw electrons in the outermost shell.</strong> Every lone pair must be shown (as :: or \u2022 \u00d7) as they determine molecular shape in VSEPR. Double bonds: show as two pairs of dots/crosses side-by-side, not as a single line."
+      }
+    }
   ],
   recall: {
     enabled: true,

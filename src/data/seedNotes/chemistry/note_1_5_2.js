@@ -195,6 +195,16 @@ export const note_chemistry_1_5_2 = {
       },
       terms: []
     }
+  ,
+    {
+      id: 'callout-exam-5-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Colourless vs Clear",
+        text: "When describing the reaction of an alkene with bromine water, state that the solution changes from <strong>'orange/brown to colourless'</strong>. Stating 'clear' instead of 'colourless' is often highly penalised."
+      }
+    }
   ],
   recall: {
     enabled: true,

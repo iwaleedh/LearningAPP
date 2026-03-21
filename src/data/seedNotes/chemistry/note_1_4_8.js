@@ -50,6 +50,16 @@ export const note_chemistry_1_4_8 = {
     { id: 'callout-warning', type: 'callout', data: {
       style: 'warning', title: 'Common Mistakes', text: '&#x2022; Drawing the same structure twice in a different orientation and calling them isomers &#x2014; rotate mentally first.<br/>&#x2022; Forgetting position isomers &#x2014; moving a functional group from C1 to C2 gives a different compound.<br/>&#x2022; Confusing structural isomerism with stereoisomerism (E/Z, optical) &#x2014; stereoisomers have the same connectivity.'
     }}
+  ,
+    {
+      id: 'callout-exam-4-8',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Naming Check",
+        text: "When drawing structural isomers, verify your names by tracing the absolute longest continuous carbon chain. For example, '2-propylpropane' does not exist; its longest chain is actually 5 carbons long (a pentane)."
+      }
+    }
   ],
   recall: {
     enabled: true,

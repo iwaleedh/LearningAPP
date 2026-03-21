@@ -68,6 +68,15 @@ export const note_chemistry_4_14_0 = {
         ]
       }
     },
+
+        {
+            id: 'svg-bronsted-lowry',
+            type: 'svg',
+            data: {
+                caption: 'Brønsted-Lowry Model: A proton (H⁺) is transferred from the acid to the base.',
+                svg: '<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="200" fill="transparent" rx="10"/><g transform="translate(100, 100)"><text x="0" y="0" font-family="sans-serif" font-size="24" fill="#ef4444" font-weight="bold" text-anchor="middle">HCl</text><text x="0" y="30" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="middle">Acid</text></g><g transform="translate(200, 100)"><text x="0" y="0" font-family="sans-serif" font-size="24" fill="#333" font-weight="bold" text-anchor="middle">+</text></g><g transform="translate(300, 100)"><text x="0" y="0" font-family="sans-serif" font-size="24" fill="#3b82f6" font-weight="bold" text-anchor="middle">NH₃</text><text x="0" y="30" font-family="sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Base</text></g><g transform="translate(100, 100)"><path d="M 20 -20 C 60 -60, 160 -60, 200 -20" fill="none" stroke="#8b5cf6" stroke-width="3"/><polygon points="210,-10 190,-10 200,-20" fill="#8b5cf6"/><text x="110" y="-45" font-family="sans-serif" font-size="14" fill="#8b5cf6" font-weight="bold" text-anchor="middle">H⁺ transfer</text></g></svg>'
+            }
+        },
     {
       id: 'callout-bl-flow',
       type: 'callout',

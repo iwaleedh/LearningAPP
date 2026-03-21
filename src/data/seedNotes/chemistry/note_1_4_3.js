@@ -32,6 +32,16 @@ export const note_chemistry_1_4_3 = {
       style: 'worked', title: 'Reforming — Converting Straight Chains to Branched/Cyclic',
       text: 'Reforming uses a <strong>platinum catalyst</strong> to convert straight-chain alkanes into branched/cyclic forms that burn more smoothly in engines (reducing &#x201C;knocking&#x201D;).<br/><br/>1. <strong>Straight &#x2192; cyclic:</strong> Pentane &#x2192; Cyclopentane + H&#x2082; (C&#x2085;H&#x2081;&#x2082; &#x2192; C&#x2085;H&#x2081;&#x2080; + H&#x2082;)<br/>2. <strong>Straight &#x2192; aromatic:</strong> Heptane &#x2192; Methylbenzene + 4H&#x2082; (C&#x2087;H&#x2081;&#x2086; &#x2192; C&#x2087;H&#x2088; + 4H&#x2082;)'
     }}
+  ,
+    {
+      id: 'callout-exam-4-3',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Error: Conservation of Atoms",
+        text: "In cracking equations, ensure the number of carbon AND hydrogen atoms balances exactly. A common mistake is producing too many alkene molecules and exceeding the reactant's initial hydrogen count."
+      }
+    }
   ],
   recall: {
     enabled: true,

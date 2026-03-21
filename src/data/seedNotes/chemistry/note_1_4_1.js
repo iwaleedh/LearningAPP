@@ -19,6 +19,16 @@ export const note_chemistry_1_4_1 = {
       style: 'worked', title: 'Worked Examples',
       text: '<strong>CH₃CH(CH₃)CH₂CH₃:</strong><br/>Longest chain = 4 C (butane). Methyl branch on C-2.<br/>Name: <strong>2-methylbutane</strong><br/><br/><strong>CH₃CH(CH₃)CH(CH₃)CH₃:</strong><br/>Longest chain = 4 C (butane). Two methyl groups on C-2 and C-3.<br/>Name: <strong>2,3-dimethylbutane</strong><br/><br/><strong>CH₃CH(Br)CH₂CH₃:</strong><br/>Longest chain = 4 C (butane). Bromo group on C-2.<br/>Name: <strong>2-bromobutane</strong><br/><br/><strong>Past paper trick:</strong> A 4-C chain with Cl on C-2 and methyl on C-3 is <strong>2-chloro-3-methylbutane</strong> (alphabetical: chloro before methyl).'
     }}
+  ,
+    {
+      id: 'callout-exam-4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Alphabetical Naming",
+        text: "Ensure you place substituents in alphabetical order (e.g., ethyl before methyl), completely disregarding numerical prefixes like 'di' or 'tri'."
+      }
+    }
   ],
   recall: {
     enabled: true,

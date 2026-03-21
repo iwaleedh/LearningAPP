@@ -170,6 +170,16 @@ export const note_chemistry_1_3_4 = {
         { delay: 3, colSpan: 2, icon: '💡', title: 'Exam Tips', html: 'Count: <strong>bonding pairs + lone pairs</strong> on central atom to determine geometry.<br/>State the shape name AND bond angle.<br/>SF₆: 6 bp → octahedral 90°; PCl₅: 5 bp → trigonal bipyramidal 90°/120°.' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-5',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Double Bonds = ONE Electron Domain (Critical VSEPR Error)",
+        text: "High-mark error: counting a double or triple bond as <strong>two or three</strong> electron domains. It is <strong>ONE.</strong> Example: CO\u2082 has <strong>2 electron domains</strong> (each C=O counts as 1), not 4. This gives linear shape 180\u00b0, not tetrahedral. Always count regions of electron density, not individual bonds. Examiners frequently catch this mistake."
+      }
+    }
   ],
   recall: {
     enabled: true,

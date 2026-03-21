@@ -294,6 +294,16 @@ export const note_chemistry_1_3_0 = {
         { delay: 3, colSpan: 2, icon: '🔬', title: 'Evidence for Ionic Species', html: 'X-ray diffraction → confirms regular lattice of alternating +/− ions.<br/>High melting points → strong ionic forces need lots of energy to break.<br/>Molten/aqueous solutions conduct electricity → free-moving ions carry charge.<br/>Crystals shatter when struck (like charges align at slip plane and repel).' },
       ]
     }
+  ,
+    {
+      id: 'callout-exam-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Dot-and-Cross Diagrams: Charge Placement Marks",
+        text: "Examiners deduct marks if charges are shown <strong>inside</strong> the bracket instead of <strong>outside</strong>. Correct: [Na]\u207a and [Cl]\u207b. Also: show cations with <strong>zero outer-shell electrons</strong> \u2014 this proves complete transfer. Many students incorrectly leave electrons around the cation or fail to show the brackets at all, costing easy marks."
+      }
+    }
   ],
   recall: {
     enabled: true,

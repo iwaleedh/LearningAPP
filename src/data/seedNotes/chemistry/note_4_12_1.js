@@ -70,6 +70,15 @@ export const note_chemistry_4_12_1 = {
         text: 'Imagine removing a divider between two gas jars:\n• 5 molecules → 2⁵ = 32 arrangements; probability of staying unmixed = 1/32\n• 10 molecules → 2¹⁰ = 1024 arrangements; probability = 1/1024\n• 1 mole → 2^(6×10²³) arrangements; probability of unmixing ≈ 0\n\nThe mixed state has so many more arrangements that mixing is essentially irreversible. The increase in W means an increase in S = k_B ln W.'
       }
     },
+
+        {
+            id: 'svg-entropy-disorder',
+            type: 'svg',
+            data: {
+                caption: 'Comparing entropy: A solid lattice has low disorder (low entropy), while a gas has high disorder (high entropy) due to randomly moving particles spreading through the available volume.',
+                svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="transparent" rx="10"/><g transform="translate(100, 100)"><rect x="-40" y="-40" width="80" height="80" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="-20" cy="-20" r="6" fill="#3b82f6"/><circle cx="0" cy="-20" r="6" fill="#3b82f6"/><circle cx="20" cy="-20" r="6" fill="#3b82f6"/><circle cx="-20" cy="0" r="6" fill="#3b82f6"/><circle cx="0" cy="0" r="6" fill="#3b82f6"/><circle cx="20" cy="0" r="6" fill="#3b82f6"/><circle cx="-20" cy="20" r="6" fill="#3b82f6"/><circle cx="0" cy="20" r="6" fill="#3b82f6"/><circle cx="20" cy="20" r="6" fill="#3b82f6"/><text x="0" y="60" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">Solid</text><text x="0" y="80" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Low Entropy (S)</text></g><g transform="translate(300, 100)"><rect x="-40" y="-40" width="80" height="80" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="-25" cy="-30" r="6" fill="#ef4444"/><line x1="-20" y1="-25" x2="-10" y2="-15" stroke="#ef4444" stroke-width="1"/><circle cx="25" cy="-20" r="6" fill="#ef4444"/><line x1="20" y1="-20" x2="5" y2="-20" stroke="#ef4444" stroke-width="1"/><circle cx="-10" cy="15" r="6" fill="#ef4444"/><line x1="-10" y1="20" x2="-10" y2="35" stroke="#ef4444" stroke-width="1"/><circle cx="30" cy="10" r="6" fill="#ef4444"/><line x1="30" y1="5" x2="30" y2="-10" stroke="#ef4444" stroke-width="1"/><circle cx="10" cy="-5" r="6" fill="#ef4444"/><line x1="15" y1="0" x2="30" y2="15" stroke="#ef4444" stroke-width="1"/><text x="0" y="60" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">Gas</text><text x="0" y="80" font-family="sans-serif" font-size="12" fill="#64748b" text-anchor="middle">High Entropy (S)</text></g><path d="M 160 100 L 230 100" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/><polygon points="230,95 240,100 230,105" fill="#94a3b8"/></svg>'
+            }
+        },
     {
       type: 'paragraph',
       id: 'p-boltzmann-quanta',

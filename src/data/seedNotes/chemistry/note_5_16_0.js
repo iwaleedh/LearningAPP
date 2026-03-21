@@ -266,6 +266,15 @@ export const note_chemistry_5_16_0 = {
       },
     },
     {
+      type: 'callout',
+      id: 'callout-exam-tip-1',
+      data: {
+        style: 'warning',
+        title: 'High-Value Exam Tip: Standard Hydrogen Electrode',
+        text: 'Edexcel frequently asks why the platinum electrode must be coated in "platinum black" (porous platinum). You must explicitly state it provides a large surface area for the equilibrium 2H⁺ + 2e⁻ ⇌ H₂ to be established quickly, and acts as a catalyst. When writing the half-equation or reading tables, remember that E° values are never multiplied, even if you multiply the half-equation to balance electrons!',
+      },
+    },
+    {
       type: 'heading',
       id: 'h-series',
       data: {

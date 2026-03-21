@@ -138,6 +138,14 @@ export const note_chemistry_3_3A_2 = {
       },
     },
     {
+      id: 'svg-burette-reading',
+      type: 'svg',
+      data: {
+        caption: 'Reading a burette to appropriate precision. The meniscus is correctly read at the bottom and the value recorded to 2 decimal places ending in 0 or 5.',
+        svg: '<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="transparent" rx="10"/><g transform="translate(180, 20)"><path d="M -30 0 L -30 260 L 30 260 L 30 0" fill="none" stroke="#94a3b8" stroke-width="4"/><path d="M -28 150 C -15 165, 15 165, 28 150 L 28 260 L -28 260 Z" fill="#bfdbfe" opacity="0.5"/><path d="M -28 150 C -15 165, 15 165, 28 150" fill="none" stroke="#1d4ed8" stroke-width="3"/><line x1="-30" y1="40" x2="0" y2="40" stroke="#64748b" stroke-width="2"/><text x="-40" y="45" font-family="sans-serif" font-size="16" fill="#334155" text-anchor="end">23</text><line x1="-30" y1="60" x2="-15" y2="60" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="80" x2="-15" y2="80" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="100" x2="-15" y2="100" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="120" x2="-15" y2="120" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="140" x2="0" y2="140" stroke="#64748b" stroke-width="2"/><text x="-40" y="145" font-family="sans-serif" font-size="16" fill="#334155" text-anchor="end">24</text><line x1="-30" y1="160" x2="-15" y2="160" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="180" x2="-15" y2="180" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="200" x2="-15" y2="200" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="220" x2="-15" y2="220" stroke="#94a3b8" stroke-width="1"/><line x1="-30" y1="240" x2="0" y2="240" stroke="#64748b" stroke-width="2"/><text x="-40" y="245" font-family="sans-serif" font-size="16" fill="#334155" text-anchor="end">25</text><line x1="100" y1="165" x2="30" y2="165" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4"/><text x="110" y="150" font-family="sans-serif" font-size="16" fill="#b91c1c" font-weight="bold">Reading:</text><text x="110" y="170" font-family="sans-serif" font-size="20" fill="#b91c1c" font-weight="bold">24.10 cm³</text><text x="110" y="195" font-family="sans-serif" font-size="14" fill="#64748b">Measured between</text><text x="110" y="215" font-family="sans-serif" font-size="14" fill="#64748b">24.1 and 24.2 marks</text><path d="M 120 120 C 130 110, 160 110, 160 130 L 160 160 C 160 180, 130 180, 120 180 L 100 150 Z" fill="none" stroke="#64748b" stroke-width="2"/><circle cx="150" cy="145" r="5" fill="#333"/></g></svg>'
+      }
+    },
+    {
       id: 'callout-tip',
       type: 'callout',
       data: {

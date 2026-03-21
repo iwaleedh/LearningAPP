@@ -175,6 +175,14 @@ export const note_chemistry_1_1_3 = {
       }
     },
     {
+      id: 'svg-ppm-visual',
+      type: 'svg',
+      data: {
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 180" font-family="system-ui,sans-serif"><rect x="10" y="10" width="480" height="160" rx="12" fill="rgba(59,130,246,0.1)" stroke="#3b82f6" stroke-width="2"/><text x="250" y="38" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">Visualizing 1 Parts Per Million (1 ppm)</text><rect x="40" y="60" width="120" height="80" rx="8" fill="#1e40af"/><text x="100" y="95" text-anchor="middle" font-size="28" font-weight="800" fill="#f8fafc">1 mg</text><text x="100" y="120" text-anchor="middle" font-size="12" fill="#bfdbfe">Solute</text><text x="200" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">in</text><rect x="240" y="60" width="120" height="80" rx="8" fill="#1e40af"/><text x="300" y="95" text-anchor="middle" font-size="28" font-weight="800" fill="#f8fafc">1 kg</text><text x="300" y="120" text-anchor="middle" font-size="12" fill="#bfdbfe">Solution (1,000,000 mg)</text><text x="410" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">= 1 ppm</text></svg>',
+        caption: '1 ppm literally means 1 part per 1,000,000 parts. Since 1 kg is 1,000,000 mg, 1 mg in 1 kg is exactly 1 ppm.'
+      }
+    },
+    {
       id: 'eq-ppm',
       type: 'equation',
       data: {
