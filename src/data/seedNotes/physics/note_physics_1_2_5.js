@@ -61,7 +61,25 @@ export const note_physics_1_2_5 = {
     { id: 'summary-1', type: 'summary', data: { text: "The resultant <strong>vector</strong> is the single equivalent of all vectors combined. Methods: triangle (tip-to-tail), parallelogram (diagonal), or components. For perpendicular vectors: R = sqrt(A\u00b2 + B\u00b2), \u03b8 = arctan(B/A). For general vectors: resolve all into x and y, sum the components, then recombine with Pythagoras." } },
     { id: 'enr-callout-1', type: 'callout', data: { style: 'worked', title: 'Worked Example \u2014 Stopping Distance', text: 'Car at u = 30 m/s; reaction time = 0.7 s; deceleration = 8 m/s\u00b2.<br><br><strong>Thinking distance</strong> = u \u00d7 t<sub>r</sub> = 30 \u00d7 0.7 = <strong>21 m</strong><br><strong>Braking distance</strong>: v\u00b2 = u\u00b2 + 2as \u2192 0 = 900 + 2(\u22128)s \u2192 s = 900 \u00f7 16 = <strong>56.25 m</strong><br><strong>Total stopping distance</strong> = 21 + 56.25 = <strong>77.25 m</strong><br><br>At 70 mph (\u223131 m/s) the Highway Code quotes a stopping distance of \u223196 m \u2014 consistent with this calculation.' } },
     { id: 'enr-callout-2', type: 'callout', data: { style: 'worked', title: 'Worked Example \u2014 ABS Braking System', text: '<strong>ABS (Anti-lock Braking System)</strong> detects when a wheel locks (stops rotating while the car moves forward) and automatically releases and re-applies the brake up to \u223115 times per second.<br><br><strong>Physics:</strong> kinetic <strong>friction</strong> &lt; static <strong>friction</strong>. A locked (sliding) wheel operates with the smaller kinetic <strong>friction</strong> <strong>force</strong>. ABS keeps each wheel just at the rolling grip limit, maintaining the larger static <strong>friction</strong> throughout braking. This maximises deceleration and preserves steering control, reducing braking distance by up to 20%.' } },
-    { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip \u2014 How Distance Scales with Speed', text: '<strong>Thinking distance</strong> \u221d v (linear): double speed \u2192 double thinking distance.<br><strong>Braking distance</strong> \u221d v\u00b2 (from v\u00b2 = 2as): double speed \u2192 <em>four times</em> the braking distance.<br><br>This is why speed limits so dramatically reduce accidents: at 60 mph a car does not stop in twice the distance of one at 30 mph \u2014 braking distance is 4\u00d7 greater. Reaction time increases with tiredness, alcohol, drugs, and distractions.' } }
+    { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip \u2014 How Distance Scales with Speed', text: '<strong>Thinking distance</strong> \u221d v (linear): double speed \u2192 double thinking distance.<br><strong>Braking distance</strong> \u221d v\u00b2 (from v\u00b2 = 2as): double speed \u2192 <em>four times</em> the braking distance.<br><br>This is why speed limits so dramatically reduce accidents: at 60 mph a car does not stop in twice the distance of one at 30 mph \u2014 braking distance is 4\u00d7 greater. Reaction time increases with tiredness, alcohol, drugs, and distractions.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Stopping Distance Scales with Speed",
+        text: "Thinking distance \u221d v (linear): double speed \u2192 double thinking distance. Braking distance \u221d v\u00b2 (from v\u00b2 = u\u00b2 + 2as): double speed \u2192 four times braking distance. Speed limits reduce accidents dramatically because braking distance is not proportional to speed \u2014 it's proportional to speed squared."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Misconception: Speed and Distance",
+        text: "A car at 60 mph does not stop in twice the distance of one at 30 mph due to braking distance scaling with v\u00b2. Stopping distance increases as v\u00b2 is much faster than linear increase. Reaction time also increases with tiredness, alcohol, and distractions."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Describe the triangle (tip-to-tail) method for adding two vectors.' },

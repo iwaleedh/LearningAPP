@@ -51,7 +51,25 @@ export const note_physics_1_1_6 = {
     { id: 'enr-svg-1', type: 'svg', data: { svg: '<svg viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg"><defs><marker id="n116-arr-b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#339af0"/></marker><marker id="n116-arr-g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#40c057"/></marker><marker id="n116-arr-r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#fa5252"/></marker></defs><rect width="480" height="280" fill="#0f172a" rx="6"/><text x="240" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Vector Addition: Parallelogram Rule</text><line x1="203" y1="77" x2="312" y2="128" stroke="#868e96" stroke-width="1.5" stroke-dasharray="6,4"/><line x1="189" y1="231" x2="312" y2="128" stroke="#868e96" stroke-width="1.5" stroke-dasharray="6,4"/><line x1="80" y1="180" x2="306" y2="129" stroke="#fa5252" stroke-width="3" marker-end="url(#n116-arr-r)"/><line x1="80" y1="180" x2="197" y2="78" stroke="#339af0" stroke-width="3" marker-end="url(#n116-arr-b)"/><line x1="80" y1="180" x2="184" y2="229" stroke="#40c057" stroke-width="3" marker-end="url(#n116-arr-g)"/><path d="M 103,161 A 30,30 0 0,1 107,193" stroke="#555" stroke-width="1.5" fill="none"/><text x="120" y="176" font-family="sans-serif" font-size="12" fill="#555" font-style="italic">θ</text><circle cx="80" cy="180" r="4" fill="#212529"/><circle cx="312" cy="128" r="3" fill="#868e96"/><text x="125" y="108" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1864ab">A = 40 N</text><text x="100" y="240" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2b8a3e">B = 30 N</text><text x="205" y="145" font-family="sans-serif" font-size="13" font-weight="bold" fill="#c92a2a">R = ?</text></svg>', caption: 'Parallelogram rule: the resultant of two vectors equals the diagonal of the parallelogram they form' } },
     { id: 'enr-callout-1', type: 'callout', data: { style: 'worked', title: 'Resolving a Force into Components', text: 'Resolving a 50 N <strong>force</strong> at 30° to horizontal:<br>Horizontal component = 50 cos 30° = 43.3 N<br>Vertical component = 50 sin 30° = 25.0 N<br>Check: √(43.3² + 25.0²) = √(1875 + 625) = √2500 = 50 N ✓<br>Useful for any projectile, slope, or suspended <strong>weight</strong> problem.' } },
     { id: 'enr-callout-2', type: 'callout', data: { style: 'worked', title: 'Navigation with Vector Addition', text: 'A plane flies at 200 m/s at 15° N of E in a crosswind of 50 m/s due W.<br>Resultant east component = 200 cos 15° − 50 = 143 m/s<br>North component = 200 sin 15° = 51.8 m/s<br>Speed = √(143² + 51.8²) ≈ 152 m/s<br>Navigation apps do this calculation billions of times daily.' } },
-    { id: 'summary-1', type: 'summary', data: { text: "The scientific community validates knowledge through peer review (expert critique before publication), reproducibility (independent replication of results), and open debate. Scientific knowledge evolves as new evidence challenges existing theories. Collaboration and open access accelerate scientific progress." } }
+    { id: 'summary-1', type: 'summary', data: { text: "The scientific community validates knowledge through peer review (expert critique before publication), reproducibility (independent replication of results), and open debate. Scientific knowledge evolves as new evidence challenges existing theories. Collaboration and open access accelerate scientific progress." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Peer Review Limitations",
+        text: "Peer review does not guarantee correctness. Reviewers can miss flaws, be biased, or have conflicts of interest. Novel findings can be rejected. Publication bias favours positive results over null results. Reproducibility crisis in psychology/medicine showed many published effects are not real."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Scientific Consensus",
+        text: "Scientific knowledge develops through discovery \u2192 peer review \u2192 replication \u2192 consensus. No single experiment 'proves' something; repeated independent replication does. Media often overstates certainty compared to actual scientific consensus."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-4', prompt: 'What happens during peer review? Why is it important?' },

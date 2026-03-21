@@ -26,7 +26,25 @@ export const note_physics_1_1_2 = {
     { id: 'summary-1', type: 'summary', data: { text: "Estimation is a key physics skill. Use orders of magnitude (powers of 10) to make quick checks. Strategy: identify the quantity, break into known parts, estimate each, combine and check. Use everyday experience to anchor your values." }, terms: [] },
     { id: 'enr-svg-errors', type: 'svg', data: { svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" style="width:100%;max-width:400px;display:block;margin:0 auto;"><style>.t{font-family:sans-serif;font-size:11px;fill:#374151}.h{font-family:sans-serif;font-size:12px;font-weight:700;fill:#1f2937}</style><text x="200" y="14" class="h" text-anchor="middle">Random vs Systematic Error</text><circle cx="100" cy="82" r="56" fill="#3d1212" stroke="#fca5a5" stroke-width="1.5"/><circle cx="100" cy="82" r="36" fill="none" stroke="#fca5a5" stroke-width="1"/><circle cx="100" cy="82" r="16" fill="none" stroke="#fca5a5" stroke-width="1"/><line x1="100" y1="26" x2="100" y2="138" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,2"/><line x1="44" y1="82" x2="156" y2="82" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,2"/><circle cx="122" cy="57" r="5" fill="#ef4444"/><circle cx="130" cy="62" r="5" fill="#ef4444"/><circle cx="118" cy="51" r="5" fill="#ef4444"/><circle cx="128" cy="66" r="5" fill="#ef4444"/><text x="100" y="154" class="h" text-anchor="middle">Systematic</text><text x="100" y="168" class="t" text-anchor="middle">(all shifted one way)</text><circle cx="300" cy="82" r="56" fill="#0a2e1a" stroke="#86efac" stroke-width="1.5"/><circle cx="300" cy="82" r="36" fill="none" stroke="#86efac" stroke-width="1"/><circle cx="300" cy="82" r="16" fill="none" stroke="#86efac" stroke-width="1"/><line x1="300" y1="26" x2="300" y2="138" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,2"/><line x1="244" y1="82" x2="356" y2="82" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,2"/><circle cx="294" cy="76" r="5" fill="#16a34a"/><circle cx="308" cy="88" r="5" fill="#16a34a"/><circle cx="291" cy="91" r="5" fill="#16a34a"/><circle cx="311" cy="75" r="5" fill="#16a34a"/><text x="300" y="154" class="h" text-anchor="middle">Random</text><text x="300" y="168" class="t" text-anchor="middle">(scattered around centre)</text></svg>', caption: 'Systematic error: all readings shifted the same way. Random error: readings scattered around the true value.' }, terms: [] },
     { id: 'enr-callout-worked-pendulum', type: 'callout', data: { style: 'worked', title: 'Worked Example: Uncertainty from Repeated Measurements', text: 'A student measures a pendulum length five times: 1.23, 1.25, 1.24, 1.26, 1.24 m.<br/>Step 1 &#8212; Mean: (1.23 + 1.25 + 1.24 + 1.26 + 1.24) / 5 = <strong>1.244 m</strong><br/>Step 2 &#8212; Range: 1.26 &#8722; 1.23 = 0.03 m<br/>Step 3 &#8212; Absolute uncertainty: 0.03 / 2 = <strong>&#177;0.015 m</strong><br/>Step 4 &#8212; Fractional uncertainty: 0.015 / 1.244 = <strong>1.2%</strong><br/>Result: L = 1.244 &#177; 0.015 m' }, terms: [] },
-    { id: 'enr-callout-tip-unc', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Combining Uncertainties', text: '<strong>Adding / subtracting quantities:</strong> ADD the absolute uncertainties.<br/><strong>Multiplying / dividing quantities:</strong> ADD the percentage uncertainties.<br/><strong>Powers:</strong> multiply the % uncertainty by the <strong>power</strong> (e.g. if A has 2% uncertainty, then A<sup>3</sup> has 6% uncertainty).<br/>Memory aid: &#8220;add absolutes for sums; add percents for products.&#8221;' }, terms: [] }
+    { id: 'enr-callout-tip-unc', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Combining Uncertainties', text: '<strong>Adding / subtracting quantities:</strong> ADD the absolute uncertainties.<br/><strong>Multiplying / dividing quantities:</strong> ADD the percentage uncertainties.<br/><strong>Powers:</strong> multiply the % uncertainty by the <strong>power</strong> (e.g. if A has 2% uncertainty, then A<sup>3</sup> has 6% uncertainty).<br/>Memory aid: &#8220;add absolutes for sums; add percents for products.&#8221;' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Always Justify Estimates",
+        text: "Show your breakdown into parts (e.g., for car mass: length \u00d7 width \u00d7 height \u00d7 density). Examiners want to see your reasoning, not just a final number. A justified but incorrect estimate scores more marks than an unjustified correct one."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Mass vs Weight",
+        text: "When estimating, always use mass (kg) for the quantity, not weight (N). A car's mass is ~1000 kg, not 1000 N. Weight depends on location; mass does not."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is an order of magnitude? Give an example of two quantities that differ by many orders of magnitude.' },

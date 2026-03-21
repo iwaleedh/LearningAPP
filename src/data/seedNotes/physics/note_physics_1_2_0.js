@@ -57,7 +57,25 @@ export const note_physics_1_2_0 = {
       { text: "Apply SUVAT to freefall problems, correctly assigning signs to g", checked: false },
       { text: "Solve a two-stage problem using SUVAT (e.g. ball thrown upward then falls back)", checked: false }
     ]}},
-    { id: 'summary-1', type: 'summary', data: { text: "SUVAT equations apply for constant <strong>acceleration</strong> only. Variables: s, u, v, a, t. Equations: (1) v=u+at, (2) s=ut+½at², (3) v²=u²+2as, (4) s=½(u+v)t. Choose by identifying which equation contains exactly the given and unknown variables. Always assign a positive direction and use negative values for opposite directions." } }
+    { id: 'summary-1', type: 'summary', data: { text: "SUVAT equations apply for constant <strong>acceleration</strong> only. Variables: s, u, v, a, t. Equations: (1) v=u+at, (2) s=ut+½at², (3) v²=u²+2as, (4) s=½(u+v)t. Choose by identifying which equation contains exactly the given and unknown variables. Always assign a positive direction and use negative values for opposite directions." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Key Point: SUVAT Only for Constant Acceleration",
+        text: "SUVAT equations apply ONLY when acceleration is constant. Air resistance violates this (a changes with speed). All five variables (s, u, v, a, t) must be in the same direction. Assign positive direction first; opposite motion is negative."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Terminal Velocity Misconception",
+        text: "At terminal velocity: net force = 0 \u2192 acceleration = 0 \u2192 velocity is constant (NOT zero). The object is still moving at steady speed. When a parachutist opens the parachute, drag suddenly exceeds weight \u2192 net upward force \u2192 deceleration (not zero velocity)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'State all four SUVAT equations. Which variable does each omit?' },

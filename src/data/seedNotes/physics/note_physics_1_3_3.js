@@ -56,7 +56,34 @@ export const note_physics_1_3_3 = {
     { id: 'summary-1', type: 'summary', data: { text: "Newton's Third Law: if A exerts a <strong>force</strong> on B, then B exerts an equal and opposite <strong>force</strong> on A. The pair is equal in magnitude, opposite in direction, the same type of <strong>force</strong>, and acts on different objects. Do not confuse with balanced <strong>equilibrium</strong> forces, which act on the same object." } },
     { id: 'enr-svg-triangle', type: 'svg', data: { svg: '<svg viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg"><rect width="460" height="260" fill="#0f172a"/><text x="230" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#212529">Triangle of Forces</text><line x1="260" y1="65" x2="260" y2="193" stroke="#2f9e44" stroke-width="3"/><polygon points="260,205 254,193 266,193" fill="#2f9e44"/><text x="283" y="140" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2f9e44">W</text><line x1="260" y1="205" x2="211" y2="132" stroke="#1971c2" stroke-width="3"/><polygon points="204,122 216,129 206,135" fill="#1971c2"/><text x="216" y="183" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1971c2">T₁</text><line x1="204" y1="122" x2="252" y2="74" stroke="#e03131" stroke-width="3"/><polygon points="260,65 256,78 247,69" fill="#e03131"/><text x="211" y="82" font-family="sans-serif" font-size="13" font-weight="bold" fill="#e03131">T₂</text><text x="355" y="130" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#495057">Closed triangle</text><text x="355" y="148" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#495057">= equilibrium</text><text x="80" y="133" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#868e96">Head-to-tail</text><text x="80" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#868e96">arrangement</text></svg>', caption: 'Three forces in equilibrium form a closed triangle' } },
     { id: 'enr-worked-cables', type: 'callout', data: { style: 'worked', title: 'Cable Junction: Two-Cable System', text: 'Cable junction: <strong>weight</strong> = 200 N, cables at 40° and 60° to horizontal.\nHorizontal: T₁ × cos 40° = T₂ × cos 60°\nVertical: T₁ × sin 40° + T₂ × sin 60° = 200 N\nSolving: T₁ = 87.9 N, T₂ = 126.8 N.\nBridge and crane engineers solve these every day.' } },
-    { id: 'enr-tip-equil', type: 'callout', data: { style: 'tip', title: 'Exam Tip: 3 Forces in Equilibrium', text: 'For 3 forces in <strong>equilibrium</strong> — either resolve into 2 components (ΣFx = 0, ΣFy = 0) or draw triangle of forces and apply the sine rule. Always define a sign convention before resolving.' } }
+    { id: 'enr-tip-equil', type: 'callout', data: { style: 'tip', title: 'Exam Tip: 3 Forces in Equilibrium', text: 'For 3 forces in <strong>equilibrium</strong> — either resolve into 2 components (ΣFx = 0, ΣFy = 0) or draw triangle of forces and apply the sine rule. Always define a sign convention before resolving.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Newton's Third Law: Four Properties",
+        text: "A Newton Third Law pair must satisfy: (1) equal magnitude, (2) opposite direction, (3) same force type (both gravitational, both contact, both electromagnetic), (4) act on DIFFERENT objects. Never on the same object."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Misconception: Third Law vs Equilibrium",
+        text: "Weight (Earth on book, gravitational) and normal force N (table on book, contact) are equal and opposite but NOT a Newton third law pair \u2014 they are different force types AND both act on the same object. A genuine third law pair: 'Earth pulls book down' \u2194 'book pulls Earth up' (both gravitational, on different objects)."
+      }
+    },
+    {
+      id: 'callout-tip-3',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Three Forces in Equilibrium",
+        text: "For 3 forces in equilibrium \u2014 either resolve into components (\u03a3Fx = 0, \u03a3Fy = 0) or draw triangle of forces and apply sine rule. Always define sign convention before resolving. Closed triangle = equilibrium."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-2', prompt: "State Newton's Third Law of Motion" },

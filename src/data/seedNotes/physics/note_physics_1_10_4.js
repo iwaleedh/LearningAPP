@@ -60,7 +60,25 @@ export const note_physics_1_10_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "Measure extension ΔL of a long wire under increasing loads F; also measure original length L and diameter d (with micrometer). Calculate <strong>stress</strong> = F/A and <strong>strain</strong> = ΔL/L; plot <strong>stress</strong> vs <strong>strain</strong>. E = gradient of linear section. Use the longest wire possible; measure diameter in multiple places; confirm elastic behaviour by checking loading/unloading curves overlap." } },
     { id: 'enr-1', type: 'svg', data: { svg: '<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="300" fill="#0f172a"/><text x="250" y="20" font-family="sans-serif" font-size="14" font-weight="bold" fill="#212529" text-anchor="middle">Material Stress-Strain Curves Compared</text><line x1="60" y1="255" x2="460" y2="255" stroke="#212529" stroke-width="2"/><line x1="60" y1="255" x2="60" y2="30" stroke="#212529" stroke-width="2"/><text x="260" y="278" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle">Strain ε</text><text x="28" y="143" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle" transform="rotate(-90 28,143)">Stress σ / Pa</text><path d="M 60 255 L 155 75" stroke="#339af0" stroke-width="3" fill="none"/><circle cx="155" cy="75" r="5" fill="#339af0"/><line x1="155" y1="75" x2="172" y2="92" stroke="#339af0" stroke-width="2"/><text x="178" y="65" font-family="sans-serif" font-size="11" fill="#1864ab">Brittle (glass)</text><path d="M 60 255 L 180 95" stroke="#40c057" stroke-width="3" fill="none"/><path d="M 180 95 Q 215 87 410 104" stroke="#40c057" stroke-width="3" fill="none"/><circle cx="410" cy="104" r="5" fill="#40c057"/><text x="355" y="83" font-family="sans-serif" font-size="11" fill="#2b8a3e">Ductile (copper)</text><circle cx="180" cy="95" r="4" fill="#e03131"/><text x="185" y="87" font-family="sans-serif" font-size="10" fill="#c92a2a">yield pt</text><path d="M 60 255 Q 175 242 315 208 Q 395 190 440 178" stroke="#fd7e14" stroke-width="3" fill="none"/><text x="355" y="205" font-family="sans-serif" font-size="11" fill="#d9480f">Rubber/polymer</text></svg>', caption: 'Stress-strain curves for brittle (glass), ductile (copper) and rubber/polymer on the same axes' } },
     { id: 'enr-2', type: 'callout', data: { style: 'worked', title: 'Gorilla Glass — Engineering a Material\'s Stress Response', text: "Phone screen glass (Gorilla Glass) is designed to be harder than a scratch but not <strong>brittle</strong> like ordinary glass. A compressive <strong>stress</strong> layer is added chemically via ion exchange: larger K⁺ ions replace smaller Na⁺ ions at the glass surface, creating compressive prestress. This prevents crack propagation — a small surface crack cannot grow in a region under compression. The glass is still <strong>brittle</strong> overall but the compressive prestressing makes it far more impact resistant. An example of engineering a material's <strong>stress</strong> response without changing its bulk composition." } },
-    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Reading Stress-Strain Graphs', text: "On a <strong>stress</strong>-<strong>strain</strong> graph, identify: (1) gradient = Young's Modulus (in the elastic/linear region), (2) area under elastic region = elastic PE stored per unit volume, (3) total area under the whole curve = energy absorbed per unit volume until fracture = toughness. Materials with a large total area under the curve are tough — good for safety helmets and crash structures." } }
+    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Reading Stress-Strain Graphs', text: "On a <strong>stress</strong>-<strong>strain</strong> graph, identify: (1) gradient = Young's Modulus (in the elastic/linear region), (2) area under elastic region = elastic PE stored per unit volume, (3) total area under the whole curve = energy absorbed per unit volume until fracture = toughness. Materials with a large total area under the curve are tough — good for safety helmets and crash structures." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Diameter Calculation Error",
+        text: "COMMON EXAM ERROR: using diameter directly in area calculation. Remember A = \u03c0(d/2)\u00b2 = \u03c0d\u00b2/4, NOT \u03c0d\u00b2. If you forget to halve the diameter before squaring, your answer is off by a factor of 4."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Confirming You Stayed in Elastic Region",
+        text: "Before analyzing data, check that loading and unloading curves overlap on your graph. If they diverge, the elastic limit was exceeded and plastic deformation occurred \u2014 data is unreliable. Re-run experiment with smaller loads."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What graph is plotted in the Young modulus experiment? What does the gradient equal?' },

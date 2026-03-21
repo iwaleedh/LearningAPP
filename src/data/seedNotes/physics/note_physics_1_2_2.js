@@ -50,6 +50,24 @@ export const note_physics_1_2_2 = {
         text: 'For projectiles — always <strong>separate horizontal and vertical components</strong>. Horizontal: v<sub>x</sub> = ucosθ (constant, a = 0); use x = v<sub>x</sub>t. Vertical: a = −g = −9.81 m/s²; apply SUVAT equations vertically only. Time t is the bridge linking both directions. At maximum height, v<sub>y</sub> = 0 but v<sub>x</sub> is unchanged. <strong>Never apply SUVAT diagonally</strong> to the resultant <strong>velocity</strong> <strong>vector</strong>.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Misinterpreting Areas",
+        text: "Area under displacement-time graph is meaningless (not velocity, not anything physical). Area under velocity-time = displacement only. Area under acceleration-time = change in velocity only. Students often calculate the wrong area."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Tangent to Curved Graphs",
+        text: "For a curved v-t graph, use a ruler to draw a tangent at the point of interest \u2014 the tangent must touch the curve at only that point, not crossing nearby. Extend the tangent line well across the graph so rise and run are large, reducing percentage error in gradient calculation."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What does the gradient of a displacement-time graph tell you? What does a curved s-t graph indicate?' },

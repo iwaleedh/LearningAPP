@@ -24,6 +24,24 @@ export const note_physics_1_5_1 = {
     { id: 'enr-svg-rollercoaster', type: 'svg', data: { svg: '<svg viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg"><rect width="520" height="260" fill="#0f172a"/><text x="260" y="17" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle" font-weight="bold">GPE + KE = constant (no friction)</text><line x1="30" y1="108" x2="490" y2="108" stroke="#ced4da" stroke-width="1.5" stroke-dasharray="4,4"/><path d="M 30 30 L 100 30 C 145 30 183 108 228 108 L 260 108 C 303 108 373 65 420 65 L 490 65" fill="none" stroke="#868e96" stroke-width="3"/><circle cx="100" cy="30" r="7" fill="#e03131"/><circle cx="260" cy="108" r="7" fill="#e03131"/><circle cx="420" cy="65" r="7" fill="#e03131"/><line x1="100" y1="30" x2="100" y2="108" stroke="#2f9e44" stroke-width="1.2" stroke-dasharray="4,4"/><text x="109" y="73" font-family="sans-serif" font-size="11" fill="#2f9e44" font-weight="bold">h₁</text><line x1="420" y1="65" x2="420" y2="108" stroke="#2f9e44" stroke-width="1.2" stroke-dasharray="4,4"/><text x="429" y="90" font-family="sans-serif" font-size="11" fill="#2f9e44" font-weight="bold">h₂</text><rect x="78" y="130" width="44" height="70" fill="#14532d" opacity="0.9"/><rect x="78" y="115" width="44" height="15" fill="#7c2d12" opacity="0.9"/><rect x="78" y="115" width="44" height="85" fill="none" stroke="#495057" stroke-width="1.5"/><rect x="238" y="115" width="44" height="85" fill="#7c2d12" opacity="0.9"/><rect x="238" y="115" width="44" height="85" fill="none" stroke="#495057" stroke-width="1.5"/><rect x="398" y="160" width="44" height="40" fill="#14532d" opacity="0.9"/><rect x="398" y="115" width="44" height="45" fill="#7c2d12" opacity="0.9"/><rect x="398" y="115" width="44" height="85" fill="none" stroke="#495057" stroke-width="1.5"/><text x="100" y="213" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Peak (h₁)</text><text x="260" y="213" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Bottom (h=0)</text><text x="420" y="213" font-family="sans-serif" font-size="10" fill="#495057" text-anchor="middle">Mid-hill (h₂)</text><rect x="160" y="233" width="13" height="13" fill="#14532d" opacity="0.9"/><text x="177" y="243" font-family="sans-serif" font-size="11" fill="#495057">GPE (green)</text><rect x="280" y="233" width="13" height="13" fill="#7c2d12" opacity="0.9"/><text x="297" y="243" font-family="sans-serif" font-size="11" fill="#495057">KE (orange)</text></svg>', caption: 'Energy conservation on a rollercoaster: GPE + KE = constant' }, terms: [] },
     { id: 'enr-worked-rc', type: 'callout', data: { style: 'worked', title: 'Rollercoaster Speed Calculation', text: 'Drop from 45 m height (h₁ = 45 m) to the base (h = 0):<br/><strong>v = &radic;(2 &times; 9.8 &times; 45) = &radic;882 &approx; 29.7 m/s</strong> (107 km/h) &mdash; from gravity alone.<br/><strong>Mass</strong> cancels: speed at the base depends only on the <strong>height drop</strong>, not the <strong>mass</strong> of the car.<br/>Same calculation works for any height drop: v = &radic;(2gh).' }, terms: [] },
     { id: 'enr-tip-cons', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Energy Conservation', text: '<strong>Friction-free:</strong> mgh = &frac12;mv&sup2; &rarr; v = &radic;(2gh).<br/><strong>With friction:</strong> mgh = &frac12;mv&sup2; + W<sub>f</sub> where W<sub>f</sub> = <strong>friction</strong> <strong>force</strong> &times; distance.<br/>&ldquo;Energy lost to heat&rdquo; = W<sub>f</sub>.<br/><strong>Mass</strong> often cancels &mdash; always check before substituting numbers.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Kinetic Energy Depends on Speed, Not Velocity",
+        text: "KE = \u00bdmv\u00b2 depends on SPEED (always positive), NOT velocity. A ball thrown upward and one thrown downward at the same speed have identical KE, even though velocities are opposite."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "KE Equation Common Error",
+        text: "When using KE = \u00bdmv\u00b2, only the SPEED is squared \u2014 not mass or \u00bd. If asked for 'loss of KE', calculate both values and subtract: \u0394KE = KE_initial \u2212 KE_final (no negative sign in answer)."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Kinetic Energy' }], summaryText: '', ready: true },
   evidence: [],

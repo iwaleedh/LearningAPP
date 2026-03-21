@@ -56,7 +56,25 @@ export const note_physics_1_2_7 = {
     { id: 'summary-1', type: 'summary', data: { text: "Forces are vectors. Free-body diagrams show all forces acting ON a single object. A <strong>force</strong> F at angle theta resolves into F cos theta (horizontal) and F sin theta (vertical). For <strong>equilibrium</strong>: sum Fx = 0 and sum Fy = 0. On a slope: N = mg cos theta and net <strong>force</strong> along slope = mg sin theta." } },
     { id: 'enr-1', type: 'svg', data: { svg: '<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="200" fill="#0f172a"/><text x="250" y="18" font-family="sans-serif" font-size="13" font-weight="bold" fill="#212529" text-anchor="middle">Relative Velocity — Two Cars on a Road</text><rect x="0" y="90" width="500" height="50" fill="#1e293b"/><line x1="0" y1="115" x2="500" y2="115" stroke="white" stroke-width="2" stroke-dasharray="20,12"/><line x1="0" y1="90" x2="500" y2="90" stroke="#adb5bd" stroke-width="1.5"/><line x1="0" y1="140" x2="500" y2="140" stroke="#adb5bd" stroke-width="1.5"/><rect x="55" y="98" width="75" height="34" rx="6" fill="#339af0" stroke="#1864ab" stroke-width="2"/><text x="92" y="119" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Car A</text><rect x="290" y="98" width="75" height="34" rx="6" fill="#fa5252" stroke="#c92a2a" stroke-width="2"/><text x="327" y="119" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Car B</text><line x1="92" y1="72" x2="160" y2="72" stroke="#339af0" stroke-width="2.5"/><polygon points="160,72 150,67 150,77" fill="#339af0"/><text x="126" y="65" font-family="sans-serif" font-size="11" fill="#1864ab" text-anchor="middle">+30 m/s</text><line x1="327" y1="72" x2="390" y2="72" stroke="#fa5252" stroke-width="2.5"/><polygon points="390,72 380,67 380,77" fill="#fa5252"/><text x="360" y="65" font-family="sans-serif" font-size="11" fill="#c92a2a" text-anchor="middle">+22 m/s</text><line x1="92" y1="158" x2="148" y2="158" stroke="#339af0" stroke-width="2"/><polygon points="148,158 138,153 138,163" fill="#339af0"/><text x="120" y="150" font-family="sans-serif" font-size="10" fill="#1864ab" text-anchor="middle">v(A rel B) = +8 m/s</text><line x1="327" y1="175" x2="271" y2="175" stroke="#fa5252" stroke-width="2"/><polygon points="271,175 281,170 281,180" fill="#fa5252"/><text x="299" y="167" font-family="sans-serif" font-size="10" fill="#c92a2a" text-anchor="middle">v(B rel A) = −8 m/s</text></svg>', caption: 'Car A at +30 m/s and Car B at +22 m/s (same direction). Velocity of A relative to B = +8 m/s (blue arrow, rightward). Velocity of B relative to A = −8 m/s (red arrow, leftward).' } },
     { id: 'enr-2', type: 'callout', data: { style: 'worked', title: 'Relative Velocity: Two Trains Approaching', text: 'Train A travels at +40 m/s (rightward). Train B travels at −35 m/s (leftward, opposite direction). Starting 3 km apart. Relative speed of approach = 40 + 35 = 75 m/s (speeds add when moving in opposite directions). Time to collision = 3000 m / 75 m s⁻¹ = 40 s. Relative <strong>velocity</strong> is critical for collision avoidance: TCAS (aircraft), ERTMS (trains), and AIS (ships) all use relative <strong>velocity</strong> to calculate closing time and issue warnings.' } },
-    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Relative Velocity', text: "Relative <strong>velocity</strong> of A with respect to B = v_A − v_B. Always define positive direction first. Same direction: relative speed = |v_A − v_B| (take the difference). Opposite directions: relative speed = |v_A| + |v_B| (take the sum). Draw a diagram labelling the positive direction clearly to avoid sign errors." } }
+    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Relative Velocity', text: "Relative <strong>velocity</strong> of A with respect to B = v_A − v_B. Always define positive direction first. Same direction: relative speed = |v_A − v_B| (take the difference). Opposite directions: relative speed = |v_A| + |v_B| (take the sum). Draw a diagram labelling the positive direction clearly to avoid sign errors." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Free-Body Diagrams",
+        text: "Free-body diagram shows ONLY forces ON the object of interest, not forces the object exerts on others. Label each force clearly (W = mg, N, f, T, F). For equilibrium: sum of horizontal forces = 0 AND sum of vertical forces = 0."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Relative Velocity",
+        text: "Relative velocity of A with respect to B = vA \u2212 vB. Define positive direction first. Same direction: relative speed = |vA \u2212 vB|. Opposite directions: relative speed = |vA| + |vB|. Always draw a diagram labelling the positive direction to avoid sign errors."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is a free-body diagram? List the rules for drawing one correctly.' },

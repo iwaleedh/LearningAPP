@@ -56,7 +56,25 @@ export const note_physics_1_9_3 = {
     { id: 'summary-1', type: 'summary', data: { text: "Ball-bearing method: drop spheres through viscous fluid; measure <strong>terminal velocity</strong> v_t for different radii r. At <strong>terminal velocity</strong>: W = U + F_drag, giving v_t = 2r²(ρ_ball - ρ_fluid)g / (9η). Plot v_t vs r²: straight line through origin; η = 2(ρ_ball - ρ_fluid)g / (9 × gradient). Control temperature; use light gates; ensure <strong>terminal velocity</strong> before timing." } },
     { id: 'enr-worked-pressure', type: 'callout', data: { style: 'worked', title: 'Worked Example: Pressure at Depth', text: 'Pressure at 10 m depth in water: P=ρgh=1000×9.8×10=98,000 Pa (≈1 atm extra). At 100 m depth: P=980,000 Pa = 10 atm extra. Submarine hulls must withstand crushing pressures — titanium alloys rated to 100+ atm for research submersibles.' } },
     { id: 'enr-worked-hydraulic', type: 'callout', data: { style: 'worked', title: 'Worked Example: Hydraulic Car Lift', text: 'Hydraulic car <strong>lift</strong>: small piston area A₁=5 cm², <strong>force</strong> F₁=200 N gives pressure P=200/5=40 N/cm². Large piston area A₂=100 cm²: F₂=P×A₂=40×100=4000 N. <strong>Force</strong> multiplication factor=20. Same principle powers vehicle brakes, JCBs, aircraft landing gear.' } },
-    { id: 'enr-tip-pressure', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Pressure Formulae', text: 'Exam tip: Pressure P=F/A=ρgh. Units: Pa=N/m². For fluid at depth: P_total=P₀+ρgh (include atmospheric if asked for absolute). Pascal\'s principle: pressure applied to enclosed fluid transmits equally in all directions.' } }
+    { id: 'enr-tip-pressure', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Pressure Formulae', text: 'Exam tip: Pressure P=F/A=ρgh. Units: Pa=N/m². For fluid at depth: P_total=P₀+ρgh (include atmospheric if asked for absolute). Pascal\'s principle: pressure applied to enclosed fluid transmits equally in all directions.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Confirming Terminal Velocity Has Been Reached",
+        text: "Before timing, ensure terminal velocity is reached by comparing times over TWO EQUAL distance intervals. If both times equal, the ball is moving at constant velocity. If second time is shorter, still accelerating \u2014 drop ball from higher point."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Temperature Control in Viscosity Experiment",
+        text: "Viscosity of a liquid changes SIGNIFICANTLY with temperature. If temperature rises during experiment, viscosity drops and measured v_t increases. This is a major source of systematic error \u2014 conduct rapidly, repeat at constant room temperature."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Write the force balance at terminal velocity for a falling sphere. How is η derived from Stokes\' Law?' },

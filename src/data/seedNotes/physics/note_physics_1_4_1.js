@@ -20,7 +20,25 @@ export const note_physics_1_4_1 = {
     { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="200" fill="#0f172a"/><path d="M 150 50 Q 200 20 280 60 T 300 150 Q 250 180 180 160 T 120 120 Z" fill="#4a1040" stroke="#be4bdb" stroke-width="2"/><circle cx="210" cy="110" r="5" fill="#e03131"/><text x="240" y="115" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c92a2a">C.G.</text><line x1="210" y1="110" x2="210" y2="180" stroke="#fa5252" stroke-width="3"/><polygon points="210,180 205,170 215,170" fill="#fa5252"/><text x="190" y="175" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c92a2a">W</text><text x="200" y="25" font-family="sans-serif" font-size="16" fill="#495057" text-anchor="middle">Weight acts from Centre of Gravity</text></svg>', caption: 'Centre of Gravity Example' } },
     { id: 'enr-callout-lshape', type: 'callout', data: { style: 'worked', title: 'Worked Example: CG of an L-shaped Structure', text: 'Divide the L-shape into two rectangles:<br/>Rectangle 1: 4 m × 2 m → A₁ = 8 m², centroid at (x̄₁ = 2 m, ȳ₁ = 1 m)<br/>Rectangle 2: 2 m × 4 m → A₂ = 8 m², centroid at (x̄₂ = 3 m, ȳ₂ = 4 m)<br/><br/>x̄ = (A₁x̄₁ + A₂x̄₂) ÷ (A₁ + A₂) = (8×2 + 8×3) ÷ 16 = 40 ÷ 16 = <strong>2.5 m</strong><br/>ȳ = (A₁ȳ₁ + A₂ȳ₂) ÷ (A₁ + A₂) = (8×1 + 8×4) ÷ 16 = 40 ÷ 16 = <strong>2.5 m</strong><br/><br/>CG is at (2.5 m, 2.5 m). If this lies directly above the base, the structure is stable.' } },
     { id: 'enr-callout-bus', type: 'callout', data: { style: 'worked', title: 'Real-World Example: Why a Double-Decker Bus Does Not Topple', text: 'The <strong>centre of gravity</strong> is kept low by the heavy engine and chassis concentrated at the base. London buses undergo a certified <em>tilt test</em> — they must remain stable when leaned to 28° without tipping.<br/>If all passengers moved to the top deck, the CG would rise and the critical tipping angle would decrease significantly.<br/>The same CG engineering principles govern aircraft load-sheet calculations, ship ballast design, and Formula 1 car chassis development.' } },
-    { id: 'enr-callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Stability and the CG', text: 'An object is <strong>stable</strong> if the vertical line through its CG falls <strong>within</strong> the base area.<br/>If it falls <strong>outside</strong> the base, the object topples.<br/>Two ways to increase stability: (1) <strong>lower the CG</strong>, (2) <strong>widen the base</strong>.' } }
+    { id: 'enr-callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Stability and the CG', text: 'An object is <strong>stable</strong> if the vertical line through its CG falls <strong>within</strong> the base area.<br/>If it falls <strong>outside</strong> the base, the object topples.<br/>Two ways to increase stability: (1) <strong>lower the CG</strong>, (2) <strong>widen the base</strong>.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Stability & Centre of Gravity",
+        text: "An object is stable if the vertical line through its CG falls WITHIN the base area. Two ways to increase stability: (1) lower the CG, (2) widen the base."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Real-World Application: Double-Decker Buses",
+        text: "CG kept low by heavy engine/chassis at base. London buses must pass a tilt test \u2014 remain stable at 28\u00b0 without tipping. If all passengers move to top deck, CG rises and critical tipping angle decreases significantly."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Centre of Gravity & The Principle of Moments' }], summaryText: '', ready: true },
   evidence: [],

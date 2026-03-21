@@ -62,7 +62,25 @@ export const note_physics_1_1_7 = {
     { id: 'enr-callout-1', type: 'callout', data: { style: 'worked', title: 'Free-Body Diagram: Car Accelerating', text: 'Forces on a car accelerating: <strong>Weight</strong> W (down), Normal N (up), Driving <strong>force</strong> F (right), <strong>Friction</strong>/<strong>drag</strong> f (left).<br>Net <strong>force</strong> = F − f = ma<br>If F = 3000 N, f = 500 N, m = 1500 kg:<br>a = 2500 / 1500 = 1.67 m/s²<br>This is the starting point for EVERY dynamics problem.' } },
     { id: 'enr-callout-2', type: 'callout', data: { style: 'warning', title: "Newton's 3rd Law Pairs", text: "Common error: including the 'engine <strong>force</strong>' as a reaction pair with <strong>friction</strong> — they are NOT Newton's third law pairs. Newton's 3rd law pairs act on DIFFERENT objects (e.g. car pushes road backwards, road pushes car forwards)." } },
     { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: 'Free-Body Diagram Exam Technique', text: 'Exam tip: EVERY mechanics question needs a free-body diagram — draw it BEFORE writing equations. Label all forces with name AND magnitude. Check: if the object accelerates, the drawn forces must have a net resultant in the direction of <strong>acceleration</strong>.' } },
-    { id: 'summary-1', type: 'summary', data: { text: "Science and society are deeply interconnected. Scientists must consider ethical implications of their work, communicate findings honestly, and engage with risk-benefit analysis. Society shapes science through funding and policy, while science informs society through evidence, technology, and expert advice." } }
+    { id: 'summary-1', type: 'summary', data: { text: "Science and society are deeply interconnected. Scientists must consider ethical implications of their work, communicate findings honestly, and engage with risk-benefit analysis. Society shapes science through funding and policy, while science informs society through evidence, technology, and expert advice." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Risk-Benefit Framework",
+        text: "Technology is approved when benefits (health, economy, knowledge, quality of life) outweigh risks (environmental, safety, ethical). Always frame decisions as balancing these factors. Example: nuclear power reduces carbon but leaves radioactive waste for millennia."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Ethical Responsibilities in Science",
+        text: "Scientists must report honestly even when results are commercially or politically inconvenient. Fraud destroys trust and wastes resources on false leads. Informed consent is required for human research. Long-term monitoring (CFC/ozone case study) is vital for detecting harm."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is a risk-benefit analysis and why is it carried out before deploying a new technology?' },

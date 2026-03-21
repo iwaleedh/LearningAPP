@@ -52,7 +52,25 @@ export const note_physics_1_1_4 = {
       { text: "Draw a correctly labelled graph with a best-fit line and calculate its gradient", checked: false },
       { text: "Write a conclusion that cites numerical evidence and quantifies the relationship found", checked: false }
     ]}},
-    { id: 'summary-1', type: 'summary', data: { text: "Scientific communication requires significant figures matched to data precision, well-labelled graphs (title, axes with units, best-fit line, error bars), and conclusions that cite evidence, compare with accepted values, and identify sources of error." } }
+    { id: 'summary-1', type: 'summary', data: { text: "Scientific communication requires significant figures matched to data precision, well-labelled graphs (title, axes with units, best-fit line, error bars), and conclusions that cite evidence, compare with accepted values, and identify sources of error." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Significant Figures",
+        text: "Quote results to 2-3 significant figures (not more). Too many sig figs suggests false precision. Graph axes must have quantity name AND unit. A conclusion must state the result with evidence and compare to a known value using percentage difference."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Graph Mistake",
+        text: "Plot data as crosses (not dots), draw a best-fit line (not joining dots), and include error bars. Missing any of these loses marks. Gradients calculated from two points far apart on the line reduce percentage error in coordinate reading."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is a significant figure? How many s.f. should a result be quoted to?' },

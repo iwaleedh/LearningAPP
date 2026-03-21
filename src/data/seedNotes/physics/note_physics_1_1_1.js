@@ -21,6 +21,24 @@ export const note_physics_1_1_1 = {
     { id: 'ex-mean', type: 'callout', data: { style: 'worked', title: 'Example: Calculating Mean and Uncertainty', text: 'Three current readings: 1.02 A, 1.04 A, 1.03 A<br/>Step 1: Mean = (1.02 + 1.04 + 1.03) / 3 = <strong>1.03 A</strong><br/>Step 2: Range = 1.04 &#8722; 1.02 = 0.02 A<br/>Step 3: Uncertainty = range / 2 = <strong>&#177; 0.01 A</strong><br/>Result: I = 1.03 &#177; 0.01 A' }, terms: [] },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always check for <strong>zero error</strong> and <strong>parallax error</strong> when using analogue meters. State which type of error each instrument is susceptible to — examiners reward this analysis.' }, terms: [] },
     { id: 'checklist', type: 'checklist', data: { items: [ { text: 'Identify correct apparatus', checked: false }, { text: 'Read scales accurately', checked: false }, { text: 'Calculate mean and uncertainty', checked: false }, { text: 'State resolution of a given instrument', checked: false } ] }, terms: [] },
+        {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake: Parallax Error",
+        text: "Eyes must be perpendicular to the scale when reading analogue instruments. If viewing at an angle, the reading is distorted. Solution: use a mirror behind the scale \u2014 when your eye's reflection is hidden, you're reading perpendicular. Examiners reward students who mention this."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Zero Error Analysis",
+        text: "Identify zero error (reading when instrument shows zero) and parallax error separately in your evaluation. Both are systematic errors requiring correction. Examiners specifically ask for these in practical write-ups."
+      }
+    },
     { id: 'summary', type: 'summary', data: { text: 'Good practical skills require careful choice and use of apparatus, accurate readings, and correct calculation of mean and uncertainty.' }, terms: [] },
     { id: 'enr-callout-worked-gps', type: 'callout', data: { style: 'worked', title: 'Worked Example: Significant Figures and GPS Precision', text: 'A GPS coordinate reported as <strong>51.501476&#176; N</strong> (6 significant figures after the decimal point) locates you to within about 1 m precision. If rounded to 51.5&#176; N (3 sig figs total), precision drops to &#8764;10 km.<br/>Lesson: more significant figures directly correspond to greater <strong>precision</strong>. The instrument\'s <strong>resolution</strong> must be sufficient to justify each extra digit &#8212; quoting more figures than the instrument can supply is false precision.' }, terms: [] },
     { id: 'enr-callout-warn-prec-acc', type: 'callout', data: { style: 'warning', title: 'Common Confusion: Precision vs Accuracy', text: '<strong>Precision</strong> &#8212; how consistent/repeatable readings are (related to resolution and random error).<br/><strong>Accuracy</strong> &#8212; how close readings are to the true value (related to systematic error and calibration).<br/><strong>Example:</strong> A bathroom scale displaying 72.347 kg is <em>precise</em> (5 sig figs, small reading-to-reading variation) but may be <em>inaccurate</em> if it has a systematic offset from poor calibration. Precise &#8800; accurate!' }, terms: [] },

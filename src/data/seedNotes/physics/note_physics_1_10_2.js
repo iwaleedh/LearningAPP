@@ -18,6 +18,24 @@ export const note_physics_1_10_2 = {
     { id: 'enr-svg-stress-strain', type: 'svg', data: { svg: '<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg"><rect width="480" height="300" fill="#0f172a" rx="8"/><line x1="60" y1="260" x2="440" y2="260" stroke="#212529" stroke-width="2"/><polygon points="440,260 432,255 432,265" fill="#212529"/><text x="450" y="264" font-family="sans-serif" font-size="13" fill="#212529">ε</text><text x="200" y="285" font-family="sans-serif" font-size="13" fill="#495057" text-anchor="middle">Strain (no units)</text><line x1="60" y1="260" x2="60" y2="20" stroke="#212529" stroke-width="2"/><polygon points="60,20 55,28 65,28" fill="#212529"/><text x="55" y="16" font-family="sans-serif" font-size="13" fill="#212529" text-anchor="middle">σ</text><text x="18" y="150" font-family="sans-serif" font-size="13" fill="#495057" text-anchor="middle" transform="rotate(-90 18,150)">Stress (Pa)</text><path d="M 60 260 L 160 140" stroke="#339af0" stroke-width="3" fill="none"/><path d="M 160 140 L 185 122" stroke="#339af0" stroke-width="3" fill="none"/><path d="M 185 122 Q 210 108 230 106" stroke="#f59f00" stroke-width="3" fill="none"/><path d="M 230 106 L 300 108" stroke="#f76707" stroke-width="3" fill="none"/><path d="M 300 108 Q 360 115 390 90" stroke="#e03131" stroke-width="3" fill="none"/><path d="M 390 90 Q 410 78 420 95" stroke="#e03131" stroke-width="3" fill="none"/><circle cx="160" cy="140" r="5" fill="#2f9e44"/><text x="163" y="133" font-family="sans-serif" font-size="11" fill="#2f9e44">Proportional limit</text><circle cx="185" cy="122" r="5" fill="#1971c2"/><text x="140" y="115" font-family="sans-serif" font-size="11" fill="#1971c2">Elastic limit</text><circle cx="230" cy="106" r="5" fill="#f59f00"/><text x="228" y="98" font-family="sans-serif" font-size="11" fill="#e67700" text-anchor="middle">Yield point</text><text x="265" y="125" font-family="sans-serif" font-size="11" fill="#f76707" text-anchor="middle">← Plastic region →</text><circle cx="420" cy="95" r="5" fill="#e03131"/><text x="422" y="88" font-family="sans-serif" font-size="11" fill="#e03131">Break</text><line x1="78" y1="245" x2="142" y2="155" stroke="#862e9c" stroke-width="1.5" stroke-dasharray="5,3"/><text x="88" y="210" font-family="sans-serif" font-size="11" fill="#862e9c" transform="rotate(-46 88,210)">E = Young\'s Modulus</text></svg>', caption: 'Stress–strain graph showing key points: proportional limit, elastic limit, yield point, plastic region and fracture. Gradient of linear portion = Young\'s Modulus E.' } },
     { id: 'enr-worked-wire', type: 'callout', data: { style: 'worked', title: 'Worked Example — Steel Wire', text: 'Steel wire: d = 0.50 mm, L = 2.0 m, stretches ΔL = 1.8 mm under F = 60 N.\n\nRadius r = 0.25 × 10⁻³ m, so A = π r² = π × (0.25 × 10⁻³)² = 1.963 × 10⁻⁷ m²\n\nStress = F/A = 60 / 1.963 × 10⁻⁷ ≈ 3.06 × 10⁸ Pa = 306 MPa\n\nStrain = ΔL/L = 1.8 × 10⁻³ / 2.0 = 9 × 10⁻⁴\n\nE = <strong>stress</strong> / <strong>strain</strong> = 3.06 × 10⁸ / 9 × 10⁻⁴ ≈ 3.4 × 10¹¹ Pa = 340 GPa\n\nNote: Accepted steel E ≈ 200 GPa — within experimental error for a simple wire experiment, where diameter measurement uncertainty dominates.' } },
     { id: 'enr-tip-youngs', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Young\'s Modulus', text: 'E = <strong>stress</strong> / <strong>strain</strong> = (F/A) / (ΔL/L). A larger E means a stiffer material.\n\nTypical values: Steel ≈ 200 GPa · Aluminium ≈ 70 GPa · Rubber ≈ 0.01 GPa\n\nBiggest uncertainty source in the wire experiment: micrometer reading of diameter — the diameter appears squared in the area calculation, so any error is doubled in relative terms.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Biggest Uncertainty: Diameter Measurement",
+        text: "In the Young modulus wire experiment, diameter measurement is the LARGEST source of error because d appears SQUARED in the area calculation: A = \u03c0d\u00b2/4. A 2% error in diameter becomes a 4% error in area \u2014 use micrometer carefully and take multiple readings."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Why Experimental E May Differ from Accepted Value",
+        text: "If your calculated Young Modulus differs from 200 GPa (steel), the diameter measurement uncertainty usually dominates. Take at least 5 micrometer readings at different positions/planes and use the mean. Wire uniformity directly affects accuracy."
+      }
+    }
 
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Force-Extension Graphs' }], summaryText: '', ready: true },

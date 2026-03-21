@@ -24,6 +24,24 @@ export const note_physics_1_9_1 = {
     { id: 'enr-svg-upthrust', type: 'svg', data: { svg: '<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="280" fill="#0f172a"/><rect x="50" y="30" width="160" height="210" fill="#1c3a64" opacity="0.5" stroke="#1864ab" stroke-width="3"/><text x="130" y="52" font-family="sans-serif" font-size="11" fill="#1971c2" text-anchor="middle">water (&#961;_fluid)</text><rect x="80" y="110" width="100" height="80" fill="#1e293b" stroke="#495057" stroke-width="2"/><text x="130" y="155" font-family="sans-serif" font-size="10" font-weight="bold" fill="#343a40" text-anchor="middle">block</text><line x1="230" y1="150" x2="230" y2="230" stroke="#e03131" stroke-width="3.5"/><polygon points="230,236 224,222 236,222" fill="#e03131"/><text x="247" y="222" font-family="sans-serif" font-size="15" font-weight="bold" fill="#c92a2a">W</text><line x1="60" y1="150" x2="60" y2="93" stroke="#1c7ed6" stroke-width="3.5"/><polygon points="60,87 54,100 66,100" fill="#1c7ed6"/><text x="42" y="90" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1864ab">U</text><line x1="95" y1="202" x2="95" y2="194" stroke="#e67700" stroke-width="2.5"/><polygon points="95,191 90,201 100,201" fill="#e67700"/><line x1="128" y1="202" x2="128" y2="194" stroke="#e67700" stroke-width="2.5"/><polygon points="128,191 123,201 133,201" fill="#e67700"/><line x1="161" y1="202" x2="161" y2="194" stroke="#e67700" stroke-width="2.5"/><polygon points="161,191 156,201 166,201" fill="#e67700"/><text x="128" y="222" font-family="sans-serif" font-size="9" fill="#e67700" text-anchor="middle">P_bottom (largest)</text><line x1="100" y1="103" x2="100" y2="111" stroke="#e67700" stroke-width="1.5"/><polygon points="100,113 96,104 104,104" fill="#e67700"/><line x1="155" y1="103" x2="155" y2="111" stroke="#e67700" stroke-width="1.5"/><polygon points="155,113 151,104 159,104" fill="#e67700"/><text x="285" y="148" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle">W &gt; U</text><text x="285" y="165" font-family="sans-serif" font-size="12" fill="#495057" text-anchor="middle">&#8594; object sinks</text><text x="200" y="268" font-family="sans-serif" font-size="11" fill="#343a40" text-anchor="middle">U = &#961;_fluid &#215; V &#215; g = weight of fluid displaced (Archimedes)</text></svg>', caption: 'Upthrust: W (red, longer) pulls block down, U (blue, shorter) acts upward; pressure arrows show largest force at block base' } },
     { id: 'enr-worked-balloon', type: 'callout', data: { style: 'worked', title: 'Worked Example: Hot Air Balloon Lift', text: 'V = 2500 m&#179;. Cool surrounding air &#961; = 1.23 kg/m&#179;.<br><strong>Upthrust</strong> = &#961;_air &#215; V &#215; g = 1.23 &#215; 2500 &#215; 9.8 = 30,135 N.<br>Hot air inside: &#961; = 0.95 kg/m&#179;, <strong>weight</strong> = 0.95 &#215; 2500 &#215; 9.8 = 23,275 N.<br>Net upward <strong>force</strong> = 30,135 &#8722; 23,275 = 6,860 N &#8594; supports ~700 kg (balloon + basket + passengers).' } },
     { id: 'enr-tip-archimedes', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Upthrust & Floating Condition', text: '<strong>Upthrust</strong> = &#961;_fluid &#215; V_submerged &#215; g (always use FLUID density, not object density).<br>Float condition: <strong>upthrust</strong> = <strong>weight</strong> &#8594; &#961;_object / &#961;_fluid = fraction submerged.<br>Iceberg: &#961;_ice = 917 kg/m&#179; in seawater &#961; = 1025 kg/m&#179; &#8594; 917/1025 &#8776; 89.5% submerged, only ~10.5% above water.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Upthrust: Use FLUID Density, Not Object Density",
+        text: "Upthrust = \u03c1_FLUID \u00d7 V_submerged \u00d7 g. ALWAYS use the density of the fluid, never the object density. This is a common exam error \u2014 misusing the wrong density entirely changes the answer."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "The Iceberg Question",
+        text: "Iceberg: \u03c1_ice = 917 kg/m\u00b3 in seawater \u03c1 = 1025 kg/m\u00b3. Fraction submerged = 917/1025 \u2248 89.5%, so only ~10.5% above water. This 90% hidden fraction explains why icebergs are dangerous to ships."
+      }
+    }
 
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Upthrust' }], summaryText: '', ready: true },

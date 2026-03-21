@@ -57,7 +57,25 @@ export const note_physics_1_5_5 = {
       { text: "Interpret a Sankey diagram and describe what it shows about energy transfers", checked: false },
       { text: "Suggest two ways to improve the efficiency of a given device", checked: false }
     ]}},
-    { id: 'summary-1', type: 'summary', data: { text: "<strong>Efficiency</strong> = useful energy output / total energy input (multiply by 100 for a percentage). No device is 100% efficient — energy is always wasted as heat or sound. <strong>Efficiency</strong> can be improved by reducing <strong>friction</strong>, resistance, and other energy loss mechanisms. Higher <strong>efficiency</strong> means less environmental impact." } }
+    { id: 'summary-1', type: 'summary', data: { text: "<strong>Efficiency</strong> = useful energy output / total energy input (multiply by 100 for a percentage). No device is 100% efficient — energy is always wasted as heat or sound. <strong>Efficiency</strong> can be improved by reducing <strong>friction</strong>, resistance, and other energy loss mechanisms. Higher <strong>efficiency</strong> means less environmental impact." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "The 100% Efficiency Myth",
+        text: "No real device is ever 100% efficient in practice. Some energy is ALWAYS lost to the surroundings as heat or sound. This statement appears in every exam \u2014 use it to show understanding."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Petrol vs Electric Motor Efficiency",
+        text: "Petrol engine: ~25% efficient overall; 75% lost as heat. Electric motor: ~90% efficient. This enormous difference explains the environmental and economic case for electrification \u2014 less fuel wasted, lower CO\u2082 emissions."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Write the equation for efficiency in terms of energy and in terms of power' },

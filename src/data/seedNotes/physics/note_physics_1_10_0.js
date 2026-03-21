@@ -1,7 +1,7 @@
 export const note_physics_1_10_0 = {
   blocks: [
-    { id: 'obj-1', type: 'objective', data: { text: "Understand Hooke\'s Law" } },
-    { id: 'head-1', type: 'heading', data: { text: "Hooke\'s Law", level: 2 } },
+    { id: 'obj-1', type: 'objective', data: { text: "Understand Hooke's Law" } },
+    { id: 'head-1', type: 'heading', data: { text: "Hooke's Law", level: 2 } },
     { id: 'para-2', type: 'list', data: { style: 'bullet', items: [{ text: "<strong>Hooke's Law</strong> <strong>Hooke's Law</strong> When a <strong>force</strong> F is added to the bottom of a vertical metal wire of length L, the wire stretches" }] } },
     { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: "A material obeys <strong>Hooke's Law</strong> if: The extension of the material is directly proportional to the applied <strong>force</strong> (load) up to the <strong>limit of proportionality</strong> This linear relationship is represented by the <strong>Hooke's law</strong> equation:" }] } },
     { id: 'para-4', type: 'list', data: { style: 'bullet', items: [{ text: "ΔF = k Δx Where: F = applied <strong>force</strong> (N) k = spring constant (N m )" }] } },
@@ -23,10 +23,28 @@ export const note_physics_1_10_0 = {
     { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="250" fill="#0f172a"/><line x1="60" y1="200" x2="350" y2="200" stroke="#212529" stroke-width="2"/><line x1="60" y1="200" x2="60" y2="30" stroke="#212529" stroke-width="2"/><text x="200" y="240" font-family="sans-serif" font-size="16" fill="#212529" text-anchor="middle">Strain (ε)</text><text x="25" y="110" font-family="sans-serif" font-size="16" fill="#212529" text-anchor="middle" transform="rotate(-90 25,110)">Stress (σ)</text><path d="M 60 200 L 160 80" stroke="#be4bdb" stroke-width="4" fill="none"/><path d="M 160 80 Q 220 50 320 60" stroke="#be4bdb" stroke-width="4" fill="none" stroke-dasharray="5,5"/><text x="135" y="160" font-family="sans-serif" font-size="14" fill="#862e9c" text-anchor="middle" transform="rotate(-50 135,160)">Young Modulus (E)</text><text x="270" y="45" font-family="sans-serif" font-size="14" fill="#862e9c" text-anchor="middle">Plastic Deformation</text></svg>', caption: "Young Modulus (Stress-Strain Graph)" } },
     { id: 'enr-svg-hooke', type: 'svg', data: { svg: '<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg"><rect width="480" height="300" fill="#0f172a"/><polygon points="60,260 280,260 280,100" fill="#0a2e1a" opacity="0.7"/><line x1="60" y1="260" x2="430" y2="260" stroke="#212529" stroke-width="2"/><line x1="60" y1="260" x2="60" y2="20" stroke="#212529" stroke-width="2"/><polygon points="430,260 420,255 420,265" fill="#212529"/><polygon points="60,20 55,30 65,30" fill="#212529"/><line x1="60" y1="260" x2="280" y2="100" stroke="#2f9e44" stroke-width="3"/><path d="M 280 100 Q 360 60 420 70" stroke="#e03131" stroke-width="3" fill="none"/><circle cx="280" cy="100" r="6" fill="#1971c2"/><text x="245" y="290" font-family="sans-serif" font-size="13" fill="#212529" text-anchor="middle">Extension (m)</text><text x="20" y="140" font-family="sans-serif" font-size="13" fill="#212529" text-anchor="middle" transform="rotate(-90 20,140)">Force (N)</text><text x="148" y="195" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2f9e44" text-anchor="middle">Hooke&#39;s Law F=kx</text><text x="148" y="212" font-family="sans-serif" font-size="11" fill="#2f9e44" text-anchor="middle">gradient = k (N/m)</text><text x="175" y="248" font-family="sans-serif" font-size="11" fill="#2b8a3e" text-anchor="middle">&#189;kx&#178; = elastic PE</text><text x="335" y="93" font-family="sans-serif" font-size="12" fill="#1971c2" text-anchor="start">Elastic limit</text><text x="390" y="52" font-family="sans-serif" font-size="12" fill="#e03131" text-anchor="middle">Plastic region</text></svg>', caption: "Force-Extension Graph: Hooke's Law, elastic limit, and plastic region" } },
     { id: 'enr-worked-suspension', type: 'callout', data: { style: 'worked', title: 'Worked Example: Car Spring Compression', text: 'Car spring k = 25 000 N/m, <strong>weight</strong> per spring = 3675 N.\nCompression x = F/k = 3675 / 25 000 = 0.147 m = 14.7 cm.\nAdding an 80 kg passenger: extra <strong>force</strong> per spring = (80 × 9.81) / 4 ≈ 196 N.\nExtra compression = 196 / 25 000 = 0.00784 m ≈ 7.8 mm.\nEngineers calculate this to set the correct ride height and choose the right spring constant.' } },
-    { id: 'enr-tip-hooke', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Hooke\'s Law Key Points', text: 'F = kx applies only in the elastic region (up to the <strong>elastic limit</strong>).\nk = gradient of the F–x graph (N/m).\nElastic PE = ½kx² = area under the linear part of the F–x graph.\nSprings in series: 1/k_eff = 1/k₁ + 1/k₂ → softer (lower k_eff).\nSprings in parallel: k_eff = k₁ + k₂ → stiffer (higher k_eff).' } },
+    { id: 'enr-tip-hooke', type: 'callout', data: { style: 'tip', title: "Exam Tip: Hooke's Law Key Points", text: 'F = kx applies only in the elastic region (up to the <strong>elastic limit</strong>).\nk = gradient of the F–x graph (N/m).\nElastic PE = ½kx² = area under the linear part of the F–x graph.\nSprings in series: 1/k_eff = 1/k₁ + 1/k₂ → softer (lower k_eff).\nSprings in parallel: k_eff = k₁ + k₂ → stiffer (higher k_eff).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Hooke's Law Limit: Elastic Region Only",
+        text: "F = kx applies ONLY up to the elastic limit. Beyond that, extension increases without proportional force increase. Always check whether the question is in the elastic region \u2014 if not, Hooke's Law fails."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Springs in Series vs Parallel",
+        text: "Series springs: 1/k_eff = 1/k\u2081 + 1/k\u2082 \u2192 k_eff is SMALLER, springs softer (like two weak springs together). Parallel springs: k_eff = k\u2081 + k\u2082 \u2192 k_eff is LARGER, springs stiffer (support shared). Common error: confusing these \u2014 remember series = softer, parallel = stiffer."
+      }
+    }
 
   ],
-  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Hooke\'s Law' }], summaryText: '', ready: true },
+  recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: "Summarise Hooke's Law" }], summaryText: '', ready: true },
   evidence: [],
   mentions: []
 };

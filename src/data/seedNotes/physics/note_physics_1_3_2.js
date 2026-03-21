@@ -53,7 +53,25 @@ export const note_physics_1_3_2 = {
     { id: 'summary-1', type: 'summary', data: { text: "Measure g by timing a ball falling through measured heights. Using h = ½gt², plot h (y-axis) against t² (x-axis): gradient = g/2, so g = 2 × gradient. Repeat measurements to reduce random errors. Systematic errors (air resistance, reaction time) cause g to be measured below 9.81 m/s². Use electronic timing and dense balls for best results." } },
     { id: 'enr-callout-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Lifting Engine (Dynamic Load)', text: 'Crane lifts 500 kg engine at constant <strong>acceleration</strong> 0.5 m/s² upward. T − mg = ma → T = m(g + a) = 500 × (9.8 + 0.5) = 5150 N. Compare to <strong>weight</strong> W = 500 × 9.8 = 4900 N. <strong>Tension</strong> is 5% greater than <strong>weight</strong>. Engineers design crane cables for dynamic loads (<strong>tension</strong> during <strong>acceleration</strong>), not just static <strong>weight</strong>.' } },
     { id: 'enr-callout-2', type: 'callout', data: { style: 'warning', title: "Common Mistake: Newton's 3rd Law Pairs", text: "The <strong>weight</strong> of a book on a table is NOT the 3rd law pair of the normal <strong>force</strong>. <strong>Weight</strong> is gravity pulling the book downward; its 3rd law pair is the book pulling the Earth upward with equal <strong>force</strong>. The normal <strong>force</strong>'s 3rd law pair is the book pushing down on the table surface." } },
-    { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: "Exam Tip: Identifying Newton's 3rd Law Pairs", text: "To identify Newton's 3rd Law pairs: (1) identify the interaction type (gravitational, contact, electromagnetic), (2) swap subject and object — 'Earth pulls book' → pair is 'book pulls Earth'. Pairs must act on DIFFERENT objects and must be the SAME TYPE of <strong>force</strong>." } }
+    { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: "Exam Tip: Identifying Newton's 3rd Law Pairs", text: "To identify Newton's 3rd Law pairs: (1) identify the interaction type (gravitational, contact, electromagnetic), (2) swap subject and object — 'Earth pulls book' → pair is 'book pulls Earth'. Pairs must act on DIFFERENT objects and must be the SAME TYPE of <strong>force</strong>." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: h vs t\u00b2 Graph",
+        text: "Examiners often ask: 'Why plot h against t\u00b2 rather than h against t?' Answer: h = \u00bdgt\u00b2 means h \u221d t\u00b2 (not t). Plotting h vs t\u00b2 gives a straight line whose gradient = g/2, making g easy to extract. Plotting h vs t gives a curve and obscures g."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Sources of Error in Freefall",
+        text: "Systematic errors: reaction time delay (use electronic timer to eliminate), air resistance (use dense metal ball, not feather). Random errors: variability in release, timer response fluctuations. Improvements: multiple trials, repeated heights, discard anomalous results, use data logger."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Describe the electromagnet-and-trapdoor method for measuring g. What is measured and how is it repeated?' },

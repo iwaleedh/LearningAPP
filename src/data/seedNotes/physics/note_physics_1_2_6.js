@@ -63,7 +63,34 @@ export const note_physics_1_2_6 = {
     { id: 'summary-1', type: 'summary', data: { text: "Projectile motion: horizontal (ax = 0, vx = u cosθ = constant) and vertical (ay = -g, vy = uy - gt) are independent. Time of flight T = 2u sinθ / g. Maximum height H = u²sin²θ / 2g. Range R = u²sin2θ / g. For a horizontal launch from height h: t = sqrt(2h/g), R = u × t." } },
     { id: 'enr-1', type: 'callout', data: { style: 'worked', title: 'Measuring g Using Light Gates', text: 'A steel ball of diameter d = 0.020 m is dropped through two light gates separated by s = 0.800 ± 0.002 m. The ball interrupts each gate for times t₁ = 0.0423 s (upper gate) and t₂ = 0.0267 s (lower gate). Step 1 — Velocities at each gate: v₁ = d / t₁ = 0.020 / 0.0423 = 0.473 m/s; v₂ = d / t₂ = 0.020 / 0.0267 = 0.749 m/s. Step 2 — Apply v² = u² + 2as with a = g: g = (v₂² − v₁²) / (2s) = (0.749² − 0.473²) / (2 × 0.800) = (0.561 − 0.224) / 1.600 = 0.337 / 1.600 ≈ 9.81 m/s².' } },
     { id: 'enr-2', type: 'callout', data: { style: 'warning', title: 'Air Resistance in Free Fall', text: 'A feather and a hammer fall at the same rate in a VACUUM — demonstrated on the Moon in 1971 by Apollo 15 astronaut David Scott. In air, the <strong>drag</strong> <strong>force</strong> on a feather is enormous compared to its <strong>weight</strong>. When the <strong>drag</strong>-to-<strong>weight</strong> ratio is large, objects do not accelerate at g and reach <strong>terminal velocity</strong> almost instantly. Only in a vacuum, or for dense/streamlined objects over short distances, is free fall truly at g = 9.81 m/s².' } },
-    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Using g', text: "Use g = 9.81 m/s² (or the value stated in the paper — some papers allow 9.8 or 10). Always state that g acts DOWNWARD. Choose a consistent sign convention: taking downward as positive gives a = +9.81 m/s²; taking upward as positive gives a = −9.81 m/s². Inconsistent signs are the most common source of error in kinematics questions." } }
+    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Using g', text: "Use g = 9.81 m/s² (or the value stated in the paper — some papers allow 9.8 or 10). Always state that g acts DOWNWARD. Choose a consistent sign convention: taking downward as positive gives a = +9.81 m/s²; taking upward as positive gives a = −9.81 m/s². Inconsistent signs are the most common source of error in kinematics questions." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Key Principle: Independence of Motion Components",
+        text: "Horizontal and vertical components of projectile motion are INDEPENDENT. Horizontal: no acceleration (ax = 0), vx = u cos \u03b8 = constant. Vertical: acceleration = g downward. Analyse each direction separately using SUVAT."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Air Resistance in Free Fall",
+        text: "A feather and hammer fall at the same rate ONLY in a vacuum. In air, drag force on a feather is enormous compared to its weight. When drag-to-weight ratio is large, objects reach terminal velocity almost instantly and do not accelerate at g. Free-fall at g = 9.81 m/s\u00b2 applies only to dense/streamlined objects over short distances or in vacuum."
+      }
+    },
+    {
+      id: 'callout-tip-3',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Sign Convention for g",
+        text: "State your sign convention clearly: 'Taking downward as positive gives a = +9.81 m/s\u00b2' or 'taking upward as positive gives a = \u22129.81 m/s\u00b2'. Inconsistent signs are the most common source of error in projectile motion problems."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'State the key principle of projectile motion. What is the horizontal acceleration? What is the vertical acceleration?' },

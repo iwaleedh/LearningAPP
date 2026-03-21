@@ -24,6 +24,24 @@ export const note_physics_1_5_2 = {
     { id: 'enr-worked-engine', type: 'callout', data: { style: 'worked', title: 'Car Engine Power Calculation', text: 'Car travelling at 30 m/s with driving <strong>force</strong> = 1200 N (balancing <strong>drag</strong> at that speed):<br/><strong>P = Fv = 1200 &times; 30 = 36 000 W = 36 kW</strong><br/>Engine <strong>efficiency</strong> = 30% &rarr; <strong>power</strong> input = 36 &divide; 0.3 = <strong>120 kW</strong>.<br/>At higher speed, <strong>drag</strong> increases &rarr; more <strong>force</strong> needed &rarr; <strong>power</strong> rises steeply (P &prop; v&sup3; for aerodynamic <strong>drag</strong>).' }, terms: [] },
     { id: 'enr-worked-human', type: 'callout', data: { style: 'worked', title: 'Human Power Output', text: 'Cyclist produces ~250 W sustained at 25 km/h.<br/>Compare: kettle = 2000 W, light bulb = 60 W, phone charger = 5 W.<br/>A Tour de France rider averages ~400 W for hours &mdash; equivalent to powering 6&ndash;7 old-style light bulbs.<br/>Human athletes are low-<strong>power</strong> but remarkably efficient machines.' }, terms: [] },
     { id: 'enr-tip-power', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Power Equations', text: '<strong>Power = Work &divide; time = Fv</strong> (constant <strong>force</strong> at <strong>velocity</strong> v).<br/>Check: is the question asking for <em>electrical input</em> or <em>mechanical output</em> <strong>power</strong>?<br/><strong>Efficiency</strong> = P<sub>out</sub> / P<sub>in</sub> (no units, or express as %).<br/>Units: W = J/s. 1 kW = 1000 W.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Gravitational PE Reference Level Trap",
+        text: "GPE = mgh depends on the chosen reference level (where h = 0). The absolute value of GPE is meaningless \u2014 only CHANGES in GPE (\u0394mgh) matter in calculations. Always define your reference level clearly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Falling Objects: Energy Conservation",
+        text: "For falling objects, use energy conservation instead of SUVAT: GPE lost = KE gained, so mgh = \u00bdmv\u00b2 \u2192 v = \u221a(2gh). This allows you to find speed without kinematic equations."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Gravitational Potential Energy' }], summaryText: '', ready: true },
   evidence: [],

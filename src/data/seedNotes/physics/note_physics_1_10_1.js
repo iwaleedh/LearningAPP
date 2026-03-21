@@ -60,7 +60,25 @@ export const note_physics_1_10_1 = {
     { id: 'summary-1', type: 'summary', data: { text: "<strong>Stress</strong> sigma = F/A (Pa). <strong>Strain</strong> epsilon = Delta L / L (dimensionless). <strong>Young Modulus</strong> E = sigma / epsilon = FL / (A Delta L) (Pa). E is a material property — higher E means stiffer. The gradient of the linear region of a <strong>stress</strong>-<strong>strain</strong> graph equals the <strong>Young Modulus</strong>." } },
     { id: 'enr-worked-series', type: 'callout', data: { style: 'worked', title: 'Worked Example: Springs in Series vs Parallel', text: 'Two springs each k = 100 N/m.\nSeries: 1/k_eff = 1/100 + 1/100 = 2/100 → k_eff = 50 N/m (softer — halved).\nParallel: k_eff = 100 + 100 = 200 N/m (stiffer — doubled).\nAnalogy: tuning a guitar string changes its <strong>tension</strong> (like altering k) → changes resonant frequency. Higher <strong>tension</strong> → higher pitch.' } },
     { id: 'enr-worked-mattress', type: 'callout', data: { style: 'worked', title: 'Worked Example: Pocket-Spring Mattress', text: 'A mattress contains 1000 pocket springs each with k = 600 N/m, arranged in parallel.\nk_eff = 1000 × 600 = 600 000 N/m.\nPerson of <strong>mass</strong> 70 kg applies <strong>weight</strong> F = 70 × 9.81 ≈ 700 N.\nTotal compression x = F / k_eff = 700 / 600 000 ≈ 0.0012 m = 1.2 mm.\nPocket springs act independently, so different regions compress by different amounts — conforming to body shape.' } },
-    { id: 'enr-tip-springs', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Series vs Parallel Springs', text: 'Series springs → WEAKER: k_eff is smaller than either individual k. More total extension for the same <strong>force</strong>.\nParallel springs → STRONGER: k_eff = sum of all k values. Less total compression for the same <strong>force</strong>.\nCommon error: mixing these up. Reminder — series springs share the same <strong>force</strong> but extensions add up, so k_eff must be smaller.' } }
+    { id: 'enr-tip-springs', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Series vs Parallel Springs', text: 'Series springs → WEAKER: k_eff is smaller than either individual k. More total extension for the same <strong>force</strong>.\nParallel springs → STRONGER: k_eff = sum of all k values. Less total compression for the same <strong>force</strong>.\nCommon error: mixing these up. Reminder — series springs share the same <strong>force</strong> but extensions add up, so k_eff must be smaller.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Young Modulus: Material Property, Spring Constant: Not",
+        text: "Young Modulus E is a MATERIAL PROPERTY \u2014 same for all samples of steel, regardless of size. Spring constant k depends on material AND dimensions (length and cross-section). This is why E is used to compare material stiffness universally."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Why Materials Have Such Different E Values",
+        text: "Steel E \u2248 200 GPa (used in bridges, buildings); Rubber E \u2248 0.01 GPa (20,000\u00d7 less stiff than steel). These enormous differences explain why steel is used for load-bearing structures and rubber for cushioning \u2014 the material selection is determined by Young Modulus."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Define tensile stress and give its equation and units' },

@@ -62,7 +62,25 @@ export const note_physics_1_3_1 = {
     { id: 'summary-1', type: 'summary', data: { text: "<strong>Mass</strong> (kg) is the amount of matter — <strong>scalar</strong>, constant everywhere. <strong>Weight</strong> (N) is the gravitational <strong>force</strong> — <strong>vector</strong>, W = mg, depends on g. On Earth g = 9.81 N/kg. g varies with altitude and location (Moon: 1.6, Mars: 3.7, Jupiter: 24.8 N/kg). <strong>Mass</strong> is measured by a balance; <strong>weight</strong> by a spring scale." } },
     { id: 'enr-callout-1', type: 'callout', data: { style: 'worked', title: 'Worked Example: Block on a Slope', text: 'Block on a slope (angle θ): <strong>Weight</strong> component along slope = mg sinθ (down slope). Normal <strong>force</strong> N = mg cosθ (perpendicular to slope). <strong>Friction</strong> f = μN = μmg cosθ (up slope if moving down). Net <strong>force</strong> along slope = mg sinθ − μmg cosθ = mg(sinθ − μcosθ). Car tyre on 15° wet road (μ = 0.2): net <strong>force</strong>/kg = 9.8(sin15° − 0.2cos15°) = 9.8(0.259 − 0.193) = 0.65 N/kg → skids down.' } },
     { id: 'enr-callout-2', type: 'callout', data: { style: 'worked', title: 'Worked Example: Elevators and Apparent Weight', text: 'In an elevator accelerating upward at 2 m/s²: N = m(g + a) = 70 kg × (9.8 + 2) = 826 N (heavier feeling). Decelerating to stop going down: a is upward again → N > <strong>weight</strong>. At constant speed: N = mg = 70 × 9.8 = 686 N. That "stomach drop" feeling when going down is N < mg.' } },
-    { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Solving Any Forces Problem', text: "For any forces problem — (1) draw free body diagram, (2) choose axes (along and perpendicular to motion or slope), (3) resolve all forces onto axes, (4) apply Newton's 2nd in each direction. Never sum forces as scalars if they are in different directions." } }
+    { id: 'enr-callout-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Solving Any Forces Problem', text: "For any forces problem — (1) draw free body diagram, (2) choose axes (along and perpendicular to motion or slope), (3) resolve all forces onto axes, (4) apply Newton's 2nd in each direction. Never sum forces as scalars if they are in different directions." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Key Distinction: Mass vs Weight",
+        text: "Mass (kg) is scalar, constant everywhere, amount of matter. Weight (N) is vector force, W = mg, depends on gravity. On Earth g = 9.81 N/kg. Same object has different weight on Moon (1.6 g) or Mars (3.7 g) but mass unchanged. Mass measured by balance; weight by spring scale."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Solving Any Forces Problem",
+        text: "(1) Draw free-body diagram. (2) Choose axes (horizontal/vertical or along/perpendicular to slope). (3) Resolve all forces into components. (4) Apply Newton's 2nd in each direction separately. Never sum forces as scalars if they act in different directions."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'What is mass? Give two properties that distinguish it from weight.' },

@@ -15,7 +15,25 @@ export const note_physics_1_9_0 = {
     { id: 'svg-103', type: 'svg', data: { svg: '<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="250" fill="#0f172a"/><rect x="100" y="20" width="200" height="210" fill="#0e4a56"/><circle cx="200" cy="120" r="25" fill="#1e293b" stroke="#495057" stroke-width="2"/><line x1="200" y1="120" x2="200" y2="200" stroke="#fa5252" stroke-width="3"/><polygon points="200,200 195,190 205,190" fill="#fa5252"/><text x="225" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#e03131">W</text><line x1="190" y1="120" x2="190" y2="60" stroke="#40c057" stroke-width="2"/><polygon points="190,60 186,68 194,68" fill="#40c057"/><text x="175" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2b8a3e">U</text><line x1="210" y1="120" x2="210" y2="50" stroke="#f59f00" stroke-width="3"/><polygon points="210,50 206,58 214,58" fill="#f59f00"/><text x="230" y="65" font-family="sans-serif" font-size="14" font-weight="bold" fill="#e67700">Drag</text><text x="200" y="240" font-family="sans-serif" font-size="16" font-weight="bold" fill="#343a40" text-anchor="middle">Terminal Velocity: W = U + Drag</text></svg>', caption: "Forces on a Falling Sphere (Stokes' Law)" } },
     { id: 'enr-callout-1', type: 'callout', data: { style: "worked", title: "Density of a Stone: Step-by-Step", text: "Student measures a rectangular stone with a micrometer: 3.2 cm &times; 2.1 cm &times; 1.8 cm = 12.1 cm<sup>3</sup>.<br/><strong>Mass</strong> from balance: 32.6 g.<br/>Density = m/V = 32.6 / 12.1 = <strong>2.69 g cm<sup>&minus;3</sup></strong>.<br/>Compare to granite (2.7 g cm<sup>&minus;3</sup>) &mdash; confirmed as granite.<br/>Density identification is widely used in archaeology and geology." } },
     { id: 'enr-callout-2', type: 'callout', data: { style: "worked", title: "Why Ships Float Despite Being Heavier Than Water", text: "A steel hull is shaped to displace an enormous volume of water. A 100 000-tonne aircraft carrier displaces 100 000 tonnes of water.<br/>By Archimedes&rsquo; Principle: <strong>upthrust</strong> = <strong>weight</strong> of water displaced = <strong>weight</strong> of ship &rarr; floats.<br/>If the hull were melted into a solid steel block: small volume &rarr; low displaced water &rarr; insufficient <strong>upthrust</strong> &rarr; sinks." } },
-    { id: 'enr-callout-3', type: 'callout', data: { style: "tip", title: "Exam Tip: Density", text: "Density = <strong>mass</strong>/volume, units kg m<sup>&minus;3</sup>. Common values: water = 1000 kg/m<sup>3</sup>, air = 1.2 kg/m<sup>3</sup>, iron = 7874 kg/m<sup>3</sup>.<br/>Objects float if density &lt; fluid density, sink if &gt;, neutral if =.<br/>Always convert cm<sup>3</sup> to m<sup>3</sup> when using SI units (1 cm<sup>3</sup> = 10<sup>&minus;6</sup> m<sup>3</sup>)." } }
+    { id: 'enr-callout-3', type: 'callout', data: { style: "tip", title: "Exam Tip: Density", text: "Density = <strong>mass</strong>/volume, units kg m<sup>&minus;3</sup>. Common values: water = 1000 kg/m<sup>3</sup>, air = 1.2 kg/m<sup>3</sup>, iron = 7874 kg/m<sup>3</sup>.<br/>Objects float if density &lt; fluid density, sink if &gt;, neutral if =.<br/>Always convert cm<sup>3</sup> to m<sup>3</sup> when using SI units (1 cm<sup>3</sup> = 10<sup>&minus;6</sup> m<sup>3</sup>)." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Unit Conversion Trap: Density",
+        text: "Always convert cm\u00b3 to m\u00b3 when using SI units: 1 cm\u00b3 = 10\u207b\u2076 m\u00b3 (not 10\u207b\u00b3). When converting volumes, cube the conversion factor: (0.01 m)\u00b3 = 10\u207b\u2076 m\u00b3."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Density Determines Floating",
+        text: "Objects float if density < fluid density, sink if > , neutral if = . Common mistake: confusing which density (object vs fluid) determines floating \u2014 always use: \u03c1_object / \u03c1_fluid = fraction submerged."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Density' }], summaryText: '', ready: true },
   evidence: [],

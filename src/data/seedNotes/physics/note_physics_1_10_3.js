@@ -16,6 +16,24 @@ export const note_physics_1_10_3 = {
     { id: 'enr-1', type: 'callout', data: { style: 'worked', title: 'Ultimate Tensile Strength (UTS) Comparison', text: "Steel ~400 MPa, Aluminium ~270 MPa, Spider silk ~1400 MPa (by <strong>weight</strong>, strongest natural material), Carbon fibre ~3500 MPa. These values determine material selection: aircraft use aluminium-lithium alloys (low density + high UTS). Race car chassis use carbon fibre (low density + extreme UTS). Safety margins: typically UTS/3 for engineering design." } },
     { id: 'enr-2', type: 'callout', data: { style: 'worked', title: 'Everyday Example: Bicycle Chain Design', text: "Each chain link must withstand ~3000 N of <strong>force</strong> during hard sprinting. Steel with UTS 600 MPa. Cross-sectional area of chain pin = πr² = π×(1.8 mm)² = 10.2 mm² = 10.2×10⁻⁶ m². Maximum <strong>force</strong> = UTS × A = 600×10⁶ × 10.2×10⁻⁶ = 6120 N. Safety factor = 6120/3000 = 2.04 (just over 2× safety margin). This explains why cheap chains snap under hard pedalling." } },
     { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Material Comparison', text: "Elastic = material returns to original shape after <strong>force</strong> removed; plastic = permanent deformation. <strong>Brittle</strong> = breaks without <strong>plastic deformation</strong> (glass, ceramic). <strong>Ductile</strong> = large plastic region before breaking (copper, steel). Tough = large area under <strong>stress</strong>-<strong>strain</strong> graph = lots of energy absorbed before fracture." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Material Behaviour Classification",
+        text: "BRITTLE materials (glass, ceramics) break suddenly with little plastic deformation \u2014 short stress-strain curve. DUCTILE materials (copper, steel) have large plastic region \u2014 long tails before breaking. Knowing which you're testing tells you what to expect."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Toughness vs Strength",
+        text: "High breaking stress \u2260 high toughness. A material can be strong but brittle (breaks at high stress but suddenly). Tough materials have LARGE area under the entire stress-strain curve \u2014 absorb lots of energy before fracture. This matters for safety helmets (high toughness required)."
+      }
+    }
 
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Stress-Strain Graphs' }], summaryText: '', ready: true },

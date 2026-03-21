@@ -22,6 +22,24 @@ export const note_physics_1_5_4 = {
     { id: 'enr-callout-1', type: 'callout', data: { style: 'worked', title: 'Elastic PE in a Bungee Cord', text: 'k = 50 N/m, stretched x = 8 m.<br/>E<sub>P</sub> = &frac12;kx&sup2; = &frac12; &times; 50 &times; 64 = <strong>1600 J</strong>.<br/>At the lowest point all KE has been converted to elastic PE.<br/><strong>Work done</strong> by the elastic <strong>force</strong> = 1600 J = GPE lost + initial KE.<br/><em>Bungee jump design:</em> ensure elastic PE at full stretch &ge; GPE of the diver at that height.' }, terms: [] },
     { id: 'enr-callout-2', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Elastic Potential Energy', text: 'For elastic PE: <strong>E<sub>P</sub> = &frac12;kx<sup>2</sup></strong> where k = spring constant (N m<sup>&minus;1</sup>) and x = extension (m).<br/>Energy stored = area under F&ndash;x graph = &frac12;Fx = &frac12;kx&sup2;.<br/>Only valid in the elastic region where Hooke&rsquo;s Law applies (F = kx).' }, terms: [] },
     { id: 'enr-callout-3', type: 'callout', data: { style: 'worked', title: 'Real World: Spider Web Silk &amp; Energy Absorption', text: 'Spider web silk is one of nature&rsquo;s most energy-absorbing materials. It can stretch 30&ndash;40% before breaking, absorbing enormous KE from flying insects.<br/>Engineers study silk to design better impact-absorbing polymer fibres for bulletproof vests and protective sports equipment.<br/>The large area under the <strong>stress</strong>&ndash;<strong>strain</strong> curve represents a very high energy absorbed per unit volume.' }, terms: [] },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Power at Constant Velocity: P = Fv",
+        text: "P = Fv is an alternative form useful when a constant force F moves at velocity v. For a car at constant speed against drag: P = F_drag \u00d7 v. At higher speeds, drag increases dramatically \u2192 power rises steeply (P \u221d v\u00b3 for aerodynamic drag)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Unit Conversions for Power",
+        text: "Power is often given in kW or MW in real-world contexts \u2014 ALWAYS convert to watts (W) before calculating with other SI units. Also: energy in kWh = power (kW) \u00d7 time (h), used on electricity bills."
+      }
+    }
   ],
   recall: { enabled: true, cues: [{id: 'cue-1', blockId: 'para-2', prompt: 'Summarise Power' }], summaryText: '', ready: true },
   evidence: [],

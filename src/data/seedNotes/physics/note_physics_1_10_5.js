@@ -53,7 +53,25 @@ export const note_physics_1_10_5 = {
     { id: 'summary-1', type: 'summary', data: { text: "Elastic <strong>strain</strong> energy E_el = 1/2 kx^2 = 1/2 Fx = area under the F-x graph. For a <strong>Hooke's Law</strong> material, loading and unloading follow the same line and no energy is lost. Hysteresis occurs in inelastic materials; the loop area equals energy dissipated as heat per cycle." } },
     { id: 'enr-1', type: 'callout', data: { style: 'worked', title: "Core Practical: Measuring Young's Modulus of a Wire", text: "Equipment: long copper wire (~2 m), masses (up to 2 kg), micrometer, metre ruler. Method: measure starting length L and diameter d (multiple measurements, take mean). Add masses, measure extension Δl each time. Plot F vs Δl graph → gradient = k = F/Δl. Then E = kL/(πd²/4). Percentage uncertainty: largest contribution comes from d (used to the <strong>power</strong> 2): if %u(d) = 2%, then %u(d²) = 4% — use micrometer carefully and take multiple readings across different positions and orientations of the wire." } },
     { id: 'enr-2', type: 'callout', data: { style: 'warning', title: "Experimental Errors in Young's Modulus Practical", text: "(1) Wire kinks reduce effective length → use a straight wire with a small preload. (2) Parallax error in ruler reading → use a pointer/marker on the wire at eye level. (3) Wire not uniform diameter → take multiple micrometer readings in different planes and positions. (4) Material yielding at high loads → do not exceed the <strong>elastic limit</strong> (check loading and unloading curves overlap). (5) Wire <strong>mass</strong> ignored → accounts for a few percent error in longer wires." } },
-    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Core Practical Answer Pattern', text: "For any core practical question, know: (1) the equation used and which quantities are measured, (2) how to find each variable from the graph (gradient, y-intercept, area), (3) the main sources of uncertainty and how to reduce them, (4) why the method may give an inaccurate result (systematic errors). This four-point pattern applies to all core practicals in the A-Level Physics course." } }
+    { id: 'enr-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Core Practical Answer Pattern', text: "For any core practical question, know: (1) the equation used and which quantities are measured, (2) how to find each variable from the graph (gradient, y-intercept, area), (3) the main sources of uncertainty and how to reduce them, (4) why the method may give an inaccurate result (systematic errors). This four-point pattern applies to all core practicals in the A-Level Physics course." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'worked',
+        title: "Elastic Strain Energy from Any F-x Graph",
+        text: "Elastic strain energy E_el = \u00bdkx\u00b2 = \u00bdFx = area under the force-extension graph. This area formula works for ANY shape (not just linear Hooke's Law). For curved graphs above elastic limit, you can still find elastic PE by calculating the triangular area up to the elastic limit."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Interpreting the Hysteresis Loop",
+        text: "For inelastic materials, loading and unloading curves form a closed loop. The area enclosed by this loop = energy dissipated as heat per loading-unloading cycle. This shows why rubber gets warm when compressed and released repeatedly \u2014 energy is lost to heat, not recovered."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Why does the elastic strain energy equal the area under the force-extension graph?' },

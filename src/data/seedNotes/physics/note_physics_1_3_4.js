@@ -59,7 +59,25 @@ export const note_physics_1_3_4 = {
     { id: 'summary-1', type: 'summary', data: { text: "<strong>Momentum</strong> p = mv (<strong>vector</strong>, unit kg m/s). Newton's Second Law: F = Δp/Δt. Impulse J = FΔt = Δp (unit N s = kg m/s); impulse is the area under a <strong>force</strong>-time graph. Safety features (crumple zones, airbags) increase collision time, reducing <strong>force</strong> for the same impulse." } },
     { id: 'enr-worked-impulse', type: 'callout', data: { style: 'worked', title: 'Worked Example: Tennis Racket', text: 'Tennis racket applies F = 500 N for Δt = 0.004 s. Impulse = FΔt = 500 × 0.004 = 2 N·s. Ball m = 0.057 kg: Δv = Impulse/m = 2/0.057 ≈ 35 m/s. If ball approaching at 20 m/s, final speed = 15 m/s away. Same impulse at pro level (Δt ≈ 2 ms) produces much larger <strong>force</strong>.' } },
     { id: 'enr-worked-crumple', type: 'callout', data: { style: 'worked', title: 'Worked Example: Crumple Zone', text: 'Car crash: m = 1500 kg, v = 13 m/s. Without crumple zone Δt = 0.05 s: F = 1500 × 13/0.05 = 390 000 N. With crumple zone Δt = 0.2 s: F = 97 500 N (75% reduction). Same impulse (Δp = 19 500 N·s), longer time = much smaller <strong>force</strong> on occupants.' } },
-    { id: 'enr-tip-impulse', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Impulse', text: 'Impulse = FΔt = Δ(mv) = area under F-t graph. Units N·s = kg·m·s⁻¹. "Why does longer contact time reduce <strong>force</strong>?" → rate of change of <strong>momentum</strong> is smaller. Link every answer to F = Δp/Δt.' } }
+    { id: 'enr-tip-impulse', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Impulse', text: 'Impulse = FΔt = Δ(mv) = area under F-t graph. Units N·s = kg·m·s⁻¹. "Why does longer contact time reduce <strong>force</strong>?" → rate of change of <strong>momentum</strong> is smaller. Link every answer to F = Δp/Δt.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Momentum and Impulse",
+        text: "Momentum p = mv (unit kg m/s, vector). Newton's 2nd Law: F = \u0394p/\u0394t. Impulse J = F\u0394t = \u0394(mv). Impulse = area under F-t graph. Large force for short time = small force for long time if F\u0394t is the same."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip: Crumple Zones and Airbags",
+        text: "Crumple zone increases collision time \u0394t. Since \u0394p is fixed (same collision), longer \u0394t \u2192 smaller average force F = \u0394p/\u0394t \u2192 reduced injury. Same principle applies to airbags, crash mats, helmets, and catching techniques in sport \u2014 all increase contact time to reduce peak force."
+      }
+    }
   ],
   recall: { enabled: true, cues: [
     { id: 'cue-1', blockId: 'para-3', prompt: 'Define momentum. What is its equation, unit, and direction?' },
