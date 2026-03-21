@@ -185,6 +185,25 @@ export const note_chemistry_3_3A_1 = {
       type: 'summary',
       data: { text: 'A practical plan must include: aim, hypothesis, variables (independent/dependent/control), apparatus (with precision), step-by-step method (numbered, specific), risk assessment (hazard → control), results table, and repeats. Control variables ensure a fair test. Standard solutions: calculate mass → dissolve → transfer quantitatively → make up to mark in volumetric flask.' },
     },
+
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Missing Control Variables \u2014 Common Exam Mistake",
+        text: "Many students describe apparatus and method steps but forget to identify control variables (what must be kept constant for a fair test). Examiners specifically look for these. Always explicitly state the independent, dependent, and control variables in your plan."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Risk Assessment Must Link Hazard to Control Measure",
+        text: "Saying 'wear goggles' or 'be careful' scores zero. Instead, write: 'Corrosive HCl (hazard) \u2192 wear nitrile gloves and safety goggles' (specific control). Link each hazard to a specific, actionable control measure."
+      }
+    }
   ],
   recall: {
     enabled: true,

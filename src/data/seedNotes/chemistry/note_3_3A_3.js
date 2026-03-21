@@ -203,6 +203,25 @@ export const note_chemistry_3_3A_3 = {
       type: 'summary',
       data: { text: 'Graphs: x = independent variable, y = dependent; label axes with units; use >½ grid; smooth best-fit line; anomalies circled and excluded. Gradient = Δy/Δx from large triangle on best-fit line. s.f.: for ×÷ match fewest s.f.; for +− match fewest d.p. Standard form: A × 10ⁿ (1 ≤ A < 10). Key conversions: cm³÷1000=dm³; °C+273=K; J÷1000=kJ.' },
     },
+
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Gradient Calculation \u2014 Use Best-Fit Line, Not Data Points",
+        text: "A common mistake is calculating gradient using coordinates from actual data points: (x\u2081,y\u2081) to (x\u2082,y\u2082). You must instead use two points READ FROM YOUR SMOOTH BEST-FIT LINE. This gives a more representative gradient that avoids individual measurement errors."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "cm\u00b3 to dm\u00b3 Conversion \u2014 Major Calculation Trap",
+        text: "Before using c = n/V, always convert volume to dm\u00b3. Forgetting to divide by 1000 (e.g. using 25 cm\u00b3 instead of 0.025 dm\u00b3) causes answers to be 1000\u00d7 wrong. This is one of the most common calculation errors in mole questions."
+      }
+    }
   ],
   recall: {
     enabled: true,

@@ -206,6 +206,25 @@ export const note_chemistry_3_3A_0 = {
       type: 'summary',
       data: { text: 'CP1 (Mg + HCl → H₂): gas syringe measures H₂ volume → molar volume ≈ 24 dm³ mol⁻¹. Errors: gas escape, oxide layer, syringe friction. CP2 (calorimetry): q = mcΔT in polystyrene cup → ΔH = −q/moles. Errors: heat loss, no lid. Key techniques: pipette (±0.06 cm³), burette (±0.05 cm³/reading), analytical balance (±0.001 g), gas syringe (±0.5 cm³).' },
     },
+
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Gas Escape Trap \u2014 CP1 (Molar Volume)",
+        text: "If the flask is not sealed immediately after adding Mg, hydrogen gas escapes before the bung seals. This causes the recorded volume to be too low, resulting in a calculated molar volume that is systematically lower than the expected ~24 dm\u00b3 mol\u207b\u00b9. Always pre-weigh the Mg and seal immediately."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "HCl Must Be in Excess \u2014 Examiner Requirement",
+        text: "In CP1, examiners expect you to state explicitly that HCl must be in excess. Without this, not all Mg reacts, causing systematic underestimation of the molar volume. Check that the Mg dissolves completely \u2014 this confirms excess HCl."
+      }
+    }
   ],
   recall: {
     enabled: true,

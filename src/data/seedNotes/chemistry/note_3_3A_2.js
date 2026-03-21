@@ -193,6 +193,25 @@ export const note_chemistry_3_3A_2 = {
       type: 'summary',
       data: { text: 'Qualitative observations: precise, initial→final, use correct chemical language. Gas tests: H₂ (squeaky pop), O₂ (relights splint), CO₂ (milky limewater), Cl₂ (bleaches litmus), NH₃ (turns litmus blue). Results tables: heading = quantity / unit; body = numbers only; same d.p. throughout; include repeats and mean; exclude anomalous results. Burette: always 2 d.p.' },
     },
+
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Burette Reading Precision \u2014 Common Exam Trap",
+        text: "Recording burette readings to 1 decimal place (e.g. 24.1 cm\u00b3) loses marks. Burettes must be read to 2 decimal places (e.g. 24.10 cm\u00b3) because they are precise to \u00b10.05 cm\u00b3. Always record as 24.10, 0.00, 25.50 \u2014 never 24.1 or 0.0."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Describe Initial \u2192 Final State in Observations",
+        text: "Saying 'the solution turned yellow' is vague. Instead write: 'colourless solution turned yellow-orange' (initial \u2192 final). This shows you understand that chemical changes are measurable by comparing states, not just observing a single endpoint."
+      }
+    }
   ],
   recall: {
     enabled: true,
