@@ -230,6 +230,24 @@ export const note_chemistry_4_13_2 = {
       data: {
         text: 'Use ICE tables to track changes in concentration. Substitute equilibrium concentrations into the Kc expression. Large Kc favours products; small Kc favours reactants; Kc ≈ 1 gives mixed equilibrium.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Stoichiometric Coefficients in RICE Tables",
+        text: "Students often forget to apply stoichiometric coefficients to changes: if the coefficient of NO\u2082 in 2NO\u2082 \u21cc N\u2082O\u2084 is 2, the change in NO\u2082 is TWICE the change in N\u2082O\u2084. Check your ICE table \u2014 each change must reflect stoichiometry."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "% Reacted Calculations",
+        text: "If told 'X% of species A reacted', calculate change as (X/100) \u00d7 initial moles, then use stoichiometric ratios for all other species. Students often mix percentages incorrectly."
+      }
     }
   ],
   recall: {

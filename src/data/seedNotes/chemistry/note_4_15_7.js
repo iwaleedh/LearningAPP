@@ -521,6 +521,24 @@ export const note_chemistry_4_15_7 = {
       data: {
         text: 'Chromatography separates by differential attraction to stationary vs mobile phases. Paper: stationary = water in cellulose fibres; separates via partition (if non-polar solvent); two-way chromatography rotates paper 90° for overlapping spots. Rf = dist(spot)/dist(front) (no units, <1). TLC: silica/alumina plate; adsorption. Column: silica in tube; gravity-driven; collect fractions. HPLC: high pressure forces liquid through fine silica; UV detector. GC: inert carrier gas (He/N₂); coiled column in heated oven. GC-MS: GC separates → components enter MS individually → fragmentation pattern database match = confirmed ID.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Paper Chromatography: Stationary Phase is WATER IN PAPER",
+        text: "THE most common exam trap: 'What is the stationary phase?' Answer: the water trapped within the fibres of the cellulose paper, NOT the paper itself. The paper is just a support. Mobile phase = the solvent travelling up. This distinction appears in mark schemes."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "TLC Separation Via Adsorption (Not Partition)",
+        text: "Paper uses partition (polar water vs non-polar solvent). TLC uses adsorption: silica gel has \u2212OH groups that are highly polar. Polar compounds stick to silica (low Rf). Non-polar compounds stay dissolved in solvent (high Rf). Different mechanism, different principle."
+      }
     }
   ],
 

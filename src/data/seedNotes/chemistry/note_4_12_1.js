@@ -251,6 +251,24 @@ export const note_chemistry_4_12_1 = {
       data: {
         text: 'Entropy quantifies disorder in a system, measured in J K⁻¹ mol⁻¹. More particles increase entropy. More complex molecules increase entropy due to additional rotational and vibrational modes. Gases have far higher entropy than liquids or solids due to the freedom of particle movement.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Entropy Is Quantified by Number of Microstates, Not Vague 'Disorder'",
+        text: "S = k_B ln W is precise. W is the number of possible arrangements. A gas has vastly more possible arrangements than a solid, so higher entropy. Students who think 'disorder' is a physical thing miss the statistical foundation."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "More Particles = Higher Entropy",
+        text: "When 1 mole of NaCl(s) dissolves, it produces 2 moles of aqueous ions (Na\u207a + Cl\u207b). This doubling of particle count dramatically increases the number of possible microstates, making \u0394S_dissolution large and positive."
+      }
     }
   ],
   recall: {

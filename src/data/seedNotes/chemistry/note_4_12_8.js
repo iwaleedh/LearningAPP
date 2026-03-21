@@ -304,6 +304,24 @@ export const note_chemistry_4_12_8 = {
         caption: 'Gibbs Free Energy — ΔG = ΔH − TΔS is &lt; 0 for spontaneous reactions. The four combinations of ΔH and ΔS signs determine whether spontaneity is always, never, or temperature-dependent. The only certain cases are (−,+) = always and (+,−) = never.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Unit Conversion Trap: \u0394S to kJ K\u207b\u00b9 mol\u207b\u00b9",
+        text: "If \u0394S = 100 J K\u207b\u00b9 mol\u207b\u00b9, divide by 1000 to get 0.1 kJ K\u207b\u00b9 mol\u207b\u00b9 before calculating T\u0394S. Common error: using \u0394S = 100 directly \u2192 T\u0394S = 298 \u00d7 100 = 29,800 kJ (nonsense). Correct: T\u0394S = 298 \u00d7 0.1 = 29.8 kJ."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "\u0394G\u00b0 and Equilibrium Constant K Relationship",
+        text: "\u0394G\u00b0 = \u2212RT ln K. Always convert \u0394G\u00b0 to joules (not kJ) because R = 8.314 J K\u207b\u00b9 mol\u207b\u00b9. Large negative \u0394G\u00b0 \u2192 large K >> 1 \u2192 products favored. \u0394G\u00b0 = 0 \u2192 K = 1 \u2192 equilibrium."
+      }
     }
   ],
   recall: {

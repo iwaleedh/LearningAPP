@@ -161,6 +161,24 @@ export const note_chemistry_4_12_0 = {
       data: {
         text: 'Spontaneity depends on both enthalpy and entropy. Exothermic reactions are often spontaneous, but not always — entropy may oppose them. Endothermic reactions can be spontaneous if entropy increases sufficiently. The true criterion is Gibbs free energy: ΔG < 0 indicates spontaneity.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exothermic \u2260 Spontaneous (and Endothermic \u2260 Non-Spontaneous)",
+        text: "Ice melting at 25\u00b0C is endothermic, yet spontaneous. Freezing at 25\u00b0C is exothermic, yet non-spontaneous. \u0394H alone CANNOT determine spontaneity. Both entropy and temperature matter via \u0394G = \u0394H \u2212 T\u0394S."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Kinetic vs Thermodynamic Stability",
+        text: "Petrol + oxygen: thermodynamically very feasible (\u0394G << 0), but kinetically stable (no reaction at room temperature without ignition). A reaction can be spontaneous (\u0394G < 0) yet appear 'stable' due to a high activation energy barrier."
+      }
     }
   ],
   recall: {

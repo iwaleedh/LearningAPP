@@ -341,6 +341,24 @@ export const note_chemistry_4_12_5 = {
       data: {
         text: 'Lattice enthalpy measures the strength of ionic bonding in a crystal. Born-Haber cycles use Hess\'s law to combine atomisation, ionisation, electron affinity, and formation steps to calculate lattice enthalpy. Experimental and theoretical values agree closely for purely ionic compounds but diverge when significant covalency or polarisation is present.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Charge Effect >>> Radius Effect on Lattice Enthalpy",
+        text: "NaF (singly charged, ~0.233 nm) vs CaF\u2082 (doubly charged, ~0.236 nm): nearly identical distances, but CaF\u2082 lattice enthalpy is TRIPLE that of NaF. Charge dominates. Students often overweight the radius effect."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Born-Haber Cycle Setup",
+        text: "Always follow the same sequence: atomisation (\u0394H_at) \u2192 ionisation (IE) \u2192 electron affinity (EA) \u2192 lattice formation. The sum equals enthalpy of formation. Use Hess's law: \u0394H_form = \u03a3(\u0394H steps) + \u0394H_lattice."
+      }
     }
   ],
   recall: {

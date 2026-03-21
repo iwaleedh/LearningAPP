@@ -577,6 +577,24 @@ export const note_chemistry_4_11_8 = {
         caption: 'Kinetics Master Map — left: 0th/1st/2nd order characteristics from graph shape, half-life, and rate-concentration relationship. Right: Arrhenius equation links rate constant to temperature and activation energy; mechanism determines which species appear in the rate equation.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Recording Exact Time in Sampling Experiments",
+        text: "For CP9a, the correct time to record is when HALF of the 10 cm\u00b3 aliquot has been transferred (i.e., 5 cm\u00b3 has entered the quenching flask). Recording the wrong time point introduces large systematic errors in calculated concentrations."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Iodine Titration Endpoint",
+        text: "Add starch indicator ONLY when the brown iodine solution turns pale yellow (not too early). The endpoint is colourless (when all I\u2082 has reacted with thiosulfate). This gives the most precise volume reading."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────

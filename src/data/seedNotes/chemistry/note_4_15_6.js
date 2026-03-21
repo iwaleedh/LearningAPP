@@ -153,7 +153,7 @@ export const note_chemistry_4_15_6 = {
       data: {
         style: 'tip',
         title: 'Addition/Elimination — Why Two Names?',
-        text: 'The reaction of an acyl chloride with a nucleophile can be called by three names:\n\n1. NUCLEOPHILIC SUBSTITUTION — the overall result: Cl is replaced by Nu\n2. ADDITION/ELIMINATION — the mechanism has two distinct stages:\n   • Addition stage: Nu adds on to the acyl chloride → tetrahedral intermediate forms (C=O breaks; O becomes O⁻)\n   • Elimination stage: the intermediate collapses → C=O reforms; Cl⁻ leaves; then Cl⁻ removes H from Nu → HCl is eliminated\n3. CONDENSATION REACTION — two molecules join to give a bigger product + a small molecule (HCl)\n\nAQA A-level calls these \"addition/elimination reactions\" and requires the full 3-step mechanism.\nEdexcel IAL does NOT require the mechanism — only equations and products are tested.'
+        text: 'The reaction of an acyl chloride with a nucleophile can be called by three names:\n\n1. NUCLEOPHILIC SUBSTITUTION — the overall result: Cl is replaced by Nu\n2. ADDITION/ELIMINATION — the mechanism has two distinct stages:\n   • Addition stage: Nu adds on to the acyl chloride → tetrahedral intermediate forms (C=O breaks; O becomes O⁻)\n   • Elimination stage: the intermediate collapses → C=O reforms; Cl⁻ leaves; then Cl⁻ removes H from Nu → HCl is eliminated\n3. CONDENSATION REACTION — two molecules join to give a bigger product + a small molecule (HCl)\n\nAQA A-level calls these "addition/elimination reactions" and requires the full 3-step mechanism.\nEdexcel IAL does NOT require the mechanism — only equations and products are tested.'
       }
     },
     {
@@ -1317,6 +1317,24 @@ export const note_chemistry_4_15_6 = {
       type: 'summary',
       data: {
         text: 'Acyl chlorides (R–COCl): functional group –COCl; named –oyl chloride. Very reactive — both O and Cl make C strongly δ+; Cl⁻ is an excellent leaving group. Four reactions (HCl always produced): ① +H₂O → carboxylic acid + HCl; ② +alcohol → ester + HCl (complete, no catalyst, but HCl is toxic); ③ +NH₃ → amide + HCl → NH₄Cl side-product; ④ +primary amine → N-substituted amide + HCl; +secondary amine → N,N-disubstituted amide + HCl; tertiary amines do NOT react (no N–H). Esters (R–COO–R′): named [alcohol]-yl [acid]-oate; drawn acid part first; colourless liquids; insoluble in water (all H on C); pleasant smells. Hydrolysis: acidic (dilute H₂SO₄/H₂O, 1 step, equilibrium → acid + alcohol); alkaline (NaOH, 2 steps, complete → carboxylate salt then add acid). Saponification = alkaline hydrolysis of triglyceride → glycerol + 3 carboxylate salts (soaps). Polyesters: condensation polymerisation of dicarboxylic acid + diol → ester bonds + H₂O; PET from terephthalic acid + ethane-1,2-diol.'
+      }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Acyl Chlorides: Both Carbonyls AND Haloalkane Properties",
+        text: "Acyl chlorides (RCOCl) are NOT simple carbonyls. The carbonyl carbon is bonded to BOTH \u03b4\u207b oxygen AND \u03b4\u207b chlorine \u2192 extremely \u03b4\u207a carbon. This makes them FAR more reactive than aldehydes/ketones. They react at room temperature without catalyst. Students incorrectly apply carbonyl chemistry \u2014 acyl chlorides are in a different reactivity league."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Nucleophile MUST Have H on Attacking Atom",
+        text: "Nucleophiles that react with acyl chlorides must be H\u2013O\u2013R (alcohol), H\u2013N\u2013R (amine), or H\u2082O. The H is critical \u2014 it's removed in the final elimination step. Tertiary amines (R\u2083N) do NOT react because they have no H on N. Exam trick question: which amine reacts? Answer: primary/secondary only."
       }
     }
   ],

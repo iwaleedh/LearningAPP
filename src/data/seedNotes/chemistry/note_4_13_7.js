@@ -135,7 +135,25 @@ export const note_chemistry_4_13_7 = {
             data: {
                 text: 'Solubility Product (Ksp) represents the equilibrium constant for a saturated solution of a sparingly soluble solid. Solids are omitted from its expression. Its units depend directly on the stoichiometry of the dissolved ions. A precipitate will only form if the product of the ionic concentrations in the mixture exceeds the Ksp value.'
             }
-        }
+        },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Only Sparingly Soluble Compounds",
+        text: "Solubility products apply ONLY to sparingly soluble ionic compounds. You cannot effectively use Ksp for highly soluble salts like NaCl because ion interactions interfere with the simplified equilibrium model."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Why No Solid in Ksp",
+        text: "The concentration (density) of a pure solid is constant. It's incorporated into the Ksp value itself. This is why Ksp = [Ba\u00b2\u207a][SO\u2084\u00b2\u207b], NOT Ksp = [Ba\u00b2\u207a][SO\u2084\u00b2\u207b]/[BaSO\u2084]."
+      }
+    }
     ],
     recall: {
         enabled: true,

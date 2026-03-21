@@ -222,6 +222,24 @@ export const note_chemistry_4_15_0 = {
       data: {
         text: 'Chiral centre = sp³ carbon bonded to four different groups (marked C*). Enantiomers = non-superimposable mirror images (like hands). Optical isomers rotate plane-polarised light in opposite directions: (+) = clockwise, (−) = anti-clockwise. Polarimeter: light → polariser → sample → analyser → detector. Enantiomers have identical physical and chemical properties EXCEPT rotation of plane-polarised light and reactions with other chiral molecules. L/D notation (amino acids), R/S notation (other compounds) — awareness only.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Chiral Centre: Four DIFFERENT Groups Required",
+        text: "99% of student errors: identifying chiral centres with identical groups. If two groups are the same (e.g., two CH\u2083 groups), the carbon is NOT chiral, even if bonded to four different elements. Check for identical groups carefully \u2014 this is THE most common mistake."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Wedge/Hash Bonds Must Show 3D Arrangement",
+        text: "Wedge (\u25b2) = coming out of paper. Hash (\u22ef) = going into paper. These MUST be drawn at chiral centres to show 3D arrangement, or you cannot identify enantiomers. Students draw flat structures and miss stereochemistry entirely."
+      }
     }
   ],
   recall: {

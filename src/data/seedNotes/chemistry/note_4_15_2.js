@@ -170,6 +170,24 @@ export const note_chemistry_4_15_2 = {
       data: {
         text: 'SN1 reactions produce racemates (or partially racemised products) because the planar carbocation intermediate can be attacked by nucleophiles from either face. SN2 reactions produce pure inversion of configuration (Walden inversion) because nucleophiles attack from the back, causing the three groups to flip. To predict stereochemistry: assess substrate (primary/secondary/tertiary) and nucleophile strength — strong nucleophiles with primary substrates favour SN2 (inversion); weak nucleophiles with tertiary substrates favour SN1 (racemisation).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "SN1 Produces Racemic Mixture (Planar Intermediates)",
+        text: "SN1: carbocation intermediate is sp\u00b2 trigonal planar. Nucleophile attacks equally from above or below \u2192 50% (R) and 50% (S) produced. Starting with pure enantiomer, product shows ZERO optical rotation (racemic). This is diagnostic for SN1."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "SN2 Produces Inversion (Backside Attack+Umbrella Flip)",
+        text: "SN2: nucleophile attacks from opposite side of leaving group (backside). Causes three remaining groups to flip like an umbrella (inversion of configuration). (R) \u2192 (S) or vice versa. Optical rotation is equal magnitude but OPPOSITE direction. This proves SN2."
+      }
     }
   ],
   recall: {

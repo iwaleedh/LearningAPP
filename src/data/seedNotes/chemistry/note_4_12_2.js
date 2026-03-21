@@ -213,6 +213,24 @@ export const note_chemistry_4_12_2 = {
       data: {
         text: 'Melting and boiling both increase entropy as particles gain freedom. Boiling entropy changes are much larger than melting. Dissolution usually increases entropy even when endothermic. Temperature increase raises entropy within a phase and dramatically at transitions. Use ΔS = ΔH / T at equilibrium to estimate phase transition entropy changes.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Boiling Entropy Change Is ~5x Larger Than Melting",
+        text: "For water: \u0394S_m \u2248 22 J K\u207b\u00b9 mol\u207b\u00b9, but \u0394S_b \u2248 109 J K\u207b\u00b9 mol\u207b\u00b9. This is because the liquid\u2192gas transition is far more dramatic in terms of particle freedom than solid\u2192liquid. Students often treat entropy changes for all phase transitions as similar."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Predict Entropy Sign Quickly",
+        text: "Melting, boiling, dissolving, gas expansion \u2192 \u0394S > 0. Freezing, condensation, compression \u2192 \u0394S < 0. For reactions: count moles of gas. More gas products \u2192 \u0394S > 0."
+      }
     }
   ],
   recall: {

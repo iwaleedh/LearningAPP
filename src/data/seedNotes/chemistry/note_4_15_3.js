@@ -169,6 +169,24 @@ export const note_chemistry_4_15_3 = {
       data: {
         text: 'Aldehydes (R–CHO, suffix –al) have carbonyl at the chain end; ketones (R–CO–R′, suffix –one) have it in the middle. Both have polar C=O bonds, giving higher boiling points than alkanes but lower than alcohols. Small aldehydes/ketones are water-soluble (H-bonding acceptors); larger ones are not. Aldehydes are more reactive than ketones in nucleophilic addition because of lower steric hindrance. Functional group priority: aldehyde > ketone > alcohol.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Aldehyde vs Ketone Reactivity Difference",
+        text: "Aldehydes are more reactive than ketones in nucleophilic addition because the aldehyde carbon has only one alkyl group (less steric bulk). Ketone carbon has two alkyl groups (more hindered). This difference is exploited in chemical tests: Tollens and Fehling only oxidise aldehydes under mild conditions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Functional Group Priority in Naming",
+        text: "If molecule contains both CHO (aldehyde) and C=O (ketone), name it as an aldehyde (higher priority). The ketone becomes an 'oxo\u2013' prefix. Always check priority: carboxylic acid > aldehyde > ketone > alcohol."
+      }
     }
   ],
   recall: {

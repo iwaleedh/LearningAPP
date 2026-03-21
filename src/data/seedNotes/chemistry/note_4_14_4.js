@@ -212,6 +212,24 @@ export const note_chemistry_4_14_4 = {
       data: {
         text: 'Ka = [H⁺][A⁻]/[HA] for weak acid HA. pKa = −log Ka. Larger Ka (lower pKa) = stronger acid. For dilute weak acids, use approximation [H⁺] ≈ √(Ka × c) if x < 5% of c. Ka × Kb = 10⁻¹⁴ at 25°C. Calculate pH from [H⁺] = 10^(−pH).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Two Assumptions for Weak Acid Simplification (EXAM FAVOURITE)",
+        text: "Assumption 1: [HA]eq \u2248 [HA]initial (because dissociation is < 5%). Assumption 2: All H\u207a comes from the weak acid (water contribution negligible). BOTH must be verified. After solving [H\u207a] = \u221a(Ka \u00d7 c), CHECK: [H\u207a]/c \u00d7 100 < 5%. If not, solve the quadratic."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "No Approximation Allowed if Non-Weak Acid",
+        text: "If Ka > 10\u207b\u2074 or concentration < 0.01 M, the approximation fails. You must solve the quadratic Ka = x\u00b2/(c\u2212x) without simplification. Exams test this \u2014 students blindly use \u221a(Ka\u00d7c) and get marked down."
+      }
     }
   ],
   recall: {

@@ -80,6 +80,24 @@ export const note_chemistry_4_11_5 = {
         ]
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "k Units Change With Overall Order",
+        text: "The units of k are NOT fixed. They depend entirely on the overall order. 0th order: mol dm\u207b\u00b3 s\u207b\u00b9 | 1st order: s\u207b\u00b9 | 2nd order: dm\u00b3 mol\u207b\u00b9 s\u207b\u00b9 | 3rd order: dm\u2076 mol\u207b\u00b2 s\u207b\u00b9. Exams always mark this specifically."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Quick Units Check",
+        text: "Rearrange the rate equation to isolate k, then substitute mol dm\u207b\u00b3 s\u207b\u00b9 for Rate and mol dm\u207b\u00b3 for each [concentration]. Cancel and flip negative indices in denominator to positive in numerator."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────

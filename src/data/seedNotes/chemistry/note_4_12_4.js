@@ -343,6 +343,24 @@ export const note_chemistry_4_12_4 = {
       data: {
         text: 'Gibbs free energy ΔG = ΔH − TΔS predicts spontaneity: ΔG < 0 is spontaneous. Four cases depend on ΔH and ΔS signs. Always spontaneous: ΔH < 0, ΔS > 0. Never spontaneous: ΔH > 0, ΔS < 0. Temperature-dependent: same-sign ΔH and ΔS. Critical T = ΔH / ΔS determines the transition temperature.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "\u0394G < 0 Means Feasible, NOT Fast",
+        text: "Spontaneity and kinetics are different. Diamond converting to graphite has \u0394G << 0 (spontaneous), but E\u2090 is so high that it never happens. Coal burns (\u0394G << 0) but requires a spark for ignition. \u0394G predicts direction, kinetics predicts rate."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Critical Temperature When \u0394G = 0",
+        text: "For reactions where \u0394H and \u0394S have opposite signs, set \u0394G = 0 and solve: T_crit = \u0394H / \u0394S. This is the temperature at which the reaction switches from spontaneous to non-spontaneous (or vice versa)."
+      }
     }
   ],
   recall: {

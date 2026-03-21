@@ -126,6 +126,24 @@ export const note_chemistry_4_11_1 = {
         text: 'Half-life diagnostic: Zero order → t½ decreases | First order → t½ is CONSTANT | Second order → t½ increases. Only first-order reactions obey k = ln(2)/t½.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Proving First Order Requires TWO Half-Lives",
+        text: "Many students measure only one half-life and claim it's constant. In an exam, you MUST read two separate half-lives (e.g., A\u2080\u2192A\u2080/2 and A\u2080/2\u2192A\u2080/4) and explicitly state both are equal to prove first order."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Half-Life Diagnostic Method",
+        text: "Constant t\u00bd = 1st order (ONLY this order has constant t\u00bd). Decreasing t\u00bd = 0th order. Increasing t\u00bd = 2nd order. This is the fastest way to identify order from a [Conc] vs Time graph."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────

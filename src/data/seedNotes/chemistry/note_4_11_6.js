@@ -98,6 +98,24 @@ export const note_chemistry_4_11_6 = {
         text: '<strong>Overall Reaction:</strong> 2NO(g) + O₂(g) → 2NO₂(g)<br/><strong>Experimental Rate Equation:</strong> Rate = k[NO]²[O₂]¹<br/><br/><strong>Proposed Mechanism:</strong><br/>Step 1: NO + NO → N₂O₂ (Slow RDS)<br/>Step 2: N₂O₂ + O₂ → 2NO₂ (Fast)<br/><br/><strong>Is this mechanism consistent with the Rate Equation?</strong><br/><strong>No!</strong> The rate equation tells us that two molecules of NO and one molecule of O₂ must be involved in or before the RDS. In the proposed mechanism, the O₂ does not get involved until Step 2 (after the RDS). Therefore, the proposed mechanism is mathematically <strong>incorrect/inconsistent</strong>.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Order Tells You RDS Involvement, Not Stoichiometry",
+        text: "Zero order w.r.t. X means X enters AFTER the RDS. First order w.r.t. X means ONE molecule of X is in/before the RDS. Second order w.r.t. X means TWO molecules of X collide in/before the RDS. Do NOT confuse this with stoichiometric coefficients."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Mechanism Consistency Test",
+        text: "To check if a proposed mechanism is consistent with an experimental rate equation: the reactants that appear in the rate equation (and their orders) must all be accounted for in or before the RDS."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────

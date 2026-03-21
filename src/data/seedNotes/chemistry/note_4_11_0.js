@@ -173,6 +173,24 @@ export const note_chemistry_4_11_0 = {
         ]
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exam Trap: Orders Are ALWAYS Experimental",
+        text: "You CANNOT deduce the order of reaction from the stoichiometric equation. You must do experiments. Students often make the mistake of assuming order = stoichiometric coefficient (e.g., 2A + B \u2192 products is NOT necessarily second order w.r.t. A)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "The Factor Test Rule",
+        text: "Memorize: if [concentration] increases by factor x and rate increases by factor x^n, then order = n. Example: triple [A], rate becomes 9 times faster \u2192 9 = 3\u00b2 \u2192 order = 2."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────

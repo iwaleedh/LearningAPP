@@ -217,6 +217,24 @@ export const note_chemistry_4_12_7 = {
       data: {
         text: 'Solubility is determined by ΔG = ΔH − TΔS. Most dissolution is entropy-driven despite being endothermic because disorder increase dominates at room temperature. Type 1 salts (ΔH<0, ΔS>0) are always soluble. Type 2 (ΔH>0, ΔS>0) soluble above T_crit. Type 3 (ΔH>0, ΔS<0) insoluble at all T. Temperature typically increases solubility by making TΔS term larger relative to ΔH.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Most Dissolution Is ENTROPY-Driven Despite Being Endothermic",
+        text: "NH\u2084Cl dissolves endothermically (\u0394H > 0), yet is soluble because \u0394S_solution \u2248 +70 J K\u207b\u00b9 mol\u207b\u00b9 is large. At 298 K, T\u0394S term dominates. Students incorrectly think exothermic dissolution is more spontaneous."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Most Salts Become MORE Soluble When Heated",
+        text: "For typical salts with \u0394H > 0 and \u0394S > 0, increasing T makes T\u0394S grow relative to \u0394H, so \u0394G becomes more negative \u2192 higher solubility. Exceptions like Ca(OH)\u2082 are rare (exothermic dissolution)."
+      }
     }
   ],
   recall: {

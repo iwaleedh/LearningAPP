@@ -234,6 +234,24 @@ export const note_chemistry_4_13_1 = {
       data: {
         text: 'Kp = p(products)^stoich / p(reactants)^stoich. Partial pressures are found from p_i = χ_i × P_total. Units of Kp = (pressure)^Δn where Δn = moles products − moles reactants. Kp and Kc are related by Kp = Kc(RT)^Δn.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Kp Notation \u2014 Most Penalised Error",
+        text: "For Kp expressions, ALWAYS use round brackets: p(CO\u2082), p(N\u2082). Do NOT use square brackets. Examiners explicitly withhold marks for incorrect bracket notation in IAL exams \u2014 this is ONE OF THE MOST PENALISED ERRORS."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Kp-Kc Relationship Trap",
+        text: "Remember Kp = Kc(RT)^\u0394n works only when R = 8.314 J mol\u207b\u00b9 K\u207b\u00b9 (NOT 8.31). Use wrong R value and your answer fails completely."
+      }
     }
   ],
   recall: {

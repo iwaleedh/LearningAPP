@@ -853,6 +853,24 @@ export const note_chemistry_4_15_8 = {
         caption: '¹H NMR Guide — n+1 rule determines splitting (n adjacent H → n+1 peaks). Integration gives relative H count per environment. Chemical shift (δ) reveals electronic environment. OH and NH always singlets. ¹³C NMR: one peak per unique carbon, no splitting.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "NMR \u03b4 Axis Increases Right-to-LEFT (Opposite of Normal)",
+        text: "Unlike normal graphs, the NMR \u03b4 axis increases from RIGHT (\u03b4 = 0) to LEFT (\u03b4 = 200+). Downfield (deshielded) is LEFT. Upfield (shielded) is RIGHT. Students often reverse this and misinterpret spectra. Memorise: LEFT = downfield = high \u03b4 = deshielded (electrons pulled away)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "TMS Reference Peak at \u03b4 = 0",
+        text: "TMS (tetramethylsilane) is the universal reference standard for NMR. Appears at \u03b4 = 0 on all \u00b9H and \u00b9\u00b3C spectra. If you see a peak at the far right edge (\u03b4 \u2248 0), that's TMS \u2014 not part of your sample. Used to calibrate all other signals."
+      }
     }
   ],
 

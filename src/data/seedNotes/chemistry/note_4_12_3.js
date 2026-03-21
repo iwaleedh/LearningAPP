@@ -304,6 +304,24 @@ export const note_chemistry_4_12_3 = {
       data: {
         text: 'Spontaneity depends on total entropy: ΔS_total = ΔS_system − ΔH_system/T > 0. The surroundings\' entropy change is ΔS_surr = −ΔH_sys/T. Exothermic reactions increase surroundings entropy; endothermic reactions decrease it. At a phase transition equilibrium, ΔS_total = 0, and T determines which direction is spontaneous.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "\u0394S_surroundings = \u2212\u0394H_system / T (Negative Sign!)",
+        text: "Common error: writing \u0394S_surr = +\u0394H_sys / T. The correct sign is NEGATIVE because if the system releases heat (\u0394H < 0), the surroundings absorb it (\u2212\u0394H > 0), increasing their entropy. Exothermic reactions increase surroundings entropy."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Second Law: \u0394S_total > 0 for Spontaneity",
+        text: "A process is spontaneous if \u0394S_system + \u0394S_surroundings > 0. At constant T and P, this simplifies to \u0394G = \u0394H \u2212 T\u0394S < 0. Both approaches are equivalent."
+      }
     }
   ],
   recall: {

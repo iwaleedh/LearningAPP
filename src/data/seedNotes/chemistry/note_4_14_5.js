@@ -352,6 +352,24 @@ export const note_chemistry_4_14_5 = {
       data: {
         text: 'Buffer minimises (NOT prevents) pH change. Acidic buffer = weak acid + conjugate base salt. Made by direct mix or partial neutralisation with excess weak acid. Buffer action: A⁻ + H⁺ → HA (resists acid); HA + OH⁻ → A⁻ + H₂O (resists alkali). [H⁺] = Ka × [acid]/[salt]. Most effective at pH ≈ pKa ± 1. Blood pH 7.35–7.45: H₂CO₃/HCO₃⁻, ratio ≈20:1. Food buffers: pH < 4.4 or > 9 prevents microorganism growth.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exam Language Trap: 'Minimises' NOT 'Prevents'",
+        text: "Incorrect: 'A buffer prevents pH change.' Correct: 'A buffer minimises (or resists / keeps roughly constant) significant changes in pH.' Examiners deduct marks for 'prevents' \u2014 the pH DOES change, just by very little."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Buffer Mechanism: Le Chatelier in Action",
+        text: "If acid (H\u207a) is added \u2192 A\u207b + H\u207a \u2192 HA consumes the added H\u207a. If base (OH\u207b) is added \u2192 HA + OH\u207b \u2192 A\u207b + H\u2082O consumes the base. The buffer works by having large reservoirs of BOTH HA and A\u207b to neutralise small additions of acid or base."
+      }
     }
   ],
   recall: {

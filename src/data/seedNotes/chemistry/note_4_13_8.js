@@ -79,7 +79,25 @@ export const note_chemistry_4_13_8 = {
             data: {
                 text: 'When calculating Ksp from solubility, remember to multiply the solubility by the stoichiometric coefficients to find the concentration of each specific ion. For reverse calculations (finding solubility from Ksp), use an algebraic variable "s". For an AB₂ molecule, the Ksp expression comes out to exactly 4s³.'
             }
-        }
+        },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Unit Conversion Essential",
+        text: "Solubility MUST be converted to mol dm\u207b\u00b3 before calculating Ksp. If given in g dm\u207b\u00b3, divide by molar mass first. Calculator error with scientific notation when squaring (3.42 \u00d7 10\u207b\u2074)\u00b2 \u2014 always use brackets."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Reverse Ksp Calculations: 's' Variable Setup",
+        text: "Let solubility = s mol dm\u207b\u00b3. For Mg(OH)\u2082, [Mg\u00b2\u207a] = s, [OH\u207b] = 2s. Substitute into Ksp = [Mg\u00b2\u207a][OH\u207b]\u00b2 = s(2s)\u00b2 = 4s\u00b3. Master this algebra \u2014 it appears frequently in exams."
+      }
+    }
     ],
     recall: {
         enabled: true,

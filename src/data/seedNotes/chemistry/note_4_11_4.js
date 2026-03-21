@@ -92,6 +92,24 @@ export const note_chemistry_4_11_4 = {
         text: 'Sometimes, you cannot find two experiments where [A] changes but [B] is completely constant! If this happens, you must calculate the effect of [A] first, mathematically account for how MUCH the rate was supposed to change due to [A], and then attribute any "extra" change in the rate to [B].'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "All Other Concentrations Must Stay Constant",
+        text: "When comparing experiments to find order w.r.t. reactant A, the concentrations of ALL OTHER reactants must be identical. If you cannot find such a pair, you must mathematically account for the effect of other concentration changes."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Quick Order Recognition",
+        text: "Double concentration: no rate change = 0th order | rate doubles = 1st order | rate quadruples = 2nd order."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────

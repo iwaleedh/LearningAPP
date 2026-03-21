@@ -410,6 +410,24 @@ export const note_chemistry_4_14_7 = {
         caption: 'Acid-Base Calculation Map — strong acids: pH = −log[H⁺]. Weak acids: [H⁺] = √(Ka × [HA]). Buffers: pH = pKa + log([A⁻]/[HA]). Titration curves differ for strong/weak combinations — choose the indicator that changes in the steep section.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Half-Neutralisation: [HA] = [A\u207b] \u2192 Ka = [H\u207a]",
+        text: "At half-neutralisation, exactly half the acid is converted to salt. [HA] = [A\u207b]. From Ka = [H\u207a][A\u207b]/[HA], the [A\u207b]/[HA] term = 1, so Ka = [H\u207a]. Therefore [H\u207a] = Ka, and Ka can be calculated directly from pH measurement. This is the trick to CP11."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "CP11 Method: Add Acid After Titration",
+        text: "Titrate to equivalence with NaOH (equivalence volume = V_eq noted). Then pipette a FURTHER 25 cm\u00b3 of the ORIGINAL ethanoic acid into the same flask. At this point, [HA] = [A\u207b] because exactly half the original acid is now unreacted, and half is neutralised salt. Measure pH \u2192 Ka = 10^(\u2212pH)."
+      }
     }
   ],
   recall: {

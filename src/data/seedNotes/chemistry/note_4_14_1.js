@@ -158,6 +158,24 @@ export const note_chemistry_4_14_1 = {
       data: {
         text: 'Conjugate pairs differ by one H⁺. Strong acid → weak conjugate base. Weak acid → relatively strong conjugate base. Water is amphoteric. Polyprotic acids form multiple conjugate pairs; middle species are amphoteric.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Strong Acid \u2192 Weak Conjugate Base (Inverse Relationship)",
+        text: "HCl is a very strong acid; its conjugate base Cl\u207b is extremely weak (inert, does not accept H\u207a). Conversely, CH\u2083COOH is weak; its conjugate base CH\u2083COO\u207b is relatively strong. This inverse relationship comes from equilibrium: if forward reaction heavily favours products, reverse does not."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Polyprotic Acids: HSO\u2084\u207b Appears Twice",
+        text: "In H\u2082SO\u2084 \u2192 HSO\u2084\u207b \u2192 SO\u2084\u00b2\u207b, the HSO\u2084\u207b is BOTH the conjugate base of H\u2082SO\u2084 AND the conjugate acid of SO\u2084\u00b2\u207b. This makes it amphoteric. Exams test this concept \u2014 students miss it if not careful."
+      }
     }
   ],
   recall: {

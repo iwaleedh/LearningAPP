@@ -137,6 +137,24 @@ export const note_chemistry_4_11_2 = {
         ]
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Quenching Timing Error",
+        text: "When taking samples, record the time when HALF the aliquot (5 cm\u00b3 of 10 cm\u00b3) has been transferred into the quenching agent. Students often record the wrong time point, leading to systematic errors in calculated rates."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Purpose of Quenching",
+        text: "Quenching immediately stops the reaction so the concentration does NOT change during titration. Methods: ice bath (dilute + cool), excess standard acid, or remove catalyst. This is essential for accurate rate measurement."
+      }
     }
   ],
   recall: {

@@ -222,6 +222,24 @@ export const note_chemistry_4_14_3 = {
       data: {
         text: 'Strong acids: ~100% dissociation, lower pH. Weak acids: partial dissociation (α << 1), higher pH at same concentration. Degree of dissociation α increases with dilution. Examples of weak acids: CH₃COOH, HF, HCOOH. Conductivity is lower for weak acids due to fewer ions.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Strength vs Concentration: Do NOT Confuse",
+        text: "Strength (strong/weak) = % of acid molecules that ionise. Concentration (concentrated/dilute) = total amount dissolved. You can have concentrated weak acid (glacial ethanoic acid, ~17 mol dm\u207b\u00b3, barely ionised) or dilute strong acid (0.0001 M HCl, fully ionised). Examiners specifically mark confusion between these."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Degree of Dissociation \u03b1 Increases with Dilution",
+        text: "Dilution shifts weak acid equilibrium right (Le Chatelier), increasing \u03b1. A 0.01 M weak acid has higher \u03b1 than 0.1 M. This means dilute weak acids are actually more dissociated (by percentage) \u2014 counterintuitive but crucial."
+      }
     }
   ],
   recall: {

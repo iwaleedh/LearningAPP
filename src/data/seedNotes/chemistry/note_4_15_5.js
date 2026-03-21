@@ -637,6 +637,24 @@ export const note_chemistry_4_15_5 = {
       data: {
         text: 'Carboxylic acids (R–COOH) contain the carboxyl group (C=O + OH on same C). Weak acids (pKₐ ~3–5) — the carboxylate ion (RCOO⁻) is stabilised by charge delocalisation over both C–O bonds. Physical properties: highest BP of all series (H-bonding + PDPD + London forces); short-chain acids very soluble (form 2 H-bonds with water). Preparations: oxidation of 1° alcohol/aldehyde with K₂Cr₂O₇/H₂SO₄ under reflux; acidic nitrile hydrolysis (1 step) or alkaline (2 steps — carboxylate first, then add acid). Four key reactions: ① Reduction (LiAlH₄/dry ether → primary alcohol — cannot stop at aldehyde); ② Neutralisation (NaOH → RCOONa + H₂O); ③ Halogenation (PCl₅/anhydrous → acyl chloride + POCl₃ + HCl misty fumes); ④ Esterification (alcohol/conc. H₂SO₄/heat → ester + H₂O, reversible).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Carboxylate Ion: Charge Delocalised Over Two C\u2013O Bonds",
+        text: "RCOOH loses H\u207a \u2192 RCOO\u207b. The negative charge is NOT localised on one oxygen. It spreads equally (resonance) over both C\u2013O bonds (shown as dashed lines). This stabilisation makes carboxylic acids much stronger acids than alcohols (pKa ~4 vs ~16). Resonance delocalisation is the KEY."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "COOH Carbon ALWAYS C1 in Numbering",
+        text: "In nomenclature, the carboxylic acid carbon is always position 1, even if there are double bonds or other functional groups. Students often miscount \u2014 this costs marks. 3-methylbutanoic acid has COOH at C1, methyl at C3 of the chain."
+      }
     }
   ],
   recall: {

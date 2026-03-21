@@ -262,6 +262,24 @@ export const note_chemistry_4_13_3 = {
       data: {
         text: 'Le Chatelier\'s principle: system shifts to counteract a disturbance. Concentration changes always shift equilibrium (left or right). Pressure changes shift equilibrium only if Δn ≠ 0 (towards fewer moles at high P). Catalysts speed up equilibrium but do not shift it. K remains constant except when T changes.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Cause & Effect: The Critical Distinction (EXAM FOCUS)",
+        text: "Most students incorrectly say 'changing concentration changes Kc.' WRONG. Kc is constant. When you change concentration, Qc changes. The position of equilibrium SHIFTS to restore Qc = Kc. Kc is the cause; the shift is the effect."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Pressure Only Affects if \u0394n \u2260 0",
+        text: "Pressure changes have NO effect on equilibrium if the number of moles of gas is the same on both sides (\u0394n = 0). Many students forget this condition and incorrectly predict shifts for reactions like N\u2082 \u21cc N\u2082."
+      }
     }
   ],
   recall: {

@@ -161,6 +161,24 @@ export const note_chemistry_4_15_1 = {
       data: {
         text: 'A racemate is a 50:50 mixture of enantiomers that is optically inactive because rotations cancel. Laboratory syntheses typically produce racemates unless a chiral reagent or catalyst is used. Polarimetry measures optical rotation (specific rotation [α] = α / (c × l)). Chirality is biologically significant: drugs and natural products are usually single enantiomers because enzymes and receptors are chiral. The thalidomide tragedy illustrates the dangers of ignoring stereochemistry in pharmaceuticals. Optical resolution separates racemates into pure enantiomers.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Racemate Exam Definition: Equimolar 50:50",
+        text: "Exam definition: 'A racemic mixture is an equimolar (50:50) mixture of the two enantiomers.' You must use the word 'equimolar' or 'equal amounts' \u2014 vague definitions lose marks. Shows NO optical activity in polarimeter because rotations cancel."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Thalidomide: Drug Chirality Matters (Clinical Importance)",
+        text: "Thalidomide was sold as a racemate. One enantiomer stopped nausea (therapeutic). The other caused severe birth defects (teratogenic). Taken in first trimester (when limbs form), it caused phocomelia. This tragedy led to strict pharmaceutical regulations requiring separate testing of each enantiomer. Exams ask about this."
+      }
     }
   ],
   recall: {

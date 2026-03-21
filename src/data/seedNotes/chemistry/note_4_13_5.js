@@ -216,6 +216,24 @@ export const note_chemistry_4_13_5 = {
       data: {
         text: 'ΔG° = −RT ln K links Gibbs free energy to the equilibrium constant. Large K (>> 1) means ΔG° is very negative (spontaneous, products favoured). Small K (<< 1) means ΔG° is very positive (non-spontaneous, reactants favoured). K = e^(−ΔG°/RT) allows calculation from thermodynamic data.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "IAL Form: \u0394Stotal = R ln K (Not \u0394G\u00b0)",
+        text: "In Edexcel IAL exams, the critical equation is \u0394Stotal = R ln K, not \u0394G\u00b0 = \u2212RT ln K. Know both forms. Key implication: K > 1 \u2192 ln K > 0 \u2192 \u0394Stotal > 0 \u2192 spontaneous forward reaction."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Both Directions Spontaneous at Equilibrium",
+        text: "Students struggle to understand why both forward and reverse reactions are spontaneous at equilibrium. At equilibrium \u0394Stotal = 0, representing the entropy maximum. ANY deviation from equilibrium (starting from pure N\u2082O\u2084 or pure NO\u2082) spontaneously moves toward equilibrium because entropy increases."
+      }
     }
   ],
   recall: {

@@ -338,6 +338,24 @@ export const note_chemistry_4_15_4 = {
       data: {
         text: 'Aldehydes and ketones undergo nucleophilic addition at the electrophilic C=O carbon. NaBH₄ reduces aldehydes → primary alcohols, ketones → secondary alcohols (mild conditions, aqueous solvent OK). HCN adds to form hydroxynitriles (both aldehydes and ketones; creates new chiral centres, racemic product); HCN is generated in situ from KCN and dilute acid at pH 4-5. NaHSO₃ forms crystalline addition compounds useful for purification. Tollens\' and Fehling\'s tests oxidise and detect aldehydes only (not ketones), giving characteristic colour changes: silver mirror (Tollens\') or brick-red ppt (Fehling\'s). These tests exploit the greater reactivity of aldehydes due to lower steric hindrance.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "A-Level Simplification: Use H\u207b Notation (Not BH\u2084\u207b)",
+        text: "The real nucleophile in NaBH\u2084 reduction is the BH\u2084\u207b ion, but IAL exams expect the simplified mechanism using H\u207b. Write H\u207b with its lone pair above the symbol (: H\u207b). This is a deliberate simplification to avoid boron chemistry beyond scope. NEVER write H\u207b without the lone pair."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Two-Step Workup: Complex Must Be Broken Down",
+        text: "After NaBH\u2084 reduction, a boron-containing complex forms. Step 2 requires adding water or dilute acid to release the free alcohol. Without this workup, you cannot isolate the product. Exam questions often specify '(i) NaBH\u2084 (ii) water workup' \u2014 both steps essential."
+      }
     }
   ],
   recall: {

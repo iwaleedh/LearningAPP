@@ -186,6 +186,24 @@ export const note_chemistry_4_13_6 = {
       data: {
         text: 'K >> 1: reaction essentially complete, products favoured. K << 1: reaction barely proceeds, reactants favoured. K ≈ 1: equilibrium mixture of both. Units of K depend on Δn: (mol dm⁻³)^Δn. Use Q vs K to predict direction. K is constant at a given T for any initial conditions.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Interpreting K Values for Extent of Reaction",
+        text: "K > 10\u00b3 = essentially complete conversion to products. K \u2248 1\u221210 = moderate conversion. K < 10\u207b\u00b3 = negligible conversion. Use this to communicate exam answers: don't just state K value, interpret its magnitude."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Units of K Depend on \u0394n \u2014 Don't Compare Across Reactions",
+        text: "K = 100 mol dm\u207b\u00b3 (units) is NOT necessarily 'stronger' than K = 2 (dimensionless) because their units differ. Always check \u0394n and units before comparing K values across different reactions."
+      }
     }
   ],
   recall: {

@@ -397,6 +397,24 @@ export const note_chemistry_4_14_6 = {
       data: {
         text: 'End point ≠ equivalence point. Strong+strong: equiv pH = 7, any indicator. Weak acid+strong base: equiv pH > 7 (8–9), phenolphthalein only. Strong acid+weak base: equiv pH < 7 (5–6), methyl orange only. Weak+weak: no steep section, no indicator. Indicators work via HIn ⇌ H⁺ + In⁻; range ≈ pKind ± 1. Half-equivalence: pH = pKa. Diprotic: 2 equivalence points; 2nd = 2× 1st.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Equivalence \u2260 pH 7 (Except Strong+Strong)",
+        text: "Strong acid + strong base \u2192 equivalence at pH 7. Weak acid + strong base \u2192 equivalence at pH > 7 (salt is weak base). Strong acid + weak base \u2192 equivalence at pH < 7 (salt is weak acid). Weak+weak \u2192 NO sharp equivalence point. Exams test selection of wrong indicator."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Indicator Selection: Match to Steep Region",
+        text: "For weak acid + strong base (equivalence ~pH 9), use phenolphthalein (pH 8.3\u201310.0), NOT methyl orange (pH 2.7\u20134.7). Methyl orange changes colour way below the steep section where it's useless. Students pick indicators by name, not pH range \u2014 leading mistake."
+      }
     }
   ],
   recall: {

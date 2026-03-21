@@ -85,6 +85,24 @@ export const note_chemistry_4_11_3 = {
         text: 'Starting with the specific rate equation for reactant A:<br><br><strong>Rate = k[A]ⁿ</strong><br><br>Taking the logarithm of both sides gives a linear equation (y = mx + c):<br><br><strong>log(Rate) = log(k) + n × log[A]</strong><br><br>If you plot <strong>log(Rate)</strong> on the y-axis against <strong>log[A]</strong> on the x-axis, you will get a straight line. The <strong>gradient (slope)</strong> of this line is exactly equal to the order of reaction, <strong>n</strong>.'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Avoid Curve-Fitting Ambiguity with Rate vs [Conc] Graphs",
+        text: "Plotting Rate directly against Concentration often produces ambiguous curves that could be 2nd, 3rd, or fractional order. Use LOG-LOG GRAPHS instead: plot log(Rate) vs log[Concentration] for a straight line where gradient = order."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Initial Rates Method Logic",
+        text: "Measure the time to produce a small, fixed amount of product (e.g., disappearance of a cross). This eliminates the problem of changing concentrations and gives initial rate directly via Rate \u221d 1/t."
+      }
     }
   ],
   recall: {

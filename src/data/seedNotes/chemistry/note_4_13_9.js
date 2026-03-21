@@ -79,7 +79,25 @@ export const note_chemistry_4_13_9 = {
                 caption: 'Equilibrium Constants — Kc uses concentration, Kp uses partial pressure (gases only), Ksp is for sparingly soluble salts. All three only change with temperature. A larger K means more product at equilibrium.'
             },
             terms: []
-        }
+        },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Common Ion Effect: Le Chatelier Explanation Required",
+        text: "Adding NaCl to a PbCl\u2082 saturated solution increases [Cl\u207b]. By Le Chatelier, equilibrium shifts LEFT to reduce this increase, forming more solid PbCl\u2082 and reducing its solubility. State both mechanism (Le Chatelier) and the direction (left) for full marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Ion Assumption in Calculations",
+        text: "In Ksp calculations with common ion, assume [Cl\u207b] \u2248 0.100 mol dm\u207b\u00b3 (from added salt) and ignore the tiny amount from PbCl\u2082 dissolution. This simplification is valid because Ksp is very small. If you do not make this assumption, you get a cubic equation beyond A-level scope."
+      }
+    }
     ],
     recall: {
         enabled: true,

@@ -301,6 +301,24 @@ export const note_chemistry_4_14_2 = {
       data: {
         text: 'pH = −log₁₀[H⁺]. Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 25°C. pH + pOH = 14. pH < 7 is acidic, pH = 7 is neutral, pH > 7 is basic. Strong acids: [H⁺] = acid concentration. Strong bases: [OH⁻] = n × base concentration (n = number of OH⁻ per formula unit).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exam Definition of pH: Write the Expression, Not Words",
+        text: "If asked to define pH in an exam, write: pH = \u2212log\u2081\u2080[H\u207a]. Do NOT try to define it in words \u2014 examiners reject worded definitions if details are missed. The expression is unambiguous."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Negative pH is Real and Valid",
+        text: "pH = \u2212log[H\u207a]. If [H\u207a] > 1 mol dm\u207b\u00b3, then pH is negative (e.g., 2 mol dm\u207b\u00b3 HCl gives pH = \u22120.30). In exams, negative pH answers are fully acceptable if calculations support them. Students often panic thinking it's an error."
+      }
     }
   ],
   recall: {

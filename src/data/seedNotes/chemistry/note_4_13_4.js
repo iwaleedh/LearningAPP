@@ -169,6 +169,24 @@ export const note_chemistry_4_13_4 = {
       data: {
         text: 'Temperature is the ONLY factor that changes K. Exothermic reactions: increase T → K decreases (left shift). Endothermic reactions: increase T → K increases (right shift). Catalysts do not change K or position. Concentration and pressure changes shift position but do not change K.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Temperature: The ONLY Factor That Changes K",
+        text: "Concentration, pressure, and catalysts shift equilibrium but do NOT change K. ONLY temperature changes K. For exothermic: increase T \u2192 K decreases, shift LEFT. For endothermic: increase T \u2192 K increases, shift RIGHT. Memorise this asymmetry."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Haber Process Example",
+        text: "N\u2082 + 3H\u2082 \u21cc 2NH\u2083 is exothermic (\u0394H = \u221292 kJ). Low temperature favours products thermodynamically, but reaction is slow. Industry uses ~450 K and 200 atm as a compromise \u2014 high pressure shifts right, moderate temperature balances rate vs yield."
+      }
     }
   ],
   recall: {

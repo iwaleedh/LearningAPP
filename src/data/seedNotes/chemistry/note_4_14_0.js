@@ -276,6 +276,24 @@ export const note_chemistry_4_14_0 = {
       data: {
         text: 'Acid = proton donor, Base = proton acceptor (Brønsted-Lowry). Strong acids (HCl, HNO₃, H₂SO₄) and bases (NaOH, KOH, Ca(OH)₂) completely dissociate. Weak acids and bases partially dissociate. Amphoteric substances (e.g., H₂O, HCO₃⁻) can both donate and accept protons.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Identifying Acid/Base: Sequential Steps Critical",
+        text: "Problem: Students identify acid/base randomly. Solution: (1) Write full equation. (2) Find species losing H\u207a \u2192 acid. (3) Find species gaining H\u207a \u2192 base. (4) Conjugate pairs differ by one H\u207a. Follow these steps religiously."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Amphoteric Species Are Everywhere",
+        text: "Water, HCO\u2083\u207b, HSO\u2084\u207b, amino acids can all act as both acid and base. In an exam, if asked to identify the role of water in a reaction, always consider: is it donating H\u207a (acid) or accepting H\u207a (base)? Context matters."
+      }
     }
   ],
   recall: {

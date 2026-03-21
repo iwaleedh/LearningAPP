@@ -377,6 +377,24 @@ export const note_chemistry_4_12_6 = {
       data: {
         text: 'Lattice enthalpy (dissociation) breaks ionic solid to gaseous ions (endothermic). Hydration enthalpy surrounds ions with water (exothermic). Solution enthalpy = ΔH_latt + ΣΔH_hyd. Small, highly charged ions have large hydration enthalpies. Dissolving can be endothermic or exothermic depending on which process dominates. Enthalpy level diagrams and thermodynamic cycles show the energy pathways.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Fajans' Rules: Covalent Character When Cation Is Small + Anion Is Large",
+        text: "High charge density of cation polarizes the anion's electrons toward itself, creating covalent overlap. AgI experimental lattice energy is much more negative than theoretical because Ag\u207a heavily polarizes the large I\u207b. Experimental \u0394H_latt more negative = covalent contribution."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Group 2 Solubility Trends Explained by Hydration vs Lattice Energy",
+        text: "Hydroxides (small anion): lattice energy falls FASTER down group \u2192 solubility INCREASES. Sulfates (large anion): hydration falls FASTER \u2192 solubility DECREASES. Size of anion determines which enthalpy term dominates."
+      }
     }
   ],
   recall: {

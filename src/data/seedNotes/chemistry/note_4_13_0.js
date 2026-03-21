@@ -200,6 +200,24 @@ export const note_chemistry_4_13_0 = {
       data: {
         text: 'Kc = [products]^stoich / [reactants]^stoich. For homogeneous systems, all species are included. For heterogeneous systems, omit pure solids and pure liquids. Units depend on Δn. Kc is independent of initial concentrations and catalysts, but depends on temperature.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Notation Trap: Kc vs Kp Brackets",
+        text: "For Kc expressions, ALWAYS use square brackets [ ]. Examiners will not award notation marks if you use round brackets. This is different from Kp which MUST use round brackets p(...)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Critical Misconception: Kc \u2260 the Equilibrium Position",
+        text: "Kc is constant at a given temperature and does NOT change when you alter concentration, pressure, or add a catalyst. The position of equilibrium shifts to restore Qc = Kc, but Kc itself remains unchanged. Only temperature changes K."
+      }
     }
   ],
   recall: {

@@ -164,6 +164,24 @@ export const note_chemistry_4_11_7 = {
         text: 'What happens if we keep the temperature at 20°C (293 K), but introduce a catalyst that drops the activation energy from 50 kJ mol⁻¹ to just 25 kJ mol⁻¹?<br><br><strong>Uncatalysed (E<sub>a</sub> = 50,000 J mol⁻¹):</strong><br>Fraction = 1.21 × 10⁻⁹<br><br><strong>Catalysed (E<sub>a</sub> = 25,000 J mol⁻¹):</strong><br>Fraction = e<sup>-25000 / (8.31 × 293)</sup> ≈ <strong>3.48 × 10⁻⁵</strong><br><br>Because E<sub>a</sub> is located inside a negative exponent, dropping it by half increases the fraction of successful particles by a factor of nearly <strong>30,000 times!</strong>'
       },
       terms: []
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Unit Trap: E\u2090 is ALWAYS in J mol\u207b\u00b9 in Arrhenius Equation",
+        text: "If a question gives E\u2090 in kJ mol\u207b\u00b9, you MUST convert to J mol\u207b\u00b9 by multiplying by 1000 BEFORE using it in k = Ae^(\u2212E\u2090/RT). Using kJ directly will give a nonsensical answer."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Arrhenius Plot: Read Gradient Carefully",
+        text: "Plot ln(k) vs 1/T. The gradient is \u2212E\u2090/R (negative). To find E\u2090: take the absolute value of the gradient and multiply by R (8.31 J K\u207b\u00b9 mol\u207b\u00b9). Then divide by 1000 to convert to kJ mol\u207b\u00b9 if needed."
+      }
     }
   ],
   // ── RECALL CUES ────────────────────────────────────────────────────────
