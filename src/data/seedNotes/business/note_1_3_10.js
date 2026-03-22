@@ -122,7 +122,25 @@ export const note_business_1_3_10 = {
       "title": "Student Example: Local Gym",
       "text": "A local gym uses a direct distribution channel — it produces and delivers the fitness service directly to the consumer with zero intermediaries. This maximises profit margin and allows full control over the customer experience. Compare this to a sports supplement brand that sells through gyms (indirect channel) — it reaches more consumers but sacrifices margin and brand control at the point of sale."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Distribution channels: Direct (company-owned stores, online, personal selling) vs Indirect (wholesalers, retailers, franchises). Edexcel tests 'evaluate channel appropriateness' \u2014 consider: Product type (luxury = direct; fast-moving = indirect), target market (online-savvy young consumers vs older traditional shoppers), costs, control. Framework: Direct = high control/margin but high cost; Indirect = lower cost/reach but less control. Link channel to product positioning."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume 'online distribution is always best' or ignore channel mix complexity \u2014 many successful firms use BOTH (e.g., Nike in Nike stores AND Dick's Sporting Goods AND online). Another error: not considering inventory, logistics, and middleman margins. Saying 'Amazon is cheapest' ignores factors like customer service, returns, brand control. Edexcel looks for nuanced channel strategy discussions, not channel hype."
+      }
+    }
 ],
   recall: {
     enabled: true,

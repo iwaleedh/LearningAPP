@@ -113,6 +113,24 @@ export const note_business_1_5_7 = {
       data: {
         text: 'Decision-making involves trade-offs and opportunity costs—the cost of the next best alternative given up, highlighting the impact of resource scarcity.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Opportunity cost = best foregone alternative. For an entrepreneur: salary given up (\u00a330k) + capital deployed elsewhere (\u00a350k, earning say 10% = \u00a35k annual return) + time opportunity (\u00a3X hourly rate) = total annual opportunity cost. Examiners expect numerical calculation, not conceptual chat. Show you can quantify the real cost of entry."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students say 'opportunity cost is important' without calculating it. A \u00a350k capital investment carries \u00a35k+ annual opportunity cost (interest/investment returns foregone). Year 1 startup income of \u00a340k looks good until you realize true economic profit = \u00a340k - \u00a330k salary - \u00a35k capital return - \u00a3X time = possibly negative. Show you understand real vs accounting profit."
+      }
     }
   ],
   recall: {

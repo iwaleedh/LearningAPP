@@ -147,6 +147,24 @@ export const note_business_1_1_4 = {
             "title": "Everyday Example: Local Takeaway vs National Chain",
             "text": "A local burger restaurant competes against McDonald's by offering home-made sauces, fresher ingredients, and faster local delivery. Its competitive advantage lies in quality and personalisation — areas where a large chain cannot easily replicate. This shows how small businesses survive intense competition by focusing on a defensible niche."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel questions often ask how competition affects businesses AND consumers separately \u2014 answer both angles. For businesses: increased competition lowers prices and profit margins. For consumers: more choice, lower prices. Examiners reward structured two-part analysis showing these trade-offs and market efficiency concepts."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Many students claim 'competition is always bad for business' or vice versa \u2014 this oversimplifies. Edexcel looks for nuance: competition can spur innovation and market growth, but also thin margins. Common exam error is ignoring the consumer benefit or failing to distinguish between perfect/monopolistic competition structures and real-world outcomes."
+      }
     }
 ],
   recall: {

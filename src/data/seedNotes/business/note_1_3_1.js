@@ -152,7 +152,25 @@ export const note_business_1_3_1 = {
       "title": "Student Tip: Minecraft",
       "text": "Minecraft (launched 2011) has avoided decline through constant <strong>product improvements</strong> — major free updates adding new biomes and mechanics — plus <strong>promotional tie-ins</strong> with the 2025 Minecraft Movie. Each major update acts as an extension strategy, re-engaging both existing and lapsed players."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Product Life Cycle (PLC) has 5 stages: Development, Introduction, Growth, Maturity, Decline. Edexcel focuses on marketing implications at each stage: (1) Introduction = high promotion, limit distribution; (2) Growth = expand distribution, reinforce branding; (3) Maturity = cut costs, differentiate or reposition; (4) Decline = harvest cash or exit. Extension strategies delay decline: product modification, new uses, new markets, rebranding. Use real examples (iPhone product line) to anchor answers."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates claim 'all products follow the PLC' without acknowledging variations (some goods skip growth phase, some jump from maturity to decline if disrupted). Another error: assuming extension strategies always work (many fail \u2014 repositioning a declining brand is risky and expensive). Edexcel penalizes oversimplification. Also, many forget cash flow implications: Introduction/Growth phases require investment; Maturity generates cash; Decline is about harvesting final returns."
+      }
+    }
 ],
   recall: {
     enabled: true,

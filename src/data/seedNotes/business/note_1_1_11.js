@@ -143,6 +143,24 @@ export const note_business_1_1_11 = {
             "title": "Relatable Example: The Independent Coffee Shop",
             "text": "An independent coffee shop that serves latte art, knows regulars by name, and prints personalised loyalty cards is adding value through customer service and experience — even if the coffee beans cost the same as a chain competitor. Customers are willing to pay a few pence more because the experience feels special, increasing the shop's added value without necessarily increasing input costs."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel values differentiation analysis with real examples \u2014 explain HOW a firm adds value (quality, design, USP, innovation, branding). The examiner expects you to link differentiation to competitive advantage and pricing power. Use the phrase 'allows the firm to charge a premium price' when explaining value-added strategies."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates claim 'we differentiate by being different' without explaining the actual mechanism or benefit. Vague answers like 'better quality' score low marks. Edexcel requires specific examples: if you say 'design differentiation,' explain which design features, how they appeal to customers, and why competitors can't replicate them easily."
+      }
     }
 ],
   recall: {

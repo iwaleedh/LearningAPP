@@ -124,6 +124,24 @@ export const note_business_1_1_3 = {
             "title": "Everyday Example: Corner Shop vs Amazon",
             "text": "A local corner shop selling newspapers and snacks faces a dynamic market as more consumers shift to online grocery deliveries. Businesses that adapt — by offering home delivery, extending hours, or stocking niche products unavailable online — are more likely to survive than those that maintain the status quo."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel tests this via 'market analysis' questions \u2014 use PESTEL or Porter's Five Forces to structure why markets change. Examiners expect you to identify external forces (social trends, tech innovation, regulation, competition) and explain how businesses adapt (new product lines, rebranding, cost reduction, market repositioning). Show cause-and-effect links clearly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students list market changes without explaining HOW the change impacts the business or HOW the business should respond. Saying 'smartphone technology changed markets' gets minimal marks; you must explain: 'reduced demand for physical products \u2192 businesses shifted to digital-first strategies \u2192 created new revenue streams online.' Link change to business action."
+      }
     }
 ],
   recall: {

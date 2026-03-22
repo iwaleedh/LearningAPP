@@ -135,7 +135,25 @@ export const note_business_1_3_2 = {
       "title": "Exam Watch: Dogs Aren't Always Dropped",
       "text": "Don't assume 'Dog' products are always discontinued immediately. Some businesses retain them to complete a product range, serve a loyal niche, or because withdrawal costs (e.g. contract obligations or factory retooling) exceed the cost of keeping them. Always analyse the specific context given in the question."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Boston Matrix classifies products by Market Growth (Y-axis) and Market Share (X-axis): Stars (high share, high growth), Cash Cows (high share, low growth), Question Marks (low share, high growth), Dogs (low share, low growth). Edexcel strategy implications: Stars = invest to protect; Cash Cows = harvest cash, reinvest in Stars; Question Marks = invest selectively or divest; Dogs = divest. Plot fictional or real portfolios accurately \u2014 examiners award marks for correct positioning."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse which axis is which or misplace products (e.g., plotting a low-growth product as a Star). Another error: assuming 'Stars are always good, Dogs always bad' \u2014 Dogs sometimes deserve investment if they have turnaround potential or strategic fit. Edexcel penalizes this oversimplification. Also, many forget that market growth rates vary by industry \u2014 5% growth in telecoms is 'decline,' but 5% in luxury goods is 'growth.' Context matters."
+      }
+    }
 ],
   recall: {
     enabled: true,

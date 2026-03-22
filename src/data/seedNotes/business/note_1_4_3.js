@@ -160,6 +160,24 @@ export const note_business_1_4_3 = {
         title: 'Relatable Example — School Motivation',
         text: 'In school, motivation can be intrinsic (genuine curiosity about a subject) or extrinsic (studying to avoid a poor grade). Teachers who build a supportive classroom and provide meaningful feedback are satisfying Maslow <b>belonging</b> and <b>esteem</b> needs. Schools relying only on grade-based threats use purely extrinsic motivation — which research shows is less effective for deep learning. The same principle applies in every workplace: rewards alone rarely unlock the best performance.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Reference contemporary UK union decline (c. 23% of workforce) and why \u2014 shift to service sector, anti-union legislation, globalisation. Examiners reward awareness of real-world context. Also distinguish collective bargaining power: nurses (critical service) have more leverage than retail workers (replaceable supply)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume strikes always succeed or benefit unions \u2014 calculate costs: production loss, reputation damage, scab labour. In many cases, striking workers lose more in wages foregone than they win. Show critical evaluation: industrial action is a strategic gamble, not automatic leverage."
+      }
     }
   ],
   recall: {

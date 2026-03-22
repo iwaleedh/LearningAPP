@@ -92,6 +92,24 @@ export const note_business_1_5_1 = {
         title: 'Relatable Example: Student Podcast for School',
         text: 'A student who proposes and runs a school revision podcast as part of their sixth-form society is acting as an intrapreneur — using the school\'s resources (microphone, recording space, social media channels) to create something new, without bearing personal financial risk. If successful, it benefits the institution while the student gains experience and recognition.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Intrapreneurship = entrepreneurship within a large firm; Google's 20% time and 3M's innovation labs are classic examples. Benefits both: employee retains job security + investment capital; firm retains talent + innovation. Examiners reward specific examples and clear understanding of the risk-sharing model versus solo entrepreneurship."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse intrapreneurship with entrepreneurship \u2014 intrapreneurship is lower-risk (corporate safety net) and lower-reward (employer owns IP); entrepreneurship is high-risk, high-reward. Ideas fail faster in corporates due to bureaucracy. Show you understand it's a hybrid model, not 'entrepreneurship with a salary.'"
+      }
     }
   ],
   recall: {

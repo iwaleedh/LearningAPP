@@ -23,7 +23,25 @@ export const note_business_1_2_5 = {
       { id: 's-1', type: 'summary', data: { text: 'Knowing PED is crucial. If demand is inelastic, a firm can raise prices to boost revenue. If it is elastic, a price cut might be needed to win enough sales volume to raise revenue.' } },
       { id: 'enr-t2b-ped-worked', type: 'callout', data: { style: 'worked', title: 'Worked Example: Cinema Popcorn', text: 'PED for popcorn at a cinema is -0.8. The current price is £5; it rises to £6 (+20%).\nStep 1: State formula — PED = % change in QD / % change in Price\nStep 2: Rearrange — x = -0.8 × 20 = -16%\nConclusion: QD falls by only 16%. Since |PED| = 0.8 < 1 (price inelastic), the revenue gained per unit outweighs the lost volume, so Total Revenue increases.' } },
       { id: 'enr-t2b-ped-brand', type: 'callout', data: { style: 'tip', title: 'Real World: Coca-Cola and Petrol', text: 'Despite tasting nearly identical in blind tests, Coca-Cola marketing investment creates such strong consumer loyalty that buyers refuse to switch to Pepsi even when prices rise — a clear sign of price inelastic demand. Petrol is another classic example: in the short run very few substitutes exist, so BP and Shell can raise prices without losing a proportional volume of sales.' } },
-      { id: 'enr-t2b-ped-student', type: 'callout', data: { style: 'tip', title: 'Student Example: Cinema vs Streaming', text: 'If your local cinema raises ticket prices from £10 to £13, you might switch to Netflix or Disney+ instead — there are many substitutes and it is not a necessity, making demand relatively price elastic. Contrast this with essential medication or electricity: no practical substitutes exist, so demand is highly price inelastic.' } }
+      { id: 'enr-t2b-ped-student', type: 'callout', data: { style: 'tip', title: 'Student Example: Cinema vs Streaming', text: 'If your local cinema raises ticket prices from £10 to £13, you might switch to Netflix or Disney+ instead — there are many substitutes and it is not a necessity, making demand relatively price elastic. Contrast this with essential medication or electricity: no practical substitutes exist, so demand is highly price inelastic.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "PED formula: (% change in quantity demanded) \u00f7 (% change in price). Edexcel always marks for WORKING \u2014 show the calculation step-by-step. Interpret results: |PED| > 1 = elastic (demand sensitive to price); |PED| < 1 = inelastic (demand insensitive). Remember: PED is usually negative (price \u2191, quantity \u2193), but report absolute value. Use PED to predict revenue: elastic demand \u2192 lower price increases revenue; inelastic \u2192 higher price increases revenue."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates forget to convert to PERCENTAGE changes before calculating (use: [(New - Old) \u00f7 Old] \u00d7 100). Edexcel penalizes answers like 'demand changed 50 to 40 units' without showing percentage conversion. Also, many students calculate PED incorrectly as (Price change \u00f7 Quantity change) \u2014 this is backwards. Another trap: interpreting PED = -2 as 'demand decreases by 2%' when it actually means a 1% price increase causes 2% quantity decrease."
+      }
+    }
     ],
   recall: {
     enabled: true,

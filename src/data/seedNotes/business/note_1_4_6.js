@@ -188,6 +188,24 @@ export const note_business_1_4_6 = {
         "title": "Student Perspective: Your School as an Organisation",
         "text": "Think about how your school is structured. Subject <b>departments</b> (Maths, Science, English) are a <b>functional structure</b> — specialist expertise and clear roles, but departments can become siloed. When teachers from different subjects run a project week together, that's a <b>matrix structure</b>. A school principal who makes every decision alone is centralised (autocratic); one who empowers heads of department is decentralised (democratic). Which structure makes your school most effective — and why?"
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Match structure to business strategy: flat structures suit fast-moving innovation startups (Apple); tall hierarchies suit regulated/compliance-heavy sectors (banking, NHS). Matrix structures work in project-based firms (consulting, engineering). Show you understand structure as a strategic choice, not arbitrary design."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume flat = always better \u2014 flat structures slow decision-making on consistency (no clear owner), harm accountability, and limit promotion pathways (staff leave). Matrix creates dual reporting lines causing conflict. Evaluate trade-offs explicitly: speed vs clarity, empowerment vs chaos."
+      }
     }
   ],
   recall: {

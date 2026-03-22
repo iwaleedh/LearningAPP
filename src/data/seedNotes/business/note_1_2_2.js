@@ -28,7 +28,25 @@ export const note_business_1_2_2 = {
         { "text": "<strong>Fall in supply (S shifts left):</strong> Shortage at old price → price rises → higher P but lower Q. Effect on revenue depends on demand elasticity." }
       ] } },
       { "id": "enr-brand-market", "type": "callout", "data": { "style": "tip", "title": "Real World: Tesco During COVID-19", "text": "When the UK entered lockdown in March 2020, demand for grocery staples shifted sharply right. Tesco experienced shortages of pasta, flour and toilet rolls — a classic excess demand situation. Retailers voluntarily capped prices, but delivery slot availability collapsed, illustrating the market seeking a new equilibrium." } },
-      { "id": "enr-stud-market", "type": "callout", "data": { "style": "worked", "title": "Student Example: School Canteen Price Rise", "text": "If a canteen raises lunch prices from £2.50 to £3.50, the number of meals sold falls — this is a movement along the demand curve. If a rival sandwich stall opens next door, the canteen's demand curve shifts left entirely. These are two different mechanisms with different diagrams." } }
+      { "id": "enr-stud-market", "type": "callout", "data": { "style": "worked", "title": "Student Example: School Canteen Price Rise", "text": "If a canteen raises lunch prices from £2.50 to £3.50, the number of meals sold falls — this is a movement along the demand curve. If a rival sandwich stall opens next door, the canteen's demand curve shifts left entirely. These are two different mechanisms with different diagrams." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "EQUILIBRIUM = price where quantity demanded = quantity supplied. Edexcel expects clear diagram labeling: Demand line, Supply line, point of intersection = equilibrium price and quantity. Examiners test via 'if price is above equilibrium' questions: expect answer 'surplus exists, firms cut prices, price falls toward equilibrium.' Use this mechanism in essays to show understanding of market forces."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students struggle to identify equilibrium on a graph or assume markets always clear at equilibrium (false \u2014 market friction, price controls, information gaps prevent this in reality). Edexcel often tests: 'What happens if price is FIXED below equilibrium?' Answer: shortage \u2192 consumers can't find goods \u2192 black markets or rationing. Many candidates forget real-world complications beyond the textbook model."
+      }
+    }
     ],
   recall: {
     enabled: true,

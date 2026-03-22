@@ -151,6 +151,24 @@ export const note_business_1_4_0 = {
         title: 'Relatable Example — Your Part-Time Job',
         text: 'Think about a part-time job in a café or shop. Zero-hours contract, minimal training, CCTV monitoring — that is <b>Hard HRM</b>. Regular rota, investment in your development, management asking for your ideas — that is <b>Soft HRM</b>. The same tension plays out in every business that employs people.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Link the employee-as-cost view to short-term profit maximisation and the employee-as-asset view to long-term competitive advantage. Examiners expect you to evaluate which approach suits different business contexts \u2014 cost minimisation in low-skill roles, asset investment in knowledge-intensive sectors."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume one view is 'correct' \u2014 both have merit depending on context. Statements like 'employees should always be viewed as assets' lack nuance. Edexcel expects you to weigh trade-offs: asset investment requires high capital, longer payback periods, and risk of losing trained staff to competitors."
+      }
     }
   ],
   recall: {

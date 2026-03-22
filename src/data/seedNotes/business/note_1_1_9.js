@@ -132,6 +132,24 @@ export const note_business_1_1_9 = {
             "title": "Relatable Example: The Local Bakery",
             "text": "A local baker who asks regular customers what they'd like to see on the menu next season is being market-orientated. One who simply bakes what they personally believe is best and assumes people will buy it is being product-orientated — and runs the risk of unsold stock and wasted cost."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "This is a core comparison question in Edexcel Unit 1 \u2014 use a two-column table: Product-Orientated (start with product idea, adapt market) vs Market-Orientated (research demand, design product). Examiners expect you to evaluate each with real examples (Apple: market-orientated; traditional manufacturers: product-orientated). Link approach to success/failure outcomes."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students claim 'market orientation is always better' \u2014 wrong in all contexts. Edexcel penalizes blanket statements. Reality: Market orientation suits competitive markets and established companies (lower risk, higher cost); Product orientation suits innovation-driven firms (Apple, Tesla, high R&D). Fail to contextualize and you lose evaluation marks. Also, many forget that BOTH approaches have been successful historically."
+      }
     }
 ],
   recall: {

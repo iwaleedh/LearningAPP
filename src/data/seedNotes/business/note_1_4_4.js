@@ -157,6 +157,24 @@ export const note_business_1_4_4 = {
         title: 'Relatable Example — Getting a Part-Time Job',
         text: 'If you have applied for a part-time job via an online job site (Indeed or a retailer website), you have first-hand experience of external recruitment. The application form was the business screening tool; a subsequent interview was the selection stage. If a friend who already works there told you about the vacancy, that was an <b>employee referral</b>. Grounding exam answers in experiences like these makes responses feel specific and credible.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Compare recruitment methods using cost-per-hire and time-to-productivity metrics. Examiners expect numerical justification: interviews cost \u00a3200, assessment centres \u00a35,000+, tests \u00a3100. Link method choice to role criticality \u2014 assess centres justified for senior roles; not for mass fast-food recruitment."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't recommend assessment centres universally \u2014 they carry high sunk cost per candidate and only recover through low turnover. For high-turnover roles (retail, hospitality) they're financially irrational. Match method to labour market context: tight labour market needs fast, cheap interviews; buyer's market allows luxury screening."
+      }
     }
   ],
   recall: {

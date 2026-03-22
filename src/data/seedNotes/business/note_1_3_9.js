@@ -115,7 +115,25 @@ export const note_business_1_3_9 = {
       "title": "Student Example: Local Market Stall",
       "text": "A student selling handmade bracelets at a school fair might use: psychological pricing (£4.99 not £5), cost-plus pricing (materials £1.50 + time + 40% mark-up = £2.10 price), and penetration pricing (lower prices for their first event to attract buyers). Each strategy serves a different goal — a good exam answer names the strategy and explains why it fits the situation."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Pricing strategies: Cost-plus (add markup to costs), competitive (match rival prices), penetration (low price for market entry, build volume), premium (high price for quality signal), psychological (\u00a39.99 vs \u00a310). Edexcel tests via 'justify pricing strategy for scenario' \u2014 expect framework: Identify strategy, explain why it fits market conditions (competitive landscape, PED, target segment), quantify impact (volume/profit outcome). Example: 'Penetration pricing (\u00a349 vs competitor \u00a369) will achieve 25% market share in 12 months, enabling economies of scale.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students claim 'lower price always wins' or ignore strategic consequences. Penetration pricing can lock the firm into low-margin, high-volume business forever (hard to raise prices later without losing customers). Edexcel rewards nuance: penetration only works if costs fall with scale (achievable for digital products, risky for services). Another error: confusing psychological pricing (\u00a39.99) with strategy \u2014 it's a tactic within a broader strategy, not a strategy itself."
+      }
+    }
 ],
   recall: {
     enabled: true,

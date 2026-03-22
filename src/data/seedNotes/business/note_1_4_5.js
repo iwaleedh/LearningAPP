@@ -157,6 +157,24 @@ export const note_business_1_4_5 = {
         title: 'Relatable Example — School Prefect System',
         text: 'Leadership styles appear in school. A head student who consults prefects and the student council before making decisions is acting <b>democratically</b>. One who simply assigns tasks without discussion is acting <b>autocratically</b>. A form tutor who gives sixth-formers complete freedom to manage their own timetable is applying a <b>laissez-faire</b> approach. The same spectrum of leadership styles exists in every school and workplace — and the best leaders know which to use in which situation.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Map training choice to business need: induction (on-the-job), technical skills (off-the-job classroom), management (mixed). Show ROI calculation \u2014 training cost vs productivity gain vs likelihood of staff leaving before payback. Edexcel expects you to weigh immediate production loss (off-the-job) against long-term capability gains."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't ignore opportunity cost of off-the-job training \u2014 production loss while staff attend courses, trainer cost, venue hire. On-the-job looks cheaper but may embed poor practices. Show you've calculated total cost-of-ownership: a \u00a32k course is actually \u00a32k + (output loss during training) + (trainer time)."
+      }
     }
   ],
   recall: {

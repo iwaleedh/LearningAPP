@@ -109,7 +109,25 @@ export const note_business_1_3_8 = {
       "title": "Student Example: School Crest on a Shirt",
       "text": "Compare a generic plain shirt with one bearing a prestigious school's emblem. The crest creates brand equity — parents pay a premium for the branded version even if the fabric is identical. Strip the badge off and the extra value disappears instantly. This illustrates that brand equity is entirely perception-based."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Brand-building requires consistency across: visual identity (logo, colors, design language), tone of voice (formal vs casual), customer experience (every touchpoint), values (sustainability, innovation, heritage). Edexcel expects 'evaluate brand strategy' essays with real examples (Nike = 'Just Do It' + swoosh + athlete sponsorships = consistent brand promise). Examiners reward you for explaining HOW consistency drives brand equity (customer recognition, trust, willingness to pay premium)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students focus only on logo/visuals and ignore the strategic component \u2014 Edexcel penalizes shallow answers. Brand is much more than aesthetics; it's customer perception, experience, and emotional connection. Another error: assuming 'rebranding is always good' (risky \u2014 alienates loyal customers, dilutes heritage). Examples: Gap rebranding in 2010 backfired; redesigned logo was rejected within a week, and company reverted. Edexcel rewards caution: consistent brands outperform chaotic rebrands."
+      }
+    }
 ],
   recall: {
     enabled: true,

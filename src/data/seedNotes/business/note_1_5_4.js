@@ -106,6 +106,24 @@ export const note_business_1_5_4 = {
       data: {
         text: 'Successful entrepreneurs blend innate characteristics like risk-taking and resilience with learned skills such as financial and operational management.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Key traits: risk tolerance, persistence through failure, problem-solving mindset, drive, innovation orientation. Rather than listing traits, show how they interact: high risk tolerance + low persistence = recklessness; high persistence + low risk tolerance = missing opportunities. Examiners reward nuanced understanding over trait catalogues."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Traits alone don't guarantee success \u2014 market timing, capital access, and luck matter as much or more. Many 'entrepreneurial personalities' fail; many cautious people succeed with good ideas. Don't overstate trait determinism. Show critical awareness: entrepreneurship is necessary but not sufficient for success; context and circumstance matter."
+      }
     }
   ],
   recall: {

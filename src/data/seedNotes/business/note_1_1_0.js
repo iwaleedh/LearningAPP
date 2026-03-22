@@ -120,6 +120,24 @@ export const note_business_1_1_0 = {
             "title": "Everyday Example: School Tuck Shop",
             "text": "A school tuck shop selling crisps, water, and chocolate bars operates in a mass market — the products are generic, widely available, and aimed at the broadest possible customer base (all students). A stall selling only vegan snacks would be targeting a niche market: smaller and more specific, but potentially able to charge higher prices."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel always asks candidates to 'compare advantages and disadvantages' of mass vs niche markets \u2014 use a two-way table structure in essays. Define clearly what 'mass market' and 'niche market' mean before comparing; examiners mark harshly on vague definitions. Remember niche markets = higher price/lower volume; mass = lower price/higher volume."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often claim 'niche markets are always more profitable' \u2014 this is wrong. Profitability depends on cost structure and competition. Edexcel looks for nuance: niche markets have less competition (margin benefit) but lower volume (revenue risk). Examiners penalize binary thinking; always consider context."
+      }
     }
 ],
   recall: {

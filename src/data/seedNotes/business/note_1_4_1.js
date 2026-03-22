@@ -151,6 +151,24 @@ export const note_business_1_4_1 = {
         title: 'Relatable Example — Student Flexible Working',
         text: 'Many students work part-time on zero-hours contracts that fit around a college or university timetable — ideal when study takes priority. The trade-off becomes clear at exam time: if the employer needs extra hours exactly when you need to revise, there is no guaranteed protection. This lived tension between employer demand and worker need is at the core of every debate about flexible working arrangements.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Use Handy's four-leaf clover diagram to structure answers \u2014 Core Workers (permanent, full-time), Peripheral Workers (part-time, temporary), Contractual (outsourced), and Flexible (seasonal, temporary). This framework demonstrates knowledge of modern workforce composition and why businesses adopt flexible models."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse 'flexible working' (remote work, flexible hours) with 'flexible workforce' (portfolio of different contract types). A flexible workforce includes zero-hours workers and contractors; flexible working is about when/where permanent staff work. Don't mix these up or lose marks for imprecision."
+      }
     }
   ],
   recall: {

@@ -134,6 +134,24 @@ export const note_business_1_1_6 = {
             "title": "Relatable Example: The Local Coffee Shop",
             "text": "An independent coffee shop placing a short feedback card on each table — asking customers to rate their experience and suggest new drinks — is conducting primary research. It is first-hand, directly relevant to that specific business, and completely exclusive from competitors. The cost is minimal but the insight is highly actionable."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel focuses on PRIMARY (field) research methods: surveys, interviews, focus groups, questionnaires, observation. Examiners expect clear distinction from secondary research. When evaluating methods, use a structured approach: Advantages (accuracy, targeted, current data) vs Disadvantages (cost, time, response bias). Always link evaluation back to business context/purpose."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates list advantages/disadvantages without explaining HOW they matter to the business. Saying 'surveys are quick' is vague \u2014 Edexcel wants: 'Surveys are quick to administer (4 weeks), enabling rapid market entry decisions, but have low response rates (20%), risking bias if only brand-loyal customers respond.' Always quantify and contextualize."
+      }
     }
 ],
   recall: {

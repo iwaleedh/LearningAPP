@@ -91,7 +91,25 @@ export const note_business_1_3_6 = {
       "title": "Student Example: School Canteen Tray",
       "text": "Your school canteen's food trays are designed primarily for economic manufacture — cheap, stackable, dishwasher-safe plastic. Aesthetics are sacrificed. This is a deliberate design mix choice driven by tight budgets and high daily usage. Compare this to the tray at a premium restaurant, which sacrifices cost-efficiency for aesthetics to justify higher meal prices."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Design mix elements: Function (does it work?), Aesthetics (does it look good?), Cost (affordability?). Edexcel tests via 'evaluate design strategy' questions \u2014 Apple prioritizes aesthetics + function (justifies premium price); budget brands prioritize cost + basic function. Examiners expect clear cause-and-effect: 'Premium aesthetics justify 25% higher price, enabling 15% profit margin vs competitor's 8%.' Show how design influences positioning and revenue."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students claim 'good design always sells better' \u2014 ignores trade-offs. High design = high cost = only viable for premium segments. Budget segments need functional, low-cost design. Edexcel penalizes oversimplification. Also, many forget that design needs market insight (IKEA's minimalist Scandinavian design appeals to young urbanites, not elderly traditional customers). Design strategy must match target market values, not just be universally 'good.'"
+      }
+    }
 ],
   recall: {
     enabled: true,

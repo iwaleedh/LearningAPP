@@ -221,6 +221,24 @@ export const note_business_1_4_9 = {
         "title": "Student Perspective: Pay Per Page vs Hourly Rate",
         "text": "Imagine a part-time job paid you per page of notes typed rather than per hour. You'd rush through each page as fast as possible — accuracy and quality would drop. You'd also have income anxiety on slow days. Now imagine a flat hourly rate — predictable and calm, but no incentive to work harder. This is exactly the Taylor/Herzberg tension: piece-rate increases output short-term but risks quality and long-term engagement. Which pay system would you prefer — and what does your answer reveal about your motivational drivers?"
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Performance-related pay (PRP) and piece-rate suit sales and manufacturing (measurable output); bonus and profit-sharing suit team-based roles (cooperation). Examiners expect you to justify method choice with output metric: 'piece-rate works because output is easily measurable' or 'PRP fails in customer service because quality is hard to quantify.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "PRP looks good but kills collaboration \u2014 sales teams compete instead of share leads. Piece-rate encourages quantity over quality, requiring inspection costs. Time-rate appears cheap but enables low productivity and 'working to the clock.' Don't list methods without critically evaluating hidden costs: demotivation, quality loss, administration burden."
+      }
     }
   ],
   recall: {

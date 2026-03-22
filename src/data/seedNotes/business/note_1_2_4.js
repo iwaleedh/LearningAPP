@@ -31,7 +31,25 @@ export const note_business_1_2_4 = {
         ["Less than 0 (negative)", "Inferior", "Own-label goods, public transport, domestic holidays", "Demand rises in recessions; falls during booms"]
       ] } },
       { "id": "enr-brand-yed", "type": "callout", "data": { "style": "tip", "title": "Real World: VW Group's Income-Segmented Portfolio", "text": "Volkswagen Group owns Skoda (budget), VW (mid-range), Audi (premium) and Porsche (luxury). This portfolio strategy is informed by YED analysis: during a recession, demand shifts towards Skoda; during an economic boom, it shifts towards Audi and Porsche. Similarly, Tesco's Value, Standard and Finest ranges serve different income groups simultaneously." } },
-      { "id": "enr-stud-yed", "type": "callout", "data": { "style": "worked", "title": "Student Example: Takeaway Meals & Student Income", "text": "A student's income falls from £450 to £405 per week (−10%). Their demand for takeaways drops from 5 to 3 per week (−40%). YED = −40% ÷ −10% = +4. Since YED > 1, takeaways are a luxury normal good — demand is income elastic. During busy exam term when students work fewer hours, takeaway spending falls sharply." } }
+      { "id": "enr-stud-yed", "type": "callout", "data": { "style": "worked", "title": "Student Example: Takeaway Meals & Student Income", "text": "A student's income falls from £450 to £405 per week (−10%). Their demand for takeaways drops from 5 to 3 per week (−40%). YED = −40% ÷ −10% = +4. Since YED > 1, takeaways are a luxury normal good — demand is income elastic. During busy exam term when students work fewer hours, takeaway spending falls sharply." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel rewards diagram skills \u2014 clear, labeled axes (Price on Y, Quantity on X), proper curve shapes, and equilibrium marked. Examiners expect you to use diagrams to EXPLAIN market dynamics: 'When demand increased, the demand curve shifted right, creating shortage, pushing price up, until new equilibrium E2 formed with higher P and Q.' Your verbal explanation must match your diagram exactly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Messy diagrams lose marks \u2014 axes unlabeled, curves too wide or crossing incorrectly, equilibrium unmarked. Also, many students draw diagrams but forget to EXPLAIN what they show. Edexcel penalizes diagram-only answers in essays; you must narrate the economics: 'The shift causes a surplus/shortage, which triggers price movements until equilibrium re-forms.' Connect diagram to economics, not just sketch."
+      }
+    }
     ],
   recall: {
     enabled: true,

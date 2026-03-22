@@ -114,7 +114,25 @@ export const note_business_1_3_3 = {
       "title": "Student Tip: Pret vs Greggs",
       "text": "Pret A Manger (niche) prioritises <strong>Product quality and Aesthetics</strong> — freshly made sandwiches, atmospheric shops — with a premium <strong>Price</strong>. Greggs (mass market) prioritises <strong>Price and Place</strong> — cheap sausage rolls available on every high street. Both succeed because they've matched their 4P emphasis to their target market."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "The 4Ps (Product, Price, Promotion, Place) vary by market: mass markets emphasize low Price and wide Place distribution; premium markets emphasize high-quality Product and selective Place (exclusive retailers). Edexcel tests this via 'compare 4Ps for luxury vs budget car brands' questions. Framework: Luxury = high price, premium product features, selective distribution, aspirational promotion. Budget = low price, basic features, mass distribution, value-focused promotion. Show trade-offs clearly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students create incoherent marketing mixes (e.g., 'luxury product + budget price + mass distribution' = contradictory strategy). Edexcel penalizes inconsistent strategies that confuse positioning. Another error: treating the 4Ps as independent levers rather than integrated tools \u2014 each element must support the overall strategy. Also, many forget that successful businesses ALIGN their 4Ps; misalignment causes brand confusion and lost sales."
+      }
+    }
 ],
   recall: {
     enabled: true,

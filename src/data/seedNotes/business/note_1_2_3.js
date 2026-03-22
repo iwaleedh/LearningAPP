@@ -30,7 +30,25 @@ export const note_business_1_2_3 = {
       { "id": "enr-callout-ped-revenue", "type": "callout", "data": { "style": "key", "title": "PED and Business Revenue", "text": "<strong>Price inelastic (PED 0 to −1):</strong> Raising price increases total revenue (TR = P × Q) — QD falls proportionally less. Best strategy: price skimming. <strong>Price elastic (PED below −1):</strong> Raising price reduces total revenue — QD falls proportionally more. Best strategy: competitive/penetration pricing." } },
       { "id": "enr-svg-ped-graph", "type": "svg", "data": { "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' font-family='Arial,sans-serif'><rect width='400' height='300' fill='#0f172a' rx='8'/><text x='200' y='20' text-anchor='middle' font-size='12' font-weight='bold' fill='#1e293b'>Price Elasticity of Demand</text><g transform='translate(20,0)'><line x1='50' y1='260' x2='180' y2='260' stroke='#334155' stroke-width='1.5'/><line x1='50' y1='40' x2='50' y2='260' stroke='#334155' stroke-width='1.5'/><text x='115' y='278' text-anchor='middle' font-size='9' fill='#64748b'>Qty</text><text x='35' y='155' font-size='9' fill='#64748b' transform='rotate(-90,35,155)'>Price</text><line x1='55' y1='50' x2='170' y2='250' stroke='#6366f1' stroke-width='2.5'/><text x='115' y='38' font-size='9' fill='#6366f1' font-weight='bold'>Inelastic (PED&lt;1)</text><text x='40' y='22' font-size='8' fill='#64748b'>e.g. petrol</text></g><g transform='translate(205,0)'><line x1='50' y1='260' x2='180' y2='260' stroke='#334155' stroke-width='1.5'/><line x1='50' y1='40' x2='50' y2='260' stroke='#334155' stroke-width='1.5'/><text x='115' y='278' text-anchor='middle' font-size='9' fill='#64748b'>Qty</text><line x1='55' y1='80' x2='170' y2='250' stroke='#ef4444' stroke-width='2.5'/><text x='115' y='38' font-size='9' fill='#ef4444' font-weight='bold'>Elastic (PED&gt;1)</text><text x='40' y='22' font-size='8' fill='#64748b'>e.g. luxury bags</text></g></svg>", "caption": "PED comparison: inelastic demand (steep curve) vs elastic demand (shallow curve)" } },
       { "id": "enr-brand-ped", "type": "callout", "data": { "style": "tip", "title": "Real World: Petrol (Inelastic Demand)", "text": "Petrol has very few substitutes in the short term — most people cannot quickly switch to cycling or public transport. When oil companies raise fuel prices, the percentage fall in sales is small relative to the price rise. Demand is price inelastic, so total revenue rises when price increases." } },
-      { "id": "enr-stud-ped", "type": "callout", "data": { "style": "worked", "title": "Student Example: Cinema Popcorn", "text": "The PED for cinema popcorn is approximately –0.8. If the cinema raises the price by 20%, quantity demanded falls by only 16% (0.8 × 20%). Because demand is inelastic, total revenue increases. This is why cinemas charge premium prices for snacks — captive audiences have few substitutes." } }
+      { "id": "enr-stud-ped", "type": "callout", "data": { "style": "worked", "title": "Student Example: Cinema Popcorn", "text": "The PED for cinema popcorn is approximately –0.8. If the cinema raises the price by 20%, quantity demanded falls by only 16% (0.8 × 20%). Because demand is inelastic, total revenue increases. This is why cinemas charge premium prices for snacks — captive audiences have few substitutes." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel tests this via supply/demand diagram questions with 6\u20138 marks. When demand shifts RIGHT: new equilibrium has HIGHER price AND higher quantity (examiners expect correct diagram). When supply shifts LEFT: higher price, LOWER quantity. Examiners reward you for explaining the CAUSE (e.g., 'Income rose \u2192 demand shifts right \u2192 shortage forms \u2192 price rises until new equilibrium \u2192 quantity increases'). Always trace the chain of cause-and-effect."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students draw incorrect shift directions or forget to identify both price AND quantity changes at new equilibrium. Common error: 'demand shifted right so price goes up' \u2014 incomplete; you must add 'and quantity also increases.' Another major mistake: confusing which curve SHIFTS vs which direction. Practice: If incomes rise, DEMAND shifts right (not supply left). If costs fall, SUPPLY shifts right (not demand)."
+      }
+    }
     ],
   recall: {
     enabled: true,

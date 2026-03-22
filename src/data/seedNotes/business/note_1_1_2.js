@@ -119,6 +119,24 @@ export const note_business_1_1_2 = {
             "title": "Everyday Example: Local Takeaway",
             "text": "A local pizza shop creates brand value through a recognisable logo, consistent packaging, and a loyalty card scheme. While it cannot match Domino's on scale, strong local branding helps it differentiate from generic rivals and retain repeat customers — the exact same branding principles that large businesses use."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "In Edexcel exams, 'brand identity' often appears in 12-mark questions \u2014 structure your answer: (1) Define brand identity, (2) Explain 5\u20136 elements (logo, colors, tone, values, imagery), (3) Link each to 'how it adds value' (customer loyalty, premium pricing, recognition). Use a real brand case study to anchor your analysis."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse brand identity (internal marker of who the brand is) with brand image (customer perception). Edexcel penalizes this conflation. Also, many fail to explain the BUSINESS VALUE of branding \u2014 it's not just customer recognition; it's a source of competitive advantage enabling price premiums and customer loyalty."
+      }
     }
 ],
   recall: {

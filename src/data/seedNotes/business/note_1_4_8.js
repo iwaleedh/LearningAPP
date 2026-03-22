@@ -223,6 +223,24 @@ export const note_business_1_4_8 = {
         "title": "Student Perspective: Extrinsic vs Intrinsic Revision",
         "text": "Think about your own revision. If you revise mainly because exams are coming and your parents are pressuring you, that's <b>extrinsic motivation</b> — matching Taylor's view that external rewards/threats drive behaviour. If you revise because you find the subject genuinely interesting and want to understand it, that's <b>intrinsic motivation</b> — matching Herzberg's motivators (the work itself). Herzberg would argue that intrinsic motivation produces deeper, longer-lasting learning than cramming for grades alone."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "The Edexcel spec requires all four theories. Examiners test application: Taylor (money) \u2192 factory line, Maslow (hierarchy) \u2192 creative agency needs autonomy, Herzberg (hygiene vs motivation) \u2192 identify what actually drives your sector, McGregor (X vs Y) \u2192 management style choice. Answer: 'which theory applies here?' not 'which is best?'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't mix Taylor with Maslow \u2014 they're fundamentally incompatible. Taylor assumes money alone motivates; Maslow says money only matters until basic needs are met, then esteem and self-actualisation drive. Similarly, don't assume all workers are Theory Y (self-motivated); some genuinely prefer Theory X (clear direction). Show contextual application."
+      }
     }
   ],
   recall: {

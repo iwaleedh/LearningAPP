@@ -117,7 +117,25 @@ export const note_business_1_3_0 = {
       "title": "Student Tip: Game Launches",
       "text": "Think of a new Call of Duty release. The marketing objective at launch is maximum <strong>brand awareness</strong> — trailers, influencer partnerships, midnight launches. By year two (maturity), the objective shifts to <strong>retention</strong> — battle-pass subscriptions and seasonal content to keep existing players spending."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Marketing objectives drive all Unit 3 strategy decisions \u2014 Edexcel tests this heavily. Common objectives: increase market share, build brand awareness, enter new markets, boost customer retention, diversify product range, achieve profit targets. Examiners expect you to LINK objectives to marketing mix decisions: 'If the objective is brand awareness, promotion/advertising strategy should emphasize above-the-line media (TV, digital ads) to reach mass audiences.' Show cause-and-effect."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students list marketing objectives without explaining WHY they're important or HOW they guide strategy. Vague answers like 'the objective is to increase profits' \u2014 too broad for Edexcel. Be specific: 'The objective is to increase market share from 15% to 20% by targeting women aged 25\u201335 with eco-friendly positioning.' Also, many forget that different objectives conflict (market share growth = accept lower margins to undercut competitors; premium positioning = accept lower volume for higher profit per unit)."
+      }
+    }
 ],
   recall: {
     enabled: true,

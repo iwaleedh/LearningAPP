@@ -81,6 +81,24 @@ export const note_business_1_5_3 = {
         title: 'Relatable Example: Local Cafe Owner',
         text: 'Imagine a person who opens a small independent cafe, not with a plan to build a chain, but because they love baking and want control over their own hours. Their motive is a mix of passion (non-financial), independence (pull factor), and earning a living (profit satisficing). They are not trying to maximise profit — they want a satisfactory income that sustains their preferred lifestyle. This is a textbook lifestyle business driven by pull factors.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Examiners expect you to distinguish financial motives (profit, wealth creation) from non-financial motives (independence, belief in product, lifestyle flexibility). Show depth: 'independence' means freedom from corporate politics; 'lifestyle' means choosing hours/location over maximizing profit. Use specific language; avoid 'making money' \u2014 everyone does that."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume income grows immediately \u2014 first-year earnings often lag prior salary due to startup costs and low revenue. Lifestyle entrepreneurs may willingly earn less for flexibility. Risk of business failure means actual expected income = (probability of success \u00d7 profit) + (probability of failure \u00d7 salvage value) \u2014 usually <0 in year 1."
+      }
     }
   ],
   recall: {

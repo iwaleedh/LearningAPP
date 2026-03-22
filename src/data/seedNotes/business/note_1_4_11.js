@@ -217,6 +217,24 @@ export const note_business_1_4_11 = {
         "title": "Student Perspective: Which Teacher Style Works Best for You?",
         "text": "Think about two different teachers: one who tells you exactly what to write, how to structure every answer, and marks you strictly (autocratic) — and one who sets the brief and trusts you to find your own approach (laissez-faire or democratic). Which style produced better results for you? Your answer likely depends on your confidence and experience in the subject — which is precisely the contingency argument: the right leadership style depends on the skill and motivation level of the people being led."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Link leadership style to context: Democratic in knowledge work (software engineers want input), Autocratic in crisis or compliance (military, emergency services), Laissez-faire in highly creative teams (artists, researchers), Paternalistic in traditional/family businesses. Show situational awareness \u2014 'the best style depends on...' scores higher than ranking them."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume Democratic is always 'better' \u2014 it's slow and doesn't suit all workers. Some employees feel empowered by clear direction (Autocratic); others thrive on autonomy. Theory Y (McGregor) assumes workers want responsibility; in reality, some prefer not to. Evaluate fit with workforce psychology and task complexity, not ideology."
+      }
     }
   ],
   recall: {

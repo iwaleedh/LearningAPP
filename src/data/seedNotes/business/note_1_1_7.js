@@ -123,6 +123,24 @@ export const note_business_1_1_7 = {
             "title": "Relatable Example: The School Tuck Shop",
             "text": "A student running a school tuck shop could search government statistics on teenage spending habits or read a free industry article on snack trends. This costs nothing and provides a solid starting point — a classic use of free external secondary research before deciding which products to stock."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "SECONDARY (desk) research is often tested in 6\u20138 mark questions \u2014 list sources (government data, competitor reports, industry journals, census data) and explain WHY each is useful. Edexcel rewards you for evaluating reliability and currency of sources. Remember: secondary research is cost-effective but may be outdated or not tailored to the specific business need."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume secondary research has NO disadvantages \u2014 Edexcel penalizes this. Common mistakes: not mentioning outdated data (statistics from 2020 may not reflect 2024 markets), failing to note that secondary data isn't business-specific (published market data may not fit one firm's needs), and not explaining why firms use BOTH primary and secondary methods (one mitigates the other's weaknesses)."
+      }
     }
 ],
   recall: {

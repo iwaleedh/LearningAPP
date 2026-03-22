@@ -102,6 +102,24 @@ export const note_business_1_5_5 = {
       data: {
         text: 'Entrepreneurs are motivated by a mix of financial goals like profit and wealth, alongside non-financial goals like independence and social impact.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Lifestyle entrepreneurs prioritize flexibility and modest profit; growth entrepreneurs prioritize scaling and profit maximization. These require different strategies: lifestyle entrepreneurs avoid debt and complexity; growth entrepreneurs pursue venture capital and hypergrowth. Show you understand objectives shape structure, hiring, and risk appetite."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Saying 'both matter' is vague. Lifestyle and growth entrepreneurs make opposite choices: lifestyle keeps the business small to maintain control; growth dilutes ownership for expansion capital. These are trade-offs, not compatible goals. Show how a person chooses when they conflict: e.g., 'accept private equity investment (growth) or stay independent (lifestyle).'"
+      }
     }
   ],
   recall: {

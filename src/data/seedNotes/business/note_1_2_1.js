@@ -25,7 +25,25 @@ export const note_business_1_2_1 = {
       { "id": "enr-p-qty-supplied", "type": "callout", "data": { "style": "warning", "title": "Key Term: Quantity Supplied vs Supply", "text": "A change in <strong>price</strong> causes a <em>movement along</em> the supply curve — expressed as a change in <strong>quantity supplied</strong>. Only a change in a non-price factor (costs, technology, taxes, subsidies, shocks) causes the entire <strong>supply curve to shift</strong>. Examiners deduct marks for confusing these two." } },
       { "id": "enr-p-vat", "type": "paragraph", "data": { "text": "A real UK example: the rate of <strong>VAT increased from 17.5% to 20% in January 2011</strong>. This raised the cost of production for all businesses, shifting supply curves to the left across the economy — meaning fewer units were supplied at every given price, putting upward pressure on equilibrium prices." } },
       { "id": "enr-brand-supply", "type": "callout", "data": { "style": "tip", "title": "Real World: Robots in Car Factories", "text": "Toyota, Tesla and Volkswagen have invested heavily in industrial robots to replace manual assembly workers. Automation reduces average labour costs per unit and improves productivity. The result: supply curves for cars shift to the right — more vehicles are produced at any given price, applying downward pressure on prices." } },
-      { "id": "enr-stud-supply", "type": "callout", "data": { "style": "worked", "title": "Student Example: Local Pizza Shop", "text": "If a pizza shop cuts its delivery prices in winter, this causes a downward movement along the supply curve (less quantity supplied at a lower price) — not a shift. However, if the shop upgrades to an e-bike cutting fuel costs, the entire supply curve shifts right as production becomes cheaper at every output level." } }
+      { "id": "enr-stud-supply", "type": "callout", "data": { "style": "worked", "title": "Student Example: Local Pizza Shop", "text": "If a pizza shop cuts its delivery prices in winter, this causes a downward movement along the supply curve (less quantity supplied at a lower price) — not a shift. However, if the shop upgrades to an e-bike cutting fuel costs, the entire supply curve shifts right as production becomes cheaper at every output level." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "SUPPLY = quantity firms are willing/able to produce at various prices. KEY DETERMINANTS for Edexcel: production costs, technology, competitor actions, government taxes/subsidies, expectations. When questions ask 'why did supply shift right?', answer with ONE factor: 'Technology improved, reducing costs, so firms produce more at each price.' Learn to draw supply curve shifts and label clearly \u2014 examiners award marks for correct diagrams."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students mix up SHIFT vs MOVEMENT along the curve: price change = movement along curve (no shift); technology/cost change = shift of curve. Edexcel penalizes this distinction heavily. Also, many forget supply curves slope UPWARD (price \u2191, quantity supplied \u2191) \u2014 opposite to demand. Another common error: assuming costs always decrease (they can increase due to inflation, labor shortages, raw material scarcity)."
+      }
+    }
     ],
   recall: {
     enabled: true,

@@ -129,7 +129,25 @@ export const note_business_1_3_4 = {
       "title": "Student Tip: Buying a Phone",
       "text": "When you buy a phone directly from Apple.com (two-stage: manufacturer → consumer), Apple keeps the full margin and owns the customer relationship. When you buy the same phone from Currys (three-stage: manufacturer → retailer → consumer), Currys takes a cut. This is why B2C brands increasingly shift towards direct-to-consumer channels to increase profitability."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "B2B (Business-to-Business) = long sales cycles, relationship-focused, high-value transactions, multiple decision-makers. B2C (Business-to-Consumer) = short sales cycles, transaction-focused, lower unit values, emotional purchase drivers. Edexcel expects comparison essays using this framework: B2B promotion emphasizes technical detail (whitepapers, trade shows); B2C emphasizes lifestyle/emotion (social media, celebrity endorsement). Price: B2B = negotiation; B2C = list prices. Link approach to business model."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students claim 'B2B is more professional, B2C is more fun' \u2014 vague and wrong. Edexcel rewards rigorous distinctions. Reality: B2B relationships require trust-building; B2C requires mass reach and emotional resonance. Another error: assuming B2B customers are purely rational (they're not \u2014 corporate buyers have budget pressures, political motivations, career risks). Many candidates ignore that companies can operate in BOTH markets (e.g., Microsoft sells to enterprise AND consumers via Xbox)."
+      }
+    }
 ],
   recall: {
     enabled: true,

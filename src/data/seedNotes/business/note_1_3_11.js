@@ -93,7 +93,25 @@ export const note_business_1_3_11 = {
       "title": "Student Example: Comparing Phone Contracts",
       "text": "When choosing a mobile contract, most students use comparison sites (Uswitch, MoneySuperMarket). EE and Vodafone know this and respond with bundled offers — free gifts, extra data — rather than simply dropping prices. This shows that businesses operating in transparent digital markets compete on value-added bundles, not just price, to avoid destructive price wars."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Digital technology and price comparison sites (Google Shopping, Kayak, Autotrader) create price transparency \u2014 prices must be competitive or customers defect instantly. Edexcel expects you to explain the impact: (1) Price competition intensifies (prices converge downward), (2) Distribution democratizes (small firms reach global customers), (3) Data collection shifts (companies track consumer behavior online), (4) Direct sales bypass retailers. Link tech changes to strategic responses (omnichannel, value-add services, brand loyalty)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates oversimplify: 'Digital tech reduces prices, so business profits fall.' Reality is more complex \u2014 yes, price competition increases, but tech also creates new profit opportunities (data monetization, customer insights, operational efficiency). Another error: assuming all sectors are equally disrupted (flight booking is decimated by comparison sites; luxury goods are less affected due to service/experience components). Edexcel rewards context-specific analysis, not blanket tech-pessimism."
+      }
+    }
 ],
   recall: {
     enabled: true,

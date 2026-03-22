@@ -28,7 +28,25 @@ export const note_business_1_2_6 = {
       { id: 'enr-t2b-yed-cycle', type: 'callout', data: { style: 'key', title: 'The Business Cycle and YED', text: 'The economy moves through cycles of recession and growth, meaning consumer incomes fluctuate over time. In a recession: wages fall — demand for inferior goods rises while demand for luxuries falls. During growth: wages rise — demand for luxuries increases as consumers trade up. Other factors affecting YED include minimum wage legislation, changes in taxation, and shifts in international trade.' } },
       { id: 'enr-t2b-yed-portfolio', type: 'callout', data: { style: 'key', title: 'Product Portfolio Planning by YED', text: 'Resilient businesses hold products across multiple YED levels:\n• Tesco offers "Tesco Finest" (luxury, YED > 1), standard and "Everyday Value" (inferior) ranges to appeal to all income segments.\n• Volkswagen Group owns Skoda (budget), VW (mid-range), Audi (premium) and Porsche (luxury) — targeting consumers at every income level to remain stable across the business cycle.' } },
       { id: 'enr-t2b-yed-brand', type: 'callout', data: { style: 'tip', title: 'Real World: 2008 Recession — Aldi, Lidl and Waitrose', text: 'During the 2008 financial crisis, household incomes fell sharply. Discount grocers Aldi and Lidl — whose own-label goods are inferior goods (negative YED) — saw major sales increases as consumers traded down. Meanwhile, Waitrose launched an "Essentials" budget range to retain shoppers who still valued quality but needed lower prices.' } },
-      { id: 'enr-t2b-yed-student', type: 'callout', data: { style: 'tip', title: 'Student Example: The Family Pay Rise', text: 'Imagine your parents receive a significant pay rise. The family switches from supermarket own-brand cereal to Kellogg branded cereal (normal good, positive YED), and from a domestic holiday to a trip abroad (luxury, YED > 1). Meanwhile, demand for budget value ready-meals falls (inferior good, negative YED). Income changes ripple through purchasing decisions across the entire household.' } }
+      { id: 'enr-t2b-yed-student', type: 'callout', data: { style: 'tip', title: 'Student Example: The Family Pay Rise', text: 'Imagine your parents receive a significant pay rise. The family switches from supermarket own-brand cereal to Kellogg branded cereal (normal good, positive YED), and from a domestic holiday to a trip abroad (luxury, YED > 1). Meanwhile, demand for budget value ready-meals falls (inferior good, negative YED). Income changes ripple through purchasing decisions across the entire household.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "YED formula: (% change in quantity demanded) \u00f7 (% change in income). Key classifications for Edexcel: YED > +1 = luxury goods (income-elastic); 0 < YED < +1 = normal goods; YED < 0 = inferior goods (income-inelastic). Examiners reward real-world examples: luxury cars (YED > 1) vs bread (YED close to 0) vs beans/discount brands (YED < 0). This concept links to business strategy (growth vs recession planning)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse YED (income elasticity) with PED (price elasticity) or forget that YED can be negative. Another error: assuming all luxury goods have high YED or all cheap goods have low YED \u2014 reality is more nuanced (luxury goods = luxury hotels YED 2; basic hotels YED 0.8). Edexcel penalizes vague answers like 'YED is positive so it's normal' \u2014 quantify by how much (is it 0.2 or 2.0? Both are normal but behave differently)."
+      }
+    }
     ],
   recall: {
     enabled: true,

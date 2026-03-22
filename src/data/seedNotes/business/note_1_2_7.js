@@ -22,7 +22,25 @@ export const note_business_1_2_7 = {
       { id: 'enr-t2b-tr-elastic', type: 'callout', data: { style: 'worked', title: 'Worked Example: Elastic Demand and Revenue', text: 'A firm cuts its price by 10%. PED is -2.5 (price elastic).\nStep 1: % change in QD = -2.5 × -10% = +25%\nStep 2: Original TR = 100 units × £10 = £1,000. After cut: 125 units × £9 = £1,125\nConclusion: Because demand is price elastic, the large gain in volume more than compensates for the lower unit price — Total Revenue RISES by £125.' } },
       { id: 'enr-t2b-tr-strategy', type: 'paragraph', data: { text: 'Businesses use PED data to select the most effective pricing strategy. <strong>Price skimming</strong> — charging a high initial price — suits products with price inelastic demand (e.g. new iPhone launches or essential medicines). <strong>Penetration pricing</strong> — charging a low price to rapidly win market share — suits products with price elastic demand, where a lower price attracts a proportionally larger rise in sales volume, boosting Total Revenue.' } },
       { id: 'enr-t2b-tr-brand', type: 'callout', data: { style: 'tip', title: 'Real World: Petrol Companies', text: 'Petrol has very few short-run substitutes — most drivers cannot quickly switch to an electric vehicle or public transport. When oil prices spiked in 2022, BP and Shell passed on cost increases to consumers yet still recorded rising total revenues, because the percentage fall in quantity demanded was far smaller than the percentage rise in price. This illustrates price inelastic demand in action.' } },
-      { id: 'enr-t2b-tr-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Always State Both Effects', text: 'When discussing the impact of a price change on total revenue, always identify TWO opposing effects: (1) Price effect — more or less earned per unit; (2) Volume effect — more or fewer units sold. Then state which effect dominates, based on whether demand is price elastic or price inelastic.' } }
+      { id: 'enr-t2b-tr-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Always State Both Effects', text: 'When discussing the impact of a price change on total revenue, always identify TWO opposing effects: (1) Price effect — more or less earned per unit; (2) Volume effect — more or fewer units sold. Then state which effect dominates, based on whether demand is price elastic or price inelastic.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel tests the revenue relationship: Price \u00d7 Quantity = Total Revenue. For elastic demand (|PED| > 1), price cuts INCREASE revenue (quantity gain outweighs price loss). For inelastic demand (|PED| < 1), price INCREASES boost revenue. Examiners expect you to use PED to PREDICT revenue changes before calculating: 'Product has PED = 2 (elastic), so a 10% price decrease will increase quantity by 20%, raising revenue.' Show this logic, not just the math."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume 'lower prices always increase revenue' \u2014 only true for elastic demand. For inelastic goods (e.g., petrol, tobacco), raising price increases revenue while sales volume drops slightly. Edexcel marks essays where candidates claim 'lower prices = higher revenue' for ALL products as incorrect. Also, many forget that price elasticity changes along the demand curve \u2014 a product elastic at high prices may be inelastic at low prices."
+      }
+    }
     ],
   recall: {
     enabled: true,

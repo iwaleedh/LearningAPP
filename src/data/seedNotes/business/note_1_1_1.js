@@ -129,6 +129,24 @@ export const note_business_1_1_1 = {
             "title": "Everyday Example: Market Stall",
             "text": "Imagine a farmers' market with 8 stalls, together generating £2,000 on a Saturday. If one stall earns £500, its market share = (500 ÷ 2,000) × 100 = 25%. This mirrors exactly how large businesses calculate and track their competitive position."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel exam questions often mix market size, share, and brand value calculations \u2014 show working clearly. Use the formulas: Market share (%) = (Business sales \u00f7 Total market sales) \u00d7 100. Examiners award method marks for correct steps even if final answer is wrong. Always state your assumptions if data is incomplete."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse market size (total value of entire market) with market share (one firm's portion). Common error: forgetting to multiply by 100 for percentages, or using revenue instead of volume. In Edexcel papers, always check units (\u00a3m, \u00a3bn, millions of units) \u2014 marks are lost for incorrect units in final answers."
+      }
     }
 ],
   recall: {

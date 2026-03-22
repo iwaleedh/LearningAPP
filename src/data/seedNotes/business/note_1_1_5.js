@@ -131,6 +131,24 @@ export const note_business_1_1_5 = {
             "title": "Everyday Example: School Pop-Up Shop",
             "text": "A student setting up a pop-up shop selling revision cards faces both risk (e.g. a 20% estimated probability of equipment failure — a calculable, insurable risk) and uncertainty (e.g. whether the school will suddenly ban commercial activity on site — completely unpredictable). Planning for risks is straightforward; uncertainty demands flexibility and backup plans."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "This is a frequently confused topic \u2014 Edexcel requires precise definitions: Risk = known probability distribution (e.g., 30% chance of loss); Uncertainty = unknown probabilities (new market entry). Examiners expect you to use examples: market research data = reduces uncertainty; competitor action = introduces new risk. Use correct terminology in essays."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students use 'risk' and 'uncertainty' interchangeably \u2014 Edexcel marks this wrong. A common error is claiming 'risk can be eliminated' (it can be mitigated, not eliminated). Also, candidates don't explain why businesses care about the distinction (uncertainty requires different strategies like contingency planning; risk can be managed via insurance or probability analysis)."
+      }
     }
 ],
   recall: {

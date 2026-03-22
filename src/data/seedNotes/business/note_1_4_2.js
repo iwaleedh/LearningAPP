@@ -164,6 +164,24 @@ export const note_business_1_4_2 = {
         title: 'Relatable Example — School Hierarchy',
         text: 'A school has a clear <b>tall structure</b>: head teacher → deputy heads → heads of department → teachers → teaching assistants. Each level has a defined span of control. If two schools merged and removed one layer of management — say, assistant headteacher roles — those role-holders would be made <b>redundant</b>. The restructuring drove the redundancy, not any fault of the individuals. This is the real-world link between organisational design and redundancy law.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel exam questions often ask 'how could the business avoid an unfair dismissal claim?' Focus on fair procedures: written warning, investigation period, right to appeal, and documentation. Show that you understand legal risk and mitigation; examiners reward practical awareness of employment law."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Redundancy \u2260 Dismissal. Redundancy occurs when the job ceases to exist (not the employee); dismissal is ending employment due to misconduct or capability. Confusing these costs marks \u2014 redundancy requires compensation, but dismissal for misconduct may not. Know the legal distinction and cost implications."
+      }
     }
   ],
   recall: {

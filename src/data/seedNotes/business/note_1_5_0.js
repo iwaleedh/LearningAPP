@@ -89,6 +89,24 @@ export const note_business_1_5_0 = {
         title: 'Relatable Example: Student Food Instagram',
         text: 'A student who launches a food Instagram page is performing every core entrepreneur role on a small scale: they organise resources (time, a phone, photography skills), make decisions (content strategy, posting schedule), innovate (trending video formats), and take a risk that the time invested may not result in brand sponsorships. This mirrors the four functions of an entrepreneur perfectly.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Entrepreneurship = innovation + risk-taking + resource assembly, not just 'running a business.' Distinguish from management: managers execute existing strategy; entrepreneurs create new ventures and bear uncertainty. Edexcel expects you to define precisely and show you understand the unique characteristics and personal qualities required."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't overstate success rates \u2014 approximately 50% of new businesses fail within 5 years. Avoid romanticizing entrepreneurship; it's high-risk with no guaranteed income, long working hours, and psychological stress. Show critical evaluation: entrepreneurship suits some temperaments and contexts, not everyone. Acknowledge selection bias in 'success stories.'"
+      }
     }
   ],
   recall: {

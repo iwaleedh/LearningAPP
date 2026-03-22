@@ -21,7 +21,25 @@ export const note_business_1_2_8 = {
       { id: 'enr-t2b-prc-time', type: 'callout', data: { style: 'key', title: 'Short Run vs Long Run Elasticity', text: 'In the short run, demand tends to be more price inelastic — consumers have not yet had time to find alternatives. Over time, demand becomes more price elastic as substitutes are discovered and habits change. When petrol prices rose sharply in 2022, most drivers had few immediate options. Over subsequent years, however, many switched to electric vehicles or changed commuting patterns — showing demand becoming more elastic in the long run.' } },
       { id: 'enr-t2b-prc-brand-loyalty', type: 'paragraph', data: { text: 'One powerful way firms make demand more price inelastic is through heavy investment in <strong>branding and advertising</strong>. A strong brand creates emotional attachment and switching costs, meaning consumers are less likely to change supplier when prices rise. This is why companies such as Coca-Cola, Nike and Apple spend billions annually on marketing — it directly strengthens their pricing power and protects total revenue from being eroded by price-sensitive competition.' } },
       { id: 'enr-t2b-prc-apple', type: 'callout', data: { style: 'tip', title: 'Real World: Apple iPhone', text: 'Apple iPhone benefits from some of the most price inelastic demand of any consumer product, driven by ecosystem lock-in: users store data in iCloud, own AirPods, sync Apple Watch, and rely on iOS apps. Switching to Android means losing all of this. As a result, Apple has steadily raised iPhone prices (from £699 in 2019 to over £999 by 2024) yet global sales remain strong — a textbook example of exploiting inelastic demand to maximise total revenue.' } },
-      { id: 'enr-t2b-prc-student', type: 'callout', data: { style: 'tip', title: 'Student Example: Spotify Premium', text: 'If you rely on Spotify Premium for saved playlists, offline listening and podcast history, you will likely stay subscribed even if the monthly price rises slightly — particularly if your music library is there (inelastic in the short run). But if prices double, you might eventually switch to Apple Music or YouTube Premium (more elastic in the long run). This is precisely why Spotify raises prices gradually rather than all at once.' } }
+      { id: 'enr-t2b-prc-student', type: 'callout', data: { style: 'tip', title: 'Student Example: Spotify Premium', text: 'If you rely on Spotify Premium for saved playlists, offline listening and podcast history, you will likely stay subscribed even if the monthly price rises slightly — particularly if your music library is there (inelastic in the short run). But if prices double, you might eventually switch to Apple Music or YouTube Premium (more elastic in the long run). This is precisely why Spotify raises prices gradually rather than all at once.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel expects 'evaluate elasticity for strategic pricing' questions (8\u201312 marks). Framework: (1) Calculate/identify PED, (2) Interpret elasticity (elastic vs inelastic), (3) Recommend pricing strategy (e.g., elastic demand \u2192 competitive pricing strategy; inelastic \u2192 premium pricing), (4) Link to revenue/profit impact. Examiners reward strategic context \u2014 'If we have inelastic demand, raising price by 5% will reduce quantity by <2%, boosting profit margin significantly.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates ignore context and claim 'elastic = always bad' or 'inelastic = always good' \u2014 wrong. Reality depends on firm strategy and costs. High-elasticity markets can generate volume profits; low-elasticity markets support premium strategies. Edexcel penalizes lack of nuance. Also, many fail to consider other factors beyond elasticity (competitor actions, costs, brand strength) \u2014 elasticity alone doesn't determine pricing strategy, it informs it."
+      }
+    }
     ],
   recall: {
     enabled: true,

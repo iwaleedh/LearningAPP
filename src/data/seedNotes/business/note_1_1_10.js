@@ -114,6 +114,24 @@ export const note_business_1_1_10 = {
             "title": "Relatable Example: The Local Barber",
             "text": "Imagine a town with several barbers — some budget 'walk-in' shops, some mid-range salons, but nobody specialising in high-quality fade cuts for young men. A skilled barber who maps this gap and positions themselves as premium-priced but technically excellent in fades is exploiting a genuine market niche identified through market mapping."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Market maps are critical in Edexcel Unit 1 \u2014 always label axes clearly with relevant attributes (price vs quality, innovation vs tradition, etc.). The examiner expects you to identify 'gaps' and 'crowded zones' on the map and explain positioning strategy. Practice plotting products from real case studies to develop exam speed."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Many students plot products incorrectly on the market map or forget to label axes with what the axes represent (e.g., 'Price' isn't enough \u2014 specify 'Premium Price vs Budget Price'). Also, students fail to link the map to strategy \u2014 the map must show WHY a product is positioned there, not just WHERE it sits."
+      }
     }
 ],
   recall: {

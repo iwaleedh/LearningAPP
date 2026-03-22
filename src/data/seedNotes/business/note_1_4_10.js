@@ -219,6 +219,24 @@ export const note_business_1_4_10 = {
         "title": "Student Perspective: Assigned vs Self-Chosen Essay",
         "text": "Think about the last time your teacher assigned a specific essay title vs the last time you chose your own topic. Which essay did you put more effort into? Research consistently shows students produce higher-quality work when given autonomy over the topic — this is empowerment in education. Herzberg would explain it through motivators: when you choose the topic, you experience <i>interest in the work itself</i>. When the title is forced, you work mainly to avoid a poor grade — a hygiene factor, not a motivator."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Link each method to motivation theory: empowerment and delegation satisfy McGregor's Theory Y and Maslow's esteem/self-actualisation needs; job rotation prevents boredom in routine work; teamwork satisfies belonging needs. Show you understand the 'why' behind each method, not just definitions. Examiners reward theory-practice integration."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Flexible working looks universally positive but creates hidden costs: home workers miss informal mentoring and promotion visibility; job rotation requires retraining time; empowerment fails if employees lack skills or confidence. Don't assume non-financial methods are 'better' than financial \u2014 they complement, never replace, fair wages."
+      }
     }
   ],
   recall: {

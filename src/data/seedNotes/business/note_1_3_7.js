@@ -116,7 +116,25 @@ export const note_business_1_3_7 = {
       "title": "Student Example: School Market Stall",
       "text": "A student selling homemade cakes at a school market stall suits BTL tactics: free samples (pull), a loyalty card (10th cake free), and personal selling. These low-cost targeted methods are far more appropriate than paying for a radio ad — demonstrating that promotional mix choices must match budget and audience scale."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Promotion methods split into Above-the-Line (TV, radio, print, digital ads \u2014 broad reach, impersonal) and Below-the-Line (PR, sponsorship, direct mail, in-store displays \u2014 targeted, personal). Edexcel tests via 'recommend promotion strategy' questions \u2014 expect you to justify channel choice: 'New product launch needs broad awareness (above-the-line TV) to reach mass audience quickly. Budget \u00a32m on TV, digital, and press for 3 months.' Show budget allocation and reach calculations."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students recommend promotion without justifying cost-effectiveness or reach. Saying 'use Facebook advertising' is weak; Edexcel wants: 'Facebook targets 18\u201335 female professionals with household income \u00a340k+, matching our niche market perfectly at \u00a30.50 cost-per-click.' Another error: ignoring channel integration (omnichannel = all channels tell consistent brand story) or assuming one channel fits all demographics (TV reaches older audiences; TikTok reaches Gen Z)."
+      }
+    }
 ],
   recall: {
     enabled: true,

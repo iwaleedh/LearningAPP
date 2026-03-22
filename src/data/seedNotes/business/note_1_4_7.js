@@ -181,6 +181,24 @@ export const note_business_1_4_7 = {
         "title": "Student Perspective: Delegating vs Empowering a Football Team",
         "text": "Imagine you're captain of a football team. <b>Delegation:</b> you tell each player exactly which position to play and what to do at every set-piece — you carry all the tactical decisions yourself. <b>Empowerment:</b> you give players the freedom to adjust their positions during the game and make real-time calls — you trust their judgement. Delegation produces compliance. Empowerment produces initiative. The exam tests whether you can explain this difference clearly and link it to motivation theory."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Delayering reduces management layers to cut cost and speed communication, but examiners expect you to flag risks: loss of middle-management expertise, fewer promotion opportunities reduce retention, and remaining managers overstretched. Show balanced evaluation of cost savings vs operational risk."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Span of control too wide causes poor supervision and low morale; too narrow wastes money on excess managers. Don't just list concepts \u2014 show the trade-off. A span of 5 (narrow) = slow but clear; span of 15 (wide) = fast but risky. Context matters: span of 15 works for routine roles (call centre) not skilled roles (engineers)."
+      }
     }
   ],
   recall: {

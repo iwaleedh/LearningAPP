@@ -81,6 +81,24 @@ export const note_business_1_5_2 = {
         title: 'Relatable Example: Student Selling Revision Notes',
         text: 'A student who wants to sell revision note packs online faces real barriers: they need a payment platform (access to finance), they must navigate copyright rules around exam board content (legal barriers), they risk putting in hours of work without guaranteed sales (fear of failure), and they may lack marketing skills to reach buyers (lack of know-how). Recognising these barriers is the first step to overcoming them.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Tailor barriers to sector: pharmaceuticals face IP and regulatory barriers; ice cream faces minimal barriers. Capital requirements, economies of scale, brand loyalty, and supplier power vary by industry. Examiners expect you to analyze which barriers apply specifically, not list generically. Evaluate which barriers are highest-cost to overcome."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume capital is the only barrier \u2014 brand loyalty (e.g., Coca-Cola in soft drinks) and supplier contracts (exclusive distribution deals) can be as or more restrictive. Also, some barriers can be bypassed: low-cost airlines didn't compete on infrastructure (planes exist), just on cost model. Show strategic thinking about barrier bypass routes."
+      }
     }
   ],
   recall: {

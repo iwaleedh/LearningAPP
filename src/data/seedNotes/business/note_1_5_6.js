@@ -114,6 +114,24 @@ export const note_business_1_5_6 = {
       data: {
         text: 'Business objectives guide strategy; startups typically focus on survival before transitioning to profit maximization, market share growth, or social goals.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Business objectives evolve over the lifecycle: startups chase survival (positive cash flow); growth phase pursues market share; mature businesses optimize profit or diversify. Show you understand objectives shape strategy: a startup risks unprofitability for growth; mature firms sacrifice growth for stability. Context drives objectives."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume profit maximization is always the objective \u2014 many businesses satisfy (profit 'enough'), pursue social impact (social enterprises), or optimize for shareholder returns (dividends over reinvestment). Different objectives imply different metrics and strategies. Show you distinguish between stated objectives and revealed preferences (how firms actually allocate capital)."
+      }
     }
   ],
   recall: {

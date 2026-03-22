@@ -98,6 +98,24 @@ export const note_business_1_1_8 = {
             "title": "Relatable Example: The School Canteen Survey",
             "text": "A school council wanting to reshape the canteen menu would be unable to ask every student. Instead, it could use quota sampling — ensuring the sample reflects the school's year-group breakdown — to gather representative views from, say, 50 students rather than 1,000."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Edexcel tests sampling methods (simple random, stratified, quota, purposive) with 'evaluate' questions. Examiners expect you to: (1) Name the method, (2) Explain how it works, (3) State when it's appropriate, (4) Identify bias risks. Key insight: Simple random is unbiased but may miss key segments; stratified ensures representation but is complex; quota is practical for retail but prone to bias."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse sampling methods or claim 'random sampling is always best' \u2014 wrong. Edexcel rewards context-specific analysis: for a retail survey, quota sampling is faster and cheaper (though slightly biased) than random sampling. Candidates often ignore sample size impact \u2014 larger samples = more representative but higher cost. Always weigh trade-offs."
+      }
     }
 ],
   recall: {

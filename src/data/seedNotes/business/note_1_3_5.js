@@ -108,7 +108,25 @@ export const note_business_1_3_5 = {
       "title": "Student Tip: Starbucks Rewards",
       "text": "The Starbucks Rewards app awards 'Stars' with every purchase; enough Stars earns a free drink. The app also sends personalised offers based on your order history — if you always order iced lattes, you'll receive iced drink promotions. This combines three loyalty tools in one: a <strong>reward scheme</strong>, <strong>digital personalisation</strong>, and a <strong>direct communication channel</strong>."
     }
-  }
+  },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Customer loyalty methods for Edexcel: loyalty schemes (points, rewards), exceptional customer service, brand consistency, community building, personalization. Examiners expect evaluation of ROI: loyalty schemes cost money (discounts, admin) but increase customer lifetime value (repeat purchases, word-of-mouth, reduced churn). Framework: Measure loyalty by retention rates, repeat purchase frequency, Net Promoter Score. Link loyalty strategy to competitive advantage."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume 'loyalty programs always work' \u2014 many fail due to poor design (too complex, low rewards, no emotional engagement). Edexcel penalizes this assumption. Another error: confusing transactional loyalty (points-based) with relational loyalty (emotional brand connection) \u2014 relational loyalty is stronger (brand advocates) but harder to build. Also, many ignore that loyalty = cost (discounts = lower margin), so companies must balance loyalty spending vs profitability."
+      }
+    }
 ],
   recall: {
     enabled: true,
