@@ -70,7 +70,25 @@ export const note_chemistry_2_10_10 = {
             type: 'paragraph',
             data: { text: '<strong>Greenhouse Gases:</strong> Gases like H₂O, CO₂, CO, and CH₄ are greenhouse gases because their bonds strongly absorb the infrared radiation being radiated back from the Earth\'s surface. This trapped vibrational energy heats up the atmosphere.' },
             terms: ['Greenhouse gases']
-        }
+        }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Wavenumber Ranges",
+        "text": "Always quote the exact wavenumber ranges from your data booklet when identifying bonds from an IR spectrum (e.g., O-H stretch at 3200-3600 cm^-1 for alcohols)."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Wavenumber Ranges",
+        "text": "Always quote the exact wavenumber ranges from your data booklet when identifying bonds from an IR spectrum (e.g., O-H stretch at 3200-3600 cm^-1 for alcohols)."
+      }
+    }
     ],
     recall: {
         enabled: true,

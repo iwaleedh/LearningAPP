@@ -60,6 +60,24 @@ export const note_biology_1_2_15 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='60' width='260' height='20' fill='#1e293b'/><rect x='140' y='50' width='20' height='40' fill='#e53e3e'/><line x1='130' y1='40' x2='170' y2='100' stroke='black' stroke-width='3'/><line x1='170' y1='40' x2='130' y2='100' stroke='black' stroke-width='3'/><text x='125' y='45' font-size='10' fill='#c53030'>Mutated</text><text x='160' y='125' font-size='12' font-weight='bold' fill='#2b6cb0'>Cl⁻ trapped inside</text><rect x='20' y='10' width='260' height='30' fill='#44370a' opacity='0.7'/><text x='30' y='30' font-size='10' font-weight='bold' fill='#b7791f'>Thick Sticky Mucus (No water diffusion)</text></svg>",
             "caption": "Mutated CFTR (Cystic Fibrosis)"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "CFTR Explanation Step-by-Step",
+        "text": "A mutated CFTR channel cannot pump chloride ions out of the cell. As a result, the water potential outside doesn't lower, so water does not leave the cells by osmosis, resulting in thick, sticky mucus."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "CFTR Explanation Step-by-Step",
+        "text": "A mutated CFTR channel cannot pump chloride ions out of the cell. As a result, the water potential outside doesn't lower, so water does not leave the cells by osmosis, resulting in thick, sticky mucus."
+      }
     }
   ],
   "recall": {

@@ -53,6 +53,24 @@ export const note_biology_1_2_6 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='30' width='80' height='100' fill='none' stroke='#38a169' stroke-width='4'/><rect x='45' y='35' width='70' height='90' fill='#0a2e1a' stroke='#2f855a' stroke-width='2'/><text x='45' y='20' font-size='10'>Turgid (Dilute Solute)</text><rect x='180' y='30' width='80' height='100' fill='none' stroke='#38a169' stroke-width='4'/><polygon points='190,40 250,50 240,110 200,120' fill='#0a2e1a' stroke='#2f855a' stroke-width='2'/><text x='180' y='20' font-size='10'>Plasmolysed (Conc. Solute)</text></svg>",
             "caption": "Plasmolysis in Plant Cell"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Water Potential",
+        "text": "Never say water moves from a 'high concentration' to a 'low concentration'. Say it moves from a region of higher (less negative) water potential to lower (more negative) water potential."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Water Potential",
+        "text": "Never say water moves from a 'high concentration' to a 'low concentration'. Say it moves from a region of higher (less negative) water potential to lower (more negative) water potential."
+      }
     }
   ],
   "recall": {

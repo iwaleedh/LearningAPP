@@ -50,6 +50,24 @@ export const note_biology_1_2_12 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,40 L150,40' fill='none' stroke='#3182ce' stroke-width='4'/><path d='M50,60 L150,60' fill='none' stroke='#e53e3e' stroke-width='4'/><path d='M200,40 L300,40' fill='none' stroke='#e53e3e' stroke-width='4'/><path d='M200,60 L300,60' fill='none' stroke='#3182ce' stroke-width='4'/><text x='70' y='90' font-size='12'>Helix 1</text><text x='220' y='90' font-size='12'>Helix 2</text><text x='110' y='130' font-size='10' font-weight='bold'>1 Original Strand (Blue), 1 New Strand (Red)</text></svg>",
             "caption": "Semi-Conservative Result"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Semi-Conservative Replication",
+        "text": "Define this as: each replicated DNA molecule contains one original 'parent' strand and one newly synthesised strand. Examiners look for these exact terms."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Semi-Conservative Replication",
+        "text": "Define this as: each replicated DNA molecule contains one original 'parent' strand and one newly synthesised strand. Examiners look for these exact terms."
+      }
     }
   ],
   "recall": {

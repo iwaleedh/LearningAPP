@@ -53,6 +53,24 @@ export const note_biology_1_2_7 = {
             "svg": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><text x='50' y='50' font-size='14'>Amino Acid 1 + Amino Acid 2</text><path d='M100,70 L200,70' fill='none' stroke='#4a5568' stroke-width='2' marker-end='url(#arrow)'/><text x='120' y='90' font-size='10' fill='#3182ce'>Condensation (-H₂O)</text><rect x='220' y='35' width='120' height='30' fill='#1e293b' rx='5'/><text x='230' y='55' font-size='12' font-weight='bold'>Dipeptide</text><text x='250' y='80' font-size='10' fill='#e53e3e'>Peptide Bond (C-N)</text></svg>",
             "caption": "Peptide Bond Formation"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "Peptide Bond Formation",
+        "text": "Always specify that a peptide bond is formed by a condensation reaction between the amine group (-NH2) of one amino acid and the carboxyl group (-COOH) of another, releasing a molecule of water."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "Peptide Bond Formation",
+        "text": "Always specify that a peptide bond is formed by a condensation reaction between the amine group (-NH2) of one amino acid and the carboxyl group (-COOH) of another, releasing a molecule of water."
+      }
     }
   ],
   "recall": {

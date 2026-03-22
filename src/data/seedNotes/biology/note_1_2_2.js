@@ -50,6 +50,24 @@ export const note_biology_1_2_2 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='50' width='200' height='50' fill='#44370a' stroke='#b7791f'/><circle cx='100' cy='75' r='5' fill='#38a169'/><circle cx='130' cy='65' r='5' fill='#38a169'/><circle cx='180' cy='85' r='5' fill='#38a169'/><text x='60' y='40' font-size='12' font-weight='bold'>Thick Sticky Mucus</text><text x='60' y='20' font-size='10'>Cilia unable to beat away bacteria</text></svg>",
             "caption": "Trapped Pathogens in CF"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Cystic Fibrosis Mechanism",
+        "text": "State clearly that thick, sticky mucus physically blocks the airways, which reduces the effective surface area for gas exchange and increases the diffusion pathway."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Cystic Fibrosis Mechanism",
+        "text": "State clearly that thick, sticky mucus physically blocks the airways, which reduces the effective surface area for gas exchange and increases the diffusion pathway."
+      }
     }
   ],
   "recall": {

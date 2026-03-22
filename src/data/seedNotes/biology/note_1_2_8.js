@@ -59,6 +59,24 @@ export const note_biology_1_2_8 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M50,100 Q80,20 150,70 T250,50' fill='none' stroke='#4a5568' stroke-width='4'/><line x1='80' y1='50' x2='120' y2='80' stroke='#e53e3e' stroke-width='4'/><text x='65' y='45' font-size='10' fill='#c53030'>Disulfide Bridge</text><line x1='160' y1='80' x2='190' y2='60' stroke='#3182ce' stroke-width='2' stroke-dasharray='4'/><text x='160' y='100' font-size='10' fill='#2b6cb0'>Ionic Bond</text><line x1='210' y1='55' x2='230' y2='90' stroke='#38a169' stroke-width='2' stroke-dasharray='2'/><text x='200' y='110' font-size='10' fill='#2f855a'>Hydrogen Bond</text></svg>",
             "caption": "Tertiary Structure Bonds"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Tertiary Bonds",
+        "text": "When listing bonds maintaining tertiary structure, be specific: state hydrogen bonds, ionic bonds, and disulfide bridges (which only form between cysteine R-groups)."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Tertiary Bonds",
+        "text": "When listing bonds maintaining tertiary structure, be specific: state hydrogen bonds, ionic bonds, and disulfide bridges (which only form between cysteine R-groups)."
+      }
     }
   ],
   "recall": {

@@ -65,6 +65,24 @@ export const note_biology_1_2_13 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='90' width='250' height='10' fill='#e53e3e'/><ellipse cx='150' cy='100' rx='60' ry='30' fill='#1e293b' stroke='#a0aec0'/><text x='125' y='125' font-size='12'>Ribosome</text><path d='M130,50 L140,70 L150,50 Z' fill='#f6ad55'/><circle cx='140' cy='30' r='10' fill='#9f7aea'/><text x='155' y='35' font-size='10'>Amino Acid</text><text x='60' y='115' font-size='10' fill='#c53030'>mRNA</text><text x='100' y='65' font-size='10'>tRNA</text></svg>",
             "caption": "Translation (tRNA & Ribosome)"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Translation vs Transcription",
+        "text": "Do not mix these up. Transcription happens in the nucleus to produce mRNA. Translation happens at the ribosomes where tRNA brings specific amino acids with matching anticodons."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Translation vs Transcription",
+        "text": "Do not mix these up. Transcription happens in the nucleus to produce mRNA. Translation happens at the ribosomes where tRNA brings specific amino acids with matching anticodons."
+      }
     }
   ],
   "recall": {

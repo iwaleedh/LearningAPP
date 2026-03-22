@@ -72,6 +72,24 @@ export const note_biology_1_2_0 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><path d='M30,30 L30,120 M70,30 L70,120' stroke='#a0aec0' stroke-width='2'/><circle cx='10' cy='75' r='5' fill='#e53e3e'/><path d='M20,75 L80,75' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><text x='35' y='20' font-size='10'>Thin Path (Fast)</text><path d='M150,30 L150,120 M250,30 L250,120' stroke='#a0aec0' stroke-width='2'/><rect x='150' y='30' width='100' height='90' fill='#1e293b'/><circle cx='130' cy='75' r='5' fill='#e53e3e'/><path d='M140,75 Q200,60 260,75' stroke='#e53e3e' stroke-width='2' stroke-dasharray='4' marker-end='url(#arrow)'/><text x='155' y='20' font-size='10'>Thick Path (Slow)</text></svg>",
             "caption": "Membrane Thickness Impact"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Fick's Law",
+        "text": "Remember that the Rate of diffusion is proportional to (Surface Area x Concentration difference) / Thickness of membrane. Always specify 'concentration difference', not just 'concentration'."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Fick's Law",
+        "text": "Remember that the Rate of diffusion is proportional to (Surface Area x Concentration difference) / Thickness of membrane. Always specify 'concentration difference', not just 'concentration'."
+      }
     }
   ],
   "recall": {

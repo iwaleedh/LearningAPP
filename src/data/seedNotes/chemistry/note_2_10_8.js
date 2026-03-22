@@ -88,7 +88,25 @@ export const note_chemistry_2_10_8 = {
                 ]
             },
             terms: ['Isotopes', 'M+2 peak']
-        }
+        }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Carbocation Charges",
+        "text": "When writing formulae for fragment ions in mass spectrometry, you MUST include the positive charge (e.g., [CH3]+). Without the '+' sign, you will lose the mark."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Carbocation Charges",
+        "text": "When writing formulae for fragment ions in mass spectrometry, you MUST include the positive charge (e.g., [CH3]+). Without the '+' sign, you will lose the mark."
+      }
+    }
     ],
     recall: {
         enabled: true,

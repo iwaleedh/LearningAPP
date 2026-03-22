@@ -42,6 +42,24 @@ export const note_biology_1_2_10 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M40,100 L40,60 L80,60 L90,75 L110,60 L140,60 L140,100 L110,100 L100,115 L80,100 Z' fill='#1e293b' stroke='#4a5568'/><circle cx='95' cy='110' r='10' fill='#fc8181'/><text x='15' y='140' font-size='10' fill='#c53030'>Inhibitor at Allosteric Site</text><polygon points='160,40 170,60 200,60 210,40 230,15 145,15' fill='#48bb78'/><text x='155' y='75' font-size='10'>Substrate doesn't fit</text><text x='70' y='45' font-size='10' font-style='italic'>Shape Changed!</text></svg>",
             "caption": "Non-Competitive Inhibition"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "Inhibition Types",
+        "text": "Competitive inhibitors bind to the active site (can be overcome by increasing substrate concentration). Non-competitive inhibitors bind to an allosteric site, permanently altering the active site's specific 3D shape."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "key",
+        "title": "Inhibition Types",
+        "text": "Competitive inhibitors bind to the active site (can be overcome by increasing substrate concentration). Non-competitive inhibitors bind to an allosteric site, permanently altering the active site's specific 3D shape."
+      }
     }
   ],
   "recall": {

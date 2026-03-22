@@ -137,7 +137,25 @@ export const note_chemistry_2_9_3 = {
                 caption: 'At higher temperatures, the curve broadens and the peak shifts right. The area under the curve beyond the activation energy increases hugely, significantly increasing the reaction rate.'
             },
             terms: []
-        }
+        }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Drawing Maxwell-Boltzmann",
+        "text": "Your Maxwell-Boltzmann curve must start exactly at the origin (0,0) - because no particles have zero energy. It should never touch the x-axis again at higher energies as there is no maximum energy limit."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Drawing Maxwell-Boltzmann",
+        "text": "Your Maxwell-Boltzmann curve must start exactly at the origin (0,0) - because no particles have zero energy. It should never touch the x-axis again at higher energies as there is no maximum energy limit."
+      }
+    }
     ],
     recall: {
         enabled: true,

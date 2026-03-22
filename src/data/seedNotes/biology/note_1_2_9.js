@@ -53,6 +53,24 @@ export const note_biology_1_2_9 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='130' x2='300' y2='130' stroke='#333' stroke-width='2'/><line x1='30' y1='130' x2='30' y2='20' stroke='#333' stroke-width='2'/><path d='M30,90 Q120,10 180,110 L280,110' fill='none' stroke='#e53e3e' stroke-width='3'/><path d='M30,90 Q120,60 180,110 L280,110' fill='none' stroke='#38a169' stroke-width='3' stroke-dasharray='5'/><text x='5' y='75' font-size='10' transform='rotate(270 10,75)'>Energy</text><text x='150' y='145' font-size='10'>Progress of Reaction</text><text x='140' y='30' font-size='10' fill='#c53030'>Without Enzyme</text><text x='150' y='80' font-size='10' fill='#2f855a'>With Enzyme (Lower Ea)</text></svg>",
             "caption": "Activation Energy Profile"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Enzymes",
+        "text": "Never say an enzyme 'dies' when heated; say it denatures. For mechanism, state that it lowers the activation energy by providing an alternative reaction pathway upon forming an enzyme-substrate complex."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Enzymes",
+        "text": "Never say an enzyme 'dies' when heated; say it denatures. For mechanism, state that it lowers the activation energy by providing an alternative reaction pathway upon forming an enzyme-substrate complex."
+      }
     }
   ],
   "recall": {

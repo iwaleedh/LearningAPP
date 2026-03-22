@@ -60,6 +60,24 @@ export const note_biology_1_2_16 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='20' width='20' height='20' fill='#1e293b' stroke='#333'/><circle cx='180' cy='30' r='10' fill='#333'/><line x1='100' y1='30' x2='170' y2='30' stroke='#333' stroke-width='2'/><line x1='135' y1='30' x2='135' y2='60' stroke='#333' stroke-width='2'/><line x1='90' y1='60' x2='180' y2='60' stroke='#333' stroke-width='2'/><line x1='90' y1='60' x2='90' y2='80' stroke='#333' stroke-width='2'/><circle cx='90' cy='90' r='10' fill='#1e293b' stroke='#333'/><line x1='180' y1='60' x2='180' y2='80' stroke='#333' stroke-width='2'/><rect x='170' y='80' width='20' height='20' fill='#333'/><text x='210' y='35' font-size='10'>Affected Female</text><text x='210' y='90' font-size='10'>Affected Male</text></svg>",
             "caption": "Pedigree Chart Basics"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Sex Linkage",
+        "text": "Sex linkage usually refers to genes on the X chromosome. Emphasize that males (XY) only have one copy, so they only need one recessive allele to express the condition, making them more vulnerable."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Sex Linkage",
+        "text": "Sex linkage usually refers to genes on the X chromosome. Emphasize that males (XY) only have one copy, so they only need one recessive allele to express the condition, making them more vulnerable."
+      }
     }
   ],
   "recall": {

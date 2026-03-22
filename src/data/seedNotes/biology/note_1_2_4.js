@@ -53,6 +53,24 @@ export const note_biology_1_2_4 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='40' width='200' height='80' fill='#1c3a64' stroke='#4299e1'/><line x1='150' y1='40' x2='150' y2='120' stroke='#2b6cb0' stroke-dasharray='5' stroke-width='3'/><circle cx='80' cy='60' r='4' fill='#333'/><circle cx='100' cy='80' r='4' fill='#333'/><circle cx='70' cy='100' r='4' fill='#333'/><circle cx='200' cy='60' r='8' fill='#e53e3e'/><circle cx='230' cy='90' r='8' fill='#e53e3e'/><circle cx='180' cy='100' r='8' fill='#e53e3e'/><path d='M115,70 Q150,50 185,70' fill='none' stroke='#3182ce' stroke-width='3' marker-end='url(#arrow)'/><text x='55' y='140' font-size='10'>Low Solute (High H₂O)</text><text x='160' y='140' font-size='10'>High Solute (Low H₂O)</text></svg>",
             "caption": "Osmosis Gradient"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Molecule Types",
+        "text": "Always state that polar, charged, or large molecules use channel/carrier proteins (facilitated diffusion), while small non-polar molecules like oxygen diffuse directly through the phospholipid bilayer."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Molecule Types",
+        "text": "Always state that polar, charged, or large molecules use channel/carrier proteins (facilitated diffusion), while small non-polar molecules like oxygen diffuse directly through the phospholipid bilayer."
+      }
     }
   ],
   "recall": {

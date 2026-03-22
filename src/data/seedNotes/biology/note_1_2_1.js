@@ -59,6 +59,24 @@ export const note_biology_1_2_1 = {
             "svg": "<svg viewBox='0 0 350 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='50' width='250' height='30' fill='#1e293b' rx='15'/><circle cx='80' cy='65' r='10' fill='#3182ce'/><text x='70' y='95' font-size='10'>Deoxygenated</text><circle cx='175' cy='65' r='10' fill='#fc8181'/><circle cx='270' cy='65' r='10' fill='#e53e3e'/><text x='255' y='95' font-size='10'>Oxygenated</text><text x='170' y='35' font-size='14' font-weight='bold' fill='#c53030'>↓ O₂ In</text><text x='100' y='35' font-size='14' font-weight='bold' fill='#3182ce'>↑ CO₂ Out</text></svg>",
             "caption": "Gas Exchange Gradient"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Linking Structure to Function",
+        "text": "When explaining alveolar adaptations, always explicitly link the feature to the function (e.g., 'squamous epithelium is one cell thick, which provides a short diffusion distance')."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Linking Structure to Function",
+        "text": "When explaining alveolar adaptations, always explicitly link the feature to the function (e.g., 'squamous epithelium is one cell thick, which provides a short diffusion distance')."
+      }
     }
   ],
   "recall": {

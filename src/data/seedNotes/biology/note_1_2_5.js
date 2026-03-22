@@ -57,6 +57,24 @@ export const note_biology_1_2_5 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M20,100 C60,100 80,60 120,60 C160,60 180,100 220,100' fill='none' stroke='#4a5568' stroke-width='4'/><circle cx='120' cy='40' r='20' fill='none' stroke='#3182ce' stroke-width='2'/><circle cx='120' cy='40' r='5' fill='#e53e3e'/><path d='M120,80 L120,50' stroke='#333' stroke-width='1.5' marker-end='url(#arrow)'/><text x='75' y='130' font-size='10'>Exocytosis (Out)</text><path d='M220,100 C260,100 280,140 320,140' fill='none' stroke='#4a5568' stroke-width='4'/><circle cx='270' cy='120' r='15' fill='none' stroke='#3182ce' stroke-dasharray='4'/><circle cx='270' cy='120' r='5' fill='#38a169'/><path d='M270,70 L270,100' stroke='#333' stroke-width='1.5' marker-end='url(#arrow)'/><text x='230' y='155' font-size='10'>Endocytosis (In)</text></svg>",
             "caption": "Exocytosis vs Endocytosis"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Active Transport Essentials",
+        "text": "Active transport moves substances against the concentration gradient. You must explicitly mention that this requires energy in the form of ATP from respiration."
+      }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Active Transport Essentials",
+        "text": "Active transport moves substances against the concentration gradient. You must explicitly mention that this requires energy in the form of ATP from respiration."
+      }
     }
   ],
   "recall": {
