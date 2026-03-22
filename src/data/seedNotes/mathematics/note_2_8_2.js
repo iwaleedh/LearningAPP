@@ -99,6 +99,16 @@ export const note_mathematics_2_8_2 = {
             type: 'summary',
             data: { text: '∫u dv = uv − ∫v du. Choose u by LIATE: Logarithm > Inverse trig > Algebraic > Trig > Exponential. The remaining factor is dv/dx. May need to apply twice (for x²·trig/exp). ∫ln x dx = x(ln x − 1) + c.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Choose your 'u' carefully in integration by parts. The acronym LATE (Logs, Algebra, Trigonometry, Exponentials) is an excellent rule of thumb for deciding which function becomes u to make the resulting integral simpler."
+            },
+            terms: []
         }
     ],
     recall: {

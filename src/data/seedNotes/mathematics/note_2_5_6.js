@@ -109,6 +109,16 @@ export const note_mathematics_2_5_6 = {
             type: 'summary',
             data: { text: 'Change of base: log_a(b) = ln b / ln a. Solving log equations: combine logs using laws, apply inverse (e^ or 10^), solve, check domain. Quadratic in log: substitute u = ln x, solve quadratic, back-substitute. Always check domain: arguments of logs must be positive.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When transforming y = ab^x into a straight line, taking log10 or ln of both sides gives log y = log a + x log b. Ensure you correctly match the gradient to log b and the y-intercept to log a. Do not confuse the forms y = ax^n and y = ab^x."
+            },
+            terms: []
         }
     ],
     recall: {

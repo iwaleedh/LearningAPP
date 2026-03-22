@@ -129,6 +129,16 @@ export const note_mathematics_2_4_8 = {
             type: 'summary',
             data: { text: 'Approximation using binomial: expand (1+x)ⁿ or (a+bx)ⁿ, then substitute a small value of x. Accuracy improves with more terms and smaller |x|. Exam method: expand first (symbolically), state the value of x, substitute, and evaluate. For integer n, the expansion is finite (exactly n+1 terms).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If asked to use your binomial expansion to estimate a value (e.g., 1.02^6), ensure you equate your expansion bracket to the base number (a + bx = 1.02) to find the correct value of x to substitute."
+            },
+            terms: []
         }
     ],
     recall: {

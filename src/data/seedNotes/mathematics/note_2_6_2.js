@@ -124,6 +124,16 @@ export const note_mathematics_2_6_2 = {
             type: 'summary',
             data: { text: 'sec = 1/cos, cosec = 1/sin, cot = 1/tan = cos/sin. Key identities: 1+tan²θ=sec²θ and 1+cot²θ=cosec²θ. To solve: convert reciprocal function back to sin/cos/tan, then use standard methods. To prove: use identities to convert one side.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If you forget the identities involving sec^2 x or cosec^2 x, quickly derive them in the margin by dividing the fundamental identity sin^2 x + cos^2 x = 1 by cos^2 x or sin^2 x respectively. This prevents costly sign errors."
+            },
+            terms: []
         }
     ],
     recall: {

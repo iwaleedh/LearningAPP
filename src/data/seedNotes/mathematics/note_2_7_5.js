@@ -99,6 +99,16 @@ export const note_mathematics_2_7_5 = {
             type: 'summary',
             data: { text: 'Use the chain rule: dy/dt = (dy/dx)·(dx/dt). Identify the quantities, find the geometric relationship, differentiate, then chain-link to the known rate. Don\'t forget units.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When verifying the nature of a stationary point, explicitly substitute the x-value into the second derivative and state whether the result is > 0 (minimum) or < 0 (maximum). Do not just write 'minimum' without showing the evaluation."
+            },
+            terms: []
         }
     ],
     recall: {

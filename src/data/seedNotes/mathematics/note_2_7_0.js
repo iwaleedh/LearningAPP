@@ -109,6 +109,16 @@ export const note_mathematics_2_7_0 = {
             type: 'summary',
             data: { text: 'd/dx(eˣ)=eˣ; d/dx(eᵏˣ)=k eᵏˣ; d/dx(ln x)=1/x; d/dx(sin x)=cos x; d/dx(cos x)=−sin x; d/dx(tan x)=sec²x. Always use radians for trig. The power rule d/dx(xⁿ)=nxⁿ⁻¹ works for all real n.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When applying the chain rule, a common mistake is forgetting to multiply by the derivative of the inner function. For example, the derivative of (3x - 2)^4 is 4(3x - 2)^3 multiplied by 3. Always double-check this step."
+            },
+            terms: []
         }
     ],
     recall: {

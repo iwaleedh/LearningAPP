@@ -115,6 +115,16 @@ export const note_mathematics_2_7_1 = {
             type: 'summary',
             data: { text: 'Chain rule: dy/dx = (dy/du)(du/dx). Differentiate the outer function, multiply by the derivative of the inner. ln(f(x)) → f\'(x)/f(x). e^{f(x)} → f\'(x)·e^{f(x)}. Never forget the inner derivative.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "To keep the product rule organized, explicitly write down u, v, du/dx, and dv/dx before assembling the final derivative formula v(du/dx) + u(dv/dx). This structured approach minimizes algebraic slips."
+            },
+            terms: []
         }
     ],
     recall: {

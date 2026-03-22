@@ -97,6 +97,16 @@ export const note_mathematics_2_5_5 = {
             type: 'summary',
             data: { text: 'Linearising y = axⁿ: plot log y vs log x; gradient = n, intercept = log a. Linearising y = abˣ: plot log y vs x; gradient = log b, intercept = log a. Linearising y = Aeᵏˣ: plot ln y vs x; gradient = k, intercept = ln A. Always convert back using 10^(…) or e^(…).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For equations like e^(2x) - 5e^x + 6 = 0, substitute u = e^x to form a hidden quadratic. Once you find u, remember to substitute back and solve for x using x = ln(u). Reject any solutions where u is less than or equal to zero."
+            },
+            terms: []
         }
     ],
     recall: {

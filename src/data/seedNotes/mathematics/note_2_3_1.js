@@ -117,6 +117,16 @@ export const note_mathematics_2_3_1 = {
             type: 'summary',
             data: { text: 'To find centre and radius from general form: (1) ensure coefficients of x² and y² are both 1 (divide through if needed), (2) complete the square on both x and y terms, (3) rearrange to (x−a)²+(y−b)²=r² form, (4) read off centre (a,b) and r=√(RHS). Alternatively use the formula: centre=(−f,−g), r=√(f²+g²−c).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A common pitfall when completing the square for general circle equations is forgetting to add the squared constants to the right-hand side. Always balance the equation to find the correct r^2 value."
+            },
+            terms: []
         }
     ],
     recall: {

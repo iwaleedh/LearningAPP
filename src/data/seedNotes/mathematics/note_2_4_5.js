@@ -139,6 +139,16 @@ export const note_mathematics_2_4_5 = {
             type: 'summary',
             data: { text: 'Geometric series: Sₙ = a(1−rⁿ)/(1−r) finite; S∞ = a/(1−r) only when |r| < 1. To find n when sum exceeds k: use logarithms. Derivation: multiply by r, subtract, factorise.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The sum to infinity only exists if the magnitude of the common ratio is less than 1 (|r| < 1). Always verify and explicitly state this condition if asked to justify why an infinite sum can be calculated."
+            },
+            terms: []
         }
     ],
     recall: {

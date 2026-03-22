@@ -110,6 +110,16 @@ export const note_mathematics_2_5_4 = {
             type: 'summary',
             data: { text: 'Growth/decay model: y = Ae^{kt}. A = initial value. k > 0 growth; k < 0 decay. To find k: substitute known point, take ln, solve. To find when y = value: set equation, take ln. Linearising: ln y = ln A + kx gives gradient k and y-intercept ln A.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A frequent error is writing ln(A + B) as ln A + ln B. Apply the laws of logarithms carefully: ln(AB) = ln A + ln B and ln(A/B) = ln A - ln B. Always simplify terms fully before solving the equation."
+            },
+            terms: []
         }
     ],
     recall: {

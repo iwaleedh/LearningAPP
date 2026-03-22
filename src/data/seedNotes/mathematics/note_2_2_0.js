@@ -130,6 +130,16 @@ export const note_mathematics_2_2_0 = {
             type: 'summary',
             data: { text: 'Rational expressions: algebraic fractions with polynomial numerator and denominator. Simplify by factorising fully and cancelling common FACTORS (not terms). Add/subtract: find LCD, rewrite over LCD, combine numerators. Multiply: multiply top × top, bottom × bottom (factorise and cancel first). Divide: flip second fraction and multiply.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When adding or subtracting algebraic fractions, always factorise the denominators first. This helps you find the simplest common denominator and avoids creating overly complex cubic or quartic numerators that are hard to simplify."
+            },
+            terms: []
         }
     ],
     recall: {

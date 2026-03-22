@@ -103,6 +103,16 @@ export const note_mathematics_2_3_3 = {
             type: 'summary',
             data: { text: 'The perpendicular bisector of any chord passes through the centre. To find it: (1) find midpoint of chord, (2) find gradient of chord, (3) negate-and-flip the gradient, (4) write line equation through midpoint. To find the circle centre from three points: find two perpendicular bisectors and solve them simultaneously.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Examiners often test your understanding that the perpendicular bisector of any chord passes through the centre. You may need to set up simultaneous equations of two such bisectors to find the intersecting centre coordinates."
+            },
+            terms: []
         }
     ],
     recall: {

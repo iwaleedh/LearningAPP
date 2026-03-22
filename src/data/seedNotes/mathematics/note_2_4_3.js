@@ -136,6 +136,16 @@ export const note_mathematics_2_4_3 = {
             type: 'summary',
             data: { text: 'Arithmetic series: Sₙ = n/2(2a+(n−1)d) = n/2(a+l). Use the first when you have a, d, n; the second when you have a, l, n. To find nth term from Sₙ: uₙ = Sₙ − Sₙ₋₁. To find n from a sum: form a quadratic, solve (take positive root).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If a question gives you the sum of the first n terms (Sn) and asks for the nth term (Un), remember the highly useful relationship Un = Sn - S(n-1)."
+            },
+            terms: []
         }
     ],
     recall: {

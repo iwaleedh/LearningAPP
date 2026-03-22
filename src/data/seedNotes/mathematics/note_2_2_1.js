@@ -118,6 +118,16 @@ export const note_mathematics_2_2_1 = {
             type: 'summary',
             data: { text: 'Polynomial division: f(x) = d(x)·q(x) + r. Long division: divide leading terms, multiply, subtract, bring down — repeat. Remainder is a constant when dividing by (x − a). Insert 0 for missing terms. Check: (divisor)(quotient) + remainder = original polynomial.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Be careful with missing terms in the dividend. If you are dividing a cubic with no x-squared term, insert '0x^2' as a placeholder to keep your columns aligned and avoid subtraction errors."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -111,6 +111,16 @@ export const note_mathematics_2_8_0 = {
             type: 'summary',
             data: { text: '∫eˣ=eˣ+c; ∫eᵏˣ=(1/k)eᵏˣ+c; ∫1/x=ln|x|+c; ∫sin x=−cos x+c; ∫cos x=sin x+c; ∫sec²x=tan x+c. Always add +c for indefinite integrals. Definite: evaluate at upper bound, subtract value at lower bound. Expand/split before integrating products or quotients.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Do not forget the constant of integration, '+ c', for indefinite integrals. A surprisingly large number of candidates drop marks on straightforward integration questions by omitting it."
+            },
+            terms: []
         }
     ],
     recall: {

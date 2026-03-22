@@ -117,6 +117,16 @@ export const note_mathematics_2_6_0 = {
             type: 'summary',
             data: { text: 'Core identities: sin²θ + cos²θ = 1; tan θ = sin θ / cos θ. Derived: cos²θ = 1 − sin²θ; sin²θ = 1 − cos²θ. In proofs: work on one side, use identities to simplify, never cross-multiply. Use Pythagorean identity to find missing ratio from a given one.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When sketching reciprocal trigonometric functions, draw the original function (e.g., y = cos x for y = sec x) lightly first. The x-intercepts of the original function become the vertical asymptotes of the reciprocal function."
+            },
+            terms: []
         }
     ],
     recall: {

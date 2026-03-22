@@ -112,6 +112,16 @@ export const note_mathematics_2_4_1 = {
             type: 'summary',
             data: { text: 'Recurrence relation: uₙ₊₁ = f(uₙ) with initial term u₁ = a. Generate terms by substituting each into the formula. Arithmetic: uₙ₊₁ = uₙ + d. Geometric: uₙ₊₁ = r·uₙ. Sequences can be convergent, divergent, or periodic. To find k in uₙ₊₁ = kuₙ + c: substitute known consecutive terms and solve.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When working with recurrence relations, always read carefully whether the sequence starts at n=1 or n=0 (or u1 vs u0). This completely shifts the terms and is a classic way to lose easy marks."
+            },
+            terms: []
         }
     ],
     recall: {

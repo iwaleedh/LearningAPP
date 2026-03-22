@@ -99,6 +99,16 @@ export const note_mathematics_2_7_2 = {
             type: 'summary',
             data: { text: 'Product rule: (uv)\' = uv\' + vu\'. Use when y = f(x)·g(x). Often combine with chain rule for each factor\'s derivative. Always factorise the result.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In the quotient rule, the order of terms in the numerator is crucial because of the subtraction: v(du/dx) - u(dv/dx). Getting this backward will result in the wrong sign for the entire derivative."
+            },
+            terms: []
         }
     ],
     recall: {

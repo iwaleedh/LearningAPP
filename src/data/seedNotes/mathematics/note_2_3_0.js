@@ -147,6 +147,16 @@ export const note_mathematics_2_3_0 = {
             type: 'summary',
             data: { text: 'Equation of a circle: (x−a)² + (y−b)² = r² (standard form), centre (a,b), radius r. General form: x² + y² + 2fx + 2gy + c = 0, centre (−f, −g), r = √(f²+g²−c). Always check coefficient of x² and y² is 1. Test points: substitute into LHS and compare to r².' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that the standard circle equation requires (x-a)^2 + (y-b)^2 = r^2 to have coefficients of 1 for the squared terms. If the coefficients of x^2 and y^2 are anything else, you must divide the entire equation by that number first."
+            },
+            terms: []
         }
     ],
     recall: {

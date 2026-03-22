@@ -115,6 +115,16 @@ export const note_mathematics_2_1_2 = {
             type: 'summary',
             data: { text: 'Proof by exhaustion: test every case in a finite set. Each case must be checked individually and shown to satisfy the result. Only works when the number of cases is finite. End with "all n cases verified, therefore…". Cannot be used for infinite domains — use deduction instead.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using proof by exhaustion, ensure you explicitly list and check every single possible case. Missing even one case will cost you the final proof mark."
+            },
+            terms: []
         }
     ],
     recall: {

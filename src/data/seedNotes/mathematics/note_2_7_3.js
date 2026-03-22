@@ -99,6 +99,16 @@ export const note_mathematics_2_7_3 = {
             type: 'summary',
             data: { text: 'Quotient rule: d/dx(u/v) = (v·u\' − u·v\')/v². Numerator is vdu − udv; denominator is v². Always label u and v clearly. Quotient rule can be verified by deriving d/dx(tan x) = sec²x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Be precise with coefficients when differentiating trigonometric functions. The derivative of sin(kx) is k cos(kx), and for cos(kx) it is -k sin(kx). Missing the factor 'k' or the negative sign is a very heavily penalized mistake."
+            },
+            terms: []
         }
     ],
     recall: {

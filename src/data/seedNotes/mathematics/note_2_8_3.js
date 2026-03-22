@@ -90,6 +90,16 @@ export const note_mathematics_2_8_3 = {
             type: 'summary',
             data: { text: 'Decompose into partial fractions: A/(ax+b) + B/(cx+d) etc. Each A/(ax+b) integrates to (A/a)ln|ax+b|+c. For repeated factors A/(ax+b)², use the power rule giving −A/[a(ax+b)]+c. If degree(top) ≥ degree(bottom): long-divide first.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always check if an algebraic fraction is 'top heavy' (improper) before attempting to find partial fractions. If the highest power on top is equal to or greater than the bottom, you must use algebraic long division first."
+            },
+            terms: []
         }
     ],
     recall: {

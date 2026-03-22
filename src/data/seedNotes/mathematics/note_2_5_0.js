@@ -101,6 +101,16 @@ export const note_mathematics_2_5_0 = {
             type: 'summary',
             data: { text: 'Exponential function y = aˣ (a>0, a≠1). y = eˣ where e ≈ 2.718 is the natural base. Key properties: domain ℝ, range y>0, passes through (0,1), asymptote y=0, increasing. d/dx(eˣ) = eˣ. Transformations follow standard rules (translate, reflect, stretch).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When sketching exponential graphs, always include the horizontal asymptote (e.g., y=0) by either drawing a dashed line or stating its equation, and clearly label the y-intercept. Markers actively look for these features."
+            },
+            terms: []
         }
     ],
     recall: {

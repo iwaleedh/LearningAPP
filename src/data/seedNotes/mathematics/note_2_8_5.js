@@ -108,6 +108,16 @@ export const note_mathematics_2_8_5 = {
             type: 'summary',
             data: { text: 'Trapezium rule: (h/2)[y₀ + 2(y₁ + … + yₙ₋₁) + yₙ] where h=(b−a)/n. Middle y-values multiplied by 2; first and last multiplied by 1. Concave up → over-estimate; concave down → under-estimate. Increasing n improves accuracy.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "To logically show if the trapezium rule yields an over-estimate or under-estimate, consider the specific section of the curve. If the curve is concave upwards (U-shaped), the straight chords sit above the curve giving an over-estimate."
+            },
+            terms: []
         }
     ],
     recall: {

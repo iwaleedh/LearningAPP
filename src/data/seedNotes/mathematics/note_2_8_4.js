@@ -104,6 +104,16 @@ export const note_mathematics_2_8_4 = {
             type: 'summary',
             data: { text: 'Area = ∫ₐᵇ f(x) dx when f(x) ≥ 0. If f(x) < 0: area = |∫ f(x) dx|. Mixed sign: split at zeros, integrate each part separately, sum absolutes. Between curves: ∫[top − bottom] dx, limits at intersections.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding the area bounded by a curve that crosses the x-axis, you must evaluate the sections above and below the axis using separate definite integrals, taking the absolute value of the negative area before adding them."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -141,6 +141,16 @@ export const note_mathematics_2_5_2 = {
             type: 'summary',
             data: { text: 'Log laws: ln(MN)=ln M+ln N; ln(M/N)=ln M−ln N; ln(Mᵏ)=k·ln M. Special: ln 1=0, ln e=1. Change of base: log_a(b)=ln b/ln a. Common mistake: ln(A+B) ≠ ln A + ln B. Always check domain after solving log equations (arguments must be positive).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When sketching exponential graphs like y = e^x, always clearly label the y-intercept (0, 1) and state the equation of the horizontal asymptote (y = 0). Examiners actively look for these two features for full marks."
+            },
+            terms: []
         }
     ],
     recall: {

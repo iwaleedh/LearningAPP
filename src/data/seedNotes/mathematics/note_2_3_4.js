@@ -115,6 +115,16 @@ export const note_mathematics_2_3_4 = {
             type: 'summary',
             data: { text: 'Tangent to a circle at P: perpendicular to radius OP. Steps: (1) find gradient of radius OP, (2) take negative reciprocal for tangent gradient, (3) use point P to write the tangent equation. Normal at P = line through centre O and P (the radius line).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The tangent is always perpendicular to the radius at the point of contact. First find the gradient of the radius, then immediately find the negative reciprocal to get the tangent's gradient before setting up your line equation."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -146,6 +146,16 @@ export const note_mathematics_2_6_3 = {
             type: 'summary',
             data: { text: 'Addition: sin(A±B)=sin A cos B ± cos A sin B; cos(A±B) = cos A cos B ∓ sin A sin B. Double angle: sin 2A = 2 sin A cos A; cos 2A = cos²A−sin²A = 2cos²A−1 = 1−2sin²A. Choose the correct form of cos 2A based on what further substitution is needed.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using addition formulae to find exact values, such as cos 15 or sin 75 degrees, rewrite the angle using standard angles like 30, 45, or 60 degrees. Make sure to show the expanded formula clearly before substituting exact rational values."
+            },
+            terms: []
         }
     ],
     recall: {

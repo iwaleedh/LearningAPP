@@ -107,6 +107,16 @@ export const note_mathematics_2_3_2 = {
             type: 'summary',
             data: { text: 'Angle in a semicircle = 90°: if PQ is a diameter and R is on the circle, angle PRQ = 90°. To verify: show RP ⊥ RQ (product of gradients = −1, or dot product = 0). To find circle from diameter endpoints: use midpoint for centre, half-length of diameter for radius.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If you are given three points on a circle and asked to prove two of them form a diameter, use gradients to show the angle subtended at the third point is 90 degrees (m1 * m2 = -1)."
+            },
+            terms: []
         }
     ],
     recall: {

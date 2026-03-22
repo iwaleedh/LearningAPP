@@ -106,6 +106,16 @@ export const note_mathematics_2_8_1 = {
             type: 'summary',
             data: { text: 'Integration by substitution: choose u = inner function, find du, replace everything, integrate in u. For definite integrals: change limits using u = g(x) — no back-substitution needed. If numerator is derivative of denominator: result is ln|denominator| + c.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In definite integration by substitution, always remember to change your current x limits of integration to match your new variable u. This saves you from having to convert your answer back in terms of x at the very end."
+            },
+            terms: []
         }
     ],
     recall: {

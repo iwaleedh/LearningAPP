@@ -135,6 +135,16 @@ export const note_mathematics_2_2_2 = {
             type: 'summary',
             data: { text: 'Factor Theorem: (x − a) is a factor of f(x) ⟺ f(a) = 0. Remainder Theorem: f(x) ÷ (x − a) has remainder f(a). To factorise a cubic: find a root by inspection, divide out the linear factor, then factorise the remaining quadratic. Try x = ±1, ±2, ±3 first.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using the factor theorem to show (x-a) is a factor, you must explicitly state 'f(a) = 0, therefore (x-a) is a factor'. Simply showing the calculation equals zero without the concluding statement will drop a communication mark."
+            },
+            terms: []
         }
     ],
     recall: {

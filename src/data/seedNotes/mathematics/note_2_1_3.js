@@ -135,6 +135,16 @@ export const note_mathematics_2_1_3 = {
             type: 'summary',
             data: { text: 'Disproof by counter-example: find ONE value that makes the conjecture fail. One counter-example is sufficient to disprove a general claim. Try simple values first (0, 1, 2, −1). State the counter-example clearly, show it makes the statement false, and conclude the conjecture is false.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "To disprove a statement, finding just one valid counter-example is completely sufficient. Don't waste time trying to prove it algebraically; just state the example, show the calculation, and conclude it fails."
+            },
+            terms: []
         }
     ],
     recall: {

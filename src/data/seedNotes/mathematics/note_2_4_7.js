@@ -132,6 +132,16 @@ export const note_mathematics_2_4_7 = {
             type: 'summary',
             data: { text: 'Binomial expansion: (a+b)ⁿ = ∑ ⁿCᵣ aⁿ⁻ʳ bʳ. General term: Tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳ bʳ. ⁿCᵣ = n!/(r!(n−r)!), symmetric: ⁿCᵣ = ⁿCₙ₋ᵣ. For specific term: identify r from required power of x. Watch sign when b is negative.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For expansions of (a + bx)^n, it is often safer to factor out the 'a' first to get a^n * (1 + (b/a)x)^n. Expanding the (1 + ...)^n part is much less prone to arithmetic and power distribution errors."
+            },
+            terms: []
         }
     ],
     recall: {

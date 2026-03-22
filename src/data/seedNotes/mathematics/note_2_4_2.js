@@ -126,6 +126,16 @@ export const note_mathematics_2_4_2 = {
             type: 'summary',
             data: { text: 'Arithmetic sequence: uₙ = a + (n−1)d, where a = first term, d = common difference. Find d from any two consecutive terms. Solve uₙ = value to find position of that term. Three consecutive AP terms can be written (a−d), a, (a+d) to simplify algebra.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In questions where you must find the first negative or positive term of an arithmetic sequence, set up an inequality (e.g., Un < 0) rather than trying to guess and check terms."
+            },
+            terms: []
         }
     ],
     recall: {

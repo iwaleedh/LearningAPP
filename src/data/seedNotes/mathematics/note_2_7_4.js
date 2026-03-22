@@ -106,6 +106,16 @@ export const note_mathematics_2_7_4 = {
             type: 'summary',
             data: { text: 'Implicit: differentiate every term w.r.t. x, treating y as a function of x: d/dx[f(y)] = f\'(y)·dy/dx. Collect dy/dx terms, factorise, rearrange. Parametric: dy/dx = (dy/dt)/(dx/dt).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "To find the equation of a normal, recall that the gradient of the normal is the negative reciprocal of the tangent gradient, meaning m_normal = -1 / (dy/dx). Ensure you evaluate dy/dx at the specific given x-coordinate."
+            },
+            terms: []
         }
     ],
     recall: {

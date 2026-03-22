@@ -134,6 +134,16 @@ export const note_mathematics_2_4_0 = {
             type: 'summary',
             data: { text: 'Sequence: ordered list of terms u₁, u₂, u₃, … defined by an nth-term formula or recurrence relation. Types: convergent (→ limit), divergent (→ ∞), periodic (repeats every k terms), oscillating. Series Sₙ = sum of first n terms. Arithmetic sequence: constant difference. Geometric sequence: constant ratio.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Ensure you understand the difference between 'convergent' (approaching a limit) and 'oscillating' (moving back and forth). You are frequently asked to classify a sequence and mathematically justify your choice in exams."
+            },
+            terms: []
         }
     ],
     recall: {

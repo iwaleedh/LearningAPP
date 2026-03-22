@@ -158,6 +158,16 @@ export const note_mathematics_2_4_6 = {
             type: 'summary',
             data: { text: 'Sigma notation: ∑f(r) sums f(r) for each integer r from lower to upper limit. Properties: linearity, constant factor rule, split/offset limits. Key results: ∑r = n(n+1)/2, ∑r² = n(n+1)(2n+1)/6. For offset limits: ∑ from a to b = ∑ from 1 to b − ∑ from 1 to a−1.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When evaluating sigma notation, pay close attention to the starting index. If it starts at r=0 instead of r=1, there will be n+1 terms in total, not n terms. This is a very frequent source of error."
+            },
+            terms: []
         }
     ],
     recall: {

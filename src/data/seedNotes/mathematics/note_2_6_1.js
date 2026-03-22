@@ -142,6 +142,16 @@ export const note_mathematics_2_6_1 = {
             type: 'summary',
             data: { text: 'Solve trig equations: find principal angle, use CAST to find all solutions in the interval. For quadratic in trig: factorise or use the quadratic formula, solve each case separately. For compound angles: widen the interval for the inner angle, find all solutions, then back-substitute.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Be well-versed in the principal domains of the inverse trigonometric functions. For instance, arcsin x only gives values between -90 and 90 degrees (or -pi/2 and pi/2 radians). Pay attention to whether the question asks for degrees or radians."
+            },
+            terms: []
         }
     ],
     recall: {

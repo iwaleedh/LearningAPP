@@ -112,6 +112,16 @@ export const note_mathematics_2_4_4 = {
             type: 'summary',
             data: { text: 'Geometric sequence: uₙ = arⁿ⁻¹, common ratio r = uₙ₊₁/uₙ. Behaviour: |r|>1 divergent; |r|<1 convergent to 0; r=−1 periodic; r<−1 oscillating divergent. Three consecutive GP terms: a/r, a, ar (product = a³). To find a and r: form two equations and divide.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding the common ratio 'r' in a geometric sequence, especially if given non-consecutive terms like U4 and U2, remember that taking a square root gives both positive and negative values for 'r'. Check if the question specifies 'a sequence of positive terms'."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -106,6 +106,16 @@ export const note_mathematics_2_5_1 = {
             type: 'summary',
             data: { text: 'ln(x) = logₑ(x) is the inverse of eˣ. Domain x>0, range ℝ. Passes through (1,0), vertical asymptote x=0. Key: ln(eˣ)=x and e^{ln x}=x. To solve eˣ=k: x=ln k. To solve ln x=k: x=eᵏ.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that y = ln(x) and y = e^x are reflections of each other across the line y = x. When sketching ln(x), always properly label the x-intercept at (1, 0) and the vertical asymptote at x=0."
+            },
+            terms: []
         }
     ],
     recall: {

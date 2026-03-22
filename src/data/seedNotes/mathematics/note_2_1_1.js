@@ -141,6 +141,16 @@ export const note_mathematics_2_1_1 = {
             type: 'summary',
             data: { text: 'Proof by deduction: use algebra to prove for ALL n. Even = 2n, odd = 2n+1. Key steps: define n, manipulate algebraically, factorise to reveal the required form (e.g. 2k = even, 4k = multiple of 4), conclude with a clear statement. Never prove using specific numerical examples.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always state a clear conclusion at the end of your proof. Examiners look for a concluding statement (e.g., 'Therefore, the statement is true for all n') to award the final communication mark."
+            },
+            terms: []
         }
     ],
     recall: {

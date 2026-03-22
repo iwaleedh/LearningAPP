@@ -93,6 +93,16 @@ export const note_mathematics_2_7_6 = {
             type: 'summary',
             data: { text: 'Stationary points: dy/dx = 0. Classify: d²y/dx² < 0 → max; d²y/dx² > 0 → min; d²y/dx² = 0 → check sign change of dy/dx. Point of inflection: d²y/dx² = 0 and sign changes. Optimisation: form the function, differentiate, solve, verify nature.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In kinematics rates of change problems, pay close attention to units (e.g., cm/s vs m/s). Use the chain rule effectively to link related rates, such as dy/dt = (dy/dx) * (dx/dt), and clearly state your final conclusion in context."
+            },
+            terms: []
         }
     ],
     recall: {

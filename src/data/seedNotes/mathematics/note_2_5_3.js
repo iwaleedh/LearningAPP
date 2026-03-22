@@ -125,6 +125,16 @@ export const note_mathematics_2_5_3 = {
             type: 'summary',
             data: { text: 'Exponential equations aˣ = b: take ln both sides, bring power down, solve. Disguised quadratic: substitute u = eˣ; solve quadratic; convert back; reject u ≤ 0. Simultaneous: express one variable in terms of the other using ln, then substitute.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that the domain of y = ln x is x > 0. A common mistake is forgetting that you cannot take the logarithm of a negative number or zero, which often leads to invalid solutions when solving logarithmic equations."
+            },
+            terms: []
         }
     ],
     recall: {
