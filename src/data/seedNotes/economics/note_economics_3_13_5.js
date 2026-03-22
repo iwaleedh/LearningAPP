@@ -106,6 +106,15 @@ export const note_economics_3_13_5 = {
         title: "Common Mistake",
         text: "Confusing 'takeover' with 'hostile takeover'\u2014all takeovers are unilateral acquisitions, but hostile takeovers specifically face resistance. Also, mergers are mutual agreements, not acquisitions. This terminology precision scores easy marks."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A common evaluation error is assuming all mergers result in economies of scale. High-level answers acknowledge the risk of diseconomies of scale and the costs associated with integrating different corporate cultures."
+      }
     }
   ],
   recall: {

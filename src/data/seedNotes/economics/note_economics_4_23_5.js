@@ -109,6 +109,15 @@ export const note_economics_4_23_5 = {
         title: "Common Mistake",
         text: "Students treat Harrod-Domar as purely mechanical: 'just invest more, growth rises.' Model is a starting point; actual growth depends on technology, returns to capital (declining returns slow growth), and institutional quality (inefficient investment doesn't compound). Also, model doesn't explain why savings rates differ (culture? institutions?) or why some nations attract FDI and others don't. Edexcel expects: 'Harrod-Domar shows investment is necessary for growth, but not sufficient; productivity and institutions matter.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Forward guidance is an important contemporary tool: by communicating future interest rate intentions, a central bank can influence market behaviour without immediate policy changes."
+      }
     }
   ],
   recall: {

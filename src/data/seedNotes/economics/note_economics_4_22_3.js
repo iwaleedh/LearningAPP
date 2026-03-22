@@ -101,6 +101,15 @@ export const note_economics_4_22_3 = {
         title: "Common Mistake",
         text: "Students assume direct taxes are always 'better for poor' and indirect taxes 'regressive' but don't quantify incidence. In fact, VAT can be equitable if combined with targeted rebates; income tax can be unfair if loopholes favor the wealthy. Also, don't ignore that indirect taxes (fuel duty, alcohol tax) discourage negative externalities \u2014 efficiency gains matter. Edexcel expects: 'Direct taxes are more progressive, but indirect taxes have efficiency uses; policy must combine both.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Explain how speculative bubbles (like the housing market pre-2008) are a form of financial market failure, driven by herd behavior and excessive risk-taking."
+      }
     }
   ],
   recall: {

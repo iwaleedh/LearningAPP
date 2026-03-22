@@ -108,6 +108,15 @@ export const note_economics_4_21_4 = {
         title: "Common Mistake",
         text: "Students misinterpret Lorenz curves: a line closer to the x-axis means MORE inequality, not less. Also, many forget that the Gini coefficient summarizes the curve into one number \u2014 it loses detail. Two countries with identical Gini coefficients can have different inequality distributions. Always critique: 'Gini is useful but masks distributional differences.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "Ensure you can confidently define and apply the terms progressive, proportional, and regressive taxes. Remember that indirect taxes are often regressive in effect as they take a larger proportion of low incomes."
+      }
     }
   ],
   recall: {

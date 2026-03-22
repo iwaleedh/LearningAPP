@@ -109,6 +109,15 @@ export const note_economics_3_13_1 = {
         title: "Common Mistake",
         text: "Don't confuse co-operative ownership with joint ventures. Co-operatives are member-owned with shared profits; joint ventures are contractual partnerships between separate firms. This distinction is critical when analysing stakeholder impacts."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating co-operatives, contrast their objectives (such as worker or consumer welfare) with the traditional profit-maximising goals of a PLC. Highlighting these different incentives earns strong analysis marks."
+      }
     }
   ],
   recall: {

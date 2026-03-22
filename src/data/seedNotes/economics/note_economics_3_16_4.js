@@ -17,6 +17,15 @@ export const note_economics_3_16_4 = {
         title: "Exam Tip",
         text: "Labour market equilibrium may not equal full employment. If equilibrium is at e.g. 95% employment, the remaining 5% represents natural/frictional unemployment, not necessarily market failure."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When drawing labour market equilibrium, correctly label the axes: 'Wage Rate' on the Y-axis and 'Quantity of Labour' (or Employment) on the X-axis. Missing or vague axis labels will cost you vital diagram marks."
+      }
     }
   ],
   recall: {

@@ -20,6 +20,15 @@ export const note_economics_4_18_7 = {
         title: "Exam Tip",
         text: "When listing globalisation benefits (consumer choice, competition, innovation), explicitly identify winners and losers. Examiners reward answers that acknowledge domestic producers may lose market share\u2014this shows you understand distribution of gains."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "Remember the formula for the terms of trade index: (Index of export prices / Index of import prices) x 100. Be ready to calculate changes from a base year."
+      }
     }
   ],
   recall: {

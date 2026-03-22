@@ -17,6 +17,15 @@ export const note_economics_3_17_3 = {
         title: "Common Mistake",
         text: "Regulation for supplier and worker protection does not automatically reduce efficiency \u2014 it may internalise externalities or reduce information failures. Argue whether efficiency improves or worsens based on the specific regulation and market context."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Intervention protecting suppliers (like guaranteed minimum prices) or workers (health and safety laws) limits monopsonist exploitation. A classic counter-argument is that overly strict worker protection might discourage firms from hiring."
+      }
     }
   ],
   recall: {

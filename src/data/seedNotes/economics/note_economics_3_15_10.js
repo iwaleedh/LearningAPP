@@ -19,6 +19,15 @@ export const note_economics_3_15_10 = {
         title: "Common Mistake",
         text: "Monopsony (single buyer) mirrors monopoly but for input markets. Monopsony power = ability to set wages below workers' MRP, not competitive wage. Examiners test whether you draw monopsony equilibrium correctly: intersection of labour supply and MRC (not = wage), then trace down to demand curve."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Monopsony defines a market with a single dominant buyer. Explain how they use buying power to drive down prices to suppliers. This can be evaluated positively (lower consumer prices) or negatively (squeezing supplier margins)."
+      }
     }
   ],
   recall: {

@@ -87,6 +87,15 @@ export const note_economics_4_18_1 = {
         title: "Exam Tip",
         text: "In essays, distinguish between FDI (ownership and control of productive assets) and portfolio investment (passive shareholding). Examiners expect you to explain why TNCs choose FDI over exports\u2014this is about control, not just cost minimisation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Be prepared to evaluate which cause of globalisation has been the most significant, such as containerisation versus trade liberalisation."
+      }
     }
   ],
   recall: {

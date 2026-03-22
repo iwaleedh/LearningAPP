@@ -98,6 +98,15 @@ export const note_economics_4_20_4 = {
         title: "Exam Tip",
         text: "Distinguish exchange rate regimes clearly: fixed (Bretton Woods, currency board) vs floating (managed intervention vs clean float). Examiners test whether you explain trade-offs: exchange rate regimes constrain monetary policy differently."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Evaluate the role of NGOs carefully: while they provide targeted relief and community-level development, they may not solve macroeconomic structural issues and can sometimes create dependency."
+      }
     }
   ],
   recall: {

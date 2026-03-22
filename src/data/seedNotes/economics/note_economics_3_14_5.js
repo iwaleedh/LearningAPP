@@ -18,6 +18,15 @@ export const note_economics_3_14_5 = {
         title: "Exam Tip",
         text: "Internal economies of scale fall into four types: technical (machinery efficiency), managerial (specialization), financial (lower borrowing costs), and marketing (advertising spreads across units). Name the *type* when explaining cost reductions\u2014generic 'bigger = cheaper' loses marks."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Do not just list economies of scale vaguely. Memorise precise terms like purchasing, managerial, technical, and financial economies of scale, and explicitly link them to a fall in Long-Run Average Costs (LRAC)."
+      }
     }
   ],
   recall: {

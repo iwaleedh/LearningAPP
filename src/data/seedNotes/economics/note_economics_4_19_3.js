@@ -19,6 +19,15 @@ export const note_economics_4_19_3 = {
         title: "Exam Tip",
         text: "Support essays on changing trade patterns with specific, recent data: China's share of global manufacturing, India's services exports, or Africa's raw material dependence. Dated examples lose credibility; use 2023-2025 statistics."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "When drawing the Lorenz curve, remember that the closer the curve is to the line of perfect equality, the more equal the income distribution. Be ready to explain how the Gini coefficient is calculated from this diagram."
+      }
     }
   ],
   recall: {

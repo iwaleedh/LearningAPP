@@ -83,6 +83,15 @@ export const note_economics_4_18_3 = {
         title: "Exam Tip",
         text: "When discussing trade blocs (EU, RCEP), explicitly explain trade creation (more efficient producer wins) vs trade diversion (less efficient bloc member replaces external competitor). Examiners test whether you grasp the welfare implications, not just definitions."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Memorise the definitions of both absolute and comparative advantage clearly. Comparative advantage must mention lower opportunity cost."
+      }
     }
   ],
   recall: {

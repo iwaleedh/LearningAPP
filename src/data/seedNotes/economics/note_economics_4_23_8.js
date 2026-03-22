@@ -102,6 +102,15 @@ export const note_economics_4_23_8 = {
         title: "Common Mistake",
         text: "Students treat infrastructure needs as solved by 'just building roads.' Reality: roads need maintenance (institutional capacity); power requires fuel supply; schools need teachers (incentives, training). Also, infrastructure isn't enough \u2014 roads to nowhere help nobody; invest where economic activity clusters. Don't say 'infrastructure is necessary'; say 'it's necessary but not sufficient; needs to be well-targeted and maintained, requiring institutional quality.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Liquidity ratios and capital adequacy ratios are vital supervisory tools to ensure banks have enough buffers to withstand sudden financial shocks or bank runs."
+      }
     }
   ],
   recall: {

@@ -16,6 +16,15 @@ export const note_economics_3_17_0 = {
         title: "Exam Tip",
         text: "Always link market failure to the case for intervention: monopoly power, information asymmetry, externalities, or inequality. Avoid claiming intervention is needed without identifying the specific market failure first."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A strong answer on intervention relies on correctly identifying the specific market failure occurring. Make sure to clearly link monopoly power, asymmetric information, or externalities to misallocation of resources before suggesting a policy."
+      }
     }
   ],
   recall: {

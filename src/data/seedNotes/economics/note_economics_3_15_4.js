@@ -78,6 +78,15 @@ export const note_economics_3_15_4 = {
         title: "Common Mistake",
         text: "Oligopolists are *interdependent*\u2014each firm's decisions affect rivals' profits and strategies. Candidates often analyze oligopolies as if they were monopolies (ignore rivals) or perfect competitors (ignore interdependence). Always discuss reaction functions, kinked demands, or collusion."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Interdependence is the defining characteristic of an oligopoly. Always use game theory concepts or the kinked demand curve to explain why firms in an oligopoly prefer price stability and non-price competition."
+      }
     }
   ],
   recall: {

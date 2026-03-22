@@ -109,6 +109,15 @@ export const note_economics_4_21_9 = {
         title: "Common Mistake",
         text: "Students cite Piketty without understanding r > g. Don't just say 'capital returns are high' \u2014 explain comparative dynamics and why this drives inequality over generations. Also, Piketty's wealth tax proposal is controversial; evaluate critically rather than endorsing it. Some economists argue r > g is temporary or requires specific conditions. Edexcel expects nuanced engagement: 'Piketty's evidence is strong on wealth concentration, but policy solutions are debated.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Evaluate policy responses to external shocks carefully. Expansionary fiscal policy can offset an external demand shock but risks worsening a fiscal deficit."
+      }
     }
   ],
   recall: {

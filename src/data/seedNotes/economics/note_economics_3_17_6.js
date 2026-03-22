@@ -16,6 +16,15 @@ export const note_economics_3_17_6 = {
         title: "Exam Tip",
         text: "Labour markets warrant special intervention cases because they differ from product markets: immobility, information imbalance (employers know more), and externalities (e.g. training creates spillovers). Use these distinctions to justify labour-specific policies."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Labor market interventions are usually justified by the existence of low pay, inequality, and monopsony buyer power. Clearly explain how uncorrected free markets might lead to in-work poverty and severe occupational immobility."
+      }
     }
   ],
   recall: {

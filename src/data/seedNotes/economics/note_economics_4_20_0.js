@@ -18,6 +18,15 @@ export const note_economics_4_20_0 = {
         title: "Exam Tip",
         text: "The BoP must balance (Current + Capital + Financial accounts = 0). If reporting a 'deficit,' specify which account. Examiners penalise vague statements like 'the UK has a BoP problem'\u2014you must identify current account vs capital issues."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When discussing factors limiting development, distinguish between primary product dependency, savings gap (Harrod-Domar), foreign currency gap, and institutional factors like corruption."
+      }
     }
   ],
   recall: {

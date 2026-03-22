@@ -102,6 +102,15 @@ export const note_economics_4_23_0 = {
         title: "Common Mistake",
         text: "Students assume HDI is a perfect development measure. It's not \u2014 it misses inequality (Costa Rica high HDI but unequal), omits environmental degradation (Mauritius high HDI, coral bleaching), and ignores governance quality. Also, averaging three indices masks trade-offs: a country can have high health but low education. Don't say 'HDI is better than GDP' absolutely; say 'HDI captures non-income dimensions but has limitations.' Edexcel expects critical perspective, not advocacy."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Asymmetric information acts as a severe market failure in financial markets, where borrowers often know more about their risk profiles than the lenders estimating them."
+      }
     }
   ],
   recall: {

@@ -19,6 +19,15 @@ export const note_economics_3_17_9 = {
         title: "Common Mistake",
         text: "Anti-discrimination laws reduce discrimination but do not fully eliminate occupational immobility caused by skills gaps, geographic mismatch, or caring responsibilities. Laws improve access but do not solve structural labour market barriers."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Anti-discrimination laws correct market failures involving asymmetric information and prejudice. Mention how improved mobility policy (e.g. subsidised transport or housing) shifts the labour supply curve outwards, boosting aggregate productivity."
+      }
     }
   ],
   recall: {

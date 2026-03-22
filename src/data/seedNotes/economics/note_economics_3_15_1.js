@@ -115,6 +115,15 @@ export const note_economics_3_15_1 = {
         title: "Exam Tip",
         text: "CR4 (or CR5) sums the market share of the 4 largest firms as a percentage. CR3 > 50% suggests oligopoly; CR1 < 25% suggests perfect competition. Use actual CR values from case studies to classify market structures\u2014examiners reward precise measurement over vague judgments."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "If asked to calculate an n-firm concentration ratio, just sum the market shares of the 'n' largest firms. Remember to state that a high concentration ratio signals an oligopolistic or monopolistic market structure."
+      }
     }
   ],
   recall: {

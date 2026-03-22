@@ -19,6 +19,15 @@ export const note_economics_4_19_1 = {
         title: "Exam Tip",
         text: "In comparative advantage calculations, always show opportunity costs explicitly\u2014don't just claim 'Country A has lower prices.' Examiners test whether you can derive specialisation patterns systematically. One numerical error loses the entire chain of reasoning."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When assessing the impacts of poverty, highlight the cycle of poverty and how poor health and education lead to low human capital, restricting future economic growth."
+      }
     }
   ],
   recall: {

@@ -101,6 +101,15 @@ export const note_economics_4_20_6 = {
         title: "Exam Tip",
         text: "Exchange rate determination involves multiple competing forces (PPP, interest rate differentials, expectations). Don't reduce to a single cause. Exams test whether you explain why predictions fail\u2014market psychology and shocks override models."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "The World Bank is distinct from the IMF as it focuses primarily on long-term capital structural projects and poverty reduction in developing countries."
+      }
     }
   ],
   recall: {

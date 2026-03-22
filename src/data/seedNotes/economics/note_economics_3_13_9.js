@@ -16,6 +16,15 @@ export const note_economics_3_13_9 = {
         title: "Common Mistake",
         text: "Satisficing is NOT 'settling for mediocrity.' It's a rational response to information costs and bounded rationality\u2014achieving a satisfactory outcome rather than incurring infinite search costs for the optimal one. Frame it as economically rational, not lazy."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Satisficing is best defined as making just enough profit to keep shareholders happy while allowing management to pursue other objectives. Ensure you use the term 'asymmetric information' when explaining why managers can get away with it."
+      }
     }
   ],
   recall: {

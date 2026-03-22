@@ -104,6 +104,15 @@ export const note_economics_4_22_7 = {
         title: "Common Mistake",
         text: "Students confuse deficit (annual flow) with debt (stock). A country can run deficits for years and still have low debt if growth is strong; another can have surpluses but high debt if past deficits accumulate. Also, don't assume deficits are always bad (Keynesian stimulus uses deficits) or surpluses always good (belt-tightening in recession worsens depression). Edexcel expects: 'Fiscal balance matters cyclically: deficits in downturns stabilize demand; surpluses in booms prevent overheating.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Evaluate the limitations of using interest rates to control inflation, especially if inflation is cost-push (supply-side shock) rather than demand-pull."
+      }
     }
   ],
   recall: {

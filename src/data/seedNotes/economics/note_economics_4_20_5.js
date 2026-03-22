@@ -95,6 +95,15 @@ export const note_economics_4_20_5 = {
         title: "Common Mistake",
         text: "Don't assume currency intervention always succeeds. If fundamentals don't support the target rate, sterilisation costs rise, reserves deplete, and speculation overwhelms. Thailand 1997 is the classic exam case study of failed intervention."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "Clarify that the IMF focuses primarily on global monetary cooperation, financial stability, and providing short-term balance of payments support, often tied to conditionalities."
+      }
     }
   ],
   recall: {

@@ -19,6 +19,15 @@ export const note_economics_3_17_8 = {
         title: "Exam Tip",
         text: "Tax incidence (final burden) falls on whichever side of the market is more inelastic. A labour tax burden falls more on inelastic workers than elastic employers \u2014 use supply and demand slopes to trace who really pays."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Taxation on incomes reduces the supply of labour (disincentive effect), particularly at the margins. Evaluate the 'Laffer curve' concept\u2014that taxing top earners too heavily might result in a brain drain and lower total tax revenue."
+      }
     }
   ],
   recall: {

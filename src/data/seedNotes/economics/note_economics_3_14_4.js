@@ -17,6 +17,15 @@ export const note_economics_3_14_4 = {
         title: "Common Mistake",
         text: "The LRAC is an envelope of SRACs, NOT a smoothed average. Each point on the LRAC represents the lowest cost plant size for that output level. Examiners test whether you understand why LRAC falls (economies) then rises (diseconomies) despite constant returns eventually."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When defining the long-run, state that all factors of production are variable. The LRAC curve is an 'envelope' curve containing all short-run average cost curves; make sure you accurately label its U-shape."
+      }
     }
   ],
   recall: {

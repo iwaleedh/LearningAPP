@@ -92,6 +92,15 @@ export const note_economics_4_22_0 = {
         title: "Common Mistake",
         text: "Students treat public spending as uniformly 'wasteful' or 'beneficial' without analysing composition. Current spending on benefits may address poverty; investment spending builds productive capacity. Don't say 'spending is too high/low' without context. Also, avoid assuming higher spend always reduces inequality \u2014 regressive spending (subsidies to farmers, fossil fuels) harms equity. Edexcel expects critical analysis of spending type and incidence."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "You must be able to state the core functions of financial markets confidently: facilitating saving, lending to businesses/individuals, providing forward markets, and facilitating the exchange of equities."
+      }
     }
   ],
   recall: {

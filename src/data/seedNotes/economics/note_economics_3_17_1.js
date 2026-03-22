@@ -18,6 +18,15 @@ export const note_economics_3_17_1 = {
         title: "Common Mistake",
         text: "Not all monopolies harm consumers or warrant breaking up. Natural monopolies (high barriers to entry, declining average costs) may be more efficient when large. Distinguish between structural and exploitative monopolies before recommending controls."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating merger controls, state that competition authorities often block mergers that substantially lessen competition. However, a great evaluation point is that they might allow it if sufficient economies of scale will directly benefit consumers."
+      }
     }
   ],
   recall: {

@@ -74,6 +74,15 @@ export const note_economics_4_22_11 = {
         title: "Common Mistake",
         text: "Students simplify 2008 policy as 'just bail-outs and stimulus' without recognizing their contradictions. Bail-outs without resolution created long-term distortions; austerity after stimulus was premature (Keynesian logic says maintain support until recovery). QE risked inflation but inflation remained low due to weak demand. Don't polarize as 'right or wrong' \u2014 examiners expect you to weigh trade-offs. Say: 'Bail-outs necessary but lax regulation enabled excess risk-taking.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A strong conclusion on central banks should synthesize their conflicting objectives, such as keeping interest rates low to stimulate growth versus raising them to control inflation."
+      }
     }
   ],
   recall: {

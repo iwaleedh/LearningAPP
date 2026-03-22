@@ -108,6 +108,15 @@ export const note_economics_3_13_4 = {
         title: "Exam Tip",
         text: "Use real-world examples to anchor definitions: horizontal (e.g. brewery mergers), vertical (e.g. brewery + pubs), conglomerate (e.g. brewing + insurance). This prevents confusing integration types under exam pressure and demonstrates depth of understanding."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Be precise when classifying integration. Dinguish clearly between backward vertical integration (taking over a supplier) and forward vertical integration (taking over a retailer/distributor) using real-world examples."
+      }
     }
   ],
   recall: {

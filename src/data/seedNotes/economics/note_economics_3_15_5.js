@@ -84,6 +84,15 @@ export const note_economics_3_15_5 = {
         title: "Exam Tip",
         text: "Explicit collusion (cartels) is illegal; tacit collusion (price leadership, focal points) is harder to prosecute. Cartels are unstable\u2014incentives to cheat are strong. Examiners reward analyzing *why* cartels break down: individual firm profit if defect > collective profit if cooperate."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When assessing cartels, explain the conditions that make collusion easier: a small number of firms, similar costs, high entry barriers, and stable demand. Note that the inherent incentive to cheat usually breaks cartels apart."
+      }
     }
   ],
   recall: {

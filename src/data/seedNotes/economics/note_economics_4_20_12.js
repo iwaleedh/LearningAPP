@@ -100,6 +100,15 @@ export const note_economics_4_20_12 = {
         title: "Common Mistake",
         text: "Don't conflate short-term competitiveness boosts with sustainable improvements. Currency depreciation helps temporarily, but if inflation erodes gains, competitiveness returns to baseline. Only structural reforms (education, infrastructure) create durable advantages."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Discuss the impact of inequality on economic growth using the marginal propensity to consume (MPC): lower-income groups have a higher MPC, so high inequality can suppress aggregate demand."
+      }
     }
   ],
   recall: {

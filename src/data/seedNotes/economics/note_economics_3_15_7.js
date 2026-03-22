@@ -17,6 +17,15 @@ export const note_economics_3_15_7 = {
         title: "Exam Tip",
         text: "Monopoly requires *barriers to entry*: legal (patents, licenses), structural (economies of scale, brand loyalty), or strategic (predatory pricing, vertical integration). When analyzing monopolies, always identify the *specific* barrier\u2014don't assume 'one firm = monopoly' without explanation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When drawing a monopoly diagram, clearly shade the area of supernormal profit. The best evaluations weigh the static inefficiencies (allocative and productive) against potential dynamic efficiencies enabled by high profit margins."
+      }
     }
   ],
   recall: {

@@ -20,6 +20,15 @@ export const note_economics_4_19_5 = {
         title: "Exam Tip",
         text: "Terms of Trade = (Index of Export Prices / Index of Import Prices) \u00d7 100. A rise benefits exporters; a fall harms them. Examiners test whether you link ToT changes to real income effects\u2014don't just calculate mechanically."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Discuss structural factors as causes of inequality, such as technological change favoring skilled workers over unskilled, and the impact of globalisation on domestic wage disparities."
+      }
     }
   ],
   recall: {

@@ -16,6 +16,15 @@ export const note_economics_3_14_0 = {
         title: "Common Mistake",
         text: "Revenue = Price \u00d7 Quantity, but confuse total, average, and marginal concepts at your peril. Candidates lose marks by confusing 'revenue is constant' (price-taker) with 'revenue per unit is constant.' These demand different interpretations."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always clearly define the difference between Total, Average, and Marginal Revenue. A frequent error in MCQs and calculations is confusing the formulas for MR and AR."
+      }
     }
   ],
   recall: {

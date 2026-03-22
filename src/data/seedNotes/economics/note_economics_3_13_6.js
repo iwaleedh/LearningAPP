@@ -113,6 +113,15 @@ export const note_economics_3_13_6 = {
         title: "Exam Tip",
         text: "Growth constraints often interact: financial constraints (borrowed funds, retained profit limits) interact with managerial constraints (key person dependency, culture). Highest marks go to answers recognizing these linkages, not listing constraints in isolation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When discussing constraints on business growth, remember to consider both external factors (like market size and lack of access to finance) and internal factors (such as owner objectives aiming for a satisficing lifestyle)."
+      }
     }
   ],
   recall: {

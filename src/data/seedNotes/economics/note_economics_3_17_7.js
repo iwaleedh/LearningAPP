@@ -18,6 +18,15 @@ export const note_economics_3_17_7 = {
         title: "Common Mistake",
         text: "Minimum wage does not always cause unemployment \u2014 it depends on whether the binding minimum is set above, at, or only slightly above equilibrium wage. If labour supply is inelastic, employment may barely fall. Evaluate empirical elasticities, don't assume automatic job loss."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When discussing the National Minimum Wage (NMW), draw an accurate diagram showing classical unemployment (where supply exceeds demand). A key counter-argument is that in a Monopsony market, setting a NMW can actually increase employment."
+      }
     }
   ],
   recall: {

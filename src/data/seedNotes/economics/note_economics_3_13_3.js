@@ -113,6 +113,15 @@ export const note_economics_3_13_3 = {
         title: "Common Mistake",
         text: "Organic growth is NOT simply 'slower than inorganic growth.' The key distinction is *internal asset expansion via reinvested profits* vs. external acquisition. Examiners mark down answers that treat speed as the defining feature rather than mechanism."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Make sure you can clearly define organic (internal) growth. A classic evaluation point is that while organic growth is lower risk and avoids culture clashes, it might be too slow in a rapidly evolving market."
+      }
     }
   ],
   recall: {

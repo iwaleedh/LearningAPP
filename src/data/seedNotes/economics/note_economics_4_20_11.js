@@ -91,6 +91,15 @@ export const note_economics_4_20_11 = {
         title: "Exam Tip",
         text: "International competitiveness requires both price factors (exchange rates, labour costs) and non-price factors (R&D, quality, branding). Exams test whether you explain why low-cost countries don't always win\u2014Germany competes despite high wages through innovation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Identify causes of inequality beyond just 'wages'\u2014consider the rising return on capital relative to labour and the impact of regressive tax systems."
+      }
     }
   ],
   recall: {

@@ -94,6 +94,15 @@ export const note_economics_4_22_1 = {
         title: "Common Mistake",
         text: "Students blame 'big government' ideology for spending growth without recognizing structural drivers. Ageing is demographic, not political choice. Also, distinguish between cyclical (temporary, automatic stabilizer) and structural (permanent policy shift) drivers. Don't say 'spending just keeps rising' \u2014 analyse why. Edexcel expects you to separate policy changes (new entitlements) from automatic responses (recession welfare). Use data to ground argument."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Asymmetric information is a major cause of market failure in finance. Understand adverse selection and moral hazard, and be prepared to apply them specifically to banking and insurance."
+      }
     }
   ],
   recall: {

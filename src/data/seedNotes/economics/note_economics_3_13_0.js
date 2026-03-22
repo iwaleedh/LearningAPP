@@ -99,6 +99,15 @@ export const note_economics_3_13_0 = {
         title: "Exam Tip",
         text: "Examiners often test whether you can explain why public firms exist despite lower efficiency: focus on market failures (positive externalities, merit goods) and equity concerns. Always justify the trade-off between efficiency losses and social benefits when comparing firm types."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A common mistake is confusing public sector organisations (owned and run by the state) with public limited companies (PLCs), which are firmly in the private sector. Always be precise when defining ownership."
+      }
     }
   ],
   recall: {

@@ -84,6 +84,15 @@ export const note_economics_4_20_8 = {
         title: "Exam Tip",
         text: "Devaluation = policy-induced fixed-rate decrease; depreciation = floating-rate market decrease. Use correct terms consistently. Explain mechanism: devaluation makes exports cheaper, but if passed to prices, real effects depend on wage-price dynamics."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A fundamental distinction that examiners look for: income is a flow of money over time, whereas wealth is a stock of assets at a given point in time."
+      }
     }
   ],
   recall: {

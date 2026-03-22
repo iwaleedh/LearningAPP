@@ -103,6 +103,15 @@ export const note_economics_4_23_7 = {
         title: "Common Mistake",
         text: "Students romanticize microfinance as 'silver bullet' for poverty. While impactful, it's not sufficient: microcredit is for small entrepreneurs, not unemployed or disabled populations; high repayment rates require business success (not guaranteed). Mobile banking helps but requires phone infrastructure, digital literacy, and trust in non-banks. Don't say 'microfinance solves poverty'; say 'it addresses credit gap for entrepreneurship; when combined with education and infrastructure, poverty reduction accelerates.' Evidence shows mixed long-run outcomes."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Distinguish between narrow money (notes/coins and liquid deposits) and broad money, as quantitative easing aims specifically to increase the broad money supply."
+      }
     }
   ],
   recall: {

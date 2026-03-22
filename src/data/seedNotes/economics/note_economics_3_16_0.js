@@ -19,6 +19,15 @@ export const note_economics_3_16_0 = {
         title: "Exam Tip",
         text: "Derived demand for labour depends on the derived demand for the product being produced. If product demand falls, labour demand falls \u2014 this is key to explaining unemployment in declining industries."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always state that the demand for labour is 'derived' from the demand for the goods and services that the labour produces. If demand for the product rises, the Marginal Revenue Product (MRP) of labour shifts outwards."
+      }
     }
   ],
   recall: {

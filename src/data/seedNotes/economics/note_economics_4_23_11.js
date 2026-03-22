@@ -88,6 +88,15 @@ export const note_economics_4_23_11 = {
         title: "Common Mistake",
         text: "Students assume migration is unambiguously positive (remittances help) or negative (brain drain harms). Reality is complex: brain drain reduces growth if high-skill workers emigrate (African doctors work overseas), but if return or remit, net effect positive. Also, remittances can reduce incentive to develop local taxation (easier to consume remittances than tax locals), undermining institutional development. Edexcel expects: 'Migration effects are ambiguous; high-skill emigration harms, but return migration and remittances can develop nations.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Regulatory capture\u2014where regulators become too sympathetic or overly influenced by the commercial banks they oversee\u2014is a high-level evaluating factor for central bank effectiveness."
+      }
     }
   ],
   recall: {

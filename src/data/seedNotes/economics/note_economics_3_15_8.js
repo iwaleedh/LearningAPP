@@ -17,6 +17,15 @@ export const note_economics_3_15_8 = {
         title: "Common Mistake",
         text: "Natural monopoly \u2260 inherently efficient. It's where LRAC falls over the entire relevant demand range, making one firm cheaper than many. But natural monopoly markets *still* need regulation to prevent monopoly pricing. Examiners test whether you separate 'natural' from 'desirable.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A Natural Monopoly occurs when a single firm can supply the entire market at a lower LRAC than two or more firms. Always sketch the downward sloping LRAC curve indicating continuous economies of scale to earn top marks."
+      }
     }
   ],
   recall: {

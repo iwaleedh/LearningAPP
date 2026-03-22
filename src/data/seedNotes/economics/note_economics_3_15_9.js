@@ -19,6 +19,15 @@ export const note_economics_3_15_9 = {
         title: "Exam Tip",
         text: "Third-degree price discrimination requires: market power (P>MC), separate markets with different elasticities, and no arbitrage. Charge higher prices to inelastic segments (e.g. business flyers) and lower to elastic segments (e.g. leisure travelers). Always state when it's *not* possible (goods resellable)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "For third-degree price discrimination, you must state three conditions: price-making power, the ability to split the market, and importantly, differing price elasticities of demand (PED) in those distinct sub-markets."
+      }
     }
   ],
   recall: {

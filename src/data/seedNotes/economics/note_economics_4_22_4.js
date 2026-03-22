@@ -96,6 +96,15 @@ export const note_economics_4_22_4 = {
         title: "Common Mistake",
         text: "Students confuse 'progressive' (tax rate rises) with 'high taxes.' Progressive 10% on all is less revenue than flat 20%. Also, don't assume progressive is always better; if it kills growth incentives, equity gains may reverse (lower growth reduces jobs, wages fall). Some evidence suggests modest progressivity (e.g. top rate 40%) balances goals better than 50%+ rates. Edexcel expects: 'Progressive is equitable but faces behavioral response; optimal rate is empirical question.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "Contagion is a vital concept: understand how systemic risk means the failure of one highly interconnected financial institution can trigger a collapse across the global financial system."
+      }
     }
   ],
   recall: {

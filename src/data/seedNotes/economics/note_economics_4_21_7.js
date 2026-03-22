@@ -98,6 +98,15 @@ export const note_economics_4_21_7 = {
         title: "Common Mistake",
         text: "Students assume inequality always harms growth (Kuznets inverted-U is debunked). Say instead: 'extreme inequality harms growth but moderate inequality may provide work incentives.' Also, don't confuse correlation with causation \u2014 does inequality cause low growth, or does poverty cause both? Edexcel expects you to acknowledge competing channels. Some inequality provides incentives; too much creates instability."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Evaluate the real burden of national debt: who holds the debt (domestic vs foreign investors) and what the borrowed money was used for (capital investment vs current spending) are critical distinctions."
+      }
     }
   ],
   recall: {

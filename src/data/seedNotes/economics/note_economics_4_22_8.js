@@ -94,6 +94,15 @@ export const note_economics_4_22_8 = {
         title: "Common Mistake",
         text: "Students assume all deficits are equivalent. In reality, cyclical deficits reverse naturally as growth returns (no policy action needed); structural deficits persist and require tax hikes or spending cuts. Also, estimating structural deficits is hard \u2014 economists disagree on potential GDP. Don't say 'deficit is bad' without distinguishing type. Edexcel expects: 'Cyclical deficits are stabilizers; structural deficits require policy action if they're judged unsustainable.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "Understand unconventional monetary policy, particularly Quantitative Easing (QE). Explain exactly how the central bank buying bonds aims to increase the money supply and lower long-term interest rates."
+      }
     }
   ],
   recall: {

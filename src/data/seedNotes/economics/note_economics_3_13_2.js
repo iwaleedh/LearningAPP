@@ -142,6 +142,15 @@ export const note_economics_3_13_2 = {
         title: "Exam Tip",
         text: "When comparing SMEs and large corporations, remember that growth stage and resource constraints are key, not firm size alone. Use this to explain why SMEs often innovate despite lower R&D budgets\u2014focus on agility and market niches."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Do not just list the benefits of large corporations. You must also evaluate why SMEs survive and thrive, such as offering highly specialised products, providing bespoke customer service, or operating in niche markets."
+      }
     }
   ],
   recall: {

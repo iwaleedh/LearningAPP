@@ -89,6 +89,15 @@ export const note_economics_4_20_7 = {
         title: "Common Mistake",
         text: "Revaluation = policy-induced fixed-rate increase; appreciation = floating-rate market increase. Mixing terminology costs marks. The effects differ: revaluation can be reversed, appreciation may persist if fundamentals shifted."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating international institutions, structural adjustment programs (SAPs) and their strict conditionalities (e.g., forced privatisation) are a strong topic for critical analysis."
+      }
     }
   ],
   recall: {

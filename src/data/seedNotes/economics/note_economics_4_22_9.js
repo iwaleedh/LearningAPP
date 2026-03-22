@@ -96,6 +96,15 @@ export const note_economics_4_22_9 = {
         title: "Common Mistake",
         text: "Students assume high debt is always unsustainable. This is too simple. Japan has 260% debt/GDP but low rates (domestic savers, low default risk); Greece had 170% and crisis occurred (foreign borrowers, lost confidence). Debt sustainability depends on growth, interest rates, currency control, and confidence. Also, don't confuse nominal and real debt accumulation. Examiners expect: 'High debt constrains policy but isn't automatically catastrophic; sustainability depends on growth and investor confidence.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When discussing banking supervision, explain why banks must balance profitability against liquidity and security, and how regulations (like capital buffers) enforce this."
+      }
     }
   ],
   recall: {

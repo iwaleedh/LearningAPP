@@ -16,6 +16,15 @@ export const note_economics_3_16_7 = {
         title: "Exam Tip",
         text: "Public-sector wages are often set by independent pay review bodies (e.g. for NHS, teachers), not market forces. Examiners expect you to explain how pay settlements differ from competitive private-sector wage determination."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Public sector wages are politically determined. Be ready to discuss the trade-offs: strict public sector pay caps can help control government deficits but could lead to severe staff shortages and brain drains to the private sector."
+      }
     }
   ],
   recall: {

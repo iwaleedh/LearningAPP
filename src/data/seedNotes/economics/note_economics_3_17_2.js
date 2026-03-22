@@ -18,6 +18,15 @@ export const note_economics_3_17_2 = {
         title: "Exam Tip",
         text: "A contestable market can have few firms but behave competitively if barriers to entry are low. Examiners expect you to explain why contestability (threat of entry) constrains incumbent firm behaviour even without actual competition."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Deregulation aims to increase market contestability. Support your point with examples (like the telecommunications or airline industries), but evaluate by mentioning that incumbent firms might still use predatory pricing to crush new entrants."
+      }
     }
   ],
   recall: {

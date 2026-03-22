@@ -18,6 +18,15 @@ export const note_economics_4_18_5 = {
         title: "Exam Tip",
         text: "Beyond logistics and shipping, address digital infrastructure costs (broadband, cyber security) and their uneven distribution globally. Modern exams test whether you recognise that communication cost reduction enables services offshoring, not just goods trade."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "While free trade brings benefits, always balance your argument by discussing the risk of over-specialisation and structural unemployment in declining domestic industries."
+      }
     }
   ],
   recall: {

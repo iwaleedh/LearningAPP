@@ -94,6 +94,15 @@ export const note_economics_4_20_3 = {
         title: "Common Mistake",
         text: "Don't attribute all global imbalances to 'unfair trade.' Discuss structural factors: demographic ageing (Germany saves more), capital market development (US attracts investment), and reserve currency status (dollar strength). Sophisticated answers go beyond mercantilist rhetoric."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Other strategies like Fairtrade schemes, microfinance, and joint ventures can be excellent evaluation points. Discuss their localized success versus scalability across a whole economy."
+      }
     }
   ],
   recall: {

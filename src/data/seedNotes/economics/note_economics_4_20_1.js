@@ -97,6 +97,15 @@ export const note_economics_4_20_1 = {
         title: "Common Mistake",
         text: "Don't assume current account deficits are always harmful. They reflect inward capital flows (investment in future productivity). Problem arises only if deficits persist due to low savings and high consumption\u2014context matters enormously."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Market-orientated strategies like trade liberalisation and privatisation should be evaluated in context; they often require strong institutional frameworks and property rights to be effective."
+      }
     }
   ],
   recall: {

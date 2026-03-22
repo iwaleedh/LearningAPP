@@ -88,6 +88,15 @@ export const note_economics_4_23_9 = {
         title: "Common Mistake",
         text: "Students assume external accountability mechanisms (ICC, asset recovery) solve corruption. They help, but institutional change is slow and internally driven (revolutions, elite consensus). Also, don't assume corruption is only in poor nations (wealthy nations have softer brands: regulatory capture, lobbying). The difference is scale: poor-nation corruption diverts resources; wealthy-nation corruption redirects policy. Edexcel expects: 'Governance improvement requires internal institutional reform, reinforced by international pressure; solutions are long-term and context-specific.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Macroprudential regulation is implemented to avert systemic risks across the whole financial sector, setting policies like stress testing to assure long-term financial stability."
+      }
     }
   ],
   recall: {

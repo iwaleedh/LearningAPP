@@ -144,6 +144,15 @@ export const note_economics_4_21_2 = {
         title: "Common Mistake",
         text: "Students list drivers without explaining causal links or feedback loops. For example, poor health \u2192 reduced productivity \u2192 lower earnings \u2192 poverty trap. Don't just say 'discrimination causes poverty'; explain the mechanism. Also avoid treating poverty traps as just 'being stuck' \u2014 define precisely: insufficient income to invest in human capital or escape."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Know the qualities of a 'good' tax system according to Adam Smith: it should be equitable, economical, convenient, and certain."
+      }
     }
   ],
   recall: {

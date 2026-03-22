@@ -112,6 +112,15 @@ export const note_economics_3_15_2 = {
         title: "Common Mistake",
         text: "Perfect competition requires *all* six assumptions: many buyers/sellers, homogeneous products, free entry/exit, perfect information, price-takers, and zero profits in equilibrium. Candidates often skip information and assume firms earn zero by hand-waving; explain the mechanism rigorously."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In Perfect Competition, you must accurately draw the market and firm diagrams side-by-side. Ensure the firm's AR=MR=D curve is perfectly elastic and originates precisely from the market equilibrium price."
+      }
     }
   ],
   recall: {

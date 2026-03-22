@@ -95,6 +95,15 @@ export const note_economics_4_23_4 = {
         title: "Common Mistake",
         text: "Students blame commodities as inherently 'cursed.' The curse is conditional: if institutions are weak, commodity revenues fuel corruption (Nigeria); with strong governance, they fund development (Norway, Botswana). Also, diversification is easier said than done \u2014 new industries require capital, skills, infrastructure (which commodity wealth can provide, but corrupt leaders often don't). Don't say 'commodity dependency causes poverty'; say 'it creates risks; institutional quality and diversification policy determine outcomes.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Understand that the primary function of a central bank is not just setting interest rates, but acting as the banker to both commercial banks and the government."
+      }
     }
   ],
   recall: {

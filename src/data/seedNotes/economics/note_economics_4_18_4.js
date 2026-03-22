@@ -69,6 +69,15 @@ export const note_economics_4_18_4 = {
         title: "Common Mistake",
         text: "Don't treat market-opening political changes (e.g. China's 2001 WTO accession) as instantaneous GDP boosters. Discuss lag effects, structural adjustment costs, and distributional impacts across sectors to demonstrate economic rigour."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A strong evaluation point is questioning the realism of comparative advantage assumptions, such as zero transport costs and perfect occupational mobility of labour."
+      }
     }
   ],
   recall: {

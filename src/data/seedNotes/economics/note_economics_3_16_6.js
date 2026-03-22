@@ -19,6 +19,15 @@ export const note_economics_3_16_6 = {
         title: "Common Mistake",
         text: "Monopsony power does not automatically lead to lower wages and employment. If monopsonists operate with increasing labour supply costs, they may employ similar quantities but still pay below MRP. Distinguish between monopsony power and actual wage/employment outcomes."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When discussing non-competitive labour markets, the Monopsony diagram is crucial. Show that the Marginal Cost of Labour (MCL) lies above the Average Cost of Labour (ACL) because to hire an extra worker, you must raise the wage for all."
+      }
     }
   ],
   recall: {

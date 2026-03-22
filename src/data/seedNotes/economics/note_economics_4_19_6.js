@@ -19,6 +19,15 @@ export const note_economics_4_19_6 = {
         title: "Common Mistake",
         text: "Don't overstate WTO effectiveness. Discuss genuine limits: weak enforcement, dispute resolution delays, exemptions (intellectual property, agriculture), and the breakdown of Doha Round negotiations. Nuance here separates grade 8s from grade 7s."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "To reach the top bands, evaluate the impact of inequality: while it can incentivise enterprise and hard work, extreme inequality can lead to social friction and underutilised human capital."
+      }
     }
   ],
   recall: {

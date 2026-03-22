@@ -86,6 +86,15 @@ export const note_economics_4_23_10 = {
         title: "Common Mistake",
         text: "Students oversimplify conflict as 'bad for development' without analyzing channels. Conflicts affect different dimensions differently: physical capital destroyed quickly, but human capital (skilled emigration) may recover if peace incentivizes return. Also, some post-conflict nations develop fast (Rwanda data: 8%+ growth 1994\u20132010) if governance improves; others stagnate. Don't assume conflict = permanent poverty. Edexcel expects: 'Conflict devastates development, but recovery speed depends on institutional and investor confidence restoration.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When assessing the central bank, highlight the dual tension between its role as the lender of last resort and the moral hazard this guarantee creates."
+      }
     }
   ],
   recall: {

@@ -86,6 +86,15 @@ export const note_economics_4_21_6 = {
         title: "Common Mistake",
         text: "Students treat these drivers as one-off barriers rather than self-reinforcing traps. Poor institutions \u2192 low FDI inflow \u2192 technology stagnation \u2192 continued poverty. Don't say 'colonial legacy explains everything' \u2014 explain mechanisms. Also avoid geographic determinism ('geography is destiny'). Development is possible despite geography (Singapore example), so institutions and policy matter more. Cite evidence, not just theory."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Never confuse the fiscal deficit (the annual shortfall in government revenue compared to spending) with the national debt (the total accumulated outstanding borrowing)."
+      }
     }
   ],
   recall: {

@@ -78,6 +78,15 @@ export const note_economics_4_22_6 = {
         title: "Common Mistake",
         text: "Students assume Laffer curve proves 'tax cuts raise revenue,' which is ideological overreach. The curve exists theoretically, but peak is uncertain. Only if initial rate is past the peak would cuts raise revenue; UK evidence suggests top rate is below peak, so cuts lose revenue. Also, Laffer focuses on income tax; interaction with VAT, capital gains doesn't follow same curve. Edexcel expects: 'Laffer curve is possible but empirically unclear where peak lies; tax cuts \u2260 automatic revenue gain.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Make sure you can accurately explain the transmission mechanism of monetary policy: how a change in the base rate works through the economy to affect aggregate demand and inflation."
+      }
     }
   ],
   recall: {

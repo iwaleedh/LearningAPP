@@ -18,6 +18,15 @@ export const note_economics_4_19_4 = {
         title: "Common Mistake",
         text: "Don't treat emerging economy growth as one-directional benefit. Discuss real costs: wage pressure post-China shock in manufacturing, global deflationary pressures, and resource depletion. Sophisticated answers weigh trade-offs."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "A Gini coefficient of 0 represents perfect equality, while 1 implies perfect inequality. Ensure you understand what a change in this number over time signifies for an economy."
+      }
     }
   ],
   recall: {

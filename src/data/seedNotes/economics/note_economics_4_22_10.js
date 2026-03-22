@@ -79,6 +79,15 @@ export const note_economics_4_22_10 = {
         title: "Common Mistake",
         text: "Students favour one policy tool (e.g. 'always use monetary policy' or 'fiscal is best') regardless of context. This is incorrect. Also, conflating policy aims: fiscal policy can pursue equity (redistribution) or efficiency (supply-side investment), but not both simultaneously if budgets are tight. Don't say 'do everything'; explain constraints and trade-offs. Edexcel values context-awareness and sequencing (short-run demand, long-run supply)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Analyze the moral hazard created when a central bank acts as a 'lender of last resort'; if banks believe they are 'too big to fail', they may take reckless risks."
+      }
     }
   ],
   recall: {

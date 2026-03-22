@@ -17,6 +17,15 @@ export const note_economics_3_14_2 = {
         title: "Common Mistake",
         text: "Diminishing returns (falling marginal product) is NOT the same as negative returns (output falls). The Law of Diminishing Returns kicks in *immediately*\u2014each extra worker adds less than the previous one. Examiners penalize conflating this with negative returns."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The Law of Diminishing Returns only applies in the short run when at least one factor of production is fixed. Never use this to explain long-run diseconomies of scale; they are fundamentally different concepts."
+      }
     }
   ],
   recall: {

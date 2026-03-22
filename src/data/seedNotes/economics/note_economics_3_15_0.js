@@ -110,6 +110,15 @@ export const note_economics_3_15_0 = {
         title: "Common Mistake",
         text: "Productive efficiency (min AC) and allocative efficiency (P=MC) are *independent*. Perfect competition achieves both; monopoly achieves neither. Examiners test whether you evaluate market structures on both dimensions, not just one. Draw both curves on your graphs."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Efficiency definitions are heavily tested. Allocative efficiency is strictly P=MC (or AR=MC). Productive efficiency is the lowest point on the AC curve (MC=AC). Dynamic efficiency relates to supernormal profit being reinvested over time."
+      }
     }
   ],
   recall: {

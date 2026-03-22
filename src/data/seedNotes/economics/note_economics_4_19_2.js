@@ -17,6 +17,15 @@ export const note_economics_4_19_2 = {
         title: "Common Mistake",
         text: "Don't ignore transport costs, immobility of factors, and increasing returns to scale when discussing comparative advantage limitations. Real exam scenarios (Brexit, nearshoring) require you to explain when traditional trade theory fails."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Be precise: income is a flow of money over time, whereas wealth is a stock of assets at a given point in time. Inequality in wealth is typically much greater than inequality in income."
+      }
     }
   ],
   recall: {

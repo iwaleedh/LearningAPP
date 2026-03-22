@@ -16,6 +16,15 @@ export const note_economics_3_14_9 = {
         title: "Exam Tip",
         text: "The shutdown point is where Price = AVC (not AC), because fixed costs are sunk. Break-even is where P = AC (all costs covered). Candidates score highly by explaining *why* a loss-making firm continues operating short-term (covers variable costs) but exits long-term."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The shutdown condition is a classic exam trick. In the short run, a firm will continue producing as long as AR is greater than or equal to AVC. They only shut down immediately if they cannot cover their variable costs."
+      }
     }
   ],
   recall: {

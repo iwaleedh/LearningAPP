@@ -17,6 +17,15 @@ export const note_economics_3_14_7 = {
         title: "Exam Tip",
         text: "MES is the output level where LRAC is minimized and remains flat (constant returns to scale). Interpret from graphs: if LRAC flattens at 10,000 units, MES=10,000. Use MES to explain why single-firm industries exist (high MES) vs. fragmented sectors (low MES)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Minimum Efficient Scale (MES) is the lowest level of output at which long-run average costs are minimised. In exams, use MES to explain why some markets naturally tend towards oligopoly or natural monopoly."
+      }
     }
   ],
   recall: {

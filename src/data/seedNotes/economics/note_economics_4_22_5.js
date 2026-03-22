@@ -89,6 +89,15 @@ export const note_economics_4_22_5 = {
         title: "Common Mistake",
         text: "Students assume higher taxes always reduce incentives proportionally. This is incorrect \u2014 responses vary. Some high-earners reduce hours; others work harder to maintain income target (income effect vs substitution). Evidence on labour supply is mixed; macroeconomic model (Keynesian vs supply-side) matters hugely. Don't say 'high taxes kill growth' categorically. Say: 'Response depends on elasticity, which is empirically debated; some tax rise can fund investment with net growth gain.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Central banks have two main functions: implementing monetary policy (especially regarding inflation) and acting as the regulator and lender of last resort to the banking system."
+      }
     }
   ],
   recall: {

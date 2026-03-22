@@ -17,6 +17,15 @@ export const note_economics_3_13_10 = {
         title: "Exam Tip",
         text: "Agency costs include more than just monitoring: divorce of ownership from control creates incentives for managerial self-dealing, empire-building, and shirking. When analyzing multinationals or public companies, explicitly link governance structures to agency problem severity."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The divorce of ownership and control is key here. Be explicit that shareholders (principals) want maximum returns, while managers (agents) may seek higher salaries or leisure, requiring incentives like share options to align their goals."
+      }
     }
   ],
   recall: {

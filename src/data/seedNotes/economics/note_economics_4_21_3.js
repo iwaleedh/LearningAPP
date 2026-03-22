@@ -108,6 +108,15 @@ export const note_economics_4_21_3 = {
         title: "Common Mistake",
         text: "Students confuse income and wealth inequality, treating them as synonymous. They are not \u2014 a wealthy person with low income exists (retirees with assets), as does a high-income person with low wealth (new professional). Also, students forget that wealth includes property, stocks, and savings, not just income flows. Don't say 'they measure the same thing.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Clearly differentiate direct taxes (levied on income/wealth) from indirect taxes (levied on expenditure). Understand how they affect incentive to work versus inequality."
+      }
     }
   ],
   recall: {

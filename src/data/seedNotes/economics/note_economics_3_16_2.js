@@ -16,6 +16,15 @@ export const note_economics_3_16_2 = {
         title: "Exam Tip",
         text: "For most workers, the substitution effect (higher wage \u2192 work more) dominates the income effect (higher wage \u2192 work less), making labour supply positively sloped. However, recognise that backwards-bending curves can occur at very high wages."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Distinguish carefully between the supply of labour to a specific firm (which may be elastic) and the supply of labour to the whole economy. Key determinants include migration, taxation, benefits, and non-monetary perks."
+      }
     }
   ],
   recall: {

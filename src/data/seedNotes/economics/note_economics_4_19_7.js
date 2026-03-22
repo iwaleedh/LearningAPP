@@ -17,6 +17,15 @@ export const note_economics_4_19_7 = {
         title: "Exam Tip",
         text: "Categorise trading blocs precisely: EU = customs union + single market; USMCA = free trade area; ASEAN = looser cooperation. Examiners penalise vague classifications. Use specific examples (rules of origin, tariff externalities) to show deep understanding."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'key',
+        title: "Examiner Tip",
+        text: "Memorise the exactly three components of the HDI: life expectancy at birth, mean and expected years of schooling, and GNI per capita (PPP)."
+      }
     }
   ],
   recall: {

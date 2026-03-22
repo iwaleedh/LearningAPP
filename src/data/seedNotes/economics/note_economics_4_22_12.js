@@ -107,6 +107,15 @@ export const note_economics_4_22_12 = {
         title: "Common Mistake",
         text: "Students say 'multinational tax avoidance is wrong' without understanding why it's hard to stop. Firms exploit legal differences between tax systems (not illegal); international coordination is slow; developing countries compete for FDI by offering low rates. Don't assume BEPS and global minimum tax will 'solve' avoidance \u2014 implementation gaps and loopholes remain. Edexcel expects nuance: 'Avoidance is legal but erodes tax bases; policy responses face coordination challenges.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Evaluate the independence of central banks. Explain why operational independence from political pressure is critical for credible inflation targeting."
+      }
     }
   ],
   recall: {

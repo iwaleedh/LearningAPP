@@ -16,6 +16,15 @@ export const note_economics_3_17_4 = {
         title: "Exam Tip",
         text: "Intervention may improve allocative efficiency (output at P=MC) but worsen productive efficiency (highest output per input). Distinguish between these two types of efficiency when evaluating regulatory outcomes."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Price controls (like RPI-X or rate of return regulation) force monopolies to cut costs. To hit top bands, evaluate regulatory capture\u2014the risk that regulators become too sympathetic or lenient towards the incredibly wealthy firms they monitor."
+      }
     }
   ],
   recall: {

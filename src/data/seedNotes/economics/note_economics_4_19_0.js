@@ -18,6 +18,15 @@ export const note_economics_4_19_0 = {
         title: "Common Mistake",
         text: "Don't assume comparative advantage is static. Modern exams test whether you recognise emerging economies (India, Vietnam) have shifted their comparative advantage over time through capital accumulation and education. Static Ricardian models are incomplete."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Do not confuse absolute and relative poverty. Absolute is about basic survival needs, whereas relative poverty depends on the income distribution within a specific society."
+      }
     }
   ],
   recall: {

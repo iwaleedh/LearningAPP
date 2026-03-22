@@ -106,6 +106,15 @@ export const note_economics_4_21_8 = {
         title: "Common Mistake",
         text: "Students over-claim causation from The Spirit Level correlation. Higher inequality correlates with worse health, but reverse causation exists (poor health reduces earnings, increases poverty). Also, confounders like weak institutions or low income per capita matter. Don't say 'inequality causes all health problems.' Say: 'The Spirit Level suggests relative deprivation mechanisms; however, alternative explanations require testing.' Edexcel values methodological thinking."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When discussing global macroeconomic policies, analyze how interconnectedness means domestic policy decisions (like US interest rate changes) rapidly create spillover effects worldwide."
+      }
     }
   ],
   recall: {

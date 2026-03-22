@@ -17,6 +17,15 @@ export const note_economics_3_14_3 = {
         title: "Exam Tip",
         text: "In short-run cost calculations, always start with fixed costs (unchanged) then add variable costs proportional to output. The AC curve = (FC + VC)/Q; UC-shaped due to diminishing returns and fixed cost spreading. Graph this relationship to cement understanding."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When sketching short-run cost curves, ensure the Marginal Cost (MC) curve always cuts the Average Total Cost (ATC) and Average Variable Cost (AVC) curves at their lowest points. Examiners fiercely penalise mathematically impossible diagrams."
+      }
     }
   ],
   recall: {

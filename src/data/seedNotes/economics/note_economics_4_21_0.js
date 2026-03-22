@@ -95,6 +95,15 @@ export const note_economics_4_21_0 = {
         title: "Common Mistake",
         text: "Students often treat absolute and relative poverty as separate concepts rather than complementary measures. Don't just define them \u2014 explicitly compare their policy implications. Also avoid assuming higher GDP automatically reduces absolute poverty; explain the distribution mechanism required."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Be aware of the changing trends in public expenditure over time and understand how demographic changes, such as an ageing population, put pressure on future spending."
+      }
     }
   ],
   recall: {

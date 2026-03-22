@@ -18,6 +18,15 @@ export const note_economics_3_16_9 = {
         title: "Exam Tip",
         text: "Occupational immobility creates structural unemployment: workers may be willing to work but lack skills for available jobs. This justifies retraining policies, but explain why retraining is costly and takes time."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Occupational immobility is driven by a lack of transferable skills. When suggesting policy solutions, recommend specific, targeted retraining programmes or apprenticeships rather than just vague 'education' spending."
+      }
     }
   ],
   recall: {

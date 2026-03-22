@@ -104,6 +104,15 @@ export const note_economics_4_20_10 = {
         title: "Common Mistake",
         text: "Don't treat the Marshall-Lerner condition as guaranteed in the short run. The J-curve shows initial BoP worsens post-devaluation (existing contracts, slow quantity adjustment) before improving. Missing this timeframe destroys your analysis of devaluation effectiveness."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Ensure you can draw and interpret a Lorenz curve correctly: the further it bows away from the line of perfect equality, the greater the inequality."
+      }
     }
   ],
   recall: {

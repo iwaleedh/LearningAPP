@@ -18,6 +18,15 @@ export const note_economics_3_16_8 = {
         title: "Common Mistake",
         text: "Geographical immobility is not just about transport costs. High housing prices, family ties, regional identity, and reluctance to relocate create persistent regional unemployment differences \u2014 the immobility is structural, not just logistical."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Geographical immobility occurs when workers cannot easily move to where jobs are. Always link this to housing market disparities (high rent in cities) and strong family or social ties preventing migration."
+      }
     }
   ],
   recall: {

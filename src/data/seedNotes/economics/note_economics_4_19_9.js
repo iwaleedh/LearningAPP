@@ -15,6 +15,15 @@ export const note_economics_4_19_9 = {
         title: "Exam Tip",
         text: "When justifying protectionism, use economic rationales: infant industry, negative externalities, dumping, or strategic autonomy. Political protectionism (lobbying, job preservation) scores lower\u2014separate economics from politics in your analysis."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A fully labelled tariff diagram showing consumer surplus loss, producer surplus gain, tax revenue, and net welfare loss is often required for top marks in analysis."
+      }
     }
   ],
   recall: {

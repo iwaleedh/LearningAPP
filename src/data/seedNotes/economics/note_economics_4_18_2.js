@@ -69,6 +69,15 @@ export const note_economics_4_18_2 = {
         title: "Common Mistake",
         text: "Don't assume international migration always benefits both source and destination economies equally. In essays, address the brain drain impact on developing nations and wage suppression risks in recipient countries\u2014this shows integrated analysis."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always consider the differing impacts of globalisation on developed, emerging, and developing economies to show strong analytical depth."
+      }
     }
   ],
   recall: {

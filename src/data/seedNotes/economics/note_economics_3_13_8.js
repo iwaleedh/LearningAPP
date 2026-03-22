@@ -15,6 +15,15 @@ export const note_economics_3_13_8 = {
         title: "Exam Tip",
         text: "Distinguish carefully: profit maximization (MR=MC, economic profit), revenue maximization (MR=0), and growth maximization (minimize profit per unit to expand). Exam questions often hinge on identifying which objective explains observed behavior in case studies."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "If asked about business objectives, do not just assume profit maximisation (MC=MR). Be prepared to accurately draw the Revenue Maximisation (MR=0) and Sales Volume Maximisation (AC=AR) conditions on a firm revenue/cost diagram."
+      }
     }
   ],
   recall: {

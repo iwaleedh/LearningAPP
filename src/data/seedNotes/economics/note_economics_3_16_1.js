@@ -18,6 +18,15 @@ export const note_economics_3_16_1 = {
         title: "Common Mistake",
         text: "Students confuse labour demand elasticity with price elasticity of demand. Labour demand elasticity depends on: product demand elasticity, proportion of labour costs in total costs, and ease of factor substitution \u2014 not product price sensitivity."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating the elasticity of labour demand, use the availability of substitutes (like automation or machinery) and the proportion of labour cost to total cost. Higher substitutability means highly elastic labour demand."
+      }
     }
   ],
   recall: {

@@ -18,6 +18,15 @@ export const note_economics_4_19_11 = {
         title: "Common Mistake",
         text: "Don't treat protectionism impacts as uniformly negative. Short-term: protects jobs and revenue. Long-term: retaliation, inefficiency lock-in, higher consumer prices. High-scoring answers distinguish timeframes and sectoral winners/losers."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When explaining how central banks manage exchange rates, discuss both buying/selling foreign currency reserves and the use of monetary policy (interest rates)."
+      }
     }
   ],
   recall: {

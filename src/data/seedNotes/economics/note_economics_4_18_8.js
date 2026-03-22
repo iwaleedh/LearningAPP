@@ -144,6 +144,15 @@ export const note_economics_4_18_8 = {
         title: "Exam Tip",
         text: "Be specific about globalisation costs: deindustrialisation in developed regions, environmental externalities, cultural homogenisation, and labour standards races-to-the-bottom. Vague answers lose marks; contextualised examples from different economies score higher."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Do not confuse the terms of trade with the balance of trade. The terms of trade refers to prices, while the balance of trade refers to values and volumes."
+      }
     }
   ],
   recall: {

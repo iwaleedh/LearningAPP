@@ -96,6 +96,15 @@ export const note_economics_3_13_7 = {
         title: "Common Mistake",
         text: "Demergers are NOT always successful. Candidates often assume demergers improve efficiency, but examiners test whether you can identify when they fail\u2014e.g. loss of economies of scale, high transaction costs. Always weigh pros against context-specific costs."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Demergers are frequently examined regarding their motives. Focus on the core objective of eliminating diseconomies of scale and allowing management to focus purely on the core business activities."
+      }
     }
   ],
   recall: {

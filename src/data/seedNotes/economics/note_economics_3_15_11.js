@@ -18,6 +18,15 @@ export const note_economics_3_15_11 = {
         title: "Exam Tip",
         text: "Contestable markets assume zero sunk costs, allowing hit-and-run entry. Incumbent prices near MC despite few rivals because threat of entry disciplines behavior. Use airline routes (post-deregulation) as examples: low sunk costs allowed Southwest to undercut legacy carriers instantly."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Contestability is all about the threat of entry. An absence of sunk costs makes hit-and-run entry possible. Emphasize that it is the threat of competition, not necessarily the underlying market structure, that dictates pricing behaviour."
+      }
     }
   ],
   recall: {

@@ -17,6 +17,15 @@ export const note_economics_3_14_6 = {
         title: "Common Mistake",
         text: "Diseconomies of scale arise from firm growth, NOT market conditions. Examiners test whether you avoid blaming external factors. Focus: managerial coordination costs, worker alienation, supply bottlenecks *within* the firm drive LRAC upward."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating the limits to firm growth, diseconomies of scale are crucial. Clearly link terms like poor communication, lack of coordination, and worker alienation to the upwards sloping portion of the LRAC curve."
+      }
     }
   ],
   recall: {

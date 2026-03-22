@@ -88,6 +88,15 @@ export const note_economics_3_15_6 = {
         title: "Common Mistake",
         text: "Price competition is wasteful (race-to-the-bottom); non-price competition (branding, quality, service) is strategic. Don't assume all competitive tactics are price wars. Oligopolists often favour non-price competition precisely because it's less destabilizing\u2014this signals rational self-interest."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Examiners love questions on non-price competition. Be ready to discuss real-world examples like loyalty cards, branding, and after-sales service, and evaluate the heavy sunk costs involved in creating brand loyalty."
+      }
     }
   ],
   recall: {

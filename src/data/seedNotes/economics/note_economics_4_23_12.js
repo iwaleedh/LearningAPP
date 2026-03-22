@@ -100,6 +100,15 @@ export const note_economics_4_23_12 = {
         title: "Common Mistake",
         text: "Students treat paradigms as sequential truth progressions ('Washington Consensus failed, now institutionalism is right'). Actually, each era reflects real lessons but also reflects power dynamics and donor preferences. Interventionism works in capable states (Singapore) but fails in corrupt ones (Nigeria). Don't assume one approach is universally best. Aid effectiveness debate remains unsettled \u2014 some argue conditionality (impose reforms as aid condition) helps; others say it undermines local ownership. Edexcel expects balanced evaluation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Discuss the unwinding of Quantitative Easing (Quantitative Tightening) as a modern central banking challenge, notably its impact on bond yields and government debt."
+      }
     }
   ],
   recall: {

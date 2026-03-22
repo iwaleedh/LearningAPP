@@ -96,6 +96,15 @@ export const note_economics_4_21_1 = {
         title: "Common Mistake",
         text: "Students assume headcount ratio is sufficient to measure poverty. This is incorrect \u2014 Edexcel expects you to critique it for ignoring depth of poverty. The poverty gap accounts for this; MPI adds dimensions of health, education, and living standards. Avoid saying 'headcount is simpler so it's better.' Explain trade-offs between simplicity and accuracy."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "To achieve high marks, evaluate the significance of public expenditure not just in terms of aggregate demand, but also its supply-side impact heavily influencing productivity and potential growth."
+      }
     }
   ],
   recall: {

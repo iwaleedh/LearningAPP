@@ -17,6 +17,15 @@ export const note_economics_3_16_5 = {
         title: "Exam Tip",
         text: "In perfectly competitive labour markets, firms are wage-takers: they cannot set wages below the market rate (workers will leave) or above it (no profit motive). Wages equal workers' marginal revenue product (MRP)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In a competitive labour market diagram, show the individual firm as a wage taker perfectly elastic supply curve (AC = MC of labour). The wage is determined purely by the intersection of aggregate demand and supply."
+      }
     }
   ],
   recall: {

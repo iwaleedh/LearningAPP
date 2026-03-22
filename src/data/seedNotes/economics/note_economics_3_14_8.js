@@ -17,6 +17,15 @@ export const note_economics_3_14_8 = {
         title: "Common Mistake",
         text: "Normal profit is NOT zero profit\u2014it's the opportunity cost of capital and entrepreneurship. Supernormal (economic) profit is *above* normal profit. A firm earning exactly its opportunity cost is competitive; earning *more* has supernormal profit. Precision in terminology matters."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Normal profit (AR=AC) includes the opportunity cost of the entrepreneur's time and capital. Supernormal (or abnormal) profit is any profit made above this level. Ensure you define profit strictly in these economic terms, not just accounting terms."
+      }
     }
   ],
   recall: {

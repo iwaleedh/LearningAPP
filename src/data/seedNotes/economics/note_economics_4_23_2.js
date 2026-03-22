@@ -73,6 +73,15 @@ export const note_economics_4_23_2 = {
         title: "Common Mistake",
         text: "Students list alternatives without critically evaluating trade-offs. MPI is detailed but data-intensive (sparse for poor countries). GPI is holistic but requires debatable adjustments (how much reduce GDP for pollution?). Happy Planet Index correlates with tiny economies (Costa Rica ranks high; Luxembourg low due to high carbon). Don't just say 'these are better than HDI'; say 'each measure emphasizes different values; no single metric fits all purposes. Choose based on policy question.' Edexcel values methodological awareness."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Market rigging, such as manipulating benchmark interest rates (e.g., LIBOR), is a critical example of market failure stemming from collusion in the financial sector."
+      }
     }
   ],
   recall: {

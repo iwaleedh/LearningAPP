@@ -16,6 +16,15 @@ export const note_economics_3_17_5 = {
         title: "Common Mistake",
         text: "Government cannot always correct market failure better than markets self-correct. Government failure (rent-seeking, information asymmetry, unintended consequences) may make intervention worse than the original problem."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Government failure is the ultimate evaluation tool. Explain how intervention can deepen market inefficiencies due to information gaps (regulators not knowing true firm costs), massive administrative costs, or unintended secondary consequences."
+      }
     }
   ],
   recall: {

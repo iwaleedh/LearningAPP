@@ -99,6 +99,15 @@ export const note_economics_3_15_3 = {
         title: "Exam Tip",
         text: "Monopolistic competition = perfect competition structure + differentiated products. This creates downward-sloping demand curves and short-run supernormal profits, but free entry eliminates them long-term. Use burger chains as examples: many rivals, entry, but product differentiation = power."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "For Monopolistic Competition, remember that firms make normal profit in the long run because there are low barriers to entry. Your diagram must show the AR curve touching the AC curve at the profit-maximising output."
+      }
     }
   ],
   recall: {

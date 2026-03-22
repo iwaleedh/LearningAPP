@@ -17,6 +17,15 @@ export const note_economics_3_16_3 = {
         title: "Common Mistake",
         text: "Not all occupations have the same labour supply elasticity. Professional services often have inelastic supply (higher qualifications), while unskilled labour may have more elastic supply \u2014 always justify why supply is elastic or inelastic for a specific labour market."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The elasticity of labour supply heavily depends on the skill level required. Unskilled jobs have a highly elastic supply as workers can easily switch, whereas professions requiring long training times (e.g. doctors) have very inelastic supply."
+      }
     }
   ],
   recall: {

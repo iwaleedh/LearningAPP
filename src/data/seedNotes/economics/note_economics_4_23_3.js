@@ -104,6 +104,15 @@ export const note_economics_4_23_3 = {
         title: "Common Mistake",
         text: "Students assume commodity price volatility is just 'luck' requiring hedging. While true, also address structural issue: Prebisch-Singer suggests commodity dependence itself is problematic. Evidence on declining terms of trade is mixed (oil rose 1970s\u20132000s, fell 2014\u20132020); don't overstate inevitability. Also, volatile revenues can be managed (sovereign wealth funds buffer shocks), but this requires institutional capacity. Edexcel expects: 'Volatility and declining terms of trade are risks; policy responses (diversification, stabilization funds) matter.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Systemic risk and contagion explain why a failure in one financial institution can quickly cascade through the entire global banking system due to high interconnectivity."
+      }
     }
   ],
   recall: {

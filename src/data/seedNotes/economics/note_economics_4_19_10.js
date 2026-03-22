@@ -19,6 +19,15 @@ export const note_economics_4_19_10 = {
         title: "Exam Tip",
         text: "Compare tariffs vs quotas rigorously: tariffs generate tax revenue but cause welfare loss through deadweight; quotas create scarcity rents for license holders and offer no government revenue. Exams test whether you explain why countries choose differently."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Make sure you can contrast floating exchange rates (determined purely by market forces) with managed systems (central bank intervention to keep the rate within a bounds)."
+      }
     }
   ],
   recall: {

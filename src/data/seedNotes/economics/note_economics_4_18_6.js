@@ -18,6 +18,15 @@ export const note_economics_4_18_6 = {
         title: "Common Mistake",
         text: "Don't oversimplify FDI as 'always good' for developing economies. Address potential negative impacts: profit repatriation, market distortion, resource depletion, and technological dependency. Balanced evaluation is crucial for high marks."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Cite recent real-world examples, such as the rise of the BRICS nations and China's shifting role from manufacturing to higher-value goods, to illustrate changing trade patterns."
+      }
     }
   ],
   recall: {

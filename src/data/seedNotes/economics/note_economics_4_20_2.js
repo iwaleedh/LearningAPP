@@ -88,6 +88,15 @@ export const note_economics_4_20_2 = {
         title: "Exam Tip",
         text: "When assessing rebalancing policies, evaluate policy mixes: devaluation addresses price competitiveness; supply-side reforms boost non-price competitiveness; fiscal tightening reduces demand. Exams test your grasp that single policies often fail without complementary measures."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When assessing interventionist strategies like import substitution or managed exchange rates, always consider the risk of government failure and misallocation of resources."
+      }
     }
   ],
   recall: {

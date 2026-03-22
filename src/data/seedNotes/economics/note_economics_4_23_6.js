@@ -90,6 +90,15 @@ export const note_economics_4_23_6 = {
         title: "Common Mistake",
         text: "Students assume debt relief is obviously good. True, high debt constrains spending, but debt relief without institutional reform wastes opportunity. Some relieved nations resumed destructive spending (no ongoing conditionality). Also, capital flight reflects weak property rights and bad governance; relief doesn't address root causes. Edexcel expects: 'Debt relief is necessary but insufficient; must combine with institutional reforms to prevent capital flight recurrence and ensure investment of freed fiscal space.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Most major central banks operate with an inflation target (e.g., 2% for the Bank of England). Explain how this anchors expectations to prevent wage-price spirals."
+      }
     }
   ],
   recall: {

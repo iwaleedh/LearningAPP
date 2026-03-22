@@ -18,6 +18,15 @@ export const note_economics_4_19_8 = {
         title: "Common Mistake",
         text: "Don't confuse trade creation (net welfare gain) with trade diversion (net welfare loss). Their magnitude depends on tariff levels and external bloc efficiency. A bloc can experience both simultaneously\u2014demonstrate you understand the granularity."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Be prepared to critically evaluate the HDI. Point out its limitations, such as ignoring income inequality, environmental degradation, and political freedoms, and suggest complementary measures like the IHDI."
+      }
     }
   ],
   recall: {

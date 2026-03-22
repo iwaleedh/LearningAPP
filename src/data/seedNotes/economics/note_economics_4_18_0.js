@@ -93,6 +93,15 @@ export const note_economics_4_18_0 = {
         title: "Common Mistake",
         text: "Don't confuse rising trade-to-GDP ratios with actual economic globalisation. A country's trade-to-GDP may increase simply because trade grows slower than GDP contraction in recessions. Always examine both numerator and denominator separately to assess genuine trade integration."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When defining globalisation, ensure you mention the increasing interdependence and integration of global economies, not just the increase in international trade."
+      }
     }
   ],
   recall: {

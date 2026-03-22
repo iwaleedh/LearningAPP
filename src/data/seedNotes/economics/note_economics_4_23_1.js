@@ -90,6 +90,15 @@ export const note_economics_4_23_1 = {
         title: "Common Mistake",
         text: "Students cite HDI limitations without proposing alternatives or acknowledging data challenges. IHDI exists but requires inequality data, which is sparse for poor countries. Don't just say 'HDI is flawed'; say 'these limitations are recognized; IHDI partially addresses inequality, but comprehensive sustainability measures remain underdeveloped.' Also, measuring what's omitted (governance, freedom) is hard. Edexcel expects: 'No perfect measure; choose metric for purpose: inequality \u2192 IHDI, sustainability \u2192 Genuine Progress Indicator.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The principal-agent problem is a frequent issue in finance: bank managers (agents) take massive short-term risks for bonuses, jeopardising shareholders (principals)."
+      }
     }
   ],
   recall: {

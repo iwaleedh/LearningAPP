@@ -100,6 +100,15 @@ export const note_economics_4_21_5 = {
         title: "Common Mistake",
         text: "Students blame globalisation uniformly as 'causing inequality' without nuance. Globalisation raises inequality between countries (convergence) but within countries depends on skill distribution. Also, claims like 'declining unions cause inequality' need qualification: unions raise wages for members but may exclude others. Distinguish between correlation and causation; Edexcel expects critical appraisal of evidence."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When discussing the impact of tax changes, consider the Laffer curve effect: higher tax rates do not always guarantee higher tax revenues if they create strong disincentives to work or encourage tax evasion."
+      }
     }
   ],
   recall: {

@@ -119,6 +119,15 @@ export const note_economics_4_22_13 = {
         title: "Common Mistake",
         text: "Students assume policymakers have full information and can execute optimal plans instantly. In reality, macroeconomic policy is riddled with uncertainty and delays. Don't say 'government should just do X' \u2014 acknowledge implementation constraints. Also, avoid one-sided critiques; ineffectiveness doesn't mean don't try, but recognize costs of failed targeting. Edexcel expects realism: 'Policy constraints are real, but inaction has costs too; policy must navigate uncertainty.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "To show up-to-date knowledge, mention contemporary challenges like the difficulty of reversing QE or dealing with stagflation scenarios."
+      }
     }
   ],
   recall: {

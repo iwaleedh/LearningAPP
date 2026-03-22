@@ -78,6 +78,15 @@ export const note_economics_4_20_9 = {
         title: "Exam Tip",
         text: "Exchange rate appreciation: harms export competitiveness (demand falls, jobs lost in tradables) but helps consumers via cheaper imports and lower inflation. High-scoring essays weigh these trade-offs and discuss distributional impacts across regions."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The Gini coefficient runs from 0 (perfect equality) to 1 (perfect inequality); applying this to real-world data demonstrates strong application skills."
+      }
     }
   ],
   recall: {

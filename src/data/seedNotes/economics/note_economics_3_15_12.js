@@ -19,6 +19,15 @@ export const note_economics_3_15_12 = {
         title: "Common Mistake",
         text: "Sunk costs are *irrelevant* to current decisions\u2014they are past spending that cannot be recovered. Candidates confuse sunk costs with variable costs (relevant) or fixed costs (partly relevant). When deciding whether to shut down, ignore sunk costs; this is crucial for contestability theory."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Sunk costs are fixed costs that cannot be recovered upon exiting the market (e.g. specialised machinery, heavy advertising). They represent the purest form of barrier to entry and exit, significantly reducing market contestability."
+      }
     }
   ],
   recall: {

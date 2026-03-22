@@ -98,6 +98,15 @@ export const note_economics_4_22_2 = {
         title: "Common Mistake",
         text: "Students assume 'higher spending share = slower growth' (right-wing assumption) or 'higher spending = faster growth' (left-wing assumption). Research shows no clear pattern \u2014 composition matters more than size. Also, don't just cite Wagner's Law as inevitable; it's a correlation driven by specific conditions (development stage, preferences). High-spend Scandinavia has strong growth; high-spend Southern Europe stagnates. Say: 'Spending composition and efficiency matter more than total % of GDP.'"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When discussing market failure, mention market rigging explicitly. Give examples such as the manipulation of the LIBOR rate or insider trading to ground your theory in reality."
+      }
     }
   ],
   recall: {

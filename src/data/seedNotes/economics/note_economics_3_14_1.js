@@ -16,6 +16,15 @@ export const note_economics_3_14_1 = {
         title: "Exam Tip",
         text: "The PED-revenue link is crucial: elastic demand (|PED|>1) means revenue rises when price falls; inelastic means revenue rises when price rises. Always draw the MR curve below the demand curve to visualize why TR peaks when MR=0, not when demand is elastic."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "You must know the link between PED and MR. When MR is positive, demand is price elastic. When MR is negative, demand is inelastic. Output where MR=0 corresponds to unitary elasticity and total revenue is maximised."
+      }
     }
   ],
   recall: {
