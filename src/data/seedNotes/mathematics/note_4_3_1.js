@@ -61,6 +61,16 @@ export const note_mathematics_4_3_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'Sketch parametric curves by tabulating key points. Note the direction of travel. Know standard conics: parabola (at\u00b2, 2at), ellipse (a cos t, b sin t), rectangular hyperbola (ct, c/t).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Pay close attention to the given domain of the parameter t. An exam question might only require you to sketch a specific restricted segment of the curve, not the entire shape!"
+            },
+            terms: []
         }
     ],
     recall: {

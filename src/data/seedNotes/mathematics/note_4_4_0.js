@@ -56,6 +56,16 @@ export const note_mathematics_4_4_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'General binomial: (1+x)\u207f = \u03a3 [n(n\u22121)\u2026(n\u2212r+1)/r!] x\u02b3. Valid for |x|<1 when n is not a positive integer. The series is infinite for fractional/negative n.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The formula given in the formula booklet for (1+x)^n requires the first term to be exactly 1. If you have (a+bx)^n, you must factor out 'a^n' first. Forgetting to apply the power n to the factored-out 'a' is a very common error."
+            },
+            terms: []
         }
     ],
     recall: {

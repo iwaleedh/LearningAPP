@@ -53,6 +53,16 @@ export const note_mathematics_3_2_8 = {
             id: 'summary', type: 'summary',
             data: { text: 'Trig proofs: start from the more complex side, apply known identities step-by-step, reach the other side. Never work from both sides. Never assume the result.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In proof questions, never cross the equals sign! Start on one side (usually the messier one) and logically deduce it to the other. Working out both sides simultaneously towards a middle ground is poor practice and often penalized."
+            },
+            terms: []
         }
     ],
     recall: {

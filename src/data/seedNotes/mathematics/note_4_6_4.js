@@ -56,6 +56,16 @@ export const note_mathematics_4_6_4 = {
             id: 'summary', type: 'summary',
             data: { text: 'Substitution: u = g(x), convert du, change limits for definite integrals. Key patterns: chain rule reversal, \u222b u\u207f du, trig forms.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using substitution for definite integrals, always change the limits from 'x' values to 'u' values immediately. This saves time and avoids the risk of forgetting to substitute your 'x' expression back in at the end."
+            },
+            terms: []
         }
     ],
     recall: {

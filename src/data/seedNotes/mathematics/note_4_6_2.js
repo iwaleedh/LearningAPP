@@ -48,6 +48,16 @@ export const note_mathematics_4_6_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Partial fractions + integration: split into A/(ax+b), B/(ax+b)\u00b2, (Cx+D)/(x\u00b2+a\u00b2) etc. Integrate each using standard results: 1/(ax+b) \u2192 (1/a)ln|ax+b|.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always clearly state your partial fractions before integrating. A very common error is forgetting to divide by 'a' when integrating 1/(ax+b) to give (1/a)ln|ax+b|."
+            },
+            terms: []
         }
     ],
     recall: {

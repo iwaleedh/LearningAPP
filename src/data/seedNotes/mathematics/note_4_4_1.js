@@ -48,6 +48,16 @@ export const note_mathematics_4_4_1 = {
             id: 'summary', type: 'summary',
             data: { text: '(a+bx)\u207f = a\u207f(1+bx/a)\u207f. Valid for |bx/a| < 1. Always factor out a\u207f first. State the range of validity in every answer.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If you expand (a+bx)^n by factoring out a, your expansion is in terms of (b/a)x. The validity condition becomes |(b/a)x| < 1. Always solve this inequality to explicitly state the range of valid x values."
+            },
+            terms: []
         }
     ],
     recall: {

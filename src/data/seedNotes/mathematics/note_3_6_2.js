@@ -53,6 +53,16 @@ export const note_mathematics_3_6_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Fixed-point iteration: x_{n+1} = g(x_n) converges when |g′(x)| < 1 near the root. To verify a root to n d.p., use change of sign in the interval [x \u2212 0.5\u00d710^{\u2212n}, x + 0.5\u00d710^{\u2212n}].' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When writing down iterative values, show them to the required accuracy but keep the full unrounded values stored in your calculator's 'ANS' key to carry forward to the next iteration."
+            },
+            terms: []
         }
     ],
     recall: {

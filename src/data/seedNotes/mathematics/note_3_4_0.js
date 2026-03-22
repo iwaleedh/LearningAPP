@@ -62,6 +62,16 @@ export const note_mathematics_3_4_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Must know: d/dx(tan x) = sec\u00b2x; d/dx(sec x) = sec x tan x; d/dx(cosec x) = \u2212cosec x cot x; d/dx(cot x) = \u2212cosec\u00b2x. Combine with chain rule for composite forms.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Do not confuse the derivatives of trigonometric functions. A quick way to remember: the derivatives of 'co' functions (cos, cosec, cot) always have a negative sign."
+            },
+            terms: []
         }
     ],
     recall: {

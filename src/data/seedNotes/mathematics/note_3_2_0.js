@@ -68,6 +68,16 @@ export const note_mathematics_3_2_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'sec x = 1/cos x; cosec x = 1/sin x; cot x = cos x/sin x. Key identities: 1 + tan\u00b2x = sec\u00b2x and 1 + cot\u00b2x = cosec\u00b2x. Each is undefined at certain values.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember the 'third letter' trick to avoid early mistakes: coSec = 1/Sin, sEc = 1/Cos, coT = 1/Tan. Writing cosec x as 1/cos x is a frequent penalty error."
+            },
+            terms: []
         }
     ],
     recall: {

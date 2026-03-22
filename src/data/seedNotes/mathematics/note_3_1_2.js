@@ -70,6 +70,16 @@ export const note_mathematics_3_1_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'f\u207b\u00b9 undoes f. Only one-to-one functions have inverses (restrict domain if needed). Method: swap x and y, rearrange. Domain of f\u207b\u00b9 = range of f. Graph: reflection of f in y = x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When asked for the domain of an inverse function f\u207b\u00b9, never try to evaluate it algebraically. Always find the range of the original function f first, because the domain of f\u207b\u00b9 is exactly equal to the range of f."
+            },
+            terms: []
         }
     ],
     recall: {

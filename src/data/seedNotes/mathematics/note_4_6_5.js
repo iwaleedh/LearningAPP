@@ -48,6 +48,16 @@ export const note_mathematics_4_6_5 = {
             id: 'summary', type: 'summary',
             data: { text: 'Parametric area: \u222b y(dx/dt)dt with t-limits. Direction matters (dx/dt may be negative). Always take |result| for area.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that the area is the integral of y * (dx/dt) dt. A common mistake is to just integrate y with respect to t. Always check which t-values correspond to the upper and lower x-limits to ensure your area does not compute as negative."
+            },
+            terms: []
         }
     ],
     recall: {

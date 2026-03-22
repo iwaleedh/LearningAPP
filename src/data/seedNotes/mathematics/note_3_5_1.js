@@ -64,6 +64,16 @@ export const note_mathematics_3_5_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'Reverse chain rule: \u222bf(ax+b)dx = F(ax+b)/a + c. Divide by the coefficient of x. Only valid for linear inner functions. Check by differentiating.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When integrating f(ax + b), you must divide by the derivative of the inner function 'a'. Always quickly differentiate your answer mentally to check you don't have a stray factor of 'a' floating around."
+            },
+            terms: []
         }
     ],
     recall: {

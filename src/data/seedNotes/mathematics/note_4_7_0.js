@@ -64,6 +64,16 @@ export const note_mathematics_4_7_0 = {
             id: 'summary', type: 'summary',
             data: { text: '3D vectors: column form, |a|=\u221a(a\u2081\u00b2+a\u2082\u00b2+a\u2083\u00b2), unit vector = a/|a|. Displacement AB=b\u2212a. Addition and scalar multiplication component-wise.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When calculating the magnitude of a vector with negative components, ensure you bracket the negative values when squaring them (e.g., (-3)^2 = 9). A common calculator error is writing -3^2, which evaluates to -9."
+            },
+            terms: []
         }
     ],
     recall: {

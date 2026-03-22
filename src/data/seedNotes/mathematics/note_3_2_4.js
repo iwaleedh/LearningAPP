@@ -60,6 +60,16 @@ export const note_mathematics_3_2_4 = {
             id: 'summary', type: 'summary',
             data: { text: 'sin 2A = 2 sin A cos A. cos 2A has three forms. tan 2A = 2 tan A/(1 \u2212 tan\u00b2A). Rearranged: sin\u00b2A = (1 \u2212 cos 2A)/2; cos\u00b2A = (1 + cos 2A)/2.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The cos(2x) identity has three forms. Plan ahead before you calculate: choose the form that effectively eliminates the other trigonometric function in the equation (for example, use 1 - 2sin\u00b2x if you need to match a sin x term)."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -64,6 +64,16 @@ export const note_mathematics_3_2_5 = {
             id: 'summary', type: 'summary',
             data: { text: '1 + tan\u00b2x = sec\u00b2x; 1 + cot\u00b2x = cosec\u00b2x. Both derived from sin\u00b2x + cos\u00b2x = 1. Use to replace sec\u00b2x or cosec\u00b2x in equations to form quadratics in tan x or cot x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When faced with quadratic trig equations featuring secants or cosecants, immediately use the Pythagorean identities (1 + tan\u00b2x = sec\u00b2x or 1 + cot\u00b2x = cosec\u00b2x) to turn the expression into a standard quadratic in a single trig ratio."
+            },
+            terms: []
         }
     ],
     recall: {

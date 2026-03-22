@@ -49,6 +49,16 @@ export const note_mathematics_4_6_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'Repeated by parts: reduce power of x until simple. Cyclic (e^x sin/cos x): label I, apply twice, and solve 2I = \u2026 to get I = \u2026 + C.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Keep your work highly organised and use large brackets when substituting the second application of parts back into the first. Sign errors are extremely common when nested negative signs are not clearly written out."
+            },
+            terms: []
         }
     ],
     recall: {

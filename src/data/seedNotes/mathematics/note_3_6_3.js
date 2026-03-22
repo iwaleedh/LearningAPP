@@ -55,6 +55,16 @@ export const note_mathematics_3_6_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Newton-Raphson: x_{n+1} = x_n \u2212 f(x_n)/f\u2019(x_n). Fast convergence. Fails when f\u2019(x_n) = 0 or near turning points. Always verify the final answer with a change of sign check.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If asked why Newton-Raphson might fail, state clearly that if the starting value x_0 gives a stationary point (so f'(x_0) = 0), the tangent is horizontal and will never intersect the x-axis to give the next approximation."
+            },
+            terms: []
         }
     ],
     recall: {

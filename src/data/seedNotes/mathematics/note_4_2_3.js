@@ -48,6 +48,16 @@ export const note_mathematics_4_2_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Irreducible quadratic factor x\u00b2+a \u2192 numerator (Bx+C). Cover-up for the linear factor, then compare coefficients for B and C. Check all three coefficient equations.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When a denominator includes an irreducible quadratic term like (x^2+3), remember its numerator must be a linear term of the form Ax+B, not just a single constant A. Neglecting the '+ B' is a frequent cause of lost marks."
+            },
+            terms: []
         }
     ],
     recall: {

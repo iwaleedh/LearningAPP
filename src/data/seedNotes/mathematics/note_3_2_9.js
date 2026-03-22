@@ -61,6 +61,16 @@ export const note_mathematics_3_2_9 = {
             id: 'summary', type: 'summary',
             data: { text: 'sec x and cosec x: period 2\u03c0, range |y| \u2265 1, U-shaped curves. cot x: period \u03c0, all real values. arcsin, arccos, arctan: S-curves with restricted domains and ranges; arctan has asymptotes at \u00b1\u03c0/2.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When sketching reciprocal or inverse trig graphs, explicitly draw and write the equations of the asymptotes. A sketch of sec x or arctan x without clearly written dashed asymptotes (e.g. y = \u03c0/2) will drop marks."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -60,6 +60,16 @@ export const note_mathematics_4_7_6 = {
             id: 'summary', type: 'summary',
             data: { text: 'Vector geometry: section formula OP=(nOA+mOB)/(m+n). Midpoint=(OA+OB)/2. Collinearity: AB=kAC. Express positions in terms of base vectors a and b.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Drawing a clear, large diagram is essential for vector geometry problems, even if working in 3D. Breaking complex displacement paths down into smaller known vectors (e.g., AB = OB - OA) is the key to proving geometric properties."
+            },
+            terms: []
         }
     ],
     recall: {

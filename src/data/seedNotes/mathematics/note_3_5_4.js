@@ -56,6 +56,16 @@ export const note_mathematics_3_5_4 = {
             id: 'summary', type: 'summary',
             data: { text: 'Substitution: choose u, find du, replace everything in x with u-expressions, integrate, back-substitute. For definite integrals: change limits to u-values (no need to back-substitute).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When calculating a definite integral using substitution, always remember to change the limits of integration from x-values to u-values. This avoids having to substitute the x-expression back in at the end."
+            },
+            terms: []
         }
     ],
     recall: {

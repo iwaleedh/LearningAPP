@@ -64,6 +64,16 @@ export const note_mathematics_3_4_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Chain rule: dy/dx = (dy/du)(du/dx). Outer derivative \u00d7 inner derivative. Works for trig, exp, log composites \u2014 multiply through from outermost to innermost layer.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using the chain rule on expressions like y = sin^3(x), rewrite it as y = (sin x)^3 first. This makes it much clearer that the outer function is the power of 3 and the inner function is sin x, avoiding common derivative errors."
+            },
+            terms: []
         }
     ],
     recall: {

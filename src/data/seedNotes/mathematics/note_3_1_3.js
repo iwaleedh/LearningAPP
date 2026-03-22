@@ -69,6 +69,16 @@ export const note_mathematics_3_1_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Models use functions with restricted domains to represent real-world situations. State assumptions, solve within context, interpret answers, and critique/refine the model.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In contextual modelling questions, mathematical domains often contradict physical reality. Explicitly state real-world restrictions, such as time t \u2265 0 or distance x > 0, to secure the modelling assumptions mark."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -64,6 +64,16 @@ export const note_mathematics_3_5_2 = {
             id: 'summary', type: 'summary',
             data: { text: '\u222bf\u2019(x)/f(x) dx = ln|f(x)| + c. Check numerator is a (multiple of the) derivative of denominator. Adjust by multiplying and dividing by the necessary constant.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When integrating a fraction, always check if the numerator is a multiple of the derivative of the denominator. If it is, the integral will involve a logarithm. Adjust any constant factors carefully."
+            },
+            terms: []
         }
     ],
     recall: {

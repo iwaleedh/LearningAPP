@@ -56,6 +56,16 @@ export const note_mathematics_4_6_0 = {
             id: 'summary', type: 'summary',
             data: { text: '\u222b u dv = uv \u2212 \u222b v du. Choose u using LIATE. Differentiate u and integrate dv/dx to get v. The resulting integral must be simpler.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Choose your 'u' and 'dv/dx' wisely using the LATE (Logs, Algebra, Trig, Exponentials) or equivalent priority rule. Let 'u' be the part that simplifies when differentiated, like x or ln(x)."
+            },
+            terms: []
         }
     ],
     recall: {

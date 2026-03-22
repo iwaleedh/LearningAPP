@@ -48,6 +48,16 @@ export const note_mathematics_4_6_10 = {
             id: 'summary', type: 'summary',
             data: { text: 'DE in context: translate verbal description into dy/dx = f(x,y), solve, apply initial condition. Interpret the solution (long-term behaviour, limitations).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Pay close attention to wording like 'rate of decrease' or 'cools'. These imply a negative rate of change. Ensure your formulated differential equation includes a negative sign, for example, dM/dt = -kM."
+            },
+            terms: []
         }
     ],
     recall: {

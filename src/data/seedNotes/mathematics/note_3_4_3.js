@@ -56,6 +56,16 @@ export const note_mathematics_3_4_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Product rule: d/dx(uv) = u v\u2019 + v u\u2019. Identify u and v, differentiate each, then combine. Factorise the result where possible.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When applying the product rule, factorise your final answer if asked to find stationary points where dy/dx = 0. E.g., for y = x^2e^x, factorising out xe^x makes solving x(x+2)e^x = 0 much simpler."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -48,6 +48,16 @@ export const note_mathematics_4_7_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Line: r = a + \u03bbb (point + \u03bb\u00d7direction). Direction = any vector along the line (e.g. AB). Cartesian: (x\u2212a\u2081)/b\u2081=(y\u2212a\u2082)/b\u2082=(z\u2212a\u2083)/b\u2083.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The equation of a line r = a + tb requires 'a' to be a specific position vector on the line and 'b' to be a direction vector. Never confuse these two; 'b' shows which way the line points, while 'a' anchors it to the origin."
+            },
+            terms: []
         }
     ],
     recall: {

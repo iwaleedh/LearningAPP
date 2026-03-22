@@ -53,6 +53,16 @@ export const note_mathematics_3_4_7 = {
             id: 'summary', type: 'summary',
             data: { text: 'Connected rates: dy/dt = (dy/dx)(dx/dt). Write a geometric relationship, differentiate w.r.t. t (chain rule), substitute known values, solve for unknown rate.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always write down the chain rule explicitly before calculating connected rates of change, e.g., dV/dt = dV/dr * dr/dt. It helps clear your thoughts and guarantees method marks even if a minor arithmetic error is made later."
+            },
+            terms: []
         }
     ],
     recall: {

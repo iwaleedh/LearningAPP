@@ -56,6 +56,16 @@ export const note_mathematics_4_6_6 = {
             id: 'summary', type: 'summary',
             data: { text: 'Volume of revolution (x-axis): V = \u03c0\u222b y\u00b2 dx. Square y first, then integrate. The \u03c0 stays outside.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always write down the formula V = pi * integral of y^2 dx before substituting your function. Do not forget to square the function before integrating, and remember to leave your final answer as an exact multiple of pi unless a decimal is explicitly requested."
+            },
+            terms: []
         }
     ],
     recall: {

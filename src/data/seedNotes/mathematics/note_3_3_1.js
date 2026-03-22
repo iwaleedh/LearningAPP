@@ -66,6 +66,16 @@ export const note_mathematics_3_3_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'y = ln x: passes through (1,0), asymptote at x = 0, reflection of e\u02e3 in y = x. To linearise y = ab\u02e3: plot ln y vs x \u2014 gradient = ln b, intercept = ln a.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When linearising data of the form y = ax^n or y = ab^x, clearly state what your Y and X axes represent before plotting or finding the gradient. A common mistake is muddling log(y) against x with log(y) against log(x)."
+            },
+            terms: []
         }
     ],
     recall: {

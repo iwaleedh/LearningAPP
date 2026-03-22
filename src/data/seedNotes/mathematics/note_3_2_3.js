@@ -52,6 +52,16 @@ export const note_mathematics_3_2_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Compound angle formulae expand sin(A\u00b1B), cos(A\u00b1B), tan(A\u00b1B). Key pattern: sin uses mixed sin/cos; cos uses matching functions with sign change. Use to find exact values at non-standard angles.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Watch your signs carefully when applying compound angle identities, especially cos(A+B) = cosA cosB - sinA sinB. The sign flips for cosine, but stays the same for sine\u2014examiners see this mistake constantly."
+            },
+            terms: []
         }
     ],
     recall: {

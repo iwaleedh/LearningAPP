@@ -48,6 +48,16 @@ export const note_mathematics_4_7_4 = {
             id: 'summary', type: 'summary',
             data: { text: 'Plane: r\u00b7n=d where d=n\u00b7a. Cartesian: n\u2081x+n\u2082y+n\u2083z=d. Normal n is perpendicular to all vectors lying in the plane.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In the Cartesian equation of a plane ax + by + cz = d, the coefficients a, b, and c directly give you the normal vector to the plane. This is a crucial and time-saving shortcut for many multi-step vector geometry questions."
+            },
+            terms: []
         }
     ],
     recall: {

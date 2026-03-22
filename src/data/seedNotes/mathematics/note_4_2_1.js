@@ -48,6 +48,16 @@ export const note_mathematics_4_2_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'Repeated factor (ax+b)\u00b2: needs A/(ax+b) + B/(ax+b)\u00b2. Cover-up gives B directly. Find A by substituting another x-value or comparing coefficients.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A common error with repeated factors like (x-1)^2 is forgetting to include the single power term A/(x-1) alongside B/(x-1)^2. Always double-check your initial setup before finding the constants."
+            },
+            terms: []
         }
     ],
     recall: {

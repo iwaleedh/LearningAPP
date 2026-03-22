@@ -48,6 +48,16 @@ export const note_mathematics_4_6_9 = {
             id: 'summary', type: 'summary',
             data: { text: 'Separable DE: rearrange to (1/g(y))dy = f(x)dx, integrate both sides, add one constant C. Use IC to find particular solution.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Ensure you place all 'y' terms with 'dy' and all 'x' terms with 'dx' before integrating. Never forget to add the constant of integration '+ c' immediately after integrating both sides, rather than right at the end of your algebraic manipulation."
+            },
+            terms: []
         }
     ],
     recall: {

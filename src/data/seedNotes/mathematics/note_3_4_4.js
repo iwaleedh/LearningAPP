@@ -56,6 +56,16 @@ export const note_mathematics_3_4_4 = {
             id: 'summary', type: 'summary',
             data: { text: 'Quotient rule: d/dx(u/v) = (v u\u2019 \u2212 u v\u2019) / v\u00b2. Denominator squared on bottom; notice the minus sign. Can verify: d/dx(tan x) = sec\u00b2x by applying to sin x / cos x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A common mistake in the quotient rule is getting the numerator terms the wrong way around or messing up the minus sign. Always write out u, v, u' and v' clearly before substituting into (vu' - uv') / v^2."
+            },
+            terms: []
         }
     ],
     recall: {

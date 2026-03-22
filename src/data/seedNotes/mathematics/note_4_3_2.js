@@ -48,6 +48,16 @@ export const note_mathematics_4_3_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Parametric area: \u222b y dx = \u222b y(dx/dt) dt. Change limits to t-values. Take |result| for area. Watch the sign of dx/dt.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember the formula is Integral(y * dx/dt) dt. A classic mistake is forgetting the 'dx/dt' term and just integrating y with respect to t. Always check that your limits have been converted to match the t variable."
+            },
+            terms: []
         }
     ],
     recall: {

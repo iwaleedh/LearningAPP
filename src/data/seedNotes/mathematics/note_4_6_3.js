@@ -64,6 +64,16 @@ export const note_mathematics_4_6_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Trig integrals: use double angle for even powers (sin\u00b2, cos\u00b2). Split odd powers using sin\u00b2+cos\u00b2=1. Product sin cos: use sin2x or substitution.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When integrating squared trigonometric functions like sin^2(x) or cos^2(x), always use the double-angle formulae for cos(2x). Do not attempt to increase the power and divide by the new power."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -45,6 +45,16 @@ export const note_mathematics_3_6_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Change of sign: if f(a) < 0 and f(b) > 0 (or vice versa) for continuous f, there is a root in (a, b). Decimal search: evaluate at midpoint and repeat to narrow the interval.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For the change of sign method, you must explicitly state that the function is continuous. Merely showing f(a) < 0 and f(b) > 0 is not enough for full marks; write 'f(x) is continuous over the interval [a,b]'."
+            },
+            terms: []
         }
     ],
     recall: {

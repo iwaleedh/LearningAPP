@@ -70,6 +70,16 @@ export const note_mathematics_3_1_6 = {
             id: 'summary', type: 'summary',
             data: { text: 'Advanced modelling uses piecewise, reciprocal and composite functions. Always restrict domain to physical values. Critique: identify over-simplifying assumptions, state domain issues, suggest improvements.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Pay close attention to units and boundary conditions in piecewise models. Ensure that boundaries where two models meet (e.g. at t = 5) give the same output value, unless the scenario explicitly describes an instantaneous jump."
+            },
+            terms: []
         }
     ],
     recall: {

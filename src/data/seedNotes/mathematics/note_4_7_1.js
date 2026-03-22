@@ -64,6 +64,16 @@ export const note_mathematics_4_7_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'Dot product: a\u00b7b = a\u2081b\u2081+a\u2082b\u2082+a\u2083b\u2083 = |a||b|cos\u03b8. Perpendicular: a\u00b7b=0. Angle formula: cos\u03b8=(a\u00b7b)/(|a||b|).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that if the scalar product of two non-zero vectors is zero, the vectors are perpendicular. When finding the angle between two lines, always use their direction vectors, never their position vectors."
+            },
+            terms: []
         }
     ],
     recall: {

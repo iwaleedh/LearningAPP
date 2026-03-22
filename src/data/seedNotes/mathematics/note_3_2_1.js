@@ -61,6 +61,16 @@ export const note_mathematics_3_2_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'arcsin: domain [\u22121,1], range [\u2212\u03c0/2, \u03c0/2]. arccos: domain [\u22121,1], range [0,\u03c0]. arctan: domain \u211d, range (\u2212\u03c0/2, \u03c0/2). Graphs are reflections of restricted trig graphs in y=x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Be extremely precise with principal value ranges. For instance, the range of arcsin(x) is restricted to -\u03c0/2 \u2264 y \u2264 \u03c0/2. Giving an answer outside this interval shows a fundamental misunderstanding of inverse functions."
+            },
+            terms: []
         }
     ],
     recall: {

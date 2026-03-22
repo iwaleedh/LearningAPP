@@ -66,6 +66,16 @@ export const note_mathematics_3_3_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Key results: d/dx(e\u02e3) = e\u02e3; d/dx(ln x) = 1/x; d/dx(a\u02e3) = a\u02e3 ln a. Chain rule: d/dx(e^f(x)) = f\u2019(x)e^f(x); d/dx(ln f(x)) = f\u2019(x)/f(x).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "It is heavily penalized to forget the inner derivative when differentiating composite exponential functions. For example, the derivative of e^f(x) is f'(x)\u00b7e^f(x). Don't leave multiplying by the derivative of the power out!"
+            },
+            terms: []
         }
     ],
     recall: {

@@ -62,6 +62,16 @@ export const note_mathematics_4_3_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Parametric equations x=f(t), y=g(t): eliminate t to get Cartesian form. Algebraic: solve for t, substitute. Trig: use a trig identity. Note domain restrictions from the parameter range.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When eliminating the parameter using trigonometric identities (like sin^2(t) + cos^2(t) = 1), carefully check the domain of t to ensure you define the domain and range of the Cartesian equation correctly."
+            },
+            terms: []
         }
     ],
     recall: {

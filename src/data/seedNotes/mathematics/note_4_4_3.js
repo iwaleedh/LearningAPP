@@ -53,6 +53,16 @@ export const note_mathematics_4_4_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Substitute a specific x-value into a binomial expansion to approximate numbers. Check |x| is within the validity range. The more terms used, the better the approximation.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When choosing a value of x to substitute for an approximation, pick a small value so the series converges quickly. Ensure your chosen x falls strictly within the valid mathematical range |x| < 1."
+            },
+            terms: []
         }
     ],
     recall: {

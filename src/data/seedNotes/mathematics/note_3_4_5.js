@@ -68,6 +68,16 @@ export const note_mathematics_3_4_5 = {
             id: 'summary', type: 'summary',
             data: { text: 'd/dx(arcsin x) = 1/\u221a(1\u2212x\u00b2); d/dx(arccos x) = \u22121/\u221a(1\u2212x\u00b2); d/dx(arctan x) = 1/(1+x\u00b2). Derived using implicit differentiation on the original trig functions.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "You are given the derivatives of inverse trig functions in the formula booklet, but you must know how to apply the chain rule with them. E.g., if y = arcsin(2x), remember to multiply by the derivative of 2x."
+            },
+            terms: []
         }
     ],
     recall: {

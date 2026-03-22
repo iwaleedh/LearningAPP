@@ -60,6 +60,16 @@ export const note_mathematics_4_5_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Implicit differentiation: d/dx[f(y)] = f\u2032(y) dy/dx. Differentiate every term, collect dy/dx terms, solve. Apply to tangents, normals, and stationary points on implicit curves.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Treat 'y' as a function of 'x'. When differentiating mixed terms like xy, you MUST use the product rule: x*dy/dx + y. Forgetting the product rule here is one of the most common mistakes in differentiation."
+            },
+            terms: []
         }
     ],
     recall: {

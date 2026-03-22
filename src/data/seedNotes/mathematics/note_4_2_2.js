@@ -52,6 +52,16 @@ export const note_mathematics_4_2_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Improper fraction: deg(num) \u2265 deg(den). Divide first to get quotient + proper fraction, then decompose the proper fraction into partial fractions.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Before starting partial fractions, always check the degree of the numerator against the denominator. If they are equal or the numerator is higher, you must use algebraic long division first to find the polynomial part."
+            },
+            terms: []
         }
     ],
     recall: {

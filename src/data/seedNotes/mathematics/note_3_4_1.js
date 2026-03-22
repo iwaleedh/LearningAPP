@@ -64,6 +64,16 @@ export const note_mathematics_3_4_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'd/dx(sin x) = cos x from first principles: apply the compound angle formula for sin(x+h), then use lim(sin h/h) = 1 and lim((cos h \u2212 1)/h) = 0.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For first principles proofs in trigonometry, you must explicitly state that h approaches 0 (h -> 0) and explicitly mention the small angle approximations sin(h) \u2248 h and cos(h) \u2248 1 - h^2/2 to secure all justification marks."
+            },
+            terms: []
         }
     ],
     recall: {

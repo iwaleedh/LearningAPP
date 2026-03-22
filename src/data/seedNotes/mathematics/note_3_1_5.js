@@ -63,6 +63,16 @@ export const note_mathematics_3_1_5 = {
             id: 'summary', type: 'summary',
             data: { text: '|f(x)| = k: solve f(x) = k and f(x) = \u2212k. |f(x)| = |g(x)|: solve f = g and f = \u2212g. Always check solutions. Use a sketch to confirm the number of solutions.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If you solve modulus equations by squaring both sides, you often introduce 'phantom' solutions. Always substitute your final x-values back into the original un-squared equation to verify which solutions are actually valid."
+            },
+            terms: []
         }
     ],
     recall: {

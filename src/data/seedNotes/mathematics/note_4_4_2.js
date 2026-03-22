@@ -44,6 +44,16 @@ export const note_mathematics_4_4_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'Partial fractions + binomial: decompose first, expand each term separately, add results. Validity = intersection of all individual validity ranges.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "It is much safer to write (A/(1-x)) + (B/(1+2x)) as A(1-x)^-1 + B(1+2x)^-1 and expand each bracket separately before adding them together. Be extra careful with minus signs in the (1+2x)^-1 expansion."
+            },
+            terms: []
         }
     ],
     recall: {

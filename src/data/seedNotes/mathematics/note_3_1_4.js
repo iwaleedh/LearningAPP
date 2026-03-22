@@ -63,6 +63,16 @@ export const note_mathematics_3_1_4 = {
             id: 'summary', type: 'summary',
             data: { text: '|f(x)|: draw f(x) then reflect any y < 0 parts upward. f(|x|): draw f(x) for x \u2265 0 then reflect in the y-axis. Remember which axis you are reflecting in!' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When sketching y = f(|x|), a very common error is to reflect the entire graph. You must completely delete the portion of the curve on the left of the y-axis, and then reflect the right-hand side across the y-axis."
+            },
+            terms: []
         }
     ],
     recall: {

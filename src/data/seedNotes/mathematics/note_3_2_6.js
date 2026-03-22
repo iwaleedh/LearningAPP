@@ -68,6 +68,16 @@ export const note_mathematics_3_2_6 = {
             id: 'summary', type: 'summary',
             data: { text: 'a sin x + b cos x = R sin(x + \u03b1) where R = \u221a(a\u00b2+b\u00b2) and tan \u03b1 = b/a. Max = R, min = \u2212R. Use harmonic form to find maxima/minima and solve combined trig equations.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In harmonic form questions, calculate R specifically as \u221a(a\u00b2 + b\u00b2) with positive values. More marks are lost on stating the wrong maximum/minimum values: remember the maximum of R cos(x-\u03b1) is just R, occurring when cos(x-\u03b1) = 1."
+            },
+            terms: []
         }
     ],
     recall: {

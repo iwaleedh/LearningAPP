@@ -68,6 +68,16 @@ export const note_mathematics_4_1_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Proof by contradiction: assume the negation, derive a logical impossibility, conclude the original statement is true. Key examples: \u221a2 is irrational; infinitely many primes.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always state your initial assumption clearly at the beginning (e.g., 'Assume that sqrt(2) is rational'). Marks are often lost for missing the concluding statement linking the mathematical contradiction back to the original claim."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -57,6 +57,16 @@ export const note_mathematics_3_1_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'fg(x) = f(g(x)) \u2014 apply g first, then f. Order matters: fg \u2260 gf. Domain of fg: all x in domain of g where g(x) also lies in the domain of f.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For composite functions like fg(x), always remember that the function closest to the variable is applied first (g first, then f). Keep in mind that the domain of fg(x) is constrained by the domain of the initial function g(x)."
+            },
+            terms: []
         }
     ],
     recall: {

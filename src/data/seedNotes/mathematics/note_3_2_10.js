@@ -62,6 +62,16 @@ export const note_mathematics_3_2_10 = {
             id: 'summary', type: 'summary',
             data: { text: 'Trig models: f(t) = A sin(\u03c9t + \u03c6) + k. A = amplitude = (max\u2212min)/2; k = midline = (max+min)/2; \u03c9 = 2\u03c0/period. Use the model to find times/values from the context.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When applying 'R sin(x+\u03b1) + c' into a physical context like tides or temperature, 'R' represents the physical amplitude (half of the complete range) and 'c' represents the mean average value. Check if your extracted values make physical sense."
+            },
+            terms: []
         }
     ],
     recall: {

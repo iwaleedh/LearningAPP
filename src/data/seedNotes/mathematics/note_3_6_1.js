@@ -52,6 +52,16 @@ export const note_mathematics_3_6_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'Change of sign fails for: repeated roots (no crossing), discontinuities (false sign change), even numbers of roots in the interval. Always check continuity before applying.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When asked why the change of sign method might fail, look for asymptotes (like tan x at x = pi/2) where the sign changes but there's no root, or roots where the curve touches but does not cross the x-axis (like y = x^2)."
+            },
+            terms: []
         }
     ],
     recall: {

@@ -60,6 +60,16 @@ export const note_mathematics_3_4_6 = {
             id: 'summary', type: 'summary',
             data: { text: 'Parametric: dy/dx = (dy/dt)/(dx/dt). Second derivative: d\u00b2y/dx\u00b2 = (d/dt of dy/dx)/(dx/dt). For tangent/normal: find the point and gradient at the given t-value.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "To find the second derivative d^2y/dx^2 for parametric equations, you must differentiate dy/dx with respect to t, and then multiply by dt/dx (or divide by dx/dt). Do not simply find d^2y/dt^2 / d^2x/dt^2!"
+            },
+            terms: []
         }
     ],
     recall: {

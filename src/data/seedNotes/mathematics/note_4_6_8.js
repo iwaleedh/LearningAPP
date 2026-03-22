@@ -56,6 +56,16 @@ export const note_mathematics_4_6_8 = {
             id: 'summary', type: 'summary',
             data: { text: 'Trapezium rule: (h/2)[y\u2080 + 2(middle y\u2019s) + y\u2099], h=(b\u2212a)/n. Overestimates for concave-up curves, underestimates for concave-down.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When commenting on whether the trapezium rule overestimates or underestimates, sketch the curve. If the curve is convex (concave up), the straight lines of the trapezia sit above the curve, giving an overestimate."
+            },
+            terms: []
         }
     ],
     recall: {

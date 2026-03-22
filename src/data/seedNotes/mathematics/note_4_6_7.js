@@ -48,6 +48,16 @@ export const note_mathematics_4_6_7 = {
             id: 'summary', type: 'summary',
             data: { text: 'y-axis rotation: V = \u03c0\u222b x\u00b2 dy (express x\u00b2 in y, integrate in y). Parametric rotation (x-axis): V = \u03c0\u222b y\u00b2(dx/dt)dt.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding volumes of revolution using parametric equations, carefully substitute both y^2 and dx/dt in terms of t. Do not forget to multiply these expressions together algebraically before attempting to perform the integration."
+            },
+            terms: []
         }
     ],
     recall: {

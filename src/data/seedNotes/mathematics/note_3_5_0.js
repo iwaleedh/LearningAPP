@@ -58,6 +58,16 @@ export const note_mathematics_3_5_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Standard integrals: \u222be\u02e3dx = e\u02e3+c; \u222b(1/x)dx = ln|x|+c; \u222bsin x dx = \u2212cos x+c; \u222bcos x dx = sin x+c; \u222bsec\u00b2x dx = tan x+c.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Don't forget the constant of integration (+ c) for indefinite integrals! Also remember that integrating 1/x gives ln|x|, the absolute value signs are essential unless you are given a domain where x is strictly positive."
+            },
+            terms: []
         }
     ],
     recall: {

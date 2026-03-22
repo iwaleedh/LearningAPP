@@ -52,6 +52,16 @@ export const note_mathematics_4_7_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Lines: parallel if directions are scalar multiples. Intersect if equations are consistent. Skew if not parallel and equations are inconsistent. Angle: cos\u03b8=|b\u2081\u00b7b\u2082|/(|b\u2081||b\u2082|) (use |\u2026| for acute angle).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When showing two lines intersect, equate their components to find the parameters using two of the equations. You must then explicitly substitute these parameter values into the third equation to verify they give the same result."
+            },
+            terms: []
         }
     ],
     recall: {

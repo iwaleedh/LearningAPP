@@ -48,6 +48,16 @@ export const note_mathematics_4_3_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Tangent/normal: find dy/dx=(dy/dt)/(dx/dt), evaluate at t, use point-slope form. For general results, work with parameter t=p and simplify to show the required form.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Use the chain rule dy/dx = (dy/dt) / (dx/dt) carefully. If dx/dt = 0, you have a vertical tangent. Don't forget that finding the equation of a normal requires the negative reciprocal gradient: -dx/dy."
+            },
+            terms: []
         }
     ],
     recall: {

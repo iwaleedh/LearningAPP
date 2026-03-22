@@ -70,6 +70,16 @@ export const note_mathematics_3_1_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'A function is a one-to-one or many-to-one mapping. Domain = allowed inputs; range = all possible outputs. Restrictions: \u221a needs \u2265 0, fractions need denominator \u2260 0, ln needs argument > 0.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Domain and range notation is strictly marked. Do not mix up x and y inequalities; always use x (or the appropriate input variable) for the domain and f(x) or y for the range."
+            },
+            terms: []
         }
     ],
     recall: {

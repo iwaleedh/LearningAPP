@@ -64,6 +64,16 @@ export const note_mathematics_3_5_3 = {
             id: 'summary', type: 'summary',
             data: { text: 'Trig identity integration: cos\u00b2x \u2192 (1+cos2x)/2; sin\u00b2x \u2192 (1\u2212cos2x)/2; tan\u00b2x \u2192 sec\u00b2x\u22121; sin x cos x \u2192 (1/2)sin 2x. Then integrate directly.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When integrating sin^2(x) or cos^2(x), you must use the double angle formulae for cos(2x). Do not attempt to reverse the chain rule as there is no single sin(x) or cos(x) term to serve as the derivative of the inner function."
+            },
+            terms: []
         }
     ],
     recall: {

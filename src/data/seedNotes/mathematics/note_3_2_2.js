@@ -57,6 +57,16 @@ export const note_mathematics_3_2_2 = {
             id: 'summary', type: 'summary',
             data: { text: 'For small \u03b8 (radians): sin \u03b8 \u2248 \u03b8, tan \u03b8 \u2248 \u03b8, cos \u03b8 \u2248 1 \u2212 \u03b8\u00b2/2. Use to simplify limits and approximate trig expressions near zero.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Small angle approximations ONLY work when the angle is measured in radians. If an exam question provides an angle in degrees, you are required to convert it to radians before substituting into the approximation formulas."
+            },
+            terms: []
         }
     ],
     recall: {

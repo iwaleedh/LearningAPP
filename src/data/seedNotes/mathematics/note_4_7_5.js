@@ -64,6 +64,16 @@ export const note_mathematics_4_7_5 = {
             id: 'summary', type: 'summary',
             data: { text: 'Angle between planes: cos\u03b8=|n\u2081\u00b7n\u2082|/(|n\u2081||n\u2082|). Line-plane intersection: substitute parametric form. Distance: |ap+bq+cr\u2212d|/\u221a(a\u00b2+b\u00b2+c\u00b2).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding the angle between a line and a plane, taking the dot product of the line's direction vector and the plane's normal vector gives you the angle with the normal. Remember to subtract this value from 90 degrees to get the required angle with the plane."
+            },
+            terms: []
         }
     ],
     recall: {

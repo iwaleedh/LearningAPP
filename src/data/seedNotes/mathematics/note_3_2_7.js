@@ -62,6 +62,16 @@ export const note_mathematics_3_2_7 = {
             id: 'summary', type: 'summary',
             data: { text: 'Strategy: identify target function, use identities to reduce to one trig function, factorise, and find ALL solutions in the interval. Never divide by trig functions \u2014 factorise instead.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Before solving complex trig equations, adjust the given interval for any argument shifts. If the range is 0 \u2264 x \u2264 360 but the angle is 2x+30, adjust your search range to 30 \u2264 2x+30 \u2264 750 immediately so you do not miss solutions."
+            },
+            terms: []
         }
     ],
     recall: {

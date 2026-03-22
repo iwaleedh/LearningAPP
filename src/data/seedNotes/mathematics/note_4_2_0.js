@@ -57,6 +57,16 @@ export const note_mathematics_4_2_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Distinct linear denominators: write A/(ax+b) + B/(cx+d). Find constants by cover-up rule (substitute each root) or compare coefficients. Always verify by recombining.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using the substitution method to find constants, remember to show your working. Examiners need to see the values you substitute, not just the final constants, to reliably award method marks."
+            },
+            terms: []
         }
     ],
     recall: {

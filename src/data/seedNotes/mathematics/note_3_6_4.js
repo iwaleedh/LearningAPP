@@ -56,6 +56,16 @@ export const note_mathematics_3_6_4 = {
             id: 'summary', type: 'summary',
             data: { text: 'Numerical methods: change of sign is simple but slow; iteration x=g(x) requires |g′| < 1; Newton-Raphson is fast but needs f′(x). Always verify roots using change of sign in the relevant interval.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When comparing numerical methods, be precise: Newton-Raphson converges very quickly but requires you to be able to differentiate the function, whereas interval bisection is slower but guaranteed to work for any continuous function with a sign change."
+            },
+            terms: []
         }
     ],
     recall: {
