@@ -12,6 +12,15 @@ export const note_economics_4_19_5 = {
     { id: 'list-causes', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Commodity dependence</strong>: LDCs relying on primary exports face volatile ToT — commodity prices fluctuate while prices of imported manufactures are stickier (Prebisch–Singer hypothesis: secular decline in primary commodity prices).' }, { text: '<strong>Exchange rate movements</strong>: currency appreciation raises export prices in foreign currency terms → ToT improvement; depreciation → deterioration.' }, { text: '<strong>Productivity improvements abroad</strong>: if trading partners produce cheaper manufactured goods, import prices fall → ToT improvement for importers.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'LA/LDC Exam Context', text: 'The Prebisch–Singer hypothesis (1950s): terms of trade for primary commodity exporters have historically declined relative to manufactured goods. This helps explain why developing countries dependent on primary exports struggle to grow despite volume increases — they earn less per unit exported.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Terms of trade = (export price index / import price index) × 100. Improvement: exports buy more imports; deterioration: higher import costs, lower purchasing power. Causes: exchange rates, commodity prices, productivity. Prebisch–Singer: secular ToT decline for primary exporters.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Terms of Trade = (Index of Export Prices / Index of Import Prices) \u00d7 100. A rise benefits exporters; a fall harms them. Examiners test whether you link ToT changes to real income effects\u2014don't just calculate mechanically."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

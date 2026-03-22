@@ -101,6 +101,24 @@ export const note_economics_4_22_13 = {
           ['Global shocks', '2022 energy price surge driven by Ukraine war', 'Domestic monetary policy can dampen but not prevent imported inflation; global cooperation needed']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Demonstrate sophisticated policy thinking. Time lags mean fiscal stimulus arrives after recovery starts (pro-cyclical harm). Data uncertainty (e.g. is unemployment 4% or 3.5%?) leads to policy errors. Model uncertainty (which econometric model is correct?) undermines confidence. Political constraints (election cycles) prevent optimal long-term policies. Examiners reward you for citing real examples: 'UK QE expansion 2015\u20132021 risked overheating but data uncertainty delayed tightening.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume policymakers have full information and can execute optimal plans instantly. In reality, macroeconomic policy is riddled with uncertainty and delays. Don't say 'government should just do X' \u2014 acknowledge implementation constraints. Also, avoid one-sided critiques; ineffectiveness doesn't mean don't try, but recognize costs of failed targeting. Edexcel expects realism: 'Policy constraints are real, but inaction has costs too; policy must navigate uncertainty.'"
+      }
     }
   ],
   recall: {

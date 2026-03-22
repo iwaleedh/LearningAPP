@@ -82,6 +82,24 @@ export const note_economics_4_21_5 = {
           ['Financial sector expansion (financialisation)', 'Very high pay in finance; asset price inflation benefits wealth holders', 'Financial sector wages rose 50-60% faster than economy-wide wages 1980-2008']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Connect drivers to macroeconomic trends. Skill-biased tech change raises returns to high-education workers \u2014 examiners reward you for linking this to the college premium. Globalisation shifts wages: capital and high-skill labour gain, while unskilled workers in developed economies lose. Declining unions reduce wage-bargaining power. Always evaluate the relative magnitudes \u2014 which driver is most significant?"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students blame globalisation uniformly as 'causing inequality' without nuance. Globalisation raises inequality between countries (convergence) but within countries depends on skill distribution. Also, claims like 'declining unions cause inequality' need qualification: unions raise wages for members but may exclude others. Distinguish between correlation and causation; Edexcel expects critical appraisal of evidence."
+      }
     }
   ],
   recall: {

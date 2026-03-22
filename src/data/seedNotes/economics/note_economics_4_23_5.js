@@ -91,6 +91,24 @@ export const note_economics_4_23_5 = {
         title: 'Limitations of the Harrod-Domar Model',
         text: 'The model assumes a fixed capital-output ratio (k) — in reality k varies with technology and management quality. It assumes savings automatically translate into productive investment — in reality, investment quality matters more than quantity. Post-colonial development experience showed many countries received foreign aid to fill savings gaps but grew slowly due to poor governance and institutional weakness. Robert Solow showed long-run growth is driven by productivity (TFP), not just savings rates.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Harrod-Domar model: growth g = s/K (savings divided by capital-output ratio); for developing nations, constrained by low savings rate s and high imported input costs requiring foreign exchange. Two constraints: savings gap (want growth g*, but savings only provide g<g*) and foreign exchange gap (import capital, but export earnings limit this). Policy responses: mobilize domestic savings (financial deepening, tax compliance), attract FDI (foreign savings), boost export earnings (diversification). Examiners reward showing both constraints bind simultaneously in many poor nations."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students treat Harrod-Domar as purely mechanical: 'just invest more, growth rises.' Model is a starting point; actual growth depends on technology, returns to capital (declining returns slow growth), and institutional quality (inefficient investment doesn't compound). Also, model doesn't explain why savings rates differ (culture? institutions?) or why some nations attract FDI and others don't. Edexcel expects: 'Harrod-Domar shows investment is necessary for growth, but not sufficient; productivity and institutions matter.'"
+      }
     }
   ],
   recall: {

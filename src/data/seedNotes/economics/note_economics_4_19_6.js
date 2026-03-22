@@ -11,6 +11,15 @@ export const note_economics_4_19_6 = {
     { id: 'h-4', type: 'heading', data: { text: 'Limitations of the WTO Framework', level: 2 } },
     { id: 'list-limits', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Doha Round stagnation</strong>: launched 2001, never completed — developing countries demand greater agricultural market access while developed countries resist. Highlights North-South tensions.' }, { text: '<strong>Non-tariff barriers</strong>: tariffs are low, but subsidies, regulatory standards, quotas, and procurement rules remain as tools of protection — harder to negotiate.' }, { text: '<strong>Powerful member dominance</strong>: outcomes historically favour US/EU interests; smaller developing nations lack negotiating capacity.' }, { text: '<strong>Appellate Body crisis</strong>: US blocked new appointments from 2017, leaving the dispute mechanism dysfunctional.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'WTO (1995) oversees multilateral trade liberalisation. Reduced tariffs from 40% to <5%. Principles: MFN, national treatment, tariff binding. Limitations: Doha Round failure, non-tariff barriers remain, Appellate Body crisis, power imbalances between large and small members.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't overstate WTO effectiveness. Discuss genuine limits: weak enforcement, dispute resolution delays, exemptions (intellectual property, agriculture), and the breakdown of Doha Round negotiations. Nuance here separates grade 8s from grade 7s."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

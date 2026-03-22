@@ -80,6 +80,24 @@ export const note_economics_4_22_2 = {
         title: 'Exam Tip: Crowding Out vs Crowding In',
         text: 'Always consider context when discussing crowding out. Crowding out is most likely at full employment with market interest rates responding to government borrowing. In a recession with a large output gap and interest rates at the floor, crowding out is minimal and government spending may "crowd in" private investment by raising demand and business confidence.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Wagner's Law states that public spending as % of GDP rises with development (industrialisation \u2192 urbanisation \u2192 demand for public goods). Show evidence: UK went from ~10% (1900) to ~40% (2020). Examiners reward you for linking spending growth to genuine demand (healthcare, education, pensions in ageing societies) rather than blaming bureaucracy. Evaluate whether high spend % harms growth \u2014 evidence is mixed; correlation \u2260 causation. Use data trends."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume 'higher spending share = slower growth' (right-wing assumption) or 'higher spending = faster growth' (left-wing assumption). Research shows no clear pattern \u2014 composition matters more than size. Also, don't just cite Wagner's Law as inevitable; it's a correlation driven by specific conditions (development stage, preferences). High-spend Scandinavia has strong growth; high-spend Southern Europe stagnates. Say: 'Spending composition and efficiency matter more than total % of GDP.'"
+      }
     }
   ],
   recall: {

@@ -10,6 +10,15 @@ export const note_economics_4_18_6 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'FDI Impacts: Host vs Home Country', headers: ['Stakeholder', 'Potential Benefits', 'Potential Costs'], rows: [['Host country', 'Employment, capital, tax revenues, technology transfer, skills, infrastructure', 'Crowding out local firms, profit repatriation, environmental damage, dependency, tax avoidance'], ['Home country', 'Returns on investment, access to resources, global brand growth', 'Job losses (offshoring), hollowing out of domestic industry, transfer pricing reduces tax take']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Distinguish <strong>horizontal FDI</strong> (duplicate production abroad — market-seeking) from <strong>vertical FDI</strong> (different production stages abroad — efficiency-seeking). Higher-end analytical point for level 4 marks.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'FDI motives: market-seeking, efficiency-seeking, resource-seeking, strategic-asset-seeking. Host country benefits: employment, technology transfer, capital. Costs: profit repatriation, environmental damage, tax avoidance. Home country: investment returns vs job offshoring.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't oversimplify FDI as 'always good' for developing economies. Address potential negative impacts: profit repatriation, market distortion, resource depletion, and technological dependency. Balanced evaluation is crucial for high marks."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -79,6 +79,15 @@ export const note_economics_4_20_2 = {
         title: 'Exam Tip: Policy Trade-offs',
         text: 'The best answer will discuss the trade-off between effectiveness and side effects. Expenditure-reducing works quickly but causes unemployment. Supply-side avoids side effects but takes too long. Depreciation is the most commonly used tool but depends on elasticities. A combination of policies is usually optimal — short-run expenditure switching plus long-run supply-side.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When assessing rebalancing policies, evaluate policy mixes: devaluation addresses price competitiveness; supply-side reforms boost non-price competitiveness; fiscal tightening reduces demand. Exams test your grasp that single policies often fail without complementary measures."
+      }
     }
   ],
   recall: {

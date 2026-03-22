@@ -10,6 +10,15 @@ export const note_economics_4_19_4 = {
     { id: 'list-tension', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Currency manipulation allegations</strong>: e.g. China accused of keeping RMB undervalued to boost export competitiveness (though currency has appreciated significantly since 2000).' }, { text: '<strong>Output subsidies and dumping</strong>: state-directed economies (China) may subsidise steel/solar panels, giving unfair cost advantages — leading to anti-dumping tariffs (US solar tariffs on Chinese panels).' }, { text: '<strong>Trade friction 2018–</strong>: US–China trade war: US imposed tariffs up to 25% on $360bn of Chinese goods; China retaliated. Triggered broader "decoupling" debate in tech supply chains.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation', text: 'The rise of emerging economies creates net global welfare gains through comparative advantage and competition, but distributional effects matter. Manufacturing workers in developed economies may lose, while consumers and capital-owners gain. Rising Chinese wages reduce but do not eliminate trade tensions — now disputes focus more on technology independence.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Emerging economy rise: new export competition in manufactures, rising import markets, commodity demand surge. China is now the world\'s largest goods exporter. Trade tensions arise from currency, subsidies, and technology disputes. Flying-geese pattern continues as wages rise within emerging economies.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't treat emerging economy growth as one-directional benefit. Discuss real costs: wage pressure post-China shock in manufacturing, global deflationary pressures, and resource depletion. Sophisticated answers weigh trade-offs."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

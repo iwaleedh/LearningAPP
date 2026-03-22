@@ -10,6 +10,15 @@ export const note_economics_4_18_5 = {
     { id: 'list-comm', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Internet and digital technology</strong>: allows instant, near-zero-cost communication across any distance — enabling remote supply chains, offshoring, and global coordination.' }, { text: '<strong>Satellite and undersea cable networks</strong>: high-speed broadband globally interconnects financial markets, R&D teams, and back-office operations.' }, { text: '<strong>Mobile technology</strong>: enables supply chains and financial transactions in developing countries previously outside global networks.' }, { text: '<strong>Platform economy</strong>: e-commerce platforms (Amazon, Alibaba, Shopify) allow even small firms to sell globally at minimal transaction cost.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Link cost falls to trade theory: <strong>"Falling transport costs reduce the wedge between domestic and world prices, making specialisation and comparative advantage gains larger — increasing trade volumes."</strong> Also: lower communication costs enable global value chains (GVCs) and offshoring of services.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Lower transport costs (containerisation, fuel efficiency) and communication costs (internet, broadband, mobile) are major drivers of globalisation — enabling global value chains, offshoring, cross-border e-commerce, and deeper trade integration.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Beyond logistics and shipping, address digital infrastructure costs (broadband, cyber security) and their uneven distribution globally. Modern exams test whether you recognise that communication cost reduction enables services offshoring, not just goods trade."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

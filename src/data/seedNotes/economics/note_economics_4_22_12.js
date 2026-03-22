@@ -89,6 +89,24 @@ export const note_economics_4_22_12 = {
           ['Offshore account concealment', 'Hiding income/assets in foreign bank accounts', 'CRS automatic information exchange; FATCA; beneficial ownership registers']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Show knowledge of real policy mechanisms: BEPS (Base Erosion and Profit Shifting) targets IP transfers and debt shifting; global minimum 15% tax reduces races to the bottom; automatic information exchange (AEOI) enables cross-border enforcement. Examiners reward citing specific examples: 'Apple legally paid <2% by routing profits through Ireland.' Discuss trade-offs: higher taxes on residual profits may reduce investment incentives, but unequal enforcement remains problematic."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students say 'multinational tax avoidance is wrong' without understanding why it's hard to stop. Firms exploit legal differences between tax systems (not illegal); international coordination is slow; developing countries compete for FDI by offering low rates. Don't assume BEPS and global minimum tax will 'solve' avoidance \u2014 implementation gaps and loopholes remain. Edexcel expects nuance: 'Avoidance is legal but erodes tax bases; policy responses face coordination challenges.'"
+      }
     }
   ],
   recall: {

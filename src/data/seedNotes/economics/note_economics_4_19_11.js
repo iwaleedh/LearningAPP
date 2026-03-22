@@ -10,6 +10,15 @@ export const note_economics_4_19_11 = {
     { id: 'tbl-net', type: 'comparisonTable', data: { caption: 'Net Assessment of Protectionism', headers: ['Group', 'Effect'], rows: [['Domestic consumers', 'Lose: higher prices, less choice, lower real incomes'], ['Protected domestic producers', 'Gain: higher prices, expanded output, protected profits'], ['Government', 'Gain (tariff revenue) but loses efficiency and risks retaliation'], ['Exporters', 'Lose if partners retaliate'], ['World economy', 'Net welfare loss: trade below optimal level; resources misallocated globally']] } },
     { id: 'callout-warn', type: 'callout', data: { style: 'warning', title: 'US-China Trade War 2018', text: 'US imposed 25% tariffs on $360bn of Chinese goods (2018–). China retaliated. Studies found: US consumers and importing firms bore ~90% of the tariff cost (not China). US manufacturing jobs in protected sectors rose slightly but losses in exporting sectors and downstream industries partially offset gains. Real GDP impact was negative for both sides.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Protectionism costs: higher consumer prices, allocative inefficiency, reduced competition, retaliation risk. Short-run benefits: employment, revenue, CA improvement. Net effect: welfare loss for world economy as trade falls below comparative advantage level. Smoot-Hawley tariffs (1930s) demonstrated catastrophic downside of protection escalation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't treat protectionism impacts as uniformly negative. Short-term: protects jobs and revenue. Long-term: retaliation, inefficiency lock-in, higher consumer prices. High-scoring answers distinguish timeframes and sectoral winners/losers."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

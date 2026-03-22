@@ -10,6 +10,15 @@ export const note_economics_4_20_0 = {
     { id: 'list-ca', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Trade in goods</strong>: physical exports minus imports (UK historically in deficit — imports more goods than exports).' }, { text: '<strong>Trade in services</strong>: financial services, insurance, travel, education. UK in <em>surplus</em> — comparative advantage in financial and professional services.' }, { text: '<strong>Primary income</strong>: wages paid to international workers + investment income (dividends, interest, profit from abroad). Large for UK due to overseas investments.' }, { text: '<strong>Secondary income</strong>: current transfers — UK net contributor to EU before Brexit, sends development aid abroad.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Double-Entry Principle', text: 'Every transaction is recorded twice — a credit (+) and a debit (−). E.g. a UK export of goods creates a credit in the current account and a corresponding debit in the financial account (foreign buyer pays, UK receives foreign currency/financial asset). In theory BoP sums to zero; in practice a balancing item corrects measurement error.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'BoP records all UK-world transactions; must sum to zero. Current account: goods (UK deficit), services (UK surplus), primary income, secondary income. Capital account: small — capital transfers. Financial account: FDI, portfolio investment, reserves. Deficit on one account financed by surplus on another.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The BoP must balance (Current + Capital + Financial accounts = 0). If reporting a 'deficit,' specify which account. Examiners penalise vague statements like 'the UK has a BoP problem'\u2014you must identify current account vs capital issues."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

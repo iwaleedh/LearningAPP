@@ -95,6 +95,15 @@ export const note_economics_4_20_10 = {
         title: 'Exam Tip',
         text: 'Always link the J-curve to the ML condition in exam answers. State: "In the short run the ML condition does not hold as quantities are fixed (J-curve trough). In the long run, if ML holds, the CA improves." Mention time lags explicitly — this shows strong analytical understanding.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't treat the Marshall-Lerner condition as guaranteed in the short run. The J-curve shows initial BoP worsens post-devaluation (existing contracts, slow quantity adjustment) before improving. Missing this timeframe destroys your analysis of devaluation effectiveness."
+      }
     }
   ],
   recall: {

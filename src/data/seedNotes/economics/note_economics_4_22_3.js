@@ -83,6 +83,24 @@ export const note_economics_4_22_3 = {
         title: 'Exam Tip: Equity vs Efficiency',
         text: 'Direct taxes can be made progressive (equity objective) but may reduce work and investment incentives (efficiency cost). Indirect taxes are more efficient (less distortionary for labour supply decisions) but tend to be regressive (equity concern). The optimal tax mix balances both objectives — most countries use both, with direct taxes dominant for redistribution and indirect taxes for revenue efficiency.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Use supply-and-demand logic. Direct taxes (on income) reduce disposable income, shifting consumption demand leftward; indirect taxes (VAT, excise) raise prices, reducing quantity demanded. Macroeconomic effects vary: direct taxes hit savings and investment more (supply-side harm); indirect taxes are more neutral if substitution is low. Examiners reward quantified examples: 'UK VAT is 20%; 1pp increase reduces consumption by ~0.5% in short run.' Show the policy trade-off: equity vs efficiency."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume direct taxes are always 'better for poor' and indirect taxes 'regressive' but don't quantify incidence. In fact, VAT can be equitable if combined with targeted rebates; income tax can be unfair if loopholes favor the wealthy. Also, don't ignore that indirect taxes (fuel duty, alcohol tax) discourage negative externalities \u2014 efficiency gains matter. Edexcel expects: 'Direct taxes are more progressive, but indirect taxes have efficiency uses; policy must combine both.'"
+      }
     }
   ],
   recall: {

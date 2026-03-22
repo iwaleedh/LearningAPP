@@ -85,6 +85,15 @@ export const note_economics_4_20_3 = {
           ['Global savings glut', 'Asian precautionary reserve accumulation post-1997', 'IMF provides better safety nets so countries need fewer reserves', 'IMF reform slow; stigma attached to IMF borrowing remains']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't attribute all global imbalances to 'unfair trade.' Discuss structural factors: demographic ageing (Germany saves more), capital market development (US attracts investment), and reserve currency status (dollar strength). Sophisticated answers go beyond mercantilist rhetoric."
+      }
     }
   ],
   recall: {

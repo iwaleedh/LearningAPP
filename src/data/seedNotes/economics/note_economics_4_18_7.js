@@ -12,6 +12,15 @@ export const note_economics_4_18_7 = {
     { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Technology Diffusion', text: '<strong>Technology diffusion</strong>: the spread of innovations from inventor to other users. Globalisation accelerates diffusion — countries can adopt best-practice production techniques without incurring full R&D costs (knowledge spillovers from multinational firms and open-access internet).' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation Point', text: 'Gains are not automatic. Benefits depend on quality of domestic institutions, property rights, and structural flexibility. Countries with weak governance may fail to capture gains from trade due to corruption or inability to compete in value-adding sectors.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Benefits of globalisation: comparative advantage gains, lower consumer prices, greater choice, technology diffusion, poverty reduction in emerging economies, productive efficiency via competition. Gains highest when supported by strong domestic institutions.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When listing globalisation benefits (consumer choice, competition, innovation), explicitly identify winners and losers. Examiners reward answers that acknowledge domestic producers may lose market share\u2014this shows you understand distribution of gains."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

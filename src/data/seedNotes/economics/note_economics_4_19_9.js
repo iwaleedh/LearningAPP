@@ -7,6 +7,15 @@ export const note_economics_4_19_9 = {
     { id: 'tbl-reasons', type: 'comparisonTable', data: { caption: 'Arguments for Protectionism', headers: ['Argument', 'Explanation', 'Evaluation'], rows: [['Infant industry', 'New industries need temporary protection while gaining economies of scale and learning-by-doing', 'Valid in theory but protection tends to become permanent; historical success (Japan, Korea) is selective'], ['Dumping retaliation', 'Keep out foreign goods sold below cost of production — unfair competition', 'WTO allows anti-dumping duties; but hard to measure "cost of production" across countries'], ['Protect strategic industries', 'Defence, food, energy independence — some sectors too important to expose to foreign disruption', 'Over-applied politically; genuine security rationale in limited cases'], ['Domestic employment defence', 'Prevent job losses from import competition', 'Each job saved through protection is costly to consumers via higher prices; misallocates resources'], ['Correct for unfair subsidies', 'Countervailing duties when foreign government subsidises rivals', 'Legitimate WTO-sanctioned remedy; but determination of subsidy magnitude is disputed'], ['Improve terms of trade', 'Large country can impose optimal tariff to improve ToT', 'Only works for large countries with market power; invites retaliation'], ['Revenue for government', 'Tariffs raise fiscal revenue (important for LDCs with weak tax bases)', 'Least-bad reason; LDCs heavily reliant on trade taxes']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Hierarchy', text: 'Strongest legitimate arguments: infant industry (with time-limit commitment) and anti-dumping retaliation. Weakest: domestic employment (protection destroys jobs elsewhere through higher prices and retaliation). Most modern protectionism is driven by political economy (concentrated producer interests) rather than valid economic arguments.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Protectionist arguments: infant industry, anti-dumping, strategic industries, employment, countervailing duties, optimal tariff (large country), fiscal revenue. Most valid: infant industry (time-limited) and anti-dumping. Most politically driven: employment defence. All risk retaliation and efficiency losses.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When justifying protectionism, use economic rationales: infant industry, negative externalities, dumping, or strategic autonomy. Political protectionism (lobbying, job preservation) scores lower\u2014separate economics from politics in your analysis."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

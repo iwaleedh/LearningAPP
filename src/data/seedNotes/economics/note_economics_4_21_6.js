@@ -68,6 +68,24 @@ export const note_economics_4_21_6 = {
         title: 'Exam Tip: Institutions vs Geography',
         text: 'A classic debate in development economics is whether geography or institutions explain cross-country income differences. Sachs emphasises geography (tropical disease, transport costs). Acemoglu et al emphasise institutions (colonial legacy, property rights, rule of law). The exam-style answer: both matter — geography shapes initial conditions; institutions determine whether advantages are exploited or resources squandered.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Examiners reward historical and institutional depth. Explain persistent effects: colonial extractive institutions (e.g. no property rights, monopolies) remain embedded in governance; geography constrains trade (landlocked nations pay high shipping costs); technology gaps compound (poor countries cannot develop high-value manufacturing). Use examples: Sub-Saharan Africa vs East Asia divergence over 60 years."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students treat these drivers as one-off barriers rather than self-reinforcing traps. Poor institutions \u2192 low FDI inflow \u2192 technology stagnation \u2192 continued poverty. Don't say 'colonial legacy explains everything' \u2014 explain mechanisms. Also avoid geographic determinism ('geography is destiny'). Development is possible despite geography (Singapore example), so institutions and policy matter more. Cite evidence, not just theory."
+      }
     }
   ],
   recall: {

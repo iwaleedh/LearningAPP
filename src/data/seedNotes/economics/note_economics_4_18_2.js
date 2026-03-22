@@ -60,6 +60,15 @@ export const note_economics_4_18_2 = {
         title: 'Evaluation Point',
         text: 'The net effect of migration on either country depends heavily on the <strong>skill level</strong> of migrants, the <strong>state of the labour market</strong> (full employment vs unemployment), and whether migrants are net fiscal contributors. High-skilled migrants are broadly positive for host countries; unskilled migrants may depress wages for the lowest-paid domestic workers.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume international migration always benefits both source and destination economies equally. In essays, address the brain drain impact on developing nations and wage suppression risks in recipient countries\u2014this shows integrated analysis."
+      }
     }
   ],
   recall: {

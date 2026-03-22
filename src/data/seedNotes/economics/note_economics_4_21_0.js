@@ -77,6 +77,24 @@ export const note_economics_4_21_0 = {
         title: 'Exam Tip',
         text: 'When a question mentions "poverty", clarify which type you are discussing — examiners reward the distinction. Note that the UK uses 60% of median income (relative measure) as its main poverty benchmark. When discussing global poverty reduction, use the World Bank absolute measure — this shows dramatic progress driven by China and India.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Examiners reward clear definitions and practical examples. Use the World Bank's absolute poverty line ($1.90/day) and relative poverty thresholds (e.g. 60% of median income) in your answers. Always evaluate which concept is more relevant to specific policy contexts \u2014 absolute for extreme deprivation, relative for social cohesion."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often treat absolute and relative poverty as separate concepts rather than complementary measures. Don't just define them \u2014 explicitly compare their policy implications. Also avoid assuming higher GDP automatically reduces absolute poverty; explain the distribution mechanism required."
+      }
     }
   ],
   recall: {

@@ -74,6 +74,24 @@ export const note_economics_4_22_0 = {
         title: 'Automatic Stabilisers',
         text: 'Transfer payments (benefits) act as automatic stabilisers — they rise automatically in recessions (as unemployment rises and tax revenues fall) and fall in booms. This means fiscal policy partially stabilises the economic cycle without deliberate policy changes, though this creates a cyclical component of the fiscal deficit.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Categorize spending clearly: current (wages, welfare, interest) vs capital (infrastructure); mandatory (debt service) vs discretionary (healthcare). Use UK OBR data to show composition: ~45% social protection, ~20% healthcare, ~10% education. Examiners reward you for linking to macroeconomic outcomes: higher spending \u2192 higher tax burden or deficits, affecting AD and long-run supply. Use tables and percentages."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students treat public spending as uniformly 'wasteful' or 'beneficial' without analysing composition. Current spending on benefits may address poverty; investment spending builds productive capacity. Don't say 'spending is too high/low' without context. Also, avoid assuming higher spend always reduces inequality \u2014 regressive spending (subsidies to farmers, fossil fuels) harms equity. Edexcel expects critical analysis of spending type and incidence."
+      }
     }
   ],
   recall: {

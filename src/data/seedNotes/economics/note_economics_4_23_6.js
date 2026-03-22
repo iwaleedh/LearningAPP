@@ -72,6 +72,24 @@ export const note_economics_4_23_6 = {
         title: 'New Debt Crisis: China\'s Lending',
         text: 'Many low-income countries that received HIPC debt relief subsequently borrowed heavily from China (often for infrastructure, at commercial or semi-commercial rates). China\'s Belt and Road Initiative loans totalled over $1 trillion by 2023. Several countries (Sri Lanka, Zambia, Ethiopia) face new debt distress — with opaque loan terms and concerns about "debt trap diplomacy" (though the severity is disputed). The G20 Common Framework for Debt Relief (2020) seeks to coordinate creditor responses including China.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Capital flight: wealthy residents move savings abroad (tax avoidance, political risk aversion); drains productive capital from poor countries. External debt: borrowing constraints (limited collateral, high borrowing costs). Together, they limit investment. HIPC (Heavily Indebted Poor Countries) initiative: debt relief if reforms (tax collection, spending efficiency) implemented. Examiners reward critical evaluation: 'Debt relief helped some nations (Uganda growth accelerated), but without institutional reform, benefits evaporate.' Show both benefits (fiscal space for investment) and risks (moral hazard, insufficient if policies unchanged)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume debt relief is obviously good. True, high debt constrains spending, but debt relief without institutional reform wastes opportunity. Some relieved nations resumed destructive spending (no ongoing conditionality). Also, capital flight reflects weak property rights and bad governance; relief doesn't address root causes. Edexcel expects: 'Debt relief is necessary but insufficient; must combine with institutional reforms to prevent capital flight recurrence and ensure investment of freed fiscal space.'"
+      }
     }
   ],
   recall: {

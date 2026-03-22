@@ -86,6 +86,24 @@ export const note_economics_4_22_7 = {
         title: 'Exam Tip: Deficit vs Debt',
         text: 'A very common error: confusing deficit (a FLOW — what the government borrows in one year) with debt (a STOCK — the accumulated borrowing over many years). The deficit can be falling (improving) while the debt is still rising (because a deficit, however small, still adds to debt). Only a surplus reduces the debt stock.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Define precisely: fiscal deficit = government spending exceeds revenue; fiscal surplus = opposite. National debt is cumulative: debt t = debt t-1 + deficit. Examiners reward numerical literacy. UK debt/GDP rose from 35% (2007) to 85% (2010) due to cyclical recession deficits. Show the accounting: 'If deficit is 5% of GDP annually, debt/GDP ratio rises 5pp per year unless growth is strong.' Evaluate role in macroeconomic policy \u2014 deficits can stimulate (Keynesian) or crowd out (neoclassical)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse deficit (annual flow) with debt (stock). A country can run deficits for years and still have low debt if growth is strong; another can have surpluses but high debt if past deficits accumulate. Also, don't assume deficits are always bad (Keynesian stimulus uses deficits) or surpluses always good (belt-tightening in recession worsens depression). Edexcel expects: 'Fiscal balance matters cyclically: deficits in downturns stabilize demand; surpluses in booms prevent overheating.'"
+      }
     }
   ],
   recall: {

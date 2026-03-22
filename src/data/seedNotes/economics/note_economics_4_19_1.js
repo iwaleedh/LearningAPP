@@ -11,6 +11,15 @@ export const note_economics_4_19_1 = {
     { id: 'list-gains', type: 'list', data: { style: 'bullet', items: [{ text: 'Both countries <strong>gain from trade</strong> if they specialise according to comparative advantage and exchange at a terms of trade between the two domestic opportunity cost ratios.' }, { text: 'Total world output of both goods <strong>rises</strong> compared to self-sufficiency, even if one country is absolutely more efficient at everything.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Key Exam Logic', text: 'Comparative advantage is about <em>relative</em> not absolute efficiency. A super-productive country still gains from trade by concentrating on its <em>best</em> comparative activity and importing others — because switching labour from the comparative advantage sector has an opportunity cost even for the "better" country.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Absolute advantage: produce more per unit of resources. Comparative advantage: lower opportunity cost — determines trade patterns. Ricardo: both countries gain by specialising in comparative advantage goods and trading, even if one country is absolutely better at everything.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In comparative advantage calculations, always show opportunity costs explicitly\u2014don't just claim 'Country A has lower prices.' Examiners test whether you can derive specialisation patterns systematically. One numerical error loses the entire chain of reasoning."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

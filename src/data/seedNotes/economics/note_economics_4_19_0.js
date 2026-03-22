@@ -10,6 +10,15 @@ export const note_economics_4_19_0 = {
     { id: 'list-gains', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Allocative efficiency</strong>: resources shift to highest-value uses globally; world production possibility frontier effectively expands.' }, { text: '<strong>Economies of scale</strong>: access to global markets allows longer production runs, lowering average costs.' }, { text: '<strong>Variety</strong>: consumers gain access to goods not producible domestically.' }, { text: '<strong>Competition</strong>: exposure to international competition forces domestic firms to reduce costs and innovate.' }] } },
     { id: 'callout-warn', type: 'callout', data: { style: 'warning', title: 'Structural Dependence Risk', text: 'Over-specialisation creates vulnerability: over-dependence on one export sector (e.g. oil, cocoa) exposes an economy to commodity price volatility and Dutch Disease — currency appreciation undermines other export sectors.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'International specialisation: countries focus on products with productive advantage, driven by factor endowments, climate, and accumulated expertise. Gains: allocative efficiency, economies of scale, consumer variety. Risk: structural dependence and vulnerability to commodity price shocks.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume comparative advantage is static. Modern exams test whether you recognise emerging economies (India, Vietnam) have shifted their comparative advantage over time through capital accumulation and education. Static Ricardian models are incomplete."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

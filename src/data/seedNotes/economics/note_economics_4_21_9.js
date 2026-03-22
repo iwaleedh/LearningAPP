@@ -91,6 +91,24 @@ export const note_economics_4_21_9 = {
         title: 'Criticisms of Piketty',
         text: 'FT journalist Chris Giles identified data issues in Piketty\'s wealth series for the UK. Theoretically, if r > g automatically raises inequality, why was the 20th century different? (Answer: wars, policy changes, exceptional growth.) Some argue capital taxes reduce investment incentives; others that capital mobility makes a global wealth tax politically impractical in the absence of international agreement.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Piketty's Capital in the Twenty-First Century argues r > g (return on capital exceeds growth rate) drives long-run inequality. Examiners reward you for explaining this mechanism: capital income accumulates faster than wages grow, so capitalists pull away. Use his data on wealth concentration. Show numeracy: if capital returns 5% but growth is 2%, wealth compounds. Evaluate the policy implication: wealth taxes or higher growth needed."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students cite Piketty without understanding r > g. Don't just say 'capital returns are high' \u2014 explain comparative dynamics and why this drives inequality over generations. Also, Piketty's wealth tax proposal is controversial; evaluate critically rather than endorsing it. Some economists argue r > g is temporary or requires specific conditions. Edexcel expects nuanced engagement: 'Piketty's evidence is strong on wealth concentration, but policy solutions are debated.'"
+      }
     }
   ],
   recall: {

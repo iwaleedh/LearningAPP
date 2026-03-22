@@ -90,6 +90,24 @@ export const note_economics_4_21_4 = {
         title: 'Limitations of the Gini',
         text: 'Different Lorenz curve shapes can produce the same Gini — it cannot distinguish where in the distribution inequality is concentrated. It is sensitive to the poverty line and income definition used. Cross-country comparisons are imperfect due to different data collection methods. The Gini also ignores wealth inequality and non-income dimensions of wellbeing.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Demonstrate numerical literacy. Calculate Gini coefficients from Lorenz curve coordinates; interpret values (0 = perfect equality, 1 = perfect inequality). Examiners expect you to compare Gini coefficients across countries and time periods. Use Edexcel data sets (often provided in case studies). Note: the steeper the curve below the 45\u00b0 line, the greater inequality."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students misinterpret Lorenz curves: a line closer to the x-axis means MORE inequality, not less. Also, many forget that the Gini coefficient summarizes the curve into one number \u2014 it loses detail. Two countries with identical Gini coefficients can have different inequality distributions. Always critique: 'Gini is useful but masks distributional differences.'"
+      }
     }
   ],
   recall: {

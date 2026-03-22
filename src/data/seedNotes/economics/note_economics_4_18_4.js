@@ -60,6 +60,15 @@ export const note_economics_4_18_4 = {
         title: 'Evaluation',
         text: 'Critics argue the Washington Consensus imposed inappropriate one-size-fits-all policies that damaged developing economies (e.g. capital account liberalisation contributed to the 1997 Asian financial crisis). Dani Rodrik coined the term <strong>"premature deindustrialisation"</strong> — countries opened up before developing strong domestic industries.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't treat market-opening political changes (e.g. China's 2001 WTO accession) as instantaneous GDP boosters. Discuss lag effects, structural adjustment costs, and distributional impacts across sectors to demonstrate economic rigour."
+      }
     }
   ],
   recall: {

@@ -78,6 +78,24 @@ export const note_economics_4_22_4 = {
         title: 'UK Tax System Overall',
         text: 'The UK tax system is moderately progressive overall, despite regressive elements (VAT, council tax). Income tax and NI create progressivity at the top; benefit withdrawal creates effective progressivity at the bottom. However, the effective marginal tax rate at the poverty line can be very high (>60%) due to simultaneous withdrawal of multiple means-tested benefits — the poverty trap problem.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Distinguish clearly: progressive tax rate rises with income (top 45% earners pay higher %); proportional rate is constant (%); regressive rate falls with income (%. VAT is regressive because the poor spend more of income on consumption). Examiners reward you for evaluating equity-efficiency trade-offs. Progressive taxes reduce inequality but may reduce work incentives (deadweight loss); proportional/regressive avoid disincentives but don't redistribute. Use numerical examples with tax brackets."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse 'progressive' (tax rate rises) with 'high taxes.' Progressive 10% on all is less revenue than flat 20%. Also, don't assume progressive is always better; if it kills growth incentives, equity gains may reverse (lower growth reduces jobs, wages fall). Some evidence suggests modest progressivity (e.g. top rate 40%) balances goals better than 50%+ rates. Edexcel expects: 'Progressive is equitable but faces behavioral response; optimal rate is empirical question.'"
+      }
     }
   ],
   recall: {

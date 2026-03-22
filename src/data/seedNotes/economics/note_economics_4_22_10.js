@@ -61,6 +61,24 @@ export const note_economics_4_22_10 = {
         title: 'Exam Tip: Always Discuss the Mix',
         text: 'A strong exam answer evaluates which policy combination is most appropriate given the specific economic context in the question. Key factors: (1) current output gap (positive or negative); (2) inflation rate; (3) level of national debt; (4) monetary policy space (how far from zero lower bound?); (5) exchange rate and trade position. Reference real examples to support your analysis.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Show toolkit thinking: different conditions require different mixes. In a demand-shock recession (2008), fiscal stimulus works; in supply-side crisis (stagflation 1970s), supply-side reform is needed. Monetary policy is powerful for managing inflation but weak at stimulating demand in liquidity trap (near-zero rates). Examiners reward dynamic reasoning: 'Given current inflation and unemployment, a mix of some demand management plus medium-term supply investment is optimal.' Use examples."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students favour one policy tool (e.g. 'always use monetary policy' or 'fiscal is best') regardless of context. This is incorrect. Also, conflating policy aims: fiscal policy can pursue equity (redistribution) or efficiency (supply-side investment), but not both simultaneously if budgets are tight. Don't say 'do everything'; explain constraints and trade-offs. Edexcel values context-awareness and sequencing (short-run demand, long-run supply)."
+      }
     }
   ],
   recall: {

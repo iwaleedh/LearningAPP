@@ -76,6 +76,24 @@ export const note_economics_4_22_8 = {
         title: 'Exam Tip',
         text: 'The structural/cyclical distinction is frequently tested. Key point: a cyclical deficit self-corrects as the economy recovers; a structural deficit requires deliberate policy action. The Osborne austerity programme (2010) was driven by the judgment that most of the UK deficit was structural, not cyclical — though this was contested by many economists who argued it was largely cyclical.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Distinguish cyclical (from recessions, automatic) vs structural (policy-driven, permanent). Examiners reward this because it explains why deficits sometimes are appropriate. UK cyclical deficit 2008\u20132010 was unavoidable (income fell, welfare rose automatically); structural deficits since 2010 reflect policy choices (low tax rates, spending commitments). Methods: estimate potential GDP via trend, compare actual to potential. If output gap shrinks, cyclical part should fall. Use data: 'UK structural deficit remained 2\u20133% even post-recovery, reflecting policy choices.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume all deficits are equivalent. In reality, cyclical deficits reverse naturally as growth returns (no policy action needed); structural deficits persist and require tax hikes or spending cuts. Also, estimating structural deficits is hard \u2014 economists disagree on potential GDP. Don't say 'deficit is bad' without distinguishing type. Edexcel expects: 'Cyclical deficits are stabilizers; structural deficits require policy action if they're judged unsustainable.'"
+      }
     }
   ],
   recall: {

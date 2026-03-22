@@ -11,6 +11,15 @@ export const note_economics_4_19_3 = {
     { id: 'tbl-geo', type: 'comparisonTable', data: { caption: 'Shift in Direction of World Trade', headers: ['Period', 'Dominant Pattern'], rows: [['1950–1980', 'North-North trade: developed economies dominating; Europe, US, Japan as largest traders'], ['1980–2000', 'North-South expansion: Asian NICs (South Korea, Taiwan, Hong Kong, Singapore) rise as exporters'], ['2000–present', 'South-South growth: China–Africa, China–ASEAN; trade between emerging economies accelerating']] } },
     { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'China\'s Role', text: 'China became the world\'s largest exporter of goods (overtook Germany 2009). Share of world merchandise exports rose from <1% (1980) to ~14% (2022). China\'s industrial policy and FDI created comparative advantage in manufacturing from an initially labour-cost base, shifting now to technology and electric vehicles.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'World trade grew faster than GDP post-1945, driven by GATT/WTO liberalisation and containerisation. Composition shifted: manufactures and services replaced primary commodities. Geography shifted: North-North → North-South → South-South; China emerged as dominant exporter. GVCs fragment production globally.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Support essays on changing trade patterns with specific, recent data: China's share of global manufacturing, India's services exports, or Africa's raw material dependence. Dated examples lose credibility; use 2023-2025 statistics."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -11,6 +11,15 @@ export const note_economics_4_19_10 = {
     { id: 'h-4', type: 'heading', data: { text: 'Non-Tariff Barriers (NTBs)', level: 2 } },
     { id: 'list-ntb', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Subsidies</strong>: direct government payments or tax breaks to domestic producers; reduce their cost relative to imports. E.g. EU Common Agricultural Policy farm subsidies.' }, { text: '<strong>Technical standards and regulations</strong>: safety, hygiene, labelling requirements that imports must meet — can be used as hidden protection. E.g. US standards blocking EU beef exports.' }, { text: '<strong>Voluntary Export Restraints (VERs)</strong>: exporting country agrees to limit exports — politically negotiated. The restraint protects domestic producers while avoiding WTO violation. E.g. Japan limiting US car exports 1981.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Tariff: tax on imports → raises price, generates revenue, deadweight loss. Quota: quantitative limit → no government revenue; quota rent may go to exporters. NTBs: subsidies, technical standards, VERs — increasingly dominant as tariffs fall. All create welfare losses for domestic consumers.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Compare tariffs vs quotas rigorously: tariffs generate tax revenue but cause welfare loss through deadweight; quotas create scarcity rents for license holders and offer no government revenue. Exams test whether you explain why countries choose differently."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

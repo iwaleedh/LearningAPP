@@ -75,6 +75,15 @@ export const note_economics_4_20_8 = {
         title: 'Post-Brexit GBP Depreciation',
         text: 'Following the June 2016 Brexit referendum, GBP depreciated ~15% against USD and EUR almost immediately. Effects: UK goods exports became ~15% cheaper for foreign buyers; imported food, fuel and manufactured goods became more expensive; UK inflation rose from ~0.5% (mid-2016) to 3.1% by late 2017; real wages fell as prices rose faster than nominal wages.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Devaluation = policy-induced fixed-rate decrease; depreciation = floating-rate market decrease. Use correct terms consistently. Explain mechanism: devaluation makes exports cheaper, but if passed to prices, real effects depend on wage-price dynamics."
+      }
     }
   ],
   recall: {

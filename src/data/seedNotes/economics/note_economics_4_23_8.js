@@ -84,6 +84,24 @@ export const note_economics_4_23_8 = {
         title: 'Infrastructure and Skills: Complementarity',
         text: 'Infrastructure and skills are complementary — each makes the other more productive. Roads connecting schools increase attendance; electricity in schools enables evening study; skilled workers can maintain infrastructure. This complementarity justifies coordinated investment in both simultaneously rather than sequentially, though it also makes development more resource-intensive.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Infrastructure deficits (poor roads, unreliable electricity) raise business costs, dampen productivity. Skill deficits (low literacy, numeracy, technical training) limit job quality and entrepreneurship. Both are costly: Sub-Saharan Africa loses ~2% GDP annually to power outages alone. Policy responses: public investment in infrastructure (roads, power; high multipliers post-crisis), education spending (externalities justify public funding), FDI in infrastructure (private firms efficient but risk-averse in poor nations). Examiners reward quantifying costs: 'Without rural electrification, African farmers can't refrigerate crops, losing 20% to spoilage annually.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students treat infrastructure needs as solved by 'just building roads.' Reality: roads need maintenance (institutional capacity); power requires fuel supply; schools need teachers (incentives, training). Also, infrastructure isn't enough \u2014 roads to nowhere help nobody; invest where economic activity clusters. Don't say 'infrastructure is necessary'; say 'it's necessary but not sufficient; needs to be well-targeted and maintained, requiring institutional quality.'"
+      }
     }
   ],
   recall: {

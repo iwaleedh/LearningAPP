@@ -76,6 +76,24 @@ export const note_economics_4_22_1 = {
         title: 'Baumol\'s Cost Disease',
         text: 'Baumol\'s Cost Disease explains why public service costs rise faster than private sector costs. Labour productivity in services (healthcare, education, police) is hard to improve — a teacher still teaches 30 students, a surgeon still performs operations manually. But public sector wages must rise with the private sector to retain workers. So public services absorb an ever-rising share of GDP even without expanding their output.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Link spending growth to specific economic trends. Ageing populations \u2192 higher pensions and healthcare costs (UK: 20% of spending on pensions soon). Business cycles \u2192 welfare spending spikes in recessions (automatic stabilizers). Debt servicing costs \u2192 post-2008, UK interest payments rose sharply with QE unwinding. Examiners reward quantified examples: 'UK public spending rose from 35% to 42% of GDP during 2008\u20132010 due to cyclical downturn and bank bailouts.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students blame 'big government' ideology for spending growth without recognizing structural drivers. Ageing is demographic, not political choice. Also, distinguish between cyclical (temporary, automatic stabilizer) and structural (permanent policy shift) drivers. Don't say 'spending just keeps rising' \u2014 analyse why. Edexcel expects you to separate policy changes (new entitlements) from automatic responses (recession welfare). Use data to ground argument."
+      }
     }
   ],
   recall: {

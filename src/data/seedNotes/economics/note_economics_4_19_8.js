@@ -10,6 +10,15 @@ export const note_economics_4_19_8 = {
     { id: 'list-net', type: 'list', data: { style: 'bullet', items: [{ text: 'Whether a customs union is <strong>net beneficial</strong> depends on whether trade creation effects > trade diversion effects.' }, { text: 'Trade creation is more likely when <strong>partner economies have similar factor endowments and cost structures</strong> to the most efficient world producers.' }, { text: 'Trade diversion is more costly when the <strong>world price difference is large</strong> and the CET is high.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'EU Context', text: 'EU membership generated significant trade creation for the UK (accessing 450m consumer market; reduced trade barriers). But critics argued it diverted UK imports from cheapest world suppliers (e.g. Commonwealth agricultural goods) toward EU partners. Post-Brexit, UK can now strike independent FTAs — but has lost the trade creation benefits from frictionless EU access.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Trade creation (Viner): bloc membership shifts purchases from high-cost domestic to lower-cost partner — welfare gain. Trade diversion: bloc shifts purchases from cheapest world supplier to less-efficient partner due to CET — welfare loss. Net effect depends on relative magnitudes. EU membership generated large trade creation for UK.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse trade creation (net welfare gain) with trade diversion (net welfare loss). Their magnitude depends on tariff levels and external bloc efficiency. A bloc can experience both simultaneously\u2014demonstrate you understand the granularity."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

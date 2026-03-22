@@ -78,6 +78,24 @@ export const note_economics_4_21_1 = {
         title: 'Exam Tip',
         text: 'Examiners like to see discussion of the limitations of income-based poverty measures. The MPI is the go-to alternative — mention its three dimensions and that it identifies where poverty is concentrated and what deprivations matter most for targeted policy. Remember: ~700m in extreme income poverty vs ~1.1bn in multidimensional poverty globally.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Show numerical calculation skills. When invited to construct measures like the headcount ratio (proportion below poverty line), show your working. Examiners value understanding that the MPI captures multiple deprivations simultaneously \u2014 far superior to single-metric approaches. Reference the UNDP's MPI methodology."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume headcount ratio is sufficient to measure poverty. This is incorrect \u2014 Edexcel expects you to critique it for ignoring depth of poverty. The poverty gap accounts for this; MPI adds dimensions of health, education, and living standards. Avoid saying 'headcount is simpler so it's better.' Explain trade-offs between simplicity and accuracy."
+      }
     }
   ],
   recall: {

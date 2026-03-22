@@ -80,6 +80,24 @@ export const note_economics_4_21_7 = {
         title: 'IMF Consensus',
         text: 'The IMF\'s 2014 paper (Ostry, Berg, Tsangarides) concluded: (1) higher inequality is associated with lower and less durable growth; (2) redistribution per se does not harm growth, except in extreme cases; (3) the net effect of redistribution on growth is broadly neutral or positive for typical levels of redistribution. This represents a shift from the 1980s consensus that redistribution was always growth-reducing.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Link inequality to multiple channels: incentive effects (harder to climb ladder, less entrepreneurship), health and crime (Wilkinson & Pickett evidence), political instability (undermines contracts, investment). Examiners reward you for showing this isn't just redistribution ethics \u2014 inequality is economically damaging. Reference recent papers showing negative growth effects. Use country evidence: more unequal nations show slower long-run growth."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume inequality always harms growth (Kuznets inverted-U is debunked). Say instead: 'extreme inequality harms growth but moderate inequality may provide work incentives.' Also, don't confuse correlation with causation \u2014 does inequality cause low growth, or does poverty cause both? Edexcel expects you to acknowledge competing channels. Some inequality provides incentives; too much creates instability."
+      }
     }
   ],
   recall: {

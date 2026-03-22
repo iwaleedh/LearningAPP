@@ -86,6 +86,24 @@ export const note_economics_4_23_3 = {
           { text: '<strong>Diversification</strong> — structural transformation away from commodity dependence into manufacturing and services; reduces exposure to commodity price cycles' }
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Commodity price volatility stems from inelastic supply (oil output adjusts slowly) and inelastic demand (essential consumption doesn't change much), so small supply shocks cause large price swings. Prebisch-Singer hypothesis: commodity export prices fall relative to manufactured import prices over long term (declining terms of trade). Effects on developing economies: export revenues fluctuate (budget uncertainty), poverty rises in booms (overinvestment, crashes afterward), currency volatility follows. Examiners reward case study: petroleum exporters boom/bust cycles."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume commodity price volatility is just 'luck' requiring hedging. While true, also address structural issue: Prebisch-Singer suggests commodity dependence itself is problematic. Evidence on declining terms of trade is mixed (oil rose 1970s\u20132000s, fell 2014\u20132020); don't overstate inevitability. Also, volatile revenues can be managed (sovereign wealth funds buffer shocks), but this requires institutional capacity. Edexcel expects: 'Volatility and declining terms of trade are risks; policy responses (diversification, stabilization funds) matter.'"
+      }
     }
   ],
   recall: {

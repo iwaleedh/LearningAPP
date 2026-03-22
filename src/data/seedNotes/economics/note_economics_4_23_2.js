@@ -55,6 +55,24 @@ export const note_economics_4_23_2 = {
         title: 'Exam Tip',
         text: 'In essays on development measurement, always mention at least two alternative indicators and explain what each adds to HDI. The MPI is particularly useful for understanding the multi-dimensional nature of poverty; the GII highlights gender as a development dimension; the HPI brings in environmental sustainability. The key evaluative point is that no single indicator is sufficient — policymakers need a dashboard.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Evaluate alternatives comprehensively: Multidimensional Poverty Index (captures health, education, living standards simultaneously; now used by UNDP), Gender Inequality Index (maternal mortality, education, political participation), Happy Planet Index (combines wellbeing + life expectancy + ecological footprint), Genuine Progress Indicator (GPI adjusts GDP for environmental costs, inequality, leisure). Examiners reward explaining why alternatives matter: HDI captures income but misses inequality; GPI reveals high-GDP nations may have poor sustainability. Use country rankings to show differences."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students list alternatives without critically evaluating trade-offs. MPI is detailed but data-intensive (sparse for poor countries). GPI is holistic but requires debatable adjustments (how much reduce GDP for pollution?). Happy Planet Index correlates with tiny economies (Costa Rica ranks high; Luxembourg low due to high carbon). Don't just say 'these are better than HDI'; say 'each measure emphasizes different values; no single metric fits all purposes. Choose based on policy question.' Edexcel values methodological awareness."
+      }
     }
   ],
   recall: {

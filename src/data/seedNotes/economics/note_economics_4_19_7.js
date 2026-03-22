@@ -9,6 +9,15 @@ export const note_economics_4_19_7 = {
     { id: 'list-eg', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>EU Single Market</strong>: common market with free movement of goods, services, capital, and labour. World\'s largest single trading bloc by GDP.' }, { text: '<strong>USMCA</strong> (formerly NAFTA): free trade area between US, Canada, Mexico. Complex rules of origin determine whether goods qualify for preferential tariffs.' }, { text: '<strong>ASEAN</strong>: free trade area among 10 South-East Asian nations; reduces tariffs but limited deeper integration.' }, { text: '<strong>CPTPP</strong>: Comprehensive and Progressive Agreement for Trans-Pacific Partnership; 11 Pacific Rim nations (UK joined 2024).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Common Exam Distinction', text: 'The key difference between a <strong>free trade area</strong> and a <strong>customs union</strong>: FTAs allow each member to set its own external tariffs (requiring rules of origin), while customs unions have a common external tariff against non-members. A customs union is what made Brexit trade policy complex — UK left the EU\'s common external tariff.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Trading bloc spectrum: FTA (no internal tariffs) → Customs Union (+ common external tariff) → Common Market (+ factor mobility) → Economic Union (+ policy harmonisation) → Monetary Union (+ shared currency). Examples: EU Single Market, USMCA, ASEAN.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Categorise trading blocs precisely: EU = customs union + single market; USMCA = free trade area; ASEAN = looser cooperation. Examiners penalise vague classifications. Use specific examples (rules of origin, tariff externalities) to show deep understanding."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

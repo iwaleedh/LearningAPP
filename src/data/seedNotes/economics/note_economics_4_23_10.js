@@ -68,6 +68,24 @@ export const note_economics_4_23_10 = {
         title: 'Conflict Trap',
         text: 'Paul Collier ("The Bottom Billion") identified a "conflict trap" — countries that have experienced civil war are at much higher risk of experiencing another. Low income causes conflict (competition for scarce resources, grievances from inequality); conflict reduces income; the poverty-conflict cycle is self-reinforcing without external intervention. Countries in this trap account for a disproportionate share of global poverty.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Analyze conflict mechanisms systematically: direct effects (death, displacement, destroyed capital), indirect effects (health systems collapse, supply chain breaks), institutional effects (rule of law erodes, investment falls, brain drain). Examiners reward citing cases: Syria conflict destroyed infrastructure, killed 500k, displaced 12M; rebuilding requires decades. Show sequencing: short-term humanitarian crisis \u2192 medium-term reconstruction \u2192 long-term institutional reform. Evaluate policy: aid, debt relief, investment guarantees post-conflict."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students oversimplify conflict as 'bad for development' without analyzing channels. Conflicts affect different dimensions differently: physical capital destroyed quickly, but human capital (skilled emigration) may recover if peace incentivizes return. Also, some post-conflict nations develop fast (Rwanda data: 8%+ growth 1994\u20132010) if governance improves; others stagnate. Don't assume conflict = permanent poverty. Edexcel expects: 'Conflict devastates development, but recovery speed depends on institutional and investor confidence restoration.'"
+      }
     }
   ],
   recall: {

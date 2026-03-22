@@ -70,6 +70,24 @@ export const note_economics_4_23_9 = {
           { text: '<strong>Digitalisation of public payments</strong> — direct government payments to beneficiaries via mobile money (as in India\'s DBT — Direct Benefit Transfer) reduces opportunities for corrupt intermediaries' }
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Governance quality and corruption undermine development through multiple channels: discourage FDI (uncertain property rights, judicial capture), reduce tax revenue (tax authority corruption, evasion), misallocate public spending (patronage over merit), and erode social trust. Examiners reward evidence: Transparency International corruption index correlates strongly with poverty (r = -0.8). Institutional reforms: independent judiciary, executive accountability, press freedom, civil service professionalization. International accountability (ICC prosecutions of kleptocrats, FATCA tracking stolen assets) slowly changes incentives."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume external accountability mechanisms (ICC, asset recovery) solve corruption. They help, but institutional change is slow and internally driven (revolutions, elite consensus). Also, don't assume corruption is only in poor nations (wealthy nations have softer brands: regulatory capture, lobbying). The difference is scale: poor-nation corruption diverts resources; wealthy-nation corruption redirects policy. Edexcel expects: 'Governance improvement requires internal institutional reform, reinforced by international pressure; solutions are long-term and context-specific.'"
+      }
     }
   ],
   recall: {

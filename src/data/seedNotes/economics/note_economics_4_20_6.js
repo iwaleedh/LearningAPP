@@ -92,6 +92,15 @@ export const note_economics_4_20_6 = {
         title: 'Exam Tip: Short Run vs Long Run',
         text: 'In the short run, interest rate differentials and speculation dominate. In the long run, inflation differentials (via PPP) and trade flows dominate. For evaluation, note that exchange rate models perform poorly at short-run prediction because speculative forces overwhelm fundamentals — the exchange rate is notoriously difficult to forecast.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Exchange rate determination involves multiple competing forces (PPP, interest rate differentials, expectations). Don't reduce to a single cause. Exams test whether you explain why predictions fail\u2014market psychology and shocks override models."
+      }
     }
   ],
   recall: {

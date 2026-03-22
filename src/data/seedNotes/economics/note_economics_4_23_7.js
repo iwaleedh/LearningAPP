@@ -85,6 +85,24 @@ export const note_economics_4_23_7 = {
         title: 'Criticism of Microfinance',
         text: 'Randomised controlled trials (Banerjee, Duflo, Karlan et al.) found average impact of microcredit on income and poverty is modest. Some borrowers use credit for consumption rather than investment. High interest rates (Grameen averages ~20%, commercial microfinance 30-40%) can trap vulnerable households in debt. Critics argue microfinance is oversold as a development solution — it can help at the margin but cannot substitute for public investment in education, health, and infrastructure.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Financial exclusion: poor lack access to formal banking (no savings accounts, loans, insurance), relying on informal channels (moneylenders at 10%+ interest). This constraints investment in small businesses, education, emergencies. Microfinance solutions: small loans to poor entrepreneurs (Grameen Bank model), often with group collateral (peer monitoring). Mobile banking (M-Pesa in Kenya) bypasses bank branch costs. Examiners reward evidence: 'Microfinance reached 200M+ clients; studies show income gains of 10\u201330% per client.' Show limitations: high default rates, not suitable for all businesses."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students romanticize microfinance as 'silver bullet' for poverty. While impactful, it's not sufficient: microcredit is for small entrepreneurs, not unemployed or disabled populations; high repayment rates require business success (not guaranteed). Mobile banking helps but requires phone infrastructure, digital literacy, and trust in non-banks. Don't say 'microfinance solves poverty'; say 'it addresses credit gap for entrepreneurship; when combined with education and infrastructure, poverty reduction accelerates.' Evidence shows mixed long-run outcomes."
+      }
     }
   ],
   recall: {

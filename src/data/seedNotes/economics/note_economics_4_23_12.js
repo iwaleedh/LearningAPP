@@ -82,6 +82,24 @@ export const note_economics_4_23_12 = {
           ['Trade and FDI (Moyo)', 'Preferential trade access; AfCFTA (African Continental Free Trade Area); FDI attraction', 'Vietnam\'s export-led growth; Ethiopia\'s industrial parks attracting Chinese FDI', 'Market access requires competitiveness not yet achieved; FDI can exploit labour and environment; benefits unevenly distributed']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Compare three policy paradigms: Washington Consensus (1990s, market liberalization, privatization, trade openness) emphasized growth but inequality often rose, inequality widened; Interventionist (industrial policy, picking winners like South Korea) achieved rapid growth but required state capacity; Institutionalist (rule of law, property rights, governance) is now consensus as foundational. Examiners reward evidence: 'South Korea industrialized via state-guided investment; but this required exceptional governance; aid effectiveness varies with institutions.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students treat paradigms as sequential truth progressions ('Washington Consensus failed, now institutionalism is right'). Actually, each era reflects real lessons but also reflects power dynamics and donor preferences. Interventionism works in capable states (Singapore) but fails in corrupt ones (Nigeria). Don't assume one approach is universally best. Aid effectiveness debate remains unsettled \u2014 some argue conditionality (impose reforms as aid condition) helps; others say it undermines local ownership. Edexcel expects balanced evaluation."
+      }
     }
   ],
   recall: {

@@ -90,6 +90,24 @@ export const note_economics_4_21_3 = {
         title: 'Exam Tip',
         text: 'Distinguish clearly: income inequality (Gini ~0.34 in UK) vs wealth inequality (Gini ~0.62). Always note that wealth is MORE unequally distributed. Piketty\'s r > g is a powerful evaluative point — it suggests wealth inequality is self-reinforcing under capitalism unless addressed by wealth taxes or stronger redistribution.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Examiners test whether you understand the distinction matters. Explain that wealth is more concentrated (fewer wealthy individuals) while income is relatively dispersed. Use the concept of returns to capital: wealth-owners earn capital gains, while wage-earners depend on hourly rates. This underpins inequality trends. Always link to piketty's r > g inequality driver."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse income and wealth inequality, treating them as synonymous. They are not \u2014 a wealthy person with low income exists (retirees with assets), as does a high-income person with low wealth (new professional). Also, students forget that wealth includes property, stocks, and savings, not just income flows. Don't say 'they measure the same thing.'"
+      }
     }
   ],
   recall: {

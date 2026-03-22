@@ -80,6 +80,15 @@ export const note_economics_4_20_7 = {
         title: 'Exam Tip: Distinguish Mechanism from System',
         text: 'The key distinction is mechanism: revaluation = deliberate policy decision in a fixed system; appreciation = market forces in a floating system. The economic effects on trade, inflation and AD are identical — what differs is the cause and the degree of control the government has.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Revaluation = policy-induced fixed-rate increase; appreciation = floating-rate market increase. Mixing terminology costs marks. The effects differ: revaluation can be reversed, appreciation may persist if fundamentals shifted."
+      }
     }
   ],
   recall: {

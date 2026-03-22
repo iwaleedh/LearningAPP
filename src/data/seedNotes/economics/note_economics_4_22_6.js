@@ -60,6 +60,24 @@ export const note_economics_4_22_6 = {
         title: 'Political Abuse of the Laffer Curve',
         text: 'The Laffer curve is theoretically uncontroversial — it is mathematically true. The controversy is where t* lies. Most economists estimate the revenue-maximising top marginal rate for developed economies is well above current rates (often cited as 60-70%+). Tax cuts from current UK/US rates of 40-45% are unlikely to be self-financing. The Laffer curve has frequently been used to provide intellectual cover for tax cuts that primarily benefit the wealthy without economic justification.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "The Laffer curve shows an inverted-U: tax revenue first rises with tax rate, then falls (if rate becomes confiscatory, evasion rises, revenue falls). Examiners reward you for critical evaluation: where is the UK on this curve? Evidence suggests optimal top rate is 50\u201360%, not 90%; UK at 45% appears on rising side (rate cut may harm revenue). Use empirical data: simulations show unclear empirical peak. Distinguish theoretical possibility from claimed policy justification."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume Laffer curve proves 'tax cuts raise revenue,' which is ideological overreach. The curve exists theoretically, but peak is uncertain. Only if initial rate is past the peak would cuts raise revenue; UK evidence suggests top rate is below peak, so cuts lose revenue. Also, Laffer focuses on income tax; interaction with VAT, capital gains doesn't follow same curve. Edexcel expects: 'Laffer curve is possible but empirically unclear where peak lies; tax cuts \u2260 automatic revenue gain.'"
+      }
     }
   ],
   recall: {

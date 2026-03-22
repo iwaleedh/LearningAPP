@@ -91,6 +91,15 @@ export const note_economics_4_20_12 = {
         title: 'Exam Tip: Context Matters',
         text: 'The optimal policy mix depends on context. For a country in a monetary union (Eurozone) that cannot devalue, internal devaluation (wage restraint, productivity reform) is the only price competitiveness tool. For a country with a floating rate, depreciation is available but must be combined with supply-side reform to achieve lasting gains.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't conflate short-term competitiveness boosts with sustainable improvements. Currency depreciation helps temporarily, but if inflation erodes gains, competitiveness returns to baseline. Only structural reforms (education, infrastructure) create durable advantages."
+      }
     }
   ],
   recall: {

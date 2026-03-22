@@ -78,6 +78,24 @@ export const note_economics_4_22_9 = {
         title: 'Case Study: Truss Mini-Budget September 2022',
         text: 'Chancellor Kwarteng announced £45bn of unfunded tax cuts in September 2022. Bond markets reacted immediately — 10-year gilt yields spiked from 3.5% to over 4.5% in days. The pound fell to near-parity with the dollar. UK pension funds faced margin calls, threatening a financial crisis. The Bank of England intervened, buying gilts. Truss and Kwarteng were removed from office within 6 weeks. Lesson: market confidence in fiscal sustainability is fragile — and can be lost rapidly.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Assess sustainability: debt/GDP ratio stabilizes if deficit (% of GDP) equals growth rate \u00d7 existing debt/GDP ratio. Examiners reward numerical examples. If UK debt/GDP is 100% and growth is 2%, structural deficit must be \u22642% to stabilize debt. Risks of high debt: crowding out (public borrowing raises interest rates, private investment falls); intergenerational fairness (future taxpayers repay); market confidence loss (if debt spirals, rates spike, default risk rises). Use Italy example: 130% debt/GDP limits policy space."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume high debt is always unsustainable. This is too simple. Japan has 260% debt/GDP but low rates (domestic savers, low default risk); Greece had 170% and crisis occurred (foreign borrowers, lost confidence). Debt sustainability depends on growth, interest rates, currency control, and confidence. Also, don't confuse nominal and real debt accumulation. Examiners expect: 'High debt constrains policy but isn't automatically catastrophic; sustainability depends on growth and investor confidence.'"
+      }
     }
   ],
   recall: {

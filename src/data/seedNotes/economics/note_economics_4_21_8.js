@@ -88,6 +88,24 @@ export const note_economics_4_21_8 = {
         title: 'Exam Tip',
         text: 'When discussing inequality effects, bring in Spirit Level evidence. Key exam point: inequality affects outcomes for ALL income groups in a society, not just the poor. This provides the strongest argument for reducing inequality even from a non-redistributive perspective — even the rich in more unequal societies have worse health than their counterparts in more equal societies.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "The Spirit Level (Wilkinson & Pickett) is Edexcel-relevant evidence. Use specific findings: in more unequal societies, even the wealthy have worse health outcomes (stress from status comparison, reduced social trust). Examiners reward citing this research but also critically appraising it \u2014 some studies show relative deprivation matters less than absolute income. Use data: compare health indicators across unequal vs equal societies."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students over-claim causation from The Spirit Level correlation. Higher inequality correlates with worse health, but reverse causation exists (poor health reduces earnings, increases poverty). Also, confounders like weak institutions or low income per capita matter. Don't say 'inequality causes all health problems.' Say: 'The Spirit Level suggests relative deprivation mechanisms; however, alternative explanations require testing.' Edexcel values methodological thinking."
+      }
     }
   ],
   recall: {

@@ -78,6 +78,15 @@ export const note_economics_4_18_1 = {
         title: 'Exam Tip',
         text: 'Examiners often ask whether FDI always benefits the host country. Be ready to argue both sides: yes (jobs, technology), but also no (profit repatriation, transfer pricing, crowding out domestic firms).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In essays, distinguish between FDI (ownership and control of productive assets) and portfolio investment (passive shareholding). Examiners expect you to explain why TNCs choose FDI over exports\u2014this is about control, not just cost minimisation."
+      }
     }
   ],
   recall: {

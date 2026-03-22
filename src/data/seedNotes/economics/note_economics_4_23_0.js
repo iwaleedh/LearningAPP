@@ -84,6 +84,24 @@ export const note_economics_4_23_0 = {
         title: 'HDI vs GDP Per Capita',
         text: 'The UK HDI rank (14th, 0.929) is similar to its GDP per capita rank. But interesting divergences occur: Costa Rica ranks higher on HDI than on GDP (long life expectancy despite modest income). Saudi Arabia ranks lower on HDI than GDP (high income but weaker education/gender equality). The HDI reveals that income is not the only dimension of development.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "HDI = average of (Life Expectancy Index, Education Index, GNI per Capita Index). Examiners reward numeracy: show how to construct HDI from components. Key insight: HDI captures non-income dimensions (health, education) missing from GDP. Interpret findings: Sub-Saharan Africa has low HDI (~0.5) due to low life expectancy and education; Scandinavian high HDI (~0.95) across all dimensions. Compare HDI rankings to GDP rankings \u2014 development \u2260 just wealth. Use country examples strategically."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume HDI is a perfect development measure. It's not \u2014 it misses inequality (Costa Rica high HDI but unequal), omits environmental degradation (Mauritius high HDI, coral bleaching), and ignores governance quality. Also, averaging three indices masks trade-offs: a country can have high health but low education. Don't say 'HDI is better than GDP' absolutely; say 'HDI captures non-income dimensions but has limitations.' Edexcel expects critical perspective, not advocacy."
+      }
     }
   ],
   recall: {

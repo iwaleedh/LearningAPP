@@ -72,6 +72,24 @@ export const note_economics_4_23_1 = {
         title: 'Exam Tip',
         text: 'When asked to evaluate the HDI, structure your answer as: (1) what does it capture that GDP misses? (2) what does it still miss? (3) what improvements exist (IHDI, GII, MPI)? The strongest critique is inequality — the HDI gives no information about distribution. The IHDI addresses this by discounting the HDI by the degree of inequality within each dimension.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Critique HDI systematically: it ignores income inequality (Inequality-Adjusted HDI attempts fix but data gaps remain), omits environmental sustainability (high HDI, poor carbon footprint), doesn't measure governance quality or political freedom, and uses arbitrary weightings (why average equally?). IHDI adjusts for inequality within each dimension \u2014 if income is more unequal (Gini=0.4), IHDI drops. Examiners reward evidence: 'South Africa has high GDP and HDI but extreme inequality (IHDI falls 25%+).'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students cite HDI limitations without proposing alternatives or acknowledging data challenges. IHDI exists but requires inequality data, which is sparse for poor countries. Don't just say 'HDI is flawed'; say 'these limitations are recognized; IHDI partially addresses inequality, but comprehensive sustainability measures remain underdeveloped.' Also, measuring what's omitted (governance, freedom) is hard. Edexcel expects: 'No perfect measure; choose metric for purpose: inequality \u2192 IHDI, sustainability \u2192 Genuine Progress Indicator.'"
+      }
     }
   ],
   recall: {

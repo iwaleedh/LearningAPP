@@ -82,6 +82,15 @@ export const note_economics_4_20_11 = {
           ['Non-price competitiveness', 'WEF index, export quality, market share in high-tech sectors', 'R&D, education, brand, design, after-sales service', 'R&D investment, skills training, industrial policy, design standards']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "International competitiveness requires both price factors (exchange rates, labour costs) and non-price factors (R&D, quality, branding). Exams test whether you explain why low-cost countries don't always win\u2014Germany competes despite high wages through innovation."
+      }
     }
   ],
   recall: {

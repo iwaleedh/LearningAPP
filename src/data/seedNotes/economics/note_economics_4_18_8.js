@@ -135,6 +135,15 @@ export const note_economics_4_18_8 = {
         title: 'Exam Tip: Balanced Evaluation',
         text: 'Always weigh costs against benefits when evaluating globalisation. The key policy challenge is ensuring the gains are shared. Bring in specific data (Gini coefficients, job loss figures, crisis examples) to support your analysis.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Be specific about globalisation costs: deindustrialisation in developed regions, environmental externalities, cultural homogenisation, and labour standards races-to-the-bottom. Vague answers lose marks; contextualised examples from different economies score higher."
+      }
     }
   ],
   recall: {

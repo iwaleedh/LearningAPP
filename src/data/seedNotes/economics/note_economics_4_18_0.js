@@ -84,6 +84,15 @@ export const note_economics_4_18_0 = {
         title: 'Exam Caution',
         text: 'Do not confuse the level of a country\'s trade-to-GDP ratio with economic development. Small open economies (e.g. Singapore) have ratios exceeding 100% because they re-export; large economies (e.g. USA) may have lower ratios due to the size of their domestic market.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse rising trade-to-GDP ratios with actual economic globalisation. A country's trade-to-GDP may increase simply because trade grows slower than GDP contraction in recessions. Always examine both numerator and denominator separately to assess genuine trade integration."
+      }
     }
   ],
   recall: {

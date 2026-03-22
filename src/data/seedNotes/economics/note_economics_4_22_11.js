@@ -56,6 +56,24 @@ export const note_economics_4_22_11 = {
         title: 'IMF Multiplier Revision 2012',
         text: 'In 2012, IMF economists Blanchard and Leigh published research showing fiscal multipliers in advanced economies were much larger than assumed (1.5-1.7 rather than 0.5). This meant austerity was reducing GDP by £1.50-1.70 for every £1 of fiscal consolidation — making deficit reduction much more painful and slower than expected. This forced a partial reassessment of austerity across the Eurozone, though UK policy was slower to adjust.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Show detailed knowledge of post-2008 policy: bank bail-outs (\u00a3137bn UK) preserved financial stability but raised moral hazard; fiscal stimulus (2008\u20132010) was temporary then austerity reversed it; QE (quantitative easing, \u00a3375bn UK) lowered yields and boosted asset prices but inequality rose. Examiners reward critical appraisal: 'Bail-outs prevented depression but created zombie banks; QE favoured asset-owners.' Use timeline and magnitudes. Reference Edexcel case studies if provided."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students simplify 2008 policy as 'just bail-outs and stimulus' without recognizing their contradictions. Bail-outs without resolution created long-term distortions; austerity after stimulus was premature (Keynesian logic says maintain support until recovery). QE risked inflation but inflation remained low due to weak demand. Don't polarize as 'right or wrong' \u2014 examiners expect you to weigh trade-offs. Say: 'Bail-outs necessary but lax regulation enabled excess risk-taking.'"
+      }
     }
   ],
   recall: {

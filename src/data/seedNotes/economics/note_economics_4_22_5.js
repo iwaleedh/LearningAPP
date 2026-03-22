@@ -71,6 +71,24 @@ export const note_economics_4_22_5 = {
         title: 'Exam Tip: Substitution and Income Effects',
         text: 'When discussing income tax effects on work incentives, always mention BOTH the substitution effect (higher tax → leisure cheaper → work less) and the income effect (higher tax → poorer → work more). Which dominates is empirically uncertain — for most primary earners the income effect roughly offsets the substitution effect, meaning labour supply is relatively inelastic with respect to income tax.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Show supply-side logic: higher taxes reduce returns to effort/investment, shifting labour and capital supply leftward (deadweight loss). Examiners reward you for citing elasticities \u2014 labour supply elasticity varies by income (low earners: inelastic; high earners: elastic), so progressive taxation has differentiated effects. Investment response is strong in open economies (capital flees high-tax regimes). Use evidence: 'Studies suggest 1pp increase in top rate reduces work by 0.1\u20130.5% depending on elasticity.'"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume higher taxes always reduce incentives proportionally. This is incorrect \u2014 responses vary. Some high-earners reduce hours; others work harder to maintain income target (income effect vs substitution). Evidence on labour supply is mixed; macroeconomic model (Keynesian vs supply-side) matters hugely. Don't say 'high taxes kill growth' categorically. Say: 'Response depends on elasticity, which is empirically debated; some tax rise can fund investment with net growth gain.'"
+      }
     }
   ],
   recall: {

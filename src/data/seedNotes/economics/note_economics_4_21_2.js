@@ -126,6 +126,24 @@ export const note_economics_4_21_2 = {
         title: 'Intergenerational Poverty Cycle',
         text: 'Poverty tends to perpetuate itself across generations: poor parents → less investment in children\'s nutrition, health, early education → lower school attainment → lower-wage employment → poverty as adults. Breaking this cycle typically requires early-years intervention (Sure Start, Head Start), universal education access, and child benefit adequacy.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Use country examples strategically. For each driver (e.g. lack of education), cite a specific case: education poverty in Sub-Saharan Africa, discrimination in India's caste system, geographic barriers in landlocked nations. Examiners reward evidence of applying concepts. Distinguish between supply-side constraints (low skill) and demand-side barriers (lack of jobs)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students list drivers without explaining causal links or feedback loops. For example, poor health \u2192 reduced productivity \u2192 lower earnings \u2192 poverty trap. Don't just say 'discrimination causes poverty'; explain the mechanism. Also avoid treating poverty traps as just 'being stuck' \u2014 define precisely: insufficient income to invest in human capital or escape."
+      }
     }
   ],
   recall: {

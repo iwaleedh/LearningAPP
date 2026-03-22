@@ -9,6 +9,15 @@ export const note_economics_4_19_2 = {
     { id: 'list-further', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Infant-industry argument</strong>: new industries may have future comparative advantage but cannot survive international competition now — protection can allow learning-by-doing until competitive. (Counter: protection tends to become permanent.)' }, { text: '<strong>Terms of trade distribution</strong>: absolute gains may exist, but distribution between countries depends on bargaining power; developing economies with inelastic export demand may receive poor terms.' }, { text: '<strong>Deindustrialisation risk</strong>: over-specialisation in primary commodities or simple manufacturing leaves countries vulnerable if comparative advantage shifts or commodity prices fall.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Evaluation', text: 'The strongest evaluation point is the <strong>dynamic vs static</strong> distinction: comparative advantage theory is powerful in a static world but nations like Japan and South Korea deliberately <em>created</em> new comparative advantages through industrial policy rather than simply following existing factor endowments.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Comparative advantage limits: factor immobility, transport costs, constant costs assumption, ignores externalities, static model. Infant-industry argument supports temporary protection. Terms of trade distribution may be unequal. Dynamic comparative advantage can be built through industrial policy.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't ignore transport costs, immobility of factors, and increasing returns to scale when discussing comparative advantage limitations. Real exam scenarios (Brexit, nearshoring) require you to explain when traditional trade theory fails."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -86,6 +86,15 @@ export const note_economics_4_20_5 = {
         title: 'Key Lesson from Black Wednesday',
         text: 'Speculative attacks succeed when financial markets are larger than central bank reserves and when the economic fundamentals (interest rates, inflation, recession) are inconsistent with the target exchange rate. Credibility is essential — once markets believe the peg cannot be defended, the attack becomes self-fulfilling.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume currency intervention always succeeds. If fundamentals don't support the target rate, sterilisation costs rise, reserves deplete, and speculation overwhelms. Thailand 1997 is the classic exam case study of failed intervention."
+      }
     }
   ],
   recall: {

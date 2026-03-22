@@ -89,6 +89,15 @@ export const note_economics_4_20_4 = {
         title: 'Exam Tip',
         text: 'Always link the choice of exchange rate system to the impossible trinity. A fixed rate is appropriate for small open economies highly dependent on trade (Hong Kong), where exchange rate stability is most valuable. A floating rate suits large diversified economies where monetary independence is more valuable than exchange rate stability.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Distinguish exchange rate regimes clearly: fixed (Bretton Woods, currency board) vs floating (managed intervention vs clean float). Examiners test whether you explain trade-offs: exchange rate regimes constrain monetary policy differently."
+      }
     }
   ],
   recall: {

@@ -70,6 +70,24 @@ export const note_economics_4_23_11 = {
           ['Return migration', 'Minimal initially', 'Significant if origin country develops sufficiently: returnees bring capital, skills, and networks']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Distinguish three effects on sending countries: brain drain (loss of high-skill workers reduces growth potential, but those remaining may benefit from higher wages), remittances (~3\u201310% of GDP for many poor nations, stabilize consumption and enable local investment), return migration (experienced emigrants bring skills, capital, networks). Examiners reward quantified examples: 'Philippines receives ~10% of GDP as remittances; without them, poverty would be higher.' Show time dimension: short-run remittance boost vs long-run brain drain risk."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume migration is unambiguously positive (remittances help) or negative (brain drain harms). Reality is complex: brain drain reduces growth if high-skill workers emigrate (African doctors work overseas), but if return or remit, net effect positive. Also, remittances can reduce incentive to develop local taxation (easier to consume remittances than tax locals), undermining institutional development. Edexcel expects: 'Migration effects are ambiguous; high-skill emigration harms, but return migration and remittances can develop nations.'"
+      }
     }
   ],
   recall: {

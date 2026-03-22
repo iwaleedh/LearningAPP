@@ -77,6 +77,24 @@ export const note_economics_4_23_4 = {
           ['Resource depletion', 'Resource revenues decline; economy lacks diversified base', 'Too late without earlier diversification; painful structural adjustment required']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner's Tip",
+        text: "Primary product dependency (oil, minerals, agriculture as >50% of exports) creates risks. Dutch disease: commodity export boom \u2192 currency appreciates \u2192 manufacturing exports become expensive, uncompetitive (industry atrophies). Examiners reward technical explanation: real exchange rate rises, both tradables and non-tradables sectors misallocate resources to commodity boom, then crash when prices fall. Diversification strategies: invest export revenues in human capital (education), manufacturing capabilities (Botswana diamonds \u2192 diversified economy). Use example: Nigeria (oil-dependent, diversification stalled) vs Botswana (diamonds, diversified successfully)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students blame commodities as inherently 'cursed.' The curse is conditional: if institutions are weak, commodity revenues fuel corruption (Nigeria); with strong governance, they fund development (Norway, Botswana). Also, diversification is easier said than done \u2014 new industries require capital, skills, infrastructure (which commodity wealth can provide, but corrupt leaders often don't). Don't say 'commodity dependency causes poverty'; say 'it creates risks; institutional quality and diversification policy determine outcomes.'"
+      }
     }
   ],
   recall: {

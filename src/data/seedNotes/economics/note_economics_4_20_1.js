@@ -88,6 +88,15 @@ export const note_economics_4_20_1 = {
         title: 'Is a Current Account Deficit Necessarily a Problem?',
         text: 'Not always. A deficit financed by productive FDI inflows may improve future export capacity. A deficit reflecting high investment (not low savings) may be growth-enhancing. However, a deficit reflecting low competitiveness or excessive consumption financed by volatile portfolio flows is unsustainable and risks a sharp exchange rate correction.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume current account deficits are always harmful. They reflect inward capital flows (investment in future productivity). Problem arises only if deficits persist due to low savings and high consumption\u2014context matters enormously."
+      }
     }
   ],
   recall: {

@@ -69,6 +69,15 @@ export const note_economics_4_20_9 = {
         title: 'Exam Tip: Use AD/AS Diagram',
         text: 'For maximum marks, draw an AD/AS diagram showing depreciation: AD shifts right (higher X-M) AND SRAS shifts left (higher import costs). Show price level rising (confirming inflation) and real output rising (if AD shift > SRAS shift). Then evaluate: depends on elasticities, spare capacity, import-dependence of the economy.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Exchange rate appreciation: harms export competitiveness (demand falls, jobs lost in tradables) but helps consumers via cheaper imports and lower inflation. High-scoring essays weigh these trade-offs and discuss distributional impacts across regions."
+      }
     }
   ],
   recall: {
