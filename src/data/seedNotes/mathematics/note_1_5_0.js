@@ -135,6 +135,16 @@ export const note_mathematics_1_5_0 = {
             type: 'summary',
             data: { text: '∫axⁿ dx = axⁿ⁺¹/(n+1) + C. Add +C for indefinite integrals. Find C by substituting a known point. Definite integral = F(b) − F(a) (no C needed). Area below x-axis is negative.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Never forget the constant of integration (+c) when evaluating indefinite integrals. To find its specific value, substitute the coordinates of the given point into the newly integrated equation, not the original derivative."
+            },
+            terms: []
         }
     ],
     recall: {

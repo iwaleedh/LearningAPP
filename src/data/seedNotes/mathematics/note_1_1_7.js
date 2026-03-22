@@ -131,6 +131,26 @@ export const note_mathematics_1_1_7 = {
             type: 'summary',
             data: { text: 'Completing the square converts ax² + bx + c into a(x+p)² + q. For a=1: p = b/2, q = c − (b/2)². For a≠1: factor a from the x-terms first. The vertex (turning point) is at (−p, q); axis of symmetry is x = −p. The form is used to solve equations, find vertices, and prove results about minimum/maximum values.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

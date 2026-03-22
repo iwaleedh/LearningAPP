@@ -103,6 +103,26 @@ export const note_mathematics_1_1_0 = {
                 text: 'Index laws (same base only): multiply → add powers; divide → subtract powers; bracket → multiply powers. Zero index: a⁰ = 1. Negative index: a<sup>−m</sup> = 1÷a<sup>m</sup>. Fractional index: a<sup>1/n</sup> = <sup>n</sup>\u221aa; a<sup>m/n</sup> = (<sup>n</sup>\u221aa)<sup>m</sup>. Change base by rewriting as a power of a smaller common prime.'
             },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

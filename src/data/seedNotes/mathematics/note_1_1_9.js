@@ -100,6 +100,26 @@ export const note_mathematics_1_1_9 = {
             type: 'summary',
             data: { text: 'A quadratic y = ax² + bx + c graphs as a parabola: ∪ shape for a > 0 (minimum), ∩ shape for a < 0 (maximum). Key features — y-intercept (0, c); roots from ax²+bx+c=0; vertex at (−b/2a, f(−b/2a)); axis of symmetry x = −b/2a. To sketch: identify shape, find y-intercept, find roots, find vertex, draw a smooth symmetric curve.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

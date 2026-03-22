@@ -134,6 +134,16 @@ export const note_mathematics_1_3_3 = {
             type: 'summary',
             data: { text: 'Sine rule: a/sin A = b/sin B (for AAS/SSA). Cosine rule: a²=b²+c²−2bc cosA (for SAS/SSS). Area = ½ab sin C. Check for the ambiguous case in SSA situations — there may be two valid triangles.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding an angle using the sine rule, explicitly check if the obtuse angle could be a valid solution (the ambiguous case), especially if the diagram is not drawn to scale or only side lengths are given."
+            },
+            terms: []
         }
     ],
     recall: {

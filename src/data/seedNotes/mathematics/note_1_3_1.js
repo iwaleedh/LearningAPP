@@ -109,6 +109,16 @@ export const note_mathematics_1_3_1 = {
             type: 'summary',
             data: { text: 'Label H, O, A relative to the angle. Choose the matching ratio (SOH, CAH, or TOA). Rearrange to find the side. For angles, use the inverse function (sin⁻¹, cos⁻¹, tan⁻¹). Pythagoras gives the third side without angles.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Ensure your calculator is in the correct mode (degrees or radians) before starting any trigonometric calculations. Many marks are lost to this simple oversight at the start of an exam."
+            },
+            terms: []
         }
     ],
     recall: {

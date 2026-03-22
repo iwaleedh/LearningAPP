@@ -118,6 +118,16 @@ export const note_mathematics_1_2_0 = {
             type: 'summary',
             data: { text: 'Distance: d = √[(x₂−x₁)²+(y₂−y₁)²]. Midpoint: M = ((x₁+x₂)/2, (y₁+y₂)/2). Gradient: m = (y₂−y₁)/(x₂−x₁). These three formulae underpin all coordinate geometry at A-level.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Be careful with negative coordinates when substituting into the distance and gradient formulae; always use brackets to avoid sign errors, such as accidentally subtracting a negative value without turning it into a positive."
+            },
+            terms: []
         }
     ],
     recall: {

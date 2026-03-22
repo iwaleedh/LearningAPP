@@ -109,6 +109,26 @@ export const note_mathematics_1_1_15 = {
             type: 'summary',
             data: { text: 'Inequality regions: draw the boundary (solid for ≤/≥, dashed for </>) → test the origin → shade the correct side. For multiple inequalities, the feasible region is the overlap satisfying every inequality simultaneously. Boundaries can be lines or curves.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

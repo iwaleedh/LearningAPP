@@ -123,6 +123,26 @@ export const note_mathematics_1_1_20 = {
             type: 'summary',
             data: { text: 'Stretches: y = af(x) is a vertical stretch scale factor a — every y-coordinate × a; x-intercepts fixed. y = f(ax) is a horizontal stretch scale factor 1/a — every x-coordinate ÷ a; y-intercept fixed. The horizontal scale factor is the reciprocal of the number inside the bracket.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

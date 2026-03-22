@@ -156,6 +156,26 @@ export const note_mathematics_1_1_19 = {
             type: 'summary',
             data: { text: 'Reflections: −f(x) reflects in the x-axis, mapping (x, y) → (x, −y); x-intercepts stay, y-intercept changes sign. f(−x) reflects in the y-axis, mapping (x, y) → (−x, y); y-intercept stays, x-intercepts change sign. Transform asymptotes by the same rules.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

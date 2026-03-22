@@ -103,6 +103,16 @@ export const note_mathematics_1_2_2 = {
             type: 'summary',
             data: { text: 'Parallel: m₁ = m₂. Perpendicular: m₁ × m₂ = −1 (i.e. m₂ = −1/m₁, the negative reciprocal). Collinear points lie on the same line — verify by checking equal gradients between pairs. Flip and negate for perpendicular gradient.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A common mistake is just changing the sign or just reciprocating for perpendicular gradients. Remember to do both: the perpendicular gradient to m is strictly -1/m."
+            },
+            terms: []
         }
     ],
     recall: {

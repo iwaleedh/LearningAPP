@@ -92,6 +92,16 @@ export const note_mathematics_1_3_6 = {
             type: 'summary',
             data: { text: 'y = a sin(bx + c) + d: amplitude |a|, period 360°/b, phase shift −c/b, vertical shift d. Negative a reflects in x-axis. To sketch: transform key points (0,0), (90,1), (180,0), (270,−1), (360,0) for sin x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When sketching transformed graphs, always clearly label the coordinates of the maximum points, minimum points, and axis intersections. Sketching lightly in pencil first can help get the shape and proportions right."
+            },
+            terms: []
         }
     ],
     recall: {

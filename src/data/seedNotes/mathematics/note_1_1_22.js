@@ -106,6 +106,26 @@ export const note_mathematics_1_1_22 = {
             type: 'summary',
             data: { text: 'y = k/x: hyperbola in quadrants 1 & 3 (k>0), asymptotes x=0 and y=0, rotational symmetry. y = k/x²: always positive (k>0), y-axis symmetry, same asymptotes. Transformations shift the asymptotes: y = k/x + a → horizontal asymptote y = a; y = k/(x−b) → vertical asymptote x = b.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

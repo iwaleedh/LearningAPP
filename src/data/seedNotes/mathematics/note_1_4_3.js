@@ -121,6 +121,16 @@ export const note_mathematics_1_4_3 = {
             type: 'summary',
             data: { text: "Gradient at x=a: substitute into f'(x). Tangent gradient = f'(a); equation: y−y₁=m(x−x₁). Normal gradient = −1/f'(a). f'>0 increasing, f'<0 decreasing, f'=0 stationary." },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The normal is perpendicular to the tangent, so use the rule m2 = -1/m1. Make sure to substitute the x-coordinate into the differentiated equation (dy/dx) to find the gradient, not into the original y equation."
+            },
+            terms: []
         }
     ],
     recall: {

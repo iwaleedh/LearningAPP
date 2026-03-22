@@ -113,6 +113,16 @@ export const note_mathematics_1_4_2 = {
             type: 'summary',
             data: { text: 'd/dx(axⁿ) = anxⁿ⁻¹. Differentiate term by term. Constants differentiate to zero. Rewrite reciprocals and roots as powers first. Bring down the power and reduce by 1.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always rewrite expressions like roots and fractions as powers of x (e.g. 1/x^2 as x^-2) before attempting to apply the power rule. Trying to differentiate denominators directly is a frequent and fatal error."
+            },
+            terms: []
         }
     ],
     recall: {

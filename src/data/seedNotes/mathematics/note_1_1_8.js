@@ -143,6 +143,26 @@ export const note_mathematics_1_1_8 = {
             type: 'summary',
             data: { text: 'A hidden quadratic contains a function f(x) squared and linearly: a[f(x)]² + b[f(x)] + c = 0. Substitute u = f(x) to get a standard quadratic au² + bu + c = 0, solve for u, then reverse the substitution to find x. Always check all solutions against domain restrictions.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

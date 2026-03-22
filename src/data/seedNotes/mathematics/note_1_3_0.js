@@ -112,6 +112,16 @@ export const note_mathematics_1_3_0 = {
             type: 'summary',
             data: { text: 'sin θ = O/H, cos θ = A/H, tan θ = O/A. The unit circle gives (cos θ, sin θ). tan θ = sin θ / cos θ. CAST: All positive in Q1; Sin in Q2; Tan in Q3; Cos in Q4.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always draw a quick sketch of the CAST diagram or the trig graphs to check which quadrant your angle is in. Remember there are usually two solutions in a standard 360-degree interval."
+            },
+            terms: []
         }
     ],
     recall: {

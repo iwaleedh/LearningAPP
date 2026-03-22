@@ -126,6 +126,26 @@ export const note_mathematics_1_1_16 = {
             type: 'summary',
             data: { text: 'Polynomial sketches: find y-intercept (x=0), x-intercepts from roots, end behaviour from leading term (positive even → both ends up; positive odd → bottom-left to top-right). Simple root → crosses; double root → bounces. No accurate plotting needed — label all intercepts clearly.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

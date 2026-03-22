@@ -109,6 +109,26 @@ export const note_mathematics_1_1_6 = {
             type: 'summary',
             data: { text: 'The discriminant Δ = b² − 4ac determines the nature of roots: Δ > 0 gives two distinct real roots (parabola cuts x-axis twice); Δ = 0 gives one repeated root (parabola touches x-axis); Δ < 0 gives no real roots (parabola does not cross x-axis). Use Δ conditions to form and solve equations or inequalities involving unknown parameters.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

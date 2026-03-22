@@ -130,6 +130,26 @@ export const note_mathematics_1_1_18 = {
             type: 'summary',
             data: { text: 'Translations of y = f(x): f(x) + a moves the graph a units up (a > 0) or down (a < 0), vector (0, a). f(x + a) moves the graph a units LEFT (a > 0) or right (a < 0), vector (−a, 0). Changes inside the bracket go opposite to their sign — this is the key rule.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

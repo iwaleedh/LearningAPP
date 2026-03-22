@@ -206,6 +206,26 @@ export const note_mathematics_1_1_4 = {
             type: 'summary',
             data: { text: 'Factorisation methods: common factor (HCF outside bracket); DOTS: a\u00b2\u2212b\u00b2=(a+b)(a\u2212b); quadratic a=1: find p,q with pq=c and p+q=b; quadratic a\u22601: find pq=ac and p+q=b then split and group; cubic: factor theorem to find a root, divide out, factorise the quadratic remainder.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

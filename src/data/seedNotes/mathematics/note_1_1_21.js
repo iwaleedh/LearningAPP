@@ -114,6 +114,26 @@ export const note_mathematics_1_1_21 = {
             type: 'summary',
             data: { text: 'Graphical solution: rewrite as f(x) = g(x), sketch both curves, read off x-coordinates of intersections. Discriminant of the resulting quadratic gives the number of intersections. A tangent means Δ = 0 (one repeated solution).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

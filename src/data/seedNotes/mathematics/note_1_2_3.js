@@ -93,6 +93,16 @@ export const note_mathematics_1_2_3 = {
             type: 'summary',
             data: { text: 'Linear modelling: write y = mx + c with x and y as real-world variables. Gradient m = rate of change; y-intercept c = initial value. Find m and c from two data points. State units in all interpretations. Models are only valid within the data range.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When interpreting the y-intercept in a real-world model, always relate it back to the specific context of the question (e.g., initial cost or starting temperature), rather than simply stating it is where the line crosses the y-axis."
+            },
+            terms: []
         }
     ],
     recall: {

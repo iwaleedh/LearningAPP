@@ -141,6 +141,26 @@ export const note_mathematics_1_1_17 = {
             type: 'summary',
             data: { text: 'Proportional relationships: write y = kxⁿ (or y = k/xⁿ), substitute given values to find k, then use the formula. Direct proportion (y ∝ x) gives a straight line through the origin. Inverse proportion (y ∝ 1/x) gives a hyperbola.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

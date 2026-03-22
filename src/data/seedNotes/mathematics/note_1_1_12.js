@@ -95,6 +95,26 @@ export const note_mathematics_1_1_12 = {
             type: 'summary',
             data: { text: 'Substitution: rearrange one equation to make x or y the subject → substitute the expression into the other equation → solve for one variable → back-substitute → check. Prefer substitution when one equation starts as y = … or x = …, and when one equation is quadratic (mandatory).' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

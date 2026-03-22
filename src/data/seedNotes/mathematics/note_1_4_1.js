@@ -110,6 +110,16 @@ export const note_mathematics_1_4_1 = {
             type: 'summary',
             data: { text: "f'(x) = lim_{h→0} [f(x+h) − f(x)] / h. Steps: write f(x+h) → form ratio → expand → cancel h → take limit. Notation: f'(x), dy/dx, and d/dx() are all equivalent." },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When differentiating from first principles, clearly state the limit formula and show every single step of the algebraic expansion. Cancelling the h terms before showing the fully expanded numerator is a common reason for losing method marks."
+            },
+            terms: []
         }
     ],
     recall: {

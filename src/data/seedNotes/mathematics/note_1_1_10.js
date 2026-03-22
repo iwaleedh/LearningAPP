@@ -102,6 +102,26 @@ export const note_mathematics_1_1_10 = {
             type: 'summary',
             data: { text: 'Quadratic simultaneous equations (one linear, one quadratic) are solved by substitution: rearrange the linear equation for one variable, substitute into the quadratic, solve the resulting quadratic, then substitute each root back. Solutions are intersection points of the line and curve. The discriminant of the resulting quadratic gives the number of solutions.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

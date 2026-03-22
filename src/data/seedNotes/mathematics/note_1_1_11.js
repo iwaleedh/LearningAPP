@@ -108,6 +108,26 @@ export const note_mathematics_1_1_11 = {
             type: 'summary',
             data: { text: 'To eliminate: match coefficients of one variable by multiplying equations, then add (different signs) or subtract (same signs) to remove that variable. Solve for one variable, substitute back for the other, and check in the unused equation. Geometrically the solution is the intersection point of the two lines.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

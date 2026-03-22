@@ -96,6 +96,16 @@ export const note_mathematics_1_3_2 = {
             type: 'summary',
             data: { text: 'Exact values come from the 30-60-90 and 45-45-90 triangles. Key values: sin 30°=1/2, cos 60°=1/2, sin 45°=cos 45°=√2/2, tan 60°=√3, tan 45°=1. Recall the "staircase" pattern: sin 0°,30°,45°,60°,90° = √0/2 through √4/2.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Memorise the exact values using the special triangles rather than just relying on your calculator, as some problem-solving questions specifically require you to show your working to prove an exact value result."
+            },
+            terms: []
         }
     ],
     recall: {

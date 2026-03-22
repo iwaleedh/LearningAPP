@@ -194,6 +194,26 @@ export const note_mathematics_1_1_3 = {
             type: 'summary',
             data: { text: 'Expanding: multiply every term across brackets, then collect like terms. FOIL for double brackets. Key identities: (a+b)\u00b2 = a\u00b2+2ab+b\u00b2; (a\u2212b)\u00b2 = a\u00b2\u22122ab+b\u00b2; (a+b)(a\u2212b) = a\u00b2\u2212b\u00b2. Triple brackets: expand two at a time.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

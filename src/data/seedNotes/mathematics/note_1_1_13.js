@@ -121,6 +121,26 @@ export const note_mathematics_1_1_13 = {
             type: 'summary',
             data: { text: 'Solve linear inequalities like equations, but reverse the inequality sign whenever you multiply or divide by a negative number. Express solutions using inequality notation (x > a, x ≤ b, etc.) or on a number line (open circle for strict, filled for inclusive). Double inequalities are solved by acting on all three parts at once.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

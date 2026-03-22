@@ -87,6 +87,26 @@ export const note_mathematics_1_1_1 = {
                 text: 'Surd rules: \u221a(ab) = \u221aa \u00d7 \u221ab; \u221a(a/b) = \u221aa \u00f7 \u221ab; collect like surds: a\u221an + b\u221an = (a+b)\u221an. Never add under the root: \u221a(a+b) \u2260 \u221aa + \u221ab. To simplify, find the highest perfect square factor first.'
             },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

@@ -102,6 +102,26 @@ export const note_mathematics_1_1_14 = {
             type: 'summary',
             data: { text: 'To solve a quadratic inequality: rearrange to ax²+bx+c ○ 0, find roots x₁ and x₂, sketch the parabola. For a>0: f(x)<0 → x₁<x<x₂ (between roots); f(x)>0 → x<x₁ or x>x₂ (outside roots). For a<0: reverse regions. Always sketch — never attempt to solve by algebra alone.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

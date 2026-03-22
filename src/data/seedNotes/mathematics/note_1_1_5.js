@@ -170,6 +170,26 @@ export const note_mathematics_1_1_5 = {
             type: 'summary',
             data: { text: 'Three methods solve ax² + bx + c = 0 — factorisation (find factors with product ac, sum b), completing the square (rewrite as a(x+p)²+q = 0), or the quadratic formula x = (−b ± √(b²−4ac)) / 2a. Rearrange to standard form first. The discriminant b² − 4ac tells you in advance whether roots are real and rational.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

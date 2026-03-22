@@ -95,6 +95,16 @@ export const note_mathematics_1_3_5 = {
             type: 'summary',
             data: { text: 'y=sin x and y=cos x have period 360°, amplitude 1, range [−1,1]. y=tan x has period 180°, no amplitude, vertical asymptotes at 90°, 270°. Use CAST + periodicity to find all solutions in a given range.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Pay close attention to the requested interval (e.g. 0 to 360 degrees vs -180 to 180 degrees) when listing all solutions to a trigonometric equation; missing a solution or providing one outside the range loses marks."
+            },
+            terms: []
         }
     ],
     recall: {

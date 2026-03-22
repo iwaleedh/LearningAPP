@@ -106,6 +106,16 @@ export const note_mathematics_1_2_1 = {
             type: 'summary',
             data: { text: 'Straight line equations: y = mx + c (slope-intercept) or y − y₁ = m(x − x₁) (point-slope). To find the equation: calculate gradient → apply point-slope → rearrange. Vertical lines: x = k; horizontal lines: y = k.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When asked for the equation in the form ax + by + c = 0, ensure a, b, and c are integers. Leaving fractions in your final answer will cost you the final accuracy mark."
+            },
+            terms: []
         }
     ],
     recall: {

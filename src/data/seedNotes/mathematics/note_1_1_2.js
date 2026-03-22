@@ -158,6 +158,26 @@ export const note_mathematics_1_1_2 = {
             id: 'sum',
             type: 'summary',
             data: { text: 'Case 1: \u221aa denominator \u2192 multiply by \u221aa\u2215\u221aa; denominator becomes a. Case 2: (a \u00b1 \u221ab) denominator \u2192 multiply by conjugate; denominator becomes a\u00b2 \u2212 b. Case 3: (\u221aa \u00b1 \u221ab) denominator \u2192 multiply by conjugate; denominator becomes a \u2212 b. All three use the DOTS identity.' }
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
+        },
+        {
+            id: 'callout-tip-2',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "",
+                text: ""
+            },
+            terms: []
         }
     ],
     recall: {

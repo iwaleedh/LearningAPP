@@ -90,6 +90,16 @@ export const note_mathematics_1_4_0 = {
             type: 'summary',
             data: { text: 'Gradient of a curve at P = gradient of tangent at P. Tangents arise as the limit of secants. m > 0: rising; m = 0: stationary; m < 0: falling. The gradient function (derivative) gives a formula for m at any x.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that the gradient of a curve at a point is exactly equal to the gradient of the tangent drawn at that same point. If you are asked to find the gradient of a curve, you need to differentiate."
+            },
+            terms: []
         }
     ],
     recall: {

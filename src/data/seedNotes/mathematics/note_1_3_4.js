@@ -129,6 +129,16 @@ export const note_mathematics_1_3_4 = {
             type: 'summary',
             data: { text: 'π rad = 180°. To convert: ×π/180 (deg→rad), ×180/π (rad→deg). Arc length: s = rθ. Sector area: A = ½r²θ. Segment area: ½r²(θ − sin θ). θ MUST be in radians for all these formulae.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Only use the simplified formulas s = r * theta and Area = 0.5 * r^2 * theta when the angle is strictly in radians. If the angle is given in degrees, you must convert it first to avoid completely incorrect answers."
+            },
+            terms: []
         }
     ],
     recall: {
