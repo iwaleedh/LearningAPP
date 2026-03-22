@@ -39,7 +39,16 @@ export const note_biology_4_5_22 = {
       type: "callout",
       data: { style: "warning", title: "Ethical Considerations", text: "When using animals like brine shrimp, minimize suffering. Return them to their natural habitat if possible, or maintain them appropriately. Do not use extreme temperatures that unnecessarily cause death." }
     },
-{ 'id': 'callout-examiner-efa6433b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Control Variables', 'text': 'In practical investigations on temperature effects, explicitly list the variables to be kept constant (like pH, light intensity, or water availability) to ensure valid conclusions about the relationship.' } }
+{ 'id': 'callout-examiner-efa6433b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Control Variables', 'text': 'In practical investigations on temperature effects, explicitly list the variables to be kept constant (like pH, light intensity, or water availability) to ensure valid conclusions about the relationship.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Q10 Coefficient",
+        text: "You may be asked to calculate Q10. Remember it represents the factor by which the rate of reaction increases for every 10\u00b0C rise in temperature. A Q10 of 2 means the rate doubles."
+      }
+    }
   ],
   recall: {
     enabled: true,

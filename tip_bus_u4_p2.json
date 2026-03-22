@@ -1,0 +1,362 @@
+{
+  "src/data/seedNotes/business/note_4_19_0.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "In evaluation questions, always structure your answer by comparing global and localised strategies side-by-side. Show which strategy suits which market conditions (e.g. global for homogeneous markets, localised for culturally distinct regions). Use real examples: Apple's global brand consistency vs McDonald's menu localisation in China."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't describe one strategy without evaluating trade-offs. Simply saying 'localised is better' ignores cost and complexity burdens. Examiners expect assessment of benefits AND drawbacks for each approach in your specific business context."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_1.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use the EPRG framework as a diagnostic tool to analyse actual multinational companies. Ask: 'Is this firm thinking ethnocentrically (home-market focused) or geocentrically (globally integrated)?' This structure impresses examiners because it moves beyond description to systematic company analysis."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't confuse the four EPRG approaches or assume they represent a linear progression. A mature company can still operate ethnocentrically in some markets and geocentrically in others. Oversimplifying the framework loses marks for application accuracy."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_2.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When evaluating the 4Ps in global markets, show that each element adapts differently. Price may be standardised for luxury goods but Place requires local distribution networks; Promotion uses local media. Demonstrate this differentiation with specific product examples to show deep understanding."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume the marketing mix is identical across all global markets or that all four Ps must be adapted simultaneously. Sometimes standardising price across regions creates affordability barriers; other times standardising product quality is essential. Treat each P independently."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_3.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Connect Ansoff's strategies explicitly to global expansion scenarios. For example: market penetration in developed markets vs product development in emerging markets. Show how each Ansoff quadrant carries different risk and resource requirements when operating internationally."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't treat all Ansoff strategies as equally viable in global contexts. Diversification into unfamiliar markets with unfamiliar products is highest-risk; many MNCs fail here. Examiners expect you to weigh the risk-return trade-offs of each quadrant choice."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_4.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When analysing global niche markets, identify the specific competitive advantage that allows the business to exist. Is it superior quality, unique cultural product, or proprietary technology? Explain why scale competitors can't easily replicate this advantage in that particular niche."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume niche markets are safer or less competitive just because they're smaller. Niche markets often attract intense rivalry from specialist players and can be vulnerable to scale players entering with cost advantages. Assess competitive intensity regardless of market size."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_5.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Connect specific cultural factors to concrete product or marketing adaptations. Don't vaguely say 'culture affects demand.' Instead: 'In India, vegetarianism requires different menu offerings; in Japan, packaging aesthetics drive premium positioning.' This specificity demonstrates sophisticated analysis."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't stereotype or oversimplify cultural preferences. Not all consumers in a culture follow the stereotype. Younger, urban populations in developed regions may have preferences closer to global norms. Avoid sweeping generalisations; acknowledge cultural heterogeneity."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_6.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use well-documented examples of translation and branding failures: 'Coca-Cola's name pronounced in Mandarin,' 'Chevrolet Nova meaning 'doesn't go' in Spanish,' or successful adaptations like Netflix localising show recommendations. Real cases make your evaluation credible and memorable."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't overlook cultural and symbolic significance beyond literal translation. A brand name might translate perfectly but violate cultural taboos or religious sensitivities. Smart companies invest in cultural consultants, not just translators. Show you understand this nuance."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_19_7.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Analyse social media platforms by geographic adoption. Facebook dominates in Europe and North America; WeChat in China; WhatsApp in India and Latin America. Show how successful MNCs tailor campaigns to platform-specific features and local user behaviour patterns in each region."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume the same social media strategy works globally. A viral TikTok campaign in the US may suffer platform bans or cultural rejection in other markets. Examiners expect you to recognise that digital marketing requires local adaptation as much as traditional marketing does."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_0.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-8",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Structure your analysis by listing both positive effects (employment, tax revenue, infrastructure investment) and negative effects (cultural homogenisation, wage suppression, environmental degradation). Weigh them against the specific host economy's development stage. Developing economies often value jobs more than developed ones."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-8",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't ignore potential negative externalities just because MNCs bring employment. Job creation at low wages that exploit local workers, or cultural erosion that weakens local traditions, are real costs. Balanced evaluation requires acknowledging trade-offs, not just celebrating investment."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_1.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-9",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Quantify MNC impacts where possible: FDI inflows (billions), jobs created (thousands), tax revenues, and balance of payments effects. Use real statistics from developing economies (e.g. foreign investment as % of GDP). Numerical evidence strengthens your analysis significantly."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-9",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume all MNC effects on national economies are positive. Profit repatriation to parent companies can exceed net benefit to the host country. Resource-extraction MNCs may cause environmental damage that outweighs tax revenue gains. Evaluate net impact, not gross benefits."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_2.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-10",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Map stakeholder conflicts systematically: local workers (high wages vs job security), consumers (low prices vs product safety), MNC shareholders (profit maximisation), and government (tax revenue vs sovereignty). Show which stakeholder groups have conflicting interests and why resolution is difficult."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-10",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't oversimplify conflicts as purely 'local vs global' or 'poor vs rich.' Stakeholder interests often overlap: both MNCs and communities benefit from stability; both investors and workers suffer if operations collapse. Show sophisticated understanding of aligned and conflicting interests."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_3.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-11",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Research and cite specific cases of MNC environmental impact: oil spills, deforestation, water pollution. Distinguish between companies making genuine sustainability investments vs those making superficial CSR claims. Examine actual environmental metrics (carbon reduction, waste management) rather than marketing rhetoric."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-11",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume corporate sustainability commitments are genuine without investigating implementation. Many MNCs issue impressive environmental policies while operations in developing countries ignore them due to weak local enforcement. Verify claims against actual environmental audits and penalties."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_4.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-12",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Link labour standards issues to specific product sectors where they're most acute: textiles (sweatshops), agriculture (child labour), electronics (repetitive strain injuries). Explain why these sectors attract labour abuses (low barriers to entry, price competition, weak local regulation). Use real company examples: Nike, Apple suppliers."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-12",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't confuse corporate responsibility (internal MNC policies) with governmental regulation (state enforcement). MNCs can implement high labour standards in their direct operations yet exploit workers in subcontracted suppliers. Examiners expect you to distinguish between official policy and actual practice."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_5.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-13",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Analyse how power imbalances in developing markets enable unethical MNC marketing: consumers lack information access, regulatory agencies lack enforcement resources, and media lacks independence. Show how MNCs exploit these gaps (misleading health claims, targeting vulnerable groups, culturally inappropriate messaging)."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-13",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't place all ethical responsibility on MNCs without recognising weak institutional capacity in host countries. While MNCs should act ethically, developing-nation governments often lack resources to regulate advertising, product safety, or business practices. Your evaluation must acknowledge institutional weakness, not just corporate fault."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_6.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-14",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Compare different regulatory methods: international treaties (least binding), host-country laws (varies by enforcement), supranational agreements (EU standards), and shareholder activism (market-based). Show why each mechanism has different teeth and effectiveness. Which works best depends on host-country governance quality."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-14",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume strong regulations automatically constrain MNCs. Wealthy multinationals have resources to relocate operations, lobby for exemptions, or absorb compliance costs and pass them to consumers. Regulations only work if accompanied by effective monitoring and enforcement with real penalties."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_7.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-15",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Evaluate real campaigns where consumer action succeeded: Shell Brent Spar protests, McDonald's rainforest destruction criticism, unethical labour practices at Nike. Contrast with failed boycotts where consumer awareness didn't translate to behaviour change. Assess what factors determine success: media visibility, consumer affluence, product substitutability."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-15",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't overstate the power of boycotts or consumer pressure without evidence. Boycotts often fail because consumers prioritise price and convenience over ethics. In developing countries with limited product choice, boycotts lose leverage. Evaluate consumer pressure critically, not as a reliable control mechanism."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_8.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-16",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Distinguish between three distinct control mechanisms: government legislation (rules the conduct), joint ventures (shares control between MNC and local partner), and taxation (reduces profit incentive for operations). Each has different effectiveness depending on the host country's legal enforcement and political will. Analyse which suits which country context."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-16",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume high taxation reduces MNC presence or improves labour practices. MNCs often pass tax costs to consumers; taxation alone doesn't constrain unethical behaviour if regulations don't prohibit it. Joint ventures don't guarantee local control if the local partner is weak or corrupt. Evaluate effectiveness, not just intent."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_20_9.js": [
+    {
+      "id": "callout-bus-u4-p2-tip-17",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Compare voluntary codes of conduct against government-enforced standards to evaluate effectiveness. Voluntary codes succeed only when: (1) reputational damage from violation is significant, (2) peer companies comply (avoiding competitive disadvantage), and (3) third-party audits verify compliance. Without these, voluntary codes are largely symbolic."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p2-warn-17",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume voluntary compliance codes have teeth without enforcement mechanisms. Companies can commit to codes on paper while operating differently in practice, especially in countries with weak media scrutiny. Show you understand that self-regulation often fails compared to external regulation with real penalties."
+      }
+    }
+  ]
+}

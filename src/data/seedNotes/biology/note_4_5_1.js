@@ -30,7 +30,16 @@ export const note_biology_4_5_1 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-df5a1bf3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often struggle to distinguish between the roles of PSII and PSI. Remember that photolysis of water replaces electrons exclusively in Photosystem II, while NADP is reduced by electrons originating from Photosystem I.' } }
+{ 'id': 'callout-examiner-df5a1bf3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often struggle to distinguish between the roles of PSII and PSI. Remember that photolysis of water replaces electrons exclusively in Photosystem II, while NADP is reduced by electrons originating from Photosystem I.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Excitation vs Ionisation",
+        text: "Do not confuse the excitation of electrons with ionisation. Photoionisation occurs only when the electrons have gained enough energy to completely leave the chlorophyll molecule."
+      }
+    }
   ],
   recall: {
     enabled: true,

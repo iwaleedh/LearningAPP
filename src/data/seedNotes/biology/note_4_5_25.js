@@ -44,7 +44,16 @@ export const note_biology_4_5_25 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-bd8b4eb9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Evaluating Scientific Claims', 'text': 'When assessing contentious secondary data, look for peer review validation, appropriate sample sizes, robust methodology, and whether there are potential biases tied to funding sources.' } }
+{ 'id': 'callout-examiner-bd8b4eb9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Evaluating Scientific Claims', 'text': 'When assessing contentious secondary data, look for peer review validation, appropriate sample sizes, robust methodology, and whether there are potential biases tied to funding sources.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Peer Review is Crucial",
+        text: "Whenever asked how scientific data is validated, the standard marking points are always 'peer review', 'published in scientific journals', and 'repeated by independent scientific bodies'."
+      }
+    }
   ],
   recall: {
     enabled: true,

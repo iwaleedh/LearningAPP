@@ -1,0 +1,310 @@
+{
+  "note_4_5_0.js": [
+    {
+      "style": "warning",
+      "title": "Avoid 'producing' energy",
+      "text": "Students often incorrectly write that photosynthesis 'produces' or 'creates' energy. Remember that energy cannot be created; always state that light energy is *converted* or *transferred* into chemical energy."
+    }
+  ],
+  "note_4_5_1.js": [
+    {
+      "style": "warning",
+      "title": "Excitation vs Ionisation",
+      "text": "Do not confuse the excitation of electrons with ionisation. Photoionisation occurs only when the electrons have gained enough energy to completely leave the chlorophyll molecule."
+    }
+  ],
+  "note_4_5_2.js": [
+    {
+      "style": "warning",
+      "title": "NADP vs NAD",
+      "text": "Always write 'reduced NADP' (or NADPH) for photosynthesis. Using 'reduced NAD' will lose you marks, as NAD is specific to respiration."
+    }
+  ],
+  "note_4_5_3.js": [
+    {
+      "style": "warning",
+      "title": "Limiting factor definition",
+      "text": "A limiting factor is the one factor that is at the lowest or least favourable value. Don't just say 'it limits the rate'; specify that it is the factor restricting any further increase in the rate."
+    }
+  ],
+  "note_4_5_4.js": [
+    {
+      "style": "tip",
+      "title": "Absorption vs Action Spectra",
+      "text": "Be prepared to overlay these graphs. If the peaks of the absorption spectrum perfectly align with the action spectrum, it provides evidence that those specific pigments are responsible for photosynthesis."
+    }
+  ],
+  "note_4_5_5.js": [
+    {
+      "style": "warning",
+      "title": "Units of Productivity",
+      "text": "Do not forget the units for GPP and NPP! They must include an area and time component, usually written as kJ m\u207b\u00b2 yr\u207b\u00b9."
+    }
+  ],
+  "note_4_5_6.js": [
+    {
+      "style": "warning",
+      "title": "Measuring Oxygen",
+      "text": "Counting bubbles is highly inaccurate because bubble sizes vary. Examiners prefer methods that measure the *volume* of oxygen gas collected using a gas syringe or a photosynthometer."
+    }
+  ],
+  "note_4_5_7.js": [
+    {
+      "style": "warning",
+      "title": "Pencil, not Pen",
+      "text": "Always state that the origin line must be drawn in pencil. Ink contains separate pigments that would dissolve in the solvent and run up the chromatography paper, invalidating results."
+    }
+  ],
+  "note_4_5_8.js": [
+    {
+      "style": "tip",
+      "title": "ATP is a Nucleotide Derivative",
+      "text": "Remember that ATP is structurally similar to an RNA nucleotide, but it contains three phosphate groups instead of one, and its base is always adenine."
+    }
+  ],
+  "note_4_5_9.js": [
+    {
+      "style": "warning",
+      "title": "Products of Phosphorylation",
+      "text": "Cyclic photophosphorylation ONLY produces ATP. Non-cyclic produces both ATP AND reduced NADP, as well as oxygen from the photolysis of water."
+    }
+  ],
+  "note_4_5_10.js": [
+    {
+      "style": "warning",
+      "title": "RuBisCO vs RuBP",
+      "text": "Do not mix up the enzyme and the substrate! RuBisCO is the enzyme that catalyses the reaction; RuBP (Ribulose bisphosphate) is the 5-carbon substrate it acts upon."
+    }
+  ],
+  "note_4_5_11.js": [
+    {
+      "style": "warning",
+      "title": "Palisade vs Spongy Mesophyll",
+      "text": "Be precise: palisade cells are adapted for maximum light absorption (packed with chloroplasts), whereas spongy mesophyll cells are adapted for gas exchange (air spaces)."
+    }
+  ],
+  "note_4_5_12.js": [
+    {
+      "style": "warning",
+      "title": "Direction of Arrows",
+      "text": "In a food web or chain, arrows do NOT mean 'is eaten by'. The arrows strictly represent the direction of energy transfer between trophic levels."
+    }
+  ],
+  "note_4_5_13.js": [
+    {
+      "style": "warning",
+      "title": "Why energy is lost",
+      "text": "Never say energy is 'used for respiration'. Energy is *released* by respiration and lost as heat. Energy is also lost through uneaten parts (bones) and excretion (urine/faeces)."
+    }
+  ],
+  "note_4_5_14.js": [
+    {
+      "style": "tip",
+      "title": "The NPP Equation",
+      "text": "NPP = GPP - R. Always state clearly that 'R' stands for respiratory losses by the *plants* (producers), not the animals that eat them."
+    }
+  ],
+  "note_4_5_15.js": [
+    {
+      "style": "warning",
+      "title": "Decomposition releases CO\u2082",
+      "text": "Students often forget exactly how decomposition returns CO\u2082 to the atmosphere. It is because the saprobionts (bacteria/fungi) secrete enzymes, absorb the products, and then *respire* them."
+    }
+  ],
+  "note_4_5_16.js": [
+    {
+      "style": "warning",
+      "title": "Pioneer Species",
+      "text": "Pioneer species (like lichens) alter the harsh abiotic conditions, making them less hostile to allow new, larger species to colonise. The new species then *outcompete* the pioneers."
+    }
+  ],
+  "note_4_5_17.js": [
+    {
+      "style": "tip",
+      "title": "Dendrochronology & Peat Bogs",
+      "text": "When discussing evidence for past climates, remember that wider tree rings indicate warmer/wetter conditions, and peat bogs preserve pollen due to anaerobic and acidic conditions."
+    }
+  ],
+  "note_4_5_18.js": [
+    {
+      "style": "warning",
+      "title": "Extrapolation Limitations",
+      "text": "Examiners will test you on the reliability of data. Extrapolating to predict future climates is unreliable because it assumes current trends continue unchanged and ignores future emissions policies."
+    }
+  ],
+  "note_4_5_19.js": [
+    {
+      "style": "warning",
+      "title": "The Predator-Prey Lag Phase",
+      "text": "In predator-prey graphs, the predator population peaks *after* the prey population peaks. Always mention the time lag required for predators to reproduce after eating the abundant prey."
+    }
+  ],
+  "note_4_5_20.js": [
+    {
+      "style": "warning",
+      "title": "Random vs Systematic Sampling",
+      "text": "Use a random number generator for quadrats in a uniform area to avoid bias. Only use a transect (systematic sampling) if there is an environmental gradient like a shoreline or forest edge."
+    }
+  ],
+  "note_4_5_21.js": [
+    {
+      "style": "warning",
+      "title": "Denaturation is not 'killing'",
+      "text": "Never say high temperatures 'kill' the enzyme. State that extreme kinetic energy breaks the hydrogen and ionic bonds, altering the tertiary structure so the active site is no longer complementary."
+    }
+  ],
+  "note_4_5_22.js": [
+    {
+      "style": "tip",
+      "title": "Q10 Coefficient",
+      "text": "You may be asked to calculate Q10. Remember it represents the factor by which the rate of reaction increases for every 10\u00b0C rise in temperature. A Q10 of 2 means the rate doubles."
+    }
+  ],
+  "note_4_5_23.js": [
+    {
+      "style": "warning",
+      "title": "Mutations are Random",
+      "text": "A common mistake is saying 'the environment caused a mutation to help them survive'. No! Mutations occur randomly. The environment simply provides the selection pressure that gives the surviving allele an advantage."
+    }
+  ],
+  "note_4_5_24.js": [
+    {
+      "style": "tip",
+      "title": "Allopatric vs Sympatric",
+      "text": "Allopatric = 'Different country' (Geographical isolation). Sympatric = 'Same country' (Reproductive isolation, such as different mating seasons or behaviors, within the same area)."
+    }
+  ],
+  "note_4_5_25.js": [
+    {
+      "style": "tip",
+      "title": "Peer Review is Crucial",
+      "text": "Whenever asked how scientific data is validated, the standard marking points are always 'peer review', 'published in scientific journals', and 'repeated by independent scientific bodies'."
+    }
+  ],
+  "note_4_5_26.js": [
+    {
+      "style": "warning",
+      "title": "Conservation vs Preservation",
+      "text": "Conservation involves the *active management* and intervention of an ecosystem to maintain biodiversity, whereas preservation simply means leaving the ecosystem entirely alone."
+    }
+  ],
+  "note_4_6_0.js": [
+    {
+      "style": "warning",
+      "title": "Sterilisation Etiquette",
+      "text": "Pass the inoculating loop through a roaring Bunsen flame until red hot. Do NOT place it down on the bench to cool; hold it near the flame to prevent contamination from the air."
+    }
+  ],
+  "note_4_6_1.js": [
+    {
+      "style": "warning",
+      "title": "Turbidity limitations",
+      "text": "Using a colorimeter to measure turbidity (cloudiness) gives a total cell count, which includes both living and dead cells. Only a serial dilution and plating will give a viable (living) cell count."
+    }
+  ],
+  "note_4_6_2.js": [
+    {
+      "style": "warning",
+      "title": "Logarithmic Scales",
+      "text": "Bacterial growth graphs often use a log\u2081\u2080 scale on the y-axis because the numbers get so large so quickly. Pay close attention to the axes before reading off a value."
+    }
+  ],
+  "note_4_6_3.js": [
+    {
+      "style": "tip",
+      "title": "Log Phase = Exponential Growth",
+      "text": "During the exponential (log) phase, there are no limiting factors. Nutrients are abundant and waste levels are low, allowing the bacteria to divide at their maximum theoretical rate."
+    }
+  ],
+  "note_4_6_4.js": [
+    {
+      "style": "warning",
+      "title": "Viruses are Not Cells",
+      "text": "Never refer to a virus as a cell. They do not have a plasma membrane, cytoplasm, or ribosomes. They only consist of genetic material enclosed in a protein coat (capsid)."
+    }
+  ],
+  "note_4_6_5.js": [
+    {
+      "style": "warning",
+      "title": "HIV targets specific cells",
+      "text": "State clearly that HIV targets T-helper cells (because they possess the CD4 receptor). The destruction of T-helper cells restricts both the humoral (B-cell) and cell-mediated (T-killer) immune responses."
+    }
+  ],
+  "note_4_6_6.js": [
+    {
+      "style": "warning",
+      "title": "Lysozyme is an Enzyme",
+      "text": "Lysozyme is found in tears, saliva, and sweat. It works by breaking down the peptidoglycan cell walls of bacteria. It is NOT an antibody and it is a non-specific defence."
+    }
+  ],
+  "note_4_6_7.js": [
+    {
+      "style": "warning",
+      "title": "Inflammation mechanism",
+      "text": "Inflammation causes swelling, but not because 'cells get bigger'. Histamine makes the capillary walls more permeable, allowing blood plasma (tissue fluid) to leak out into the surrounding tissue."
+    }
+  ],
+  "note_4_6_8.js": [
+    {
+      "style": "warning",
+      "title": "Who makes the antibodies?",
+      "text": "B cells do not directly 'shoot' antibodies at pathogens. They must first undergo clonal expansion and differentiate into plasma cells. It is the plasma cells that secrete the antibodies."
+    }
+  ],
+  "note_4_6_9.js": [
+    {
+      "style": "warning",
+      "title": "Antibody Structure",
+      "text": "Don't forget the disulfide bridges! When describing antibody structure, always mention the four polypeptide chains (two heavy, two light) held together by disulfide bonds, featuring a specific variable region."
+    }
+  ],
+  "note_4_6_10.js": [
+    {
+      "style": "warning",
+      "title": "Passive Immunity is Temporary",
+      "text": "Passive immunity (like maternal antibodies in breast milk) provides immediate protection, but it does NOT create memory cells. The antibodies will eventually break down, leaving no long-term immunity."
+    }
+  ],
+  "note_4_6_11.js": [
+    {
+      "style": "warning",
+      "title": "Bacteriostatic vs Bacteriocidal",
+      "text": "Bacteriostatic antibiotics do not kill bacteria; they inhibit their growth/reproduction. Always add that this gives the host's own immune system time to destroy the bacteria."
+    }
+  ],
+  "note_4_6_12.js": [
+    {
+      "style": "warning",
+      "title": "The Bacteria are Resistant",
+      "text": "Never write that the 'patient has become resistant' or 'immune' to the antibiotic. It is the *bacteria* that have acquired the resistance allele allowing them to survive the antibiotic."
+    }
+  ],
+  "note_4_6_13.js": [
+    {
+      "style": "tip",
+      "title": "Comparing Inhibition Zones",
+      "text": "A larger zone of inhibition (clear area) indicates the antibiotic is more effective at killing the bacteria\u2014but remember this assumes both antibiotics diffuse through the agar at the same rate."
+    }
+  ],
+  "note_4_6_14.js": [
+    {
+      "style": "warning",
+      "title": "Autolysis vs Putrefaction",
+      "text": "Make sure you distinguish them clearly. Autolysis is the self-digestion of tissue by its own intracellular enzymes inside lysosomes. Putrefaction follows this, caused by the hydrolytic enzymes of external bacteria."
+    }
+  ],
+  "note_4_6_15.js": [
+    {
+      "style": "warning",
+      "title": "Cooling Curves vary",
+      "text": "Body temperature alone is not enough to accurately determine Time of Death. Examiners want you to list factors that alter the cooling rate, such as ambient temperature, body mass, or clothing."
+    }
+  ],
+  "note_4_6_16.js": [
+    {
+      "style": "tip",
+      "title": "Gel Electrophoresis Speed",
+      "text": "In gel electrophoresis, smaller/shorter DNA fragments travel faster and further down the agarose gel towards the positive anode than larger fragments do."
+    }
+  ]
+}

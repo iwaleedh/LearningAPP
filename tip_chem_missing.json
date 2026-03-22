@@ -1,0 +1,30 @@
+{
+  "note_2_10_10.js": [
+    {
+      "style": "tip",
+      "title": "Wavenumber Ranges",
+      "text": "Always quote the exact wavenumber ranges from your data booklet when identifying bonds from an IR spectrum (e.g., O-H stretch at 3200-3600 cm^-1 for alcohols)."
+    }
+  ],
+  "note_2_10_8.js": [
+    {
+      "style": "warning",
+      "title": "Carbocation Charges",
+      "text": "When writing formulae for fragment ions in mass spectrometry, you MUST include the positive charge (e.g., [CH3]+). Without the '+' sign, you will lose the mark."
+    }
+  ],
+  "note_2_9_3.js": [
+    {
+      "style": "warning",
+      "title": "Drawing Maxwell-Boltzmann",
+      "text": "Your Maxwell-Boltzmann curve must start exactly at the origin (0,0) - because no particles have zero energy. It should never touch the x-axis again at higher energies as there is no maximum energy limit."
+    }
+  ],
+  "note_2_9_7.js": [
+    {
+      "style": "key",
+      "title": "Industrial Compromises",
+      "text": "For exothermic reversible reactions, lower temperatures offer a high theoretical yield but a very slow rate of reaction. A 'compromise temperature' balances a viable rate of production with a reasonable yield."
+    }
+  ]
+}

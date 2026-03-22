@@ -1,0 +1,18 @@
+src/data/seedNotes/business/note_4_19_0.js: Understand the concepts of global and localised marketing strategies, and evaluate their benefits and drawbacks.
+src/data/seedNotes/business/note_4_19_1.js: Understand EPRG framework focusing on ethnocentric, polycentric, and geocentric approaches to global marketing.
+src/data/seedNotes/business/note_4_19_2.js: Understand how the 4Ps of the marketing mix must be adapted for global markets.
+src/data/seedNotes/business/note_4_19_3.js: Apply Ansoff
+src/data/seedNotes/business/note_4_19_4.js: Analyse the characteristics of global niche markets and how businesses operate within them.
+src/data/seedNotes/business/note_4_19_5.js: Analyse how cultural diversity influences demand and requires businesses to adapt their strategies.
+src/data/seedNotes/business/note_4_19_6.js: Evaluate the risks associated with branding and language translation in international markets.
+src/data/seedNotes/business/note_4_19_7.js: Evaluate the role and necessary adaptation of social media in global marketing campaigns.
+src/data/seedNotes/business/note_4_20_0.js: Understand the positive and negative effects of multinational companies (MNCs) on local economies, including job creation and cultural impact.
+src/data/seedNotes/business/note_4_20_1.js: Evaluate the effects of MNCs on the national economy of the host country, including FDI, balance of payments, and tax revenues.
+src/data/seedNotes/business/note_4_20_2.js: Analyse the conflicts that arise between different stakeholder groups when operating in global markets.
+src/data/seedNotes/business/note_4_20_3.js: Assess the environmental ethical issues faced by multinationals and the trade-offs between profit and sustainability.
+src/data/seedNotes/business/note_4_20_4.js: Evaluate the issues surrounding labour standards in global supply chains, including child labour, sweatshops, and health & safety.
+src/data/seedNotes/business/note_4_20_5.js: Examine ethical issues in multinational marketing, including misleading advertising, cultural insensitivity, and marketing to vulnerable groups.
+src/data/seedNotes/business/note_4_20_6.js: Understand the different methods used to regulate and control the behaviour of multinational companies.
+src/data/seedNotes/business/note_4_20_7.js: Analyse how consumer action and pressure groups influence and constrain multinational corporate behaviour.
+src/data/seedNotes/business/note_4_20_8.js: Evaluate the use of government legislation, joint ventures, and taxation to control MNCs.
+src/data/seedNotes/business/note_4_20_9.js: Assess the effectiveness and limitations of self-regulation and voluntary codes of conduct by businesses.

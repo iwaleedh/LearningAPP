@@ -28,7 +28,16 @@ export const note_biology_4_5_17 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-0acf4c1c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When evaluating evidence for climate change, distinguish between \'correlation\' and \'causation\'. Just because CO₂ levels and temperature rise together does not automatically prove one causes the other, though scientific consensus strongly supports a causal link via the greenhouse effect.' } }
+{ 'id': 'callout-examiner-0acf4c1c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When evaluating evidence for climate change, distinguish between \'correlation\' and \'causation\'. Just because CO₂ levels and temperature rise together does not automatically prove one causes the other, though scientific consensus strongly supports a causal link via the greenhouse effect.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Dendrochronology & Peat Bogs",
+        text: "When discussing evidence for past climates, remember that wider tree rings indicate warmer/wetter conditions, and peat bogs preserve pollen due to anaerobic and acidic conditions."
+      }
+    }
   ],
   recall: {
     enabled: true,

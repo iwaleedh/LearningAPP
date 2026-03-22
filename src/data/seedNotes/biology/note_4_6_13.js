@@ -35,7 +35,16 @@ export const note_biology_4_6_13 = {
       data: { style: "key", title: "Key Controls", text: "Control the volume/concentration of antibiotic on the discs, the size of the discs, the strain/concentration of bacteria used, the thickness of the agar, and the incubation time/temperature." }
     },
 { 'id': 'callout-examiner-a72c6832', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Zone of Inhibition', 'text': 'The larger the clear zone, the more effective the antimicrobial agent. Remember to measure the diameter using a ruler across the disc, ensuring you do not open the Petri dish fully.' } },
-{ 'id': 'callout-examiner-5cf1b28d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Incubation Temperature', 'text': 'For school practicals, incubation must be at 25°C, not 37°C, to avoid culturing human pathogens.' } }
+{ 'id': 'callout-examiner-5cf1b28d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Incubation Temperature', 'text': 'For school practicals, incubation must be at 25°C, not 37°C, to avoid culturing human pathogens.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Comparing Inhibition Zones",
+        text: "A larger zone of inhibition (clear area) indicates the antibiotic is more effective at killing the bacteria\u2014but remember this assumes both antibiotics diffuse through the agar at the same rate."
+      }
+    }
   ],
   recall: {
     enabled: true,

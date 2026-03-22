@@ -26,7 +26,16 @@ export const note_biology_4_5_7 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-b4b29c3e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When calculating Rf values for photosynthetic pigments, always measure from the origin line to the geometric centre of the pigment spot. Remember that Rf values must always be less than 1.' } }
+{ 'id': 'callout-examiner-b4b29c3e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When calculating Rf values for photosynthetic pigments, always measure from the origin line to the geometric centre of the pigment spot. Remember that Rf values must always be less than 1.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Pencil, not Pen",
+        text: "Always state that the origin line must be drawn in pencil. Ink contains separate pigments that would dissolve in the solvent and run up the chromatography paper, invalidating results."
+      }
+    }
   ],
   recall: {
     enabled: true,

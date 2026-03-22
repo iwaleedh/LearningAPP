@@ -1,0 +1,134 @@
+{
+  "src/data/seedNotes/mathematics/note_2_5_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that log(a) + log(b) = log(ab), but log(a + b) cannot be simplified. A common mistake is incorrectly expanding log(a+b) to log(a)+log(b)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When solving a^x = b, always take logs of both sides. Leave your answer in exact form (like ln3 / ln2) unless the question specifically asks for decimal figures."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In growth/decay models, the initial value happens when t=0, leaving just A. Check your units of time carefully, as examiners often try to trick you by mixing months and years."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When reducing y = ax^n to linear form, plotting log y against log x gives a gradient of n and a y-intercept of log a. Make sure you use the correct logarithm base as requested in the question."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For simultaneous equations involving logarithms, the easiest approach is often to 'un-log' the equations first (convert them to exponential form) before trying to solve them algebraically."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Do not just memorise sin^2 x + cos^2 x = 1; remember you can divide it by sin^2 x or cos^2 x to quickly derive the identities involving sec^2 x and cosec^2 x during the exam."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Examiners expect you to write down exact values algebraically without working. Relying completely on your calculator can lose you method marks in 'Show that' questions."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Be careful when solving equations with reciprocal functions. Never divide both sides of an equation by a trig function like sec x, as you may lose valid solutions. Bring everything to one side and factorise instead."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using the double angle formula for cos(2x), look at the other terms in your equation first. Choose the version (cos^2 - sin^2, 2cos^2 - 1, or 1 - 2sin^2) that turns the entire equation into a simple quadratic of one trig function."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that when differentiating or integrating trigonometric functions, your angle must be in radians. If an exam question involves calculus with sine or cosine, ensure your calculator is set to radian mode!"
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The chain rule is frequently tested within implicit differentiation or related rates of change. The most common pitfall is forgetting to multiply by the derivative of the inner function."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always write down u, v, du/dx, and dv/dx explicitly before applying the product rule formula. This prevents careless algebraic sign errors, especially when dealing with negative or fractional powers."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In the quotient rule, the order of the numerator matters heavily because of the minus sign: it must be (v u' - u v') / v^2. Clearly stating u and v usually secures method marks even if a minor slip happens later."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When differentiating implicitly, do not forget to multiply by dy/dx whenever you differentiate a y term. Collecting the dy/dx terms correctly on one side and factorising is a frequent source of lost marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Write down the chain rule explicitly using differentials (e.g. dV/dt = dV/dr * dr/dt) right at the start. Look at the units given in the question to help deduce the correct derivatives you need to multiply."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When classifying stationary points, if d2y/dx2 = 0, the second derivative test fails and cannot conclude the nature. You must then revert to checking the sign of dy/dx slightly left and right of the point."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Never forget the '+ C' for indefinite integrals! Also, remember that integrating 1/x gives ln|x|; the modulus signs indicate the domain, though they are often forgiven in definite integrals evaluating over positive limits."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In definite integration by substitution, always remember to change your current x limits of integration to match your new variable u. This saves you from having to convert your answer back in terms of x at the very end."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Choose your 'u' carefully in integration by parts. The acronym LATE (Logs, Algebra, Trigonometry, Exponentials) is an excellent rule of thumb for deciding which function becomes u to make the resulting integral simpler."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always check if an algebraic fraction is 'top heavy' (improper) before attempting to find partial fractions. If the highest power on top is equal to or greater than the bottom, you must use algebraic long division first."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding the area bounded by a curve that crosses the x-axis, you must evaluate the sections above and below the axis using separate definite integrals, taking the absolute value of the negative area before adding them."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "To logically show if the trapezium rule yields an over-estimate or under-estimate, consider the specific section of the curve. If the curve is concave upwards (U-shaped), the straight chords sit above the curve giving an over-estimate."
+    }
+  ]
+}

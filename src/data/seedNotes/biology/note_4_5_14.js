@@ -35,7 +35,16 @@ export const note_biology_4_5_14 = {
       type: "callout",
       data: { style: "worked", title: "Secondary Productivity Equation", text: "NSP = I - (F + R)\nWhere I is chemical energy in ingested food, F is chemical energy lost in faeces and urine, and R is respiratory losses." }
     },
-{ 'id': 'callout-examiner-3c043763', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Be prepared to use the equation **NPP = GPP - R**. Sometimes exam questions will give you values in standard form or ask you to calculate the percentage efficiency; always check the units carefully.' } }
+{ 'id': 'callout-examiner-3c043763', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Be prepared to use the equation **NPP = GPP - R**. Sometimes exam questions will give you values in standard form or ask you to calculate the percentage efficiency; always check the units carefully.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "The NPP Equation",
+        text: "NPP = GPP - R. Always state clearly that 'R' stands for respiratory losses by the *plants* (producers), not the animals that eat them."
+      }
+    }
   ],
   recall: {
     enabled: true,

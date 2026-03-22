@@ -1,0 +1,499 @@
+{
+  "note_economics_4_18_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Always define globalisation accurately as the increasing integration and interdependence of the world's economies, rather than just 'more trade'."
+    }
+  ],
+  "note_economics_4_18_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When discussing causes of globalisation, distinguish between technological factors like containerisation and political factors like the reduction of trade barriers."
+    }
+  ],
+  "note_economics_4_18_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Evaluate the impacts of globalisation by considering specific stakeholders: workers (e.g., structural unemployment), consumers (e.g., lower prices), and the environment."
+    }
+  ],
+  "note_economics_4_18_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Be precise with definitions: comparative advantage is about lower opportunity cost, whereas absolute advantage is about producing more with the same resources."
+    }
+  ],
+  "note_economics_4_18_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Examiners often look for limitations of trade models; mentioning the unrealistic assumptions of zero transport costs and constant returns to scale can boost evaluation marks."
+    }
+  ],
+  "note_economics_4_18_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A strong counter-argument to comparative advantage is the risk of overspecialisation, making a country vulnerable to price shocks or changes in global demand."
+    }
+  ],
+  "note_economics_4_18_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When discussing the pattern of trade, use recent examples such as the shift of manufacturing towards emerging economies like those in the BRICS nations."
+    }
+  ],
+  "note_economics_4_18_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Remember the terms of trade calculation: (Index of export prices / Index of import prices) x 100. It measures price, not the volume or value of trade."
+    }
+  ],
+  "note_economics_4_18_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Changes in the exchange rate and inflation are key short-term influences on the terms of trade, whilst technological advancements affect it in the long term."
+    }
+  ],
+  "note_economics_4_19_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "An improvement in the terms of trade does not automatically mean the balance of payments will improve; it depends heavily on the price elasticity of demand for exports and imports."
+    }
+  ],
+  "note_economics_4_19_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Ensure you can clearly distinguish between a free trade area (members determine their own external tariffs) and a customs union (common external tariff)."
+    }
+  ],
+  "note_economics_4_19_10.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Make sure you can contrast floating exchange rates (determined purely by market forces) with managed systems (central bank intervention to keep the rate within a bounds)."
+    }
+  ],
+  "note_economics_4_19_11.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When explaining how central banks manage exchange rates, discuss both buying/selling foreign currency reserves and the use of monetary policy (interest rates)."
+    }
+  ],
+  "note_economics_4_19_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The Prebisch-Singer Hypothesis is crucial for explaining the long-term deterioration in the terms of trade for countries exporting primary commodities."
+    }
+  ],
+  "note_economics_4_19_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Trade creation and trade diversion are essential concepts for evaluating the entry into a customs union; be ready to explain the welfare effects of both."
+    }
+  ],
+  "note_economics_4_19_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Highlight that the WTO does not just promote free trade; it also operates a critical dispute settlement mechanism to enforce rules between member nations."
+    }
+  ],
+  "note_economics_4_19_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Discuss how bilateral or regional trade agreements might undermine the WTO's principle of most-favoured-nation (MFN) status by creating discriminatory trade blocs."
+    }
+  ],
+  "note_economics_4_19_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The infant industry argument and anti-dumping measures are the most analytically rigorous justifications for protectionism; use these rather than general 'job protection' arguments."
+    }
+  ],
+  "note_economics_4_19_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When evaluating the impacts of protectionism, the threat of retaliation leading to a trade war is a powerful counterpoint to any short-term domestic benefits."
+    }
+  ],
+  "note_economics_4_19_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Distinguish clearly between tariffs (taxes on imports generating government revenue) and quotas (physical limits generating no direct tax revenue)."
+    }
+  ],
+  "note_economics_4_19_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A fully labelled tariff diagram showing consumer surplus loss, producer surplus gain, tax revenue, and net welfare loss is often required for top marks in analysis."
+    }
+  ],
+  "note_economics_4_20_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Use the acronym SPICED (Strong Pound Imports Cheap Exports Dear) and WPIDEC to help quickly identify the initial price effects of exchange rate movements."
+    }
+  ],
+  "note_economics_4_20_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Top-level answers will reference both the Marshall-Lerner condition mathematically and the J-curve effect visually when explaining currency depreciation impacts."
+    }
+  ],
+  "note_economics_4_20_10.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Ensure you can draw and interpret a Lorenz curve correctly: the further it bows away from the line of perfect equality, the greater the inequality."
+    }
+  ],
+  "note_economics_4_20_11.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Identify causes of inequality beyond just 'wages'—consider the rising return on capital relative to labour and the impact of regressive tax systems."
+    }
+  ],
+  "note_economics_4_20_12.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Discuss the impact of inequality on economic growth using the marginal propensity to consume (MPC): lower-income groups have a higher MPC, so high inequality can suppress aggregate demand."
+    }
+  ],
+  "note_economics_4_20_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Relative unit labour costs are the most commonly used metric to measure international competitiveness; ensure you explain them as the labour cost per unit of output."
+    }
+  ],
+  "note_economics_4_20_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Look at both price factors (exchange rates, wages) and non-price factors (innovation, quality, reliability) when evaluating what influences competitiveness."
+    }
+  ],
+  "note_economics_4_20_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Supply-side policies (education, infrastructure, deregulation) are essential for sustained improvements in international competitiveness."
+    }
+  ],
+  "note_economics_4_20_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Link international competitiveness directly to macroeconomic objectives: increased competitiveness drives export-led growth, reduces unemployment, and improves the current account."
+    }
+  ],
+  "note_economics_4_20_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Always define absolute poverty using a fixed threshold (e.g. WB $2.15/day) and relative poverty using a comparative threshold (e.g. less than 60% of median income)."
+    }
+  ],
+  "note_economics_4_20_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When assessing the impacts of poverty, mention the human capital deficit: poor health and education limit future productivity, creating a poverty trap."
+    }
+  ],
+  "note_economics_4_20_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A fundamental distinction that examiners look for: income is a flow of money over time, whereas wealth is a stock of assets at a given point in time."
+    }
+  ],
+  "note_economics_4_20_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The Gini coefficient runs from 0 (perfect equality) to 1 (perfect inequality); applying this to real-world data demonstrates strong application skills."
+    }
+  ],
+  "note_economics_4_21_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Memorise the exact three components of the HDI: life expectancy at birth, mean and expected years of schooling, and GNI per capita at PPP."
+    }
+  ],
+  "note_economics_4_21_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The HDI is widely used, but pointing out its failure to measure inequality opens the door to mentioning the Inequality-adjusted HDI (IHDI) as a superior metric."
+    }
+  ],
+  "note_economics_4_21_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The savings gap and primary product dependency are two foundational structural constraints on development; be sure to understand how both limit investment and growth."
+    }
+  ],
+  "note_economics_4_21_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Using real-world examples, such as Venezuela's oil reliance or sub-Saharan Africa's capital flight, transforms a theoretical point into a high-scoring analytical argument."
+    }
+  ],
+  "note_economics_4_21_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When discussing market-orientated strategies like FDI and trade liberalisation, evaluate their limitations—such as profit repatriation by MNCs."
+    }
+  ],
+  "note_economics_4_21_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Interventionist strategies like protectionism and import substitution can develop local industries, but often risk creating inefficient, uncompetitive monopolies."
+    }
+  ],
+  "note_economics_4_21_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Debt relief and Fairtrade schemes are excellent alternatives to discuss, but you must highlight the ongoing risk of moral hazard and market distortion respectively."
+    }
+  ],
+  "note_economics_4_21_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Microfinance delivered by NGOs can empower local communities, but a critical evaluation point is that high interest rates can sometimes trap the poorest in debt."
+    }
+  ],
+  "note_economics_4_21_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The IMF focuses on macroeconomic stability (e.g., exchange rates, BoP). Be ready to evaluate the strict conditionality often attached to its emergency loans."
+    }
+  ],
+  "note_economics_4_21_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Unlike the IMF, the World Bank is primarily focused on long-term poverty reduction and funding large developmental infrastructure projects."
+    }
+  ],
+  "note_economics_4_22_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Evaluate international institutions by exploring whether their strict policy requirements (SAPs) genuinely assist developing nations or undermine their sovereign economic choices."
+    }
+  ],
+  "note_economics_4_22_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Be aware of long-term trends in public expenditure, such as ageing populations driving up pension and healthcare costs in developed economies."
+    }
+  ],
+  "note_economics_4_22_10.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When examining macroeconomic responses, contrast the effectiveness of unilateral domestic policy against coordinated international efforts during a crisis."
+    }
+  ],
+  "note_economics_4_22_11.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Transnational Corporations (TNCs) frequently use transfer pricing to shift profits to low-tax jurisdictions. Discussing this highlights difficulties in national tax collection."
+    }
+  ],
+  "note_economics_4_22_12.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Resolving cross-border economic issues often requires global policy coordination, which is difficult due to the conflicting domestic objectives of different governments."
+    }
+  ],
+  "note_economics_4_22_13.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Clearly distinguish the main functions of financial markets: to facilitate saving, to provide lending, to exchange equities, and to offer forward markets for commodities."
+    }
+  ],
+  "note_economics_4_22_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Financial crowding out is a key evaluation concept: increased government borrowing can raise interest rates, reducing private sector investment."
+    }
+  ],
+  "note_economics_4_22_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Reference Adam Smith's canons of taxation (equity, certainty, convenience, efficiency) to evaluate the effectiveness and fairness of specific taxes."
+    }
+  ],
+  "note_economics_4_22_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Remember that the burden of direct taxes (taxes on income/wealth) cannot be shifted, whereas indirect taxes (taxes on spending) can be passed on to the consumer."
+    }
+  ],
+  "note_economics_4_22_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Make sure you can define and provide an example for progressive, proportional, and regressive taxes, as they have vastly different impacts on income inequality."
+    }
+  ],
+  "note_economics_4_22_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The Laffer curve is a powerful analytical tool to show how increasing the marginal tax rate beyond an optimal point can actually reduce overall tax revenue."
+    }
+  ],
+  "note_economics_4_22_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Do not confuse the deficit (annual borrowing) with the national debt (the total accumulated borrowing). Also distinguish between cyclical and structural deficits."
+    }
+  ],
+  "note_economics_4_22_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "High levels of national debt carry significant opportunity costs via debt servicing (interest payments), potentially limiting future expenditure on public services."
+    }
+  ],
+  "note_economics_4_22_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When discussing global macroeconomic policies, note how external shocks (e.g., commodity price spikes) can render domestic fiscal and monetary policies ineffective."
+    }
+  ],
+  "note_economics_4_23_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Asymmetric information acts as a severe market failure in financial markets, where borrowers often know more about their risk profiles than the lenders estimating them."
+    }
+  ],
+  "note_economics_4_23_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The principal-agent problem is a frequent issue in finance: bank managers (agents) take massive short-term risks for bonuses, jeopardising shareholders (principals)."
+    }
+  ],
+  "note_economics_4_23_10.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When assessing the central bank, highlight the dual tension between its role as the lender of last resort and the moral hazard this guarantee creates."
+    }
+  ],
+  "note_economics_4_23_11.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Regulatory capture—where regulators become too sympathetic or overly influenced by the commercial banks they oversee—is a high-level evaluating factor for central bank effectiveness."
+    }
+  ],
+  "note_economics_4_23_12.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Discuss the unwinding of Quantitative Easing (Quantitative Tightening) as a modern central banking challenge, notably its impact on bond yields and government debt."
+    }
+  ],
+  "note_economics_4_23_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Market rigging, such as manipulating benchmark interest rates (e.g., LIBOR), is a critical example of market failure stemming from collusion in the financial sector."
+    }
+  ],
+  "note_economics_4_23_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Systemic risk and contagion explain why a failure in one financial institution can quickly cascade through the entire global banking system due to high interconnectivity."
+    }
+  ],
+  "note_economics_4_23_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Understand that the primary function of a central bank is not just setting interest rates, but acting as the banker to both commercial banks and the government."
+    }
+  ],
+  "note_economics_4_23_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Forward guidance is an important contemporary tool: by communicating future interest rate intentions, a central bank can influence market behaviour without immediate policy changes."
+    }
+  ],
+  "note_economics_4_23_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Most major central banks operate with an inflation target (e.g., 2% for the Bank of England). Explain how this anchors expectations to prevent wage-price spirals."
+    }
+  ],
+  "note_economics_4_23_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Distinguish between narrow money (notes/coins and liquid deposits) and broad money, as quantitative easing aims specifically to increase the broad money supply."
+    }
+  ],
+  "note_economics_4_23_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Liquidity ratios and capital adequacy ratios are vital supervisory tools to ensure banks have enough buffers to withstand sudden financial shocks or bank runs."
+    }
+  ],
+  "note_economics_4_23_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Macroprudential regulation is implemented to avert systemic risks across the whole financial sector, setting policies like stress testing to assure long-term financial stability."
+    }
+  ]
+}

@@ -39,7 +39,16 @@ export const note_biology_4_5_16 = {
       type: "paragraph",
       data: { text: "Deflected succession/Plagioclimax: When human intervention (like mowing, grazing sheep, or controlled burning) prevents an ecosystem from reaching its natural climax community." }
     },
-{ 'id': 'callout-examiner-c44c57cc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When discussing succession, clearly use the terms **pioneer species** and **climax community**. Highlight that as succession proceeds, soil depth increases and biodiversity usually increases until a stable climax community is reached.' } }
+{ 'id': 'callout-examiner-c44c57cc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When discussing succession, clearly use the terms **pioneer species** and **climax community**. Highlight that as succession proceeds, soil depth increases and biodiversity usually increases until a stable climax community is reached.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Pioneer Species",
+        text: "Pioneer species (like lichens) alter the harsh abiotic conditions, making them less hostile to allow new, larger species to colonise. The new species then *outcompete* the pioneers."
+      }
+    }
   ],
   recall: {
     enabled: true,

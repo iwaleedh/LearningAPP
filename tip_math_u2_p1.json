@@ -1,0 +1,134 @@
+{
+  "src/data/seedNotes/mathematics/note_2_1_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always state a clear conclusion at the end of your proof. Examiners look for a concluding statement (e.g., 'Therefore, the statement is true for all n') to award the final communication mark."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_1_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using proof by exhaustion, ensure you explicitly list and check every single possible case. Missing even one case will cost you the final proof mark."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_1_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "To disprove a statement, finding just one valid counter-example is completely sufficient. Don't waste time trying to prove it algebraically; just state the example, show the calculation, and conclude it fails."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_2_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When adding or subtracting algebraic fractions, always factorise the denominators first. This helps you find the simplest common denominator and avoids creating overly complex cubic or quartic numerators that are hard to simplify."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_2_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Be careful with missing terms in the dividend. If you are dividing a cubic with no x-squared term, insert '0x^2' as a placeholder to keep your columns aligned and avoid subtraction errors."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_2_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using the factor theorem to show (x-a) is a factor, you must explicitly state 'f(a) = 0, therefore (x-a) is a factor'. Simply showing the calculation equals zero without the concluding statement will drop a communication mark."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_3_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that the standard circle equation requires (x-a)^2 + (y-b)^2 = r^2 to have coefficients of 1 for the squared terms. If the coefficients of x^2 and y^2 are anything else, you must divide the entire equation by that number first."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_3_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A common pitfall when completing the square for general circle equations is forgetting to add the squared constants to the right-hand side. Always balance the equation to find the correct r^2 value."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_3_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If you are given three points on a circle and asked to prove two of them form a diameter, use gradients to show the angle subtended at the third point is 90 degrees (m1 * m2 = -1)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_3_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Examiners often test your understanding that the perpendicular bisector of any chord passes through the centre. You may need to set up simultaneous equations of two such bisectors to find the intersecting centre coordinates."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_3_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The tangent is always perpendicular to the radius at the point of contact. First find the gradient of the radius, then immediately find the negative reciprocal to get the tangent's gradient before setting up your line equation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Ensure you understand the difference between 'convergent' (approaching a limit) and 'oscillating' (moving back and forth). You are frequently asked to classify a sequence and mathematically justify your choice in exams."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When working with recurrence relations, always read carefully whether the sequence starts at n=1 or n=0 (or u1 vs u0). This completely shifts the terms and is a classic way to lose easy marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In questions where you must find the first negative or positive term of an arithmetic sequence, set up an inequality (e.g., Un < 0) rather than trying to guess and check terms."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If a question gives you the sum of the first n terms (Sn) and asks for the nth term (Un), remember the highly useful relationship Un = Sn - S(n-1)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding the common ratio 'r' in a geometric sequence, especially if given non-consecutive terms like U4 and U2, remember that taking a square root gives both positive and negative values for 'r'. Check if the question specifies 'a sequence of positive terms'."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The sum to infinity only exists if the magnitude of the common ratio is less than 1 (|r| < 1). Always verify and explicitly state this condition if asked to justify why an infinite sum can be calculated."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When evaluating sigma notation, pay close attention to the starting index. If it starts at r=0 instead of r=1, there will be n+1 terms in total, not n terms. This is a very frequent source of error."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_7.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For expansions of (a + bx)^n, it is often safer to factor out the 'a' first to get a^n * (1 + (b/a)x)^n. Expanding the (1 + ...)^n part is much less prone to arithmetic and power distribution errors."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_4_8.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If asked to use your binomial expansion to estimate a value (e.g., 1.02^6), ensure you equate your expansion bracket to the base number (a + bx = 1.02) to find the correct value of x to substitute."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When sketching exponential graphs, always include the horizontal asymptote (e.g., y=0) by either drawing a dashed line or stating its equation, and clearly label the y-intercept. Markers actively look for these features."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that y = ln(x) and y = e^x are reflections of each other across the line y = x. When sketching ln(x), always properly label the x-intercept at (1, 0) and the vertical asymptote at x=0."
+    }
+  ]
+}

@@ -36,7 +36,16 @@ export const note_biology_4_5_10 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-37e15b49', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing RuBisCO, always mention its full role: it catalyses the reaction between RuBP and carbon dioxide. Don\'t just say \'it fixes carbon\'.' } }
+{ 'id': 'callout-examiner-37e15b49', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing RuBisCO, always mention its full role: it catalyses the reaction between RuBP and carbon dioxide. Don\'t just say \'it fixes carbon\'.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "RuBisCO vs RuBP",
+        text: "Do not mix up the enzyme and the substrate! RuBisCO is the enzyme that catalyses the reaction; RuBP (Ribulose bisphosphate) is the 5-carbon substrate it acts upon."
+      }
+    }
   ],
   recall: {
     enabled: true,

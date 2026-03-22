@@ -1,0 +1,116 @@
+{
+  "src/data/seedNotes/mathematics/note_3_1_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Domain and range notation is strictly marked. Do not mix up x and y inequalities; always use x (or the appropriate input variable) for the domain and f(x) or y for the range."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_1_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For composite functions like fg(x), always remember that the function closest to the variable is applied first (g first, then f). Keep in mind that the domain of fg(x) is constrained by the domain of the initial function g(x)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_1_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When asked for the domain of an inverse function f⁻¹, never try to evaluate it algebraically. Always find the range of the original function f first, because the domain of f⁻¹ is exactly equal to the range of f."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_1_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In contextual modelling questions, mathematical domains often contradict physical reality. Explicitly state real-world restrictions, such as time t ≥ 0 or distance x > 0, to secure the modelling assumptions mark."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_1_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When sketching y = f(|x|), a very common error is to reflect the entire graph. You must completely delete the portion of the curve on the left of the y-axis, and then reflect the right-hand side across the y-axis."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_1_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If you solve modulus equations by squaring both sides, you often introduce 'phantom' solutions. Always substitute your final x-values back into the original un-squared equation to verify which solutions are actually valid."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_1_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Pay close attention to units and boundary conditions in piecewise models. Ensure that boundaries where two models meet (e.g. at t = 5) give the same output value, unless the scenario explicitly describes an instantaneous jump."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember the 'third letter' trick to avoid early mistakes: coSec = 1/Sin, sEc = 1/Cos, coT = 1/Tan. Writing cosec x as 1/cos x is a frequent penalty error."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Be extremely precise with principal value ranges. For instance, the range of arcsin(x) is restricted to -π/2 ≤ y ≤ π/2. Giving an answer outside this interval shows a fundamental misunderstanding of inverse functions."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Small angle approximations ONLY work when the angle is measured in radians. If an exam question provides an angle in degrees, you are required to convert it to radians before substituting into the approximation formulas."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Watch your signs carefully when applying compound angle identities, especially cos(A+B) = cosA cosB - sinA sinB. The sign flips for cosine, but stays the same for sine—examiners see this mistake constantly."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The cos(2x) identity has three forms. Plan ahead before you calculate: choose the form that effectively eliminates the other trigonometric function in the equation (for example, use 1 - 2sin²x if you need to match a sin x term)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When faced with quadratic trig equations featuring secants or cosecants, immediately use the Pythagorean identities (1 + tan²x = sec²x or 1 + cot²x = cosec²x) to turn the expression into a standard quadratic in a single trig ratio."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In harmonic form questions, calculate R specifically as √(a² + b²) with positive values. More marks are lost on stating the wrong maximum/minimum values: remember the maximum of R cos(x-α) is just R, occurring when cos(x-α) = 1."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_7.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Before solving complex trig equations, adjust the given interval for any argument shifts. If the range is 0 ≤ x ≤ 360 but the angle is 2x+30, adjust your search range to 30 ≤ 2x+30 ≤ 750 immediately so you do not miss solutions."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_8.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In proof questions, never cross the equals sign! Start on one side (usually the messier one) and logically deduce it to the other. Working out both sides simultaneously towards a middle ground is poor practice and often penalized."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_9.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When sketching reciprocal or inverse trig graphs, explicitly draw and write the equations of the asymptotes. A sketch of sec x or arctan x without clearly written dashed asymptotes (e.g. y = π/2) will drop marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_2_10.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When applying 'R sin(x+α) + c' into a physical context like tides or temperature, 'R' represents the physical amplitude (half of the complete range) and 'c' represents the mean average value. Check if your extracted values make physical sense."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_3_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "It is heavily penalized to forget the inner derivative when differentiating composite exponential functions. For example, the derivative of e^f(x) is f'(x)·e^f(x). Don't leave multiplying by the derivative of the power out!"
+    }
+  ]
+}

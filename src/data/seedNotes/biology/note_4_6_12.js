@@ -52,7 +52,16 @@ export const note_biology_4_6_12 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-d5f3b3c1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Completing the Course', 'text': 'In exam answers, explain that completing the antibiotic course ensures that highly resistant bacteria are killed and cannot survive to reproduce.' } }
+{ 'id': 'callout-examiner-d5f3b3c1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Completing the Course', 'text': 'In exam answers, explain that completing the antibiotic course ensures that highly resistant bacteria are killed and cannot survive to reproduce.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "The Bacteria are Resistant",
+        text: "Never write that the 'patient has become resistant' or 'immune' to the antibiotic. It is the *bacteria* that have acquired the resistance allele allowing them to survive the antibiotic."
+      }
+    }
   ],
   recall: {
     enabled: true,

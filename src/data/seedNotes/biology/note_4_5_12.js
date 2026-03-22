@@ -50,7 +50,16 @@ export const note_biology_4_5_12 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-816e5d2a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse \'community\' with \'ecosystem\'. A community consists only of the living (biotic) populations in an area, while an ecosystem includes both the abiotic and biotic components interacting together.' } }
+{ 'id': 'callout-examiner-816e5d2a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse \'community\' with \'ecosystem\'. A community consists only of the living (biotic) populations in an area, while an ecosystem includes both the abiotic and biotic components interacting together.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Direction of Arrows",
+        text: "In a food web or chain, arrows do NOT mean 'is eaten by'. The arrows strictly represent the direction of energy transfer between trophic levels."
+      }
+    }
   ],
   recall: {
     enabled: true,

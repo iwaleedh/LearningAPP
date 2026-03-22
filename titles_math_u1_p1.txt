@@ -1,0 +1,23 @@
+src/data/seedNotes/mathematics/note_1_1_0.js: Understand and apply the laws of indices to simplify and manipulate algebraic expressions, including fractional and negative indices.
+src/data/seedNotes/mathematics/note_1_1_1.js: Understand and manipulate surds, including simplifying, adding, subtracting, multiplying, and dividing exact values.
+src/data/seedNotes/mathematics/note_1_1_10.js: Solve simultaneous equations where one equation is quadratic and one is linear, using the substitution method; interpret solutions geometrically.
+src/data/seedNotes/mathematics/note_1_1_11.js: Solve pairs of linear simultaneous equations using the elimination method; interpret solutions as intersection points of straight lines.
+src/data/seedNotes/mathematics/note_1_1_12.js: Solve pairs of linear simultaneous equations using the substitution method, and know when substitution is preferable to elimination.
+src/data/seedNotes/mathematics/note_1_1_13.js: Solve linear inequalities in one variable; express solutions using inequality notation and on a number line; understand when the inequality sign must be reversed.
+src/data/seedNotes/mathematics/note_1_1_14.js: Solve quadratic inequalities by finding roots and sketching the parabola; express solutions correctly using inequality notation or set notation.
+src/data/seedNotes/mathematics/note_1_1_15.js: Represent and interpret inequalities in two variables (x and y) on a coordinate grid; identify regions satisfying multiple simultaneous inequalities.
+src/data/seedNotes/mathematics/note_1_1_16.js: Sketch the graphs of polynomial functions including cubics and quartics; determine key features (intercepts, turning points, end behaviour); understand how repeated roots affect the curve.
+src/data/seedNotes/mathematics/note_1_1_17.js: Set up and use equations for direct and inverse proportion; extend to problems involving y ∝ xⁿ or y ∝ 1/xⁿ; find the constant of proportionality from given data.
+src/data/seedNotes/mathematics/note_1_1_18.js: Understand and apply translation transformations of graphs: f(x) + a (vertical) and f(x + a) (horizontal); express translations using column vector notation.
+src/data/seedNotes/mathematics/note_1_1_19.js: Apply reflection transformations to graphs: y = −f(x) reflects in the x-axis; y = f(−x) reflects in the y-axis; identify the effect on key points and asymptotes.
+src/data/seedNotes/mathematics/note_1_1_2.js: Rationalise denominators containing surds across three forms: simple surd \u221aa, conjugate form a \u00b1 \u221ab, and double-surd form \u221aa \u00b1 \u221ab.
+src/data/seedNotes/mathematics/note_1_1_20.js: Apply stretch transformations to graphs: y = af(x) (vertical stretch); y = f(ax) (horizontal stretch); identify the scale factor and its reciprocal nature; transform key points and asymptotes.
+src/data/seedNotes/mathematics/note_1_1_21.js: Use graphical methods to find approximate or exact solutions to equations; interpret intersection points of two curves as solutions; relate algebraic and graphical methods.
+src/data/seedNotes/mathematics/note_1_1_22.js: Sketch the graphs of y = k/x and y = k/x²; identify asymptotes; describe behaviour in each quadrant; apply transformations to reciprocal graphs.
+src/data/seedNotes/mathematics/note_1_1_3.js: Expand single, double, squared and triple brackets using the distributive law and FOIL; recognise and apply the key algebraic identities (a+b)\u00b2, (a\u2212b)\u00b2 and (a+b)(a\u2212b).
+src/data/seedNotes/mathematics/note_1_1_4.js: Factorise algebraic expressions using common factors, difference of two squares, quadratic trinomials (a = 1 and a \u2260 1), and the factor theorem for cubics.
+src/data/seedNotes/mathematics/note_1_1_5.js: Solve quadratic equations using factorisation, completing the square, and the quadratic formula; choose the most efficient method for a given problem.
+src/data/seedNotes/mathematics/note_1_1_6.js: Use the discriminant b² − 4ac to determine the number and nature of roots of a quadratic equation, and solve problems involving the discriminant.
+src/data/seedNotes/mathematics/note_1_1_7.js: Complete the square for quadratic expressions with a = 1 and a ≠ 1; use the completed-square form to find the vertex of a parabola, solve quadratic equations, and prove results.
+src/data/seedNotes/mathematics/note_1_1_8.js: Recognise and solve hidden (disguised) quadratic equations by using a substitution to reduce them to standard quadratic form.
+src/data/seedNotes/mathematics/note_1_1_9.js: Sketch quadratic graphs by identifying the shape (positive/negative parabola), y-intercept, roots, and vertex; interpret quadratic graphs in context.

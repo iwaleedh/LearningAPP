@@ -1,0 +1,134 @@
+{
+  "src/data/seedNotes/mathematics/note_2_5_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When sketching exponential graphs like y = e^x, always clearly label the y-intercept (0, 1) and state the equation of the horizontal asymptote (y = 0). Examiners actively look for these two features for full marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that the domain of y = ln x is x > 0. A common mistake is forgetting that you cannot take the logarithm of a negative number or zero, which often leads to invalid solutions when solving logarithmic equations."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A frequent error is writing ln(A + B) as ln A + ln B. Apply the laws of logarithms carefully: ln(AB) = ln A + ln B and ln(A/B) = ln A - ln B. Always simplify terms fully before solving the equation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For equations like e^(2x) - 5e^x + 6 = 0, substitute u = e^x to form a hidden quadratic. Once you find u, remember to substitute back and solve for x using x = ln(u). Reject any solutions where u is less than or equal to zero."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When transforming y = ab^x into a straight line, taking log10 or ln of both sides gives log y = log a + x log b. Ensure you correctly match the gradient to log b and the y-intercept to log a. Do not confuse the forms y = ax^n and y = ab^x."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_5_7.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In marking modeling questions, examiners expect you to give answers in context. For example, if t represents years after 2020 and you calculate t = 4.5, state the actual year. Also, be prepared to explain the limitations of the model for large values of t."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When sketching reciprocal trigonometric functions, draw the original function (e.g., y = cos x for y = sec x) lightly first. The x-intercepts of the original function become the vertical asymptotes of the reciprocal function."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Be well-versed in the principal domains of the inverse trigonometric functions. For instance, arcsin x only gives values between -90 and 90 degrees (or -pi/2 and pi/2 radians). Pay attention to whether the question asks for degrees or radians."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If you forget the identities involving sec^2 x or cosec^2 x, quickly derive them in the margin by dividing the fundamental identity sin^2 x + cos^2 x = 1 by cos^2 x or sin^2 x respectively. This prevents costly sign errors."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using addition formulae to find exact values, such as cos 15 or sin 75 degrees, rewrite the angle using standard angles like 30, 45, or 60 degrees. Make sure to show the expanded formula clearly before substituting exact rational values."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The cos 2A formula has three forms. Always choose the form that simplifies your equation. If the equation has other terms in sin A, use cos 2A = 1 - 2sin^2 A to form a quadratic entirely in sine."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When expressing a sin x + b cos x in the form R sin(x + alpha), remember that R is always positive, R = sqrt(a^2 + b^2). Calculate alpha using tangent, but double-check you are using the correct quadrant for the angle."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always check the requested range before providing final answers. For equations involving multiple angles like sin 2x = 0.5 for 0 < x < 360, adjust your search interval for 2x to 0 < 2x < 720 to ensure you capture all possible solutions."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_6_7.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In proof questions, always start with the more complex side and work towards the simpler side. Clearly state each identity you use in sequential steps. Never manipulate both sides simultaneously, as this can lose you structure marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When applying the chain rule, a common mistake is forgetting to multiply by the derivative of the inner function. For example, the derivative of (3x - 2)^4 is 4(3x - 2)^3 multiplied by 3. Always double-check this step."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "To keep the product rule organized, explicitly write down u, v, du/dx, and dv/dx before assembling the final derivative formula v(du/dx) + u(dv/dx). This structured approach minimizes algebraic slips."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In the quotient rule, the order of terms in the numerator is crucial because of the subtraction: v(du/dx) - u(dv/dx). Getting this backward will result in the wrong sign for the entire derivative."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Be precise with coefficients when differentiating trigonometric functions. The derivative of sin(kx) is k cos(kx), and for cos(kx) it is -k sin(kx). Missing the factor 'k' or the negative sign is a very heavily penalized mistake."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "To find the equation of a normal, recall that the gradient of the normal is the negative reciprocal of the tangent gradient, meaning m_normal = -1 / (dy/dx). Ensure you evaluate dy/dx at the specific given x-coordinate."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When verifying the nature of a stationary point, explicitly substitute the x-value into the second derivative and state whether the result is > 0 (minimum) or < 0 (maximum). Do not just write 'minimum' without showing the evaluation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_7_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In kinematics rates of change problems, pay close attention to units (e.g., cm/s vs m/s). Use the chain rule effectively to link related rates, such as dy/dt = (dy/dx) * (dx/dt), and clearly state your final conclusion in context."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_2_8_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Do not forget the constant of integration, '+ c', for indefinite integrals. A surprisingly large number of candidates drop marks on straightforward integration questions by omitting it."
+    }
+  ]
+}

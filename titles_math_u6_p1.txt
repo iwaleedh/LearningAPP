@@ -1,0 +1,10 @@
+src/data/seedNotes/mathematics/note_6_1_0.js: Understand the different types of data, terminology related to sampling and how to carry out different sampling techniques.
+src/data/seedNotes/mathematics/note_6_1_1.js: Understand how to calculate and interpret basic statistical measures like mean, median, mode and use frequency tables.
+src/data/seedNotes/mathematics/note_6_1_2.js: Interpret and construct histograms, box plots, and cumulative frequency graphs.
+src/data/seedNotes/mathematics/note_6_1_3.js: Identify outliers, clean data, and interpret datasets by identifying skewed distributions.
+src/data/seedNotes/mathematics/note_6_1_4.js: Calculate and understand variance and standard deviation for datasets.
+src/data/seedNotes/mathematics/note_6_1_5.js: Understand the effect of coding on the mean and standard deviation.
+src/data/seedNotes/mathematics/note_6_2_0.js: Construct and interpret frequency distributions, histograms with unequal class widths, and stem-and-leaf diagrams.
+src/data/seedNotes/mathematics/note_6_2_1.js: Calculate the mean, median, and mode for grouped and ungrouped data, and choose the appropriate measure of location.
+src/data/seedNotes/mathematics/note_6_2_2.js: Calculate and interpret variance, standard deviation, and interquartile range; apply coding rules; identify outliers.
+src/data/seedNotes/mathematics/note_6_2_3.js: Understand and apply probability formulae including the addition rule, the multiplication rule, and conditional probability.

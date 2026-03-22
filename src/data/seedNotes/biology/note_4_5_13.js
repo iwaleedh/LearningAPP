@@ -43,7 +43,16 @@ export const note_biology_4_5_13 = {
       type: "paragraph",
       data: { text: "Because energy is lost so rapidly at each stage, most food chains are restricted to 4 or 5 trophic levels, as there is insufficient energy to support a higher trophic level." }
     },
-{ 'id': 'callout-examiner-04c8cde2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Energy is \'transferred\' between trophic levels, not \'used up\'. Ensure you clearly account for energy lost as heat through respiration or via excretion and egestion when explaining why food chains rarely exceed 4-5 trophic levels.' } }
+{ 'id': 'callout-examiner-04c8cde2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Energy is \'transferred\' between trophic levels, not \'used up\'. Ensure you clearly account for energy lost as heat through respiration or via excretion and egestion when explaining why food chains rarely exceed 4-5 trophic levels.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Why energy is lost",
+        text: "Never say energy is 'used for respiration'. Energy is *released* by respiration and lost as heat. Energy is also lost through uneaten parts (bones) and excretion (urine/faeces)."
+      }
+    }
   ],
   recall: {
     enabled: true,

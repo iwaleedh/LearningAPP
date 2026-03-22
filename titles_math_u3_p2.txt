@@ -1,0 +1,19 @@
+src/data/seedNotes/mathematics/note_3_3_1.js: Sketch and use logarithmic graphs, solve exponential equations using logarithms, and linearise exponential data.
+src/data/seedNotes/mathematics/note_3_4_0.js: Recall and apply derivatives of sin x, cos x, tan x, sec x, cosec x, cot x, e\u02e3, and ln x.
+src/data/seedNotes/mathematics/note_3_4_1.js: Derive d/dx(sin x) = cos x from first principles using the definition of the derivative and small angle approximations.
+src/data/seedNotes/mathematics/note_3_4_2.js: Apply the chain rule to differentiate composite functions involving trig, exponential, and logarithmic functions.
+src/data/seedNotes/mathematics/note_3_4_3.js: Apply the product rule to differentiate products of trig, exponential, and polynomial functions.
+src/data/seedNotes/mathematics/note_3_4_4.js: Apply the quotient rule to differentiate functions expressed as one expression divided by another.
+src/data/seedNotes/mathematics/note_3_4_5.js: Differentiate arcsin x, arccos x, and arctan x, and recognise when these arise in integration.
+src/data/seedNotes/mathematics/note_3_4_6.js: Differentiate parametric equations to find dy/dx and d\u00b2y/dx\u00b2, and find the equations of tangents and normals.
+src/data/seedNotes/mathematics/note_3_4_7.js: Use the chain rule to find connected rates of change between related physical quantities.
+src/data/seedNotes/mathematics/note_3_5_0.js: Integrate standard functions including e\u02e3, 1/x, sin x, cos x, and sec\u00b2x.
+src/data/seedNotes/mathematics/note_3_5_1.js: Integrate functions of the form f(ax + b) by applying the reverse chain rule.
+src/data/seedNotes/mathematics/note_3_5_2.js: Recognise and integrate expressions of the form f\u2019(x)/f(x) to give ln|f(x)| + c.
+src/data/seedNotes/mathematics/note_3_5_3.js: Use trigonometric identities to rewrite integrands into integrable forms.
+src/data/seedNotes/mathematics/note_3_5_4.js: Use integration by substitution to evaluate both indefinite and definite integrals.
+src/data/seedNotes/mathematics/note_3_6_0.js: Use the change of sign method to locate and narrow down an interval containing a root of f(x) = 0.
+src/data/seedNotes/mathematics/note_3_6_1.js: Identify and explain situations where the change of sign method fails to locate a root or gives a misleading result.
+src/data/seedNotes/mathematics/note_3_6_2.js: Use fixed-point iteration to find approximate solutions to equations, and determine convergence or divergence of an iterative sequence.
+src/data/seedNotes/mathematics/note_3_6_3.js: Apply the Newton-Raphson method to find approximate roots of equations and explain when the method may fail.
+src/data/seedNotes/mathematics/note_3_6_4.js: Apply numerical methods (change of sign, iteration, Newton-Raphson) in context and critically compare their advantages and limitations.

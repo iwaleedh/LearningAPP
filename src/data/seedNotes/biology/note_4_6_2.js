@@ -34,7 +34,16 @@ export const note_biology_4_6_2 = {
       data: { style: "key", title: "Logarithmic Scales", text: "Because bacterial numbers increase so rapidly in the log phase, population data is almost always plotted on a log base 10 scale (y-axis) against time (x-axis) to fit the data on a single readable graph." }
     },
 { 'id': 'callout-examiner-0da48692', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Logarithmic Scales', 'text': 'When interpreting or drawing bacterial growth curves, make sure you understand that the y-axis is logarithmic (usually $log_{10}$ of the number of cells). This is because bacterial numbers increase exponentially and vary over too large a range for a linear scale.' } },
-{ 'id': 'callout-examiner-283623f6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Stationary Phase Explanation', 'text': 'In the stationary phase, bacterial cells do not stop dividing entirely. Instead, the rate of cell division equals the rate of cell death, usually due to limiting nutrients and the build-up of toxic waste products.' } }
+{ 'id': 'callout-examiner-283623f6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Stationary Phase Explanation', 'text': 'In the stationary phase, bacterial cells do not stop dividing entirely. Instead, the rate of cell division equals the rate of cell death, usually due to limiting nutrients and the build-up of toxic waste products.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Logarithmic Scales",
+        text: "Bacterial growth graphs often use a log\u2081\u2080 scale on the y-axis because the numbers get so large so quickly. Pay close attention to the axes before reading off a value."
+      }
+    }
   ],
   recall: {
     enabled: true,

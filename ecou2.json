@@ -1,0 +1,422 @@
+{
+  "note_economics_2_7_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Always clarify that 'real' means adjusted for inflation. A common error is evaluating a fall in the rate of GDP growth as a recession; remember it is just a slowdown (disinflation of growth) unless the growth rate is actually negative."
+    }
+  ],
+  "note_economics_2_7_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Define GNI clearly as GDP plus net factor incomes from abroad. Examiners often reward candidates who use remittances as a classic example of why GNI might be significantly higher than GDP for some developing nations."
+    }
+  ],
+  "note_economics_2_7_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "If nominal GDP rises but real GDP falls, it means inflation has outstripped the growth in actual output. Always explicitly state that real values are necessary to measure true changes in the volume of production."
+    }
+  ],
+  "note_economics_2_7_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A rising total GDP combined with a falling per capita GDP means the population is growing faster than output, leading to falling average living standards. Always check if population data is provided in the extract."
+    }
+  ],
+  "note_economics_2_7_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Explain PPP clearly: it adjusts for the differing cost of living between countries based on a basket of goods. A classic mistake is confusing market exchange rate conversions with Purchasing Power Parity."
+    }
+  ],
+  "note_economics_2_7_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The precise Edexcel definition of a recession is 'two consecutive quarters of negative economic growth' (falling real GDP). Do not just write 'when the economy is doing badly' or 'when unemployment rises'."
+    }
+  ],
+  "note_economics_2_7_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When evaluating GDP as a measure of living standards, always bring in the hidden/informal economy, income inequality, and negative externalities like pollution. These are guaranteed analytical points."
+    }
+  ],
+  "note_economics_2_7_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Do not just list alternative indicators (like the Easterlin paradox concepts); explain how they capture subjective factors of welfare that pure quantitative GDP data misses, such as health, stress, and work-life balance."
+    }
+  ],
+  "note_economics_2_7_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Understand how the CPI is calculated using weights based on the Family Expenditure Survey. Examiners often ask you to calculate the effect of a price change in a heavily weighted category versus lightly weighted ones."
+    }
+  ],
+  "note_economics_2_7_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Never confuse deflation with disinflation! Deflation is a fall in the general price level (inflation rate is negative). Disinflation is a fall in the rate of inflation (prices are still rising, just more slowly)."
+    }
+  ],
+  "note_economics_2_7_10.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Always categorize the causes into demand-pull (outward shift of AD) and cost-push (inward shift of SRAS) inflation. Ensure your diagrams correctly match the cause you are explaining."
+    }
+  ],
+  "note_economics_2_7_11.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Know the difference between the Claimant Count and the ILO (Labour Force Survey) measure of unemployment. Be prepared to explain why the ILO figure is typically higher and internationally comparable."
+    }
+  ],
+  "note_economics_2_7_12.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When identifying types of unemployment from a data extract, look for clues: 'lost coal mining jobs' implies structural; 'recession' implies cyclical (demand-deficient); 'between jobs' is frictional."
+    }
+  ],
+  "note_economics_2_7_13.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Evaluate the effects of unemployment on different economic agents: workers (lost skills/hysteresis), government (higher welfare spending, lower tax revenue), and firms (easier to recruit, downward pressure on wages)."
+    }
+  ],
+  "note_economics_2_7_14.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The Current Account primarily consists of trade in goods, trade in services, primary income (investment income), and secondary income (transfers). Do not confuse it with the capital or financial accounts."
+    }
+  ],
+  "note_economics_2_8_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Always state the AD formula (AD = C + I + G + (X-M)) when defining it. This immediately opens up analytical paths for identifying which component is changing in a given scenario."
+    }
+  ],
+  "note_economics_2_8_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When explaining why the AD curve slopes downwards, reference the wealth effect, the trade effect, or the interest rate effect. Do not explain it using microeconomic individual demand theory."
+    }
+  ],
+  "note_economics_2_8_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Consumption makes up the largest component of AD (roughly 60-65% in the UK). Any significant change to consumer confidence, interest rates, or wealth will have the most profound impact on total AD."
+    }
+  ],
+  "note_economics_2_8_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "An increase in the savings ratio means consumers are saving a higher proportion of their disposable income, reducing Consumption and thus AD. It acts as a withdrawal from the circular flow."
+    }
+  ],
+  "note_economics_2_8_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Gross investment includes all capital spending, but net investment subtracts depreciation. Only positive net investment increases the productive capacity of the economy (shifting LRAS right)."
+    }
+  ],
+  "note_economics_2_8_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Interest rates affect investment because they represent the cost of borrowing and the opportunity cost of using retained profits. Also mention 'animal spirits' (business confidence) as a key determinant."
+    }
+  ],
+  "note_economics_2_8_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Government policies to boost investment can include corporation tax cuts or investment subsidies. Remember to evaluate the time lag—it takes time for these policies to translate into physical capital."
+    }
+  ],
+  "note_economics_2_8_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Distinguish between government capital spending (e.g. infrastructure) and current spending (e.g. public sector wages). Capital spending impacts both AD and LRAS, making it a powerful evaluative point."
+    }
+  ],
+  "note_economics_2_8_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Net exports depends heavily on exchange rates, relative inflation rates, and the quality of domestic goods. A depreciation of the exchange rate makes X cheaper and M more expensive, boosting net exports (assuming Marshall-Lerner holds)."
+    }
+  ],
+  "note_economics_2_9_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Aggregate supply represents the total output of goods and services produced in an economy at a given price level. Make sure you clearly distinguish between SRAS and LRAS in your analysis."
+    }
+  ],
+  "note_economics_2_9_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A change in the general price level causes a movement along the AS curve. A change in the costs of production (SRAS) or productive capacity (LRAS) causes a shift of the curve."
+    }
+  ],
+  "note_economics_2_9_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "SRAS is determined strictly by the costs of production: wages, raw material prices, exchange rates (affecting imported materials), and business taxes. If answering on SRAS, frame arguments around 'business costs'."
+    }
+  ],
+  "note_economics_2_9_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Ensure you draw the correct LRAS curve. Classical is perfectly inelastic at full employment, assuming wages and prices are fully flexible. Keynesian has a horizontal section indicating mass unemployment and sticky downward wages."
+    }
+  ],
+  "note_economics_2_9_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "LRAS shifts when there is a change in the quality or quantity of factors of production, or technological advancement. Remember that an outward shift in LRAS is non-inflationary growth."
+    }
+  ],
+  "note_economics_2_10_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The circular flow models how money flows between households and firms. If asked to define it, explicitly mention factor incomes going to households and consumption expenditure flowing back to firms."
+    }
+  ],
+  "note_economics_2_10_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Income is a 'flow' of money over time (e.g. wages, dividends), whereas wealth is a 'stock' of assets measured at a specific point in time (e.g. property, savings). Do not use these terms interchangeably."
+    }
+  ],
+  "note_economics_2_10_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Injections are Investment, Government spending, and Exports (I+G+X). Withdrawals are Savings, Taxes, and Imports (S+T+M). For the economy to grow, Injections must be greater than Withdrawals."
+    }
+  ],
+  "note_economics_2_10_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Equilibrium real output occurs where AD intersects AS. Ensure you state that this short-run equilibrium does not necessarily equal full employment, especially on a Keynesian LRAS diagram."
+    }
+  ],
+  "note_economics_2_10_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When defining the multiplier, specify that it is the ratio of the final change in real National Income (GDP) compared to the initial change in aggregate demand/injections."
+    }
+  ],
+  "note_economics_2_10_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The MPW is the sum of the MPS, MPT, and MPM. A high propensity to save, tax, or import will increase the withdrawal rate and lead to a smaller multiplier effect."
+    }
+  ],
+  "note_economics_2_10_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Memorise the formulae: Multiplier = 1/(1-MPC) or 1/MPW. In exam questions, if given marginal propensities, write out the formula clearly before plugging in the values."
+    }
+  ],
+  "note_economics_2_10_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Explain the process step-by-step: An initial injection (e.g. government builds a road) creates income for construction workers, who then spend a proportion (MPC) of it, generating further rounds of income."
+    }
+  ],
+  "note_economics_2_11_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Actual growth is the percentage increase in real GDP. Potential growth is the outward shift of the LRAS curve. Actual growth can exceed potential growth in the short run via an inflationary boom."
+    }
+  ],
+  "note_economics_2_11_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "AD-driven growth is effectively demand-pull growth. Evaluating it requires noting that unless accompanied by an outward shift in LRAS, it will eventually cause demand-pull inflation."
+    }
+  ],
+  "note_economics_2_11_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Export-led growth is highly desired because it shifts AD rightwards while keeping the current account balanced or in surplus. Evaluate this by noting vulnerability to external economic shocks or foreign recessions."
+    }
+  ],
+  "note_economics_2_11_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "FDI provides a dual benefit: it acts as an immediate injection into AD, but simultaneously expands LRAS via new capital, technology transfer, and management skills. It is incredibly potent for developing economies."
+    }
+  ],
+  "note_economics_2_11_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Productivity is output per worker per period of time. Increasing productivity reduces unit costs (shifting SRAS out) and increases productive capacity (shifting LRAS out), making it the holy grail of economic growth."
+    }
+  ],
+  "note_economics_2_11_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A growing labour force (via net inward migration or higher participation rates) expands the LRAS curve. Evaluate this by addressing potential infrastructure strain and short-term friction in public services."
+    }
+  ],
+  "note_economics_2_11_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When praising economic growth, cite a 'fiscal dividend': higher incomes mean higher tax revenues and lower welfare spending, improving the government's budget balance without raising tax rates."
+    }
+  ],
+  "note_economics_2_11_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Always counter the benefits of growth with its associated costs: demand-pull inflation, a widening current account deficit (as consumers import more), environmental degradation, and widening inequalities."
+    }
+  ],
+  "note_economics_2_11_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A positive output gap happens when current output is temporarily greater than potential output (Y > Yfe), causing severe inflationary pressure. A negative output gap means spare capacity and demand-deficient unemployment."
+    }
+  ],
+  "note_economics_2_11_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A great evaluative point is the difficulty in estimating output gaps because the productive capacity (LRAS position) is theoretical and cannot be precisely observed. Data is often subject to future revisions."
+    }
+  ],
+  "note_economics_2_12_0.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "In any macro essay, always frame your conclusion around the overall impact on the main objectives: Economic growth, low unemployment, low and stable inflation, and a stable current account. Acronym: TIGERS (Trade, Inflation, Growth, Employment, Redistribution, Sustainability)."
+    }
+  ],
+  "note_economics_2_12_1.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A current account deficit is not necessarily terrible if it is short-term and caused by importing capital goods for investment. It only becomes a major structural problem if it indicates deep-rooted uncompetitiveness."
+    }
+  ],
+  "note_economics_2_12_2.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Redistribution of income (fairer equality) can conflict with efficiency. High marginal tax rates intended to reduce inequality might disincentivize work and enterprise, harming economic growth."
+    }
+  ],
+  "note_economics_2_12_3.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Mastering policy conflicts is the key to top-band evaluation. For example, Expansionary fiscal policy achieves economic growth and lower unemployment but risks demand-pull inflation and a worsening trade deficit."
+    }
+  ],
+  "note_economics_2_12_4.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The short-run Phillips curve shows the trade-off between inflation and unemployment. A movement along the SRPC demonstrates this exact conflict when adjusting demand-side policies."
+    }
+  ],
+  "note_economics_2_12_5.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "When assessing macro policies, contrast demand-side short-term fixes with supply-side long-term solutions. Supply-side policies are unique because they can achieve growth without inflation."
+    }
+  ],
+  "note_economics_2_12_6.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Free-market SSPs focus on deregulation, privatization, and cutting taxes to boost competition and incentives. A strong critique is that they can exacerbate income inequality and weaken workers' rights."
+    }
+  ],
+  "note_economics_2_12_7.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Interventionist SSPs rely on government involvement, such as spending on education, infrastructure, and R&D. The primary weakness is their massive cost to the taxpayer and long time lags."
+    }
+  ],
+  "note_economics_2_12_8.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Demand-side policies shift the AD curve. Mention that expansionary demand-side policies are virtually useless if the economy is already at near full capacity on the classical LRAS curve, resulting only in inflation."
+    }
+  ],
+  "note_economics_2_12_9.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Fiscal policy involves taxation and government spending. Do not confuse the government budget deficit (annual shortfall) with the national debt (the total accumulated borrowing over time)."
+    }
+  ],
+  "note_economics_2_12_10.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "Monetary policy includes changing the base interest rate and Quantitative Easing (asset purchases). Note that central banks control monetary policy independently of the government in many countries (like the UK)."
+    }
+  ],
+  "note_economics_2_12_11.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "The primary role of the Central Bank in the UK context is managing inflation (the 2% CPI target) using interest rates. They also act as the 'lender of last resort' to commercial banks to maintain financial stability."
+    }
+  ],
+  "note_economics_2_12_12.js": [
+    {
+      "title": "Examiner Tip",
+      "style": "warning",
+      "text": "A standard evaluation of fiscal policy discusses 'crowding out': huge government borrowing can raise interest rates and squeeze out private sector investment, neutralizing the initial Keynesian boost."
+    }
+  ]
+}

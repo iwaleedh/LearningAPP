@@ -40,7 +40,16 @@ export const note_biology_4_5_0 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-be14748d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Ensure you state that light energy is converted into chemical energy during photosynthesis. Never write that plants \'make\', \'produce\' or \'create\' energy; energy is only transferred.' } }
+{ 'id': 'callout-examiner-be14748d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Ensure you state that light energy is converted into chemical energy during photosynthesis. Never write that plants \'make\', \'produce\' or \'create\' energy; energy is only transferred.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Avoid 'producing' energy",
+        text: "Students often incorrectly write that photosynthesis 'produces' or 'creates' energy. Remember that energy cannot be created; always state that light energy is *converted* or *transferred* into chemical energy."
+      }
+    }
   ],
   recall: {
     enabled: true,

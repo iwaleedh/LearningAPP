@@ -44,7 +44,16 @@ export const note_biology_4_5_20 = {
       type: "callout",
       data: { style: "key", title: "Statistical Analysis", text: "Spearman's Rank Correlation Coefficient can be used to statistically check if there is a significant correlation between a species' abundance (from the belt transect) and an abiotic factor (like distance or light)." }
     },
-{ 'id': 'callout-examiner-7c6f0715', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Sampling Techniques', 'text': 'Examiners often ask for justifications of sampling methods. Use random sampling (with random coordinates) for uniform areas to eliminate bias, and systematic sampling (using transects) across an environmental gradient.' } }
+{ 'id': 'callout-examiner-7c6f0715', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Sampling Techniques', 'text': 'Examiners often ask for justifications of sampling methods. Use random sampling (with random coordinates) for uniform areas to eliminate bias, and systematic sampling (using transects) across an environmental gradient.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Random vs Systematic Sampling",
+        text: "Use a random number generator for quadrats in a uniform area to avoid bias. Only use a transect (systematic sampling) if there is an environmental gradient like a shoreline or forest edge."
+      }
+    }
   ],
   recall: {
     enabled: true,

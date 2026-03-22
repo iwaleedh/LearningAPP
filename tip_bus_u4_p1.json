@@ -1,0 +1,382 @@
+{
+  "src/data/seedNotes/business/note_4_17_0.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Always link economy classification to specific business implications. An emerging economy offers growth opportunities but carries regulatory and credit risks—frame your answer around what this means for the business, not just the general economy facts."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Do not assume 'developing' and 'emerging' are the same. Emerging economies are faster-growing subset of developing economies. Confusing these categories loses marks in classification questions."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_1.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "GDP per capita is GDP ÷ population—it gives average wealth per person, not total economic output. HDI adds health and education dimensions. Use these distinctions to explain why a country with high GDP but low HDI faces development challenges."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates often assume higher GDP per capita = higher living standards. Ignore inequality, healthcare access, and education quality in your analysis. HDI explicitly checks your understanding of these non-monetary factors."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_2.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Globalisation shifts trade patterns—developed economies export high-value services and technology; developing economies become manufacturing hubs. But employment impact is mixed: job creation in some sectors, job losses in others. Show balance in your evaluation."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Never assume globalisation is uniformly good or bad. A one-sided view (e.g., 'globalisation always creates jobs') misses the complexity and scores poorly. Discuss winners and losers clearly."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_3.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Exchange rate appreciation HURTS competitiveness (exports more expensive, imports cheaper). A weak currency boosts export sales—this is why countries sometimes try to weaken their currency. Always trace the mechanism: FX change → export price → demand."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Strong currency ≠ strong economy or competitiveness. A strengthening pound makes UK exports more expensive and damages competitiveness internationally. Avoid confusing currency strength with business advantage."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_4.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Know the three FDI types: (1) horizontal = replicating operations abroad, (2) vertical = supply chain, (3) conglomerate = diversification. Each has different strategic purpose and host country impact. Distinguish them in your analysis."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Do not list only benefits of FDI to the host country (jobs, capital, tech transfer). Examiners expect evaluation of costs: profit repatriation, environmental damage, labour exploitation, political influence. Show both sides for higher marks."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_5.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "The four main drivers are: (1) technology (internet, transport), (2) finance (deregulation, capital flows), (3) trade liberalization (WTO, tariff cuts), (4) MNC growth. Rank their relative importance with evidence—e.g., technology enabled just-in-time supply chains."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Overlooking geopolitical and security drivers. Trade wars, sanctions, and deglobalization trends show that drivers can reverse. Mention Brexit, US–China tensions, or reshoring as evidence that globalisation is not one-directional."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_6.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Key arguments for protection: infant industry protection, employment preservation, national security, dumping prevention. Be ready to explain which argument applies to which industry—e.g., agriculture vs manufacturing vs defence sectors."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Forgetting that protectionism invites retaliation. If one country raises tariffs, trading partners often respond in kind—leading to trade wars that harm all economies. Never evaluate protectionist policies in isolation without considering retaliation risks."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_7.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Each tool has different pros/cons: tariffs raise revenue for government; quotas limit quantity directly; subsidies support domestic producers but distort pricing; embargoes use political leverage; NTBs (standards, health rules) are hard to challenge. Match the tool to the objective in case studies."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating all protectionist tools equally in effectiveness. Non-tariff barriers (safety standards, certification rules) can be as effective—or sometimes more effective—than tariffs but harder to spot and challenge under WTO rules. Don't forget about them in your evaluation."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_8.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-8",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Distinguish between trade creation (lower-cost producers within bloc displace higher-cost external producers) and trade diversion (members trade with each other even if external suppliers are cheaper). EU gained trade creation; ASEAN and NAFTA have both effects—evaluate both in your answer."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-8",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Only listing benefits of trading blocs (lower tariffs, economies of scale). Ignore structural drawbacks: sovereignty loss, limited bargaining power against non-members, unequal development between members (e.g., poorer EU countries). Balance is essential."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_17_9.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-9",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Frame the answer around differential impact: MNCs have capital, brand recognition, and economies of scale to exploit global opportunities. SMEs face higher entry barriers (cost, expertise), supply chain complexity, and currency risk. Show how globalisation creates winners and losers based on company size."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-9",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming all UK businesses benefit equally from globalisation. High street retailers and manufacturers in protected sectors face serious threats from low-cost imports. Tailor opportunities and threats to the specific business context in any case study."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_0.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-10",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Push factors: domestic market saturation, excess capacity, competitive pressure at home. Pull factors: market growth, lower costs, resource access abroad. Show how both forces work together—a business is 'pushed' out of home market AND 'pulled' toward high-growth markets like India or Vietnam."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-10",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing large market size with market attractiveness. A country with 1.4 billion people (India) sounds attractive, but if income per capita is low and competition is intense, profitability may be poor. Always assess profit potential, not just market size."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_1.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-11",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Offshoring = shift production to a company-owned facility abroad (full control, repatriate profits). Outsourcing = contract work to external supplier (cost savings, less control). A business can outsource domestically OR offshore domestically-operated facilities. The distinction hinges on ownership and location."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-11",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating offshoring and outsourcing as synonymous—they are fundamentally different. Confusing terms costs marks in evaluation questions. Remember: you can offshore AND outsource, or choose one or the other. Each strategy has different cost/control trade-offs."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_2.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-12",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "International expansion works best when the product is in decline or maturity at home. A 'cash cow' product (high market share, low growth in UK) can be extended in emerging markets where it's new. This strategy extends the product lifecycle and generates revenue from aging products."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-12",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming products can be sold unchanged in foreign markets. Consumer preferences, income levels, and regulations differ. A product successful in the UK may need adaptation (price, packaging, features) for international markets, adding cost and delaying returns."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_3.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-13",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use a framework: GDP growth rate (future demand), GDP per capita (consumer purchasing power), population size, infrastructure quality, and legal/regulatory environment. Examiners expect you to combine multiple factors, not cherry-pick one. A growing market with poor infrastructure is high-risk."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-13",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Overlooking political and regulatory risk. A fast-growing country with weak rule of law, corruption, or unstable government is dangerous—profit may be trapped, seized, or devalued by currency crisis. Always include political stability in your assessment of market potential."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_4.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-14",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "The Five Forces strengths differ across countries. A market with weak competitive rivalry (few competitors) looks attractive, but supplier power may be higher in developing nations where supplier concentration is extreme. Apply each force separately to the new market; do not assume home-market results transfer."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-14",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Using Five Forces analysis identically for home and international markets. Supplier power, buyer power, and threat of new entrants may be completely different abroad due to local regulations, market structure, and business practices. Customize your analysis to the specific country."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_5.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-15",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Location decisions balance multiple factors: labour costs (wage, skills), infrastructure (transport, utilities, telecoms), proximity to markets, supply chain access, and government incentives. No single factor dominates—India offers cheap labour but weak infrastructure; Singapore has expensive labour but excellent infrastructure. Trade-off analysis is key."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-15",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming cheap labour alone guarantees profitability. Low wages mean nothing if workers lack skills, infrastructure is poor, or supply chains are unreliable. Bangladesh has low labour costs but quality and delivery issues; Japan has high wages but premium productivity. Always contextualize costs within total business ecosystem."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_6.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-16",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Mergers provide instant scale and market entry (faster); joint ventures split risk and capital costs but limit control and profit share. Frame your evaluation around risk tolerance and capital availability: risk-averse firms prefer JVs; cash-rich aggressive firms prefer acquisitions. Context determines the optimal strategy."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-16",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming mergers are always faster or better than organic growth or JVs. Mergers are expensive, risky (integration failures, culture clashes), and require regulatory approval. JVs and greenfield investment may be lower-risk, though slower. Evaluate each method's fit to the firm's capabilities and resources."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_7.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-17",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Exchange rate volatility creates two risks: (1) translation risk (profits from overseas operations look weaker if currency drops when converted to home currency), (2) transaction risk (payment received in foreign currency worth less when converted). Hedging tools (forward contracts, currency swaps) reduce but cannot eliminate these risks."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-17",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Ignoring exchange rate fluctuations in profit forecasts for international expansion. A business that assumes USD remains constant will be blindsided if the pound weakens 20% against the dollar, cutting profits dramatically. Always stress-test profit forecasts for currency movements."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_4_18_8.js": [
+    {
+      "id": "callout-bus-u4-p1-tip-18",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Global skill shortages (engineers, tech workers) force firms to relocate operations toward talent hubs (US tech hubs, Germany for engineering), pay wage premiums, or invest in training. This directly impacts location decisions and labour cost assumptions. Mention this when evaluating where to expand production."
+      }
+    },
+    {
+      "id": "callout-bus-u4-p1-warn-18",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming automation or AI solves all labour shortages. Skills shortages persist because some jobs require uniquely human judgment, creativity, or customer interaction. Over-relying on tech to replace scarce talent ignores that cutting-edge automation needs skilled workers to design and maintain it. Balance tech and human capital in your analysis."
+      }
+    }
+  ]
+}

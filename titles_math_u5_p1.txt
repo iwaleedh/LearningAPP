@@ -1,0 +1,11 @@
+src/data/seedNotes/mathematics/note_5_1_0.js: Understand what modelling is in mechanics and know common modelling assumptions
+src/data/seedNotes/mathematics/note_5_1_1.js: Understand the difference between fundamental (S.I.) units and derived units, and know how to convert between them.
+src/data/seedNotes/mathematics/note_5_1_2.js: Understand what a force is and familiarise yourself with the common types of force used in mechanics models.
+src/data/seedNotes/mathematics/note_5_2_0.js: Understand the difference between scalars and vectors, and work with vectors to find magnitude and direction.
+src/data/seedNotes/mathematics/note_5_2_1.js: Understand horizontal and vertical components of initial velocity and acceleration for a projectile.
+src/data/seedNotes/mathematics/note_5_2_2.js: Understand how to use the 2D suvat equations with vectors for constant acceleration.
+src/data/seedNotes/mathematics/note_5_2_3.js: Understand forces in 2D with vector notation, calculate magnitude and direction, and apply F = ma using vectors.
+src/data/seedNotes/mathematics/note_5_3_0.js: Apply the five constant-acceleration equations (suvat) to motion in a straight line, including vertical motion under gravity.
+src/data/seedNotes/mathematics/note_5_3_1.js: Interpret and sketch displacement-time, velocity-time, and acceleration-time graphs, using areas and gradients to extract kinematic information.
+src/data/seedNotes/mathematics/note_5_3_2.js: Understand and apply the concept of acceleration due to gravity in vertical motion problems.
+src/data/seedNotes/mathematics/note_5_3_3.js: Learn how to use calculus to solve kinematics problems in 1D when acceleration is not constant.

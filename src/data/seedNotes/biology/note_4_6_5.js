@@ -52,7 +52,16 @@ export const note_biology_4_6_5 = {
       }
     },
 { 'id': 'callout-examiner-26168ba1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'TB Resistance vs Immunity', 'text': 'When describing TB, many students incorrectly mention \'immunity\' to antibiotics. Bacteria develop **resistance** to antibiotics, not immunity. Immunity is a characteristic of the host\'s immune system, not the pathogen.' } },
-{ 'id': 'callout-examiner-843876bb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Tubercle Formation', 'text': 'Make sure you can describe the sequence of events. *Mycobacterium tuberculosis* is engulfed by macrophages but can survive and replicate inside them. This leads to the formation of tubercles (tissue masses containing dead tissue and macrophages).' } }
+{ 'id': 'callout-examiner-843876bb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Tubercle Formation', 'text': 'Make sure you can describe the sequence of events. *Mycobacterium tuberculosis* is engulfed by macrophages but can survive and replicate inside them. This leads to the formation of tubercles (tissue masses containing dead tissue and macrophages).' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "HIV targets specific cells",
+        text: "State clearly that HIV targets T-helper cells (because they possess the CD4 receptor). The destruction of T-helper cells restricts both the humoral (B-cell) and cell-mediated (T-killer) immune responses."
+      }
+    }
   ],
   recall: {
     enabled: true,

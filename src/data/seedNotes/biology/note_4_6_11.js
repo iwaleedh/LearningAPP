@@ -46,7 +46,16 @@ export const note_biology_4_6_11 = {
       }
     },
 { 'id': 'callout-examiner-7574c07f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Viral Infections', 'text': 'Never state that antibiotics can be used to treat viruses. Viruses lack the cellular machinery (like cell walls and bacterial ribosomes) that antibiotics target.' } },
-{ 'id': 'callout-examiner-de7e1d91', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Evolution of Resistance', 'text': 'When explaining resistance, emphasize that the antibiotic acts as a \'selection pressure\'. It does not \'cause\' the mutation; the random mutation is already present in the population.' } }
+{ 'id': 'callout-examiner-de7e1d91', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Evolution of Resistance', 'text': 'When explaining resistance, emphasize that the antibiotic acts as a \'selection pressure\'. It does not \'cause\' the mutation; the random mutation is already present in the population.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Bacteriostatic vs Bacteriocidal",
+        text: "Bacteriostatic antibiotics do not kill bacteria; they inhibit their growth/reproduction. Always add that this gives the host's own immune system time to destroy the bacteria."
+      }
+    }
   ],
   recall: {
     enabled: true,

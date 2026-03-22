@@ -1,0 +1,116 @@
+{
+  "src/data/seedNotes/mathematics/note_3_3_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When linearising data of the form y = ax^n or y = ab^x, clearly state what your Y and X axes represent before plotting or finding the gradient. A common mistake is muddling log(y) against x with log(y) against log(x)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Do not confuse the derivatives of trigonometric functions. A quick way to remember: the derivatives of 'co' functions (cos, cosec, cot) always have a negative sign."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For first principles proofs in trigonometry, you must explicitly state that h approaches 0 (h -> 0) and explicitly mention the small angle approximations sin(h) ≈ h and cos(h) ≈ 1 - h^2/2 to secure all justification marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using the chain rule on expressions like y = sin^3(x), rewrite it as y = (sin x)^3 first. This makes it much clearer that the outer function is the power of 3 and the inner function is sin x, avoiding common derivative errors."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When applying the product rule, factorise your final answer if asked to find stationary points where dy/dx = 0. E.g., for y = x^2e^x, factorising out xe^x makes solving x(x+2)e^x = 0 much simpler."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A common mistake in the quotient rule is getting the numerator terms the wrong way around or messing up the minus sign. Always write out u, v, u' and v' clearly before substituting into (vu' - uv') / v^2."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "You are given the derivatives of inverse trig functions in the formula booklet, but you must know how to apply the chain rule with them. E.g., if y = arcsin(2x), remember to multiply by the derivative of 2x."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "To find the second derivative d^2y/dx^2 for parametric equations, you must differentiate dy/dx with respect to t, and then multiply by dt/dx (or divide by dx/dt). Do not simply find d^2y/dt^2 / d^2x/dt^2!"
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_4_7.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always write down the chain rule explicitly before calculating connected rates of change, e.g., dV/dt = dV/dr * dr/dt. It helps clear your thoughts and guarantees method marks even if a minor arithmetic error is made later."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_5_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Don't forget the constant of integration (+ c) for indefinite integrals! Also remember that integrating 1/x gives ln|x|, the absolute value signs are essential unless you are given a domain where x is strictly positive."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_5_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When integrating f(ax + b), you must divide by the derivative of the inner function 'a'. Always quickly differentiate your answer mentally to check you don't have a stray factor of 'a' floating around."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_5_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When integrating a fraction, always check if the numerator is a multiple of the derivative of the denominator. If it is, the integral will involve a logarithm. Adjust any constant factors carefully."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_5_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When integrating sin^2(x) or cos^2(x), you must use the double angle formulae for cos(2x). Do not attempt to reverse the chain rule as there is no single sin(x) or cos(x) term to serve as the derivative of the inner function."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_5_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When calculating a definite integral using substitution, always remember to change the limits of integration from x-values to u-values. This avoids having to substitute the x-expression back in at the end."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_6_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For the change of sign method, you must explicitly state that the function is continuous. Merely showing f(a) < 0 and f(b) > 0 is not enough for full marks; write 'f(x) is continuous over the interval [a,b]'."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_6_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When asked why the change of sign method might fail, look for asymptotes (like tan x at x = pi/2) where the sign changes but there's no root, or roots where the curve touches but does not cross the x-axis (like y = x^2)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_6_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When writing down iterative values, show them to the required accuracy but keep the full unrounded values stored in your calculator's 'ANS' key to carry forward to the next iteration."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_6_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If asked why Newton-Raphson might fail, state clearly that if the starting value x_0 gives a stationary point (so f'(x_0) = 0), the tangent is horizontal and will never intersect the x-axis to give the next approximation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_3_6_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When comparing numerical methods, be precise: Newton-Raphson converges very quickly but requires you to be able to differentiate the function, whereas interval bisection is slower but guaranteed to work for any continuous function with a sign change."
+    }
+  ]
+}

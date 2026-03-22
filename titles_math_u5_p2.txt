@@ -1,0 +1,12 @@
+src/data/seedNotes/mathematics/note_5_3_4.js: Apply calculus to kinematics problems involving 2D vectors.
+src/data/seedNotes/mathematics/note_5_3_5.js: Derive key projectile formulae for time of flight, horizontal range, and maximum height using suvat and vector components.
+src/data/seedNotes/mathematics/note_5_3_6.js: Understand and derive the Cartesian equation of a projectile\
+src/data/seedNotes/mathematics/note_5_4_0.js: Understand how to draw force diagrams and apply Newton\
+src/data/seedNotes/mathematics/note_5_4_1.js: Resolve forces on horizontal and inclined planes and apply $F = ma$ to more complex scenarios involving friction.
+src/data/seedNotes/mathematics/note_5_4_2.js: Model and solve problems involving connected particles (cars and trailers, pulleys, and lifts) using Newton\
+src/data/seedNotes/mathematics/note_5_5_0.js: Solve problems involving coplanar forces in equilibrium (in one and two dimensions).
+src/data/seedNotes/mathematics/note_5_5_1.js: Understand friction as a variable force, calculate the normal reaction, and use $F = \\mu R$ to solve limiting equilibrium problems.
+src/data/seedNotes/mathematics/note_5_6_0.js: Understand the concept of a moment, calculate the resultant moment, and apply moments to solve problems involving bodies in equilibrium.
+src/data/seedNotes/mathematics/note_5_6_1.js: Determine the centre of mass for uniform and non-uniform rods and use it to solve equilibrium problems.
+src/data/seedNotes/mathematics/note_5_6_2.js: Model and solve problems involving ladders leaning against walls and rods connected by hinges in equilibrium.
+src/data/seedNotes/mathematics/note_5_6_3.js: Model and calculate limits in scenarios where a rod is on the point of tilting.

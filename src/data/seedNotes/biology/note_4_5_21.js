@@ -40,7 +40,16 @@ export const note_biology_4_5_21 = {
       type: "paragraph",
       data: { text: "For most enzyme-controlled reactions (before the optimum temperature is reached), the Q10 value is roughly 2. This means the rate of reaction doubles for every 10 °C rise in temperature." }
     },
-{ 'id': 'callout-examiner-8f28bab7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Enzyme Denaturation', 'text': 'Never say enzymes \'die\'. Always state that they denature, meaning the bonds maintaining their tertiary structure break, and the shape of the active site changes so it is no longer complementary to the substrate.' } }
+{ 'id': 'callout-examiner-8f28bab7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Enzyme Denaturation', 'text': 'Never say enzymes \'die\'. Always state that they denature, meaning the bonds maintaining their tertiary structure break, and the shape of the active site changes so it is no longer complementary to the substrate.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Denaturation is not 'killing'",
+        text: "Never say high temperatures 'kill' the enzyme. State that extreme kinetic energy breaks the hydrogen and ionic bonds, altering the tertiary structure so the active site is no longer complementary."
+      }
+    }
   ],
   recall: {
     enabled: true,

@@ -1,0 +1,164 @@
+{
+  "note_economics_3_13_0.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "A common mistake is confusing public sector organisations (owned and run by the state) with public limited companies (PLCs), which are firmly in the private sector. Always be precise when defining ownership." }
+  ],
+  "note_economics_3_13_1.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When evaluating co-operatives, contrast their objectives (such as worker or consumer welfare) with the traditional profit-maximising goals of a PLC. Highlighting these different incentives earns strong analysis marks." }
+  ],
+  "note_economics_3_13_2.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Do not just list the benefits of large corporations. You must also evaluate why SMEs survive and thrive, such as offering highly specialised products, providing bespoke customer service, or operating in niche markets." }
+  ],
+  "note_economics_3_13_3.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Make sure you can clearly define organic (internal) growth. A classic evaluation point is that while organic growth is lower risk and avoids culture clashes, it might be too slow in a rapidly evolving market." }
+  ],
+  "note_economics_3_13_4.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Be precise when classifying integration. Dinguish clearly between backward vertical integration (taking over a supplier) and forward vertical integration (taking over a retailer/distributor) using real-world examples." }
+  ],
+  "note_economics_3_13_5.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "A common evaluation error is assuming all mergers result in economies of scale. High-level answers acknowledge the risk of diseconomies of scale and the costs associated with integrating different corporate cultures." }
+  ],
+  "note_economics_3_13_6.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When discussing constraints on business growth, remember to consider both external factors (like market size and lack of access to finance) and internal factors (such as owner objectives aiming for a satisficing lifestyle)." }
+  ],
+  "note_economics_3_13_7.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Demergers are frequently examined regarding their motives. Focus on the core objective of eliminating diseconomies of scale and allowing management to focus purely on the core business activities." }
+  ],
+  "note_economics_3_13_8.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "If asked about business objectives, do not just assume profit maximisation (MC=MR). Be prepared to accurately draw the Revenue Maximisation (MR=0) and Sales Volume Maximisation (AC=AR) conditions on a firm revenue/cost diagram." }
+  ],
+  "note_economics_3_13_9.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Satisficing is best defined as making just enough profit to keep shareholders happy while allowing management to pursue other objectives. Ensure you use the term 'asymmetric information' when explaining why managers can get away with it." }
+  ],
+  "note_economics_3_13_10.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "The divorce of ownership and control is key here. Be explicit that shareholders (principals) want maximum returns, while managers (agents) may seek higher salaries or leisure, requiring incentives like share options to align their goals." }
+  ],
+  "note_economics_3_14_0.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Always clearly define the difference between Total, Average, and Marginal Revenue. A frequent error in MCQs and calculations is confusing the formulas for MR and AR." }
+  ],
+  "note_economics_3_14_1.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "You must know the link between PED and MR. When MR is positive, demand is price elastic. When MR is negative, demand is inelastic. Output where MR=0 corresponds to unitary elasticity and total revenue is maximised." }
+  ],
+  "note_economics_3_14_2.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "The Law of Diminishing Returns only applies in the short run when at least one factor of production is fixed. Never use this to explain long-run diseconomies of scale; they are fundamentally different concepts." }
+  ],
+  "note_economics_3_14_3.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When sketching short-run cost curves, ensure the Marginal Cost (MC) curve always cuts the Average Total Cost (ATC) and Average Variable Cost (AVC) curves at their lowest points. Examiners fiercely penalise mathematically impossible diagrams." }
+  ],
+  "note_economics_3_14_4.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When defining the long-run, state that all factors of production are variable. The LRAC curve is an 'envelope' curve containing all short-run average cost curves; make sure you accurately label its U-shape." }
+  ],
+  "note_economics_3_14_5.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Do not just list economies of scale vaguely. Memorise precise terms like purchasing, managerial, technical, and financial economies of scale, and explicitly link them to a fall in Long-Run Average Costs (LRAC)." }
+  ],
+  "note_economics_3_14_6.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When evaluating the limits to firm growth, diseconomies of scale are crucial. Clearly link terms like poor communication, lack of coordination, and worker alienation to the upwards sloping portion of the LRAC curve." }
+  ],
+  "note_economics_3_14_7.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Minimum Efficient Scale (MES) is the lowest level of output at which long-run average costs are minimised. In exams, use MES to explain why some markets naturally tend towards oligopoly or natural monopoly." }
+  ],
+  "note_economics_3_14_8.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Normal profit (AR=AC) includes the opportunity cost of the entrepreneur's time and capital. Supernormal (or abnormal) profit is any profit made above this level. Ensure you define profit strictly in these economic terms, not just accounting terms." }
+  ],
+  "note_economics_3_14_9.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "The shutdown condition is a classic exam trick. In the short run, a firm will continue producing as long as AR is greater than or equal to AVC. They only shut down immediately if they cannot cover their variable costs." }
+  ],
+  "note_economics_3_15_0.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Efficiency definitions are heavily tested. Allocative efficiency is strictly P=MC (or AR=MC). Productive efficiency is the lowest point on the AC curve (MC=AC). Dynamic efficiency relates to supernormal profit being reinvested over time." }
+  ],
+  "note_economics_3_15_1.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "If asked to calculate an n-firm concentration ratio, just sum the market shares of the 'n' largest firms. Remember to state that a high concentration ratio signals an oligopolistic or monopolistic market structure." }
+  ],
+  "note_economics_3_15_2.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "In Perfect Competition, you must accurately draw the market and firm diagrams side-by-side. Ensure the firm's AR=MR=D curve is perfectly elastic and originates precisely from the market equilibrium price." }
+  ],
+  "note_economics_3_15_3.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "For Monopolistic Competition, remember that firms make normal profit in the long run because there are low barriers to entry. Your diagram must show the AR curve touching the AC curve at the profit-maximising output." }
+  ],
+  "note_economics_3_15_4.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Interdependence is the defining characteristic of an oligopoly. Always use game theory concepts or the kinked demand curve to explain why firms in an oligopoly prefer price stability and non-price competition." }
+  ],
+  "note_economics_3_15_5.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When assessing cartels, explain the conditions that make collusion easier: a small number of firms, similar costs, high entry barriers, and stable demand. Note that the inherent incentive to cheat usually breaks cartels apart." }
+  ],
+  "note_economics_3_15_6.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Examiners love questions on non-price competition. Be ready to discuss real-world examples like loyalty cards, branding, and after-sales service, and evaluate the heavy sunk costs involved in creating brand loyalty." }
+  ],
+  "note_economics_3_15_7.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When drawing a monopoly diagram, clearly shade the area of supernormal profit. The best evaluations weigh the static inefficiencies (allocative and productive) against potential dynamic efficiencies enabled by high profit margins." }
+  ],
+  "note_economics_3_15_8.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "A Natural Monopoly occurs when a single firm can supply the entire market at a lower LRAC than two or more firms. Always sketch the downward sloping LRAC curve indicating continuous economies of scale to earn top marks." }
+  ],
+  "note_economics_3_15_9.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "For third-degree price discrimination, you must state three conditions: price-making power, the ability to split the market, and importantly, differing price elasticities of demand (PED) in those distinct sub-markets." }
+  ],
+  "note_economics_3_15_10.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Monopsony defines a market with a single dominant buyer. Explain how they use buying power to drive down prices to suppliers. This can be evaluated positively (lower consumer prices) or negatively (squeezing supplier margins)." }
+  ],
+  "note_economics_3_15_11.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Contestability is all about the threat of entry. An absence of sunk costs makes hit-and-run entry possible. Emphasize that it is the threat of competition, not necessarily the underlying market structure, that dictates pricing behaviour." }
+  ],
+  "note_economics_3_15_12.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Sunk costs are fixed costs that cannot be recovered upon exiting the market (e.g. specialised machinery, heavy advertising). They represent the purest form of barrier to entry and exit, significantly reducing market contestability." }
+  ],
+  "note_economics_3_16_0.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Always state that the demand for labour is 'derived' from the demand for the goods and services that the labour produces. If demand for the product rises, the Marginal Revenue Product (MRP) of labour shifts outwards." }
+  ],
+  "note_economics_3_16_1.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When evaluating the elasticity of labour demand, use the availability of substitutes (like automation or machinery) and the proportion of labour cost to total cost. Higher substitutability means highly elastic labour demand." }
+  ],
+  "note_economics_3_16_2.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Distinguish carefully between the supply of labour to a specific firm (which may be elastic) and the supply of labour to the whole economy. Key determinants include migration, taxation, benefits, and non-monetary perks." }
+  ],
+  "note_economics_3_16_3.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "The elasticity of labour supply heavily depends on the skill level required. Unskilled jobs have a highly elastic supply as workers can easily switch, whereas professions requiring long training times (e.g. doctors) have very inelastic supply." }
+  ],
+  "note_economics_3_16_4.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When drawing labour market equilibrium, correctly label the axes: 'Wage Rate' on the Y-axis and 'Quantity of Labour' (or Employment) on the X-axis. Missing or vague axis labels will cost you vital diagram marks." }
+  ],
+  "note_economics_3_16_5.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "In a competitive labour market diagram, show the individual firm as a wage taker perfectly elastic supply curve (AC = MC of labour). The wage is determined purely by the intersection of aggregate demand and supply." }
+  ],
+  "note_economics_3_16_6.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When discussing non-competitive labour markets, the Monopsony diagram is crucial. Show that the Marginal Cost of Labour (MCL) lies above the Average Cost of Labour (ACL) because to hire an extra worker, you must raise the wage for all." }
+  ],
+  "note_economics_3_16_7.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Public sector wages are politically determined. Be ready to discuss the trade-offs: strict public sector pay caps can help control government deficits but could lead to severe staff shortages and brain drains to the private sector." }
+  ],
+  "note_economics_3_16_8.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Geographical immobility occurs when workers cannot easily move to where jobs are. Always link this to housing market disparities (high rent in cities) and strong family or social ties preventing migration." }
+  ],
+  "note_economics_3_16_9.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Occupational immobility is driven by a lack of transferable skills. When suggesting policy solutions, recommend specific, targeted retraining programmes or apprenticeships rather than just vague 'education' spending." }
+  ],
+  "note_economics_3_17_0.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "A strong answer on intervention relies on correctly identifying the specific market failure occurring. Make sure to clearly link monopoly power, asymmetric information, or externalities to misallocation of resources before suggesting a policy." }
+  ],
+  "note_economics_3_17_1.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When evaluating merger controls, state that competition authorities often block mergers that substantially lessen competition. However, a great evaluation point is that they might allow it if sufficient economies of scale will directly benefit consumers." }
+  ],
+  "note_economics_3_17_2.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Deregulation aims to increase market contestability. Support your point with examples (like the telecommunications or airline industries), but evaluate by mentioning that incumbent firms might still use predatory pricing to crush new entrants." }
+  ],
+  "note_economics_3_17_3.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Intervention protecting suppliers (like guaranteed minimum prices) or workers (health and safety laws) limits monopsonist exploitation. A classic counter-argument is that overly strict worker protection might discourage firms from hiring." }
+  ],
+  "note_economics_3_17_4.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Price controls (like RPI-X or rate of return regulation) force monopolies to cut costs. To hit top bands, evaluate regulatory capture—the risk that regulators become too sympathetic or lenient towards the incredibly wealthy firms they monitor." }
+  ],
+  "note_economics_3_17_5.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Government failure is the ultimate evaluation tool. Explain how intervention can deepen market inefficiencies due to information gaps (regulators not knowing true firm costs), massive administrative costs, or unintended secondary consequences." }
+  ],
+  "note_economics_3_17_6.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Labor market interventions are usually justified by the existence of low pay, inequality, and monopsony buyer power. Clearly explain how uncorrected free markets might lead to in-work poverty and severe occupational immobility." }
+  ],
+  "note_economics_3_17_7.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "When discussing the National Minimum Wage (NMW), draw an accurate diagram showing classical unemployment (where supply exceeds demand). A key counter-argument is that in a Monopsony market, setting a NMW can actually increase employment." }
+  ],
+  "note_economics_3_17_8.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Taxation on incomes reduces the supply of labour (disincentive effect), particularly at the margins. Evaluate the 'Laffer curve' concept—that taxing top earners too heavily might result in a brain drain and lower total tax revenue." }
+  ],
+  "note_economics_3_17_9.js": [
+    { "title": "Examiner Tip", "style": "warning", "text": "Anti-discrimination laws correct market failures involving asymmetric information and prejudice. Mention how improved mobility policy (e.g. subsidised transport or housing) shifts the labour supply curve outwards, boosting aggregate productivity." }
+  ]
+}

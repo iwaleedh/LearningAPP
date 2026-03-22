@@ -1,0 +1,19 @@
+src/data/seedNotes/mathematics/note_3_1_0.js: Understand the language of functions: domain, range, mappings and function notation.
+src/data/seedNotes/mathematics/note_3_1_1.js: Form and evaluate composite functions fg(x), and determine the domain of a composite function.
+src/data/seedNotes/mathematics/note_3_1_2.js: Find inverse functions, describe the domain/range swap, and sketch inverse function graphs.
+src/data/seedNotes/mathematics/note_3_1_3.js: Apply functions to model real-world situations, interpret domain restrictions in context, and make and critique assumptions.
+src/data/seedNotes/mathematics/note_3_1_4.js: Sketch y = |f(x)| and y = f(|x|) by applying modulus transformations.
+src/data/seedNotes/mathematics/note_3_1_5.js: Solve equations of the form |f(x)| = k and |f(x)| = |g(x)| algebraically and graphically.
+src/data/seedNotes/mathematics/note_3_1_6.js: Apply composite, inverse, modulus and piecewise functions in extended real-world modelling.
+src/data/seedNotes/mathematics/note_3_2_0.js: Define and use the reciprocal trigonometric functions: sec\u00a0x, cosec\u00a0x, and cot\u00a0x.
+src/data/seedNotes/mathematics/note_3_2_1.js: Understand and use arcsin, arccos, and arctan: their restricted domains, ranges, and graphs.
+src/data/seedNotes/mathematics/note_3_2_2.js: Apply small angle approximations for sin \u03b8, cos \u03b8, and tan \u03b8 when \u03b8 is small and in radians.
+src/data/seedNotes/mathematics/note_3_2_3.js: Use the compound angle formulae for sin(A\u00b1B), cos(A\u00b1B), and tan(A\u00b1B) to find exact values and simplify expressions.
+src/data/seedNotes/mathematics/note_3_2_4.js: Use double angle formulae to simplify expressions, solve equations, and find exact values.
+src/data/seedNotes/mathematics/note_3_2_5.js: Use Pythagorean identities involving sec, cosec, and cot to simplify expressions and solve equations.
+src/data/seedNotes/mathematics/note_3_2_6.js: Express a sin x + b cos x in the form R sin(x + \u03b1) or R cos(x + \u03b1), and use this to find maxima, minima, and solve equations.
+src/data/seedNotes/mathematics/note_3_2_7.js: Choose and apply appropriate trig identities to solve more complex trigonometric equations over specified intervals.
+src/data/seedNotes/mathematics/note_3_2_8.js: Prove trigonometric identities by working from one side to the other, using known identities.
+src/data/seedNotes/mathematics/note_3_2_9.js: Sketch and describe the graphs of sec x, cosec x, cot x, arcsin x, arccos x, and arctan x.
+src/data/seedNotes/mathematics/note_3_2_10.js: Apply trigonometric functions to model periodic real-world phenomena such as tides, temperatures, and oscillations.
+src/data/seedNotes/mathematics/note_3_3_0.js: Differentiate e\u02e3, a\u02e3, ln x, and composite forms using the chain rule.

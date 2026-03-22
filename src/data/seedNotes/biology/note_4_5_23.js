@@ -46,7 +46,16 @@ export const note_biology_4_5_23 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-689d9c68', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Mutations are Random', 'text': 'A common mistake is stating the environment causes mutations. Mutations always occur randomly, creating genetic variation. The environmental change simply acts as the selection pressure favoring the already-existing advantageous alleles.' } }
+{ 'id': 'callout-examiner-689d9c68', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Mutations are Random', 'text': 'A common mistake is stating the environment causes mutations. Mutations always occur randomly, creating genetic variation. The environmental change simply acts as the selection pressure favoring the already-existing advantageous alleles.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Mutations are Random",
+        text: "A common mistake is saying 'the environment caused a mutation to help them survive'. No! Mutations occur randomly. The environment simply provides the selection pressure that gives the surviving allele an advantage."
+      }
+    }
   ],
   recall: {
     enabled: true,

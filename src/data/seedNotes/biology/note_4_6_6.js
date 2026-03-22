@@ -47,7 +47,16 @@ export const note_biology_4_6_6 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-25b5106c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Non-Specific vs Specific Pathways', 'text': 'Remember that barriers to entry (like the skin, stomach acid, and lysozyme enzymes in tears) constitute the **non-specific**, primary lines of defence. They prevent infection from a vast array of pathogens, regardless of their specific antigens.' } }
+{ 'id': 'callout-examiner-25b5106c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Non-Specific vs Specific Pathways', 'text': 'Remember that barriers to entry (like the skin, stomach acid, and lysozyme enzymes in tears) constitute the **non-specific**, primary lines of defence. They prevent infection from a vast array of pathogens, regardless of their specific antigens.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Lysozyme is an Enzyme",
+        text: "Lysozyme is found in tears, saliva, and sweat. It works by breaking down the peptidoglycan cell walls of bacteria. It is NOT an antibody and it is a non-specific defence."
+      }
+    }
   ],
   recall: {
     enabled: true,

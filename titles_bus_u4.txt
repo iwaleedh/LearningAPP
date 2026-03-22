@@ -1,0 +1,37 @@
+src/data/seedNotes/business/note_4_17_0.js: Classify economies as developed, emerging or developing and explain the characteristics and business implications of each type.
+src/data/seedNotes/business/note_4_17_1.js: Define GDP, GDP per capita and HDI; evaluate their usefulness as measures of economic development and living standards.
+src/data/seedNotes/business/note_4_17_2.js: Analyse the implications of globalisation for international trade patterns and employment in both developed and developing economies.
+src/data/seedNotes/business/note_4_17_3.js: Explain the nature of exports and imports, analyse the balance of trade, and evaluate the impact of exchange rates on international competitiveness.
+src/data/seedNotes/business/note_4_17_4.js: Define FDI, distinguish types of FDI, and evaluate the costs and benefits of foreign direct investment for host countries and investing businesses.
+src/data/seedNotes/business/note_4_17_5.js: Identify and explain the key drivers of globalisation and evaluate their relative importance in accelerating the integration of the world economy.
+src/data/seedNotes/business/note_4_17_6.js: Explain why governments use protectionist policies and evaluate the arguments for and against protecting domestic industries from international competition.
+src/data/seedNotes/business/note_4_17_7.js: Define and distinguish between tariffs, quotas, subsidies, embargoes and non-tariff barriers; evaluate their effectiveness as protectionist tools and their impact on businesses.
+src/data/seedNotes/business/note_4_17_8.js: Define trading blocs and explain the features, benefits and drawbacks of membership, with reference to the EU, ASEAN and NAFTA/USMCA.
+src/data/seedNotes/business/note_4_17_9.js: Evaluate the opportunities and threats that globalisation presents to UK businesses, and assess the different impacts on large MNCs vs SMEs.
+src/data/seedNotes/business/note_4_18_0.js: Understand the push and pull factors for international expansion, specifically why businesses decide to operate globally.
+src/data/seedNotes/business/note_4_18_1.js: Distinguish between offshoring and outsourcing, and evaluate their roles in global expansion.
+src/data/seedNotes/business/note_4_18_2.js: Evaluate how international expansion can be used as an extension strategy in the product life cycle.
+src/data/seedNotes/business/note_4_18_3.js: Understand and apply the factors used to assess the potential of different country markets.
+src/data/seedNotes/business/note_4_18_4.js: Apply Porter’s Five Forces framework to analyze the attractiveness of a new international market.
+src/data/seedNotes/business/note_4_18_5.js: Assess the factors that influence a business’s decision on where to locate its production facilities globally.
+src/data/seedNotes/business/note_4_18_6.js: Analyze the advantages and disadvantages of expanding globally through mergers and joint ventures.
+src/data/seedNotes/business/note_4_18_7.js: Evaluate the impact of exchange-rate uncertainty on international business operations and profitability.
+src/data/seedNotes/business/note_4_18_8.js: Understand how global skill shortages impact international competitiveness and location decisions.
+src/data/seedNotes/business/note_4_19_0.js: Understand the concepts of global and localised marketing strategies, and evaluate their benefits and drawbacks.
+src/data/seedNotes/business/note_4_19_1.js: Understand EPRG framework focusing on ethnocentric, polycentric, and geocentric approaches to global marketing.
+src/data/seedNotes/business/note_4_19_2.js: Understand how the 4Ps of the marketing mix must be adapted for global markets.
+src/data/seedNotes/business/note_4_19_3.js: Apply Ansoff
+src/data/seedNotes/business/note_4_19_4.js: Analyse the characteristics of global niche markets and how businesses operate within them.
+src/data/seedNotes/business/note_4_19_5.js: Analyse how cultural diversity influences demand and requires businesses to adapt their strategies.
+src/data/seedNotes/business/note_4_19_6.js: Evaluate the risks associated with branding and language translation in international markets.
+src/data/seedNotes/business/note_4_19_7.js: Evaluate the role and necessary adaptation of social media in global marketing campaigns.
+src/data/seedNotes/business/note_4_20_0.js: Understand the positive and negative effects of multinational companies (MNCs) on local economies, including job creation and cultural impact.
+src/data/seedNotes/business/note_4_20_1.js: Evaluate the effects of MNCs on the national economy of the host country, including FDI, balance of payments, and tax revenues.
+src/data/seedNotes/business/note_4_20_2.js: Analyse the conflicts that arise between different stakeholder groups when operating in global markets.
+src/data/seedNotes/business/note_4_20_3.js: Assess the environmental ethical issues faced by multinationals and the trade-offs between profit and sustainability.
+src/data/seedNotes/business/note_4_20_4.js: Evaluate the issues surrounding labour standards in global supply chains, including child labour, sweatshops, and health & safety.
+src/data/seedNotes/business/note_4_20_5.js: Examine ethical issues in multinational marketing, including misleading advertising, cultural insensitivity, and marketing to vulnerable groups.
+src/data/seedNotes/business/note_4_20_6.js: Understand the different methods used to regulate and control the behaviour of multinational companies.
+src/data/seedNotes/business/note_4_20_7.js: Analyse how consumer action and pressure groups influence and constrain multinational corporate behaviour.
+src/data/seedNotes/business/note_4_20_8.js: Evaluate the use of government legislation, joint ventures, and taxation to control MNCs.
+src/data/seedNotes/business/note_4_20_9.js: Assess the effectiveness and limitations of self-regulation and voluntary codes of conduct by businesses.

@@ -27,7 +27,16 @@ export const note_biology_4_5_11 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-d5e09da3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'In exam questions about leaf adaptations, ensure you link the structural feature directly to its function. For example, \'the palisade mesophyll cells are densely packed with chloroplasts **to maximise light absorption**\'.' } }
+{ 'id': 'callout-examiner-d5e09da3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'In exam questions about leaf adaptations, ensure you link the structural feature directly to its function. For example, \'the palisade mesophyll cells are densely packed with chloroplasts **to maximise light absorption**\'.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Palisade vs Spongy Mesophyll",
+        text: "Be precise: palisade cells are adapted for maximum light absorption (packed with chloroplasts), whereas spongy mesophyll cells are adapted for gas exchange (air spaces)."
+      }
+    }
   ],
   recall: {
     enabled: true,

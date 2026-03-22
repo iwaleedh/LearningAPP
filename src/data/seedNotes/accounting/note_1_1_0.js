@@ -4,7 +4,7 @@
  */
 
 export const note_accounting_1_1_0 = {
-    blocks: [
+    blocks: [{id:"callout-1",type:"callout",data:{style:"warning",title:"Acc Tip",text:"Placeholder account tip!"}},
         {
             id: 'objective-block',
             type: 'objective',

@@ -58,7 +58,16 @@ export const note_biology_4_6_9 = {
       }
     },
 { 'id': 'callout-examiner-0dd34471', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Antibody Production', 'text': 'Remember that antibodies are produced by plasma cells (differentiated B cells), not directly by T cells or macrophages.' } },
-{ 'id': 'callout-examiner-bf55c38e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Disulfide Bonds', 'text': 'When describing antibody structure, always explicitly mention \'disulfide bridges\' connecting the heavy and light chains.' } }
+{ 'id': 'callout-examiner-bf55c38e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Disulfide Bonds', 'text': 'When describing antibody structure, always explicitly mention \'disulfide bridges\' connecting the heavy and light chains.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Antibody Structure",
+        text: "Don't forget the disulfide bridges! When describing antibody structure, always mention the four polypeptide chains (two heavy, two light) held together by disulfide bonds, featuring a specific variable region."
+      }
+    }
   ],
   recall: {
     enabled: true,

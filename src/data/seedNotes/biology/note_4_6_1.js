@@ -54,7 +54,16 @@ export const note_biology_4_6_1 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-4b5fc23c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Viable vs Total Counts', 'text': 'A common mistake is confusing viable and total counts. **Viable counts** (like counting colonies from serial dilutions) only count living cells that can multiply. **Total counts** (like using a haemocytometer or measuring turbidity) include both living and dead cells.' } }
+{ 'id': 'callout-examiner-4b5fc23c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Viable vs Total Counts', 'text': 'A common mistake is confusing viable and total counts. **Viable counts** (like counting colonies from serial dilutions) only count living cells that can multiply. **Total counts** (like using a haemocytometer or measuring turbidity) include both living and dead cells.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Turbidity limitations",
+        text: "Using a colorimeter to measure turbidity (cloudiness) gives a total cell count, which includes both living and dead cells. Only a serial dilution and plating will give a viable (living) cell count."
+      }
+    }
   ],
   recall: {
     enabled: true,

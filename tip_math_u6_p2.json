@@ -1,0 +1,62 @@
+{
+  "src/data/seedNotes/mathematics/note_6_3_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always check the borders of the circles in a Venn diagram. If you are given P(A) total, make sure you subtract the intersection before placing the value in the 'A only' region. Remember that mutually exclusive events have an intersection of exactly zero."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_3_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In exams, proving independence requires showing exactly that P(A and B) = P(A) x P(B) or P(A|B) = P(A). Merely stating they 'do not affect each other' will score zero marks. Always show the numerical calculation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_4_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When interpreting a scatter diagram, always describe the correlation in context. Instead of just writing 'positive correlation', write 'positive correlation, so as temperature increases, the reaction rate increases'. Remember that extrapolation is unreliable because the trend may not continue outside the observed data range."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_4_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When calculating the PMCC (r), use the summary statistics given in the question and show the substitution into the formula clearly. If the calculated 'r' falls outside the bounds of -1 to 1, you have definitely made an arithmetic error."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_4_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The coefficient 'b' in the regression line y = a + bx represents the rate of change. Examiners frequently ask you to interpret 'b': ensure you state 'the expected increase in y for every 1 unit increase in x'. Only use the regression line of y on x to predict y given x, never the other way around."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_5_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A classic one-mark check in distribution tables is that the sum of all probabilities must equal exactly 1. If an exam question involves finding an unknown constant 'k' in a probability distribution, set up the equation sum(P(X=x)) = 1 and solve it explicitly to secure method marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_5_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The most common pitfall when applying variance rules is forgetting to square the scaling coefficient. Remember that Var(aX + b) = a^2 Var(X). The addition of 'b' shifts the data but does not affect the spread at all."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_6_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A normal distribution curve is completely defined by its mean and variance, but the standardisation formula requires the standard deviation. A frequent student error is dividing by the variance instead of taking the square root to find sigma."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_6_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding an unknown mean or standard deviation, always draw a quick sketch of the bell curve. If the required probability area is less than 0.5, your required Z-value must be negative. Missing the negative sign on a Z-value is the leading cause of lost marks in inverse normal calculations."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_6_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In correlation hypothesis tests, clearly state your null hypothesis as rho = 0, using the Greek letter rho. Do not use 'r', as 'r' represents the sample statistic. Always conclude a hypothesis test in the specific context of the original question."
+    }
+  ]
+}

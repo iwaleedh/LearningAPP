@@ -51,7 +51,16 @@ export const note_biology_4_6_8 = {
       }
     },
 { 'id': 'callout-examiner-1b21d266', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Antibodies vs Antigens', 'text': 'A frequent error is interchanging antigens and antibodies. **Antigens** are molecules (often proteins) on the surface of pathogens that trigger immune responses. **Antibodies** are the complementary Y-shaped proteins produced by plasma cells (B cells) to bind to those specific antigens.' } },
-{ 'id': 'callout-examiner-280f2561', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'T Helper Cell Activation', 'text': 'In long-answer questions about the specific immune response, it is crucial to state that **T helper cells** release **cytokines**. These specific chemicals stimulate both the clonal expansion of B cells (into plasma cells) and T killer cells.' } }
+{ 'id': 'callout-examiner-280f2561', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'T Helper Cell Activation', 'text': 'In long-answer questions about the specific immune response, it is crucial to state that **T helper cells** release **cytokines**. These specific chemicals stimulate both the clonal expansion of B cells (into plasma cells) and T killer cells.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Who makes the antibodies?",
+        text: "B cells do not directly 'shoot' antibodies at pathogens. They must first undergo clonal expansion and differentiate into plasma cells. It is the plasma cells that secrete the antibodies."
+      }
+    }
   ],
   recall: {
     enabled: true,

@@ -51,7 +51,16 @@ export const note_biology_4_6_0 = {
       }
     },
 { 'id': 'callout-examiner-6e0c2f3b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Aseptic Techniques vs Sterile', 'text': 'Students often confuse the terms **aseptic** and **sterile**. Aseptic technique aims to *prevent contamination* from undesired microorganisms, whereas sterile means *completely free* of all living microorganisms. You should always refer to \'aseptic technique\' when describing lab procedures.' } },
-{ 'id': 'callout-examiner-480b80db', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Incubation Temperature', 'text': 'Remember that in school and college laboratories, microbial cultures must not be incubated at 37 °C (human body temperature). This prevents the growth of human pathogens. They are typically cultured at around 25 °C or a maximum of 30 °C.' } }
+{ 'id': 'callout-examiner-480b80db', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Incubation Temperature', 'text': 'Remember that in school and college laboratories, microbial cultures must not be incubated at 37 °C (human body temperature). This prevents the growth of human pathogens. They are typically cultured at around 25 °C or a maximum of 30 °C.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Sterilisation Etiquette",
+        text: "Pass the inoculating loop through a roaring Bunsen flame until red hot. Do NOT place it down on the bench to cool; hold it near the flame to prevent contamination from the air."
+      }
+    }
   ],
   recall: {
     enabled: true,

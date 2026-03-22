@@ -1,0 +1,62 @@
+{
+  "src/data/seedNotes/mathematics/note_6_1_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When defining a sampling frame, always ensure it is stated in the context of the question. Marks are often lost for giving a generic textbook definition instead of applying it to the specific scenario provided."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_1_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For grouped frequency tables, remember to use class midpoints to estimate the mean. A very common error is dividing by the number of classes instead of the total frequency 'n'."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_1_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In a histogram, remember that frequency is proportional to area, not height! Always use 'Frequency Density = Frequency / Class Width' to determine the height of the bars on the y-axis."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_1_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always show your full working when calculating outlier boundaries (e.g., Q1 - 1.5 * IQR or Q3 + 1.5 * IQR). Even if you misidentify an outlier, you can still gain method marks for correctly establishing the boundary values."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_1_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When calculating variance, examiners frequently see students forgetting to divide the sum of x-squared by 'n' before subtracting the square of the mean. Write the formula out first to avoid this."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_1_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember a golden rule for coding: multiplying or dividing the data changes both the mean and standard deviation, but adding or subtracting a constant ONLY changes the mean. The spread of the data is unaffected by translation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_2_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Never forget to include a clear 'Key' when drawing a stem-and-leaf diagram. It is almost always worth a specific, standalone mark that is easily lost if omitted."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_2_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If asked why the median is more suitable than the mean as a measure of location, clearly state that 'the median is unaffected by extreme values (outliers)'. Avoid vague answers like 'it is more accurate'."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_2_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Pay close attention to class intervals. If data is grouped as '10-19', '20-29', the boundaries for calculations are 9.5, 19.5, and 29.5. Missing the gap between classes will result in incorrect estimates for median and IQR."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_6_2_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Whenever you are given a complex word problem involving conditional probability, draw a Venn diagram or tree diagram. Examiners look for correctly labeled diagrams and they naturally prevent calculation errors for union and intersection."
+    }
+  ]
+}

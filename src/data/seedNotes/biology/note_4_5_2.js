@@ -33,7 +33,16 @@ export const note_biology_4_5_2 = {
       type: "callout",
       data: { style: "worked", title: "Making one hexose sugar", text: "Because 1 CO₂ generates a net gain of 1 carbon atom, it takes 6 turns of the Calvin cycle (fixing 6 CO₂ molecules) to produce 2 extra GALP molecules, which join to form 1 molecule of glucose." }
     },
-{ 'id': 'callout-examiner-6c83d843', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not imply that the light-independent reactions only occur in the dark! These reactions happen continuously in the light as long as the products of the light-dependent stage (ATP and reduced NADP) are being supplied.' } }
+{ 'id': 'callout-examiner-6c83d843', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not imply that the light-independent reactions only occur in the dark! These reactions happen continuously in the light as long as the products of the light-dependent stage (ATP and reduced NADP) are being supplied.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "NADP vs NAD",
+        text: "Always write 'reduced NADP' (or NADPH) for photosynthesis. Using 'reduced NAD' will lose you marks, as NAD is specific to respiration."
+      }
+    }
   ],
   recall: {
     enabled: true,

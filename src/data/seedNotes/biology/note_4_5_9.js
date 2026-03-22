@@ -50,7 +50,16 @@ export const note_biology_4_5_9 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-9c8da0fb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often confuse the products of cyclic and non-cyclic photophosphorylation. Remember that cyclic photophosphorylation **only produces ATP**, whereas non-cyclic produces ATP, reduced NADP (NADPH), and oxygen.' } }
+{ 'id': 'callout-examiner-9c8da0fb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often confuse the products of cyclic and non-cyclic photophosphorylation. Remember that cyclic photophosphorylation **only produces ATP**, whereas non-cyclic produces ATP, reduced NADP (NADPH), and oxygen.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Products of Phosphorylation",
+        text: "Cyclic photophosphorylation ONLY produces ATP. Non-cyclic produces both ATP AND reduced NADP, as well as oxygen from the photolysis of water."
+      }
+    }
   ],
   recall: {
     enabled: true,

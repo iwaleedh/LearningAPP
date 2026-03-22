@@ -1,0 +1,68 @@
+{
+  "src/data/seedNotes/mathematics/note_5_1_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Examiners often ask you to state how a particular modelling assumption (like 'particle' or 'inextensible string') affects your calculation. Be precise: 'particle' means mass acts at a single point and air resistance can be ignored; 'inextensible' means acceleration is the same for connected objects."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_1_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always check your units before substituting into equations. A classic pitfall is being given mass in grams or distance in kilometres. S.I. units (kg, m, s) must be used consistently unless explicitly asked otherwise."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_1_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always draw a clear, large diagram showing all forces acting on a body before attempting a mechanics problem. Many students lose marks by forgetting the normal reaction or weight, or drawing a force acting in the wrong direction."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_2_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding the direction of a vector, always sketch the vector on a small Cartesian grid. This prevents common errors in determining the angle relative to the required axis, such as finding the angle with the x-axis when a bearing from North is required."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_2_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A very common mistake is mixing up horizontal and vertical components. Remember that horizontal velocity remains constant (acceleration is 0), while vertical velocity changes due to gravity (acceleration is -g). Write out your horizontal and vertical suvat variables separately."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_2_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using vector suvat equations, remember that 's' represents displacement from the starting point, not distance travelled. If asked for the position vector from the origin, do not forget to add the initial position vector to your calculated displacement."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_2_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using F = ma in 2D, make sure 'F' is the resultant force vector. Add all the force vectors together (i and j components separately) before setting them equal to the mass multiplied by the acceleration vector. Never take the magnitude of individual forces and sum them as scalars."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_3_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Write down S, U, V, A, T clearly with signs before using an equation. Taking 'upwards' as positive and 'downwards' as negative (or vice versa) consistently is crucial. A simple sign error in 'a' or 'u' will derail the whole calculation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_3_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "For velocity-time graphs, remember that the gradient gives acceleration and the area under the graph gives displacement. In multi-stage journeys, splitting the area into simple shapes (triangles and rectangles) is much safer and less error-prone than trying to use suvat across the whole journey."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_3_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always read the question carefully to see what value of g to use. Edexcel mechanics papers routinely require g = 9.8 m s^-2. Using 9.81 or 10 will lead to accuracy marks being deducted in your final answer."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_5_3_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Check whether acceleration is constant. If it depends on time 't', you MUST use calculus (integration or differentiation) rather than suvat equations. Using suvat for variable acceleration is a fundamental error and scores zero marks."
+    }
+  ]
+}

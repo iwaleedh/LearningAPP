@@ -1,0 +1,22 @@
+src/data/seedNotes/mathematics/note_2_5_2.js: Apply the laws of logarithms to simplify expressions and solve equations.
+src/data/seedNotes/mathematics/note_2_5_3.js: Solve equations of the form aˣ = b and equations in which the unknown appears in a logarithm.
+src/data/seedNotes/mathematics/note_2_5_4.js: Recognise and work with models of the form y = Aeᵏˣ to describe growth and decay.
+src/data/seedNotes/mathematics/note_2_5_5.js: Use logarithms to linearise data from y = abˣ or y = axⁿ models and find constants from a straight-line graph.
+src/data/seedNotes/mathematics/note_2_5_6.js: Solve more complex equations involving logarithms and exponentials, including change of base and simultaneous equations.
+src/data/seedNotes/mathematics/note_2_6_0.js: Use and prove the fundamental trigonometric identities sin²θ + cos²θ = 1 and tan θ = sin θ / cos θ.
+src/data/seedNotes/mathematics/note_2_6_1.js: Exact Values to Know
+src/data/seedNotes/mathematics/note_2_6_2.js: Understand, sketch, and use the reciprocal trigonometric functions sec, cosec, and cot.
+src/data/seedNotes/mathematics/note_2_6_3.js: Use the addition formulae and double angle formulae for sin, cos, and tan.
+src/data/seedNotes/mathematics/note_2_7_0.js: Differentiate eˣ, e^f(x), ln x, sin x, cos x, and tan x from first principles/knowledge.
+src/data/seedNotes/mathematics/note_2_7_1.js: Apply the chain rule to differentiate composite functions of the form f(g(x)).
+src/data/seedNotes/mathematics/note_2_7_2.js: Apply the product rule to differentiate products of two functions.
+src/data/seedNotes/mathematics/note_2_7_3.js: Apply the quotient rule to differentiate quotients of two functions.
+src/data/seedNotes/mathematics/note_2_7_4.js: Differentiate implicitly and find dy/dx for parametrically defined curves.
+src/data/seedNotes/mathematics/note_2_7_5.js: Use the chain rule to relate rates of change of different quantities.
+src/data/seedNotes/mathematics/note_2_7_6.js: Find and classify stationary points using the second derivative test, and use calculus to solve optimisation problems.
+src/data/seedNotes/mathematics/note_2_8_0.js: Integrate standard functions: eˣ, 1/x, sin x, cos x and use these to evaluate definite and indefinite integrals.
+src/data/seedNotes/mathematics/note_2_8_1.js: Use integration by substitution to evaluate integrals, including definite integrals with changed limits.
+src/data/seedNotes/mathematics/note_2_8_2.js: Apply integration by parts to evaluate integrals involving products of functions.
+src/data/seedNotes/mathematics/note_2_8_3.js: Decompose rational functions into partial fractions and integrate each term.
+src/data/seedNotes/mathematics/note_2_8_4.js: Use definite integration to find areas under and between curves, handling regions below the x-axis carefully.
+src/data/seedNotes/mathematics/note_2_8_5.js: Use the trapezium rule to estimate definite integrals and determine whether the estimate is an over- or under-estimate.

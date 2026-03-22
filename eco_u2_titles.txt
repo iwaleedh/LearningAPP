@@ -1,0 +1,60 @@
+note_economics_2_7_0.js: Real GDP Growth
+note_economics_2_7_1.js: GNI as an Alternative Measure
+note_economics_2_7_2.js: Real vs Nominal Output
+note_economics_2_7_3.js: Total vs Per Capita Output
+note_economics_2_7_4.js: PPP Comparisons
+note_economics_2_7_5.js: Recession Definition
+note_economics_2_7_6.js: GDP/GNI Limitations
+note_economics_2_7_7.js: National Wellbeing Indicators
+note_economics_2_7_8.js: CPI Inflation Measurement
+note_economics_2_7_9.js: Deflation and Disinflation
+note_economics_2_7_10.js: Causes of Inflation and Deflation
+note_economics_2_7_11.js: Employment and Unemployment Measures
+note_economics_2_7_12.js: Types of Unemployment
+note_economics_2_7_13.js: Effects of Unemployment
+note_economics_2_7_14.js: Balance of Payments Components
+note_economics_2_8_0.js: Aggregate Demand Defined
+note_economics_2_8_1.js: The AD Curve
+note_economics_2_8_2.js: Determinants of Consumption (C)
+note_economics_2_8_3.js: The Savings Ratio
+note_economics_2_8_4.js: Gross vs Net Investment
+note_economics_2_8_5.js: Determinants of Investment (I)
+note_economics_2_8_6.js: Government Policies to Boost Investment
+note_economics_2_8_7.js: Government Spending (G)
+note_economics_2_8_8.js: Net Exports = X − M
+note_economics_2_9_0.js: Aggregate Supply: Concept and Curve
+note_economics_2_9_1.js: AS Shifts vs Movements Along the Curve
+note_economics_2_9_2.js: Short-Run Aggregate Supply: Determinants
+note_economics_2_9_3.js: Keynesian vs Classical Long-Run Aggregate Supply
+note_economics_2_9_4.js: Long-Run Aggregate Supply: Determinants
+note_economics_2_10_0.js: The Circular Flow of Income
+note_economics_2_10_1.js: Income vs Wealth
+note_economics_2_10_2.js: Injections and Withdrawals
+note_economics_2_10_3.js: Equilibrium Real Output
+note_economics_2_10_4.js: The Multiplier Process
+note_economics_2_10_5.js: MPC, MPS, MPT and MPM
+note_economics_2_10_6.js: Multiplier Formulae
+note_economics_2_10_7.js: The Multiplier Process
+note_economics_2_11_0.js: Actual vs Potential Growth
+note_economics_2_11_1.js: AD-Driven Growth
+note_economics_2_11_2.js: Export-Led Growth
+note_economics_2_11_3.js: FDI and Growth
+note_economics_2_11_4.js: Innovation and Productivity
+note_economics_2_11_5.js: Labour Force and Growth
+note_economics_2_11_6.js: Benefits of Economic Growth
+note_economics_2_11_7.js: Costs of Economic Growth
+note_economics_2_11_8.js: Positive and Negative Output Gaps
+note_economics_2_11_9.js: Why Output Gaps Are Hard to Measure
+note_economics_2_12_0.js: The Main Macroeconomic Objectives
+note_economics_2_12_1.js: Current Account Objective
+note_economics_2_12_2.js: Income Equality Objective
+note_economics_2_12_3.js: Conflicts Between Objectives
+note_economics_2_12_4.js: The Short-Run Phillips Curve
+note_economics_2_12_5.js: Supply-Side Policy Overview
+note_economics_2_12_6.js: Free-Market Supply-Side Policies
+note_economics_2_12_7.js: Interventionist Supply-Side Policies
+note_economics_2_12_8.js: Demand-Side Policy Types
+note_economics_2_12_9.js: Fiscal Policy Instruments
+note_economics_2_12_10.js: Monetary Policy Tools
+note_economics_2_12_11.js: Roles of the Central Bank
+note_economics_2_12_12.js: Evaluating Fiscal Policy

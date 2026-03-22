@@ -1,0 +1,16 @@
+src/data/seedNotes/mathematics/note_4_1_0.js: Construct proofs by contradiction, including proving that \u221a2 is irrational and that there are infinitely many primes.
+src/data/seedNotes/mathematics/note_4_2_0.js: Decompose a rational expression with distinct linear factors in the denominator into partial fractions.
+src/data/seedNotes/mathematics/note_4_2_1.js: Decompose rational expressions with repeated linear factors into partial fractions.
+src/data/seedNotes/mathematics/note_4_2_2.js: Identify improper rational expressions and convert them to a mixed form (polynomial + proper fraction) before decomposing into partial fractions.
+src/data/seedNotes/mathematics/note_4_2_3.js: Decompose rational expressions with irreducible quadratic factors in the denominator into partial fractions of the form (Ax+B)/(x\u00b2+c).
+src/data/seedNotes/mathematics/note_4_3_0.js: Understand parametric equations as an alternative way to describe curves, and convert between parametric and Cartesian forms.
+src/data/seedNotes/mathematics/note_4_3_1.js: Sketch parametric curves by computing and plotting key points, and determine the range of the curve from the parameter domain.
+src/data/seedNotes/mathematics/note_4_3_2.js: Find the area under a parametrically defined curve by converting the integral to a t-variable integral.
+src/data/seedNotes/mathematics/note_4_3_3.js: Find tangents and normals to parametric curves, and use parametric equations to solve further coordinate geometry problems.
+src/data/seedNotes/mathematics/note_4_4_0.js: Expand (1+x)\u207f for any rational n (negative or fractional) using the general binomial series, and identify when this series is valid.
+src/data/seedNotes/mathematics/note_4_4_1.js: State the range of values of x for which a binomial expansion is valid, and expand expressions of the form (a + bx)^n.
+src/data/seedNotes/mathematics/note_4_4_2.js: Apply binomial expansion after first expressing a fraction in partial fraction form.
+src/data/seedNotes/mathematics/note_4_4_3.js: Use binomial expansions to find approximations to numerical values of surds and other expressions.
+src/data/seedNotes/mathematics/note_4_5_0.js: Differentiate implicit equations using the chain rule (d/dx[f(y)] = f\u2032(y) dy/dx), and use this to find tangents, normals, and stationary points.
+src/data/seedNotes/mathematics/note_4_6_0.js: Integrate products of functions using integration by parts: \u222b u dv = uv \u2212 \u222b v du.
+src/data/seedNotes/mathematics/note_4_6_1.js: Apply integration by parts more than once, and solve cyclic integrals where the original integral reappears.

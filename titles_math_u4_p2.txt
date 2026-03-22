@@ -1,0 +1,16 @@
+src/data/seedNotes/mathematics/note_4_6_2.js: Use partial fractions to break down rational integrands, then integrate each term using standard results.
+src/data/seedNotes/mathematics/note_4_6_3.js: Use double-angle and other trig identities to reduce integrals involving powers of sin and cos to integrable forms.
+src/data/seedNotes/mathematics/note_4_6_4.js: Use substitution (including reverse chain rule and trig substitutions) to evaluate more complex integrals, including definite integrals with changed limits.
+src/data/seedNotes/mathematics/note_4_6_5.js: Find areas between parametric curves and axes, using \u222b y (dx/dt) dt with appropriate t-limits.
+src/data/seedNotes/mathematics/note_4_6_6.js: Find the volume generated when a curve y = f(x) is rotated 360\u00b0 about the x-axis using V = \u03c0 \u222b y\u00b2 dx.
+src/data/seedNotes/mathematics/note_4_6_7.js: Find volumes of revolution about the y-axis using V = \u03c0 \u222b x\u00b2 dy, and apply the parametric form V = \u03c0 \u222b y\u00b2 (dx/dt) dt.
+src/data/seedNotes/mathematics/note_4_6_8.js: Apply the trapezium rule to estimate definite integrals numerically, and comment on accuracy and over/under-estimation.
+src/data/seedNotes/mathematics/note_4_6_9.js: Form and solve first-order differential equations by separating the variables, finding general and particular solutions.
+src/data/seedNotes/mathematics/note_4_6_10.js: Formulate, solve, and interpret differential equations in real-world contexts such as growth, decay, and rate-of-change models.
+src/data/seedNotes/mathematics/note_4_7_0.js: Use vectors in 3D: write column vectors, find magnitude, and compute unit vectors. Use position vectors and displacement.
+src/data/seedNotes/mathematics/note_4_7_1.js: Calculate the scalar product of two vectors, use it to find the angle between them, and determine when vectors are perpendicular.
+src/data/seedNotes/mathematics/note_4_7_2.js: Write the vector equation of a line in the form r = a + \u03bbb, find points on the line, and convert to Cartesian form.
+src/data/seedNotes/mathematics/note_4_7_3.js: Determine whether two lines intersect, are parallel, or are skew; find the point of intersection; and calculate the angle between two lines.
+src/data/seedNotes/mathematics/note_4_7_4.js: Write the equation of a plane in vector form r\u00b7n = d and Cartesian form ax+by+cz=d, given a normal vector and a point.
+src/data/seedNotes/mathematics/note_4_7_5.js: Find the angle between two planes, find the intersection of a line and a plane, and find the distance from a point to a plane.
+src/data/seedNotes/mathematics/note_4_7_6.js: Use vectors to prove geometric properties, find ratios of division, and solve combined problems involving lines and planes.

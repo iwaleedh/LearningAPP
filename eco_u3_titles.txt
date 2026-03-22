@@ -1,0 +1,54 @@
+note_economics_3_13_0.js: Private, Public and Not-for-Profit Firms
+note_economics_3_13_1.js: Co-operatives and Joint Ventures
+note_economics_3_13_2.js: SMEs vs Large Corporations
+note_economics_3_13_3.js: Organic Growth
+note_economics_3_13_4.js: Vertical, Horizontal and Conglomerate Integration
+note_economics_3_13_5.js: Merger and Takeover: Pros and Cons
+note_economics_3_13_6.js: Growth Constraints
+note_economics_3_13_7.js: Demerger: Motives and Effects
+note_economics_3_13_8.js: Business Objectives
+note_economics_3_13_9.js: Satisficing Behaviour
+note_economics_3_13_10.js: The Principal-Agent Problem
+note_economics_3_14_0.js: Revenue Concepts
+note_economics_3_14_1.js: Elasticity and Revenue
+note_economics_3_14_2.js: Diminishing Returns (Short Run)
+note_economics_3_14_3.js: Short-Run Cost Relationships
+note_economics_3_14_4.js: Long-Run Cost Curves
+note_economics_3_14_5.js: Internal Economies of Scale
+note_economics_3_14_6.js: Diseconomies of Scale
+note_economics_3_14_7.js: Minimum Efficient Scale (MES)
+note_economics_3_14_8.js: Profit Concepts
+note_economics_3_14_9.js: Shutdown and Break-even Conditions
+note_economics_3_15_0.js: Types of Economic Efficiency
+note_economics_3_15_1.js: Concentration Ratio Calculations
+note_economics_3_15_2.js: Perfect Competition
+note_economics_3_15_3.js: Monopolistic Competition
+note_economics_3_15_4.js: Oligopoly: Key Features
+note_economics_3_15_5.js: Collusion and Cartels
+note_economics_3_15_6.js: Price vs Non-Price Competition
+note_economics_3_15_7.js: Characteristics of Monopoly
+note_economics_3_15_8.js: Natural Monopoly
+note_economics_3_15_9.js: Third-Degree Price Discrimination
+note_economics_3_15_10.js: Monopsony Characteristics
+note_economics_3_15_11.js: Contestable Market Theory
+note_economics_3_15_12.js: Sunk Costs Defined
+note_economics_3_16_0.js: Derived Demand for Labour
+note_economics_3_16_1.js: Labour Demand Elasticity
+note_economics_3_16_2.js: Labour Supply Determinants
+note_economics_3_16_3.js: Labour Supply Elasticity
+note_economics_3_16_4.js: Labour Market Equilibrium
+note_economics_3_16_5.js: Wage Setting in Competitive Markets
+note_economics_3_16_6.js: Wage Setting in Non-Competitive Markets
+note_economics_3_16_7.js: Public-Sector Wage Setting
+note_economics_3_16_8.js: Geographical Labour Immobility
+note_economics_3_16_9.js: Occupational Labour Immobility
+note_economics_3_17_0.js: The Case for Intervention in Product Markets
+note_economics_3_17_1.js: Monopoly and Merger Controls
+note_economics_3_17_2.js: Competition and Contestability Policies
+note_economics_3_17_3.js: Supplier and Worker Protection
+note_economics_3_17_4.js: Intervention Effects on Price and Efficiency
+note_economics_3_17_5.js: Limits to Government Intervention
+note_economics_3_17_6.js: Case for Labour Market Intervention
+note_economics_3_17_7.js: Wage Controls
+note_economics_3_17_8.js: Tax Interventions in Labour Markets
+note_economics_3_17_9.js: Mobility and Anti-Discrimination Measures

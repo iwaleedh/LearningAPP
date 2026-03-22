@@ -1,0 +1,22 @@
+src/data/seedNotes/mathematics/note_2_1_1.js: Use algebraic manipulation and logical deduction to prove mathematical statements rigorously.
+src/data/seedNotes/mathematics/note_2_1_2.js: Use proof by exhaustion to verify a result by checking every case in a finite set.
+src/data/seedNotes/mathematics/note_2_1_3.js: Disprove mathematical conjectures by finding a single counter-example.
+src/data/seedNotes/mathematics/note_2_2_0.js: Simplify, add, subtract, multiply and divide algebraic fractions (rational expressions).
+src/data/seedNotes/mathematics/note_2_2_1.js: Divide a polynomial by a linear factor using algebraic long division, expressing the result as quotient + remainder.
+src/data/seedNotes/mathematics/note_2_2_2.js: Apply the factor theorem and remainder theorem to factorise polynomials, including cubics.
+src/data/seedNotes/mathematics/note_2_3_0.js: Write and use the equation of a circle in both standard form and general form.
+src/data/seedNotes/mathematics/note_2_3_1.js: Use completing the square to find the centre and radius of a circle given in general form.
+src/data/seedNotes/mathematics/note_2_3_2.js: Apply the angle-in-a-semicircle theorem to solve coordinate geometry problems.
+src/data/seedNotes/mathematics/note_2_3_3.js: Find the perpendicular bisector of a chord and use the bisection property to locate the centre of a circle.
+src/data/seedNotes/mathematics/note_2_3_4.js: Find the equation of a tangent to a circle at a given point, using the perpendicularity of radius and tangent.
+src/data/seedNotes/mathematics/note_2_4_0.js: Understand and use the terminology of sequences and series, including convergent, divergent, periodic, and oscillating sequences.
+src/data/seedNotes/mathematics/note_2_4_1.js: Define sequences using recurrence relations and generate terms by substitution.
+src/data/seedNotes/mathematics/note_2_4_2.js: Find the nth term of an arithmetic sequence and use it to solve problems.
+src/data/seedNotes/mathematics/note_2_4_3.js: Find the sum of an arithmetic series using the sum formula, and solve problems involving Σ notation.
+src/data/seedNotes/mathematics/note_2_4_4.js: Find the nth term of a geometric sequence and identify its behaviour based on the common ratio.
+src/data/seedNotes/mathematics/note_2_4_5.js: Find the sum of a finite geometric series and the sum to infinity of a convergent geometric series.
+src/data/seedNotes/mathematics/note_2_4_6.js: Interpret and evaluate expressions written in sigma notation, including standard results.
+src/data/seedNotes/mathematics/note_2_4_7.js: Expand (a + bx)ⁿ for positive integer n using the binomial theorem, and find specific terms using the general term formula.
+src/data/seedNotes/mathematics/note_2_4_8.js: Use the binomial expansion to approximate numerical values and understand the conditions for validity.
+src/data/seedNotes/mathematics/note_2_5_0.js: Sketch and understand the key properties of exponential functions y = aˣ and y = eˣ.
+src/data/seedNotes/mathematics/note_2_5_1.js: Understand logarithms as the inverse of exponentials, and sketch y = ln x.

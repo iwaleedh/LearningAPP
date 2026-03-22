@@ -1,0 +1,98 @@
+{
+  "src/data/seedNotes/mathematics/note_1_2_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Be careful with negative coordinates when substituting into the distance and gradient formulae; always use brackets to avoid sign errors, such as accidentally subtracting a negative value without turning it into a positive."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_2_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When asked for the equation in the form ax + by + c = 0, ensure a, b, and c are integers. Leaving fractions in your final answer will cost you the final accuracy mark."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_2_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A common mistake is just changing the sign or just reciprocating for perpendicular gradients. Remember to do both: the perpendicular gradient to m is strictly -1/m."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_2_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When interpreting the y-intercept in a real-world model, always relate it back to the specific context of the question (e.g., initial cost or starting temperature), rather than simply stating it is where the line crosses the y-axis."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always draw a quick sketch of the CAST diagram or the trig graphs to check which quadrant your angle is in. Remember there are usually two solutions in a standard 360-degree interval."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Ensure your calculator is in the correct mode (degrees or radians) before starting any trigonometric calculations. Many marks are lost to this simple oversight at the start of an exam."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Memorise the exact values using the special triangles rather than just relying on your calculator, as some problem-solving questions specifically require you to show your working to prove an exact value result."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding an angle using the sine rule, explicitly check if the obtuse angle could be a valid solution (the ambiguous case), especially if the diagram is not drawn to scale or only side lengths are given."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Only use the simplified formulas s = r * theta and Area = 0.5 * r^2 * theta when the angle is strictly in radians. If the angle is given in degrees, you must convert it first to avoid completely incorrect answers."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Pay close attention to the requested interval (e.g. 0 to 360 degrees vs -180 to 180 degrees) when listing all solutions to a trigonometric equation; missing a solution or providing one outside the range loses marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_3_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When sketching transformed graphs, always clearly label the coordinates of the maximum points, minimum points, and axis intersections. Sketching lightly in pencil first can help get the shape and proportions right."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_4_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that the gradient of a curve at a point is exactly equal to the gradient of the tangent drawn at that same point. If you are asked to find the gradient of a curve, you need to differentiate."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_4_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When differentiating from first principles, clearly state the limit formula and show every single step of the algebraic expansion. Cancelling the h terms before showing the fully expanded numerator is a common reason for losing method marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_4_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always rewrite expressions like roots and fractions as powers of x (e.g. 1/x^2 as x^-2) before attempting to apply the power rule. Trying to differentiate denominators directly is a frequent and fatal error."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_4_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The normal is perpendicular to the tangent, so use the rule m2 = -1/m1. Make sure to substitute the x-coordinate into the differentiated equation (dy/dx) to find the gradient, not into the original y equation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_1_5_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Never forget the constant of integration (+c) when evaluating indefinite integrals. To find its specific value, substitute the coordinates of the given point into the newly integrated equation, not the original derivative."
+    }
+  ]
+}

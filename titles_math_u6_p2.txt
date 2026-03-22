@@ -1,0 +1,10 @@
+src/data/seedNotes/mathematics/note_6_3_0.js: Use Venn diagrams to find probabilities; apply the addition rule and identify mutually exclusive events.
+src/data/seedNotes/mathematics/note_6_3_1.js: Apply the conditional probability formula, identify independent events, and use the multiplication rule.
+src/data/seedNotes/mathematics/note_6_4_0.js: Interpret scatter diagrams; identify types of correlation; understand why correlation does not imply causation; distinguish interpolation from extrapolation.
+src/data/seedNotes/mathematics/note_6_4_1.js: Calculate the product moment correlation coefficient (pmcc); interpret its value; conduct a hypothesis test for correlation.
+src/data/seedNotes/mathematics/note_6_4_2.js: Find the equation of the least squares regression line; interpret the coefficients; use the line to make predictions.
+src/data/seedNotes/mathematics/note_6_5_0.js: Define a discrete random variable; construct a probability distribution table; find and use the cumulative distribution function.
+src/data/seedNotes/mathematics/note_6_5_1.js: Calculate the expected value E(X) and variance Var(X) of a discrete random variable; apply the E(aX+b) and Var(aX+b) rules.
+src/data/seedNotes/mathematics/note_6_6_0.js: Understand and describe the properties of the normal distribution; standardise to Z ~ N(0,1); use the 68-95-99.7 rule.
+src/data/seedNotes/mathematics/note_6_6_1.js: Use Z-tables to find probabilities from the normal distribution; find unknown mean or variance given a probability.
+src/data/seedNotes/mathematics/note_6_6_2.js: Conduct a hypothesis test for zero correlation using the Product Moment Correlation Coefficient (PMCC).

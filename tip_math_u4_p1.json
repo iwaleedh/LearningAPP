@@ -1,0 +1,98 @@
+{
+  "src/data/seedNotes/mathematics/note_4_1_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always state your initial assumption clearly at the beginning (e.g., 'Assume that sqrt(2) is rational'). Marks are often lost for missing the concluding statement linking the mathematical contradiction back to the original claim."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_2_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using the substitution method to find constants, remember to show your working. Examiners need to see the values you substitute, not just the final constants, to reliably award method marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_2_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "A common error with repeated factors like (x-1)^2 is forgetting to include the single power term A/(x-1) alongside B/(x-1)^2. Always double-check your initial setup before finding the constants."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_2_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Before starting partial fractions, always check the degree of the numerator against the denominator. If they are equal or the numerator is higher, you must use algebraic long division first to find the polynomial part."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_2_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When a denominator includes an irreducible quadratic term like (x^2+3), remember its numerator must be a linear term of the form Ax+B, not just a single constant A. Neglecting the '+ B' is a frequent cause of lost marks."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_3_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When eliminating the parameter using trigonometric identities (like sin^2(t) + cos^2(t) = 1), carefully check the domain of t to ensure you define the domain and range of the Cartesian equation correctly."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_3_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Pay close attention to the given domain of the parameter t. An exam question might only require you to sketch a specific restricted segment of the curve, not the entire shape!"
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_3_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember the formula is Integral(y * dx/dt) dt. A classic mistake is forgetting the 'dx/dt' term and just integrating y with respect to t. Always check that your limits have been converted to match the t variable."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_3_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Use the chain rule dy/dx = (dy/dt) / (dx/dt) carefully. If dx/dt = 0, you have a vertical tangent. Don't forget that finding the equation of a normal requires the negative reciprocal gradient: -dx/dy."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_4_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The formula given in the formula booklet for (1+x)^n requires the first term to be exactly 1. If you have (a+bx)^n, you must factor out 'a^n' first. Forgetting to apply the power n to the factored-out 'a' is a very common error."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_4_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "If you expand (a+bx)^n by factoring out a, your expansion is in terms of (b/a)x. The validity condition becomes |(b/a)x| < 1. Always solve this inequality to explicitly state the range of valid x values."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_4_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "It is much safer to write (A/(1-x)) + (B/(1+2x)) as A(1-x)^-1 + B(1+2x)^-1 and expand each bracket separately before adding them together. Be extra careful with minus signs in the (1+2x)^-1 expansion."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_4_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When choosing a value of x to substitute for an approximation, pick a small value so the series converges quickly. Ensure your chosen x falls strictly within the valid mathematical range |x| < 1."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_5_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Treat 'y' as a function of 'x'. When differentiating mixed terms like xy, you MUST use the product rule: x*dy/dx + y. Forgetting the product rule here is one of the most common mistakes in differentiation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Choose your 'u' and 'dv/dx' wisely using the LATE (Logs, Algebra, Trig, Exponentials) or equivalent priority rule. Let 'u' be the part that simplifies when differentiated, like x or ln(x)."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Keep your work highly organised and use large brackets when substituting the second application of parts back into the first. Sign errors are extremely common when nested negative signs are not clearly written out."
+    }
+  ]
+}

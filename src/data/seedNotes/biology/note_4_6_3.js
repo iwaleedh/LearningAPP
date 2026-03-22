@@ -34,7 +34,16 @@ export const note_biology_4_6_3 = {
       type: "paragraph",
       data: { text: "Ensure strict aseptic techniques are maintained whenever withdrawing samples from the flask. As the microorganisms replicate, the broth becomes cloudier, and absorbance strictly rises during the log phase." }
     },
-{ 'id': 'callout-examiner-7c9f1eb7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Serial Dilution Calculation', 'text': 'Be careful when calculating the original bacteria density. You must multiply the number of colonies counted by the dilution factor **and** adjust for the volume plated. For example, if you plate $0.1\text{ cm}^3$, you must multiply by 10 to get the count per $1\text{ cm}^3$.' } }
+{ 'id': 'callout-examiner-7c9f1eb7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Serial Dilution Calculation', 'text': 'Be careful when calculating the original bacteria density. You must multiply the number of colonies counted by the dilution factor **and** adjust for the volume plated. For example, if you plate $0.1\text{ cm}^3$, you must multiply by 10 to get the count per $1\text{ cm}^3$.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Log Phase = Exponential Growth",
+        text: "During the exponential (log) phase, there are no limiting factors. Nutrients are abundant and waste levels are low, allowing the bacteria to divide at their maximum theoretical rate."
+      }
+    }
   ],
   recall: {
     enabled: true,

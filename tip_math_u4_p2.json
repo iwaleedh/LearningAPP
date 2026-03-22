@@ -1,0 +1,98 @@
+{
+  "src/data/seedNotes/mathematics/note_4_6_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always clearly state your partial fractions before integrating. A very common error is forgetting to divide by 'a' when integrating 1/(ax+b) to give (1/a)ln|ax+b|."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When integrating squared trigonometric functions like sin^2(x) or cos^2(x), always use the double-angle formulae for cos(2x). Do not attempt to increase the power and divide by the new power."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When using substitution for definite integrals, always change the limits from 'x' values to 'u' values immediately. This saves time and avoids the risk of forgetting to substitute your 'x' expression back in at the end."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that the area is the integral of y * (dx/dt) dt. A common mistake is to just integrate y with respect to t. Always check which t-values correspond to the upper and lower x-limits to ensure your area does not compute as negative."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Always write down the formula V = pi * integral of y^2 dx before substituting your function. Do not forget to square the function before integrating, and remember to leave your final answer as an exact multiple of pi unless a decimal is explicitly requested."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_7.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding volumes of revolution using parametric equations, carefully substitute both y^2 and dx/dt in terms of t. Do not forget to multiply these expressions together algebraically before attempting to perform the integration."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_8.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When commenting on whether the trapezium rule overestimates or underestimates, sketch the curve. If the curve is convex (concave up), the straight lines of the trapezia sit above the curve, giving an overestimate."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_9.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Ensure you place all 'y' terms with 'dy' and all 'x' terms with 'dx' before integrating. Never forget to add the constant of integration '+ c' immediately after integrating both sides, rather than right at the end of your algebraic manipulation."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_6_10.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Pay close attention to wording like 'rate of decrease' or 'cools'. These imply a negative rate of change. Ensure your formulated differential equation includes a negative sign, for example, dM/dt = -kM."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_0.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When calculating the magnitude of a vector with negative components, ensure you bracket the negative values when squaring them (e.g., (-3)^2 = 9). A common calculator error is writing -3^2, which evaluates to -9."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_1.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Remember that if the scalar product of two non-zero vectors is zero, the vectors are perpendicular. When finding the angle between two lines, always use their direction vectors, never their position vectors."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_2.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "The equation of a line r = a + tb requires 'a' to be a specific position vector on the line and 'b' to be a direction vector. Never confuse these two; 'b' shows which way the line points, while 'a' anchors it to the origin."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_3.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When showing two lines intersect, equate their components to find the parameters using two of the equations. You must then explicitly substitute these parameter values into the third equation to verify they give the same result."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_4.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "In the Cartesian equation of a plane ax + by + cz = d, the coefficients a, b, and c directly give you the normal vector to the plane. This is a crucial and time-saving shortcut for many multi-step vector geometry questions."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_5.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "When finding the angle between a line and a plane, taking the dot product of the line's direction vector and the plane's normal vector gives you the angle with the normal. Remember to subtract this value from 90 degrees to get the required angle with the plane."
+    }
+  ],
+  "src/data/seedNotes/mathematics/note_4_7_6.js": [
+    {
+      "title": "Examiner Tip",
+      "text": "Drawing a clear, large diagram is essential for vector geometry problems, even if working in 3D. Breaking complex displacement paths down into smaller known vectors (e.g., AB = OB - OA) is the key to proving geometric properties."
+    }
+  ]
+}

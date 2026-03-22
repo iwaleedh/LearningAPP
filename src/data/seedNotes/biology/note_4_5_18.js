@@ -37,7 +37,16 @@ export const note_biology_4_5_18 = {
       type: "callout",
       data: { style: "warning", title: "Predictive Models", text: "Scientists use computer models to extrapolate current data into the future. Extrapolation is uncertain because it assumes current trends continue unchanged, ignoring potential unknown feedback mechanisms, future emission reductions, or unpredictable solar activity." }
     },
-{ 'id': 'callout-examiner-5a27328e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Correlation vs Causation', 'text': 'When discussing evidence for climate change, distinguish between correlation and causation. A strong correlation does not automatically prove cause, even if it is a central piece of evidence.' } }
+{ 'id': 'callout-examiner-5a27328e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Correlation vs Causation', 'text': 'When discussing evidence for climate change, distinguish between correlation and causation. A strong correlation does not automatically prove cause, even if it is a central piece of evidence.' } },
+    {
+      id: 'callout-tip-u4-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Extrapolation Limitations",
+        text: "Examiners will test you on the reliability of data. Extrapolating to predict future climates is unreliable because it assumes current trends continue unchanged and ignores future emissions policies."
+      }
+    }
   ],
   recall: {
     enabled: true,
