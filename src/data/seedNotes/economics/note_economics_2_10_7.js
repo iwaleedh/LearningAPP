@@ -10,6 +10,15 @@ export const note_economics_2_10_7 = {
     { id: 'callout-we1', type: 'callout', data: { style: 'worked', title: 'Worked Example', text: 'MPC = 0.8, MPT = 0.1, MPM = 0.1 → MPW = 0.2 → k = 1/0.2 = 5<br/>An initial ↑G of £100m → final ↑GDP = £500m<br/>(Each round: spend 80% → 0.8 × round income flows to next round)' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Policy Implication', text: 'A high multiplier means government spending is a powerful tool in recession — each £1 of fiscal stimulus generates more than £1 of GDP growth. However, leakages (imports, savings, taxes) reduce the real-world multiplier. In open economies, the multiplier is typically closer to 1–1.5.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Multiplier k = 1/MPW. Initial injection is multiplied through spending rounds. Size depends on leakages (MPS, MPT, MPM). Higher MPC → larger multiplier → greater AD/output effect.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In extended multiplier analysis, recognise that the multiplier diminishes as leakage rates increase. An economy with high marginal tax rates, high import propensity (open economy), and high savings propensity will experience a weaker multiplier effect. Use this to explain why fiscal stimulus works better in some economies than others."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

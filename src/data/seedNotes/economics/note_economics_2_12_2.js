@@ -10,6 +10,15 @@ export const note_economics_2_12_2 = {
     { id: 'list-3', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Progressive taxation</strong>: higher-income earners pay higher marginal rates → redistributes income.' }, { text: '<strong>Benefits / transfers</strong>: welfare, working tax credits, child benefits → floor on low incomes.' }, { text: '<strong>Minimum wage</strong>: raises floor for workers.' }, { text: '<strong>Investment in education</strong>: narrows skill premium.' }] } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Trade-Off', text: 'Some redistribution reduces work incentives and entrepreneurship. Extreme equality may reduce economic dynamism. The optimal degree of inequality is debated — some inequality creates incentives for effort and innovation.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Income equality objective: measured by Gini coefficient. Lower inequality improves social cohesion, demand, and human capital. Tools: progressive tax, benefits, minimum wage. Trade-off: reduces work incentives if excessive.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Use the Gini coefficient (0 = perfect equality, 1 = perfect inequality) to measure inequality objectively, but acknowledge its limitations: it ignores intergenerational mobility, regional disparities, and relative deprivation. In exam answers, mention both quantitative measures (Gini, income ratios) and qualitative aspects (social mobility, poverty traps)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

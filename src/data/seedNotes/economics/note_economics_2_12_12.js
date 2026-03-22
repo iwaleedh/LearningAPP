@@ -10,6 +10,15 @@ export const note_economics_2_12_12 = {
     { id: 'list-3', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Strengths</strong>: addresses root causes of inefficiency; shifts LRAS right → growth without inflation; best for long-run sustainability.' }, { text: '<strong>Weaknesses</strong>: very long time lags (education takes decades); high upfront cost; risk of government failure; cannot stabilise economy in short run.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Best exam answers combine policies: "In the short run, monetary policy stimulus is needed to close the output gap; in the long run, supply-side investment in education raises potential output. Fiscal policy may complement if monetary policy is constrained at the zero lower bound."' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Fiscal: multiplier strength, but debt/crowding out risk. Monetary: flexible but zero lower bound limit. Supply-side: best long-run but slow. Packages often combine all three.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When evaluating fiscal policy, compare actual outcomes to a counterfactual scenario ('what would have happened without intervention?'). A \u00a350bn stimulus that raises output by \u00a330bn is not 'ineffective'\u2014ask: would output have fallen by \u00a320bn without it? Use multiplier estimates to assess policy effectiveness, and account for crowding out, time lags, and expectations effects."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -8,6 +8,15 @@ export const note_economics_2_12_0 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Growth</strong>: more output means higher average incomes; enables spending on public services and poverty reduction.' }, { text: '<strong>Low inflation</strong>: protects the value of money; reduces uncertainty for savers and investors; prevents redistributive effects (debtors gain over creditors in high inflation).' }, { text: '<strong>Low unemployment</strong>: waste of resources; social and psychological costs; creates fiscal burden through welfare payments.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Objectives often conflict — e.g. pursuing growth may increase inflation. Trade-offs between objectives are a major evaluation theme. Always ask: achieving one objective may make another harder.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Main objectives: growth (~2–2.5%), low inflation (~2% CPI), low unemployment (~NAIRU). These may conflict with each other and with the current account or budget balance.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The main macroeconomic objectives are: low unemployment, low inflation, economic growth, and a balanced current account. Examiners test your ability to explain trade-offs (especially the Phillips Curve trade-off between inflation and unemployment). Always reference the short-run Phillips Curve and explain why long-run neutrality exists at the natural rate of unemployment."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

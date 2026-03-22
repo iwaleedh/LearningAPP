@@ -9,6 +9,15 @@ export const note_economics_2_12_5 = {
     { id: 'h-3', type: 'heading', data: { text: 'Mechanism', level: 2 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: 'Supply-side policies improve the <strong>quantity or quality of factors of production</strong>: more skilled workers, more efficient capital, better technology.' }, { text: 'Unlike demand-side policy, supply-side effects are <strong>long-run</strong> — structural reforms take years or decades to show results.' }, { text: 'Supply-side improvements allow AD to grow without inflationary pressure — resolving the growth-inflation trade-off.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Supply-side policy shifts LRAS right. Two types: free-market (deregulation, tax cuts) and interventionist (education, R&D, infrastructure). Long-run focus; allows growth without inflation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Neglecting to distinguish between free-market (supply-side deregulation, tax cuts, privatisation) and interventionist supply-side policies (skills training, R&D subsidies, infrastructure investment). Examiners test whether you understand the mechanisms: free-market policies boost incentives, while interventionist policies correct market failures. Both aim to shift AS right, but using different routes."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

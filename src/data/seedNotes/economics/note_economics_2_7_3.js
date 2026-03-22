@@ -92,6 +92,15 @@ export const note_economics_2_7_3 = {
       data: {
         text: 'Total GDP measures overall economic size; GDP per capita divides by population for average living standards. Per capita is better for welfare comparisons but ignores income distribution.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When comparing living standards between countries, always use real GDP per capita (adjusted for both inflation and population). Acknowledge the limitation that it ignores income inequality."
+      }
     }
   ],
   recall: {

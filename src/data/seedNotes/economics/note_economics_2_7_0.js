@@ -99,6 +99,15 @@ export const note_economics_2_7_0 = {
       data: {
         text: 'Real GDP adjusts nominal GDP for inflation using a price deflator, providing a true measure of output growth. The growth rate is calculated as the percentage change in real GDP between two periods.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In exam questions, always state whether you are using real or nominal GDP when making comparisons. Real GDP is the correct measure for comparing economic performance over time or across countries with different price levels."
+      }
     }
   ],
   recall: {

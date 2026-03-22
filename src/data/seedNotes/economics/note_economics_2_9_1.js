@@ -81,6 +81,15 @@ export const note_economics_2_9_1 = {
         title: 'Worked Example: Oil Price Shock',
         text: 'In 2022, oil prices surged following geopolitical tensions. This raised energy costs for all UK producers. The SRAS curve shifted <strong>leftward</strong> — firms could only supply the same output at a higher price level, or less output at the same price level. The result: higher inflation AND lower real output (stagflation).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Do NOT confuse a movement along SRAS (caused only by a price level change) with a shift of SRAS (caused by cost or productivity changes). In an exam, explicitly state whether you are shifting the curve or moving along it."
+      }
     }
   ],
   recall: {

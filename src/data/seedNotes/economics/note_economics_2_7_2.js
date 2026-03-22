@@ -89,6 +89,15 @@ export const note_economics_2_7_2 = {
       data: {
         text: 'Nominal GDP is at current prices and includes inflation; real GDP uses constant base-year prices to show only true volume changes. Real GDP = (Nominal GDP / Price Deflator) × 100.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Never use nominal GDP to compare economic performance over time or between countries. If nominal GDP rose by 5% but inflation was 5%, real GDP growth was 0% \u2014 no genuine improvement in output."
+      }
     }
   ],
   recall: {

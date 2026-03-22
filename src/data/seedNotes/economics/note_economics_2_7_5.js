@@ -92,6 +92,15 @@ export const note_economics_2_7_5 = {
       data: {
         text: 'A recession is technically defined as two consecutive quarters of negative real GDP growth. Effects include rising unemployment, falling investment, lower tax revenues, and widening budget deficits.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exam Warning",
+        text: "The technical definition requires exactly two consecutive quarters of negative growth. In popular usage, people sometimes use recession loosely \u2014 but in exams you must use the technical two-quarter definition. Note: a slowdown in growth (growth still positive but slower) is not a recession."
+      }
     }
   ],
   recall: {

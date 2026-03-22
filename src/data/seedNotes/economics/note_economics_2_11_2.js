@@ -10,6 +10,15 @@ export const note_economics_2_11_2 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Competitive exchange rate</strong>: undervalued currency keeps exports cheap ($1 = more units of foreign currency).' }, { text: '<strong>Low production costs</strong>: wages, energy, raw materials must be competitive.' }, { text: '<strong>Strong global demand</strong>: export-led growth requires buoyant trading partners.' }, { text: '<strong>Trade openness</strong>: access to foreign markets through trade agreements.' }] } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Risks', text: 'Export-led growth creates <strong>external vulnerability</strong> — a global downturn (e.g. 2008–09) collapses export demand. Countries over-reliant on exports (e.g. Germany) faced sharp recessions when trading partners contracted.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Export-led growth drives GDP through rising (X−M). Requires competitive currency, low costs, strong global demand. Risk: vulnerability to global recession.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When analysing export-led growth, assess external demand conditions. A strategy relying on export growth is vulnerable to global recessions, foreign protectionism, or exchange rate appreciation (reducing price competitiveness). Reference real-world examples (e.g., East Asian tigers during financial crises) to show understanding of limitations."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

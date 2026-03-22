@@ -8,6 +8,15 @@ export const note_economics_2_12_1 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Budget deficit</strong>: G > T → government borrows (issues gilts). Adds to national debt over time.' }, { text: '<strong>Budget surplus</strong>: T > G → government repays debt.' }, { text: '<strong>Cyclically adjusted balance</strong>: focuses on the structural deficit (not the cyclical component that rises in recession).' }, { text: 'High national debt → large interest payments → crowd out other spending.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Distinguish between the budget <strong>deficit</strong> (annual flow) and national <strong>debt</strong> (stock accumulated over time). Deficits add to debt even in good years if the structural deficit persists.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Current account objective: avoid unsustainable deficits. Budget objective: control deficit to manage national debt. Both are long-run sustainability goals rather than strict targets.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing the current account deficit with a trade deficit. Current account includes: trade in goods and services, income flows (investment returns, wages), and transfers. A trade deficit can be offset by investment income inflows, resulting in a current account surplus. Always itemise components when analysing external balance."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

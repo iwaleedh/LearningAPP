@@ -7,6 +7,15 @@ export const note_economics_2_12_7 = {
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Limitations', text: 'Time lags — education systems take 10–20 years to improve productivity. Government failure risk: state may misallocate funds, subsidise unproductive firms ("picking losers"). High fiscal cost in short run.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation', text: 'Interventionist policies are justified where market failures exist — education has positive externalities (underinvestment without subsidy), infrastructure has public good characteristics, R&D has non-rivalrous spillovers. These justify intervention beyond what the market provides.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Interventionist supply-side: education, R&D, infrastructure, childcare, industrial policy. Correct market failures, raise human capital, shift LRAS. Long time lags; risk of government failure.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Automatically treating state intervention as efficiency-reducing, while free-market policies as efficiency-enhancing. Interventionist supply-side policies (skills, R&D, infrastructure) correct positive externalities that markets underprovide. Some degree of intervention is efficiency-enhancing. Evaluate policies on merit with reference to market failure theory, not ideology."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

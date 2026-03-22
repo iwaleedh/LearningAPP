@@ -7,6 +7,15 @@ export const note_economics_2_12_11 = {
     { id: 'h-2', type: 'heading', data: { text: 'Why Central Bank Independence Matters', level: 2 } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: 'Granted independence in 1997 to insulate monetary policy from short-term political incentives (politicians may want low rates before elections → risk of inflation).' }, { text: '<strong>Credibility</strong>: independent bank anchors inflation expectations — if people believe inflation will stay at 2%, wage demands remain moderate.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Central bank roles: monetary policy (MPC), lender of last resort, financial stability (FPC/PRA), note issue, FX reserves. Independence reduces political short-termism and anchors inflation expectations.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Reducing central bank roles to 'controlling inflation via interest rates.' Modern central banks also: manage financial stability, act as lenders of last resort, regulate banks, and influence money supply via quantitative easing. The 2008 crisis showed that price stability alone is insufficient\u2014systemic risk and credit conditions matter enormously. Include these broader roles in your answers."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

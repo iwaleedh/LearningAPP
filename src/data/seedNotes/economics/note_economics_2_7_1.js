@@ -85,6 +85,15 @@ export const note_economics_2_7_1 = {
       data: {
         text: 'GNI = GDP + net income from abroad. It better measures residents\' actual income and living standards, particularly in countries with large multinational sectors or significant remittance flows.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When asked which measure is more appropriate for measuring living standards, argue for GNI per capita \u2014 it captures income that residents actually receive, including from overseas, and excludes profits flowing out of the country."
+      }
     }
   ],
   recall: {

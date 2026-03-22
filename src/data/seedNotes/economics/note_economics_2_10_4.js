@@ -60,6 +60,15 @@ export const note_economics_2_10_4 = {
         title: 'Exam Tip',
         text: 'The multiplier works in <strong>both directions</strong>. A withdrawal (e.g. a tax rise) triggers a <strong>downward</strong> multiplier process — national income falls by more than the initial withdrawal. A rise in taxes of £100m with a multiplier of 3 reduces national income by £300m.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Calculating the multiplier from macroeconomic data without understanding the rounds process. The multiplier is not simply \u0394Y \u00f7 \u0394I; it depends on the MPC and leakage rates. In exam questions, show each round of spending to demonstrate understanding of the mechanism, not just the final numerical answer."
+      }
     }
   ],
   recall: {

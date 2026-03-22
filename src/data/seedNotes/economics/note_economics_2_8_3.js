@@ -10,6 +10,15 @@ export const note_economics_2_8_3 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Interest rates</strong>: higher rates increase the return to saving → savings ratio rises.' }, { text: '<strong>Confidence / uncertainty</strong>: higher uncertainty (recessions, job insecurity) → precautionary saving rises → savings ratio rises.' }, { text: '<strong>Income level</strong>: higher-income households save a larger proportion — savings ratio tends to rise with income.' }, { text: '<strong>Access to credit</strong>: easy credit reduces need to save in advance for purchases → lowers savings ratio.' }, { text: '<strong>Inflation</strong>: high inflation erodes real value of savings → discourages saving.' }, { text: '<strong>Demographics</strong>: ageing populations may draw down savings (dissaving); younger workers save more for retirement.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'UK savings ratio fell sharply before the 2008 financial crisis (easy credit → households borrowed and consumed). It spiked after (uncertainty → precautionary saving). This context demonstrates the counter-cyclical nature of the savings ratio.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Savings ratio = saving / disposable income × 100. Higher savings → lower consumption. Factors: interest rates, confidence, income, credit access, inflation, demographics.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "UK savings ratio fell sharply before the 2008 financial crisis (easy credit \u2192 households borrowed and consumed). It spiked after (uncertainty \u2192 precautionary saving). This context demonstrates the counter-cyclical nature of the savings ratio."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -82,6 +82,15 @@ export const note_economics_2_7_9 = {
       data: {
         text: 'Disinflation is a slowing of inflation (still positive); deflation is negative inflation (prices falling). Deflation is dangerous: it causes spending delays, debt-deflation spirals, rising real rates, and falling profits.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Exam Warning",
+        text: "Do not confuse disinflation with deflation. Disinflation means prices are still rising \u2014 just more slowly. Only deflation means prices are actually falling. Stating prices fell when inflation slowed is incorrect."
+      }
     }
   ],
   recall: {

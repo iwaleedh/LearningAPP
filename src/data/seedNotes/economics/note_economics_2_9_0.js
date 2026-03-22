@@ -76,6 +76,15 @@ export const note_economics_2_9_0 = {
         title: 'Exam Tip',
         text: 'Always label your AS diagrams clearly: SRAS slopes upward, classical LRAS is vertical at Yf. State whether you are using the classical or Keynesian model when discussing LRAS shape.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Always label your AS diagrams clearly: SRAS slopes upward, classical LRAS is vertical at Yf. State whether you are using the classical or Keynesian model when discussing LRAS shape."
+      }
     }
   ],
   recall: {

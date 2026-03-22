@@ -8,6 +8,15 @@ export const note_economics_2_8_2 = {
     { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Consumption Function', text: 'C = a + bYd<br/>where: a = autonomous consumption (independent of income), b = MPC (fraction of extra income spent), Yd = disposable income.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'The <strong>Keynesian consumption function</strong> shows that not all income is consumed — some is saved. A rise in income increases consumption, but by less than the full income rise (MPC < 1).' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Consumption is primarily determined by disposable income (MPC). Other key factors: interest rates, wealth, confidence, credit availability, and inflation expectations.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The Keynesian consumption function shows that not all income is consumed \u2014 some is saved. A rise in income increases consumption, but by less than the full income rise (MPC < 1)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

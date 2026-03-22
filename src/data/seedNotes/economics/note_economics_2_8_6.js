@@ -6,6 +6,15 @@ export const note_economics_2_8_6 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Corporation tax cuts</strong>: lower tax on profits → increases net return on investment → raises post-tax MEC → encourages more projects.' }, { text: '<strong>Capital allowances / investment tax relief</strong>: firms deduct cost of new capital against taxable profits — lowers effective cost → boosts investment.' }, { text: '<strong>R&D tax credits</strong>: subsidise research and development expenditure to encourage innovation investment.' }, { text: '<strong>Enterprise Investment Schemes (EIS)</strong>: tax relief for investors in start-up businesses — stimulates FDI into high-risk ventures.' }, { text: '<strong>Infrastructure investment</strong>: government builds roads, broadband, rail — reduces business costs and "crowds in" private investment.' }, { text: '<strong>Planning reform</strong>: streamlining planning permissions reduces delays and costs of building new capacity.' }, { text: '<strong>Trade agreements / single market access</strong>: guaranteed market access increases expected returns on export-oriented investment.' }] } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Limitations', text: 'Investment is highly influenced by <strong>expectations and confidence</strong>; even zero interest rates may not stimulate investment if firms are pessimistic ("liquidity trap"). Government incentives reduce cost but cannot change expectations of future demand on their own.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Policies to incentivise investment: corporation tax cuts, capital allowances, R&D credits, EIS, infrastructure spending, planning reform. But confidence is equally important — supply-side incentives alone are insufficient if demand outlook is weak.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Investment is highly influenced by expectations and confidence; even zero interest rates may not stimulate investment if firms are pessimistic (liquidity trap). Government incentives reduce cost but cannot change expectations of future demand on their own."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

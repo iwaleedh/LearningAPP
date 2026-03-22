@@ -6,6 +6,15 @@ export const note_economics_2_12_6 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Deregulation</strong>: removing rules that restrict competition → increases efficiency; lowers costs; promotes innovation (e.g. UK financial deregulation "Big Bang" 1986).' }, { text: '<strong>Privatisation</strong>: transfer state-owned companies to private sector → profit motive drives efficiency; reduces government borrowing.' }, { text: '<strong>Income tax cuts</strong>: lower marginal rates increase work incentive; raise labour supply — Laffer curve suggests cutting high marginal rates can increase total tax revenue.' }, { text: '<strong>Corporation tax cuts</strong>: attract FDI; raise post-tax return on investment → capital accumulation.' }, { text: '<strong>Reduction of benefits / welfare reform</strong>: reduce replacement ratio (benefit / wage ratio) → increase incentive to seek employment; reduce voluntary (frictional) unemployment.' }, { text: '<strong>Trade liberalisation</strong>: reducing tariffs and trade barriers → exposes firms to competition; reduces costs of imported inputs; enables specialisation.' }, { text: '<strong>Anti-monopoly policy</strong>: preventing mergers, breaking up monopolies → more competitive markets → lower prices, greater efficiency.' }] } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Limitations', text: 'Deregulation can reduce safety or consumer protection. Privatisation may create private monopolies. Welfare cuts increase poverty if not offset by wage growth. Free-market policies prioritise efficiency over equity.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Free-market supply-side tools: deregulation, privatisation, income/corporation tax cuts, welfare reform, trade liberalisation. Aim to reduce market distortions and boost efficiency through competition.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Link free-market supply-side policies to efficiency gains through competition. Deregulation removes barriers to entry, allowing new firms to compete. Privatisation subjects firms to profit incentives and competition. Tax cuts raise disposable income, boosting work incentives (assuming substitution > income effect). Always link policy to microeconomic mechanisms, not macro rhetoric."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

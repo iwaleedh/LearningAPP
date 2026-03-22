@@ -59,6 +59,15 @@ export const note_economics_2_10_3 = {
         title: 'Exam Tip',
         text: 'When drawing the Keynesian cross, ensure the 45-degree line bisects the angle and the AD line has a <strong>positive intercept</strong> (autonomous spending exists even at zero income) and a <strong>slope less than 1</strong> (MPC < 1, reflecting withdrawals).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Equilibrium real output occurs where AD = AS, but this does not guarantee full employment or zero unemployment. Examiners test whether you recognise that equilibrium can exist at any level of output\u2014below full employment (demand-deficient unemployment) or above it (demand-pull inflation). Always compare equilibrium to potential output."
+      }
     }
   ],
   recall: {

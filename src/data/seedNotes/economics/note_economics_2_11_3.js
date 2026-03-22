@@ -9,6 +9,15 @@ export const note_economics_2_11_3 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Physical capital</strong>: investing in machinery, plant, and buildings raises labour productivity (more capital per worker).' }, { text: '<strong>Infrastructure investment</strong>: government investment in roads, digital connectivity reduces business costs (positive externality).' }, { text: '<strong>R&D and innovation</strong>: investment in knowledge capital creates lasting productivity improvements — "new growth theory" (Romer).' }] } },
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'FDI Concerns', text: 'FDI may crowd out domestic firms, repatriate profits abroad, or exploit lower environmental/labour standards. "Race to the bottom" on corporate taxes reduces government revenue.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'FDI and domestic investment expand the capital stock → LRAS shifts right → potential growth. FDI also brings technology transfer and employment. Risk: profit repatriation and tax competition.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming all FDI is beneficial for growth. While FDI brings capital, technology, and skills, it can also: crowd out domestic investment, create profit repatriation, extract natural resources without reinvestment, or increase foreign ownership of strategic assets. Always evaluate FDI quality, not just quantity, in exam analysis."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

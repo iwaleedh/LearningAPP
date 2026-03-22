@@ -10,6 +10,15 @@ export const note_economics_2_12_4 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: 'If inflation expectations rise, workers demand higher wages → SRPC shifts upward (higher inflation at each unemployment level).' }, { text: '<strong>NAIRU</strong> (Non-accelerating inflation rate of unemployment): the unemployment rate consistent with stable inflation — the long-run Phillips curve is vertical at NAIRU.' }, { text: '<strong>Stagflation</strong> (1970s): simultaneous high inflation AND high unemployment shifted the SRPC right — challenged the simple trade-off view.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Distinguish short-run (downward-sloping) from long-run (vertical at NAIRU) Phillips curve. Stagflation is evidence that the simple SR trade-off breaks down when expectations shift.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'SRPC: inverse relationship between unemployment and inflation. Rising expectations shift SRPC upward. LRPC is vertical at NAIRU. Stagflation breaks the simple trade-off.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Explain the 1970s stagflation using expectations: the Phillips Curve shifted outward when inflation expectations rose, creating simultaneous inflation and unemployment. Use the expectations-augmented Phillips Curve: inflation = expected inflation + effect of output gap. This explains why inflation can be 'sticky' and why controlling expectations is central to monetary policy."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

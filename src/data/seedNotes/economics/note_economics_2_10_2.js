@@ -86,6 +86,15 @@ export const note_economics_2_10_2 = {
         title: 'Policy Connection',
         text: 'Fiscal policy operates through the J-W framework: increasing G raises J; cutting T reduces W. Both are expansionary. Increasing T raises W; cutting G reduces J. Both are contractionary. Multiplier effects amplify these initial changes in J or W.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students believe that injections (I, G, X) and withdrawals (S, T, M) always balance at equilibrium. This is only true at the macro equilibrium\u2014before reaching it, imbalances drive the economy towards equilibrium. Distinguish between the dynamic adjustment process and the final equilibrium condition."
+      }
     }
   ],
   recall: {

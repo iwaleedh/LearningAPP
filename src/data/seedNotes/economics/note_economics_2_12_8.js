@@ -8,6 +8,15 @@ export const note_economics_2_12_8 = {
     { id: 'h-2', type: 'heading', data: { text: 'Expansionary vs Contractionary Stance', level: 2 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Expansionary</strong>: ↑G or ↓T (fiscal); ↓interest rates (monetary) → stimulates AD → used in recession.' }, { text: '<strong>Contractionary</strong>: ↓G or ↑T (fiscal); ↑interest rates (monetary) → dampens AD → used to control inflation / positive output gap.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Demand-side policy: fiscal (G and T) or monetary (interest rates). Expansionary when AD too low; contractionary when AD too high. Fiscal is political; monetary is independent (Bank of England MPC).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Demand-side policy includes both fiscal (government spending, taxation) and monetary (interest rates, quantitative easing) tools. Distinguish between expansionary policy (during recession, negative output gap) and contractionary policy (during boom, positive output gap). Examiners expect you to link policy choice to the economic cycle and inflation expectations."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

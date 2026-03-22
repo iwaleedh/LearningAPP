@@ -8,6 +8,15 @@ export const note_economics_2_11_8 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Negative output gap</strong>: factories idle, workers unemployed, profits depressed, tax revenues fall, welfare spending rises → cyclical budget deficit.' }, { text: '<strong>Positive output gap</strong>: firms operating above normal capacity, labour shortages, wage pressure, inflationary spiral if unchecked; current account may worsen (↑imports).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Policy Response', text: 'Negative output gap → expansionary fiscal/monetary policy to boost AD.<br/>Positive output gap → contractionary policy (raise taxes, ↑interest rates) to cool inflation.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Negative output gap: actual < potential → deflation risk, unemployment. Positive gap: actual > potential → inflationary pressure. Policy targets closing the gap.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Positive output gaps (Y > Y*) create demand-pull inflation and labour shortages. Negative output gaps (Y < Y*) cause demand-deficient unemployment and spare capacity. Use these concepts to explain why central banks tighten policy during booms and loosen during recessions. Link output gaps to the Phillips Curve relationship."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

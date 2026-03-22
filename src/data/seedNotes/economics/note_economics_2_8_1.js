@@ -10,6 +10,15 @@ export const note_economics_2_8_1 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Rightward shift</strong> (increase in AD): rise in income, lower interest rates, improved consumer/business confidence, expansionary fiscal policy, currency depreciation.' }, { text: '<strong>Leftward shift</strong> (decrease in AD): rise in taxes, higher interest rates, falling consumer confidence, currency appreciation, reduction in government spending.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always be precise: "the price level falls" causes a movement along AD (not a shift). A shift occurs when C, I, G or net exports change independently of the price level.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'A change in price level → movement along AD. A change in any spending component (C, I, G, X-M) → shift of AD.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Always be precise: the price level falls causes a movement along AD (not a shift). A shift occurs when C, I, G or net exports change independently of the price level."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

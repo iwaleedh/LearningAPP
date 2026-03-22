@@ -105,6 +105,15 @@ export const note_economics_2_10_5 = {
         title: 'Exam Tip',
         text: 'The <strong>Marginal Propensity to Withdraw (MPW)</strong> = MPS + MPT + MPM = 1 − MPC. The open economy multiplier is k = 1/MPW. The higher the MPW, the smaller the multiplier.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Remember the accounting identity: MPC + MPS = 1 (in a simple two-sector model), and MPT + MPM + MPC = 1 (in an open economy with taxation). Examiners ask for these marginal propensities and test whether you can calculate one given the others. Always verify your calculations sum to 1."
+      }
     }
   ],
   recall: {

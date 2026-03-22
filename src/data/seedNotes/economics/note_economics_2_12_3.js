@@ -8,6 +8,15 @@ export const note_economics_2_12_3 = {
     { id: 'h-2', type: 'heading', data: { text: 'Resolving Trade-offs', level: 2 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Supply-side policies</strong> can reduce conflicts — improve productive capacity (LRAS shifts right) → growth with low inflation; reduce structural unemployment without boosting AD.' }, { text: '<strong>Independent central bank</strong>: separates inflation control from growth-biased political decisions.' }, { text: '<strong>Fiscal rules</strong>: constrain deficit to prevent unsustainable stimulus.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Objectives conflict: growth vs inflation, growth vs current account, unemployment vs inflation, equality vs incentives. Supply-side policies can reduce some trade-offs by shifting LRAS right.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming macroeconomic objectives always conflict. While the Phillips Curve shows inflation-unemployment trade-off, other objectives can complement each other: supply-side improvements reduce inflation while raising growth; reducing inequality can boost growth via consumption. Show nuanced understanding by identifying which objectives conflict, which complement, and under what conditions."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

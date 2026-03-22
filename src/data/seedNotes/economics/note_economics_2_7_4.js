@@ -85,6 +85,15 @@ export const note_economics_2_7_4 = {
       data: {
         text: 'PPP adjusts GDP figures for differences in price levels between countries, allowing more accurate comparisons of living standards. It corrects the distortion caused by using market exchange rates.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When evaluating GDP/GNI comparisons between countries, always consider whether PPP adjustment has been applied. State that market exchange rate comparisons understate living standards in low-price countries."
+      }
     }
   ],
   recall: {

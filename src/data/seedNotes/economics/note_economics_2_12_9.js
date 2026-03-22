@@ -9,6 +9,15 @@ export const note_economics_2_12_9 = {
     { id: 'h-3', type: 'heading', data: { text: 'Discretionary vs Automatic Fiscal Policy', level: 2 } },
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: '', headers: ['Type', 'Definition', 'Example'], rows: [['Discretionary', 'Deliberate changes in G or T', '2009 fiscal stimulus: ↑G, temporary VAT cut to 15%'], ['Automatic stabilisers', 'Built-in changes that respond to the cycle', 'Benefits rise / tax falls in recession without new legislation']] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Fiscal instruments: government spending (G) and taxation (T). Direct vs indirect taxes. Automatic stabilisers cushion cycle. Discretionary policy requires deliberate action.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing structural deficit (spending exceeds revenue at full employment) with cyclical deficit (deficit due to temporary downturn). A government with large structural deficit faces sustained high borrowing and debt accumulation, even during expansions. Evaluating fiscal sustainability requires separating these components\u2014failure to do so misleads policy analysis."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

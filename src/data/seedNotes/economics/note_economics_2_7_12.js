@@ -70,6 +70,15 @@ export const note_economics_2_7_12 = {
       data: {
         text: 'Five main types: frictional (job search), structural (skills mismatch), cyclical (low AD), seasonal, and voluntary. NAIRU is the minimum unemployment consistent with stable inflation. Each type requires different policy.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Match the type of unemployment to the correct policy: cyclical \u2192 demand management (fiscal/monetary); structural \u2192 supply-side (retraining, education); frictional \u2192 better information. Applying the wrong policy is a common error."
+      }
     }
   ],
   recall: {

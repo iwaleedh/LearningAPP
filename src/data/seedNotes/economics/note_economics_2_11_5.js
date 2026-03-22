@@ -8,6 +8,15 @@ export const note_economics_2_11_5 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Net immigration</strong> expands labour supply → fills skills gaps → raises AS without inflationary pressure.' }, { text: 'Skilled migration: surgeons, engineers, tech workers bring human capital that raises TFP.' }, { text: '<strong>Fiscal effects</strong>: immigrants of working age typically contribute more in taxes than they consume in public services (net fiscal positive).' }, { text: '<strong>Wage effects</strong>: large low-skill immigration may reduce wages in certain sectors (contested — depends on degree of labour market competition).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Distinguish between the quantity (number) and quality (human capital) of labour. Both matter for growth, but quality improvements are generally more sustainable. A well-educated workforce raises productivity and innovation capacity.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour force growth (quantity) and quality (human capital) both shift LRAS right. Migration fills skills gaps and expands supply. Ageing populations slow labour force growth — a structural challenge for many developed economies.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Measuring labour force contribution only by quantity (population size) without analysing quality. Examiners expect discussion of: education levels, skills training, age demographics, migration effects, and labour participation rates. An ageing population can reduce growth even if absolute workforce size remains stable\u2014focus on working-age proportion."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -6,6 +6,15 @@ export const note_economics_2_11_6 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Higher living standards</strong>: real GDP per capita rises → households can afford more goods and services → higher material welfare.' }, { text: '<strong>Higher employment</strong>: rising output requires more workers → unemployment falls; vacancies increase.' }, { text: '<strong>Improved government finances</strong>: tax revenues rise (income tax, VAT, corporation tax); welfare spending falls → reduces budget deficit / enables debt reduction.' }, { text: '<strong>Business investment</strong>: economic confidence rises → firms invest more → further productivity gains (virtuous cycle).' }, { text: '<strong>Poverty reduction</strong>: growth "lifts all boats" — though distribution matters; sustained growth has historically reduced absolute poverty globally.' }, { text: '<strong>Funding public services</strong>: higher government revenues allow investment in health, education, infrastructure.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation Point', text: 'Benefits depend on how growth is distributed. Growth that increases inequality may not improve average living standards for the majority. Examine <strong>real GDP per capita</strong> (not just total GDP) and the Gini coefficient alongside growth data.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Growth benefits: higher living standards, employment, government revenues, business investment, poverty reduction. But benefits depend on distribution — growth ≠ automatic improvement for all.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When listing benefits of growth, use relative metrics: GDP per capita and real GDP per capita (adjusted for inflation). Absolute GDP growth is less meaningful than per capita growth for assessing living standards. Additionally, distinguish between growth that benefits all income groups versus growth that widens inequality\u2014use Gini coefficient analysis."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -94,6 +94,15 @@ export const note_economics_2_10_6 = {
         title: 'Exam Tip',
         text: 'In Edexcel exams, you may be given MPC or MPS and asked to calculate the multiplier, or given the multiplier and asked to calculate ΔY from ΔJ. Always show your working: state the formula, substitute values, and calculate k, then ΔY = k × ΔJ.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Using the simple multiplier formula (k = 1/(1\u2212MPC)) when leakages exist. The correct formula must include taxation, savings, and import propensities: k = 1/(1\u2212MPC + MPT + MPM) or k = 1/MPS + MPT + MPM. Failing to account for all leakages leads to gross overestimation of multiplier impacts."
+      }
     }
   ],
   recall: {

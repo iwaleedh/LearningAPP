@@ -98,6 +98,15 @@ export const note_economics_2_7_8 = {
       data: {
         text: 'CPI measures the average price change of a weighted basket of ~700 goods and services. Inflation rate = % change in CPI. CPI excludes housing costs; RPI includes them and uses an arithmetic formula giving higher readings.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Always note that CPI excludes housing costs (mortgage interest, council tax). This is why CPI can diverge from the experience of homeowners during periods of rising house prices or interest rates. The Office for National Statistics also publishes CPIH, which includes owner-occupier housing costs."
+      }
     }
   ],
   recall: {

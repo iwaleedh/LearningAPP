@@ -8,6 +8,15 @@ export const note_economics_2_11_4 = {
     { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'Endogenous Growth Theory', text: 'Associated with Paul Romer. Claims long-run growth is driven by <strong>deliberate R&D and human capital investment</strong> — unlike traditional theory where technology is exogenous (given from outside the economy).<br/>Knowledge has increasing returns and positive externalities → government subsidies to R&D are justified.' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: 'Productivity gap: many countries have significant productivity differences — UK productivity is ~15–20% below US and German levels.' }, { text: 'Sources of productivity improvement: automation, AI, better management practices, education quality, digital infrastructure.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Innovation and productivity growth drive LRAS shifts. Endogenous growth theory: R&D generates knowledge with positive externalities → government should subsidise R&D.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Link innovation explicitly to productivity improvements. Innovation shifts the AS curve rightward by raising output per unit of input (labour, capital). Distinguish R&D spending (input) from productivity gains (output). Use Solow's framework: sustained growth requires technological progress, not just capital accumulation."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

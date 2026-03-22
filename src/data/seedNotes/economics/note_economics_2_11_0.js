@@ -8,6 +8,15 @@ export const note_economics_2_11_0 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Actual growth</strong>: occurs when AD rises and idle resources are brought into use. Does not necessarily increase long-run capacity.' }, { text: '<strong>Potential growth</strong>: requires growth of the factors of production (more labour, capital, improved technology or efficiency) — shifts LRAS rightward.' }, { text: '<strong>Output gap</strong>: difference between actual and potential output. Positive output gap = above trend (inflationary pressure); negative output gap = below trend (spare capacity).' }, { text: 'A country on its PPF is at full capacity. Actual growth inside PPF uses idle resources. Potential growth pushes the PPF outward.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'In diagrams: actual growth = rightward shift of AD (into spare capacity). Potential growth = rightward shift of LRAS. Both shift AD right when on LRAS.<br/>Long-run sustainable growth = potential growth (no inflationary pressure).' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Actual growth = ↑real GDP using existing capacity (⇒ AD shift). Potential growth = ↑productive capacity (⇒ LRAS shift). Output gap = difference between actual and potential GDP.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Actual economic growth can be negative (recession) even if the economy has positive potential growth. The output gap (actual \u2212 potential) is what matters for inflation and unemployment pressure. In times of slow recovery, actual growth may rise but remain below potential, explaining persistent unemployment despite positive growth."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

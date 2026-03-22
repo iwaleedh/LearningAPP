@@ -8,6 +8,15 @@ export const note_economics_2_11_7 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Sustainable development</strong> (Brundtland): meeting the needs of the present without compromising future generations\' ability to meet their own needs.' }, { text: 'Green growth: decouple GDP growth from carbon emissions — renewable energy, circular economy, carbon pricing.' }, { text: 'Natural capital: forests, fisheries, clean water — if depleted for growth, future productive capacity is lost.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Balance costs and benefits: growth is generally beneficial, but the <strong>type and distribution</strong> of growth matters. Use GNH (Gross National Happiness), HDI, or Environmental Kuznets Curve in evaluation.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Costs of growth: environmental damage, inflation, inequality, structural unemployment, trade deficit, wellbeing reduction. Sustainable growth requires decoupling from environmental damage.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Listing environmental costs (pollution, depletion) as if they are automatic consequences, without quantifying them or relating to 'Green GDP' concepts. Examiners expect analysis: do regulations internalise these externalities? Can green growth exist? Failing to integrate environmental costs into the growth-sustainability debate results in one-dimensional answers."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

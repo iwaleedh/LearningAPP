@@ -74,6 +74,15 @@ export const note_economics_2_7_6 = {
       data: {
         text: 'GDP/GNI miss income distribution, environmental damage, informal activity, leisure, public service quality, and wellbeing. Alternative measures like HDI and wellbeing indices provide a more comprehensive picture.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When evaluating GDP as a measure of living standards, use the mnemonic DELISH: Distribution, Environment, Leisure, Informal economy, Services quality, Happiness. Name the alternative indicator (e.g., HDI) and explain why it is better."
+      }
     }
   ],
   recall: {

@@ -53,7 +53,16 @@ export const note_economics_2_10_0 = {
       type: 'heading',
       data: { text: 'Why the Model Matters', level: 3 }
     },
-    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: 'The circular flow model provides the foundation for understanding <strong>national income determination</strong>, the <strong>multiplier</strong>, and how fiscal and monetary policies affect the economy. It shows that an increase in any injection — for example, a rise in government spending (G) — will increase national income, while an increase in any withdrawal — for example, higher taxes (T) — will reduce it.' }] } }
+    { id: 'para-3', type: 'list', data: { style: 'bullet', items: [{ text: 'The circular flow model provides the foundation for understanding <strong>national income determination</strong>, the <strong>multiplier</strong>, and how fiscal and monetary policies affect the economy. It shows that an increase in any injection — for example, a rise in government spending (G) — will increase national income, while an increase in any withdrawal — for example, higher taxes (T) — will reduce it.' }] } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students assume all income is re-spent in the next round of the circular flow. In reality, households withdraw income through savings (S), taxation (T), and imports (M). These leakages reduce the multiplier effect. Always identify and quantify leakages to calculate the true multiplier impact."
+      }
+    }
   ],
   recall: {
     enabled: true,

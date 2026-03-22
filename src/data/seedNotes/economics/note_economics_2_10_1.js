@@ -65,6 +65,15 @@ export const note_economics_2_10_1 = {
         title: 'Exam Tip',
         text: 'Always clarify whether a question is about income or wealth inequality — they are distinct. An economy can have rising incomes but increasing wealth inequality if investment returns outpace wage growth (Piketty\'s r > g argument).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Examiners test understanding of the stock vs. flow distinction: wealth is a stock (total accumulated assets at a point in time), while income is a flow (earnings over a time period). When analysing household behaviour, clarify whether the question concerns wealth effects (consumption from asset changes) or income effects (consumption from earnings changes)."
+      }
     }
   ],
   recall: {

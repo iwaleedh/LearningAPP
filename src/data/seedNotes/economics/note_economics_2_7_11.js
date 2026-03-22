@@ -83,6 +83,15 @@ export const note_economics_2_7_11 = {
       data: {
         text: 'ILO unemployment is survey-based, broader, and internationally comparable. Claimant Count is based on benefit claims — narrower but more timely. Key rates: unemployment rate, employment rate, and activity rate.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "When comparing unemployment levels, note that ILO and Claimant Count can move in opposite directions if benefit rules change. Always specify which measure you are using. ILO is better for international comparisons; Claimant Count is more current."
+      }
     }
   ],
   recall: {
