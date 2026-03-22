@@ -1,0 +1,53 @@
+src/data/seedNotes/business/note_3_11_0.js: Understand the difference between mission, vision, aims, objectives and strategy. Explain how corporate objectives are derived from corporate aims and mission statements.
+src/data/seedNotes/business/note_3_11_1.js: Critically appraise mission statements: evaluate how useful they are in guiding corporate strategy, motivating stakeholders, and communicating purpose. Identify limitations and potential conflicts.
+src/data/seedNotes/business/note_3_11_2.js: Understand and apply key corporate strategy models (Ansoff Matrix, Porter\
+src/data/seedNotes/business/note_3_11_3.js: Apply the Ansoff Matrix to advise businesses on growth strategies. Understand each of the four quadrants, assess their relative risk, and evaluate the model\
+src/data/seedNotes/business/note_3_11_4.js: Apply Porter\
+src/data/seedNotes/business/note_3_11_5.js: Understand and apply portfolio analysis, including the Boston Consulting Group (BCG) Matrix. Classify products into Stars, Cash Cows, Question Marks, and Dogs. Evaluate the model\
+src/data/seedNotes/business/note_3_11_6.js: Conduct and interpret a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats). Distinguish internal from external factors. Apply SWOT to strategic decision-making, including converting weaknesses and managing threats.
+src/data/seedNotes/business/note_3_11_7.js: Apply PESTLE analysis to identify and assess macro-environmental factors affecting business strategy. For each factor, give a relevant business example and evaluate how a business might respond.
+src/data/seedNotes/business/note_3_11_8.js: Apply Porter\
+src/data/seedNotes/business/note_3_11_9.js: Distinguish between strategic and tactical decisions. Understand who makes each type of decision, the time horizon, risk level, and reversibility. Apply this distinction to business scenarios.
+src/data/seedNotes/business/note_3_12_0.js: Evaluate the various growth objectives set by businesses and the rationale behind them.
+src/data/seedNotes/business/note_3_12_1.js: Distinguish between organic (internal) and inorganic (external) growth.
+src/data/seedNotes/business/note_3_12_2.js: Analyse the methods and strategies used for organic growth.
+src/data/seedNotes/business/note_3_12_3.js: Examine the differences between mergers and takeovers, and understand the motives for these transactions.
+src/data/seedNotes/business/note_3_12_4.js: Analyse the forms of integration: horizontal, vertical, and conglomerate.
+src/data/seedNotes/business/note_3_12_5.js: Assess the profound risks and disadvantages associated with inorganic growth.
+src/data/seedNotes/business/note_3_12_6.js: Evaluate economies and diseconomies of scale as consequences of business growth.
+src/data/seedNotes/business/note_3_12_7.js: Understand overtrading and communication issues as acute operational risks of rapid growth.
+src/data/seedNotes/business/note_3_13_0.js: Understand the concept of time-series forecasting, including four-period moving averages, variations, and seasonal adjustments.
+src/data/seedNotes/business/note_3_13_1.js: Analyze and interpret scatter graphs and calculate lines of best fit to forecast business performance.
+src/data/seedNotes/business/note_3_13_10.js: Synthesize the limitations of quantitative strategic decision tools in a broader corporate environment.
+src/data/seedNotes/business/note_3_13_2.js: Evaluate the limitations of quantitative forecasting techniques and understand why forecasts may prove inaccurate.
+src/data/seedNotes/business/note_3_13_3.js: Calculate and interpret the Payback Period to evaluate investment appraisals.
+src/data/seedNotes/business/note_3_13_4.js: Calculate the Average Rate of Return (ARR) and use it to appraise the profitability of a business investment.
+src/data/seedNotes/business/note_3_13_5.js: Calculate and evaluate Net Present Value (NPV) by applying discount factors to future cash flows.
+src/data/seedNotes/business/note_3_13_6.js: Understand and use decision trees to calculate expected values and guide strategic choices.
+src/data/seedNotes/business/note_3_13_7.js: Interpret Critical Path Analysis (CPA) network diagrams to calculate the earliest and latest possible project completion times.
+src/data/seedNotes/business/note_3_13_8.js: Identify the critical path and calculate float times for non-critical activities.
+src/data/seedNotes/business/note_3_13_9.js: Use contribution costing to make strategic operational decisions including special orders.
+src/data/seedNotes/business/note_3_14_0.js: Understand the different types of corporate culture and how they influence business decisions.
+src/data/seedNotes/business/note_3_14_1.js: Explore how corporate culture is formed and the barriers that exist when trying to change it.
+src/data/seedNotes/business/note_3_14_2.js: Identify internal and external stakeholders and understand their varied interests in a business.
+src/data/seedNotes/business/note_3_14_3.js: Analyse the differing objectives of various stakeholder groups and how they can lead to conflict.
+src/data/seedNotes/business/note_3_14_4.js: Evaluate the shareholder approach versus the stakeholder approach to business strategy.
+src/data/seedNotes/business/note_3_14_5.js: Explore the relationship between pursuing profit and acting ethically, including potential trade-offs.
+src/data/seedNotes/business/note_3_14_6.js: Understand the concept of Corporate Social Responsibility (CSR) and its implications for business.
+src/data/seedNotes/business/note_3_14_7.js: Examine the ethical issues surrounding executive pay and the controversy over the widening pay gap.
+src/data/seedNotes/business/note_3_15_0.js: Understand how to interpret the components and significance of an income statement.
+src/data/seedNotes/business/note_3_15_1.js: Understand how to interpret the components and significance of a statement of financial position (balance sheet).
+src/data/seedNotes/business/note_3_15_2.js: Calculate and interpret profitability and liquidity ratios to assess business competitiveness.
+src/data/seedNotes/business/note_3_15_3.js: Understand and calculate Gearing and Return on Capital Employed (ROCE) to evaluate financial risk and investment efficiency.
+src/data/seedNotes/business/note_3_15_4.js: Examine the limitations of relying purely on ratio analysis when assessing business performance.
+src/data/seedNotes/business/note_3_15_5.js: Understand and calculate labour productivity metrics as a measure of human resource efficiency.
+src/data/seedNotes/business/note_3_15_6.js: Analyse and calculate HR metrics including labour turnover, retention, and absenteeism rates.
+src/data/seedNotes/business/note_3_15_7.js: Evaluate human resource strategies designed to enhance labour productivity and improve staff retention.
+src/data/seedNotes/business/note_3_16_0.js: Understand the relationship between corporate culture and a business\
+src/data/seedNotes/business/note_3_16_1.js: Evaluate how the size of an organisation impacts the speed and efficiency of implementing change.
+src/data/seedNotes/business/note_3_16_2.js: Analyse the reasons for resistance to change and methods to overcome this resistance within an organisation.
+src/data/seedNotes/business/note_3_16_3.js: Examine the role of transformational leadership in effectively managing and driving organisational change.
+src/data/seedNotes/business/note_3_16_4.js: Understand how businesses identify risks and assess their potential impact and probability.
+src/data/seedNotes/business/note_3_16_5.js: Understand the purpose and structure of a business continuity plan (BCP).
+src/data/seedNotes/business/note_3_16_6.js: Evaluate the importance of succession planning in ensuring smooth transitions during leadership change.
+src/data/seedNotes/business/note_3_16_7.js: Analyse specific contingency risks including IT failures, staffing issues, and general disruptions, and evaluate mitigation strategies.

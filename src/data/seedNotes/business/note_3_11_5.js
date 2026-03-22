@@ -188,6 +188,24 @@ export const note_business_3_11_5 = {
         title: 'Exam Tip \u2014 Applying BCG to Context Questions',
         text: 'When applying the BCG Matrix: <b>(1) Define the market precisely</b> \u2014 use "premium smartphones" not just "technology". <b>(2) Justify classification</b> with case evidence (market share data, growth rate figures). <b>(3) Link strategy to cash flow reasoning</b> \u2014 e.g., "As a Cash Cow, the MacBook generates surplus cash to fund the high-risk Vision Pro Question Mark." <b>(4) Evaluate the model</b> in top-band answers by noting it only uses two variables and that market definition is subjective.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use the BCG matrix to generate strategic questions rather than definitive answers: Should we milk the Cash Cow or reinvest? Can Question Marks be turned into Stars or should we divest? These questions reveal dynamic strategic thinking that examiners value."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming Dogs should always be divested immediately. Some Dogs generate cash with minimal investment; others are strategically important for market presence. Always contextualize\u2014is divestiture truly optimal or just obvious? This thinking elevates analysis significantly."
+      }
     }
   ],
   recall: {

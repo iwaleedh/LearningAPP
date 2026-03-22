@@ -18,7 +18,25 @@ export const note_business_3_13_9 = {
     { id: 'sum', type: 'summary', data: { text: 'Contribution analysis separates fixed and variable costing. By focusing pure contribution margin, managers can make profitable tactical choices regarding special low-price orders or product lines operating at a net loss.' } },
     { id: 'enr-worked1', type: 'callout', data: { style: 'worked', title: 'Multi-Product Contribution: Bakery', text: 'A bakery sells 3 products: Croissants (£2.50 price, £1.00 VC = £1.50 contribution), Muffins (£2.00 price, £0.60 VC = £1.40 contribution), Cakes (£8.00 price, £3.50 VC = £4.50 contribution). Fixed costs = £900/month. To break even: FC/avg contribution = 900/2.47 ≈ 364 units. Cakes have highest contribution per unit — consider promoting these.' } },
     { id: 'enr-worked2', type: 'callout', data: { style: 'worked', title: 'Everyday Example: Phone Cases', text: 'Student selling phone cases: sells for £8, material cost £2.50, packaging £0.50. Contribution = £8−£3 = £5 per case. Fixed costs (website, table at market) = £60/month. Break-even = 60/5 = 12 cases/month.' } },
-    { id: 'enr-tip1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Contribution as a Decision Tool', text: 'Contribution per unit tells you which product to focus on AND how many units to sell to cover fixed costs. In make-or-buy decisions: make if contribution > buying-in cost per unit.' } }
+    { id: 'enr-tip1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Contribution as a Decision Tool', text: 'Contribution per unit tells you which product to focus on AND how many units to sell to cover fixed costs. In make-or-buy decisions: make if contribution > buying-in cost per unit.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "For contribution costing, calculate: Contribution = Price \u2212 Variable Cost. Make decisions based on contribution per unit or contribution per *limiting factor* (e.g., per machine hour if capacity-constrained). Accept special orders if contribution > 0 and spare capacity exists\u2014this operational analysis impresses."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Ignoring fixed costs when analyzing special orders. While contribution analysis is correct, accepting too many low-margin special orders can mean fixed costs aren't covered in total. Always reconcile contribution decisions to full profitability and ensure long-term sustainability."
+      }
+    }
   ],
   recall: {
     enabled: true,

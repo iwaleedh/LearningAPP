@@ -8,8 +8,8 @@ export const note_business_3_15_6 = {
     { id: 'p-2', type: 'paragraph', data: { text: 'Retention rate measures the ability of a business to keep its employees. A high retention rate indicates a stable, motivated workforce.' } },
     { id: 'call-2', type: 'callout', data: { style: 'key', title: 'Retention Formula', text: 'Retention Rate (%) = (Number of staff staying for the whole year ÷ Number of staff at start of year) × 100' } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**High Turnover Cons:\** High recruitment costs, loss of expertise, low team morale, reduced productivity during onboarding.' },
-      { text: '\**High Turnover Pros:\** Brings in "fresh blood" and new ideas, easy way to reduce workforce size if demand drops.' }
+      { text: '**High Turnover Cons:** High recruitment costs, loss of expertise, low team morale, reduced productivity during onboarding.' },
+      { text: '**High Turnover Pros:** Brings in "fresh blood" and new ideas, easy way to reduce workforce size if demand drops.' }
     ] } },
     { id: 'h-2', type: 'heading', data: { text: 'Absenteeism', level: 2 } },
     { id: 'p-3', type: 'paragraph', data: { text: 'Absenteeism measures the rate at which staff are absent from work. Persistent, unscheduled absenteeism disrupts production schedules, forces the use of expensive agency cover, and stresses the remaining workforce.' } },
@@ -49,6 +49,24 @@ export const note_business_3_15_6 = {
         text: 'Labour turnover = (Leavers ÷ Average workforce) × 100. High turnover is costly (recruitment, training, lost productivity, customer service impact) — but some turnover is healthy (prevents stagnation, brings fresh ideas). Retail and hospitality have structurally high turnover vs law and finance. Always compare to industry average before judging.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Key HR metrics: Labour turnover = (leavers \u00f7 average workforce) \u00d7 100. Retention = 100 \u2212 turnover. Absenteeism = absence hours \u00f7 total hours \u00d7 100. Benchmark: turnover <10% healthy, >25% problematic. Examiners expect interpretation: HIGH turnover implies poor culture, low wages, weak management. LOW turnover might indicate rigidity or lack of ambition. Always ask: why did turnover change?"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing correlation with causation in HR metrics. High absenteeism might suggest poor morale OR reflect an older workforce with more health issues OR a genuinely demanding physical job. Examiners penalize candidates who claim 'low retention causes low profit' without proving the link. Use data to SUPPORT hypotheses, not assume causation from raw numbers."
+      }
+    }
   ],
   recall: {
     enabled: true,

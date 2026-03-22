@@ -51,6 +51,24 @@ export const note_business_3_13_6 = {
         title: 'Exam tip: decision tree limitations',
         text: 'EMV = Σ(probability × outcome) for each chance node, then subtract costs. A positive net EMV suggests the option is worthwhile — BUT decision trees assume probabilities are accurate, which they rarely are. Always evaluate the quality/source of probability estimates in your answer.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When building a decision tree, multiply probabilities downward and values rightward: Each branch shows probability \u00d7 payoff. Compare expected values of competing options clearly. Then note non-financial factors (risk appetite, brand risk) that might override the math."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating decision tree outcomes as certainties after calculation. Decision trees *quantify* expected value but cannot eliminate the possibility of worst-case outcomes. A \u00a310k expected value could come from 10% chance of \u00a3100k gain and 90% chance of zero\u2014acknowledge this risk."
+      }
     }
   ],
   recall: {

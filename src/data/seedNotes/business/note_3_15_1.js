@@ -6,11 +6,11 @@ export const note_business_3_15_1 = {
     { id: 'call-1', type: 'callout', data: { style: 'key', title: 'Key Equation', text: 'Assets = Liabilities + Equity. The fundamental accounting equation ensures that the statement of financial position always "balances".' } },
     { id: 'h-2', type: 'heading', data: { text: 'Key Components', level: 3 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Non-current Assets:\** Items intended for long-term use (e.g., premises, machinery, vehicles, intangibles like goodwill).' },
-      { text: '\**Current Assets:\** Short-term items that can quickly be converted to cash (e.g., inventory, trade receivables, cash at bank).' },
-      { text: '\**Current Liabilities:\** Short-term debts payable within a year (e.g., trade payables, overdrafts).' },
-      { text: '\**Non-current Liabilities:\** Long-term debts payable over more than a year (e.g., bank loans, mortgages).' },
-      { text: '\**Total Equity:\** The capital invested by shareholders plus retained earnings.' }
+      { text: '**Non-current Assets:** Items intended for long-term use (e.g., premises, machinery, vehicles, intangibles like goodwill).' },
+      { text: '**Current Assets:** Short-term items that can quickly be converted to cash (e.g., inventory, trade receivables, cash at bank).' },
+      { text: '**Current Liabilities:** Short-term debts payable within a year (e.g., trade payables, overdrafts).' },
+      { text: '**Non-current Liabilities:** Long-term debts payable over more than a year (e.g., bank loans, mortgages).' },
+      { text: '**Total Equity:** The capital invested by shareholders plus retained earnings.' }
     ] } },
     { id: 'tbl-1', type: 'comparisonTable', data: {
       caption: 'Assets vs Liabilities',
@@ -29,7 +29,25 @@ export const note_business_3_15_1 = {
     { id: 'sum-1', type: 'summary', data: { text: 'The statement of financial position is a snapshot showing Assets (what is owned), Liabilities (what is owed), and Equity. Interpretation involves assessing liquidity (working capital) and long-term financial stability.' } },
     { id: 'enr-callout-apple', type: 'callout', data: { style: 'worked', title: 'Real World: Apple Balance Sheet (2023, simplified)', text: 'Non-current assets £45bn (property, equipment, intangibles). Current assets £143bn (cash £29bn, receivables £29bn, other). Total assets £352bn. Current liabilities £145bn. Net assets £62bn. Observation: Apple holds more current liabilities than current assets — but its $29bn cash holding and exceptional earnings capacity make this entirely safe. Context always matters when interpreting a balance sheet.' } },
     { id: 'enr-callout-snapshot', type: 'callout', data: { style: 'warning', title: 'Balance Sheets are a Snapshot — Be Careful', text: 'A balance sheet shows the position at ONE point in time. A company can look financially healthy on 31 March but be insolvent by 1 April if a large debt falls due. Always check liquidity ratios AND read the notes to the accounts for contingent liabilities.' } },
-    { id: 'enr-callout-tip2', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Asset & Liability Classification', text: 'Non-current assets = long-term (equipment, land, patents held >1 year). Current assets = short-term (cash, inventory, receivables due soon). Long-term liabilities = bonds/loans due in 5+ years. Current liabilities = creditors, overdraft due within 1 year. Net assets = Total assets − Total liabilities = Equity (shareholders\' funds).' } }
+    { id: 'enr-callout-tip2', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Asset & Liability Classification', text: 'Non-current assets = long-term (equipment, land, patents held >1 year). Current assets = short-term (cash, inventory, receivables due soon). Long-term liabilities = bonds/loans due in 5+ years. Current liabilities = creditors, overdraft due within 1 year. Net assets = Total assets − Total liabilities = Equity (shareholders\' funds).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Balance sheet = snapshot of assets, liabilities, equity (A=L+E). Key structure: current assets (cash, receivables, inventory) \u2192 non-current assets (property, equipment) and current liabilities (payables, loans due) \u2192 non-current liabilities. Examiners reward candidates who ask: What does this TELL us about financial health? Is the company overleveraged? Over-invested in fixed assets?"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Reading the balance sheet as a 'healthy' or 'unhealthy' snapshot without context. A \u00a3100m inventory might be normal for a retailer but alarming for a tech firm. Examiners expect you to interpret balance sheet items RELATIVE to the business model and industry norms. Also: balance sheet is ONE moment in time \u2014 trends matter more than snapshots."
+      }
+    }
   ],
   recall: {
     enabled: true,

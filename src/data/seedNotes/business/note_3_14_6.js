@@ -21,7 +21,25 @@ export const note_business_3_14_6 = {
       { id: "sum-1", type: "summary", data: { text: "CSR integrates societal and environmental welfare into business operations. While it boosts brand image and employee morale, it entails significant costs and risks accusations of superficial 'greenwashing' if not authentic." } },
       { id: "enr-worked-1", type: "callout", data: { style: "worked", title: "Worked Example: Unilever's Sustainable Living Plan", text: "Unilever committed to halving its environmental footprint by 2030, sourcing 100% of agricultural ingredients sustainably, and improving the livelihoods of 1 million smallholder farmers. Result: sustainable brands grew 69% faster than the rest of the portfolio (2018). This demonstrates that genuine CSR — embedded in the business model — can improve profitability rather than conflict with it." } },
       { id: "enr-warning-1", type: "callout", data: { style: "warning", title: "Greenwashing in Practice", text: "BP rebranded as 'Beyond Petroleum', investing $200m in renewables marketing while spending $20bn on oil exploration. Shell's 2023 'Drive Carbon Neutral' ads were banned by the ASA. When CSR is PR rather than genuine commitment, trust is destroyed when the truth emerges — damaging brand value far more than the cost of doing the right thing." } },
-      { id: "enr-tip-1", type: "callout", data: { style: "tip", title: "Exam Tip: Genuine vs. Performative CSR", text: "Evaluate CSR by asking — is this genuine or performative? Does it align with the core business? Genuine CSR integrates social goals into the business model (e.g. Unilever's supply chain commitments). Token CSR (charity donations, green logos) is window dressing. In a 9-mark evaluate question, distinguishing these wins the top band." } }
+      { id: "enr-tip-1", type: "callout", data: { style: "tip", title: "Exam Tip: Genuine vs. Performative CSR", text: "Evaluate CSR by asking — is this genuine or performative? Does it align with the core business? Genuine CSR integrates social goals into the business model (e.g. Unilever's supply chain commitments). Token CSR (charity donations, green logos) is window dressing. In a 9-mark evaluate question, distinguishing these wins the top band." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "CSR has three dimensions: economic (profitability), social (people), environmental (planet). Examiners expect you to distinguish REAL CSR (measurable commitments) from CSR 'washing' (tokenistic PR). Reference impact: Nike's labour audits, Unilever's sustainable living plan, Patagonia's environmental activism. Ask: does CSR actually change business practices or just the image?"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating CSR as purely 'nice to have' rather than strategic. Modern examiners expect you to recognize CSR implications: cost of compliance, risk of reputation damage (if CSR commitments are violated), impact on employee recruitment/retention, and customer loyalty effects. CSR is NOT charity \u2014 it's strategic business management of stakeholder expectations."
+      }
+    }
     ],
   recall: {
       enabled: true,

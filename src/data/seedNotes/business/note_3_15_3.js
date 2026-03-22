@@ -5,8 +5,8 @@ export const note_business_3_15_3 = {
     { id: 'p-1', type: 'paragraph', data: { text: 'The gearing ratio measures the proportion of a business\'s capital that is financed by long-term debt (borrowing) compared to the total capital employed. It is a key indicator of long-term financial risk.' } },
     { id: 'call-1', type: 'callout', data: { style: 'key', title: 'Gearing Formula', text: 'Gearing (%) = (Non-Current Liabilities ÷ Capital Employed) × 100. \nNote: Capital Employed = Total Equity + Non-Current Liabilities.' } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**High Gearing (>50%):\** Highly reliant on debt. Vulnerable to interest rate rises and cash flow problems.' },
-      { text: '\**Low Gearing (<25%):\** Financed mostly by equity. Lower financial risk but may miss out on growth funded by cheap borrowing.' }
+      { text: '**High Gearing (>50%):** Highly reliant on debt. Vulnerable to interest rate rises and cash flow problems.' },
+      { text: '**Low Gearing (<25%):** Financed mostly by equity. Lower financial risk but may miss out on growth funded by cheap borrowing.' }
     ] } },
     { id: 'h-2', type: 'heading', data: { text: 'Return on Capital Employed (ROCE)', level: 2 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'ROCE is arguably the most important primary profitability ratio. It evaluates how efficiently a business is utilizing its total capital to generate operating profit or profit before tax and interest.' } },
@@ -48,6 +48,24 @@ export const note_business_3_15_3 = {
         text: 'ROCE = Operating Profit / Capital Employed × 100. Should exceed the bank interest rate — otherwise a savings account is more profitable. Gearing above 50% is considered high risk — always check whether profit covers interest payments (interest cover ratio = operating profit / interest). Include both ROCE and gearing when evaluating financial health.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Gearing = debt \u00f7 (debt + equity), expressed as %. High gearing (>50%) = high financial risk but higher returns for equity holders. ROCE = EBIT \u00f7 capital employed. Use these together: high-ROCE businesses can support high gearing; low-ROCE businesses should minimize debt. Examiners reward candidates who connect financial ratios to strategic choices (growth vs. stability)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating high gearing as automatically 'bad'. In reality, gearing is a choice: high gearing magnifies returns but increases risk (interest must be paid regardless of profit). Some businesses (utilities, property firms) operate at 60\u201380% gearing successfully. Examiners expect nuance: high gearing is RISKY if returns are volatile or interest rates spike; MANAGEABLE if cash flows are stable."
+      }
+    }
   ],
   recall: {
     enabled: true,

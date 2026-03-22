@@ -29,7 +29,25 @@ export const note_business_3_12_4 = {
     ] } },
     { id: 'enr-call-1', type: 'callout', data: { style: 'worked', title: 'Brand Example: Tesco — Backward Vertical Integration', text: 'Tesco has invested in owning and operating its own farms (e.g. Woodside Farm), supplying own-brand produce directly. By integrating backward, Tesco eliminates the independent supplier\'s profit margin, controls quality standards, and reduces supply disruption risk. In combination with Tesco\'s enormous buying power, this pushes average costs far below smaller rivals — a textbook competitive advantage from supply chain ownership.' } },
     { id: 'enr-call-2', type: 'callout', data: { style: 'worked', title: 'Brand Example: Amazon — Conglomerate Integration at Scale', text: 'Amazon began as an online bookstore and systematically integrated into cloud computing (AWS), video streaming (Prime Video), grocery retail (Whole Foods), smart home devices (Ring), and pharmacy (PillPack). Each division operates in an entirely different industry. When retail margins compress, AWS profits cushion the group. This conglomerate structure transforms Amazon\'s sector-specific risk into a diversified, resilient revenue base — demonstrating the primary rationale for conglomerate integration.' } },
-    { id: 'enr-call-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Integration Direction (20-mark questions)', text: 'Structure your evaluation: (1) State the type and its primary benefit. (2) Counter with a specific risk — CMA scrutiny, culture clash, or the premium that must be recouped. (3) Use a named case: as seen with Tesco\'s farm ownership or Amazon\'s conglomerate structure. (4) Conclude conditionally: vertical integration is most sound provided the firm has management expertise and the capital to sustain the acquisition premium for the years it takes to recoup through cost savings.' } }
+    { id: 'enr-call-3', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Integration Direction (20-mark questions)', text: 'Structure your evaluation: (1) State the type and its primary benefit. (2) Counter with a specific risk — CMA scrutiny, culture clash, or the premium that must be recouped. (3) Use a named case: as seen with Tesco\'s farm ownership or Amazon\'s conglomerate structure. (4) Conclude conditionally: vertical integration is most sound provided the firm has management expertise and the capital to sustain the acquisition premium for the years it takes to recoup through cost savings.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Integrate forms of integration with motives: Horizontal integration eliminates competitor/achieves scale; Vertical integration secures supply/improves margin; Conglomerate integration diversifies risk/enters new sectors. Match each form to clear strategic rationale for full marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming backward vertical integration always reduces costs. If the supplier is monopolistic or highly efficient, acquiring it may not save money\u2014it might even waste capital. The benefit depends on supplier dynamics, not just integration type."
+      }
+    }
   ],
   recall: {
     enabled: true,

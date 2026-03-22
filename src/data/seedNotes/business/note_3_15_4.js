@@ -5,11 +5,11 @@ export const note_business_3_15_4 = {
     { id: 'p-1', type: 'paragraph', data: { text: 'While ratio analysis provides quantitative insights into financial performance, it has several notable limitations. Decision-makers must look beyond ratios to understand the complete picture of a business\'s health and competitiveness.' } },
     { id: 'h-2', type: 'heading', data: { text: 'Key Weaknesses', level: 3 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Historic Data:\** Financial accounts are backward-looking. A strong past performance does not guarantee future success, especially in rapidly changing markets.' },
-      { text: '\**Window Dressing:\** Firms can manipulate their accounts to make their financial situation appear more favorable (e.g., delaying payments to creditors to increase cash balances at year-end).' },
-      { text: '\**Ignores Qualitative Factors:\** Ratios ignore non-financial indicators like staff morale, customer loyalty, management quality, or brand reputation.' },
-      { text: '\**Inflation:\** Over time, inflation distorts financial figures, making comparisons across several years less accurate.' },
-      { text: '\**Different Accounting Practices:\** Companies might use different methods for valuing inventory or depreciating assets, complicating industry comparisons.' }
+      { text: '**Historic Data:** Financial accounts are backward-looking. A strong past performance does not guarantee future success, especially in rapidly changing markets.' },
+      { text: '**Window Dressing:** Firms can manipulate their accounts to make their financial situation appear more favorable (e.g., delaying payments to creditors to increase cash balances at year-end).' },
+      { text: '**Ignores Qualitative Factors:** Ratios ignore non-financial indicators like staff morale, customer loyalty, management quality, or brand reputation.' },
+      { text: '**Inflation:** Over time, inflation distorts financial figures, making comparisons across several years less accurate.' },
+      { text: '**Different Accounting Practices:** Companies might use different methods for valuing inventory or depreciating assets, complicating industry comparisons.' }
     ] } },
     { id: 'call-1', type: 'callout', data: { style: 'tip', title: 'Context is Crucial', text: 'A single ratio is meaningless in isolation. It must be compared to previous years (trend analysis) or industry averages (cross-sectional analysis) to provide value.' } },
     { id: 'h-2', type: 'heading', data: { text: 'Need for Holistic Assessment', level: 2 } },
@@ -17,7 +17,16 @@ export const note_business_3_15_4 = {
     { id: 'sum-1', type: 'summary', data: { text: 'Ratio analysis is restricted by its reliance on historic, potentially manipulated data, and its omission of qualitative factors like employee motivation and market changes.' } },
     { id: 'enr-callout-worked-1', type: 'callout', data: { style: 'worked', title: 'Case Study: Enron 2001', text: 'Enron 2001: all financial ratios looked healthy right up until the company collapsed. The balance sheet was fraudulently presented using special purpose vehicles to hide debt. Ratios can only be as reliable as the underlying accounts. Creative accounting makes ratio analysis misleading.' } },
     { id: 'enr-callout-warning-1', type: 'callout', data: { style: 'warning', title: 'Core Limitations to Know', text: 'Ratios are backward-looking (based on last year\'s data), use historical cost (not market values), ignore qualitative factors (management quality, brand strength, employee morale), and can be manipulated (timing of asset sales, capitalising expenses).' } },
-    { id: 'enr-callout-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: 3-Mark Limitation Question Structure', text: 'Exam tip: 3-mark limitation question structure — state the limitation, explain WHY it makes the ratio unreliable, give an example of when this matters. E.g. \'Ratios are historical [limitation] so cannot predict future performance [why] — Marks & Spencer\'s 2007 ratios looked healthy but failed to predict the 2008 downturn [example].\'' } }
+    { id: 'enr-callout-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: 3-Mark Limitation Question Structure', text: 'Exam tip: 3-mark limitation question structure — state the limitation, explain WHY it makes the ratio unreliable, give an example of when this matters. E.g. \'Ratios are historical [limitation] so cannot predict future performance [why] — Marks & Spencer\'s 2007 ratios looked healthy but failed to predict the 2008 downturn [example].\'' } },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Over-relying on ratios as definitive assessment. A business with falling ratios and rising debt might be investing in growth (good strategically but looks bad on paper). Conversely, stable ratios might mask declining market share. Examiners expect you to triangulate: use ratios + qualitative factors (competition, innovation, management quality, market trends) for holistic analysis."
+      }
+    }
   ],
   recall: {
     enabled: true,

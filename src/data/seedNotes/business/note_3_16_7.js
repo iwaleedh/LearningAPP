@@ -29,7 +29,25 @@ export const note_business_3_16_7 = {
     { type: 'summary', data: { text: 'Businesses face persistent contingency risks from IT breakdowns, staffing crises, and physical supply chain disruptions. Effective mitigation requires backup systems, flexible multi-skilled staff, and diversified supply networks.' } },
     { id: 'enr-worked-tsb', type: 'callout', data: { style: 'worked', title: 'TSB Bank IT Migration Failure (2018)', text: 'TSB\'s IT system migration to a new platform went catastrophically wrong. 1.9 million customers were locked out for weeks. TSB lost 80,000 customers, the CEO resigned, and total costs reached £366m. Root cause: inadequate contingency planning for IT migration failure — no tested rollback plan existed.' } },
     { id: 'enr-worked-crowdstrike', type: 'callout', data: { style: 'worked', title: 'CrowdStrike Outage (July 2024)', text: 'A software update error crashed 8.5 million Windows devices worldwide. Airlines, hospitals, and banks were all affected. Microsoft reported $10bn in lost transactions. The event highlighted that even cloud providers need contingency plans for software failures.' } },
-    { id: 'enr-tip-cycle', type: 'callout', data: { style: 'tip', title: 'Exam Tip: The Same Planning Cycle', text: 'IT contingency, staffing contingency, supply chain disruption — all require the SAME planning cycle: identify, assess, plan, test, review. The difference is the trigger event. Examiners test whether students can apply contingency planning to a SPECIFIC business scenario.' } }
+    { id: 'enr-tip-cycle', type: 'callout', data: { style: 'tip', title: 'Exam Tip: The Same Planning Cycle', text: 'IT contingency, staffing contingency, supply chain disruption — all require the SAME planning cycle: identify, assess, plan, test, review. The difference is the trigger event. Examiners test whether students can apply contingency planning to a SPECIFIC business scenario.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Contingency risks with mitigation: (1) IT failure \u2192 backup systems, cloud redundancy, test recovery; (2) Staffing shortage \u2192 retain key staff, cross-training, temp agency contacts, remote work capability; (3) Supplier failure \u2192 dual sourcing, inventory buffer, relationship diversification; (4) Physical disaster \u2192 offsite backup, insurance, alternative venues. Examiners reward SPECIFIC, COSTED mitigations tied to business impact."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Over-investing in mitigation for low-probability risks while ignoring likely disruptions. Example: elaborate disaster recovery plan for meteorite strike (\u00a3500k), but no plan for employee absences during flu season (happens every year, costs \u00a350k). Examiners expect PROPORTIONALITY: mitigation cost should align with risk probability and impact. Prioritize ruthlessly."
+      }
+    }
   ],
   recall: {
     enabled: true,

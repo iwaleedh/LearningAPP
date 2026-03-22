@@ -45,7 +45,25 @@ export const note_business_3_12_0 = {
       { text: '<strong>Overtrading:</strong> Taking on more business than the firm can manage causes cash flow problems and falling customer service quality (e.g. expanding faster than the ability to hire and train staff).' }
     ] } },
     { id: 'enr-callout-amazon', type: 'callout', data: { style: 'worked', title: 'Real Example — Amazon', text: 'Amazon began in 1994 as an online bookshop, growing organically by reinvesting profits into logistics, technology, and new product categories. Its AWS cloud division — now generating over $90bn annually — was built entirely through internal R&D. Amazon later used inorganic growth to acquire Whole Foods (2017, $13.7bn), instantly entering premium grocery retail. This demonstrates how growth objectives evolve as businesses mature and market opportunities shift.' } },
-    { id: 'enr-callout-tip-growth', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Evaluating Growth Objectives (12-Mark Questions)', text: 'Always argue both sides: (1) Growth benefits shareholders through economies of scale and higher long-term dividends. (2) The principal-agent problem means managers may pursue growth for personal prestige, conflicting with owners\' desire for short-term profitability. Conclude by contextualising: in a fast-moving market, growth objectives dominate; in a mature, price-sensitive market, efficient profitability may be more important.' } }
+    { id: 'enr-callout-tip-growth', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Evaluating Growth Objectives (12-Mark Questions)', text: 'Always argue both sides: (1) Growth benefits shareholders through economies of scale and higher long-term dividends. (2) The principal-agent problem means managers may pursue growth for personal prestige, conflicting with owners\' desire for short-term profitability. Conclude by contextualising: in a fast-moving market, growth objectives dominate; in a mature, price-sensitive market, efficient profitability may be more important.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When evaluating growth objectives, assess them against the firm's context: Is rapid growth feasible given market constraints? Does growth align with owner ambitions (profit vs. growth)? Is growth sustainable? Linking objectives to business reality shows sophisticated strategic thinking."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming bigger is always better. Some firms purposely limit growth to maintain culture, quality, or owner control. Others pursue modest profitability over explosive growth. Challenge the assumption that growth is universally desirable\u2014this critical lens earns high marks."
+      }
+    }
   ],
   recall: {
     enabled: true,

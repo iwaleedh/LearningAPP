@@ -42,6 +42,24 @@ export const note_business_3_13_7 = {
         text: 'Critical path = the longest path through the network = minimum project duration. Any delay to a critical activity delays the WHOLE project. Non-critical activities have FLOAT time. In exam questions, always identify (1) the critical path route, (2) the minimum project time, (3) the float on any non-critical activity.'
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "In Critical Path Analysis, distinguish clearly: Forward pass calculates Earliest Start/Finish times; Backward pass calculates Latest Start/Finish times. The critical path is Earliest Finish = Latest Finish (zero float). Label the critical path on your network clearly so examiners award marks immediately."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing the critical path with the longest duration sequence. The critical path is the longest *project* path where any delay delays the overall project. A shorter activity with zero float can become critical if the critical path is shortened\u2014show dynamic understanding."
+      }
+    }
   ],
   recall: {
     enabled: true,

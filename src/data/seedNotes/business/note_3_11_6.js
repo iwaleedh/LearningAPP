@@ -166,6 +166,24 @@ export const note_business_3_11_6 = {
         title: 'Exam Tip \u2014 Making SWOT Evaluative',
         text: 'A SWOT list alone earns low marks. To reach the top band: <b>(1) Prioritise</b> \u2014 identify the most significant factors for this specific business context. <b>(2) Cross-reference</b> \u2014 show how a Strength addresses a Threat (ST) or a Weakness amplifies a Threat (WT danger). <b>(3) Recommend action</b> \u2014 "The most urgent priority is converting the weak digital presence into a strength by investing in e-commerce before the online growth opportunity closes." <b>(4) Acknowledge limitations</b> \u2014 SWOT is a static snapshot; the environment changes before strategy is fully implemented.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "In SWOT analysis, always distinguish: Strengths/Weaknesses are *internal and controllable*, Opportunities/Threats are *external and often uncontrollable*. Then convert Weaknesses into Opportunities and Threats into Defenses to show strategic problem-solving ability."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Creating a random list of factors without strategic relevance. Examiners value focused SWOTs: What strengths are *defensible*? What weaknesses *urgently* need addressing? What opportunities are *realistic*? Prioritization and business relevance matter far more than length."
+      }
     }
   ],
   recall: {

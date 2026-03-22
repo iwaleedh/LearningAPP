@@ -1,0 +1,482 @@
+{
+  "src/data/seedNotes/business/note_3_14_0.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Examiners love case studies linking corporate culture to real business outcomes. Learn to distinguish between clan, adhocracy, market, and hierarchy cultures using specific examples like Google (adhocracy) vs. military organizations (hierarchy). In essays, always explain WHY a culture influences decisions, not just WHAT the culture is."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing corporate culture with company values or mission statements. Culture is HOW things are done (behaviours, norms, unwritten rules), not WHAT the company claims to stand for. Simply listing value statements or CSR policies without discussing embedded behaviours will lose marks."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_1.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When discussing how culture is formed, reference Schein's three levels (artifacts, beliefs, assumptions) and use Mintzberg's organizational structures (machine, professional, divisional, innovative, missionary). Barriers to change are often rooted in deeply-held assumptions — examiners reward candidates who explain the psychological resistance, not just management barriers."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating culture change as purely a management/HR problem. Examiners expect you to recognize that long-established cultures are RESISTANT because they are deeply embedded in employee routines and identity. Saying 'just communicate the new values' without addressing the real costs and time required will be marked as superficial."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_2.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Distinguish clearly between internal stakeholders (employees, managers, board) and external stakeholders (customers, suppliers, regulators, communities, shareholders). Use a stakeholder mapping diagram in essays — plot each group on an interest/influence matrix. This visual clarity often attracts higher marks for analysis."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Forgetting that stakeholder interests are NOT neutral — they are shaped by power, proximity, and risk. Claiming all stakeholders have 'equally important but different' interests without unpacking conflicts is vague. Examiners expect you to explain who has MORE influence over actual decisions and why."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_3.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use concrete examples of stakeholder conflict: shareholders want profit (layoffs), employees want job security, communities want local employment. In evaluation questions, show how a business decision benefits one group but harms another. This demonstrates understanding of trade-offs, which examiners reward highly."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Describing stakeholder conflicts as if they can always be resolved through 'better communication' or compromise. Some conflicts are fundamental (e.g., profit vs. worker protections). Examiners expect sophistication — acknowledge that businesses often CHOOSE which stakeholder groups to prioritize, and this choice HAS consequences."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_4.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "This is a crucial topic for high-mark essays. Shareholder approach = profit maximization (Milton Friedman). Stakeholder approach = balancing multiple interests (Freeman). Use real cases: Amazon shareholders vs. warehouse workers, or BP shareholders vs. environmental stakeholders. Examiners love candidates who evaluate BOTH approaches fairly rather than advocating one."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Claiming the stakeholder approach is 'always better' or 'more ethical' without cost analysis. Stakeholder management is EXPENSIVE (compliance, consultation, slower decisions). Examiners expect balanced evaluation — acknowledge that the shareholder model delivers efficiency and clear accountability, while admitting its risks (short-termism, social damage)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_5.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use explicit examples of profit/ethics trade-offs: moving factories to low-wage countries (profit vs. worker dignity), aggressive tax avoidance (profit vs. societal responsibility), cost-cutting on safety (profit vs. consumer protection). Examiners reward candidates who show profit and ethics often conflict — and that business leaders frequently CHOOSE profit. This is strategic realism."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Presenting profit and ethics as complementary (e.g., 'ethical businesses are more profitable'). While sometimes true, this is wishful thinking. Examiners expect you to acknowledge REAL trade-offs: ethical hiring practices cost more; environmental compliance reduces margins; paying living wages cuts shareholder dividends. Admitting these tensions shows critical thinking."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_6.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "CSR has three dimensions: economic (profitability), social (people), environmental (planet). Examiners expect you to distinguish REAL CSR (measurable commitments) from CSR 'washing' (tokenistic PR). Reference impact: Nike's labour audits, Unilever's sustainable living plan, Patagonia's environmental activism. Ask: does CSR actually change business practices or just the image?"
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating CSR as purely 'nice to have' rather than strategic. Modern examiners expect you to recognize CSR implications: cost of compliance, risk of reputation damage (if CSR commitments are violated), impact on employee recruitment/retention, and customer loyalty effects. CSR is NOT charity — it's strategic business management of stakeholder expectations."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_14_7.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use real data: CEO-to-worker pay ratios (40:1 in 1980 → 400:1 in 2024). Discuss justifications (talent scarcity, shareholder value) AND criticisms (eroded morale, social inequality, reduced loyalty). Examiners reward balanced analysis: acknowledge why boards defend high exec pay (talent competition) while recognizing why it's controversial (fairness, stakeholder trust)."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming high executive pay is always 'unfair' without analyzing performance. Some CEOs are paid highly because they deliver massive shareholder returns. Examiners expect nuance: distinguish between pay tied to PERFORMANCE (potentially defensible) and pay divorced from outcomes (indefensible). Also note: many high-paid executives underperform — this is rarely punished, which IS a weakness."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_0.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-8",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Income statement = P&L. Key line items examiners focus on: Revenue → COGS (gross profit) → Operating expenses (operating profit) → Finance costs (profit before tax) → Tax (profit after tax). Always calculate gross profit margin, operating profit margin, net profit margin in sequence. Show workings clearly — examiners reward precision even if totals are wrong."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-8",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing 'revenue' with 'profit'. Revenue = total sales. Profit = what's LEFT after costs. Many candidates describe revenue changes without analyzing whether costs rose proportionally — this misses the point. Examiners expect you to interpret trends: declining profit despite rising revenue suggests cost control problems."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_1.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-9",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Balance sheet = snapshot of assets, liabilities, equity (A=L+E). Key structure: current assets (cash, receivables, inventory) → non-current assets (property, equipment) and current liabilities (payables, loans due) → non-current liabilities. Examiners reward candidates who ask: What does this TELL us about financial health? Is the company overleveraged? Over-invested in fixed assets?"
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-9",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Reading the balance sheet as a 'healthy' or 'unhealthy' snapshot without context. A £100m inventory might be normal for a retailer but alarming for a tech firm. Examiners expect you to interpret balance sheet items RELATIVE to the business model and industry norms. Also: balance sheet is ONE moment in time — trends matter more than snapshots."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_2.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-10",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Profitability ratios: Gross profit % (COGS efficiency), Operating profit % (operational efficiency), Net profit % (overall efficiency), ROCE (return on capital). Liquidity ratios: Current ratio (current assets ÷ current liabilities), Quick ratio (acid test — excludes inventory). Normal benchmarks: current ratio ≈ 1.5–2.0, net profit % ≈ 5–10% (varies by sector). Compare TRENDS across 3+ years."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-10",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Calculating ratios without interpretation or comparison. A net profit margin of 8% means NOTHING without asking: Is this higher than last year? How does it compare to competitors? What CAUSED the change? Examiners penalize candidates who present numbers without analysis. Always follow calculation with insight: what does this ratio reveal about competitive position?"
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_3.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-11",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Gearing = debt ÷ (debt + equity), expressed as %. High gearing (>50%) = high financial risk but higher returns for equity holders. ROCE = EBIT ÷ capital employed. Use these together: high-ROCE businesses can support high gearing; low-ROCE businesses should minimize debt. Examiners reward candidates who connect financial ratios to strategic choices (growth vs. stability)."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-11",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating high gearing as automatically 'bad'. In reality, gearing is a choice: high gearing magnifies returns but increases risk (interest must be paid regardless of profit). Some businesses (utilities, property firms) operate at 60–80% gearing successfully. Examiners expect nuance: high gearing is RISKY if returns are volatile or interest rates spike; MANAGEABLE if cash flows are stable."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_4.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-12",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Master the limitations of ratios: (1) Historical data only — doesn't predict future; (2) Window-dressing — accounting tricks distort numbers; (3) No context — high debt might be strategic, not reckless; (4) Ignores intangibles — brand, patents, culture invisible in ratios; (5) One-year snapshots mislead — always compare 3+ years. Examiners reward balanced judgment: ratios are tools, not truth."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-12",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Over-relying on ratios as definitive assessment. A business with falling ratios and rising debt might be investing in growth (good strategically but looks bad on paper). Conversely, stable ratios might mask declining market share. Examiners expect you to triangulate: use ratios + qualitative factors (competition, innovation, management quality, market trends) for holistic analysis."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_5.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-13",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Labour productivity = output ÷ labour hours OR revenue ÷ employees OR units produced ÷ workforce. Key insight: rising productivity ALONE doesn't guarantee profit (could reflect wage cuts or job losses). Examiners reward candidates who connect productivity to strategic goals and ask: Is productivity gain from automation, skills improvement, or wage pressure? Each has different implications."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-13",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming higher labour productivity is always positive. High productivity from excessive workload → burnout/attrition. From automation → job losses/skills erosion. Examiners expect critical thinking: productivity gains are only valuable if sustainable. A factory with 50% higher output per worker but 40% turnover is problematic, not impressive."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_6.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-14",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Key HR metrics: Labour turnover = (leavers ÷ average workforce) × 100. Retention = 100 − turnover. Absenteeism = absence hours ÷ total hours × 100. Benchmark: turnover <10% healthy, >25% problematic. Examiners expect interpretation: HIGH turnover implies poor culture, low wages, weak management. LOW turnover might indicate rigidity or lack of ambition. Always ask: why did turnover change?"
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-14",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing correlation with causation in HR metrics. High absenteeism might suggest poor morale OR reflect an older workforce with more health issues OR a genuinely demanding physical job. Examiners penalize candidates who claim 'low retention causes low profit' without proving the link. Use data to SUPPORT hypotheses, not assume causation from raw numbers."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_15_7.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-15",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "HR strategies to boost productivity & retention: (1) Competitive wages + benefits; (2) Training & development; (3) Career progression paths; (4) Flexible working; (5) Performance recognition; (6) Positive culture. Examiners expect you to EVALUATE costs vs. benefits: £50k annual training budget might reduce turnover by 5% (saving £200k in replacement costs). Use business case thinking."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-15",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Suggesting HR strategies without acknowledging trade-offs. Higher wages = lower profit margins. Flexible working = management complexity. Examiners reward realism: strategies must be AFFORDABLE and ROI-justified. A small firm can't offer the benefits of a large corporation. Context matters — what works for tech startups (unlimited leave) fails in manufacturing (customer schedule mismatch)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_0.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-16",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Corporate culture and organizational change are intertwined. A strong, adaptive culture facilitates change; a rigid culture resists it. Examiners expect you to link: strong culture with clear values → employees understand 'why' change matters → faster adoption. Conversely, fragmented or defensive cultures → change initiatives stall. Use Schein's cultural layers to explain this depth."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-16",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating culture and change as separate topics. They're inseparable: change initiatives RESHAPE culture, and existing culture LIMITS or ENABLES change. Candidates who discuss them in isolation lose marks for lack of synthesis. Always ask: how will this change affect our culture, and is our current culture ready for this change?"
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_1.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-17",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Organization size and change: Small firms are AGILE (quick decisions, low bureaucracy) but lack resources for major change management. Large firms have resources but face rigidity (hierarchies, approval chains). Use real examples: startups pivot fast, corporations take 2–3 years for strategic shifts. Examiners reward candidates who explain the MECHANISM: why does size affect speed?"
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-17",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming 'smaller is better' for change. While small firms are faster, they often lack expertise, funding, and resilience to handle FAILED changes. Large firms are slower but more robust. Examiners expect nuance: the OPTIMAL size depends on the TYPE of change (incremental tweaks suit large firms; reinvention suits small, nimble firms)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_2.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-18",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Resistance to change stems from: (1) Fear of job loss; (2) Loss of status/power; (3) Habit & comfort; (4) Distrust of management; (5) Unclear benefits. Overcome resistance by: (1) Transparent communication (why change?); (2) Involve employees (co-create solutions); (3) Training & support; (4) Quick wins (show early benefits); (5) Lead by example. Examiners reward evidence-based strategies, not wishful thinking."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-18",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating resistance as purely negative ('problem employees'). Resistance often reflects legitimate concerns: Is the change affordable? Will it work? Am I valued after change? Examiners expect sympathetic analysis: resistance is INFORMATION, not obstruction. Ignoring genuine objections → implementation failures. The best change leaders LISTEN to resistance and refine plans."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_3.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-19",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Transformational leadership (Burns/Bass): inspires vision, challenges assumptions, provides intellectual stimulation, shows genuine care. Apply to change: transformational leaders articulate compelling VISION ('we're becoming X'), model commitment, develop people through challenge, build trust. Contrast with transactional leaders who use rewards/punishment. Examiners reward candidates who connect leadership style to change outcomes."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-19",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming transformational leadership works in ALL contexts. Charismatic visionary leadership fails if employees lack skills for implementation or if the vision is unrealistic. Examiners expect balance: transformational is powerful FOR STRATEGIC CHANGE but can overwhelm with unnecessary complexity. Sometimes transactional (clear process, incentives) is more appropriate."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_4.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-20",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Risk identification: brainstorm with teams (operational, financial, market, strategic, compliance risks). Risk assessment: Impact (revenue loss, injury, reputation) × Probability (likelihood of occurring). Map on 2×2: high impact/high probability (mitigate), high impact/low probability (contingency plan). Examiners reward systematic thinking: risks aren't just 'bad things,' they're quantified exposures."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-20",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing risk with uncertainty. A RISK has identifiable probability (supply chain disruption: 20% annual chance). UNCERTAINTY is unknown unknowns (Black Swan events). Examiners expect you to focus on RISKS you can quantify and manage. Claiming 'everything is a risk' is vague. Prioritize: focus mitigation on high-impact, moderately-probable risks first."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_5.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-21",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Business Continuity Plan (BCP) structure: (1) Identify critical functions; (2) Assess impact if disrupted; (3) Define recovery time objectives (RTO) & recovery point objectives (RPO); (4) Document workarounds; (5) Assign responsibilities; (6) Test regularly. Example: if manufacturing halts, revenue loss = £100k/day; RTO = 24 hours; need backup supplier on standby. Examiners reward detailed, practical plans."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-21",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Creating BCPs that are never tested. A BCP sitting in a drawer provides zero protection — it's actually a FALSE SENSE OF SECURITY. Examiners expect you to acknowledge: testing reveals gaps (people don't know procedures, backup systems don't work, assumptions fail). Also: BCPs get outdated fast. A plan written 3 years ago is likely defunct if business changed significantly. BCPs require MAINTENANCE."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_6.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-22",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Succession planning identifies high-potential talent and develops them into future leaders. Key elements: (1) Identify critical roles; (2) Map internal talent pipelines; (3) Create development plans; (4) Cross-train to reduce key person dependencies; (5) Communicate openly (some candidates must know they're being groomed). Examiners reward proactive candidates who recognize succession as RETENTION tool: showing high-potential staff a path to leadership."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-22",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming external hire for leadership is always better. External leadership brings fresh ideas BUT faces learning curves (culture, relationships, context). Loss of internal continuity can destabilize teams. Examiners expect balanced view: internal succession is cheaper, faster, and retains culture; external hire is useful for major transformation. Choose based on STRATEGY, not default."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_16_7.js": [
+    {
+      "id": "callout-bus-u3-p2-tip-23",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Contingency risks with mitigation: (1) IT failure → backup systems, cloud redundancy, test recovery; (2) Staffing shortage → retain key staff, cross-training, temp agency contacts, remote work capability; (3) Supplier failure → dual sourcing, inventory buffer, relationship diversification; (4) Physical disaster → offsite backup, insurance, alternative venues. Examiners reward SPECIFIC, COSTED mitigations tied to business impact."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p2-warn-23",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Over-investing in mitigation for low-probability risks while ignoring likely disruptions. Example: elaborate disaster recovery plan for meteorite strike (£500k), but no plan for employee absences during flu season (happens every year, costs £50k). Examiners expect PROPORTIONALITY: mitigation cost should align with risk probability and impact. Prioritize ruthlessly."
+      }
+    }
+  ]
+}

@@ -47,6 +47,24 @@ export const note_business_3_13_8 = {
         title: 'Exam tip: free float vs total float',
         text: 'Total Float = LFT − EST − Duration (maximum delay without delaying the project). Free Float = delay without delaying the NEXT activity (always ≤ total float). Examiners expect you to: (1) calculate total float, (2) interpret what it means for resource management, (3) distinguish free vs total float in higher-mark questions.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Calculate float (slack) for non-critical activities: Float = Latest Start \u2212 Earliest Start. Schedule non-critical activities first, then allocate resources to critical activities. Explain how float lets you manage project risk\u2014delays in non-critical activities won't extend project, buying time elsewhere."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Reducing resources on non-critical activities without checking dependencies. A non-critical activity might feed a critical activity downstream. Reducing its duration might raise quality of critical path work or free resources\u2014but reducing it carelessly could make it critical later."
+      }
     }
   ],
   recall: {

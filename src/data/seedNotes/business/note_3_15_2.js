@@ -4,16 +4,16 @@ export const note_business_3_15_2 = {
     { id: 'h-1', type: 'heading', data: { text: 'Profitability Ratios', level: 2 } },
     { id: 'p-1', type: 'paragraph', data: { text: 'Profitability ratios measure a company\'s absolute and relative success at generating profit from its operations and revenue. They are critical for investors and managers assessing efficiency.' } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Gross Profit Margin (%):\** (Gross Profit ÷ Revenue) × 100. Measures the percentage of sales revenue left after deducting direct costs of production.' },
-      { text: '\**Operating Profit Margin (%):\** (Operating Profit ÷ Revenue) × 100. Indicates how well a business is managing its indirect costs (overheads).' },
-      { text: '\**Profit for the Year Margin (%):\** (Profit for the Year ÷ Revenue) × 100. Shows the final percentage of revenue that is retained as net profit.' }
+      { text: '**Gross Profit Margin (%):** (Gross Profit ÷ Revenue) × 100. Measures the percentage of sales revenue left after deducting direct costs of production.' },
+      { text: '**Operating Profit Margin (%):** (Operating Profit ÷ Revenue) × 100. Indicates how well a business is managing its indirect costs (overheads).' },
+      { text: '**Profit for the Year Margin (%):** (Profit for the Year ÷ Revenue) × 100. Shows the final percentage of revenue that is retained as net profit.' }
     ] } },
     { id: 'call-1', type: 'callout', data: { style: 'worked', title: 'Calculating Profitability', text: 'Revenue = £800k, Gross Profit = £400k, Operating Profit = £160k. \nGross Profit Margin = (400/800)*100 = 50%.\nOperating Profit Margin = (160/800)*100 = 20%.' } },
     { id: 'h-2', type: 'heading', data: { text: 'Liquidity Ratios', level: 2 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'Liquidity ratios assess a business\'s ability to meet its short-term debt obligations using its short-term assets. A lack of liquidity can lead to insolvency and business failure.' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Current Ratio:\** Current Assets ÷ Current Liabilities. Evaluates general short-term solvency. A ratio between 1.5:1 and 2:1 is generally considered healthy.' },
-      { text: '\**Acid Test (Quick) Ratio:\** (Current Assets - Inventory) ÷ Current Liabilities. A more severe test of liquidity that excludes stock, as inventory can be difficult to sell quickly. A ratio of around 1:1 is desirable.' }
+      { text: '**Current Ratio:** Current Assets ÷ Current Liabilities. Evaluates general short-term solvency. A ratio between 1.5:1 and 2:1 is generally considered healthy.' },
+      { text: '**Acid Test (Quick) Ratio:** (Current Assets - Inventory) ÷ Current Liabilities. A more severe test of liquidity that excludes stock, as inventory can be difficult to sell quickly. A ratio of around 1:1 is desirable.' }
     ] } },
     { id: 'tbl-1', type: 'comparisonTable', data: {
       caption: 'Interpreting Liquidity Ratios',
@@ -50,6 +50,24 @@ export const note_business_3_15_2 = {
         style: 'tip',
         title: 'Exam tip: ratio comparison framework',
         text: 'Always compare ratios to (1) previous year (trend), (2) industry average, (3) direct competitor. A 5% net profit margin means nothing in isolation. State the comparison → draw a conclusion → evaluate significance. This structure earns AO2+AO3 marks.'
+      }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Profitability ratios: Gross profit % (COGS efficiency), Operating profit % (operational efficiency), Net profit % (overall efficiency), ROCE (return on capital). Liquidity ratios: Current ratio (current assets \u00f7 current liabilities), Quick ratio (acid test \u2014 excludes inventory). Normal benchmarks: current ratio \u2248 1.5\u20132.0, net profit % \u2248 5\u201310% (varies by sector). Compare TRENDS across 3+ years."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Calculating ratios without interpretation or comparison. A net profit margin of 8% means NOTHING without asking: Is this higher than last year? How does it compare to competitors? What CAUSED the change? Examiners penalize candidates who present numbers without analysis. Always follow calculation with insight: what does this ratio reveal about competitive position?"
       }
     }
   ],

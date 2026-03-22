@@ -25,7 +25,25 @@ export const note_business_3_13_4 = {
     { id: 'sum', type: 'summary', data: { text: 'The ARR calculates the total percentage return of a project, measuring total profitability. It allows for quick comparisons with target interest rates but ignores the time value of money.' } },
     { id: 'enr-callout-arr1', type: 'callout', data: { style: 'worked', title: 'Worked Example: ARR Calculation', text: 'Investment appraisal: £50,000 machine. Total returns over 5 years = £80,000.\nTotal net return = £80,000 - £50,000 = £30,000.\nAverage annual return = £30,000 ÷ 5 = £6,000.\nARR = (£6,000 ÷ £50,000) × 100 = 12%.\nThe firm\'s required return is 10%, so ARR > 10% — accept the investment.' } },
     { id: 'enr-callout-arr2', type: 'callout', data: { style: 'worked', title: 'Everyday Example: Online Reselling Business', text: 'A student invests £1,000 in a small online business (reselling trainers). Over 3 years earns total £1,600.\nNet return = £600. Average annual return = £200.\nARR = (£200 ÷ £1,000) × 100 = 20%.\nHigher than a bank\'s 5% interest rate — go ahead.' } },
-    { id: 'enr-tip-arr', type: 'callout', data: { style: 'tip', title: 'Exam Tip: ARR Evaluation', text: 'ARR gives a %, making it easy to compare against alternatives (bank rate, other projects). But it uses average profit, not actual cash flows, and ignores timing — so large late profits look the same as early ones.' } }
+    { id: 'enr-tip-arr', type: 'callout', data: { style: 'tip', title: 'Exam Tip: ARR Evaluation', text: 'ARR gives a %, making it easy to compare against alternatives (bank rate, other projects). But it uses average profit, not actual cash flows, and ignores timing — so large late profits look the same as early ones.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When calculating ARR, be clear on numerator: Use average annual profit (total profit \u00f7 years) or annual operating profit, and denominator: Average capital (initial + residual) \u00f7 2. Consistent methodology throughout shows competence; examiners mark down inconsistency."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Calculating ARR incorrectly by using total profit (not average) or end-capital (not average). These errors significantly understate or overstate the return. Always show full workings so examiners see your method and can award part-marks if needed."
+      }
+    }
   ],
   recall: {
     enabled: true,

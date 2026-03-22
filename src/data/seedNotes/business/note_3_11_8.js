@@ -219,6 +219,24 @@ export const note_business_3_11_8 = {
         title: 'Exam Tip \u2014 Five Forces: Strength Assessment and Profit Link',
         text: "Simply identifying the five forces earns low marks. The examiner wants: <b>(1) Assess the strength of each force</b> (high/medium/low) with a justified reason from the case. <b>(2) State the profit implication</b> \u2014 e.g., 'High buyer power limits Netflix's ability to raise subscription prices without losing subscribers.' <b>(3) Draw an overall conclusion</b> \u2014 'Overall, the streaming industry is relatively unattractive as high rivalry, powerful substitutes, and high buyer power combine to squeeze margins.' <b>(4) Suggest a strategic response</b> \u2014 'Netflix should deepen investment in exclusive original content to raise switching costs and reduce buyer power.'"
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When applying competitive analysis, identify your firm's actual competitive advantage (cost, differentiation, niche focus) and test it against each force. Does high buyer power erode your margin? Can you defend market share? This integration of strategy with external forces shows mastery."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Analyzing competitors' strengths instead of competitive forces. The exam tests your understanding of *structural industry forces*, not narrative comparisons between firms. Stay focused on barriers to entry, supplier/buyer power, substitutes, and rivalry dynamics."
+      }
     }
   ],
   recall: {

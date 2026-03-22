@@ -24,7 +24,25 @@ export const note_business_3_16_6 = {
     { type: 'summary', data: { text: 'Succession planning ensures strategic continuity by proactively preparing future leaders. Whether identifying internal talent or planning external hires, it protects the firm from the destabilizing shock of a sudden leadership void.' } },
     { id: 'enr-worked-apple', type: 'callout', data: { style: 'worked', title: "Apple's Succession: Steve Jobs → Tim Cook", text: "When Steve Jobs died in 2011, Tim Cook was already COO and had run Apple's operations for 13 years — clearly groomed as successor. Apple's share price hit a $400bn valuation in the year following Jobs' death, evidencing that the market trusted the succession plan. A contrast: when no plan exists, shares typically fall 20–30% on an unexpected CEO departure." } },
     { id: 'enr-worked-school', type: 'callout', data: { style: 'worked', title: 'Everyday Example: School Leadership Gap', text: 'A school fails to plan for the head teacher being ill for a month. No deputy was trained in finance decisions. Budget approval stalls, staff morale falls. Succession planning applies even in small organisations — anyone with unique skills or knowledge creates key-person dependency.' } },
-    { id: 'enr-tip-keydep', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Key-Person Dependency', text: 'Succession planning reduces key-person dependency risk. Small businesses are the most vulnerable — if the founder/CEO leaves, there may be no-one who knows the systems, relationships, or strategy. This is a significant risk for investors in small firms.' } }
+    { id: 'enr-tip-keydep', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Key-Person Dependency', text: 'Succession planning reduces key-person dependency risk. Small businesses are the most vulnerable — if the founder/CEO leaves, there may be no-one who knows the systems, relationships, or strategy. This is a significant risk for investors in small firms.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Succession planning identifies high-potential talent and develops them into future leaders. Key elements: (1) Identify critical roles; (2) Map internal talent pipelines; (3) Create development plans; (4) Cross-train to reduce key person dependencies; (5) Communicate openly (some candidates must know they're being groomed). Examiners reward proactive candidates who recognize succession as RETENTION tool: showing high-potential staff a path to leadership."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming external hire for leadership is always better. External leadership brings fresh ideas BUT faces learning curves (culture, relationships, context). Loss of internal continuity can destabilize teams. Examiners expect balanced view: internal succession is cheaper, faster, and retains culture; external hire is useful for major transformation. Choose based on STRATEGY, not default."
+      }
+    }
   ],
   recall: {
     enabled: true,

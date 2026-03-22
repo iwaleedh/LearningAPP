@@ -66,7 +66,25 @@ export const note_business_3_14_0 = {
   <text x="372" y="318" font-size="11" fill="#868e96">e.g. law firms, universities</text>
 </svg>`, caption: "Handy's Four Cultural Types" } },
       { id: "enr-callout-1", type: "callout", data: { style: "worked", title: "Case Study: Google's Task Culture", text: "Google's task culture enables '20% time' — engineers spend a day a week on personal projects. Gmail and Google Maps both originated from 20% time projects. The task culture directly drove product innovation." } },
-      { id: "enr-callout-2", type: "callout", data: { style: "tip", title: "Exam Tip", text: "Exam tip: Culture questions often ask you to RECOMMEND a culture type for a given context. Match task culture to innovation-led firms, role culture to stable public sector, power culture to start-ups/crisis management." } }
+      { id: "enr-callout-2", type: "callout", data: { style: "tip", title: "Exam Tip", text: "Exam tip: Culture questions often ask you to RECOMMEND a culture type for a given context. Match task culture to innovation-led firms, role culture to stable public sector, power culture to start-ups/crisis management." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Examiners love case studies linking corporate culture to real business outcomes. Learn to distinguish between clan, adhocracy, market, and hierarchy cultures using specific examples like Google (adhocracy) vs. military organizations (hierarchy). In essays, always explain WHY a culture influences decisions, not just WHAT the culture is."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing corporate culture with company values or mission statements. Culture is HOW things are done (behaviours, norms, unwritten rules), not WHAT the company claims to stand for. Simply listing value statements or CSR policies without discussing embedded behaviours will lose marks."
+      }
+    }
     ],
   recall: {
       enabled: true,

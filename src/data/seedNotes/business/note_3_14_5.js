@@ -22,7 +22,25 @@ export const note_business_3_14_5 = {
       { id: "sum-1", type: "summary", data: { text: "In the short term, ethical practices usually increase costs and lower profits. However, in the long term, strong ethics can enhance reputation, create a USP, and build customer loyalty, potentially leading to higher profitability." } },
       { id: "enr-svg-1", type: "svg", data: { svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200"><defs><linearGradient id="spectrumGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#22c55e"/></linearGradient></defs><rect x="0" y="0" width="560" height="200" fill="#0f172a" rx="8"/><text x="280" y="24" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Ethics&#x2013;Profit Spectrum</text><text x="40" y="50" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ef4444" font-weight="bold">Pure Profit</text><text x="520" y="50" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#22c55e" font-weight="bold">Pure Ethics</text><rect x="30" y="58" width="500" height="24" rx="12" fill="url(#spectrumGrad)"/><circle cx="70" cy="70" r="7" fill="#1e293b" stroke="#ef4444" stroke-width="2"/><text x="70" y="108" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#374151">Tobacco</text><text x="70" y="120" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#374151">companies</text><circle cx="190" cy="70" r="7" fill="#1e293b" stroke="#f97316" stroke-width="2"/><text x="190" y="108" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#374151">Fast fashion</text><circle cx="370" cy="70" r="7" fill="#1e293b" stroke="#84cc16" stroke-width="2"/><text x="370" y="108" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#374151">Unilever</text><circle cx="490" cy="70" r="7" fill="#1e293b" stroke="#22c55e" stroke-width="2"/><text x="490" y="108" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#374151">Patagonia</text><text x="280" y="158" text-anchor="middle" font-family="sans-serif" font-size="10.5" fill="#64748b">Most firms operate somewhere in the middle &#x2014; context determines position.</text></svg>`, caption: "Ethics&#x2013;Profit Spectrum: Industry Positioning" } },
       { id: "enr-callout-1", type: "callout", data: { style: "worked", title: "Primark's Dilemma", text: "Competing on low price requires cheap manufacturing &#x2192; Bangladesh factories pay &#xA3;0.37/hour. Raising wages would increase costs &#x2192; raise prices &#x2192; lose price-sensitive customers. The ethics-profit trade-off is structural, not just a management choice." } },
-      { id: "enr-callout-2", type: "callout", data: { style: "warning", title: "Short-term Profit vs Long-term Reputation", text: "VW's Dieselgate: cheated emissions tests to maintain profit margins. Fines totalled $34bn &#x2014; far more than the costs of ethical behaviour would have been. Unethical short-term decisions can destroy long-term value." } }
+      { id: "enr-callout-2", type: "callout", data: { style: "warning", title: "Short-term Profit vs Long-term Reputation", text: "VW's Dieselgate: cheated emissions tests to maintain profit margins. Fines totalled $34bn &#x2014; far more than the costs of ethical behaviour would have been. Unethical short-term decisions can destroy long-term value." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use explicit examples of profit/ethics trade-offs: moving factories to low-wage countries (profit vs. worker dignity), aggressive tax avoidance (profit vs. societal responsibility), cost-cutting on safety (profit vs. consumer protection). Examiners reward candidates who show profit and ethics often conflict \u2014 and that business leaders frequently CHOOSE profit. This is strategic realism."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Presenting profit and ethics as complementary (e.g., 'ethical businesses are more profitable'). While sometimes true, this is wishful thinking. Examiners expect you to acknowledge REAL trade-offs: ethical hiring practices cost more; environmental compliance reduces margins; paying living wages cuts shareholder dividends. Admitting these tensions shows critical thinking."
+      }
+    }
     ],
   recall: {
       enabled: true,

@@ -42,7 +42,25 @@ export const note_business_3_16_1 = {
     { id: 'enr-callout-satya', type: 'callout', data: { style: 'worked', title: 'Brand Example: Microsoft under Satya Nadella (2014)', text: 'When Satya Nadella became CEO of Microsoft in 2014, the company was notoriously siloed and bureaucratic — a textbook large-organisation problem. Nadella broke these silos by restructuring into smaller agile cross-functional teams and instilling a growth mindset (shifting from a competitive "know-it-all" culture to a collaborative "learn-it-all" culture). Microsoft\'s market capitalisation grew from ~$300bn to over $3 trillion within a decade, demonstrating how even the largest organisations can dramatically accelerate change speed through deliberate restructuring and cultural shift.' } },
     { id: 'enr-callout-startup-contrast', type: 'callout', data: { style: 'worked', title: 'Contrast: Small Startup vs Large Bank', text: 'A 12-person fintech startup can overhaul its entire software architecture over a single 2-week sprint. A high-street bank with 80,000 employees may take 3–5 years to migrate to a new core banking platform — not because the technology is harder, but because of regulatory approvals, training at scale, union consultations, and legacy system dependencies. Organisation size multiplies every friction point in the change process.' } },
     { id: 'enr-callout-warning-pace', type: 'callout', data: { style: 'warning', title: 'Warning: Forced Pace at Scale', text: 'Change imposed top-down without communication causes strikes and high turnover. Large organisations in particular must invest heavily in consultation, town hall meetings, and cascade communication — the sheer volume of anxious employees in a large firm can generate a restraining force that overwhelms even well-resourced change programmes.' } },
-    { id: 'enr-callout-tip-pace', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'In evaluative questions, always discuss whether the pace of change was appropriate considering <em>both</em> the organisation\'s size and its culture. A small startup with a power culture can sprint through change; a large corporation with a role culture must plan a longer, more consultative runway.' } }
+    { id: 'enr-callout-tip-pace', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'In evaluative questions, always discuss whether the pace of change was appropriate considering <em>both</em> the organisation\'s size and its culture. A small startup with a power culture can sprint through change; a large corporation with a role culture must plan a longer, more consultative runway.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Organization size and change: Small firms are AGILE (quick decisions, low bureaucracy) but lack resources for major change management. Large firms have resources but face rigidity (hierarchies, approval chains). Use real examples: startups pivot fast, corporations take 2\u20133 years for strategic shifts. Examiners reward candidates who explain the MECHANISM: why does size affect speed?"
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming 'smaller is better' for change. While small firms are faster, they often lack expertise, funding, and resilience to handle FAILED changes. Large firms are slower but more robust. Examiners expect nuance: the OPTIMAL size depends on the TYPE of change (incremental tweaks suit large firms; reinvention suits small, nimble firms)."
+      }
+    }
   ],
   recall: {
     enabled: true,

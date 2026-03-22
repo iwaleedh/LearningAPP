@@ -236,6 +236,24 @@ export const note_business_3_11_7 = {
         title: 'Exam Tip \u2014 Selecting and Prioritising PESTLE Factors',
         text: 'Never apply all six PESTLE factors equally \u2014 this signals poor analytical judgement. <b>Select the 2\u20133 most relevant factors</b> for the specific business context and explain thoroughly. Strong answers follow three steps: <b>(1) Identify</b> the factor \u2014 e.g., "Rising interest rates (Economic)"; <b>(2) Link to business impact</b> \u2014 e.g., "increases borrowing costs on debt, reducing funds available for store investment"; <b>(3) Recommend a response</b> \u2014 e.g., "prioritise debt reduction and delay major capital expenditure until rates fall."'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "For PESTLE, always follow this pattern: Identify the macro-factor \u2192 Explain its business impact \u2192 Predict how it changes \u2192 Propose strategic response. A four-factor PESTLE analyzed deeply beats a six-factor list analyzed superficially every time."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating PESTLE factors as static. Examiners expect you to recognize that factors evolve: interest rates fluctuate, regulations shift, society's values change. Connect each factor to current business reality and explain dynamic implications, not just snapshot analysis."
+      }
     }
   ],
   recall: {

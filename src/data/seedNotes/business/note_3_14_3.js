@@ -23,7 +23,25 @@ export const note_business_3_14_3 = {
       { id: "sum-1", type: "summary", data: { text: "Stakeholder objectives naturally conflict, especially regarding financial distribution. Effective management requires prioritizing groups and finding strategic compromises to maintain operational harmony." } },
       { id: "enr-callout-1", type: "callout", data: { style: "worked", title: "Worked Example: Amazon Stakeholder Conflicts", text: "<strong>Shareholders</strong> want maximum profit. <strong>Warehouse workers</strong> want safe conditions and fair pay (2019 strikes over pace targets). <strong>Communities</strong> worry about blighting high streets. <strong>Government</strong> wants tax revenue (Amazon paid £293m UK tax on £23bn revenue in 2023 — a 1.3% effective rate). Each stakeholder has a legitimate but directly conflicting objective, forcing Amazon to make difficult prioritisation decisions." } },
       { id: "enr-callout-2", type: "callout", data: { style: "worked", title: "Everyday Example: A School", text: "<strong>Teachers</strong> want manageable class sizes. <strong>Students</strong> want exciting lessons. <strong>Parents</strong> want good exam results. <strong>Governors</strong> want a balanced budget. All are stakeholders of the same organisation with conflicting objectives — just like a business. The senior leadership team must prioritise and negotiate compromises." } },
-      { id: "enr-callout-3", type: "callout", data: { style: "tip", title: "Exam Tip", text: "When answering stakeholder conflict questions: (1) <strong>identify</strong> the conflict, (2) explain <em>why</em> objectives clash, (3) evaluate how the business <em>should</em> prioritise. Context matters: a PLC will prioritise shareholders; a social enterprise will prioritise the community." } }
+      { id: "enr-callout-3", type: "callout", data: { style: "tip", title: "Exam Tip", text: "When answering stakeholder conflict questions: (1) <strong>identify</strong> the conflict, (2) explain <em>why</em> objectives clash, (3) evaluate how the business <em>should</em> prioritise. Context matters: a PLC will prioritise shareholders; a social enterprise will prioritise the community." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use concrete examples of stakeholder conflict: shareholders want profit (layoffs), employees want job security, communities want local employment. In evaluation questions, show how a business decision benefits one group but harms another. This demonstrates understanding of trade-offs, which examiners reward highly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Describing stakeholder conflicts as if they can always be resolved through 'better communication' or compromise. Some conflicts are fundamental (e.g., profit vs. worker protections). Examiners expect sophistication \u2014 acknowledge that businesses often CHOOSE which stakeholder groups to prioritize, and this choice HAS consequences."
+      }
+    }
     ],
   recall: {
       enabled: true,

@@ -1,0 +1,582 @@
+{
+  "src/data/seedNotes/business/note_3_11_0.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Remember the hierarchical relationship: Mission is the broadest purpose, Aims are long-term intentions, Objectives are specific measurable targets. Always link strategy back to all three levels—this shows sophisticated strategic thinking that examiners reward highly."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing objectives with strategy—many students treat them as synonyms. Objectives are *what* the firm aims to achieve; strategy is *how* it will get there. This distinction is crucial in 8-mark evaluation questions."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_1.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When evaluating mission statements, use a balanced framework: analyze their motivational power, strategic clarity, and stakeholder communication separately. Then synthesize by arguing whether *for this specific firm* the balance of advantages outweighs limitations."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Simply saying a mission statement is 'useful' or 'not useful' without context. Examiners expect you to acknowledge that usefulness depends on firm size, industry, and stakeholder priorities. Vague statements rarely secure high marks."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_2.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Know which models suit which contexts: Ansoff for market entry decisions, Porter's Forces for competitive position, BCG for portfolio management, SWOT for internal/external audit, PESTLE for macro-environmental screening. Matching the right tool to the business problem is a top-level skill."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Applying one model mechanically without stating assumptions or limitations. Every strategic model operates on certain assumptions (e.g., static competitive environment, rational decision-making). Acknowledge these to lift analysis from basic to excellent."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_3.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Be precise: Market Development is *new markets*, Product Development is *new products*. When analyzing an Ansoff case, explicitly state which quadrant the firm is entering and why (market share gain, revenue growth, risk reduction). This precision impresses examiners."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Underestimating diversification risk. Many students present Diversify as a high-growth opportunity without deeply analyzing why 80% of diversifications fail. Address integration costs, brand stretch, and management capability gaps to show critical evaluation."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_4.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Porter's Five Forces analysis is only powerful when you rank the forces and synthesize: Identify which 1–2 forces are *most* threatening for this specific company, then recommend strategic responses. General force-by-force listing scores lower than targeted strategic insight."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating the five forces as equally important in all industries. Supplier power dominates extractive industries; buyer power dominates retail. Industry context dramatically shapes which forces matter most—this nuance separates proficient from outstanding answers."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_5.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use the BCG matrix to generate strategic questions rather than definitive answers: Should we milk the Cash Cow or reinvest? Can Question Marks be turned into Stars or should we divest? These questions reveal dynamic strategic thinking that examiners value."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming Dogs should always be divested immediately. Some Dogs generate cash with minimal investment; others are strategically important for market presence. Always contextualize—is divestiture truly optimal or just obvious? This thinking elevates analysis significantly."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_6.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "In SWOT analysis, always distinguish: Strengths/Weaknesses are *internal and controllable*, Opportunities/Threats are *external and often uncontrollable*. Then convert Weaknesses into Opportunities and Threats into Defenses to show strategic problem-solving ability."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Creating a random list of factors without strategic relevance. Examiners value focused SWOTs: What strengths are *defensible*? What weaknesses *urgently* need addressing? What opportunities are *realistic*? Prioritization and business relevance matter far more than length."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_7.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "For PESTLE, always follow this pattern: Identify the macro-factor → Explain its business impact → Predict how it changes → Propose strategic response. A four-factor PESTLE analyzed deeply beats a six-factor list analyzed superficially every time."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating PESTLE factors as static. Examiners expect you to recognize that factors evolve: interest rates fluctuate, regulations shift, society's values change. Connect each factor to current business reality and explain dynamic implications, not just snapshot analysis."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_8.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-8",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When applying competitive analysis, identify your firm's actual competitive advantage (cost, differentiation, niche focus) and test it against each force. Does high buyer power erode your margin? Can you defend market share? This integration of strategy with external forces shows mastery."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-8",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Analyzing competitors' strengths instead of competitive forces. The exam tests your understanding of *structural industry forces*, not narrative comparisons between firms. Stay focused on barriers to entry, supplier/buyer power, substitutes, and rivalry dynamics."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_11_9.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-9",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use this framework: Strategic decisions are *high-stakes, long-term, irreversible* (e.g., market entry, acquisition); Tactical decisions are *short-term, reversible, operational* (e.g., pricing promotion, staffing shifts). Explicitly naming the timeframe and risk level impresses examiners."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-9",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming all decisions made by senior leaders are strategic. A board might make an operational decision (e.g., negotiate a supplier contract) quickly and reversibly. Conversely, middle management might make strategic choices (new product launch). Focus on *decision characteristics*, not organizational hierarchy."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_0.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-10",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When evaluating growth objectives, assess them against the firm's context: Is rapid growth feasible given market constraints? Does growth align with owner ambitions (profit vs. growth)? Is growth sustainable? Linking objectives to business reality shows sophisticated strategic thinking."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-10",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming bigger is always better. Some firms purposely limit growth to maintain culture, quality, or owner control. Others pursue modest profitability over explosive growth. Challenge the assumption that growth is universally desirable—this critical lens earns high marks."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_1.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-11",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Remember: Organic growth builds capability internally (slower but sustainable, lower risk). Inorganic growth gains market share immediately (faster but integrates risk, culture clash). Always frame trade-offs: Speed vs. Integration Complexity, Risk vs. Sustainability."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-11",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Using 'organic' and 'internal' interchangeably, and 'inorganic' with 'external'—they're not identical. A firm can grow internally via acquisitions; it can grow externally via partnerships. Precise language about growth *mechanism* and growth *strategy* lifts analysis substantially."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_2.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-12",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "For organic growth methods, match the method to the firm's position: Market penetration works when market is growing or competitor-weak. Product development suits innovators with R&D strength. Market development suits firms with strong brand or operational efficiency. Context-specific analysis impresses."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-12",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Claiming organic growth is always slower than inorganic. Counter-example: Market penetration in high-growth markets (e.g., tech) can be faster than acquiring and integrating a company. Avoid blanket statements—analyze specific scenarios with real constraints."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_3.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-13",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Key distinction: Merger = consensual union of equals; Takeover = one firm acquires another, often contested. Motives differ: Mergers often seek complementary strengths; Takeovers often extract undervalued assets. This precision demonstrates command of corporate strategy."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-13",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Forgetting that not all acquisitions succeed—particularly hostile takeovers. Employee departure, customer loss, and cultural clash plague many takeovers. Acknowledge these hidden costs when evaluating M&A strategy; examiners reward realistic risk assessment over optimistic scenarios."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_4.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-14",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Integrate forms of integration with motives: Horizontal integration eliminates competitor/achieves scale; Vertical integration secures supply/improves margin; Conglomerate integration diversifies risk/enters new sectors. Match each form to clear strategic rationale for full marks."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-14",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming backward vertical integration always reduces costs. If the supplier is monopolistic or highly efficient, acquiring it may not save money—it might even waste capital. The benefit depends on supplier dynamics, not just integration type."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_5.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-15",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When assessing inorganic growth risks, create a risk matrix: High-probability/high-impact risks (culture clash, integration failure) demand mitigation strategies. Low-probability/high-impact risks (regulatory veto) need contingency plans. Examiners reward systematic risk thinking."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-15",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Listing risks without evaluation. Examiners expect you to rank risks by likelihood and impact, then propose mitigation—not just catalog dangers. A three-deep risk with clear mitigation beats five-risks-mentioned with no solutions."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_6.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-16",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Separate economies of scale (benefits) from diseconomies (costs) explicitly: At scale, unit costs fall due to volume discounts, specialization; above-optimal scale, bureaucracy, coordination costs rise. Show this trade-off graphically if possible—U-shaped average cost curves impress."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-16",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming unlimited economies of scale. Diseconomies are *real and inevitable* beyond optimal firm size. Many large corporations suffer inefficiency despite scale—Microsoft, IBM, General Motors. Acknowledge the limit to growth-through-scale thinking."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_12_7.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-17",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Overtrading is when rapid growth exhausts cash despite profitability. Connect this to working capital: Fast growth requires inventory, receivables investment *before* cash returns. Examiners reward students who explain why profitable firms can still run out of cash."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-17",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing overtrading with insolvency. An overtrading firm is *potentially solvent* but cash-strapped—solvable via credit lines or slower growth. Insolvency is liabilities > assets, a deeper failure. Distinguish these for precision-marking credit."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_0.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-18",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "For time-series forecasting, show your working clearly: Calculate moving averages step-by-step, identify trend, assess seasonal pattern. Explain *why* you chose four-period over three—this methodological awareness separates competent from excellent candidates."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-18",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Extrapolating trends mechanically without assessing realism. If sales grew 20% annually for five years, simply projecting 20% forward ignores market saturation, competition, and macro shifts. Always sense-check forecasts against business context."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_1.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-19",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When drawing a line of best fit, calculate the correlation coefficient to show strength of relationship. A weak scatter (r² = 0.3) is unreliable for forecasting; a strong one (r² = 0.9) carries weight. Quantifying relationship quality demonstrates rigor."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-19",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming correlation implies causation. High correlation between advertising spend and sales might reflect both responding to market growth, not advertising *causing* sales. Always question whether the relationship is truly causal or coincidental."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_10.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-20",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Synthesize limitations into a coherent argument: Quantitative tools assume rational decision-making, stable environments, and available data—but real firms face uncertainty, bounded rationality, and incomplete information. Integrate qualitative judgment with quantitative rigor for rounded strategy."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-20",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Making quantitative tools seem more powerful than they are. NPV assumes discount rates are *knowable*; Decision Trees assume all outcomes are *predictable*. Acknowledge uncertainty bounds—tools guide decisions but cannot eliminate business risk inherent in strategy."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_2.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-21",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When evaluating forecasting limits, separate technical from contextual: Technical limits = model choice, data quality (fixable); Contextual = market disruption, regulation change, competitor innovation (unforeseen). Explain both for sophisticated analysis."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-21",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming past trends predict future perfectly. COVID-19, iPhone launch, and Brexit all broke forecasts built on historical data. Examiners expect you to recognize that forecasting inherently carries irreducible uncertainty—especially beyond 2–3 years."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_3.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-22",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Calculate Payback Period correctly: Sum annual cash flows until cumulative = initial investment. If breakeven falls mid-year, interpolate linearly. Then evaluate: Payback is simple and ignores time value—useful for *liquidity risk* but poor for *long-term profitability* assessment."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-22",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Using Payback Period as a primary investment screen (e.g., 'Investment A pays back faster so it's better'). Payback ignores cash flows *after* payback period and does not account for time value of money. Always complement with NPV or ARR for comprehensive appraisal."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_4.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-23",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When calculating ARR, be clear on numerator: Use average annual profit (total profit ÷ years) or annual operating profit, and denominator: Average capital (initial + residual) ÷ 2. Consistent methodology throughout shows competence; examiners mark down inconsistency."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-23",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Calculating ARR incorrectly by using total profit (not average) or end-capital (not average). These errors significantly understate or overstate the return. Always show full workings so examiners see your method and can award part-marks if needed."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_5.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-24",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When using NPV, always explain the discount rate choice: Is it firm's cost of capital, target return, or risk-adjusted rate? The rate choice *directly drives* NPV size. A higher rate favors short-term projects; a lower rate favors long-term projects. Show rate logic for sophistication."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-24",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Accepting NPV blindly without sensitivity analysis. If NPV is +£50k but break-even if discount rate rises 1%, the project is risky. Test NPV's robustness: What if cash flows fall 10%? What if project takes two years longer? Sensitivity analysis proves strategic caution."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_6.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-25",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When building a decision tree, multiply probabilities downward and values rightward: Each branch shows probability × payoff. Compare expected values of competing options clearly. Then note non-financial factors (risk appetite, brand risk) that might override the math."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-25",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating decision tree outcomes as certainties after calculation. Decision trees *quantify* expected value but cannot eliminate the possibility of worst-case outcomes. A £10k expected value could come from 10% chance of £100k gain and 90% chance of zero—acknowledge this risk."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_7.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-26",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "In Critical Path Analysis, distinguish clearly: Forward pass calculates Earliest Start/Finish times; Backward pass calculates Latest Start/Finish times. The critical path is Earliest Finish = Latest Finish (zero float). Label the critical path on your network clearly so examiners award marks immediately."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-26",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing the critical path with the longest duration sequence. The critical path is the longest *project* path where any delay delays the overall project. A shorter activity with zero float can become critical if the critical path is shortened—show dynamic understanding."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_8.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-27",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Calculate float (slack) for non-critical activities: Float = Latest Start − Earliest Start. Schedule non-critical activities first, then allocate resources to critical activities. Explain how float lets you manage project risk—delays in non-critical activities won't extend project, buying time elsewhere."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-27",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Reducing resources on non-critical activities without checking dependencies. A non-critical activity might feed a critical activity downstream. Reducing its duration might raise quality of critical path work or free resources—but reducing it carelessly could make it critical later."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_3_13_9.js": [
+    {
+      "id": "callout-bus-u3-p1-tip-28",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "For contribution costing, calculate: Contribution = Price − Variable Cost. Make decisions based on contribution per unit or contribution per *limiting factor* (e.g., per machine hour if capacity-constrained). Accept special orders if contribution > 0 and spare capacity exists—this operational analysis impresses."
+      }
+    },
+    {
+      "id": "callout-bus-u3-p1-warn-28",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Ignoring fixed costs when analyzing special orders. While contribution analysis is correct, accepting too many low-margin special orders can mean fixed costs aren't covered in total. Always reconcile contribution decisions to full profitability and ensure long-term sustainability."
+      }
+    }
+  ]
+}

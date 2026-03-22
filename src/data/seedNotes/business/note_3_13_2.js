@@ -24,7 +24,25 @@ export const note_business_3_13_2 = {
     { id: 'sum', type: 'summary', data: { text: 'Forecasting uses past data to inform future expectations, but its limitations—especially vulnerability to external shocks and ignorance of qualitative factors—mean it should be used cautiously.' } },
     { id: 'enr-worked', type: 'callout', data: { style: 'worked', title: 'Worked Example: Blockbuster — A Flawed Forecast', text: 'Blockbuster forecasted 2010 DVD rental revenue based on 2005–2009 trends. The trend looked stable. But Netflix streaming destroyed the market entirely by 2012 — a Black Swan event no forecasting model could predict.' } },
     { id: 'enr-warning', type: 'callout', data: { style: 'warning', title: 'Structural Market Change Renders Forecasts Obsolete', text: 'Forecasts are based on past data. If the market changes structurally (new technology, pandemic, war), historical trends are useless. COVID-19 made 2019 forecasts worthless for every airline, hotel and restaurant.' } },
-    { id: 'enr-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Forecasting Accuracy', text: 'Exam tip: Always evaluate accuracy vs usefulness of forecasting. 3 marks for criticisms: past data, external shocks, subjective choice of technique.' } }
+    { id: 'enr-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Forecasting Accuracy', text: 'Exam tip: Always evaluate accuracy vs usefulness of forecasting. 3 marks for criticisms: past data, external shocks, subjective choice of technique.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When evaluating forecasting limits, separate technical from contextual: Technical limits = model choice, data quality (fixable); Contextual = market disruption, regulation change, competitor innovation (unforeseen). Explain both for sophisticated analysis."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming past trends predict future perfectly. COVID-19, iPhone launch, and Brexit all broke forecasts built on historical data. Examiners expect you to recognize that forecasting inherently carries irreducible uncertainty\u2014especially beyond 2\u20133 years."
+      }
+    }
   ],
   recall: {
     enabled: true,

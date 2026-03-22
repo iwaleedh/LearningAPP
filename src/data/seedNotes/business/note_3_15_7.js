@@ -4,18 +4,18 @@ export const note_business_3_15_7 = {
     { id: 'h-1', type: 'heading', data: { text: 'Financial Strategies', level: 2 } },
     { id: 'p-1', type: 'paragraph', data: { text: 'Firms can manipulate pay structures to incentivize greater output and loyalty. Financial methods appeal to the physiological and security needs of employees.' } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Performance-related pay (PRP):\** Bonuses tied to meeting specific targets or appraisals.' },
-      { text: '\**Piece-rate systems:\** Pay linked directly to the volume of output produced.' },
-      { text: '\**Profit sharing & Share ownership:\** Gives employees a vested financial interest in the overall success of the company, boosting retention.' },
-      { text: '\**Fringe benefits:\** Perks such as company cars, health insurance, or gym memberships.' }
+      { text: '**Performance-related pay (PRP):** Bonuses tied to meeting specific targets or appraisals.' },
+      { text: '**Piece-rate systems:** Pay linked directly to the volume of output produced.' },
+      { text: '**Profit sharing & Share ownership:** Gives employees a vested financial interest in the overall success of the company, boosting retention.' },
+      { text: '**Fringe benefits:** Perks such as company cars, health insurance, or gym memberships.' }
     ] } },
     { id: 'h-2', type: 'heading', data: { text: 'Non-Financial Strategies', level: 2 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'Modern theorists (such as Herzberg and Maslow) emphasize that non-financial rewards are often more effective at driving long-term motivation and retention than purely financial incentives.' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Job Enlargement:\** Increasing the scope of a job by adding more tasks of a similar complexity level (reduces boredom).' },
-      { text: '\**Job Enrichment:\** Giving employees tasks that require higher skill and responsibility, providing opportunities for psychological growth.' },
-      { text: '\**Empowerment & Delegation:\** Allowing employees to make their own decisions regarding their work, building trust.' },
-      { text: '\**Flexible working:\** Offering remote work, flexitime, or compressed hours to improve work-life balance.' }
+      { text: '**Job Enlargement:** Increasing the scope of a job by adding more tasks of a similar complexity level (reduces boredom).' },
+      { text: '**Job Enrichment:** Giving employees tasks that require higher skill and responsibility, providing opportunities for psychological growth.' },
+      { text: '**Empowerment & Delegation:** Allowing employees to make their own decisions regarding their work, building trust.' },
+      { text: '**Flexible working:** Offering remote work, flexitime, or compressed hours to improve work-life balance.' }
     ] } },
     { id: 'tbl-1', type: 'comparisonTable', data: {
       caption: 'Financial vs Non-Financial HR Strategies',
@@ -53,6 +53,24 @@ export const note_business_3_15_7 = {
         text: "For 20-mark questions: 'The effectiveness of any HR strategy depends on workforce context — a factory worker may value pay and job security over autonomy; a software engineer may value creative freedom and progression over base pay.' Context-dependent evaluation earns Level 3. Avoid one-size-fits-all answers."
       }
     },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "HR strategies to boost productivity & retention: (1) Competitive wages + benefits; (2) Training & development; (3) Career progression paths; (4) Flexible working; (5) Performance recognition; (6) Positive culture. Examiners expect you to EVALUATE costs vs. benefits: \u00a350k annual training budget might reduce turnover by 5% (saving \u00a3200k in replacement costs). Use business case thinking."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Suggesting HR strategies without acknowledging trade-offs. Higher wages = lower profit margins. Flexible working = management complexity. Examiners reward realism: strategies must be AFFORDABLE and ROI-justified. A small firm can't offer the benefits of a large corporation. Context matters \u2014 what works for tech startups (unlimited leave) fails in manufacturing (customer schedule mismatch)."
+      }
+    }
   ],
   recall: {
     enabled: true,

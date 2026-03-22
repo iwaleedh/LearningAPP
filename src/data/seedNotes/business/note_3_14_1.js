@@ -17,13 +17,31 @@ export const note_business_3_14_1 = {
         { text: "<strong>Employee Resistance:</strong> Fear of the unknown, loss of status, or comfort with current habits." },
         { text: "<strong>Lack of Leadership Alignment:</strong> If senior management does not role-model the new culture, employees will not adopt it." },
         { text: "<strong>Inappropriate Reward Systems:</strong> Expecting teamwork but continuing to solely reward individual performance." },
-        { text: "<strong>Deep-Rooted Traditions:</strong> 'We\'ve always done it this way' mindset." }
+        { text: "<strong>Deep-Rooted Traditions:</strong> 'We've always done it this way' mindset." }
       ] } },
       { id: "c-2", type: "callout", data: { style: "worked", title: "Real-World Context: Mergers", text: "When two companies merge, culture clashes are common. If an entrepreneurial 'power culture' company buys a highly bureaucratic 'role culture' firm, immense friction will occur unless a strategy is deployed to integrate them." } },
       { id: "sum-1", type: "summary", data: { text: "Culture is formed by leadership, history, and rewards. Changing it is a long, difficult process often blocked by employee resistance and misaligned leadership." } },
       { id: "enr-callout-1", type: "callout", data: { style: "worked", title: "Case Study: Nokia's Power Culture of Fear", text: "Nokia's culture in the 2000s: engineers knew the iPhone was coming but feared telling senior managers (power culture of fear). A Harvard study found junior engineers suppressed technical warnings. The cultural barrier to honest communication led directly to Nokia's collapse from 40% to 3% smartphone market share." } },
       { id: "enr-callout-2", type: "callout", data: { style: "warning", title: "Culture Change Takes Time", text: "Culture change typically takes 5–10 years. Even when leadership changes, existing staff carry old habits, informal norms, and resistance. The 'way we do things here' is the hardest thing in business to change." } },
-      { id: "enr-callout-3", type: "callout", data: { style: "tip", title: "Exam Tip", text: "Exam tip: Culture change barriers — inertia (people resist new ways), legacy processes (old reward systems incentivise old behaviours), power structures (those who benefit from current culture block change)." } }
+      { id: "enr-callout-3", type: "callout", data: { style: "tip", title: "Exam Tip", text: "Exam tip: Culture change barriers — inertia (people resist new ways), legacy processes (old reward systems incentivise old behaviours), power structures (those who benefit from current culture block change)." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When discussing how culture is formed, reference Schein's three levels (artifacts, beliefs, assumptions) and use Mintzberg's organizational structures (machine, professional, divisional, innovative, missionary). Barriers to change are often rooted in deeply-held assumptions \u2014 examiners reward candidates who explain the psychological resistance, not just management barriers."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating culture change as purely a management/HR problem. Examiners expect you to recognize that long-established cultures are RESISTANT because they are deeply embedded in employee routines and identity. Saying 'just communicate the new values' without addressing the real costs and time required will be marked as superficial."
+      }
+    }
     ],
   recall: {
       enabled: true,

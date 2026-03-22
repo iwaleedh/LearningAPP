@@ -33,7 +33,25 @@ export const note_business_3_12_2 = {
     { id: 'enr-callout-greggs', type: 'callout', data: { style: 'worked', title: 'Real Example — Greggs (Organic)', text: 'Greggs is a textbook example of organic growth. Rather than acquiring rivals, it steadily opened new outlets in railway stations, motorway services, and retail parks across the UK. It organically diversified its menu by introducing vegan options (the vegan sausage roll, 2019) and extended opening hours. All growth was funded through reinvested profits, retaining full management control and consistent corporate culture throughout.' } },
     { id: 'enr-callout-amazon-organic', type: 'callout', data: { style: 'worked', title: 'Real Example — Amazon (Organic Expansion)', text: 'Amazon\'s expansion from books into electronics, clothing, and streaming (Prime Video) are classic organic <em>product development</em> examples. Its AWS division — now generating over $90bn annually — was built entirely through internal R&D as organic <em>diversification</em>. Amazon did not acquire a cloud company to enter that market: it grew the capability from within, funded by reinvested profits.' } },
     { id: 'enr-callout-bakery-organic', type: 'callout', data: { style: 'worked', title: 'Everyday Example — The Local Bakery (Organic)', text: 'A family-run bakery in Cambridge reinvests £20,000 of annual profit to install a second industrial oven, hire two part-time bakers, and launch a delivery service through its own website. It also adds a gluten-free range. Every step is organic: no external business is acquired, ownership remains 100% with the founding family, and the working culture and quality standards are fully maintained.' } },
-    { id: 'enr-callout-tip-organic', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Finance for Organic Growth', text: 'When asked how a business could finance organic growth, evaluate each option: <strong>Retained profits</strong> = no interest cost, no ownership dilution — usually the strongest option. <strong>Bank loan</strong> = creates interest obligations that reduce profitability, but retains ownership. <strong>Share issue</strong> = dilutes existing shareholders\' control and voting power. Always tie your chosen method to the specific financial position and context described in the question.' } }
+    { id: 'enr-callout-tip-organic', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Finance for Organic Growth', text: 'When asked how a business could finance organic growth, evaluate each option: <strong>Retained profits</strong> = no interest cost, no ownership dilution — usually the strongest option. <strong>Bank loan</strong> = creates interest obligations that reduce profitability, but retains ownership. <strong>Share issue</strong> = dilutes existing shareholders\' control and voting power. Always tie your chosen method to the specific financial position and context described in the question.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "For organic growth methods, match the method to the firm's position: Market penetration works when market is growing or competitor-weak. Product development suits innovators with R&D strength. Market development suits firms with strong brand or operational efficiency. Context-specific analysis impresses."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Claiming organic growth is always slower than inorganic. Counter-example: Market penetration in high-growth markets (e.g., tech) can be faster than acquiring and integrating a company. Avoid blanket statements\u2014analyze specific scenarios with real constraints."
+      }
+    }
   ],
   recall: {
     enabled: true,

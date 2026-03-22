@@ -34,7 +34,25 @@ export const note_business_3_16_2 = {
     { id: 'enr-callout-nokia', type: 'callout', data: { style: 'worked', title: 'Brand Example: Nokia — Culture of Fear as Restraining Force', text: 'Nokia\'s engineering teams reportedly knew their smartphone software was years behind Apple\'s iOS, but lacked psychological safety to report this to senior management. The fear culture (restraining force) suppressed the innovation drive (driving force). Nokia lost 90% of its smartphone market share between 2007–2012. Resistance here came not from ignorance but from a toxic internal environment where delivering bad news was career-limiting.' } },
     { id: 'enr-callout-everyday', type: 'callout', data: { style: 'tip', title: 'Everyday Example: The Revision Timetable Dilemma', text: 'Consider switching from a familiar revision routine to a new spaced-repetition schedule. <b>Driving forces:</b> upcoming exams, poor mock results, teacher advice, peer competition. <b>Restraining forces:</b> habit (hard to abandon old routine), initial time investment, uncertainty about whether the new approach works. You only change when you feel the driving forces are stronger. This mirrors exactly how employees weigh up change at work.' } },
     { id: 'enr-callout-warning-topdown', type: 'callout', data: { style: 'warning', title: 'Warning: Top-Down Change Without Communication', text: 'Change imposed top-down without transparency or negotiation triggers the most extreme forms of resistance — industrial action (strikes), mass resignations, and public criticism. Employees who feel disrespected will find ways to undermine change even if they cannot openly oppose it. Communication should always be the first tool against resistance, not the last resort.' } },
-    { id: 'enr-callout-tip-exam', type: 'callout', data: { style: 'tip', title: 'Examiner Tip: Link Leadership to Change', text: 'Examiners reward students who link leadership style to change management. A transformational leader is far better equipped to overcome resistance than a transactional one — they address the emotional root causes (fear and uncertainty) through vision and empowerment, rather than simply offering rewards or threats. Always connect Kotter &amp; Schlesinger strategies to the type of leader deploying them.' } }
+    { id: 'enr-callout-tip-exam', type: 'callout', data: { style: 'tip', title: 'Examiner Tip: Link Leadership to Change', text: 'Examiners reward students who link leadership style to change management. A transformational leader is far better equipped to overcome resistance than a transactional one — they address the emotional root causes (fear and uncertainty) through vision and empowerment, rather than simply offering rewards or threats. Always connect Kotter &amp; Schlesinger strategies to the type of leader deploying them.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Resistance to change stems from: (1) Fear of job loss; (2) Loss of status/power; (3) Habit & comfort; (4) Distrust of management; (5) Unclear benefits. Overcome resistance by: (1) Transparent communication (why change?); (2) Involve employees (co-create solutions); (3) Training & support; (4) Quick wins (show early benefits); (5) Lead by example. Examiners reward evidence-based strategies, not wishful thinking."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating resistance as purely negative ('problem employees'). Resistance often reflects legitimate concerns: Is the change affordable? Will it work? Am I valued after change? Examiners expect sympathetic analysis: resistance is INFORMATION, not obstruction. Ignoring genuine objections \u2192 implementation failures. The best change leaders LISTEN to resistance and refine plans."
+      }
+    }
   ],
   recall: {
     enabled: true,

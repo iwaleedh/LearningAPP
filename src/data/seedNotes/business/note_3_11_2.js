@@ -122,6 +122,24 @@ export const note_business_3_11_2 = {
         title: 'Exam Tip — Always Use Named Business Examples',
         text: 'Generic strategy answers score Level 1 (knowledge). To reach Level 2 (application) and Level 3 (analysis/evaluation), you must name a business and explain <i>why</i> they chose that strategy and what the trade-offs were.<br><br><b>Formula:</b> [Model] identifies [Company] is pursuing [Strategy]. This is because [business context]. However, this carries [risk/limitation] because [reason]. Therefore [judgement].'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Know which models suit which contexts: Ansoff for market entry decisions, Porter's Forces for competitive position, BCG for portfolio management, SWOT for internal/external audit, PESTLE for macro-environmental screening. Matching the right tool to the business problem is a top-level skill."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Applying one model mechanically without stating assumptions or limitations. Every strategic model operates on certain assumptions (e.g., static competitive environment, rational decision-making). Acknowledge these to lift analysis from basic to excellent."
+      }
     }
   ],
   recall: {

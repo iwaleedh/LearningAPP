@@ -6,10 +6,10 @@ export const note_business_3_15_5 = {
     { id: 'call-1', type: 'callout', data: { style: 'key', title: 'Formula', text: 'Labour Productivity = Total Output (per period) ÷ Average Number of Employees (per period)' } },
     { id: 'h-2', type: 'heading', data: { text: 'Importance of Labour Productivity', level: 3 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [
-      { text: '\**Lower Unit Costs:\** Higher output per worker means wage costs are spread over a greater number of units.' },
-      { text: '\**Competitive Pricing:\** Lower unit costs enable the firm to reduce prices and gain market share.' },
-      { text: '\**Higher Profit Margins:\** If prices are maintained while unit cost falls, profit margins expand.' },
-      { text: '\**Wage Demands:\** Increases in productivity often justify higher employee wages without driving up overall costs.' }
+      { text: '**Lower Unit Costs:** Higher output per worker means wage costs are spread over a greater number of units.' },
+      { text: '**Competitive Pricing:** Lower unit costs enable the firm to reduce prices and gain market share.' },
+      { text: '**Higher Profit Margins:** If prices are maintained while unit cost falls, profit margins expand.' },
+      { text: '**Wage Demands:** Increases in productivity often justify higher employee wages without driving up overall costs.' }
     ] } },
     { id: 'h-2', type: 'heading', data: { text: 'Unit Labour Cost', level: 2 } },
     { id: 'p-2', type: 'paragraph', data: { text: 'Unit labour cost is another vital metric that highlights the wage expense required to produce a single item.' } },
@@ -34,7 +34,16 @@ export const note_business_3_15_5 = {
       }
     },
     { id: 'enr-callout-worked-1', type: 'callout', data: { style: 'worked', title: 'Case Study: Toyota Kaizen', text: "Toyota's Kaizen approach: continuous improvement teams review assembly line processes weekly. Between 2010–2020, Toyota improved output per worker by 40% without increasing headcount. Kaizen = small, incremental productivity gains compounding over time." } },
-    { id: 'enr-callout-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Productivity Formula & Improvement Methods', text: 'Exam tip: Labour productivity = Output / Number of workers. To IMPROVE: training (upskills staff), technology (automation), motivation (Herzberg hygiene+motivators), better management. Each improvement method has trade-offs (cost, time, worker resistance).' } }
+    { id: 'enr-callout-tip-1', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Productivity Formula & Improvement Methods', text: 'Exam tip: Labour productivity = Output / Number of workers. To IMPROVE: training (upskills staff), technology (automation), motivation (Herzberg hygiene+motivators), better management. Each improvement method has trade-offs (cost, time, worker resistance).' } },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming higher labour productivity is always positive. High productivity from excessive workload \u2192 burnout/attrition. From automation \u2192 job losses/skills erosion. Examiners expect critical thinking: productivity gains are only valuable if sustainable. A factory with 50% higher output per worker but 40% turnover is problematic, not impressive."
+      }
+    }
   ],
   recall: {
     enabled: true,

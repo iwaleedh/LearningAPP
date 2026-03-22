@@ -19,7 +19,25 @@ export const note_business_3_13_1 = {
     { id: 'sum', type: 'summary', data: { text: 'Scatter graphs are used to identify the correlation between two variables. A line of best fit allows managers to visualize this relationship and extrapolate to forecast future business performance.' } },
     { id: 'enr-worked', type: 'callout', data: { style: 'worked', title: 'Worked Example: Extrapolating a Trend Line', text: 'A café plots advertising spend (x) against weekly revenue (y) using a scatter graph. The line of best fit shows a positive correlation — every £100 extra on ads generates £400 extra revenue. Extrapolating: if they spend £500 on ads, predicted revenue = £2,000.' } },
     { id: 'enr-warning', type: 'callout', data: { style: 'warning', title: 'Correlation ≠ Causation', text: 'Correlation does not imply causation. Ice cream sales and drowning rates both rise in summer — they correlate but one does not cause the other. Always check there is a logical causal link before using the trend line for decisions.' } },
-    { id: 'enr-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Interpreting Scatter Graphs', text: 'Exam tip: When drawing or interpreting scatter graphs, always state: direction (positive/negative), strength (strong/weak), and whether extrapolation is reliable.' } }
+    { id: 'enr-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Interpreting Scatter Graphs', text: 'Exam tip: When drawing or interpreting scatter graphs, always state: direction (positive/negative), strength (strong/weak), and whether extrapolation is reliable.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When drawing a line of best fit, calculate the correlation coefficient to show strength of relationship. A weak scatter (r\u00b2 = 0.3) is unreliable for forecasting; a strong one (r\u00b2 = 0.9) carries weight. Quantifying relationship quality demonstrates rigor."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming correlation implies causation. High correlation between advertising spend and sales might reflect both responding to market growth, not advertising *causing* sales. Always question whether the relationship is truly causal or coincidental."
+      }
+    }
   ],
   recall: {
     enabled: true,

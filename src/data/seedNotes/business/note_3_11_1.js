@@ -135,6 +135,24 @@ export const note_business_3_11_1 = {
         title: 'Exam Tip — SMART Appraisal of Mission Statements',
         text: 'Use SMART as a lens to appraise any mission statement: <b>S</b>pecific (does it name a clear audience or purpose?), <b>M</b>easurable (can progress be tracked?), <b>A</b>chievable (is the aspiration realistic?), <b>R</b>elevant (does it reflect current market/stakeholder priorities?), <b>T</b>ime-bound (does it set a horizon?)<br><br>Most mission statements fail on M and T — use this as evaluation to argue their strategic value is limited without accompanying objectives.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When evaluating mission statements, use a balanced framework: analyze their motivational power, strategic clarity, and stakeholder communication separately. Then synthesize by arguing whether *for this specific firm* the balance of advantages outweighs limitations."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Simply saying a mission statement is 'useful' or 'not useful' without context. Examiners expect you to acknowledge that usefulness depends on firm size, industry, and stakeholder priorities. Vague statements rarely secure high marks."
+      }
     }
   ],
   recall: {

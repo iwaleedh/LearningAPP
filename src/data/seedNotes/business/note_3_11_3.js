@@ -241,6 +241,24 @@ export const note_business_3_11_3 = {
         title: 'Exam Tip — Evaluating Ansoff Strategies',
         text: 'Diversification is the highest risk because the firm has no experience in EITHER the new product OR the new market — it faces a <b>double unknown</b>. Always evaluate <b>WHY</b> a firm chose a particular quadrant: e.g. market saturation may force Product Development; limited capital may rule out Diversification. Strong evaluation links the strategy to the firm\'s specific resources, competitive position, and risk appetite.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Be precise: Market Development is *new markets*, Product Development is *new products*. When analyzing an Ansoff case, explicitly state which quadrant the firm is entering and why (market share gain, revenue growth, risk reduction). This precision impresses examiners."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Underestimating diversification risk. Many students present Diversify as a high-growth opportunity without deeply analyzing why 80% of diversifications fail. Address integration costs, brand stretch, and management capability gaps to show critical evaluation."
+      }
     }
   ],
   recall: {

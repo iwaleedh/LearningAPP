@@ -1,0 +1,29 @@
+src/data/seedNotes/business/note_3_11_0.js: Understand the difference between mission, vision, aims, objectives and strategy. Explain how corporate objectives are derived from corporate aims and mission statements.
+src/data/seedNotes/business/note_3_11_1.js: Critically appraise mission statements: evaluate how useful they are in guiding corporate strategy, motivating stakeholders, and communicating purpose. Identify limitations and potential conflicts.
+src/data/seedNotes/business/note_3_11_2.js: Understand and apply key corporate strategy models (Ansoff Matrix, Porter\
+src/data/seedNotes/business/note_3_11_3.js: Apply the Ansoff Matrix to advise businesses on growth strategies. Understand each of the four quadrants, assess their relative risk, and evaluate the model\
+src/data/seedNotes/business/note_3_11_4.js: Apply Porter\
+src/data/seedNotes/business/note_3_11_5.js: Understand and apply portfolio analysis, including the Boston Consulting Group (BCG) Matrix. Classify products into Stars, Cash Cows, Question Marks, and Dogs. Evaluate the model\
+src/data/seedNotes/business/note_3_11_6.js: Conduct and interpret a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats). Distinguish internal from external factors. Apply SWOT to strategic decision-making, including converting weaknesses and managing threats.
+src/data/seedNotes/business/note_3_11_7.js: Apply PESTLE analysis to identify and assess macro-environmental factors affecting business strategy. For each factor, give a relevant business example and evaluate how a business might respond.
+src/data/seedNotes/business/note_3_11_8.js: Apply Porter\
+src/data/seedNotes/business/note_3_11_9.js: Distinguish between strategic and tactical decisions. Understand who makes each type of decision, the time horizon, risk level, and reversibility. Apply this distinction to business scenarios.
+src/data/seedNotes/business/note_3_12_0.js: Evaluate the various growth objectives set by businesses and the rationale behind them.
+src/data/seedNotes/business/note_3_12_1.js: Distinguish between organic (internal) and inorganic (external) growth.
+src/data/seedNotes/business/note_3_12_2.js: Analyse the methods and strategies used for organic growth.
+src/data/seedNotes/business/note_3_12_3.js: Examine the differences between mergers and takeovers, and understand the motives for these transactions.
+src/data/seedNotes/business/note_3_12_4.js: Analyse the forms of integration: horizontal, vertical, and conglomerate.
+src/data/seedNotes/business/note_3_12_5.js: Assess the profound risks and disadvantages associated with inorganic growth.
+src/data/seedNotes/business/note_3_12_6.js: Evaluate economies and diseconomies of scale as consequences of business growth.
+src/data/seedNotes/business/note_3_12_7.js: Understand overtrading and communication issues as acute operational risks of rapid growth.
+src/data/seedNotes/business/note_3_13_0.js: Understand the concept of time-series forecasting, including four-period moving averages, variations, and seasonal adjustments.
+src/data/seedNotes/business/note_3_13_1.js: Analyze and interpret scatter graphs and calculate lines of best fit to forecast business performance.
+src/data/seedNotes/business/note_3_13_10.js: Synthesize the limitations of quantitative strategic decision tools in a broader corporate environment.
+src/data/seedNotes/business/note_3_13_2.js: Evaluate the limitations of quantitative forecasting techniques and understand why forecasts may prove inaccurate.
+src/data/seedNotes/business/note_3_13_3.js: Calculate and interpret the Payback Period to evaluate investment appraisals.
+src/data/seedNotes/business/note_3_13_4.js: Calculate the Average Rate of Return (ARR) and use it to appraise the profitability of a business investment.
+src/data/seedNotes/business/note_3_13_5.js: Calculate and evaluate Net Present Value (NPV) by applying discount factors to future cash flows.
+src/data/seedNotes/business/note_3_13_6.js: Understand and use decision trees to calculate expected values and guide strategic choices.
+src/data/seedNotes/business/note_3_13_7.js: Interpret Critical Path Analysis (CPA) network diagrams to calculate the earliest and latest possible project completion times.
+src/data/seedNotes/business/note_3_13_8.js: Identify the critical path and calculate float times for non-critical activities.
+src/data/seedNotes/business/note_3_13_9.js: Use contribution costing to make strategic operational decisions including special orders.

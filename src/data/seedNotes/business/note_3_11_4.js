@@ -218,6 +218,24 @@ export const note_business_3_11_4 = {
         title: 'Exam Tip — Linking Porter to the Marketing Mix',
         text: 'Always connect Porter\'s strategy to the <b>marketing mix</b>: a <b>Cost Leader</b> uses penetration/competitive pricing, standardised products, and wide distribution to maximise volume. A <b>Differentiator</b> uses premium pricing, high-quality or innovative products, and selective distribution to justify the premium. A <b>Focus</b> strategy targets a specific segment with a tailored marketing mix. Linking strategy to tactics earns evaluation marks.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Porter's Five Forces analysis is only powerful when you rank the forces and synthesize: Identify which 1\u20132 forces are *most* threatening for this specific company, then recommend strategic responses. General force-by-force listing scores lower than targeted strategic insight."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating the five forces as equally important in all industries. Supplier power dominates extractive industries; buyer power dominates retail. Industry context dramatically shapes which forces matter most\u2014this nuance separates proficient from outstanding answers."
+      }
     }
   ],
   recall: {

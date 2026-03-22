@@ -1,0 +1,24 @@
+src/data/seedNotes/business/note_3_14_0.js: Understand the different types of corporate culture and how they influence business decisions.
+src/data/seedNotes/business/note_3_14_1.js: Explore how corporate culture is formed and the barriers that exist when trying to change it.
+src/data/seedNotes/business/note_3_14_2.js: Identify internal and external stakeholders and understand their varied interests in a business.
+src/data/seedNotes/business/note_3_14_3.js: Analyse the differing objectives of various stakeholder groups and how they can lead to conflict.
+src/data/seedNotes/business/note_3_14_4.js: Evaluate the shareholder approach versus the stakeholder approach to business strategy.
+src/data/seedNotes/business/note_3_14_5.js: Explore the relationship between pursuing profit and acting ethically, including potential trade-offs.
+src/data/seedNotes/business/note_3_14_6.js: Understand the concept of Corporate Social Responsibility (CSR) and its implications for business.
+src/data/seedNotes/business/note_3_14_7.js: Examine the ethical issues surrounding executive pay and the controversy over the widening pay gap.
+src/data/seedNotes/business/note_3_15_0.js: Understand how to interpret the components and significance of an income statement.
+src/data/seedNotes/business/note_3_15_1.js: Understand how to interpret the components and significance of a statement of financial position (balance sheet).
+src/data/seedNotes/business/note_3_15_2.js: Calculate and interpret profitability and liquidity ratios to assess business competitiveness.
+src/data/seedNotes/business/note_3_15_3.js: Understand and calculate Gearing and Return on Capital Employed (ROCE) to evaluate financial risk and investment efficiency.
+src/data/seedNotes/business/note_3_15_4.js: Examine the limitations of relying purely on ratio analysis when assessing business performance.
+src/data/seedNotes/business/note_3_15_5.js: Understand and calculate labour productivity metrics as a measure of human resource efficiency.
+src/data/seedNotes/business/note_3_15_6.js: Analyse and calculate HR metrics including labour turnover, retention, and absenteeism rates.
+src/data/seedNotes/business/note_3_15_7.js: Evaluate human resource strategies designed to enhance labour productivity and improve staff retention.
+src/data/seedNotes/business/note_3_16_0.js: Understand the relationship between corporate culture and a business\
+src/data/seedNotes/business/note_3_16_1.js: Evaluate how the size of an organisation impacts the speed and efficiency of implementing change.
+src/data/seedNotes/business/note_3_16_2.js: Analyse the reasons for resistance to change and methods to overcome this resistance within an organisation.
+src/data/seedNotes/business/note_3_16_3.js: Examine the role of transformational leadership in effectively managing and driving organisational change.
+src/data/seedNotes/business/note_3_16_4.js: Understand how businesses identify risks and assess their potential impact and probability.
+src/data/seedNotes/business/note_3_16_5.js: Understand the purpose and structure of a business continuity plan (BCP).
+src/data/seedNotes/business/note_3_16_6.js: Evaluate the importance of succession planning in ensuring smooth transitions during leadership change.
+src/data/seedNotes/business/note_3_16_7.js: Analyse specific contingency risks including IT failures, staffing issues, and general disruptions, and evaluate mitigation strategies.

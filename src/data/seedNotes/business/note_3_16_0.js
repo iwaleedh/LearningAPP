@@ -37,7 +37,25 @@ export const note_business_3_16_0 = {
     { id: 'enr-callout-nokia', type: 'callout', data: { style: 'worked', title: 'Brand Example: Nokia', text: 'Nokia once held over 40% of global mobile phone market share, but its rigid hierarchical culture (role culture) meant it could not unfreeze when Apple released the iPhone in 2007. Engineers reportedly knew of the competitive threat but feared raising concerns upward. Nokia never reached the Change stage. Microsoft acquired its handset division in 2014 for just $7.2bn — a fraction of Nokia\'s peak valuation. A classic culture-blocks-change failure.' } },
     { id: 'enr-callout-kodak', type: 'callout', data: { style: 'worked', title: 'Brand Example: Kodak', text: 'Kodak invented the digital camera in 1975 but deliberately suppressed it to protect its film revenues. The culture valued the status quo over adaptation, meaning the Unfreeze stage never meaningfully happened. Kodak filed for bankruptcy in 2012. It is the textbook example of a complacent culture preventing the very first stage of Lewin\'s model.' } },
     { id: 'enr-callout-everyday', type: 'callout', data: { style: 'tip', title: 'Everyday Example: Your Revision Timetable', text: '<b>Unfreeze:</b> A poor mock grade forces you to accept your old revision schedule is failing. <b>Change:</b> You switch to spaced-repetition cards and active recall sessions with discomfort at first. <b>Refreeze:</b> The new approach becomes habit and you schedule it automatically. The same 3-stage logic applies to businesses adopting new technology or restructuring departments.' } },
-    { id: 'enr-callout-warning-topdown', type: 'callout', data: { style: 'warning', title: 'Warning: Top-Down Change Without Communication', text: 'Change imposed top-down without transparency or consultation causes employees to feel undervalued and anxious, triggering strikes, high staff turnover, and active sabotage of the new strategy. Research suggests around 70% of change programmes fail — most because leaders skip the Unfreeze communication steps entirely.' } }
+    { id: 'enr-callout-warning-topdown', type: 'callout', data: { style: 'warning', title: 'Warning: Top-Down Change Without Communication', text: 'Change imposed top-down without transparency or consultation causes employees to feel undervalued and anxious, triggering strikes, high staff turnover, and active sabotage of the new strategy. Research suggests around 70% of change programmes fail — most because leaders skip the Unfreeze communication steps entirely.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Corporate culture and organizational change are intertwined. A strong, adaptive culture facilitates change; a rigid culture resists it. Examiners expect you to link: strong culture with clear values \u2192 employees understand 'why' change matters \u2192 faster adoption. Conversely, fragmented or defensive cultures \u2192 change initiatives stall. Use Schein's cultural layers to explain this depth."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating culture and change as separate topics. They're inseparable: change initiatives RESHAPE culture, and existing culture LIMITS or ENABLES change. Candidates who discuss them in isolation lose marks for lack of synthesis. Always ask: how will this change affect our culture, and is our current culture ready for this change?"
+      }
+    }
   ],
   recall: {
     enabled: true,

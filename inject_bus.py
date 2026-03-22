@@ -1,6 +1,6 @@
 import json, os, re
 
-tips_dict = json.load(open("tip_bus_u2_p2.json"))
+tips_dict = json.load(open("tip_bus_u3_p2.json"))
 for filename, tips_array in tips_dict.items():
     filepath = filename if "src/" in filename else os.path.join("src/data/seedNotes/business", filename)
     if not os.path.exists(filepath): continue

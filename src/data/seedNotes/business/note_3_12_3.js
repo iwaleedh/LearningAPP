@@ -11,7 +11,7 @@ export const note_business_3_12_3 = {
     { id: 'p-2', type: 'paragraph', data: { text: 'A friendly takeover is supported by the target company\'s board of directors. A hostile takeover occurs when the acquirer bypasses the board and buys shares directly from shareholders on the stock market.' } },
     { id: 'call-1', type: 'callout', data: { style: 'worked', title: 'Example', text: 'Kraft Foods\' hostile takeover of Cadbury in 2010. Kraft aggressively bought shares and appealed directly to Cadbury shareholders despite resistance from Cadbury\'s board.' } },
     { id: 'h-3', type: 'heading', data: { text: 'Motives for Mergers and Takeovers', level: 3 } },
-    { id: 'p-3', type: 'paragraph', data: { text: 'A core concept here is \"Synergy\" — the idea that the combined entity is worth more than the sum of its independent parts (2 + 2 = 5).' } },
+    { id: 'p-3', type: 'paragraph', data: { text: 'A core concept here is "Synergy" — the idea that the combined entity is worth more than the sum of its independent parts (2 + 2 = 5).' } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
       {text: 'Cost Synergies: Eliminating duplicate departments (e.g., one HR department instead of two).'},
       {text: 'Revenue Synergies: Cross-selling products to each other\'s customer bases.'},
@@ -48,15 +48,33 @@ export const note_business_3_12_3 = {
         ['Regulatory risk: the CMA (UK) or other competition authorities may block or impose conditions on deals that reduce market competition.', 'Access to new technology or IP: e.g. Disney acquiring Marvel\'s superhero catalogue generates decades of film, merchandise, and park revenue.']
       ]
     } },
-    { id: 'enr-callout-tip-integration', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Integration Types in 12-Mark Questions', text: 'Be precise about integration type — examiners mark accuracy. <strong>Horizontal</strong> = same industry AND same stage of production. <strong>Vertical Backward</strong> = moving upstream in the supply chain (buying a supplier). <strong>Vertical Forward</strong> = moving downstream (buying a distributor or retailer). <strong>Conglomerate</strong> = completely unrelated industry. A common error is calling all mergers "horizontal" — always check the supply chain relationship. Also consider whether regulators would intervene: horizontal deals that significantly cut competition are most likely to be referred to the Competition and Markets Authority (CMA).' } }
+    { id: 'enr-callout-tip-integration', type: 'callout', data: { style: 'tip', title: 'Exam Tip — Integration Types in 12-Mark Questions', text: 'Be precise about integration type — examiners mark accuracy. <strong>Horizontal</strong> = same industry AND same stage of production. <strong>Vertical Backward</strong> = moving upstream in the supply chain (buying a supplier). <strong>Vertical Forward</strong> = moving downstream (buying a distributor or retailer). <strong>Conglomerate</strong> = completely unrelated industry. A common error is calling all mergers "horizontal" — always check the supply chain relationship. Also consider whether regulators would intervene: horizontal deals that significantly cut competition are most likely to be referred to the Competition and Markets Authority (CMA).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Key distinction: Merger = consensual union of equals; Takeover = one firm acquires another, often contested. Motives differ: Mergers often seek complementary strengths; Takeovers often extract undervalued assets. This precision demonstrates command of corporate strategy."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Forgetting that not all acquisitions succeed\u2014particularly hostile takeovers. Employee departure, customer loss, and cultural clash plague many takeovers. Acknowledge these hidden costs when evaluating M&A strategy; examiners reward realistic risk assessment over optimistic scenarios."
+      }
+    }
   ],
   recall: {
     enabled: true,
     summaryText: 'Mergers form a single new business; takeovers involve buying >50% control. The main goal is synergy.',
     cues: [
       { id: 'cue-1', blockId: 'list-1', prompt: 'Explain the key difference between a merger and a takeover.', answer: 'A merger integrates two relatively equal firms into a new entity. A takeover involves one firm buying over 50% of shares to take control of another.' },
-      { id: 'cue-2', blockId: 'p-2', prompt: 'What makes a takeover \"hostile\"?', answer: 'When it is pursued directly through shareholders without the agreement or recommendation of the target company\'s board of directors.' },
-      { id: 'cue-3', blockId: 'p-3', prompt: 'Define the concept of \"Synergy\".', answer: 'The idea that the performance or value of a combined entity will be greater than the sum of the separate individual parts (2 + 2 = 5).' },
+      { id: 'cue-2', blockId: 'p-2', prompt: 'What makes a takeover "hostile"?', answer: 'When it is pursued directly through shareholders without the agreement or recommendation of the target company\'s board of directors.' },
+      { id: 'cue-3', blockId: 'p-3', prompt: 'Define the concept of "Synergy".', answer: 'The idea that the performance or value of a combined entity will be greater than the sum of the separate individual parts (2 + 2 = 5).' },
       { id: 'cue-4', blockId: 'list-2', prompt: 'What is asset stripping?', answer: 'Acquiring an undervalued company purely to sell off its individual profitable assets or divisions for a quick profit.' }
     ]
   },

@@ -180,6 +180,24 @@ export const note_business_3_11_9 = {
         title: 'Exam Tip \u2014 Classifying Decisions Correctly',
         text: 'A common mistake is labelling any large or expensive decision as "strategic" based on cost alone. <b>A decision is strategic based on time horizon, reversibility, and organisational scope \u2014 not cost.</b> Use three tests: <b>(1)</b> Does it affect the whole organisation or just one department? <b>(2)</b> Is it a 3\u201310 year commitment or a matter of weeks? <b>(3)</b> How difficult and costly would it be to reverse?<br><br><b>Example:</b> Spending \u00a3500,000 on a marketing campaign is TACTICAL (short-term, marketing department only, reversible next quarter). Spending \u00a3500m acquiring a competitor is STRATEGIC (long-term, organisation-wide, nearly impossible to reverse without major cost and disruption).'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use this framework: Strategic decisions are *high-stakes, long-term, irreversible* (e.g., market entry, acquisition); Tactical decisions are *short-term, reversible, operational* (e.g., pricing promotion, staffing shifts). Explicitly naming the timeframe and risk level impresses examiners."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming all decisions made by senior leaders are strategic. A board might make an operational decision (e.g., negotiate a supplier contract) quickly and reversibly. Conversely, middle management might make strategic choices (new product launch). Focus on *decision characteristics*, not organizational hierarchy."
+      }
     }
   ],
   recall: {

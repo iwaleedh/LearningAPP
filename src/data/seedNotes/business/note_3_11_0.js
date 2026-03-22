@@ -153,6 +153,24 @@ export const note_business_3_11_0 = {
         title: 'Exam Tip — Show the Objective Hierarchy',
         text: '<b>Always show the hierarchy:</b> Mission → Corporate Objectives → Functional Objectives. Examiners reward answers that explain <i>how</i> objectives cascade down the organisation. Also link objectives to corporate culture — a growth-oriented culture sets ambitious revenue targets; a CSR-focused culture prioritises environmental objectives.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Remember the hierarchical relationship: Mission is the broadest purpose, Aims are long-term intentions, Objectives are specific measurable targets. Always link strategy back to all three levels\u2014this shows sophisticated strategic thinking that examiners reward highly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing objectives with strategy\u2014many students treat them as synonyms. Objectives are *what* the firm aims to achieve; strategy is *how* it will get there. This distinction is crucial in 8-mark evaluation questions."
+      }
     }
   ],
   recall: {
