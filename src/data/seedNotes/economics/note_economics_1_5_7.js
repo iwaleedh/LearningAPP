@@ -19,6 +19,15 @@ export const note_economics_1_5_7 = {
         title: "Common Mistake",
         text: "Adverse selection: hidden information before the contract (e.g. high-risk customers seeking insurance without revealing their risk).\nMoral hazard: changed behaviour after the contract (e.g. once insured, taking more risks).\nBoth are forms of asymmetric information \u2014 they just occur at different stages."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Asymmetric information happens when one party in a transaction knows more than the other (e.g. second-hand cars or healthcare). Do not confuse it with imperfect information, which means both parties lack complete knowledge."
+      }
     }
   ],
   recall: {

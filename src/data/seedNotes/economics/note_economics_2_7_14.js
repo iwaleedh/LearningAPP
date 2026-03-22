@@ -85,6 +85,15 @@ export const note_economics_2_7_14 = {
       data: {
         text: 'The BoP has three accounts: current (goods, services, primary and secondary income), capital (small transfers), and financial (FDI, portfolio investment). A current account deficit = financial account surplus. The overall BoP always sums to zero.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The Current Account primarily consists of trade in goods, trade in services, primary income (investment income), and secondary income (transfers). Do not confuse it with the capital or financial accounts."
+      }
     }
   ],
   recall: {

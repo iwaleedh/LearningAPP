@@ -112,6 +112,15 @@ export const note_economics_1_3_2 = {
         title: "Exam Tip",
         text: "Any straight-line supply curve passing through the origin has PES = 1. A supply curve cutting the price axis has PES > 1 (elastic). A supply curve cutting the quantity axis has PES < 1 (inelastic)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "PES is always positive. When explaining PES, refer to factors like spare capacity, level of stocks, and time (short run vs long run). The availability of these factors determines whether the firm can respond elastically to price changes."
+      }
     }
   ],
   recall: {

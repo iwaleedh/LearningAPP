@@ -136,6 +136,15 @@ export const note_economics_1_1_3 = {
         title: "Exam Tip",
         text: "When asked to identify opportunity cost, always specify the specific alternative forgone, not just \"something else.\" Vague answers like \"other things\" will not gain full marks. Relate it to the context provided in the question."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always link scarcity back to opportunity cost. If you are asked to explain the fundamental economic problem in a short answer question, explicitly state what is being given up as the next best alternative."
+      }
     }
   ],
   recall: {

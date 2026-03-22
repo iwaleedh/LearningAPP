@@ -29,6 +29,15 @@ export const note_economics_1_2_2 = {
         title: "Common Mistake",
         text: "Do not say \"demand increases\" when you mean \"quantity demanded increases\" \u2014 these are different concepts.\nPrice changes \u2192 movement; non-price factors \u2192 shift.\nA shift right means more is demanded at every price, not just a higher quantity at one price."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Never confuse a shift with a movement. Price changes cause a movement along the curve (extension/contraction). Non-price determinants cause a shift left or right. Using the phrase 'a shift up' or 'shift down' often leads to errors in analysis."
+      }
     }
   ],
   recall: {

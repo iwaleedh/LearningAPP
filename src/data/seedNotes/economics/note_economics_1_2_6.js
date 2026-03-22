@@ -14,6 +14,15 @@ export const note_economics_1_2_6 = {
     { id: 'h-5', type: 'heading', data: { text: 'Engel Curve', level: 2 }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'key', title: 'Engel Curve', text: 'An <strong>Engel curve</strong> plots the relationship between consumer income and quantity demanded of a good.<br/>• Upward-sloping, concave: <strong>normal good</strong><br/>• Upward-sloping, convex (steep): <strong>luxury good</strong><br/>• Downward-sloping: <strong>inferior good</strong>' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'YED measures demand responsiveness to income changes. Positive YED = normal good; YED > 1 = luxury; negative YED = inferior good. Useful for business forecasting and understanding demand cyclicality.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always interpret the sign of YED. A negative YED indicates an inferior good, while a positive YED indicates a normal good (and > 1 means it is a luxury good). Explicitly state this in your analysis."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -19,6 +19,15 @@ export const note_economics_1_6_3 = {
         title: "Common Mistake",
         text: "Permit price volatility: if economic recession lowers output, permits become cheap \u2014 reducing incentive to innovate green technology.\nCarbon leakage: production may move to non-regulated countries, reducing effectiveness.\nSetting the cap: politically difficult to set a tight enough cap; lobbying from industry can result in too many permits.\nWindfall profits: free permit allocation let energy companies pass on notional permit costs to consumers \u2014 generating large windfall profits."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Subsidies shift the supply curve downwards vertically by the amount of the subsidy. In diagrams, explicitly label the new price, the quantity traded, and shade the total cost to the government rectangular block."
+      }
     }
   ],
   recall: {

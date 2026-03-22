@@ -94,6 +94,15 @@ export const note_economics_1_1_7 = {
         title: "Exam Tip",
         text: "When a PPF question shows capital goods on one axis and consumer goods on the other, remember: moving towards more capital goods on the PPF today leads to an outward shift of the PPF in the future. This is the mechanism by which investment drives economic growth."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A frequent 6-mark question involves explaining why an economy might choose to produce capital goods over consumer goods. Make sure to discuss the trade-off: short-term reduction in living standards for long-term economic growth (an outward shift of the PPF)."
+      }
     }
   ],
   recall: {

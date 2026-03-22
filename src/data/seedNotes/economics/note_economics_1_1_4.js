@@ -110,6 +110,15 @@ export const note_economics_1_1_4 = {
         title: "Exam Tip",
         text: "Questions on resources often link to market failure (externalities, common resources), government intervention (carbon taxes, subsidies for renewables), and sustainability. Be ready to connect resource type to these broader themes."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When defining the factors of production (Land, Labour, Capital, Enterprise), make sure you also correctly pair them with their rewards (Rent, Wages, Interest, Profit). Confusing capital with money is a common trap; remember that capital refers to man-made aids to production."
+      }
     }
   ],
   recall: {

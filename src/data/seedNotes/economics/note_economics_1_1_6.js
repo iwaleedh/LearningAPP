@@ -126,6 +126,15 @@ export const note_economics_1_1_6 = {
         title: "Exam Tip",
         text: "When evaluating a market structure (e.g. monopoly vs perfect competition), always address both productive and allocative efficiency separately. State the condition for each (min ATC and P = MC respectively) and explain whether each condition is met in that market."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Be precise with terminology: productive efficiency (lowest point on average cost curve, or on the PPF boundary) is different from allocative efficiency (P=MC, producing what consumers want). Do not use them interchangeably."
+      }
     }
   ],
   recall: {

@@ -19,6 +19,15 @@ export const note_economics_1_6_4 = {
         title: "Common Mistake",
         text: "High transaction costs: negotiating with thousands of affected parties (e.g. air pollution hurting millions) is prohibitively costly.\nDifficulty defining rights: who owns the atmosphere? Rights are often legally unclear.\nWealth effects: who holds the right affects the distribution of benefits \u2014 the outcome may be efficient but unfair.\nInformation problems: each side may misrepresent preferences during bargaining."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Distinguish correctly between specific taxes (a parallel shift in supply) and ad valorem taxes (a divergent shift in supply). If asked about the incidence of a tax, apply PED and explain who bears the burden (consumer vs producer)."
+      }
     }
   ],
   recall: {

@@ -11,6 +11,15 @@ export const note_economics_1_6_7 = {
     { id: 'h-4', type: 'heading', data: { text: 'Intervention in Housing', level: 2 }, terms: [] },
     { id: 'list-4', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Social/council housing</strong>: state provision to ensure housing for those unable to afford market rents — addresses equity concern.' }, { text: '<strong>Rent controls</strong> (maximum prices): keep rents affordable in tight markets but can cause shortage and under-investment.' }, { text: '<strong>Help-to-Buy / shared ownership</strong>: subsidise first-time buyers unable to raise deposits — but may inflate prices further.' }, { text: '<strong>Planning permission requirements</strong>: control development; may restrict supply, keeping prices high.' }] }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Government tailors interventions to the specific market failure in each sector. Health: NHS, taxes, regulation. Education: free provision, compulsory attendance. Environment: carbon taxes, permits, congestion pricing. Housing: social housing, planning controls.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Competition policy is intended to prevent monopolies from exploiting consumers. Good application involves referencing price caps or blocking mergers, but evaluating it by discussing the loss of potential economies of scale is top-tier."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

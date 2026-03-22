@@ -20,6 +20,15 @@ export const note_economics_1_6_8 = {
         title: "Exam Tip",
         text: "Always evaluate: does the cure cause more harm than the disease? Consider whether government failure makes a proposed intervention's costs exceed its benefits. This analysis is worth evaluation marks.\nKey chain: Market failure \u2192 Government intervenes \u2192 Government failure can arise \u2192 Net welfare effect may be negative."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Government failure occurs when an intervention results in a *net welfare loss*, making the situation worse than the initial market failure. Always use examples like unintended consequences, information gaps, or massive administrative costs."
+      }
     }
   ],
   recall: {

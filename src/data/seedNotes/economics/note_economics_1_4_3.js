@@ -86,6 +86,15 @@ export const note_economics_1_4_3 = {
         title: "Exam Tip",
         text: "Questions on the price mechanism often ask for analysis of all three functions. Link each function to a specific example and consider when the price mechanism might fail to perform these functions effectively (e.g. externalities distort signals)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When analysing a shift, start from the initial equilibrium (P1, Q1), describe the shift, note the temporary disequilibrium (excess demand/supply) at P1, and trace the movement along the curve to the new equilibrium (P2, Q2)."
+      }
     }
   ],
   recall: {

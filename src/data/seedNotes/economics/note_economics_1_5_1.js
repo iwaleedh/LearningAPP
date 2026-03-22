@@ -111,6 +111,15 @@ export const note_economics_1_5_1 = {
         title: "Exam Tip",
         text: "Always use the terms MPC (Marginal Private Cost), MEC (Marginal External Cost), and MSC (Marginal Social Cost) when drawing diagrams. MSC = MPC + MEC. Similarly, MSB = MPB + MEB."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In externality diagrams, firmly establish that Marginal Social Cost (MSC) = Marginal Private Cost (MPC) + Marginal External Cost (MEC). If MSC > MPC, there is a negative production externality to analyse."
+      }
     }
   ],
   recall: {

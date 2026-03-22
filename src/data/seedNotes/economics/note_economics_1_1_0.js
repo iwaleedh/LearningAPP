@@ -124,6 +124,15 @@ export const note_economics_1_1_0 = {
         title: "Common Mistake",
         text: "Do not confuse scarcity with shortage. Scarcity is a permanent condition \u2014 resources are always limited relative to wants. A shortage is a temporary market phenomenon where quantity demanded exceeds quantity supplied at the current price."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Examiners often look for precise definitions in 2-mark questions. When defining economics, ensure you mention it as a social science studying allocating scarce resources to satisfy infinite wants."
+      }
     }
   ],
   recall: {

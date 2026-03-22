@@ -90,6 +90,15 @@ export const note_economics_1_4_0 = {
         title: "Exam Tip",
         text: "In exam diagrams, always label: axes (P and Q), both curves (S and D), equilibrium point (E), equilibrium price (P*), and equilibrium quantity (Q*). If a shift occurs, label the new curve S\u2082 or D\u2082 and show new P\u2082 and Q\u2082 with dashed lines."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When asked to define market equilibrium, state it is the point where intended demand equals intended supply, or where the market clears with no excess demand or supply. Always annotate the equilibrium price (Pe) and quantity (Qe) clearly on your diagram."
+      }
     }
   ],
   recall: {

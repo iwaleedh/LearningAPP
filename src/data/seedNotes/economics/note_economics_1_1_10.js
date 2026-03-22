@@ -123,6 +123,15 @@ export const note_economics_1_1_10 = {
         title: "Exam Tip",
         text: "When discussing financial markets, link their efficiency in allocating capital to broader economic benefits (investment, growth). When evaluating, note that market failures in finance (information asymmetry, systemic risk) justify central bank regulation and government intervention."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "While Unit 1 doesn't delve deeply into high-level finance, you should be able to state the role of financial markets in facilitating exchange, channelling saving to investment, and providing forward markets in commodities."
+      }
     }
   ],
   recall: {

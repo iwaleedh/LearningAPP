@@ -29,6 +29,15 @@ export const note_economics_1_6_2 = {
         title: "Exam Tip",
         text: "Effectiveness of a price floor (e.g. minimum wage) depends on:\n\u2022 How much above equilibrium it is set\n\u2022 Elasticity of labour demand (elastic \u2192 more unemployment)\n\u2022 Enforcement quality\nAlways discuss unintended consequences in evaluation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Minimum price lines must be drawn *above* the free market equilibrium to be effective. Identify the resulting surplus (excess supply) and evaluate by questioning what happens to that surplus (e.g. government schemes to buy up excess stock)."
+      }
     }
   ],
   recall: {

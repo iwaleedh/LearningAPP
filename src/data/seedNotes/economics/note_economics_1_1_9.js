@@ -92,6 +92,15 @@ export const note_economics_1_1_9 = {
         title: "Exam Tip",
         text: "If asked to evaluate money as a store of value, mention inflation as the key limitation. A strong answer links this to monetary policy \u2014 central banks target low inflation (e.g. 2% in the UK) precisely to preserve money's ability to function as a store of value."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In multiple choice or short written answers, know the four functions of money (medium of exchange, measure of value, store of value, method of deferred payment). Examiners love testing the difference between a measure of value and a store of value."
+      }
     }
   ],
   recall: {

@@ -9,6 +9,15 @@ export const note_economics_2_8_4 = {
     { id: 'h-3', type: 'heading', data: { text: 'Why Investment Matters', level: 2 } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: 'Investment is both a component of AD (short-run demand effect) and a driver of <strong>LRAS</strong> (long-run supply effect — more capital → higher productive capacity).' }, { text: 'Positive net investment expands the capital stock → enables higher potential GDP.' }, { text: 'Investment is the <strong>most volatile AD component</strong> — highly sensitive to business confidence, interest rates, and expectations.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Gross investment − depreciation = net investment. Positive net investment grows the capital stock and productive capacity. Most volatile AD component.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Gross investment includes all capital spending, but net investment subtracts depreciation. Only positive net investment increases the productive capacity of the economy (shifting LRAS right)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

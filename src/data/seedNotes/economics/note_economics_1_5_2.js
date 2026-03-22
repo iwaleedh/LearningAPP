@@ -65,6 +65,15 @@ export const note_economics_1_5_2 = {
         ]
       },
       terms: []
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When drawing positive consumption externalities, show that the Marginal Social Benefit (MSB) is greater than Marginal Private Benefit (MPB). Clearly indicate the socially optimum output (Q2) vs free-market output (Q1), proving under-consumption."
+      }
     }
   ],
   recall: {

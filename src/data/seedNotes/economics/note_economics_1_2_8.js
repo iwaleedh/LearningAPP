@@ -21,6 +21,15 @@ export const note_economics_1_2_8 = {
         title: "Exam Tip",
         text: "A profit-maximising firm never sells in the inelastic region of its demand curve (MR < 0 there). Revenue is maximised at unit elasticity (MR = 0). Always explain why TR changes using PED logic, not just stating it goes up or down."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Questions often ask how a price change affects total revenue given a specific PED. Remember: if demand is inelastic, raising the price increases total revenue. Use a diagram shading the revenue boxes to guarantee top application marks."
+      }
     }
   ],
   recall: {

@@ -75,6 +75,15 @@ export const note_economics_2_9_3 = {
         title: 'Exam Essentials',
         text: 'The 2008 financial crisis reignited this debate. Keynesians argued for fiscal stimulus; classical economists feared deficits and inflation. In practice, most central banks and governments followed a broadly Keynesian approach in the short run (QE, fiscal stimulus) while pursuing supply-side reforms in the medium term.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Ensure you draw the correct LRAS curve. Classical is perfectly inelastic at full employment, assuming wages and prices are fully flexible. Keynesian has a horizontal section indicating mass unemployment and sticky downward wages."
+      }
     }
   ],
   recall: {

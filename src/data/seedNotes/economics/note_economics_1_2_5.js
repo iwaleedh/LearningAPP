@@ -21,6 +21,15 @@ export const note_economics_1_2_5 = {
         title: "Exam Tip",
         text: "At the top of a straight-line demand curve, PED is elastic (|PED| > 1).\nAt the midpoint, PED = 1 (unit elastic).\nAt the bottom, PED is inelastic (|PED| < 1).\nThis is because % change in price varies as you move along the curve."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "For calculation questions, always write down the formula (% change in Qd / % change in P) before calculating. If you make a math error, stating the correct formula might still secure you 1 method mark."
+      }
     }
   ],
   recall: {

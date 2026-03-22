@@ -12,6 +12,15 @@ export const note_economics_1_5_9 = {
     { id: 'h-5', type: 'heading', data: { text: '4. Financial Markets', level: 2 }, terms: [] },
     { id: 'list-4', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Asymmetric information</strong>: financial advisers know more than clients; mortgage brokers knew more than borrowers in 2008 — leading to mis-selling of complex products.' }, { text: '<strong>Moral hazard</strong>: "too big to fail" banks take excessive risks expecting government bailout (2008 crisis illustrated this).' }, { text: '<strong>Speculation and bubbles</strong>: herd behaviour in financial markets creates asset bubbles (dot-com 2001, housing 2008) that cause systemic risk on collapse.' }, { text: '<strong>Negative externalities</strong>: bank collapses impose massive costs on the rest of the economy (recession, unemployment) not borne by the banks themselves.' }] }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Market failures pervade transport (externalities, congestion), health (asymmetric info, positive externalities, merit goods), education (positive externalities, under-consumption), and finance (moral hazard, speculation, systemic risk). Government intervention is justified in each sector.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When discussing causes of asymmetric information, cite complex product technicalities (like financial services or medical treatments) or high costs of acquiring information. Evaluate solutions like regulation or provision of information by the state."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

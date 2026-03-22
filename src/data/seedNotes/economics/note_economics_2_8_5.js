@@ -7,6 +7,15 @@ export const note_economics_2_8_5 = {
     { id: 'h-2', type: 'heading', data: { text: 'Marginal Efficiency of Capital (MEC)', level: 2 } },
     { id: 'callout-key', type: 'callout', data: { style: 'key', title: 'MEC Concept', text: 'The <strong>MEC</strong> is the expected rate of return on an additional unit of capital (investment project).<br/>Investment occurs if MEC > rate of interest (cost of borrowing).<br/>Lower interest rates → more investment projects become profitable.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Investment is determined by interest rates, confidence, profits, accelerator effect, technology, policy, and stability. Investment occurs when MEC > rate of interest.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Interest rates affect investment because they represent the cost of borrowing and the opportunity cost of using retained profits. Also mention 'animal spirits' (business confidence) as a key determinant."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

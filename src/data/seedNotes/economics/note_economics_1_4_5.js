@@ -87,6 +87,15 @@ export const note_economics_1_4_5 = {
         title: "Exam Tip",
         text: "Like taxes, the distribution of the subsidy benefit between consumers and producers depends on the relative elasticities of demand and supply. Inelastic demand means consumers benefit more; inelastic supply means producers benefit more."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always accurately define consumer surplus (difference between the price a consumer is willing to pay and the market price) and producer surplus. Know how to shade these correctly on a diagram below/above the equilibrium price line."
+      }
     }
   ],
   recall: {

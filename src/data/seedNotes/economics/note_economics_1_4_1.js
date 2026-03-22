@@ -84,6 +84,15 @@ export const note_economics_1_4_1 = {
         title: "Exam Tip",
         text: "When explaining adjustment, use precise language: say price \"rises/falls\", quantity demanded \"contracts/extends\", and quantity supplied \"extends/contracts\". Avoid saying the curve \"moves\" \u2014 it is a movement along the existing curves."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Use the terms 'excess demand' instead of 'shortage' and 'excess supply' instead of 'surplus'. Explain step-by-step how the price mechanism will adjust price to eliminate these disequilibrium states."
+      }
     }
   ],
   recall: {

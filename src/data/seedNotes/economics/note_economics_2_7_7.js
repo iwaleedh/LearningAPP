@@ -77,6 +77,15 @@ export const note_economics_2_7_7 = {
       data: {
         text: 'National wellbeing indicators (ONS Framework, OECD Better Life Index) cover multiple dimensions of welfare beyond GDP, including health, environment, relationships, and subjective wellbeing, but are harder to measure and compare internationally.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Do not just list alternative indicators (like the Easterlin paradox concepts); explain how they capture subjective factors of welfare that pure quantitative GDP data misses, such as health, stress, and work-life balance."
+      }
     }
   ],
   recall: {

@@ -124,6 +124,15 @@ export const note_economics_1_1_2 = {
         title: "Exam Tip",
         text: "The quickest way to identify a normative statement in an exam is to look for words like \"should,\" \"ought,\" \"better,\" \"fairer,\" or \"desirable.\" Positive statements typically describe what \"is,\" \"causes,\" or \"will happen.\""
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "For 4-mark data response questions, you may be asked to identify a positive and a normative statement from an extract. Quote exactly from the text and explain that positive statements are testable while normative ones include value judgements (often using words like 'should' or 'ought')."
+      }
     }
   ],
   recall: {

@@ -12,6 +12,15 @@ export const note_economics_1_2_7 = {
     { id: 'h-4', type: 'heading', data: { text: 'Business Applications of XED', level: 2 }, terms: [] },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Market definition</strong>: regulators (e.g. Competition and Markets Authority) use XED to define whether goods are in the same market. High positive XED = same market → potential competition concern.' }, { text: '<strong>Pricing strategy</strong>: firms producing complementary goods (e.g. printers and ink) can price printers cheaply and profit from ink cartridges.' }, { text: '<strong>Merger analysis</strong>: if two firms produce goods with high XED (close substitutes), a merger may reduce competition.' }, { text: '<strong>Demand forecasting</strong>: knowing XED helps firms predict how a rival\'s price change will affect their own sales.' }] }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'XED measures how demand for one good responds to another good\'s price change. Positive XED = substitutes; negative XED = complements; zero = unrelated. The magnitude indicates the closeness of the relationship.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "The sign of XED is crucial. Negative XED means the goods are complements, while a positive XED means they are substitutes. Zero XED means they are unrelated. Always mention the strength of the relationship based on the numerical value."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

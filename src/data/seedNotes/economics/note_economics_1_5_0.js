@@ -81,6 +81,15 @@ export const note_economics_1_5_0 = {
         title: "Exam Tip",
         text: "In evaluative answers on market failure, always distinguish between market failure (a problem with the free market) and government failure (a problem with government intervention). Acknowledging both sides is expected at higher marks."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Define market failure precisely as a misallocation of resources, resulting in a net welfare loss to society. Give a clear example from the data extract to secure your application mark."
+      }
     }
   ],
   recall: {

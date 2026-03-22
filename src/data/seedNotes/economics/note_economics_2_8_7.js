@@ -9,6 +9,15 @@ export const note_economics_2_8_7 = {
     { id: 'h-3', type: 'heading', data: { text: 'Determinants of Government Expenditure', level: 2 } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Fiscal policy stance</strong>: discretionary spending decisions — expansionary in recessions (G increases), contractionary in booms.' }, { text: '<strong>Automatic stabilisers</strong>: welfare spending rises automatically in recession (more claimants); tax revenue falls — both cushion the fall in AD without discretionary action.' }, { text: '<strong>Demographic factors</strong>: ageing population increases NHS and pension expenditure.' }, { text: '<strong>Debt levels</strong>: high national debt forces spending cuts (austerity) to reduce budget deficit.' }, { text: '<strong>Political priorities</strong>: government may increase defence, infrastructure, or public services spending.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'G = government spending on goods/services (not transfer payments). Determined by fiscal policy, automatic stabilisers, demographics, debt, and political priorities.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Distinguish between government capital spending (e.g. infrastructure) and current spending (e.g. public sector wages). Capital spending impacts both AD and LRAS, making it a powerful evaluative point."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

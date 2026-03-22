@@ -19,6 +19,15 @@ export const note_economics_1_6_6 = {
         title: "Common Mistake",
         text: "Information provision: may be ignored; health warnings on cigarettes have limited effect on addicted smokers; information overload can be as bad as too little.\nNudge: paternalistic \u2014 critics argue the state should not manipulate choices; effects may be temporary or weak; works best for one-off decisions (pensions) less well for habitual behaviour (diet); does not address structural poverty as root cause of unhealthy choices."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In 20-mark questions discussing state provision, always evaluate the opportunity cost of government spending. Money spent providing public goods is money not spent elsewhere, possibly leading to a higher tax burden or national debt."
+      }
     }
   ],
   recall: {

@@ -21,6 +21,15 @@ export const note_economics_1_6_1 = {
         title: "Common Mistake",
         text: "Taxes: hard to set the correct rate; may increase black markets; regressively burden low-income consumers (spend higher % on necessities like petrol).\nSubsidies: costly for government; may be inefficient (prop up uncompetitive industries); subsidy benefit may be captured by producers rather than consumers; distorts resource allocation."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Maximum price lines must be drawn *below* the free market equilibrium to be effective. Ensure you identify the size of the resulting shortage (excess demand) and mention the risk of black markets emerging to clear it."
+      }
     }
   ],
   recall: {

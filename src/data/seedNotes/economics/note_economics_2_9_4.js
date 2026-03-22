@@ -84,6 +84,15 @@ export const note_economics_2_9_4 = {
           ['Institutions', 'More investment, entrepreneurship', 'Anti-corruption laws, property rights reform']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "LRAS shifts when there is a change in the quality or quantity of factors of production, or technological advancement. Remember that an outward shift in LRAS is non-inflationary growth."
+      }
     }
   ],
   recall: {

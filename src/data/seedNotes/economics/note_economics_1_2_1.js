@@ -95,6 +95,15 @@ export const note_economics_1_2_1 = {
         title: "Exam Tip",
         text: "Behavioural economics questions often ask you to apply a specific bias to a given scenario. Practise identifying which bias best explains the described behaviour, then link it to a policy implication (e.g. status quo bias \u2192 default enrolment nudge). Always evaluate \u2014 nudges work but have limits."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Behavioural economics often appears in 10 or 14-mark evaluate questions. Be ready to explain specific concepts like computation weakness, herd behaviour, or habitual behaviour using an example from the case study extract."
+      }
     }
   ],
   recall: {

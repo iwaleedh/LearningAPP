@@ -100,6 +100,15 @@ export const note_economics_1_1_11 = {
         title: "Exam Tip",
         text: "To evaluate economic systems, use the framework of efficiency (does it allocate resources without waste?), equity (is the distribution of output fair?), and freedom (does it respect individual choice?). Free markets score well on efficiency and freedom but poorly on equity; command economies aim for equity but sacrifice efficiency and freedom."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "For 14 or 20-mark questions comparing command and free market economies, use Hayek, Marx, or Smith to bolster your argument. A good evaluation point notes that in reality, all economies are mixed to varying degrees."
+      }
     }
   ],
   recall: {

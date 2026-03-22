@@ -106,6 +106,15 @@ export const note_economics_1_3_0 = {
         title: "Common Mistake",
         text: "Students often confuse a change in the price of a related good with a movement. A change in the price of an input (e.g. oil) is a cost change \u2192 shifts supply. A change in the price of the good itself \u2192 movement along the existing curve."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Just like demand, be precise about supply. A change in the price of the good itself causes a movement along the curve (extension/contraction of supply). Only changes in the costs of production or other non-price factors cause a shift."
+      }
     }
   ],
   recall: {

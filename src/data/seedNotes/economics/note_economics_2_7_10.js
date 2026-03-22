@@ -106,6 +106,15 @@ export const note_economics_2_7_10 = {
       data: {
         text: 'Demand-pull inflation: AD exceeds AS — price and output both rise. Cost-push inflation: AS falls — price rises but output falls (stagflation). MV = PT: excess money growth causes inflation.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always categorize the causes into demand-pull (outward shift of AD) and cost-push (inward shift of SRAS) inflation. Ensure your diagrams correctly match the cause you are explaining."
+      }
     }
   ],
   recall: {

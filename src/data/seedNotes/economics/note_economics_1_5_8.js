@@ -12,6 +12,15 @@ export const note_economics_1_5_8 = {
     { id: 'h-4', type: 'heading', data: { text: 'Systemic Risk and Market Failure', level: 2 }, terms: [] },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Systemic risk</strong>: the risk that a single bubble burst triggers collapse of the wider financial system (counterparty failures, bank runs, credit freeze).' }, { text: '2008: US housing bubble burst → US banks insolvent → global credit crunch → recession in many countries.' }, { text: '<strong>Market failure</strong>: speculative bubbles represent a failure of <strong>information</strong> (irrational expectations), <strong>externalities</strong> (losses spread to innocent parties), and <strong>incentive misalignment</strong> (bankers rewarded for short-term risk-taking).' }] }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Irrational speculation causes asset prices to diverge from fundamentals, creating bubbles. When bubbles burst, the losses can trigger systemic financial crises. This is a key source of macroeconomic instability and market failure.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Akerlof's 'Lemons' problem is a great way to show sophisticated understanding. Explain how the presence of defective goods (lemons) drives down prices, eventually forcing high-quality goods out of the market entirely."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

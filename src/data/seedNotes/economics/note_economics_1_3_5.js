@@ -116,6 +116,15 @@ export const note_economics_1_3_5 = {
         title: "Common Mistake",
         text: "Do not say patents simply \"increase supply.\" They protect the patent holder's right to supply exclusively \u2014 for other firms, they are a barrier to entry that keeps supply lower than it would otherwise be."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Don't ignore legal and regulatory constraints as a determinant of supply elasticity. Strict environmental regulations or planning permission laws often represent fixed barriers, making supply more price inelastic."
+      }
     }
   ],
   recall: {

@@ -85,6 +85,15 @@ export const note_economics_1_3_4 = {
         title: "Exam Tip",
         text: "When asked about PES, always consider the time horizon and storability. A question about a fisherman's daily catch is very different from a question about global oil reserves. State your assumptions explicitly."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "If a question refers to agricultural goods, always note that PES is inelastic in the short run due to the time constraint of the growing season, but may be more elastic in the long run or if large stocks can be stored."
+      }
     }
   ],
   recall: {

@@ -10,6 +10,15 @@ export const note_economics_2_8_0 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Consumption (C)</strong>: largest component; influenced by income, interest rates, confidence, wealth, credit availability.' }, { text: '<strong>Investment (I)</strong>: most volatile component; includes business capital (plant, machinery) and residential construction.' }, { text: '<strong>Government spending (G)</strong>: determined by fiscal policy decisions; includes current expenditure and capital investment.' }, { text: '<strong>Net exports (X – M)</strong>: positive when exports > imports (trade surplus); negative when imports > exports (trade deficit).' }, { text: 'If (X – M) is negative, it reduces AD — the UK typically runs a current account deficit, so this component is negative.' }] } },
     { id: 'callout-we1', type: 'callout', data: { style: 'worked', title: 'Worked Example', text: 'If C = £1,400bn, I = £300bn, G = £400bn, X = £600bn, M = £700bn:<br/>AD = 1400 + 300 + 400 + (600 – 700) = 1400 + 300 + 400 – 100 = £2,000bn' } },
     { id: 'sum-1', type: 'summary', data: { text: 'AD = C + I + G + (X − M). Consumption is the largest component. Investment is the most volatile. Net exports can be negative if imports exceed exports.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always state the AD formula (AD = C + I + G + (X-M)) when defining it. This immediately opens up analytical paths for identifying which component is changing in a given scenario."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

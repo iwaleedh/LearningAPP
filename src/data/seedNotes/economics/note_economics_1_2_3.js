@@ -21,6 +21,15 @@ export const note_economics_1_2_3 = {
         title: "Exam Tip",
         text: "Remember: MU = 0 at the point of satiation (maximum TU). Negative MU = disutility. For exam diagrams, TU is an inverted-U shape peaking when MU crosses zero."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Use the law of diminishing marginal utility to explain the downward-sloping demand curve. Examiners want to see you link the declining additional satisfaction from each extra unit consumed to the lower price consumers are willing to pay."
+      }
     }
   ],
   recall: {

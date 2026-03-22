@@ -12,6 +12,15 @@ export const note_economics_1_5_5 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Government provision</strong>: the state directly provides public goods, funded through <strong>compulsory taxation</strong> — eliminating the voluntary payment problem.' }, { text: '<strong>Regulation</strong>: compulsory contributions (e.g. licence fees for broadcasting).' }, { text: '<strong>Technology converting non-excludable to excludable</strong>: electronic road pricing, paywall media — can make some quasi-public goods excludable.' }] }, terms: [] },
     { id: 'call-3', type: 'callout', data: { style: 'warning', title: 'Quasi-Public Goods', text: '<strong>Quasi-public goods</strong> (also called near-public goods) have features of both public and private goods. They are technically non-excludable but may become <strong>congested</strong> at high usage (making them somewhat rivalrous).<br/>Examples: roads (free but congestible), beaches (open access but crowded in summer).' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Public goods are non-excludable and non-rivalrous. The free-rider problem means markets under-provide them. Government provision funded by taxation is the standard solution.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "You must use the absolute correct terminology for public goods: 'non-excludable' and 'non-rivalrous'. Define both terms explicitly to earn your knowledge marks; loose definitions like 'provided by the government' will score zero."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

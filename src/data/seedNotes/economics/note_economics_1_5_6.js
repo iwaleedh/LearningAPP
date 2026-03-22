@@ -12,6 +12,15 @@ export const note_economics_1_5_6 = {
     { id: 'h-4', type: 'heading', data: { text: 'Solutions to Asymmetric Information', level: 2 }, terms: [] },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Signalling</strong>: the better-informed party reveals quality (e.g. educational qualifications signal worker productivity; warranties signal product quality).' }, { text: '<strong>Screening</strong>: the less-informed party gathers information (e.g. medical tests before insurance; credit checks before loans).' }, { text: '<strong>Regulation</strong>: compulsory disclosure requirements (e.g. annual accounts, product labelling).' }, { text: '<strong>Co-payments and deductibles</strong>: in insurance, requiring individuals to bear part of the loss reduces moral hazard.' }] }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'Asymmetric information causes market failure. Adverse selection (pre-contract) arises when a party hides risk at the time of agreement. Moral hazard (post-contract) arises when protection reduces incentives to avoid risk. Solutions: signalling, screening, regulation, co-payments.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Explain that the free-rider problem inevitably leads to a missing market. Because consumers benefit without paying, private firms lack the profit incentive to provide the good, necessitating state provision."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -19,6 +19,15 @@ export const note_economics_1_6_5 = {
         title: "Common Mistake",
         text: "State provision: productive inefficiency (no profit motive); bureaucratic waste; political interference; crowding out private investment.\n\nRegulation: regulatory capture (regulators side with the industry they oversee); compliance costs for business; may stifle innovation; government lacks full information to set rules correctly."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating regulation, high administrative and enforcement costs are excellent points to raise. Mention regulatory capture or the risk of pushing firms to operate in the informal economy as strong counter-arguments."
+      }
     }
   ],
   recall: {

@@ -75,6 +75,15 @@ export const note_economics_2_9_2 = {
         title: 'Core Principle',
         text: 'Anything that <strong>increases production costs</strong> per unit shifts SRAS left. Anything that <strong>reduces production costs</strong> or <strong>increases productivity</strong> shifts SRAS right.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "SRAS is determined strictly by the costs of production: wages, raw material prices, exchange rates (affecting imported materials), and business taxes. If answering on SRAS, frame arguments around 'business costs'."
+      }
     }
   ],
   recall: {

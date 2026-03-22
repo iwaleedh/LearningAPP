@@ -70,6 +70,15 @@ export const note_economics_1_5_3 = {
         title: "Exam Tip",
         text: "1. Label ALL curves: MPC, MSC, MPB/D, MSB.\n2. Mark BOTH equilibrium points: Qm (market) and Q* (social optimum).\n3. Shade the DWL triangle and label it clearly.\n4. State whether the market over or underproduces relative to Q*."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In all 14/20 mark data response questions about externalities, draw a diagram and shade the welfare loss triangle correctly. The triangle ALWAYS points towards the socially optimal quantity where MSB = MSC."
+      }
     }
   ],
   recall: {

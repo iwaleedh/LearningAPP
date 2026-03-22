@@ -121,6 +121,15 @@ export const note_economics_1_1_1 = {
         title: "Exam Tip",
         text: "If asked to evaluate an economic argument, you can critique the ceteris paribus assumption by explaining what other variables might change simultaneously and how that would affect the conclusion. This demonstrates sophisticated analytical thinking."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In evaluate questions, explicitly state the assumptions of the economic model being discussed. A strong evaluation point is to relax these assumptions to show how the model might fail in the real world."
+      }
     }
   ],
   recall: {

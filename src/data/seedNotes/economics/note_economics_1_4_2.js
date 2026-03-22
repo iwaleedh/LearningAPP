@@ -86,6 +86,15 @@ export const note_economics_1_4_2 = {
         title: "Exam Tip",
         text: "When a tax is imposed, the market price rises and quantity falls. Both CS and PS shrink. The tax revenue captured by government is a transfer, but the area that is neither CS, PS, nor tax revenue is the deadweight loss \u2014 show this clearly in your diagram."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "For questions on the price mechanism, explicitly use the words 'Signalling', 'Rationing', and 'Incentives'. Explain how higher prices signal producers to allocate more resources, logically breaking down the process to earn full analysis marks."
+      }
     }
   ],
   recall: {

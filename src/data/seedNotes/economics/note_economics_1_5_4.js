@@ -96,6 +96,15 @@ export const note_economics_1_5_4 = {
         title: "Exam Tip",
         text: "Many students confuse \"public good\" with \"goods provided by the government.\" This is wrong. A public good has specific economic properties (non-rival + non-excludable). Governments often provide services that are actually private goods (e.g. healthcare \u2014 excludable and rival)."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A standard evaluation point for externalities is the difficulty of assigning a monetary value to external costs. For example, how do you accurately price the cost of noise pollution on nearby residents? This shows excellent critical reasoning."
+      }
     }
   ],
   recall: {

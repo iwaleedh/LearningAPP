@@ -9,6 +9,15 @@ export const note_economics_2_8_8 = {
     { id: 'h-3', type: 'heading', data: { text: 'Other Determinants', level: 2 } },
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Non-price competitiveness</strong>: quality, design, brand reputation, after-sales service — affects X regardless of price.' }, { text: '<strong>Protectionism</strong>: tariffs, quotas, and subsidies by trading partners restrict UK exports.' }, { text: '<strong>Marshall-Lerner condition</strong>: currency depreciation only improves the trade balance if the combined price elasticities of demand for exports and imports sum to > 1.' }, { text: '<strong>J-curve effect</strong>: after depreciation, trade balance initially worsens (contracts cover old prices) before improving — short-run inelastic demand.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Net exports is determined by exchange rate, foreign income, domestic income, inflation, and competitiveness. Currency depreciation improves trade balance only if Marshall-Lerner condition holds.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Net exports depends heavily on exchange rates, relative inflation rates, and the quality of domestic goods. A depreciation of the exchange rate makes X cheaper and M more expensive, boosting net exports (assuming Marshall-Lerner holds)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

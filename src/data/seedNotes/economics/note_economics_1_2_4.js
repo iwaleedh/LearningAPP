@@ -22,6 +22,15 @@ export const note_economics_1_2_4 = {
         title: "Exam Tip",
         text: "Remember demand determinants as PIRATES:\nP rices of related goods | I ncome | R ates of interest | A dvertising/tastes | T rends/fashion | E xpectations | S ize of population/demographics"
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When referring to determinants of demand, always specify if goods are normal or inferior, and substitutes or complements. It demonstrates precise economic understanding rather than just general knowledge."
+      }
     }
   ],
   recall: {

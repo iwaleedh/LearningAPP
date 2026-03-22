@@ -18,6 +18,15 @@ export const note_economics_1_6_0 = {
         title: "Exam Tip",
         text: "Intervention is justified when market failure causes deadweight loss. However, government intervention can itself cause government failure if it creates new inefficiencies, has unintended consequences, or involves regulatory capture \u2014 sometimes making things worse than the original market failure."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Always state the specific aim of a policy intervention before evaluating it. Does the government want to raise revenue, correct market failure, or achieve a more equitable distribution of income? Anchor your argument to this objective."
+      }
     }
   ],
   recall: {

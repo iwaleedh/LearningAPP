@@ -80,6 +80,15 @@ export const note_economics_1_4_4 = {
         title: "Exam Tip",
         text: "Tax revenue = (Pc \u2212 Pp) \u00d7 Q\u2082. It appears as a rectangle on the diagram. The deadweight loss is the triangle between the old and new equilibrium quantities \u2014 it represents lost transactions and reduced welfare."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In complex diagrams combining shifts and inelastic curves, draw carefully. An inelastic demand curve with an outward supply shift will cause a large drop in price but only a small increase in quantity \u2013 state this explicitly in your answer."
+      }
     }
   ],
   recall: {

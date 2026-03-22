@@ -114,6 +114,15 @@ export const note_economics_1_3_3 = {
         title: "Exam Tip",
         text: "The short run and long run are conceptual time periods \u2014 they are not fixed calendar durations. For a bakery, the long run might be 6 months; for a nuclear power station, it could be 10+ years. Always link the time period to the specific industry in your answer."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "In microeconomics, clearly define the short run and long run. The short run is a period where at least one factor of production is fixed, whereas in the long run, all factors of production are variable."
+      }
     }
   ],
   recall: {

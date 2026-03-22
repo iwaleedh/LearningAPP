@@ -111,6 +111,15 @@ export const note_economics_1_2_0 = {
         title: "Exam Tip",
         text: "The Edexcel IAL exam often asks whether consumer behaviour is \"rational.\" In straightforward demand analysis, assume rationality. However, in questions about behavioural economics, acknowledge that real consumers often deviate from rationality due to biases, emotions, and limited information \u2014 this is covered in the next subtopic."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When defining rational choice, explicitly state that consumers aim to maximise utility and firms aim to maximise profit. This forms the foundational assumption for most microeconomic models you will draw."
+      }
     }
   ],
   recall: {

@@ -116,6 +116,15 @@ export const note_economics_1_1_8 = {
         title: "Exam Tip",
         text: "When evaluating specialisation, always consider both the efficiency gains and the risks. A balanced answer should note that while specialisation raises productivity and enables trade, it also creates interdependence, structural unemployment risk, and potential loss of job satisfaction \u2014 and that the extent of these depends on the context."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When evaluating the division of labour, don't just list benefits like increased productivity. You must consider drawbacks such as monotony and worker alienation, which can ultimately lead to a fall in quality or productivity if unmanaged."
+      }
     }
   ],
   recall: {

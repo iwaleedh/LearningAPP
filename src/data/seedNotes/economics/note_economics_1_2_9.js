@@ -11,6 +11,15 @@ export const note_economics_1_2_9 = {
     { id: 'h-4', type: 'heading', data: { text: 'Case: Cigarette Tax', level: 2 }, terms: [] },
     { id: 'call-2', type: 'callout', data: { style: 'worked', title: 'Worked Example: Cigarette Tax Revenue', text: 'UK government levies £5.25 per pack of cigarettes.<br/>PED for cigarettes ≈ −0.3 to −0.5 (inelastic — addictive product).<br/>A 20% price rise → only 6–10% fall in quantity demanded.<br/><br/>Result: tax raises <strong>large revenue</strong> (demand barely falls) while slightly reducing consumption for health reasons. Dual policy aim: <strong>revenue + health behaviour change</strong>.' }, terms: [] },
     { id: 'sum-1', type: 'summary', data: { text: 'PED, YED, and XED are essential for business pricing and government tax strategy. Inelastic goods yield more tax revenue with less output loss. Agricultural markets suffer price instability due to inelastic demand and supply combined with variable harvests.' }, terms: [] },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "A common 10-mark question asks to evaluate the usefulness of elasticities to a firm. A strong evaluation mentions that elasticity data is based on past estimates, assumes ceteris paribus, and might be inaccurate due to changing market conditions."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

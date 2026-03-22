@@ -89,6 +89,15 @@ export const note_economics_1_3_1 = {
         title: "Exam Tip",
         text: "In a 4+ mark question, chain your analysis: state the determinant \u2192 explain why it affects costs or profitability \u2192 state which direction supply shifts \u2192 state the effect on equilibrium price and quantity."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When analysing a shift in supply, use the acronym PINTSWC (Productivity, Indirect Taxes, Number of firms, Technology, Subsidies, Weather, Costs of production). If extracting from a case study, explicitly quote which determinant applies."
+      }
     }
   ],
   recall: {

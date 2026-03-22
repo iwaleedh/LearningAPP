@@ -83,6 +83,15 @@ export const note_economics_2_7_13 = {
       data: {
         text: 'Unemployment causes loss of income and skills for individuals, and lost output, lower tax revenues, and higher welfare spending for the economy. Hysteresis means long-term unemployment can permanently raise the natural rate.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "Evaluate the effects of unemployment on different economic agents: workers (lost skills/hysteresis), government (higher welfare spending, lower tax revenue), and firms (easier to recruit, downward pressure on wages)."
+      }
     }
   ],
   recall: {

@@ -123,6 +123,15 @@ export const note_economics_1_1_5 = {
         title: "Exam Tip",
         text: "If asked to show economic growth on a PPF diagram, draw an outward shift of the entire curve, not a movement along it. To show a trade-off between two goods, show a movement along the existing curve. Always label axes, key points, and curves."
       }
+    },
+    {
+      id: 'callout-examiner-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Examiner Tip",
+        text: "When drawing a PPF, always label the axes clearly with two goods or 'Capital Goods' and 'Consumer Goods'. An outward shift should be labelled from PPF1 to PPF2 to show the direction of economic growth clearly."
+      }
     }
   ],
   recall: {
