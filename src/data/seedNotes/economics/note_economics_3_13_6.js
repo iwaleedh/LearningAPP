@@ -104,6 +104,15 @@ export const note_economics_3_13_6 = {
       data: {
         text: 'Growth constraints include financial barriers (limited capital), market barriers (saturation, niche ceiling), organisational problems (diseconomies of scale), regulatory limits (competition law) and owner preferences (desire to remain small or satisficing behaviour). These constraints often interact.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Growth constraints often interact: financial constraints (borrowed funds, retained profit limits) interact with managerial constraints (key person dependency, culture). Highest marks go to answers recognizing these linkages, not listing constraints in isolation."
+      }
     }
   ],
   recall: {

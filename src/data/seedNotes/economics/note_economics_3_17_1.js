@@ -10,6 +10,15 @@ export const note_economics_3_17_1 = {
     { id: 'list-merge', type: 'list', data: { style: 'bullet', items: [{ text: 'Mergers are investigated if combined market share exceeds <strong>25%</strong> OR UK turnover of merged entity exceeds £70m.' }, { text: '<strong>Phase 1</strong>: CMA initial review (40 working days) — cleared, remedies accepted, or referred to Phase 2.' }, { text: '<strong>Phase 2</strong>: in-depth investigation (24 weeks) — cleared, approved with conditions, or blocked.' }, { text: 'Test: whether the merger creates a <strong>Substantial Lessening of Competition (SLC)</strong>.' }, { text: 'High-profile blocked mergers (UK): Meta/Giphy (2022), Microsoft/Activision initially blocked (2023, later approved).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation', text: '<strong>For:</strong> prevents abuse of dominance, maintains competitive markets, protects consumers.<br/><strong>Against:</strong> blocking mergers may prevent efficiency gains (economies of scale, synergies); regulatory capture risk; international competitiveness lost if domestic mergers are blocked while foreign rivals are not.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'CMA controls monopolies (25%+ market share threshold) and investigates mergers using the SLC test. Remedies: price controls, breakup, behavioural conditions. Sector regulators supplement the regime. Evaluation: trade-off between preventing market power and allowing efficiency gains.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Not all monopolies harm consumers or warrant breaking up. Natural monopolies (high barriers to entry, declining average costs) may be more efficient when large. Distinguish between structural and exploitative monopolies before recommending controls."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

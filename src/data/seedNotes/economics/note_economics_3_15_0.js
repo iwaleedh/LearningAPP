@@ -101,6 +101,15 @@ export const note_economics_3_15_0 = {
         title: 'Exam Tip: Efficiency in Essays',
         text: 'When evaluating market structures, always address which types of efficiency are achieved. Perfect competition is the benchmark for static efficiency but may lack dynamic efficiency. Monopoly reverses this. This trade-off is central to competition policy debates.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Productive efficiency (min AC) and allocative efficiency (P=MC) are *independent*. Perfect competition achieves both; monopoly achieves neither. Examiners test whether you evaluate market structures on both dimensions, not just one. Draw both curves on your graphs."
+      }
     }
   ],
   recall: {

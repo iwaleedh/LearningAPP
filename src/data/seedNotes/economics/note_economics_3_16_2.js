@@ -8,6 +8,15 @@ export const note_economics_3_16_2 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Immigration</strong> — expansion of the labour force shifts labour supply right, lowering wages in competitive markets.' }, { text: '<strong>Demographic change</strong> — ageing population → labour force shrinks → supply shifts left; younger population or higher birth rate → shifts right.' }, { text: '<strong>Female participation rate</strong> — rising participation (especially since 1960s) has shifted labour supply right.' }, { text: '<strong>Non-wage factors</strong> — improved working conditions, shorter hours, more job satisfaction → more willing to supply at a given wage (supply shifts right).' }, { text: '<strong>Education and training</strong> — longer study periods reduce labour supply temporarily; improving human capital raises productivity but may reduce raw hours supply.' }, { text: '<strong>Benefits and tax</strong> — high benefits reduce incentive to work (withdrawal rate creates unemployment trap); lower income tax increases net real wage, increasing supply.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'The <strong>backward-bending supply curve</strong> is a classic exam topic: above a certain wage, workers prefer more leisure — the income effect outweighs the substitution effect. Link to real examples: high-paid professionals working fewer hours.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour supply: number of workers willing to work at each wage. Upward-sloping initially (substitution effect); backward-bending at high wages (income effect dominates). Shifts: immigration, participation, demographics, taxes/benefits.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "For most workers, the substitution effect (higher wage \u2192 work more) dominates the income effect (higher wage \u2192 work less), making labour supply positively sloped. However, recognise that backwards-bending curves can occur at very high wages."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -106,6 +106,15 @@ export const note_economics_3_15_1 = {
           { text: '<strong>Static measure</strong>: Concentration ratios are a snapshot — they do not show trends in competition or market dynamics over time.' }
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "CR4 (or CR5) sums the market share of the 4 largest firms as a percentage. CR3 > 50% suggests oligopoly; CR1 < 25% suggests perfect competition. Use actual CR values from case studies to classify market structures\u2014examiners reward precise measurement over vague judgments."
+      }
     }
   ],
   recall: {

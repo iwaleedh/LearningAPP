@@ -69,6 +69,15 @@ export const note_economics_3_15_4 = {
         title: 'Nash Equilibrium',
         text: 'A Nash equilibrium is a set of strategies where no player can improve their outcome by changing strategy alone (given the other\'s strategy). In the prisoner\'s dilemma, both firms choose low price — this is the Nash equilibrium even though both would be better off pricing high.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Oligopolists are *interdependent*\u2014each firm's decisions affect rivals' profits and strategies. Candidates often analyze oligopolies as if they were monopolies (ignore rivals) or perfect competitors (ignore interdependence). Always discuss reaction functions, kinked demands, or collusion."
+      }
     }
   ],
   recall: {

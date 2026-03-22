@@ -9,6 +9,15 @@ export const note_economics_3_16_5 = {
     { id: 'callout-worked', type: 'callout', data: { style: 'worked', title: 'Example', text: 'A Premier League footballer has high wages because:<br/>1. MRP is extremely high (TV rights revenue, ticket sales).<br/>2. Supply is extremely inelastic (top-level talent is scarce).<br/>3. Product demand is inelastic (fans willing to pay premium prices).' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'For wage gaps, link to BOTH supply and demand sides: <strong>"Wages differ because MRP differs (demand) AND because supply differs (skills scarcity)."</strong> Compensating differentials are a strong analytical point on non-wage factors.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Competitive wage = MRP. Wage differentials: human capital, MRP differences, supply scarcity, compensating differentials, non-monetary benefits, and discrimination. Both demand and supply factors explain occupational wage gaps.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In perfectly competitive labour markets, firms are wage-takers: they cannot set wages below the market rate (workers will leave) or above it (no profit motive). Wages equal workers' marginal revenue product (MRP)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

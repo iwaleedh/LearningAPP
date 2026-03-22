@@ -103,6 +103,15 @@ export const note_economics_3_15_2 = {
         title: 'Limitation of Perfect Competition',
         text: 'Perfect competition is dynamically inefficient — firms earn only normal profit in the long run and so have little incentive or resources to invest in R&D and innovation. It is also unrealistic as products are rarely identical and information is never perfect.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Perfect competition requires *all* six assumptions: many buyers/sellers, homogeneous products, free entry/exit, perfect information, price-takers, and zero profits in equilibrium. Candidates often skip information and assume firms earn zero by hand-waving; explain the mechanism rigorously."
+      }
     }
   ],
   recall: {

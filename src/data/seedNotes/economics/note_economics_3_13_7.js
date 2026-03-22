@@ -87,6 +87,15 @@ export const note_economics_3_13_7 = {
       data: {
         text: 'A demerger splits a firm into independent businesses to improve focus, unlock shareholder value, reduce diseconomies of scale or satisfy regulators. Effects include greater strategic clarity and potential share price gains, but also short-run transition costs and loss of synergies.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Demergers are NOT always successful. Candidates often assume demergers improve efficiency, but examiners test whether you can identify when they fail\u2014e.g. loss of economies of scale, high transaction costs. Always weigh pros against context-specific costs."
+      }
     }
   ],
   recall: {

@@ -90,6 +90,15 @@ export const note_economics_3_13_0 = {
       data: {
         text: 'Private sector firms are owned by shareholders and aim for profit. Public sector organisations are government-owned and aim to provide services. Not-for-profit firms pursue social objectives and reinvest any surplus. Ownership determines objectives, accountability and behaviour.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Examiners often test whether you can explain why public firms exist despite lower efficiency: focus on market failures (positive externalities, merit goods) and equity concerns. Always justify the trade-off between efficiency losses and social benefits when comparing firm types."
+      }
     }
   ],
   recall: {

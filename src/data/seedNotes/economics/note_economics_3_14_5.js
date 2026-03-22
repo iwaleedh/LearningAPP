@@ -10,6 +10,15 @@ export const note_economics_3_14_5 = {
     { id: 'list-ext', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Industry agglomeration</strong> — clustering of firms (e.g. Silicon Valley; City of London) creates shared infrastructure, suppliers, and knowledge spillovers.' }, { text: '<strong>Specialised local labour pool</strong> — large industry attracts skilled workers, reducing recruitment and training costs for all firms.' }, { text: '<strong>Better infrastructure</strong> — government invests in transport links and broadband when an industry is geographically concentrated.' }, { text: '<strong>R&D spillovers</strong> — research from universities or leading firms benefits the whole industry.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Make sure you distinguish — <strong>internal EoS</strong> arise from firm growth; <strong>external EoS</strong> arise from industry growth. Both shift LRAC downward, but for different reasons.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Internal EoS (technical, purchasing, managerial, financial, marketing, risk) arise from firm growth. External EoS (agglomeration, labour pool, infrastructure, R&D spillovers) arise from industry growth. Both reduce LRAC.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Internal economies of scale fall into four types: technical (machinery efficiency), managerial (specialization), financial (lower borrowing costs), and marketing (advertising spreads across units). Name the *type* when explaining cost reductions\u2014generic 'bigger = cheaper' loses marks."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

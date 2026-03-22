@@ -9,6 +9,15 @@ export const note_economics_3_14_3 = {
     { id: 'callout-worked', type: 'callout', data: { style: 'worked', title: 'Quick Example', text: 'Q=100, TFC=£200, TVC=£300.<br/>TC = £500, ATC = £5, AVC = £3, AFC = £2.<br/>If Q rises to 101 and TC rises to £507 → MC = £7 (so ATC will rise from Q=101 onward).' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Examiners test the MC-ATC relationship: <strong>"MC cuts ATC and AVC at their lowest points."</strong> Also note AFC is always downward-sloping and never U-shaped.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Short-run costs: TFC constant; TVC/TC rise with Q. AFC falls; AVC and ATC are U-shaped due to diminishing returns. MC is the steepest U, cutting AVC then ATC at their minima.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "In short-run cost calculations, always start with fixed costs (unchanged) then add variable costs proportional to output. The AC curve = (FC + VC)/Q; UC-shaped due to diminishing returns and fixed cost spreading. Graph this relationship to cement understanding."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

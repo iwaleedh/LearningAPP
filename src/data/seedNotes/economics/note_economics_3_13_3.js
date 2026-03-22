@@ -104,6 +104,15 @@ export const note_economics_3_13_3 = {
       data: {
         text: 'Organic growth is internal expansion using the firm\'s own resources through NPD, new markets and increased capacity. It is less risky and preserves control and culture but is slower than external growth strategies and depends on internal financing capacity.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Organic growth is NOT simply 'slower than inorganic growth.' The key distinction is *internal asset expansion via reinvested profits* vs. external acquisition. Examiners mark down answers that treat speed as the defining feature rather than mechanism."
+      }
     }
   ],
   recall: {

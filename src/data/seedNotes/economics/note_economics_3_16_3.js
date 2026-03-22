@@ -9,6 +9,15 @@ export const note_economics_3_16_3 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Elastic vs Inelastic Labour Supply — Examples', headers: ['Labour type', 'Elasticity', 'Reason'], rows: [['Unskilled/general labour', 'Elastic', 'Large pool, no specialist training required'], ['Brain surgeons', 'Inelastic', '10+ years training; cannot be quickly replaced'], ['Software developers', 'Moderately elastic', 'Training 3–4 years; strong demand internationally'], ['Domestic cleaners', 'Elastic', 'Low skills, large available supply'] ] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Inelastic labour supply matters for wage determination: if a shortage arises in an inelastic market (e.g. nurses), wages rise sharply with little supply response — this is why healthcare and teaching often face persistent shortages despite wage increases.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour supply elasticity depends on: training length, mobility, skill specificity, and time horizon. Inelastic supply → wage rises following demand shocks don\'t attract many new workers quickly (e.g. doctors). Elastic supply → small wage change brings many new workers.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Not all occupations have the same labour supply elasticity. Professional services often have inelastic supply (higher qualifications), while unskilled labour may have more elastic supply \u2014 always justify why supply is elastic or inelastic for a specific labour market."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

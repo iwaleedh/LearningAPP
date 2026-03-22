@@ -9,6 +9,15 @@ export const note_economics_3_14_7 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'MES and Market Structure', headers: ['MES relative to market', 'Market structure tendency', 'Example'], rows: [['Very large (>25% market)', 'Natural monopoly / duopoly', 'Water, rail, aircraft'], ['Moderate (5–25%)', 'Oligopoly', 'Supermarkets, telecoms'], ['Small (<5%)', 'Competitive market', 'Restaurants, hair salons']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Use MES to justify why some industries are naturally concentrated: <strong>"The MES is so large that only a small number of firms can operate efficiently — this creates high barriers to entry and promotes oligopoly."</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'MES is the output level at which LRAC is minimised. Large MES relative to market demand leads to concentrated markets (oligopoly/monopoly). Small MES allows many firms — more competitive structure.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "MES is the output level where LRAC is minimized and remains flat (constant returns to scale). Interpret from graphs: if LRAC flattens at 10,000 units, MES=10,000. Use MES to explain why single-firm industries exist (high MES) vs. fragmented sectors (low MES)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

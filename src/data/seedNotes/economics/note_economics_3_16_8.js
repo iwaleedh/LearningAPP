@@ -10,6 +10,15 @@ export const note_economics_3_16_8 = {
     { id: 'list-eff', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Regional unemployment</strong> — workers stuck in high-unemployment areas (e.g. former industrial towns in the North East, South Wales) cannot easily access southern jobs.' }, { text: '<strong>Regional wage disparities</strong> — wages remain higher in shortfall regions and lower in surplus regions, rather than equalising.' }, { text: '<strong>Skills mismatch</strong> — vacancies unfilled in booming areas; labour wasted in depressed regions.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Policy Responses', text: 'Government policies to increase geographical mobility:<br/>• <strong>Subsidised housing/rent allowances</strong> for workers relocating.<br/>• <strong>Investment in regional infrastructure</strong> (HS2, Levelling Up) to reduce regional disparities.<br/>• <strong>Job information services</strong> (Universal Jobmatch) to reduce information gaps.<br/>• <strong>Enterprise zones</strong> — attract firms to depressed regions instead of moving workers.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Geographical immobility: workers can\'t/won\'t move for jobs. Causes: housing costs, family ties, schooling disruption. Effects: regional wage gaps, structural unemployment. Policies: relocation subsidies, regional investment, enterprise zones.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Geographical immobility is not just about transport costs. High housing prices, family ties, regional identity, and reluctance to relocate create persistent regional unemployment differences \u2014 the immobility is structural, not just logistical."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

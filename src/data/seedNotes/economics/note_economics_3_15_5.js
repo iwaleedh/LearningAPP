@@ -75,6 +75,15 @@ export const note_economics_3_15_5 = {
           { text: '<strong>External shocks</strong>: Demand or cost changes make agreed-upon output quotas difficult to sustain.' }
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Explicit collusion (cartels) is illegal; tacit collusion (price leadership, focal points) is harder to prosecute. Cartels are unstable\u2014incentives to cheat are strong. Examiners reward analyzing *why* cartels break down: individual firm profit if defect > collective profit if cooperate."
+      }
     }
   ],
   recall: {

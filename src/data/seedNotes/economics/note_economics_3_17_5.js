@@ -8,6 +8,15 @@ export const note_economics_3_17_5 = {
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Trade-Off', text: 'Market failure does NOT automatically justify intervention. The relevant comparison is: <strong>imperfect markets vs imperfect governments</strong>. If government failure is likely to be worse than market failure, non-intervention may be preferable.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Use the two-sided analysis: <strong>"Government intervention may be justified because [market failure], however government failure risks include [regulatory capture/information failure/unintended consequences] — so the net welfare effect is uncertain."</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Limits to intervention: information gaps, regulatory capture, unintended consequences, short-termism, moral hazard, and public choice self-interest. Government failure may exceed market failure — intervention is not automatically beneficial.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Government cannot always correct market failure better than markets self-correct. Government failure (rent-seeking, information asymmetry, unintended consequences) may make intervention worse than the original problem."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

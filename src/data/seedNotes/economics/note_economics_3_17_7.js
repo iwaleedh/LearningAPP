@@ -10,6 +10,15 @@ export const note_economics_3_17_7 = {
     { id: 'list-max', type: 'list', data: { style: 'bullet', items: [{ text: 'Less common; sometimes discussed for executive pay.' }, { text: 'Maximum wage below W* → <strong>excess demand for labour</strong> (Qd > Qs) → labour shortages in high-skilled sectors.' }, { text: 'Risk: high-skilled workers leave for better-paying jurisdictions (e.g. NHS doctors emigrating).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'A top-scoring analysis: <strong>"In a competitive labour market, a minimum wage creates unemployment. But the low-wage sector is often characterised by monopsony (e.g. retail, care homes, fast food) — where minimum wage may actually increase both wages AND employment."</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Minimum wage: raises wages; may reduce employment in competitive markets (excess labour supply), but not in monopsony. Evidence suggests limited employment effects in practice. Maximum wage: causes labour shortages in high-skill sectors.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Minimum wage does not always cause unemployment \u2014 it depends on whether the binding minimum is set above, at, or only slightly above equilibrium wage. If labour supply is inelastic, employment may barely fall. Evaluate empirical elasticities, don't assume automatic job loss."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

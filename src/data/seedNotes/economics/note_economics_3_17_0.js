@@ -8,6 +8,15 @@ export const note_economics_3_17_0 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Market Failures and Appropriate Interventions', headers: ['Market failure', 'Government response', 'Example'], rows: [['Negative externality', 'Tax (Pigouvian)', 'Carbon tax on pollution'], ['Positive externality', 'Subsidy', 'Subsidy on university education'], ['Public good', 'Direct provision', 'National defence, street lighting'], ['Information failure', 'Regulation / information provision', 'Mandatory food labelling, health warnings'], ['Monopoly', 'Competition regulation / price caps', 'CMA investigation, Ofwat price controls']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation', text: 'Market failure does not automatically justify intervention — government failure is also possible. Ask: <strong>"Is the intervention cost-effective? Does it create more distortions than it corrects? Does it raise equity concerns?"</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Intervention justifications: externalities, public goods, information failure, monopoly power, and equity. Each market failure has a targeted policy tool. Evaluate by weighing intervention benefits against government failure risks.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Always link market failure to the case for intervention: monopoly power, information asymmetry, externalities, or inequality. Avoid claiming intervention is needed without identifying the specific market failure first."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

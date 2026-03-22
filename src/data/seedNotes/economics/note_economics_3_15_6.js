@@ -79,6 +79,15 @@ export const note_economics_3_15_6 = {
         title: 'Evaluation Point',
         text: 'Non-price competition is not always welfare-improving. Heavy advertising expenditure may raise costs without improving product quality — it creates barriers to entry (advertising sunk costs) and may manipulate consumer preferences rather than genuinely serving their interests.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Price competition is wasteful (race-to-the-bottom); non-price competition (branding, quality, service) is strategic. Don't assume all competitive tactics are price wars. Oligopolists often favour non-price competition precisely because it's less destabilizing\u2014this signals rational self-interest."
+      }
     }
   ],
   recall: {

@@ -8,6 +8,15 @@ export const note_economics_3_14_9 = {
     { id: 'callout-worked', type: 'callout', data: { style: 'worked', title: 'Example', text: 'TFC = £100. At Q=50: TVC = £80, TR = £90.<br/>Loss if producing: TC = £180, TR = £90 → loss of £90.<br/>Loss if shutting: lose entire TFC = £100.<br/><strong>Produce</strong> — smaller loss of £90 vs £100 if shut.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: '<strong>SR shutdown: P < AVC. LR shutdown: P < ATC.</strong> The distinction is critical — in the long run, there are no fixed costs to justify staying open when making a loss.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Produce while P ≥ AVC (TR covers variable costs). SR shutdown: P < AVC. LR shutdown: P < ATC. Break-even: P = ATC. A firm making an accounting loss may still produce in the short run to minimise losses.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The shutdown point is where Price = AVC (not AC), because fixed costs are sunk. Break-even is where P = AC (all costs covered). Candidates score highly by explaining *why* a loss-making firm continues operating short-term (covers variable costs) but exits long-term."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

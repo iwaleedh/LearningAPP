@@ -8,6 +8,15 @@ export const note_economics_3_16_7 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Public vs Private Sector Wage Setting', headers: ['Feature', 'Private sector', 'Public sector'], rows: [['Wage determined by', 'Competitive market / individual negotiation', 'Government policy / pay review bodies'], ['Budget constraint', 'Revenue from sales', 'Tax revenue / government borrowing'], ['Profit motive', 'Strong — discipline wages', 'Absent — political motivation'], ['Union strength', 'Varies', 'Typically strong; essential services'], ['Flexibility', 'High', 'Low — nationally set pay scales']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Evaluation: public-sector wages being set below market rate may cause shortages (NHS nursing, GP shortage). This illustrates government as monopsonist failing to pay the market-clearing wage — a form of government failure in labour markets.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Public-sector wages set by government policy, pay review bodies, and collective bargaining with unions. Government acts as monopsonist. Fiscal constraints limit pay rises; below-market wages cause shortages (NHS, teaching).' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Public-sector wages are often set by independent pay review bodies (e.g. for NHS, teachers), not market forces. Examiners expect you to explain how pay settlements differ from competitive private-sector wage determination."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

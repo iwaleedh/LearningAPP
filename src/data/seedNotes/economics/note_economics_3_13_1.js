@@ -100,6 +100,15 @@ export const note_economics_3_13_1 = {
       data: {
         text: 'Co-operatives are owned and democratically controlled by members, with surplus reinvested or distributed to members rather than external shareholders. Joint ventures allow two or more independent firms to pool resources for a specific project, sharing costs, risks and profits while retaining separate legal identities.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse co-operative ownership with joint ventures. Co-operatives are member-owned with shared profits; joint ventures are contractual partnerships between separate firms. This distinction is critical when analysing stakeholder impacts."
+      }
     }
   ],
   recall: {

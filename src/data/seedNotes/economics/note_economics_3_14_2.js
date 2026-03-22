@@ -9,6 +9,15 @@ export const note_economics_3_14_2 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: 'Initially, adding workers increases MP (specialisation effect) — then MP falls as fixed capital is shared among more workers.' }, { text: '<strong>MP peaks before AP</strong>; when MP > AP, AP rises; when MP < AP, AP falls; MP cuts AP at AP maximum.' }, { text: '<strong>Negative MP</strong>: if too many workers, they get in each other\'s way → TP falls.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Diminishing returns is a <strong>short-run concept</strong> — capital is fixed. In the long run, all factors can be varied; returns to scale replaces diminishing returns as the relevant concept.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Diminishing marginal returns: adding variable labour to fixed capital eventually reduces marginal product. MP intersects AP at AP maximum. Short-run concept only.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Diminishing returns (falling marginal product) is NOT the same as negative returns (output falls). The Law of Diminishing Returns kicks in *immediately*\u2014each extra worker adds less than the previous one. Examiners penalize conflating this with negative returns."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

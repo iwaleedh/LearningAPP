@@ -9,6 +9,15 @@ export const note_economics_3_14_8 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Normal profit condition:</strong> AR = ATC (price equals average total cost, including opportunity cost).' }, { text: '<strong>Supernormal profit condition:</strong> AR > ATC (price exceeds average total cost).' }, { text: '<strong>Subnormal profit condition:</strong> AR < ATC (price below average total cost → economic loss).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Normal profit is NOT zero accounting profit — it is zero <strong>economic</strong> profit. Accountants include only explicit costs; economists also include implicit (opportunity) costs including entrepreneurial return.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Normal profit: TR = TC including opportunity costs (zero economic profit). Supernormal profit: TR > TC → signals entry in competitive markets but retained in monopoly. Subnormal: TR < TC → signals exit.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Normal profit is NOT zero profit\u2014it's the opportunity cost of capital and entrepreneurship. Supernormal (economic) profit is *above* normal profit. A firm earning exactly its opportunity cost is competitive; earning *more* has supernormal profit. Precision in terminology matters."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

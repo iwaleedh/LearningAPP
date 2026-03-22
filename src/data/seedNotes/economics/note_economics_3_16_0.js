@@ -11,6 +11,15 @@ export const note_economics_3_16_0 = {
     { id: 'list-shifts', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Higher product demand</strong> → higher output price → higher MRP → demand for labour shifts right.' }, { text: '<strong>Productivity improvements</strong> → higher MPP at each labour level → higher MRP → labour demand shifts right.' }, { text: '<strong>Higher price of capital (substitutes)</strong> → firms substitute labour for capital → demand for labour rises.' }, { text: '<strong>Lower price of capital (complements)</strong> → if capital and labour are complements, cheaper capital may raise demand for both.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always tie labour demand back to the MRP framework: <strong>"Labour demand rises because MRP increases — either MPP rises (productivity) or output price rises (product demand)."</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour demand is derived from product demand. Firms hire to MRP = W. MRP curve is the labour demand curve (downward-sloping due to DMR). Shifts: product demand, productivity, capital substitutability/complementarity.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Derived demand for labour depends on the derived demand for the product being produced. If product demand falls, labour demand falls \u2014 this is key to explaining unemployment in declining industries."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

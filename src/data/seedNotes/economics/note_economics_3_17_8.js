@@ -11,6 +11,15 @@ export const note_economics_3_17_8 = {
     { id: 'list-tc', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Working Tax Credit / Universal Credit top-up</strong>: supplement income of low-paid workers → incentivise work by reducing the poverty trap (higher income from working than not working).' }, { text: '<strong>Benefit withdrawal rates</strong>: if benefits are withdrawn too sharply as earnings rise → high effective marginal tax rate → poverty trap / unemployment trap → disincentive to work more hours.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: '<strong>Employer NICs are effectively a tax on jobs</strong> — they raise the cost of hiring, shifting labour demand left. This is distinct from employee NICs (tax on worker income). Both affect employment levels but through different mechanisms.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Income tax: ambiguous effect on labour supply (substitution vs income effect); Laffer curve. Employer NICs: tax on jobs → demand shift left → less employment. Working Tax Credit / UC: reduce poverty trap, incentivise labour market participation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Tax incidence (final burden) falls on whichever side of the market is more inelastic. A labour tax burden falls more on inelastic workers than elastic employers \u2014 use supply and demand slopes to trace who really pays."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -8,6 +8,15 @@ export const note_economics_3_17_4 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Maximum price (price ceiling)</strong>: set below market equilibrium. Consumer benefit (lower price) but creates <strong>excess demand</strong> → shortages, queuing, black markets. Example: rent controls, NHS prescription prices.' }, { text: '<strong>Minimum price (price floor)</strong>: set above market equilibrium. Producer benefit but creates <strong>excess supply</strong> → waste/surplus. Example: CAP agricultural minimum prices, minimum wage.' }, { text: 'Allocative efficiency: intervention improves it when correcting market failure; worsens it when distorting a competitive market.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always ask: <strong>"Is the market already failing?"</strong> If yes, intervention may move output toward socially optimal level → improves efficiency. If the market is competitive and functioning well, price controls create new distortions → worsen efficiency.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Pigouvian tax and subsidies improve efficiency when correcting externalities. Price caps below equilibrium → excess demand; price floors → excess supply. Competition regulation reduces P and raises Q toward efficient levels.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Intervention may improve allocative efficiency (output at P=MC) but worsen productive efficiency (highest output per input). Distinguish between these two types of efficiency when evaluating regulatory outcomes."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

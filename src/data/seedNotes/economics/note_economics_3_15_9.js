@@ -11,6 +11,15 @@ export const note_economics_3_15_9 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Effects of Third-Degree Price Discrimination', headers: ['Stakeholder', 'Effect', 'Reason'], rows: [['High-price group / consumers', 'Lose consumer surplus', 'Pay price above single-price level'], ['Low-price group / consumers', 'May gain access', 'Some can now afford the product'], ['Producer', 'Higher profit', 'Extracts more surplus than single price'], ['Society overall', 'Ambiguous', 'Output may rise (more people served) but welfare redistribution; inequality concern']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Examples', text: 'Rail travel (peak vs off-peak), airline seats (economy vs business, advance vs last-minute), cinema (adult vs child vs student), pharmaceuticals (high vs low income countries), gym memberships (student discount).' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Third-degree price discrimination: charge different prices to different consumer groups with different PED. Requires price maker status, market segmentation, and no resale. Boosts producer profit; redistributes consumer surplus.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Third-degree price discrimination requires: market power (P>MC), separate markets with different elasticities, and no arbitrage. Charge higher prices to inelastic segments (e.g. business flyers) and lower to elastic segments (e.g. leisure travelers). Always state when it's *not* possible (goods resellable)."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

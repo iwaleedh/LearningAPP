@@ -9,6 +9,15 @@ export const note_economics_3_15_7 = {
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Deadweight Loss', text: 'Monopoly produces where <strong>MR = MC</strong> → output below allocatively efficient level → <strong>deadweight welfare loss</strong> (the triangle between the competitive and monopoly output levels, bounded by the demand and MC curves).' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Evaluation point: monopoly may be <strong>dynamically efficient</strong> if supernormal profit is reinvested in R&D, reducing costs over time (Schumpeter\'s "creative destruction"). Also, natural monopolies may achieve low costs via economies of scale.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Monopoly: single seller, barriers to entry, price maker, supernormal profit in LR. Allocatively and productively inefficient (P > MC, P > min ATC) but may be dynamically efficient via R&D investment.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Monopoly requires *barriers to entry*: legal (patents, licenses), structural (economies of scale, brand loyalty), or strategic (predatory pricing, vertical integration). When analyzing monopolies, always identify the *specific* barrier\u2014don't assume 'one firm = monopoly' without explanation."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

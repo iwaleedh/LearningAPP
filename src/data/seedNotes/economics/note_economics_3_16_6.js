@@ -11,6 +11,15 @@ export const note_economics_3_16_6 = {
     { id: 'callout-key2', type: 'callout', data: { style: 'key', title: 'Bilateral Monopoly', text: '<strong>Bilateral monopoly</strong>: monopoly union (seller) faces monopsonist employer (buyer).<br/>Outcome is indeterminate — depends on relative bargaining power of union vs employer.<br/>The wage settles somewhere between the union\'s ideal (highest) and the monopsonist\'s ideal (lowest).' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'A key evaluation: <strong>minimum wage can raise wages AND employment simultaneously in a monopsonist market</strong> — the standard anti-minimum wage argument (unemployment) does not apply under monopsony. This distinguishes non-competitive from competitive labour markets.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Non-competitive wage setting: trade unions bargain above W*; monopsonists pay below W*. Bilateral monopoly: outcome between both extremes, set by relative bargaining power. Minimum wages can correct monopsony exploitation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Monopsony power does not automatically lead to lower wages and employment. If monopsonists operate with increasing labour supply costs, they may employ similar quantities but still pay below MRP. Distinguish between monopsony power and actual wage/employment outcomes."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

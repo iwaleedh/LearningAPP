@@ -8,6 +8,15 @@ export const note_economics_3_14_0 = {
     { id: 'list-1', data: { style: 'bullet', items: [{ text: '<strong>Perfect competition</strong>: horizontal demand (price taker) → AR = MR = P (constant).' }, { text: '<strong>Imperfect competition</strong> (monopoly, oligopoly): downward-sloping demand → to sell more, must lower price → MR falls below AR; MR < P.' }, { text: 'For a straight-line downward demand curve: MR bisects the horizontal axis at half the demand intercept → MR = 0 at midpoint of demand.' }, { text: '<strong>TR is maximised</strong> where MR = 0 (point of unit elasticity on demand).' }] }, type: 'list' },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'MR < AR (price) for any firm with downward-sloping demand because to sell extra unit, firm must reduce price on ALL units. AR curve = firm\'s demand curve. MR gradient is twice that of AR from a common intercept.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'TR = P×Q. AR = P = demand curve. MR = extra revenue from +1 unit. In imperfect competition MR < AR. MR = 0 at revenue maximum. MR < 0 inelastic region.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Revenue = Price \u00d7 Quantity, but confuse total, average, and marginal concepts at your peril. Candidates lose marks by confusing 'revenue is constant' (price-taker) with 'revenue per unit is constant.' These demand different interpretations."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

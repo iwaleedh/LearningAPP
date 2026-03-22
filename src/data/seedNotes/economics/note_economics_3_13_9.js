@@ -8,6 +8,15 @@ export const note_economics_3_13_9 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Bounded rationality</strong>: managers have limited information, time, and cognitive capacity — they cannot identify the true optimal because of uncertainty.' }, { text: '<strong>Multiple stakeholders</strong>: firms must satisfy shareholders (profits), employees (wages), customers (price/quality), suppliers (payment terms) — no single optimum satisfies all.' }, { text: '<strong>Inertia / satisficing threshold</strong>: once acceptable performance is reached, managers stop searching for improvements and pursue other goals (managerial perks, quiet life).' }, { text: '<strong>Complexity</strong>: large corporations have complex internal bureaucracies — achieving coordination across divisions is more important than optimising.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Application', text: 'Satisficing is relevant in evaluation: "while standard theory assumes profit maximisation, in practice managers face bounded rationality and stakeholder conflicts — satisficing is often a more realistic description of firm behaviour."' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Satisficing: achieving acceptable (not maximum) outcomes. Caused by bounded rationality, multiple stakeholder objectives, and complexity. More realistic description of actual firm behaviour.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Satisficing is NOT 'settling for mediocrity.' It's a rational response to information costs and bounded rationality\u2014achieving a satisfactory outcome rather than incurring infinite search costs for the optimal one. Frame it as economically rational, not lazy."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

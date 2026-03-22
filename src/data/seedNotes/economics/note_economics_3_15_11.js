@@ -10,6 +10,15 @@ export const note_economics_3_15_11 = {
     { id: 'list-impl', type: 'list', data: { style: 'bullet', items: [{ text: 'Incumbent must price at <strong>normal profit</strong> level (P = ATC) to deter entry — known as <strong>"limit pricing"</strong>.' }, { text: 'Operates efficiently (productive efficiency) even without actual competitors — <strong>potential competition</strong> alone disciplines behaviour.' }, { text: 'No need for high concentration to be inefficient — market outcome depends on <strong>contestability</strong>, not number of firms.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation Point', text: '<strong>Advantage:</strong> contestability challenges the view that monopoly is always harmful — if entry is free, even a monopolist behaves competitively.<br/><strong>Limitation:</strong> perfectly contestable markets are rare — most industries have sunk costs (e.g. equipment, marketing, regulatory costs) that limit entry.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Contestable markets: free entry and exit, zero sunk costs. Incumbent must set P = ATC (normal profit) to deter hit-and-run entry. Potential competition disciplines even monopolists — concentration does not guarantee inefficiency.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Contestable markets assume zero sunk costs, allowing hit-and-run entry. Incumbent prices near MC despite few rivals because threat of entry disciplines behavior. Use airline routes (post-deregulation) as examples: low sunk costs allowed Southwest to undercut legacy carriers instantly."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

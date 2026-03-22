@@ -7,6 +7,15 @@ export const note_economics_3_13_8 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Objective Comparison', headers: ['Objective', 'Output vs Profit-Max', 'Price vs Profit-Max', 'Who pursues?'], rows: [['Profit max', '= Q where MR=MC', 'Highest', 'Owner-managers, PE firms'], ['Revenue max', 'Higher (MR=0)', 'Lower', 'Sales-driven firms, Baumol\'s firm'], ['Sales max', 'Highest (min. profit)', 'Lowest', 'Managerial firms pre takeover']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Always specify what objective leads to what output/price outcome. <strong>Profit max (MR=MC) → lowest output, highest price.</strong> Sales/revenue max → higher output, lower price → may be better for consumers.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Profit max: MR=MC. Revenue max: MR=0. Sales max: maximum output with minimum profit constraint. Managerial theories (Baumol) arise from separation of ownership and control.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Distinguish carefully: profit maximization (MR=MC, economic profit), revenue maximization (MR=0), and growth maximization (minimize profit per unit to expand). Exam questions often hinge on identifying which objective explains observed behavior in case studies."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

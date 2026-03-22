@@ -10,6 +10,15 @@ export const note_economics_3_16_1 = {
     { id: 'list-impl', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Trade union bargaining power</strong>: workers in industries with inelastic labour demand can push for higher wages with less employment loss — e.g. doctors, pilots.' }, { text: '<strong>Minimum wage impact</strong>: larger employment losses in elastic labour demand industries; smaller losses in inelastic ones.' }, { text: '<strong>Automation risk</strong>: more likely if labour demand is elastic (easy substitution with capital).' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Apply to minimum wage debates: <strong>"If labour demand for low-skill workers is elastic (easy to automate), a minimum wage rise may cause significant unemployment; if inelastic, employment effects are small."</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour demand elasticity (Marshall\'s laws): more inelastic if product demand inelastic, labour is small share of costs, capital substitution difficult, or in short run. Affects union bargaining and minimum wage employment impact.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students confuse labour demand elasticity with price elasticity of demand. Labour demand elasticity depends on: product demand elasticity, proportion of labour costs in total costs, and ease of factor substitution \u2014 not product price sensitivity."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

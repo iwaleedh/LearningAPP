@@ -9,6 +9,15 @@ export const note_economics_3_15_8 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Approaches to Natural Monopoly', headers: ['Approach', 'How it works', 'Advantage', 'Limitation'], rows: [['Public ownership (nationalisation)', 'Government owns and operates the utility', 'Can set P = MC or P = ATC for public interest', 'Political interference; X-inefficiency risk'], ['Price regulation (price cap)', 'Regulator sets maximum price (RPI - X formula)', 'Incentivises efficiency; protects consumers', 'Information asymmetry — firm may hide costs'], ['Profit regulation', 'Cap on rate of return on capital', 'Limits monopoly profit', 'Reduces incentive to invest; gold-plating'], ['Forced access (open network)', 'Monopoly infrastructure opened to competitors', 'Increases competition in market', 'May reduce incentive to build infrastructure']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'UK examples: Ofwat (water), Ofgem (energy), Ofcom (telecoms). The <strong>RPI - X</strong> formula forces firms to cut prices by X% above inflation each year, incentivising efficiency improvements. A popular exam question.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Natural monopoly: LRAC still falling at market equilibrium output — single firm is most efficient. Examples: utilities. Regulation options: price caps (RPI–X), profit caps, public ownership, forced network access.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Natural monopoly \u2260 inherently efficient. It's where LRAC falls over the entire relevant demand range, making one firm cheaper than many. But natural monopoly markets *still* need regulation to prevent monopoly pricing. Examiners test whether you separate 'natural' from 'desirable.'"
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -10,6 +10,15 @@ export const note_economics_3_17_2 = {
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Limitations', text: 'Competition policy is only effective if:<br/>• Regulators are independent (not subject to regulatory capture).<br/>• Cartels are detectable (many operate secretly).<br/>• Global firms can be regulated by national authorities.<br/>• Fines are large enough to act as a real deterrent.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Distinguish competition policy (prohibiting anti-competitive behaviour/mergers) from contestability policy (reducing barriers to entry). Both aim to improve market outcomes but work through different mechanisms.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Competition policy: CMA, cartel prohibition, market investigations, merger controls. Contestability policy: deregulation, forced network access, reduced licensing barriers. Combined aim: efficient, competitive markets. Limitations: regulatory capture, global enforcement gaps.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "A contestable market can have few firms but behave competitively if barriers to entry are low. Examiners expect you to explain why contestability (threat of entry) constrains incumbent firm behaviour even without actual competition."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

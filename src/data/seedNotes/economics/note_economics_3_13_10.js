@@ -9,6 +9,15 @@ export const note_economics_3_13_10 = {
     { id: 'h-3', type: 'heading', data: { text: 'Solutions: Aligning Interests', level: 2 } },
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Performance-related pay</strong>: bonus linked to profits or shareholder return → aligns manager incentive with profit maximisation.' }, { text: '<strong>Share options</strong>: managers given the right to buy shares at a set price → benefit directly from rising share price.' }, { text: '<strong>Takeover threat</strong>: poor performance → share price falls → hostile takeover → managers replaced; reputational discipline.' }, { text: '<strong>Non-executive directors</strong>: independent board members monitor management on behalf of shareholders.' }, { text: '<strong>Transparency (corporate governance)</strong>: audit requirements, disclosure rules reduce information asymmetry.' }] } },
     { id: 'sum-1', type: 'summary', data: { text: 'Principal-agent problem: shareholders (principals) and managers (agents) have different interests due to separation of ownership and control. Solutions: performance pay, share options, takeover threat, governance.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Agency costs include more than just monitoring: divorce of ownership from control creates incentives for managerial self-dealing, empire-building, and shirking. When analyzing multinationals or public companies, explicitly link governance structures to agency problem severity."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

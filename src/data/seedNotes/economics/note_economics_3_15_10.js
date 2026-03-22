@@ -11,6 +11,15 @@ export const note_economics_3_15_10 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Monopsony vs Competitive Buyer', headers: ['Feature', 'Competitive Market', 'Monopsony'], rows: [['Price paid / wage', 'Determined by supply & demand', 'Below competitive rate'], ['Quantity purchased', 'Higher', 'Lower'], ['Buyer surplus', 'Normal', 'Higher — buys at artificially low cost'], ['Supplier/worker welfare', 'Normal', 'Worse — receive less than competitive rate']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'A minimum wage can correct labour market monopsony — raising wages to the competitive equilibrium can actually <strong>increase both wages AND employment</strong> simultaneously (unlike in a competitive market). This is a key evaluation point.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Monopsony: single dominant buyer — lower prices for suppliers, lower wages for workers. MLC > ALC forces equilibrium below competitive level. Minimum wage can correct monopsony exploitation without reducing employment.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Monopsony (single buyer) mirrors monopoly but for input markets. Monopsony power = ability to set wages below workers' MRP, not competitive wage. Examiners test whether you draw monopsony equilibrium correctly: intersection of labour supply and MRC (not = wage), then trace down to demand curve."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

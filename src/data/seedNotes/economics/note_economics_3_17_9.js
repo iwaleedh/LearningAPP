@@ -11,6 +11,15 @@ export const note_economics_3_17_9 = {
     { id: 'list-anti', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Equality Act 2010</strong>: prohibits direct and indirect discrimination in hiring, pay, and promotion across nine protected characteristics (age, sex, race, religion, disability, etc.).' }, { text: '<strong>Gender pay gap reporting</strong>: large employers (250+ employees) must publish median gender pay gap annually — transparency reduces employer complacency.' }, { text: '<strong>Equal pay legislation</strong>: men and women doing equivalent work must receive equal pay.' }, { text: '<strong>Blind recruitment</strong>: removing names/identifiers from CVs reduces unconscious bias in shortlisting.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Evaluation', text: '<strong>Limits of mobility policies:</strong> retraining is expensive, time-consuming, and not guaranteed to result in employment. Housing policy faces long-run supply constraints. Enterprise zones may merely displace activity from nearby regions rather than creating new jobs overall.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Geographical mobility policies: enterprise zones, relocation grants, transport investment, job matching. Occupational mobility: retraining (Skills Bootcamps, apprenticeships), adult learning. Anti-discrimination: Equality Act, gender pay gap reporting, equal pay.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Anti-discrimination laws reduce discrimination but do not fully eliminate occupational immobility caused by skills gaps, geographic mismatch, or caring responsibilities. Laws improve access but do not solve structural labour market barriers."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

@@ -8,6 +8,15 @@ export const note_economics_3_14_1 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: 'TR is <strong>maximised</strong> at the midpoint of a straight-line demand curve: PED = 1 → MR = 0.' }, { text: 'Above midpoint: elastic demand (PED > 1) → MR > 0 → lowering price increases TR.' }, { text: 'Below midpoint: inelastic demand (PED < 1) → MR < 0 → lowering price reduces TR.' }, { text: '<strong>Profit-maximising</strong> output is in the <strong>elastic region</strong> of demand (where MR > 0) — no profit-maximiser ever operates in the inelastic range.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'A key exam application: a monopolist raising price along the inelastic portion would increase TR and (with fixed costs) increase profit — so monopolists have incentive to restrict output to the elastic portion of demand.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Elastic demand: ↓price → ↑TR. Inelastic: ↑price → ↑TR. TR maximised at unit elasticity (PED=1, MR=0). Profit max always in elastic region.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "The PED-revenue link is crucial: elastic demand (|PED|>1) means revenue rises when price falls; inelastic means revenue rises when price rises. Always draw the MR curve below the demand curve to visualize why TR peaks when MR=0, not when demand is elastic."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

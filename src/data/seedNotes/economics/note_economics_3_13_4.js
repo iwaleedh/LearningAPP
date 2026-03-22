@@ -99,6 +99,15 @@ export const note_economics_3_13_4 = {
       data: {
         text: 'Horizontal integration merges firms at the same production stage in the same industry — biggest competition concern. Vertical integration expands along the supply chain (backward = acquire supplier; forward = acquire distributor). Conglomerate integration combines unrelated businesses to diversify risk.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Use real-world examples to anchor definitions: horizontal (e.g. brewery mergers), vertical (e.g. brewery + pubs), conglomerate (e.g. brewing + insurance). This prevents confusing integration types under exam pressure and demonstrates depth of understanding."
+      }
     }
   ],
   recall: {

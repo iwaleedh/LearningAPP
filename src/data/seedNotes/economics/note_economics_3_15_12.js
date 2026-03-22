@@ -11,6 +11,15 @@ export const note_economics_3_15_12 = {
     { id: 'callout-warning', type: 'callout', data: { style: 'warning', title: 'Regulation Implication', text: 'Governments can increase contestability by reducing sunk costs — e.g. <strong>removing licensing barriers</strong>, opening up access to essential infrastructure, reducing regulatory red tape. This is a key policy tool alongside competition law.' } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Perfect contestability is a theoretical benchmark — in reality, all markets have some sunk costs. Use this to evaluate the limits of Baumol\'s theory: <strong>"Contestability theory may not be applicable to industries with high sunk costs such as…"</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Sunk costs are irrecoverable and deter entry — higher sunk costs = lower contestability. Governments can improve contestability by removing licensing barriers. Perfect contestability is a theoretical ideal; real markets always have some sunk costs.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Sunk costs are *irrelevant* to current decisions\u2014they are past spending that cannot be recovered. Candidates confuse sunk costs with variable costs (relevant) or fixed costs (partly relevant). When deciding whether to shut down, ignore sunk costs; this is crucial for contestability theory."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

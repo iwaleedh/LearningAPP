@@ -10,6 +10,15 @@ export const note_economics_3_16_9 = {
     { id: 'list-policy', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Structural unemployment</strong> — workers made redundant from declining industries (e.g. steel, mining, high street retail) cannot find work in growing sectors.' }, { text: '<strong>Wage inequality</strong> — workers locked into low-skilled occupations cannot access higher-wage sectors.' }, { text: '<strong>Policy</strong>: government-funded retraining schemes (e.g. UK Apprenticeship Levy, Skills Bootcamps), adult education subsidies, employment support services.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Distinguish occupational immobility from geographical: <strong>occupational = can\'t change job type; geographical = can\'t change location</strong>. Both are types of structural labour market failure. Both raise structural unemployment and prevent wages from equalising across sectors.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Occupational immobility: workers cannot switch occupations. Causes: skills gaps, lack of transferable qualifications, age, discrimination, licensing barriers. Consequences: structural unemployment, wage inequality. Policy: retraining, apprenticeships, education subsidies.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Occupational immobility creates structural unemployment: workers may be willing to work but lack skills for available jobs. This justifies retraining policies, but explain why retraining is costly and takes time."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

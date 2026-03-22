@@ -9,6 +9,15 @@ export const note_economics_3_14_4 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: 'The LRAC curve is U-shaped: <strong>falls (IRS) → flat at MES → rises (DRS)</strong>.' }, { text: 'Each point on the LRAC represents the <strong>minimum SRAC</strong> for that level of output (optimal plant size).' }, { text: 'The bottom of the LRAC is the <strong>minimum efficient scale (MES)</strong> — the lowest output at which LRAC is minimised.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Draw LRAC as an envelope touching the minimum of each SRAC curve. Explain: <strong>LRAC falls = economies of scale; LRAC rises = diseconomies of scale</strong>. Running through three phases is sufficient for full marks.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'LRAC is the envelope of all SRAC curves. It falls in IRS, flattens at MES, and rises in DRS — giving a U-shape driven by economies and diseconomies of scale.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "The LRAC is an envelope of SRACs, NOT a smoothed average. Each point on the LRAC represents the lowest cost plant size for that output level. Examiners test whether you understand why LRAC falls (economies) then rises (diseconomies) despite constant returns eventually."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

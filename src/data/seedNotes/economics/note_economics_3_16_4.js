@@ -9,6 +9,15 @@ export const note_economics_3_16_4 = {
     { id: 'list-1', type: 'list', data: { style: 'bullet', items: [{ text: '<strong>Wage above equilibrium</strong> → excess supply of labour (unemployment) → downward pressure on wages.' }, { text: '<strong>Wage below equilibrium</strong> → excess demand for labour (labour shortages) → upward pressure on wages.' }, { text: '<strong>Real-world disequilibrium</strong>: wages may be sticky downward (contracts, minimum wages, union agreements) preventing full adjustment.' }] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Draw the labour market diagram: axes are Wage (W) on vertical, Quantity of Labour (L) on horizontal. Demand = downward-sloping (MRP); Supply = upward-sloping. Show W*, L* intersection clearly. Then shift the relevant curve for your specific scenario.' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour market equilibrium: labour demand = labour supply at wage W*, employment L*. Shifts in demand (MRP changes) or supply (immigration, participation) move W* and L*. Sticky wages can create persistent disequilibrium.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Labour market equilibrium may not equal full employment. If equilibrium is at e.g. 95% employment, the remaining 5% represents natural/frictional unemployment, not necessarily market failure."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

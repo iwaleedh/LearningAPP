@@ -8,6 +8,15 @@ export const note_economics_3_17_6 = {
     { id: 'tbl-1', type: 'comparisonTable', data: { caption: 'Labour Market Failures and Policy Responses', headers: ['Failure', 'Intervention', 'Example'], rows: [['Monopsony', 'Minimum wage', 'National Living Wage (NLW)'], ['Immobility', 'Retraining / mobility support', 'Skills Bootcamps, Enterprise Zones'], ['Information failure', 'Job matching services', 'Universal Jobmatch, Job Centres'], ['Under-training', 'Subsidised training', 'Apprenticeship Levy, T-Levels'], ['Discrimination', 'Anti-discrimination law', 'Equality Act 2010']] } },
     { id: 'callout-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Introduce the equity-efficiency distinction: <strong>"Labour market intervention may be justified both on efficiency grounds (correcting monopsony, immobility, training failures) AND equity grounds (ensuring fair wages and opportunity)."</strong>' } },
     { id: 'sum-1', type: 'summary', data: { text: 'Labour market failures: monopsony, immobility, information failure, training underinvestment, discrimination. Policy responses: minimum wage, retraining, job centres, apprenticeship subsidies, equality law. Both efficiency and equity justifications apply.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Labour markets warrant special intervention cases because they differ from product markets: immobility, information imbalance (employers know more), and externalities (e.g. training creates spillovers). Use these distinctions to justify labour-specific policies."
+      }
+    }
   ],
   recall: {
     enabled: true, ready: true,

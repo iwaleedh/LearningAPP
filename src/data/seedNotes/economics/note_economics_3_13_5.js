@@ -97,6 +97,15 @@ export const note_economics_3_13_5 = {
       data: {
         text: 'Mergers and takeovers can deliver economies of scale, synergies and faster growth. However, they risk diseconomies, cultural clashes, consumer harm through reduced competition, and job losses. Competition authorities (CMA, EU Commission) assess whether mergers substantially lessen competition and can block or impose conditions.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing 'takeover' with 'hostile takeover'\u2014all takeovers are unilateral acquisitions, but hostile takeovers specifically face resistance. Also, mergers are mutual agreements, not acquisitions. This terminology precision scores easy marks."
+      }
     }
   ],
   recall: {

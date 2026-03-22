@@ -90,6 +90,15 @@ export const note_economics_3_15_3 = {
           { text: '<strong>Independent coffee shops</strong>: Differentiated atmosphere, quality, and location.' }
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Exam Tip",
+        text: "Monopolistic competition = perfect competition structure + differentiated products. This creates downward-sloping demand curves and short-run supernormal profits, but free entry eliminates them long-term. Use burger chains as examples: many rivals, entry, but product differentiation = power."
+      }
     }
   ],
   recall: {
