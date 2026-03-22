@@ -205,6 +205,24 @@ export const note_business_2_6_1 = {
             "title": "Student Example: Starting with Birthday Money",
             "text": "Imagine launching a custom T-shirt business. You invest £300 of birthday money saved up over two years (owner's capital) to buy a heat-press machine. After six profitable months you reinvest £150 of net profit (retained profit) to restock materials. You are now funding growth entirely from internal sources — no interest, no loss of control. This mirrors the typical path of a real micro-business in its first two years."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When evaluating a business plan section, reference specific data or metrics. For example: 'The financial projections show a 25% gross margin, which demonstrates viability to investors.' Vague statements about 'good content' lose marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Memorising the business plan sections as a generic checklist is insufficient. Examiners expect you to explain *why* each section matters for the specific stakeholder and business context. Blank memorisation will not score highly in evaluation questions."
+      }
     }
   ],
   recall: {

@@ -1,0 +1,2 @@
+const fs = require("fs"); ["note_physics_2_11_5.js", "note_physics_4_22_0.js", "note_physics_4_22_1.js", "note_physics_4_23_1.js"].forEach(f => { let c = fs.readFileSync("src/data/seedNotes/physics/" + f, "utf-8"); let match = c.match(/title:\s*['"](.*?)['"]/s); or match = c.match(/type:\s*['"]heading['"],\s*data:\s*\{.*?text:\s*['"](.*?)['"]/s); console.log(f, match ? match[1].substring(0,80).replace(/
+/g,"") : "No heading"); }); missed_titles.cjs

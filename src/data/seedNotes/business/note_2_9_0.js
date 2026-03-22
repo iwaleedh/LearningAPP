@@ -129,6 +129,24 @@ export const note_business_2_9_0 = {
       id: "sum-2-9-0",
       type: "summary",
       data: { text: "Firms must choose their production method based on the nature of the product, target market size, and available capital vs labour. As firms grow, they often transition from job to batch and then to flow production." }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Create a comparison matrix: Job (flexible, high skill, low volume, high cost) vs. Flow (standardized, low skill, high volume, low cost) vs. Batch and Cell (hybrid). Show how film studios use job production, McDonald's uses flow."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't force businesses into rigid categories. Many firms use HYBRID: Tesla uses flow for Model Y bodies but job production for Roadster customization. Show understanding that modern operations mix methods by product line."
+      }
     }
   ],
   recall: {

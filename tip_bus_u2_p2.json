@@ -1,0 +1,622 @@
+{
+  "src/data/seedNotes/business/note_2_10_0.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Always use real-world examples (e.g., falling oil prices, rising petrol costs) when discussing inflation's impact. Examiners reward students who distinguish between demand-pull and cost-push inflation and link this explicitly to export/import competitiveness."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often overlook the different effects on exporters vs. importers. Inflation makes UK exports MORE costly abroad (less competitive) but makes foreign imports cheaper in the UK (increasing competition). Don't treat all businesses the same."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_1.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Demonstrate understanding by calculating the actual price change: if the pound appreciates 10%, UK goods become 10% more expensive to foreign buyers. Use this quantitative approach to score higher marks in evaluation questions."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Many students confuse appreciation with depreciation or forget that exchange rate effects are OPPOSITE for exporters and importers. Appreciation = bad for exporters, good for importers. Keep this crystal clear."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_10.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-10",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Link IP rights to firm competitiveness and innovation incentives. Mention how patents create temporary monopolies (20 years typically) allowing firms to recoup R&D investment and encourage new product development. This shows economic understanding."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-10",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often list IP types without explaining their durations or business benefits. Generic answers like 'patents prevent copying' miss the strategic value. Explain WHY businesses invest in IP and HOW it affects innovation and profitability."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_11.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-11",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use the concept of market concentration (oligopoly vs. monopolistic competition) to analyse competitor effects. Reference Porter's Five Forces and explain how an increase in competitors reduces pricing power and profit margins."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-11",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "This topic description appears truncated in your source file. Ensure your notes emphasize that MORE competitors = LOWER prices and profits, while LARGER competitors = more resources and economies of scale advantage."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_12.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-12",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Show understanding of competitive strategy by explaining WHY small businesses use niche marketing (reduce direct competition with giants) and flexibility (respond faster to changing demand). Frame this as leveraging small-firm advantages."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-12",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't just list small business tactics. Examiners expect evaluation: which strategies work best against which types of larger rivals? For example, innovation might beat a large firm in a niche, but price competition rarely works."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_2.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Create a table showing interest rate effects across stakeholder groups: higher rates = bad for borrowers (businesses, mortgagers), good for savers and lenders. Show cash flow impact on firms using worked examples with debt repayment figures."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often ignore the MULTIPLIER effect: rising interest rates → reduced consumer spending → reduced business sales and tax revenue → recession. Show this chain reaction, not just direct borrowing costs."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_3.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Link fiscal policy to business strategy. Higher corporation tax reduces profit retention → less investment in growth. Higher VAT shifts costs to consumers → demand elasticity matters. Always connect policy to firm-level decision-making."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Many students describe taxation without analysing incidence: VAT on luxury goods might be passed to consumers (price increase), but essentials might reduce margins if firms absorb tax to stay competitive. Context matters."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_4.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Draw the business cycle chart with all 4 phases labelled. For each phase, state explicitly: demand trend (↑ or ↓), employment (↑ or ↓), investment timing (early recovery = high), profit margin pressure. This structured approach earns full marks."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume all businesses suffer equally in recession. Counter-cyclical businesses (budget supermarkets, loan companies) can THRIVE in downturns. Examiners expect you to analyse differential impacts by sector."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_5.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Name specific consumer laws (Consumer Rights Act 2015, distance selling regulations) and explain the business benefit: compliance builds trust and reduces costly complaints/refunds. Frame regulation as both constraint AND competitive advantage."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often present regulation as purely a cost burden. Overlook how consumer protection can differentiate a firm (e.g., strong consumer guarantees = higher prices justified, attracts quality-conscious customers). Balance cost vs. benefit."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_6.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Contrast employment law WITH business flexibility needs. For example, unfair dismissal laws increase costs BUT reduce staff turnover, protecting firm-specific training investment. Use this balance to earn evaluation marks in case study questions."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Many answers state 'employment laws increase costs' without calculating impact. Examiners reward quantified analysis: e.g., maternity pay liability as % of payroll. Also ignore ethical reputation gains from fair treatment (attracts better talent, reduces strikes)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_7.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Move beyond 'environmental compliance is costly' – show how leading firms use green strategy profitably: carbon credits, eco-labelling attracts premium-paying customers, reduced energy = lower costs. Competitive advantage through compliance."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students overlook that environmental regulations have different impacts by sector: for renewable energy firms, strict emissions limits = opportunity for growth. For coal-dependent firms, they're existential threats. Don't generalize."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_8.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-8",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Reference actual CMA investigations (e.g., Facebook/Meta mergers, energy market probes). Explain WHY the CMA blocks deals: to protect consumer welfare and competition. Show understanding of 'substantial lessening of competition' test."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-8",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Generic answers about 'price fixing is illegal' miss the point. Examiners want evidence that competition policy FORCES efficiency innovations and prevents monopoly abuse. Explain the consumer benefit, not just the punishment."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_10_9.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-10-9",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Link H&S compliance to financial outcomes quantitatively: accident claims costs, insurance premiums, lost productivity, brand damage. Show evidence (statistics) that poor H&S = material profit risk. This numeric link scores highly."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-10-9",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students describe H&S laws (risk assessments, reporting requirements) without connecting to business ability to operate. Poor H&S can lead to closure, criminal liability for executives, and reputational collapse. Emphasize existential risk."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_0.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Always draw or describe the income statement flow: Revenue → Gross Profit (less COGS) → Operating Profit (less overheads) → Net Profit (less interest/tax). Use real business examples (Tesco, Next) to show profit waterfall."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't confuse gross and net profit – examiners specifically test this. Gross = before overheads (shows production efficiency). Net = after all costs (shows true profitability). Missing this distinction loses marks consistently."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_1.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "When interpreting profit margins, always compare to sector benchmark AND trends over time. A 5% net margin for a supermarket might be healthy (razorthin margins in retail), but worrying for software (typically 20%+). Context = marks."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students calculate margins correctly but fail to interpret what changes MEAN. Falling gross margin = rising COGS or lower prices (supply/competition pressure). Falling operating margin = rising overheads (inefficiency). Know the diagnosis."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_2.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Evaluate profit improvement methods in context: cost-cutting might work short-term but damage innovation and staff morale. Revenue increases need market space. Product mix optimization only works if you have multiple profitable lines. Show trade-offs."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Simply listing three methods (raise prices, cut costs, change mix) without evaluation is incomplete. Examiners ask WHEN each works: low elasticity allows price rises; high competition requires cost cuts; diversification helps when some lines are struggling."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_3.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use Apple's case: massively profitable but generates cash from inventory turns faster than spending. By contrast, growth startups show losses but survive on funding. Profit ≠ cashflow. Give two opposite examples to prove understanding."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Many students treat profit and cash flow as interchangeable – they're not. Profit is earned (accrual), cash is collected (actual money). A firm can boost profit through aggressive revenue recognition but face cash shortage if customers delay payment."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_4.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Note: your source text appears truncated. Ensure you know ideal values: Current Ratio ~2:1, Acid Test ~1:1. High values = inefficient (idle cash, poor investment), low values = liquidity crisis risk. Evaluate context: retailers work with lower ratios."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students memorize 'Current Ratio should be 2:1' without understanding WHY. A very high ratio wastes shareholder money on idle cash. Examiners expect you to interpret what HIGH/LOW ratios actually signal about management and industry norms."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_5.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Calculate and explain cash conversion cycle step-by-step: 'Days Inventory + Days Sales Outstanding − Days Payable Outstanding = CCC days of cash tied up.' Lower is better. Show practical strategies: faster collections, slower payments, inventory optimization."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often treat working capital management as abstract. In reality, delaying payment to suppliers can strain relationships (they raise prices or cut credit). Pushing collections too hard angers customers. Balance relationship management with optimal cash timing."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_6.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Link internal failure causes to financial statements: overtrading appears as rising sales BUT falling cash (can't fund growth). Poor cash management shows as short-term insolvency. Weak decisions cause both P&L deterioration AND balance sheet stress."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Listing 'poor cash flow, overtrading, bad management' as separate causes misses that they're LINKED. Overtrading happens because management expands recklessly (bad decision) but funds it with short-term credit (poor cash planning). Show interconnection."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_8_7.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-8-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Distinguish between CYCLICAL failure (recession hits all firms – response: cost control or seek merger) and STRUCTURAL failure (industry declining – response: exit or radical pivot). External causes demand different strategies."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-8-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Simply stating external causes (recession, competition, regulation) without evaluating mitigation ignores firm agency. Even in downturns, better-managed firms survive. Show how firms can hedge risk, diversify, or lobby regulators to adapt."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_0.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Create a comparison matrix: Job (flexible, high skill, low volume, high cost) vs. Flow (standardized, low skill, high volume, low cost) vs. Batch and Cell (hybrid). Show how film studios use job production, McDonald's uses flow."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't force businesses into rigid categories. Many firms use HYBRID: Tesla uses flow for Model Y bodies but job production for Roadster customization. Show understanding that modern operations mix methods by product line."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_1.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-1",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Define productivity as 'output per unit of input' and show how it connects to competitiveness: higher productivity = lower unit costs = ability to compete on price OR improve margins. Show quantitatively: if productivity rises 5%, unit cost falls ~5%."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-1",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Confusing productivity with production volume: a factory producing 1000 units (high production, maybe low productivity) with 50 employees is less productive than one producing 1000 units with 25 employees. Output PER INPUT matters."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_2.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-2",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Evaluate productivity improvements within constraints: automation boosts output/employee (good) but requires CapEx and retraining (cost). Training staff might not pay off if they then leave. Always balance benefit vs. cost and risk."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-2",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Suggesting quick wins (work harder, better motivation) without analyzing structural barriers. If processes are inefficient or technology outdated, motivation alone won't improve productivity meaningfully. Diagnose root cause first."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_3.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-3",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Draw the relationship: as scale increases, fixed costs spread across more units → average cost falls (economies of scale) until minimum efficient scale is reached. Beyond that, diseconomies of scale kick in (management becomes unwieldy)."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-3",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming bigger is always better. Many industries have optimal scale-specific sizes: small craft breweries can outcompete big breweries by targeting premium niches. Don't conflate economies of scale with competitive advantage."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_4.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-4",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Use sector examples: agriculture is labour-intensive (harvest timing matters), manufacturing is increasingly capital-intensive (robots). Analyse trade-offs: labour-intensive = flexibility, lower CapEx, social costs; capital-intensive = consistency, lower marginal costs."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-4",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Oversimplifying capital-intensive as 'always cheaper.' Automation requires large upfront investment – only pays off at high volumes. A small artisan producer will never recoup automation cost. Match method to scale."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_5.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-5",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Calculate capacity utilisation: (Actual Output / Maximum Output) × 100%. Show why over-utilisation (>100% on paper) is unsustainable (quality drops, staff burn out, machinery breaks). Under-utilisation wastes overheads."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-5",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Assuming optimal capacity = 100%. In reality, 80% is often optimal (buffer for maintenance, demand spikes, quality control). Going all-in to 100% leaves no flexibility and increases failure risk. 100% ≠ efficient."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_6.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-6",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Explain inventory control charts: reorder level (buffer + lead time demand), reorder quantity (EOQ), minimum level (buffer stock), maximum level. Show how buffer inventory prevents stockouts at cost of tied-up capital."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-6",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Reading an inventory chart mechanically without understanding the cost trade-off: more buffer stock = higher carrying costs but fewer stockouts. Optimal buffer depends on item criticality and supplier reliability. One-size-fits-all doesn't work."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_7.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-7",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Contrast JIT (no buffer = faster cash flow, no waste) with risks (any supplier delay = production halt). Show how Toyota pioneered JIT but required long-term supplier partnerships and reliable logistics. Not plug-and-play."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-7",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating JIT as universally superior. It works beautifully in stable environments (Japanese manufacturing post-WWII) but fails under disruption (COVID supply chain chaos revealed JIT fragility). Context and resilience matter."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_8.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-8",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Define clearly: Quality Control = inspection at end (catches defects). Quality Assurance = prevention throughout (ensures quality). Show that QA is more costly upfront but cheaper long-term (fewer rejects, rework). Examiners reward this distinction."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-8",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Using terms interchangeably – QC and QA are DIFFERENT strategies. QC is reactive (find bad products), QA is proactive (prevent bad products). Mixing them loses marks. Also ignore that QA requires culture change, not just procedures."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_2_9_9.js": [
+    {
+      "id": "callout-bus-u2-p2-tip-2-9-9",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner Tip",
+        "text": "Explain TQM as total commitment: everyone responsible for quality, continuous improvement (Kaizen), customer-focused. Show why it's costly (training, time) but generates competitive advantage through reputation and reduced defects."
+      }
+    },
+    {
+      "id": "callout-bus-u2-p2-warn-2-9-9",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Treating TQM as a checklist (implement zero-defects policy, done) rather than a culture shift. TQM REQUIRES employee empowerment, management commitment, and years to embed. Superficial adoption (badges without change) fails. Be realistic."
+      }
+    }
+  ]
+}

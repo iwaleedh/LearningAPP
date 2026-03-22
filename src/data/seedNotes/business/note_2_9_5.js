@@ -114,6 +114,24 @@ export const note_business_2_9_5 = {
         "title": "Relatable: Your Classroom at 40% Capacity",
         "text": "Imagine your school books a 30-seat classroom for a lesson where only 12 students turn up. The teacher is still paid, the heating is still on, and the room rental is still charged — but across only 12 students instead of 30. This is exactly why low capacity utilisation drives up cost per unit: fixed costs don't shrink, but fewer units share them."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Calculate capacity utilisation: (Actual Output / Maximum Output) \u00d7 100%. Show why over-utilisation (>100% on paper) is unsustainable (quality drops, staff burn out, machinery breaks). Under-utilisation wastes overheads."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming optimal capacity = 100%. In reality, 80% is often optimal (buffer for maintenance, demand spikes, quality control). Going all-in to 100% leaves no flexibility and increases failure risk. 100% \u2260 efficient."
+      }
     }
   ],
   recall: {

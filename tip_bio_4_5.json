@@ -1,0 +1,380 @@
+[
+  {
+    "file": "note_4_5_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Ensure you state that light energy is converted into chemical energy during photosynthesis. Never write that plants 'make', 'produce' or 'create' energy; energy is only transferred."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often struggle to distinguish between the roles of PSII and PSI. Remember that photolysis of water replaces electrons exclusively in Photosystem II, while NADP is reduced by electrons originating from Photosystem I."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not imply that the light-independent reactions only occur in the dark! These reactions happen continuously in the light as long as the products of the light-dependent stage (ATP and reduced NADP) are being supplied."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When interpreting limiting factor graphs, the factor plotted on the x-axis is only the limiting factor on the ascending slope. Once the graph plateaus, you must state that another factor (e.g. temperature or carbon dioxide concentration) has become limiting."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Avoid confusing absorption spectra and action spectra. An absorption spectrum shows the amount of light absorbed by pigments at different wavelengths, whereas an action spectrum shows the overall rate of photosynthesis achieved at those wavelengths."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Make sure you clearly state that NPP is less than GPP because energy is lost via plant respiration. Be ready to manipulate the equation NPP = GPP - R in calculation questions."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When evaluating the method of counting oxygen bubbles to measure the rate of photosynthesis, remember to state that bubbles can vary in volume. A more accurate method is to collect the gas using a gas syringe."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When calculating Rf values for photosynthetic pigments, always measure from the origin line to the geometric centre of the pigment spot. Remember that Rf values must always be less than 1."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_8.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse the nitrogenous base 'adenine' in ATP with the nucleoside 'adenosine'. ATP consists of an adenine base, a ribose sugar, and three phosphate groups."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_9.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often confuse the products of cyclic and non-cyclic photophosphorylation. Remember that cyclic photophosphorylation **only produces ATP**, whereas non-cyclic produces ATP, reduced NADP (NADPH), and oxygen."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_10.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing RuBisCO, always mention its full role: it catalyses the reaction between RuBP and carbon dioxide. Don't just say 'it fixes carbon'."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_11.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "In exam questions about leaf adaptations, ensure you link the structural feature directly to its function. For example, 'the palisade mesophyll cells are densely packed with chloroplasts **to maximise light absorption**'."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_12.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse 'community' with 'ecosystem'. A community consists only of the living (biotic) populations in an area, while an ecosystem includes both the abiotic and biotic components interacting together."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_13.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Energy is 'transferred' between trophic levels, not 'used up'. Ensure you clearly account for energy lost as heat through respiration or via excretion and egestion when explaining why food chains rarely exceed 4-5 trophic levels."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_14.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Be prepared to use the equation **NPP = GPP - R**. Sometimes exam questions will give you values in standard form or ask you to calculate the percentage efficiency; always check the units carefully."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_15.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Remember that microorganisms (like bacteria and fungi) involved in decomposition also respire, releasing CO\u2082 into the atmosphere. Students frequently forget to include microbial respiration in carbon cycle questions."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_16.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When discussing succession, clearly use the terms **pioneer species** and **climax community**. Highlight that as succession proceeds, soil depth increases and biodiversity usually increases until a stable climax community is reached."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_17.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When evaluating evidence for climate change, distinguish between 'correlation' and 'causation'. Just because CO\u2082 levels and temperature rise together does not automatically prove one causes the other, though scientific consensus strongly supports a causal link via the greenhouse effect."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_18.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Correlation vs Causation",
+          "text": "When discussing evidence for climate change, distinguish between correlation and causation. A strong correlation does not automatically prove cause, even if it is a central piece of evidence."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_19.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Limiting Factors",
+          "text": "Do not mix up density-dependent factors (e.g., competition for food, disease) with density-independent factors (e.g., natural disasters, sudden temperature changes) when explaining what maintains populations at their carrying capacity."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_20.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Sampling Techniques",
+          "text": "Examiners often ask for justifications of sampling methods. Use random sampling (with random coordinates) for uniform areas to eliminate bias, and systematic sampling (using transects) across an environmental gradient."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_21.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Enzyme Denaturation",
+          "text": "Never say enzymes 'die'. Always state that they denature, meaning the bonds maintaining their tertiary structure break, and the shape of the active site changes so it is no longer complementary to the substrate."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_22.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Control Variables",
+          "text": "In practical investigations on temperature effects, explicitly list the variables to be kept constant (like pH, light intensity, or water availability) to ensure valid conclusions about the relationship."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_23.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Mutations are Random",
+          "text": "A common mistake is stating the environment causes mutations. Mutations always occur randomly, creating genetic variation. The environmental change simply acts as the selection pressure favoring the already-existing advantageous alleles."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_24.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Structuring Speciation Answers",
+          "text": "Include the key steps logically: 1) Isolation (geographical or reproductive), 2) Prevention of gene flow, 3) Different selection pressures, and 4) Accumulation of genetic differences and allele frequencies until interbreeding cannot produce fertile offspring."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_25.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Evaluating Scientific Claims",
+          "text": "When assessing contentious secondary data, look for peer review validation, appropriate sample sizes, robust methodology, and whether there are potential biases tied to funding sources."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_26.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Conservation vs Preservation",
+          "text": "Be precise. Conservation often involves the active management of ecosystems (like coppicing or controlled grazing) to maintain biodiversity, whereas preservation implies simply protecting areas by minimizing human intervention entirely."
+        }
+      }
+    ]
+  }
+]

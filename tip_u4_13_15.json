@@ -1,0 +1,326 @@
+{
+  "note_4_13_0.js": [
+    {
+      "style": "warning",
+      "title": "Notation Trap: Kc vs Kp Brackets",
+      "text": "For Kc expressions, ALWAYS use square brackets [ ]. Examiners will not award notation marks if you use round brackets. This is different from Kp which MUST use round brackets p(...)."
+    },
+    {
+      "style": "key",
+      "title": "Critical Misconception: Kc \u2260 the Equilibrium Position",
+      "text": "Kc is constant at a given temperature and does NOT change when you alter concentration, pressure, or add a catalyst. The position of equilibrium shifts to restore Qc = Kc, but Kc itself remains unchanged. Only temperature changes K."
+    }
+  ],
+  "note_4_13_1.js": [
+    {
+      "style": "warning",
+      "title": "Kp Notation \u2014 Most Penalised Error",
+      "text": "For Kp expressions, ALWAYS use round brackets: p(CO\u2082), p(N\u2082). Do NOT use square brackets. Examiners explicitly withhold marks for incorrect bracket notation in IAL exams \u2014 this is ONE OF THE MOST PENALISED ERRORS."
+    },
+    {
+      "style": "tip",
+      "title": "Kp-Kc Relationship Trap",
+      "text": "Remember Kp = Kc(RT)^\u0394n works only when R = 8.314 J mol\u207b\u00b9 K\u207b\u00b9 (NOT 8.31). Use wrong R value and your answer fails completely."
+    }
+  ],
+  "note_4_13_2.js": [
+    {
+      "style": "warning",
+      "title": "Stoichiometric Coefficients in RICE Tables",
+      "text": "Students often forget to apply stoichiometric coefficients to changes: if the coefficient of NO\u2082 in 2NO\u2082 \u21cc N\u2082O\u2084 is 2, the change in NO\u2082 is TWICE the change in N\u2082O\u2084. Check your ICE table \u2014 each change must reflect stoichiometry."
+    },
+    {
+      "style": "tip",
+      "title": "% Reacted Calculations",
+      "text": "If told 'X% of species A reacted', calculate change as (X/100) \u00d7 initial moles, then use stoichiometric ratios for all other species. Students often mix percentages incorrectly."
+    }
+  ],
+  "note_4_13_3.js": [
+    {
+      "style": "key",
+      "title": "Cause & Effect: The Critical Distinction (EXAM FOCUS)",
+      "text": "Most students incorrectly say 'changing concentration changes Kc.' WRONG. Kc is constant. When you change concentration, Qc changes. The position of equilibrium SHIFTS to restore Qc = Kc. Kc is the cause; the shift is the effect."
+    },
+    {
+      "style": "warning",
+      "title": "Pressure Only Affects if \u0394n \u2260 0",
+      "text": "Pressure changes have NO effect on equilibrium if the number of moles of gas is the same on both sides (\u0394n = 0). Many students forget this condition and incorrectly predict shifts for reactions like N\u2082 \u21cc N\u2082."
+    }
+  ],
+  "note_4_13_4.js": [
+    {
+      "style": "key",
+      "title": "Temperature: The ONLY Factor That Changes K",
+      "text": "Concentration, pressure, and catalysts shift equilibrium but do NOT change K. ONLY temperature changes K. For exothermic: increase T \u2192 K decreases, shift LEFT. For endothermic: increase T \u2192 K increases, shift RIGHT. Memorise this asymmetry."
+    },
+    {
+      "style": "tip",
+      "title": "Haber Process Example",
+      "text": "N\u2082 + 3H\u2082 \u21cc 2NH\u2083 is exothermic (\u0394H = \u221292 kJ). Low temperature favours products thermodynamically, but reaction is slow. Industry uses ~450 K and 200 atm as a compromise \u2014 high pressure shifts right, moderate temperature balances rate vs yield."
+    }
+  ],
+  "note_4_13_5.js": [
+    {
+      "style": "key",
+      "title": "IAL Form: \u0394Stotal = R ln K (Not \u0394G\u00b0)",
+      "text": "In Edexcel IAL exams, the critical equation is \u0394Stotal = R ln K, not \u0394G\u00b0 = \u2212RT ln K. Know both forms. Key implication: K > 1 \u2192 ln K > 0 \u2192 \u0394Stotal > 0 \u2192 spontaneous forward reaction."
+    },
+    {
+      "style": "warning",
+      "title": "Both Directions Spontaneous at Equilibrium",
+      "text": "Students struggle to understand why both forward and reverse reactions are spontaneous at equilibrium. At equilibrium \u0394Stotal = 0, representing the entropy maximum. ANY deviation from equilibrium (starting from pure N\u2082O\u2084 or pure NO\u2082) spontaneously moves toward equilibrium because entropy increases."
+    }
+  ],
+  "note_4_13_6.js": [
+    {
+      "style": "tip",
+      "title": "Interpreting K Values for Extent of Reaction",
+      "text": "K > 10\u00b3 = essentially complete conversion to products. K \u2248 1\u221210 = moderate conversion. K < 10\u207b\u00b3 = negligible conversion. Use this to communicate exam answers: don't just state K value, interpret its magnitude."
+    },
+    {
+      "style": "warning",
+      "title": "Units of K Depend on \u0394n \u2014 Don't Compare Across Reactions",
+      "text": "K = 100 mol dm\u207b\u00b3 (units) is NOT necessarily 'stronger' than K = 2 (dimensionless) because their units differ. Always check \u0394n and units before comparing K values across different reactions."
+    }
+  ],
+  "note_4_13_7.js": [
+    {
+      "style": "warning",
+      "title": "Only Sparingly Soluble Compounds",
+      "text": "Solubility products apply ONLY to sparingly soluble ionic compounds. You cannot effectively use Ksp for highly soluble salts like NaCl because ion interactions interfere with the simplified equilibrium model."
+    },
+    {
+      "style": "key",
+      "title": "Why No Solid in Ksp",
+      "text": "The concentration (density) of a pure solid is constant. It's incorporated into the Ksp value itself. This is why Ksp = [Ba\u00b2\u207a][SO\u2084\u00b2\u207b], NOT Ksp = [Ba\u00b2\u207a][SO\u2084\u00b2\u207b]/[BaSO\u2084]."
+    }
+  ],
+  "note_4_13_8.js": [
+    {
+      "style": "warning",
+      "title": "Unit Conversion Essential",
+      "text": "Solubility MUST be converted to mol dm\u207b\u00b3 before calculating Ksp. If given in g dm\u207b\u00b3, divide by molar mass first. Calculator error with scientific notation when squaring (3.42 \u00d7 10\u207b\u2074)\u00b2 \u2014 always use brackets."
+    },
+    {
+      "style": "tip",
+      "title": "Reverse Ksp Calculations: 's' Variable Setup",
+      "text": "Let solubility = s mol dm\u207b\u00b3. For Mg(OH)\u2082, [Mg\u00b2\u207a] = s, [OH\u207b] = 2s. Substitute into Ksp = [Mg\u00b2\u207a][OH\u207b]\u00b2 = s(2s)\u00b2 = 4s\u00b3. Master this algebra \u2014 it appears frequently in exams."
+    }
+  ],
+  "note_4_13_9.js": [
+    {
+      "style": "key",
+      "title": "Common Ion Effect: Le Chatelier Explanation Required",
+      "text": "Adding NaCl to a PbCl\u2082 saturated solution increases [Cl\u207b]. By Le Chatelier, equilibrium shifts LEFT to reduce this increase, forming more solid PbCl\u2082 and reducing its solubility. State both mechanism (Le Chatelier) and the direction (left) for full marks."
+    },
+    {
+      "style": "warning",
+      "title": "Common Ion Assumption in Calculations",
+      "text": "In Ksp calculations with common ion, assume [Cl\u207b] \u2248 0.100 mol dm\u207b\u00b3 (from added salt) and ignore the tiny amount from PbCl\u2082 dissolution. This simplification is valid because Ksp is very small. If you do not make this assumption, you get a cubic equation beyond A-level scope."
+    }
+  ],
+  "note_4_14_0.js": [
+    {
+      "style": "warning",
+      "title": "Identifying Acid/Base: Sequential Steps Critical",
+      "text": "Problem: Students identify acid/base randomly. Solution: (1) Write full equation. (2) Find species losing H\u207a \u2192 acid. (3) Find species gaining H\u207a \u2192 base. (4) Conjugate pairs differ by one H\u207a. Follow these steps religiously."
+    },
+    {
+      "style": "tip",
+      "title": "Amphoteric Species Are Everywhere",
+      "text": "Water, HCO\u2083\u207b, HSO\u2084\u207b, amino acids can all act as both acid and base. In an exam, if asked to identify the role of water in a reaction, always consider: is it donating H\u207a (acid) or accepting H\u207a (base)? Context matters."
+    }
+  ],
+  "note_4_14_1.js": [
+    {
+      "style": "key",
+      "title": "Strong Acid \u2192 Weak Conjugate Base (Inverse Relationship)",
+      "text": "HCl is a very strong acid; its conjugate base Cl\u207b is extremely weak (inert, does not accept H\u207a). Conversely, CH\u2083COOH is weak; its conjugate base CH\u2083COO\u207b is relatively strong. This inverse relationship comes from equilibrium: if forward reaction heavily favours products, reverse does not."
+    },
+    {
+      "style": "tip",
+      "title": "Polyprotic Acids: HSO\u2084\u207b Appears Twice",
+      "text": "In H\u2082SO\u2084 \u2192 HSO\u2084\u207b \u2192 SO\u2084\u00b2\u207b, the HSO\u2084\u207b is BOTH the conjugate base of H\u2082SO\u2084 AND the conjugate acid of SO\u2084\u00b2\u207b. This makes it amphoteric. Exams test this concept \u2014 students miss it if not careful."
+    }
+  ],
+  "note_4_14_2.js": [
+    {
+      "style": "warning",
+      "title": "Exam Definition of pH: Write the Expression, Not Words",
+      "text": "If asked to define pH in an exam, write: pH = \u2212log\u2081\u2080[H\u207a]. Do NOT try to define it in words \u2014 examiners reject worded definitions if details are missed. The expression is unambiguous."
+    },
+    {
+      "style": "key",
+      "title": "Negative pH is Real and Valid",
+      "text": "pH = \u2212log[H\u207a]. If [H\u207a] > 1 mol dm\u207b\u00b3, then pH is negative (e.g., 2 mol dm\u207b\u00b3 HCl gives pH = \u22120.30). In exams, negative pH answers are fully acceptable if calculations support them. Students often panic thinking it's an error."
+    }
+  ],
+  "note_4_14_3.js": [
+    {
+      "style": "warning",
+      "title": "Strength vs Concentration: Do NOT Confuse",
+      "text": "Strength (strong/weak) = % of acid molecules that ionise. Concentration (concentrated/dilute) = total amount dissolved. You can have concentrated weak acid (glacial ethanoic acid, ~17 mol dm\u207b\u00b3, barely ionised) or dilute strong acid (0.0001 M HCl, fully ionised). Examiners specifically mark confusion between these."
+    },
+    {
+      "style": "tip",
+      "title": "Degree of Dissociation \u03b1 Increases with Dilution",
+      "text": "Dilution shifts weak acid equilibrium right (Le Chatelier), increasing \u03b1. A 0.01 M weak acid has higher \u03b1 than 0.1 M. This means dilute weak acids are actually more dissociated (by percentage) \u2014 counterintuitive but crucial."
+    }
+  ],
+  "note_4_14_4.js": [
+    {
+      "style": "warning",
+      "title": "Two Assumptions for Weak Acid Simplification (EXAM FAVOURITE)",
+      "text": "Assumption 1: [HA]eq \u2248 [HA]initial (because dissociation is < 5%). Assumption 2: All H\u207a comes from the weak acid (water contribution negligible). BOTH must be verified. After solving [H\u207a] = \u221a(Ka \u00d7 c), CHECK: [H\u207a]/c \u00d7 100 < 5%. If not, solve the quadratic."
+    },
+    {
+      "style": "key",
+      "title": "No Approximation Allowed if Non-Weak Acid",
+      "text": "If Ka > 10\u207b\u2074 or concentration < 0.01 M, the approximation fails. You must solve the quadratic Ka = x\u00b2/(c\u2212x) without simplification. Exams test this \u2014 students blindly use \u221a(Ka\u00d7c) and get marked down."
+    }
+  ],
+  "note_4_14_5.js": [
+    {
+      "style": "warning",
+      "title": "Exam Language Trap: 'Minimises' NOT 'Prevents'",
+      "text": "Incorrect: 'A buffer prevents pH change.' Correct: 'A buffer minimises (or resists / keeps roughly constant) significant changes in pH.' Examiners deduct marks for 'prevents' \u2014 the pH DOES change, just by very little."
+    },
+    {
+      "style": "key",
+      "title": "Buffer Mechanism: Le Chatelier in Action",
+      "text": "If acid (H\u207a) is added \u2192 A\u207b + H\u207a \u2192 HA consumes the added H\u207a. If base (OH\u207b) is added \u2192 HA + OH\u207b \u2192 A\u207b + H\u2082O consumes the base. The buffer works by having large reservoirs of BOTH HA and A\u207b to neutralise small additions of acid or base."
+    }
+  ],
+  "note_4_14_6.js": [
+    {
+      "style": "key",
+      "title": "Equivalence \u2260 pH 7 (Except Strong+Strong)",
+      "text": "Strong acid + strong base \u2192 equivalence at pH 7. Weak acid + strong base \u2192 equivalence at pH > 7 (salt is weak base). Strong acid + weak base \u2192 equivalence at pH < 7 (salt is weak acid). Weak+weak \u2192 NO sharp equivalence point. Exams test selection of wrong indicator."
+    },
+    {
+      "style": "warning",
+      "title": "Indicator Selection: Match to Steep Region",
+      "text": "For weak acid + strong base (equivalence ~pH 9), use phenolphthalein (pH 8.3\u201310.0), NOT methyl orange (pH 2.7\u20134.7). Methyl orange changes colour way below the steep section where it's useless. Students pick indicators by name, not pH range \u2014 leading mistake."
+    }
+  ],
+  "note_4_14_7.js": [
+    {
+      "style": "key",
+      "title": "Half-Neutralisation: [HA] = [A\u207b] \u2192 Ka = [H\u207a]",
+      "text": "At half-neutralisation, exactly half the acid is converted to salt. [HA] = [A\u207b]. From Ka = [H\u207a][A\u207b]/[HA], the [A\u207b]/[HA] term = 1, so Ka = [H\u207a]. Therefore [H\u207a] = Ka, and Ka can be calculated directly from pH measurement. This is the trick to CP11."
+    },
+    {
+      "style": "tip",
+      "title": "CP11 Method: Add Acid After Titration",
+      "text": "Titrate to equivalence with NaOH (equivalence volume = V_eq noted). Then pipette a FURTHER 25 cm\u00b3 of the ORIGINAL ethanoic acid into the same flask. At this point, [HA] = [A\u207b] because exactly half the original acid is now unreacted, and half is neutralised salt. Measure pH \u2192 Ka = 10^(\u2212pH)."
+    }
+  ],
+  "note_4_15_0.js": [
+    {
+      "style": "warning",
+      "title": "Chiral Centre: Four DIFFERENT Groups Required",
+      "text": "99% of student errors: identifying chiral centres with identical groups. If two groups are the same (e.g., two CH\u2083 groups), the carbon is NOT chiral, even if bonded to four different elements. Check for identical groups carefully \u2014 this is THE most common mistake."
+    },
+    {
+      "style": "key",
+      "title": "Wedge/Hash Bonds Must Show 3D Arrangement",
+      "text": "Wedge (\u25b2) = coming out of paper. Hash (\u22ef) = going into paper. These MUST be drawn at chiral centres to show 3D arrangement, or you cannot identify enantiomers. Students draw flat structures and miss stereochemistry entirely."
+    }
+  ],
+  "note_4_15_1.js": [
+    {
+      "style": "warning",
+      "title": "Racemate Exam Definition: Equimolar 50:50",
+      "text": "Exam definition: 'A racemic mixture is an equimolar (50:50) mixture of the two enantiomers.' You must use the word 'equimolar' or 'equal amounts' \u2014 vague definitions lose marks. Shows NO optical activity in polarimeter because rotations cancel."
+    },
+    {
+      "style": "key",
+      "title": "Thalidomide: Drug Chirality Matters (Clinical Importance)",
+      "text": "Thalidomide was sold as a racemate. One enantiomer stopped nausea (therapeutic). The other caused severe birth defects (teratogenic). Taken in first trimester (when limbs form), it caused phocomelia. This tragedy led to strict pharmaceutical regulations requiring separate testing of each enantiomer. Exams ask about this."
+    }
+  ],
+  "note_4_15_2.js": [
+    {
+      "style": "warning",
+      "title": "SN1 Produces Racemic Mixture (Planar Intermediates)",
+      "text": "SN1: carbocation intermediate is sp\u00b2 trigonal planar. Nucleophile attacks equally from above or below \u2192 50% (R) and 50% (S) produced. Starting with pure enantiomer, product shows ZERO optical rotation (racemic). This is diagnostic for SN1."
+    },
+    {
+      "style": "key",
+      "title": "SN2 Produces Inversion (Backside Attack+Umbrella Flip)",
+      "text": "SN2: nucleophile attacks from opposite side of leaving group (backside). Causes three remaining groups to flip like an umbrella (inversion of configuration). (R) \u2192 (S) or vice versa. Optical rotation is equal magnitude but OPPOSITE direction. This proves SN2."
+    }
+  ],
+  "note_4_15_3.js": [
+    {
+      "style": "tip",
+      "title": "Aldehyde vs Ketone Reactivity Difference",
+      "text": "Aldehydes are more reactive than ketones in nucleophilic addition because the aldehyde carbon has only one alkyl group (less steric bulk). Ketone carbon has two alkyl groups (more hindered). This difference is exploited in chemical tests: Tollens and Fehling only oxidise aldehydes under mild conditions."
+    },
+    {
+      "style": "warning",
+      "title": "Functional Group Priority in Naming",
+      "text": "If molecule contains both CHO (aldehyde) and C=O (ketone), name it as an aldehyde (higher priority). The ketone becomes an 'oxo\u2013' prefix. Always check priority: carboxylic acid > aldehyde > ketone > alcohol."
+    }
+  ],
+  "note_4_15_4.js": [
+    {
+      "style": "warning",
+      "title": "A-Level Simplification: Use H\u207b Notation (Not BH\u2084\u207b)",
+      "text": "The real nucleophile in NaBH\u2084 reduction is the BH\u2084\u207b ion, but IAL exams expect the simplified mechanism using H\u207b. Write H\u207b with its lone pair above the symbol (: H\u207b). This is a deliberate simplification to avoid boron chemistry beyond scope. NEVER write H\u207b without the lone pair."
+    },
+    {
+      "style": "key",
+      "title": "Two-Step Workup: Complex Must Be Broken Down",
+      "text": "After NaBH\u2084 reduction, a boron-containing complex forms. Step 2 requires adding water or dilute acid to release the free alcohol. Without this workup, you cannot isolate the product. Exam questions often specify '(i) NaBH\u2084 (ii) water workup' \u2014 both steps essential."
+    }
+  ],
+  "note_4_15_5.js": [
+    {
+      "style": "key",
+      "title": "Carboxylate Ion: Charge Delocalised Over Two C\u2013O Bonds",
+      "text": "RCOOH loses H\u207a \u2192 RCOO\u207b. The negative charge is NOT localised on one oxygen. It spreads equally (resonance) over both C\u2013O bonds (shown as dashed lines). This stabilisation makes carboxylic acids much stronger acids than alcohols (pKa ~4 vs ~16). Resonance delocalisation is the KEY."
+    },
+    {
+      "style": "warning",
+      "title": "COOH Carbon ALWAYS C1 in Numbering",
+      "text": "In nomenclature, the carboxylic acid carbon is always position 1, even if there are double bonds or other functional groups. Students often miscount \u2014 this costs marks. 3-methylbutanoic acid has COOH at C1, methyl at C3 of the chain."
+    }
+  ],
+  "note_4_15_6.js": [
+    {
+      "style": "warning",
+      "title": "Acyl Chlorides: Both Carbonyls AND Haloalkane Properties",
+      "text": "Acyl chlorides (RCOCl) are NOT simple carbonyls. The carbonyl carbon is bonded to BOTH \u03b4\u207b oxygen AND \u03b4\u207b chlorine \u2192 extremely \u03b4\u207a carbon. This makes them FAR more reactive than aldehydes/ketones. They react at room temperature without catalyst. Students incorrectly apply carbonyl chemistry \u2014 acyl chlorides are in a different reactivity league."
+    },
+    {
+      "style": "key",
+      "title": "Nucleophile MUST Have H on Attacking Atom",
+      "text": "Nucleophiles that react with acyl chlorides must be H\u2013O\u2013R (alcohol), H\u2013N\u2013R (amine), or H\u2082O. The H is critical \u2014 it's removed in the final elimination step. Tertiary amines (R\u2083N) do NOT react because they have no H on N. Exam trick question: which amine reacts? Answer: primary/secondary only."
+    }
+  ],
+  "note_4_15_7.js": [
+    {
+      "style": "warning",
+      "title": "Paper Chromatography: Stationary Phase is WATER IN PAPER",
+      "text": "THE most common exam trap: 'What is the stationary phase?' Answer: the water trapped within the fibres of the cellulose paper, NOT the paper itself. The paper is just a support. Mobile phase = the solvent travelling up. This distinction appears in mark schemes."
+    },
+    {
+      "style": "key",
+      "title": "TLC Separation Via Adsorption (Not Partition)",
+      "text": "Paper uses partition (polar water vs non-polar solvent). TLC uses adsorption: silica gel has \u2212OH groups that are highly polar. Polar compounds stick to silica (low Rf). Non-polar compounds stay dissolved in solvent (high Rf). Different mechanism, different principle."
+    }
+  ],
+  "note_4_15_8.js": [
+    {
+      "style": "warning",
+      "title": "NMR \u03b4 Axis Increases Right-to-LEFT (Opposite of Normal)",
+      "text": "Unlike normal graphs, the NMR \u03b4 axis increases from RIGHT (\u03b4 = 0) to LEFT (\u03b4 = 200+). Downfield (deshielded) is LEFT. Upfield (shielded) is RIGHT. Students often reverse this and misinterpret spectra. Memorise: LEFT = downfield = high \u03b4 = deshielded (electrons pulled away)."
+    },
+    {
+      "style": "key",
+      "title": "TMS Reference Peak at \u03b4 = 0",
+      "text": "TMS (tetramethylsilane) is the universal reference standard for NMR. Appears at \u03b4 = 0 on all \u00b9H and \u00b9\u00b3C spectra. If you see a peak at the far right edge (\u03b4 \u2248 0), that's TMS \u2014 not part of your sample. Used to calibrate all other signals."
+    }
+  ]
+}

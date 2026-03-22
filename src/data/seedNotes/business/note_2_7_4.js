@@ -16,7 +16,25 @@ export const note_business_2_7_4 = {
     { id: 'enr-t7a-p-mos-pct', type: 'paragraph', data: { text: 'The margin of safety can also be expressed as a <strong>percentage of actual sales</strong>, which makes it easier to compare risk levels across different businesses regardless of size. A margin of safety of 5% is precarious; one of 50% is very comfortable.' } },
     { id: 'enr-t7a-eq-mos-pct', type: 'equation', data: { html: 'Margin of Safety (%) = <span class="nb-frac"><span class="nb-num">Actual Sales − Break-even Sales</span><span class="nb-den">Actual Sales</span></span> × 100', caption: 'Expresses vulnerability as a share of current sales output' } },
     { id: 'enr-t7a-call-ebike', type: 'callout', data: { style: 'worked', title: 'Real Scenario: Electric Bicycle Manufacturer', text: '<p>Annual fixed costs: £42,000 | Selling price: £750 | Variable cost: £350 | Units sold: 240</p><ul><li>Contribution = £750 − £350 = £400</li><li>Break-even = £42,000 ÷ £400 = <strong>105 units</strong></li><li>Margin of safety = 240 − 105 = <strong>135 units</strong></li><li>Margin of safety (%) = (135 ÷ 240) × 100 = <strong>56.25%</strong> — a very comfortable buffer against falling demand.</li></ul>' } },
-    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Relatable Example: Phone Case Side Hustle', text: 'You sell hand-painted phone cases online. Your break-even is 30 cases per month; last month you sold 45. Margin of safety = 45 − 30 = <strong>15 cases</strong>. That means you could afford to lose up to 15 sales — perhaps because a competitor launched a similar product — before you start making a loss. Use this figure to decide whether offering a discount promo is safe.' } }
+    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Relatable Example: Phone Case Side Hustle', text: 'You sell hand-painted phone cases online. Your break-even is 30 cases per month; last month you sold 45. Margin of safety = 45 − 30 = <strong>15 cases</strong>. That means you could afford to lose up to 15 sales — perhaps because a competitor launched a similar product — before you start making a loss. Use this figure to decide whether offering a discount promo is safe.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Margin of safety = (expected sales \u2212 break-even sales) \u00f7 expected sales \u00d7 100%. High margin (e.g., 50%) = safer; low margin (e.g., 5%) = risky. In evaluation questions, use margin of safety to assess business resilience to demand shocks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Forgetting that margin of safety assumes break-even is static. If fixed costs or variable costs change, break-even shifts, and margin of safety recalculates. Don't assume MOS is constant across scenarios; recalculate for each case."
+      }
+    }
   ],
   recall: {
     enabled: true,

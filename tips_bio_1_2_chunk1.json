@@ -1,0 +1,122 @@
+{
+  "note_1_2_0.js": [
+    {
+      "style": "warning",
+      "title": "Apply ALL THREE Factors of Fick's Law",
+      "text": "Examiners deduct marks if you mention only one or two of Fick's Law factors (surface area, concentration gradient, thickness). Always state explicitly: rate ∝ (SA × ΔC) / thickness. This is critical for explaining any gas exchange scenario."
+    },
+    {
+      "style": "warning",
+      "title": "Link Theory to Real Biology",
+      "text": "Don't just recite Fick's Law mathematically. Show how it explains why organisms need adaptations: single-celled organisms don't need lungs (small size = large SA:V), but large organisms do."
+    }
+  ],
+  "note_1_2_1.js": [
+    {
+      "style": "warning",
+      "title": "TWO Layers of Squamous Epithelium, Not One",
+      "text": "A common error: saying 'the alveolar wall is one cell thick.' Correct: the diffusion distance spans TWO one-cell-thick layers: the alveolar epithelium AND the capillary endothelium. Both must be thin."
+    },
+    {
+      "style": "warning",
+      "title": "Gradient Maintenance Requires BOTH Ventilation and Blood Flow",
+      "text": "Examiners expect you to explain HOW the steep gradient is maintained: ventilation removes CO₂-rich air AND brings fresh O₂; blood flow removes oxygenated blood AND brings deoxygenated blood. Only mentioning one is incomplete."
+    }
+  ],
+  "note_1_2_2.js": [
+    {
+      "style": "warning",
+      "title": "Connect CF to Fick's Law Directly",
+      "text": "Don't just describe CF symptoms. Show how thick mucus reduces diffusion rate: (1) blocks airflow → reduced SA, (2) sits on alveolar walls → increased diffusion distance. This demonstrates mastery of the principle."
+    },
+    {
+      "style": "warning",
+      "title": "Bacterial Infection is Secondary, But Damaging",
+      "text": "The infection itself further damages lung tissue, creating a vicious cycle. Exam questions often ask 'Why do CF patients eventually have severe lung damage?' – the answer extends beyond thick mucus to infection-driven tissue destruction."
+    }
+  ],
+  "note_1_2_3.js": [
+    {
+      "style": "warning",
+      "title": "Cholesterol Restricts MOVEMENT, Not Permeability",
+      "text": "Critical misconception: 'Cholesterol makes the membrane less permeable.' WRONG. Cholesterol restricts the MOVEMENT/FLUIDITY of phospholipids but does NOT block passage of molecules. It stabilizes the membrane at higher temperatures."
+    },
+    {
+      "style": "warning",
+      "title": "Integral vs Peripheral Proteins Have Different Functions",
+      "text": "Integral proteins span the bilayer and act as channels/carriers. Peripheral proteins sit on the surface and often provide structural support. Examiners expect you to distinguish these roles when describing membrane proteins."
+    }
+  ],
+  "note_1_2_4.js": [
+    {
+      "style": "warning",
+      "title": "Simple Diffusion: Only Non-Polar Molecules",
+      "text": "Common error: saying glucose uses simple diffusion. FALSE. Only small, non-polar molecules (O₂, CO₂, lipids) cross directly. Glucose is polar and MUST use facilitated diffusion via protein carriers."
+    },
+    {
+      "style": "warning",
+      "title": "Osmosis Definition Must Reference Water Potential",
+      "text": "Saying 'water moves to high concentration' is imprecise. Correct: water moves from higher (less negative) water potential to lower (more negative) water potential across a partially permeable membrane. The terminology matters in exams."
+    }
+  ],
+  "note_1_2_5.js": [
+    {
+      "style": "warning",
+      "title": "Active Transport REQUIRES ATP \u2013 State This First",
+      "text": "This is the defining feature. Always explicitly state: active transport moves substances AGAINST their gradient and requires ATP from respiration. Missing 'requires ATP' loses critical marks."
+    },
+    {
+      "style": "warning",
+      "title": "Both Endo- and Exocytosis Are Active: They Require ATP",
+      "text": "Students sometimes forget that bulk transport isn't 'free.' Endocytosis: membrane engulfs material (ATP-driven). Exocytosis: vesicles fuse and expel contents (ATP-driven). Both require energy; mention this explicitly."
+    }
+  ],
+  "note_1_2_6.js": [
+    {
+      "style": "warning",
+      "title": "Water Moves to LOWER (More Negative) Potential, Not Higher Concentration",
+      "text": "Exam pitfall: stating 'water moves toward salt' is sloppy. Be precise: water moves from \u03a8 \u2248 0 (pure) toward \u03a8 < 0 (salty). Using 'water potential' language demonstrates A-Level understanding."
+    },
+    {
+      "style": "warning",
+      "title": "Plasmolysis is Reversible in Living Plant Cells",
+      "text": "When examiners ask about plasmolysis, clarify: in concentrated solution, the protoplasm shrinks away from the cell wall. If returned to dilute solution, the cell can recover (reversible plasmolysis). This shows understanding of osmotic mechanisms."
+    }
+  ],
+  "note_1_2_7.js": [
+    {
+      "style": "warning",
+      "title": "Always Mention the R Group Varies \u2013 This Creates Diversity",
+      "text": "When describing amino acid structure, don't just list the four groups. Emphasize: the R group differs between the ~20 amino acids, and THIS is what gives proteins their unique properties and functions."
+    },
+    {
+      "style": "warning",
+      "title": "Peptide Bond Forms Between Specific Groups",
+      "text": "State precisely: carboxyl group (-COOH) of ONE amino acid reacts with amine group (-NH\u2082) of ANOTHER via condensation, releasing H\u2082O and forming a C-N covalent bond. Vague descriptions lose marks."
+    }
+  ],
+  "note_1_2_8.js": [
+    {
+      "style": "warning",
+      "title": "Tertiary Structure: Know All FOUR Bond Types",
+      "text": "Examiners often ask, 'List the bonds holding tertiary structure.' Must name all four: hydrogen bonds, van der Waals forces, ionic bonds, AND disulfide bridges (cvalent S-S). Missing any costs marks. Disulfide bridges are the STRONGEST."
+    },
+    {
+      "style": "warning",
+      "title": "Do Not Confuse H-Bonds at Secondary and Tertiary Levels",
+      "text": "Secondary: H-bonds form in the backbone (C=O to N-H in the chain). Tertiary: H-bonds form in R-groups. This distinction is critical; vague language ('H-bonds throughout') suggests misunderstanding."
+    }
+  ],
+  "note_1_2_9.js": [
+    {
+      "style": "warning",
+      "title": "Use 'Induced Fit Model,' Not 'Lock and Key'",
+      "text": "Modern syllabi expect the induced fit model. State: the active site is not rigid; it molds around the substrate as it binds, straining the substrate bonds. Simply writing 'lock and key' suggests outdated knowledge."
+    },
+    {
+      "style": "warning",
+      "title": "Enzymes Lower Activation Energy Without Being Consumed",
+      "text": "Examiners test whether you understand: enzymes speed reactions by reducing the energy needed (lowering activation energy) and are NOT used up\u2014they can catalyse many cycles. Both parts are exam-essential."
+    }
+  ]
+}

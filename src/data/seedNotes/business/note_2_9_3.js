@@ -128,6 +128,24 @@ export const note_business_2_9_3 = {
       id: "sum-2-9-3",
       type: "summary",
       data: { text: "A firm aims for productive efficiency at the minimum efficient scale to keep average costs as low as possible without tipping into diseconomies of scale." }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Draw the relationship: as scale increases, fixed costs spread across more units \u2192 average cost falls (economies of scale) until minimum efficient scale is reached. Beyond that, diseconomies of scale kick in (management becomes unwieldy)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming bigger is always better. Many industries have optimal scale-specific sizes: small craft breweries can outcompete big breweries by targeting premium niches. Don't conflate economies of scale with competitive advantage."
+      }
     }
   ],
   recall: {

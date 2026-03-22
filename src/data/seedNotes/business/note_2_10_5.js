@@ -99,7 +99,7 @@ export const note_business_2_10_5 = {
     {
       id: 'enr-t10a-p-gdpr',
       type: 'paragraph',
-      data: { text: 'The <b>General Data Protection Regulation (GDPR)</b> came into force in May 2018 and is now embedded in UK law as the UK GDPR. It requires businesses to: obtain clear informed consent before collecting personal data; store data securely; allow individuals to access, correct or delete their data (the \"right to erasure\"); and report data breaches within 72 hours. Non-compliance is enforced by the <b>Information Commissioner\'s Office (ICO)</b>, which can fine firms up to £17.5m or 4% of global annual turnover — whichever is greater. GDPR transformed data handling from a technical IT concern into a core legal and strategic obligation for all consumer-facing businesses.' }
+      data: { text: 'The <b>General Data Protection Regulation (GDPR)</b> came into force in May 2018 and is now embedded in UK law as the UK GDPR. It requires businesses to: obtain clear informed consent before collecting personal data; store data securely; allow individuals to access, correct or delete their data (the "right to erasure"); and report data breaches within 72 hours. Non-compliance is enforced by the <b>Information Commissioner\'s Office (ICO)</b>, which can fine firms up to £17.5m or 4% of global annual turnover — whichever is greater. GDPR transformed data handling from a technical IT concern into a core legal and strategic obligation for all consumer-facing businesses.' }
     },
     {
       id: 'enr-t10a-p-digital',
@@ -121,13 +121,31 @@ export const note_business_2_10_5 = {
       data: {
         style: 'tip',
         title: 'Student-Relatable: Setting Up a Tutoring Business',
-        text: 'If you earn more than <b>£1,000/year</b> from tutoring or any side business, HMRC requires you to register for <b>Self Assessment</b> and declare the income. You must keep records of all earnings, file an annual tax return and pay income tax on profits above the personal allowance (~£12,570). Consumer law also applies: if you advertise \"guaranteed A* results\", you must substantiate the claim — otherwise it likely breaches the Consumer Protection from Unfair Trading Regulations 2008. Legal compliance affects entrepreneurs at every scale, including A-Level students running revision sessions.'
+        text: 'If you earn more than <b>£1,000/year</b> from tutoring or any side business, HMRC requires you to register for <b>Self Assessment</b> and declare the income. You must keep records of all earnings, file an annual tax return and pay income tax on profits above the personal allowance (~£12,570). Consumer law also applies: if you advertise "guaranteed A* results", you must substantiate the claim — otherwise it likely breaches the Consumer Protection from Unfair Trading Regulations 2008. Legal compliance affects entrepreneurs at every scale, including A-Level students running revision sessions.'
       }
     },
     {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'The Consumer Rights Act 2015 requires goods to be of satisfactory quality, fit for purpose and as described. Non-compliance risks fines, legal action and reputational damage. While compliance adds costs (quality control, returns processes), it also builds consumer trust and long-run brand loyalty. The CMA and ASA enforce consumer protection standards.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Name specific consumer laws (Consumer Rights Act 2015, distance selling regulations) and explain the business benefit: compliance builds trust and reduces costly complaints/refunds. Frame regulation as both constraint AND competitive advantage."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often present regulation as purely a cost burden. Overlook how consumer protection can differentiate a firm (e.g., strong consumer guarantees = higher prices justified, attracts quality-conscious customers). Balance cost vs. benefit."
+      }
     }
   ],
   recall: {

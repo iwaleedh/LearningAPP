@@ -1,0 +1,94 @@
+src/data/seedNotes/economics/note_economics_2_10_0.js
+Title: The Circular Flow of Income
+---
+src/data/seedNotes/economics/note_economics_2_10_1.js
+Title: Income vs Wealth
+---
+src/data/seedNotes/economics/note_economics_2_10_2.js
+Title: Injections and Withdrawals
+---
+src/data/seedNotes/economics/note_economics_2_10_3.js
+Title: Equilibrium Real Output
+---
+src/data/seedNotes/economics/note_economics_2_10_4.js
+Title: The Multiplier Process
+---
+src/data/seedNotes/economics/note_economics_2_10_5.js
+Title: MPC, MPS, MPT and MPM
+---
+src/data/seedNotes/economics/note_economics_2_10_6.js
+Title: Multiplier Formulae
+---
+src/data/seedNotes/economics/note_economics_2_10_7.js
+Title: The Multiplier Process
+---
+src/data/seedNotes/economics/note_economics_2_11_0.js
+Title: Actual vs Potential Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_1.js
+Title: AD-Driven Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_2.js
+Title: Export-Led Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_3.js
+Title: FDI and Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_4.js
+Title: Innovation and Productivity
+---
+src/data/seedNotes/economics/note_economics_2_11_5.js
+Title: Labour Force and Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_6.js
+Title: Benefits of Economic Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_7.js
+Title: Costs of Economic Growth
+---
+src/data/seedNotes/economics/note_economics_2_11_8.js
+Title: Positive and Negative Output Gaps
+---
+src/data/seedNotes/economics/note_economics_2_11_9.js
+Title: Why Output Gaps Are Hard to Measure
+---
+src/data/seedNotes/economics/note_economics_2_12_0.js
+Title: The Main Macroeconomic Objectives
+---
+src/data/seedNotes/economics/note_economics_2_12_1.js
+Title: Current Account Objective
+---
+src/data/seedNotes/economics/note_economics_2_12_10.js
+Title: Monetary Policy Tools
+---
+src/data/seedNotes/economics/note_economics_2_12_11.js
+Title: Roles of the Central Bank
+---
+src/data/seedNotes/economics/note_economics_2_12_12.js
+Title: Evaluating Fiscal Policy
+---
+src/data/seedNotes/economics/note_economics_2_12_2.js
+Title: Income Equality Objective
+---
+src/data/seedNotes/economics/note_economics_2_12_3.js
+Title: Conflicts Between Objectives
+---
+src/data/seedNotes/economics/note_economics_2_12_4.js
+Title: The Short-Run Phillips Curve
+---
+src/data/seedNotes/economics/note_economics_2_12_5.js
+Title: Supply-Side Policy Overview
+---
+src/data/seedNotes/economics/note_economics_2_12_6.js
+Title: Free-Market Supply-Side Policies
+---
+src/data/seedNotes/economics/note_economics_2_12_7.js
+Title: Interventionist Supply-Side Policies
+---
+src/data/seedNotes/economics/note_economics_2_12_8.js
+Title: Demand-Side Policy Types
+---
+src/data/seedNotes/economics/note_economics_2_12_9.js
+Title: Fiscal Policy Instruments
+---
+

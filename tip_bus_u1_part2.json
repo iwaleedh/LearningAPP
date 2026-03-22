@@ -1,0 +1,362 @@
+{
+  "src/data/seedNotes/business/note_1_4_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Link the employee-as-cost view to short-term profit maximisation and the employee-as-asset view to long-term competitive advantage. Examiners expect you to evaluate which approach suits different business contexts — cost minimisation in low-skill roles, asset investment in knowledge-intensive sectors."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume one view is 'correct' — both have merit depending on context. Statements like 'employees should always be viewed as assets' lack nuance. Edexcel expects you to weigh trade-offs: asset investment requires high capital, longer payback periods, and risk of losing trained staff to competitors."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Use Handy's four-leaf clover diagram to structure answers — Core Workers (permanent, full-time), Peripheral Workers (part-time, temporary), Contractual (outsourced), and Flexible (seasonal, temporary). This framework demonstrates knowledge of modern workforce composition and why businesses adopt flexible models."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse 'flexible working' (remote work, flexible hours) with 'flexible workforce' (portfolio of different contract types). A flexible workforce includes zero-hours workers and contractors; flexible working is about when/where permanent staff work. Don't mix these up or lose marks for imprecision."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel exam questions often ask 'how could the business avoid an unfair dismissal claim?' Focus on fair procedures: written warning, investigation period, right to appeal, and documentation. Show that you understand legal risk and mitigation; examiners reward practical awareness of employment law."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Redundancy ≠ Dismissal. Redundancy occurs when the job ceases to exist (not the employee); dismissal is ending employment due to misconduct or capability. Confusing these costs marks — redundancy requires compensation, but dismissal for misconduct may not. Know the legal distinction and cost implications."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Reference contemporary UK union decline (c. 23% of workforce) and why — shift to service sector, anti-union legislation, globalisation. Examiners reward awareness of real-world context. Also distinguish collective bargaining power: nurses (critical service) have more leverage than retail workers (replaceable supply)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume strikes always succeed or benefit unions — calculate costs: production loss, reputation damage, scab labour. In many cases, striking workers lose more in wages foregone than they win. Show critical evaluation: industrial action is a strategic gamble, not automatic leverage."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Compare recruitment methods using cost-per-hire and time-to-productivity metrics. Examiners expect numerical justification: interviews cost £200, assessment centres £5,000+, tests £100. Link method choice to role criticality — assess centres justified for senior roles; not for mass fast-food recruitment."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't recommend assessment centres universally — they carry high sunk cost per candidate and only recover through low turnover. For high-turnover roles (retail, hospitality) they're financially irrational. Match method to labour market context: tight labour market needs fast, cheap interviews; buyer's market allows luxury screening."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Map training choice to business need: induction (on-the-job), technical skills (off-the-job classroom), management (mixed). Show ROI calculation — training cost vs productivity gain vs likelihood of staff leaving before payback. Edexcel expects you to weigh immediate production loss (off-the-job) against long-term capability gains."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't ignore opportunity cost of off-the-job training — production loss while staff attend courses, trainer cost, venue hire. On-the-job looks cheaper but may embed poor practices. Show you've calculated total cost-of-ownership: a £2k course is actually £2k + (output loss during training) + (trainer time)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Match structure to business strategy: flat structures suit fast-moving innovation startups (Apple); tall hierarchies suit regulated/compliance-heavy sectors (banking, NHS). Matrix structures work in project-based firms (consulting, engineering). Show you understand structure as a strategic choice, not arbitrary design."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume flat = always better — flat structures slow decision-making on consistency (no clear owner), harm accountability, and limit promotion pathways (staff leave). Matrix creates dual reporting lines causing conflict. Evaluate trade-offs explicitly: speed vs clarity, empowerment vs chaos."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Delayering reduces management layers to cut cost and speed communication, but examiners expect you to flag risks: loss of middle-management expertise, fewer promotion opportunities reduce retention, and remaining managers overstretched. Show balanced evaluation of cost savings vs operational risk."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Span of control too wide causes poor supervision and low morale; too narrow wastes money on excess managers. Don't just list concepts — show the trade-off. A span of 5 (narrow) = slow but clear; span of 15 (wide) = fast but risky. Context matters: span of 15 works for routine roles (call centre) not skilled roles (engineers)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "The Edexcel spec requires all four theories. Examiners test application: Taylor (money) → factory line, Maslow (hierarchy) → creative agency needs autonomy, Herzberg (hygiene vs motivation) → identify what actually drives your sector, McGregor (X vs Y) → management style choice. Answer: 'which theory applies here?' not 'which is best?'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't mix Taylor with Maslow — they're fundamentally incompatible. Taylor assumes money alone motivates; Maslow says money only matters until basic needs are met, then esteem and self-actualisation drive. Similarly, don't assume all workers are Theory Y (self-motivated); some genuinely prefer Theory X (clear direction). Show contextual application."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_9.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Performance-related pay (PRP) and piece-rate suit sales and manufacturing (measurable output); bonus and profit-sharing suit team-based roles (cooperation). Examiners expect you to justify method choice with output metric: 'piece-rate works because output is easily measurable' or 'PRP fails in customer service because quality is hard to quantify.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "PRP looks good but kills collaboration — sales teams compete instead of share leads. Piece-rate encourages quantity over quality, requiring inspection costs. Time-rate appears cheap but enables low productivity and 'working to the clock.' Don't list methods without critically evaluating hidden costs: demotivation, quality loss, administration burden."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_10.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Link each method to motivation theory: empowerment and delegation satisfy McGregor's Theory Y and Maslow's esteem/self-actualisation needs; job rotation prevents boredom in routine work; teamwork satisfies belonging needs. Show you understand the 'why' behind each method, not just definitions. Examiners reward theory-practice integration."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Flexible working looks universally positive but creates hidden costs: home workers miss informal mentoring and promotion visibility; job rotation requires retraining time; empowerment fails if employees lack skills or confidence. Don't assume non-financial methods are 'better' than financial — they complement, never replace, fair wages."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_4_11.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Link leadership style to context: Democratic in knowledge work (software engineers want input), Autocratic in crisis or compliance (military, emergency services), Laissez-faire in highly creative teams (artists, researchers), Paternalistic in traditional/family businesses. Show situational awareness — 'the best style depends on...' scores higher than ranking them."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume Democratic is always 'better' — it's slow and doesn't suit all workers. Some employees feel empowered by clear direction (Autocratic); others thrive on autonomy. Theory Y (McGregor) assumes workers want responsibility; in reality, some prefer not to. Evaluate fit with workforce psychology and task complexity, not ideology."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Entrepreneurship = innovation + risk-taking + resource assembly, not just 'running a business.' Distinguish from management: managers execute existing strategy; entrepreneurs create new ventures and bear uncertainty. Edexcel expects you to define precisely and show you understand the unique characteristics and personal qualities required."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't overstate success rates — approximately 50% of new businesses fail within 5 years. Avoid romanticizing entrepreneurship; it's high-risk with no guaranteed income, long working hours, and psychological stress. Show critical evaluation: entrepreneurship suits some temperaments and contexts, not everyone. Acknowledge selection bias in 'success stories.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Intrapreneurship = entrepreneurship within a large firm; Google's 20% time and 3M's innovation labs are classic examples. Benefits both: employee retains job security + investment capital; firm retains talent + innovation. Examiners reward specific examples and clear understanding of the risk-sharing model versus solo entrepreneurship."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't confuse intrapreneurship with entrepreneurship — intrapreneurship is lower-risk (corporate safety net) and lower-reward (employer owns IP); entrepreneurship is high-risk, high-reward. Ideas fail faster in corporates due to bureaucracy. Show you understand it's a hybrid model, not 'entrepreneurship with a salary.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Tailor barriers to sector: pharmaceuticals face IP and regulatory barriers; ice cream faces minimal barriers. Capital requirements, economies of scale, brand loyalty, and supplier power vary by industry. Examiners expect you to analyze which barriers apply specifically, not list generically. Evaluate which barriers are highest-cost to overcome."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume capital is the only barrier — brand loyalty (e.g., Coca-Cola in soft drinks) and supplier contracts (exclusive distribution deals) can be as or more restrictive. Also, some barriers can be bypassed: low-cost airlines didn't compete on infrastructure (planes exist), just on cost model. Show strategic thinking about barrier bypass routes."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Examiners expect you to distinguish financial motives (profit, wealth creation) from non-financial motives (independence, belief in product, lifestyle flexibility). Show depth: 'independence' means freedom from corporate politics; 'lifestyle' means choosing hours/location over maximizing profit. Use specific language; avoid 'making money' — everyone does that."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume income grows immediately — first-year earnings often lag prior salary due to startup costs and low revenue. Lifestyle entrepreneurs may willingly earn less for flexibility. Risk of business failure means actual expected income = (probability of success × profit) + (probability of failure × salvage value) — usually <0 in year 1."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Key traits: risk tolerance, persistence through failure, problem-solving mindset, drive, innovation orientation. Rather than listing traits, show how they interact: high risk tolerance + low persistence = recklessness; high persistence + low risk tolerance = missing opportunities. Examiners reward nuanced understanding over trait catalogues."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Traits alone don't guarantee success — market timing, capital access, and luck matter as much or more. Many 'entrepreneurial personalities' fail; many cautious people succeed with good ideas. Don't overstate trait determinism. Show critical awareness: entrepreneurship is necessary but not sufficient for success; context and circumstance matter."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Lifestyle entrepreneurs prioritize flexibility and modest profit; growth entrepreneurs prioritize scaling and profit maximization. These require different strategies: lifestyle entrepreneurs avoid debt and complexity; growth entrepreneurs pursue venture capital and hypergrowth. Show you understand objectives shape structure, hiring, and risk appetite."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Saying 'both matter' is vague. Lifestyle and growth entrepreneurs make opposite choices: lifestyle keeps the business small to maintain control; growth dilutes ownership for expansion capital. These are trade-offs, not compatible goals. Show how a person chooses when they conflict: e.g., 'accept private equity investment (growth) or stay independent (lifestyle).'"
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Business objectives evolve over the lifecycle: startups chase survival (positive cash flow); growth phase pursues market share; mature businesses optimize profit or diversify. Show you understand objectives shape strategy: a startup risks unprofitability for growth; mature firms sacrifice growth for stability. Context drives objectives."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Don't assume profit maximization is always the objective — many businesses satisfy (profit 'enough'), pursue social impact (social enterprises), or optimize for shareholder returns (dividends over reinvestment). Different objectives imply different metrics and strategies. Show you distinguish between stated objectives and revealed preferences (how firms actually allocate capital)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_5_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Opportunity cost = best foregone alternative. For an entrepreneur: salary given up (£30k) + capital deployed elsewhere (£50k, earning say 10% = £5k annual return) + time opportunity (£X hourly rate) = total annual opportunity cost. Examiners expect numerical calculation, not conceptual chat. Show you can quantify the real cost of entry."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students say 'opportunity cost is important' without calculating it. A £50k capital investment carries £5k+ annual opportunity cost (interest/investment returns foregone). Year 1 startup income of £40k looks good until you realize true economic profit = £40k - £30k salary - £5k capital return - £X time = possibly negative. Show you understand real vs accounting profit."
+      }
+    }
+  ]
+}

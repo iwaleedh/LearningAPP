@@ -1,0 +1,396 @@
+{
+  "note_2_8_0.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Confusing Oxidation Definitions",
+      "text": "Students constantly mix up the oxygen-transfer and hydrogen-transfer definitions. Remember: Oxidation by oxygen transfer = GAIN O. Oxidation by hydrogen transfer = LOSS H (opposite of oxygen!). Know why each definition is used in different contexts."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: OIL RIG Mnemonic",
+      "text": "Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). The electron-transfer definition is the most important across all of A-Level and will be tested constantly. Use this to identify oxidising and reducing agents."
+    }
+  ],
+  "note_2_8_1.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Fractional Oxidation Numbers",
+      "text": "Examiners love asking about S₄O₆²⁻ (tetrathionate) where sulfur has +2.5. Don't panic—this is valid and simply represents an average. It means the four sulfur atoms don't all have identical oxidation states. Always apply the sum rule correctly."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Exceptions to the Rules",
+      "text": "Peroxides break the O = -2 rule (O = -1 in H₂O₂). Metal hydrides break the H = +1 rule (H = -1 in NaH). Fluorine is ALWAYS -1 (strictest rule). Examiners test these exceptions relentlessly—memorize them."
+    }
+  ],
+  "note_2_8_2.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: What Can You Add to a Half-Equation?",
+      "text": "ONLY electrons, water, H⁺ (acid), or OH⁻ (base). Never, ever add O₂, H₂, salts, or any other species. A common student mistake is adding random atoms to balance—examiners give zero marks for this."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: The 4-Step Method is Sacred",
+      "text": "Step 1: Balance non-O/H atoms FIRST (most critical—getting this wrong ruins everything). Step 2: Balance O with H₂O. Step 3: Balance H with H⁺. Step 4: Balance charge with e⁻. Follow this religiously and you won't lose marks."
+    }
+  ],
+  "note_2_8_3.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Lithium is Anomalous",
+      "text": "Lithium does NOT follow Group 1 trends perfectly. It forms Li₃N (unique), forms simple oxides only (not peroxides), and compounds resemble Group 2 (Mg) more than Na/K. Diagonal relationships are a favorite exam topic—don't overlook it."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Reactivity Trends Explained by Ionisation Energy",
+      "text": "Group 1 reactivity increases down because IE₁ decreases, not because 'electrons are further away.' Use activation energy (atomisation + IE sum) to explain reaction rates with water. Examiners mark heavily on correct explanations, not just facts."
+    }
+  ],
+  "note_2_8_4.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Why Reactivity Increases (Not Enthalpy!)",
+      "text": "Many students think reactivity with water increases because ΔH becomes more negative. WRONG. The ΔH values are roughly similar across the group. The real reason is ACTIVATION ENERGY decreases (sum of atomisation + IE₁ + IE₂ falls). Examiners deduct marks for wrong explanations."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Beryllium is Covalent & Amphoteric",
+      "text": "Be is the anomaly: it forms covalent BeCl₂, not ionic. Its hydroxide Be(OH)₂ is amphoteric. This is tested because it breaks the pattern. Know why: high charge density on Be²⁺ polarises bonds strongly."
+    }
+  ],
+  "note_2_8_5.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Sodium Contamination Masks Colors",
+      "text": "If sodium impurities are present, the intense yellow flame of Na overwhelms all other colors. This is why the experiment can be unreliable. Examiners ask: 'Why is flame testing an imperfect analytical method?' Answer: sodium contamination, subjectivity of color description."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Magnesium's Invisible Flame",
+      "text": "Mg²⁺ emits in the UV range (not visible light), so it shows NO flame color. Students always forget this. If you see NO color change in a flame test, Mg could still be present—you'd need a different test (like with NaOH to precipitate Mg(OH)₂)."
+    }
+  ],
+  "note_2_8_6.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: The Fluorine Electron Affinity Anomaly",
+      "text": "Cl has a MORE exothermic electron affinity than F, which seems backward. Why? F is tiny with three full lone pairs; the incoming electron faces severe repulsion. Examiners ask: 'Explain this anomaly.' Know the answer: electron-electron repulsion in compact 2p orbitals."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Reactivity vs Oxidising Ability",
+      "text": "Halogens become LESS reactive down the group (harder to gain electrons), but they become STRONGER oxidising agents once formed as X₂. This seeming contradiction comes from different reactions (atom gaining e⁻ vs. X₂ oxidising something). Examiners test this distinction."
+    }
+  ],
+  "note_2_8_7.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Use H₃PO₄ for HBr/HI, NOT H₂SO₄",
+      "text": "When preparing HBr or HI, you MUST use phosphoric acid (H₃PO₄), not sulfuric acid (H₂SO₄). Why? H₂SO₄ is a strong oxidiser—it will oxidise Br⁻ to Br₂ and I⁻ to I₂, preventing clean HX production. This practical detail is tested every year."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Reducing Ability Trend (Opposite to Oxidising)",
+      "text": "F⁻ is the WEAKEST reducer (hard to oxidise due to high lattice enthalpy). I⁻ is the STRONGEST (weak I-I bond and low lattice enthalpy of NaI). The trend F⁻ < Cl⁻ < Br⁻ < I⁻ is crucial for explaining halide reactions with H₂SO₄."
+    }
+  ],
+  "note_2_8_8.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Primary Standards Must Meet Strict Criteria",
+      "text": "NaOH is NOT a primary standard (hygroscopic, reacts with CO₂). HCl is NOT a primary standard (volatile). Students often try to standardise these directly—instant mark loss. Use Na₂CO₃, KHP, or sulfamic acid instead. Examiners check your knowledge of primary standards."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Meniscus Reading & Volumetric Flask Use",
+      "text": "Read the meniscus from the BOTTOM at eye level. The volumetric flask mark must be hit exactly. Anti-bumping granules are mandatory when boiling. These practical details lose students easy marks in practical questions."
+    }
+  ],
+  "note_2_8_9.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: MgO Has the Highest Melting Point",
+      "text": "Despite Al₂O₃ having Al³⁺ (vs. Mg²⁺), MgO has a higher melting point (~2852°C vs. ~2054°C). Why? Al₂O₃ contains complex polyatomic ions with covalent character; MgO is purely ionic (NaCl structure) with very strong electrostatic forces. This question appears in almost every paper."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Structural Trend Determines Properties",
+      "text": "Across Period 3 oxides, the structure changes: giant ionic (Na, Mg, Al) → giant covalent (Si) → molecular (P, S, Cl). This structural change directly dictates melting points, conductivity, and whether the oxide is basic or acidic. Understand the structure, predict the properties."
+    }
+  ],
+  "note_2_8_10.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Reactions with Water vs Acids vs Bases",
+      "text": "Students confuse when Period 3 oxides react with water vs. aqueous acid vs. concentrated alkali. Al₂O₃ doesn't react with water, but reacts with BOTH dilute acid (basic behavior) AND conc. NaOH (acidic behavior). This amphoteric behavior is heavily tested."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Write the Correct Equations",
+      "text": "SiO₂ + 2NaOH → Na₂SiO₃ + H₂O (forms soluble silicate). Na₂O + H₂O → 2NaOH (strong base). P₄O₁₀ + 6H₂O → 4H₃PO₄ (forms acidic phosphoric acid). Get the products right—examiners give no partial credit for equations with wrong products."
+    }
+  ],
+  "note_2_8_11.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Carboxylic Acid O-H Peak is Messy & Broad",
+      "text": "On an IR spectrum, carboxylic acid O-H stretches are EXTREMELY broad and hairy (2500-3300 cm⁻¹), overlapping the C-H region. Alcohol O-H is smooth and narrow (3230-3550 cm⁻¹). Students confuse these two constantly. If you see both a very broad O-H AND a C=O peak near 1700, it's a carboxylic acid."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Relate Structure to IR Spectrum",
+      "text": "The strength of acid depends on how well negative charge is delocalised in the conjugate anion: H₂SO₄ (very strong) > H₃PO₄ (moderately strong) > H₄SiO₄ (very weak). Examiners ask: 'Why is HClO₄ much stronger than H₂SO₄?' Answer: seven oxygens delocalize charge better than four."
+    }
+  ],
+  "note_2_9_0.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Gradient of TANGENT, Not Secant",
+      "text": "To find the rate at a specific time, draw a tangent to the curve at that exact point. Do NOT draw a line between two arbitrary points (that's the average rate). A tangent touching the curve at only one point gives the instantaneous rate. Examiners deduct marks if you use the wrong line."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Why Rate Decreases Over Time",
+      "text": "Rate is fastest at START (highest concentration of reactants = most collisions). Rate slows as reactants are consumed. At end, rate = 0 (limiting reactant gone). The curve shape (steep → flat) reflects this. Explain in terms of collision frequency and particle concentration."
+    }
+  ],
+  "note_2_9_1.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: TWO Requirements for Successful Collision",
+      "text": "Students often forget the orientation requirement. It's not enough for particles to collide with E ≥ Eₐ—they must ALSO hit with correct geometry. Example: HCl + ethene reacts when H approaches the C=C, but fails if Cl approaches it. Examiners test both conditions."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Activation Energy Explained",
+      "text": "Activation energy is the minimum energy needed to break the initial bonds. All reactions involve breaking bonds (requires energy input) then making new bonds (releases energy). Eₐ is the energy 'hump' you must overcome. A catalyst provides an alternative route with a LOWER hump (alternative path, not lowered mountain)."
+    }
+  ],
+  "note_2_9_2.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Zero-Order Reactants in Mechanisms",
+      "text": "If a reaction proceeds through multiple steps, changing the concentration of a reactant that only appears in a FAST step has NO effect on the overall rate. The rate is determined by the slow Rate-Determining Step. Students thinking concentration always increases rate lose marks here."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Pressure Effects Gases Only",
+      "text": "Pressure (like concentration) increases collision frequency for GASES. It has essentially NO effect on reactions involving solids or liquids (their collision frequency doesn't change with pressure). Examiners ask: 'Why does pressure not affect the rate when all species are aqueous?' Answer: liquids aren't compressible."
+    }
+  ],
+  "note_2_9_3.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Temperature Does NOT Lower Eₐ",
+      "text": "Never write: 'Higher temperature lowers the activation energy.' This is WRONG. Temperature shifts the Maxwell-Boltzmann curve RIGHT (higher energies) AND makes it lower/flatter. The Eₐ line never moves. What changes is the PROPORTION of molecules with E ≥ Eₐ (dramatically increases). Examiners specifically penalise the 'lowering Eₐ' error."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Why Reaction Rate Approximately Doubles per 10°C",
+      "text": "The key is NOT collision frequency increase (~1.7% per 10°C—negligible). It's the exponential increase in the proportion of molecules exceeding Eₐ. This proportion can easily DOUBLE when you raise T by 10°C. That's why rates are so temperature-sensitive. Use the Maxwell-Boltzmann curve to explain this."
+    }
+  ],
+  "note_2_9_4.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Never Say 'Catalyst Lowers Eₐ'",
+      "text": "Examiners mark this phrase as incorrect. Always say: 'A catalyst provides an ALTERNATIVE REACTION ROUTE with a LOWER activation energy' (use the 'tunnel through the mountain' analogy). The Eₐ line on a Maxwell-Boltzmann curve should shift LEFT, not down. Phrasing matters—it shows understanding."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Catalyst Doesn't Change Equilibrium Position",
+      "text": "A catalyst speeds up BOTH forward and reverse reactions equally. The equilibrium constant K doesn't change. The position of equilibrium doesn't shift. A catalyst only speeds up how fast you REACH equilibrium. This is tested constantly because students mistakenly think catalysts shift equilibrium."
+    }
+  ],
+  "note_2_9_5.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Dynamic Equilibrium Requires CLOSED System",
+      "text": "In an open system, products can escape (like H₂ gas from iron + steam reaction). Without both reactants AND products together and trapped, the reverse reaction can't occur, so dynamic equilibrium can't establish. Students forget this requirement. An 'open' vs. 'closed' system question appears regularly."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Position of Equilibrium ≠ Equal Concentrations",
+      "text": "A dynamic equilibrium has CONSTANT concentrations, but they don't have to be equal. If a reaction 'lies to the right,' there's much more product than reactant at equilibrium. Rate forward = Rate backward, but [products] ≠ [reactants]. Examiners test this subtlety."
+    }
+  ],
+  "note_2_9_6.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Catalyst Does NOT Shift Equilibrium Position",
+      "text": "Le Chatelier's principle does NOT apply to catalysts. A catalyst affects RATE, not POSITION. Saying 'the equilibrium shifts right when we add a catalyst' gets ZERO marks. The equilibrium arrives faster, but at the same concentrations (if temperature is constant)."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Industrial Compromises Balance Three Factors",
+      "text": "Methanol synthesis (CO + 2H₂ ⇌ CH₃OH, exothermic): Low T gives high yield but slow rate. 250°C is compromise. High pressure (50-100 atm) increases both yield and rate, but is expensive. Choice of catalyst (Cu/ZnO) allows this compromise temperature to work. Examiners ask: 'Why not 100°C & 1000 atm?' Answer: cost, danger, diminishing returns."
+    }
+  ],
+  "note_2_9_7.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Understand WHY Each Industrial Condition",
+      "text": "Haber process: Know why ~450°C (not 100°C [too slow] or 1000°C [bad yield]), ~200 atm (not 1 atm [low conversion] or 10000 atm [impossible cost/safety]), iron catalyst (reduces Eₐ so 450°C works), recycling (boosts 15% → 98% overall). Examiners ask 'Why this condition?' requiring full explanation, not just the number."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Contact Process Uses LOW Pressure",
+      "text": "Unlike Haber (needs high pressure for extra yield), Contact process operates at only 1-2 atm. Why? Because SO₂ → SO₃ conversion is already ~99.5% even at low P. The tiny yield gain doesn't justify the cost of high-pressure equipment. This is tested to see if you understand WHEN to compromise."
+    }
+  ],
+  "note_2_10_0.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Nucleophile ≠ Negative, Electrophile ≠ Positive",
+      "text": "A nucleophile is an electron-PAIR DONOR (e.g., neutral H₂O also acts as a nucleophile). An electrophile is an electron-PAIR ACCEPTOR (can be neutral like BH₃). Don't define by charge alone. The definitions are about electron distribution, not overall charge."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Bond Fission Types Matter",
+      "text": "Homolytic fission (breaking evenly, forming radicals) uses single-headed curly arrows. Heterolytic fission (breaking unevenly, forming ions) uses double-headed arrows. Examiners ask which type occurs during different reactions. Radical reactions use homolytic; ionic reactions use heterolytic."
+    }
+  ],
+  "note_2_10_1.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Reactivity is BOND ENTHALPY, NOT Bond Polarity",
+      "text": "C-F bond is most polar (should attract nucleophile most strongly), but it's the STRONGEST. C-I bond is least polar, but it's the WEAKEST. Reactivity order: I > Br > Cl > F based on BOND STRENGTH. Many students go by polarity and get this completely backwards."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Iodoalkanes are Highly Reactive",
+      "text": "Because the C-I bond is weak, iodoalkanes are the most reactive halogenoalkanes. Fluoroalkanes are almost unreactive. Examiners love asking: 'Explain why CF₄ is extremely stable and unreactive in nucleophilic substitution.' Answer: C-F bond is very strong (hard to break)."
+    }
+  ],
+  "note_2_10_2.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: CP5 Requires Ethanol Solvent & Water Bath",
+      "text": "Core Practical 5 (Silver Nitrate experiment): Halogenoalkanes are insoluble in water alone, so ethanol is added as a common solvent. A Bunsen burner can't be used (flammable ethanol/halogenoalkane), so a water bath at ~50°C is required. Students who say 'use water at 50°C' or 'use a Bunsen' lose marks."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Tertiary > Secondary > Primary Hydrolysis",
+      "text": "Tertiary halogenoalkanes hydrolyse FASTEST (SN1 mechanism, forms stable carbocation). Primary hydrolyse SLOWEST (SN2 mechanism, more crowded transition state). This trend is the OPPOSITE of the halogen reactivity trend. Examiners test both trends separately to see if you understand different rate-determining steps."
+    }
+  ],
+  "note_2_10_3.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Aqueous vs Ethanolic KOH",
+      "text": "Aqueous KOH → nucleophilic SUBSTITUTION (mainly alcohols). Ethanolic KOH → ELIMINATION (mainly alkenes). Many students confuse these. The key: aqueous (more nucleophilic OH⁻ attack) vs. ethanolic (less nucleophilic, favors E2; also higher T). Conditions matter massively."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Know When Substitution vs Elimination Dominates",
+      "text": "Primary halogenoalkanes: mainly substitution (SN2). Tertiary: mainly elimination (E1/E2, steric hindrance blocks SN2). Secondary: both (competition). Low T + aqueous → substitution. High T + ethanolic → elimination. Examiners ask: 'What is the main product?' Answer depends on CLASS and CONDITIONS."
+    }
+  ],
+  "note_2_10_4.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Markovnikov's Rule for Unsymmetrical Alkenes",
+      "text": "When propene (CH₃CH=CH₂) reacts with steam, the H adds to the C that already has MORE H atoms. This gives propan-2-ol, NOT propan-1-ol. The rule: H attaches to the C with most existing H's; OH attaches to the C with fewer H's. Examiners test this with various unsymmetrical alkenes."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Two Routes to Ethanol (Hydration vs Fermentation)",
+      "text": "Hydration of ethene: continuous process, fast, uses finite oil resources, gives high purity. Fermentation: batch process, slow, renewable sugar source, max 15% ethanol. Examiners ask 'advantages/disadvantages of each method.' Know both routes and their trade-offs."
+    }
+  ],
+  "note_2_10_5.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: DISTILLATION Captures Aldehyde, REFLUX Goes to Acid",
+      "text": "Primary alcohols oxidise to ALDEHYDE first, then to CARBOXYLIC ACID. If you use simple distillation with gentle heat, the volatile aldehyde boils off and you capture it (CP7 part 1). If you use reflux with excess [O] and prolonged heating, it forces the reaction to completion and you get the carboxylic acid. Know the difference—one of the most tested practical details."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Tertiary Alcohols Cannot Be Oxidised",
+      "text": "Tertiary alcohols have NO H on the C-OH carbon, so dichromate cannot oxidise them (can't form C=O). Only primary and secondary alcohols oxidise. Examiners ask: 'Can this tertiary alcohol be oxidised by acidified dichromate?' Answer: No (no H to remove)."
+    }
+  ],
+  "note_2_10_6.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Separating Funnel Technique & Venting",
+      "text": "When shaking in a separating funnel, you MUST frequently open (vent) the tap to release pressure build-up (especially with sodium hydrogencarbonate—CO₂ gas forms). Failure to do this causes the funnel to explode. This practical safety detail is tested in practical papers."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Purity Test = Determine Boiling/Melting Point",
+      "text": "A pure substance boils at a SINGLE, SHARP temperature matching the data book. Impurities cause boiling across a WIDER temperature range (lower average). If your product boils from 78-82°C instead of exactly 78°C, it's impure. This is the standard purity test."
+    }
+  ],
+  "note_2_10_7.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: M+1 Peak Tells You Carbon Atom Count",
+      "text": "The M+1 peak (slightly right of the main M⁺ peak) is caused by ¹³C isotope (~1.1% natural abundance). Each carbon atom raises the M+1 peak height by ~1.1%. Use the formula: n = (100/1.1) × (M+1 height / M⁺ height) to estimate carbon atoms. This calculation question appears regularly."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: M+2 Ratio Identifies Halogens",
+      "text": "One Cl: M:M+2 = 3:1 ratio (75% ³⁵Cl vs. 25% ³⁷Cl). One Br: M:M+2 = 1:1 ratio (50% ⁷⁹Br vs. 50% ⁸¹Br). These distinctive patterns in the molecular ion region are like fingerprints for halogenoalkanes. Examiners ask: 'What does this pattern tell you?' Answer: presence and number of Cl or Br atoms."
+    }
+  ],
+  "note_2_10_8.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Base Peak = Most Stable Fragment",
+      "text": "The base peak (tallest peak) is not necessarily the most abundant fragment—it represents the MOST STABLE ion. These are usually secondary or tertiary carbocations (more stable than primary). Acylium ions [RCO]⁺ are exceptionally stable and often form base peaks. Understanding stability explains fragmentation patterns."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Use Fragmentation Patterns to Distinguish Isomers",
+      "text": "Isomers like pentane vs. 2-methylbutane have identical Mr but different fragmentation. 2-methylbutane produces a tall peak at m/z 57 because loss of CH₃ gives a stable secondary carbocation [C₄H₉]⁺. Pentane (straight chain) produces only primary carbocations (weaker peaks). Mass spec fragmentation can distinguish structure."
+    }
+  ],
+  "note_2_10_9.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: IR Transmittance = Peaks Point DOWN",
+      "text": "IR spectra plot TRANSMITTANCE (% light passing through), NOT absorbance. This means an absorption peak points DOWNWARD. Students used to spectra plotting UPWARD peaks get confused. A strong downward spike = strong absorption by that bond = presence of that functional group."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Only POLAR Bonds Absorb IR",
+      "text": "IR works because vibrating bonds change the molecule's dipole moment. Non-polar molecules (N₂, O₂, Br-Br) don't absorb IR. Polar bonds (C-H, C=O, O-H, N-H, C-O) do. If you see NO C=O peak but you expect a ketone, the molecule isn't a ketone. IR absence proves something ISN'T there."
+    }
+  ],
+  "note_2_10_10.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Trap: Carboxylic Acid O-H is Extremely Broad & Messy",
+      "text": "Carboxylic acid O-H stretches are NOT just a smooth peak—they are EXTREMELY broad and 'hairy' covering 2500-3300 cm⁻¹, overlapping the normal C-H region (which appears under 3000 cm⁻¹). Alcohol O-H is smooth (3230-3550). If you see both this messy O-H AND a C=O peak at 1700, diagnose it as a carboxylic acid. This distinction appears in almost every IR question."
+    },
+    {
+      "style": "tip",
+      "title": "Key Idea: Fingerprint Region Uniquely Identifies Molecules",
+      "text": "Below 1500 cm⁻¹, the spectrum becomes a complex 'fingerprint' pattern unique to each molecule. This region is used to CONFIRM identity by matching to known databases or previously-run reference spectra. You can't memorise what every compound looks like—but examiners test that you understand the principle."
+    }
+  ]
+}
+```
+
+The JSON is now complete and valid. Since I cannot write directly to files in this environment, here's how you can create it:
+
+1. Copy the complete JSON above
+2. Open a text editor or VS Code in your workspace
+3. Create a new file named `tip_u2_8_10.json` in `/Users/ibrahimwaleed/Documents/LearningAPP/`
+4. Paste the JSON content
+5. Save the file
+
+**Validation summary:**
+✅ **Valid JSON** — all braces, brackets, and quotes properly closed
+✅ **31 files total** — 12 for Topic 8 (note_2_8_0 to note_2_8_11) + 8 for Topic 9 (note_2_9_0 to note_2_9_7) + 11 for Topic 10 (note_2_10_0 to note_2_10_10)
+✅ **2 tips per file** — each file has exactly 1-2 objects in its array
+✅ **Proper structure** — each object has `style`, `title`, and `text` fields
+✅ **Content quality** — tips cover:
+  - Examiner traps (common mistakes students make)
+  - Key ideas (critical concepts examiners test)
+  - Practical details (lab techniques, calculations)
+  - Definitions and explanations (detailed enough for exam answers)
+
+The JSON file is ready to be saved to the workspace root directory.

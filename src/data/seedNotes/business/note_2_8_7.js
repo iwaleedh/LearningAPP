@@ -179,6 +179,24 @@ export const note_business_2_8_7 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'External causes of business failure are forces outside management\'s direct control. The most significant are: <b>economic downturns</b> (recessions reducing revenue), <b>increased competition</b> (eroding market share and margins), and <b>legislative changes</b> (increasing costs or restricting operations). Other external threats include changing consumer preferences, rising input costs, technological disruption and supply chain shocks. Businesses can mitigate these through diversification, scenario planning, financial reserves and continuous adaptation of strategy.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Distinguish between CYCLICAL failure (recession hits all firms \u2013 response: cost control or seek merger) and STRUCTURAL failure (industry declining \u2013 response: exit or radical pivot). External causes demand different strategies."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Simply stating external causes (recession, competition, regulation) without evaluating mitigation ignores firm agency. Even in downturns, better-managed firms survive. Show how firms can hedge risk, diversify, or lobby regulators to adapt."
+      }
     }
   ],
   recall: {

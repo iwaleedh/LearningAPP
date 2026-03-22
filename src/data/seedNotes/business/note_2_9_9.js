@@ -108,6 +108,24 @@ export const note_business_2_9_9 = {
         "title": "Relatable: School Canteen Feedback Cards = Kaizen",
         "text": "When your school canteen places a small feedback card on each table asking 'What could we improve today?', that is Kaizen in practice. Each week a few students might suggest smaller portion sizes, a warmer pasta option, or a faster queue layout. The catering staff (the 'workers') implement the best suggestions. No single change is revolutionary, but after a term of continuous small improvements, the canteen is measurably better — and students feel heard, boosting their 'motivation' too."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Explain TQM as total commitment: everyone responsible for quality, continuous improvement (Kaizen), customer-focused. Show why it's costly (training, time) but generates competitive advantage through reputation and reduced defects."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating TQM as a checklist (implement zero-defects policy, done) rather than a culture shift. TQM REQUIRES employee empowerment, management commitment, and years to embed. Superficial adoption (badges without change) fails. Be realistic."
+      }
     }
   ],
   recall: {

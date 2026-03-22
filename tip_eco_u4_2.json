@@ -1,0 +1,668 @@
+{
+  "src/data/seedNotes/economics/note_economics_4_21_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Examiners reward clear definitions and practical examples. Use the World Bank's absolute poverty line ($1.90/day) and relative poverty thresholds (e.g. 60% of median income) in your answers. Always evaluate which concept is more relevant to specific policy contexts — absolute for extreme deprivation, relative for social cohesion."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often treat absolute and relative poverty as separate concepts rather than complementary measures. Don't just define them — explicitly compare their policy implications. Also avoid assuming higher GDP automatically reduces absolute poverty; explain the distribution mechanism required."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Show numerical calculation skills. When invited to construct measures like the headcount ratio (proportion below poverty line), show your working. Examiners value understanding that the MPI captures multiple deprivations simultaneously — far superior to single-metric approaches. Reference the UNDP's MPI methodology."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume headcount ratio is sufficient to measure poverty. This is incorrect — Edexcel expects you to critique it for ignoring depth of poverty. The poverty gap accounts for this; MPI adds dimensions of health, education, and living standards. Avoid saying 'headcount is simpler so it's better.' Explain trade-offs between simplicity and accuracy."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Use country examples strategically. For each driver (e.g. lack of education), cite a specific case: education poverty in Sub-Saharan Africa, discrimination in India's caste system, geographic barriers in landlocked nations. Examiners reward evidence of applying concepts. Distinguish between supply-side constraints (low skill) and demand-side barriers (lack of jobs)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students list drivers without explaining causal links or feedback loops. For example, poor health → reduced productivity → lower earnings → poverty trap. Don't just say 'discrimination causes poverty'; explain the mechanism. Also avoid treating poverty traps as just 'being stuck' — define precisely: insufficient income to invest in human capital or escape."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Examiners test whether you understand the distinction matters. Explain that wealth is more concentrated (fewer wealthy individuals) while income is relatively dispersed. Use the concept of returns to capital: wealth-owners earn capital gains, while wage-earners depend on hourly rates. This underpins inequality trends. Always link to piketty's r > g inequality driver."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse income and wealth inequality, treating them as synonymous. They are not — a wealthy person with low income exists (retirees with assets), as does a high-income person with low wealth (new professional). Also, students forget that wealth includes property, stocks, and savings, not just income flows. Don't say 'they measure the same thing.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Demonstrate numerical literacy. Calculate Gini coefficients from Lorenz curve coordinates; interpret values (0 = perfect equality, 1 = perfect inequality). Examiners expect you to compare Gini coefficients across countries and time periods. Use Edexcel data sets (often provided in case studies). Note: the steeper the curve below the 45° line, the greater inequality."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students misinterpret Lorenz curves: a line closer to the x-axis means MORE inequality, not less. Also, many forget that the Gini coefficient summarizes the curve into one number — it loses detail. Two countries with identical Gini coefficients can have different inequality distributions. Always critique: 'Gini is useful but masks distributional differences.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Connect drivers to macroeconomic trends. Skill-biased tech change raises returns to high-education workers — examiners reward you for linking this to the college premium. Globalisation shifts wages: capital and high-skill labour gain, while unskilled workers in developed economies lose. Declining unions reduce wage-bargaining power. Always evaluate the relative magnitudes — which driver is most significant?"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students blame globalisation uniformly as 'causing inequality' without nuance. Globalisation raises inequality between countries (convergence) but within countries depends on skill distribution. Also, claims like 'declining unions cause inequality' need qualification: unions raise wages for members but may exclude others. Distinguish between correlation and causation; Edexcel expects critical appraisal of evidence."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Examiners reward historical and institutional depth. Explain persistent effects: colonial extractive institutions (e.g. no property rights, monopolies) remain embedded in governance; geography constrains trade (landlocked nations pay high shipping costs); technology gaps compound (poor countries cannot develop high-value manufacturing). Use examples: Sub-Saharan Africa vs East Asia divergence over 60 years."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students treat these drivers as one-off barriers rather than self-reinforcing traps. Poor institutions → low FDI inflow → technology stagnation → continued poverty. Don't say 'colonial legacy explains everything' — explain mechanisms. Also avoid geographic determinism ('geography is destiny'). Development is possible despite geography (Singapore example), so institutions and policy matter more. Cite evidence, not just theory."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Link inequality to multiple channels: incentive effects (harder to climb ladder, less entrepreneurship), health and crime (Wilkinson & Pickett evidence), political instability (undermines contracts, investment). Examiners reward you for showing this isn't just redistribution ethics — inequality is economically damaging. Reference recent papers showing negative growth effects. Use country evidence: more unequal nations show slower long-run growth."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume inequality always harms growth (Kuznets inverted-U is debunked). Say instead: 'extreme inequality harms growth but moderate inequality may provide work incentives.' Also, don't confuse correlation with causation — does inequality cause low growth, or does poverty cause both? Edexcel expects you to acknowledge competing channels. Some inequality provides incentives; too much creates instability."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "The Spirit Level (Wilkinson & Pickett) is Edexcel-relevant evidence. Use specific findings: in more unequal societies, even the wealthy have worse health outcomes (stress from status comparison, reduced social trust). Examiners reward citing this research but also critically appraising it — some studies show relative deprivation matters less than absolute income. Use data: compare health indicators across unequal vs equal societies."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students over-claim causation from The Spirit Level correlation. Higher inequality correlates with worse health, but reverse causation exists (poor health reduces earnings, increases poverty). Also, confounders like weak institutions or low income per capita matter. Don't say 'inequality causes all health problems.' Say: 'The Spirit Level suggests relative deprivation mechanisms; however, alternative explanations require testing.' Edexcel values methodological thinking."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_21_9.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Piketty's Capital in the Twenty-First Century argues r > g (return on capital exceeds growth rate) drives long-run inequality. Examiners reward you for explaining this mechanism: capital income accumulates faster than wages grow, so capitalists pull away. Use his data on wealth concentration. Show numeracy: if capital returns 5% but growth is 2%, wealth compounds. Evaluate the policy implication: wealth taxes or higher growth needed."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students cite Piketty without understanding r > g. Don't just say 'capital returns are high' — explain comparative dynamics and why this drives inequality over generations. Also, Piketty's wealth tax proposal is controversial; evaluate critically rather than endorsing it. Some economists argue r > g is temporary or requires specific conditions. Edexcel expects nuanced engagement: 'Piketty's evidence is strong on wealth concentration, but policy solutions are debated.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Categorize spending clearly: current (wages, welfare, interest) vs capital (infrastructure); mandatory (debt service) vs discretionary (healthcare). Use UK OBR data to show composition: ~45% social protection, ~20% healthcare, ~10% education. Examiners reward you for linking to macroeconomic outcomes: higher spending → higher tax burden or deficits, affecting AD and long-run supply. Use tables and percentages."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students treat public spending as uniformly 'wasteful' or 'beneficial' without analysing composition. Current spending on benefits may address poverty; investment spending builds productive capacity. Don't say 'spending is too high/low' without context. Also, avoid assuming higher spend always reduces inequality — regressive spending (subsidies to farmers, fossil fuels) harms equity. Edexcel expects critical analysis of spending type and incidence."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Link spending growth to specific economic trends. Ageing populations → higher pensions and healthcare costs (UK: 20% of spending on pensions soon). Business cycles → welfare spending spikes in recessions (automatic stabilizers). Debt servicing costs → post-2008, UK interest payments rose sharply with QE unwinding. Examiners reward quantified examples: 'UK public spending rose from 35% to 42% of GDP during 2008–2010 due to cyclical downturn and bank bailouts.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students blame 'big government' ideology for spending growth without recognizing structural drivers. Ageing is demographic, not political choice. Also, distinguish between cyclical (temporary, automatic stabilizer) and structural (permanent policy shift) drivers. Don't say 'spending just keeps rising' — analyse why. Edexcel expects you to separate policy changes (new entitlements) from automatic responses (recession welfare). Use data to ground argument."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_10.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Show toolkit thinking: different conditions require different mixes. In a demand-shock recession (2008), fiscal stimulus works; in supply-side crisis (stagflation 1970s), supply-side reform is needed. Monetary policy is powerful for managing inflation but weak at stimulating demand in liquidity trap (near-zero rates). Examiners reward dynamic reasoning: 'Given current inflation and unemployment, a mix of some demand management plus medium-term supply investment is optimal.' Use examples."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students favour one policy tool (e.g. 'always use monetary policy' or 'fiscal is best') regardless of context. This is incorrect. Also, conflating policy aims: fiscal policy can pursue equity (redistribution) or efficiency (supply-side investment), but not both simultaneously if budgets are tight. Don't say 'do everything'; explain constraints and trade-offs. Edexcel values context-awareness and sequencing (short-run demand, long-run supply)."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_11.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Show detailed knowledge of post-2008 policy: bank bail-outs (£137bn UK) preserved financial stability but raised moral hazard; fiscal stimulus (2008–2010) was temporary then austerity reversed it; QE (quantitative easing, £375bn UK) lowered yields and boosted asset prices but inequality rose. Examiners reward critical appraisal: 'Bail-outs prevented depression but created zombie banks; QE favoured asset-owners.' Use timeline and magnitudes. Reference Edexcel case studies if provided."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students simplify 2008 policy as 'just bail-outs and stimulus' without recognizing their contradictions. Bail-outs without resolution created long-term distortions; austerity after stimulus was premature (Keynesian logic says maintain support until recovery). QE risked inflation but inflation remained low due to weak demand. Don't polarize as 'right or wrong' — examiners expect you to weigh trade-offs. Say: 'Bail-outs necessary but lax regulation enabled excess risk-taking.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_12.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Show knowledge of real policy mechanisms: BEPS (Base Erosion and Profit Shifting) targets IP transfers and debt shifting; global minimum 15% tax reduces races to the bottom; automatic information exchange (AEOI) enables cross-border enforcement. Examiners reward citing specific examples: 'Apple legally paid <2% by routing profits through Ireland.' Discuss trade-offs: higher taxes on residual profits may reduce investment incentives, but unequal enforcement remains problematic."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students say 'multinational tax avoidance is wrong' without understanding why it's hard to stop. Firms exploit legal differences between tax systems (not illegal); international coordination is slow; developing countries compete for FDI by offering low rates. Don't assume BEPS and global minimum tax will 'solve' avoidance — implementation gaps and loopholes remain. Edexcel expects nuance: 'Avoidance is legal but erodes tax bases; policy responses face coordination challenges.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_13.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Demonstrate sophisticated policy thinking. Time lags mean fiscal stimulus arrives after recovery starts (pro-cyclical harm). Data uncertainty (e.g. is unemployment 4% or 3.5%?) leads to policy errors. Model uncertainty (which econometric model is correct?) undermines confidence. Political constraints (election cycles) prevent optimal long-term policies. Examiners reward you for citing real examples: 'UK QE expansion 2015–2021 risked overheating but data uncertainty delayed tightening.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume policymakers have full information and can execute optimal plans instantly. In reality, macroeconomic policy is riddled with uncertainty and delays. Don't say 'government should just do X' — acknowledge implementation constraints. Also, avoid one-sided critiques; ineffectiveness doesn't mean don't try, but recognize costs of failed targeting. Edexcel expects realism: 'Policy constraints are real, but inaction has costs too; policy must navigate uncertainty.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Wagner's Law states that public spending as % of GDP rises with development (industrialisation → urbanisation → demand for public goods). Show evidence: UK went from ~10% (1900) to ~40% (2020). Examiners reward you for linking spending growth to genuine demand (healthcare, education, pensions in ageing societies) rather than blaming bureaucracy. Evaluate whether high spend % harms growth — evidence is mixed; correlation ≠ causation. Use data trends."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume 'higher spending share = slower growth' (right-wing assumption) or 'higher spending = faster growth' (left-wing assumption). Research shows no clear pattern — composition matters more than size. Also, don't just cite Wagner's Law as inevitable; it's a correlation driven by specific conditions (development stage, preferences). High-spend Scandinavia has strong growth; high-spend Southern Europe stagnates. Say: 'Spending composition and efficiency matter more than total % of GDP.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Use supply-and-demand logic. Direct taxes (on income) reduce disposable income, shifting consumption demand leftward; indirect taxes (VAT, excise) raise prices, reducing quantity demanded. Macroeconomic effects vary: direct taxes hit savings and investment more (supply-side harm); indirect taxes are more neutral if substitution is low. Examiners reward quantified examples: 'UK VAT is 20%; 1pp increase reduces consumption by ~0.5% in short run.' Show the policy trade-off: equity vs efficiency."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume direct taxes are always 'better for poor' and indirect taxes 'regressive' but don't quantify incidence. In fact, VAT can be equitable if combined with targeted rebates; income tax can be unfair if loopholes favor the wealthy. Also, don't ignore that indirect taxes (fuel duty, alcohol tax) discourage negative externalities — efficiency gains matter. Edexcel expects: 'Direct taxes are more progressive, but indirect taxes have efficiency uses; policy must combine both.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Distinguish clearly: progressive tax rate rises with income (top 45% earners pay higher %); proportional rate is constant (%); regressive rate falls with income (%. VAT is regressive because the poor spend more of income on consumption). Examiners reward you for evaluating equity-efficiency trade-offs. Progressive taxes reduce inequality but may reduce work incentives (deadweight loss); proportional/regressive avoid disincentives but don't redistribute. Use numerical examples with tax brackets."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse 'progressive' (tax rate rises) with 'high taxes.' Progressive 10% on all is less revenue than flat 20%. Also, don't assume progressive is always better; if it kills growth incentives, equity gains may reverse (lower growth reduces jobs, wages fall). Some evidence suggests modest progressivity (e.g. top rate 40%) balances goals better than 50%+ rates. Edexcel expects: 'Progressive is equitable but faces behavioral response; optimal rate is empirical question.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Show supply-side logic: higher taxes reduce returns to effort/investment, shifting labour and capital supply leftward (deadweight loss). Examiners reward you for citing elasticities — labour supply elasticity varies by income (low earners: inelastic; high earners: elastic), so progressive taxation has differentiated effects. Investment response is strong in open economies (capital flees high-tax regimes). Use evidence: 'Studies suggest 1pp increase in top rate reduces work by 0.1–0.5% depending on elasticity.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume higher taxes always reduce incentives proportionally. This is incorrect — responses vary. Some high-earners reduce hours; others work harder to maintain income target (income effect vs substitution). Evidence on labour supply is mixed; macroeconomic model (Keynesian vs supply-side) matters hugely. Don't say 'high taxes kill growth' categorically. Say: 'Response depends on elasticity, which is empirically debated; some tax rise can fund investment with net growth gain.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "The Laffer curve shows an inverted-U: tax revenue first rises with tax rate, then falls (if rate becomes confiscatory, evasion rises, revenue falls). Examiners reward you for critical evaluation: where is the UK on this curve? Evidence suggests optimal top rate is 50–60%, not 90%; UK at 45% appears on rising side (rate cut may harm revenue). Use empirical data: simulations show unclear empirical peak. Distinguish theoretical possibility from claimed policy justification."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume Laffer curve proves 'tax cuts raise revenue,' which is ideological overreach. The curve exists theoretically, but peak is uncertain. Only if initial rate is past the peak would cuts raise revenue; UK evidence suggests top rate is below peak, so cuts lose revenue. Also, Laffer focuses on income tax; interaction with VAT, capital gains doesn't follow same curve. Edexcel expects: 'Laffer curve is possible but empirically unclear where peak lies; tax cuts ≠ automatic revenue gain.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Define precisely: fiscal deficit = government spending exceeds revenue; fiscal surplus = opposite. National debt is cumulative: debt t = debt t-1 + deficit. Examiners reward numerical literacy. UK debt/GDP rose from 35% (2007) to 85% (2010) due to cyclical recession deficits. Show the accounting: 'If deficit is 5% of GDP annually, debt/GDP ratio rises 5pp per year unless growth is strong.' Evaluate role in macroeconomic policy — deficits can stimulate (Keynesian) or crowd out (neoclassical)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse deficit (annual flow) with debt (stock). A country can run deficits for years and still have low debt if growth is strong; another can have surpluses but high debt if past deficits accumulate. Also, don't assume deficits are always bad (Keynesian stimulus uses deficits) or surpluses always good (belt-tightening in recession worsens depression). Edexcel expects: 'Fiscal balance matters cyclically: deficits in downturns stabilize demand; surpluses in booms prevent overheating.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Distinguish cyclical (from recessions, automatic) vs structural (policy-driven, permanent). Examiners reward this because it explains why deficits sometimes are appropriate. UK cyclical deficit 2008–2010 was unavoidable (income fell, welfare rose automatically); structural deficits since 2010 reflect policy choices (low tax rates, spending commitments). Methods: estimate potential GDP via trend, compare actual to potential. If output gap shrinks, cyclical part should fall. Use data: 'UK structural deficit remained 2–3% even post-recovery, reflecting policy choices.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume all deficits are equivalent. In reality, cyclical deficits reverse naturally as growth returns (no policy action needed); structural deficits persist and require tax hikes or spending cuts. Also, estimating structural deficits is hard — economists disagree on potential GDP. Don't say 'deficit is bad' without distinguishing type. Edexcel expects: 'Cyclical deficits are stabilizers; structural deficits require policy action if they're judged unsustainable.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_22_9.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Assess sustainability: debt/GDP ratio stabilizes if deficit (% of GDP) equals growth rate × existing debt/GDP ratio. Examiners reward numerical examples. If UK debt/GDP is 100% and growth is 2%, structural deficit must be ≤2% to stabilize debt. Risks of high debt: crowding out (public borrowing raises interest rates, private investment falls); intergenerational fairness (future taxpayers repay); market confidence loss (if debt spirals, rates spike, default risk rises). Use Italy example: 130% debt/GDP limits policy space."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume high debt is always unsustainable. This is too simple. Japan has 260% debt/GDP but low rates (domestic savers, low default risk); Greece had 170% and crisis occurred (foreign borrowers, lost confidence). Debt sustainability depends on growth, interest rates, currency control, and confidence. Also, don't confuse nominal and real debt accumulation. Examiners expect: 'High debt constrains policy but isn't automatically catastrophic; sustainability depends on growth and investor confidence.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "HDI = average of (Life Expectancy Index, Education Index, GNI per Capita Index). Examiners reward numeracy: show how to construct HDI from components. Key insight: HDI captures non-income dimensions (health, education) missing from GDP. Interpret findings: Sub-Saharan Africa has low HDI (~0.5) due to low life expectancy and education; Scandinavian high HDI (~0.95) across all dimensions. Compare HDI rankings to GDP rankings — development ≠ just wealth. Use country examples strategically."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume HDI is a perfect development measure. It's not — it misses inequality (Costa Rica high HDI but unequal), omits environmental degradation (Mauritius high HDI, coral bleaching), and ignores governance quality. Also, averaging three indices masks trade-offs: a country can have high health but low education. Don't say 'HDI is better than GDP' absolutely; say 'HDI captures non-income dimensions but has limitations.' Edexcel expects critical perspective, not advocacy."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Critique HDI systematically: it ignores income inequality (Inequality-Adjusted HDI attempts fix but data gaps remain), omits environmental sustainability (high HDI, poor carbon footprint), doesn't measure governance quality or political freedom, and uses arbitrary weightings (why average equally?). IHDI adjusts for inequality within each dimension — if income is more unequal (Gini=0.4), IHDI drops. Examiners reward evidence: 'South Africa has high GDP and HDI but extreme inequality (IHDI falls 25%+).'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students cite HDI limitations without proposing alternatives or acknowledging data challenges. IHDI exists but requires inequality data, which is sparse for poor countries. Don't just say 'HDI is flawed'; say 'these limitations are recognized; IHDI partially addresses inequality, but comprehensive sustainability measures remain underdeveloped.' Also, measuring what's omitted (governance, freedom) is hard. Edexcel expects: 'No perfect measure; choose metric for purpose: inequality → IHDI, sustainability → Genuine Progress Indicator.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_10.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Analyze conflict mechanisms systematically: direct effects (death, displacement, destroyed capital), indirect effects (health systems collapse, supply chain breaks), institutional effects (rule of law erodes, investment falls, brain drain). Examiners reward citing cases: Syria conflict destroyed infrastructure, killed 500k, displaced 12M; rebuilding requires decades. Show sequencing: short-term humanitarian crisis → medium-term reconstruction → long-term institutional reform. Evaluate policy: aid, debt relief, investment guarantees post-conflict."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students oversimplify conflict as 'bad for development' without analyzing channels. Conflicts affect different dimensions differently: physical capital destroyed quickly, but human capital (skilled emigration) may recover if peace incentivizes return. Also, some post-conflict nations develop fast (Rwanda data: 8%+ growth 1994–2010) if governance improves; others stagnate. Don't assume conflict = permanent poverty. Edexcel expects: 'Conflict devastates development, but recovery speed depends on institutional and investor confidence restoration.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_11.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Distinguish three effects on sending countries: brain drain (loss of high-skill workers reduces growth potential, but those remaining may benefit from higher wages), remittances (~3–10% of GDP for many poor nations, stabilize consumption and enable local investment), return migration (experienced emigrants bring skills, capital, networks). Examiners reward quantified examples: 'Philippines receives ~10% of GDP as remittances; without them, poverty would be higher.' Show time dimension: short-run remittance boost vs long-run brain drain risk."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume migration is unambiguously positive (remittances help) or negative (brain drain harms). Reality is complex: brain drain reduces growth if high-skill workers emigrate (African doctors work overseas), but if return or remit, net effect positive. Also, remittances can reduce incentive to develop local taxation (easier to consume remittances than tax locals), undermining institutional development. Edexcel expects: 'Migration effects are ambiguous; high-skill emigration harms, but return migration and remittances can develop nations.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_12.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Compare three policy paradigms: Washington Consensus (1990s, market liberalization, privatization, trade openness) emphasized growth but inequality often rose, inequality widened; Interventionist (industrial policy, picking winners like South Korea) achieved rapid growth but required state capacity; Institutionalist (rule of law, property rights, governance) is now consensus as foundational. Examiners reward evidence: 'South Korea industrialized via state-guided investment; but this required exceptional governance; aid effectiveness varies with institutions.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students treat paradigms as sequential truth progressions ('Washington Consensus failed, now institutionalism is right'). Actually, each era reflects real lessons but also reflects power dynamics and donor preferences. Interventionism works in capable states (Singapore) but fails in corrupt ones (Nigeria). Don't assume one approach is universally best. Aid effectiveness debate remains unsettled — some argue conditionality (impose reforms as aid condition) helps; others say it undermines local ownership. Edexcel expects balanced evaluation."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Evaluate alternatives comprehensively: Multidimensional Poverty Index (captures health, education, living standards simultaneously; now used by UNDP), Gender Inequality Index (maternal mortality, education, political participation), Happy Planet Index (combines wellbeing + life expectancy + ecological footprint), Genuine Progress Indicator (GPI adjusts GDP for environmental costs, inequality, leisure). Examiners reward explaining why alternatives matter: HDI captures income but misses inequality; GPI reveals high-GDP nations may have poor sustainability. Use country rankings to show differences."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students list alternatives without critically evaluating trade-offs. MPI is detailed but data-intensive (sparse for poor countries). GPI is holistic but requires debatable adjustments (how much reduce GDP for pollution?). Happy Planet Index correlates with tiny economies (Costa Rica ranks high; Luxembourg low due to high carbon). Don't just say 'these are better than HDI'; say 'each measure emphasizes different values; no single metric fits all purposes. Choose based on policy question.' Edexcel values methodological awareness."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Commodity price volatility stems from inelastic supply (oil output adjusts slowly) and inelastic demand (essential consumption doesn't change much), so small supply shocks cause large price swings. Prebisch-Singer hypothesis: commodity export prices fall relative to manufactured import prices over long term (declining terms of trade). Effects on developing economies: export revenues fluctuate (budget uncertainty), poverty rises in booms (overinvestment, crashes afterward), currency volatility follows. Examiners reward case study: petroleum exporters boom/bust cycles."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume commodity price volatility is just 'luck' requiring hedging. While true, also address structural issue: Prebisch-Singer suggests commodity dependence itself is problematic. Evidence on declining terms of trade is mixed (oil rose 1970s–2000s, fell 2014–2020); don't overstate inevitability. Also, volatile revenues can be managed (sovereign wealth funds buffer shocks), but this requires institutional capacity. Edexcel expects: 'Volatility and declining terms of trade are risks; policy responses (diversification, stabilization funds) matter.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Primary product dependency (oil, minerals, agriculture as >50% of exports) creates risks. Dutch disease: commodity export boom → currency appreciates → manufacturing exports become expensive, uncompetitive (industry atrophies). Examiners reward technical explanation: real exchange rate rises, both tradables and non-tradables sectors misallocate resources to commodity boom, then crash when prices fall. Diversification strategies: invest export revenues in human capital (education), manufacturing capabilities (Botswana diamonds → diversified economy). Use example: Nigeria (oil-dependent, diversification stalled) vs Botswana (diamonds, diversified successfully)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students blame commodities as inherently 'cursed.' The curse is conditional: if institutions are weak, commodity revenues fuel corruption (Nigeria); with strong governance, they fund development (Norway, Botswana). Also, diversification is easier said than done — new industries require capital, skills, infrastructure (which commodity wealth can provide, but corrupt leaders often don't). Don't say 'commodity dependency causes poverty'; say 'it creates risks; institutional quality and diversification policy determine outcomes.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Harrod-Domar model: growth g = s/K (savings divided by capital-output ratio); for developing nations, constrained by low savings rate s and high imported input costs requiring foreign exchange. Two constraints: savings gap (want growth g*, but savings only provide g<g*) and foreign exchange gap (import capital, but export earnings limit this). Policy responses: mobilize domestic savings (financial deepening, tax compliance), attract FDI (foreign savings), boost export earnings (diversification). Examiners reward showing both constraints bind simultaneously in many poor nations."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students treat Harrod-Domar as purely mechanical: 'just invest more, growth rises.' Model is a starting point; actual growth depends on technology, returns to capital (declining returns slow growth), and institutional quality (inefficient investment doesn't compound). Also, model doesn't explain why savings rates differ (culture? institutions?) or why some nations attract FDI and others don't. Edexcel expects: 'Harrod-Domar shows investment is necessary for growth, but not sufficient; productivity and institutions matter.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Capital flight: wealthy residents move savings abroad (tax avoidance, political risk aversion); drains productive capital from poor countries. External debt: borrowing constraints (limited collateral, high borrowing costs). Together, they limit investment. HIPC (Heavily Indebted Poor Countries) initiative: debt relief if reforms (tax collection, spending efficiency) implemented. Examiners reward critical evaluation: 'Debt relief helped some nations (Uganda growth accelerated), but without institutional reform, benefits evaporate.' Show both benefits (fiscal space for investment) and risks (moral hazard, insufficient if policies unchanged)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume debt relief is obviously good. True, high debt constrains spending, but debt relief without institutional reform wastes opportunity. Some relieved nations resumed destructive spending (no ongoing conditionality). Also, capital flight reflects weak property rights and bad governance; relief doesn't address root causes. Edexcel expects: 'Debt relief is necessary but insufficient; must combine with institutional reforms to prevent capital flight recurrence and ensure investment of freed fiscal space.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Financial exclusion: poor lack access to formal banking (no savings accounts, loans, insurance), relying on informal channels (moneylenders at 10%+ interest). This constraints investment in small businesses, education, emergencies. Microfinance solutions: small loans to poor entrepreneurs (Grameen Bank model), often with group collateral (peer monitoring). Mobile banking (M-Pesa in Kenya) bypasses bank branch costs. Examiners reward evidence: 'Microfinance reached 200M+ clients; studies show income gains of 10–30% per client.' Show limitations: high default rates, not suitable for all businesses."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students romanticize microfinance as 'silver bullet' for poverty. While impactful, it's not sufficient: microcredit is for small entrepreneurs, not unemployed or disabled populations; high repayment rates require business success (not guaranteed). Mobile banking helps but requires phone infrastructure, digital literacy, and trust in non-banks. Don't say 'microfinance solves poverty'; say 'it addresses credit gap for entrepreneurship; when combined with education and infrastructure, poverty reduction accelerates.' Evidence shows mixed long-run outcomes."
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Infrastructure deficits (poor roads, unreliable electricity) raise business costs, dampen productivity. Skill deficits (low literacy, numeracy, technical training) limit job quality and entrepreneurship. Both are costly: Sub-Saharan Africa loses ~2% GDP annually to power outages alone. Policy responses: public investment in infrastructure (roads, power; high multipliers post-crisis), education spending (externalities justify public funding), FDI in infrastructure (private firms efficient but risk-averse in poor nations). Examiners reward quantifying costs: 'Without rural electrification, African farmers can't refrigerate crops, losing 20% to spoilage annually.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students treat infrastructure needs as solved by 'just building roads.' Reality: roads need maintenance (institutional capacity); power requires fuel supply; schools need teachers (incentives, training). Also, infrastructure isn't enough — roads to nowhere help nobody; invest where economic activity clusters. Don't say 'infrastructure is necessary'; say 'it's necessary but not sufficient; needs to be well-targeted and maintained, requiring institutional quality.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/economics/note_economics_4_23_9.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Governance quality and corruption undermine development through multiple channels: discourage FDI (uncertain property rights, judicial capture), reduce tax revenue (tax authority corruption, evasion), misallocate public spending (patronage over merit), and erode social trust. Examiners reward evidence: Transparency International corruption index correlates strongly with poverty (r = -0.8). Institutional reforms: independent judiciary, executive accountability, press freedom, civil service professionalization. International accountability (ICC prosecutions of kleptocrats, FATCA tracking stolen assets) slowly changes incentives."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume external accountability mechanisms (ICC, asset recovery) solve corruption. They help, but institutional change is slow and internally driven (revolutions, elite consensus). Also, don't assume corruption is only in poor nations (wealthy nations have softer brands: regulatory capture, lobbying). The difference is scale: poor-nation corruption diverts resources; wealthy-nation corruption redirects policy. Edexcel expects: 'Governance improvement requires internal institutional reform, reinforced by international pressure; solutions are long-term and context-specific.'"
+      }
+    }
+  ]
+}

@@ -143,6 +143,24 @@ export const note_business_2_10_0 = {
     {      id: 'sum-1',
       type: 'summary',
       data: { text: 'Inflation raises business costs (materials, labour, energy) and erodes profit margins unless prices are raised. The wage–price spiral accelerates inflation in labour-intensive sectors. High domestic inflation reduces UK exporters\' competitiveness but can benefit importers. Business planning becomes harder due to cost uncertainty. A firm\'s ability to respond depends on its price elasticity of demand and market power.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Always use real-world examples (e.g., falling oil prices, rising petrol costs) when discussing inflation's impact. Examiners reward students who distinguish between demand-pull and cost-push inflation and link this explicitly to export/import competitiveness."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often overlook the different effects on exporters vs. importers. Inflation makes UK exports MORE costly abroad (less competitive) but makes foreign imports cheaper in the UK (increasing competition). Don't treat all businesses the same."
+      }
     }
   ],
   recall: {

@@ -207,6 +207,24 @@ export const note_business_2_6_6 = {
         title: 'Student Perspective: Franchises You Already Know',
         text: 'Next time you visit <b>McDonald\'s, Subway, or Costa Coffee</b>, you may be inside a franchise outlet owned by a local businessperson who paid for the right to use the brand. McDonald\'s UK franchisees typically invest <b>£125,000–£325,000</b> to open a branch and pay roughly 5% of sales as ongoing royalties. In return they receive the brand, global marketing, and a proven supply chain — a trade-off that makes McDonald\'s the world\'s largest and most recognised franchise network, with over 40,000 outlets across 100+ countries.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Distinguish franchise benefits from social enterprise benefits: franchises offer proven models and brand leverage (efficiency focus); social enterprises balance profit with social impact (stakeholder focus). This difference is crucial in case-study questions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Overlooking franchise disadvantages: franchisees lose autonomy, must follow brands rigorously, face ongoing royalties, and bear failure risk while the franchisor profits. Examiners reward balanced analysis showing franchisor-franchisee tension."
+      }
     }
   ],
   recall: {

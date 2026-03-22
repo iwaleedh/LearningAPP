@@ -15,7 +15,25 @@ export const note_business_2_7_3 = {
     { id: 'enr-t7a-p-contribution-profit', type: 'paragraph', data: { text: 'An important distinction: <strong>contribution is not profit</strong>. Contribution first goes towards covering all fixed costs. Only once fixed costs are fully met does additional contribution convert to profit. Therefore: <em>Profit = Total Contribution − Fixed Costs</em>. If total contribution is less than fixed costs, the business makes a loss.' } },
     { id: 'enr-t7a-eq-profit', type: 'equation', data: { html: 'Profit = Total Contribution − Fixed Costs', caption: 'Once all fixed costs are covered, every additional unit sold adds directly to profit' } },
     { id: 'enr-t7a-call-glamping', type: 'callout', data: { style: 'worked', title: 'Real Scenario: Canterbury Glamping', text: '<p>Revenue per pod per night: £95 | Variable cost per pod: £19 | Annual fixed costs: £55,000</p><ul><li>Contribution per pod = £95 − £19 = <strong>£76</strong></li><li>Break-even = £55,000 ÷ £76 = 723.68 → rounded up to <strong>724 pod-nights per year</strong></li><li>Above 724 pod-nights, each additional pod night adds £76 to profit</li></ul>' } },
-    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Relatable Example: School Tuck Shop', text: 'You sell energy bars at £1.20; variable cost per bar = £0.45. Monthly fixed costs (stall hire + bags) = £52.50.<br>Contribution per bar = £1.20 − £0.45 = <strong>£0.75</strong>.<br>Break-even = £52.50 ÷ £0.75 = <strong>70 bars per month</strong>. Every bar sold above 70 earns you £0.75 in pure profit.' } }
+    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Relatable Example: School Tuck Shop', text: 'You sell energy bars at £1.20; variable cost per bar = £0.45. Monthly fixed costs (stall hire + bags) = £52.50.<br>Contribution per bar = £1.20 − £0.45 = <strong>£0.75</strong>.<br>Break-even = £52.50 ÷ £0.75 = <strong>70 bars per month</strong>. Every bar sold above 70 earns you £0.75 in pure profit.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Contribution = revenue \u2212 variable costs. Break-even point = fixed costs \u00f7 contribution per unit. Examiners expect you to interpret break-even in context: at BEP, profit = 0; below BEP the business loses money; above BEP it profits. Contextualise every calculation."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Calculating break-even but not interpreting it. Saying 'BEP is 5,000 units' is meaningless without context: 'The firm must sell 5,000 units to cover all fixed and variable costs; below this target it operates at a loss.' Always explain the business implication."
+      }
+    }
   ],
   recall: {
     enabled: true,

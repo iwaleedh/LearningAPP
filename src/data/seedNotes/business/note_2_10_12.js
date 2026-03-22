@@ -146,6 +146,24 @@ export const note_business_2_10_12 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Small businesses compete by focusing on areas where large firms are weak: niche marketing (specialist segments, premium prices), unique selling points (bespoke, expert), personalised customer service (loyalty, word-of-mouth), flexibility (speed, customisation) and local knowledge. These strategies compensate for higher unit costs by justifying premium pricing and building customer loyalty. However, scale and price-based competition remain difficult to sustain against large rivals.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Show understanding of competitive strategy by explaining WHY small businesses use niche marketing (reduce direct competition with giants) and flexibility (respond faster to changing demand). Frame this as leveraging small-firm advantages."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't just list small business tactics. Examiners expect evaluation: which strategies work best against which types of larger rivals? For example, innovation might beat a large firm in a niche, but price competition rarely works."
+      }
     }
   ],
   recall: {

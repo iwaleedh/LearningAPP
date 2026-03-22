@@ -1,0 +1,122 @@
+{
+  "note_physics_2_6_0.js": [
+    { "style": "warning", "title": "Common Misconception: Direction of Current", "text": "Conventional current (+→−) and electron flow (−→+) are opposite directions. Conventional current is the standard used in circuit diagrams, but always remember the actual charge carriers (electrons) move opposite to the arrow direction." },
+    { "style": "tip", "title": "Exam Tip", "text": "In circuit diagrams, always draw current arrows in the direction of conventional current (+ to −), not electron flow." }
+  ],
+  "note_physics_2_6_1.js": [
+    { "style": "warning", "title": "Common Misconception: Voltage is Not Consumed", "text": "Voltage measures energy per coulomb, not a quantity that gets 'used up' by components. Each coulomb of charge experiences the potential difference, but charge is not consumed." },
+    { "style": "tip", "title": "Measuring Voltage: Exam Tip", "text": "Voltmeters must be connected in parallel, not series like ammeters. A voltmeter has very high resistance to draw minimal current from the circuit." }
+  ],
+  "note_physics_2_6_2.js": [
+    { "style": "warning", "title": "Ohm's Law Only for Ohmic Conductors", "text": "V = IR only applies to ohmic conductors at constant temperature. Filament lamps and diodes are non-ohmic — their resistance changes with voltage/current, producing curved I-V graphs rather than straight lines." },
+    { "style": "tip", "title": "Exam Tip: Reading I-V Graphs", "text": "Resistance R = V/I at any point on the graph (V/I is the slope to that point, not the gradient of the line). For a straight line through the origin, the slope gives resistance directly." }
+  ],
+  "note_physics_2_6_3.js": [
+    { "style": "warning", "title": "Current is Not Consumed", "text": "Charge flows through components but is not 'used up' — the same current enters and leaves. At junctions, the sum of currents entering equals the sum leaving (charge conservation)." },
+    { "style": "tip", "title": "Kirchhoff's First Law", "text": "At any junction in a circuit, ΣI_in = ΣI_out. This applies regardless of whether the junction is a series or parallel arrangement." }
+  ],
+  "note_physics_2_6_4.js": [
+    { "style": "key", "title": "Kirchhoff's Second Law", "text": "Around any closed loop, the algebraic sum of EMF = sum of potential differences across resistors (ΣE = ΣIR). This reflects energy conservation: the energy supplied by the source equals the energy dissipated in the circuit." },
+    { "style": "tip", "title": "Sign Convention for KVL", "text": "When traversing a loop, assign positive direction arbitrarily. EMF and resistor PD with the same direction as traverse are positive; opposite direction are negative. If you have an error, the negative result tells you current flows backwards." }
+  ],
+  "note_physics_2_6_5.js": [
+    { "style": "key", "title": "Series and Parallel Resistances", "text": "Series: R_total = R₁ + R₂ + ... (current same through all, voltage divides). Parallel: 1/R_total = 1/R₁ + 1/R₂ + ... (voltage same across all, current divides). A parallel resistor always reduces total resistance." },
+    { "style": "tip", "title": "Exam Tip: Power in Combinations", "text": "In series: P ∝ R (highest power in largest resistor). In parallel: P ∝ 1/R (highest power in smallest resistor). Recognize these patterns to check work quickly." }
+  ],
+  "note_physics_2_6_6.js": [
+    { "style": "key", "title": "Three Power Formulas", "text": "P = IV (most general); P = I²R (for resistive losses); P = V²/R (for voltage-limited supplies). Choose based on what you know. Check units always produce watts (J/s)." },
+    { "style": "tip", "title": "Exam Tip: Selecting the Right Formula", "text": "If you know current and resistance → P = I²R. If you know voltage and current → P = IV. If you know voltage and resistance → P = V²/R. Never guess — the correct formula depends on which quantities are given." }
+  ],
+  "note_physics_2_6_7.js": [
+    { "style": "warning", "title": "Resistance ≠ Gradient of I-V Graph", "text": "The gradient represents conductance (1/R), not resistance. Resistance is R = V/I at any point (ratio of any voltage to corresponding current), which is the slope from the origin to that point, not the slope of a tangent to the curve." },
+    { "style": "key", "title": "Reading I-V Characteristics", "text": "Ohmic (straight line through origin): constant R. Filament lamp (curve bending right): R increases with T. Diode (threshold then linear): R ≈∞ below threshold, then R ≈ small value above threshold." }
+  ],
+  "note_physics_2_7_0.js": [
+    { "style": "key", "title": "Resistivity Formula", "text": "R = ρL/A: a longer wire has more resistance (R ∝ L), while a thicker wire has less (R ∝ 1/A). Resistivity ρ depends only on the material and temperature, not on the wire's dimensions." },
+    { "style": "tip", "title": "Exam Tip: Unit Check", "text": "ρ is in Ω·m, L in m, A in m². Check: (Ω·m × m) / m² = Ω ✓. A common error is forgetting to square the radius when converting diameter to area." }
+  ],
+  "note_physics_2_7_1.js": [
+    { "style": "warning", "title": "Core Practical: Measure diameter many times", "text": "To find the wire diameter, measure at least 5–10 positions along the wire using a micrometer. Take the mean to reduce random error. A single measurement of diameter introduces large systematic error into R = ρL/A because resistance depends on A = πd²/4 (error in d is squared in the error for A)." },
+    { "style": "warning", "title": "Avoid Heating the Wire", "text": "The wire's resistance changes with temperature: ΔR/ΔT ≈ α × R₀. Heating from the current measurement itself causes R to drift, throwing off the experiment. Use moderate current and record readings quickly." }
+  ],
+  "note_physics_2_7_2.js": [
+    { "style": "key", "title": "Drift Velocity vs Signal Speed Paradox", "text": "Electrons drift ~mm/s (extremely slowly) but the electric field propagates at ~c. The light comes on almost instantly when you flip a switch, not because electrons travel that fast, but because the field change/signal travels at near-light speed while electron motion is a separate effect." },
+    { "style": "tip", "title": "Remember I = nAev_d", "text": "Current depends on drift velocity, cross-sectional area, and charge carrier density. A larger cross-section (bigger A) can carry more current even at the same drift velocity. Copper has higher charge carrier density (n) than other conductors, so copper wires can carry large currents." }
+  ],
+  "note_physics_2_7_3.js": [
+    { "style": "key", "title": "Potentiometer Principle", "text": "For a uniform wire, V/L = constant = k (voltage per unit length). If you want to compare two EMFs using the null-deflection method, connect them to opposite ends of the potentiometer wire and find where the galvanometer reads zero — at that position, E₁/L₁ = E₂/L₂." },
+    { "style": "tip", "title": "Exam Tip: Why Null-Deflection is Accurate", "text": "The potentiometer method measures EMF without drawing current (galvanometer at balance shows zero current), eliminating the error from internal resistance. This is more accurate than a direct voltmeter measurement." }
+  ],
+  "note_physics_2_7_4.js": [
+    { "style": "warning", "title": "Loading Effect in Potential Dividers", "text": "When you connect a load resistor R_L across the output of a potential divider, the effective output resistance drops and the output voltage falls below the no-load value V_out = V_in × R₂/(R₁+R₂). The lower the load resistance, the greater the voltage drop. This is critical in practical applications like sensor circuits." },
+    { "style": "tip", "title": "Exam Tip: Recognizing Loading", "text": "If an exam question asks 'what happens when a load is connected?', state: (1) effective output resistance decreases, (2) output voltage decreases, (3) output current increases, (4) load current depends on load resistance." }
+  ],
+  "note_physics_2_7_5.js": [
+    { "style": "key", "title": "LDR and Thermistor Applications", "text": "LDR (light-dependent resistor): resistance decreases with increasing light intensity. Thermistor (NTC): resistance decreases with increasing temperature. Both are used in sensor circuits where a potential divider converts resistance change into a voltage change that can be measured or used to trigger logic." },
+    { "style": "warning", "title": "Unit Conversion Trap", "text": "Diameter must be converted to radius for area calculations: A = π(d/2)² = πr². Common error: using diameter directly gives A = πd² which is 4× too large. Also convert mm or cm to m for SI units: mm = 10⁻³ m, not 10⁻² m." }
+  ],
+  "note_physics_2_8_0.js": [
+    { "style": "warning", "title": "EMF is NOT a Force", "text": "EMF stands for electromotive force (energy per unit charge), NOT a mechanical force. It has units J/C (or V). The name is historical; EMF is really a measure of energy transfer, not force (N). An ideal voltmeter with infinite resistance reads the open-circuit EMF; a real voltmeter draws tiny current and reads slightly lower due to internal resistance." },
+    { "style": "key", "title": "EMF vs Potential Difference", "text": "EMF ε is the total energy per coulomb supplied by a source. Terminal potential difference V is the energy per coulomb available to the external circuit. The difference is lost inside the battery (I²r heating in the internal resistance)." }
+  ],
+  "note_physics_2_8_1.js": [
+    { "style": "key", "title": "Internal Resistance Effect", "text": "A real battery has internal resistance r. When current flows, the terminal PD V = ε − Ir is less than the EMF. From a V-I graph: y-intercept = ε (open-circuit EMF), gradient = −r (negative slope gives internal resistance)." },
+    { "style": "warning", "title": "Short-Circuit Hazard", "text": "If a battery is short-circuited (R = 0), the current I = ε/r becomes very large, causing rapid heating and potential explosion. This is why batteries must never be short-circuited, and why internal resistance limits the short-circuit current in a real battery." }
+  ],
+  "note_physics_2_8_2.js": [
+    { "style": "warning", "title": "EMF ≠ Terminal PD When Current Flows", "text": "Terminal potential difference V = ε − Ir is always less than EMF when current flows (lost volts = Ir). As current increases, terminal PD decreases linearly. A 1.5 V cell on open circuit has ε = 1.5 V, but when drawing current it shows V < 1.5 V." },
+    { "style": "tip", "title": "Exam Tip: Calculating Lost Volts", "text": "Lost volts = Ir = I × internal resistance. This energy is dissipated as heat inside the battery (wasted as thermal energy). The external circuit receives energy at rate P = IV = I(ε − Ir) = Iε − I²r." }
+  ],
+  "note_physics_2_8_3.js": [
+    { "style": "warning", "title": "Battery Heating During Measurement", "text": "Repeated ammeter measurements heat the battery (P = I²r in internal resistance), raising its temperature and changing the internal resistance. Work quickly and allow cooling time between measurements if precision is needed. A voltmeter draws small current, causing slight underestimate of EMF, but this is usually negligible compared to other errors." },
+    { "style": "key", "title": "Core Practical: Extraction Method", "text": "Plot V vs I on a graph. Gradient = −r (internal resistance). Y-intercept = ε (EMF). This method extracts both ε and r from a single set of measurements, reducing systematic error compared to calculating individual values." }
+  ],
+  "note_physics_2_8_4.js": [
+    { "style": "key", "title": "Resistance vs Temperature", "text": "Metals: R increases with T (lattice vibrations scatter electrons). Thermistor (NTC ceramic): R decreases sharply with T (more charge carriers become available). Superconductor: R → 0 below critical temperature T_c. Temperature coefficient α = ΔR/(R₀ΔT) is material-dependent." },
+    { "style": "tip", "title": "Exam Tip: Which Way Does R Change?", "text": "Metals heat up → R increases → led becomes hotter (positive feedback). NTC thermistor heats up → R decreases → I increases (more heating). These opposite behaviors lead to different circuit responses — remember which material does what." }
+  ],
+  "note_physics_2_8_5.js": [
+    { "style": "key", "title": "Light-Dependent Resistor (LDR)", "text": "Resistance decreases with light intensity (photons create charge carriers). In darkness R is very high (MΩ range); in bright light R drops to ~100 Ω. Used in light-sensor circuits, automatic brightness control, and alarm systems." },
+    { "style": "tip", "title": "Photosensitive Device Applications", "text": "An LDR in a potential divider circuit produces a voltage that varies with light level. This voltage change can trigger logic circuits or be used to regulate a system automatically (e.g., street lights that activate at dusk)." }
+  ],
+  "note_physics_2_11_0.js": [
+    { "style": "key", "title": "Wave Properties: Five Key Definitions", "text": "Frequency f (Hz) is cycles per second. Period T (s) relates to frequency: T = 1/f. Wavelength λ (m) is distance between identical points (crest to crest). Amplitude A (m) is maximum displacement. Wave speed c (m/s) is distance traveled per second — NOT the same as particle velocity." },
+    { "style": "tip", "title": "Exam Tip: Unit Conversion for Frequency", "text": "Always convert period from milliseconds (ms) or microseconds (μs) to seconds (s) before calculating frequency: f = 1/T. A period of 2 ms = 2 × 10⁻³ s → f = 500 Hz. Missing unit conversion is a frequent exam penalty." }
+  ],
+  "note_physics_2_11_1.js": [
+    { "style": "key", "title": "Wave Equation Relationships", "text": "v = fλ links wave speed, frequency, and wavelength. For constant wave speed: if f ↑ then λ ↓ (inverse relationship). This applies to all waves — light, sound, water, radio — in any medium." },
+    { "style": "warning", "title": "Unit Conversion in Wave Equation", "text": "Convert all quantities to SI before substitution: frequency in Hz, wavelength in m, wave speed in m/s. A common error: 100 cm/s is NOT 100 m/s; it is 1 m/s. Missing this converts the answer by a factor of 100." }
+  ],
+  "note_physics_2_11_2.js": [
+    { "style": "warning", "title": "Don't Assume Sinusoidal = Transverse", "text": "Both transverse and longitudinal waves can produce sinusoidal displacement-distance graphs. The difference is the direction: transverse particles vibrate perpendicular to travel direction; longitudinal particles vibrate parallel to travel direction. Read the question carefully." },
+    { "style": "key", "title": "Longitudinal Waves: Compressions and Rarefactions", "text": "Longitudinal waves (sound, P-waves) consist of regions of high pressure (compressions) alternating with low pressure (rarefactions). Wavelength λ is the distance between one compression and the next compression. These waves cannot be polarized (no up-down or left-right vibration)." }
+  ],
+  "note_physics_2_11_3.js": [
+    { "style": "key", "title": "Transverse Wave Definition", "text": "Particles vibrate perpendicular to the direction of wave travel (energy transfer). Shows crests (peaks) and troughs (valleys). Examples: light, water waves, guitar strings. Transverse waves CAN be polarized by passing through a filter." },
+    { "style": "tip", "title": "Distinguishing Wave Types on Graphs", "text": "Displacement-distance graph (snapshot): read amplitude A and wavelength λ directly. Displacement-time graph: read amplitude A and period T directly. Calculate frequency from f = 1/T. Both graphs look identical but measure different things—the axis label is your clue." }
+  ],
+  "note_physics_2_11_4.js": [
+    { "style": "warning", "title": "Common Graph Measurement Mistakes", "text": "Measuring amplitude as peak-to-trough distance gives 2A (wrong). Measuring period from zero-crossing rising to next zero-crossing falling gives T/2 (wrong). Always measure full cycle: crest-to-crest, trough-to-trough, OR rising-zero to next rising-zero." },
+    { "style": "key", "title": "Phase Difference from Distance Graph", "text": "Two points separated by distance d have phase difference φ = (2π/λ) × d radians. One full wavelength apart → φ = 2π (in phase). Half-wavelength apart → φ = π (antiphase, 180°). Quarter-wavelength apart → φ = π/2 (90° out of phase)." }
+  ],
+  "note_physics_2_12_0.js": [
+    { "style": "warning", "title": "Energy is NOT Destroyed in Destructive Interference", "text": "When two waves cancel at a point (destructive interference), energy is not destroyed—it is redistributed to nearby constructive-interference regions. Total energy is conserved; cancellation is spatial, not energy loss." },
+    { "style": "key", "title": "Path Difference Conditions", "text": "Constructive interference: path difference = nλ (n = 0, 1, 2, ...) → crests meet crests → amplitude doubles. Destructive interference: path difference = (n + ½)λ → crests meet troughs → amplitude cancels. These conditions determine bright (I_max) or dark (I = 0) fringes." }
+  ],
+  "note_physics_2_12_1.js": [
+    { "style": "warning", "title": "Coherence is Essential for Stable Fringes", "text": "Two incoherent sources (like separate lamps) have random, time-varying phase differences (~10⁻⁸ s changes). The interference pattern shifts rapidly and appears only as uniform brightness. A laser or single source split into two paths maintains constant phase—essential for stable fringes." },
+    { "style": "key", "title": "Phase Difference ↔ Path Difference Link", "text": "Path difference of λ ↔ phase difference 360° (2π rad). Path difference λ/2 ↔ 180° (π rad). General: phase diff (°) = (path diff / λ) × 360°. Convert between these representations quickly for exam calculations." }
+  ],
+  "note_physics_2_12_2.js": [
+    { "style": "warning", "title": "Stationary Waves Do NOT Transfer Energy", "text": "A progressive wave carries energy along the direction of travel. A stationary wave stores energy in the oscillating medium between nodes but transfers zero net energy along the wire — it is a resonance phenomenon, not propagation." },
+    { "style": "key", "title": "Nodes and Antinodes", "text": "Nodes: points of zero vibration (always); antinodes: points of maximum vibration (always). In a standing wave, nodes and antinodes remain fixed in space (do not move left-right). This contrasts with a progressive wave where all particles vibrate with the same amplitude." }
+  ],
+  "note_physics_2_12_3.js": [
+    { "style": "warning", "title": "Total Length vs Vibrating Length", "text": "When calculating μ = m/L, use the total string length (or wire reel length). When calculating fundamental frequency f₁ = v/(2L), use the vibrating length (distance between fixed supports)—a common exam trap is using the wrong length in the wrong place." },
+    { "style": "key", "title": "Fundamental Frequency Formula", "text": "f₁ = (1/2L)√(T/μ). Increasing tension T → higher f₁. Increasing length L → lower f₁. Increasing linear density μ (thicker string) → lower f₁. These dependencies explain why tightening a guitar string raises pitch and why thick bass strings are lower than thin treble strings." }
+  ],
+  "note_physics_2_12_4.js": [
+    { "style": "warning", "title": "Filament Lamp Cannot Produce Stable Fringes", "text": "A filament lamp emits light from millions of independent atoms, each emitting brief random-phase wave trains. The phase difference changes every ~10⁻⁸ seconds, causing the interference pattern to shift too fast to see—only uniform brightness is observed. Use a laser instead." },
+    { "style": "key", "title": "Core Practical 7: Identifying Harmonics", "text": "Drive the string with an oscillator at varying frequency. When frequency matches a natural (harmonic) frequency, a stable standing-wave pattern appears. Fundamental shows 1 antinode (2 nodes); second harmonic shows 2 antinodes (3 nodes); nth harmonic shows n antinodes (n+1 nodes). Count the loops to identify the harmonic number." }
+  ]
+}

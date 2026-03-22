@@ -1,0 +1,271 @@
+{
+  "note_physics_1_1_0.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Always Convert to SI First",
+      "text": "Always check units in final answers. Unit algebra (e.g., dividing m by s gives m/s) is a key skill. Substituting non-SI units into equations often leads to incorrect answers \u2014 lost marks for forgetting unit conversion."
+    },
+    {
+      "style": "warning",
+      "title": "Common Misconception: Prefixes",
+      "text": "Prefixes change the magnitude but not the base unit type. 1 mm is still a distance, not a different quantity. 1 mm = 10^\u22123 m, not 10^\u22123 something else. Students often confuse prefix notation with quantity changes."
+    }
+  ],
+  "note_physics_1_1_1.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Parallax Error",
+      "text": "Eyes must be perpendicular to the scale when reading analogue instruments. If viewing at an angle, the reading is distorted. Solution: use a mirror behind the scale \u2014 when your eye's reflection is hidden, you're reading perpendicular. Examiners reward students who mention this."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Zero Error Analysis",
+      "text": "Identify zero error (reading when instrument shows zero) and parallax error separately in your evaluation. Both are systematic errors requiring correction. Examiners specifically ask for these in practical write-ups."
+    }
+  ],
+  "note_physics_1_1_2.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Always Justify Estimates",
+      "text": "Show your breakdown into parts (e.g., for car mass: length \u00d7 width \u00d7 height \u00d7 density). Examiners want to see your reasoning, not just a final number. A justified but incorrect estimate scores more marks than an unjustified correct one."
+    },
+    {
+      "style": "warning",
+      "title": "Common Mistake: Mass vs Weight",
+      "text": "When estimating, always use mass (kg) for the quantity, not weight (N). A car's mass is ~1000 kg, not 1000 N. Weight depends on location; mass does not."
+    }
+  ],
+  "note_physics_1_1_3.js": [
+    {
+      "style": "warning",
+      "title": "Systematic Error: Zero Error",
+      "text": "A systematic error like zero error must be corrected. For a micrometer with zero error +0.05 mm: if you measure 5.45 mm, the true measurement is 5.45 \u2212 0.05 = 5.40 mm. Failing to correct this biases all results."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Uncertainty Propagation",
+      "text": "When multiplying or dividing, add PERCENTAGE uncertainties, not absolute ones. Only switch to absolute uncertainties at the final step if reporting \u00b1 notation. This rule prevents underestimating uncertainty."
+    }
+  ],
+  "note_physics_1_1_4.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Significant Figures",
+      "text": "Quote results to 2-3 significant figures (not more). Too many sig figs suggests false precision. Graph axes must have quantity name AND unit. A conclusion must state the result with evidence and compare to a known value using percentage difference."
+    },
+    {
+      "style": "warning",
+      "title": "Common Graph Mistake",
+      "text": "Plot data as crosses (not dots), draw a best-fit line (not joining dots), and include error bars. Missing any of these loses marks. Gradients calculated from two points far apart on the line reduce percentage error in coordinate reading."
+    }
+  ],
+  "note_physics_1_1_5.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Real-World Applications",
+      "text": "Medical: X-rays (ionising, radiation risk), MRI (safe, no ionising), ultrasound (safe, uses distance = speed \u00d7 time). Engineering: Young modulus guides material selection. Communications: total internal reflection in fibres. Environment: solar, wind, nuclear all convert other forms to electrical."
+    },
+    {
+      "style": "warning",
+      "title": "Applications and Risk-Benefit",
+      "text": "Every technology has risk-benefit trade-offs. X-rays: risk of radiation dose vs. diagnostic benefit. Nuclear: low-carbon but radioactive waste persistence. Examiners ask: 'Why is this technology beneficial despite risks?'"
+    }
+  ],
+  "note_physics_1_1_6.js": [
+    {
+      "style": "warning",
+      "title": "Peer Review Limitations",
+      "text": "Peer review does not guarantee correctness. Reviewers can miss flaws, be biased, or have conflicts of interest. Novel findings can be rejected. Publication bias favours positive results over null results. Reproducibility crisis in psychology/medicine showed many published effects are not real."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Scientific Consensus",
+      "text": "Scientific knowledge develops through discovery \u2192 peer review \u2192 replication \u2192 consensus. No single experiment 'proves' something; repeated independent replication does. Media often overstates certainty compared to actual scientific consensus."
+    }
+  ],
+  "note_physics_1_1_7.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Risk-Benefit Framework",
+      "text": "Technology is approved when benefits (health, economy, knowledge, quality of life) outweigh risks (environmental, safety, ethical). Always frame decisions as balancing these factors. Example: nuclear power reduces carbon but leaves radioactive waste for millennia."
+    },
+    {
+      "style": "warning",
+      "title": "Ethical Responsibilities in Science",
+      "text": "Scientists must report honestly even when results are commercially or politically inconvenient. Fraud destroys trust and wastes resources on false leads. Informed consent is required for human research. Long-term monitoring (CFC/ozone case study) is vital for detecting harm."
+    }
+  ],
+  "note_physics_1_2_0.js": [
+    {
+      "style": "key",
+      "title": "Key Point: SUVAT Only for Constant Acceleration",
+      "text": "SUVAT equations apply ONLY when acceleration is constant. Air resistance violates this (a changes with speed). All five variables (s, u, v, a, t) must be in the same direction. Assign positive direction first; opposite motion is negative."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Terminal Velocity Misconception",
+      "text": "At terminal velocity: net force = 0 \u2192 acceleration = 0 \u2192 velocity is constant (NOT zero). The object is still moving at steady speed. When a parachutist opens the parachute, drag suddenly exceeds weight \u2192 net upward force \u2192 deceleration (not zero velocity)."
+    }
+  ],
+  "note_physics_1_2_1.js": [
+    {
+      "style": "warning",
+      "title": "Common Error: Gradient vs Area Rules",
+      "text": "Students confuse gradient and area methods. Remember: gradient always moves forward (s\u2192v\u2192v\u2192a). Area under s-t graph has NO simple physical meaning \u2014 never calculate it. Only area under v-t = displacement; area under a-t = change in velocity."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Calculating Gradient Accurately",
+      "text": "Choose two points far apart on the drawn line (NOT data points). The greater the separation, the smaller the percentage error in reading coordinates. Include units in the gradient (e.g., 2.5 m/s\u00b2)."
+    }
+  ],
+  "note_physics_1_2_2.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Misinterpreting Areas",
+      "text": "Area under displacement-time graph is meaningless (not velocity, not anything physical). Area under velocity-time = displacement only. Area under acceleration-time = change in velocity only. Students often calculate the wrong area."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Tangent to Curved Graphs",
+      "text": "For a curved v-t graph, use a ruler to draw a tangent at the point of interest \u2014 the tangent must touch the curve at only that point, not crossing nearby. Extend the tangent line well across the graph so rise and run are large, reducing percentage error in gradient calculation."
+    }
+  ],
+  "note_physics_1_2_3.js": [
+    {
+      "style": "warning",
+      "title": "Common Misconception: Incomplete Velocity",
+      "text": "Velocity must include direction. Writing 'velocity = 10 m/s' without direction is incomplete \u2014 this describes speed, not velocity. Correct form: '10 m/s to the right' or '10 m/s at 30\u00b0 above horizontal'. In circular motion: constant speed \u2260 constant velocity (direction changes) \u2192 acceleration exists \u2192 force required."
+    }
+  ],
+  "note_physics_1_2_4.js": [
+    {
+      "style": "warning",
+      "title": "Common Error: Confusing Sin and Cos in Resolution",
+      "text": "The component adjacent to angle \u03b8 always uses cos \u03b8. The component opposite the angle uses sin \u03b8. If \u03b8 is from horizontal: horizontal = F cos \u03b8, vertical = F sin \u03b8. If \u03b8 is from vertical: swap them. Always identify which angle is given first."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Check Your Resolution",
+      "text": "After resolving F into Fx and Fy, verify using Pythagoras: Fx\u00b2 + Fy\u00b2 = F\u00b2 (should be true for any angle). This catch prevents sign errors and angle mistakes."
+    }
+  ],
+  "note_physics_1_2_5.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Stopping Distance Scales with Speed",
+      "text": "Thinking distance \u221d v (linear): double speed \u2192 double thinking distance. Braking distance \u221d v\u00b2 (from v\u00b2 = u\u00b2 + 2as): double speed \u2192 four times braking distance. Speed limits reduce accidents dramatically because braking distance is not proportional to speed \u2014 it's proportional to speed squared."
+    },
+    {
+      "style": "warning",
+      "title": "Common Misconception: Speed and Distance",
+      "text": "A car at 60 mph does not stop in twice the distance of one at 30 mph due to braking distance scaling with v\u00b2. Stopping distance increases as v\u00b2 is much faster than linear increase. Reaction time also increases with tiredness, alcohol, and distractions."
+    }
+  ],
+  "note_physics_1_2_6.js": [
+    {
+      "style": "key",
+      "title": "Key Principle: Independence of Motion Components",
+      "text": "Horizontal and vertical components of projectile motion are INDEPENDENT. Horizontal: no acceleration (ax = 0), vx = u cos \u03b8 = constant. Vertical: acceleration = g downward. Analyse each direction separately using SUVAT."
+    },
+    {
+      "style": "warning",
+      "title": "Air Resistance in Free Fall",
+      "text": "A feather and hammer fall at the same rate ONLY in a vacuum. In air, drag force on a feather is enormous compared to its weight. When drag-to-weight ratio is large, objects reach terminal velocity almost instantly and do not accelerate at g. Free-fall at g = 9.81 m/s\u00b2 applies only to dense/streamlined objects over short distances or in vacuum."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Sign Convention for g",
+      "text": "State your sign convention clearly: 'Taking downward as positive gives a = +9.81 m/s\u00b2' or 'taking upward as positive gives a = \u22129.81 m/s\u00b2'. Inconsistent signs are the most common source of error in projectile motion problems."
+    }
+  ],
+  "note_physics_1_2_7.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: Free-Body Diagrams",
+      "text": "Free-body diagram shows ONLY forces ON the object of interest, not forces the object exerts on others. Label each force clearly (W = mg, N, f, T, F). For equilibrium: sum of horizontal forces = 0 AND sum of vertical forces = 0."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Relative Velocity",
+      "text": "Relative velocity of A with respect to B = vA \u2212 vB. Define positive direction first. Same direction: relative speed = |vA \u2212 vB|. Opposite directions: relative speed = |vA| + |vB|. Always draw a diagram labelling the positive direction to avoid sign errors."
+    }
+  ],
+  "note_physics_1_3_0.js": [
+    {
+      "style": "key",
+      "title": "Key Formula: F = ma",
+      "text": "F must be the NET (resultant) force. To find resultant: add forces in same direction, subtract forces in opposite directions, or resolve into components for 2D problems. Newton's First Law (F = 0 \u2192 a = 0) is a special case; Newton's Second Law F = ma is the general form."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Applying Newton's Laws",
+      "text": "State WHICH Newton's law you are applying before writing equations. For Newton's 2nd: identify F as the net force. For Newton's 3rd: pairs must be (1) same magnitude, (2) opposite direction, (3) same force type, (4) on different objects."
+    }
+  ],
+  "note_physics_1_3_1.js": [
+    {
+      "style": "key",
+      "title": "Key Distinction: Mass vs Weight",
+      "text": "Mass (kg) is scalar, constant everywhere, amount of matter. Weight (N) is vector force, W = mg, depends on gravity. On Earth g = 9.81 N/kg. Same object has different weight on Moon (1.6 g) or Mars (3.7 g) but mass unchanged. Mass measured by balance; weight by spring scale."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Solving Any Forces Problem",
+      "text": "(1) Draw free-body diagram. (2) Choose axes (horizontal/vertical or along/perpendicular to slope). (3) Resolve all forces into components. (4) Apply Newton's 2nd in each direction separately. Never sum forces as scalars if they act in different directions."
+    }
+  ],
+  "note_physics_1_3_2.js": [
+    {
+      "style": "tip",
+      "title": "Exam Tip: h vs t\u00b2 Graph",
+      "text": "Examiners often ask: 'Why plot h against t\u00b2 rather than h against t?' Answer: h = \u00bdgt\u00b2 means h \u221d t\u00b2 (not t). Plotting h vs t\u00b2 gives a straight line whose gradient = g/2, making g easy to extract. Plotting h vs t gives a curve and obscures g."
+    },
+    {
+      "style": "warning",
+      "title": "Sources of Error in Freefall",
+      "text": "Systematic errors: reaction time delay (use electronic timer to eliminate), air resistance (use dense metal ball, not feather). Random errors: variability in release, timer response fluctuations. Improvements: multiple trials, repeated heights, discard anomalous results, use data logger."
+    }
+  ],
+  "note_physics_1_3_3.js": [
+    {
+      "style": "key",
+      "title": "Newton's Third Law: Four Properties",
+      "text": "A Newton Third Law pair must satisfy: (1) equal magnitude, (2) opposite direction, (3) same force type (both gravitational, both contact, both electromagnetic), (4) act on DIFFERENT objects. Never on the same object."
+    },
+    {
+      "style": "warning",
+      "title": "Common Misconception: Third Law vs Equilibrium",
+      "text": "Weight (Earth on book, gravitational) and normal force N (table on book, contact) are equal and opposite but NOT a Newton third law pair \u2014 they are different force types AND both act on the same object. A genuine third law pair: 'Earth pulls book down' \u2194 'book pulls Earth up' (both gravitational, on different objects)."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Three Forces in Equilibrium",
+      "text": "For 3 forces in equilibrium \u2014 either resolve into components (\u03a3Fx = 0, \u03a3Fy = 0) or draw triangle of forces and apply sine rule. Always define sign convention before resolving. Closed triangle = equilibrium."
+    }
+  ],
+  "note_physics_1_3_4.js": [
+    {
+      "style": "key",
+      "title": "Momentum and Impulse",
+      "text": "Momentum p = mv (unit kg m/s, vector). Newton's 2nd Law: F = \u0394p/\u0394t. Impulse J = F\u0394t = \u0394(mv). Impulse = area under F-t graph. Large force for short time = small force for long time if F\u0394t is the same."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Crumple Zones and Airbags",
+      "text": "Crumple zone increases collision time \u0394t. Since \u0394p is fixed (same collision), longer \u0394t \u2192 smaller average force F = \u0394p/\u0394t \u2192 reduced injury. Same principle applies to airbags, crash mats, helmets, and catching techniques in sport \u2014 all increase contact time to reduce peak force."
+    }
+  ],
+  "note_physics_1_3_5.js": [
+    {
+      "style": "key",
+      "title": "Conservation of Momentum Principle",
+      "text": "In a closed system (no net external force): total momentum before = total momentum after. m\u2081u\u2081 + m\u2082u\u2082 = m\u2081v\u2081 + m\u2082v\u2082. Always choose a positive direction and apply it consistently; use negative for opposite direction motion."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Identifying Collision Types",
+      "text": "Momentum is ALWAYS conserved (elastic or inelastic), provided no net external force. Kinetic energy is conserved ONLY in elastic collisions. Identify by: (1) calculate total p before/after (always equal), (2) calculate total KE \u2014 if equal \u2192 elastic; if KE decreases \u2192 inelastic. In perfectly inelastic collision, use v = m\u2081u\u2081/(m\u2081+m\u2082)."
+    }
+  ]
+}

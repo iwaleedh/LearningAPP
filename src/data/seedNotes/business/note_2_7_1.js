@@ -24,7 +24,25 @@ export const note_business_2_7_1 = {
     { id: 'enr-t7a-eq-avg-cost', type: 'equation', data: { html: 'Average Cost (Unit Cost) = <span class="nb-frac"><span class="nb-num">Total Cost (TC)</span><span class="nb-den">Quantity Produced</span></span>', caption: 'Average cost falls as fixed costs are spread across more units (economies of scale)' } },
     { id: 'enr-t7a-p-avg-cost', type: 'paragraph', data: { text: '<strong>Average cost</strong> (unit cost) is how much it costs to produce each individual unit. As output rises, fixed costs are spread over more units, so average cost <em>falls</em> — this is the basis of economies of scale. A business aiming to compete on price should look to drive down its average cost through higher output.' } },
     { id: 'enr-t7a-call-netflix', type: 'callout', data: { style: 'key', title: 'Real Brand: Netflix', text: '<strong>Netflix has enormous fixed costs</strong> — billions annually on content licensing, original productions, and global server infrastructure. Yet its variable cost per additional subscriber is close to zero (no extra staff, no physical materials). Signing up 1 million more subscribers barely changes total costs, meaning each new subscriber generates almost pure contribution. This is why scale matters so much in subscription businesses.' } },
-    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Relatable Example: School Bake Sale', text: 'Running a school bake sale: the stall hire fee (£10) is a <strong>fixed cost</strong> — you pay it whether you sell 0 or 100 cupcakes. The flour, sugar, and cases per cupcake are <strong>variable costs</strong>. If each cupcake costs £0.40 in ingredients and you bake 50, Total Costs = £10 + (£0.40 × 50) = £30. Average cost per cupcake = £30 ÷ 50 = £0.60.' } }
+    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Relatable Example: School Bake Sale', text: 'Running a school bake sale: the stall hire fee (£10) is a <strong>fixed cost</strong> — you pay it whether you sell 0 or 100 cupcakes. The flour, sugar, and cases per cupcake are <strong>variable costs</strong>. If each cupcake costs £0.40 in ingredients and you bake 50, Total Costs = £10 + (£0.40 × 50) = £30. Average cost per cupcake = £30 ÷ 50 = £0.60.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Ensure calculations show working: fixed costs \u00f7 units = fixed cost per unit; variable costs \u00d7 units = total variable; fixed + variable = total cost. Breaking down the calculation demonstrates method and catches errors\u2014examiners award process marks even if final answer slips."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Misclassifying costs: e.g., managers' salaries are fixed (paid regardless of output); raw materials are variable (increase with production). One or two misclassifications corrupt all downstream calculations\u2014verify classifications against scenarios carefully."
+      }
+    }
   ],
   recall: {
     enabled: true,

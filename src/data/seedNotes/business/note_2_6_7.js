@@ -207,6 +207,24 @@ export const note_business_2_6_7 = {
         title: 'Student Perspective: You Can Own Part of a plc',
         text: 'When a company floats on the stock exchange, anyone — including students — can buy shares. Apps like <b>Trading 212</b> or <b>Hargreaves Lansdown</b> let you invest from as little as £1 in fractional shares of listed companies. You then become a part-owner of that plc: entitled to dividends (a share of profits) and voting rights at the Annual General Meeting (AGM). This is the democratising power of the plc structure — it turns large corporations into assets that ordinary people can own a slice of, with limited liability protecting them from losing more than they invest.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "In flotation questions, explain the mechanism: underwriters manage share sale, regulatory approvals required (FSA listing rules), listing rules impose transparency. Then weigh benefits (capital, prestige) against drawbacks (cost, loss of control). This structure maximises marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Presenting flotation as a simple route to unlimited cash. Flotation costs are substantial (3\u20137% of funds raised), regulatory hurdles are high, and founders lose control through shareholder governance. Many firms rationally avoid going public."
+      }
     }
   ],
   recall: {

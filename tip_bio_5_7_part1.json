@@ -1,0 +1,114 @@
+[
+  {
+    "file": "note_5_7_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often state that respiration 'produces energy'. Remember that energy cannot be created or destroyed; instead, respiration releases energy stored in respiratory substrates and uses it to synthesise ATP."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing glycolysis, explicitly mention that it occurs in the cytoplasm and requires no oxygen, distinguishing it clearly from the subsequent stages in the mitochondria."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Since glycolysis produces two molecules of pyruvate per glucose molecule, the link reaction occurs twice for every glucose molecule entering respiration. Don't forget to multiply the products (acetyl coenzyme A, reduced NAD, and CO₂) by two!"
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Look at the Bigger Picture",
+          "text": "In exam questions, you are rarely asked to name all the intermediate compounds of the Krebs cycle. Focus instead on the number of reduced carrier molecules (NADH and FADH₂), CO₂, and ATP produced per cycle."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Role of Oxygen",
+          "text": "The most common error is forgetting the exact role of oxygen. It acts as the 'final electron acceptor', combining with electrons emerging from the electron transport chain and protons from the matrix to form water. Without it, the entire chain (and Krebs cycle) would halt."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Mammalian vs Yeast Anaerobic Respiration",
+          "text": "Be careful to distinguish between the two pathways: mammals produce lactate via a reversible reaction (without releasing carbon dioxide), while yeast/plants produce ethanol and carbon dioxide in an irreversible reaction."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Interpreting RQ Values",
+          "text": "An RQ greater than 1.0 indicates that a mixture of aerobic and anaerobic respiration is taking place, since anaerobic respiration releases CO₂ without using any more O₂."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Control Variables in Respirometry",
+          "text": "Examiners often ask how to set up a control respirometer. A proper control must contain an equal volume/mass of an inert substance (like glass beads) instead of the organism, to account for volume changes driven solely by temperature or atmospheric pressure fluctuations."
+        }
+      }
+    ]
+  }
+]

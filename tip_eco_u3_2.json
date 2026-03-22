@@ -1,0 +1,142 @@
+{
+  "note_economics_3_16_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Derived demand for labour depends on the derived demand for the product being produced. If product demand falls, labour demand falls — this is key to explaining unemployment in declining industries.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_16_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Students confuse labour demand elasticity with price elasticity of demand. Labour demand elasticity depends on: product demand elasticity, proportion of labour costs in total costs, and ease of factor substitution — not product price sensitivity.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_16_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "For most workers, the substitution effect (higher wage → work more) dominates the income effect (higher wage → work less), making labour supply positively sloped. However, recognise that backwards-bending curves can occur at very high wages.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_16_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Not all occupations have the same labour supply elasticity. Professional services often have inelastic supply (higher qualifications), while unskilled labour may have more elastic supply — always justify why supply is elastic or inelastic for a specific labour market.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_16_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Labour market equilibrium may not equal full employment. If equilibrium is at e.g. 95% employment, the remaining 5% represents natural/frictional unemployment, not necessarily market failure.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_16_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In perfectly competitive labour markets, firms are wage-takers: they cannot set wages below the market rate (workers will leave) or above it (no profit motive). Wages equal workers' marginal revenue product (MRP).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_16_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Monopsony power does not automatically lead to lower wages and employment. If monopsonists operate with increasing labour supply costs, they may employ similar quantities but still pay below MRP. Distinguish between monopsony power and actual wage/employment outcomes.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_16_7.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Public-sector wages are often set by independent pay review bodies (e.g. for NHS, teachers), not market forces. Examiners expect you to explain how pay settlements differ from competitive private-sector wage determination.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_16_8.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Geographical immobility is not just about transport costs. High housing prices, family ties, regional identity, and reluctance to relocate create persistent regional unemployment differences — the immobility is structural, not just logistical.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_16_9.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Occupational immobility creates structural unemployment: workers may be willing to work but lack skills for available jobs. This justifies retraining policies, but explain why retraining is costly and takes time.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_17_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always link market failure to the case for intervention: monopoly power, information asymmetry, externalities, or inequality. Avoid claiming intervention is needed without identifying the specific market failure first.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_17_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Not all monopolies harm consumers or warrant breaking up. Natural monopolies (high barriers to entry, declining average costs) may be more efficient when large. Distinguish between structural and exploitative monopolies before recommending controls.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_17_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "A contestable market can have few firms but behave competitively if barriers to entry are low. Examiners expect you to explain why contestability (threat of entry) constrains incumbent firm behaviour even without actual competition.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_17_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Regulation for supplier and worker protection does not automatically reduce efficiency — it may internalise externalities or reduce information failures. Argue whether efficiency improves or worsens based on the specific regulation and market context.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_17_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Intervention may improve allocative efficiency (output at P=MC) but worsen productive efficiency (highest output per input). Distinguish between these two types of efficiency when evaluating regulatory outcomes.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_17_5.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Government cannot always correct market failure better than markets self-correct. Government failure (rent-seeking, information asymmetry, unintended consequences) may make intervention worse than the original problem.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_17_6.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Labour markets warrant special intervention cases because they differ from product markets: immobility, information imbalance (employers know more), and externalities (e.g. training creates spillovers). Use these distinctions to justify labour-specific policies.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_17_7.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Minimum wage does not always cause unemployment — it depends on whether the binding minimum is set above, at, or only slightly above equilibrium wage. If labour supply is inelastic, employment may barely fall. Evaluate empirical elasticities, don't assume automatic job loss.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_17_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Tax incidence (final burden) falls on whichever side of the market is more inelastic. A labour tax burden falls more on inelastic workers than elastic employers — use supply and demand slopes to trace who really pays.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_17_9.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Anti-discrimination laws reduce discrimination but do not fully eliminate occupational immobility caused by skills gaps, geographic mismatch, or caring responsibilities. Laws improve access but do not solve structural labour market barriers.",
+      "style": "warning"
+    }
+  ]
+}

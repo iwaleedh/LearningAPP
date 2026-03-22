@@ -112,6 +112,24 @@ export const note_business_2_9_7 = {
         "title": "Relatable: Lean Revision — Cut the Waste",
         "text": "Think of lean production like efficient revision. Re-reading every textbook page (overproduction of notes) and highlighting everything (excess processing) are forms of waste. A lean approach: identify exactly which topics will be examined (JIT — only learn what's needed), use flashcards made by you (zero-defect, self-checked), and tweak your technique after each mock (Kaizen). Same time, far better results."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Contrast JIT (no buffer = faster cash flow, no waste) with risks (any supplier delay = production halt). Show how Toyota pioneered JIT but required long-term supplier partnerships and reliable logistics. Not plug-and-play."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating JIT as universally superior. It works beautifully in stable environments (Japanese manufacturing post-WWII) but fails under disruption (COVID supply chain chaos revealed JIT fragility). Context and resilience matter."
+      }
     }
   ],
   recall: {

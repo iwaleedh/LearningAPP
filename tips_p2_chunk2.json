@@ -1,0 +1,326 @@
+{
+  "note_physics_2_13_0.js": [
+    {
+      "style": "warning",
+      "title": "Inverse Square Law is NOT Linear",
+      "text": "Common error: Students assume intensity scales linearly with distance. Actually, intensity is inversely proportional to r² (I ∝ 1/r²). If distance doubles, intensity becomes 1/4, not 1/2. This appears frequently in exam calculations — always use the full inverse square formula."
+    },
+    {
+      "style": "tip",
+      "title": "Spherical Wavefronts Assumption",
+      "text": "The inverse square law only applies to spherical wavefronts from point sources. Always verify the problem describes a point source radiating spherically. For plane waves or bounded sources, the relationship is different."
+    }
+  ],
+  "note_physics_2_13_1.js": [
+    {
+      "style": "warning",
+      "title": "Angles Measured from Normal, NOT from Surface",
+      "text": "Critical error: Students measure angles from the surface instead of from the normal. Snell's law states: n₁ sin θ₁ = n₂ sin θ₂, where θ is always measured perpendicular to the boundary. Measuring from the surface gives sin(90° − θ) and produces completely wrong answers."
+    },
+    {
+      "style": "tip",
+      "title": "Refractive Index Sign Convention",
+      "text": "When light enters a denser medium, it bends toward the normal (θ decreases). Memorise: denser → bend toward normal, less dense → bend away. This visual check helps catch calculation errors in exam work."
+    }
+  ],
+  "note_physics_2_13_2.js": [
+    {
+      "style": "warning",
+      "title": "Critical Angle Only at Denser→Less Dense Boundary",
+      "text": "Critical angle ONLY exists when light travels from a denser to a less dense medium (higher n to lower n). If light enters a denser medium, total internal reflection is impossible — refraction always occurs. Watch for exam tricks using this."
+    },
+    {
+      "style": "tip",
+      "title": "Define Critical Angle Correctly",
+      "text": "The critical angle θc is the angle of incidence at which the angle of refraction equals 90°. When θᵢ > θc, total internal reflection occurs. Use sin θc = n₂/n₁ (less dense/more dense)."
+    }
+  ],
+  "note_physics_2_13_3.js": [
+    {
+      "style": "warning",
+      "title": "Total Internal Reflection Requires TWO Conditions",
+      "text": "Both conditions MUST be met: (1) Light travels from denser to less dense medium, AND (2) angle of incidence θᵢ > critical angle θc. Students often forget the first condition. If light enters a denser medium, TIR cannot occur regardless of angle."
+    },
+    {
+      "style": "tip",
+      "title": "Critical Angle Formula Direction",
+      "text": "Always use sin θc = n₂/n₁ where n₂ is the less dense medium. Reversing this gives 1/sin θc instead of sin θc, a factor error of 100+. Double-check: critical angle should be around 30-50° for common materials."
+    }
+  ],
+  "note_physics_2_13_4.js": [
+    {
+      "style": "tip",
+      "title": "Core Practical 6: Graph Must Pass Through Origin",
+      "text": "When plotting sin θᵣ vs sin θᵢ using Snell's law (n sin θ₁ = constant), the graph must be a straight line through the origin. If your graph doesn't pass through (0,0), recheck your angle measurements — likely systematic error using protractor."
+    },
+    {
+      "style": "warning",
+      "title": "Measure Angles to ±1° Precision",
+      "text": "Use the protractor correctly: place centre on the normal at the refraction point, measure to ray line. Small angle errors (±2°) create significant errors in sin θ due to the nonlinear sine function. Always take multiple measurements and average."
+    }
+  ],
+  "note_physics_2_13_5.js": [
+    {
+      "style": "warning",
+      "title": "Sign Convention: f and Power Change Sign with Lens Type",
+      "text": "Converging lens: f > 0, P > 0 (thicker at centre). Diverging lens: f < 0, P < 0 (thinner at centre). Forgetting this sign flips all subsequent calculations. Always state the sign explicitly when first identifying the lens type."
+    },
+    {
+      "style": "tip",
+      "title": "Focal Length vs Optical Centre",
+      "text": "Focal point F is where parallel rays converge (or appear to diverge from). Optical centre O is the point where a ray passes straight through undeviated. These are different points — do not confuse them in ray diagrams."
+    }
+  ],
+  "note_physics_2_13_6.js": [
+    {
+      "style": "tip",
+      "title": "Ray Diagram: Draw from Object Tip, Not Object Base",
+      "text": "Always draw the three principal rays starting from the TIP of the object (not the base). The three rays are: (1) parallel to axis through F, (2) through optical centre O straight, (3) through F emerging parallel. The intersection of these rays marks the image tip position."
+    },
+    {
+      "style": "warning",
+      "title": "Minimum 3 Rays Required in Exam",
+      "text": "Examiners require at least three principal rays to award full marks for a ray diagram. Two rays are insufficient. All three rays must be clearly drawn, labelled, and intersect at a single image point (or appear to originate from one point for virtual images)."
+    }
+  ],
+  "note_physics_2_13_7.js": [
+    {
+      "style": "warning",
+      "title": "CRITICAL: Convert cm to m Before Using P = 1/f",
+      "text": "Most common error: f given in cm, but P = 1/f requires f in METRES. If f = 20 cm = 0.2 m, then P = 1/0.2 = 5.0 D (not 0.05 D). A factor-of-100 error. Always convert focal length to metres BEFORE calculating power. Check: typical lenses have P values 1–10 D."
+    },
+    {
+      "style": "tip",
+      "title": "Power Units: Always Dioptres (D) not cm⁻¹",
+      "text": "Power P is defined as P = 1/f where f is in metres. The unit is dioptres (D), not dioptre-cm. If f = 50 mm = 0.05 m, then P = 20 D. Students sometimes use cm⁻¹ notation (0.5 cm⁻¹), which is confusing in exams — always use dioptres."
+    }
+  ],
+  "note_physics_2_13_8.js": [
+    {
+      "style": "tip",
+      "title": "Lenses in Contact: Powers Add with SIGNS",
+      "text": "P_total = P₁ + P₂. Crucially: include signs! A +5 D converging lens with a −3 D diverging lens gives P_total = +5 ± 3 = +2 D. If you forget signs, you get wrong total power. Equivalent: 1/f_total = 1/f₁ + 1/f₂."
+    },
+    {
+      "style": "warning",
+      "title": "Opposite Powers Can Cancel",
+      "text": "If P₁ = +5 D and P₂ = −5 D, then P_total = 0 — the combination acts as a plane glass block (no net focusing). Exam questions sometimes exploit this. Always perform the sign addition; do not assume powers combine additively without regard to sign."
+    }
+  ],
+  "note_physics_2_13_9.js": [
+    {
+      "style": "tip",
+      "title": "Quick Rule: v Tells You Real vs Virtual",
+      "text": "Using real-is-positive convention: v > 0 = image is REAL (inverted, can project). v < 0 = image is VIRTUAL (upright, cannot project). This one value tells you multiple image properties simultaneously. Always calculate v first and check its sign."
+    },
+    {
+      "style": "warning",
+      "title": "Virtual Images Cannot Be Projected on Screen",
+      "text": "A key distinction in exam questions: real images form where light rays actually converge (can be projected, e.g., on a screen). Virtual images form where light rays APPEAR to come from (cannot be projected, e.g., in a mirror or magnifying glass). If a question asks 'can this image be projected?', check the sign of v."
+    }
+  ],
+  "note_physics_2_13_10.js": [
+    {
+      "style": "tip",
+      "title": "Lens Equation: Rearrange BEFORE Substituting",
+      "text": "To find v: start with 1/v + 1/u = 1/f, then rearrange to 1/v = 1/f − 1/u BEFORE substituting numbers. This reduces arithmetic errors. Calculate 1/v first, then take the reciprocal to find v. Always check: if f is positive (converging), v should be positive for typical object distances."
+    },
+    {
+      "style": "warning",
+      "title": "Always Carry the Sign of v Through to Magnification",
+      "text": "The sign of v is essential for determining image type. If your calculation gives v = +20 cm, the image is real and inverted. If it gives v = −20 cm, the image is virtual and upright. Discarding the sign loses critical information. Use m = v/u to get magnification with correct sign (negative m = inverted, positive m = upright)."
+    }
+  ],
+  "note_physics_2_13_11.js": [
+    {
+      "style": "tip",
+      "title": "Magnification Sign Interpretation",
+      "text": "m = v/u. Negative m means image is INVERTED (real image). Positive m means image is UPRIGHT (virtual image). |m| > 1 means enlarged. |m| < 1 means diminished. Always interpret both the sign and magnitude separately — they tell different things."
+    },
+    {
+      "style": "warning",
+      "title": "Magnification is a Ratio, Not a Percentage",
+      "text": "If m = −2, the image is twice the size of the object (inverted). If m = −0.5, the image is half the size (inverted). Do NOT express as '−200%' or '−50%' in physics exams — use the ratio notation. Examiners expect m = −2, not m = 2× or m = 200%."
+    }
+  ],
+  "note_physics_2_13_12.js": [
+    {
+      "style": "tip",
+      "title": "Polarisation Reduces Intensity",
+      "text": "When unpolarised light passes through a polariser, the transmitted intensity is half the incident intensity (I_transmitted = I_incident / 2). When polarised light passes through an analyser at angle θ to the polarisation direction, use Malus's law: I = I₀ cos² θ."
+    },
+    {
+      "style": "warning",
+      "title": "Malus's Law: Angle Between Polarisation Directions",
+      "text": "In I = I₀ cos² θ, the angle θ must be measured between the polarisation direction of the incident light and the axis of the analyser. If two polarisers are at 90° to each other, NO light passes (I = 0). This is a common exam setup — always identify the angle carefully."
+    }
+  ],
+  "note_physics_2_14_0.js": [
+    {
+      "style": "tip",
+      "title": "Diffraction is Significant When Gap ≈ Wavelength",
+      "text": "Diffraction only becomes noticeable when the gap size is comparable to the wavelength: gap ≈ λ or smaller. Ultrasound (λ ≈ mm) diffracts around small obstacles, but visible light (λ ≈ 500 nm) diffracts only through narrow slits. Always compare the physical dimension to wavelength."
+    },
+    {
+      "style": "warning",
+      "title": "Diffraction Does NOT Change Frequency",
+      "text": "Key distinction: diffraction spreads waves, BUT the frequency stays constant. If you measure the diffracted waves, they have the same frequency as the incident wave, but their direction and amplitude change. Wavelength and speed adjust to maintain f = v/λ."
+    }
+  ],
+  "note_physics_2_14_1.js": [
+    {
+      "style": "tip",
+      "title": "Diffraction Grating: Maximum Order Must Be an Integer",
+      "text": "Using nλ = d sin θ, solve for n: n = d sin θ / λ. The maximum order n_max occurs when sin θ ≈ 1 (grazing angle). CRITICAL: round DOWN to the nearest integer. If d sin θ / λ = 2.9, then n_max = 2, not 3. Examiners always test this."
+    },
+    {
+      "style": "warning",
+      "title": "Diffraction Maxima Appear in Pairs",
+      "text": "For a symmetric grating, maxima appear at ±θ to the central axis. So if a first-order maximum appears at +20°, another appears at −20°. Always count both sides. If the question shows only one side, remember there's a mirror image on the other side (except for the zero-order central maximum, which is unique)."
+    }
+  ],
+  "note_physics_2_14_2.js": [
+    {
+      "style": "tip",
+      "title": "Core Practical 8: Use tan θ = x/D for Small Angles",
+      "text": "Measure the distance x from central maximum to first-order maximum on the screen, and the distance D from grating to screen. Then tan θ ≈ x/D. For the grating equation nλ = d sin θ, you can often approximate sin θ ≈ tan θ when θ is small (less than 30°), so nλ ≈ d(x/D)."
+    },
+    {
+      "style": "warning",
+      "title": "Identify Order Correctly: Central Max is n=0",
+      "text": "The brightest central spot is the zero-order maximum (n=0, occurs at θ=0°). The next bright spots on either side are first-order (n=±1), then second-order (n=±2), etc. Students sometimes miscounted by treating the central max as n=1 — always verify you're measuring from the correct reference."
+    }
+  ],
+  "note_physics_2_14_3.js": [
+    {
+      "style": "tip",
+      "title": "Electron Diffraction Confirms de Broglie Hypothesis",
+      "text": "Davisson & Germer (1927) fired electrons at a nickel crystal and observed a diffraction pattern identical to X-ray diffraction from the same crystal. This proved electrons have a wavelength. Higher electron energy → shorter wavelength → tighter diffraction rings. This is THE key experiment linking matter to de Broglie wavelength."
+    },
+    {
+      "style": "warning",
+      "title": "Electron Wavelength is Extremely Small",
+      "text": "Electrons accelerated through typical lab voltages (kV range) have wavelengths of picometres (10⁻¹² m) — comparable to atomic spacing. This is why electron diffraction requires crystalline materials as the 'grating'. Free electrons in vacuum do not show diffraction because there's nothing to cause it."
+    }
+  ],
+  "note_physics_2_14_4.js": [
+    {
+      "style": "tip",
+      "title": "de Broglie Wavelength: λ = h/p",
+      "text": "For any particle: λ = h/p = h/(mv). Planck's constant h = 6.63 × 10⁻³⁴ J·s is the key scaling factor. A cricket ball at 30 m/s has λ ≈ 10⁻³⁴ m — unmeasurably small. An electron at 10⁷ m/s has λ ≈ 0.1 nm — observable! Momentum makes the difference."
+    },
+    {
+      "style": "warning",
+      "title": "Wavelength Decreases with Increasing Momentum",
+      "text": "Faster particles (higher p) have shorter wavelengths. A 5 kV electron has λ ≈ 17 pm. A 10 kV electron has λ ≈ 12 pm (roughly 1/√2 factor). Use λ = h/p systematically; do not try to estimate which is smaller without calculating."
+    }
+  ],
+  "note_physics_2_14_5.js": [
+    {
+      "style": "tip",
+      "title": "Phase Change at Fixed Boundary (Denser Medium)",
+      "text": "When a wave reflects from a FIXED end (or boundary into denser medium), the reflected wave undergoes a phase change of π radians (180°, or half a wavelength). Visual check: the reflected wave inverts. At a FREE end, no phase change occurs."
+    },
+    {
+      "style": "warning",
+      "title": "Frequency Is Always Conserved; Wavelength Changes",
+      "text": "Key principle: when a wave reflects or refracts, its frequency never changes. But wavelength and speed adjust: λ = v/f. If a 5 Hz wave reflects from a fixed boundary, it's still 5 Hz, but if speed changes during propagation (e.g., different medium), wavelength changes accordingly. Always verify: product of speed × frequency stays constant."
+    }
+  ],
+  "note_physics_2_14_6.js": [
+    {
+      "style": "warning",
+      "title": "CRITICAL: Factor of 2 — Wave Goes Out AND Back",
+      "text": "Most common student error: using d = vt instead of d = vt/2. The signal travels from source to reflector (distance d) and back to the detector — so the total distance is 2d. Thus: d = vt/2. Forgetting the factor of 2 gives answers that are twice too large. Always show this factor explicitly."
+    },
+    {
+      "style": "tip",
+      "title": "Pulse-Echo Applications: Sonar, Ultrasound, Radar",
+      "text": "All pulse-echo methods measure the time delay between transmission and echo return. Divide by 2 to get the distance. In medical ultrasound, the speed of sound in tissue is ~1500 m/s (not 343 m/s in air). In radar, use speed of light c = 3 × 10⁸ m/s. Always check the medium's propagation speed."
+    }
+  ],
+  "note_physics_2_14_7.js": [
+    {
+      "style": "tip",
+      "title": "Wave-Particle Duality: Complementary, Not Contradictory",
+      "text": "Light shows WAVE behaviour in diffraction and interference experiments. Light shows PARTICLE behaviour in photoelectric effect and atomic spectra. These are not contradictions — they're complementary descriptions needed for a complete picture. Similarly, matter shows both wave (electron diffraction) and particle (collision) properties."
+    },
+    {
+      "style": "warning",
+      "title": "Duality Depends on the Experiment Type",
+      "text": "Which property manifests — wave or particle — depends entirely on what you measure. If you do a diffraction experiment, you observe waves. If you do a collision experiment, you observe particles. Both are real. Do not think one is 'more true' than the other — they're conditional on experimental context."
+    }
+  ],
+  "note_physics_2_14_8.js": [
+    {
+      "style": "tip",
+      "title": "Photon Energy: E = hf = hc/λ",
+      "text": "Use whichever form fits the given data. If frequency is given, use E = hf. If wavelength is given, use E = hc/λ. Higher frequency (shorter wavelength) photons carry more energy. Always include units: energy in joules, or in eV (1 eV = 1.6 × 10⁻¹⁹ J)."
+    },
+    {
+      "style": "warning",
+      "title": "Photon Energy vs Intensity",
+      "text": "The energy of a SINGLE photon depends only on frequency: E = hf. The number of photons per second (and thus total intensity) depends on the source brightness. Brightness (intensity) and photon energy are independent quantities — do not confuse them. A dim UV source has fewer photons per second than a bright red laser, but each photon carries more energy."
+    }
+  ],
+  "note_physics_2_15_0.js": [
+    {
+      "style": "warning",
+      "title": "Misconception: Intensity Does NOT Affect KE_max",
+      "text": "Students often think: 'brighter light = more energy = faster electrons'. FALSE. In the photoelectric effect, KE_max depends ONLY on frequency: KE_max = hf − Φ. Intensity affects the NUMBER of photoelectrons per second, not their speed. Doubling intensity doubles the emission rate, but KE_max stays the same."
+    },
+    {
+      "style": "tip",
+      "title": "Wave Model Fails on All But One Observation",
+      "text": "The classical wave model predicts: (1) emission should increase gradually with intensity (FALSE — threshold frequency shown immediate emission). (2) Increasing intensity should increase KE_max (FALSE — only frequency affects KE_max). (3) No threshold frequency (FALSE — observed). (4) Finite time lag before emission (FALSE — emission is instantaneous). The only point where wave model matches: emission RATE scales with intensity."
+    }
+  ],
+  "note_physics_2_15_1.js": [
+    {
+      "style": "warning",
+      "title": "KE_max is Maximum — Most Electrons Have Less Energy",
+      "text": "KE_max is achieved only by electrons at the very surface of the metal that escape with zero energy loss. Electrons deeper in the metal lose some photon energy climbing to the surface, so they emerge with KE < KE_max. Therefore, KE_max is the UPPER LIMIT of the distribution, not the average. Examiners test this distinction carefully."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Using the KE_max vs Frequency Graph",
+      "text": "A plot of KE_max against frequency f is a straight line with: gradient = h (Planck's constant — can be verified experimentally), x-intercept = f₀ (threshold frequency), y-intercept = −Φ (negative work function). From any two points on the graph, calculate h = ΔKE_max / Δf. This is a common exam calculation."
+    }
+  ],
+  "note_physics_2_15_2.js": [
+    {
+      "style": "warning",
+      "title": "Unit Conversion Direction: eV is SMALLER Unit than J",
+      "text": "1 eV = 1.6 × 10⁻¹⁹ J. Since eV is a much smaller unit, the same energy expressed in eV will be a LARGER number than in joules. Example: 3.2 × 10⁻¹⁹ J = 2 eV. If your converted answer is smaller in eV than in J, you've converted backwards. Always sanity-check the magnitude."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Check Consistent Units in Photoelectric Equation",
+      "text": "In hf = Φ + KE_max, ALL terms must be in the same units. If Φ is given in eV (typical for data sheets), convert to joules: Φ (in J) = [Φ in eV] × 1.6 × 10⁻¹⁹. Then substitute all values in joules. Mixing units (e.g., hf in joules but Φ in eV) is a common exam error producing completely wrong answers."
+    }
+  ],
+  "note_physics_2_15_3.js": [
+    {
+      "style": "warning",
+      "title": "Filament Bulb Cannot Cause Photoelectric Emission from Zinc",
+      "text": "Visible light has frequency below the threshold frequency f₀ for zinc. No matter how bright a filament bulb is, individual photons carry insufficient energy (hf < Φ) to eject electrons. The wave model wrongly predicts that accumulated energy from many dim photons could cause emission — physics exams test this misconception."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Tip: Three Must-State Elements in Photoelectric Effect Answers",
+      "text": "(1) THRESHOLD FREQUENCY: f₀ = Φ/h is the minimum frequency needed; photons with f < f₀ carry insufficient energy (hf < Φ). (2) ONE-TO-ONE INTERACTION: one photon ejects at most one electron; energy never accumulates across multiple photons. (3) INSTANTANEOUS EMISSION: emission occurs immediately upon illumination, with zero time lag — contradicts the wave model prediction. Reference these three points in every photoelectric effect question for full exam marks."
+    }
+  ],
+  "note_physics_2_15_4.js": [
+    {
+      "style": "tip",
+      "title": "Line Spectrum is the Elemental Fingerprint",
+      "text": "Each element has a unique set of energy levels, producing a unique emission line spectrum. Astronomers identify star composition by observing absorption lines (cooler outer gas absorbs at the same frequencies it would emit). The same set of wavelengths appears in both emission and absorption spectra — just complementary patterns (bright lines vs dark lines)."
+    },
+    {
+      "style": "warning",
+      "title": "Discrete Lines Prove Energy Levels Are Quantised",
+      "text": "If electrons could lose energy by any amount (classical prediction), we'd observe a continuous spectrum. Instead, we see discrete lines corresponding to specific transitions between quantised energy levels. This DIRECTLY CONTRADICTS classical physics. Each line's frequency satisfies: f = ΔE / h, where ΔE is the energy gap between two specific levels. Discrete lines = quantisation."
+    }
+  ]
+}

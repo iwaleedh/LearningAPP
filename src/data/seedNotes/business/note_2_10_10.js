@@ -148,6 +148,24 @@ export const note_business_2_10_10 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Intellectual property rights — patents (20 years), trademarks (indefinite), copyright (life + 70 years) and design rights (up to 25 years) — give businesses exclusive rights over their innovations and creative works. IP protection can generate licensing revenue, preserve competitive advantage and incentivise R&D. However, registering and enforcing IP rights involves significant cost and complexity.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Link IP rights to firm competitiveness and innovation incentives. Mention how patents create temporary monopolies (20 years typically) allowing firms to recoup R&D investment and encourage new product development. This shows economic understanding."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often list IP types without explaining their durations or business benefits. Generic answers like 'patents prevent copying' miss the strategic value. Explain WHY businesses invest in IP and HOW it affects innovation and profitability."
+      }
     }
   ],
   recall: {

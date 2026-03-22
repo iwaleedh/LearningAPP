@@ -22,7 +22,25 @@ export const note_business_2_7_10 = {
     ]}},
     { "id": "enr-t7b-call-brand", "type": "callout", "data": { "style": "key", "title": "Real World: Unilever and Flexible Planning", "text": "Unilever, one of the world's largest consumer goods companies with operations in over 190 countries, has moved towards rolling quarterly forecasts and flexible budget reviews. This allows business units to respond to local economic shifts — such as currency devaluation in emerging markets — without being bound by figures set a year in advance. It is a real-world application of the 'Beyond Budgeting' philosophy that addresses the rigidity drawback directly." } },
     { "id": "enr-t7b-call-student", "type": "callout", "data": { "style": "tip", "title": "Relatable: Revision Planning That Actually Works", "text": "A rigid revision timetable that says 'study 3 hours every day' collapses the moment sports fixtures, family events, or illness occur. A participative approach — designing your own plan around your real commitments with flexibility built in — is more realistic and easier to stick to. Students who own their schedule perform better, just as employees who help set their own budgets are more motivated to hit them." } },
-    { id: 'sum-1', type: 'summary', data: { text: 'Budgets can be inflexible, time-consuming, demotivating, and inaccurate if the business environment changes rapidly.' } }
+    { id: 'sum-1', type: 'summary', data: { text: 'Budgets can be inflexible, time-consuming, demotivating, and inaccurate if the business environment changes rapidly.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Budgeting limitations: time-consuming (distracts from operations), inflexible (rigid when environment changes), can drive dysfunctional behaviour (sandbagging, gaming targets). Conclude that budgeting is useful but must be paired with adaptive management and discretion."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming budgets are always accurate guides. Economic shocks, supply-chain disruption, or competitor moves invalidate budgets mid-year. High-performing firms use rolling forecasts and scenario planning *alongside* static budgets. Don't rely on budgets as truth\u2014treat them as tools requiring adjustment."
+      }
+    }
   ],
   recall: {
     enabled: true,

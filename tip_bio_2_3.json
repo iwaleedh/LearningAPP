@@ -1,0 +1,170 @@
+{
+  "note_2_3_0.js": [
+    {
+      "style": "warning",
+      "title": "RER vs SER Function",
+      "text": "Students often confuse RER and SER. Remember: RER has ribosomes attached and makes PROTEINS. SER lacks ribosomes and makes LIPIDS and CARBOHYDRATES. Do not mix these up in exam questions about organelle function."
+    },
+    {
+      "style": "tip",
+      "title": "Mitochondrial Structure & ATP",
+      "text": "Examiners frequently ask why mitochondria have cristae. Answer: the folds of the inner membrane increase the surface area for the electron transport chain, maximising ATP production. This is a key adaptational detail."
+    }
+  ],
+  "note_2_3_1.js": [
+    {
+      "style": "warning",
+      "title": "70S vs 80S Ribosomes",
+      "text": "Do NOT confuse prokaryotic 70S ribosomes with eukaryotic 80S ribosomes. This is heavily tested. Prokaryotes = 70S (smaller, simpler). Use this fact to distinguish between cell types if given an electron micrograph."
+    },
+    {
+      "style": "tip",
+      "title": "Peptidoglycan Wall vs Cellulose",
+      "text": "Both prokaryotes and plants have cell walls, but they are DIFFERENT compounds. Prokaryotes use peptidoglycan (murein); plant cells use cellulose. Examiners test this distinction frequently."
+    }
+  ],
+  "note_2_3_2.js": [
+    {
+      "style": "warning",
+      "title": "Why Cold, Isotonic, and Buffered?",
+      "text": "Do not just memorise these conditions\u2014understand WHY. Cold = slows enzyme activity (prevents damage). Isotonic = prevents osmotic lysis (bursting) or shrinkage of organelles. Buffered = prevents protein denaturation. Examiners ask for reasons."
+    },
+    {
+      "style": "tip",
+      "title": "Order of Centrifugation",
+      "text": "Heaviest organelles (nuclei) pellet first at low speeds; lightest (ribosomes) pellet last at highest speeds. If asked which organelle forms the first pellet, always answer NUCLEI. This is a consistent exam question."
+    }
+  ],
+  "note_2_3_3.js": [
+    {
+      "style": "warning",
+      "title": "Magnification \u2260 Resolution",
+      "text": "These are NOT the same thing. Magnification = how much larger the image is. Resolution = ability to distinguish between two close points. A light microscope can magnify x1500 but has poor resolution (~200nm). Examiners test this distinction every year."
+    },
+    {
+      "style": "tip",
+      "title": "Why TEM Shows Internal Detail",
+      "text": "TEM provides ultra-high resolution (0.1nm) because electron wavelength is much shorter than visible light. However, TEM images are 2D (two-dimensional cross-sections). If a question asks for 3D surface detail, the answer is SEM, not TEM."
+    }
+  ],
+  "note_2_3_4.js": [
+    {
+      "style": "warning",
+      "title": "Sister Chromatids vs Chromosomes",
+      "text": "This is the most common exam mistake. During prophase and metaphase, a chromosome = 2 sister chromatids joined at centromere. During anaphase, after centromeres divide, each chromatid = 1 separate chromosome. Do NOT say there are 92 chromatids at anaphase; there are 92 chromosomes."
+    },
+    {
+      "style": "tip",
+      "title": "DNA Replication Timing",
+      "text": "DNA replication happens during S PHASE (synthesis), not during mitosis itself. If asked 'when does DNA replicate,' answer S phase of interphase. Mitosis just distributes the already-replicated DNA."
+    }
+  ],
+  "note_2_3_5.js": [
+    {
+      "style": "warning",
+      "title": "Crossing Over vs Independent Assortment",
+      "text": "Both create genetic variation, but they are DIFFERENT mechanisms. Crossing over = exchange of alleles between homologous chromosomes (occurs prophase I). Independent assortment = random alignment of chromosome pairs at metaphase I. Examiners frequently ask you to distinguish between them."
+    },
+    {
+      "style": "tip",
+      "title": "Meiosis Maintains Chromosome Number",
+      "text": "The key reason for meiosis is to halve chromosome number for gametes, so upon fertilisation, the diploid state is restored. If asked 'why is meiosis important,' include both genetic variation AND chromosome number maintenance."
+    }
+  ],
+  "note_2_3_6.js": [
+    {
+      "style": "warning",
+      "title": "Order of Fertilisation Events",
+      "text": "The sequence matters a lot. Acrosome reaction \u2192 Cortical reaction \u2192 Nucleus fusion. Many students skip the cortical reaction. Remember: the CORTICAL REACTION prevents polyspermy by hardening the zona pellucida. This is tested almost every year."
+    },
+    {
+      "style": "tip",
+      "title": "Polyspermy is Prevented by the Cortical Reaction",
+      "text": "If asked 'how is polyspermy prevented,' the answer is the cortical reaction: cortical granules fuse with the egg membrane and release enzymes that harden the zona pellucida. Without this, multiple sperm could enter, causing problems."
+    }
+  ],
+  "note_2_3_7.js": [
+    {
+      "style": "warning",
+      "title": "Stem Cell Potency Definitions",
+      "text": "Totipotent = ANY cell type PLUS extra-embryonic tissues. Pluripotent = MOST cell types but NOT extra-embryonic. Multipotent = LIMITED cell types. These precise definitions are tested. If you confuse them, you lose marks."
+    },
+    {
+      "style": "tip",
+      "title": "Ethical Concerns with Embryonic Stem Cells",
+      "text": "Examiners often ask about ethical issues. Know this: extracting pluripotent stem cells from a blastocyst DESTROYS the embryo, raising questions about when life begins and embryo rights. This is a nuanced point that separates high marks from low marks."
+    }
+  ],
+  "note_2_3_8.js": [
+    {
+      "style": "warning",
+      "title": "Activators vs Repressors",
+      "text": "Activators INCREASE transcription; repressors DECREASE transcription. Do not confuse the direction of effect. Both bind to DNA, but they have opposite actions. Examiners test this with scenario questions."
+    },
+    {
+      "style": "tip",
+      "title": "Lac Operon: Inducer Changes Repressor Shape",
+      "text": "In the lac operon, when lactose (the inducer) binds the repressor, it CHANGES the repressor's shape so it cannot bind the operator. This is allosteric regulation. The repressor is not destroyed; it is inactivated. Many students miss this detail."
+    }
+  ],
+  "note_2_3_9.js": [
+    {
+      "style": "warning",
+      "title": "Methylation Silences Genes; Acetylation Activates Them",
+      "text": "Increased DNA methylation = gene OFF (repressed). Increased histone acetylation = gene ON (activated). This is a common opposites question. If reversed, you lose marks. Examiners love to ask this in true/false or short-answer format."
+    },
+    {
+      "style": "tip",
+      "title": "Epigenetics vs Mutation",
+      "text": "Epigenetic changes are heritable and affect gene EXPRESSION, but they do NOT change the DNA base sequence. Mutations change the base sequence. Do NOT confuse these. If asked 'is this a mutation,' and the DNA sequence is unchanged, the answer is 'no, it is epigenetic.'"
+    }
+  ],
+  "note_2_3_10.js": [
+    {
+      "style": "warning",
+      "title": "All Cells Have the SAME Genome",
+      "text": "This is a conceptual lynchpin. Every cell in a multicellular organism has the same DNA (except gametes). Cells differ because DIFFERENT GENES are expressed. If asked 'how are cells different if they have the same DNA,' explain that transcription factors activate specific genes in each cell type."
+    },
+    {
+      "style": "tip",
+      "title": "Differentiation is a Result of Gene Expression, Not Mutation",
+      "text": "Differentiation happens because specific transcription factors activate target genes, producing proteins that shape the cell. This is reversible under laboratory conditions (e.g., induced pluripotent stem cells). If asked 'is differentiation permanent,' technically it can be reversed if signalling changes."
+    }
+  ],
+  "note_2_3_11.js": [
+    {
+      "style": "warning",
+      "title": "Plant vs Mammalian Cloning Methods",
+      "text": "Do NOT mix them up. Plant cloning uses TISSUE CULTURE (totipotent explants \u2192 callus \u2192 differentiate into organs). Mammalian cloning uses SCNT (somatic nucleus \u2192 enucleated egg \u2192 electric shock \u2192 embryo \u2192 surrogate). Examiners give separate marks for each method."
+    },
+    {
+      "style": "tip",
+      "title": "Growth Hormones Drive Differentiation in Plant Tissue Culture",
+      "text": "In plant tissue culture, the ratio of auxin to cytokinin determines whether roots or shoots form. High auxin:cytokinin = roots. Low ratio = shoots. This is a testable detail that separates competent answers from basic ones."
+    }
+  ],
+  "note_2_3_12.js": [
+    {
+      "style": "warning",
+      "title": "Use the Correct Stain for the Cell Type",
+      "text": "Iodine solution stains STARCH in plant cell walls (appears yellow/brown). Methylene blue stains NUCLEI in animal cells (appears dark blue). If you use the wrong stain, the exam question asks you to predict what you would see, and you must get this right."
+    },
+    {
+      "style": "tip",
+      "title": "Coverslip Must Be Lowered at an Angle to Avoid Air Bubbles",
+      "text": "This is a core practical technique question. If asked 'why lower the coverslip at an angle,' the answer is: air bubbles refract light and appear as large thick-ringed structures that ruin the image. Lowering at an angle with a needle pushes air to the side, preventing this problem."
+    }
+  ],
+  "note_2_3_13.js": [
+    {
+      "style": "warning",
+      "title": "HCl Breaks Down the Middle Lamella, Separating Cells",
+      "text": "The strong hydrochloric acid at 60\u00b0C macerated (separates) cells by breaking down the middle lamella. Many students say 'it makes cells visible' or 'stains them,' which is wrong. If asked 'what is the purpose of HCl,' always answer 'to separate/macerate cells by dissolving the middle lamella.'"
+    },
+    {
+      "style": "tip",
+      "title": "Mitotic Index Indicates Tissue Growth Rate or Cancer",
+      "text": "Mitotic Index = (cells in mitosis) \u00f7 (total cells). A HIGH mitotic index = rapid cell division, indicating fast growth or possibly cancerous tissue. Examiners often ask you to interpret a calculated mitotic index. Low MI = slow growth. Know this link."
+    }
+  ]
+}

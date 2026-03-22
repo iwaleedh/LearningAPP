@@ -1,0 +1,108 @@
+{
+  "note_economics_1_2_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The Edexcel IAL exam often asks whether consumer behaviour is \"rational.\" In straightforward demand analysis, assume rationality. However, in questions about behavioural economics, acknowledge that real consumers often deviate from rationality due to biases, emotions, and limited information — this is covered in the next subtopic.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_2_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Behavioural economics questions often ask you to apply a specific bias to a given scenario. Practise identifying which bias best explains the described behaviour, then link it to a policy implication (e.g. status quo bias → default enrolment nudge). Always evaluate — nudges work but have limits.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_2_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When answering exam questions:\n• Label axes \"Price (£)\" and \"Quantity Demanded (units per period)\"\n• For a movement: draw an arrow along the existing curve\n• For a shift: draw a new curve and label it D₂\n• Always state the direction (rightward = increase in demand, leftward = decrease)",
+      "style": "tip"
+    },
+    {
+      "title": "Common Mistake",
+      "text": "Do not say \"demand increases\" when you mean \"quantity demanded increases\" — these are different concepts.\nPrice changes → movement; non-price factors → shift.\nA shift right means more is demanded at every price, not just a higher quantity at one price.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_2_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Remember: MU = 0 at the point of satiation (maximum TU). Negative MU = disutility. For exam diagrams, TU is an inverted-U shape peaking when MU crosses zero.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_2_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Remember demand determinants as PIRATES:\nP rices of related goods | I ncome | R ates of interest | A dvertising/tastes | T rends/fashion | E xpectations | S ize of population/demographics",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_2_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "At the top of a straight-line demand curve, PED is elastic (|PED| > 1).\nAt the midpoint, PED = 1 (unit elastic).\nAt the bottom, PED is inelastic (|PED| < 1).\nThis is because % change in price varies as you move along the curve.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_2_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "A profit-maximising firm never sells in the inelastic region of its demand curve (MR < 0 there). Revenue is maximised at unit elasticity (MR = 0). Always explain why TR changes using PED logic, not just stating it goes up or down.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_3_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always ask: did the price of the good change? If yes → movement. If a non-price factor changed → shift. In exam diagrams, draw a whole new supply curve for a shift, not just a new point.",
+      "style": "tip"
+    },
+    {
+      "title": "Common Mistake",
+      "text": "Students often confuse a change in the price of a related good with a movement. A change in the price of an input (e.g. oil) is a cost change → shifts supply. A change in the price of the good itself → movement along the existing curve.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_3_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In a 4+ mark question, chain your analysis: state the determinant → explain why it affects costs or profitability → state which direction supply shifts → state the effect on equilibrium price and quantity.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_3_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Any straight-line supply curve passing through the origin has PES = 1. A supply curve cutting the price axis has PES > 1 (elastic). A supply curve cutting the quantity axis has PES < 1 (inelastic).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_3_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The short run and long run are conceptual time periods — they are not fixed calendar durations. For a bakery, the long run might be 6 months; for a nuclear power station, it could be 10+ years. Always link the time period to the specific industry in your answer.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_3_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When asked about PES, always consider the time horizon and storability. A question about a fisherman's daily catch is very different from a question about global oil reserves. State your assumptions explicitly.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_3_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In a 6+ mark evaluation, consider both sides: legal constraints can protect innovation (patents incentivise R&D) but restrict supply and raise prices for consumers. Always weigh trade-offs.",
+      "style": "tip"
+    },
+    {
+      "title": "Common Mistake",
+      "text": "Do not say patents simply \"increase supply.\" They protect the patent holder's right to supply exclusively — for other firms, they are a barrier to entry that keeps supply lower than it would otherwise be.",
+      "style": "warning"
+    }
+  ]
+}

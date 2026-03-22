@@ -1,0 +1,218 @@
+{
+  "note_physics_1_4_0.js": [
+    {
+      "style": "tip",
+      "title": "Choosing Your Pivot",
+      "text": "ALWAYS take moments about a point where an unknown force acts \u2014 this eliminates that force from the equation entirely, simplifying the solution."
+    },
+    {
+      "style": "warning",
+      "title": "Perpendicular Distance Trap",
+      "text": "d must be the perpendicular distance from the pivot to the LINE OF ACTION of the force \u2014 NOT the distance along the beam. If force is at angle \u03b8 to lever arm: d = L sin \u03b8, or use perpendicular component F sin \u03b8."
+    }
+  ],
+  "note_physics_1_4_1.js": [
+    {
+      "style": "tip",
+      "title": "Stability & Centre of Gravity",
+      "text": "An object is stable if the vertical line through its CG falls WITHIN the base area. Two ways to increase stability: (1) lower the CG, (2) widen the base."
+    },
+    {
+      "style": "worked",
+      "title": "Real-World Application: Double-Decker Buses",
+      "text": "CG kept low by heavy engine/chassis at base. London buses must pass a tilt test \u2014 remain stable at 28\u00b0 without tipping. If all passengers move to top deck, CG rises and critical tipping angle decreases significantly."
+    }
+  ],
+  "note_physics_1_5_0.js": [
+    {
+      "style": "warning",
+      "title": "Work \u2260 Force",
+      "text": "A large force applied to a wall does ZERO work if the wall does not move (displacement = 0). Work requires BOTH force AND displacement in the direction of the force."
+    },
+    {
+      "style": "tip",
+      "title": "Choosing sin or cos",
+      "text": "When force is at angle \u03b8 to motion: If \u03b8 measured from HORIZONTAL (direction of motion) use cos \u03b8. If \u03b8 measured from VERTICAL, use sin \u03b8. Always use the component parallel to displacement."
+    }
+  ],
+  "note_physics_1_5_1.js": [
+    {
+      "style": "warning",
+      "title": "Kinetic Energy Depends on Speed, Not Velocity",
+      "text": "KE = \u00bdmv\u00b2 depends on SPEED (always positive), NOT velocity. A ball thrown upward and one thrown downward at the same speed have identical KE, even though velocities are opposite."
+    },
+    {
+      "style": "tip",
+      "title": "KE Equation Common Error",
+      "text": "When using KE = \u00bdmv\u00b2, only the SPEED is squared \u2014 not mass or \u00bd. If asked for 'loss of KE', calculate both values and subtract: \u0394KE = KE_initial \u2212 KE_final (no negative sign in answer)."
+    }
+  ],
+  "note_physics_1_5_2.js": [
+    {
+      "style": "warning",
+      "title": "Gravitational PE Reference Level Trap",
+      "text": "GPE = mgh depends on the chosen reference level (where h = 0). The absolute value of GPE is meaningless \u2014 only CHANGES in GPE (\u0394mgh) matter in calculations. Always define your reference level clearly."
+    },
+    {
+      "style": "tip",
+      "title": "Falling Objects: Energy Conservation",
+      "text": "For falling objects, use energy conservation instead of SUVAT: GPE lost = KE gained, so mgh = \u00bdmv\u00b2 \u2192 v = \u221a(2gh). This allows you to find speed without kinematic equations."
+    }
+  ],
+  "note_physics_1_5_3.js": [
+    {
+      "style": "tip",
+      "title": "Accounting for Energy Losses",
+      "text": "In conservation of energy problems involving real materials, some energy is always dissipated as heat and sound. Always mention this when comparing ideal calculated values to experimental results."
+    },
+    {
+      "style": "warning",
+      "title": "Friction & Energy Loss",
+      "text": "If questions state 'friction does work', include the friction term: mgh = \u00bdmv\u00b2 + W_friction, where W_friction = friction force \u00d7 distance. Do NOT ignore this \u2014 examiners specifically test whether you account for it."
+    }
+  ],
+  "note_physics_1_5_4.js": [
+    {
+      "style": "worked",
+      "title": "Power at Constant Velocity: P = Fv",
+      "text": "P = Fv is an alternative form useful when a constant force F moves at velocity v. For a car at constant speed against drag: P = F_drag \u00d7 v. At higher speeds, drag increases dramatically \u2192 power rises steeply (P \u221d v\u00b3 for aerodynamic drag)."
+    },
+    {
+      "style": "tip",
+      "title": "Unit Conversions for Power",
+      "text": "Power is often given in kW or MW in real-world contexts \u2014 ALWAYS convert to watts (W) before calculating with other SI units. Also: energy in kWh = power (kW) \u00d7 time (h), used on electricity bills."
+    }
+  ],
+  "note_physics_1_5_5.js": [
+    {
+      "style": "warning",
+      "title": "The 100% Efficiency Myth",
+      "text": "No real device is ever 100% efficient in practice. Some energy is ALWAYS lost to the surroundings as heat or sound. This statement appears in every exam \u2014 use it to show understanding."
+    },
+    {
+      "style": "worked",
+      "title": "Petrol vs Electric Motor Efficiency",
+      "text": "Petrol engine: ~25% efficient overall; 75% lost as heat. Electric motor: ~90% efficient. This enormous difference explains the environmental and economic case for electrification \u2014 less fuel wasted, lower CO\u2082 emissions."
+    }
+  ],
+  "note_physics_1_9_0.js": [
+    {
+      "style": "tip",
+      "title": "Unit Conversion Trap: Density",
+      "text": "Always convert cm\u00b3 to m\u00b3 when using SI units: 1 cm\u00b3 = 10\u207b\u2076 m\u00b3 (not 10\u207b\u00b3). When converting volumes, cube the conversion factor: (0.01 m)\u00b3 = 10\u207b\u2076 m\u00b3."
+    },
+    {
+      "style": "warning",
+      "title": "Density Determines Floating",
+      "text": "Objects float if density < fluid density, sink if > , neutral if = . Common mistake: confusing which density (object vs fluid) determines floating \u2014 always use: \u03c1_object / \u03c1_fluid = fraction submerged."
+    }
+  ],
+  "note_physics_1_9_1.js": [
+    {
+      "style": "warning",
+      "title": "Upthrust: Use FLUID Density, Not Object Density",
+      "text": "Upthrust = \u03c1_FLUID \u00d7 V_submerged \u00d7 g. ALWAYS use the density of the fluid, never the object density. This is a common exam error \u2014 misusing the wrong density entirely changes the answer."
+    },
+    {
+      "style": "tip",
+      "title": "The Iceberg Question",
+      "text": "Iceberg: \u03c1_ice = 917 kg/m\u00b3 in seawater \u03c1 = 1025 kg/m\u00b3. Fraction submerged = 917/1025 \u2248 89.5%, so only ~10.5% above water. This 90% hidden fraction explains why icebergs are dangerous to ships."
+    }
+  ],
+  "note_physics_1_9_2.js": [
+    {
+      "style": "warning",
+      "title": "Stokes' Law Domain: Not for High Speeds",
+      "text": "Stokes' Law F = 6\u03c0\u03b7rv applies ONLY to (1) small smooth spheres, (2) LOW speeds, (3) laminar (smooth) flow conditions. For fast-moving objects (cars, skydivers), drag follows QUADRATIC relationship F \u221d v\u00b2, NOT Stokes."
+    },
+    {
+      "style": "tip",
+      "title": "Exam Clue: Recognizing When to Use Stokes' Law",
+      "text": "Tiny ball bearing in thick oil or glycerol \u2192 Stokes' Law. Skydiver, falling raindrop, or car on road \u2192 use quadratic drag F = \u00bdC_D \u03c1 A v\u00b2. Examiners test whether you know the LIMITS of each model."
+    }
+  ],
+  "note_physics_1_9_3.js": [
+    {
+      "style": "warning",
+      "title": "Confirming Terminal Velocity Has Been Reached",
+      "text": "Before timing, ensure terminal velocity is reached by comparing times over TWO EQUAL distance intervals. If both times equal, the ball is moving at constant velocity. If second time is shorter, still accelerating \u2014 drop ball from higher point."
+    },
+    {
+      "style": "tip",
+      "title": "Temperature Control in Viscosity Experiment",
+      "text": "Viscosity of a liquid changes SIGNIFICANTLY with temperature. If temperature rises during experiment, viscosity drops and measured v_t increases. This is a major source of systematic error \u2014 conduct rapidly, repeat at constant room temperature."
+    }
+  ],
+  "note_physics_1_10_0.js": [
+    {
+      "style": "warning",
+      "title": "Hooke's Law Limit: Elastic Region Only",
+      "text": "F = kx applies ONLY up to the elastic limit. Beyond that, extension increases without proportional force increase. Always check whether the question is in the elastic region \u2014 if not, Hooke's Law fails."
+    },
+    {
+      "style": "tip",
+      "title": "Springs in Series vs Parallel",
+      "text": "Series springs: 1/k_eff = 1/k\u2081 + 1/k\u2082 \u2192 k_eff is SMALLER, springs softer (like two weak springs together). Parallel springs: k_eff = k\u2081 + k\u2082 \u2192 k_eff is LARGER, springs stiffer (support shared). Common error: confusing these \u2014 remember series = softer, parallel = stiffer."
+    }
+  ],
+  "note_physics_1_10_1.js": [
+    {
+      "style": "tip",
+      "title": "Young Modulus: Material Property, Spring Constant: Not",
+      "text": "Young Modulus E is a MATERIAL PROPERTY \u2014 same for all samples of steel, regardless of size. Spring constant k depends on material AND dimensions (length and cross-section). This is why E is used to compare material stiffness universally."
+    },
+    {
+      "style": "worked",
+      "title": "Why Materials Have Such Different E Values",
+      "text": "Steel E \u2248 200 GPa (used in bridges, buildings); Rubber E \u2248 0.01 GPa (20,000\u00d7 less stiff than steel). These enormous differences explain why steel is used for load-bearing structures and rubber for cushioning \u2014 the material selection is determined by Young Modulus."
+    }
+  ],
+  "note_physics_1_10_2.js": [
+    {
+      "style": "warning",
+      "title": "Biggest Uncertainty: Diameter Measurement",
+      "text": "In the Young modulus wire experiment, diameter measurement is the LARGEST source of error because d appears SQUARED in the area calculation: A = \u03c0d\u00b2/4. A 2% error in diameter becomes a 4% error in area \u2014 use micrometer carefully and take multiple readings."
+    },
+    {
+      "style": "tip",
+      "title": "Why Experimental E May Differ from Accepted Value",
+      "text": "If your calculated Young Modulus differs from 200 GPa (steel), the diameter measurement uncertainty usually dominates. Take at least 5 micrometer readings at different positions/planes and use the mean. Wire uniformity directly affects accuracy."
+    }
+  ],
+  "note_physics_1_10_3.js": [
+    {
+      "style": "tip",
+      "title": "Material Behaviour Classification",
+      "text": "BRITTLE materials (glass, ceramics) break suddenly with little plastic deformation \u2014 short stress-strain curve. DUCTILE materials (copper, steel) have large plastic region \u2014 long tails before breaking. Knowing which you're testing tells you what to expect."
+    },
+    {
+      "style": "warning",
+      "title": "Toughness vs Strength",
+      "text": "High breaking stress \u2260 high toughness. A material can be strong but brittle (breaks at high stress but suddenly). Tough materials have LARGE area under the entire stress-strain curve \u2014 absorb lots of energy before fracture. This matters for safety helmets (high toughness required)."
+    }
+  ],
+  "note_physics_1_10_4.js": [
+    {
+      "style": "warning",
+      "title": "Diameter Calculation Error",
+      "text": "COMMON EXAM ERROR: using diameter directly in area calculation. Remember A = \u03c0(d/2)\u00b2 = \u03c0d\u00b2/4, NOT \u03c0d\u00b2. If you forget to halve the diameter before squaring, your answer is off by a factor of 4."
+    },
+    {
+      "style": "tip",
+      "title": "Confirming You Stayed in Elastic Region",
+      "text": "Before analyzing data, check that loading and unloading curves overlap on your graph. If they diverge, the elastic limit was exceeded and plastic deformation occurred \u2014 data is unreliable. Re-run experiment with smaller loads."
+    }
+  ],
+  "note_physics_1_10_5.js": [
+    {
+      "style": "worked",
+      "title": "Elastic Strain Energy from Any F-x Graph",
+      "text": "Elastic strain energy E_el = \u00bdkx\u00b2 = \u00bdFx = area under the force-extension graph. This area formula works for ANY shape (not just linear Hooke's Law). For curved graphs above elastic limit, you can still find elastic PE by calculating the triangular area up to the elastic limit."
+    },
+    {
+      "style": "tip",
+      "title": "Interpreting the Hysteresis Loop",
+      "text": "For inelastic materials, loading and unloading curves form a closed loop. The area enclosed by this loop = energy dissipated as heat per loading-unloading cycle. This shows why rubber gets warm when compressed and released repeatedly \u2014 energy is lost to heat, not recovered."
+    }
+  ]
+}

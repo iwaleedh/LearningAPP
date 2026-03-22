@@ -1,0 +1,65 @@
+{
+  "note_1_2_10.js": [
+    {
+      "style": "warning",
+      "title": "Competitive vs Non-Competitive Inhibition",
+      "text": "Students frequently confuse these mechanisms. Remember: competitive inhibitors can be overcome by increasing substrate concentration (they compete for the active site), while non-competitive inhibitors bind to an allosteric site and CANNOT be overcome by more substrate because the enzyme is structurally distorted."
+    }
+  ],
+  "note_1_2_11.js": [
+    {
+      "style": "warning",
+      "title": "DNA vs RNA Base Composition",
+      "text": "This is tested frequently in exams. Memorise precisely: DNA contains deoxyribose sugar and Thymine; RNA contains ribose sugar and Uracil. Many students reverse these or mix them up—ensure you can recall the five bases: A, T, C, G (DNA only) and A, U, C, G (RNA only)."
+    }
+  ],
+  "note_1_2_12.js": [
+    {
+      "style": "warning",
+      "title": "\"Semi-Conservative\" Definition is Critical",
+      "text": "Examiners explicitly test whether you understand this term. When asked to explain semi-conservative replication, you MUST state: 'each new DNA molecule contains one original (parental) strand and one newly synthesised strand.' Vague answers miss marks. Know the three stages: unwinding by helicase, complementary base pairing, and joining by polymerase."
+    }
+  ],
+  "note_1_2_13.js": [
+    {
+      "style": "warning",
+      "title": "Location Matters: Nucleus vs Cytoplasm",
+      "text": "Students lose marks by mixing up where these occur. Transcription happens in the nucleus (RNA polymerase + DNA); Translation happens at ribosomes in the cytoplasm (tRNA + mRNA). Also critical: tRNA anticodons pair with mRNA codons—not the reverse."
+    }
+  ],
+  "note_1_2_14.js": [
+    {
+      "style": "warning",
+      "title": "Degenerate Code Explains Why Some Mutations Are Silent",
+      "text": "Examiners love this link: because multiple codons code for the same amino acid, a substitution mutation may result in the same amino acid being inserted—producing NO phenotypic change (silent mutation). This is why deletion/insertion mutations are usually far more damaging: they cause frameshifts that alter all downstream codons. Know the distinction."
+    }
+  ],
+  "note_1_2_15.js": [
+    {
+      "style": "warning",
+      "title": "Link Active Transport to Osmosis Explicitly",
+      "text": "The key to explaining CF is the osmotic chain reaction: CFTR normally pumps Cl⁻ OUT (active transport) → water potential of mucus drops → water moves IN by osmosis → thin mucus. In CF: no Cl⁻ export → water doesn't follow → thick mucus. Students who forget the osmosis step cannot fully explain the pathophysiology."
+    }
+  ],
+  "note_1_2_16.js": [
+    {
+      "style": "warning",
+      "title": "Males Are Hemizygous for X-Linked Traits",
+      "text": "A common exam trap: males (XY) have only ONE copy of each X-linked gene, so even a recessive allele is expressed (they are 'hemizygous'). Females (XX) must be homozygous recessive to show the recessive trait. This is why X-linked recessive conditions like colour blindness are far more common in males."
+    }
+  ],
+  "note_1_2_17.js": [
+    {
+      "style": "warning",
+      "title": "Rinsing Beetroot and Interpreting Results",
+      "text": "Examiners ask: 'Why rinse the cylinders?' You must answer: 'To remove betalain from cells damaged during cutting, ensuring only pigment from living cells that have lost membrane integrity appears in the results.' Also: HIGH absorbance = HIGH pigment leakage = HIGH permeability. Don't confuse the colorimeter readings."
+    }
+  ],
+  "note_1_2_18.js": [
+    {
+      "style": "warning",
+      "title": "Why Initial Rate? Substrate Concentration Must Be Known",
+      "text": "Examiners test this reasoning: we measure initial rate because it is the only time the substrate concentration is known and constant. As the reaction proceeds, substrate is consumed, lowering its concentration, which then becomes a limiting factor—invalidating rate comparisons. You must draw a tangent at t=0 on the graph to calculate initial rate, not use average gradient."
+    }
+  ]
+}

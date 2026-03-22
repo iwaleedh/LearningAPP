@@ -229,6 +229,24 @@ export const note_business_2_6_8 = {
         title: 'Student Perspective: Why BHS Shareholders Were Not Personally Bankrupt',
         text: 'When <b>BHS collapsed in 2016</b> with a <b>£571 million pension deficit</b>, employees faced devastating losses — but BHS\'s thousands of shareholders lost only their share investments, not their personal savings. The pension deficit was a debt of <b>BHS Ltd</b>, not a personal debt of its shareholders. This is limited liability working exactly as designed: ordinary investors can back large companies without risking their entire personal wealth. The legal controversy focused on director and owner decisions — not on shareholder personal liability.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Separate legal entity is the bedrock: companies are legal persons distinct from owners. This enables limited liability (shareholders' loss capped at investment), but sole traders/partnerships lack this protection. Always anchor liability discussion to this principle."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing limited and unlimited liability without explaining implications. Unlimited liability means creditors can pursue personal assets; limited means they cannot. The real-world consequence is insurance, personal guarantees on loans, and risk exposure\u2014don't just state the definition."
+      }
     }
   ],
   recall: {

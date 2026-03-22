@@ -1,0 +1,242 @@
+{
+  "note_physics_4_20_0.js": [
+    {
+      "style": "warning",
+      "title": "Flux Density vs Flux",
+      "text": "Students confuse B (magnetic flux density in Tesla) with \u03a6 (magnetic flux in Weber). Remember: B is field strength at a point (independent of area); \u03a6 depends on the area. \u03a6 = BA (or BAcos\u03b8 if at an angle)."
+    },
+    {
+      "style": "tip",
+      "title": "Right Force Direction",
+      "text": "Use Fleming's LEFT-hand rule for motor/force direction (F = BIL). Thumb = force direction; Index = B field; Middle finger = conventional current. Maximum force when wire is perpendicular to B; zero force when parallel."
+    }
+  ],
+  "note_physics_4_20_1.js": [
+    {
+      "style": "warning",
+      "title": "Flux Angle Convention Trap",
+      "text": "In \u03a6 = BAcos\u03b8, \u03b8 is the angle between B and the NORMAL to the coil face, NOT the angle between B and the coil plane itself. Maximum flux (\u03a6 = BA) when B is perpendicular to coil face (\u03b8 = 0\u00b0); zero flux when parallel to face (\u03b8 = 90\u00b0)."
+    },
+    {
+      "style": "tip",
+      "title": "Flux vs Flux Linkage Units",
+      "text": "Flux \u03a6 is measured in Weber (Wb); flux linkage N\u03a6 is measured in Wb turns. When exam questions give data for flux, multiply by N before applying Faraday's law: \u03b5 = \u2212N(\u0394\u03a6/\u0394t) or \u03b5 = \u2212\u0394(N\u03a6)/\u0394t."
+    }
+  ],
+  "note_physics_4_20_2.js": [
+    {
+      "style": "warning",
+      "title": "B and \u03a6 Must Not be Confused in Force Calculations",
+      "text": "When calculating force on a wire (F = BIL), use magnetic flux DENSITY B (in Tesla), not flux \u03a6. Common error: substituting \u03a6 for B and getting units wrong. Force depends directly on B field strength, not on area or flux."
+    },
+    {
+      "style": "tip",
+      "title": "Angle Effect on Force",
+      "text": "General form F = BIL sin\u03b8 where \u03b8 is angle between wire and field. Maximum force (F = BIL) when \u03b8 = 90\u00b0; zero force when wire is parallel to field (\u03b8 = 0\u00b0). Always identify whether the given angle is between wire and field, or between wire and normal."
+    }
+  ],
+  "note_physics_4_21_0.js": [
+    {
+      "style": "warning",
+      "title": "Stationary Magnet Produces No E.M.F",
+      "text": "Students often think a strong magnet held still inside a coil will induce an e.m.f. Incorrect! It is the CHANGE in flux (\u0394\u03a6/\u0394t) that induces an e.m.f, not the flux itself. No motion = no change = zero e.m.f, regardless of field strength."
+    },
+    {
+      "style": "tip",
+      "title": "Three Conditions for Induction (C-R-D)",
+      "text": "Remember C-R-D: Closed circuit required; Rate of change of flux linkage must be non-zero (\u0394N\u03a6/\u0394t \u2260 0); Direction of induced current opposes the change (Lenz's Law). If any one fails, no induction occurs."
+    }
+  ],
+  "note_physics_4_21_1.js": [
+    {
+      "style": "warning",
+      "title": "Transformers Do NOT Work with DC",
+      "text": "A common exam pitfall: students assume transformers work with any voltage. False! Transformers require AC because they need a CHANGING magnetic flux through the iron core. DC produces a constant field \u2192 no change \u2192 no induced e.m.f in secondary \u2192 transformer is useless with DC."
+    },
+    {
+      "style": "tip",
+      "title": "Ideal Transformer Power Equation",
+      "text": "For ideal transformers (100% efficient), power is conserved: Vp\u00b7Ip = Vs\u00b7Is. Combined with turns ratio Vs/Vp = Ns/Np, you can solve for any unknown. Always use this power conservation constraint in exam questions."
+    }
+  ],
+  "note_physics_4_21_2.js": [
+    {
+      "style": "warning",
+      "title": "Explain the Negative Sign in Faraday's Law",
+      "text": "Examiners regularly ask: 'Explain the negative sign in \u03b5 = \u2212N(\u0394\u03a6/\u0394t).' The answer: the negative sign represents Lenz's Law \u2014 the induced e.m.f acts to oppose the change in flux that caused it. Omitting this explanation costs marks."
+    },
+    {
+      "style": "tip",
+      "title": "Lenz's Law Direction Steps",
+      "text": "Always follow three steps: (1) Identify if flux through coil is INCREASING or DECREASING. (2) State what pole the coil must become to OPPOSE this change. (3) Apply right-hand grip rule to find current direction. Marks awarded for each step stated explicitly."
+    }
+  ],
+  "note_physics_4_21_3.js": [
+    {
+      "style": "warning",
+      "title": "Graph Gradient = Induced E.M.F Magnitude",
+      "text": "On a flux linkage vs time graph, the gradient at any point equals \u2212\u03b5. Zero gradient = zero e.m.f; steepest gradient = greatest |\u03b5|. Most common error: reading flux value instead of gradient slope on the exam chart."
+    },
+    {
+      "style": "tip",
+      "title": "Remember to Include N (Number of Turns)",
+      "text": "Faraday's law is \u03b5 = \u2212N(\u0394\u03a6/\u0394t), not \u03b5 = \u2212(\u0394\u03a6/\u0394t). Forgetting to multiply by N is a frequent loss of marks. Always identify N separately and ensure it multiplies the flux change rate."
+    }
+  ],
+  "note_physics_4_21_4.js": [
+    {
+      "style": "warning",
+      "title": "Peak Voltage \u2260 RMS Voltage in Power Calculations",
+      "text": "The most common exam error: using peak voltage V\u2080 in P = V\u00b2/R gives power 2\u00d7 too large. Always use RMS values: P = Vrms\u00b2/R. For 230 V UK mains (RMS), peak is 325 V \u2014 using 325 in a power formula is wrong."
+    },
+    {
+      "style": "tip",
+      "title": "RMS = V\u2080/\u221a2 Only for Sinusoidal Waveforms",
+      "text": "The formula Vrms = V\u2080/\u221a2 applies ONLY to sinusoidal AC. For square waves or other shapes, Vrms \u2260 V\u2080/\u221a2. Some exams give non-sinusoidal signals \u2014 check the graph carefully before applying the formula."
+    }
+  ],
+  "note_physics_4_21_5.js": [
+    {
+      "style": "warning",
+      "title": "Oscilloscope Reads Peak, Not RMS",
+      "text": "An oscilloscope displays PEAK voltage directly from the trace amplitude. To find power in a resistor, you must convert: Vrms = V\u2080/\u221a2 first, then use P = Vrms\u00b2/R. Many students forget this conversion step."
+    },
+    {
+      "style": "tip",
+      "title": "UK Mains Voltage Facts for Exam Memory",
+      "text": "UK mains: 230 V RMS, 325 V peak (\u2248 230\u221a2), 50 Hz frequency, 20 ms period. These values appear frequently in exam questions. Peak-to-peak voltage is 650 V \u2014 remember the danger of the live wire."
+    }
+  ],
+  "note_physics_4_22_2.js": [
+    {
+      "style": "warning",
+      "title": "Thermionic vs Photoelectric \u2014 Know the Difference",
+      "text": "Both release electrons from metal, but via different energy sources: Thermionic = HEAT energy liberates electrons; Photoelectric = LIGHT (photons) liberates electrons. The work function \u03c6 must be overcome in both cases. Exam questions test this distinction directly."
+    },
+    {
+      "style": "tip",
+      "title": "Electron Gun Energy Equation",
+      "text": "For an electron accelerated through p.d. V: always use eV = \u00bdmev\u00b2. The electrical potential energy gained equals kinetic energy of the electron. At 5 kV: KE = 5 keV = 5 \u00d7 10\u00b3 \u00d7 1.6 \u00d7 10\u207b\u00b9\u2079 J."
+    }
+  ],
+  "note_physics_4_22_3.js": [
+    {
+      "style": "warning",
+      "title": "LINAC: Tubes Get Longer; Cyclotron: Frequency Fixed",
+      "text": "Exam trap: confusing LINAC and cyclotron operation. In a LINAC, drift tubes INCREASE in length as the ion speeds up to maintain synchronisation with fixed-frequency AC. In a cyclotron, the geometry is fixed \u2014 instead frequency controls on the dees adjust. Know the key difference."
+    },
+    {
+      "style": "tip",
+      "title": "Cyclotron Resonance Condition",
+      "text": "Cyclotron frequency f = qB/(2\u03c0m) is INDEPENDENT of particle speed \u2014 this is why resonance is maintained. At relativistic speeds, particle mass increases, breaking resonance \u2192 synchrotron uses a VARYING magnetic field to maintain synchronisation."
+    }
+  ],
+  "note_physics_4_22_4.js": [
+    {
+      "style": "warning",
+      "title": "Derivation: Magnetic Force = Centripetal Force",
+      "text": "Students often forget how r = mv/(Bq) is derived. The key: magnetic force provides centripetal force: Bqv = mv\u00b2/r. Rearrange to get r. This derivation is frequently tested. Know it cold."
+    },
+    {
+      "style": "tip",
+      "title": "Momentum Effect on Track Radius",
+      "text": "From r = mv/(Bq): larger momentum \u2192 larger radius. Use this to interpret particle tracks: a wider-curving track means higher momentum. For same B and q, doubling momentum doubles the radius \u2014 direct proportionality."
+    }
+  ],
+  "note_physics_4_22_5.js": [
+    {
+      "style": "warning",
+      "title": "Track Spiralling = Energy Loss",
+      "text": "A track that spirals INWARD (decreasing radius) means the particle is losing energy via ionisation. Do NOT assume constant radius in cloud chambers. Plot the energy loss via: as r decreases, v decreases (from r = mv/Bq), so kinetic energy decreases."
+    },
+    {
+      "style": "tip",
+      "title": "Pair Production V-Shape Recognition",
+      "text": "A V-shaped track with NO incoming track indicates pair production: \u03b3 ray (invisible, no track) converts to e\u207b and e\u207a. The two tracks curve in OPPOSITE directions \u2014 this opposite curvature is the unique signature confirming e\u207b (negative) and e\u207a (positive) charges."
+    }
+  ],
+  "note_physics_4_22_6.js": [
+    {
+      "style": "warning",
+      "title": "Collider vs Fixed-Target Efficiency",
+      "text": "A head-on collider (particles circulating in opposite directions) provides ALL collision kinetic energy for particle creation. A fixed-target (beam hits stationary target) wastes most energy carrying away recoil momentum. This is why LHC can reach quark-probing energies \u2014 a fixed-target would need ~100\u00d7 more beam energy to match 13 TeV centre-of-mass."
+    },
+    {
+      "style": "tip",
+      "title": "Always Verify All Conservation Laws",
+      "text": "After writing a particle collision equation, check: energy conserved, momentum conserved, charge conserved, baryon number conserved, lepton number conserved. Omitting any check costs exam marks. Use a table format to avoid errors."
+    }
+  ],
+  "note_physics_4_22_7.js": [
+    {
+      "style": "warning",
+      "title": "Why TWO Photons in Annihilation?",
+      "text": "This is a classic exam question: 'Why does e\u207b + e\u207a \u2192 \u03b3 + \u03b3, not e\u207b + e\u207a \u2192 \u03b3?' Answer: momentum conservation. Initial state at rest: total momentum = 0. A single photon has p = E/c \u2260 0, violating conservation. Two photons at 180\u00b0 have opposite momenta that cancel: p\u2081 + p\u2082 = 0."
+    },
+    {
+      "style": "tip",
+      "title": "Pair Production Threshold = 2mec\u00b2 Exactly",
+      "text": "Minimum photon energy for pair production = 2 \u00d7 0.511 MeV = 1.022 MeV (when products created at rest). Any excess photon energy becomes kinetic energy of the pair. Common mistake: subtracting KE from the threshold \u2014 the threshold is fixed regardless of KE."
+    }
+  ],
+  "note_physics_4_22_8.js": [
+    {
+      "style": "warning",
+      "title": "Unit Conversion Direction Error = 10\u2076 Factor Loss",
+      "text": "Most frequent student error: using 1 eV = 1.6 \u00d7 10\u207b\u00b9\u2079 J when working in MeV (should be 1 MeV = 1.6 \u00d7 10\u207b\u00b9\u00b3 J). This gives answers 10\u2076 times wrong. Check the prefix (k, M, G, T) before converting."
+    },
+    {
+      "style": "tip",
+      "title": "Key Rest Energies to Memorise",
+      "text": "Electron: mec\u00b2 = 0.511 MeV; Proton: mpc\u00b2 = 938.3 MeV. The ratio is 1836. Memorise these \u2014 they appear in nearly every particle physics exam. Pair production thresholds calculated from these values."
+    }
+  ],
+  "note_physics_4_22_9.js": [
+    {
+      "style": "warning",
+      "title": "Relativistic Speed = Calculate Lorentz Factor First",
+      "text": "If particle speed is given as a decimal of c (e.g. 0.9c, 0.6c), this is a signal to use relativistic formulae. Calculate \u03b3 = 1/\u221a(1\u2212v\u00b2/c\u00b2) first. Using classical KE = \u00bdmv\u00b2 at these speeds underestimates energy by factor of \u03b3."
+    },
+    {
+      "style": "tip",
+      "title": "Relativistic KE vs Classical",
+      "text": "Relativistic kinetic energy: KE = (\u03b3\u22121)mc\u00b2. At v = 0, \u03b3 = 1 and KE = 0 (correct). As v \u2192 c, \u03b3 \u2192 \u221e and KE \u2192 \u221e (no object can reach c). Classical \u00bdmv\u00b2 only equals (\u03b3\u22121)mc\u00b2 when v \u226a c and \u03b3 \u2248 1."
+    }
+  ],
+  "note_physics_4_23_0.js": [
+    {
+      "style": "warning",
+      "title": "Quark Charge Calculation Trap",
+      "text": "Up-type quarks (u, c, t): charge +2/3e. Down-type (d, s, b): charge \u22121/3e. Check proton uud: (+2/3) + (+2/3) + (\u22121/3) = +1 \u2713. Check neutron udd: (+2/3) + (\u22121/3) + (\u22121/3) = 0 \u2713. Reversed charges = wrong answer."
+    },
+    {
+      "style": "tip",
+      "title": "Baryon = 3 Quarks; Meson = Quark-Antiquark",
+      "text": "Baryons (3 quarks) have baryon number +1 for matter, \u22121 for antimatter. Mesons (qq\u0304) have baryon number 0. This distinction is critical for conservation law checks in decay equations."
+    }
+  ],
+  "note_physics_4_23_2.js": [
+    {
+      "style": "warning",
+      "title": "Conservation Law Check Table Format Avoids Errors",
+      "text": "Write a table with rows for Q (charge), B (baryon number), L (lepton number), S (strangeness). List initial state and final state separately. Common error: forgetting to check lepton number \u2014 always include it."
+    },
+    {
+      "style": "tip",
+      "title": "Strangeness Conserved in Strong/EM, Not Weak",
+      "text": "Strangeness (S) conservation depends on interaction type: strong force and electromagnetic force CONSERVE S (change = 0); weak force VIOLATES S (can change by \u00b11). Identify interaction type first \u2014 if neutrino involved, it's weak and S can change."
+    }
+  ],
+  "note_physics_4_23_3.js": [
+    {
+      "style": "warning",
+      "title": "One Failed Conservation Law = Reaction Forbidden",
+      "text": "A reaction is ONLY allowed if ALL quantum numbers are conserved (except strangeness in weak interactions). If even one conservation law fails, the reaction cannot occur. Students sometimes think 'close enough' \u2014 wrong! Conservation is absolute."
+    },
+    {
+      "style": "tip",
+      "title": "Recognise Weak Interactions by Neutrino Emission",
+      "text": "If a decay equation includes a neutrino (\u03bde, \u03bd\u03bc, \u03bd\u03c4), it is weak interaction \u2014 strangeness can change by \u00b11. Example: \u03b2\u207b decay n \u2192 p + e\u207b + \u03bd\u0304e violates no conservation law (check: Q, B, L all conserved)."
+    }
+  ]
+}

@@ -126,6 +126,24 @@ export const note_business_2_10_3 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Fiscal policy uses taxation and government spending to manage the economy. Corporation tax directly reduces retained profit and investment capacity. VAT changes affect consumer spending on goods and services. Income tax changes alter disposable income and consumer demand. Government spending contracts provide business revenue. Expansionary policy boosts demand; contractionary policy reduces it.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Link fiscal policy to business strategy. Higher corporation tax reduces profit retention \u2192 less investment in growth. Higher VAT shifts costs to consumers \u2192 demand elasticity matters. Always connect policy to firm-level decision-making."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Many students describe taxation without analysing incidence: VAT on luxury goods might be passed to consumers (price increase), but essentials might reduce margins if firms absorb tax to stay competitive. Context matters."
+      }
     }
   ],
   recall: {

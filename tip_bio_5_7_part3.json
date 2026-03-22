@@ -1,0 +1,109 @@
+[
+  {
+    "file": "note_5_7_15.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often confuse the glomerulus with the Bowman's capsule. Remember that the glomerulus is the knot of capillaries, while the Bowman's capsule is the funnel-like structure surrounding it that collects the filtrate."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_16.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When explaining ultrafiltration, always mention the role of the efferent arteriole being narrower than the afferent arteriole to generate high hydrostatic pressure, and state clearly that the basement membrane forms the actual filtration barrier."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_17.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When discussing ADH action, explicitly state that it causes vesicles containing aquaporins to fuse with the cell surface membrane of the collecting duct cells, increasing their permeability to water."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "A frequent error is stating that water moves 'out of the loop of Henle' without specifying the descending limb. Always specify that the descending limb is permeable to water, whereas the ascending limb is impermeable to water but actively pumps out sodium and chloride ions."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_18.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse the mechanism of peptide hormones with steroid hormones. Peptide hormones (like EPO) cannot enter the cell and must bind to cell-surface receptors to activate second messengers, while steroid hormones cross the lipid bilayer to reach intracellular receptors."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_19.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing the use of redox indicators (like DCPIP, methylene blue, or TTC) in yeast respiration experiments, explain that the indicator accepts electrons and hydrogen ions, substituting for the natural electron acceptors in the oxidative phosphorylation pathway."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_20.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "In a respirometer setup, soda lime or potassium hydroxide is critical as it absorbs CO2. Therefore, any change in volume and pressure within the sealed system is solely due to the volume of oxygen consumed by the respiring organisms."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_21.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often forget to mention safety and ethical precautions when discussing human subjects. Always state that informed consent and checking the medical history (e.g., asthma) of the participant are critical safety requirements when using a spirometer."
+        }
+      }
+    ]
+  }
+]

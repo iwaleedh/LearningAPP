@@ -111,6 +111,24 @@ export const note_business_2_9_8 = {
         "title": "Relatable: Writing an Essay — QC vs QA",
         "text": "<strong>Quality Control:</strong> Write your entire essay, then read it once at the end and cross out mistakes. Wasteful — you may have built the whole argument on a flawed premise.<br><strong>Quality Assurance:</strong> Check your plan before you start, review the argument after each paragraph, and proofread word-by-word as you go. Any errors are caught early, saving time and producing a stronger result. That's QA in action."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Define clearly: Quality Control = inspection at end (catches defects). Quality Assurance = prevention throughout (ensures quality). Show that QA is more costly upfront but cheaper long-term (fewer rejects, rework). Examiners reward this distinction."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Using terms interchangeably \u2013 QC and QA are DIFFERENT strategies. QC is reactive (find bad products), QA is proactive (prevent bad products). Mixing them loses marks. Also ignore that QA requires culture change, not just procedures."
+      }
     }
   ],
   recall: {

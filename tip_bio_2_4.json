@@ -1,0 +1,218 @@
+{
+  "note_2_4_0.js": [
+    {
+      "style": "warning",
+      "title": "Middle Lamella vs Plasmodesmata",
+      "text": "Students often confuse these two structures. Remember that the middle lamella cements adjacent plant cells together (usually using calcium pectate), while plasmodesmata are actual channels penetrating the cell walls that allow transport and communication."
+    },
+    {
+      "style": "tip",
+      "title": "Role of the Amyloplast",
+      "text": "When describing amyloplasts, specifically state that they synthesise and store starch granules. Do not just say 'they store energy', as examiners look for the specific mention of starch."
+    }
+  ],
+  "note_2_4_1.js": [
+    {
+      "style": "tip",
+      "title": "Beta-Glucose Orientation",
+      "text": "When describing cellulose, you must mention that it is composed of β-glucose monomers where every alternate monomer is inverted (rotated 180°). This allows the chain to be straight rather than helical."
+    },
+    {
+      "style": "warning",
+      "title": "Bonds within Microfibrils",
+      "text": "A common mistake is vaguely stating 'hydrogen bonds form cellulose'. Be precise: hydrogen bonds form cross-links between adjacent, parallel cellulose chains to form microfibrils, providing high tensile strength."
+    }
+  ],
+  "note_2_4_2.js": [
+    {
+      "style": "warning",
+      "title": "Why Insoluble?",
+      "text": "When asked why starch or glycogen are good storage molecules, saying 'they are large' isn't enough. You must state that they are insoluble and therefore do not affect the water potential (or cause osmotic swelling) of the cell."
+    },
+    {
+      "style": "tip",
+      "title": "Amylose vs Amylopectin",
+      "text": "Clearly distinguish between the two components of starch: amylose is unbranched and coiled (only 1,4-glycosidic bonds), making it compact, whereas amylopectin is branched (1,4 and 1,6-glycosidic bonds), allowing rapid hydrolysis."
+    }
+  ],
+  "note_2_4_3.js": [
+    {
+      "style": "tip",
+      "title": "Water Transport in Xylem",
+      "text": "When explaining how xylem is adapted for transport, explicitly mention that it consists of dead cells forming a hollow, continuous tube with no end walls, cytoplasm, or organelles, offering minimal resistance to water flow."
+    },
+    {
+      "style": "warning",
+      "title": "Role of Lignin",
+      "text": "Don't just say lignin 'makes xylem strong'. State that it provides structural support to prevent collapse under tension (negative pressure) and waterproofs the vessels."
+    }
+  ],
+  "note_2_4_4.js": [
+    {
+      "style": "warning",
+      "title": "Defining Carbon Neutrality",
+      "text": "A frequent error is stating plant-based products 'do not release carbon dioxide'. They do! The key marking point is that the CO₂ released when burnt or decomposed is equal to the CO₂ absorbed during photosynthesis."
+    },
+    {
+      "style": "tip",
+      "title": "Bioplastic Sustainability",
+      "text": "In sustainability questions, always use the terms 'renewable' (the plants can be regrown) and 'biodegradable' (can be broken down by microbes) when comparing bioplastics or plant fibres to fossil fuel alternatives."
+    }
+  ],
+  "note_2_4_5.js": [
+    {
+      "style": "tip",
+      "title": "The Purpose of Phase 1",
+      "text": "Examiners specifically look for the phrase 'healthy volunteers' in Phase 1 trials. Its main purpose is to test for safety, side effects, and safe dosage, not efficacy."
+    },
+    {
+      "style": "warning",
+      "title": "Placebo vs Double-Blind",
+      "text": "Do not mix up these terms. A placebo is a dummy drug used as a control. A double-blind trial means neither the patient nor the doctor knows who receives the drug or placebo, which removes observer bias."
+    }
+  ],
+  "note_2_4_6.js": [
+    {
+      "style": "tip",
+      "title": "Molecular Phylogeny Evidence",
+      "text": "When asked how new classification systems are developed, always cite 'molecular phylogeny'. Mention comparing sequences of DNA, RNA, or proteins (amino acids) to determine evolutionary relationships."
+    },
+    {
+      "style": "warning",
+      "title": "Three-Domain System Basis",
+      "text": "Remember that Carl Woese based his three domains (Bacteria, Archaea, Eukarya) on differences in ribosomal RNA (rRNA) and the cellular machinery, not just observable morphological characteristics."
+    }
+  ],
+  "note_2_4_7.js": [
+    {
+      "style": "warning",
+      "title": "Defining Endemism",
+      "text": "A classic omission! Endemism means a species is found in one specific geographical location AND nowhere else in the world. Forgetting the 'nowhere else' part loses marks."
+    },
+    {
+      "style": "tip",
+      "title": "Heterozygosity Index (H)",
+      "text": "When using the heterozygosity formula (H = number of heterozygotes / total population), specify that a higher index means a higher proportion of heterozygotes, which indicates greater genetic diversity."
+    }
+  ],
+  "note_2_4_8.js": [
+    {
+      "style": "warning",
+      "title": "Natural Selection Step-by-Step",
+      "text": "In long-answer questions about evolution, always start with 'a random mutation produces an advantageous allele'. Then state that this leads to survival, reproduction, and the passing on of this specific allele to offspring."
+    },
+    {
+      "style": "tip",
+      "title": "Defining an Ecological Niche",
+      "text": "Examiners want a complete definition: it is the 'role' of an organism within its habitat, which includes how it exploits resources (e.g., food, shelter) and interactions with other species."
+    }
+  ],
+  "note_2_4_9.js": [
+    {
+      "style": "warning",
+      "title": "p + q = 1 vs p² + 2pq + q² = 1",
+      "text": "A common mistake is confusing allele frequencies ($p$ and $q$) with genotype frequencies ($p^2$, $2pq$, $q^2$). Remember you must square root the frequency of the homozygous recessive phenotype ($q^2$) to find the recessive allele frequency ($q$) first."
+    },
+    {
+      "style": "tip",
+      "title": "Conditions for Hardy-Weinberg",
+      "text": "Examiners often ask for the conditions under which the Hardy-Weinberg principle applies. Always state: no mutations, random mating, a large population, no gene flow (migration), and no selection pressure."
+    }
+  ],
+  "note_2_4_10.js": [
+    {
+      "style": "warning",
+      "title": "Allopatric vs Sympatric Speciation",
+      "text": "Students frequently forget to specify the starting point: Allopatric speciation requires geographical isolation, whereas sympatric speciation occurs in the same geographical area (often due to behavioural or temporal isolation)."
+    },
+    {
+      "style": "tip",
+      "title": "The Key Mechanism of Speciation",
+      "text": "In any speciation question, to get full marks you must mention that different selection pressures lead to different alleles being selected for, leading to a change in allele frequencies until they can no longer interbreed to produce fertile offspring."
+    }
+  ],
+  "note_2_4_11.js": [
+    {
+      "style": "warning",
+      "title": "Genetic Diversity in Captive Breeding",
+      "text": "A frequent error is vaguely mentioning \"problems with inbreeding\". In exam answers, specify that captive breeding can cause an increase in homozygosity and a decrease in genetic diversity unless studbooks and exchanges between zoos are used."
+    },
+    {
+      "style": "tip",
+      "title": "Seed Bank Storage Conditions",
+      "text": "When asked how seed viability is maintained, clearly state that seeds are dried and kept in cold, low-humidity conditions to reduce enzyme activity and prevent germination and decay."
+    }
+  ],
+  "note_2_4_12.js": [
+    {
+      "style": "warning",
+      "title": "Tissue Sectioning",
+      "text": "Make sure you mention taking the thinnest possible sections. If the sections are too thick, multiple layers of cells overlap which prevents light from passing through effectively, making the image blurry."
+    },
+    {
+      "style": "tip",
+      "title": "Safety with Razor Blades",
+      "text": "Always state a specific safety precaution. The classic marking point is to cut away from the body/fingers when using a razor blade, or using forceps to move the thin sections."
+    }
+  ],
+  "note_2_4_13.js": [
+    {
+      "style": "tip",
+      "title": "Standardising Variables in Fibre Testing",
+      "text": "In tensile strength experiments, you must state which variables should be controlled to ensure a valid comparison. Include factors such as length, age, humidity, and diameter (cross-sectional area) of the plant fibres."
+    },
+    {
+      "style": "warning",
+      "title": "Cross-Sectional Area",
+      "text": "A common mistake when calculating tensile strength is forgetting to measure the diameter using calipers or a micrometer to calculate the cross-sectional area. Tensile strength is force divided by cross-sectional area, not just the breaking force."
+    }
+  ],
+  "note_2_4_14.js": [
+    {
+      "style": "tip",
+      "title": "Aseptic Techniques",
+      "text": "Exam scheme answers for aseptic technique usually include specific methods: working near a Bunsen burner (convection currents), flaming the neck of the bottle, and partially lifting the Petri dish lid (clamming) to prevent contamination from the air."
+    },
+    {
+      "style": "warning",
+      "title": "Incubation Temperature",
+      "text": "Never incubate bacterial cultures at 37°C in school experiments as it encourages the growth of human pathogenic bacteria. State that plates should be incubated around 25°C to 30°C."
+    }
+  ],
+  "note_2_4_15.js": [
+    {
+      "style": "tip",
+      "title": "Calculating Young's Modulus",
+      "text": "Remember the formula: Young's Modulus (E) = Tensile Stress / Tensile Strain. You must calculate stress from Force/Area and strain from Extension/Original Length. It is a measure of stiffness."
+    },
+    {
+      "style": "warning",
+      "title": "Safety with Weights",
+      "text": "When adding masses to a fibre until it snaps, students often miss the safety marks. You must specify placing a soft mat or sand tray underneath to catch the falling masses and protect feet."
+    }
+  ],
+  "note_2_4_16.js": [
+    {
+      "style": "tip",
+      "title": "Measuring Inhibition Zones",
+      "text": "To compare antimicrobial efficacy, measure the diameter of the clear zone of inhibition using a transparent ruler over the bottom of the unopened agar plate, taking two measurements at 90° and calculating a mean."
+    },
+    {
+      "style": "warning",
+      "title": "Sealing Petri Dishes",
+      "text": "Do not fully seal the Petri dish edges with tape as this creates anaerobic conditions that may encourage the growth of dangerous pathogenic anaerobic bacteria. Use pieces of tape in a cross across the plate instead."
+    }
+  ],
+  "note_2_4_17.js": [
+    {
+      "style": "warning",
+      "title": "Staining Vascular Tissue",
+      "text": "Students frequently forget the function of the stain. State that stains like phloroglucinol or safranin bind to lignin, making the xylem vessels distinct and easier to distinguish from surrounding phloem or parenchyma."
+    },
+    {
+      "style": "tip",
+      "title": "Calculating Magnifications",
+      "text": "When deriving magnification, remember the formula is Magnification = Image Size / Actual Size. Double-check your units (convert mm to µm by multiplying by 1000) before dividing to avoid classic magnitude errors."
+    }
+  ]
+}

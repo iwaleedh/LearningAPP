@@ -31,7 +31,25 @@ export const note_business_2_7_7 = {
     ]}},
     { "id": "enr-t7b-call-brand", "type": "callout", "data": { "style": "warning", "title": "Real World: HMV and Cash-Flow Collapse", "text": "HMV entered administration in January 2013 despite still recording retail sales. The business was generating revenue, but cash was not arriving fast enough to simultaneously pay suppliers, landlords, and staff wages. This is a textbook example of profitable-but-insolvent trading — a healthy income statement did not prevent cash-flow failure." } },
     { "id": "enr-t7b-call-student", "type": "callout", "data": { "style": "tip", "title": "Relatable: Allowance Timing", "text": "Imagine your £200 monthly allowance arrives on the 30th, but your phone bill is due on the 5th. In total across the month you have enough money, but the timing mismatch means you cannot pay at the critical moment. That is a cash-flow problem — not because you are broke overall, but because the money is not there when you need it." } },
-    { id: 'sum-1', type: 'summary', data: { text: 'A cash-flow forecast maps expected daily/monthly money movements to prevent insolvency and arrange finance for projected shortfalls.' } }
+    { id: 'sum-1', type: 'summary', data: { text: 'A cash-flow forecast maps expected daily/monthly money movements to prevent insolvency and arrange finance for projected shortfalls.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Cash-flow forecasting purpose: predict cash inflows (sales collections, loans, asset sales) vs outflows (supplies, wages, tax, loan repayment, fixed costs). Construction involves monthly or quarterly projections, beginning cash + inflows \u2212 outflows = ending cash balance."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing profit with cash flow. A profitable business can have negative cash flow if customers don't pay on time (credit sales) or if fixed assets consume cash. Conversely, negative profit can coexist with positive cash flow (e.g., sale of assets). Always distinguish the two."
+      }
+    }
   ],
   recall: {
     enabled: true,

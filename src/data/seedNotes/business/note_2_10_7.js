@@ -125,6 +125,24 @@ export const note_business_2_10_7 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Environmental regulations (Climate Change Act, UK ETS, Landfill Tax, Environment Act) impose compliance costs on businesses — investment in clean technology, carbon allowances, waste management — but also create opportunities: energy savings, CSR reputation benefits and access to green finance. Heavy industry bears the greatest cost burden. Proactive firms can gain competitive advantage through genuine environmental leadership.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Move beyond 'environmental compliance is costly' \u2013 show how leading firms use green strategy profitably: carbon credits, eco-labelling attracts premium-paying customers, reduced energy = lower costs. Competitive advantage through compliance."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students overlook that environmental regulations have different impacts by sector: for renewable energy firms, strict emissions limits = opportunity for growth. For coal-dependent firms, they're existential threats. Don't generalize."
+      }
     }
   ],
   recall: {

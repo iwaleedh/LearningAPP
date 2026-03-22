@@ -155,6 +155,24 @@ export const note_business_2_10_2 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Higher interest rates increase business borrowing costs, reduce consumer spending and depress business investment. Highly geared, capital-intensive firms and consumer-facing businesses are most vulnerable. Lower rates stimulate investment and spending but can fuel inflation. The Bank of England adjusts the base rate to balance growth and inflation targets.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Create a table showing interest rate effects across stakeholder groups: higher rates = bad for borrowers (businesses, mortgagers), good for savers and lenders. Show cash flow impact on firms using worked examples with debt repayment figures."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often ignore the MULTIPLIER effect: rising interest rates \u2192 reduced consumer spending \u2192 reduced business sales and tax revenue \u2192 recession. Show this chain reaction, not just direct borrowing costs."
+      }
     }
   ],
   recall: {

@@ -1,0 +1,114 @@
+[
+  {
+    "file": "note_5_8_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often draw sensory neurones with the cell body at the end. Remember that the cell body of a sensory neurone is located along a branch off the main axon/dendron, typically in a dorsal root ganglion."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+           "style": "tip",
+           "title": "Examiner Tip",
+           "text": "When describing the resting potential, clearly state the ratio of ions actively transported: 3 Na⁺ out for every 2 K⁺ moved in, establishing the electrochemical gradient."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Terminology Focus",
+          "text": "Do not simply say myelination 'speeds up the message'. State that action potentials 'jump' between Nodes of Ranvier, a process correctly termed saltatory conduction."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Trace the sequence logically: Ca²⁺ influx -> vesicle exocytosis -> diffusion across the cleft -> complementary binding to post-synaptic receptors -> Na⁺ channels open."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+           "style": "warning",
+           "title": "Common Mistake",
+           "text": "When assessing drugs, precisely identify if they are agonists (mimic neurotransmitters) or antagonists (block receptors). Stating they 'stop the neurotransmitter' is too vague."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Light causes sodium ion channels to close in a rod cell, leading to hyperpolarisation—which counterintuitively *stops* the release of the inhibitory neurotransmitter glutamate."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "You must be able to visually identify the cerebrum, cerebellum, hypothalamus, and medulla oblongata on a diagram, and concisely link each to its primary function (e.g. cerebellum = coordination)."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Key Distinction",
+          "text": "Don't confuse CT with fMRI. CT gives structural images using X-rays, whereas fMRI provides functional data in real-time by tracking changes in blood oxygenation."
+        }
+      }
+    ]
+  }
+]

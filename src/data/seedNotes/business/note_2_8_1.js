@@ -172,6 +172,24 @@ export const note_business_2_8_1 = {
         title: 'Relatable Example — Two Lemonade Stalls',
         text: 'Stall A and Stall B both earn £200 revenue. Stall A uses quality lemons and charges premium prices: GPM = 60% (£120 gross profit). Stall B underprices to attract more customers: GPM = 30% (£60 gross profit). After paying the same pitch hire fee of £40, Stall A has operating profit of £80 while Stall B makes only £20. Same revenue, very different profitability — just like comparing Apple to a budget smartphone brand. <b>Margins matter as much as revenue.</b>'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When interpreting profit margins, always compare to sector benchmark AND trends over time. A 5% net margin for a supermarket might be healthy (razorthin margins in retail), but worrying for software (typically 20%+). Context = marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students calculate margins correctly but fail to interpret what changes MEAN. Falling gross margin = rising COGS or lower prices (supply/competition pressure). Falling operating margin = rising overheads (inefficiency). Know the diagnosis."
+      }
     }
   ],
   recall: {

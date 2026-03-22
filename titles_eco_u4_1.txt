@@ -1,0 +1,103 @@
+src/data/seedNotes/economics/note_economics_4_18_0.js
+Title: Measuring Globalisation: Trade-to-GDP Integration
+---
+src/data/seedNotes/economics/note_economics_4_18_1.js
+Title: Transnational Corporations and FDI Growth
+---
+src/data/seedNotes/economics/note_economics_4_18_2.js
+Title: International Migration and Globalisation
+---
+src/data/seedNotes/economics/note_economics_4_18_3.js
+Title: Trade Liberalisation and Trading Blocs
+---
+src/data/seedNotes/economics/note_economics_4_18_4.js
+Title: Political Change and Market Opening
+---
+src/data/seedNotes/economics/note_economics_4_18_5.js
+Title: Lower Transport and Communication Costs
+---
+src/data/seedNotes/economics/note_economics_4_18_6.js
+Title: FDI Motives and Impacts
+---
+src/data/seedNotes/economics/note_economics_4_18_7.js
+Title: Benefits of Globalisation
+---
+src/data/seedNotes/economics/note_economics_4_18_8.js
+Title: Costs of Globalisation
+---
+src/data/seedNotes/economics/note_economics_4_19_0.js
+Title: International Specialisation
+---
+src/data/seedNotes/economics/note_economics_4_19_1.js
+Title: Absolute vs Comparative Advantage
+---
+src/data/seedNotes/economics/note_economics_4_19_10.js
+Title: Tariffs, Quotas and Non-Tariff Barriers
+---
+src/data/seedNotes/economics/note_economics_4_19_11.js
+Title: Impacts of Protectionism
+---
+src/data/seedNotes/economics/note_economics_4_19_2.js
+Title: Limitations of Comparative Advantage
+---
+src/data/seedNotes/economics/note_economics_4_19_3.js
+Title: Changing World Trade Patterns
+---
+src/data/seedNotes/economics/note_economics_4_19_4.js
+Title: Effects of Emerging Economies on World Trade
+---
+src/data/seedNotes/economics/note_economics_4_19_5.js
+Title: Terms of Trade
+---
+src/data/seedNotes/economics/note_economics_4_19_6.js
+Title: WTO and Trade Liberalisation
+---
+src/data/seedNotes/economics/note_economics_4_19_7.js
+Title: Trading Bloc Types
+---
+src/data/seedNotes/economics/note_economics_4_19_8.js
+Title: Trade Creation and Trade Diversion
+---
+src/data/seedNotes/economics/note_economics_4_19_9.js
+Title: Reasons for Free-Trade Restrictions
+---
+src/data/seedNotes/economics/note_economics_4_20_0.js
+Title: Balance of Payments Structure
+---
+src/data/seedNotes/economics/note_economics_4_20_1.js
+Title: Current Account Deficits and Surpluses
+---
+src/data/seedNotes/economics/note_economics_4_20_10.js
+Title: The Marshall-Lerner Condition and J-Curve
+---
+src/data/seedNotes/economics/note_economics_4_20_11.js
+Title: International Competitiveness
+---
+src/data/seedNotes/economics/note_economics_4_20_12.js
+Title: Policies to Improve Competitiveness
+---
+src/data/seedNotes/economics/note_economics_4_20_2.js
+Title: Current Account Rebalancing Policies
+---
+src/data/seedNotes/economics/note_economics_4_20_3.js
+Title: Global Trade Imbalances
+---
+src/data/seedNotes/economics/note_economics_4_20_4.js
+Title: Exchange Rate Systems
+---
+src/data/seedNotes/economics/note_economics_4_20_5.js
+Title: Currency Market Intervention
+---
+src/data/seedNotes/economics/note_economics_4_20_6.js
+Title: Determinants of Exchange Rates
+---
+src/data/seedNotes/economics/note_economics_4_20_7.js
+Title: Revaluation vs Appreciation
+---
+src/data/seedNotes/economics/note_economics_4_20_8.js
+Title: Devaluation vs Depreciation
+---
+src/data/seedNotes/economics/note_economics_4_20_9.js
+Title: Exchange Rate Changes: Macroeconomic Effects
+---
+

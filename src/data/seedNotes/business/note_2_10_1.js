@@ -152,6 +152,24 @@ export const note_business_2_10_1 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'An appreciating pound makes UK exports more expensive abroad (less competitive) but imported inputs cheaper. A depreciating pound boosts export competitiveness but raises import costs. The net impact on a firm depends on its export/import mix, the PED of its products, and whether it hedges against currency risk.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Demonstrate understanding by calculating the actual price change: if the pound appreciates 10%, UK goods become 10% more expensive to foreign buyers. Use this quantitative approach to score higher marks in evaluation questions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Many students confuse appreciation with depreciation or forget that exchange rate effects are OPPOSITE for exporters and importers. Appreciation = bad for exporters, good for importers. Keep this crystal clear."
+      }
     }
   ],
   recall: {

@@ -190,6 +190,24 @@ export const note_business_2_6_4 = {
         title: 'Student Example: Young Enterprise & BTEC Business Plans',
         text: 'If you have taken part in <b>Young Enterprise</b> — the UK\'s leading enterprise education charity — you will have written a real business plan, pitched to judges, and managed actual company finances. In <b>BTEC Business</b>, writing a mock business plan is a core assessed unit. In both cases, you research the market, forecast cash flow, and persuade others your idea deserves funding. Even for a hypothetical school canteen or phone-case business, the skills — USP identification, break-even calculation, cash flow forecasting — are identical to those used to raise real venture capital or secure a bank loan.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Build evaluation frameworks: purpose (working capital vs fixed assets), size (small sole traders can't issue shares), cost (interest vs dilution), and time horizon (long-term projects suit debentures; short-term needs suit overdrafts). Systematic analysis scores higher."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Recommending a single finance source without qualifying constraints. A start-up cannot use share capital\u2014banks won't lend, and debentures are too risky. Always check legal form, creditworthiness, and risk profile before prescribing finance."
+      }
     }
   ],
   recall: {

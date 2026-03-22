@@ -151,6 +151,24 @@ export const note_business_2_10_8 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Competition policy (enforced by the CMA) promotes competitive markets by regulating monopoly abuse, reviewing mergers that may harm competition, and punishing cartels (price fixing, market sharing). Fines can reach 10% of global turnover. Competition policy constrains business strategy — particularly mergers and pricing — but protects consumers and maintains innovation incentives.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Reference actual CMA investigations (e.g., Facebook/Meta mergers, energy market probes). Explain WHY the CMA blocks deals: to protect consumer welfare and competition. Show understanding of 'substantial lessening of competition' test."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Generic answers about 'price fixing is illegal' miss the point. Examiners want evidence that competition policy FORCES efficiency innovations and prevents monopoly abuse. Explain the consumer benefit, not just the punishment."
+      }
     }
   ],
   recall: {

@@ -1,0 +1,20 @@
+src/data/seedNotes/business/note_1_4_0.js: Understand the two contrasting views of employees — as a <b>cost</b> to be minimised or as an <b>asset</b> to be invested in — and the implications of each view for HRM strategy.
+src/data/seedNotes/business/note_1_4_1.js: Understand flexible workforce models including Handy\
+src/data/seedNotes/business/note_1_4_10.js: Understand and evaluate the range of <b>non-financial motivation methods</b>: job enrichment, job enlargement, job rotation, empowerment, delegation, teamwork, and flexible working. Link each method to the relevant motivation theory.
+src/data/seedNotes/business/note_1_4_11.js: Understand and evaluate four leadership styles — <b>Autocratic</b>, <b>Democratic</b>, <b>Laissez-faire</b>, and <b>Paternalistic</b> — and link them to McGregor\
+src/data/seedNotes/business/note_1_4_2.js: Distinguish between <b>dismissal</b> and <b>redundancy</b> as methods of ending employment, understand fair vs unfair dismissal, and evaluate their business and legal implications.
+src/data/seedNotes/business/note_1_4_3.js: Understand the difference between <b>individual</b> and <b>collective</b> employment relations, the role of trade unions and collective bargaining, types of industrial action, and mechanisms for resolving disputes.
+src/data/seedNotes/business/note_1_4_4.js: Understand the recruitment and selection process: internal vs external recruitment, job descriptions, person specifications, and selection methods (interviews, psychometric tests, assessment centres). Evaluate the costs and benefits of each approach.
+src/data/seedNotes/business/note_1_4_5.js: Understand and evaluate the different <b>training methods</b> available to businesses — on-the-job and off-the-job — and assess the costs and benefits of investing in employee training.
+src/data/seedNotes/business/note_1_4_6.js: Understand the main types of organisational structure — hierarchical (tall), flat, matrix, functional, and divisional — and evaluate the advantages and disadvantages of each.
+src/data/seedNotes/business/note_1_4_7.js: Understand key structural concepts: <b>span of control</b>, <b>chain of command</b>, <b>hierarchy</b>, <b>delegation</b>, <b>delayering</b>, and the distinction between <b>centralised</b> and <b>decentralised</b> decision-making.
+src/data/seedNotes/business/note_1_4_8.js: Understand and evaluate the four key motivation theories on the Edexcel IAL Business specification: <b>Taylor</b> (Scientific Management), <b>Maslow</b> (Hierarchy of Needs), <b>Herzberg</b> (Two-Factor Theory), and <b>McGregor</b> (Theory X and Theory Y). Apply each theory to business decision-making.
+src/data/seedNotes/business/note_1_4_9.js: Understand the range of <b>financial motivation methods</b> available to businesses — time-rate, piece-rate, performance-related pay, bonus, commission, profit-sharing, and fringe benefits — and evaluate their effectiveness in motivating employees.
+src/data/seedNotes/business/note_1_5_0.js: Understand the role of an entrepreneur in creating, setting up, running and expanding a business.
+src/data/seedNotes/business/note_1_5_1.js: Understand the concept of intrapreneurship and how it benefits a business.
+src/data/seedNotes/business/note_1_5_2.js: Identify and evaluate the barriers to setting up a business.
+src/data/seedNotes/business/note_1_5_3.js: Understand why people choose to set up their own businesses.
+src/data/seedNotes/business/note_1_5_4.js: Identify the personal characteristics and skills typically associated with successful entrepreneurs.
+src/data/seedNotes/business/note_1_5_5.js: Distinguish between financial and non-financial motives for entrepreneurs.
+src/data/seedNotes/business/note_1_5_6.js: Analyze the various objectives a business and entrepreneur might pursue.
+src/data/seedNotes/business/note_1_5_7.js: Understand opportunity cost and trade-offs in decision making.

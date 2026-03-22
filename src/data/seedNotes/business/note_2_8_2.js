@@ -166,6 +166,24 @@ export const note_business_2_8_2 = {
         title: 'Relatable Example — School Tuck Shop',
         text: 'Imagine you run a school tuck shop selling crisps (GPM 20%) and branded chocolate bars (GPM 15%). A friend suggests adding homemade flapjacks (GPM 65%). By replacing the low-margin chocolates with flapjacks you improve your overall product mix without needing more customers or higher prices. Revenue stays the same but gross profit rises significantly — and flapjacks are unique, giving you a competitive advantage competitors cannot easily copy. This is the product mix strategy in action.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Evaluate profit improvement methods in context: cost-cutting might work short-term but damage innovation and staff morale. Revenue increases need market space. Product mix optimization only works if you have multiple profitable lines. Show trade-offs."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Simply listing three methods (raise prices, cut costs, change mix) without evaluation is incomplete. Examiners ask WHEN each works: low elasticity allows price rises; high competition requires cost cuts; diversification helps when some lines are struggling."
+      }
     }
   ],
   recall: {

@@ -1,0 +1,86 @@
+[
+  {
+    "file": "note_6_6A_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Candidates often forget to clearly specify how control variables will be managed. Stating 'control temperature' is insufficient; you must state the method, for instance, 'using a thermostatically controlled water bath'."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_6_6A_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "In the standard planning questions (often remembered using CORMS), always specify at least two control variables alongside their control method. Don't forget the 'O' (Organism) component—mention the species, age, or mass of the biological material being used!"
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_6_6A_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When presenting data in tables, a frequent error is writing units next to individual values within the table body. Units must only appear in the column headings (e.g., `Time / s`), while the table cells should consist exclusively of numerical data."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_6_6A_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Do not confuse reliability with validity. Reliability relates to the consistency of results (which can be improved by adding repeats and calculating means), whereas validity determines whether your experimental design actually measures what is intended (which heavily relies on controlling the relevant variables)."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_6_6A_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students frequently forget to account for multiple readings when calculating percentage error. For measurements that require an initial and a final reading (such as measuring a change in mass or temperature), you must double the absolute uncertainty of the instrument before dividing by the value measured."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_6_6A_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When approaching statistical questions, justify your choice of test clearly. Use Student's t-test to compare two independent means, Spearman's rank for establishing an association between two continuous variables, and Chi-squared for categorical observed versus expected frequencies. Always start with a precise null hypothesis!"
+        }
+      }
+    ]
+  }
+]

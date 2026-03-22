@@ -1,0 +1,219 @@
+{
+  "note_economics_2_10_0.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Students assume all income is re-spent in the next round of the circular flow. In reality, households withdraw income through savings (S), taxation (T), and imports (M). These leakages reduce the multiplier effect. Always identify and quantify leakages to calculate the true multiplier impact.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_10_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Examiners test understanding of the stock vs. flow distinction: wealth is a stock (total accumulated assets at a point in time), while income is a flow (earnings over a time period). When analysing household behaviour, clarify whether the question concerns wealth effects (consumption from asset changes) or income effects (consumption from earnings changes).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_10_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Students believe that injections (I, G, X) and withdrawals (S, T, M) always balance at equilibrium. This is only true at the macro equilibrium—before reaching it, imbalances drive the economy towards equilibrium. Distinguish between the dynamic adjustment process and the final equilibrium condition.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_10_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Equilibrium real output occurs where AD = AS, but this does not guarantee full employment or zero unemployment. Examiners test whether you recognise that equilibrium can exist at any level of output—below full employment (demand-deficient unemployment) or above it (demand-pull inflation). Always compare equilibrium to potential output.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_10_4.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Calculating the multiplier from macroeconomic data without understanding the rounds process. The multiplier is not simply ΔY ÷ ΔI; it depends on the MPC and leakage rates. In exam questions, show each round of spending to demonstrate understanding of the mechanism, not just the final numerical answer.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_10_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Remember the accounting identity: MPC + MPS = 1 (in a simple two-sector model), and MPT + MPM + MPC = 1 (in an open economy with taxation). Examiners ask for these marginal propensities and test whether you can calculate one given the others. Always verify your calculations sum to 1.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_10_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Using the simple multiplier formula (k = 1/(1−MPC)) when leakages exist. The correct formula must include taxation, savings, and import propensities: k = 1/(1−MPC + MPT + MPM) or k = 1/MPS + MPT + MPM. Failing to account for all leakages leads to gross overestimation of multiplier impacts.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_10_7.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In extended multiplier analysis, recognise that the multiplier diminishes as leakage rates increase. An economy with high marginal tax rates, high import propensity (open economy), and high savings propensity will experience a weaker multiplier effect. Use this to explain why fiscal stimulus works better in some economies than others.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_11_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Actual economic growth can be negative (recession) even if the economy has positive potential growth. The output gap (actual − potential) is what matters for inflation and unemployment pressure. In times of slow recovery, actual growth may rise but remain below potential, explaining persistent unemployment despite positive growth.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_11_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Confusing AD-driven growth with inflation. AD-driven growth occurs when AD shifts right along a stable AS curve, raising both output and price level. If you label this as purely 'inflation,' you miss the real output expansion. Distinguish between the growth phase and subsequent demand-pull inflation when output reaches capacity.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_11_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When analysing export-led growth, assess external demand conditions. A strategy relying on export growth is vulnerable to global recessions, foreign protectionism, or exchange rate appreciation (reducing price competitiveness). Reference real-world examples (e.g., East Asian tigers during financial crises) to show understanding of limitations.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_11_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Assuming all FDI is beneficial for growth. While FDI brings capital, technology, and skills, it can also: crowd out domestic investment, create profit repatriation, extract natural resources without reinvestment, or increase foreign ownership of strategic assets. Always evaluate FDI quality, not just quantity, in exam analysis.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_11_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Link innovation explicitly to productivity improvements. Innovation shifts the AS curve rightward by raising output per unit of input (labour, capital). Distinguish R&D spending (input) from productivity gains (output). Use Solow's framework: sustained growth requires technological progress, not just capital accumulation.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_11_5.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Measuring labour force contribution only by quantity (population size) without analysing quality. Examiners expect discussion of: education levels, skills training, age demographics, migration effects, and labour participation rates. An ageing population can reduce growth even if absolute workforce size remains stable—focus on working-age proportion.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_11_6.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When listing benefits of growth, use relative metrics: GDP per capita and real GDP per capita (adjusted for inflation). Absolute GDP growth is less meaningful than per capita growth for assessing living standards. Additionally, distinguish between growth that benefits all income groups versus growth that widens inequality—use Gini coefficient analysis.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_11_7.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Listing environmental costs (pollution, depletion) as if they are automatic consequences, without quantifying them or relating to 'Green GDP' concepts. Examiners expect analysis: do regulations internalise these externalities? Can green growth exist? Failing to integrate environmental costs into the growth-sustainability debate results in one-dimensional answers.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_11_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Positive output gaps (Y > Y*) create demand-pull inflation and labour shortages. Negative output gaps (Y < Y*) cause demand-deficient unemployment and spare capacity. Use these concepts to explain why central banks tighten policy during booms and loosen during recessions. Link output gaps to the Phillips Curve relationship.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_11_9.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Treating potential output (Y*) as a known, fixed value. In reality, potential output is estimated using econometric models and is highly uncertain. Trends can shift due to demographic changes, technology, or policy. Examiners test awareness that output gap calculations are imprecise, which adds uncertainty to policy decisions—acknowledge this qualification in your answers.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The main macroeconomic objectives are: low unemployment, low inflation, economic growth, and a balanced current account. Examiners test your ability to explain trade-offs (especially the Phillips Curve trade-off between inflation and unemployment). Always reference the short-run Phillips Curve and explain why long-run neutrality exists at the natural rate of unemployment.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_12_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Confusing the current account deficit with a trade deficit. Current account includes: trade in goods and services, income flows (investment returns, wages), and transfers. A trade deficit can be offset by investment income inflows, resulting in a current account surplus. Always itemise components when analysing external balance.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Use the Gini coefficient (0 = perfect equality, 1 = perfect inequality) to measure inequality objectively, but acknowledge its limitations: it ignores intergenerational mobility, regional disparities, and relative deprivation. In exam answers, mention both quantitative measures (Gini, income ratios) and qualitative aspects (social mobility, poverty traps).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_12_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Assuming macroeconomic objectives always conflict. While the Phillips Curve shows inflation-unemployment trade-off, other objectives can complement each other: supply-side improvements reduce inflation while raising growth; reducing inequality can boost growth via consumption. Show nuanced understanding by identifying which objectives conflict, which complement, and under what conditions.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Explain the 1970s stagflation using expectations: the Phillips Curve shifted outward when inflation expectations rose, creating simultaneous inflation and unemployment. Use the expectations-augmented Phillips Curve: inflation = expected inflation + effect of output gap. This explains why inflation can be 'sticky' and why controlling expectations is central to monetary policy.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_12_5.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Neglecting to distinguish between free-market (supply-side deregulation, tax cuts, privatisation) and interventionist supply-side policies (skills training, R&D subsidies, infrastructure investment). Examiners test whether you understand the mechanisms: free-market policies boost incentives, while interventionist policies correct market failures. Both aim to shift AS right, but using different routes.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_6.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Link free-market supply-side policies to efficiency gains through competition. Deregulation removes barriers to entry, allowing new firms to compete. Privatisation subjects firms to profit incentives and competition. Tax cuts raise disposable income, boosting work incentives (assuming substitution > income effect). Always link policy to microeconomic mechanisms, not macro rhetoric.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_12_7.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Automatically treating state intervention as efficiency-reducing, while free-market policies as efficiency-enhancing. Interventionist supply-side policies (skills, R&D, infrastructure) correct positive externalities that markets underprovide. Some degree of intervention is efficiency-enhancing. Evaluate policies on merit with reference to market failure theory, not ideology.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Demand-side policy includes both fiscal (government spending, taxation) and monetary (interest rates, quantitative easing) tools. Distinguish between expansionary policy (during recession, negative output gap) and contractionary policy (during boom, positive output gap). Examiners expect you to link policy choice to the economic cycle and inflation expectations.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_12_9.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Confusing structural deficit (spending exceeds revenue at full employment) with cyclical deficit (deficit due to temporary downturn). A government with large structural deficit faces sustained high borrowing and debt accumulation, even during expansions. Evaluating fiscal sustainability requires separating these components—failure to do so misleads policy analysis.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_10.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Remember the monetary transmission mechanism: interest rate cuts → lower borrowing costs → increased investment and consumption → higher AD → output and employment rise. However, this mechanism takes 12–18 months and can be slow or broken during credit crunches (liquidity trap). Acknowledge time lags and limits when evaluating monetary policy effectiveness.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_12_11.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Reducing central bank roles to 'controlling inflation via interest rates.' Modern central banks also: manage financial stability, act as lenders of last resort, regulate banks, and influence money supply via quantitative easing. The 2008 crisis showed that price stability alone is insufficient—systemic risk and credit conditions matter enormously. Include these broader roles in your answers.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_12_12.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When evaluating fiscal policy, compare actual outcomes to a counterfactual scenario ('what would have happened without intervention?'). A £50bn stimulus that raises output by £30bn is not 'ineffective'—ask: would output have fallen by £20bn without it? Use multiplier estimates to assess policy effectiveness, and account for crowding out, time lags, and expectations effects.",
+      "style": "tip"
+    }
+  ]
+}

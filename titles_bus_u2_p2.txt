@@ -1,0 +1,31 @@
+src/data/seedNotes/business/note_2_10_0.js: Understand how inflation affects business costs, prices, wages and competitiveness, and distinguish between its effects on exporters and importers.
+src/data/seedNotes/business/note_2_10_1.js: Analyse how changes in the exchange rate affect the costs, revenues and competitiveness of UK businesses that export or import, using appreciation and depreciation examples.
+src/data/seedNotes/business/note_2_10_10.js: Understand the main types of intellectual property rights (patents, trademarks, copyright, design rights), their duration and how they protect businesses from imitation and foster innovation.
+src/data/seedNotes/business/note_2_10_11.js: Analyse how the number, size and behaviour of competitors affect a firm\
+src/data/seedNotes/business/note_2_10_12.js: Evaluate how small businesses compete against larger rivals using niche marketing, personalised service, flexibility, local knowledge, price and non-price methods.
+src/data/seedNotes/business/note_2_10_2.js: Analyse how changes in interest rates affect business borrowing costs, consumer spending, investment decisions and cash flow, and evaluate who is most affected.
+src/data/seedNotes/business/note_2_10_3.js: Examine how taxation (corporation tax, VAT, income tax) and government spending influence business costs, consumer demand and investment decisions through fiscal policy.
+src/data/seedNotes/business/note_2_10_4.js: Understand the four phases of the business cycle (boom, recession, trough/slump, recovery) and analyse how each affects consumer demand, business investment, employment and profitability.
+src/data/seedNotes/business/note_2_10_5.js: Understand key consumer protection legislation and assess the impact of compliance on business costs, competitive behaviour and consumer trust.
+src/data/seedNotes/business/note_2_10_6.js: Understand key employment protection laws and evaluate their impact on business costs, flexibility, employee relations and ethical reputation.
+src/data/seedNotes/business/note_2_10_7.js: Analyse the impact of environmental regulations on business costs, operations and reputation, and evaluate how firms can turn environmental compliance into competitive advantage.
+src/data/seedNotes/business/note_2_10_8.js: Understand competition policy and the role of the Competition and Markets Authority (CMA) in regulating mergers, monopolies, price fixing and anti-competitive practices.
+src/data/seedNotes/business/note_2_10_9.js: Understand major health and safety legislation, employer duties, and assess the financial and reputational impact of compliance and non-compliance on businesses.
+src/data/seedNotes/business/note_2_8_0.js: Understand the structure of an income statement and distinguish between gross profit, operating profit and net profit, including how each is calculated from revenue and costs.
+src/data/seedNotes/business/note_2_8_1.js: Calculate and interpret gross profit margin, operating profit margin and net profit margin, and evaluate how changes in these ratios indicate different aspects of business performance.
+src/data/seedNotes/business/note_2_8_2.js: Evaluate methods a business can use to improve profit, including increasing revenue, reducing costs and changing the product mix, and assess the conditions under which each approach is most appropriate.
+src/data/seedNotes/business/note_2_8_3.js: Distinguish between profit and cash flow, explain why a profitable business can fail due to poor cash flow, and analyse scenarios where the profit–cash distinction is most critical.
+src/data/seedNotes/business/note_2_8_4.js: Calculate and interpret the current ratio and acid test ratio, state their ideal values, and evaluate what high or low values indicate about a business\
+src/data/seedNotes/business/note_2_8_5.js: Explain the concept of working capital, calculate the cash conversion cycle, and evaluate strategies for managing debtors, creditors and inventory to maintain adequate liquidity.
+src/data/seedNotes/business/note_2_8_6.js: Identify and analyse the main internal causes of business failure, including poor cash flow management, overtrading and poor management decision-making, and evaluate how each contributes to insolvency.
+src/data/seedNotes/business/note_2_8_7.js: Identify and analyse the main external causes of business failure, including economic downturns, increased competition and legislative changes, and evaluate how businesses can respond to or mitigate these threats.
+src/data/seedNotes/business/note_2_9_0.js: Understand the key methods of production: job, batch, flow, and cell production, along with their advantages and disadvantages.
+src/data/seedNotes/business/note_2_9_1.js: Learn how productivity is measured and its importance for business competitiveness.
+src/data/seedNotes/business/note_2_9_2.js: Evaluate the various methods businesses can use to improve productivity.
+src/data/seedNotes/business/note_2_9_3.js: Understand the relationship between efficiency, economies of scale, and the minimum average cost.
+src/data/seedNotes/business/note_2_9_4.js: Assess the differences, advantages, and drawbacks of labour-intensive versus capital-intensive operations.
+src/data/seedNotes/business/note_2_9_5.js: Understand capacity utilisation, calculate it, and evaluate the implications of over- and under-utilisation.
+src/data/seedNotes/business/note_2_9_6.js: Analyse inventory control systems, interpreting inventory control charts and understanding buffer inventory.
+src/data/seedNotes/business/note_2_9_7.js: Explore Just-In-Time (JIT) and Lean Production methodologies.
+src/data/seedNotes/business/note_2_9_8.js: Distinguish between Quality Control and Quality Assurance.
+src/data/seedNotes/business/note_2_9_9.js: Evaluate Total Quality Management (TQM) and the philosophy of Kaizen.

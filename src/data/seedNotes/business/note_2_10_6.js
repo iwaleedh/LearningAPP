@@ -132,6 +132,24 @@ export const note_business_2_10_6 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Employment law protects workers through minimum wages, anti-discrimination rules, working time limits and unfair dismissal rights. It raises business costs (wages, HR, compliance) but can improve motivation, reduce turnover and enhance employer reputation. Labour-intensive businesses in retail and hospitality are most affected by NLW increases.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Contrast employment law WITH business flexibility needs. For example, unfair dismissal laws increase costs BUT reduce staff turnover, protecting firm-specific training investment. Use this balance to earn evaluation marks in case study questions."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Many answers state 'employment laws increase costs' without calculating impact. Examiners reward quantified analysis: e.g., maternity pay liability as % of payroll. Also ignore ethical reputation gains from fair treatment (attracts better talent, reduces strikes)."
+      }
     }
   ],
   recall: {

@@ -31,7 +31,25 @@ export const note_business_2_7_9 = {
     { "id": "enr-t7b-p-budgetmonitor", "type": "paragraph", "data": { "text": "Variance analysis is only effective when budgets are <b>monitored regularly</b>. Monthly reviews allow managers to spot emerging problems and take corrective action — such as renegotiating supplier contracts to address an adverse cost variance, or running a promotional campaign to recover lagging revenue." } },
     { "id": "enr-t7b-call-brand", "type": "callout", "data": { "style": "worked", "title": "Real World: Tesco Regional Variance Reviews", "text": "Tesco store managers attend monthly regional review meetings and must present budget variance reports. A store reporting an adverse labour cost variance — say, actual wages £8,000 above budget — must explain whether the cause was unplanned overtime, high staff turnover, or scheduling errors. The regional manager then decides whether to adjust the budget or require an action plan. This is variance analysis driving real management decisions at scale." } },
     { "id": "enr-t7b-call-student", "type": "callout", "data": { "style": "tip", "title": "Relatable: Exam Score vs. Target", "text": "If you targeted 70% on a mock but scored 55%, that is a 15-mark adverse variance. The point is not just to notice the gap — it is to investigate <em>why</em>: Was it a revision gap, time pressure, or unfamiliar question style? Identifying the cause is the whole purpose of variance analysis, and the same logic applies to businesses investigating budget shortfalls." } },
-    { id: 'sum-1', type: 'summary', data: { text: 'Variance analysis highlights the gaps between budgets and reality. Favourable variances boost profit; adverse variances reduce it and require investigation.' } }
+    { id: 'sum-1', type: 'summary', data: { text: 'Variance analysis highlights the gaps between budgets and reality. Favourable variances boost profit; adverse variances reduce it and require investigation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Variance = actual \u2212 budgeted. Favourable variance (actual revenue > budgeted, or actual cost < budgeted) improves profit; adverse variance worsens it. Always calculate variance *and* state whether it's favourable or adverse with business implications."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Calculating variance but not investigating *why* it occurred. \u00a310k favourable variance on materials could mean efficient purchasing OR underproduction (less purchased). Investigate root causes\u2014market changes, input cost inflation, operational efficiency shifts\u2014to draw valid conclusions."
+      }
+    }
   ],
   recall: {
     enabled: true,

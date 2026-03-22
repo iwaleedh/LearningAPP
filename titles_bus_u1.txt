@@ -1,0 +1,53 @@
+src/data/seedNotes/business/note_1_1_0.js: Understand the differences between mass and niche markets, including their relative advantages and disadvantages.
+src/data/seedNotes/business/note_1_1_1.js: Understand how to calculate and interpret market size, market share, and brand value in a competitive environment.
+src/data/seedNotes/business/note_1_1_10.js: Understand how markets are segmented and how market maps are utilized to position products against competitors.
+src/data/seedNotes/business/note_1_1_11.js: Explore the methods by which a business can differentiate its products and the critical importance of adding value.
+src/data/seedNotes/business/note_1_1_2.js: Analyze the significance of brand identity and how branding adds value to a business and its products.
+src/data/seedNotes/business/note_1_1_3.js: Understand why markets change and how businesses adapt to dynamic, ever-changing market environments.
+src/data/seedNotes/business/note_1_1_4.js: Examine how competition affects businesses, consumers, and the overall market structure.
+src/data/seedNotes/business/note_1_1_5.js: Differentiate between risk and uncertainty in the context of business decision-making.
+src/data/seedNotes/business/note_1_1_6.js: Understand primary (field) market research, evaluate its methods, and weigh its advantages and disadvantages.
+src/data/seedNotes/business/note_1_1_7.js: Understand secondary (desk) market research, identify its sources, and evaluate its usefulness to a business.
+src/data/seedNotes/business/note_1_1_8.js: Explore how businesses select respondents for primary research using different sampling methods.
+src/data/seedNotes/business/note_1_1_9.js: Distinguish between product-orientated and market-orientated business strategies and evaluate their effectiveness.
+src/data/seedNotes/business/note_1_2_0.js: Understand the concept of demand and explain its main determinants.
+src/data/seedNotes/business/note_1_2_1.js: Understand the concept of supply and outline factors that cause supply curves to shift.
+src/data/seedNotes/business/note_1_2_2.js: Explain how demand and supply interact to determine the equilibrium price and quantity.
+src/data/seedNotes/business/note_1_2_3.js: Analyse the impacts of shifts in supply and demand on equilibrium price and quantity.
+src/data/seedNotes/business/note_1_2_4.js: Interpret and utilize supply and demand diagrams to illustrate market dynamics.
+src/data/seedNotes/business/note_1_2_5.js: Calculate Price Elasticity of Demand (PED) and understand its determinants.
+src/data/seedNotes/business/note_1_2_6.js: Calculate Income Elasticity of Demand (YED) and distinguish normal, luxury, and inferior goods.
+src/data/seedNotes/business/note_1_2_7.js: Understand the relationship between price changes, demand elasticity, and total revenue.
+src/data/seedNotes/business/note_1_2_8.js: Evaluate how firms use elasticity concepts to inform strategic pricing and business decisions.
+src/data/seedNotes/business/note_1_3_0.js: Understand marketing objectives and their importance to an organisation.
+src/data/seedNotes/business/note_1_3_1.js: Understand the stages of the Product Life Cycle (PLC) and the role of extension strategies.
+src/data/seedNotes/business/note_1_3_10.js: Evaluate different distribution channels and their appropriateness.
+src/data/seedNotes/business/note_1_3_11.js: Examine how digital technology and comparison sites influence pricing and distribution strategies.
+src/data/seedNotes/business/note_1_3_2.js: Analyse product portfolios using the Boston Matrix.
+src/data/seedNotes/business/note_1_3_3.js: Explain how the 4Ps of the marketing mix adapt to different types of markets.
+src/data/seedNotes/business/note_1_3_4.js: Differentiate between Business-to-Business (B2B) and Business-to-Consumer (B2C) marketing.
+src/data/seedNotes/business/note_1_3_5.js: Evaluate methods used by businesses to build and maintain customer loyalty.
+src/data/seedNotes/business/note_1_3_6.js: Analyse the elements of the design mix and how they influence product design.
+src/data/seedNotes/business/note_1_3_7.js: Evaluate different promotion methods and the channels used to deliver them.
+src/data/seedNotes/business/note_1_3_8.js: Understand approaches to building, maintaining, and strengthening a brand.
+src/data/seedNotes/business/note_1_3_9.js: Analyse different pricing strategies and tactics.
+src/data/seedNotes/business/note_1_4_0.js: Understand the two contrasting views of employees — as a <b>cost</b> to be minimised or as an <b>asset</b> to be invested in — and the implications of each view for HRM strategy.
+src/data/seedNotes/business/note_1_4_1.js: Understand flexible workforce models including Handy\
+src/data/seedNotes/business/note_1_4_10.js: Understand and evaluate the range of <b>non-financial motivation methods</b>: job enrichment, job enlargement, job rotation, empowerment, delegation, teamwork, and flexible working. Link each method to the relevant motivation theory.
+src/data/seedNotes/business/note_1_4_11.js: Understand and evaluate four leadership styles — <b>Autocratic</b>, <b>Democratic</b>, <b>Laissez-faire</b>, and <b>Paternalistic</b> — and link them to McGregor\
+src/data/seedNotes/business/note_1_4_2.js: Distinguish between <b>dismissal</b> and <b>redundancy</b> as methods of ending employment, understand fair vs unfair dismissal, and evaluate their business and legal implications.
+src/data/seedNotes/business/note_1_4_3.js: Understand the difference between <b>individual</b> and <b>collective</b> employment relations, the role of trade unions and collective bargaining, types of industrial action, and mechanisms for resolving disputes.
+src/data/seedNotes/business/note_1_4_4.js: Understand the recruitment and selection process: internal vs external recruitment, job descriptions, person specifications, and selection methods (interviews, psychometric tests, assessment centres). Evaluate the costs and benefits of each approach.
+src/data/seedNotes/business/note_1_4_5.js: Understand and evaluate the different <b>training methods</b> available to businesses — on-the-job and off-the-job — and assess the costs and benefits of investing in employee training.
+src/data/seedNotes/business/note_1_4_6.js: Understand the main types of organisational structure — hierarchical (tall), flat, matrix, functional, and divisional — and evaluate the advantages and disadvantages of each.
+src/data/seedNotes/business/note_1_4_7.js: Understand key structural concepts: <b>span of control</b>, <b>chain of command</b>, <b>hierarchy</b>, <b>delegation</b>, <b>delayering</b>, and the distinction between <b>centralised</b> and <b>decentralised</b> decision-making.
+src/data/seedNotes/business/note_1_4_8.js: Understand and evaluate the four key motivation theories on the Edexcel IAL Business specification: <b>Taylor</b> (Scientific Management), <b>Maslow</b> (Hierarchy of Needs), <b>Herzberg</b> (Two-Factor Theory), and <b>McGregor</b> (Theory X and Theory Y). Apply each theory to business decision-making.
+src/data/seedNotes/business/note_1_4_9.js: Understand the range of <b>financial motivation methods</b> available to businesses — time-rate, piece-rate, performance-related pay, bonus, commission, profit-sharing, and fringe benefits — and evaluate their effectiveness in motivating employees.
+src/data/seedNotes/business/note_1_5_0.js: Understand the role of an entrepreneur in creating, setting up, running and expanding a business.
+src/data/seedNotes/business/note_1_5_1.js: Understand the concept of intrapreneurship and how it benefits a business.
+src/data/seedNotes/business/note_1_5_2.js: Identify and evaluate the barriers to setting up a business.
+src/data/seedNotes/business/note_1_5_3.js: Understand why people choose to set up their own businesses.
+src/data/seedNotes/business/note_1_5_4.js: Identify the personal characteristics and skills typically associated with successful entrepreneurs.
+src/data/seedNotes/business/note_1_5_5.js: Distinguish between financial and non-financial motives for entrepreneurs.
+src/data/seedNotes/business/note_1_5_6.js: Analyze the various objectives a business and entrepreneur might pursue.
+src/data/seedNotes/business/note_1_5_7.js: Understand opportunity cost and trade-offs in decision making.

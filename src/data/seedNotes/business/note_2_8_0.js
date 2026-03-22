@@ -175,6 +175,24 @@ export const note_business_2_8_0 = {
         title: 'Relatable Example — Phone Case Business',
         text: 'You sell 40 custom phone cases at £30 each. Revenue = £1,200. Cost of cases (direct) = £480. <b>Gross profit = £720 (GPM = 60%).</b> You then pay packaging, postage and an Instagram ad = £320 overheads. <b>Operating profit = £400 (OPM = 33%).</b> After repaying £50 interest on a start-up loan: <b>Net profit = £350 (NPM ≈ 29%).</b> Each layer of the income statement reveals exactly where revenue goes — and which costs you have most control over.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Always draw or describe the income statement flow: Revenue \u2192 Gross Profit (less COGS) \u2192 Operating Profit (less overheads) \u2192 Net Profit (less interest/tax). Use real business examples (Tesco, Next) to show profit waterfall."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse gross and net profit \u2013 examiners specifically test this. Gross = before overheads (shows production efficiency). Net = after all costs (shows true profitability). Missing this distinction loses marks consistently."
+      }
     }
   ],
   recall: {

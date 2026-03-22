@@ -1,0 +1,198 @@
+{
+  "note_physics_5_29_0.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Tip: Mass Values",
+      "text": "When calculating the mass deficit ($ \\Delta m $), keep all values to at least 4 or 5 decimal places. Atomic mass differences are very small, and rounding too early will lead to significant errors in your final energy calculation."
+    }
+  ],
+  "note_physics_5_29_1.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: MeV Conversion",
+      "text": "If mass is given in atomic mass units (u), you do not need to use $ E = mc^2 $ with kg and the speed of light. Simply multiply the mass defect in u by $ 931.5 $ to directly find the energy in MeV."
+    }
+  ],
+  "note_physics_5_29_2.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Fusion vs Fission",
+      "text": "Students often mix up which elements undergo fusion or fission. Remember that the peak of the binding energy per nucleon curve is at Iron-56. Lighter elements to the left undergo fusion, while heavier elements to the right undergo fission to move towards greater stability."
+    }
+  ],
+  "note_physics_5_29_3.js": [
+    {
+      "style": "tip",
+      "title": "Key Terminology: Fusion Conditions",
+      "text": "In explain-style questions about fusion, examiners actively look for the phrase 'high temperatures and pressures are required to overcome the strong electrostatic repulsion' between positively charged nuclei."
+    }
+  ],
+  "note_physics_5_30_0.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Background Radiation",
+      "text": "Always remember to subtract the background count rate from your measured count rate before performing any half-life or decay calculations. Failing to correct for background radiation is a frequent source of lost marks."
+    }
+  ],
+  "note_physics_5_30_1.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Defining Beta Decay",
+      "text": "Do not simply say that beta particles are 'fast-moving electrons'. To get the definition mark, you must specifically state that they are fast-moving electrons emitted from the nucleus."
+    }
+  ],
+  "note_physics_5_30_2.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Balancing Equations",
+      "text": "Always verify that both the total mass number (top numbers) and the total atomic number (bottom numbers) are conserved on both sides of a nuclear equation. Remember that a beta particle is written as $ ^0_{-1}\\beta $."
+    }
+  ],
+  "note_physics_5_30_3.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Dealing with Uncertainty",
+      "text": "Radioactive decay is a random process. When describing experiments, mention that taking readings over a longer period of time, or taking multiple repeat readings, helps to reduce the percentage uncertainty."
+    }
+  ],
+  "note_physics_5_30_4.js": [
+    {
+      "style": "warning",
+      "title": "Definitions: Random vs Spontaneous",
+      "text": "Examiners strictly distinguish between these two terms. 'Random' means we cannot predict exactly when a specific nucleus will decay. 'Spontaneous' means the decay cannot be induced or affected by external factors like temperature or pressure."
+    }
+  ],
+  "note_physics_5_30_5.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Time Units",
+      "text": "When using $ \\lambda = \\frac{\\ln 2}{t_{1/2}} $, ensure your units match. If half-life is in years, $ \\lambda $ will be in year$^{-1}$. If you need to calculate Activity in Becquerels (decays per second), you must convert half-life to seconds first!"
+    }
+  ],
+  "note_physics_5_31_0.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Drawing Field Lines",
+      "text": "When drawing gravitational field lines, ensure the arrows always point towards the center of mass. For a radial field (like around a planet), the lines must clearly diverge as they move outwards."
+    }
+  ],
+  "note_physics_5_31_1.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Value of g",
+      "text": "While $ g = 9.81 \\text{ N kg}^{-1} $ near the Earth's surface, remember that $ g $ follows an inverse-square law ($ g \\propto \\frac{1}{r^2} $) and decreases significantly at higher orbital altitudes."
+    }
+  ],
+  "note_physics_5_31_2.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Distance r",
+      "text": "In the equation $ F = \\frac{GMm}{r^2} $, remember that $ r $ is the distance between the centers of the two masses, not the distance between their surfaces. For an object in orbit, $ r = \\text{Radius of planet} + \\text{altitude} $."
+    }
+  ],
+  "note_physics_5_31_3.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Forgetting to Square",
+      "text": "A very common slip in calculations using $ g = \\frac{GM}{r^2} $ is forgetting to square the distance $ r $. Always double-check your substitution steps to ensure the square is included."
+    }
+  ],
+  "note_physics_5_31_4.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Negative Potential",
+      "text": "Gravitational potential $ V $ is defined as zero at infinity. Because gravity is an attractive force, work is done by the field as an object moves closer, making all potential values negative. Don't drop the negative sign in $ V = -\\frac{GM}{r} $!"
+    }
+  ],
+  "note_physics_5_31_5.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Comparing Fields",
+      "text": "When asked to compare electric and gravitational fields, the most crucial difference to state is that gravitational forces are purely attractive, whereas electric forces can be either attractive or repulsive."
+    }
+  ],
+  "note_physics_5_31_6.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Deriving Orbital Equations",
+      "text": "To find orbital velocity or time period, you should automatically start by equating the gravitational force to the centripetal force: $ \\frac{GMm}{r^2} = \\frac{mv^2}{r} $ or $ \\frac{GMm}{r^2} = mr\\omega^2 $."
+    }
+  ],
+  "note_physics_5_32_0.js": [
+    {
+      "style": "warning",
+      "title": "Examiner Tip: Conditions for SHM",
+      "text": "To get full marks when defining SHM, you must state two key conditions: the acceleration is directly proportional to the displacement from equilibrium, AND it is always directed towards the equilibrium position."
+    }
+  ],
+  "note_physics_5_32_1.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Calculator Mode",
+      "text": "When using the sinusoidal equations for SHM like $ x = A \\cos(\\omega t) $, your calculator MUST be set to Radians, not Degrees. Failing to switch modes is one of the most common student errors."
+    }
+  ],
+  "note_physics_5_32_2.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Amplitude Independence",
+      "text": "Notice that the amplitude $ A $ does not appear in the time period equations for a mass-spring system or a pendulum. Therefore, the time period of an SHM oscillator is completely independent of its initial amplitude."
+    }
+  ],
+  "note_physics_5_32_3.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: SHM Graphs",
+      "text": "Remember the phase relationships: At maximum displacement, velocity is zero and acceleration is at a maximum. As the oscillator passes through the equilibrium position, displacement and acceleration are zero, but velocity is at a maximum."
+    }
+  ],
+  "note_physics_5_32_4.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Graph Gradients",
+      "text": "The velocity-time graph is the gradient of the displacement-time graph. So, if displacement is a cosine curve ($ x = A \\cos \\omega t $), the velocity graph will be an inverted sine curve."
+    }
+  ],
+  "note_physics_5_33_0.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Defining Resonance",
+      "text": "When defining resonance, clearly state that it occurs when the driving frequency exactly matches the natural frequency of the system, resulting in a maximum transfer of energy and a maximum amplitude of oscillation."
+    }
+  ],
+  "note_physics_5_33_1.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Improving Practical Accuracy",
+      "text": "In resonance experiments, suggest using a fiducial marker placed exactly at the equilibrium position to help count oscillations, as the mass moves fastest there and is least likely to be obscured."
+    }
+  ],
+  "note_physics_5_33_2.js": [
+    {
+      "style": "warning",
+      "title": "Common Mistake: Time Period and Damping",
+      "text": "Damping progressively reduces the amplitude of oscillations by dissipating energy, but it has almost NO effect on the time period of the oscillation. Many students wrongly assume damping makes the oscillations slower."
+    }
+  ],
+  "note_physics_5_33_3.js": [
+    {
+      "style": "tip",
+      "title": "Terminology: Free vs Forced",
+      "text": "Ensure you can distinguish between free oscillations (where a system is disturbed and left to oscillate at its own natural frequency) and forced oscillations (where a system is continuously driven by an external periodic force)."
+    }
+  ],
+  "note_physics_5_33_4.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Damped Resonance Curves",
+      "text": "When drawing resonance curves with increased damping, ensure that the new curve has a lower peak (lower amplitude), is wider, and its peak is slightly shifted to the left (a lower frequency)."
+    }
+  ],
+  "note_physics_5_33_5.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip: Plastic Deformation",
+      "text": "Ductile materials can absorb large amounts of energy through plastic deformation before breaking. In questions about earthquake-resistant buildings, mention that this deformation acts as heavy damping to dissipate the vibrational energy."
+    }
+  ]
+}

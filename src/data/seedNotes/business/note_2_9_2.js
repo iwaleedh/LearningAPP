@@ -133,6 +133,24 @@ export const note_business_2_9_2 = {
       id: "sum-2-9-2",
       type: "summary",
       data: { text: "Productivity improvement comes from multi-faceted approaches ranging from technological investments to staff training and motivational techniques." }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Evaluate productivity improvements within constraints: automation boosts output/employee (good) but requires CapEx and retraining (cost). Training staff might not pay off if they then leave. Always balance benefit vs. cost and risk."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Suggesting quick wins (work harder, better motivation) without analyzing structural barriers. If processes are inefficient or technology outdated, motivation alone won't improve productivity meaningfully. Diagnose root cause first."
+      }
     }
   ],
   recall: {

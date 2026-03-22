@@ -1,0 +1,128 @@
+[
+  {
+    "file": "note_4_5_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Ensure you state that light energy is converted into chemical energy during photosynthesis. Never write that plants 'make', 'produce' or 'create' energy; energy is only transferred."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often struggle to distinguish between the roles of PSII and PSI. Remember that photolysis of water replaces electrons exclusively in Photosystem II, while NADP is reduced by electrons originating from Photosystem I."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not imply that the light-independent reactions only occur in the dark! These reactions happen continuously in the light as long as the products of the light-dependent stage (ATP and reduced NADP) are being supplied."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When interpreting limiting factor graphs, the factor plotted on the x-axis is only the limiting factor on the ascending slope. Once the graph plateaus, you must state that another factor (e.g. temperature or carbon dioxide concentration) has become limiting."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Avoid confusing absorption spectra and action spectra. An absorption spectrum shows the amount of light absorbed by pigments at different wavelengths, whereas an action spectrum shows the overall rate of photosynthesis achieved at those wavelengths."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Make sure you clearly state that NPP is less than GPP because energy is lost via plant respiration. Be ready to manipulate the equation NPP = GPP - R in calculation questions."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When evaluating the method of counting oxygen bubbles to measure the rate of photosynthesis, remember to state that bubbles can vary in volume. A more accurate method is to collect the gas using a gas syringe."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When calculating Rf values for photosynthetic pigments, always measure from the origin line to the geometric centre of the pigment spot. Remember that Rf values must always be less than 1."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_8.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse the nitrogenous base 'adenine' in ATP with the nucleoside 'adenosine'. ATP consists of an adenine base, a ribose sugar, and three phosphate groups."
+        }
+      }
+    ]
+  }
+]

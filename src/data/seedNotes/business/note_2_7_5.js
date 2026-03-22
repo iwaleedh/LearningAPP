@@ -26,7 +26,25 @@ export const note_business_2_7_5 = {
       { text: '<strong>Static snapshot:</strong> A break-even chart reflects one moment; any change in price, cost structure, or market conditions requires an entirely new chart to remain valid.' }
     ] } },
     { id: 'enr-t7a-call-business-plan', type: 'callout', data: { style: 'key', title: 'Real World: Break-Even in Business Plans', text: 'When a start-up approaches a <strong>bank for a loan or an investor for equity</strong>, lenders routinely require break-even analysis as part of the business plan. It demonstrates the minimum sales level required for viability, lets lenders gauge default risk, and shows the margin of safety under different demand scenarios. A well-modelled break-even analysis significantly increases the credibility of a funding application.' } },
-    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Drawing Break-Even Charts', text: 'Always label all three lines (FC, TC, TR), mark the BEP clearly with a dot, and drop a dotted vertical line to the x-axis to show the break-even output. If the question states an actual output level, draw a bracket on the x-axis between that output and the BEP to represent the <strong>margin of safety</strong>. Missing these labels costs easy marks.' } }
+    { id: 'enr-t7a-call-student', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Drawing Break-Even Charts', text: 'Always label all three lines (FC, TC, TR), mark the BEP clearly with a dot, and drop a dotted vertical line to the x-axis to show the break-even output. If the question states an actual output level, draw a bracket on the x-axis between that output and the BEP to represent the <strong>margin of safety</strong>. Missing these labels costs easy marks.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Break-even charts plot output (x-axis) vs cost/revenue (y-axis). The intersection of total cost and revenue lines is the break-even point. Interpret the gap between lines: below BEP = loss (loss triangle shaded); above BEP = profit. Visual interpretation adds sophistication."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Misreading break-even charts: e.g., reading profit where loss exists, or confusing fixed cost line with total cost line. In exams, carefully label axes and lines. When asked to 'analyse a break-even chart,' describe the cost structure, identify BEP, and assess profitability margins."
+      }
+    }
   ],
   recall: {
     enabled: true,

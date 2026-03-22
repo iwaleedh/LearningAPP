@@ -1,0 +1,596 @@
+{
+  "src/data/seedNotes/business/note_1_1_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel always asks candidates to 'compare advantages and disadvantages' of mass vs niche markets — use a two-way table structure in essays. Define clearly what 'mass market' and 'niche market' mean before comparing; examiners mark harshly on vague definitions. Remember niche markets = higher price/lower volume; mass = lower price/higher volume."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students often claim 'niche markets are always more profitable' — this is wrong. Profitability depends on cost structure and competition. Edexcel looks for nuance: niche markets have less competition (margin benefit) but lower volume (revenue risk). Examiners penalize binary thinking; always consider context."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel exam questions often mix market size, share, and brand value calculations — show working clearly. Use the formulas: Market share (%) = (Business sales ÷ Total market sales) × 100. Examiners award method marks for correct steps even if final answer is wrong. Always state your assumptions if data is incomplete."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse market size (total value of entire market) with market share (one firm's portion). Common error: forgetting to multiply by 100 for percentages, or using revenue instead of volume. In Edexcel papers, always check units (£m, £bn, millions of units) — marks are lost for incorrect units in final answers."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_10.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Market maps are critical in Edexcel Unit 1 — always label axes clearly with relevant attributes (price vs quality, innovation vs tradition, etc.). The examiner expects you to identify 'gaps' and 'crowded zones' on the map and explain positioning strategy. Practice plotting products from real case studies to develop exam speed."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Many students plot products incorrectly on the market map or forget to label axes with what the axes represent (e.g., 'Price' isn't enough — specify 'Premium Price vs Budget Price'). Also, students fail to link the map to strategy — the map must show WHY a product is positioned there, not just WHERE it sits."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_11.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel values differentiation analysis with real examples — explain HOW a firm adds value (quality, design, USP, innovation, branding). The examiner expects you to link differentiation to competitive advantage and pricing power. Use the phrase 'allows the firm to charge a premium price' when explaining value-added strategies."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates claim 'we differentiate by being different' without explaining the actual mechanism or benefit. Vague answers like 'better quality' score low marks. Edexcel requires specific examples: if you say 'design differentiation,' explain which design features, how they appeal to customers, and why competitors can't replicate them easily."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "In Edexcel exams, 'brand identity' often appears in 12-mark questions — structure your answer: (1) Define brand identity, (2) Explain 5–6 elements (logo, colors, tone, values, imagery), (3) Link each to 'how it adds value' (customer loyalty, premium pricing, recognition). Use a real brand case study to anchor your analysis."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse brand identity (internal marker of who the brand is) with brand image (customer perception). Edexcel penalizes this conflation. Also, many fail to explain the BUSINESS VALUE of branding — it's not just customer recognition; it's a source of competitive advantage enabling price premiums and customer loyalty."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel tests this via 'market analysis' questions — use PESTEL or Porter's Five Forces to structure why markets change. Examiners expect you to identify external forces (social trends, tech innovation, regulation, competition) and explain how businesses adapt (new product lines, rebranding, cost reduction, market repositioning). Show cause-and-effect links clearly."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students list market changes without explaining HOW the change impacts the business or HOW the business should respond. Saying 'smartphone technology changed markets' gets minimal marks; you must explain: 'reduced demand for physical products → businesses shifted to digital-first strategies → created new revenue streams online.' Link change to business action."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel questions often ask how competition affects businesses AND consumers separately — answer both angles. For businesses: increased competition lowers prices and profit margins. For consumers: more choice, lower prices. Examiners reward structured two-part analysis showing these trade-offs and market efficiency concepts."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Many students claim 'competition is always bad for business' or vice versa — this oversimplifies. Edexcel looks for nuance: competition can spur innovation and market growth, but also thin margins. Common exam error is ignoring the consumer benefit or failing to distinguish between perfect/monopolistic competition structures and real-world outcomes."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "This is a frequently confused topic — Edexcel requires precise definitions: Risk = known probability distribution (e.g., 30% chance of loss); Uncertainty = unknown probabilities (new market entry). Examiners expect you to use examples: market research data = reduces uncertainty; competitor action = introduces new risk. Use correct terminology in essays."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students use 'risk' and 'uncertainty' interchangeably — Edexcel marks this wrong. A common error is claiming 'risk can be eliminated' (it can be mitigated, not eliminated). Also, candidates don't explain why businesses care about the distinction (uncertainty requires different strategies like contingency planning; risk can be managed via insurance or probability analysis)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel focuses on PRIMARY (field) research methods: surveys, interviews, focus groups, questionnaires, observation. Examiners expect clear distinction from secondary research. When evaluating methods, use a structured approach: Advantages (accuracy, targeted, current data) vs Disadvantages (cost, time, response bias). Always link evaluation back to business context/purpose."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates list advantages/disadvantages without explaining HOW they matter to the business. Saying 'surveys are quick' is vague — Edexcel wants: 'Surveys are quick to administer (4 weeks), enabling rapid market entry decisions, but have low response rates (20%), risking bias if only brand-loyal customers respond.' Always quantify and contextualize."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "SECONDARY (desk) research is often tested in 6–8 mark questions — list sources (government data, competitor reports, industry journals, census data) and explain WHY each is useful. Edexcel rewards you for evaluating reliability and currency of sources. Remember: secondary research is cost-effective but may be outdated or not tailored to the specific business need."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume secondary research has NO disadvantages — Edexcel penalizes this. Common mistakes: not mentioning outdated data (statistics from 2020 may not reflect 2024 markets), failing to note that secondary data isn't business-specific (published market data may not fit one firm's needs), and not explaining why firms use BOTH primary and secondary methods (one mitigates the other's weaknesses)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel tests sampling methods (simple random, stratified, quota, purposive) with 'evaluate' questions. Examiners expect you to: (1) Name the method, (2) Explain how it works, (3) State when it's appropriate, (4) Identify bias risks. Key insight: Simple random is unbiased but may miss key segments; stratified ensures representation but is complex; quota is practical for retail but prone to bias."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse sampling methods or claim 'random sampling is always best' — wrong. Edexcel rewards context-specific analysis: for a retail survey, quota sampling is faster and cheaper (though slightly biased) than random sampling. Candidates often ignore sample size impact — larger samples = more representative but higher cost. Always weigh trade-offs."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_1_9.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "This is a core comparison question in Edexcel Unit 1 — use a two-column table: Product-Orientated (start with product idea, adapt market) vs Market-Orientated (research demand, design product). Examiners expect you to evaluate each with real examples (Apple: market-orientated; traditional manufacturers: product-orientated). Link approach to success/failure outcomes."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students claim 'market orientation is always better' — wrong in all contexts. Edexcel penalizes blanket statements. Reality: Market orientation suits competitive markets and established companies (lower risk, higher cost); Product orientation suits innovation-driven firms (Apple, Tesla, high R&D). Fail to contextualize and you lose evaluation marks. Also, many forget that BOTH approaches have been successful historically."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel always defines Demand = quantity consumers are willing/able to buy at various prices in a given period. Examiners test understanding of determinants: income, tastes, substitutes/complements, age, expectations. In 4–6 mark questions, expect 'explain why demand for product X increased' — answer by identifying ONE determinant and linking it to demand shift. Use the Law of Demand: price ↑, quantity demanded ↓."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse 'demand' (willingness/ability to buy) with 'desire/want' (which isn't demand without purchasing power). Common error in essays: 'demand for luxury goods increased' without explaining WHY (income rise, fashion trend, celebrity endorsement). Edexcel expects clear cause-and-effect. Also, many forget that demand curves slope downward for normal goods — confirm this assumption for every question."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "SUPPLY = quantity firms are willing/able to produce at various prices. KEY DETERMINANTS for Edexcel: production costs, technology, competitor actions, government taxes/subsidies, expectations. When questions ask 'why did supply shift right?', answer with ONE factor: 'Technology improved, reducing costs, so firms produce more at each price.' Learn to draw supply curve shifts and label clearly — examiners award marks for correct diagrams."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students mix up SHIFT vs MOVEMENT along the curve: price change = movement along curve (no shift); technology/cost change = shift of curve. Edexcel penalizes this distinction heavily. Also, many forget supply curves slope UPWARD (price ↑, quantity supplied ↑) — opposite to demand. Another common error: assuming costs always decrease (they can increase due to inflation, labor shortages, raw material scarcity)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "EQUILIBRIUM = price where quantity demanded = quantity supplied. Edexcel expects clear diagram labeling: Demand line, Supply line, point of intersection = equilibrium price and quantity. Examiners test via 'if price is above equilibrium' questions: expect answer 'surplus exists, firms cut prices, price falls toward equilibrium.' Use this mechanism in essays to show understanding of market forces."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students struggle to identify equilibrium on a graph or assume markets always clear at equilibrium (false — market friction, price controls, information gaps prevent this in reality). Edexcel often tests: 'What happens if price is FIXED below equilibrium?' Answer: shortage → consumers can't find goods → black markets or rationing. Many candidates forget real-world complications beyond the textbook model."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel tests this via supply/demand diagram questions with 6–8 marks. When demand shifts RIGHT: new equilibrium has HIGHER price AND higher quantity (examiners expect correct diagram). When supply shifts LEFT: higher price, LOWER quantity. Examiners reward you for explaining the CAUSE (e.g., 'Income rose → demand shifts right → shortage forms → price rises until new equilibrium → quantity increases'). Always trace the chain of cause-and-effect."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students draw incorrect shift directions or forget to identify both price AND quantity changes at new equilibrium. Common error: 'demand shifted right so price goes up' — incomplete; you must add 'and quantity also increases.' Another major mistake: confusing which curve SHIFTS vs which direction. Practice: If incomes rise, DEMAND shifts right (not supply left). If costs fall, SUPPLY shifts right (not demand)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel rewards diagram skills — clear, labeled axes (Price on Y, Quantity on X), proper curve shapes, and equilibrium marked. Examiners expect you to use diagrams to EXPLAIN market dynamics: 'When demand increased, the demand curve shifted right, creating shortage, pushing price up, until new equilibrium E2 formed with higher P and Q.' Your verbal explanation must match your diagram exactly."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Messy diagrams lose marks — axes unlabeled, curves too wide or crossing incorrectly, equilibrium unmarked. Also, many students draw diagrams but forget to EXPLAIN what they show. Edexcel penalizes diagram-only answers in essays; you must narrate the economics: 'The shift causes a surplus/shortage, which triggers price movements until equilibrium re-forms.' Connect diagram to economics, not just sketch."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "PED formula: (% change in quantity demanded) ÷ (% change in price). Edexcel always marks for WORKING — show the calculation step-by-step. Interpret results: |PED| > 1 = elastic (demand sensitive to price); |PED| < 1 = inelastic (demand insensitive). Remember: PED is usually negative (price ↑, quantity ↓), but report absolute value. Use PED to predict revenue: elastic demand → lower price increases revenue; inelastic → higher price increases revenue."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates forget to convert to PERCENTAGE changes before calculating (use: [(New - Old) ÷ Old] × 100). Edexcel penalizes answers like 'demand changed 50 to 40 units' without showing percentage conversion. Also, many students calculate PED incorrectly as (Price change ÷ Quantity change) — this is backwards. Another trap: interpreting PED = -2 as 'demand decreases by 2%' when it actually means a 1% price increase causes 2% quantity decrease."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "YED formula: (% change in quantity demanded) ÷ (% change in income). Key classifications for Edexcel: YED > +1 = luxury goods (income-elastic); 0 < YED < +1 = normal goods; YED < 0 = inferior goods (income-inelastic). Examiners reward real-world examples: luxury cars (YED > 1) vs bread (YED close to 0) vs beans/discount brands (YED < 0). This concept links to business strategy (growth vs recession planning)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse YED (income elasticity) with PED (price elasticity) or forget that YED can be negative. Another error: assuming all luxury goods have high YED or all cheap goods have low YED — reality is more nuanced (luxury goods = luxury hotels YED 2; basic hotels YED 0.8). Edexcel penalizes vague answers like 'YED is positive so it's normal' — quantify by how much (is it 0.2 or 2.0? Both are normal but behave differently)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel tests the revenue relationship: Price × Quantity = Total Revenue. For elastic demand (|PED| > 1), price cuts INCREASE revenue (quantity gain outweighs price loss). For inelastic demand (|PED| < 1), price INCREASES boost revenue. Examiners expect you to use PED to PREDICT revenue changes before calculating: 'Product has PED = 2 (elastic), so a 10% price decrease will increase quantity by 20%, raising revenue.' Show this logic, not just the math."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume 'lower prices always increase revenue' — only true for elastic demand. For inelastic goods (e.g., petrol, tobacco), raising price increases revenue while sales volume drops slightly. Edexcel marks essays where candidates claim 'lower prices = higher revenue' for ALL products as incorrect. Also, many forget that price elasticity changes along the demand curve — a product elastic at high prices may be inelastic at low prices."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_2_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Edexcel expects 'evaluate elasticity for strategic pricing' questions (8–12 marks). Framework: (1) Calculate/identify PED, (2) Interpret elasticity (elastic vs inelastic), (3) Recommend pricing strategy (e.g., elastic demand → competitive pricing strategy; inelastic → premium pricing), (4) Link to revenue/profit impact. Examiners reward strategic context — 'If we have inelastic demand, raising price by 5% will reduce quantity by <2%, boosting profit margin significantly.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates ignore context and claim 'elastic = always bad' or 'inelastic = always good' — wrong. Reality depends on firm strategy and costs. High-elasticity markets can generate volume profits; low-elasticity markets support premium strategies. Edexcel penalizes lack of nuance. Also, many fail to consider other factors beyond elasticity (competitor actions, costs, brand strength) — elasticity alone doesn't determine pricing strategy, it informs it."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_0.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Marketing objectives drive all Unit 3 strategy decisions — Edexcel tests this heavily. Common objectives: increase market share, build brand awareness, enter new markets, boost customer retention, diversify product range, achieve profit targets. Examiners expect you to LINK objectives to marketing mix decisions: 'If the objective is brand awareness, promotion/advertising strategy should emphasize above-the-line media (TV, digital ads) to reach mass audiences.' Show cause-and-effect."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students list marketing objectives without explaining WHY they're important or HOW they guide strategy. Vague answers like 'the objective is to increase profits' — too broad for Edexcel. Be specific: 'The objective is to increase market share from 15% to 20% by targeting women aged 25–35 with eco-friendly positioning.' Also, many forget that different objectives conflict (market share growth = accept lower margins to undercut competitors; premium positioning = accept lower volume for higher profit per unit)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_1.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Product Life Cycle (PLC) has 5 stages: Development, Introduction, Growth, Maturity, Decline. Edexcel focuses on marketing implications at each stage: (1) Introduction = high promotion, limit distribution; (2) Growth = expand distribution, reinforce branding; (3) Maturity = cut costs, differentiate or reposition; (4) Decline = harvest cash or exit. Extension strategies delay decline: product modification, new uses, new markets, rebranding. Use real examples (iPhone product line) to anchor answers."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates claim 'all products follow the PLC' without acknowledging variations (some goods skip growth phase, some jump from maturity to decline if disrupted). Another error: assuming extension strategies always work (many fail — repositioning a declining brand is risky and expensive). Edexcel penalizes oversimplification. Also, many forget cash flow implications: Introduction/Growth phases require investment; Maturity generates cash; Decline is about harvesting final returns."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_10.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Distribution channels: Direct (company-owned stores, online, personal selling) vs Indirect (wholesalers, retailers, franchises). Edexcel tests 'evaluate channel appropriateness' — consider: Product type (luxury = direct; fast-moving = indirect), target market (online-savvy young consumers vs older traditional shoppers), costs, control. Framework: Direct = high control/margin but high cost; Indirect = lower cost/reach but less control. Link channel to product positioning."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume 'online distribution is always best' or ignore channel mix complexity — many successful firms use BOTH (e.g., Nike in Nike stores AND Dick's Sporting Goods AND online). Another error: not considering inventory, logistics, and middleman margins. Saying 'Amazon is cheapest' ignores factors like customer service, returns, brand control. Edexcel looks for nuanced channel strategy discussions, not channel hype."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_11.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Digital technology and price comparison sites (Google Shopping, Kayak, Autotrader) create price transparency — prices must be competitive or customers defect instantly. Edexcel expects you to explain the impact: (1) Price competition intensifies (prices converge downward), (2) Distribution democratizes (small firms reach global customers), (3) Data collection shifts (companies track consumer behavior online), (4) Direct sales bypass retailers. Link tech changes to strategic responses (omnichannel, value-add services, brand loyalty)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Candidates oversimplify: 'Digital tech reduces prices, so business profits fall.' Reality is more complex — yes, price competition increases, but tech also creates new profit opportunities (data monetization, customer insights, operational efficiency). Another error: assuming all sectors are equally disrupted (flight booking is decimated by comparison sites; luxury goods are less affected due to service/experience components). Edexcel rewards context-specific analysis, not blanket tech-pessimism."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_2.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Boston Matrix classifies products by Market Growth (Y-axis) and Market Share (X-axis): Stars (high share, high growth), Cash Cows (high share, low growth), Question Marks (low share, high growth), Dogs (low share, low growth). Edexcel strategy implications: Stars = invest to protect; Cash Cows = harvest cash, reinvest in Stars; Question Marks = invest selectively or divest; Dogs = divest. Plot fictional or real portfolios accurately — examiners award marks for correct positioning."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students confuse which axis is which or misplace products (e.g., plotting a low-growth product as a Star). Another error: assuming 'Stars are always good, Dogs always bad' — Dogs sometimes deserve investment if they have turnaround potential or strategic fit. Edexcel penalizes this oversimplification. Also, many forget that market growth rates vary by industry — 5% growth in telecoms is 'decline,' but 5% in luxury goods is 'growth.' Context matters."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_3.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "The 4Ps (Product, Price, Promotion, Place) vary by market: mass markets emphasize low Price and wide Place distribution; premium markets emphasize high-quality Product and selective Place (exclusive retailers). Edexcel tests this via 'compare 4Ps for luxury vs budget car brands' questions. Framework: Luxury = high price, premium product features, selective distribution, aspirational promotion. Budget = low price, basic features, mass distribution, value-focused promotion. Show trade-offs clearly."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students create incoherent marketing mixes (e.g., 'luxury product + budget price + mass distribution' = contradictory strategy). Edexcel penalizes inconsistent strategies that confuse positioning. Another error: treating the 4Ps as independent levers rather than integrated tools — each element must support the overall strategy. Also, many forget that successful businesses ALIGN their 4Ps; misalignment causes brand confusion and lost sales."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_4.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "B2B (Business-to-Business) = long sales cycles, relationship-focused, high-value transactions, multiple decision-makers. B2C (Business-to-Consumer) = short sales cycles, transaction-focused, lower unit values, emotional purchase drivers. Edexcel expects comparison essays using this framework: B2B promotion emphasizes technical detail (whitepapers, trade shows); B2C emphasizes lifestyle/emotion (social media, celebrity endorsement). Price: B2B = negotiation; B2C = list prices. Link approach to business model."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students claim 'B2B is more professional, B2C is more fun' — vague and wrong. Edexcel rewards rigorous distinctions. Reality: B2B relationships require trust-building; B2C requires mass reach and emotional resonance. Another error: assuming B2B customers are purely rational (they're not — corporate buyers have budget pressures, political motivations, career risks). Many candidates ignore that companies can operate in BOTH markets (e.g., Microsoft sells to enterprise AND consumers via Xbox)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_5.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Customer loyalty methods for Edexcel: loyalty schemes (points, rewards), exceptional customer service, brand consistency, community building, personalization. Examiners expect evaluation of ROI: loyalty schemes cost money (discounts, admin) but increase customer lifetime value (repeat purchases, word-of-mouth, reduced churn). Framework: Measure loyalty by retention rates, repeat purchase frequency, Net Promoter Score. Link loyalty strategy to competitive advantage."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students assume 'loyalty programs always work' — many fail due to poor design (too complex, low rewards, no emotional engagement). Edexcel penalizes this assumption. Another error: confusing transactional loyalty (points-based) with relational loyalty (emotional brand connection) — relational loyalty is stronger (brand advocates) but harder to build. Also, many ignore that loyalty = cost (discounts = lower margin), so companies must balance loyalty spending vs profitability."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_6.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Design mix elements: Function (does it work?), Aesthetics (does it look good?), Cost (affordability?). Edexcel tests via 'evaluate design strategy' questions — Apple prioritizes aesthetics + function (justifies premium price); budget brands prioritize cost + basic function. Examiners expect clear cause-and-effect: 'Premium aesthetics justify 25% higher price, enabling 15% profit margin vs competitor's 8%.' Show how design influences positioning and revenue."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students claim 'good design always sells better' — ignores trade-offs. High design = high cost = only viable for premium segments. Budget segments need functional, low-cost design. Edexcel penalizes oversimplification. Also, many forget that design needs market insight (IKEA's minimalist Scandinavian design appeals to young urbanites, not elderly traditional customers). Design strategy must match target market values, not just be universally 'good.'"
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_7.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Promotion methods split into Above-the-Line (TV, radio, print, digital ads — broad reach, impersonal) and Below-the-Line (PR, sponsorship, direct mail, in-store displays — targeted, personal). Edexcel tests via 'recommend promotion strategy' questions — expect you to justify channel choice: 'New product launch needs broad awareness (above-the-line TV) to reach mass audience quickly. Budget £2m on TV, digital, and press for 3 months.' Show budget allocation and reach calculations."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students recommend promotion without justifying cost-effectiveness or reach. Saying 'use Facebook advertising' is weak; Edexcel wants: 'Facebook targets 18–35 female professionals with household income £40k+, matching our niche market perfectly at £0.50 cost-per-click.' Another error: ignoring channel integration (omnichannel = all channels tell consistent brand story) or assuming one channel fits all demographics (TV reaches older audiences; TikTok reaches Gen Z)."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_8.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Brand-building requires consistency across: visual identity (logo, colors, design language), tone of voice (formal vs casual), customer experience (every touchpoint), values (sustainability, innovation, heritage). Edexcel expects 'evaluate brand strategy' essays with real examples (Nike = 'Just Do It' + swoosh + athlete sponsorships = consistent brand promise). Examiners reward you for explaining HOW consistency drives brand equity (customer recognition, trust, willingness to pay premium)."
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students focus only on logo/visuals and ignore the strategic component — Edexcel penalizes shallow answers. Brand is much more than aesthetics; it's customer perception, experience, and emotional connection. Another error: assuming 'rebranding is always good' (risky — alienates loyal customers, dilutes heritage). Examples: Gap rebranding in 2010 backfired; redesigned logo was rejected within a week, and company reverted. Edexcel rewards caution: consistent brands outperform chaotic rebrands."
+      }
+    }
+  ],
+  "src/data/seedNotes/business/note_1_3_9.js": [
+    {
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Examiner's Tip",
+        "text": "Pricing strategies: Cost-plus (add markup to costs), competitive (match rival prices), penetration (low price for market entry, build volume), premium (high price for quality signal), psychological (£9.99 vs £10). Edexcel tests via 'justify pricing strategy for scenario' — expect framework: Identify strategy, explain why it fits market conditions (competitive landscape, PED, target segment), quantify impact (volume/profit outcome). Example: 'Penetration pricing (£49 vs competitor £69) will achieve 25% market share in 12 months, enabling economies of scale.'"
+      }
+    },
+    {
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Common Mistake",
+        "text": "Students claim 'lower price always wins' or ignore strategic consequences. Penetration pricing can lock the firm into low-margin, high-volume business forever (hard to raise prices later without losing customers). Edexcel rewards nuance: penetration only works if costs fall with scale (achievable for digital products, risky for services). Another error: confusing psychological pricing (£9.99) with strategy — it's a tactic within a broader strategy, not a strategy itself."
+      }
+    }
+  ]
+}

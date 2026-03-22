@@ -1,0 +1,74 @@
+{
+  "note_3_5_0.js": [
+    {
+      "style": "warning",
+      "title": "Misidentifying Variables",
+      "text": "Students often mix up independent and dependent variables. Always state the dependent variable precisely as exactly what you are measuring (e.g., 'volume of oxygen produced in 60 seconds'), rather than just writing 'enzyme activity'."
+    },
+    {
+      "style": "tip",
+      "title": "Describing 'Amount'",
+      "text": "Examiners will rarely award marks for the word 'amount' when describing variables. You must specify whether you mean the 'volume', 'concentration', or 'mass' of a substance."
+    }
+  ],
+  "note_3_5_1.js": [
+    {
+      "style": "warning",
+      "title": "Reliability vs. Validity",
+      "text": "Do not use reliability and validity interchangeably. Reliability refers to the consistency of repeated measurements, while validity indicates that you are actually testing your hypothesis by carefully controlling all other potential independent variables."
+    },
+    {
+      "style": "tip",
+      "title": "Defining Control Experiments",
+      "text": "When asked how to set up a control, do not just vaguely state 'use a control'. Explain exactly what must be done, such as 'replace the enzyme with an equal volume of boiled, denatured enzyme to prove the reaction does not occur without it'."
+    }
+  ],
+  "note_3_5_2.js": [
+    {
+      "style": "warning",
+      "title": "Identifying Sources of Error",
+      "text": "'Human error', 'measuring wrong', or 'spilling some liquid' are not accepted as valid experimental limitations. Focus your evaluations on systematic issues like 'temperature fluctuations in the water bath' or 'subjectivity in judging the exact color change'."
+    },
+    {
+      "style": "tip",
+      "title": "Improving Precision",
+      "text": "If asked how to improve precision, suggest replacing the measuring instrument with one that has a smaller resolution. For example, state 'use a colorimeter instead of the naked eye to judge color' or 'use a graduated pipette instead of a beaker'."
+    }
+  ],
+  "note_3_5_3.js": [
+    {
+      "style": "warning",
+      "title": "Standard Deviation Overlaps",
+      "text": "When analyzing graphical data with error bars, students frequently forget to check for overlaps. Always explicitly state that if standard deviation bars overlap, there is no significant difference between the means."
+    },
+    {
+      "style": "tip",
+      "title": "Repeating for Anomalies",
+      "text": "When justifying why an experiment is repeated, the best mark-scoring phrasing is 'to identify anomalous results and calculate a reliable mean'. Avoid saying repeats make an experiment 'more accurate', as accuracy depends on the method itself."
+    }
+  ],
+  "note_3_5_4.js": [
+    {
+      "style": "warning",
+      "title": "Correlation vs. Causation",
+      "text": "Never state that a graph 'proves' a factor completely causes an effect simply because they correlate. Always write that the data shows a correlation, but point out that other uncontrolled factors could still be involved."
+    },
+    {
+      "style": "tip",
+      "title": "Graph Plotting Conventions",
+      "text": "Always place the independent variable on the x-axis and the dependent variable on the y-axis. Ensure your plotted points cover more than half the grid space and that every axis label includes the correct SI units."
+    }
+  ],
+  "note_3_5_5.js": [
+    {
+      "style": "warning",
+      "title": "Unrealistic Range of Variables",
+      "text": "When proposing a method in planning questions, ensure your chosen range is biologically realistic. Testing enzyme activity at 10°C intervals from 0°C to 50°C is good, but going up to 100°C is unnecessary as most enzymes fully denature much earlier."
+    },
+    {
+      "style": "tip",
+      "title": "Standardising Biological Material",
+      "text": "Always specify exactly how biological material is standardised. For plant tissues like potato cylinders, you must mention taking them 'from the same potato', 'using the same sized cork borer for identical surface area', and 'ensuring they are the same age and variety'."
+    }
+  ]
+}

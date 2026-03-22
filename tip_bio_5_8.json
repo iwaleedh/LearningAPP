@@ -1,0 +1,235 @@
+[
+  {
+    "file": "note_5_8_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often draw sensory neurones with the cell body at the end. Remember that the cell body of a sensory neurone is located along a branch off the main axon/dendron, typically in a dorsal root ganglion."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing the resting potential, clearly state the ratio of ions actively transported: 3 Na\u207a out for every 2 K\u207a moved in, establishing the electrochemical gradient."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Terminology Focus",
+          "text": "Do not simply say myelination 'speeds up the message'. State that action potentials 'jump' between Nodes of Ranvier, a process correctly termed saltatory conduction."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Trace the sequence logically: Ca\u00b2\u207a influx -> vesicle exocytosis -> diffusion across the cleft -> complementary binding to post-synaptic receptors -> Na\u207a channels open."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When assessing drugs, precisely identify if they are agonists (mimic neurotransmitters) or antagonists (block receptors). Stating they 'stop the neurotransmitter' is too vague."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Light causes sodium ion channels to close in a rod cell, leading to hyperpolarisation\u2014which counterintuitively *stops* the release of the inhibitory neurotransmitter glutamate."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "You must be able to visually identify the cerebrum, cerebellum, hypothalamus, and medulla oblongata on a diagram, and concisely link each to its primary function (e.g. cerebellum = coordination)."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Key Distinction",
+          "text": "Don't confuse CT with fMRI. CT gives structural images using X-rays, whereas fMRI provides functional data in real-time by tracking changes in blood oxygenation."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_8.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often fail to precisely define the critical window for visual development. Ensure you state it is the strict developmental period where visual sensory stimulation is required for normal visual cortex synapse formation."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_9.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "A frequent error is confusing Pr and Pfr. Remember that **Pr** absorbs red light (660 nm) and rapidly converts into **Pfr**, which is the active isomer that triggers vital photomorphogenesis processes like germination."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When discussing phototropism, examiners look for the keyword **elongation**. Auxin causes target cells on the shaded side to elongate, not to rapidly divide."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_10.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When discussing restriction endonucleases, make sure to explicitly mention that they often leave **sticky ends**. This allows for specific complementary base pairing with other DNA fragments cut by the exact same enzyme."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_11.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Examiners frequently ask for comparisons between somatic and germ-line therapy. Clearly state that somatic therapy changes only the treated individual's localized cells and is not passed on, whereas germ-line therapy changes gametes, making the genetic alterations inheritable."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_12.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "In long-answer questions about GMOs, provide a balanced scientific argument. Discuss specific ecological risks, such as potential horizontal gene transfer to wild relatives creating 'superweeds', alongside the economic and nutritional benefits."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_13.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "A common misconception is that microarrays measure genomic DNA directly. In expression profiling, they actually measure the abundance of fluorescently labelled **mRNA** (or cDNA derived from it) to deduce which genes are actively being expressed."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_14.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "For the snail habituation core practical, clearly distinguish between the sensory neurone (which stops responding due to reduced calcium ion influx) and the lack of an action potential reaching the motor neurone, ultimately leading to no muscle contraction."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_8_15.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When comparing the two coordination systems, strictly use established comparative terms: Nervous communication utilizes fast-acting **electrical impulses** along neurones, while the endocrine system relies on slower, longer-lasting **chemical messengers** transported in blood plasma."
+        }
+      }
+    ]
+  }
+]

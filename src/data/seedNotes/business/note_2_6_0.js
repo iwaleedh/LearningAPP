@@ -183,6 +183,24 @@ export const note_business_2_6_0 = {
             "title": "Student Tip: Working Capital in Everyday Life",
             "text": "Think of working capital like your bank balance before payday. If you owe £200 rent today but only have £150, your personal working capital is negative — you cannot meet your short-term obligation and need emergency cash. A business in the same position must raise finance urgently or negotiate to delay payment. Use this analogy when explaining liquidity in exam answers."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "In exam questions, always link the business plan's purpose to the specific stakeholder: investors want ROI projections, banks want repayment ability, and managers want strategic direction. Naming the right stakeholder demonstrates synoptic understanding."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often confuse a business plan with a business strategy. A business plan is a detailed operational document for external audiences or internal guidance; strategy is the competitive direction. Don't conflate the two in essays."
+      }
     }
   ],
   recall: {

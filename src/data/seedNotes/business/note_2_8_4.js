@@ -171,6 +171,24 @@ export const note_business_2_8_4 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'The <b>current ratio</b> (Current Assets ÷ Current Liabilities) measures overall short-term liquidity; the ideal range is 1.5–2:1. The <b>acid test ratio</b> ((Current Assets − Inventory) ÷ Current Liabilities) is more conservative, excluding illiquid stock; the ideal is approximately 1:1. Both ratios must be interpreted in industry context — a figure that indicates poor liquidity in one sector may be normal in another. Neither ratio alone provides a complete picture of financial health.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Note: your source text appears truncated. Ensure you know ideal values: Current Ratio ~2:1, Acid Test ~1:1. High values = inefficient (idle cash, poor investment), low values = liquidity crisis risk. Evaluate context: retailers work with lower ratios."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students memorize 'Current Ratio should be 2:1' without understanding WHY. A very high ratio wastes shareholder money on idle cash. Examiners expect you to interpret what HIGH/LOW ratios actually signal about management and industry norms."
+      }
     }
   ],
   recall: {

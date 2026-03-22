@@ -1,0 +1,98 @@
+{
+  "note_1_1_0.js": [
+    {
+      "style": "tip",
+      "title": "Water as a Solvent",
+      "text": "When discussing water's role as a solvent, explicitly mention that its dipole nature allows it to attract and surround both positive and negative ions, enabling them to dissolve and be transported."
+    }
+  ],
+  "note_1_1_1.js": [
+    {
+      "style": "warning",
+      "title": "Glycosidic Bonds",
+      "text": "Students often confuse the glycosidic bonds in glycogen and cellulose. Remember that glycogen has both 1,4 and 1,6 glycosidic bonds allowing rapid hydrolysis, while cellulose only has 1,4 bonds forming straight unbranched chains."
+    },
+    {
+      "style": "tip",
+      "title": "Relating Structure to Function",
+      "text": "When describing properties of starch or glycogen, always link structure to function: state that they are highly branched for rapid release of glucose, or compact so a large amount of energy can be stored in a small space."
+    }
+  ],
+  "note_1_1_2.js": [
+    {
+      "style": "warning",
+      "title": "Ester Bond Formation",
+      "text": "Always specify that ester bonds in triglycerides are formed via a condensation reaction between the hydroxyl (-OH) group of glycerol and the carboxyl (-COOH) group of the fatty acids, releasing three molecules of water."
+    }
+  ],
+  "note_1_1_3.js": [
+    {
+      "style": "warning",
+      "title": "Direction of Cholesterol Transport",
+      "text": "Remember that LDLs transport cholesterol from the liver to the tissues/cells, while HDLs transport cholesterol from the tissues back to the liver. A common error is mixing up their directions of transport."
+    }
+  ],
+  "note_1_1_4.js": [
+    {
+      "style": "warning",
+      "title": "Non-Reducing Sugar Test",
+      "text": "In the Benedict's test for non-reducing sugars, you must state that the sample is first boiled with dilute hydrochloric acid to hydrolyse the glycosidic bonds, then neutralized with an alkali (like sodium hydrogen carbonate) before adding Benedict's reagent."
+    }
+  ],
+  "note_1_1_5.js": [
+    {
+      "style": "tip",
+      "title": "Ventricular Systole",
+      "text": "Make sure to clearly sequence the events in the cardiac cycle. When writing about ventricular systole, state that the ventricles contract from the apex upwards, increasing pressure above that of the atria to close the AV valves and above that of the arteries to open the semi-lunar valves."
+    }
+  ],
+  "note_1_1_6.js": [
+    {
+      "style": "warning",
+      "title": "Comparing Blood Vessels",
+      "text": "When comparing arteries and veins, refer to the thickness of the muscle and elastic layers in the wall, not the overall wall thickness. You need to link the thick elastic tissue in arteries to maintaining high pressure through elastic recoil."
+    }
+  ],
+  "note_1_1_7.js": [
+    {
+      "style": "warning",
+      "title": "Hydrostatic vs. Oncotic Pressure",
+      "text": "A classic mistake is confusing hydrostatic and oncotic pressure. State clearly that at the arterial end of a capillary, the hydrostatic pressure from the heart is greater than the oncotic pressure (osmotic pull), forcing plasma and small molecules out to form tissue fluid."
+    }
+  ],
+  "note_1_1_8.js": [
+    {
+      "style": "tip",
+      "title": "Triggering Atherosclerosis",
+      "text": "Atherosclerosis always starts with damage to the endothelial lining of the artery (e.g. from high blood pressure). Do not just say 'damage to the artery wall'; be specific by using the term 'endothelium'."
+    }
+  ],
+  "note_1_1_9.js": [
+    {
+      "style": "warning",
+      "title": "Correlation vs. Causation",
+      "text": "When evaluating risk factors, avoid using the term 'causes'. State that factors like smoking, high blood pressure and diet are 'correlated with' or 'increase the risk' of CVD, as it is a multifactorial disease."
+    }
+  ],
+  "note_1_1_10.js": [
+    {
+      "style": "tip",
+      "title": "Function of Antioxidants",
+      "text": "Understand that free radicals are highly reactive species with an unpaired electron. Antioxidants like Vitamin C reduce the risk of oxidative stress by providing an electron to stabilize these radicals, preventing cellular damage."
+    }
+  ],
+  "note_1_1_11.js": [
+    {
+      "style": "warning",
+      "title": "Standardising Variables",
+      "text": "For quantitative or semi-quantitative biological tests, examiners look for mentions of standardisation. Always state that you would use equivalent volumes and concentrations of reagents across all tested samples for a valid comparison."
+    }
+  ],
+  "note_1_1_12.js": [
+    {
+      "style": "tip",
+      "title": "DCPIP Endpoint",
+      "text": "In the DCPIP titration for Vitamin C, the end-point is when the blue DCPIP turns colourless (or pink to colourless in an acidic solution). State that you must record the exact volume of juice required to decolourise a set standard volume of DCPIP."
+    }
+  ]
+}

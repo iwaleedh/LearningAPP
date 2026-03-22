@@ -112,6 +112,24 @@ export const note_business_2_9_4 = {
       id: "sum-2-9-4",
       type: "summary",
       data: { text: "Choosing between labour and capital intensity involves trading off high setup costs and inflexibility for speed and long-term cost benefits against the flexibility and low initial costs of a human workforce." }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use sector examples: agriculture is labour-intensive (harvest timing matters), manufacturing is increasingly capital-intensive (robots). Analyse trade-offs: labour-intensive = flexibility, lower CapEx, social costs; capital-intensive = consistency, lower marginal costs."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Oversimplifying capital-intensive as 'always cheaper.' Automation requires large upfront investment \u2013 only pays off at high volumes. A small artisan producer will never recoup automation cost. Match method to scale."
+      }
     }
   ],
   recall: {

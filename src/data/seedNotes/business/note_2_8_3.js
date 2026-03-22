@@ -145,6 +145,24 @@ export const note_business_2_8_3 = {
         title: 'Relatable Example — Jewellery Maker',
         text: 'Imagine you make and sell hand-crafted earrings. A boutique places a bulk order for £400 of jewellery, agreeing to pay on 60-day credit terms. Your materials cost £120, paid immediately. On paper you have <b>recorded a profit of £280</b>. But your bank account is £120 lighter, rent is due this week, and the boutique won\'t pay for two months. You are <b>profitable but have no cash</b>. If a supplier demands payment before the boutique settles, you could default — despite the income statement showing a healthy profit. This is the profit–cash gap in real life.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use Apple's case: massively profitable but generates cash from inventory turns faster than spending. By contrast, growth startups show losses but survive on funding. Profit \u2260 cashflow. Give two opposite examples to prove understanding."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Many students treat profit and cash flow as interchangeable \u2013 they're not. Profit is earned (accrual), cash is collected (actual money). A firm can boost profit through aggressive revenue recognition but face cash shortage if customers delay payment."
+      }
     }
   ],
   recall: {

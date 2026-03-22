@@ -1,0 +1,74 @@
+{
+  "note_3_3A_0.js": [
+    {
+      "style": "warning",
+      "title": "Ribosome Sites and Sizes",
+      "text": "A common misconception is that eukaryotes only possess 80S ribosomes. While 80S ribosomes are found in the cytoplasm and on the RER, eukaryotic cells also contain 70S ribosomes inside their mitochondria and chloroplasts."
+    },
+    {
+      "style": "warning",
+      "title": "Prokaryotic Cell Walls",
+      "text": "Students frequently state that prokaryotic cell walls are made of cellulose. Remember, plant cell walls contain cellulose; prokaryotic cell walls are composed of peptidoglycan (or murein)."
+    }
+  ],
+  "note_3_3A_1.js": [
+    {
+      "style": "tip",
+      "title": "Specifics of the Golgi Apparatus",
+      "text": "In exam answers, avoid vaguely stating that the Golgi apparatus 'modifies proteins'. You must specify *how* they are modified (e.g., the addition of carbohydrate groups to form glycoproteins) and that they are then packaged into secretory vesicles for transport."
+    },
+    {
+      "style": "tip",
+      "title": "Mechanism of Secretion",
+      "text": "When describing the final stage of the secretory pathway, explicitly state that vesicles *fuse* with the cell surface membrane during exocytosis. Remember to mention that this is an active process requiring ATP provided by mitochondria."
+    }
+  ],
+  "note_3_3A_2.js": [
+    {
+      "style": "warning",
+      "title": "Unit Conversions in Magnification",
+      "text": "Calculation errors often stem from mismatched units. Always convert your measurements so that the image size and actual size are in the same unit—typically by converting millimetres (mm) to micrometres (μm) by multiplying by 1000—before using the formula Magnification = Image / Actual."
+    },
+    {
+      "style": "tip",
+      "title": "Explaining Resolution",
+      "text": "Be precise with the definition of resolution: it is the ability to distinguish between two closely spaced points as separate entities. State that electron microscopes provide higher resolution than light microscopes specifically because a beam of electrons has a much shorter wavelength than visible light."
+    }
+  ],
+  "note_3_3A_3.js": [
+    {
+      "style": "warning",
+      "title": "Interphase vs. Mitosis",
+      "text": "Never describe interphase as a stage of mitosis. Mitosis specifically refers to the division of the nucleus (PMAT). Interphase is the preceding phase of the cell cycle where DNA replication and cell growth occur."
+    },
+    {
+      "style": "tip",
+      "title": "Chromosomes vs. Chromatids",
+      "text": "Be careful with terminology during anaphase. It is the *sister chromatids* that are pulled apart to opposite poles. Once they have separated, they are then referred to as individual daughter chromosomes."
+    }
+  ],
+  "note_3_3A_4.js": [
+    {
+      "style": "tip",
+      "title": "Preparing the Root Tip Squash",
+      "text": "When explaining the squash technique, make sure to state that you must press down firmly *without pushing sideways*. Firm pressure spreads the cells into a single layer so light can pass through, while avoiding sheer forces prevents the chromosomes from breaking."
+    },
+    {
+      "style": "tip",
+      "title": "Locating Active Division",
+      "text": "If asked why the tip of the root is used, you must emphasize that the *apical meristem* is located here, which is the specific region of actively dividing cells undergoing mitosis."
+    }
+  ],
+  "note_3_3A_5.js": [
+    {
+      "style": "warning",
+      "title": "Acrosome vs. Cortical Reactions",
+      "text": "Do not confuse these two processes. The acrosome reaction involves the release of digestive enzymes from the sperm head to penetrate the zona pellucida. In contrast, the cortical reaction occurs *after* fusion, releasing granules that harden the zona pellucida to prevent polyspermy."
+    },
+    {
+      "style": "tip",
+      "title": "Measuring Pollen Tube Growth",
+      "text": "For measuring the dependent variable (pollen tube length) accurately under a microscope, state that you must use an eyepiece graticule that has been properly calibrated with a stage micrometer."
+    }
+  ]
+}

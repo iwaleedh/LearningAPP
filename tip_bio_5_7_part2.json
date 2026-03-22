@@ -1,0 +1,109 @@
+[
+  {
+    "file": "note_5_7_8.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "warning",
+           "title": "Common Mistake",
+           "text": "Students often confuse the various bands and zones in a sarcomere. Remember that **Actin** is the thin filament and corresponds to the **I band** (which is l**i**ght), while myosin is thick and corresponds to the **A band** (which is d**a**rk)."
+         }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_9.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "tip",
+           "title": "Examiner Tip",
+           "text": "A very common error is stating that the muscle filaments themselves shorten. The actin and myosin filaments **do not change length** during contraction; rather, the sarcomere shortens as the actin filaments slide over the myosin."
+         }
+      },
+      {
+         "id": "callout-exam-tip-2",
+         "type": "callout",
+         "data": {
+           "style": "warning",
+           "title": "Watch Out - Binding Sites",
+           "text": "Be precise when describing the role of calcium ions. They bind to **troponin**, which then changes shape and moves **tropomyosin**, exposing the **myosin-binding sites on actin**."
+         }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_10.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "tip",
+           "title": "Examiner Tip",
+           "text": "To easily remember the characteristics, associate **Slow** twitch fibres with **S**ustained endurance activities (like marathon running). They are packed with mitochondria, myoglobin, and a rich capillary network for aerobic respiration."
+         }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_11.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "warning",
+           "title": "Common Mistake",
+           "text": "When calculating Cardiac Output (CO = HR × SV), always pay close attention to the **units**. You may need to convert volumes into $dm^3$ or time into minutes to match the required final units in the exam question."
+         }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_12.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "tip",
+           "title": "Examiner Tip",
+           "text": "Remember that the primary stimulus for increasing your breathing rate is an **increase in carbon dioxide** concentration (lowering the pH of the blood), rather than a decrease in oxygen levels."
+         }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_13.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "warning",
+           "title": "Common Mistake",
+           "text": "Do not confuse **glycogenolysis** (the breakdown of glycogen into glucose, promoted by adrenaline) with glycolysis (the first stage of respiration). Correct terminology is vital for these marking points."
+         }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_14.js",
+    "tips": [
+      {
+         "id": "callout-exam-tip-1",
+         "type": "callout",
+         "data": {
+           "style": "tip",
+           "title": "Examiner Tip",
+           "text": "When defining negative feedback in an exam, ensure you state that a change from the norm triggers a response that counteracts the change, restoring the parameter back to its **original set point or norm**."
+         }
+      }
+    ]
+  }
+]

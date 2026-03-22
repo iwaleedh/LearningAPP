@@ -1,0 +1,328 @@
+[
+  {
+    "file": "note_5_7_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often state that respiration 'produces energy'. Remember that energy cannot be created or destroyed; instead, respiration releases energy stored in respiratory substrates and uses it to synthesise ATP."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing glycolysis, explicitly mention that it occurs in the cytoplasm and requires no oxygen, distinguishing it clearly from the subsequent stages in the mitochondria."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Since glycolysis produces two molecules of pyruvate per glucose molecule, the link reaction occurs twice for every glucose molecule entering respiration. Don't forget to multiply the products (acetyl coenzyme A, reduced NAD, and CO\u2082) by two!"
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Look at the Bigger Picture",
+          "text": "In exam questions, you are rarely asked to name all the intermediate compounds of the Krebs cycle. Focus instead on the number of reduced carrier molecules (NADH and FADH\u2082), CO\u2082, and ATP produced per cycle."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Role of Oxygen",
+          "text": "The most common error is forgetting the exact role of oxygen. It acts as the 'final electron acceptor', combining with electrons emerging from the electron transport chain and protons from the matrix to form water. Without it, the entire chain (and Krebs cycle) would halt."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Mammalian vs Yeast Anaerobic Respiration",
+          "text": "Be careful to distinguish between the two pathways: mammals produce lactate via a reversible reaction (without releasing carbon dioxide), while yeast/plants produce ethanol and carbon dioxide in an irreversible reaction."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Interpreting RQ Values",
+          "text": "An RQ greater than 1.0 indicates that a mixture of aerobic and anaerobic respiration is taking place, since anaerobic respiration releases CO\u2082 without using any more O\u2082."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Control Variables in Respirometry",
+          "text": "Examiners often ask how to set up a control respirometer. A proper control must contain an equal volume/mass of an inert substance (like glass beads) instead of the organism, to account for volume changes driven solely by temperature or atmospheric pressure fluctuations."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_8.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often confuse the various bands and zones in a sarcomere. Remember that **Actin** is the thin filament and corresponds to the **I band** (which is l**i**ght), while myosin is thick and corresponds to the **A band** (which is d**a**rk)."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_9.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "A very common error is stating that the muscle filaments themselves shorten. The actin and myosin filaments **do not change length** during contraction; rather, the sarcomere shortens as the actin filaments slide over the myosin."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Watch Out - Binding Sites",
+          "text": "Be precise when describing the role of calcium ions. They bind to **troponin**, which then changes shape and moves **tropomyosin**, exposing the **myosin-binding sites on actin**."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_10.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "To easily remember the characteristics, associate **Slow** twitch fibres with **S**ustained endurance activities (like marathon running). They are packed with mitochondria, myoglobin, and a rich capillary network for aerobic respiration."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_11.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When calculating Cardiac Output (CO = HR \u00d7 SV), always pay close attention to the **units**. You may need to convert volumes into $dm^3$ or time into minutes to match the required final units in the exam question."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_12.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Remember that the primary stimulus for increasing your breathing rate is an **increase in carbon dioxide** concentration (lowering the pH of the blood), rather than a decrease in oxygen levels."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_13.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse **glycogenolysis** (the breakdown of glycogen into glucose, promoted by adrenaline) with glycolysis (the first stage of respiration). Correct terminology is vital for these marking points."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_14.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When defining negative feedback in an exam, ensure you state that a change from the norm triggers a response that counteracts the change, restoring the parameter back to its **original set point or norm**."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_15.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often confuse the glomerulus with the Bowman's capsule. Remember that the glomerulus is the knot of capillaries, while the Bowman's capsule is the funnel-like structure surrounding it that collects the filtrate."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_16.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When explaining ultrafiltration, always mention the role of the efferent arteriole being narrower than the afferent arteriole to generate high hydrostatic pressure, and state clearly that the basement membrane forms the actual filtration barrier."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_17.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When discussing ADH action, explicitly state that it causes vesicles containing aquaporins to fuse with the cell surface membrane of the collecting duct cells, increasing their permeability to water."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "A frequent error is stating that water moves 'out of the loop of Henle' without specifying the descending limb. Always specify that the descending limb is permeable to water, whereas the ascending limb is impermeable to water but actively pumps out sodium and chloride ions."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_18.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse the mechanism of peptide hormones with steroid hormones. Peptide hormones (like EPO) cannot enter the cell and must bind to cell-surface receptors to activate second messengers, while steroid hormones cross the lipid bilayer to reach intracellular receptors."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_19.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing the use of redox indicators (like DCPIP, methylene blue, or TTC) in yeast respiration experiments, explain that the indicator accepts electrons and hydrogen ions, substituting for the natural electron acceptors in the oxidative phosphorylation pathway."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_20.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "In a respirometer setup, soda lime or potassium hydroxide is critical as it absorbs CO2. Therefore, any change in volume and pressure within the sealed system is solely due to the volume of oxygen consumed by the respiring organisms."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_5_7_21.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often forget to mention safety and ethical precautions when discussing human subjects. Always state that informed consent and checking the medical history (e.g., asthma) of the participant are critical safety requirements when using a spirometer."
+        }
+      }
+    ]
+  }
+]

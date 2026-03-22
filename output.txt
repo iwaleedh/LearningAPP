@@ -1,0 +1,15 @@
+        {
+            id: 'table-contexts',
+            type: 'comparisonTable',
+            data: {
+                caption: 'Familiar skills applied to unfamiliar contexts',
+                headers: ['Familiar Skill', 'New Context Example', 'Key Transfer'],
+                rows: [
+                    ['Titration calculation', 'Back titration to find CaCO₃ in antacid', 'Same c = n/V; subtract reacted moles from initial'],
+                    ['Gas volume measurement', 'Rate of reaction by gas produced over time', 'Same gas syringe; plot volume vs time graph'],
+                    ['Calorimetry', 'Comparing enthalpy of combustion of alcohols', 'Same q = mcΔT; compare per mole of fuel'],
+                    ['Bromine water test', 'Testing biodiesel for residual unsaturation', 'Same decolourisation principle; relates to iodine number'],
+                    ['Mass loss method', 'Rate of decomposition of carbonate', 'Record mass at intervals; plot mass loss vs time']
+                ]
+            },
+        },

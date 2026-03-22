@@ -146,6 +146,24 @@ export const note_business_2_10_11 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Market structure — competitive, oligopoly or monopoly — determines competitor number, size and behaviour. Oligopolies feature interdependence, price stickiness and heavy non-price competition. Price wars are rare but extremely damaging when they do occur. Monopolists have price-setting power but face CMA scrutiny. Competitive markets have thin margins and require cost efficiency.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use the concept of market concentration (oligopoly vs. monopolistic competition) to analyse competitor effects. Reference Porter's Five Forces and explain how an increase in competitors reduces pricing power and profit margins."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "This topic description appears truncated in your source file. Ensure your notes emphasize that MORE competitors = LOWER prices and profits, while LARGER competitors = more resources and economies of scale advantage."
+      }
     }
   ],
   recall: {

@@ -1,0 +1,20 @@
+src/data/seedNotes/business/note_2_6_0.js: Understand what a business plan is, why it is written, and who uses it — covering its role in securing finance and guiding internal decision-making.
+src/data/seedNotes/business/note_2_6_1.js: Know the key sections of a business plan and understand what each section must contain to satisfy lenders, investors, and internal stakeholders.
+src/data/seedNotes/business/note_2_6_2.js: Identify and evaluate the four main sources of internal finance available to a business: retained profit, sale of assets, owner\
+src/data/seedNotes/business/note_2_6_3.js: Identify and evaluate the main sources of external finance including bank loans, overdrafts, share capital, debentures, venture capital, crowdfunding, trade credit, and leasing.
+src/data/seedNotes/business/note_2_6_4.js: Evaluate which finance method is most appropriate for a given business situation by considering the purpose, size, cost, legal form, time horizon, and risk of the business.
+src/data/seedNotes/business/note_2_6_5.js: Compare the four main legal forms of business — sole trader, partnership, private limited company (Ltd), and public limited company (plc) — across ownership, liability, finance, control, and continuity.
+src/data/seedNotes/business/note_2_6_6.js: Understand how franchises and social enterprises operate, including their key features, advantages and disadvantages for franchisors, franchisees, and society.
+src/data/seedNotes/business/note_2_6_7.js: Understand how and why a private limited company (Ltd) transitions to a public limited company (plc), including the process of flotation and the benefits and drawbacks of going public.
+src/data/seedNotes/business/note_2_6_8.js: Clearly distinguish between limited and unlimited liability, explain the legal principle of separate legal entity, and evaluate the implications of each liability type for business owners and investors.
+src/data/seedNotes/business/note_2_7_0.js: Understand the concepts of sales volume and sales revenue.
+src/data/seedNotes/business/note_2_7_1.js: Determine fixed, variable, and total costs.
+src/data/seedNotes/business/note_2_7_10.js: Evaluate the limitations and drawbacks of budgeting.
+src/data/seedNotes/business/note_2_7_2.js: Analyse the driving factors behind sales forecasts.
+src/data/seedNotes/business/note_2_7_3.js: Calculate and understand contribution and the break-even point.
+src/data/seedNotes/business/note_2_7_4.js: Understand and calculate the margin of safety.
+src/data/seedNotes/business/note_2_7_5.js: Interpret break-even charts.
+src/data/seedNotes/business/note_2_7_6.js: Evaluate the limitations of break-even analysis.
+src/data/seedNotes/business/note_2_7_7.js: Understand the purpose and construction of cash-flow forecasting.
+src/data/seedNotes/business/note_2_7_8.js: Understand different types of budgets used in businesses.
+src/data/seedNotes/business/note_2_7_9.js: Analyse variances from budgeted figures.

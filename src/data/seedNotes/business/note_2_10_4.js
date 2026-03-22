@@ -163,6 +163,24 @@ export const note_business_2_10_4 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'The business cycle moves through boom (high growth), recession (falling GDP), slump (trough) and recovery. Booms bring high demand and profit but also inflationary cost pressures. Recessions cause revenue falls, job cuts and investment freezes. Recovery brings cautious growth. Cyclical businesses (luxury, construction) are most vulnerable; counter-cyclical firms (discount retail) can thrive in downturns.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Draw the business cycle chart with all 4 phases labelled. For each phase, state explicitly: demand trend (\u2191 or \u2193), employment (\u2191 or \u2193), investment timing (early recovery = high), profit margin pressure. This structured approach earns full marks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume all businesses suffer equally in recession. Counter-cyclical businesses (budget supermarkets, loan companies) can THRIVE in downturns. Examiners expect you to analyse differential impacts by sector."
+      }
     }
   ],
   recall: {

@@ -1,0 +1,128 @@
+[
+  {
+    "file": "note_4_5_18.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Correlation vs Causation",
+          "text": "When discussing evidence for climate change, distinguish between correlation and causation. A strong correlation does not automatically prove cause, even if it is a central piece of evidence."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_19.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Limiting Factors",
+          "text": "Do not mix up density-dependent factors (e.g., competition for food, disease) with density-independent factors (e.g., natural disasters, sudden temperature changes) when explaining what maintains populations at their carrying capacity."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_20.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Sampling Techniques",
+          "text": "Examiners often ask for justifications of sampling methods. Use random sampling (with random coordinates) for uniform areas to eliminate bias, and systematic sampling (using transects) across an environmental gradient."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_21.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Enzyme Denaturation",
+          "text": "Never say enzymes 'die'. Always state that they denature, meaning the bonds maintaining their tertiary structure break, and the shape of the active site changes so it is no longer complementary to the substrate."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_22.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Control Variables",
+          "text": "In practical investigations on temperature effects, explicitly list the variables to be kept constant (like pH, light intensity, or water availability) to ensure valid conclusions about the relationship."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_23.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Mutations are Random",
+          "text": "A common mistake is stating the environment causes mutations. Mutations always occur randomly, creating genetic variation. The environmental change simply acts as the selection pressure favoring the already-existing advantageous alleles."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_24.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Structuring Speciation Answers",
+          "text": "Include the key steps logically: 1) Isolation (geographical or reproductive), 2) Prevention of gene flow, 3) Different selection pressures, and 4) Accumulation of genetic differences and allele frequencies until interbreeding cannot produce fertile offspring."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_25.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Evaluating Scientific Claims",
+          "text": "When assessing contentious secondary data, look for peer review validation, appropriate sample sizes, robust methodology, and whether there are potential biases tied to funding sources."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_26.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Conservation vs Preservation",
+          "text": "Be precise. Conservation often involves the active management of ecosystems (like coppicing or controlled grazing) to maintain biodiversity, whereas preservation implies simply protecting areas by minimizing human intervention entirely."
+        }
+      }
+    ]
+  }
+]

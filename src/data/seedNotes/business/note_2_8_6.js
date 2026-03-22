@@ -164,6 +164,24 @@ export const note_business_2_8_6 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Internal causes of business failure originate within the firm and are theoretically within management\'s control. The most critical are: <b>poor cash flow management</b> (failing to ensure sufficient liquidity to meet obligations), <b>overtrading</b> (growing faster than working capital can support), and <b>poor management decisions</b> (strategic errors, inadequate planning, financial mismanagement). Unlike external shocks, internal failures often develop gradually and can be identified and corrected with effective financial monitoring and governance.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Link internal failure causes to financial statements: overtrading appears as rising sales BUT falling cash (can't fund growth). Poor cash management shows as short-term insolvency. Weak decisions cause both P&L deterioration AND balance sheet stress."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Listing 'poor cash flow, overtrading, bad management' as separate causes misses that they're LINKED. Overtrading happens because management expands recklessly (bad decision) but funds it with short-term credit (poor cash planning). Show interconnection."
+      }
     }
   ],
   recall: {

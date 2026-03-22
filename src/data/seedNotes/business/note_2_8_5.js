@@ -166,6 +166,24 @@ export const note_business_2_8_5 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: '<b>Working capital</b> (Current Assets − Current Liabilities) funds day-to-day operations. The <b>cash conversion cycle</b> (Inventory Days + Receivables Days − Payables Days) measures how quickly a business converts investment into cash. Effective working capital management involves reducing debtor collection times, extending creditor payment terms and minimising inventory holdings — while balancing the relationship risks of each strategy.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Calculate and explain cash conversion cycle step-by-step: 'Days Inventory + Days Sales Outstanding \u2212 Days Payable Outstanding = CCC days of cash tied up.' Lower is better. Show practical strategies: faster collections, slower payments, inventory optimization."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students often treat working capital management as abstract. In reality, delaying payment to suppliers can strain relationships (they raise prices or cut credit). Pushing collections too hard angers customers. Balance relationship management with optimal cash timing."
+      }
     }
   ],
   recall: {

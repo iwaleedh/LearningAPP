@@ -193,6 +193,24 @@ export const note_business_2_6_2 = {
             "title": "Student Tip: Overdraft vs Bank Loan",
             "text": "An overdraft is like a credit card — fast to access and flexible, but very expensive per pound borrowed. A bank loan is like a mortgage — cheaper over time with predictable monthly repayments, but slower to arrange and less flexible. Exam rule: recommend an overdraft for covering a short-term cash flow gap, and a bank loan for purchasing fixed assets like equipment or premises."
         }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When comparing internal finance sources, highlight the trade-off: retained profit is cheap and avoids dilution but wastes liquidity that could fund growth; owner contributions show commitment but risk personal wealth. Always weigh pros and cons contextually."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming retained profit is always the best internal finance option. In high-growth sectors or liquidity crises, freezing cash in the business may cripple competitiveness. Context matters\u2014tailor your answer to the scenario given."
+      }
     }
   ],
   recall: {

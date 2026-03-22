@@ -1,0 +1,26 @@
+{
+  "note_6_6A_0.js": [
+    { "style": "warning", "title": "Apparatus Calibration Often Overlooked", "text": "In Unit 4/5 practical work, students frequently forget to calibrate instruments such as pH meters, thermometers, and gas syringes before use. Examiners specifically mark apparatus errors in method descriptions and error evaluation." },
+    { "style": "tip", "title": "Record Initial Observations Before Reaction", "text": "Always note the initial colour, temperature, and physical state (solid/liquid/gas) of ALL reactants before mixing. Examiners expect detailed descriptions of the reaction sequence and final observations \u2014 omitting initial state is a common error costing marks." }
+  ],
+  "note_6_6A_1.js": [
+    { "style": "warning", "title": "Control Variables Must Be Explicitly Named", "text": "Students often list 'temperature', 'pressure' etc. without stating WHAT they are controlling them AT. Write 'temperature held constant at 25\u00b0C' not just 'controlled temperature' \u2014 examiners require specific numerical values or ranges for each variable controlled." },
+    { "style": "tip", "title": "Evidence of Preliminary Trial Work Earns Marks", "text": "Demonstrating that you performed a preliminary investigation (e.g., 'I ran a trial with 2 cm\u00b3 to find optimal volume') scores highly with examiners. It shows scientific planning. Include rough data or brief notes on trials \u2014 omitting this suggests work was not thought through." }
+  ],
+  "note_6_6A_2.js": [
+    { "style": "warning", "title": "Fe\u00b2\u207a Oxidation in Air \u2014 Colour Changes Over Time", "text": "The green Fe\u00b2\u207a hydroxide precipitate [Fe(H\u2082O)\u2084(OH)\u2082] turns orange-brown within minutes as aerial oxidation converts Fe\u00b2\u207a to Fe\u00b3\u207a. Examiners expect students to note the 'initial green \u2192 orange-brown' sequence as evidence of oxidation. Recording only the final colour loses marks." },
+    { "style": "tip", "title": "Precipitate Dissolution in Excess Ammonia Identifies Cu, Co, Ni \u2014 Memorise the Colours", "text": "Cu\u00b2\u207a \u2192 deep blue [Cu(NH\u2083)\u2084]\u00b2\u207a, Co\u00b2\u207a \u2192 yellow [Co(NH\u2083)\u2086]\u00b2\u207a, Ni\u00b2\u207a \u2192 deep blue [Ni(NH\u2083)\u2086]\u00b2\u207a. Students often confuse Cu and Ni (both deep blue) \u2014 examiners test this distinction. Write out the complex ion formula, not just 'blue'." }
+  ],
+  "note_6_6A_3.js": [
+    { "style": "warning", "title": "Aldehyde/Ketone Test: Tollens vs Fehling \u2014 Use Correction Term", "text": "Many students write 'the aldehyde tested positive with Tollens reagent' without stating the visual change: 'silver mirror formed' or 'a white precipitate formed'. Ketones show NO change with Tollens but DO with Fehling (orange-red ppt) \u2014 examiners mark down vague descriptions." },
+    { "style": "tip", "title": "Alcohols Primary vs Secondary: Oxidation Permanganate Colour Change is Diagnostic", "text": "Primary alcohols undergo oxidation (acidified KMnO\u2084 turns colourless); tertiary alcohols do NOT (KMnO\u2084 stays purple). Examiners expect students to observe and record the colour change. Use this sequential oxidation: primary alcohol \u2192 aldehyde \u2192 carboxylic acid to explain why KMnO\u2084 is decolorised." }
+  ],
+  "note_6_6A_4.js": [
+    { "style": "warning", "title": "Percentage Uncertainties Compound \u2014 Always State Absolute Uncertainties First", "text": "Students frequently forget that percentage uncertainties of individual measurements are added (not averaged) to give total percentage uncertainty. Read the uncertainty from apparatus (burette \u00b10.05 cm\u00b3), calculate percentage, write it clearly: 'Total \u00b1X%' before calculating absolute uncertainty in final answer." },
+    { "style": "tip", "title": "Rounding Significant Figures to Match Uncertainty", "text": "If your uncertainty is \u00b10.02 (2 SF), your answer must be rounded to the same decimal place. Examiners penalise false precision: stating a result as '0.1234 mol' when uncertainty is \u00b10.15 mol suggests you did not understand error propagation." }
+  ],
+  "note_6_6A_5.js": [
+    { "style": "warning", "title": "New Contexts Require Explicit Justification \u2014 Do Not Assume Knowledge Transfer", "text": "When applying a technique to a new scenario, spell out the logical link. Do NOT write 'use the same method as for compound A'. Instead, write: 'Compound C is also an aldehyde, so testing with Tollens reagent is appropriate because [mechanism/reason].' Examiners expect evidence that you have reasoned, not just copied." },
+    { "style": "tip", "title": "Use Analogies to Justify Equipment and Procedure Changes in New Contexts", "text": "If a practical is adapted (e.g., using a different starting material or temperature), explain why you chose the modified conditions by relating them to similar worked examples: 'Because X was insoluble in water, I heated the reaction mixture, similar to the preparation of Y in Core Practical Z.' This demonstrates critical thinking." }
+  ]
+}

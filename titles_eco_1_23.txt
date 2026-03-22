@@ -1,0 +1,16 @@
+note_economics_1_2_0.js: What is Rational Choice?
+note_economics_1_2_1.js: Behavioural Economics: Beyond Rationality
+note_economics_1_2_2.js: Movement Along vs Shift of the Demand Curve
+note_economics_1_2_3.js: Utility and the Law of Diminishing Marginal Utility
+note_economics_1_2_4.js: Overview of Demand Determinants
+note_economics_1_2_5.js: Price Elasticity of Demand — Definition and Formula
+note_economics_1_2_6.js: Income Elasticity of Demand — Definition and Formula
+note_economics_1_2_7.js: Cross Elasticity of Demand — Definition and Formula
+note_economics_1_2_8.js: Total Revenue and Its Relationship with PED
+note_economics_1_2_9.js: Elasticity Significance for Firms
+note_economics_1_3_0.js: Supply Curve: Movements vs Shifts
+note_economics_1_3_1.js: Determinants of Supply
+note_economics_1_3_2.js: Price Elasticity of Supply (PES)
+note_economics_1_3_3.js: Short Run vs Long Run in Production
+note_economics_1_3_4.js: Time and Stock Constraints on Supply
+note_economics_1_3_5.js: Factor Mobility and Legal Constraints

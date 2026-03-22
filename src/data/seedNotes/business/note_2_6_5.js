@@ -186,6 +186,24 @@ export const note_business_2_6_5 = {
         title: 'Student Tip: Your First Business',
         text: 'Starting a side hustle selling things online or freelancing? You automatically become a <b>sole trader</b> — free and instant to set up. But if you take on any business debt (stock loan, equipment) or bring in a partner, unlimited liability becomes a real risk. Registering a <b>Ltd costs just £12</b> at Companies House and legally separates your personal savings from business debts. Most business-savvy students incorporate early — it\'s cheaper than you think and protects far more than you realise.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use a comparison matrix: sole trader (easy, risky), partnership (shared liability, partnership dispute risk), Ltd (separate entity, heavy compliance), plc (flotation cost, scrutiny). Structuring comparisons this way demonstrates command of the topic."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming Ltd and plc differ only in size. The key distinction is trading purpose\u2014plc shares are publicly traded on stock exchange; Ltd shares are private. This affects capital access, regulation, and governance fundamentally."
+      }
     }
   ],
   recall: {

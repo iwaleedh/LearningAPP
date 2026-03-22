@@ -1,0 +1,240 @@
+{
+  "note_economics_4_18_0.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't confuse rising trade-to-GDP ratios with actual economic globalisation. A country's trade-to-GDP may increase simply because trade grows slower than GDP contraction in recessions. Always examine both numerator and denominator separately to assess genuine trade integration.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_18_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In essays, distinguish between FDI (ownership and control of productive assets) and portfolio investment (passive shareholding). Examiners expect you to explain why TNCs choose FDI over exports—this is about control, not just cost minimisation.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_18_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't assume international migration always benefits both source and destination economies equally. In essays, address the brain drain impact on developing nations and wage suppression risks in recipient countries—this shows integrated analysis.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_18_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When discussing trade blocs (EU, RCEP), explicitly explain trade creation (more efficient producer wins) vs trade diversion (less efficient bloc member replaces external competitor). Examiners test whether you grasp the welfare implications, not just definitions.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_18_4.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't treat market-opening political changes (e.g. China's 2001 WTO accession) as instantaneous GDP boosters. Discuss lag effects, structural adjustment costs, and distributional impacts across sectors to demonstrate economic rigour.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_18_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Beyond logistics and shipping, address digital infrastructure costs (broadband, cyber security) and their uneven distribution globally. Modern exams test whether you recognise that communication cost reduction enables services offshoring, not just goods trade.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_18_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't oversimplify FDI as 'always good' for developing economies. Address potential negative impacts: profit repatriation, market distortion, resource depletion, and technological dependency. Balanced evaluation is crucial for high marks.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_18_7.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When listing globalisation benefits (consumer choice, competition, innovation), explicitly identify winners and losers. Examiners reward answers that acknowledge domestic producers may lose market share—this shows you understand distribution of gains.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_18_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Be specific about globalisation costs: deindustrialisation in developed regions, environmental externalities, cultural homogenisation, and labour standards races-to-the-bottom. Vague answers lose marks; contextualised examples from different economies score higher.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_0.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't assume comparative advantage is static. Modern exams test whether you recognise emerging economies (India, Vietnam) have shifted their comparative advantage over time through capital accumulation and education. Static Ricardian models are incomplete.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_19_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In comparative advantage calculations, always show opportunity costs explicitly—don't just claim 'Country A has lower prices.' Examiners test whether you can derive specialisation patterns systematically. One numerical error loses the entire chain of reasoning.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't ignore transport costs, immobility of factors, and increasing returns to scale when discussing comparative advantage limitations. Real exam scenarios (Brexit, nearshoring) require you to explain when traditional trade theory fails.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_19_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Support essays on changing trade patterns with specific, recent data: China's share of global manufacturing, India's services exports, or Africa's raw material dependence. Dated examples lose credibility; use 2023-2025 statistics.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_4.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't treat emerging economy growth as one-directional benefit. Discuss real costs: wage pressure post-China shock in manufacturing, global deflationary pressures, and resource depletion. Sophisticated answers weigh trade-offs.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_19_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Terms of Trade = (Index of Export Prices / Index of Import Prices) × 100. A rise benefits exporters; a fall harms them. Examiners test whether you link ToT changes to real income effects—don't just calculate mechanically.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't overstate WTO effectiveness. Discuss genuine limits: weak enforcement, dispute resolution delays, exemptions (intellectual property, agriculture), and the breakdown of Doha Round negotiations. Nuance here separates grade 8s from grade 7s.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_19_7.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Categorise trading blocs precisely: EU = customs union + single market; USMCA = free trade area; ASEAN = looser cooperation. Examiners penalise vague classifications. Use specific examples (rules of origin, tariff externalities) to show deep understanding.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_8.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't confuse trade creation (net welfare gain) with trade diversion (net welfare loss). Their magnitude depends on tariff levels and external bloc efficiency. A bloc can experience both simultaneously—demonstrate you understand the granularity.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_19_9.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When justifying protectionism, use economic rationales: infant industry, negative externalities, dumping, or strategic autonomy. Political protectionism (lobbying, job preservation) scores lower—separate economics from politics in your analysis.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_10.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Compare tariffs vs quotas rigorously: tariffs generate tax revenue but cause welfare loss through deadweight; quotas create scarcity rents for license holders and offer no government revenue. Exams test whether you explain why countries choose differently.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_19_11.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't treat protectionism impacts as uniformly negative. Short-term: protects jobs and revenue. Long-term: retaliation, inefficiency lock-in, higher consumer prices. High-scoring answers distinguish timeframes and sectoral winners/losers.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_20_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The BoP must balance (Current + Capital + Financial accounts = 0). If reporting a 'deficit,' specify which account. Examiners penalise vague statements like 'the UK has a BoP problem'—you must identify current account vs capital issues.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't assume current account deficits are always harmful. They reflect inward capital flows (investment in future productivity). Problem arises only if deficits persist due to low savings and high consumption—context matters enormously.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_20_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When assessing rebalancing policies, evaluate policy mixes: devaluation addresses price competitiveness; supply-side reforms boost non-price competitiveness; fiscal tightening reduces demand. Exams test your grasp that single policies often fail without complementary measures.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't attribute all global imbalances to 'unfair trade.' Discuss structural factors: demographic ageing (Germany saves more), capital market development (US attracts investment), and reserve currency status (dollar strength). Sophisticated answers go beyond mercantilist rhetoric.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_20_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Distinguish exchange rate regimes clearly: fixed (Bretton Woods, currency board) vs floating (managed intervention vs clean float). Examiners test whether you explain trade-offs: exchange rate regimes constrain monetary policy differently.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_5.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't assume currency intervention always succeeds. If fundamentals don't support the target rate, sterilisation costs rise, reserves deplete, and speculation overwhelms. Thailand 1997 is the classic exam case study of failed intervention.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_20_6.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Exchange rate determination involves multiple competing forces (PPP, interest rate differentials, expectations). Don't reduce to a single cause. Exams test whether you explain why predictions fail—market psychology and shocks override models.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_7.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Revaluation = policy-induced fixed-rate increase; appreciation = floating-rate market increase. Mixing terminology costs marks. The effects differ: revaluation can be reversed, appreciation may persist if fundamentals shifted.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_20_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Devaluation = policy-induced fixed-rate decrease; depreciation = floating-rate market decrease. Use correct terms consistently. Explain mechanism: devaluation makes exports cheaper, but if passed to prices, real effects depend on wage-price dynamics.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_9.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Exchange rate appreciation: harms export competitiveness (demand falls, jobs lost in tradables) but helps consumers via cheaper imports and lower inflation. High-scoring essays weigh these trade-offs and discuss distributional impacts across regions.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_10.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't treat the Marshall-Lerner condition as guaranteed in the short run. The J-curve shows initial BoP worsens post-devaluation (existing contracts, slow quantity adjustment) before improving. Missing this timeframe destroys your analysis of devaluation effectiveness.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_4_20_11.js": [
+    {
+      "title": "Exam Tip",
+      "text": "International competitiveness requires both price factors (exchange rates, labour costs) and non-price factors (R&D, quality, branding). Exams test whether you explain why low-cost countries don't always win—Germany competes despite high wages through innovation.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_4_20_12.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't conflate short-term competitiveness boosts with sustainable improvements. Currency depreciation helps temporarily, but if inflation erodes gains, competitiveness returns to baseline. Only structural reforms (education, infrastructure) create durable advantages.",
+      "style": "warning"
+    }
+  ]
+}

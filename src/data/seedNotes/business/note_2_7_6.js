@@ -20,7 +20,25 @@ export const note_business_2_7_6 = {
     { "id": "enr-t7b-eq-mos", "type": "equation", "data": { "html": "Margin of Safety = Actual Output − Break-Even Output", "caption": "Expressed in units; tells management how much of a demand cushion exists" } },
     { "id": "enr-t7b-call-brand", "type": "callout", "data": { "style": "worked", "title": "Real World: Canterbury Glamping", "text": "Canterbury Glamping charges £95 per pod per night with variable costs of £19 and annual fixed costs of £55,000.<br><ul><li>Contribution = £95 − £19 = £76 per pod</li><li>BEP = £55,000 ÷ £76 = 724 pods per year</li><li>If they actually rent 900 pods: Margin of Safety = 900 − 724 = <b>176 pods</b></li></ul>This buffer of 176 pods means occupancy must fall by over 19% before the business makes a loss — a reassuring figure for investors." } },
     { "id": "enr-t7b-call-student", "type": "callout", "data": { "style": "tip", "title": "Think of it like exam marks", "text": "The break-even point is like your exam pass mark (e.g. 40%). The margin of safety is how far above that you scored. If you scored 68% with a pass mark of 40%, your margin of safety is 28 marks — you had room to spare before failing. The higher the margin, the less stressful the situation." } },
-    { id: 'sum-1', type: 'summary', data: { text: 'Break-even analysis is limited because it assumes constant selling prices, constant variable costs, and that all production is successfully sold.' } }
+    { id: 'sum-1', type: 'summary', data: { text: 'Break-even analysis is limited because it assumes constant selling prices, constant variable costs, and that all production is successfully sold.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Key limitations: break-even assumes constant price and variable cost per unit (ignores bulk discounts, economies of scale), assumes linear relationships (unrealistic), ignores cash timing (profit \u2260 cash), and assumes single-product scenarios. Name and explain these assumptions explicitly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Over-relying on break-even analysis in real scenarios. A firm breaking even in profit terms may face cash-flow crisis if customers delay payment or if upfront investment in inventory is required. Always triangulate break-even with cash-flow forecasts."
+      }
+    }
   ],
   recall: {
     enabled: true,

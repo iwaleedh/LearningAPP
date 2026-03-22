@@ -1,0 +1,74 @@
+{
+  "note_3_3A_0.js": [
+    {
+      "style": "warning",
+      "title": "Gas Escape Trap \u2014 CP1 (Molar Volume)",
+      "text": "If the flask is not sealed immediately after adding Mg, hydrogen gas escapes before the bung seals. This causes the recorded volume to be too low, resulting in a calculated molar volume that is systematically lower than the expected ~24 dm\u00b3 mol\u207b\u00b9. Always pre-weigh the Mg and seal immediately."
+    },
+    {
+      "style": "tip",
+      "title": "HCl Must Be in Excess \u2014 Examiner Requirement",
+      "text": "In CP1, examiners expect you to state explicitly that HCl must be in excess. Without this, not all Mg reacts, causing systematic underestimation of the molar volume. Check that the Mg dissolves completely \u2014 this confirms excess HCl."
+    }
+  ],
+  "note_3_3A_1.js": [
+    {
+      "style": "warning",
+      "title": "Missing Control Variables \u2014 Common Exam Mistake",
+      "text": "Many students describe apparatus and method steps but forget to identify control variables (what must be kept constant for a fair test). Examiners specifically look for these. Always explicitly state the independent, dependent, and control variables in your plan."
+    },
+    {
+      "style": "tip",
+      "title": "Risk Assessment Must Link Hazard to Control Measure",
+      "text": "Saying 'wear goggles' or 'be careful' scores zero. Instead, write: 'Corrosive HCl (hazard) \u2192 wear nitrile gloves and safety goggles' (specific control). Link each hazard to a specific, actionable control measure."
+    }
+  ],
+  "note_3_3A_2.js": [
+    {
+      "style": "warning",
+      "title": "Burette Reading Precision \u2014 Common Exam Trap",
+      "text": "Recording burette readings to 1 decimal place (e.g. 24.1 cm\u00b3) loses marks. Burettes must be read to 2 decimal places (e.g. 24.10 cm\u00b3) because they are precise to \u00b10.05 cm\u00b3. Always record as 24.10, 0.00, 25.50 \u2014 never 24.1 or 0.0."
+    },
+    {
+      "style": "tip",
+      "title": "Describe Initial \u2192 Final State in Observations",
+      "text": "Saying 'the solution turned yellow' is vague. Instead write: 'colourless solution turned yellow-orange' (initial \u2192 final). This shows you understand that chemical changes are measurable by comparing states, not just observing a single endpoint."
+    }
+  ],
+  "note_3_3A_3.js": [
+    {
+      "style": "warning",
+      "title": "Gradient Calculation \u2014 Use Best-Fit Line, Not Data Points",
+      "text": "A common mistake is calculating gradient using coordinates from actual data points: (x\u2081,y\u2081) to (x\u2082,y\u2082). You must instead use two points READ FROM YOUR SMOOTH BEST-FIT LINE. This gives a more representative gradient that avoids individual measurement errors."
+    },
+    {
+      "style": "tip",
+      "title": "cm\u00b3 to dm\u00b3 Conversion \u2014 Major Calculation Trap",
+      "text": "Before using c = n/V, always convert volume to dm\u00b3. Forgetting to divide by 1000 (e.g. using 25 cm\u00b3 instead of 0.025 dm\u00b3) causes answers to be 1000\u00d7 wrong. This is one of the most common calculation errors in mole questions."
+    }
+  ],
+  "note_3_3A_4.js": [
+    {
+      "style": "warning",
+      "title": "Burette Uncertainty \u00d7 2 \u2014 Critical Student Trap",
+      "text": "When calculating % uncertainty for a burette titre, you must multiply the instruments's uncertainty by 2 (not 1). This is because a titre requires TWO readings (initial and final). If the burette has \u00b10.05 cm\u00b3 precision, the total absolute uncertainty is \u00b10.10 cm\u00b3. Forgetting this doubles your % uncertainty calculation."
+    },
+    {
+      "style": "tip",
+      "title": "Larger Measurements Give Lower % Uncertainty",
+      "text": "Percentage uncertainty = (absolute uncertainty / measurement) \u00d7 100. A 25 cm\u00b3 titre has lower % uncertainty than a 10 cm\u00b3 titre (both using \u00b10.10 cm\u00b3 absolute). This is why exam procedures specify using larger volumes and masses when possible \u2014 it improves experimental reliability."
+    }
+  ],
+  "note_3_3A_5.js": [
+    {
+      "style": "warning",
+      "title": "Over-Generalizing Conclusions \u2014 Validity Issue",
+      "text": "Conclusions must be supported by the data collected. Do not extend conclusions beyond the evidence. For example, if you test only one concentration, you cannot conclude that 'higher concentration always increases rate' \u2014 you can only state what happened in your experiment. State limitations explicitly."
+    },
+    {
+      "style": "tip",
+      "title": "Explain WHY Further Investigations Are Needed",
+      "text": "When suggesting further work, examiners want to see that you understand what question it answers. Instead of 'repeat the experiment at higher temperature,' write: 'Investigate the effect of temperature on reaction rate (keeping concentration and surface area constant) to determine the activation energy of the reaction.' Always state the purpose."
+    }
+  ]
+}

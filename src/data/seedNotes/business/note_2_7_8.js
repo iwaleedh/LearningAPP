@@ -27,7 +27,25 @@ export const note_business_2_7_8 = {
     ]}},
     { "id": "enr-t7b-call-brand", "type": "callout", "data": { "style": "worked", "title": "Real World: Tesco Store Budget Management", "text": "Tesco sets monthly departmental budgets at store level covering staffing, food wastage, utilities, and sales targets. Store managers attend regional budget-review meetings where they must present variance reports. A store showing persistent adverse cost variances — for example, actual food waste costs 20% above budget — faces scrutiny and must submit an action plan. This illustrates how budget <em>monitoring</em>, not just setting, drives real operational management." } },
     { "id": "enr-t7b-call-student", "type": "callout", "data": { "style": "tip", "title": "Relatable: Monthly Spending Tracker", "text": "Setting a spending plan for food, transport, and entertainment takes ten minutes. Checking your bank app each week to see whether you are on track is what actually prevents overspending. The same logic applies to businesses: writing the budget is easy — the discipline is in the monitoring." } },
-    { id: 'sum-1', type: 'summary', data: { text: 'Budgets are financial plans for income, expenditure, and profit. Businesses can use historical data or zero-based budgeting to assign funds.' } }
+    { id: 'sum-1', type: 'summary', data: { text: 'Budgets are financial plans for income, expenditure, and profit. Businesses can use historical data or zero-based budgeting to assign funds.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Budget types: master (overall), functional (departmental), rolling (updated monthly), zero-based (from zero each period). Each suits different contexts: master for coordination, functional for accountability, rolling for flexibility, zero-based for radical cost-control. Know when each applies."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating all budgets as identical cost documents. Budgets are also tools for motivation, communication, and resource allocation. Discuss behavioural impacts: overly tight budgets demotivate; participatory budgets build buy-in; adversarial budgets trigger sandbagging and manipulation."
+      }
+    }
   ],
   recall: {
     enabled: true,

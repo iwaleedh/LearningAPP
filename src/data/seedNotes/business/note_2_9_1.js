@@ -123,6 +123,24 @@ export const note_business_2_9_1 = {
       id: "sum-2-9-1",
       type: "summary",
       data: { text: "Measuring productivity helps a business track its efficiency. High labour or capital productivity translates directly into lower average costs." }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Define productivity as 'output per unit of input' and show how it connects to competitiveness: higher productivity = lower unit costs = ability to compete on price OR improve margins. Show quantitatively: if productivity rises 5%, unit cost falls ~5%."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing productivity with production volume: a factory producing 1000 units (high production, maybe low productivity) with 50 employees is less productive than one producing 1000 units with 25 employees. Output PER INPUT matters."
+      }
     }
   ],
   recall: {

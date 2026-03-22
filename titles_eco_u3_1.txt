@@ -1,0 +1,103 @@
+src/data/seedNotes/economics/note_economics_3_13_0.js
+Title: Private, Public and Not-for-Profit Firms
+---
+src/data/seedNotes/economics/note_economics_3_13_1.js
+Title: Co-operatives and Joint Ventures
+---
+src/data/seedNotes/economics/note_economics_3_13_10.js
+Title: The Principal-Agent Problem
+---
+src/data/seedNotes/economics/note_economics_3_13_2.js
+Title: SMEs vs Large Corporations
+---
+src/data/seedNotes/economics/note_economics_3_13_3.js
+Title: Organic Growth
+---
+src/data/seedNotes/economics/note_economics_3_13_4.js
+Title: Vertical, Horizontal and Conglomerate Integration
+---
+src/data/seedNotes/economics/note_economics_3_13_5.js
+Title: Merger and Takeover: Pros and Cons
+---
+src/data/seedNotes/economics/note_economics_3_13_6.js
+Title: Growth Constraints
+---
+src/data/seedNotes/economics/note_economics_3_13_7.js
+Title: Demerger: Motives and Effects
+---
+src/data/seedNotes/economics/note_economics_3_13_8.js
+Title: Business Objectives
+---
+src/data/seedNotes/economics/note_economics_3_13_9.js
+Title: Satisficing Behaviour
+---
+src/data/seedNotes/economics/note_economics_3_14_0.js
+Title: Revenue Concepts
+---
+src/data/seedNotes/economics/note_economics_3_14_1.js
+Title: Elasticity and Revenue
+---
+src/data/seedNotes/economics/note_economics_3_14_2.js
+Title: Diminishing Returns (Short Run)
+---
+src/data/seedNotes/economics/note_economics_3_14_3.js
+Title: Short-Run Cost Relationships
+---
+src/data/seedNotes/economics/note_economics_3_14_4.js
+Title: Long-Run Cost Curves
+---
+src/data/seedNotes/economics/note_economics_3_14_5.js
+Title: Internal Economies of Scale
+---
+src/data/seedNotes/economics/note_economics_3_14_6.js
+Title: Diseconomies of Scale
+---
+src/data/seedNotes/economics/note_economics_3_14_7.js
+Title: Minimum Efficient Scale (MES)
+---
+src/data/seedNotes/economics/note_economics_3_14_8.js
+Title: Profit Concepts
+---
+src/data/seedNotes/economics/note_economics_3_14_9.js
+Title: Shutdown and Break-even Conditions
+---
+src/data/seedNotes/economics/note_economics_3_15_0.js
+Title: Types of Economic Efficiency
+---
+src/data/seedNotes/economics/note_economics_3_15_1.js
+Title: Concentration Ratio Calculations
+---
+src/data/seedNotes/economics/note_economics_3_15_10.js
+Title: Monopsony Characteristics
+---
+src/data/seedNotes/economics/note_economics_3_15_11.js
+Title: Contestable Market Theory
+---
+src/data/seedNotes/economics/note_economics_3_15_12.js
+Title: Sunk Costs Defined
+---
+src/data/seedNotes/economics/note_economics_3_15_2.js
+Title: Perfect Competition
+---
+src/data/seedNotes/economics/note_economics_3_15_3.js
+Title: Monopolistic Competition
+---
+src/data/seedNotes/economics/note_economics_3_15_4.js
+Title: Oligopoly: Key Features
+---
+src/data/seedNotes/economics/note_economics_3_15_5.js
+Title: Collusion and Cartels
+---
+src/data/seedNotes/economics/note_economics_3_15_6.js
+Title: Price vs Non-Price Competition
+---
+src/data/seedNotes/economics/note_economics_3_15_7.js
+Title: Characteristics of Monopoly
+---
+src/data/seedNotes/economics/note_economics_3_15_8.js
+Title: Natural Monopoly
+---
+src/data/seedNotes/economics/note_economics_3_15_9.js
+Title: Third-Degree Price Discrimination
+---
+

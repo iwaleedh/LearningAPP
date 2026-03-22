@@ -1,0 +1,146 @@
+{
+  "note_economics_1_4_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In exam diagrams, always label: axes (P and Q), both curves (S and D), equilibrium point (E), equilibrium price (P*), and equilibrium quantity (Q*). If a shift occurs, label the new curve S₂ or D₂ and show new P₂ and Q₂ with dashed lines.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_4_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When explaining adjustment, use precise language: say price \"rises/falls\", quantity demanded \"contracts/extends\", and quantity supplied \"extends/contracts\". Avoid saying the curve \"moves\" — it is a movement along the existing curves.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_4_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When a tax is imposed, the market price rises and quantity falls. Both CS and PS shrink. The tax revenue captured by government is a transfer, but the area that is neither CS, PS, nor tax revenue is the deadweight loss — show this clearly in your diagram.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_4_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Questions on the price mechanism often ask for analysis of all three functions. Link each function to a specific example and consider when the price mechanism might fail to perform these functions effectively (e.g. externalities distort signals).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_4_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Tax revenue = (Pc − Pp) × Q₂. It appears as a rectangle on the diagram. The deadweight loss is the triangle between the old and new equilibrium quantities — it represents lost transactions and reduced welfare.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_4_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Like taxes, the distribution of the subsidy benefit between consumers and producers depends on the relative elasticities of demand and supply. Inelastic demand means consumers benefit more; inelastic supply means producers benefit more.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_5_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In evaluative answers on market failure, always distinguish between market failure (a problem with the free market) and government failure (a problem with government intervention). Acknowledging both sides is expected at higher marks.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_5_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always use the terms MPC (Marginal Private Cost), MEC (Marginal External Cost), and MSC (Marginal Social Cost) when drawing diagrams. MSC = MPC + MEC. Similarly, MSB = MPB + MEB.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_5_2.js": [],
+  "note_economics_1_5_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "1. Label ALL curves: MPC, MSC, MPB/D, MSB.\n2. Mark BOTH equilibrium points: Qm (market) and Q* (social optimum).\n3. Shade the DWL triangle and label it clearly.\n4. State whether the market over or underproduces relative to Q*.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_5_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Many students confuse \"public good\" with \"goods provided by the government.\" This is wrong. A public good has specific economic properties (non-rival + non-excludable). Governments often provide services that are actually private goods (e.g. healthcare — excludable and rival).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_5_5.js": [],
+  "note_economics_1_5_6.js": [],
+  "note_economics_1_5_7.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Adverse selection: hidden information before the contract (e.g. high-risk customers seeking insurance without revealing their risk).\nMoral hazard: changed behaviour after the contract (e.g. once insured, taking more risks).\nBoth are forms of asymmetric information — they just occur at different stages.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_5_8.js": [],
+  "note_economics_1_5_9.js": [],
+  "note_economics_1_6_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Intervention is justified when market failure causes deadweight loss. However, government intervention can itself cause government failure if it creates new inefficiencies, has unintended consequences, or involves regulatory capture — sometimes making things worse than the original market failure.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_6_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Taxes: hard to set the correct rate; may increase black markets; regressively burden low-income consumers (spend higher % on necessities like petrol).\nSubsidies: costly for government; may be inefficient (prop up uncompetitive industries); subsidy benefit may be captured by producers rather than consumers; distorts resource allocation.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_6_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Maximum prices: cause shortages; black markets may emerge; quality falls; under-investment in supply (especially housing); administrative cost of enforcement.\nMinimum prices: cause surpluses (government may need to buy up surplus at significant cost); distorts comparative advantage; higher minimum wage may cause unemployment if PED of labour demand is elastic.",
+      "style": "warning"
+    },
+    {
+      "title": "Exam Tip",
+      "text": "Effectiveness of a price floor (e.g. minimum wage) depends on:\n• How much above equilibrium it is set\n• Elasticity of labour demand (elastic → more unemployment)\n• Enforcement quality\nAlways discuss unintended consequences in evaluation.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_1_6_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Permit price volatility: if economic recession lowers output, permits become cheap — reducing incentive to innovate green technology.\nCarbon leakage: production may move to non-regulated countries, reducing effectiveness.\nSetting the cap: politically difficult to set a tight enough cap; lobbying from industry can result in too many permits.\nWindfall profits: free permit allocation let energy companies pass on notional permit costs to consumers — generating large windfall profits.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_6_4.js": [
+    {
+      "title": "Common Mistake",
+      "text": "High transaction costs: negotiating with thousands of affected parties (e.g. air pollution hurting millions) is prohibitively costly.\nDifficulty defining rights: who owns the atmosphere? Rights are often legally unclear.\nWealth effects: who holds the right affects the distribution of benefits — the outcome may be efficient but unfair.\nInformation problems: each side may misrepresent preferences during bargaining.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_6_5.js": [
+    {
+      "title": "Common Mistake",
+      "text": "State provision: productive inefficiency (no profit motive); bureaucratic waste; political interference; crowding out private investment.\n\nRegulation: regulatory capture (regulators side with the industry they oversee); compliance costs for business; may stifle innovation; government lacks full information to set rules correctly.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_6_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Information provision: may be ignored; health warnings on cigarettes have limited effect on addicted smokers; information overload can be as bad as too little.\nNudge: paternalistic — critics argue the state should not manipulate choices; effects may be temporary or weak; works best for one-off decisions (pensions) less well for habitual behaviour (diet); does not address structural poverty as root cause of unhealthy choices.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_1_6_7.js": [],
+  "note_economics_1_6_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always evaluate: does the cure cause more harm than the disease? Consider whether government failure makes a proposed intervention's costs exceed its benefits. This analysis is worth evaluation marks.\nKey chain: Market failure → Government intervenes → Government failure can arise → Net welfare effect may be negative.",
+      "style": "tip"
+    }
+  ]
+}

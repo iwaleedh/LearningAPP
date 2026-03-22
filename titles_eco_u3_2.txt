@@ -1,0 +1,61 @@
+src/data/seedNotes/economics/note_economics_3_16_0.js
+Title: Derived Demand for Labour
+---
+src/data/seedNotes/economics/note_economics_3_16_1.js
+Title: Labour Demand Elasticity
+---
+src/data/seedNotes/economics/note_economics_3_16_2.js
+Title: Labour Supply Determinants
+---
+src/data/seedNotes/economics/note_economics_3_16_3.js
+Title: Labour Supply Elasticity
+---
+src/data/seedNotes/economics/note_economics_3_16_4.js
+Title: Labour Market Equilibrium
+---
+src/data/seedNotes/economics/note_economics_3_16_5.js
+Title: Wage Setting in Competitive Markets
+---
+src/data/seedNotes/economics/note_economics_3_16_6.js
+Title: Wage Setting in Non-Competitive Markets
+---
+src/data/seedNotes/economics/note_economics_3_16_7.js
+Title: Public-Sector Wage Setting
+---
+src/data/seedNotes/economics/note_economics_3_16_8.js
+Title: Geographical Labour Immobility
+---
+src/data/seedNotes/economics/note_economics_3_16_9.js
+Title: Occupational Labour Immobility
+---
+src/data/seedNotes/economics/note_economics_3_17_0.js
+Title: The Case for Intervention in Product Markets
+---
+src/data/seedNotes/economics/note_economics_3_17_1.js
+Title: Monopoly and Merger Controls
+---
+src/data/seedNotes/economics/note_economics_3_17_2.js
+Title: Competition and Contestability Policies
+---
+src/data/seedNotes/economics/note_economics_3_17_3.js
+Title: Supplier and Worker Protection
+---
+src/data/seedNotes/economics/note_economics_3_17_4.js
+Title: Intervention Effects on Price and Efficiency
+---
+src/data/seedNotes/economics/note_economics_3_17_5.js
+Title: Limits to Government Intervention
+---
+src/data/seedNotes/economics/note_economics_3_17_6.js
+Title: Case for Labour Market Intervention
+---
+src/data/seedNotes/economics/note_economics_3_17_7.js
+Title: Wage Controls
+---
+src/data/seedNotes/economics/note_economics_3_17_8.js
+Title: Tax Interventions in Labour Markets
+---
+src/data/seedNotes/economics/note_economics_3_17_9.js
+Title: Mobility and Anti-Discrimination Measures
+---
+

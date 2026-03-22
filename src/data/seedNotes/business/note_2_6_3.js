@@ -266,6 +266,24 @@ export const note_business_2_6_3 = {
         title: 'Student Example: Trade Credit in a School Café',
         text: 'Imagine you run a student café for your school enterprise project. You order £500 of supplies — coffee, milk, sandwiches — from a local wholesaler. Instead of paying on delivery, you negotiate <b>30-day trade credit</b>: you have the goods on day 1, sell them over four weeks, collect cash from customers, and only pay the supplier on day 30. You have effectively used your supplier as a free source of short-term finance. This is exactly how real businesses — from corner shops to supermarkets — use trade credit to manage working capital. The longer the credit period (60 or 90 days), the more cash the business retains at any given time, improving its liquidity.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Distinguish debt finance (bank loans, debentures\u2014must be repaid with interest) from equity finance (shares\u2014permanent, no repayment but dilutes ownership). This separation is fundamental to 8+ mark answers on financing strategy."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating crowdfunding and venture capital as equivalent options. Venture capital brings expertise and networking; crowdfunding is capital-raising with limited involvement. They suit different business stages and control preferences\u2014conflating them loses analytical marks."
+      }
     }
   ],
   recall: {

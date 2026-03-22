@@ -1,0 +1,240 @@
+{
+  "note_economics_3_13_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Examiners often test whether you can explain why public firms exist despite lower efficiency: focus on market failures (positive externalities, merit goods) and equity concerns. Always justify the trade-off between efficiency losses and social benefits when comparing firm types.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_13_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Don't confuse co-operative ownership with joint ventures. Co-operatives are member-owned with shared profits; joint ventures are contractual partnerships between separate firms. This distinction is critical when analysing stakeholder impacts.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_13_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When comparing SMEs and large corporations, remember that growth stage and resource constraints are key, not firm size alone. Use this to explain why SMEs often innovate despite lower R&D budgets—focus on agility and market niches.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_13_3.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Organic growth is NOT simply 'slower than inorganic growth.' The key distinction is *internal asset expansion via reinvested profits* vs. external acquisition. Examiners mark down answers that treat speed as the defining feature rather than mechanism.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_13_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Use real-world examples to anchor definitions: horizontal (e.g. brewery mergers), vertical (e.g. brewery + pubs), conglomerate (e.g. brewing + insurance). This prevents confusing integration types under exam pressure and demonstrates depth of understanding.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_13_5.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Confusing 'takeover' with 'hostile takeover'—all takeovers are unilateral acquisitions, but hostile takeovers specifically face resistance. Also, mergers are mutual agreements, not acquisitions. This terminology precision scores easy marks.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_13_6.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Growth constraints often interact: financial constraints (borrowed funds, retained profit limits) interact with managerial constraints (key person dependency, culture). Highest marks go to answers recognizing these linkages, not listing constraints in isolation.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_13_7.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Demergers are NOT always successful. Candidates often assume demergers improve efficiency, but examiners test whether you can identify when they fail—e.g. loss of economies of scale, high transaction costs. Always weigh pros against context-specific costs.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_13_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Distinguish carefully: profit maximization (MR=MC, economic profit), revenue maximization (MR=0), and growth maximization (minimize profit per unit to expand). Exam questions often hinge on identifying which objective explains observed behavior in case studies.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_13_9.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Satisficing is NOT 'settling for mediocrity.' It's a rational response to information costs and bounded rationality—achieving a satisfactory outcome rather than incurring infinite search costs for the optimal one. Frame it as economically rational, not lazy.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_13_10.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Agency costs include more than just monitoring: divorce of ownership from control creates incentives for managerial self-dealing, empire-building, and shirking. When analyzing multinationals or public companies, explicitly link governance structures to agency problem severity.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_14_0.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Revenue = Price × Quantity, but confuse total, average, and marginal concepts at your peril. Candidates lose marks by confusing 'revenue is constant' (price-taker) with 'revenue per unit is constant.' These demand different interpretations.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_14_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The PED-revenue link is crucial: elastic demand (|PED|>1) means revenue rises when price falls; inelastic means revenue rises when price rises. Always draw the MR curve below the demand curve to visualize why TR peaks when MR=0, not when demand is elastic.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_14_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Diminishing returns (falling marginal product) is NOT the same as negative returns (output falls). The Law of Diminishing Returns kicks in *immediately*—each extra worker adds less than the previous one. Examiners penalize conflating this with negative returns.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_14_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In short-run cost calculations, always start with fixed costs (unchanged) then add variable costs proportional to output. The AC curve = (FC + VC)/Q; UC-shaped due to diminishing returns and fixed cost spreading. Graph this relationship to cement understanding.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_14_4.js": [
+    {
+      "title": "Common Mistake",
+      "text": "The LRAC is an envelope of SRACs, NOT a smoothed average. Each point on the LRAC represents the lowest cost plant size for that output level. Examiners test whether you understand why LRAC falls (economies) then rises (diseconomies) despite constant returns eventually.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_14_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Internal economies of scale fall into four types: technical (machinery efficiency), managerial (specialization), financial (lower borrowing costs), and marketing (advertising spreads across units). Name the *type* when explaining cost reductions—generic 'bigger = cheaper' loses marks.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_14_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Diseconomies of scale arise from firm growth, NOT market conditions. Examiners test whether you avoid blaming external factors. Focus: managerial coordination costs, worker alienation, supply bottlenecks *within* the firm drive LRAC upward.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_14_7.js": [
+    {
+      "title": "Exam Tip",
+      "text": "MES is the output level where LRAC is minimized and remains flat (constant returns to scale). Interpret from graphs: if LRAC flattens at 10,000 units, MES=10,000. Use MES to explain why single-firm industries exist (high MES) vs. fragmented sectors (low MES).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_14_8.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Normal profit is NOT zero profit—it's the opportunity cost of capital and entrepreneurship. Supernormal (economic) profit is *above* normal profit. A firm earning exactly its opportunity cost is competitive; earning *more* has supernormal profit. Precision in terminology matters.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_14_9.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The shutdown point is where Price = AVC (not AC), because fixed costs are sunk. Break-even is where P = AC (all costs covered). Candidates score highly by explaining *why* a loss-making firm continues operating short-term (covers variable costs) but exits long-term.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_0.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Productive efficiency (min AC) and allocative efficiency (P=MC) are *independent*. Perfect competition achieves both; monopoly achieves neither. Examiners test whether you evaluate market structures on both dimensions, not just one. Draw both curves on your graphs.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_15_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "CR4 (or CR5) sums the market share of the 4 largest firms as a percentage. CR3 > 50% suggests oligopoly; CR1 < 25% suggests perfect competition. Use actual CR values from case studies to classify market structures—examiners reward precise measurement over vague judgments.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Perfect competition requires *all* six assumptions: many buyers/sellers, homogeneous products, free entry/exit, perfect information, price-takers, and zero profits in equilibrium. Candidates often skip information and assume firms earn zero by hand-waving; explain the mechanism rigorously.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_15_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Monopolistic competition = perfect competition structure + differentiated products. This creates downward-sloping demand curves and short-run supernormal profits, but free entry eliminates them long-term. Use burger chains as examples: many rivals, entry, but product differentiation = power.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_4.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Oligopolists are *interdependent*—each firm's decisions affect rivals' profits and strategies. Candidates often analyze oligopolies as if they were monopolies (ignore rivals) or perfect competitors (ignore interdependence). Always discuss reaction functions, kinked demands, or collusion.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_15_5.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Explicit collusion (cartels) is illegal; tacit collusion (price leadership, focal points) is harder to prosecute. Cartels are unstable—incentives to cheat are strong. Examiners reward analyzing *why* cartels break down: individual firm profit if defect > collective profit if cooperate.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Price competition is wasteful (race-to-the-bottom); non-price competition (branding, quality, service) is strategic. Don't assume all competitive tactics are price wars. Oligopolists often favour non-price competition precisely because it's less destabilizing—this signals rational self-interest.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_15_7.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Monopoly requires *barriers to entry*: legal (patents, licenses), structural (economies of scale, brand loyalty), or strategic (predatory pricing, vertical integration). When analyzing monopolies, always identify the *specific* barrier—don't assume 'one firm = monopoly' without explanation.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_8.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Natural monopoly ≠ inherently efficient. It's where LRAC falls over the entire relevant demand range, making one firm cheaper than many. But natural monopoly markets *still* need regulation to prevent monopoly pricing. Examiners test whether you separate 'natural' from 'desirable.'",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_15_9.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Third-degree price discrimination requires: market power (P>MC), separate markets with different elasticities, and no arbitrage. Charge higher prices to inelastic segments (e.g. business flyers) and lower to elastic segments (e.g. leisure travelers). Always state when it's *not* possible (goods resellable).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_10.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Monopsony (single buyer) mirrors monopoly but for input markets. Monopsony power = ability to set wages below workers' MRP, not competitive wage. Examiners test whether you draw monopsony equilibrium correctly: intersection of labour supply and MRC (not = wage), then trace down to demand curve.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_3_15_11.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Contestable markets assume zero sunk costs, allowing hit-and-run entry. Incumbent prices near MC despite few rivals because threat of entry disciplines behavior. Use airline routes (post-deregulation) as examples: low sunk costs allowed Southwest to undercut legacy carriers instantly.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_3_15_12.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Sunk costs are *irrelevant* to current decisions—they are past spending that cannot be recovered. Candidates confuse sunk costs with variable costs (relevant) or fixed costs (partly relevant). When deciding whether to shut down, ignore sunk costs; this is crucial for contestability theory.",
+      "style": "warning"
+    }
+  ]
+}

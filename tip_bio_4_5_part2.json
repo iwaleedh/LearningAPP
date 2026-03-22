@@ -1,0 +1,128 @@
+[
+  {
+    "file": "note_4_5_9.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Students often confuse the products of cyclic and non-cyclic photophosphorylation. Remember that cyclic photophosphorylation **only produces ATP**, whereas non-cyclic produces ATP, reduced NADP (NADPH), and oxygen."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_10.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When describing RuBisCO, always mention its full role: it catalyses the reaction between RuBP and carbon dioxide. Don't just say 'it fixes carbon'."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_11.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "In exam questions about leaf adaptations, ensure you link the structural feature directly to its function. For example, 'the palisade mesophyll cells are densely packed with chloroplasts **to maximise light absorption**'."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_12.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Do not confuse 'community' with 'ecosystem'. A community consists only of the living (biotic) populations in an area, while an ecosystem includes both the abiotic and biotic components interacting together."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_13.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Energy is 'transferred' between trophic levels, not 'used up'. Ensure you clearly account for energy lost as heat through respiration or via excretion and egestion when explaining why food chains rarely exceed 4-5 trophic levels."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_14.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "Be prepared to use the equation **NPP = GPP - R**. Sometimes exam questions will give you values in standard form or ask you to calculate the percentage efficiency; always check the units carefully."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_15.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "Remember that microorganisms (like bacteria and fungi) involved in decomposition also respire, releasing CO₂ into the atmosphere. Students frequently forget to include microbial respiration in carbon cycle questions."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_16.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Examiner Tip",
+          "text": "When discussing succession, clearly use the terms **pioneer species** and **climax community**. Highlight that as succession proceeds, soil depth increases and biodiversity usually increases until a stable climax community is reached."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_5_17.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Common Mistake",
+          "text": "When evaluating evidence for climate change, distinguish between 'correlation' and 'causation'. Just because CO₂ levels and temperature rise together does not automatically prove one causes the other, though scientific consensus strongly supports a causal link via the greenhouse effect."
+        }
+      }
+    ]
+  }
+]

@@ -129,6 +129,24 @@ export const note_business_2_10_9 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'The Health and Safety at Work Act 1974 requires employers to provide a safe workplace, conduct risk assessments and train staff. The HSE enforces H&S law. Non-compliance can result in unlimited fines, prosecution or civil claims. Good H&S practice reduces absenteeism, improves productivity and protects reputation.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Link H&S compliance to financial outcomes quantitatively: accident claims costs, insurance premiums, lost productivity, brand damage. Show evidence (statistics) that poor H&S = material profit risk. This numeric link scores highly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Students describe H&S laws (risk assessments, reporting requirements) without connecting to business ability to operate. Poor H&S can lead to closure, criminal liability for executives, and reputational collapse. Emphasize existential risk."
+      }
     }
   ],
   recall: {

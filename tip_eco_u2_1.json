@@ -1,0 +1,121 @@
+{
+  "note_economics_2_7_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "In exam questions, always state whether you are using real or nominal GDP when making comparisons. Real GDP is the correct measure for comparing economic performance over time or across countries with different price levels.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When asked which measure is more appropriate for measuring living standards, argue for GNI per capita — it captures income that residents actually receive, including from overseas, and excludes profits flowing out of the country.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_2.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Never use nominal GDP to compare economic performance over time or between countries. If nominal GDP rose by 5% but inflation was 5%, real GDP growth was 0% — no genuine improvement in output.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_7_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When comparing living standards between countries, always use real GDP per capita (adjusted for both inflation and population). Acknowledge the limitation that it ignores income inequality.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_4.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When evaluating GDP/GNI comparisons between countries, always consider whether PPP adjustment has been applied. State that market exchange rate comparisons understate living standards in low-price countries.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_5.js": [
+    {
+      "title": "Exam Warning",
+      "text": "The technical definition requires exactly two consecutive quarters of negative growth. In popular usage, people sometimes use recession loosely — but in exams you must use the technical two-quarter definition. Note: a slowdown in growth (growth still positive but slower) is not a recession.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_7_6.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When evaluating GDP as a measure of living standards, use the mnemonic DELISH: Distribution, Environment, Leisure, Informal economy, Services quality, Happiness. Name the alternative indicator (e.g., HDI) and explain why it is better.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_8.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always note that CPI excludes housing costs (mortgage interest, council tax). This is why CPI can diverge from the experience of homeowners during periods of rising house prices or interest rates. The Office for National Statistics also publishes CPIH, which includes owner-occupier housing costs.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_9.js": [
+    {
+      "title": "Exam Warning",
+      "text": "Do not confuse disinflation with deflation. Disinflation means prices are still rising — just more slowly. Only deflation means prices are actually falling. Stating prices fell when inflation slowed is incorrect.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_7_11.js": [
+    {
+      "title": "Exam Tip",
+      "text": "When comparing unemployment levels, note that ILO and Claimant Count can move in opposite directions if benefit rules change. Always specify which measure you are using. ILO is better for international comparisons; Claimant Count is more current.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_7_12.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Match the type of unemployment to the correct policy: cyclical → demand management (fiscal/monetary); structural → supply-side (retraining, education); frictional → better information. Applying the wrong policy is a common error.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_8_1.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always be precise: the price level falls causes a movement along AD (not a shift). A shift occurs when C, I, G or net exports change independently of the price level.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_8_2.js": [
+    {
+      "title": "Exam Tip",
+      "text": "The Keynesian consumption function shows that not all income is consumed — some is saved. A rise in income increases consumption, but by less than the full income rise (MPC < 1).",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_8_3.js": [
+    {
+      "title": "Exam Tip",
+      "text": "UK savings ratio fell sharply before the 2008 financial crisis (easy credit → households borrowed and consumed). It spiked after (uncertainty → precautionary saving). This context demonstrates the counter-cyclical nature of the savings ratio.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_8_6.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Investment is highly influenced by expectations and confidence; even zero interest rates may not stimulate investment if firms are pessimistic (liquidity trap). Government incentives reduce cost but cannot change expectations of future demand on their own.",
+      "style": "warning"
+    }
+  ],
+  "note_economics_2_9_0.js": [
+    {
+      "title": "Exam Tip",
+      "text": "Always label your AS diagrams clearly: SRAS slopes upward, classical LRAS is vertical at Yf. State whether you are using the classical or Keynesian model when discussing LRAS shape.",
+      "style": "tip"
+    }
+  ],
+  "note_economics_2_9_1.js": [
+    {
+      "title": "Common Mistake",
+      "text": "Do NOT confuse a movement along SRAS (caused only by a price level change) with a shift of SRAS (caused by cost or productivity changes). In an exam, explicitly state whether you are shifting the curve or moving along it.",
+      "style": "warning"
+    }
+  ]
+}

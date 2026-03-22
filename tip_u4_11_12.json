@@ -1,0 +1,218 @@
+{
+  "note_4_11_0.js": [
+    {
+      "style": "warning",
+      "title": "Exam Trap: Orders Are ALWAYS Experimental",
+      "text": "You CANNOT deduce the order of reaction from the stoichiometric equation. You must do experiments. Students often make the mistake of assuming order = stoichiometric coefficient (e.g., 2A + B \u2192 products is NOT necessarily second order w.r.t. A)."
+    },
+    {
+      "style": "tip",
+      "title": "The Factor Test Rule",
+      "text": "Memorize: if [concentration] increases by factor x and rate increases by factor x^n, then order = n. Example: triple [A], rate becomes 9 times faster \u2192 9 = 3\u00b2 \u2192 order = 2."
+    }
+  ],
+  "note_4_11_1.js": [
+    {
+      "style": "warning",
+      "title": "Proving First Order Requires TWO Half-Lives",
+      "text": "Many students measure only one half-life and claim it's constant. In an exam, you MUST read two separate half-lives (e.g., A\u2080\u2192A\u2080/2 and A\u2080/2\u2192A\u2080/4) and explicitly state both are equal to prove first order."
+    },
+    {
+      "style": "tip",
+      "title": "Half-Life Diagnostic Method",
+      "text": "Constant t\u00bd = 1st order (ONLY this order has constant t\u00bd). Decreasing t\u00bd = 0th order. Increasing t\u00bd = 2nd order. This is the fastest way to identify order from a [Conc] vs Time graph."
+    }
+  ],
+  "note_4_11_2.js": [
+    {
+      "style": "warning",
+      "title": "Quenching Timing Error",
+      "text": "When taking samples, record the time when HALF the aliquot (5 cm\u00b3 of 10 cm\u00b3) has been transferred into the quenching agent. Students often record the wrong time point, leading to systematic errors in calculated rates."
+    },
+    {
+      "style": "tip",
+      "title": "Purpose of Quenching",
+      "text": "Quenching immediately stops the reaction so the concentration does NOT change during titration. Methods: ice bath (dilute + cool), excess standard acid, or remove catalyst. This is essential for accurate rate measurement."
+    }
+  ],
+  "note_4_11_3.js": [
+    {
+      "style": "warning",
+      "title": "Avoid Curve-Fitting Ambiguity with Rate vs [Conc] Graphs",
+      "text": "Plotting Rate directly against Concentration often produces ambiguous curves that could be 2nd, 3rd, or fractional order. Use LOG-LOG GRAPHS instead: plot log(Rate) vs log[Concentration] for a straight line where gradient = order."
+    },
+    {
+      "style": "tip",
+      "title": "Initial Rates Method Logic",
+      "text": "Measure the time to produce a small, fixed amount of product (e.g., disappearance of a cross). This eliminates the problem of changing concentrations and gives initial rate directly via Rate \u221d 1/t."
+    }
+  ],
+  "note_4_11_4.js": [
+    {
+      "style": "warning",
+      "title": "All Other Concentrations Must Stay Constant",
+      "text": "When comparing experiments to find order w.r.t. reactant A, the concentrations of ALL OTHER reactants must be identical. If you cannot find such a pair, you must mathematically account for the effect of other concentration changes."
+    },
+    {
+      "style": "tip",
+      "title": "Quick Order Recognition",
+      "text": "Double concentration: no rate change = 0th order | rate doubles = 1st order | rate quadruples = 2nd order."
+    }
+  ],
+  "note_4_11_5.js": [
+    {
+      "style": "warning",
+      "title": "k Units Change With Overall Order",
+      "text": "The units of k are NOT fixed. They depend entirely on the overall order. 0th order: mol dm\u207b\u00b3 s\u207b\u00b9 | 1st order: s\u207b\u00b9 | 2nd order: dm\u00b3 mol\u207b\u00b9 s\u207b\u00b9 | 3rd order: dm\u2076 mol\u207b\u00b2 s\u207b\u00b9. Exams always mark this specifically."
+    },
+    {
+      "style": "tip",
+      "title": "Quick Units Check",
+      "text": "Rearrange the rate equation to isolate k, then substitute mol dm\u207b\u00b3 s\u207b\u00b9 for Rate and mol dm\u207b\u00b3 for each [concentration]. Cancel and flip negative indices in denominator to positive in numerator."
+    }
+  ],
+  "note_4_11_6.js": [
+    {
+      "style": "warning",
+      "title": "Order Tells You RDS Involvement, Not Stoichiometry",
+      "text": "Zero order w.r.t. X means X enters AFTER the RDS. First order w.r.t. X means ONE molecule of X is in/before the RDS. Second order w.r.t. X means TWO molecules of X collide in/before the RDS. Do NOT confuse this with stoichiometric coefficients."
+    },
+    {
+      "style": "tip",
+      "title": "Mechanism Consistency Test",
+      "text": "To check if a proposed mechanism is consistent with an experimental rate equation: the reactants that appear in the rate equation (and their orders) must all be accounted for in or before the RDS."
+    }
+  ],
+  "note_4_11_7.js": [
+    {
+      "style": "warning",
+      "title": "Unit Trap: E\u2090 is ALWAYS in J mol\u207b\u00b9 in Arrhenius Equation",
+      "text": "If a question gives E\u2090 in kJ mol\u207b\u00b9, you MUST convert to J mol\u207b\u00b9 by multiplying by 1000 BEFORE using it in k = Ae^(\u2212E\u2090/RT). Using kJ directly will give a nonsensical answer."
+    },
+    {
+      "style": "tip",
+      "title": "Arrhenius Plot: Read Gradient Carefully",
+      "text": "Plot ln(k) vs 1/T. The gradient is \u2212E\u2090/R (negative). To find E\u2090: take the absolute value of the gradient and multiply by R (8.31 J K\u207b\u00b9 mol\u207b\u00b9). Then divide by 1000 to convert to kJ mol\u207b\u00b9 if needed."
+    }
+  ],
+  "note_4_11_8.js": [
+    {
+      "style": "warning",
+      "title": "Recording Exact Time in Sampling Experiments",
+      "text": "For CP9a, the correct time to record is when HALF of the 10 cm\u00b3 aliquot has been transferred (i.e., 5 cm\u00b3 has entered the quenching flask). Recording the wrong time point introduces large systematic errors in calculated concentrations."
+    },
+    {
+      "style": "tip",
+      "title": "Iodine Titration Endpoint",
+      "text": "Add starch indicator ONLY when the brown iodine solution turns pale yellow (not too early). The endpoint is colourless (when all I\u2082 has reacted with thiosulfate). This gives the most precise volume reading."
+    }
+  ],
+  "note_4_12_0.js": [
+    {
+      "style": "warning",
+      "title": "Exothermic \u2260 Spontaneous (and Endothermic \u2260 Non-Spontaneous)",
+      "text": "Ice melting at 25\u00b0C is endothermic, yet spontaneous. Freezing at 25\u00b0C is exothermic, yet non-spontaneous. \u0394H alone CANNOT determine spontaneity. Both entropy and temperature matter via \u0394G = \u0394H \u2212 T\u0394S."
+    },
+    {
+      "style": "tip",
+      "title": "Kinetic vs Thermodynamic Stability",
+      "text": "Petrol + oxygen: thermodynamically very feasible (\u0394G << 0), but kinetically stable (no reaction at room temperature without ignition). A reaction can be spontaneous (\u0394G < 0) yet appear 'stable' due to a high activation energy barrier."
+    }
+  ],
+  "note_4_12_1.js": [
+    {
+      "style": "warning",
+      "title": "Entropy Is Quantified by Number of Microstates, Not Vague 'Disorder'",
+      "text": "S = k_B ln W is precise. W is the number of possible arrangements. A gas has vastly more possible arrangements than a solid, so higher entropy. Students who think 'disorder' is a physical thing miss the statistical foundation."
+    },
+    {
+      "style": "tip",
+      "title": "More Particles = Higher Entropy",
+      "text": "When 1 mole of NaCl(s) dissolves, it produces 2 moles of aqueous ions (Na\u207a + Cl\u207b). This doubling of particle count dramatically increases the number of possible microstates, making \u0394S_dissolution large and positive."
+    }
+  ],
+  "note_4_12_2.js": [
+    {
+      "style": "warning",
+      "title": "Boiling Entropy Change Is ~5x Larger Than Melting",
+      "text": "For water: \u0394S_m \u2248 22 J K\u207b\u00b9 mol\u207b\u00b9, but \u0394S_b \u2248 109 J K\u207b\u00b9 mol\u207b\u00b9. This is because the liquid\u2192gas transition is far more dramatic in terms of particle freedom than solid\u2192liquid. Students often treat entropy changes for all phase transitions as similar."
+    },
+    {
+      "style": "tip",
+      "title": "Predict Entropy Sign Quickly",
+      "text": "Melting, boiling, dissolving, gas expansion \u2192 \u0394S > 0. Freezing, condensation, compression \u2192 \u0394S < 0. For reactions: count moles of gas. More gas products \u2192 \u0394S > 0."
+    }
+  ],
+  "note_4_12_3.js": [
+    {
+      "style": "warning",
+      "title": "\u0394S_surroundings = \u2212\u0394H_system / T (Negative Sign!)",
+      "text": "Common error: writing \u0394S_surr = +\u0394H_sys / T. The correct sign is NEGATIVE because if the system releases heat (\u0394H < 0), the surroundings absorb it (\u2212\u0394H > 0), increasing their entropy. Exothermic reactions increase surroundings entropy."
+    },
+    {
+      "style": "tip",
+      "title": "Second Law: \u0394S_total > 0 for Spontaneity",
+      "text": "A process is spontaneous if \u0394S_system + \u0394S_surroundings > 0. At constant T and P, this simplifies to \u0394G = \u0394H \u2212 T\u0394S < 0. Both approaches are equivalent."
+    }
+  ],
+  "note_4_12_4.js": [
+    {
+      "style": "warning",
+      "title": "\u0394G < 0 Means Feasible, NOT Fast",
+      "text": "Spontaneity and kinetics are different. Diamond converting to graphite has \u0394G << 0 (spontaneous), but E\u2090 is so high that it never happens. Coal burns (\u0394G << 0) but requires a spark for ignition. \u0394G predicts direction, kinetics predicts rate."
+    },
+    {
+      "style": "tip",
+      "title": "Critical Temperature When \u0394G = 0",
+      "text": "For reactions where \u0394H and \u0394S have opposite signs, set \u0394G = 0 and solve: T_crit = \u0394H / \u0394S. This is the temperature at which the reaction switches from spontaneous to non-spontaneous (or vice versa)."
+    }
+  ],
+  "note_4_12_5.js": [
+    {
+      "style": "warning",
+      "title": "Charge Effect >>> Radius Effect on Lattice Enthalpy",
+      "text": "NaF (singly charged, ~0.233 nm) vs CaF\u2082 (doubly charged, ~0.236 nm): nearly identical distances, but CaF\u2082 lattice enthalpy is TRIPLE that of NaF. Charge dominates. Students often overweight the radius effect."
+    },
+    {
+      "style": "tip",
+      "title": "Born-Haber Cycle Setup",
+      "text": "Always follow the same sequence: atomisation (\u0394H_at) \u2192 ionisation (IE) \u2192 electron affinity (EA) \u2192 lattice formation. The sum equals enthalpy of formation. Use Hess's law: \u0394H_form = \u03a3(\u0394H steps) + \u0394H_lattice."
+    }
+  ],
+  "note_4_12_6.js": [
+    {
+      "style": "warning",
+      "title": "Fajans' Rules: Covalent Character When Cation Is Small + Anion Is Large",
+      "text": "High charge density of cation polarizes the anion's electrons toward itself, creating covalent overlap. AgI experimental lattice energy is much more negative than theoretical because Ag\u207a heavily polarizes the large I\u207b. Experimental \u0394H_latt more negative = covalent contribution."
+    },
+    {
+      "style": "tip",
+      "title": "Group 2 Solubility Trends Explained by Hydration vs Lattice Energy",
+      "text": "Hydroxides (small anion): lattice energy falls FASTER down group \u2192 solubility INCREASES. Sulfates (large anion): hydration falls FASTER \u2192 solubility DECREASES. Size of anion determines which enthalpy term dominates."
+    }
+  ],
+  "note_4_12_7.js": [
+    {
+      "style": "warning",
+      "title": "Most Dissolution Is ENTROPY-Driven Despite Being Endothermic",
+      "text": "NH\u2084Cl dissolves endothermically (\u0394H > 0), yet is soluble because \u0394S_solution \u2248 +70 J K\u207b\u00b9 mol\u207b\u00b9 is large. At 298 K, T\u0394S term dominates. Students incorrectly think exothermic dissolution is more spontaneous."
+    },
+    {
+      "style": "tip",
+      "title": "Most Salts Become MORE Soluble When Heated",
+      "text": "For typical salts with \u0394H > 0 and \u0394S > 0, increasing T makes T\u0394S grow relative to \u0394H, so \u0394G becomes more negative \u2192 higher solubility. Exceptions like Ca(OH)\u2082 are rare (exothermic dissolution)."
+    }
+  ],
+  "note_4_12_8.js": [
+    {
+      "style": "warning",
+      "title": "Unit Conversion Trap: \u0394S to kJ K\u207b\u00b9 mol\u207b\u00b9",
+      "text": "If \u0394S = 100 J K\u207b\u00b9 mol\u207b\u00b9, divide by 1000 to get 0.1 kJ K\u207b\u00b9 mol\u207b\u00b9 before calculating T\u0394S. Common error: using \u0394S = 100 directly \u2192 T\u0394S = 298 \u00d7 100 = 29,800 kJ (nonsense). Correct: T\u0394S = 298 \u00d7 0.1 = 29.8 kJ."
+    },
+    {
+      "style": "tip",
+      "title": "\u0394G\u00b0 and Equilibrium Constant K Relationship",
+      "text": "\u0394G\u00b0 = \u2212RT ln K. Always convert \u0394G\u00b0 to joules (not kJ) because R = 8.314 J K\u207b\u00b9 mol\u207b\u00b9. Large negative \u0394G\u00b0 \u2192 large K >> 1 \u2192 products favored. \u0394G\u00b0 = 0 \u2192 K = 1 \u2192 equilibrium."
+    }
+  ]
+}

@@ -114,6 +114,24 @@ export const note_business_2_9_6 = {
         "title": "Relatable: Your School's Stationery Cupboard",
         "text": "Think of your school's stationery store. If the office orders new exercise books only when the last one runs out (no buffer), lessons are disrupted while they wait for delivery — that's a stock-out. If they order 5,000 books at once and store them in a room, that room costs money and some books may get damp. The school needs to find the right reorder level: enough buffer to ride out delivery delays, but not so much that storage costs spiral."
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Explain inventory control charts: reorder level (buffer + lead time demand), reorder quantity (EOQ), minimum level (buffer stock), maximum level. Show how buffer inventory prevents stockouts at cost of tied-up capital."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Reading an inventory chart mechanically without understanding the cost trade-off: more buffer stock = higher carrying costs but fewer stockouts. Optimal buffer depends on item criticality and supplier reliability. One-size-fits-all doesn't work."
+      }
     }
   ],
   recall: {

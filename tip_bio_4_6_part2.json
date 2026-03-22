@@ -1,0 +1,168 @@
+[
+  {
+    "file": "note_4_6_9.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Antibody Production",
+          "text": "Remember that antibodies are produced by plasma cells (differentiated B cells), not directly by T cells or macrophages."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Disulfide Bonds",
+          "text": "When describing antibody structure, always explicitly mention 'disulfide bridges' connecting the heavy and light chains."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_10.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Passive vs Active",
+          "text": "Passive immunity provides immediate but temporary protection (no memory cells), whereas active immunity takes time to develop but is long-lasting."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Vaccines",
+          "text": "A common mistake is saying vaccines 'contain antibodies'. They contain antigens (or attenuated pathogens) which trigger the body to actively produce its own antibodies and memory cells."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_11.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Viral Infections",
+          "text": "Never state that antibiotics can be used to treat viruses. Viruses lack the cellular machinery (like cell walls and bacterial ribosomes) that antibiotics target."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Evolution of Resistance",
+          "text": "When explaining resistance, emphasize that the antibiotic acts as a 'selection pressure'. It does not 'cause' the mutation; the random mutation is already present in the population."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_12.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Completing the Course",
+          "text": "In exam answers, explain that completing the antibiotic course ensures that highly resistant bacteria are killed and cannot survive to reproduce."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_13.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Zone of Inhibition",
+          "text": "The larger the clear zone, the more effective the antimicrobial agent. Remember to measure the diameter using a ruler across the disc, ensuring you do not open the Petri dish fully."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Incubation Temperature",
+          "text": "For school practicals, incubation must be at 25°C, not 37°C, to avoid culturing human pathogens."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_14.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Respiration",
+          "text": "Don't forget that decomposers (bacteria and fungi) respire aerobically, which is the process that releases carbon in organic compounds back into the atmosphere as CO₂."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_15.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Ambient Conditions",
+          "text": "In data interpretation questions, always consider factors that affect cooling or insect development—such as wind, clothing, body mass, or immersion in water."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Rigor Mortis",
+          "text": "Remember that rigor mortis is temporary. Stiffness passes eventually due to muscle breakdown by enzymes. Its presence or absence helps narrow down the time of death window."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_16.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Taq Polymerase",
+          "text": "Always refer to the enzyme used in PCR specifically as 'Taq polymerase', noting that its optimum temperature is high and it does not denature at 95°C."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Gel Electrophoresis Movement",
+          "text": "DNA fragments move towards the positive electrode (anode) because DNA is negatively charged. The smaller fragments move further and faster."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "note_physics_2_11_5.js": [
+    {
+      "style": "tip",
+      "title": "Examiner Tip",
+      "text": "When investigating standing waves, it can be difficult to identify the exact position of maximum resonance by ear alone. In your evaluations, always mention taking multiple measurements to calculate a mean, and suggest using a microphone connected to an oscilloscope to significantly reduce uncertainty."
+    }
+  ],
+  "note_physics_4_22_0.js": [
+    {
+      "style": "warning",
+      "title": "Watch Out",
+      "text": "Always double-check that both the nucleon number (A) and proton number (Z) are completely balanced across both sides of any nuclear equation. A common mistake in exams is forgetting to adjust the proton number correctly when a beta-minus particle is emitted."
+    }
+  ],
+  "note_physics_4_22_1.js": [
+    {
+      "style": "tip",
+      "title": "Key Evidence",
+      "text": "You must be able to clearly link Rutherford's alpha scattering observations to their conclusions: alpha particles passing straight through prove the atom is mostly empty space, while a tiny fraction being deflected back proves the nucleus is extremely small, dense, and positively charged."
+    }
+  ],
+  "note_physics_4_23_1.js": [
+    {
+      "style": "warning",
+      "title": "Conservation Laws",
+      "text": "In a particle-antiparticle annihilation event, remember that at least two photons must be produced in opposite directions to conserve momentum (assuming the pair was roughly at rest). Always account for the rest mass energy of BOTH the particle and its antiparticle when calculating the total photon energy released."
+    }
+  ]
+}

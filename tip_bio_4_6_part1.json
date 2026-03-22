@@ -1,0 +1,173 @@
+[
+  {
+    "file": "note_4_6_0.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Aseptic Techniques vs Sterile",
+          "text": "Students often confuse the terms **aseptic** and **sterile**. Aseptic technique aims to *prevent contamination* from undesired microorganisms, whereas sterile means *completely free* of all living microorganisms. You should always refer to 'aseptic technique' when describing lab procedures."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Incubation Temperature",
+          "text": "Remember that in school and college laboratories, microbial cultures must not be incubated at 37 °C (human body temperature). This prevents the growth of human pathogens. They are typically cultured at around 25 °C or a maximum of 30 °C."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_1.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Viable vs Total Counts",
+          "text": "A common mistake is confusing viable and total counts. **Viable counts** (like counting colonies from serial dilutions) only count living cells that can multiply. **Total counts** (like using a haemocytometer or measuring turbidity) include both living and dead cells."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_2.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Logarithmic Scales",
+          "text": "When interpreting or drawing bacterial growth curves, make sure you understand that the y-axis is logarithmic (usually $log_{10}$ of the number of cells). This is because bacterial numbers increase exponentially and vary over too large a range for a linear scale."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Stationary Phase Explanation",
+          "text": "In the stationary phase, bacterial cells do not stop dividing entirely. Instead, the rate of cell division equals the rate of cell death, usually due to limiting nutrients and the build-up of toxic waste products."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_3.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Serial Dilution Calculation",
+          "text": "Be careful when calculating the original bacteria density. You must multiply the number of colonies counted by the dilution factor **and** adjust for the volume plated. For example, if you plate $0.1\\text{ cm}^3$, you must multiply by 10 to get the count per $1\\text{ cm}^3$."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_4.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Bacterial Cell Walls",
+          "text": "Do not state that bacterial cell walls are made of cellulose; that is for plants. Bacterial cell walls are made of **peptidoglycan** (murein). Also, remember that unlike eukaryotes, their DNA is not enclosed in a nucleus."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_5.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "TB Resistance vs Immunity",
+          "text": "When describing TB, many students incorrectly mention 'immunity' to antibiotics. Bacteria develop **resistance** to antibiotics, not immunity. Immunity is a characteristic of the host's immune system, not the pathogen."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Tubercle Formation",
+          "text": "Make sure you can describe the sequence of events. *Mycobacterium tuberculosis* is engulfed by macrophages but can survive and replicate inside them. This leads to the formation of tubercles (tissue masses containing dead tissue and macrophages)."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_6.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "Non-Specific vs Specific Pathways",
+          "text": "Remember that barriers to entry (like the skin, stomach acid, and lysozyme enzymes in tears) constitute the **non-specific**, primary lines of defence. They prevent infection from a vast array of pathogens, regardless of their specific antigens."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_7.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "The Role of Histamine",
+          "text": "Examiners look for the specific actions of histamine: it causes **vasodilation** (widening of blood vessels, causing heat and redness) and increases **capillary permeability** (allowing fluid and white blood cells to leak into tissues, causing swelling)."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Phagocytosis Detail",
+          "text": "When describing phagocytosis, do not just say 'the pathogen is killed'. You must explicitly state that a phagosome forms, it fuses with a **lysosome**, and hydrolytic enzymes (lysozymes) are released to digest the pathogen."
+        }
+      }
+    ]
+  },
+  {
+    "file": "note_4_6_8.js",
+    "tips": [
+      {
+        "id": "callout-exam-tip-1",
+        "type": "callout",
+        "data": {
+          "style": "warning",
+          "title": "Antibodies vs Antigens",
+          "text": "A frequent error is interchanging antigens and antibodies. **Antigens** are molecules (often proteins) on the surface of pathogens that trigger immune responses. **Antibodies** are the complementary Y-shaped proteins produced by plasma cells (B cells) to bind to those specific antigens."
+        }
+      },
+      {
+        "id": "callout-exam-tip-2",
+        "type": "callout",
+        "data": {
+          "style": "tip",
+          "title": "T Helper Cell Activation",
+          "text": "In long-answer questions about the specific immune response, it is crucial to state that **T helper cells** release **cytokines**. These specific chemicals stimulate both the clonal expansion of B cells (into plasma cells) and T killer cells."
+        }
+      }
+    ]
+  }
+]
