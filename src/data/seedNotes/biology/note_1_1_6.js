@@ -81,6 +81,15 @@ export const note_biology_1_1_6 = {
             "svg": "<svg viewBox='0 0 300 120' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='50' width='200' height='20' fill='#7f1d1d' stroke='#e53e3e' stroke-dasharray='4,4'/><circle cx='100' cy='60' r='6' fill='#c53030'/><circle cx='140' cy='60' r='6' fill='#c53030'/><circle cx='180' cy='60' r='6' fill='#4a5568'/><circle cx='220' cy='60' r='6' fill='#4a5568'/><text x='80' y='30' font-size='10' fill='#c53030'>O₂ & Nutrients Out</text><path d='M100,45 L90,20' stroke='#333' stroke-width='1.5' fill='none'/><path d='M140,45 L150,20' stroke='#333' stroke-width='1.5' fill='none'/><text x='160' y='100' font-size='10' fill='#4a5568'>CO₂ & Waste In</text><path d='M180,75 L170,95' stroke='#333' stroke-width='1.5' fill='none'/><path d='M220,75 L230,95' stroke='#333' stroke-width='1.5' fill='none'/><text x='10' y='65' font-size='10'>From Artery</text><text x='260' y='65' font-size='10'>To Vein</text></svg>",
             "caption": "Capillary Network"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Comparing Blood Vessels",
+        "text": "When comparing arteries and veins, refer to the thickness of the muscle and elastic layers in the wall, not the overall wall thickness. You need to link the thick elastic tissue in arteries to maintaining high pressure through elastic recoil."
+      }
     }
   ],
   "recall": {

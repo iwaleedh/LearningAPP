@@ -74,6 +74,15 @@ export const note_biology_1_1_0 = {
             "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='50' r='20' fill='#4ba3e3'/><circle cx='50' cy='80' r='10' fill='#1e293b'/><circle cx='110' cy='80' r='10' fill='#1e293b'/><text x='74' y='56' fill='#1e293b' font-size='14'>O</text><circle cx='220' cy='90' r='20' fill='#4ba3e3'/><circle cx='190' cy='60' r='10' fill='#1e293b'/><circle cx='250' cy='60' r='10' fill='#1e293b'/><text x='214' y='96' fill='#1e293b' font-size='14'>O</text><line x1='118' y1='80' x2='182' y2='66' stroke='#e53e3e' stroke-width='3' stroke-dasharray='5,5'/><text x='110' y='50' fill='#e53e3e' font-size='12' font-weight='bold'>Hydrogen bond</text></svg>",
             "caption": "Hydrogen Bonding"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Water as a Solvent",
+        "text": "When discussing water's role as a solvent, explicitly mention that its dipole nature allows it to attract and surround both positive and negative ions, enabling them to dissolve and be transported."
+      }
     }
   ],
   "recall": {

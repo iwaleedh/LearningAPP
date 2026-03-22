@@ -95,6 +95,15 @@ export const note_biology_1_1_5 = {
             "svg": "<svg viewBox='0 0 400 120' xmlns='http://www.w3.org/2000/svg'><circle cx='60' cy='60' r='30' fill='#7f1d1d' stroke='#c53030' stroke-width='2'/><text x='40' y='110' font-size='10'>Atrial Systole</text><line x1='100' y1='60' x2='130' y2='60' stroke='#333' stroke-width='2'/><circle cx='170' cy='60' r='30' fill='#f56565' stroke='#9b2c2c' stroke-width='3'/><text x='140' y='110' font-size='10'>Ventricular Systole</text><line x1='210' y1='60' x2='240' y2='60' stroke='#333' stroke-width='2'/><circle cx='280' cy='60' r='30' fill='#3d1212' stroke='#e53e3e' stroke-width='1'/><text x='265' y='110' font-size='10'>Diastole</text><path d='M40,55 Q60,40 80,55' fill='none' stroke='#c53030' stroke-width='2'/><path d='M150,65 Q170,80 190,65' fill='none' stroke='#9b2c2c' stroke-width='2'/></svg>",
             "caption": "Cardiac Cycle Sequence"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Ventricular Systole",
+        "text": "Make sure to clearly sequence the events in the cardiac cycle. When writing about ventricular systole, state that the ventricles contract from the apex upwards, increasing pressure above that of the atria to close the AV valves and above that of the arteries to open the semi-lunar valves."
+      }
     }
   ],
   "recall": {

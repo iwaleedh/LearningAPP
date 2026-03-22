@@ -54,6 +54,15 @@ export const note_biology_1_1_11 = {
             "svg": "<svg viewBox='0 0 250 150' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='50' width='40' height='80' fill='#ed8936' opacity='0.7' rx='5'/><text x='75' y='145' font-size='12'>Negative</text><rect x='140' y='50' width='40' height='80' fill='#1a202c' opacity='0.9' rx='5'/><text x='145' y='145' font-size='12'>Positive</text><text x='35' y='30' font-size='12' font-weight='bold'>Iodine: Orange-Brown → Blue/Black</text></svg>",
             "caption": "Iodine Test for Starch"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Standardising Variables",
+        "text": "For quantitative or semi-quantitative biological tests, examiners look for mentions of standardisation. Always state that you would use equivalent volumes and concentrations of reagents across all tested samples for a valid comparison."
+      }
     }
   ],
   "recall": {

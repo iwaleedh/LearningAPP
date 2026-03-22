@@ -88,6 +88,15 @@ export const note_biology_1_1_8 = {
             "svg": "<svg viewBox='0 0 400 160' xmlns='http://www.w3.org/2000/svg'><rect x='20' y='20' width='80' height='30' fill='#1e293b' rx='4'/><text x='25' y='40' font-size='10'>Tissue Damage</text><text x='110' y='40'>→</text><rect x='130' y='20' width='100' height='30' fill='#532407' rx='4'/><text x='135' y='40' font-size='10' font-weight='bold'>Thromboplastin</text><line x1='180' y1='50' x2='180' y2='80' stroke='#333' stroke-width='2'/><text x='190' y='65' font-size='9'>+ Calcium + Vit K</text><text x='70' y='95' font-size='11'>Prothrombin</text><text x='155' y='95'>→</text><rect x='180' y='75' width='80' height='30' fill='#1c3a64' rx='4'/><text x='195' y='95' font-size='11' font-weight='bold'>Thrombin</text><line x1='220' y1='105' x2='220' y2='130' stroke='#333' stroke-width='2'/><text x='110' y='145' font-size='11'>Fibrinogen (Soluble)</text><text x='225' y='145'>→</text><rect x='250' y='125' width='120' height='30' fill='#7f1d1d' rx='4'/><text x='260' y='145' font-size='11' font-weight='bold' fill='#9b2c2c'>Fibrin (Insoluble Net)</text></svg>",
             "caption": "Blood Clotting Cascade"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "Triggering Atherosclerosis",
+        "text": "Atherosclerosis always starts with damage to the endothelial lining of the artery (e.g. from high blood pressure). Do not just say 'damage to the artery wall'; be specific by using the term 'endothelium'."
+      }
     }
   ],
   "recall": {

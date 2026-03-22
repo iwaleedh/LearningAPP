@@ -81,6 +81,15 @@ export const note_biology_1_1_2 = {
             "svg": "<svg viewBox='0 0 300 140' xmlns='http://www.w3.org/2000/svg'><g transform='translate(50, 30)'><circle cx='0' cy='0' r='12' fill='#63b3ed'/><path d='M-4,12 Q-8,25 -4,40' fill='none' stroke='#d69e2e' stroke-width='2'/><path d='M4,12 Q8,25 4,40' fill='none' stroke='#d69e2e' stroke-width='2'/></g><g transform='translate(100, 30)'><circle cx='0' cy='0' r='12' fill='#63b3ed'/><path d='M-4,12 Q-8,25 -4,40' fill='none' stroke='#d69e2e' stroke-width='2'/><path d='M4,12 Q8,25 4,40' fill='none' stroke='#d69e2e' stroke-width='2'/></g><g transform='translate(150, 30)'><circle cx='0' cy='0' r='12' fill='#63b3ed'/><path d='M-4,12 Q-8,25 -4,40' fill='none' stroke='#d69e2e' stroke-width='2'/><path d='M4,12 Q8,25 4,40' fill='none' stroke='#d69e2e' stroke-width='2'/></g><g transform='translate(50, 110)'><circle cx='0' cy='0' r='12' fill='#63b3ed'/><path d='M-4,-12 Q-8,-25 -4,-40' fill='none' stroke='#d69e2e' stroke-width='2'/><path d='M4,-12 Q8,-25 4,-40' fill='none' stroke='#d69e2e' stroke-width='2'/></g><g transform='translate(100, 110)'><circle cx='0' cy='0' r='12' fill='#63b3ed'/><path d='M-4,-12 Q-8,-25 -4,-40' fill='none' stroke='#d69e2e' stroke-width='2'/><path d='M4,-12 Q8,-25 4,-40' fill='none' stroke='#d69e2e' stroke-width='2'/></g><g transform='translate(150, 110)'><circle cx='0' cy='0' r='12' fill='#63b3ed'/><path d='M-4,-12 Q-8,-25 -4,-40' fill='none' stroke='#d69e2e' stroke-width='2'/><path d='M4,-12 Q8,-25 4,-40' fill='none' stroke='#d69e2e' stroke-width='2'/></g><text x='180' y='35' font-size='10' font-family='sans-serif'>Hydrophilic Heads (Phosphate)</text><text x='180' y='75' font-size='10' font-family='sans-serif'>Hydrophobic Tails (Fatty Acids)</text></svg>",
             "caption": "Phospholipid Bilayer"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Ester Bond Formation",
+        "text": "Always specify that ester bonds in triglycerides are formed via a condensation reaction between the hydroxyl (-OH) group of glycerol and the carboxyl (-COOH) group of the fatty acids, releasing three molecules of water."
+      }
     }
   ],
   "recall": {

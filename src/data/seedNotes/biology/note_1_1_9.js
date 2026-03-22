@@ -71,6 +71,15 @@ export const note_biology_1_1_9 = {
             "svg": "<svg viewBox='0 0 350 150' xmlns='http://www.w3.org/2000/svg'><path d='M175,120 L125,50 L225,50 Z' fill='#1e293b' stroke='#4a5568' stroke-width='2'/><circle cx='175' cy='120' r='10' fill='#2d3748'/><rect x='105' y='20' width='40' height='30' fill='#4299e1' rx='2'/><text x='110' y='40' font-size='10' fill='#1e293b'>Actual</text><rect x='205' y='10' width='60' height='40' fill='#f56565' rx='2'/><text x='210' y='35' font-size='10' fill='#1e293b'>Perceived</text><text x='60' y='140' font-size='11' font-style='italic'>Affected by media, familiarity, and fear</text></svg>",
             "caption": "Actual vs Perceived Risk"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Correlation vs. Causation",
+        "text": "When evaluating risk factors, avoid using the term 'causes'. State that factors like smoking, high blood pressure and diet are 'correlated with' or 'increase the risk' of CVD, as it is a multifactorial disease."
+      }
     }
   ],
   "recall": {

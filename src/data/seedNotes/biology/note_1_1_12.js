@@ -62,6 +62,15 @@ export const note_biology_1_1_12 = {
             "svg": "<svg viewBox='0 0 350 100' xmlns='http://www.w3.org/2000/svg'><circle cx='70' cy='50' r='25' fill='#3182ce'/><text x='55' y='55' fill='#1e293b' font-size='12'>Blue</text><text x='115' y='55' font-size='12' font-family='sans-serif'>+ Vitamin C →</text><circle cx='230' cy='50' r='25' fill='none' stroke='#4a5568' stroke-width='2'/><text x='205' y='55' font-size='12'>Colourless</text></svg>",
             "caption": "DCPIP End Point"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "tip",
+        "title": "DCPIP Endpoint",
+        "text": "In the DCPIP titration for Vitamin C, the end-point is when the blue DCPIP turns colourless (or pink to colourless in an acidic solution). State that you must record the exact volume of juice required to decolourise a set standard volume of DCPIP."
+      }
     }
   ],
   "recall": {

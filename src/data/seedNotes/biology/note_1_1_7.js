@@ -73,6 +73,15 @@ export const note_biology_1_1_7 = {
             "svg": "<svg viewBox='0 0 350 140' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='70' width='200' height='30' fill='#3d1212' stroke='#e53e3e'/><circle cx='120' cy='40' r='10' fill='#1e293b'/><circle cx='150' cy='40' r='10' fill='#1e293b'/><path d='M180,45 Q240,45 280,70' fill='none' stroke='#48bb78' stroke-width='12' stroke-dasharray='8,4'/><text x='200' y='30' font-size='12' fill='#2f855a' font-weight='bold'>Lymphatic Vessel</text><text x='60' y='120' font-size='10'>Excess Tissue Fluid drains into Lymph</text><path d='M100,50 L180,50' stroke='#333' stroke-width='1' marker-end='url(#arrow)'/></svg>",
             "caption": "Lymphatic Drainage"
         }
+    }  ,
+    {
+      "id": "callout-injected-0",
+      "type": "callout",
+      "data": {
+        "style": "warning",
+        "title": "Hydrostatic vs. Oncotic Pressure",
+        "text": "A classic mistake is confusing hydrostatic and oncotic pressure. State clearly that at the arterial end of a capillary, the hydrostatic pressure from the heart is greater than the oncotic pressure (osmotic pull), forcing plasma and small molecules out to form tissue fluid."
+      }
     }
   ],
   "recall": {
