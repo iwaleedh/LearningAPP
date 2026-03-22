@@ -52,6 +52,16 @@ export const note_mathematics_5_3_1 = {
             id: 'summary', type: 'summary',
             data: { text: 'v-t graph: gradient=a, area=displacement. s-t graph: gradient=v. Total distance=sum of |areas|. Particle reverses when v=0 on v-t graph.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For velocity-time graphs, remember that the gradient gives acceleration and the area under the graph gives displacement. In multi-stage journeys, splitting the area into simple shapes (triangles and rectangles) is much safer and less error-prone than trying to use suvat across the whole journey."
+            },
+            terms: []
         }
     ],
     recall: {

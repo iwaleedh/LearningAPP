@@ -58,7 +58,17 @@ export const note_mathematics_5_1_0 = {
       data: {
         text: 'Modelling assumptions simplify real-life problems. Common terms include particle, uniform, light, inextensible, smooth, and rough.'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Examiners often ask you to state how a particular modelling assumption (like 'particle' or 'inextensible string') affects your calculation. Be precise: 'particle' means mass acts at a single point and air resistance can be ignored; 'inextensible' means acceleration is the same for connected objects."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

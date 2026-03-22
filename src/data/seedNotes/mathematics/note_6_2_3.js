@@ -114,7 +114,17 @@ export const note_mathematics_6_2_3 = {
       data: {
         text: 'Master the rules for conditional probability, independent events (multiplication rule), and mutually exclusive events (addition rule).'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Whenever you are given a complex word problem involving conditional probability, draw a Venn diagram or tree diagram. Examiners look for correctly labeled diagrams and they naturally prevent calculation errors for union and intersection."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

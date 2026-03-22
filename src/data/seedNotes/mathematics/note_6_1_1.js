@@ -58,7 +58,17 @@ export const note_mathematics_6_1_1 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Central tendency measures are mean, median, and mode. Spread is measured using range and interquartile range. Grouped data requires midpoints for the mean and interpolation for the median and quartiles.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For grouped frequency tables, remember to use class midpoints to estimate the mean. A very common error is dividing by the number of classes instead of the total frequency 'n'."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

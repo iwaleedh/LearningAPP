@@ -104,7 +104,17 @@ export const note_mathematics_5_6_0 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'A moment is a measure of an ability to rotate a body, equal to the force multiplied by the perpendicular distance to the pivot. In equilibrium, the sum of clockwise and anti-clockwise moments is equal.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When taking moments to solve for equilibrium, choose your pivot point wisely. Taking moments about a point through which an unknown force acts will eliminate that force from your equation entirely, often giving a direct one-step solution for another unknown force."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

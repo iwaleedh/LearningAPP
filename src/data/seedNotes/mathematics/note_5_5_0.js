@@ -43,7 +43,7 @@ export const note_mathematics_5_5_0 = {
       data: {
         style: 'key',
         title: 'Key Principle for 2D Equilibrium',
-        text: '1. Resolve all forces horizontally: sum of rightward components = sum of leftward components ($\\\Sigma F_x = 0$).<br>2. Resolve all forces vertically: sum of upward components = sum of downward components ($\\\Sigma F_y = 0$).'
+        text: '1. Resolve all forces horizontally: sum of rightward components = sum of leftward components ($\\Sigma F_x = 0$).<br>2. Resolve all forces vertically: sum of upward components = sum of downward components ($\\Sigma F_y = 0$).'
       }
     },
     {
@@ -58,8 +58,18 @@ export const note_mathematics_5_5_0 = {
     {
       id: 'summary-1',
       type: 'summary',
-      data: { text: 'Equilibrium means $a=0$ and resultant force is zero. Set up two equations by resolving in two perpendicular directions ($\\\Sigma F_x = 0$ and $\\\Sigma F_y = 0$).' }
-    }
+      data: { text: 'Equilibrium means $a=0$ and resultant force is zero. Set up two equations by resolving in two perpendicular directions ($\\Sigma F_x = 0$ and $\\Sigma F_y = 0$).' }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If a particle is maintained in equilibrium by three non-parallel forces, resolving horizontally and vertically is reliable, but do keep an eye out for an opportunity to use Lami's theorem or construct a closed force triangle. These can offer a much faster route to the solution."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

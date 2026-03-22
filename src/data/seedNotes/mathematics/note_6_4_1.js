@@ -80,7 +80,17 @@ export const note_mathematics_6_4_1 = {
       id: 'sum-6-4-1',
       type: 'summary',
       data: { text: 'r = S\u2093\u1da7/\u221a(S\u2093\u2093 S\u1da7\u1da7); \u22121 \u2264 r \u2264 1. r close to \u00b11 = strong linear; r = 0 = no linear. Hypothesis test: H\u2080:\u03c1=0; compare |r| to critical value.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When calculating the PMCC (r), use the summary statistics given in the question and show the substitution into the formula clearly. If the calculated 'r' falls outside the bounds of -1 to 1, you have definitely made an arithmetic error."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

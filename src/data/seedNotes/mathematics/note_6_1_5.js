@@ -47,7 +47,17 @@ export const note_mathematics_6_1_5 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Coding simplifies large numbers. Means are affected by all operations: ȳ = (x̄ − a)/b. Spread measures like standard deviation are only affected by multiplication/division: σ_y = σ_x / b.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember a golden rule for coding: multiplying or dividing the data changes both the mean and standard deviation, but adding or subtracting a constant ONLY changes the mean. The spread of the data is unaffected by translation."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

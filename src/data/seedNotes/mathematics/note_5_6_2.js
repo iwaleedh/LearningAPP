@@ -122,7 +122,17 @@ export const note_mathematics_5_6_2 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'Ladders are modelled with vertical/horizontal reaction and friction forces. Hinges introduce tilted reaction forces. Use horizontal/vertical resolving and moment equations at pivots to find unknowns.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For problems involving ladders leaning against a wall and resting on the ground, remember there are different frictional forces and normal reactions at each contact point. Always label these distinctly (e.g., R_A, F_A for the ground and R_B, F_B for the wall) to avoid confusion."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

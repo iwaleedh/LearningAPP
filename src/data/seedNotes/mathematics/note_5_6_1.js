@@ -86,7 +86,17 @@ export const note_mathematics_5_6_1 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'The centre of mass is where the total weight acts. For a uniform rod, it is at the midpoint. For a non-uniform rod, moments equations are used to find its precise location.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Pay careful attention to whether a rod is described as 'uniform' or 'non-uniform'. If uniform, its weight acts precisely at the midpoint. If it is non-uniform, you will usually be tasked with setting up a moment equation to find the exact position of its centre of mass."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

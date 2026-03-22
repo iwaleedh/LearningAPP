@@ -94,7 +94,17 @@ export const note_mathematics_6_6_2 = {
       data: {
         text: 'To test for correlation, state H₀: ρ = 0 and H₁ based on the prompt, find the critical value from the table, and compare it with the test statistic r.'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In correlation hypothesis tests, clearly state your null hypothesis as rho = 0, using the Greek letter rho. Do not use 'r', as 'r' represents the sample statistic. Always conclude a hypothesis test in the specific context of the original question."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

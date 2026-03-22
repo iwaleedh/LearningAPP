@@ -67,7 +67,17 @@ export const note_mathematics_5_3_2 = {
         title: 'Common Mistake',
         text: 'A common mistake is thinking the speed of an object when it hits the ground is zero. It is the impact that causes speed to become zero. Use suvat to find the velocity at the instant just before it hits the ground!'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always read the question carefully to see what value of g to use. Edexcel mechanics papers routinely require g = 9.8 m s^-2. Using 9.81 or 10 will lead to accuracy marks being deducted in your final answer."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

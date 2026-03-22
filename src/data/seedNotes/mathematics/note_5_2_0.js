@@ -81,7 +81,17 @@ export const note_mathematics_5_2_0 = {
       id: 'summary',
       type: 'summary',
       data: { text: 'Scalars only have magnitude. Vectors have both magnitude and direction. Pythagoras can be used for finding magnitudes, and vectors can be represented using column or i, j notation.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding the direction of a vector, always sketch the vector on a small Cartesian grid. This prevents common errors in determining the angle relative to the required axis, such as finding the angle with the x-axis when a bearing from North is required."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

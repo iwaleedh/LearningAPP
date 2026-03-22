@@ -88,7 +88,17 @@ export const note_mathematics_6_6_0 = {
       id: 'sum-6-6-0',
       type: 'summary',
       data: { text: 'X ~ N(\u03bc, \u03c3\u00b2): bell-shaped, symmetric, mean=median=mode=\u03bc. 68-95-99.7 rule. Standardise: Z=(X\u2212\u03bc)/\u03c3; Z~N(0,1). Second parameter is variance, not SD.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A normal distribution curve is completely defined by its mean and variance, but the standardisation formula requires the standard deviation. A frequent student error is dividing by the variance instead of taking the square root to find sigma."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

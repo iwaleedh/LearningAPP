@@ -92,7 +92,17 @@ export const note_mathematics_6_1_0 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Data can be qualitative or quantitative (discrete/continuous). Data can be taken from a census (entire population) or a sample (subset). Key sampling types include simple random, systematic, stratified, quota, and opportunity sampling.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When defining a sampling frame, always ensure it is stated in the context of the question. Marks are often lost for giving a generic textbook definition instead of applying it to the specific scenario provided."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

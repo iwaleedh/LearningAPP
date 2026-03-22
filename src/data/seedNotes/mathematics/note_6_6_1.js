@@ -82,7 +82,17 @@ export const note_mathematics_6_6_1 = {
       id: 'sum-6-6-1',
       type: 'summary',
       data: { text: 'P(Z<a)=\u03a6(a); P(Z>a)=1\u2212\u03a6(a); P(Z<\u2212a)=1\u2212\u03a6(a). Inverse normal: from p find z=\u03a6\u207b\u00b9(p) then solve (a\u2212\u03bc)/\u03c3=z. Two unknowns: set up two equations.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When finding an unknown mean or standard deviation, always draw a quick sketch of the bell curve. If the required probability area is less than 0.5, your required Z-value must be negative. Missing the negative sign on a Z-value is the leading cause of lost marks in inverse normal calculations."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

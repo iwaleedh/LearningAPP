@@ -77,7 +77,17 @@ export const note_mathematics_5_2_1 = {
       id: 'summary',
       type: 'summary',
       data: { text: 'For projectiles, horizontal acceleration is zero (constant horizontal velocity) and vertical acceleration is &plusmn;g. The initial velocity components are found using U cos&theta; and U sin&theta;.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A very common mistake is mixing up horizontal and vertical components. Remember that horizontal velocity remains constant (acceleration is 0), while vertical velocity changes due to gravity (acceleration is -g). Write out your horizontal and vertical suvat variables separately."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

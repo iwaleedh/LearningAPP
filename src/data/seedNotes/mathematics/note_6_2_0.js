@@ -83,7 +83,17 @@ export const note_mathematics_6_2_0 = {
       id: 'sum-6-2-0',
       type: 'summary',
       data: { text: 'Frequency density = frequency \u00f7 class width. Area of histogram bar = frequency. Stem-and-leaf diagrams show individual values in order and allow easy calculation of median and quartiles.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Never forget to include a clear 'Key' when drawing a stem-and-leaf diagram. It is almost always worth a specific, standalone mark that is easily lost if omitted."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

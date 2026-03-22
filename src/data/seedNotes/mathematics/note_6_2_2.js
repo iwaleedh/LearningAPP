@@ -106,7 +106,17 @@ export const note_mathematics_6_2_2 = {
       id: 'sum-6-2-2',
       type: 'summary',
       data: { text: '\u03c3\u00b2 = \u03a3fx\u00b2/\u03a3f \u2212 x\u0305\u00b2. Coding: \u03c3_x = b\u03c3_y. IQR = Q\u2083 \u2212 Q\u2081; outlier if outside Q\u2081\u22121.5\u00d7IQR or Q\u2083+1.5\u00d7IQR. Use IQR+median for skewed data; \u03c3+mean for symmetric data.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Pay close attention to class intervals. If data is grouped as '10-19', '20-29', the boundaries for calculations are 9.5, 19.5, and 29.5. Missing the gap between classes will result in incorrect estimates for median and IQR."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

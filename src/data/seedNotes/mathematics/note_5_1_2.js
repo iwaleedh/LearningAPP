@@ -78,7 +78,17 @@ export const note_mathematics_5_1_2 = {
       data: {
         text: 'Forces (weight, tension, thrust, friction, reaction) are vectors measured in Newtons. Remember the difference between mass (scalar, kg, constant) and weight (vector, N, depends on gravity W=mg).'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always draw a clear, large diagram showing all forces acting on a body before attempting a mechanics problem. Many students lose marks by forgetting the normal reaction or weight, or drawing a force acting in the wrong direction."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

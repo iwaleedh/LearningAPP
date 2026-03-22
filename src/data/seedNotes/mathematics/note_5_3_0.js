@@ -48,6 +48,16 @@ export const note_mathematics_5_3_0 = {
             id: 'summary', type: 'summary',
             data: { text: 'Suvat: v=u+at, s=\u00bd(u+v)t, s=ut+\u00bdat\u00b2, v\u00b2=u\u00b2+2as. Choose positive direction; g=9.8 m s\u207b\u00b2 acts downward.' },
             terms: []
+        },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Write down S, U, V, A, T clearly with signs before using an equation. Taking 'upwards' as positive and 'downwards' as negative (or vice versa) consistently is crucial. A simple sign error in 'a' or 'u' will derail the whole calculation."
+            },
+            terms: []
         }
     ],
     recall: {

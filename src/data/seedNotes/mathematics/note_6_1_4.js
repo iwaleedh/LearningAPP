@@ -51,7 +51,17 @@ export const note_mathematics_6_1_4 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Standard deviation is the square root of variance. It measures the average spread of values from the mean. Formula to remember: Variance = (Mean of squares) − (Square of mean).' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When calculating variance, examiners frequently see students forgetting to divide the sum of x-squared by 'n' before subtracting the square of the mean. Write the formula out first to avoid this."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

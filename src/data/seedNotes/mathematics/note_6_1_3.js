@@ -60,7 +60,17 @@ export const note_mathematics_6_1_3 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Outliers are anomalies outside standard limits like Q₃ + 1.5×IQR. Cleaning data removes these errors. Skewness shows the shape: symmetrical (mean≈median), positive skew (mean>median), or negative skew (mean<median).' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always show your full working when calculating outlier boundaries (e.g., Q1 - 1.5 * IQR or Q3 + 1.5 * IQR). Even if you misidentify an outlier, you can still gain method marks for correctly establishing the boundary values."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

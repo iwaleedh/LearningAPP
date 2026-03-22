@@ -67,7 +67,17 @@ export const note_mathematics_5_5_1 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Friction opposes motion. Maximum friction is given by $F_{max} = \\mu R$. For an object on the point of slipping or already sliding, $F = \\mu R$. For stationary objects not on the point of slipping, $F < \\mu R$.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Remember that F = \u03bcR strictly applies only when the object is moving or exactly in limiting equilibrium (about to slip). If the object is resting comfortably, static friction simply matches the opposing force up to that maximum threshold. Read the question carefully to identify if 'limiting' is implied."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

@@ -97,7 +97,17 @@ export const note_mathematics_5_3_3 = {
         title: 'Distance vs Displacement',
         text: 'Definite integration of velocity gives displacement! To find total distance travelled, you must find roots of the velocity equation (when v = 0) and integrate regions above and below the x-axis separately.'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Check whether acceleration is constant. If it depends on time 't', you MUST use calculus (integration or differentiation) rather than suvat equations. Using suvat for variable acceleration is a fundamental error and scores zero marks."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

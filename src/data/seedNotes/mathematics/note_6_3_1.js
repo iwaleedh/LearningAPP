@@ -83,7 +83,17 @@ export const note_mathematics_6_3_1 = {
       id: 'sum-6-3-1',
       type: 'summary',
       data: { text: 'P(A|B) = P(A\u2229B)/P(B). Independent: P(A\u2229B)=P(A)\u00d7P(B). Multiplication rule: P(A\u2229B)=P(A)\u00d7P(B|A). With replacement \u2192 independent; without replacement \u2192 dependent.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In exams, proving independence requires showing exactly that P(A and B) = P(A) x P(B) or P(A|B) = P(A). Merely stating they 'do not affect each other' will score zero marks. Always show the numerical calculation."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

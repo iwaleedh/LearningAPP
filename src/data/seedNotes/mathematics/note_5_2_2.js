@@ -75,7 +75,17 @@ export const note_mathematics_5_2_2 = {
       id: 'summary',
       type: 'summary',
       data: { text: 'Four suvat equations can be expressed in vector form to solve 2D constant acceleration problems. Convert time into seconds, use i and j components, and solve either as vector equations or by splitting into two separate component equations.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using vector suvat equations, remember that 's' represents displacement from the starting point, not distance travelled. If asked for the position vector from the origin, do not forget to add the initial position vector to your calculated displacement."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

@@ -106,7 +106,17 @@ export const note_mathematics_5_4_1 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Always resolve the weight of an object on a ramp into $mg \\sin \\alpha$ (down the slope) and $mg \\cos \\alpha$ (perpendicular to the slope). Then use $F = ma$ in the direction of travel.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When resolving forces on an inclined plane, remember the normal reaction R is not necessarily equal to just mg*cos(alpha). It must balance the perpendicular component of the weight plus or minus any other applied forces acting perpendicular to the plane. Do not make unsafe assumptions without checking your diagram."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

@@ -78,7 +78,17 @@ export const note_mathematics_6_5_1 = {
       id: 'sum-6-5-1',
       type: 'summary',
       data: { text: 'E(X) = \u03a3x\u00b7P(X=x). Var(X) = E(X\u00b2)\u2212[E(X)]\u00b2. E(aX+b)=aE(X)+b. Var(aX+b)=a\u00b2Var(X). Adding b does not change variance.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The most common pitfall when applying variance rules is forgetting to square the scaling coefficient. Remember that Var(aX + b) = a^2 Var(X). The addition of 'b' shifts the data but does not affect the spread at all."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

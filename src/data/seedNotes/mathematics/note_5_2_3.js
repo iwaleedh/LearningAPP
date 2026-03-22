@@ -75,7 +75,17 @@ export const note_mathematics_5_2_3 = {
       id: 'summary',
       type: 'summary',
       data: { text: 'Forces can be represented as vectors. The magnitude is found with Pythagoras, and direction with trigonometry. F = ma applies to the individual i and j components separately.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When using F = ma in 2D, make sure 'F' is the resultant force vector. Add all the force vectors together (i and j components separately) before setting them equal to the mass multiplied by the acceleration vector. Never take the magnitude of individual forces and sum them as scalars."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

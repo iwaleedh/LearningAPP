@@ -73,7 +73,17 @@ export const note_mathematics_6_4_2 = {
       id: 'sum-6-4-2',
       type: 'summary',
       data: { text: '\u0177 = a + bx where b = S\u2093\u1da7/S\u2093\u2093 and a = \u0233 \u2212 b\u0305x. Gradient b: change in y per unit x. Always passes through (\u0305x, \u0233). Interpolation \u2192 reliable; extrapolation \u2192 unreliable.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "The coefficient 'b' in the regression line y = a + bx represents the rate of change. Examiners frequently ask you to interpret 'b': ensure you state 'the expected increase in y for every 1 unit increase in x'. Only use the regression line of y on x to predict y given x, never the other way around."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

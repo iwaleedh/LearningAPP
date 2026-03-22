@@ -64,7 +64,17 @@ export const note_mathematics_5_3_5 = {
           { text: 'Double angle identities from Pure Maths (e.g. sin(2θ) = 2 sinθ cosθ) are often needed for the horizontal range.' }
         ]
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When asked to derive standard projectile formulae like time of flight or maximum horizontal range, you must show all intermediate algebraic steps clearly using the horizontal and vertical suvat components. Stating the final result without full working will score zero marks."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

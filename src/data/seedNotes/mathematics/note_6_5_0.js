@@ -69,7 +69,17 @@ export const note_mathematics_6_5_0 = {
       id: 'sum-6-5-0',
       type: 'summary',
       data: { text: 'DRV: P(X=x)\u22650, \u03a3P=1. CDF: F(x)=P(X\u2264x). P(X>a)=1\u2212F(a). P(a\u2264X\u2264b)=F(b)\u2212F(a\u22121) for discrete. Be careful with strict vs non-strict inequalities.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "A classic one-mark check in distribution tables is that the sum of all probabilities must equal exactly 1. If an exam question involves finding an unknown constant 'k' in a probability distribution, set up the equation sum(P(X=x)) = 1 and solve it explicitly to secure method marks."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

@@ -80,7 +80,17 @@ export const note_mathematics_5_1_1 = {
       data: {
         text: 'Fundamental units are m, s, and kg. Derived units are combinations of these, such as m s⁻¹ for velocity, m s⁻² for acceleration, and N for force.'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always check your units before substituting into equations. A classic pitfall is being given mass in grams or distance in kilometres. S.I. units (kg, m, s) must be used consistently unless explicitly asked otherwise."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

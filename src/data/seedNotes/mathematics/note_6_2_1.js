@@ -97,7 +97,17 @@ export const note_mathematics_6_2_1 = {
       id: 'sum-6-2-1',
       type: 'summary',
       data: { text: 'Mean = \u03a3fx/\u03a3f (use midpoints for grouped data). Median by interpolation: L + [(n/2 \u2212 F)/f]\u00d7h. Use median when data is skewed or has outliers. Positive skew: mean > median > mode.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "If asked why the median is more suitable than the mean as a measure of location, clearly state that 'the median is unaffected by extreme values (outliers)'. Avoid vague answers like 'it is more accurate'."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

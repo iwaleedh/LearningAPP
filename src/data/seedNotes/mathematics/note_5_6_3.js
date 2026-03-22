@@ -57,7 +57,17 @@ export const note_mathematics_5_6_3 = {
       id: 'sum-1',
       type: 'summary',
       data: { text: 'When an object is on the point of tilting about a pivot, the normal reaction at any other support is zero. You can solve finding the maximum added mass or distance by taking moments about the tilting pivot while keeping the system in equilibrium.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When a rod is perfectly balanced on the point of tilting about a specific support, the normal reaction force at any other supports involved instantly becomes zero. Recognizing and applying this modelling assumption is a vital step that usually earns an immediate method mark."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

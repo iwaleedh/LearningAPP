@@ -61,7 +61,17 @@ export const note_mathematics_5_3_6 = {
         title: 'Examiner Advice',
         text: 'A common way to make these questions difficult is by using different letters, like capital U instead of V, or θ instead of α. Ensure you show enough working-out if it’s a "show that" question. Also, you may need to use sec²α = 1 + tan²α.'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "To derive the Cartesian equation of a projectile's trajectory, the standard algebraic procedure is to eliminate time 't' by making it the subject of the horizontal displacement equation, and then substituting into the vertical displacement expression. Expect to use the identity sec^2(theta) = 1 + tan^2(theta)."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

@@ -105,7 +105,17 @@ export const note_mathematics_5_4_0 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: "Draw a diagram, label all forces, explicitly state the direction of motion, and use F = ma to form the equation of motion." }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always draw a large, clear force diagram before attempting to set up your equations of motion. Omitting a force\u2014very commonly a resolved component of weight or the normal reaction\u2014will lead to entirely incorrect equations down the line."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

@@ -51,7 +51,17 @@ export const note_mathematics_6_1_2 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'Box plots represent the 5-number summary. Cumulative frequency graphs allow estimation of median and quartiles. In a histogram, Area = Frequency (or k × Frequency), and Frequency Density = Frequency / Class Width.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "In a histogram, remember that frequency is proportional to area, not height! Always use 'Frequency Density = Frequency / Class Width' to determine the height of the bars on the y-axis."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

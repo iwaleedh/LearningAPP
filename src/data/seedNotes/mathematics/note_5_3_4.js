@@ -71,7 +71,17 @@ export const note_mathematics_5_3_4 = {
         title: 'Magnitude',
         text: 'The magnitude of velocity is speed. The magnitude of displacement is the distance from the starting point.'
       }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always remember to include the vector constant of integration when integrating velocity to find displacement, or acceleration to find velocity. Use the given initial conditions (e.g., 'when t = 0, the position vector is 2i - j') to explicitly find its precise value."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

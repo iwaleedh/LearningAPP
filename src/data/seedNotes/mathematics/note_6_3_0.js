@@ -92,7 +92,17 @@ export const note_mathematics_6_3_0 = {
       id: 'sum-6-3-0',
       type: 'summary',
       data: { text: 'P(A \u222a B) = P(A)+P(B)\u2212P(A\u2229B). Mutually exclusive: P(A\u2229B)=0. P(A\u2019)=1\u2212P(A). Venn diagram: fill intersection first, then individual regions, then outside.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "Always check the borders of the circles in a Venn diagram. If you are given P(A) total, make sure you subtract the intersection before placing the value in the 'A only' region. Remember that mutually exclusive events have an intersection of exactly zero."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

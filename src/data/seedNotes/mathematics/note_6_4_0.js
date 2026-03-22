@@ -79,7 +79,17 @@ export const note_mathematics_6_4_0 = {
       id: 'sum-6-4-0',
       type: 'summary',
       data: { text: 'Scatter diagrams show relationship between paired data. Correlation can be positive, negative, or zero; strong or weak. Correlation \u2260 causation. Interpolation (within data range) is more reliable than extrapolation (outside range).' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "When interpreting a scatter diagram, always describe the correlation in context. Instead of just writing 'positive correlation', write 'positive correlation, so as temperature increases, the reaction rate increases'. Remember that extrapolation is unreliable because the trend may not continue outside the observed data range."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,

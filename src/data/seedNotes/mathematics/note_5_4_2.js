@@ -128,7 +128,17 @@ export const note_mathematics_5_4_2 = {
       id: 'summary-1',
       type: 'summary',
       data: { text: 'For connected bodies, draw separate diagrams or clearly label all internal and external forces. Form separate $F=ma$ equations for each body and solve simultaneously.' }
-    }
+    },
+        {
+            id: 'callout-tip-1',
+            type: 'callout',
+            data: {
+                style: 'warning',
+                title: "Examiner Tip",
+                text: "For questions involving connected particles (like a car towing a trailer), writing a separate F=ma equation for each object is often much safer than treating the entire system as a single particle. It explicitly isolates the tension force and minimizes sign errors."
+            },
+            terms: []
+        }
   ],
   recall: {
     enabled: true,
