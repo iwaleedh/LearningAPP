@@ -56,8 +56,8 @@ export const note_biology_4_6_7 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-8cc390d6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-2dffea26', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-8cc390d6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'The Role of Histamine', 'text': 'Examiners look for the specific actions of histamine: it causes **vasodilation** (widening of blood vessels, causing heat and redness) and increases **capillary permeability** (allowing fluid and white blood cells to leak into tissues, causing swelling).' } },
+{ 'id': 'callout-examiner-2dffea26', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Phagocytosis Detail', 'text': 'When describing phagocytosis, do not just say \'the pathogen is killed\'. You must explicitly state that a phagosome forms, it fuses with a **lysosome**, and hydrolytic enzymes (lysozymes) are released to digest the pathogen.' } }
   ],
   recall: {
     enabled: true,

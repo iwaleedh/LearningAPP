@@ -47,7 +47,7 @@ export const note_biology_4_5_4 = {
       type: "callout",
       data: { style: "key", title: "Rf Value", text: "Rf = distance moved by pigment / distance moved by solvent front" }
     },
-{ 'id': 'callout-examiner-3fecc52e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-3fecc52e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Avoid confusing absorption spectra and action spectra. An absorption spectrum shows the amount of light absorbed by pigments at different wavelengths, whereas an action spectrum shows the overall rate of photosynthesis achieved at those wavelengths.' } }
   ],
   recall: {
     enabled: true,

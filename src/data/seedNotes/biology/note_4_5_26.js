@@ -48,7 +48,7 @@ export const note_biology_4_5_26 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-1cbf8276', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-1cbf8276', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Conservation vs Preservation', 'text': 'Be precise. Conservation often involves the active management of ecosystems (like coppicing or controlled grazing) to maintain biodiversity, whereas preservation implies simply protecting areas by minimizing human intervention entirely.' } }
   ],
   recall: {
     enabled: true,

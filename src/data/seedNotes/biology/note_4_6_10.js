@@ -37,8 +37,8 @@ export const note_biology_4_6_10 = {
       type: "paragraph",
       data: { text: "Vaccines contain antigens from a pathogen (e.g., dead, weakened, or fragments). They trick the immune system into triggering a primary specific response (creating memory cells) without causing the disease itself." }
     },
-{ 'id': 'callout-examiner-75b9bf1d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-86e95c96', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-75b9bf1d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Passive vs Active', 'text': 'Passive immunity provides immediate but temporary protection (no memory cells), whereas active immunity takes time to develop but is long-lasting.' } },
+{ 'id': 'callout-examiner-86e95c96', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Vaccines', 'text': 'A common mistake is saying vaccines \'contain antibodies\'. They contain antigens (or attenuated pathogens) which trigger the body to actively produce its own antibodies and memory cells.' } }
   ],
   recall: {
     enabled: true,

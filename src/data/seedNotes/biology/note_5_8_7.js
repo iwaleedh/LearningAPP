@@ -23,7 +23,7 @@ export const note_biology_5_8_7 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-2a4fc551', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-2a4fc551', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Key Distinction', 'text': 'Don\'t confuse CT with fMRI. CT gives structural images using X-rays, whereas fMRI provides functional data in real-time by tracking changes in blood oxygenation.' } }
   ],
   recall: {
     enabled: true,

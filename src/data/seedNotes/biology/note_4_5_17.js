@@ -28,7 +28,7 @@ export const note_biology_4_5_17 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-0acf4c1c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-0acf4c1c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When evaluating evidence for climate change, distinguish between \'correlation\' and \'causation\'. Just because CO₂ levels and temperature rise together does not automatically prove one causes the other, though scientific consensus strongly supports a causal link via the greenhouse effect.' } }
   ],
   recall: {
     enabled: true,

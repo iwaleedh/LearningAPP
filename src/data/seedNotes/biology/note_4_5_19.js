@@ -37,7 +37,7 @@ export const note_biology_4_5_19 = {
       type: "callout",
       data: { style: "key", title: "Predator-Prey Cycles", text: "Prey population rises → More food for predators → Predator population rises → Predators eat more prey → Prey population falls → Less food for predators → Predator population falls → Cycle repeats." }
     },
-{ 'id': 'callout-examiner-19c5e917', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-19c5e917', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Limiting Factors', 'text': 'Do not mix up density-dependent factors (e.g., competition for food, disease) with density-independent factors (e.g., natural disasters, sudden temperature changes) when explaining what maintains populations at their carrying capacity.' } }
   ],
   recall: {
     enabled: true,

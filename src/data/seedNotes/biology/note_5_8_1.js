@@ -41,7 +41,7 @@ export const note_biology_5_8_1 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-808044ae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-808044ae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing the resting potential, clearly state the ratio of ions actively transported: 3 Na⁺ out for every 2 K⁺ moved in, establishing the electrochemical gradient.' } }
   ],
   recall: {
     enabled: true,

@@ -34,7 +34,7 @@ export const note_biology_4_6_14 = {
       type: "callout",
       data: { style: "worked", title: "Factors Affecting Decay", text: "The rate of decomposition relies on temperature (enzyme kinetics), water availability (for hydrolysis and survival), and oxygen levels (for aerobic respiration by the microbes)." }
     },
-{ 'id': 'callout-examiner-de9a1dda', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-de9a1dda', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Respiration', 'text': 'Don\'t forget that decomposers (bacteria and fungi) respire aerobically, which is the process that releases carbon in organic compounds back into the atmosphere as CO₂.' } }
   ],
   recall: {
     enabled: true,

@@ -40,7 +40,7 @@ export const note_biology_5_8_13 = {
       type: "paragraph",
       data: { text: "Bioinformatics is the application of powerful computer algorithms and vast databases to store, map, and analyze massive amounts of biological data—such as entire human genomes, predicting 3D protein folding structures, or mapping evolutionary phylogenetics." }
     },
-{ 'id': 'callout-examiner-280ce568', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-280ce568', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'A common misconception is that microarrays measure genomic DNA directly. In expression profiling, they actually measure the abundance of fluorescently labelled **mRNA** (or cDNA derived from it) to deduce which genes are actively being expressed.' } }
   ],
   recall: {
     enabled: true,

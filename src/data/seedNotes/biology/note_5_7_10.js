@@ -32,8 +32,8 @@ export const note_biology_5_7_10 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-25e9971e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-46b0efaa', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-25e9971e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'To easily remember the characteristics, associate **Slow** twitch fibres with **S**ustained endurance activities (like marathon running). They are packed with mitochondria, myoglobin, and a rich capillary network for aerobic respiration.' } },
+{ 'id': 'callout-examiner-46b0efaa', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'To easily remember the characteristics, associate **Slow** twitch fibres with **S**ustained endurance activities (like marathon running). They are packed with mitochondria, myoglobin, and a rich capillary network for aerobic respiration.' } }
   ],
   recall: {
     enabled: true,

@@ -45,7 +45,7 @@ export const note_biology_4_6_4 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-c52c0260', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-c52c0260', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Bacterial Cell Walls', 'text': 'Do not state that bacterial cell walls are made of cellulose; that is for plants. Bacterial cell walls are made of **peptidoglycan** (murein). Also, remember that unlike eukaryotes, their DNA is not enclosed in a nucleus.' } }
   ],
   recall: {
     enabled: true,

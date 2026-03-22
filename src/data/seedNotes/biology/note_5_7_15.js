@@ -39,8 +39,8 @@ export const note_biology_5_7_15 = {
       type: "paragraph",
       data: { text: "The nephron is the functional filtering unit of the kidney (~1 million per kidney). Blood enters via the afferent arteriole, which forms a knot of capillaries (glomerulus) inside the Bowman's capsule. Filtered blood leaves via the efferent arteriole, wrapping around the subsequent tubules." }
     },
-{ 'id': 'callout-examiner-9d7e8d86', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-b3ad60a9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-9d7e8d86', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often confuse the glomerulus with the Bowman\'s capsule. Remember that the glomerulus is the knot of capillaries, while the Bowman\'s capsule is the funnel-like structure surrounding it that collects the filtrate.' } },
+{ 'id': 'callout-examiner-b3ad60a9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often confuse the glomerulus with the Bowman\'s capsule. Remember that the glomerulus is the knot of capillaries, while the Bowman\'s capsule is the funnel-like structure surrounding it that collects the filtrate.' } }
   ],
   recall: {
     enabled: true,

@@ -42,7 +42,7 @@ export const note_biology_5_8_11 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-56b9d50a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-56b9d50a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Examiners frequently ask for comparisons between somatic and germ-line therapy. Clearly state that somatic therapy changes only the treated individual\'s localized cells and is not passed on, whereas germ-line therapy changes gametes, making the genetic alterations inheritable.' } }
   ],
   recall: {
     enabled: true,

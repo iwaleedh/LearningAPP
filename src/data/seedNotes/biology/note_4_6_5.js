@@ -51,8 +51,8 @@ export const note_biology_4_6_5 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-26168ba1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-843876bb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-26168ba1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'TB Resistance vs Immunity', 'text': 'When describing TB, many students incorrectly mention \'immunity\' to antibiotics. Bacteria develop **resistance** to antibiotics, not immunity. Immunity is a characteristic of the host\'s immune system, not the pathogen.' } },
+{ 'id': 'callout-examiner-843876bb', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Tubercle Formation', 'text': 'Make sure you can describe the sequence of events. *Mycobacterium tuberculosis* is engulfed by macrophages but can survive and replicate inside them. This leads to the formation of tubercles (tissue masses containing dead tissue and macrophages).' } }
   ],
   recall: {
     enabled: true,

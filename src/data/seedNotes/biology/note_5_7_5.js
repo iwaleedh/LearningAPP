@@ -50,8 +50,8 @@ export const note_biology_5_7_5 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-e71bddf2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-c2528128', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-e71bddf2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Mammalian vs Yeast Anaerobic Respiration', 'text': 'Be careful to distinguish between the two pathways: mammals produce lactate via a reversible reaction (without releasing carbon dioxide), while yeast/plants produce ethanol and carbon dioxide in an irreversible reaction.' } },
+{ 'id': 'callout-examiner-c2528128', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Mammalian vs Yeast Anaerobic Respiration', 'text': 'Be careful to distinguish between the two pathways: mammals produce lactate via a reversible reaction (without releasing carbon dioxide), while yeast/plants produce ethanol and carbon dioxide in an irreversible reaction.' } }
   ],
   recall: {
     enabled: true,

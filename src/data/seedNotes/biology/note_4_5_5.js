@@ -37,7 +37,7 @@ export const note_biology_4_5_5 = {
       type: "paragraph",
       data: { text: "Why isn't GPP 100% of incoming light? Not all wavelengths are absorbed (some are green/reflected), light misses chloroplasts, or passes through the leaf. Limiting factors (CO₂) may restrict the maximum rate." }
     },
-{ 'id': 'callout-examiner-b4a2471a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-b4a2471a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Make sure you clearly state that NPP is less than GPP because energy is lost via plant respiration. Be ready to manipulate the equation NPP = GPP - R in calculation questions.' } }
   ],
   recall: {
     enabled: true,

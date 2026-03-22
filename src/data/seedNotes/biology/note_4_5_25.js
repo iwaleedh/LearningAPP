@@ -44,7 +44,7 @@ export const note_biology_4_5_25 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-bd8b4eb9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-bd8b4eb9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Evaluating Scientific Claims', 'text': 'When assessing contentious secondary data, look for peer review validation, appropriate sample sizes, robust methodology, and whether there are potential biases tied to funding sources.' } }
   ],
   recall: {
     enabled: true,

@@ -30,8 +30,8 @@ export const note_biology_5_7_18 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-922f4615', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-d93f78fc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-922f4615', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse the mechanism of peptide hormones with steroid hormones. Peptide hormones (like EPO) cannot enter the cell and must bind to cell-surface receptors to activate second messengers, while steroid hormones cross the lipid bilayer to reach intracellular receptors.' } },
+{ 'id': 'callout-examiner-d93f78fc', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse the mechanism of peptide hormones with steroid hormones. Peptide hormones (like EPO) cannot enter the cell and must bind to cell-surface receptors to activate second messengers, while steroid hormones cross the lipid bilayer to reach intracellular receptors.' } }
   ],
   recall: {
     enabled: true,

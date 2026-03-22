@@ -47,10 +47,10 @@ export const note_biology_5_7_17 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-c2676c09', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-6b63925f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-254da7d9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-9936239c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-c2676c09', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When discussing ADH action, explicitly state that it causes vesicles containing aquaporins to fuse with the cell surface membrane of the collecting duct cells, increasing their permeability to water.' } },
+{ 'id': 'callout-examiner-6b63925f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'A frequent error is stating that water moves \'out of the loop of Henle\' without specifying the descending limb. Always specify that the descending limb is permeable to water, whereas the ascending limb is impermeable to water but actively pumps out sodium and chloride ions.' } },
+{ 'id': 'callout-examiner-254da7d9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When discussing ADH action, explicitly state that it causes vesicles containing aquaporins to fuse with the cell surface membrane of the collecting duct cells, increasing their permeability to water.' } },
+{ 'id': 'callout-examiner-9936239c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'A frequent error is stating that water moves \'out of the loop of Henle\' without specifying the descending limb. Always specify that the descending limb is permeable to water, whereas the ascending limb is impermeable to water but actively pumps out sodium and chloride ions.' } }
   ],
   recall: {
     enabled: true,

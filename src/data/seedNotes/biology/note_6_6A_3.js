@@ -39,7 +39,7 @@ export const note_biology_6_6A_3 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-9f970cd7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-9f970cd7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Do not confuse reliability with validity. Reliability relates to the consistency of results (which can be improved by adding repeats and calculating means), whereas validity determines whether your experimental design actually measures what is intended (which heavily relies on controlling the relevant variables).' } }
   ],
   recall: {
     enabled: true,

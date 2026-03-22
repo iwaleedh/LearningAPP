@@ -29,7 +29,7 @@ export const note_biology_5_8_4 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-1fddfb46', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-1fddfb46', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When assessing drugs, precisely identify if they are agonists (mimic neurotransmitters) or antagonists (block receptors). Stating they \'stop the neurotransmitter\' is too vague.' } }
   ],
   recall: {
     enabled: true,

@@ -33,8 +33,8 @@ export const note_biology_5_7_7 = {
       type: "callout",
       data: { style: "warning", title: "Key Controls & Safety", text: "Soda lime is corrosive, so a wire mesh must separate it from the animal. Temperature must be kept perfectly constant using a water bath, otherwise expanding gases will cause inaccurate manometer readings." }
     },
-{ 'id': 'callout-examiner-d47b8ac5', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-5f10223e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-d47b8ac5', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Control Variables in Respirometry', 'text': 'Examiners often ask how to set up a control respirometer. A proper control must contain an equal volume/mass of an inert substance (like glass beads) instead of the organism, to account for volume changes driven solely by temperature or atmospheric pressure fluctuations.' } },
+{ 'id': 'callout-examiner-5f10223e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Control Variables in Respirometry', 'text': 'Examiners often ask how to set up a control respirometer. A proper control must contain an equal volume/mass of an inert substance (like glass beads) instead of the organism, to account for volume changes driven solely by temperature or atmospheric pressure fluctuations.' } }
   ],
   recall: {
     enabled: true,

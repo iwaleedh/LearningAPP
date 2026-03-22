@@ -43,8 +43,8 @@ export const note_biology_5_7_0 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-ea3ddee6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-2dbcfe9d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-ea3ddee6', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often state that respiration \'produces energy\'. Remember that energy cannot be created or destroyed; instead, respiration releases energy stored in respiratory substrates and uses it to synthesise ATP.' } },
+{ 'id': 'callout-examiner-2dbcfe9d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often state that respiration \'produces energy\'. Remember that energy cannot be created or destroyed; instead, respiration releases energy stored in respiratory substrates and uses it to synthesise ATP.' } }
   ],
   recall: {
     enabled: true,

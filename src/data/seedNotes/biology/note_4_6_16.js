@@ -48,8 +48,8 @@ export const note_biology_4_6_16 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-dbb8b60d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-51b2241c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-dbb8b60d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Taq Polymerase', 'text': 'Always refer to the enzyme used in PCR specifically as \'Taq polymerase\', noting that its optimum temperature is high and it does not denature at 95°C.' } },
+{ 'id': 'callout-examiner-51b2241c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Gel Electrophoresis Movement', 'text': 'DNA fragments move towards the positive electrode (anode) because DNA is negatively charged. The smaller fragments move further and faster.' } }
   ],
   recall: {
     enabled: true,

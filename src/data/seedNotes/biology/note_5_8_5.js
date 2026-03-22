@@ -57,7 +57,7 @@ export const note_biology_5_8_5 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-1b4b005e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-1b4b005e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Light causes sodium ion channels to close in a rod cell, leading to hyperpolarisation—which counterintuitively *stops* the release of the inhibitory neurotransmitter glutamate.' } }
   ],
   recall: {
     enabled: true,

@@ -48,8 +48,8 @@ export const note_biology_5_7_11 = {
       type: "paragraph",
       data: { text: "When exercise stops, pH rises back to normal. The CVCC sends impulses down the parasympathetic nervous system (vagus nerve), which releases acetylcholine at the SAN, slowing the heart rate down." }
     },
-{ 'id': 'callout-examiner-8cfcc39b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-f6895d5d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-8cfcc39b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When calculating Cardiac Output (CO = HR × SV), always pay close attention to the **units**. You may need to convert volumes into $dm^3$ or time into minutes to match the required final units in the exam question.' } },
+{ 'id': 'callout-examiner-f6895d5d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When calculating Cardiac Output (CO = HR × SV), always pay close attention to the **units**. You may need to convert volumes into $dm^3$ or time into minutes to match the required final units in the exam question.' } }
   ],
   recall: {
     enabled: true,

@@ -23,7 +23,7 @@ export const note_biology_5_8_6 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-5ff6ff26', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-5ff6ff26', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'You must be able to visually identify the cerebrum, cerebellum, hypothalamus, and medulla oblongata on a diagram, and concisely link each to its primary function (e.g. cerebellum = coordination).' } }
   ],
   recall: {
     enabled: true,

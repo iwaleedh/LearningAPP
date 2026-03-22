@@ -33,7 +33,7 @@ export const note_biology_6_6A_0 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-0abe4e72', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-0abe4e72', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Candidates often forget to clearly specify how control variables will be managed. Stating \'control temperature\' is insufficient; you must state the method, for instance, \'using a thermostatically controlled water bath\'.' } }
   ],
   recall: {
     enabled: true,

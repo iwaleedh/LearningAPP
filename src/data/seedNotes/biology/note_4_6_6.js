@@ -47,7 +47,7 @@ export const note_biology_4_6_6 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-25b5106c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-25b5106c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Non-Specific vs Specific Pathways', 'text': 'Remember that barriers to entry (like the skin, stomach acid, and lysozyme enzymes in tears) constitute the **non-specific**, primary lines of defence. They prevent infection from a vast array of pathogens, regardless of their specific antigens.' } }
   ],
   recall: {
     enabled: true,

@@ -23,7 +23,7 @@ export const note_biology_5_8_10 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-ef9d997f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-ef9d997f', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When discussing restriction endonucleases, make sure to explicitly mention that they often leave **sticky ends**. This allows for specific complementary base pairing with other DNA fragments cut by the exact same enzyme.' } }
   ],
   recall: {
     enabled: true,

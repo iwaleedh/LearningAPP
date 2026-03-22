@@ -33,7 +33,7 @@ export const note_biology_6_6A_5 = {
       type: "paragraph",
       data: { text: "In Unit 6, you must relate numerical conclusions back to A-Level theory. For instance, if an experiment shows a steep drop in plant growth at high temperatures, you must use biological terminology (e.g. 'enzymes, such as RuBisCO, denature because thermal kinetic energy breaks hydrogen bonds, altering the active site shape') to explain the trend." }
     },
-{ 'id': 'callout-examiner-983ac085', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-983ac085', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When approaching statistical questions, justify your choice of test clearly. Use Student\'s t-test to compare two independent means, Spearman\'s rank for establishing an association between two continuous variables, and Chi-squared for categorical observed versus expected frequencies. Always start with a precise null hypothesis!' } }
   ],
   recall: {
     enabled: true,

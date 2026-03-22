@@ -43,8 +43,8 @@ export const note_biology_5_7_14 = {
       type: "callout",
       data: { style: "warning", title: "Positive Feedback", text: "Contrast with positive feedback, where a deviation causes a response that amplifies the deviation (e.g., sodium channels opening rapidly during a nerve action potential, or oxytocin during childbirth). Positive feedback does not lead to homeostasis." }
     },
-{ 'id': 'callout-examiner-55142576', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-9ee95de4', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-55142576', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When defining negative feedback in an exam, ensure you state that a change from the norm triggers a response that counteracts the change, restoring the parameter back to its **original set point or norm**.' } },
+{ 'id': 'callout-examiner-9ee95de4', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When defining negative feedback in an exam, ensure you state that a change from the norm triggers a response that counteracts the change, restoring the parameter back to its **original set point or norm**.' } }
   ],
   recall: {
     enabled: true,

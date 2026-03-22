@@ -41,7 +41,7 @@ export const note_biology_6_6A_2 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-8c7f2fae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-8c7f2fae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When presenting data in tables, a frequent error is writing units next to individual values within the table body. Units must only appear in the column headings (e.g., `Time / s`), while the table cells should consist exclusively of numerical data.' } }
   ],
   recall: {
     enabled: true,

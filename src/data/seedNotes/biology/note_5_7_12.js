@@ -40,8 +40,8 @@ export const note_biology_5_7_12 = {
       type: "paragraph",
       data: { text: "Stretch receptors in the bronchioles also prevent the lungs from over-inflating by sending inhibitory signals to the ventilation center, triggering exhalation (the Hering-Breuer reflex)." }
     },
-{ 'id': 'callout-examiner-9d68c93a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-79a1f2fe', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-9d68c93a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Remember that the primary stimulus for increasing your breathing rate is an **increase in carbon dioxide** concentration (lowering the pH of the blood), rather than a decrease in oxygen levels.' } },
+{ 'id': 'callout-examiner-79a1f2fe', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Remember that the primary stimulus for increasing your breathing rate is an **increase in carbon dioxide** concentration (lowering the pH of the blood), rather than a decrease in oxygen levels.' } }
   ],
   recall: {
     enabled: true,

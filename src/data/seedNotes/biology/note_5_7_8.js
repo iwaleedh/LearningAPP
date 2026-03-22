@@ -51,8 +51,8 @@ export const note_biology_5_7_8 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-bb867f7e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-c2380dd3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-bb867f7e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often confuse the various bands and zones in a sarcomere. Remember that **Actin** is the thin filament and corresponds to the **I band** (which is l**i**ght), while myosin is thick and corresponds to the **A band** (which is d**a**rk).' } },
+{ 'id': 'callout-examiner-c2380dd3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often confuse the various bands and zones in a sarcomere. Remember that **Actin** is the thin filament and corresponds to the **I band** (which is l**i**ght), while myosin is thick and corresponds to the **A band** (which is d**a**rk).' } }
   ],
   recall: {
     enabled: true,

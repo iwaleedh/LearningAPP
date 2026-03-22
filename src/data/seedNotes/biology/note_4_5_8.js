@@ -38,7 +38,7 @@ export const note_biology_4_5_8 = {
       type: "callout",
       data: { style: "worked", title: "ATP vs Glucose", text: "Glucose contains too much energy; if released all at once, much would be wasted as heat, raising cell temperature destructively. ATP releases energy in small, discrete, manageable amounts in a single-step reaction." }
     },
-{ 'id': 'callout-examiner-87c58eca', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-87c58eca', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse the nitrogenous base \'adenine\' in ATP with the nucleoside \'adenosine\'. ATP consists of an adenine base, a ribose sugar, and three phosphate groups.' } }
   ],
   recall: {
     enabled: true,

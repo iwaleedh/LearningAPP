@@ -43,8 +43,8 @@ export const note_biology_5_7_6 = {
       type: "paragraph",
       data: { text: "If an RQ value is greater than 1, it means the organism is struggling for oxygen and is starting to undergo anaerobic respiration (producing more CO2 than the O2 it consumes)." }
     },
-{ 'id': 'callout-examiner-30095a51', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-1d9add6b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-30095a51', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Interpreting RQ Values', 'text': 'An RQ greater than 1.0 indicates that a mixture of aerobic and anaerobic respiration is taking place, since anaerobic respiration releases CO₂ without using any more O₂.' } },
+{ 'id': 'callout-examiner-1d9add6b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Interpreting RQ Values', 'text': 'An RQ greater than 1.0 indicates that a mixture of aerobic and anaerobic respiration is taking place, since anaerobic respiration releases CO₂ without using any more O₂.' } }
   ],
   recall: {
     enabled: true,

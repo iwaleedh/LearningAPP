@@ -25,7 +25,7 @@ export const note_biology_5_8_15 = {
         caption: "Summary of coordination systems."
       }
     },
-{ 'id': 'callout-examiner-be624652', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-be624652', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When comparing the two coordination systems, strictly use established comparative terms: Nervous communication utilizes fast-acting **electrical impulses** along neurones, while the endocrine system relies on slower, longer-lasting **chemical messengers** transported in blood plasma.' } }
   ],
   recall: {
     enabled: true,

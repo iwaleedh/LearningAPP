@@ -52,7 +52,7 @@ export const note_biology_4_6_12 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-d5f3b3c1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-d5f3b3c1', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Completing the Course', 'text': 'In exam answers, explain that completing the antibiotic course ensures that highly resistant bacteria are killed and cannot survive to reproduce.' } }
   ],
   recall: {
     enabled: true,

@@ -32,7 +32,7 @@ export const note_biology_4_5_3 = {
       type: "callout",
       data: { style: "worked", title: "Commercial Optimization", text: "Farmers control limiting factors in glasshouses to maximize yield. Heaters/coolers regulate temperature, artificial lamps provide lighting at night, and burning fossil fuels or pumping CO₂ increases CO₂ concentration." }
     },
-{ 'id': 'callout-examiner-f76ae8e8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-f76ae8e8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When interpreting limiting factor graphs, the factor plotted on the x-axis is only the limiting factor on the ascending slope. Once the graph plateaus, you must state that another factor (e.g. temperature or carbon dioxide concentration) has become limiting.' } }
   ],
   recall: {
     enabled: true,

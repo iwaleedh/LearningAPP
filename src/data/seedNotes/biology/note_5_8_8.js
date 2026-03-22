@@ -44,7 +44,7 @@ export const note_biology_5_8_8 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-7825103a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-7825103a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often fail to precisely define the critical window for visual development. Ensure you state it is the strict developmental period where visual sensory stimulation is required for normal visual cortex synapse formation.' } }
   ],
   recall: {
     enabled: true,

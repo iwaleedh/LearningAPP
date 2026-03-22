@@ -28,8 +28,8 @@ export const note_biology_5_7_13 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-027e5b60', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-198a82f2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-027e5b60', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse **glycogenolysis** (the breakdown of glycogen into glucose, promoted by adrenaline) with glycolysis (the first stage of respiration). Correct terminology is vital for these marking points.' } },
+{ 'id': 'callout-examiner-198a82f2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Do not confuse **glycogenolysis** (the breakdown of glycogen into glucose, promoted by adrenaline) with glycolysis (the first stage of respiration). Correct terminology is vital for these marking points.' } }
   ],
   recall: {
     enabled: true,

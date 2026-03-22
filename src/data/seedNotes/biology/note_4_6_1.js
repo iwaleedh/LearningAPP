@@ -54,7 +54,7 @@ export const note_biology_4_6_1 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-4b5fc23c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-4b5fc23c', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Viable vs Total Counts', 'text': 'A common mistake is confusing viable and total counts. **Viable counts** (like counting colonies from serial dilutions) only count living cells that can multiply. **Total counts** (like using a haemocytometer or measuring turbidity) include both living and dead cells.' } }
   ],
   recall: {
     enabled: true,

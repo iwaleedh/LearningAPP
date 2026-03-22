@@ -33,8 +33,8 @@ export const note_biology_5_7_1 = {
       type: "callout",
       data: { style: "key", title: "Net Yield of Glycolysis", text: "Per glucose molecule: 2 Pyruvate, 2 net ATP (4 produced - 2 used), 2 Reduced NAD." }
     },
-{ 'id': 'callout-examiner-78b9cc5d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-a27eaf36', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-78b9cc5d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing glycolysis, explicitly mention that it occurs in the cytoplasm and requires no oxygen, distinguishing it clearly from the subsequent stages in the mitochondria.' } },
+{ 'id': 'callout-examiner-a27eaf36', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing glycolysis, explicitly mention that it occurs in the cytoplasm and requires no oxygen, distinguishing it clearly from the subsequent stages in the mitochondria.' } }
   ],
   recall: {
     enabled: true,

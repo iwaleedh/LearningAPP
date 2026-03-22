@@ -27,7 +27,7 @@ export const note_biology_5_8_0 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-86a081e2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-86a081e2', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'Students often draw sensory neurones with the cell body at the end. Remember that the cell body of a sensory neurone is located along a branch off the main axon/dendron, typically in a dorsal root ganglion.' } }
   ],
   recall: {
     enabled: true,

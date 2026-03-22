@@ -35,7 +35,7 @@ export const note_biology_5_8_14 = {
       type: "paragraph",
       data: { text: "Results normally show a steep negative correlation. Calcium channels in the snail's sensory neurones become less responsive over repeated firings, releasing less neurotransmitter into the synapse, resulting in no motor response. The snail has successfully habituated." }
     },
-{ 'id': 'callout-examiner-dd2bc9d3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-dd2bc9d3', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'For the snail habituation core practical, clearly distinguish between the sensory neurone (which stops responding due to reduced calcium ion influx) and the lack of an action potential reaching the motor neurone, ultimately leading to no muscle contraction.' } }
   ],
   recall: {
     enabled: true,

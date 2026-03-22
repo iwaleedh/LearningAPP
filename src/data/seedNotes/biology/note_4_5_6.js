@@ -36,7 +36,7 @@ export const note_biology_4_5_6 = {
       type: "callout",
       data: { style: "warning", title: "Sources of Error", text: "The gas collected may contain nitrogen or oxygen lost due to plant respiration. Counting bubbles is inaccurate as bubble size varies; collecting the volume is more precise." }
     },
-{ 'id': 'callout-examiner-c94dcd2b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-c94dcd2b', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'When evaluating the method of counting oxygen bubbles to measure the rate of photosynthesis, remember to state that bubbles can vary in volume. A more accurate method is to collect the gas using a gas syringe.' } }
   ],
   recall: {
     enabled: true,

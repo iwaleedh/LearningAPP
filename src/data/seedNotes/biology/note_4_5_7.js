@@ -26,7 +26,7 @@ export const note_biology_4_5_7 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-b4b29c3e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-b4b29c3e', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When calculating Rf values for photosynthetic pigments, always measure from the origin line to the geometric centre of the pigment spot. Remember that Rf values must always be less than 1.' } }
   ],
   recall: {
     enabled: true,

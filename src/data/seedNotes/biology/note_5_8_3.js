@@ -27,7 +27,7 @@ export const note_biology_5_8_3 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-d37a6d37', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-d37a6d37', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'Trace the sequence logically: Ca²⁺ influx -> vesicle exocytosis -> diffusion across the cleft -> complementary binding to post-synaptic receptors -> Na⁺ channels open.' } }
   ],
   recall: {
     enabled: true,

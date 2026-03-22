@@ -49,7 +49,7 @@ export const note_biology_4_5_24 = {
       type: "paragraph",
       data: { text: "No geographical barrier. Speciation occurs in the same area due to a mutation resulting in random reproductive isolation (e.g., polyploidy preventing successful meiosis, changes in courtship behavior, or different flowering times preventing gamete fusion)." }
     },
-{ 'id': 'callout-examiner-75bacc79', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-75bacc79', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Structuring Speciation Answers', 'text': 'Include the key steps logically: 1) Isolation (geographical or reproductive), 2) Prevention of gene flow, 3) Different selection pressures, and 4) Accumulation of genetic differences and allele frequencies until interbreeding cannot produce fertile offspring.' } }
   ],
   recall: {
     enabled: true,

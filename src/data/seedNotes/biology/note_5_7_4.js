@@ -35,8 +35,8 @@ export const note_biology_5_7_4 = {
       type: "callout",
       data: { style: "warning", title: "Role of Oxygen", text: "Without oxygen to accept the electrons, the ETC halts. Protons cannot be pumped, ATP synthases stops, and NADH cannot be oxidized back to NAD. The Krebs cycle and Link reaction stop." }
     },
-{ 'id': 'callout-examiner-f146262d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-884232f8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-f146262d', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Role of Oxygen', 'text': 'The most common error is forgetting the exact role of oxygen. It acts as the \'final electron acceptor\', combining with electrons emerging from the electron transport chain and protons from the matrix to form water. Without it, the entire chain (and Krebs cycle) would halt.' } },
+{ 'id': 'callout-examiner-884232f8', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Role of Oxygen', 'text': 'The most common error is forgetting the exact role of oxygen. It acts as the \'final electron acceptor\', combining with electrons emerging from the electron transport chain and protons from the matrix to form water. Without it, the entire chain (and Krebs cycle) would halt.' } }
   ],
   recall: {
     enabled: true,

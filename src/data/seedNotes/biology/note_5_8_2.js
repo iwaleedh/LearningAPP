@@ -28,7 +28,7 @@ export const note_biology_5_8_2 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-abdeb644', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-abdeb644', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Terminology Focus', 'text': 'Do not simply say myelination \'speeds up the message\'. State that action potentials \'jump\' between Nodes of Ranvier, a process correctly termed saltatory conduction.' } }
   ],
   recall: {
     enabled: true,

@@ -24,7 +24,7 @@ export const note_biology_6_6A_1 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-62d50451', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-62d50451', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'In the standard planning questions (often remembered using CORMS), always specify at least two control variables alongside their control method. Don\'t forget the \'O\' (Organism) component—mention the species, age, or mass of the biological material being used!' } }
   ],
   recall: {
     enabled: true,

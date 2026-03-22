@@ -35,8 +35,8 @@ export const note_biology_5_7_19 = {
       type: "paragraph",
       data: { text: "This setup can be used to test how temperature, substrate concentration, or substrate type (glucose vs maltose) affects the rate of respiration in yeast." }
     },
-{ 'id': 'callout-examiner-b1fcbf79', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-52abb9ae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-b1fcbf79', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing the use of redox indicators (like DCPIP, methylene blue, or TTC) in yeast respiration experiments, explain that the indicator accepts electrons and hydrogen ions, substituting for the natural electron acceptors in the oxidative phosphorylation pathway.' } },
+{ 'id': 'callout-examiner-52abb9ae', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When describing the use of redox indicators (like DCPIP, methylene blue, or TTC) in yeast respiration experiments, explain that the indicator accepts electrons and hydrogen ions, substituting for the natural electron acceptors in the oxidative phosphorylation pathway.' } }
   ],
   recall: {
     enabled: true,

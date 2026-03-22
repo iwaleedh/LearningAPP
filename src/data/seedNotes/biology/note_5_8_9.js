@@ -47,8 +47,8 @@ export const note_biology_5_8_9 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-e57178ec', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-106d03be', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-e57178ec', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Common Mistake', 'text': 'A frequent error is confusing Pr and Pfr. Remember that **Pr** absorbs red light (660 nm) and rapidly converts into **Pfr**, which is the active isomer that triggers vital photomorphogenesis processes like germination.' } },
+{ 'id': 'callout-examiner-106d03be', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'When discussing phototropism, examiners look for the keyword **elongation**. Auxin causes target cells on the shaded side to elongate, not to rapidly divide.' } }
   ],
   recall: {
     enabled: true,

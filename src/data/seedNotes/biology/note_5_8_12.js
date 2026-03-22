@@ -23,7 +23,7 @@ export const note_biology_5_8_12 = {
         ]
       }
     },
-{ 'id': 'callout-examiner-a1e71d01', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-a1e71d01', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'In long-answer questions about GMOs, provide a balanced scientific argument. Discuss specific ecological risks, such as potential horizontal gene transfer to wild relatives creating \'superweeds\', alongside the economic and nutritional benefits.' } }
   ],
   recall: {
     enabled: true,

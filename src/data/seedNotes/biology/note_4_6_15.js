@@ -28,8 +28,8 @@ export const note_biology_4_6_15 = {
       type: "callout",
       data: { style: "warning", title: "Combining Evidence", text: "No single method provides an exact time. Forensic scientists must combine evidence from cooling curves, stiffness, insect life cycles, and take ambient conditions (e.g., clothing, body size, outside temperature) into account." }
     },
-{ 'id': 'callout-examiner-45af569a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-b9731491', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-45af569a', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Ambient Conditions', 'text': 'In data interpretation questions, always consider factors that affect cooling or insect development—such as wind, clothing, body mass, or immersion in water.' } },
+{ 'id': 'callout-examiner-b9731491', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Rigor Mortis', 'text': 'Remember that rigor mortis is temporary. Stiffness passes eventually due to muscle breakdown by enzymes. Its presence or absence helps narrow down the time of death window.' } }
   ],
   recall: {
     enabled: true,

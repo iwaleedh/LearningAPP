@@ -40,10 +40,10 @@ export const note_biology_5_7_9 = {
       type: "paragraph",
       data: { text: "Relaxation occurs when nervous stimulation stops. Ca2+ is actively pumped back into the sarcoplasmic reticulum, tropomyosin recovers the binding sites, and the sarcomere lengthens back to normal." }
     },
-{ 'id': 'callout-examiner-0c3291f7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-92060140', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-e3cca6d9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } },
-{ 'id': 'callout-examiner-608b87f9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': '' } }
+{ 'id': 'callout-examiner-0c3291f7', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'A very common error is stating that the muscle filaments themselves shorten. The actin and myosin filaments **do not change length** during contraction; rather, the sarcomere shortens as the actin filaments slide over the myosin.' } },
+{ 'id': 'callout-examiner-92060140', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Watch Out - Binding Sites', 'text': 'Be precise when describing the role of calcium ions. They bind to **troponin**, which then changes shape and moves **tropomyosin**, exposing the **myosin-binding sites on actin**.' } },
+{ 'id': 'callout-examiner-e3cca6d9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Examiner Tip', 'text': 'A very common error is stating that the muscle filaments themselves shorten. The actin and myosin filaments **do not change length** during contraction; rather, the sarcomere shortens as the actin filaments slide over the myosin.' } },
+{ 'id': 'callout-examiner-608b87f9', 'type': 'callout', 'data': { 'style': 'warning', 'title': 'Watch Out - Binding Sites', 'text': 'Be precise when describing the role of calcium ions. They bind to **troponin**, which then changes shape and moves **tropomyosin**, exposing the **myosin-binding sites on actin**.' } }
   ],
   recall: {
     enabled: true,
