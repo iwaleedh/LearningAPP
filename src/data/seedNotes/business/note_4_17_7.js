@@ -170,6 +170,24 @@ export const note_business_4_17_7 = {
         title: 'Exam Tip: Tariff vs Quota vs Subsidy',
         text: '<b>Tariff</b> = tax on imports (raises price, reduces import demand, raises government revenue). <b>Quota</b> = limit on volume of imports (raises price through scarcity, no government revenue). <b>Subsidy</b> = government support for domestic producers (lowers their costs — not a tax on imports). Know the difference and use the correct term in the exam.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Each tool has different pros/cons: tariffs raise revenue for government; quotas limit quantity directly; subsidies support domestic producers but distort pricing; embargoes use political leverage; NTBs (standards, health rules) are hard to challenge. Match the tool to the objective in case studies."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating all protectionist tools equally in effectiveness. Non-tariff barriers (safety standards, certification rules) can be as effective\u2014or sometimes more effective\u2014than tariffs but harder to spot and challenge under WTO rules. Don't forget about them in your evaluation."
+      }
     }
   ],
   recall: {

@@ -63,14 +63,14 @@ export const note_business_4_18_4 = {
       data: {
         style: 'tip',
         title: "Exam Tip: Combine Porter with PESTLE for Full Marks",
-        text: "<strong>Porter\'s Five Forces</strong> analyses the competitive landscape within an industry (micro-level). <strong>PESTLE</strong> analyses the macro-environment of the country itself. Using <strong>both together</strong> for a market entry evaluation shows examiners you can assess competition AND the broader country context simultaneously — this synoptic skill is rewarded with the highest evaluation marks on 20-mark essay questions."
+        text: "<strong>Porter's Five Forces</strong> analyses the competitive landscape within an industry (micro-level). <strong>PESTLE</strong> analyses the macro-environment of the country itself. Using <strong>both together</strong> for a market entry evaluation shows examiners you can assess competition AND the broader country context simultaneously — this synoptic skill is rewarded with the highest evaluation marks on 20-mark essay questions."
       }
     },
     {
       id: 'enr-tbl-porter-international',
       type: 'comparisonTable',
       data: {
-        caption: "Porter\'s Five Forces: Domestic vs International Context",
+        caption: "Porter's Five Forces: Domestic vs International Context",
         headers: ['Force', 'Domestic Application', 'International Complication'],
         rows: [
           ['Competitive rivalry', 'Familiar competitors with known strategies', 'Unknown local brands with loyal customer bases and lower cost structures'],
@@ -86,8 +86,26 @@ export const note_business_4_18_4 = {
       type: 'callout',
       data: {
         style: 'warning',
-        title: "Limitation: Porter\'s Framework Is Static in Dynamic Markets",
+        title: "Limitation: Porter's Framework Is Static in Dynamic Markets",
         text: 'In fast-moving economies (China, India, Nigeria), competitive conditions can shift dramatically within just 2–3 years. Luckin Coffee expanded from zero to 4,500 stores in China in under 3 years — no Five Forces analysis in 2015 could have predicted this. Businesses should <strong>update their Five Forces analysis regularly</strong> and combine it with scenario planning rather than treating a single snapshot as definitive.'
+      }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "The Five Forces strengths differ across countries. A market with weak competitive rivalry (few competitors) looks attractive, but supplier power may be higher in developing nations where supplier concentration is extreme. Apply each force separately to the new market; do not assume home-market results transfer."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Using Five Forces analysis identically for home and international markets. Supplier power, buyer power, and threat of new entrants may be completely different abroad due to local regulations, market structure, and business practices. Customize your analysis to the specific country."
       }
     }
   ],

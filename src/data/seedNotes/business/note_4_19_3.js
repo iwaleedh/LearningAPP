@@ -47,7 +47,25 @@ export const note_business_4_19_3 = {
             style: "tip",
             title: "Evaluation: Linking Ansoff and Porter in Global Strategy",
             text: "Ansoff and Porter address fundamentally different strategic questions: Ansoff asks 'where do we grow?' (which products in which markets), while Porter asks 'how do we win there?' (what competitive advantage will we use). The strongest exam answers combine both: e.g., 'The firm should pursue Market Development (Ansoff) into South-East Asia using a Differentiation strategy (Porter), leveraging its established premium brand to justify higher prices in a region where locally-made alternatives lack its perceived quality.' Simply naming both frameworks without linking them together earns limited marks."
-        }}
+        }},
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Connect Ansoff's strategies explicitly to global expansion scenarios. For example: market penetration in developed markets vs product development in emerging markets. Show how each Ansoff quadrant carries different risk and resource requirements when operating internationally."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't treat all Ansoff strategies as equally viable in global contexts. Diversification into unfamiliar markets with unfamiliar products is highest-risk; many MNCs fail here. Examiners expect you to weigh the risk-return trade-offs of each quadrant choice."
+      }
+    }
     ],
     recall: {
         enabled: true,

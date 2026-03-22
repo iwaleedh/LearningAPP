@@ -102,6 +102,24 @@ export const note_business_4_18_3 = {
           ['Cultural adaptation', 'Significant differences — high adaptation cost', 'Moderate — more familiar norms']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use a framework: GDP growth rate (future demand), GDP per capita (consumer purchasing power), population size, infrastructure quality, and legal/regulatory environment. Examiners expect you to combine multiple factors, not cherry-pick one. A growing market with poor infrastructure is high-risk."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Overlooking political and regulatory risk. A fast-growing country with weak rule of law, corruption, or unstable government is dangerous\u2014profit may be trapped, seized, or devalued by currency crisis. Always include political stability in your assessment of market potential."
+      }
     }
   ],
   recall: {

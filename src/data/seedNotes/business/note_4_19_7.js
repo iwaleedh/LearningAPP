@@ -27,7 +27,25 @@ export const note_business_4_19_7 = {
             { text: "<strong>Japan:</strong> LINE (messaging app) is the dominant platform for direct branded consumer communication — not WhatsApp or SMS. Businesses assuming Western messaging app parity failed to reach Japanese consumers." }
         ]}},
         { id: "enr-call-1", type: "callout", data: { style: "worked", title: "Everyday Example — Adapting Platform and Language per Audience", text: "Think about how you naturally choose different platforms and adjust your language depending on who you're communicating with. You might use formal emails for teachers, casual texts for friends, and adjust your Instagram bio or post language to include a different language for followers from other countries. Businesses do exactly this at scale — not because they choose to add complexity, but because consumers in different markets exist on different platforms and in very different cultural and linguistic spaces. Your instinct to adapt per audience is global marketing at its core." } },
-        { id: "enr-call-2", type: "callout", data: { style: "tip", title: "Exam Tip — Social Media Adaptation is Increasingly Tested", text: "This is a high-frequency Edexcel A Level Business exam topic. Key facts to know: (1) WeChat and Weibo dominate in China — all Meta platforms (Facebook, Instagram) are banned. (2) TikTok was banned in India in 2020, forcing brands to immediately rebuild their social media presence on alternative platforms. (3) Local Key Opinion Leaders (KOLs) consistently outperform Western celebrities in non-Western markets — local trust beats global fame. For strong AO3 evaluation: discuss the risk of over-reliance on a single social platform and the importance of contingency planning within any global digital marketing strategy." } }
+        { id: "enr-call-2", type: "callout", data: { style: "tip", title: "Exam Tip — Social Media Adaptation is Increasingly Tested", text: "This is a high-frequency Edexcel A Level Business exam topic. Key facts to know: (1) WeChat and Weibo dominate in China — all Meta platforms (Facebook, Instagram) are banned. (2) TikTok was banned in India in 2020, forcing brands to immediately rebuild their social media presence on alternative platforms. (3) Local Key Opinion Leaders (KOLs) consistently outperform Western celebrities in non-Western markets — local trust beats global fame. For strong AO3 evaluation: discuss the risk of over-reliance on a single social platform and the importance of contingency planning within any global digital marketing strategy." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Analyse social media platforms by geographic adoption. Facebook dominates in Europe and North America; WeChat in China; WhatsApp in India and Latin America. Show how successful MNCs tailor campaigns to platform-specific features and local user behaviour patterns in each region."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume the same social media strategy works globally. A viral TikTok campaign in the US may suffer platform bans or cultural rejection in other markets. Examiners expect you to recognise that digital marketing requires local adaptation as much as traditional marketing does."
+      }
+    }
     ],
     recall: {
         enabled: true,

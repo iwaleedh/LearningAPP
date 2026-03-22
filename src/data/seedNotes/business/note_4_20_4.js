@@ -26,7 +26,25 @@ export const note_business_4_20_4 = {
     { id: 'enr-call-2', type: 'callout', data: { style: 'worked', title: 'Apple & Foxconn: Suicide Nets', text: 'Apple\'s primary manufacturer Foxconn employs over 1 million workers in China. In 2010, 14 workers died by suicide at the Shenzhen plant, prompting Foxconn to install anti-suicide safety nets around dormitory buildings. Workers reportedly worked 12-hour shifts, six days a week, earning approximately $1.85/hour. In response to global outrage, Apple began publishing annual Supplier Responsibility Reports and commissioned independent audits. Critics argue Apple had sufficient leverage to enforce better conditions far earlier, given it is Foxconn\'s largest customer by revenue.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'worked', title: 'Primark & Rana Plaza (2013)', text: 'On 24 April 2013, the Rana Plaza garment building in Dhaka, Bangladesh, collapsed, killing 1,134 workers and injuring over 2,500. Labels from Primark, Mango, and Benetton were found in the rubble. Cracks had been visible the day before, but workers were ordered back in under threat of losing pay. The disaster triggered the Bangladesh Accord on Fire and Building Safety — a legally binding agreement between global fashion brands and trade unions to audit factories. Primark paid over £14 million in compensation and now publishes its full supplier factory list.' } },
     { id: 'enr-call-4', type: 'callout', data: { style: 'worked', title: 'Starbucks & Child Labour in Guatemala', text: 'Starbucks was found to have children under 13 years old working 40-hour weeks on Guatemalan coffee farms, picking beans for as little as £5 a day. These Tier 3 raw-material suppliers are the furthest point from the brand in the supply chain — and the hardest to audit. Starbucks responded with stricter sourcing standards under its C.A.F.E. Practices programme, but critics noted that Guatemala is a primary Starbucks coffee source, raising questions about why systematic auditing had not occurred sooner.' } },
-    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Everyday Reality: You Are Part of the System', text: 'When a student buys a £3 T-shirt from Shein, they are part of this supply chain. That price point is only possible because someone — somewhere in the manufacturing or raw-material tier — is being paid far below a living wage. This is not a moral judgement; it is an economic reality. MNCs create demand for cheap goods; consumers respond to price signals; workers in LEDCs bear the hidden cost. Recognising this systemic dimension is exactly what examiners look for in top-band evaluation answers.' } }
+    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Everyday Reality: You Are Part of the System', text: 'When a student buys a £3 T-shirt from Shein, they are part of this supply chain. That price point is only possible because someone — somewhere in the manufacturing or raw-material tier — is being paid far below a living wage. This is not a moral judgement; it is an economic reality. MNCs create demand for cheap goods; consumers respond to price signals; workers in LEDCs bear the hidden cost. Recognising this systemic dimension is exactly what examiners look for in top-band evaluation answers.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Link labour standards issues to specific product sectors where they're most acute: textiles (sweatshops), agriculture (child labour), electronics (repetitive strain injuries). Explain why these sectors attract labour abuses (low barriers to entry, price competition, weak local regulation). Use real company examples: Nike, Apple suppliers."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse corporate responsibility (internal MNC policies) with governmental regulation (state enforcement). MNCs can implement high labour standards in their direct operations yet exploit workers in subcontracted suppliers. Examiners expect you to distinguish between official policy and actual practice."
+      }
+    }
   ],
   recall: {
     enabled: true,

@@ -170,6 +170,24 @@ export const note_business_4_17_3 = {
         title: 'Everyday Example: Every Purchase is a Trade Decision',
         text: 'When a UK supermarket imports <b>bananas from Ecuador</b>, this counts as a visible import — money flows out of the UK. When a UK university educates an international student from China, this is an <b>invisible export</b> — the UK is "exporting" an education service and money flows into the UK. This matters because the UK has a persistent <b>visible goods deficit</b> (imports more physical goods than it exports) but runs a <b>services surplus</b> in areas like finance, legal services, and education. Each type of trade has different implications for domestic employment and GDP.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Exchange rate appreciation HURTS competitiveness (exports more expensive, imports cheaper). A weak currency boosts export sales\u2014this is why countries sometimes try to weaken their currency. Always trace the mechanism: FX change \u2192 export price \u2192 demand."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Strong currency \u2260 strong economy or competitiveness. A strengthening pound makes UK exports more expensive and damages competitiveness internationally. Avoid confusing currency strength with business advantage."
+      }
     }
   ],
   recall: {

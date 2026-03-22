@@ -129,6 +129,24 @@ export const note_business_4_18_1 = {
           ['Analytical tools', 'PESTLE, Porter Five Forces', 'Investment appraisal, ROI, payback period']
         ]
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Offshoring = shift production to a company-owned facility abroad (full control, repatriate profits). Outsourcing = contract work to external supplier (cost savings, less control). A business can outsource domestically OR offshore domestically-operated facilities. The distinction hinges on ownership and location."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Treating offshoring and outsourcing as synonymous\u2014they are fundamentally different. Confusing terms costs marks in evaluation questions. Remember: you can offshore AND outsource, or choose one or the other. Each strategy has different cost/control trade-offs."
+      }
     }
   ],
   recall: {

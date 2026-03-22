@@ -64,7 +64,25 @@ export const note_business_4_19_1 = {
             style: "tip",
             title: "Exam Technique: Recommending an Approach",
             text: "If asked to recommend which approach a business should take, consider: (1) Nature of the product — food and FMCG products often need more local adaptation than technology products. (2) Cultural distance — entering a culturally similar market needs less adaptation. (3) Budget constraints — geocentric and polycentric approaches carry higher costs. A strong answer names the specific approach, justifies it with evidence from the case study, and acknowledges the cost or complexity trade-off."
-        }}
+        }},
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use the EPRG framework as a diagnostic tool to analyse actual multinational companies. Ask: 'Is this firm thinking ethnocentrically (home-market focused) or geocentrically (globally integrated)?' This structure impresses examiners because it moves beyond description to systematic company analysis."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't confuse the four EPRG approaches or assume they represent a linear progression. A mature company can still operate ethnocentrically in some markets and geocentrically in others. Oversimplifying the framework loses marks for application accuracy."
+      }
+    }
     ],
     recall: {
         enabled: true,

@@ -167,6 +167,24 @@ export const note_business_4_17_8 = {
         title: 'Exam Tip: Trading Bloc Integration Ladder',
         text: '<b>Types of trading bloc in order of integration (least → most):</b><br>1. <b>Free Trade Area</b> — removes tariffs between members, each keeps own external tariffs (e.g. NAFTA/USMCA)<br>2. <b>Customs Union</b> — FTA + common external tariff on non-members (e.g. EU Customs Union)<br>3. <b>Single Market</b> — Customs Union + free movement of goods, services, capital AND labour + harmonised standards (e.g. EU Single Market)<br>4. <b>Economic Union</b> — Single Market + shared currency and fiscal coordination (e.g. Eurozone)<br><br>Higher integration = greater trade benefit for member firms but less national sovereignty. This is the key trade-off in every trading bloc evaluation question.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Distinguish between trade creation (lower-cost producers within bloc displace higher-cost external producers) and trade diversion (members trade with each other even if external suppliers are cheaper). EU gained trade creation; ASEAN and NAFTA have both effects\u2014evaluate both in your answer."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Only listing benefits of trading blocs (lower tariffs, economies of scale). Ignore structural drawbacks: sovereignty loss, limited bargaining power against non-members, unequal development between members (e.g., poorer EU countries). Balance is essential."
+      }
     }
   ],
   recall: {

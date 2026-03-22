@@ -10,7 +10,7 @@ export const note_business_4_19_6 = {
             { text: "Slogan Misfires: Famous marketing slogans often rely on puns, idioms, or rhymes that do not exist in foreign languages." },
             { text: "Packaging flaws: Instructions translated poorly can lead to product misuse, customer dissatisfaction, and potential legal liabilities." }
         ]}},
-        { id: "call-1", type: "callout", data: { style: "worked", title: "Famous Examples", text: "When KFC entered China, an early translation of its slogan 'Finger-lickin\' good' reportedly came out as 'Eat your fingers off'. Such errors create brand confusion and require expensive rebranding efforts." } },
+        { id: "call-1", type: "callout", data: { style: "worked", title: "Famous Examples", text: "When KFC entered China, an early translation of its slogan 'Finger-lickin' good' reportedly came out as 'Eat your fingers off'. Such errors create brand confusion and require expensive rebranding efforts." } },
         { id: "h-3", type: "heading", data: { text: "Branding Risks", level: 3 } },
         { id: "p-3", type: "paragraph", data: { text: "Beyond direct translation, retaining the value of a brand globally is challenging." } },
         { id: "list-2", type: "list", data: { style: "bullet", items: [
@@ -22,7 +22,25 @@ export const note_business_4_19_6 = {
         { id: "enr-h-1", type: "heading", data: { text: "Famous Brand Name Failures", level: 3 } },
         { id: "enr-call-1", type: "callout", data: { style: "warning", title: "Real-World Brand Naming Disasters", text: "<strong>Chevrolet Nova (Latin America):</strong> In Spanish, 'no va' means 'does not go' — a catastrophic name for a car. Insufficient linguistic checking before market entry turned a flagship model into a punchline.<br/><br/><strong>Gerber Baby Food (parts of Africa):</strong> In markets with lower literacy rates, products were traditionally labelled with pictures of their contents. Gerber's packaging showed a smiling baby face. Some consumers believed the jar contained processed babies — causing significant brand confusion and market failure in those regions.<br/><br/><strong>Mitsubishi Pajero:</strong> 'Pajero' is a highly offensive sexual slur in Spanish. Mitsubishi was forced to rename the car the Montero for all Spanish-speaking markets — incurring significant rebranding costs that rigorous linguistic due diligence would have prevented entirely." } },
         { id: "enr-svg-1", type: "svg", data: { svg: "<svg viewBox='0 0 480 320' xmlns='http://www.w3.org/2000/svg' font-family='Inter,sans-serif'><rect width='480' height='320' fill='#3d1212' rx='12'/><text x='240' y='26' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>Brand Name Risk Checklist</text><text x='240' y='44' text-anchor='middle' font-size='11' fill='#ef4444'>Check all four before any international brand launch</text><rect x='38' y='58' width='404' height='52' fill='#3d1212' stroke='#ef4444' stroke-width='2' rx='8'/><text x='60' y='80' font-size='18' fill='#ef4444'>&#9888;</text><text x='84' y='78' font-size='12' font-weight='600' fill='#dc2626'>Offensive meaning in local language?</text><text x='84' y='96' font-size='10' fill='#991b1b'>e.g. Chevrolet Nova = no va (does not go) in Spanish</text><rect x='38' y='120' width='404' height='52' fill='#3d1212' stroke='#ef4444' stroke-width='2' rx='8'/><text x='60' y='142' font-size='18' fill='#ef4444'>&#9888;</text><text x='84' y='140' font-size='12' font-weight='600' fill='#dc2626'>Hard to pronounce in the target market?</text><text x='84' y='158' font-size='10' fill='#991b1b'>Unpronounceable names reduce recall and word-of-mouth marketing</text><rect x='38' y='182' width='404' height='52' fill='#3d1212' stroke='#ef4444' stroke-width='2' rx='8'/><text x='60' y='204' font-size='18' fill='#ef4444'>&#9888;</text><text x='84' y='202' font-size='12' font-weight='600' fill='#dc2626'>Similar to a competing brand name?</text><text x='84' y='220' font-size='10' fill='#991b1b'>Risk of passing off, trademark disputes and loss of brand distinctiveness</text><rect x='38' y='244' width='404' height='52' fill='#3d1212' stroke='#ef4444' stroke-width='2' rx='8'/><text x='60' y='266' font-size='18' fill='#ef4444'>&#9888;</text><text x='84' y='264' font-size='12' font-weight='600' fill='#dc2626'>Cultural taboo or religious association?</text><text x='84' y='282' font-size='10' fill='#991b1b'>e.g. Mitsubishi Pajero — offensive slur in Spanish; renamed Montero</text></svg>", caption: "Before launching in any new language market, every brand name must pass all four red-flag checks. Failure at any point requires renaming before entry." } },
-        { id: "enr-call-2", type: "callout", data: { style: "warning", title: "Critical Warning — Linguistic Due Diligence", text: "A single brand name mistake can destroy an entire market entry. The cost of renaming, repackaging, and relaunching in a new market due to a language oversight can run to tens of millions of pounds — far exceeding the cost of commissioning proper linguistic and cultural checks upfront. Always conduct professional linguistic screening before any international brand launch." } }
+        { id: "enr-call-2", type: "callout", data: { style: "warning", title: "Critical Warning — Linguistic Due Diligence", text: "A single brand name mistake can destroy an entire market entry. The cost of renaming, repackaging, and relaunching in a new market due to a language oversight can run to tens of millions of pounds — far exceeding the cost of commissioning proper linguistic and cultural checks upfront. Always conduct professional linguistic screening before any international brand launch." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Use well-documented examples of translation and branding failures: 'Coca-Cola's name pronounced in Mandarin,' 'Chevrolet Nova meaning 'doesn't go' in Spanish,' or successful adaptations like Netflix localising show recommendations. Real cases make your evaluation credible and memorable."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't overlook cultural and symbolic significance beyond literal translation. A brand name might translate perfectly but violate cultural taboos or religious sensitivities. Smart companies invest in cultural consultants, not just translators. Show you understand this nuance."
+      }
+    }
     ],
     recall: {
         enabled: true,

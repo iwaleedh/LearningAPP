@@ -75,6 +75,24 @@ export const note_business_4_18_7 = {
         title: 'Exam Tip: 3-Step Exchange Rate Analysis',
         text: 'Always trace the exchange rate change through 3 steps: (1) What happens to the exchange rate, (2) What happens to export/import prices, (3) What is the impact on the business. Never skip steps. Link to price elasticity — if UK exports are PED inelastic, a weaker pound may not increase revenue much.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Exchange rate volatility creates two risks: (1) translation risk (profits from overseas operations look weaker if currency drops when converted to home currency), (2) transaction risk (payment received in foreign currency worth less when converted). Hedging tools (forward contracts, currency swaps) reduce but cannot eliminate these risks."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Ignoring exchange rate fluctuations in profit forecasts for international expansion. A business that assumes USD remains constant will be blindsided if the pound weakens 20% against the dollar, cutting profits dramatically. Always stress-test profit forecasts for currency movements."
+      }
     }
   ],
   recall: {

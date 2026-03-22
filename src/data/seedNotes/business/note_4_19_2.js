@@ -58,7 +58,25 @@ export const note_business_4_19_2 = {
             style: "tip",
             title: "Everyday Example: Netflix's Global 4Ps",
             text: "Netflix adapts all four Ps globally. Product: it produces local-language originals (Korean dramas, Spanish-language shows, Indian Bollywood films) to suit local tastes. Price: subscription fees in India are around $2/month vs £18/month in the UK, reflecting local purchasing power. Promotion: Netflix uses local celebrities in country-specific advertising campaigns. Place: in markets where most users access content via smartphone rather than smart TV, it prioritises mobile streaming and lighter data plans. This is real-world adaptation of the full marketing mix on a global scale."
-        }}
+        }},
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "When evaluating the 4Ps in global markets, show that each element adapts differently. Price may be standardised for luxury goods but Place requires local distribution networks; Promotion uses local media. Demonstrate this differentiation with specific product examples to show deep understanding."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume the marketing mix is identical across all global markets or that all four Ps must be adapted simultaneously. Sometimes standardising price across regions creates affordability barriers; other times standardising product quality is essential. Treat each P independently."
+      }
+    }
     ],
     recall: {
         enabled: true,

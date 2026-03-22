@@ -28,7 +28,25 @@ export const note_business_4_19_5 = {
             ["Inappropriate branding", "Adverts that disrespect cultural norms trigger outrage and boycotts.", "Consult local cultural experts and pre-screen all content locally before release."]
         ]}},
         { id: "enr-call-1", type: "callout", data: { style: "warning", title: "Real Example: Dolce & Gabbana (China, 2018)", text: "In 2018, Dolce & Gabbana released a promotional video showing a Chinese model struggling to eat various Italian foods with chopsticks. The advert was widely interpreted as mocking Chinese culture and implying a lack of refinement. The backlash was catastrophic — Chinese celebrities publicly withdrew from a major Shanghai show, e-commerce platforms pulled all D&G products, and the brand lost hundreds of millions in Chinese market sales. A total failure of cultural research and sensitivity." } },
-        { id: "enr-call-2", type: "callout", data: { style: "worked", title: "Everyday Example — Adapting Communication Style per Audience", text: "Think about how you naturally switch communication style for different people. You use formal sentences and no slang when emailing a teacher, but casual language and emojis when texting friends. You might even post in a different language on social media to connect with followers from different backgrounds. Businesses apply exactly the same logic globally — the same product, delivered in a culturally adapted wrapper per market. This instinct is the essence of cultural adaptation in marketing." } }
+        { id: "enr-call-2", type: "callout", data: { style: "worked", title: "Everyday Example — Adapting Communication Style per Audience", text: "Think about how you naturally switch communication style for different people. You use formal sentences and no slang when emailing a teacher, but casual language and emojis when texting friends. You might even post in a different language on social media to connect with followers from different backgrounds. Businesses apply exactly the same logic globally — the same product, delivered in a culturally adapted wrapper per market. This instinct is the essence of cultural adaptation in marketing." } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Connect specific cultural factors to concrete product or marketing adaptations. Don't vaguely say 'culture affects demand.' Instead: 'In India, vegetarianism requires different menu offerings; in Japan, packaging aesthetics drive premium positioning.' This specificity demonstrates sophisticated analysis."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't stereotype or oversimplify cultural preferences. Not all consumers in a culture follow the stereotype. Younger, urban populations in developed regions may have preferences closer to global norms. Avoid sweeping generalisations; acknowledge cultural heterogeneity."
+      }
+    }
     ],
     recall: {
         enabled: true,

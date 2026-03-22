@@ -22,7 +22,25 @@ export const note_business_4_20_3 = {
     { id: 'enr-call-1', type: 'callout', data: { style: 'worked', title: 'Volkswagen Dieselgate (2015)', text: 'Volkswagen installed "defeat device" software in 11 million diesel vehicles worldwide. The software detected when a car was being emissions-tested and temporarily reduced emissions to pass — while emitting up to 40 times the legal NOx limit during normal driving. The scandal cost VW approximately $34 billion in fines and settlements, destroyed its reputation for engineering integrity, and led to criminal charges against executives. Environmental deception is not just unethical — it is financially catastrophic.' } },
     { id: 'enr-call-2', type: 'callout', data: { style: 'warning', title: 'The Emissions Concentration Problem', text: 'Research by the Carbon Majors Database found that just 100 companies are responsible for 71% of all global greenhouse gas emissions since 1988. Four MNCs alone — Coca-Cola, PepsiCo, Nestlé, and Unilever — dispose of half a million metric tonnes of plastic waste annually across six developing countries (Tearfund, 2020). This concentration of environmental harm in a small number of MNCs makes them prime targets of regulation and consumer pressure.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'worked', title: 'Shell in Nigeria: Economic Gain vs Environmental Harm', text: 'Shell\'s operations in the Niger Delta show the core trade-off: the Nigerian government receives billions in oil royalties and tax revenue, but local Ogoni communities have suffered catastrophic damage — contaminated water, dead farmland, and health crises — from decades of oil spills. The 2011 UN Environment Programme report recommended a $1 billion clean-up fund. Shell eventually agreed to a $15.5 million out-of-court settlement with Ogoni communities in 2015 — an acknowledgement that environmental harm carries real financial and legal consequences.' } },
-    { id: 'enr-call-4', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Weigh the Trade-off Over Time', text: 'Environmental ethics questions require you to weigh short-term profit gains against long-term costs. Key evaluation points: (1) Fines and legal costs can vastly exceed any savings from cutting corners — VW paid $34bn. (2) Greenwashing may delay real change, but consumer awareness is rising. (3) In LEDCs, weaker regulation means environmental costs are borne by local communities who lack the political power to force change — an important ethical dimension for evaluation.' } }
+    { id: 'enr-call-4', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Weigh the Trade-off Over Time', text: 'Environmental ethics questions require you to weigh short-term profit gains against long-term costs. Key evaluation points: (1) Fines and legal costs can vastly exceed any savings from cutting corners — VW paid $34bn. (2) Greenwashing may delay real change, but consumer awareness is rising. (3) In LEDCs, weaker regulation means environmental costs are borne by local communities who lack the political power to force change — an important ethical dimension for evaluation.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Research and cite specific cases of MNC environmental impact: oil spills, deforestation, water pollution. Distinguish between companies making genuine sustainability investments vs those making superficial CSR claims. Examine actual environmental metrics (carbon reduction, waste management) rather than marketing rhetoric."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume corporate sustainability commitments are genuine without investigating implementation. Many MNCs issue impressive environmental policies while operations in developing countries ignore them due to weak local enforcement. Verify claims against actual environmental audits and penalties."
+      }
+    }
   ],
   recall: {
     enabled: true,

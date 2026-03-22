@@ -65,7 +65,7 @@ export const note_business_4_18_2 = {
       type: 'callout',
       data: {
         style: 'worked',
-        title: "Real World: McDonald\'s Big Mac — PLC Extension Strategy",
+        title: "Real World: McDonald's Big Mac — PLC Extension Strategy",
         text: 'The Big Mac was launched in the US in 1967. By the 1990s it had reached maturity in Western markets — sales growth slowed significantly. Rather than discontinuing it, McDonald\'s used global expansion as a PLC extension strategy.<br><strong>India (1996 entry):</strong> The beef-based Big Mac could not be sold due to Hindu and Muslim customs, so McDonald\'s localised — launching the vegetarian McAloo Tikki instead. The brand effectively entered the Introduction phase in a market of 1.4 billion people.<br><strong>China:</strong> Similar adaptations (rice dishes, taro pies) allowed McDonald\'s to grow rapidly. The overall brand PLC was extended by decades through sequential new-market launches.'
       }
     },
@@ -85,6 +85,24 @@ export const note_business_4_18_2 = {
         style: 'warning',
         title: 'Limitation: Technology Products Can Face Simultaneous Global Decline',
         text: 'For fast-changing technology (smartphones, apps, software), a product can become obsolete globally at the same time — there is no laggard market to exploit as an extension strategy. Fax machines and Kodak film cameras declined simultaneously in developed and developing markets as smartphones went global. Always consider the <strong>type of product</strong> before recommending global PLC extension: FMCGs and well-established brands transfer well; cutting-edge technology products generally do not.'
+      }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "International expansion works best when the product is in decline or maturity at home. A 'cash cow' product (high market share, low growth in UK) can be extended in emerging markets where it's new. This strategy extends the product lifecycle and generates revenue from aging products."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming products can be sold unchanged in foreign markets. Consumer preferences, income levels, and regulations differ. A product successful in the UK may need adaptation (price, packaging, features) for international markets, adding cost and delaying returns."
       }
     }
   ],

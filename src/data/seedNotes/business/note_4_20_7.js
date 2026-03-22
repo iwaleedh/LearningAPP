@@ -34,7 +34,25 @@ export const note_business_4_20_7 = {
     { id: 'enr-call-2', type: 'callout', data: { style: 'worked', title: 'Greta Thunberg & Flygskam (Flight Shame)', text: 'Greta Thunberg\'s flight-shame movement triggered measurable consumer behaviour change: SAS reported a double-digit decline in domestic short-haul flights in Scandinavia as passengers switched to trains. A single activist\'s viral campaign translated into direct revenue pressure on an entire industry — forcing airlines to publicly accelerate sustainable aviation fuel commitments simply to protect their brands.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'key', title: 'Everyday Connection', text: 'Think of a time you chose not to buy something because of something you read about that brand online. Or signing a petition against a supermarket\'s plastic-packaging policy. That is consumer pressure and pressure-group activity in action. At scale, millions of those individual decisions create enormous financial leverage against even the world\'s largest corporations.' } },
     { id: 'enr-call-4', type: 'callout', data: { style: 'warning', title: 'Do Not Overestimate Consumer Pressure Alone', text: 'MNCs employ large PR and legal teams to issue counter-narratives and outlast boycott campaigns. Primark faced protests outside its Oxford Street store after a documentary on child labour in its supply chain — yet sales fully recovered within months as consumers reverted to prioritising price. Consumers often suffer from boycott fatigue, limiting the long-run power of social pressure without legal backing.' } },
-    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Consumer & Pressure-Group Power', text: 'Consider: (1) Is the MNC a consumer-facing brand (more vulnerable) or a B2B supplier (less exposed)? (2) Is the issue emotive and high-profile or technical and complex? (3) Can the MNC replace lost revenue from other markets? For top-level answers, always assess whether social pressure alone is sufficient or needs to be backed by government action to be truly effective.' } }
+    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Consumer & Pressure-Group Power', text: 'Consider: (1) Is the MNC a consumer-facing brand (more vulnerable) or a B2B supplier (less exposed)? (2) Is the issue emotive and high-profile or technical and complex? (3) Can the MNC replace lost revenue from other markets? For top-level answers, always assess whether social pressure alone is sufficient or needs to be backed by government action to be truly effective.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Evaluate real campaigns where consumer action succeeded: Shell Brent Spar protests, McDonald's rainforest destruction criticism, unethical labour practices at Nike. Contrast with failed boycotts where consumer awareness didn't translate to behaviour change. Assess what factors determine success: media visibility, consumer affluence, product substitutability."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't overstate the power of boycotts or consumer pressure without evidence. Boycotts often fail because consumers prioritise price and convenience over ethics. In developing countries with limited product choice, boycotts lose leverage. Evaluate consumer pressure critically, not as a reliable control mechanism."
+      }
+    }
   ],
   recall: {
     enabled: true,

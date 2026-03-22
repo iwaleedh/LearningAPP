@@ -20,7 +20,25 @@ export const note_business_4_20_8 = {
     { id: 'enr-call-2', type: 'callout', data: { style: 'worked', title: 'Joint Venture Requirement: China Market Entry', text: 'For decades, China legally required foreign MNCs to form a joint venture with a Chinese partner company to access the market. This forced technology transfer and gave the government oversight of all foreign operations. Companies including GM, BMW, and Apple had to negotiate joint-venture structures just to access the world\'s largest consumer market — a direct example of a host government using legal control to extract concessions from powerful MNCs.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'warning', title: 'Political Influence & Lobbying — When Law Is Captured', text: 'Legal controls only work if genuinely enforced. In MEDCs, MNCs spend millions lobbying politicians to weaken regulations before they pass. In LEDCs, some autocratic rulers accept payments from MNCs in exchange for resource access or relaxed environmental enforcement. Some politicians accept board directorships at MNCs after retiring, in return for having reduced political control while in power. The law can exist on paper but be worthless in practice.' } },
     { id: 'enr-call-4', type: 'callout', data: { style: 'key', title: 'The Brexit Deterrent Effect', text: 'Before Brexit, many MNCs based their European headquarters in the UK — benefiting from UK legal stability and full EU single-market access. After Brexit removed single-market access, firms including Goldman Sachs, JPMorgan, and major pharmaceutical companies relocated European operations to Frankfurt, Paris, and Dublin. This shows how political change triggers capital movement even without a new harsh law being passed.' } },
-    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Why Trading Blocs Beat Individual Countries', text: 'Essential evaluation point: a single country imposing strict rules risks capital flight as the MNC relocates. But if all 27 EU members apply the same rule simultaneously, the MNC cannot escape within the bloc — and losing access to 450 million consumers is too great a cost. Trading blocs are significantly more effective than individual nation-states, though they require political agreement across many governments.' } }
+    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Why Trading Blocs Beat Individual Countries', text: 'Essential evaluation point: a single country imposing strict rules risks capital flight as the MNC relocates. But if all 27 EU members apply the same rule simultaneously, the MNC cannot escape within the bloc — and losing access to 450 million consumers is too great a cost. Trading blocs are significantly more effective than individual nation-states, though they require political agreement across many governments.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Distinguish between three distinct control mechanisms: government legislation (rules the conduct), joint ventures (shares control between MNC and local partner), and taxation (reduces profit incentive for operations). Each has different effectiveness depending on the host country's legal enforcement and political will. Analyse which suits which country context."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume high taxation reduces MNC presence or improves labour practices. MNCs often pass tax costs to consumers; taxation alone doesn't constrain unethical behaviour if regulations don't prohibit it. Joint ventures don't guarantee local control if the local partner is weak or corrupt. Evaluate effectiveness, not just intent."
+      }
+    }
   ],
   recall: {
     enabled: true,

@@ -15,7 +15,7 @@ export const note_business_4_20_9 = {
     { id: 'list-2', type: 'list', data: { style: 'bullet', items: [
       { text: '<b>Non-Binding:</b> Voluntary codes are not legally enforceable. There are no legal fines for breaking them.' },
       { text: '<b>Conflict of Interest:</b> MNCs are auditing themselves, which invites cover-ups and selective reporting of data.' },
-      { text: '<b>Greenwashing:</b> Standards may outline vague promises (e.g., \"being more eco-friendly\") rather than concrete, verifiable metrics.' },
+      { text: '<b>Greenwashing:</b> Standards may outline vague promises (e.g., "being more eco-friendly") rather than concrete, verifiable metrics.' },
       { text: '<b>No Universal Standard:</b> Different companies set different bars, confusing consumers.' }
     ]}},
     { id: 'call-1', type: 'callout', data: { style: 'key', title: 'The Verification Problem', text: 'To counter the weakness of self-regulation, some MNCs now hire independent external auditors to verify their CSR claims, adding an element of unbiased scrutiny.' } },
@@ -25,7 +25,25 @@ export const note_business_4_20_9 = {
     { id: 'enr-call-2', type: 'callout', data: { style: 'warning', title: 'Conflict of Interest: Industry Bodies Funded by Industry', text: 'Self-regulatory bodies — such as the UK Advertising Standards Authority — are primarily funded by the very businesses they regulate. This creates a structural conflict of interest: the regulator has a financial incentive not to impose harsh penalties, since heavy fines or public naming-and-shaming could cost them paying members. Critics argue this makes self-regulation little more than reputation management rather than genuine accountability.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'worked', title: 'Greenwashing: BP and Shell Net-Zero Claims', text: 'BP and Shell both published high-profile net-zero emissions pledges in the early 2020s. In 2023, the UK Advertising Standards Authority upheld complaints against both, ruling their "greener future" advertisements were misleading — they highlighted a tiny fraction of genuinely renewable activity while 95%+ of revenue still came from fossil fuels. This is textbook greenwashing: voluntary self-regulation exploited as a marketing tool to deflect criticism without meaningful change.' } },
     { id: 'enr-call-4', type: 'callout', data: { style: 'key', title: 'Everyday Connection', text: 'Think about a student marking their own exam rather than a teacher doing it. They might give themselves full marks on borderline answers because there is no penalty for being generous to themselves. That is exactly what self-regulation is for a business: no independent referee, no binding punishment, and a personal incentive to report favourably. External auditing — an independent examiner — solves this, but remains optional.' } },
-    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Exam Tip: The Classic Evaluation of Self-Regulation', text: 'A top-level answer must acknowledge both sides. Self-regulation responds faster to emerging issues than legislation, is cost-effective for governments, and can be industry-specific and flexible. However, without legal teeth it relies on goodwill and brand-risk alone — and large MNCs sometimes judge reputational risk from greenwashing as lower than the cost of genuine compliance. For maximum marks: conclude that self-regulation works best as a complement to, NOT a substitute for, binding legal frameworks.' } }
+    { id: 'enr-call-5', type: 'callout', data: { style: 'tip', title: 'Exam Tip: The Classic Evaluation of Self-Regulation', text: 'A top-level answer must acknowledge both sides. Self-regulation responds faster to emerging issues than legislation, is cost-effective for governments, and can be industry-specific and flexible. However, without legal teeth it relies on goodwill and brand-risk alone — and large MNCs sometimes judge reputational risk from greenwashing as lower than the cost of genuine compliance. For maximum marks: conclude that self-regulation works best as a complement to, NOT a substitute for, binding legal frameworks.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Compare voluntary codes of conduct against government-enforced standards to evaluate effectiveness. Voluntary codes succeed only when: (1) reputational damage from violation is significant, (2) peer companies comply (avoiding competitive disadvantage), and (3) third-party audits verify compliance. Without these, voluntary codes are largely symbolic."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume voluntary compliance codes have teeth without enforcement mechanisms. Companies can commit to codes on paper while operating differently in practice, especially in countries with weak media scrutiny. Show you understand that self-regulation often fails compared to external regulation with real penalties."
+      }
+    }
   ],
   recall: {
     enabled: true,

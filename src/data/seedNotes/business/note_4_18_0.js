@@ -101,7 +101,7 @@ export const note_business_4_18_0 = {
         rows: [
           ['Ethnocentric (Domestic)', 'Same product and marketing globally — no adaptation', 'Low cost; high cultural risk', 'Apple — identical iPhone across all markets'],
           ['Polycentric (International)', 'Fully customised product and marketing per country', 'High cost; low cultural risk', 'KitKat Japan — matcha and cherry blossom flavours'],
-          ['Geocentric (Mixed / Glocal)', '"Think global, act local" — core standardised with some local adaptation', 'Balanced', "McDonald\'s — Big Mac globally + McAloo Tikki in India"]
+          ['Geocentric (Mixed / Glocal)', '"Think global, act local" — core standardised with some local adaptation', 'Balanced', "McDonald's — Big Mac globally + McAloo Tikki in India"]
         ]
       }
     },
@@ -119,8 +119,26 @@ export const note_business_4_18_0 = {
       type: 'callout',
       data: {
         style: 'tip',
-        title: "Exam Tip: Link Push/Pull to Ansoff\'s Matrix",
+        title: "Exam Tip: Link Push/Pull to Ansoff's Matrix",
         text: 'Entering a new foreign market with an existing product = <strong>Market Development</strong> in Ansoff\'s Matrix (medium risk). Pull factors provide the strategic justification for market development. Examiners reward answers that link push/pull factors to strategic frameworks like Ansoff or PESTLE — this signals AO3 evaluation skill and earns the highest marks on 12+ mark questions.'
+      }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Push factors: domestic market saturation, excess capacity, competitive pressure at home. Pull factors: market growth, lower costs, resource access abroad. Show how both forces work together\u2014a business is 'pushed' out of home market AND 'pulled' toward high-growth markets like India or Vietnam."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Confusing large market size with market attractiveness. A country with 1.4 billion people (India) sounds attractive, but if income per capita is low and competition is intense, profitability may be poor. Always assess profit potential, not just market size."
       }
     }
   ],

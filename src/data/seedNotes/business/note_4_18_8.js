@@ -76,6 +76,24 @@ export const note_business_4_18_8 = {
         title: 'Exam Tip: Skill Shortages and Competitiveness',
         text: 'Skill shortages reduce competitiveness by: raising wage costs, slowing innovation, requiring expensive overseas recruitment. Solutions: invest in training (long-term), immigration reform (political risk), automation (capital cost). Each solution has trade-offs to evaluate.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Global skill shortages (engineers, tech workers) force firms to relocate operations toward talent hubs (US tech hubs, Germany for engineering), pay wage premiums, or invest in training. This directly impacts location decisions and labour cost assumptions. Mention this when evaluating where to expand production."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming automation or AI solves all labour shortages. Skills shortages persist because some jobs require uniquely human judgment, creativity, or customer interaction. Over-relying on tech to replace scarce talent ignores that cutting-edge automation needs skilled workers to design and maintain it. Balance tech and human capital in your analysis."
+      }
     }
   ],
   recall: {

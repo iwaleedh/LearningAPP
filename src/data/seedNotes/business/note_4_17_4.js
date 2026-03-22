@@ -181,6 +181,24 @@ export const note_business_4_17_4 = {
       id: 'enr-p-joint-venture',
       type: 'paragraph',
       data: { text: 'Not all FDI involves manufacturing. <b>Joint ventures</b> are a common FDI mechanism in service industries. For example, <b>EE</b> was formed in 2012 as a joint venture between French company <b>Orange</b> and German company <b>T-Mobile</b>, allowing both firms to pool resources and access a greater share of the <b>UK mobile market</b>. Joint ventures reduce individual risk and allow firms to share local market knowledge — particularly valuable when entering new or unfamiliar markets without the full capital commitment of greenfield investment.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Know the three FDI types: (1) horizontal = replicating operations abroad, (2) vertical = supply chain, (3) conglomerate = diversification. Each has different strategic purpose and host country impact. Distinguish them in your analysis."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Do not list only benefits of FDI to the host country (jobs, capital, tech transfer). Examiners expect evaluation of costs: profit repatriation, environmental damage, labour exploitation, political influence. Show both sides for higher marks."
+      }
     }
   ],
   recall: {

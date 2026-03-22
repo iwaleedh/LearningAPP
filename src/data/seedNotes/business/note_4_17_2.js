@@ -161,6 +161,24 @@ export const note_business_4_17_2 = {
         title: 'Warning: Globalisation — Uneven Distribution of Gains',
         text: 'While free trade theory suggests globalisation benefits all participants, in practice gains are distributed unequally. Workers in <b>developed economies</b> may face structural unemployment as factories move offshore. Workers in <b>developing economies</b> may gain employment but at low wages and under poor conditions — without the skills transfer or infrastructure investment needed for sustainable development. The Bangladeshi garment industry employs millions, but the <b>Rana Plaza factory collapse (2013, 1,134 deaths)</b> exposed the human cost of the global race to the bottom on labour standards. Ethical businesses are increasingly expected to maintain consistent labour and environmental standards across all their supply chain locations.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Globalisation shifts trade patterns\u2014developed economies export high-value services and technology; developing economies become manufacturing hubs. But employment impact is mixed: job creation in some sectors, job losses in others. Show balance in your evaluation."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Never assume globalisation is uniformly good or bad. A one-sided view (e.g., 'globalisation always creates jobs') misses the complexity and scores poorly. Discuss winners and losers clearly."
+      }
     }
   ],
   recall: {

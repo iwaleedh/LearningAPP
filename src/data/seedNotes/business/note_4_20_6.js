@@ -28,7 +28,25 @@ export const note_business_4_20_6 = {
     { id: 'enr-call-1', type: 'callout', data: { style: 'worked', title: 'EU Competition Commission vs Google (€2.24bn Fine)', text: 'The EU fined Google €2.24 billion in 2017 for abusing its dominant position by illegally favouring its own Google Shopping service over rivals. This is supranational legal control at its most effective — Google could not escape by moving from France to Germany because the same regulation applied across all 27 EU member states simultaneously.' } },
     { id: 'enr-call-2', type: 'callout', data: { style: 'warning', title: 'Political Capture — When Regulation Becomes Hollow', text: 'A major flaw in any regulatory system is political capture: MNCs spend millions lobbying politicians to weaken regulations before they pass. In LEDCs, autocratic rulers have accepted payments from MNCs in exchange for relaxed environmental rules. Some politicians accept paid board directorships at MNCs after leaving office in return for having reduced controls while in power. Legal control can exist on paper but be worthless in practice.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'key', title: 'Everyday Connection', text: 'Imagine a school canteen run by a corporation. The school (host government) sets basic food-safety rules. Pupils can refuse to eat there (consumer pressure). The canteen could voluntarily promise no junk food (self-regulation). But only the school board banning junk food across all sites with enforceable penalties would truly change behaviour — just as trading blocs do for MNCs, making escape impossible.' } },
-    { id: 'enr-call-4', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Assessing the Effectiveness of Each Control Type', text: 'International regulation (WTO, UN) is potentially strongest — an MNC cannot escape to a neighbouring country. But it is hardest to enforce (no world government). National law is enforceable but risks capital flight if applied alone. Self-regulation is most flexible but weakest as it is voluntary. Always match your evaluation to context: MNC size, industry type, and host country income level.' } }
+    { id: 'enr-call-4', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Assessing the Effectiveness of Each Control Type', text: 'International regulation (WTO, UN) is potentially strongest — an MNC cannot escape to a neighbouring country. But it is hardest to enforce (no world government). National law is enforceable but risks capital flight if applied alone. Self-regulation is most flexible but weakest as it is voluntary. Always match your evaluation to context: MNC size, industry type, and host country income level.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Compare different regulatory methods: international treaties (least binding), host-country laws (varies by enforcement), supranational agreements (EU standards), and shareholder activism (market-based). Show why each mechanism has different teeth and effectiveness. Which works best depends on host-country governance quality."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume strong regulations automatically constrain MNCs. Wealthy multinationals have resources to relocate operations, lobby for exemptions, or absorb compliance costs and pass them to consumers. Regulations only work if accompanied by effective monitoring and enforcement with real penalties."
+      }
+    }
   ],
   recall: {
     enabled: true,

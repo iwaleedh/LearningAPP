@@ -103,6 +103,24 @@ export const note_business_4_18_5 = {
       id: 'enr-callout-tip-loc',
       type: 'callout',
       data: { style: 'tip', title: 'Exam Tip: Production Location vs Market Location', text: 'A firm may <strong>produce</strong> in Vietnam but <strong>sell</strong> in Europe — these are separate decisions. When assessing production location, consider: labour costs + skill levels, infrastructure quality, legal/IP protection, political stability, proximity to suppliers, and government incentives.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Location decisions balance multiple factors: labour costs (wage, skills), infrastructure (transport, utilities, telecoms), proximity to markets, supply chain access, and government incentives. No single factor dominates\u2014India offers cheap labour but weak infrastructure; Singapore has expensive labour but excellent infrastructure. Trade-off analysis is key."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming cheap labour alone guarantees profitability. Low wages mean nothing if workers lack skills, infrastructure is poor, or supply chains are unreliable. Bangladesh has low labour costs but quality and delivery issues; Japan has high wages but premium productivity. Always contextualize costs within total business ecosystem."
+      }
     }
   ],
   recall: {

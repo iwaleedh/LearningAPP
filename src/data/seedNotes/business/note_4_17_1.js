@@ -173,6 +173,24 @@ export const note_business_4_17_1 = {
         title: 'Real-World Application: Norway vs Qatar',
         text: '<b>Norway</b> (HDI ~0.961) and <b>Qatar</b> (HDI ~0.855) both have very high GDP per capita, but Norway ranks higher on HDI because it scores much better on education and health outcomes. Qatar\'s wealth is based largely on oil revenues with a smaller educated domestic workforce. This matters to businesses: Norway offers a highly skilled, educated workforce ideal for knowledge-intensive industries; Qatar offers capital and energy resources but workforce depth is more limited. <b>HDI helps distinguish the quality of human capital, not just financial wealth.</b>'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "GDP per capita is GDP \u00f7 population\u2014it gives average wealth per person, not total economic output. HDI adds health and education dimensions. Use these distinctions to explain why a country with high GDP but low HDI faces development challenges."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Candidates often assume higher GDP per capita = higher living standards. Ignore inequality, healthcare access, and education quality in your analysis. HDI explicitly checks your understanding of these non-monetary factors."
+      }
     }
   ],
   recall: {

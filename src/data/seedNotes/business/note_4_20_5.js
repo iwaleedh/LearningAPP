@@ -24,7 +24,25 @@ export const note_business_4_20_5 = {
     { id: 'enr-h-2', type: 'heading', data: { text: 'Ethical Marketing in Practice', level: 3 } },
     { id: 'enr-call-6', type: 'callout', data: { style: 'tip', title: 'Patagonia: "Don\'t Buy This Jacket"', text: 'Outdoor brand Patagonia ran a full-page NYT ad reading "Don\'t Buy This Jacket" — urging consumers to repair and reuse rather than over-consume. This radical transparency boosted loyalty among ethical consumers. Patagonia also pledges 1% of all revenue to environmental causes via "1% for the Planet" — a genuine self-regulation strategy, not greenwashing.' } },
     { id: 'enr-call-7', type: 'callout', data: { style: 'key', title: 'Everyday Connection', text: 'Think about your own choices: if you found out your favourite brand used sweatshop labour or made misleading health claims, would you still buy from them? Most people say no. This is why ethical marketing is not just about morals — it directly protects long-run revenue and brand equity.' } },
-    { id: 'enr-call-8', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Ethical Marketing Issues', text: 'For high-mark questions, weigh short-term profit from unethical marketing against long-term reputational cost. Consider: the regulatory environment (stricter in MEDCs), the vulnerability of the target group (children vs adults), and the speed of social media exposure. A business exploiting lax LEDC laws may face a global boycott campaign within the same week — assess both likelihood and severity.' } }
+    { id: 'enr-call-8', type: 'callout', data: { style: 'tip', title: 'Exam Tip: Evaluating Ethical Marketing Issues', text: 'For high-mark questions, weigh short-term profit from unethical marketing against long-term reputational cost. Consider: the regulatory environment (stricter in MEDCs), the vulnerability of the target group (children vs adults), and the speed of social media exposure. A business exploiting lax LEDC laws may face a global boycott campaign within the same week — assess both likelihood and severity.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Analyse how power imbalances in developing markets enable unethical MNC marketing: consumers lack information access, regulatory agencies lack enforcement resources, and media lacks independence. Show how MNCs exploit these gaps (misleading health claims, targeting vulnerable groups, culturally inappropriate messaging)."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't place all ethical responsibility on MNCs without recognising weak institutional capacity in host countries. While MNCs should act ethically, developing-nation governments often lack resources to regulate advertising, product safety, or business practices. Your evaluation must acknowledge institutional weakness, not just corporate fault."
+      }
+    }
   ],
   recall: {
     enabled: true,
@@ -32,7 +50,7 @@ export const note_business_4_20_5 = {
     summaryText: 'Global marketing ethics involves avoiding false claims, cultural insensitivity, and exploiting vulnerable groups via double standards.',
     cues: [
       { id: 'cue-1', blockId: 'list-1', prompt: 'Identify two ethical issues in global marketing.', answer: '1. Misleading advertising\n2. Targeting vulnerable groups (like children).' },
-      { id: 'cue-2', blockId: 'call-1', prompt: 'What is meant by an ethical \"double standard\" in marketing?', answer: 'When an MNC strictly follows ethical guidelines in its home country where laws are tight, but uses unethical, aggressive marketing in developing nations with lax laws.' },
+      { id: 'cue-2', blockId: 'call-1', prompt: 'What is meant by an ethical "double standard" in marketing?', answer: 'When an MNC strictly follows ethical guidelines in its home country where laws are tight, but uses unethical, aggressive marketing in developing nations with lax laws.' },
       { id: 'cue-3', blockId: 'list-1', prompt: 'How does cultural insensitivity link to marketing ethics?', answer: 'Applying standard global marketing campaigns that unintentionally offend or disrespect the traditions and norms of the host country.' },
       { id: 'cue-4', blockId: 'para-2', prompt: 'What is a business benefit of ethical marketing?', answer: 'It builds long-term consumer trust and brand loyalty.' }
     ]

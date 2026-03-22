@@ -33,7 +33,25 @@ export const note_business_4_20_1 = {
     { id: 'enr-call-1', type: 'callout', data: { style: 'warning', title: 'Amazon UK: Tax Avoidance at Scale', text: 'Amazon UK Services Ltd reported UK revenues of £2.35 billion in 2022 yet paid just £18.7 million in corporation tax — an effective rate of under 1%. This was achieved through transfer pricing: UK revenue was booked as a service fee paid to Amazon\'s European headquarters in Luxembourg, where corporate tax rates are far lower. The UK government — and therefore UK public services — lost hundreds of millions in potential tax receipts. Governments are increasingly clamping down: the OECD\'s BEPS (Base Erosion and Profit Shifting) framework aims to close these loopholes globally.' } },
     { id: 'enr-call-2', type: 'callout', data: { style: 'worked', title: 'How Transfer Pricing Works: Step by Step', text: 'Step 1: MNC sets up a subsidiary in a low-tax jurisdiction (e.g. Luxembourg, Ireland, Cayman Islands). Step 2: The subsidiary legally owns the brand or intellectual property. Step 3: Operating divisions in high-tax countries pay large licence fees to the subsidiary, artificially reducing taxable profit in the host country. Step 4: Profits accumulate in the low-tax jurisdiction. Net result: the host country gains economic activity but loses the tax revenue that should fund public services.' } },
     { id: 'enr-call-3', type: 'callout', data: { style: 'tip', title: 'Examiner Tip: Consider Scale When Evaluating', text: 'When assessing MNC impact, consider scale: if an MNC\'s annual profit exceeds the GDP of the host country — common in developing nations — the government has very little bargaining power. The MNC can credibly threaten to relocate, forcing governments to offer tax breaks or weaker regulations. This "race to the bottom" dynamic reduces the national benefit significantly.' } },
-    { id: 'enr-para-1', type: 'paragraph', data: { text: 'MNCs also influence <b>business culture</b> at a national level. In the 1990s, UK businesses adopted Japanese working practices introduced by MNCs such as Nissan — including kaizen (continuous improvement) and open-plan workplaces. While this improved productivity, it also pressured domestic firms to match standards they lacked the resources to implement, creating an uneven competitive landscape.' } }
+    { id: 'enr-para-1', type: 'paragraph', data: { text: 'MNCs also influence <b>business culture</b> at a national level. In the 1990s, UK businesses adopted Japanese working practices introduced by MNCs such as Nissan — including kaizen (continuous improvement) and open-plan workplaces. While this improved productivity, it also pressured domestic firms to match standards they lacked the resources to implement, creating an uneven competitive landscape.' } },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Quantify MNC impacts where possible: FDI inflows (billions), jobs created (thousands), tax revenues, and balance of payments effects. Use real statistics from developing economies (e.g. foreign investment as % of GDP). Numerical evidence strengthens your analysis significantly."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't assume all MNC effects on national economies are positive. Profit repatriation to parent companies can exceed net benefit to the host country. Resource-extraction MNCs may cause environmental damage that outweighs tax revenue gains. Evaluate net impact, not gross benefits."
+      }
+    }
   ],
   recall: {
     enabled: true,

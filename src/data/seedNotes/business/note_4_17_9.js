@@ -153,6 +153,15 @@ export const note_business_4_17_9 = {
         title: 'Exam Tip: 20-Mark Globalisation Essay Structure',
         text: '<b>Recommended structure for a top-band 20-mark globalisation impact answer:</b><br><br><b>1. Opportunities:</b> Access to larger global markets (e.g. penetrating ASEAN\'s 670 million consumers); lower production costs via offshoring (e.g. Sports Direct); economies of scale; global talent pool.<br><br><b>2. Threats:</b> Intensified competition from global firms (e.g. Amazon undercutting local UK retailers); currency risk eroding margins; supply chain disruption (COVID-19 / geopolitical risk); reputational risks from overseas suppliers.<br><br><b>3. Evaluation (essential for 20 marks):</b> "The net impact depends on context. Capital-intensive manufacturers benefit most from global supply chains and lower input costs. UK service businesses may face greater threats from global digital platforms. A firm with strong brand differentiation is better insulated from price competition than a commodity producer. Ultimately, globalisation rewards businesses that can adapt quickly — those with rigid cost structures or narrow domestic markets are most at risk."'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Frame the answer around differential impact: MNCs have capital, brand recognition, and economies of scale to exploit global opportunities. SMEs face higher entry barriers (cost, expertise), supply chain complexity, and currency risk. Show how globalisation creates winners and losers based on company size."
+      }
     }
   ],
   recall: {

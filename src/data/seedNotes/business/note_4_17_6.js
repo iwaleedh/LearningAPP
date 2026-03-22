@@ -162,6 +162,24 @@ export const note_business_4_17_6 = {
         title: 'Warning: Protectionism Triggers Retaliation',
         text: 'Protectionism often triggers retaliation. China responded to US steel tariffs with tariffs on American soybeans — directly hitting US farmers in swing states. <b>Trade wars have no winners; both sides lose export markets.</b>'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Key arguments for protection: infant industry protection, employment preservation, national security, dumping prevention. Be ready to explain which argument applies to which industry\u2014e.g., agriculture vs manufacturing vs defence sectors."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Forgetting that protectionism invites retaliation. If one country raises tariffs, trading partners often respond in kind\u2014leading to trade wars that harm all economies. Never evaluate protectionist policies in isolation without considering retaliation risks."
+      }
     }
   ],
   recall: {

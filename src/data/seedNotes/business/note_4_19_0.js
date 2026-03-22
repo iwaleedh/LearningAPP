@@ -82,7 +82,25 @@ export const note_business_4_19_0 = {
             style: "tip",
             title: "Evaluation Point: Standardisation vs Adaptation",
             text: "Standardisation saves cost (economies of scale, single R&D cycle, consistent branding) but risks irrelevance if local tastes differ sharply. Adaptation increases relevance and sales but raises costs and complexity. The strongest exam answers do not simply pick one — they judge which matters more given the specific business context: a luxury brand with global aspirational appeal (e.g., Louis Vuitton) can standardise far more than a food company entering linguistically and culturally distinct new markets."
-        }}
+        }},
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "In evaluation questions, always structure your answer by comparing global and localised strategies side-by-side. Show which strategy suits which market conditions (e.g. global for homogeneous markets, localised for culturally distinct regions). Use real examples: Apple's global brand consistency vs McDonald's menu localisation in China."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Don't describe one strategy without evaluating trade-offs. Simply saying 'localised is better' ignores cost and complexity burdens. Examiners expect assessment of benefits AND drawbacks for each approach in your specific business context."
+      }
+    }
     ],
     recall: {
         enabled: true,

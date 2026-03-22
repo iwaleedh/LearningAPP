@@ -190,6 +190,24 @@ export const note_business_4_17_0 = {
         title: 'Exploitation Risk in the Three-Tier System',
         text: 'When <b>MNCs</b> locate production in the lowest-tier economies purely to minimise costs, they may offer very low wages and poor working conditions without meaningful <b>technology transfer</b> or long-run development benefits. Critics argue this creates a "<b>race to the bottom</b>" — developing nations compete by keeping wages and standards as low as possible to attract FDI, rather than building genuine productive capacity and human capital. The economic gains from globalisation are often captured by shareholders in developed economies, not workers in developing ones.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Always link economy classification to specific business implications. An emerging economy offers growth opportunities but carries regulatory and credit risks\u2014frame your answer around what this means for the business, not just the general economy facts."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Do not assume 'developing' and 'emerging' are the same. Emerging economies are faster-growing subset of developing economies. Confusing these categories loses marks in classification questions."
+      }
     }
   ],
   recall: {

@@ -166,6 +166,24 @@ export const note_business_4_17_5 = {
         title: 'Exam Tip: Globalisation Is Not Inevitable',
         text: 'Globalisation is not inevitable — political reversals (Brexit, US–China tariff war, nationalist movements) show it can stall or reverse. Always evaluate whether the drivers are sustainable.'
       }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "The four main drivers are: (1) technology (internet, transport), (2) finance (deregulation, capital flows), (3) trade liberalization (WTO, tariff cuts), (4) MNC growth. Rank their relative importance with evidence\u2014e.g., technology enabled just-in-time supply chains."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Overlooking geopolitical and security drivers. Trade wars, sanctions, and deglobalization trends show that drivers can reverse. Mention Brexit, US\u2013China tensions, or reshoring as evidence that globalisation is not one-directional."
+      }
     }
   ],
   recall: {

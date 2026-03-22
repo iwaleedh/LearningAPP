@@ -119,6 +119,24 @@ export const note_business_4_18_6 = {
       id: 'enr-callout-warn-jv',
       type: 'callout',
       data: { style: 'warning', title: 'JV Failure Rate Warning', text: 'JV failure rates are approximately 40\u201360%. Common causes: partner strategy divergence, profit-sharing disputes, culture clash, and unequal contribution. <strong>Daewoo\u2013General Motors JV</strong> collapsed after Daewoo\u2019s bankruptcy. <strong>BMW\u2013Rover JV (1994\u20132000)</strong> led to a \u00a32.9bn write-off for BMW. In exams: acknowledge JV risks alongside benefits.' }
+    },
+    {
+      id: 'callout-tip-1',
+      type: 'callout',
+      data: {
+        style: 'tip',
+        title: "Examiner Tip",
+        text: "Mergers provide instant scale and market entry (faster); joint ventures split risk and capital costs but limit control and profit share. Frame your evaluation around risk tolerance and capital availability: risk-averse firms prefer JVs; cash-rich aggressive firms prefer acquisitions. Context determines the optimal strategy."
+      }
+    },
+    {
+      id: 'callout-tip-2',
+      type: 'callout',
+      data: {
+        style: 'warning',
+        title: "Common Mistake",
+        text: "Assuming mergers are always faster or better than organic growth or JVs. Mergers are expensive, risky (integration failures, culture clashes), and require regulatory approval. JVs and greenfield investment may be lower-risk, though slower. Evaluate each method's fit to the firm's capabilities and resources."
+      }
     }
   ],
   recall: {
