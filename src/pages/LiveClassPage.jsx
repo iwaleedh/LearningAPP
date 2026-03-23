@@ -344,8 +344,7 @@ export default function LiveClassPage() {
   const [presentState, setPresentState] = useState(null); // { presenterIdentity, presenterName, status }
 
   const handleCopyLink = useCallback(() => {
-    const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-    const url = `${window.location.origin}${base}/live/${sessionId}`;
+    const url = new URL(`live/${sessionId}`, window.location.origin + import.meta.env.BASE_URL).href;
     navigator.clipboard.writeText(url).then(() => {
       setLinkCopied(true);
       setTimeout(() => setLinkCopied(false), 2000);
