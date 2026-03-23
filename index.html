@@ -43,9 +43,9 @@
           var path = decodeURIComponent(match[1].replace(/~and~/g, '&'));
           var qmatch = search.match(/[?&]q=([^&]+)/);
           var query = qmatch ? '?' + decodeURIComponent(qmatch[1].replace(/~and~/g, '&')) : '';
+          var basePath = location.pathname.replace(/\/+$/, '');
           history.replaceState(null, null,
-            location.pathname.split('/').slice(0, 2).join('/') +
-            '/' + path + query + location.hash
+            basePath + (path.charAt(0) === '/' ? '' : '/') + path + query + location.hash
           );
         }
       }
