@@ -222,7 +222,7 @@ export function createLiveClassSync({
   /** Student joins an existing Live Class. Returns snapshot of existing strokes. */
   async function joinClass(classId) {
     const conn = client;
-    if (!conn) throw new Error('SpacetimeDB not connected');
+    if (!conn) return []; // offline — BroadcastChannel handles sync
     conn.reducers.joinLiveClass({ classId });
     activeClassId = classId;
     attachListeners(classId);

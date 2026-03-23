@@ -324,6 +324,12 @@ export default function LiveClassPage() {
     setRenamingTabId(null);
   }, [renamingTabId, renameValue]);
 
+  function broadcastCanvasState() {
+    const fc = fabricRef.current;
+    if (!fc || !broadcastRef.current) return;
+    broadcastRef.current.postMessage({ type: 'canvas-state', data: fc.toJSON(['data']) });
+  }
+
   function saveHistory() {
     if (skipHistory.current) return;
     // Debounce via rAF so multi-object adds (templates, connector line+arrow) merge
@@ -339,6 +345,8 @@ export default function LiveClassPage() {
       historyIndex.current = historyStack.current.length - 1;
       setCanUndo(historyIndex.current > 0);
       setCanRedo(false);
+      // Broadcast to student tabs via BroadcastChannel
+      broadcastCanvasState();
     });
   }
 
@@ -355,11 +363,13 @@ export default function LiveClassPage() {
 
   // Canvas
   const canvasWrapRef = useRef(null);
+  const teacherBoardWrapRef = useRef(null); // student's teacher-board container
   const teacherCanvasRef = useRef(null); // teacher's fabric canvas (full edit)
   const myCanvasRef = useRef(null);       // student's own canvas
   const fabricRef = useRef(null);
   const myFabricRef = useRef(null);
   const syncRef = useRef(null);
+  const broadcastRef = useRef(null);
   const [canvasSize, setCanvasSize] = useState({ w: 1, h: 1 });
 
   // ── Ruler tool state ──────────────────────────────────────────────────────
@@ -495,11 +505,44 @@ export default function LiveClassPage() {
             });
           } catch { /* noop */ }
         });
-      });
+      }).catch(() => { /* offline — BroadcastChannel sync will handle it */ });
     }
 
     return () => {
       sync.leaveClass();
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [role, classId]);
+
+  // ── BroadcastChannel sync (same-origin real-time sync) ─────────────────────
+  useEffect(() => {
+    if (!role || !classId) return;
+    const channelName = `lc-sync-${classId}`;
+    const bc = new BroadcastChannel(channelName);
+    broadcastRef.current = bc;
+
+    if (role === 'student') {
+      bc.onmessage = (e) => {
+        const { type, data } = e.data;
+        const fc = fabricRef.current;
+        if (!fc) return;
+
+        if (type === 'canvas-state') {
+          skipHistory.current = true;
+          fc.loadFromJSON(data, () => {
+            fc.getObjects().forEach(o => { o.selectable = false; o.evented = false; });
+            skipHistory.current = false;
+            fc.requestRenderAll();
+          });
+        } else if (type === 'bg-change') {
+          setBackgroundType(data);
+        }
+      };
+    }
+
+    return () => {
+      bc.close();
+      broadcastRef.current = null;
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role, classId]);
@@ -525,7 +568,9 @@ export default function LiveClassPage() {
         fc.requestRenderAll();
       }
     });
-    if (canvasWrapRef.current) ro.observe(canvasWrapRef.current);
+    // For teacher: observe the main canvas wrap; for student: observe the teacher board wrap
+    const observeTarget = isTeacherRole ? canvasWrapRef.current : teacherBoardWrapRef.current;
+    if (observeTarget) ro.observe(observeTarget);
 
     // Teacher gets full tool + stroke sync; students only view
     if (isTeacherRole) {
@@ -1251,6 +1296,7 @@ export default function LiveClassPage() {
       fc.requestRenderAll();
       setCanUndo(historyIndex.current > 0);
       setCanRedo(true);
+      broadcastCanvasState();
     });
   }
 
@@ -1265,6 +1311,7 @@ export default function LiveClassPage() {
       fc.requestRenderAll();
       setCanUndo(historyIndex.current > 0);
       setCanRedo(historyIndex.current < historyStack.current.length - 1);
+      broadcastCanvasState();
     });
   }
 
@@ -1665,6 +1712,7 @@ export default function LiveClassPage() {
         onBgChange={(bg) => {
           setBackgroundType(bg);
           syncRef.current?.setBackground(classId, bg);
+          broadcastRef.current?.postMessage({ type: 'bg-change', data: bg });
         }}
         onFontChange={setTextFont}
         onLaserModeChange={setLaserMode}
@@ -1715,7 +1763,7 @@ export default function LiveClassPage() {
         {!isTeacher && (
           <div className="lc-student-panel">
             <div className="lc-panel-label">Teacher's Board</div>
-            <div className="lc-canvas-wrap lc-canvas-wrap--readonly" style={bgStyle}>
+            <div ref={teacherBoardWrapRef} className="lc-canvas-wrap lc-canvas-wrap--readonly" style={bgStyle}>
               <canvas ref={teacherCanvasRef} />
               <LaserPointerOverlay cursors={cursors} trails={laserTrails} width={canvasSize.w} height={canvasSize.h} localMode={laserMode} />
               <SpotlightOverlay width={canvasSize.w} height={canvasSize.h} enabled={false} />
