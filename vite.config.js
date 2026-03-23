@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/LearningAPP/',
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1000,
