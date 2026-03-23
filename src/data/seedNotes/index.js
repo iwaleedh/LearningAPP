@@ -163,6 +163,38 @@ import { note_biology_4_5_24 } from './biology/note_4_5_24.js';
 import { note_biology_4_5_25 } from './biology/note_4_5_25.js';
 import { note_biology_4_5_26 } from './biology/note_4_5_26.js';
 import { note_accounting_1_1_0 } from './accounting/note_1_1_0.js';
+import { note_accounting_1_1_1 } from './accounting/note_1_1_1.js';
+import { note_accounting_1_1_2 } from './accounting/note_1_1_2.js';
+import { note_accounting_1_1_3 } from './accounting/note_1_1_3.js';
+import { note_accounting_1_1_4 } from './accounting/note_1_1_4.js';
+import { note_accounting_1_1_5 } from './accounting/note_1_1_5.js';
+import { note_accounting_1_1_6 } from './accounting/note_1_1_6.js';
+import { note_accounting_1_1_7 } from './accounting/note_1_1_7.js';
+import { note_accounting_1_1_8 } from './accounting/note_1_1_8.js';
+import { note_accounting_1_1_9 } from './accounting/note_1_1_9.js';
+import { note_accounting_1_1_10 } from './accounting/note_1_1_10.js';
+import { note_accounting_1_1_11 } from './accounting/note_1_1_11.js';
+import { note_accounting_1_2_0 } from './accounting/note_1_2_0.js';
+import { note_accounting_1_2_1 } from './accounting/note_1_2_1.js';
+import { note_accounting_1_2_2 } from './accounting/note_1_2_2.js';
+import { note_accounting_1_2_3 } from './accounting/note_1_2_3.js';
+import { note_accounting_1_2_4 } from './accounting/note_1_2_4.js';
+import { note_accounting_1_2_5 } from './accounting/note_1_2_5.js';
+import { note_accounting_1_2_6 } from './accounting/note_1_2_6.js';
+import { note_accounting_1_2_7 } from './accounting/note_1_2_7.js';
+import { note_accounting_1_2_8 } from './accounting/note_1_2_8.js';
+import { note_accounting_1_3_0 } from './accounting/note_1_3_0.js';
+import { note_accounting_1_3_1 } from './accounting/note_1_3_1.js';
+import { note_accounting_1_3_2 } from './accounting/note_1_3_2.js';
+import { note_accounting_1_3_3 } from './accounting/note_1_3_3.js';
+import { note_accounting_1_3_4 } from './accounting/note_1_3_4.js';
+import { note_accounting_1_3_5 } from './accounting/note_1_3_5.js';
+import { note_accounting_1_3_6 } from './accounting/note_1_3_6.js';
+import { note_accounting_1_3_7 } from './accounting/note_1_3_7.js';
+import { note_accounting_1_3_8 } from './accounting/note_1_3_8.js';
+import { note_accounting_1_3_9 } from './accounting/note_1_3_9.js';
+import { note_accounting_1_3_10 } from './accounting/note_1_3_10.js';
+import { note_accounting_1_3_11 } from './accounting/note_1_3_11.js';
 import { note_economics_1_1_0 } from './economics/note_economics_1_1_0.js';
 import { note_economics_1_1_1 } from './economics/note_economics_1_1_1.js';
 import { note_economics_1_1_2 } from './economics/note_economics_1_1_2.js';
@@ -2387,6 +2419,38 @@ export const seedNotes = {
     // WCH16
     // Scaffolded Notes
     'accounting:1:1:0': note_accounting_1_1_0,
+    'accounting:1:1:1': note_accounting_1_1_1,
+    'accounting:1:1:2': note_accounting_1_1_2,
+    'accounting:1:1:3': note_accounting_1_1_3,
+    'accounting:1:1:4': note_accounting_1_1_4,
+    'accounting:1:1:5': note_accounting_1_1_5,
+    'accounting:1:1:6': note_accounting_1_1_6,
+    'accounting:1:1:7': note_accounting_1_1_7,
+    'accounting:1:1:8': note_accounting_1_1_8,
+    'accounting:1:1:9': note_accounting_1_1_9,
+    'accounting:1:1:10': note_accounting_1_1_10,
+    'accounting:1:1:11': note_accounting_1_1_11,
+    'accounting:1:2:0': note_accounting_1_2_0,
+    'accounting:1:2:1': note_accounting_1_2_1,
+    'accounting:1:2:2': note_accounting_1_2_2,
+    'accounting:1:2:3': note_accounting_1_2_3,
+    'accounting:1:2:4': note_accounting_1_2_4,
+    'accounting:1:2:5': note_accounting_1_2_5,
+    'accounting:1:2:6': note_accounting_1_2_6,
+    'accounting:1:2:7': note_accounting_1_2_7,
+    'accounting:1:2:8': note_accounting_1_2_8,
+    'accounting:1:3:0': note_accounting_1_3_0,
+    'accounting:1:3:1': note_accounting_1_3_1,
+    'accounting:1:3:2': note_accounting_1_3_2,
+    'accounting:1:3:3': note_accounting_1_3_3,
+    'accounting:1:3:4': note_accounting_1_3_4,
+    'accounting:1:3:5': note_accounting_1_3_5,
+    'accounting:1:3:6': note_accounting_1_3_6,
+    'accounting:1:3:7': note_accounting_1_3_7,
+    'accounting:1:3:8': note_accounting_1_3_8,
+    'accounting:1:3:9': note_accounting_1_3_9,
+    'accounting:1:3:10': note_accounting_1_3_10,
+    'accounting:1:3:11': note_accounting_1_3_11,
     'economics:1:1:0': note_economics_1_1_0,
     'economics:1:1:1': note_economics_1_1_1,
     'economics:1:1:2': note_economics_1_1_2,

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /teacher
+Disallow: /annotate/
+Disallow: /live/
+Allow: /
+
+Sitemap: https://living-textbook.app/sitemap.xml

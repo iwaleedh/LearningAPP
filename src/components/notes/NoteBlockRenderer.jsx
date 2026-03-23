@@ -5,7 +5,13 @@
  */
 
 import { useState, useMemo } from 'react';
+import DOMPurify from 'dompurify';
 import './NoteBlockRenderer.css';
+
+// Sanitize HTML strings before rendering — defence-in-depth against XSS
+const safe = (html) => DOMPurify.sanitize(html ?? '');
+// SVG sanitization: allow SVG-specific tags/attrs but strip scripts & event handlers
+const safeSvg = (svg) => DOMPurify.sanitize(svg ?? '', { USE_PROFILES: { svg: true, svgFilters: true } });
 
 // ── Individual block renderers ─────────────────────────────────────────────
 
@@ -13,7 +19,7 @@ function ObjectiveBlock({ data }) {
     return (
         <div className="nb-objective">
             <span className="nb-objective-label">🎯 Learning Objective</span>
-            <p dangerouslySetInnerHTML={{ __html: data.text }} />
+            <p dangerouslySetInnerHTML={{ __html: safe(data.text) }} />
         </div>
     );
 }
@@ -21,11 +27,11 @@ function ObjectiveBlock({ data }) {
 function HeadingBlock({ data, blockId }) {
     const level = data.level || 2;
     const Tag = `h${Math.min(Math.max(level, 1), 6)}`;
-    return <Tag className={`nb-heading nb-h${level}`} data-block-id={blockId} dangerouslySetInnerHTML={{ __html: data.text }} />;
+    return <Tag className={`nb-heading nb-h${level}`} data-block-id={blockId} dangerouslySetInnerHTML={{ __html: safe(data.text) }} />;
 }
 
 function ParagraphBlock({ data }) {
-    return <p className="nb-paragraph" dangerouslySetInnerHTML={{ __html: data.text }} />;
+    return <p className="nb-paragraph" dangerouslySetInnerHTML={{ __html: safe(data.text) }} />;
 }
 
 function ListBlock({ data }) {
@@ -35,7 +41,7 @@ function ListBlock({ data }) {
         return (
             <ol className="nb-list nb-list-ordered">
                 {items.map((item, i) => (
-                    <li key={i} dangerouslySetInnerHTML={{ __html: typeof item === 'object' ? item.text : item }} />
+                    <li key={i} dangerouslySetInnerHTML={{ __html: safe(typeof item === 'object' ? item.text : item) }} />
                 ))}
             </ol>
         );
@@ -43,7 +49,7 @@ function ListBlock({ data }) {
     return (
         <ul className="nb-list nb-list-bullet">
             {items.map((item, i) => (
-                <li key={i} dangerouslySetInnerHTML={{ __html: typeof item === 'object' ? item.text : item }} />
+                <li key={i} dangerouslySetInnerHTML={{ __html: safe(typeof item === 'object' ? item.text : item) }} />
             ))}
         </ul>
     );
@@ -60,7 +66,7 @@ function ChecklistBlock({ data }) {
             {items.map((item, i) => (
                 <li key={i} className={`nb-checklist-item ${checked[i] ? 'checked' : ''}`} onClick={() => toggle(i)}>
                     <span className="nb-checkbox">{checked[i] ? '✅' : '☐'}</span>
-                    <span dangerouslySetInnerHTML={{ __html: typeof item === 'object' ? item.text : item }} />
+                    <span dangerouslySetInnerHTML={{ __html: safe(typeof item === 'object' ? item.text : item) }} />
                 </li>
             ))}
         </ul>
@@ -77,7 +83,7 @@ function EquationBlock({ data }) {
         <div className="nb-equation">
             <div
                 className="nb-equation-content"
-                dangerouslySetInnerHTML={{ __html: html }}
+                dangerouslySetInnerHTML={{ __html: safe(html) }}
             />
             {caption && <p className="nb-equation-caption">{caption}</p>}
         </div>
@@ -174,7 +180,7 @@ function latexToHtml(raw) {
 
 function LatexDisplay({ latex }) {
     const html = latexToHtml(latex);
-    return <span className="nb-latex" dangerouslySetInnerHTML={{ __html: html }} />;
+    return <span className="nb-latex" dangerouslySetInnerHTML={{ __html: safe(html) }} />;
 }
 
 function ComparisonTableBlock({ data }) {
@@ -187,13 +193,13 @@ function ComparisonTableBlock({ data }) {
             <div className="nb-table-scroll">
                 <table className="nb-table">
                     <thead>
-                        <tr>{headers.map((h, i) => <th key={i} dangerouslySetInnerHTML={{ __html: h }} />)}</tr>
+                        <tr>{headers.map((h, i) => <th key={i} dangerouslySetInnerHTML={{ __html: safe(h) }} />)}</tr>
                     </thead>
                     <tbody>
                         {rows.map((row, i) => (
                             <tr key={i}>
                                 {(Array.isArray(row) ? row : Object.values(row)).map((cell, j) => (
-                                    <td key={j} dangerouslySetInnerHTML={{ __html: cell }} />
+                                    <td key={j} dangerouslySetInnerHTML={{ __html: safe(cell) }} />
                                 ))}
                             </tr>
                         ))}
@@ -208,7 +214,7 @@ function SummaryBlock({ data }) {
     return (
         <div className="nb-summary">
             <span className="nb-summary-label">📝 Summary</span>
-            <p dangerouslySetInnerHTML={{ __html: data.text }} />
+            <p dangerouslySetInnerHTML={{ __html: safe(data.text) }} />
         </div>
     );
 }
@@ -233,7 +239,7 @@ function CalloutBlock({ data }) {
             )}
             <div
                 className="nb-callout-body"
-                dangerouslySetInnerHTML={{ __html: bodyHtml }}
+                dangerouslySetInnerHTML={{ __html: safe(bodyHtml) }}
             />
         </div>
     );
@@ -253,7 +259,7 @@ function SvgBlock({ data }) {
         <figure className="nb-svg-figure">
             <div
                 className={`nb-svg-container ${svgClass}`}
-                dangerouslySetInnerHTML={{ __html: data.svg }}
+                dangerouslySetInnerHTML={{ __html: safeSvg(data.svg) }}
             />
             {data.caption && <figcaption className="nb-svg-caption">{data.caption}</figcaption>}
         </figure>

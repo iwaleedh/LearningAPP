@@ -1,6 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ThemeProvider from './context/ThemeProvider';
+import ErrorBoundary from './components/ErrorBoundary';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
 import HomePage from './pages/HomePage';
@@ -20,6 +21,7 @@ const NotePage = lazy(() => import('./pages/NotePage'));
 const AnnotatePage = lazy(() => import('./pages/AnnotatePage'));
 const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
 const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -49,6 +51,7 @@ function AppContent() {
           onSearchOpen={() => setSearchOpen(true)}
         />
         <main className="page-content">
+          <ErrorBoundary>
           <Suspense fallback={<div className="card animate-fade-in">Loading page...</div>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -67,8 +70,10 @@ function AppContent() {
               <Route path="/advanced" element={<AdvancedPage />} />
               <Route path="/annotate/:paperId" element={<AnnotatePage />} />
               <Route path="/live/:sessionId" element={<LiveClassPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
+          </ErrorBoundary>
         </main>
       </div>
 

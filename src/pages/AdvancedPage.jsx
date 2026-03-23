@@ -49,7 +49,7 @@ export default function AdvancedPage() {
                     className="btn btn-primary no-print"
                     id="test-spacetime-btn"
                     onClick={() => {
-                        console.log('Testing SpacetimeDB...');
+                        if (import.meta.env.DEV) console.log('Testing SpacetimeDB...');
                         try {
                             const client = getClient();
                             if (!client) throw new Error("SpacetimeDB client not initialized yet.");
@@ -66,11 +66,11 @@ export default function AdvancedPage() {
                             );
                             setTimeout(() => {
                                 const notes = Array.from(client.db.note.iter());
-                                console.log('Notes in DB:', notes);
+                                if (import.meta.env.DEV) console.log('Notes in DB:', notes);
                                 document.getElementById('spacetime-result').innerText = `Success! Found ${notes.length} note(s). Content: ${notes[0]?.title}`;
                             }, 500);
                         } catch (e) {
-                            console.error(e);
+                            if (import.meta.env.DEV) console.error(e);
                             document.getElementById('spacetime-result').innerText = 'Error: ' + e.message;
                         }
                     }}

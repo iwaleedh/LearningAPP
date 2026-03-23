@@ -119,7 +119,7 @@ export default function TeacherDashboard() {
 
         // Auto-run the note sync as requested by the AI
         setTimeout(() => {
-            console.log('Auto-triggering mass note sync...');
+            if (import.meta.env.DEV) console.log('Auto-triggering mass note sync...');
             handleSyncNotes();
         }, 3500);
     }, []);
@@ -215,7 +215,7 @@ export default function TeacherDashboard() {
                 navigate(`/live/${session.classId}`, { state: navState });
             }
         } catch (err) {
-            console.error('[LiveClass] Failed to create session:', err);
+            if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
         } finally {
             setShowStartModal(false);
         }

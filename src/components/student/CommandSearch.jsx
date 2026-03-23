@@ -1,23 +1,36 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, BookOpen, FlaskConical, FileQuestion, Hash, ArrowRight } from 'lucide-react';
+import { Search, BookOpen, FileQuestion, ArrowRight } from 'lucide-react';
+import { syllabusesBySubject } from '../../data/syllabusIndex';
 
-// Sample searchable items (will be driven by Convex data)
-const searchableItems = [
-    { type: 'chapter', title: 'Atomic Structure', path: '/chapters/1', icon: BookOpen },
-    { type: 'chapter', title: 'Chemical Bonding', path: '/chapters/2', icon: BookOpen },
-    { type: 'chapter', title: 'Stoichiometry', path: '/chapters/3', icon: BookOpen },
-    { type: 'chapter', title: 'States of Matter', path: '/chapters/4', icon: BookOpen },
-    { type: 'chapter', title: 'Chemical Energetics', path: '/chapters/5', icon: BookOpen },
-    { type: 'exercise', title: 'MCQ — Atomic Structure', path: '/exercises', icon: FlaskConical },
-    { type: 'exercise', title: 'Fill in the Blanks — Bonding', path: '/exercises', icon: FlaskConical },
-    { type: 'paper', title: '2024 Chemistry Paper 1', path: '/past-papers', icon: FileQuestion },
-    { type: 'paper', title: '2023 Chemistry Paper 2', path: '/past-papers', icon: FileQuestion },
-    { type: 'glossary', title: 'Isotope', path: '/chapters/1', icon: Hash },
-    { type: 'glossary', title: 'Electronegativity', path: '/chapters/2', icon: Hash },
-    { type: 'glossary', title: 'Mole', path: '/chapters/3', icon: Hash },
-    { type: 'glossary', title: 'Enthalpy', path: '/chapters/5', icon: Hash },
-];
+const SEARCH_SUBJECTS = ['chemistry', 'biology', 'physics', 'mathematics', 'economics', 'business', 'accounting'];
+const SUBJECT_LABELS = { chemistry: 'Chemistry', biology: 'Biology', physics: 'Physics', mathematics: 'Maths', economics: 'Economics', business: 'Business', accounting: 'Accounting' };
+
+function buildSearchIndex() {
+    const items = [];
+    SEARCH_SUBJECTS.forEach(subject => {
+        const syllabus = syllabusesBySubject[subject];
+        if (!syllabus) return;
+        (syllabus.units || []).forEach(unit => {
+            (unit.topics || []).forEach(topic => {
+                (topic.subtopics || []).forEach((sub, si) => {
+                    const title = typeof sub === 'string' ? sub : (sub.title || sub.name || '');
+                    if (title) {
+                        items.push({
+                            type: SUBJECT_LABELS[subject] || subject,
+                            title,
+                            path: `/notes/${subject}/${unit.id}/${topic.id}/${si}`,
+                            icon: BookOpen,
+                        });
+                    }
+                });
+            });
+        });
+    });
+    return items;
+}
+
+const searchableItems = buildSearchIndex();
 
 export default function CommandSearch({ onClose }) {
     const [query, setQuery] = useState('');

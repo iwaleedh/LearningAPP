@@ -1,22 +1,45 @@
-import { Flame, FlaskConical, Target } from 'lucide-react';
+import { Flame, FlaskConical, Target, BookOpen } from 'lucide-react';
 import BadgeSystem from '../components/gamification/BadgeSystem';
 import StreakTracker from '../components/gamification/StreakTracker';
 import Leaderboard from '../components/gamification/Leaderboard';
+import { syllabusesBySubject } from '../data/syllabusIndex';
+import { getReadNoteIds, getTotalReadCount } from '../hooks/useNoteReadStatus';
 import './Pages.css';
 
-const chapterProgress = [
-    { name: 'Atomic Structure', progress: 75 },
-    { name: 'Chemical Bonding', progress: 50 },
-    { name: 'Stoichiometry', progress: 30 },
-    { name: 'States of Matter', progress: 0 },
-    { name: 'Chemical Energetics', progress: 0 },
-    { name: 'Electrochemistry', progress: 0 },
+const SUBJECTS = [
+    { key: 'chemistry', label: 'Chemistry' },
+    { key: 'biology', label: 'Biology' },
+    { key: 'physics', label: 'Physics' },
+    { key: 'mathematics', label: 'Mathematics' },
+    { key: 'economics', label: 'Economics' },
+    { key: 'business', label: 'Business' },
+    { key: 'accounting', label: 'Accounting' },
 ];
 
-export default function ProgressPage() {
-    const overallProgress = Math.round(
-        chapterProgress.reduce((sum, c) => sum + c.progress, 0) / chapterProgress.length
+function countSyllabusNotes(syllabus) {
+    return (syllabus?.units || []).reduce(
+        (sum, unit) => sum + (unit.topics || []).reduce((t, topic) => t + (topic.subtopics || []).length, 0),
+        0
     );
+}
+
+function buildChapterProgress(readIds) {
+    return SUBJECTS.map(({ key, label }) => {
+        const syllabus = syllabusesBySubject[key];
+        const total = countSyllabusNotes(syllabus);
+        const read = [...readIds].filter(id => id.startsWith(`note:${key}:`)).length;
+        return { name: label, progress: total > 0 ? Math.round((read / total) * 100) : 0 };
+    });
+}
+
+export default function ProgressPage() {
+    const readIds = getReadNoteIds();
+    const totalRead = getTotalReadCount();
+    const chapterProgress = buildChapterProgress(readIds);
+
+    const overallProgress = chapterProgress.length > 0
+        ? Math.round(chapterProgress.reduce((sum, c) => sum + c.progress, 0) / chapterProgress.length)
+        : 0;
 
     const circumference = 2 * Math.PI * 60;
     const strokeDashoffset = circumference - (overallProgress / 100) * circumference;
@@ -63,8 +86,8 @@ export default function ProgressPage() {
 
                     {/* Quick stats */}
                     <div style={{ display: 'flex', gap: 'var(--space-4)', fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)' }}>
-                        <span><FlaskConical size={14} /> 2 exercises</span>
-                        <span><Target size={14} /> 1 paper</span>
+                        <span><BookOpen size={14} /> {totalRead} notes read</span>
+                        <span><Target size={14} /> {chapterProgress.filter(c => c.progress > 0).length} subjects started</span>
                     </div>
                 </div>
 

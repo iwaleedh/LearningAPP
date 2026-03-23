@@ -26,7 +26,9 @@ export async function initSpacetimeDB() {
         }
 
         builder.onConnect((conn, identity, tokenStr) => {
-            console.log('SpacetimeDB Connected!', { identity, token: tokenStr });
+            if (import.meta.env.DEV) {
+                console.log('SpacetimeDB Connected!', { identity: identity.toHexString() });
+            }
 
             if (tokenStr) {
                 localStorage.setItem(`spacetime-token-${SPACETIMEDB_URI}`, tokenStr);
@@ -46,7 +48,9 @@ export async function initSpacetimeDB() {
                     if (!user && !hasRequestedRegistration) {
                         hasRequestedRegistration = true;
                         const randomUsername = 'user_' + identity.toHexString().substring(0, 6) + '_' + Date.now();
-                        console.log('Registering new user:', randomUsername);
+                        if (import.meta.env.DEV) {
+                            console.log('Registering new user:', randomUsername);
+                        }
                         client.reducers.registerUser({ username: randomUsername });
                     } else if (user) {
                         hasRequestedRegistration = true; // prevent future triggers if user was found
@@ -80,7 +84,9 @@ export async function initSpacetimeDB() {
         });
 
         builder.onDisconnect(() => {
-            console.log('SpacetimeDB Disconnected!');
+            if (import.meta.env.DEV) {
+                console.log('SpacetimeDB Disconnected!');
+            }
         });
 
         builder.build();
