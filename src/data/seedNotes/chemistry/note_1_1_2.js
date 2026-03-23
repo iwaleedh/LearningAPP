@@ -289,19 +289,7 @@ export const note_chemistry_1_1_2 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Writing Chemical Equations',
-      subtitle: 'Chemistry Topic 1.2',
-      elements: [
-        { delay: 0, colSpan: 2, icon: '⚖️', title: 'Balancing Equations', html: 'Atoms cannot be created or destroyed. The number of atoms of each element must be identical on both sides of the arrow.' },
-        { delay: 1, colSpan: 1, icon: '🧪', title: 'State Symbols', html: '<strong>(s)</strong> = solid<br/><strong>(l)</strong> = liquid<br/><strong>(g)</strong> = gas<br/><strong>(aq)</strong> = aqueous (dissolved in water)' },
-        { delay: 2, colSpan: 3, icon: '⚔️', title: 'Ionic Equations', html: 'Simplest ionic equations show only the reacting species. Spectator ions are cancelled out.<br/><br/><em>Method:</em><ol><li>Write fully balanced equation with states.</li><li>Split (aq) ionic compounds into ions.</li><li>Cancel identical ions on both sides.</li></ol>' },
-        { delay: 3, colSpan: 3, icon: '🔥', title: 'Common Reaction Patterns', html: '• Acid + Base → Salt + Water<br/>• Acid + Carbonate → Salt + Water + CO₂<br/>• Metal + Acid → Salt + Hydrogen' }
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

@@ -106,29 +106,7 @@ export const note_chemistry_1_3_8 = {
       terms: ['Mean bond enthalpy', 'Endothermic', 'Exothermic']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Bond Length & Bond Strength',
-      subtitle: 'WCH11 — Chemistry Topic 3.8',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '📏', title: 'Bond Length', html: 'Distance between bonded nuclei.<br/><strong>Single > Double > Triple</strong> (length decreases with bond order).<br/>e.g. C–C: 154 pm; C=C: 134 pm; C≡C: 120 pm.' },
-        { delay: 1, colSpan: 1, icon: '💪', title: 'Bond Enthalpy', html: 'Energy to break 1 mol of bonds in gaseous molecules (kJ mol⁻¹).<br/><strong>Higher bond order → greater bond enthalpy.</strong><br/>C–C: 347; C=C: 612; C≡C: 838 kJ mol⁻¹.' },
-        { delay: 2, colSpan: 1, icon: '🔬', title: 'Factors Affecting Strength', html: 'Bond order: triple > double > single.<br/>Atom size: smaller atoms → shorter bonds → stronger.<br/>H–F (567) > H–Cl (432) > H–Br (366) > H–I (298) kJ mol⁻¹.' },
-        { delay: 3, colSpan: 2, icon: '🧮', title: 'Using Average Bond Enthalpies', html: 'ΔH ≈ Σ(bonds broken) − Σ(bonds formed)<br/>Breaking bonds = endothermic (+ve); forming bonds = exothermic (−ve).<br/>Values are <em>averages</em> — results are approximate (± a few kJ mol⁻¹).' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-8-1',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "KEY LIMITATION: Bond Enthalpies Are MEAN Values",
-        text: "Many students calculate \u0394H_rxn using mean bond enthalpies and expect an exact answer matching literature values. Examiners deduct marks if you ignore this caveat. The C\u2013H bond has slightly different enthalpies in different molecular environments. Always state: 'These are mean values' in your answer."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Bond order: single < double < triple. As bond order increases: length decreases (154→134→120 pm), enthalpy increases (347→614→839 kJ mol⁻¹). Reason: more shared pairs → stronger e⁻ attraction → shorter, stronger bond. Bond enthalpy values are mean values. Bond breaking = endothermic; formation = exothermic.',

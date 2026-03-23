@@ -213,29 +213,7 @@ export const note_chemistry_1_3_2 = {
       terms: ['Dative covalent bond', 'Coordinate bond']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Covalent Bonding',
-      subtitle: 'WCH11 — Chemistry Topic 3.2',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🤝', title: 'Covalent Bond', html: 'A <strong>shared pair of electrons</strong> between two atoms.<br/>Both nuclei attract the shared electrons.<br/>Occurs between non-metal atoms.' },
-        { delay: 1, colSpan: 1, icon: '🔢', title: 'Bond Types', html: '<strong>Single:</strong> 1 shared pair (e.g. H–H, Cl–Cl).<br/><strong>Double:</strong> 2 shared pairs (e.g. O=O, C=O).<br/><strong>Triple:</strong> 3 shared pairs (e.g. N≡N, C≡C).' },
-        { delay: 2, colSpan: 1, icon: '➡️', title: 'Dative (Coordinate) Bond', html: 'Both electrons in the shared pair come from the <strong>same atom</strong>.<br/>Shown by an arrow (→) from donor to acceptor.<br/>e.g. NH₄⁺: N donates lone pair to H⁺; also in Al₂Cl₆, CO.' },
-        { delay: 3, colSpan: 2, icon: '✏️', title: 'Dot-Cross Diagram Rules', html: '• Show outer-shell electrons only.<br/>• Dots from one atom, crosses from another.<br/>• Shared pairs in overlapping region between atoms.<br/>• Lone pairs on the atom (not shared).<br/>e.g. H₂O: 2 bonding pairs + 2 lone pairs on O.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-3',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "Show Outer-Shell Electrons ONLY & Don't Forget Lone Pairs",
-        text: "Students often draw all electrons (core + valence) or omit lone pairs, losing marks. Remember: <strong>Only draw electrons in the outermost shell.</strong> Every lone pair must be shown (as :: or \u2022 \u00d7) as they determine molecular shape in VSEPR. Double bonds: show as two pairs of dots/crosses side-by-side, not as a single line."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Covalent bond = electrostatic attraction of shared e⁻ pair to both nuclei. Single (1 pair), double (2 pairs), triple (3 pairs). More pairs → shorter, stronger bond. H₂O: 2 bonds + 2 lone pairs; NH₃: 3 bonds + 1 lone pair; CO₂: 2 double bonds, linear. Dative bond: both electrons from one atom.',

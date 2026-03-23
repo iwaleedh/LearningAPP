@@ -412,19 +412,7 @@ export const note_chemistry_1_1_9 = {
       data: { text: 'Acid reactions follow predictable patterns: metal → H₂ (squeaky pop); carbonate/hydrogencarbonate → CO₂ (limewater milky); alkali → no visible change, H⁺ + OH⁻ → H₂O. Gas tests: H₂ = squeaky pop, O₂ = relights splint, CO₂ = limewater milky, Cl₂ = bleaches litmus, NH₃ = turns red litmus blue. Displacement is redox — more reactive displaces less reactive; halogen trend F₂>Cl₂>Br₂>I₂, Cl₂+2Br⁻→2Cl⁻+Br₂ (orange-brown). Ion tests: BaCl₂/HCl → white BaSO₄ (SO₄²⁻); AgNO₃/HNO₃ → AgCl white/AgBr cream/AgI yellow (halides, distinguish with NH₃ solubility); yellow PbI₂. Flame tests: Na=yellow, K=lilac, Ca=orange-red, Ba=green, Li/Sr=crimson, Cu²⁺=blue-green. NaOH precipitate colours: Fe²⁺=green, Fe³⁺=rust-brown, Cu²⁺=pale blue, Al³⁺/Mg²⁺/Ca²⁺=white (Al³⁺ dissolves in excess). Nitrate decomposition: Group 1 (not Li) → nitrite+O₂; Li and Group 2 → oxide+NO₂+O₂.' }
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Equations from Observations',
-      subtitle: 'Chemistry Topic 1.9',
-      elements: [
-        { delay: 0, colSpan: 3, icon: '👀', title: 'Visual Observations', html: 'Whenever you write equations based on reactions, keep an eye on visible changes: effervescence (bubbles), colour changes, and precipitate formation.' },
-        { delay: 1, colSpan: 1, icon: '🫧', title: 'Gas Tests', html: '• <strong>H₂:</strong> Squeaky pop with lit splint.<br/>• <strong>O₂:</strong> Relights glowing splint.<br/>• <strong>CO₂:</strong> Turns limewater cloudy.' },
-        { delay: 2, colSpan: 1, icon: '⚔️', title: 'Displacement', html: 'A more reactive element takes the place of a less reactive element in a compound. e.g. Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)' },
-        { delay: 3, colSpan: 1, icon: '🌧️', title: 'Precipitation', html: 'Two aqueous solutions mix to form an insoluble solid. e.g. Ag⁺(aq) + Cl⁻(aq) → AgCl(s)' }
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

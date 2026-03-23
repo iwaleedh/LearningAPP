@@ -116,29 +116,7 @@ export const note_chemistry_1_3_6 = {
       terms: ['London dispersion force', 'Instantaneous dipole']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Simple Molecular Substances',
-      subtitle: 'WCH11 — Chemistry Topic 3.6',
-      elements: [
-        { delay: 0, colSpan: 2, icon: '🔬', title: 'Key Properties', html: '<strong>Low melting and boiling points</strong> — only weak intermolecular forces to overcome (covalent bonds within molecules remain intact).<br/><strong>Non-conductors</strong> — no free ions or electrons.<br/><strong>Solubility:</strong> "like dissolves like" — polar in polar solvents, non-polar in non-polar.' },
-        { delay: 1, colSpan: 1, icon: '📈', title: 'Boiling Point Trend', html: 'Increases with molecular mass — more electrons → stronger London dispersion forces.<br/>e.g. Noble gases: He < Ne < Ar < Kr (bp increases down Group 0).' },
-        { delay: 2, colSpan: 1, icon: '💧', title: 'Water & HF Exception', html: 'H₂O (bp 100°C) and HF (bp 20°C) anomalously high due to <strong>hydrogen bonding.</strong><br/>Compare H₂S bp = −60°C (only van der Waals forces).' },
-        { delay: 3, colSpan: 2, icon: '⛛️', title: 'Examples', html: '<strong>Non-polar:</strong> I₂ (sublimes 184°C), CH₄ (−161°C), Cl₂ (−34°C).<br/><strong>Polar:</strong> HCl (−85°C), SO₂ (−10°C), H₂O (100°C — hydrogen bonding elevates bp).<br/>Covalent bonds NOT broken during melting/boiling.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-6-1',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "EXAM TRAP: Melting \u2260 Breaking Covalent Bonds",
-        text: "Students frequently state that melting a simple molecular solid involves 'breaking covalent bonds.' This is WRONG and loses marks. When Cl\u2082(s) melts to Cl\u2082(l), ONLY the weak intermolecular London forces between molecules are broken. Each Cl\u2082 molecule remains intact \u2014 the covalent Cl\u2013Cl bond stays unbroken."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Simple molecular substances: discrete molecules with strong covalent bonds inside, weak IMF between. Properties: low m.p./b.p. (only IMF broken), non-conductors (no ions/free e⁻), "like dissolves like". Melting / boiling ≠ breaking covalent bonds. Trend: larger molecules → more electrons → stronger London forces → higher m.p. (F₂ < Cl₂ < Br₂ < I₂).',

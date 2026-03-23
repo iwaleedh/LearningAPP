@@ -282,29 +282,7 @@ export const note_chemistry_1_3_0 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Ionic Bonding',
-      subtitle: 'WCH11 — Chemistry Topic 3.0',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '⚡', title: 'Ion Formation', html: '<strong>Metals</strong> lose electrons → positive cations.<br/><strong>Non-metals</strong> gain electrons → negative anions.<br/>Driven by achieving noble gas electron configuration.' },
-        { delay: 1, colSpan: 1, icon: '🔗', title: 'Ionic Bond', html: 'Strong <strong>electrostatic attraction</strong> between oppositely charged ions.<br/>Non-directional — acts equally in all directions.<br/>e.g. Na⁺ + Cl⁻ → NaCl.' },
-        { delay: 2, colSpan: 1, icon: '✏️', title: 'Dot-Cross Diagrams', html: 'Show outer-shell electrons only.<br/>Use dots for one atom, crosses for the other.<br/>Draw brackets with charge outside: [Na]⁺ [❘Cl❘]⁻.' },
-        { delay: 3, colSpan: 2, icon: '🔬', title: 'Evidence for Ionic Species', html: 'X-ray diffraction → confirms regular lattice of alternating +/− ions.<br/>High melting points → strong ionic forces need lots of energy to break.<br/>Molten/aqueous solutions conduct electricity → free-moving ions carry charge.<br/>Crystals shatter when struck (like charges align at slip plane and repel).' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-1',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "Dot-and-Cross Diagrams: Charge Placement Marks",
-        text: "Examiners deduct marks if charges are shown <strong>inside</strong> the bracket instead of <strong>outside</strong>. Correct: [Na]\u207a and [Cl]\u207b. Also: show cations with <strong>zero outer-shell electrons</strong> \u2014 this proves complete transfer. Many students incorrectly leave electrons around the cation or fail to show the brackets at all, costing easy marks."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Ionic bond = electrostatic attraction between oppositely charged ions in a giant lattice. Metal loses e⁻ → cation; non-metal gains e⁻ → anion. Evidence: electrolysis (Cu²⁺/CrO₄²⁻ separate at electrodes), conductivity only when molten/aqueous, brittleness (layer shift → like charges repel), high m.p. (NaCl 801°C, MgO 2852°C), X-ray (6:6 lattice, spherical ions).',

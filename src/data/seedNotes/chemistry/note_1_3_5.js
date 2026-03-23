@@ -251,29 +251,7 @@ export const note_chemistry_1_3_5 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Bond Polarity & Electronegativity',
-      subtitle: 'WCH11 — Chemistry Topic 3.5',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🧲', title: 'Electronegativity', html: 'Ability of an atom to <strong>attract bonding electrons</strong> towards itself in a covalent bond.<br/>Pauling scale: F = 4.0 (highest); Cs/Fr ≈0.7 (lowest).<br/>Increases across period; decreases down group.' },
-        { delay: 1, colSpan: 1, icon: '🔄', title: 'Polar Bonds', html: 'Different electronegativities → unequal electron sharing.<br/>More electronegative atom gets partial negative charge <strong>δ−</strong>; the other gets <strong>δ+</strong>.<br/>e.g. Hδ+–Fδ− bond in HF.' },
-        { delay: 2, colSpan: 1, icon: '🔀', title: 'Polar vs Non-Polar Molecules', html: '<strong>Non-polar:</strong> symmetrical — dipoles cancel (CO₂, CCl₄, BF₃).<br/><strong>Polar:</strong> asymmetrical — net dipole moment (H₂O, HCl, NH₃, SO₂).' },
-        { delay: 3, colSpan: 2, icon: '💡', title: 'Dipole Moments & Symmetry', html: 'A <strong>dipole moment (μ)</strong> indicates overall polarity.<br/>Molecules with polar bonds can still be <em>non-polar</em> if geometry causes dipoles to cancel.<br/>e.g. BF₃: 3 polar B–F bonds, trigonal planar → dipoles cancel exactly → non-polar.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-6',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "Polar Bond \u2260 Polar Molecule (Symmetry Cancels Dipoles)",
-        text: "Frequent error: \"CO\u2082 is polar because C=O bonds are polar.\" <strong>The molecule is non-polar.</strong> Why? Symmetric linear structure: the two C=O dipole moments point in exactly opposite directions and <strong>cancel to zero.</strong> Similarly, CCl\u2084 has polar C\u2014Cl bonds but is non-polar due to tetrahedral symmetry. Test for overall polarity: <strong>consider both bond polarity AND molecular geometry.</strong>"
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Electronegativity: ability to attract shared electrons. F most EN (3.98); increases across period, decreases down group. Polar bond: Δ(EN) > 0.5. Molecule polar if bonds are polar AND shape is asymmetric. H₂O and HCl = polar; CO₂ and CCl₄ = non-polar (bonds cancel by symmetry).',

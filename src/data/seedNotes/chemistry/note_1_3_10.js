@@ -168,29 +168,7 @@ export const note_chemistry_1_3_10 = {
       terms: ['Hydrogen bond', 'Anomalous boiling point', 'Ice density']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Intermolecular Forces',
-      subtitle: 'WCH11 — Chemistry Topic 3.10',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '⚡', title: 'London Dispersion Forces', html: 'Present in <em>all</em> molecules (polar and non-polar).<br/>Caused by <strong>instantaneous dipoles</strong> inducing temporary dipoles in neighbours.<br/>Strength increases with number of electrons (more polarisable).' },
-        { delay: 1, colSpan: 1, icon: '⊕⊖', title: 'Permanent Dipole–Dipole', html: 'Between polar molecules with permanent δ+ and δ− ends.<br/>Stronger than London forces for molecules of similar mass.<br/>e.g. HCl, SO₂, CH₂Cl₂.' },
-        { delay: 2, colSpan: 1, icon: '💧', title: 'Hydrogen Bonding', html: 'Strongest intermolecular force.<br/>Requires H directly bonded to <strong>F, O, or N</strong>.<br/>H interacts with a lone pair on another F/O/N atom.<br/>e.g. H₂O, HF, NH₃, alcohols, DNA base pairs.' },
-        { delay: 3, colSpan: 2, icon: '📈', title: 'Effect on Boiling Point', html: '<strong>Strength order:</strong> London < dipole–dipole < hydrogen bonding.<br/>All IMF types increase with molecular size.<br/>H₂O bp (100°C) &gt;&gt; H₂S bp (−60°C) despite H₂S having larger Mᵣ — hydrogen bonding in H₂O dominates.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-10-1',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "H-BONDING CONDITIONS: Must Have BOTH Donor AND Acceptor",
-        text: "CRITICAL CONDITIONS: (1) H must be directly bonded to F, O, or N (\u03b4+H forms). (2) A lone pair on another F, O, or N atom must be present (as acceptor)."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Three IMF types: (1) London forces — instantaneous/induced dipoles, present in ALL substances, increase with electron count; (2) Permanent dipole-dipole — between polar molecules; (3) Hydrogen bonds — requires H directly on N/O/F, lone pair on N/O/F, strongest IMF (~10-40 kJ/mol). H-bonding explains water&#x2019;s high b.p. and ice density anomaly.',

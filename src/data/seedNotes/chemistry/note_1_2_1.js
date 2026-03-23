@@ -272,19 +272,7 @@ export const note_chemistry_1_2_1 = {
       data: { text: 'All relative masses are measured on the ¹²C = 12 scale. Relative isotopic mass = mass of one isotope atom relative to ¹⁄₁₂ ¹²C. Relative atomic mass (Aᵣ) = weighted average of all isotopic masses × their % abundances ÷ 100. Aᵣ is not a whole number because most elements have multiple isotopes with different abundances (weighted average), and nuclear binding energy means no individual isotope has a mass exactly equal to its mass number. Reverse problems: set up x and (100−x) algebra or use the 2-isotope shortcut % heavier = (Aᵣ − lighter)/(heavier − lighter) × 100. Check: abundances must sum to 100%; Aᵣ must lie between lightest and heaviest isotope mass.' }
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Isotopes & Relative Atomic Mass',
-      subtitle: 'WCH11 — Chemistry Topic 2.1',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🔄', title: 'Isotopes', html: 'Atoms with the <strong>same atomic number (Z)</strong> but <strong>different mass numbers (A)</strong>.<br/>Same element; different number of neutrons.<br/>e.g. ¹²C and ¹³C.' },
-        { delay: 1, colSpan: 2, icon: '⚖️', title: 'Relative Isotopic Mass', html: 'Mass of one isotope atom relative to <strong>¹⁄₁₂ of ¹²C</strong>.<br/>Close to, but not exactly, the mass number (due to nuclear binding energy).<br/><strong>Examples:</strong> ¹²C = 12.000; ³⁵Cl ≈ 34.97; ³⁷Cl ≈ 36.97.' },
-        { delay: 2, colSpan: 1, icon: '🎯', title: 'Carbon-12 Standard', html: '<strong>¹²C = exactly 12</strong> by definition (IUPAC, 1961).<br/>All relative masses are on this scale.<br/>Ensures consistent international measurements.' },
-        { delay: 3, colSpan: 2, icon: '🧮', title: 'Calculating Aᵣ', html: '<strong>Aᵣ = Σ (isotopic mass × % abundance) ÷ 100</strong><br/><br/>e.g. Chlorine (75.77% ³⁵Cl; 24.23% ³⁷Cl):<br/>Aᵣ = (34.97×75.77 + 36.97×24.23) ÷ 100 = <strong>35.45</strong>' },
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

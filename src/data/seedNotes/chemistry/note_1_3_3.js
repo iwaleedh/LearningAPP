@@ -152,29 +152,7 @@ export const note_chemistry_1_3_3 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Metallic Bonding',
-      subtitle: 'WCH11 — Chemistry Topic 3.3',
-      elements: [
-        { delay: 0, colSpan: 2, icon: '🌊', title: 'Sea of Delocalised Electrons', html: 'Metal cations in a <strong>regular close-packed lattice</strong>, surrounded by a <strong>sea of delocalised electrons.</strong><br/>Metallic bond = electrostatic attraction between cations and the electron sea.' },
-        { delay: 1, colSpan: 1, icon: '⚡', title: 'Electrical Conductivity', html: 'Delocalised electrons are free to move → conducts electricity in <strong>all states</strong>.<br/>(Unlike ionic: only conducts when liquid or aqueous.)' },
-        { delay: 2, colSpan: 1, icon: '🔨', title: 'Malleability & Ductility', html: 'Layers of cations slide over each other — the electron sea readjusts.<br/>No brittle fracture as in ionic lattices.' },
-        { delay: 3, colSpan: 2, icon: '🌡️', title: 'Strength & Melting Point', html: '<strong>More delocalised electrons → stronger bond → higher mp.</strong><br/>e.g. Mg (charge 2+, 2 delocalised e⁻): mp 650°C vs Na (charge 1+, 1 e⁻): mp 98°C.<br/>W (tungsten): mp 3422°C — highest of all metals.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-4',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: "Metallic Bonding: Why Metals Are Ductile (Unlike Ionic Compounds)",
-        text: "Examiners test whether you understand the fundamental difference: when ionic layers shift, like-charged ions repel \u2192 fracture. When metallic layers shift, the <strong>delocalised electron sea rearranges</strong> \u2192 no repulsion, no breaks. This is why <strong>metals can be hammered and drawn into wires while ionic compounds shatter.</strong> Mention the electron sea flow in your answer for full marks."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Metallic bond = electrostatic attraction between lattice of positive metal ions and a sea of delocalised electrons. Properties: good conductor (free e⁻), malleable (layers slide, e⁻ rearrange), high m.p. (many strong forces to break). Trend Na < Mg < Al: more valence e⁻, higher cation charge, smaller radius → stronger bonding.',

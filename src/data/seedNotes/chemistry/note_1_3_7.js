@@ -127,29 +127,7 @@ export const note_chemistry_1_3_7 = {
       terms: ['Delocalised electrons', 'Sigma bond', 'Pi bond']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Giant Covalent Structures',
-      subtitle: 'WCH11 — Chemistry Topic 3.7',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '💎', title: 'Diamond', html: 'Each C bonded to <strong>4 C atoms</strong> (tetrahedral, 109.5°).<br/>Giant 3D covalent lattice.<br/><strong>Hardest natural substance</strong> — mp ≈3550°C.<br/>Non-conductor (no free electrons).' },
-        { delay: 1, colSpan: 1, icon: '✏️', title: 'Graphite', html: 'Each C bonded to <strong>3 C atoms</strong> (trigonal planar, 120°) in hexagonal layers.<br/>4th electron <strong>delocalised</strong> between layers → good electrical conductor.<br/>Layers held by weak van der Waals forces → slippery/lubricant.' },
-        { delay: 2, colSpan: 1, icon: '🏖️', title: 'Silicon Dioxide (SiO₂)', html: 'Each Si bonded to <strong>4 O atoms</strong> in giant tetrahedral lattice.<br/>mp ≈1650°C — very high.<br/>Hard, brittle, non-conductor. Found in quartz/sand.' },
-        { delay: 3, colSpan: 2, icon: '📊', title: 'vs Simple Molecules', html: '<strong>Giant covalent:</strong> very high mp/bp, hard, non-conductor (except graphite), insoluble.<br/><strong>Simple molecular:</strong> low mp/bp, soft, always non-conductor, solubility varies.<br/><em>Key:</em> giant structures require breaking many strong covalent bonds to melt.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-7-1',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: "EXAMINER REPORT: Why Graphite Conducts",
-        text: "Examiners report that many students write 'graphite conducts because it is a giant structure' or 'because electrons are delocalised' without precision. The key: each carbon in graphite forms only 3 \u03c3 bonds. The 4th valence electron occupies a delocalised \u03c0 orbital above/below the hexagonal layers. These mobile \u03c0 electrons carry charge."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Diamond: each C with 4 cov. bonds, tetrahedral (109.5°), hardest substance, non-conductor, very high m.p. Graphite: each C with 3 cov. bonds (120°), layered hexagons, delocalised π e⁻ → conductor, layers slide → lubricant. SiO₂: 3D network Si–O bonds, empirical formula, high m.p. All giant covalent structures: high m.p., non-conductors (except graphite).',

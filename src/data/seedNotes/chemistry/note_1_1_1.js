@@ -250,19 +250,7 @@ export const note_chemistry_1_1_1 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'The Mole & Avogadro Constant',
-      subtitle: 'Chemistry Topic 1.1',
-      elements: [
-        { delay: 0, colSpan: 2, icon: '⚖️', title: 'The Mole (mol)', html: 'The unit for amount of substance. 1 mole contains exactly <strong>6.02 × 10²³</strong> particles (atoms, molecules, or ions).' },
-        { delay: 1, colSpan: 1, icon: '📈', title: 'Avogadro Constant (L)', html: 'The number of particles per mole: <strong>L = 6.02 × 10²³ mol⁻¹</strong>.' },
-        { delay: 2, colSpan: 1, icon: '🧮', title: 'Molar Mass (M)', html: 'The mass per mole of a substance. Units: <strong>g mol⁻¹</strong>. Numerically equal to the Aᵣ or Mᵣ.' },
-        { delay: 3, colSpan: 2, icon: '📐', title: 'Key Equation: Mass to Moles', html: 'Amount of substance (n) = Mass (m) ÷ Molar Mass (M)<br/><br/><div style="text-align:center;font-size:1.2em;"><strong>n = <span class="nb-frac"><span class="nb-num">m</span><span class="nb-den">M</span></span></strong></div>' }
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

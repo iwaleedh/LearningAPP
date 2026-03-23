@@ -548,19 +548,7 @@ export const note_chemistry_1_2_8 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Periodic Trends in Properties',
-      subtitle: 'WCH11 — Chemistry Topic 2.8',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '📏', title: 'Atomic Radius', html: '<strong>Across Period:</strong> decreases left → right (more protons, same shielding, greater pull on electrons).<br/><strong>Down Group:</strong> increases (extra electron shells added).' },
-        { delay: 1, colSpan: 1, icon: '⚡', title: 'Ionisation Energy', html: '<strong>Across Period:</strong> generally increases (greater nuclear charge, smaller radius).<br/><strong>Down Group:</strong> decreases (more shielding, greater distance from nucleus).' },
-        { delay: 2, colSpan: 1, icon: '🧲', title: 'Electronegativity', html: '<strong>Across Period:</strong> increases left → right.<br/><strong>Down Group:</strong> decreases.<br/>Fluorine (F) is most electronegative (Pauling: 4.0).' },
-        { delay: 3, colSpan: 3, icon: '🌡️', title: 'Period 3 Melting Points', html: '<strong>Na → Al:</strong> increases — metallic bonding strengthens (more delocalised e⁻, higher nuclear charge).<br/><strong>Si:</strong> very high (≈1410°C) — giant covalent lattice, many strong covalent bonds to break.<br/><strong>P₄, S₈, Cl₂, Ar:</strong> low — simple molecular; only weak van der Waals forces to overcome.' },
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

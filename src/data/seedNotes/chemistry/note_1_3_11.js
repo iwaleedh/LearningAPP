@@ -120,29 +120,7 @@ export const note_chemistry_1_3_11 = {
       terms: ['Systematic error', 'Extrapolation']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Core Practical 2: Calorimetry',
-      subtitle: 'WCH11 — Chemistry Topic 3.11',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🧪', title: 'Aim', html: 'Measure the <strong>enthalpy change (ΔH)</strong> of a reaction using a simple calorimeter.<br/>e.g. neutralisation of acid & alkali, or dissolving a salt.' },
-        { delay: 1, colSpan: 1, icon: '🧮', title: 'Key Formula', html: '<strong>q = mcΔT</strong><br/>q = heat energy (J)<br/>m = mass of solution (g)<br/>c = 4.18 J g⁻¹ K⁻¹ (specific heat capacity of water)<br/>ΔT = T₂ − T₁' },
-        { delay: 2, colSpan: 1, icon: '📋', title: 'Method Summary', html: '1. Measure volumes/masses.<br/>2. Record initial temperature T₁.<br/>3. Mix reactants; stir; record max/min temperature T₂.<br/>4. Calculate ΔT, then q = mcΔT.<br/>5. Convert q to ΔH per mole.' },
-        { delay: 3, colSpan: 2, icon: '⚠️', title: 'Sources of Error & Improvements', html: '<strong>Heat loss to surroundings:</strong> use polystyrene cup, lid, draught shield.<br/><strong>Heat capacity of calorimeter ignored:</strong> slight underestimate of |ΔH|.<br/><strong>Extrapolation method:</strong> plot temperature vs time and extrapolate back to mixing point for accurate ΔT.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-11-1',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "SIGN CONVENTION: \u0394H = \u2212q/n (Don't Forget the Negative!)",
-        text: "Examiners mark this as a common error: students write \u0394H = q/n and lose marks. THE RULE: when temperature rises (exothermic reaction), q is POSITIVE (solution gained heat). But \u0394H must be NEGATIVE for exothermic."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Calorimetry: q = mcΔT (c = 4.18 J g⁻¹ K⁻¹ for dilute soln). ΔH = −q/n. Sign: T rises → exothermic (ΔH negative). T falls → endothermic (ΔH positive). Errors: heat loss, ignoring cup heat capacity, density/c assumptions. Improvements: lid, extrapolation from T-time graph, polystyrene cup.',

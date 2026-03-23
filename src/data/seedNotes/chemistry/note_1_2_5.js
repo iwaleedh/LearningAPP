@@ -346,20 +346,7 @@ export const note_chemistry_1_2_5 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Atomic Model Development',
-      subtitle: 'WCH11 — Chemistry Topic 2.5',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🪨', title: 'Dalton (1803)', html: 'Atoms are <strong>indivisible solid spheres.</strong><br/>Each element has one unique type of atom.<br/>Compounds = atoms in fixed whole-number ratios.<br/><em>Disproved by electron discovery.</em>' },
-        { delay: 1, colSpan: 1, icon: '🍮', title: 'Thomson (1897)', html: '<strong>Plum pudding model.</strong><br/>Discovered electrons via cathode ray tube.<br/>Positive charge spread uniformly; electrons embedded throughout.' },
-        { delay: 2, colSpan: 1, icon: '🎯', title: 'Rutherford (1911)', html: '<strong>Nuclear model</strong> from gold foil experiment.<br/>Most α-particles passed straight through.<br/>Small, dense, positively charged <strong>nucleus</strong> at centre; mostly empty space.' },
-        { delay: 3, colSpan: 1, icon: '🔵', title: 'Bohr (1913)', html: 'Electrons orbit in <strong>fixed energy levels (shells).</strong><br/>Explains hydrogen emission spectrum — electrons jump between shells, emitting/absorbing specific wavelengths.' },
-        { delay: 4, colSpan: 2, icon: '🌀', title: 'Modern Quantum Model', html: 'Electrons exist in <strong>orbitals</strong> — probability regions, not fixed orbits.<br/>Subshells s, p, d, f with distinct shapes.<br/>Heisenberg uncertainty: cannot simultaneously know exact position and momentum.' },
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

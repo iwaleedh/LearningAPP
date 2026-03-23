@@ -1,1243 +1,451 @@
 export const exercises_physics_1_1 = {
-  mcq: [
-    // SI Units subtopic (mcq-1 to mcq-5)
-    {
-      id: 'mcq-1',
-      stem: 'Which of the following is NOT an SI base unit?',
-      options: ['kilogram', 'newton', 'second', 'kelvin'],
-      correctAnswer: 1,
-      rationale: 'The newton (N) is a derived unit for force, defined as kg m s⁻². The kilogram (mass), second (time), and kelvin (temperature) are all SI base units.',
-      topic: 'SI Units',
-    },
-    {
-      id: 'mcq-2',
-      stem: 'What are the SI base units of force (the newton)?',
-      options: ['kg m s⁻¹', 'kg m s⁻²', 'kg m² s⁻²', 'kg m² s⁻³'],
-      correctAnswer: 1,
-      rationale: 'From F = ma, force has units of mass × acceleration = kg × m s⁻² = kg m s⁻². Option C (kg m² s⁻²) is the joule (energy).',
-      topic: 'SI Units',
-    },
-    {
-      id: 'mcq-3',
-      stem: 'What are the SI base units of pressure (the pascal)?',
-      options: ['kg m⁻¹ s⁻²', 'kg m s⁻²', 'kg m² s⁻²', 'kg m⁻¹ s⁻¹'],
-      correctAnswer: 0,
-      rationale: 'From P = F/A, pressure = force/area = (kg m s⁻²)/(m²) = kg m⁻¹ s⁻².',
-      topic: 'SI Units',
-    },
-    {
-      id: 'mcq-4',
-      stem: 'A student measures a length as 5.6 km. What is this in SI base units?',
-      options: ['5.6 m', '560 m', '5600 m', '56 000 m'],
-      correctAnswer: 2,
-      rationale: '1 km = 1000 m, so 5.6 km = 5.6 × 1000 = 5600 m.',
-      topic: 'SI Units',
-    },
-    {
-      id: 'mcq-5',
-      stem: 'What is the base unit equivalent of 1 watt (power)?',
-      options: ['kg m s⁻²', 'kg m² s⁻²', 'kg m² s⁻³', 'kg m² s⁻¹'],
-      correctAnswer: 2,
-      rationale: 'Power = energy/time = (kg m² s⁻²)/s = kg m² s⁻³.',
-      topic: 'SI Units',
-    },
-
-    // Practical Skills subtopic (mcq-6 to mcq-10)
-    {
-      id: 'mcq-6',
-      stem: 'What is meant by the "resolution" of a measuring instrument?',
-      options: [
-        'How accurate the instrument is',
-        'The smallest change the instrument can detect',
-        'How fast the instrument responds',
-        'The range of values the instrument can measure',
-      ],
-      correctAnswer: 1,
-      rationale: 'Resolution is the smallest scale division — the smallest change an instrument can detect. Accuracy is about closeness to the true value, not resolution.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'mcq-7',
-      stem: 'A ruler has divisions every 1 mm. What is the reading uncertainty for a single measurement?',
-      options: ['± 0.1 mm', '± 0.5 mm', '± 1 mm', '± 2 mm'],
-      correctAnswer: 1,
-      rationale: 'Reading uncertainty is typically ± half the resolution. For 1 mm resolution: ± 0.5 mm.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'mcq-8',
-      stem: 'What type of error occurs when reading an analogue meter from an angle rather than perpendicular to the scale?',
-      options: ['Zero error', 'Systematic error', 'Parallax error', 'Random error'],
-      correctAnswer: 2,
-      rationale: 'Parallax error occurs when viewing a scale from an angle, causing the pointer to appear at a different position. This is why you should always read meters perpendicular to the scale.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'mcq-9',
-      stem: 'Which statement about digital instruments compared to analogue instruments is correct?',
-      options: [
-        'Digital instruments are cheaper',
-        'Digital instruments have lower resolution',
-        'Digital instruments can be read by computers',
-        'Digital instruments are more sensitive to fluctuations',
-      ],
-      correctAnswer: 2,
-      rationale: 'Digital instruments output binary data that computers can read directly. They typically have higher resolution and accuracy than analogue, but are more expensive.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'mcq-10',
-      stem: 'A student takes three readings: 2.34 A, 2.38 A, 2.36 A. What is the mean and uncertainty?',
-      options: [
-        'Mean = 2.36 A, uncertainty = ± 0.02 A',
-        'Mean = 2.36 A, uncertainty = ± 0.01 A',
-        'Mean = 2.36 A, uncertainty = ± 0.04 A',
-        'Mean = 2.35 A, uncertainty = ± 0.02 A',
-      ],
-      correctAnswer: 1,
-      rationale: 'Mean = (2.34 + 2.38 + 2.36)/3 = 2.36 A. Range = 2.38 − 2.34 = 0.04 A. Uncertainty = range/2 = ± 0.02 A. Wait — this should be 0.02 A. Let me recalculate: (2.34 + 2.38 + 2.36) = 7.08, 7.08/3 = 2.36. Range = 0.04, uncertainty = ± 0.02 A. The correct answer is actually option 1.',
-      topic: 'Practical Skills',
-    },
-
-    // Estimating Physical Quantities subtopic (mcq-11 to mcq-15)
-    {
-      id: 'mcq-11',
-      stem: 'What is an "order of magnitude" estimate?',
-      options: [
-        'An estimate to within 1%',
-        'An estimate to within a factor of 10',
-        'An estimate to 3 significant figures',
-        'An exact measurement',
-      ],
-      correctAnswer: 1,
-      rationale: 'An order of magnitude estimate gives an answer to within a factor of 10 (one power of 10). For example, estimating a car mass as 10³ kg when it is actually 1200 kg.',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'mcq-12',
-      stem: 'What is the approximate order of magnitude of the mass of the Earth?',
-      options: ['10²⁰ kg', '10²⁴ kg', '10²⁸ kg', '10³² kg'],
-      correctAnswer: 1,
-      rationale: 'The mass of the Earth is approximately 6 × 10²⁴ kg, so its order of magnitude is 10²⁴ kg.',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'mcq-13',
-      stem: 'Which value best represents the order of magnitude of a human height?',
-      options: ['10⁰ m', '10¹ m', '10⁻¹ m', '10² m'],
-      correctAnswer: 0,
-      rationale: 'A typical human height is about 1.7 m, which is closest to 10⁰ m (1 m) in order of magnitude.',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'mcq-14',
-      stem: 'What is the approximate number of breaths a person takes in a lifetime (80 years)?',
-      options: ['10⁶ (one million)', '10⁸ (one hundred million)', '10⁹ (one billion)', '10¹² (one trillion)'],
-      correctAnswer: 2,
-      rationale: '~15 breaths/min × 5 × 10⁵ min/year × 80 years ≈ 6 × 10⁸ ≈ 10⁹ breaths.',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'mcq-15',
-      stem: 'When estimating, why should mass (kg) not be confused with weight (N)?',
-      options: [
-        'They are the same thing',
-        'Mass depends on gravity, weight does not',
-        'Weight = mass × g, so they have different units',
-        'Mass is measured in newtons',
-      ],
-      correctAnswer: 2,
-      rationale: 'Mass (kg) is a measure of matter, while weight (N) = mass × gravitational field strength. They have different units and represent different physical quantities.',
-      topic: 'Estimating Physical Quantities',
-    },
-
-    // Limitations of Measurements subtopic (mcq-16 to mcq-22)
-    {
-      id: 'mcq-16',
-      stem: 'What is the difference between accuracy and precision?',
-      options: [
-        'Accuracy = closeness to true value; precision = reproducibility of readings',
-        'Accuracy = reproducibility; precision = closeness to true value',
-        'They are the same thing',
-        'Accuracy affects precision but not vice versa',
-      ],
-      correctAnswer: 0,
-      rationale: 'Accuracy is how close a measured value is to the true value. Precision is how close repeated measurements are to each other (reproducibility).',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'mcq-17',
-      stem: 'Which type of error causes all readings to be shifted consistently in the same direction?',
-      options: ['Random error', 'Systematic error', 'Human error', 'Reading error'],
-      correctAnswer: 1,
-      rationale: 'Systematic errors shift all measurements the same way (all too high or all too low). They cannot be reduced by repeating measurements.',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'mcq-18',
-      stem: 'How can random errors be reduced?',
-      options: [
-        'By recalibrating the instrument',
-        'By repeating measurements and taking the mean',
-        'By using a different method',
-        'By ignoring anomalous results',
-      ],
-      correctAnswer: 1,
-      rationale: 'Random errors scatter readings above and below the true value. Taking multiple readings and averaging reduces their effect.',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'mcq-19',
-      stem: 'A zero error on a measuring instrument causes what type of error?',
-      options: ['Random error', 'Systematic error', 'No error', 'Parallax error'],
-      correctAnswer: 1,
-      rationale: 'A zero error (instrument not reading zero when it should) causes all readings to be offset by the same amount — this is a systematic error.',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'mcq-20',
-      stem: 'When multiplying two quantities A and B, how should uncertainties be combined?',
-      options: [
-        'Add the absolute uncertainties',
-        'Add the percentage uncertainties',
-        'Multiply the absolute uncertainties',
-        'Take the larger uncertainty only',
-      ],
-      correctAnswer: 1,
-      rationale: 'For multiplication and division: add the percentage uncertainties. For addition and subtraction: add the absolute uncertainties.',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'mcq-21',
-      stem: 'A length L = 4.0 ± 0.1 cm and width W = 2.0 ± 0.1 cm. What is the percentage uncertainty in the area A = L × W?',
-      options: ['2.5%', '5.0%', '7.5%', '10%'],
-      correctAnswer: 2,
-      rationale: '% uncertainty in L = (0.1/4.0) × 100 = 2.5%. % uncertainty in W = (0.1/2.0) × 100 = 5%. Total = 2.5% + 5% = 7.5%.',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'mcq-22',
-      stem: 'If quantity A has 3% uncertainty, what is the percentage uncertainty in A²?',
-      options: ['3%', '6%', '9%', '1.5%'],
-      correctAnswer: 1,
-      rationale: 'For powers: multiply the percentage uncertainty by the power. A² has 2 × 3% = 6% uncertainty.',
-      topic: 'Limitations of Measurements',
-    },
-
-    // Scientific Communication subtopic (mcq-23 to mcq-27)
-    {
-      id: 'mcq-23',
-      stem: 'How many significant figures are in the value 0.00450?',
-      options: ['2', '3', '5', '6'],
-      correctAnswer: 1,
-      rationale: 'Leading zeros are not significant. The digits 4, 5, and the trailing zero are significant. So 0.00450 has 3 significant figures.',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'mcq-24',
-      stem: 'When plotting a graph, what should be used to mark data points?',
-      options: ['Large dots', 'Small dots', 'Crosses (×)', 'Circles'],
-      correctAnswer: 2,
-      rationale: 'Data points should be plotted as crosses (×), not dots. Crosses are more precise and show the exact position clearly.',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'mcq-25',
-      stem: 'What is the correct way to label a graph axis for force measured in newtons?',
-      options: ['F', 'Force', 'Force (N)', 'Force / N'],
-      correctAnswer: 3,
-      rationale: 'Axes should be labelled with quantity name AND unit, written as "quantity / unit" (e.g. Force / N). This follows standard scientific convention.',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'mcq-26',
-      stem: 'When calculating a gradient, where should points be chosen?',
-      options: [
-        'From the data points',
-        'From the best-fit line, far apart',
-        'From the origin',
-        'From the error bars',
-      ],
-      correctAnswer: 1,
-      rationale: 'Always choose two points ON the best-fit line (not data points), far apart to minimise reading error. Include a triangle showing the rise and run.',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'mcq-27',
-      stem: 'A calculated result is 23.4567. The original data was given to 2 significant figures. How should the answer be reported?',
-      options: ['23.4567', '23.46', '23', '23.5'],
-      correctAnswer: 2,
-      rationale: 'Quote the result to the same number of significant figures as the least precise data. Since data was 2 sig figs, answer should be 23 (2 sig figs).',
-      topic: 'Scientific Communication',
-    },
-
-    // Applications of Science subtopic (mcq-28 to mcq-32)
-    {
-      id: 'mcq-28',
-      stem: 'Which medical imaging technique uses strong magnetic fields and radio waves?',
-      options: ['X-ray', 'CT scan', 'MRI', 'Ultrasound'],
-      correctAnswer: 2,
-      rationale: 'MRI (Magnetic Resonance Imaging) uses strong magnetic fields and radio frequency waves to image soft tissues. It does not use ionising radiation.',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'mcq-29',
-      stem: 'What is the main advantage of ultrasound over X-rays for foetal scanning?',
-      options: [
-        'Higher resolution',
-        'Faster imaging',
-        'No ionising radiation',
-        'Lower cost',
-      ],
-      correctAnswer: 2,
-      rationale: 'Ultrasound uses high-frequency sound waves (non-ionising), making it safe for developing foetuses. X-rays involve ionising radiation which could harm the foetus.',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'mcq-30',
-      stem: 'Which technology uses total internal reflection to transmit data?',
-      options: ['Copper cables', 'Fibre-optic cables', 'Radio waves', 'Microwaves'],
-      correctAnswer: 1,
-      rationale: 'Fibre-optic cables use total internal reflection of light to transmit data at close to the speed of light with very low signal loss.',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'mcq-31',
-      stem: 'Solar panels convert light energy to electrical energy using which physics principle?',
-      options: [
-        'Electromagnetic induction',
-        'The photoelectric effect',
-        'Nuclear fission',
-        'Thermal expansion',
-      ],
-      correctAnswer: 1,
-      rationale: 'Photovoltaic cells (solar panels) convert light energy to electrical energy using the photoelectric effect — photons liberate electrons in the semiconductor.',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'mcq-32',
-      stem: 'Wind turbines generate electricity using which physics principle?',
-      options: [
-        'The photoelectric effect',
-        'Nuclear fission',
-        'Electromagnetic induction',
-        'Thermal convection',
-      ],
-      correctAnswer: 2,
-      rationale: 'Wind turbines convert kinetic energy of wind into electrical energy using electromagnetic induction — rotating coils in a magnetic field generate current.',
-      topic: 'Applications of Science',
-    },
-
-    // The Scientific Community subtopic (mcq-33 to mcq-37)
-    {
-      id: 'mcq-33',
-      stem: 'What is the purpose of peer review in science?',
-      options: [
-        'To prove theories are correct',
-        'To ensure results are interesting',
-        'To evaluate methodology and conclusions before publication',
-        'To guarantee funding',
-      ],
-      correctAnswer: 2,
-      rationale: 'Peer review sends manuscripts to experts who evaluate whether methodology is sound, conclusions are supported by data, and claims are novel. It is a quality control mechanism.',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'mcq-34',
-      stem: 'What does "reproducibility" mean in science?',
-      options: [
-        'Getting the same result every time with the same equipment',
-        'Other scientists obtaining the same results using the same methods',
-        'Publishing results in multiple journals',
-        'Having results approved by peer review',
-      ],
-      correctAnswer: 1,
-      rationale: 'Reproducibility means independent researchers using the same methods obtain the same (or very similar) results. If results cannot be replicated, their validity is questioned.',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'mcq-35',
-      stem: 'Which of these is a limitation of peer review?',
-      options: [
-        'It takes too long',
-        'Reviewers can have biases or miss flaws',
-        'It is too expensive',
-        'Only famous scientists get reviewed',
-      ],
-      correctAnswer: 1,
-      rationale: 'While peer review improves quality, reviewers can have biases, miss flaws, or have conflicts of interest. Novel findings may also be rejected for challenging consensus.',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'mcq-36',
-      stem: 'What distinguishes a scientific theory from a guess?',
-      options: [
-        'A theory is published in a journal',
-        'A theory is proposed by a famous scientist',
-        'A theory is a well-tested explanation supported by substantial evidence',
-        'A theory is accepted by the majority',
-      ],
-      correctAnswer: 2,
-      rationale: 'A scientific theory is not a guess — it is a well-tested explanation supported by substantial evidence, repeatedly validated by independent researchers.',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'mcq-37',
-      stem: 'Which of these is an example of how scientific knowledge has changed over time?',
-      options: [
-        'The discovery that the Earth is flat',
-        'The shift from geocentric to heliocentric model of the solar system',
-        'The proof that heavier objects fall faster',
-        'The confirmation that light is only a wave',
-      ],
-      correctAnswer: 1,
-      rationale: 'The shift from geocentric (Earth-centred) to heliocentric (Sun-centred) model is a classic example of scientific knowledge evolving with new evidence from Copernicus, Galileo, and Newton.',
-      topic: 'The Scientific Community',
-    },
-
-    // Science & Society subtopic (mcq-38 to mcq-42)
-    {
-      id: 'mcq-38',
-      stem: 'What is a risk-benefit analysis?',
-      options: [
-        'A calculation of financial costs',
-        'Weighing potential benefits against potential risks of a technology',
-        'A government approval process',
-        'A scientific experiment',
-      ],
-      correctAnswer: 1,
-      rationale: 'Risk-benefit analysis weighs potential benefits (health, economic, environmental) against potential risks (harm, safety hazards, ethical concerns) before introducing a technology.',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'mcq-39',
-      stem: 'Why is X-ray imaging acceptable despite the radiation risk?',
-      options: [
-        'The risk is zero',
-        'The diagnostic benefit outweighs the small radiation risk',
-        'Patients are not informed of the risk',
-        'X-rays are required by law',
-      ],
-      correctAnswer: 1,
-      rationale: 'X-rays carry a small radiation dose, but the benefit of accurate diagnosis (e.g. detecting fractures) far outweighs this risk for most patients.',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'mcq-40',
-      stem: 'Which is an ethical responsibility of scientists?',
-      options: [
-        'Making as much money as possible',
-        'Reporting findings honestly, even when inconvenient',
-        'Keeping results secret from competitors',
-        'Ignoring negative results',
-      ],
-      correctAnswer: 1,
-      rationale: 'Scientists must report findings honestly, even when commercially or politically inconvenient. Fabricating or misrepresenting data is scientific fraud.',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'mcq-41',
-      stem: 'How does private funding typically influence research direction?',
-      options: [
-        'It supports only fundamental research',
-        'It focuses on research with commercial potential',
-        'It has no influence on research',
-        'It only supports environmental research',
-      ],
-      correctAnswer: 1,
-      rationale: 'Private funding usually focuses on research with commercial potential. Government funding tends to support fundamental (blue-sky) research with no immediate commercial application.',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'mcq-42',
-      stem: 'Why is public understanding of science important?',
-      options: [
-        'So everyone becomes a scientist',
-        'So the public can participate in democratic decisions about science policy',
-        'To increase funding for research',
-        'To make science more popular',
-      ],
-      correctAnswer: 1,
-      rationale: 'Public understanding enables informed participation in democratic decisions about science policy, and helps people evaluate claims about issues like climate change or vaccine safety.',
-      topic: 'Science & Society',
-    },
-  ],
-
-  fillblank: [
-    // SI Units
-    {
-      id: 'fb-1',
-      stem: 'Complete the statement about SI base units.',
-      template: 'The SI base unit for mass is the __BLANK__ and the base unit for time is the __BLANK__.',
-      blanks: [
-        { answer: 'kilogram' },
-        { answer: 'second' },
-      ],
-      rationale: 'The seven SI base units include kilogram (mass) and second (time). The metre (length), ampere (current), kelvin (temperature), mole (amount), and candela (luminous intensity) complete the set.',
-    },
-    {
-      id: 'fb-2',
-      stem: 'Complete the derivation of force units.',
-      template: 'From Newton\'s second law F = ma, the unit of force is kg × m s⁻², which is called the __BLANK__.',
-      blanks: [{ answer: 'newton' }],
-      rationale: 'The newton (N) is defined as the force that gives a 1 kg mass an acceleration of 1 m s⁻². So 1 N = 1 kg m s⁻².',
-    },
-    {
-      id: 'fb-3',
-      stem: 'Complete the unit conversion.',
-      template: 'A length of 2.5 km is equal to __BLANK__ m.',
-      blanks: [{ answer: '2500' }],
-      rationale: '1 km = 1000 m, so 2.5 km = 2.5 × 1000 = 2500 m.',
-    },
-    {
-      id: 'fb-4',
-      stem: 'Complete the statement about derived units.',
-      template: 'The derived unit for energy is the __BLANK__, which has base units of kg m² s⁻².',
-      blanks: [{ answer: 'joule' }],
-      rationale: 'The joule (J) is the SI unit of energy, defined as kg m² s⁻². From KE = ½mv², energy = mass × velocity².',
-    },
-    {
-      id: 'fb-5',
-      stem: 'Complete the unit conversion for current.',
-      template: 'A current of 250 mA is equal to __BLANK__ A.',
-      blanks: [{ answer: '0.25' }],
-      rationale: '1 mA = 10⁻³ A = 0.001 A, so 250 mA = 250 × 0.001 = 0.25 A.',
-    },
-
-    // Practical Skills
-    {
-      id: 'fb-6',
-      stem: 'Complete the statement about resolution.',
-      template: 'The resolution of a measuring instrument is the __BLANK__ change it can detect.',
-      blanks: [{ answer: 'smallest' }],
-      rationale: 'Resolution is defined as the smallest scale division — the smallest change an instrument can detect.',
-    },
-    {
-      id: 'fb-7',
-      stem: 'Complete the statement about reading uncertainty.',
-      template: 'For an instrument with resolution 0.01 mm, the reading uncertainty for a single measurement is ± __BLANK__ mm.',
-      blanks: [{ answer: '0.005' }],
-      rationale: 'Reading uncertainty is typically ± half the resolution. Half of 0.01 mm is 0.005 mm.',
-    },
-    {
-      id: 'fb-8',
-      stem: 'Complete the statement about parallax error.',
-      template: 'Parallax error occurs when reading an analogue meter from an __BLANK__ rather than perpendicular to the scale.',
-      blanks: [{ answer: 'angle' }],
-      rationale: 'Parallax error occurs when viewing the scale from an angle, causing the pointer to appear at a different position. Always read perpendicular to the scale.',
-    },
-    {
-      id: 'fb-9',
-      stem: 'Calculate the mean from three readings.',
-      template: 'Three voltage readings are 4.2 V, 4.4 V, and 4.3 V. The mean is __BLANK__ V.',
-      blanks: [{ answer: '4.3' }],
-      rationale: 'Mean = (4.2 + 4.4 + 4.3) ÷ 3 = 12.9 ÷ 3 = 4.3 V.',
-    },
-    {
-      id: 'fb-10',
-      stem: 'Complete the statement about digital instruments.',
-      template: 'Digital instruments can be read by computers because they output data in __BLANK__ format.',
-      blanks: [{ answer: 'binary' }],
-      rationale: 'Digital instruments translate information into binary (0 or 1) format which computers can read and analyse.',
-    },
-
-    // Estimating
-    {
-      id: 'fb-11',
-      stem: 'Complete the statement about orders of magnitude.',
-      template: 'An order of magnitude estimate gives an answer to within a factor of __BLANK__.',
-      blanks: [{ answer: '10' }],
-      rationale: 'An order of magnitude is a factor of 10. If a quantity is 10ⁿ, its order of magnitude is n.',
-    },
-    {
-      id: 'fb-12',
-      stem: 'Estimate the mass of a typical car.',
-      template: 'The order of magnitude of a typical car mass is 10³ kg, meaning approximately __BLANK__ kg.',
-      blanks: [{ answer: '1000' }],
-      rationale: 'A typical family car has a mass of about 1000–1500 kg, so the order of magnitude is 10³ kg (approximately 1000 kg).',
-    },
-    {
-      id: 'fb-13',
-      stem: 'Estimate the speed of light.',
-      template: 'The speed of light is approximately __BLANK__ × 10⁸ m/s.',
-      blanks: [{ answer: '3' }],
-      rationale: 'The speed of light in vacuum is approximately 3 × 10⁸ m/s (299,792,458 m/s exactly).',
-    },
-    {
-      id: 'fb-14',
-      stem: 'Complete the estimation strategy.',
-      template: 'When estimating, break the object into simpler parts, use reasonable values, combine the parts, then __BLANK__ if the answer is physically reasonable.',
-      blanks: [{ answer: 'check' }],
-      rationale: 'The estimation strategy is: identify quantity, break into parts, estimate each part, combine, and check if the answer is reasonable.',
-    },
-    {
-      id: 'fb-15',
-      stem: 'Estimate the radius of an atom.',
-      template: 'The order of magnitude of an atomic radius is 10⁻¹⁰ m, which is equal to __BLANK__ nm (nanometres).',
-      blanks: [{ answer: '0.1' }],
-      rationale: '10⁻¹⁰ m = 0.1 nm (since 1 nm = 10⁻⁹ m). An atom has a radius of approximately 0.1 nm.',
-    },
-
-    // Limitations of Measurements
-    {
-      id: 'fb-16',
-      stem: 'Complete the definition of accuracy.',
-      template: 'Accuracy refers to how close a measured value is to the __BLANK__ value.',
-      blanks: [{ answer: 'true' }],
-      rationale: 'Accuracy is how close a measurement is to the true (accepted) value. Precision is how reproducible readings are.',
-    },
-    {
-      id: 'fb-17',
-      stem: 'Complete the definition of precision.',
-      template: 'Precision refers to how __BLANK__ a set of measurements is.',
-      blanks: [{ answer: 'reproducible' }],
-      rationale: 'Precision is how reproducible measurements are — how close repeated readings are to each other.',
-    },
-    {
-      id: 'fb-18',
-      stem: 'Complete the statement about random errors.',
-      template: 'Random errors can be reduced by __BLANK__ measurements and taking the mean.',
-      blanks: [{ answer: 'repeating' }],
-      rationale: 'Random errors scatter readings randomly above and below the true value. Taking multiple readings and averaging reduces their effect.',
-    },
-    {
-      id: 'fb-19',
-      stem: 'Complete the statement about combining uncertainties.',
-      template: 'When multiplying quantities, add the __BLANK__ uncertainties.',
-      blanks: [{ answer: 'percentage' }],
-      rationale: 'For multiplication/division: add percentage uncertainties. For addition/subtraction: add absolute uncertainties.',
-    },
-    {
-      id: 'fb-20',
-      stem: 'Calculate percentage uncertainty.',
-      template: 'A length is 5.0 ± 0.1 cm. The percentage uncertainty is __BLANK__%.',
-      blanks: [{ answer: '2' }],
-      rationale: '% uncertainty = (0.1/5.0) × 100 = 2%.',
-    },
-
-    // Scientific Communication
-    {
-      id: 'fb-21',
-      stem: 'Complete the statement about significant figures.',
-      template: 'In the number 0.00450, the trailing zero __BLANK__ significant.',
-      blanks: [{ answer: 'is' }],
-      rationale: 'Trailing zeros after a decimal point ARE significant. So 0.00450 has 3 significant figures (4, 5, 0).',
-    },
-    {
-      id: 'fb-22',
-      stem: 'Complete the statement about graph plotting.',
-      template: 'When plotting data, mark points as __BLANK__ rather than dots.',
-      blanks: [{ answer: 'crosses' }],
-      rationale: 'Data points should be plotted as crosses (×) for precision. Dots can be ambiguous about the exact position.',
-    },
-    {
-      id: 'fb-23',
-      stem: 'Complete the statement about best-fit lines.',
-      template: 'A best-fit line should pass through __BLANK__ the error bars.',
-      blanks: [{ answer: 'all' }],
-      rationale: 'The best-fit line should pass through all (or as many as possible) error bars, showing the trend while accounting for uncertainty.',
-    },
-    {
-      id: 'fb-24',
-      stem: 'Complete the formula for percentage difference.',
-      template: 'Percentage difference = |experimental − theoretical| ÷ __BLANK__ × 100%.',
-      blanks: [{ answer: 'theoretical' }],
-      rationale: 'Percentage difference compares experimental to theoretical value: |experimental − theoretical| / theoretical × 100%.',
-    },
-    {
-      id: 'fb-25',
-      stem: 'Complete the statement about conclusions.',
-      template: 'A good conclusion should cite specific __BLANK__ evidence.',
-      blanks: [{ answer: 'numerical' }],
-      rationale: 'A good conclusion cites specific numerical evidence, not just "the graph shows a line". Quantify the relationship with data.',
-    },
-  ],
-
-  dragdrop: [
-    {
-      id: 'dd-1',
-      stem: 'Sort each quantity into whether its unit is a base unit or derived unit.',
-      categories: ['SI Base Unit', 'Derived Unit'],
-      items: [
-        { text: 'kilogram (kg)', category: 'SI Base Unit' },
-        { text: 'newton (N)', category: 'Derived Unit' },
-        { text: 'second (s)', category: 'SI Base Unit' },
-        { text: 'joule (J)', category: 'Derived Unit' },
-        { text: 'ampere (A)', category: 'SI Base Unit' },
-        { text: 'pascal (Pa)', category: 'Derived Unit' },
-        { text: 'kelvin (K)', category: 'SI Base Unit' },
-        { text: 'watt (W)', category: 'Derived Unit' },
-      ],
-    },
-    {
-      id: 'dd-2',
-      stem: 'Sort each instrument type by its characteristics.',
-      categories: ['Analogue Instrument', 'Digital Instrument'],
-      items: [
-        { text: 'Has a pointer on a scale', category: 'Analogue Instrument' },
-        { text: 'Shows numeric readout', category: 'Digital Instrument' },
-        { text: 'Subject to parallax error', category: 'Analogue Instrument' },
-        { text: 'Can be read by computers', category: 'Digital Instrument' },
-        { text: 'Usually cheaper', category: 'Analogue Instrument' },
-        { text: 'Usually higher resolution', category: 'Digital Instrument' },
-        { text: 'Subject to zero error', category: 'Analogue Instrument' },
-        { text: 'Outputs in binary format', category: 'Digital Instrument' },
-      ],
-    },
-    {
-      id: 'dd-3',
-      stem: 'Sort each type of error by its characteristics.',
-      categories: ['Random Error', 'Systematic Error'],
-      items: [
-        { text: 'Scatters readings above and below true value', category: 'Random Error' },
-        { text: 'Shifts all readings same direction', category: 'Systematic Error' },
-        { text: 'Can be reduced by repeating measurements', category: 'Random Error' },
-        { text: 'Cannot be reduced by repeating', category: 'Systematic Error' },
-        { text: 'Caused by unpredictable fluctuations', category: 'Random Error' },
-        { text: 'Caused by instrument calibration issues', category: 'Systematic Error' },
-        { text: 'Affects precision', category: 'Random Error' },
-        { text: 'Affects accuracy', category: 'Systematic Error' },
-      ],
-    },
-    {
-      id: 'dd-4',
-      stem: 'Sort each uncertainty rule by the type of calculation it applies to.',
-      categories: ['Addition/Subtraction', 'Multiplication/Division'],
-      items: [
-        { text: 'Add absolute uncertainties', category: 'Addition/Subtraction' },
-        { text: 'Add percentage uncertainties', category: 'Multiplication/Division' },
-        { text: 'Example: calculating perimeter from lengths', category: 'Addition/Subtraction' },
-        { text: 'Example: calculating area from length and width', category: 'Multiplication/Division' },
-        { text: 'Example: calculating density from mass and volume', category: 'Multiplication/Division' },
-        { text: 'Example: calculating total distance from segments', category: 'Addition/Subtraction' },
-      ],
-    },
-    {
-      id: 'dd-5',
-      stem: 'Sort each medical imaging technique by the physics principle it uses.',
-      categories: ['Uses Ionising Radiation', 'Uses Non-Ionising Methods'],
-      items: [
-        { text: 'X-ray imaging', category: 'Uses Ionising Radiation' },
-        { text: 'MRI scanning', category: 'Uses Non-Ionising Methods' },
-        { text: 'CT scan', category: 'Uses Ionising Radiation' },
-        { text: 'Ultrasound', category: 'Uses Non-Ionising Methods' },
-        { text: 'Uses magnetic fields and radio waves', category: 'Uses Non-Ionising Methods' },
-        { text: 'Passes through soft tissue, absorbed by bone', category: 'Uses Ionising Radiation' },
-      ],
-    },
-    {
-      id: 'dd-6',
-      stem: 'Sort each physics application by the field it belongs to.',
-      categories: ['Medicine', 'Engineering', 'Communications', 'Environment'],
-      items: [
-        { text: 'MRI scanning', category: 'Medicine' },
-        { text: 'Young modulus in bridge design', category: 'Engineering' },
-        { text: 'Fibre-optic cables', category: 'Communications' },
-        { text: 'Solar panels', category: 'Environment' },
-        { text: 'X-ray diagnosis', category: 'Medicine' },
-        { text: 'Wind turbines', category: 'Environment' },
-        { text: 'GPS satellites', category: 'Communications' },
-        { text: 'Understanding failure modes of materials', category: 'Engineering' },
-      ],
-    },
-    {
-      id: 'dd-7',
-      stem: 'Sort each description by whether it describes accuracy or precision.',
-      categories: ['Accuracy', 'Precision'],
-      items: [
-        { text: 'How close to the true value', category: 'Accuracy' },
-        { text: 'How reproducible readings are', category: 'Precision' },
-        { text: 'Affected by systematic errors', category: 'Accuracy' },
-        { text: 'Affected by random errors', category: 'Precision' },
-        { text: 'Can be high even if readings are scattered', category: 'Accuracy' },
-        { text: 'Can be high even if readings are far from true value', category: 'Precision' },
-        { text: 'Improved by recalibration', category: 'Accuracy' },
-        { text: 'Improved by using higher resolution instruments', category: 'Precision' },
-      ],
-    },
-    {
-      id: 'dd-8',
-      stem: 'Sort each step of the scientific method into the correct order.',
-      categories: ['Early in process', 'Middle of process', 'Late in process'],
-      items: [
-        { text: 'Make observations', category: 'Early in process' },
-        { text: 'Form a hypothesis', category: 'Early in process' },
-        { text: 'Design an experiment', category: 'Middle of process' },
-        { text: 'Collect and analyse data', category: 'Middle of process' },
-        { text: 'Draw conclusions', category: 'Late in process' },
-        { text: 'Submit for peer review', category: 'Late in process' },
-        { text: 'Publication if accepted', category: 'Late in process' },
-        { text: 'Independent replication', category: 'Late in process' },
-      ],
-    },
-    {
-      id: 'dd-9',
-      stem: 'Sort each funding source by the type of research it typically supports.',
-      categories: ['Government Funding', 'Private/Commercial Funding'],
-      items: [
-        { text: 'Fundamental (blue-sky) research', category: 'Government Funding' },
-        { text: 'Research with commercial potential', category: 'Private/Commercial Funding' },
-        { text: 'Research with great social benefit but limited profit', category: 'Government Funding' },
-        { text: 'Product development', category: 'Private/Commercial Funding' },
-        { text: 'University-based basic science', category: 'Government Funding' },
-        { text: 'Pharmaceutical drug trials', category: 'Private/Commercial Funding' },
-      ],
-    },
-    {
-      id: 'dd-10',
-      stem: 'Sort each significant figures rule as correct or incorrect.',
-      categories: ['Correct Rule', 'Incorrect/Common Mistake'],
-      items: [
-        { text: 'All non-zero digits are significant', category: 'Correct Rule' },
-        { text: 'Leading zeros are significant', category: 'Incorrect/Common Mistake' },
-        { text: 'Trailing zeros after decimal are significant', category: 'Correct Rule' },
-        { text: 'Zeros between non-zero digits are significant', category: 'Correct Rule' },
-        { text: 'Always give answers to 5 decimal places', category: 'Incorrect/Common Mistake' },
-        { text: 'Quote to same sig figs as least precise data', category: 'Correct Rule' },
-        { text: 'More decimal places means more accuracy', category: 'Incorrect/Common Mistake' },
-        { text: 'The half in ½mv² affects the units', category: 'Incorrect/Common Mistake' },
-      ],
-    },
-  ],
-
-  sequence: [
-    {
-      id: 'seq-1',
-      stem: 'Put these steps for deducing the units of a derived quantity in the correct order:',
-      steps: [
-        'Write down the defining equation for the quantity',
-        'Identify the SI base units for each variable in the equation',
-        'Substitute the base units into the equation',
-        'Simplify the units using algebra',
-        'State the final derived unit with its base unit equivalent',
-      ],
-    },
-    {
-      id: 'seq-2',
-      stem: 'Put these steps for calculating mean and uncertainty from repeated readings in the correct order:',
-      steps: [
-        'Take at least three repeated measurements',
-        'Calculate the mean (average) of the readings',
-        'Find the range (highest minus lowest reading)',
-        'Divide the range by 2 to get the uncertainty',
-        'Express the result as mean ± uncertainty',
-      ],
-    },
-    {
-      id: 'seq-3',
-      stem: 'Put these steps for estimating an unfamiliar physical quantity in the correct order:',
-      steps: [
-        'Identify what physical quantity you are estimating',
-        'Break the object into simpler parts with known dimensions',
-        'Use everyday experience to assign reasonable values',
-        'Combine the parts to get a total estimate',
-        'Check whether the answer is physically reasonable',
-      ],
-    },
-    {
-      id: 'seq-4',
-      stem: 'Put these steps for calculating the gradient of a graph in the correct order:',
-      steps: [
-        'Identify two points on the best-fit line (not data points)',
-        'Choose points far apart on the line',
-        'Read the coordinates of both points from the axes',
-        'Calculate rise (change in y) and run (change in x)',
-        'Divide rise by run to get gradient',
-        'Include units with the final gradient value',
-      ],
-    },
-    {
-      id: 'seq-5',
-      stem: 'Put these steps for the peer review process in the correct order:',
-      steps: [
-        'Scientist submits manuscript to journal',
-        'Editor sends manuscript to expert reviewers',
-        'Reviewers evaluate methodology and conclusions',
-        'Reviewers provide feedback and recommendation',
-        'Author makes revisions if required',
-        'Paper is published if accepted',
-      ],
-    },
-    {
-      id: 'seq-6',
-      stem: 'Put these steps for uncertainty propagation in multiplication in the correct order:',
-      steps: [
-        'Identify the measured quantities and their uncertainties',
-        'Calculate the percentage uncertainty for each quantity',
-        'Add the percentage uncertainties together',
-        'Calculate the result of the multiplication',
-        'Convert total percentage uncertainty back to absolute uncertainty',
-        'Express final answer with uncertainty',
-      ],
-    },
-    {
-      id: 'seq-7',
-      stem: 'Put these steps for drawing a scientific graph in the correct order:',
-      steps: [
-        'Choose suitable scales that use most of the graph paper',
-        'Label axes with quantity name and unit',
-        'Plot data points as crosses (×)',
-        'Add error bars if uncertainties are known',
-        'Draw a best-fit line (straight or smooth curve)',
-        'Add a title describing what is plotted',
-      ],
-    },
-    {
-      id: 'seq-8',
-      stem: 'Put these steps for a risk-benefit analysis in the correct order:',
-      steps: [
-        'Identify the technology or application to be assessed',
-        'List all potential benefits (health, economic, environmental)',
-        'List all potential risks (safety, environmental, ethical)',
-        'Estimate the likelihood and severity of each risk',
-        'Weigh benefits against risks',
-        'Make a decision on whether to proceed',
-      ],
-    },
-  ],
-
-  keyword: [
-    {
-      id: 'kw-1',
-      stem: 'Define what is meant by the "resolution" of a measuring instrument. [2 marks]',
-      marks: 2,
-      keywords: ['smallest', 'change', 'detect', 'division'],
-      modelAnswer: 'The resolution of a measuring instrument is the smallest change it can detect, typically equal to the smallest scale division on the instrument.',
-    },
-    {
-      id: 'kw-2',
-      stem: 'Explain the difference between accuracy and precision. [3 marks]',
-      marks: 3,
-      keywords: ['accuracy', 'true value', 'precision', 'reproducible', 'close to each other'],
-      modelAnswer: 'Accuracy refers to how close a measured value is to the true (accepted) value. Precision refers to how reproducible a set of measurements is — how close repeated readings are to each other, regardless of whether they are close to the true value.',
-    },
-    {
-      id: 'kw-3',
-      stem: 'What is a systematic error and how does it differ from a random error? [3 marks]',
-      marks: 3,
-      keywords: ['systematic', 'same direction', 'all readings', 'shifted', 'random', 'scatter'],
-      modelAnswer: 'A systematic error causes all measurements to be shifted consistently in the same direction (all too high or all too low). It cannot be reduced by repeating measurements. A random error causes measurements to scatter randomly above and below the true value, and can be reduced by repeating and averaging.',
-    },
-    {
-      id: 'kw-4',
-      stem: 'State the rules for combining uncertainties when multiplying two quantities. [2 marks]',
-      marks: 2,
-      keywords: ['percentage', 'uncertainties', 'add', 'multiply'],
-      modelAnswer: 'When multiplying or dividing quantities, add the percentage uncertainties together. The total percentage uncertainty gives the uncertainty in the result.',
-    },
-    {
-      id: 'kw-5',
-      stem: 'Describe the purpose and process of peer review in science. [3 marks]',
-      marks: 3,
-      keywords: ['peer review', 'experts', 'evaluate', 'methodology', 'conclusions', 'quality control', 'publication'],
-      modelAnswer: 'Peer review is a quality control process where manuscripts are sent to other experts in the same field before publication. Reviewers evaluate whether the methodology is sound, conclusions are supported by data, and any limitations are acknowledged.',
-    },
-    {
-      id: 'kw-6',
-      stem: 'Explain what is meant by reproducibility in science and why it matters. [2 marks]',
-      marks: 2,
-      keywords: ['reproducibility', 'same results', 'independent', 'same methods', 'validity'],
-      modelAnswer: 'Reproducibility means that other scientists using the same methods should obtain the same (or very similar) results. If a finding cannot be replicated by independent researchers, its validity is questioned.',
-    },
-    {
-      id: 'kw-7',
-      stem: 'What is an order-of-magnitude estimate? Give an example. [2 marks]',
-      marks: 2,
-      keywords: ['factor of 10', 'power of 10', 'example', 'approximately'],
-      modelAnswer: 'An order-of-magnitude estimate gives an answer to within a factor of 10 (a power of 10). For example, estimating a car mass as 10³ kg when it is actually 1200 kg, or estimating the number of breaths in a lifetime as 10⁹.',
-    },
-    {
-      id: 'kw-8',
-      stem: 'Describe what is meant by a risk-benefit analysis and explain why it is carried out. [3 marks]',
-      marks: 3,
-      keywords: ['risk-benefit', 'weigh', 'benefits', 'risks', 'technology', 'decision'],
-      modelAnswer: 'A risk-benefit analysis weighs the potential benefits (health, economic, environmental) against the potential risks (safety hazards, environmental harm, ethical concerns) of a technology. It is carried out to decide whether the benefits outweigh the risks before introducing a technology to society.',
-    },
-    {
-      id: 'kw-9',
-      stem: 'Explain how to calculate the gradient of a graph and what information the gradient provides. [3 marks]',
-      marks: 3,
-      keywords: ['gradient', 'rise', 'run', 'best-fit line', 'two points', 'units', 'relationship'],
-      modelAnswer: 'To calculate gradient: choose two points on the best-fit line far apart, calculate rise (change in y) and run (change in x), then divide rise by run. Always include units. The gradient quantifies the relationship between variables — for example, gradient of a velocity-time graph gives acceleration.',
-    },
-    {
-      id: 'kw-10',
-      stem: 'What are the rules for determining the number of significant figures in a measurement? [3 marks]',
-      marks: 3,
-      keywords: ['non-zero', 'significant', 'zeros between', 'trailing', 'decimal', 'leading zeros'],
-      modelAnswer: 'Rules for significant figures: (1) All non-zero digits are significant. (2) Zeros between non-zero digits are significant. (3) Trailing zeros after a decimal point are significant. (4) Leading zeros are NOT significant.',
-    },
-    {
-      id: 'kw-11',
-      stem: 'Describe two ethical responsibilities of scientists when conducting and reporting research. [2 marks]',
-      marks: 2,
-      keywords: ['ethical', 'honest', 'report', 'consent', 'fabricate', 'misrepresent'],
-      modelAnswer: 'Scientists must: (1) Report findings honestly, even when results are commercially or politically inconvenient. (2) Obtain informed consent from participants in studies. (3) Avoid fabricating or misrepresenting data, which is scientific fraud.',
-    },
-    {
-      id: 'kw-12',
-      stem: 'Explain why X-ray imaging is considered acceptable despite involving ionising radiation. [2 marks]',
-      marks: 2,
-      keywords: ['X-ray', 'ionising radiation', 'risk', 'benefit', 'diagnosis', 'outweigh'],
-      modelAnswer: 'X-ray imaging carries a small radiation dose for the patient, but the benefit of accurate diagnosis (e.g. detecting fractures, dental care) far outweighs this risk for most patients. This is an example of risk-benefit analysis.',
-    },
-  ],
-
-  flashcards: [
-    // SI Units (fc-1 to fc-5)
-    {
-      id: 'fc-1',
-      front: 'List the seven SI base units.',
-      back: '1. Length — metre (m)\n2. Mass — kilogram (kg)\n3. Time — second (s)\n4. Electric current — ampere (A)\n5. Temperature — kelvin (K)\n6. Amount of substance — mole (mol)\n7. Luminous intensity — candela (cd)',
-      topic: 'SI Units',
-    },
-    {
-      id: 'fc-2',
-      front: 'What are the base units of the newton (N)?',
-      back: 'kg m s⁻²\n\nFrom F = ma:\nForce = mass × acceleration\n= kg × m s⁻²',
-      topic: 'SI Units',
-    },
-    {
-      id: 'fc-3',
-      front: 'What are the base units of the joule (J)?',
-      back: 'kg m² s⁻²\n\nFrom KE = ½mv²:\nEnergy = mass × velocity²\n= kg × (m s⁻¹)²',
-      topic: 'SI Units',
-    },
-    {
-      id: 'fc-4',
-      front: 'What are the base units of the pascal (Pa)?',
-      back: 'kg m⁻¹ s⁻²\n\nFrom P = F/A:\nPressure = force ÷ area\n= (kg m s⁻²) ÷ m²',
-      topic: 'SI Units',
-    },
-    {
-      id: 'fc-5',
-      front: 'Convert 500 mA to SI base units.',
-      back: '0.5 A\n\n1 mA = 10⁻³ A\n500 mA = 500 × 10⁻³ A = 0.5 A',
-      topic: 'SI Units',
-    },
-
-    // Practical Skills (fc-6 to fc-10)
-    {
-      id: 'fc-6',
-      front: 'What is the resolution of a measuring instrument?',
-      back: 'The smallest change the instrument can detect.\n\nThis is typically the smallest scale division on the instrument (e.g. 1 mm for a standard ruler).',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'fc-7',
-      front: 'What is parallax error and how can it be avoided?',
-      back: 'Parallax error occurs when reading an analogue meter from an angle rather than perpendicular to the scale.\n\nAvoid by: Always reading meters from directly perpendicular to the scale. Some meters have mirrors behind the pointer — align the pointer with its reflection.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'fc-8',
-      front: 'What is a zero error?',
-      back: 'A zero error occurs when an instrument does not read zero when it should.\n\nThis is a systematic error — all readings are offset by the same amount. Always check zero before measuring and subtract any offset.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'fc-9',
-      front: 'Compare analogue and digital instruments.',
-      back: 'Analogue: pointer on scale, cheaper, subject to parallax and zero errors, lower resolution.\n\nDigital: numeric readout, more expensive, higher resolution and accuracy, can be read by computers, outputs binary data.',
-      topic: 'Practical Skills',
-    },
-    {
-      id: 'fc-10',
-      front: 'How do you calculate the mean and uncertainty from repeated readings?',
-      back: '1. Calculate mean = sum of readings ÷ number of readings\n2. Find range = highest − lowest reading\n3. Uncertainty = range ÷ 2\n4. Express as: mean ± uncertainty',
-      topic: 'Practical Skills',
-    },
-
-    // Estimating (fc-11 to fc-15)
-    {
-      id: 'fc-11',
-      front: 'What is an order of magnitude?',
-      back: 'A factor of 10.\n\nIf a quantity is 10ⁿ, its order of magnitude is n.\n\nExample: Electron mass (~10⁻³⁰ kg) and Earth mass (~10²⁴ kg) differ by about 54 orders of magnitude.',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'fc-12',
-      front: 'State key orders of magnitude to remember.',
-      back: '• Mass of electron: ~10⁻³⁰ kg\n• Mass of proton: ~10⁻²⁷ kg\n• Mass of human: ~70 kg (~10¹ kg)\n• Mass of Earth: ~6 × 10²⁴ kg\n• Radius of atom: ~10⁻¹⁰ m\n• Speed of light: ~3 × 10⁸ m/s\n• g: ~10 m/s²',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'fc-13',
-      front: 'Describe the four-step estimation strategy.',
-      back: '1. Identify the physical quantity you are estimating\n2. Break the object into simpler parts with known dimensions\n3. Use everyday experience to assign reasonable values\n4. Combine the parts and check if the answer is reasonable',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'fc-14',
-      front: 'Estimate the mass of a typical car.',
-      back: 'Break down:\n• Body/chassis: ~500 kg\n• Engine: ~200 kg\n• 4 wheels: ~80 kg\n• Fuel: ~50 kg\n\nTotal: ~830 kg\nOrder of magnitude: 10³ kg (~1000 kg)\nActual: 1200–1500 kg — estimate within factor of 2 ✓',
-      topic: 'Estimating Physical Quantities',
-    },
-    {
-      id: 'fc-15',
-      front: 'What is the difference between mass and weight in estimation?',
-      back: 'Mass (kg): measure of matter\nWeight (N) = mass × g\n\nIf asked to estimate weight, first estimate mass (~70 kg for human), then multiply by g (~10 N/kg) to get weight (~700 N).\n\nCommon mistake: confusing the units.',
-      topic: 'Estimating Physical Quantities',
-    },
-
-    // Limitations (fc-16 to fc-20)
-    {
-      id: 'fc-16',
-      front: 'Define accuracy and precision.',
-      back: 'Accuracy: how close a measured value is to the true (accepted) value.\n\nPrecision: how reproducible a set of measurements is — how close repeated readings are to each other.',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'fc-17',
-      front: 'Compare random and systematic errors.',
-      back: 'Random error:\n• Scatters readings above/below true value\n• Reduced by repeating and averaging\n• Affects precision\n\nSystematic error:\n• Shifts all readings same direction\n• Cannot be reduced by repeating\n• Affects accuracy\n• Fixed by recalibrating',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'fc-18',
-      front: 'State the rules for combining uncertainties.',
-      back: 'Addition/Subtraction: ADD absolute uncertainties\n(ΔQ = ΔA + ΔB)\n\nMultiplication/Division: ADD percentage uncertainties\n(%ΔQ = %ΔA + %ΔB)\n\nPowers: Multiply % uncertainty by the power\n(%ΔQ = n × %ΔA)',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'fc-19',
-      front: 'How do you calculate percentage uncertainty?',
-      back: 'Percentage uncertainty = (Δx / x) × 100%\n\nExample: L = 5.0 ± 0.1 cm\n% uncertainty = (0.1/5.0) × 100% = 2%',
-      topic: 'Limitations of Measurements',
-    },
-    {
-      id: 'fc-20',
-      front: 'What are error bars and how are they used?',
-      back: 'Error bars show the uncertainty in each measurement on a graph.\n• Vertical bars show Δy\n• Horizontal bars show Δx\n• Best-fit line should pass through all error bars\n• Draw max and min gradient lines to find uncertainty in gradient',
-      topic: 'Limitations of Measurements',
-    },
-
-    // Scientific Communication (fc-21 to fc-25)
-    {
-      id: 'fc-21',
-      front: 'How many significant figures in 0.00450?',
-      back: '3 significant figures (4, 5, 0)\n\nRules:\n• Leading zeros NOT significant\n• Trailing zeros after decimal ARE significant',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'fc-22',
-      front: 'List five features of a well-drawn physics graph.',
-      back: '1. Title describing what is plotted\n2. Labelled axes with quantity AND unit (e.g. Force / N)\n3. Suitable scale using most of the paper\n4. Data plotted as crosses (×), not dots\n5. Best-fit line drawn (never join the dots)\n6. Error bars when uncertainties are known',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'fc-23',
-      front: 'How do you calculate the gradient of a graph?',
-      back: '1. Choose two points ON the best-fit line (not data points)\n2. Choose points far apart\n3. Calculate rise (Δy) and run (Δx)\n4. Gradient = rise ÷ run\n5. Always include units with the gradient',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'fc-24',
-      front: 'How do you calculate percentage difference?',
-      back: 'Percentage difference = |experimental − theoretical| / theoretical × 100%\n\n• Below 5% → good agreement\n• Large % difference → likely systematic error',
-      topic: 'Scientific Communication',
-    },
-    {
-      id: 'fc-25',
-      front: 'What should a good scientific conclusion include?',
-      back: '1. State whether hypothesis was supported\n2. Cite specific numerical evidence\n3. Quantify the relationship (e.g. gradient value)\n4. Compare with accepted values using percentage difference\n5. Identify sources of error\n6. Suggest improvements',
-      topic: 'Scientific Communication',
-    },
-
-    // Applications (fc-26 to fc-30)
-    {
-      id: 'fc-26',
-      front: 'How does MRI scanning work?',
-      back: 'MRI (Magnetic Resonance Imaging):\n• Uses strong magnetic fields + radio frequency waves\n• Images soft tissues X-rays cannot see\n• No ionising radiation (safer than X-rays)\n• Expensive; patients with metal implants cannot use',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'fc-27',
-      front: 'How does ultrasound imaging work?',
-      back: 'Ultrasound:\n• Uses high-frequency sound waves (>20 kHz)\n• Pulses sent into body, reflected at tissue boundaries\n• Time for reflections gives depth (distance = speed × time)\n• Safe, non-ionising — used for foetal scanning',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'fc-28',
-      front: 'How do fibre-optic cables work?',
-      back: 'Fibre-optic cables:\n• Use total internal reflection of light\n• Transmit data at close to speed of light\n• Very low signal loss\n• Depend on understanding of wave behaviour and optics',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'fc-29',
-      front: 'What physics principle do solar panels use?',
-      back: 'Solar panels (photovoltaic cells):\n• Use the photoelectric effect\n• Convert light energy into electrical energy\n• Photons liberate electrons in semiconductor',
-      topic: 'Applications of Science',
-    },
-    {
-      id: 'fc-30',
-      front: 'What physics principle do wind turbines use?',
-      back: 'Wind turbines:\n• Use electromagnetic induction\n• Convert kinetic energy of wind into electrical energy\n• Rotating coils in magnetic field generate current',
-      topic: 'Applications of Science',
-    },
-
-    // Scientific Community (fc-31 to fc-35)
-    {
-      id: 'fc-31',
-      front: 'What is the purpose of peer review?',
-      back: 'Peer review is a quality control mechanism:\n• Manuscripts sent to experts before publication\n• Reviewers evaluate: methodology, conclusions, novelty\n• Ensures published science meets quality standards',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'fc-32',
-      front: 'What are the limitations of peer review?',
-      back: '• Reviewers can have biases or miss flaws\n• Conflicts of interest possible\n• Novel findings may be rejected for challenging consensus\n• Publication bias towards positive results\n• Not perfect, but best system available',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'fc-33',
-      front: 'What is reproducibility and why does it matter?',
-      back: 'Reproducibility: independent researchers using same methods obtain same results.\n\nMatters because:\n• If results cannot be replicated, validity is questioned\n• Foundation of scientific reliability\n• Replication crisis shows not all published results are reproducible',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'fc-34',
-      front: 'What distinguishes a scientific theory from a guess?',
-      back: 'A scientific theory is:\n• NOT a guess\n• A well-tested explanation\n• Supported by substantial evidence\n• Repeatedly validated by independent researchers\n\nExamples: heliocentric model, quantum mechanics, evolution',
-      topic: 'The Scientific Community',
-    },
-    {
-      id: 'fc-35',
-      front: 'Give an example of how scientific knowledge has changed over time.',
-      back: 'Examples:\n• Geocentric → heliocentric model (Copernicus, Galileo, Newton)\n• Classical physics → quantum mechanics (blackbody radiation, photoelectric effect)\n• Discovery of dark matter and dark energy\n\nScientists must revise theories when new evidence emerges.',
-      topic: 'The Scientific Community',
-    },
-
-    // Science & Society (fc-36 to fc-40)
-    {
-      id: 'fc-36',
-      front: 'What is a risk-benefit analysis?',
-      back: 'A risk-benefit analysis weighs:\n\nBENEFITS: health outcomes, economic growth, environmental protection, quality of life\n\nRISKS: environmental harm, safety hazards, ethical concerns\n\nDecision: proceed if benefits outweigh risks',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'fc-37',
-      front: 'What are the ethical responsibilities of scientists?',
-      back: '• Obtain informed consent from participants\n• Avoid unnecessary harm to living organisms\n• Report findings honestly (even when inconvenient)\n• Do not fabricate or misrepresent data (scientific fraud)\n• Communicate clearly to public',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'fc-38',
-      front: 'Why is public understanding of science important?',
-      back: '• Enables participation in democratic decisions about science policy\n• Helps evaluate claims by governments, companies, media\n• Essential for issues like climate change, vaccine safety\n• Scientists have responsibility to communicate clearly',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'fc-39',
-      front: 'How does funding source influence research direction?',
-      back: 'Government funding:\n• Supports fundamental (blue-sky) research\n• Research with social benefit but limited commercial value\n\nPrivate funding:\n• Focuses on commercial potential\n• Product development\n\nImportant research may be underfunded if no commercial value.',
-      topic: 'Science & Society',
-    },
-    {
-      id: 'fc-40',
-      front: 'What is the role of science in government policy?',
-      back: '• Governments use scientific evidence for policy (safety limits, vaccination, emissions)\n• Scientists must distinguish evidence from policy recommendations\n• Policy involves value judgements beyond science alone\n• Example: Montreal Protocol on CFCs',
-      topic: 'Science & Society',
-    },
-  ],
+    mcq: [
+        // 1.1.0 SI Units
+        {
+            id: 'mcq-1',
+            stem: 'Which of the following is an SI base unit?',
+            options: ['newton', 'joule', 'ampere', 'volt'],
+            correctAnswer: 2,
+            rationale: 'Ampere is the SI base unit for electric current. Newton, joule, and volt are all derived units.',
+            topic: 'SI Units'
+        },
+        {
+            id: 'mcq-2',
+            stem: 'What is the base unit equivalent of the newton (N)?',
+            options: ['kg m s⁻²', 'kg m² s⁻²', 'kg m s⁻¹', 'kg m⁻¹ s⁻²'],
+            correctAnswer: 0,
+            rationale: 'From F = ma, force has units of mass (kg) multiplied by acceleration (m s⁻²), giving kg m s⁻².',
+            topic: 'SI Units'
+        },
+        {
+            id: 'mcq-3',
+            stem: 'How many coulombs (C) of charge are stored in a 2000 mAh battery?',
+            options: ['2 C', '720 C', '7200 C', '72000 C'],
+            correctAnswer: 2,
+            rationale: 'First convert to SI units: 2000 mAh = 2000 × 10⁻³ A × 3600 s = 2 A × 3600 s = 7200 C.',
+            topic: 'SI Units'
+        },
+        // 1.1.1 Practical Skills
+        {
+            id: 'mcq-4',
+            stem: 'What is the absolute reading uncertainty of a single measurement using a standard school ruler with millimetre divisions?',
+            options: ['± 0.1 mm', '± 0.5 mm', '± 1 mm', '± 2 mm'],
+            correctAnswer: 1,
+            rationale: 'The absolute reading uncertainty for a single reading is ± half the resolution. Since the resolution is 1 mm, the uncertainty is ± 0.5 mm.',
+            topic: 'Practical Skills'
+        },
+        {
+            id: 'mcq-5',
+            stem: 'Which of the following is a characteristic of a digital scientific instrument compared to an analogue one?',
+            options: ['Normally susceptible to parallax error', 'Has lower resolution', 'Outputs data in binary format', 'Cheaper to manufacture'],
+            correctAnswer: 2,
+            rationale: 'Digital instruments output binary data making them readable by computers. Analogue meters suffer from parallax error, usually have lower resolution, and are cheaper.',
+            topic: 'Practical Skills'
+        },
+        {
+            id: 'mcq-6',
+            stem: 'How can the effect of random error be reduced in an experiment?',
+            options: ['Recalibrating the instruments', 'Taking repeat readings and calculating a mean', 'Identifying and subtracting the zero error', 'Using an analogue instrument rather than digital'],
+            correctAnswer: 1,
+            rationale: 'Random errors are scattered. Taking repeats and calculating a mean reduces their effect. Recalibration fixes systematic errors.',
+            topic: 'Practical Skills'
+        },
+        // 1.1.2 Estimating Physical Quantities
+        {
+            id: 'mcq-7',
+            stem: 'What is the order of magnitude of the mass of a typical adult human?',
+            options: ['10⁰ kg', '10¹ kg', '10² kg', '10³ kg'],
+            correctAnswer: 1,
+            rationale: 'An adult human is typically around 70 kg, which is an order of magnitude of 10¹ kg (according to typical physics textbook approximations).',
+            topic: 'Estimating Physical Quantities'
+        },
+        {
+            id: 'mcq-8',
+            stem: 'What is the approximate order of magnitude for the radius of an atom?',
+            options: ['10⁻¹⁰ m', '10⁻¹² m', '10⁻¹⁴ m', '10⁻¹⁵ m'],
+            correctAnswer: 0,
+            rationale: 'The radius of an atom is approximately 10⁻¹⁰ m. The nucleus is around 10⁻¹⁵ m.',
+            topic: 'Estimating Physical Quantities'
+        },
+        {
+            id: 'mcq-9',
+            stem: 'Which of the following best estimates the mass of a typical family car?',
+            options: ['10² kg', '10³ kg', '10⁴ kg', '10⁵ kg'],
+            correctAnswer: 1,
+            rationale: 'A typical family car has a mass between 1000 and 1500 kg, which is an order of magnitude of 10³ kg.',
+            topic: 'Estimating Physical Quantities'
+        },
+        // 1.1.3 Limitations of Measurements
+        {
+            id: 'mcq-10',
+            stem: 'Which term describes how close a set of repeated measurements are to each other?',
+            options: ['Accuracy', 'Precision', 'Resolution', 'Uncertainty'],
+            correctAnswer: 1,
+            rationale: 'Precision is the reproducibility of a result. Accuracy refers to how close the result is to the true value.',
+            topic: 'Limitations of Measurements'
+        },
+        {
+            id: 'mcq-11',
+            stem: 'If you are calculating the volume of a sphere (V = 4/3 π r³), and the radius r has a percentage uncertainty of 2%, what is the percentage uncertainty in V?',
+            options: ['2%', '4%', '6%', '8%'],
+            correctAnswer: 2,
+            rationale: 'For powers, multiply the percentage uncertainty by the power index. %ΔV = 3 × %Δr = 3 × 2% = 6%.',
+            topic: 'Limitations of Measurements'
+        },
+        {
+            id: 'mcq-12',
+            stem: 'A ruler has a systematic zero error of +1 mm. If you make a measurement and it reads 15 mm, what is the true length?',
+            options: ['14 mm', '15 mm', '16 mm', 'It cannot be determined'],
+            correctAnswer: 0,
+            rationale: 'Systematic errors shift all readings consistently. If the ruler starts reading at +1 mm, you must subtract 1 mm from all readings to find the true value (15 - 1 = 14 mm).',
+            topic: 'Limitations of Measurements'
+        },
+        // 1.1.4 Scientific Communication
+        {
+            id: 'mcq-13',
+            stem: 'To how many significant figures should a final calculated answer typically be given in an exam?',
+            options: ['The same as the most precise piece of data', 'The same as the least precise piece of data', 'Always 2 significant figures', 'Always 3 significant figures'],
+            correctAnswer: 1,
+            rationale: 'A result cannot be more precise than the raw data it is based on. Therefore, it MUST follow the least precise piece of data given in the question.',
+            topic: 'Scientific Communication'
+        },
+        {
+            id: 'mcq-14',
+            stem: 'When calculating the gradient from a best-fit line on a graph, which points should you select?',
+            options: ['The first and last data points', 'Any two data points', 'Two points on the best-fit line that are far apart', 'Two points on the best-fit line that are close together'],
+            correctAnswer: 2,
+            rationale: 'Always use points on the line (not raw data points) and choose them as far apart as possible to reduce the percentage uncertainty in reading the coordinates.',
+            topic: 'Scientific Communication'
+        },
+        {
+            id: 'mcq-15',
+            stem: 'What is the correct way to label the axis for time measured in seconds?',
+            options: ['t / s', 'Time (seconds)', 'Time, s', 't(s)'],
+            correctAnswer: 0,
+            rationale: 'The standard physics convention is "Quantity / Unit", such as "Time t / s" or strictly "t / s".',
+            topic: 'Scientific Communication'
+        },
+        // 1.1.5 Applications of Science
+        {
+            id: 'mcq-16',
+            stem: 'Why is MRI scanning generally safer for patients than CT scanning?',
+            options: ['It takes less time', 'It uses non-ionising radiation', 'It does not use magnetic fields', 'It gives higher resolution images of bone'],
+            correctAnswer: 1,
+            rationale: 'MRI uses strong magnetic fields and radio waves, which are non-ionising. CT scans use X-rays, which are ionising and carry a cancer risk.',
+            topic: 'Applications of Science'
+        },
+        {
+            id: 'mcq-17',
+            stem: 'Which physics principle is primarily utilised in fibre-optic cables for telecommunications?',
+            options: ['The photoelectric effect', 'Total internal reflection', 'Electromagnetic induction', 'Nuclear fusion'],
+            correctAnswer: 1,
+            rationale: 'Fibre-optic communications transmit data via light pulses that travel through the fibre through total internal reflection.',
+            topic: 'Applications of Science'
+        },
+        {
+            id: 'mcq-18',
+            stem: 'What energy conversion occurs in a wind turbine?',
+            options: ['Electrical to kinetic using induction', 'Thermal to electrical using the photoelectric effect', 'Kinetic to electrical using electromagnetic induction', 'Chemical to electrical using combustion'],
+            correctAnswer: 2,
+            rationale: 'Wind turns the blades (kinetic energy) which spins a magnet inside a coil to generate electricity (electromagnetic induction).',
+            topic: 'Applications of Science'
+        },
+        // 1.1.6 The Scientific Community
+        {
+            id: 'mcq-19',
+            stem: 'What is the primary purpose of peer review in scientific publishing?',
+            options: ['To ensure the paper is grammatically correct', 'To allow independent experts to critique methodology and conclusions before publication', 'To verify the identity of the authors', 'To guarantee that the conclusions are 100% correct'],
+            correctAnswer: 1,
+            rationale: 'Peer review acts as a quality control mechanism where independent experts assess the methodology, novelty, and conclusions, though it does not guarantee absolute correctness.',
+            topic: 'The Scientific Community'
+        },
+        {
+            id: 'mcq-20',
+            stem: 'What does "reproducibility" mean in the context of scientific research?',
+            options: ['A paper is easy to print', 'Other scientists can follow the same methods and obtain the same results', 'The researcher can do the experiment very quickly', 'The data can be easily converted into a graph'],
+            correctAnswer: 1,
+            rationale: 'Reproducibility means independent researchers can replicate the experiment using the same methods and find very similar results, validating the original conclusion.',
+            topic: 'The Scientific Community'
+        },
+        {
+            id: 'mcq-21',
+            stem: 'Which of the following is a known limitation of the peer review process?',
+            options: ['It takes almost no time to complete', 'It eliminates all possibility of scientific fraud', 'Reviewers may have biases or conflicts of interest', 'It automatically updates physics textbooks'],
+            correctAnswer: 2,
+            rationale: 'Reviewers are human and can have biases regarding novel results, or conflicts of interest with rival authors, which may impact the review process.',
+            topic: 'The Scientific Community'
+        },
+        // 1.1.7 Science & Society
+        {
+            id: 'mcq-22',
+            stem: 'What is the most likely outcome of a risk-benefit analysis for a new medical technology?',
+            options: ['The technology is rejected if it has any risks at all', 'The technology is approved if the societal and health benefits strongly outweigh the risks', 'The technology is approved only if it costs no money to implement', 'The technology is hidden from the public to avoid panic'],
+            correctAnswer: 1,
+            rationale: 'All technologies carry some risk. A risk-benefit analysis approves a technology when the benefits are judged to outweigh those risks.',
+            topic: 'Science & Society'
+        },
+        {
+            id: 'mcq-23',
+            stem: 'Why might fundamental "blue-sky" research struggle to get funding compared to applied research?',
+            options: ['It uses too much electricity', 'It has no immediate commercial application or profit potential', 'It is physically impossible to conduct', 'Scientists find it boring'],
+            correctAnswer: 1,
+            rationale: 'Private companies prefer funding research that leads to profitable products. Blue-sky research explores unknown fundamentals without an immediate application in mind.',
+            topic: 'Science & Society'
+        },
+        {
+            id: 'mcq-24',
+            stem: 'Which of the following describes an ethical responsibility of a scientist?',
+            options: ['Only publishing results that agree with their hypothesis', 'Ignoring anomalous data if it ruins the best-fit line', 'Obtaining informed consent from participants in a study', 'Exaggerating claims to secure greater funding'],
+            correctAnswer: 2,
+            rationale: 'Ethical research requires honesty, transparency, not fabricating data, and protecting human and animal test subjects (such as obtaining informed consent).',
+            topic: 'Science & Society'
+        }
+    ],
+    fillblank: [
+        {
+            id: 'fb-1',
+            stem: 'Complete the statement regarding SI units.',
+            template: 'The SI base unit for temperature is the __BLANK__ and its symbol is __BLANK__.',
+            blanks: [{ answer: 'kelvin' }, { answer: 'K' }],
+            rationale: 'Temperature is one of the 7 base units; its SI base unit is kelvin (not Celsius) with the symbol K.'
+        },
+        {
+            id: 'fb-2',
+            stem: 'Complete the base unit derivation for energy.',
+            template: 'Because kinetic energy is calculated using ½mv², the base units of the joule are __BLANK__ m² __BLANK__.',
+            blanks: [{ answer: 'kg' }, { answer: 's⁻²' }],
+            rationale: 'Mass is kg, velocity is m s⁻¹. Squaring velocity gives m² s⁻², so energy is kg m² s⁻².'
+        },
+        {
+            id: 'fb-3',
+            stem: 'Complete the sentence about uncertainties.',
+            template: 'When two quantities are divided, you must combine them by adding their __BLANK__ uncertainties.',
+            blanks: [{ answer: 'percentage' }],
+            rationale: 'For multiplication and division, percentage uncertainties are added. Absolute uncertainties are added for sums and differences.'
+        },
+        {
+            id: 'fb-4',
+            stem: 'Identify the type of error from its description.',
+            template: 'A __BLANK__ error causes all measurements to be shifted in the same direction, affecting the __BLANK__ of the result.',
+            blanks: [{ answer: 'systematic' }, { answer: 'accuracy' }],
+            rationale: 'Systematic errors shift all readings consistently (like a zero error), which biases the result, reducing accuracy.'
+        },
+        {
+            id: 'fb-5',
+            stem: 'Complete the sentence on measuring instruments.',
+            template: 'The smallest change an instrument can detect is called its __BLANK__.',
+            blanks: [{ answer: 'resolution' }],
+            rationale: 'Resolution refers to the smallest scale division or change detectible by the measuring instrument.'
+        },
+        {
+            id: 'fb-6',
+            stem: 'Fill in the blanks regarding scientific consensus.',
+            template: 'If a finding cannot be replicated by independent researchers, it fails the test of __BLANK__.',
+            blanks: [{ answer: 'reproducibility' }],
+            rationale: 'Reproducibility means other teams using the same methods find the same results.'
+        },
+        {
+            id: 'fb-7',
+            stem: 'Complete the statement regarding vectors.',
+            template: 'To resolve a force vector F into its horizontal component adjacent to the angle θ, you multiply F by __BLANK__ θ.',
+            blanks: [{ answer: 'cos' }],
+            rationale: 'Adjacent components use cosine (F cos θ) and opposite components use sine (F sin θ).'
+        },
+        {
+            id: 'fb-8',
+            stem: 'Identify the imaging technique.',
+            template: 'Pregnant women are scanned using __BLANK__ because it relies on non-ionising sound waves and poses no risk to the foetus.',
+            blanks: [{ answer: 'ultrasound' }],
+            rationale: 'Ultrasound uses high-frequency sound, completely avoiding the ionising radiation risks of X-rays.'
+        }
+    ],
+    dragdrop: [
+        {
+            id: 'dd-1',
+            stem: 'Sort these physical quantities into Base and Derived units.',
+            categories: ['Base Quantity', 'Derived Quantity'],
+            items: [
+                { text: 'Mass', category: 'Base Quantity' },
+                { text: 'Temperature', category: 'Base Quantity' },
+                { text: 'Time', category: 'Base Quantity' },
+                { text: 'Force', category: 'Derived Quantity' },
+                { text: 'Pressure', category: 'Derived Quantity' },
+                { text: 'Energy', category: 'Derived Quantity' },
+                { text: 'Voltage', category: 'Derived Quantity' }
+            ]
+        },
+        {
+            id: 'dd-2',
+            stem: 'Categorise these errors into Random or Systematic.',
+            categories: ['Random Error', 'Systematic Error'],
+            items: [
+                { text: 'Fluctuation in human reaction time', category: 'Random Error' },
+                { text: 'Reading a meniscus from slightly different angles', category: 'Random Error' },
+                { text: 'A ruler starting at 1mm instead of 0mm', category: 'Systematic Error' },
+                { text: 'An improperly calibrated electronic scale', category: 'Systematic Error' },
+                { text: 'A constant background radiation offset', category: 'Systematic Error' }
+            ]
+        },
+        {
+            id: 'dd-3',
+            stem: 'Match the technology to its primarily exploited physics principle.',
+            categories: ['Electromagnetic Induction', 'Total Internal Reflection', 'High-Frequency Sound'],
+            items: [
+                { text: 'Wind turbine generator', category: 'Electromagnetic Induction' },
+                { text: 'Dynamo on a bicycle wheel', category: 'Electromagnetic Induction' },
+                { text: 'Fibre-optic cables', category: 'Total Internal Reflection' },
+                { text: 'Endoscopes', category: 'Total Internal Reflection' },
+                { text: 'Foetal scanning', category: 'High-Frequency Sound' },
+                { text: 'Sonar pulse-echo depth finding', category: 'High-Frequency Sound' }
+            ]
+        },
+        {
+            id: 'dd-4',
+            stem: 'Match the order-of-magnitude estimates to the correct physical quantity.',
+            categories: ['~10⁻¹⁵ m', '~10⁻¹⁰ m', '~10⁸ m s⁻¹'],
+            items: [
+                { text: 'Radius of an atomic nucleus', category: '~10⁻¹⁵ m' },
+                { text: 'Radius of an entire atom', category: '~10⁻¹⁰ m' },
+                { text: 'Speed of light in a vacuum', category: '~10⁸ m s⁻¹' }
+            ]
+        }
+    ],
+    sequence: [
+        {
+            id: 'seq-1',
+            stem: 'Arrange the four-step strategy for estimating an unfamiliar physical quantity into correct order.',
+            steps: [
+                'Identify the physical quantity to estimate',
+                'Break the object down into simpler logical parts',
+                'Assign reasonable values to each part based on everyday experience',
+                'Combine the parts to reach a final total and check if reasonable'
+            ]
+        },
+        {
+            id: 'seq-2',
+            stem: 'Order the steps for finding the uncertainty in a gradient using a graph.',
+            steps: [
+                'Draw horizontal and vertical error bars on all data points',
+                'Draw a line of steepest slope and a line of shallowest slope passing through the error bars',
+                'Calculate the gradients of both the steepest (max) and shallowest (min) lines',
+                'Subtract the min gradient from the max gradient and divide by 2'
+            ]
+        },
+        {
+            id: 'seq-3',
+            stem: 'Order the process of scientific progression from discovery to consensus.',
+            steps: [
+                'A scientist forms a hypothesis based on an observation',
+                'The scientist designs an experiment and collects data',
+                'The manuscript undergoes peer review by independent experts',
+                'The paper is published in an academic journal',
+                'Other independent teams successfully replicate the experiment',
+                'A scientific consensus is formed around the finding'
+            ]
+        }
+    ],
+    keyword: [
+        {
+            id: 'kw-1',
+            stem: 'Explain the difference between accuracy and precision in physical measurements. [2 marks]',
+            marks: 2,
+            keywords: ['accuracy', 'true value', 'precision', 'repeat', 'spread'],
+            modelAnswer: 'Accuracy is how close a measured value is to the true (accepted) value. Precision refers to how close repeated readings are to each other (the spread of results).'
+        },
+        {
+            id: 'kw-2',
+            stem: 'Describe the peer review process for scientific journals. [3 marks]',
+            marks: 3,
+            keywords: ['independent experts', 'evaluate', 'methodology', 'conclusions', 'publish'],
+            modelAnswer: 'Before publication, a manuscript is sent to independent experts (peers) in the field. These reviewers evaluate the methodology, validity of the data, and conclusions. Based on this, the paper is accepted, revised, or rejected.'
+        },
+        {
+            id: 'kw-3',
+            stem: 'Explain why random errors cannot be entirely eliminated but their effect can be reduced. [2 marks]',
+            marks: 2,
+            keywords: ['fluctuations', 'unpredictable', 'repeat', 'mean'],
+            modelAnswer: 'Random errors are caused by unpredictable fluctuations (e.g., reaction time, noise). While they cannot be eliminated, their effect is reduced by taking repeat readings and calculating a mean.'
+        },
+        {
+            id: 'kw-4',
+            stem: 'A student plots a graph to find a relationship, but notices one data point lies far away from the trend. How should they handle this anomalous result? [2 marks]',
+            marks: 2,
+            keywords: ['circle', 'ignore', 'best-fit line', 'explain'],
+            modelAnswer: 'The student should circle the anomalous point and ignore it when drawing the line of best-fit. They should then attempt to explain it as a measurement error.'
+        }
+    ],
+    flashcards: [
+        {
+            id: 'fc-1',
+            front: 'What are the 7 SI base units?',
+            back: '• Length: metre (m)\n• Mass: kilogram (kg)\n• Time: second (s)\n• Electric current: ampere (A)\n• Temperature: kelvin (K)\n• Amount of substance: mole (mol)\n• Luminous intensity: candela (cd)',
+            topic: 'SI Units'
+        },
+        {
+            id: 'fc-2',
+            front: 'What is the base unit equivalent of the joule (J)?',
+            back: 'kg m² s⁻²\n(Derived from Work = Force × distance = kg m s⁻² × m)',
+            topic: 'Derived Units'
+        },
+        {
+            id: 'fc-3',
+            front: 'Define "resolution" of a measuring instrument.',
+            back: 'The smallest change in the quantity being measured that the instrument can detect (e.g., 1 mm on a school ruler).',
+            topic: 'Limitations of Measurements'
+        },
+        {
+            id: 'fc-4',
+            front: 'How do you calculate the absolute reading uncertainty for a single analogue measurement?',
+            back: 'Typically ± half the resolution of the instrument (e.g., ± 0.5 mm for a ruler).',
+            topic: 'Limitations of Measurements'
+        },
+        {
+            id: 'fc-5',
+            front: 'State the rule for propagating uncertainties when multiplying two quantities.',
+            back: 'Add the **percentage uncertainties** of the two quantities.',
+            topic: 'Uncertainty Propagation'
+        },
+        {
+            id: 'fc-6',
+            front: 'State the rule for propagating uncertainty when raising a quantity to a power (n).',
+            back: 'Multiply the **percentage uncertainty** of the quantity by the power (n).',
+            topic: 'Uncertainty Propagation'
+        },
+        {
+            id: 'fc-7',
+            front: 'What is a "zero error"?',
+            back: 'A systematic error where an instrument does not read true zero when it should (e.g., a micrometer reading 0.02 mm when closed). You must subtract this from all readings.',
+            topic: 'Limitations of Measurements'
+        },
+        {
+            id: 'fc-8',
+            front: 'What is "parallax error"?',
+            back: 'An error occurring when reading an analogue scale from an angle rather than directly perpendicular on. It is a systematic reading error.',
+            topic: 'Practical Skills'
+        },
+        {
+            id: 'fc-9',
+            front: 'How do you find the uncertainty in the gradient of a graph?',
+            back: 'Uncertainty = (Maximum gradient − Minimum gradient) / 2',
+            topic: 'Scientific Communication'
+        },
+        {
+            id: 'fc-10',
+            front: 'Define "reproducibility" in science.',
+            back: 'The ability for independent researchers to follow the same methodology and obtain the same (or very similar) results.',
+            topic: 'The Scientific Community'
+        },
+        {
+            id: 'fc-11',
+            front: 'Give an example of a physics technology requiring a risk-benefit analysis.',
+            back: '• X-rays: Benefit = accurate medical diagnosis. Risk = exposure to ionising radiation which can cause cancer.\n• Nuclear power: Benefit = low-carbon high-output energy. Risk = radioactive waste storage.',
+            topic: 'Science & Society'
+        },
+        {
+            id: 'fc-12',
+            front: 'What is the "order of magnitude" of the mass of an electron?',
+            back: '~ 10⁻³⁰ kg',
+            topic: 'Orders of Magnitude'
+        }
+    ]
 };

@@ -246,20 +246,7 @@ export const note_chemistry_1_2_0 = {
       data: { text: 'An atom has a tiny, dense, positively charged nucleus (protons + neutrons) surrounded by electrons in shells. Proton: mass 1, charge +1; Neutron: mass 1, charge 0; Electron: negligible mass, charge −1. Nucleon = proton or neutron; nucleon number = mass number A. Z = protons = electrons (neutral atom); neutrons = A − Z. Atom ~10⁻¹⁰ m, nucleus ~10⁻¹⁵ m — mostly empty space. Isotopes: same Z, different A — same chemical but different physical properties. Ions: cation loses electrons (electrons = Z − charge); anion gains electrons (electrons = Z + |charge|). Proton number never changes. Isoelectronic species share the same electron count (e.g. Na⁺, Mg²⁺, Al³⁺, O²⁻, F⁻ all have 10e⁻).' }
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Subatomic Particles',
-      subtitle: 'WCH11 — Chemistry Topic 2.0',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '⛛️', title: 'The Three Particles', html: '<strong>Proton</strong>: mass 1, charge +1 — in nucleus.<br/><strong>Neutron</strong>: mass 1, charge 0 — in nucleus.<br/><strong>Electron</strong>: mass ≈0, charge −1 — in shells.' },
-        { delay: 1, colSpan: 1, icon: '#️⃣', title: 'Atomic Number (Z)', html: 'Number of <strong>protons</strong> in the nucleus.<br/>Identifies the element.<br/>= electrons in a neutral atom.' },
-        { delay: 2, colSpan: 1, icon: '⚖️', title: 'Mass Number (A)', html: 'A = protons + neutrons (nucleons).<br/>Neutrons = A − Z.<br/>Almost all atomic mass is in the nucleus.' },
-        { delay: 3, colSpan: 1, icon: '🏷️', title: 'Nuclide Notation', html: '<sup>A</sup><sub>Z</sub>X — top is A, bottom is Z.<br/>e.g. <sup>12</sup><sub>6</sub>C: 6 protons, 6 neutrons, 6 electrons.' },
-        { delay: 4, colSpan: 2, icon: '⚡', title: 'Ions — Electrons Changed', html: '<strong>Cation (+):</strong> atom has <em>lost</em> electrons. e.g. Na<sup>+</sup>: 11p, 10e⁻.<br/><strong>Anion (−):</strong> atom has <em>gained</em> electrons. e.g. Cl⁻: 17p, 18e⁻.<br/>Ion proton number is unchanged from the parent element.' },
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

@@ -389,19 +389,7 @@ export const note_chemistry_1_2_7 = {
       terms: []
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Electronic Configuration',
-      subtitle: 'WCH11 — Chemistry Topic 2.7',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '📝', title: 'Full Configuration', html: 'List all subshells in energy order.<br/>e.g. Na: <strong>1s² 2s² 2p⁶ 3s¹</strong><br/>e.g. Fe: <strong>1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²</strong>' },
-        { delay: 1, colSpan: 1, icon: '🏷️', title: 'Abbreviated (Noble Gas)', html: 'Replace inner electrons with the noble gas symbol in [brackets].<br/>e.g. Na: <strong>[Ne] 3s¹</strong><br/>e.g. Fe: <strong>[Ar] 3d⁶ 4s²</strong><br/>Shows valence electrons clearly.' },
-        { delay: 2, colSpan: 1, icon: '⚡', title: '4s vs 3d: Ions', html: '4s fills before 3d, but <strong>4s empties first</strong> when forming transition metal cations.<br/>Fe²⁺: [Ar] 3d⁶ (loses both 4s).<br/>Fe³⁺: [Ar] 3d⁵ (also loses one 3d).' },
-        { delay: 3, colSpan: 2, icon: '🗺️', title: 'Blocks of the Periodic Table', html: '<strong>s-block:</strong> Groups 1 & 2 (valence electrons in s subshell).<br/><strong>p-block:</strong> Groups 3–8/0 (valence electrons in p subshell).<br/><strong>d-block:</strong> Transition metals (filling d subshell).<br/><strong>f-block:</strong> Lanthanides & Actinides (filling f subshell).' },
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

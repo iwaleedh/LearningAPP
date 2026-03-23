@@ -171,29 +171,7 @@ export const note_chemistry_1_3_9 = {
       terms: ['Giant structure', 'Simple molecular structure', 'Empirical formula']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Comparing Types of Structure',
-      subtitle: 'WCH11 — Chemistry Topic 3.9',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '⚧️', title: 'Ionic', html: '<strong>High mp/bp</strong> — strong ionic bonds.<br/><strong>Conducts</strong> when molten or in aqueous solution.<br/><strong>Hard & brittle;</strong> soluble in polar solvents.' },
-        { delay: 1, colSpan: 1, icon: '🌊', title: 'Metallic', html: '<strong>Variable mp/bp</strong> (Na: 98°C; W: 3422°C).<br/><strong>Conducts in all states</strong> — delocalised electrons.<br/><strong>Malleable & ductile.</strong>' },
-        { delay: 2, colSpan: 1, icon: '💎', title: 'Giant Covalent', html: '<strong>Very high mp/bp</strong> — many strong covalent bonds.<br/><strong>Non-conductor</strong> (except graphite).<br/>Hard; insoluble in most solvents.' },
-        { delay: 3, colSpan: 2, icon: '🔬', title: 'Simple Molecular', html: '<strong>Low mp/bp</strong> — only weak IMFs between molecules.<br/><strong>Non-conductor</strong> — no ions or free electrons.<br/>Solubility depends on polarity.<br/><em>Key:</em> covalent bonds within molecules are NOT broken on melting/boiling.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-9-1',
-      type: 'callout',
-      data: {
-        style: 'tip',
-        title: "DIAGNOSTIC QUESTION: Identifying Giant Covalent vs Ionic",
-        text: "KEY DISTINCTION: (1) High m.p. + conducts when molten/dissolved = IONIC. (2) Very high m.p. + does NOT conduct in any state = GIANT COVALENT. Example: SiO\u2082 (non-conductor) is giant covalent, NOT ionic like CaO despite both having similar m.p."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Four structure types: Ionic (high m.p., conducts molten, brittle, polar-soluble); Metallic (variable m.p., always conducts, malleable); Giant Covalent (very high m.p., non-conductor except graphite, insoluble); Simple Molecular (low m.p., non-conductor, like-dissolves-like). Giant structures: empirical formulas. Simple molecular: discrete molecules.',

@@ -158,29 +158,7 @@ export const note_chemistry_1_3_4 = {
       terms: ['Polyatomic ion']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'VSEPR & Molecular Shapes',
-      subtitle: 'WCH11 — Chemistry Topic 3.4',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🔄', title: 'VSEPR Rule', html: '<strong>Valence Shell Electron Pair Repulsion:</strong><br/>Electron pairs around a central atom repel each other and arrange to maximise separation.' },
-        { delay: 1, colSpan: 2, icon: '📐', title: 'Shapes & Bond Angles', html: '<strong>2 bp:</strong> Linear 180° (CO₂, BeCl₂).<br/><strong>3 bp:</strong> Trigonal planar 120° (BF₃, AlCl₃).<br/><strong>4 bp:</strong> Tetrahedral 109.5° (CH₄, CCl₄).<br/><strong>3 bp + 1 lp:</strong> Trigonal pyramidal ≈107° (NH₃).<br/><strong>2 bp + 2 lp:</strong> Bent (V-shape) ≈104.5° (H₂O).' },
-        { delay: 2, colSpan: 1, icon: '👁️', title: 'Lone Pair Effect', html: 'Lone pairs repel more than bonding pairs.<br/>Each lone pair reduces bond angles by ≈2.5°.<br/>Order: lp–lp > lp–bp > bp–bp.' },
-        { delay: 3, colSpan: 2, icon: '💡', title: 'Exam Tips', html: 'Count: <strong>bonding pairs + lone pairs</strong> on central atom to determine geometry.<br/>State the shape name AND bond angle.<br/>SF₆: 6 bp → octahedral 90°; PCl₅: 5 bp → trigonal bipyramidal 90°/120°.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-5',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "Double Bonds = ONE Electron Domain (Critical VSEPR Error)",
-        text: "High-mark error: counting a double or triple bond as <strong>two or three</strong> electron domains. It is <strong>ONE.</strong> Example: CO\u2082 has <strong>2 electron domains</strong> (each C=O counts as 1), not 4. This gives linear shape 180\u00b0, not tetrahedral. Always count regions of electron density, not individual bonds. Examiners frequently catch this mistake."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'VSEPR: electron pairs repel, arrange as far apart as possible. Lone pairs repel more than bonding pairs (LP–LP > LP–BP > BP–BP). 4 domains: 0LP → tetrahedral 109.5°; 1LP → pyramidal 107°; 2LP → bent 104.5°. 3 domains: trigonal planar 120°. 2 domains: linear 180°.',

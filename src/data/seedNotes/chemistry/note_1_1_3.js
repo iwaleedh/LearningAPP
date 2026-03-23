@@ -200,19 +200,7 @@ export const note_chemistry_1_1_3 = {
       }
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Relative Masses',
-      subtitle: 'Chemistry Topic 1.3',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '⚖️', title: 'Relative Atomic Mass (Aᵣ)', html: 'Weighted mean mass of an atom relative to 1/12th the mass of a Carbon-12 atom.' },
-        { delay: 1, colSpan: 1, icon: '⚛️', title: 'Relative Isotopic Mass', html: 'Mass of an isotope relative to 1/12th the mass of a Carbon-12 atom.' },
-        { delay: 2, colSpan: 1, icon: '🧪', title: 'Relative Formula Mass (Mᵣ)', html: 'Sum of Aᵣ values of all atoms in the formula (used for both molecules and ionic lattices).' },
-        { delay: 3, colSpan: 3, icon: '🔬', title: 'Calculating Parts Per Million (ppm)', html: 'Trace concentrations are often measured in ppm.<br/>• <strong>Solutions:</strong> mass of solute ÷ mass of solution × 1,000,000<br/>• <strong>Gases:</strong> volume of gas ÷ volume of air × 1,000,000' }
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

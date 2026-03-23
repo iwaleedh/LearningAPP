@@ -155,19 +155,7 @@ export const note_chemistry_1_1_8 = {
       }
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Core Practical 1: Molar Volume',
-      subtitle: 'Chemistry Topic 1.8',
-      elements: [
-        { delay: 0, colSpan: 2, icon: '🧪', title: 'The Experiment', html: 'React Magnesium with excess Hydrochloric Acid and measure the volume of Hydrogen gas produced using a gas syringe or inverted measuring cylinder.' },
-        { delay: 1, colSpan: 1, icon: '⚖️', title: 'The Reaction', html: 'Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)' },
-        { delay: 2, colSpan: 1, icon: '📉', title: 'Sources of Error', html: '• Gas escaping before bung is replaced<br/>• Syringe sticking<br/>• Mg ribbon covered in oxide layer' },
-        { delay: 3, colSpan: 2, icon: '✨', title: 'Improvements', html: '• Clean Mg with emery paper (removes MgO layer).<br/>• Suspend the Mg inside the flask on a thread so bung can be sealed before reaction starts.' }
-      ]
-    }
-  ],
+
   recall: {
     enabled: true,
     cues: [

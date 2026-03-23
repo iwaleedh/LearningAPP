@@ -208,29 +208,7 @@ export const note_chemistry_1_3_1 = {
       terms: ['Charge density']
     }
   ],
-  presentationSlides: [
-    {
-      layout: 'bento',
-      title: 'Ionic Lattice Structure',
-      subtitle: 'WCH11 — Chemistry Topic 3.1',
-      elements: [
-        { delay: 0, colSpan: 1, icon: '🏗️', title: 'Giant Ionic Lattice', html: 'Regular 3D arrangement of alternating cations and anions.<br/><strong>NaCl:</strong> each Na⁺ surrounded by 6 Cl⁻ (6:6 coordination).<br/>Held by electrostatic attractions in all directions.' },
-        { delay: 1, colSpan: 1, icon: '🌡️', title: 'High Melting Points', html: 'Large energy needed to break all ionic bonds.<br/><strong>Higher charge → higher mp:</strong> MgO (2852°C) &gt;&gt; NaCl (801°C).<br/><strong>Smaller ions → shorter, stronger bonds → higher mp.</strong>' },
-        { delay: 2, colSpan: 1, icon: '⚡', title: 'Electrical Conductivity', html: '<strong>Solid:</strong> Does NOT conduct — ions fixed in lattice.<br/><strong>Molten or aqueous:</strong> DOES conduct — ions free to move and carry charge.' },
-        { delay: 3, colSpan: 2, icon: '🔬', title: 'Physical Properties', html: '<strong>Hard and brittle:</strong> lattice resists distortion; planes of like charges repel when shifted → shatters.<br/><strong>Soluble in polar solvents:</strong> water molecules solvate the ions, pulling them apart.<br/><strong>Insoluble in non-polar solvents</strong> — insufficient lattice-breaking energy.' },
-      ]
-    }
-  ,
-    {
-      id: 'callout-exam-2',
-      type: 'callout',
-      data: {
-        style: 'warning',
-        title: "Conductivity: It's About Ion Mobility, NOT Just Ion Presence",
-        text: "Common error: \"Ionic compounds conduct because they have ions.\" <strong>Wrong.</strong> The key is whether ions are <strong>free to move</strong>. Examiners expect: <strong>Solid = ions in fixed positions \u2192 cannot conduct. Molten or aqueous = ions free to move \u2192 conducts.</strong> Do not say \"ionic compounds always conduct\" \u2014 you will lose marks."
-      }
-    }
-  ],
+
   recall: {
     enabled: true,
     summaryText: 'Giant ionic lattice: 3D array of alternating cations and anions. NaCl: 6:6 coordination (rock salt). CsCl: 8:8 coordination (radius ratio 92%). Properties: high m.p. (many strong forces), brittle (layer shift → like charges adjacent → repulsion), conducts only when molten/dissolved (ions must be free). Higher charge → higher m.p. (MgO 2852°C vs NaCl 801°C).',
