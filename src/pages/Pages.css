@@ -2490,6 +2490,66 @@
     font-size: var(--font-size-lg);
 }
 
+/* ── Join Class dialog (student arrives via share link) ──── */
+.lc-join-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--color-bg-secondary);
+}
+.lc-join-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-8) var(--space-6);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+.lc-join-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+.lc-join-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+}
+.lc-join-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+.lc-join-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 1.5px solid var(--color-border);
+    border-radius: 10px;
+    font-size: var(--font-size-base);
+    background: var(--color-surface);
+    color: var(--color-text);
+    outline: none;
+    transition: border-color 0.2s;
+}
+.lc-join-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+.lc-join-btn {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    border-radius: 10px;
+}
+.lc-join-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 /* ── Top bar ──────────────────────────────────────────────── */
 .lc-topbar {
     display: flex;

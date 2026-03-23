@@ -150,6 +150,8 @@ export default function LiveClassPage() {
   // Role
   const [role, setRole] = useState(null); // 'teacher' | 'student'
   const [sessionData, setSessionData] = useState(null);
+  const [studentName, setStudentName] = useState('');
+  const [joinName, setJoinName] = useState('');
   const [participants, setParticipants] = useState([]);
   const [users, setUsers] = useState([]);
   const [cursors, setCursors] = useState([]);
@@ -1483,6 +1485,49 @@ export default function LiveClassPage() {
   }
 
   if (!role) {
+    // Student arriving via shared link — show name entry dialog
+    const isSharedLink = !location.state?.session;
+    if (isSharedLink) {
+      const handleJoin = (e) => {
+        e.preventDefault();
+        const name = joinName.trim();
+        if (!name) return;
+        setStudentName(name);
+        // Create a minimal demo session for the student
+        setSessionData({
+          classId: classId,
+          title: 'Live Class',
+          hostIdentity: { toHexString: () => '' },
+          backgroundType: 'white',
+        });
+        setRole('student');
+      };
+      return (
+        <div className="lc-join-overlay animate-fade-in">
+          <form className="lc-join-dialog card" onSubmit={handleJoin}>
+            <div className="lc-join-icon">🎓</div>
+            <h2 className="lc-join-title">Join Live Class</h2>
+            <p className="lc-join-subtitle">Enter your name to join the session</p>
+            <input
+              className="lc-join-input"
+              type="text"
+              placeholder="Your name"
+              value={joinName}
+              onChange={(e) => setJoinName(e.target.value)}
+              autoFocus
+              maxLength={50}
+            />
+            <button
+              className="btn btn-primary lc-join-btn"
+              type="submit"
+              disabled={!joinName.trim()}
+            >
+              Join Class
+            </button>
+          </form>
+        </div>
+      );
+    }
     return <div className="lc-loading">Joining class…</div>;
   }
 
