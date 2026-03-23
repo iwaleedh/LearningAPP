@@ -8,6 +8,7 @@ import {
   getLiveClassById,
 } from '../spacetime.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
+import { createFirebaseSync } from '../services/liveclass/firebaseSync.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
 import FontPicker from '../components/liveclass/FontPicker.jsx';
 import { DEFAULT_TEXT_FONT } from '../components/liveclass/fontDefaults.js';
@@ -326,8 +327,12 @@ export default function LiveClassPage() {
 
   function broadcastCanvasState() {
     const fc = fabricRef.current;
-    if (!fc || !broadcastRef.current) return;
-    broadcastRef.current.postMessage({ type: 'canvas-state', data: fc.toJSON(['data']) });
+    if (!fc) return;
+    const json = fc.toJSON(['data']);
+    // Local same-browser sync
+    broadcastRef.current?.postMessage({ type: 'canvas-state', data: json });
+    // Cross-device sync via Firebase
+    firebaseSyncRef.current?.pushCanvas(json);
   }
 
   function saveHistory() {
@@ -370,6 +375,7 @@ export default function LiveClassPage() {
   const myFabricRef = useRef(null);
   const syncRef = useRef(null);
   const broadcastRef = useRef(null);
+  const firebaseSyncRef = useRef(null);
   const [canvasSize, setCanvasSize] = useState({ w: 1, h: 1 });
 
   // ── Ruler tool state ──────────────────────────────────────────────────────
@@ -543,6 +549,41 @@ export default function LiveClassPage() {
     return () => {
       bc.close();
       broadcastRef.current = null;
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [role, classId]);
+
+  // ── Firebase cross-device sync ─────────────────────────────────────────────
+  useEffect(() => {
+    if (!role || !classId) return;
+    const fbSync = createFirebaseSync(classId);
+    if (!fbSync) return; // Firebase not configured — skip
+    firebaseSyncRef.current = fbSync;
+
+    if (role === 'teacher') {
+      // Push initial blank state so students get something on connect
+      const fc = fabricRef.current;
+      if (fc) fbSync.pushCanvas(fc.toJSON(['data']));
+    } else {
+      // Student: listen for teacher's canvas updates from Firebase
+      fbSync.onCanvasUpdate((fabricJson) => {
+        const fc = fabricRef.current;
+        if (!fc) return;
+        skipHistory.current = true;
+        fc.loadFromJSON(fabricJson, () => {
+          fc.getObjects().forEach(o => { o.selectable = false; o.evented = false; });
+          skipHistory.current = false;
+          fc.requestRenderAll();
+        });
+      });
+      fbSync.onBgUpdate((bgType) => {
+        setBackgroundType(bgType);
+      });
+    }
+
+    return () => {
+      fbSync.disconnect();
+      firebaseSyncRef.current = null;
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [role, classId]);
@@ -1713,6 +1754,7 @@ export default function LiveClassPage() {
           setBackgroundType(bg);
           syncRef.current?.setBackground(classId, bg);
           broadcastRef.current?.postMessage({ type: 'bg-change', data: bg });
+          firebaseSyncRef.current?.pushBackground(bg);
         }}
         onFontChange={setTextFont}
         onLaserModeChange={setLaserMode}
