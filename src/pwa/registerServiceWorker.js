@@ -99,7 +99,8 @@ export function registerServiceWorker() {
         });
 
         try {
-            const registration = await navigator.serviceWorker.register('/sw.js');
+            const swUrl = import.meta.env.BASE_URL + 'sw.js';
+            const registration = await navigator.serviceWorker.register(swUrl, { scope: import.meta.env.BASE_URL });
 
             if (registration.waiting) {
                 updatePwaStatus({

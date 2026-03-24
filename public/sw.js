@@ -1,7 +1,8 @@
 /* Service Worker for Living Textbook PWA — v8 */
 
-const OFFLINE_PAGE = '/offline.html';
-const OFFLINE_CACHE = 'offline-shell-v8';
+const BASE_PATH = new URL('./', self.location.href).pathname; // e.g. '/LearningAPP/'
+const OFFLINE_PAGE = BASE_PATH + 'offline.html';
+const OFFLINE_CACHE = 'offline-shell-v9';
 
 // ── On install: pre-cache offline fallback page and skip waiting ──
 self.addEventListener('install', (event) => {
@@ -33,7 +34,7 @@ self.addEventListener('fetch', (event) => {
                 .then((response) => {
                     // Cache the fresh version
                     const clone = response.clone();
-                    caches.open('code-cache-v8').then((cache) => {
+                    caches.open('code-cache-v9').then((cache) => {
                         cache.put(event.request, clone);
                     });
                     return response;
