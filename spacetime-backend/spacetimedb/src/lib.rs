@@ -77,6 +77,7 @@ pub struct LiveClassCursor {
     pub x: f32,
     pub y: f32,
     pub tool: String,
+    pub mode: String,        // "dot" | "trail"
     pub updated_at: u64,
 }
 
@@ -543,7 +544,7 @@ pub fn acknowledge_hand_raise(ctx: &ReducerContext, raise_id: u64) -> Result<(),
 }
 
 #[spacetimedb::reducer]
-pub fn update_cursor(ctx: &ReducerContext, class_id: u64, x: f32, y: f32, tool: String) -> Result<(), String> {
+pub fn update_cursor(ctx: &ReducerContext, class_id: u64, x: f32, y: f32, tool: String, mode: String) -> Result<(), String> {
     let _user = check_auth(ctx)?;
 
     if let Some(mut cursor) = ctx.db.live_class_cursor().cursor_id().find(ctx.sender()) {
@@ -551,6 +552,7 @@ pub fn update_cursor(ctx: &ReducerContext, class_id: u64, x: f32, y: f32, tool: 
         cursor.x = x;
         cursor.y = y;
         cursor.tool = tool;
+        cursor.mode = mode;
         cursor.updated_at = 0;
         ctx.db.live_class_cursor().cursor_id().update(cursor);
     } else {
@@ -560,6 +562,7 @@ pub fn update_cursor(ctx: &ReducerContext, class_id: u64, x: f32, y: f32, tool: 
             x,
             y,
             tool,
+            mode,
             updated_at: 0,
         });
     }

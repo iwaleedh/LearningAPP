@@ -38,6 +38,8 @@ export async function initSpacetimeDB() {
         const timeoutId = setTimeout(() => {
             if (!isReady) {
                 console.warn(`SpacetimeDB connection timed out after ${CONNECT_TIMEOUT_MS}ms — offline mode`);
+                client = null;
+                currentIdentity = null;
                 hasErrored = true;
                 lastError = new Error('Connection timed out');
                 errorCallbacks.forEach(cb => cb(lastError));

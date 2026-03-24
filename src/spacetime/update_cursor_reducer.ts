@@ -8,4 +8,5 @@ export default {
   x:       __t.f32(), // normalized 0–1
   y:       __t.f32(),
   tool:    __t.string(), // "pointer" | "laser"
+  mode:    __t.string(), // "dot" | "trail"
 };

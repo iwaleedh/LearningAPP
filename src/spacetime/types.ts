@@ -51,6 +51,87 @@ export const User = __t.object("User", {
   identity: __t.identity(),
   username: __t.string(),
   createdAt: __t.u64(),
+  role: __t.string(),
 });
 export type User = __Infer<typeof User>;
+
+export const LiveClassSession = __t.object("LiveClassSession", {
+  classId: __t.u64(),
+  hostIdentity: __t.identity(),
+  title: __t.string(),
+  backgroundType: __t.string(),
+  status: __t.string(),
+  createdAt: __t.u64(),
+});
+export type LiveClassSession = __Infer<typeof LiveClassSession>;
+
+export const LiveClassCursor = __t.object("LiveClassCursor", {
+  cursorId: __t.identity(),
+  classId: __t.u64(),
+  x: __t.f32(),
+  y: __t.f32(),
+  tool: __t.string(),
+  mode: __t.string(),
+  updatedAt: __t.u64(),
+});
+export type LiveClassCursor = __Infer<typeof LiveClassCursor>;
+
+export const ClassTimer = __t.object("ClassTimer", {
+  classId: __t.u64(),
+  mode: __t.string(),
+  state: __t.string(),
+  elapsedMs: __t.u64(),
+  targetMs: __t.u64(),
+  startedAt: __t.u64(),
+});
+export type ClassTimer = __Infer<typeof ClassTimer>;
+
+export const HandRaise = __t.object("HandRaise", {
+  raiseId: __t.u64(),
+  classId: __t.u64(),
+  studentIdentity: __t.identity(),
+  status: __t.string(),
+  raisedAt: __t.u64(),
+});
+export type HandRaise = __Infer<typeof HandRaise>;
+
+export const AnnotationStroke = __t.object("AnnotationStroke", {
+  strokeId: __t.u64(),
+  sessionId: __t.u64(),
+  pageNumber: __t.u32(),
+  userIdentity: __t.identity(),
+  fabricObjectJson: __t.string(),
+  createdAt: __t.u64(),
+  updatedAt: __t.u64(),
+});
+export type AnnotationStroke = __Infer<typeof AnnotationStroke>;
+
+export const LiveSession = __t.object("LiveSession", {
+  sessionId: __t.u64(),
+  hostIdentity: __t.identity(),
+  paperId: __t.string(),
+  title: __t.string(),
+  status: __t.string(),
+  createdAt: __t.u64(),
+});
+export type LiveSession = __Infer<typeof LiveSession>;
+
+export const SessionParticipant = __t.object("SessionParticipant", {
+  participantId: __t.u64(),
+  sessionId: __t.u64(),
+  userIdentity: __t.identity(),
+  role: __t.string(),
+  joinedAt: __t.u64(),
+});
+export type SessionParticipant = __Infer<typeof SessionParticipant>;
+
+export const SessionInvite = __t.object("SessionInvite", {
+  inviteId: __t.u64(),
+  sessionId: __t.u64(),
+  fromIdentity: __t.identity(),
+  toUsername: __t.string(),
+  status: __t.string(),
+  createdAt: __t.u64(),
+});
+export type SessionInvite = __Infer<typeof SessionInvite>;
 

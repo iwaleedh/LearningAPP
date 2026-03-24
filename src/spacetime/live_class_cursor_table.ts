@@ -10,5 +10,6 @@ export default __t.row({
   x:          __t.f32(), // normalized 0–1 relative to canvas width
   y:          __t.f32(), // normalized 0–1 relative to canvas height
   tool:       __t.string(), // "pointer" | "laser"
+  mode:       __t.string(), // "dot" | "trail"
   updatedAt:  __t.u64().name("updated_at"),
 });
