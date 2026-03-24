@@ -311,7 +311,7 @@ export function createLiveClassSync({
 
   /** Invite a student by username. */
   function sendInvite(classId, toUsername) {
-    client?.reducers.inviteToSession({ sessionId: classId, toUsername });
+    client?.reducers.inviteToSession({ sessionId: classId, targetUsername: toUsername });
   }
 
   /** Student raises hand. */
