@@ -4,7 +4,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Link2, Check, Hand, Users } from 'lucide-react';
 import { Canvas as FabricCanvas, PencilBrush, Image as FabricImage, Text as FabricText, IText as FabricIText, Rect as FabricRect, Circle as FabricCircle, Ellipse as FabricEllipse, Line as FabricLine, Triangle as FabricTriangle, Polygon as FabricPolygon, Path as FabricPath, util as fabricUtil } from 'fabric';
 import {
-  onSpacetimeDBReady, getCurrentIdentity, getAllUsers,
+  onSpacetimeDBReady, onSpacetimeDBError, getCurrentIdentity, getAllUsers,
   getLiveClassById,
 } from '../spacetime.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
@@ -404,6 +404,10 @@ export default function LiveClassPage() {
 
   // ── Init SpacetimeDB & detect role (online mode) ──────────────────────────
   useEffect(() => {
+    onSpacetimeDBError(() => {
+      // Only update to offline if we haven't already connected
+      setStdbStatus(prev => prev === 'connected' ? 'connected' : 'offline');
+    });
     onSpacetimeDBReady(() => {
       setStdbStatus('connected');
       const identity = getCurrentIdentity();

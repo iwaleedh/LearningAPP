@@ -7,6 +7,7 @@ const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE || 'spacetime
 export let client = null;
 let currentIdentity = null;
 let connectionCallbacks = [];
+let errorCallbacks = [];
 let hasRequestedRegistration = false;
 let isInitialized = false;
 
@@ -80,6 +81,8 @@ export async function initSpacetimeDB() {
 
         builder.onConnectError((err) => {
             console.error('SpacetimeDB Connect Error:', err);
+            errorCallbacks.forEach(cb => cb(err));
+            errorCallbacks = [];
             reject(err);
         });
 
@@ -99,6 +102,10 @@ export function onSpacetimeDBReady(callback) {
     } else {
         connectionCallbacks.push(callback);
     }
+}
+
+export function onSpacetimeDBError(callback) {
+    errorCallbacks.push(callback);
 }
 
 export function getCurrentIdentity() {
