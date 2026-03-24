@@ -147,6 +147,9 @@ export default function LiveClassPage() {
 
   const classId = sessionId ? BigInt(sessionId) : null;
 
+  // SpacetimeDB connection status
+  const [stdbStatus, setStdbStatus] = useState('connecting'); // 'connecting' | 'connected' | 'offline'
+
   // Role
   const [role, setRole] = useState(null); // 'teacher' | 'student'
   const [sessionData, setSessionData] = useState(null);
@@ -396,11 +399,13 @@ export default function LiveClassPage() {
     const myIdentityHex = identity?.toHexString() ?? null;
     const isTeacher = myIdentityHex ? navSession.hostIdentity === myIdentityHex : true;
     setRole(isTeacher ? 'teacher' : 'student');
+    setStdbStatus('offline');
   }, [location.state, role]);
 
   // ── Init SpacetimeDB & detect role (online mode) ──────────────────────────
   useEffect(() => {
     onSpacetimeDBReady(() => {
+      setStdbStatus('connected');
       const identity = getCurrentIdentity();
       if (!identity) return;
       const myHex = identity.toHexString();
@@ -1658,6 +1663,17 @@ export default function LiveClassPage() {
           <span className="lc-participant-count">{participants.length} student{participants.length !== 1 ? 's' : ''}</span>
         </div>
         <div className="lc-topbar-right">
+          <span
+            className={`lc-stdb-pill lc-stdb-pill--${stdbStatus}`}
+            title={
+              stdbStatus === 'connected' ? 'SpacetimeDB: connected (cross-device sync active)' :
+              stdbStatus === 'offline'   ? 'SpacetimeDB: offline (same-browser sync only)' :
+                                          'SpacetimeDB: connecting…'
+            }
+          >
+            <span className="lc-stdb-dot" />
+            {stdbStatus === 'connected' ? 'Synced' : stdbStatus === 'offline' ? 'Local' : 'Connecting'}
+          </span>
           <button
             className={`btn btn-sm lc-share-btn ${linkCopied ? 'lc-share-btn--copied' : ''}`}
             onClick={handleCopyLink}
