@@ -5,7 +5,7 @@ import { Link2, Check, Hand, Users } from 'lucide-react';
 import { Canvas as FabricCanvas, PencilBrush, Image as FabricImage, Text as FabricText, IText as FabricIText, Rect as FabricRect, Circle as FabricCircle, Ellipse as FabricEllipse, Line as FabricLine, Triangle as FabricTriangle, Polygon as FabricPolygon, Path as FabricPath, util as fabricUtil } from 'fabric';
 import {
   onSpacetimeDBReady, onSpacetimeDBError, getCurrentIdentity, getAllUsers,
-  getLiveClassById,
+  getLiveClassById, client as stdbClient,
 } from '../spacetime.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
@@ -435,6 +435,11 @@ export default function LiveClassPage() {
         return session.hostIdentity.toHexString() === myHex ? 'teacher' : 'student';
       });
       setUsers(getAllUsers());
+      // Keep users list live — update whenever someone registers or changes name
+      if (stdbClient) {
+        stdbClient.db.user.onInsert(() => setUsers(getAllUsers()));
+        stdbClient.db.user.onUpdate(() => setUsers(getAllUsers()));
+      }
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [classId]);
@@ -511,7 +516,22 @@ export default function LiveClassPage() {
     syncRef.current = sync;
 
     if (role === 'teacher') {
-      // Teacher is already the host — no need to join
+      // Re-attach DB listeners (the sync instance from TeacherDashboard was
+      // abandoned on navigation, so we must attach fresh listeners here).
+      const existingStrokes = sync.watchClass(classId);
+      // Pre-populate canvas with any strokes already in DB (e.g. after remount)
+      if (existingStrokes.length > 0) {
+        const fc = fabricRef.current;
+        existingStrokes.forEach(s => {
+          try {
+            const parsed = JSON.parse(s.fabricObjectJson);
+            fabricUtil.enlivenObjects([parsed]).then((objs) => {
+              objs.forEach(o => { o.selectable = false; o.evented = false; fc?.add(o); });
+              fc?.requestRenderAll();
+            });
+          } catch { /* noop */ }
+        });
+      }
     } else {
       sync.joinClass(classId).then(existingStrokes => {
         const fc = fabricRef.current;

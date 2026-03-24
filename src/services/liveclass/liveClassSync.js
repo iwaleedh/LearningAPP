@@ -233,6 +233,22 @@ export function createLiveClassSync({
     );
   }
 
+  /**
+   * Teacher attaches DB listeners to an existing class (call from LiveClassPage
+   * after navigating from TeacherDashboard — the previous createClass sync
+   * instance is abandoned on navigation, so we must re-attach here).
+   * Returns snapshot of existing strokes so the canvas can be pre-populated.
+   */
+  function watchClass(classId) {
+    activeClassId = classId;
+    attachListeners(classId);
+    const conn = client;
+    if (!conn) return [];
+    return Array.from(conn.db.annotation_stroke.iter()).filter(
+      s => s.sessionId === classId
+    );
+  }
+
   function leaveClass() {
     detachListeners();
     activeClassId = null;
@@ -513,6 +529,7 @@ export function createLiveClassSync({
   return {
     createClass,
     joinClass,
+    watchClass,
     leaveClass,
     broadcastCursor,
     broadcastLaserTrail,
