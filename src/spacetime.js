@@ -6,27 +6,45 @@ const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI ||
 const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE ||
     (import.meta.env.DEV ? 'spacetime-backend-dev' : 'spacetime-backend-otpgp');
 
+const CONNECT_TIMEOUT_MS = 8000; // fall back to offline after 8 s
+
 export let client = null;
 let currentIdentity = null;
 let connectionCallbacks = [];
 let errorCallbacks = [];
 let hasRequestedRegistration = false;
-let isInitialized = false;
+let isReady = false;   // true only AFTER subscription applied
+let hasErrored = false;
+let lastError = null;
 
 export async function initSpacetimeDB() {
-    if (client) return client;
+    if (client && isReady) return client;
 
     // Safety: if URI looks wrong for this environment, skip silently
     if (!SPACETIMEDB_URI || SPACETIMEDB_URI === '') {
         console.warn('SpacetimeDB URI not configured — running in offline mode');
-        errorCallbacks.forEach(cb => cb(new Error('No URI configured')));
+        hasErrored = true;
+        lastError = new Error('No URI configured');
+        errorCallbacks.forEach(cb => cb(lastError));
         errorCallbacks = [];
         return null;
     }
 
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         const tokenKey = `spacetime-token-${SPACETIMEDB_URI}`;
         const token = localStorage.getItem(tokenKey) || undefined;
+
+        // Timeout: if we haven't connected in CONNECT_TIMEOUT_MS, give up gracefully
+        const timeoutId = setTimeout(() => {
+            if (!isReady) {
+                console.warn(`SpacetimeDB connection timed out after ${CONNECT_TIMEOUT_MS}ms — offline mode`);
+                hasErrored = true;
+                lastError = new Error('Connection timed out');
+                errorCallbacks.forEach(cb => cb(lastError));
+                errorCallbacks = [];
+                resolve(null);
+            }
+        }, CONNECT_TIMEOUT_MS);
 
         const builder = DbConnection.builder()
             .withUri(SPACETIMEDB_URI)
@@ -51,6 +69,8 @@ export async function initSpacetimeDB() {
             // Subscribe to public tables we care about
             conn.subscriptionBuilder()
                 .onApplied(() => {
+                    clearTimeout(timeoutId);
+
                     // Auto-register user if they don't exist
                     const user = Array.from(client.db.user.iter()).find(
                         u => u.identity.toHexString() === identity.toHexString()
@@ -64,11 +84,11 @@ export async function initSpacetimeDB() {
                         }
                         client.reducers.registerUser({ username: randomUsername });
                     } else if (user) {
-                        hasRequestedRegistration = true; // prevent future triggers if user was found
+                        hasRequestedRegistration = true;
                     }
 
-                    if (!isInitialized) {
-                        isInitialized = true;
+                    if (!isReady) {
+                        isReady = true;
                         resolve(client);
                         connectionCallbacks.forEach(cb => cb(client, currentIdentity));
                         connectionCallbacks = [];
@@ -85,15 +105,19 @@ export async function initSpacetimeDB() {
                     "SELECT * FROM live_class_session WHERE status = 'active'",
                     "SELECT * FROM live_class_cursor",
                     "SELECT * FROM hand_raise WHERE status = 'raised'",
-                    "SELECT * FROM class_timer"
+                    "SELECT * FROM class_timer",
+                    "SELECT * FROM annotation_stroke"
                 ]);
         });
 
         builder.onConnectError((err) => {
+            clearTimeout(timeoutId);
             console.error('SpacetimeDB Connect Error:', err);
+            hasErrored = true;
+            lastError = err;
             errorCallbacks.forEach(cb => cb(err));
             errorCallbacks = [];
-            reject(err);
+            resolve(null); // resolve with null so the app continues in offline mode
         });
 
         builder.onDisconnect(() => {
@@ -106,16 +130,22 @@ export async function initSpacetimeDB() {
     });
 }
 
+/** Register a callback for when SpacetimeDB is fully ready (connected + subscription applied). */
 export function onSpacetimeDBReady(callback) {
-    if (client && currentIdentity) {
+    if (isReady && client && currentIdentity) {
         callback(client, currentIdentity);
     } else {
         connectionCallbacks.push(callback);
     }
 }
 
+/** Register a callback for SpacetimeDB connection errors (fires immediately if already errored). */
 export function onSpacetimeDBError(callback) {
-    errorCallbacks.push(callback);
+    if (hasErrored) {
+        callback(lastError);
+    } else {
+        errorCallbacks.push(callback);
+    }
 }
 
 export function getCurrentIdentity() {

@@ -113,6 +113,8 @@ export function createLiveClassSync({
       if (p.sessionId !== classId) return;
       notifyParticipants();
     }));
+    // Immediately notify with existing participants
+    notifyParticipants();
 
     // ── Cursor / Laser ────────────────────────────────────────────
     unsubs.push(conn.db.live_class_cursor.onInsert((cursor) => {
@@ -223,9 +225,9 @@ export function createLiveClassSync({
   async function joinClass(classId) {
     const conn = client;
     if (!conn) return []; // offline — BroadcastChannel handles sync
-    conn.reducers.joinLiveClass({ classId });
     activeClassId = classId;
     attachListeners(classId);
+    conn.reducers.joinLiveClass({ classId });
     return Array.from(conn.db.annotation_stroke.iter()).filter(
       s => s.sessionId === classId
     );

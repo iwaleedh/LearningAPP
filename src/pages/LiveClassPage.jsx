@@ -416,17 +416,24 @@ export default function LiveClassPage() {
 
       const session = getLiveClassById(classId);
       if (!session) {
-        // Don't override if we already have a local/offline session
-        if (!location.state?.session) {
-          setEndedMsg('Class not found or already ended.');
-        }
+        // Don't override if student already joined via dialog or we have an offline session
+        setRole(prev => {
+          if (prev) return prev; // already set — keep it
+          if (!location.state?.session) {
+            setEndedMsg('Class not found or already ended.');
+          }
+          return prev;
+        });
         return;
       }
       setSessionData(session);
       setBackgroundType(session.backgroundType ?? 'white');
 
-      const isTeacher = session.hostIdentity.toHexString() === myHex;
-      setRole(isTeacher ? 'teacher' : 'student');
+      // Only set role if not already set (e.g. by join dialog)
+      setRole(prev => {
+        if (prev) return prev;
+        return session.hostIdentity.toHexString() === myHex ? 'teacher' : 'student';
+      });
       setUsers(getAllUsers());
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -534,7 +541,40 @@ export default function LiveClassPage() {
     const bc = new BroadcastChannel(channelName);
     broadcastRef.current = bc;
 
+    if (role === 'teacher') {
+      // Track students joining via BroadcastChannel (same-browser fallback)
+      bc.onmessage = (e) => {
+        const { type, data } = e.data;
+        if (type === 'student-join') {
+          setParticipants(prev => {
+            if (prev.some(p => p._bcId === data.bcId)) return prev;
+            // Shape compatible with TeacherStudentGrid (needs userIdentity.toHexString())
+            return [...prev, {
+              _bcId: data.bcId,
+              sessionId: classId,
+              userIdentity: { toHexString: () => data.bcId },
+              joinedAt: data.joinedAt,
+            }];
+          });
+          // Also put the student's display name in the users list
+          setUsers(prev => {
+            if (prev.some(u => u.identity.toHexString() === data.bcId)) return prev;
+            return [...prev, {
+              identity: { toHexString: () => data.bcId },
+              username: data.name,
+            }];
+          });
+        } else if (type === 'student-leave') {
+          setParticipants(prev => prev.filter(p => p._bcId !== data.bcId));
+        }
+      };
+    }
+
     if (role === 'student') {
+      // Announce presence to teacher tab
+      const bcId = 'bc_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+      bc.postMessage({ type: 'student-join', data: { bcId, name: studentName || joinName || 'Student', joinedAt: Date.now() } });
+
       bc.onmessage = (e) => {
         const { type, data } = e.data;
         const fc = fabricRef.current;
@@ -550,6 +590,13 @@ export default function LiveClassPage() {
         } else if (type === 'bg-change') {
           setBackgroundType(data);
         }
+      };
+
+      // Announce leave on cleanup
+      return () => {
+        bc.postMessage({ type: 'student-leave', data: { bcId } });
+        bc.close();
+        broadcastRef.current = null;
       };
     }
 
@@ -1557,13 +1604,23 @@ export default function LiveClassPage() {
         const name = joinName.trim();
         if (!name) return;
         setStudentName(name);
-        // Create a minimal demo session for the student
-        setSessionData({
-          classId: classId,
-          title: 'Live Class',
-          hostIdentity: { toHexString: () => '' },
-          backgroundType: 'white',
-        });
+
+        // Use SpacetimeDB session data if available, otherwise create a minimal demo session
+        const stdbSession = getLiveClassById(classId);
+        if (stdbSession) {
+          setSessionData(stdbSession);
+          setBackgroundType(stdbSession.backgroundType ?? 'white');
+        } else {
+          setSessionData({
+            classId: classId,
+            title: 'Live Class',
+            hostIdentity: { toHexString: () => '' },
+            backgroundType: 'white',
+          });
+        }
+
+        // If SpacetimeDB never connected/timed out, mark as offline now
+        setStdbStatus(prev => prev === 'connected' ? 'connected' : prev === 'connecting' ? 'offline' : prev);
         setRole('student');
       };
       return (
