@@ -464,6 +464,50 @@ export function createLiveClassSync({
     return presentState;
   }
 
+  /**
+   * Reconcile SpacetimeDB strokes with the current canvas state.
+   * Call after undo/redo (which use loadFromJSON and bypass individual stroke events).
+   * Deletes DB strokes that are no longer on the canvas and re-adds new ones.
+   */
+  function syncFullCanvasState(classId, fabricObjects) {
+    const conn = client;
+    if (!conn || !classId) return;
+
+    const currentIds = new Set();
+    fabricObjects.forEach(obj => {
+      const cid = obj?.data?.strokeClientId;
+      if (cid) currentIds.add(cid);
+    });
+
+    // Delete strokes in DB that are no longer on canvas
+    for (const [cid, strokeId] of clientIdToStrokeId) {
+      if (!currentIds.has(cid)) {
+        conn.reducers.deleteStroke({ strokeId });
+        clientIdToStrokeId.delete(cid);
+        strokeIdToClientId.delete(strokeId);
+      }
+    }
+
+    // Add canvas objects not yet tracked in DB
+    fabricObjects.forEach(obj => {
+      const cid = obj?.data?.strokeClientId;
+      if (cid && !clientIdToStrokeId.has(cid)) {
+        conn.reducers.addStroke({ sessionId: classId, pageNumber: 1, fabricObjectJson: JSON.stringify(obj) });
+        const unsub = conn.db.annotation_stroke.onInsert((stroke) => {
+          if (stroke.sessionId !== classId) return;
+          try {
+            const parsed = JSON.parse(stroke.fabricObjectJson);
+            if (parsed?.data?.strokeClientId === cid) {
+              clientIdToStrokeId.set(cid, stroke.strokeId);
+              strokeIdToClientId.set(stroke.strokeId, cid);
+              unsub();
+            }
+          } catch { /* noop */ }
+        });
+      }
+    });
+  }
+
   return {
     createClass,
     joinClass,
@@ -489,5 +533,6 @@ export function createLiveClassSync({
     approvePresent,
     endPresent,
     getPresentState,
+    syncFullCanvasState,
   };
 }
