@@ -6,6 +6,7 @@ import { Canvas as FabricCanvas, PencilBrush, Image as FabricImage, Text as Fabr
 import {
   onSpacetimeDBReady, onSpacetimeDBError, getCurrentIdentity, getAllUsers,
   getLiveClassById, client as stdbClient,
+  isTeacher as stdbIsTeacher, setTeacherRole as stdbSetTeacherRole,
 } from '../spacetime.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
@@ -432,7 +433,12 @@ export default function LiveClassPage() {
       // Only set role if not already set (e.g. by join dialog)
       setRole(prev => {
         if (prev) return prev;
-        return session.hostIdentity.toHexString() === myHex ? 'teacher' : 'student';
+        // Check both: are they the class host, or do they have the teacher role in DB?
+        // The teacher role check handles cross-device access (e.g. opening the link on iPad
+        // where the identity differs from the creating device).
+        const isHost = session.hostIdentity.toHexString() === myHex;
+        const hasTeacherRole = stdbIsTeacher();
+        return (isHost || hasTeacherRole) ? 'teacher' : 'student';
       });
       setUsers(getAllUsers());
       // Keep users list live — update whenever someone registers or changes name
@@ -551,8 +557,11 @@ export default function LiveClassPage() {
     return () => {
       sync.leaveClass();
     };
+  // stdbStatus is included so the sync re-runs once SpacetimeDB connects — this
+  // handles the race where offline-init sets role before client is available,
+  // causing watchClass/joinClass to no-op on a null client.
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [role, classId]);
+  }, [role, classId, stdbStatus]);
 
   // ── BroadcastChannel sync (same-origin real-time sync) ─────────────────────
   useEffect(() => {
@@ -1619,6 +1628,13 @@ export default function LiveClassPage() {
     // Student arriving via shared link — show name entry dialog
     const isSharedLink = !location.state?.session;
     if (isSharedLink) {
+      // While SpacetimeDB is still connecting, show a loading screen rather than
+      // the join form. This prevents the teacher (who has role='teacher' in DB)
+      // from briefly seeing the student form before their role is resolved.
+      if (stdbStatus === 'connecting') {
+        return <div className="lc-loading animate-fade-in">Connecting to class…</div>;
+      }
+
       const handleJoin = (e) => {
         e.preventDefault();
         const name = joinName.trim();
@@ -1643,6 +1659,26 @@ export default function LiveClassPage() {
         setStdbStatus(prev => prev === 'connected' ? 'connected' : prev === 'connecting' ? 'offline' : prev);
         setRole('student');
       };
+
+      const handleJoinAsTeacher = () => {
+        // Allow teacher to claim the teacher view from any device.
+        // This sets their DB role to 'teacher' so future opens also work.
+        stdbSetTeacherRole(true);
+        const stdbSession = getLiveClassById(classId);
+        if (stdbSession) {
+          setSessionData(stdbSession);
+          setBackgroundType(stdbSession.backgroundType ?? 'white');
+        } else {
+          setSessionData({
+            classId: classId,
+            title: 'Live Class',
+            hostIdentity: { toHexString: () => '' },
+            backgroundType: 'white',
+          });
+        }
+        setRole('teacher');
+      };
+
       return (
         <div className="lc-join-overlay animate-fade-in">
           <form className="lc-join-dialog card" onSubmit={handleJoin}>
@@ -1664,6 +1700,13 @@ export default function LiveClassPage() {
               disabled={!joinName.trim()}
             >
               Join Class
+            </button>
+            <button
+              type="button"
+              className="btn btn-ghost lc-join-teacher-btn"
+              onClick={handleJoinAsTeacher}
+            >
+              I'm the teacher →
             </button>
           </form>
         </div>
