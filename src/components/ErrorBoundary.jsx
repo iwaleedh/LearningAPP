@@ -40,7 +40,7 @@ export default class ErrorBoundary extends Component {
                         className="btn btn-primary"
                         onClick={() => {
                             this.setState({ hasError: false, error: null });
-                            window.location.href = '/';
+                            window.location.href = import.meta.env.BASE_URL || '/';
                         }}
                     >
                         Return to Dashboard

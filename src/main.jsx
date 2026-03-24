@@ -15,7 +15,13 @@ import { registerServiceWorker } from './pwa/registerServiceWorker'
 import { initSpacetimeDB } from './spacetime.js'
 
 // Initialize SpacetimeDB client before the app renders
-initSpacetimeDB().catch(console.error);
+try {
+  initSpacetimeDB().catch(err => {
+    console.warn('SpacetimeDB init failed (app will run in offline mode):', err?.message ?? err);
+  });
+} catch (err) {
+  console.warn('SpacetimeDB init threw (app will run in offline mode):', err?.message ?? err);
+}
 
 // In dev mode: if an old service worker is still controlling this page, it will
 // serve stale cached JS modules. Unregister it, wipe caches, and reload ONCE

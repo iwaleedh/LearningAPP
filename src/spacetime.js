@@ -1,8 +1,10 @@
 import { Identity } from 'spacetimedb';
 import { DbConnection } from './spacetime/index.js';
 
-const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI || 'http://localhost:3000';
-const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE || 'spacetime-backend-dev';
+const SPACETIMEDB_URI = import.meta.env.VITE_SPACETIMEDB_URI ||
+    (import.meta.env.DEV ? 'http://localhost:3000' : 'https://maincloud.spacetimedb.com');
+const SPACETIMEDB_MODULE = import.meta.env.VITE_SPACETIMEDB_MODULE ||
+    (import.meta.env.DEV ? 'spacetime-backend-dev' : 'spacetime-backend-otpgp');
 
 export let client = null;
 let currentIdentity = null;
@@ -13,6 +15,14 @@ let isInitialized = false;
 
 export async function initSpacetimeDB() {
     if (client) return client;
+
+    // Safety: if URI looks wrong for this environment, skip silently
+    if (!SPACETIMEDB_URI || SPACETIMEDB_URI === '') {
+        console.warn('SpacetimeDB URI not configured — running in offline mode');
+        errorCallbacks.forEach(cb => cb(new Error('No URI configured')));
+        errorCallbacks = [];
+        return null;
+    }
 
     return new Promise((resolve, reject) => {
         const tokenKey = `spacetime-token-${SPACETIMEDB_URI}`;
