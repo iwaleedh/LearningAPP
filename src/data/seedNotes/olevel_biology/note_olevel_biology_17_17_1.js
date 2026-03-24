@@ -80,7 +80,7 @@ export const note_olevel_biology_17_17_1 = {
   <text x="305" y="240" text-anchor="middle" fill="#1565c0" font-size="11">Male</text>
   <!-- Ratio -->
   <text x="220" y="268" text-anchor="middle" fill="#333" font-size="12">Ratio: 2 XX (female) : 2 XY (male) = <tspan font-weight="bold">50% female : 50% male</tspan></text>
-  <text x="220" y="285" text-anchor="middle" fill="#555" font-size="11">The father\'s sperm determines the sex of the offspring.</text>
+  <text x="220" y="285" text-anchor="middle" fill="#555" font-size="11">The father's sperm determines the sex of the offspring.</text>
 </svg>`
       }
     },

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { initSpacetimeDB, getClient, isTeacher, getAllUsers } from '../spacetime.js';
+import { initSpacetimeDB, getClient, getAllUsers } from '../spacetime.js';
 import './Pages.css';
 
 function formatDuration(createdAtMicros) {

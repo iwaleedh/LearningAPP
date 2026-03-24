@@ -57,7 +57,7 @@ export const note_olevel_biology_11_11_0 = {
         caption: 'Fick\'s Law illustrated: how surface area, distance, and concentration gradient affect diffusion rate',
         svg: `<svg viewBox="0 0 660 320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
   <rect width="660" height="320" fill="#0f172a" rx="12"/>
-  <text x="330" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Fick\'s Law — Factors Affecting Diffusion Rate</text>
+  <text x="330" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Fick's Law — Factors Affecting Diffusion Rate</text>
   <!-- Factor 1: Surface Area -->
   <rect x="20" y="45" width="190" height="240" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="115" y="65" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Surface Area</text>

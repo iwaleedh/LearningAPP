@@ -30,7 +30,7 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
   const isOverdue = mode === 'countdown' && target > 0 && localElapsed >= target;
 
   useEffect(() => {
-    if (timerState) setLocalElapsed(Number(timerState.elapsedMs));
+    if (timerState) setLocalElapsed(Number(timerState.elapsedMs)); // eslint-disable-line react-hooks/set-state-in-effect -- sync prop to local state for RAF animation
   }, [timerState]);
 
   // Auto-stop when countdown hits zero
@@ -39,7 +39,7 @@ export default function ClassTimer({ timerState, isTeacher, onUpdate }) {
       cancelAnimationFrame(rafRef.current);
       onUpdate?.('stopped', BigInt(target), BigInt(target), mode);
     }
-  }, [localElapsed, mode, target, state]);
+  }, [localElapsed, mode, target, state, onUpdate]);
 
   useEffect(() => {
     if (state === 'running') {

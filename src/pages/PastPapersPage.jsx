@@ -80,7 +80,7 @@ const subjects = [
 ];
 
 // Download button component
-function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) {
+function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { // eslint-disable-line no-unused-vars
     const [status, setStatus] = useState(null);
 
     const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
@@ -245,7 +245,7 @@ export default function PastPapersPage() {
     const [filterYear, setFilterYear] = useState('all');
     const [filterMonth, setFilterMonth] = useState('all');
     const [filterUnit, setFilterUnit] = useState('all');
-    const [attempts, setAttempts] = useState([]);
+    const [attempts] = useState([]);
     const [showPerformance, setShowPerformance] = useState(false);
 
     // Get active subject config

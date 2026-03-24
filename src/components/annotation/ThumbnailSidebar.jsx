@@ -1,25 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 function PageThumbnail({ pdfDoc, pageNum, isActive, onClick }) {
     const canvasRef = useRef(null);
     const containerRef = useRef(null);
     const renderedRef = useRef(false);
-
-    useEffect(() => {
-        if (!pdfDoc || !canvasRef.current || renderedRef.current) return;
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    renderThumbnail();
-                    observer.disconnect();
-                }
-            },
-            { threshold: 0.05 }
-        );
-        if (containerRef.current) observer.observe(containerRef.current);
-        return () => observer.disconnect();
-    }, [pdfDoc]); // eslint-disable-line react-hooks/exhaustive-deps
 
     async function renderThumbnail() {
         if (renderedRef.current || !pdfDoc || !canvasRef.current) return;
@@ -36,6 +20,22 @@ function PageThumbnail({ pdfDoc, pageNum, isActive, onClick }) {
             // failed render is non-fatal
         }
     }
+
+    useEffect(() => {
+        if (!pdfDoc || !canvasRef.current || renderedRef.current) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    renderThumbnail();
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.05 }
+        );
+        if (containerRef.current) observer.observe(containerRef.current);
+        return () => observer.disconnect();
+    }, [pdfDoc]); // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <div

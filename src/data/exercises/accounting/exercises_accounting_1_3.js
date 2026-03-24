@@ -491,7 +491,7 @@ export const exercises_accounting_1_3 = {
             categories: ['Valued at Cost', 'Valued at NRV', 'Not Valued in Manufacturing'],
             items: [
                 { text: 'Raw materials', category: 'Valued at Cost' },
-                { text: 'Finished goods', category: 'Valued at Cost or NRV (lower)', category: 'Valued at Cost' },
+                { text: 'Finished goods', category: 'Valued at Cost' },
                 { text: 'Work-in-progress', category: 'Valued at Cost' },
                 { text: 'Factory overheads', category: 'Not Valued in Manufacturing' },
                 { text: 'Selling expenses', category: 'Not Valued in Manufacturing' },

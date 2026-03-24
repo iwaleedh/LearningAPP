@@ -68,14 +68,14 @@ export default function AnnotatePage() {
         if (!resolvedPaper) {
             navigate('/past-papers', { replace: true });
         } else if (resolvedPaper !== paper) {
-            setPaper(resolvedPaper);
+            setPaper(resolvedPaper); // eslint-disable-line react-hooks/set-state-in-effect -- sync derived value to state
         }
     }, [resolvedPaper, navigate, paper]);
 
     // ── PDF document loading ──────────────────────────────────────────────
     useEffect(() => {
         if (!paper?.questionPaperUrl) return;
-        setPdfStatus('loading');
+        setPdfStatus('loading'); // eslint-disable-line react-hooks/set-state-in-effect -- initialise loading state for async fetch
         setPdfDoc(null);
         setPageCount(0);
         setCurrentPage(1);
@@ -288,14 +288,14 @@ export default function AnnotatePage() {
                     const parsed = JSON.parse(fabricObjectJson);
                     const clientId = parsed?.data?.strokeClientId;
                     canvasRef.current?.applyStrokeDelta('created', _strokeId, clientId, fabricObjectJson);
-                } catch (_) {/* ignore */}
+                } catch {/* ignore */}
             },
             onStrokeUpdated: (_strokeId, fabricObjectJson) => {
                 try {
                     const parsed = JSON.parse(fabricObjectJson);
                     const clientId = parsed?.data?.strokeClientId;
                     canvasRef.current?.applyStrokeDelta('updated', _strokeId, clientId, fabricObjectJson);
-                } catch (_) {/* ignore */}
+                } catch {/* ignore */}
             },
             onStrokeDeleted: (_strokeId, clientId) => {
                 canvasRef.current?.applyStrokeDelta('deleted', _strokeId, clientId, null);
@@ -330,7 +330,7 @@ export default function AnnotatePage() {
                     const parsed = JSON.parse(stroke.fabricObjectJson);
                     const clientId = parsed?.data?.strokeClientId;
                     canvasRef.current?.applyStrokeDelta('created', stroke.strokeId, clientId, stroke.fabricObjectJson);
-                } catch (_) {/* ignore */}
+                } catch {/* ignore */}
             }
             const conn = getClient();
             if (conn) {
@@ -340,7 +340,7 @@ export default function AnnotatePage() {
                 setSessionParticipants(parts);
             }
         }).catch(e => console.error('Could not join session:', e));
-    }, [spaceReady, paper, location.search]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [spaceReady, paper, location.search]);
 
     // ── Poll pending invites (Phase 2) ───────────────────────────────────
     useEffect(() => {

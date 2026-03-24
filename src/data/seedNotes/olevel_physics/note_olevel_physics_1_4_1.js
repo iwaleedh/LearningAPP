@@ -31,7 +31,7 @@ export const note_olevel_physics_1_4_1 = {
       data: {
         svg: `<svg viewBox="0 0 440 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
   <rect width="440" height="220" fill="#0a2e1a" rx="10"/>
-  <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Newton\'s First Law: Three Cases</text>
+  <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Newton's First Law: Three Cases</text>
   <!-- Case 1: At rest -->
   <rect x="20" y="35" width="120" height="80" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" rx="6"/>
   <text x="80" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">At Rest</text>

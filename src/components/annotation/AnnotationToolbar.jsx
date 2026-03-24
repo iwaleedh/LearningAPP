@@ -69,7 +69,7 @@ export default function AnnotationToolbar({
             <div className="annotate-toolbar-centre">
                 {/* Drawing tools */}
                 <div className="annotate-tool-group">
-                    {TOOLS.map(({ id, icon: Icon, label }) => (
+                    {TOOLS.map(({ id, icon: Icon, label }) => ( // eslint-disable-line no-unused-vars
                         <button
                             key={id}
                             className={`btn btn-sm btn-icon annotate-tool-btn ${activeTool === id ? 'annotate-tool-btn--active' : ''}`}

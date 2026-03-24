@@ -73,13 +73,6 @@ const ALIGN_OPTIONS = [
   { value: 'right', icon: AlignRight },
 ];
 
-function detectCategory(fontValue) {
-  for (const cat of FONT_CATEGORIES) {
-    if (cat.fonts.some(f => f.value === fontValue)) return cat.id;
-  }
-  return 'sans';
-}
-
 export default function FontPicker({
   currentFont,
   currentSize,

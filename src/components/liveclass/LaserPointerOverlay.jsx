@@ -15,7 +15,7 @@ import { useEffect, useRef } from 'react';
  * @param {number} props.height
  * @param {'dot'|'trail'} props.localMode — current laser mode of local user
  */
-export default function LaserPointerOverlay({ cursors, trails, width, height, localMode }) {
+export default function LaserPointerOverlay({ cursors, trails, width, height }) {
   const canvasRef = useRef(null);
   // trail: Map<identity, Array<{x,y,alpha}>>
   const trailsRef = useRef(new Map());

@@ -169,7 +169,7 @@ export const exercises_chemistry_1_1 = {
     correctAnswer: 1,
     rationale: 'n(HCl) = 0.100 × 0.02350 = 0.00235 mol. From the 1 : 1 mole ratio, n(NaOH) = 0.00235 mol. c(NaOH) = 0.00235 ÷ 0.025 = 0.0940 mol dm⁻³. Option A uses the HCl concentration directly; option C swaps the two volumes.',
     topic: 'Concentration',
-  },,
+  },
 {
     id: 'mcq-16',
     stem: 'Which statement correctly distinguishes between an empirical formula and a molecular formula?',

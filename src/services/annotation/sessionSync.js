@@ -58,7 +58,7 @@ export function createSessionSync({
           clientIdToStrokeId.set(clientId, stroke.strokeId);
           strokeIdToClientId.set(stroke.strokeId, clientId);
         }
-      } catch (_) {/* ignore parse error */}
+      } catch {/* ignore parse error */}
 
       onStrokeAdded?.(stroke.strokeId, stroke.pageNumber, stroke.fabricObjectJson);
     });
@@ -178,7 +178,7 @@ export function createSessionSync({
           strokeIdToClientId.set(stroke.strokeId, clientId);
           unsub();
         }
-      } catch (_) {/* ignore */}
+      } catch {/* ignore */}
     });
   }
 

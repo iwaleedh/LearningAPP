@@ -328,16 +328,16 @@ export default function LiveClassPage() {
     setRenamingTabId(null);
   }, [renamingTabId, renameValue]);
 
-  function broadcastCanvasState() {
+  const broadcastCanvasState = useCallback(() => {
     const fc = fabricRef.current;
     if (!fc) return;
     const json = fc.toJSON(['data']);
     // Local same-browser sync
     broadcastRef.current?.postMessage({ type: 'canvas-state', data: json });
 
-  }
+  }, []);
 
-  function saveHistory() {
+  const saveHistory = useCallback(() => {
     if (skipHistory.current) return;
     // Debounce via rAF so multi-object adds (templates, connector line+arrow) merge
     if (historyDebounce.current) cancelAnimationFrame(historyDebounce.current);
@@ -355,7 +355,7 @@ export default function LiveClassPage() {
       // Broadcast to student tabs via BroadcastChannel
       broadcastCanvasState();
     });
-  }
+  }, [broadcastCanvasState]);
 
   // Present mode state
   const [presentState, setPresentState] = useState(null); // { presenterIdentity, presenterName, status }
@@ -1291,7 +1291,7 @@ export default function LiveClassPage() {
         fc.off('mouse:up',   onUp);
       };
     }
-  }, [tool, color, strokeWidth, role, classId]);
+  }, [tool, color, strokeWidth, role, classId, saveHistory]);
 
   // ── Flowchart: snap-to-grid + edge redraw on node move ────────────────────
   useEffect(() => {
@@ -1370,11 +1370,11 @@ export default function LiveClassPage() {
 
     fc.on('mouse:dblclick', onDblClick);
     return () => fc.off('mouse:dblclick', onDblClick);
-  }, [role, classId]);
+  }, [role, classId, saveHistory]);
 
   // ── Undo / Redo ─────────────────────────────────────────────────────────────
 
-  function handleUndo() {
+  const handleUndo = useCallback(() => {
     const fc = fabricRef.current;
     if (!fc || historyIndex.current <= 0) return;
     historyIndex.current -= 1;
@@ -1389,9 +1389,9 @@ export default function LiveClassPage() {
       // Reconcile SpacetimeDB strokes with current canvas state (cross-device sync)
       syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
     });
-  }
+  }, [classId, broadcastCanvasState]);
 
-  function handleRedo() {
+  const handleRedo = useCallback(() => {
     const fc = fabricRef.current;
     if (!fc || historyIndex.current >= historyStack.current.length - 1) return;
     historyIndex.current += 1;
@@ -1406,7 +1406,7 @@ export default function LiveClassPage() {
       // Reconcile SpacetimeDB strokes with current canvas state (cross-device sync)
       syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
     });
-  }
+  }, [classId, broadcastCanvasState]);
 
   function handleClear() {
     const fc = fabricRef.current;
@@ -1439,7 +1439,7 @@ export default function LiveClassPage() {
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
-  }, []);
+  }, [handleUndo, handleRedo]);
 
   // ── Import: place a single image ──────────────────────────────────────────
   function handlePlaceImage(dataUrl) {

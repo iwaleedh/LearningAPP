@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { getAllUsers } from '../../spacetime.js';
 
 /**
@@ -30,14 +30,9 @@ export default function ShareDialog({
 }) {
     const [tab, setTab] = useState('people');   // 'people' | 'invite'
     const [inviteSearch, setInviteSearch] = useState('');
-    const [allUsers, setAllUsers] = useState([]);
+    const allUsers = useMemo(() => getAllUsers(), [activeSession]); // eslint-disable-line react-hooks/exhaustive-deps -- re-derive when session changes
     const [copied, setCopied] = useState(false);
     const inputRef = useRef(null);
-
-    // Load all users once
-    useEffect(() => {
-        setAllUsers(getAllUsers());
-    }, [activeSession]);
 
     const isHost = activeSession?.hostIdentity?.toHexString() === myIdentityHex;
     const amParticipant = participants.some(p => p.userIdentity?.toHexString() === myIdentityHex);
@@ -85,7 +80,6 @@ export default function ShareDialog({
                                 u => u.identity?.toHexString() === inv.fromIdentity?.toHexString()
                             );
                             const fromName = fromUser?.username ?? 'Someone';
-                            const session = null; // session title comes from activeSession or we can display the ID
                             return (
                                 <div key={String(inv.inviteId)} className="share-invite-row">
                                     <span>

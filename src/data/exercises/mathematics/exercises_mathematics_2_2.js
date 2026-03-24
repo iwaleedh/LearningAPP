@@ -275,7 +275,7 @@ export const exercises_mathematics_2_2 = {
         {
             id: 'fb-t2-6',
             stem: 'In polynomial long division, the first step is to divide the __BLANK__ term of the dividend by the __BLANK__ term of the divisor.',
-            blanks: [{ answer: 'leading', answer: 'leading' }],
+            blanks: [{ answer: 'leading' }, { answer: 'leading' }],
             rationale: 'Divide leading term by leading term to get the first term of the quotient. Then multiply, subtract, bring down, and repeat.',
         },
         {

@@ -51,7 +51,7 @@ export const note_olevel_biology_13_13_1 = {
   <!-- Bowman's capsule -->
   <circle cx="120" cy="80" r="40" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="2.5"/>
   <circle cx="120" cy="80" r="22" fill="#1e3a8a" stroke="#1d4ed8" stroke-width="1.5"/>
-  <text x="120" y="77" text-anchor="middle" fill="#1e3a8a" font-size="10" font-weight="bold">Bowman\'s</text>
+  <text x="120" y="77" text-anchor="middle" fill="#1e3a8a" font-size="10" font-weight="bold">Bowman's</text>
   <text x="120" y="90" text-anchor="middle" fill="#1e3a8a" font-size="10">capsule</text>
   <!-- Glomerulus label -->
   <text x="35" y="55" fill="#1d4ed8" font-size="10">Glomerulus</text>
