@@ -205,14 +205,14 @@ export default function TeacherDashboard() {
                 // Serialise BigInt/Identity for navigation state (used as offline fallback)
                 const navState = {
                     session: {
-                        classId: session.classId.toString(),
+                        classId: session._id.toString(),
                         title: session.title,
                         backgroundType: session.backgroundType,
                         status: session.status,
                         hostIdentity: session.hostUserId ?? 'local',
                     },
                 };
-                navigate(`/live/${session.classId}`, { state: navState });
+                navigate(`/live/${session._id}`, { state: navState });
             }
         } catch (err) {
             if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
