@@ -22,6 +22,7 @@ const AnnotatePage = lazy(() => import('./pages/AnnotatePage'));
 const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
 const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const StudentNotesViewPage = lazy(() => import('./pages/StudentNotesViewPage'));
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -70,6 +71,7 @@ function AppContent() {
               <Route path="/advanced" element={<AdvancedPage />} />
               <Route path="/annotate/:paperId" element={<AnnotatePage />} />
               <Route path="/live/:sessionId" element={<LiveClassPage />} />
+              <Route path="/live-notes/:sessionId/:tempId" element={<StudentNotesViewPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>

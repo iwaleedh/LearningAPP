@@ -285,3 +285,72 @@ export async function getClassTimer(classId) {
     return null;
   }
 }
+
+// ── Join Code helpers ───────────────────────────────────────────────
+export async function getLiveClassByCode(code) {
+  if (!convexClient) return null;
+  try {
+    return await convexClient.query(api.liveclass.getLiveClassByCode, { code });
+  } catch {
+    return null;
+  }
+}
+
+export async function requestJoin(sessionId, studentName, tempId) {
+  if (!convexClient) return null;
+  return convexClient.mutation(api.joinRequests.requestJoin, { sessionId, studentName, tempId });
+}
+
+export async function approveJoin(requestId) {
+  if (!convexClient) return null;
+  return convexClient.mutation(api.joinRequests.approveJoin, { requestId });
+}
+
+export async function rejectJoin(requestId) {
+  if (!convexClient) return null;
+  return convexClient.mutation(api.joinRequests.rejectJoin, { requestId });
+}
+
+export async function setClassAutoAccept(classId, autoAccept) {
+  if (!convexClient) return null;
+  return convexClient.mutation(api.liveclass.setAutoAccept, { classId, autoAccept });
+}
+
+export async function updateStudentNote(sessionId, tempId, noteContent) {
+  if (!convexClient) return null;
+  return convexClient.mutation(api.joinRequests.updateStudentNote, { sessionId, tempId, noteContent });
+}
+
+export async function getStudentNote(sessionId, tempId) {
+  if (!convexClient) return null;
+  try {
+    return await convexClient.query(api.joinRequests.getStudentNote, { sessionId, tempId });
+  } catch {
+    return null;
+  }
+}
+
+export async function getStudentName(sessionId, tempId) {
+  if (!convexClient) return null;
+  try {
+    return await convexClient.query(api.joinRequests.getStudentName, { sessionId, tempId });
+  } catch {
+    return null;
+  }
+}
+
+// Subscribe helpers for reactive data
+export function subscribeToJoinRequests(sessionId, callback) {
+  if (!convexClient) return () => {};
+  return convexClient.onUpdate(api.joinRequests.getJoinRequests, { sessionId }, callback);
+}
+
+export function subscribeToJoinStatus(requestId, callback) {
+  if (!convexClient) return () => {};
+  return convexClient.onUpdate(api.joinRequests.getStudentJoinStatus, { requestId }, callback);
+}
+
+export function subscribeToStudentNote(sessionId, tempId, callback) {
+  if (!convexClient) return () => {};
+  return convexClient.onUpdate(api.joinRequests.getStudentNote, { sessionId, tempId }, callback);
+}

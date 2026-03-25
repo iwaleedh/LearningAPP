@@ -97,10 +97,31 @@ export default defineSchema({
     title: v.string(),
     backgroundType: v.string(), // 'white' | 'lined' | 'grid' | 'dotted' | 'yellow'
     status: v.string(), // 'active' | 'ended'
+    joinCode: v.string(), // 6-char uppercase alphanumeric
+    autoAccept: v.boolean(), // if true, admit students automatically
     createdAt: v.number(),
   })
     .index("by_status", ["status"])
-    .index("by_host", ["hostUserId"]),
+    .index("by_host", ["hostUserId"])
+    .index("by_joinCode", ["joinCode"]),
+
+  classJoinRequests: defineTable({
+    sessionId: v.string(),
+    studentName: v.string(),
+    tempId: v.string(), // client-generated UUID, unique per student tab
+    status: v.string(), // 'pending' | 'accepted' | 'rejected'
+    requestedAt: v.number(),
+  })
+    .index("by_session", ["sessionId"])
+    .index("by_tempId", ["tempId"]),
+
+  studentNotes: defineTable({
+    sessionId: v.string(),
+    tempId: v.string(),
+    noteContent: v.string(),
+    updatedAt: v.number(),
+  })
+    .index("by_session_tempId", ["sessionId", "tempId"]),
 
   liveClassCursors: defineTable({
     classId: v.id("liveClassSessions"),

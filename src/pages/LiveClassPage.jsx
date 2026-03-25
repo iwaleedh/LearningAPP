@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { Link2, Check, Hand, Users } from 'lucide-react';
+import { Link2, Check, Hand, Users, Copy, BookOpen as NoteIcon } from 'lucide-react';
 import { Canvas as FabricCanvas, PencilBrush, Image as FabricImage, Text as FabricText, IText as FabricIText, Rect as FabricRect, Circle as FabricCircle, Ellipse as FabricEllipse, Line as FabricLine, Triangle as FabricTriangle, Polygon as FabricPolygon, Path as FabricPath, util as fabricUtil } from 'fabric';
 import {
   onConvexReady, onConvexError, onConvexDisconnect,
@@ -9,6 +9,7 @@ import {
   getLiveClassById,
   isTeacher as convexIsTeacher, setTeacherRole as convexSetTeacherRole,
   subscribe, api,
+  subscribeToJoinStatus, subscribeToJoinRequests,
 } from '../convex-client.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
@@ -19,6 +20,8 @@ import SpotlightOverlay from '../components/liveclass/SpotlightOverlay.jsx';
 import RulerWidget from '../components/liveclass/RulerWidget.jsx';
 import TeacherStudentGrid from '../components/liveclass/TeacherStudentGrid.jsx';
 import HandRaisePanel from '../components/liveclass/HandRaisePanel.jsx';
+import StudentAdmissionPanel from '../components/liveclass/StudentAdmissionPanel.jsx';
+import StudentNotePanel from '../components/liveclass/StudentNotePanel.jsx';
 import ClassTimer from '../components/liveclass/ClassTimer.jsx';
 import ImportMediaDialog from '../components/liveclass/ImportMediaDialog.jsx';
 import LivePollPanel from '../components/liveclass/LivePollPanel.jsx';
@@ -187,6 +190,19 @@ export default function LiveClassPage() {
   const [showImportDialog, setShowImportDialog] = useState(false);
   const [endedMsg, setEndedMsg] = useState('');
   const [linkCopied, setLinkCopied] = useState(false);
+  const [codeCopied, setCodeCopied] = useState(false);
+
+  // Join-request state (student side)
+  const [joinRequestId, setJoinRequestId] = useState(null); // Convex _id string
+  const [joinStatus, setJoinStatus] = useState(null); // 'pending' | 'accepted' | 'rejected'
+  const [joinTempId, setJoinTempId] = useState(null);
+
+  // Admission panel (teacher side)
+  const [joinRequests, setJoinRequests] = useState([]);
+  const [autoAccept, setAutoAccept] = useState(false);
+
+  // Student notes panel
+  const [showMyNotes, setShowMyNotes] = useState(false);
 
   // Poll state
   const [polls, setPolls] = useState([]);
@@ -370,6 +386,15 @@ export default function LiveClassPage() {
     });
   }, [sessionId]);
 
+  const handleCopyCode = useCallback(() => {
+    const code = sessionData?.joinCode;
+    if (!code) return;
+    navigator.clipboard.writeText(code).then(() => {
+      setCodeCopied(true);
+      setTimeout(() => setCodeCopied(false), 2000);
+    });
+  }, [sessionData]);
+
   // Canvas
   const canvasWrapRef = useRef(null);
   const teacherBoardWrapRef = useRef(null); // student's teacher-board container
@@ -403,6 +428,33 @@ export default function LiveClassPage() {
     setRole(isTeacher ? 'teacher' : 'student');
     setStdbStatus('offline');
   }, [location.state, role]);
+
+  // ── Handle join-request flow (student arriving from JoinClassModal) ───────
+  useEffect(() => {
+    const navState = location.state;
+    if (!navState?.joinRequestId) return;
+    const reqId = navState.joinRequestId;
+    const tId = navState.tempId;
+    const sName = navState.studentName;
+    setJoinRequestId(reqId);
+    setJoinTempId(tId);
+    if (sName) setStudentName(sName);
+
+    // Subscribe to status changes
+    const unsub = subscribeToJoinStatus(reqId, (data) => {
+      if (!data) return;
+      setJoinStatus(data.status);
+      if (data.status === 'accepted') {
+        // Student admitted — set role and proceed
+        setRole(prev => prev ?? 'student');
+      }
+    });
+
+    // Initial check in case auto-accepted
+    setJoinStatus('pending');
+
+    return () => unsub?.();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Init Convex & detect role (online mode) ──────────────────────────
   useEffect(() => {
@@ -453,6 +505,20 @@ export default function LiveClassPage() {
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [classId]);
+
+  // ── Teacher: subscribe to join requests ──────────────────────────────────
+  useEffect(() => {
+    if (role !== 'teacher' || !classId) return;
+    const unsub = subscribeToJoinRequests(classId, (data) => {
+      if (Array.isArray(data)) setJoinRequests(data);
+    });
+    return () => unsub?.();
+  }, [role, classId]);
+
+  // Keep autoAccept in sync with sessionData
+  useEffect(() => {
+    if (sessionData?.autoAccept !== undefined) setAutoAccept(sessionData.autoAccept);
+  }, [sessionData?.autoAccept]);
 
   // ── Set up sync once role is known ─────────────────────────────────────────
   useEffect(() => {
@@ -1722,6 +1788,44 @@ export default function LiveClassPage() {
     return <div className="lc-loading">Joining class…</div>;
   }
 
+  // ── Waiting for teacher admission ──────────────────────────────────────────
+  if (joinRequestId && joinStatus === 'pending') {
+    return (
+      <div className="lc-join-overlay animate-fade-in">
+        <div className="lc-join-dialog card lc-waiting-dialog">
+          <div className="lc-join-icon">⏳</div>
+          <h2 className="lc-join-title">Waiting for admission</h2>
+          <p className="lc-join-subtitle">
+            Hi <strong>{studentName || 'there'}</strong>! Your teacher will admit you shortly.
+          </p>
+          <div className="lc-waiting-spinner" aria-label="Waiting" />
+          <button
+            type="button"
+            className="btn btn-ghost lc-join-teacher-btn"
+            onClick={() => { navigate('/'); }}
+          >
+            Leave
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (joinRequestId && joinStatus === 'rejected') {
+    return (
+      <div className="lc-join-overlay animate-fade-in">
+        <div className="lc-join-dialog card">
+          <div className="lc-join-icon">🚫</div>
+          <h2 className="lc-join-title">Not admitted</h2>
+          <p className="lc-join-subtitle">Your teacher has declined your join request.</p>
+          <button className="btn btn-primary lc-join-btn" onClick={() => navigate('/')}>
+            Back to Dashboard
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   const isTeacher = role === 'teacher';
   const bgStyle = BG_STYLE[backgroundType] ?? BG_STYLE.white;
 
@@ -1805,14 +1909,28 @@ export default function LiveClassPage() {
             <span className="lc-stdb-dot" />
             {stdbStatus === 'connected' ? 'Synced' : stdbStatus === 'offline' ? 'Local' : 'Connecting'}
           </span>
-          <button
-            className={`btn btn-sm lc-share-btn ${linkCopied ? 'lc-share-btn--copied' : ''}`}
-            onClick={handleCopyLink}
-            title="Copy invite link"
-          >
-            {linkCopied ? <Check size={14} /> : <Link2 size={14} />}
-            <span className="lc-share-btn-label">{linkCopied ? 'Copied!' : 'Share Link'}</span>
-          </button>
+          {/* Join code badge — teacher only */}
+          {isTeacher && sessionData?.joinCode && (
+            <button
+              className={`btn btn-sm lc-share-btn lc-code-badge ${codeCopied ? 'lc-share-btn--copied' : ''}`}
+              onClick={handleCopyCode}
+              title="Click to copy class code"
+            >
+              {codeCopied ? <Check size={14} /> : <Copy size={14} />}
+              <span className="lc-join-code-badge-text">{sessionData.joinCode}</span>
+            </button>
+          )}
+          {/* My Notes button — student only */}
+          {!isTeacher && (
+            <button
+              className={`btn btn-sm lc-share-btn ${showMyNotes ? 'lc-share-btn--active' : ''}`}
+              onClick={() => setShowMyNotes(v => !v)}
+              title="My notes"
+            >
+              <NoteIcon size={14} />
+              <span className="lc-share-btn-label">My Notes</span>
+            </button>
+          )}
           {isTeacher && (
             <>
               <button
@@ -1836,10 +1954,17 @@ export default function LiveClassPage() {
                   if (showStudentGrid) { setShowStudentGrid(false); setStudentsAnchor(null); }
                   else { setStudentsAnchor(rect); setShowStudentGrid(true); }
                 }}
-                title="Student canvases"
+                title="Admitted students + pending requests"
               >
                 <Users size={14} />
-                <span className="lc-share-btn-label">Students</span>
+                <span className="lc-share-btn-label">
+                  Students
+                  {joinRequests.filter(r => r.status === 'pending').length > 0 && (
+                    <span className="lc-pending-badge">
+                      {joinRequests.filter(r => r.status === 'pending').length}
+                    </span>
+                  )}
+                </span>
               </button>
             </>
           )}
@@ -2026,17 +2151,13 @@ export default function LiveClassPage() {
         document.body
       )}
       {isTeacher && showStudentGrid && studentsAnchor && createPortal(
-        <div className="lc-dropdown-panel" style={{ top: studentsAnchor.bottom + 6, left: studentsAnchor.left }}>
-          <TeacherStudentGrid
-            classId={classId}
-            participants={participants}
-            users={users}
-            onExpand={() => {}}
-            presentState={presentState}
-            onInvitePresent={handleInvitePresent}
-            onEndPresent={handleEndPresent}
-          />
-        </div>,
+        <StudentAdmissionPanel
+          anchor={studentsAnchor}
+          sessionId={classId}
+          autoAccept={autoAccept}
+          onClose={() => { setShowStudentGrid(false); setStudentsAnchor(null); }}
+          onAutoAcceptChange={setAutoAccept}
+        />,
         document.body
       )}
 
@@ -2083,6 +2204,15 @@ export default function LiveClassPage() {
           />
         </div>,
         document.body
+      )}
+
+      {/* ── Student notes panel ───────────────────────────────────── */}
+      {!isTeacher && showMyNotes && (
+        <StudentNotePanel
+          sessionId={classId}
+          tempId={joinTempId}
+          onClose={() => setShowMyNotes(false)}
+        />
       )}
     </div>
   );

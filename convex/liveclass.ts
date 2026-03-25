@@ -8,15 +8,27 @@ export const createLiveClass = mutation({
     backgroundType: v.string(),
   },
   handler: async (ctx, args) => {
+    // Generate a unique 6-char alphanumeric join code (no ambiguous chars)
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    let joinCode = '';
+    for (;;) {
+      joinCode = Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+      const existing = await ctx.db
+        .query("liveClassSessions")
+        .withIndex("by_joinCode", (q) => q.eq("joinCode", joinCode))
+        .first();
+      if (!existing || existing.status === 'ended') break;
+    }
+
     const classId = await ctx.db.insert("liveClassSessions", {
       hostUserId: args.hostUserId,
       title: args.title,
       backgroundType: args.backgroundType,
       status: "active",
+      joinCode,
+      autoAccept: false,
       createdAt: Date.now(),
     });
-    // Auto-add host as participant (reuse sessionParticipants table via string ID)
-    // Live class participants are tracked in sessionParticipants with sessionId as string
     return classId;
   },
 });
@@ -74,5 +86,26 @@ export const getLiveClassById = query({
   args: { classId: v.id("liveClassSessions") },
   handler: async (ctx, { classId }) => {
     return await ctx.db.get(classId);
+  },
+});
+
+export const getLiveClassByCode = query({
+  args: { code: v.string() },
+  handler: async (ctx, { code }) => {
+    return await ctx.db
+      .query("liveClassSessions")
+      .withIndex("by_joinCode", (q) => q.eq("joinCode", code.toUpperCase()))
+      .filter((q) => q.eq(q.field("status"), "active"))
+      .first();
+  },
+});
+
+export const setAutoAccept = mutation({
+  args: {
+    classId: v.id("liveClassSessions"),
+    autoAccept: v.boolean(),
+  },
+  handler: async (ctx, { classId, autoAccept }) => {
+    await ctx.db.patch(classId, { autoAccept });
   },
 });

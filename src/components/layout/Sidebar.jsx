@@ -1,10 +1,11 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, X,
-    Brain, Trophy, Search, Zap, Radio
+    Brain, Trophy, Search, Zap, Radio, UserPlus
 } from 'lucide-react';
+import JoinClassModal from '../liveclass/JoinClassModal.jsx';
 import './Layout.css';
 
 const navItems = [
@@ -19,6 +20,7 @@ const navItems = [
 
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
+    const [showJoinModal, setShowJoinModal] = useState(false);
 
     return (
         <>
@@ -74,15 +76,14 @@ export default function Sidebar({ isOpen, onToggle }) {
                         <LayoutDashboard size={18} />
                         <span>Teacher Dashboard</span>
                     </Link>
-                    <Link
-                        to="/teacher"
-                        className={`nav-item ${location.pathname === '/teacher' || location.pathname.startsWith('/live') ? 'active' : ''}`}
-                        onClick={() => window.innerWidth < 1024 && onToggle()}
-                        title="Start or join a live class from Teacher Dashboard"
+                    <button
+                        className={`nav-item ${location.pathname.startsWith('/live') ? 'active' : ''}`}
+                        onClick={() => { setShowJoinModal(true); if (window.innerWidth < 1024) onToggle(); }}
+                        title="Join a live class with a code"
                     >
-                        <Radio size={18} />
-                        <span>Live Class</span>
-                    </Link>
+                        <UserPlus size={18} />
+                        <span>Join Live Class</span>
+                    </button>
 
                     <div className="nav-divider" />
                     <div className="nav-section-label">Settings</div>
@@ -105,6 +106,10 @@ export default function Sidebar({ isOpen, onToggle }) {
                 </nav>
 
             </aside>
+
+            {showJoinModal && (
+                <JoinClassModal onClose={() => setShowJoinModal(false)} />
+            )}
         </>
     );
 }
