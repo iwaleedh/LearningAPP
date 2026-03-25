@@ -97,13 +97,12 @@ export default defineSchema({
     title: v.string(),
     backgroundType: v.string(), // 'white' | 'lined' | 'grid' | 'dotted' | 'yellow'
     status: v.string(), // 'active' | 'ended'
-    joinCode: v.string(), // 6-char uppercase alphanumeric
-    autoAccept: v.boolean(), // if true, admit students automatically
+    joinCode: v.optional(v.string()), // 6-char uppercase alphanumeric (optional for legacy docs)
+    autoAccept: v.optional(v.boolean()), // if true, admit students automatically (optional for legacy docs)
     createdAt: v.number(),
   })
     .index("by_status", ["status"])
-    .index("by_host", ["hostUserId"])
-    .index("by_joinCode", ["joinCode"]),
+    .index("by_host", ["hostUserId"]),
 
   classJoinRequests: defineTable({
     sessionId: v.string(),

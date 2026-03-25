@@ -13,6 +13,7 @@ import type * as cursors from "../cursors.js";
 import type * as flashcards from "../flashcards.js";
 import type * as handraises from "../handraises.js";
 import type * as invites from "../invites.js";
+import type * as joinRequests from "../joinRequests.js";
 import type * as liveclass from "../liveclass.js";
 import type * as notes from "../notes.js";
 import type * as sessions from "../sessions.js";
@@ -32,6 +33,7 @@ declare const fullApi: ApiFromModules<{
   flashcards: typeof flashcards;
   handraises: typeof handraises;
   invites: typeof invites;
+  joinRequests: typeof joinRequests;
   liveclass: typeof liveclass;
   notes: typeof notes;
   sessions: typeof sessions;

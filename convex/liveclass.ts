@@ -92,10 +92,11 @@ export const getLiveClassById = query({
 export const getLiveClassByCode = query({
   args: { code: v.string() },
   handler: async (ctx, { code }) => {
+    const upper = code.toUpperCase();
     return await ctx.db
       .query("liveClassSessions")
-      .withIndex("by_joinCode", (q) => q.eq("joinCode", code.toUpperCase()))
-      .filter((q) => q.eq(q.field("status"), "active"))
+      .withIndex("by_status", (q) => q.eq("status", "active"))
+      .filter((q) => q.eq(q.field("joinCode"), upper))
       .first();
   },
 });
