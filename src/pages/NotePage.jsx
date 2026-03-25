@@ -259,7 +259,7 @@ export default function NotePage() {
     const noteId = `note:${context.subject}:${context.unitId}:${context.topicId}:${context.subtopicIndex}`;
 
     // dbNote fetching is disabled — seed notes are the canonical source.
-    // Enabling it caused stale IndexedDB/SpacetimeDB data to overwrite updated
+    // Enabling it caused stale IndexedDB/Convex data to overwrite updated
     // seed notes every 3 seconds. Re-enable only when user-editing is wired up
     // with a reliable way to tell user edits apart from old seed note snapshots.
     const seedNote = useMemo(() => getSeedNote(noteId), [noteId]);

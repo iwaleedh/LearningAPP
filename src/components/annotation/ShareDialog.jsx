@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef } from 'react';
-import { getAllUsers } from '../../spacetime.js';
+import { getAllUsers } from '../../convex-client.js';
 
 /**
  * ShareDialog — modal for managing a live collaborative annotation session.
@@ -34,13 +34,13 @@ export default function ShareDialog({
     const [copied, setCopied] = useState(false);
     const inputRef = useRef(null);
 
-    const isHost = activeSession?.hostIdentity?.toHexString() === myIdentityHex;
-    const amParticipant = participants.some(p => p.userIdentity?.toHexString() === myIdentityHex);
+    const isHost = activeSession?.hostUserId === myIdentityHex;
+    const amParticipant = participants.some(p => p.userId === myIdentityHex);
 
     const filteredUsers = allUsers.filter(u =>
-        u.identity?.toHexString() !== myIdentityHex &&
+        u.userId !== myIdentityHex &&
         u.username?.toLowerCase().includes(inviteSearch.toLowerCase()) &&
-        !participants.some(p => p.userIdentity?.toHexString() === u.identity?.toHexString())
+        !participants.some(p => p.userId === u.userId)
     );
 
     function copyLink() {
@@ -77,7 +77,7 @@ export default function ShareDialog({
                     <div className="share-invites-banner">
                         {pendingInvites.map(inv => {
                             const fromUser = allUsers.find(
-                                u => u.identity?.toHexString() === inv.fromIdentity?.toHexString()
+                                u => u.userId === inv.fromUserId
                             );
                             const fromName = fromUser?.username ?? 'Someone';
                             return (
@@ -150,9 +150,9 @@ export default function ShareDialog({
                                 <ul className="share-participant-list">
                                     {participants.map(p => {
                                         const user = allUsers.find(
-                                            u => u.identity?.toHexString() === p.userIdentity?.toHexString()
+                                            u => u.userId === p.userId
                                         );
-                                        const isMe = p.userIdentity?.toHexString() === myIdentityHex;
+                                        const isMe = p.userId === myIdentityHex;
                                         return (
                                             <li key={String(p.participantId)} className="share-participant-row">
                                                 <div className="share-participant-avatar">
@@ -210,7 +210,7 @@ export default function ShareDialog({
                                         </li>
                                     )}
                                     {filteredUsers.map(u => (
-                                        <li key={u.identity?.toHexString()} className="share-search-result-row">
+                                        <li key={u.userId} className="share-search-result-row">
                                             <div className="share-participant-avatar">
                                                 {u.username?.[0]?.toUpperCase() ?? '?'}
                                             </div>

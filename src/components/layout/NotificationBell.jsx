@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bell } from 'lucide-react';
-import { onSpacetimeDBReady, getMyPendingInvites, getClient } from '../../spacetime.js';
+import { onConvexReady, getMyPendingInvites, getCurrentUserId, callMutation, callQuery, subscribe, api, getAllUsers } from '../../convex-client.js';
 
 /**
  * NotificationBell — live invite notifications in the app header.
@@ -17,27 +17,31 @@ export default function NotificationBell() {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
-    // Attach SpacetimeDB invite listeners once connected
+    // Attach Convex invite listeners once connected
     useEffect(() => {
+        let unsubInvites = null;
+
         function refresh() {
             setPendingInvites(getMyPendingInvites());
-            const conn = getClient();
-            if (conn) setAllUsers(Array.from(conn.db.user.iter()));
+            setAllUsers(getAllUsers());
         }
 
-        onSpacetimeDBReady(() => {
+        onConvexReady(() => {
             refresh();
-            const conn = getClient();
-            if (!conn) return;
-            // Reactively update on any invite change
-            conn.db.session_invite.onInsert(refresh);
-            conn.db.session_invite.onUpdate(refresh);
-            conn.db.session_invite.onDelete(refresh);
+            const userId = getCurrentUserId();
+            if (!userId) return;
+            // Subscribe to invites addressed to this user
+            unsubInvites = subscribe(api.invites.getMyPendingInvites, { toUsername: userId }, () => {
+                refresh();
+            });
         });
 
         // Fallback poll every 15 s in case subscription fires are missed
         const interval = setInterval(refresh, 15000);
-        return () => clearInterval(interval);
+        return () => {
+            clearInterval(interval);
+            unsubInvites?.();
+        };
     }, []);
 
     // Close dropdown when clicking outside
@@ -52,26 +56,26 @@ export default function NotificationBell() {
         return () => document.removeEventListener('mousedown', onOutside);
     }, [isOpen]);
 
-    function handleAccept(invite) {
-        const conn = getClient();
-        if (!conn) return;
-        conn.reducers.respondToInvite({ inviteId: invite.inviteId, accept: true });
-        setPendingInvites(prev => prev.filter(i => i.inviteId !== invite.inviteId));
+    async function handleAccept(invite) {
+        const userId = getCurrentUserId();
+        if (!userId) return;
+        await callMutation(api.invites.respondToInvite, { inviteId: invite._id ?? invite.inviteId, accept: true, userId });
+        setPendingInvites(prev => prev.filter(i => (i._id ?? i.inviteId) !== (invite._id ?? invite.inviteId)));
         // Navigate to the annotation page for the session
-        const session = Array.from(conn.db.live_session.iter()).find(
-            s => s.sessionId === invite.sessionId
-        );
-        if (session) {
-            navigate(`/annotate/${session.paperId}?session=${String(session.sessionId)}`);
-            setIsOpen(false);
+        if (invite.sessionId) {
+            const session = await callQuery(api.sessions.getSessionByStringId, { sessionId: invite.sessionId }).catch(() => null);
+            if (session) {
+                navigate(`/annotate/${session.paperId}?session=${invite.sessionId}`);
+                setIsOpen(false);
+            }
         }
     }
 
-    function handleDecline(invite) {
-        const conn = getClient();
-        if (!conn) return;
-        conn.reducers.respondToInvite({ inviteId: invite.inviteId, accept: false });
-        setPendingInvites(prev => prev.filter(i => i.inviteId !== invite.inviteId));
+    async function handleDecline(invite) {
+        const userId = getCurrentUserId();
+        if (!userId) return;
+        await callMutation(api.invites.respondToInvite, { inviteId: invite._id ?? invite.inviteId, accept: false, userId });
+        setPendingInvites(prev => prev.filter(i => (i._id ?? i.inviteId) !== (invite._id ?? invite.inviteId)));
     }
 
     const count = pendingInvites.length;
@@ -109,11 +113,11 @@ export default function NotificationBell() {
                         <ul className="notification-list">
                             {pendingInvites.map(inv => {
                                 const fromUser = allUsers.find(
-                                    u => u.identity?.toHexString() === inv.fromIdentity?.toHexString()
+                                    u => u.userId === inv.fromUserId
                                 );
                                 const fromName = fromUser?.username ?? 'Someone';
                                 return (
-                                    <li key={String(inv.inviteId)} className="notification-item">
+                                    <li key={String(inv._id ?? inv.inviteId)} className="notification-item">
                                         <div className="notification-item-icon">📝</div>
                                         <div className="notification-item-body">
                                             <p>

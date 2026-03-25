@@ -4,10 +4,10 @@ import {
     BookOpen, FlaskConical, FileQuestion, Brain, Trophy,
     ArrowRight, Flame, Target, Clock, TrendingUp, Sparkles, Radio
 } from 'lucide-react';
-import { getMyPendingLiveClassInvites, onSpacetimeDBReady } from '../spacetime.js';
+import { getMyPendingLiveClassInvites, onConvexReady } from '../convex-client.js';
 import './Pages.css';
 
-// Sample data (will be replaced with Convex queries)
+// Sample data (TODO: wire to Convex progress tracking)
 const quickStats = [
     { label: 'Chapters Read', value: '0', icon: BookOpen, color: 'var(--color-primary)' },
     { label: 'Exercises Done', value: '0', icon: FlaskConical, color: 'var(--color-success)' },
@@ -41,7 +41,7 @@ export default function HomePage() {
     const [liveInvites, setLiveInvites] = useState([]);
 
     useEffect(() => {
-        onSpacetimeDBReady(() => {
+        onConvexReady(() => {
             const invites = getMyPendingLiveClassInvites?.() ?? [];
             setLiveInvites(invites);
         });

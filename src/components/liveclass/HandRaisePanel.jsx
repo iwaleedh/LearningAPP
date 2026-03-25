@@ -3,11 +3,11 @@ import { Hand } from 'lucide-react';
 /**
  * HandRaisePanel — shown to the teacher.
  *
- * @param {{ raises: Array, users: Array, onAcknowledge: (raiseId:bigint) => void }} props
+ * @param {{ raises: Array, users: Array, onAcknowledge: (raiseId:string) => void }} props
  */
 export default function HandRaisePanel({ raises, users, onAcknowledge }) {
   function getUsername(identityHex) {
-    const u = users.find(u => u.identity.toHexString() === identityHex);
+    const u = users.find(u => u.userId === identityHex);
     return u?.username ?? identityHex.substring(0, 6) + '…';
   }
 
@@ -30,7 +30,7 @@ export default function HandRaisePanel({ raises, users, onAcknowledge }) {
         {raises.map(r => (
           <li key={String(r.raiseId)} className="lc-hand-item">
             <span className="lc-hand-avatar">✋</span>
-            <span className="lc-hand-name">{getUsername(r.studentIdentity.toHexString())}</span>
+            <span className="lc-hand-name">{getUsername(r.studentUserId)}</span>
             <button
               className="btn btn-sm btn-secondary"
               onClick={() => onAcknowledge(r.raiseId)}

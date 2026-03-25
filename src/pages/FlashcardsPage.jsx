@@ -4,6 +4,18 @@ import { ThumbsUp, ThumbsDown, RotateCcw, ArrowLeft, ArrowRight } from 'lucide-r
 import { listFlashcards } from '../services/notes/noteStore.js';
 import './Pages.css';
 
+const KNOWN_KEY = 'lt_flashcard_known';
+const LEARNING_KEY = 'lt_flashcard_learning';
+
+function loadStoredIds(key) {
+    try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : [];
+    } catch {
+        return [];
+    }
+}
+
 const sampleFlashcards = [
     { id: 'sample-1', front: 'What is an isotope?', back: 'Atoms of the same element with different numbers of neutrons.', topic: 'Atomic Structure' },
     { id: 'sample-2', front: 'Define electronegativity', back: 'The ability of an atom to attract bonding electrons in a covalent bond.', topic: 'Chemical Bonding' },
@@ -20,8 +32,8 @@ export default function FlashcardsPage() {
     const [userCards, setUserCards] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
-    const [known, setKnown] = useState([]);
-    const [learning, setLearning] = useState([]);
+    const [known, setKnown] = useState(() => loadStoredIds(KNOWN_KEY));
+    const [learning, setLearning] = useState(() => loadStoredIds(LEARNING_KEY));
 
     useEffect(() => {
         let cancelled = false;
@@ -37,6 +49,14 @@ export default function FlashcardsPage() {
             cancelled = true;
         };
     }, []);
+
+    useEffect(() => {
+        localStorage.setItem(KNOWN_KEY, JSON.stringify(known));
+    }, [known]);
+
+    useEffect(() => {
+        localStorage.setItem(LEARNING_KEY, JSON.stringify(learning));
+    }, [learning]);
 
     const cards = useMemo(() => {
         if (userCards.length > 0) {
@@ -146,6 +166,8 @@ export default function FlashcardsPage() {
                     onClick={() => {
                         setKnown([]);
                         setLearning([]);
+                        localStorage.removeItem(KNOWN_KEY);
+                        localStorage.removeItem(LEARNING_KEY);
                         setCurrentIndex(0);
                         setIsFlipped(false);
                     }}

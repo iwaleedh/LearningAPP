@@ -12,15 +12,15 @@ if (typeof Map !== 'undefined' && !Map.prototype.getOrInsertComputed) {
 }
 import App from './App.jsx'
 import { registerServiceWorker } from './pwa/registerServiceWorker'
-import { initSpacetimeDB } from './spacetime.js'
+import { initConvex } from './convex-client.js'
 
-// Initialize SpacetimeDB client before the app renders
+// Initialize Convex client before the app renders
 try {
-  initSpacetimeDB().catch(err => {
-    console.warn('SpacetimeDB init failed (app will run in offline mode):', err?.message ?? err);
+  initConvex().catch(err => {
+    console.warn('Convex init failed (app will run in offline mode):', err?.message ?? err);
   });
 } catch (err) {
-  console.warn('SpacetimeDB init threw (app will run in offline mode):', err?.message ?? err);
+  console.warn('Convex init threw (app will run in offline mode):', err?.message ?? err);
 }
 
 // In dev mode: if an old service worker is still controlling this page, it will

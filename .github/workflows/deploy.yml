@@ -33,8 +33,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_SPACETIMEDB_URI: ${{ vars.VITE_SPACETIMEDB_URI || '' }}
-          VITE_SPACETIMEDB_MODULE: ${{ vars.VITE_SPACETIMEDB_MODULE || '' }}
+          VITE_CONVEX_URL: ${{ vars.VITE_CONVEX_URL || '' }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

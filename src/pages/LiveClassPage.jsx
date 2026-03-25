@@ -4,10 +4,12 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Link2, Check, Hand, Users } from 'lucide-react';
 import { Canvas as FabricCanvas, PencilBrush, Image as FabricImage, Text as FabricText, IText as FabricIText, Rect as FabricRect, Circle as FabricCircle, Ellipse as FabricEllipse, Line as FabricLine, Triangle as FabricTriangle, Polygon as FabricPolygon, Path as FabricPath, util as fabricUtil } from 'fabric';
 import {
-  onSpacetimeDBReady, onSpacetimeDBError, getCurrentIdentity, getAllUsers,
-  getLiveClassById, client as stdbClient,
-  isTeacher as stdbIsTeacher, setTeacherRole as stdbSetTeacherRole,
-} from '../spacetime.js';
+  onConvexReady, onConvexError, onConvexDisconnect,
+  getCurrentUserId, getAllUsers,
+  getLiveClassById,
+  isTeacher as convexIsTeacher, setTeacherRole as convexSetTeacherRole,
+  subscribe, api,
+} from '../convex-client.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
 import FontPicker from '../components/liveclass/FontPicker.jsx';
@@ -146,9 +148,9 @@ export default function LiveClassPage() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const classId = sessionId ? BigInt(sessionId) : null;
+  const classId = sessionId ?? null;
 
-  // SpacetimeDB connection status
+  // Convex connection status
   const [stdbStatus, setStdbStatus] = useState('connecting'); // 'connecting' | 'connected' | 'offline'
 
   // Role
@@ -386,36 +388,40 @@ export default function LiveClassPage() {
     rulerStateRef.current = { x, y, angle };
   }, []);
 
-  // ── Offline/demo init: use navigation state session if SpacetimeDB unavailable ──
+  // ── Offline/demo init: use navigation state session if Convex unavailable ──
   useEffect(() => {
     const navSession = location.state?.session;
     if (!navSession || role) return;
     setSessionData({
       ...navSession,
-      classId: BigInt(navSession.classId),
-      hostIdentity: { toHexString: () => navSession.hostIdentity },
+      classId: navSession.classId,
+      hostUserId: navSession.hostIdentity ?? navSession.hostUserId,
     });
     setBackgroundType(navSession.backgroundType ?? 'white');
-    const identity = getCurrentIdentity();
-    const myIdentityHex = identity?.toHexString() ?? null;
-    const isTeacher = myIdentityHex ? navSession.hostIdentity === myIdentityHex : true;
+    const userId = getCurrentUserId();
+    const isTeacher = userId ? (navSession.hostIdentity === userId || navSession.hostUserId === userId) : true;
     setRole(isTeacher ? 'teacher' : 'student');
     setStdbStatus('offline');
   }, [location.state, role]);
 
-  // ── Init SpacetimeDB & detect role (online mode) ──────────────────────────
+  // ── Init Convex & detect role (online mode) ──────────────────────────
   useEffect(() => {
-    onSpacetimeDBError(() => {
+    onConvexError(() => {
       // Only update to offline if we haven't already connected
       setStdbStatus(prev => prev === 'connected' ? 'connected' : 'offline');
     });
-    onSpacetimeDBReady(() => {
-      setStdbStatus('connected');
-      const identity = getCurrentIdentity();
-      if (!identity) return;
-      const myHex = identity.toHexString();
 
-      const session = getLiveClassById(classId);
+    onConvexDisconnect(() => {
+      // WebSocket dropped — mark as offline so UI updates
+      setStdbStatus('offline');
+    });
+
+    onConvexReady(async () => {
+      setStdbStatus('connected');
+      const userId = getCurrentUserId();
+      if (!userId) return;
+
+      const session = await getLiveClassById(classId);
       if (!session) {
         // Don't override if student already joined via dialog or we have an offline session
         setRole(prev => {
@@ -433,19 +439,17 @@ export default function LiveClassPage() {
       // Only set role if not already set (e.g. by join dialog)
       setRole(prev => {
         if (prev) return prev;
-        // Check both: are they the class host, or do they have the teacher role in DB?
-        // The teacher role check handles cross-device access (e.g. opening the link on iPad
-        // where the identity differs from the creating device).
-        const isHost = session.hostIdentity.toHexString() === myHex;
-        const hasTeacherRole = stdbIsTeacher();
+        const isHost = session.hostUserId === userId;
+        const hasTeacherRole = convexIsTeacher();
         return (isHost || hasTeacherRole) ? 'teacher' : 'student';
       });
       setUsers(getAllUsers());
-      // Keep users list live — update whenever someone registers or changes name
-      if (stdbClient) {
-        stdbClient.db.user.onInsert(() => setUsers(getAllUsers()));
-        stdbClient.db.user.onUpdate(() => setUsers(getAllUsers()));
-      }
+      // Keep users list live — subscribe to user changes
+      const unsubUsers = subscribe(api.users.getAllUsers, {}, () => {
+        setUsers(getAllUsers());
+      });
+      // Cleanup on unmount handled by effect return
+      return () => unsubUsers?.();
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [classId]);
@@ -557,7 +561,7 @@ export default function LiveClassPage() {
     return () => {
       sync.leaveClass();
     };
-  // stdbStatus is included so the sync re-runs once SpacetimeDB connects — this
+  // stdbStatus is included so the sync re-runs once Convex connects — this
   // handles the race where offline-init sets role before client is available,
   // causing watchClass/joinClass to no-op on a null client.
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -577,19 +581,18 @@ export default function LiveClassPage() {
         if (type === 'student-join') {
           setParticipants(prev => {
             if (prev.some(p => p._bcId === data.bcId)) return prev;
-            // Shape compatible with TeacherStudentGrid (needs userIdentity.toHexString())
             return [...prev, {
               _bcId: data.bcId,
               sessionId: classId,
-              userIdentity: { toHexString: () => data.bcId },
+              userId: data.bcId,
               joinedAt: data.joinedAt,
             }];
           });
           // Also put the student's display name in the users list
           setUsers(prev => {
-            if (prev.some(u => u.identity.toHexString() === data.bcId)) return prev;
+            if (prev.some(u => u.userId === data.bcId)) return prev;
             return [...prev, {
-              identity: { toHexString: () => data.bcId },
+              userId: data.bcId,
               username: data.name,
             }];
           });
@@ -739,8 +742,7 @@ export default function LiveClassPage() {
     if (!fc || tool !== 'laser') return;
     const wrap = canvasWrapRef.current;
     if (!wrap) return;
-    const identity = getCurrentIdentity();
-    const myIdentityHex = identity?.toHexString() ?? 'local';
+    const myIdentityHex = getCurrentUserId() ?? 'local';
 
     // Cleanup old trails periodically
     const cleanupTrails = () => {
@@ -1386,7 +1388,7 @@ export default function LiveClassPage() {
       setCanUndo(historyIndex.current > 0);
       setCanRedo(true);
       broadcastCanvasState();
-      // Reconcile SpacetimeDB strokes with current canvas state (cross-device sync)
+      // Reconcile Convex strokes with current canvas state (cross-device sync)
       syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
     });
   }, [classId, broadcastCanvasState]);
@@ -1403,7 +1405,7 @@ export default function LiveClassPage() {
       setCanUndo(historyIndex.current > 0);
       setCanRedo(historyIndex.current < historyStack.current.length - 1);
       broadcastCanvasState();
-      // Reconcile SpacetimeDB strokes with current canvas state (cross-device sync)
+      // Reconcile Convex strokes with current canvas state (cross-device sync)
       syncRef.current?.syncFullCanvasState(classId, fc.getObjects().map(o => o.toJSON(['data'])));
     });
   }, [classId, broadcastCanvasState]);
@@ -1487,14 +1489,14 @@ export default function LiveClassPage() {
 
   // ── Timer ────────────────────────────────────────────────────────────────────
   function handleTimerUpdate(newState, elapsedMs, targetMs, mode) {
-    // Update UI immediately (offline-safe — no SpacetimeDB round trip needed)
+    // Update UI immediately (offline-safe — no Convex round trip needed)
     setTimerState({
       state: newState,
       mode,
       elapsedMs: Number(elapsedMs),
       targetMs: Number(targetMs),
     });
-    // Attempt to broadcast to students via SpacetimeDB (no-op if offline)
+    // Attempt to broadcast to students via Convex (no-op if offline)
     syncRef.current?.updateTimer(classId, mode, newState, elapsedMs, targetMs);
   }
 
@@ -1536,7 +1538,7 @@ export default function LiveClassPage() {
   }
 
   const isPresenting = presentState?.status === 'active';
-  const isMyPresentation = isPresenting && presentState?.presenterIdentity === getCurrentIdentity()?.toHexString();
+  const isMyPresentation = isPresenting && presentState?.presenterIdentity === getCurrentUserId();
 
   // ── Stencil handlers ──────────────────────────────────────────────────────
   /** Place an SVG stencil on the canvas (click from palette or drag-drop) */
@@ -1628,7 +1630,7 @@ export default function LiveClassPage() {
     // Student arriving via shared link — show name entry dialog
     const isSharedLink = !location.state?.session;
     if (isSharedLink) {
-      // While SpacetimeDB is still connecting, show a loading screen rather than
+      // While Convex is still connecting, show a loading screen rather than
       // the join form. This prevents the teacher (who has role='teacher' in DB)
       // from briefly seeing the student form before their role is resolved.
       if (stdbStatus === 'connecting') {
@@ -1641,38 +1643,43 @@ export default function LiveClassPage() {
         if (!name) return;
         setStudentName(name);
 
-        // Use SpacetimeDB session data if available, otherwise create a minimal demo session
-        const stdbSession = getLiveClassById(classId);
-        if (stdbSession) {
-          setSessionData(stdbSession);
-          setBackgroundType(stdbSession.backgroundType ?? 'white');
+        // Use Convex session data if available, otherwise create a minimal demo session
+        const convexSession = getLiveClassById(classId);
+        if (convexSession && convexSession.then) {
+          convexSession.then(s => {
+            if (s) { setSessionData(s); setBackgroundType(s.backgroundType ?? 'white'); }
+            else { setSessionData({ classId, title: 'Live Class', hostUserId: '', backgroundType: 'white' }); }
+          });
+        } else if (convexSession) {
+          setSessionData(convexSession);
+          setBackgroundType(convexSession.backgroundType ?? 'white');
         } else {
           setSessionData({
             classId: classId,
             title: 'Live Class',
-            hostIdentity: { toHexString: () => '' },
+            hostUserId: '',
             backgroundType: 'white',
           });
         }
 
-        // If SpacetimeDB never connected/timed out, mark as offline now
+        // If Convex never connected/timed out, mark as offline now
         setStdbStatus(prev => prev === 'connected' ? 'connected' : prev === 'connecting' ? 'offline' : prev);
         setRole('student');
       };
 
-      const handleJoinAsTeacher = () => {
+      const handleJoinAsTeacher = async () => {
         // Allow teacher to claim the teacher view from any device.
         // This sets their DB role to 'teacher' so future opens also work.
-        stdbSetTeacherRole(true);
-        const stdbSession = getLiveClassById(classId);
-        if (stdbSession) {
-          setSessionData(stdbSession);
-          setBackgroundType(stdbSession.backgroundType ?? 'white');
+        convexSetTeacherRole(true);
+        const convexSession = await getLiveClassById(classId);
+        if (convexSession) {
+          setSessionData(convexSession);
+          setBackgroundType(convexSession.backgroundType ?? 'white');
         } else {
           setSessionData({
             classId: classId,
             title: 'Live Class',
-            hostIdentity: { toHexString: () => '' },
+            hostUserId: '',
             backgroundType: 'white',
           });
         }
@@ -1790,9 +1797,9 @@ export default function LiveClassPage() {
           <span
             className={`lc-stdb-pill lc-stdb-pill--${stdbStatus}`}
             title={
-              stdbStatus === 'connected' ? 'SpacetimeDB: connected (cross-device sync active)' :
-              stdbStatus === 'offline'   ? 'SpacetimeDB: offline (same-browser sync only)' :
-                                          'SpacetimeDB: connecting…'
+              stdbStatus === 'connected' ? 'Convex: connected (cross-device sync active)' :
+              stdbStatus === 'offline'   ? 'Convex: offline (same-browser sync only)' :
+                                          'Convex: connecting…'
             }
           >
             <span className="lc-stdb-dot" />

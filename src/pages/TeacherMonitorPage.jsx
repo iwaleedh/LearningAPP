@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { initSpacetimeDB, getClient, getAllUsers } from '../spacetime.js';
+import { initConvex, getAllUsers, subscribe, callQuery, api } from '../convex-client.js';
 import './Pages.css';
 
-function formatDuration(createdAtMicros) {
-    // SpacetimeDB timestamps are microseconds since epoch
-    const startMs = Number(createdAtMicros) / 1000;
+function formatDuration(createdAtMs) {
+    // Convex timestamps are milliseconds since epoch
+    const startMs = Number(createdAtMs);
     const seconds = Math.floor((Date.now() - startMs) / 1000);
     if (seconds < 60) return `${seconds}s`;
     const minutes = Math.floor(seconds / 60);
@@ -21,40 +21,39 @@ export default function TeacherMonitorPage() {
     const [spaceReady, setSpaceReady] = useState(false);
     const [, setTick] = useState(0); // force re-render every 5s for duration updates
 
-    // Init SpacetimeDB + attach live listeners
+    // Init Convex + attach live listeners
     useEffect(() => {
-        initSpacetimeDB()
+        initConvex()
             .then(() => setSpaceReady(true))
             .catch(() => { /* offline — show empty state */ });
     }, []);
 
     useEffect(() => {
         if (!spaceReady) return;
-        const conn = getClient();
-        if (!conn) return;
+        let unsubSessions = null;
 
-        function refresh() {
-            setSessions(Array.from(conn.db.live_session.iter()).filter(x => x.status === 'active'));
-            setParticipants(Array.from(conn.db.session_participant.iter()));
+        async function refresh() {
+            const activeSessions = await callQuery(api.sessions.getActiveSessions, {}).catch(() => []);
+            setSessions(activeSessions || []);
             setAllUsers(getAllUsers());
+            // Gather all participants for all sessions
+            const allParts = [];
+            for (const s of (activeSessions || [])) {
+                const parts = await callQuery(api.sessions.getParticipants, { sessionId: String(s._id) }).catch(() => []);
+                allParts.push(...(parts || []));
+            }
+            setParticipants(allParts);
         }
 
         refresh();
 
-        const unsubSessionInsert = conn.db.live_session.onInsert(refresh);
-        const unsubSessionUpdate = conn.db.live_session.onUpdate(refresh);
-        const unsubSessionDelete = conn.db.live_session.onDelete(refresh);
-        const unsubPartInsert   = conn.db.session_participant.onInsert(refresh);
-        const unsubPartDelete   = conn.db.session_participant.onDelete(refresh);
-        const unsubUserUpdate   = conn.db.user.onUpdate(refresh);
+        // Subscribe to session changes
+        unsubSessions = subscribe(api.sessions.getActiveSessions, {}, () => {
+            refresh();
+        });
 
         return () => {
-            unsubSessionInsert?.();
-            unsubSessionUpdate?.();
-            unsubSessionDelete?.();
-            unsubPartInsert?.();
-            unsubPartDelete?.();
-            unsubUserUpdate?.();
+            unsubSessions?.();
         };
     }, [spaceReady]);
 
@@ -65,7 +64,7 @@ export default function TeacherMonitorPage() {
     }, []);
 
     function dropIn(session) {
-        navigate(`/annotate/${session.paperId}?session=${String(session.sessionId)}`);
+        navigate(`/annotate/${session.paperId}?session=${String(session._id)}`);
     }
 
     return (
@@ -105,14 +104,14 @@ export default function TeacherMonitorPage() {
                 <div className="teacher-session-grid">
                     {sessions.map(session => {
                         const sessionParticipants = participants.filter(
-                            p => p.sessionId === session.sessionId
+                            p => p.sessionId === String(session._id)
                         );
                         const host = allUsers.find(
-                            u => u.identity?.toHexString() === session.hostIdentity?.toHexString()
+                            u => u.userId === session.hostUserId
                         );
 
                         return (
-                            <div key={String(session.sessionId)} className="teacher-session-card card">
+                            <div key={String(session._id)} className="teacher-session-card card">
                                 {/* Live indicator row */}
                                 <div className="teacher-session-card-header">
                                     <span className="teacher-live-dot" />
@@ -134,12 +133,12 @@ export default function TeacherMonitorPage() {
                                 <div className="teacher-session-participants">
                                     {sessionParticipants.slice(0, 5).map(p => {
                                         const user = allUsers.find(
-                                            u => u.identity?.toHexString() === p.userIdentity?.toHexString()
+                                            u => u.userId === p.userId
                                         );
                                         const initial = (user?.username?.[0] ?? '?').toUpperCase();
                                         return (
                                             <div
-                                                key={String(p.participantId)}
+                                                key={String(p._id)}
                                                 className="teacher-participant-avatar"
                                                 title={user?.username ?? 'Unknown'}
                                             >

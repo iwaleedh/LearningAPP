@@ -1,20 +1,20 @@
 /**
  * liveClassSync.js — Real-time Live Class session management
  *
- * Manages the SpacetimeDB sync for the Live Class feature: canvas strokes,
+ * Manages the Convex sync for the Live Class feature: canvas strokes,
  * teacher cursor/laser broadcast, hand raises, timer, and participant tracking.
  * Follows the same pattern as sessionSync.js.
  */
 
-import { client, getCurrentIdentity } from '../../spacetime.js';
+import { getClient, getCurrentUserId, api, callMutation, callQuery, subscribe } from '../../convex-client.js';
 
 /**
  * Creates a live-class sync controller.
  *
  * @param {Object} callbacks
- * @param {(strokeId: bigint, fabricObjectJson: string) => void} callbacks.onStrokeAdded
- * @param {(strokeId: bigint, fabricObjectJson: string) => void} callbacks.onStrokeUpdated
- * @param {(strokeId: bigint) => void} callbacks.onStrokeDeleted
+ * @param {(strokeId: string, fabricObjectJson: string) => void} callbacks.onStrokeAdded
+ * @param {(strokeId: string, fabricObjectJson: string) => void} callbacks.onStrokeUpdated
+ * @param {(strokeId: string) => void} callbacks.onStrokeDeleted
  * @param {(participants: any[]) => void} callbacks.onParticipantsChanged
  * @param {(cursor: {x:number,y:number,tool:string,mode:string,identity:string}) => void} callbacks.onCursorMoved
  * @param {(trail: {id:string,points:Array,identity:string,createdAt:number}) => void} callbacks.onLaserTrail
@@ -46,207 +46,183 @@ export function createLiveClassSync({
   // Throttle for cursor broadcast (50ms)
   let lastCursorSendTime = 0;
 
+  // Track known state for diff detection
+  let knownStrokes = new Map();
+  let lastCursors = new Map(); // userId → cursor
+  let lastBackground = null;
+  let lastSessionStatus = null;
+
   let unsubs = [];
 
-  // ── Poll state (local-only until SpacetimeDB tables exist) ──
-  const localPolls = new Map(); // pollId → poll object
-  const localResponses = new Map(); // pollId → response[]
+  // ── Poll state (local-only until Convex tables exist) ──
+  const localPolls = new Map();
+  const localResponses = new Map();
 
-  function myHex() {
-    const id = getCurrentIdentity();
-    return id ? id.toHexString() : null;
-  }
-
-  function collectHandRaises(classId) {
-    const conn = client;
-    if (!conn) return [];
-    return Array.from(conn.db.hand_raise.iter()).filter(
-      r => r.classId === classId && r.status === 'raised'
-    );
+  function myUserId() {
+    return getCurrentUserId();
   }
 
   function attachListeners(classId) {
-    const conn = client;
-    if (!conn) return;
+    const client = getClient();
+    if (!client) return;
 
-    // ── Strokes ──────────────────────────────────────────────────
-    unsubs.push(conn.db.annotation_stroke.onInsert((stroke) => {
-      if (stroke.sessionId !== classId) return;
-      if (stroke.userIdentity.toHexString() === myHex()) return;
-      try {
-        const parsed = JSON.parse(stroke.fabricObjectJson);
-        const clientId = parsed?.data?.strokeClientId;
-        if (clientId) {
-          clientIdToStrokeId.set(clientId, stroke.strokeId);
-          strokeIdToClientId.set(stroke.strokeId, clientId);
+    // ── Strokes subscription ─────────────────────────────────────
+    unsubs.push(subscribe(api.strokes.getStrokesBySession, { sessionId: classId }, (strokes) => {
+      const newMap = new Map();
+      for (const stroke of strokes) {
+        newMap.set(stroke._id, stroke);
+
+        if (!knownStrokes.has(stroke._id)) {
+          if (stroke.userId !== myUserId()) {
+            try {
+              const parsed = JSON.parse(stroke.fabricObjectJson);
+              const clientId = parsed?.data?.strokeClientId;
+              if (clientId) {
+                clientIdToStrokeId.set(clientId, stroke._id);
+                strokeIdToClientId.set(stroke._id, clientId);
+              }
+            } catch { /* noop */ }
+            onStrokeAdded?.(stroke._id, stroke.fabricObjectJson);
+          }
+        } else {
+          const old = knownStrokes.get(stroke._id);
+          if (old.fabricObjectJson !== stroke.fabricObjectJson && stroke.userId !== myUserId()) {
+            onStrokeUpdated?.(stroke._id, stroke.fabricObjectJson);
+          }
         }
-      } catch { /* noop */ }
-      onStrokeAdded?.(stroke.strokeId, stroke.fabricObjectJson);
+      }
+      for (const [id] of knownStrokes) {
+        if (!newMap.has(id)) {
+          const clientId = strokeIdToClientId.get(id);
+          onStrokeDeleted?.(id, clientId);
+          if (clientId) clientIdToStrokeId.delete(clientId);
+          strokeIdToClientId.delete(id);
+        }
+      }
+      knownStrokes = newMap;
     }));
 
-    unsubs.push(conn.db.annotation_stroke.onUpdate((_old, stroke) => {
-      if (stroke.sessionId !== classId) return;
-      if (stroke.userIdentity.toHexString() === myHex()) return;
-      onStrokeUpdated?.(stroke.strokeId, stroke.fabricObjectJson);
+    // ── Participants subscription ─────────────────────────────────
+    unsubs.push(subscribe(api.sessions.getParticipants, { sessionId: classId }, (participants) => {
+      onParticipantsChanged?.(participants);
     }));
 
-    unsubs.push(conn.db.annotation_stroke.onDelete((stroke) => {
-      if (stroke.sessionId !== classId) return;
-      const clientId = strokeIdToClientId.get(stroke.strokeId);
-      onStrokeDeleted?.(stroke.strokeId, clientId);
-      if (clientId) clientIdToStrokeId.delete(clientId);
-      strokeIdToClientId.delete(stroke.strokeId);
+    // ── Cursor / Laser subscription ───────────────────────────────
+    unsubs.push(subscribe(api.cursors.getCursorsByClass, { classId }, (cursors) => {
+      for (const cursor of cursors) {
+        if (cursor.userId === myUserId()) continue;
+        const prev = lastCursors.get(cursor.userId);
+        if (!prev || prev.x !== cursor.x || prev.y !== cursor.y || prev.tool !== cursor.tool || prev.mode !== cursor.mode) {
+          onCursorMoved?.({
+            x: cursor.x,
+            y: cursor.y,
+            tool: cursor.tool,
+            mode: cursor.mode ?? 'dot',
+            identity: cursor.userId,
+          });
+        }
+        lastCursors.set(cursor.userId, cursor);
+      }
     }));
 
-    // ── Participants ──────────────────────────────────────────────
-    const notifyParticipants = () => {
-      const all = Array.from(conn.db.session_participant.iter()).filter(
-        p => p.sessionId === classId
-      );
-      onParticipantsChanged?.(all);
-    };
-    unsubs.push(conn.db.session_participant.onInsert((p) => {
-      if (p.sessionId !== classId) return;
-      notifyParticipants();
-    }));
-    unsubs.push(conn.db.session_participant.onDelete((p) => {
-      if (p.sessionId !== classId) return;
-      notifyParticipants();
-    }));
-    // Immediately notify with existing participants
-    notifyParticipants();
-
-    // ── Cursor / Laser ────────────────────────────────────────────
-    unsubs.push(conn.db.live_class_cursor.onInsert((cursor) => {
-      if (cursor.classId !== classId) return;
-      if (cursor.cursorId.toHexString() === myHex()) return;
-      onCursorMoved?.({
-        x: cursor.x,
-        y: cursor.y,
-        tool: cursor.tool,
-        mode: cursor.mode ?? 'dot', // default to dot for backward compat
-        identity: cursor.cursorId.toHexString()
-      });
-    }));
-    unsubs.push(conn.db.live_class_cursor.onUpdate((_old, cursor) => {
-      if (cursor.classId !== classId) return;
-      if (cursor.cursorId.toHexString() === myHex()) return;
-      onCursorMoved?.({
-        x: cursor.x,
-        y: cursor.y,
-        tool: cursor.tool,
-        mode: cursor.mode ?? 'dot',
-        identity: cursor.cursorId.toHexString()
-      });
+    // ── Hand raises subscription ──────────────────────────────────
+    unsubs.push(subscribe(api.handraises.getHandRaisesByClass, { classId }, (raises) => {
+      onHandRaisesChanged?.(raises);
     }));
 
-    // ── Hand raises ───────────────────────────────────────────────
-    unsubs.push(conn.db.hand_raise.onInsert((r) => {
-      if (r.classId !== classId) return;
-      onHandRaisesChanged?.(collectHandRaises(classId));
-    }));
-    unsubs.push(conn.db.hand_raise.onUpdate((_old, r) => {
-      if (r.classId !== classId) return;
-      onHandRaisesChanged?.(collectHandRaises(classId));
+    // ── Timer subscription ────────────────────────────────────────
+    unsubs.push(subscribe(api.timers.getClassTimer, { classId }, (timer) => {
+      if (timer) onTimerUpdated?.(timer);
     }));
 
-    // ── Timer ─────────────────────────────────────────────────────
-    unsubs.push(conn.db.class_timer.onInsert((t) => {
-      if (t.classId !== classId) return;
-      onTimerUpdated?.(t);
-    }));
-    unsubs.push(conn.db.class_timer.onUpdate((_old, t) => {
-      if (t.classId !== classId) return;
-      onTimerUpdated?.(t);
-    }));
-
-    // ── Class session (background change + end) ───────────────────
-    unsubs.push(conn.db.live_class_session.onUpdate((_old, session) => {
-      if (session.classId !== classId) return;
-      if (_old.backgroundType !== session.backgroundType) {
+    // ── Class session subscription (background + end) ─────────────
+    unsubs.push(subscribe(api.liveclass.getLiveClassById, { classId }, (session) => {
+      if (!session) return;
+      if (lastBackground !== null && lastBackground !== session.backgroundType) {
         onBackgroundChanged?.(session.backgroundType);
       }
-      if (session.status === 'ended') {
+      lastBackground = session.backgroundType;
+
+      if (session.status === 'ended' && lastSessionStatus !== 'ended') {
         onSessionEnded?.();
         detachListeners();
         activeClassId = null;
       }
+      lastSessionStatus = session.status;
     }));
   }
 
   function detachListeners() {
     unsubs.forEach(fn => fn?.());
     unsubs = [];
+    knownStrokes = new Map();
+    lastCursors = new Map();
+    lastBackground = null;
+    lastSessionStatus = null;
   }
 
   /* ── Public API ────────────────────────────────────────────────── */
 
-  /** Teacher creates a new Live Class. Returns immediately with a local session
-   *  if SpacetimeDB is unavailable, or once the DB row is confirmed (1.5 s race). */
+  /** Teacher creates a new Live Class. */
   async function createClass(title, backgroundType = 'white') {
-    const localClassId = BigInt(Date.now());
-    const myIdentityHex = myHex() ?? 'local';
-    const localSession = {
-      classId: localClassId,
-      title,
-      backgroundType,
-      status: 'active',
-      hostIdentity: { toHexString: () => myIdentityHex },
-    };
+    const userId = myUserId();
+    const localClassId = `local_${Date.now()}`;
 
-    const conn = client;
-    if (!conn) {
-      // No SpacetimeDB connection — use local/demo session immediately
+    if (!userId || !getClient()) {
+      // No Convex connection — use local/demo session immediately
       activeClassId = localClassId;
-      return localSession;
+      return {
+        _id: localClassId,
+        title,
+        backgroundType,
+        status: 'active',
+        hostUserId: userId ?? 'local',
+      };
     }
 
-    // Race: DB insert confirmation vs. 1.5 s timeout fallback
-    conn.reducers.createLiveClass({ title, backgroundType });
-    return Promise.race([
-      new Promise((resolve) => {
-        const unsub = conn.db.live_class_session.onInsert((session) => {
-          if (session.hostIdentity.toHexString() === myHex() && session.status === 'active') {
-            unsub();
-            activeClassId = session.classId;
-            attachListeners(activeClassId);
-            resolve(session);
-          }
-        });
-      }),
-      new Promise(resolve => setTimeout(() => {
-        activeClassId = localClassId;
-        resolve(localSession);
-      }, 1500)),
-    ]);
+    try {
+      const classId = await callMutation(api.liveclass.createLiveClass, {
+        hostUserId: userId,
+        title,
+        backgroundType,
+      });
+      activeClassId = classId;
+      attachListeners(classId);
+      const session = await callQuery(api.liveclass.getLiveClassById, { classId });
+      return session || { _id: classId, title, backgroundType, status: 'active', hostUserId: userId };
+    } catch (err) {
+      console.warn('createClass failed, using local fallback:', err);
+      activeClassId = localClassId;
+      return {
+        _id: localClassId,
+        title,
+        backgroundType,
+        status: 'active',
+        hostUserId: userId,
+      };
+    }
   }
 
   /** Student joins an existing Live Class. Returns snapshot of existing strokes. */
   async function joinClass(classId) {
-    const conn = client;
-    if (!conn) return []; // offline — BroadcastChannel handles sync
+    const userId = myUserId();
+    if (!userId || !getClient()) return [];
     activeClassId = classId;
     attachListeners(classId);
-    conn.reducers.joinLiveClass({ classId });
-    return Array.from(conn.db.annotation_stroke.iter()).filter(
-      s => s.sessionId === classId
-    );
+    await callMutation(api.liveclass.joinLiveClass, { classId, userId });
+    const strokes = await callQuery(api.strokes.getStrokesBySession, { sessionId: classId });
+    return strokes || [];
   }
 
   /**
-   * Teacher attaches DB listeners to an existing class (call from LiveClassPage
-   * after navigating from TeacherDashboard — the previous createClass sync
-   * instance is abandoned on navigation, so we must re-attach here).
-   * Returns snapshot of existing strokes so the canvas can be pre-populated.
+   * Teacher attaches listeners to an existing class (e.g. after navigation).
+   * Returns snapshot of existing strokes.
    */
   function watchClass(classId) {
     activeClassId = classId;
     attachListeners(classId);
-    const conn = client;
-    if (!conn) return [];
-    return Array.from(conn.db.annotation_stroke.iter()).filter(
-      s => s.sessionId === classId
-    );
+    // Return strokes asynchronously; caller should await if needed
+    return callQuery(api.strokes.getStrokesBySession, { sessionId: classId }).catch(() => []);
   }
 
   function leaveClass() {
@@ -257,102 +233,100 @@ export function createLiveClassSync({
   }
 
   /** Broadcast teacher's cursor/laser position (throttled to 50ms). */
-  function broadcastCursor(classId, x, y, tool, mode = 'dot') {
+  async function broadcastCursor(classId, x, y, tool, mode = 'dot') {
     const now = Date.now();
     if (now - lastCursorSendTime < 50) return;
     lastCursorSendTime = now;
-    // Include mode in the broadcast (some reducers may not support it yet)
-    client?.reducers.updateCursor?.({ classId, x, y, tool, mode });
+    const userId = myUserId();
+    if (!userId) return;
+    callMutation(api.cursors.updateCursor, { classId, userId, x, y, tool, mode }).catch(() => {});
   }
 
   /** Broadcast a completed laser trail to other users. */
   function broadcastLaserTrail(classId, trailId, points) {
-    // Store trail in a custom event or temporary storage for other users
-    // Since we don't have a dedicated table, we'll use a simple broadcast mechanism
-    // For now, we'll emit via cursor with a special marker
     if (!points || points.length < 2) return;
-
-    // For offline/demo mode, just emit locally via callback
-    // In a full implementation, this would go through SpacetimeDB
     const trailData = {
       id: trailId,
       points,
-      identity: myHex(),
+      identity: myUserId(),
       createdAt: Date.now()
     };
-
-    // Try to call reducer if it exists (future-proofing)
-    client?.reducers?.addLaserTrail?.({ classId, trailId, pointsJson: JSON.stringify(points) });
-
     onLaserTrail?.(trailData);
     return trailData;
   }
 
   /** Called when a canvas object is created locally. sessionId == classId. */
-  function sendStroke(classId, fabricObjectJson, clientId) {
-    const conn = client;
-    if (!conn || !classId) return;
-    conn.reducers.addStroke({ sessionId: classId, pageNumber: 1, fabricObjectJson });
-    const unsub = conn.db.annotation_stroke.onInsert((stroke) => {
-      if (stroke.sessionId !== classId) return;
-      if (stroke.userIdentity.toHexString() !== myHex()) return;
-      try {
-        const parsed = JSON.parse(stroke.fabricObjectJson);
-        if (parsed?.data?.strokeClientId === clientId) {
-          clientIdToStrokeId.set(clientId, stroke.strokeId);
-          strokeIdToClientId.set(stroke.strokeId, clientId);
-          unsub();
-        }
-      } catch { /* noop */ }
+  async function sendStroke(classId, fabricObjectJson, clientId) {
+    const userId = myUserId();
+    if (!userId || !classId) return;
+    const strokeId = await callMutation(api.strokes.addStroke, {
+      sessionId: classId,
+      pageNumber: 1,
+      userId,
+      fabricObjectJson,
     });
+    if (strokeId) {
+      clientIdToStrokeId.set(clientId, strokeId);
+      strokeIdToClientId.set(strokeId, clientId);
+    }
   }
 
-  function sendStrokeUpdate(clientId, fabricObjectJson) {
-    const conn = client;
-    if (!conn) return;
+  async function sendStrokeUpdate(clientId, fabricObjectJson) {
     const strokeId = clientIdToStrokeId.get(clientId);
     if (strokeId == null) return;
-    conn.reducers.updateStroke({ strokeId, fabricObjectJson });
+    await callMutation(api.strokes.updateStroke, { strokeId, fabricObjectJson });
   }
 
-  function sendStrokeDelete(clientId) {
-    const conn = client;
-    if (!conn) return;
+  async function sendStrokeDelete(clientId) {
     const strokeId = clientIdToStrokeId.get(clientId);
     if (strokeId == null) return;
-    conn.reducers.deleteStroke({ strokeId });
+    await callMutation(api.strokes.deleteStroke, { strokeId });
     clientIdToStrokeId.delete(clientId);
     strokeIdToClientId.delete(strokeId);
   }
 
   /** Invite a student by username. */
-  function sendInvite(classId, toUsername) {
-    client?.reducers.inviteToSession({ sessionId: classId, targetUsername: toUsername });
+  async function sendInvite(classId, toUsername) {
+    const userId = myUserId();
+    if (!userId) return;
+    await callMutation(api.invites.inviteToSession, {
+      sessionId: classId,
+      fromUserId: userId,
+      toUsername,
+    });
   }
 
   /** Student raises hand. */
-  function raiseHand(classId) {
-    client?.reducers.raiseHand({ classId });
+  async function raiseHand(classId) {
+    const userId = myUserId();
+    if (!userId) return;
+    await callMutation(api.handraises.raiseHand, { classId, studentUserId: userId });
   }
 
   /** Teacher acknowledges a hand raise. */
-  function acknowledgeRaise(raiseId) {
-    client?.reducers.acknowledgeHandRaise({ raiseId });
+  async function acknowledgeRaise(raiseId) {
+    await callMutation(api.handraises.acknowledgeHandRaise, { raiseId });
   }
 
   /** Teacher updates timer state. */
-  function updateTimer(classId, mode, state, elapsedMs, targetMs = BigInt(0)) {
-    client?.reducers.updateClassTimer({ classId, mode, state, elapsedMs, targetMs });
+  async function updateTimer(classId, mode, state, elapsedMs, targetMs = 0) {
+    await callMutation(api.timers.updateClassTimer, {
+      classId,
+      mode,
+      state,
+      elapsedMs: Number(elapsedMs),
+      targetMs: Number(targetMs),
+    });
   }
 
   /** Teacher changes the paper background. */
-  function setBackground(classId, backgroundType) {
-    client?.reducers.setBackground({ classId, backgroundType });
+  async function setBackground(classId, backgroundType) {
+    await callMutation(api.liveclass.setBackground, { classId, backgroundType });
   }
 
   /** Teacher ends the class. */
-  function endClass(classId) {
-    client?.reducers.endLiveClass({ classId });
+  async function endClass(classId) {
+    await callMutation(api.liveclass.endLiveClass, { classId });
     leaveClass();
   }
 
@@ -360,78 +334,61 @@ export function createLiveClassSync({
     return activeClassId;
   }
 
-  /* ── Poll methods (local-only fallback; replace with SpacetimeDB reducers later) ── */
+  /* ── Poll methods (local-only — no dedicated Convex table yet) ── */
 
-  /** Teacher creates a poll. Returns the new poll object. */
   function createPoll(classId, question, type, options, correctIndex) {
     const pollId = 'poll_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
     const poll = {
       id: pollId,
       classId,
       question,
-      type,          // 'mcq' | 'truefalse' | 'freetext'
-      options,       // string[]
-      correctIndex,  // number (-1 if none)
+      type,
+      options,
+      correctIndex,
       status: 'active',
       responses: [],
       createdAt: Date.now(),
     };
     localPolls.set(pollId, poll);
     localResponses.set(pollId, []);
-
-    // Try SpacetimeDB reducer if available
-    client?.reducers?.createPoll?.({ classId, question, type, optionsJson: JSON.stringify(options), correctIndex });
-
     onPollCreated?.(poll);
     return poll;
   }
 
-  /** Student submits a response. Returns the updated poll. */
   function submitPollResponse(pollId, response) {
     const poll = localPolls.get(pollId);
     if (!poll || poll.status !== 'active') return null;
-
     const resp = {
       id: 'resp_' + Date.now(),
       pollId,
-      identity: myHex() ?? 'anonymous',
-      ...response, // { selectedIndex } or { text }
+      identity: myUserId() ?? 'anonymous',
+      ...response,
       submittedAt: Date.now(),
     };
-
     const responses = localResponses.get(pollId) || [];
     responses.push(resp);
     localResponses.set(pollId, responses);
     poll.responses = responses;
-
-    client?.reducers?.submitPollResponse?.({ pollId, responseJson: JSON.stringify(response) });
-
     onPollResponseReceived?.(poll, resp);
     return poll;
   }
 
-  /** Teacher closes a poll. Returns the final poll object. */
   function closePoll(pollId) {
     const poll = localPolls.get(pollId);
     if (!poll) return null;
     poll.status = 'closed';
-
-    client?.reducers?.closePoll?.({ pollId });
-
     onPollClosed?.(poll);
     return poll;
   }
 
-  /** Get all polls for the active class. */
   function getPolls() {
     return Array.from(localPolls.values()).filter(p => p.classId === activeClassId);
   }
 
-  /* ── Present mode (local-only fallback; replace with SpacetimeDB later) ── */
+  /* ── Present mode (local-only — no dedicated Convex table yet) ── */
 
-  let presentState = null; // { classId, presenterIdentity, presenterName, status }
+  let presentState = null;
 
-  /** Teacher invites a student to present. */
   function invitePresenter(classId, presenterIdentity, presenterName) {
     presentState = {
       classId,
@@ -439,57 +396,47 @@ export function createLiveClassSync({
       presenterName: presenterName ?? presenterIdentity.substring(0, 6),
       status: 'active',
     };
-    client?.reducers?.invitePresenter?.({ classId, presenterIdentity });
     onPresentStatusChanged?.(presentState);
     return presentState;
   }
 
-  /** Student requests to present. */
   function requestPresent(classId) {
     presentState = {
       classId,
-      presenterIdentity: myHex(),
+      presenterIdentity: myUserId(),
       presenterName: null,
       status: 'requesting',
     };
-    client?.reducers?.requestPresent?.({ classId });
     onPresentStatusChanged?.(presentState);
     return presentState;
   }
 
-  /** Teacher approves a pending present request. */
-  function approvePresent(classId) {
+  function approvePresent() {
     if (!presentState || presentState.status !== 'requesting') return null;
     presentState.status = 'active';
-    client?.reducers?.approvePresent?.({ classId });
     onPresentStatusChanged?.(presentState);
     return presentState;
   }
 
-  /** Teacher or presenter ends the presentation. */
-  function endPresent(classId) {
+  function endPresent() {
     if (!presentState) return null;
     presentState.status = 'ended';
     const ended = { ...presentState };
     presentState = null;
-    client?.reducers?.endPresent?.({ classId });
     onPresentStatusChanged?.(ended);
     return ended;
   }
 
-  /** Get current present state. */
   function getPresentState() {
     return presentState;
   }
 
   /**
-   * Reconcile SpacetimeDB strokes with the current canvas state.
+   * Reconcile Convex strokes with the current canvas state.
    * Call after undo/redo (which use loadFromJSON and bypass individual stroke events).
-   * Deletes DB strokes that are no longer on the canvas and re-adds new ones.
    */
-  function syncFullCanvasState(classId, fabricObjects) {
-    const conn = client;
-    if (!conn || !classId) return;
+  async function syncFullCanvasState(classId, fabricObjects) {
+    if (!getClient() || !classId) return;
 
     const currentIds = new Set();
     fabricObjects.forEach(obj => {
@@ -498,32 +445,37 @@ export function createLiveClassSync({
     });
 
     // Delete strokes in DB that are no longer on canvas
+    const deletePromises = [];
     for (const [cid, strokeId] of clientIdToStrokeId) {
       if (!currentIds.has(cid)) {
-        conn.reducers.deleteStroke({ strokeId });
+        deletePromises.push(callMutation(api.strokes.deleteStroke, { strokeId }));
         clientIdToStrokeId.delete(cid);
         strokeIdToClientId.delete(strokeId);
       }
     }
 
     // Add canvas objects not yet tracked in DB
+    const addPromises = [];
+    const userId = myUserId();
     fabricObjects.forEach(obj => {
       const cid = obj?.data?.strokeClientId;
       if (cid && !clientIdToStrokeId.has(cid)) {
-        conn.reducers.addStroke({ sessionId: classId, pageNumber: 1, fabricObjectJson: JSON.stringify(obj) });
-        const unsub = conn.db.annotation_stroke.onInsert((stroke) => {
-          if (stroke.sessionId !== classId) return;
-          try {
-            const parsed = JSON.parse(stroke.fabricObjectJson);
-            if (parsed?.data?.strokeClientId === cid) {
-              clientIdToStrokeId.set(cid, stroke.strokeId);
-              strokeIdToClientId.set(stroke.strokeId, cid);
-              unsub();
-            }
-          } catch { /* noop */ }
+        const p = callMutation(api.strokes.addStroke, {
+          sessionId: classId,
+          pageNumber: 1,
+          userId,
+          fabricObjectJson: JSON.stringify(obj),
+        }).then(strokeId => {
+          if (strokeId) {
+            clientIdToStrokeId.set(cid, strokeId);
+            strokeIdToClientId.set(strokeId, cid);
+          }
         });
+        addPromises.push(p);
       }
     });
+
+    await Promise.all([...deletePromises, ...addPromises]);
   }
 
   return {

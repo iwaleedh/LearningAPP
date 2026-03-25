@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Moon, Download, Trash2, GraduationCap } from 'lucide-react';
-import { onSpacetimeDBReady, getMyRole, setTeacherRole } from '../spacetime.js';
+import { onConvexReady, getMyRole, setTeacherRole } from '../convex-client.js';
 import './Pages.css';
 
 export default function SettingsPage() {
     const [role, setRole] = useState('student');
 
-    // Load role once SpacetimeDB is ready
+    // Load role once Convex is ready
     useEffect(() => {
-        onSpacetimeDBReady(() => {
+        onConvexReady(() => {
             setRole(getMyRole());
         });
     }, []);

@@ -147,7 +147,7 @@ export default function TeacherDashboard() {
                 confidenceScore: 3,
             };
             await upsertNote(noteDoc);
-            setNoteSaveStatus('Saved successfully to SpacetimeDB!');
+            setNoteSaveStatus('Saved successfully!');
             setTimeout(() => setNoteSaveStatus(''), 3000);
         } catch (e) {
             setNoteSaveStatus(`Error: ${e.message}`);
@@ -209,7 +209,7 @@ export default function TeacherDashboard() {
                         title: session.title,
                         backgroundType: session.backgroundType,
                         status: session.status,
-                        hostIdentity: session.hostIdentity?.toHexString?.() ?? 'local',
+                        hostIdentity: session.hostUserId ?? 'local',
                     },
                 };
                 navigate(`/live/${session.classId}`, { state: navState });
@@ -505,7 +505,7 @@ export default function TeacherDashboard() {
 
                 {activeTab === 'notes' && (
                     <div className="notes-editor-section">
-                        <h3>Raw Note Editor (SpacetimeDB Sync)</h3>
+                        <h3>Raw Note Editor (Convex Sync)</h3>
                         <p className="section-desc">Create or update notes directly in the database to test CRUD operations.</p>
 
                         <div className="card note-form">
@@ -547,7 +547,7 @@ export default function TeacherDashboard() {
 
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                                 <button className="btn btn-primary" onClick={handleSaveNote}>
-                                    <Save size={16} /> Save to SpacetimeDB
+                                    <Save size={16} /> Save to Convex
                                 </button>
                                 {noteSaveStatus && (
                                     <span style={{ color: noteSaveStatus.includes('Error') ? 'var(--danger-color)' : 'var(--success-color)' }}>

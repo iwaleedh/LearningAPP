@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import * as pdfjsLib from 'pdfjs-dist';
-import { initSpacetimeDB, getCurrentIdentity, getMyPendingInvites, getClient } from '../spacetime.js';
+import { initConvex, getCurrentUserId, getMyPendingInvites, callQuery, api } from '../convex-client.js';
 import { createSessionSync } from '../services/annotation/sessionSync.js';
 import ShareDialog from '../components/annotation/ShareDialog.jsx';
 import { getPaperById } from '../services/pastPapers/pastPaperService';
@@ -266,16 +266,16 @@ export default function AnnotatePage() {
     // ── Cleanup ───────────────────────────────────────────────────────────
     useEffect(() => () => clearTimeout(autoSaveTimer.current), []);
 
-    // ── SpacetimeDB init (Phase 2) ───────────────────────────────────────
+    // ── Convex init (Phase 2) ───────────────────────────────────────
     useEffect(() => {
-        initSpacetimeDB()
+        initConvex()
             .then(() => {
                 setSpaceReady(true);
-                const identity = getCurrentIdentity();
-                if (identity) setMyIdentityHex(identity.toHexString());
+                const userId = getCurrentUserId();
+                if (userId) setMyIdentityHex(userId);
             })
             .catch(() => {
-                // SpacetimeDB unavailable — collaboration disabled, local annotation still works
+                // Convex unavailable — collaboration disabled, local annotation still works
             });
     }, []);
 
@@ -323,22 +323,21 @@ export default function AnnotatePage() {
         if (!sessionId) return;
         const sync = sessionSyncRef.current;
         if (!sync) return;
-        const sid = BigInt(sessionId);
+        const sid = sessionId;
         sync.joinSession(sid).then((existingStrokes) => {
             for (const stroke of existingStrokes) {
                 try {
                     const parsed = JSON.parse(stroke.fabricObjectJson);
                     const clientId = parsed?.data?.strokeClientId;
-                    canvasRef.current?.applyStrokeDelta('created', stroke.strokeId, clientId, stroke.fabricObjectJson);
+                    canvasRef.current?.applyStrokeDelta('created', stroke.strokeId ?? stroke._id, clientId, stroke.fabricObjectJson);
                 } catch {/* ignore */}
             }
-            const conn = getClient();
-            if (conn) {
-                const s = Array.from(conn.db.live_session.iter()).find(x => x.sessionId === sid);
+            callQuery(api.sessions.getSessionByStringId, { sessionId: sid }).then(s => {
                 if (s) setActiveSession(s);
-                const parts = Array.from(conn.db.session_participant.iter()).filter(p => p.sessionId === sid);
-                setSessionParticipants(parts);
-            }
+            }).catch(() => {});
+            callQuery(api.sessions.getParticipants, { sessionId: sid }).then(parts => {
+                if (parts) setSessionParticipants(parts);
+            }).catch(() => {});
         }).catch(e => console.error('Could not join session:', e));
     }, [spaceReady, paper, location.search]);
 
@@ -389,14 +388,8 @@ export default function AnnotatePage() {
         sync.respondToInvite(inviteId, accept);
         setPendingInvites(prev => prev.filter(i => i.inviteId !== inviteId));
         if (accept) {
-            const conn = getClient();
-            if (conn) {
-                const invite = Array.from(conn.db.session_invite.iter()).find(i => i.inviteId === inviteId);
-                if (invite) {
-                    const s = Array.from(conn.db.live_session.iter()).find(x => x.sessionId === invite.sessionId);
-                    if (s) setActiveSession(s);
-                }
-            }
+            callQuery(api.invites.getInvitesBySession, { sessionId: '' }).catch(() => {});
+            // The server auto-joins the user on accept; the session sync listeners will update UI
         }
     };
 

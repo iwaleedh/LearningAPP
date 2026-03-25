@@ -1,6 +1,6 @@
 import { Wifi, Printer, CloudOff, Download, Database } from 'lucide-react';
 import { AIGrading, DraftAutoSave, PhotoUpload } from '../components/advanced/AdvancedFeatures';
-import { getClient } from '../spacetime.js';
+import { getClient, callMutation, callQuery, api } from '../convex-client.js';
 import usePwaStatus from '../hooks/usePwaStatus';
 import './Pages.css';
 
@@ -43,41 +43,42 @@ export default function AdvancedPage() {
             <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)', border: '2px solid var(--color-primary)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
                     <Database size={18} style={{ color: 'var(--color-primary)' }} />
-                    <h3 style={{ margin: 0 }}>SpacetimeDB Test</h3>
+                    <h3 style={{ margin: 0 }}>Convex Test</h3>
                 </div>
                 <button
                     className="btn btn-primary no-print"
-                    id="test-spacetime-btn"
-                    onClick={() => {
-                        if (import.meta.env.DEV) console.log('Testing SpacetimeDB...');
+                    id="test-convex-btn"
+                    onClick={async () => {
+                        if (import.meta.env.DEV) console.log('Testing Convex...');
                         try {
                             const client = getClient();
-                            if (!client) throw new Error("SpacetimeDB client not initialized yet.");
+                            if (!client) throw new Error("Convex client not initialized yet.");
 
-                            client.reducers.upsertNote(
-                                'test:123',
-                                'physics',
-                                'Test Title',
-                                'Test Subtopic',
-                                '[]',
-                                '{"blocks": [{"data": "Hello World!"}]}',
-                                4,
-                                1
-                            );
-                            setTimeout(() => {
-                                const notes = Array.from(client.db.note.iter());
-                                if (import.meta.env.DEV) console.log('Notes in DB:', notes);
-                                document.getElementById('spacetime-result').innerText = `Success! Found ${notes.length} note(s). Content: ${notes[0]?.title}`;
-                            }, 500);
+                            await callMutation(api.notes.upsertNote, {
+                                noteId: 'test:123',
+                                ownerUserId: 'test-user',
+                                subject: 'physics',
+                                title: 'Test Title',
+                                subtopicTitle: 'Test Subtopic',
+                                breadcrumbs: '[]',
+                                contentJson: '{"blocks": [{"data": "Hello World!"}]}',
+                                confidenceScore: 4,
+                                estimatedReadMinutes: 1
+                            });
+                            const note = await callQuery(api.notes.getNote, { noteId: 'test:123' });
+                            if (import.meta.env.DEV) console.log('Note in DB:', note);
+                            document.getElementById('convex-result').innerText = note
+                                ? `Success! Found note: ${note.title}`
+                                : 'Upsert succeeded but note not found on query.';
                         } catch (e) {
                             if (import.meta.env.DEV) console.error(e);
-                            document.getElementById('spacetime-result').innerText = 'Error: ' + e.message;
+                            document.getElementById('convex-result').innerText = 'Error: ' + e.message;
                         }
                     }}
                 >
                     Run Database Test
                 </button>
-                <div id="spacetime-result" style={{ marginTop: '10px', fontWeight: 'bold' }}></div>
+                <div id="convex-result" style={{ marginTop: '10px', fontWeight: 'bold' }}></div>
             </div>
 
             <div className="card avoid-break" style={{ marginBottom: 'var(--space-5)' }}>

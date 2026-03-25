@@ -1,12 +1,12 @@
 import { deriveConfidenceBand, estimateReadMinutes } from './noteContext.js';
 import { extractMentionsFromDoc } from './mentionGraph.js';
-import { getClient } from '../../spacetime.js';
+import { getClient, getCurrentUserId, api, callMutation, callQuery } from '../../convex-client.js';
 
 export function getStorageCapabilities() {
     return {
         indexedDbAvailable: false,
         usingMemoryFallback: false,
-        message: 'Using SpacetimeDB',
+        message: 'Using Convex',
     };
 }
 
@@ -88,8 +88,8 @@ function toHeader(note) {
     };
 }
 
-// Map SpacetimeDB row back to local app format
-function mapSpacetimeNoteRow(row) {
+// Map Convex note row back to local app format
+function mapConvexNoteRow(row) {
     try {
         const content = JSON.parse(row.contentJson);
         const breadcrumbs = JSON.parse(row.breadcrumbs || '[]');
@@ -105,9 +105,9 @@ function mapSpacetimeNoteRow(row) {
             mentions: content.mentions || [],
             confidenceScore: row.confidenceScore,
             estimatedReadMinutesOverride: row.estimatedReadMinutes,
-            createdAt: new Date(Number(row.createdAt) * 1000).toISOString(),
-            lastEditedAt: new Date(Number(row.lastEditedAt) * 1000).toISOString(),
-            ownerIdentity: row.ownerIdentity.toHexString(),
+            createdAt: new Date(row.createdAt).toISOString(),
+            lastEditedAt: new Date(row.lastEditedAt).toISOString(),
+            ownerUserId: row.ownerUserId,
         });
     } catch (e) {
         console.error('Failed to parse note content', row.noteId, e);
@@ -119,11 +119,14 @@ export async function getNote(noteId) {
     const client = getClient();
     if (!client) return null;
 
-    // Using simple iteration since primary key queries map to normal array finds
-    const row = Array.from(client.db.note.iter()).find(n => n.noteId === noteId);
-    if (!row) return null;
-
-    return mapSpacetimeNoteRow(row);
+    try {
+        const row = await callQuery(api.notes.getNote, { noteId });
+        if (!row) return null;
+        return mapConvexNoteRow(row);
+    } catch (e) {
+        console.error('getNote failed:', e);
+        return null;
+    }
 }
 
 export async function upsertNote(noteDoc) {
@@ -140,42 +143,45 @@ export async function upsertNote(noteDoc) {
     });
 
     const breadcrumbsStr = JSON.stringify(normalized.breadcrumbs || []);
+    const userId = getCurrentUserId();
+    if (!userId) return;
 
-    const client = getClient();
-    if (!client) return;
-
-    client.reducers.upsertNote({
+    await callMutation(api.notes.upsertNote, {
         noteId: normalized.noteId,
+        ownerUserId: userId,
         subject: normalized.subject || '',
         title: normalized.topicTitle || '',
         subtopicTitle: normalized.subtopicTitle || '',
         breadcrumbs: breadcrumbsStr,
         contentJson,
         confidenceScore: normalized.confidenceScore,
-        estimatedReadMinutes: Math.floor(normalized.estimatedReadMinutes || 0)
+        estimatedReadMinutes: Math.floor(normalized.estimatedReadMinutes || 0),
     });
 }
 
 export async function listNotesBySubject(subject) {
     const key = String(subject).toLowerCase();
-
-    const notes = [];
     const client = getClient();
-    if (!client) return notes;
+    if (!client) return [];
 
-    for (const row of client.db.note.iter()) {
-        if (String(row.subject || '').toLowerCase() === key) {
-            const parsed = mapSpacetimeNoteRow(row);
-            if (parsed) notes.push(parsed);
-        }
+    try {
+        const rows = await callQuery(api.notes.listNotesBySubject, { subject: key });
+        if (!rows) return [];
+
+        const notes = rows
+            .map(row => mapConvexNoteRow(row))
+            .filter(Boolean);
+
+        notes.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
+        return notes.map((item) => toHeader(item));
+    } catch (e) {
+        console.error('listNotesBySubject failed:', e);
+        return [];
     }
-
-    notes.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
-    return notes.map((item) => toHeader(item));
 }
 
-// Map SpacetimeDB Flashcard row back to app format
-function mapSpacetimeFlashcardRow(row) {
+// Map Convex Flashcard row back to app format
+function mapConvexFlashcardRow(row) {
     return {
         cardId: row.cardId,
         subject: row.subject,
@@ -183,8 +189,8 @@ function mapSpacetimeFlashcardRow(row) {
         sourceLabel: row.sourceLabel,
         front: row.front,
         back: row.back,
-        createdAt: new Date(Number(row.createdAt) * 1000).toISOString(),
-        ownerIdentity: row.ownerIdentity.toHexString(),
+        createdAt: new Date(row.createdAt).toISOString(),
+        ownerUserId: row.ownerUserId,
     };
 }
 
@@ -195,36 +201,42 @@ export async function saveFlashcard(card) {
     const subject = String(card.subject || '').toLowerCase();
     const sourceNoteId = String(card.sourceNoteId || '');
     const sourceLabel = String(card.sourceLabel || '');
+    const userId = getCurrentUserId();
+    if (!userId) return;
 
-    const client = getClient();
-    if (!client) return;
-
-    client.reducers.saveFlashcard({
+    await callMutation(api.flashcards.saveFlashcard, {
         cardId,
+        ownerUserId: userId,
         subject,
         sourceNoteId,
         sourceLabel,
         front,
-        back
+        back,
     });
 }
 
 export async function listFlashcards(filters = {}) {
-    let cards = [];
     const client = getClient();
-    if (!client) return cards;
+    if (!client) return [];
 
-    for (const row of client.db.flashcard.iter()) {
-        cards.push(mapSpacetimeFlashcardRow(row));
+    try {
+        const rows = await callQuery(api.flashcards.listFlashcards, {
+            subject: filters.subject ? String(filters.subject).toLowerCase() : undefined,
+            ownerUserId: undefined,
+        });
+        if (!rows) return [];
+
+        let cards = rows.map(row => mapConvexFlashcardRow(row));
+
+        if (filters.sourceNoteId) {
+            cards = cards.filter(item => item.sourceNoteId === String(filters.sourceNoteId));
+        }
+
+        return cards.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+    } catch (e) {
+        console.error('listFlashcards failed:', e);
+        return [];
     }
-
-    const filtered = cards.filter((item) => {
-        if (filters.subject && String(item.subject || '').toLowerCase() !== String(filters.subject).toLowerCase()) return false;
-        if (filters.sourceNoteId && item.sourceNoteId !== String(filters.sourceNoteId)) return false;
-        return true;
-    });
-
-    return filtered.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
 }
 
 export async function saveNoteAsset(asset) {
@@ -232,20 +244,28 @@ export async function saveNoteAsset(asset) {
     const noteId = String(asset.noteId || '');
     const type = String(asset.type || '');
     const data = asset.data || '';
+    const userId = getCurrentUserId();
+    if (!userId) return assetId;
 
-    const client = getClient();
-    if (!client) return assetId;
-
-    client.reducers.saveNoteAsset({
+    await callMutation(api.assets.saveNoteAsset, {
         assetId,
         noteId,
+        ownerUserId: userId,
         assetType: type,
-        data
+        data,
     });
 
     return assetId;
 }
 
+export async function deleteNote(noteId) {
+    await callMutation(api.notes.deleteNote, { noteId: String(noteId) });
+}
+
+export async function deleteFlashcard(cardId) {
+    await callMutation(api.flashcards.deleteFlashcard, { cardId: String(cardId) });
+}
+
 export function __resetMemoryStoreForTests() {
-    // No-op for SpacetimeDB tests
+    // No-op for Convex tests
 }

@@ -6,14 +6,14 @@ import { Monitor, MonitorOff } from 'lucide-react';
  * Renders initials placeholders (real canvas streaming would require WebRTC;
  * this component provides the UI shell and participant list).
  *
- * @param {{ classId: bigint, participants: Array, users: Array, onExpand: (identity:string) => void, presentState: object|null, onInvitePresent: (identityHex:string, name:string) => void, onEndPresent: () => void }} props
+ * @param {{ classId: string, participants: Array, users: Array, onExpand: (userId:string) => void, presentState: object|null, onInvitePresent: (userId:string, name:string) => void, onEndPresent: () => void }} props
  */
 export default function TeacherStudentGrid({
   participants, users, onExpand,
   presentState, onInvitePresent, onEndPresent,
 }) {
   function getUser(identityHex) {
-    return users.find(u => u.identity.toHexString() === identityHex);
+    return users.find(u => u.userId === identityHex);
   }
 
   function initials(username) {
@@ -36,7 +36,7 @@ export default function TeacherStudentGrid({
   return (
     <div className="lc-student-grid">
       {participants.map(p => {
-        const identityHex = p.userIdentity.toHexString();
+        const identityHex = p.userId;
         const user = getUser(identityHex);
         const name = user?.username ?? identityHex.substring(0, 6);
         const isPresenting = activePresenter === identityHex;
