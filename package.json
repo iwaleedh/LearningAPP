@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "test": "node --test \"src/**/*.test.js\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "convex:deploy": "npx convex deploy"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
