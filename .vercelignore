@@ -1,0 +1,22 @@
+# Build output & dependencies (already gitignored)
+node_modules
+dist
+dist-ssr
+
+# Large static PDF assets — host on a CDN (S3/Cloudflare R2)
+public/notes/
+public/pastpapers/
+
+# Data pipeline & offline tooling (not part of the app)
+pipeline/
+books/
+output/
+spacetime-backend/
+scripts/
+maths_extracted/
+statistics_extracted/
+mechanics_extracted/
+*.py
+*.pdf
+repro.txt
+*.extracted.txt

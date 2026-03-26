@@ -13,6 +13,7 @@ import ProgressPage from './pages/ProgressPage';
 import MistakeBankPage from './pages/MistakeBankPage';
 import SettingsPage from './pages/SettingsPage';
 import TeacherDashboard from './pages/TeacherDashboard';
+import BackendArchitecturesPage from './pages/BackendArchitecturesPage';
 import CommandSearch from './components/student/CommandSearch';
 import './App.css';
 
@@ -69,6 +70,7 @@ function AppContent() {
               <Route path="/teacher" element={<TeacherDashboard />} />
               <Route path="/teacher/monitor" element={<TeacherMonitorPage />} />
               <Route path="/advanced" element={<AdvancedPage />} />
+              <Route path="/backend-architectures" element={<BackendArchitecturesPage />} />
               <Route path="/annotate/:paperId" element={<AnnotatePage />} />
               <Route path="/live/:sessionId" element={<LiveClassPage />} />
               <Route path="/live-notes/:sessionId/:tempId" element={<StudentNotesViewPage />} />
