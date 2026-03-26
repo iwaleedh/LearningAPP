@@ -210,6 +210,7 @@ export default function TeacherDashboard() {
                         backgroundType: session.backgroundType,
                         status: session.status,
                         hostIdentity: session.hostUserId ?? 'local',
+                        joinCode: session.joinCode,
                     },
                 };
                 navigate(`/live/${session._id}`, { state: navState });

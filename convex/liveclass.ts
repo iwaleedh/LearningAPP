@@ -15,9 +15,10 @@ export const createLiveClass = mutation({
       joinCode = Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
       const existing = await ctx.db
         .query("liveClassSessions")
-        .withIndex("by_joinCode", (q) => q.eq("joinCode", joinCode))
+        .withIndex("by_status", (q) => q.eq("status", "active"))
+        .filter((q) => q.eq(q.field("joinCode"), joinCode))
         .first();
-      if (!existing || existing.status === 'ended') break;
+      if (!existing) break;
     }
 
     const classId = await ctx.db.insert("liveClassSessions", {
