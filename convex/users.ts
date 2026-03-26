@@ -3,8 +3,13 @@ import { v } from "convex/values";
 import { internal } from "./_generated/api";
 
 export const registerUser = mutation({
-  args: { userId: v.string(), username: v.string() },
-  handler: async (ctx, { userId, username }) => {
+  args: {
+    userId: v.string(),
+    username: v.string(),
+    email: v.optional(v.string()),
+    avatarUrl: v.optional(v.string()),
+  },
+  handler: async (ctx, { userId, username, email, avatarUrl }) => {
     const existing = await ctx.db
       .query("users")
       .withIndex("by_userId", (q) => q.eq("userId", userId))
@@ -15,6 +20,8 @@ export const registerUser = mutation({
       userId,
       username,
       role: "student",
+      email,
+      avatarUrl,
       createdAt: Date.now(),
     });
 
@@ -25,6 +32,27 @@ export const registerUser = mutation({
     });
 
     return id;
+  },
+});
+
+export const updateUser = mutation({
+  args: {
+    userId: v.string(),
+    username: v.optional(v.string()),
+    email: v.optional(v.string()),
+    avatarUrl: v.optional(v.string()),
+  },
+  handler: async (ctx, { userId, username, email, avatarUrl }) => {
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_userId", (q) => q.eq("userId", userId))
+      .first();
+    if (!user) return;
+    const patch: Record<string, string> = {};
+    if (username !== undefined) patch.username = username;
+    if (email !== undefined) patch.email = email;
+    if (avatarUrl !== undefined) patch.avatarUrl = avatarUrl;
+    await ctx.db.patch(user._id, patch);
   },
 });
 

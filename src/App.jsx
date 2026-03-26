@@ -1,6 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ThemeProvider from './context/ThemeProvider';
+import AuthProvider from './context/AuthProvider';
 import ErrorBoundary from './components/ErrorBoundary';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
@@ -16,6 +17,7 @@ import TeacherDashboard from './pages/TeacherDashboard';
 import BackendArchitecturesPage from './pages/BackendArchitecturesPage';
 import CommandSearch from './components/student/CommandSearch';
 import './App.css';
+
 
 const AdvancedPage = lazy(() => import('./pages/AdvancedPage'));
 const NotePage = lazy(() => import('./pages/NotePage'));
@@ -92,9 +94,12 @@ export default function App() {
   const basename = import.meta.env.BASE_URL.replace(/\/+$/, '');
   return (
     <ThemeProvider>
-      <BrowserRouter basename={basename}>
-        <AppContent />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter basename={basename}>
+          <AppContent />
+        </BrowserRouter>
+      </AuthProvider>
     </ThemeProvider>
   );
 }
+
