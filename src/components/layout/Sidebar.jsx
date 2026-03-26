@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, X,
-    Brain, Trophy, Search, Zap, Radio, UserPlus, Server
+    Brain, Trophy, Search, Zap, Radio, UserPlus
 } from 'lucide-react';
 import JoinClassModal from '../liveclass/JoinClassModal.jsx';
 import './Layout.css';
@@ -16,7 +16,6 @@ const navItems = [
     { path: '/flashcards', label: 'Flashcards', icon: Brain },
     { path: '/progress', label: 'Progress', icon: Trophy },
     { path: '/mistakes', label: 'Mistake Bank', icon: GraduationCap },
-    { path: '/backend-architectures', label: 'Backend Arch.', icon: Server },
 ];
 
 export default function Sidebar({ isOpen, onToggle }) {
