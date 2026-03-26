@@ -7,6 +7,9 @@
  */
 
 import { getClient, getCurrentUserId, api, callMutation, callQuery, subscribe } from '../../convex-client.js';
+import { logger } from '../logger/logger.js';
+
+const log = logger.child({ component: 'liveClassSync' });
 
 /**
  * Creates a live-class sync controller.
@@ -191,7 +194,7 @@ export function createLiveClassSync({
       const session = await callQuery(api.liveclass.getLiveClassById, { classId });
       return session || { _id: classId, title, backgroundType, status: 'active', hostUserId: userId };
     } catch (err) {
-      console.warn('createClass failed, using local fallback:', err);
+      log.warn('createClass failed, using local fallback', { error: err.message });
       activeClassId = localClassId;
       return {
         _id: localClassId,

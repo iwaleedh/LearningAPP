@@ -189,7 +189,7 @@ export default function LiveClassPage() {
   const [showHandPanel, setShowHandPanel] = useState(false);
   const [showImportDialog, setShowImportDialog] = useState(false);
   const [endedMsg, setEndedMsg] = useState('');
-  const [linkCopied, setLinkCopied] = useState(false);
+  const [_linkCopied, setLinkCopied] = useState(false);  // reserved for share-link UX
   const [codeCopied, setCodeCopied] = useState(false);
 
   // Join-request state (student side)
@@ -378,6 +378,7 @@ export default function LiveClassPage() {
   // Present mode state
   const [presentState, setPresentState] = useState(null); // { presenterIdentity, presenterName, status }
 
+  // eslint-disable-next-line no-unused-vars -- reserved for share-link UX
   const handleCopyLink = useCallback(() => {
     const url = new URL(`live/${sessionId}`, window.location.origin + import.meta.env.BASE_URL).href;
     navigator.clipboard.writeText(url).then(() => {
@@ -1587,7 +1588,8 @@ export default function LiveClassPage() {
   }
 
   // ── Present mode handlers ─────────────────────────────────────────────────
-  function handleInvitePresent(identityHex, name) {
+  // eslint-disable-next-line no-unused-vars -- wired to TeacherStudentGrid (reserved)
+  function _handleInvitePresent(identityHex, name) {
     if (presentState?.status === 'requesting' && presentState.presenterIdentity === identityHex) {
       syncRef.current?.approvePresent(classId);
     } else {

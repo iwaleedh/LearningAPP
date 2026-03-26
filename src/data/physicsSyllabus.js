@@ -213,6 +213,9 @@ export const physicsSyllabus = {
                     id: '3A',
                     title: "Practical Skills I",
                     subtopics: [
+                        'Planning, measuring and recording data',
+                        'Analysing results and evaluating experiments',
+                        'Uncertainty and error analysis',
                     ]
                 },
             ]
@@ -443,6 +446,9 @@ export const physicsSyllabus = {
                     id: '6A',
                     title: "Practical Skills II",
                     subtopics: [
+                        'Advanced measurement and instrumentation techniques',
+                        'Data analysis, graphs and linearisation',
+                        'Complex experimental procedures and evaluation',
                     ]
                 },
             ]

@@ -1,0 +1,144 @@
+/**
+ * eventBus.ts — Pub/Sub Event Bus
+ *
+ * Topic-based event system enabling fan-out: one mutation publishes an event,
+ * and one or more independent handlers pick it up asynchronously.
+ *
+ * Architecture:
+ *   Publishers  →  events table (Message Broker)  →  Subscribers (eventHandlers.ts)
+ *
+ * Topics are plain strings (e.g. "note:updated", "session:ended", "user:registered").
+ * Handlers are dispatched via a scheduled cron (see crons.ts) or can be invoked
+ * directly via processEventQueue.
+ */
+import { mutation, query, internalMutation, internalQuery } from "./_generated/server";
+import { v } from "convex/values";
+
+// ── Public: Publish an event ────────────────────────────────────────
+export const publish = mutation({
+  args: {
+    topic: v.string(),
+    payload: v.string(), // JSON-serialised payload
+  },
+  handler: async (ctx, { topic, payload }) => {
+    return await ctx.db.insert("events", {
+      topic,
+      payload,
+      status: "pending",
+      publishedAt: Date.now(),
+      processedAt: 0,
+    });
+  },
+});
+
+// ── Internal: Publish from other server-side mutations ──────────────
+export const internalPublish = internalMutation({
+  args: {
+    topic: v.string(),
+    payload: v.string(),
+  },
+  handler: async (ctx, { topic, payload }) => {
+    return await ctx.db.insert("events", {
+      topic,
+      payload,
+      status: "pending",
+      publishedAt: Date.now(),
+      processedAt: 0,
+    });
+  },
+});
+
+// ── Query: Get unprocessed events (optionally filtered by topic) ────
+export const getUnprocessedEvents = query({
+  args: { topic: v.optional(v.string()), limit: v.optional(v.number()) },
+  handler: async (ctx, { topic, limit }) => {
+    let q = ctx.db
+      .query("events")
+      .withIndex("by_status", (q) => q.eq("status", "pending"));
+
+    const events = await q.collect();
+
+    let filtered = topic ? events.filter((e) => e.topic === topic) : events;
+    if (limit && limit > 0) filtered = filtered.slice(0, limit);
+    return filtered;
+  },
+});
+
+// ── Internal query variant for cron/action use ──────────────────────
+export const getUnprocessedEventsInternal = internalQuery({
+  args: { limit: v.optional(v.number()) },
+  handler: async (ctx, { limit }) => {
+    const events = await ctx.db
+      .query("events")
+      .withIndex("by_status", (q) => q.eq("status", "pending"))
+      .collect();
+    return limit && limit > 0 ? events.slice(0, limit) : events;
+  },
+});
+
+// ── Mutation: Mark an event as processed ────────────────────────────
+export const markProcessed = mutation({
+  args: { eventId: v.id("events") },
+  handler: async (ctx, { eventId }) => {
+    await ctx.db.patch(eventId, {
+      status: "processed",
+      processedAt: Date.now(),
+    });
+  },
+});
+
+// ── Internal: Mark processed from server-side actions ───────────────
+export const markProcessedInternal = internalMutation({
+  args: { eventId: v.id("events") },
+  handler: async (ctx, { eventId }) => {
+    await ctx.db.patch(eventId, {
+      status: "processed",
+      processedAt: Date.now(),
+    });
+  },
+});
+
+// ── Mutation: Mark an event as failed (dead-letter) ─────────────────
+export const markFailed = internalMutation({
+  args: { eventId: v.id("events"), error: v.string() },
+  handler: async (ctx, { eventId, error }) => {
+    await ctx.db.patch(eventId, {
+      status: "failed",
+      processedAt: Date.now(),
+    });
+  },
+});
+
+// ── Query: List events by topic (for monitoring / debugging) ────────
+export const listByTopic = query({
+  args: { topic: v.string(), limit: v.optional(v.number()) },
+  handler: async (ctx, { topic, limit }) => {
+    const events = await ctx.db
+      .query("events")
+      .withIndex("by_topic", (q) => q.eq("topic", topic))
+      .order("desc")
+      .collect();
+    return limit && limit > 0 ? events.slice(0, limit) : events.slice(0, 50);
+  },
+});
+
+// ── Cleanup: Delete old processed events (called by cron) ───────────
+export const cleanupOldEvents = internalMutation({
+  args: { olderThanMs: v.number() },
+  handler: async (ctx, { olderThanMs }) => {
+    const cutoff = Date.now() - olderThanMs;
+    const old = await ctx.db
+      .query("events")
+      .withIndex("by_status", (q) => q.eq("status", "processed"))
+      .collect();
+
+    let deleted = 0;
+    for (const event of old) {
+      if (event.processedAt > 0 && event.processedAt < cutoff) {
+        await ctx.db.delete(event._id);
+        deleted++;
+      }
+    }
+    return { deleted };
+  },
+});

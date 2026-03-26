@@ -1,6 +1,9 @@
 import { deriveConfidenceBand, estimateReadMinutes } from './noteContext.js';
 import { extractMentionsFromDoc } from './mentionGraph.js';
 import { getClient, getCurrentUserId, api, callMutation, callQuery } from '../../convex-client.js';
+import { logger } from '../logger/logger.js';
+
+const log = logger.child({ component: 'noteStore' });
 
 export function getStorageCapabilities() {
     return {
@@ -110,22 +113,22 @@ function mapConvexNoteRow(row) {
             ownerUserId: row.ownerUserId,
         });
     } catch (e) {
-        console.error('Failed to parse note content', row.noteId, e);
+        log.error('Failed to parse note content', { noteId: row.noteId, error: e.message });
         return null;
     }
 }
 
 export async function getNote(noteId) {
     const client = getClient();
-    if (!client) return null;
+    if (!client) return _memNotes.get(String(noteId)) || null;
 
     try {
         const row = await callQuery(api.notes.getNote, { noteId });
         if (!row) return null;
         return mapConvexNoteRow(row);
     } catch (e) {
-        console.error('getNote failed:', e);
-        return null;
+        log.error('getNote failed', { error: e.message });
+        return _memNotes.get(String(noteId)) || null;
     }
 }
 
@@ -144,7 +147,10 @@ export async function upsertNote(noteDoc) {
 
     const breadcrumbsStr = JSON.stringify(normalized.breadcrumbs || []);
     const userId = getCurrentUserId();
-    if (!userId) return;
+    if (!userId) {
+        _memNotes.set(normalized.noteId, normalized);
+        return;
+    }
 
     await callMutation(api.notes.upsertNote, {
         noteId: normalized.noteId,
@@ -162,7 +168,14 @@ export async function upsertNote(noteDoc) {
 export async function listNotesBySubject(subject) {
     const key = String(subject).toLowerCase();
     const client = getClient();
-    if (!client) return [];
+    if (!client) {
+        const results = [];
+        for (const note of _memNotes.values()) {
+            if (String(note.subject || '').toLowerCase() === key) results.push(toHeader(note));
+        }
+        results.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
+        return results;
+    }
 
     try {
         const rows = await callQuery(api.notes.listNotesBySubject, { subject: key });
@@ -175,7 +188,7 @@ export async function listNotesBySubject(subject) {
         notes.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
         return notes.map((item) => toHeader(item));
     } catch (e) {
-        console.error('listNotesBySubject failed:', e);
+        log.error('listNotesBySubject failed', { error: e.message });
         return [];
     }
 }
@@ -202,7 +215,11 @@ export async function saveFlashcard(card) {
     const sourceNoteId = String(card.sourceNoteId || '');
     const sourceLabel = String(card.sourceLabel || '');
     const userId = getCurrentUserId();
-    if (!userId) return;
+    if (!userId) {
+        _memCards.set(cardId, { cardId, subject, sourceNoteId, sourceLabel, front, back,
+            createdAt: new Date().toISOString(), ownerUserId: 'mem' });
+        return;
+    }
 
     await callMutation(api.flashcards.saveFlashcard, {
         cardId,
@@ -217,7 +234,17 @@ export async function saveFlashcard(card) {
 
 export async function listFlashcards(filters = {}) {
     const client = getClient();
-    if (!client) return [];
+    if (!client) {
+        let cards = Array.from(_memCards.values());
+        if (filters.subject) {
+            const s = String(filters.subject).toLowerCase();
+            cards = cards.filter(c => c.subject === s);
+        }
+        if (filters.sourceNoteId) {
+            cards = cards.filter(c => c.sourceNoteId === String(filters.sourceNoteId));
+        }
+        return cards.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+    }
 
     try {
         const rows = await callQuery(api.flashcards.listFlashcards, {
@@ -234,7 +261,7 @@ export async function listFlashcards(filters = {}) {
 
         return cards.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
     } catch (e) {
-        console.error('listFlashcards failed:', e);
+        log.error('listFlashcards failed', { error: e.message });
         return [];
     }
 }
@@ -266,6 +293,11 @@ export async function deleteFlashcard(cardId) {
     await callMutation(api.flashcards.deleteFlashcard, { cardId: String(cardId) });
 }
 
+// In-memory fallback store (used when Convex client / user is unavailable — e.g. tests)
+let _memNotes = new Map();   // noteId → normalized note doc
+let _memCards = new Map();   // cardId → flashcard object
+
 export function __resetMemoryStoreForTests() {
-    // No-op for Convex tests
+    _memNotes = new Map();
+    _memCards = new Map();
 }

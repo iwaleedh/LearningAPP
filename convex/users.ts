@@ -1,5 +1,6 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
+import { internal } from "./_generated/api";
 
 export const registerUser = mutation({
   args: { userId: v.string(), username: v.string() },
@@ -9,12 +10,21 @@ export const registerUser = mutation({
       .withIndex("by_userId", (q) => q.eq("userId", userId))
       .first();
     if (existing) return existing._id;
-    return await ctx.db.insert("users", {
+
+    const id = await ctx.db.insert("users", {
       userId,
       username,
       role: "student",
       createdAt: Date.now(),
     });
+
+    // Pub/Sub: publish user:registered event for fan-out
+    await ctx.scheduler.runAfter(0, internal.eventBus.internalPublish, {
+      topic: "user:registered",
+      payload: JSON.stringify({ userId, username }),
+    });
+
+    return id;
   },
 });
 

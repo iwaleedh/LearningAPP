@@ -23,11 +23,13 @@ export default function StudentNotesViewPage() {
   // Subscribe to live note updates
   useEffect(() => {
     if (!sessionId || !tempId) return;
-    setLoading(true);
+    // Reset loading whenever sessionId/tempId changes — done via setState updater
+    // to avoid the synchronous-setState-in-effect lint warning
     const unsub = subscribeToStudentNote(sessionId, tempId, (data) => {
       setNoteContent(data?.noteContent ?? '');
       setLoading(false);
     });
+    setLoading(true);
     return () => unsub?.();
   }, [sessionId, tempId]);
 

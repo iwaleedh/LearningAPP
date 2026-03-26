@@ -9,12 +9,18 @@
  */
 
 import type * as assets from "../assets.js";
+import type * as crons from "../crons.js";
 import type * as cursors from "../cursors.js";
+import type * as eventBus from "../eventBus.js";
+import type * as eventHandlers from "../eventHandlers.js";
 import type * as flashcards from "../flashcards.js";
+import type * as gateway from "../gateway.js";
 import type * as handraises from "../handraises.js";
+import type * as http from "../http.js";
 import type * as invites from "../invites.js";
 import type * as joinRequests from "../joinRequests.js";
 import type * as liveclass from "../liveclass.js";
+import type * as logs from "../logs.js";
 import type * as notes from "../notes.js";
 import type * as sessions from "../sessions.js";
 import type * as strokes from "../strokes.js";
@@ -29,12 +35,18 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   assets: typeof assets;
+  crons: typeof crons;
   cursors: typeof cursors;
+  eventBus: typeof eventBus;
+  eventHandlers: typeof eventHandlers;
   flashcards: typeof flashcards;
+  gateway: typeof gateway;
   handraises: typeof handraises;
+  http: typeof http;
   invites: typeof invites;
   joinRequests: typeof joinRequests;
   liveclass: typeof liveclass;
+  logs: typeof logs;
   notes: typeof notes;
   sessions: typeof sessions;
   strokes: typeof strokes;

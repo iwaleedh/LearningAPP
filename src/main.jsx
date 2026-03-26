@@ -13,14 +13,43 @@ if (typeof Map !== 'undefined' && !Map.prototype.getOrInsertComputed) {
 import App from './App.jsx'
 import { registerServiceWorker } from './pwa/registerServiceWorker'
 import { initConvex } from './convex-client.js'
+import { logger, setLogContext } from './services/logger/logger.js'
+import { startBufferFlush, flush as flushLogBuffer } from './services/logger/logBuffer.js'
+
+// ── Logger: start buffer flush + global error handlers ──────────────
+startBufferFlush();
+
+window.addEventListener('error', (event) => {
+  logger.error('Uncaught error', {
+    message: event.message,
+    filename: event.filename,
+    lineno: event.lineno,
+    colno: event.colno,
+  });
+});
+
+window.addEventListener('unhandledrejection', (event) => {
+  logger.error('Unhandled promise rejection', {
+    reason: String(event.reason),
+  });
+});
+
+// Flush logs on page unload
+window.addEventListener('pagehide', () => flushLogBuffer());
 
 // Initialize Convex client before the app renders
 try {
-  initConvex().catch(err => {
-    console.warn('Convex init failed (app will run in offline mode):', err?.message ?? err);
+  initConvex().then(() => {
+    // Enrich logger with user context once Convex is ready
+    try {
+      const userId = localStorage.getItem('lt_user_id');
+      if (userId) setLogContext({ userId });
+    } catch { /* localStorage unavailable */ }
+  }).catch(err => {
+    logger.warn('Convex init failed (app will run in offline mode)', { error: err?.message ?? String(err) });
   });
 } catch (err) {
-  console.warn('Convex init threw (app will run in offline mode):', err?.message ?? err);
+  logger.warn('Convex init threw (app will run in offline mode)', { error: err?.message ?? String(err) });
 }
 
 // In dev mode: if an old service worker is still controlling this page, it will

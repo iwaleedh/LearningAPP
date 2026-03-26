@@ -8,6 +8,9 @@ import { economicsPastPapers } from '../../data/economicsPastPapers';
 import { accountingPastPapers } from '../../data/accountingPastPapers';
 import { caePastPapers } from '../../data/caePastPapers';
 import { cpePastPapers } from '../../data/cpePastPapers';
+import { logger } from '../logger/logger.js';
+
+const log = logger.child({ component: 'pastPaperService' });
 import { oLevelChemistryPastPapers } from '../../data/oLevelChemistryPastPapers';
 import { oLevelPhysicsPastPapers } from '../../data/oLevelPhysicsPastPapers';
 import { oLevelBiologyPastPapers } from '../../data/oLevelBiologyPastPapers';
@@ -60,7 +63,7 @@ export function downloadFile(url, filename) {
         document.body.removeChild(link);
         return { success: true };
     } catch (error) {
-        console.error('Download failed:', error);
+        log.error('Download failed', { error: error.message });
         return { success: false, error: error.message };
     }
 }

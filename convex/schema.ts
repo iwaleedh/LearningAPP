@@ -151,4 +151,29 @@ export default defineSchema({
     targetMs: v.number(),
     startedAt: v.number(),
   }).index("by_class", ["classId"]),
+
+  // ── Pub/Sub Event Bus ───────────────────────────────────────────
+  events: defineTable({
+    topic: v.string(),       // e.g. "note:updated", "session:ended", "user:registered"
+    payload: v.string(),     // JSON-serialised event data
+    status: v.string(),      // "pending" | "processed" | "failed"
+    publishedAt: v.number(),
+    processedAt: v.number(), // 0 until processed
+  })
+    .index("by_topic", ["topic"])
+    .index("by_status", ["status"]),
+
+  // ── Centralized Logging ─────────────────────────────────────────
+  logs: defineTable({
+    level: v.string(),       // "debug" | "info" | "warn" | "error"
+    message: v.string(),
+    component: v.string(),   // e.g. "noteStore", "liveClassSync", "eventHandler:note:updated"
+    userId: v.string(),
+    sessionId: v.string(),
+    metadata: v.string(),    // JSON-serialised extra context
+    timestamp: v.number(),
+  })
+    .index("by_level", ["level"])
+    .index("by_component", ["component"])
+    .index("by_timestamp", ["timestamp"]),
 });

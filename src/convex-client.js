@@ -7,9 +7,9 @@
  * subscriptions use ConvexClient instead.
  */
 import { ConvexClient } from 'convex/browser';
-import { api } from '../convex/_generated/api';
+import { api } from '../convex/_generated/api.js';
 
-const CONVEX_URL = import.meta.env.VITE_CONVEX_URL || '';
+const CONVEX_URL = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_CONVEX_URL) || '';
 
 // ── Anonymous identity (localStorage UUID) ──────────────────────────
 const USER_ID_KEY = 'lt_user_id';
@@ -132,6 +132,19 @@ export function getCurrentUsername() {
 
 export function getClient() {
   return convexClient;
+}
+
+/**
+ * Get high-level connection health info.
+ * Used by healthMonitor.js and UI components to show connection status.
+ */
+export function getConnectionHealth() {
+  return {
+    connected: isReady && !!convexClient,
+    hasErrored,
+    lastError: lastError ? lastError.message : null,
+    url: CONVEX_URL || null,
+  };
 }
 
 // Expose the raw client for service files that need imperative subscriptions

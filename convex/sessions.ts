@@ -1,5 +1,6 @@
-import { mutation, query } from "./_generated/server";
+import { mutation, query, internalMutation } from "./_generated/server";
 import { v } from "convex/values";
+import { internal } from "./_generated/api";
 
 export const createLiveSession = mutation({
   args: {
@@ -51,7 +52,14 @@ export const joinSession = mutation({
 export const endSession = mutation({
   args: { sessionId: v.id("liveSessions") },
   handler: async (ctx, { sessionId }) => {
+    const session = await ctx.db.get(sessionId);
     await ctx.db.patch(sessionId, { status: "ended" });
+
+    // Pub/Sub: publish session:ended event for fan-out
+    await ctx.scheduler.runAfter(0, internal.eventBus.internalPublish, {
+      topic: "session:ended",
+      payload: JSON.stringify({ sessionId: String(sessionId), hostUserId: session?.hostUserId ?? "" }),
+    });
   },
 });
 
@@ -108,5 +116,31 @@ export const getMyParticipantSessions = query({
       .query("sessionParticipants")
       .withIndex("by_user", (q) => q.eq("userId", userId))
       .collect();
+  },
+});
+
+// ── Internal: Cleanup ended sessions older than 2 hours ─────────────
+export const cleanupEndedSessions = internalMutation({
+  args: {},
+  handler: async (ctx) => {
+    const cutoff = Date.now() - 2 * 60 * 60 * 1000; // 2 hours
+    const stale = await ctx.db
+      .query("liveSessions")
+      .withIndex("by_status", (q) => q.eq("status", "ended"))
+      .filter((q) => q.lt(q.field("createdAt"), cutoff))
+      .take(200);
+
+    for (const session of stale) {
+      // Remove participants first
+      const participants = await ctx.db
+        .query("sessionParticipants")
+        .withIndex("by_session", (q) => q.eq("sessionId", String(session._id)))
+        .collect();
+      for (const p of participants) {
+        await ctx.db.delete(p._id);
+      }
+      await ctx.db.delete(session._id);
+    }
+    return { deleted: stale.length };
   },
 });

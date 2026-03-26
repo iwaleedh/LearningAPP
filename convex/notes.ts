@@ -1,5 +1,6 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
+import { internal } from "./_generated/api";
 
 export const upsertNote = mutation({
   args: {
@@ -32,11 +33,19 @@ export const upsertNote = mutation({
       });
       return existing._id;
     }
-    return await ctx.db.insert("notes", {
+    const id = await ctx.db.insert("notes", {
       ...args,
       createdAt: now,
       lastEditedAt: now,
     });
+
+    // Pub/Sub: publish note:updated event for fan-out
+    await ctx.scheduler.runAfter(0, internal.eventBus.internalPublish, {
+      topic: "note:updated",
+      payload: JSON.stringify({ noteId: args.noteId, subject: args.subject, userId: args.ownerUserId }),
+    });
+
+    return id;
   },
 });
 
@@ -47,7 +56,15 @@ export const deleteNote = mutation({
       .query("notes")
       .withIndex("by_noteId", (q) => q.eq("noteId", noteId))
       .first();
-    if (note) await ctx.db.delete(note._id);
+    if (note) {
+      await ctx.db.delete(note._id);
+
+      // Pub/Sub: publish note:deleted event
+      await ctx.scheduler.runAfter(0, internal.eventBus.internalPublish, {
+        topic: "note:deleted",
+        payload: JSON.stringify({ noteId, userId: note.ownerUserId }),
+      });
+    }
   },
 });
 

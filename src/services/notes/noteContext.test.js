@@ -24,7 +24,7 @@ test('buildBreadcrumbs returns expected hierarchy', () => {
 
     assert.equal(
         breadcrumbs,
-        'A-Level > Economics > Markets in action > Topic 5 > Market failure'
+        'A-Level > AL Economics > Markets in action > Topic 5 > Market failure'
     );
 });
 
