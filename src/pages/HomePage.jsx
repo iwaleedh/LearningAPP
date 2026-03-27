@@ -1,11 +1,17 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
-    BookOpen, FlaskConical, FileQuestion, Brain, Trophy,
-    ArrowRight, Flame, Target, Clock, TrendingUp, Sparkles, Radio
+    BookOpen, FlaskConical, FileQuestion, Brain,
+    ArrowRight, Flame, Target, TrendingUp, Sparkles, Radio
 } from 'lucide-react';
-import { getMyPendingLiveClassInvites, onConvexReady } from '../convex-client.js';
-import './Pages.css';
+import {
+    getMyPendingLiveClassInvites,
+    onConvexReady,
+    subscribe,
+    api,
+} from '../convex-client.js';
+import { useAuth } from '../hooks/useAuth.js';
+import './HomePage.css';
 
 // Sample data (TODO: wire to Convex progress tracking)
 const quickStats = [
@@ -38,14 +44,36 @@ const oLevelSubjects = [
 
 export default function HomePage() {
     const navigate = useNavigate();
+    const { username } = useAuth();
     const [liveInvites, setLiveInvites] = useState([]);
 
     useEffect(() => {
+        let cancelled = false;
+        let unsubInvites = null;
+
+        async function refreshLiveInvites() {
+            const invites = await getMyPendingLiveClassInvites(username);
+            if (!cancelled) {
+                setLiveInvites(invites);
+            }
+        }
+
         onConvexReady(() => {
-            const invites = getMyPendingLiveClassInvites?.() ?? [];
-            setLiveInvites(invites);
+            void refreshLiveInvites();
+
+            if (!username) return;
+
+            unsubInvites?.();
+            unsubInvites = subscribe(api.invites.getMyPendingInvites, { toUsername: username }, () => {
+                void refreshLiveInvites();
+            });
         });
-    }, []);
+
+        return () => {
+            cancelled = true;
+            unsubInvites?.();
+        };
+    }, [username]);
 
     return (
         <div className="home-page animate-fade-in">
@@ -55,12 +83,13 @@ export default function HomePage() {
                     <Radio size={18} />
                     <span>Your teacher has started a live class!</span>
                     <button
+                        type="button"
                         className="btn btn-primary btn-sm"
                         onClick={() => navigate(`/live/${liveInvites[0].sessionId}`)}
                     >
                         Join Now
                     </button>
-                    <button className="btn btn-ghost btn-sm" onClick={() => setLiveInvites([])}>Dismiss</button>
+                    <button type="button" className="btn btn-ghost btn-sm" onClick={() => setLiveInvites([])}>Dismiss</button>
                 </div>
             )}
             {/* Welcome Banner */}

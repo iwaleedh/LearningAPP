@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { syllabusesBySubject, getSyllabusBySubject } from './syllabusIndex.js';
+import { syllabusesBySubject } from './syllabusCatalog.js';
+import { getSyllabusBySubject } from './syllabusIndex.js';
 
 const expectedSubjects = [
     'chemistry',
@@ -49,12 +50,12 @@ test('syllabus map includes expected subjects', () => {
     }
 });
 
-test('all subject syllabuses have valid concise structure', () => {
+test('all subject syllabuses have valid concise structure', async () => {
     const seen = new Set();
 
     for (const key of expectedSubjects) {
         if (seen.has(key)) continue;
-        const syllabus = getSyllabusBySubject(key);
+        const syllabus = await getSyllabusBySubject(key);
         validateSyllabusShape(key, syllabus);
 
         if (key === 'math') seen.add('mathematics');
@@ -63,8 +64,8 @@ test('all subject syllabuses have valid concise structure', () => {
     }
 });
 
-test('unknown subject falls back to chemistry', () => {
-    const fallback = getSyllabusBySubject('unknown-subject');
-    const chemistry = getSyllabusBySubject('chemistry');
+test('unknown subject falls back to chemistry', async () => {
+    const fallback = await getSyllabusBySubject('unknown-subject');
+    const chemistry = await getSyllabusBySubject('chemistry');
     assert.equal(fallback, chemistry);
 });

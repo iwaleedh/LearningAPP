@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { GripVertical, PenLine, ArrowUpDown, Brain, CheckCircle, Search } from "lucide-react";
 import MCQExercise from "../components/exercises/MCQExercise";
 import DragDropExercise from "../components/exercises/DragDropExercise";
@@ -6,8 +6,8 @@ import FillBlankExercise from "../components/exercises/FillBlankExercise";
 import SequenceExercise from "../components/exercises/SequenceExercise";
 import KeywordCheck from "../components/exercises/KeywordCheck";
 import FlashcardExercise from "../components/exercises/FlashcardExercise";
-import { getSyllabusBySubject } from "../data/syllabusIndex";
 import { getExerciseSet } from "../data/exercises/index";
+import { useSyllabus } from "../hooks/useSyllabus.js";
 import "./Pages.css";
 
 const SUBJECTS = [
@@ -47,16 +47,47 @@ export default function ExercisePage() {
   const [selectedTopicId, setSelectedTopicId] = useState(null);
   const [activeType, setActiveType] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [exerciseSet, setExerciseSet] = useState(null);
+  const [exerciseSetStatus, setExerciseSetStatus] = useState("idle");
+  const { syllabus, isLoading: isLoadingSyllabus } = useSyllabus(activeSubject);
 
-  const syllabus = useMemo(() => getSyllabusBySubject(activeSubject), [activeSubject]);
-  const exerciseSet = useMemo(
-    () => selectedUnitId && selectedTopicId ? getExerciseSet(activeSubject, selectedUnitId, selectedTopicId) : null,
-    [activeSubject, selectedUnitId, selectedTopicId]
-  );
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadExerciseSet() {
+      if (!selectedUnitId || !selectedTopicId) {
+        setExerciseSet(null);
+        setExerciseSetStatus("idle");
+        return;
+      }
+
+      setExerciseSetStatus("loading");
+      const nextExerciseSet = await getExerciseSet(activeSubject, selectedUnitId, selectedTopicId);
+      if (cancelled) return;
+
+      setExerciseSet(nextExerciseSet);
+      setExerciseSetStatus("ready");
+    }
+
+    void loadExerciseSet();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeSubject, selectedUnitId, selectedTopicId]);
 
   function resetToHub() { setActiveType(null); setCurrentQuestion(0); }
 
   if (activeType) {
+    if (exerciseSetStatus === "loading") {
+      return (
+        <div className="exercise-hub animate-fade-in">
+          <button className="btn btn-ghost" onClick={resetToHub} style={{ marginBottom: "var(--space-4)" }}>Back to Exercises</button>
+          <p>Loading exercises...</p>
+        </div>
+      );
+    }
+
     const questions = exerciseSet ? (exerciseSet[KEY_MAP[activeType]] || []) : [];
     if (!questions.length) return (
       <div className="exercise-hub animate-fade-in">
@@ -95,6 +126,7 @@ export default function ExercisePage() {
       </div>
       <div className="exercise-topic-select-wrapper">
         <select className="exercise-topic-select"
+          disabled={isLoadingSyllabus}
           value={selectedUnitId && selectedTopicId ? selectedUnitId + ":" + selectedTopicId : ""}
           onChange={e => {
             const v = e.target.value;
@@ -103,7 +135,7 @@ export default function ExercisePage() {
             setSelectedUnitId(Number(u)); setSelectedTopicId(Number(t)); setActiveType(null); setCurrentQuestion(0);
           }}
         >
-          <option value="">Select a topic to practise</option>
+          <option value="">{isLoadingSyllabus ? "Loading topics..." : "Select a topic to practise"}</option>
           {syllabus && syllabus.units && syllabus.units.map(unit => (
             <optgroup key={unit.id} label={unit.code + ": " + unit.title}>
               {unit.topics && unit.topics.map(topic => (
@@ -119,17 +151,20 @@ export default function ExercisePage() {
         {ET.map((type, i) => {
           const Icon = type.icon;
           const count = exerciseSet ? (exerciseSet[type.key] ? exerciseSet[type.key].length : 0) : null;
+          const isLoadingTopic = exerciseSetStatus === "loading";
           const hasContent = count !== null && count > 0;
           return (
             <div key={type.id} className="exercise-type-card card card-hover animate-fade-in"
               style={{ animationDelay: i * 0.08 + "s", cursor: hasContent ? "pointer" : "default", opacity: exerciseSet && !hasContent ? 0.5 : 1 }}
-              onClick={() => hasContent && setActiveType(type.id)}
+              onClick={() => hasContent && !isLoadingTopic && setActiveType(type.id)}
             >
               <div className="exercise-type-header">
                 <div className="exercise-type-icon" style={{ background: type.color }}><Icon size={22} /></div>
                 <div>
                   <h3>{type.title}</h3>
-                  <span className="badge badge-primary">{count !== null ? count + " questions" : "Select a topic"}</span>
+                  <span className="badge badge-primary">
+                    {isLoadingTopic ? "Loading..." : count !== null ? count + " questions" : "Select a topic"}
+                  </span>
                 </div>
               </div>
               <p>{type.desc}</p>

@@ -1,4 +1,4 @@
-import { syllabusesBySubject } from '../syllabusIndex.js';
+import { syllabusesBySubject } from '../syllabusCatalog.js';
 import { accountingObjectives } from './accountingObjectives.js';
 import { biologyObjectives } from './biologyObjectives.js';
 import { businessObjectives } from './businessObjectives.js';

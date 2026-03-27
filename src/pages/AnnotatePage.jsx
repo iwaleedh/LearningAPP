@@ -1,29 +1,24 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import * as pdfjsLib from 'pdfjs-dist';
 import { initConvex, getCurrentUserId, getMyPendingInvites, callQuery, api } from '../convex-client.js';
+import { useAuth } from '../hooks/useAuth.js';
 import { createSessionSync } from '../services/annotation/sessionSync.js';
 import ShareDialog from '../components/annotation/ShareDialog.jsx';
-import { getPaperById } from '../services/pastPapers/pastPaperService';
+import { getPaperById } from '../data/pastPapers/index.js';
 import { savePageAnnotation, getPageAnnotations } from '../services/annotation/annotationStore';
 import { createUndoManager } from '../services/annotation/undoManager';
-import { exportAnnotatedPDF } from '../services/annotation/pdfExport';
+import { loadPdfJs } from '../services/pdf/loadPdfJs.js';
 import AnnotationToolbar from '../components/annotation/AnnotationToolbar';
 import ThumbnailSidebar from '../components/annotation/ThumbnailSidebar';
 import AnnotationCanvas from '../components/annotation/AnnotationCanvas';
 import './Pages.css';
-
-// Configure pdf.js worker once at module level
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url
-).toString();
 
 const PDF_SCALE = 1.5;
 
 export default function AnnotatePage() {
     const { paperId } = useParams();
     const navigate = useNavigate();
+    const { username } = useAuth();
 
     // Paper + PDF
     const [paper, setPaper] = useState(null);
@@ -62,36 +57,59 @@ export default function AnnotatePage() {
     const sessionSyncRef = useRef(null);
     const location = useLocation();
 
-    // ── Paper resolution (synchronous — avoids cascading setState in effect) ─
-    const resolvedPaper = getPaperById(paperId);
     useEffect(() => {
-        if (!resolvedPaper) {
-            navigate('/past-papers', { replace: true });
-        } else if (resolvedPaper !== paper) {
-            setPaper(resolvedPaper); // eslint-disable-line react-hooks/set-state-in-effect -- sync derived value to state
-        }
-    }, [resolvedPaper, navigate, paper]);
+        let cancelled = false;
+
+        setPaper(null);
+
+        void getPaperById(paperId).then((resolvedPaper) => {
+            if (cancelled) return;
+
+            if (!resolvedPaper) {
+                navigate('/past-papers', { replace: true });
+                return;
+            }
+
+            setPaper(resolvedPaper);
+        });
+
+        return () => {
+            cancelled = true;
+        };
+    }, [paperId, navigate]);
 
     // ── PDF document loading ──────────────────────────────────────────────
     useEffect(() => {
         if (!paper?.questionPaperUrl) return;
-        setPdfStatus('loading'); // eslint-disable-line react-hooks/set-state-in-effect -- initialise loading state for async fetch
+        setPdfStatus('loading');
         setPdfDoc(null);
         setPageCount(0);
         setCurrentPage(1);
 
-        const task = pdfjsLib.getDocument(paper.questionPaperUrl);
-        loadingTaskRef.current = task;
-        task.promise.then((pdf) => {
-            setPdfDoc(pdf);
-            setPageCount(pdf.numPages);
-            setPdfStatus('ready');
-        }).catch(() => {
-            setPdfStatus('error');
-        });
+        let cancelled = false;
+
+        void loadPdfJs()
+            .then((pdfjsLib) => {
+                if (cancelled) return;
+
+                const task = pdfjsLib.getDocument(paper.questionPaperUrl);
+                loadingTaskRef.current = task;
+                return task.promise.then((pdf) => {
+                    if (cancelled) return;
+                    setPdfDoc(pdf);
+                    setPageCount(pdf.numPages);
+                    setPdfStatus('ready');
+                });
+            })
+            .catch(() => {
+                if (!cancelled) {
+                    setPdfStatus('error');
+                }
+            });
 
         return () => {
-            task.destroy?.();
+            cancelled = true;
+            loadingTaskRef.current?.destroy?.();
         };
     }, [paper]);
 
@@ -215,6 +233,7 @@ export default function AnnotatePage() {
     const handleExport = useCallback(async () => {
         if (!paper || !pdfDimensions) return;
         await savePage(currentPage);
+        const { exportAnnotatedPDF } = await import('../services/annotation/pdfExport.js');
         await exportAnnotatedPDF(paper, annotationsCache.current, pdfDimensions);
     }, [paper, currentPage, savePage, pdfDimensions]);
 
@@ -344,11 +363,25 @@ export default function AnnotatePage() {
     // ── Poll pending invites (Phase 2) ───────────────────────────────────
     useEffect(() => {
         if (!spaceReady) return;
-        const poll = () => setPendingInvites(getMyPendingInvites());
-        poll();
-        const interval = setInterval(poll, 15000);
-        return () => clearInterval(interval);
-    }, [spaceReady]);
+        let cancelled = false;
+
+        const poll = async () => {
+            const invites = await getMyPendingInvites(username);
+            if (!cancelled) {
+                setPendingInvites(invites);
+            }
+        };
+
+        void poll();
+        const interval = setInterval(() => {
+            void poll();
+        }, 15000);
+
+        return () => {
+            cancelled = true;
+            clearInterval(interval);
+        };
+    }, [spaceReady, username]);
 
     if (!paper) {
         return (

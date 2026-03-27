@@ -13,14 +13,8 @@
  */
 
 import { useState, useRef, useCallback } from 'react';
-import * as pdfjsLib from 'pdfjs-dist';
 import { X, Image as ImageIcon, FileText, Upload, Check } from 'lucide-react';
-
-// Set worker source — Vite resolves the asset URL at build time
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.mjs',
-  import.meta.url
-).href;
+import { loadPdfJs } from '../../services/pdf/loadPdfJs.js';
 
 const RENDER_SCALE = 1.5; // resolution multiplier for PDF pages
 
@@ -65,6 +59,7 @@ export default function ImportMediaDialog({ onClose, onPlaceImage, onPlaceImages
 
     try {
       const arrayBuffer = await file.arrayBuffer();
+      const pdfjsLib = await loadPdfJs();
       const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
       const pages = [];
 

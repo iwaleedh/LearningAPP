@@ -1,81 +1,77 @@
-import { useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool } from 'lucide-react';
-import PerformanceChart from '../components/pastpapers/PerformanceChart';
-import { chemistryPastPapers, availableYears, availableUnits } from '../data/chemistryPastPapers';
-import { physicsPastPapers, physicsAvailableYears, physicsAvailableUnits } from '../data/physicsPastPapers';
-import { biologyPastPapers, biologyAvailableYears, biologyAvailableUnits } from '../data/biologyPastPapers';
-import { mathematicsPastPapers, mathsAvailableYears, mathsAvailableUnits } from '../data/mathematicsPastPapers';
-import { businessPastPapers, businessAvailableYears, businessAvailableUnits } from '../data/businessPastPapers';
-import { economicsPastPapers, economicsAvailableYears, economicsAvailableUnits } from '../data/economicsPastPapers';
-import { accountingPastPapers, accountingAvailableYears, accountingAvailableUnits } from '../data/accountingPastPapers';
-import { caePastPapers, caeComponents } from '../data/caePastPapers';
-import { cpePastPapers, cpeComponents } from '../data/cpePastPapers';
-import { oLevelChemistryPastPapers, oLevelChemistryAvailableYears, oLevelChemistryAvailableUnits } from '../data/oLevelChemistryPastPapers';
-import { oLevelPhysicsPastPapers, oLevelPhysicsAvailableYears, oLevelPhysicsAvailableUnits } from '../data/oLevelPhysicsPastPapers';
-import { oLevelBiologyPastPapers, oLevelBiologyAvailableYears, oLevelBiologyAvailableUnits } from '../data/oLevelBiologyPastPapers';
-import { oLevelMathematicsPastPapers, oLevelMathematicsAvailableYears, oLevelMathematicsAvailableUnits } from '../data/oLevelMathematicsPastPapers';
-import { oLevelBusinessPastPapers, oLevelBusinessAvailableYears, oLevelBusinessAvailableUnits } from '../data/oLevelBusinessPastPapers';
+import { FileQuestion, Clock, Download, ChevronDown, ChevronUp, FileText, Beaker, Atom, Dna, Calculator, X, Eye, PenTool, TrendingUp, BookOpen } from 'lucide-react';
+import { loadPastPaperSubject, subjectPaperCounts } from '../data/pastPapers/index.js';
 import { downloadFile, generateFileName, generateOLevelFileName, filterPapers, sortPapersByDate, getPaperTypeBadge } from '../services/pastPapers/pastPaperService';
 import './Pages.css';
+
+const PerformanceChart = lazy(() => import('../components/pastpapers/PerformanceChart'));
 
 // Subject configuration
 const subjects = [
     {
         id: 'chemistry', name: 'AL Chemistry', icon: Beaker, color: '#10b981',
-        papers: chemistryPastPapers, years: availableYears, units: availableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'physics', name: 'AL Physics', icon: Atom, color: '#8b5cf6',
-        papers: physicsPastPapers, years: physicsAvailableYears, units: physicsAvailableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'biology', name: 'AL Biology', icon: Dna, color: '#3b82f6',
-        papers: biologyPastPapers, years: biologyAvailableYears, units: biologyAvailableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'mathematics', name: 'AL Mathematics', icon: Calculator, color: '#f59e0b',
-        papers: mathematicsPastPapers, years: mathsAvailableYears, units: mathsAvailableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'business', name: 'AL Business', icon: FileText, color: '#ec4899',
-        papers: businessPastPapers, years: businessAvailableYears, units: businessAvailableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'economics', name: 'AL Economics', icon: FileText, color: '#14b8a6',
-        papers: economicsPastPapers, years: economicsAvailableYears, units: economicsAvailableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'accounting', name: 'AL Accounting', icon: FileQuestion, color: '#f97316',
-        papers: accountingPastPapers, years: accountingAvailableYears, units: accountingAvailableUnits, isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'cae', name: 'CAE (C1)', icon: FileText, color: '#6366f1',
-        papers: caePastPapers, years: [2022], units: caeComponents.map(c => ({ code: c.id, name: c.name, type: 'C1 Advanced' })), isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'cpe', name: 'CPE (C2)', icon: FileText, color: '#0ea5e9',
-        papers: cpePastPapers, years: [2022], units: cpeComponents.map(c => ({ code: c.id, name: c.name, type: 'C2 Proficiency' })), isOLevel: false
+        isOLevel: false,
     },
     {
         id: 'olevel-chemistry', name: 'O Level Chemistry', icon: Beaker, color: '#059669',
-        papers: oLevelChemistryPastPapers, years: oLevelChemistryAvailableYears, units: oLevelChemistryAvailableUnits, isOLevel: true
+        isOLevel: true,
     },
     {
         id: 'olevel-physics', name: 'O Level Physics', icon: Atom, color: '#7c3aed',
-        papers: oLevelPhysicsPastPapers, years: oLevelPhysicsAvailableYears, units: oLevelPhysicsAvailableUnits, isOLevel: true
+        isOLevel: true,
     },
     {
         id: 'olevel-biology', name: 'O Level Biology', icon: Dna, color: '#2563eb',
-        papers: oLevelBiologyPastPapers, years: oLevelBiologyAvailableYears, units: oLevelBiologyAvailableUnits, isOLevel: true
+        isOLevel: true,
     },
     {
         id: 'olevel-mathematics', name: 'O Level Mathematics', icon: Calculator, color: '#d97706',
-        papers: oLevelMathematicsPastPapers, years: oLevelMathematicsAvailableYears, units: oLevelMathematicsAvailableUnits, isOLevel: true
+        isOLevel: true,
     },
     {
         id: 'olevel-business', name: 'O Level Business', icon: FileText, color: '#be185d',
-        papers: oLevelBusinessPastPapers, years: oLevelBusinessAvailableYears, units: oLevelBusinessAvailableUnits, isOLevel: true
+        isOLevel: true,
+    },
+    {
+        id: 'olevel-accounting', name: 'O Level Accounting', icon: BookOpen, color: '#65a30d',
+        isOLevel: true,
+    },
+    {
+        id: 'olevel-economics', name: 'O Level Economics', icon: TrendingUp, color: '#0891b2',
+        isOLevel: true,
     },
 ];
 
@@ -247,12 +243,41 @@ export default function PastPapersPage() {
     const [filterUnit, setFilterUnit] = useState('all');
     const [attempts] = useState([]);
     const [showPerformance, setShowPerformance] = useState(false);
+    const [subjectDataById, setSubjectDataById] = useState({});
+    const [subjectLoadError, setSubjectLoadError] = useState(null);
 
     // Get active subject config
     const subjectConfig = subjects.find(s => s.id === activeSubject);
-    const subjectPapers = subjectConfig?.papers || [];
-    const subjectYears = subjectConfig?.years || [];
-    const subjectUnits = subjectConfig?.units || [];
+    const activeSubjectData = subjectDataById[activeSubject];
+    const subjectPapers = activeSubjectData?.papers || [];
+    const subjectYears = activeSubjectData?.years || [];
+    const subjectUnits = activeSubjectData?.units || [];
+    const isLoadingSubject = !activeSubjectData && !subjectLoadError;
+
+    useEffect(() => {
+        let cancelled = false;
+
+        if (subjectDataById[activeSubject]) {
+            return;
+        }
+
+        void loadPastPaperSubject(activeSubject)
+            .then((subjectData) => {
+                if (cancelled) return;
+                setSubjectLoadError(null);
+                setSubjectDataById((prev) => prev[activeSubject]
+                    ? prev
+                    : { ...prev, [activeSubject]: subjectData });
+            })
+            .catch((error) => {
+                if (cancelled) return;
+                setSubjectLoadError(error);
+            });
+
+        return () => {
+            cancelled = true;
+        };
+    }, [activeSubject, subjectDataById]);
 
     // Get available months based on selected year
     const getAvailableMonths = () => {
@@ -270,10 +295,27 @@ export default function PastPapersPage() {
 
     // Reset filters when switching subjects
     const handleSubjectChange = (id) => {
+        setSubjectLoadError(null);
         setActiveSubject(id);
         setFilterYear('all');
         setFilterMonth('all');
         setFilterUnit('all');
+    };
+
+    const handleSubjectPrefetch = (id) => {
+        if (id === activeSubject || subjectDataById[id]) {
+            return;
+        }
+
+        void loadPastPaperSubject(id)
+            .then((subjectData) => {
+                setSubjectDataById((prev) => prev[id]
+                    ? prev
+                    : { ...prev, [id]: subjectData });
+            })
+            .catch(() => {
+                // Ignore prefetch failures and let the active load path handle UI errors.
+            });
     };
 
     // Reset month when year changes
@@ -312,7 +354,9 @@ export default function PastPapersPage() {
         <div className="animate-fade-in" style={{ maxWidth: '1100px' }}>
             <h1 style={{ marginBottom: 'var(--space-2)' }}>Past Papers</h1>
             <p style={{ marginBottom: 'var(--space-6)' }}>
-                View and download real exam papers with marking schemes — {subjectPapers.length} papers available
+                View and download real exam papers with marking schemes — {isLoadingSubject
+                    ? `Loading papers… (${subjectPaperCounts[activeSubject] ?? 0} available)`
+                    : `${subjectPapers.length} papers available`}
             </p>
 
             {/* Subject Tabs */}
@@ -325,6 +369,8 @@ export default function PastPapersPage() {
                             key={subject.id}
                             className={`subject-btn ${isActive ? 'active' : ''}`}
                             onClick={() => handleSubjectChange(subject.id)}
+                            onMouseEnter={() => handleSubjectPrefetch(subject.id)}
+                            onFocus={() => handleSubjectPrefetch(subject.id)}
                             style={{
                                 display: 'flex',
                                 alignItems: 'center',
@@ -349,7 +395,7 @@ export default function PastPapersPage() {
                                 padding: '1px 7px',
                                 fontWeight: 600,
                             }}>
-                                {subject.papers.length}
+                                {subjectDataById[subject.id]?.papers.length ?? subjectPaperCounts[subject.id] ?? '…'}
                             </span>
                         </button>
                     );
@@ -363,6 +409,7 @@ export default function PastPapersPage() {
                     value={filterYear}
                     onChange={e => handleYearChange(e.target.value)}
                     style={{ minWidth: '120px' }}
+                    disabled={isLoadingSubject}
                 >
                     <option value="all">All Years</option>
                     {subjectYears.map(year => (
@@ -375,7 +422,7 @@ export default function PastPapersPage() {
                     value={filterMonth}
                     onChange={e => setFilterMonth(e.target.value)}
                     style={{ minWidth: '140px' }}
-                    disabled={filterYear === 'all'}
+                    disabled={filterYear === 'all' || isLoadingSubject}
                 >
                     <option value="all">All Months</option>
                     {availableMonths.map(month => (
@@ -388,6 +435,7 @@ export default function PastPapersPage() {
                     value={filterUnit}
                     onChange={e => setFilterUnit(e.target.value)}
                     style={{ minWidth: '200px' }}
+                    disabled={isLoadingSubject}
                 >
                     <option value="all">All Units</option>
                     {subjectUnits.map(unit => (
@@ -406,18 +454,38 @@ export default function PastPapersPage() {
             </div>
 
             {/* Performance Chart */}
-            {showPerformance && <PerformanceChart attempts={attempts} />}
+            {showPerformance && (
+                <Suspense fallback={<div className="card animate-fade-in">Loading analytics...</div>}>
+                    <PerformanceChart attempts={attempts} />
+                </Suspense>
+            )}
 
             {/* Past Papers List */}
             <div className="past-papers-list">
-                {groupedPapersArray.length > 0 ? (
+                {isLoadingSubject ? (
+                    <div className="empty-state">
+                        <div className="empty-state-icon">
+                            <Clock size={36} />
+                        </div>
+                        <h3>Loading papers</h3>
+                        <p>Fetching {subjectConfig?.name} papers now</p>
+                    </div>
+                ) : subjectLoadError ? (
+                    <div className="empty-state">
+                        <div className="empty-state-icon">
+                            <X size={36} />
+                        </div>
+                        <h3>Could not load papers</h3>
+                        <p>Try switching subjects or refreshing the page.</p>
+                    </div>
+                ) : groupedPapersArray.length > 0 ? (
                     groupedPapersArray.map((session) => (
                         <ExamSessionCard
                             key={`${session.year}-${session.month}`}
                             year={session.year}
                             month={session.month}
                             papers={session.papers}
-                            isOLevel={subjectConfig?.isOLevel || false}
+                            isOLevel={activeSubjectData?.isOLevel || subjectConfig?.isOLevel || false}
                         />
                     ))
                 ) : (

@@ -1,6 +1,6 @@
 /**
  * useAuth — convenience hook for AuthContext.
- * Usage: const { isSignedIn, userId, username, role, avatarUrl } = useAuth();
+ * Usage: const { canSignIn, isSignedIn, userId, username, role, avatarUrl } = useAuth();
  */
 import { useContext } from 'react';
 import AuthContext from '../context/AuthContext';

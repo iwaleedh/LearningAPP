@@ -1,8 +1,8 @@
-import { Flame, FlaskConical, Target, BookOpen } from 'lucide-react';
+import { Target, BookOpen } from 'lucide-react';
 import BadgeSystem from '../components/gamification/BadgeSystem';
 import StreakTracker from '../components/gamification/StreakTracker';
 import Leaderboard from '../components/gamification/Leaderboard';
-import { syllabusesBySubject } from '../data/syllabusIndex';
+import { subjectNoteCounts } from '../data/syllabusIndex.js';
 import { getReadNoteIds, getTotalReadCount } from '../hooks/useNoteReadStatus';
 import './Pages.css';
 
@@ -16,17 +16,9 @@ const SUBJECTS = [
     { key: 'accounting', label: 'Accounting' },
 ];
 
-function countSyllabusNotes(syllabus) {
-    return (syllabus?.units || []).reduce(
-        (sum, unit) => sum + (unit.topics || []).reduce((t, topic) => t + (topic.subtopics || []).length, 0),
-        0
-    );
-}
-
 function buildChapterProgress(readIds) {
     return SUBJECTS.map(({ key, label }) => {
-        const syllabus = syllabusesBySubject[key];
-        const total = countSyllabusNotes(syllabus);
+        const total = subjectNoteCounts[key] || 0;
         const read = [...readIds].filter(id => id.startsWith(`note:${key}:`)).length;
         return { name: label, progress: total > 0 ? Math.round((read / total) * 100) : 0 };
     });

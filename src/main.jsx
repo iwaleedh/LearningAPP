@@ -1,15 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-
-// Polyfill for Map.prototype.getOrInsertComputed (used by pdfjs-dist v5,
-// not yet available in all browsers as of mid-2026)
-if (typeof Map !== 'undefined' && !Map.prototype.getOrInsertComputed) {
-  Map.prototype.getOrInsertComputed = function (key, callbackfn) {
-    if (!this.has(key)) this.set(key, callbackfn(key));
-    return this.get(key);
-  };
-}
 import App from './App.jsx'
 import { registerServiceWorker } from './pwa/registerServiceWorker'
 import { initConvex } from './convex-client.js'

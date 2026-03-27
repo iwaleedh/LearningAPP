@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
 import { createPortal } from 'react-dom';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Link2, Check, Hand, Users, Copy, BookOpen as NoteIcon } from 'lucide-react';
@@ -7,7 +7,7 @@ import {
   onConvexReady, onConvexError, onConvexDisconnect,
   getCurrentUserId, getAllUsers,
   getLiveClassById,
-  isTeacher as convexIsTeacher, setTeacherRole as convexSetTeacherRole,
+  isTeacher as convexIsTeacher,
   subscribe, api,
   subscribeToJoinStatus, subscribeToJoinRequests,
 } from '../convex-client.js';
@@ -23,7 +23,6 @@ import HandRaisePanel from '../components/liveclass/HandRaisePanel.jsx';
 import StudentAdmissionPanel from '../components/liveclass/StudentAdmissionPanel.jsx';
 import StudentNotePanel from '../components/liveclass/StudentNotePanel.jsx';
 import ClassTimer from '../components/liveclass/ClassTimer.jsx';
-import ImportMediaDialog from '../components/liveclass/ImportMediaDialog.jsx';
 import LivePollPanel from '../components/liveclass/LivePollPanel.jsx';
 import StudentPollOverlay from '../components/liveclass/StudentPollOverlay.jsx';
 import StencilPalette from '../components/liveclass/StencilPalette.jsx';
@@ -34,6 +33,8 @@ import {
   createEdge, updateEdgesForNode, isFlowchartNode, snapNodeToGrid,
 } from '../components/liveclass/FlowchartTool.js';
 import './Pages.css';
+
+const ImportMediaDialog = lazy(() => import('../components/liveclass/ImportMediaDialog.jsx'));
 
 // ── Canvas background CSS patterns ───────────────────────────────────────────
 const BG_STYLE = {
@@ -469,41 +470,59 @@ export default function LiveClassPage() {
       setStdbStatus('offline');
     });
 
-    onConvexReady(async () => {
-      setStdbStatus('connected');
-      const userId = getCurrentUserId();
-      if (!userId) return;
+    let cancelled = false;
+    let unsubUsers = null;
 
-      const session = await getLiveClassById(classId);
-      if (!session) {
-        // Don't override if student already joined via dialog or we have an offline session
-        setRole(prev => {
-          if (prev) return prev; // already set — keep it
-          if (!location.state?.session) {
-            setEndedMsg('Class not found or already ended.');
-          }
-          return prev;
-        });
-        return;
-      }
-      setSessionData(session);
-      setBackgroundType(session.backgroundType ?? 'white');
+    onConvexReady(() => {
+      void (async () => {
+        setStdbStatus('connected');
+        const userId = getCurrentUserId();
+        if (!userId || cancelled) return;
 
-      // Only set role if not already set (e.g. by join dialog)
-      setRole(prev => {
-        if (prev) return prev;
+        const session = await getLiveClassById(classId);
+        if (cancelled) return;
+
+        if (!session) {
+          // Don't override if student already joined via dialog or we have an offline session
+          setRole(prev => {
+            if (prev) return prev; // already set — keep it
+            if (!location.state?.session) {
+              setEndedMsg('Class not found or already ended.');
+            }
+            return prev;
+          });
+          return;
+        }
+
+        setSessionData(session);
+        setBackgroundType(session.backgroundType ?? 'white');
+
         const isHost = session.hostUserId === userId;
-        const hasTeacherRole = convexIsTeacher();
-        return (isHost || hasTeacherRole) ? 'teacher' : 'student';
-      });
-      setUsers(getAllUsers());
-      // Keep users list live — subscribe to user changes
-      const unsubUsers = subscribe(api.users.getAllUsers, {}, () => {
-        setUsers(getAllUsers());
-      });
-      // Cleanup on unmount handled by effect return
-      return () => unsubUsers?.();
+        const hasTeacherRole = await convexIsTeacher();
+        if (cancelled) return;
+
+        // Only set role if not already set (e.g. by join dialog)
+        setRole(prev => prev ?? ((isHost || hasTeacherRole) ? 'teacher' : 'student'));
+
+        const nextUsers = await getAllUsers();
+        if (!cancelled) {
+          setUsers(nextUsers);
+        }
+
+        unsubUsers?.();
+        unsubUsers = subscribe(api.users.getAllUsers, {}, async () => {
+          const updatedUsers = await getAllUsers();
+          if (!cancelled) {
+            setUsers(updatedUsers);
+          }
+        });
+      })();
     });
+
+    return () => {
+      cancelled = true;
+      unsubUsers?.();
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [classId]);
 
@@ -1588,7 +1607,6 @@ export default function LiveClassPage() {
   }
 
   // ── Present mode handlers ─────────────────────────────────────────────────
-  // eslint-disable-next-line no-unused-vars -- wired to TeacherStudentGrid (reserved)
   function _handleInvitePresent(identityHex, name) {
     if (presentState?.status === 'requesting' && presentState.presenterIdentity === identityHex) {
       syncRef.current?.approvePresent(classId);
@@ -1705,20 +1723,14 @@ export default function LiveClassPage() {
         return <div className="lc-loading animate-fade-in">Connecting to class…</div>;
       }
 
-      const handleJoin = (e) => {
+      const handleJoin = async (e) => {
         e.preventDefault();
         const name = joinName.trim();
         if (!name) return;
         setStudentName(name);
 
-        // Use Convex session data if available, otherwise create a minimal demo session
-        const convexSession = getLiveClassById(classId);
-        if (convexSession && convexSession.then) {
-          convexSession.then(s => {
-            if (s) { setSessionData(s); setBackgroundType(s.backgroundType ?? 'white'); }
-            else { setSessionData({ classId, title: 'Live Class', hostUserId: '', backgroundType: 'white' }); }
-          });
-        } else if (convexSession) {
+        const convexSession = await getLiveClassById(classId);
+        if (convexSession) {
           setSessionData(convexSession);
           setBackgroundType(convexSession.backgroundType ?? 'white');
         } else {
@@ -1733,25 +1745,6 @@ export default function LiveClassPage() {
         // If Convex never connected/timed out, mark as offline now
         setStdbStatus(prev => prev === 'connected' ? 'connected' : prev === 'connecting' ? 'offline' : prev);
         setRole('student');
-      };
-
-      const handleJoinAsTeacher = async () => {
-        // Allow teacher to claim the teacher view from any device.
-        // This sets their DB role to 'teacher' so future opens also work.
-        convexSetTeacherRole(true);
-        const convexSession = await getLiveClassById(classId);
-        if (convexSession) {
-          setSessionData(convexSession);
-          setBackgroundType(convexSession.backgroundType ?? 'white');
-        } else {
-          setSessionData({
-            classId: classId,
-            title: 'Live Class',
-            hostUserId: '',
-            backgroundType: 'white',
-          });
-        }
-        setRole('teacher');
       };
 
       return (
@@ -1776,13 +1769,9 @@ export default function LiveClassPage() {
             >
               Join Class
             </button>
-            <button
-              type="button"
-              className="btn btn-ghost lc-join-teacher-btn"
-              onClick={handleJoinAsTeacher}
-            >
-              I'm the teacher →
-            </button>
+            <p className="lc-join-subtitle">
+              Teacher access must already be assigned to your account before opening instructor tools.
+            </p>
           </form>
         </div>
       );
@@ -2134,11 +2123,13 @@ export default function LiveClassPage() {
 
       {/* ── Import Media Dialog ──────────────────────────────────── */}
       {showImportDialog && (
-        <ImportMediaDialog
-          onClose={() => setShowImportDialog(false)}
-          onPlaceImage={handlePlaceImage}
-          onPlaceImages={handlePlaceImages}
-        />
+        <Suspense fallback={null}>
+          <ImportMediaDialog
+            onClose={() => setShowImportDialog(false)}
+            onPlaceImage={handlePlaceImage}
+            onPlaceImages={handlePlaceImages}
+          />
+        </Suspense>
       )}
 
       {/* ── Topbar dropdown panels (portal) ──────────────────────── */}

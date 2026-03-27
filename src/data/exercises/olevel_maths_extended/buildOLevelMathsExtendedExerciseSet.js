@@ -249,32 +249,43 @@ function getTopicDefinition(unitId, topicId) {
   throw new Error(`Unknown olevel_maths_extended topic: ${unitId}:${topicId}`);
 }
 
-function getTopicContexts(unitId, topicId) {
+async function getTopicContexts(unitId, topicId) {
   const cacheKey = `${unitId}:${topicId}`;
   if (topicCache.has(cacheKey)) {
     return topicCache.get(cacheKey);
   }
 
-  const { unit, topic } = getTopicDefinition(unitId, topicId);
-  const noteContexts = topic.subtopics.map((subtopicTitle, subtopicIndex) =>
-    buildNoteContext(
-      getSeedNote(`olevel_maths_extended:${unitId}:${topicId}:${subtopicIndex}`),
-      subtopicTitle,
-      unitId,
-      topicId,
-      subtopicIndex
-    )
-  );
-  const value = { unit, topic, noteContexts };
-  topicCache.set(cacheKey, value);
-  return value;
+  const topicContextsPromise = (async () => {
+    const { unit, topic } = getTopicDefinition(unitId, topicId);
+    const noteContexts = await Promise.all(
+      topic.subtopics.map(async (subtopicTitle, subtopicIndex) =>
+        buildNoteContext(
+          await getSeedNote(`olevel_maths_extended:${unitId}:${topicId}:${subtopicIndex}`),
+          subtopicTitle,
+          unitId,
+          topicId,
+          subtopicIndex,
+        ),
+      ),
+    );
+
+    return { unit, topic, noteContexts };
+  })();
+
+  topicCache.set(cacheKey, topicContextsPromise);
+  return topicContextsPromise;
 }
 
-function getFallbackSummaries(unitId, topicId) {
+async function getFallbackSummaries(unitId, topicId) {
   const { unit } = getTopicDefinition(unitId, topicId);
-  return unit.topics
-    .filter((topic) => String(topic.id) !== String(topicId))
-    .flatMap((topic) => getTopicContexts(unitId, topic.id).noteContexts.map((context) => context.summaryText))
+  const siblingTopicContexts = await Promise.all(
+    unit.topics
+      .filter((topic) => String(topic.id) !== String(topicId))
+      .map((topic) => getTopicContexts(unitId, topic.id)),
+  );
+
+  return siblingTopicContexts
+    .flatMap(({ noteContexts }) => noteContexts.map((context) => context.summaryText))
     .filter(Boolean);
 }
 
@@ -285,8 +296,8 @@ function pickPrompt(context) {
   );
 }
 
-function buildMcq(topicId, noteContexts) {
-  const fallbackSummaries = getFallbackSummaries(noteContexts[0]?.unitId, topicId);
+async function buildMcq(topicId, noteContexts) {
+  const fallbackSummaries = await getFallbackSummaries(noteContexts[0]?.unitId, topicId);
   const summaryPool = unique([...noteContexts.map((context) => context.summaryText), ...fallbackSummaries]);
 
   return noteContexts.slice(0, Math.max(1, Math.min(6, noteContexts.length))).map((context, index) => {
@@ -447,11 +458,11 @@ function buildFlashcards(topicId, noteContexts) {
   }));
 }
 
-export function buildOLevelMathsExtendedExerciseSet(unitId, topicId) {
-  const { topic, noteContexts } = getTopicContexts(unitId, topicId);
+export async function buildOLevelMathsExtendedExerciseSet(unitId, topicId) {
+  const { topic, noteContexts } = await getTopicContexts(unitId, topicId);
 
   return {
-    mcq: buildMcq(topicId, noteContexts),
+    mcq: await buildMcq(topicId, noteContexts),
     fillblank: buildFillBlank(topicId, noteContexts),
     dragdrop: buildDragDrop(topicId, noteContexts),
     sequence: buildSequence(topicId, topic, noteContexts),

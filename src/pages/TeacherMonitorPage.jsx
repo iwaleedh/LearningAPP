@@ -31,29 +31,48 @@ export default function TeacherMonitorPage() {
     useEffect(() => {
         if (!spaceReady) return;
         let unsubSessions = null;
+        let unsubUsers = null;
+        let cancelled = false;
 
         async function refresh() {
-            const activeSessions = await callQuery(api.sessions.getActiveSessions, {}).catch(() => []);
+            const [activeSessions, users] = await Promise.all([
+                callQuery(api.sessions.getActiveSessions, {}).catch(() => []),
+                getAllUsers(),
+            ]);
+            if (cancelled) return;
+
             setSessions(activeSessions || []);
-            setAllUsers(getAllUsers());
+            setAllUsers(users || []);
+
             // Gather all participants for all sessions
+            const participantGroups = await Promise.all(
+                (activeSessions || []).map((session) =>
+                    callQuery(api.sessions.getParticipants, { sessionId: String(session._id) }).catch(() => []),
+                ),
+            );
+            if (cancelled) return;
+
             const allParts = [];
-            for (const s of (activeSessions || [])) {
-                const parts = await callQuery(api.sessions.getParticipants, { sessionId: String(s._id) }).catch(() => []);
+            for (const parts of participantGroups) {
                 allParts.push(...(parts || []));
             }
             setParticipants(allParts);
         }
 
-        refresh();
+        void refresh();
 
         // Subscribe to session changes
         unsubSessions = subscribe(api.sessions.getActiveSessions, {}, () => {
-            refresh();
+            void refresh();
+        });
+        unsubUsers = subscribe(api.users.getAllUsers, {}, () => {
+            void refresh();
         });
 
         return () => {
+            cancelled = true;
             unsubSessions?.();
+            unsubUsers?.();
         };
     }, [spaceReady]);
 
@@ -159,6 +178,7 @@ export default function TeacherMonitorPage() {
 
                                 {/* Drop in button */}
                                 <button
+                                    type="button"
                                     className="btn btn-primary btn-sm teacher-dropin-btn"
                                     onClick={() => dropIn(session)}
                                 >

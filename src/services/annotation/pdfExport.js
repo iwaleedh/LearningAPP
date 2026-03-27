@@ -4,8 +4,6 @@
  * then embeds it onto the original PDF page.
  * Also exports a raw JSON file alongside the PDF for future re-import.
  */
-
-import { PDFDocument } from 'pdf-lib';
 import { Canvas as FabricCanvas } from 'fabric';
 
 /**
@@ -73,6 +71,7 @@ export async function exportAnnotatedPDF(paper, pageAnnotations, dimensions) {
         return;
     }
 
+    const { PDFDocument } = await import('pdf-lib');
     const pdfDoc = await PDFDocument.load(pdfBytes);
     const pages = pdfDoc.getPages();
 

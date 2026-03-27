@@ -196,11 +196,8 @@ export async function isTeacher() {
 }
 
 export async function setTeacherRole(teacher) {
-  if (!convexClient || !currentUserId) return;
-  await convexClient.mutation(api.users.setTeacherRole, {
-    userId: currentUserId,
-    teacher,
-  });
+  void teacher;
+  throw new Error('Teacher role changes are not available from the client.');
 }
 
 // ── Session helpers (annotation sessions) ───────────────────────────
@@ -222,10 +219,11 @@ export async function getMyParticipantSessions() {
   }
 }
 
-export async function getMyPendingInvites() {
-  if (!convexClient || !currentUsername) return [];
+export async function getMyPendingInvites(usernameOverride) {
+  const username = usernameOverride || currentUsername;
+  if (!convexClient || !username) return [];
   try {
-    return await convexClient.query(api.invites.getMyPendingInvites, { toUsername: currentUsername });
+    return await convexClient.query(api.invites.getMyPendingInvites, { toUsername: username });
   } catch {
     return [];
   }
@@ -250,10 +248,11 @@ export async function getLiveClassById(classId) {
   }
 }
 
-export async function getMyPendingLiveClassInvites() {
-  if (!convexClient || !currentUsername) return [];
+export async function getMyPendingLiveClassInvites(usernameOverride) {
+  const username = usernameOverride || currentUsername;
+  if (!convexClient || !username) return [];
   try {
-    const invites = await convexClient.query(api.invites.getMyPendingInvites, { toUsername: currentUsername });
+    const invites = await convexClient.query(api.invites.getMyPendingInvites, { toUsername: username });
     // Filter to only invites for active live classes
     const activeClasses = await getActiveLiveClasses();
     const activeClassIds = new Set(activeClasses.map(c => c._id));

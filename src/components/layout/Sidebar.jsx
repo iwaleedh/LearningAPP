@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, X,
-    Brain, Trophy, Search, Zap, Radio, UserPlus
+    Brain, Trophy, Zap, UserPlus
 } from 'lucide-react';
-import JoinClassModal from '../liveclass/JoinClassModal.jsx';
+import { useAuth } from '../../hooks/useAuth.js';
 import './Layout.css';
+
+const JoinClassModal = lazy(() => import('../liveclass/JoinClassModal.jsx'));
 
 const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
@@ -20,7 +22,9 @@ const navItems = [
 
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
+    const { role } = useAuth();
     const [showJoinModal, setShowJoinModal] = useState(false);
+    const isTeacher = role === 'teacher';
 
     return (
         <>
@@ -67,15 +71,17 @@ export default function Sidebar({ isOpen, onToggle }) {
                     })}
 
                     <div className="nav-divider" />
-                    <div className="nav-section-label">Admin</div>
-                    <Link
-                        to="/teacher"
-                        className={`nav-item ${location.pathname === '/teacher' ? 'active' : ''}`}
-                        onClick={() => window.innerWidth < 1024 && onToggle()}
-                    >
-                        <LayoutDashboard size={18} />
-                        <span>Teacher Dashboard</span>
-                    </Link>
+                    <div className="nav-section-label">{isTeacher ? 'Admin' : 'Live Class'}</div>
+                    {isTeacher && (
+                        <Link
+                            to="/teacher"
+                            className={`nav-item ${location.pathname.startsWith('/teacher') ? 'active' : ''}`}
+                            onClick={() => window.innerWidth < 1024 && onToggle()}
+                        >
+                            <LayoutDashboard size={18} />
+                            <span>Teacher Dashboard</span>
+                        </Link>
+                    )}
                     <button
                         className={`nav-item ${location.pathname.startsWith('/live') ? 'active' : ''}`}
                         onClick={() => { setShowJoinModal(true); if (window.innerWidth < 1024) onToggle(); }}
@@ -108,7 +114,9 @@ export default function Sidebar({ isOpen, onToggle }) {
             </aside>
 
             {showJoinModal && (
-                <JoinClassModal onClose={() => setShowJoinModal(false)} />
+                <Suspense fallback={null}>
+                    <JoinClassModal onClose={() => setShowJoinModal(false)} />
+                </Suspense>
             )}
         </>
     );

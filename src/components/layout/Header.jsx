@@ -1,13 +1,14 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { Menu, Search, LogIn } from 'lucide-react';
 import NotificationBell from './NotificationBell.jsx';
 import UserMenu from '../auth/UserMenu.jsx';
-import AuthModal from '../auth/AuthModal.jsx';
 import { useAuth } from '../../hooks/useAuth.js';
 import './Layout.css';
 
+const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
+
 export default function Header({ onMenuToggle, onSearchOpen }) {
-    const { isSignedIn, isLoaded } = useAuth();
+    const { canSignIn, isSignedIn, isLoaded } = useAuth();
     const [authOpen, setAuthOpen] = useState(false);
 
     return (
@@ -32,24 +33,29 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
 
                     <NotificationBell />
 
-                    {/* Auth: show UserMenu when signed in, Sign In button otherwise */}
+                    {/* Auth: show UserMenu when signed in, Sign In button only when available */}
                     {isLoaded && (
                         isSignedIn ? (
                             <UserMenu />
-                        ) : (
+                        ) : canSignIn ? (
                             <button
+                                type="button"
                                 className="signin-btn"
                                 onClick={() => setAuthOpen(true)}
                             >
                                 <LogIn size={15} />
                                 Sign In
                             </button>
-                        )
+                        ) : null
                     )}
                 </div>
             </header>
 
-            {authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
+            {authOpen && (
+        <Suspense fallback={null}>
+          <AuthModal onClose={() => setAuthOpen(false)} />
+        </Suspense>
+      )}
         </>
     );
 }

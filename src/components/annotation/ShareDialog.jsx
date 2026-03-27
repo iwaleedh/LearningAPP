@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getAllUsers } from '../../convex-client.js';
 
 /**
@@ -30,12 +30,28 @@ export default function ShareDialog({
 }) {
     const [tab, setTab] = useState('people');   // 'people' | 'invite'
     const [inviteSearch, setInviteSearch] = useState('');
-    const allUsers = useMemo(() => getAllUsers(), [activeSession]); // eslint-disable-line react-hooks/exhaustive-deps -- re-derive when session changes
+    const [allUsers, setAllUsers] = useState([]);
     const [copied, setCopied] = useState(false);
     const inputRef = useRef(null);
 
     const isHost = activeSession?.hostUserId === myIdentityHex;
     const amParticipant = participants.some(p => p.userId === myIdentityHex);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadUsers() {
+            const users = await getAllUsers();
+            if (!cancelled) {
+                setAllUsers(users);
+            }
+        }
+
+        void loadUsers();
+        return () => {
+            cancelled = true;
+        };
+    }, [activeSession]);
 
     const filteredUsers = allUsers.filter(u =>
         u.userId !== myIdentityHex &&
@@ -69,7 +85,7 @@ export default function ShareDialog({
                             {paper?.title ?? 'Annotate together in real time'}
                         </p>
                     </div>
-                    <button className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">✕</button>
+                    <button type="button" className="btn btn-ghost btn-icon" onClick={onClose} aria-label="Close">✕</button>
                 </div>
 
                 {/* ── Pending invites banner ── */}
@@ -87,12 +103,14 @@ export default function ShareDialog({
                                     </span>
                                     <div className="share-invite-actions">
                                         <button
+                                            type="button"
                                             className="btn btn-primary btn-sm"
                                             onClick={() => onRespondInvite(inv.inviteId, true)}
                                         >
                                             Accept
                                         </button>
                                         <button
+                                            type="button"
                                             className="btn btn-ghost btn-sm"
                                             onClick={() => onRespondInvite(inv.inviteId, false)}
                                         >
@@ -110,7 +128,7 @@ export default function ShareDialog({
                     <div className="share-dialog-body share-dialog-start">
                         <div className="share-start-icon">🔴</div>
                         <p>Start a live session to annotate together in real time with classmates.</p>
-                        <button className="btn btn-primary" onClick={onCreateSession}>
+                        <button type="button" className="btn btn-primary" onClick={onCreateSession}>
                             Start Live Session
                         </button>
                     </div>
@@ -131,12 +149,14 @@ export default function ShareDialog({
                         {/* Tabs */}
                         <div className="share-dialog-tabs">
                             <button
+                                type="button"
                                 className={`share-tab${tab === 'people' ? ' active' : ''}`}
                                 onClick={() => setTab('people')}
                             >
                                 People ({participants.length})
                             </button>
                             <button
+                                type="button"
                                 className={`share-tab${tab === 'invite' ? ' active' : ''}`}
                                 onClick={() => setTab('invite')}
                             >
@@ -183,7 +203,7 @@ export default function ShareDialog({
                                             return url.toString();
                                         })()}
                                     />
-                                    <button className="btn btn-secondary btn-sm" onClick={copyLink}>
+                                    <button type="button" className="btn btn-secondary btn-sm" onClick={copyLink}>
                                         {copied ? '✓ Copied' : 'Copy Link'}
                                     </button>
                                 </div>
@@ -216,6 +236,7 @@ export default function ShareDialog({
                                             </div>
                                             <span className="share-participant-name">{u.username}</span>
                                             <button
+                                                type="button"
                                                 className="btn btn-primary btn-sm"
                                                 onClick={() => handleInvite(u.username)}
                                             >
@@ -230,14 +251,14 @@ export default function ShareDialog({
                         {/* Footer actions */}
                         {isHost && (
                             <div className="share-dialog-footer">
-                                <button className="btn btn-ghost btn-sm share-end-btn" onClick={onEndSession}>
+                                <button type="button" className="btn btn-ghost btn-sm share-end-btn" onClick={onEndSession}>
                                     End Session for Everyone
                                 </button>
                             </div>
                         )}
                         {!isHost && amParticipant && (
                             <div className="share-dialog-footer">
-                                <button className="btn btn-ghost btn-sm" onClick={onClose}>
+                                <button type="button" className="btn btn-ghost btn-sm" onClick={onClose}>
                                     Leave Session
                                 </button>
                             </div>

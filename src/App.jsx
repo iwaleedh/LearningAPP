@@ -6,19 +6,19 @@ import ErrorBoundary from './components/ErrorBoundary';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
 import HomePage from './pages/HomePage';
-import ChapterPage from './pages/ChapterPage';
-import ExercisePage from './pages/ExercisePage';
-import PastPapersPage from './pages/PastPapersPage';
-import FlashcardsPage from './pages/FlashcardsPage';
-import ProgressPage from './pages/ProgressPage';
-import MistakeBankPage from './pages/MistakeBankPage';
-import SettingsPage from './pages/SettingsPage';
-import TeacherDashboard from './pages/TeacherDashboard';
-import BackendArchitecturesPage from './pages/BackendArchitecturesPage';
-import CommandSearch from './components/student/CommandSearch';
+import RequireRole from './components/auth/RequireRole';
 import './App.css';
 
 
+const ChapterPage = lazy(() => import('./pages/ChapterPage'));
+const ExercisePage = lazy(() => import('./pages/ExercisePage'));
+const PastPapersPage = lazy(() => import('./pages/PastPapersPage'));
+const FlashcardsPage = lazy(() => import('./pages/FlashcardsPage'));
+const ProgressPage = lazy(() => import('./pages/ProgressPage'));
+const MistakeBankPage = lazy(() => import('./pages/MistakeBankPage'));
+const SettingsPage = lazy(() => import('./pages/SettingsPage'));
+const TeacherDashboard = lazy(() => import('./pages/TeacherDashboard'));
+const BackendArchitecturesPage = lazy(() => import('./pages/BackendArchitecturesPage'));
 const AdvancedPage = lazy(() => import('./pages/AdvancedPage'));
 const NotePage = lazy(() => import('./pages/NotePage'));
 const AnnotatePage = lazy(() => import('./pages/AnnotatePage'));
@@ -26,6 +26,7 @@ const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
 const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const StudentNotesViewPage = lazy(() => import('./pages/StudentNotesViewPage'));
+const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -69,8 +70,22 @@ function AppContent() {
               <Route path="/progress" element={<ProgressPage />} />
               <Route path="/mistakes" element={<MistakeBankPage />} />
               <Route path="/settings" element={<SettingsPage />} />
-              <Route path="/teacher" element={<TeacherDashboard />} />
-              <Route path="/teacher/monitor" element={<TeacherMonitorPage />} />
+              <Route
+                path="/teacher"
+                element={(
+                  <RequireRole allowedRoles={['teacher']}>
+                    <TeacherDashboard />
+                  </RequireRole>
+                )}
+              />
+              <Route
+                path="/teacher/monitor"
+                element={(
+                  <RequireRole allowedRoles={['teacher']}>
+                    <TeacherMonitorPage />
+                  </RequireRole>
+                )}
+              />
               <Route path="/advanced" element={<AdvancedPage />} />
               <Route path="/backend-architectures" element={<BackendArchitecturesPage />} />
               <Route path="/annotate/:paperId" element={<AnnotatePage />} />
@@ -84,7 +99,9 @@ function AppContent() {
       </div>
 
       {searchOpen && (
-        <CommandSearch onClose={() => setSearchOpen(false)} />
+        <Suspense fallback={null}>
+          <CommandSearch onClose={() => setSearchOpen(false)} />
+        </Suspense>
       )}
     </div>
   );
@@ -102,4 +119,3 @@ export default function App() {
     </ThemeProvider>
   );
 }
-

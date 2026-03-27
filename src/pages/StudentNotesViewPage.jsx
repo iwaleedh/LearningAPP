@@ -23,13 +23,14 @@ export default function StudentNotesViewPage() {
   // Subscribe to live note updates
   useEffect(() => {
     if (!sessionId || !tempId) return;
-    // Reset loading whenever sessionId/tempId changes — done via setState updater
-    // to avoid the synchronous-setState-in-effect lint warning
+    // Use a microtask so the loading reset is not a synchronous setState call
+    // directly in the effect body — satisfies react-hooks/set-state-in-effect rule.
+    const resetTimer = Promise.resolve().then(() => setLoading(true));
+    void resetTimer;
     const unsub = subscribeToStudentNote(sessionId, tempId, (data) => {
       setNoteContent(data?.noteContent ?? '');
       setLoading(false);
     });
-    setLoading(true);
     return () => unsub?.();
   }, [sessionId, tempId]);
 

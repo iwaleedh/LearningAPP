@@ -12,6 +12,79 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000,
     sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          const normalizedId = id.replace(/\\/g, '/');
+
+          if (!normalizedId.includes('/node_modules/')) {
+            return undefined;
+          }
+
+          if (
+            normalizedId.includes('/node_modules/pdfjs-dist/')
+          ) {
+            return 'pdf-render-vendor';
+          }
+
+          if (
+            normalizedId.includes('/node_modules/pdf-lib/') ||
+            normalizedId.includes('/node_modules/pako/') ||
+            normalizedId.includes('/node_modules/@pdf-lib/upng/') ||
+            normalizedId.includes('/node_modules/@pdf-lib/standard-fonts/')
+          ) {
+            return 'pdf-edit-vendor';
+          }
+
+          if (
+            normalizedId.includes('/node_modules/fabric/')
+          ) {
+            return 'fabric-vendor';
+          }
+
+          if (
+            normalizedId.includes('/node_modules/chart.js/') ||
+            normalizedId.includes('/node_modules/react-chartjs-2/') ||
+            normalizedId.includes('/node_modules/@kurkle/color/')
+          ) {
+            return 'chart-vendor';
+          }
+
+          if (
+            normalizedId.includes('/node_modules/@clerk/') ||
+            normalizedId.includes('/node_modules/convex/')
+          ) {
+            return 'auth-data-vendor';
+          }
+
+          if (normalizedId.includes('/node_modules/lucide-react/')) {
+            return 'icons-vendor';
+          }
+
+          if (normalizedId.includes('/node_modules/dompurify/')) {
+            return 'note-render-vendor';
+          }
+
+          if (
+            normalizedId.includes('/node_modules/react/') ||
+            normalizedId.includes('/node_modules/react-dom/') ||
+            normalizedId.includes('/node_modules/scheduler/')
+          ) {
+            return 'react-vendor';
+          }
+
+          if (
+            normalizedId.includes('/node_modules/react-router-dom/') ||
+            normalizedId.includes('/node_modules/react-router/') ||
+            normalizedId.includes('/node_modules/@remix-run/router/')
+          ) {
+            return 'router-vendor';
+          }
+
+          return 'vendor';
+        },
+      },
+    },
   },
   resolve: {
     alias: {

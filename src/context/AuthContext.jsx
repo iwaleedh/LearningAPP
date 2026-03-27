@@ -5,6 +5,7 @@ import { createContext } from 'react';
  * {
  *   clerkUser: Clerk User object | null,
  *   dbUser:    Convex users row  | null,
+ *   canSignIn: boolean,
  *   isLoaded:  boolean,
  *   isSignedIn: boolean,
  *   role: 'student' | 'teacher',

@@ -75,13 +75,8 @@ export const getAllUsers = query({
 
 export const setTeacherRole = mutation({
   args: { userId: v.string(), role: v.string() },
-  handler: async (ctx, { userId, role }) => {
-    const user = await ctx.db
-      .query("users")
-      .withIndex("by_userId", (q) => q.eq("userId", userId))
-      .first();
-    if (!user) return;
-    await ctx.db.patch(user._id, { role });
+  handler: async (_ctx, _args) => {
+    throw new Error("Teacher role changes must be provisioned outside the client.");
   },
 });
 

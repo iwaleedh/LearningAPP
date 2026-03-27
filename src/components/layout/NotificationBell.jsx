@@ -1,7 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bell } from 'lucide-react';
-import { onConvexReady, getMyPendingInvites, getCurrentUserId, callMutation, callQuery, subscribe, api, getAllUsers } from '../../convex-client.js';
+import {
+    onConvexReady,
+    getMyPendingInvites,
+    getCurrentUserId,
+    callMutation,
+    callQuery,
+    subscribe,
+    api,
+    getAllUsers,
+} from '../../convex-client.js';
+import { useAuth } from '../../hooks/useAuth.js';
 
 /**
  * NotificationBell — live invite notifications in the app header.
@@ -12,6 +22,7 @@ import { onConvexReady, getMyPendingInvites, getCurrentUserId, callMutation, cal
  */
 export default function NotificationBell() {
     const navigate = useNavigate();
+    const { username } = useAuth();
     const [pendingInvites, setPendingInvites] = useState([]);
     const [allUsers, setAllUsers] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -20,29 +31,52 @@ export default function NotificationBell() {
     // Attach Convex invite listeners once connected
     useEffect(() => {
         let unsubInvites = null;
+        let unsubUsers = null;
+        let cancelled = false;
 
-        function refresh() {
-            setPendingInvites(getMyPendingInvites());
-            setAllUsers(getAllUsers());
+        async function refresh() {
+            const [invites, users] = await Promise.all([
+                getMyPendingInvites(username),
+                getAllUsers(),
+            ]);
+
+            if (cancelled) {
+                return;
+            }
+
+            setPendingInvites(invites);
+            setAllUsers(users);
         }
 
         onConvexReady(() => {
-            refresh();
-            const userId = getCurrentUserId();
-            if (!userId) return;
+            void refresh();
+
+            if (!username) return;
+
             // Subscribe to invites addressed to this user
-            unsubInvites = subscribe(api.invites.getMyPendingInvites, { toUsername: userId }, () => {
-                refresh();
+            unsubInvites?.();
+            unsubInvites = subscribe(api.invites.getMyPendingInvites, { toUsername: username }, () => {
+                void refresh();
+            });
+
+            unsubUsers?.();
+            unsubUsers = subscribe(api.users.getAllUsers, {}, () => {
+                void refresh();
             });
         });
 
         // Fallback poll every 15 s in case subscription fires are missed
-        const interval = setInterval(refresh, 15000);
+        const interval = setInterval(() => {
+            void refresh();
+        }, 15000);
+
         return () => {
+            cancelled = true;
             clearInterval(interval);
             unsubInvites?.();
+            unsubUsers?.();
         };
-    }, []);
+    }, [username]);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -83,6 +117,7 @@ export default function NotificationBell() {
     return (
         <div className="notification-bell-container" ref={dropdownRef}>
             <button
+                type="button"
                 className="btn btn-icon notification-btn"
                 title={count > 0 ? `${count} pending invite${count > 1 ? 's' : ''}` : 'Notifications'}
                 onClick={() => setIsOpen(prev => !prev)}
@@ -126,12 +161,14 @@ export default function NotificationBell() {
                                         </div>
                                         <div className="notification-item-actions">
                                             <button
+                                                type="button"
                                                 className="btn btn-primary btn-sm"
                                                 onClick={() => handleAccept(inv)}
                                             >
                                                 Join
                                             </button>
                                             <button
+                                                type="button"
                                                 className="btn btn-ghost btn-sm"
                                                 onClick={() => handleDecline(inv)}
                                             >

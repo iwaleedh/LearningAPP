@@ -1,49 +1,7 @@
 // Service for handling past paper downloads and marking schemes
-import { chemistryPastPapers } from '../../data/chemistryPastPapers';
-import { physicsPastPapers } from '../../data/physicsPastPapers';
-import { biologyPastPapers } from '../../data/biologyPastPapers';
-import { mathematicsPastPapers } from '../../data/mathematicsPastPapers';
-import { businessPastPapers } from '../../data/businessPastPapers';
-import { economicsPastPapers } from '../../data/economicsPastPapers';
-import { accountingPastPapers } from '../../data/accountingPastPapers';
-import { caePastPapers } from '../../data/caePastPapers';
-import { cpePastPapers } from '../../data/cpePastPapers';
 import { logger } from '../logger/logger.js';
 
 const log = logger.child({ component: 'pastPaperService' });
-import { oLevelChemistryPastPapers } from '../../data/oLevelChemistryPastPapers';
-import { oLevelPhysicsPastPapers } from '../../data/oLevelPhysicsPastPapers';
-import { oLevelBiologyPastPapers } from '../../data/oLevelBiologyPastPapers';
-import { oLevelMathematicsPastPapers } from '../../data/oLevelMathematicsPastPapers';
-
-let _paperMap = null;
-
-function buildPaperMap() {
-    _paperMap = new Map();
-    const allArrays = [
-        chemistryPastPapers, physicsPastPapers, biologyPastPapers,
-        mathematicsPastPapers, businessPastPapers, economicsPastPapers,
-        accountingPastPapers, caePastPapers, cpePastPapers,
-        oLevelChemistryPastPapers, oLevelPhysicsPastPapers,
-        oLevelBiologyPastPapers, oLevelMathematicsPastPapers,
-    ];
-    for (const arr of allArrays) {
-        for (const paper of arr) {
-            if (paper.id) _paperMap.set(paper.id, paper);
-        }
-    }
-}
-
-/**
- * Look up any past paper by its ID across all 13 paper arrays.
- * Map is built lazily on first call.
- * @param {string} paperId
- * @returns {object|null}
- */
-export function getPaperById(paperId) {
-    if (!_paperMap) buildPaperMap();
-    return _paperMap.get(paperId) ?? null;
-}
 
 /**
  * Trigger a file download using a direct anchor click.

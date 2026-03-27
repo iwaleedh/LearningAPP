@@ -8,7 +8,7 @@ import {
 import { upsertNote } from '../services/notes/noteStore.js';
 import SessionStartModal from '../components/liveclass/SessionStartModal.jsx';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
-import { seedNotes } from '../data/seedNotes/index.js';
+import { seedNoteKeys, getSeedNote } from '../data/seedNotes/index.js';
 import './TeacherDashboard.css';
 
 /* ─── Sample Data ─── */
@@ -90,9 +90,9 @@ export default function TeacherDashboard() {
     const handleSyncNotes = async () => {
         try {
             setSyncStatus('Syncing all seed notes... This may take a minute.');
-            const keysToSync = Object.keys(seedNotes);
+            const keysToSync = seedNoteKeys;
             for (const key of keysToSync) {
-                const note = seedNotes[key];
+                const note = await getSeedNote(key);
                 if (note) {
                     const parts = key.split(':');
                     await upsertNote({

@@ -1,12 +1,16 @@
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, BookOpen, FileQuestion, ArrowRight } from 'lucide-react';
-import { syllabusesBySubject } from '../../data/syllabusIndex';
+import { Search, BookOpen, ArrowRight } from 'lucide-react';
+import { loadSyllabusesBySubjects } from '../../data/syllabusIndex.js';
 
 const SEARCH_SUBJECTS = ['chemistry', 'biology', 'physics', 'mathematics', 'economics', 'business', 'accounting'];
 const SUBJECT_LABELS = { chemistry: 'Chemistry', biology: 'Biology', physics: 'Physics', mathematics: 'Maths', economics: 'Economics', business: 'Business', accounting: 'Accounting' };
 
 function buildSearchIndex() {
+    return [];
+}
+
+function buildSearchIndexFromSyllabuses(syllabusesBySubject) {
     const items = [];
     SEARCH_SUBJECTS.forEach(subject => {
         const syllabus = syllabusesBySubject[subject];
@@ -30,22 +34,41 @@ function buildSearchIndex() {
     return items;
 }
 
-const searchableItems = buildSearchIndex();
-
 export default function CommandSearch({ onClose }) {
     const [query, setQuery] = useState('');
     const [focusedIndex, setFocusedIndex] = useState(0);
+    const [searchableItems, setSearchableItems] = useState(() => buildSearchIndex());
+    const [searchIndexStatus, setSearchIndexStatus] = useState('loading');
     const inputRef = useRef(null);
     const navigate = useNavigate();
 
-    const results = query.trim()
-        ? searchableItems.filter(item =>
-            item.title.toLowerCase().includes(query.toLowerCase())
-        )
-        : searchableItems.slice(0, 6);
+    const results = useMemo(() => (
+        query.trim()
+            ? searchableItems.filter(item =>
+                item.title.toLowerCase().includes(query.toLowerCase())
+            )
+            : searchableItems.slice(0, 6)
+    ), [query, searchableItems]);
 
     useEffect(() => {
         inputRef.current?.focus();
+    }, []);
+
+    useEffect(() => {
+        let cancelled = false;
+
+        void loadSyllabusesBySubjects(SEARCH_SUBJECTS).then((syllabuses) => {
+            if (cancelled) return;
+            setSearchableItems(buildSearchIndexFromSyllabuses(syllabuses));
+            setSearchIndexStatus('ready');
+        }).catch(() => {
+            if (cancelled) return;
+            setSearchIndexStatus('error');
+        });
+
+        return () => {
+            cancelled = true;
+        };
     }, []);
 
     const handleQueryChange = useCallback((e) => {
@@ -89,7 +112,15 @@ export default function CommandSearch({ onClose }) {
                 </div>
 
                 <div className="search-results">
-                    {results.length === 0 ? (
+                    {searchIndexStatus === 'loading' ? (
+                        <div style={{ padding: 'var(--space-8)', textAlign: 'center', color: 'var(--color-text-tertiary)' }}>
+                            Building search index...
+                        </div>
+                    ) : searchIndexStatus === 'error' ? (
+                        <div style={{ padding: 'var(--space-8)', textAlign: 'center', color: 'var(--color-text-tertiary)' }}>
+                            Search is unavailable right now.
+                        </div>
+                    ) : results.length === 0 ? (
                         <div style={{ padding: 'var(--space-8)', textAlign: 'center', color: 'var(--color-text-tertiary)' }}>
                             No results found for &quot;{query}&quot;
                         </div>

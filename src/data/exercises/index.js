@@ -1,43 +1,49 @@
-const exerciseModules = import.meta.glob('./**/exercises_*.js', { eager: true });
+const exerciseModuleLoaders = import.meta.glob('./**/exercises_*.js');
 
 function parseIdPart(value) {
   return /^\d+$/.test(value) ? Number(value) : value;
 }
 
-function getExerciseExport(module) {
-  return Object.entries(module).find(
-    ([key, value]) => key.startsWith('exercises_') && value && typeof value === 'object'
-  );
-}
+function buildExerciseModuleIndex() {
+  const index = {};
 
-function buildExerciseSets() {
-  const sets = {};
+  for (const modulePath of Object.keys(exerciseModuleLoaders)) {
+    const fileName = modulePath.split('/').pop()?.replace(/\.js$/, '');
+    if (!fileName) continue;
 
-  for (const module of Object.values(exerciseModules)) {
-    const entry = getExerciseExport(module);
-    if (!entry) continue;
-
-    const [exportName, exerciseSet] = entry;
-    const parts = exportName.split('_');
+    const parts = fileName.split('_');
     if (parts.length < 4) continue;
 
     const topicId = parts.pop();
     const unitId = parts.pop();
     const subject = parts.slice(1).join('_');
-    sets[`${subject}:${unitId}:${topicId}`] = exerciseSet;
+    index[`${subject}:${unitId}:${topicId}`] = modulePath;
   }
 
-  return sets;
+  return index;
 }
 
-export const exerciseSets = buildExerciseSets();
+function getExerciseExport(module) {
+  return Object.entries(module).find(
+    ([key, value]) => key.startsWith('exercises_') && value && typeof value === 'object',
+  );
+}
 
-export function getExerciseSet(subject, unitId, topicId) {
-  return exerciseSets[`${subject}:${unitId}:${topicId}`];
+const exerciseModuleIndex = buildExerciseModuleIndex();
+
+export const exerciseSetKeys = Object.freeze(Object.keys(exerciseModuleIndex));
+
+export async function getExerciseSet(subject, unitId, topicId) {
+  const modulePath = exerciseModuleIndex[`${subject}:${unitId}:${topicId}`];
+  if (!modulePath) return null;
+
+  const module = await exerciseModuleLoaders[modulePath]();
+  const entry = getExerciseExport(module);
+  return entry ? entry[1] : null;
 }
 
 export function getAvailableTopics(subject) {
-  return Object.keys(exerciseSets)
+  return exerciseSetKeys
     .filter((key) => key.startsWith(`${subject}:`))
     .map((key) => {
       const [, unitId, topicId] = key.split(':');

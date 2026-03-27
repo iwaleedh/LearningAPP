@@ -1,10 +1,11 @@
 import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { getSubjectLabel, getSyllabusBySubject } from '../data/syllabusIndex.js';
+import { getSubjectLabel } from '../data/syllabusIndex.js';
 import { resolveNoteContext } from '../services/notes/noteContext.js';
-import { getSeedNote } from '../data/seedNotes/index.js';
+import { getSeedNote, hasSeedNote } from '../data/seedNotes/index.js';
 import NoteBlockRenderer from '../components/notes/NoteBlockRenderer.jsx';
 import { useNoteReadStatus } from '../hooks/useNoteReadStatus.js';
+import { useSyllabus } from '../hooks/useSyllabus.js';
 import './Pages.css';
 import './NotePage.css';
 
@@ -216,15 +217,14 @@ export default function NotePage() {
     const [scrollPct, setScrollPct] = useState(0);
     const scrollRef = useRef(null);
 
-    const normalizedSubject = String(subject || 'chemistry').toLowerCase();
-    const syllabus = useMemo(() => getSyllabusBySubject(normalizedSubject), [normalizedSubject]);
+    const { subjectKey: normalizedSubject, syllabus, isLoading: isLoadingSyllabus } = useSyllabus(subject || 'chemistry');
     const context = useMemo(
         () => resolveNoteContext({ subject: normalizedSubject, unitId, topicId, subtopicIndex }, syllabus),
         [normalizedSubject, unitId, topicId, subtopicIndex, syllabus]
     );
 
     const activeUnit = useMemo(() => {
-        return syllabus.units.find((u) => String(u.id) === String(unitId)) || syllabus.units[0];
+        return syllabus?.units?.find((u) => String(u.id) === String(unitId)) || syllabus?.units?.[0] || null;
     }, [syllabus, unitId]);
 
     // Calculate Next Subtopic
@@ -257,12 +257,40 @@ export default function NotePage() {
     }, [activeUnit, topicId, subtopicIndex]);
 
     const noteId = `note:${context.subject}:${context.unitId}:${context.topicId}:${context.subtopicIndex}`;
+    const noteExists = hasSeedNote(noteId);
+    const [seedNote, setSeedNote] = useState(null);
+    const [seedNoteStatus, setSeedNoteStatus] = useState(noteExists ? 'loading' : 'missing');
 
     // dbNote fetching is disabled — seed notes are the canonical source.
     // Enabling it caused stale IndexedDB/Convex data to overwrite updated
     // seed notes every 3 seconds. Re-enable only when user-editing is wired up
     // with a reliable way to tell user edits apart from old seed note snapshots.
-    const seedNote = useMemo(() => getSeedNote(noteId), [noteId]);
+    useEffect(() => {
+        let cancelled = false;
+
+        async function loadSeedNote() {
+            if (!noteExists) {
+                setSeedNote(null);
+                setSeedNoteStatus('missing');
+                return;
+            }
+
+            setSeedNote(null);
+            setSeedNoteStatus('loading');
+            const nextSeedNote = await getSeedNote(noteId);
+            if (cancelled) return;
+
+            setSeedNote(nextSeedNote);
+            setSeedNoteStatus(nextSeedNote ? 'ready' : 'missing');
+        }
+
+        void loadSeedNote();
+
+        return () => {
+            cancelled = true;
+        };
+    }, [noteId, noteExists]);
+
     const { isRead, readAt, markRead, markUnread } = useNoteReadStatus(noteId);
 
     const toc = useMemo(() => buildToc(seedNote?.blocks), [seedNote]);
@@ -288,8 +316,8 @@ export default function NotePage() {
                 {/* Left: breadcrumbs */}
                 <div className="note-toolbar-left">
                     <span className="badge">{getSubjectLabel(context.subject)}</span>
-                    <span className="badge">{context.unitCode}</span>
-                    <h2 className="note-toolbar-title">{context.subtopicTitle}</h2>
+                    <span className="badge">{context.unitCode || (isLoadingSyllabus ? '...' : 'Unknown unit')}</span>
+                    <h2 className="note-toolbar-title">{context.subtopicTitle || (isLoadingSyllabus ? 'Loading topic...' : 'Untitled subtopic')}</h2>
                 </div>
 
                 {/* Right: actions */}
@@ -415,7 +443,15 @@ export default function NotePage() {
                 )}
 
                 {/* No note fallback */}
-                {!hasNote && (
+                {!hasNote && seedNoteStatus === 'loading' && (
+                    <div className="note-empty">
+                        <span>⏳</span>
+                        <p className="note-empty-title">Loading note...</p>
+                        <p className="note-empty-sub">Fetching this seed note now.</p>
+                    </div>
+                )}
+
+                {!hasNote && seedNoteStatus !== 'loading' && (
                     <div className="note-empty">
                         <span>📝</span>
                         <p className="note-empty-title">No notes yet</p>

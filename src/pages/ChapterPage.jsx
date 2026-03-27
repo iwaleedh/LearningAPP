@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { BookOpen, ListTree, ChevronDown, ChevronUp } from 'lucide-react';
-import { getSubjectLabel, getSyllabusBySubject } from '../data/syllabusIndex';
+import { getSubjectLabel, normalizeSubjectKey } from '../data/syllabusIndex';
+import { useSyllabus } from '../hooks/useSyllabus.js';
 import './Pages.css';
 
 // ── Subtopic dropdown (accordion) ─────────────────────────────────────────────
@@ -55,18 +56,41 @@ function TopicAccordion({ topic, unitId, subject, defaultOpen }) {
 
 export default function ChapterPage() {
     const [searchParams] = useSearchParams();
-    const subject = (searchParams.get('subject') || 'chemistry').toLowerCase();
-    const syllabus = useMemo(() => getSyllabusBySubject(subject), [subject]);
+    const subject = useMemo(
+        () => normalizeSubjectKey(searchParams.get('subject') || 'chemistry'),
+        [searchParams],
+    );
+    const { syllabus, error, isLoading } = useSyllabus(subject);
     const subjectLabel = useMemo(() => getSubjectLabel(subject), [subject]);
 
     const totalTopics = useMemo(
-        () => syllabus.units.reduce((sum, u) => sum + u.topics.length, 0),
+        () => (syllabus?.units || []).reduce((sum, u) => sum + u.topics.length, 0),
         [syllabus]
     );
     const totalSubtopics = useMemo(
-        () => syllabus.units.reduce((sum, u) => sum + u.topics.reduce((s, t) => s + t.subtopics.length, 0), 0),
+        () => (syllabus?.units || []).reduce((sum, u) => sum + u.topics.reduce((s, t) => s + t.subtopics.length, 0), 0),
         [syllabus]
     );
+
+    if (isLoading) {
+        return (
+            <div className="chapter-page animate-fade-in">
+                <div className="card" style={{ padding: 'var(--space-6)' }}>
+                    Loading syllabus...
+                </div>
+            </div>
+        );
+    }
+
+    if (error || !syllabus) {
+        return (
+            <div className="chapter-page animate-fade-in">
+                <div className="card" style={{ padding: 'var(--space-6)' }}>
+                    Could not load this syllabus right now.
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="chapter-page animate-fade-in">

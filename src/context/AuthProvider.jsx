@@ -12,9 +12,10 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { ClerkProvider, useUser, useClerk } from '@clerk/clerk-react';
 import AuthContext from './AuthContext';
 import { api } from '../../convex/_generated/api.js';
-import { getClient, getCurrentUserId, getCurrentUsername } from '../convex-client.js';
+import { getClient, getCurrentUserId, getCurrentUsername, onConvexReady } from '../convex-client.js';
 
 const CLERK_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+const HAS_CLERK = Boolean(CLERK_KEY);
 
 /* ── Inner provider: runs inside ClerkProvider so it can call useUser ── */
 function AuthContextProvider({ children }) {
@@ -83,6 +84,7 @@ function AuthContextProvider({ children }) {
     return {
       clerkUser: clerkUser ?? null,
       dbUser,
+      canSignIn: HAS_CLERK,
       isLoaded,
       isSignedIn: !!isSignedIn,
       role,
@@ -96,26 +98,63 @@ function AuthContextProvider({ children }) {
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
+function AnonymousAuthContextProvider({ children }) {
+  const [dbUser, setDbUser] = useState(null);
+  const [role, setRole] = useState('student');
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const syncAnonymousUser = async (
+      client = getClient(),
+      userId = getCurrentUserId(),
+    ) => {
+      if (!client || !userId) return;
+
+      try {
+        const user = await client.query(api.users.getUser, { userId });
+        if (cancelled) return;
+        setDbUser(user ?? null);
+        setRole(user?.role ?? 'student');
+      } catch {
+        if (cancelled) return;
+        setDbUser(null);
+        setRole('student');
+      }
+    };
+
+    void syncAnonymousUser();
+    onConvexReady((client, userId) => {
+      void syncAnonymousUser(client, userId);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const value = useMemo(() => ({
+    clerkUser: null,
+    dbUser,
+    canSignIn: false,
+    isLoaded: true,
+    isSignedIn: false,
+    role,
+    userId: getCurrentUserId(),
+    username: getCurrentUsername() || 'Anonymous',
+    avatarUrl: null,
+    signOut: async () => {},
+  }), [dbUser, role]);
+
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+}
+
 /* ── Outer: wraps with ClerkProvider if key is present ── */
 export default function AuthProvider({ children }) {
-  // If no Clerk key configured, provide a minimal anonymous-only context
+  // If no Clerk key configured, provide an anonymous context that still
+  // syncs the current DB user record and role from Convex when available.
   if (!CLERK_KEY) {
-    const anonValue = {
-      clerkUser: null,
-      dbUser: null,
-      isLoaded: true,
-      isSignedIn: false,
-      role: 'student',
-      userId: getCurrentUserId(),
-      username: getCurrentUsername() || 'Anonymous',
-      avatarUrl: null,
-      signOut: async () => {},
-    };
-    return (
-      <AuthContext.Provider value={anonValue}>
-        {children}
-      </AuthContext.Provider>
-    );
+    return <AnonymousAuthContextProvider>{children}</AnonymousAuthContextProvider>;
   }
 
   return (
