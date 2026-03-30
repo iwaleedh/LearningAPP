@@ -1,236 +1,162 @@
+// IGCSE Accounting Syllabus (Cambridge CIE 0452 / Edexcel 4AC1)
+
 export const accountingSyllabus = {
-    qualification: 'AL Accounting',
-    source: 'pearson-edexcel-ial-accounting-specification.pdf (Issue 2, September 2018)',
+    qualification: 'IGCSE Accounting',
+    source: 'Cambridge CIE 0452 / Edexcel 4AC1',
+    qualificationCode: 'IGACC',
     units: [
         {
             id: 1,
-            code: 'WAC11',
-            title: 'The Accounting System and Costing',
+            code: 'IGACC1',
+            title: 'Unit 1: The Accounting System',
             topics: [
                 {
                     id: 1,
-                    title: 'Principles & Double Entry',
+                    title: 'Fundamentals of Accounting',
                     subtopics: [
-                        'Role and purpose of accounting',
-                        'Users of accounting information',
-                        'Books of account and prime entry',
-                        'End-of-period adjustments',
-                        'Allowance for irrecoverable debts',
-                        'ICT in transaction recording',
-                        'Going concern, prudence and accruals',
-                        'Consistency, materiality and historic cost',
-                        'Use of International Accounting Standards',
-                        'Capital vs revenue expenditure',
-                        'Depreciation causes and methods',
-                        'Non-current asset disposals and schedules',
-                    ],
+                        { index: 0, title: 'Role and purpose of accounting' },
+                        { index: 1, title: 'Users of accounting information' },
+                        { index: 2, title: 'Books of account and prime entry' },
+                        { index: 3, title: 'End-of-period adjustments' },
+                        { index: 4, title: 'Allowance for irrecoverable debts' },
+                        { index: 5, title: 'ICT in transaction recording' }
+                    ]
                 },
                 {
                     id: 2,
-                    title: 'Control Procedures',
+                    title: 'Sources and Recording',
                     subtopics: [
-                        'Trial balance purpose',
-                        'Trial balance limitations',
-                        'Receivables and payables control accounts',
-                        'Errors affecting trial-balance agreement',
-                        'Errors not affecting trial-balance agreement',
-                        'Error-correction journal entries',
-                        'Suspense accounts',
-                        'Revised profit statements',
-                        'Control-account corrections',
-                    ],
+                        { index: 0, title: 'Control Procedures' },
+                        { index: 1, title: 'Error-correction journal entries' },
+                        { index: 2, title: 'Suspense accounts' },
+                        { index: 3, title: 'Control-account corrections' }
+                    ]
                 },
                 {
                     id: 3,
-                    title: 'Financial Statements',
+                    title: 'Financial Statements of Sole Traders',
                     subtopics: [
-                        'Sole trader statement of profit or loss',
-                        'Sole trader statement of financial position',
-                        'Accrual and prepayment adjustments',
-                        'Provisions and irrecoverable debts',
-                        'Departmental accounts',
-                        'Incomplete-record conversion',
-                        'Partnership appropriation accounts',
-                        'Partners current and capital accounts',
-                        'Partnership Act Section 24 rules',
-                        'Partner admission and retirement',
-                        'Club and non-profit accounts',
-                        'Manufacturing accounts and cost apportionment',
-                    ],
+                        { index: 0, title: 'Sole trader statement of profit or loss' },
+                        { index: 1, title: 'Sole trader statement of financial position' },
+                        { index: 2, title: 'Incomplete-record conversion' }
+                    ]
                 },
                 {
                     id: 4,
-                    title: 'Introduction to Costing',
+                    title: 'Accounting for Inventory',
                     subtopics: [
-                        'FIFO, LIFO and NRV methods',
-                        'Perpetual vs periodic inventory valuation',
-                        'Inventory valuation effects on profit',
-                        'Labour productivity',
-                        'Remuneration methods',
-                        'Employer cost vs employee earnings',
-                        'Overhead classifications',
-                        'Overhead allocation and apportionment',
-                        'Service-department reapportionment',
-                        'Machine and labour hour rates',
-                        'Over- and under-absorbed overheads',
-                        'Job costing for batch and order work',
-                    ],
+                        { index: 0, title: 'FIFO, LIFO and NRV methods' },
+                        { index: 1, title: 'Inventory Valuation Differences' },
+                        { index: 2, title: 'Perpetual vs periodic inventory valuation' }
+                    ]
                 },
                 {
                     id: 5,
-                    title: 'Statement Analysis',
+                    title: 'Reporting and Interpretation',
                     subtopics: [
-                        'Profitability ratios',
-                        'Liquidity ratios',
-                        'Asset-use ratios',
-                        'Ratio interpretation for sole traders',
-                        'Ratio interpretation for partnerships',
-                        'Ratio-based financial projections',
-                    ],
+                        { index: 0, title: 'Profitability ratios' },
+                        { index: 1, title: 'Liquidity ratios' },
+                        { index: 2, title: 'Asset-use ratios' }
+                    ]
                 },
                 {
                     id: 6,
-                    title: 'Social & Ethical Accounting',
+                    title: 'Ethical and Social Accounting',
                     subtopics: [
-                        'Community and environmental impacts',
-                        'Workforce health and safety impacts',
-                        'Natural-resource considerations',
-                        'Non-financial factors in decisions',
-                        'Stakeholder impacts',
-                        'Ethics in accounting analysis',
-                    ],
-                },
-            ],
+                        { index: 0, title: 'Corporate Social Responsibility' },
+                        { index: 1, title: 'Ethics in Accounting' },
+                        { index: 2, title: 'Sustainability Reporting' }
+                    ]
+                }
+            ]
         },
         {
             id: 2,
-            code: 'WAC12',
-            title: 'Corporate and Management Accounting',
+            code: 'IGACC2',
+            title: 'Unit 2: Financial Reporting & Decision Making',
             topics: [
                 {
                     id: 7,
-                    title: 'Limited Companies',
+                    title: 'Company Accounts: IAS 1',
                     subtopics: [
-                        'IAS 1 company financial statements',
-                        'Statement of changes in equity',
-                        'Auditor and directors reports',
-                        'Continuing vs discontinued activities',
-                        'Exceptional item disclosure',
-                        'Capital and revenue reserves',
-                        'Authorised, issued and called-up share capital',
-                        'Rights and bonus issues',
-                        'Share issue journal entries',
-                        'Shares vs debentures',
-                        'Capital gearing',
-                        'Provisions in company accounts',
-                        'Purchase and merger accounting entries',
-                        'Goodwill calculation and treatment',
-                    ],
+                        { index: 0, title: 'IAS 1 company financial statements' },
+                        { index: 1, title: 'Share issue journal entries' },
+                        { index: 2, title: 'Rights and bonus issues' }
+                    ]
                 },
                 {
                     id: 8,
-                    title: 'Investment Ratios',
+                    title: 'Earnings per Share',
                     subtopics: [
-                        'Earnings per share',
-                        'Price/earnings ratio',
-                        'Dividend per share',
-                        'Dividend yield',
-                        'Dividend cover',
-                        'ROCE for investment appraisal',
-                    ],
+                        { index: 0, title: 'Earnings per share calculation' },
+                        { index: 1, title: 'Price/earnings ratio' },
+                        { index: 2, title: 'Dividend yield' }
+                    ]
                 },
                 {
                     id: 9,
-                    title: 'Cash Flow Statements',
+                    title: 'Statement of Cash Flows: IAS 7',
                     subtopics: [
-                        'IAS 7 statement of cash flows',
-                        'Operating, investing and financing sections',
-                        'Liquidity significance',
-                    ],
+                        { index: 0, title: 'IAS 7 statement of cash flows' },
+                        { index: 1, title: 'Operating, investing and financing sections' }
+                    ]
                 },
                 {
                     id: 10,
-                    title: 'Budgeting',
+                    title: 'Budgeting and Control',
                     subtopics: [
-                        'Budgeting for planning and control',
-                        'Budget preparation process',
-                        'Revenue and production budgets',
-                        'Purchases and inventory budgets',
-                        'Receivables and payables budgets',
-                        'Capital and cash budgets',
-                        'Budgeted financial statements',
-                        'Flexible budgets',
-                    ],
+                        { index: 0, title: 'Budgeting for planning and control' },
+                        { index: 1, title: 'Budget preparation process' },
+                        { index: 2, title: 'Flexible budgets' }
+                    ]
                 },
                 {
                     id: 11,
-                    title: 'Standard Costing',
+                    title: 'Accounting Standards',
                     subtopics: [
-                        'Purpose of standards',
-                        'Building a standard-cost system',
-                        'Material variances',
-                        'Labour variances',
-                        'Fixed and variable overhead variances',
-                        'Variance causes',
-                        'Variance interrelationships',
-                        'Management by exception',
-                    ],
+                        { index: 0, title: 'Purpose of standards' },
+                        { index: 1, title: 'Use of International Accounting Standards' }
+                    ]
                 },
                 {
                     id: 12,
-                    title: 'Project Appraisal',
+                    title: 'Investment Appraisal',
                     subtopics: [
-                        'Net present value',
-                        'Weighted average cost of capital',
-                        'Profitability index',
-                        'Internal rate of return',
-                        'Average rate of return',
-                        'Payback period',
-                    ],
+                        { index: 0, title: 'Net present value' },
+                        { index: 1, title: 'Internal rate of return' },
+                        { index: 2, title: 'Payback period' }
+                    ]
                 },
                 {
                     id: 13,
-                    title: 'Break-Even Analysis',
+                    title: 'Break-even Analysis',
                     subtopics: [
-                        'Cost classifications for break-even',
-                        'Contribution and break-even point',
-                        'Margin of safety',
-                        'Break-even chart interpretation',
-                        'Angle of incidence',
-                        'Profit and loss regions',
-                    ],
+                        { index: 0, title: 'Cost classifications for break-even' },
+                        { index: 1, title: 'Contribution and break-even point' },
+                        { index: 2, title: 'Margin of safety' }
+                    ]
                 },
                 {
                     id: 14,
-                    title: 'Marginal vs Absorption Costing',
+                    title: 'Marginal and Absorption Costing',
                     subtopics: [
-                        'Marginal vs absorption concepts',
-                        'Method advantages and limitations',
-                        'Inventory valuation differences',
-                        'New-order decisions',
-                        'Make-or-buy decisions',
-                        'Continue-or-discontinue decisions',
-                        'Limiting-factor analysis',
-                        'Profit statement comparison',
-                    ],
+                        { index: 0, title: 'Marginal vs Absorption Concepts' },
+                        { index: 1, title: 'Profit Statement Comparison' }
+                    ]
                 },
                 {
                     id: 15,
-                    title: 'ICT in Accounting',
+                    title: 'Spreadsheet Applications',
                     subtopics: [
-                        'Spreadsheet use in budgeting',
-                        'Accounting software workflows',
-                        'Electronic POS for stock control',
-                        'Audit trail and compliance',
-                        'Financial and technical trade-offs',
-                        'Human factors in ICT adoption',
-                    ],
-                },
-            ],
-        },
-    ],
+                        { index: 0, title: 'Spreadsheet use in budgeting' },
+                        { index: 1, title: 'Accounting software workflows' }
+                    ]
+                }
+            ]
+        }
+    ]
 };
 
-export function getAccountingUnitById(unitId) {
-    return accountingSyllabus.units.find((unit) => unit.id === unitId);
+export function getAccountingSyllabus() {
+    return accountingSyllabus;
 }
