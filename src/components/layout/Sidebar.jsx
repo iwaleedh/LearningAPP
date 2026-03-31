@@ -99,27 +99,32 @@ export default function Sidebar({ isOpen, onToggle }) {
                     })}
 
                     <div className="nav-divider" />
-                    <div className="nav-section-label">{isTeacher ? 'Admin' : 'Live Class'}</div>
                     {isTeacher && (
-                        <Link
-                            to="/teacher"
-                            className={`nav-item ${location.pathname.startsWith('/teacher') ? 'active' : ''}`}
-                            onClick={() => window.innerWidth < 1024 && onToggle()}
-                        >
-                            <LayoutDashboard size={18} />
-                            <span>Teacher Dashboard</span>
-                        </Link>
+                        <>
+                            <div className="nav-section-label">Admin</div>
+                            <Link
+                                to="/teacher"
+                                className={`nav-item ${location.pathname.startsWith('/teacher') ? 'active' : ''}`}
+                                onClick={() => window.innerWidth < 1024 && onToggle()}
+                            >
+                                <LayoutDashboard size={18} />
+                                <span>Teacher Dashboard</span>
+                            </Link>
+                            <div className="nav-divider" />
+                        </>
                     )}
-                    {isTeacher && (
-                        <button
-                            className="nav-item"
-                            onClick={() => { setShowStartModal(true); if (window.innerWidth < 1024) onToggle(); }}
-                            title="Create and start a new live class"
-                        >
-                            <Radio size={18} />
-                            <span>Start Live Class</span>
-                        </button>
-                    )}
+
+                    <div className="nav-section-label">Live Class</div>
+                    <button
+                        className={`nav-item ${showStartModal ? 'active' : ''}`}
+                        onClick={() => { setShowStartModal(true); if (window.innerWidth < 1024) onToggle(); }}
+                        title={isTeacher
+                            ? 'Create and start a new live class'
+                            : 'Create a live class. Shared teacher tools unlock automatically for teacher accounts.'}
+                    >
+                        <Radio size={18} />
+                        <span>Create Live Class</span>
+                    </button>
                     <button
                         className={`nav-item ${location.pathname.startsWith('/live') ? 'active' : ''}`}
                         onClick={() => { setShowJoinModal(true); if (window.innerWidth < 1024) onToggle(); }}
