@@ -1,3 +1,5 @@
+import availablePdfPaths from './availablePdfPaths.json';
+
 const subjectModuleLoaders = {
   chemistry: () => import('../chemistryPastPapers.js'),
   physics: () => import('../physicsPastPapers.js'),
@@ -17,50 +19,113 @@ const subjectModuleLoaders = {
   'olevel-economics': () => import('../oLevelEconomicsPastPapers.js'),
 };
 
+const availablePdfPathSet = new Set(availablePdfPaths);
+
+function hasAvailablePaperAsset(url) {
+  if (!url) {
+    return false;
+  }
+
+  if (/^https?:\/\//.test(url)) {
+    return true;
+  }
+
+  return availablePdfPathSet.has(url);
+}
+
+function getPaperUnitKey(paper) {
+  return paper.unit || paper.paper || null;
+}
+
+function filterAvailablePapers(papers) {
+  return papers.reduce((filteredPapers, paper) => {
+    const questionPaperUrl = hasAvailablePaperAsset(paper.questionPaperUrl)
+      ? paper.questionPaperUrl
+      : null;
+    const markingSchemeUrl = hasAvailablePaperAsset(paper.markingSchemeUrl)
+      ? paper.markingSchemeUrl
+      : null;
+
+    if (!questionPaperUrl && !markingSchemeUrl) {
+      return filteredPapers;
+    }
+
+    filteredPapers.push({
+      ...paper,
+      questionPaperUrl,
+      markingSchemeUrl,
+    });
+
+    return filteredPapers;
+  }, []);
+}
+
+function deriveAvailableYears(papers, fallbackYears = []) {
+  const years = [...new Set(papers.map((paper) => Number(paper.year)).filter(Boolean))]
+    .sort((left, right) => right - left);
+  return years.length ? years : fallbackYears;
+}
+
+function deriveAvailableUnits(papers, fallbackUnits = []) {
+  const availableUnitCodes = new Set(papers.map(getPaperUnitKey).filter(Boolean));
+  return fallbackUnits.filter((unit) => availableUnitCodes.has(unit.code));
+}
+
+function resolveSubjectData({ papers, years, units, isOLevel }) {
+  const filteredPapers = filterAvailablePapers(papers);
+
+  return {
+    papers: filteredPapers,
+    years: deriveAvailableYears(filteredPapers, years),
+    units: deriveAvailableUnits(filteredPapers, units),
+    isOLevel,
+  };
+}
+
 const subjectResolvers = {
-  chemistry: (module) => ({
+  chemistry: (module) => resolveSubjectData({
     papers: module.chemistryPastPapers,
     years: module.availableYears,
     units: module.availableUnits,
     isOLevel: false,
   }),
-  physics: (module) => ({
+  physics: (module) => resolveSubjectData({
     papers: module.physicsPastPapers,
     years: module.physicsAvailableYears,
     units: module.physicsAvailableUnits,
     isOLevel: false,
   }),
-  biology: (module) => ({
+  biology: (module) => resolveSubjectData({
     papers: module.biologyPastPapers,
     years: module.biologyAvailableYears,
     units: module.biologyAvailableUnits,
     isOLevel: false,
   }),
-  mathematics: (module) => ({
+  mathematics: (module) => resolveSubjectData({
     papers: module.mathematicsPastPapers,
     years: module.mathsAvailableYears,
     units: module.mathsAvailableUnits,
     isOLevel: false,
   }),
-  business: (module) => ({
+  business: (module) => resolveSubjectData({
     papers: module.businessPastPapers,
     years: module.businessAvailableYears,
     units: module.businessAvailableUnits,
     isOLevel: false,
   }),
-  economics: (module) => ({
+  economics: (module) => resolveSubjectData({
     papers: module.economicsPastPapers,
     years: module.economicsAvailableYears,
     units: module.economicsAvailableUnits,
     isOLevel: false,
   }),
-  accounting: (module) => ({
+  accounting: (module) => resolveSubjectData({
     papers: module.accountingPastPapers,
     years: module.accountingAvailableYears,
     units: module.accountingAvailableUnits,
     isOLevel: false,
   }),
-  cae: (module) => ({
+  cae: (module) => resolveSubjectData({
     papers: module.caePastPapers,
     years: [2022],
     units: module.caeComponents.map((component) => ({
@@ -70,7 +135,7 @@ const subjectResolvers = {
     })),
     isOLevel: false,
   }),
-  cpe: (module) => ({
+  cpe: (module) => resolveSubjectData({
     papers: module.cpePastPapers,
     years: [2022],
     units: module.cpeComponents.map((component) => ({
@@ -80,43 +145,43 @@ const subjectResolvers = {
     })),
     isOLevel: false,
   }),
-  'olevel-chemistry': (module) => ({
+  'olevel-chemistry': (module) => resolveSubjectData({
     papers: module.oLevelChemistryPastPapers,
     years: module.oLevelChemistryAvailableYears,
     units: module.oLevelChemistryAvailableUnits,
     isOLevel: true,
   }),
-  'olevel-physics': (module) => ({
+  'olevel-physics': (module) => resolveSubjectData({
     papers: module.oLevelPhysicsPastPapers,
     years: module.oLevelPhysicsAvailableYears,
     units: module.oLevelPhysicsAvailableUnits,
     isOLevel: true,
   }),
-  'olevel-biology': (module) => ({
+  'olevel-biology': (module) => resolveSubjectData({
     papers: module.oLevelBiologyPastPapers,
     years: module.oLevelBiologyAvailableYears,
     units: module.oLevelBiologyAvailableUnits,
     isOLevel: true,
   }),
-  'olevel-mathematics': (module) => ({
+  'olevel-mathematics': (module) => resolveSubjectData({
     papers: module.oLevelMathematicsPastPapers,
     years: module.oLevelMathematicsAvailableYears,
     units: module.oLevelMathematicsAvailableUnits,
     isOLevel: true,
   }),
-  'olevel-business': (module) => ({
+  'olevel-business': (module) => resolveSubjectData({
     papers: module.oLevelBusinessPastPapers,
     years: module.oLevelBusinessAvailableYears,
     units: module.oLevelBusinessAvailableUnits,
     isOLevel: true,
   }),
-  'olevel-accounting': (module) => ({
+  'olevel-accounting': (module) => resolveSubjectData({
     papers: module.oLevelAccountingPastPapers,
     years: module.oLevelAccountingAvailableYears,
     units: module.oLevelAccountingAvailableUnits,
     isOLevel: true,
   }),
-  'olevel-economics': (module) => ({
+  'olevel-economics': (module) => resolveSubjectData({
     papers: module.oLevelEconomicsPastPapers,
     years: module.oLevelEconomicsAvailableYears,
     units: module.oLevelEconomicsAvailableUnits,
@@ -156,13 +221,13 @@ export const subjectPaperCounts = Object.freeze({
   accounting: 36,
   cae: 8,
   cpe: 3,
-  'olevel-chemistry': 285,
-  'olevel-physics': 285,
-  'olevel-biology': 214,
-  'olevel-mathematics': 426,
-  'olevel-business': 142,
-  'olevel-accounting': 142,
-  'olevel-economics': 142,
+  'olevel-chemistry': 232,
+  'olevel-physics': 233,
+  'olevel-biology': 193,
+  'olevel-mathematics': 384,
+  'olevel-business': 128,
+  'olevel-accounting': 128,
+  'olevel-economics': 126,
 });
 
 function resolveSubjectIdFromPaperId(paperId) {

@@ -1,14 +1,16 @@
 import { useState, lazy, Suspense } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, X,
-    Brain, Trophy, Zap, UserPlus
+    Brain, Trophy, Zap, UserPlus, Radio
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth.js';
+import { createLiveClassSync } from '../../services/liveclass/liveClassSync.js';
 import './Layout.css';
 
 const JoinClassModal = lazy(() => import('../liveclass/JoinClassModal.jsx'));
+const SessionStartModal = lazy(() => import('../liveclass/SessionStartModal.jsx'));
 
 const navItems = [
     { path: '/', label: 'Dashboard', icon: LayoutDashboard },
@@ -22,9 +24,35 @@ const navItems = [
 
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
+    const navigate = useNavigate();
     const { role } = useAuth();
     const [showJoinModal, setShowJoinModal] = useState(false);
+    const [showStartModal, setShowStartModal] = useState(false);
     const isTeacher = role === 'teacher';
+
+    const handleStartClass = async (title, backgroundType) => {
+        const sync = createLiveClassSync({ onSessionEnded: () => {} });
+        try {
+            const session = await sync.createClass(title, backgroundType);
+            if (session) {
+                const navState = {
+                    session: {
+                        classId: session._id.toString(),
+                        title: session.title,
+                        backgroundType: session.backgroundType,
+                        status: session.status,
+                        hostIdentity: session.hostUserId ?? 'local',
+                        joinCode: session.joinCode,
+                    },
+                };
+                navigate(`/live/${session._id}`, { state: navState });
+            }
+        } catch (err) {
+            if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
+        } finally {
+            setShowStartModal(false);
+        }
+    };
 
     return (
         <>
@@ -82,6 +110,16 @@ export default function Sidebar({ isOpen, onToggle }) {
                             <span>Teacher Dashboard</span>
                         </Link>
                     )}
+                    {isTeacher && (
+                        <button
+                            className="nav-item"
+                            onClick={() => { setShowStartModal(true); if (window.innerWidth < 1024) onToggle(); }}
+                            title="Create and start a new live class"
+                        >
+                            <Radio size={18} />
+                            <span>Start Live Class</span>
+                        </button>
+                    )}
                     <button
                         className={`nav-item ${location.pathname.startsWith('/live') ? 'active' : ''}`}
                         onClick={() => { setShowJoinModal(true); if (window.innerWidth < 1024) onToggle(); }}
@@ -116,6 +154,14 @@ export default function Sidebar({ isOpen, onToggle }) {
             {showJoinModal && (
                 <Suspense fallback={null}>
                     <JoinClassModal onClose={() => setShowJoinModal(false)} />
+                </Suspense>
+            )}
+            {showStartModal && (
+                <Suspense fallback={null}>
+                    <SessionStartModal
+                        onStart={handleStartClass}
+                        onClose={() => setShowStartModal(false)}
+                    />
                 </Suspense>
             )}
         </>

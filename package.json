@@ -5,9 +5,10 @@
   "type": "module",
   "homepage": "https://iwaleedh.github.io/LearningAPP",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run pastpapers:manifest && vite",
+    "build": "npm run pastpapers:manifest && vite build",
     "lint": "eslint src public/sw.js scripts vite.config.js eslint.config.js",
+    "pastpapers:manifest": "node scripts/generatePastPaperManifest.mjs",
     "preview": "vite preview",
     "test": "tsx --test \"src/**/*.test.js\" \"convex/**/*.test.ts\"",
     "predeploy": "npm run build",
