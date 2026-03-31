@@ -25,32 +25,47 @@ const navItems = [
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
     const navigate = useNavigate();
-    const { role } = useAuth();
+    const { isAccessReady, role } = useAuth();
     const [showJoinModal, setShowJoinModal] = useState(false);
     const [showStartModal, setShowStartModal] = useState(false);
+    const [startError, setStartError] = useState('');
     const isTeacher = role === 'teacher';
+    const startBlockedReason = !isAccessReady
+        ? 'Checking your account access. Try again in a moment.'
+        : 'Only teacher accounts can create live classes.';
 
     const handleStartClass = async (title, backgroundType) => {
+        if (!isTeacher) {
+            const error = new Error(startBlockedReason);
+            setStartError(error.message);
+            throw error;
+        }
+
         const sync = createLiveClassSync({ onSessionEnded: () => {} });
         try {
-            const session = await sync.createClass(title, backgroundType);
-            if (session) {
-                const navState = {
-                    session: {
-                        classId: session._id.toString(),
-                        title: session.title,
-                        backgroundType: session.backgroundType,
-                        status: session.status,
-                        hostIdentity: session.hostUserId ?? 'local',
-                        joinCode: session.joinCode,
-                    },
-                };
-                navigate(`/live/${session._id}`, { state: navState });
+            setStartError('');
+            const session = await sync.createClass(title, backgroundType, { actorRole: role });
+            if (!session) {
+                throw new Error('Could not create a live class right now. Please try again.');
             }
-        } catch (err) {
-            if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
-        } finally {
+
+            const navState = {
+                session: {
+                    classId: session._id.toString(),
+                    title: session.title,
+                    backgroundType: session.backgroundType,
+                    status: session.status,
+                    hostIdentity: session.hostUserId ?? 'local',
+                    joinCode: session.joinCode,
+                },
+            };
+            navigate(`/live/${session._id}`, { state: navState });
             setShowStartModal(false);
+            return session;
+        } catch (err) {
+            setStartError(err?.message || 'Failed to create a live class.');
+            if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
+            throw err;
         }
     };
 
@@ -117,10 +132,17 @@ export default function Sidebar({ isOpen, onToggle }) {
                     <div className="nav-section-label">Live Class</div>
                     <button
                         className={`nav-item ${showStartModal ? 'active' : ''}`}
-                        onClick={() => { setShowStartModal(true); if (window.innerWidth < 1024) onToggle(); }}
-                        title={isTeacher
-                            ? 'Create and start a new live class'
-                            : 'Create a live class. Shared teacher tools unlock automatically for teacher accounts.'}
+                        onClick={() => {
+                            if (!isTeacher || !isAccessReady) {
+                                setStartError(startBlockedReason);
+                                return;
+                            }
+                            setStartError('');
+                            setShowStartModal(true);
+                            if (window.innerWidth < 1024) onToggle();
+                        }}
+                        title={isTeacher ? 'Create and start a new live class' : startBlockedReason}
+                        disabled={!isTeacher || !isAccessReady}
                     >
                         <Radio size={18} />
                         <span>Create Live Class</span>
@@ -165,7 +187,13 @@ export default function Sidebar({ isOpen, onToggle }) {
                 <Suspense fallback={null}>
                     <SessionStartModal
                         onStart={handleStartClass}
-                        onClose={() => setShowStartModal(false)}
+                        onClose={() => {
+                            setShowStartModal(false);
+                            setStartError('');
+                        }}
+                        canStart={isTeacher && isAccessReady}
+                        errorMessage={startError}
+                        blockedReason={isTeacher ? '' : startBlockedReason}
                     />
                 </Suspense>
             )}

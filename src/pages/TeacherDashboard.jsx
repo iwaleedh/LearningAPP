@@ -8,6 +8,7 @@ import {
 import { upsertNote } from '../services/notes/noteStore.js';
 import SessionStartModal from '../components/liveclass/SessionStartModal.jsx';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
+import { useAuth } from '../hooks/useAuth.js';
 import { seedNoteKeys, getSeedNote } from '../data/seedNotes/index.js';
 import './TeacherDashboard.css';
 
@@ -81,10 +82,16 @@ function getMasteryColor(pct) {
 /* ─── Component ─── */
 export default function TeacherDashboard() {
     const navigate = useNavigate();
+    const { isAccessReady, role } = useAuth();
     const [activeTab, setActiveTab] = useState('heatmap');
     const [questionSort, setQuestionSort] = useState('successRate');
     const [sortAsc, setSortAsc] = useState(true);
     const [showStartModal, setShowStartModal] = useState(false);
+    const [startError, setStartError] = useState('');
+    const isTeacher = role === 'teacher';
+    const startBlockedReason = !isAccessReady
+        ? 'Checking your account access. Try again in a moment.'
+        : 'Only teacher accounts can create live classes.';
 
     const [syncStatus, setSyncStatus] = useState('');
     const handleSyncNotes = async () => {
@@ -196,27 +203,37 @@ export default function TeacherDashboard() {
     };
 
     const handleStartClass = async (title, backgroundType) => {
+        if (!isTeacher) {
+            const error = new Error(startBlockedReason);
+            setStartError(error.message);
+            throw error;
+        }
+
         const sync = createLiveClassSync({ onSessionEnded: () => {} });
         try {
-            const session = await sync.createClass(title, backgroundType);
-            if (session) {
-                // Serialise BigInt/Identity for navigation state (used as offline fallback)
-                const navState = {
-                    session: {
-                        classId: session._id.toString(),
-                        title: session.title,
-                        backgroundType: session.backgroundType,
-                        status: session.status,
-                        hostIdentity: session.hostUserId ?? 'local',
-                        joinCode: session.joinCode,
-                    },
-                };
-                navigate(`/live/${session._id}`, { state: navState });
+            setStartError('');
+            const session = await sync.createClass(title, backgroundType, { actorRole: role });
+            if (!session) {
+                throw new Error('Could not create a live class right now. Please try again.');
             }
-        } catch (err) {
-            if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
-        } finally {
+
+            const navState = {
+                session: {
+                    classId: session._id.toString(),
+                    title: session.title,
+                    backgroundType: session.backgroundType,
+                    status: session.status,
+                    hostIdentity: session.hostUserId ?? 'local',
+                    joinCode: session.joinCode,
+                },
+            };
+            navigate(`/live/${session._id}`, { state: navState });
             setShowStartModal(false);
+            return session;
+        } catch (err) {
+            setStartError(err?.message || 'Failed to create a live class.');
+            if (import.meta.env.DEV) console.error('[LiveClass] Failed to create session:', err);
+            throw err;
         }
     };
 
@@ -235,7 +252,19 @@ export default function TeacherDashboard() {
                     <h1>Teacher Dashboard</h1>
                     <p className="teacher-subtitle">Monitor student performance and curriculum effectiveness</p>
                 </div>
-                <button className="btn btn-primary lc-start-btn" onClick={() => setShowStartModal(true)}>
+                <button
+                    className="btn btn-primary lc-start-btn"
+                    onClick={() => {
+                        if (!isTeacher || !isAccessReady) {
+                            setStartError(startBlockedReason);
+                            return;
+                        }
+                        setStartError('');
+                        setShowStartModal(true);
+                    }}
+                    disabled={!isTeacher || !isAccessReady}
+                    title={isTeacher ? 'Create and start a new live class' : startBlockedReason}
+                >
                     <Radio size={16} />
                     Start Live Class
                 </button>
@@ -244,7 +273,13 @@ export default function TeacherDashboard() {
             {showStartModal && (
                 <SessionStartModal
                     onStart={handleStartClass}
-                    onClose={() => setShowStartModal(false)}
+                    onClose={() => {
+                        setShowStartModal(false);
+                        setStartError('');
+                    }}
+                    canStart={isTeacher && isAccessReady}
+                    errorMessage={startError}
+                    blockedReason={isTeacher ? '' : startBlockedReason}
                 />
             )}
 

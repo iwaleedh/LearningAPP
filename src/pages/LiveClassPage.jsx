@@ -11,6 +11,7 @@ import {
   subscribeToJoinStatus, subscribeToJoinRequests,
 } from '../convex-client.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
+import { useAuth } from '../hooks/useAuth.js';
 import LiveClassToolbar from '../components/liveclass/LiveClassToolbar.jsx';
 import FontPicker from '../components/liveclass/FontPicker.jsx';
 import { DEFAULT_TEXT_FONT } from '../components/liveclass/fontDefaults.js';
@@ -144,12 +145,25 @@ function addStamp(canvas, emoji, color, x, y) {
   return text;
 }
 
+function hasFullLiveClassAccess(session) {
+  if (!session) return false;
+
+  return Boolean(
+    session.hostUserId ||
+    session.backgroundType ||
+    session.joinCode ||
+    session.createdAt ||
+    session.autoAccept !== undefined
+  );
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function LiveClassPage() {
   const { sessionId } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  const { isAccessReady, role: authRole, userId: authUserId } = useAuth();
 
   const classId = sessionId ?? null;
 
@@ -165,6 +179,7 @@ export default function LiveClassPage() {
   const [handRaises, setHandRaises] = useState([]);
   const [timerState, setTimerState] = useState(null);
   const [backgroundType, setBackgroundType] = useState('white');
+  const [isCanvasReady, setIsCanvasReady] = useState(false);
 
   // Tool state
   const [tool, setTool] = useState('pen');
@@ -412,21 +427,53 @@ export default function LiveClassPage() {
     rulerStateRef.current = { x, y, angle };
   }, []);
 
-  // ── Offline/demo init: use navigation state session if Convex unavailable ──
+  useEffect(() => {
+    if (!classId) {
+      setEndedMsg('Live class link is invalid.');
+    }
+  }, [classId]);
+
+  // ── Offline/demo init: use navigation state session if Convex is unavailable ──
   useEffect(() => {
     const navSession = location.state?.session;
-    if (!navSession || role) return;
-    setSessionData({
+    if (!navSession) return;
+
+    setSessionData((prev) => prev ?? {
       ...navSession,
-      classId: navSession.classId,
-      hostUserId: navSession.hostIdentity ?? navSession.hostUserId,
+      classId: navSession.classId ?? classId,
+      hostUserId: navSession.hostUserId ?? navSession.hostIdentity ?? null,
     });
     setBackgroundType(navSession.backgroundType ?? 'white');
-    const userId = getCurrentUserId();
-    const isTeacher = userId ? (navSession.hostIdentity === userId || navSession.hostUserId === userId) : true;
-    setRole(isTeacher ? 'teacher' : 'student');
-    setStdbStatus('offline');
-  }, [location.state, role]);
+
+    if (isAccessReady) {
+      setRole((prev) => prev ?? (authRole === 'teacher' ? 'teacher' : 'student'));
+      setStdbStatus((prev) => (prev === 'connected' ? prev : 'offline'));
+    }
+  }, [authRole, classId, isAccessReady, location.state]);
+
+  // ── Refresh recovery for already-authorized sessions (local or cached) ─────
+  useEffect(() => {
+    if (!classId || !isAccessReady || location.state?.session) return;
+
+    let cancelled = false;
+
+    void getLiveClassById(classId).then((session) => {
+      if (cancelled || !hasFullLiveClassAccess(session)) return;
+
+      setSessionData((prev) => prev ?? session);
+      setBackgroundType(session.backgroundType ?? 'white');
+
+      const isHost = Boolean(authUserId && session.hostUserId === authUserId);
+      setRole((prev) => prev ?? (isHost && authRole === 'teacher' ? 'teacher' : 'student'));
+      setStdbStatus((prev) => (prev === 'connected' ? prev : 'offline'));
+    }).catch(() => {
+      // Keep the dedicated online bootstrap path below as the source of truth.
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [authRole, authUserId, classId, isAccessReady, location.state]);
 
   // ── Handle join-request flow (student arriving from JoinClassModal) ───────
   useEffect(() => {
@@ -480,7 +527,17 @@ export default function LiveClassPage() {
       }
     });
 
-    // Initial check in case auto-accepted
+    // Initial check in case the request was already accepted before the subscription attached.
+    void getLiveClassById(classId).then((session) => {
+      if (!hasFullLiveClassAccess(session)) return;
+      setJoinStatus('accepted');
+      setSessionData(session);
+      setBackgroundType(session.backgroundType ?? 'white');
+      setRole('student');
+    }).catch(() => {
+      // Wait for subscription updates when the session is not yet available.
+    });
+
     setJoinStatus('pending');
 
     return () => unsub?.();
@@ -488,6 +545,8 @@ export default function LiveClassPage() {
 
   // ── Init Convex & detect role (online mode) ──────────────────────────
   useEffect(() => {
+    if (!classId) return;
+
     onConvexError(() => {
       // Only update to offline if we haven't already connected
       setStdbStatus(prev => prev === 'connected' ? 'connected' : 'offline');
@@ -510,14 +569,9 @@ export default function LiveClassPage() {
         if (cancelled) return;
 
         if (!session) {
-          // Don't override if student already joined via dialog or we have an offline session
-          setRole(prev => {
-            if (prev) return prev; // already set — keep it
-            if (!location.state?.session) {
-              setEndedMsg('Class not found or already ended.');
-            }
-            return prev;
-          });
+          if (!location.state?.session && !joinRequestId) {
+            setEndedMsg('Class not found or already ended.');
+          }
           return;
         }
 
@@ -525,17 +579,26 @@ export default function LiveClassPage() {
         setBackgroundType(session.backgroundType ?? 'white');
 
         const isHost = session.hostUserId === userId;
-        const hasTeacherRole = await convexIsTeacher();
-        const hasFullSessionAccess = Boolean(session.hostUserId);
+        let hasTeacherRole = authRole === 'teacher';
+        try {
+          hasTeacherRole = hasTeacherRole || await convexIsTeacher();
+        } catch {
+          // Fall back to auth state when Convex role lookup is unavailable.
+        }
         if (cancelled) return;
 
-        if (isHost || hasTeacherRole) {
-          setRole(prev => prev ?? 'teacher');
+        if (isHost && hasTeacherRole) {
+          setRole('teacher');
           return;
         }
 
-        if (hasFullSessionAccess) {
-          setRole(prev => prev ?? 'student');
+        if (hasTeacherRole && !joinRequestId) {
+          setRole('teacher');
+          return;
+        }
+
+        if (hasFullLiveClassAccess(session)) {
+          setRole('student');
         }
       })();
     });
@@ -543,8 +606,7 @@ export default function LiveClassPage() {
     return () => {
       cancelled = true;
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [classId]);
+  }, [authRole, classId, joinRequestId, location.state]);
 
   // ── Teacher: subscribe to join requests ──────────────────────────────────
   useEffect(() => {
@@ -562,7 +624,31 @@ export default function LiveClassPage() {
 
   // ── Set up sync once role is known ─────────────────────────────────────────
   useEffect(() => {
-    if (!role || !classId) return;
+    if (!role || !classId || !isCanvasReady) return;
+
+    let cancelled = false;
+
+    const hydrateExistingStrokes = (existingStrokes = []) => {
+      const targetFabric = fabricRef.current;
+      if (!targetFabric || cancelled) return;
+
+      existingStrokes.forEach((stroke) => {
+        try {
+          const parsed = JSON.parse(stroke.fabricObjectJson);
+          fabricUtil.enlivenObjects([parsed]).then((objs) => {
+            if (cancelled || !fabricRef.current) return;
+            objs.forEach((obj) => {
+              obj.selectable = false;
+              obj.evented = false;
+              targetFabric.add(obj);
+            });
+            targetFabric.requestRenderAll();
+          });
+        } catch {
+          // Ignore malformed remote strokes.
+        }
+      });
+    };
 
     const sync = createLiveClassSync({
       onStrokeAdded: (strokeId, json) => {
@@ -632,46 +718,33 @@ export default function LiveClassPage() {
     syncRef.current = sync;
 
     if (role === 'teacher') {
-      // Re-attach DB listeners (the sync instance from TeacherDashboard was
-      // abandoned on navigation, so we must attach fresh listeners here).
-      const existingStrokes = sync.watchClass(classId);
-      // Pre-populate canvas with any strokes already in DB (e.g. after remount)
-      if (existingStrokes.length > 0) {
-        const fc = fabricRef.current;
-        existingStrokes.forEach(s => {
-          try {
-            const parsed = JSON.parse(s.fabricObjectJson);
-            fabricUtil.enlivenObjects([parsed]).then((objs) => {
-              objs.forEach(o => { o.selectable = false; o.evented = false; fc?.add(o); });
-              fc?.requestRenderAll();
-            });
-          } catch { /* noop */ }
+      Promise.resolve(sync.watchClass(classId))
+        .then((existingStrokes) => {
+          hydrateExistingStrokes(existingStrokes);
+        })
+        .catch(() => {
+          // BroadcastChannel/local fallback will keep the page functional.
         });
-      }
     } else {
-      sync.joinClass(classId).then(existingStrokes => {
-        const fc = fabricRef.current;
-        if (!fc) return;
-        existingStrokes.forEach(s => {
-          try {
-            const parsed = JSON.parse(s.fabricObjectJson);
-            fabricUtil.enlivenObjects([parsed]).then((objs) => {
-              objs.forEach(o => { o.selectable = false; o.evented = false; fc.add(o); });
-              fc.requestRenderAll();
-            });
-          } catch { /* noop */ }
+      sync.joinClass(classId)
+        .then((existingStrokes) => {
+          hydrateExistingStrokes(existingStrokes);
+        })
+        .catch(() => {
+          // Offline — BroadcastChannel sync will handle it.
         });
-      }).catch(() => { /* offline — BroadcastChannel sync will handle it */ });
     }
 
     return () => {
+      cancelled = true;
       sync.leaveClass();
+      syncRef.current = null;
     };
   // stdbStatus is included so the sync re-runs once Convex connects — this
   // handles the race where offline-init sets role before client is available,
   // causing watchClass/joinClass to no-op on a null client.
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [role, classId, stdbStatus]);
+  }, [role, classId, isCanvasReady, stdbStatus]);
 
   // ── BroadcastChannel sync (same-origin real-time sync) ─────────────────────
   useEffect(() => {
@@ -752,6 +825,7 @@ export default function LiveClassPage() {
       selection: false,
     });
     fabricRef.current = fc;
+    setIsCanvasReady(true);
 
     const ro = new ResizeObserver(entries => {
       for (const entry of entries) {
@@ -792,6 +866,8 @@ export default function LiveClassPage() {
     }
 
     return () => {
+      setIsCanvasReady(false);
+      fabricRef.current = null;
       fc.dispose();
       ro.disconnect();
     };

@@ -19,8 +19,8 @@ export default function JoinClassModal({ onClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const trimmedName = name.trim();
-    const cleanCode = code.trim().toUpperCase();
+    const trimmedName = name.replace(/\s+/g, ' ').trim();
+    const cleanCode = code.replace(/[^A-Z0-9]/gi, '').trim().toUpperCase();
 
     if (authBlocked) {
       setError(
@@ -73,7 +73,7 @@ export default function JoinClassModal({ onClose }) {
       });
     } catch (err) {
       console.error('[JoinClassModal] error:', err);
-      setError('Something went wrong. Please try again.');
+      setError(err?.message || 'Something went wrong. Please try again.');
       setLoading(false);
     }
   };
@@ -109,7 +109,7 @@ export default function JoinClassModal({ onClose }) {
             type="text"
             placeholder="Class code (e.g. AB3X7K)"
             value={code}
-            onChange={(e) => setCode(e.target.value.toUpperCase())}
+            onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ''))}
             maxLength={6}
             disabled={loading}
             spellCheck={false}
