@@ -6,6 +6,10 @@ import packageJson from './package.json' with { type: 'json' }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const productionBase = (() => {
+  if (process.env.VERCEL) {
+    return '/'
+  }
+
   const homepage = packageJson.homepage
 
   if (!homepage) {
