@@ -12,9 +12,9 @@ export default function RequireApproved({ children }) {
     return <div className="card animate-fade-in">Checking access...</div>;
   }
 
-  // Guest / anonymous — no account row, let through
+  // Guest / anonymous — no account row, redirect to login/landing
   if (!isSignedIn) {
-    return children;
+    return <Navigate to="/" replace />;
   }
 
   // Signed in but account not approved

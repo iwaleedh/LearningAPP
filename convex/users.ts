@@ -7,6 +7,7 @@ import {
   getUserRecordById,
   getRoleFromIdentity,
   isAdminEmail,
+  isAdminUsername,
   isTeacherUserId,
   requireAuthenticatedUserId,
   requireMatchingUserId,
@@ -83,7 +84,7 @@ export const registerUser = mutation({
       role: claimedRole ?? "student",
       email,
       avatarUrl,
-      accountStatus: isAdminEmail(email) ? "approved" : "pending",
+        accountStatus: (isAdminEmail(email) || isAdminUsername(username)) ? "approved" : "pending",
       statusUpdatedAt: Date.now(),
       createdAt: Date.now(),
     });

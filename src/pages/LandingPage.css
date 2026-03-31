@@ -1,0 +1,279 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(var(--color-primary-100) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--color-text);
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Ensure it stays above everything if rendered in App */
+}
+
+/* Overriding App-level wrappers via absolute positioning effectively replaces the view,
+   but we can also just make it match the size and be scrollable. */
+.landing-page {
+  position: fixed;
+  overflow-y: auto;
+  padding-bottom: var(--space-8);
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+  background-color: rgba(11, 15, 26, 0.85); /* fallback for dark mode */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+[data-theme="light"] .landing-nav {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.landing-logo {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.landing-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8);
+  gap: 120px;
+}
+
+/* Hero */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-4);
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+}
+
+.hero-cta {
+  font-size: var(--font-size-lg);
+  padding: 0 var(--space-8);
+  height: 56px;
+  border-radius: 28px;
+  box-shadow: 0 10px 25px var(--color-primary-200);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px var(--color-primary-200);
+}
+
+/* Features */
+.features-section {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--space-10);
+  color: var(--color-text);
+}
+
+.section-title.text-left {
+  text-align: left;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+}
+
+.feature-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--space-6);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary-light);
+}
+
+.feature-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+.feature-icon-wrapper.blue { background-color: var(--color-primary-100); color: var(--color-primary); }
+.feature-icon-wrapper.purple { background-color: rgba(168, 85, 247, 0.15); color: #a855f7; }
+.feature-icon-wrapper.orange { background-color: var(--color-warning-light); color: var(--color-warning); }
+.feature-icon-wrapper.green { background-color: var(--color-success-light); color: var(--color-success); }
+
+.feature-card h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.feature-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* Benefits */
+.benefits-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .benefits-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.benefits-list li strong {
+  color: var(--color-text);
+}
+
+.benefit-icon {
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Mock UI decoration */
+.decorative-app-mock {
+  width: 100%;
+  height: 400px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mock-header {
+  height: 40px;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.mock-body {
+  display: flex;
+  flex: 1;
+}
+
+.mock-sidebar {
+  width: 100px;
+  border-right: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.mock-content {
+  flex: 1;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background-color: var(--color-bg-secondary);
+}
+
+.mock-card {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.mock-card.lines {
+  height: 60px;
+}
+
+.mock-card.area {
+  flex: 1;
+}
+
+/* Footer */
+.landing-footer {
+  text-align: center;
+  padding: var(--space-8);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-bg);
+}

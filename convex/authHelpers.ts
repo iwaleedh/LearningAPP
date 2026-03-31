@@ -19,26 +19,32 @@ type IdentityWithRoleClaims = {
 // Users whose Clerk email matches an entry are treated as admins.
 // Add additional emails to support multiple admins in the future.
 const ADMIN_EMAILS: string[] = ["iwaleedh@gmail.com"];
+const ADMIN_USERNAMES: string[] = ["admim", "admin"];
 
 export function isAdminEmail(email: string | undefined | null): boolean {
   if (!email) return false;
   return ADMIN_EMAILS.includes(email.trim().toLowerCase());
 }
 
+export function isAdminUsername(username: string | undefined | null): boolean {
+  if (!username) return false;
+  return ADMIN_USERNAMES.includes(username.trim().toLowerCase());
+}
+
 export async function isAdmin(ctx: PublicCtx): Promise<boolean> {
   const identity = await getAuthenticatedIdentity(ctx);
   if (!identity?.subject) return false;
-  if (isAdminEmail(identity.email)) return true;
+  if (isAdminEmail(identity.email) || isAdminUsername(identity.preferredUsername)) return true;
   const user = await getUserRecordById(ctx, identity.subject);
-  return isAdminEmail(user?.email);
+  return isAdminEmail(user?.email) || isAdminUsername(user?.username);
 }
 
 export async function requireAdmin(ctx: PublicCtx): Promise<string> {
   const userId = await requireAuthenticatedUserId(ctx);
   const identity = await getAuthenticatedIdentity(ctx);
-  if (isAdminEmail(identity?.email)) return userId;
+  if (isAdminEmail(identity?.email) || isAdminUsername(identity?.preferredUsername)) return userId;
   const user = await getUserRecordById(ctx, userId);
-  if (isAdminEmail(user?.email)) return userId;
+  if (isAdminEmail(user?.email) || isAdminUsername(user?.username)) return userId;
   throw new Error("Admin access required.");
 }
 
@@ -47,10 +53,10 @@ export async function requireAdmin(ctx: PublicCtx): Promise<string> {
  * Missing/undefined accountStatus is treated as 'approved' (backward compat).
  */
 export function effectiveAccountStatus(
-  user: { email?: string; accountStatus?: string } | null | undefined,
+  user: { email?: string; username?: string, accountStatus?: string } | null | undefined,
 ): "pending" | "approved" | "blocked" {
   if (!user) return "approved";
-  if (isAdminEmail(user.email)) return "approved";
+  if (isAdminEmail(user.email) || isAdminUsername(user.username)) return "approved";
   const status = user.accountStatus;
   if (status === "pending" || status === "blocked") return status;
   return "approved";

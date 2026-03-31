@@ -1,7 +1,8 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import ThemeProvider from './context/ThemeProvider';
 import AuthProvider from './context/AuthProvider';
+import { useAuth } from './hooks/useAuth.js';
 import ErrorBoundary from './components/ErrorBoundary';
 import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
@@ -12,7 +13,7 @@ import RequireApproved from './components/auth/RequireApproved';
 import { canAccessLocalLiveClassAsGuest } from './components/auth/accessControl.js';
 import './App.css';
 
-
+const LandingPage = lazy(() => import('./pages/LandingPage'));
 const ChapterPage = lazy(() => import('./pages/ChapterPage'));
 const ExercisePage = lazy(() => import('./pages/ExercisePage'));
 const PastPapersPage = lazy(() => import('./pages/PastPapersPage'));
@@ -36,6 +37,8 @@ const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const location = useLocation();
+  const { isLoaded, isSignedIn } = useAuth();
 
   // Global keyboard shortcut for search
   useEffect(() => {
@@ -51,6 +54,18 @@ function AppContent() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
+
+  if (isLoaded && !isSignedIn && location.pathname === '/') {
+    return (
+      <div className="app-root">
+        <Suspense fallback={<div className="card animate-fade-in" style={{margin:'var(--space-8)'}}>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </Suspense>
+      </div>
+    );
+  }
 
   return (
     <div className="app-layout">

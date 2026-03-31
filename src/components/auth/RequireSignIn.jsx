@@ -25,8 +25,7 @@ export default function RequireSignIn({
   return (
     <Navigate
       to={{
-        pathname: '/settings',
-        hash: '#profile',
+        pathname: '/',
       }}
       replace
       state={buildProtectedRouteState(location, {
