@@ -98,6 +98,8 @@ function AuthContextProvider({ children }) {
   const { getToken } = useClerkAuth();
   const [dbUser, setDbUser] = useState(null);
   const [role, setRole] = useState('student');
+  const [accountStatus, setAccountStatus] = useState(null);
+  const [isAdminUser, setIsAdminUser] = useState(false);
   const [syncedAccessKey, setSyncedAccessKey] = useState(null);
   const expectedAccessKey = isLoaded
     ? (isSignedIn && clerkUser ? `signed-in:${clerkUser.id}` : 'signed-out')
@@ -137,12 +139,15 @@ function AuthContextProvider({ children }) {
             setRole('student');
             return;
           }
-          const [user, serverRole] = await Promise.all([
+          const [user, serverRole, statusResult] = await Promise.all([
             client.query(api.users.getUser, { userId: clerkUser.id }),
             client.query(api.users.getMyRole, {}),
+            client.query(api.admin.getMyAccountStatus, {}),
           ]);
           if (cancelled) return;
 
+          setAccountStatus(statusResult?.accountStatus ?? null);
+          setIsAdminUser(statusResult?.isAdmin ?? false);
           const resolvedRole = claimedRole || serverRole || user?.role || 'student';
           if (user?.username) {
             setCurrentUsernameOverride(user.username);
@@ -159,11 +164,15 @@ function AuthContextProvider({ children }) {
         setLogContext({ userId: anonId || '' });
         setDbUser(null);
         setRole('student');
+        setAccountStatus(null);
+        setIsAdminUser(false);
       } catch (error) {
         if (cancelled) return;
         console.error('Auth sync failed:', error);
         setDbUser(null);
         setRole('student');
+        setAccountStatus(null);
+        setIsAdminUser(false);
       } finally {
         if (!cancelled) {
           setSyncedAccessKey(expectedAccessKey);
@@ -183,6 +192,8 @@ function AuthContextProvider({ children }) {
     if (!isLoaded) return;
     setDbUser(null);
     setRole('student');
+    setAccountStatus(null);
+    setIsAdminUser(false);
   }, [clerkSignOut, isLoaded]);
 
   const value = useMemo(() => {
@@ -206,12 +217,14 @@ function AuthContextProvider({ children }) {
       isLoaded,
       isSignedIn: !!isSignedIn,
       role: resolvedRole,
+      accountStatus,
+      isAdmin: isAdminUser,
       userId,
       username,
       avatarUrl,
       signOut,
     };
-  }, [clerkUser, dbUser, expectedAccessKey, isLoaded, isSignedIn, role, signOut, syncedAccessKey]);
+  }, [accountStatus, clerkUser, dbUser, expectedAccessKey, isAdminUser, isLoaded, isSignedIn, role, signOut, syncedAccessKey]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
@@ -282,6 +295,8 @@ function AnonymousAuthContextProvider({ children }) {
     isLoaded: true,
     isSignedIn: Boolean(devSession),
     role: devSession?.role || 'student',
+    accountStatus: devSession ? 'approved' : null,
+    isAdmin: false,
     userId: devSession?.userId || getCurrentUserId(),
     username: devSession?.username || getCurrentUsername() || 'Anonymous',
     avatarUrl: null,

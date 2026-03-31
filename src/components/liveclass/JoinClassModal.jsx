@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { getLiveClassByCode, requestJoin } from '../../convex-client.js';
 import { useAuth } from '../../hooks/useAuth.js';
+import { isLocalLiveClassId } from '../../services/liveclass/localLiveClassStore.js';
 
 /**
  * JoinClassModal — students enter their name + 6-char class code to request
@@ -15,21 +16,13 @@ export default function JoinClassModal({ onClose }) {
   const [code, setCode] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const authBlocked = isLoaded && !isSignedIn;
+  const authBlocked = isLoaded && canSignIn && !isSignedIn;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const trimmedName = name.replace(/\s+/g, ' ').trim();
     const cleanCode = code.replace(/[^A-Z0-9]/gi, '').trim().toUpperCase();
 
-    if (authBlocked) {
-      setError(
-        canSignIn
-          ? 'Please sign in from the top-right menu before joining a live class.'
-          : 'Live classes require sign-in, but authentication is not configured in this environment yet.'
-      );
-      return;
-    }
     if (!trimmedName) { setError('Please enter your name.'); return; }
     if (cleanCode.length !== 6) { setError('Class code must be 6 characters.'); return; }
 
@@ -45,6 +38,19 @@ export default function JoinClassModal({ onClose }) {
       }
 
       const sessionId = session._id;
+      const isLocalSession = isLocalLiveClassId(sessionId);
+
+      if (authBlocked) {
+        setError('Please sign in from the top-right menu before joining a live class.');
+        setLoading(false);
+        return;
+      }
+
+      if (!canSignIn && !isLocalSession) {
+        setError('This live class requires sign-in, but authentication is not configured in this environment yet.');
+        setLoading(false);
+        return;
+      }
 
       // Stable tempId per student per browser session
       let tempId = sessionStorage.getItem(`lt_tempId_${sessionId}`);
@@ -91,7 +97,9 @@ export default function JoinClassModal({ onClose }) {
             ? canSignIn
               ? 'Sign in first, then enter the class code from your teacher'
               : 'Live classes need sign-in, but this app is currently running in guest-only mode'
-            : 'Enter your name and the class code from your teacher'}
+            : !canSignIn
+              ? 'Enter your name and class code. Local guest classes will still work in this environment.'
+              : 'Enter your name and the class code from your teacher'}
         </p>
         <form onSubmit={handleSubmit}>
           <input

@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
     BookOpen, FlaskConical, FileQuestion, GraduationCap,
     LayoutDashboard, Settings, X,
-    Brain, Trophy, Zap, UserPlus, Radio
+    Brain, Trophy, Zap, UserPlus, Radio, Shield
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth.js';
 import { createLiveClassSync } from '../../services/liveclass/liveClassSync.js';
@@ -25,7 +25,7 @@ const navItems = [
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
     const navigate = useNavigate();
-    const { isAccessReady, role } = useAuth();
+    const { isAccessReady, role, isAdmin } = useAuth();
     const [showJoinModal, setShowJoinModal] = useState(false);
     const [showStartModal, setShowStartModal] = useState(false);
     const [startError, setStartError] = useState('');
@@ -114,17 +114,29 @@ export default function Sidebar({ isOpen, onToggle }) {
                     })}
 
                     <div className="nav-divider" />
-                    {isTeacher && (
+                    {(isTeacher || isAdmin) && (
                         <>
                             <div className="nav-section-label">Admin</div>
-                            <Link
-                                to="/teacher"
-                                className={`nav-item ${location.pathname.startsWith('/teacher') ? 'active' : ''}`}
-                                onClick={() => window.innerWidth < 1024 && onToggle()}
-                            >
-                                <LayoutDashboard size={18} />
-                                <span>Teacher Dashboard</span>
-                            </Link>
+                            {isTeacher && (
+                                <Link
+                                    to="/teacher"
+                                    className={`nav-item ${location.pathname.startsWith('/teacher') ? 'active' : ''}`}
+                                    onClick={() => window.innerWidth < 1024 && onToggle()}
+                                >
+                                    <LayoutDashboard size={18} />
+                                    <span>Teacher Dashboard</span>
+                                </Link>
+                            )}
+                            {isAdmin && (
+                                <Link
+                                    to="/admin"
+                                    className={`nav-item ${location.pathname === '/admin' ? 'active' : ''}`}
+                                    onClick={() => window.innerWidth < 1024 && onToggle()}
+                                >
+                                    <Shield size={18} />
+                                    <span>Admin Panel</span>
+                                </Link>
+                            )}
                             <div className="nav-divider" />
                         </>
                     )}

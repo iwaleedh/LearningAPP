@@ -15,6 +15,66 @@ type IdentityWithRoleClaims = {
   public_metadata?: { role?: unknown };
 };
 
+// ── Admin email list ──────────────────────────────────────────────────
+// Users whose Clerk email matches an entry are treated as admins.
+// Add additional emails to support multiple admins in the future.
+const ADMIN_EMAILS: string[] = ["iwaleedh@gmail.com"];
+
+export function isAdminEmail(email: string | undefined | null): boolean {
+  if (!email) return false;
+  return ADMIN_EMAILS.includes(email.trim().toLowerCase());
+}
+
+export async function isAdmin(ctx: PublicCtx): Promise<boolean> {
+  const identity = await getAuthenticatedIdentity(ctx);
+  if (!identity?.subject) return false;
+  if (isAdminEmail(identity.email)) return true;
+  const user = await getUserRecordById(ctx, identity.subject);
+  return isAdminEmail(user?.email);
+}
+
+export async function requireAdmin(ctx: PublicCtx): Promise<string> {
+  const userId = await requireAuthenticatedUserId(ctx);
+  const identity = await getAuthenticatedIdentity(ctx);
+  if (isAdminEmail(identity?.email)) return userId;
+  const user = await getUserRecordById(ctx, userId);
+  if (isAdminEmail(user?.email)) return userId;
+  throw new Error("Admin access required.");
+}
+
+/**
+ * Returns the effective account status for a user record.
+ * Missing/undefined accountStatus is treated as 'approved' (backward compat).
+ */
+export function effectiveAccountStatus(
+  user: { email?: string; accountStatus?: string } | null | undefined,
+): "pending" | "approved" | "blocked" {
+  if (!user) return "approved";
+  if (isAdminEmail(user.email)) return "approved";
+  const status = user.accountStatus;
+  if (status === "pending" || status === "blocked") return status;
+  return "approved";
+}
+
+/**
+ * Throws if the calling user's account is not approved.
+ * Admin emails always pass. Missing accountStatus = approved (legacy users).
+ */
+export async function requireApprovedAccount(ctx: PublicCtx): Promise<void> {
+  const identity = await getAuthenticatedIdentity(ctx);
+  if (!identity?.subject) return; // anonymous — no account to check
+  if (isAdminEmail(identity.email)) return;
+  const user = await getUserRecordById(ctx, identity.subject);
+  if (!user) return; // not yet registered — will be gated at first query
+  const status = effectiveAccountStatus(user);
+  if (status === "pending") {
+    throw new Error("Account pending approval.");
+  }
+  if (status === "blocked") {
+    throw new Error("Account blocked by administrator.");
+  }
+}
+
 function hasHostUserId(value: unknown): value is { hostUserId: string } {
   return typeof value === "object" && value !== null && "hostUserId" in value;
 }

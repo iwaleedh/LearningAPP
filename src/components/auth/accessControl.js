@@ -23,6 +23,14 @@ export function sanitizeRedirectPath(path, fallback = '/') {
   return trimmed;
 }
 
+export function canAccessLocalLiveClassAsGuest(pathname, { canSignIn = true } = {}) {
+  if (canSignIn) {
+    return false;
+  }
+
+  return /^\/live\/local_[A-Za-z0-9_]+$/.test(String(pathname || ''));
+}
+
 export function buildProtectedRouteState(
   location,
   { reason = 'continue', accessRequired = 'auth', requiredRoles = undefined, deniedRole = undefined } = {}

@@ -2,15 +2,23 @@ import { Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth.js';
 import { buildProtectedRouteState } from './accessControl.js';
 
-export default function RequireSignIn({ children, reason = 'continue to this page' }) {
-  const { isLoaded, isSignedIn } = useAuth();
+export default function RequireSignIn({
+  children,
+  reason = 'continue to this page',
+  allowAnonymousAccess,
+}) {
+  const { canSignIn, isLoaded, isSignedIn } = useAuth();
   const location = useLocation();
 
   if (!isLoaded) {
     return <div className="card animate-fade-in">Checking access...</div>;
   }
 
-  if (isSignedIn) {
+  if (
+    isSignedIn ||
+    (typeof allowAnonymousAccess === 'function' &&
+      allowAnonymousAccess({ canSignIn, isLoaded, isSignedIn, location }))
+  ) {
     return children;
   }
 

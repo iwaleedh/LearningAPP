@@ -8,8 +8,12 @@ export default defineSchema({
     role: v.string(),         // 'student' | 'teacher'
     email: v.optional(v.string()),
     avatarUrl: v.optional(v.string()),
+    accountStatus: v.optional(v.string()), // 'pending' | 'approved' | 'blocked' (undefined = approved for legacy)
+    statusUpdatedAt: v.optional(v.number()),
     createdAt: v.number(),
-  }).index("by_userId", ["userId"]),
+  })
+    .index("by_userId", ["userId"])
+    .index("by_accountStatus", ["accountStatus"]),
 
   notes: defineTable({
     noteId: v.string(),

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   buildAccessNotice,
   buildProtectedRouteState,
+  canAccessLocalLiveClassAsGuest,
   getLocationPath,
   resolvePostAuthRedirect,
   sanitizeRedirectPath,
@@ -20,6 +21,12 @@ test('sanitizeRedirectPath only allows in-app paths', () => {
   assert.equal(sanitizeRedirectPath('https://example.com/teacher', '/settings'), '/settings');
   assert.equal(sanitizeRedirectPath('//example.com/teacher', '/settings'), '/settings');
   assert.equal(sanitizeRedirectPath('javascript:alert(1)', '/settings'), '/settings');
+});
+
+test('canAccessLocalLiveClassAsGuest only allows local live routes when sign-in is unavailable', () => {
+  assert.equal(canAccessLocalLiveClassAsGuest('/live/local_1774966423787_tx2vhb', { canSignIn: false }), true);
+  assert.equal(canAccessLocalLiveClassAsGuest('/live/session-42', { canSignIn: false }), false);
+  assert.equal(canAccessLocalLiveClassAsGuest('/live/local_1774966423787_tx2vhb', { canSignIn: true }), false);
 });
 
 test('buildProtectedRouteState captures the requested page and access details', () => {

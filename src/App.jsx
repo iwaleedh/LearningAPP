@@ -8,6 +8,8 @@ import Header from './components/layout/Header';
 import HomePage from './pages/HomePage';
 import RequireRole from './components/auth/RequireRole';
 import RequireSignIn from './components/auth/RequireSignIn';
+import RequireApproved from './components/auth/RequireApproved';
+import { canAccessLocalLiveClassAsGuest } from './components/auth/accessControl.js';
 import './App.css';
 
 
@@ -27,6 +29,8 @@ const TeacherMonitorPage = lazy(() => import('./pages/TeacherMonitorPage'));
 const LiveClassPage = lazy(() => import('./pages/LiveClassPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const StudentNotesViewPage = lazy(() => import('./pages/StudentNotesViewPage'));
+const PendingApprovalPage = lazy(() => import('./pages/PendingApprovalPage'));
+const AdminPage = lazy(() => import('./pages/AdminPage'));
 const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
 
 function AppContent() {
@@ -60,40 +64,63 @@ function AppContent() {
           <ErrorBoundary>
           <Suspense fallback={<div className="card animate-fade-in">Loading page...</div>}>
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/chapters" element={<ChapterPage />} />
-              <Route path="/chapters/:chapterId" element={<ChapterPage />} />
-              <Route path="/notes" element={<ChapterPage />} />
-              <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<NotePage />} />
-              <Route path="/exercises" element={<ExercisePage />} />
-              <Route path="/past-papers" element={<PastPapersPage />} />
-              <Route path="/flashcards" element={<FlashcardsPage />} />
-              <Route path="/progress" element={<ProgressPage />} />
-              <Route path="/mistakes" element={<MistakeBankPage />} />
-              <Route path="/settings" element={<SettingsPage />} />
+              {/* Ungated routes — accessible before approval */}
+              <Route path="/pending" element={<PendingApprovalPage />} />
+
+              {/* Admin route — requires admin flag */}
+              <Route
+                path="/admin"
+                element={(
+                  <RequireApproved>
+                    <AdminPage />
+                  </RequireApproved>
+                )}
+              />
+
+              {/* All other routes require approved account */}
+              <Route path="/" element={<RequireApproved><HomePage /></RequireApproved>} />
+              <Route path="/chapters" element={<RequireApproved><ChapterPage /></RequireApproved>} />
+              <Route path="/chapters/:chapterId" element={<RequireApproved><ChapterPage /></RequireApproved>} />
+              <Route path="/notes" element={<RequireApproved><ChapterPage /></RequireApproved>} />
+              <Route path="/notes/:subject/:unitId/:topicId/:subtopicIndex" element={<RequireApproved><NotePage /></RequireApproved>} />
+              <Route path="/exercises" element={<RequireApproved><ExercisePage /></RequireApproved>} />
+              <Route path="/past-papers" element={<RequireApproved><PastPapersPage /></RequireApproved>} />
+              <Route path="/flashcards" element={<RequireApproved><FlashcardsPage /></RequireApproved>} />
+              <Route path="/progress" element={<RequireApproved><ProgressPage /></RequireApproved>} />
+              <Route path="/mistakes" element={<RequireApproved><MistakeBankPage /></RequireApproved>} />
+              <Route path="/settings" element={<RequireApproved><SettingsPage /></RequireApproved>} />
               <Route
                 path="/teacher"
                 element={(
-                  <RequireRole allowedRoles={['teacher']} reason="open the teacher dashboard">
-                    <TeacherDashboard />
-                  </RequireRole>
+                  <RequireApproved>
+                    <RequireRole allowedRoles={['teacher']} reason="open the teacher dashboard">
+                      <TeacherDashboard />
+                    </RequireRole>
+                  </RequireApproved>
                 )}
               />
               <Route
                 path="/teacher/monitor"
                 element={(
-                  <RequireRole allowedRoles={['teacher']} reason="monitor live teacher sessions">
-                    <TeacherMonitorPage />
-                  </RequireRole>
+                  <RequireApproved>
+                    <RequireRole allowedRoles={['teacher']} reason="monitor live teacher sessions">
+                      <TeacherMonitorPage />
+                    </RequireRole>
+                  </RequireApproved>
                 )}
               />
-              <Route path="/advanced" element={<AdvancedPage />} />
-              <Route path="/backend-architectures" element={<BackendArchitecturesPage />} />
-              <Route path="/annotate/:paperId" element={<AnnotatePage />} />
+              <Route path="/advanced" element={<RequireApproved><AdvancedPage /></RequireApproved>} />
+              <Route path="/backend-architectures" element={<RequireApproved><BackendArchitecturesPage /></RequireApproved>} />
+              <Route path="/annotate/:paperId" element={<RequireApproved><AnnotatePage /></RequireApproved>} />
               <Route
                 path="/live/:sessionId"
                 element={(
-                  <RequireSignIn reason="join a live class">
+                  <RequireSignIn
+                    reason="join a live class"
+                    allowAnonymousAccess={({ canSignIn, location }) =>
+                      canAccessLocalLiveClassAsGuest(location?.pathname, { canSignIn })
+                    }
+                  >
                     <LiveClassPage />
                   </RequireSignIn>
                 )}
@@ -101,9 +128,11 @@ function AppContent() {
               <Route
                 path="/live-notes/:sessionId/:tempId"
                 element={(
-                  <RequireRole allowedRoles={['teacher']} reason="view student live notes">
-                    <StudentNotesViewPage />
-                  </RequireRole>
+                  <RequireApproved>
+                    <RequireRole allowedRoles={['teacher']} reason="view student live notes">
+                      <StudentNotesViewPage />
+                    </RequireRole>
+                  </RequireApproved>
                 )}
               />
               <Route path="*" element={<NotFoundPage />} />
