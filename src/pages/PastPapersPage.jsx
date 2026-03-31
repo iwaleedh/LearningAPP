@@ -75,6 +75,14 @@ const subjects = [
     },
 ];
 
+// Resolve a local path to an absolute URL using Vite's BASE_URL.
+// External https:// URLs are returned unchanged.
+function resolveUrl(url) {
+    if (!url || url.startsWith('https://')) return url;
+    // import.meta.env.BASE_URL is '/' in dev/Vercel, '/LearningAPP/' on GitHub Pages.
+    return import.meta.env.BASE_URL + url.slice(1);
+}
+
 // Download button component
 function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { // eslint-disable-line no-unused-vars
     const [status, setStatus] = useState(null);
@@ -93,7 +101,7 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
             return;
         }
 
-        const result = downloadFile(url, filename);
+        const result = downloadFile(resolveUrl(url), filename);
 
         if (result.success) {
             setStatus('success');
@@ -129,7 +137,7 @@ function ViewPdfButton({ paper, type, label }) {
     return (
         <button
             className="btn btn-sm btn-outline"
-            onClick={() => url && window.open(url, '_blank', 'noopener,noreferrer')}
+            onClick={() => url && window.open(resolveUrl(url), '_blank', 'noopener,noreferrer')}
             disabled={!url}
             title={!url ? 'Coming soon' : `Open ${label} in new tab`}
             style={{
