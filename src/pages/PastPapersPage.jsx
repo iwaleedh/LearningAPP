@@ -75,11 +75,14 @@ const subjects = [
     },
 ];
 
-// Resolve a local path to an absolute URL using Vite's BASE_URL.
-// External https:// URLs are returned unchanged.
+// Resolve a local asset path to an absolute URL.
+// In production, VITE_PDF_CDN_BASE points at GitHub raw content so PDFs
+// are served from there instead of the Vercel deployment (where large
+// binary assets are excluded). In development, falls back to BASE_URL.
 function resolveUrl(url) {
     if (!url || url.startsWith('https://')) return url;
-    // import.meta.env.BASE_URL is '/' in dev/Vercel, '/LearningAPP/' on GitHub Pages.
+    const cdnBase = import.meta.env.VITE_PDF_CDN_BASE;
+    if (cdnBase) return cdnBase + url; // e.g. https://raw.githubusercontent.com/.../public/pastpapers/x.pdf
     return import.meta.env.BASE_URL + url.slice(1);
 }
 
@@ -93,15 +96,17 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
     const handleDownload = () => {
         if (!url) return;
 
-        // External URLs (gceguide.cc, Cambridge Int'l) — open in new tab
-        if (url.startsWith('https://')) {
-            window.open(url, '_blank', 'noopener,noreferrer');
+        const resolved = resolveUrl(url);
+
+        // External / CDN URLs — open in new tab (cross-origin download attr is ignored by browsers)
+        if (resolved.startsWith('https://')) {
+            window.open(resolved, '_blank', 'noopener,noreferrer');
             setStatus('success');
             setTimeout(() => setStatus(null), 2000);
             return;
         }
 
-        const result = downloadFile(resolveUrl(url), filename);
+        const result = downloadFile(resolved, filename);
 
         if (result.success) {
             setStatus('success');
