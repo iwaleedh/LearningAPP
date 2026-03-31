@@ -139,10 +139,21 @@ function DownloadButton({ paper, type, label, icon: Icon, isOLevel = false }) { 
 function ViewPdfButton({ paper, type, label }) {
     const url = type === 'question' ? paper.questionPaperUrl : paper.markingSchemeUrl;
 
+    const handleView = () => {
+        if (!url) return;
+        const resolved = resolveUrl(url);
+        // GitHub raw and other CDN URLs set Content-Disposition: attachment which
+        // forces a download. Route through Google Docs Viewer to display inline.
+        const viewUrl = resolved.startsWith('https://')
+            ? `https://docs.google.com/viewer?url=${encodeURIComponent(resolved)}`
+            : resolved;
+        window.open(viewUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <button
             className="btn btn-sm btn-outline"
-            onClick={() => url && window.open(resolveUrl(url), '_blank', 'noopener,noreferrer')}
+            onClick={handleView}
             disabled={!url}
             title={!url ? 'Coming soon' : `Open ${label} in new tab`}
             style={{
