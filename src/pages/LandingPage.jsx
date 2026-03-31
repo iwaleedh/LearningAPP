@@ -1,9 +1,22 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { LogIn, BookOpen, Brain, Trophy, Shield, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { LogIn, BookOpen, Brain, Trophy, Shield, ArrowRight, CheckCircle2, ChevronDown, ChevronUp, Star, Laptop, Smartphone } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
 import AuthModal from '../components/auth/AuthModal.jsx';
 import './LandingPage.css';
+
+const FAQItem = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className={`faq-item ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+      <div className="faq-question">
+        <h4>{question}</h4>
+        {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+      </div>
+      {isOpen && <div className="faq-answer"><p>{answer}</p></div>}
+    </div>
+  );
+};
 
 export default function LandingPage() {
   const { canSignIn } = useAuth();
@@ -94,6 +107,94 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        <section className="subjects-section">
+          <h2 className="section-title">Comprehensive Subject Coverage</h2>
+          <p className="section-subtitle">Tailored for Pearson Edexcel International A-Level & O-Level</p>
+          <div className="subjects-grid">
+            <div className="subject-pill">📐 Mathematics</div>
+            <div className="subject-pill">⚛️ Physics</div>
+            <div className="subject-pill">🧪 Chemistry</div>
+            <div className="subject-pill">🧬 Biology</div>
+            <div className="subject-pill">💼 Business</div>
+            <div className="subject-pill">📈 Economics</div>
+            <div className="subject-pill">📊 Accounting</div>
+            <div className="subject-pill">🗣️ English (CAE/CPE)</div>
+          </div>
+        </section>
+
+        <section className="how-it-works-section">
+          <h2 className="section-title">How Living Textbook Works</h2>
+          <div className="steps-container">
+            <div className="step-card">
+              <div className="step-number">1</div>
+              <h3>Learn with Smart Notes</h3>
+              <p>Read beautifully formatted notes with embedded core practicals, svg diagrams, and quick summaries.</p>
+            </div>
+            <div className="step-card">
+              <div className="step-number">2</div>
+              <h3>Test via Active Recall</h3>
+              <p>Reinforce what you just learned directly inline using hidden flashcards and cue prompts.</p>
+            </div>
+            <div className="step-card">
+              <div className="step-number">3</div>
+              <h3>Master Past Papers</h3>
+              <p>Take timed exams, automatically compare with marking schemes, and review your mistakes.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="cross-platform-section">
+          <div className="cross-platform-image">
+            <Laptop size={80} className="device-icon" />
+            <Smartphone size={60} className="device-icon mobile" />
+          </div>
+          <div className="cross-platform-content">
+            <h2 className="section-title text-left">Study Anywhere, Anytime</h2>
+            <p className="section-description">
+              Living Textbook is built as a Progressive Web App (PWA). Install it on your phone, tablet, or desktop to enjoy seamless syncing and offline capabilities.
+            </p>
+            <ul className="benefits-list">
+              <li><CheckCircle2 className="benefit-icon" /> Works on iOS, Android, macOS, and Windows.</li>
+              <li><CheckCircle2 className="benefit-icon" /> Lightning fast loading speeds.</li>
+              <li><CheckCircle2 className="benefit-icon" /> Pick up right where you left off.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="faq-section">
+          <h2 className="section-title">Frequently Asked Questions</h2>
+          <div className="faq-container">
+            <FAQItem 
+              question="What exam boards are supported?" 
+              answer="Currently, our content is heavily tailored to Pearson Edexcel International A-Levels (IAL) and O-Levels." 
+            />
+            <FAQItem 
+              question="Can I use Living Textbook on my phone?" 
+              answer="Yes! Living Textbook is fully responsive. You can even install it on your home screen for an app-like experience." 
+            />
+            <FAQItem 
+              question="How do the past papers work?" 
+              answer="We have integrated a massive bank of past papers. You can set a native timer, attempt the paper, and check your answers instantly against the official marking scheme." 
+            />
+            <FAQItem 
+              question="Is my progress saved?" 
+              answer="Yes, all your read times, confidence scores, flashcard repetitions, and saved notes are synced to your account securely." 
+            />
+          </div>
+        </section>
+
+        <section className="cta-section">
+          <h2>Ready to transform your grades?</h2>
+          <p>Join thousands of students achieving top marks with interactive learning.</p>
+          <button 
+            className="btn btn-primary btn-lg hero-cta shadow-pulse"
+            onClick={() => setAuthOpen(true)}
+          >
+            Create Your Free Account
+          </button>
+        </section>
+
       </main>
 
       <footer className="landing-footer">
