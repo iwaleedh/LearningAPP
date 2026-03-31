@@ -119,6 +119,14 @@ function isTeacherIdentity(userId) {
   return typeof userId === 'string' && userId.startsWith('debug_teacher_');
 }
 
+function assertTeacherCanCreateLiveClass(hostUserId, actorRole) {
+  if (actorRole === 'teacher' || isTeacherIdentity(hostUserId)) {
+    return;
+  }
+
+  throw new Error('Only teacher accounts can create a live class.');
+}
+
 function buildPreview(session) {
   if (!session) return null;
   return {
@@ -188,7 +196,8 @@ export function isLocalJoinRequestId(requestId) {
   return typeof requestId === 'string' && requestId.startsWith('local_join_');
 }
 
-export function createLocalLiveClass({ hostUserId, title, backgroundType = 'white' }) {
+export function createLocalLiveClass({ hostUserId, title, backgroundType = 'white', actorRole }) {
+  assertTeacherCanCreateLiveClass(hostUserId, actorRole);
   const store = readStore();
   const sessionId = createId('local');
   const session = {
@@ -205,6 +214,13 @@ export function createLocalLiveClass({ hostUserId, title, backgroundType = 'whit
   store.sessions[sessionId] = session;
   writeStore(store);
   return session;
+}
+
+export function __resetLocalLiveStoreForTests() {
+  memoryStore = createEmptyStore();
+  if (hasWindow()) {
+    window.localStorage.removeItem(STORAGE_KEY);
+  }
 }
 
 export function getLocalLiveClassById(classId, viewerUserId) {

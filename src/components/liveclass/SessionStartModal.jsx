@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { X, Play, BookOpen } from 'lucide-react';
 
 const BG_OPTIONS = [
@@ -12,18 +12,33 @@ const BG_OPTIONS = [
 /**
  * Modal for the teacher to configure and start a new Live Class session.
  *
- * @param {{ onStart: (title:string, backgroundType:string) => void, onClose: () => void }} props
+ * @param {{ onStart: (title:string, backgroundType:string) => Promise<unknown>, onClose: () => void, canStart?: boolean, errorMessage?: string, blockedReason?: string }} props
  */
-export default function SessionStartModal({ onStart, onClose }) {
+export default function SessionStartModal({ onStart, onClose, canStart = true, errorMessage = '', blockedReason = '' }) {
   const [title, setTitle] = useState('');
   const [bg, setBg] = useState('white');
   const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState(errorMessage || blockedReason);
+
+  useEffect(() => {
+    setSubmitError(errorMessage || blockedReason || '');
+  }, [blockedReason, errorMessage]);
 
   async function handleStart() {
-    if (!title.trim()) return;
+    if (!title.trim()) {
+      setSubmitError('Please enter a session title.');
+      return;
+    }
+    if (!canStart) {
+      setSubmitError(blockedReason || 'You do not have access to start a live class.');
+      return;
+    }
     setLoading(true);
     try {
+      setSubmitError('');
       await onStart(title.trim(), bg);
+    } catch (error) {
+      setSubmitError(error?.message || 'Could not start the live class. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -54,6 +69,8 @@ export default function SessionStartModal({ onStart, onClose }) {
           />
         </label>
 
+        {submitError ? <p className="jcm-error">{submitError}</p> : null}
+
         <label className="lc-modal-label">
           Paper background
           <div className="lc-bg-grid">
@@ -74,7 +91,7 @@ export default function SessionStartModal({ onStart, onClose }) {
         <button
           className="btn btn-primary lc-modal-start-btn"
           onClick={handleStart}
-          disabled={loading || !title.trim()}
+          disabled={loading || !title.trim() || !canStart}
         >
           {loading ? 'Starting…' : (
             <>

@@ -17,8 +17,8 @@ import {
 
 const log = logger.child({ component: 'liveClassSync' });
 
-function isDebugIdentity(userId) {
-  return typeof userId === 'string' && userId.startsWith('debug_');
+function isDebugTeacherIdentity(userId) {
+  return typeof userId === 'string' && userId.startsWith('debug_teacher_');
 }
 
 /**
@@ -176,14 +176,20 @@ export function createLiveClassSync({
   /* ── Public API ────────────────────────────────────────────────── */
 
   /** Teacher creates a new Live Class. */
-  async function createClass(title, backgroundType = 'white') {
+  async function createClass(title, backgroundType = 'white', options = {}) {
     const userId = myUserId();
+    const actorRole = options.actorRole;
 
-    if (!userId || !getClient() || isDebugIdentity(userId)) {
+    if (actorRole !== 'teacher' && !isDebugTeacherIdentity(userId)) {
+      throw new Error('Only teacher accounts can create a live class.');
+    }
+
+    if (!userId || !getClient() || isDebugTeacherIdentity(userId)) {
       const localSession = createLocalLiveClass({
         hostUserId: userId ?? 'local',
         title,
         backgroundType,
+        actorRole,
       });
       activeClassId = localSession._id;
       return localSession;
@@ -204,6 +210,7 @@ export function createLiveClassSync({
         hostUserId: userId ?? 'local',
         title,
         backgroundType,
+        actorRole,
       });
       activeClassId = localSession._id;
       return localSession;
