@@ -172,6 +172,16 @@ export default defineSchema({
     .index("by_topic", ["topic"])
     .index("by_status", ["status"]),
 
+  // ── Feature Flags ───────────────────────────────────────────────
+  featureFlags: defineTable({
+    key: v.string(),          // e.g. "flashcards", "pastPapers", "liveClass"
+    enabled: v.boolean(),
+    label: v.string(),        // display name
+    description: v.string(),
+    updatedAt: v.number(),
+    updatedBy: v.string(),    // admin userId
+  }).index("by_key", ["key"]),
+
   // ── Centralized Logging ─────────────────────────────────────────
   logs: defineTable({
     level: v.string(),       // "debug" | "info" | "warn" | "error"

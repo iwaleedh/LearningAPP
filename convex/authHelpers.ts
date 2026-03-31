@@ -19,7 +19,7 @@ type IdentityWithRoleClaims = {
 // Users whose Clerk email matches an entry are treated as admins.
 // Add additional emails to support multiple admins in the future.
 const ADMIN_EMAILS: string[] = ["iwaleedh@gmail.com"];
-const ADMIN_USERNAMES: string[] = ["admim", "admin"];
+const ADMIN_USERNAMES: string[] = ["admin"];
 
 export function isAdminEmail(email: string | undefined | null): boolean {
   if (!email) return false;

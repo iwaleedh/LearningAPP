@@ -8,11 +8,14 @@
  * @module
  */
 
+import type * as admin from "../admin.js";
 import type * as assets from "../assets.js";
+import type * as authHelpers from "../authHelpers.js";
 import type * as crons from "../crons.js";
 import type * as cursors from "../cursors.js";
 import type * as eventBus from "../eventBus.js";
 import type * as eventHandlers from "../eventHandlers.js";
+import type * as featureFlags from "../featureFlags.js";
 import type * as flashcards from "../flashcards.js";
 import type * as gateway from "../gateway.js";
 import type * as handraises from "../handraises.js";
@@ -24,6 +27,7 @@ import type * as logs from "../logs.js";
 import type * as notes from "../notes.js";
 import type * as sessions from "../sessions.js";
 import type * as strokes from "../strokes.js";
+import type * as testUtils from "../testUtils.js";
 import type * as timers from "../timers.js";
 import type * as users from "../users.js";
 
@@ -34,11 +38,14 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  admin: typeof admin;
   assets: typeof assets;
+  authHelpers: typeof authHelpers;
   crons: typeof crons;
   cursors: typeof cursors;
   eventBus: typeof eventBus;
   eventHandlers: typeof eventHandlers;
+  featureFlags: typeof featureFlags;
   flashcards: typeof flashcards;
   gateway: typeof gateway;
   handraises: typeof handraises;
@@ -50,6 +57,7 @@ declare const fullApi: ApiFromModules<{
   notes: typeof notes;
   sessions: typeof sessions;
   strokes: typeof strokes;
+  testUtils: typeof testUtils;
   timers: typeof timers;
   users: typeof users;
 }>;

@@ -3,7 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api.js';
 import { useAuth } from '../hooks/useAuth.js';
-import { Shield, UserCheck, UserX, Users, Clock } from 'lucide-react';
+import {
+  Shield, UserCheck, UserX, Users, Clock,
+  LayoutDashboard, ToggleLeft, ToggleRight,
+  GraduationCap, Search, ChevronDown,
+} from 'lucide-react';
+import './AdminPage.css';
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
 
 function formatDate(ts) {
   if (!ts) return '—';
@@ -13,52 +20,97 @@ function formatDate(ts) {
 }
 
 function StatusBadge({ status }) {
-  const cls = status === 'approved' ? 'admin-badge--approved'
-    : status === 'blocked' ? 'admin-badge--blocked'
-    : 'admin-badge--pending';
+  const cls = status === 'approved' ? 'ab--approved'
+    : status === 'blocked' ? 'ab--blocked'
+    : 'ab--pending';
   return <span className={`admin-badge ${cls}`}>{status}</span>;
 }
+
+// ── Overview Tab ─────────────────────────────────────────────────────────────
+
+function OverviewTab({ allUsers, pendingUsers }) {
+  const approved = allUsers.filter(u => u.accountStatus === 'approved');
+  const blocked  = allUsers.filter(u => u.accountStatus === 'blocked');
+  const teachers = allUsers.filter(u => u.role === 'teacher');
+  const students = allUsers.filter(u => u.role === 'student');
+
+  const stats = [
+    { icon: Users,       label: 'Total Users',  value: allUsers.length,    color: 'var(--color-primary)' },
+    { icon: Clock,       label: 'Pending',       value: pendingUsers.length, color: 'var(--color-accent)' },
+    { icon: UserCheck,   label: 'Approved',      value: approved.length,    color: 'var(--color-success)' },
+    { icon: UserX,       label: 'Blocked',       value: blocked.length,     color: 'var(--color-error)' },
+    { icon: GraduationCap, label: 'Teachers',    value: teachers.length,    color: '#8b5cf6' },
+    { icon: Users,       label: 'Students',      value: students.length,    color: '#06b6d4' },
+  ];
+
+  return (
+    <div className="admin-overview">
+      <div className="admin-stat-grid">
+        {stats.map(s => {
+          const Icon = s.icon;
+          return (
+            <div key={s.label} className="admin-stat-card card">
+              <div className="admin-stat-icon" style={{ color: s.color }}>
+                <Icon size={24} />
+              </div>
+              <div className="admin-stat-value">{s.value}</div>
+              <div className="admin-stat-label">{s.label}</div>
+            </div>
+          );
+        })}
+      </div>
+
+      {pendingUsers.length > 0 && (
+        <div className="admin-pending-notice card">
+          <Clock size={18} />
+          <span>
+            <strong>{pendingUsers.length}</strong> user{pendingUsers.length > 1 ? 's' : ''} waiting for approval.
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Users Tab ─────────────────────────────────────────────────────────────────
 
 function RoleSelect({ userId, currentRole }) {
   const setRole = useMutation(api.admin.setUserRole);
   const [busy, setBusy] = useState(false);
 
-  const handleChange = async (e) => {
+  const handle = async (e) => {
     const newRole = e.target.value;
     if (newRole === currentRole) return;
     setBusy(true);
-    try {
-      await setRole({ userId, role: newRole });
-    } catch (err) {
-      console.error('Failed to set role:', err);
-    } finally {
-      setBusy(false);
-    }
+    try { await setRole({ userId, role: newRole }); }
+    catch (err) { console.error(err); }
+    finally { setBusy(false); }
   };
 
   return (
-    <select
-      className="admin-role-select"
-      value={currentRole}
-      onChange={handleChange}
-      disabled={busy}
-    >
-      <option value="student">Student</option>
-      <option value="teacher">Teacher</option>
-    </select>
+    <div className="admin-role-wrap">
+      <select className="admin-role-select" value={currentRole} onChange={handle} disabled={busy}>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+      <ChevronDown size={14} className="admin-role-chevron" />
+    </div>
   );
 }
 
 function UserRow({ user, onApprove, onBlock, onUnblock, busy }) {
-  const isPending = user.accountStatus === 'pending';
-  const isBlocked = user.accountStatus === 'blocked';
+  const isPending  = user.accountStatus === 'pending';
+  const isBlocked  = user.accountStatus === 'blocked';
   const isApproved = user.accountStatus === 'approved';
 
   return (
     <tr className="admin-user-row">
-      <td className="admin-user-cell">
+      <td>
         <div className="admin-user-info">
-          {user.avatarUrl && <img src={user.avatarUrl} alt="" className="admin-avatar" />}
+          {user.avatarUrl
+            ? <img src={user.avatarUrl} alt="" className="admin-avatar" />
+            : <div className="admin-avatar-placeholder">{(user.username || '?')[0].toUpperCase()}</div>
+          }
           <div>
             <div className="admin-user-name">{user.username || 'Unknown'}</div>
             <div className="admin-user-email">{user.email || '—'}</div>
@@ -68,140 +120,84 @@ function UserRow({ user, onApprove, onBlock, onUnblock, busy }) {
       <td><StatusBadge status={user.accountStatus} /></td>
       <td><RoleSelect userId={user.userId} currentRole={user.role || 'student'} /></td>
       <td className="admin-date">{formatDate(user.createdAt)}</td>
-      <td className="admin-actions-cell">
-        {isPending && (
-          <>
+      <td>
+        <div className="admin-action-btns">
+          {isPending && <>
             <button className="btn btn-sm btn-primary" disabled={busy} onClick={() => onApprove(user.userId)}>
-              <UserCheck size={14} /> Approve
+              <UserCheck size={13} /> Approve
             </button>
             <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => onBlock(user.userId)}>
-              <UserX size={14} /> Block
+              <UserX size={13} /> Block
             </button>
-          </>
-        )}
-        {isApproved && (
-          <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => onBlock(user.userId)}>
-            <UserX size={14} /> Block
-          </button>
-        )}
-        {isBlocked && (
-          <button className="btn btn-sm btn-secondary" disabled={busy} onClick={() => onUnblock(user.userId)}>
-            <UserCheck size={14} /> Unblock
-          </button>
-        )}
+          </>}
+          {isApproved && (
+            <button className="btn btn-sm admin-btn-block" disabled={busy} onClick={() => onBlock(user.userId)}>
+              <UserX size={13} /> Block
+            </button>
+          )}
+          {isBlocked && (
+            <button className="btn btn-sm btn-secondary" disabled={busy} onClick={() => onUnblock(user.userId)}>
+              <UserCheck size={13} /> Unblock
+            </button>
+          )}
+        </div>
       </td>
     </tr>
   );
 }
 
-export default function AdminPage() {
-  const navigate = useNavigate();
-  const { isAdmin } = useAuth();
-  const [tab, setTab] = useState('pending');
+function UsersTab({ allUsers, pendingUsers }) {
+  const [filter, setFilter] = useState('all'); // 'all' | 'pending' | 'approved' | 'blocked'
+  const [search, setSearch] = useState('');
   const [busy, setBusy] = useState(false);
 
-  const pendingUsers = useQuery(api.admin.listPendingUsers) ?? [];
-  const allUsers = useQuery(api.admin.listAllUsersAdmin) ?? [];
-
   const approve = useMutation(api.admin.approveUser);
-  const block = useMutation(api.admin.blockUser);
+  const block   = useMutation(api.admin.blockUser);
   const unblock = useMutation(api.admin.unblockUser);
 
-  // Guard — redirect non-admins (belt-and-suspenders; route guard also handles this)
-  if (isAdmin === false) {
-    navigate('/', { replace: true });
-    return null;
-  }
+  const handleApprove = async (userId) => { setBusy(true); try { await approve({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
+  const handleBlock   = async (userId) => { setBusy(true); try { await block({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
+  const handleUnblock = async (userId) => { setBusy(true); try { await unblock({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
 
-  const handleApprove = async (userId) => {
-    setBusy(true);
-    try { await approve({ userId }); } catch (e) { console.error(e); }
-    finally { setBusy(false); }
-  };
-  const handleBlock = async (userId) => {
-    setBusy(true);
-    try { await block({ userId }); } catch (e) { console.error(e); }
-    finally { setBusy(false); }
-  };
-  const handleUnblock = async (userId) => {
-    setBusy(true);
-    try { await unblock({ userId }); } catch (e) { console.error(e); }
-    finally { setBusy(false); }
-  };
-
-  const displayUsers = tab === 'pending' ? pendingUsers : allUsers;
+  const source = filter === 'pending' ? pendingUsers : allUsers;
+  const displayed = source.filter(u => {
+    if (filter !== 'all' && filter !== 'pending' && u.accountStatus !== filter) return false;
+    if (!search.trim()) return true;
+    const q = search.toLowerCase();
+    return (u.username || '').toLowerCase().includes(q) || (u.email || '').toLowerCase().includes(q);
+  });
 
   return (
-    <div className="admin-page animate-fade-in">
-      <div className="admin-header">
-        <div className="admin-header-left">
-          <Shield size={28} className="admin-header-icon" />
-          <div>
-            <h1 className="admin-title">Admin Panel</h1>
-            <p className="admin-subtitle">Manage user accounts and permissions</p>
-          </div>
+    <div className="admin-users-tab">
+      <div className="admin-users-toolbar">
+        <div className="admin-search-wrap">
+          <Search size={15} className="admin-search-icon" />
+          <input
+            className="admin-search"
+            placeholder="Search by name or email…"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+          />
+        </div>
+        <div className="admin-filter-pills">
+          {['all', 'pending', 'approved', 'blocked'].map(f => (
+            <button
+              key={f}
+              className={`admin-pill ${filter === f ? 'active' : ''}`}
+              onClick={() => setFilter(f)}
+            >
+              {f.charAt(0).toUpperCase() + f.slice(1)}
+              {f === 'pending' && pendingUsers.length > 0 && (
+                <span className="admin-pill-count">{pendingUsers.length}</span>
+              )}
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Stat cards */}
-      <div className="admin-stats">
-        <div className="stat-card">
-          <Clock size={20} />
-          <div>
-            <div className="stat-card-value">{pendingUsers.length}</div>
-            <div className="stat-card-label">Pending</div>
-          </div>
-        </div>
-        <div className="stat-card">
-          <UserCheck size={20} />
-          <div>
-            <div className="stat-card-value">{allUsers.filter(u => u.accountStatus === 'approved').length}</div>
-            <div className="stat-card-label">Approved</div>
-          </div>
-        </div>
-        <div className="stat-card">
-          <UserX size={20} />
-          <div>
-            <div className="stat-card-value">{allUsers.filter(u => u.accountStatus === 'blocked').length}</div>
-            <div className="stat-card-label">Blocked</div>
-          </div>
-        </div>
-        <div className="stat-card">
-          <Users size={20} />
-          <div>
-            <div className="stat-card-value">{allUsers.length}</div>
-            <div className="stat-card-label">Total</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Tab bar */}
-      <div className="admin-tabs">
-        <button
-          className={`admin-tab ${tab === 'pending' ? 'active' : ''}`}
-          onClick={() => setTab('pending')}
-        >
-          Pending Approvals
-          {pendingUsers.length > 0 && (
-            <span className="admin-tab-count">{pendingUsers.length}</span>
-          )}
-        </button>
-        <button
-          className={`admin-tab ${tab === 'all' ? 'active' : ''}`}
-          onClick={() => setTab('all')}
-        >
-          All Users
-        </button>
-      </div>
-
-      {/* User table */}
       <div className="admin-table-wrap card">
-        {displayUsers.length === 0 ? (
-          <div className="admin-empty">
-            {tab === 'pending'
-              ? 'No pending accounts. All clear!'
-              : 'No users found.'}
-          </div>
+        {displayed.length === 0 ? (
+          <div className="admin-empty">No users match this filter.</div>
         ) : (
           <table className="admin-table">
             <thead>
@@ -214,7 +210,7 @@ export default function AdminPage() {
               </tr>
             </thead>
             <tbody>
-              {displayUsers.map(user => (
+              {displayed.map(user => (
                 <UserRow
                   key={user._id}
                   user={user}
@@ -227,6 +223,128 @@ export default function AdminPage() {
             </tbody>
           </table>
         )}
+      </div>
+    </div>
+  );
+}
+
+// ── Feature Flags Tab ─────────────────────────────────────────────────────────
+
+function FlagRow({ flag }) {
+  const setFlag = useMutation(api.featureFlags.setFlag);
+  const [busy, setBusy] = useState(false);
+
+  const toggle = async () => {
+    setBusy(true);
+    try { await setFlag({ key: flag.key, enabled: !flag.enabled }); }
+    catch (err) { console.error(err); }
+    finally { setBusy(false); }
+  };
+
+  return (
+    <div className="flag-row card">
+      <div className="flag-info">
+        <div className="flag-label">{flag.label}</div>
+        <div className="flag-desc">{flag.description}</div>
+      </div>
+      <button
+        className={`flag-toggle ${flag.enabled ? 'flag-toggle--on' : 'flag-toggle--off'}`}
+        onClick={toggle}
+        disabled={busy}
+        title={flag.enabled ? 'Click to disable' : 'Click to enable'}
+      >
+        {flag.enabled
+          ? <><ToggleRight size={28} /> <span>Enabled</span></>
+          : <><ToggleLeft size={28} /> <span>Disabled</span></>
+        }
+      </button>
+    </div>
+  );
+}
+
+function FeaturesTab() {
+  const flags = useQuery(api.featureFlags.getAllFlags) ?? [];
+
+  if (flags.length === 0) {
+    return <div className="admin-empty">Loading feature flags…</div>;
+  }
+
+  return (
+    <div className="admin-flags">
+      <p className="admin-flags-hint">
+        Toggle features on or off for all users. Changes take effect immediately.
+      </p>
+      <div className="flag-list">
+        {flags.map(flag => <FlagRow key={flag.key} flag={flag} />)}
+      </div>
+    </div>
+  );
+}
+
+// ── Main Page ─────────────────────────────────────────────────────────────────
+
+const TABS = [
+  { id: 'overview', label: 'Overview',      icon: LayoutDashboard },
+  { id: 'users',    label: 'Users',         icon: Users },
+  { id: 'features', label: 'Feature Flags', icon: ToggleRight },
+];
+
+export default function AdminPage() {
+  const navigate = useNavigate();
+  const { isAdmin } = useAuth();
+  const [tab, setTab] = useState('overview');
+
+  const pendingUsers = useQuery(api.admin.listPendingUsers) ?? [];
+  const allUsers     = useQuery(api.admin.listAllUsersAdmin) ?? [];
+
+  if (isAdmin === false) {
+    navigate('/', { replace: true });
+    return null;
+  }
+
+  return (
+    <div className="admin-page animate-fade-in">
+      {/* Header */}
+      <div className="admin-header">
+        <div className="admin-header-left">
+          <Shield size={28} className="admin-header-icon" />
+          <div>
+            <h1 className="admin-title">Admin Dashboard</h1>
+            <p className="admin-subtitle">Control users, roles, and platform features</p>
+          </div>
+        </div>
+        {pendingUsers.length > 0 && (
+          <div className="admin-header-badge">
+            <Clock size={14} /> {pendingUsers.length} pending
+          </div>
+        )}
+      </div>
+
+      {/* Tab bar */}
+      <div className="admin-tabs">
+        {TABS.map(t => {
+          const Icon = t.icon;
+          return (
+            <button
+              key={t.id}
+              className={`admin-tab ${tab === t.id ? 'active' : ''}`}
+              onClick={() => setTab(t.id)}
+            >
+              <Icon size={16} />
+              {t.label}
+              {t.id === 'users' && pendingUsers.length > 0 && (
+                <span className="admin-tab-count">{pendingUsers.length}</span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Tab content */}
+      <div className="admin-content">
+        {tab === 'overview' && <OverviewTab allUsers={allUsers} pendingUsers={pendingUsers} />}
+        {tab === 'users'    && <UsersTab allUsers={allUsers} pendingUsers={pendingUsers} />}
+        {tab === 'features' && <FeaturesTab />}
       </div>
     </div>
   );
