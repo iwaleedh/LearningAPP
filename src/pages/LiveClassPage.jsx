@@ -8,7 +8,6 @@ import {
   getCurrentUserId,
   getLiveClassById,
   isTeacher as convexIsTeacher,
-  subscribe, api,
   subscribeToJoinStatus, subscribeToJoinRequests,
 } from '../convex-client.js';
 import { createLiveClassSync } from '../services/liveclass/liveClassSync.js';
@@ -161,7 +160,6 @@ export default function LiveClassPage() {
   const [role, setRole] = useState(null); // 'teacher' | 'student'
   const [sessionData, setSessionData] = useState(null);
   const [studentName, setStudentName] = useState('');
-  const [joinName, setJoinName] = useState('');
   const [participants, setParticipants] = useState([]);
   const [cursors, setCursors] = useState([]);
   const [handRaises, setHandRaises] = useState([]);
@@ -433,10 +431,36 @@ export default function LiveClassPage() {
   // ── Handle join-request flow (student arriving from JoinClassModal) ───────
   useEffect(() => {
     const navState = location.state;
-    if (!navState?.joinRequestId) return;
-    const reqId = navState.joinRequestId;
-    const tId = navState.tempId;
-    const sName = navState.studentName;
+    const storedJoinRequest = classId
+      ? sessionStorage.getItem(`lt_joinRequest_${classId}`)
+      : null;
+    let requestState = navState?.joinRequestId
+      ? {
+          joinRequestId: navState.joinRequestId,
+          tempId: navState.tempId,
+          studentName: navState.studentName,
+        }
+      : null;
+
+    if (!requestState && storedJoinRequest) {
+      try {
+        const parsed = JSON.parse(storedJoinRequest);
+        if (parsed?.requestId) {
+          requestState = {
+            joinRequestId: String(parsed.requestId),
+            tempId: parsed.tempId,
+            studentName: parsed.studentName,
+          };
+        }
+      } catch {
+        // Ignore malformed stored join-request state.
+      }
+    }
+
+    if (!requestState?.joinRequestId) return;
+    const reqId = requestState.joinRequestId;
+    const tId = requestState.tempId;
+    const sName = requestState.studentName;
     setJoinRequestId(reqId);
     setJoinTempId(tId);
     if (sName) setStudentName(sName);
@@ -446,8 +470,13 @@ export default function LiveClassPage() {
       if (!data) return;
       setJoinStatus(data.status);
       if (data.status === 'accepted') {
-        // Student admitted — set role and proceed
-        setRole(prev => prev ?? 'student');
+        void getLiveClassById(classId).then((session) => {
+          if (session) {
+            setSessionData(session);
+            setBackgroundType(session.backgroundType ?? 'white');
+          }
+          setRole('student');
+        });
       }
     });
 
@@ -455,7 +484,7 @@ export default function LiveClassPage() {
     setJoinStatus('pending');
 
     return () => unsub?.();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [classId, location.state]);
 
   // ── Init Convex & detect role (online mode) ──────────────────────────
   useEffect(() => {
@@ -497,10 +526,17 @@ export default function LiveClassPage() {
 
         const isHost = session.hostUserId === userId;
         const hasTeacherRole = await convexIsTeacher();
+        const hasFullSessionAccess = Boolean(session.hostUserId);
         if (cancelled) return;
 
-        // Only set role if not already set (e.g. by join dialog)
-        setRole(prev => prev ?? ((isHost || hasTeacherRole) ? 'teacher' : 'student'));
+        if (isHost || hasTeacherRole) {
+          setRole(prev => prev ?? 'teacher');
+          return;
+        }
+
+        if (hasFullSessionAccess) {
+          setRole(prev => prev ?? 'student');
+        }
       })();
     });
 
@@ -668,7 +704,7 @@ export default function LiveClassPage() {
     if (role === 'student') {
       // Announce presence to teacher tab
       const bcId = 'bc_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
-      bc.postMessage({ type: 'student-join', data: { bcId, name: studentName || joinName || 'Student', joinedAt: Date.now() } });
+      bc.postMessage({ type: 'student-join', data: { bcId, name: studentName || 'Student', joinedAt: Date.now() } });
 
       bc.onmessage = (e) => {
         const { type, data } = e.data;
@@ -1689,73 +1725,6 @@ export default function LiveClassPage() {
     );
   }
 
-  if (!role) {
-    // Student arriving via shared link — show name entry dialog
-    const isSharedLink = !location.state?.session;
-    if (isSharedLink) {
-      // While Convex is still connecting, show a loading screen rather than
-      // the join form. This prevents the teacher (who has role='teacher' in DB)
-      // from briefly seeing the student form before their role is resolved.
-      if (stdbStatus === 'connecting') {
-        return <div className="lc-loading animate-fade-in">Connecting to class…</div>;
-      }
-
-      const handleJoin = async (e) => {
-        e.preventDefault();
-        const name = joinName.trim();
-        if (!name) return;
-        setStudentName(name);
-
-        const convexSession = await getLiveClassById(classId);
-        if (convexSession) {
-          setSessionData(convexSession);
-          setBackgroundType(convexSession.backgroundType ?? 'white');
-        } else {
-          setSessionData({
-            classId: classId,
-            title: 'Live Class',
-            hostUserId: '',
-            backgroundType: 'white',
-          });
-        }
-
-        // If Convex never connected/timed out, mark as offline now
-        setStdbStatus(prev => prev === 'connected' ? 'connected' : prev === 'connecting' ? 'offline' : prev);
-        setRole('student');
-      };
-
-      return (
-        <div className="lc-join-overlay animate-fade-in">
-          <form className="lc-join-dialog card" onSubmit={handleJoin}>
-            <div className="lc-join-icon">🎓</div>
-            <h2 className="lc-join-title">Join Live Class</h2>
-            <p className="lc-join-subtitle">Enter your name to join the session</p>
-            <input
-              className="lc-join-input"
-              type="text"
-              placeholder="Your name"
-              value={joinName}
-              onChange={(e) => setJoinName(e.target.value)}
-              autoFocus
-              maxLength={50}
-            />
-            <button
-              className="btn btn-primary lc-join-btn"
-              type="submit"
-              disabled={!joinName.trim()}
-            >
-              Join Class
-            </button>
-            <p className="lc-join-subtitle">
-              Teacher access must already be assigned to your account before opening instructor tools.
-            </p>
-          </form>
-        </div>
-      );
-    }
-    return <div className="lc-loading">Joining class…</div>;
-  }
-
   // ── Waiting for teacher admission ──────────────────────────────────────────
   if (joinRequestId && joinStatus === 'pending') {
     return (
@@ -1792,6 +1761,33 @@ export default function LiveClassPage() {
         </div>
       </div>
     );
+  }
+
+  if (!role) {
+    // Students opening a direct shared link still need teacher admission.
+    const isSharedLink = !location.state?.session;
+    if (isSharedLink) {
+      if (stdbStatus === 'connecting') {
+        return <div className="lc-loading animate-fade-in">Connecting to class…</div>;
+      }
+
+      return (
+        <div className="lc-join-overlay animate-fade-in">
+          <div className="lc-join-dialog card">
+            <div className="lc-join-icon">🎓</div>
+            <h2 className="lc-join-title">Teacher Admission Required</h2>
+            <p className="lc-join-subtitle">
+              This live class only opens after your teacher admits you. Use the Join Live Class
+              option from the sidebar with your class code, or wait for an invite.
+            </p>
+            <button className="btn btn-primary lc-join-btn" onClick={() => navigate('/')}>
+              Back to Dashboard
+            </button>
+          </div>
+        </div>
+      );
+    }
+    return <div className="lc-loading">Joining class…</div>;
   }
 
   const isTeacher = role === 'teacher';

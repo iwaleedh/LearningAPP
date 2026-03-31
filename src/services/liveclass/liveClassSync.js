@@ -208,9 +208,9 @@ export function createLiveClassSync({
   async function joinClass(classId) {
     const userId = myUserId();
     if (!userId || !getClient()) return [];
+    await callMutation(api.liveclass.joinLiveClass, { classId });
     activeClassId = classId;
     attachListeners(classId);
-    await callMutation(api.liveclass.joinLiveClass, { classId });
     const strokes = await callQuery(api.strokes.getStrokesBySession, { sessionId: classId });
     return strokes || [];
   }

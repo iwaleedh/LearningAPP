@@ -22,9 +22,9 @@ const navItems = [
 
 export default function Sidebar({ isOpen, onToggle }) {
     const location = useLocation();
-    const { role } = useAuth();
+    const { isAccessReady, isSignedIn, role } = useAuth();
     const [showJoinModal, setShowJoinModal] = useState(false);
-    const isTeacher = role === 'teacher';
+    const isTeacher = isSignedIn && isAccessReady && role === 'teacher';
 
     return (
         <>

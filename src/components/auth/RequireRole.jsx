@@ -3,10 +3,10 @@ import { useAuth } from '../../hooks/useAuth.js';
 import { buildProtectedRouteState } from './accessControl.js';
 
 export default function RequireRole({ allowedRoles, children, reason = 'open this page' }) {
-  const { isLoaded, isSignedIn, role } = useAuth();
+  const { isLoaded, isAccessReady, isSignedIn, role } = useAuth();
   const location = useLocation();
 
-  if (!isLoaded) {
+  if (!isLoaded || !isAccessReady) {
     return <div className="card animate-fade-in">Checking access...</div>;
   }
 

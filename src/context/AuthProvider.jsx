@@ -55,13 +55,21 @@ function AuthContextProvider({ children }) {
   const { getToken } = useClerkAuth();
   const [dbUser, setDbUser] = useState(null);
   const [role, setRole] = useState('student');
+  const [syncedAccessKey, setSyncedAccessKey] = useState(null);
+  const expectedAccessKey = isLoaded
+    ? (isSignedIn && clerkUser ? `signed-in:${clerkUser.id}` : 'signed-out')
+    : null;
 
   useEffect(() => {
     let cancelled = false;
 
-    async function syncUser() {
-      if (!isLoaded) return;
+    if (!isLoaded) {
+      return () => {
+        cancelled = true;
+      };
+    }
 
+    async function syncUser() {
       try {
         if (isSignedIn && clerkUser) {
           const profile = resolveClerkProfile(clerkUser);
@@ -113,6 +121,10 @@ function AuthContextProvider({ children }) {
         console.error('Auth sync failed:', error);
         setDbUser(null);
         setRole('student');
+      } finally {
+        if (!cancelled) {
+          setSyncedAccessKey(expectedAccessKey);
+        }
       }
     }
 
@@ -121,7 +133,7 @@ function AuthContextProvider({ children }) {
     return () => {
       cancelled = true;
     };
-  }, [getToken, isLoaded, isSignedIn, clerkUser]);
+  }, [expectedAccessKey, getToken, isLoaded, isSignedIn, clerkUser]);
 
   const signOut = useCallback(async () => {
     await clerkSignOut();
@@ -132,23 +144,31 @@ function AuthContextProvider({ children }) {
 
   const value = useMemo(() => {
     const profile = isSignedIn && clerkUser ? resolveClerkProfile(clerkUser) : null;
+    const claimedRole = isSignedIn && clerkUser ? resolveClerkRole(clerkUser) : null;
+    const resolvedRole = claimedRole || role;
     const userId = isSignedIn && clerkUser ? clerkUser.id : getCurrentUserId();
     const username = dbUser?.username || profile?.username || getCurrentUsername() || 'Anonymous';
     const avatarUrl = isSignedIn && clerkUser ? clerkUser.imageUrl : null;
+    const isAccessReady = !isLoaded
+      ? false
+      : !isSignedIn
+        ? syncedAccessKey === 'signed-out'
+        : Boolean(claimedRole || syncedAccessKey === expectedAccessKey);
 
     return {
       clerkUser: clerkUser ?? null,
       dbUser,
       canSignIn: HAS_CLERK,
+      isAccessReady,
       isLoaded,
       isSignedIn: !!isSignedIn,
-      role,
+      role: resolvedRole,
       userId,
       username,
       avatarUrl,
       signOut,
     };
-  }, [clerkUser, dbUser, isLoaded, isSignedIn, role, signOut]);
+  }, [clerkUser, dbUser, expectedAccessKey, isLoaded, isSignedIn, role, signOut, syncedAccessKey]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
@@ -158,6 +178,7 @@ function AnonymousAuthContextProvider({ children }) {
     clerkUser: null,
     dbUser: null,
     canSignIn: false,
+    isAccessReady: true,
     isLoaded: true,
     isSignedIn: false,
     role: 'student',
