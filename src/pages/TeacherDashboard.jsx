@@ -117,11 +117,9 @@ export default function TeacherDashboard() {
     useEffect(() => {
         window.__upsertNote = upsertNote;
 
-        // Auto-run the note sync as requested by the AI
-        setTimeout(() => {
-            if (import.meta.env.DEV) console.log('Auto-triggering mass note sync...');
-            handleSyncNotes();
-        }, 3500);
+        return () => {
+            delete window.__upsertNote;
+        };
     }, []);
 
     // Note Editor State

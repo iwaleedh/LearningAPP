@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Download, Trash2, GraduationCap, User, Mail, Fingerprint, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth.js';
 import { clearGuestData, getGuestDataSummary, importGuestDataToAccount } from '../services/notes/noteStore.js';
@@ -74,7 +74,6 @@ export default function SettingsPage() {
             return;
         }
 
-        setAuthOpen(false);
         navigate(postAuthRedirect, { replace: true });
     }, [isSignedIn, navigate, postAuthRedirect]);
 
@@ -362,13 +361,13 @@ export default function SettingsPage() {
                         {role === 'teacher' ? (
                             <p>
                                 This account can access teacher tools, including{' '}
-                                <a href="/teacher" style={{ color: 'var(--color-primary)' }}>
+                                <Link to="/teacher" style={{ color: 'var(--color-primary)' }}>
                                     the dashboard
-                                </a>{' '}
+                                </Link>{' '}
                                 and{' '}
-                                <a href="/teacher/monitor" style={{ color: 'var(--color-primary)' }}>
+                                <Link to="/teacher/monitor" style={{ color: 'var(--color-primary)' }}>
                                     live session monitoring
-                                </a>.
+                                </Link>.
                             </p>
                         ) : (
                             <p>
@@ -390,7 +389,7 @@ export default function SettingsPage() {
                 </div>
             </div>
 
-            {authOpen && (
+            {!isSignedIn && authOpen && (
                 <Suspense fallback={null}>
                     <AuthModal
                         onClose={() => setAuthOpen(false)}

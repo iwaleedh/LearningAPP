@@ -33,6 +33,10 @@ function isAuthError(error) {
     );
 }
 
+function isLocalOnlyUserId(userId) {
+    return typeof userId === 'string' && userId.startsWith('debug_');
+}
+
 export function getStorageCapabilities() {
     return getGuestStoreCapabilities();
 }
@@ -115,9 +119,10 @@ function toHeader(note) {
     };
 }
 
-function buildNoteMutationArgs(noteDoc) {
+function buildNoteMutationArgs(noteDoc, ownerUserId) {
     return {
         noteId: noteDoc.noteId,
+        ownerUserId,
         subject: noteDoc.subject || '',
         title: noteDoc.topicTitle || '',
         subtopicTitle: noteDoc.subtopicTitle || '',
@@ -235,11 +240,11 @@ export async function upsertNote(noteDoc) {
         ...noteDoc,
         lastEditedAt: new Date().toISOString(),
     });
-    const mutationArgs = buildNoteMutationArgs(normalized);
     const userId = getCurrentUserId();
+    const mutationArgs = buildNoteMutationArgs(normalized, userId);
     const client = getClient();
 
-    if (!userId || !client) {
+    if (!userId || !client || isLocalOnlyUserId(userId)) {
         await saveGuestNote(normalized);
         return;
     }

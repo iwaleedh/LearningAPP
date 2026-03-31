@@ -44,10 +44,15 @@ const oLevelSubjects = [
 
 export default function HomePage() {
     const navigate = useNavigate();
-    const { username } = useAuth();
+    const { debugAuthEnabled, username } = useAuth();
     const [liveInvites, setLiveInvites] = useState([]);
 
     useEffect(() => {
+        if (debugAuthEnabled) {
+            setLiveInvites([]);
+            return undefined;
+        }
+
         let cancelled = false;
         let unsubInvites = null;
 
@@ -73,7 +78,7 @@ export default function HomePage() {
             cancelled = true;
             unsubInvites?.();
         };
-    }, [username]);
+    }, [debugAuthEnabled, username]);
 
     return (
         <div className="home-page animate-fade-in">

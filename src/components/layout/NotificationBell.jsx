@@ -20,15 +20,14 @@ import { useAuth } from '../../hooks/useAuth.js';
  */
 export default function NotificationBell() {
     const navigate = useNavigate();
-    const { isSignedIn } = useAuth();
+    const { debugAuthEnabled, isSignedIn } = useAuth();
     const [pendingInvites, setPendingInvites] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
     // Attach Convex invite listeners once connected
     useEffect(() => {
-        if (!isSignedIn) {
-            setPendingInvites([]);
+        if (!isSignedIn || debugAuthEnabled) {
             return;
         }
 
@@ -65,7 +64,7 @@ export default function NotificationBell() {
             clearInterval(interval);
             unsubInvites?.();
         };
-    }, [isSignedIn]);
+    }, [debugAuthEnabled, isSignedIn]);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -97,7 +96,8 @@ export default function NotificationBell() {
         setPendingInvites(prev => prev.filter(i => (i._id ?? i.inviteId) !== (invite._id ?? invite.inviteId)));
     }
 
-    const count = pendingInvites.length;
+    const visiblePendingInvites = isSignedIn && !debugAuthEnabled ? pendingInvites : [];
+    const count = visiblePendingInvites.length;
 
     return (
         <div className="notification-bell-container" ref={dropdownRef}>
@@ -131,7 +131,7 @@ export default function NotificationBell() {
                         </div>
                     ) : (
                         <ul className="notification-list">
-                            {pendingInvites.map(inv => {
+                            {visiblePendingInvites.map(inv => {
                                 const fromName = inv.fromUsername ?? 'Someone';
                                 return (
                                     <li key={String(inv._id ?? inv.inviteId)} className="notification-item">

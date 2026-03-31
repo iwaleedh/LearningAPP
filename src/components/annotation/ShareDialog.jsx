@@ -36,23 +36,18 @@ export default function ShareDialog({
 
     const isHost = activeSession?.hostUserId === myIdentityHex;
     const amParticipant = participants.some(p => p.userId === myIdentityHex);
+    const inviteSearchTerm = inviteSearch.trim();
+    const canSearchUsers = tab === 'invite' && inviteSearchTerm.length >= 2;
 
     useEffect(() => {
-        if (tab !== 'invite') {
-            setSearchResults([]);
-            return;
-        }
-
-        const term = inviteSearch.trim();
-        if (term.length < 2) {
-            setSearchResults([]);
+        if (!canSearchUsers) {
             return;
         }
 
         let cancelled = false;
 
         async function loadSearchResults() {
-            const users = await searchUsersByUsername(term, 12);
+            const users = await searchUsersByUsername(inviteSearchTerm, 12);
             if (!cancelled) {
                 setSearchResults(users || []);
             }
@@ -62,13 +57,15 @@ export default function ShareDialog({
         return () => {
             cancelled = true;
         };
-    }, [inviteSearch, tab]);
+    }, [canSearchUsers, inviteSearchTerm]);
 
-    const filteredUsers = searchResults.filter(u =>
-        u.userId !== myIdentityHex &&
-        u.username?.toLowerCase().includes(inviteSearch.toLowerCase()) &&
-        !participants.some(p => p.userId === u.userId)
-    );
+    const filteredUsers = canSearchUsers
+        ? searchResults.filter(u =>
+            u.userId !== myIdentityHex &&
+            u.username?.toLowerCase().includes(inviteSearch.toLowerCase()) &&
+            !participants.some(p => p.userId === u.userId)
+        )
+        : [];
 
     function copyLink() {
         const url = new URL(window.location.href);
@@ -82,6 +79,7 @@ export default function ShareDialog({
     function handleInvite(user) {
         onInviteUser(user);
         setInviteSearch('');
+        setSearchResults([]);
         inputRef.current?.focus();
     }
 

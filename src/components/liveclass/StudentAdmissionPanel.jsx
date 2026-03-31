@@ -63,7 +63,7 @@ export default function StudentAdmissionPanel({
   };
 
   return (
-    <div ref={panelRef} style={style} className="sap-panel card animate-fade-in">
+    <div ref={panelRef} style={style} className="sap-panel lc-dropdown-panel card animate-fade-in">
       {/* Header */}
       <div className="sap-header">
         <span className="sap-title">Students</span>

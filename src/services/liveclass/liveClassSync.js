@@ -8,8 +8,18 @@
 
 import { getClient, getCurrentUserId, api, callMutation, callQuery, subscribe } from '../../convex-client.js';
 import { logger } from '../logger/logger.js';
+import {
+  createLocalLiveClass,
+  endLocalLiveClass,
+  isLocalLiveClassId,
+  setLocalClassBackground,
+} from './localLiveClassStore.js';
 
 const log = logger.child({ component: 'liveClassSync' });
+
+function isDebugIdentity(userId) {
+  return typeof userId === 'string' && userId.startsWith('debug_');
+}
 
 /**
  * Creates a live-class sync controller.
@@ -168,18 +178,15 @@ export function createLiveClassSync({
   /** Teacher creates a new Live Class. */
   async function createClass(title, backgroundType = 'white') {
     const userId = myUserId();
-    const localClassId = `local_${Date.now()}`;
 
-    if (!userId || !getClient()) {
-      // No Convex connection — use local/demo session immediately
-      activeClassId = localClassId;
-      return {
-        _id: localClassId,
+    if (!userId || !getClient() || isDebugIdentity(userId)) {
+      const localSession = createLocalLiveClass({
+        hostUserId: userId ?? 'local',
         title,
         backgroundType,
-        status: 'active',
-        hostUserId: userId ?? 'local',
-      };
+      });
+      activeClassId = localSession._id;
+      return localSession;
     }
 
     try {
@@ -193,19 +200,22 @@ export function createLiveClassSync({
       return session || { _id: classId, title, backgroundType, status: 'active', hostUserId: userId };
     } catch (err) {
       log.warn('createClass failed, using local fallback', { error: err.message });
-      activeClassId = localClassId;
-      return {
-        _id: localClassId,
+      const localSession = createLocalLiveClass({
+        hostUserId: userId ?? 'local',
         title,
         backgroundType,
-        status: 'active',
-        hostUserId: userId,
-      };
+      });
+      activeClassId = localSession._id;
+      return localSession;
     }
   }
 
   /** Student joins an existing Live Class. Returns snapshot of existing strokes. */
   async function joinClass(classId) {
+    if (isLocalLiveClassId(classId)) {
+      activeClassId = classId;
+      return [];
+    }
     const userId = myUserId();
     if (!userId || !getClient()) return [];
     await callMutation(api.liveclass.joinLiveClass, { classId });
@@ -220,6 +230,10 @@ export function createLiveClassSync({
    * Returns snapshot of existing strokes.
    */
   function watchClass(classId) {
+    if (isLocalLiveClassId(classId)) {
+      activeClassId = classId;
+      return Promise.resolve([]);
+    }
     activeClassId = classId;
     attachListeners(classId);
     // Return strokes asynchronously; caller should await if needed
@@ -235,6 +249,7 @@ export function createLiveClassSync({
 
   /** Broadcast teacher's cursor/laser position (throttled to 50ms). */
   async function broadcastCursor(classId, x, y, tool, mode = 'dot') {
+    if (isLocalLiveClassId(classId)) return;
     const now = Date.now();
     if (now - lastCursorSendTime < 50) return;
     lastCursorSendTime = now;
@@ -258,6 +273,7 @@ export function createLiveClassSync({
 
   /** Called when a canvas object is created locally. sessionId == classId. */
   async function sendStroke(classId, fabricObjectJson, clientId) {
+    if (isLocalLiveClassId(classId)) return;
     const userId = myUserId();
     if (!userId || !classId) return;
     const strokeId = await callMutation(api.strokes.addStroke, {
@@ -272,12 +288,14 @@ export function createLiveClassSync({
   }
 
   async function sendStrokeUpdate(clientId, fabricObjectJson) {
+    if (isLocalLiveClassId(activeClassId)) return;
     const strokeId = clientIdToStrokeId.get(clientId);
     if (strokeId == null) return;
     await callMutation(api.strokes.updateStroke, { strokeId, fabricObjectJson });
   }
 
   async function sendStrokeDelete(clientId) {
+    if (isLocalLiveClassId(activeClassId)) return;
     const strokeId = clientIdToStrokeId.get(clientId);
     if (strokeId == null) return;
     await callMutation(api.strokes.deleteStroke, { strokeId });
@@ -287,6 +305,7 @@ export function createLiveClassSync({
 
   /** Invite a student by username. */
   async function sendInvite(classId, toUsername) {
+    if (isLocalLiveClassId(classId)) return;
     const userId = myUserId();
     if (!userId) return;
     await callMutation(api.invites.inviteToSession, {
@@ -297,6 +316,7 @@ export function createLiveClassSync({
 
   /** Student raises hand. */
   async function raiseHand(classId) {
+    if (isLocalLiveClassId(classId)) return;
     const userId = myUserId();
     if (!userId) return;
     await callMutation(api.handraises.raiseHand, { classId });
@@ -304,11 +324,13 @@ export function createLiveClassSync({
 
   /** Teacher acknowledges a hand raise. */
   async function acknowledgeRaise(raiseId) {
+    if (isLocalLiveClassId(activeClassId)) return;
     await callMutation(api.handraises.acknowledgeHandRaise, { raiseId });
   }
 
   /** Teacher updates timer state. */
   async function updateTimer(classId, mode, state, elapsedMs, targetMs = 0) {
+    if (isLocalLiveClassId(classId)) return;
     await callMutation(api.timers.updateClassTimer, {
       classId,
       mode,
@@ -320,11 +342,20 @@ export function createLiveClassSync({
 
   /** Teacher changes the paper background. */
   async function setBackground(classId, backgroundType) {
+    if (isLocalLiveClassId(classId)) {
+      setLocalClassBackground(classId, backgroundType);
+      return;
+    }
     await callMutation(api.liveclass.setBackground, { classId, backgroundType });
   }
 
   /** Teacher ends the class. */
   async function endClass(classId) {
+    if (isLocalLiveClassId(classId)) {
+      endLocalLiveClass(classId);
+      leaveClass();
+      return;
+    }
     await callMutation(api.liveclass.endLiveClass, { classId });
     leaveClass();
   }
@@ -435,6 +466,7 @@ export function createLiveClassSync({
    * Call after undo/redo (which use loadFromJSON and bypass individual stroke events).
    */
   async function syncFullCanvasState(classId, fabricObjects) {
+    if (isLocalLiveClassId(classId)) return;
     if (!getClient() || !classId) return;
 
     const currentIds = new Set();

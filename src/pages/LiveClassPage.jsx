@@ -720,6 +720,8 @@ export default function LiveClassPage() {
           });
         } else if (type === 'bg-change') {
           setBackgroundType(data);
+        } else if (type === 'class-ended') {
+          setEndedMsg('Class has ended.');
         }
       };
 
@@ -1801,7 +1803,11 @@ export default function LiveClassPage() {
           {isTeacher ? (
             <button
               className="badge lc-live-badge lc-live-badge--end"
-              onClick={() => { syncRef.current?.endClass(classId); navigate('/teacher'); }}
+              onClick={() => {
+                broadcastRef.current?.postMessage({ type: 'class-ended' });
+                syncRef.current?.endClass(classId);
+                navigate('/teacher');
+              }}
               title="End class"
             >● LIVE</button>
           ) : (

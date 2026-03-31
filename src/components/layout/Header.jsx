@@ -10,7 +10,7 @@ import './Layout.css';
 const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
 
 export default function Header({ onMenuToggle, onSearchOpen }) {
-    const { canSignIn, isSignedIn, isLoaded } = useAuth();
+    const { canSignIn, debugAuthEnabled, isSignedIn, isLoaded } = useAuth();
     const [authOpen, setAuthOpen] = useState(false);
     const location = useLocation();
     const redirectTo = getLocationPath(location);
@@ -35,7 +35,7 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
                         <kbd className="search-kbd">⌘K</kbd>
                     </button>
 
-                    {isLoaded && isSignedIn && <NotificationBell />}
+                    {isLoaded && isSignedIn && !debugAuthEnabled && <NotificationBell />}
 
                     {/* Auth: show UserMenu when signed in, Sign In button only when available */}
                     {isLoaded && (

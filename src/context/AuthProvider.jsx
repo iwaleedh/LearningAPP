@@ -19,6 +19,7 @@ import {
   getCurrentUserId,
   getCurrentUsername,
   restoreAnonymousIdentity,
+  setLocalDebugIdentity,
   setCurrentUsernameOverride,
   setAuthenticatedIdentity,
 } from '../convex-client.js';
@@ -26,6 +27,48 @@ import { setLogContext } from '../services/logger/logger.js';
 
 const CLERK_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const HAS_CLERK = Boolean(CLERK_KEY);
+const DEV_AUTH_ENABLED = import.meta.env.DEV && !HAS_CLERK;
+const DEV_AUTH_STORAGE_KEY = 'lt_dev_auth_session';
+
+function readStoredDevAuthSession() {
+  if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
+    return null;
+  }
+
+  try {
+    const raw = window.sessionStorage.getItem(DEV_AUTH_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed?.userId || !parsed?.username) {
+      return null;
+    }
+
+    const role = parsed.role === 'teacher' ? 'teacher' : 'student';
+    return {
+      role,
+      userId: String(parsed.userId),
+      username: String(parsed.username),
+    };
+  } catch {
+    return null;
+  }
+}
+
+function persistDevAuthSession(session) {
+  if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
+    return;
+  }
+
+  window.sessionStorage.setItem(DEV_AUTH_STORAGE_KEY, JSON.stringify(session));
+}
+
+function clearStoredDevAuthSession() {
+  if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
+    return;
+  }
+
+  window.sessionStorage.removeItem(DEV_AUTH_STORAGE_KEY);
+}
 
 function resolveClerkProfile(clerkUser) {
   const username =
@@ -174,19 +217,77 @@ function AuthContextProvider({ children }) {
 }
 
 function AnonymousAuthContextProvider({ children }) {
+  const [devSession, setDevSession] = useState(() => readStoredDevAuthSession());
+
+  useEffect(() => {
+    if (!DEV_AUTH_ENABLED) {
+      return undefined;
+    }
+
+    if (devSession) {
+      setLocalDebugIdentity(devSession);
+      setLogContext({ userId: devSession.userId });
+      return undefined;
+    }
+
+    void restoreAnonymousIdentity().then(() => {
+      setLogContext({ userId: getCurrentUserId() || '' });
+    });
+    return undefined;
+  }, [devSession]);
+
+  const signInDebug = useCallback(async ({ role = 'student', username }) => {
+    if (!DEV_AUTH_ENABLED) {
+      return;
+    }
+
+    const normalizedRole = role === 'teacher' ? 'teacher' : 'student';
+    const baseUsername = String(username || '').trim() || `Debug ${normalizedRole === 'teacher' ? 'Teacher' : 'Student'}`;
+    const slug = baseUsername
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '')
+      .slice(0, 24) || normalizedRole;
+
+    const session = {
+      role: normalizedRole,
+      userId: `debug_${normalizedRole}_${crypto.randomUUID().slice(0, 8)}`,
+      username: baseUsername,
+      slug,
+    };
+
+    persistDevAuthSession(session);
+    setLocalDebugIdentity(session);
+    setLogContext({ userId: session.userId });
+    setDevSession(session);
+  }, []);
+
+  const signOut = useCallback(async () => {
+    clearStoredDevAuthSession();
+    setDevSession(null);
+    await restoreAnonymousIdentity();
+    setLogContext({ userId: getCurrentUserId() || '' });
+  }, []);
+
   const value = useMemo(() => ({
     clerkUser: null,
-    dbUser: null,
-    canSignIn: false,
+    dbUser: devSession ? {
+      userId: devSession.userId,
+      username: devSession.username,
+      role: devSession.role,
+    } : null,
+    canSignIn: DEV_AUTH_ENABLED,
+    debugAuthEnabled: DEV_AUTH_ENABLED,
     isAccessReady: true,
     isLoaded: true,
-    isSignedIn: false,
-    role: 'student',
-    userId: getCurrentUserId(),
-    username: getCurrentUsername() || 'Anonymous',
+    isSignedIn: Boolean(devSession),
+    role: devSession?.role || 'student',
+    userId: devSession?.userId || getCurrentUserId(),
+    username: devSession?.username || getCurrentUsername() || 'Anonymous',
     avatarUrl: null,
-    signOut: async () => {},
-  }), []);
+    signInDebug,
+    signOut,
+  }), [devSession, signInDebug, signOut]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

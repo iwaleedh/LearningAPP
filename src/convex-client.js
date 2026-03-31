@@ -6,6 +6,22 @@
  */
 import { ConvexReactClient } from 'convex/react';
 import { api } from '../convex/_generated/api.js';
+import {
+  approveLocalJoin,
+  getLocalLiveClassByCode,
+  getLocalLiveClassById,
+  getLocalStudentName,
+  getLocalStudentNote,
+  isLocalJoinRequestId,
+  isLocalLiveClassId,
+  rejectLocalJoin,
+  requestLocalJoin,
+  setLocalClassAutoAccept,
+  subscribeLocalJoinRequests,
+  subscribeLocalJoinStatus,
+  subscribeLocalStudentNote,
+  updateLocalStudentNote,
+} from './services/liveclass/localLiveClassStore.js';
 
 const CONVEX_URL = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_CONVEX_URL) || '';
 
@@ -69,6 +85,12 @@ function applyIdentity(userId, username) {
 export function setCurrentUsernameOverride(username) {
   if (!currentUserId || !username) return;
   applyIdentity(currentUserId, username);
+}
+
+export function setLocalDebugIdentity({ userId, username }) {
+  if (!userId || !username) return;
+  getOrCreateClient()?.clearAuth();
+  applyIdentity(userId, username);
 }
 
 async function registerCurrentUser(extra = {}) {
@@ -339,6 +361,9 @@ export async function getActiveLiveClasses() {
 }
 
 export async function getLiveClassById(classId) {
+  if (isLocalLiveClassId(classId)) {
+    return getLocalLiveClassById(classId, currentUserId);
+  }
   if (!convexClient) return null;
   try {
     return await convexClient.query(api.liveclass.getLiveClassById, { classId });
@@ -399,6 +424,10 @@ export async function getClassTimer(classId) {
 
 // ── Join Code helpers ───────────────────────────────────────────────
 export async function getLiveClassByCode(code) {
+  const localSession = getLocalLiveClassByCode(code);
+  if (localSession) {
+    return localSession;
+  }
   if (!convexClient) return null;
   try {
     return await convexClient.query(api.liveclass.getLiveClassByCode, { code });
@@ -408,31 +437,54 @@ export async function getLiveClassByCode(code) {
 }
 
 export async function requestJoin(sessionId, studentName, tempId) {
+  if (isLocalLiveClassId(sessionId)) {
+    return requestLocalJoin({
+      sessionId,
+      studentName,
+      tempId,
+      requesterUserId: currentUserId,
+    });
+  }
   if (!convexClient) return null;
   return convexClient.mutation(api.joinRequests.requestJoin, { sessionId, studentName, tempId });
 }
 
 export async function approveJoin(requestId) {
+  if (isLocalJoinRequestId(requestId)) {
+    return approveLocalJoin(requestId);
+  }
   if (!convexClient) return null;
   return convexClient.mutation(api.joinRequests.approveJoin, { requestId });
 }
 
 export async function rejectJoin(requestId) {
+  if (isLocalJoinRequestId(requestId)) {
+    return rejectLocalJoin(requestId);
+  }
   if (!convexClient) return null;
   return convexClient.mutation(api.joinRequests.rejectJoin, { requestId });
 }
 
 export async function setClassAutoAccept(classId, autoAccept) {
+  if (isLocalLiveClassId(classId)) {
+    return setLocalClassAutoAccept(classId, autoAccept);
+  }
   if (!convexClient) return null;
   return convexClient.mutation(api.liveclass.setAutoAccept, { classId, autoAccept });
 }
 
 export async function updateStudentNote(sessionId, tempId, noteContent) {
+  if (isLocalLiveClassId(sessionId)) {
+    return updateLocalStudentNote(sessionId, tempId, noteContent);
+  }
   if (!convexClient) return null;
   return convexClient.mutation(api.joinRequests.updateStudentNote, { sessionId, tempId, noteContent });
 }
 
 export async function getStudentNote(sessionId, tempId) {
+  if (isLocalLiveClassId(sessionId)) {
+    return getLocalStudentNote(sessionId, tempId);
+  }
   if (!convexClient) return null;
   try {
     return await convexClient.query(api.joinRequests.getStudentNote, { sessionId, tempId });
@@ -442,6 +494,9 @@ export async function getStudentNote(sessionId, tempId) {
 }
 
 export async function getStudentName(sessionId, tempId) {
+  if (isLocalLiveClassId(sessionId)) {
+    return getLocalStudentName(sessionId, tempId);
+  }
   if (!convexClient) return null;
   try {
     return await convexClient.query(api.joinRequests.getStudentName, { sessionId, tempId });
@@ -452,13 +507,22 @@ export async function getStudentName(sessionId, tempId) {
 
 // Subscribe helpers for reactive data
 export function subscribeToJoinRequests(sessionId, callback) {
+  if (isLocalLiveClassId(sessionId)) {
+    return subscribeLocalJoinRequests(sessionId, callback);
+  }
   return subscribe(api.joinRequests.getJoinRequests, { sessionId }, callback);
 }
 
 export function subscribeToJoinStatus(requestId, callback) {
+  if (isLocalJoinRequestId(requestId)) {
+    return subscribeLocalJoinStatus(requestId, callback);
+  }
   return subscribe(api.joinRequests.getStudentJoinStatus, { requestId }, callback);
 }
 
 export function subscribeToStudentNote(sessionId, tempId, callback) {
+  if (isLocalLiveClassId(sessionId)) {
+    return subscribeLocalStudentNote(sessionId, tempId, callback);
+  }
   return subscribe(api.joinRequests.getStudentNote, { sessionId, tempId }, callback);
 }
