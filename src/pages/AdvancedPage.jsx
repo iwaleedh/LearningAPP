@@ -56,7 +56,6 @@ export default function AdvancedPage() {
 
                             await callMutation(api.notes.upsertNote, {
                                 noteId: 'test:123',
-                                ownerUserId: 'test-user',
                                 subject: 'physics',
                                 title: 'Test Title',
                                 subtopicTitle: 'Test Subtopic',

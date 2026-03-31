@@ -9,144 +9,303 @@
  * used as the userId throughout the Convex backend.
  */
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { ClerkProvider, useUser, useClerk } from '@clerk/clerk-react';
+import { ClerkProvider, useUser, useClerk, useAuth as useClerkAuth } from '@clerk/clerk-react';
+import { ConvexProvider } from 'convex/react';
+import { ConvexProviderWithClerk } from 'convex/react-clerk';
 import AuthContext from './AuthContext';
 import { api } from '../../convex/_generated/api.js';
-import { getClient, getCurrentUserId, getCurrentUsername, onConvexReady } from '../convex-client.js';
+import {
+  getClient,
+  getCurrentUserId,
+  getCurrentUsername,
+  restoreAnonymousIdentity,
+  setLocalDebugIdentity,
+  setCurrentUsernameOverride,
+  setAuthenticatedIdentity,
+} from '../convex-client.js';
+import { setLogContext } from '../services/logger/logger.js';
 
 const CLERK_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const HAS_CLERK = Boolean(CLERK_KEY);
+const DEV_AUTH_ENABLED = import.meta.env.DEV && !HAS_CLERK;
+const DEV_AUTH_STORAGE_KEY = 'lt_dev_auth_session';
+
+function readStoredDevAuthSession() {
+  if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
+    return null;
+  }
+
+  try {
+    const raw = window.sessionStorage.getItem(DEV_AUTH_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed?.userId || !parsed?.username) {
+      return null;
+    }
+
+    const role = parsed.role === 'teacher' ? 'teacher' : 'student';
+    return {
+      role,
+      userId: String(parsed.userId),
+      username: String(parsed.username),
+    };
+  } catch {
+    return null;
+  }
+}
+
+function persistDevAuthSession(session) {
+  if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
+    return;
+  }
+
+  window.sessionStorage.setItem(DEV_AUTH_STORAGE_KEY, JSON.stringify(session));
+}
+
+function clearStoredDevAuthSession() {
+  if (!DEV_AUTH_ENABLED || typeof window === 'undefined') {
+    return;
+  }
+
+  window.sessionStorage.removeItem(DEV_AUTH_STORAGE_KEY);
+}
+
+function resolveClerkProfile(clerkUser) {
+  const username =
+    clerkUser.username ||
+    clerkUser.firstName ||
+    clerkUser.emailAddresses?.[0]?.emailAddress?.split('@')[0] ||
+    `user_${clerkUser.id.slice(-6)}`;
+
+  return {
+    username,
+    email: clerkUser.primaryEmailAddress?.emailAddress || undefined,
+    avatarUrl: clerkUser.imageUrl || undefined,
+  };
+}
+
+function resolveClerkRole(clerkUser) {
+  const rawRole = clerkUser?.publicMetadata?.role;
+  if (typeof rawRole !== 'string') return null;
+  const normalized = rawRole.trim().toLowerCase();
+  return normalized === 'teacher' || normalized === 'student' ? normalized : null;
+}
 
 /* ── Inner provider: runs inside ClerkProvider so it can call useUser ── */
 function AuthContextProvider({ children }) {
   const { user: clerkUser, isLoaded, isSignedIn } = useUser();
   const { signOut: clerkSignOut } = useClerk();
+  const { getToken } = useClerkAuth();
   const [dbUser, setDbUser] = useState(null);
   const [role, setRole] = useState('student');
+  const [syncedAccessKey, setSyncedAccessKey] = useState(null);
+  const expectedAccessKey = isLoaded
+    ? (isSignedIn && clerkUser ? `signed-in:${clerkUser.id}` : 'signed-out')
+    : null;
 
-  // When Clerk loads a signed-in user, upsert into Convex and pull role
   useEffect(() => {
-    if (!isLoaded) return;
+    let cancelled = false;
 
-    const client = getClient();
-    if (!client) return;
+    if (!isLoaded) {
+      return () => {
+        cancelled = true;
+      };
+    }
 
-    if (isSignedIn && clerkUser) {
-      const clerkId = clerkUser.id;
-      const username =
-        clerkUser.username ||
-        clerkUser.firstName ||
-        clerkUser.emailAddresses?.[0]?.emailAddress?.split('@')[0] ||
-        `user_${clerkId.slice(-6)}`;
-      const email = clerkUser.primaryEmailAddress?.emailAddress || undefined;
-      const avatarUrl = clerkUser.imageUrl || undefined;
+    async function syncUser() {
+      try {
+        if (isSignedIn && clerkUser) {
+          const profile = resolveClerkProfile(clerkUser);
+          const claimedRole = resolveClerkRole(clerkUser);
+          const client = await setAuthenticatedIdentity({
+            userId: clerkUser.id,
+            username: profile.username,
+            email: profile.email,
+            avatarUrl: profile.avatarUrl,
+            fetchToken: async ({ forceRefreshToken }) =>
+              await getToken({
+                template: 'convex',
+                skipCache: forceRefreshToken,
+              }),
+          });
 
-      // Upsert user record in Convex
-      client
-        .mutation(api.users.registerUser, { userId: clerkId, username, email, avatarUrl })
-        .then(() => client.query(api.users.getUser, { userId: clerkId }))
-        .then((u) => {
-          setDbUser(u);
-          setRole(u?.role ?? 'student');
-        })
-        .catch(console.error);
-    } else {
-      // Anonymous — read existing anon record if available
-      const anonId = getCurrentUserId();
-      if (anonId) {
-        client
-          .query(api.users.getUser, { userId: anonId })
-          .then((u) => {
-            setDbUser(u ?? null);
-            setRole(u?.role ?? 'student');
-          })
-          .catch(() => {});
+          if (cancelled) return;
+
+          setLogContext({ userId: clerkUser.id });
+          if (!client) {
+            setDbUser(null);
+            setRole('student');
+            return;
+          }
+          const [user, serverRole] = await Promise.all([
+            client.query(api.users.getUser, { userId: clerkUser.id }),
+            client.query(api.users.getMyRole, {}),
+          ]);
+          if (cancelled) return;
+
+          const resolvedRole = claimedRole || serverRole || user?.role || 'student';
+          if (user?.username) {
+            setCurrentUsernameOverride(user.username);
+          }
+          setDbUser(user ? { ...user, role: resolvedRole } : null);
+          setRole(resolvedRole);
+          return;
+        }
+
+        await restoreAnonymousIdentity();
+        if (cancelled) return;
+
+        const anonId = getCurrentUserId();
+        setLogContext({ userId: anonId || '' });
+        setDbUser(null);
+        setRole('student');
+      } catch (error) {
+        if (cancelled) return;
+        console.error('Auth sync failed:', error);
+        setDbUser(null);
+        setRole('student');
+      } finally {
+        if (!cancelled) {
+          setSyncedAccessKey(expectedAccessKey);
+        }
       }
     }
-  }, [isLoaded, isSignedIn, clerkUser]);
+
+    void syncUser();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [expectedAccessKey, getToken, isLoaded, isSignedIn, clerkUser]);
 
   const signOut = useCallback(async () => {
     await clerkSignOut();
+    if (!isLoaded) return;
     setDbUser(null);
     setRole('student');
-  }, [clerkSignOut]);
+  }, [clerkSignOut, isLoaded]);
 
   const value = useMemo(() => {
+    const profile = isSignedIn && clerkUser ? resolveClerkProfile(clerkUser) : null;
+    const claimedRole = isSignedIn && clerkUser ? resolveClerkRole(clerkUser) : null;
+    const resolvedRole = claimedRole || role;
     const userId = isSignedIn && clerkUser ? clerkUser.id : getCurrentUserId();
-    const username =
-      (isSignedIn && clerkUser
-        ? clerkUser.username ||
-          clerkUser.firstName ||
-          clerkUser.emailAddresses?.[0]?.emailAddress?.split('@')[0]
-        : getCurrentUsername()) || 'Anonymous';
+    const username = dbUser?.username || profile?.username || getCurrentUsername() || 'Anonymous';
     const avatarUrl = isSignedIn && clerkUser ? clerkUser.imageUrl : null;
+    const isAccessReady = !isLoaded
+      ? false
+      : !isSignedIn
+        ? syncedAccessKey === 'signed-out'
+        : Boolean(claimedRole || syncedAccessKey === expectedAccessKey);
 
     return {
       clerkUser: clerkUser ?? null,
       dbUser,
       canSignIn: HAS_CLERK,
+      isAccessReady,
       isLoaded,
       isSignedIn: !!isSignedIn,
-      role,
+      role: resolvedRole,
       userId,
       username,
       avatarUrl,
       signOut,
     };
-  }, [clerkUser, dbUser, isLoaded, isSignedIn, role, signOut]);
+  }, [clerkUser, dbUser, expectedAccessKey, isLoaded, isSignedIn, role, signOut, syncedAccessKey]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
 function AnonymousAuthContextProvider({ children }) {
-  const [dbUser, setDbUser] = useState(null);
-  const [role, setRole] = useState('student');
+  const [devSession, setDevSession] = useState(() => readStoredDevAuthSession());
 
   useEffect(() => {
-    let cancelled = false;
+    if (!DEV_AUTH_ENABLED) {
+      return undefined;
+    }
 
-    const syncAnonymousUser = async (
-      client = getClient(),
-      userId = getCurrentUserId(),
-    ) => {
-      if (!client || !userId) return;
+    if (devSession) {
+      setLocalDebugIdentity(devSession);
+      setLogContext({ userId: devSession.userId });
+      return undefined;
+    }
 
-      try {
-        const user = await client.query(api.users.getUser, { userId });
-        if (cancelled) return;
-        setDbUser(user ?? null);
-        setRole(user?.role ?? 'student');
-      } catch {
-        if (cancelled) return;
-        setDbUser(null);
-        setRole('student');
-      }
-    };
-
-    void syncAnonymousUser();
-    onConvexReady((client, userId) => {
-      void syncAnonymousUser(client, userId);
+    void restoreAnonymousIdentity().then(() => {
+      setLogContext({ userId: getCurrentUserId() || '' });
     });
+    return undefined;
+  }, [devSession]);
 
-    return () => {
-      cancelled = true;
+  const signInDebug = useCallback(async ({ role = 'student', username }) => {
+    if (!DEV_AUTH_ENABLED) {
+      return;
+    }
+
+    const normalizedRole = role === 'teacher' ? 'teacher' : 'student';
+    const baseUsername = String(username || '').trim() || `Debug ${normalizedRole === 'teacher' ? 'Teacher' : 'Student'}`;
+    const slug = baseUsername
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '')
+      .slice(0, 24) || normalizedRole;
+
+    const session = {
+      role: normalizedRole,
+      userId: `debug_${normalizedRole}_${crypto.randomUUID().slice(0, 8)}`,
+      username: baseUsername,
+      slug,
     };
+
+    persistDevAuthSession(session);
+    setLocalDebugIdentity(session);
+    setLogContext({ userId: session.userId });
+    setDevSession(session);
+  }, []);
+
+  const signOut = useCallback(async () => {
+    clearStoredDevAuthSession();
+    setDevSession(null);
+    await restoreAnonymousIdentity();
+    setLogContext({ userId: getCurrentUserId() || '' });
   }, []);
 
   const value = useMemo(() => ({
     clerkUser: null,
-    dbUser,
-    canSignIn: false,
+    dbUser: devSession ? {
+      userId: devSession.userId,
+      username: devSession.username,
+      role: devSession.role,
+    } : null,
+    canSignIn: DEV_AUTH_ENABLED,
+    debugAuthEnabled: DEV_AUTH_ENABLED,
+    isAccessReady: true,
     isLoaded: true,
-    isSignedIn: false,
-    role,
-    userId: getCurrentUserId(),
-    username: getCurrentUsername() || 'Anonymous',
+    isSignedIn: Boolean(devSession),
+    role: devSession?.role || 'student',
+    userId: devSession?.userId || getCurrentUserId(),
+    username: devSession?.username || getCurrentUsername() || 'Anonymous',
     avatarUrl: null,
-    signOut: async () => {},
-  }), [dbUser, role]);
+    signInDebug,
+    signOut,
+  }), [devSession, signInDebug, signOut]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+}
+
+function MaybeConvexProvider({ children }) {
+  const client = getClient();
+  if (!client) return children;
+  return <ConvexProvider client={client}>{children}</ConvexProvider>;
+}
+
+function MaybeClerkConvexProvider({ children }) {
+  const client = getClient();
+  if (!client) return children;
+  return (
+    <ConvexProviderWithClerk client={client} useAuth={useClerkAuth}>
+      {children}
+    </ConvexProviderWithClerk>
+  );
 }
 
 /* ── Outer: wraps with ClerkProvider if key is present ── */
@@ -154,12 +313,18 @@ export default function AuthProvider({ children }) {
   // If no Clerk key configured, provide an anonymous context that still
   // syncs the current DB user record and role from Convex when available.
   if (!CLERK_KEY) {
-    return <AnonymousAuthContextProvider>{children}</AnonymousAuthContextProvider>;
+    return (
+      <MaybeConvexProvider>
+        <AnonymousAuthContextProvider>{children}</AnonymousAuthContextProvider>
+      </MaybeConvexProvider>
+    );
   }
 
   return (
     <ClerkProvider publishableKey={CLERK_KEY} afterSignOutUrl="/">
-      <AuthContextProvider>{children}</AuthContextProvider>
+      <MaybeClerkConvexProvider>
+        <AuthContextProvider>{children}</AuthContextProvider>
+      </MaybeClerkConvexProvider>
     </ClerkProvider>
   );
 }

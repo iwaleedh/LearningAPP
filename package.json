@@ -5,11 +5,12 @@
   "type": "module",
   "homepage": "https://iwaleedh.github.io/LearningAPP",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "dev": "npm run pastpapers:manifest && vite",
+    "build": "npm run pastpapers:manifest && vite build",
+    "lint": "eslint src public/sw.js scripts vite.config.js eslint.config.js",
+    "pastpapers:manifest": "node scripts/generatePastPaperManifest.mjs",
     "preview": "vite preview",
-    "test": "node --test \"src/**/*.test.js\"",
+    "test": "tsx --test \"src/**/*.test.js\" \"convex/**/*.test.ts\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "convex:deploy": "npx convex deploy"
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/node": "^25.5.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
@@ -39,6 +41,7 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
+    "tsx": "^4.20.6",
     "vite": "^7.3.1"
   }
 }

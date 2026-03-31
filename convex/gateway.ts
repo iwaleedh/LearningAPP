@@ -13,14 +13,25 @@
  */
 import { query } from "./_generated/server";
 import { v } from "convex/values";
+import {
+  isTeacherUserId,
+  requireAuthenticatedUserId,
+  requireHostedSessionAccess,
+  requireTeacher,
+} from "./authHelpers";
 
 // ── User + Notes: enriched note list with author username ───────────
 export const getNotesWithAuthors = query({
   args: { subject: v.string() },
   handler: async (ctx, { subject }) => {
+    const currentUserId = await requireAuthenticatedUserId(ctx);
+    const isTeacher = await isTeacherUserId(ctx, currentUserId);
     const notes = await ctx.db
       .query("notes")
-      .withIndex("by_subject", (q) => q.eq("subject", subject))
+      .withIndex(isTeacher ? "by_subject" : "by_owner", (q) =>
+        isTeacher ? q.eq("subject", subject) : q.eq("ownerUserId", currentUserId)
+      )
+      .filter((q) => q.eq(q.field("subject"), subject))
       .collect();
 
     // Batch-fetch unique user IDs
@@ -49,6 +60,7 @@ export const getNotesWithAuthors = query({
 export const getSessionWithParticipants = query({
   args: { sessionId: v.id("liveSessions") },
   handler: async (ctx, { sessionId }) => {
+    await requireHostedSessionAccess(ctx, String(sessionId));
     const session = await ctx.db.get(sessionId);
     if (!session) return null;
 
@@ -82,6 +94,7 @@ export const getSessionWithParticipants = query({
 export const getPlatformOverview = query({
   args: {},
   handler: async (ctx) => {
+    await requireTeacher(ctx);
     const pendingEvents = await ctx.db
       .query("events")
       .withIndex("by_status", (q) => q.eq("status", "pending"))

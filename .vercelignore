@@ -11,7 +11,8 @@ pipeline/
 books/
 output/
 spacetime-backend/
-scripts/
+scripts/*
+!scripts/generatePastPaperManifest.mjs
 maths_extracted/
 statistics_extracted/
 mechanics_extracted/

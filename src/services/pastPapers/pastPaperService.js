@@ -3,6 +3,12 @@ import { logger } from '../logger/logger.js';
 
 const log = logger.child({ component: 'pastPaperService' });
 
+const MONTH_ORDER = Object.freeze({
+    January: 0,
+    May: 1,
+    October: 2,
+});
+
 /**
  * Trigger a file download using a direct anchor click.
  * Must be called synchronously within a user-gesture handler to avoid
@@ -125,8 +131,15 @@ export function filterPapers(papers, { year, month, unit, type }) {
  */
 export function sortPapersByDate(papers, ascending = false) {
     return [...papers].sort((a, b) => {
-        const dateA = new Date(`${a.year}-${a.month}-01`);
-        const dateB = new Date(`${b.year}-${b.month}-01`);
-        return ascending ? dateA - dateB : dateB - dateA;
+        const yearA = Number(a.year) || 0;
+        const yearB = Number(b.year) || 0;
+        const monthA = MONTH_ORDER[a.month] ?? -1;
+        const monthB = MONTH_ORDER[b.month] ?? -1;
+
+        if (yearA !== yearB) {
+            return ascending ? yearA - yearB : yearB - yearA;
+        }
+
+        return ascending ? monthA - monthB : monthB - monthA;
     });
 }

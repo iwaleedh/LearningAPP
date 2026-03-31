@@ -82,7 +82,7 @@ const subjects = [
 function resolveUrl(url) {
     if (!url || url.startsWith('https://')) return url;
     const cdnBase = import.meta.env.VITE_PDF_CDN_BASE;
-    if (cdnBase) return cdnBase + url;
+    if (cdnBase) return cdnBase + url; // e.g. https://raw.githubusercontent.com/.../public/pastpapers/x.pdf
     return import.meta.env.BASE_URL + url.slice(1);
 }
 

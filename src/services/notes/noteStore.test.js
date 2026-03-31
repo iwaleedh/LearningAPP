@@ -1,16 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
+    clearGuestData,
     __resetMemoryStoreForTests,
+    getGuestDataSummary,
     getNote,
     listFlashcards,
     listNotesBySubject,
+    saveNoteAsset,
     saveFlashcard,
     upsertNote,
 } from './noteStore.js';
 
 test('note store persists and lists note headers via memory fallback', async () => {
-    __resetMemoryStoreForTests();
+    await __resetMemoryStoreForTests();
 
     const noteDoc = {
         noteId: 'note:chemistry:1:1:0',
@@ -49,7 +52,7 @@ test('note store persists and lists note headers via memory fallback', async () 
 });
 
 test('flashcard save/list keeps source note linkage', async () => {
-    __resetMemoryStoreForTests();
+    await __resetMemoryStoreForTests();
 
     await saveFlashcard({
         front: 'What is osmosis?',
@@ -62,4 +65,45 @@ test('flashcard save/list keeps source note linkage', async () => {
     const cards = await listFlashcards({ subject: 'biology' });
     assert.equal(cards.length, 1);
     assert.equal(cards[0].sourceNoteId, 'note:biology:1:2:0');
+});
+
+test('guest data summary counts persisted local guest content and can be cleared', async () => {
+    await __resetMemoryStoreForTests();
+
+    await upsertNote({
+        noteId: 'note:physics:1:1:0',
+        subject: 'physics',
+        topicTitle: 'Motion',
+        subtopicTitle: 'Speed and velocity',
+        breadcrumbs: ['A-Level', 'Physics'],
+        confidenceScore: 3,
+        blocks: [{ id: 'p-1', type: 'paragraph', data: { text: 'Guest note content' } }],
+        recall: { enabled: true, cues: [], summaryText: '', ready: false },
+        evidence: [],
+        mentions: [],
+    });
+
+    await saveFlashcard({
+        front: 'Define acceleration',
+        back: 'Rate of change of velocity.',
+        subject: 'physics',
+        sourceNoteId: 'note:physics:1:1:0',
+        sourceLabel: 'Physics > Motion',
+    });
+
+    await saveNoteAsset({
+        noteId: 'note:physics:1:1:0',
+        type: 'image',
+        data: 'data:image/png;base64,abc',
+    });
+
+    const summary = await getGuestDataSummary();
+    assert.equal(summary.notes, 1);
+    assert.equal(summary.flashcards, 1);
+    assert.equal(summary.assets, 1);
+    assert.equal(summary.totalItems, 3);
+
+    await clearGuestData();
+    const cleared = await getGuestDataSummary();
+    assert.equal(cleared.totalItems, 0);
 });

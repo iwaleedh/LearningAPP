@@ -75,11 +75,13 @@ export default defineSchema({
   sessionInvites: defineTable({
     sessionId: v.string(), // string ID — references liveSessions or liveClassSessions
     fromUserId: v.string(),
+    toUserId: v.optional(v.string()),
     toUsername: v.string(),
     status: v.string(), // 'pending' | 'accepted' | 'declined'
     createdAt: v.number(),
   })
     .index("by_session", ["sessionId"])
+    .index("by_toUserId", ["toUserId"])
     .index("by_toUsername", ["toUsername"])
     .index("by_status", ["status"]),
 
@@ -110,6 +112,7 @@ export default defineSchema({
     sessionId: v.string(),
     studentName: v.string(),
     tempId: v.string(), // client-generated UUID, unique per student tab
+    requesterUserId: v.optional(v.string()),
     status: v.string(), // 'pending' | 'accepted' | 'rejected'
     requestedAt: v.number(),
   })

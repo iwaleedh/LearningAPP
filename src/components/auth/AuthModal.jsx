@@ -6,11 +6,19 @@
 import { useState } from 'react';
 import { SignIn, SignUp } from '@clerk/clerk-react';
 import { useAuth } from '../../hooks/useAuth.js';
+import { sanitizeRedirectPath } from './accessControl.js';
 import './AuthModal.css';
 
-export default function AuthModal({ onClose }) {
-  const { canSignIn } = useAuth();
+export default function AuthModal({ onClose, redirectTo = '/' }) {
+  const { canSignIn, debugAuthEnabled, signInDebug } = useAuth();
   const [tab, setTab] = useState('signin');
+  const [debugName, setDebugName] = useState('');
+  const safeRedirectTo = sanitizeRedirectPath(redirectTo, '/');
+
+  async function handleDebugSignIn(role) {
+    await signInDebug?.({ role, username: debugName });
+    onClose();
+  }
 
   return (
     <div className="auth-modal-overlay" onClick={(e) => e.target === e.currentTarget && onClose()}>
@@ -37,6 +45,37 @@ export default function AuthModal({ onClose }) {
               Continue in Guest Mode
             </button>
           </div>
+        ) : debugAuthEnabled ? (
+          <div className="auth-modal-fallback">
+            <p className="auth-modal-fallback-text">
+              Local dev auth is enabled for this environment. Choose a role to test protected flows without Clerk.
+            </p>
+            <input
+              className="lc-modal-input"
+              type="text"
+              placeholder="Display name (optional)"
+              value={debugName}
+              onChange={(event) => setDebugName(event.target.value)}
+              autoFocus
+            />
+            <button
+              type="button"
+              className="btn btn-primary auth-modal-action"
+              onClick={() => handleDebugSignIn('student')}
+            >
+              Continue as Student
+            </button>
+            <button
+              type="button"
+              className="btn btn-secondary auth-modal-action"
+              onClick={() => handleDebugSignIn('teacher')}
+            >
+              Continue as Teacher
+            </button>
+            <button type="button" className="btn btn-ghost auth-modal-action" onClick={onClose}>
+              Continue in Guest Mode
+            </button>
+          </div>
         ) : (
           <>
             <div className="auth-tabs">
@@ -60,12 +99,14 @@ export default function AuthModal({ onClose }) {
               {tab === 'signin' ? (
                 <SignIn
                   appearance={{ elements: { card: 'auth-clerk-card', rootBox: 'auth-clerk-root' } }}
-                  afterSignInUrl="/"
+                  forceRedirectUrl={safeRedirectTo}
+                  fallbackRedirectUrl={safeRedirectTo}
                 />
               ) : (
                 <SignUp
                   appearance={{ elements: { card: 'auth-clerk-card', rootBox: 'auth-clerk-root' } }}
-                  afterSignUpUrl="/"
+                  forceRedirectUrl={safeRedirectTo}
+                  fallbackRedirectUrl={safeRedirectTo}
                 />
               )}
             </div>

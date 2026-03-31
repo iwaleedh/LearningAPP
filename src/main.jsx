@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { registerServiceWorker } from './pwa/registerServiceWorker'
-import { initConvex } from './convex-client.js'
+import { getCurrentUserId, initConvex } from './convex-client.js'
 import { logger, setLogContext } from './services/logger/logger.js'
 import { startBufferFlush, flush as flushLogBuffer } from './services/logger/logBuffer.js'
 
@@ -33,7 +33,7 @@ try {
   initConvex().then(() => {
     // Enrich logger with user context once Convex is ready
     try {
-      const userId = localStorage.getItem('lt_user_id');
+      const userId = getCurrentUserId();
       if (userId) setLogContext({ userId });
     } catch { /* localStorage unavailable */ }
   }).catch(err => {

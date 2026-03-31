@@ -7,6 +7,7 @@ import Sidebar from './components/layout/Sidebar';
 import Header from './components/layout/Header';
 import HomePage from './pages/HomePage';
 import RequireRole from './components/auth/RequireRole';
+import RequireSignIn from './components/auth/RequireSignIn';
 import './App.css';
 
 
@@ -73,7 +74,7 @@ function AppContent() {
               <Route
                 path="/teacher"
                 element={(
-                  <RequireRole allowedRoles={['teacher']}>
+                  <RequireRole allowedRoles={['teacher']} reason="open the teacher dashboard">
                     <TeacherDashboard />
                   </RequireRole>
                 )}
@@ -81,7 +82,7 @@ function AppContent() {
               <Route
                 path="/teacher/monitor"
                 element={(
-                  <RequireRole allowedRoles={['teacher']}>
+                  <RequireRole allowedRoles={['teacher']} reason="monitor live teacher sessions">
                     <TeacherMonitorPage />
                   </RequireRole>
                 )}
@@ -89,8 +90,22 @@ function AppContent() {
               <Route path="/advanced" element={<AdvancedPage />} />
               <Route path="/backend-architectures" element={<BackendArchitecturesPage />} />
               <Route path="/annotate/:paperId" element={<AnnotatePage />} />
-              <Route path="/live/:sessionId" element={<LiveClassPage />} />
-              <Route path="/live-notes/:sessionId/:tempId" element={<StudentNotesViewPage />} />
+              <Route
+                path="/live/:sessionId"
+                element={(
+                  <RequireSignIn reason="join a live class">
+                    <LiveClassPage />
+                  </RequireSignIn>
+                )}
+              />
+              <Route
+                path="/live-notes/:sessionId/:tempId"
+                element={(
+                  <RequireRole allowedRoles={['teacher']} reason="view student live notes">
+                    <StudentNotesViewPage />
+                  </RequireRole>
+                )}
+              />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>

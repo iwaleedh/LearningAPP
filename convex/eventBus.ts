@@ -13,14 +13,16 @@
  */
 import { mutation, query, internalMutation, internalQuery } from "./_generated/server";
 import { v } from "convex/values";
+import { requireTeacher } from "./authHelpers";
 
-// ── Public: Publish an event ────────────────────────────────────────
+// ── Teacher/admin: Publish an event ─────────────────────────────────
 export const publish = mutation({
   args: {
     topic: v.string(),
     payload: v.string(), // JSON-serialised payload
   },
   handler: async (ctx, { topic, payload }) => {
+    await requireTeacher(ctx);
     return await ctx.db.insert("events", {
       topic,
       payload,
@@ -52,6 +54,7 @@ export const internalPublish = internalMutation({
 export const getUnprocessedEvents = query({
   args: { topic: v.optional(v.string()), limit: v.optional(v.number()) },
   handler: async (ctx, { topic, limit }) => {
+    await requireTeacher(ctx);
     let q = ctx.db
       .query("events")
       .withIndex("by_status", (q) => q.eq("status", "pending"));
@@ -59,7 +62,8 @@ export const getUnprocessedEvents = query({
     const events = await q.collect();
 
     let filtered = topic ? events.filter((e) => e.topic === topic) : events;
-    if (limit && limit > 0) filtered = filtered.slice(0, limit);
+    const maxResults = Math.min(Math.max(limit || 50, 1), 200);
+    filtered = filtered.slice(0, maxResults);
     return filtered;
   },
 });
@@ -76,10 +80,11 @@ export const getUnprocessedEventsInternal = internalQuery({
   },
 });
 
-// ── Mutation: Mark an event as processed ────────────────────────────
+// ── Teacher/admin: Mark an event as processed ───────────────────────
 export const markProcessed = mutation({
   args: { eventId: v.id("events") },
   handler: async (ctx, { eventId }) => {
+    await requireTeacher(ctx);
     await ctx.db.patch(eventId, {
       status: "processed",
       processedAt: Date.now(),
@@ -113,12 +118,14 @@ export const markFailed = internalMutation({
 export const listByTopic = query({
   args: { topic: v.string(), limit: v.optional(v.number()) },
   handler: async (ctx, { topic, limit }) => {
+    await requireTeacher(ctx);
     const events = await ctx.db
       .query("events")
       .withIndex("by_topic", (q) => q.eq("topic", topic))
       .order("desc")
       .collect();
-    return limit && limit > 0 ? events.slice(0, limit) : events.slice(0, 50);
+    const maxResults = Math.min(Math.max(limit || 50, 1), 200);
+    return events.slice(0, maxResults);
   },
 });
 

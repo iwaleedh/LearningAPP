@@ -282,7 +282,10 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                     if (!parsed.data) parsed.data = {};
                     if (clientId) parsed.data.strokeClientId = clientId;
                     const [obj] = await util.enlivenObjects([parsed]);
-                    if (obj) fc.add(obj);
+                    if (obj) {
+                        obj.set({ selectable: false, evented: false });
+                        fc.add(obj);
+                    }
                     fc.renderAll();
                 } catch (e) {
                     console.warn('applyStrokeDelta: parse error', e);
@@ -294,7 +297,10 @@ const AnnotationCanvas = forwardRef(function AnnotationCanvas(
                     const existing = fc.getObjects().find(o => o.data?.strokeClientId === targetClientId);
                     if (existing) fc.remove(existing);
                     const [obj] = await util.enlivenObjects([parsed]);
-                    if (obj) fc.add(obj);
+                    if (obj) {
+                        obj.set({ selectable: false, evented: false });
+                        fc.add(obj);
+                    }
                     fc.renderAll();
                 } catch (e) {
                     console.warn('applyStrokeDelta: update error', e);
