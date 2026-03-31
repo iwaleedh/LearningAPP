@@ -7,6 +7,7 @@
  */
 import { mutation, query, internalMutation } from "./_generated/server";
 import { v } from "convex/values";
+import { requireAuthenticatedUserId, requireTeacher } from "./authHelpers";
 
 const logEntryValidator = v.object({
   level: v.string(),
@@ -24,12 +25,13 @@ export const ingestLogBatch = mutation({
     entries: v.array(logEntryValidator),
   },
   handler: async (ctx, { entries }) => {
+    const currentUserId = await requireAuthenticatedUserId(ctx);
     for (const entry of entries) {
       await ctx.db.insert("logs", {
         level: entry.level,
         message: entry.message,
         component: entry.component,
-        userId: entry.userId,
+        userId: currentUserId,
         sessionId: entry.sessionId,
         metadata: entry.metadata,
         timestamp: entry.timestamp,
@@ -46,6 +48,7 @@ export const queryLogs = query({
     limit: v.optional(v.number()),
   },
   handler: async (ctx, { level, component, limit }) => {
+    await requireTeacher(ctx);
     const maxResults = Math.min(limit || 100, 500);
 
     let q;

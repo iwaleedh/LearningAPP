@@ -47,24 +47,23 @@ export function createSessionSync({
     if (!client) return;
 
     // Subscribe to strokes for this session
-    unsubStrokes = subscribe(api.strokes.getStrokesBySession, { sessionId }, (strokes) => {
-      const newMap = new Map();
-      for (const stroke of strokes) {
-        newMap.set(stroke._id, stroke);
+        unsubStrokes = subscribe(api.strokes.getStrokesBySession, { sessionId }, (strokes) => {
+            const newMap = new Map();
+            for (const stroke of strokes) {
+                newMap.set(stroke._id, stroke);
 
-        if (!knownStrokes.has(stroke._id)) {
-          // New stroke
-          if (stroke.userId !== myUserId()) {
-            try {
-              const parsed = JSON.parse(stroke.fabricObjectJson);
-              const clientId = parsed?.data?.strokeClientId;
-              if (clientId) {
-                clientIdToStrokeId.set(clientId, stroke._id);
-                strokeIdToClientId.set(stroke._id, clientId);
-              }
-            } catch {/* ignore */}
-            onStrokeAdded?.(stroke._id, stroke.pageNumber, stroke.fabricObjectJson);
-          }
+                if (!knownStrokes.has(stroke._id)) {
+                    // New stroke
+                    if (stroke.userId !== myUserId()) {
+                        try {
+                            const parsed = JSON.parse(stroke.fabricObjectJson);
+                            const clientId = parsed?.data?.strokeClientId;
+                            if (clientId) {
+                                strokeIdToClientId.set(stroke._id, clientId);
+                            }
+                        } catch {/* ignore */}
+                        onStrokeAdded?.(stroke._id, stroke.pageNumber, stroke.fabricObjectJson);
+                    }
         } else {
           // Possibly updated
           const old = knownStrokes.get(stroke._id);
@@ -114,7 +113,6 @@ export function createSessionSync({
     const userId = myUserId();
     if (!userId) throw new Error('Not connected');
     const sessionId = await callMutation(api.sessions.createLiveSession, {
-      hostUserId: userId,
       paperId,
       title,
     });
@@ -130,7 +128,7 @@ export function createSessionSync({
   async function joinSession(sessionId) {
     const userId = myUserId();
     if (!userId) throw new Error('Not connected');
-    await callMutation(api.sessions.joinSession, { sessionId, userId });
+    await callMutation(api.sessions.joinSession, { sessionId });
     activeSessionId = sessionId;
     attachListeners(sessionId);
 
@@ -153,7 +151,6 @@ export function createSessionSync({
     const strokeId = await callMutation(api.strokes.addStroke, {
       sessionId,
       pageNumber,
-      userId,
       fabricObjectJson,
     });
     if (strokeId) {
@@ -178,20 +175,20 @@ export function createSessionSync({
     strokeIdToClientId.delete(strokeId);
   }
 
-  async function sendInvite(sessionId, targetUsername) {
+  async function sendInvite(sessionId, targetUser) {
     const userId = myUserId();
     if (!userId) return;
     await callMutation(api.invites.inviteToSession, {
       sessionId,
-      fromUserId: userId,
-      toUsername: targetUsername,
+      toUserId: targetUser?.userId,
+      toUsername: targetUser?.username || '',
     });
   }
 
   async function respondToInvite(inviteId, accept) {
     const userId = myUserId();
     if (!userId) return;
-    await callMutation(api.invites.respondToInvite, { inviteId, accept, userId });
+    await callMutation(api.invites.respondToInvite, { inviteId, accept });
     if (accept) {
       // Look up invite to get sessionId, then join
       // The server-side mutation already handles joining, but we also need to attach listeners

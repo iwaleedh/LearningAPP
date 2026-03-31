@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { getLiveClassByCode, requestJoin } from '../../convex-client.js';
+import { useAuth } from '../../hooks/useAuth.js';
 
 /**
  * JoinClassModal — students enter their name + 6-char class code to request
@@ -9,16 +10,26 @@ import { getLiveClassByCode, requestJoin } from '../../convex-client.js';
  */
 export default function JoinClassModal({ onClose }) {
   const navigate = useNavigate();
+  const { canSignIn, isLoaded, isSignedIn } = useAuth();
   const [name, setName] = useState('');
   const [code, setCode] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const authBlocked = isLoaded && !isSignedIn;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const trimmedName = name.trim();
     const cleanCode = code.trim().toUpperCase();
 
+    if (authBlocked) {
+      setError(
+        canSignIn
+          ? 'Please sign in from the top-right menu before joining a live class.'
+          : 'Live classes require sign-in, but authentication is not configured in this environment yet.'
+      );
+      return;
+    }
     if (!trimmedName) { setError('Please enter your name.'); return; }
     if (cleanCode.length !== 6) { setError('Class code must be 6 characters.'); return; }
 
@@ -75,7 +86,13 @@ export default function JoinClassModal({ onClose }) {
         </button>
         <div className="lc-join-icon">🎓</div>
         <h2 className="lc-join-title">Join Live Class</h2>
-        <p className="lc-join-subtitle">Enter your name and the class code from your teacher</p>
+        <p className="lc-join-subtitle">
+          {authBlocked
+            ? canSignIn
+              ? 'Sign in first, then enter the class code from your teacher'
+              : 'Live classes need sign-in, but this app is currently running in guest-only mode'
+            : 'Enter your name and the class code from your teacher'}
+        </p>
         <form onSubmit={handleSubmit}>
           <input
             className="lc-join-input"
@@ -102,7 +119,7 @@ export default function JoinClassModal({ onClose }) {
           <button
             className="btn btn-primary lc-join-btn"
             type="submit"
-            disabled={loading || !name.trim() || code.trim().length < 6}
+            disabled={loading || !isLoaded || authBlocked || !name.trim() || code.trim().length < 6}
           >
             {loading ? 'Joining…' : 'Request to Join'}
           </button>

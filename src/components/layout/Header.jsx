@@ -1,8 +1,10 @@
 import { useState, lazy, Suspense } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Menu, Search, LogIn } from 'lucide-react';
 import NotificationBell from './NotificationBell.jsx';
 import UserMenu from '../auth/UserMenu.jsx';
 import { useAuth } from '../../hooks/useAuth.js';
+import { getLocationPath } from '../auth/accessControl.js';
 import './Layout.css';
 
 const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
@@ -10,6 +12,8 @@ const AuthModal = lazy(() => import('../auth/AuthModal.jsx'));
 export default function Header({ onMenuToggle, onSearchOpen }) {
     const { canSignIn, isSignedIn, isLoaded } = useAuth();
     const [authOpen, setAuthOpen] = useState(false);
+    const location = useLocation();
+    const redirectTo = getLocationPath(location);
 
     return (
         <>
@@ -31,7 +35,7 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
                         <kbd className="search-kbd">⌘K</kbd>
                     </button>
 
-                    <NotificationBell />
+                    {isLoaded && isSignedIn && <NotificationBell />}
 
                     {/* Auth: show UserMenu when signed in, Sign In button only when available */}
                     {isLoaded && (
@@ -53,7 +57,7 @@ export default function Header({ onMenuToggle, onSearchOpen }) {
 
             {authOpen && (
         <Suspense fallback={null}>
-          <AuthModal onClose={() => setAuthOpen(false)} />
+          <AuthModal onClose={() => setAuthOpen(false)} redirectTo={redirectTo} />
         </Suspense>
       )}
         </>

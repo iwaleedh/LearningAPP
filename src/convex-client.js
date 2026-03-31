@@ -1,12 +1,10 @@
 /**
- * convex-client.js — Drop-in replacement for spacetime.js
+ * convex-client.js — Shared Convex client for imperative app services.
  *
- * Provides the same export API so pages and services can migrate import-by-import.
- * Uses ConvexHttpClient for mutations and a ConvexReactClient for subscriptions
- * via React hooks. Service files (sessionSync, liveClassSync) that need imperative
- * subscriptions use ConvexClient instead.
+ * Uses a singleton ConvexReactClient so the app can share one authenticated
+ * websocket connection between React providers and imperative service modules.
  */
-import { ConvexClient } from 'convex/browser';
+import { ConvexReactClient } from 'convex/react';
 import { api } from '../convex/_generated/api.js';
 
 const CONVEX_URL = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_CONVEX_URL) || '';
@@ -42,6 +40,46 @@ let errorCallbacks = [];
 let disconnectCallbacks = [];
 let currentUserId = null;
 let currentUsername = null;
+let anonymousUserId = null;
+let anonymousUsername = null;
+
+function getOrCreateClient() {
+  if (!convexClient && CONVEX_URL) {
+    convexClient = new ConvexReactClient(CONVEX_URL);
+  }
+  return convexClient;
+}
+
+function ensureAnonymousIdentity() {
+  const userId = ensureUserId();
+  const existingUsername = getStoredUsername();
+  const username = existingUsername || `user_${userId.slice(0, 6)}_${Date.now()}`;
+  if (!existingUsername) storeUsername(username);
+
+  anonymousUserId = userId;
+  anonymousUsername = username;
+  return { userId, username };
+}
+
+function applyIdentity(userId, username) {
+  currentUserId = userId;
+  currentUsername = username;
+}
+
+export function setCurrentUsernameOverride(username) {
+  if (!currentUserId || !username) return;
+  applyIdentity(currentUserId, username);
+}
+
+async function registerCurrentUser(extra = {}) {
+  const client = getOrCreateClient();
+  if (!client || !currentUserId || !currentUsername) return;
+
+  await client.mutation(api.users.registerUser, {
+    username: currentUsername,
+    ...extra,
+  });
+}
 
 /**
  * Initialise the Convex client. Resolves with the client when ready,
@@ -60,19 +98,14 @@ export async function initConvex() {
   }
 
   try {
-    convexClient = new ConvexClient(CONVEX_URL);
-    currentUserId = ensureUserId();
+    convexClient = getOrCreateClient();
+    const anonymousIdentity = anonymousUserId && anonymousUsername
+      ? { userId: anonymousUserId, username: anonymousUsername }
+      : ensureAnonymousIdentity();
 
-    // Register user on first visit (upsert semantics in the mutation)
-    const existingUsername = getStoredUsername();
-    const username = existingUsername || `user_${currentUserId.slice(0, 6)}_${Date.now()}`;
-    if (!existingUsername) storeUsername(username);
-    currentUsername = username;
-
-    await convexClient.mutation(api.users.registerUser, {
-      userId: currentUserId,
-      username,
-    });
+    if (!currentUserId || !currentUsername) {
+      applyIdentity(anonymousIdentity.userId, anonymousIdentity.username);
+    }
 
     isReady = true;
     connectionCallbacks.forEach(cb => cb(convexClient, currentUserId));
@@ -131,7 +164,7 @@ export function getCurrentUsername() {
 }
 
 export function getClient() {
-  return convexClient;
+  return getOrCreateClient();
 }
 
 /**
@@ -155,20 +188,75 @@ export { api };
 
 // ── Helper: execute a Convex mutation via the imperative client ─────
 export async function callMutation(mutationRef, args) {
-  if (!convexClient) return null;
-  return convexClient.mutation(mutationRef, args);
+  const client = getOrCreateClient();
+  if (!client) return null;
+  return client.mutation(mutationRef, args);
 }
 
 // ── Helper: execute a Convex query via the imperative client ────────
 export async function callQuery(queryRef, args) {
-  if (!convexClient) return null;
-  return convexClient.query(queryRef, args);
+  const client = getOrCreateClient();
+  if (!client) return null;
+  return client.query(queryRef, args);
 }
 
 // ── Helper: subscribe to a Convex query (imperative) ────────────────
 export function subscribe(queryRef, args, callback) {
-  if (!convexClient) return () => {};
-  return convexClient.onUpdate(queryRef, args, callback);
+  const client = getOrCreateClient();
+  if (!client) return () => {};
+
+  const watch = client.watchQuery(queryRef, args ?? {});
+  const emit = () => {
+    const result = watch.localQueryResult();
+    if (result !== undefined) {
+      callback(result);
+    }
+  };
+
+  const unsubscribe = watch.onUpdate(() => {
+    emit();
+  });
+
+  emit();
+  return unsubscribe;
+}
+
+export async function setAuthenticatedIdentity({
+  userId,
+  username,
+  email,
+  avatarUrl,
+  fetchToken,
+}) {
+  const client = await initConvex();
+  if (!client || !userId) return null;
+
+  if (fetchToken) {
+    client.setAuth(fetchToken);
+  }
+
+  const resolvedUsername = username || `user_${userId.slice(-6)}`;
+  applyIdentity(userId, resolvedUsername);
+  await registerCurrentUser({ email, avatarUrl });
+  return client;
+}
+
+export async function restoreAnonymousIdentity() {
+  const anonymousIdentity = ensureAnonymousIdentity();
+  const client = getOrCreateClient();
+
+  client?.clearAuth();
+  applyIdentity(anonymousIdentity.userId, anonymousIdentity.username);
+
+  if (!client) {
+    return null;
+  }
+
+  if (!isReady) {
+    return initConvex();
+  }
+
+  return client;
 }
 
 // ── User helpers ────────────────────────────────────────────────────
@@ -181,10 +269,21 @@ export async function getAllUsers() {
   }
 }
 
+export async function searchUsersByUsername(search, limit = 8) {
+  if (!convexClient) return [];
+  const term = String(search || '').trim();
+  if (term.length < 2) return [];
+  try {
+    return await convexClient.query(api.users.searchUsers, { search: term, limit });
+  } catch {
+    return [];
+  }
+}
+
 export async function getMyRole() {
   if (!convexClient || !currentUserId) return 'student';
   try {
-    return await convexClient.query(api.users.getMyRole, { userId: currentUserId });
+    return await convexClient.query(api.users.getMyRole, {});
   } catch {
     return 'student';
   }
@@ -213,17 +312,17 @@ export async function getActiveSessions() {
 export async function getMyParticipantSessions() {
   if (!convexClient || !currentUserId) return [];
   try {
-    return await convexClient.query(api.sessions.getMyParticipantSessions, { userId: currentUserId });
+    return await convexClient.query(api.sessions.getMyParticipantSessions, {});
   } catch {
     return [];
   }
 }
 
 export async function getMyPendingInvites(usernameOverride) {
-  const username = usernameOverride || currentUsername;
-  if (!convexClient || !username) return [];
+  void usernameOverride;
+  if (!convexClient || !currentUsername) return [];
   try {
-    return await convexClient.query(api.invites.getMyPendingInvites, { toUsername: username });
+    return await convexClient.query(api.invites.getMyPendingInvites, {});
   } catch {
     return [];
   }
@@ -249,10 +348,10 @@ export async function getLiveClassById(classId) {
 }
 
 export async function getMyPendingLiveClassInvites(usernameOverride) {
-  const username = usernameOverride || currentUsername;
-  if (!convexClient || !username) return [];
+  void usernameOverride;
+  if (!convexClient || !currentUsername) return [];
   try {
-    const invites = await convexClient.query(api.invites.getMyPendingInvites, { toUsername: username });
+    const invites = await convexClient.query(api.invites.getMyPendingInvites, {});
     // Filter to only invites for active live classes
     const activeClasses = await getActiveLiveClasses();
     const activeClassIds = new Set(activeClasses.map(c => c._id));
@@ -353,16 +452,13 @@ export async function getStudentName(sessionId, tempId) {
 
 // Subscribe helpers for reactive data
 export function subscribeToJoinRequests(sessionId, callback) {
-  if (!convexClient) return () => {};
-  return convexClient.onUpdate(api.joinRequests.getJoinRequests, { sessionId }, callback);
+  return subscribe(api.joinRequests.getJoinRequests, { sessionId }, callback);
 }
 
 export function subscribeToJoinStatus(requestId, callback) {
-  if (!convexClient) return () => {};
-  return convexClient.onUpdate(api.joinRequests.getStudentJoinStatus, { requestId }, callback);
+  return subscribe(api.joinRequests.getStudentJoinStatus, { requestId }, callback);
 }
 
 export function subscribeToStudentNote(sessionId, tempId, callback) {
-  if (!convexClient) return () => {};
-  return convexClient.onUpdate(api.joinRequests.getStudentNote, { sessionId, tempId }, callback);
+  return subscribe(api.joinRequests.getStudentNote, { sessionId, tempId }, callback);
 }

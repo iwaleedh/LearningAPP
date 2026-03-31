@@ -13,6 +13,10 @@ import { httpAction } from "./_generated/server";
 import { internal } from "./_generated/api";
 
 const http = httpRouter();
+const processEnv = (globalThis as typeof globalThis & {
+  process?: { env?: Record<string, string | undefined> };
+}).process?.env;
+const WEBHOOK_SECRET = processEnv?.WEBHOOK_SHARED_SECRET;
 
 // ── GET /api/health ─────────────────────────────────────────────────
 http.route({
@@ -59,6 +63,27 @@ http.route({
   path: "/api/webhook",
   method: "POST",
   handler: httpAction(async (ctx, request) => {
+    if (!WEBHOOK_SECRET) {
+      return new Response(
+        JSON.stringify({ error: "Webhook integration is not configured." }),
+        { status: 503, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
+    const authorization = request.headers.get("authorization") || "";
+    const bearerSecret = authorization.startsWith("Bearer ")
+      ? authorization.slice("Bearer ".length).trim()
+      : "";
+    const headerSecret = request.headers.get("x-webhook-secret")?.trim() || "";
+    const providedSecret = bearerSecret || headerSecret;
+
+    if (!providedSecret || providedSecret !== WEBHOOK_SECRET) {
+      return new Response(
+        JSON.stringify({ error: "Unauthorized webhook request." }),
+        { status: 401, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
     // Validate content type
     const contentType = request.headers.get("content-type") || "";
     if (!contentType.includes("application/json")) {

@@ -3,12 +3,12 @@ import { Hand } from 'lucide-react';
 /**
  * HandRaisePanel — shown to the teacher.
  *
- * @param {{ raises: Array, users: Array, onAcknowledge: (raiseId:string) => void }} props
+ * @param {{ raises: Array, participants: Array, onAcknowledge: (raiseId:string) => void }} props
  */
-export default function HandRaisePanel({ raises, users, onAcknowledge }) {
+export default function HandRaisePanel({ raises, participants, onAcknowledge }) {
   function getUsername(identityHex) {
-    const u = users.find(u => u.userId === identityHex);
-    return u?.username ?? identityHex.substring(0, 6) + '…';
+    const participant = participants.find((item) => item.userId === identityHex);
+    return participant?.username ?? identityHex.substring(0, 6) + '…';
   }
 
   if (raises.length === 0) {

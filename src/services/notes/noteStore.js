@@ -2,15 +2,39 @@ import { deriveConfidenceBand, estimateReadMinutes } from './noteContext.js';
 import { extractMentionsFromDoc } from './mentionGraph.js';
 import { getClient, getCurrentUserId, api, callMutation, callQuery } from '../../convex-client.js';
 import { logger } from '../logger/logger.js';
+import {
+    __resetGuestDataStoreForTests,
+    clearGuestData as clearPersistedGuestData,
+    deleteGuestFlashcard,
+    deleteGuestNote,
+    deleteGuestNoteAsset,
+    getAllGuestFlashcards,
+    getAllGuestNoteAssets,
+    getAllGuestNotes,
+    getGuestDataSummary as getPersistedGuestDataSummary,
+    getGuestNote,
+    getGuestStoreCapabilities,
+    listGuestFlashcards,
+    listGuestNotesBySubject,
+    saveGuestFlashcard,
+    saveGuestNote,
+    saveGuestNoteAsset,
+} from './guestDataStore.js';
 
 const log = logger.child({ component: 'noteStore' });
 
+function isAuthError(error) {
+    const message = String(error?.message || error || '').toLowerCase();
+    return (
+        message.includes('authentication required') ||
+        message.includes('not authenticated') ||
+        message.includes('not authorized') ||
+        message.includes('teacher access required')
+    );
+}
+
 export function getStorageCapabilities() {
-    return {
-        indexedDbAvailable: false,
-        usingMemoryFallback: false,
-        message: 'Using Convex',
-    };
+    return getGuestStoreCapabilities();
 }
 
 function collectTextValues(value, output) {
@@ -91,6 +115,66 @@ function toHeader(note) {
     };
 }
 
+function buildNoteMutationArgs(noteDoc) {
+    return {
+        noteId: noteDoc.noteId,
+        subject: noteDoc.subject || '',
+        title: noteDoc.topicTitle || '',
+        subtopicTitle: noteDoc.subtopicTitle || '',
+        breadcrumbs: JSON.stringify(noteDoc.breadcrumbs || []),
+        contentJson: JSON.stringify({
+            blocks: noteDoc.blocks,
+            recall: noteDoc.recall,
+            evidence: noteDoc.evidence,
+            mentions: noteDoc.mentions,
+        }),
+        confidenceScore: noteDoc.confidenceScore,
+        estimatedReadMinutes: Math.floor(noteDoc.estimatedReadMinutes || 0),
+    };
+}
+
+function buildFlashcardRecord(card) {
+    return {
+        cardId: card.cardId || `card:${Date.now()}:${Math.random().toString(36).slice(2, 8)}`,
+        subject: String(card.subject || '').toLowerCase(),
+        sourceNoteId: String(card.sourceNoteId || ''),
+        sourceLabel: String(card.sourceLabel || ''),
+        front: String(card.front || '').trim(),
+        back: String(card.back || '').trim(),
+        createdAt: card.createdAt || new Date().toISOString(),
+    };
+}
+
+function buildFlashcardMutationArgs(card) {
+    return {
+        cardId: card.cardId,
+        subject: card.subject,
+        sourceNoteId: card.sourceNoteId,
+        sourceLabel: card.sourceLabel,
+        front: card.front,
+        back: card.back,
+    };
+}
+
+function buildAssetRecord(asset) {
+    return {
+        assetId: asset.assetId || `asset:${Date.now()}:${Math.random().toString(36).slice(2, 8)}`,
+        noteId: String(asset.noteId || ''),
+        type: String(asset.type || ''),
+        data: asset.data || '',
+        createdAt: asset.createdAt || new Date().toISOString(),
+    };
+}
+
+function buildAssetMutationArgs(asset) {
+    return {
+        assetId: asset.assetId,
+        noteId: asset.noteId,
+        assetType: asset.type,
+        data: asset.data,
+    };
+}
+
 // Map Convex note row back to local app format
 function mapConvexNoteRow(row) {
     try {
@@ -112,84 +196,9 @@ function mapConvexNoteRow(row) {
             lastEditedAt: new Date(row.lastEditedAt).toISOString(),
             ownerUserId: row.ownerUserId,
         });
-    } catch (e) {
-        log.error('Failed to parse note content', { noteId: row.noteId, error: e.message });
+    } catch (error) {
+        log.error('Failed to parse note content', { noteId: row.noteId, error: error.message });
         return null;
-    }
-}
-
-export async function getNote(noteId) {
-    const client = getClient();
-    if (!client) return _memNotes.get(String(noteId)) || null;
-
-    try {
-        const row = await callQuery(api.notes.getNote, { noteId });
-        if (!row) return null;
-        return mapConvexNoteRow(row);
-    } catch (e) {
-        log.error('getNote failed', { error: e.message });
-        return _memNotes.get(String(noteId)) || null;
-    }
-}
-
-export async function upsertNote(noteDoc) {
-    const normalized = normalizeNoteDocument({
-        ...noteDoc,
-        lastEditedAt: new Date().toISOString(),
-    });
-
-    const contentJson = JSON.stringify({
-        blocks: normalized.blocks,
-        recall: normalized.recall,
-        evidence: normalized.evidence,
-        mentions: normalized.mentions,
-    });
-
-    const breadcrumbsStr = JSON.stringify(normalized.breadcrumbs || []);
-    const userId = getCurrentUserId();
-    if (!userId) {
-        _memNotes.set(normalized.noteId, normalized);
-        return;
-    }
-
-    await callMutation(api.notes.upsertNote, {
-        noteId: normalized.noteId,
-        ownerUserId: userId,
-        subject: normalized.subject || '',
-        title: normalized.topicTitle || '',
-        subtopicTitle: normalized.subtopicTitle || '',
-        breadcrumbs: breadcrumbsStr,
-        contentJson,
-        confidenceScore: normalized.confidenceScore,
-        estimatedReadMinutes: Math.floor(normalized.estimatedReadMinutes || 0),
-    });
-}
-
-export async function listNotesBySubject(subject) {
-    const key = String(subject).toLowerCase();
-    const client = getClient();
-    if (!client) {
-        const results = [];
-        for (const note of _memNotes.values()) {
-            if (String(note.subject || '').toLowerCase() === key) results.push(toHeader(note));
-        }
-        results.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
-        return results;
-    }
-
-    try {
-        const rows = await callQuery(api.notes.listNotesBySubject, { subject: key });
-        if (!rows) return [];
-
-        const notes = rows
-            .map(row => mapConvexNoteRow(row))
-            .filter(Boolean);
-
-        notes.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
-        return notes.map((item) => toHeader(item));
-    } catch (e) {
-        log.error('listNotesBySubject failed', { error: e.message });
-        return [];
     }
 }
 
@@ -207,97 +216,244 @@ function mapConvexFlashcardRow(row) {
     };
 }
 
-export async function saveFlashcard(card) {
-    const cardId = card.cardId || `card:${Date.now()}:${Math.random().toString(36).slice(2, 8)}`;
-    const front = String(card.front || '').trim();
-    const back = String(card.back || '').trim();
-    const subject = String(card.subject || '').toLowerCase();
-    const sourceNoteId = String(card.sourceNoteId || '');
-    const sourceLabel = String(card.sourceLabel || '');
+export async function getNote(noteId) {
+    const client = getClient();
+    if (!client) return await getGuestNote(noteId);
+
+    try {
+        const row = await callQuery(api.notes.getNote, { noteId });
+        if (!row) return null;
+        return mapConvexNoteRow(row);
+    } catch (error) {
+        log.error('getNote failed', { error: error.message });
+        return await getGuestNote(noteId);
+    }
+}
+
+export async function upsertNote(noteDoc) {
+    const normalized = normalizeNoteDocument({
+        ...noteDoc,
+        lastEditedAt: new Date().toISOString(),
+    });
+    const mutationArgs = buildNoteMutationArgs(normalized);
     const userId = getCurrentUserId();
-    if (!userId) {
-        _memCards.set(cardId, { cardId, subject, sourceNoteId, sourceLabel, front, back,
-            createdAt: new Date().toISOString(), ownerUserId: 'mem' });
+    const client = getClient();
+
+    if (!userId || !client) {
+        await saveGuestNote(normalized);
         return;
     }
 
-    await callMutation(api.flashcards.saveFlashcard, {
-        cardId,
-        ownerUserId: userId,
-        subject,
-        sourceNoteId,
-        sourceLabel,
-        front,
-        back,
-    });
+    try {
+        await callMutation(api.notes.upsertNote, mutationArgs);
+    } catch (error) {
+        if (isAuthError(error)) {
+            await saveGuestNote(normalized);
+            return;
+        }
+        throw error;
+    }
+}
+
+export async function listNotesBySubject(subject) {
+    const key = String(subject).toLowerCase();
+    const client = getClient();
+    const localResults = async () => {
+        const results = await listGuestNotesBySubject(key);
+        return results.map((note) => toHeader(note));
+    };
+
+    if (!client) {
+        return await localResults();
+    }
+
+    try {
+        const rows = await callQuery(api.notes.listNotesBySubject, { subject: key });
+        if (!rows) return [];
+
+        const notes = rows
+            .map((row) => mapConvexNoteRow(row))
+            .filter(Boolean);
+
+        notes.sort((a, b) => String(b.lastEditedAt).localeCompare(String(a.lastEditedAt)));
+        return notes.map((item) => toHeader(item));
+    } catch (error) {
+        log.error('listNotesBySubject failed', { error: error.message });
+        return await localResults();
+    }
+}
+
+export async function saveFlashcard(card) {
+    const normalizedCard = buildFlashcardRecord(card);
+    const userId = getCurrentUserId();
+    const client = getClient();
+
+    if (!userId || !client) {
+        await saveGuestFlashcard(normalizedCard);
+        return;
+    }
+
+    try {
+        await callMutation(api.flashcards.saveFlashcard, buildFlashcardMutationArgs(normalizedCard));
+    } catch (error) {
+        if (isAuthError(error)) {
+            await saveGuestFlashcard(normalizedCard);
+            return;
+        }
+        throw error;
+    }
 }
 
 export async function listFlashcards(filters = {}) {
     const client = getClient();
+    const localCards = async () => {
+        return await listGuestFlashcards(filters);
+    };
+
     if (!client) {
-        let cards = Array.from(_memCards.values());
-        if (filters.subject) {
-            const s = String(filters.subject).toLowerCase();
-            cards = cards.filter(c => c.subject === s);
-        }
-        if (filters.sourceNoteId) {
-            cards = cards.filter(c => c.sourceNoteId === String(filters.sourceNoteId));
-        }
-        return cards.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+        return await localCards();
     }
 
     try {
         const rows = await callQuery(api.flashcards.listFlashcards, {
             subject: filters.subject ? String(filters.subject).toLowerCase() : undefined,
-            ownerUserId: undefined,
         });
         if (!rows) return [];
 
-        let cards = rows.map(row => mapConvexFlashcardRow(row));
-
+        let cards = rows.map((row) => mapConvexFlashcardRow(row));
         if (filters.sourceNoteId) {
-            cards = cards.filter(item => item.sourceNoteId === String(filters.sourceNoteId));
+            cards = cards.filter((item) => item.sourceNoteId === String(filters.sourceNoteId));
         }
 
         return cards.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
-    } catch (e) {
-        log.error('listFlashcards failed', { error: e.message });
-        return [];
+    } catch (error) {
+        log.error('listFlashcards failed', { error: error.message });
+        return await localCards();
     }
 }
 
 export async function saveNoteAsset(asset) {
-    const assetId = asset.assetId || `asset:${Date.now()}:${Math.random().toString(36).slice(2, 8)}`;
-    const noteId = String(asset.noteId || '');
-    const type = String(asset.type || '');
-    const data = asset.data || '';
+    const normalizedAsset = buildAssetRecord(asset);
     const userId = getCurrentUserId();
-    if (!userId) return assetId;
+    const client = getClient();
 
-    await callMutation(api.assets.saveNoteAsset, {
-        assetId,
-        noteId,
-        ownerUserId: userId,
-        assetType: type,
-        data,
-    });
+    if (!userId || !client) {
+        await saveGuestNoteAsset(normalizedAsset);
+        return normalizedAsset.assetId;
+    }
 
-    return assetId;
+    try {
+        await callMutation(api.assets.saveNoteAsset, buildAssetMutationArgs(normalizedAsset));
+    } catch (error) {
+        if (isAuthError(error)) {
+            await saveGuestNoteAsset(normalizedAsset);
+            return normalizedAsset.assetId;
+        }
+        throw error;
+    }
+
+    return normalizedAsset.assetId;
 }
 
 export async function deleteNote(noteId) {
-    await callMutation(api.notes.deleteNote, { noteId: String(noteId) });
+    const client = getClient();
+    if (!client) {
+        await deleteGuestNote(String(noteId));
+        return;
+    }
+
+    try {
+        await callMutation(api.notes.deleteNote, { noteId: String(noteId) });
+    } catch (error) {
+        if (isAuthError(error)) {
+            await deleteGuestNote(String(noteId));
+            return;
+        }
+        throw error;
+    }
 }
 
 export async function deleteFlashcard(cardId) {
-    await callMutation(api.flashcards.deleteFlashcard, { cardId: String(cardId) });
+    const client = getClient();
+    if (!client) {
+        await deleteGuestFlashcard(String(cardId));
+        return;
+    }
+
+    try {
+        await callMutation(api.flashcards.deleteFlashcard, { cardId: String(cardId) });
+    } catch (error) {
+        if (isAuthError(error)) {
+            await deleteGuestFlashcard(String(cardId));
+            return;
+        }
+        throw error;
+    }
 }
 
-// In-memory fallback store (used when Convex client / user is unavailable — e.g. tests)
-let _memNotes = new Map();   // noteId → normalized note doc
-let _memCards = new Map();   // cardId → flashcard object
+export async function getGuestDataSummary() {
+    return await getPersistedGuestDataSummary();
+}
+
+export async function clearGuestData() {
+    await clearPersistedGuestData();
+}
+
+export async function importGuestDataToAccount() {
+    const client = getClient();
+    if (!client) {
+        throw new Error('Sign in is required before importing guest data.');
+    }
+
+    const [notes, flashcards, assets] = await Promise.all([
+        getAllGuestNotes(),
+        getAllGuestFlashcards(),
+        getAllGuestNoteAssets(),
+    ]);
+
+    const result = {
+        notesImported: 0,
+        flashcardsImported: 0,
+        assetsImported: 0,
+        errors: [],
+    };
+
+    for (const note of notes) {
+        try {
+            const normalizedNote = normalizeNoteDocument(note);
+            await callMutation(api.notes.upsertNote, buildNoteMutationArgs(normalizedNote));
+            await deleteGuestNote(normalizedNote.noteId);
+            result.notesImported += 1;
+        } catch (error) {
+            result.errors.push(`Note ${note.noteId}: ${error?.message || error}`);
+        }
+    }
+
+    for (const card of flashcards) {
+        try {
+            const normalizedCard = buildFlashcardRecord(card);
+            await callMutation(api.flashcards.saveFlashcard, buildFlashcardMutationArgs(normalizedCard));
+            await deleteGuestFlashcard(normalizedCard.cardId);
+            result.flashcardsImported += 1;
+        } catch (error) {
+            result.errors.push(`Flashcard ${card.cardId}: ${error?.message || error}`);
+        }
+    }
+
+    for (const asset of assets) {
+        try {
+            const normalizedAsset = buildAssetRecord(asset);
+            await callMutation(api.assets.saveNoteAsset, buildAssetMutationArgs(normalizedAsset));
+            await deleteGuestNoteAsset(normalizedAsset.assetId);
+            result.assetsImported += 1;
+        } catch (error) {
+            result.errors.push(`Asset ${asset.assetId}: ${error?.message || error}`);
+        }
+    }
+
+    return result;
+}
 
 export function __resetMemoryStoreForTests() {
-    _memNotes = new Map();
-    _memCards = new Map();
+    return __resetGuestDataStoreForTests();
 }

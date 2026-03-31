@@ -5,7 +5,7 @@ import { Link2, Check, Hand, Users, Copy, BookOpen as NoteIcon } from 'lucide-re
 import { Canvas as FabricCanvas, PencilBrush, Image as FabricImage, Text as FabricText, IText as FabricIText, Rect as FabricRect, Circle as FabricCircle, Ellipse as FabricEllipse, Line as FabricLine, Triangle as FabricTriangle, Polygon as FabricPolygon, Path as FabricPath, util as fabricUtil } from 'fabric';
 import {
   onConvexReady, onConvexError, onConvexDisconnect,
-  getCurrentUserId, getAllUsers,
+  getCurrentUserId,
   getLiveClassById,
   isTeacher as convexIsTeacher,
   subscribe, api,
@@ -163,7 +163,6 @@ export default function LiveClassPage() {
   const [studentName, setStudentName] = useState('');
   const [joinName, setJoinName] = useState('');
   const [participants, setParticipants] = useState([]);
-  const [users, setUsers] = useState([]);
   const [cursors, setCursors] = useState([]);
   const [handRaises, setHandRaises] = useState([]);
   const [timerState, setTimerState] = useState(null);
@@ -471,7 +470,6 @@ export default function LiveClassPage() {
     });
 
     let cancelled = false;
-    let unsubUsers = null;
 
     onConvexReady(() => {
       void (async () => {
@@ -503,25 +501,11 @@ export default function LiveClassPage() {
 
         // Only set role if not already set (e.g. by join dialog)
         setRole(prev => prev ?? ((isHost || hasTeacherRole) ? 'teacher' : 'student'));
-
-        const nextUsers = await getAllUsers();
-        if (!cancelled) {
-          setUsers(nextUsers);
-        }
-
-        unsubUsers?.();
-        unsubUsers = subscribe(api.users.getAllUsers, {}, async () => {
-          const updatedUsers = await getAllUsers();
-          if (!cancelled) {
-            setUsers(updatedUsers);
-          }
-        });
       })();
     });
 
     return () => {
       cancelled = true;
-      unsubUsers?.();
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [classId]);
@@ -671,15 +655,8 @@ export default function LiveClassPage() {
               _bcId: data.bcId,
               sessionId: classId,
               userId: data.bcId,
-              joinedAt: data.joinedAt,
-            }];
-          });
-          // Also put the student's display name in the users list
-          setUsers(prev => {
-            if (prev.some(u => u.userId === data.bcId)) return prev;
-            return [...prev, {
-              userId: data.bcId,
               username: data.name,
+              joinedAt: data.joinedAt,
             }];
           });
         } else if (type === 'student-leave') {
@@ -2137,7 +2114,7 @@ export default function LiveClassPage() {
         <div className="lc-dropdown-panel" style={{ top: handsAnchor.bottom + 6, left: handsAnchor.left }}>
           <HandRaisePanel
             raises={handRaises}
-            users={users}
+            participants={participants}
             onAcknowledge={(raiseId) => syncRef.current?.acknowledgeRaise(raiseId)}
           />
         </div>,

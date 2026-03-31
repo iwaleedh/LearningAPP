@@ -6,11 +6,13 @@
 import { useState } from 'react';
 import { SignIn, SignUp } from '@clerk/clerk-react';
 import { useAuth } from '../../hooks/useAuth.js';
+import { sanitizeRedirectPath } from './accessControl.js';
 import './AuthModal.css';
 
-export default function AuthModal({ onClose }) {
+export default function AuthModal({ onClose, redirectTo = '/' }) {
   const { canSignIn } = useAuth();
   const [tab, setTab] = useState('signin');
+  const safeRedirectTo = sanitizeRedirectPath(redirectTo, '/');
 
   return (
     <div className="auth-modal-overlay" onClick={(e) => e.target === e.currentTarget && onClose()}>
@@ -60,12 +62,14 @@ export default function AuthModal({ onClose }) {
               {tab === 'signin' ? (
                 <SignIn
                   appearance={{ elements: { card: 'auth-clerk-card', rootBox: 'auth-clerk-root' } }}
-                  afterSignInUrl="/"
+                  forceRedirectUrl={safeRedirectTo}
+                  fallbackRedirectUrl={safeRedirectTo}
                 />
               ) : (
                 <SignUp
                   appearance={{ elements: { card: 'auth-clerk-card', rootBox: 'auth-clerk-root' } }}
-                  afterSignUpUrl="/"
+                  forceRedirectUrl={safeRedirectTo}
+                  fallbackRedirectUrl={safeRedirectTo}
                 />
               )}
             </div>

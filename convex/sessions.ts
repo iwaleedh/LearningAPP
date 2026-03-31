@@ -1,16 +1,53 @@
 import { mutation, query, internalMutation } from "./_generated/server";
 import { v } from "convex/values";
 import { internal } from "./_generated/api";
+import {
+  getUserRecordById,
+  getHostedSessionByStringId,
+  requireHostedSessionAccess,
+  requireHostedSessionHostOrTeacher,
+  requireMatchingUserId,
+  requireTeacher,
+} from "./authHelpers";
+
+function isActiveSession(value: unknown): value is { status: string } {
+  return typeof value === "object" && value !== null && "status" in value;
+}
+
+async function enrichParticipants(
+  ctx: Parameters<typeof getHostedSessionByStringId>[0],
+  participants: Array<{
+    _id: unknown;
+    sessionId: string;
+    userId: string;
+    role: string;
+    joinedAt: number;
+  }>
+) {
+  const uniqueUserIds = [...new Set(participants.map((participant) => participant.userId).filter(Boolean))];
+  const users = await Promise.all(uniqueUserIds.map((userId) => getUserRecordById(ctx, userId)));
+  const userMap = new Map(users.filter(Boolean).map((user) => [user!.userId, user!]));
+
+  return participants.map((participant) => {
+    const user = userMap.get(participant.userId);
+    return {
+      ...participant,
+      username: user?.username,
+      avatarUrl: user?.avatarUrl,
+    };
+  });
+}
 
 export const createLiveSession = mutation({
   args: {
-    hostUserId: v.string(),
+    hostUserId: v.optional(v.string()),
     paperId: v.string(),
     title: v.string(),
   },
   handler: async (ctx, args) => {
+    const hostUserId = await requireMatchingUserId(ctx, args.hostUserId);
     const sessionId = await ctx.db.insert("liveSessions", {
-      hostUserId: args.hostUserId,
+      hostUserId,
       paperId: args.paperId,
       title: args.title,
       status: "active",
@@ -19,7 +56,7 @@ export const createLiveSession = mutation({
     // Auto-add host as participant
     await ctx.db.insert("sessionParticipants", {
       sessionId,
-      userId: args.hostUserId,
+      userId: hostUserId,
       role: "host",
       joinedAt: Date.now(),
     });
@@ -30,19 +67,25 @@ export const createLiveSession = mutation({
 export const joinSession = mutation({
   args: {
     sessionId: v.string(),
-    userId: v.string(),
+    userId: v.optional(v.string()),
   },
   handler: async (ctx, { sessionId, userId }) => {
+    const currentUserId = await requireMatchingUserId(ctx, userId);
+    const session = await getHostedSessionByStringId(ctx, sessionId);
+    if (!isActiveSession(session) || session.status !== "active") {
+      throw new Error("Session not found or no longer active.");
+    }
+    await requireHostedSessionAccess(ctx, sessionId);
     // Avoid duplicate participant entries
     const existing = await ctx.db
       .query("sessionParticipants")
       .withIndex("by_session", (q) => q.eq("sessionId", sessionId))
-      .filter((q) => q.eq(q.field("userId"), userId))
+      .filter((q) => q.eq(q.field("userId"), currentUserId))
       .first();
     if (existing) return existing._id;
     return await ctx.db.insert("sessionParticipants", {
       sessionId,
-      userId,
+      userId: currentUserId,
       role: "editor",
       joinedAt: Date.now(),
     });
@@ -52,7 +95,7 @@ export const joinSession = mutation({
 export const endSession = mutation({
   args: { sessionId: v.id("liveSessions") },
   handler: async (ctx, { sessionId }) => {
-    const session = await ctx.db.get(sessionId);
+    const { session } = await requireHostedSessionHostOrTeacher(ctx, String(sessionId));
     await ctx.db.patch(sessionId, { status: "ended" });
 
     // Pub/Sub: publish session:ended event for fan-out
@@ -67,6 +110,7 @@ export const endSession = mutation({
 export const endSessionByStringId = mutation({
   args: { sessionId: v.string() },
   handler: async (ctx, { sessionId }) => {
+    await requireHostedSessionHostOrTeacher(ctx, sessionId);
     // sessionId is the Convex _id as string
     const session = await ctx.db.get(sessionId as any);
     if (session) {
@@ -78,6 +122,7 @@ export const endSessionByStringId = mutation({
 export const getActiveSessions = query({
   args: {},
   handler: async (ctx) => {
+    await requireTeacher(ctx);
     return await ctx.db
       .query("liveSessions")
       .withIndex("by_status", (q) => q.eq("status", "active"))
@@ -88,6 +133,7 @@ export const getActiveSessions = query({
 export const getSession = query({
   args: { sessionId: v.id("liveSessions") },
   handler: async (ctx, { sessionId }) => {
+    await requireHostedSessionAccess(ctx, String(sessionId));
     return await ctx.db.get(sessionId);
   },
 });
@@ -95,6 +141,7 @@ export const getSession = query({
 export const getSessionByStringId = query({
   args: { sessionId: v.string() },
   handler: async (ctx, { sessionId }) => {
+    await requireHostedSessionAccess(ctx, sessionId);
     return await ctx.db.get(sessionId as any);
   },
 });
@@ -102,19 +149,22 @@ export const getSessionByStringId = query({
 export const getParticipants = query({
   args: { sessionId: v.string() },
   handler: async (ctx, { sessionId }) => {
-    return await ctx.db
+    await requireHostedSessionAccess(ctx, sessionId);
+    const participants = await ctx.db
       .query("sessionParticipants")
       .withIndex("by_session", (q) => q.eq("sessionId", sessionId))
       .collect();
+    return await enrichParticipants(ctx, participants);
   },
 });
 
 export const getMyParticipantSessions = query({
-  args: { userId: v.string() },
+  args: { userId: v.optional(v.string()) },
   handler: async (ctx, { userId }) => {
+    const currentUserId = await requireMatchingUserId(ctx, userId);
     return await ctx.db
       .query("sessionParticipants")
-      .withIndex("by_user", (q) => q.eq("userId", userId))
+      .withIndex("by_user", (q) => q.eq("userId", currentUserId))
       .collect();
   },
 });

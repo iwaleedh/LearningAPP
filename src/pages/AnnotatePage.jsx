@@ -18,7 +18,7 @@ const PDF_SCALE = 1.5;
 export default function AnnotatePage() {
     const { paperId } = useParams();
     const navigate = useNavigate();
-    const { username } = useAuth();
+    const { username, isSignedIn, canSignIn } = useAuth();
 
     // Paper + PDF
     const [paper, setPaper] = useState(null);
@@ -52,6 +52,7 @@ export default function AnnotatePage() {
     const [sessionParticipants, setSessionParticipants] = useState([]);
     const [pendingInvites, setPendingInvites] = useState([]);
     const [isShareOpen, setIsShareOpen] = useState(false);
+    const [shareAuthMessage, setShareAuthMessage] = useState('');
     const [spaceReady, setSpaceReady] = useState(false);
     const [myIdentityHex, setMyIdentityHex] = useState('');
     const sessionSyncRef = useRef(null);
@@ -340,10 +341,27 @@ export default function AnnotatePage() {
         const params = new URLSearchParams(location.search);
         const sessionId = params.get('session');
         if (!sessionId) return;
+        if (!isSignedIn) {
+            setShareAuthMessage(
+                canSignIn
+                    ? 'Sign in from the top-right menu to join live annotation sessions. Local annotation still works without an account.'
+                    : 'Live annotation sessions require sign-in, but authentication is not configured in this environment.'
+            );
+            return;
+        }
         const sync = sessionSyncRef.current;
         if (!sync) return;
         const sid = sessionId;
-        sync.joinSession(sid).then((existingStrokes) => {
+        callQuery(api.sessions.getSessionByStringId, { sessionId: sid }).then((session) => {
+            if (!session) {
+                throw new Error('This live session is not available.');
+            }
+            if (session.paperId !== paper.id) {
+                throw new Error('This live session belongs to a different paper.');
+            }
+            setActiveSession(session);
+            return sync.joinSession(sid);
+        }).then((existingStrokes) => {
             for (const stroke of existingStrokes) {
                 try {
                     const parsed = JSON.parse(stroke.fabricObjectJson);
@@ -351,18 +369,30 @@ export default function AnnotatePage() {
                     canvasRef.current?.applyStrokeDelta('created', stroke.strokeId ?? stroke._id, clientId, stroke.fabricObjectJson);
                 } catch {/* ignore */}
             }
-            callQuery(api.sessions.getSessionByStringId, { sessionId: sid }).then(s => {
-                if (s) setActiveSession(s);
-            }).catch(() => {});
             callQuery(api.sessions.getParticipants, { sessionId: sid }).then(parts => {
                 if (parts) setSessionParticipants(parts);
             }).catch(() => {});
-        }).catch(e => console.error('Could not join session:', e));
-    }, [spaceReady, paper, location.search]);
+        }).catch(e => {
+            const message = String(e?.message || '');
+            if (
+                message.toLowerCase().includes('do not have access') ||
+                message.toLowerCase().includes('not authorized')
+            ) {
+                setShareAuthMessage('This live session is invite-only. Ask the host to invite you before opening the link.');
+            } else {
+                setShareAuthMessage(message || 'Could not join this live session.');
+            }
+            console.error('Could not join session:', e);
+        });
+    }, [canSignIn, isSignedIn, spaceReady, paper, location.search]);
 
     // ── Poll pending invites (Phase 2) ───────────────────────────────────
     useEffect(() => {
         if (!spaceReady) return;
+        if (!isSignedIn) {
+            setPendingInvites([]);
+            return;
+        }
         let cancelled = false;
 
         const poll = async () => {
@@ -381,7 +411,7 @@ export default function AnnotatePage() {
             cancelled = true;
             clearInterval(interval);
         };
-    }, [spaceReady, username]);
+    }, [isSignedIn, spaceReady, username]);
 
     if (!paper) {
         return (
@@ -398,31 +428,66 @@ export default function AnnotatePage() {
 
     // ── Session handlers ───────────────────────────────────────
     const handleCreateSession = async () => {
+        if (!isSignedIn) {
+            setShareAuthMessage(
+                canSignIn
+                    ? 'Sign in from the top-right menu before starting a live annotation session.'
+                    : 'Live annotation sessions need sign-in, but authentication is not configured here.'
+            );
+            return;
+        }
         const sync = sessionSyncRef.current;
         if (!sync) return;
         try {
+            setShareAuthMessage('');
             const session = await sync.startSession(paper.id, paperTitle);
             setActiveSession(session);
         } catch (e) {
+            setShareAuthMessage(e?.message || 'Could not start a live session right now.');
             console.error('Could not start live session:', e);
         }
     };
 
-    const handleInviteUser = (username) => {
+    const handleShareOpen = () => {
+        if (!isSignedIn) {
+            setShareAuthMessage(
+                canSignIn
+                    ? 'Sign in from the top-right menu to use live annotation and sharing.'
+                    : 'Live annotation and sharing require sign-in, but authentication is not configured in this environment.'
+            );
+            return;
+        }
+        setShareAuthMessage('');
+        setIsShareOpen(true);
+    };
+
+    const handleInviteUser = (user) => {
         const sync = sessionSyncRef.current;
         const sid = sync?.getActiveSessionId();
         if (!sync || !sid) return;
-        sync.sendInvite(sid, username);
+        sync.sendInvite(sid, user);
     };
 
-    const handleRespondInvite = (inviteId, accept) => {
+    const handleRespondInvite = async (inviteId, accept) => {
         const sync = sessionSyncRef.current;
         if (!sync) return;
-        sync.respondToInvite(inviteId, accept);
-        setPendingInvites(prev => prev.filter(i => i.inviteId !== inviteId));
-        if (accept) {
-            callQuery(api.invites.getInvitesBySession, { sessionId: '' }).catch(() => {});
-            // The server auto-joins the user on accept; the session sync listeners will update UI
+        const invite = pendingInvites.find((item) => String(item._id ?? item.inviteId) === String(inviteId));
+
+        try {
+            setShareAuthMessage('');
+            await sync.respondToInvite(inviteId, accept);
+            setPendingInvites(prev => prev.filter(i => String(i._id ?? i.inviteId) !== String(inviteId)));
+
+            if (accept && invite?.sessionId) {
+                const session = await callQuery(api.sessions.getSessionByStringId, { sessionId: invite.sessionId }).catch(() => null);
+                if (session?.paperId) {
+                    setIsShareOpen(false);
+                    navigate(`/annotate/${session.paperId}?session=${invite.sessionId}`);
+                }
+            }
+        } catch (e) {
+            setShareAuthMessage(e?.message || 'Could not respond to that invite.');
+            console.error('Could not respond to invite:', e);
         }
     };
 
@@ -474,8 +539,14 @@ export default function AnnotatePage() {
                 activeSession={activeSession}
                 participantCount={sessionParticipants.length}
                 pendingInviteCount={pendingInvites.length}
-                onShareOpen={() => setIsShareOpen(true)}
+                onShareOpen={handleShareOpen}
             />
+
+            {shareAuthMessage && (
+                <div className="annotate-auth-notice card" role="status">
+                    {shareAuthMessage}
+                </div>
+            )}
 
             <div className="annotate-body">
                 {pdfDoc && pageCount > 0 && (

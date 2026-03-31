@@ -64,7 +64,7 @@ export default function HomePage() {
             if (!username) return;
 
             unsubInvites?.();
-            unsubInvites = subscribe(api.invites.getMyPendingInvites, { toUsername: username }, () => {
+            unsubInvites = subscribe(api.invites.getMyPendingInvites, {}, () => {
                 void refreshLiveInvites();
             });
         });

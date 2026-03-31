@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { getAllUsers } from '../../convex-client.js';
+import { searchUsersByUsername } from '../../convex-client.js';
 
 /**
  * ShareDialog — modal for managing a live collaborative annotation session.
@@ -11,7 +11,7 @@ import { getAllUsers } from '../../convex-client.js';
  *   pendingInvites   — session_invite rows[] (incoming, status='pending')
  *   myIdentityHex    — string hex of the current user's identity
  *   onCreateSession  — () => void
- *   onInviteUser     — (username: string) => void
+ *   onInviteUser     — (user: { userId: string, username: string }) => void
  *   onRespondInvite  — (inviteId: bigint, accept: boolean) => void
  *   onEndSession     — () => void
  *   onClose          — () => void
@@ -30,7 +30,7 @@ export default function ShareDialog({
 }) {
     const [tab, setTab] = useState('people');   // 'people' | 'invite'
     const [inviteSearch, setInviteSearch] = useState('');
-    const [allUsers, setAllUsers] = useState([]);
+    const [searchResults, setSearchResults] = useState([]);
     const [copied, setCopied] = useState(false);
     const inputRef = useRef(null);
 
@@ -38,22 +38,33 @@ export default function ShareDialog({
     const amParticipant = participants.some(p => p.userId === myIdentityHex);
 
     useEffect(() => {
+        if (tab !== 'invite') {
+            setSearchResults([]);
+            return;
+        }
+
+        const term = inviteSearch.trim();
+        if (term.length < 2) {
+            setSearchResults([]);
+            return;
+        }
+
         let cancelled = false;
 
-        async function loadUsers() {
-            const users = await getAllUsers();
+        async function loadSearchResults() {
+            const users = await searchUsersByUsername(term, 12);
             if (!cancelled) {
-                setAllUsers(users);
+                setSearchResults(users || []);
             }
         }
 
-        void loadUsers();
+        void loadSearchResults();
         return () => {
             cancelled = true;
         };
-    }, [activeSession]);
+    }, [inviteSearch, tab]);
 
-    const filteredUsers = allUsers.filter(u =>
+    const filteredUsers = searchResults.filter(u =>
         u.userId !== myIdentityHex &&
         u.username?.toLowerCase().includes(inviteSearch.toLowerCase()) &&
         !participants.some(p => p.userId === u.userId)
@@ -68,8 +79,8 @@ export default function ShareDialog({
         });
     }
 
-    function handleInvite(username) {
-        onInviteUser(username);
+    function handleInvite(user) {
+        onInviteUser(user);
         setInviteSearch('');
         inputRef.current?.focus();
     }
@@ -89,15 +100,13 @@ export default function ShareDialog({
                 </div>
 
                 {/* ── Pending invites banner ── */}
-                {pendingInvites.length > 0 && (
+                        {pendingInvites.length > 0 && (
                     <div className="share-invites-banner">
                         {pendingInvites.map(inv => {
-                            const fromUser = allUsers.find(
-                                u => u.userId === inv.fromUserId
-                            );
-                            const fromName = fromUser?.username ?? 'Someone';
+                            const fromName = inv.fromUsername ?? 'Someone';
+                            const inviteId = inv._id ?? inv.inviteId;
                             return (
-                                <div key={String(inv.inviteId)} className="share-invite-row">
+                                <div key={String(inviteId)} className="share-invite-row">
                                     <span>
                                         <strong>{fromName}</strong> invited you to a live session
                                     </span>
@@ -105,14 +114,14 @@ export default function ShareDialog({
                                         <button
                                             type="button"
                                             className="btn btn-primary btn-sm"
-                                            onClick={() => onRespondInvite(inv.inviteId, true)}
+                                            onClick={() => onRespondInvite(inviteId, true)}
                                         >
                                             Accept
                                         </button>
                                         <button
                                             type="button"
                                             className="btn btn-ghost btn-sm"
-                                            onClick={() => onRespondInvite(inv.inviteId, false)}
+                                            onClick={() => onRespondInvite(inviteId, false)}
                                         >
                                             Decline
                                         </button>
@@ -169,18 +178,16 @@ export default function ShareDialog({
                             <div className="share-dialog-body">
                                 <ul className="share-participant-list">
                                     {participants.map(p => {
-                                        const user = allUsers.find(
-                                            u => u.userId === p.userId
-                                        );
                                         const isMe = p.userId === myIdentityHex;
+                                        const participantName = p.username ?? 'Unknown';
                                         return (
-                                            <li key={String(p.participantId)} className="share-participant-row">
+                                            <li key={String(p.participantId ?? p._id ?? p.userId)} className="share-participant-row">
                                                 <div className="share-participant-avatar">
-                                                    {(user?.username?.[0] ?? '?').toUpperCase()}
+                                                    {(participantName[0] ?? '?').toUpperCase()}
                                                 </div>
                                                 <div className="share-participant-info">
                                                     <span className="share-participant-name">
-                                                        {user?.username ?? 'Unknown'}
+                                                        {participantName}
                                                         {isMe ? ' (you)' : ''}
                                                     </span>
                                                     <span className="share-participant-role badge">
@@ -207,6 +214,9 @@ export default function ShareDialog({
                                         {copied ? '✓ Copied' : 'Copy Link'}
                                     </button>
                                 </div>
+                                <p className="share-search-empty">
+                                    Invited collaborators still need to accept their invite before this link will open the live session.
+                                </p>
                             </div>
                         )}
 
@@ -226,7 +236,7 @@ export default function ShareDialog({
                                 <ul className="share-search-results">
                                     {filteredUsers.length === 0 && (
                                         <li className="share-search-empty">
-                                            {inviteSearch ? 'No matching users found.' : 'Start typing to search users.'}
+                                            {inviteSearch.trim().length >= 2 ? 'No matching users found.' : 'Type at least 2 characters to search users.'}
                                         </li>
                                     )}
                                     {filteredUsers.map(u => (
@@ -238,7 +248,7 @@ export default function ShareDialog({
                                             <button
                                                 type="button"
                                                 className="btn btn-primary btn-sm"
-                                                onClick={() => handleInvite(u.username)}
+                                                onClick={() => handleInvite({ userId: u.userId, username: u.username })}
                                             >
                                                 Invite
                                             </button>

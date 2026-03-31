@@ -4,12 +4,10 @@ import { Bell } from 'lucide-react';
 import {
     onConvexReady,
     getMyPendingInvites,
-    getCurrentUserId,
     callMutation,
     callQuery,
     subscribe,
     api,
-    getAllUsers,
 } from '../../convex-client.js';
 import { useAuth } from '../../hooks/useAuth.js';
 
@@ -22,45 +20,37 @@ import { useAuth } from '../../hooks/useAuth.js';
  */
 export default function NotificationBell() {
     const navigate = useNavigate();
-    const { username } = useAuth();
+    const { isSignedIn } = useAuth();
     const [pendingInvites, setPendingInvites] = useState([]);
-    const [allUsers, setAllUsers] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
     // Attach Convex invite listeners once connected
     useEffect(() => {
+        if (!isSignedIn) {
+            setPendingInvites([]);
+            return;
+        }
+
         let unsubInvites = null;
-        let unsubUsers = null;
         let cancelled = false;
 
         async function refresh() {
-            const [invites, users] = await Promise.all([
-                getMyPendingInvites(username),
-                getAllUsers(),
-            ]);
+            const invites = await getMyPendingInvites();
 
             if (cancelled) {
                 return;
             }
 
-            setPendingInvites(invites);
-            setAllUsers(users);
+            setPendingInvites(invites || []);
         }
 
         onConvexReady(() => {
             void refresh();
 
-            if (!username) return;
-
             // Subscribe to invites addressed to this user
             unsubInvites?.();
-            unsubInvites = subscribe(api.invites.getMyPendingInvites, { toUsername: username }, () => {
-                void refresh();
-            });
-
-            unsubUsers?.();
-            unsubUsers = subscribe(api.users.getAllUsers, {}, () => {
+            unsubInvites = subscribe(api.invites.getMyPendingInvites, {}, () => {
                 void refresh();
             });
         });
@@ -74,9 +64,8 @@ export default function NotificationBell() {
             cancelled = true;
             clearInterval(interval);
             unsubInvites?.();
-            unsubUsers?.();
         };
-    }, [username]);
+    }, [isSignedIn]);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -91,9 +80,7 @@ export default function NotificationBell() {
     }, [isOpen]);
 
     async function handleAccept(invite) {
-        const userId = getCurrentUserId();
-        if (!userId) return;
-        await callMutation(api.invites.respondToInvite, { inviteId: invite._id ?? invite.inviteId, accept: true, userId });
+        await callMutation(api.invites.respondToInvite, { inviteId: invite._id ?? invite.inviteId, accept: true });
         setPendingInvites(prev => prev.filter(i => (i._id ?? i.inviteId) !== (invite._id ?? invite.inviteId)));
         // Navigate to the annotation page for the session
         if (invite.sessionId) {
@@ -106,9 +93,7 @@ export default function NotificationBell() {
     }
 
     async function handleDecline(invite) {
-        const userId = getCurrentUserId();
-        if (!userId) return;
-        await callMutation(api.invites.respondToInvite, { inviteId: invite._id ?? invite.inviteId, accept: false, userId });
+        await callMutation(api.invites.respondToInvite, { inviteId: invite._id ?? invite.inviteId, accept: false });
         setPendingInvites(prev => prev.filter(i => (i._id ?? i.inviteId) !== (invite._id ?? invite.inviteId)));
     }
 
@@ -147,10 +132,7 @@ export default function NotificationBell() {
                     ) : (
                         <ul className="notification-list">
                             {pendingInvites.map(inv => {
-                                const fromUser = allUsers.find(
-                                    u => u.userId === inv.fromUserId
-                                );
-                                const fromName = fromUser?.username ?? 'Someone';
+                                const fromName = inv.fromUsername ?? 'Someone';
                                 return (
                                     <li key={String(inv._id ?? inv.inviteId)} className="notification-item">
                                         <div className="notification-item-icon">📝</div>

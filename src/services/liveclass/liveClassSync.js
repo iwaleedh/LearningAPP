@@ -70,23 +70,22 @@ export function createLiveClassSync({
     if (!client) return;
 
     // ── Strokes subscription ─────────────────────────────────────
-    unsubs.push(subscribe(api.strokes.getStrokesBySession, { sessionId: classId }, (strokes) => {
-      const newMap = new Map();
-      for (const stroke of strokes) {
-        newMap.set(stroke._id, stroke);
+        unsubs.push(subscribe(api.strokes.getStrokesBySession, { sessionId: classId }, (strokes) => {
+          const newMap = new Map();
+          for (const stroke of strokes) {
+            newMap.set(stroke._id, stroke);
 
-        if (!knownStrokes.has(stroke._id)) {
-          if (stroke.userId !== myUserId()) {
-            try {
-              const parsed = JSON.parse(stroke.fabricObjectJson);
-              const clientId = parsed?.data?.strokeClientId;
-              if (clientId) {
-                clientIdToStrokeId.set(clientId, stroke._id);
-                strokeIdToClientId.set(stroke._id, clientId);
+            if (!knownStrokes.has(stroke._id)) {
+              if (stroke.userId !== myUserId()) {
+                try {
+                  const parsed = JSON.parse(stroke.fabricObjectJson);
+                  const clientId = parsed?.data?.strokeClientId;
+                  if (clientId) {
+                    strokeIdToClientId.set(stroke._id, clientId);
+                  }
+                } catch { /* noop */ }
+                onStrokeAdded?.(stroke._id, stroke.fabricObjectJson);
               }
-            } catch { /* noop */ }
-            onStrokeAdded?.(stroke._id, stroke.fabricObjectJson);
-          }
         } else {
           const old = knownStrokes.get(stroke._id);
           if (old.fabricObjectJson !== stroke.fabricObjectJson && stroke.userId !== myUserId()) {
@@ -185,7 +184,6 @@ export function createLiveClassSync({
 
     try {
       const classId = await callMutation(api.liveclass.createLiveClass, {
-        hostUserId: userId,
         title,
         backgroundType,
       });
@@ -212,7 +210,7 @@ export function createLiveClassSync({
     if (!userId || !getClient()) return [];
     activeClassId = classId;
     attachListeners(classId);
-    await callMutation(api.liveclass.joinLiveClass, { classId, userId });
+    await callMutation(api.liveclass.joinLiveClass, { classId });
     const strokes = await callQuery(api.strokes.getStrokesBySession, { sessionId: classId });
     return strokes || [];
   }
@@ -242,7 +240,7 @@ export function createLiveClassSync({
     lastCursorSendTime = now;
     const userId = myUserId();
     if (!userId) return;
-    callMutation(api.cursors.updateCursor, { classId, userId, x, y, tool, mode }).catch(() => {});
+    callMutation(api.cursors.updateCursor, { classId, x, y, tool, mode }).catch(() => {});
   }
 
   /** Broadcast a completed laser trail to other users. */
@@ -265,7 +263,6 @@ export function createLiveClassSync({
     const strokeId = await callMutation(api.strokes.addStroke, {
       sessionId: classId,
       pageNumber: 1,
-      userId,
       fabricObjectJson,
     });
     if (strokeId) {
@@ -294,7 +291,6 @@ export function createLiveClassSync({
     if (!userId) return;
     await callMutation(api.invites.inviteToSession, {
       sessionId: classId,
-      fromUserId: userId,
       toUsername,
     });
   }
@@ -303,7 +299,7 @@ export function createLiveClassSync({
   async function raiseHand(classId) {
     const userId = myUserId();
     if (!userId) return;
-    await callMutation(api.handraises.raiseHand, { classId, studentUserId: userId });
+    await callMutation(api.handraises.raiseHand, { classId });
   }
 
   /** Teacher acknowledges a hand raise. */
