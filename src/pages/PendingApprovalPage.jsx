@@ -4,7 +4,7 @@ import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api.js';
 import { useAuth } from '../hooks/useAuth.js';
 import {
-  Clock, CheckCircle, Upload, FileText, Image, AlertCircle, Loader,
+  Clock, CheckCircle, Upload, FileText, AlertCircle, Loader,
 } from 'lucide-react';
 
 const PLANS = [
@@ -282,9 +282,9 @@ export default function PendingApprovalPage() {
   // Loading state — wait for both queries
   if (paymentReq === undefined) {
     return (
-      <div className="pending-page">
-        <div className="pending-card card">
-          <div className="pending-icon"><Loader size={32} className="spin" /></div>
+      <div className="pending-page pending-page--payment">
+        <div className="payment-page-card card" style={{ alignItems: 'center', justifyContent: 'center', minHeight: 200 }}>
+          <Loader size={32} className="spin" style={{ color: 'var(--color-text-secondary)' }} />
           <p className="pending-message">Loading…</p>
         </div>
       </div>

@@ -175,12 +175,6 @@ export const getPaymentCounts = query({
 });
 
 /**
- * @deprecated Use listPaymentRequests instead.
- * Kept for any callers that may reference this name.
- */
-export const listAllPaymentRequests = listPaymentRequests;
-
-/**
  * Admin: approve or reject a payment request.
  * Approving automatically sets the user's accountStatus to 'approved'.
  */

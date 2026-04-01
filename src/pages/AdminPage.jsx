@@ -517,15 +517,15 @@ export default function AdminPage() {
 
   const pendingUsers    = useQuery(api.admin.listPendingUsers) ?? [];
   const allUsers        = useQuery(api.admin.listAllUsersAdmin) ?? [];
-  const paymentCounts   = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
-  const pendingPayments = { length: paymentCounts.pending ?? 0 };
+  const paymentCounts      = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
+  const pendingPaymentCount = paymentCounts.pending ?? 0;
 
   if (isAdmin === false) {
     navigate('/', { replace: true });
     return null;
   }
 
-  const totalPending = pendingUsers.length + pendingPayments.length;
+  const totalPending = pendingUsers.length + pendingPaymentCount;
 
   return (
     <div className="admin-page animate-fade-in">
@@ -550,7 +550,7 @@ export default function AdminPage() {
         {TABS.map(t => {
           const Icon = t.icon;
           const badge = t.id === 'users' ? pendingUsers.length
-            : t.id === 'payments' ? pendingPayments.length
+            : t.id === 'payments' ? pendingPaymentCount
             : 0;
           return (
             <button
