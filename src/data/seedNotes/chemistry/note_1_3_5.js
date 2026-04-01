@@ -220,16 +220,16 @@ export const note_chemistry_1_3_5 = {
   <circle cx="595" cy="95" r="16" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
   <text x="595" y="99" text-anchor="middle" fill="#065f46" font-size="10">C</text>
   <line x1="556" y1="72" x2="579" y2="84" stroke="#475569" stroke-width="2"/>
-  <circle cx="548" cy="68" r="14" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="548" cy="68" r="14" fill="#c7d2fe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="548" y="72" text-anchor="middle" fill="#3730a3" font-size="9">Cl</text>
   <line x1="634" y1="72" x2="611" y2="84" stroke="#475569" stroke-width="2"/>
-  <circle cx="642" cy="68" r="14" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="642" cy="68" r="14" fill="#c7d2fe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="642" y="72" text-anchor="middle" fill="#3730a3" font-size="9">Cl</text>
   <line x1="556" y1="120" x2="579" y2="107" stroke="#475569" stroke-width="2" stroke-dasharray="5,2"/>
-  <circle cx="548" cy="128" r="14" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="548" cy="128" r="14" fill="#c7d2fe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="548" y="132" text-anchor="middle" fill="#3730a3" font-size="9">Cl</text>
   <line x1="634" y1="120" x2="611" y2="107" stroke="#475569" stroke-width="2"/>
-  <circle cx="642" cy="128" r="14" fill="#c7d2fe" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="642" cy="128" r="14" fill="#c7d2fe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="642" y="132" text-anchor="middle" fill="#3730a3" font-size="9">Cl</text>
   <text x="595" y="160" text-anchor="middle" fill="#374151" font-size="9">4 polar C–Cl bonds but</text>
   <text x="595" y="174" text-anchor="middle" fill="#374151" font-size="9">arranged tetrahedrally →</text>

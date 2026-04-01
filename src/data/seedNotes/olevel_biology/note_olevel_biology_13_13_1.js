@@ -73,9 +73,9 @@ export const note_olevel_biology_13_13_1 = {
   <text x="235" y="69" fill="#059669" font-size="10">tubule</text>
 
   <!-- Loop of Henle (descending and ascending) -->
-  <path d="M220 165 Q215 220 220 280 Q225 330 240 340 Q255 350 270 340 Q285 330 290 280 Q300 220 295 165" fill="none" stroke="#7c3aed" stroke-width="3"/>
-  <text x="230" y="360" fill="#7c3aed" font-size="10" font-weight="bold">Loop of Henle</text>
-  <line x1="255" y1="356" x2="255" y2="342" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M220 165 Q215 220 220 280 Q225 330 240 340 Q255 350 270 340 Q285 330 290 280 Q300 220 295 165" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="230" y="360" fill="#1d4ed8" font-size="10" font-weight="bold">Loop of Henle</text>
+  <line x1="255" y1="356" x2="255" y2="342" stroke="#1d4ed8" stroke-width="1"/>
 
   <!-- Distal convoluted tubule -->
   <path d="M295 165 Q320 140 360 160 Q390 175 390 210 Q390 240 360 245" fill="none" stroke="#d97706" stroke-width="3"/>

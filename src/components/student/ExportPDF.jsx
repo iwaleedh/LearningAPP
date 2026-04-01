@@ -27,7 +27,7 @@ export default function ExportPDF({ chapterId = 'default', chapterTitle = 'Chapt
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; padding: 40px; color: #1a1a2e; line-height: 1.6; }
-        h1 { font-size: 24px; margin-bottom: 8px; color: #6366f1; }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #3b82f6; }
         .subtitle { color: #6b7280; font-size: 13px; margin-bottom: 32px; }
         h2 { font-size: 18px; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e5e7eb; }
         .highlight-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f3f4f6; }

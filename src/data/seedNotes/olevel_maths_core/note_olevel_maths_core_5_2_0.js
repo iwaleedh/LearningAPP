@@ -18,17 +18,17 @@ export const note_olevel_maths_core_5_2_0 = {
       type: 'svg',
       data: {
         svg: `<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="12">
-  <circle cx="150" cy="100" r="80" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="150" cy="100" r="80" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <!-- diameter line -->
-  <line x1="70" y1="100" x2="230" y2="100" stroke="#6366f1" stroke-width="2"/>
+  <line x1="70" y1="100" x2="230" y2="100" stroke="#3b82f6" stroke-width="2"/>
   <!-- radius line -->
   <line x1="150" y1="100" x2="150" y2="20" stroke="#10b981" stroke-width="2"/>
   <!-- labels -->
-  <text x="150" y="115" text-anchor="middle" fill="#6366f1" font-weight="bold" font-size="11">diameter d</text>
+  <text x="150" y="115" text-anchor="middle" fill="#3b82f6" font-weight="bold" font-size="11">diameter d</text>
   <text x="163" y="58" fill="#10b981" font-weight="bold">radius r</text>
   <text x="152" y="100" r="4" fill="#374151">•</text>
   <circle cx="150" cy="100" r="3" fill="#374151"/>
-  <text x="150" y="190" text-anchor="middle" fill="#6366f1" font-size="11">Circumference C = distance around the circle</text>
+  <text x="150" y="190" text-anchor="middle" fill="#3b82f6" font-size="11">Circumference C = distance around the circle</text>
 </svg>`,
         caption: 'A circle showing radius r and diameter d = 2r',
       },

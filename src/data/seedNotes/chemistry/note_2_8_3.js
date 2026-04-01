@@ -240,7 +240,7 @@ export const note_chemistry_2_8_3 = {
   <text x="75" y="81" text-anchor="middle" fill="#1e40af" font-weight="bold">Na</text>
   <rect x="115" y="62" width="160" height="28" rx="4" fill="#3b82f6"/>
   <text x="195" y="81" text-anchor="middle" fill="#1e293b" font-size="10">Li₂O-type (limited O₂)</text>
-  <rect x="285" y="62" width="120" height="28" rx="4" fill="#7c3aed"/>
+  <rect x="285" y="62" width="120" height="28" rx="4" fill="#1d4ed8"/>
   <text x="345" y="81" text-anchor="middle" fill="#1e293b" font-size="10">Peroxide Na₂O₂</text>
   <rect x="415" y="62" width="140" height="28" rx="4" fill="#1e293b"/>
   <text x="485" y="81" text-anchor="middle" fill="#64748b" font-size="10">—</text>
@@ -249,7 +249,7 @@ export const note_chemistry_2_8_3 = {
   <text x="75" y="115" text-anchor="middle" fill="#1e40af" font-weight="bold">K</text>
   <rect x="115" y="96" width="160" height="28" rx="4" fill="#1e293b"/>
   <text x="195" y="115" text-anchor="middle" fill="#64748b" font-size="10">—</text>
-  <rect x="285" y="96" width="120" height="28" rx="4" fill="#7c3aed"/>
+  <rect x="285" y="96" width="120" height="28" rx="4" fill="#1d4ed8"/>
   <text x="345" y="115" text-anchor="middle" fill="#1e293b" font-size="10">Peroxide K₂O₂</text>
   <rect x="415" y="96" width="140" height="28" rx="4" fill="#dc2626"/>
   <text x="485" y="115" text-anchor="middle" fill="#1e293b" font-size="10">Superoxide KO₂ (O₂⁻)</text>
@@ -265,8 +265,8 @@ export const note_chemistry_2_8_3 = {
   <!-- Legend -->
   <rect x="45" y="168" width="12" height="12" fill="#3b82f6" rx="2"/>
   <text x="62" y="179" fill="#1e40af" font-size="9">Simple oxide X₂O</text>
-  <rect x="155" y="168" width="12" height="12" fill="#7c3aed" rx="2"/>
-  <text x="172" y="179" fill="#7c3aed" font-size="9">Peroxide X₂O₂</text>
+  <rect x="155" y="168" width="12" height="12" fill="#1d4ed8" rx="2"/>
+  <text x="172" y="179" fill="#1d4ed8" font-size="9">Peroxide X₂O₂</text>
   <rect x="265" y="168" width="12" height="12" fill="#dc2626" rx="2"/>
   <text x="282" y="179" fill="#dc2626" font-size="9">Superoxide XO₂</text>
 </svg>`
@@ -500,7 +500,7 @@ export const note_chemistry_2_8_3 = {
   <text x="162" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Na</text>
   <text x="162" y="91" text-anchor="middle" fill="#78350f" font-size="9">Yellow-Orange</text>
   <!-- K -->
-  <rect x="220" y="24" width="95" height="75" rx="8" fill="#7c3aed"/>
+  <rect x="220" y="24" width="95" height="75" rx="8" fill="#1d4ed8"/>
   <text x="267" y="55" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="24">🔮</text>
   <text x="267" y="76" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">K</text>
   <text x="267" y="91" text-anchor="middle" fill="#2d1b69" font-size="9">Lilac</text>

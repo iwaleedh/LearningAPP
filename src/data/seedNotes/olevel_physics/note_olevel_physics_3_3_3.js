@@ -52,7 +52,7 @@ export const note_olevel_physics_3_3_3 = {
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <defs>
     <marker id="ahU" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0,8 3,0 6" fill="#6366f1"/>
+      <polygon points="0 0,8 3,0 6" fill="#3b82f6"/>
     </marker>
     <marker id="ahUr" markerWidth="8" markerHeight="6" refX="1" refY="3" orient="auto">
       <polygon points="8 0,0 3,8 6" fill="#10b981"/>
@@ -60,7 +60,7 @@ export const note_olevel_physics_3_3_3 = {
   </defs>
   <!-- Probe -->
   <rect x="15" y="60" width="40" height="80" fill="#475569" rx="5"/>
-  <rect x="55" y="80" width="8" height="40" fill="#6366f1" rx="2"/>
+  <rect x="55" y="80" width="8" height="40" fill="#3b82f6" rx="2"/>
   <text x="35" y="158" text-anchor="middle" fill="#475569">Probe</text>
   <!-- Body region -->
   <rect x="63" y="55" width="280" height="90" fill="#78350f" stroke="#f59e0b" stroke-width="1" rx="3"/>
@@ -69,8 +69,8 @@ export const note_olevel_physics_3_3_3 = {
   <line x1="343" y1="55" x2="343" y2="145" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 3"/>
   <text x="348" y="52" fill="#ef4444" font-size="10">Boundary</text>
   <!-- Outgoing pulse -->
-  <line x1="63" y1="92" x2="338" y2="92" stroke="#6366f1" stroke-width="2" marker-end="url(#ahU)" stroke-dasharray="10 5"/>
-  <text x="200" y="83" text-anchor="middle" fill="#6366f1">Pulse →</text>
+  <line x1="63" y1="92" x2="338" y2="92" stroke="#3b82f6" stroke-width="2" marker-end="url(#ahU)" stroke-dasharray="10 5"/>
+  <text x="200" y="83" text-anchor="middle" fill="#3b82f6">Pulse →</text>
   <!-- Returning echo -->
   <line x1="338" y1="108" x2="63" y2="108" stroke="#10b981" stroke-width="2" marker-end="url(#ahUr)" stroke-dasharray="10 5"/>
   <text x="200" y="124" text-anchor="middle" fill="#10b981">← Echo returns</text>

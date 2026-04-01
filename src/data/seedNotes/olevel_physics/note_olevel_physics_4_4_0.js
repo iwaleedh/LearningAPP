@@ -82,15 +82,15 @@ export const note_olevel_physics_4_4_0 = {
         caption: 'Solenoid magnetic field — acts like a bar magnet with N and S poles',
         svg: `<svg viewBox="0 0 380 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Solenoid body -->
-  <rect x="100" y="80" width="180" height="40" rx="6" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
+  <rect x="100" y="80" width="180" height="40" rx="6" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
   <!-- Coil loops -->
-  <ellipse cx="110" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="130" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="150" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="170" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="190" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="210" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="270" cy="100" rx="8" ry="20" fill="none" stroke="#6366f1" stroke-width="2"/>
+  <ellipse cx="110" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="130" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="150" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="170" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="190" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="210" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="270" cy="100" rx="8" ry="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
   <!-- N / S poles -->
   <rect x="55" y="75" width="45" height="50" rx="5" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <text x="65" y="104" fill="#16a34a" font-weight="bold" font-size="16">N</text>
@@ -102,8 +102,8 @@ export const note_olevel_physics_4_4_0 = {
   <path d="M55,108 C20,130 10,160 40,180 C80,200 160,195 200,190 C270,182 330,170 360,150 C365,135 340,120 305,115"
         fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4,3"/>
   <!-- Current direction label -->
-  <text x="100" y="155" fill="#6366f1" font-size="9">Current direction →</text>
-  <line x1="115" y1="148" x2="110" y2="120" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="100" y="155" fill="#3b82f6" font-size="9">Current direction →</text>
+  <line x1="115" y1="148" x2="110" y2="120" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,2"/>
   <!-- Labels -->
   <text x="100" y="175" fill="#4b5563" font-size="9">Right-hand grip rule: thumb → current direction; fingers → field direction</text>
 </svg>`,

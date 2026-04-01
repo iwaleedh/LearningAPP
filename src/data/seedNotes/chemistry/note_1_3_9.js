@@ -50,7 +50,7 @@ export const note_chemistry_1_3_9 = {
   <text x="84" y="234" text-anchor="middle" fill="#92400e" font-size="9.5">💧 Polar solvents: soluble</text>
   <rect x="10" y="247" width="148" height="22" rx="4" fill="#fde68a"/>
   <text x="84" y="262" text-anchor="middle" fill="#92400e" font-size="9.5">⚠ Brittle (ions shift)</text>
-  <text x="84" y="295" text-anchor="middle" fill="#7c3aed" font-size="9">Bonding:</text>
+  <text x="84" y="295" text-anchor="middle" fill="#1d4ed8" font-size="9">Bonding:</text>
   <text x="84" y="310" text-anchor="middle" fill="#374151" font-size="9">Electrostatic attraction</text>
   <text x="84" y="323" text-anchor="middle" fill="#374151" font-size="9">between + and − ions</text>
   <text x="84" y="338" text-anchor="middle" fill="#374151" font-size="9">E.g. NaCl, MgO, CaCl₂</text>
@@ -87,29 +87,29 @@ export const note_chemistry_1_3_9 = {
   <text x="254" y="219" text-anchor="middle" fill="#166534" font-size="9.5">🔨 Malleable &amp; ductile</text>
   <rect x="180" y="232" width="148" height="22" rx="4" fill="#dcfce7"/>
   <text x="254" y="247" text-anchor="middle" fill="#166534" font-size="9.5">💥 Insoluble in water</text>
-  <text x="254" y="291" text-anchor="middle" fill="#7c3aed" font-size="9">Bonding:</text>
+  <text x="254" y="291" text-anchor="middle" fill="#1d4ed8" font-size="9">Bonding:</text>
   <text x="254" y="306" text-anchor="middle" fill="#374151" font-size="9">Cation + delocalised e⁻ sea</text>
   <text x="254" y="319" text-anchor="middle" fill="#374151" font-size="9">E.g. Na, Mg, Al, Fe</text>
   <text x="254" y="360" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="10">m.p. varies (Na 98°C → W 3422°C)</text>
 
   <!-- Panel 3: Giant Covalent -->
-  <rect x="345" y="5"   width="158" height="368" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-  <rect x="345" y="5"   width="158" height="36" rx="8" fill="#7c3aed"/>
+  <rect x="345" y="5"   width="158" height="368" rx="8" fill="#f5f3ff" stroke="#1d4ed8" stroke-width="2"/>
+  <rect x="345" y="5"   width="158" height="36" rx="8" fill="#1d4ed8"/>
   <text x="424" y="28"  text-anchor="middle" fill="white" font-weight="bold" font-size="12">💎 GIANT COVALENT</text>
   <!-- Diamond tetrahedral mini -->
-  <circle cx="424" cy="90"  r="12" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="424" cy="90"  r="12" fill="#c4b5fd" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="424" cy="94" text-anchor="middle" fill="#4c1d95" font-size="9">C</text>
   <line x1="415" y1="80" x2="393" y2="64" stroke="#374151" stroke-width="2"/>
   <line x1="433" y1="80" x2="455" y2="64" stroke="#374151" stroke-width="2"/>
   <line x1="415" y1="100" x2="393" y2="120" stroke="#374151" stroke-width="2"/>
   <line x1="433" y1="100" x2="455" y2="120" stroke="#374151" stroke-width="2"/>
-  <circle cx="386" cy="58"  r="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+  <circle cx="386" cy="58"  r="10" fill="#c4b5fd" stroke="#1d4ed8" stroke-width="1"/>
   <text x="386" cy="62" text-anchor="middle" fill="#4c1d95" font-size="9">C</text>
-  <circle cx="462" cy="58"  r="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+  <circle cx="462" cy="58"  r="10" fill="#c4b5fd" stroke="#1d4ed8" stroke-width="1"/>
   <text x="462" y="62" text-anchor="middle" fill="#4c1d95" font-size="9">C</text>
-  <circle cx="386" cy="127" r="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+  <circle cx="386" cy="127" r="10" fill="#c4b5fd" stroke="#1d4ed8" stroke-width="1"/>
   <text x="386" y="131" text-anchor="middle" fill="#4c1d95" font-size="9">C</text>
-  <circle cx="462" cy="127" r="10" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1"/>
+  <circle cx="462" cy="127" r="10" fill="#c4b5fd" stroke="#1d4ed8" stroke-width="1"/>
   <text x="462" y="131" text-anchor="middle" fill="#4c1d95" font-size="9">C</text>
   <!-- properties -->
   <rect x="350" y="145" width="148" height="22" rx="4" fill="#ede9fe"/>
@@ -120,7 +120,7 @@ export const note_chemistry_1_3_9 = {
   <text x="424" y="216" text-anchor="middle" fill="#4c1d95" font-size="9.5">💎 Very hard</text>
   <rect x="350" y="229" width="148" height="22" rx="4" fill="#ede9fe"/>
   <text x="424" y="244" text-anchor="middle" fill="#4c1d95" font-size="9.5">💧 Insoluble</text>
-  <text x="424" y="285" text-anchor="middle" fill="#7c3aed" font-size="9">Bonding:</text>
+  <text x="424" y="285" text-anchor="middle" fill="#1d4ed8" font-size="9">Bonding:</text>
   <text x="424" y="300" text-anchor="middle" fill="#374151" font-size="9">Network of cov. bonds</text>
   <text x="424" y="313" text-anchor="middle" fill="#374151" font-size="9">E.g. Diamond, Graphite*, SiO₂</text>
   <text x="424" y="328" text-anchor="middle" fill="#374151" font-size="8.5">(*Graphite IS a conductor)</text>
@@ -151,7 +151,7 @@ export const note_chemistry_1_3_9 = {
   <text x="595" y="216" text-anchor="middle" fill="#9d174d" font-size="9.5">💧 Varies (like/like)</text>
   <rect x="520" y="229" width="150" height="22" rx="4" fill="#fce7f3"/>
   <text x="595" y="244" text-anchor="middle" fill="#9d174d" font-size="9.5">📏 Many are gases/liq.</text>
-  <text x="595" y="285" text-anchor="middle" fill="#7c3aed" font-size="9">Bonding:</text>
+  <text x="595" y="285" text-anchor="middle" fill="#1d4ed8" font-size="9">Bonding:</text>
   <text x="595" y="300" text-anchor="middle" fill="#374151" font-size="9">Strong cov. bonds within;</text>
   <text x="595" y="313" text-anchor="middle" fill="#374151" font-size="9">weak IMF between</text>
   <text x="595" y="326" text-anchor="middle" fill="#374151" font-size="9">E.g. Cl₂, HCl, H₂O, CO₂</text>

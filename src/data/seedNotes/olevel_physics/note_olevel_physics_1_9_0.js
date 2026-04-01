@@ -62,7 +62,7 @@ export const note_olevel_physics_1_9_0 = {
   <!-- Snowshoe / flat shape -->
   <ellipse cx="285" cy="95" rx="45" ry="10" fill="#9ca3af"/>
   <!-- Stick figure standing -->
-  <circle cx="285" cy="62" r="10" fill="#6366f1"/>
+  <circle cx="285" cy="62" r="10" fill="#3b82f6"/>
   <line x1="285" y1="72" x2="285" y2="90" stroke="#374151" stroke-width="2"/>
   <line x1="268" y1="80" x2="302" y2="80" stroke="#374151" stroke-width="2"/>
   <!-- Force arrow -->

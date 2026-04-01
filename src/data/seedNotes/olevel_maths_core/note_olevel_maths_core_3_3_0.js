@@ -104,8 +104,8 @@ export const note_olevel_maths_core_3_3_0 = {
   <rect x="5" y="5" width="70" height="80" fill="#1c3a64" stroke="#ddd"/>
   <line x1="5" y1="50" x2="75" y2="50" stroke="#999" stroke-width="0.8"/>
   <line x1="40" y1="5" x2="40" y2="85" stroke="#999" stroke-width="0.8"/>
-  <line x1="12" y1="78" x2="68" y2="12" stroke="#6366f1" stroke-width="2"/>
-  <text x="40" y="97" text-anchor="middle" fill="#6366f1" font-size="9" font-weight="bold">y = mx+c</text>
+  <line x1="12" y1="78" x2="68" y2="12" stroke="#3b82f6" stroke-width="2"/>
+  <text x="40" y="97" text-anchor="middle" fill="#3b82f6" font-size="9" font-weight="bold">y = mx+c</text>
   <text x="40" y="108" text-anchor="middle" fill="#888" font-size="8">Linear</text>
 
   <!-- 2. Quadratic (panel 2, x:85-155) -->

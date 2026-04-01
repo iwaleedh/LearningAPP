@@ -86,16 +86,16 @@ export const note_olevel_physics_4_1_0 = {
   <rect x="120" y="120" width="60" height="30" rx="6" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="150" y="140" text-anchor="middle" fill="#3b82f6" font-weight="bold">− −</text>
   <!-- Attraction arrows -->
-  <line x1="80" y1="135" x2="118" y2="135" stroke="#6366f1" stroke-width="2" marker-end="url(#arr-a)"/>
-  <line x1="120" y1="135" x2="82" y2="135" stroke="#6366f1" stroke-width="2" marker-end="url(#arr-a)"/>
-  <text x="100" y="172" text-anchor="middle" fill="#6366f1" font-size="12">ATTRACT</text>
+  <line x1="80" y1="135" x2="118" y2="135" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-a)"/>
+  <line x1="120" y1="135" x2="82" y2="135" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-a)"/>
+  <text x="100" y="172" text-anchor="middle" fill="#3b82f6" font-size="12">ATTRACT</text>
 
   <defs>
     <marker id="arr-r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
       <path d="M0,0 L0,6 L8,3 z" fill="#ef4444"/>
     </marker>
     <marker id="arr-a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#6366f1"/>
+      <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
     </marker>
   </defs>
 </svg>`,

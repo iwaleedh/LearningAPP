@@ -28,16 +28,16 @@ export const note_olevel_maths_core_5_2_1 = {
   <!-- full circle outline faint -->
   <circle cx="140" cy="120" r="90" fill="none" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,4"/>
   <!-- sector fill -->
-  <path d="M140,120 L140,30 A90,90 0 0,1 225,165 Z" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
+  <path d="M140,120 L140,30 A90,90 0 0,1 225,165 Z" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <!-- angle arc -->
   <path d="M140,120 m30,0 A30,30 0 0,1 140,90" fill="none" stroke="#f59e0b" stroke-width="2"/>
   <!-- labels -->
   <text x="165" y="105" fill="#f59e0b" font-weight="bold">θ</text>
-  <text x="87" y="75" fill="#6366f1">r</text>
-  <text x="188" y="152" fill="#6366f1">r</text>
+  <text x="87" y="75" fill="#3b82f6">r</text>
+  <text x="188" y="152" fill="#3b82f6">r</text>
   <text x="175" y="80" fill="#10b981" font-style="italic">arc length</text>
-  <line x1="140" y1="120" x2="140" y2="30" stroke="#6366f1" stroke-width="2"/>
-  <line x1="140" y1="120" x2="225" y2="165" stroke="#6366f1" stroke-width="2"/>
+  <line x1="140" y1="120" x2="140" y2="30" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="140" y1="120" x2="225" y2="165" stroke="#3b82f6" stroke-width="2"/>
   <circle cx="140" cy="120" r="3" fill="#374151"/>
   <text x="140" y="210" text-anchor="middle" fill="#374151" font-size="11">Sector with radius r and angle θ at centre</text>
 </svg>`,

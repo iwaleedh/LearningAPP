@@ -23,7 +23,7 @@ export const note_olevel_physics_3_2_2 = {
         caption: 'Three cases at a glass–air boundary: (a) below critical angle — partial refraction; (b) at critical angle; (c) above critical angle — total internal reflection',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
   <defs>
-    <marker id="ah22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
     <marker id="ar22" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#ef4444"/></marker>
   </defs>
@@ -37,17 +37,17 @@ export const note_olevel_physics_3_2_2 = {
   <!-- CASE A: i < C -->
   <text x="48" y="298" text-anchor="middle" fill="#374151" font-weight="bold">(a) i &lt; C</text>
   <line x1="50" y1="20" x2="50" y2="280" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 3"/>
-  <line x1="20" y1="260" x2="50" y2="150" stroke="#6366f1" stroke-width="2" marker-end="url(#ah22)"/>
+  <line x1="20" y1="260" x2="50" y2="150" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah22)"/>
   <line x1="50" y1="150" x2="35" y2="30" stroke="#ef4444" stroke-width="2" marker-end="url(#ar22)"/>
   <line x1="50" y1="150" x2="90" y2="50" stroke="#10b981" stroke-width="1.5" marker-end="url(#ag22)"/>
   <text x="58" y="48" fill="#10b981" font-size="9">refracted</text>
   <text x="15" y="28" fill="#ef4444" font-size="9">reflected</text>
-  <text x="8" y="250" fill="#6366f1" font-size="9">incident</text>
+  <text x="8" y="250" fill="#3b82f6" font-size="9">incident</text>
 
   <!-- CASE B: i = C -->
   <text x="238" y="298" text-anchor="middle" fill="#374151" font-weight="bold">(b) i = C</text>
   <line x1="240" y1="20" x2="240" y2="280" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 3"/>
-  <line x1="195" y1="260" x2="240" y2="150" stroke="#6366f1" stroke-width="2" marker-end="url(#ah22)"/>
+  <line x1="195" y1="260" x2="240" y2="150" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah22)"/>
   <line x1="240" y1="150" x2="215" y2="40" stroke="#ef4444" stroke-width="2" marker-end="url(#ar22)"/>
   <line x1="240" y1="150" x2="480" y2="150" stroke="#10b981" stroke-width="1.5" marker-end="url(#ag22)"/>
   <text x="370" y="145" fill="#10b981" font-size="9">r = 90° (along boundary)</text>
@@ -56,11 +56,11 @@ export const note_olevel_physics_3_2_2 = {
   <!-- CASE C: i > C (TIR) -->
   <text x="418" y="298" text-anchor="middle" fill="#374151" font-weight="bold">(c) i &gt; C — TIR</text>
   <line x1="420" y1="20" x2="420" y2="280" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 3"/>
-  <line x1="370" y1="270" x2="420" y2="150" stroke="#6366f1" stroke-width="2" marker-end="url(#ah22)"/>
+  <line x1="370" y1="270" x2="420" y2="150" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah22)"/>
   <line x1="420" y1="150" x2="470" y2="270" stroke="#ef4444" stroke-width="2.5" marker-end="url(#ar22)"/>
   <text x="450" y="245" fill="#ef4444" font-size="9">100%</text>
   <text x="448" y="258" fill="#ef4444" font-size="9">reflected</text>
-  <text x="356" y="250" fill="#6366f1" font-size="9">incident</text>
+  <text x="356" y="250" fill="#3b82f6" font-size="9">incident</text>
 </svg>`,
       },
     },

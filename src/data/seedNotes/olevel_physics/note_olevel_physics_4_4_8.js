@@ -49,14 +49,14 @@ export const note_olevel_physics_4_4_8 = {
   <text x="195" y="32" fill="#6b7280" font-size="9">RELAY</text>
 
   <!-- Coil on soft iron core -->
-  <rect x="155" y="90" width="50" height="60" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
+  <rect x="155" y="90" width="50" height="60" rx="4" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
   <text x="162" y="118" fill="#4338ca" font-weight="bold">Coil</text>
   <text x="160" y="130" fill="#4338ca">(iron core)</text>
   <!-- Coil turns -->
-  <line x1="156" y1="103" x2="204" y2="103" stroke="#6366f1" stroke-width="1.5"/>
-  <line x1="156" y1="113" x2="204" y2="113" stroke="#6366f1" stroke-width="1.5"/>
-  <line x1="156" y1="123" x2="204" y2="123" stroke="#6366f1" stroke-width="1.5"/>
-  <line x1="156" y1="133" x2="204" y2="133" stroke="#6366f1" stroke-width="1.5"/>
+  <line x1="156" y1="103" x2="204" y2="103" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="156" y1="113" x2="204" y2="113" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="156" y1="123" x2="204" y2="123" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="156" y1="133" x2="204" y2="133" stroke="#3b82f6" stroke-width="1.5"/>
 
   <!-- Armature (horizontal bar, pivots left) -->
   <rect x="210" y="80" width="80" height="14" rx="3" fill="#1e293b" stroke="#374151" stroke-width="2"/>
@@ -78,13 +78,13 @@ export const note_olevel_physics_4_4_8 = {
   <text x="260" y="94" fill="#10b981"> attracted)</text>
 
   <!-- Control circuit (left) -->
-  <line x1="155" y1="100" x2="80" y2="100" stroke="#6366f1" stroke-width="2"/>
-  <line x1="155" y1="148" x2="80" y2="148" stroke="#6366f1" stroke-width="2"/>
-  <line x1="80" y1="100" x2="80" y2="148" stroke="#6366f1" stroke-width="2"/>
+  <line x1="155" y1="100" x2="80" y2="100" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="155" y1="148" x2="80" y2="148" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="80" y1="100" x2="80" y2="148" stroke="#3b82f6" stroke-width="2"/>
   <rect x="50" y="115" width="30" height="20" rx="3" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
   <text x="57" y="128" fill="#92400e">Switch</text>
-  <text x="55" y="165" fill="#6366f1">Control circuit</text>
-  <text x="58" y="177" fill="#6366f1">(low current)</text>
+  <text x="55" y="165" fill="#3b82f6">Control circuit</text>
+  <text x="58" y="177" fill="#3b82f6">(low current)</text>
 
   <!-- Switched circuit (top, with load) -->
   <line x1="255" y1="57" x2="255" y2="20" stroke="#ef4444" stroke-width="2"/>

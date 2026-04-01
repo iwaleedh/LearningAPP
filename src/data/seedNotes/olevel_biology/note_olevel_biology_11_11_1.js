@@ -70,8 +70,8 @@ export const note_olevel_biology_11_11_1 = {
   <text x="148" y="356" font-size="9" fill="#dc2626">Alveoli</text>
   <line x1="203" y1="355" x2="175" y2="355" stroke="#64748b" stroke-width="1"/>
   <!-- Diaphragm -->
-  <path d="M140 460 Q240 432 310 445 Q380 432 480 460" stroke="#7c3aed" stroke-width="3" fill="none"/>
-  <text x="310" y="480" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="bold">Diaphragm</text>
+  <path d="M140 460 Q240 432 310 445 Q380 432 480 460" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  <text x="310" y="480" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">Diaphragm</text>
   <!-- Rib cage outline -->
   <path d="M150 210 Q110 280 120 380 Q130 420 160 440" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
   <path d="M470 210 Q510 280 500 380 Q490 420 460 440" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>

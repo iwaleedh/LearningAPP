@@ -165,6 +165,25 @@ export const deleteUser = mutation({
     }
     const user = await getUserRecordById(ctx, userId);
     if (!user) throw new Error("User not found.");
+
+    const paymentRequests = await ctx.db
+      .query("paymentRequests")
+      .withIndex("by_userId", (q) => q.eq("userId", userId))
+      .collect();
+
+    for (const request of paymentRequests) {
+      try {
+        await ctx.storage.delete(request.storageId);
+      } catch (error) {
+        console.warn("Failed to delete payment slip from storage", {
+          paymentRequestId: request._id,
+          storageId: request.storageId,
+          error,
+        });
+      }
+      await ctx.db.delete(request._id);
+    }
+
     await ctx.db.delete(user._id);
   },
 });

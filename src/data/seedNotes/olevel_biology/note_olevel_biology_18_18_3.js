@@ -114,13 +114,13 @@ export const note_olevel_biology_18_18_3 = {
   <text x="75" y="170" text-anchor="middle" font-size="9" fill="#4b5563">Select best &#x2714;</text>
 
   <!-- Arrow 1 -->
-  <line x1="145" y1="100" x2="165" y2="100" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="145" y1="100" x2="165" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#6366f1"/>
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
     </marker>
   </defs>
-  <text x="155" y="94" text-anchor="middle" font-size="8" fill="#6366f1">Breed</text>
+  <text x="155" y="94" text-anchor="middle" font-size="8" fill="#3b82f6">Breed</text>
 
   <!-- Generation 2 -->
   <rect x="170" y="20" width="130" height="160" rx="8" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
@@ -136,8 +136,8 @@ export const note_olevel_biology_18_18_3 = {
   <text x="235" y="170" text-anchor="middle" font-size="9" fill="#4b5563">Select best &#x2714;</text>
 
   <!-- Arrow 2 -->
-  <line x1="305" y1="100" x2="325" y2="100" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="315" y="94" text-anchor="middle" font-size="8" fill="#6366f1">Breed</text>
+  <line x1="305" y1="100" x2="325" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="315" y="94" text-anchor="middle" font-size="8" fill="#3b82f6">Breed</text>
 
   <!-- Generation 3 -->
   <rect x="330" y="20" width="130" height="160" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>

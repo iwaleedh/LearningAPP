@@ -35,7 +35,7 @@ export const note_olevel_physics_1_4_1 = {
   <!-- Case 1: At rest -->
   <rect x="20" y="35" width="120" height="80" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" rx="6"/>
   <text x="80" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">At Rest</text>
-  <rect x="55" y="60" width="50" height="30" fill="#6366f1" rx="4"/>
+  <rect x="55" y="60" width="50" height="30" fill="#3b82f6" rx="4"/>
   <line x1="80" y1="60" x2="80" y2="40" stroke="#ef4444" stroke-width="2"/>
   <polygon points="80,40 77,47 83,47" fill="#ef4444"/>
   <text x="95" y="45" font-size="9" fill="#ef4444">N</text>
@@ -46,7 +46,7 @@ export const note_olevel_physics_1_4_1 = {
   <!-- Case 2: Constant velocity -->
   <rect x="160" y="35" width="120" height="80" fill="#1e293b" stroke="#16a34a" stroke-width="1.5" rx="6"/>
   <text x="220" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Constant Velocity</text>
-  <rect x="195" y="60" width="50" height="28" fill="#6366f1" rx="4"/>
+  <rect x="195" y="60" width="50" height="28" fill="#3b82f6" rx="4"/>
   <line x1="245" y1="74" x2="260" y2="74" stroke="#2563eb" stroke-width="2"/>
   <polygon points="260,74 253,70 253,78" fill="#2563eb"/>
   <text x="268" y="78" font-size="9" fill="#2563eb">F</text>
@@ -57,7 +57,7 @@ export const note_olevel_physics_1_4_1 = {
   <!-- Case 3: Unbalanced (accelerates) -->
   <rect x="300" y="35" width="120" height="80" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" rx="6"/>
   <text x="360" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">Net Force</text>
-  <rect x="330" y="60" width="50" height="28" fill="#6366f1" rx="4"/>
+  <rect x="330" y="60" width="50" height="28" fill="#3b82f6" rx="4"/>
   <line x1="380" y1="74" x2="405" y2="74" stroke="#2563eb" stroke-width="3"/>
   <polygon points="405,74 396,69 396,79" fill="#2563eb"/>
   <text x="408" y="78" font-size="9" fill="#2563eb">F</text>

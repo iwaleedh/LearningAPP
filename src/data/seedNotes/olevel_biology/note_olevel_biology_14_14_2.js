@@ -39,9 +39,9 @@ export const note_olevel_biology_14_14_2 = {
   <line x1="72" y1="148" x2="82" y2="162" stroke="#0369a1" stroke-width="1"/>
 
   <!-- Iris (coloured ring) -->
-  <path d="M102 155 Q118 165 118 175 Q118 185 102 200" fill="none" stroke="#7c3aed" stroke-width="5"/>
-  <text x="18" y="215" fill="#7c3aed" font-weight="bold" font-size="11">Iris</text>
-  <line x1="54" y1="211" x2="102" y2="192" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M102 155 Q118 165 118 175 Q118 185 102 200" fill="none" stroke="#1d4ed8" stroke-width="5"/>
+  <text x="18" y="215" fill="#1d4ed8" font-weight="bold" font-size="11">Iris</text>
+  <line x1="54" y1="211" x2="102" y2="192" stroke="#1d4ed8" stroke-width="1"/>
 
   <!-- Pupil (gap in iris) -->
   <text x="18" y="232" fill="#1e293b" font-size="11">Pupil</text>
@@ -75,10 +75,10 @@ export const note_olevel_biology_14_14_2 = {
   <line x1="343" y1="223" x2="338" y2="222" stroke="#dc2626" stroke-width="1"/>
 
   <!-- Optic nerve -->
-  <rect x="340" y="208" width="80" height="24" rx="4" fill="#7c3aed" stroke="#6d28d9" stroke-width="2"/>
-  <line x1="338" y1="220" x2="340" y2="220" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="340" y="208" width="80" height="24" rx="4" fill="#1d4ed8" stroke="#6d28d9" stroke-width="2"/>
+  <line x1="338" y1="220" x2="340" y2="220" stroke="#1d4ed8" stroke-width="2"/>
   <text x="380" y="224" text-anchor="middle" fill="#1e293b" font-size="10" font-weight="bold">Optic nerve</text>
-  <text x="422" y="205" fill="#7c3aed" font-size="10">(to brain)</text>
+  <text x="422" y="205" fill="#1d4ed8" font-size="10">(to brain)</text>
 
   <!-- Retina label -->
   <text x="380" y="130" fill="#1d4ed8" font-weight="bold" font-size="11">Retina</text>

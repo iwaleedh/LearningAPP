@@ -48,8 +48,8 @@ export const note_olevel_maths_core_4_2_1 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 210" width="560" height="210">
   <style>
     text { font-family: sans-serif; font-size: 10px; fill: #374151; }
-    .name { font-weight: 700; fill: #6366f1; font-size: 11px; }
-    .sq { fill: #e0e7ff; stroke: #6366f1; stroke-width: 1.5; }
+    .name { font-weight: 700; fill: #3b82f6; font-size: 11px; }
+    .sq { fill: #e0e7ff; stroke: #3b82f6; stroke-width: 1.5; }
     .rect { fill: #dcfce7; stroke: #10b981; stroke-width: 1.5; }
     .para { fill: #fce7f3; stroke: #9333ea; stroke-width: 1.5; }
     .trap { fill: #fef9c3; stroke: #ca8a04; stroke-width: 1.5; }
@@ -59,7 +59,7 @@ export const note_olevel_maths_core_4_2_1 = {
   <!-- Square -->
   <g transform="translate(15,30)">
     <rect x="0" y="0" width="60" height="60" class="sq"/>
-    <rect x="4" y="4" width="8" height="8" fill="none" stroke="#6366f1" stroke-width="1"/>
+    <rect x="4" y="4" width="8" height="8" fill="none" stroke="#3b82f6" stroke-width="1"/>
     <text x="8" y="82" class="name">Square</text>
   </g>
   <!-- Rectangle -->
@@ -90,12 +90,12 @@ export const note_olevel_maths_core_4_2_1 = {
   </g>
   <!-- Angle labels showing 360° -->
   <g transform="translate(310,130)">
-    <polygon points="30,0 120,10 130,70 0,60" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
-    <text x="3" y="-5" fill="#6366f1" font-size="10" font-weight="700">Any quadrilateral:</text>
-    <text x="-2" y="18" fill="#6366f1" font-size="10">a</text>
-    <text x="115" y="18" fill="#6366f1" font-size="10">b</text>
-    <text x="118" y="75" fill="#6366f1" font-size="10">c</text>
-    <text x="-4" y="72" fill="#6366f1" font-size="10">d</text>
+    <polygon points="30,0 120,10 130,70 0,60" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="3" y="-5" fill="#3b82f6" font-size="10" font-weight="700">Any quadrilateral:</text>
+    <text x="-2" y="18" fill="#3b82f6" font-size="10">a</text>
+    <text x="115" y="18" fill="#3b82f6" font-size="10">b</text>
+    <text x="118" y="75" fill="#3b82f6" font-size="10">c</text>
+    <text x="-4" y="72" fill="#3b82f6" font-size="10">d</text>
     <text x="30" y="90" fill="#374151" font-size="10">a+b+c+d = 360°</text>
   </g>
 </svg>`,

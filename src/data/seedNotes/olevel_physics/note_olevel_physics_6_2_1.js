@@ -15,7 +15,7 @@ export const note_olevel_physics_6_2_1 = {
   <!-- Spectrum bar lab -->
   <defs>
     <linearGradient id="spec-lab" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="0%" stop-color="#1d4ed8"/>
       <stop offset="30%" stop-color="#2563eb"/>
       <stop offset="50%" stop-color="#16a34a"/>
       <stop offset="70%" stop-color="#fbbf24"/>
@@ -23,7 +23,7 @@ export const note_olevel_physics_6_2_1 = {
     </linearGradient>
     <linearGradient id="spec-red" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#1e40af"/>
-      <stop offset="20%" stop-color="#7c3aed"/>
+      <stop offset="20%" stop-color="#1d4ed8"/>
       <stop offset="45%" stop-color="#2563eb"/>
       <stop offset="65%" stop-color="#16a34a"/>
       <stop offset="85%" stop-color="#fbbf24"/>
@@ -36,7 +36,7 @@ export const note_olevel_physics_6_2_1 = {
   <line x1="275" y1="45" x2="275" y2="75" stroke="black" stroke-width="2.5"/>
   <line x1="330" y1="45" x2="330" y2="75" stroke="black" stroke-width="2.5"/>
   <!-- Label: violet to red -->
-  <text x="163" y="87" font-size="9" fill="#7c3aed">violet</text>
+  <text x="163" y="87" font-size="9" fill="#1d4ed8">violet</text>
   <text x="415" y="87" font-size="9" fill="#dc2626">red</text>
   <!-- Galaxy spectrum (redshifted) -->
   <text x="30" y="125" font-size="10" fill="#1e293b">Galaxy spectrum</text>
@@ -46,7 +46,7 @@ export const note_olevel_physics_6_2_1 = {
   <line x1="255" y1="115" x2="255" y2="145" stroke="black" stroke-width="2.5"/>
   <line x1="308" y1="115" x2="308" y2="145" stroke="black" stroke-width="2.5"/>
   <line x1="365" y1="115" x2="365" y2="145" stroke="black" stroke-width="2.5"/>
-  <text x="163" y="157" font-size="9" fill="#7c3aed">violet</text>
+  <text x="163" y="157" font-size="9" fill="#1d4ed8">violet</text>
   <text x="415" y="157" font-size="9" fill="#dc2626">red</text>
   <!-- Arrows showing shift -->
   <path d="M225,100 L255,110" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arr2)"/>

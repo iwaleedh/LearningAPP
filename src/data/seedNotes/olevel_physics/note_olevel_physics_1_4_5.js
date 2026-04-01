@@ -38,7 +38,7 @@ export const note_olevel_physics_1_4_5 = {
   <circle cx="180" cy="115" r="5" fill="#374151"/>
   <text x="190" y="112" font-size="11" fill="#374151">Centre</text>
   <!-- Object on circle (top) -->
-  <circle cx="180" cy="40" r="10" fill="#6366f1"/>
+  <circle cx="180" cy="40" r="10" fill="#3b82f6"/>
   <!-- Centripetal force arrow (towards centre) -->
   <line x1="180" y1="50" x2="180" y2="102" stroke="#ef4444" stroke-width="2.5"/>
   <polygon points="180,102 176,93 184,93" fill="#ef4444"/>
@@ -48,7 +48,7 @@ export const note_olevel_physics_1_4_5 = {
   <polygon points="220,40 212,36 212,44" fill="#2563eb"/>
   <text x="225" y="44" font-size="11" fill="#2563eb">v (velocity)</text>
   <!-- Arrow showing tangential velocity at another point -->
-  <circle cx="255" cy="115" r="10" fill="#6366f1"/>
+  <circle cx="255" cy="115" r="10" fill="#3b82f6"/>
   <line x1="255" y1="115" x2="255" y2="150" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="255,150 251,141 259,141" fill="#2563eb"/>
   <text x="262" y="140" font-size="11" fill="#2563eb">v</text>

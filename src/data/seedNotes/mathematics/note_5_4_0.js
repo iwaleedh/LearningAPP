@@ -26,7 +26,7 @@ export const note_mathematics_5_4_0 = {
   <!-- Surface -->
   <rect x="0" y="200" width="400" height="20" fill="#1e293b" />
   <!-- Particle/Block -->
-  <rect x="150" y="100" width="100" height="100" fill="#6366f1" rx="4" />
+  <rect x="150" y="100" width="100" height="100" fill="#3b82f6" rx="4" />
   <!-- Normal Reaction -->
   <path d="M 200 100 L 200 20" stroke="#ef4444" stroke-width="4" marker-end="url(#arrow-red)" />
   <text x="210" y="50" font-family="sans-serif" font-size="20" fill="#ef4444">R</text>

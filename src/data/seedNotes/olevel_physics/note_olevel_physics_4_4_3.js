@@ -78,12 +78,12 @@ export const note_olevel_physics_4_4_3 = {
         caption: 'Magnet moving into coil: galvanometer deflects, indicating induced current',
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Coil -->
-  <rect x="130" y="60" width="100" height="80" rx="8" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
-  <ellipse cx="130" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
-  <ellipse cx="145" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
-  <ellipse cx="215" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
-  <ellipse cx="230" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
-  <text x="155" y="108" fill="#6366f1" font-weight="bold">Coil</text>
+  <rect x="130" y="60" width="100" height="80" rx="8" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
+  <ellipse cx="130" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <ellipse cx="145" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <ellipse cx="215" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <ellipse cx="230" cy="100" rx="10" ry="40" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="155" y="108" fill="#3b82f6" font-weight="bold">Coil</text>
   <!-- Magnet (moving towards coil) -->
   <rect x="15" y="80" width="80" height="40" rx="5" fill="#0a3020" stroke="#16a34a" stroke-width="2"/>
   <line x1="55" y1="80" x2="55" y2="120" stroke="#9ca3af" stroke-width="1"/>

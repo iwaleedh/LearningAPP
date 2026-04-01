@@ -181,8 +181,8 @@ function AppContent() {
           <CommandSearch onClose={() => setSearchOpen(false)} />
         </Suspense>
       )}
-      </ToastProvider>
-    </div>
+      </div>
+    </ToastProvider>
   );
 }
 

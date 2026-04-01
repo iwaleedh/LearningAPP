@@ -37,13 +37,13 @@ export const note_olevel_maths_core_4_4_1 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 190" width="540" height="190">
   <style>
     text { font-family: sans-serif; font-size: 10px; fill: #374151; }
-    .name { font-weight: 700; fill: #6366f1; font-size: 11px; }
+    .name { font-weight: 700; fill: #3b82f6; font-size: 11px; }
     .order { fill: #ef4444; font-weight: 700; font-size: 11px; }
     .centre { fill: #ef4444; }
   </style>
   <!-- Equilateral triangle — order 3 -->
   <g transform="translate(20, 20)">
-    <polygon points="55,5 100,85 10,85" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="55,5 100,85 10,85" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
     <circle cx="55" cy="58" r="4" class="centre"/>
     <text x="18" y="108" class="name">Equilateral △</text>
     <text x="18" y="120" class="order">Order 3</text>

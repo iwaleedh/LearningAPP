@@ -38,7 +38,7 @@ const subjects = [
         isOLevel: false,
     },
     {
-        id: 'cae', name: 'CAE (C1)', icon: FileText, color: '#6366f1',
+        id: 'cae', name: 'CAE (C1)', icon: FileText, color: '#3b82f6',
         isOLevel: false,
     },
     {
@@ -50,7 +50,7 @@ const subjects = [
         isOLevel: true,
     },
     {
-        id: 'olevel-physics', name: 'O Level Physics', icon: Atom, color: '#7c3aed',
+        id: 'olevel-physics', name: 'O Level Physics', icon: Atom, color: '#1d4ed8',
         isOLevel: true,
     },
     {

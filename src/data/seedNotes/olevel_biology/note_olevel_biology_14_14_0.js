@@ -60,9 +60,9 @@ export const note_olevel_biology_14_14_0 = {
   <!-- Grey matter (H-shape simplified) -->
   <ellipse cx="310" cy="150" rx="28" ry="42" fill="#532407" stroke="#c0902a" stroke-width="1.5"/>
   <!-- Relay neurone in grey matter -->
-  <circle cx="310" cy="150" r="10" fill="#7c3aed" opacity="0.8"/>
-  <text x="310" y="207" text-anchor="middle" fill="#7c3aed" font-size="10">Relay neurone</text>
-  <line x1="310" y1="197" x2="310" y2="192" stroke="#7c3aed" stroke-width="1"/>
+  <circle cx="310" cy="150" r="10" fill="#1d4ed8" opacity="0.8"/>
+  <text x="310" y="207" text-anchor="middle" fill="#1d4ed8" font-size="10">Relay neurone</text>
+  <line x1="310" y1="197" x2="310" y2="192" stroke="#1d4ed8" stroke-width="1"/>
 
   <!-- RECEPTOR (left, skin) -->
   <rect x="20" y="130" width="90" height="40" rx="6" fill="#3d1212" stroke="#dc2626" stroke-width="2"/>

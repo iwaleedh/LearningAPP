@@ -37,7 +37,7 @@ export const note_physics_2_11_0 = {
   <text x="65" y="36" fill="#1e293b" font-size="12" text-anchor="middle">crest</text>
   <text x="245" y="36" fill="#1e293b" font-size="12" text-anchor="middle">crest</text>
   <text x="155" y="195" fill="#1e293b" font-size="12" text-anchor="middle">trough</text>
-  <line x1="70" y1="28" x2="240" y2="28" stroke="#a78bfa" stroke-width="1.5"/>
+  <line x1="70" y1="28" x2="240" y2="28" stroke="#93c5fd" stroke-width="1.5"/>
   <polygon points="65,28 74,24 74,32" fill="#2d1b69"/>
   <polygon points="245,28 236,24 236,32" fill="#2d1b69"/>
   <text x="155" y="20" fill="#2d1b69" font-size="13" text-anchor="middle" font-style="italic">λ</text>
@@ -46,7 +46,7 @@ export const note_physics_2_11_0 = {
   <polygon points="398,47 394,56 402,56" fill="#78350f"/>
   <polygon points="398,113 394,104 402,104" fill="#78350f"/>
   <text x="410" y="83" fill="#78350f" font-size="13" font-style="italic" font-weight="bold">A</text>
-  <rect x="430" y="65" width="82" height="75" rx="5" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5"/>
+  <rect x="430" y="65" width="82" height="75" rx="5" fill="#0f172a" stroke="#2563eb" stroke-width="1.5"/>
   <text x="471" y="96" fill="#0f172a" font-size="14" text-anchor="middle" font-weight="bold">v = fλ</text>
   <line x1="440" y1="103" x2="502" y2="103" stroke="#334155" stroke-width="0.8"/>
   <text x="471" y="123" fill="#0f172a" font-size="14" text-anchor="middle">T = 1/f</text>

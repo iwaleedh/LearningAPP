@@ -47,7 +47,7 @@ export const note_olevel_physics_6_1_4 = {
   <!-- Arrow to planetary nebula -->
   <line x1="322" y1="160" x2="348" y2="160" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr1)"/>
   <!-- Planetary nebula -->
-  <ellipse cx="370" cy="160" rx="18" ry="14" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <ellipse cx="370" cy="160" rx="18" ry="14" fill="none" stroke="#93c5fd" stroke-width="2"/>
   <text x="370" y="157" text-anchor="middle" font-size="7" fill="#2d1b69">Plan.</text>
   <text x="370" y="168" text-anchor="middle" font-size="7" fill="#2d1b69">nebula</text>
   <!-- White dwarf -->

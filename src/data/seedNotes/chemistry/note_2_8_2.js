@@ -357,7 +357,7 @@ export const note_chemistry_2_8_2 = {
   <text x="127" y="82" text-anchor="middle" fill="#78350f" font-size="10">(electrons on RIGHT)</text>
 
   <!-- Reduction half -->
-  <rect x="280" y="34" width="225" height="52" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="280" y="34" width="225" height="52" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="392" y="52" text-anchor="middle" font-weight="700" fill="#4c1d95" font-size="12">REDUCTION half-equation</text>
   <text x="392" y="70" text-anchor="middle" fill="#4c1d95" font-size="11">C + me⁻ → D</text>
   <text x="392" y="82" text-anchor="middle" fill="#5b21b6" font-size="10">(electrons on LEFT)</text>

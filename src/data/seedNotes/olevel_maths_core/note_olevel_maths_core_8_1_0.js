@@ -27,13 +27,13 @@ export const note_olevel_maths_core_8_1_0 = {
         caption: 'The probability scale from 0 (impossible) to 1 (certain)',
         svg: `<svg viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif" font-size="13">
   <!-- Main line -->
-  <line x1="30" y1="38" x2="390" y2="38" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+  <line x1="30" y1="38" x2="390" y2="38" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
   <!-- Ticks -->
-  <line x1="30" y1="32" x2="30" y2="44" stroke="#6366f1" stroke-width="2"/>
-  <line x1="210" y1="32" x2="210" y2="44" stroke="#6366f1" stroke-width="2"/>
-  <line x1="390" y1="32" x2="390" y2="44" stroke="#6366f1" stroke-width="2"/>
+  <line x1="30" y1="32" x2="30" y2="44" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="210" y1="32" x2="210" y2="44" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="390" y1="32" x2="390" y2="44" stroke="#3b82f6" stroke-width="2"/>
   <!-- Arrow head -->
-  <polygon points="390,38 378,32 378,44" fill="#6366f1"/>
+  <polygon points="390,38 378,32 378,44" fill="#3b82f6"/>
   <!-- Labels -->
   <text x="30" y="22" text-anchor="middle" fill="#ef4444" font-weight="bold">0</text>
   <text x="210" y="22" text-anchor="middle" fill="#f59e0b" font-weight="bold">0.5</text>

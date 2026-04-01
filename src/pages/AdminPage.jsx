@@ -365,18 +365,27 @@ function PaymentRow({ req }) {
   const [busy, setBusy] = useState(false);
   const [showReject, setShowReject] = useState(false);
   const [notes, setNotes] = useState('');
+  const [error, setError] = useState('');
 
   const handleApprove = async () => {
     setBusy(true);
+    setError('');
     try { await review({ requestId: req._id, decision: 'approved' }); }
-    catch (e) { console.error(e); }
+    catch (e) {
+      console.error(e);
+      setError(e?.message || 'Unable to approve this payment request.');
+    }
     finally { setBusy(false); }
   };
 
   const handleReject = async () => {
     setBusy(true);
+    setError('');
     try { await review({ requestId: req._id, decision: 'rejected', adminNotes: notes || undefined }); }
-    catch (e) { console.error(e); }
+    catch (e) {
+      console.error(e);
+      setError(e?.message || 'Unable to reject this payment request.');
+    }
     finally { setBusy(false); setShowReject(false); setNotes(''); }
   };
 
@@ -424,6 +433,7 @@ function PaymentRow({ req }) {
                 </button>
               </div>
             )}
+            {error && <div className="admin-inline-error">{error}</div>}
           </div>
         ) : (
           <div>
@@ -447,9 +457,8 @@ const PAYMENT_FILTERS = [
 function PaymentsTab() {
   const [filter, setFilter] = useState('all');
 
-  // Pass status to the indexed query — undefined means fetch all
-  const statusArg = filter === 'all' ? undefined : filter;
-  const displayed = useQuery(api.paymentRequests.listPaymentRequests, { status: statusArg }) ?? [];
+  const queryArgs = filter === 'all' ? {} : { status: filter };
+  const displayed = useQuery(api.paymentRequests.listPaymentRequests, queryArgs) ?? [];
   const counts    = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
 
   return (

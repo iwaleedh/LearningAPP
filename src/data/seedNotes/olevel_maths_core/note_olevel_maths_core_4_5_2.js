@@ -27,22 +27,22 @@ export const note_olevel_maths_core_4_5_2 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="460" height="260">
   <style>
     text { font-family: sans-serif; font-size: 12px; fill: #374151; }
-    .lbl { font-weight: 700; fill: #6366f1; font-size: 13px; }
+    .lbl { font-weight: 700; fill: #3b82f6; font-size: 13px; }
     .angle { font-weight: 700; fill: #ef4444; font-size: 13px; }
     .tang { stroke: #10b981; stroke-width: 2.5; }
-    .rad  { stroke: #6366f1; stroke-width: 2; }
+    .rad  { stroke: #3b82f6; stroke-width: 2; }
   </style>
   <!-- Circle -->
-  <circle cx="200" cy="135" r="100" fill="#2d2f72" fill-opacity="0.3" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="200" cy="135" r="100" fill="#2d2f72" fill-opacity="0.3" stroke="#3b82f6" stroke-width="2"/>
   <!-- Centre O -->
-  <circle cx="200" cy="135" r="4" fill="#6366f1"/>
+  <circle cx="200" cy="135" r="4" fill="#3b82f6"/>
   <text x="206" y="130" class="lbl">O</text>
   <!-- Point of tangency T -->
   <circle cx="300" cy="135" r="5" fill="#10b981"/>
   <text x="307" y="130" class="lbl" fill="#10b981">T</text>
   <!-- Radius OT -->
   <line x1="200" y1="135" x2="300" y2="135" class="rad"/>
-  <text x="235" y="125" fill="#6366f1" font-size="11">radius r</text>
+  <text x="235" y="125" fill="#3b82f6" font-size="11">radius r</text>
   <!-- Tangent line (vertical, since radius is horizontal) -->
   <line x1="300" y1="30" x2="300" y2="240" class="tang"/>
   <!-- Right angle box at T -->

@@ -90,14 +90,14 @@ export const note_olevel_maths_core_3_3_3 = {
        x=-1→20,y=5→(20,120-150=-30 clipped); x=0→50,y=1→(50,90); x=1→80,y=-1→(80,150);
        x=1.5→95, y=-1.25→(95,157.5); x=2→110,y=-1→(110,150); x=3→140,y=1→(140,90);
        x=4→170,y=5→(170,120-150=-30 clipped) -->
-  <path d="M20,30 C30,40 45,80 50,90 C60,110 70,145 80,150 C95,158 110,150 125,140 C130,134 140,90 155,50 C165,25 175,12 185,8" stroke="#6366f1" stroke-width="2.5" fill="none"/>
+  <path d="M20,30 C30,40 45,80 50,90 C60,110 70,145 80,150 C95,158 110,150 125,140 C130,134 140,90 155,50 C165,25 175,12 185,8" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
   <!-- x-intercept markers -->
   <circle cx="61" cy="120" r="5" fill="#ef4444"/>
   <text x="47" y="116" fill="#ef4444" font-size="9" font-weight="bold">0.38</text>
   <circle cx="129" cy="120" r="5" fill="#ef4444"/>
   <text x="121" y="114" fill="#ef4444" font-size="9" font-weight="bold">2.62</text>
   <!-- Equation label -->
-  <text x="165" y="35" fill="#6366f1" font-weight="bold" font-size="10">y=x²−3x+1</text>
+  <text x="165" y="35" fill="#3b82f6" font-weight="bold" font-size="10">y=x²−3x+1</text>
 </svg>`
       }
     },

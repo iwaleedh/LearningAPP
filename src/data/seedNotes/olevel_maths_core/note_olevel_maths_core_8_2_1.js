@@ -48,10 +48,10 @@ export const note_olevel_maths_core_8_2_1 = {
         caption: 'Tree diagram: choosing 2 balls from a bag of 3 red and 2 blue (without replacement)',
         svg: `<svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif" font-size="13">
   <!-- Title -->
-  <text x="240" y="18" text-anchor="middle" fill="#6366f1" font-weight="bold" font-size="13">Bag: 3 Red, 2 Blue — Without Replacement</text>
+  <text x="240" y="18" text-anchor="middle" fill="#3b82f6" font-weight="bold" font-size="13">Bag: 3 Red, 2 Blue — Without Replacement</text>
 
   <!-- Starting node -->
-  <circle cx="60" cy="160" r="8" fill="#6366f1"/>
+  <circle cx="60" cy="160" r="8" fill="#3b82f6"/>
 
   <!-- 1st pick: Red branch -->
   <line x1="68" y1="155" x2="172" y2="88" stroke="#ef4444" stroke-width="2"/>
@@ -71,28 +71,28 @@ export const note_olevel_maths_core_8_2_1 = {
   <circle cx="300" cy="38" r="8" fill="#ef4444"/>
   <text x="315" y="43" fill="#374151">Red, Red</text>
   <!-- Probability -->
-  <text x="395" y="43" fill="#374151" font-size="12">= 3/5 × 2/4 = <tspan font-weight="bold" fill="#6366f1">6/20</tspan></text>
+  <text x="395" y="43" fill="#374151" font-size="12">= 3/5 × 2/4 = <tspan font-weight="bold" fill="#3b82f6">6/20</tspan></text>
 
   <!-- 2nd pick given 1st=Red: Blue (2/4) -->
   <line x1="188" y1="88" x2="292" y2="126" stroke="#3b82f6" stroke-width="2"/>
   <text x="225" y="100" fill="#3b82f6" font-weight="bold">2/4</text>
   <circle cx="300" cy="130" r="8" fill="#3b82f6"/>
   <text x="315" y="135" fill="#374151">Red, Blue</text>
-  <text x="395" y="135" fill="#374151" font-size="12">= 3/5 × 2/4 = <tspan font-weight="bold" fill="#6366f1">6/20</tspan></text>
+  <text x="395" y="135" fill="#374151" font-size="12">= 3/5 × 2/4 = <tspan font-weight="bold" fill="#3b82f6">6/20</tspan></text>
 
   <!-- 2nd pick given 1st=Blue: Red (3/4) -->
   <line x1="188" y1="232" x2="292" y2="194" stroke="#ef4444" stroke-width="2"/>
   <text x="225" y="204" fill="#ef4444" font-weight="bold">3/4</text>
   <circle cx="300" cy="190" r="8" fill="#ef4444"/>
   <text x="315" y="195" fill="#374151">Blue, Red</text>
-  <text x="395" y="195" fill="#374151" font-size="12">= 2/5 × 3/4 = <tspan font-weight="bold" fill="#6366f1">6/20</tspan></text>
+  <text x="395" y="195" fill="#374151" font-size="12">= 2/5 × 3/4 = <tspan font-weight="bold" fill="#3b82f6">6/20</tspan></text>
 
   <!-- 2nd pick given 1st=Blue: Blue (1/4) -->
   <line x1="188" y1="240" x2="292" y2="278" stroke="#3b82f6" stroke-width="2"/>
   <text x="225" y="274" fill="#3b82f6" font-weight="bold">1/4</text>
   <circle cx="300" cy="282" r="8" fill="#3b82f6"/>
   <text x="315" y="287" fill="#374151">Blue, Blue</text>
-  <text x="395" y="287" fill="#374151" font-size="12">= 2/5 × 1/4 = <tspan font-weight="bold" fill="#6366f1">2/20</tspan></text>
+  <text x="395" y="287" fill="#374151" font-size="12">= 2/5 × 1/4 = <tspan font-weight="bold" fill="#3b82f6">2/20</tspan></text>
 
   <!-- Stage labels -->
   <text x="60"  y="310" text-anchor="middle" fill="#9ca3af" font-size="11">Start</text>

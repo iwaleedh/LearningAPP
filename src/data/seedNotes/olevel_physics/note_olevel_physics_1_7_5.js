@@ -82,13 +82,13 @@ export const note_olevel_physics_1_7_5 = {
   <rect x="30" y="75" width="120" height="80" rx="6" fill="#1e293b" stroke="#e5e7eb"/>
   <text x="90" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Person A</text>
   <!-- Stick figure -->
-  <circle cx="90" cy="115" r="10" fill="#6366f1" stroke="#374151"/>
+  <circle cx="90" cy="115" r="10" fill="#3b82f6" stroke="#374151"/>
   <line x1="90" y1="125" x2="90" y2="150" stroke="#374151" stroke-width="2"/>
   <line x1="74" y1="135" x2="106" y2="135" stroke="#374151" stroke-width="2"/>
   <line x1="90" y1="150" x2="78" y2="164" stroke="#374151" stroke-width="2"/>
   <line x1="90" y1="150" x2="102" y2="164" stroke="#374151" stroke-width="2"/>
-  <text x="90" y="178" text-anchor="middle" font-size="9" fill="#6366f1">1800 J in 8 s</text>
-  <text x="90" y="190" text-anchor="middle" font-size="10" font-weight="bold" fill="#6366f1">P = 225 W</text>
+  <text x="90" y="178" text-anchor="middle" font-size="9" fill="#3b82f6">1800 J in 8 s</text>
+  <text x="90" y="190" text-anchor="middle" font-size="10" font-weight="bold" fill="#3b82f6">P = 225 W</text>
   <!-- Person B fast -->
   <rect x="210" y="75" width="120" height="80" rx="6" fill="#1e293b" stroke="#e5e7eb"/>
   <text x="270" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Person B</text>

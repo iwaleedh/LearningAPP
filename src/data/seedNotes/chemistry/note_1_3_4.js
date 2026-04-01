@@ -92,13 +92,13 @@ export const note_chemistry_1_3_4 = {
   <!-- Row 2: pyramidal, bent (2LP), linear with lone pairs -->
   <!-- PYRAMIDAL NH3 -->
   <rect x="5"  y="185" width="210" height="170" rx="8" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
-  <text x="110" y="202" text-anchor="middle" fill="#7c3aed" font-weight="bold" font-size="12">Trigonal Pyramidal</text>
+  <text x="110" y="202" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="12">Trigonal Pyramidal</text>
   <text x="110" y="216" text-anchor="middle" fill="#64748b" font-size="9">e.g. NH₃, PCl₃, NCl₃</text>
-  <circle cx="110" cy="270" r="14" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="110" cy="270" r="14" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="110" y="274" text-anchor="middle" fill="white" font-size="9">N</text>
   <!-- LP above -->
-  <ellipse cx="110" cy="248" rx="10" ry="6" fill="#fdf4ff" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="110" y="244" text-anchor="middle" fill="#7c3aed" font-size="8">LP</text>
+  <ellipse cx="110" cy="248" rx="10" ry="6" fill="#fdf4ff" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="110" y="244" text-anchor="middle" fill="#1d4ed8" font-size="8">LP</text>
   <line x1="75"  y1="296" x2="100" y2="281" stroke="#475569" stroke-width="2.5"/>
   <circle cx="69" cy="304" r="10" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
   <text x="69" y="308" text-anchor="middle" fill="white" font-size="9">H</text>

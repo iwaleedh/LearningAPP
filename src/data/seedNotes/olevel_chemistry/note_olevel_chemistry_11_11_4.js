@@ -105,7 +105,7 @@ export const note_olevel_chemistry_11_11_4 = {
   <circle cx="235" cy="120" r="3" fill="#10b981" />
   <circle cx="245" cy="90" r="3" fill="#06b6d4" />
   <circle cx="235" cy="60" r="3" fill="#3b82f6" />
-  <circle cx="245" cy="40" r="3" fill="#6366f1" />
+  <circle cx="245" cy="40" r="3" fill="#3b82f6" />
 
   <!-- Annotations Right Side -->
   <text x="400" y="40" font-family="var(--font-sans)" font-size="10" fill="#475569">Small molecules: low boiling point, very volatile,</text>

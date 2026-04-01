@@ -64,8 +64,8 @@ export const note_olevel_physics_4_3_4 = {
         caption: 'Analogue signal (smooth curve) vs digital signal (square wave pulses)',
         svg: `<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Analogue panel -->
-  <rect x="5" y="5" width="185" height="190" rx="8" fill="#1c3a64" stroke="#6366f1" stroke-width="1.5"/>
-  <text x="50" y="22" fill="#6366f1" font-weight="bold" font-size="12">Analogue</text>
+  <rect x="5" y="5" width="185" height="190" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="50" y="22" fill="#3b82f6" font-weight="bold" font-size="12">Analogue</text>
   <!-- Axes -->
   <line x1="20" y1="100" x2="180" y2="100" stroke="#9ca3af" stroke-width="1"/>
   <line x1="25" y1="30" x2="25" y2="170" stroke="#9ca3af" stroke-width="1"/>
@@ -73,7 +73,7 @@ export const note_olevel_physics_4_3_4 = {
   <text x="7" y="90" fill="#6b7280" font-size="9">V</text>
   <!-- Sine wave -->
   <path d="M25,100 C45,40 65,40 80,100 C95,160 115,160 130,100 C145,40 165,40 175,100" 
-        stroke="#6366f1" stroke-width="2.5" fill="none"/>
+        stroke="#3b82f6" stroke-width="2.5" fill="none"/>
   <!-- Noisy version -->
   <path d="M25,100 C42,38 60,44 78,102 C92,158 112,162 130,99 C147,37 161,42 175,101" 
         stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.7"/>

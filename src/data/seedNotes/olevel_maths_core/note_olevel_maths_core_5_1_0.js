@@ -74,10 +74,10 @@ export const note_olevel_maths_core_5_1_0 = {
       data: {
         svg: `<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="12">
   <!-- Rectangle -->
-  <rect x="20" y="30" width="120" height="70" fill="none" stroke="#6366f1" stroke-width="2"/>
+  <rect x="20" y="30" width="120" height="70" fill="none" stroke="#3b82f6" stroke-width="2"/>
   <text x="70" y="25" text-anchor="middle" fill="#374151">l = 12 cm</text>
   <text x="155" y="70" fill="#374151">w = 7 cm</text>
-  <text x="70" y="125" text-anchor="middle" fill="#6366f1" font-weight="bold">Rectangle</text>
+  <text x="70" y="125" text-anchor="middle" fill="#3b82f6" font-weight="bold">Rectangle</text>
 
   <!-- Triangle -->
   <polygon points="230,100 300,100 265,30" fill="none" stroke="#10b981" stroke-width="2"/>

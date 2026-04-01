@@ -72,12 +72,12 @@ export const note_olevel_physics_4_2_5 = {
   <!-- Current arrows on wire -->
   <defs>
     <marker id="carr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-      <path d="M0,0 L0,7 L7,3.5 z" fill="#6366f1"/>
+      <path d="M0,0 L0,7 L7,3.5 z" fill="#3b82f6"/>
     </marker>
   </defs>
-  <line x1="55" y1="75" x2="85" y2="75" stroke="#6366f1" stroke-width="1.5" marker-end="url(#carr)"/>
-  <line x1="155" y1="75" x2="195" y2="75" stroke="#6366f1" stroke-width="1.5" marker-end="url(#carr)"/>
-  <line x1="265" y1="75" x2="278" y2="75" stroke="#6366f1" stroke-width="1.5" marker-end="url(#carr)"/>
+  <line x1="55" y1="75" x2="85" y2="75" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#carr)"/>
+  <line x1="155" y1="75" x2="195" y2="75" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#carr)"/>
+  <line x1="265" y1="75" x2="278" y2="75" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#carr)"/>
 
   <!-- Labels below -->
   <text x="120" y="125" text-anchor="middle" fill="#374151" font-size="11">V₁</text>

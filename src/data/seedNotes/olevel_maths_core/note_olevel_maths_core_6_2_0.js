@@ -39,14 +39,14 @@ export const note_olevel_maths_core_6_2_0 = {
         caption: 'Labelled right-angled triangle showing θ, opposite, adjacent and hypotenuse',
         svg: `<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <!-- Triangle -->
-  <polygon points="30,180 30,40 240,180" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="30,180 30,40 240,180" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/>
   <!-- Right angle marker -->
-  <polyline points="30,160 50,160 50,180" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  <polyline points="30,160 50,160 50,180" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Angle theta arc -->
   <path d="M 240,180 A 30,30 0 0 0 220,152" fill="none" stroke="#e11d48" stroke-width="1.5"/>
   <text x="200" y="172" font-size="14" fill="#e11d48" font-weight="bold">θ</text>
   <!-- Hypotenuse label -->
-  <text x="118" y="95" font-size="13" fill="#6366f1" font-weight="bold" transform="rotate(-36,118,95)">Hypotenuse</text>
+  <text x="118" y="95" font-size="13" fill="#3b82f6" font-weight="bold" transform="rotate(-36,118,95)">Hypotenuse</text>
   <!-- Opposite label (vertical left side) -->
   <text x="2" y="115" font-size="13" fill="#059669" font-weight="bold">Opposite</text>
   <!-- Adjacent label (horizontal bottom) -->
@@ -184,9 +184,9 @@ export const note_olevel_maths_core_6_2_0 = {
   <!-- Ground line -->
   <line x1="20" y1="120" x2="300" y2="120" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
   <!-- Observer -->
-  <circle cx="40" cy="118" r="4" fill="#6366f1"/>
+  <circle cx="40" cy="118" r="4" fill="#3b82f6"/>
   <!-- Building / tall object -->
-  <rect x="250" y="30" width="20" height="90" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="250" y="30" width="20" height="90" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Line of sight (elevation) -->
   <line x1="40" y1="118" x2="250" y2="32" stroke="#e11d48" stroke-width="1.5"/>
   <!-- Elevation arc -->

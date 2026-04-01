@@ -27,17 +27,17 @@ export const note_olevel_physics_2_1_0 = {
         caption: 'Particle arrangement in solids, liquids and gases',
         svg: `<svg viewBox="0 0 540 200" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif" font-size="13">
   <!-- SOLID -->
-  <rect x="10" y="10" width="160" height="160" rx="8" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
-  <text x="90" y="185" text-anchor="middle" fill="#6366f1" font-weight="600">Solid</text>
-  <circle cx="45" cy="45" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="90" cy="45" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="135" cy="45" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="45" cy="90" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="90" cy="90" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="135" cy="90" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="45" cy="135" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="90" cy="135" r="12" fill="#6366f1" opacity="0.85"/>
-  <circle cx="135" cy="135" r="12" fill="#6366f1" opacity="0.85"/>
+  <rect x="10" y="10" width="160" height="160" rx="8" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/>
+  <text x="90" y="185" text-anchor="middle" fill="#3b82f6" font-weight="600">Solid</text>
+  <circle cx="45" cy="45" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="90" cy="45" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="135" cy="45" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="45" cy="90" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="90" cy="90" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="135" cy="90" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="45" cy="135" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="90" cy="135" r="12" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="135" cy="135" r="12" fill="#3b82f6" opacity="0.85"/>
   <!-- LIQUID -->
   <rect x="190" y="10" width="160" height="160" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
   <text x="270" y="185" text-anchor="middle" fill="#3b82f6" font-weight="600">Liquid</text>

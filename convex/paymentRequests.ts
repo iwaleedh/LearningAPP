@@ -6,6 +6,11 @@ import {
   getUserRecordById,
 } from "./authHelpers";
 
+const PLAN_AMOUNTS: Record<string, number> = {
+  monthly: 100,
+  annual: 1000,
+};
+
 /**
  * Generate a short-lived Convex storage upload URL.
  * Any authenticated user can request this.
@@ -34,8 +39,20 @@ export const submitPaymentRequest = mutation({
     const userId = await requireAuthenticatedUserId(ctx);
 
     const normalised = plan.trim().toLowerCase();
-    if (normalised !== "monthly" && normalised !== "annual") {
+    const expectedAmount = PLAN_AMOUNTS[normalised];
+    if (!expectedAmount) {
       throw new Error("Plan must be 'monthly' or 'annual'.");
+    }
+
+    if (amount !== expectedAmount) {
+      throw new Error("Submitted amount does not match the selected plan.");
+    }
+
+    const normalisedMimeType = mimeType.trim().toLowerCase();
+    const isAllowedMimeType = normalisedMimeType === "application/pdf"
+      || normalisedMimeType.startsWith("image/");
+    if (!isAllowedMimeType) {
+      throw new Error("Payment slip must be an image or PDF.");
     }
 
     // Prevent duplicate active submissions
@@ -52,10 +69,10 @@ export const submitPaymentRequest = mutation({
     await ctx.db.insert("paymentRequests", {
       userId,
       plan: normalised,
-      amount,
+      amount: expectedAmount,
       storageId,
       fileName,
-      mimeType,
+      mimeType: normalisedMimeType,
       status: "pending",
       submittedAt: Date.now(),
     });
@@ -194,6 +211,9 @@ export const reviewPaymentRequest = mutation({
 
     const req = await ctx.db.get(requestId);
     if (!req) throw new Error("Payment request not found.");
+    if (req.status !== "pending") {
+      throw new Error(`This payment request has already been ${req.status}. Refresh and try again.`);
+    }
 
     await ctx.db.patch(requestId, {
       status:     norm,

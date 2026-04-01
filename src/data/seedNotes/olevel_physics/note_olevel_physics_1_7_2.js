@@ -55,11 +55,11 @@ export const note_olevel_physics_1_7_2 = {
   <!-- Ground -->
   <line x1="0" y1="210" x2="380" y2="210" stroke="#6b7280" stroke-width="2" stroke-dasharray="6,4"/>
   <!-- Cart at top left -->
-  <rect x="20" y="42" width="28" height="16" rx="3" fill="#6366f1"/>
+  <rect x="20" y="42" width="28" height="16" rx="3" fill="#3b82f6"/>
   <circle cx="26" cy="59" r="4" fill="#374151"/>
   <circle cx="42" cy="59" r="4" fill="#374151"/>
-  <text x="34" y="34" text-anchor="middle" font-size="9" fill="#6366f1">h = 20 m</text>
-  <line x1="34" y1="57" x2="34" y2="207" stroke="#6366f1" stroke-dasharray="4,3" stroke-width="1.5"/>
+  <text x="34" y="34" text-anchor="middle" font-size="9" fill="#3b82f6">h = 20 m</text>
+  <line x1="34" y1="57" x2="34" y2="207" stroke="#3b82f6" stroke-dasharray="4,3" stroke-width="1.5"/>
   <text x="48" y="135" font-size="9" fill="#16a34a">GPE = mgh</text>
   <text x="48" y="145" font-size="9" fill="#2563eb">KE = 0</text>
   <!-- Cart at bottom -->

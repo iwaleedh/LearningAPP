@@ -50,7 +50,7 @@ export const note_olevel_physics_3_2_1 = {
         caption: 'Ray refracting twice through a glass block — note lateral displacement of the emergent ray',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" width="440" height="320">
   <defs>
-    <marker id="ah21" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah21" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag21" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
@@ -61,13 +61,13 @@ export const note_olevel_physics_3_2_1 = {
   <line x1="310" y1="40" x2="310" y2="280" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 3"/>
   <text x="154" y="38" fill="#64748b" font-size="10">N₁</text>
   <text x="314" y="38" fill="#64748b" font-size="10">N₂</text>
-  <line x1="60" y1="40" x2="150" y2="130" stroke="#6366f1" stroke-width="2.5" marker-end="url(#ah21)"/>
-  <text x="40" y="36" fill="#6366f1">Incident</text>
-  <line x1="150" y1="130" x2="310" y2="210" stroke="#6366f1" stroke-width="2.5" marker-end="url(#ah21)"/>
+  <line x1="60" y1="40" x2="150" y2="130" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ah21)"/>
+  <text x="40" y="36" fill="#3b82f6">Incident</text>
+  <line x1="150" y1="130" x2="310" y2="210" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ah21)"/>
   <line x1="310" y1="210" x2="400" y2="300" stroke="#10b981" stroke-width="2.5" marker-end="url(#ag21)"/>
   <text x="368" y="314" fill="#10b981" font-size="10">Emergent</text>
-  <path d="M136,130 A22,22 0 0,1 140,110" stroke="#6366f1" stroke-width="1.2" fill="none"/>
-  <text x="104" y="120" fill="#6366f1" font-style="italic">i₁</text>
+  <path d="M136,130 A22,22 0 0,1 140,110" stroke="#3b82f6" stroke-width="1.2" fill="none"/>
+  <text x="104" y="120" fill="#3b82f6" font-style="italic">i₁</text>
   <path d="M154,148 A22,22 0 0,1 158,130" stroke="#f59e0b" stroke-width="1.2" fill="none"/>
   <text x="162" y="148" fill="#f59e0b" font-style="italic">r₁</text>
   <path d="M294,210 A22,22 0 0,1 298,190" stroke="#f59e0b" stroke-width="1.2" fill="none"/>

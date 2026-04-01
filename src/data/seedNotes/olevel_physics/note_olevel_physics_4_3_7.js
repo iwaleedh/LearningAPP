@@ -73,8 +73,8 @@ export const note_olevel_physics_4_3_7 = {
         caption: 'CRO traces: AC sine wave (top) and DC flat line (bottom)',
         svg: `<svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- AC panel -->
-  <rect x="5" y="5" width="180" height="110" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
-  <text x="60" y="20" fill="#6366f1" font-weight="bold" font-size="11">AC Signal</text>
+  <rect x="5" y="5" width="180" height="110" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <text x="60" y="20" fill="#3b82f6" font-weight="bold" font-size="11">AC Signal</text>
   <line x1="10" y1="60" x2="180" y2="60" stroke="#334155" stroke-width="1"/>
   <path d="M10,60 C28,20 50,20 70,60 C90,100 112,100 130,60 C148,20 170,20 180,60"
         stroke="#22d3ee" stroke-width="2.5" fill="none"/>

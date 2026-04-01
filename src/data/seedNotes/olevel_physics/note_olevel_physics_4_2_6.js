@@ -91,11 +91,11 @@ export const note_olevel_physics_4_2_6 = {
   <!-- Current arrows -->
   <defs>
     <marker id="parr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-      <path d="M0,0 L0,7 L7,3.5 z" fill="#6366f1"/>
+      <path d="M0,0 L0,7 L7,3.5 z" fill="#3b82f6"/>
     </marker>
   </defs>
-  <line x1="50" y1="88" x2="125" y2="88" stroke="#6366f1" stroke-width="1.5" marker-end="url(#parr)"/>
-  <text x="77" y="82" fill="#6366f1" font-size="10">I_total</text>
+  <line x1="50" y1="88" x2="125" y2="88" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#parr)"/>
+  <text x="77" y="82" fill="#3b82f6" font-size="10">I_total</text>
   <text x="155" y="50" fill="#374151" font-size="10">I₁ →</text>
   <text x="155" y="148" fill="#374151" font-size="10">I₂ →</text>
 

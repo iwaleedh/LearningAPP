@@ -101,22 +101,22 @@ export const note_chemistry_4_15_5 = {
   <line x1="238" y1="103" x2="264" y2="103" stroke="#374151" stroke-width="2"/>
   <text x="266" y="108" font-size="15" fill="#374151">C</text>
   <!-- Dashed (delocalised) bond to upper O -->
-  <line x1="276" y1="95" x2="300" y2="76" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <line x1="276" y1="95" x2="300" y2="76" stroke="#1d4ed8" stroke-width="2.5" stroke-dasharray="5,3"/>
   <text x="303" y="74" font-size="15" fill="#dc2626">O</text>
   <text x="316" y="68" font-size="12" fill="#dc2626">½⁻</text>
   <!-- Dashed (delocalised) bond to lower O -->
-  <line x1="276" y1="108" x2="300" y2="127" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <line x1="276" y1="108" x2="300" y2="127" stroke="#1d4ed8" stroke-width="2.5" stroke-dasharray="5,3"/>
   <text x="303" y="135" font-size="15" fill="#dc2626">O</text>
   <text x="316" y="135" font-size="12" fill="#dc2626">½⁻</text>
 
   <!-- Annotation box -->
-  <rect x="222" y="152" width="230" height="44" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="222" y="152" width="230" height="44" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="232" y="170" font-size="11" fill="#5b21b6">Charge is spread equally over both</text>
   <text x="232" y="186" font-size="11" fill="#5b21b6">C–O bonds → resonance stabilised</text>
 
   <!-- Legend -->
-  <line x1="466" y1="100" x2="490" y2="100" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,3"/>
-  <text x="494" y="104" font-size="11" fill="#7c3aed">delocalised bond</text>
+  <line x1="466" y1="100" x2="490" y2="100" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="494" y="104" font-size="11" fill="#1d4ed8">delocalised bond</text>
 </svg>`,
         caption: 'Loss of H⁺ from RCOOH gives the carboxylate ion (RCOO⁻). The negative charge delocalises equally over both C–O bonds (dashed lines), making the anion far more stable than an alkoxide (RO⁻) — this is why carboxylic acids are stronger acids than alcohols.'
       }

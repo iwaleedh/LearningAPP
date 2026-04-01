@@ -28,15 +28,15 @@ export const note_olevel_maths_core_4_5_3 = {
   <style>
     text { font-family: sans-serif; font-size: 12px; fill: #374151; }
     .lbl  { font-weight: 700; fill: #374151; font-size: 13px; }
-    .rad  { stroke: #6366f1; stroke-width: 2; }
+    .rad  { stroke: #3b82f6; stroke-width: 2; }
     .tang { stroke: #10b981; stroke-width: 2.5; }
     .sym  { stroke: #9333ea; stroke-width: 1.8; stroke-dasharray: 6,4; }
     .eq   { font-weight: 700; fill: #ef4444; font-size: 11px; }
   </style>
   <!-- Circle centre O -->
-  <circle cx="300" cy="150" r="90" fill="#2d2f72" fill-opacity="0.25" stroke="#6366f1" stroke-width="2"/>
-  <circle cx="300" cy="150" r="4" fill="#6366f1"/>
-  <text x="306" y="155" class="lbl" fill="#6366f1">O</text>
+  <circle cx="300" cy="150" r="90" fill="#2d2f72" fill-opacity="0.25" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="300" cy="150" r="4" fill="#3b82f6"/>
+  <text x="306" y="155" class="lbl" fill="#3b82f6">O</text>
   <!-- External point P -->
   <circle cx="80" cy="150" r="5" fill="#9333ea"/>
   <text x="62" y="148" class="lbl" fill="#9333ea">P</text>

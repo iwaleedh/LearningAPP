@@ -98,9 +98,9 @@ export const note_olevel_biology_18_18_2 = {
   <text x="80" y="205" text-anchor="middle" font-size="9" fill="#4b5563">Most non-resistant</text>
 
   <!-- Arrow 1 -->
-  <text x="162" y="105" font-size="10" fill="#6366f1">&#9654;</text>
-  <text x="155" y="120" font-size="8" fill="#6366f1" text-anchor="middle">Antibiotic</text>
-  <text x="155" y="130" font-size="8" fill="#6366f1" text-anchor="middle">applied</text>
+  <text x="162" y="105" font-size="10" fill="#3b82f6">&#9654;</text>
+  <text x="155" y="120" font-size="8" fill="#3b82f6" text-anchor="middle">Antibiotic</text>
+  <text x="155" y="130" font-size="8" fill="#3b82f6" text-anchor="middle">applied</text>
 
   <!-- Generation 2: After selection -->
   <rect x="180" y="10" width="140" height="210" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
@@ -120,8 +120,8 @@ export const note_olevel_biology_18_18_2 = {
   <text x="250" y="212" text-anchor="middle" font-size="9" fill="#4b5563">bacterium survives</text>
 
   <!-- Arrow 2 -->
-  <text x="332" y="105" font-size="10" fill="#6366f1">&#9654;</text>
-  <text x="328" y="120" font-size="8" fill="#6366f1" text-anchor="middle">Reproduce</text>
+  <text x="332" y="105" font-size="10" fill="#3b82f6">&#9654;</text>
+  <text x="328" y="120" font-size="8" fill="#3b82f6" text-anchor="middle">Reproduce</text>
 
   <!-- Generation 3: All resistant -->
   <rect x="350" y="10" width="140" height="210" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>

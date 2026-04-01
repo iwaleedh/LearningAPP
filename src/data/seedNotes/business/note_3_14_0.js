@@ -57,10 +57,10 @@ export const note_business_3_14_0 = {
   <text x="92" y="300" font-size="12" fill="#495057">Flexible &amp; creative.</text>
   <text x="92" y="318" font-size="11" fill="#868e96">e.g. Google, Spotify</text>
   <rect x="284" y="204" width="272" height="192" fill="#2d1b69" rx="8"/>
-  <circle cx="318" cy="278" r="11" fill="#7c3aed" opacity="0.8"/>
-  <circle cx="338" cy="262" r="8" fill="#7c3aed" opacity="0.65"/>
-  <circle cx="354" cy="283" r="10" fill="#7c3aed" opacity="0.85"/>
-  <circle cx="336" cy="295" r="7" fill="#7c3aed" opacity="0.7"/>
+  <circle cx="318" cy="278" r="11" fill="#1d4ed8" opacity="0.8"/>
+  <circle cx="338" cy="262" r="8" fill="#1d4ed8" opacity="0.65"/>
+  <circle cx="354" cy="283" r="10" fill="#1d4ed8" opacity="0.85"/>
+  <circle cx="336" cy="295" r="7" fill="#1d4ed8" opacity="0.7"/>
   <text x="372" y="260" font-size="14" font-weight="700" fill="#212529">Person Culture</text>
   <text x="372" y="282" font-size="12" fill="#495057">Individual expertise.</text>
   <text x="372" y="318" font-size="11" fill="#868e96">e.g. law firms, universities</text>

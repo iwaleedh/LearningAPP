@@ -22,14 +22,14 @@ const quickStats = [
 ];
 
 const aLevelSubjects = [
-    { id: 'chemistry', name: 'AL Chemistry', chapters: 12, color: '#6366f1', emoji: '⚗️' },
+    { id: 'chemistry', name: 'AL Chemistry', chapters: 12, color: '#3b82f6', emoji: '⚗️' },
     { id: 'biology', name: 'AL Biology', chapters: 10, color: '#10b981', emoji: '🧬' },
     { id: 'physics', name: 'AL Physics', chapters: 14, color: '#f59e0b', emoji: '⚡' },
     { id: 'mathematics', name: 'AL Mathematics', chapters: 16, color: '#ef4444', emoji: '📐' },
     { id: 'business', name: 'AL Business', chapters: 20, color: '#0ea5e9', emoji: '💼' },
     { id: 'economics', name: 'AL Economics', chapters: 23, color: '#14b8a6', emoji: '📊' },
     { id: 'accounting', name: 'AL Accounting', chapters: 15, color: '#f97316', emoji: '📒' },
-    { id: 'cae', name: 'CAE (C1 Advanced)', chapters: 10, color: '#6366f1', emoji: '🇬🇧' },
+    { id: 'cae', name: 'CAE (C1 Advanced)', chapters: 10, color: '#3b82f6', emoji: '🇬🇧' },
     { id: 'cpe', name: 'CPE (C2 Proficiency)', chapters: 10, color: '#0ea5e9', emoji: '🎓' },
 ];
 
@@ -155,17 +155,21 @@ export default function HomePage() {
                     <Link
                         key={subject.id}
                         to={`/chapters?subject=${subject.id}`}
-                        className="subject-card card card-hover animate-fade-in"
-                        style={{ animationDelay: `${i * 0.1}s` }}
+                        className="subject-card card card-hover animate-slide-in-up"
+                        style={{ animationDelay: `${0.1 + i * 0.05}s` }}
                     >
-                        <div className="subject-emoji">{subject.emoji}</div>
-                        <h3>{subject.name}</h3>
-                        <p>{subject.chapters} Chapters</p>
-                        <div className="subject-progress">
-                            <div className="progress-bar">
-                                <div className="progress-bar-fill" style={{ width: '0%' }} />
+                        <div className="subject-card-header">
+                            <div className="subject-emoji">{subject.emoji}</div>
+                        </div>
+                        <div>
+                            <h3>{subject.name}</h3>
+                            <p>{subject.chapters} Chapters</p>
+                            <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
+                                <div className="progress-bar-container">
+                                    <div className="progress-bar-fill" style={{ width: '0%', backgroundColor: subject.color }} />
+                                </div>
+                                <span className="progress-text">0% Complete</span>
                             </div>
-                            <span className="progress-text">0% Complete</span>
                         </div>
                     </Link>
                 ))}
@@ -180,17 +184,21 @@ export default function HomePage() {
                     <Link
                         key={subject.id}
                         to={`/chapters?subject=${subject.id}`}
-                        className="subject-card card card-hover animate-fade-in"
-                        style={{ animationDelay: `${i * 0.1}s` }}
+                        className="subject-card card card-hover animate-slide-in-up"
+                        style={{ animationDelay: `${0.1 + i * 0.05}s` }}
                     >
-                        <div className="subject-emoji">{subject.emoji}</div>
-                        <h3>{subject.name}</h3>
-                        <p>{subject.chapters} Chapters</p>
-                        <div className="subject-progress">
-                            <div className="progress-bar">
-                                <div className="progress-bar-fill" style={{ width: '0%' }} />
+                        <div className="subject-card-header">
+                            <div className="subject-emoji">{subject.emoji}</div>
+                        </div>
+                        <div>
+                            <h3>{subject.name}</h3>
+                            <p>{subject.chapters} Chapters</p>
+                            <div className="subject-progress" style={{ marginTop: 'var(--space-4)' }}>
+                                <div className="progress-bar-container">
+                                    <div className="progress-bar-fill" style={{ width: '0%', backgroundColor: subject.color }} />
+                                </div>
+                                <span className="progress-text">0% Complete</span>
                             </div>
-                            <span className="progress-text">0% Complete</span>
                         </div>
                     </Link>
                 ))}

@@ -53,8 +53,8 @@ const BADGE_DEFINITIONS = [
         name: 'Quiz Master',
         description: 'Scored 100% on an exam.',
         icon: Crown,
-        color: '#a78bfa',
-        gradient: 'linear-gradient(135deg, #a78bfa, #8b5cf6)',
+        color: '#93c5fd',
+        gradient: 'linear-gradient(135deg, #93c5fd, #8b5cf6)',
         criteria: (stats) => stats.perfectScores >= 1,
     },
     {

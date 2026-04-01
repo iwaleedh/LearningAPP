@@ -477,7 +477,7 @@ export const note_chemistry_2_10_4 = {
                 svg: `<svg viewBox="0 0 650 430" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" font-size="14">
   <defs>
     <marker id="ah-cpx" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
-      <polygon points="0 0, 6 2, 0 4" fill="#6366f1" />
+      <polygon points="0 0, 6 2, 0 4" fill="#3b82f6" />
     </marker>
     <style>
       .atm { fill: #111827; font-size: 15px; }
@@ -486,7 +486,7 @@ export const note_chemistry_2_10_4 = {
       .lbl { fill: #4c1d95; font-size: 12px; }
       .prd { fill: #065f46; font-weight: 600; font-size: 13px; }
       .bnd { stroke: #111827; stroke-width: 1.8; fill: none; }
-      .arr { stroke: #6366f1; stroke-width: 1.5; fill: none; marker-end: url(#ah-cpx); }
+      .arr { stroke: #3b82f6; stroke-width: 1.5; fill: none; marker-end: url(#ah-cpx); }
     </style>
   </defs>
   <text x="325" y="22" text-anchor="middle" class="hd" font-size="14">Butan-2-ol → Three Products (E1 Dehydration)</text>

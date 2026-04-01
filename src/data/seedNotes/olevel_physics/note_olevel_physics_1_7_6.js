@@ -51,8 +51,8 @@ export const note_olevel_physics_1_7_6 = {
   <rect width="400" height="200" fill="#3d1212" rx="10"/>
   <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#7f1d1d">Sankey Diagram: Electric Motor (60% efficient)</text>
   <!-- Input arrow -->
-  <rect x="30" y="60" width="100" height="80" fill="#6366f1" rx="4"/>
-  <polygon points="130,60 130,140 160,100" fill="#6366f1"/>
+  <rect x="30" y="60" width="100" height="80" fill="#3b82f6" rx="4"/>
+  <polygon points="130,60 130,140 160,100" fill="#3b82f6"/>
   <text x="80" y="95" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">Input</text>
   <text x="80" y="108" text-anchor="middle" font-size="11" fill="#1e293b">100 J</text>
   <!-- Useful output arrow (forward, 60 J) -->

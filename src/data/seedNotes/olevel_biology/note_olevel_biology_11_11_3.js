@@ -110,8 +110,8 @@ export const note_olevel_biology_11_11_3 = {
   <!-- Sternum -->
   <path d="M90 130 L84 226" stroke="#94a3b8" stroke-width="3" fill="none" stroke-linecap="round"/>
   <!-- Diaphragm flat -->
-  <path d="M82 240 Q125 248 166 245 Q207 248 248 240" stroke="#7c3aed" stroke-width="3" fill="none"/>
-  <text x="170" y="263" text-anchor="middle" font-size="9" fill="#7c3aed">Diaphragm flat (contracted)</text>
+  <path d="M82 240 Q125 248 166 245 Q207 248 248 240" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  <text x="170" y="263" text-anchor="middle" font-size="9" fill="#1d4ed8">Diaphragm flat (contracted)</text>
   <!-- Lung outline (tall) -->
   <ellipse cx="132" cy="185" rx="44" ry="72" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
   <!-- Arrows: ribs out and up -->
@@ -119,9 +119,9 @@ export const note_olevel_biology_11_11_3 = {
   <text x="36" y="138" text-anchor="middle" font-size="8" fill="#16a34a">Up &amp;</text>
   <text x="36" y="149" text-anchor="middle" font-size="8" fill="#16a34a">out</text>
   <!-- Arrow: diaphragm down -->
-  <line x1="167" y1="252" x2="167" y2="268" stroke="#7c3aed" stroke-width="2" marker-end="url(#purp)"/>
-  <text x="195" y="274" text-anchor="start" font-size="8" fill="#7c3aed">Diaphragm</text>
-  <text x="195" y="285" text-anchor="start" font-size="8" fill="#7c3aed">moves down</text>
+  <line x1="167" y1="252" x2="167" y2="268" stroke="#1d4ed8" stroke-width="2" marker-end="url(#purp)"/>
+  <text x="195" y="274" text-anchor="start" font-size="8" fill="#1d4ed8">Diaphragm</text>
+  <text x="195" y="285" text-anchor="start" font-size="8" fill="#1d4ed8">moves down</text>
   <!-- Volume up label -->
   <rect x="200" y="120" width="108" height="50" rx="6" fill="#1c3a64" stroke="#93c5fd" stroke-width="1"/>
   <text x="254" y="140" text-anchor="middle" font-size="9" font-weight="bold" fill="#1d4ed8">Volume ↑</text>
@@ -141,8 +141,8 @@ export const note_olevel_biology_11_11_3 = {
   <!-- Sternum -->
   <path d="M436 118 L430 214" stroke="#94a3b8" stroke-width="3" fill="none" stroke-linecap="round"/>
   <!-- Diaphragm domed up -->
-  <path d="M428 228 Q472 208 506 214 Q540 208 576 228" stroke="#7c3aed" stroke-width="3" fill="none"/>
-  <text x="508" y="248" text-anchor="middle" font-size="9" fill="#7c3aed">Diaphragm domed (relaxed)</text>
+  <path d="M428 228 Q472 208 506 214 Q540 208 576 228" stroke="#1d4ed8" stroke-width="3" fill="none"/>
+  <text x="508" y="248" text-anchor="middle" font-size="9" fill="#1d4ed8">Diaphragm domed (relaxed)</text>
   <!-- Lung outline (shorter) -->
   <ellipse cx="472" cy="175" rx="38" ry="60" fill="#4a1040" stroke="#db2777" stroke-width="1.5" opacity="0.7"/>
   <!-- Arrow: ribs down and in -->
@@ -150,7 +150,7 @@ export const note_olevel_biology_11_11_3 = {
   <text x="376" y="176" text-anchor="middle" font-size="8" fill="#dc2626">Down</text>
   <text x="376" y="187" text-anchor="middle" font-size="8" fill="#dc2626">&amp; in</text>
   <!-- Arrow: diaphragm up -->
-  <line x1="507" y1="222" x2="507" y2="208" stroke="#7c3aed" stroke-width="2" marker-end="url(#purp2)"/>
+  <line x1="507" y1="222" x2="507" y2="208" stroke="#1d4ed8" stroke-width="2" marker-end="url(#purp2)"/>
   <!-- Volume down label -->
   <rect x="540" y="120" width="108" height="50" rx="6" fill="#4a1040" stroke="#f9a8d4" stroke-width="1"/>
   <text x="594" y="140" text-anchor="middle" font-size="9" font-weight="bold" fill="#831843">Volume ↓</text>
@@ -158,9 +158,9 @@ export const note_olevel_biology_11_11_3 = {
   <text x="594" y="166" text-anchor="middle" font-size="9" fill="#831843">Air flows OUT ←</text>
   <defs>
     <marker id="insp" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#16a34a"/></marker>
-    <marker id="purp" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#7c3aed"/></marker>
+    <marker id="purp" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#1d4ed8"/></marker>
     <marker id="exp" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#dc2626"/></marker>
-    <marker id="purp2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#7c3aed"/></marker>
+    <marker id="purp2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#1d4ed8"/></marker>
   </defs>
 </svg>`
       }

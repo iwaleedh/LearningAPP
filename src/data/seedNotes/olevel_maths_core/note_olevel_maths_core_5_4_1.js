@@ -48,8 +48,8 @@ export const note_olevel_maths_core_5_4_1 = {
       data: {
         svg: `<svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Small square -->
-  <rect x="20" y="40" width="60" height="60" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
-  <text x="50" y="115" text-anchor="middle" fill="#6366f1">s = 4 cm</text>
+  <rect x="20" y="40" width="60" height="60" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
+  <text x="50" y="115" text-anchor="middle" fill="#3b82f6">s = 4 cm</text>
   <text x="50" y="130" text-anchor="middle" fill="#374151">Area = 16 cm²</text>
   <text x="50" y="145" text-anchor="middle" fill="#374151">Vol = 64 cm³</text>
 

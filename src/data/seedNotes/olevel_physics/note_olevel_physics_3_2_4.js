@@ -35,7 +35,7 @@ export const note_olevel_physics_3_2_4 = {
         caption: 'Ray diagram for a converging lens with object beyond 2F — image is real, inverted and diminished',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
   <defs>
-    <marker id="ah24" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah24" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag24" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
     <marker id="ao24" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#f59e0b"/></marker>
   </defs>
@@ -60,8 +60,8 @@ export const note_olevel_physics_3_2_4 = {
   <polygon points="70,75 65,88 75,88" fill="#f59e0b"/>
   <text x="55" y="70" fill="#f59e0b" font-weight="bold">O</text>
   <!-- Ray 1 (parallel → through F) BLUE -->
-  <line x1="70" y1="75" x2="280" y2="75" stroke="#6366f1" stroke-width="1.8" marker-end="url(#ah24)"/>
-  <line x1="280" y1="75" x2="460" y2="175" stroke="#6366f1" stroke-width="1.8" marker-end="url(#ah24)"/>
+  <line x1="70" y1="75" x2="280" y2="75" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#ah24)"/>
+  <line x1="280" y1="75" x2="460" y2="175" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#ah24)"/>
   <!-- Ray 2 (through O) GREEN -->
   <line x1="70" y1="75" x2="460" y2="188" stroke="#10b981" stroke-width="1.8" marker-end="url(#ag24)"/>
   <!-- Ray 3 (through near F) ORANGE -->

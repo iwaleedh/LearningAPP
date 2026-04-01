@@ -37,9 +37,9 @@ export const note_chemistry_5_16_2 = {
   <text x="45" y="220" text-anchor="middle" fill="#166534" font-size="9">[H⁺]=1 M</text>
   <text x="45" y="232" text-anchor="middle" fill="#059669" font-size="9">E° = 0.00 V</text>
   <line x1="70" y1="200" x2="75" y2="200" stroke="#16a34a" stroke-width="1"/>
-  <line x1="160" y1="108" x2="160" y2="100" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="255" y="100" fill="#7c3aed" font-size="10">→ To voltmeter / external circuit</text>
-  <line x1="253" y1="98" x2="195" y2="105" stroke="#7c3aed" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="108" x2="160" y2="100" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="255" y="100" fill="#1d4ed8" font-size="10">→ To voltmeter / external circuit</text>
+  <line x1="253" y1="98" x2="195" y2="105" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="3,2"/>
   <text x="200" y="298" text-anchor="middle" fill="#0f172a" font-size="11">2H⁺(aq) + 2e⁻ ⇌ H₂(g) &nbsp; E° = 0.00 V</text>
   <text x="200" y="315" text-anchor="middle" fill="#6b7280" font-size="9">Equilibrium rapidly established on platinum black surface</text>
 </svg>`,

@@ -12,7 +12,7 @@ export const note_chemistry_5_16_5 = {
   <rect width="460" height="300" fill="#0f172a" rx="10" stroke="#e2e8f0" stroke-width="1"/>
   <text x="230" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#0f172a">Feasibility Method — Flow Diagram</text>
   <!-- Step 1 -->
-  <rect x="130" y="35" width="200" height="32" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="130" y="35" width="200" height="32" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="230" y="56" text-anchor="middle" fill="#4c1d95" font-weight="bold">Step 1: Write both half-equations</text>
   <line x1="230" y1="67" x2="230" y2="83" stroke="#475569" stroke-width="1.5" marker-end="url(#a)"/>
   <!-- Step 2 -->

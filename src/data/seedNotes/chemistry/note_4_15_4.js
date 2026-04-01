@@ -98,9 +98,9 @@ export const note_chemistry_4_15_4 = {
   <text x="94" y="97" text-anchor="middle" fill="#374151" font-size="18">+</text>
   <text x="145" y="97" text-anchor="start" fill="#111827" font-size="16">CH&#8323;</text>
   <text x="173" y="97" text-anchor="start" fill="#111827" font-size="16">&#8211;CH</text>
-  <text x="180" y="80" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8314;</text>
+  <text x="180" y="80" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8314;</text>
   <text x="204" y="97" text-anchor="start" fill="#111827" font-size="16">=O</text>
-  <text x="218" y="80" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8315;</text>
+  <text x="218" y="80" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8315;</text>
   <text x="190" y="114" text-anchor="middle" fill="#6b7280" font-size="11">ethanal</text>
   <path d="M 38 91 Q 98 68 152 90" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-bh4)"/>
   <text x="258" y="80" text-anchor="middle" fill="#6b7280" font-size="11">Step 1</text>
@@ -196,9 +196,9 @@ export const note_chemistry_4_15_4 = {
   <text x="64" y="112" text-anchor="middle" fill="#6b7280" font-size="11">nucleophile</text>
   <text x="108" y="96" text-anchor="middle" fill="#374151" font-size="18">+</text>
   <text x="150" y="96" text-anchor="start" fill="#111827" font-size="16">(CH&#8323;)&#8322;C</text>
-  <text x="196" y="79" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8314;</text>
+  <text x="196" y="79" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8314;</text>
   <text x="210" y="96" text-anchor="start" fill="#111827" font-size="16">=O</text>
-  <text x="224" y="79" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">&#948;&#8315;</text>
+  <text x="224" y="79" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">&#948;&#8315;</text>
   <text x="190" y="113" text-anchor="middle" fill="#6b7280" font-size="11">propanone</text>
   <path d="M 38 87 Q 108 64 145 88" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#ah-hcn)"/>
   <text x="258" y="79" text-anchor="middle" fill="#6b7280" font-size="11">Step 1</text>

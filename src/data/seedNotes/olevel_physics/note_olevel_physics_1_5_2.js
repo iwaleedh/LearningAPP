@@ -34,7 +34,7 @@ export const note_olevel_physics_1_5_2 = {
   <text x="220" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">Stability and Centre of Gravity</text>
   <!-- Stable: low CoG, wide base -->
   <rect x="30" y="160" width="110" height="5" fill="#374151"/>
-  <rect x="55" y="120" width="60" height="40" fill="#6366f1" rx="3"/>
+  <rect x="55" y="120" width="60" height="40" fill="#3b82f6" rx="3"/>
   <circle cx="85" cy="140" r="6" fill="#ef4444"/>
   <!-- Weight arrow -->
   <line x1="85" y1="146" x2="85" y2="163" stroke="#ef4444" stroke-width="2"/>
@@ -45,7 +45,7 @@ export const note_olevel_physics_1_5_2 = {
   <line x1="85" y1="120" x2="85" y2="165" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
   <!-- Unstable: high CoG, narrow base -->
   <rect x="170" y="160" width="100" height="5" fill="#374151"/>
-  <rect x="205" y="100" width="30" height="60" fill="#6366f1" rx="3"/>
+  <rect x="205" y="100" width="30" height="60" fill="#3b82f6" rx="3"/>
   <circle cx="220" cy="130" r="6" fill="#ef4444"/>
   <line x1="220" y1="136" x2="220" y2="163" stroke="#ef4444" stroke-width="2"/>
   <polygon points="220,163 216,154 224,154" fill="#ef4444"/>
@@ -55,7 +55,7 @@ export const note_olevel_physics_1_5_2 = {
   <!-- Tilted box - toppling -->
   <rect x="310" y="160" width="100" height="5" fill="#374151"/>
   <g transform="rotate(-20, 360, 160)">
-    <rect x="335" y="110" width="50" height="50" fill="#6366f1" rx="3" opacity="0.8"/>
+    <rect x="335" y="110" width="50" height="50" fill="#3b82f6" rx="3" opacity="0.8"/>
     <circle cx="360" cy="135" r="6" fill="#ef4444"/>
   </g>
   <line x1="360" y1="108" x2="360" y2="165" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,2"/>

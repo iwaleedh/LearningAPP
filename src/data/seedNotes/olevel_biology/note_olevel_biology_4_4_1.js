@@ -76,7 +76,7 @@ export const note_olevel_biology_4_4_1 = {
   <line x1="82" y1="112" x2="218" y2="112" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
   <rect x="88" y="102" width="36" height="20" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="106" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#9d174d">C</text>
-  <rect x="176" y="102" width="36" height="20" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="176" y="102" width="36" height="20" rx="4" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="194" y="116" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">G</text>
 
   <!-- Rung 3: T-A at ~y=150 -->
@@ -88,7 +88,7 @@ export const note_olevel_biology_4_4_1 = {
 
   <!-- Rung 4: G-C at ~y=190 -->
   <line x1="82" y1="192" x2="218" y2="192" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
-  <rect x="88" y="182" width="36" height="20" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="88" y="182" width="36" height="20" rx="4" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="106" y="196" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">G</text>
   <rect x="176" y="182" width="36" height="20" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="194" y="196" text-anchor="middle" font-size="11" font-weight="bold" fill="#9d174d">C</text>
@@ -104,7 +104,7 @@ export const note_olevel_biology_4_4_1 = {
   <line x1="82" y1="272" x2="218" y2="272" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
   <rect x="88" y="262" width="36" height="20" rx="4" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="106" y="276" text-anchor="middle" font-size="11" font-weight="bold" fill="#9d174d">C</text>
-  <rect x="176" y="262" width="36" height="20" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="176" y="262" width="36" height="20" rx="4" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="194" y="276" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">G</text>
 
   <!-- Labels left column -->
@@ -124,7 +124,7 @@ export const note_olevel_biology_4_4_1 = {
   <text x="348" y="102" font-size="10" fill="#374151">Thymine (T)</text>
   <rect x="308" y="112" width="30" height="16" rx="3" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="348" y="124" font-size="10" fill="#374151">Cytosine (C)</text>
-  <rect x="308" y="134" width="30" height="16" rx="3" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="308" y="134" width="30" height="16" rx="3" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="348" y="146" font-size="10" fill="#374151">Guanine (G)</text>
   <line x1="308" y1="162" x2="338" y2="162" stroke="#16a34a" stroke-width="5" stroke-linecap="round"/>
   <text x="348" y="166" font-size="10" fill="#374151">Sugar-phosphate</text>

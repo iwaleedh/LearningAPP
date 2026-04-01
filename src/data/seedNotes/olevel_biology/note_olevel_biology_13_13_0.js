@@ -107,10 +107,10 @@ export const note_olevel_biology_13_13_0 = {
   <text x="165" y="164" fill="#14532d" font-size="10">gland</text>
 
   <!-- Nerve ending -->
-  <path d="M420 250 Q430 200 415 170 Q400 140 420 110" fill="none" stroke="#7c3aed" stroke-width="2"/>
-  <circle cx="420" cy="105" r="5" fill="#7c3aed"/>
-  <text x="435" y="115" fill="#7c3aed" font-size="11">Sensory nerve</text>
-  <text x="440" y="128" fill="#7c3aed" font-size="11">ending</text>
+  <path d="M420 250 Q430 200 415 170 Q400 140 420 110" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="420" cy="105" r="5" fill="#1d4ed8"/>
+  <text x="435" y="115" fill="#1d4ed8" font-size="11">Sensory nerve</text>
+  <text x="440" y="128" fill="#1d4ed8" font-size="11">ending</text>
 
   <!-- Erector pili muscle -->
   <line x1="110" y1="80" x2="122" y2="140" stroke="#f59e0b" stroke-width="2.5"/>

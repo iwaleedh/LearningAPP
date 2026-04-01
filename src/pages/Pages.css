@@ -3034,7 +3034,7 @@
 }
 
 .lc-raise-btn {
-    background: linear-gradient(135deg, #6366f1, #7c3aed);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
     color: white;
     border: none;
     border-radius: var(--radius-md);

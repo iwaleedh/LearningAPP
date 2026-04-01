@@ -56,7 +56,7 @@ export const note_olevel_physics_1_8_4 = {
   <line x1="285" y1="90" x2="308" y2="90" stroke="#374151" stroke-width="2"/>
   <polygon points="308,90 300,86 300,94" fill="#374151"/>
   <!-- Generator -->
-  <rect x="308" y="62" width="80" height="56" rx="6" fill="#7c3aed" opacity="0.8"/>
+  <rect x="308" y="62" width="80" height="56" rx="6" fill="#1d4ed8" opacity="0.8"/>
   <text x="348" y="88" text-anchor="middle" font-size="10" fill="#1e293b" font-weight="bold">Generator</text>
   <text x="348" y="101" text-anchor="middle" font-size="9" fill="#1e293b">Electrical</text>
   <!-- Cooling tower / safety note -->

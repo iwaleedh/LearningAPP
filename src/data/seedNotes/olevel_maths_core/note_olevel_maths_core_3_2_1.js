@@ -138,8 +138,8 @@ export const note_olevel_maths_core_3_2_1 = {
   <text x="97" y="33" text-anchor="end" fill="#888" font-size="10">4</text>
   <!-- Horizontal line y=3 → y pixel = 90 - 3*30 = 0? scale: 30px/unit, origin (100,90)
        y=3 → 90-3*30=0 ... let's use 20px/unit: y=3 → 90-3*20=30 -->
-  <line x1="10" y1="30" x2="195" y2="30" stroke="#6366f1" stroke-width="2.5"/>
-  <text x="145" y="25" fill="#6366f1" font-weight="bold">y = 3</text>
+  <line x1="10" y1="30" x2="195" y2="30" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="145" y="25" fill="#3b82f6" font-weight="bold">y = 3</text>
   <!-- Vertical line x=-2, pixel = 100-2*30=40 -->
   <line x1="40" y1="5" x2="40" y2="170" stroke="#ef4444" stroke-width="2.5"/>
   <text x="22" y="20" fill="#ef4444" font-weight="bold">x = −2</text>

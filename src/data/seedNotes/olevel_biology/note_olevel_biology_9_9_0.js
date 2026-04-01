@@ -75,7 +75,7 @@ export const note_olevel_biology_9_9_0 = {
         caption: 'Double circulation in mammals — pulmonary and systemic circuits',
         svg: `<svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
   <rect width="480" height="340" fill="#532407" rx="12"/>
-  <text x="240" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed">Double Circulation in Mammals</text>
+  <text x="240" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">Double Circulation in Mammals</text>
   <!-- LUNGS box -->
   <rect x="160" y="40" width="160" height="55" rx="8" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
   <text x="240" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">LUNGS</text>
@@ -112,8 +112,8 @@ export const note_olevel_biology_9_9_0 = {
   <text x="240" y="330" text-anchor="middle" font-size="10" fill="#3b82f6">Blue arrows = oxygenated blood</text>
   <text x="240" y="342" text-anchor="middle" font-size="10" fill="#ef4444">Red arrows = deoxygenated blood</text>
   <!-- Pulmonary circuit label -->
-  <text x="52" y="95" text-anchor="middle" font-size="11" font-weight="bold" fill="#7c3aed">Pulmonary</text>
-  <text x="52" y="108" text-anchor="middle" font-size="11" font-weight="bold" fill="#7c3aed">Circuit</text>
+  <text x="52" y="95" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Pulmonary</text>
+  <text x="52" y="108" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">Circuit</text>
   <!-- Systemic circuit label -->
   <text x="428" y="230" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Systemic</text>
   <text x="428" y="243" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Circuit</text>

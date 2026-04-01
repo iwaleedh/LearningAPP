@@ -40,8 +40,8 @@ export const note_olevel_physics_5_1_5 = {
   <line x1="65" y1="145" x2="250" y2="145" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5"/>
   <line x1="250" y1="145" x2="250" y2="250" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5"/>
   <!-- Construction lines t½ = 20→30 -->
-  <line x1="65" y1="175" x2="345" y2="175" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5"/>
-  <line x1="345" y1="175" x2="345" y2="250" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5"/>
+  <line x1="65" y1="175" x2="345" y2="175" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="5"/>
+  <line x1="345" y1="175" x2="345" y2="250" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="5"/>
   <!-- Half-life brackets -->
   <text x="107" y="240" text-anchor="middle" font-size="9" fill="#ef4444" font-weight="bold">t½ = 10 s</text>
   <text x="202" y="240" text-anchor="middle" font-size="9" fill="#f97316" font-weight="bold">t½ = 10 s</text>

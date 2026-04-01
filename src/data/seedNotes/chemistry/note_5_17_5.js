@@ -112,8 +112,8 @@ export const note_chemistry_5_17_5 = {
   <text x="210" y="110" font-size="10" fill="#dc2626" font-weight="bold">eᵍ (2 orbitals — point at ligands)</text>
   <line x1="240" y1="120" x2="380" y2="120" stroke="#dc2626" stroke-width="2.5"/>
   <line x1="240" y1="137" x2="380" y2="137" stroke="#dc2626" stroke-width="2.5"/>
-  <path d="M 395 128 L 395 210" stroke="#7c3aed" stroke-width="2" marker-start="url(#arrowUp)" marker-end="url(#arrowDown)"/>
-  <text x="407" y="175" font-size="12" font-weight="bold" fill="#7c3aed">Δ</text>
+  <path d="M 395 128 L 395 210" stroke="#1d4ed8" stroke-width="2" marker-start="url(#arrowUp)" marker-end="url(#arrowDown)"/>
+  <text x="407" y="175" font-size="12" font-weight="bold" fill="#1d4ed8">Δ</text>
   <path d="M 310 215 Q 310 165 310 128" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowRight2)"/>
   <text x="325" y="178" font-size="9" fill="#f59e0b">hν</text>
   <text x="207" y="225" font-size="10" fill="#16a34a" font-weight="bold">t₂ᵍ (3 orbitals — point between ligands)</text>
@@ -123,8 +123,8 @@ export const note_chemistry_5_17_5 = {
   <text x="210" y="260" text-anchor="middle" font-size="9" fill="#64748b">Electron absorbs visible light (energy = Δ) to jump from t₂ᵍ to eᵍ</text>
   <defs>
     <marker id="arrowRight" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,1 L7,4 L0,7 Z" fill="#94a3b8"/></marker>
-    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="1" orient="auto"><path d="M1,7 L4,0 L7,7 Z" fill="#7c3aed"/></marker>
-    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto"><path d="M1,0 L4,8 L7,0 Z" fill="#7c3aed"/></marker>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="1" orient="auto"><path d="M1,7 L4,0 L7,7 Z" fill="#1d4ed8"/></marker>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto"><path d="M1,0 L4,8 L7,0 Z" fill="#1d4ed8"/></marker>
     <marker id="arrowRight2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,1 L7,4 L0,7 Z" fill="#f59e0b"/></marker>
   </defs>
 </svg>`,

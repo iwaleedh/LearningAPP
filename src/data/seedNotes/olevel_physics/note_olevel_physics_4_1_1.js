@@ -66,14 +66,14 @@ export const note_olevel_physics_4_1_1 = {
   <!-- Uniform field lines with arrows -->
   <defs>
     <marker id="arr1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#6366f1"/>
+      <path d="M0,0 L0,6 L6,3 z" fill="#3b82f6"/>
     </marker>
   </defs>
-  <line x1="45" y1="40" x2="45" y2="160" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr1)"/>
-  <line x1="70" y1="40" x2="70" y2="160" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr1)"/>
-  <line x1="100" y1="40" x2="100" y2="160" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr1)"/>
-  <line x1="130" y1="40" x2="130" y2="160" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr1)"/>
-  <line x1="157" y1="40" x2="157" y2="160" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr1)"/>
+  <line x1="45" y1="40" x2="45" y2="160" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr1)"/>
+  <line x1="70" y1="40" x2="70" y2="160" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr1)"/>
+  <line x1="100" y1="40" x2="100" y2="160" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr1)"/>
+  <line x1="130" y1="40" x2="130" y2="160" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr1)"/>
+  <line x1="157" y1="40" x2="157" y2="160" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr1)"/>
   <text x="100" y="195" text-anchor="middle" fill="#475569" font-size="11">Uniform field (parallel plates)</text>
 
   <!-- RADIAL FIELD right panel -->
@@ -83,17 +83,17 @@ export const note_olevel_physics_4_1_1 = {
   <!-- Radial lines outward -->
   <defs>
     <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#6366f1"/>
+      <path d="M0,0 L0,6 L6,3 z" fill="#3b82f6"/>
     </marker>
   </defs>
-  <line x1="326" y1="100" x2="390" y2="100" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="298" y1="100" x2="234" y2="100" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="312" y1="86" x2="312" y2="28" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="312" y1="114" x2="312" y2="172" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="322" y1="90" x2="362" y2="50" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="302" y1="90" x2="262" y2="50" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="322" y1="110" x2="362" y2="150" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
-  <line x1="302" y1="110" x2="262" y2="150" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="326" y1="100" x2="390" y2="100" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="298" y1="100" x2="234" y2="100" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="312" y1="86" x2="312" y2="28" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="312" y1="114" x2="312" y2="172" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="322" y1="90" x2="362" y2="50" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="302" y1="90" x2="262" y2="50" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="322" y1="110" x2="362" y2="150" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="302" y1="110" x2="262" y2="150" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr2)"/>
   <text x="312" y="195" text-anchor="middle" fill="#475569" font-size="11">Radial field (point charge +)</text>
 </svg>`,
       },

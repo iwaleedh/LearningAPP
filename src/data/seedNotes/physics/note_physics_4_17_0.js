@@ -70,7 +70,7 @@ export const note_physics_4_17_0 = {
   <text x="345" y="82" font-family="Arial" font-size="12" fill="#475569">360° = 2π rad</text>
   <text x="345" y="100" font-family="Arial" font-size="12" fill="#475569">180° = π rad</text>
   <text x="345" y="118" font-family="Arial" font-size="12" fill="#475569">90°  = π/2 rad</text>
-  <rect x="20" y="200" width="220" height="62" fill="#2d2f72" rx="6" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="20" y="200" width="220" height="62" fill="#2d2f72" rx="6" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="130" y="220" font-family="Arial" font-size="13" fill="#3730a3" font-weight="bold" text-anchor="middle">Angular velocity</text>
   <text x="130" y="240" font-family="Arial" font-size="13" fill="#3730a3" text-anchor="middle">ω = Δθ/Δt (rad s⁻¹)</text>
   <text x="130" y="256" font-family="Arial" font-size="13" fill="#3730a3" text-anchor="middle">v = ωr (tangential speed)</text>

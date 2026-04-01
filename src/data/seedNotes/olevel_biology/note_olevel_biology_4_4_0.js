@@ -148,17 +148,17 @@ export const note_olevel_biology_4_4_0 = {
   <text x="260" y="234" text-anchor="middle" font-size="9" fill="#374151">(milky white = +ve)</text>
 
   <!-- Proteins box -->
-  <rect x="348" y="35" width="152" height="225" rx="10" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="348" y="35" width="152" height="225" rx="10" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
   <text x="424" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#4c1d95">Proteins</text>
   <text x="424" y="70" text-anchor="middle" font-size="10" fill="#3b0764">Elements: C,H,O,N(,S)</text>
   <!-- Amino acids chain -->
-  <circle cx="375" cy="100" r="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="375" cy="100" r="12" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="375" y="104" text-anchor="middle" font-size="8" fill="#4c1d95">AA</text>
-  <line x1="387" y1="100" x2="399" y2="100" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="411" cy="100" r="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <line x1="387" y1="100" x2="399" y2="100" stroke="#1d4ed8" stroke-width="1.5"/>
+  <circle cx="411" cy="100" r="12" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="411" y="104" text-anchor="middle" font-size="8" fill="#4c1d95">AA</text>
-  <line x1="423" y1="100" x2="435" y2="100" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="447" cy="100" r="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <line x1="423" y1="100" x2="435" y2="100" stroke="#1d4ed8" stroke-width="1.5"/>
+  <circle cx="447" cy="100" r="12" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="447" y="104" text-anchor="middle" font-size="8" fill="#4c1d95">AA</text>
   <text x="424" y="124" text-anchor="middle" font-size="9" fill="#374151">Monomer: amino acid</text>
   <text x="424" y="137" text-anchor="middle" font-size="9" fill="#374151">Joined by peptide bonds</text>

@@ -66,7 +66,7 @@ export default function LandingPage() {
               <p>Comprehensive syllabus coverage with interactive equations, diagrams, and check-list trackers.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon-wrapper purple"><Brain /></div>
+              <div className="feature-icon-wrapper cyan"><Brain /></div>
               <h3>Active Recall</h3>
               <p>Spaced repetition flashcards and inline recall cues that test your knowledge as you read.</p>
             </div>

@@ -45,15 +45,15 @@ export const note_olevel_maths_core_5_1_2 = {
       data: {
         svg: `<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- L-shape (two rectangles) -->
-  <polygon points="20,20 20,160 80,160 80,90 140,90 140,20" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
-  <line x1="80" y1="20" x2="80" y2="90" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="20,20 20,160 80,160 80,90 140,90 140,20" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="80" y1="20" x2="80" y2="90" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3"/>
   <!-- dimensions -->
   <text x="80" y="13" text-anchor="middle" fill="#374151">6 cm</text>
   <text x="9" y="90" fill="#374151">14</text>
   <text x="110" y="155" text-anchor="middle" fill="#374151">6</text>
   <text x="50" y="155" text-anchor="middle" fill="#374151">R1</text>
   <text x="110" y="60" text-anchor="middle" fill="#374151">R2</text>
-  <text x="80" y="185" text-anchor="middle" fill="#6366f1" font-weight="bold">L-shape = R1 + R2</text>
+  <text x="80" y="185" text-anchor="middle" fill="#3b82f6" font-weight="bold">L-shape = R1 + R2</text>
 
   <!-- Shape with hole -->
   <rect x="220" y="20" width="120" height="90" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>

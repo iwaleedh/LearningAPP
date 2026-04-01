@@ -57,7 +57,7 @@ export const note_olevel_maths_core_4_1_1 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200">
   <style>
     text { font-family: sans-serif; font-size: 11px; fill: #374151; }
-    .lbl { font-weight: 700; fill: #6366f1; font-size: 12px; }
+    .lbl { font-weight: 700; fill: #3b82f6; font-size: 12px; }
     .title { font-weight: 700; fill: #374151; font-size: 12px; }
   </style>
   <!-- Panel 1: Angles on a line -->
@@ -66,8 +66,8 @@ export const note_olevel_maths_core_4_1_1 = {
     <line x1="0" y1="0" x2="155" y2="0" stroke="#374151" stroke-width="2"/>
     <line x1="70" y1="0" x2="55" y2="-65" stroke="#374151" stroke-width="2"/>
     <path d="M90,0 A20,20 0 0,0 70,0" fill="none" stroke="#ef4444" stroke-width="1.5"/>
-    <path d="M50,0 A22,22 0 0,0 55,-22" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-    <text x="56" y="-14" class="lbl" fill="#6366f1">a</text>
+    <path d="M50,0 A22,22 0 0,0 55,-22" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="56" y="-14" class="lbl" fill="#3b82f6">a</text>
     <text x="77" y="-8" class="lbl" fill="#ef4444">b</text>
     <text x="60" y="18">a + b = 180°</text>
   </g>
@@ -78,11 +78,11 @@ export const note_olevel_maths_core_4_1_1 = {
     <line x1="0" y1="0" x2="-65" y2="0" stroke="#374151" stroke-width="2"/>
     <line x1="0" y1="0" x2="0" y2="-65" stroke="#374151" stroke-width="2"/>
     <line x1="0" y1="0" x2="46" y2="-46" stroke="#374151" stroke-width="2"/>
-    <path d="M30,0 A30,30 0 0,0 21.2,-21.2" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <path d="M30,0 A30,30 0 0,0 21.2,-21.2" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
     <path d="M21.2,-21.2 A30,30 0 0,0 0,-30" fill="none" stroke="#10b981" stroke-width="1.5"/>
     <path d="M0,-30 A30,30 0 0,0 -30,0" fill="none" stroke="#ef4444" stroke-width="1.5"/>
     <path d="M-30,0 A30,30 0 0,0 30,0" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
-    <text x="22" y="-10" class="lbl" fill="#6366f1">a</text>
+    <text x="22" y="-10" class="lbl" fill="#3b82f6">a</text>
     <text x="5" y="-33" class="lbl" fill="#10b981">b</text>
     <text x="-20" y="-15" class="lbl" fill="#ef4444">c</text>
     <text x="-5" y="22" class="lbl" fill="#f59e0b">d</text>
@@ -93,10 +93,10 @@ export const note_olevel_maths_core_4_1_1 = {
     <text x="-30" y="-85" class="title">Vertically opposite</text>
     <line x1="-65" y1="-45" x2="65" y2="45" stroke="#374151" stroke-width="2"/>
     <line x1="-65" y1="45" x2="65" y2="-45" stroke="#374151" stroke-width="2"/>
-    <path d="M18,12 A22,22 0 1,1 22,18" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-width="1.5"/>
-    <path d="M-18,-12 A22,22 0 1,1 -22,-18" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-width="1.5"/>
-    <text x="22" y="8" class="lbl" fill="#6366f1">a</text>
-    <text x="-32" y="-4" class="lbl" fill="#6366f1">a</text>
+    <path d="M18,12 A22,22 0 1,1 22,18" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M-18,-12 A22,22 0 1,1 -22,-18" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="22" y="8" class="lbl" fill="#3b82f6">a</text>
+    <text x="-32" y="-4" class="lbl" fill="#3b82f6">a</text>
     <text x="-32" y="16" class="lbl" fill="#ef4444">b</text>
     <text x="22" y="-8" class="lbl" fill="#ef4444">b</text>
     <text x="-28" y="55">a = a, &nbsp; b = b (equal)</text>

@@ -35,7 +35,7 @@ export const note_olevel_physics_1_8_2 = {
   <!-- Pipe/penstock -->
   <rect x="152" y="120" width="60" height="12" fill="#94a3b8" rx="3"/>
   <!-- Turbine + generator box -->
-  <rect x="212" y="112" width="60" height="28" fill="#6366f1" rx="4"/>
+  <rect x="212" y="112" width="60" height="28" fill="#3b82f6" rx="4"/>
   <text x="242" y="127" text-anchor="middle" font-size="9" fill="#1e293b">Turbine +</text>
   <text x="242" y="136" text-anchor="middle" font-size="9" fill="#1e293b">Generator</text>
   <!-- Water output -->
@@ -44,7 +44,7 @@ export const note_olevel_physics_1_8_2 = {
   <!-- Energy labels -->
   <text x="70" y="75" text-anchor="middle" font-size="9" fill="#16a34a">GPE stored</text>
   <text x="170" y="108" text-anchor="middle" font-size="9" fill="#f59e0b">GPE → KE</text>
-  <text x="242" y="107" text-anchor="middle" font-size="9" fill="#6366f1">KE → Electrical</text>
+  <text x="242" y="107" text-anchor="middle" font-size="9" fill="#3b82f6">KE → Electrical</text>
   <!-- Power cable -->
   <line x1="242" y1="112" x2="242" y2="90" stroke="#f59e0b" stroke-width="2"/>
   <line x1="242" y1="90" x2="330" y2="90" stroke="#f59e0b" stroke-width="2"/>

@@ -52,7 +52,7 @@ const COLORS = [
   // Blue / Cyan
   '#1e3a8a', '#1d4ed8', '#3b82f6', '#60a5fa', '#0891b2', '#06b6d4', '#22d3ee', '#93c5fd',
   // Purple / Pink
-  '#581c87', '#7c3aed', '#8b5cf6', '#6366f1', '#be185d', '#ec4899', '#f472b6', '#e879f9',
+  '#581c87', '#1d4ed8', '#8b5cf6', '#3b82f6', '#be185d', '#ec4899', '#f472b6', '#e879f9',
 ];
 
 const STROKE_WIDTHS = [1, 2, 3, 4, 5, 10, 16];

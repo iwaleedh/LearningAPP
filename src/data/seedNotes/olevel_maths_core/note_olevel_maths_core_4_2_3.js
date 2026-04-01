@@ -72,18 +72,18 @@ export const note_olevel_maths_core_4_2_3 = {
   </style>
   <!-- === Panel 1: Corresponding (F) === -->
   <g transform="translate(15, 10)">
-    <text x="20" y="10" class="title" fill="#6366f1">Corresponding (F-angles)</text>
+    <text x="20" y="10" class="title" fill="#3b82f6">Corresponding (F-angles)</text>
     <line x1="0" y1="50" x2="140" y2="50" stroke="#374151" stroke-width="2"/>
     <text x="0" y="46" fill="#374151" font-size="9">∥</text>
     <line x1="0" y1="120" x2="140" y2="120" stroke="#374151" stroke-width="2"/>
     <text x="0" y="116" fill="#374151" font-size="9">∥</text>
     <line x1="40" y1="20" x2="100" y2="150" stroke="#374151" stroke-width="2.5"/>
     <!-- Angle at top -->
-    <path d="M57,50 A18,18 0 0,1 48,33" fill="none" stroke="#6366f1" stroke-width="2"/>
+    <path d="M57,50 A18,18 0 0,1 48,33" fill="none" stroke="#3b82f6" stroke-width="2"/>
     <!-- Angle at bottom (corresponding) -->
-    <path d="M75,120 A18,18 0 0,1 66,103" fill="none" stroke="#6366f1" stroke-width="2"/>
-    <text x="60" y="43" class="lbl" fill="#6366f1">a</text>
-    <text x="78" y="113" class="lbl" fill="#6366f1">a</text>
+    <path d="M75,120 A18,18 0 0,1 66,103" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <text x="60" y="43" class="lbl" fill="#3b82f6">a</text>
+    <text x="78" y="113" class="lbl" fill="#3b82f6">a</text>
     <text x="20" y="165">a = a &nbsp;(equal)</text>
   </g>
   <!-- === Panel 2: Alternate (Z) === -->

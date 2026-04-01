@@ -32,7 +32,7 @@ export const note_olevel_physics_3_1_3 = {
         caption: 'Ray diagram demonstrating the law of reflection at a plane mirror surface',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
   <defs>
-    <marker id="ah13" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah13" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag13" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:12px;fill:#1e293b;}</style>
@@ -55,12 +55,12 @@ export const note_olevel_physics_3_1_3 = {
   <text x="160" y="240" fill="#475569" font-size="11">Plane Mirror</text>
   <line x1="200" y1="60" x2="200" y2="210" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 3"/>
   <text x="205" y="58" fill="#64748b" font-size="11">Normal</text>
-  <line x1="90" y1="60" x2="200" y2="200" stroke="#6366f1" stroke-width="2.5" marker-end="url(#ah13)"/>
-  <text x="72" y="52" fill="#6366f1" font-size="11">Incident ray</text>
+  <line x1="90" y1="60" x2="200" y2="200" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ah13)"/>
+  <text x="72" y="52" fill="#3b82f6" font-size="11">Incident ray</text>
   <line x1="200" y1="200" x2="310" y2="60" stroke="#10b981" stroke-width="2.5" marker-end="url(#ag13)"/>
   <text x="286" y="52" fill="#10b981" font-size="11">Reflected ray</text>
-  <path d="M186,200 A22,22 0 0,1 190,178" stroke="#6366f1" stroke-width="1.5" fill="none"/>
-  <text x="152" y="184" fill="#6366f1" font-weight="bold" font-size="15">i</text>
+  <path d="M186,200 A22,22 0 0,1 190,178" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+  <text x="152" y="184" fill="#3b82f6" font-weight="bold" font-size="15">i</text>
   <path d="M210,178 A22,22 0 0,1 214,200" stroke="#10b981" stroke-width="1.5" fill="none"/>
   <text x="218" y="184" fill="#10b981" font-weight="bold" font-size="15">r</text>
   <text x="130" y="264" fill="#1e40af" font-style="italic" font-size="14" font-weight="bold">∠i  =  ∠r</text>

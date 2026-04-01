@@ -87,7 +87,7 @@ export const note_olevel_physics_4_2_3 = {
     <text x="60" y="112" text-anchor="middle" fill="#64748b" font-size="9">V →</text>
     <text x="4" y="55" text-anchor="middle" fill="#64748b" font-size="9" transform="rotate(-90,4,55)">I →</text>
     <!-- Straight line through origin -->
-    <line x1="10" y1="100" x2="105" y2="5" stroke="#6366f1" stroke-width="2"/>
+    <line x1="10" y1="100" x2="105" y2="5" stroke="#3b82f6" stroke-width="2"/>
     <text x="55" y="125" text-anchor="middle" fill="#1e293b" font-size="10" font-weight="bold">A: Ohmic</text>
   </g>
   <!-- Graph B: Filament lamp -->

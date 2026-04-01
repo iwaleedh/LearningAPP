@@ -53,7 +53,7 @@ export const note_mathematics_5_4_1 = {
   
   <!-- Block -->
   <g transform="translate(180, 180) rotate(26.5)"> <!-- approx tan^-1(200/400) = 26.5 deg -->
-    <rect x="-30" y="-30" width="60" height="60" fill="#6366f1" rx="4" />
+    <rect x="-30" y="-30" width="60" height="60" fill="#3b82f6" rx="4" />
     
     <!-- Normal Reaction R (Perpendicular to plane) -->
     <path d="M 0 -30 L 0 -110" stroke="#ef4444" stroke-width="4" marker-end="url(#arrow-red-inc)"/>

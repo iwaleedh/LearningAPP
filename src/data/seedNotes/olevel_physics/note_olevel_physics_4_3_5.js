@@ -121,12 +121,12 @@ export const note_olevel_physics_4_3_5 = {
         svg: `<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- AND gate -->
   <g transform="translate(10,10)">
-    <text x="20" y="12" fill="#6366f1" font-weight="bold" font-size="11">AND</text>
+    <text x="20" y="12" fill="#3b82f6" font-weight="bold" font-size="11">AND</text>
     <line x1="0" y1="35" x2="20" y2="35" stroke="#333" stroke-width="2"/>
     <line x1="0" y1="55" x2="20" y2="55" stroke="#333" stroke-width="2"/>
-    <path d="M20,25 L20,65 C50,65 65,55 65,45 C65,35 50,25 20,25 Z" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
+    <path d="M20,25 L20,65 C50,65 65,55 65,45 C65,35 50,25 20,25 Z" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
     <line x1="65" y1="45" x2="80" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="25" y="49" fill="#6366f1">AND</text>
+    <text x="25" y="49" fill="#3b82f6">AND</text>
   </g>
   <!-- OR gate -->
   <g transform="translate(110,10)">

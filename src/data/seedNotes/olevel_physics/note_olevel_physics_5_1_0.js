@@ -10,7 +10,7 @@ export const note_olevel_physics_5_1_0 = {
   <rect width="520" height="300" fill="#0f172a" rx="8"/>
   <text x="260" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">Rutherford Alpha-Scattering Experiment</text>
   <!-- Source box -->
-  <rect x="20" y="130" width="55" height="40" rx="6" fill="#7c3aed" stroke="#5b21b6" stroke-width="2"/>
+  <rect x="20" y="130" width="55" height="40" rx="6" fill="#1d4ed8" stroke="#5b21b6" stroke-width="2"/>
   <text x="47" y="147" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">α source</text>
   <text x="47" y="161" text-anchor="middle" font-size="9" fill="#1e293b">(radium)</text>
   <!-- Lead collimator -->
@@ -24,8 +24,8 @@ export const note_olevel_physics_5_1_0 = {
   <circle cx="241" cy="150" r="5" fill="#ef4444"/>
   <text x="259" y="175" font-size="9" fill="#ef4444" font-weight="bold">nucleus</text>
   <!-- Straight-through particles (most) -->
-  <line x1="98" y1="150" x2="490" y2="150" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5"/>
-  <polygon points="320,146 330,150 320,154" fill="#7c3aed"/>
+  <line x1="98" y1="150" x2="490" y2="150" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="5"/>
+  <polygon points="320,146 330,150 320,154" fill="#1d4ed8"/>
   <!-- Slight deflection -->
   <line x1="98" y1="148" x2="246" y2="145" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4"/>
   <line x1="246" y1="145" x2="420" y2="105" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4"/>
@@ -39,7 +39,7 @@ export const note_olevel_physics_5_1_0 = {
   <ellipse cx="360" cy="150" rx="15" ry="110" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="6"/>
   <text x="485" y="154" text-anchor="middle" font-size="9" fill="#10b981">detector</text>
   <!-- Labels -->
-  <text x="480" y="145" font-size="8" fill="#7c3aed">most: straight</text>
+  <text x="480" y="145" font-size="8" fill="#1d4ed8">most: straight</text>
   <text x="430" y="100" font-size="8" fill="#3b82f6">few: small deflection</text>
   <text x="312" y="245" font-size="8" fill="#f97316">fewer: large deflection</text>
   <text x="100" y="112" font-size="8" fill="#dc2626">rare: backscatter</text>

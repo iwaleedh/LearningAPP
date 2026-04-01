@@ -55,12 +55,12 @@ export const note_olevel_maths_core_4_4_0 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 210" width="540" height="210">
   <style>
     text { font-family: sans-serif; font-size: 10px; fill: #374151; }
-    .name { font-weight: 700; fill: #6366f1; font-size: 11px; }
+    .name { font-weight: 700; fill: #3b82f6; font-size: 11px; }
     .symline { stroke: #ef4444; stroke-width: 1.5; stroke-dasharray: 5,3; }
   </style>
   <!-- Equilateral triangle (3 lines) -->
   <g transform="translate(20, 20)">
-    <polygon points="55,5 100,85 10,85" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="55,5 100,85 10,85" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
     <line x1="55" y1="5" x2="55" y2="85" class="symline"/>
     <line x1="10" y1="85" x2="77.5" y2="45" class="symline"/>
     <line x1="100" y1="85" x2="32.5" y2="45" class="symline"/>

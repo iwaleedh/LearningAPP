@@ -50,7 +50,7 @@ export const note_olevel_physics_1_7_0 = {
   <!-- Stage 1: ground moving -->
   <rect x="35" y="35" width="110" height="155" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="90" y="52" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">At launch</text>
-  <circle cx="90" cy="165" r="12" fill="#6366f1"/>
+  <circle cx="90" cy="165" r="12" fill="#3b82f6"/>
   <line x1="90" y1="153" x2="90" y2="125" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="90,125 86,134 94,134" fill="#2563eb"/>
   <text x="100" y="138" font-size="10" fill="#2563eb">v (max)</text>
@@ -59,13 +59,13 @@ export const note_olevel_physics_1_7_0 = {
   <!-- Stage 2: halfway up -->
   <rect x="165" y="35" width="110" height="155" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="220" y="52" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Halfway up</text>
-  <circle cx="220" cy="125" r="12" fill="#6366f1"/>
+  <circle cx="220" cy="125" r="12" fill="#3b82f6"/>
   <text x="220" y="195" text-anchor="middle" font-size="10" fill="#2563eb">KE = ½ max</text>
   <text x="220" y="207" text-anchor="middle" font-size="10" fill="#16a34a">GPE = ½ max</text>
   <!-- Stage 3: at top -->
   <rect x="295" y="35" width="110" height="155" fill="#1e293b" stroke="#e5e7eb" rx="6"/>
   <text x="350" y="52" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">At top</text>
-  <circle cx="350" cy="65" r="12" fill="#6366f1"/>
+  <circle cx="350" cy="65" r="12" fill="#3b82f6"/>
   <text x="350" y="195" text-anchor="middle" font-size="10" fill="#2563eb">KE = 0</text>
   <text x="350" y="207" text-anchor="middle" font-size="10" fill="#16a34a">GPE = max</text>
   <!-- Arrows between -->

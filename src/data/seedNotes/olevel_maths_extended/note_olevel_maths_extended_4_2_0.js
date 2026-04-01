@@ -49,7 +49,7 @@ export const note_olevel_maths_extended_4_2_0 = {
       id: 'svg-straight',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:14px;fill:#334155}line{stroke:#6366f1;stroke-width:2.5}.angle{fill:#e0e7ff;stroke:#6366f1;stroke-width:1.5}</style><line x1="30" y1="100" x2="370" y2="100"/><line x1="200" y1="100" x2="140" y2="20"/><path d="M 220 100 A 20 20 0 0 0 208 82" class="angle" fill="none"/><path d="M 180 100 A 20 20 0 0 1 190 82" class="angle" fill="none"/><text x="240" y="90"><em>a</em></text><text x="155" y="80"><em>b</em></text><text x="200" y="130" text-anchor="middle" font-weight="600" fill="#6366f1"><em>a</em> + <em>b</em> = 180°</text></svg>',
+        svg: '<svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:14px;fill:#334155}line{stroke:#3b82f6;stroke-width:2.5}.angle{fill:#e0e7ff;stroke:#3b82f6;stroke-width:1.5}</style><line x1="30" y1="100" x2="370" y2="100"/><line x1="200" y1="100" x2="140" y2="20"/><path d="M 220 100 A 20 20 0 0 0 208 82" class="angle" fill="none"/><path d="M 180 100 A 20 20 0 0 1 190 82" class="angle" fill="none"/><text x="240" y="90"><em>a</em></text><text x="155" y="80"><em>b</em></text><text x="200" y="130" text-anchor="middle" font-weight="600" fill="#3b82f6"><em>a</em> + <em>b</em> = 180°</text></svg>',
         caption: 'Angles on a straight line sum to 180°'
       }
     },
@@ -67,7 +67,7 @@ export const note_olevel_maths_extended_4_2_0 = {
       id: 'svg-point',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:13px;fill:#334155}line{stroke:#6366f1;stroke-width:2.5}</style><line x1="150" y1="100" x2="280" y2="100"/><line x1="150" y1="100" x2="50" y2="40"/><line x1="150" y1="100" x2="80" y2="170"/><line x1="150" y1="100" x2="250" y2="170"/><text x="195" y="88"><em>a</em></text><text x="115" y="65"><em>b</em></text><text x="100" y="140"><em>c</em></text><text x="185" y="145"><em>d</em></text><text x="150" y="195" text-anchor="middle" font-weight="600" fill="#6366f1"><em>a</em> + <em>b</em> + <em>c</em> + <em>d</em> = 360°</text></svg>',
+        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:13px;fill:#334155}line{stroke:#3b82f6;stroke-width:2.5}</style><line x1="150" y1="100" x2="280" y2="100"/><line x1="150" y1="100" x2="50" y2="40"/><line x1="150" y1="100" x2="80" y2="170"/><line x1="150" y1="100" x2="250" y2="170"/><text x="195" y="88"><em>a</em></text><text x="115" y="65"><em>b</em></text><text x="100" y="140"><em>c</em></text><text x="185" y="145"><em>d</em></text><text x="150" y="195" text-anchor="middle" font-weight="600" fill="#3b82f6"><em>a</em> + <em>b</em> + <em>c</em> + <em>d</em> = 360°</text></svg>',
         caption: 'Angles at a point sum to 360°'
       }
     },
@@ -85,7 +85,7 @@ export const note_olevel_maths_extended_4_2_0 = {
       id: 'svg-vert',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:14px;fill:#334155}line{stroke:#6366f1;stroke-width:2.5}</style><line x1="30" y1="160" x2="270" y2="40"/><line x1="30" y1="40" x2="270" y2="160"/><text x="155" y="60"><em>a</em></text><text x="125" y="105"><em>b</em></text><text x="155" y="150"><em>a</em></text><text x="175" y="105"><em>b</em></text><text x="150" y="190" text-anchor="middle" font-weight="600" fill="#6366f1">Vertically opposite angles are equal</text></svg>',
+        svg: '<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:14px;fill:#334155}line{stroke:#3b82f6;stroke-width:2.5}</style><line x1="30" y1="160" x2="270" y2="40"/><line x1="30" y1="40" x2="270" y2="160"/><text x="155" y="60"><em>a</em></text><text x="125" y="105"><em>b</em></text><text x="155" y="150"><em>a</em></text><text x="175" y="105"><em>b</em></text><text x="150" y="190" text-anchor="middle" font-weight="600" fill="#3b82f6">Vertically opposite angles are equal</text></svg>',
         caption: 'Vertically opposite angles'
       }
     },
@@ -113,7 +113,7 @@ export const note_olevel_maths_extended_4_2_0 = {
       id: 'svg-exterior',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:14px;fill:#334155}line,polygon{stroke:#6366f1;stroke-width:2.5;fill:none}</style><polygon points="100,30 50,160 250,160"/><line x1="250" y1="160" x2="370" y2="160"/><text x="100" y="25"><em>a</em></text><text x="65" y="150"><em>b</em></text><text x="230" y="150"><em>c</em></text><text x="300" y="150"><em>d</em></text><text x="200" y="195" text-anchor="middle" font-weight="600" fill="#6366f1"><em>d</em> = <em>a</em> + <em>b</em></text></svg>',
+        svg: '<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:system-ui;font-size:14px;fill:#334155}line,polygon{stroke:#3b82f6;stroke-width:2.5;fill:none}</style><polygon points="100,30 50,160 250,160"/><line x1="250" y1="160" x2="370" y2="160"/><text x="100" y="25"><em>a</em></text><text x="65" y="150"><em>b</em></text><text x="230" y="150"><em>c</em></text><text x="300" y="150"><em>d</em></text><text x="200" y="195" text-anchor="middle" font-weight="600" fill="#3b82f6"><em>d</em> = <em>a</em> + <em>b</em></text></svg>',
         caption: 'Exterior angle = sum of two interior opposite angles'
       }
     },

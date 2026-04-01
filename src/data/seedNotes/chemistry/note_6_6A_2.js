@@ -128,7 +128,7 @@ export const note_chemistry_6_6A_2 = {
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#555"/></marker>
   </defs>
-  <rect x="230" y="10" width="220" height="36" rx="6" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="230" y="10" width="220" height="36" rx="6" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="340" y="26" text-anchor="middle" font-weight="bold" fill="#4338ca">Unknown solution</text>
   <text x="340" y="40" text-anchor="middle" fill="#4338ca">Add excess NaOH</text>
   <line x1="340" y1="46" x2="340" y2="70" stroke="#555" marker-end="url(#arr)"/>
@@ -165,13 +165,13 @@ export const note_chemistry_6_6A_2 = {
   <line x1="140" y1="114" x2="140" y2="132" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- Confirm with NH₃ -->
-  <rect x="30" y="220" width="220" height="44" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="30" y="220" width="220" height="44" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="140" y="238" text-anchor="middle" font-weight="bold" fill="#4c1d95">Confirm: add excess NH₃</text>
   <text x="140" y="252" text-anchor="middle" fill="#4c1d95">(does ppt dissolve?)</text>
   <line x1="140" y1="202" x2="140" y2="220" stroke="#555" marker-end="url(#arr)"/>
 
   <!-- NH3 outcomes -->
-  <rect x="30" y="282" width="220" height="80" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.2"/>
+  <rect x="30" y="282" width="220" height="80" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.2"/>
   <text x="140" y="300" text-anchor="middle" font-weight="bold" fill="#4c1d95">NH₃ dissolves:</text>
   <text x="140" y="314" text-anchor="middle" fill="#4c1d95">Cu²⁺ → deep blue [Cu(NH₃)₄]²⁺</text>
   <text x="140" y="328" text-anchor="middle" fill="#4c1d95">Co²⁺ → yellow [Co(NH₃)₆]²⁺</text>

@@ -47,7 +47,7 @@ export const note_olevel_biology_19_19_2 = {
   <text x="85" y="120" text-anchor="middle" font-size="9" fill="#14532d">(Producers)</text>
 
   <!-- Animal box -->
-  <rect x="200" y="90" width="120" height="38" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
+  <rect x="200" y="90" width="120" height="38" rx="6" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/>
   <text x="260" y="107" text-anchor="middle" font-weight="bold" font-size="11" fill="#3730a3">Animals</text>
   <text x="260" y="120" text-anchor="middle" font-size="9" fill="#3730a3">(Consumers)</text>
 
@@ -72,8 +72,8 @@ export const note_olevel_biology_19_19_2 = {
   <text x="120" y="53" text-anchor="middle" font-size="9" fill="#ef4444">Respiration</text>
 
   <!-- Feeding: plant → animal -->
-  <line x1="140" y1="109" x2="200" y2="109" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowCC)"/>
-  <text x="172" y="103" text-anchor="middle" font-size="9" fill="#6366f1">Feeding</text>
+  <line x1="140" y1="109" x2="200" y2="109" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowCC)"/>
+  <text x="172" y="103" text-anchor="middle" font-size="9" fill="#3b82f6">Feeding</text>
 
   <!-- Animal respiration: animal → atm -->
   <line x1="265" y1="90" x2="265" y2="41" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowRed)"/>
@@ -102,7 +102,7 @@ export const note_olevel_biology_19_19_2 = {
 
   <defs>
     <marker id="arrowCC" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
-      <path d="M0,0 L7,3.5 L0,7 Z" fill="#6366f1"/>
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#3b82f6"/>
     </marker>
     <marker id="arrowRed" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
       <path d="M0,0 L7,3.5 L0,7 Z" fill="#ef4444"/>

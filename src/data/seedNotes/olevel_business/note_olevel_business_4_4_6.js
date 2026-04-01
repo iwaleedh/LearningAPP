@@ -111,8 +111,8 @@ export const note_olevel_business_4_4_6 = {
   <text x="390" y="305" text-anchor="middle" font-size="10" fill="#64748b">800</text>
   <text x="470" y="305" text-anchor="middle" font-size="10" fill="#64748b">1000</text>
   <!-- Fixed cost line (horizontal at 1500 = y:233) -->
-  <line x1="70" y1="233" x2="480" y2="233" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
-  <text x="484" y="237" font-size="10" fill="#6366f1">Fixed costs</text>
+  <line x1="70" y1="233" x2="480" y2="233" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="484" y="237" font-size="10" fill="#3b82f6">Fixed costs</text>
   <!-- Total cost line: starts at (0,1500)=y:233, at output 1000 total cost=3500, y=233-(2000/6000*260)=233-86.7=146 -->
   <!-- Scale: 6000 maps to 260px height (y from 290 to 30 = 260px). 1500 = 65px from bottom = y:225.
        At output 1000: TC = 1500 + 1000*1.5 = 3000. y = 290 - (3000/6000)*260 = 290-130 = 160 -->

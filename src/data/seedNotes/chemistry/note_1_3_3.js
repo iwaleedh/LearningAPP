@@ -125,7 +125,7 @@ export const note_chemistry_1_3_3 = {
   <text x="185" y="76"  text-anchor="middle" fill="white" font-size="8">2e⁻</text>
 
   <!-- Al: 660°C → h≈89.8 ≈ 90 -->
-  <rect x="260" y="25" width="50" height="90" fill="#6366f1"/>
+  <rect x="260" y="25" width="50" height="90" fill="#3b82f6"/>
   <text x="285" y="130" text-anchor="middle" fill="#374151" font-size="10">Al</text>
   <text x="285" y="20"  text-anchor="middle" fill="#4338ca" font-size="9">660°C</text>
   <text x="285" y="75"  text-anchor="middle" fill="white" font-size="8">3e⁻</text>

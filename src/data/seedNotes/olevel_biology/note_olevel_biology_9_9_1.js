@@ -92,7 +92,7 @@ export const note_olevel_biology_9_9_1 = {
         caption: 'Labelled diagram of the human heart showing chambers, valves, and major blood vessels',
         svg: `<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
   <rect width="480" height="380" fill="#3d1212" rx="12"/>
-  <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#7c3aed">The Mammalian Heart</text>
+  <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">The Mammalian Heart</text>
   <!-- Heart outline -->
   <path d="M240 340 Q120 260 100 180 Q80 100 160 90 Q200 85 240 130 Q280 85 320 90 Q400 100 380 180 Q360 260 240 340 Z" fill="#7f1d1d" stroke="#b91c1c" stroke-width="2.5"/>
   <!-- Septum -->
@@ -135,13 +135,13 @@ export const note_olevel_biology_9_9_1 = {
   <!-- Septum label -->
   <text x="240" y="340" text-anchor="middle" font-size="9" fill="#7f1d1d">Septum</text>
   <!-- Thick wall arrow -->
-  <line x1="360" y1="240" x2="350" y2="255" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arrP)"/>
-  <text x="390" y="237" text-anchor="middle" font-size="9" fill="#7c3aed">Thick</text>
-  <text x="390" y="248" text-anchor="middle" font-size="9" fill="#7c3aed">muscular</text>
-  <text x="390" y="259" text-anchor="middle" font-size="9" fill="#7c3aed">wall</text>
+  <line x1="360" y1="240" x2="350" y2="255" stroke="#1d4ed8" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <text x="390" y="237" text-anchor="middle" font-size="9" fill="#1d4ed8">Thick</text>
+  <text x="390" y="248" text-anchor="middle" font-size="9" fill="#1d4ed8">muscular</text>
+  <text x="390" y="259" text-anchor="middle" font-size="9" fill="#1d4ed8">wall</text>
   <defs>
     <marker id="arrP" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/>
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1d4ed8"/>
     </marker>
   </defs>
 </svg>`

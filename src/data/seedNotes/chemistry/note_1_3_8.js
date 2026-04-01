@@ -43,9 +43,9 @@ export const note_chemistry_1_3_8 = {
   <text x="260" y="144" fill="#1e40af" font-weight="bold" font-size="10">134 pm</text>
 
   <!-- C≡C  triple: 120 pm -->
-  <rect x="120" y="171" width="120" height="32" rx="3" fill="#a855f7" stroke="#7c3aed" stroke-width="1"/>
-  <text x="115" y="192" text-anchor="end" fill="#7c3aed" font-size="10">C≡C</text>
-  <text x="246" y="192" fill="#7c3aed" font-weight="bold" font-size="10">120 pm</text>
+  <rect x="120" y="171" width="120" height="32" rx="3" fill="#a855f7" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="115" y="192" text-anchor="end" fill="#1d4ed8" font-size="10">C≡C</text>
+  <text x="246" y="192" fill="#1d4ed8" font-weight="bold" font-size="10">120 pm</text>
 
   <!-- scale marks -->
   <text x="120" y="240" text-anchor="middle" fill="#374151" font-size="9">0</text>
@@ -72,9 +72,9 @@ export const note_chemistry_1_3_8 = {
   <text x="588" y="144" fill="#1e40af" font-weight="bold" font-size="10">614 kJ mol⁻¹</text>
 
   <!-- C≡C triple: 839 kJ/mol → ~243px -->
-  <rect x="405" y="171" width="243" height="32" rx="3" fill="#a855f7" stroke="#7c3aed" stroke-width="1"/>
-  <text x="400" y="192" text-anchor="end" fill="#7c3aed" font-size="10">C≡C</text>
-  <text x="653" y="192" fill="#7c3aed" font-weight="bold" font-size="10">839 kJ mol⁻¹</text>
+  <rect x="405" y="171" width="243" height="32" rx="3" fill="#a855f7" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="400" y="192" text-anchor="end" fill="#1d4ed8" font-size="10">C≡C</text>
+  <text x="653" y="192" fill="#1d4ed8" font-weight="bold" font-size="10">839 kJ mol⁻¹</text>
 
   <!-- scale marks -->
   <text x="405" y="240" text-anchor="middle" fill="#374151" font-size="9">0</text>

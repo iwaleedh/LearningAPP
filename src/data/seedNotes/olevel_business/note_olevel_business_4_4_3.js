@@ -69,8 +69,8 @@ export const note_olevel_business_4_4_3 = {
   <text x="270" y="290" text-anchor="middle" font-size="12" fill="#334155">Time</text>
   <text x="18" y="150" text-anchor="middle" font-size="12" fill="#334155" transform="rotate(-90,18,150)">Stock Level (units)</text>
   <!-- Maximum stock line -->
-  <line x1="60" y1="35" x2="480" y2="35" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="6,3"/>
-  <text x="484" y="39" font-size="10" fill="#6366f1">Max stock (500)</text>
+  <line x1="60" y1="35" x2="480" y2="35" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="484" y="39" font-size="10" fill="#3b82f6">Max stock (500)</text>
   <!-- Reorder level line -->
   <line x1="60" y1="165" x2="480" y2="165" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,3"/>
   <text x="484" y="169" font-size="10" fill="#f59e0b">Reorder level (300)</text>
@@ -90,8 +90,8 @@ export const note_olevel_business_4_4_3 = {
   <text x="260" y="275" text-anchor="middle" font-size="9" fill="#f59e0b">Order</text>
   <text x="360" y="275" text-anchor="middle" font-size="9" fill="#f59e0b">Order</text>
   <!-- Reorder quantity brace -->
-  <line x1="55" y1="35" x2="55" y2="165" stroke="#6366f1" stroke-width="1"/>
-  <text x="12" y="105" font-size="9" fill="#6366f1" transform="rotate(-90,12,105)">Reorder qty</text>
+  <line x1="55" y1="35" x2="55" y2="165" stroke="#3b82f6" stroke-width="1"/>
+  <text x="12" y="105" font-size="9" fill="#3b82f6" transform="rotate(-90,12,105)">Reorder qty</text>
   <!-- Title -->
   <text x="270" y="20" text-anchor="middle" font-size="13" font-weight="600" fill="#1e293b">Stock Control Chart</text>
 </svg>`,

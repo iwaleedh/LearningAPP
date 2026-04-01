@@ -32,7 +32,7 @@ export const note_olevel_physics_3_2_0 = {
         caption: 'Ray diagram showing virtual image formed in a plane mirror (image I is behind the mirror)',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
   <defs>
-    <marker id="ah20" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah20" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag20" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
@@ -58,16 +58,16 @@ export const note_olevel_physics_3_2_0 = {
   <line x1="360" y1="80" x2="360" y2="240" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 3"/>
   <text x="365" y="76" fill="#f59e0b" font-weight="bold">I</text>
   <text x="355" y="258" fill="#f59e0b" font-size="10">(image)</text>
-  <line x1="120" y1="80" x2="240" y2="80" stroke="#6366f1" stroke-width="2" marker-end="url(#ah20)"/>
+  <line x1="120" y1="80" x2="240" y2="80" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah20)"/>
   <line x1="240" y1="80" x2="60" y2="200" stroke="#10b981" stroke-width="2" marker-end="url(#ag20)"/>
-  <line x1="120" y1="160" x2="240" y2="120" stroke="#6366f1" stroke-width="2" marker-end="url(#ah20)"/>
+  <line x1="120" y1="160" x2="240" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah20)"/>
   <line x1="240" y1="120" x2="90" y2="240" stroke="#10b981" stroke-width="2" marker-end="url(#ag20)"/>
   <line x1="240" y1="80" x2="360" y2="80" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
   <line x1="240" y1="120" x2="360" y2="120" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
   <line x1="105" y1="160" x2="255" y2="160" stroke="#374151" stroke-width="1" stroke-dasharray="3 2"/>
   <text x="130" y="175" fill="#374151" font-size="10">d (object)</text>
   <text x="258" y="175" fill="#374151" font-size="10">d (image)</text>
-  <text x="60" y="290" fill="#6366f1" font-size="10">→ light from object</text>
+  <text x="60" y="290" fill="#3b82f6" font-size="10">→ light from object</text>
   <text x="200" y="290" fill="#10b981" font-size="10">→ reflected rays to eye</text>
 </svg>`,
       },

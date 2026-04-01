@@ -39,7 +39,7 @@ export const note_chemistry_2_9_2 = {
                 svg: `<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <radialGradient id="gradLow" cx="30%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="0%" stop-color="#2563eb" />
       <stop offset="100%" stop-color="#1e1b4b" />
     </radialGradient>
     <radialGradient id="gradHigh" cx="30%" cy="30%" r="70%">

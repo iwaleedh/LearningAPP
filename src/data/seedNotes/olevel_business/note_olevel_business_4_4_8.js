@@ -108,7 +108,7 @@ export const note_olevel_business_4_4_8 = {
   <text x="18" y="140" text-anchor="middle" font-size="12" fill="#334155" transform="rotate(-90,18,140)">Average Cost</text>
   <!-- U-shaped LRAC curve approximated with a path -->
   <path d="M 80,200 C 130,140 180,100 240,95 C 300,90 330,100 380,160 C 400,180 420,200 440,220"
-        fill="none" stroke="#6366f1" stroke-width="3"/>
+        fill="none" stroke="#3b82f6" stroke-width="3"/>
   <!-- Minimum point marker -->
   <circle cx="245" cy="94" r="5" fill="#10b981"/>
   <!-- Region labels -->
@@ -120,11 +120,11 @@ export const note_olevel_business_4_4_8 = {
   <line x1="245" y1="94" x2="245" y2="240" stroke="#10b981" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="245" y="253" text-anchor="middle" font-size="10" fill="#10b981">Optimal scale</text>
   <!-- Arrow labels -->
-  <text x="130" y="200" text-anchor="middle" font-size="10" fill="#6366f1">↓ Unit cost falling</text>
+  <text x="130" y="200" text-anchor="middle" font-size="10" fill="#3b82f6">↓ Unit cost falling</text>
   <text x="360" y="175" text-anchor="middle" font-size="10" fill="#ef4444">↑ Unit cost rising</text>
   <!-- Title -->
   <text x="248" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="#1e293b">Long-Run Average Cost Curve (LRAC)</text>
-  <text x="435" y="238" font-size="10" fill="#6366f1">LRAC</text>
+  <text x="435" y="238" font-size="10" fill="#3b82f6">LRAC</text>
 </svg>`,
         caption: 'The U-shaped LRAC curve: economies of scale lower unit costs as output grows; diseconomies of scale raise unit costs beyond the optimal scale.'
       }

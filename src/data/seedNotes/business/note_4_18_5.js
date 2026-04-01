@@ -65,7 +65,7 @@ export const note_business_4_18_5 = {
       <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
     </marker>
   </defs>
-  <rect x="190" y="14" width="220" height="52" rx="8" fill="#6366f1" stroke="#4338ca" stroke-width="2"/>
+  <rect x="190" y="14" width="220" height="52" rx="8" fill="#3b82f6" stroke="#4338ca" stroke-width="2"/>
   <text x="300" y="37" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Where to produce?</text>
   <text x="300" y="55" text-anchor="middle" font-size="11" fill="#2d2d72">Production location decision</text>
   <line x1="240" y1="66" x2="148" y2="128" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>

@@ -97,7 +97,7 @@ export const note_olevel_physics_4_3_3 = {
         caption: 'Relay circuit: control circuit (left) and switched circuit (right)',
         svg: `<svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Control circuit -->
-  <text x="10" y="30" fill="#6366f1" font-weight="bold">Control Circuit</text>
+  <text x="10" y="30" fill="#3b82f6" font-weight="bold">Control Circuit</text>
   <!-- Battery symbol -->
   <line x1="30" y1="50" x2="30" y2="150" stroke="#333" stroke-width="2"/>
   <line x1="20" y1="80" x2="40" y2="80" stroke="#333" stroke-width="3"/>
@@ -107,9 +107,9 @@ export const note_olevel_physics_4_3_3 = {
   <line x1="30" y1="50" x2="100" y2="50" stroke="#333" stroke-width="2"/>
   <line x1="30" y1="150" x2="100" y2="150" stroke="#333" stroke-width="2"/>
   <!-- Coil (electromagnet) -->
-  <rect x="100" y="60" width="60" height="80" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
-  <text x="108" y="95" fill="#6366f1">Coil</text>
-  <text x="105" y="110" fill="#6366f1" font-size="9">(electromagnet)</text>
+  <rect x="100" y="60" width="60" height="80" rx="4" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
+  <text x="108" y="95" fill="#3b82f6">Coil</text>
+  <text x="105" y="110" fill="#3b82f6" font-size="9">(electromagnet)</text>
   <!-- Core (iron) -->
   <rect x="125" y="145" width="10" height="40" fill="#9ca3af" stroke="#4b5563" stroke-width="1"/>
   <text x="112" y="195" fill="#4b5563" font-size="9">iron core</text>
@@ -119,7 +119,7 @@ export const note_olevel_physics_4_3_3 = {
   <!-- Pivot -->
   <polygon points="155,185 165,175 165,195" fill="#374151"/>
   <!-- Contacts -->
-  <text x="200" y="120" fill="#6366f1" font-weight="bold">Switched Circuit</text>
+  <text x="200" y="120" fill="#3b82f6" font-weight="bold">Switched Circuit</text>
   <line x1="240" y1="60" x2="240" y2="175" stroke="#666" stroke-width="2"/>
   <line x1="260" y1="60" x2="260" y2="155" stroke="#666" stroke-width="2"/>
   <circle cx="250" cy="175" r="5" fill="#10b981"/>

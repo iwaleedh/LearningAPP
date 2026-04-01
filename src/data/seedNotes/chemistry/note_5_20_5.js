@@ -98,7 +98,7 @@ export const note_chemistry_5_20_5 = {
   <text x='30' y='216' font-size='9' fill='#1d4ed8'>mixture</text>
   <text x='46' y='266' font-size='10' fill='#dc2626'>▲ heat</text>
   <!-- Vapour arrow -->
-  <text x='108' y='145' font-size='9' fill='#7c3aed'>→ vapour</text>
+  <text x='108' y='145' font-size='9' fill='#1d4ed8'>→ vapour</text>
 </svg>`,
         caption: 'Simple distillation: condenser is angled downward; product collected in separate receiving flask. Watch thermometer — a temperature spike signals a new fraction; swap the receiving flask at that point.'
       }
@@ -176,7 +176,7 @@ export const note_chemistry_5_20_5 = {
   <polygon points='187,91 195,95 187,99' fill='#0ea5e9'/>
   <text x='197' y='98' font-size='9' fill='#0ea5e9'>water out</text>
   <!-- Vapour arrow (up inside condenser) -->
-  <text x='133' y='170' font-size='9' fill='#7c3aed'>↑ vapour</text>
+  <text x='133' y='170' font-size='9' fill='#1d4ed8'>↑ vapour</text>
   <!-- Condensate arrow (down) -->
   <text x='133' y='200' font-size='9' fill='#059669'>↓ condensate</text>
   <text x='120' y='246' font-size='9' fill='#059669'>returns to flask</text>
@@ -292,10 +292,10 @@ export const note_chemistry_5_20_5 = {
   <ellipse cx='215' cy='182' rx='43' ry='13' fill='#0a3020' opacity='0.85'/>
   <text x='192' y='186' font-size='8' fill='#15803d'>water layer</text>
   <!-- Agitation bubbles from steam -->
-  <circle cx='200' cy='150' r='3' fill='none' stroke='#7c3aed' stroke-width='1.2'/>
-  <circle cx='218' cy='144' r='4' fill='none' stroke='#7c3aed' stroke-width='1.2'/>
-  <circle cx='233' cy='148' r='3' fill='none' stroke='#7c3aed' stroke-width='1.2'/>
-  <text x='192' y='140' font-size='8' fill='#7c3aed'>agitation</text>
+  <circle cx='200' cy='150' r='3' fill='none' stroke='#1d4ed8' stroke-width='1.2'/>
+  <circle cx='218' cy='144' r='4' fill='none' stroke='#1d4ed8' stroke-width='1.2'/>
+  <circle cx='233' cy='148' r='3' fill='none' stroke='#1d4ed8' stroke-width='1.2'/>
+  <text x='192' y='140' font-size='8' fill='#1d4ed8'>agitation</text>
   <!-- Reaction flask neck and still head -->
   <line x1='215' y1='133' x2='272' y2='133' stroke='#4338ca' stroke-width='2'/>
   <!-- Condenser (angled right-down) -->

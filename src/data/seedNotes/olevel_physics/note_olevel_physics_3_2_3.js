@@ -48,7 +48,7 @@ export const note_olevel_physics_3_2_3 = {
         caption: 'Converging lens focusing parallel rays to a real principal focus F',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240">
   <defs>
-    <marker id="ah23" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah23" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
   <line x1="30" y1="120" x2="450" y2="120" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 3"/>
@@ -57,12 +57,12 @@ export const note_olevel_physics_3_2_3 = {
   <path d="M240,30 Q220,120 240,210" stroke="#0e7490" stroke-width="3.5" fill="none"/>
   <text x="245" y="220" fill="#0e7490" font-weight="bold">Converging</text>
   <text x="252" y="232" fill="#0e7490" font-weight="bold">lens</text>
-  <line x1="35" y1="60" x2="240" y2="60" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23)"/>
-  <line x1="240" y1="60" x2="360" y2="120" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23)"/>
-  <line x1="35" y1="120" x2="240" y2="120" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23)"/>
-  <line x1="240" y1="120" x2="360" y2="120" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23)"/>
-  <line x1="35" y1="180" x2="240" y2="180" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23)"/>
-  <line x1="240" y1="180" x2="360" y2="120" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23)"/>
+  <line x1="35" y1="60" x2="240" y2="60" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23)"/>
+  <line x1="240" y1="60" x2="360" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23)"/>
+  <line x1="35" y1="120" x2="240" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23)"/>
+  <line x1="240" y1="120" x2="360" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23)"/>
+  <line x1="35" y1="180" x2="240" y2="180" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23)"/>
+  <line x1="240" y1="180" x2="360" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23)"/>
   <circle cx="360" cy="120" r="5" fill="#ef4444"/>
   <text x="353" y="112" fill="#ef4444" font-weight="bold">F</text>
   <line x1="360" y1="112" x2="360" y2="128" stroke="#ef4444" stroke-width="1.5"/>
@@ -85,7 +85,7 @@ export const note_olevel_physics_3_2_3 = {
         caption: 'Diverging lens spreading parallel rays — virtual focus F is on the same side as the incoming rays',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220">
   <defs>
-    <marker id="ah23d" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah23d" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ad23" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#94a3b8"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
@@ -93,13 +93,13 @@ export const note_olevel_physics_3_2_3 = {
   <path d="M240,25 Q220,110 240,195" stroke="#0e7490" stroke-width="3.5" fill="none"/>
   <path d="M240,25 Q260,110 240,195" stroke="#0e7490" stroke-width="3.5" fill="none"/>
   <text x="245" y="210" fill="#0e7490" font-weight="bold">Diverging lens</text>
-  <line x1="35" y1="55" x2="240" y2="55" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23d)"/>
-  <line x1="240" y1="55" x2="430" y2="85" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23d)"/>
+  <line x1="35" y1="55" x2="240" y2="55" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23d)"/>
+  <line x1="240" y1="55" x2="430" y2="85" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23d)"/>
   <line x1="240" y1="55" x2="130" y2="110" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ad23)"/>
-  <line x1="35" y1="110" x2="240" y2="110" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23d)"/>
-  <line x1="240" y1="110" x2="430" y2="110" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23d)"/>
-  <line x1="35" y1="165" x2="240" y2="165" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23d)"/>
-  <line x1="240" y1="165" x2="430" y2="135" stroke="#6366f1" stroke-width="2" marker-end="url(#ah23d)"/>
+  <line x1="35" y1="110" x2="240" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23d)"/>
+  <line x1="240" y1="110" x2="430" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23d)"/>
+  <line x1="35" y1="165" x2="240" y2="165" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23d)"/>
+  <line x1="240" y1="165" x2="430" y2="135" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah23d)"/>
   <line x1="240" y1="165" x2="130" y2="110" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ad23)"/>
   <circle cx="130" cy="110" r="5" fill="#ef4444"/>
   <text x="105" y="103" fill="#ef4444" font-weight="bold">F</text>

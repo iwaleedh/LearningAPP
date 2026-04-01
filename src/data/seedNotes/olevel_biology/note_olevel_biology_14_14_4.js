@@ -45,14 +45,14 @@ export const note_olevel_biology_14_14_4 = {
   <line x1="120" y1="80" x2="163" y2="80" stroke="#374151" stroke-width="2" marker-end="url(#arr)"/>
   <line x1="265" y1="80" x2="313" y2="80" stroke="#374151" stroke-width="2" marker-end="url(#arr)"/>
   <!-- Feedback arrow back -->
-  <path d="M415 100 Q415 155 260 155 Q110 155 110 100" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr2)"/>
-  <text x="260" y="175" text-anchor="middle" font-size="10" fill="#6366f1">Returns to normal (negative feedback)</text>
+  <path d="M415 100 Q415 155 260 155 Q110 155 110 100" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr2)"/>
+  <text x="260" y="175" text-anchor="middle" font-size="10" fill="#3b82f6">Returns to normal (negative feedback)</text>
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#374151"/>
     </marker>
     <marker id="arr2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#6366f1"/>
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
     </marker>
   </defs>
 </svg>`

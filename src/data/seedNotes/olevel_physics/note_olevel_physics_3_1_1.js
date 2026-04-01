@@ -58,17 +58,17 @@ export const note_olevel_physics_3_1_1 = {
         caption: 'Transverse wave (top) and longitudinal wave (bottom) — comparing oscillation direction with wave travel direction',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="500" height="280">
   <defs>
-    <marker id="ahT" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ahT" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ahL" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#f59e0b"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
-  <text x="10" y="20" font-weight="bold" font-size="13" fill="#6366f1">Transverse Wave</text>
+  <text x="10" y="20" font-weight="bold" font-size="13" fill="#3b82f6">Transverse Wave</text>
   <text x="10" y="35" fill="#64748b">oscillation ↕  energy →</text>
-  <line x1="40" y1="80" x2="455" y2="80" stroke="#6366f1" stroke-width="1.5" marker-end="url(#ahT)"/>
-  <text x="460" y="83" fill="#6366f1" font-size="10">Energy</text>
-  <path d="M40,80 C60,80 70,45 100,45 C130,45 140,80 160,80 C180,80 190,115 220,115 C250,115 260,80 280,80 C300,80 310,45 340,45 C370,45 380,80 400,80 C420,80 430,115 455,115" stroke="#6366f1" stroke-width="2.5" fill="none"/>
-  <text x="100" y="39" text-anchor="middle" fill="#6366f1" font-size="10">crest</text>
-  <text x="220" y="130" text-anchor="middle" fill="#6366f1" font-size="10">trough</text>
+  <line x1="40" y1="80" x2="455" y2="80" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#ahT)"/>
+  <text x="460" y="83" fill="#3b82f6" font-size="10">Energy</text>
+  <path d="M40,80 C60,80 70,45 100,45 C130,45 140,80 160,80 C180,80 190,115 220,115 C250,115 260,80 280,80 C300,80 310,45 340,45 C370,45 380,80 400,80 C420,80 430,115 455,115" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
+  <text x="100" y="39" text-anchor="middle" fill="#3b82f6" font-size="10">crest</text>
+  <text x="220" y="130" text-anchor="middle" fill="#3b82f6" font-size="10">trough</text>
   <line x1="38" y1="132" x2="38" y2="55" stroke="#94a3b8" stroke-width="1.5"/>
   <text x="5" y="95" fill="#94a3b8" font-size="9">↕ oscillation</text>
   <text x="10" y="160" font-weight="bold" font-size="13" fill="#f59e0b">Longitudinal Wave</text>

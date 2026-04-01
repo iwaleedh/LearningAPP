@@ -51,7 +51,7 @@ export const note_olevel_biology_21_21_2 = {
   <text x="148" y="55" font-size="9" fill="#374151">Restriction</text>
   <text x="148" y="65" font-size="9" fill="#374151">enzyme cuts</text>
   <!-- Isolated gene -->
-  <rect x="168" y="47" width="90" height="30" rx="5" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="168" y="47" width="90" height="30" rx="5" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="213" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e293b">Insulin gene</text>
   <!-- Plasmid -->
   <circle cx="90" cy="170" r="40" fill="none" stroke="#16a34a" stroke-width="2.5"/>
@@ -62,12 +62,12 @@ export const note_olevel_biology_21_21_2 = {
   <text x="30" y="110" font-size="9" fill="#374151">Cut with same</text>
   <text x="30" y="122" font-size="9" fill="#374151">restriction enzyme</text>
   <!-- Arrow from gene to plasmid -->
-  <line x1="213" y1="78" x2="128" y2="145" stroke="#7c3aed" stroke-width="2" marker-end="url(#gm2)"/>
-  <text x="175" y="125" font-size="9" fill="#7c3aed">DNA ligase</text>
-  <text x="175" y="136" font-size="9" fill="#7c3aed">joins gene</text>
+  <line x1="213" y1="78" x2="128" y2="145" stroke="#1d4ed8" stroke-width="2" marker-end="url(#gm2)"/>
+  <text x="175" y="125" font-size="9" fill="#1d4ed8">DNA ligase</text>
+  <text x="175" y="136" font-size="9" fill="#1d4ed8">joins gene</text>
   <!-- Recombinant plasmid -->
   <circle cx="280" cy="170" r="40" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-  <rect x="260" y="132" width="40" height="14" rx="4" fill="#2d1b69" stroke="#7c3aed" stroke-width="1"/>
+  <rect x="260" y="132" width="40" height="14" rx="4" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1"/>
   <text x="280" y="144" text-anchor="middle" font-size="8" fill="#1e293b">Ins. gene</text>
   <text x="280" y="175" text-anchor="middle" font-size="10" fill="#166534">Recombinant</text>
   <text x="280" y="188" text-anchor="middle" font-size="10" fill="#166534">plasmid</text>
@@ -86,7 +86,7 @@ export const note_olevel_biology_21_21_2 = {
   <text x="260" y="278" text-anchor="middle" font-size="10" fill="#374151">Insulin extracted, purified and used to treat diabetes</text>
   <defs>
     <marker id="gm1" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#374151"/></marker>
-    <marker id="gm2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#7c3aed"/></marker>
+    <marker id="gm2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#1d4ed8"/></marker>
     <marker id="gm3" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#374151"/></marker>
     <marker id="gm4" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#374151"/></marker>
   </defs>

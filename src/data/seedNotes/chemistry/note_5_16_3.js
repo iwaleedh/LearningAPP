@@ -28,12 +28,12 @@ export const note_chemistry_5_16_3 = {
   <text x="30" y="96" font-size="11" fill="#dc2626">E° = −0.76 V</text>
   <text x="230" y="96" font-size="11" fill="#16a34a">E° = +0.34 V</text>
   <!-- Arrows & labels -->
-  <line x1="40" y1="105" x2="40" y2="120" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="305" y1="105" x2="305" y2="120" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="15" y="138" font-size="10" fill="#6366f1">LEFT: Oxidation</text>
-  <text x="255" y="138" font-size="10" fill="#6366f1">RIGHT: Reduction</text>
-  <text x="15" y="152" font-size="10" fill="#6366f1">(Anode, −ve)</text>
-  <text x="255" y="152" font-size="10" fill="#6366f1">(Cathode, +ve)</text>
+  <line x1="40" y1="105" x2="40" y2="120" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="305" y1="105" x2="305" y2="120" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="15" y="138" font-size="10" fill="#3b82f6">LEFT: Oxidation</text>
+  <text x="255" y="138" font-size="10" fill="#3b82f6">RIGHT: Reduction</text>
+  <text x="15" y="152" font-size="10" fill="#3b82f6">(Anode, −ve)</text>
+  <text x="255" y="152" font-size="10" fill="#3b82f6">(Cathode, +ve)</text>
   <!-- Electron flow arrow -->
   <line x1="60" y1="65" x2="280" y2="65" stroke="#f59e0b" stroke-width="2" marker-end="url(#earr)"/>
   <text x="140" y="55" text-anchor="middle" font-size="11" fill="#b45309" font-weight="bold">e⁻ flow (external circuit)</text>
@@ -44,7 +44,7 @@ export const note_chemistry_5_16_3 = {
   <!-- Arrow defs -->
   <defs>
     <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#6366f1"/>
+      <path d="M0,0 L6,3 L0,6 Z" fill="#3b82f6"/>
     </marker>
     <marker id="earr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
       <path d="M0,0 L6,3 L0,6 Z" fill="#f59e0b"/>

@@ -7,6 +7,15 @@ import {
   Clock, CheckCircle, Upload, FileText, AlertCircle, Loader,
 } from 'lucide-react';
 
+const ACCEPTED_PAYMENT_MIME_TYPES = new Set([
+  'application/pdf',
+  'image/jpeg',
+  'image/jpg',
+  'image/png',
+  'image/webp',
+]);
+const MAX_PAYMENT_FILE_SIZE = 10 * 1024 * 1024;
+
 const PLANS = [
   {
     id: 'monthly',
@@ -40,12 +49,42 @@ function PaymentForm({ onSubmitted }) {
   const generateUploadUrl  = useMutation(api.paymentRequests.generateUploadUrl);
   const submitPaymentRequest = useMutation(api.paymentRequests.submitPaymentRequest);
 
+  useEffect(() => {
+    return () => {
+      if (preview) {
+        URL.revokeObjectURL(preview);
+      }
+    };
+  }, [preview]);
+
   const handleFile = (e) => {
     const f = e.target.files?.[0];
     if (!f) return;
+
+    const mimeType = (f.type || '').toLowerCase();
+    if (!ACCEPTED_PAYMENT_MIME_TYPES.has(mimeType)) {
+      setFile(null);
+      setPreview(null);
+      setError('Please upload a JPG, PNG, WEBP, or PDF payment slip.');
+      if (fileRef.current) {
+        fileRef.current.value = '';
+      }
+      return;
+    }
+
+    if (f.size > MAX_PAYMENT_FILE_SIZE) {
+      setFile(null);
+      setPreview(null);
+      setError('Payment slips must be 10MB or smaller.');
+      if (fileRef.current) {
+        fileRef.current.value = '';
+      }
+      return;
+    }
+
     setFile(f);
     setError('');
-    if (f.type.startsWith('image/')) {
+    if (mimeType.startsWith('image/')) {
       setPreview(URL.createObjectURL(f));
     } else {
       setPreview(null);
@@ -280,7 +319,7 @@ export default function PendingApprovalPage() {
   }
 
   // Loading state — wait for both queries
-  if (paymentReq === undefined) {
+  if (statusResult === undefined || paymentReq === undefined) {
     return (
       <div className="pending-page pending-page--payment">
         <div className="payment-page-card card" style={{ alignItems: 'center', justifyContent: 'center', minHeight: 200 }}>

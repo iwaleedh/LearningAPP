@@ -78,13 +78,13 @@ export const note_olevel_maths_core_3_1_2 = {
   <text x="27" y="53" text-anchor="end" fill="#888" font-size="10">4</text>
   <text x="27" y="23" text-anchor="end" fill="#888" font-size="10">5</text>
   <!-- Line AB: A(1,1)→(60,140), B(5,5)→(180,20) -->
-  <line x1="60" y1="140" x2="180" y2="20" stroke="#6366f1" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="60" y1="140" x2="180" y2="20" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4,2"/>
   <!-- Midpoint M(3,3)→(120,80) -->
   <circle cx="120" cy="80" r="5" fill="#f59e0b"/>
   <text x="126" y="78" fill="#f59e0b" font-weight="bold">M(3,3)</text>
   <!-- Point A -->
-  <circle cx="60" cy="140" r="5" fill="#6366f1"/>
-  <text x="38" y="138" fill="#6366f1" font-weight="bold">A(1,1)</text>
+  <circle cx="60" cy="140" r="5" fill="#3b82f6"/>
+  <text x="38" y="138" fill="#3b82f6" font-weight="bold">A(1,1)</text>
   <!-- Point B -->
   <circle cx="180" cy="20" r="5" fill="#ef4444"/>
   <text x="184" y="19" fill="#ef4444" font-weight="bold">B(5,5)</text>

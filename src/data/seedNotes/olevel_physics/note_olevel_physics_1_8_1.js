@@ -47,7 +47,7 @@ export const note_olevel_physics_1_8_1 = {
   <line x1="258" y1="60" x2="274" y2="60" stroke="#374151" stroke-width="2"/>
   <polygon points="274,60 266,56 266,64" fill="#374151"/>
 
-  <rect x="274" y="40" width="80" height="40" rx="5" fill="#7c3aed"/>
+  <rect x="274" y="40" width="80" height="40" rx="5" fill="#1d4ed8"/>
   <text x="314" y="58" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Generator</text>
   <text x="314" y="70" text-anchor="middle" font-size="8" fill="#1e293b">Electricity</text>
   <line x1="354" y1="60" x2="370" y2="60" stroke="#374151" stroke-width="2"/>
@@ -61,7 +61,7 @@ export const note_olevel_physics_1_8_1 = {
   <text x="46" y="100" text-anchor="middle" font-size="9" fill="#dc2626">Chemical</text>
   <text x="134" y="100" text-anchor="middle" font-size="9" fill="#0ea5e9">Thermal</text>
   <text x="222" y="100" text-anchor="middle" font-size="9" fill="#16a34a">KE</text>
-  <text x="314" y="100" text-anchor="middle" font-size="9" fill="#7c3aed">KE→Electrical</text>
+  <text x="314" y="100" text-anchor="middle" font-size="9" fill="#1d4ed8">KE→Electrical</text>
   <text x="400" y="100" text-anchor="middle" font-size="9" fill="#f59e0b">Electrical</text>
   <!-- CO2 emissions -->
   <text x="220" y="130" text-anchor="middle" font-size="10" fill="#dc2626">⚠ CO₂, SO₂, NOₓ released during combustion</text>

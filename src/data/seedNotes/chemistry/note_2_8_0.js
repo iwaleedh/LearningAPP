@@ -83,7 +83,7 @@ export const note_chemistry_2_8_0 = {
   <text x="252" y="130" text-anchor="middle" fill="#166534" font-size="10">(takes O → is OXIDISED)</text>
 
   <!-- Products -->
-  <rect x="345" y="62" width="75" height="68" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="345" y="62" width="75" height="68" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="382" y="87" text-anchor="middle" font-weight="700" fill="#6d28d9" font-size="13">2Fe</text>
   <text x="382" y="105" text-anchor="middle" fill="#5b21b6" font-size="11">Iron</text>
   <text x="382" y="120" text-anchor="middle" fill="#5b21b6" font-size="11">REDUCED</text>
@@ -302,7 +302,7 @@ export const note_chemistry_2_8_0 = {
   <text x="132" y="133" text-anchor="middle" fill="#92400e" font-size="11">∴ Mg is the REDUCING AGENT</text>
 
   <!-- Reduction box -->
-  <rect x="275" y="60" width="225" height="80" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="275" y="60" width="225" height="80" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="387" y="80" text-anchor="middle" font-weight="700" fill="#4c1d95">Reduction Half-Equation</text>
   <text x="387" y="100" text-anchor="middle" fill="#4c1d95" font-size="14">Cu²⁺  +  2e⁻  →  Cu</text>
   <text x="387" y="118" text-anchor="middle" fill="#5b21b6" font-size="11">Cu²⁺ GAINS 2e⁻  →  is REDUCED</text>

@@ -57,11 +57,11 @@ export const note_chemistry_5_16_0 = {
   <rect x="20" y="35" width="90" height="130" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
   <text x="65" y="97" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="13">Metal</text>
   <text x="65" y="113" text-anchor="middle" fill="#1e293b" font-size="11">M(s)</text>
-  <text x="118" y="58" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
-  <text x="118" y="76" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
-  <text x="118" y="94" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
-  <text x="118" y="112" fill="#6366f1" font-size="15" font-weight="bold">e⁻</text>
-  <text x="112" y="148" fill="#4f46e5" font-size="9">build-up</text>
+  <text x="118" y="58" fill="#3b82f6" font-size="15" font-weight="bold">e⁻</text>
+  <text x="118" y="76" fill="#3b82f6" font-size="15" font-weight="bold">e⁻</text>
+  <text x="118" y="94" fill="#3b82f6" font-size="15" font-weight="bold">e⁻</text>
+  <text x="118" y="112" fill="#3b82f6" font-size="15" font-weight="bold">e⁻</text>
+  <text x="112" y="148" fill="#2563eb" font-size="9">build-up</text>
   <rect x="160" y="35" width="240" height="130" rx="6" fill="#1e3a8a" stroke="#2563eb" stroke-width="1.5"/>
   <text x="280" y="58" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="11">Solution</text>
   <circle cx="230" cy="95" r="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>

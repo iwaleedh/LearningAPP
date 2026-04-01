@@ -83,9 +83,9 @@ export const note_chemistry_1_3_2 = {
   <text x="435" y="112" text-anchor="middle" class="lbl">2 lone pairs on each O</text>
 
   <!-- N2 -->
-  <text x="615" y="18" text-anchor="middle" class="hd" fill="#7c3aed">N₂</text>
-  <circle cx="585" cy="50" r="30" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <circle cx="645" cy="50" r="30" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="615" y="18" text-anchor="middle" class="hd" fill="#1d4ed8">N₂</text>
+  <circle cx="585" cy="50" r="30" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <circle cx="645" cy="50" r="30" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="560" y="54" font-size="12" fill="#6d28d9">::</text>
   <text x="615" y="44" text-anchor="middle" font-size="12" fill="#6d28d9">• ×</text>
   <text x="615" y="57" text-anchor="middle" font-size="12" fill="#6d28d9">• ×</text>
@@ -155,7 +155,7 @@ export const note_chemistry_1_3_2 = {
   <text x="110" y="359" text-anchor="middle" class="lbl">Single bond  (1 shared pair):  H—H, Cl—Cl</text>
   <rect x="225" y="340" width="220" height="28" rx="5" fill="#fce7f3" stroke="#ec4899" stroke-width="1"/>
   <text x="335" y="359" text-anchor="middle" class="lbl">Double bond  (2 pairs):  O=O, C=O in CO₂</text>
-  <rect x="460" y="340" width="230" height="28" rx="5" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+  <rect x="460" y="340" width="230" height="28" rx="5" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1"/>
   <text x="575" y="359" text-anchor="middle" class="lbl">Triple bond  (3 pairs):  N≡N</text>
 </svg>`
       },
@@ -170,7 +170,7 @@ export const note_chemistry_1_3_2 = {
   <!-- Headers -->
   <rect x="10"  y="5" width="200" height="150" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
   <rect x="240" y="5" width="200" height="150" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
-  <rect x="470" y="5" width="200" height="150" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="470" y="5" width="200" height="150" rx="8" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1.5"/>
 
   <text x="110" y="24" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="13">Single Bond (H—H)</text>
   <text x="340" y="24" text-anchor="middle" fill="#9d174d" font-weight="bold" font-size="13">Double Bond (O=O)</text>

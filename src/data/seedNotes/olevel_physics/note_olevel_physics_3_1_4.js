@@ -42,7 +42,7 @@ export const note_olevel_physics_3_1_4 = {
         caption: 'Light ray refracting at an air–glass boundary (bends toward normal on entering denser medium)',
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320">
   <defs>
-    <marker id="ah14" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6366f1"/></marker>
+    <marker id="ah14" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3b82f6"/></marker>
     <marker id="ag14" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#10b981"/></marker>
   </defs>
   <style>text{font-family:Arial,sans-serif;font-size:11px;fill:#1e293b;}</style>
@@ -54,12 +54,12 @@ export const note_olevel_physics_3_1_4 = {
   <text x="295" y="155" fill="#0e7490" font-size="10">air–glass boundary</text>
   <line x1="210" y1="20" x2="210" y2="305" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 3"/>
   <text x="215" y="18" fill="#64748b">Normal</text>
-  <line x1="100" y1="45" x2="210" y2="160" stroke="#6366f1" stroke-width="2.5" marker-end="url(#ah14)"/>
-  <text x="76" y="42" fill="#6366f1">Incident ray</text>
+  <line x1="100" y1="45" x2="210" y2="160" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#ah14)"/>
+  <text x="76" y="42" fill="#3b82f6">Incident ray</text>
   <line x1="210" y1="160" x2="295" y2="300" stroke="#10b981" stroke-width="2.5" marker-end="url(#ag14)"/>
   <text x="288" y="300" fill="#10b981">Refracted ray</text>
-  <path d="M193,160 A28,28 0 0,1 197,135" stroke="#6366f1" stroke-width="1.5" fill="none"/>
-  <text x="155" y="148" fill="#6366f1" font-weight="bold" font-size="14">i</text>
+  <path d="M193,160 A28,28 0 0,1 197,135" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+  <text x="155" y="148" fill="#3b82f6" font-weight="bold" font-size="14">i</text>
   <path d="M218,184 A28,28 0 0,1 222,161" stroke="#10b981" stroke-width="1.5" fill="none"/>
   <text x="228" y="183" fill="#10b981" font-weight="bold" font-size="14">r</text>
   <text x="30" y="300" fill="#374151" font-size="11">Speed decreases → bends toward normal → r &lt; i</text>

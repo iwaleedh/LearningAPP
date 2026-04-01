@@ -68,11 +68,11 @@ export const note_olevel_physics_4_3_6 = {
         caption: 'CRO screen showing a sine wave with amplitude and period labelled',
         svg: `<svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="10">
   <!-- Screen border -->
-  <rect x="10" y="10" width="260" height="200" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="3"/>
+  <rect x="10" y="10" width="260" height="200" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="3"/>
   <!-- Grid lines horizontal -->
   <line x1="10" y1="50" x2="270" y2="50" stroke="#1e3a5f" stroke-width="1"/>
   <line x1="10" y1="90" x2="270" y2="90" stroke="#1e3a5f" stroke-width="1"/>
-  <line x1="10" y1="110" x2="270" y2="110" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="10" y1="110" x2="270" y2="110" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3"/>
   <!-- centre -->
   <line x1="10" y1="130" x2="270" y2="130" stroke="#1e3a5f" stroke-width="1"/>
   <line x1="10" y1="170" x2="270" y2="170" stroke="#1e3a5f" stroke-width="1"/>
@@ -99,7 +99,7 @@ export const note_olevel_physics_4_3_6 = {
   <line x1="205" y1="215" x2="205" y2="225" stroke="#10b981" stroke-width="1.5"/>
   <text x="110" y="238" fill="#10b981" font-size="10">Period (T) = 1 cycle</text>
   <!-- Settings box -->
-  <rect x="10" y="218" width="120" height="35" rx="4" fill="#1e293b" stroke="#6366f1" stroke-width="1"/>
+  <rect x="10" y="218" width="120" height="35" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
   <text x="16" y="232" fill="#94a3b8" font-size="9">Y-gain: 2 V/div</text>
   <text x="16" y="246" fill="#94a3b8" font-size="9">Time base: 5 ms/div</text>
 </svg>`,

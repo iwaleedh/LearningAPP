@@ -82,13 +82,13 @@ export const note_physics_4_16_1 = {
   <line x1="312" y1="205" x2="312" y2="211" stroke="#334155" stroke-width="1.5"/>
   <text x="142" y="224" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">t₁</text>
   <text x="312" y="224" font-family="Arial" font-size="12" fill="#334155" text-anchor="middle">t₂</text>
-  <rect x="142" y="95" width="170" height="110" fill="#6366f1" opacity="0.18"/>
-  <polyline points="60,205 142,205 142,95 312,95 312,205 425,205" fill="none" stroke="#6366f1" stroke-width="3"/>
+  <rect x="142" y="95" width="170" height="110" fill="#3b82f6" opacity="0.18"/>
+  <polyline points="60,205 142,205 142,95 312,95 312,205 425,205" fill="none" stroke="#3b82f6" stroke-width="3"/>
   <text x="227" y="147" font-family="Arial" font-size="13" font-weight="bold" fill="#4338ca" text-anchor="middle">Impulse</text>
   <text x="227" y="166" font-family="Arial" font-size="12" fill="#4338ca" text-anchor="middle">= F × Δt = Δp</text>
   <line x1="65" y1="95" x2="133" y2="95" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/>
   <text x="58" y="99" font-family="Arial" font-size="12" fill="#64748b" text-anchor="end">F</text>
-  <rect x="118" y="14" width="218" height="32" fill="#2d1b69" rx="6" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="118" y="14" width="218" height="32" fill="#2d1b69" rx="6" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="227" y="35" font-family="Arial" font-size="11" fill="#4338ca" text-anchor="middle">Impulse = area under F–t graph = Δp</text>
 </svg>`,
         caption: 'Impulse equals the area under a force–time graph'

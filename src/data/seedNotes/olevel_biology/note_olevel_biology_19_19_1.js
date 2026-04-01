@@ -54,13 +54,13 @@ export const note_olevel_biology_19_19_1 = {
   <text x="405" y="184" text-anchor="middle" font-size="11" fill="#14532d">Vole</text>
 
   <!-- Secondary consumers -->
-  <rect x="50" y="95" width="90" height="30" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="50" y="95" width="90" height="30" rx="6" fill="#2d2d72" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="95" y="114" text-anchor="middle" font-size="11" fill="#3730a3">Fox</text>
 
-  <rect x="205" y="95" width="90" height="30" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="205" y="95" width="90" height="30" rx="6" fill="#2d2d72" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="250" y="114" text-anchor="middle" font-size="11" fill="#3730a3">Frog</text>
 
-  <rect x="355" y="95" width="100" height="30" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="355" y="95" width="100" height="30" rx="6" fill="#2d2d72" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="405" y="114" text-anchor="middle" font-size="11" fill="#3730a3">Weasel</text>
 
   <!-- Tertiary consumer -->
@@ -73,11 +73,11 @@ export const note_olevel_biology_19_19_1 = {
   <line x1="300" y1="235" x2="360" y2="195" stroke="#16a34a" stroke-width="1.5" marker-end="url(#arrowFW)"/>
 
   <!-- Arrows: Primary to secondary consumers -->
-  <line x1="95" y1="165" x2="95" y2="125" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowFW)"/>
-  <line x1="120" y1="165" x2="210" y2="125" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowFW)"/>
-  <line x1="250" y1="165" x2="250" y2="125" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowFW)"/>
-  <line x1="380" y1="165" x2="130" y2="125" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowFW)"/>
-  <line x1="390" y1="165" x2="390" y2="125" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowFW)"/>
+  <line x1="95" y1="165" x2="95" y2="125" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowFW)"/>
+  <line x1="120" y1="165" x2="210" y2="125" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowFW)"/>
+  <line x1="250" y1="165" x2="250" y2="125" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowFW)"/>
+  <line x1="380" y1="165" x2="130" y2="125" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowFW)"/>
+  <line x1="390" y1="165" x2="390" y2="125" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowFW)"/>
 
   <!-- Arrows: Secondary to Hawk -->
   <line x1="120" y1="95" x2="205" y2="62" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrowFW)"/>
@@ -86,7 +86,7 @@ export const note_olevel_biology_19_19_1 = {
 
   <defs>
     <marker id="arrowFW" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
-      <path d="M0,0 L7,3.5 L0,7 Z" fill="#6366f1"/>
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#3b82f6"/>
     </marker>
   </defs>
 

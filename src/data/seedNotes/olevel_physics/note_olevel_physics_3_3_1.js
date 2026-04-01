@@ -33,7 +33,7 @@ export const note_olevel_physics_3_3_1 = {
   <style>text{font-family:Arial,sans-serif;font-size:12px;fill:#1e293b;}</style>
   <defs>
     <marker id="ahE" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0,8 3,0 6" fill="#6366f1"/>
+      <polygon points="0 0,8 3,0 6" fill="#3b82f6"/>
     </marker>
     <marker id="ahEr" markerWidth="8" markerHeight="6" refX="1" refY="3" orient="auto">
       <polygon points="8 0,0 3,8 6" fill="#10b981"/>
@@ -55,8 +55,8 @@ export const note_olevel_physics_3_3_1 = {
   <line x1="390" y1="130" x2="410" y2="145" stroke="#94a3b8" stroke-width="1"/>
   <text x="400" y="175" text-anchor="middle" fill="#64748b">Wall</text>
   <!-- Outgoing sound ray -->
-  <line x1="84" y1="90" x2="385" y2="90" stroke="#6366f1" stroke-width="2" marker-end="url(#ahE)" stroke-dasharray="8 4"/>
-  <text x="230" y="82" text-anchor="middle" fill="#6366f1">sound pulse →</text>
+  <line x1="84" y1="90" x2="385" y2="90" stroke="#3b82f6" stroke-width="2" marker-end="url(#ahE)" stroke-dasharray="8 4"/>
+  <text x="230" y="82" text-anchor="middle" fill="#3b82f6">sound pulse →</text>
   <!-- Returning echo -->
   <line x1="385" y1="105" x2="84" y2="105" stroke="#10b981" stroke-width="2" marker-end="url(#ahEr)" stroke-dasharray="8 4"/>
   <text x="230" y="122" text-anchor="middle" fill="#10b981">← echo returns</text>

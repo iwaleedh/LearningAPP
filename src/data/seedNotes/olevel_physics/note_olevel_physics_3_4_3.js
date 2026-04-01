@@ -45,8 +45,8 @@ export const note_olevel_physics_3_4_3 = {
   <!-- Background map-like  -->
   <rect x="0" y="0" width="460" height="380" fill="#0a2e1a" rx="4"/>
   <!-- Station A (left) with circle -->
-  <circle cx="90" cy="280" r="4" fill="#6366f1"/>
-  <text x="78" y="300" fill="#6366f1">Station A</text>
+  <circle cx="90" cy="280" r="4" fill="#3b82f6"/>
+  <text x="78" y="300" fill="#3b82f6">Station A</text>
   <!-- Station B (right) with circle -->
   <circle cx="370" cy="290" r="4" fill="#10b981"/>
   <text x="358" y="310" fill="#10b981">Station B</text>
@@ -58,7 +58,7 @@ export const note_olevel_physics_3_4_3 = {
   <text x="235" y="212" fill="#ef4444" font-weight="bold">Epicentre</text>
   <!-- Circle from Station A: radius = distance A to epicentre -->
   <!-- A=(90,280), E=(225,215): distance = sqrt(135²+65²) ≈ 149 -->
-  <circle cx="90" cy="280" r="149" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.7"/>
+  <circle cx="90" cy="280" r="149" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.7"/>
   <!-- Circle from Station B: radius = distance B to epicentre -->
   <!-- B=(370,290), E=(225,215): distance = sqrt(145²+75²) ≈ 163 -->
   <circle cx="370" cy="290" r="163" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.7"/>
@@ -66,14 +66,14 @@ export const note_olevel_physics_3_4_3 = {
   <!-- C=(230,50), E=(225,215): distance = sqrt(5²+165²) ≈ 165 -->
   <circle cx="230" cy="50" r="165" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.7"/>
   <!-- Distance lines from stations to epicentre -->
-  <line x1="90" y1="280" x2="225" y2="215" stroke="#6366f1" stroke-width="1" opacity="0.5"/>
+  <line x1="90" y1="280" x2="225" y2="215" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
   <line x1="370" y1="290" x2="225" y2="215" stroke="#10b981" stroke-width="1" opacity="0.5"/>
   <line x1="230" y1="50" x2="225" y2="215" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
   <!-- Seismogram sketches near each station -->
   <!-- Station A seismogram -->
-  <rect x="10" y="180" width="75" height="40" fill="#1e293b" stroke="#6366f1" stroke-width="1" rx="2"/>
-  <text x="47" y="193" text-anchor="middle" fill="#6366f1" font-size="9">Seismogram A</text>
-  <path d="M15,212 L25,212 L27,204 L29,220 L31,212 L37,212 L40,200 L43,224 L46,212 L52,212 L53,207 L55,217 L57,212 L80,212" stroke="#6366f1" stroke-width="1.2" fill="none"/>
+  <rect x="10" y="180" width="75" height="40" fill="#1e293b" stroke="#3b82f6" stroke-width="1" rx="2"/>
+  <text x="47" y="193" text-anchor="middle" fill="#3b82f6" font-size="9">Seismogram A</text>
+  <path d="M15,212 L25,212 L27,204 L29,220 L31,212 L37,212 L40,200 L43,224 L46,212 L52,212 L53,207 L55,217 L57,212 L80,212" stroke="#3b82f6" stroke-width="1.2" fill="none"/>
   <text x="47" y="230" text-anchor="middle" fill="#94a3b8" font-size="8">P  S  →time</text>
 </svg>`,
       },

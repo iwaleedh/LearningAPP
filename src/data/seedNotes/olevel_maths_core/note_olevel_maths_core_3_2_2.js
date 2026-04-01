@@ -67,8 +67,8 @@ export const note_olevel_maths_core_3_2_2 = {
   <text x="107" y="138" text-anchor="end" fill="#888" font-size="10">−1</text>
   <!-- y = 2x + 4: scale 25px/unit, origin (110,110)
        at x=-2: y=0 → (60,110); at x=1: y=6 → (135,35) -->
-  <line x1="35" y1="135" x2="165" y2="5" stroke="#6366f1" stroke-width="2.5"/>
-  <text x="148" y="12" fill="#6366f1" font-weight="bold" font-size="10">y=2x+4</text>
+  <line x1="35" y1="135" x2="165" y2="5" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="148" y="12" fill="#3b82f6" font-weight="bold" font-size="10">y=2x+4</text>
   <!-- y = 2x - 1: at x=-1: y=-3→(85,185); at x=2: y=3 → (160,35) -->
   <line x1="60" y1="185" x2="190" y2="55" stroke="#ef4444" stroke-width="2.5"/>
   <text x="168" y="70" fill="#ef4444" font-weight="bold" font-size="10">y=2x−1</text>

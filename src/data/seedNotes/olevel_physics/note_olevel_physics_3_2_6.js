@@ -31,7 +31,7 @@ export const note_olevel_physics_3_2_6 = {
       <stop offset="45%" stop-color="#ca8a04"/>
       <stop offset="55%" stop-color="#16a34a"/>
       <stop offset="65%" stop-color="#2563eb"/>
-      <stop offset="80%" stop-color="#7c3aed"/>
+      <stop offset="80%" stop-color="#1d4ed8"/>
       <stop offset="100%" stop-color="#be185d"/>
     </linearGradient>
   </defs>
@@ -45,11 +45,11 @@ export const note_olevel_physics_3_2_6 = {
   <polygon points="500,30 492,26 492,34" fill="#94a3b8"/>
   <text x="280" y="42" fill="#64748b" text-anchor="middle" font-size="9">← f increasing  |  E increasing  →</text>
   <!-- Colored bands -->
-  <rect x="20" y="55" width="72" height="50" fill="#6366f1" opacity="0.18" rx="3"/>
+  <rect x="20" y="55" width="72" height="50" fill="#3b82f6" opacity="0.18" rx="3"/>
   <rect x="92" y="55" width="66" height="50" fill="#065f46" opacity="0.2" rx="3"/>
   <rect x="158" y="55" width="66" height="50" fill="#78350f" opacity="0.22" rx="3"/>
   <rect x="224" y="55" width="50" height="50" rx="3">
-    <animate attributeName="fill" values="#dc2626;#ea580c;#ca8a04;#16a34a;#2563eb;#7c3aed;#dc2626" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#dc2626;#ea580c;#ca8a04;#16a34a;#2563eb;#1d4ed8;#dc2626" dur="4s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.4;0.5;0.4;0.5;0.4;0.5;0.4" dur="4s" repeatCount="indefinite"/>
   </rect>
   <rect x="274" y="55" width="50" height="50" fill="#8b5cf6" opacity="0.2" rx="3"/>

@@ -63,9 +63,9 @@ export const note_olevel_maths_core_3_1_1 = {
         svg: `<svg viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11">
   <!-- Positive gradient panel -->
   <rect x="5" y="5" width="80" height="80" fill="#0f172a" stroke="#ddd"/>
-  <line x1="15" y1="80" x2="75" y2="15" stroke="#6366f1" stroke-width="2.5"/>
-  <text x="44" y="95" text-anchor="middle" fill="#6366f1" font-weight="bold">Positive</text>
-  <text x="44" y="107" text-anchor="middle" fill="#6366f1">m &gt; 0</text>
+  <line x1="15" y1="80" x2="75" y2="15" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="44" y="95" text-anchor="middle" fill="#3b82f6" font-weight="bold">Positive</text>
+  <text x="44" y="107" text-anchor="middle" fill="#3b82f6">m &gt; 0</text>
   <!-- rise/run arrows -->
   <line x1="55" y1="47" x2="75" y2="47" stroke="#999" stroke-width="1" stroke-dasharray="3,2"/>
   <line x1="75" y1="47" x2="75" y2="15" stroke="#999" stroke-width="1" stroke-dasharray="3,2"/>

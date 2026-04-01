@@ -97,9 +97,9 @@ export const note_olevel_biology_5_5_1 = {
   <text x="198" y="155" text-anchor="middle" font-size="9" fill="#374151" transform="rotate(-90,198,155)">Rate of reaction</text>
   <!-- pH curve (bell shape): 3 different enzymes -->
   <!-- Pepsin (optimum pH 2) -->
-  <path d="M 215,235 C 225,220 230,100 240,70 C 245,60 248,65 252,85 C 260,130 270,235 285,238" stroke="#7c3aed" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
-  <text x="237" y="55" font-size="7" fill="#7c3aed">Pepsin</text>
-  <text x="237" y="64" font-size="7" fill="#7c3aed">(pH 2)</text>
+  <path d="M 215,235 C 225,220 230,100 240,70 C 245,60 248,65 252,85 C 260,130 270,235 285,238" stroke="#1d4ed8" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <text x="237" y="55" font-size="7" fill="#1d4ed8">Pepsin</text>
+  <text x="237" y="64" font-size="7" fill="#1d4ed8">(pH 2)</text>
   <!-- Amylase (optimum pH 7) -->
   <path d="M 245,237 C 258,220 265,140 275,80 C 280,60 285,60 290,80 C 300,140 307,215 320,238" stroke="#2563eb" stroke-width="2" fill="none"/>
   <text x="283" y="53" text-anchor="middle" font-size="7" fill="#2563eb">Amylase</text>

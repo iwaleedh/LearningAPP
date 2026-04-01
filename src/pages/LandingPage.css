@@ -158,7 +158,7 @@
 }
 
 .feature-icon-wrapper.blue { background-color: var(--color-primary-100); color: var(--color-primary); }
-.feature-icon-wrapper.purple { background-color: rgba(168, 85, 247, 0.15); color: #a855f7; }
+.feature-icon-wrapper.cyan { background-color: rgba(6, 182, 212, 0.15); color: #06b6d4; }
 .feature-icon-wrapper.orange { background-color: var(--color-warning-light); color: var(--color-warning); }
 .feature-icon-wrapper.green { background-color: var(--color-success-light); color: var(--color-success); }
 

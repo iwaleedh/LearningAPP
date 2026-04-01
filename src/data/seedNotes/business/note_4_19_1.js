@@ -39,7 +39,7 @@ export const note_business_4_19_1 = {
             caption: "The Three Approaches to Global Marketing — standardisation to full adaptation",
             svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 310' font-family='Inter,system-ui,sans-serif'>
   <text x='350' y='24' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>EPRG Framework: Three Approaches to Global Marketing</text>
-  <rect x='200' y='38' width='300' height='68' rx='10' fill='#2d1b69' stroke='#6366f1' stroke-width='2'/>
+  <rect x='200' y='38' width='300' height='68' rx='10' fill='#2d1b69' stroke='#3b82f6' stroke-width='2'/>
   <text x='350' y='62' text-anchor='middle' font-size='13' font-weight='700' fill='#4338ca'>ETHNOCENTRIC</text>
   <text x='350' y='79' text-anchor='middle' font-size='11' fill='#475569'>&quot;Home country approach is best&quot;</text>
   <text x='350' y='96' text-anchor='middle' font-size='10' fill='#64748b'>e.g. Apple — same iPhone sold worldwide</text>

@@ -78,8 +78,8 @@ export const note_olevel_physics_4_4_2 = {
   <rect x="275" y="60" width="55" height="110" rx="8" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="288" y="120" fill="#ef4444" font-weight="bold" font-size="18">S</text>
   <!-- Coil (rectangular) -->
-  <rect x="140" y="70" width="80" height="90" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="3"/>
-  <text x="158" y="118" fill="#6366f1">Coil</text>
+  <rect x="140" y="70" width="80" height="90" rx="4" fill="#2d2f72" stroke="#3b82f6" stroke-width="3"/>
+  <text x="158" y="118" fill="#3b82f6">Coil</text>
   <!-- Force arrows on coil sides -->
   <text x="95" y="88" fill="#d97706" font-size="10">F↑</text>
   <line x1="100" y1="100" x2="100" y2="70" stroke="#d97706" stroke-width="2" marker-end="url(#arr-up)"/>
@@ -100,8 +100,8 @@ export const note_olevel_physics_4_4_2 = {
   <!-- Field arrow -->
   <text x="110" y="158" fill="#4b5563" font-size="9">← B field →</text>
   <!-- Rotation arrow -->
-  <path d="M170,85 A20,20 0 0,1 190,85" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="3,2"/>
-  <text x="162" y="80" fill="#6366f1" font-size="9">⟳ rotation</text>
+  <path d="M170,85 A20,20 0 0,1 190,85" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="162" y="80" fill="#3b82f6" font-size="9">⟳ rotation</text>
 </svg>`,
       },
     },

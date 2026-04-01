@@ -41,9 +41,9 @@ export const note_olevel_maths_core_8_2_0 = {
   <!-- Background -->
   <rect x="0" y="0" width="370" height="310" fill="#0f172a" rx="8"/>
   <!-- Header row background -->
-  <rect x="42" y="2" width="326" height="42" fill="#6366f1" rx="4"/>
+  <rect x="42" y="2" width="326" height="42" fill="#3b82f6" rx="4"/>
   <!-- Side column background -->
-  <rect x="2" y="44" width="38" height="264" fill="#6366f1" rx="4"/>
+  <rect x="2" y="44" width="38" height="264" fill="#3b82f6" rx="4"/>
 
   <!-- Header labels: Die 2 -->
   <text x="205" y="14" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="11">Die 2 →</text>

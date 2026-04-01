@@ -20,16 +20,16 @@ export const note_olevel_physics_5_2_0 = {
   <!-- Cathode cylinder edge -->
   <text x="235" y="175" text-anchor="middle" font-size="9" fill="#475569">cathode (−) cylinder wall</text>
   <!-- Argon gas label -->
-  <text x="235" y="98" text-anchor="middle" font-size="9" fill="#7c3aed">Low-pressure argon gas</text>
+  <text x="235" y="98" text-anchor="middle" font-size="9" fill="#1d4ed8">Low-pressure argon gas</text>
   <!-- Ionisation event -->
   <circle cx="200" cy="135" r="4" fill="#f97316"/>
   <text x="200" y="148" text-anchor="middle" font-size="8" fill="#f97316">ion pair</text>
   <!-- Arrow to anode -->
   <line x1="200" y1="133" x2="200" y2="123" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr-red)"/>
   <!-- Incoming radiation arrow -->
-  <line x1="60" y1="120" x2="96" y2="120" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr-purple)"/>
-  <text x="40" y="112" text-anchor="middle" font-size="9" fill="#7c3aed">α, β</text>
-  <text x="40" y="124" text-anchor="middle" font-size="9" fill="#7c3aed">or γ</text>
+  <line x1="60" y1="120" x2="96" y2="120" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr-purple)"/>
+  <text x="40" y="112" text-anchor="middle" font-size="9" fill="#1d4ed8">α, β</text>
+  <text x="40" y="124" text-anchor="middle" font-size="9" fill="#1d4ed8">or γ</text>
   <!-- Output -->
   <rect x="360" y="100" width="80" height="40" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
   <text x="400" y="117" text-anchor="middle" font-size="10" fill="#10b981">Counter /</text>
@@ -37,7 +37,7 @@ export const note_olevel_physics_5_2_0 = {
   <line x1="360" y1="120" x2="350" y2="120" stroke="#10b981" stroke-width="1.5"/>
   <defs>
     <marker id="arr-red" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#dc2626"/></marker>
-    <marker id="arr-purple" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7c3aed"/></marker>
+    <marker id="arr-purple" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1d4ed8"/></marker>
   </defs>
 </svg>`, caption: 'GM tube: radiation enters through mica window, ionises low-pressure gas, producing a pulse counted electronically.' } },
     { id: 'h-other-detectors', type: 'heading', data: { text: 'Other Detectors', level: 2 } },

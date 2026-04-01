@@ -65,21 +65,21 @@ export const note_olevel_physics_4_1_2 = {
   <text x="235" y="120" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="14">S</text>
 
   <!-- Field lines arcing above -->
-  <path d="M 155 100 Q 190 40 235 100" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-  <path d="M 148 100 Q 190 18 242 100" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-  <path d="M 162 100 Q 190 58 228 100" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  <path d="M 155 100 Q 190 40 235 100" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M 148 100 Q 190 18 242 100" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M 162 100 Q 190 58 228 100" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Arrow on top arc -->
-  <circle cx="190" cy="35" r="3" fill="#6366f1"/>
+  <circle cx="190" cy="35" r="3" fill="#3b82f6"/>
 
   <!-- Field lines arcing below -->
-  <path d="M 155 130 Q 190 185 235 130" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-  <path d="M 148 130 Q 190 205 242 130" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-  <path d="M 162 130 Q 190 165 228 130" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  <path d="M 155 130 Q 190 185 235 130" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M 148 130 Q 190 205 242 130" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M 162 130 Q 190 165 228 130" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
 
   <!-- Arrows indicating direction (near N pole) -->
   <defs>
     <marker id="marr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-      <path d="M0,0 L0,7 L7,3.5 z" fill="#6366f1"/>
+      <path d="M0,0 L0,7 L7,3.5 z" fill="#3b82f6"/>
     </marker>
   </defs>
   <!-- Arrow label -->

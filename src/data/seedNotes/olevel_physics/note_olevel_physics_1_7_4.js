@@ -61,7 +61,7 @@ export const note_olevel_physics_1_7_4 = {
   <!-- Ground -->
   <line x1="20" y1="170" x2="360" y2="170" stroke="#6b7280" stroke-width="2"/>
   <!-- Box being pushed -->
-  <rect x="50" y="130" width="60" height="40" rx="4" fill="#6366f1" opacity="0.85"/>
+  <rect x="50" y="130" width="60" height="40" rx="4" fill="#3b82f6" opacity="0.85"/>
   <text x="80" y="154" text-anchor="middle" font-size="11" fill="#1e293b">Box</text>
   <!-- Arrow for force -->
   <line x1="110" y1="150" x2="200" y2="150" stroke="#dc2626" stroke-width="2.5"/>
@@ -73,7 +73,7 @@ export const note_olevel_physics_1_7_4 = {
   <polygon points="80,183 88,179 88,187" fill="#2563eb"/>
   <text x="175" y="197" text-anchor="middle" font-size="10" fill="#2563eb">d = 4 m</text>
   <!-- Box moved position -->
-  <rect x="230" y="130" width="60" height="40" rx="4" fill="#6366f1" opacity="0.4"/>
+  <rect x="230" y="130" width="60" height="40" rx="4" fill="#3b82f6" opacity="0.4"/>
   <text x="260" y="154" text-anchor="middle" font-size="11" fill="#374151">Box</text>
   <!-- Work calc -->
   <text x="190" y="50" text-anchor="middle" font-size="12" fill="#374151">W = Fd = 50 × 4</text>

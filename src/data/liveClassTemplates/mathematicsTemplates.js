@@ -57,14 +57,14 @@ const mathematicsTemplates = [
       { type: 'line', x1: 100, y1: 300, x2: 700, y2: 300, stroke: '#1f2937', strokeWidth: 2, selectable: false },
       { type: 'line', x1: 400, y1: 80, x2: 400, y2: 520, stroke: '#1f2937', strokeWidth: 2, selectable: false },
       // Unit circle
-      { type: 'circle', left: 220, top: 120, radius: 180, fill: 'transparent', stroke: '#6366f1', strokeWidth: 2.5, selectable: true },
+      { type: 'circle', left: 220, top: 120, radius: 180, fill: 'transparent', stroke: '#3b82f6', strokeWidth: 2.5, selectable: true },
       // Key points
       { type: 'text', left: 580, top: 305, text: '0 (1, 0)', fontSize: 13, fill: '#1f2937', selectable: true },
       { type: 'text', left: 405, top: 95, text: 'π/2 (0, 1)', fontSize: 13, fill: '#1f2937', selectable: true },
       { type: 'text', left: 160, top: 305, text: 'π (−1, 0)', fontSize: 13, fill: '#1f2937', selectable: true },
       { type: 'text', left: 405, top: 475, text: '3π/2 (0, −1)', fontSize: 13, fill: '#1f2937', selectable: true },
       // Angle θ hint
-      { type: 'text', left: 430, top: 270, text: 'θ', fontSize: 18, fontWeight: 'bold', fill: '#6366f1', selectable: true },
+      { type: 'text', left: 430, top: 270, text: 'θ', fontSize: 18, fontWeight: 'bold', fill: '#3b82f6', selectable: true },
       // Title
       { type: 'text', left: 310, top: 30, text: 'Unit Circle', fontSize: 20, fontWeight: 'bold', fill: '#1f2937', selectable: true },
     ],
@@ -90,7 +90,7 @@ const mathematicsTemplates = [
         ];
       }).flat(),
       // Origin highlight
-      { type: 'circle', left: 394, top: 194, radius: 6, fill: '#6366f1', stroke: '#6366f1', strokeWidth: 1, selectable: true },
+      { type: 'circle', left: 394, top: 194, radius: 6, fill: '#3b82f6', stroke: '#3b82f6', strokeWidth: 1, selectable: true },
       // Title
       { type: 'text', left: 320, top: 100, text: 'Number Line', fontSize: 20, fontWeight: 'bold', fill: '#1f2937', selectable: true },
     ],

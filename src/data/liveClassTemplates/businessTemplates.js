@@ -60,7 +60,7 @@ const businessTemplates = [
       // Total revenue label
       { type: 'text', left: 640, top: 80, text: 'TR', fontSize: 14, fontWeight: 'bold', fill: '#10b981', selectable: true },
       // Break-even point label
-      { type: 'text', left: 360, top: 240, text: '× BEP', fontSize: 14, fontWeight: 'bold', fill: '#6366f1', selectable: true },
+      { type: 'text', left: 360, top: 240, text: '× BEP', fontSize: 14, fontWeight: 'bold', fill: '#3b82f6', selectable: true },
       // Title
       { type: 'text', left: 260, top: 20, text: 'Break-Even Chart', fontSize: 20, fontWeight: 'bold', fill: '#1f2937', selectable: true },
       // Draw hint
@@ -90,12 +90,12 @@ const businessTemplates = [
       { type: 'text', left: 200, top: 440, text: 'S', fontSize: 20, fontWeight: 'bold', fill: '#ef4444', selectable: true },
       { type: 'text', left: 620, top: 110, text: 'S', fontSize: 20, fontWeight: 'bold', fill: '#ef4444', selectable: true },
       // Equilibrium point
-      { type: 'text', left: 405, top: 260, text: 'E', fontSize: 18, fontWeight: 'bold', fill: '#6366f1', selectable: true },
+      { type: 'text', left: 405, top: 260, text: 'E', fontSize: 18, fontWeight: 'bold', fill: '#3b82f6', selectable: true },
       // Equilibrium dashed lines
-      { type: 'line', x1: 140, y1: 280, x2: 400, y2: 280, stroke: '#6366f1', strokeWidth: 1.5, strokeDashArray: [6, 4], selectable: true },
-      { type: 'text', left: 100, top: 268, text: 'Pe', fontSize: 13, fontWeight: 'bold', fill: '#6366f1', selectable: true },
-      { type: 'line', x1: 400, y1: 280, x2: 400, y2: 500, stroke: '#6366f1', strokeWidth: 1.5, strokeDashArray: [6, 4], selectable: true },
-      { type: 'text', left: 390, top: 505, text: 'Qe', fontSize: 13, fontWeight: 'bold', fill: '#6366f1', selectable: true },
+      { type: 'line', x1: 140, y1: 280, x2: 400, y2: 280, stroke: '#3b82f6', strokeWidth: 1.5, strokeDashArray: [6, 4], selectable: true },
+      { type: 'text', left: 100, top: 268, text: 'Pe', fontSize: 13, fontWeight: 'bold', fill: '#3b82f6', selectable: true },
+      { type: 'line', x1: 400, y1: 280, x2: 400, y2: 500, stroke: '#3b82f6', strokeWidth: 1.5, strokeDashArray: [6, 4], selectable: true },
+      { type: 'text', left: 390, top: 505, text: 'Qe', fontSize: 13, fontWeight: 'bold', fill: '#3b82f6', selectable: true },
       // Title
       { type: 'text', left: 240, top: 20, text: 'Supply & Demand', fontSize: 20, fontWeight: 'bold', fill: '#1f2937', selectable: true },
       // Draw hint

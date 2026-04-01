@@ -264,8 +264,8 @@ export const note_chemistry_1_2_7 = {
         caption: 'Cross-topic reference card: electron filling order (Aufbau), key rules (Hund\'s & Pauli), and configuration examples including the Cr & Cu anomalies — bridging Orbitals (2.6), Electronic Configuration (2.7) and Ion Configurations (2.8).',
         svg: `<svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
   <rect x="8" y="8" width="290" height="304" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="8" y="8" width="290" height="28" rx="8" fill="#6366f1" fill-opacity="0.5"/>
-  <rect x="8" y="26" width="290" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="8" width="290" height="28" rx="8" fill="#3b82f6" fill-opacity="0.5"/>
+  <rect x="8" y="26" width="290" height="10" fill="#3b82f6" fill-opacity="0.5"/>
   <text x="153" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Filling Order &amp; Rules</text>
   <text x="18" y="54" font-size="10" font-weight="bold" fill="#374151">Sub-shell filling order (increasing energy):</text>
   <rect x="18" y="60" width="24" height="20" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>

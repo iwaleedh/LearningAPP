@@ -69,8 +69,8 @@ export const note_olevel_physics_1_7_1 = {
   <text x="210" y="195" text-anchor="middle" font-size="11" fill="#374151">Speed (m/s)</text>
   <text x="14" y="100" text-anchor="middle" font-size="11" fill="#374151" transform="rotate(-90,14,100)">KE (J)</text>
   <!-- KE = ½mv² curve — parabola -->
-  <polyline points="55,170 80,162 105,140 130,107 155,64 180,32" stroke="#6366f1" stroke-width="2.5" fill="none"/>
-  <text x="185" y="28" font-size="10" fill="#6366f1">KE ∝ v²</text>
+  <polyline points="55,170 80,162 105,140 130,107 155,64 180,32" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
+  <text x="185" y="28" font-size="10" fill="#3b82f6">KE ∝ v²</text>
   <!-- Axis marks -->
   <text x="55" y="184" text-anchor="middle" font-size="10" fill="#374151">0</text>
   <line x1="130" y1="167" x2="130" y2="173" stroke="#374151"/>
@@ -80,10 +80,10 @@ export const note_olevel_physics_1_7_1 = {
   <!-- Annotations -->
   <line x1="80" y1="162" x2="80" y2="170" stroke="#e2e8f0" stroke-dasharray="3,3"/>
   <line x1="55" y1="162" x2="80" y2="162" stroke="#e2e8f0" stroke-dasharray="3,3"/>
-  <circle cx="80" cy="162" r="3" fill="#6366f1"/>
+  <circle cx="80" cy="162" r="3" fill="#3b82f6"/>
   <line x1="130" y1="107" x2="130" y2="170" stroke="#e2e8f0" stroke-dasharray="3,3"/>
   <line x1="55" y1="107" x2="130" y2="107" stroke="#e2e8f0" stroke-dasharray="3,3"/>
-  <circle cx="130" cy="107" r="3" fill="#6366f1"/>
+  <circle cx="130" cy="107" r="3" fill="#3b82f6"/>
   <text x="200" y="115" font-size="9" fill="#374151">Double speed →</text>
   <text x="200" y="125" font-size="9" fill="#374151">4× the KE</text>
 </svg>`,

@@ -5,7 +5,7 @@ import { plotFunction } from '../../utils/mathExprParser.js';
 
 Chart.register(...registerables);
 
-const COLORS = ['#6366f1', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#f97316'];
+const COLORS = ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#f97316'];
 
 /**
  * GraphWidget — floating graph plotter panel.

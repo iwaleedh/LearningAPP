@@ -46,8 +46,8 @@ export const note_olevel_physics_1_4_6 = {
   <rect x="25" y="40" width="90" height="170" fill="#1e293b" stroke="#e5e7eb" stroke-width="1.5" rx="6"/>
   <text x="70" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Stage 1</text>
   <!-- Person -->
-  <circle cx="70" cy="100" r="10" fill="#6366f1"/>
-  <line x1="70" y1="110" x2="70" y2="140" stroke="#6366f1" stroke-width="2.5"/>
+  <circle cx="70" cy="100" r="10" fill="#3b82f6"/>
+  <line x1="70" y1="110" x2="70" y2="140" stroke="#3b82f6" stroke-width="2.5"/>
   <!-- Weight arrow (down) -->
   <line x1="70" y1="140" x2="70" y2="170" stroke="#ef4444" stroke-width="2.5"/>
   <polygon points="70,170 66,161 74,161" fill="#ef4444"/>
@@ -61,8 +61,8 @@ export const note_olevel_physics_1_4_6 = {
   <!-- Stage 2: faster, bigger drag -->
   <rect x="175" y="40" width="90" height="170" fill="#1e293b" stroke="#e5e7eb" stroke-width="1.5" rx="6"/>
   <text x="220" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Stage 2</text>
-  <circle cx="220" cy="100" r="10" fill="#6366f1"/>
-  <line x1="220" y1="110" x2="220" y2="140" stroke="#6366f1" stroke-width="2.5"/>
+  <circle cx="220" cy="100" r="10" fill="#3b82f6"/>
+  <line x1="220" y1="110" x2="220" y2="140" stroke="#3b82f6" stroke-width="2.5"/>
   <line x1="220" y1="140" x2="220" y2="170" stroke="#ef4444" stroke-width="2.5"/>
   <polygon points="220,170 216,161 224,161" fill="#ef4444"/>
   <text x="228" y="165" font-size="9" fill="#ef4444">W</text>
@@ -74,8 +74,8 @@ export const note_olevel_physics_1_4_6 = {
   <!-- Stage 3: terminal velocity -->
   <rect x="325" y="40" width="90" height="170" fill="#1e293b" stroke="#16a34a" stroke-width="2" rx="6"/>
   <text x="370" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Stage 3</text>
-  <circle cx="370" cy="100" r="10" fill="#6366f1"/>
-  <line x1="370" y1="110" x2="370" y2="140" stroke="#6366f1" stroke-width="2.5"/>
+  <circle cx="370" cy="100" r="10" fill="#3b82f6"/>
+  <line x1="370" y1="110" x2="370" y2="140" stroke="#3b82f6" stroke-width="2.5"/>
   <line x1="370" y1="140" x2="370" y2="168" stroke="#ef4444" stroke-width="2.5"/>
   <polygon points="370,168 366,158 374,158" fill="#ef4444"/>
   <text x="378" y="163" font-size="9" fill="#ef4444">W</text>

@@ -44,29 +44,29 @@ export const note_olevel_physics_3_3_0 = {
   <line x1="8" y1="90" x2="8" y2="110" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
   <!-- Wave compressions and rarefactions -->
   <!-- C1 at ~100 -->
-  <rect x="85" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
+  <rect x="85" y="55" width="26" height="90" fill="#3b82f6" opacity="0.4" rx="3"/>
   <!-- R1 at ~130 -->
   <rect x="120" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- C2 at ~175 -->
-  <rect x="173" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
+  <rect x="173" y="55" width="26" height="90" fill="#3b82f6" opacity="0.4" rx="3"/>
   <!-- R2 at ~210 -->
   <rect x="208" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- C3 at ~263 -->
-  <rect x="261" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
+  <rect x="261" y="55" width="26" height="90" fill="#3b82f6" opacity="0.4" rx="3"/>
   <!-- R3 at ~298 -->
   <rect x="296" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- C4 -->
-  <rect x="349" y="55" width="26" height="90" fill="#6366f1" opacity="0.4" rx="3"/>
+  <rect x="349" y="55" width="26" height="90" fill="#3b82f6" opacity="0.4" rx="3"/>
   <!-- R4 -->
   <rect x="384" y="55" width="44" height="90" fill="#2d2f72" opacity="0.3" rx="3"/>
   <!-- Dots representing air molecules -->
-  <circle cx="98" cy="100" r="3" fill="#6366f1"/>
-  <circle cx="106" cy="100" r="3" fill="#6366f1"/>
-  <circle cx="98" cy="88" r="3" fill="#6366f1"/>
-  <circle cx="106" cy="112" r="3" fill="#6366f1"/>
-  <circle cx="142" cy="100" r="3" fill="#6366f1" opacity="0.5"/>
-  <circle cx="155" cy="100" r="3" fill="#6366f1" opacity="0.4"/>
-  <circle cx="168" cy="100" r="3" fill="#6366f1" opacity="0.4"/>
+  <circle cx="98" cy="100" r="3" fill="#3b82f6"/>
+  <circle cx="106" cy="100" r="3" fill="#3b82f6"/>
+  <circle cx="98" cy="88" r="3" fill="#3b82f6"/>
+  <circle cx="106" cy="112" r="3" fill="#3b82f6"/>
+  <circle cx="142" cy="100" r="3" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="155" cy="100" r="3" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="168" cy="100" r="3" fill="#3b82f6" opacity="0.4"/>
   <!-- Labels -->
   <text x="98" y="50" text-anchor="middle" fill="#4338ca" font-weight="bold" font-size="12">C</text>
   <text x="142" y="50" text-anchor="middle" fill="#7e838f" font-size="12">R</text>

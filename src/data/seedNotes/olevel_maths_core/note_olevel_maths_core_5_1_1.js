@@ -46,10 +46,10 @@ export const note_olevel_maths_core_5_1_1 = {
       data: {
         svg: `<svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Rectangle -->
-  <rect x="10" y="20" width="100" height="60" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
+  <rect x="10" y="20" width="100" height="60" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <text x="60" y="15" text-anchor="middle" fill="#374151">l = 10</text>
   <text x="118" y="55" fill="#374151">w = 6</text>
-  <text x="60" y="98" text-anchor="middle" fill="#6366f1" font-weight="bold">Rectangle</text>
+  <text x="60" y="98" text-anchor="middle" fill="#3b82f6" font-weight="bold">Rectangle</text>
 
   <!-- Triangle -->
   <polygon points="150,85 250,85 220,25" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>

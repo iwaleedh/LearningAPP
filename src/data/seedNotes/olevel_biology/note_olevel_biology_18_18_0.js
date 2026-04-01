@@ -81,7 +81,7 @@ export const note_olevel_biology_18_18_0 = {
         caption: 'Graphs showing continuous variation (bell curve, left) and discontinuous variation (bar chart, right)',
         svg: `<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <!-- Continuous variation graph -->
-  <rect x="10" y="10" width="230" height="180" rx="6" fill="#1c3a64" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="10" y="10" width="230" height="180" rx="6" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="125" y="28" text-anchor="middle" font-weight="bold" font-size="11" fill="#3730a3">Continuous Variation</text>
   <!-- Axes -->
   <line x1="35" y1="160" x2="225" y2="160" stroke="#334155" stroke-width="1.5"/>
@@ -89,7 +89,7 @@ export const note_olevel_biology_18_18_0 = {
   <text x="130" y="178" text-anchor="middle" font-size="10" fill="#334155">Height (cm)</text>
   <text x="14" y="105" text-anchor="middle" font-size="10" fill="#334155" transform="rotate(-90,14,105)">Frequency</text>
   <!-- Bell curve path -->
-  <path d="M45,158 Q70,155 85,130 Q100,90 130,50 Q160,90 175,130 Q190,155 215,158" fill="#2d2d72" fill-opacity="0.5" stroke="#6366f1" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M45,158 Q70,155 85,130 Q100,90 130,50 Q160,90 175,130 Q190,155 215,158" fill="#2d2d72" fill-opacity="0.5" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Discontinuous variation graph -->
   <rect x="275" y="10" width="230" height="180" rx="6" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>

@@ -111,7 +111,7 @@ export const note_olevel_maths_extended_4_1_1 = {
       id: 'svg-cube-net',
       type: 'svg',
       data: {
-        svg: '<svg viewBox="0 0 320 250" xmlns="http://www.w3.org/2000/svg"><style>rect{stroke:#6366f1;stroke-width:2;fill:#e0e7ff}.label{font-family:system-ui;font-size:12px;fill:#6366f1;font-weight:600}</style><rect x="110" y="10" width="50" height="50"/><rect x="60" y="60" width="50" height="50"/><rect x="110" y="60" width="50" height="50"/><rect x="160" y="60" width="50" height="50"/><rect x="210" y="60" width="50" height="50"/><rect x="110" y="110" width="50" height="50"/><text x="160" y="190" text-anchor="middle" class="label">Net of a cube (cross shape)</text></svg>',
+        svg: '<svg viewBox="0 0 320 250" xmlns="http://www.w3.org/2000/svg"><style>rect{stroke:#3b82f6;stroke-width:2;fill:#e0e7ff}.label{font-family:system-ui;font-size:12px;fill:#3b82f6;font-weight:600}</style><rect x="110" y="10" width="50" height="50"/><rect x="60" y="60" width="50" height="50"/><rect x="110" y="60" width="50" height="50"/><rect x="160" y="60" width="50" height="50"/><rect x="210" y="60" width="50" height="50"/><rect x="110" y="110" width="50" height="50"/><text x="160" y="190" text-anchor="middle" class="label">Net of a cube (cross shape)</text></svg>',
         caption: 'One of 11 possible nets of a cube'
       }
     },

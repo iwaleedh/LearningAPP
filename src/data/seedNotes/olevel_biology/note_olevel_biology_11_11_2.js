@@ -40,7 +40,7 @@ export const note_olevel_biology_11_11_2 = {
   <circle cx="245" cy="196" r="8" fill="#0a3020" stroke="#16a34a" stroke-width="1.5"/>
   <text x="245" y="200" text-anchor="middle" font-size="8" font-weight="bold" fill="#15803d">O₂</text>
   <!-- CO2 in alveolus (lower) -->
-  <circle cx="210" cy="218" r="7" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
+  <circle cx="210" cy="218" r="7" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="210" y="222" text-anchor="middle" font-size="7" font-weight="bold" fill="#4338ca">CO₂</text>
   <!-- Alveolar wall (thin line) -->
   <ellipse cx="230" cy="175" rx="110" ry="110" fill="none" stroke="#93c5fd" stroke-width="6"/>
@@ -67,7 +67,7 @@ export const note_olevel_biology_11_11_2 = {
   <line x1="340" y1="195" x2="362" y2="188" stroke="#16a34a" stroke-width="2.5" marker-end="url(#ox)"/>
   <text x="347" y="162" text-anchor="middle" font-size="9" fill="#15803d" font-weight="bold">O₂ diffuses in</text>
   <!-- Diffusion arrows: CO2 from capillary to alveolus -->
-  <line x1="362" y1="210" x2="342" y2="216" stroke="#6366f1" stroke-width="2.5" marker-end="url(#co2)"/>
+  <line x1="362" y1="210" x2="342" y2="216" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#co2)"/>
   <text x="358" y="235" text-anchor="middle" font-size="9" fill="#4338ca" font-weight="bold">CO₂ diffuses out</text>
   <!-- Moisture label -->
   <text x="230" y="295" text-anchor="middle" font-size="9" fill="#0369a1" font-style="italic">Moist surface — gases dissolve before diffusing</text>
@@ -78,7 +78,7 @@ export const note_olevel_biology_11_11_2 = {
   <defs>
     <marker id="down" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#b91c1c"/></marker>
     <marker id="ox" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#16a34a"/></marker>
-    <marker id="co2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#6366f1"/></marker>
+    <marker id="co2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#3b82f6"/></marker>
   </defs>
 </svg>`
       }

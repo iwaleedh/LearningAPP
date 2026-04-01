@@ -60,9 +60,9 @@ export const note_olevel_biology_19_19_3 = {
   <text x="400" y="154" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">Plant proteins</text>
   <!-- Arrows with labels -->
   <!-- N fixation: atmos → ammonium -->
-  <line x1="170" y1="75" x2="115" y2="268" stroke="#7c3aed" stroke-width="2" marker-end="url(#n1)"/>
-  <text x="95" y="175" font-size="10" fill="#7c3aed">Nitrogen fixation</text>
-  <text x="95" y="188" font-size="10" fill="#7c3aed">(Rhizobium/lightning)</text>
+  <line x1="170" y1="75" x2="115" y2="268" stroke="#1d4ed8" stroke-width="2" marker-end="url(#n1)"/>
+  <text x="95" y="175" font-size="10" fill="#1d4ed8">Nitrogen fixation</text>
+  <text x="95" y="188" font-size="10" fill="#1d4ed8">(Rhizobium/lightning)</text>
   <!-- Nitrification: ammonium → nitrates -->
   <line x1="200" y1="270" x2="220" y2="242" stroke="#16a34a" stroke-width="2" marker-end="url(#n2)"/>
   <text x="195" y="260" font-size="10" fill="#16a34a">Nitrification</text>
@@ -78,7 +78,7 @@ export const note_olevel_biology_19_19_3 = {
   <!-- Feeding: plants eaten -->
   <text x="370" y="116" font-size="10" fill="#065f46">↑ Feeding</text>
   <defs>
-    <marker id="n1" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#7c3aed"/></marker>
+    <marker id="n1" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#1d4ed8"/></marker>
     <marker id="n2" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#16a34a"/></marker>
     <marker id="n3" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#059669"/></marker>
     <marker id="n4" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#b45309"/></marker>

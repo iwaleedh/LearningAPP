@@ -311,13 +311,13 @@ export const note_chemistry_5_18_0 = {
   <!-- Hexagon σ bonds -->
   <polygon points="255,52 285,69 285,104 255,121 225,104 225,69" fill="none" stroke="#374151" stroke-width="2.5"/>
   <!-- Delocalised pi cloud above (ellipse) -->
-  <ellipse cx="255" cy="60" rx="28" ry="13" fill="#818cf8" fill-opacity="0.35" stroke="#4f46e5" stroke-width="1.5"/>
+  <ellipse cx="255" cy="60" rx="28" ry="13" fill="#60a5fa" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.5"/>
   <text x="255" y="58" text-anchor="middle" font-size="9" fill="#3730a3">π above</text>
   <!-- Delocalised pi cloud below (ellipse) -->
-  <ellipse cx="255" cy="113" rx="28" ry="13" fill="#818cf8" fill-opacity="0.35" stroke="#4f46e5" stroke-width="1.5"/>
+  <ellipse cx="255" cy="113" rx="28" ry="13" fill="#60a5fa" fill-opacity="0.35" stroke="#2563eb" stroke-width="1.5"/>
   <text x="255" y="116" text-anchor="middle" font-size="9" fill="#3730a3">π below</text>
   <!-- Circle in centre representing delocalization symbol -->
-  <circle cx="255" cy="87" r="20" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-dasharray="4,2"/>
+  <circle cx="255" cy="87" r="20" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="4,2"/>
   <!-- H atoms delocalised -->
   <text x="255" y="48" text-anchor="middle" font-size="10" fill="#6b7280">H</text>
   <text x="295" y="66" text-anchor="start" font-size="10" fill="#6b7280">H</text>

@@ -101,8 +101,8 @@ export const note_olevel_biology_10_10_1 = {
   <ellipse cx="415" cy="175" rx="13" ry="9" fill="#1250a0" stroke="#1d4ed8" stroke-width="1"/>
   <text x="400" y="215" text-anchor="middle" font-size="9" fill="#64748b">Vacuole seals</text>
   <!-- Lysosome -->
-  <ellipse cx="380" cy="135" rx="10" ry="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="356" y="123" text-anchor="middle" font-size="8" fill="#7c3aed">Lysosome</text>
+  <ellipse cx="380" cy="135" rx="10" ry="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="356" y="123" text-anchor="middle" font-size="8" fill="#1d4ed8">Lysosome</text>
   <line x1="341" y1="155" x2="344" y2="155" stroke="#475569" stroke-width="1.5" marker-end="url(#a1)"/>
   <!-- Step 4: Digestion -->
   <ellipse cx="560" cy="155" rx="52" ry="42" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>

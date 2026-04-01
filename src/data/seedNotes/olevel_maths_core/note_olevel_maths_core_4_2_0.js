@@ -61,7 +61,7 @@ export const note_olevel_maths_core_4_2_0 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" width="520" height="210">
   <style>
     text { font-family: sans-serif; font-size: 12px; fill: #374151; }
-    .lbl { font-weight: 700; font-size: 13px; fill: #6366f1; }
+    .lbl { font-weight: 700; font-size: 13px; fill: #3b82f6; }
     .ext { font-weight: 700; font-size: 13px; fill: #ef4444; }
     .title { font-weight: 700; fill: #374151; font-size: 12px; }
     .eq { fill: #6b7280; font-size: 11px; }
@@ -70,11 +70,11 @@ export const note_olevel_maths_core_4_2_0 = {
   <g transform="translate(30, 20)">
     <text x="40" y="0" class="title">Interior angles: a + b + c = 180°</text>
     <!-- Triangle -->
-    <polygon points="100,160 220,160 160,50" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
+    <polygon points="100,160 220,160 160,50" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
     <!-- Angle arcs -->
-    <path d="M113,160 A15,15 0 0,0 107,146" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-    <path d="M207,160 A15,15 0 0,1 214,147" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-    <path d="M153,62 A15,15 0 0,1 166,62" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <path d="M113,160 A15,15 0 0,0 107,146" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M207,160 A15,15 0 0,1 214,147" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M153,62 A15,15 0 0,1 166,62" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
     <text x="90" y="178" class="lbl">a</text>
     <text x="213" y="178" class="lbl">b</text>
     <text x="153" y="42" class="lbl">c</text>
@@ -88,8 +88,8 @@ export const note_olevel_maths_core_4_2_0 = {
     <!-- Extended line -->
     <line x1="165" y1="160" x2="220" y2="160" stroke="#374151" stroke-width="2" stroke-dasharray="5,3"/>
     <!-- Interior angle arcs -->
-    <path d="M44,160 A16,16 0 0,0 37,146" fill="none" stroke="#6366f1" stroke-width="1.5"/>
-    <path d="M93,62 A15,15 0 0,1 107,62" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <path d="M44,160 A16,16 0 0,0 37,146" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M93,62 A15,15 0 0,1 107,62" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
     <!-- Exterior angle arc -->
     <path d="M195,160 A30,30 0 0,0 161,135" fill="none" stroke="#ef4444" stroke-width="2"/>
     <text x="20" y="178" class="lbl">a</text>

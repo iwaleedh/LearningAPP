@@ -66,14 +66,14 @@ export const note_olevel_biology_14_14_5 = {
   <!-- Shoot -->
   <rect x="180" y="60" width="60" height="180" rx="8" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <!-- Auxin dots — more on shaded side -->
-  <circle cx="195" cy="90" r="4" fill="#7c3aed"/>
-  <circle cx="195" cy="110" r="4" fill="#7c3aed"/>
-  <circle cx="195" cy="130" r="4" fill="#7c3aed"/>
-  <circle cx="195" cy="150" r="4" fill="#7c3aed"/>
-  <circle cx="210" cy="100" r="4" fill="#7c3aed"/>
-  <circle cx="210" cy="120" r="4" fill="#7c3aed"/>
-  <circle cx="225" cy="90" r="4" fill="#7c3aed" opacity="0.3"/>
-  <circle cx="225" cy="120" r="4" fill="#7c3aed" opacity="0.3"/>
+  <circle cx="195" cy="90" r="4" fill="#1d4ed8"/>
+  <circle cx="195" cy="110" r="4" fill="#1d4ed8"/>
+  <circle cx="195" cy="130" r="4" fill="#1d4ed8"/>
+  <circle cx="195" cy="150" r="4" fill="#1d4ed8"/>
+  <circle cx="210" cy="100" r="4" fill="#1d4ed8"/>
+  <circle cx="210" cy="120" r="4" fill="#1d4ed8"/>
+  <circle cx="225" cy="90" r="4" fill="#1d4ed8" opacity="0.3"/>
+  <circle cx="225" cy="120" r="4" fill="#1d4ed8" opacity="0.3"/>
   <!-- Arrow showing bend -->
   <path d="M240 80 Q280 110 250 150" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#redArr)"/>
   <text x="290" y="110" font-size="11" fill="#dc2626">Shoot bends</text>
@@ -81,14 +81,14 @@ export const note_olevel_biology_14_14_5 = {
   <!-- Labels -->
   <text x="145" y="100" font-size="10" fill="#166534">Light</text>
   <text x="145" y="112" font-size="10" fill="#166534">side</text>
-  <text x="248" y="100" font-size="10" fill="#7c3aed">Shaded</text>
-  <text x="248" y="112" font-size="10" fill="#7c3aed">side</text>
-  <text x="140" y="200" font-size="10" fill="#7c3aed">(less auxin)</text>
-  <text x="248" y="200" font-size="10" fill="#7c3aed">(more auxin)</text>
+  <text x="248" y="100" font-size="10" fill="#1d4ed8">Shaded</text>
+  <text x="248" y="112" font-size="10" fill="#1d4ed8">side</text>
+  <text x="140" y="200" font-size="10" fill="#1d4ed8">(less auxin)</text>
+  <text x="248" y="200" font-size="10" fill="#1d4ed8">(more auxin)</text>
   <text x="140" y="215" font-size="10" fill="#16a34a">less elongation</text>
   <text x="248" y="215" font-size="10" fill="#16a34a">more elongation</text>
   <!-- Explanation box -->
-  <rect x="340" y="60" width="165" height="120" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="340" y="60" width="165" height="120" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="422" y="82" text-anchor="middle" font-size="11" font-weight="bold" fill="#5b21b6">How it works:</text>
   <text x="422" y="98" text-anchor="middle" font-size="10" fill="#5b21b6">Auxin moves away</text>
   <text x="422" y="111" text-anchor="middle" font-size="10" fill="#5b21b6">from light to shaded</text>

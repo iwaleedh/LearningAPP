@@ -17,7 +17,7 @@ export const note_olevel_physics_6_2_4 = {
   <!-- Dark energy: 68% from 270° clockwise to 514.8° (= 154.8°) — nearly 2/3 -->
   <path d="M 130 145 L 130 55 A 90 90 0 1 1 56.4 198.8 Z" fill="#4338ca" opacity="0.85"/>
   <!-- Dark matter: 27% = 97.2 degrees from 154.8° to 252° -->
-  <path d="M 130 145 L 56.4 198.8 A 90 90 0 0 1 130 235 Z" fill="#7c3aed" opacity="0.7"/>
+  <path d="M 130 145 L 56.4 198.8 A 90 90 0 0 1 130 235 Z" fill="#1d4ed8" opacity="0.7"/>
   <!-- Ordinary matter: 5% = 18 degrees from 252° to 270° -->
   <path d="M 130 145 L 130 235 A 90 90 0 0 1 130 55 Z" fill="#78350f" opacity="0.85"/>
   <!-- Labels with lines -->
@@ -28,7 +28,7 @@ export const note_olevel_physics_6_2_4 = {
   <text x="218" y="100" font-size="9" fill="#94a3b8">unknown nature;</text>
   <text x="218" y="112" font-size="9" fill="#94a3b8">drives acceleration</text>
   <!-- Dark matter label -->
-  <line x1="82" y1="215" x2="60" y2="240" stroke="#7c3aed" stroke-width="1.5"/>
+  <line x1="82" y1="215" x2="60" y2="240" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="18" y="240" font-size="12" fill="#2d1b69" font-weight="bold">Dark Matter</text>
   <text x="22" y="253" font-size="11" fill="#2d1b69">27%</text>
   <!-- Ordinary matter -->

@@ -54,7 +54,7 @@ export const note_mathematics_5_4_2 = {
   <line x1="180" y1="110" x2="180" y2="200" stroke="#4b5563" stroke-width="2"/>
   
   <!-- Mass 1 (Left - heavier) -->
-  <rect x="100" y="280" width="40" height="40" fill="#6366f1" rx="4"/>
+  <rect x="100" y="280" width="40" height="40" fill="#3b82f6" rx="4"/>
   <text x="110" y="305" font-family="sans-serif" fill="#1e293b" font-size="16">m₁</text>
   
   <!-- Mass 2 (Right - lighter) -->

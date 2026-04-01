@@ -6,7 +6,7 @@ export const note_chemistry_1_4_9 = {
     { id: 'callout-key-fd', type: 'callout', data: { style: 'key', title: 'Fractional Distillation — Principle', text: 'Crude oil is separated by fractional distillation in a fractionating column. The mixture is heated to vaporise it, then vapours rise up the column and condense at different heights according to their boiling points. Shorter-chain alkanes have lower boiling points (weaker London forces) and condense near the top; longer-chain alkanes condense near the bottom.' } },
     { id: 'svg-column', type: 'svg', data: { svg: `<svg viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
   <text x="230" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Fractionating Column</text>
-  <rect x="120" y="30" width="80" height="320" rx="6" fill="#2d2f72" stroke="#4f46e5" stroke-width="2"/>
+  <rect x="120" y="30" width="80" height="320" rx="6" fill="#2d2f72" stroke="#2563eb" stroke-width="2"/>
   <line x1="100" y1="50" x2="100" y2="340" stroke="#ef4444" stroke-width="2"/>
   <polygon points="100,40 96,55 104,55" fill="#ef4444"/>
   <text x="95" y="200" text-anchor="middle" font-size="11" fill="#ef4444" transform="rotate(-90,95,200)">Temperature increases ↓</text>

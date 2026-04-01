@@ -81,7 +81,7 @@ export const note_olevel_biology_19_19_0 = {
   <line x1="80" y1="50" x2="115" y2="50" stroke="#d97706" stroke-width="2" marker-end="url(#arrowE)"/>
   <defs>
     <marker id="arrowE" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#6366f1"/>
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/>
     </marker>
   </defs>
 
@@ -95,11 +95,11 @@ export const note_olevel_biology_19_19_0 = {
   <text x="162" y="8" font-size="9" fill="#ef4444">~900 kJ heat</text>
 
   <!-- Arrow to primary consumer -->
-  <line x1="200" y1="50" x2="235" y2="50" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowE)"/>
-  <text x="217" y="45" text-anchor="middle" font-size="9" fill="#6366f1">10%</text>
+  <line x1="200" y1="50" x2="235" y2="50" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowE)"/>
+  <text x="217" y="45" text-anchor="middle" font-size="9" fill="#3b82f6">10%</text>
 
   <!-- Primary consumer -->
-  <rect x="240" y="30" width="80" height="40" rx="6" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
+  <rect x="240" y="30" width="80" height="40" rx="6" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/>
   <text x="280" y="47" text-anchor="middle" font-weight="bold" font-size="10" fill="#3730a3">1° Consumer</text>
   <text x="280" y="62" text-anchor="middle" font-size="9" fill="#3730a3">100 kJ</text>
 
@@ -108,8 +108,8 @@ export const note_olevel_biology_19_19_0 = {
   <text x="282" y="8" font-size="9" fill="#ef4444">~90 kJ heat</text>
 
   <!-- Arrow to secondary consumer -->
-  <line x1="320" y1="50" x2="355" y2="50" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowE)"/>
-  <text x="337" y="45" text-anchor="middle" font-size="9" fill="#6366f1">10%</text>
+  <line x1="320" y1="50" x2="355" y2="50" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowE)"/>
+  <text x="337" y="45" text-anchor="middle" font-size="9" fill="#3b82f6">10%</text>
 
   <!-- Secondary consumer -->
   <rect x="360" y="30" width="80" height="40" rx="6" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
@@ -126,7 +126,7 @@ export const note_olevel_biology_19_19_0 = {
   <rect x="80" y="120" width="340" height="28" rx="4" fill="#0a2e1a" stroke="#16a34a" stroke-width="1.5"/>
   <text x="250" y="139" text-anchor="middle" font-size="10" fill="#14532d" font-weight="bold">Producers (largest biomass)</text>
   <!-- Primary consumer bar -->
-  <rect x="130" y="152" width="240" height="24" rx="4" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="130" y="152" width="240" height="24" rx="4" fill="#2d2d72" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="250" y="168" text-anchor="middle" font-size="10" fill="#3730a3">Primary consumers</text>
   <!-- Secondary consumer bar -->
   <rect x="170" y="180" width="160" height="22" rx="4" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>

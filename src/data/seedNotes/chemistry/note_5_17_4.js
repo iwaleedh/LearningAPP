@@ -95,30 +95,30 @@ export const note_chemistry_5_17_4 = {
       data: {
         svg: `<svg viewBox="0 0 460 210" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;font-size:11px">
   <text x="75" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Octahedral (CN=6)</text>
-  <circle cx="75" cy="100" r="13" fill="#6366f1"/>
+  <circle cx="75" cy="100" r="13" fill="#3b82f6"/>
   <text x="75" y="104" text-anchor="middle" font-size="9" fill="#1e293b">M</text>
   <line x1="75" y1="100" x2="32" y2="100" stroke="#94a3b8" stroke-width="2"/>
-  <circle cx="24" cy="100" r="9" fill="#2d2f72" stroke="#6366f1"/>
+  <circle cx="24" cy="100" r="9" fill="#2d2f72" stroke="#3b82f6"/>
   <text x="24" y="103" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
   <line x1="75" y1="100" x2="118" y2="100" stroke="#94a3b8" stroke-width="2"/>
-  <circle cx="126" cy="100" r="9" fill="#2d2f72" stroke="#6366f1"/>
+  <circle cx="126" cy="100" r="9" fill="#2d2f72" stroke="#3b82f6"/>
   <text x="126" y="103" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
   <line x1="75" y1="100" x2="75" y2="57" stroke="#94a3b8" stroke-width="2"/>
-  <circle cx="75" cy="49" r="9" fill="#2d2f72" stroke="#6366f1"/>
+  <circle cx="75" cy="49" r="9" fill="#2d2f72" stroke="#3b82f6"/>
   <text x="75" y="52" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
   <line x1="75" y1="100" x2="75" y2="143" stroke="#94a3b8" stroke-width="2"/>
-  <circle cx="75" cy="151" r="9" fill="#2d2f72" stroke="#6366f1"/>
+  <circle cx="75" cy="151" r="9" fill="#2d2f72" stroke="#3b82f6"/>
   <text x="75" y="154" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
   <polygon points="75,100 46,132 41,125" fill="#94a3b8"/>
-  <circle cx="37" cy="138" r="9" fill="#2d2f72" stroke="#6366f1"/>
+  <circle cx="37" cy="138" r="9" fill="#2d2f72" stroke="#3b82f6"/>
   <text x="37" y="141" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
   <line x1="75" y1="100" x2="105" y2="66" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,2"/>
-  <circle cx="112" cy="59" r="9" fill="#2d2f72" stroke="#6366f1" stroke-dasharray="4,2"/>
+  <circle cx="112" cy="59" r="9" fill="#2d2f72" stroke="#3b82f6" stroke-dasharray="4,2"/>
   <text x="112" y="62" text-anchor="middle" font-size="8" fill="#3730a3">L</text>
   <text x="75" y="182" text-anchor="middle" fill="#64748b">6 ligands · 90° angles</text>
   <line x1="160" y1="25" x2="160" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="270" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Tetrahedral (CN=4)</text>
-  <circle cx="270" cy="100" r="13" fill="#6366f1"/>
+  <circle cx="270" cy="100" r="13" fill="#3b82f6"/>
   <text x="270" y="104" text-anchor="middle" font-size="9" fill="#1e293b">M</text>
   <line x1="270" y1="100" x2="228" y2="72" stroke="#94a3b8" stroke-width="2"/>
   <circle cx="220" cy="67" r="9" fill="#44370a" stroke="#ca8a04"/>
@@ -135,7 +135,7 @@ export const note_chemistry_5_17_4 = {
   <text x="270" y="182" text-anchor="middle" fill="#64748b">4 ligands · 109.5° angles</text>
   <line x1="355" y1="25" x2="355" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="410" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Square Planar (CN=4)</text>
-  <circle cx="410" cy="100" r="13" fill="#6366f1"/>
+  <circle cx="410" cy="100" r="13" fill="#3b82f6"/>
   <text x="410" y="104" text-anchor="middle" font-size="9" fill="#1e293b">M</text>
   <line x1="410" y1="100" x2="372" y2="100" stroke="#94a3b8" stroke-width="2"/>
   <circle cx="364" cy="100" r="9" fill="#0a2e1a" stroke="#16a34a"/>
@@ -224,7 +224,7 @@ export const note_chemistry_5_17_4 = {
   <text x="170" y="16" text-anchor="middle" font-weight="bold" fill="#1e293b">Geometric Isomers of Pt(NH₃)₂Cl₂ (Square Planar)</text>
   <text x="85" y="38" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="bold">cis-isomer</text>
   <text x="85" y="52" text-anchor="middle" font-size="9" fill="#475569">identical groups adjacent (90°)</text>
-  <circle cx="85" cy="115" r="12" fill="#6366f1"/>
+  <circle cx="85" cy="115" r="12" fill="#3b82f6"/>
   <text x="85" y="119" text-anchor="middle" font-size="9" fill="#1e293b">Pt</text>
   <line x1="85" y1="103" x2="85" y2="74" stroke="#94a3b8" stroke-width="1.5"/>
   <circle cx="85" cy="65" r="10" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>
@@ -242,7 +242,7 @@ export const note_chemistry_5_17_4 = {
   <line x1="170" y1="32" x2="170" y2="185" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="5,3"/>
   <text x="255" y="38" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="bold">trans-isomer</text>
   <text x="255" y="52" text-anchor="middle" font-size="9" fill="#475569">identical groups opposite (180°)</text>
-  <circle cx="255" cy="115" r="12" fill="#6366f1"/>
+  <circle cx="255" cy="115" r="12" fill="#3b82f6"/>
   <text x="255" y="119" text-anchor="middle" font-size="9" fill="#1e293b">Pt</text>
   <line x1="255" y1="103" x2="255" y2="74" stroke="#94a3b8" stroke-width="1.5"/>
   <circle cx="255" cy="65" r="10" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>

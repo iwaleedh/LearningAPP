@@ -67,8 +67,8 @@ export const note_olevel_biology_5_5_0 = {
   <!-- Step 1: Enzyme + Substrate approaching -->
   <text x="90" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 1: Approach</text>
   <!-- Enzyme (lock) -->
-  <path d="M 30,65 Q 30,55 40,55 L 140,55 Q 150,55 150,65 L 150,155 Q 150,165 140,165 L 40,165 Q 30,165 30,155 Z" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
-  <path d="M 65,110 Q 65,90 90,90 Q 115,90 115,110 Q 115,130 90,130 Q 65,130 65,110 Z" fill="#0a2e1a" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M 30,65 Q 30,55 40,55 L 140,55 Q 150,55 150,65 L 150,155 Q 150,165 140,165 L 40,165 Q 30,165 30,155 Z" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
+  <path d="M 65,110 Q 65,90 90,90 Q 115,90 115,110 Q 115,130 90,130 Q 65,130 65,110 Z" fill="#0a2e1a" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="90" y="183" text-anchor="middle" font-size="10" fill="#4c1d95" font-weight="bold">Enzyme</text>
   <text x="90" y="195" text-anchor="middle" font-size="9" fill="#374151">(lock)</text>
   <!-- Label active site -->
@@ -79,11 +79,11 @@ export const note_olevel_biology_5_5_0 = {
   <text x="190" y="55" text-anchor="middle" font-size="9" fill="#15803d" dy="4">Substrate</text>
   <text x="190" y="68" text-anchor="middle" font-size="9" fill="#374151">(key)</text>
   <!-- Arrow -->
-  <text x="90" y="45" text-anchor="middle" font-size="16" fill="#7c3aed" dy="1">↓</text>
+  <text x="90" y="45" text-anchor="middle" font-size="16" fill="#1d4ed8" dy="1">↓</text>
 
   <!-- Step 2: Enzyme-substrate complex -->
   <text x="270" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 2: Complex forms</text>
-  <path d="M 210,65 Q 210,55 220,55 L 320,55 Q 330,55 330,65 L 330,155 Q 330,165 320,165 L 220,165 Q 210,165 210,155 Z" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <path d="M 210,65 Q 210,55 220,55 L 320,55 Q 330,55 330,65 L 330,155 Q 330,165 320,165 L 220,165 Q 210,165 210,155 Z" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Substrate fills active site -->
   <ellipse cx="270" cy="110" rx="28" ry="26" fill="#0a2e1a" stroke="#16a34a" stroke-width="2"/>
   <text x="270" y="107" text-anchor="middle" font-size="8" fill="#15803d">Enzyme-</text>
@@ -94,8 +94,8 @@ export const note_olevel_biology_5_5_0 = {
 
   <!-- Step 3: Products released -->
   <text x="445" y="45" text-anchor="middle" font-size="10" font-weight="bold" fill="#374151">Step 3: Products released</text>
-  <path d="M 385,65 Q 385,55 395,55 L 495,55 Q 505,55 505,65 L 505,155 Q 505,165 495,165 L 395,165 Q 385,165 385,155 Z" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
-  <path d="M 415,110 Q 415,90 440,90 Q 465,90 465,110 Q 465,130 440,130 Q 415,130 415,110 Z" fill="#0a2e1a" stroke="#7c3aed" stroke-width="1.5"/>
+  <path d="M 385,65 Q 385,55 395,55 L 495,55 Q 505,55 505,65 L 505,155 Q 505,165 495,165 L 395,165 Q 385,165 385,155 Z" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
+  <path d="M 415,110 Q 415,90 440,90 Q 465,90 465,110 Q 465,130 440,130 Q 415,130 415,110 Z" fill="#0a2e1a" stroke="#1d4ed8" stroke-width="1.5"/>
   <!-- Two products -->
   <ellipse cx="430" cy="55" rx="14" ry="14" fill="#44370a" stroke="#d97706" stroke-width="1.5"/>
   <text x="430" y="59" text-anchor="middle" font-size="8" fill="#92400e">P1</text>
@@ -106,8 +106,8 @@ export const note_olevel_biology_5_5_0 = {
   <text x="445" y="207" text-anchor="middle" font-size="9" fill="#374151">Enzyme reused</text>
 
   <!-- Arrows between steps -->
-  <text x="180" y="115" text-anchor="middle" font-size="18" fill="#7c3aed">→</text>
-  <text x="355" y="115" text-anchor="middle" font-size="18" fill="#7c3aed">→</text>
+  <text x="180" y="115" text-anchor="middle" font-size="18" fill="#1d4ed8">→</text>
+  <text x="355" y="115" text-anchor="middle" font-size="18" fill="#1d4ed8">→</text>
 
   <!-- Bottom label -->
   <text x="260" y="235" text-anchor="middle" font-size="10" fill="#374151">The enzyme is <tspan font-weight="bold">not consumed</tspan> — its active site is unchanged and can bind more substrate.</text>

@@ -88,7 +88,7 @@ const physicsStencils = [
     subject: 'physics',
     category: 'Waves',
     label: 'Wavefront Lines',
-    svg: '<svg viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg"><line x1="10" y1="5" x2="10" y2="35" stroke="#6366f1" stroke-width="2"/><line x1="25" y1="5" x2="25" y2="35" stroke="#6366f1" stroke-width="2"/><line x1="40" y1="5" x2="40" y2="35" stroke="#6366f1" stroke-width="2"/><line x1="55" y1="5" x2="55" y2="35" stroke="#6366f1" stroke-width="2"/><line x1="70" y1="5" x2="70" y2="35" stroke="#6366f1" stroke-width="2"/><line x1="5" y1="20" x2="75" y2="20" stroke="#6366f1" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/></svg>',
+    svg: '<svg viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg"><line x1="10" y1="5" x2="10" y2="35" stroke="#3b82f6" stroke-width="2"/><line x1="25" y1="5" x2="25" y2="35" stroke="#3b82f6" stroke-width="2"/><line x1="40" y1="5" x2="40" y2="35" stroke="#3b82f6" stroke-width="2"/><line x1="55" y1="5" x2="55" y2="35" stroke="#3b82f6" stroke-width="2"/><line x1="70" y1="5" x2="70" y2="35" stroke="#3b82f6" stroke-width="2"/><line x1="5" y1="20" x2="75" y2="20" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/></svg>',
     defaultWidth: 80,
     defaultHeight: 40,
   },

@@ -1357,7 +1357,7 @@ export default function LiveClassPage() {
         if (!fcConnectorSourceRef.current) {
           // First click — mark source
           fcConnectorSourceRef.current = node;
-          node.set({ borderColor: '#6366f1', borderDashArray: [4, 4] });
+          node.set({ borderColor: '#3b82f6', borderDashArray: [4, 4] });
           fc.requestRenderAll();
         } else {
           // Second click — create edge

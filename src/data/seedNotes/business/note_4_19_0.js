@@ -34,14 +34,14 @@ export const note_business_4_19_0 = {
             svg: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 175' font-family='Inter,system-ui,sans-serif'>
   <defs>
     <linearGradient id='specGrad' x1='0%' y1='0%' x2='100%' y2='0%'>
-      <stop offset='0%' stop-color='#6366f1'/>
+      <stop offset='0%' stop-color='#3b82f6'/>
       <stop offset='50%' stop-color='#8b5cf6'/>
       <stop offset='100%' stop-color='#f59e0b'/>
     </linearGradient>
   </defs>
   <text x='350' y='22' text-anchor='middle' font-size='14' font-weight='700' fill='#1e293b'>Global Marketing Strategy Spectrum</text>
   <rect x='60' y='38' width='580' height='24' rx='12' fill='url(#specGrad)'/>
-  <circle cx='100' cy='50' r='11' fill='#6366f1' stroke='white' stroke-width='2'/>
+  <circle cx='100' cy='50' r='11' fill='#3b82f6' stroke='white' stroke-width='2'/>
   <text x='100' y='54' text-anchor='middle' font-size='9' fill='#1e293b' font-weight='700'>S</text>
   <circle cx='350' cy='50' r='11' fill='#8b5cf6' stroke='white' stroke-width='2'/>
   <text x='350' y='54' text-anchor='middle' font-size='9' fill='#1e293b' font-weight='700'>G</text>
@@ -51,7 +51,7 @@ export const note_business_4_19_0 = {
   <text x='100' y='97' text-anchor='middle' font-size='11' fill='#475569'>(Global Strategy)</text>
   <text x='100' y='113' text-anchor='middle' font-size='10' fill='#64748b'>Coca-Cola — same taste</text>
   <text x='100' y='127' text-anchor='middle' font-size='10' fill='#64748b'>&amp; logo worldwide</text>
-  <text x='350' y='82' text-anchor='middle' font-size='12' font-weight='700' fill='#7c3aed'>Glocalisation</text>
+  <text x='350' y='82' text-anchor='middle' font-size='12' font-weight='700' fill='#1d4ed8'>Glocalisation</text>
   <text x='350' y='97' text-anchor='middle' font-size='11' fill='#475569'>(Think Global, Act Local)</text>
   <text x='350' y='113' text-anchor='middle' font-size='10' fill='#64748b'>McDonald's — same brand,</text>
   <text x='350' y='127' text-anchor='middle' font-size='10' fill='#64748b'>locally adapted menus per country</text>

@@ -55,13 +55,13 @@ export const note_olevel_physics_3_4_1 = {
   <text x="248" y="38" fill="#ef4444" font-size="11">Earthquake</text>
   <!-- P-wave curved paths (go through liquid outer core, refracted) -->
   <!-- Path going left through core — arrives at ~105° from epicentre on left side -->
-  <path d="M240,40 Q180,130 155,200 Q130,260 160,300 Q185,330 220,440" stroke="#6366f1" stroke-width="1.8" fill="none" stroke-dasharray="none"/>
+  <path d="M240,40 Q180,130 155,200 Q130,260 160,300 Q185,330 220,440" stroke="#3b82f6" stroke-width="1.8" fill="none" stroke-dasharray="none"/>
   <!-- Path going deeper through core left side -->
-  <path d="M240,40 Q210,160 200,240 Q200,320 220,440" stroke="#6366f1" stroke-width="1.8" fill="none"/>
+  <path d="M240,40 Q210,160 200,240 Q200,320 220,440" stroke="#3b82f6" stroke-width="1.8" fill="none"/>
   <!-- Path going right through core -->
-  <path d="M240,40 Q300,130 325,200 Q350,260 320,300 Q295,330 260,440" stroke="#6366f1" stroke-width="1.8" fill="none"/>
+  <path d="M240,40 Q300,130 325,200 Q350,260 320,300 Q295,330 260,440" stroke="#3b82f6" stroke-width="1.8" fill="none"/>
   <!-- Path going directly down (radius path) -->
-  <path d="M240,40 Q240,160 240,320 Q240,380 240,440" stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M240,40 Q240,160 240,320 Q240,380 240,440" stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.5"/>
   <!-- S-wave paths (only through mantle — do not enter outer core) -->
   <path d="M240,40 Q155,130 120,205 Q100,255 105,309" stroke="#10b981" stroke-width="2" fill="none"/>
   <path d="M240,40 Q325,130 360,205 Q380,255 375,309" stroke="#10b981" stroke-width="2" fill="none"/>
@@ -79,8 +79,8 @@ export const note_olevel_physics_3_4_1 = {
   <!-- S-wave shadow zone (180° - 2×105° no-S zone) -->
   <!-- S waves don't enter outer core, so the shadow covers a larger angle -->
   <!-- Legend -->
-  <line x1="15" y1="420" x2="50" y2="420" stroke="#6366f1" stroke-width="2"/>
-  <text x="55" y="424" fill="#6366f1">P-waves (through core)</text>
+  <line x1="15" y1="420" x2="50" y2="420" stroke="#3b82f6" stroke-width="2"/>
+  <text x="55" y="424" fill="#3b82f6">P-waves (through core)</text>
   <line x1="15" y1="440" x2="50" y2="440" stroke="#10b981" stroke-width="2"/>
   <text x="55" y="444" fill="#10b981">S-waves (mantle only)</text>
   <line x1="15" y1="460" x2="50" y2="460" stroke="#9333ea" stroke-width="3"/>

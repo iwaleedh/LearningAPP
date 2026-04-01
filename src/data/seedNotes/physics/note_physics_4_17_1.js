@@ -65,8 +65,8 @@ export const note_physics_4_17_1 = {
   <circle cx="220" cy="120" r="90" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
   <circle cx="220" cy="120" r="5" fill="#1e293b"/>
   <text x="226" y="125" font-family="Arial" font-size="12" fill="#1e293b">centre</text>
-  <circle cx="284" cy="56" r="11" fill="#6366f1"/>
-  <text x="298" y="52" font-family="Arial" font-size="12" fill="#6366f1" font-weight="bold">m</text>
+  <circle cx="284" cy="56" r="11" fill="#3b82f6"/>
+  <text x="298" y="52" font-family="Arial" font-size="12" fill="#3b82f6" font-weight="bold">m</text>
   <line x1="284" y1="56" x2="344" y2="84" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrowG)"/>
   <text x="346" y="82" font-family="Arial" font-size="12" fill="#10b981" font-weight="bold">v (tangential)</text>
   <line x1="284" y1="56" x2="237" y2="95" stroke="#ef4444" stroke-width="2.5" marker-end="url(#arrowR)"/>

@@ -37,15 +37,15 @@ export const note_olevel_maths_core_4_5_1 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280">
   <style>
     text { font-family: sans-serif; font-size: 12px; fill: #374151; }
-    .lbl { font-weight: 700; fill: #6366f1; font-size: 13px; }
+    .lbl { font-weight: 700; fill: #3b82f6; font-size: 13px; }
     .angle { font-weight: 700; fill: #ef4444; font-size: 13px; }
   </style>
   <!-- Circle -->
-  <circle cx="230" cy="155" r="110" fill="#2d2f72" fill-opacity="0.3" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="230" cy="155" r="110" fill="#2d2f72" fill-opacity="0.3" stroke="#3b82f6" stroke-width="2"/>
   <!-- Diameter AB -->
-  <line x1="120" y1="155" x2="340" y2="155" stroke="#6366f1" stroke-width="2.5"/>
-  <circle cx="120" cy="155" r="4" fill="#6366f1"/>
-  <circle cx="340" cy="155" r="4" fill="#6366f1"/>
+  <line x1="120" y1="155" x2="340" y2="155" stroke="#3b82f6" stroke-width="2.5"/>
+  <circle cx="120" cy="155" r="4" fill="#3b82f6"/>
+  <circle cx="340" cy="155" r="4" fill="#3b82f6"/>
   <text x="104" y="175" class="lbl">A</text>
   <text x="344" y="175" class="lbl">B</text>
   <!-- Centre O -->

@@ -64,13 +64,13 @@ export const note_olevel_maths_core_3_1_3 = {
   <line x1="60" y1="150" x2="180" y2="150" stroke="#10b981" stroke-width="2"/>
   <line x1="180" y1="150" x2="180" y2="60" stroke="#10b981" stroke-width="2"/>
   <!-- Hypotenuse AB -->
-  <line x1="60" y1="150" x2="180" y2="60" stroke="#6366f1" stroke-width="2.5"/>
+  <line x1="60" y1="150" x2="180" y2="60" stroke="#3b82f6" stroke-width="2.5"/>
   <!-- Right angle marker -->
   <rect x="170" y="140" width="10" height="10" fill="none" stroke="#10b981" stroke-width="1.2"/>
   <!-- Labels -->
   <text x="120" y="163" text-anchor="middle" fill="#10b981" font-weight="bold">Δx = 4</text>
   <text x="192" y="108" fill="#10b981" font-weight="bold">Δy = 3</text>
-  <text x="105" y="93" fill="#6366f1" font-weight="bold">d = 5</text>
+  <text x="105" y="93" fill="#3b82f6" font-weight="bold">d = 5</text>
   <!-- Points -->
   <circle cx="60" cy="150" r="4.5" fill="#ef4444"/>
   <text x="36" y="148" fill="#ef4444" font-weight="bold">A(1,1)</text>

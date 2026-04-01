@@ -59,12 +59,12 @@ export const note_olevel_maths_core_5_4_0 = {
       data: {
         svg: `<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Small triangle -->
-  <polygon points="40,160 120,160 80,80" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="40,160 120,160 80,80" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <text x="70" y="175" text-anchor="middle" fill="#374151">6</text>
   <text x="27" y="125" fill="#374151">5</text>
   <text x="108" y="125" fill="#374151">5</text>
-  <text x="80" y="68" text-anchor="middle" fill="#6366f1" font-size="10">α</text>
-  <text x="80" y="205" text-anchor="middle" fill="#6366f1" font-weight="bold">Small Triangle</text>
+  <text x="80" y="68" text-anchor="middle" fill="#3b82f6" font-size="10">α</text>
+  <text x="80" y="205" text-anchor="middle" fill="#3b82f6" font-weight="bold">Small Triangle</text>
 
   <!-- k label -->
   <text x="215" y="140" fill="#f59e0b" font-size="14" font-weight="bold">k = 2</text>

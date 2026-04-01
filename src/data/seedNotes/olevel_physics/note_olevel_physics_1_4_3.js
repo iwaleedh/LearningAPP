@@ -29,7 +29,7 @@ export const note_olevel_physics_1_4_3 = {
   <!-- Spring (left - no load) -->
   <text x="125" y="50" font-size="11" fill="#374151">Unloaded:</text>
   <line x1="140" y1="60" x2="140" y2="65" stroke="#374151" stroke-width="2"/>
-  <path d="M 140 65 Q 132 70 148 75 Q 132 80 148 85 Q 132 90 148 95 Q 132 100 140 105" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+  <path d="M 140 65 Q 132 70 148 75 Q 132 80 148 85 Q 132 90 148 95 Q 132 100 140 105" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
   <line x1="140" y1="105" x2="140" y2="115" stroke="#374151" stroke-width="2"/>
   <text x="155" y="90" font-size="10" fill="#374151">l₀</text>
   <line x1="150" y1="65" x2="150" y2="115" stroke="#374151" stroke-width="1" stroke-dasharray="3,2"/>
@@ -38,7 +38,7 @@ export const note_olevel_physics_1_4_3 = {
   <!-- Spring (right - with mass) -->
   <text x="255" y="50" font-size="11" fill="#374151">Loaded (force F):</text>
   <line x1="300" y1="60" x2="300" y2="65" stroke="#374151" stroke-width="2"/>
-  <path d="M 300 65 Q 292 72 308 79 Q 292 86 308 93 Q 292 100 308 107 Q 292 114 300 121" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+  <path d="M 300 65 Q 292 72 308 79 Q 292 86 308 93 Q 292 100 308 107 Q 292 114 300 121" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
   <line x1="300" y1="121" x2="300" y2="140" stroke="#374151" stroke-width="2"/>
   <!-- mass -->
   <rect x="280" y="140" width="40" height="22" fill="#64748b" rx="4"/>

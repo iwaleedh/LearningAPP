@@ -61,16 +61,16 @@ export const note_olevel_maths_core_5_4_2 = {
       data: {
         svg: `<svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- SSS example: two identical triangles -->
-  <polygon points="20,160 100,160 60,90" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="20,160 100,160 60,90" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <text x="60" y="175" text-anchor="middle" fill="#374151">8</text>
   <text x="12" y="130" fill="#374151">7</text>
   <text x="97" y="130" fill="#374151">6</text>
 
-  <polygon points="130,160 210,160 170,90" fill="#2d1b69" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="130,160 210,160 170,90" fill="#2d1b69" stroke="#3b82f6" stroke-width="2"/>
   <text x="170" y="175" text-anchor="middle" fill="#374151">8</text>
   <text x="122" y="130" fill="#374151">7</text>
   <text x="207" y="130" fill="#374151">6</text>
-  <text x="115" y="200" text-anchor="middle" fill="#6366f1" font-weight="bold">SSS</text>
+  <text x="115" y="200" text-anchor="middle" fill="#3b82f6" font-weight="bold">SSS</text>
 
   <!-- SAS example -->
   <polygon points="240,160 320,160 280,90" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>

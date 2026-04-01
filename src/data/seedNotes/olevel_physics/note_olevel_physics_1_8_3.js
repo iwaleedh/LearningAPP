@@ -41,7 +41,7 @@ export const note_olevel_physics_1_8_3 = {
   <text x="268" y="36" font-size="9" fill="#f59e0b">Hot steam</text>
   <text x="268" y="46" font-size="9" fill="#f59e0b">rises</text>
   <!-- Building / turbine at top -->
-  <rect x="195" y="22" width="48" height="30" rx="4" fill="#6366f1"/>
+  <rect x="195" y="22" width="48" height="30" rx="4" fill="#3b82f6"/>
   <text x="219" y="37" text-anchor="middle" font-size="9" fill="#1e293b">Turbine +</text>
   <text x="219" y="47" text-anchor="middle" font-size="9" fill="#1e293b">Generator</text>
   <!-- Electricity output -->

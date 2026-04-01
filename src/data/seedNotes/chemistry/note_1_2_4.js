@@ -269,14 +269,14 @@ export const note_chemistry_1_2_4 = {
         svg: `<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
   <line x1="308" y1="8" x2="308" y2="292" stroke="#e5e7eb" stroke-width="1.5"/>
   <rect x="8" y="8" width="292" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="8" y="8" width="292" height="28" rx="8" fill="#6366f1" fill-opacity="0.5"/>
-  <rect x="8" y="26" width="292" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="8" width="292" height="28" rx="8" fill="#3b82f6" fill-opacity="0.5"/>
+  <rect x="8" y="26" width="292" height="10" fill="#3b82f6" fill-opacity="0.5"/>
   <text x="154" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Three Factors Controlling IE₁</text>
   <circle cx="154" cy="160" r="30" fill="#1e293b" opacity="1"/>
   <text x="154" y="156" text-anchor="middle" font-size="9" font-weight="bold" fill="#1e293b">Nucleus</text>
   <text x="154" y="168" text-anchor="middle" font-size="8" fill="#1e293b">Z protons</text>
-  <circle cx="154" cy="160" r="60" fill="none" stroke="#6366f1" stroke-width="1" stroke-dasharray="4,3"/>
-  <circle cx="154" cy="160" r="85" fill="none" stroke="#6366f1" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="154" cy="160" r="60" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="154" cy="160" r="85" fill="none" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
   <circle cx="154" cy="75" r="6" fill="#ef4444"/>
   <text x="154" y="72" text-anchor="middle" font-size="8" fill="#dc2626" font-weight="bold">e⁻</text>
   <defs>
@@ -313,31 +313,31 @@ export const note_chemistry_1_2_4 = {
   <rect x="324" y="58" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="338" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Li</text>
   <text x="394" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">520</text>
-  <rect x="360" y="64" width="104" height="12" rx="2" fill="#6366f1" opacity="0.55"/>
+  <rect x="360" y="64" width="104" height="12" rx="2" fill="#3b82f6" opacity="0.55"/>
   <text x="480" y="75" font-size="9" fill="#374151">2 shells, r small</text>
   <line x1="324" y1="86" x2="604" y2="86" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="88" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="338" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Na</text>
   <text x="394" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">496</text>
-  <rect x="360" y="94" width="99" height="12" rx="2" fill="#6366f1" opacity="0.43"/>
+  <rect x="360" y="94" width="99" height="12" rx="2" fill="#3b82f6" opacity="0.43"/>
   <text x="480" y="105" font-size="9" fill="#374151">3 shells, n=3</text>
   <line x1="324" y1="116" x2="604" y2="116" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="118" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="338" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">K</text>
   <text x="394" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">419</text>
-  <rect x="360" y="124" width="84" height="12" rx="2" fill="#6366f1" opacity="0.36"/>
+  <rect x="360" y="124" width="84" height="12" rx="2" fill="#3b82f6" opacity="0.36"/>
   <text x="480" y="135" font-size="9" fill="#374151">4 shells, more shielding</text>
   <line x1="324" y1="146" x2="604" y2="146" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="148" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="338" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Rb</text>
   <text x="394" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">403</text>
-  <rect x="360" y="154" width="81" height="12" rx="2" fill="#6366f1" opacity="0.32"/>
+  <rect x="360" y="154" width="81" height="12" rx="2" fill="#3b82f6" opacity="0.32"/>
   <text x="480" y="165" font-size="9" fill="#374151">5 shells, r larger</text>
   <line x1="324" y1="176" x2="604" y2="176" stroke="#f1f5f9" stroke-width="1"/>
   <rect x="324" y="178" width="28" height="26" rx="3" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
   <text x="338" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Cs</text>
   <text x="394" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#374151">376</text>
-  <rect x="360" y="184" width="75" height="12" rx="2" fill="#6366f1" opacity="0.26"/>
+  <rect x="360" y="184" width="75" height="12" rx="2" fill="#3b82f6" opacity="0.26"/>
   <text x="480" y="195" font-size="9" fill="#374151">6 shells, r largest</text>
   <line x1="324" y1="206" x2="604" y2="206" stroke="#e2e8f0" stroke-width="1"/>
   <text x="360" y="224" font-size="9" fill="#374151">← bar width ∝ IE₁ value</text>

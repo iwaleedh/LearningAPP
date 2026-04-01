@@ -68,9 +68,9 @@ export const note_olevel_biology_14_14_3 = {
   <rect x="200" y="305" width="40" height="160" rx="15" fill="#532407" stroke="#c0902a" stroke-width="2"/>
 
   <!-- Pituitary (brain, small) -->
-  <circle cx="190" cy="65" r="9" fill="#7c3aed" stroke="#5b21b6" stroke-width="2"/>
-  <text x="235" y="55" fill="#7c3aed" font-size="10" font-weight="bold">Pituitary</text>
-  <line x1="230" y1="57" x2="200" y2="65" stroke="#7c3aed" stroke-width="1"/>
+  <circle cx="190" cy="65" r="9" fill="#1d4ed8" stroke="#5b21b6" stroke-width="2"/>
+  <text x="235" y="55" fill="#1d4ed8" font-size="10" font-weight="bold">Pituitary</text>
+  <line x1="230" y1="57" x2="200" y2="65" stroke="#1d4ed8" stroke-width="1"/>
 
   <!-- Thyroid -->
   <ellipse cx="190" cy="118" rx="18" ry="9" fill="#16a34a" stroke="#15803d" stroke-width="2"/>

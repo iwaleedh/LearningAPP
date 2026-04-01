@@ -51,13 +51,13 @@ export const note_olevel_maths_core_4_3_1 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 200" width="540" height="200">
   <style>
     text { font-family: sans-serif; font-size: 11px; fill: #374151; }
-    .name { font-weight: 700; fill: #6366f1; font-size: 11px; }
+    .name { font-weight: 700; fill: #3b82f6; font-size: 11px; }
   </style>
   <!-- Cube -->
   <g transform="translate(20, 20)">
-    <polygon points="20,50 70,50 70,100 20,100" fill="#2d2f72" stroke="#6366f1" stroke-width="1.5"/>
-    <polygon points="20,50 45,30 95,30 70,50" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
-    <polygon points="70,50 95,30 95,80 70,100" fill="#2d2d72" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="20,50 70,50 70,100 20,100" fill="#2d2f72" stroke="#3b82f6" stroke-width="1.5"/>
+    <polygon points="20,50 45,30 95,30 70,50" fill="#2d2d72" stroke="#3b82f6" stroke-width="1.5"/>
+    <polygon points="70,50 95,30 95,80 70,100" fill="#2d2d72" stroke="#3b82f6" stroke-width="1.5"/>
     <text x="20" y="120" class="name">Cube</text>
     <text x="10" y="133">F=6, E=12, V=8</text>
   </g>

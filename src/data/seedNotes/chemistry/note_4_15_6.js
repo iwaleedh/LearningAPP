@@ -101,8 +101,8 @@ export const note_chemistry_4_15_6 = {
 
   <!-- C–Cl single bond -->
   <line x1="98" y1="108" x2="122" y2="128" stroke="#374151" stroke-width="2.5"/>
-  <text x="126" y="136" font-size="15" fill="#7c3aed">Cl</text>
-  <text x="140" y="150" font-size="11" fill="#7c3aed">δ−</text>
+  <text x="126" y="136" font-size="15" fill="#1d4ed8">Cl</text>
+  <text x="140" y="150" font-size="11" fill="#1d4ed8">δ−</text>
 
   <!-- Annotation arrow pointing to C -->
   <path d="M 230 103 Q 190 103 115 103" stroke="#0284c7" fill="none" stroke-width="1.8" marker-end="url(#arr)"/>
@@ -310,7 +310,7 @@ export const note_chemistry_4_15_6 = {
   <text x="122" y="66" font-size="15" fill="#374151" text-anchor="start">O</text>
   <!-- C–Cl bond (diagonal down) -->
   <line x1="102" y1="92" x2="118" y2="109" stroke="#374151" stroke-width="2"/>
-  <text x="120" y="116" font-size="15" fill="#7c3aed" text-anchor="start">Cl</text>
+  <text x="120" y="116" font-size="15" fill="#1d4ed8" text-anchor="start">Cl</text>
 
   <!-- + -->
   <text x="152" y="93" font-size="18" fill="#374151" text-anchor="middle">+</text>
@@ -349,7 +349,7 @@ export const note_chemistry_4_15_6 = {
   <rect x="18" y="198" width="205" height="68" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
   <text x="120" y="220" text-anchor="middle" font-size="13" fill="#374151">CH₃–C(O⁻)(Cl)(OH₂⁺)</text>
   <text x="120" y="238" text-anchor="middle" font-size="11" fill="#15803d">O⁻ lone pair → C=O reforms</text>
-  <text x="120" y="255" text-anchor="middle" font-size="11" fill="#7c3aed">C–Cl electrons → Cl⁻ leaves</text>
+  <text x="120" y="255" text-anchor="middle" font-size="11" fill="#1d4ed8">C–Cl electrons → Cl⁻ leaves</text>
 
   <text x="258" y="234" font-size="20" text-anchor="middle" fill="#374151">→</text>
 
@@ -455,7 +455,7 @@ export const note_chemistry_4_15_6 = {
   <text x="122" y="63" font-size="15" fill="#374151" text-anchor="start">O</text>
   <!-- C-Cl -->
   <line x1="102" y1="89" x2="118" y2="106" stroke="#374151" stroke-width="2"/>
-  <text x="120" y="113" font-size="15" fill="#7c3aed" text-anchor="start">Cl</text>
+  <text x="120" y="113" font-size="15" fill="#1d4ed8" text-anchor="start">Cl</text>
 
   <!-- + -->
   <text x="152" y="90" font-size="18" fill="#374151" text-anchor="middle">+</text>
@@ -496,7 +496,7 @@ export const note_chemistry_4_15_6 = {
   <rect x="18" y="198" width="214" height="68" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2"/>
   <text x="125" y="220" text-anchor="middle" font-size="12" fill="#374151">CH₃–C(O⁻)(Cl)(OCH₂CH₃·H⁺)</text>
   <text x="125" y="238" text-anchor="middle" font-size="11" fill="#15803d">O⁻ lone pair → reforms C=O</text>
-  <text x="125" y="255" text-anchor="middle" font-size="11" fill="#7c3aed">C–Cl electrons → Cl⁻ leaves</text>
+  <text x="125" y="255" text-anchor="middle" font-size="11" fill="#1d4ed8">C–Cl electrons → Cl⁻ leaves</text>
 
   <text x="264" y="234" font-size="20" text-anchor="middle" fill="#374151">→</text>
 
@@ -1143,7 +1143,7 @@ export const note_chemistry_4_15_6 = {
   <text x="26" y="126" font-size="11" fill="#374151">CH –O–CO–(fatty acid 2)</text>
   <line x1="26" y1="132" x2="26" y2="154" stroke="#374151" stroke-width="1.5"/>
   <text x="26" y="168" font-size="11" fill="#374151">CH₂–O–CO–(fatty acid 3)</text>
-  <text x="42" y="205" font-size="11" fill="#7c3aed">↑ ↑ ↑ three ester bonds</text>
+  <text x="42" y="205" font-size="11" fill="#1d4ed8">↑ ↑ ↑ three ester bonds</text>
   <text x="42" y="220" font-size="11" fill="#374151">(glycerol backbone)</text>
 
   <!-- + 3 NaOH -->
@@ -1253,7 +1253,7 @@ export const note_chemistry_4_15_6 = {
   <text x="10" y="260" font-weight="bold" font-size="13" fill="#374151">Step 3 — Repeat Unit of PET</text>
 
   <!-- Repeat unit box -->
-  <rect x="10" y="270" width="580" height="80" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="10" y="270" width="580" height="80" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
   <!-- Extension bond left -->
   <line x1="28" y1="310" x2="52" y2="310" stroke="#374151" stroke-width="2.5"/>
   <!-- C=O left -->
@@ -1269,8 +1269,8 @@ export const note_chemistry_4_15_6 = {
 
   <line x1="282" y1="310" x2="305" y2="310" stroke="#374151" stroke-width="2.5"/>
   <!-- bracket -->
-  <text x="308" y="315" font-size="20" fill="#7c3aed">[       ]</text>
-  <text x="358" y="302" font-size="13" fill="#7c3aed">n</text>
+  <text x="308" y="315" font-size="20" fill="#1d4ed8">[       ]</text>
+  <text x="358" y="302" font-size="13" fill="#1d4ed8">n</text>
 
   <text x="20" y="340" font-size="11" fill="#5b21b6">Each repeat unit contains TWO ester bonds (–COO–). Brackets + n = polymer.</text>
 

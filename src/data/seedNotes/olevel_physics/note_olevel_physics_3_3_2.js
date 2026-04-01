@@ -64,10 +64,10 @@ export const note_olevel_physics_3_3_2 = {
   <!-- Grid helper: 4 panels in 2x2 -->
   <!-- Panel 1: High pitch, loud (top-left) -->
   <rect x="10" y="10" width="220" height="130" fill="#0f172a" stroke="#e2e8f0" stroke-width="1.5" rx="4"/>
-  <text x="15" y="25" font-weight="bold" fill="#6366f1">High pitch, Loud</text>
+  <text x="15" y="25" font-weight="bold" fill="#3b82f6">High pitch, Loud</text>
   <line x1="10" y1="75" x2="230" y2="75" stroke="#e2e8f0" stroke-width="1"/>
   <!-- High pitch (close together) + large amplitude (tall) -->
-  <path d="M20,75 C25,75 27,30 35,30 C43,30 45,75 50,75 C55,75 57,120 65,120 C73,120 75,75 80,75 C85,75 87,30 95,30 C103,30 105,75 110,75 C115,75 117,120 125,120 C133,120 135,75 140,75 C145,75 147,30 155,30 C163,30 165,75 170,75 C175,75 177,120 185,120 C193,120 195,75 200,75 C205,75 207,30 215,30 C223,30 225,75 230,75" stroke="#6366f1" stroke-width="2" fill="none"/>
+  <path d="M20,75 C25,75 27,30 35,30 C43,30 45,75 50,75 C55,75 57,120 65,120 C73,120 75,75 80,75 C85,75 87,30 95,30 C103,30 105,75 110,75 C115,75 117,120 125,120 C133,120 135,75 140,75 C145,75 147,30 155,30 C163,30 165,75 170,75 C175,75 177,120 185,120 C193,120 195,75 200,75 C205,75 207,30 215,30 C223,30 225,75 230,75" stroke="#3b82f6" stroke-width="2" fill="none"/>
   <text x="120" y="148" text-anchor="middle" fill="#64748b" font-size="10">→ High f, Large A</text>
 
   <!-- Panel 2: Low pitch, loud (top-right) -->

@@ -29,9 +29,9 @@ export const note_olevel_physics_6_2_3 = {
   <text x="320" y="145" font-size="9" fill="#2d1b69">Dark matter</text>
   <text x="320" y="157" font-size="9" fill="#2d1b69">halo needed</text>
   <text x="320" y="169" font-size="9" fill="#2d1b69">to explain gap</text>
-  <line x1="320" y1="140" x2="305" y2="125" stroke="#a78bfa" stroke-width="1"/>
+  <line x1="320" y1="140" x2="305" y2="125" stroke="#93c5fd" stroke-width="1"/>
   <!-- Arrow between curves -->
-  <line x1="260" y1="170" x2="260" y2="100" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3" marker-end="url(#arr3)"/>
+  <line x1="260" y1="170" x2="260" y2="100" stroke="#93c5fd" stroke-width="1" stroke-dasharray="3" marker-end="url(#arr3)"/>
   <defs>
     <marker id="arr3" markerWidth="7" markerHeight="7" refX="3" refY="3.5" orient="auto">
       <path d="M0,0 L7,3.5 L0,7 Z" fill="#2d1b69"/>

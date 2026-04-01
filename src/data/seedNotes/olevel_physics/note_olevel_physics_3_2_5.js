@@ -74,8 +74,8 @@ export const note_olevel_physics_3_2_5 = {
   <line x1="220" y1="200" x2="440" y2="244" stroke="#4338ca" stroke-width="2"/>
   <text x="443" y="248" fill="#4338ca">Indigo</text>
   <!-- Violet (most bending) -->
-  <line x1="218" y1="202" x2="440" y2="261" stroke="#7c3aed" stroke-width="2.5"/>
-  <text x="443" y="265" fill="#7c3aed">Violet</text>
+  <line x1="218" y1="202" x2="440" y2="261" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="443" y="265" fill="#1d4ed8">Violet</text>
   <!-- Labels -->
   <text x="24" y="230" fill="#374151" font-size="10">Violet bends most →</text>
   <text x="24" y="243" fill="#374151" font-size="10">higher n, shorter λ</text>

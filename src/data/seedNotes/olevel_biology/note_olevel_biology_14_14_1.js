@@ -50,24 +50,24 @@ export const note_olevel_biology_14_14_1 = {
   <text x="135" y="193" text-anchor="middle" fill="#1e3a8a" font-size="10">(nucleus)</text>
 
   <!-- Axon with myelin segments -->
-  <line x1="163" y1="140" x2="480" y2="140" stroke="#7c3aed" stroke-width="3"/>
+  <line x1="163" y1="140" x2="480" y2="140" stroke="#1d4ed8" stroke-width="3"/>
   <!-- Myelin sheath segments -->
-  <rect x="170" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="218" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="266" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="314" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="362" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
-  <rect x="410" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" opacity="0.85"/>
+  <rect x="170" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5" opacity="0.85"/>
+  <rect x="218" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5" opacity="0.85"/>
+  <rect x="266" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5" opacity="0.85"/>
+  <rect x="314" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5" opacity="0.85"/>
+  <rect x="362" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5" opacity="0.85"/>
+  <rect x="410" y="132" width="40" height="16" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5" opacity="0.85"/>
   <!-- Node of Ranvier labels -->
-  <text x="212" y="167" fill="#7c3aed" font-size="9">Node of</text>
-  <text x="210" y="177" fill="#7c3aed" font-size="9">Ranvier</text>
-  <line x1="216" y1="162" x2="216" y2="148" stroke="#7c3aed" stroke-width="1"/>
+  <text x="212" y="167" fill="#1d4ed8" font-size="9">Node of</text>
+  <text x="210" y="177" fill="#1d4ed8" font-size="9">Ranvier</text>
+  <line x1="216" y1="162" x2="216" y2="148" stroke="#1d4ed8" stroke-width="1"/>
   <!-- Myelin label -->
-  <text x="280" y="118" fill="#7c3aed" font-size="10">Myelin sheath</text>
-  <line x1="295" y1="120" x2="295" y2="132" stroke="#7c3aed" stroke-width="1"/>
+  <text x="280" y="118" fill="#1d4ed8" font-size="10">Myelin sheath</text>
+  <line x1="295" y1="120" x2="295" y2="132" stroke="#1d4ed8" stroke-width="1"/>
 
   <!-- Axon label -->
-  <text x="320" y="175" fill="#7c3aed" font-size="10">Axon</text>
+  <text x="320" y="175" fill="#1d4ed8" font-size="10">Axon</text>
 
   <!-- Synaptic knob -->
   <ellipse cx="510" cy="140" rx="30" ry="22" fill="#44370a" stroke="#d97706" stroke-width="2"/>

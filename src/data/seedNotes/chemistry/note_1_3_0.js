@@ -62,8 +62,8 @@ export const note_chemistry_1_3_0 = {
 
   <!-- Cl- -->
   <circle cx="560" cy="100" r="62" fill="none" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <circle cx="560" cy="100" r="40" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <circle cx="560" cy="100" r="20" fill="#7c3aed" stroke="#5b21b6" stroke-width="2"/>
+  <circle cx="560" cy="100" r="40" fill="none" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="560" cy="100" r="20" fill="#1d4ed8" stroke="#5b21b6" stroke-width="2"/>
   <text x="560" y="97" text-anchor="middle" fill="white" font-size="9" font-weight="bold">17p 18n</text>
   <!-- shell 1: 2e -->
   <circle cx="560" cy="80" r="3.5" fill="#1d4ed8"/><circle cx="560" cy="120" r="3.5" fill="#1d4ed8"/>
@@ -200,7 +200,7 @@ export const note_chemistry_1_3_0 = {
   <rect x="140" y="8" width="128" height="204" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
   <rect x="275" y="8" width="128" height="204" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
   <rect x="410" y="8" width="128" height="204" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
-  <rect x="545" y="8" width="148" height="204" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="545" y="8" width="148" height="204" rx="8" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1.5"/>
 
   <!-- Headers -->
   <text x="69"  y="28" text-anchor="middle" fill="#1e40af" font-weight="bold" font-size="12">⚡ Electrolysis</text>

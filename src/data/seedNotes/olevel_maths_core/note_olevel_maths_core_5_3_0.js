@@ -83,10 +83,10 @@ export const note_olevel_maths_core_5_3_0 = {
       data: {
         svg: `<svg viewBox="0 0 540 180" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="11">
   <!-- Cuboid -->
-  <polygon points="20,60 80,60 80,120 20,120" fill="#2d1b69" stroke="#6366f1" stroke-width="1.5"/>
-  <polygon points="80,60 110,35 110,95 80,120" fill="#2d1b69" stroke="#6366f1" stroke-width="1.5"/>
-  <polygon points="20,60 50,35 110,35 80,60" fill="#2d1b69" stroke="#6366f1" stroke-width="1.5"/>
-  <text x="65" y="145" text-anchor="middle" fill="#6366f1" font-weight="bold">Cuboid</text>
+  <polygon points="20,60 80,60 80,120 20,120" fill="#2d1b69" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="80,60 110,35 110,95 80,120" fill="#2d1b69" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="20,60 50,35 110,35 80,60" fill="#2d1b69" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="65" y="145" text-anchor="middle" fill="#3b82f6" font-weight="bold">Cuboid</text>
   <text x="50" y="90" text-anchor="middle" fill="#374151" font-size="10">l×w×h</text>
 
   <!-- Cylinder -->

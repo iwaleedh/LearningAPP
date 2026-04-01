@@ -610,22 +610,22 @@ export const note_chemistry_2_8_11 = {
 
   <!-- Four identical bonds (dashed: between single and double) -->
   <!-- Top O -->
-  <line x1="440" y1="102" x2="440" y2="74" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="5,2"/>
+  <line x1="440" y1="102" x2="440" y2="74" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="440" cy="64"  r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
   <text x="440" y="68" text-anchor="middle" fill="#312e81" font-size="10">O</text>
   <text x="458" y="62" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
   <!-- Left O -->
-  <line x1="425" y1="112" x2="394" y2="96"  stroke="#6366f1" stroke-width="2.5" stroke-dasharray="5,2"/>
+  <line x1="425" y1="112" x2="394" y2="96"  stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="382" cy="88"  r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
   <text x="382" y="92" text-anchor="middle" fill="#312e81" font-size="10">O</text>
   <text x="363" y="88" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
   <!-- Right O -->
-  <line x1="455" y1="112" x2="486" y2="96"  stroke="#6366f1" stroke-width="2.5" stroke-dasharray="5,2"/>
+  <line x1="455" y1="112" x2="486" y2="96"  stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="498" cy="88"  r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
   <text x="498" y="92" text-anchor="middle" fill="#312e81" font-size="10">O</text>
   <text x="514" y="88" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>
   <!-- Bottom O -->
-  <line x1="440" y1="138" x2="440" y2="162" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="5,2"/>
+  <line x1="440" y1="138" x2="440" y2="162" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="5,2"/>
   <circle cx="440" cy="174" r="14" fill="#2d2d72" stroke="#4338ca" stroke-width="2"/>
   <text x="440" y="178" text-anchor="middle" fill="#312e81" font-size="10">O</text>
   <text x="458" y="178" fill="#4338ca" font-size="10" font-weight="bold">¼⁻</text>

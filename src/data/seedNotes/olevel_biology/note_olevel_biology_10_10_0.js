@@ -136,10 +136,10 @@ export const note_olevel_biology_10_10_0 = {
   <text x="100" y="250" text-anchor="middle" font-size="10" fill="#713f12">Water</text>
   <line x1="220" y1="210" x2="170" y2="238" stroke="#eab308" stroke-width="1.5" marker-end="url(#arr3)"/>
   <!-- Vector -->
-  <ellipse cx="350" cy="330" rx="68" ry="30" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <ellipse cx="350" cy="330" rx="68" ry="30" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="350" y="325" text-anchor="middle" font-size="11" font-weight="bold" fill="#4c1d95">Vector</text>
   <text x="350" y="340" text-anchor="middle" font-size="10" fill="#4c1d95">(e.g. Mosquito)</text>
-  <line x1="350" y1="244" x2="350" y2="300" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arr4)"/>
+  <line x1="350" y1="244" x2="350" y2="300" stroke="#1d4ed8" stroke-width="1.5" marker-end="url(#arr4)"/>
   <!-- Sexual contact -->
   <ellipse cx="600" cy="240" rx="74" ry="30" fill="#4a1040" stroke="#db2777" stroke-width="1.5"/>
   <text x="600" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#831843">Sexual</text>
@@ -150,7 +150,7 @@ export const note_olevel_biology_10_10_0 = {
     <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/></marker>
     <marker id="arr2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#10b981"/></marker>
     <marker id="arr3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#eab308"/></marker>
-    <marker id="arr4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7c3aed"/></marker>
+    <marker id="arr4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1d4ed8"/></marker>
     <marker id="arr5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#db2777"/></marker>
   </defs>
 </svg>`

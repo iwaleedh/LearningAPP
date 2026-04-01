@@ -62,26 +62,26 @@ export const note_chemistry_1_3_7 = {
 
   <!-- Graphite panel -->
   <rect x="342" y="5" width="333" height="270" rx="10" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
-  <text x="508" y="24" text-anchor="middle" fill="#7c3aed" font-weight="bold" font-size="13">Graphite</text>
+  <text x="508" y="24" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="13">Graphite</text>
   <text x="508" y="39" text-anchor="middle" fill="#64748b" font-size="10">Each C: 3 bonds, hexagonal layers (120°)</text>
 
   <!-- Hexagonal layer 1: 6-membered ring -->
   <!-- Centre ~(475,130), radius ~45 -->
   <!-- Vertices of hexagon: angle 0,60,120,180,240,300 -->
   <!-- Points: (520,130),(497.5,86.95),(452.5,86.95),(430,130),(452.5,173),(497.5,173) -->
-  <polygon points="520,130 497,88 453,88 430,130 453,172 497,172" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+  <polygon points="520,130 497,88 453,88 430,130 453,172 497,172" fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
   <!-- C atoms at vertices -->
-  <circle cx="520" cy="130" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="520" cy="130" r="12" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="520" cy="134" text-anchor="middle" fill="white" font-size="9">C</text>
-  <circle cx="497" cy="88" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="497" cy="88" r="12" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="497" y="92" text-anchor="middle" fill="white" font-size="9">C</text>
-  <circle cx="453" cy="88" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="453" cy="88" r="12" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="453" y="92" text-anchor="middle" fill="white" font-size="9">C</text>
-  <circle cx="430" cy="130" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="430" cy="130" r="12" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="430" y="134" text-anchor="middle" fill="white" font-size="9">C</text>
-  <circle cx="453" cy="172" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="453" cy="172" r="12" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="453" y="176" text-anchor="middle" fill="white" font-size="9">C</text>
-  <circle cx="497" cy="172" r="12" fill="#a855f7" stroke="#7c3aed" stroke-width="1.5"/>
+  <circle cx="497" cy="172" r="12" fill="#a855f7" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="497" y="176" text-anchor="middle" fill="white" font-size="9">C</text>
 
   <!-- Delocalised e- shown as orange dots -->
@@ -97,7 +97,7 @@ export const note_chemistry_1_3_7 = {
   <text x="358" y="178" fill="#64748b" font-size="9">weak vdW</text>
 
   <!-- Graphite properties -->
-  <rect x="352" y="204" width="313" height="64" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+  <rect x="352" y="204" width="313" height="64" rx="6" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1"/>
   <text x="508" y="221" text-anchor="middle" fill="#4c1d95" font-weight="bold" font-size="11">Properties</text>
   <text x="360" y="237" fill="#374151" font-size="10">• High m.p. ~3600°C (strong cov. bonds in layers)</text>
   <text x="360" y="252" fill="#374151" font-size="10">• Electrical conductor (delocalised π e⁻ move between layers)</text>

@@ -35,16 +35,16 @@ export const note_olevel_maths_core_4_5_0 = {
         svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310" width="520" height="310">
   <style>
     text { font-family: sans-serif; font-size: 11px; fill: #374151; }
-    .lbl { font-weight: 700; fill: #6366f1; font-size: 11px; }
-    .arr { fill: #6366f1; }
+    .lbl { font-weight: 700; fill: #3b82f6; font-size: 11px; }
+    .arr { fill: #3b82f6; }
   </style>
   <!-- Main circle -->
-  <circle cx="230" cy="155" r="110" fill="#2d2f72" fill-opacity="0.4" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="230" cy="155" r="110" fill="#2d2f72" fill-opacity="0.4" stroke="#3b82f6" stroke-width="2"/>
   <!-- Centre dot -->
-  <circle cx="230" cy="155" r="4" fill="#6366f1"/>
+  <circle cx="230" cy="155" r="4" fill="#3b82f6"/>
   <text x="235" y="150" class="lbl">O (centre)</text>
   <!-- Radius -->
-  <line x1="230" y1="155" x2="315" y2="85" stroke="#6366f1" stroke-width="1.5"/>
+  <line x1="230" y1="155" x2="315" y2="85" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="290" y="105" class="lbl">radius r</text>
   <!-- Diameter -->
   <line x1="120" y1="155" x2="340" y2="155" stroke="#9333ea" stroke-width="2"/>

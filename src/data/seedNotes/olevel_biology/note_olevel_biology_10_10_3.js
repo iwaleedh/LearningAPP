@@ -70,7 +70,7 @@ export const note_olevel_biology_10_10_3 = {
   <text x="360" y="106" text-anchor="middle" font-size="9" fill="#713f12">+ Memory cells</text>
   <line x1="420" y1="82" x2="442" y2="82" stroke="#475569" stroke-width="1.5" marker-end="url(#vax)"/>
   <!-- 4 Memory cells persist -->
-  <rect x="445" y="48" width="115" height="68" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="445" y="48" width="115" height="68" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="502" y="70" text-anchor="middle" font-size="10" font-weight="bold" fill="#4c1d95">4. Memory cells</text>
   <text x="502" y="84" text-anchor="middle" font-size="9" fill="#4c1d95">persist in blood</text>
   <text x="502" y="97" text-anchor="middle" font-size="9" fill="#4c1d95">for years</text>

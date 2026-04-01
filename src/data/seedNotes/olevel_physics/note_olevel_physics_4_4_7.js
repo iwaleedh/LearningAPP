@@ -135,20 +135,20 @@ export const note_olevel_physics_4_4_7 = {
   <text x="22" y="160" fill="#6b7280">No net field</text>
 
   <!-- Box 2: Magnetised (aligned domains) -->
-  <rect x="160" y="30" width="120" height="100" rx="6" fill="#2d1b69" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="160" y="30" width="120" height="100" rx="6" fill="#2d1b69" stroke="#1d4ed8" stroke-width="2"/>
   <text x="165" y="21" fill="#374151" font-weight="bold">Magnetised</text>
   <!-- aligned arrows all pointing right -->
-  <line x1="175" y1="55" x2="195" y2="55" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="210" y1="55" x2="230" y2="55" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="245" y1="55" x2="265" y2="55" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="175" y1="75" x2="195" y2="75" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="210" y1="75" x2="230" y2="75" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="245" y1="75" x2="265" y2="75" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="175" y1="95" x2="195" y2="95" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="210" y1="95" x2="230" y2="95" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="245" y1="95" x2="265" y2="95" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr2)"/>
-  <text x="165" y="148" fill="#7c3aed">Domains aligned</text>
-  <text x="162" y="160" fill="#7c3aed">Strong net N pole →</text>
+  <line x1="175" y1="55" x2="195" y2="55" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="210" y1="55" x2="230" y2="55" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="245" y1="55" x2="265" y2="55" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="175" y1="75" x2="195" y2="75" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="210" y1="75" x2="230" y2="75" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="245" y1="75" x2="265" y2="75" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="175" y1="95" x2="195" y2="95" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="210" y1="95" x2="230" y2="95" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="245" y1="95" x2="265" y2="95" stroke="#1d4ed8" stroke-width="2" marker-end="url(#arr2)"/>
+  <text x="165" y="148" fill="#1d4ed8">Domains aligned</text>
+  <text x="162" y="160" fill="#1d4ed8">Strong net N pole →</text>
 
   <!-- Box 3: Hard vs Soft retention -->
   <rect x="310" y="30" width="120" height="100" rx="6" fill="#0a2e1a" stroke="#10b981" stroke-width="2"/>
@@ -167,7 +167,7 @@ export const note_olevel_physics_4_4_7 = {
       <path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/>
     </marker>
     <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/>
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1d4ed8"/>
     </marker>
   </defs>
   <text x="10" y="195" fill="#6b7280">Demagnetisation: hammer it, heat it, or use an AC coil (reverses domains, then withdraw)</text>

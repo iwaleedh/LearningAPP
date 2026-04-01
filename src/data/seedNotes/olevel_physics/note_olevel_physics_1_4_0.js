@@ -71,9 +71,9 @@ export const note_olevel_physics_1_4_0 = {
   <line x1="174" y1="137" x2="210" y2="137" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="210,137 203,133 203,141" fill="#2563eb"/>
   <text x="192" y="130" text-anchor="middle" font-size="10" fill="#2563eb">10 N</text>
-  <line x1="150" y1="137" x2="126" y2="137" stroke="#7c3aed" stroke-width="2.5"/>
-  <polygon points="126,137 133,133 133,141" fill="#7c3aed"/>
-  <text x="138" y="130" text-anchor="middle" font-size="10" fill="#7c3aed">6 N</text>
+  <line x1="150" y1="137" x2="126" y2="137" stroke="#1d4ed8" stroke-width="2.5"/>
+  <polygon points="126,137 133,133 133,141" fill="#1d4ed8"/>
+  <text x="138" y="130" text-anchor="middle" font-size="10" fill="#1d4ed8">6 N</text>
   <text x="250" y="141" font-size="11" fill="#ef4444">= 4 N →</text>
   <!-- Case 3: right angles -->
   <text x="10" y="180" font-size="12" fill="#374151" font-weight="bold">Case 3: Right angles</text>
@@ -81,9 +81,9 @@ export const note_olevel_physics_1_4_0 = {
   <line x1="162" y1="191" x2="195" y2="191" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="195,191 188,187 188,195" fill="#2563eb"/>
   <text x="178" y="186" text-anchor="middle" font-size="10" fill="#2563eb">3 N</text>
-  <line x1="156" y1="185" x2="156" y2="160" stroke="#7c3aed" stroke-width="2.5"/>
-  <polygon points="156,160 152,167 160,167" fill="#7c3aed"/>
-  <text x="166" y="172" font-size="10" fill="#7c3aed">4 N</text>
+  <line x1="156" y1="185" x2="156" y2="160" stroke="#1d4ed8" stroke-width="2.5"/>
+  <polygon points="156,160 152,167 160,167" fill="#1d4ed8"/>
+  <text x="166" y="172" font-size="10" fill="#1d4ed8">4 N</text>
   <line x1="156" y1="185" x2="195" y2="160" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
   <text x="260" y="175" font-size="11" fill="#ef4444">= 5 N (Pythagoras)</text>
 </svg>`,

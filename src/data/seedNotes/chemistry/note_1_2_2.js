@@ -28,7 +28,7 @@ export const note_chemistry_1_2_2 = {
   <text x="60" y="55" text-anchor="middle" font-weight="bold" fill="#1e40af">1. Vaporisation</text>
   <text x="60" y="72" text-anchor="middle" fill="#1e40af" font-size="10">Sample → gas</text>
 
-  <rect x="135" y="30" width="110" height="60" rx="8" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="135" y="30" width="110" height="60" rx="8" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="190" y="55" text-anchor="middle" font-weight="bold" fill="#5b21b6">2. Ionisation</text>
   <text x="190" y="72" text-anchor="middle" fill="#5b21b6" font-size="10">e⁻ gun → M⁺(g)</text>
 
@@ -237,7 +237,7 @@ export const note_chemistry_1_2_2 = {
   <text x="105" y="192" text-anchor="middle" fill="#64748b" font-size="9">³⁵Cl-³⁵Cl</text>
 
   <!-- m/z 72: ³⁵Cl-³⁷Cl  height 80 (6 units) -->
-  <rect x="160" y="85" width="40" height="80" fill="#7c3aed" opacity="0.85" rx="2"/>
+  <rect x="160" y="85" width="40" height="80" fill="#1d4ed8" opacity="0.85" rx="2"/>
   <text x="180" y="80" text-anchor="middle" fill="#5b21b6" font-weight="bold" font-size="10">6</text>
   <text x="180" y="180" text-anchor="middle" fill="#334155">72</text>
   <text x="180" y="192" text-anchor="middle" fill="#64748b" font-size="9">³⁵Cl-³⁷Cl</text>
@@ -372,29 +372,29 @@ export const note_chemistry_1_2_2 = {
         caption: 'Cross-topic pipeline: from TOF mass spectrometer stages (this note) to reading a spectrum and calculating Aᵣ from isotope abundances (links to Isotopes & Relative Atomic Mass).',
         svg: `<svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
   <defs>
-    <marker id="arr-v" markerWidth="6" markerHeight="6" refX="3" refY="5" orient="auto"><path d="M1,0 L3,5 L5,0 Z" fill="#6366f1"/></marker>
+    <marker id="arr-v" markerWidth="6" markerHeight="6" refX="3" refY="5" orient="auto"><path d="M1,0 L3,5 L5,0 Z" fill="#3b82f6"/></marker>
     <marker id="arr-h" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,1 L7,4 L0,7 Z" fill="#374151"/></marker>
   </defs>
   <rect x="8" y="8" width="172" height="284" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="8" y="8" width="172" height="28" rx="8" fill="#6366f1" fill-opacity="0.5"/>
-  <rect x="8" y="26" width="172" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="8" width="172" height="28" rx="8" fill="#3b82f6" fill-opacity="0.5"/>
+  <rect x="8" y="26" width="172" height="10" fill="#3b82f6" fill-opacity="0.5"/>
   <text x="94" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#3730a3">TOF Stages</text>
   <rect x="18" y="46" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="94" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">① Vaporise</text>
   <text x="94" y="71" text-anchor="middle" font-size="9" fill="#374151">Sample converted to gas phase</text>
-  <line x1="94" y1="78" x2="94" y2="90" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr-v)"/>
+  <line x1="94" y1="78" x2="94" y2="90" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="90" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="94" y="103" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">② Ionise</text>
   <text x="94" y="115" text-anchor="middle" font-size="9" fill="#374151">EI or ESI → M⁺ ions formed</text>
-  <line x1="94" y1="122" x2="94" y2="134" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr-v)"/>
+  <line x1="94" y1="122" x2="94" y2="134" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="134" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="94" y="147" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">③ Accelerate</text>
   <text x="94" y="159" text-anchor="middle" font-size="9" fill="#374151">Electric field → same KE</text>
-  <line x1="94" y1="166" x2="94" y2="178" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr-v)"/>
+  <line x1="94" y1="166" x2="94" y2="178" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="178" width="152" height="32" rx="5" fill="#1c3a64" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="94" y="191" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">④ Drift / Deflect</text>
   <text x="94" y="203" text-anchor="middle" font-size="9" fill="#374151">Lighter ions arrive faster</text>
-  <line x1="94" y1="210" x2="94" y2="222" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arr-v)"/>
+  <line x1="94" y1="210" x2="94" y2="222" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr-v)"/>
   <rect x="18" y="222" width="152" height="32" rx="5" fill="#0a2e1a" stroke="#10b981" stroke-width="1.5"/>
   <text x="94" y="235" text-anchor="middle" font-size="10" font-weight="bold" fill="#065f46">⑤ Detect &amp; Process</text>
   <text x="94" y="247" text-anchor="middle" font-size="9" fill="#374151">t → m/z → spectrum + Aᵣ</text>
@@ -411,13 +411,13 @@ export const note_chemistry_1_2_2 = {
   <line x1="245" y1="165" x2="392" y2="165" stroke="#f1f5f9" stroke-width="1"/>
   <line x1="245" y1="128" x2="392" y2="128" stroke="#f1f5f9" stroke-width="1"/>
   <text x="310" y="218" text-anchor="middle" font-size="9" fill="#374151">m/z</text>
-  <rect x="263" y="57" width="22" height="145" fill="#6366f1" opacity="0.65"/>
+  <rect x="263" y="57" width="22" height="145" fill="#3b82f6" opacity="0.65"/>
   <text x="274" y="52" text-anchor="middle" font-size="9" font-weight="bold" fill="#3730a3">90.5%</text>
   <text x="274" y="214" text-anchor="middle" font-size="9" fill="#374151" font-weight="bold">20</text>
-  <rect x="308" y="199" width="22" height="3" fill="#6366f1" opacity="0.65"/>
+  <rect x="308" y="199" width="22" height="3" fill="#3b82f6" opacity="0.65"/>
   <text x="319" y="193" text-anchor="middle" font-size="8" fill="#3730a3">0.3%</text>
   <text x="319" y="214" text-anchor="middle" font-size="9" fill="#374151" font-weight="bold">21</text>
-  <rect x="356" y="184" width="22" height="18" fill="#6366f1" opacity="0.65"/>
+  <rect x="356" y="184" width="22" height="18" fill="#3b82f6" opacity="0.65"/>
   <text x="367" y="179" text-anchor="middle" font-size="9" font-weight="bold" fill="#3730a3">9.2%</text>
   <text x="367" y="214" text-anchor="middle" font-size="9" fill="#374151" font-weight="bold">22</text>
   <text x="310" y="234" text-anchor="middle" font-size="9" fill="#374151">Base peak = tallest bar (m/z 20)</text>

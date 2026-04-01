@@ -40,7 +40,7 @@ export const note_olevel_biology_3_3_2 = {
 
   <!-- Membrane -->
   <rect x="220" y="36" width="60" height="185" fill="#2d1b69" rx="6" opacity="0.3"/>
-  <rect x="220" y="36" width="60" height="185" fill="none" stroke="#7c3aed" stroke-width="2" rx="6"/>
+  <rect x="220" y="36" width="60" height="185" fill="none" stroke="#1d4ed8" stroke-width="2" rx="6"/>
   <text x="250" y="232" text-anchor="middle" font-size="9" fill="#5b21b6">Cell membrane</text>
 
   <!-- Phospholipid bilayer representation -->
@@ -54,7 +54,7 @@ export const note_olevel_biology_3_3_2 = {
   <rect x="245" y="185" width="6" height="20" fill="#2d1b69"/>
 
   <!-- Carrier protein -->
-  <ellipse cx="250" cy="130" rx="22" ry="50" fill="#7c3aed" opacity="0.8" rx="6"/>
+  <ellipse cx="250" cy="130" rx="22" ry="50" fill="#1d4ed8" opacity="0.8" rx="6"/>
   <text x="250" y="134" text-anchor="middle" font-size="9" fill="#1e293b" font-weight="bold">Carrier</text>
   <text x="250" y="145" text-anchor="middle" font-size="9" fill="#1e293b">protein</text>
 
@@ -84,11 +84,11 @@ export const note_olevel_biology_3_3_2 = {
   <!-- Arrow (against gradient) -->
   <defs>
     <marker id="arrowAT" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#7c3aed"/>
+      <path d="M0,0 L0,6 L8,3 z" fill="#1d4ed8"/>
     </marker>
   </defs>
-  <line x1="155" y1="128" x2="218" y2="128" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrowAT)"/>
-  <text x="185" y="120" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="bold">AGAINST gradient</text>
+  <line x1="155" y1="128" x2="218" y2="128" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrowAT)"/>
+  <text x="185" y="120" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">AGAINST gradient</text>
 
   <!-- ATP label -->
   <rect x="175" y="148" width="60" height="22" rx="6" fill="#44370a" stroke="#ca8a04" stroke-width="1.5"/>

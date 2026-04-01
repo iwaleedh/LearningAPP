@@ -60,9 +60,9 @@ export const note_olevel_physics_1_9_1 = {
   <polygon points="40,155 36,147 44,147" fill="#2563eb"/>
   <text x="4" y="97" text-anchor="start" font-size="9" fill="#2563eb">h = 6 m</text>
   <!-- Hole 2 at h=6m -->
-  <circle cx="60" cy="155" r="5" fill="#7c3aed"/>
-  <polygon points="60,155 35,148 35,162" fill="#7c3aed"/>
-  <text x="5" y="162" text-anchor="start" font-size="9" fill="#7c3aed" font-weight="bold">High pressure</text>
+  <circle cx="60" cy="155" r="5" fill="#1d4ed8"/>
+  <polygon points="60,155 35,148 35,162" fill="#1d4ed8"/>
+  <text x="5" y="162" text-anchor="start" font-size="9" fill="#1d4ed8" font-weight="bold">High pressure</text>
   <!-- Pressure values -->
   <text x="130" y="95" text-anchor="middle" font-size="10" fill="#374151">P₁ = ρg(2)</text>
   <text x="130" y="155" text-anchor="middle" font-size="10" fill="#374151">P₂ = ρg(6)</text>

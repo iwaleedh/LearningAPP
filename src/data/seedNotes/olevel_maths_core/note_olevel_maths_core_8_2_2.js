@@ -27,8 +27,8 @@ export const note_olevel_maths_core_8_2_2 = {
         caption: 'Venn diagram: 40 students, Set A = plays football, Set B = plays tennis (numbers in each region)',
         svg: `<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
   <!-- Universal set rectangle -->
-  <rect x="10" y="10" width="380" height="200" rx="8" fill="#1c3a64" stroke="#6366f1" stroke-width="2"/>
-  <text x="380" y="28" text-anchor="end" fill="#6366f1" font-size="13" font-weight="bold">ξ = 40</text>
+  <rect x="10" y="10" width="380" height="200" rx="8" fill="#1c3a64" stroke="#3b82f6" stroke-width="2"/>
+  <text x="380" y="28" text-anchor="end" fill="#3b82f6" font-size="13" font-weight="bold">ξ = 40</text>
 
   <!-- Circle A (football) - left -->
   <circle cx="155" cy="110" r="75" fill="#3d1212" fill-opacity="0.7" stroke="#ef4444" stroke-width="2"/>
@@ -46,7 +46,7 @@ export const note_olevel_maths_core_8_2_2 = {
   <!-- A only (left region) -->
   <text x="120" y="118" text-anchor="middle" fill="#ef4444" font-size="22" font-weight="bold">12</text>
   <!-- Intersection (middle) -->
-  <text x="200" y="118" text-anchor="middle" fill="#7c3aed" font-size="22" font-weight="bold">8</text>
+  <text x="200" y="118" text-anchor="middle" fill="#1d4ed8" font-size="22" font-weight="bold">8</text>
   <!-- B only (right region) -->
   <text x="280" y="118" text-anchor="middle" fill="#3b82f6" font-size="22" font-weight="bold">14</text>
   <!-- Outside both (corners) -->

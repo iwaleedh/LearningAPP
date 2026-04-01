@@ -101,8 +101,8 @@ export const note_olevel_physics_4_4_4 = {
   <rect x="170" y="60" width="50" height="100" rx="8" fill="#3d1212" stroke="#ef4444" stroke-width="2"/>
   <text x="183" y="115" fill="#ef4444" font-weight="bold" font-size="16">S</text>
   <!-- Coil -->
-  <rect x="75" y="70" width="80" height="80" rx="5" fill="#2d2f72" stroke="#6366f1" stroke-width="2.5"/>
-  <text x="96" y="113" fill="#6366f1">Coil</text>
+  <rect x="75" y="70" width="80" height="80" rx="5" fill="#2d2f72" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="96" y="113" fill="#3b82f6">Coil</text>
   <!-- Axle -->
   <line x1="115" y1="50" x2="115" y2="220" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4,3"/>
   <!-- Slip rings -->
@@ -114,8 +114,8 @@ export const note_olevel_physics_4_4_4 = {
   <rect x="82" y="178" width="10" height="8" rx="2" fill="#374151"/>
   <text x="53" y="175" fill="#374151" font-size="9">brushes</text>
   <!-- Rotation arrow -->
-  <path d="M105,75 A15,15 0 0,1 125,75" fill="none" stroke="#6366f1" stroke-width="2"/>
-  <text x="100" y="68" fill="#6366f1" font-size="9">⟳ rotate</text>
+  <path d="M105,75 A15,15 0 0,1 125,75" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <text x="100" y="68" fill="#3b82f6" font-size="9">⟳ rotate</text>
   <!-- Output wires -->
   <line x1="92" y1="172" x2="70" y2="172" stroke="#374151" stroke-width="1.5"/>
   <line x1="92" y1="182" x2="70" y2="182" stroke="#374151" stroke-width="1.5"/>

@@ -52,7 +52,7 @@ export const note_olevel_physics_1_6_0 = {
   <!-- Before -->
   <text x="100" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">BEFORE</text>
   <!-- Object A moving right -->
-  <rect x="20" y="60" width="60" height="40" fill="#6366f1" rx="4"/>
+  <rect x="20" y="60" width="60" height="40" fill="#3b82f6" rx="4"/>
   <text x="50" y="84" text-anchor="middle" font-size="11" fill="#1e293b">A: 4 kg</text>
   <line x1="80" y1="80" x2="105" y2="80" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="105,80 97,76 97,84" fill="#2563eb"/>
@@ -64,7 +64,7 @@ export const note_olevel_physics_1_6_0 = {
   <text x="110" y="130" font-size="11" fill="#374151">p_total = 4×6 + 2×0 = 24 kg·m/s</text>
   <!-- After -->
   <text x="330" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">AFTER (together)</text>
-  <rect x="275" y="60" width="110" height="40" fill="#6366f1" rx="4"/>
+  <rect x="275" y="60" width="110" height="40" fill="#3b82f6" rx="4"/>
   <text x="330" y="84" text-anchor="middle" font-size="11" fill="#1e293b">A + B: 6 kg</text>
   <line x1="385" y1="80" x2="415" y2="80" stroke="#2563eb" stroke-width="2.5"/>
   <polygon points="415,80 407,76 407,84" fill="#2563eb"/>

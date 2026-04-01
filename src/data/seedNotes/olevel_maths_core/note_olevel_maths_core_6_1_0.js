@@ -35,13 +35,13 @@ export const note_olevel_maths_core_6_1_0 = {
         caption: 'A right-angled triangle with sides a, b and hypotenuse c',
         svg: `<svg viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <!-- Triangle -->
-  <polygon points="30,170 30,40 200,170" fill="#2d2d72" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="30,170 30,40 200,170" fill="#2d2d72" stroke="#3b82f6" stroke-width="2"/>
   <!-- Right angle marker -->
-  <polyline points="30,150 50,150 50,170" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  <polyline points="30,150 50,150 50,170" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Side a — vertical -->
-  <text x="8" y="110" font-size="16" fill="#6366f1" font-weight="bold">a</text>
+  <text x="8" y="110" font-size="16" fill="#3b82f6" font-weight="bold">a</text>
   <!-- Side b — horizontal -->
-  <text x="108" y="190" font-size="16" fill="#6366f1" font-weight="bold">b</text>
+  <text x="108" y="190" font-size="16" fill="#3b82f6" font-weight="bold">b</text>
   <!-- Side c — hypotenuse -->
   <text x="122" y="100" font-size="16" fill="#e11d48" font-weight="bold">c</text>
   <!-- Right angle label -->

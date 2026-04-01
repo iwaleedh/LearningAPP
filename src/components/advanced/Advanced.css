@@ -26,7 +26,7 @@
 
 .ai-badge {
     font-size: var(--font-size-xs);
-    background: linear-gradient(135deg, #a78bfa, #6366f1);
+    background: linear-gradient(135deg, #93c5fd, #3b82f6);
     color: white;
     padding: 2px 10px;
     border-radius: var(--radius-full);

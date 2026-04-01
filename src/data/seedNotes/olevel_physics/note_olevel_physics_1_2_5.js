@@ -73,19 +73,19 @@ export const note_olevel_physics_1_2_5 = {
   <text x="230" y="278" text-anchor="middle" font-size="12" fill="#374151">Time (s)</text>
   <text x="18" y="155" text-anchor="middle" font-size="12" fill="#374151" transform="rotate(-90 18 155)">Speed (m/s)</text>
   <!-- Curve approaching terminal velocity -->
-  <path d="M 60 250 Q 140 180 200 140 Q 260 105 310 95 Q 350 90 400 88" stroke="#7c3aed" stroke-width="3" fill="none"/>
+  <path d="M 60 250 Q 140 180 200 140 Q 260 105 310 95 Q 350 90 400 88" stroke="#1d4ed8" stroke-width="3" fill="none"/>
   <!-- Terminal velocity line -->
   <line x1="60" y1="88" x2="400" y2="88" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6,3"/>
   <text x="405" y="92" font-size="11" fill="#dc2626">Terminal velocity</text>
   <!-- Force arrows at 3 points -->
   <!-- Point 1: just dropped -->
-  <circle cx="100" cy="240" r="4" fill="#7c3aed"/>
+  <circle cx="100" cy="240" r="4" fill="#1d4ed8"/>
   <line x1="100" y1="236" x2="100" y2="210" stroke="#ef4444" stroke-width="2"/>
   <polygon points="100,210 96,218 104,218" fill="#ef4444"/>
   <text x="115" y="226" font-size="9" fill="#ef4444">W</text>
   <text x="115" y="238" font-size="9" fill="#3b82f6">↑ Fₐ small</text>
   <!-- Point 2: mid-fall -->
-  <circle cx="200" cy="140" r="4" fill="#7c3aed"/>
+  <circle cx="200" cy="140" r="4" fill="#1d4ed8"/>
   <line x1="200" y1="136" x2="200" y2="110" stroke="#ef4444" stroke-width="2"/>
   <polygon points="200,110 196,118 204,118" fill="#ef4444"/>
   <text x="210" y="126" font-size="9" fill="#ef4444">W (same)</text>

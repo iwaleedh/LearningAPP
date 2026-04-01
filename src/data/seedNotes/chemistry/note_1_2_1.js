@@ -177,8 +177,8 @@ export const note_chemistry_1_2_1 = {
         svg: `<svg viewBox="0 0 580 262" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
   <line x1="290" y1="8" x2="290" y2="254" stroke="#e5e7eb" stroke-width="1.5"/>
   <rect x="8" y="8" width="274" height="246" rx="8" fill="#0f172a" stroke="#e5e7eb" stroke-width="1"/>
-  <rect x="8" y="8" width="274" height="30" rx="8" fill="#6366f1" fill-opacity="0.5"/>
-  <rect x="8" y="28" width="274" height="10" fill="#6366f1" fill-opacity="0.5"/>
+  <rect x="8" y="8" width="274" height="30" rx="8" fill="#3b82f6" fill-opacity="0.5"/>
+  <rect x="8" y="28" width="274" height="10" fill="#3b82f6" fill-opacity="0.5"/>
   <text x="145" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill="#3730a3">Subatomic Particles</text>
   <text x="36" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">Particle</text>
   <text x="118" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">Rel. mass</text>

@@ -191,7 +191,7 @@ export const note_chemistry_2_8_4 = {
     </marker>
   </defs>
   <text x="240" y="22" text-anchor="middle" font-weight="bold" font-size="13" fill="#1e293b">Group 2 + O₂ → Oxide Products</text>
-  <rect x="20" y="40" width="100" height="36" rx="8" fill="#2d2f72" stroke="#818cf8"/>
+  <rect x="20" y="40" width="100" height="36" rx="8" fill="#2d2f72" stroke="#60a5fa"/>
   <text x="70" y="59" text-anchor="middle" fill="#3730a3" font-weight="bold">Be, Mg, Ca</text>
   <rect x="20" y="100" width="100" height="36" rx="8" fill="#4a1040" stroke="#f472b6"/>
   <text x="70" y="122" text-anchor="middle" fill="#9d174d" font-weight="bold">Sr, Ba</text>
@@ -284,12 +284,12 @@ export const note_chemistry_2_8_4 = {
   <text x="284" y="183" fill="#374151" text-anchor="middle">Sr</text>
   <text x="350" y="183" fill="#374151" text-anchor="middle">Ba</text>
   <text x="220" y="198" text-anchor="middle" fill="#6b7280" font-size="10">↓ Group 2</text>
-  <polyline points="80,148 148,128 216,108 284,80 350,48" fill="none" stroke="#4f46e5" stroke-width="2.5"/>
-  <circle cx="80" cy="148" r="4" fill="#4f46e5"/>
-  <circle cx="148" cy="128" r="4" fill="#4f46e5"/>
-  <circle cx="216" cy="108" r="4" fill="#4f46e5"/>
-  <circle cx="284" cy="80" r="4" fill="#4f46e5"/>
-  <circle cx="350" cy="48" r="4" fill="#4f46e5"/>
+  <polyline points="80,148 148,128 216,108 284,80 350,48" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="80" cy="148" r="4" fill="#2563eb"/>
+  <circle cx="148" cy="128" r="4" fill="#2563eb"/>
+  <circle cx="216" cy="108" r="4" fill="#2563eb"/>
+  <circle cx="284" cy="80" r="4" fill="#2563eb"/>
+  <circle cx="350" cy="48" r="4" fill="#2563eb"/>
   <polyline points="80,48 148,75 216,108 284,138 350,158" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,4"/>
   <circle cx="80" cy="48" r="4" fill="#dc2626"/>
   <circle cx="148" cy="75" r="4" fill="#dc2626"/>
@@ -297,8 +297,8 @@ export const note_chemistry_2_8_4 = {
   <circle cx="284" cy="138" r="4" fill="#dc2626"/>
   <circle cx="350" cy="158" r="4" fill="#dc2626"/>
   <rect x="260" y="24" width="130" height="40" rx="6" fill="#1e293b" stroke="#e5e7eb"/>
-  <line x1="268" y1="36" x2="295" y2="36" stroke="#4f46e5" stroke-width="2.5"/>
-  <text x="300" y="39" fill="#4f46e5" font-size="11" font-weight="bold">Hydroxides ↑</text>
+  <line x1="268" y1="36" x2="295" y2="36" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="300" y="39" fill="#2563eb" font-size="11" font-weight="bold">Hydroxides ↑</text>
   <line x1="268" y1="52" x2="295" y2="52" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,4"/>
   <text x="300" y="55" fill="#dc2626" font-size="11" font-weight="bold">Sulfates ↓</text>
 </svg>`
@@ -460,7 +460,7 @@ export const note_chemistry_2_8_4 = {
                 svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 175" width="480" height="175" font-family="sans-serif" font-size="12">
   <defs>
     <marker id="be-arr" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto">
-      <path d="M0,0 L5,2.5 L0,5 Z" fill="#7c3aed"/>
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#1d4ed8"/>
     </marker>
   </defs>
   <text x="118" y="24" text-anchor="middle" fill="#1e293b" font-weight="bold">Gas phase — monomer (linear)</text>
@@ -489,10 +489,10 @@ export const note_chemistry_2_8_4 = {
   <text x="404" y="93" text-anchor="middle" fill="#78350f" font-weight="bold">Be</text>
   <circle cx="331" cy="58" r="14" fill="#0a3020" stroke="#16a34a" stroke-width="1" stroke-dasharray="3,2"/>
   <text x="331" y="63" text-anchor="middle" fill="#14532d" font-size="10">Cl</text>
-  <line x1="325" y1="65" x2="313" y2="80" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#be-arr)"/>
-  <line x1="337" y1="65" x2="399" y2="80" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#be-arr)"/>
-  <text x="362" y="135" text-anchor="middle" fill="#7c3aed" font-size="10">Dashed arrows = dative bonds</text>
-  <text x="362" y="148" text-anchor="middle" fill="#7c3aed" font-size="10">(Cl lone pair → Be empty orbital)</text>
+  <line x1="325" y1="65" x2="313" y2="80" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#be-arr)"/>
+  <line x1="337" y1="65" x2="399" y2="80" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#be-arr)"/>
+  <text x="362" y="135" text-anchor="middle" fill="#1d4ed8" font-size="10">Dashed arrows = dative bonds</text>
+  <text x="362" y="148" text-anchor="middle" fill="#1d4ed8" font-size="10">(Cl lone pair → Be empty orbital)</text>
 </svg>`
             },
             terms: []
@@ -545,7 +545,7 @@ export const note_chemistry_2_8_4 = {
   <text x="408" y="91" text-anchor="middle" fill="#065f46" font-size="10">add OH⁻ → dissolves</text>
   <line x1="315" y1="79" x2="342" y2="79" stroke="#16a34a" stroke-width="2" marker-end="url(#amp-grn)"/>
   <text x="329" y="68" text-anchor="middle" fill="#16a34a" font-size="9">+ base (OH⁻)</text>
-  <text x="240" y="138" text-anchor="middle" fill="#7c3aed" font-weight="bold" font-size="11">AMPHOTERIC: dissolves in both acid and excess alkali</text>
+  <text x="240" y="138" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="11">AMPHOTERIC: dissolves in both acid and excess alkali</text>
   <text x="240" y="154" text-anchor="middle" fill="#64748b" font-size="10">Ca(OH)₂ is purely basic — only the left pathway exists for Group 2 elements below Be</text>
 </svg>`
             },

@@ -87,19 +87,19 @@ export const note_olevel_maths_core_3_2_0 = {
        x=0  → (110, 100)  y=1
        x=1  → (150, 60)   y=3
        x=2  → (190, 20)   y=5 -->
-  <line x1="30" y1="200" x2="195" y2="8" stroke="#6366f1" stroke-width="2.5"/>
+  <line x1="30" y1="200" x2="195" y2="8" stroke="#3b82f6" stroke-width="2.5"/>
   <!-- Plotted points -->
-  <circle cx="30" cy="200" r="4" fill="#6366f1"/>
-  <circle cx="70" cy="160" r="4" fill="#6366f1"/>
-  <circle cx="110" cy="100" r="4" fill="#6366f1"/>
-  <circle cx="150" cy="60" r="4" fill="#6366f1"/>
+  <circle cx="30" cy="200" r="4" fill="#3b82f6"/>
+  <circle cx="70" cy="160" r="4" fill="#3b82f6"/>
+  <circle cx="110" cy="100" r="4" fill="#3b82f6"/>
+  <circle cx="150" cy="60" r="4" fill="#3b82f6"/>
   <!-- y-intercept label -->
   <text x="115" y="98" fill="#ef4444" font-size="10">(0,1)</text>
   <!-- x-intercept: y=0 → 0=2x+1 → x=-0.5 → pixel: 110-0.5*40=90, y=120 -->
   <circle cx="90" cy="120" r="4" fill="#10b981"/>
   <text x="85" y="134" fill="#10b981" font-size="10">(−½, 0)</text>
   <!-- Equation label -->
-  <text x="155" y="48" fill="#6366f1" font-weight="bold">y = 2x+1</text>
+  <text x="155" y="48" fill="#3b82f6" font-weight="bold">y = 2x+1</text>
 </svg>`
       }
     },

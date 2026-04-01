@@ -50,8 +50,8 @@ export const note_olevel_physics_5_2_1 = {
   <line x1="70" y1="120" x2="230" y2="120" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#a2)"/>
   <text x="155" y="112" text-anchor="middle" font-size="10" fill="#3b82f6" font-weight="bold">β</text>
   <!-- Gamma arrow -->
-  <line x1="70" y1="160" x2="390" y2="160" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#a3)"/>
-  <text x="235" y="152" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="bold">γ</text>
+  <line x1="70" y1="160" x2="390" y2="160" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#a3)"/>
+  <text x="235" y="152" text-anchor="middle" font-size="10" fill="#1d4ed8" font-weight="bold">γ</text>
   <!-- Paper barrier -->
   <rect x="120" y="55" width="10" height="130" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
   <text x="125" y="200" text-anchor="middle" font-size="8" fill="#d97706">paper</text>
@@ -66,13 +66,13 @@ export const note_olevel_physics_5_2_1 = {
   <rect x="360" y="55" width="20" height="130" fill="#334155" stroke="#1e293b" stroke-width="1.5"/>
   <text x="370" y="200" text-anchor="middle" font-size="8" fill="#334155">lead</text>
   <!-- Gamma reduced by lead -->
-  <line x1="380" y1="160" x2="420" y2="160" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4" marker-end="url(#a4)"/>
-  <text x="420" y="152" font-size="8" fill="#7c3aed">reduced</text>
+  <line x1="380" y1="160" x2="420" y2="160" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="4" marker-end="url(#a4)"/>
+  <text x="420" y="152" font-size="8" fill="#1d4ed8">reduced</text>
   <defs>
     <marker id="a1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ef4444"/></marker>
     <marker id="a2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6"/></marker>
-    <marker id="a3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7c3aed"/></marker>
-    <marker id="a4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7c3aed"/></marker>
+    <marker id="a3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1d4ed8"/></marker>
+    <marker id="a4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1d4ed8"/></marker>
   </defs>
 </svg>`, caption: 'Penetrating power: α stopped by paper; β stopped by 3 mm aluminium; γ only reduced by thick lead.' } },
     { id: 'call-tip', type: 'callout', data: { style: 'tip', title: 'Exam Tip', text: 'Remember: the most ionising (α) is the least penetrating, and the least ionising (γ) is the most penetrating. Ionisation uses up the particle\'s energy, so heavily ionising particles stop sooner.' } },

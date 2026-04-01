@@ -88,7 +88,7 @@ export const note_chemistry_1_3_6 = {
   <text x="500" y="165" text-anchor="middle" fill="#065f46" font-weight="bold" font-size="11">💧 Solubility: "Like dissolves like"</text>
   <text x="500" y="183" text-anchor="middle" fill="#374151" font-size="10">Polar molecules dissolve in polar solvents (water).</text>
 
-  <rect x="340" y="200" width="321" height="44" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+  <rect x="340" y="200" width="321" height="44" rx="6" fill="#ede9fe" stroke="#1d4ed8" stroke-width="1"/>
   <text x="500" y="220" text-anchor="middle" fill="#4c1d95" font-weight="bold" font-size="11">📊 M.P. rises with molecular size</text>
   <text x="500" y="238" text-anchor="middle" fill="#374151" font-size="10">More electrons → stronger London forces → higher m.p.</text>
 </svg>`

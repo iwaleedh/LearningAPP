@@ -29,7 +29,7 @@ const SUBJECTS = [
 ];
 
 const ET = [
-  { id: "mcq", title: "Multiple Choice", desc: "Test your knowledge with randomized MCQs and instant rationale", icon: CheckCircle, color: "#6366f1", key: "mcq" },
+  { id: "mcq", title: "Multiple Choice", desc: "Test your knowledge with randomized MCQs and instant rationale", icon: CheckCircle, color: "#3b82f6", key: "mcq" },
   { id: "drag-drop", title: "Drag and Drop", desc: "Sort elements, events, or concepts into the right categories", icon: GripVertical, color: "#10b981", key: "dragdrop" },
   { id: "fill-blank", title: "Fill in the Blanks", desc: "Complete sentences with fuzzy typo tolerance", icon: PenLine, color: "#f59e0b", key: "fillblank" },
   { id: "sequence", title: "Sequence Ordering", desc: "Arrange steps, events, or processes in the correct order", icon: ArrowUpDown, color: "#ef4444", key: "sequence" },

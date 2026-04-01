@@ -34,7 +34,7 @@ export const note_olevel_physics_6_1_1 = {
   <line x1="315" y1="150" x2="245" y2="150" stroke="#f59e0b" stroke-width="2" marker-end="url(#grav)"/>
   <text x="280" y="143" text-anchor="middle" font-size="8" fill="#f59e0b">gravity</text>
   <!-- Orbital velocity arrow -->
-  <line x1="328" y1="135" x2="310" y2="100" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#vel)"/>
+  <line x1="328" y1="135" x2="310" y2="100" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#vel)"/>
   <text x="300" y="92" text-anchor="middle" font-size="8" fill="#2d1b69">orbital</text>
   <text x="300" y="103" text-anchor="middle" font-size="8" fill="#2d1b69">velocity</text>
   <!-- Distance label -->

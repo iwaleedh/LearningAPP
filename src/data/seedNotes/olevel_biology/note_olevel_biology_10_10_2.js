@@ -55,9 +55,9 @@ export const note_olevel_biology_10_10_2 = {
   <rect x="419" y="98" width="16" height="17" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
   <rect x="485" y="98" width="16" height="17" rx="3" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Non-matching antigen (different shape) -->
-  <text x="460" y="196" text-anchor="middle" font-size="11" fill="#7c3aed" font-weight="bold">Antigen B</text>
-  <ellipse cx="427" cy="208" rx="10" ry="10" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
-  <ellipse cx="493" cy="208" rx="10" ry="10" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="460" y="196" text-anchor="middle" font-size="11" fill="#1d4ed8" font-weight="bold">Antigen B</text>
+  <ellipse cx="427" cy="208" rx="10" ry="10" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
+  <ellipse cx="493" cy="208" rx="10" ry="10" fill="#2d1b69" stroke="#1d4ed8" stroke-width="1.5"/>
   <text x="460" y="232" text-anchor="middle" font-size="9" fill="#dc2626">✗ Does NOT fit — no binding</text>
 </svg>`
       }
@@ -151,9 +151,9 @@ export const note_olevel_biology_10_10_2 = {
   <text x="150" y="240" font-size="9" fill="#64748b" font-style="italic">Slow, low</text>
   <text x="420" y="130" font-size="9" fill="#64748b" font-style="italic">Fast, high</text>
   <!-- Memory cells annotation -->
-  <line x1="300" y1="247" x2="340" y2="247" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="3,2"/>
-  <text x="320" y="243" text-anchor="middle" font-size="8" fill="#7c3aed">Memory</text>
-  <text x="320" y="253" text-anchor="middle" font-size="8" fill="#7c3aed">cells persist</text>
+  <line x1="300" y1="247" x2="340" y2="247" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="320" y="243" text-anchor="middle" font-size="8" fill="#1d4ed8">Memory</text>
+  <text x="320" y="253" text-anchor="middle" font-size="8" fill="#1d4ed8">cells persist</text>
 </svg>`
       }
     },

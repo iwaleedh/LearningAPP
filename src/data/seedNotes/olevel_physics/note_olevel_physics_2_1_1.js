@@ -99,24 +99,24 @@ export const note_olevel_physics_2_1_1 = {
 
   <!-- Heating curve path -->
   <!-- Segment 1: ice warming -20°C → 0°C -->
-  <line x1="60" y1="250" x2="140" y2="220" stroke="#6366f1" stroke-width="3"/>
+  <line x1="60" y1="250" x2="140" y2="220" stroke="#3b82f6" stroke-width="3"/>
   <!-- Segment 2: melting plateau at 0°C -->
   <line x1="140" y1="220" x2="220" y2="220" stroke="#ef4444" stroke-width="3"/>
   <!-- Segment 3: water warming 0°C → 100°C -->
-  <line x1="220" y1="220" x2="340" y2="120" stroke="#6366f1" stroke-width="3"/>
+  <line x1="220" y1="220" x2="340" y2="120" stroke="#3b82f6" stroke-width="3"/>
   <!-- Segment 4: boiling plateau at 100°C -->
   <line x1="340" y1="120" x2="450" y2="120" stroke="#ef4444" stroke-width="3"/>
   <!-- Segment 5: steam warming above 100°C -->
-  <line x1="450" y1="120" x2="520" y2="80" stroke="#6366f1" stroke-width="3"/>
+  <line x1="450" y1="120" x2="520" y2="80" stroke="#3b82f6" stroke-width="3"/>
 
   <!-- Phase labels -->
-  <text x="90" y="245" text-anchor="middle" fill="#6366f1" font-size="11">Ice warming</text>
+  <text x="90" y="245" text-anchor="middle" fill="#3b82f6" font-size="11">Ice warming</text>
   <text x="180" y="210" text-anchor="middle" fill="#ef4444" font-size="11">Melting</text>
   <text x="180" y="200" text-anchor="middle" fill="#ef4444" font-size="11">(0 °C)</text>
-  <text x="280" y="175" text-anchor="middle" fill="#6366f1" font-size="11">Water warming</text>
+  <text x="280" y="175" text-anchor="middle" fill="#3b82f6" font-size="11">Water warming</text>
   <text x="395" y="110" text-anchor="middle" fill="#ef4444" font-size="11">Boiling</text>
   <text x="395" y="100" text-anchor="middle" fill="#ef4444" font-size="11">(100 °C)</text>
-  <text x="492" y="95" text-anchor="middle" fill="#6366f1" font-size="11">Steam</text>
+  <text x="492" y="95" text-anchor="middle" fill="#3b82f6" font-size="11">Steam</text>
 
   <!-- Dashed reference lines -->
   <line x1="140" y1="220" x2="140" y2="270" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4,3"/>

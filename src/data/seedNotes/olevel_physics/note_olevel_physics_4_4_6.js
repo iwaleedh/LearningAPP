@@ -101,7 +101,7 @@ export const note_olevel_physics_4_4_6 = {
   <!-- Wire to step-up -->
   <line x1="80" y1="95" x2="110" y2="95" stroke="#374151" stroke-width="2"/>
   <!-- Step-up transformer -->
-  <rect x="110" y="65" width="55" height="60" rx="4" fill="#2d2f72" stroke="#6366f1" stroke-width="2"/>
+  <rect x="110" y="65" width="55" height="60" rx="4" fill="#2d2f72" stroke="#3b82f6" stroke-width="2"/>
   <text x="117" y="90" fill="#4338ca" font-weight="bold">Step-up</text>
   <text x="113" y="103" fill="#4338ca">Transformer</text>
   <text x="115" y="116" fill="#4338ca">→ 400 kV</text>
