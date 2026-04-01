@@ -346,11 +346,18 @@ function PaymentSlip({ slipUrl, mimeType, fileName }) {
   );
 }
 
+// Maps internal status value → human-readable label
+const PAYMENT_STATUS_LABEL = {
+  pending:  'Received',
+  approved: 'Accepted',
+  rejected: 'Rejected',
+};
+
 function PaymentStatusBadge({ status }) {
   const cls = status === 'approved' ? 'ab--approved'
     : status === 'rejected' ? 'ab--blocked'
     : 'ab--pending';
-  return <span className={`admin-badge ${cls}`}>{status}</span>;
+  return <span className={`admin-badge ${cls}`}>{PAYMENT_STATUS_LABEL[status] ?? status}</span>;
 }
 
 function PaymentRow({ req }) {
@@ -429,28 +436,38 @@ function PaymentRow({ req }) {
   );
 }
 
+// Filter options with their human-readable pill labels
+const PAYMENT_FILTERS = [
+  { value: 'all',      label: 'All' },
+  { value: 'pending',  label: 'Received' },
+  { value: 'approved', label: 'Accepted' },
+  { value: 'rejected', label: 'Rejected' },
+];
+
 function PaymentsTab() {
   const [filter, setFilter] = useState('all');
-  const requests = useQuery(api.paymentRequests.listAllPaymentRequests) ?? [];
 
-  const pending = requests.filter(r => r.status === 'pending');
-
-  const displayed = filter === 'all' ? requests
-    : requests.filter(r => r.status === filter);
+  // Pass status to the indexed query — undefined means fetch all
+  const statusArg = filter === 'all' ? undefined : filter;
+  const displayed = useQuery(api.paymentRequests.listPaymentRequests, { status: statusArg }) ?? [];
+  const counts    = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
 
   return (
     <div className="admin-payments-tab">
       <div className="admin-users-toolbar">
         <div className="admin-filter-pills">
-          {['all', 'pending', 'approved', 'rejected'].map(f => (
+          {PAYMENT_FILTERS.map(f => (
             <button
-              key={f}
-              className={`admin-pill ${filter === f ? 'active' : ''}`}
-              onClick={() => setFilter(f)}
+              key={f.value}
+              className={`admin-pill ${filter === f.value ? 'active' : ''}`}
+              onClick={() => setFilter(f.value)}
             >
-              {f.charAt(0).toUpperCase() + f.slice(1)}
-              {f === 'pending' && pending.length > 0 && (
-                <span className="admin-pill-count">{pending.length}</span>
+              {f.label}
+              {f.value === 'pending' && counts.pending > 0 && (
+                <span className="admin-pill-count">{counts.pending}</span>
+              )}
+              {f.value === 'approved' && counts.approved > 0 && (
+                <span className="admin-pill-count">{counts.approved}</span>
               )}
             </button>
           ))}
@@ -500,8 +517,8 @@ export default function AdminPage() {
 
   const pendingUsers    = useQuery(api.admin.listPendingUsers) ?? [];
   const allUsers        = useQuery(api.admin.listAllUsersAdmin) ?? [];
-  const allPayments     = useQuery(api.paymentRequests.listAllPaymentRequests) ?? [];
-  const pendingPayments = allPayments.filter(r => r.status === 'pending');
+  const paymentCounts   = useQuery(api.paymentRequests.getPaymentCounts) ?? {};
+  const pendingPayments = { length: paymentCounts.pending ?? 0 };
 
   if (isAdmin === false) {
     navigate('/', { replace: true });

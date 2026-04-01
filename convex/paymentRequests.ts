@@ -105,14 +105,21 @@ export const getMyPaymentRequest = query({
 });
 
 /**
- * Admin: list all payment requests with user info and slip URLs.
+ * Admin: list payment requests, optionally filtered by status.
+ * Uses the by_status index when a status is provided (efficient).
+ * Returns all requests newest-first when no status is given.
  */
-export const listAllPaymentRequests = query({
-  args: {},
-  handler: async (ctx) => {
+export const listPaymentRequests = query({
+  args: { status: v.optional(v.string()) },
+  handler: async (ctx, { status }) => {
     await requireAdmin(ctx);
 
-    const requests = await ctx.db.query("paymentRequests").collect();
+    const requests = status
+      ? await ctx.db
+          .query("paymentRequests")
+          .withIndex("by_status", (q) => q.eq("status", status))
+          .collect()
+      : await ctx.db.query("paymentRequests").collect();
 
     const results = await Promise.all(
       requests.map(async (req) => {
@@ -138,11 +145,40 @@ export const listAllPaymentRequests = query({
       })
     );
 
-    // Newest first
     results.sort((a, b) => b.submittedAt - a.submittedAt);
     return results;
   },
 });
+
+/**
+ * Admin: return counts per status — used for header badges without
+ * loading slip URLs or joining user records.
+ */
+export const getPaymentCounts = query({
+  args: {},
+  handler: async (ctx) => {
+    await requireAdmin(ctx);
+
+    const [pending, approved, rejected] = await Promise.all([
+      ctx.db.query("paymentRequests").withIndex("by_status", (q) => q.eq("status", "pending")).collect(),
+      ctx.db.query("paymentRequests").withIndex("by_status", (q) => q.eq("status", "approved")).collect(),
+      ctx.db.query("paymentRequests").withIndex("by_status", (q) => q.eq("status", "rejected")).collect(),
+    ]);
+
+    return {
+      pending:  pending.length,
+      approved: approved.length,
+      rejected: rejected.length,
+      total:    pending.length + approved.length + rejected.length,
+    };
+  },
+});
+
+/**
+ * @deprecated Use listPaymentRequests instead.
+ * Kept for any callers that may reference this name.
+ */
+export const listAllPaymentRequests = listPaymentRequests;
 
 /**
  * Admin: approve or reject a payment request.
