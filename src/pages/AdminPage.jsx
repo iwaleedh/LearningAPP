@@ -6,7 +6,7 @@ import { useAuth } from '../hooks/useAuth.js';
 import {
   Shield, UserCheck, UserX, Users, Clock,
   LayoutDashboard, ToggleLeft, ToggleRight,
-  GraduationCap, Search, ChevronDown,
+  GraduationCap, Search, ChevronDown, Trash2, AlertTriangle,
 } from 'lucide-react';
 import './AdminPage.css';
 
@@ -74,6 +74,31 @@ function OverviewTab({ allUsers, pendingUsers }) {
 
 // ── Users Tab ─────────────────────────────────────────────────────────────────
 
+// ── Delete Confirm Modal ─────────────────────────────────────────────────────
+
+function DeleteConfirmModal({ user, onConfirm, onCancel, busy }) {
+  return (
+    <div className="admin-modal-overlay" onClick={onCancel}>
+      <div className="admin-modal card" onClick={e => e.stopPropagation()}>
+        <div className="admin-modal-icon">
+          <AlertTriangle size={32} color="var(--color-error)" />
+        </div>
+        <h3 className="admin-modal-title">Delete User</h3>
+        <p className="admin-modal-body">
+          Permanently delete <strong>{user.username || user.email || 'this user'}</strong>?
+          This cannot be undone.
+        </p>
+        <div className="admin-modal-actions">
+          <button className="btn btn-secondary" onClick={onCancel} disabled={busy}>Cancel</button>
+          <button className="btn admin-btn-delete" onClick={onConfirm} disabled={busy}>
+            {busy ? 'Deleting…' : <><Trash2 size={14} /> Delete</>}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function RoleSelect({ userId, currentRole }) {
   const setRole = useMutation(api.admin.setUserRole);
   const [busy, setBusy] = useState(false);
@@ -98,7 +123,7 @@ function RoleSelect({ userId, currentRole }) {
   );
 }
 
-function UserRow({ user, onApprove, onBlock, onUnblock, busy }) {
+function UserRow({ user, onApprove, onBlock, onUnblock, onDelete, busy }) {
   const isPending  = user.accountStatus === 'pending';
   const isBlocked  = user.accountStatus === 'blocked';
   const isApproved = user.accountStatus === 'approved';
@@ -140,6 +165,9 @@ function UserRow({ user, onApprove, onBlock, onUnblock, busy }) {
               <UserCheck size={13} /> Unblock
             </button>
           )}
+          <button className="btn btn-sm admin-btn-delete" disabled={busy} onClick={() => onDelete(user)} title="Delete user">
+            <Trash2 size={13} />
+          </button>
         </div>
       </td>
     </tr>
@@ -150,14 +178,23 @@ function UsersTab({ allUsers, pendingUsers }) {
   const [filter, setFilter] = useState('all'); // 'all' | 'pending' | 'approved' | 'blocked'
   const [search, setSearch] = useState('');
   const [busy, setBusy] = useState(false);
+  const [deleteTarget, setDeleteTarget] = useState(null); // user object to confirm deletion
 
-  const approve = useMutation(api.admin.approveUser);
-  const block   = useMutation(api.admin.blockUser);
-  const unblock = useMutation(api.admin.unblockUser);
+  const approve     = useMutation(api.admin.approveUser);
+  const block       = useMutation(api.admin.blockUser);
+  const unblock     = useMutation(api.admin.unblockUser);
+  const deleteUser  = useMutation(api.admin.deleteUser);
 
   const handleApprove = async (userId) => { setBusy(true); try { await approve({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
   const handleBlock   = async (userId) => { setBusy(true); try { await block({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
   const handleUnblock = async (userId) => { setBusy(true); try { await unblock({ userId }); } catch (e) { console.error(e); } finally { setBusy(false); } };
+  const handleDeleteConfirm = async () => {
+    if (!deleteTarget) return;
+    setBusy(true);
+    try { await deleteUser({ userId: deleteTarget.userId }); }
+    catch (e) { console.error(e); }
+    finally { setBusy(false); setDeleteTarget(null); }
+  };
 
   const source = filter === 'pending' ? pendingUsers : allUsers;
   const displayed = source.filter(u => {
@@ -169,6 +206,14 @@ function UsersTab({ allUsers, pendingUsers }) {
 
   return (
     <div className="admin-users-tab">
+      {deleteTarget && (
+        <DeleteConfirmModal
+          user={deleteTarget}
+          onConfirm={handleDeleteConfirm}
+          onCancel={() => setDeleteTarget(null)}
+          busy={busy}
+        />
+      )}
       <div className="admin-users-toolbar">
         <div className="admin-search-wrap">
           <Search size={15} className="admin-search-icon" />
@@ -217,6 +262,7 @@ function UsersTab({ allUsers, pendingUsers }) {
                   onApprove={handleApprove}
                   onBlock={handleBlock}
                   onUnblock={handleUnblock}
+                  onDelete={setDeleteTarget}
                   busy={busy}
                 />
               ))}

@@ -152,3 +152,19 @@ export const setUserRole = mutation({
     await ctx.db.patch(user._id, { role: normalised });
   },
 });
+
+/**
+ * Permanently delete a user record. Admin only. Cannot delete self.
+ */
+export const deleteUser = mutation({
+  args: { userId: v.string() },
+  handler: async (ctx, { userId }) => {
+    const adminUserId = await requireAdmin(ctx);
+    if (adminUserId === userId) {
+      throw new Error("Cannot delete your own account.");
+    }
+    const user = await getUserRecordById(ctx, userId);
+    if (!user) throw new Error("User not found.");
+    await ctx.db.delete(user._id);
+  },
+});
