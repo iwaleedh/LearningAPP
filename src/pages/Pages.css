@@ -3,331 +3,442 @@
 /* Page header */
 .chapter-page-header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: var(--space-5);
-}
-
-.chapter-page-title {
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-1);
-}
-
-.chapter-page-qual {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-tertiary);
-}
-
-/* Unit tabs */
-.chapter-tabs-wrap {
-    margin-bottom: var(--space-6);
-    border-bottom: 2px solid var(--color-border);
-    overflow-x: auto;
-}
-
-.chapter-tabs {
-    display: flex;
-    gap: 0;
-    min-width: max-content;
-}
-
-.chapter-tab {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-1);
-    padding: var(--space-3) var(--space-5);
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: var(--color-text-secondary);
-    font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
-    border-bottom: 3px solid transparent;
-    margin-bottom: -2px;
-    transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
-    text-align: left;
-    white-space: nowrap;
-}
-
-.chapter-tab:hover {
-    color: var(--color-text);
-    background: var(--color-bg-secondary);
-}
-
-.chapter-tab--active {
-    color: var(--color-primary);
-    border-bottom-color: var(--color-primary);
-    font-weight: var(--font-weight-semibold);
-}
-
-.chapter-tab-code {
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-bold);
-    color: inherit;
-    opacity: 0.7;
-    letter-spacing: 0.04em;
-}
-
-.chapter-tab--active .chapter-tab-code {
-    opacity: 1;
-    color: var(--color-primary);
-}
-
-.chapter-tab-title {
-    font-size: var(--font-size-sm);
-    max-width: 160px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Unit section (stacked layout) */
-.chapter-unit-section {
-    margin-bottom: var(--space-12);
-    padding-bottom: var(--space-8);
-    border-bottom: 1px solid var(--color-border);
-}
-
-.chapter-unit-section:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-/* Unit content panel (kept for compatibility) */
-.chapter-unit-content {
-    animation: fadeIn 0.18s ease-out;
-}
-
-.chapter-unit-meta {
-    margin-bottom: var(--space-5);
-}
-
-.chapter-unit-heading {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--space-2);
-    color: var(--color-text);
-}
-
-.chapter-meta {
-    display: flex;
-    gap: var(--space-4);
-    color: var(--color-text-tertiary);
-    font-size: var(--font-size-sm);
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-8);
+    gap: var(--space-6);
     flex-wrap: wrap;
-    align-items: center;
 }
 
-.chapter-meta span {
+.chapter-title-group {
     display: flex;
     align-items: center;
-    gap: var(--space-1);
+    gap: var(--space-4);
 }
 
-/* Topics list */
-.chapter-topics-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3);
-}
-
-/* Topic accordion */
-.chapter-topic-accordion {
-    overflow: hidden;
-    padding: 0;
-}
-
-.chapter-topic-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-3);
-    padding: var(--space-4) var(--space-5);
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: var(--font-sans);
-    text-align: left;
-    transition: background var(--transition-fast);
-    color: var(--color-text);
-}
-
-.chapter-topic-header:hover {
+.chapter-subject-icon {
+    width: 64px;
+    height: 64px;
     background: var(--color-bg-secondary);
-}
-
-.chapter-topic-header-left {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    flex: 1;
-    min-width: 0;
-}
-
-.chapter-topic-badge {
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary);
-    background: var(--color-primary-50);
-    padding: 2px var(--space-2);
-    border-radius: var(--radius-md);
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.chapter-topic-title {
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text);
-    flex: 1;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.chapter-topic-count {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-tertiary);
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.chapter-topic-chevron {
-    color: var(--color-text-tertiary);
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-}
-
-/* Subtopics list */
-.chapter-subtopic-list {
-    list-style: none;
-    border-top: 1px solid var(--color-border);
-    padding: var(--space-2) 0;
-}
-
-.chapter-subtopic-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-3);
-    padding: var(--space-2) var(--space-5);
-    border-bottom: 1px dashed var(--color-border-light);
-    transition: background var(--transition-fast);
-}
-
-.chapter-subtopic-item:last-child {
-    border-bottom: none;
-}
-
-.chapter-subtopic-item:hover {
-    background: var(--color-bg-secondary);
-}
-
-.chapter-subtopic-left {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    flex: 1;
-    min-width: 0;
-}
-
-.chapter-subtopic-index {
-    width: 22px;
-    height: 22px;
-    border-radius: var(--radius-full);
-    background: var(--color-bg-secondary);
+    border-radius: var(--radius-2xl);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-tertiary);
-    flex-shrink: 0;
+    font-size: 2rem;
+    box-shadow: inset 0 2px 0 0 rgba(255,255,255,0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--color-border);
 }
 
-.chapter-subtopic-text {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-    min-width: 0;
+[data-theme="dark"] .chapter-subject-icon {
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.05);
 }
 
-/* Make the subtopic left section a clickable link */
-.chapter-subtopic-link {
-    text-decoration: none;
-    border-radius: var(--radius-md);
-    transition: background var(--transition-fast);
+.chapter-page-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: var(--space-1);
+    background: linear-gradient(135deg, var(--color-primary) 0%, /* ---- Chapter Page ---- */
+
+/* Page hli
+/* Page header */
+.chapterill.chapter-page-heen    display: flex;
+  :     align-items: -h    justify-content: spem    margin-bottom: var(--space-8);      gap: var(--space-6);
+    flexg,    flex-wrap: wrap;
+}
+0%}
+
+.chapter-titlackgroun    display: flex;
+  bk    align-items: r:    gap: var(--space-4)er}
+
+.chapter-subject-icoize:     width: 64px;
+    h      height: 64pol    background: );    border-radius: var(--radius-2xl);
+   m)    display: flex;
+    align-items: r-    align-items: di    justify-content: cear    font-size: 2rem;
+    bos:    ber;
 }
 
-.chapter-subtopic-link:hover {
-    background: var(--color-primary-50);
+.meta-box    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    bp:    border: 1px solid var(--color-border);
 }
 
-.chapter-subtopic-link:hover .chapter-subtopic-text {
-    color: var(--color-primary-dark);
+ur}
+
+[data-theme="dark"] .chapter-subjectr-borde    box-shadow: inset 0 1px 0 0 rgba(255,2e-}
+
+.chapter-page-title {
+    font-size: 2.2rem;
+    fow: 0     font-size: 2.2re0.    font-weight: 800;      margin-bottom: vco    background: linear-gradient(1-c
+/* Page hli
+/* Page header */
+.chapterill.chapter-page-heen    display: flex;
+  :     alignisp/* Page he
+ .chapterill.chapce  :     align-items: -h    justify-content: spxt    flexg,    flex-wrap: wrap;
+}
+0%}
+
+.chapter-titlackgroun    display: flex;
+  bk    align-items: r:    ga;
+}
+0%}
+
+.chapter-titlackgroun : va
+.--c  bk    align-items: r:    gap: var(--on
+.chapter-subject-icoize:     width: 64px;
+    hlor    h      height: 64pol    background: er   m)    display: flex;
+    align-items: r-    align-items: di    justify-cont/
+    align-items: r-   er    bos:    ber;
 }
 
-.chapter-subtopic-link:hover .chapter-subtopic-index {
-    background: var(--color-primary-50);
-    color: var(--color-primary);
+.meta-box    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    bpt}
+
+.meta-box    {
+      bp:    border: 1px solid var(--color-border);
 }
 
-/* Legacy / compat */
-.chapter-content {
-    max-width: var(--max-content-width);
+urid}
+
+ur}
+
+[data-theme="dark"] .chapter-subjectr-boadius
+[xl)
+.chapter-page-title {
+    font-size: 2.2rem;
+    fow: 0     font-size: 2);
 }
 
-.chapter-body {
-    line-height: var(--line-height-relaxed);
-    color: var(--color-text-secondary);
+.chapter-un    font-size: 2.2re-b    fow: 0     font-s;
+/* Page hli
+/* Page header */
+.chapterill.chapter-page-heen    display: flex;
+  :     alignisp/* Page he
+ .chapt
+ /* Page he: .chapterill.chapit  :     alignisp/* Page he
+ .chapterill.chapcein .chapterill.chapce  :   }
+}
+0%}
+
+.chapter-titlackgroun    display: flex;
+  bk    align-items: r:    ga;
+}
+0%}
+
+.chapter-ti-pri
+.ry)  bk    align-items: r:    ga;
+}
+0%}
+
+50}
+0%}
+
+.chapter-titlackgroun ) var(--s.--c  bk    align-items: s:.chapter-subject-icoize:     width: 64px;
+ rc    hlor    h      height: 64pol    backt-    align-items: r-    align-items: di    justify-cont/
+    align-items:or    align-items: r-   er    bos:    ber;
 }
 
-.syllabus-topic-card {
-    margin-top: var(--space-5);
-    padding: var(--space-4);
+.meta-box ch}
+
+.meta-box    box-shadow: 0 4px 20px : var    bpt}
+
+.meta-box    {
+      bp:    border: 1px solid f
+.meta-e:       bp:    ze}
+
+urid}
+
+ur}
+
+[data-theme="dark"] .chapter-subjec   al
+ur}ite
+[: c[xl)
+.chapter-page-title {
+    font-size: 2.lex;
+      font-size: 2.2rer;    fow: 0     font-s-1}
+
+.chapter-un    font-size:or-bg/* Page hli
+/* Page header */
+.chapterill.chapter-page);/* Page her-.chapterill.chapdi  :     alignisp/* Page he
+ .chapt
+ color: var(- .chapt
+ /* Page he: .cha
+
+ /* Paso .chapterill.chapcein .chapterill.chapce  :   }
+}
+0%}
+
+.si}
+0%}
+
+.chapter-titlackgroun    display: flex;
+.ch
+.ter  bk    align-items: r:    ga;
+}
+0%}
+
+fl}
+0%}
+
+.chapter-ti-pri
+.ry)  : va
+.--s.ry)  bk    al T}
+0%}
+
+50}
+0%}
+
+.chapter-titlackgacco
+5ion0%
+    ov rc    hlor    h      height: 64pol    backt-    align-items: r-    align-items: di    justify-conol    align-items:or    align-items: r-   er    bos:    ber;
 }
 
-.syllabus-topic-card h3 {
-    margin-top: 0;
+.meta-box ch}
+
+.meta-box    bohapter-to}
+
+.meta-box ch}
+
+.meta-box    box-shadow: 0 4px 20px : vr-lig
+.meta-box  -sh
+.meta-box    {
+      bp:    border: 1px solid fopi      bp:      .meta-e:       bp:    ze}
+
+urid
+ 
+urid}
+
+ur}
+
+[data-theme    justify-conur}ite
+[: c[xl)
+.chapter-page-title {
+ ce-3);
+  .chapteng    font-size: 2.lex(-      font-size: 2.2ro
+.chapter-un    font-size:or-bg/* Page hli
+/* Pe;
+/* Page header */
+.chapterill.chapter-par(.chapterill.chap   .chapt
+ color: var(- .chapt
+ /* Page he: .chaar(--transition-fast);
+    color: var coloror /* Page he: .cha
+
+-t
+ /* Paso .chaptr {}
+0%}
+
+.si}
+0%}
+
+.chapter-titlackgroun    display: fledark"] .chapte
+.top.ch
+.ter  bk    align-items: r:    ga;255, 2}
+0%}
+
+fl}
+0%}
+
+.chapter-ti-pri
+. .chapter-top
+.-he.ry)  : va
+.--  .--s.ry) nd0%}
+
+50}
+0%}
+
+.chapt, 
+505)0%}
+
+.cha5ion0%
+    ov rc    ft    o  }
+
+.meta-box ch}
+
+.meta-box    bohapter-to}
+
+.meta-box ch}
+
+.meta-box    box-shadow: 0 4px 20px : vr-lig
+.meta-box  -sh
+.meta-box    {
+      bp:    border: 1px solont-w
+.meta-box     
+.meta-box ch}
+
+.meta-boary
+.meta-box  rou.meta-box  -sh
+.meta-box    {
+      bp:    --.meta-box    --      bp:     b
+urid
+ 
+urid}
+
+ur}
+
+[data-theme    justify-conur}ite
+[: c[xl)
+.chapter-pag0;
+    border: 1px sol[: c[xl)
+.chapter-page-title {
+pter-topic- ce-3);
+  .chaptengze:  .cha-f.chapter-un    font-size:or-bg/* Page hli
+/* Pe;
+/* Paol/* Pe;
+/* Page header */
+.chapterill.cha
+    over.chapterilln;
+     color: var(- .chapt
+ /* Page he: .chaar(--trans;
+ /* Page he: .chaarou    color: var coloror /* Page he: .ch);
+-t
+ /* Paso .chaptr {}
+0%}
+
+.si}
+0%}
+--c lo0%}
+
+.si}
+0%}
+
+.ch
+    wh0%}-space:.top.ch
+.ter  bk    align-items: r:    ga;255, 2}
+-c.ter  or0%}
+
+fl}
+0%}
+
+.chapter-ti-pri
+. .chaptersp
+fe-20%
+ 
+. bo. .chapter-topar.-he.ry)  : v;
+.--  .--s.ry)op
+50}
+0%}
+
+.chapt, olo0% v
+.(--505)0%}rimary);
+      ov rcri
+.meta-box ch}
+
+.metalex;
+.meta-box  tem
+.meta-box ch}
+
+.meta-bod: 
+.meta-box  pri.meta-box  -sh
+.meta-box    {
+      bp:    us.meta-box    s-      bp:    Su.meta-box     
+.meta-box ch}
+
+.mc-.meta-box ch}st
+.meta-boary;
+ .meta-box : .meta-box    {
+      bp:   ro      bp:    lourid
+ 
+urid}
+
+ur}
+
+[data-theopic-item {
+    di 
+uay: flex;
+    ju[: c[xl)
+.chapter-pag0;
+    bor   align-it    border: 1  .chapter-page-title {
+pter ppter-topic- ce-3);
+ 3)  .chaptengze:  .  /* Pe;
+/* Paol/* Pe;
+/* Page header */
+.chapterill.cha
+    ove: all var/* Page headn-.chapterill.cha
+er    over.chapt:l     color: var(- .cer /* Page he: .chaar(--tte /* Page he: .chaarou    co b-t
+ /* Paso .chaptr {}
+0%}
+
+.si}
+0%}
+--c lo0%}
+
+.si}
+0%}
+
+.c-- pa0%}
+
+.si}
+0%}
+--c -subtop0%}le-- {
+.si}
+0%play: flex;
+    a.ter  bk    align-item  -c.ter  or0%}
+
+fl}
+0%}
+
+.chapter-ti-pri
+n-
+fl}
+0%}
+
+.c  text-decor. .chaptersp
+f
+
+fe-20%
+ 
+. btopic-inde.--  .--s.ry)op
+50}
+0%}
+
+.chapt, 2450}
+0%}
+
+.chapy:0%le
+.
+  .(--505)0%}rim c      ov rcri
+.met-c.meta-box cher
+.metalex;
+.-ra.meta-bor(.meta-box ch});
+.meta-bod: und.meta-box lo.meta-box    {
+      bp:   -c      bp:    on.meta-box ch}
+
+.mc-.meta-box ch}st
+.meta-boary;
+ .meta-box: 
+.mc-.metalex-s.meta-boary;
+ .metsi .meta-box ar      bp:   ro      bp:   ha 
+urid}
+
+ur}
+
+[data-theopic-itemze: var(--f
+[t-s    di 
+uay: flex;
+r: var(--c    ju[: -s.chapter-pag0      bor   alinopter ppter-topic- ce-3);
+ 3)  .chaptengze:  .  /* Pe;is 3)  .chaptengze:  .  / v/* Paol/* Pe;
+/* Page headech/* Page headic.chapterill.cha
+pt    ove: all vdeer    over.chapt:l     color: var(- .cer /*    /* Paso .chaptr {}
+0%}
+
+.si}
+0%}
+--c lo0%}
+
+.si}
+0%}
+
+.c-- pa0%}
+
+.si}
+0%}
+--c -subtop0%}le-- ri0%}
+
+.si}
+0%}
+--c ig
+.: 500;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .chapter-tab-title {
-        max-width: 100px;
-    }
-
-    .chapter-topic-count {
-        display: none;
-    }
-
-    .chapter-subtopic-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--space-2);
-        padding: var(--space-3) var(--space-4);
-    }
-
-    .chapter-subtopic-item .btn {
-        align-self: flex-end;
-    }
-}
-
-@media (max-width: 480px) {
-    .chapter-tab {
-        padding: var(--space-2) var(--space-3);
-    }
-
-    .chapter-tab-title {
-        max-width: 80px;
-        font-size: var(--font-size-xs);
-    }
-}
 
 /* ---- Exercise Page ---- */
 .exercise-hub {

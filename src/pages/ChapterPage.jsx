@@ -97,29 +97,48 @@ export default function ChapterPage() {
 
             {/* ── Header ── */}
             <div className="chapter-page-header">
-                <div>
-                    <h1 className="chapter-page-title">📗 {subjectLabel}</h1>
-                    <p className="chapter-page-qual">{syllabus.qualification}</p>
+                <div className="chapter-title-group">
+                    <div className="chapter-subject-icon">
+                        <span>📗</span>
+                    </div>
+                    <div>
+                        <h1 className="chapter-page-title">{subjectLabel}</h1>
+                        <p className="chapter-page-qual">{syllabus.qualification}</p>
+                    </div>
                 </div>
-                <div className="chapter-meta">
-                    <span><BookOpen size={14} /> {totalTopics} topics</span>
-                    <span><ListTree size={14} /> {totalSubtopics} subtopics</span>
+                <div className="chapter-meta-boxes">
+                    <div className="meta-box">
+                        <div className="meta-icon"><BookOpen size={18} /></div> 
+                        <div className="meta-text">
+                            <strong>{totalTopics}</strong>
+                            <span>Topics</span>
+                        </div>
+                    </div>
+                    <div className="meta-box">
+                        <div className="meta-icon"><ListTree size={18} /></div> 
+                        <div className="meta-text">
+                            <strong>{totalSubtopics}</strong>
+                            <span>Subtopics</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             {/* ── All units stacked ── */}
-            {syllabus.units.map((unit) => {
+            <div className="chapter-units-container">
+            {syllabus.units.map((unit, unitIndex) => {
                 const unitSubtopics = unit.topics.reduce((s, t) => s + t.subtopics.length, 0);
                 return (
-                    <div key={unit.id} className="chapter-unit-section">
+                    <div key={unit.id} className="chapter-unit-section animate-slide-in-up" style={{ animationDelay: `${0.1 + unitIndex * 0.05}s` }}>
                         <div className="chapter-unit-meta">
                             <h2 className="chapter-unit-heading">
-                                Unit {unit.id}: {unit.title}
+                                <span className="unit-number">Unit {unit.id}</span>
+                                <span className="unit-name">{unit.title}</span>
                             </h2>
                             <div className="chapter-meta">
-                                <span><BookOpen size={14} /> {unit.topics.length} topic{unit.topics.length !== 1 ? 's' : ''}</span>
-                                <span><ListTree size={14} /> {unitSubtopics} subtopics</span>
-                                <span>Source: {syllabus.source}</span>
+                                <span className="meta-pill"><BookOpen size={14} /> {unit.topics.length} topic{unit.topics.length !== 1 ? 's' : ''}</span>
+                                <span className="meta-pill"><ListTree size={14} /> {unitSubtopics} subtopics</span>
+                                <span className="meta-source">Source: {syllabus.source}</span>
                             </div>
                         </div>
 
@@ -137,6 +156,7 @@ export default function ChapterPage() {
                     </div>
                 );
             })}
+            </div>
         </div>
     );
 }

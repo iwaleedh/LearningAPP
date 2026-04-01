@@ -130,9 +130,9 @@ export default function HomePage() {
                 {quickStats.map((stat, i) => {
                     const Icon = stat.icon;
                     return (
-                        <div key={i} className="stat-card card animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
+                        <div key={i} className="stat-card card animate-slide-in-up" style={{ animationDelay: `${i * 0.05}s` }}>
                             <div className="stat-icon" style={{ background: `${stat.color}15`, color: stat.color }}>
-                                <Icon size={22} />
+                                <Icon size={24} strokeWidth={2.5} />
                             </div>
                             <div className="stat-info">
                                 <span className="stat-value">{stat.value}</span>
