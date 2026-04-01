@@ -13,6 +13,10 @@ import RequireApproved from './components/auth/RequireApproved';
 import { canAccessLocalLiveClassAsGuest } from './components/auth/accessControl.js';
 import './App.css';
 
+import { ToastProvider } from './components/common/Toast';
+import './components/common/Skeleton.css';
+import './components/common/StateScreens.css';
+
 const LandingPage = lazy(() => import('./pages/LandingPage'));
 const ChapterPage = lazy(() => import('./pages/ChapterPage'));
 const ExercisePage = lazy(() => import('./pages/ExercisePage'));
@@ -33,6 +37,20 @@ const StudentNotesViewPage = lazy(() => import('./pages/StudentNotesViewPage'));
 const PendingApprovalPage = lazy(() => import('./pages/PendingApprovalPage'));
 const AdminPage = lazy(() => import('./pages/AdminPage'));
 const CommandSearch = lazy(() => import('./components/student/CommandSearch'));
+
+// Loading fallback using skeletons
+const PageLoader = () => (
+  <div style={{ padding: 'var(--space-8)' }} className="animate-fade-in">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)', maxWidth: 'var(--max-content-width)', margin: '0 auto' }}>
+      <div className="skeleton" style={{ height: '2rem', width: '30%', borderRadius: 'var(--radius-md)' }}></div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 'var(--space-5)' }}>
+        <div className="skeleton" style={{ height: '180px', borderRadius: 'var(--radius-xl)' }}></div>
+        <div className="skeleton" style={{ height: '180px', borderRadius: 'var(--radius-xl)' }}></div>
+        <div className="skeleton" style={{ height: '180px', borderRadius: 'var(--radius-xl)' }}></div>
+      </div>
+    </div>
+  </div>
+);
 
 function AppContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -58,7 +76,7 @@ function AppContent() {
   if (isLoaded && !isSignedIn && location.pathname === '/') {
     return (
       <div className="app-root">
-        <Suspense fallback={<div className="card animate-fade-in" style={{margin:'var(--space-8)'}}>Loading...</div>}>
+        <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
           </Routes>
@@ -68,19 +86,20 @@ function AppContent() {
   }
 
   return (
-    <div className="app-layout">
-      <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
-      <div className="app-main">
-        <Header
-          onMenuToggle={() => setSidebarOpen(!sidebarOpen)}
-          onSearchOpen={() => setSearchOpen(true)}
-        />
-        <main className="page-content">
-          <ErrorBoundary>
-          <Suspense fallback={<div className="card animate-fade-in">Loading page...</div>}>
-            <Routes>
-              {/* Ungated routes — accessible before approval */}
-              <Route path="/pending" element={<PendingApprovalPage />} />
+    <ToastProvider>
+      <div className="app-layout">
+        <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
+        <div className="app-main">
+          <Header
+            onMenuToggle={() => setSidebarOpen(!sidebarOpen)}
+            onSearchOpen={() => setSearchOpen(true)}
+          />
+          <main className="page-content">
+            <ErrorBoundary>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                {/* Ungated routes — accessible before approval */}
+                <Route path="/pending" element={<PendingApprovalPage />} />
 
               {/* Admin route — requires admin flag */}
               <Route
@@ -162,6 +181,7 @@ function AppContent() {
           <CommandSearch onClose={() => setSearchOpen(false)} />
         </Suspense>
       )}
+      </ToastProvider>
     </div>
   );
 }
