@@ -33,7 +33,7 @@ export const getMyAccountStatus = query({
       accountStatus: effectiveAccountStatus(user),
       role: user.role ?? "student",
       email: user.email ?? null,
-      isAdmin: isAdminEmail(user.email),
+      isAdmin: isAdminEmail(user.email) || isAdminEmail(identity.email),
     };
   },
 });
