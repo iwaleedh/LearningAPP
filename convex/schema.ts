@@ -172,6 +172,23 @@ export default defineSchema({
     .index("by_topic", ["topic"])
     .index("by_status", ["status"]),
 
+  // ── Payment Requests ────────────────────────────────────────────
+  paymentRequests: defineTable({
+    userId:      v.string(),
+    plan:        v.string(),            // 'monthly' | 'annual'
+    amount:      v.number(),            // 100 | 1000
+    storageId:   v.id("_storage"),      // Convex file storage reference
+    fileName:    v.string(),
+    mimeType:    v.string(),
+    status:      v.string(),            // 'pending' | 'approved' | 'rejected'
+    submittedAt: v.number(),
+    reviewedAt:  v.optional(v.number()),
+    reviewedBy:  v.optional(v.string()),
+    adminNotes:  v.optional(v.string()),
+  })
+    .index("by_userId", ["userId"])
+    .index("by_status", ["status"]),
+
   // ── Feature Flags ───────────────────────────────────────────────
   featureFlags: defineTable({
     key: v.string(),          // e.g. "flashcards", "pastPapers", "liveClass"

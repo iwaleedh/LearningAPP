@@ -25,6 +25,7 @@ import type * as joinRequests from "../joinRequests.js";
 import type * as liveclass from "../liveclass.js";
 import type * as logs from "../logs.js";
 import type * as notes from "../notes.js";
+import type * as paymentRequests from "../paymentRequests.js";
 import type * as sessions from "../sessions.js";
 import type * as strokes from "../strokes.js";
 import type * as testUtils from "../testUtils.js";
@@ -55,6 +56,7 @@ declare const fullApi: ApiFromModules<{
   liveclass: typeof liveclass;
   logs: typeof logs;
   notes: typeof notes;
+  paymentRequests: typeof paymentRequests;
   sessions: typeof sessions;
   strokes: typeof strokes;
   testUtils: typeof testUtils;

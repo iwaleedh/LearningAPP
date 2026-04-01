@@ -1,0 +1,185 @@
+import { mutation, query } from "./_generated/server";
+import { v } from "convex/values";
+import {
+  requireAdmin,
+  requireAuthenticatedUserId,
+  getUserRecordById,
+} from "./authHelpers";
+
+/**
+ * Generate a short-lived Convex storage upload URL.
+ * Any authenticated user can request this.
+ */
+export const generateUploadUrl = mutation({
+  args: {},
+  handler: async (ctx) => {
+    await requireAuthenticatedUserId(ctx);
+    return await ctx.storage.generateUploadUrl();
+  },
+});
+
+/**
+ * Save a payment request after the file has been uploaded to Convex storage.
+ * Rejects if the user already has a non-rejected active request.
+ */
+export const submitPaymentRequest = mutation({
+  args: {
+    plan:      v.string(),
+    amount:    v.number(),
+    storageId: v.id("_storage"),
+    fileName:  v.string(),
+    mimeType:  v.string(),
+  },
+  handler: async (ctx, { plan, amount, storageId, fileName, mimeType }) => {
+    const userId = await requireAuthenticatedUserId(ctx);
+
+    const normalised = plan.trim().toLowerCase();
+    if (normalised !== "monthly" && normalised !== "annual") {
+      throw new Error("Plan must be 'monthly' or 'annual'.");
+    }
+
+    // Prevent duplicate active submissions
+    const existing = await ctx.db
+      .query("paymentRequests")
+      .withIndex("by_userId", (q) => q.eq("userId", userId))
+      .collect();
+
+    const active = existing.find((r) => r.status === "pending");
+    if (active) {
+      throw new Error("You already have a payment request under review.");
+    }
+
+    await ctx.db.insert("paymentRequests", {
+      userId,
+      plan: normalised,
+      amount,
+      storageId,
+      fileName,
+      mimeType,
+      status: "pending",
+      submittedAt: Date.now(),
+    });
+  },
+});
+
+/**
+ * Returns the calling user's most recent payment request (any status), or null.
+ * Includes a temporary URL for the uploaded slip image/PDF.
+ */
+export const getMyPaymentRequest = query({
+  args: {},
+  handler: async (ctx) => {
+    let userId: string;
+    try {
+      userId = await requireAuthenticatedUserId(ctx);
+    } catch {
+      return null;
+    }
+
+    const rows = await ctx.db
+      .query("paymentRequests")
+      .withIndex("by_userId", (q) => q.eq("userId", userId))
+      .collect();
+
+    if (rows.length === 0) return null;
+
+    // Most recent first
+    rows.sort((a, b) => b.submittedAt - a.submittedAt);
+    const doc = rows[0];
+
+    const slipUrl = await ctx.storage.getUrl(doc.storageId);
+
+    return {
+      _id:         doc._id,
+      plan:        doc.plan,
+      amount:      doc.amount,
+      fileName:    doc.fileName,
+      mimeType:    doc.mimeType,
+      status:      doc.status,
+      submittedAt: doc.submittedAt,
+      reviewedAt:  doc.reviewedAt,
+      adminNotes:  doc.adminNotes,
+      slipUrl,
+    };
+  },
+});
+
+/**
+ * Admin: list all payment requests with user info and slip URLs.
+ */
+export const listAllPaymentRequests = query({
+  args: {},
+  handler: async (ctx) => {
+    await requireAdmin(ctx);
+
+    const requests = await ctx.db.query("paymentRequests").collect();
+
+    const results = await Promise.all(
+      requests.map(async (req) => {
+        const user = await getUserRecordById(ctx, req.userId);
+        const slipUrl = await ctx.storage.getUrl(req.storageId);
+        return {
+          _id:         req._id,
+          userId:      req.userId,
+          username:    user?.username ?? "Unknown",
+          email:       user?.email ?? null,
+          avatarUrl:   user?.avatarUrl ?? null,
+          plan:        req.plan,
+          amount:      req.amount,
+          fileName:    req.fileName,
+          mimeType:    req.mimeType,
+          status:      req.status,
+          submittedAt: req.submittedAt,
+          reviewedAt:  req.reviewedAt,
+          reviewedBy:  req.reviewedBy,
+          adminNotes:  req.adminNotes,
+          slipUrl,
+        };
+      })
+    );
+
+    // Newest first
+    results.sort((a, b) => b.submittedAt - a.submittedAt);
+    return results;
+  },
+});
+
+/**
+ * Admin: approve or reject a payment request.
+ * Approving automatically sets the user's accountStatus to 'approved'.
+ */
+export const reviewPaymentRequest = mutation({
+  args: {
+    requestId:  v.id("paymentRequests"),
+    decision:   v.string(), // 'approved' | 'rejected'
+    adminNotes: v.optional(v.string()),
+  },
+  handler: async (ctx, { requestId, decision, adminNotes }) => {
+    const adminUserId = await requireAdmin(ctx);
+
+    const norm = decision.trim().toLowerCase();
+    if (norm !== "approved" && norm !== "rejected") {
+      throw new Error("Decision must be 'approved' or 'rejected'.");
+    }
+
+    const req = await ctx.db.get(requestId);
+    if (!req) throw new Error("Payment request not found.");
+
+    await ctx.db.patch(requestId, {
+      status:     norm,
+      reviewedAt: Date.now(),
+      reviewedBy: adminUserId,
+      adminNotes: adminNotes ?? undefined,
+    });
+
+    if (norm === "approved") {
+      const user = await getUserRecordById(ctx, req.userId);
+      if (user) {
+        await ctx.db.patch(user._id, {
+          accountStatus:   "approved",
+          statusUpdatedAt: Date.now(),
+        });
+      }
+    }
+  },
+});
