@@ -30,6 +30,9 @@ spacetime-backend/spacetimedb/target/
 *.sln
 *.sw?
 
+# Kilo AI agent tool dependencies
+.kilo/node_modules/
+
 # Large binary/data assets — too large for GitHub
 pipeline/
 books/
